@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ab565dfbc4fec21c646aa72b54f3694d99e6a1f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1851fd05999bfc2d925cbe4a079be3a9f4139db
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693468"
 ---
-# <a name="office-primary-interop-assemblies"></a>Sestavení primární spolupráce sady Office
+# <a name="office-primary-interop-assemblies"></a>primární spolupracující sestavení sady Office
   Pokud chcete používat funkce aplikace Microsoft Office z projektu aplikace Office, musíte použít primární spolupracující sestavení (PIA) pro aplikaci. PRIMÁRNÍ povoluje spravovaného kódu k interakci s modelem COM na objekt z aplikace Microsoft Office.  
   
  Když vytvoříte nový projekt Office, Visual Studio přidá odkazy na PIA, které jsou nutné k sestavení projektu. V některých scénářích může být nutné přidat odkazy na další PIA (například pokud chcete použít funkci Microsoft Office Word v projektu pro aplikaci Microsoft Office Excel).  
@@ -32,13 +33,13 @@ ms.lasthandoff: 04/16/2018
   
 -   [Samostatný primární spolupracující sestavení pro vytváření a spouštění projektů](#separateassemblies)  
   
--   [Pomocí funkce více aplikace Microsoft Office v jednom projektu](#usingfeatures)  
+-   [Použití funkce více aplikace Microsoft Office v jednom projektu](#usingfeatures)  
   
 -   [Úplný seznam primárních sestavení vzájemné spolupráce pro aplikace Microsoft Office](#pialist)  
   
- Další informace o primární spolupracující sestavení najdete v tématu [primární zprostředkovatel komunikace s objekty sestavení](http://msdn.microsoft.com/en-us/b977a8be-59a0-40a0-a806-b11ffba5c080).  
+ Další informace o primární spolupracující sestavení najdete v tématu [primární spolupracující sestavení](http://msdn.microsoft.com/en-us/b977a8be-59a0-40a0-a806-b11ffba5c080).  
   
-##  <a name="separateassemblies"></a> Jednotlivé primární spolupracující sestavení pro vytváření a spouštění projektů  
+##  <a name="separateassemblies"></a> Samostatný primární spolupracující sestavení pro vytváření a spouštění projektů  
  Visual Studio využívá různé sady PIA na vývojovém počítači. Tyto různé sady sestavení jsou v následujících umístěních:  
   
 -   Do složky v adresáři program files.  
@@ -49,35 +50,35 @@ ms.lasthandoff: 04/16/2018
   
      Tyto kopie sestavení se používají při některých úloh vývoj, například při spuštění nebo ladění projektů. Visual Studio nepodporuje instalaci a registraci tyto sestavení; je potřeba udělat sobě.  
   
-### <a name="primary-interop-assemblies-in-the-program-files-directory"></a>Primární spolupracující sestavení v adresáři Program Files  
+### <a name="primary-interop-assemblies-in-the-program-files-directory"></a>Primární spolupracující sestavení v adresáři program files  
  Při instalaci sady Visual Studio PIA automaticky nainstalují do umístění v systému souborů, mimo globální mezipaměti sestavení. Při vytváření nového projektu sady Visual Studio automaticky přidá reference na tyto kopie PIA do projektu. Visual Studio použije tyto kopie PIA, místo sestavení v globální mezipaměti sestavení, chcete-li vyřešit odkazy na typ při vývoji a sestavení projektu.  
   
  Tyto kopie PIA pomoci vyhnout několik vývoj problémů, které může dojít, když jsou různé verze PIA zaregistrovaný v globální mezipaměti sestavení sady Visual Studio.  
   
  Visual Studio nainstaluje tyto kopie PIA do následujícího umístění na vývojovém počítači:  
   
--   %ProgramFiles%\Microsoft visual Studio 12.0\Visual Studio nástroje pro Office\PIA\Office14  
+-   *%ProgramFiles%\Microsoft visual Studio 12.0\Visual Studio nástroje pro Office\PIA\Office14*  
   
-     (nebo % ProgramFiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14 na 64bitové operační systémy)  
+     (nebo *% ProgramFiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14* na 64bitové operační systémy)  
   
--   %ProgramFiles%\Microsoft visual Studio 12.0\Visual Studio nástroje pro Office\PIA\Office15  
+-   *%ProgramFiles%\Microsoft visual Studio 12.0\Visual Studio nástroje pro Office\PIA\Office15*  
   
-     (nebo % ProgramFiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15 na 64bitové operační systémy)  
+     (nebo *% ProgramFiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15* na 64bitové operační systémy)  
   
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Primární spolupracující sestavení v globální mezipaměti sestavení  
- K provedení některých úkolů vývoj, musí být nainstalované PIA a zaregistrován v globální mezipaměti sestavení na vývojovém počítači. Obvykle PIA instalují automaticky při instalaci Office na vývojovém počítači. Další informace najdete v tématu [Konfigurace počítače pro vývoj řešení pro Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
+ K provedení některých úkolů vývoj, musí být nainstalované PIA a zaregistrován v globální mezipaměti sestavení na vývojovém počítači. Obvykle PIA instalují automaticky při instalaci Office na vývojovém počítači. Další informace najdete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
- PIA Office nejsou na počítačích koncových uživatelů se vyžaduje spuštění řešení pro systém Office. Další informace najdete v tématu [návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md).  
+ PIA Office nejsou na počítačích koncových uživatelů se vyžaduje spuštění řešení pro systém Office. Další informace najdete v tématu [návrhu a vytvářet řešení systému Office](../vsto/designing-and-creating-office-solutions.md).  
   
-##  <a name="usingfeatures"></a> Pomocí funkce více aplikace Microsoft Office v jednom projektu  
+##  <a name="usingfeatures"></a> Použití funkce více aplikace Microsoft Office v jednom projektu  
  Šablona projektu každých Office v sadě Visual Studio je navržen pro práci s jednu aplikaci Microsoft Office. Použití funkcí v několika aplikace Microsoft Office, nebo chcete používat funkce aplikace nebo součásti, která nemá na projekt v sadě Visual Studio, je nutné přidat odkaz na požadované PIA.  
   
- Ve většině případů měli byste přidat odkazy na PIA, které jsou nainstalované ve Visual Studio v části %ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools pro Office\PIA\ adresář. Tyto verze sestavení se zobrazí na **Framework** kartě **Manager odkaz** dialogové okno. Další informace najdete v tématu [postup: cíl aplikací prostřednictvím primární zprostředkovatel komunikace s objekty sestavení sady Office](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+ Ve většině případů, měli byste přidat odkazy na PIA, které jsou nainstalované ve Visual Studio v části *%ProgramFiles%\Microsoft 12.0\Visual Visual Studio Studio Tools pro Office\PIA\* adresáře. Tyto verze sestavení se zobrazí na **Framework** kartě **Manager odkaz** dialogové okno. Další informace najdete v tématu [postup: Office cíl aplikací prostřednictvím primární spolupracující sestavení](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
  Pokud máte nainstalovaný a zaregistrovaný PIA v globální mezipaměti sestavení, tyto verze sestavení zobrazí na **COM** kartě **správce odkazů** dialogové okno. Neměli byste přidávání odkazů na tyto verze sestavení, protože existují některé problémy vývoj, které můžou nastat, když je budete používat. Například pokud různé verze PIA je zaregistrovaný v globální mezipaměti sestavení, projekt bude automaticky navážou na verze sestavení, který byl zaregistrován poslední – i v případě, že jste zadali na jinou verzi sestavení  **COM** kartě **správce odkazů** dialogové okno.  
   
 > [!NOTE]  
->  Některá sestavení se přidají do projektu automaticky při přidání sestavení, které na ně odkazuje. Odkazy na sestavení Office.dll a Microsoft.Vbe.Interop.dll například se automaticky přidá, když přidáte odkaz na sestavení aplikace Word, Excel, Outlook, Microsoft Forms nebo grafu.  
+>  Některá sestavení se přidají do projektu automaticky při přidání sestavení, které na ně odkazuje. Například odkazuje na *Office.dll* a *Microsoft.Vbe.Interop.dll* sestavení se přidávají automaticky, když přidáte odkaz na aplikaci Word, Excel, Outlook, Microsoft Forms nebo grafu sestavení.  
   
 ##  <a name="pialist"></a> Primární spolupracující sestavení pro aplikace Microsoft Office  
  Následující tabulka uvádí primární spolupracující sestavení, které jsou k dispozici pro [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] a [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
@@ -106,10 +107,10 @@ ms.lasthandoff: 04/16/2018
 |Microsoft Visual Basic for Applications – rozšiřitelnost 5.3|Microsoft.Vbe.Interop.dll|  
   
 ### <a name="binding-redirect-assemblies"></a>Sestavení přesměrování vazby  
- Při instalaci a registraci Office PIA v globální mezipaměti sestavení (buď v sadě Office nebo instalací redistribuovatelného balíčku pro PIA), přesměrování vazby sestavení jsou také nainstalované jenom v globální mezipaměti sestavení. Tyto sestavení pomoci, ujistěte se, zda jsou načteny správnou verzi primární spolupracující sestavení za běhu. Například když řešení, který odkazuje [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] sestavení běží na počítači, který má [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] dá pokyn přesměrování vazby sestavení verze stejného sestavení primární spolupráce [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] runtime k načtení [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] verze sestavení primární spolupráce. Další informace najdete v tématu [postupy: povolení a zakázání automatického přesměrování vazby](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
+ Při instalaci a registraci Office PIA v globální mezipaměti sestavení (buď v sadě Office nebo instalací redistribuovatelného balíčku pro PIA), přesměrování vazby sestavení jsou také nainstalované jenom v globální mezipaměti sestavení. Tyto sestavení pomoci, ujistěte se, zda jsou načteny správnou verzi primární spolupracující sestavení za běhu. Například když řešení, který odkazuje [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] sestavení běží na počítači, který má [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] dá pokyn přesměrování vazby sestavení verze stejného sestavení primární spolupráce [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] runtime k načtení [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] verze sestavení primární spolupráce. Další informace najdete v tématu [postupy: povolení a zákaz automatického přesměrování vazby](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
   
-## <a name="see-also"></a>Viz také  
- [Postupy: cílení na aplikace Office prostřednictvím primární spolupráce – sestavení](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+## <a name="see-also"></a>Viz také:  
+ [Postupy: Office cíl aplikací prostřednictvím primární spolupráce – sestavení](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md)   
  [Řešení pro aplikaci InfoPath](../vsto/infopath-solutions.md)   
  [Přehled modelu objektů aplikace Outlook](../vsto/outlook-object-model-overview.md)   

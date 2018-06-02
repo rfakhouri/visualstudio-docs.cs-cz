@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31fd55358023e0ec3b11fbb048bdfa2b240b1859
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04b2e821abbbc7a24ce5b77b7374de617852cf2a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693835"
 ---
 # <a name="xml-document-validation"></a>Ověření dokumentu XML
 
@@ -22,7 +23,7 @@ Editor souborů XML kontroluje syntaxe XML 1.0 a také provádí ověřování d
 
  Nebyly nalezeny schémata použít ověřování pomocí odpovídajících `targetNamespace` kompilované schématu s xmlns deklaraci elementu. Kompilované schémata jsou načteny z jednoho z následujících umístění, uvedené v pořadí podle priority:
 
--   Z názvu souboru, který je zadaný v **schémata** pole v okně vlastností dokumentu.
+-   Z názvu souboru, který je zadaný v **schémata** pole dokumentu **vlastnosti** okno.
 
 -   Vložené schéma nebo souboru DTD protokolu.
 
@@ -39,11 +40,11 @@ Schémata možné také najít v následujících umístěních další schéma 
 -   Schéma z adresáře mezipaměti schématu.
 
 ## <a name="xslt-files"></a>Soubory XSLT
- Při úpravě soubor XSLT, xslt.xsd soubor nachází v mezipaměti schématu se používá pro ověření. Jako modré podtržení vlnovkami zobrazí chyby ověření. Chyby z kompilátoru XSLT se zobrazí jako červené podtržení vlnovkou.
+ Při úpravě soubor XSLT *xslt.xsd* soubor nachází v mezipaměti schématu se používá pro ověření. Jako modré podtržení vlnovkami zobrazí chyby ověření. Chyby z kompilátoru XSLT se zobrazí jako červené podtržení vlnovkou.
 
 ## <a name="xml-schema-xsd-files"></a>Soubory XML schématu (XSD)
- Při úpravě souboru schématu XML, soubor xsdschema.xsd umístěný v mezipaměti schématu se používá pro ověření. Jako modré podtržení vlnovkami zobrazí chyby ověření. Red vlnovkou jsou také uvedené chyby kompilace.
+ Při úpravě souboru schématu XML *xsdschema.xsd* soubor nachází v mezipaměti schématu se používá pro ověření. Jako modré podtržení vlnovkami zobrazí chyby ověření. Red vlnovkou jsou také uvedené chyby kompilace.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Editor XML](../xml-tools/xml-editor.md)

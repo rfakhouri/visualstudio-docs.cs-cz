@@ -1,5 +1,5 @@
 ---
-title: Publikování průvodce (vývoj pro Office v sadě Visual Studio) | Microsoft Docs
+title: Publikování průvodce (vývoj pro Office v sadě Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2481557d1d75d64b5eb3f52f2755953ca344d323
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692717"
 ---
-# <a name="publish-wizard-office-development-in-visual-studio"></a>Průvodce publikováním (vývoj pro Office v sadě Visual Studio)
+# <a name="publish-wizard-office-development-in-visual-studio"></a>Publikování průvodce (vývoj pro Office v sadě Visual Studio)
   Použití **Průvodci publikováním** Pokud chcete kopírovat soubory řešení do zadaného umístění, vytvořte manifestu soubory a vytvořte instalační program.  
   
  K přístupu ke tohoto průvodce na **sestavení** nabídce zvolte **publikovat** *název řešení SolutionName*. Můžete taky Přejít **Průvodci publikováním** z **Průzkumníku řešení**. Otevřete místní nabídku pro uzel projektu a zvolte **publikovat**.  
@@ -40,9 +41,9 @@ ms.lasthandoff: 04/16/2018
   
  Zadejte umístění jako cesta k disku, sdílené složky, server FTP nebo adresa URL webu, nebo klikněte **Procházet** tlačítko procházení pro umístění. Cesta může být v těchto formátech:  
   
--   Relativní nebo absolutní cesta ve formátu standard systému Windows, jako je například C:\Deploy\MyApplication nebo \MyApplication.  
+-   Relativní nebo absolutní cesta ve verzi standard systému Windows, jako například formátu *C:\Deploy\MyApplication* nebo *\MyApplication*.  
   
--   Cestu Universal Naming Convention (UNC), jako například \\\ServerName\MyApplication\\.  
+-   Cestu Universal Naming Convention (UNC), jako například  *\\\ServerName\MyApplication\\*.  
   
 -   Adresu URL webu lokality, jako například http://www.microsoft.com/MyApplication.  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/16/2018
   
  Visual Studio není zápis, disk CD nebo DVD. Výstup disku CD nebo DVD musíte zkopírovat ručně.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Nasazení řešení Office s použitím technologie ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Publikovat stránku, Návrhář projektu &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)  

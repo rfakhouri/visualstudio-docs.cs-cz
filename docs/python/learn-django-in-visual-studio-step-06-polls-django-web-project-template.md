@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 78cb5f54994c24fcf79f81fd6eff31eedd884908
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691443"
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Kurz – krok 6: použití šablony hlasovací webový projekt Django
 
@@ -253,7 +254,7 @@ urlpatterns = [
 ]
 ```
 
-Pokud si nejste obeznámeni s složitější regulární výrazy použít se zde, můžete vložit výraz do [regex101.com](https://regex101.com/) vysvětlení v prostý jazyk. (Budete potřebovat, abyste se vyhnuli lomítka `/` přidáním zpětným lomítkem, `\`h před sebou; útěku není nutné v Pythonu z důvodu `r` předponu na řetězec, což znamená "nezpracovaných").
+Pokud si nejste obeznámeni s složitější regulární výrazy použít se zde, můžete vložit výraz do [regex101.com](https://regex101.com/) vysvětlení v prostý jazyk. (Budete potřebovat, abyste se vyhnuli lomítka `/` přidáním zpětným lomítkem, `\` před sebou; uvozovací znaky není nutné v Pythonu z důvodu `r` předponu na řetězec, což znamená "nezpracovaných").
 
 V Django, syntaxe `?P<name>pattern` vytvoří skupinu s názvem `name`, která bude předána do zobrazení v pořadí, které se objeví jako argumenty. V následující kód dříve `PollsDetailView` a `PollsResultsView` přijímat argument s názvem `pk` a `app.views.vote` obdrží argument s názvem `poll_id`.
 

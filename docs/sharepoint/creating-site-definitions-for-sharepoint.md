@@ -18,24 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a9e2a631ae80e878ee5293ec3790f8ac93912e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 06a5aa5d7f97f56bfbb21941ab996628b689c86a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691801"
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>Vytváření definic webu pro službu SharePoint
   Do projektu definice webu služby SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umožňuje vytvářet *lokalita definice*, který slouží jako základ pro nový web služby SharePoint. Tyto definice nejen určit vzhled a chování webu služby SharePoint, ale jeho výchozí obsah a funkce. V definici lze umístit předkonfigurované seznamy, typy obsahu, přijímače událostí, obrázky a další položky. SharePoint zahrnuje některé definice webů, jako je například BLOG, např. Při vytvoření webu na základě definice lokality BLOG lokalita obsahuje seznamy, webové části a další položky, které web blogu vyžaduje.  
   
  Další informace o definicích lokality najdete v tématu [šablony webů a definice](http://go.microsoft.com/fwlink/?LinkId=179134).  
   
-## <a name="site-definition-projects"></a>Projekty definic webů  
+## <a name="site-definition-projects"></a>Projekty definice lokality
  Lokality definice projekty v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zadejte pouze základní soubory, které potřebuje webu SharePoint; neposkytují žádné výchozí funkce. Je třeba přidat soubory a obsah poskytuje funkce, které chcete. Webu můžete vytvořit ručně pomocí vytvoření a přidání soubory, které potřebujete.  
   
-## <a name="feature-stapling"></a>Připojování funkcí  
+## <a name="feature-stapling"></a>Funkce – sešívání
  Jednou z výhod vytváření definic webu v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] je, že automaticky použijí *– sešívání funkce*. Funkce sešívání funkce připojí k definici lokality místo vkládání jejich funkci v definici lokality sám sebe. To umožňuje přidat funkci k žádné lokalitě vytvořili pomocí definice webu bez úpravy původní definice webu. Další informace najdete v tématu [– sešívání funkce](http://go.microsoft.com/fwlink/?LinkID=119283).  
   
-## <a name="site-definition-project-components"></a>Součásti projektu definice webu  
+## <a name="site-definition-project-components"></a>Součásti projektu definice webu
  Při vytváření definice řešení lokality následující výchozí soubory jsou přidány do jeho **SiteDefinition** uzlu.  
   
 |Název souboru|Popis|  
@@ -44,9 +45,9 @@ ms.lasthandoff: 04/16/2018
 |Onet.XML|Určuje konfiguraci nové lokality, komponenty lokality definice šablony a výchozí chování. Tato nastavení může patřit atributy jako typy obsahu, které jsou povolené, zobrazení seznamu výchozí šablony dokumentů a webovými částmi součástí webu. Ve výchozím nastavení `Modules` část obsahuje soubory, které mají být přidány do web služby SharePoint a jejich konfiguraci.|  
 |webtemp_*SiteDefinitionName*.xml|Určuje definici konfigurace lokality, které se zobrazí v **výběr šablony** části **nový web služby SharePoint** stránky.|  
   
- Ve výchozím nastavení, všechny definice lokality jsou uloženy v *jednotka:*\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates složky. Každý definice lokality má svou vlastní podsložky.  
+ Ve výchozím nastavení, všechny definice lokality jsou uloženy v *jednotka:* \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates složky. Každý definice lokality má svou vlastní podsložky.  
   
-## <a name="related-topics"></a>Související témata  
+## <a name="related-topics"></a>Související témata
   
 |Název|Popis|  
 |-----------|-----------------|  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
 |[Programování webových stránek ASP.NET](http://go.microsoft.com/fwlink/?LinkId=178728)|Poskytuje informace o tom, jak vytvořit obslužné rutiny událostí v [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] stránky a jak pracovat s klientského skriptu.|  
 |[Programování v služby Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=178729)|Popisuje způsob použití modelu spravovaného objektu, která je součástí [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)].|  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
-  
+ 

@@ -15,10 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 835226dc867f290c3cd3f553895687abdb895207
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477103"
 ---
 # <a name="utilization-view"></a>Zobrazení využití
 **Zobrazení využití** zobrazí informace o procesoru, GPU a jiné systémové prostředky, které jsou používány aktuální proces (zvolte **analyzovat** > **souběžnosti Vizualizér** zahájíte vizualizér souběžnosti). Zobrazuje průměrnou základní využití procesu analyzovaných, nečinného procesu, proces systému a další procesy, které běží na serveru v čase. Nezobrazí, které konkrétní základní je aktivní v daném okamžiku. Například pokud každé dvě jádra jsou spuštěné v 50 procent kapacity pro dané časové období, pak toto zobrazení uvádí jednoho logického jádra využívání. Zobrazení je generován dělení profilování čas na krátkou dobu segmenty. Pro každý segment graf ukazuje zeměpisný průměrný počet vláken procesů, které jsou prováděny logické jader na během tohoto intervalu.  
@@ -49,6 +50,6 @@ ms.lasthandoff: 05/24/2018
 ## <a name="zoom"></a>Lupa  
  Chcete-li zvětšit graf využití procesoru nebo graf aktivity GPU, vyberte oddíl nebo nástroj posuvníku přiblížení výše grafu. Nastavení přiblížení či oddálení trvá jako přepínače s dalšími zobrazeními. Chcete-li znovu oddálení použijte nástroj přiblížení posuvníku. Také můžete zvětšit pomocí kombinace kláves Ctrl + scroll.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Vizualizér souběžnosti](../profiling/concurrency-visualizer.md)   
  [Zobrazení jader](../profiling/cores-view.md)

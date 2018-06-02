@@ -1,5 +1,5 @@
 ---
-title: Dělení na vlákna podpory v Office | Microsoft Docs
+title: Dělení na vlákna podpory v Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 473287ed42fb2e4978a0f92717a01fdf31e28ad4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 966f012b2ff4860205186410951b759c2e214668
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693081"
 ---
-# <a name="threading-support-in-office"></a>Podpora práce s vlákny v systému Office
-  Toto téma obsahuje informace o tom, jak dělení na vlákna je podporována v modelu objektů aplikace Microsoft Office. Objektový model Office není bezpečné pro přístup z více vláken, ale je možné pracovat s více vlákny v řešení Office. Aplikace Office jsou servery modelu COM (Component Object). COM umožňuje klientům volání COM serverů na libovolný vláken. U serverů modelu COM, které nejsou bezpečné pro přístup z více vláken poskytuje COM mechanismus k serializaci souběžných volání tak, aby pouze jedno vlákno logické spustí na serveru kdykoli. Tento mechanismus se označuje jako model single-threaded apartment (STA). Vzhledem k tomu, že se serializují volání, mohou být blokovány volající za období, zatímco server je zaneprázdněn nebo je zpracování jiná volání na vlákna na pozadí.  
+# <a name="threading-support-in-office"></a>Dělení na vlákna podpory v Office
+  Tento článek obsahuje informace o tom, jak dělení na vlákna je podporována v modelu objektů aplikace Microsoft Office. Objektový model Office není bezpečné pro přístup z více vláken, ale je možné pracovat s více vlákny v řešení Office. Aplikace Office jsou servery modelu COM (Component Object). COM umožňuje klientům volání COM serverů na libovolný vláken. U serverů modelu COM, které nejsou bezpečné pro přístup z více vláken poskytuje COM mechanismus k serializaci souběžných volání tak, aby pouze jedno vlákno logické spustí na serveru kdykoli. Tento mechanismus se označuje jako model single-threaded apartment (STA). Vzhledem k tomu, že se serializují volání, mohou být blokovány volající za období, zatímco server je zaneprázdněn nebo je zpracování jiná volání na vlákna na pozadí.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -62,21 +63,21 @@ ms.lasthandoff: 04/16/2018
   
  Ale v případě řešení vytvořená pomocí nástrojů pro vývoj pro Office v sadě Visual Studio, zprostředkovatel komunikace s objekty COM převede všechny odmítnuté volání <xref:System.Runtime.InteropServices.COMException> ("filtr zpráv označená, že aplikace je zaneprázdněn"). Vždy, když provedete objektový model volání vlákna na pozadí, musí být mějte připravené informace o zpracování této výjimky. Obvykle, který zahrnuje opakování pro určitou dobu a pak zobrazení dialogového okna. Můžete však také vytvořit vlákně na pozadí jako STA a potom proveďte registraci filtr zpráv pro toto vlákno případě.  
   
-## <a name="starting-the-thread-correctly"></a>Spuštění vlákna správně  
+## <a name="start-the-thread-correctly"></a>Spustit vlákno správně  
  Když vytvoříte nové vlákno STA, nastavte stav objektu apartment na STA před zahájením vlákno. Následující příklad kódu ukazuje, jak to udělat.  
   
  [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
  [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]  
   
- Další informace najdete v tématu [spravované dělení na vlákna osvědčené postupy](/dotnet/standard/threading/managed-threading-best-practices).  
+ Další informace najdete v tématu [dělení na spravovaná vlákna osvědčené postupy](/dotnet/standard/threading/managed-threading-best-practices).  
   
 ## <a name="modeless-forms"></a>Nemodální formulářů  
  Nemodální formulář umožňuje nějaký typ interakce s aplikací, když je formulář zobrazen. Uživatel komunikuje formulář a formulář komunikuje s aplikací bez ukončovací. Objektový model Office podporuje spravované nemodální formuláře; však by neměl být použili v vlákna na pozadí.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Dělení na spravovaná vlákna](/dotnet/standard/threading/)  
  [Dělení na vlákna (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [vlákna (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
  [Použití vláken a dělení na vlákna](/dotnet/standard/threading/using-threads-and-threading)   
- [Navrhování a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

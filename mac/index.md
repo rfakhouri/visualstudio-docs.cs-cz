@@ -5,23 +5,24 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 54f178a35d95819b13b1d477c3415fd02b8298f5
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 31459717e9a2c001a9ae4f0efef5ebb0930af1c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693689"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Představení Visual Studio pro Mac
 
-Visual Studio pro Mac je moderní, sofistikované IDE s mnoha funkcemi pro vytváření mobilních, plocha a webových aplikací. Podporuje následující vývoj:
+Visual Studio pro Mac je moderní, sofistikované IDE s mnoha funkcemi pro vytváření mobilních, plocha a webových aplikací. Podporuje následující typy vývoj:
 
 * Mobilní s .NET: Android, iOS, tvOS, watchOS
 * Aplikací systému Mac
 * Aplikace .NET core
-* Základní webové aplikace ASP.NET
+* Webové aplikace ASP.NET Core
 * Napříč platformami Unity hry
 
-Zahrnuje funkce, jako je bohatě vybavený editor, ladění, nativní platforma integrace s iOS, Mac a Android a integrované ovládací prvky zdroje.
+Zahrnuje funkce, jako je bohatě vybavený editor, ladění, nativní platforma integrace s iOS, Mac a Android a integrované správy zdrojového kódu.
 
 Tento článek zjišťování různých oddílů sady Visual Studio pro Mac, poskytuje podívejte se na některé z funkcí, které umožňují výkonný nástroj pro vytváření aplikací pro různé platformy.
 

@@ -20,16 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f823c8c67750dec31c6c2b534ecc7500e20defaf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c6fc0b1169ff906d7cda36eeeb5a74410cf46a9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691493"
 ---
 # <a name="creating-a-business-data-connectivity-model"></a>Vytvoření modelu připojení obchodních dat
   Můžete vytvořit model Business Data Connectivity (BDC) nebo si přizpůsobit existujícího modelu služby BDC pomocí sady Visual Studio. Každý projekt SharePoint může obsahovat jenom jeden model. Další informace najdete v tématu [integrace obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
-## <a name="creating-a-new-model"></a>Vytvoření nového modelu  
+## <a name="create-a-new-model"></a>Vytvořit nový model
  Chcete-li vytvořit nový model, vytvořte **modelu připojení obchodních dat** projektu nebo přidejte **modelu připojení obchodních dat** položkou **prázdný projektu služby SharePoint**.  
   
 > [!NOTE]  
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Při ladění projektu sady Visual Studio zkopíruje sestavení do obou umístění v místním počítači.  
   
-## <a name="adding-an-existing-model"></a>Přidání existujícího modelu  
+## <a name="add-an-existing-model"></a>Přidat existující model
  Můžete importovat model, který byl vytvořen pomocí jiných nástrojů, například SharePoint Designer. Můžete zvolit importovat existující model do projektu v následujících situacích:  
   
 -   Chcete-li přizpůsobit model, který je už nasazená do farmy serverů SharePoint.  
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/16/2018
   
  Systému LOB sestavení rozhraní .NET Framework typ importované modelu můžete přidat výběrem možnosti v **sestavení .NET přidat LobSystem**. To umožňuje psát vlastní kód a použijte k definování metadata pro importovaný model návrháře.  
   
-## <a name="related-topics"></a>Související témata  
+## <a name="related-topics"></a>Související témata
   
 |Název|Popis|  
 |-----------|-----------------|  
@@ -73,4 +74,4 @@ ms.lasthandoff: 04/16/2018
 |[Postupy: Určení lokalizovaných názvů, vlastností a oprávnění pomocí zdrojového souboru](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Popisuje, jak poskytnout řetězce, které jsou slučovány metadat modelu, pokud model je spotřebovávají webové části nebo webové stránky.|  
 |[Postupy: Zahrnutí vlastního sestavení ve funkci BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Ukazuje, jak k zahrnutí vlastního sestavení ve funkci.|  
   
-  
+ 

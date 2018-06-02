@@ -34,19 +34,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 279a0a73f24b2916e21293c854692ab40f444b4c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 446378df2d73f4d0c2bb8eac45075fa51365cd6d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693731"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Nástroje XML v sadě Visual Studio
 
 *Jazyk XML (Extensible Markup)* je značka jazyk, který poskytuje formát pro popisující data. To zajišťuje přesnější deklarace výsledků vyhledávání a užitečnější napříč různými platformami. Kromě toho XML umožňuje oddělení prezentace z data. Například ve formátu HTML je použití značek ke prohlížeč zobrazit data jako tučné a kurzíva; v XML použijete jenom k popisu dat, jako název města, teploty a barometrický tlak značky. V XML vytvoříte pomocí šablony stylů například šablony stylů XSL (Extensible Language) a kaskádových stylů (CSS) pro data k dispozici v prohlížeči. XML odděluje data od prezentaci a proces. To umožňuje zobrazit a zpracovat data, protože chcete, s použitím různých šablony stylů a aplikace.
 
-XML je podmnožinou SGML, která je optimalizovaná pro doručení přes Web. Definuje ho World Wide Web Consortium (W3C). Tato standardizace zaručuje, že strukturovaných dat bude jednotné a nezávislé aplikací nebo dodavatele.
+XML je podmnožinou SGML, která je optimalizovaná pro doručení přes Web. Definuje ho World Wide Web Consortium (W3C). Tato standardizace zaručuje, že jsou strukturovaná data uniform a nezávislé aplikací nebo dodavatele.
 
-XML je základem mnoho funkcí sady Visual Studio a rozhraní .NET Framework. Následující téma seznam názvů nástroje a funkce související s XML, které jsou nabízena v sadě Visual Studio a rozhraní .NET Framework.
+XML je základem mnoho funkcí sady Visual Studio a rozhraní .NET Framework. V následujícím článku seznamu názvy nástroje a funkce související s XML, které jsou nabízena v sadě Visual Studio a rozhraní .NET Framework.
 
 Další informace najdete v tématu <xref:System.Xml?displayProperty=fullName> dokumentaci.
 
@@ -68,6 +69,6 @@ Další informace najdete v tématu <xref:System.Xml?displayProperty=fullName> d
 
 [Transformace XSLT](/dotnet/standard/data/xml/xslt-transformations) popisuje jak <xref:System.Xml.Xsl.XslCompiledTransform> třída implementuje doporučení XSLT 1.0.
 
-[Zpracování kódu XML dat pomocí datového modelu XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) popisuje jak <xref:System.Xml.XPath.XPathNavigator> třída může zpracovat data XML uložené v <xref:System.Xml.XPath.XPathDocument> nebo <xref:System.Xml.XmlDocument> objektu. <xref:System.Xml.XPath.XPathNavigator> Třídy je založena na XQuery 1.0 a XPath 2.0 datový Model a slouží k přejděte a upravit XML data.
+[Zpracování dat XML pomocí modelu dat XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) popisuje jak <xref:System.Xml.XPath.XPathNavigator> třída může zpracovat data XML uložené v <xref:System.Xml.XPath.XPathDocument> nebo <xref:System.Xml.XmlDocument> objektu. <xref:System.Xml.XPath.XPathNavigator> Třídy je založena na XQuery 1.0 a XPath 2.0 datový Model a slouží k přejděte a upravit XML data.
 
 [XML schéma objektu modelu (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som) popisuje třídy používané pro vytváření a manipulace s nimi schémat XML, tím, že poskytuje <xref:System.Xml.Schema.XmlSchema> třídy se načíst a upravit schéma.

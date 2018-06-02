@@ -1,5 +1,5 @@
 ---
-title: 'Návod: XSLT profileru'
+title: 'Návod: Profiler XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c36b1e079027bd0513a7396e703db610dd737639
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14abf52e65a796325d4af8bd95f5434c105c3fa3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693796"
 ---
-# <a name="walkthrough-xslt-profiler"></a>Návod: XSLT profileru
+# <a name="walkthrough-xslt-profiler"></a>Návod: Profiler XSLT
 
 Profileru XSLT vytvoří podrobné sestavy XSLT výkonu, které pomáhají měr, hodnocení a cíle problémy související s výkonem v kódu XSLT. Profileru XSLT zahrnuje užitečné pomocné parametry pro XSL a XSLT optimalizace na list stylu. Pro aplikace XSLT této vyžádání maximální výkon, tento nástroj může být nezbytné.
 
@@ -88,7 +89,7 @@ Postupy v následující návod vyžadují Visual Studio a rozhraní .NET Framew
 
 5.  Data můžete také řadit podle klikejte na názvy sloupců.
 
-### <a name="select-calltree-view"></a>Vyberte zobrazení CallTree
+### <a name="select-call-tree-view"></a>Vyberte zobrazení stromu volání
 
 1.  Vyberte **zobrazení stromu volání** v **aktuální zobrazení** rozevíracího seznamu. Toto zobrazení je stromové zobrazení spuštění programu.
 
@@ -108,6 +109,6 @@ Postupy v následující návod vyžadují Visual Studio a rozhraní .NET Framew
 
 4.  Zobrazení procesů zobrazí tabulku, která zahrnuje **ID procesu**, **název procesu**, **čas zahájení**a **koncový čas**. Data lze seřadit kliknutím na názvy sloupců.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Návod: Používání hierarchie XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+- [Návod: Použití hierarchie XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

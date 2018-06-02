@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Použití funkcí Editor XML'
+title: 'Návod: Používání funkcí editoru XML'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,18 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6884f5b97d52e8d0671f1ccb73a1dabd739afee1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: afda2968ece2a18b7abdc2c4c35e4353206cbe42
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693822"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>Návod: Použití funkcí Editor XML
+# <a name="walkthrough-use-xml-editor-features"></a>Návod: Použití funkcí editor XML
 
 Kroky v tomto návodu ukazují, jak vytvořit nový dokument XML. Průvodce také používá některé z funkcí editoru XML, které umožňují cenné XML pro vytváření obsahu.
 
 > [!NOTE]
-> Před spuštěním průvodce, uložte soubor hireDate.xsd (uvedené níže v tomto tématu) do místního počítače.
+> Před spuštěním průvodce, uložte *hireDate.xsd* souboru (uvedené níže v tomto tématu) do místního počítače.
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>K vytvoření nového souboru XML a přidružte ji k schématu XML
 
@@ -39,7 +40,7 @@ Kroky v tomto návodu ukazují, jak vytvořit nový dokument XML. Průvodce tak�
 
      **Otevřete schématu XSD** se zobrazí dialogové okno.
 
-5.  Vyberte soubor hireDate.xsd a klikněte na tlačítko **otevřete**.
+5.  Vyberte *hireDate.xsd* souboru a klikněte na tlačítko **otevřete**.
 
 6.  Click **OK**.
 
@@ -59,7 +60,7 @@ Kroky v tomto návodu ukazují, jak vytvořit nový dokument XML. Průvodce tak�
 
     -   **Zaměstnanec** přidat kořenový element.
 
-2.  Vyberte **<!--** přidat uzel komentáře a stiskněte klávesu ENTER.
+2.  Vyberte **<!--** přidat uzel komentáře a stiskněte klávesu **Enter**.
 
      Editor vloží koncová značka komentáře a umístí kurzoru mezi počáteční a koncové značky pro komentáře.
 
@@ -71,7 +72,7 @@ Kroky v tomto návodu ukazují, jak vytvořit nový dokument XML. Průvodce tak�
 
 5.  Typ `>` zavřete značky.
 
-6.  Editor přidá koncová značka. Koncová značka se přidá s vlnovkou indikující chybu ověření. Popisek zobrazí zprávu: elementu 'zaměstnanec, má neúplné obsah. Byl očekáván "ID".
+6.  Editor přidá koncová značka. Koncová značka se přidá s vlnovkou indikující chybu ověření. **Popisek** zobrazí zprávu: **má element "zaměstnanec" nekompletní obsah. Očekávaný 'ID'**.
 
 7.  Typ `<` a vyberte **ID** ze seznamu členů. Pak zadejte `>`.
 
@@ -79,17 +80,17 @@ Kroky v tomto návodu ukazují, jak vytvořit nový dokument XML. Průvodce tak�
 
 8.  Typ **abc**.
 
-     **Abc** text má vlnovkou. Popisek zobrazí zprávu: element "ID" má neplatnou hodnotu podle jeho datového typu.
+     **Abc** text má vlnovkou. **Popisek** zobrazí zprávu: **element "ID" má neplatnou hodnotu podle jeho datového typu**.
 
 9. Klikněte pravým tlačítkem na ID elementu a vyberte **přejít k definici**.
 
-     Editor hireDate.xsd soubor se otevře v novém okně dokumentu a umístí kurzor na definici ID schématu elementu.
+     Otevře se editor *hireDate.xsd* soubor v novém okně dokumentu a umístí kurzor na definici ID schématu elementu.
 
 10. Vraťte se do souboru XML a nahraďte **abc** textu s **123**.
 
-     Podtržení vlnovkou a popisu tlačítka jsou vymazány pod hodnota ID elementu. Popisek pro zaměstnance koncová značka nyní zobrazí zprávu: elementu 'zaměstnanec, má neúplné obsah. Očekávané, přijetím datum".
+     Podtržení vlnovkou a **popisek** vyjmuty pod hodnota ID elementu. **Popisek** pro zaměstnance koncové značky nyní zobrazí zprávu: **má element "zaměstnanec" nekompletní obsah. Očekávání, datum přijetí'**.
 
-11. Umístěte kurzor za koncovou značku ID, zadejte v `<`, vyberte datum přijetí ze seznamu členů a poté zadejte v `>`.
+11. Umístěte kurzor za koncovou značku ID, zadejte v `<`, vyberte **datum přijetí** ze seznamu členů a poté zadejte `>`.
 
      Přidá XML element editor `<hire-date></hire-date>`a umístí kurzor po datum přijetí počáteční značka.
 
@@ -105,11 +106,11 @@ Kroky v tomto návodu ukazují, jak vytvořit nový dokument XML. Průvodce tak�
 
 1.  Z **soubor** nabídce vyberte možnost **uložit jako**.
 
-     **Uložit soubor jako** se zobrazí dialogové okno. Výchozí název souboru je 'XMLFile1'.
+     **Uložit soubor jako** se zobrazí dialogové okno. Výchozí název souboru je *'XMLFile1'*.
 
 2.  Zadejte název souboru a umístění v dokumentu XML a klikněte na tlačítko **Uložit**.
 
-## <a name="hiredatexsd-file"></a>hireDate.xsd souboru
+## <a name="hiredatexsd-file"></a>soubor hireDate.xsd
  Následující schéma soubor je používán návodu.
 
 ```xml
@@ -128,6 +129,6 @@ Kroky v tomto návodu ukazují, jak vytvořit nový dokument XML. Průvodce tak�
 </xs:schema>
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Editor XML](../xml-tools/xml-editor.md)

@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: caa1fd5317cf7f5bfd7a7f5a309734002112cc6a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3fc4d5a6c1a4ae3cabbbb2426d7a4fdf011b9e0e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693884"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí
 
@@ -69,8 +70,8 @@ Podporované konfigurace a platformy pro programové testy uživatelského rozhr
 |Citrix/Terminálové služby|Nedoporučujeme záznam akcí na serveru. Záznam nepodporuje spuštěním několika instancí ve stejnou dobu.|
 |PowerBuilder|Částečně podporováno.<br /><br /> Podpora se provádí v rozsahu, ve kterém je povoleno usnadnění pro ovládací prvky aplikace PowerBuilder.|
 
- Informace o tom, jak vytvořit rozšíření, které podporují jiné platformy najdete v tématu [povolení programového testování z vaše ovládacích prvků uživatelského rozhraní](../test/enable-coded-ui-testing-of-your-controls.md) a [rozšiřování programových testů uživatelského rozhraní a zaznamenávání akcí do podpory aplikace Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
+ Informace o tom, jak vytvořit rozšíření, které podporují jiné platformy najdete v tématu [povolení programového testování z vaše ovládacích prvků uživatelského rozhraní](../test/enable-coded-ui-testing-of-your-controls.md) a [rozšiřování programových testů uživatelského rozhraní a zaznamenávání akcí](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)

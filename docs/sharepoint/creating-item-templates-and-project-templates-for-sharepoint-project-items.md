@@ -20,20 +20,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f71352dad7b77b2ce92816e84a7c90ec16710ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94f93d58933ad0aba6cde985dc260fe3341aa5d2
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691960"
 ---
-# <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Vytváření šablon položek a projektů pro položky projektu služby SharePoint
+# <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Vytváření šablon položek a šablony projektů pro položky projektu SharePoint
   Když definujete vlastní typu položky projektu služby SharePoint, můžete přidružit pomocí šablony položky nebo šablona projektu tak, aby ostatní vývojáři mohou použít položka projektu v sadě Visual Studio. Můžete také vytvořit průvodce pro šablony.  
   
  Například Visual Studio nezahrnuje projektu šablony nebo šablony položky pro přidání pole na web služby SharePoint. Můžete definovat typu položky projektu služby SharePoint, která představuje pole a pak vytvořit šablonu položky, které ostatní vývojáři mohou použít k přidání položky pole do projektu služby SharePoint. Nebo můžete vytvořit šablony projektu, takže vývojáři můžou vytvářet nové projektu služby SharePoint, který obsahuje položky pole. V obou případech můžete zadat taky průvodce, který se zobrazí, když vývojáři pomocí šablony. Tento průvodce může shromažďovat informace z vývojářům konfigurovat novou položku nebo projektu.  
   
  Šablony položek a projektů jsou soubory .zip, které obsahují soubory, které se používají Visual Studio k vytvoření položky projektu nebo projektu. Další informace o základní informace o šablon položek a projektů najdete v tématu [vytváření projektů a šablon položek](/visualstudio/ide/creating-project-and-item-templates).  
   
-##  <a name="creatingitemtemplates"></a> Vytváření šablon položek  
+## <a name="create-item-templates"></a>Vytváření šablon položek
  Když vytvoříte šablonu položky pro položky projektu služby SharePoint, nejsou některé soubory, které jsou vždy požadované a volitelné soubory, které by mohly používat určitých typů položek projektu. Návod, které ukazuje, jak k definování typu položky projektu služby SharePoint a vytvořit šablonu položky pro něj najdete v tématu [návod: vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  Následující tabulka uvádí požadované soubory k vytvoření šablony položky pro položky projektu služby SharePoint.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
 |.aspx|Soubor stránky ASP.NET. Tento soubor obsahuje kód XML, který definuje stránky aplikace.|  
 |soubory CS nebo VB|Tyto soubory kódu zadejte chování při přizpůsobení SharePoint, které mají programovací model, který je přístupný z Visual C# nebo kód jazyka Visual Basic, například stránky aplikací, webové části a pracovních postupů.|  
   
-## <a name="creating-project-templates"></a>Vytváření šablon projektů  
+## <a name="create-project-templates"></a>Vytváření šablon projektu
  Když vytvoříte šablonu projektu služby SharePoint, nejsou některé soubory, které jsou vždy požadované a volitelné soubory, které by mohly používat určité typy projektů. Projekty SharePoint obvykle obsahovat alespoň jednu položku projektu služby SharePoint. Není to však vyžaduje. Můžete třeba definovat šablonu projektu služby SharePoint, která má být použit pouze k nasazení řešení služby SharePoint, které jsou vytvořené v jiné projekty.  
   
  Návod, které ukazuje, jak k definování typu položky projektu služby SharePoint a vytvořit šablona projektu pro něj najdete v tématu [návod: vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
@@ -77,12 +78,12 @@ ms.lasthandoff: 04/16/2018
 |*featureName*.feature|Tento soubor definuje funkce služby SharePoint, která slouží k seskupení několik položek projektu pro nasazení. Při použití návrháře funkce pro přizpůsobení funkce ve vašem projektu, Visual Studio ukládá data o funkci v tomto souboru. Pokud chcete seskupit položky projektu do různých funkcí, můžete zahrnout více .feature souborů.<br /><br /> Když vytvoříte vlastní šablona projektu služby SharePoint, doporučujeme, abyste zahrnout pouze minimální požadovaný obsah do každého souboru .feature, a nakonfigurovat pomocí rozhraní API v funkce <xref:Microsoft.VisualStudio.SharePoint.Features> oboru názvů v rozšíření, které je přidružen Šablona projektu. Pokud to uděláte, vaše šablona projektu je chráněný před budoucími změnami na strukturu .feature souboru. Příklad, který ukazuje, jak vytvořit soubor .feature se jenom minimálně obsahu, najdete v části [návod: vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Pokud chcete změnit soubor .feature přímo, můžete ověřit obsah, pomocí schéma v % Program Files (11.0\Xml\Schemas\FeatureModelSchema.xsd x86)%\Microsoft Visual Studio.|  
 |*featureName*. Template.XML|Tento soubor poskytuje základ pro souboru manifestu funkce (souboru funkce.XML) pro jednotlivé funkce, které se generují z projektu. Obsah můžete přidat do tohoto souboru, pokud chcete zadat některé chování, která není určená změnit, a uživatelé typ vašeho projektu. Další informace najdete v tématu [stavebním blokem: funkce](http://go.microsoft.com/fwlink/?LinkId=169183) a [souboru funkce.xml](http://go.microsoft.com/fwlink/?LinkId=177795) soubory.<br /><br /> Při sestavování řešení balíčků z projektu sady Visual Studio sloučí obsah každý pár *featureName*.feature souboru a *featureName*. Template.XML soubory do souboru manifestu funkce. Další informace o vytváření balíčků řešení najdete v tématu [postupy: vytvoření balíčku řešení služby SharePoint (wsp)](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b).|  
   
-## <a name="creating-wizards-for-item-templates-and-project-templates"></a>Vytváření průvodců pro šablony položek a šablony projektů  
+## <a name="create-wizards-for-item-templates-and-project-templates"></a>Vytváření průvodců pro šablony položek a šablony projektů
  Po definování typu položky projektu služby SharePoint a přidružte ji k šabloně položku nebo projektu, můžete také vytvořit průvodce. Průvodce zobrazí, když vývojář používá k přidání položky projektu služby SharePoint do projektu šablony položky, nebo když vývojář použije šablona projektu pro vytvoření nového projektu, který obsahuje položky projektu služby SharePoint. Průvodce lze použít ke shromažďování informací od vývojářů a k inicializaci nové položky projektu služby SharePoint.  
   
  Návody, které ukazují, jak vytvořit průvodců pro šablony položek a projektů, najdete v části [návod: vytvoření vlastní položky projektu akce pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) a [návod: vytvoření webu Položky projektu sloupce pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Definování typů položek projektu služby SharePoint vlastní](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
@@ -90,4 +91,4 @@ ms.lasthandoff: 04/16/2018
  [Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
  [Vytváření šablon projektů a položek](/visualstudio/ide/creating-project-and-item-templates)  
   
-  
+ 

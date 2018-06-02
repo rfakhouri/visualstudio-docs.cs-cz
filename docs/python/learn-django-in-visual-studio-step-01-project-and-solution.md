@@ -12,16 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 82f7de8649e36c03f1ae1004c01c93dd7580b3a1
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34468995"
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Kurz – krok 1: Začínáme s webového rozhraní Django v sadě Visual Studio
 
 [Django](https://www.djangoproject.com/) je určená pro vývoj webů rychlé, zabezpečené a škálovatelné vysoké úrovně rozhraní Python. V tomto kurzu prozkoumá rozhraní Django v kontextu projektu šablony, které poskytuje Visual Studio zjednodušují vytváření založené na rozhraní Django webové aplikace.
 
-V tomto kurzu zjistíte, jak:
+V tomto kurzu se naučíte:
 
 > [!div class="checklist"]
 > - Vytvořit základní projekt Django v úložišti Git pomocí šablony "Prázdný webový projekt Django" (krok 1)

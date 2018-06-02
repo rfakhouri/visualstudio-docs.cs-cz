@@ -15,13 +15,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: f55f42e17dec1a1b236d713ac31c2dfa681cd913
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34476661"
 ---
 # <a name="timeline-caret"></a>Vsuvka časové osy
 Vyberete-li bod v časové ose segment provádění vlákna, zobrazí se nad ním vsuvka časové osy. Zásobník volání, který se zobrazí na kartě aktuální zásobníku je ten, který je nejblíže v čase kde jste klikli na segmentu. Pomocí kurzoru je použito k přidružení zásobníku volání, který se zobrazí v části **aktuální** karta s rychlých, když byla vzorků. Znak zobrazí přesné umístění zásobníku volání, které je nejblíže zásobníku volání do umístění, které uživatel vybral.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)

@@ -11,10 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: fcac1e902ccc1fcc5432a231c5f34629422815fd
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477389"
 ---
 # <a name="vsperf"></a>VSPerf
 Použití **VsPerf** nástroj příkazového řádku:  
@@ -58,6 +59,6 @@ Použití **VsPerf** nástroj příkazového řádku:
 |**/ Odpojit**|Zastavit shromažďování dat, ale nechat nadále spouštět procesy cíl.|  
 |**/ Status**|Zobrazit stav profileru.|  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Nástroje pro sledování výkonu v aplikacích pro Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
  [Profil z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)

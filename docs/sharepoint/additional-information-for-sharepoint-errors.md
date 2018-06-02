@@ -21,16 +21,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b4ddc41e519466bbd48de4bbcbdad060bd93ef7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c4585ace17669205345554477cafefb7965dd15
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691352"
 ---
-# <a name="additional-information-for-sharepoint-errors"></a>Další informace o chybách služby SharePoint
+# <a name="additional-information-for-sharepoint-errors"></a>Další informace o chybách služby SharePoint
   Můžete najít pomoc při řešení potíží [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů SharePoint chyby a upozornění při řešení potíží témata a veřejné fóra Microsoft Developer Network (MSDN).  
   
-## <a name="troubleshooting-errors-and-issues"></a>Řešení potíží s chyb a problémů  
+## <a name="troubleshoot-errors-and-issues"></a>Řešení chyb a problémů
  O pomoc s některé běžné chyby a další problémy v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, naleznete v následujících tématech:  
   
 -   [Řešení potíží s řešeními služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Řešení potíží s balením a nasazením služby SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
-## <a name="other-resources"></a>Další zdroje  
+## <a name="other-resources"></a>Další zdroje
  Následující tabulka uvádí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, fóra a další zdroje, které jsou k dispozici na webu MSDN.  
   
 |Termín|Definice|  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
  Pokud stále nemůžete najít odpovědi, které potřebujete, můžete přístup k možnosti online podpory společnosti Microsoft, například kontaktování podpory společnosti Microsoft nebo hledání článků Knowledge Base. Další informace najdete v tématu [Microsoft Help and Support](http://go.microsoft.com/fwlink/?LinkID=155371) stránky.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
-  
+ 

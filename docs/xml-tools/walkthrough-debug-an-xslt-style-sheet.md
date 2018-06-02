@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Ladění stylů XSLT'
+title: 'Návod: Ladění šablony stylů XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c2b986318940dc7103997eaef1681d2c239e01
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebc8e8f8700690a2ae74fcc91384fb77b238ea33
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693393"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Návod: Ladění stylů XSLT
 
@@ -32,13 +33,13 @@ Kroky v tomto návodu ukazují, jak používat ladicí program XSLT. Kroky zahrn
 
 1.  Z **soubor** nabídky, přejděte na příkaz **otevřete**a klikněte na tlačítko **souboru**.
 
-2.  Vyhledejte soubor belowAvg.xsl a klikněte na tlačítko **otevřete**.
+2.  Vyhledejte *belowAvg.xsl* souboru a klikněte na tlačítko **otevřete**.
 
      Šablony stylů je otevřen v editoru XML.
 
 3.  Klikněte na tlačítko Procházet (**...** ) na **vstup** pole v okně vlastností dokumentu.
 
-4.  Vyhledejte soubor books.xml a klikněte na tlačítko **otevřete**.
+4.  Vyhledejte *books.xml* souboru a klikněte na tlačítko **otevřete**.
 
      Toto nastaví zdrojový soubor dokumentu, který se používá pro transformace XSLT.
 
@@ -48,9 +49,9 @@ Kroky v tomto návodu ukazují, jak používat ladicí program XSLT. Kroky zahrn
 
 To spustí proces ladění a několik nových oken, které jsou používány ladicího programu.
 
-Existují dvě windows, které zobrazují vstupní dokument a styly listu. Ladicí program používá tyto windows zobrazit aktuální stav spuštění. Ladicí program je umístěn na `xsl:if` element šablony stylů a na prvním uzlu adresáře v souboru books.xml.
+Existují dvě windows, které zobrazují vstupní dokument a styly listu. Ladicí program používá tyto windows zobrazit aktuální stav spuštění. Ladicí program je umístěn na `xsl:if` element šablony stylů a na prvním uzlu adresáře v *books.xml* souboru.
 
-Místní hodnoty – okno se zobrazí všechny místní proměnné a jejich aktuální hodnoty. To zahrnuje proměnné definované v šabloně stylů a také proměnné, které používá ladicí program ke sledování uzly, které jsou aktuálně v kontextu.
+**Místní hodnoty –** okně se zobrazí všechny místní proměnné a jejich aktuální hodnoty. To zahrnuje proměnné definované v šabloně stylů a také proměnné, které používá ladicí program ke sledování uzly, které jsou aktuálně v kontextu.
 
 **XSL výstup** okně se zobrazí výstup transformace XSL. Toto okno je oddělená od **Visual Studio výstup** okno.
 
@@ -60,13 +61,13 @@ Místní hodnoty – okno se zobrazí všechny místní proměnné a jejich aktu
 
 1.  Z **ladění** nabídky, přejděte na příkaz **Windows**, přejděte na příkaz **sledovat**a klikněte na tlačítko **kukátko 1**.
 
-     Díky okna kukátka 1 viditelné.
+     Díky tomu **kukátko 1** okno viditelné.
 
-2.  Typ `$bookAverage` v **název** pole a stiskněte klávesu ENTER.
+2.  Typ `$bookAverage` v **název** pole a stiskněte klávesu **Enter**.
 
      Hodnota `$bookAverage` proměnné se zobrazí v okně.
 
-3.  Typ `self::node()` v **název** pole a stiskněte klávesu ENTER.
+3.  Typ `self::node()` v **název** pole a stiskněte klávesu **Enter**.
 
      `self::node()` je výraz XPath, který vyhodnotí do aktuálního uzlu kontextu. Hodnota `self::node()` výraz XPath je prvním uzlu adresáře. To změní, když jsme průběhu procházení transformace.
 
@@ -81,19 +82,19 @@ Místní hodnoty – okno se zobrazí všechny místní proměnné a jejich aktu
 
 1.  Stiskněte klávesu **F5** pokračujte.
 
-     Protože splněna prvního uzlu adresáře `xsl:if` podmínky, uzel adresáře je přidán do okna výstupu XSL. Ladicí program bude pokračovat v provádění, dokud je znovu umístěný na `xsl:if` element v šabloně stylů. Ladicí program je teď nastavený na druhém uzlu adresáře v souboru books.xml.
+     Protože splněna prvního uzlu adresáře `xsl:if` podmínku, uzel adresáře je přidán do **XSL výstup** okno. Ladicí program bude pokračovat v provádění, dokud je znovu umístěný na `xsl:if` element v šabloně stylů. Ladicí program je teď nastavený na druhém uzlu adresáře v *books.xml* souboru.
 
-     V okně Watch1 `self::node()` hodnotu změny ve druhém uzlu adresáře. Prověřením hodnota elementu ceny, můžete určit, že cena je vyšší než průměr, proto `xsl:if` podmínka má selhat.
+     V **kukátko 1** okno `self::node()` hodnotu změny ve druhém uzlu adresáře. Prověřením hodnota elementu ceny, můžete určit, že cena je vyšší než průměr, proto `xsl:if` podmínka má selhat.
 
 2.  Stiskněte klávesu **F5** pokračujte.
 
-     Protože nesplňuje druhého uzlu adresáře `xsl:if` podmínku uzlu adresáře není přidáno do okna výstupu XSL. Ladicí program bude pokračovat v provádění, dokud je znovu umístěný na `xsl:if` element v šabloně stylů. Ladicí program je teď nastavený na třetí `book` uzlu v souboru books.xml.
+     Protože nesplňuje druhého uzlu adresáře `xsl:if` podmínku uzlu adresáře není přidáno do **XSL výstup** okno. Ladicí program bude pokračovat v provádění, dokud je znovu umístěný na `xsl:if` element v šabloně stylů. Ladicí program je teď nastavený na třetí `book` uzlu *books.xml* souboru.
 
-     V okně Watch1 `self::node()` hodnota změní na uzlu třetí adresáře. Prověřením hodnotu `price` elementu, můžete určit, že cena je nižší než průměr, proto `xsl:if` uspěli podmínku.
+     V **kukátko 1** okno `self::node()` hodnota změní na uzlu třetí adresáře. Prověřením hodnotu `price` elementu, můžete určit, že cena je nižší než průměr, proto `xsl:if` uspěli podmínku.
 
 3.  Stiskněte klávesu **F5** pokračujte.
 
-     Protože `xsl:if` byla splněna podmínka, třetí adresáře se přidá do okna výstupu XSL. Zpracování všech knih v dokumentu XML a ladicí program zastaví.
+     Protože `xsl:if` byla splněna podmínka, třetí adresáře se přidá do **XSL výstup** okno. Zpracování všech knih v dokumentu XML a ladicí program zastaví.
 
 ## <a name="sample-files"></a>Ukázkové soubory
 
@@ -154,6 +155,6 @@ Následující dva soubory jsou používány návodu.
 </bookstore>
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Ladění XSLT](../xml-tools/debugging-xslt.md)

@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4354e58e8de2d877e726b4615bac3832bfc37d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693666"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Řazení, filtrování a seskupení (Explorer schématu XML)
 
-Toto téma popisuje možnosti, které jsou k dispozici prostřednictvím **možnosti seskupení, filtrování a řazení** nabídky na panelu nástrojů Explorer schématu XML.
+Toto téma popisuje možnosti, které jsou k dispozici prostřednictvím **možnosti seskupení, filtrování a řazení** nabídce **Explorer schématu XML** panelu nástrojů.
 
 ## <a name="filter-options"></a>Možnosti filtru.
 
@@ -32,7 +33,7 @@ Toto téma popisuje možnosti, které jsou k dispozici prostřednictvím **možn
 
 ## <a name="sorting-options"></a>Řazení možnosti
 
- Jsou k dispozici následující možnosti řazení. Výchozí hodnota je **seřadit podle typu**. Seřadit podle možnosti se nevztahují k souborům a obory názvů.
+ Jsou k dispozici následující možnosti řazení. Výchozí hodnota je **seřadit podle typu**. **Seřadit podle** možnosti se nevztahují k souborům a obory názvů.
 
 -   **Řazení podle typu**.
 

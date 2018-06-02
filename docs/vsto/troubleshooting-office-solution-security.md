@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7edb1826816ea4f20d66b91a7f9819ef394ce98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 547ba6d1e58376c50d0e01ab8fd3d55f62d5a935
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693315"
 ---
 # <a name="troubleshooting-office-solution-security"></a>Řešení potíží se zabezpečením řešení pro systém Office
   Toto téma obsahuje tipy pro řešení běžných problémů, kterými se můžete setkat při práci s zabezpečení řešení pro systém Office.  
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/16/2018
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>Důvěryhodné řešení nelze nainstalovat z lokalit s omezeným přístupem  
- Uživatelé nemůžou instalovat z umístění webové řešení, pokud webová stránka je uveden v zóně Internet Explorer lokalit s omezeným přístupem. To platí i v případě, že toto řešení je podepsaná důvěryhodným certifikátem.  
+ Uživatelé nemůžou instalovat z umístění webové řešení, pokud web je uveden v zóně Internet Explorer lokalit s omezeným přístupem. To platí i v případě, že toto řešení je podepsaná důvěryhodným certifikátem.  
   
  Adresa URL manifest nasazení lze rozdělit do jedné z pěti zón:  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/16/2018
   
  S IEESC a prohlížeče Internet Explorer 7 a vyšší Pokud adresa URL manifest nasazení je zařazený do kategorie v zóně Internet, manifest musí mít certifikát od důvěryhodného vydavatele nebo řešení nelze nainstalovat. Bez IEESC je výchozí chování pro koncové uživatele vyzvat k rozhodnutí o vztahu důvěryhodnosti.  
   
- Ke správě účinku IEESC a Internet Explorer 7 a vyšší, identifikovat weby a universal naming convention (UNC) cesty, která důvěřujete a přidat je do jedné ze zón zabezpečení důvěryhodné (místní intranet nebo Důvěryhodné servery). Informace o tom, jak Správa zón najdete v tématu [konfigurace ClickOnce důvěryhodných vydavatelů](http://go.microsoft.com/fwlink/?LinkId=94774).  
+ Ke správě účinku IEESC a Internet Explorer 7 a vyšší, identifikovat weby a universal naming convention (UNC) cesty, kterým důvěřujete a přidejte je do jedné ze zón zabezpečení důvěryhodné (místní intranet nebo Důvěryhodné servery). Informace o tom, jak Správa zón najdete v tématu [konfigurace ClickOnce důvěryhodných vydavatelů](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)  

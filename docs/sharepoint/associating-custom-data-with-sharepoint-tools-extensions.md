@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 106f6a828035393273d7157c4b3e5bd898322e46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0507fe16dd910fe61c4816594125b690c350a1a6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691367"
 ---
-# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Přidružení vlastních dat k rozšíření nástrojů služby SharePoint
+# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Přidružení vlastních dat k rozšíření nástrojů SharePoint
   Přidáním vlastních dat k určitým objektům v rozšíření nástrojů služby SharePoint. To je užitečné, když se data v jedné části rozšíření, kterou chcete později přístup z jiných kódu ve vašem rozšíření. Místo implementace vlastní způsob, jak ukládat a přistupovat k datům, můžete přidružit objekt data ve vašem rozšíření a následně načíst data ze stejného objektu později.  
   
  Přidání vlastních dat do objektů je také užitečné, pokud chcete zachovat data, která jsou relevantní pro konkrétní položku v sadě Visual Studio. Rozšíření nástrojů služby SharePoint jsou načteny pouze jednou, v sadě Visual Studio, takže toto rozšíření může pracovat s několik různých položek (jako jsou projekty, projektu položek, nebo **Průzkumníka serveru** uzly) kdykoli. Pokud máte vlastní data, která jsou relevantní jenom pro konkrétní položku, můžete přidat data do objektu, který představuje tuto položku.  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/16/2018
   
  V rozšíření systému projektu služby SharePoint můžete také uložit řetězec data, která přetrvává i po rozšíření je odpojen. Další informace najdete v tématu [ukládání dat do rozšíření systému projektu služby SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
-## <a name="objects-that-can-contain-custom-data"></a>Objekty, které mohou obsahovat vlastní Data  
+## <a name="objects-that-can-contain-custom-data"></a>Objekty, které mohou obsahovat vlastní data
  U všech objektů v modelu objektu nástroje služby SharePoint, který implementuje můžete přidat vlastní data <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> rozhraní. Toto rozhraní definuje právě jednu vlastnost, <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>, což je kolekce vlastních datových objektů. Implementovat následující typy <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:  
   
 -   <xref:Microsoft.VisualStudio.SharePoint.IMappedFolder>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>  
   
-## <a name="adding-and-retrieving-custom-data"></a>Přidávání a načítání vlastních dat  
+## <a name="add-and-retrieve-custom-data"></a>Přidání a načtení vlastních dat
  Přidání vlastních dat k objektu v rozšíření nástrojů služby SharePoint, získat <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> vlastnost v objektu, které chcete přidat data a pak použijte <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A> metoda pro přidání dat do objektu.  
   
  Vlastní data načíst z objektu v rozšíření nástrojů služby SharePoint, získat <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> vlastnost objektu a pak použijte jednu z následujících metod:  
@@ -81,10 +82,10 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Programování konceptů a funkcí pro rozšíření nástrojů SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
  [Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Návod: Rozšíření Průzkumníka serveru pro zobrazení webové části](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Postupy: Přidání vlastnosti do projektů služby SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [Postupy: Přidání vlastnosti do typu položky projektu služby SharePoint vlastní] (.. /SharePoint/How-to-Add-a-Property-to-a-Custom-SharePoint-Project-Item-Type.MD   
-  
+ 

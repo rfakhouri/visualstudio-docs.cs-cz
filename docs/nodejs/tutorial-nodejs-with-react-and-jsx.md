@@ -1,8 +1,8 @@
 ---
-title: Vytvoření aplikace Node.js a reagují
-description: V tomto kurzu vytvoříte aplikaci pomocí Node.js tools pro Visual Studio
+title: Vytvoření aplikace Node.js a React
+description: V tomto kurzu vytvoříte aplikaci pomocí nástrojů Node.js Tools for Visual Studio.
 ms.custom: mvc
-ms.date: 02/19/2018
+ms.date: 05/23/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,93 +13,94 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9958711ea64daee9876d3b16330685786b6d5825
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 667eee325be1ddd57f1f06f983b3105e5984df2d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34548606"
 ---
-# <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Kurz: Vytvoření aplikace Node.js a reagují v sadě Visual Studio
-Visual Studio můžete snadno vytvořit projekt Node.js a využívat funkce IntelliSense a jiné integrované funkce, které podporují Node.js. V tomto kurzu pro sadu Visual Studio vytvořte projekt webové aplikace Node.js ze šablony sady Visual Studio. Pak vytvoříte jednoduchou aplikaci pomocí reagují.
+# <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Kurz: Vytvoření aplikace Node.js a React v sadě Visual Studio
+Visual Studio vám umožňuje snadno vytvořit projekt Node.js a využívat IntelliSense a další integrované funkce, které podporují Node.js. V tomto kurzu pro Visual Studio vytvoříte projekt webové aplikace Node.js ze šablony sady Visual Studio. Pak vytvoříte jednoduchou aplikaci pomocí Reactu.
 
-V tomto kurzu zjistíte, jak:
+V tomto kurzu se naučíte:
 > [!div class="checklist"]
-> * Vytvoření projektu Node.js
-> * Přidání balíčků npm
-> * Přidat reagují kódu do vaší aplikace
-> * Transpile JSX
-> * Připojí ladicí program
+> * Vytvořit projekt Node.js
+> * Přidat balíčky npm
+> * Přidat do aplikace kód React
+> * Transpilovat JSX
+> * Připojit ladicí program
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Musíte mít nainstalované Visual Studio 2017 a zatížení vývoj Node.js.
+* Je nutné mít nainstalovanou sadu Visual Studio 2017 a úlohu Vývoj aplikací Node.js.
 
-    Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).
+    Pokud jste si sadu Visual Studio ještě nenainstalovali, nainstalujte si ji zdarma [odtud](http://www.visualstudio.com).
 
-    Pokud potřebujete nainstalovat zatížení, ale už máte Visual Studio, klikněte na tlačítko **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí instalační program Visual Studio. Vyberte **Node.js vývoj** zatížení, zvolte **upravit**.
+    Pokud potřebujete nainstalovat úlohu, ale Visual Studio už máte, klikněte v dialogovém okně **Nový projekt** v levém podokně na odkaz **Otevřít instalační program pro Visual Studio**. Spustí se instalační program pro Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
 
-* Musíte mít nainstalován modul runtime Node.js.
+* Je nutné mít nainstalovaný modul runtime Node.js.
 
-    Pokud nemáte nainstalováno, nainstalovat verzi LTS [Node.js](https://nodejs.org/en/download/) webu. Obecně platí Visual Studio automaticky rozpozná nainstalované runtime Node.js. Pokud je nainstalovaný modul runtime nerozpozná, můžete nakonfigurovat tak, aby odkazovaly nainstalovaný modul runtime na stránce vlastností projektu (po vytvoření projektu klikněte pravým tlačítkem na uzel projektu a zvolte **vlastnosti**).
+    V tomto kurzu byla testována s verze 8.11.2.
 
-    V tomto kurzu byla testována s verze 8.9.4.
+    Pokud ho nemáte nainstalovaný, nainstalujte si verzi LTS z webu [Node.js](https://nodejs.org/en/download/). Obecně platí, že Visual Studio automaticky rozpozná nainstalovaný modul runtime Node.js. Pokud se nainstalovaný modul runtime nerozpozná, můžete projekt nakonfigurovat na stránce vlastností pomocí odkazu na nainstalovaný modul runtime (po vytvoření projektu klikněte pravým tlačítkem na uzel projektu a zvolte **Vlastnosti**).
 
 ## <a name="create-a-project"></a>Vytvoření projektu
-Nejprve vytvořte projekt webové aplikace Node.js.
+Nejprve vytvoříte projekt webové aplikace Node.js.
 
 1. Otevřete Visual Studio 2017.
 
-1. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .
+1. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
 
-1. V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**a potom zvolte **Node.js**. V prostředním podokně vyberte **prázdnou webovou aplikaci Node.js**, zadejte název **NodejsWebAppBlank**a potom zvolte **OK**.
+1. V dialogovém okně **Nový projekt** v levém podokně rozbalte položku **JavaScript** a zvolte **Node.js**. V prostředním podokně zvolte **Prázdná webová aplikace Node.js**, zadejte název **NodejsWebAppBlank** a zvolte **OK**.
 
-     Pokud nevidíte **prázdnou webovou aplikaci Node.js** šablony projektu, je nutné nejprve nainstalovat zatížení vývoj Node.js.
+     Pokud se šablona projektu **Prázdná webová aplikace Node.js** nezobrazuje, je nutné nejprve nainstalovat úlohu Vývoj aplikací Node.js.
 
-    Visual Studio vytvoří nové řešení a otevře projektu.
+    Visual Studio vytvoří nové řešení a otevře příslušný projekt.
 
-    ![Projekt Node.js v Průzkumníku řešení](../nodejs/media/tutorial-nodejs-react-project-structure.png)
+    ![Projekt Node.js v Průzkumníku řešení](../nodejs/media/tutorial-nodejs-react-project-structure.png)
 
-    - Zvýrazněná tučným písmem je váš projekt pomocí názvu, který jste zadali **nový projekt** dialogové okno. V systému souborů je reprezentována tento projekt *.njsproj* soubor ve složce projektu. Můžete nastavit vlastnosti a proměnných prostředí přidružený k projektu pravým tlačítkem na projekt a zvolením **vlastnosti**. Můžete provést odezvy pomocí jiných nástrojů pro vývoj, protože soubor projektu neprovede vlastní změny ke zdroji projekt Node.js.
+    - Projekt je zvýrazněný tučným písmem a má název, který jste zadali v dialogovém okně **Nový projekt**. V systému souborů je tento projekt reprezentovaný souborem *.njsproj* ve složce projektu. Vlastnosti a proměnné prostředí přidružené k projektu můžete nastavit tak, že kliknete pravým tlačítkem na projekt a zvolíte **Vlastnosti**. Je možné provádět zpětné převody umožňující práci v jiných nástrojích pro vývoj, protože soubor projektu neprovádí vlastní změny ve zdroji projektu Node.js.
 
-    - Na nejvyšší úrovni je řešení, které ve výchozím nastavení má stejný název jako projektu. Řešení, reprezentována *.sln* souboru na disku, je kontejner pro jeden nebo více souvisejících projekty.
+    - Na nejvyšší úrovni je řešení, které má ve výchozím nastavení stejný název jako příslušný projekt. Řešení, reprezentované na disku souborem *.sln*, je kontejner pro jeden nebo více souvisejících projektů.
 
-    - Uzel npm zobrazuje všechny balíčky nainstalované npm. Pravým tlačítkem na uzel npm vyhledat a nainstalovat balíčky npm pomocí dialogového okna.
+    - Uzel npm zobrazuje všechny nainstalované balíčky npm. Po kliknutí pravým tlačítkem na uzel npm lze vyhledat a nainstalovat balíčky npm pomocí dialogového okna.
 
-    - Soubory, jako projektu *server.js* zobrazí na uzel projektu. *Server.js* je spuštění souboru projektu.
+    - Soubory projektu, například *server.js*, se zobrazují pod uzlem projektu. *Server.js* je spouštěcí soubor projektu.
 
 ## <a name="add-npm-packages"></a>Přidání balíčků npm
 
-Tato aplikace vyžaduje počet moduly npm správné fungování.
+Tato aplikace vyžaduje ke správnému fungování řadu modulů npm.
 
-* Reagovat
+* react
 * react-dom
-* Express
+* express
 * cesta
-* zavaděč TS
+* ts-loader
 * typescript
 * webpack
 * webpack-cli
 
-1. V Průzkumníku řešení (pravé podokno) klikněte pravým tlačítkem myši **npm** uzlu v projektu a zvolte **nainstalovat nové balíčky npm**.
+1. V Průzkumníku řešení (pravé podokno) klikněte pravým tlačítkem na uzel **npm** v projektu a zvolte **Nainstalovat nové balíčky npm**.
 
-    V **nainstalovat nové balíčky npm** dialogové okno, můžete nainstalovat nejnovější verzi balíčku, nebo zadejte verzi. Pokud si zvolíte instalaci aktuální verze těchto balíčků, ale později spustit do neočekávaným chybám, budete muset nainstalujte přesné balíčku verze popsanou dále v těchto kroků.
+    V dialogovém okně **Nainstalovat nové balíčky npm** můžete zvolit instalaci nejnovější verze balíčků nebo určit konkrétní verzi. Pokud zvolíte instalaci nejnovější verze těchto balíčků, ale při dalším postupu dojde k neočekávaným chybám, bude asi potřeba nainstalovat přesně ty verze balíčků, které jsou uvedené dále v tomto postupu.
 
-1. V **nainstalovat nové balíčky npm** dialogové okno, vyhledejte balíček reagují a klikněte na tlačítko **instalovat balíček** k její instalaci.
+1. V dialogovém okně **Nainstalovat nové balíčky npm** vyhledejte balíček react a kliknutím na **Nainstalovat balíček** ho nainstalujte.
 
-    ![Instalovat balíčky npm](../nodejs/media/tutorial-nodejs-react-install-packages.png)
+    ![Instalace balíčků npm](../nodejs/media/tutorial-nodejs-react-install-packages.png)
 
-    **Výstup** okně se zobrazí průběh na instalaci balíčku. Při instalaci balíčku se zobrazí pod **npm** uzlu.
+    Klikněte na tlačítko **výstup** okna zobrazíte průběh o instalaci balíčku (vyberte **Npm** v **zobrazit výstup z** pole). Po dokončení instalace se tento balíček zobrazí pod uzlem **npm**.
 
-    Projektu *package.json* souboru je doplněné o nový balíček informace, včetně verze balíčku.
+    Soubor *package.json* tohoto projektu se aktualizuje informacemi o novém balíčku, včetně verze tohoto balíčku.
 
-1. Místo použití uživatelského rozhraní k hledání a přidejte zbylé balíčků jeden po druhém, vložte následující kód do package.json. Nahraďte `dependencies` část s tímto kódem:
+1. Místo hledání a přidávání zbývajících balíčků po jednom pomocí uživatelského rozhraní vložte následující kód do souboru package.json. Nahraďte v něm oddíl `dependencies` tímto kódem:
 
     ```js
     "dependencies": {
       "express": "4.16.2",
       "path": "0.12.7",
-      "react": "16.2.0",
-      "react-dom": "16.2.0",
+      "react": "16.4.0",
+      "react-dom": "16.4.0",
       "ts-loader": "4.0.1",
       "typescript": "2.7.2",
       "webpack": "4.1.1",
@@ -107,41 +108,41 @@ Tato aplikace vyžaduje počet moduly npm správné fungování.
     }
     ```
 
-1. Klikněte pravým tlačítkem na **npm** uzlu ve vašem projektu a zvolte **nainstalovat chybějící balíčky npm**.
+1. Klikněte pravým tlačítkem na **npm** uzlu ve vašem projektu a zvolte **aktualizovat balíčky npm**.
 
-    **Výstup** okno zobrazuje průběh instalace balíčků.
+    Klikněte **výstup** okna zobrazíte průběh k instalaci balíčků. To může trvat několik minut a okamžitě se nemusí zobrazovat výsledky.
 
-    Tady jsou moduly npm, jak se zobrazují v Průzkumníku řešení po jejich instalaci.
+    Tady jsou moduly npm, které se po instalaci zobrazí v Průzkumníku řešení.
 
-    ![balíčky npm](../nodejs/media/tutorial-nodejs-react-npm-modules.png)
+    ![Balíčky npm](../nodejs/media/tutorial-nodejs-react-npm-modules.png)
 
     > [!NOTE]
-    > Pokud ale chcete-li instalovat balíčky npm pomocí příkazového řádku, klikněte pravým tlačítkem na uzel projektu a zvolte **sem otevřete příkazový řádek**. Standardní příkazy Node.js použijte k instalaci balíčků.
+    > Pokud chcete balíčky npm nainstalovat raději pomocí příkazového řádku, klikněte pravým tlačítkem na uzel projektu a zvolte **Otevřít tady příkazový řádek**. K instalaci balíčků použijte standardní příkazy Node.js.
 
-## <a name="add-project-files"></a>Přidat soubory projektu
+## <a name="add-project-files"></a>Přidání souborů projektu
 
-V následujícím postupu přidat čtyři nové soubory do projektu.
+V tomto postupu do projektu přidáte čtyři nové soubory.
 
 * *app.tsx*
 * *webpack-config.js*
 * *index.html*
 * *tsconfig.json*
 
-Pro tuto aplikaci jednoduché přidáte nové soubory projektu v kořenu projektu. (Ve většině aplikací, obvykle přidání souborů do podsložky a odpovídajícím způsobem upravit odkazuje na relativní cestu.)
+Nové soubory projektu pro tuto jednoduchou aplikaci přidáte do kořenu projektu. (U většiny aplikací se soubory obvykle přidávají do podsložek a odkazy s relativní cestou se podle toho upraví.)
 
-1. V Průzkumníku řešení klikněte pravým tlačítkem na projekt **NodejsWebAppBlank** a zvolte **přidat** > **novou položku**.
+1. V Průzkumníku řešení klikněte pravým tlačítkem na projekt **NodejsWebAppBlank** a zvolte **Přidat** > **Nová položka**.
 
-1. V **přidat novou položku** dialogovém okně vyberte **TypeScript JSX soubor**, zadejte název *app.tsx*a klikněte na tlačítko **OK**.
+1. V dialogovém okně **Přidat novou položku** vyberte **Soubor TypeScript JSX**, zadejte název *app.tsx* a klikněte na **OK**.
 
-1. Opakujte tyto kroky pro přidání *webpack config.js*.
+1. Opakováním tohoto postupu přidejte *webpack config.js*. Místo souboru TypeScript JSX, zvolte **soubor JavaScript**.
 
-1. Opakujte stejný postup pro přidání *index.html* do projektu. Místo souboru JavaScript, zvolte **soubor HTML**.
+1. Opakováním stejného postupu do projektu přidejte *index.html*. Místo souboru JavaScript zvolte **Soubor HTML**.
 
-1. Opakujte stejný postup pro přidání *tsconfig.json* do projektu. Místo souboru JavaScript, zvolte **TypeScript JSON konfigurační soubor**.
+1. Opakováním stejného postupu do projektu přidejte *tsconfig.json*. Místo souboru JavaScript zvolte **Konfigurační soubor JSON pro TypeScript**.
 
 ## <a name="add-app-code"></a>Přidání kódu aplikace
 
-1. Otevřete *server.js* a kódu nahraďte následujícím kódem:
+1. Otevřete *server.js* a nahraďte kód následujícím kódem:
 
     ```javascript
     'use strict';
@@ -161,7 +162,7 @@ Pro tuto aplikaci jednoduché přidáte nové soubory projektu v kořenu projekt
     });
     ```
 
-   Předchozí kód používá spustit jako serveru vaší webové aplikace Node.js Express. Tento kód nastaví číslo portu ve vlastnostech projektu port (standardně port je konfigurován pro 1337 ve vlastnostech). Otevřete vlastnosti projektu, klikněte pravým tlačítkem na projekt v Průzkumníku řešení a zvolte **vlastnosti**.
+   Uvedený kód spouští Node.js jako server vaší webové aplikace přes Express. Tento kód nastaví port na číslo, které je nakonfigurované ve vlastnostech projektu (ve výchozím nastavení je ve vlastnostech nakonfigurovaný port 1337). Vlastnosti projektu otevřete tak, že v Průzkumníku řešení kliknete pravým tlačítkem na příslušný projekt a zvolíte **Vlastnosti**.
 
 1. Otevřete *app.tsx* a přidejte následující kód:
 
@@ -182,9 +183,9 @@ Pro tuto aplikaci jednoduché přidáte nové soubory projektu v kořenu projekt
     ReactDOM.render(<Hello />, document.getElementById('root'));
     ```
 
-    Předchozí kód používá syntaxi JSX a reagují k zobrazení jednoduché zprávy.
+    Uvedený kód používá k zobrazení jednoduché zprávy syntaxi JSX a React.
 
-1. Otevřete *index.html* a nahraďte **textu** oddíl následujícím kódem:
+1. Otevřete *index.html* a nahraďte oddíl **body** následujícím kódem:
 
     ```html
     <body>
@@ -194,13 +195,13 @@ Pro tuto aplikaci jednoduché přidáte nové soubory projektu v kořenu projekt
     </body>
     ```
 
-    Tato HTML stránka načte *aplikace bundle.js*, který obsahuje kód transpiled JSX a reagují na prostý JavaScript. V současné době *aplikace bundle.js* je soubor prázdný. V další části můžete konfiguraci možností a transpile kód.
+    Tato stránka HTML načte *app-bundle.js* s kódem JSX a React, který bude transpilovaný na prostý JavaScript. Momentálně je soubor *app-bundle.js* prázdný. V další části nakonfigurujete možnosti pro transpilaci tohoto kódu.
 
-## <a name="configure-webpack-and-typescript-compiler-options"></a>Konfigurace webpack a TypeScript – možnosti kompilátoru
+## <a name="configure-webpack-and-typescript-compiler-options"></a>Konfigurace webpacku a možností kompilátoru TypeScriptu
 
-V předchozích krocích jste přidali *webpack config.js* do projektu. Dál přidejte kód webpack konfigurace. Přidá jednoduché webpack konfigurace, která určuje vstupní soubor (*app.tsx*) a výstupní soubor (*aplikace bundle.js*) pro sdružování a transpiling JSX pro prostý jazyk JavaScript. Pro transpiling můžete taky nakonfigurovat některé možnosti kompilátoru TypeScript. Tento kód je základní konfigurace, která slouží jako úvod do webpack a TypeScript kompilátoru.
+V předchozím postupu jste do projektu přidali *webpack-config.js*. Dále přidáte kód pro konfiguraci webpacku. Přidáte jednoduchou konfiguraci webpacku, která určuje vstupní soubor (*app.tsx*) a výstupní soubor (*app-bundle.js*) pro sbalení a transpilaci JSX na prostý JavaScript. Pro transpilaci můžete nakonfigurovat také některé možnosti kompilátoru TypeScriptu. Tento kód představuje základní konfiguraci, která slouží k seznámení s webpackem a kompilátorem TypeScriptu.
 
-1. V Průzkumníku řešení otevřete *webpack config.js* a přidejte následující kód.
+1. V Průzkumníku řešení otevřete *webpack-config.js* a přidejte následující kód.
 
     ```json
     module.exports = {
@@ -227,9 +228,9 @@ V předchozích krocích jste přidali *webpack config.js* do projektu. Dál př
     }
     ```
 
-    Kód konfigurace webpack dá pokyn Webpack používat zavaděči TypeScript transpile JSX.
+    Kód pro konfiguraci webpacku určuje, že k transpilaci JSX se má použít zavaděč TypeScriptu.
 
-1. Otevřete tsconfig.json a přidejte následující kód, který určuje možnosti kompilátoru TypeScript:
+1. Otevřete *tsconfig.json* a nahraďte následující kód, který určuje možnosti kompilátoru TypeScript ve výchozím kódu:
 
     ```json
     {
@@ -251,121 +252,121 @@ V předchozích krocích jste přidali *webpack config.js* do projektu. Dál př
     }
     ```
 
-    app.tsx je zadán jako zdrojový soubor.
+    Jako zdrojový soubor je určený *app.tsx*.
 
-## <a name="transpile-the-jsx"></a>Transpile JSX
+## <a name="transpile-the-jsx"></a>Transpilace JSX
 
-1. V Průzkumníku řešení klikněte pravým tlačítkem na uzel projektu a zvolte **sem otevřete příkazový řádek**.
+1. V Průzkumníku řešení klikněte pravým tlačítkem na uzel projektu a zvolte **Otevřít tady příkazový řádek**.
 
 1. V příkazovém řádku zadejte následující příkaz:
 
     `node_modules\.bin\webpack app.tsx --config webpack-config.js`
 
-    Okno příkazového řádku zobrazuje výsledek.
+    V okně příkazového řádku se zobrazí výsledek.
 
-    ![Spustit webpack](../nodejs/media/tutorial-nodejs-react-run-webpack.png)
+    ![Spuštění webpacku](../nodejs/media/tutorial-nodejs-react-run-webpack.png)
 
-    Pokud se zobrazí chyby místo tento výstup, je nutné před odstranit vaše aplikace bude fungovat. Pokud vaše verze balíčku npm se liší od verze uvedené v tomto kurzu, který může být zdrojem chyb. Jeden způsob, jak opravit chyby, je použití přesné verze uvedené v dřívějších krocích. Navíc pokud jeden nebo více z těchto verzí balíčku je zastaralá a vede k chybě, můžete k instalaci novější verze a opravte chyby.
+    Pokud se místo uvedeného výstupu zobrazují nějaké chyby, je potřeba je před použitím aplikace odstranit. Příčinou těchto chyb může být skutečnost, že se vaše verze balíčků npm liší od verzí používaných v tomto kurzu. Jednou možností, jak chyby odstranit, je použití přesně těch verzí, které jsou uvedené v dřívějším postupu. Pokud jsou některé z těchto verzí balíčků zastaralé a způsobují chyby, může být k odstranění chyb potřeba nainstalovat novější verze.
 
-1. V Průzkumníku řešení klikněte pravým tlačítkem na uzel projektu a zvolte **přidat** > **existující složku**, zvolte *dist* složky a klikněte na tlačítko  **Vyberte složku**.
+1. V Průzkumníku řešení klikněte pravým tlačítkem na uzel projektu a zvolte **Přidat** > **Existující složka**, pak zvolte složku *dist* a klikněte na **Vybrat složku**.
 
-    Visual Studio. přidá *dist* složky do projektu, který obsahuje *aplikace bundle.js* a *aplikace bundle.js.map*.
+    Visual Studio přidá do projektu složku *dist*, která obsahuje *app-bundle.js* a *app-bundle.js.map*.
 
-1. Otevřete *aplikace bundle.js* zobrazíte transpiled kódu jazyka JavaScript.
+1. Otevřete *app-bundle.js* a zobrazte transpilovaný kód jazyka JavaScript.
 
-1. Pokud se zobrazí výzva k znovu načíst externě změněné soubory, klikněte na tlačítko **Ano všem**.
+1. Pokud se zobrazí výzva k novému načtení externě změněných souborů, klikněte na **Ano všem**.
 
-    ![Načíst změněné soubory](../nodejs/media/tutorial-nodejs-react-reload-files.png)
+    ![Načtení změněných souborů](../nodejs/media/tutorial-nodejs-react-reload-files.png)
 
-Pokaždé, když provedete změny *app.tsx*, je třeba znovu spustit příkaz webpack.
+Vždycky, když provedete změny v *app.tsx*, je nutné znovu spustit příkaz webpack.
 
 ## <a name="run-the-app"></a>Spuštění aplikace
 
-1. Ujistěte se, že Chrome je nastaven jako aktuální cíl ladění.
+1. Ujistěte se, že jako aktuální cíl ladění je vybraný Chrome.
 
-    ![Vyberte Chrome jako cíl ladění](../nodejs/media/tutorial-nodejs-react-debug-target.png)
+    ![Výběr Chromu jako cíle ladění](../nodejs/media/tutorial-nodejs-react-debug-target.png)
 
-1. Chcete-li spustit aplikaci, stiskněte **F5** (**ladění** > **spustit ladění**) nebo na tlačítko zelenou šipku.
+1. Ke spuštění aplikace stiskněte **F5** (**Ladit** > **Spustit ladění**) nebo tlačítko se zelenou šipkou.
 
-    Otevře se okno konzoly Node.js zobrazující port, na kterém naslouchá ladicího programu.
+    Otevře se okno konzoly Node.js, které zobrazuje port, na kterém ladicí program naslouchá.
 
-    Visual Studio se spustí aplikace spuštěním souboru spuštění *server.js*.
+    Visual Studio spustí danou aplikaci spuštěním spouštěcího souboru *server.js*.
 
-    ![V prohlížeči spustit reagují](../nodejs/media/tutorial-nodejs-react-running-react.png)
+    ![Spuštění Reactu v prohlížeči](../nodejs/media/tutorial-nodejs-react-running-react.png)
 
 1. Zavřete okno prohlížeče.
 
 1. Zavřete okno konzoly.
 
-## <a name="set-a-breakpoint-and-run-the-app"></a>Nastavit zarážky a spuštění aplikace
+## <a name="set-a-breakpoint-and-run-the-app"></a>Nastavení zarážky a spuštění aplikace
 
-1. V *server.js*, klikněte do mřížky nalevo od `staticPath` deklarace pro nastavení zarážky:
+1. V souboru *server.js* kliknutím do mezery vedle okraje nalevo od deklarace `staticPath` nastavte zarážku:
 
-    ![Nastavit zarážky](../nodejs/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Nastavení zarážky](../nodejs/media/tutorial-nodejs-react-set-breakpoint.png)
 
-    Zarážky jsou nejvíce základní a základní funkci spolehlivé ladění. Zarážku Určuje, kde by měl Visual Studio pozastavit spuštěním kódu, můžete si prohlédněte hodnoty proměnných nebo chování paměti, nebo zda získávání větev kódu běží.
+    Zarážky jsou základní a nejjednodušší funkcí spolehlivého ladění. Zarážka určuje, kde má Visual Studio spuštěný kód pozastavit, abyste mohli zkontrolovat hodnoty proměnných či chování paměti, nebo abyste zjistili, jestli se nějaká větev kódu spouští.
 
-1. Chcete-li spustit aplikaci, stiskněte **F5** (**ladění** > **spustit ladění**).
+1. Ke spuštění aplikace stiskněte **F5** (**Ladit** > **Spustit ladění**).
 
-    Ladicí program pozastaví u zarážky sady (aktuální příkaz je označeno žlutě). Teď si můžete prohlédnout stav vaší aplikace podržením ukazatele nad proměnné, které jsou aktuálně v oboru, pomocí ladicího programu, jako **místní hodnoty –** a **sledovat** systému windows.
+    Ladicí program se pozastaví na zarážce, kterou jste nastavili (aktuální příkaz je označený žlutě). Teď můžete stav aplikace zkontrolovat tak, že přesunete ukazatel myši nad proměnné v aktuálním rozsahu a použijete okna ladicího programu, například okna **Místní hodnoty** a **Kukátko**.
 
-1. Stiskněte klávesu **F5** pokračujte aplikace.
+1. Pokud chcete pokračovat v aplikaci, stiskněte **F5**.
 
-1. Pokud chcete při použití nástroje pro vývojáře Chrome, stiskněte klávesu **F12**. Tyto nástroje můžete prozkoumat modelu DOM a interakci s aplikace pomocí konzoly pro JavaScript.
+1. Pokud chcete použít nástroje Chrome Developer Tools, stiskněte **F12**. Pomocí těchto nástrojů můžete prozkoumat model DOM a provádět interakce s aplikací pomocí konzoly jazyka JavaScript.
 
-1. Zavřete webový prohlížeč a konzoly.
+1. Zavřete webový prohlížeč a konzolu.
 
-## <a name="set-and-hit-a-breakpoint-in-the-client-side-react-code"></a>Nastavit a stiskněte tlačítko zarážky v kódu reagují na straně klienta
+## <a name="set-and-hit-a-breakpoint-in-the-client-side-react-code"></a>Nastavení a použití zarážky v kódu React na straně klienta
 
-V předchozím oddílu připojit ladicí program ke kódu Node.js na straně serveru. Připojí ladicí program ze sady Visual Studio a stiskněte tlačítko zarážky v kódu reagují na straně klienta, musí ladicí program Nápověda k identifikaci procesu správné. Tady je jeden způsob, jak povolit tuto funkci.
+V předchozí části jste připojili ladicí program ke kódu Node.js na straně serveru. K připojení ladicího programu ze sady Visual Studio a používání zarážek v kódu React na straně klienta se v ladicím programu vyžaduje pomoc s identifikací správného procesu. Tady je jedna možnost, jak to udělat.
 
-1. Zavřete všechna okna Chrome.
+1. Zavřete všechna okna Chromu.
 
-1. Otevřete **spustit** v systému Windows příkaz **spustit** tlačítko (klikněte pravým tlačítkem a zvolte **spustit**) a zadejte následující příkaz:
+1. Otevřete příkaz **Spustit** z tlačítka Windows **Start** (klikněte na něj pravým tlačítkem a zvolte **Spustit**) a zadejte následující příkaz:
 
     `chrome.exe --remote-debugging-port=9222`
 
     Spustí se Chrome s povoleným laděním.
 
-1. Přepněte do sady Visual Studio a nastavit zarážky *aplikace bundle.js* kód na `render()` fungovat, jak je znázorněno na následujícím obrázku:
+1. Přepněte do sady Visual Studio a nastavte zarážku v kódu *app-bundle.js* na funkci `render()`, jak je znázorněno na následujícím obrázku:
 
-    ![Nastavit zarážky](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Nastavení zarážky](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-1. Chrome vybrat jako cíl ladění v sadě Visual Studio, stiskněte klávesu **kombinaci kláves Ctrl + F5** (**ladění** > **spustit bez ladění**) a spusťte aplikaci v prohlížeči.
+1. Jako cíl ladění je v sadě Visual Studio vybraný Chrome. Stisknutím **Ctrl**+**F5** (**Ladit** > **Spustit bez ladění**) spusťte aplikaci v prohlížeči.
 
-    Aplikace otevře novou kartu prohlížeče.
+    Aplikace se otevře na nové kartě prohlížeče.
 
-1. Zvolte **ladění** > **připojit k procesu**.
+1. Zvolte **Ladit** > **Připojit k procesu**.
 
-1. V **připojit k procesu** dialogové okno Vyberte **Webkit kód** v **připojit k** pole, zadejte **chrome** do pole Filtr pro filtrování výsledky hledání.
+1. V dialogovém okně **Připojit k procesu** v poli **Připojit k** zvolte **Webkit kód** a zadáním slova **chrome** do pole pro filtr vyfiltrujte výsledky hledání.
 
-1. Vyberte proces Chrome s hostitelem správný port (1337 v tomto příkladu) a klikněte na **Attach**.
+1. Vyberte proces Chrome se správným portem hostitele (v tomto příkladu 1337) a klikněte na **Připojit**.
 
-    ![Připojit k procesu](../nodejs/media/tutorial-nodejs-react-attach-to-process.png)
+    ![Připojení k procesu](../nodejs/media/tutorial-nodejs-react-attach-to-process.png)
 
-    Víte, že když Průzkumníka modelu DOM a konzoly pro JavaScript otevřete v sadě Visual Studio má správně připojen ladicí program. Tyto nástroje ladění jsou podobná Chrome Developer Tools a nástroje F12 pro okraj.
+    Pokud se v sadě Visual Studio otevřely Průzkumník modelu DOM a konzola jazyka JavaScript, je ladicí program správně připojený. Tyto ladicí nástroje se podobají nástrojům Chrome Developer Tools a nástrojům F12 pro Edge.
 
     > [!NOTE]
-    > Pokud není připojit ladicí program a zobrazí se zpráva "nelze se připojit k procesu. Operace není právní v aktuálním stavu." pak pomocí Správce úloh zavřete všechny instance Chrome před zahájením Chrome v režimu ladění. Rozšíření Chrome může spuštění a zabráněním režimu úplné ladění.
+    > Pokud se ladicí program nepřipojí a zobrazí se zpráva „Nelze připojit k procesu. Operace není v aktuálním stavu platná“, zavřete před spuštěním Chromu v režimu ladění všechny instance Chromu pomocí Správce úloh. Můžou být spuštěná rozšíření Chromu, která brání plnému režimu ladění.
 
-1. Protože kód se zarážkou již spuštěn, aktualizujte stránku prohlížeče narazí zarážku.
+1. Kód se zarážkou se už spustil, a proto aktualizujte stránku prohlížeče, aby narazil na zarážku.
 
-    Při pozastavena v ladicím programu, můžete zkontrolovat stav vaší aplikace přesunutím ukazatele myši proměnné a pomocí ladicího programu. Ladicí program postoupíte podle krokování kódu (**F5**, **F10**, a **F11**).
+    Při pozastavení můžete v ladicím programu zkontrolovat stav aplikace tak, že přesunete ukazatel myši nad proměnné a použijete okna ladicího programu. Můžete v ladicím programu procházet kód pomocí krokování (**F5**, **F10** a **F11**).
 
-    Můžete narazit zarážek buď *aplikace bundle.js* nebo její namapované umístění v *app.tsx*, v závislosti na vašem prostředí a prohlížeč stavu. V obou případech můžete krok prostřednictvím kódu a prozkoumat proměnné.
+    V závislosti na vašem prostředí a stavu prohlížeče můžete narazit na zarážku v souboru *app-bundle.js* nebo v jeho namapovaném umístění v souboru *app.tsx*. V obou případech můžete procházet kód pomocí krokování a zkoumat proměnné.
 
-    * Pokud potřebujete rozdělit na kód v *app.tsx* a nelze provést, použijte **připojit k procesu** popsané v předchozích krocích připojit ladicí program. Otevřete dynamicky generovaném *app.tsx* soubor v Průzkumníku řešení otevřením **dokumentů skriptu** > **app.tsx**zarážku a aktualizovat stránku v prohlížeči.
+    * Pokud potřebujete proniknout do kódu v *app.tsx* a nedaří se vám to, připojte ladicí program pomocí dialogového okna **Připojit k procesu**, jak bylo popsáno v předchozím postupu. Otevřete dynamicky generovaném *app.tsx* soubor v Průzkumníku řešení otevřením **dokumentů skriptu** > **app.tsx**zarážku a aktualizovat stránku v prohlížeči (nastavit bod přerušení na řádku kódu, který umožňuje zarážky, například `return` příkaz nebo `var` deklarace).
 
-        Případně pokud potřebujete rozdělit na kód v *app.tsx* a nelze provést, použijte `debugger;` příkaz v *app.tsx*, nebo místo toho nastavte zarážky v Chrome Developer Tools.
+        Když potřebujete proniknout do kódu v *app.tsx* a nedaří se vám to, můžete také zkusit použít příkaz `debugger;` v *app.tsx* nebo nastavit zarážky v nástrojích Chrome Developer Tools.
 
-    * Pokud potřebujete rozdělit na kód v *aplikace bundle.js* a nelze provést, odstraňte daný soubor zdrojového mapování *aplikace bundle.js.map*.
+    * Pokud potřebujete proniknout do kódu v *app-bundle.js* a nedaří se vám to, odeberte soubor zdrojového mapování *app-bundle.js.map*.
 
     > [!TIP]
-    > Po připojení k procesu poprvé pomocí následujících kroků, můžete rychle opět připojit do stejného procesu v aplikaci Visual Studio 2017 výběrem **ladění** > **připojte k procesu**.
+    > Po prvním připojení k procesu podle tohoto postupu se v sadě Visual Studio 2017 můžete rychle znovu připojit ke stejnému procesu tak, že zvolíte **Ladit** > **Znovu připojit k procesu**.
 
 ## <a name="next-steps"></a>Další kroky
 
-V tomto kurzu jste zjistili, jak vytvořit aplikaci Node.js a reagují, transpile JSX a ladění. Další informace o Node.js Tools pro sadu Visual Studio, naleznete na stránce wikiwebu.
+V tomto kurzu jste se naučili vytvořit aplikaci Node.js a React, transpilovat JSX a provést ladění. Další informace o nástrojích Node.js Tools for Visual Studio najdete na wiki stránce.
 
 > [!div class="nextstepaction"]
 > [Node.js Tools for Visual Studio](https://github.com/Microsoft/nodejstools)

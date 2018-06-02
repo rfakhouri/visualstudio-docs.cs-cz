@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 807fa532961edb4f2723858a47dcf1fe87134338
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 82eaa5deca395af985017d0db0a98c11b2be9592
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691601"
 ---
 # <a name="create-sharepoint-solutions"></a>Vytvoření řešení služby SharePoint
   Jako alternativu k jejich vytváření v aplikaci SharePoint Designer můžete vytvořit aplikací služby SharePoint v sadě Visual Studio. Visual Studio podporuje tím, že poskytuje funkce, jako Rozšířené ladicí nástroje, IntelliSense, dokončování a šablony projektů rychlý vývoj pro SharePoint. Visual Studio také využívá pokročilé nástroje založené na rozhraní .NET Framework a jazyky. Projekty SharePoint můžete vyvíjet pomocí jazyka Visual Basic a Visual C# a vyvíjíte aplikace pro projekty SharePoint pomocí jazyka JavaScript.  
@@ -45,4 +46,4 @@ ms.lasthandoff: 04/16/2018
 |![Středisko pro vývojáře MSDN](../sharepoint/media/vs-icon-msdndevcenter.gif "středisku pro vývojáře MSDN")|**Centra pro vývojáře MSDN**<br /><br /> -   [Visual Studio Development Center](http://msdn.microsoft.com/vstudio/default.aspx)<br />-   [Středisko pro vývojáře služby SharePoint](http://msdn.microsoft.com/sharepoint/default.aspx)<br />-   [Centrum vývojářů pro Server SharePoint](http://msdn.microsoft.com/office/aa905503.aspx)<br />-   [Středisko pro vývojáře SharePoint Designer](http://msdn.microsoft.com/office/bb421303.aspx)<br />-   [Středisko pro vývojáře ASP.NET](http://msdn.microsoft.com/aa336522.aspx)|  
 |![Poskytnutí zpětné vazby](../sharepoint/media/vs-icon-feedback.gif "poskytnutí zpětné vazby")|**Poskytnutí zpětné vazby**<br /><br /> Poskytnutí zpětné vazby o sadě Visual Studio:<br /><br /> -   [Microsoft Connect.](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> Poskytnutí zpětné vazby k dokumentaci pro sadu Visual Studio:<br /><br /> -   **Prosté zobrazení.** Pokud jste v horní části libovolných témat, můžete **hodnocení tohoto tématu** odkaz přejít do dolní části tohoto tématu, kde můžete určit **Ano** nebo **ne** v reakci na **Byl pro vás to užitečné?** Pak můžete vybrat jednu nebo více políček, která se zobrazí, pokud jste zvolili **ne**, poskytovat další informace do textového pole, nebo obojí. Až skončíte, zvolte **odeslání** tlačítko.<br />-   **Zobrazení nevyužívající skripty.** V horní části tématu, vyberte **zpětné vazby** odkaz k poskytnutí zpětné vazby ve fóru MSDN, TechNet a zpětnou vazbu výrazu knihovny.<br />-   **Klasické zobrazení.** V horní části tématu, vyberte **kliknutím rychlost a odeslat zpětnou vazbu** ikony k poskytnutí zpětné vazby o tématu, které chcete týmu dokumentace.|  
   
-  
+ 

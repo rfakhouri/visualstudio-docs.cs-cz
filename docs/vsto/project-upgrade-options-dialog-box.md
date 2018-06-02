@@ -1,5 +1,5 @@
 ---
-title: Upgrade projektu, dialogové okno Možnosti | Microsoft Docs
+title: Projekt upgradu, dialogové okno Možnosti
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,23 +19,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f675ac5bab07c487217d2fdebcedd9fffd3d334c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e279e6db1acf4cb277c8734fa24f965a8236e7ec
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692756"
 ---
-# <a name="project-upgrade-options-dialog-box"></a>Upgrade projektu, dialogové okno Možnosti
+# <a name="project-upgrade-options-dialog-box"></a>Projekt upgradu, dialogové okno Možnosti
   Použití **Upgrade projektu** stránky k určení, zda Visual Studio automaticky změní projekty doplňku VSTO pro verzi systému Office, který je nainstalován na vývojovém počítači.  
   
  Pro přístup k této stránce na **nástroje** nabídky, klikněte na tlačítko **možnosti**. Rozbalte **Office Tools** složku a pak klikněte na tlačítko **Upgrade projektu**.  
   
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
  **Vždy upgrade nainstalovaná verze systému Office**  
- Tato možnost je zakázaná pro [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] protože Office projekty v [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] můžete vybrat pouze [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] nebo Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplikace. Další informace najdete v tématu [upgrade a migrace řešení Office](../vsto/upgrading-and-migrating-office-solutions.md).  
+ Tato možnost je zakázaná pro [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] protože Office projekty v [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] můžete vybrat pouze [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] nebo Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplikace. Další informace najdete v tématu [upgradu a migrace řešení Office](../vsto/upgrading-and-migrating-office-solutions.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Upgrade a migrace řešení Office](../vsto/upgrading-and-migrating-office-solutions.md)   
- [Postupy: upgradování řešení Office](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)  
+ [Postupy: řešení pro systém Office upgradu](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)  
   
   

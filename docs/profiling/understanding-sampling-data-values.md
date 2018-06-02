@@ -13,10 +13,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a6eb52273633e0b65aa4a7a7049198c49c20633d
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34476999"
 ---
 # <a name="understand-sampling-data-values"></a>Pochopení hodnotám dat vzorkování
 
@@ -50,7 +51,7 @@ Procento celkového počtu v profilaci spustit včetně vzorků, které jsou vč
 
 Procento celkového počtu v profilaci spustit výhradní vzorků, které jsou výhradní ukázky rozsahu funkce nebo data.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 [Postupy: Výběr metod shromažďování](../profiling/how-to-choose-collection-methods.md)  
 [Analýza dat nástrojů pro měření výkonu](../profiling/analyzing-performance-tools-data.md)

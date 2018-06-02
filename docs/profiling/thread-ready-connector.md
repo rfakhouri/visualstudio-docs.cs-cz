@@ -15,10 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: b736e89bb9ec7c4bdb71ea49566cd057f7a0bd85
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34476648"
 ---
 # <a name="thread-ready-connector"></a>Konektor podporující vlákna
 Po kliknutí na tlačítko segment blokování zobrazíte zásobník volání a jeho odblokování zásobníku, může zobrazit i konektor připravené přístup z více vláken. Pokud k odblokování události došlo na jiné vlákno v aktuálním procesu, konektor vlákna připravena vizuálně identifikuje přístup z více vláken a provádění segment, který povoleno blokované vlákno, chcete-li pokračovat v provádění.

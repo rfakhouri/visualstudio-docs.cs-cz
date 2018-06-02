@@ -1,5 +1,5 @@
 ---
-title: Průzkumník schématu XML
+title: Průzkumník schémat XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,44 +10,45 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f23492d45a0cd88566ab36dbdb803f68dd46037
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a398450fdf2be1dd3280c96c3b55529e14af51d4
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693939"
 ---
-# <a name="xml-schema-explorer"></a>Průzkumník schématu XML
+# <a name="xml-schema-explorer"></a>Průzkumník schémat XML
 
-Průzkumník schématu XML je integrovaná do sady Microsoft Visual Studio a Editor souborů XML pro práci s schématu XML definition language (XSD) schématy. Při otevření souboru schématu XML **schématu nastavit** uzel se zobrazí v Průzkumníku schématu XML. Všechny zahrnuté, importované nebo Předefinovaná schémata pro cílový soubor a také všechny soubory, které se odkazuje prostřednictvím `include` nebo `import` prohlášení, také se zobrazí v Průzkumníku schématu XML.
+**Explorer schématu XML** je integrovaná s Microsoft Visual Studio a Editor souborů XML pro práci s schématu XML definition language (XSD) schématy. Při otevření souboru schématu XML **schématu nastavit** uzel se objeví v **Explorer schématu XML**. Všechny zahrnuté, importované nebo Předefinovaná schémata pro cílový soubor a také všechny soubory, které se odkazuje prostřednictvím `include` nebo `import` příkazu se zobrazí také v **Explorer schématu XML**.
 
- Průzkumník schématu XML umožňuje provést následující:
+ **Explorer schématu XML** umožňuje provést následující:
 
 -   Vám zajistí rychlý přehled sady schématu.
 
 -   Procházet a přejděte ke stromu.
 
--   Proveďte – klíčové slovo a hledání specifické pro schéma. Další informace najdete v tématu [hledání sady schématu](../xml-tools/searching-the-schema-set.md).
+-   Proveďte – klíčové slovo a hledání specifické pro schéma. Další informace najdete v tématu [hledání sadu schématu](../xml-tools/searching-the-schema-set.md).
 
--   Přidejte do zobrazení grafu nebo zobrazení obsahu Modle výsledky hledání
+-   Výsledky hledání přidejte do zobrazení grafu nebo zobrazení obsahu modelu
 
--   Řazení stromu podle pořadí dokument, typ nebo název. Další informace najdete v tématu [řazení, filtrování a seskupování](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
+-   Řazení stromu podle pořadí dokument, typ nebo název. Další informace najdete v tématu [třídění, filtrování a seskupení](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
 
 -   Otevřete Editor souborů XML a přejít do umístění kód v souboru XSD. Další informace najdete v tématu [integrace pomocí editoru XML](../xml-tools/integration-with-xml-editor.md).
 
 -   Generovat ukázka XML pro globální elementy.
 
-Průzkumník schématu XML obsahuje hierarchická zobrazení schématu nastavit pomocí zobrazení stromu. Průzkumník schématu XML také poskytuje vyhledávání, filtrování, navigace a řazení. Pro přístup k Explorer schématu XML, proveďte jednu z následujících akcí:
+**Explorer schématu XML** poskytuje hierarchická zobrazení schématu nastavit pomocí zobrazení stromu. **Explorer schématu XML** také poskytuje vyhledávání, filtrování, navigace a řazení. Pro přístup k **Explorer schématu XML**, proveďte jednu z následujících akcí:
 
 -   Pokud jste na [spuštění zobrazení](../xml-tools/start-view.md), klikněte na tlačítko **Explorer schématu XML** odkaz.
 
--   Pokud jste na [zobrazení grafu](../xml-tools/graph-view.md) nebo [zobrazení obsahu modelu](../xml-tools/content-model-view.md) a mít uzly v pracovním prostoru, použijte v místní nabídce vyberte Explorer schématu XML.
+-   Pokud jste na [zobrazení grafu](../xml-tools/graph-view.md) nebo [zobrazení obsahu modelu](../xml-tools/content-model-view.md) a mít uzly v pracovním prostoru, použijte v místní nabídce vyberte **Explorer schématu XML**.
 
--   Můžete také vybrat Explorerfrom schématu XML **zobrazení** nabídky.
+-   Můžete také vybrat **Explorer schématu XML** z **zobrazení** nabídky.
 
--   Můžete přistupovat Explorerfrom schématu XML VB soubor, který má literál XML Visual Basic přidružený soubor XSD. Tím zobrazíte schéma nastavit v Průzkumníku schématu XML, klikněte pravým tlačítkem uzel XML ve literál XML nebo importu obor názvů XML a vyberte **zobrazit v Průzkumníku schématu** příkaz. Další informace najdete v tématu [integrace XML literály pomocí Průzkumníka schématu XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
+-   Dostanete **Explorer schématu XML** z *VB* soubor, který má literál XML Visual Basic přidružené *XSD* souboru. Tím zobrazíte schéma nastavit **Explorer schématu XML**, klikněte pravým tlačítkem myši uzel XML ve literál XML nebo importu obor názvů XML a vyberte **zobrazit v Průzkumníku schématu** příkaz. Další informace najdete v tématu [integrace XML – literály pomocí Průzkumníka schématu XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
 ## <a name="tree-view"></a>Zobrazení stromu
- Explorer schématu XML zobrazí informace o sadě předem kompilovaném schématu ve stromové struktuře. Stromovou strukturu jsou uspořádána následujícím způsobem:
+ **Explorer schématu XML** zobrazí předem zkompilovat schématu se nastavit informace o ve stromové struktuře. Stromovou strukturu jsou uspořádána následujícím způsobem:
 
 -   Na nejvyšší úrovni je schéma nastavte uzel.
 
@@ -72,13 +73,13 @@ Následuje příklad stromové struktury:
 
 -   Aktivace SchemaSet nebo obor názvů uzlu neprovede žádnou akci.
 
-## <a name="draging-and-dropping-nodes"></a>Draging a vyřazení uzlů
+## <a name="drag-and-drop-nodes"></a>Přetáhnout myší uzly
  Můžete přetáhnout a vyřadit globální uzlů, soubor uzly a uzly oboru názvů do zobrazení o návrháři XSD. Pokud je aktuální zobrazení [spuštění zobrazení](../xml-tools/start-view.md), přetáhněte uzel k zobrazení se otevře [zobrazení grafu](../xml-tools/graph-view.md). Pokud je aktuální zobrazení [zobrazení obsahu modelu](../xml-tools/content-model-view.md) nebo zobrazení grafu, zobrazení se nezmění, pokud je uzlem na ho vyřadit.
 
- Odstranit soubory v zobrazení přidá všechny globální uzly v souboru, který se [prostoru Návrhář XSD](../xml-tools/xml-schema-designer-workspace.md). Vyřazení obory názvů v zobrazení přidá všechny uzly globální v oboru názvů do pracovního prostoru. V pracovním prostoru jsou sdílena mezi všechna zobrazení.
+ Odstranit soubory v zobrazení přidá všechny globální uzly v souboru, který se [Návrhář XSD prostoru](../xml-tools/xml-schema-designer-workspace.md). Vyřazení obory názvů v zobrazení přidá všechny uzly globální v oboru názvů do pracovního prostoru. V pracovním prostoru jsou sdílena mezi všechna zobrazení.
 
  Můžete nelze přetažení místní uzlů nebo import.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Postupy: Přidání uzlů do pracovního prostoru z Průzkumníka schémat XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+- [Postupy: přidání uzlů do pracovního prostoru z Průzkumníka schématu XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

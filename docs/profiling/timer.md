@@ -11,10 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: cc361925d26bb6274a90d62c0b0c2085b47210c4
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34476698"
 ---
 # <a name="timer"></a>Časovač
 VSPerfCmd.exe **časovače** možnost nastaví profilování událost, která je vzorkovat hodinových cyklů procesoru a volitelně změní počet cyklů v intervalu vzorkování z výchozí hodnotu 10 000 000. 10 000 000 hodinových cyklů procesoru (jeden GHz) 1GH, je přibližně 100 ukázky za sekundu. Minimální počet cykly, které lze zadat je 50 000.  
@@ -67,7 +68,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Timer:1000000  
 ```  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Vsperfcmd –](../profiling/vsperfcmd.md)   
  [Profil samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

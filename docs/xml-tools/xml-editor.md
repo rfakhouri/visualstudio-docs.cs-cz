@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac3c30f0db4c2aa1dc606348604efce3bb3ddac
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e2111286afde9e60391f1a7410fec2778b3ed673
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693783"
 ---
 # <a name="xml-editor"></a>XML editor
 
@@ -39,7 +40,7 @@ Editor souborů XML je založena na textového editoru Visual Studio a zahrnuje 
 
 - Integrace s [Explorer schématu XML](../xml-tools/xml-schema-explorer.md). To poskytuje hierarchická zobrazení schémat XML.
 
-Pro dobře známé souboru rozšíření, jako je například .xml, XSD, XSL a .config je volána editoru XML. Je také volána libovolnou neznámé příponou Pokud soubor pravděpodobně obsahuje kód XML. Můžete také otevřít libovolný soubor pomocí editoru XML pomocí **otevřete s** možnost a editor souborů XML výběrem ze seznamu.
+Editor souborů XML pro dobře známé přípon, například volána *.xml*, *XSD*, *XSL*, a *.config*. Je také volána libovolnou neznámé příponou Pokud soubor pravděpodobně obsahuje kód XML. Můžete také otevřít libovolný soubor pomocí editoru XML pomocí **otevřete s** možnost a editor souborů XML výběrem ze seznamu.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
@@ -53,7 +54,7 @@ Pro dobře známé souboru rozšíření, jako je například .xml, XSD, XSL a .
 
 [Nástroj hierarchie XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) umožňuje přidat zarážky ve součástí šablony stylů a integrované šablony pravidla.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md) poskytuje informace o textový editor.
 - [Referenční dokumentace XML standardy](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) poskytuje informace o technologiích, XML, včetně XML, dokumentu typ definice (DTD), XML Schema Definition language (XSD) a XSLT.

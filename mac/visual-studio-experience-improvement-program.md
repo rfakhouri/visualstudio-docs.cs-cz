@@ -6,10 +6,11 @@ ms.author: amburns
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
 ms.openlocfilehash: b09dfc87d5fc672002b922efec7b1213dcaf87cd
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34469202"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programu zlepšování zkušeností zákazníků v sadě Visual Studio
 
@@ -31,7 +32,7 @@ VSCEIP je zapnutá ve výchozím nastavení. Můžete ho vypnout, nebo zpět na 
 
 [!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Postup nahlásit problém pomocí sady Visual Studio pro Mac](report-a-problem.md)
 * [Visual Studio pro Mac komunity vývojářů](https://developercommunity.visualstudio.com/spaces/41/index.html)

@@ -14,10 +14,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a6312a674cc3e9764971f2add59c8e1f0441790
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477480"
 ---
 # <a name="understand-performance-collection-methods"></a>Pochopení metody kolekce údajů o výkonu
 
@@ -130,7 +131,7 @@ Data interakce vrstev, která jsou shromážděna nástroji pro profilaci
 
 [Zobrazení interakce vrstvy](../profiling/tier-interaction-views.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 [Postupy: shromažďování dat o výkonu pro webový server](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
 [Průvodce začátečníka profilací výkonu](../profiling/beginners-guide-to-performance-profiling.md)

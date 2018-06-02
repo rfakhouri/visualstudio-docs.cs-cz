@@ -11,10 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: f9ef0bfc6c2030fc12d5743e91cb7b660cbe241f
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34476674"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn a ThreadOff
 VSPerfCmd.exe **ThreadOff** a **ThreadOn** dílčích příkazů jsou dostupné jenom v příkazového řádku profilování relace, které používají metody instrumentace. **ThreadOff** a **ThreadOn** pozastavení a obnovení profilace pro zadaný vlákno. **ThreadOff** zastaví profilace vlákno a **ThreadOn** spustí profilace vlákno.  
@@ -69,7 +70,7 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Vsperfcmd –](../profiling/vsperfcmd.md)   
  [Profil samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

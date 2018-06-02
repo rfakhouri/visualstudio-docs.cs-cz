@@ -14,10 +14,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: e53e9a29acf5258f3b225cde8211c4022b165bd7
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34476505"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Co je nového v nástrojích pro profilaci v [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 Nástroje pro diagnostiku zahrnují nové vizualizace můžete identifikovat problémy ve vaší aplikaci, potřebujete opravit. Diagnostické nástroje nyní zahrnují podporu pro aplikace ASP.NET.
@@ -32,6 +33,6 @@ Má nástroj využití procesoru [nové vizualizace](../profiling/Beginners-Guid
 
 ![Diagnostické nástroje volající volaný – zobrazení](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Profil v sadě Visual Studio](../profiling/index.md)  
  [Prohlídka funkce profilu](../profiling/profiling-feature-tour.md)
