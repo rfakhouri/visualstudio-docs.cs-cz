@@ -14,13 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 364e5db22342a0a870a38db71506b39a6f0080b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745708"
 ---
-# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Návod: Vytvoření vazby na data v Návrháři XAML
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Návod: Vazba s daty v Návrháři XAML
 
 V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové plochy a v okně Vlastnosti. V příkladu v tomto průvodci ukazuje, jak k vytvoření vazby dat k ovládacímu prvku. Konkrétně návod ukazuje, jak vytvořit jednoduché nákupní košík třídy, která má [vlastnost DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) s názvem `ItemCount`a pak vytvořte vazbu `ItemCount` vlastnost, která má **Text** vlastnost nástroje [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) ovládacího prvku.
 
@@ -82,7 +83,7 @@ V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové
 
      Následující obrázek ukazuje **vyberte objekt** dialogové okno s **ShoppingCart** vybrané.
 
-     ![Dialogové okno Vyberte objekt](../designers/media/blendselectobject.PNG "BlendSelectObject")
+     ![Vyberte objekt, dialogové okno](../designers/media/blendselectobject.png)
 
 1. V **sada nástrojů**, vyberte `TextBlock` ovládací prvek pro přidání do formuláře.
 
@@ -92,13 +93,13 @@ V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové
 
      Následující obrázek ukazuje **vytvoření datové vazby** dialogové okno s **ItemCount** vybrané vlastnosti.
 
-     ![Datové vazby dialogové okno vytvořit](../designers/media/xaml_create_data_binding.png "xaml_create_data_binding")
+     ![Datové vazby dialogové okno vytvořit](../designers/media/xaml_create_data_binding.png)
 
 1. Stiskněte klávesu **F5** a spusťte aplikaci.
 
      `TextBlock` Ovládacího prvku by měl zobrazit výchozí hodnota 0 jako text.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření uživatelského rozhraní pomocí Návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 - [Převaděč hodnoty dialogové okno Přidat](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

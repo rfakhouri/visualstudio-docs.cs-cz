@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a162c66f4a014d50da7ad7bd3cd5da9edd6e43
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a1b76c5790c255a3c1ca2ed0fe38bc0d13a8d02
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746644"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Postup vytvoření a použití prostředku
 Styly a šablony pro elementy v Návrháři XAML jsou uloženy v opakovaně použitelné entity názvem prostředky. Styly umožňují nastavit vlastnosti elementu a znovu použít tato nastavení pro konzistentní vzhled napříč více elementů. A [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) definuje vzhledu ovládacího prvku a můžete také použít jako zdroj. Další informace najdete v tématu [rychlý start: ovládací prvky stylu](http://go.microsoft.com/fwlink/?LinkID=248239) a [rychlý start: řízení šablony](http://go.microsoft.com/fwlink/?LinkID=247982).
@@ -32,7 +33,7 @@ Styly a šablony pro elementy v Návrháři XAML jsou uloženy v opakovaně pou�
 
      Zobrazí se příslušné dialogové okno pro tvorbu prostředku. Toto dialogové okno se zobrazí při vytváření prostředku z štětce:
 
-     ![Vytvořit prostředek – dialogové okno](../designers/media/xaml_create_resource.png "xaml_create_resource")
+     ![Vytvořit prostředek – dialogové okno](../designers/media/xaml_create_resource.png)
 
 3.  V **název (klíč)** zadejte název klíče. Toto je název, který můžete použít, pokud chcete další prvky tak, aby odkazovaly na prostředek.
 
@@ -73,6 +74,6 @@ Styly a šablony pro elementy v Návrháři XAML jsou uloženy v opakovaně pou�
 
 3.  Změna možností pro daný prostředek.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: cb1898c9e46de7669bc727884055f847abb0ce6e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 607f4bb2bcce3d8895a4a07df8d70c866e7a6aab
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746927"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core na počítači vzdálené služby IIS v Visual Studio 2017
 K ladění aplikace ASP.NET, která byla nasazena do služby IIS, instalaci a spuštění nástrojů pro vzdálenou na počítači, kde jste nasadili aplikace a pak připojte k běžící aplikaci ze sady Visual Studio.
@@ -164,7 +165,7 @@ Informace o spuštění jako služba vzdáleného ladicího programu najdete v t
 
 ## <a name="BKMK_attach"></a> Připojení k aplikaci ASP.NET z počítače, Visual Studio
 
-1. Otevřete v sadě Visual Studio počítači, **MyASPApp** řešení.
+1. Na počítači, Visual Studio, otevřete řešení, které se pokoušíte ladění (**MyASPApp** Pokud jsou proveďte všechny kroky v tomto článku).
 2. V sadě Visual Studio, klikněte na tlačítko **ladění > připojit k procesu** (Ctrl + Alt + P).
 
     > [!TIP]
