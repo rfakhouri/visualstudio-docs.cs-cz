@@ -28,18 +28,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d84dba671d1fddda0569015d936b95e5e58d1d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fee364b7116bf69b961726ec2154809f66f9bc45
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815032"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;závislost&gt; – Element (ClickOnce aplikace)
 Identifikuje závislostí platformu nebo sestavení, která je vyžadována pro aplikace.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
   
       <dependency>  
    <dependentOS  
@@ -173,7 +174,7 @@ Identifikuje závislostí platformu nebo sestavení, která je vyžadována pro 
 ## <a name="example"></a>Příklad  
  Následující příklad kódu ukazuje `dependency` elementů v [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace. Tento příklad kódu je součástí většího příkladu vztahujícího se pro [Manifest aplikace ClickOnce](../deployment/clickonce-application-manifest.md) tématu.  
   
-```  
+```xml  
 <dependency>  
   <dependentOS>  
     <osVersionInfo>  

@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b265806a15d5a2b3f08862432c7c8e2a94d119c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0111226fdd3de300265f69930b7e9e56f90876c8
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816013"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Postupy: Publikování aplikace WPF s povolenými vizuálními styly
 Vizuální styly povolit vzhled běžné ovládací prvky, chcete-li změnit podle motiv volená uživatelem. Ve výchozím nastavení nejsou povolené vizuální styly pro aplikace Windows Presentation Foundation (WPF), takže je nutné ručně povolit. Povolení vizuální styly pro aplikaci WPF a poté publikujete řešení způsobí chybu. Toto téma popisuje, jak vyřešit tuto chybu a proces pro publikování aplikace WPF s povolenými vizuálními styly. Další informace o vizuální styly najdete v tématu [vizuální styly přehled](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Další informace o chybovou zprávu najdete v tématu [řešení potíží s konkrétní chyby v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -37,7 +38,7 @@ Vizuální styly povolit vzhled běžné ovládací prvky, chcete-li změnit pod
   
      Vizuální styly nejsou ve výchozím nastavení povolené.  
   
-    ```  
+    ```xml  
     <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
     ```  
   
@@ -76,7 +77,7 @@ Vizuální styly povolit vzhled běžné ovládací prvky, chcete-li změnit pod
   
      Tato konfigurace XML popisuje sestavení, které obsahuje ovládací prvky, které podporují vizuální styly.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
     ```  
   
@@ -111,12 +112,12 @@ Vizuální styly povolit vzhled běžné ovládací prvky, chcete-li změnit pod
 2.  Na příkazovém řádku změňte cestu k adresáři, který obsahuje nejnovější verzi souborů publikované aplikace. Následující příklad ukazuje, tento krok.  
   
     ```  
-    cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
     ```  
   
 3.  Na příkazovém řádku spusťte následující příkaz pro vložení souboru manifestu do spustitelný soubor aplikace.  
   
-    ```  
+    ```
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   

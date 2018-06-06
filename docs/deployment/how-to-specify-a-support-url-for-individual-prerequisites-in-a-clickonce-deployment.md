@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4fe4deb04dbcc29a04036973d479803ee4667c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 02dfd64d7a6b3a2ffae49e5693bdac8ebdf2ad0f
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815646"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Postupy: Určení adresy URL webu s podporou pro jednotlivé předpoklady v nasazení ClickOnce
-A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pro počet požadavků, které musí být k dispozici v klientském počítači pro můžete otestovat nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] spuštění aplikace. Patří mezi ně požadovaná minimální verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], verzi operačního systému a všechny sestavení, které musí být předinstalován v globální mezipaměti sestavení (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], ale nemůže nainstalovat některý z těchto předpokladů; Pokud není nalezen předpokladem, jednoduše zastaví instalaci a zobrazí se dialogové okno s vysvětlením, proč instalace se nezdařila.  
+A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pro počet požadavků, které musí být k dispozici v klientském počítači pro můžete otestovat nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] spuštění aplikace. Tyto závislosti zahrnují požadovaná minimální verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], verzi operačního systému a všechny sestavení, které musí být předinstalován v globální mezipaměti sestavení (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], ale nemůže nainstalovat některý z těchto předpokladů; Pokud není nalezen předpokladem, jednoduše zastaví instalaci a zobrazí se dialogové okno s vysvětlením, proč instalace se nezdařila.  
   
  Existují dvě metody pro instalaci požadovaných součástí. Můžete je pomocí aplikace zaváděcího nástroje nainstalovat. Alternativně můžete zadat adresu URL podpory pro jednotlivé předpoklady, které se zobrazí uživatelům na dialogové okno, pokud není nalezena předpokladů. Stránka odkazovaná touto adresou URL může obsahovat odkazy na pokyny k instalaci požadované součásti. Pokud aplikace nemá, zadejte adresu URL podpory pro jednotlivé předpoklady, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zobrazí podporu adresa URL zadaná v manifestu nasazení pro aplikaci jako celek, pokud je definována.  
   
@@ -32,11 +33,11 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pro počet p
   
 ### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>Zadat adresu URL podpory pro jednotlivé předpoklady  
   
-1.  Otevřete manifest aplikace (soubor manifest) pro vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace v textovém editoru.  
+1.  Otevřete manifest aplikace ( `.manifest` souboru) pro vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace v textovém editoru.  
   
 2.  Požadavek k provedení operačního systému, přidejte `supportUrl` atribut `dependentOS` element:  
   
-    ```  
+    ```xml  
      <dependency>  
         <dependentOS supportUrl="http://www.adatum.com/MyApplication/wrongOSFound.htm">  
           <osVersionInfo>  
@@ -48,7 +49,7 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pro počet p
   
 3.  Předpokladem pro verzi modulu CLR, přidejte `supportUrl` atribut `dependentAssembly` položku, která určuje běžné závislostí modulu runtime jazyka:  
   
-    ```  
+    ```xml  
       <dependency>  
         <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/wrongClrVersionFound.htm">  
           <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />  
@@ -58,7 +59,7 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pro počet p
   
 4.  Předpokladem pro sestavení, které musí být předinstalován v globální mezipaměti sestavení, nastavte `supportUrl` pro `dependentAssembly` element, který určuje požadované sestavení:  
   
-    ```  
+    ```xml  
       <dependency>  
         <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
           <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
@@ -66,18 +67,18 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pro počet p
       </dependency>  
     ```  
   
-5.  Volitelné. Pro aplikace, které cílí na rozhraní .NET Framework 4, otevřete manifest nasazení (soubor .application) pro vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace v textovém editoru.  
+5.  Volitelné. Pro aplikace, které cílí na rozhraní .NET Framework 4, otevřete manifest nasazení ( `.application` souboru) pro vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace v textovém editoru.  
   
 6.  Součásti rozhraní .NET Framework 4, přidejte `supportUrl` atribut `compatibleFrameworks` element:  
   
-    ```  
+    ```xml  
     <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
       <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />  
       <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />  
     </compatibleFrameworks>  
     ```  
   
-7.  Jakmile jste ručně změnili manifest aplikace, musíte znovu podepsat manifest aplikace pomocí digitálního certifikátu, a aktualizovat a znovu podepsat manifest nasazení. Je nutné použít Mage.exe nebo MageUI.exe SDK nástroje k provedení této úlohy, jako obnovení těchto souborů pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vymaže ručně provedené změny. Další informace o používání Mage.exe k opětovné podepisování manifestů najdete v tématu [postupy: opakované podepsání aplikace a manifesty nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7.  Jakmile jste ručně změnili manifest aplikace, musíte znovu podepsat manifest aplikace pomocí digitálního certifikátu, a aktualizovat a znovu podepsat manifest nasazení. Použití nástrojů SDK Mage.exe nebo MageUI.exe k provedení této úlohy, jako obnovení těchto souborů pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vymaže ručně provedené změny. Další informace o používání Mage.exe k opětovné podepisování manifestů najdete v tématu [postupy: opakované podepsání aplikace a manifesty nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>Zabezpečení rozhraní .NET Framework  
  Adresu URL podpory se nezobrazí v dialogovém okně, pokud aplikace je označen ke spuštění v částečné důvěryhodnosti.  

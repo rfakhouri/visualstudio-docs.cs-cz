@@ -10,17 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76c9f5ca61c2950dfc2cc705a1e574e275ba1246
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a1081f0f0f1cc261179192520108e49f5cf4aaa5
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815753"
 ---
-# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Postupy: Instrumentace staticky kompilované webové aplikace ASP.NET a shromažďování dat paměti pomocí příkazového řádku profileru
-Toto téma popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje příkazového řádku v nástrojích pro profilaci k instrumentaci předem kompilovaném [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] součást webové nebo webu a shromažďování přidělení paměti .NET, doba života objektu a podrobných dat časování.  
+# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Postupy: instrumentace staticky kompilované webové aplikace ASP.NET a shromažďování dat paměti pomocí příkazového řádku profileru
+Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje příkazového řádku v nástrojích pro profilaci k instrumentaci předem kompilovaném [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] součást webové nebo webu a shromažďování přidělení paměti .NET, doba života objektu a podrobných dat časování.  
   
 > [!NOTE]
->  Nástroje příkazového řádku nástroje profilace jsou umístěny v podadresáři nástroje \Team Tools\Performance [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] instalační adresář. V 64bitových počítačích 64bitové a 32bitové verze nástroje jsou k dispozici. Chcete-li použít nástroje příkazového řádku profileru, musí přidat cestu nástroje do proměnné prostředí PATH okna příkazového řádku nebo ho přidat do samotný příkaz. Další informace najdete v tématu [určení cesty k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Nástroje příkazového řádku nástroje profilace jsou umístěné v *\Team Tools\Performance nástroje* podadresáři [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] instalační adresář. Na 64bitových počítačích 64bitové a 32bitové verze nástroje jsou k dispozici. Chcete-li použít nástroje příkazového řádku profileru, musí přidat cestu nástroje do proměnné prostředí PATH okna příkazového řádku nebo ho přidat do samotný příkaz. Další informace najdete v tématu [zadejte cestu k nástroje příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Ke shromažďování dat z [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] součást webové pomocí metody instrumentace, můžete použít [VSInstr.exe](../profiling/vsinstr.md) nástroj pro generování instrumentovaného verzi komponentu. Na počítači, který je hostitelem součásti nahraďte-instrumentovány verze součásti instrumentovaného verze. Pak použijete [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) nástroj k inicializaci globální profilování proměnné prostředí a restartovat hostitelský počítač. Potom je nutné spustit profileru.  
   
@@ -28,7 +29,7 @@ Toto téma popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/
   
  K ukončení relace profilování, zavřete [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces, který je hostitelem součásti a poté explicitně vypněte profileru. Ve většině případů doporučujeme vymazání na konci relace profilování proměnné prostředí.  
   
-## <a name="starting-to-profile"></a>Spuštění profilu  
+## <a name="start-to-profile"></a>Spuštění profilu  
   
 #### <a name="to-instrument-an-aspnet-web-component-and-start-profiling"></a>Spustit profilování a instrumentace rozhraní ASP.NET Web součásti  
   
@@ -67,8 +68,8 @@ Toto téma popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/
   
     |Možnost|Popis|  
     |------------|-----------------|  
-    |[Parametr/User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Určuje nepovinné domény a uživatelské jméno účtu, který vlastní pracovní proces ASP.NET. Tato možnost je povinná, pokud je proces spuštěný jako uživatel, který se liší od přihlášeného uživatele. Název je uvedena ve sloupci uživatelské jméno na kartě procesy ve Správci úloh systému Windows.|  
-    |[/crosssession](../profiling/crosssession.md)|Umožňuje profilace procesů v jiných relacích. Tato možnost je povinná, pokud je aplikace spuštěna v jiné relaci. Id relace je uvedena ve sloupci ID relace na kartě procesy ve Správci úloh systému Windows. **/CS** lze zadat jako zkratkou pro **/crosssession**.|  
+    |[Parametr/User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Určuje nepovinné domény a uživatelské jméno účtu, který vlastní pracovní proces ASP.NET. Tato možnost je povinná, pokud je proces spuštěný jako uživatel, který se liší od přihlášeného uživatele. Název je uveden v **uživatelské jméno** sloupec **procesy** karty Správce úloh systému Windows.|  
+    |[/crosssession](../profiling/crosssession.md)|Umožňuje profilace procesů v jiných relacích. Tato možnost je povinná, pokud je aplikace spuštěna v jiné relaci. ID relace je uvedena ve sloupci ID relace, na **procesy** karty Správce úloh systému Windows. **/CS** lze zadat jako zkratkou pro **/crosssession**.|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Určuje čítačů výkonu systému Windows, které se mají shromažďovat při vytváření profilu.|  
     |[/automark](../profiling/automark.md) **:** `Interval`|Použití s **/wincounter** pouze. Určuje počet milisekund, po mezi události kolekce čítače výkonu systému Windows. Výchozí hodnota je 500 ms.|  
     |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Určuje událost trasování událostí pro Windows (ETW), které se mají shromažďovat při vytváření profilu. Události trasování událostí se shromažďují v souboru samostatné (ETL).|  
@@ -76,8 +77,8 @@ Toto téma popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/
   
 7.  Otevřete web, který obsahuje komponentu instrumentované.  
   
-## <a name="controlling-data-collection"></a>Řízení kolekce dat  
- Když cílová aplikace běží, lze řídit shromažďování dat spuštění a zastavení zápisu dat do souboru pomocí **VSPerfCmd.exe** možnosti. Řízení shromažďování dat umožňuje shromažďování dat pro konkrétní součást spuštění programu, jako je například spouštění nebo ukončením aplikace.  
+## <a name="control-data-collection"></a>Řízení shromažďování dat  
+ Když cílová aplikace běží, lze řídit shromažďování dat spuštění a zastavení zápisu dat do souboru pomocí *VSPerfCmd.exe* možnosti. Řízení shromažďování dat umožňuje shromažďování dat pro konkrétní součást spuštění programu, jako je například spouštění nebo ukončením aplikace.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat  
   
@@ -89,7 +90,7 @@ Toto téma popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Spustí (**/processon**) nebo zastaví (**/processoff**) shromažďování dat pro proces zadaný pomocí ID procesu (`PID`).|  
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Spustí (**/threadon**) nebo zastaví (**/threadoff**) shromažďování dat pro vlákno určeného ID vlákna (`TID`).|  
   
-## <a name="ending-the-profiling-session"></a>Ukončení relace profilování  
+## <a name="end-the-profiling-session"></a>Ukončení relace profilování  
  K ukončení relace profilování, zavřete [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci a potom pomocí Internetové informační služby (IIS) **IISReset** příkaz zavřete [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces. Volání **VSPerfCmd** [/Shutdown](../profiling/shutdown.md) možnost vypnout profileru a zavřete profilování datového souboru. **Vsperfclrenv – /globaloff** příkaz vymaže profilování proměnné prostředí. Musíte restartovat počítač pro použití nového nastavení prostředí.  
   
 #### <a name="to-end-a-profiling-session"></a>K ukončení relace profilování  
@@ -112,6 +113,6 @@ Toto téma popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/
   
      **Příkaz IISReset/Start**  
   
-## <a name="see-also"></a>Viz také  
- [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+## <a name="see-also"></a>Viz také:  
+ [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)

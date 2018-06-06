@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2eab01a560cebb3bed644df044fcee0af4039ffb
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815019"
 ---
 # <a name="test-generation"></a>Generování testů
 
@@ -27,7 +28,7 @@ V tradiční testování částí test se skládá z několik věcí:
 
 Toto je test strukturu příklad:
 
-```
+```csharp
 [Test]
 void MyTest() {
     // data
@@ -60,7 +61,7 @@ Když IntelliTest potřebuje vytvořit objekty, budou volání konstruktorů a m
 
 PUT jsou definovány pomocí [PexMethod](attribute-glossary.md#pexmethod) vlastní atribut podobným způsobem Mstestu (nebo NUnit, xUnit). PUT jsou logicky seskupeny do třídy, které jsou označené metody instance [PexClass](attribute-glossary.md#pexclass). Následující příklad ukazuje jednoduchý PUT uložené v **MyPexTest** třídy:
 
-```
+```csharp
 [PexMethod]
 void ReplaceFirstChar(string target, char c) {
 
@@ -72,7 +73,7 @@ void ReplaceFirstChar(string target, char c) {
 
 kde **ReplaceFirstChar** je metoda, která nahrazuje první znak řetězce:
 
-```
+```csharp
 class StringHelper {
     static string ReplaceFirstChar(string target, char c) {
         if (target == null) throw new ArgumentNullException();
@@ -84,7 +85,7 @@ class StringHelper {
 
 Z tento test můžete automaticky IntelliTest [generovat vstupy](input-generation.md) pro PUT, který popisuje mnoho cesty provádění otestované kódu. Každé zadané, která se vztahuje provádění různých cesta získá "serializovány" jako testování částí:
 
-```
+```csharp
 [TestMethod, ExpectedException(typeof(ArgumentNullException))]
 void ReplaceFirstChar0() {
     this.ReplaceFirstChar(null, 0);
@@ -101,7 +102,7 @@ void ReplaceFirstChar10() {
 
 Testování částí parametrizované může být obecné metody. V takovém případě musí uživatel zadat typy používaný k vytváření instancí metodu pomocí [PexGenericArguments](attribute-glossary.md#pexgenericarguments).
 
-```
+```csharp
 [PexClass]
 public partial class ListTest {
     [PexMethod]
@@ -119,7 +120,7 @@ IntelliTest poskytuje mnoho atributů ověření ke třídění výjimky do oče
 
 Očekávané výjimky generovat záporné testovacích případů s příslušnou poznámkou jako **ExpectedException (typeof (*xxx*))**, zatímco neočekávané výjimky generovat selhání testovací případy.
 
-```
+```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
 void SomeTest() {...}
 ```
@@ -136,7 +137,7 @@ Validátory jsou:
 
 IntelliTest můžete "test" interní typy tak dlouho, dokud je uvidí. Pro IntelliTest a zjistit typy následující atribut přidána do produktu nebo testování projektu Visual Studio IntelliTest průvodci:
 
-```
+```csharp
 [assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
 ```
 
@@ -147,7 +148,7 @@ Uživatelé mohou používat předpoklady a kontrolní výrazy pro express [pře
 
 Kontrolní výrazy jsou dobře známé koncept v systémů testů jednotek regulární, takže IntelliTest již "rozumí" integrované **Assert** třídy poskytované každé podporované test framework. Ale většina architektury neposkytují **Assume** třídy. V takovém případě IntelliTest poskytuje [PexAssume](static-helper-classes.md#pexassume) třídy. Pokud nechcete použít existující architekturu test, IntelliTest má také [PexAssert](static-helper-classes.md#pexassert) třídy.
 
-```
+```csharp
 [PexMethod]
 public void Test1(object o) {
     // precondition: o should not be null
@@ -159,7 +160,7 @@ public void Test1(object o) {
 
 Konkrétně bez nullness předpokládá můžete být zakódován jako vlastní atribut:
 
-```
+```csharp
 [PexMethod]
 public void Test2([PexAssumeNotNull] object o)
 // precondition: o should not be null
@@ -205,7 +206,7 @@ V rámci integrace s systémů testování IntelliTest podporuje zjišťování 
 
 **Příklad**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 using NUnit.Framework;
 

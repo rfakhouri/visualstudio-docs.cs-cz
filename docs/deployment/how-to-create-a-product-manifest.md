@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cac17f0b4ca7a2dd4e5c4cf6f1f2da9e4dc5f54
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bdb95f417cadac04a04e30b1e965392f2492d864
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815766"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Postupy: Vytvoření manifestu produktu
 K nasazení požadovaných součástí pro aplikaci, můžete vytvořit balíček zaváděcího nástroje. Balíček zaváděcího nástroje obsahuje jeden produkt soubor manifestu ale manifest balíčku pro každé národní prostředí. Manifest balíčku obsahuje lokalizace specifické aspekty vašeho balíčku. To zahrnuje řetězce, licenční smlouvy s koncovým uživatelem a jazykové sady.  
@@ -41,7 +42,7 @@ K nasazení požadovaných součástí pro aplikaci, můžete vytvořit balíče
   
 3.  Přidejte následující kód XML pro popis oboru názvů a produktu kód XML pro balíček. Nahraďte kód produktu jedinečný identifikátor pro balíček.  
   
-    ```  
+    ```xml  
     <Product  
     xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"   
     ProductCode="Custom.Bootstrapper.Package">  
@@ -49,7 +50,7 @@ K nasazení požadovaných součástí pro aplikaci, můžete vytvořit balíče
   
 4.  Přidejte XML k určení, zda balíček obsahuje závislost. Tento příklad používá závislost na systému Windows verze 3.1.  
   
-    ```  
+    ```xml  
     <RelatedProducts>  
         <DependsOnProduct Code="Microsoft.Windows.Installer.3.1" />  
       </RelatedProducts>  
@@ -57,7 +58,7 @@ K nasazení požadovaných součástí pro aplikaci, můžete vytvořit balíče
   
 5.  Přidejte XML pro všechny soubory, které jsou v balíčku zaváděcího nástroje. Tento příklad používá název souboru balíčku CorePackage.msi.  
   
-    ```  
+    ```xml  
     <PackageFiles>  
         <PackageFile Name="CorePackage.msi"/>  
     </PackageFiles>  
@@ -67,14 +68,14 @@ K nasazení požadovaných součástí pro aplikaci, můžete vytvořit balíče
   
 7.  Přidejte XML tak, aby nainstalovat balíček pomocí příkazů zaváděcího nástroje. Zaváděcí nástroj automaticky přidá **/qn** příznak soubor .msi, který bude instalaci v bezobslužném režimu. Pokud je soubor .exe, zaváděcí nástroj spustí soubor .exe s použitím prostředí. Následující kód XML zobrazí CorePackage.msi žádné argumenty, ale argument příkazového řádku můžete vložit do atributu.  
   
-    ```  
+    ```xml  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
 8.  Přidejte následující kód XML pro zkontrolujte, zda je nainstalován tento balíček zaváděcího nástroje. Nahraďte kód produktu identifikátor GUID pro komponentu redistributable.  
   
-    ```  
+    ```xml  
     <InstallChecks>  
         <MsiProductCheck   
             Property="IsMsiInstalled"   
@@ -84,7 +85,7 @@ K nasazení požadovaných součástí pro aplikaci, můžete vytvořit balíče
   
 9. Přidejte XML můžete změnit chování zaváděcího nástroje podle toho, pokud je již nainstalována součást zaváděcího nástroje. Pokud je nainstalována, balíček zaváděcího nástroje se nespustí. Následující kód XML kontroluje, zda je aktuální uživatel správcem, protože tato součást vyžaduje oprávnění správce.  
   
-    ```  
+    ```xml  
     <InstallConditions>  
         <BypassIf   
            Property="IsMsiInstalled"   
@@ -97,7 +98,7 @@ K nasazení požadovaných součástí pro aplikaci, můžete vytvořit balíče
   
 10. Přidejte XML nastavit ukončovací kód, pokud je k úspěšnému dokončení instalace, a pokud je nutné restartovat počítač. Následující kód XML ukazuje, že Fail a FailReboot ukončovací kódy, které označují, že zavaděč nebude pokračovat v instalaci balíčků.  
   
-    ```  
+    ```xml  
     <ExitCodes>  
         <ExitCode Value="0" Result="Success"/>  
         <ExitCode Value="1641" Result="SuccessReboot"/>  
@@ -108,7 +109,7 @@ K nasazení požadovaných součástí pro aplikaci, můžete vytvořit balíče
   
 11. Přidejte následující kód XML pro ukončení oddílu pro příkazy zaváděcího nástroje.  
   
-    ```  
+    ```xml  
         </Command>  
     </Commands>  
     ```  
@@ -118,7 +119,7 @@ K nasazení požadovaných součástí pro aplikaci, můžete vytvořit balíče
 ## <a name="example"></a>Příklad  
  Manifest produktu obsahuje pokyny k instalaci pro vlastní požadavky.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Product  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  

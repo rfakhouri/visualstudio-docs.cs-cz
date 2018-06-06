@@ -11,10 +11,10 @@ manager: douge
 ms.workload:
 - cplusplus
 ms.openlocfilehash: e3d74821cabbd6fa4c3a950d14a71f8eff73c36f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
+ms.lasthandoff: 06/06/2018
 ms.locfileid: "34766585"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Postupy: připojení profileru k nativní samostatné aplikaci a shromažďování dat souběžnosti pomocí příkazového řádku

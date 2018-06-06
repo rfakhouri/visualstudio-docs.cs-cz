@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45115b03fe62ecd78815861d6e82f1a0e6b98449
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 506222b3c0f140d6a6a941d50dddc4cebd92188b
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34814883"
 ---
-# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Postupy: Spuštění samostatné nativní aplikace s profilerem za účelem shromáždění dat souběžnosti pomocí příkazového řádku
+# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Postupy: spuštění samostatné nativní aplikace s profilerem za účelem shromažďování dat souběžnosti pomocí příkazového řádku
 Toto téma popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje příkazového řádku v nástrojích pro profilaci spuštění samostatné nativní (klientskou) aplikaci a shromažďování dat souběžnosti proces a přístup z více vláken.  
   
  Relace profilování má následující části:  
@@ -28,12 +29,12 @@ Toto téma popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/
 -   Ukončení relace profilování  
   
 > [!NOTE]
->  Nástroje příkazového řádku nástroje profilace jsou umístěny v podadresáři nástroje \Team Tools\Performance [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] instalační adresář. Na 64bitových počítačích 64bitové a 32bitové verze nástroje jsou k dispozici. Použití profileru na příkazovém řádku, je nutné přidat cestu nástroje do proměnné prostředí PATH z **příkazového řádku** okno, nebo přidejte k příkazu sám sebe. Další informace najdete v tématu [určení cesty k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Nástroje příkazového řádku nástroje profilace jsou umístěné v *\Team Tools\Performance nástroje* podadresáři [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] instalační adresář. Na 64bitových počítačích 64bitové a 32bitové verze nástroje jsou k dispozici. Použití profileru na příkazovém řádku, je nutné přidat cestu nástroje do proměnné prostředí PATH z **příkazového řádku** okno, nebo přidejte k příkazu sám sebe. Další informace najdete v tématu [zadejte cestu k nástroje příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
-## <a name="starting-the-application-with-the-profiler"></a>Spouštění aplikace s Profilerem  
+## <a name="start-the-application-with-the-profiler"></a>Spuštění aplikace s profilerem  
  Chcete-li spustit cílová aplikace s profilerem, použijte [VSPerfCmd.exe](../profiling/vsperfcmd.md)**/start** a **/spustit** možnosti k inicializaci profileru a spuštění aplikace. Můžete zadat **/start** a **/spusťte** a jejich odpovídající možnosti. Můžete také přidat **/globaloff** možnost pozastavit shromažďování dat na začátku cílová aplikace. Pak použijete **/globalon** zahájíte shromažďovat data.  
   
-#### <a name="to-start-an-application-with-the-profiler"></a>Chcete-li aplikaci spustit s profilerem  
+#### <a name="to-start-an-application-with-the-profiler"></a>Spuštění aplikace s profilerem  
   
 1.  Na příkazovém řádku zadejte následující příkaz:  
   
@@ -51,7 +52,7 @@ Toto téma popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/
   
 2.  Cílová aplikace spusťte zadáním:  
   
-     **VSPerfCmd**[/spusťte](../profiling/launch.md) **:** `AppName` [`Options`]    
+     **VSPerfCmd**[/spusťte](../profiling/launch.md) **:** `AppName` [`Options`]  
   
      V následující tabulce se můžete použít některou z možností **/spusťte** možnost.  
   
@@ -61,8 +62,8 @@ Toto téma popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/
     |[/ Console](../profiling/console.md)|Spustí cílová aplikace příkazového řádku v samostatném okně.|  
     |[/targetclr](../profiling/targetclr.md) **:** `CLRVersion`|Určuje verzi common language runtime (CLR) profilu, pokud aplikace načte více než jedna verze modulu CLR.|  
   
-## <a name="controlling-data-collection"></a>Řízení kolekce dat  
- Když cílová aplikace běží, lze řídit shromažďování dat spuštění a zastavení zápisu dat do souboru s možností VSPerfCmd.exe. Pomocí řízení shromažďování dat můžete shromažďování dat pro konkrétní součást spuštění programu, jako je například počáteční nebo vypnutí aplikace.  
+## <a name="control-data-collection"></a>Řízení shromažďování dat  
+ Když cílová aplikace běží, lze řídit shromažďování dat spuštění a zastavení zápisu dat do souboru s *VSPerfCmd.exe* možnosti. Pomocí řízení shromažďování dat můžete shromažďování dat pro konkrétní součást spuštění programu, jako je například počáteční nebo vypnutí aplikace.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat  
   
@@ -76,7 +77,7 @@ Toto téma popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/
   
 -   Můžete také **VSPerfCmd.exe**[/označit](../profiling/mark.md) možnost vložit do datového souboru profilování značky. **/Označit** příkaz přidá identifikátor, časové razítko a volitelné uživatelem definované textový řetězec. Značky lze použít k filtrování dat v zobrazení dat a sestav profileru.  
   
-## <a name="ending-the-profiling-session"></a>Ukončení relace profilování  
+## <a name="end-the-profiling-session"></a>Ukončení relace profilování  
  K ukončení relace profilování, nesmí být profileru shromažďování dat. Můžete zastavit shromažďování dat souběžnosti ukončením PROFILOVANÉHO aplikace nebo vyvoláním **VSPerfCmd / detach** možnost. Potom vyvolat **/VSPerfCmd Shutdown** možnost vypnout profileru a zavřete profilování datového souboru.  
   
 #### <a name="to-end-a-profiling-session"></a>K ukončení relace profilování  

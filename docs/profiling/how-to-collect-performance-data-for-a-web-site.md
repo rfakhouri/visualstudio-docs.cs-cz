@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e07594e9b90fabd8e0a2bcc66dd0920db0973aa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c6843e9287fd53b17329b70d331d0f37b87917f7
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815922"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Postupy: shromažďování dat o výkonu pro webový server
 
@@ -40,7 +41,7 @@ Můžete použít **Průvodce výkonu** ke shromažďování dat výkonu pro [!I
 
 - Někteří uživatelé mohou odepřít přístup k profilace všem ostatním uživatelům.
 
- Další informace najdete v tématu [profilování a zabezpečení systému Windows Vista](../profiling/profiling-and-windows-vista-security.md) a možnosti správce v [VSPerfCmd](../profiling/vsperfcmd.md).
+ Další informace najdete v tématu [profilování a Windows Vista zabezpečení](../profiling/profiling-and-windows-vista-security.md) a možnosti správce v [VSPerfCmd](../profiling/vsperfcmd.md).
 
 ## <a name="to-profile-a-web-site-project"></a>Chcete-li profil webového projektu
 
@@ -48,7 +49,7 @@ Můžete použít **Průvodce výkonu** ke shromažďování dat výkonu pro [!I
 
 2. Na **analyzovat** nabídce vyberte možnost **výkonu profileru**, vyberte **prohlížeč výkonu**a potom vyberte **spustit**.
 
-3. Na první stránce průvodce vyberte profilování metodu a pak klikněte na tlačítko **Další**. Další informace o metod profilace najdete v tématu [metody kolekce údajů o výkonu Principy](../profiling/understanding-performance-collection-methods.md). Všimněte si, že vizualizér souběžnosti metoda profilování není k dispozici pro webové aplikace.
+3. Na první stránce průvodce vyberte profilování metodu a pak klikněte na tlačítko **Další**. Další informace o metod profilace najdete v tématu [pochopit metody kolekce údajů o výkonu](../profiling/understanding-performance-collection-methods.md). Všimněte si, že vizualizér souběžnosti metoda profilování není k dispozici pro webové aplikace.
 
 4. V **aplikaci, pro kterou chcete cílit pro profilace?** rozevíracího seznamu, ujistěte se, že je vybrána aktuální projekt a pak klikněte na **Další**.
 
@@ -100,9 +101,9 @@ Můžete použít **Průvodce výkonu** ke shromažďování dat výkonu pro [!I
 
      Profileru generuje datový soubor a zobrazuje souhrnné zobrazení dat v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hlavní okno.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 [Přehledy](../profiling/overviews-performance-tools.md)  
 [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)  
-[Porozumění hodnotám dat instrumentace](../profiling/understanding-instrumentation-data-values.md)  
-[Porozumění hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)
+[Pochopení hodnotám dat instrumentace](../profiling/understanding-instrumentation-data-values.md)  
+[Pochopení hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)

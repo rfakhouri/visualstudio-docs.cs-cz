@@ -1,5 +1,5 @@
 ---
-title: Konfigurace testů jednotek v sadě Visual Studio s souboru .runsettings
+title: Konfigurace testů jednotek pomocí souboru .runsettings
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,36 +9,62 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 97d270704196b3656f89d0177f615826dcbef2af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f0cb4989877445a0679a5682aaa17e4b7f759a33
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815974"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek pomocí *.runsettings* souboru
 
 Testování částí v sadě Visual Studio můžete nakonfigurovat pomocí *.runsettings* souboru. Například můžete změnit verzi rozhraní .NET Framework, na kterém testy spouštějí, adresář pro výsledky testů nebo data shromážděná během spuštění testu.
 
-> [!NOTE]
-> Název souboru není důležité, tak dlouho, dokud používáte rozšíření '.runsettings'.
+Soubory parametrů běhu jsou volitelné. Pokud nevyžadujete žádnou zvláštní konfiguraci, nepotřebujete *.runsettings* souboru. Nejběžnější použití *.runsettings* soubor je k přizpůsobení [analýza pokrytí kódu](../test/customizing-code-coverage-analysis.md).
 
-Pokud nevyžadujete žádnou zvláštní konfiguraci, nepotřebujete *.runsettings* souboru. Nejběžnější použití *.runsettings* soubor je k přizpůsobení [analýza pokrytí kódu](../test/customizing-code-coverage-analysis.md).
+## <a name="specify-a-run-settings-file"></a>Zadejte soubor parametrů běhu
+
+Spustit soubory můžete použít ke konfiguraci testy, které jsou spouštěny z příkazového řádku v prostředí IDE, nebo v nastavení [sestavení pracovního postupu](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) pomocí Visual Studio Team Services (VSTS) nebo Team Foundation Server (TFS).
+
+### <a name="specify-a-run-settings-file-in-the-ide"></a>Zadejte soubor parametrů běhu v prostředí IDE
+
+Vyberte **Test** > **nastavení testu** > **vyberte soubor s nastavením testu** a pak vyberte *.runsettings*souboru. Soubor se zobrazí na **nastavení testu** nabídce a můžete vybrat nebo ji zrušte. Po výběru souboru parametrů běhu platí vždy, když vyberete **analýza pokrytí kódu**.
+
+![Vyberte nabídku souborů nastavení testů v sadě Visual Studio](media/select-test-settings-file.png)
+
+### <a name="specify-a-run-settings-file-at-the-command-line"></a>Zadejte nastavení spuštění soubor na příkazovém řádku
+
+Ke spuštění testů z příkazového řádku, použijte *vstest.console.exe* a určete soubor nastavení pomocí **/Settings** parametr.
+
+1. Spusťte příkazový řádek pro vývojáře v sadě Visual Studio:
+
+   V systému Windows **spustit** nabídce zvolte **Visual Studio 2017** > **příkazový řádek vývojáře pro VS 2017**.
+
+2. Zadejte příkaz podobný:
+
+   ```cmd
+   vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
+   ```
 
 ## <a name="customize-tests"></a>Přizpůsobit testy
 
-1. Přidání souboru XML do řešení sady Visual Studio a přejmenujte ji na *test.runsettings*.
+Chcete-li přizpůsobit testy pomocí *.runsettings* souboru, postupujte takto:
+
+1. Přidání souboru XML do řešení sady Visual Studio a uložte ho jako *test.runsettings*.
+
+   > [!TIP]
+   > Název souboru není důležité, tak dlouho, dokud pomocí rozšíření *.runsettings*.
 
 1. Nahraďte obsah souboru XML z příkladu, který následuje a přizpůsobit podle potřeby.
 
-1. Na **Test** nabídce zvolte **nastavení testu** > **vyberte soubor s nastavením testu**.
+1. Na **Test** nabídce zvolte **nastavení testu** > **vyberte soubor s nastavením testu**. Vyhledejte *.runsettings* souboru, kterou jste vytvořili a potom vyberte **OK**.
 
-Můžete vytvořit více než jeden *.runsettings* souborů ve vašem řešení a povolit nebo zakázat je v různou dobu pomocí **nastavení testu** nabídky.
-
-![Povolení souboru parametrů běhu](../test/media/runsettings-1.png)
+   > [!TIP]
+   > Můžete vytvořit více než jeden *.runsettings* souborů ve vašem řešení a vyberte jednu jako soubor active testovací nastavení podle potřeby.
 
 ## <a name="example-runsettings-file"></a>Příklad *.runsettings* souboru
 
-Toto je typické *.runsettings* souboru. Každý prvek souboru je volitelný, protože každá hodnota má výchozí nastavení.
+Následující kód XML zobrazí obsah typické *.runsettings* souboru. Každý prvek souboru je volitelný, protože má výchozí hodnotu.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -49,8 +75,8 @@ Toto je typické *.runsettings* souboru. Každý prvek souboru je volitelný, pr
     <!-- Path relative to solution directory -->
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
-    <!-- x86 or x64
-      - You can also change it from menu Test, Test Settings, Default Processor Architecture -->
+    <!-- x86 or x64 -->
+    <!-- You can also change it from menu Test > Test Settings > Default Processor Architecture -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -59,9 +85,9 @@ Toto je typické *.runsettings* souboru. Každý prvek souboru je volitelný, pr
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
 
-     <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
-     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
-     <TestSessionTimeout>10000</TestSessionTimeout>
+    <!-- TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
+    <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
+    <TestSessionTimeout>10000</TestSessionTimeout>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->
@@ -116,31 +142,55 @@ Toto je typické *.runsettings* souboru. Každý prvek souboru je volitelný, pr
 </RunSettings>
 ```
 
-*.Runsettings* soubor také slouží ke konfiguraci [analýza pokrytí kódu](../test/customizing-code-coverage-analysis.md).
-
-Zbývající část tohoto článku popisuje obsah souboru.
-
-## <a name="edit-your-runsettings-file"></a>Upravit vaše *.runsettings* souboru
+## <a name="elements-of-a-runsettings-file"></a>Elementy *.runsettings* souboru
 
 V následujících podrobností elementy *.runsettings* souboru.
 
-### <a name="test-run-configuration"></a>Konfigurace testovacího běhu
+### <a name="run-configuration"></a>Spuštění nástroje Konfigurace
+
+```xml
+<RunConfiguration>
+    <MaxCpuCount>1</MaxCpuCount>
+    <ResultsDirectory>.\TestResults</ResultsDirectory>
+    <TargetPlatform>x86</TargetPlatform>
+    <TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
+    <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
+    <TestSessionTimeout>10000</TestSessionTimeout>
+</RunConfiguration>
+```
+
+**RunConfiguration** element může obsahovat následující prvky:
 
 |Uzel|Výchozí|Hodnoty|
 |----------|-------------|------------|
-|`ResultsDirectory`||Adresář, kde jsou umístěny výsledky testů.|
-|`TargetFrameworkVersion`|Framework40|Framework35, Framework40, Framework45<br /><br /> Toto nastavení určuje, která verze částí unit test framework se používá k zjišťování a spusťte testy. Může se lišit od verze platformy .NET, kterou jste zadali ve vlastnostech sestavení projektu testování částí.|
-|`TargetPlatform`|x86|x86, x64|
-|`TreatTestAdapterErrorsAsWarnings`|false|false, true|
-|`TestAdaptersPaths`||Jednu nebo více cest k adresáři, kde se nachází TestAdapters|
-|`MaxCpuCount`|1|Tato nastavení ovládacích prvků stupeň spuštění paralelní testu při testování částí spuštěné, pomocí jader dostupných na počítači. Spouštěcí modul testu se spustí jako odlišné proces v každém dostupné core a poskytuje každý základní kontejner s testy ke spuštění. Kontejner může být sestavení, knihovny DLL nebo relevantní artefaktů. Kontejner testů je plánování jednotka. V jednotlivých kontejnerech testy se spouštějí podle rozhraní test. Pokud existují mnoho kontejnerů, pak jako zpracovává dokončit provádění testů v kontejneru, jsou uvedeny další dostupné kontejneru.<br /><br /> MaxCpuCount může být:<br /><br /> n, kde 1 < = n < = počet jader: až n procesy bude spuštěna<br /><br /> n, kde n = jakoukoli jinou hodnotu: počet procesy spuštění bude až až k dispozici jádra na počítači|
-|`TestSessionTimeout`||Umožňuje uživatelům ukončení relace testu, pokud se překročí daného časového limitu. Nastavení, které zajistí vypršení časového limitu a spotřebování prostředky a testovací relace jsou omezené na nastavte čas. Toto nastavení je k dispozici v **Visual Studio 2017 verze 15,5** a novější.
+|**ResultsDirectory**||Adresář, kde jsou umístěny výsledky testů.|
+|**targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Toto nastavení určuje, která verze částí unit test framework se používá k zjišťování a spusťte testy. Může se lišit od verze platformy .NET, kterou jste zadali ve vlastnostech sestavení projektu testování částí.|
+|**TargetPlatform**|x86|x86, x64|
+|**TreatTestAdapterErrorsAsWarnings**|false|false, true|
+|**TestAdaptersPaths**||Jednu nebo více cest k adresáři, kde se nachází TestAdapters|
+|**MaxCpuCount**|1|Tato nastavení ovládacích prvků stupeň spuštění paralelní testu při testování částí spuštěné, pomocí jader dostupných na počítači. Spouštěcí modul testu se spustí jako odlišné proces v každém dostupné core a poskytuje každý základní kontejner s testy ke spuštění. Kontejner může být sestavení, knihovny DLL nebo relevantní artefaktů. Kontejner testů je plánování jednotka. V jednotlivých kontejnerech testy se spouštějí podle rozhraní test. Pokud existují mnoho kontejnerů, pak jako zpracovává dokončit provádění testů v kontejneru, jste, získá další dostupné kontejneru.<br /><br />MaxCpuCount může být:<br /><br />n, kde 1 < = n < = počet jader: až n procesy spuštění<br /><br />n, kde n = jakoukoli jinou hodnotu: počet spuštění procesů může být maximálně počet dostupných jader|
+|**TestSessionTimeout**||Umožňuje uživatelům ukončení relace testu, pokud se překročí daného časového limitu. Nastavení, které zajistí vypršení časového limitu a spotřebování prostředky a testovací relace jsou omezené na nastavte čas. Toto nastavení je k dispozici v **Visual Studio 2017 verze 15,5** a novější.|
 
-### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptéry diagnostických dat (sběrače dat)
+### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptérů diagnostických dat (sběrače dat)
 
-`DataCollectors` Element určuje nastavení dat diagnostiky adaptérů. Adaptérů diagnostických dat sbírat dodatečné informace o prostředí a aplikace v rámci testu. Každý adaptér má výchozí nastavení a budete muset zadat nastavení, pokud nechcete použít výchozí hodnoty.
+**DataCollectors** element určuje nastavení dat diagnostiky adaptérů. Adaptérů diagnostických dat sbírat dodatečné informace o prostředí a aplikace v rámci testu. Každý adaptér má výchozí nastavení a budete muset zadat nastavení, pokud nechcete použít výchozí hodnoty.
 
 #### <a name="code-coverage-adapter"></a>Adaptér pokrytí kódu
+
+```xml
+<CodeCoverage>
+    <ModulePaths>
+        <Exclude>
+            <ModulePath>.*CPPUnitTestFramework.*</ModulePath>
+        </Exclude>
+    </ModulePaths>
+
+    <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+    <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
+    <CollectFromChildProcesses>True</CollectFromChildProcesses>
+    <CollectAspDotNet>False</CollectAspDotNet>
+</CodeCoverage>
+```
 
 Kolektor dat pokrytí kódu vytvoří protokol uvádějící, které části kódu aplikace byly použity v testu. Další informace o přizpůsobení nastavení pro pokrytí kódu najdete v tématu [přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md).
 
@@ -148,11 +198,19 @@ Kolektor dat pokrytí kódu vytvoří protokol uvádějící, které části kó
 
 Kolekce video dat zaznamená obrazovky, zaznamenávání při spuštění testů. Tento záznam je užitečná pro řešení potíží s testy uživatelského rozhraní. Kolekce video dat je k dispozici v **Visual Studio 2017 verze 15,5** a novější.
 
-Chcete-li přizpůsobit jiný typ adaptéru diagnostických dat, je nutné použít [soubor s nastavením testu](../test/collect-diagnostic-information-using-test-settings.md).
+Chcete-li přizpůsobit žádný jiný druh adaptérů diagnostických dat, použijte [soubor s nastavením testu](../test/collect-diagnostic-information-using-test-settings.md).
 
 ### <a name="testrunparameters"></a>TestRunParameters
 
-TestRunParameters poskytuje způsob, jak definovat proměnných a hodnot, které jsou k dispozici pro testy za běhu. Tyto proměnné je přístupná pomocí [TestContext](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.testcontext(v=vs.140).aspx) objektu.
+```xml
+<TestRunParameters>
+    <Parameter name="webAppUrl" value="http://localhost" />
+    <Parameter name="webAppUserName" value="Admin" />
+    <Parameter name="webAppPassword" value="Password" />
+</TestRunParameters>
+```
+
+Parametry testu poskytují způsob, jak definovat proměnných a hodnot, které jsou k dispozici pro testy za běhu. Přístup k parametry, pomocí <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> vlastnost:
 
 ```csharp
 [TestMethod]
@@ -161,25 +219,38 @@ public void HomePageTest()
     string appURL = TestContext.Properties["webAppUrl"];
 ```
 
-Chcete-li použít TestContext, přidejte privátního [TestContext](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.unittesting.testcontext(v=vs.140).aspx) pole a veřejné `TestContext` vlastnosti ke třídě testu.
+Pokud chcete používat parametry testu, spuštění, přidejte privátního <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pole a veřejné <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> vlastnosti ke třídě testu.
 
-### <a name="mstest-run-settings"></a>Parametry běhu adaptéru MSTest
+### <a name="mstest-run-settings"></a>Mstestu parametry spuštění
 
-Tato nastavení jsou specifické pro adaptér test, který spouští test metody, které mají `[TestMethod]` atribut.
+```xml
+<MSTest>
+    <MapInconclusiveToFailed>True</MapInconclusiveToFailed>
+    <CaptureTraceOutput>false</CaptureTraceOutput>
+    <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
+    <DeploymentEnabled>False</DeploymentEnabled>
+    <AssemblyResolution>
+      <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
+    </AssemblyResolution>
+</MSTest
+```
+
+Tato nastavení jsou specifické pro adaptér test, který spouští test metody, které mají <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atribut.
 
 |Konfigurace|Výchozí|Hodnoty|
 |-------------------|-------------|------------|
-|ForcedLegacyMode|false|V sadě Visual Studio 2012 bylo optimalizováno adaptér Mstestu zajistit rychlejší a větší škálovatelnost. Některé rysy chování sady, jako například pořadí, ve kterém jsou testy spuštěny, nemusí být přesně stejné jako v předchozích edicích sady Visual Studio. Nastavení této hodnoty `true` používat starší test adaptér.<br /><br /> Například můžete použít toto nastavení, pokud máte *app.config* soubor zadané pro testování částí.<br /><br /> Doporučujeme zvážit refaktoring testů, aby bylo možné použít novější adaptér.|
-|IgnoreTestImpact|false|Funkce dopadu testu upřednostňuje při spuštění testů prostřednictvím adaptéru MSTest nebo nástroje Microsoft Test Manager testy, které jsou ovlivněny nedávnými změnami. Toto nastavení funkci deaktivuje. Další informace najdete v tématu [postupy: shromáždění dat pro kontrolu, které testy mají být spuštěny po změně kódu](http://msdn.microsoft.com/Library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|
-|SettingsFile||Zde můžete určit soubor s nastavením testu, který chcete použít v adaptéru MSTest. Můžete také určit souborů nastavení testů pomocí nabídky **testování**, **Test nastavení**, **vyberte testovací soubor s nastaveními**.<br /><br /> Pokud zadáte tuto hodnotu, je nutné také nastavit **ForcedlegacyMode** k **true**.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|
-|KeepExecutorAliveAfterLegacyRun|false|Po dokončení běhu testu je adaptér MSTest vypnut. Jakýkoli proces, který je spuštěn jako součást test je také byly ukončeny. Pokud chcete zachovat prováděcí modul testování v provozu, přepněte tuto konfiguraci na hodnotu true.<br /><br /> Můžete například použít toto nastavení Pokud chcete zachovat v prohlížeči spuštění mezi programové testy uživatelského rozhraní.|
-|DeploymentEnabled|true|Pokud hodnotu nastavíte na hodnotu false, položky nasazení, které jste zadali v metodu test se nezkopírují do adresáře nasazení.|
-|CaptureTraceOutput|true|Pomocí příkazu Trace.WriteLine můžete zapisovat do trasování ladění z testovací metody. Pomocí této konfigurace můžete vypnout tato trasování ladění.|
-|DeleteDeploymentDirectoryAfterTestRunIsComplete|true|Nastavením této hodnoty na false můžete po testovacím běhu zachovat adresář nasazení.|
-|MapInconclusiveToFailed|false|Pokud se test vrátí v neprůkazném stavu, je obvykle v aplikaci Průzkumník testů mapován na stav Vynecháno. Pokud chcete testy neprůkazné zobrazený jako poškozený, použijte tuto konfiguraci.|
-|InProcMode|false|Pokud chcete testy spouštět ve stejném procesu jako adaptér MSTest, nastavte tuto hodnotu na true. Toto nastavení poskytuje malé zvýšení výkonu. Pokud je však test ukončen výjimkou, nebudou ostatní testy pokračovat.|
-|AssemblyResolution|false|Při hledání a spouštění testů jednotek můžete určit cest do dalších sestavení. Například použijte tyto cesty pro závislost sestavení, které není nacházet ve stejném adresáři jako testovací sestavení. Chcete-li zadat cestu, použijte element "Cesta k adresáři". Cesty může obsahovat proměnné prostředí.<br /><br /> `<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+|**ForcedLegacyMode**|false|V sadě Visual Studio 2012 bylo optimalizováno adaptér Mstestu zajistit rychlejší a větší škálovatelnost. Některé rysy chování sady, jako například pořadí, ve kterém jsou testy spuštěny, nemusí být přesně stejné jako v předchozích edicích sady Visual Studio. Nastavte tuto hodnotu na **true** používat starší test adaptér.<br /><br />Například můžete použít toto nastavení, pokud máte *app.config* soubor zadané pro testování částí.<br /><br />Doporučujeme zvážit refaktoring testů, aby bylo možné použít novější adaptér.|
+|**IgnoreTestImpact**|false|Funkce dopadu testu upřednostňuje při spuštění testů prostřednictvím adaptéru MSTest nebo nástroje Microsoft Test Manager testy, které jsou ovlivněny nedávnými změnami. Toto nastavení funkci deaktivuje. Další informace najdete v tématu [které testy je třeba spustit od předchozího sestavení](https://msdn.microsoft.com/library/dd286589).|
+|**Soubor_nastavení**||Můžete zadat souboru nastavení testů pro použití s Mstestu adaptéru v tomto poli. Můžete taky zadat souborů nastavení testů výběrem **testování** > **Test nastavení** > **vyberte testovací soubor s nastaveními**.<br /><br />Pokud zadáte tuto hodnotu, je nutné také nastavit **ForcedlegacyMode** k **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**KeepExecutorAliveAfterLegacyRun**|false|Po dokončení běhu testu je adaptér MSTest vypnut. Jakýkoli proces, který je spuštěn jako součást test je také byly ukončeny. Pokud chcete zachovat vykonavatele testovací aktivní, nastavte hodnotu na **true**. Můžete například použít toto nastavení Pokud chcete zachovat v prohlížeči spuštění mezi programové testy uživatelského rozhraní.|
+|**DeploymentEnabled**|true|Pokud nastavíte hodnotu na **false**, nasazení položky, které jste určili ve své metodě testovací nejsou zkopírovat do adresáře nasazení.|
+|**CaptureTraceOutput**|true|Je možné zapsat do trasování ladění z pomocí metoda testovací <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
+|**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Pokud chcete zachovat adresáře nasazení po spuštění testu, nastavte hodnotu **false**.|
+|**MapInconclusiveToFailed**|false|V případě, test skončí s neprůkazné stav, je namapovaný na přeskočené stav v **testování Explorer**. Pokud chcete testy neprůkazné zobrazený jako neúspěšná, nastavte hodnotu na **true**.|
+|**InProcMode**|false|Pokud chcete testů ke spuštění v rámci jednoho procesu, jako je adaptér Mstestu, nastavte hodnotu **true**. Toto nastavení poskytuje malé zvýšení výkonu. Ale pokud testu ukončení s výjimkou zbývající testy nespouštět.|
+|**AssemblyResolution**|false|Při hledání a spouštění testů jednotek můžete určit cest do dalších sestavení. Například použijte tyto cesty pro závislost sestavení, které nejsou ve stejném adresáři jako testovací sestavení. Pokud chcete zadat cestu, použijte **cesta k adresáři** elementu. Cesty může obsahovat proměnné prostředí.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md)
+- [Visual Studio Test úloh (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)

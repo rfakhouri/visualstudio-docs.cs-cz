@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8240e4bb8ba540fcdd4453e39d9fa6b00b31bef2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ced10a16bae0e5892fddec1a79b9f7793b4dac43
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815542"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Postupy: Zahrnutí datového souboru do aplikace ClickOnce
 Každý [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalací aplikací je přiřazen adresář na místní disk cílového počítače, kde aplikace může spravovat svá vlastní data. Datové soubory mohou zahrnovat souborů všech typů: textové soubory, soubory XML nebo i soubory databáze (.mdb) Microsoft Access. Následující postupy ukazují, jak přidat datový soubor libovolného typu do vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
@@ -35,7 +36,7 @@ Každý [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instal
   
 2.  Aktualizujte manifest aplikace do seznamu datového souboru.  
   
-     **Mage -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
+     `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
      Jak tento úkol provést znovu vytvoří seznam souborů v manifestu aplikace a také automaticky vygeneruje podpisy hodnoty hash.  
   
@@ -53,13 +54,11 @@ Každý [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instal
   
      Manifest nasazení musíte znovu podepsat, protože došlo ke změně jeho hodnoty hash manifestu aplikace.  
   
-     **manifest aplikace Mage -s - CR cert_file - pwd heslo**  
+     `mage -s app manifest -cf cert_file -pwd password`
   
-     **manifest Mage -u nasazení manifestu - appm aplikace.**  
+     `mage -u deployment manifest -appm app manifest`
   
-     **manifest nasazení Mage -s - CR Soubor_certifikátu - pwd heslo**  
-  
-2.  
+     `mage -s deployment manifest -cf certfile -pwd password`
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Chcete-li zahrnout datový soubor pomocí MageUI.exe  
   

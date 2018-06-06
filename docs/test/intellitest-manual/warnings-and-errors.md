@@ -11,13 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 19de1453722629e880a5fc64ad0b5f4d63175eba
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 75cda2b45137d982038587ee1dcb73661b77f0df
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815792"
 ---
-# <a name="warnings-and-errors"></a>Upozornění a chyb
+# <a name="warnings-and-errors"></a>Upozornění a chyby
 
 ## <a name="warnings-and-errors-by-category"></a>Upozornění a chyby podle kategorie
 
@@ -62,13 +63,13 @@ Každé větve podmíněného a nepodmíněné spuštění a sledované kódu se
 
 Například následující kód využívá větve v pořadí 100:
 
-```
+```csharp
 for (int i=0; i<100; i++) { }
 ```
 
 Můžete upravit **MaxBranches** možnost atributu odvozené od **PexSettingsAttributeBase**, jako například [PexClass](attribute-glossary.md#pexclass) nebo [PexMethod](attribute-glossary.md#pexmethod) . Následující příklad odebere efektivně to vázaný:
 
-```
+```csharp
 [PexMethod(MaxBranches=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -79,7 +80,7 @@ Můžete také nastavit **TestExcludePathBoundsExceeded** možnost k informován
 
 V testovací kód, můžete použít [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) Ignorovat omezení vygenerovaných podmínku cyklu:
 
-```
+```csharp
 for (int i=0; 
     PexSymbolicValue.Ignore(i<100); // IntelliTest will 'forget' about this path condition
     i++) 
@@ -102,7 +103,7 @@ Každý struktura, která závisí na vstupy z [testování částí parametrizo
 
 Například každá cesta zahrnovat následující kód využívá **n + 1** podmínky:
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     // conditions are "0<n", "1<n", ..., "!(n<n)"
@@ -117,7 +118,7 @@ void ParameterizedTest(int n) {
 
 Můžete upravit **MaxConditions** možnost atributu odvozené od **PexSettingsAttributeBase**, jako například [PexClass](attribute-glossary.md#pexclass) nebo [PexMethod](attribute-glossary.md#pexmethod). Příklad:
 
-```
+```csharp
 [PexMethod(MaxConditions=10000)]
 void ParameterizedTest(int n) {
     // ...
@@ -128,7 +129,7 @@ Můžete také nastavit **TestExcludePathBoundsExceeded** možnost k informován
 
 Můžete použít [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) Ignorovat omezení vygenerovaných podmínku cyklu:
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     int nshadow = PexSymbolicValue.Ignore(n); // IntelliTest looses track of 'n'
@@ -148,7 +149,7 @@ Každé volání (přímé, nepřímé, virtuální, nebo přejít) ke spuštěn
 
 Můžete upravit **MaxCalls** možnost atributu odvozené od **PexSettingsAttributeBase**, jako například [PexClass](attribute-glossary.md#pexclass) nebo [PexMethod](attribute-glossary.md#pexmethod). Následující příklad odebere efektivně to vázaný:
 
-```
+```csharp
 [PexMethod(MaxCalls=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -164,7 +165,7 @@ IntelliTest omezuje velikost zásobníku volání žádné provádění cesty, k
 
 Můžete upravit **MaxStack** možnost atributu odvozené od **PexSettingsAttributeBase**, jako například [PexClass](attribute-glossary.md#pexclass) nebo [PexMethod](attribute-glossary.md#pexmethod). Následující příklad odebere efektivně tuto mez (nedoporučuje se):
 
-```
+```csharp
 [PexMethod(MaxStack=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -182,7 +183,7 @@ Nemusí být případ, že pokaždé, když IntelliTest používá parametrizova
 
 Můžete upravit **MaxRuns** možnost atributu odvozené od **PexSettingsAttributeBase**, jako například [PexClass](attribute-glossary.md#pexclass) nebo [PexMethod](attribute-glossary.md#pexmethod). Následující příklad odebere efektivně tuto mez (nedoporučuje se):
 
-```
+```csharp
 [PexMethod(MaxRuns=2000)]
 public void MyTest(...) {
     // ....
@@ -200,7 +201,7 @@ Při IntelliTest často najde mnoho zajímavé vstupy testovací původně, se m
 
 Můžete upravit **MaxRunsWithoutNewTests** možnost atributu odvozené od **PexSettingsAttributeBase**, jako například [PexClass](attribute-glossary.md#pexclass) nebo [PexMethod](attribute-glossary.md#pexmethod). Následující příklad odebere efektivně tuto mez (nedoporučuje se):
 
-```
+```csharp
 [PexMethod(MaxRunsWithoutNewTests=2000)]
 public void MyTest(...) {
     // ....
@@ -236,7 +237,7 @@ IntelliTest pomůžete tak, že odkazuje na jeden nebo více typů, které odpov
 
   Například pokud IntelliTest hlásí, že IT oddělení "není znám všechny typy přiřaditelné k **System.Collections.IDictionary**", můžete ji připojením následující **PexUseTypeAttribute** k testovací (nebo k třídě přípojka):
 
-  ```
+  ```csharp
   [PexMethod]
   [PexUseType(typeof(System.Collections.Hashtable))]
   public void MyTest(IDictionary[] dictionaries) { ... }
@@ -244,7 +245,7 @@ IntelliTest pomůžete tak, že odkazuje na jeden nebo více typů, které odpov
 
 * **Atribut úrovně sestavení**
 
-  ```
+  ```csharp
   [assembly: PexUseType(typeof(System.Collections.Hashtable))]
   ```
 

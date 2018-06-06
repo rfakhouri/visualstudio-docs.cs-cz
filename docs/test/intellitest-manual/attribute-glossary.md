@@ -11,13 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1e42b9cae54186ed723c6c0567b5af247796d23d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 64e02cae39497a14cc087791a60b4f61c9bcd8fd
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815909"
 ---
-# <a name="attribute-glossary"></a>Atribut Glosář
+# <a name="attribute-glossary"></a>Glosář atributů
 
 ## <a name="attributes-by-namespace"></a>Atributy podle oboru názvů
 
@@ -51,7 +52,7 @@ Tento atribut vyhodnotí, že upraveny hodnota nemůže být **null**. Je možn�
 
 * **parametr** metody parametrizované testu
 
-  ```
+  ```csharp
   // assume foo is not null
   [PexMethod]
   public void SomeTest([PexAssumeNotNull]IFoo foo, ...) {}
@@ -59,7 +60,7 @@ Tento atribut vyhodnotí, že upraveny hodnota nemůže být **null**. Je možn�
 
 * **pole**
 
-  ```
+  ```csharp
   public class Foo {
      // this field should not be null
      [PexAssumeNotNull]
@@ -69,7 +70,7 @@ Tento atribut vyhodnotí, že upraveny hodnota nemůže být **null**. Je možn�
 
 * A **typu**
 
-  ```
+  ```csharp
   // never consider null for Foo types
   [PexAssumeNotNull]
   public class Foo {}
@@ -94,7 +95,7 @@ Chcete-li tyto třídy také důrazně doporučujeme **částečné** tak, aby I
 
 **Další sada a kategorie**:
 
-```
+```csharp
 [TestClass] // MSTest test fixture attribute
 [PexClass(Suite = "checkin")] // fixture attribute
 public partial class MyTests { ... }
@@ -102,7 +103,7 @@ public partial class MyTests { ... }
 
 **Určení typu testovaného**:
 
-```
+```csharp
 [PexClass(typeof(Foo))] // this is a test for Foo
 public partial class FooTest { ... }
 ```
@@ -131,7 +132,7 @@ Testování parametrizované částí:
 
 **Příklad**
 
-```
+```csharp
 [PexClass]
 public partial class MyTests {
      [PexMethod]
@@ -150,7 +151,7 @@ public partial class MyTests {
 
 Tento atribut lze nastavit na úrovni sestavení přepsat výchozí hodnoty nastavení pro všechny explorations.
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 // overriding the test framework selection
 [assembly: PexAssemblySettings(TestFramework = "Naked")]
@@ -161,7 +162,7 @@ using Microsoft.Pex.Framework;
 
 Tento atribut určuje sestavení, která se testuje v aktuálním projektu testu. 
 
-```
+```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")]
 ```
 
@@ -172,7 +173,7 @@ Tento atribut slouží k zadání sestavení, které chcete instrumentovány.
 
 **Příklad**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 
 // the assembly containing ATypeFromTheAssemblyToInstrument should be instrumented
@@ -189,7 +190,7 @@ Tento atribut informuje IntelliTest, že konkrétní typ může použít k vytv�
 
 **Příklad**
 
-```
+```csharp
 [PexMethod]
 [PexUseType(typeof(A))]
 [PexUseType(typeof(B))]
@@ -208,7 +209,7 @@ Pokud tento atribut je připojena k [PexMethod](#pexmethod) (nebo [PexClass](#pe
 
 Následující test Určuje, že konstruktoru **zásobníku** může vyvolat **výjimka ArgumentOutOfRangeException**:
 
-```
+```csharp
 class Stack {
   int[] _elements;
   int _count;
@@ -223,7 +224,7 @@ class Stack {
 
 Filtr je připojen k z přípravku následujícím způsobem (ho lze také definovat na úrovni sestavení nebo testovací):
 
-```
+```csharp
 [PexMethod]
 [PexAllowedException(typeof(ArgumentOutOfRangeException))]
 class CtorTest(int capacity) {

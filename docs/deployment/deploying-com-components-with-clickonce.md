@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 740d72f0ec339ded8ec8b721bbc2b94d706f8da7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ab25276596358f7c0a8c1f90bd38e89686e3196c
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815870"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Nasazování komponent COM s ClickOnce
 Nasazení komponent COM starší verze tradičně bylo snadné. Součásti musí být globálně registrované a to může způsobit nežádoucí vedlejší účinky mezi překrývající se aplikace. Tato situace se obecně nejedná o problém v aplikacích rozhraní .NET Framework protože součásti jsou naprosto izolované aplikace nebo jsou kompatibilní vedle sebe. Visual Studio umožňuje nasadit izolované komponenty modelu COM v systému Windows XP nebo novější operační systém.  
@@ -69,7 +70,7 @@ Nasazení komponent COM starší verze tradičně bylo snadné. Součásti musí
   
 4.  V Class1.vb, přidejte následující kód po generovaný kód pro `New` metoda:  
   
-    ```  
+    ```vb  
     Public Sub SayHello()  
        MsgBox "Message from the VB6Hello COM component"  
     End Sub  
@@ -102,7 +103,7 @@ Nasazení komponent COM starší verze tradičně bylo snadné. Součásti musí
   
 8.  Dvakrát klikněte na tlačítko Přidat kód pro obslužnou rutinu a v souboru kódu, přidejte kód tak, aby obslužná rutina načte následujícím způsobem:  
   
-    ```  
+    ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
         Dim VbObj As New VB6Hello.Class1  
         VbObj.SayHello()  

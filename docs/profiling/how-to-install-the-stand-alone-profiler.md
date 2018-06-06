@@ -13,26 +13,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21a285c95e3649cc7aaa53995070091f0abea509
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3898f61987f1767dba57a63bfb3b5b753e8d37aa
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815610"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Postupy: Instalace samostatného profileru
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poskytuje příkazového řádku na základě samostatného profileru, která se může spustit bez instalace [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Tato situace nastane, když počítač není nebo nemůže mít nainstalované prostředí pro vývoj. Například byste neměli instalovat prostředí pro vývoj na webovém serveru produkční.  
   
 > [!NOTE]
->  Při použití samostatného profileru ke shromažďování dat výkonu pro ASP.NET Web, [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) nástroj řádku, se doporučuje namísto [VSPerfCmd](../profiling/vsperfcmd.md) nástroj.  
+>  Při použití samostatného profileru ke shromažďování dat výkonu pro webovou stránku ASP.NET [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) nástroj řádku, se doporučuje namísto [VSPerfCmd](../profiling/vsperfcmd.md) nástroj.  
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Instalace samostatného profileru  
   
-1.  Vyhledejte instalační program samostatné profilu (vs_profiler.exe) na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instalačním médiu v adresáři, který zahrnuje \Standalone profileru cestu a potom ho spusťte.  
+1.  Vyhledejte instalační program samostatné profilu (*vs_profiler.exe*) na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instalačním médiu v adresáři, který zahrnuje *\Standalone profileru* cestu a potom ho spusťte.  
   
-2.  Přidejte cesty pro vsintr.exe a msdis150.dll do systémové cesty.  
+2.  Přidejte cesty pro *vsintr.exe* a *msdis150.dll* do systémové cesty.  
   
     > [!NOTE]
-    >  Ve výchozí instalaci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vsinstr.exe a msdis150.dll se nacházejí v \Program Files\Visual Studio 10\Team nástroje Tools.  
+    >  Ve výchozí instalaci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *vsinstr.exe* a *msdis150.dll* jsou umístěné v *\Program Files\Visual nástrojů nástroje Studio 10\Team*.  
   
 3.  Na příkazovém řádku zadejte **vsinstr –**.  
   
@@ -46,13 +47,13 @@ ms.lasthandoff: 04/19/2018
      **spuštění % COMSPEC %**  
   
     > [!NOTE]
-    >  Podrobné pokyny o tom, jak nastavit balíček symbol serveru najdete v tématu [postupy: odkaz na informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+    >  Podrobné pokyny o tom, jak nastavit balíček symbol serveru najdete v tématu [postupy: odkaz na Windows symbolů informace](../profiling/how-to-reference-windows-symbol-information.md).  
   
 6.  Použití [vsperfreport –](../profiling/vsperfreport.md) nástroj k serializaci vaší symboly do souboru profilování dat (.vsp). Použití **vsperfreport – /summary:all /packsymbols** přepínače. Pokud nemáte symboly vložit v datovém souboru, ujistěte se, že máte nastavení proměnné prostředí _NT_SYMBOL_PATH.  
   
-## <a name="see-also"></a>Viz také  
- [Profilace z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+## <a name="see-also"></a>Viz také:  
+ [Profil z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [Návod: Profilace z příkazového řádku pomocí vzorkování](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
  [Návod: Profilace z příkazového řádku pomocí instrumentace](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
- [Postupy: referenční informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Postupy: odkaz na Windows symbolů informace](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

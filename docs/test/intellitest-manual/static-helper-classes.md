@@ -11,13 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e83d964cf4c17542f8741a03963f317e234bca01
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 59d52895b9eccd80427759fb9a3819be5ab86329
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815896"
 ---
-# <a name="static-helper-classes"></a>Statické pomocné třídy
+# <a name="static-helper-classes"></a>Třídy statických pomocných rutin
 
 Poskytuje sadu statickou pomocnou třídu, která lze použít při vytváření IntelliTest [parametrizovaných testů částí](test-generation.md#parameterized-unit-testing):
 
@@ -41,7 +42,7 @@ Pokud předpokládané podmínku nemá pro některé test vstup **PexAssumeFaile
 
 Nebude zvažte následující parametrizované test **j = 0**:
 
-```
+```csharp
 public void TestSomething(int i, int j) {
      PexAssume.AreNotEqual(j, 0);
      int k = i/j;
@@ -53,7 +54,7 @@ public void TestSomething(int i, int j) {
 
 Výše uvedený kód je téměř ekvivalentní:
 
-```
+```csharp
      if (j==0)
           return;
 ```
@@ -73,7 +74,7 @@ Pokud uplatňovaná podmínku nemá pro některé test vstup **PexAssertFailedEx
 
 Následující vyhodnotí, že je absolutní hodnotu celé kladné:
 
-```
+```csharp
 public void TestSomething(int i) {
      int j = Maths.Abs(i);
      PexAssert.IsTrue(j >= 0);
@@ -100,7 +101,7 @@ Statické třídy, která poskytuje pomocného vstupní hodnoty do testu, který
 
 * Jednoduché volání **PexChoose.Value** vygenerovat novou hodnotu:
 
-```
+```csharp
 public int Foo() {
     return PexChoose.Value<int>("foo");
 }
@@ -113,13 +114,13 @@ Statické třídy do protokolu pojmenovaných hodnot.
 
 Pokud jsou zde popsány IntelliTest kód, **PexObserve** se používá k zaznamenání počítaný hodnoty pomocí jejich vyjádření formátovaný řetězec. Hodnoty jsou přidruženy k jedinečné názvy.
 
-```
+```csharp
 PexObserve.Value<string>("result", result);
 ```
 
 **Příklad**
 
-```
+```csharp
 // product code
 public static class MathEx {
      public static int Square(int value) { return value * value; }
@@ -151,7 +152,7 @@ Za normálních okolností IntelliTest pokusí nepokrývají všechny cesty prov
 
 Tento příklad ukazuje implementaci **PexAssume.Arrays.ElementsAreNotNull** metoda. V metodě můžete ignorovat omezení na délce hodnota pole, aby se zabránilo IntelliTest pokusu o generování různé velikosti pole. Omezení se ignorují pouze sem. Pokud kód otestované pracuje odlišně pro různé pole délek, IntelliTest nelze generovat různých velikostí pole z omezení otestované kódu.
 
-```
+```csharp
 public static void AreElementsNotNull<T>(T[] value)
     where T : class
 {

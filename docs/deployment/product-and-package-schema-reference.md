@@ -27,11 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eed411e51b9e1b9e69d80a0c6187d7325d45ef7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: dc613a95f6c0051690e9371cd3c5c8e401df6b86
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815571"
 ---
 # <a name="product-and-package-schema-reference"></a>Referenční schéma balíčku a produktu
 A *souboru produktu* je manifestu XML, který popisuje všechny externí závislosti požadované [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. Příklady vnější závislosti [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] a Microsoft Data Access Components (MDAC). Soubor balíčku je podobná soubor produktu, ale se používá k instalaci součásti závislých na jazykové verzi závislosti, jako je například lokalizované sestavení, licenční smlouvy a dokumentaci.  
@@ -56,7 +57,7 @@ A *souboru produktu* je manifestu XML, který popisuje všechny externí závisl
 ## <a name="example"></a>Příklad  
  Následující příklad kódu ukazuje soubor dokončení produktu pro instalaci [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  

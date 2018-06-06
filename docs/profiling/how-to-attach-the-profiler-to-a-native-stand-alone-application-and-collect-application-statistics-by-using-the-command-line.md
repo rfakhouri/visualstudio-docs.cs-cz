@@ -11,10 +11,10 @@ manager: douge
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3a2e7e0a41660aa7410dac553337cc7e3fbc2483
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
+ms.lasthandoff: 06/06/2018
 ms.locfileid: "34765782"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Postupy: připojení profileru k nativní samostatné aplikaci a shromažďování statistik aplikace pomocí příkazového řádku

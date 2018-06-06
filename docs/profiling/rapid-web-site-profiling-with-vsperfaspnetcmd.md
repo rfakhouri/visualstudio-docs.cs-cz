@@ -12,15 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ebff923667f76c350f17a08196369b4354151d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9c30aebca3fc57912ac1a9bfc6fb16379dda24ed
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815555"
 ---
-# <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Pohotová profilace webových stránek pomocí VSPerfASPNETCmd
+# <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Rychlé profilování webových stránek pomocí VSPerfASPNETCmd
 
-**VSPerfASPNETCmd** nástroj pro příkazový řádek vám umožňuje snadno profil [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace. Ve srovnání s [VSPerfCmd](../profiling/vsperfcmd.md) nástroj pro příkazový řádek, jsou omezeny možnosti, musí být nastaveny žádné proměnné prostředí a není vyžadováno restartování počítače. Pomocí **VSPerfASPNETCmd** upřednostňovanou metodou pro profilace samostatných profileru. Další informace najdete v tématu [postupy: Instalace samostatného profileru](../profiling/how-to-install-the-stand-alone-profiler.md).
+**VSPerfASPNETCmd** nástroj příkazového řádku umožňuje snadno profil [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace. Ve srovnání s [VSPerfCmd](../profiling/vsperfcmd.md) nástroj pro příkazový řádek, jsou omezeny možnosti, musí být nastaveny žádné proměnné prostředí a není vyžadováno restartování počítače. Pomocí **VSPerfASPNETCmd** upřednostňovanou metodou pro profilace samostatných profileru. Další informace najdete v tématu [postupy: Instalace samostatného profileru](../profiling/how-to-install-the-stand-alone-profiler.md).
 
 > [!NOTE]
 > Funkce Rozšířené zabezpečení v systému Windows 8 a Windows Server 2012 vyžaduje významné změny ve způsobu, jakým Visual Studio profiler shromažďuje data na těchto platformách. Aplikace UWP také vyžadují nové techniky kolekce. V tématu [nástroje pro sledování výkonu v aplikacích pro Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -28,14 +29,14 @@ ms.lasthandoff: 04/19/2018
  V některých případech, například shromažďování dat souběžnosti nebo pozastavení a obnovení profily, pomocí **VSPerfCmd** je upřednostňovaná metoda profilování.
 
 > [!NOTE]
-> Nástroje příkazového řádku balíku nástrojů pro profilaci jsou umístěny v podadresáři \Team Tools\Performance Tools instalačního adresáře sady Visual Studio. V 64bitových počítačích použijte nástroj VSPerfASPNETCmd umístěný v adresáři 32bitové \Team Tools\Performance nástroje. Chcete-li použít nástroje příkazového řádku profileru, musí přidat cestu nástroje do proměnné prostředí PATH okna příkazového řádku nebo ho přidat do samotný příkaz. Další informace najdete v tématu [určení cesty k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+> Nástroje příkazového řádku nástroje profilace jsou umístěné v *\Team Tools\Performance nástroje* podadresáři instalačního adresáře nástroje Visual Studio. Na 64bitových počítačích, použít nástroj VSPerfASPNETCmd umístěný v 32bitovou verzi *\Team Tools\Performance nástroje* adresáře. Chcete-li použít nástroje příkazového řádku profileru, musí přidat cestu nástroje do proměnné prostředí PATH okna příkazového řádku nebo ho přidat do samotný příkaz. Další informace najdete v tématu [zadejte cestu k nástroje příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-## <a name="profiling-an-aspnet-application"></a>Profilace aplikací ASP.NET
+## <a name="profile-an-aspnet-application"></a>Profil aplikace ASP.NET
 
-Do profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace, zadejte jeden z příkazů popsané v následujících částech. Webový server je spuštěn a profileru začne shromažďovat data. Výkon aplikace a pak zavřete prohlížeč. Profilace zastavíte stisknutím klávesy Enter v okně příkazového řádku.
+Do profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace, zadejte jeden z příkazů popsané v následujících částech. Webový server je spuštěn a profileru začne shromažďovat data. Výkon aplikace a pak zavřete prohlížeč. Zastavit profilování, stiskněte **Enter** klíče v okně příkazového řádku.
 
 > [!NOTE]
-> Ve výchozím nastavení, nevrátí příkazovém řádku po **vsperfaspnetcmd** příkaz. Můžete použít **/nowait** možnost vynutit vrátit příkazového řádku. V tématu [pomocí možnosti/nowait](#UsingNoWait).
+> Ve výchozím nastavení, nevrátí příkazovém řádku po **vsperfaspnetcmd** příkaz. Můžete použít **/nowait** možnost vynutit vrátit příkazového řádku. V tématu [použít možnost/nowait](#UsingNoWait).
 
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>Ke shromažďování statistik aplikace pomocí metody vzorkování
  Vzorkování je výchozí metody profilace **VSPerfASPNETCmd** nástroje a není potřeba zadat na příkazovém řádku. Následující příkazový řádek shromažďuje statistiky aplikace ze zadané webové aplikace:
@@ -46,9 +47,9 @@ Do profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové
 
 Použijte následující příkazový řádek ke shromažďování podrobných dat časování z dynamicky kompilované [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace:
 
-**/ trace vsperfaspnetcmd***websiteUrl* 
+**/ trace vsperfaspnetcmd***websiteUrl*
 
-Pokud chcete profil soubory DLL staticky kompilované webové aplikace, musí instrumentace soubory pomocí [vsinstr –](../profiling/vsinstr.md) nástroj příkazového řádku. Příkaz/trace vsperfaspnetcmd bude obsahovat data z instrumentovaného souborů.
+Pokud chcete staticky profilu zkompilovat. *dll* souborů ve vaší webové aplikaci, musí instrumentace soubory pomocí [vsinstr –](../profiling/vsinstr.md) nástroj příkazového řádku. Příkaz/trace vsperfaspnetcmd bude obsahovat data z instrumentovaného souborů.
 
 ## <a name="to-collect-net-memory-data"></a>Ke shromažďování dat paměti .NET
 
@@ -101,5 +102,5 @@ Lze přidat kterýkoliv z následujících možností pro příkazy uvedené dř
 
 |Možnost|Popis|
 |------------|-----------------|
-|**/ Výstup:** `VspFile`|Ve výchozím nastavení, profilaci soubor dat (.vsp) se vytvoří v aktuálním adresáři s názvem souboru **PerformanceReport.vsp**. Pomocí možnosti Output můžete zadat jiné umístění, název souboru nebo obojí.|
-|**/ PackSymbols: vypnuto**|Ve výchozím nastavení vloží VsPerfASPNETCmd symboly (funkce a názvy parametrů atd.) v souboru .vsp. Vložení symboly můžete nastavit, profilaci datového souboru velké. Pokud budete mít přístup k soubory PDB, které obsahují symboly při analýze dat, použijte /packsymbols: vypnout možnost zakázat, vkládání symboly.|
+|**/ Výstup:** `VspFile`|Ve výchozím nastavení jsou data profilování (. *Vsp*) soubor je vytvořen v aktuálním adresáři s názvem souboru **PerformanceReport.vsp**. Pomocí možnosti Output můžete zadat jiné umístění, název souboru nebo obojí.|
+|**/ PackSymbols: vypnuto**|Ve výchozím nastavení, VsPerfASPNETCmd vloží symboly (a funkce a parametr názvy atd.) do. *vsp* souboru. Vložení symboly můžete nastavit, profilaci datového souboru velké. Pokud bude mít přístup ke. *pdb* soubory, které obsahují symboly při analýze dat, použijte /packsymbols: vypnout možnost zakázat, vkládání symboly.|
