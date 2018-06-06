@@ -1,5 +1,5 @@
 ---
-title: Programu zlepšování zkušeností zákazníků
+title: Program Zlepšování softwaru a služeb na základě zkušeností uživatelů
 description: Zjistěte, jak spravovat nastavení ochrany osobních údajů v sadě Visual Studio.
 ms.date: 05/21/2018
 ms.prod: visual-studio-dev15
@@ -10,15 +10,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57338d465710e608079bf289db4516de46a88277
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 8dbc83a2d3fe1b2f5bb32a6baaf336c0a6c46e7d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572631"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programu zlepšování zkušeností zákazníků v sadě Visual Studio
 
 Visual Studio zákazníka prostředí zlepšování Program (VSCEIP) usnadňuje společnosti Microsoft zlepšovat Visual Studio v čase. Tento program [shromažďuje informace o chybách](../ide/diagnostic-data-collection.md), hardwaru počítače a jak lidé použijte sadu Visual Studio, aniž by to ovlivnilo uživatelům v jejich úlohy v počítači. Shromažďované informace pomáhají společnosti Microsoft určit funkce, které ke zlepšení. Tento dokument popisuje, jak přidat nebo zrušit VSCEIP.
+
+[!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="opt-in-or-out"></a>OPT příchozí nebo odchozí
 
@@ -39,13 +42,13 @@ VSCEIP je zapnutá ve výchozím nastavení. Můžete ho vypnout, nebo znovu, zp
 
 Pokud instalujete [nástroje sestavení pro Visual Studio](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017), je nutné aktualizovat registr a nakonfigurujte VSCEIP. Podnikoví zákazníci můžete vytvořit zásady skupiny pro aktivování nebo zrušení VSCEIP nastavením zásad týkajících se registru.
 
-[!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
-
 Příslušný klíč registru a nastavení jsou následující:
 
-Klíč = **HKEY_CURRENT_USER\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+Na 64bitové verze OS, klíč = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**  
+Na 32bitového operačního systému, klíč = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**  
+Pokud je povoleno zásad skupiny, klíč = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**  
 
-Položka = OptIn
+Položka = **OptIn**
 
 Hodnota = (DWORD)
 - **0** je používání (vypněte VSCEIP)
@@ -56,7 +59,7 @@ Hodnota = (DWORD)
 
 Další informace o informacích shromažďovaných, zpracovávaných a přenášených v rámci VSCEIP, najdete v článku [prohlášení o ochraně osobních údajů Microsoft](https://privacy.microsoft.com/privacystatement).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Diagnostické údaje shromážděné pomocí sady Visual Studio](diagnostic-data-collection.md)
 * [Kontaktujte nás](../ide/talk-to-us.md)

@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e78013c97bf7f2cf3bcd60f642f51e9da01b25d
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572342"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Řešení potíží s výkonem nástroje
 Při použití nástroje pro profilaci setkat s jedním z následujících problémů:  
@@ -24,7 +25,7 @@ Při použití nástroje pro profilaci setkat s jedním z následujících probl
 -   [Zobrazení a sestavách výkonu zobrazení čísel pro názvy – funkce](#NoSymbols)  
   
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>Žádná data se shromažďují pomocí nástrojů pro profilaci  
- Po profilu aplikace, data profilování (. *Vsp*) nevytváří soubor a v okně výstupu nebo v příkazovém okně se zobrazí následující upozornění:  
+ Po profilu aplikace, data profilování (. *Vsp*) soubor není vytvořen a zobrazí se následující upozornění v **výstup** okno nebo v příkazovém okně:  
   
  PRF0025: Nebyla shromážděna žádná data.  
   
@@ -37,7 +38,7 @@ Při použití nástroje pro profilaci setkat s jedním z následujících probl
 ## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>Zobrazení a sestavách výkonu zobrazení čísel pro názvy – funkce  
  Po profil aplikace zobrazí čísla namísto názvů funkce v zobrazení a sestavy.  
   
- Tento problém je způsoben modulu nástrojích pro profilaci analýzy, není schopen najít *PDB* soubory, které obsahují informace o symbolu, mapy zdrojového kódu informace, tyto názvy funkcí a čísla řádků do kompilované souboru. Ve výchozím nastavení, kompilátor vytvoří *PDB* souboru při vytváření souboru aplikace. Odkaz na místní adresáře *PDB* kompilované aplikace je uložený soubor. Analytický modul hledá v adresáři odkazované pro *PDB* souboru a potom v souboru aktuálně obsahující souboru aplikace. Pokud *PDB* soubor nebyl nalezen, modul analysis posuny funkce používá namísto názvů funkce.  
+ Tento problém je způsoben modulu nástrojích pro profilaci analýzy, není schopen najít. *pdb* soubory, které obsahují informace o symbolu, mapy zdrojového kódu informace, tyto názvy funkcí a čísla řádků do kompilované souboru. Ve výchozím nastavení, kompilátor vytvoří. *pdb* souboru při vytváření souboru aplikace. Odkaz na místní adresáře. *pdb* kompilované aplikace je uložený soubor. Analytický modul hledá v adresáři odkazované pro. *pdb* souboru a potom v souboru aktuálně obsahující souboru aplikace. Pokud. *pdb* soubor nebyl nalezen, modul analysis posuny funkce používá namísto názvů funkce.  
   
  Tento problém mohli vyřešit v jednom ze dvou způsobů:  
   
@@ -46,4 +47,4 @@ Při použití nástroje pro profilaci setkat s jedním z následujících probl
 -   Vložení informací o symbolu v profilaci data (. *Vsp*) souboru. Další informace najdete v tématu [uložení informací o symbolech s výkonem datové soubory](../profiling/saving-symbol-information-with-performance-data-files.md).  
   
 > [!NOTE]
->  Analytický modul vyžaduje, aby. *pdb* souboru se stejnou verzi jako soubor kompilované aplikace. A *PDB* soubor z sestavení starší nebo novější souboru aplikace nebude fungovat.
+>  Analytický modul vyžaduje, aby. *pdb* souboru se stejnou verzi jako soubor kompilované aplikace. A. *pdb* soubor z sestavení starší nebo novější souboru aplikace nebude fungovat.

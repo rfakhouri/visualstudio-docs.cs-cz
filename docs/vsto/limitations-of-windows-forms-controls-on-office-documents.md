@@ -1,5 +1,5 @@
 ---
-title: Omezení systému Windows Forms – ovládací prvky v dokumentech Office | Microsoft Docs
+title: Omezení ovládacích prvků Windows Forms v dokumentech Office
 ms.date: 02/02/2017
 ms.technology: office-development
 ms.topic: conceptual
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1136d799bb6bee56f0589c798a7c61fe0879d556
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 104b8b3449b2ffb689caf66d5c180817b633f83e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572956"
 ---
-# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Omezení ovládacích prvků Windows Forms v dokumentech Office
+# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Omezení ovládacích prvků Windows Forms v dokumentech Office
 
 Existují určité rozdíly mezi ovládacími prvky Windows Forms, které jsou přidány do dokumentů aplikace Microsoft Office Word nebo sešitů aplikace Microsoft Office Excel a ovládací prvky Windows Forms, které jsou přidány do Windows Forms. Například když přidáte <xref:Microsoft.Office.Tools.Word.Controls.Button> řídit k dokumentu, vlastnosti, jako <xref:System.Windows.Forms.Control.Dock>, <xref:System.Windows.Forms.Control.Anchor>, a <xref:System.Windows.Forms.Control.TabIndex> nefungují tak, jak by se dalo očekávat.
 
@@ -83,7 +84,7 @@ Ovládací prvky Windows Forms obecně mít stejné chování na dokument Office
 |Změna velikosti ovládacího prvku|Pokud změníte velikost ovládacího prvku na dokumentu pomocí jedné z osmi úchyty, nový ovládací prvek dimenze se neprojeví v **vlastnosti** okno, dokud je znovu vybrány ovládacího prvku.|
 |Chování ovládacího prvku|Ovládací prvky v listu aplikace Excel může nepředvídatelné chování, když okno listu je rozděleno. Například přístup k <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> na listu může být k dispozici pouze v jednom ze systému windows.|
 |Názvy ovládacího prvku|Vyhrazená slova k ovládacím prvkům název nelze použít. Například, pokud přidáte <xref:Microsoft.Office.Tools.Excel.Controls.Button> do listu a změňte název **systému**, při sestavování projektu dojít k chybám.|
-|Přidání ovládacích prvků prostřednictvím kódu programu|Přidání ovládacího prvku do dokumentu za běhu nepoužívejte konstruktoru ovládacího prvku. Místo toho použijte pomocné metody poskytované [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Například použít <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> metodu za účelem přidání tlačítka do listu. Pokud chcete přidat ovládací prvek, který nepodporuje tyto metody helper, můžete použít metodu AddControl. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).|
+|Přidání ovládacích prvků prostřednictvím kódu programu|Přidání ovládacího prvku do dokumentu za běhu nepoužívejte konstruktoru ovládacího prvku. Místo toho použijte pomocné metody poskytované [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Například použít <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> metodu za účelem přidání tlačítka do listu. Pokud chcete přidat ovládací prvek, který nepodporuje tyto metody helper, můžete použít `AddControl` metoda. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).|
 |Kopírování ovládacích prvků|Pokud zkopírujete ovládacího prvku Windows Forms a vložte jej do dokumentu za běhu, prázdný kontejner ovládacího prvku ActiveX je vložen do dokumentu. Ovládací prvek Windows Forms nezobrazí v novém umístění a kódu na pozadí ovládacího prvku původní není zkopírovat do kontejneru ovládacího prvku ActiveX.|
 
 ## <a name="limitations-in-document-level-projects"></a>Omezení v projekty na úrovni dokumentu
@@ -95,7 +96,7 @@ Některá omezení používání ovládacích prvků Windows Forms v dokumentech
 Některé ovládací prvky Windows Forms se odeberou z **sada nástrojů** když je otevřen v návrháři Visual Studio sešitu aplikace Excel nebo dokument aplikace Word. Toto je z důvodu technická omezení nebo proto, že funkce je již k dispozici v rámci Word či Excel. Projekty aplikace Excel a Word podporovat všechny ovládací prvky Windows Forms a další součásti, které se zobrazují v **sada nástrojů** když dokument má právě fokus a jiných ovládacích prvků můžete také přidat do listu nebo dokumentu.
 
 > [!NOTE]
-> Všechny ovládací prvky jsou odebrány z **sada nástrojů** když je dokument chráněný. Informace o ochraně dokumentů najdete v tématu [ochrana dokumentů v řešeních na úrovni dokumentu](../vsto/document-protection-in-document-level-solutions.md).
+> Všechny ovládací prvky jsou odebrány z **sada nástrojů** když je dokument chráněný. Informace o ochraně dokumentů najdete v tématu [dokumentu ochrany v řešeních na úrovni dokumentu](../vsto/document-protection-in-document-level-solutions.md).
 
 > [!NOTE]
 > Ovládací prvky třetích stran, musí mít <xref:System.Runtime.InteropServices.ComVisibleAttribute> atribut nastaven na **true** aby bylo možné použít v řešení Office.
@@ -182,9 +183,9 @@ Následující ovládací prvky a součásti nejsou k dispozici v **sada nástro
 
 Pokud vytvoříte projekt úrovni dokumentů Office, která používá stávající dokument aplikace Word nebo sešitu aplikace Excel, která obsahuje ovládací prvky ActiveX, není ztraceny; funkci ovládacích prvků ActiveX neexistuje však žádná podpora pro přidání nových ovládacích prvků ActiveX do dokumentů z Visual Studia. Například, pokud má tlačítko z dokumentu aplikace Word **řízení** sada nástrojů, který spouští Visual Basic for Applications (VBA) – makro, se bude nadále spouštět makro po dokumentu používá v projektech Office. Doporučujeme však odebrat ovládací prvky ActiveX a makra VBA a nahraďte ovládací prvky Windows Forms a spravovaného kódu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Ovládací prvky v dokumentech Office](../vsto/controls-on-office-documents.md)
-- [Přehled ovládacích prvků modelu Windows Forms v dokumentech Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Ovládací prvky v dokumentech Office](../vsto/controls-on-office-documents.md)
+- [Ovládací prvky Windows Forms na přehled dokumenty sady Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Postupy: Přidání ovládacích prvků Windows Forms do dokumentů Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

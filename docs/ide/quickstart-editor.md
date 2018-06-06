@@ -11,11 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 44eb805a50e7518aa346b35a8aaba5202244ec76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8231b36f2fe44a04e16b420eb13bfcc4eb30c696
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573281"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Rychlý úvod: Použijte editor kódu
 
@@ -23,7 +24,7 @@ V této 10 minut Úvod do editoru přidáme kód do souboru se podívat na někt
 
 Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránky instalaci zdarma.
 
-Tento rychlý start předpokládá, že jste již obeznámeni s programovací jazyk. Pokud si nejste, doporučujeme nejprve vypadat v některém z programovací elementy QuickStart, jako například vytvoření webové aplikace s [Python](../ide/quickstart-python.md) nebo [C#](../ide/tutorial-csharp-aspnet-core.md), nebo vytvořte konzolovou aplikaci s [jazyka Visual Basic](../ide/quickstart-visual-basic-console.md) nebo [C++](../ide/quickstart-cpp.md).
+Tento rychlý start předpokládá, že jste již obeznámeni s programovací jazyk. Pokud si nejste, doporučujeme nejprve vypadat v některém z programovací elementy QuickStart, jako například vytvoření webové aplikace s [Python](../ide/quickstart-python.md) nebo [C#](../ide/tutorial-csharp-aspnet-core.md), nebo vytvořte konzolovou aplikaci s [jazyka Visual Basic](../ide/quickstart-visual-basic-console.md) nebo [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Vytvoření nového souboru kódu
 
@@ -35,7 +36,7 @@ Spuštění vytvoření nového souboru a přidáním nějaký kód do ní. Vši
 
    Nový soubor se otevře v editoru s kostru třídy jazyka C#.
 
-## <a name="use-code-snippets"></a>Použití fragmenty kódu
+## <a name="use-code-snippets"></a>Používání fragmentů kódu
 
 Visual Studio poskytuje fragmenty užitečné kódu, které vám pomůže rychle a snadno vygenerovat běžně používá bloky kódu. [Fragmenty kódu](../ide/code-snippets.md) jsou k dispozici pro různé programovací jazyky, včetně C#, Visual Basic a C++. Přidejme jazyka C# `void Main` fragment kódu do našich souboru.
 
@@ -156,7 +157,7 @@ Nikdo poprvé získá kód doprava a jednu z akcí, které chcete změnit je ná
 
 Po dokončení tento rychlý start pro editoru Visual Studio! Dále můžete vyzkoušet některé z dalších Quickstarts pro Visual Studio IDE, vyhledejte v další způsoby, jak [přejděte kód](../ide/navigating-code.md), nebo najdete pod odkazy na další informace o funkcích jsme se podívali na. V opačném případě radostí kódování!
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Rychlý úvod: První pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)
 - [Rychlý úvod: Přizpůsobení Visual Studio IDE a editor](../ide/quickstart-personalize-the-ide.md)

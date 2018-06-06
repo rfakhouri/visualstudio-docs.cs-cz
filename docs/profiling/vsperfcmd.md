@@ -16,20 +16,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a1770fd1b6c9fef29592d1a4e1c85875513058a5
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573138"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
-**VSPerfCmd.exe** nástroj se používá ke spuštění a zastavení shromažďování dat výkonu. Používá následující syntaxi:  
+*VSPerfCmd.exe* nástroj se používá ke spuštění a zastavení shromažďování dat výkonu. Používá následující syntaxi:  
   
 ```cmd  
 VSPerfCmd [/U] [/options]  
 ```  
   
- Následující tabulky popisují **VSPerfCmd.exe** nástroj možnosti.  
+ Následující tabulky popisují *VSPerfCmd.exe* nástroj možnosti.  
   
 |Možnost|Popis|  
 |------------|-----------------|  
@@ -43,7 +44,7 @@ VSPerfCmd [/U] [/options]
 |[QueryCounters](../profiling/querycounters.md)|Zobrazí seznam čítačů platný procesoru pro aktuální počítač.|  
 |[WinCounter](../profiling/wincounter.md) **:** *cesta*|Určuje událost čítače výkonu systému Windows mají být součástí značky data profilu. Použít pouze s **spustit**.|  
 |[Pro automatické označování](../profiling/automark.md) **:** *n*|Určuje časový interval (v milisekundách) mezi události shromažďování dat čítačů výkonu systému Windows. Použití s **WinCounter**.|  
-|[Události](../profiling/events-vsperfcmd.md) **:** `option`|Ovládací prvky kolekce zadané události trasování událostí pro Windows (ETW). Trasování událostí pro Windows data jsou shromažďována do .itl souboru, který není profilování soubor dat (.vsp).|  
+|[Události](../profiling/events-vsperfcmd.md) **:** `option`|Ovládací prvky kolekce zadané události trasování událostí pro Windows (ETW). Trasování událostí pro Windows se údaje pro. *itl* soubor, který není data profilování (. *Vsp*) souboru.|  
 |[Status](../profiling/status.md)|Zobrazuje stav profileru, informace o procesy, které jsou aktuálně profilovaný a účty, které mají oprávnění k řízení profileru.|  
 |[Vypnutí](../profiling/shutdown.md)[**:**`n`]|Zavře profilování datový soubor a vypne profileru.|  
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Obnoví shromažďování dat po volání **VSPerfCmdGlobalOff**.|  
@@ -62,8 +63,8 @@ VSPerfCmd [/U] [/options]
 |[Spusťte](../profiling/launch.md) **:** *spustitelný soubor*|Zadaná aplikace spustí a začne profilace.|  
 |[Argumentů](../profiling/args.md) **:** *argumenty*|Určuje argumenty příkazového řádku mají být předána do spuštěného aplikace.|  
 |[Console](../profiling/console.md)|Zadaný příkaz spustí v novém okně příkazového řádku.|  
-|[Připojit](../profiling/attach.md) **:** *PID*[**, *** PID*]|Zahájí profilace zadaný procesy. Procesy lze identifikovat podle id procesu nebo podle názvu procesu.|  
-|[Odpojení](../profiling/detach.md)[**: *** PID*[,*PID*]]|Zastaví profilace zadaný procesy. Procesy lze identifikovat podle id procesu nebo podle názvu procesu. Pokud není zadaný žádný proces, profilace je zastaveno pro všechny procesy.|  
+|[Připojit](../profiling/attach.md) **:** *PID*[**, *** PID*]|Zahájí profilace zadaný procesy. Procesy lze identifikovat podle ID procesu nebo podle názvu procesu.|  
+|[Odpojení](../profiling/detach.md)[**: *** PID*[,*PID*]]|Zastaví profilace zadaný procesy. Procesy lze identifikovat podle ID procesu nebo podle názvu procesu. Pokud není zadaný žádný proces, profilace je zastaveno pro všechny procesy.|  
 |[Globální Katalog](../profiling/gc-vsperfcmd.md)[**:**{**přidělení**`&#124;`**životnost**}]|Shromažďuje data paměti .NET přidělení a objekt životního cyklu. Použít pouze **VSPerfCmdLaunch** možnost.|  
   
 ### <a name="sample-interval-options"></a>Možnosti interval vzorku  
@@ -90,7 +91,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="vsperfcmd-driver"></a>/ Driver VSPerfCmd  
  **/Driver VSPerfCmd** možnost je nyní zastaralá. Použití **VsPerfCmdAdmin** možnosti pro tuto funkci.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Vsinstr –](../profiling/vsinstr.md)   
  [Vsperfmon –](../profiling/vsperfmon.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

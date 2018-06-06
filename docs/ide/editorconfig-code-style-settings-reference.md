@@ -18,11 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: d4e45283bd65281ea1abc6bad8317379e8341e3c
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: caedbf46ce3d56d57a22541f1ddc042d8e41eb48
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572644"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kódování nastavení konvence pro EditorConfig rozhraní .NET
 
@@ -74,6 +75,7 @@ V následujícím seznamu jsou povolená jazyk pravidla konvence:
         - DotNet\_styl\_vyžadují\_accessibility_modifiers
         - csharp\_preferred\_modifier_order
         - visual\_basic\_preferred\_modifier_order
+        - DotNet\_styl\_jen pro čtení\_pole
     - [Předvolby úrovni výrazu](#expression_level)
         - DotNet\_styl\_object_initializer
         - DotNet\_styl\_collection_initializer
@@ -238,7 +240,7 @@ Následující tabulka uvádí názvy pravidel, ID pravidla, použít programova
 
 | Název pravidla | ID pravidla | Použitelné jazyky | Výchozí Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
-| dotnet_style_predefined_type_for_locals_ parameters_members | IDE0012 a IDE0014 | C# a Visual Basic | hodnotu true: žádné |
+| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 a IDE0014 | C# a Visual Basic | hodnotu true: žádné |
 | dotnet_style_predefined_type_for_member_access | IDE0013 a IDE0015 | C# a Visual Basic | hodnotu true: žádné |
 
 **DotNet\_styl\_předdefinované\_typ\_pro\_místní hodnoty –\_parameters_members**
@@ -298,7 +300,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 #### <a name="normalize_modifiers"></a>Předvolby – modifikátor
 
-Pravidla stylu v této části problém modifikátor předvolby včetně nutnosti modifikátory dostupnosti a určení požadované modifikátor pořadí řazení.
+Pravidla stylu v této části se týkají modifikátor předvolby, včetně nutnosti modifikátory dostupnosti, zadávat pořadí řazení požadované modifikátor a nutnosti modifikátor jen pro čtení.
 
 Následující tabulka uvádí názvy pravidel, pravidlo ID, použít programovacích jazyků, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
@@ -307,6 +309,7 @@ Následující tabulka uvádí názvy pravidel, pravidlo ID, použít programova
 | dotnet_style_require_ accessibility_modifiers | IDE0040 | C# a Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | veřejné, privátní, chráněné, interní, statické, extern, nové, virtuální, abstraktní a uzavřené, přepsání, jen pro čtení, unsafe, volatile, asynchronní: žádné | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial, výchozí, privátní, chráněný, veřejné, přítele, NotOverridable, přepisovatelné, MustOverride, přetížení, přepsání, MustInherit, NotInheritable, statické, sdílené, stínů, jen pro čtení, WriteOnly, dimenze, Const, WithEvents, rozšíření, zužující, vlastní, Asynchronní: žádné | 15.5 |
+| dotnet_style_readonly_field | IDE0044 | C# a Visual Basic | hodnotu true: návrh | 15.7 |
 
 **DotNet\_styl\_vyžadují\_accessibility_modifiers**
 
@@ -315,7 +318,7 @@ Toto pravidlo nepřijímá **true** nebo **false** hodnoty; místo toho přijím
 | Hodnota | Popis |
 | ----- |:----------- |
 | Vždy | Modifikátory dostupnosti zadat raději |
-| pro\_bez\_interface_members | Dáváte přednost modifikátory dostupnosti deklarovat s výjimkou veřejné rozhraní členy. To nebude aktuálně lišit od **vždy** a bude fungovat jako budoucí kontroly pravopisu systému pro Pokud C# přidá výchozí metody rozhraní. |
+| pro\_bez\_interface_members | Dáváte přednost modifikátory dostupnosti deklarovat s výjimkou veřejné rozhraní členy. Je to stejné nastavení jako **vždy** a byla přidaná pro budoucí kontrolu, pokud C# přidá výchozí metody rozhraní. |
 | Nikdy | Není dáváte přednost modifikátory dostupnosti zadat |
 
 Příklady kódu:
@@ -364,12 +367,35 @@ Public Class MyClass
 End Class
 ```
 
+**dotnet_style_readonly_field**
+
+- Když je toto pravidlo nastavená na **true**, dáváte přednost, že by měl být označen pole s `readonly` (C#) nebo `ReadOnly` (Visual Basic) Pokud jsou jen přiřazena vložené nebo uvnitř konstruktor.
+- Když je toto pravidlo nastavená na **false**, zadejte není nastavena žádná předvolba v tom, jestli by měl být označen pole s `readonly` (C#) nebo `ReadOnly` (Visual Basic).
+
+Příklady kódu:
+
+```csharp
+// dotnet_style_readonly_field = true
+class MyClass
+{
+    private readonly int _daysInYear = 365;
+}
+```
+
+```vb
+' dotnet_style_readonly_field = true
+Public Class MyClass
+    Private ReadOnly daysInYear As Int = 365
+End Class
+```
+
 Tato pravidla mohou být zobrazeny v *.editorconfig* následujícím způsobem:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_require_accessibility_modifiers = always:suggestion
+dotnet_style_readonly_field = true:warning
 
 # CSharp code style settings:
 [*.cs]
@@ -1652,7 +1678,7 @@ csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Rychlé akce](../ide/quick-actions.md)
 - [Zásady vytváření názvů .NET pro EditorConfig](../ide/editorconfig-naming-conventions.md)

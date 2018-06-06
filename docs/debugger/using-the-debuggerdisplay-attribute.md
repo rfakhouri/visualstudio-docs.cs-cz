@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a41f0843b33e1f73d9a2449fe954d8673350fc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573242"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Používání atributu DebuggerDisplay
 [DebuggerDisplayAttribute – třída](/dotnet/api/system.diagnostics.debuggerdisplayattribute) ovládací prvky zobrazení objektu, vlastnost nebo pole v proměnnými ladicího programu. Tento atribut lze použít pro typy, delegáti, vlastnosti, pole a sestavení.  
@@ -87,6 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
+", Nq" příponu informuje vyhodnocovací filtr výrazů k odebrání uvozovky, při zobrazení konečná hodnota (nq = žádné uvozovky). 
   
 ## <a name="example"></a>Příklad  
  Následující příklad kódu ukazuje, jak používat `DebuggerDisplay`, společně s `DebuggerBrowseable` a `DebuggerTypeProxy`. Při zobrazení v okně proměnné ladicí program, jako **sledovat** okně vyvolá rozšíření, která vypadá takto:  

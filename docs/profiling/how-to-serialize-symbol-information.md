@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c59395eb74f2c79c6a7d7e1b9c56f420e9705a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a86c7171b781f85ae4679209519267adcadcc090
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573307"
 ---
-# <a name="how-to-serialize-symbol-information"></a>Postupy: Serializace informací o symbolu
-Znaky, které musí mít k analýze vaše aplikace může serializovat. Symbol serializace přidá do souboru .vsp symboly. Přidáním informací o symbolu k souboru .vsp ostatní můžete analyzovat Sestava výkonu bez nutnosti přístupu k původní symboly. Pokud nejsou serializované symboly, musíte mít soubory PDB k analýze souboru .vsp původní instrumentovaného .exe a.  
+# <a name="how-to-serialize-symbol-information"></a>Postupy: serializace informací o symbolu
+Znaky, které musí mít k analýze vaše aplikace může serializovat. Symbol serializace přidá symbolů do. *vsp* souboru. Přidáním symbol informace na. *vsp* souboru, ostatní analyzovat Sestava výkonu bez nutnosti přístupu k původní symboly. Pokud nejsou serializované symboly, musíte mít původní instrumentovány. *exe* a. *pdb* soubory k analýze. *Vsp* souboru.  
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Chcete-li automaticky serializace informací o symbolu  
   
@@ -34,7 +35,7 @@ Znaky, které musí mít k analýze vaše aplikace může serializovat. Symbol s
   
 3.  V části **obecné nastavení**, vyberte **automaticky serializace informací o symbolu**.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   
- [Postupy: referenční informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Postupy: odkaz na Windows symbolů informace](../profiling/how-to-reference-windows-symbol-information.md)   
  [Postupy: uložení analyzovali souborů sestav](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556)

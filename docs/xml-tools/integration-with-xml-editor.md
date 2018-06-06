@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b2e2b7a9e6511faaa1941d65f6b328a07b10f79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ae7595121fcefa36998a88b53aae466d3a726cb
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573320"
 ---
 # <a name="integration-with-xml-editor"></a>Integrace s editoru XML
 
@@ -22,9 +23,9 @@ Návrhář schématu XML je integrovaná s editoru XML. Pokud upravíte soubor X
 
 -   V editoru XML, klikněte pravým tlačítkem na uzel a vyberte **zobrazit v Průzkumníku schématu XML**.
 
--   V zobrazení grafu a Explorer schématu XML, klikněte dvakrát na uzlu, nebo klikněte pravým tlačítkem na uzel a vyberte **kód zobrazení**. V zobrazení obsahu Model, klikněte pravým tlačítkem na uzel a vyberte **kód zobrazení**.
+-   V zobrazení grafu a **Explorer schématu XML**, dvakrát klikněte na uzel, nebo klikněte pravým tlačítkem na uzel a vyberte **kód zobrazení**. V zobrazení obsahu Model, klikněte pravým tlačítkem na uzel a vyberte **kód zobrazení**.
 
-Následující snímek obrazovky ukazuje, že schéma XML otevřít v Průzkumníkovi schématu XML. Explorer schématu XML zobrazí schéma nastavit ve stromovém zobrazení. Editor souborů XML zobrazí textového zobrazení uzlu, který je aktuálně aktivní v Průzkumníku schématu XML.
+Následující snímek obrazovky znázorňuje schéma XML otevřít v **Explorer schématu XML**. **Explorer schématu XML** zobrazí schéma nastavit ve stromovém zobrazení. Editor souborů XML zobrazí textového zobrazení uzlu, který je v současné době aktivní **Explorer schématu XML**.
 
 ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
 
@@ -32,6 +33,6 @@ Někdy je užitečné kódu v editoru XML a grafický Návrhář vedle sebe. Chc
 
 ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Průzkumník schémat XML](../xml-tools/xml-schema-explorer.md)

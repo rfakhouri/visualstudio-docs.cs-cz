@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5febfd1055c10eaa39d27e411aba5cf442a97c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf3c41c16f904077f884bc6cffcdf0ba97233a1a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572784"
 ---
 # <a name="schema-cache"></a>Mezipaměti schématu
 
-Nabízí XML Editor umístěný v adresáři %InstallRoot%\Xml\Schemas mezipaměti schématu. Mezipaměti schématu je globální pro všechny uživatele ve vašem počítači a obsahuje standardní schémat XML, které se používají pro ověřování dokumentu IntelliSense a XML.
+Nabízí XML Editor nachází v mezipaměti schématu *%InstallRoot%\Xml\Schemas* adresáře. Mezipaměti schématu je globální pro všechny uživatele ve vašem počítači a obsahuje standardní schémat XML, které se používají pro ověřování dokumentu IntelliSense a XML.
 
 Editor souborů XML můžete také získat schémata umístěný v řešení, schémata zadaný v **schémata** pole dokumentu **vlastnosti** okno a schémata identifikovaný `xsi:schemaLocation` a `xsi:noNamespaceSchemaLocation`atributy.
 
@@ -26,32 +27,32 @@ Následující tabulka popisuje schémat, které jsou nainstalované pomocí edi
 
 |Název souboru|Popis|
 |--------------|-----------------|
-|CATALOG.xsd|Schéma pro soubory katalogu schématu XML editor. Informace o katalogů schémat najdete níže.|
-|DotNetConfig.xsd|Schéma pro soubory Web.Config "http://schemas.microsoft.com/.NETConfiguration/v2.0".|
-|MSBuild.xsd|Schéma pro zpřístupnění souborů nástroje MSBuild, "http://schemas.microsoft.com/developer/msbuild/2003".|
-|MSDATA.xsd|Schéma pro poznámky XSD přidal <xref:System.Data.DataSet> třída, "urn: schémata-microsoft-com: XML-msdata".|
-|msxsl.xsd|Schéma pro rozšíření blok skriptu, Microsoft XSLT, urn: schémata-microsoft-com:xslt.|
-|SnippetFormat.xsd|Schéma pro soubory XML fragment kódu. Příklady najdete v tématu % InstallDir%\VC#\Expansions.|
-|Soap1.1.xsd|Schéma pro Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.|
-|Soap1.2.xsd|Schéma pro Simple Object Access Protocol 1.2.|
-|SiteMapSchema.xsd|Schéma pro soubor XML mapy webu ASP.NET, "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0".|
-|WSDL.xsd|Schéma pro Web Service Description Language http://schemas.xmlsoap.org/wsdl/.|
-|xenc.xsd|Schéma XML – šifrování http://www.w3.org/2000/09/xmldsig#.|
-|XHTML.xsd|Schéma pro XHTML http://www.w3.org/1999/xhtml.|
-|XLINK.xsd|Schéma pro XLink1.0, http://www.w3.org/1999/xlink.|
-|XML.xsd|XSD, popisující atributy XML: Space a XML: lang, http://www.w3.org/XML/1998/namespace.|
-|xmlsig.xsd|Schéma XML – digitální podpisy, http://www.w3.org/2000/09/xmldsig#.|
-|xsdschema.xsd|Schéma XSD, popisující http://www.w3.org/2001/XMLSchema.|
-|XSLT.xsd|Schéma XML transformuje, http://www.w3.org/1999/XSL/Transform.|
+|*CATALOG.xsd*|Schéma pro soubory katalogu schématu XML editor. Informace o katalogů schémat najdete níže.|
+|*DotNetConfig.xsd*|Schéma pro soubory Web.Config "http://schemas.microsoft.com/.NETConfiguration/v2.0".|
+|*MSBuild.xsd*|Schéma pro zpřístupnění souborů nástroje MSBuild, "http://schemas.microsoft.com/developer/msbuild/2003".|
+|*MSDATA.xsd*|Schéma pro poznámky XSD přidal <xref:System.Data.DataSet> třída, "urn: schémata-microsoft-com: XML-msdata".|
+|*msxsl.xsd*|Schéma pro rozšíření blok skriptu, Microsoft XSLT, urn: schémata-microsoft-com:xslt.|
+|*SnippetFormat.xsd*|Schéma pro soubory XML fragment kódu. Příklady najdete v tématu *%InstallDir%\VC#\Expansions*.|
+|*Soap1.1.xsd*|Schéma pro Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.|
+|*Soap1.2.xsd*|Schéma pro Simple Object Access Protocol 1.2.|
+|*SiteMapSchema.xsd*|Schéma pro soubor XML mapy webu ASP.NET, "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0".|
+|*WSDL.xsd*|Schéma pro Web Service Description Language http://schemas.xmlsoap.org/wsdl/.|
+|*xenc.xsd*|Schéma XML – šifrování http://www.w3.org/2000/09/xmldsig#.|
+|*XHTML.xsd*|Schéma pro XHTML http://www.w3.org/1999/xhtml.|
+|*XLINK.xsd*|Schéma pro XLink1.0, http://www.w3.org/1999/xlink.|
+|*XML.xsd*|XSD, popisující atributy XML: Space a XML: lang, http://www.w3.org/XML/1998/namespace.|
+|*xmlsig.xsd*|Schéma XML – digitální podpisy, http://www.w3.org/2000/09/xmldsig#.|
+|*xsdschema.xsd*|Schéma XSD, popisující http://www.w3.org/2001/XMLSchema.|
+|*XSLT.xsd*|Schéma XML transformuje, http://www.w3.org/1999/XSL/Transform.|
 
-## <a name="updating-schemas-in-the-cache"></a>Aktualizace schémat v mezipaměti
+## <a name="update-schemas-in-the-cache"></a>Aktualizovat schémata v mezipaměti
  Editor načte adresář mezipaměti schématu, když je načíst balíček editoru XML a sleduje změny při spuštění. Pokud schéma byly přidány, je automaticky načten do indexu v paměti známými schématy. Pokud schéma byla odebrána, automaticky se odebere z indexu v paměti. Pokud se schéma aktualizovalo, se automaticky zruší platnost mezipaměti v paměti Toto schéma.
 
 > [!NOTE]
 > Vzhledem k tomu, že adresář mezipaměti schématu globální do počítače, byste měli přidávat jenom zde schémat, které jsou standardní a užitečné všechny projektů sady Visual Studio, které mohou být vytvořeny ve vašem počítači.
 
 
- Editor souborů XML také podporuje libovolný počet schématu katalogu soubory v adresáři mezipaměti schématu. Katalogů schémat může ukazovat na jiné umístění pro schémat, které chcete, aby editoru seznámit. Soubor catalog.xsd definuje formát souboru katalogu a je součástí adresář mezipaměti schématu. Výchozí katalog je soubor catalog.xml a obsahuje odkazy na další schémata v InstallDir %. Toto je vzorkování catalog.xml souboru:
+ Editor souborů XML také podporuje libovolný počet schématu katalogu soubory v adresáři mezipaměti schématu. Katalogů schémat může ukazovat na jiné umístění pro schémat, které chcete, aby editoru seznámit. *Catalog.xsd* soubor definuje formát souboru katalogu a je zahrnutý v adresáři mezipaměti schématu. *Catalog.xml* soubor katalogu výchozí a obsahuje odkazy na další schémata v *InstallDir %*. Toto je vzorky *catalog.xml* souboru:
 
 ```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">
@@ -92,7 +93,7 @@ Může zahrnovat dokumentu katalogu `Catalog` element, který odkazuje na jiné 
 ```
 
 ## <a name="localized-schemas"></a>Lokalizované schémata
- V mnoha případech catalog.xml soubor neobsahuje položky pro lokalizované schémat. Můžete přidat další záznamy catalog.xml soubor, který přejděte do adresáře lokalizované schématu.
+ V mnoha případech *catalog.xml* soubor neobsahuje položky pro lokalizované schémat. Můžete přidat další položky k *catalog.xml* soubor, který přejděte do adresáře lokalizované schématu.
 
  V následujícím příkladu a nové `Schema` byl vytvořen element, který používá proměnnou % LCID % tak, aby odkazoval na lokalizované schéma.
 
@@ -120,7 +121,7 @@ Můžete přizpůsobit umístění mezipaměti schématu pomocí **různé** str
 
 ### <a name="to-add-another-directory-of-common-schemas"></a>Chcete-li přidat jiného adresáře běžné schémat.
 
-1.  Upravte soubor catalog.xml v adresáři mezipaměti schématu XML editor.
+1.  Upravit *catalog.xml* soubor v adresáři mezipaměti schématu XML editor.
 
 2.  Přidejte nový `<Catalog href="..."/>` element, který odkazuje na adresář, další schémat.
 
@@ -128,6 +129,6 @@ Můžete přizpůsobit umístění mezipaměti schématu pomocí **různé** str
 
      Katalog je automaticky znovu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Editor XML](../xml-tools/xml-editor.md)

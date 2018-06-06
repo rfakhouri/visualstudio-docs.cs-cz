@@ -20,28 +20,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5273baec024da8eb339e8f3d12541fc6e98e97c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ea0b0f59731f711dc32258aea31358626825f5d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573086"
 ---
 # <a name="namedrange-control"></a>NamedRange – ovládací prvek
   <xref:Microsoft.Office.Tools.Excel.NamedRange> Řízení je rozsah, který se má jedinečný název, zpřístupní události a mohou být vázány na data. Další informace najdete v tématu [přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="creating-the-control"></a>Vytvoření ovládacího prvku  
+## <a name="create-the-control"></a>Vytvoření ovládacího prvku  
  Můžete přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacích prvků na list aplikace Microsoft Office Excel v době návrhu nebo za běhu v projekty na úrovni dokumentu.  
   
- Můžete přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacích prvků na list za běhu v doplňku VSTO. Další informace najdete v tématu [postupy: Přidání ovládacích prvků NamedRange do listů](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
+ Můžete přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacích prvků na list za běhu v doplňku VSTO. Další informace najdete v tématu [postupy: Přidání NamedRange ovládací prvky do listů](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
   
 > [!NOTE]  
 >  Ve výchozím nastavení, nejsou trvalé dynamicky vytvořený pojmenované oblasti v listu jako umisťování ovládacích prvků při uzavření listu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvky může obsahovat jenom na konkrétní listy rozsahů. <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvky nemohou mít relativních názvů, které platí pro všechny listy a nesmí se skládat z rozsahů, které jsou rozmístěny dva nebo víc listů v sešitech (3D rozsahy).  
   
-## <a name="binding-data-to-the-control"></a>Vazba dat k ovládacímu prvku  
+## <a name="bind-data-to-the-control"></a>Vázání dat k ovládacímu prvku  
  Pojmenované oblasti zdají být vhodným kandidátem pro rozšířené datové vazby, protože může mít velké množství buněk; rozsah je však pouze o sadu buněk, které nelze mapovat snadno na konkrétní sloupce z datové sady. Proto <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvky podporují jenom jednoduché datové vazby. <xref:Microsoft.Office.Tools.Excel.ListObject> Řízení lze použít pro rozšířené datové vazby. Další informace najdete v tématu [ListObject – ovládací prvek](../vsto/listobject-control.md).  
   
  <xref:Microsoft.Office.Tools.Excel.NamedRange> Může být vázán k zdroje dat pomocí <xref:System.Windows.Forms.Control.DataBindings%2A> vlastnosti. Výchozí vlastnosti vazby dat z <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek je <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>.  
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="formatting"></a>Formátování  
  Formátování, které lze použít pro <xref:Microsoft.Office.Interop.Excel.Range> lze použít pro <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku. To zahrnuje ohraničení, písma, číselném formátu a styly.  
   
-## <a name="renaming-the-control"></a>Přejmenování ovládacího prvku  
+## <a name="rename-the-control"></a>Přejmenování ovládacího prvku  
  Když přidáte <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku do listu z **sada nástrojů**, Visual Studio automaticky vygeneruje název ovládacího prvku. Můžete změnit název v **vlastnosti** okno.  
   
 ## <a name="events"></a>Události  
@@ -73,17 +74,17 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)   
  [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md)   
- [Vazba dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Vázání dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Ovládací prvky v dokumentech Office](../vsto/controls-on-office-documents.md)   
  [Přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Postupy: Přidání ovládacích prvků NamedRange do listů](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Postupy: Změna velikosti ovládacích prvků NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
- [Vazba dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Návod: Programové ošetření událostí ovládacího prvku NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
+ [Vázání dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Návod: Program ošetření událostí ovládacího prvku NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

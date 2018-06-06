@@ -24,13 +24,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 61d9b988f0e0898f0dfe3843456b711f9f39b7c5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c7bd0f38d413fbd3d809773a124699e0e883287d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572163"
 ---
-# <a name="office-and-sharepoint-development-in-visual-studio"></a>Vývoj pro Office a SharePoint ve Visual Studiu
+# <a name="office-and-sharepoint-development-in-visual-studio"></a>Vývoj pro Office a SharePoint v sadě Visual Studio
   Můžete rozšířit vytvoření jednoduché aplikace Microsoft Office a SharePoint nebo doplňku, uživatelé stáhnout z [Office úložiště](https://store.office.com/) nebo organizační katalogu nebo vytvořením řešení založené na rozhraní .NET Framework, kterou můžou uživatelé instalovat na počítač.  
   
  V tomto tématu:  
@@ -49,8 +50,6 @@ ms.lasthandoff: 05/22/2018
  Tyto doplňky mají velmi malé pracovníkům ve srovnání s doplňků VSTO a řešení, a můžete je vytvořit pomocí téměř jakoukoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.  Abyste mohli začít, použijte Office Developer Tools v sadě Visual Studio nebo lightweight webový nástroj označován kódovým Napa Office 365 vývojovými nástroji, které umožňuje vytváření projektů, napsat kód a spusťte doplňky v prohlížeči.  
   
  ![Aplikace pro systém Office a SharePoint konceptuálního modelu](../vsto/media/officeandsharepointapps2015.png "aplikací pro systém Office a SharePoint konceptuálního modelu")  
-  
-
   
 ### <a name="build-an-office-add-in"></a>Sestavení doplňku Office  
  K rozšíření funkčnosti sady Office, sestavení doplňku Office. Je v podstatě webovou stránku, který je hostován v aplikaci Office Excel, Word, Outlook a PowerPoint. Aplikace můžete přidat funkce na dokumenty, listy, e-mailové zprávy, události, prezentace a projekty.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 05/22/2018
 |--------|---------|  
 |Další informace o doplňcích služby SharePoint a následně vytvořit jednu.|[Doplňky služby SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
 |Porovnání doplňky pro službu SharePoint s tradiční řešení služby SharePoint.|[SharePoint doplňky ve srovnání s řešení služby SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Vyberte, zda chcete vytvořit doplněk SharePoint nebo řešení služby SharePoint.|[Při rozhodování o tom mezi doplňky SharePoint a řešení služby SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
+|Vyberte, zda chcete vytvořit doplněk SharePoint nebo řešení služby SharePoint.|[Rozhodněte, mezi doplňky SharePoint a řešení služby SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
   
 ##  <a name="Add-ins"></a> Vytvoření doplňku VSTO  
  Vytvořte doplňku VSTO pro Office 2007 nebo Office 2010 nebo rozšířit Office 2013 a Office 2016 dále, než je možné pomocí doplňků Office. Doplňků VSTO spustit pouze na ploše. Uživatelé mají k instalaci doplňků VSTO, tak, aby obvykle obtížnější k nasazení a podporu.  Ale tohoto doplňku VSTO dá integrovat přesněji Office. Například ho přidejte karet a ovládacích prvků na pásu karet Office a provést pokročilé automatizace například slučování dokumenty nebo úprava grafy. Můžete využít rozhraní .NET Framework a interakci s objekty Office pomocí jazyka C# a Visual Basic.  

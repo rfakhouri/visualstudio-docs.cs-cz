@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d417b5126989736c6126ae7c80bfcbc86f336a09
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b03f6112ebf44a89da3b4d5cbf6f7ff23f54b9c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571981"
 ---
-# <a name="optional-parameters-in-office-solutions"></a>Volitelné parametry v řešeních pro systém Office
+# <a name="optional-parameters-in-office-solutions"></a>Volitelné parametry v řešeních pro systém Office
   Mnoho z metod v objektové modely z aplikace Microsoft Office přijmout volitelné parametry. Pokud používáte Visual Basic pro vývoj řešení Office v sadě Visual Studio, nemáte předat hodnotu pro volitelné parametry, protože se automaticky použijí výchozí hodnoty pro každý parametr chybí. Ve většině případů můžete vypustit volitelné parametry v projektech Visual C#. Však nemůžete vynechat volitelné **ref** parametry `ThisDocument` třídy v projekty na úrovni dokumentu aplikace Word.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstrefGeneralWord#1](../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb#1)]
  [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]  
   
-## <a name="using-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Pomocí volitelné parametry metod v ThisDocument – třída v jazyce Visual C# projekty na úrovni dokumentu pro Word  
+## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Volitelné parametry použití metod ve třídě ThisDocument v jazyce Visual C# projekty na úrovni dokumentu pro Word  
  Model objektů aplikace Word obsahuje mnoho způsobů s volitelnými **ref** parametry, které přijímají <xref:System.Object> hodnoty. Však nemůžete vynechat volitelné **ref** parametry metody generované `ThisDocument` třídy v jazyce Visual C# projekty na úrovni dokumentu ve Wordu. Visual C# umožňuje vynechat volitelné **ref** parametry jenom pro metody rozhraní, není třídy. Například následující příklad kódu nelze kompilovat, protože nemůžete vynechat volitelné **ref** parametry <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> metodu `ThisDocument` třídy.  
   
  [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]  
@@ -68,10 +69,10 @@ ms.lasthandoff: 04/16/2018
   
  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- Další informace o parametrech hodnota a odkaz na typ najdete v tématu [předávání argumentů podle hodnoty a podle Reference &#40;jazyka Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (pro Visual Basic) a [předávání parametry &#40;C&#35; Průvodce programováním&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+ Další informace o parametrech hodnota a odkaz na typ najdete v tématu [předání argumentů podle hodnoty a podle reference &#40;jazyka Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (pro Visual Basic) a [předat parametry &#40;C&#35; Průvodce programováním&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)   
- [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)  
+ [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)  
   
   

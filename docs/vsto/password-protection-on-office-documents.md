@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5d85f1dc0aa54da22b02259aea372f2ad6dd42ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a278677b40f8da703c7f3287851c2f82fb95a21c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572709"
 ---
-# <a name="password-protection-on-office-documents"></a>Ochrana dokumentů Office heslem
+# <a name="password-protection-on-office-documents"></a>Ochrana heslem v dokumentech Office
   Je možné nastavit heslo na dokumenty aplikace Microsoft Office Word a sešitů aplikace Microsoft Office Excel tak, aby se nedá otevřít někdo, kdo není znát heslo. Tato možnost se nazývá **heslo při otevření**.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -39,10 +40,10 @@ ms.lasthandoff: 04/16/2018
   
  Při prvním otevření dokument aplikace Word v sadě Visual Studio, který má **heslo při otevření** povoleno, Word vás vyzve k zadání hesla. Po úspěšném zadání hesla, **heslo při otevření** se odebere z dokumentu a otevření dokumentu se už nevyžadují heslo. Pokud chcete dokument ve vašem řešení se vyžaduje heslo dříve, než se dá otevřít, musíte povolit **heslo při otevření** po posledním buildu a před nasazením řešení.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Ochrana dokumentů v řešeních na úrovni dokumentu](../vsto/document-protection-in-document-level-solutions.md)   
- [Přehled rozšíření spravovaného kódu a Information Rights Management](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Postupy: povolení kódu spuštění na pozadí dokumentů s omezenými oprávněními](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [Navrhování a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Přehled rozšíření spravovaného kódu a Správa přístupových práv](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [Postupy: povolení kód pro spuštění pozadí dokumentů s omezenými oprávněními](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

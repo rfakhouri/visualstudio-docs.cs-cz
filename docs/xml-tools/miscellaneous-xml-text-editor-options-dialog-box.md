@@ -1,5 +1,5 @@
 ---
-title: Různé, XML, textový Editor, dialogové okno Možnosti
+title: Různé, XML, Textový editor, dialogové okno Možnosti
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dfc0a4e3841f30c2be81b60b2e86d9fd29bb801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bd6ee70f99f3b82505d210ab95f8359b5c7f90c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571767"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Různé, XML, textový Editor, dialogové okno Možnosti
 
@@ -68,7 +69,7 @@ Toto dialogové okno umožňuje změnit nastavení automatického dokončování
 
  Určuje umístění mezipaměti schématu. Na tlačítko Procházet (**...** ) otevře **Procházet adresář** dialogové okno na aktuální umístění mezipaměti schématu. Můžete vybrat jiný adresář, nebo můžete vybrat složku v dialogovém okně klikněte pravým tlačítkem a zvolte **otevřete** vidět co je v adresáři.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Vlastnosti dokumentu XML, okno Vlastnosti](../xml-tools/xml-document-properties-properties-window.md)
+- [Vlastnosti dokumentu XML, vlastnosti – okno](../xml-tools/xml-document-properties-properties-window.md)
 - [Součásti editoru XML](../xml-tools/xml-editor-components.md)

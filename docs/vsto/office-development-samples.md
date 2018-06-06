@@ -15,20 +15,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fadffd33582e97c3c0ad714f535afa0da52e1693
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 475da9720d0d29456fca4f06046b3f3778ec22f7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571414"
 ---
-# <a name="office-development-samples"></a>Ukázky vývoje pro systém Office
+# <a name="office-development-samples"></a>Ukázky vývoje pro Office
   Visual Studio obsahuje ukázkové aplikace, které ukazují, jak vytvářet řešení systému Office pomocí nástroje Microsoft Office developer tools. Kód v tyto ukázky ukazuje syntaxi, struktura a techniky sloužící k vytvoření řešení pro systém Office.  
   
  Nejaktuálnější ukázky naleznete v části [ukázky vývojáře MSDN: Další prostřednictvím kódu](http://go.microsoft.com/fwlink/?LinkID=248199) na webu společnosti Microsoft.  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
-## <a name="office-development-samples"></a>Ukázky vývoje pro systém Office  
+## <a name="office-development-samples"></a>Ukázky vývoje pro Office  
   
 |Ukázka|Popis|  
 |------------|-----------------|  
@@ -42,8 +43,8 @@ ms.lasthandoff: 04/16/2018
 |Ukázka správce uživatelského rozhraní|Demonstruje postup vytvoření přizpůsobení pásu karet, vlastního podokna úloh a oblasti Vlastní formuláře pro aplikaci Outlook implementací rozhraní rozšíření v doplňku VSTO. Každá instance pásu karet, podokna úloh a oblasti formuláře může správně vzájemně komunikovat.|  
 |VBA a ukázkové interoperabilita VSTO|Ukazuje, jak volat metodu přizpůsobení na úrovni dokumentu pro Excel z jazyka Visual Basic pro aplikace (VBA) kód do sešitu.<br /><br /> Tato ukázka je dostupná jenom online.|  
   
-## <a name="see-also"></a>Viz také  
- [Ukázky vývojáře MSDN: Učili ukázky kódu](http://go.microsoft.com/fwlink/?LinkID=248199)   
- [Běžné úlohy při programování pro systém Office](../vsto/common-tasks-in-office-programming.md)  
+## <a name="see-also"></a>Viz také:  
+ [Ukázky vývojáře MSDN: učili ukázky kódu](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [Běžné úlohy při programování pro Office](../vsto/common-tasks-in-office-programming.md)  
   
   

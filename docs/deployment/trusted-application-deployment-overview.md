@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03fff714a8940a4722cb9def8077ce49f366a565
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e7bc06e106a6b42f2225668edb928e6fef7e349b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572238"
 ---
 # <a name="trusted-application-deployment-overview"></a>Přehled nasazení důvěryhodných aplikací
 Toto téma obsahuje přehled o tom, jak nasadit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, které pomocí technologie nasazení důvěryhodných aplikací mít zvýšená oprávnění.  
@@ -86,7 +87,7 @@ Toto téma obsahuje přehled o tom, jak nasadit [!INCLUDE[ndptecclick](../deploy
  Nasazení důvěryhodné aplikace je specifická pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]a lze použít pouze s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
   
 ### <a name="sign-the-deployment"></a>Podepsat nasazení  
- Po získání certifikátu, musíte ho použít k podepsání vašeho nasazení. Pokud nasazujete aplikaci pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Průvodce publikováním, průvodce bude automaticky vygenerovat zkušební certifikát pro vás Pokud nezadali jste certifikát sami. Můžete také [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okno Návrhář projektu, ale k poskytnutí certifikátu Certifikační autoritou.  Informace v tématu [postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním] (http://msdn.microsoft.com/library/31kztyey\(v=vs.110\).  
+ Po získání certifikátu, musíte ho použít k podepsání vašeho nasazení. Pokud nasazujete aplikaci pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Průvodce publikováním, průvodce bude automaticky vygenerovat zkušební certifikát pro vás Pokud nezadali jste certifikát sami. Můžete také [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okno Návrhář projektu, ale k poskytnutí certifikátu Certifikační autoritou.  Viz také [postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 > [!CAUTION]
 >  Nedoporučujeme, že aplikace nasadit s testovacím certifikátem.  

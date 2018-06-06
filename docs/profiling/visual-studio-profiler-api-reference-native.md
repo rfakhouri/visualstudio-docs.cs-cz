@@ -13,17 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53c8caa101b51a9d26d555787e710408cf315a0e
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ba2590c17a41d200f0a8dd3c38c7c9ae8c8a85cc
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572095"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio profiler referenční dokumentace rozhraní API (nativní)
-Rozhraní API profileru Visual Studio umožňují k programovému řízení množství shromažďovaných dat a vložení časové razítko a profil značky během vytváření profilů. Použití nativních rozhraní API, můžete zahrnout soubor hlaviček VSPerf.h a přidat VSPerf.lib ve vašem projektu.  
+Visual Studio profiler rozhraní API umožňují programově řízení množství shromažďovaných dat a vložení časové razítko a profil značky během vytváření profilů. Použití nativních rozhraní API, zahrnete *VSPerf.h* záhlaví souboru a přidejte *VSPerf.lib* ve vašem projektu.  
   
 > [!NOTE]
->  Ve výchozím nastavení VSPerf.h a VSPerf.lib se nacházejí ve složce s názvem PerfSDK. \<jednotky >: \Program Files\Microsoft Visual Studio 14.0\Team nástroje Tools\PerfSDK adresáře, např.  
+>  Ve výchozím nastavení *VSPerf.h* a *VSPerf.lib* jsou umístěny ve složce s názvem *PerfSDK*. *\<jednotky >: \Program Files\Microsoft Visual Studio 14.0\Team nástroje Tools\PerfSDK* adresář, např.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  
@@ -44,6 +45,6 @@ Rozhraní API profileru Visual Studio umožňují k programovému řízení mno�
   
  [PROFILE_CURRENTID](../profiling/profile-currentid.md)  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Nástroje pro rozhraní API pro profilaci](../profiling/profiling-tools-apis.md)   
  [Návod: Použití rozhraní API profileru](../profiling/walkthrough-using-profiler-apis.md)

@@ -12,11 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e595392f92c99f6f73d2a9d999356641c14b096d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 62e51a5a03011874acc723eaf159e3f7130d1340
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573255"
 ---
 # <a name="project-and-item-templates"></a>Šablony projektů a položek
 
@@ -46,14 +47,10 @@ Když jsou tyto soubory do komprimované *.zip* souboru a put ve správné slož
 
 Další informace o složkách šablony najdete v tématu [postupy: hledání a organizace šablon](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="starter-kits"></a>startovní sady
-
-Startovní sady jsou zdokonalené šablony, které lze veřejně sdílet s ostatními členy komunity. Startovní sady zahrnují ukázky kódů, dokumentace a dalším prostředkům pomoci uživatelům s další nové nástroje a programovací techniky při sestavování užitečné a reálného aplikace. Základní obsah a postupy pro Startovní sady jsou stejné jako šablony. Další informace najdete v tématu [postupy: vytváření Startovních sad](../ide/how-to-create-starter-kits.md).
-
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: vytváření šablon projektu](../ide/how-to-create-project-templates.md)
 - [Postupy: vytváření šablon položek](../ide/how-to-create-item-templates.md)
 - [Parametry šablony](../ide/template-parameters.md)
-- [Přizpůsobení šablon](../ide/customizing-project-and-item-templates.md)
+- [Přizpůsobení šablony](../ide/customizing-project-and-item-templates.md)
 - [Balíčky NuGet ve šablony sady Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

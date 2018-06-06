@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5911dfcdf2cc7e235dc1ad5ab78aaf290d89d5e5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 88a9e225539a843ddba1850ae5919579ac197081
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573203"
 ---
 # <a name="vsinstr"></a>VSInstr
 Vsinstr – nástroj slouží k instrumentace binárních souborů. Je možné pomocí následující syntaxe:  
@@ -43,9 +44,9 @@ VSInstr [/U] filename [/options]
 |**Vyloučení** `:funcspec`|Určuje funkce specifikace chcete vyloučit z instrumentace podle sondy. Je užitečná při profilace vložení testu ve funkci způsobí, že nepředvídatelným nebo nežádoucí výsledky.<br /><br /> Nepoužívejte **vyloučit** a **zahrnout** možnosti, které odkazují na funkce ve stejném binárního souboru.<br /><br /> Můžete zadat několik specifikace funkce samostatné **vyloučit** možnosti.<br /><br /> `funcspec` je definované jako:<br /><br /> [obor názvů\<separator1 >] [třída\<separator2 >] – funkce<br /><br /> \<separator1 > je `::` pro nativní kód a `.` pro spravovaný kód.<br /><br /> \<separator2 > je vždy `::`<br /><br /> **Vyloučit** jsou podporovány pro pokrytí kódu.<br /><br /> Zástupný znak \* je podporována. Chcete-li například vyloučit všechny funkce v oboru názvů používají:<br /><br /> MyNamespace::\*<br /><br /> Můžete použít **vsinstr – /DumpFuncs** seznam dokončení názvy funkcí v zadané binárního souboru.|  
 |**Zahrnout** `:funcspec`|Určuje funkce specifikace v binární účelem instrumentace s testy paměti. Všechny funkce v binární soubory nejsou instrumentovány.<br /><br /> Můžete zadat několik specifikace funkce samostatné **zahrnout** možnosti.<br /><br /> Nepoužívejte **zahrnout** a **vyloučit** možnosti, které odkazují na funkce ve stejném binárního souboru.<br /><br /> **Zahrnout** není podporovaný s pokrytí kódu.<br /><br /> `funcspec` je definované jako:<br /><br /> [obor názvů\<separator1 >] [třída\<separator2 >] – funkce<br /><br /> \<separator1 > je `::` pro nativní kód a `.` pro spravovaný kód.<br /><br /> \<separator2 > je vždy `::`<br /><br /> Zástupný znak \* je podporována. Chcete-li například zahrnout všechny funkce v oboru názvů používají:<br /><br /> MyNamespace::\*<br /><br /> Můžete použít **vsinstr – /DumpFuncs** seznam dokončení názvy funkcí v zadané binárního souboru.|  
 |**DumpFuncs**|Obsahuje seznam funkcí v rámci zadanou bitovou kopii. Neprobíhá žádná instrumentace.|  
-|**ExcludeSmallFuncs**|Vyloučí malé funkce, které jsou krátkých funkcí, které neprovádějte žádné volání funkcí, z instrumentace. **ExcludeSmallFuncs** poskytuje možnost pro menší nároky na instrumentace se proto vylepšené instrumentace rychlostí.<br /><br /> Vyloučení malé funkce taky snižuje velikost souboru .vsp a čas potřebný pro analýzu.|  
+|**ExcludeSmallFuncs**|Vyloučí malé funkce, které jsou krátkých funkcí, které neprovádějte žádné volání funkcí, z instrumentace. **ExcludeSmallFuncs** poskytuje možnost pro menší nároky na instrumentace se proto vylepšené instrumentace rychlostí.<br /><br /> Vyloučení malé funkcí také snižuje. *vsp* souboru velikost a čas potřebný pro analýzu.|  
 |**Označit:**{**před**`&#124;`**po**`&#124;`**horní**`&#124;`**dolní**}`,funcname,markid`|Vloží značku profilu (identifikátor používaný k oddělení dat v sestavách), můžete použít k identifikaci počáteční nebo koncový rozsahu dat v souboru .vsp sestavy.<br /><br /> **Před** – bezprostředně před vstupem funkce cíl.<br /><br /> **Po** – ihned po ukončení funkce cíl.<br /><br /> **Horní** – bezprostředně po zadání cílové funkce.<br /><br /> **Dolní** – bezprostředně před každou vrátit ve funkci cíl.<br /><br /> `funcname` -Název funkce cíl<br /><br /> `Markid` -Kladné celé číslo (long) chcete použít jako identifikátor značky profilu.|  
-|**Pokrytí**|Provede pokrytí instrumentace. Dá se dá použít jenom s následující možnosti: **podrobné**, **OutputPath**, **vyloučit**, a **Logfile**...|  
+|**Pokrytí**|Provede pokrytí instrumentace. Dá použít jenom s následující možnosti: **podrobné**, **OutputPath**, **vyloučit**, a **Logfile**...|  
 |**Verbose**|**Podrobné**možnost se používá k zobrazení podrobných informací o procesu instrumentace.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|Potlačit všechny nebo konkrétní varování.<br /><br /> `Message Number` -počet upozornění. Pokud `Message Number` je tento parametr vynechán, jsou potlačeny všechny výstrahy.<br /><br /> Další informace najdete v tématu [upozornění VSInstr](../profiling/vsinstr-warnings.md).|  
 |**Ovládací prvek** `:{` **vláken** `&#124;` **proces** `&#124;` **globální** `}`|Určuje úroveň profilování následující shromažďování dat vsinstr – řízení možností:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Pozastavit**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Vlákno** -určuje funkce řízení kolekce dat úrovni přístup z více vláken. Profilace je spustit nebo zastavit pouze pro aktuální vlákno. Profilování stav jiná vlákna nemá vliv. Výchozí hodnota je přístup z více vláken.<br /><br /> **Proces** -určuje funkce ovládacího prvku kolekce profilování data úrovni procesu. Profilace spuštění nebo zastavení pro všechna vlákna v aktuálním procesu. Profilování stav jiné procesy nemá vliv.<br /><br /> **Globální** -určuje funkce řízení kolekce dat (mezi procesy) globální úrovni.<br /><br /> Pokud nezadáte úroveň profilování dojde k chybě.|  
@@ -56,7 +57,7 @@ VSInstr [/U] filename [/options]
 |**SuspendOnly:**{**před**`&#124;`**po**`&#124;`**horní**`&#124;`**dolní**}`,funcname`|Zastaví shromažďování dat během spuštění profilování. Rozhraní API SuspendProfile vloží do zadaného umístění.<br /><br /> **Před** – bezprostředně před vstupem funkce cíl.<br /><br /> **Po** – ihned po ukončení funkce cíl.<br /><br /> **Horní** – bezprostředně po zadání cílové funkce.<br /><br /> **Dolní** – bezprostředně před každou vrátit ve funkci cíl.<br /><br /> `funcname` -název funkce cíl.<br /><br /> Pokud cílový funkce obsahuje StartProfile funkce, funkce SuspendProfile vložena před ním.|  
 |**ResumeOnly:**{**před**`&#124;`**po**`&#124;`**horní**`&#124;`**dolní**}`,funcname`|Začíná nebo obnoví shromažďování dat během spuštění profilování.<br /><br /> Zpravidla se používá ke spuštění profilování po **SuspendOnly** možnost byla zastavena profilace. Rozhraní API ResumeProfile vloží do zadaného umístění.<br /><br /> **Před** – bezprostředně před vstupem funkce cíl.<br /><br /> **Po** – ihned po ukončení funkce cíl.<br /><br /> **Horní** – bezprostředně po zadání cílové funkce.<br /><br /> **Dolní** – bezprostředně před každou vrátit ve funkci cíl.<br /><br /> `funcname` -název funkce cíl.<br /><br /> Pokud cílový funkce obsahuje StopProfile funkce, funkce ResumeProfile vložena za ním.|  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Vsperfmon –](../profiling/vsperfmon.md)   
  [Vsperfcmd –](../profiling/vsperfcmd.md)   
  [Vsperfreport –](../profiling/vsperfreport.md)   

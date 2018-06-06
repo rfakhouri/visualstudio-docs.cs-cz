@@ -1,7 +1,7 @@
 ---
 title: Odkaz na okno prostředí Python
 description: Údaje na každé kartě, které se zobrazují v okně prostředí Python v sadě Visual Studio.
-ms.date: 05/22/2018
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eaf64d0d7bde7b63359ba341a693a51051da6fc3
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: d4adc1ac472bb05affa547d795690dc7143655fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572121"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Odkaz na prostředí Python okno karty
 
@@ -95,7 +96,9 @@ V obou případech můžete přizpůsobit přidáním argumenty do vyhledávací
 
 Instalace balíčku vytvoří podsložky v rámci v prostředí `Lib` složku v systému souborů. Například pokud máte Python 3.6, které se instaluje v `c:\Python36`, balíčky jsou nainstalovány v `c:\Python36\Lib`; Pokud máte nainstalovaný v Anaconda3 `c:\Program Files\Anaconda3` pak balíčky jsou nainstalovány v `c:\Program Files\Anaconda3\Lib`.
 
-V takovém případě protože prostředí je umístěný v oblasti chráněného systému souborů, `c:\Program Files`, musíte spustit Visual Studio `pip install` zvýšenými tak, aby ji k vytvoření balíčku podsložky. Pokud se vyžaduje zvýšení oprávnění, sada Visual Studio zobrazí řádku "oprávnění správce může být nutné nainstalovat, aktualizovat nebo odebrat balíčky pro toto prostředí":
+### <a name="granting-administrator-privileges-for-package-install"></a>Udělení oprávnění správce pro balíček nainstalovat
+
+Při instalaci balíčků do prostředí, které se nachází v chráněná oblast systému souborů, jako například `c:\Program Files\Anaconda3\Lib`, musíte spustit Visual Studio `pip install` zvýšenými tak, aby ji k vytvoření balíčku podsložky. Pokud se vyžaduje zvýšení oprávnění, sada Visual Studio zobrazí řádku "oprávnění správce může být nutné nainstalovat, aktualizovat nebo odebrat balíčky pro toto prostředí":
 
 ![Výzva ke zvýšení oprávnění pro instalaci balíčku](media/environments-pip-elevate.png)
 
@@ -104,6 +107,18 @@ V takovém případě protože prostředí je umístěný v oblasti chráněnéh
 Výběr **vždy zvýšení oprávnění při instalaci nebo odebrání balíčků** dialogu zabraňuje zobrazování pro prostředí. Chcete-li se znovu zobrazí dialogové okno, přejděte na **nástroje > Možnosti > Python Tools > Obecné** a kliknutím na tlačítko, **resetovat všechny trvale skrytá dialogová okna**.
 
 V tom, že stejné možnosti kartě, můžete také vybrat **vždy spustit jako správce pip** o potlačení pro všechna prostředí. V tématu [možnosti - karta Obecné](python-support-options-and-settings-in-visual-studio.md#general-options).
+
+### <a name="security-restrictions-with-older-versions-of-python"></a>Omezení zabezpečení se staršími verzemi jazyka Python
+
+Při použití 2.6 Python, 3.1 a 3.2, Visual Studio zobrazí toto upozornění, "z důvodu zabezpečení omezení, instalace z Internetu, nemusí fungovat v této verzi jazyka Python":
+
+![Zpráva o pip nainstalovat omezení s starší verzi jazyka Python](media/environments-old-version-restriction.png)
+
+Z důvodu pro upozornění je, že se tyto starší verze jazyka Python, `pip install` neobsahuje podporu pro zabezpečení TLS (Transport Layer) 1.2, který je vyžadován pro stahování balíčků ve zdroji balíčků, pypi.org. Vlastní sestavení Python můžou podporovat protokol TLS 1.2 v takovém případě `pip install` může fungovat.
+
+Je možné stáhnout odpovídající `get-pip.py` pro balíček z [bootstrap.pypa.io](https://bootstrap.pypa.io/), je nutné ručně stáhnout balíček z [pypi.org](https://pypi.org/)a potom nainstalovat balíček z tuto místní kopii.
+
+Doporučení, ale je jednoduše po upgradu na Python 2.7 nebo 3.3 +, ve kterém se nezobrazí v případě upozornění.
 
 ## <a name="intellisense-tab"></a>Karta IntelliSense
 
@@ -118,7 +133,7 @@ Když zjistí nového prostředí sady Visual Studio (nebo je přidat jeden), au
 
 Knihovny, pro které nebyla kompilována data jsou označené **!**; Pokud prostředí s databáze není kompletní, **!** také se zobrazí vedle sebe v seznamu hlavní prostředí.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Správa prostředí Python v sadě Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Výběr interpretu pro projekt](selecting-a-python-environment-for-a-project.md)

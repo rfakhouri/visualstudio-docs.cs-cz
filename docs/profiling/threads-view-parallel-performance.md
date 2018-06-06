@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e63e208d0442b50d30ffd9e286dd92de4bb17610
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573164"
 ---
 # <a name="threads-view-parallel-performance"></a>Zobrazení vláken (paralelní výkon)
 **Zobrazení vláken** je nejvíce bohaté a podrobné zobrazení v Concurrency Visualizer (zvolte **analyzovat** > **vizualizér souběžnosti** spuštění Vizualizér souběžnosti). Pomocí tohoto zobrazení, můžete zjistit, jestli jsou vláken provádění nebo blokování z důvodu synchronizace, vstupně-výstupních operací nebo z jiného důvodu.  
@@ -147,5 +148,5 @@ Zobrazení vláken
 #### <a name="disk-operations"></a>Diskových operací  
  Tato karta zobrazuje které procesy a vláken byly součástí diskové vstupně-výstupních operací jménem aktuální proces, které soubory se dotýkal (například knihovny DLL, které byly načteny), kolik bajtů byly čtení a další informace. Tato sestava slouží k vyhodnocení času stráveného v přístupu k souborům během provádění, zejména v případě, že je váš proces je pravděpodobně vázán vstupně-výstupní operace. Další informace najdete v tématu [disku sestava operací](../profiling/disk-operations-report-threads-view.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Vizualizér souběžnosti](../profiling/concurrency-visualizer.md)

@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c79330091c5ef5cbe4f89dee1422d1de267f70c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6db64424e1b503f4835f268fad9fdc5b8648b150
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572602"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Aspekty zabezpečení při práci s daty XML
 
 Toto téma popisuje problémy zabezpečení, které potřebujete vědět o při práci s editoru XML nebo XSLT ladicího programu.
 
-## <a name="xml-editor"></a>XML Editor
+## <a name="xml-editor"></a>Editor XML
 
  Editor souborů XML je založen na editoru textu sady Visual Studio. Přitom spoléhá na <xref:System.Xml> a <xref:System.Xml.Xsl> třídy pro zpracování řadu procesů XML.
 
@@ -42,6 +43,6 @@ Toto téma popisuje problémy zabezpečení, které potřebujete vědět o při 
 
 -   Vyhodnocení výrazu XSLT je načten modulem spravované ladění. Modul spravované ladění předpokládá, že veškerý kód je spustit z místního počítače uživatele. Podle toho <xref:System.Xml.Xsl.XslCompiledTransform> třída stáhne soubor XSLT na místním počítači uživatele. Možnost, že mohlo dojít zvýšení oprávnění v provádění oprávnění zmírnit provádění všechny transformace XSLT v nové doméně aplikace s omezenými oprávněními
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Aplikační domény](/dotnet/framework/app-domains/application-domains)

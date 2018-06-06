@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572975"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Návod: použití rozhraní API profileru
 Průvodce používá aplikace v jazyce C# k ukazují, jak používat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profilace rozhraní API nástroje. Chcete-li omezit množství dat, které jsou shromážděny během profilace instrumentace použijete rozhraní API profileru.  
@@ -30,9 +31,9 @@ Průvodce používá aplikace v jazyce C# k ukazují, jak používat [!INCLUDE[v
   
  Visual Studio profiler umožňuje omezit shromažďování dat. Tento názorný postup nabízí příklad omezení shromažďování dat pomocí rozhraní API profileru. Visual Studio profiler poskytuje rozhraní API pro řízení shromažďování dat z některé aplikace.  
   
- Pro nativní kód sadě Visual Studio profiler rozhraní API jsou v VSPerf.dll. Soubor hlaviček, VSPerf.h a knihovny importu, VSPerf.lib, jsou umístěny v adresáři 9\Team nástrojů nástroje sady Microsoft Visual Studio.  
+ Pro nativní kód sadě Visual Studio profiler rozhraní API jsou v *VSPerf.dll*. Soubor hlaviček, *VSPerf.h*a knihovny importu *VSPerf.lib*, jsou umístěné v *nástrojů nástroje sady Microsoft Visual Studio 9\Team* adresáře.  
   
- Pro spravovaný kód profileru rozhraní API jsou v Microsoft.VisualStudio.Profiler.dll. Tuto knihovnu DLL nachází v adresáři 9\Team nástrojů nástroje sady Microsoft Visual Studio. Další informace naleznete v tématu <xref:Microsoft.VisualStudio.Profiler>.  
+ Pro spravovaný kód profileru rozhraní API jsou v *Microsoft.VisualStudio.Profiler.dll*. Tuto knihovnu DLL se nachází v *nástrojů nástroje sady Microsoft Visual Studio 9\Team* adresáře. Další informace naleznete v tématu <xref:Microsoft.VisualStudio.Profiler>.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Tento návod předpokládá, že vaši volbu vývojového prostředí je nakonfigurován pro podporu ladění a vzorkování. Základní informace o těchto nezbytných podmínkách naleznete v následujících tématech:  
@@ -58,7 +59,7 @@ DataCollection.CurrentId);
 1.  Vytvořte nový projekt C# v sadě Visual Studio, nebo použití sestavení příkazového řádku, v závislosti na vaši volbu.  
   
     > [!NOTE]
-    >  Vaše sestavení musí odkazovat na knihovně Microsoft.VisualStudio.Profiler.dll umístěný v adresáři nástroje nástroje 9\Team Microsoft Visual Studio.  
+    >  Buildu musí odkazovat *Microsoft.VisualStudio.Profiler.dll* knihovny, umístěný ve*nástrojů nástroje sady Microsoft Visual Studio 9\Team* adresáře.  
   
 2.  Zkopírujte a vložte následující kód do projektu:  
   
@@ -117,7 +118,7 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Můžete shromažďovat a zobrazovat data v prostředí Visual Studio IDE  
   
-1.  Otevřete [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Na **analyzovat** nabídky, přejděte na příkaz **profileru**a potom vyberte **novou relaci výkonu.**  
+1.  Otevřete [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Na **analyzovat** nabídky, přejděte na příkaz **profileru**a potom vyberte **novou relaci výkonu**.  
   
 2.  Přidání vaší kompilované binárního souboru ke **cíle** v seznamu **prohlížeč výkonu** okno. Klikněte pravým tlačítkem na **cíle**a potom vyberte **přidat cíl binární**. Najít binární v **přidat cíl binární** dialogové okno a pak klikněte na tlačítko **otevřete**.  
   
@@ -157,10 +158,10 @@ DataCollection.CurrentId);
   
 8.  Zadejte následující příkaz:**vsperfreport – /calltrace:\<filename > .vsp**  
   
-     Soubor .csv se vytvoří v aktuálním adresáři s Výsledná data výkonu.  
+     A. *csv* soubor je vytvořen v aktuálním adresáři s Výsledná data výkonu.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  <xref:Microsoft.VisualStudio.Profiler>   
  [Visual Studio profiler referenční dokumentace rozhraní API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Začínáme](../profiling/getting-started-with-performance-tools.md)   
- [Profilace z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Profil z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)
