@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d00159a8c944944348e4eec5fb98aaa4d6e9bae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 451784c052ee656686bf40315b809dcce58c6aaf
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767647"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Postupy: Přidání specifické vyhledávací metody
   Můžete se vrátit do jedné entity instance tak, že vytvoříte *specifická metoda Finder* metoda. Business Data Connectivity (BDC) služby provede metodu specifická metoda Finder, když uživatel vybere entity v obchodní data webové části nebo externí seznam. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### <a name="to-create-a-specific-finder-method"></a>Chcete-li vytvořit specifické vyhledávací metody  
+### <a name="to-create-a-specific-finder-method"></a>Chcete-li vytvořit specifické vyhledávací metody
   
-1.  V Návrháři BDC zvolíte entity.  
+1.  Na **BDC Návrhář**, zvolte entity.  
   
-     Informace o tom, jak přidat entitu do návrháře BDC v sadě Visual Studio najdete v tématu [postupy: Přidání Entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+     Informace o tom, jak přidat entitu do **BDC Návrhář** v sadě Visual Studio, najdete v části [postupy: Přidání Entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
-2.  Na řádku nabídek zvolte **zobrazení**, **ostatní okna**, **podrobnosti o metodě BDC**.  
+2.  Na řádku nabídek zvolte **zobrazení** > **ostatní okna**, **podrobnosti o metodě BDC**.  
   
      **Podrobnosti o metodě BDC** otevře se okno. Další informace o tomto okně najdete v tématu [přehled nástrojů pro navrhování modelu služby BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Postupy: přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)   
  [Postupy: přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md)   
@@ -98,5 +99,4 @@ ms.lasthandoff: 04/16/2018
  [Přehled nástrojů pro navrhování modelu služby BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  
-  
   

@@ -16,23 +16,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a76a56eccb1d65e8b64b691d0da29e8b9d30637
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cabb70ba998594d99242696d0f87d60d5eb01226
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766086"
 ---
-# <a name="extending-the-sharepoint-project-system"></a>Rozšíření systému projektu služby SharePoint
+# <a name="extend-the-sharepoint-project-system"></a>Rozšíření systému projektu služby SharePoint
   Řešení služby SharePoint můžete vytvořit pomocí sadu šablony projektů a šablon položek v sadě Visual Studio. Tyto šablony požadavkům mnoho vývojové scénáře, ale může v některých případech, kde není poskytují funkce, které budete potřebovat zjistíte. V těchto případech můžete rozšíření systému projektu služby SharePoint.  
   
-## <a name="overview-of-the-sharepoint-project-system"></a>Přehled systému projektu služby SharePoint  
+## <a name="overview-of-the-sharepoint-project-system"></a>Přehled systému projektu služby SharePoint
  Systém projektu služby SharePoint je založen na základní součásti *SharePoint – položky projektu*. Položky projektu služby SharePoint představuje jediné přizpůsobení SharePoint, například definice seznamu, webové části nebo typ obsahu.  
   
  Projektu služby SharePoint je projekt sady Visual Studio, která zahrnuje jednu nebo více položek projektu služby SharePoint. Projekty SharePoint obsahovat také další součásti, které definují způsob seskupení položek projektu do funkce a balíčky pro nasazení.  
   
  Další informace o obsahu SharePoint – položky projektu a projektů služby SharePoint, naleznete v části [vytváření šablon položek a šablony projektů pro položky projektu služby SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
-## <a name="how-to-extend-the-sharepoint-project-system"></a>Postup rozšíření systému projektu služby SharePoint  
+## <a name="how-to-extend-the-sharepoint-project-system"></a>Postup rozšíření systému projektu služby SharePoint
  Systému projektu služby SharePoint můžete rozšířit následujícími způsoby:  
   
 -   Definování vlastních typů položek projektu služby SharePoint a přidružit je k nové položky šablony nebo šablony projektů v sadě Visual Studio. Můžete například definovat typu položky projektu služby SharePoint pro vytvoření vlastní akce ani pole. Další informace najdete v tématu [definování vlastní SharePoint typů položek projektu](../sharepoint/defining-custom-sharepoint-project-item-types.md).  
@@ -43,14 +44,14 @@ ms.lasthandoff: 04/16/2018
   
 -   Rozšíření balení a nasazení chování položky projektu služby SharePoint a projektů služby SharePoint. Například můžete vytvořit vlastní postup nasazení provést při nasazení nebo odvolávání projektu, nebo když Visual Studio provede určité kroky nasazení můžete provádět další vlastní úlohy. Další informace najdete v tématu [rozšíření balení a nasazení SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
-## <a name="common-development-tasks"></a>Běžné úlohy vývoj  
+## <a name="common-development-tasks"></a>Běžné úlohy vývoj
  Můžete provádět následující běžné úlohy v rozšíření systému projektu služby SharePoint:  
   
 -   Uložení dat vlastní řetězec s položky projektu a v několika různých typů souborů projektu. Další informace najdete v tématu [ukládání dat do rozšíření systému projektu služby SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 -   Převést objekt v systému projektu služby SharePoint na odpovídající objekt v sadě Visual Studio automatizace objektový model nebo integrace objektový model, nebo naopak. Další informace najdete v tématu [převádění mezi SharePoint systémovými typy projektů a ostatní typy projektů Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Definování typů položek projektu služby SharePoint vlastní](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Rozšíření položek projektu služby SharePoint](../sharepoint/extending-sharepoint-project-items.md)   
  [Rozšíření projektů SharePoint](../sharepoint/extending-sharepoint-projects.md)   

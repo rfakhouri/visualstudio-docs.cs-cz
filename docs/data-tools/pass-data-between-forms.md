@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: db1d993d745ea4dd1861dd086cea73cb16a08c81
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5a6f1aca4b0a97211cfcc1d5559868c95b856e5c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691209"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746175"
 ---
 # <a name="pass-data-between-forms"></a>Předávání dat mezi formuláři
 Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho formátu do druhého. Pomocí zákazníků a tabulky objednávky z Northwind, jeden formulář umožňuje vybrat zákazníka a druhý formulář obsahuje objednávky vybraného zákazníka. Tento návod ukazuje postup vytvoření metody na druhý formulář, který přijímá data z první formulář.
@@ -71,7 +71,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu...** .
 
-2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Classic Desktop**.
+2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Desktop**.
 
 3. V prostředním podokně, vyberte **aplikace pro Windows Forms** typ projektu.
 

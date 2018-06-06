@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 132a5b5933b1bc96244238570091e522f8af91d2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 533deb22f37af012ab9c4fd3a8d369edad64ce06
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766825"
 ---
 # <a name="how-to-add-a-resource-file"></a>Postupy: Přidání zdrojového souboru
   Příkazy pro přidání souborů prostředků je v místní nabídce uzlu řešení a funkce uzlů v Průzkumníku řešení. Další informace najdete v tématu [lokalizace řešení služby SharePoint](../sharepoint/localizing-sharepoint-solutions.md).  
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], otevřete řešení služby SharePoint.  
   
-2.  V **Průzkumníku řešení**, vyberte uzel projektu služby SharePoint a potom na řádku nabídek zvolte **projektu**, **přidat novou položku**.  
+2.  V **Průzkumníku řešení**, vyberte uzel projektu služby SharePoint a potom na řádku nabídek zvolte **projektu** > **přidat novou položku**.  
   
 3.  V **přidat novou položku** dialogovém okně vyberte **globální souboru prostředků** šablony a potom zvolte **přidat** tlačítko.  
   
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  V **přidat prostředek** dialogovém okně vyberte jazykovou verzi pro soubor prostředků, jako je angličtina (Spojené státy).  
   
-     Tento krok přidává globální soubor prostředků pro vaše řešení ve formátu, prostředků * x ***.*** jazyková verze ***.** resx, jako je například Resource1.en-US.resx.  
+     Tento krok přidává globální soubor prostředků pro vaše řešení ve formátu, prostředků * x ***.*** jazyková verze ***.** resx, jako je třeba *Resource1.en-US.resx*.  
   
 5.  Když **Editor prostředků** se otevře v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], přidat prostředky do souboru prostředků.  
   
@@ -50,11 +51,11 @@ ms.lasthandoff: 04/16/2018
   
 2.  V **Průzkumníku řešení**, otevřete místní nabídku pro název funkce v rámci **funkce** uzel a potom zvolte **přidat prostředek funkce**.  
   
-     Tento krok přidává funkce ve formátu souboru prostředků * ResourceFileName ***.*** jazyková verze ***.** resx, jako je například Feature1.en-US.resx.  
+     Tento krok přidává funkce ve formátu souboru prostředků * ResourceFileName ***.*** jazyková verze ***.** resx, jako je třeba *Feature1.en-US.resx*.  
   
 3.  Když **Editor prostředků** se otevře v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], přidat prostředky do souboru prostředků.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
-  
+ 

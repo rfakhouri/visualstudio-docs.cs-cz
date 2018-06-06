@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38f8240d0e0157edd1ebe189d0eafac54be60ebb
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 500426eb7fda2c35f74b899154d9153a91d5020b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746257"
 ---
 # <a name="how-to-specify-build-events-c"></a>Postupy: určení sestavení událostí (C#)
 
@@ -148,7 +149,7 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
 
 1.  Vytvoření aplikace pro systém Windows pro projekt, který má být publikována. Z **soubor** nabídky, přejděte na příkaz **nový**a pak klikněte na **projektu**.
 
-2.  V **nový projekt** dialogové okno, rozbalte seznam **Visual C#**, klikněte na tlačítko **Windows Classic Desktop**a potom klikněte na **aplikace pro Windows Forms** Šablona. Název projektu `CSWinApp`.
+2.  V **nový projekt** dialogové okno, rozbalte seznam **Visual C#**, klikněte na tlačítko **Windows Desktop**a pak klikněte na tlačítko **aplikace pro Windows Forms** šablony. Název projektu `CSWinApp`.
 
 3.  S projekt vybraný v **Průzkumníku řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
 
@@ -184,7 +185,7 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Stránka události sestavení, Návrhář projektu (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Dialogové okno Příkazový řádek události/po sestavení události před sestavením](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)

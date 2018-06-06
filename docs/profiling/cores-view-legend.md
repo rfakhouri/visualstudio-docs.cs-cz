@@ -18,7 +18,7 @@ ms.openlocfilehash: ee31b1547f9607f54cc5db9d056b997f071633ff
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34691584"
 ---
 # <a name="cores-view-legend"></a>Legenda zobrazení jader

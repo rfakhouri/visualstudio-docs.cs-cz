@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 6ecbf8e67b2c8db1b33fa1c5228d9d94f98e48c5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691131"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748056"
 ---
 # <a name="save-data-back-to-the-database"></a>Ukládání dat zpět do databáze
 Datová sada je kopie v paměti data. Pokud změníte data, je dobrým zvykem uložit tyto změny zpět do databáze. Můžete to udělat jedním ze tří způsobů:
@@ -60,7 +60,7 @@ Pokud jste obeznámeni s TableAdapters, můžete přejít přímo na jednu z tě
 
  Pokud odešlete změny zpět do databáze, druhý krok je povinný. Pokud nepoužíváte ovládací prvky vázané na data, budete muset ručně zavolat metodu aktualizace stejné TableAdapter (nebo adaptér dat), který jste použili k naplnění datové sady. Pro přesun dat z jednoho zdroje dat na jiný nebo aktualizaci více zdrojů dat však můžete použít také různé adaptéry, například. Pokud nejsou použití datových vazeb a ukládají změny pro tabulky v relaci, budete muset ručně vytvořit instanci proměnné automaticky vygenerované třídy TableAdapterManager a potom volejte příslušnou metodu UdpateAll.
 
- ![Visual Basic datovou sadu aktualizací](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates") aktualizace dvoustupňový proces a roli DataRowVersion v úspěšné aktualizaci
+ ![Visual Basic datovou sadu aktualizací](../data-tools/media/vbdatasetupdates.gif) aktualizace dvoustupňový proces a roli DataRowVersion v úspěšné aktualizaci
 
  Datové sady obsahuje kolekce tabulek, které obsahují kolekce řádků. Pokud chcete aktualizovat příslušný zdroj dat později, musíte použít metody pro vlastnost DataTable.DataRowCollection při přidávání nebo odebírání řádků. Tyto metody proveďte potřebné pro aktualizaci zdroje dat sledování změn. Když zavoláte kolekci RemoveAt na vlastnost řádků, nebude odstranění oznamovat zpět do databáze.
 

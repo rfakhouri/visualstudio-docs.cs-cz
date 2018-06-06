@@ -9,24 +9,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c81443332a05fbd60a295613c5f34c579482199
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b11752200b891808f96b53e57453c0df815da3f4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766670"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Postupy: Připojení profileru k samostatné aplikaci .NET Framework ke shromažďování dat paměti pomocí příkazového řádku
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Postupy: připojení profileru k samostatné aplikaci .NET Framework ke shromažďování dat paměti pomocí příkazového řádku
 
-Toto téma popisuje postup připojení profileru k aplikaci spuštěné samostatné (klient) rozhraní .NET Framework a shromažďování dat paměti pomocí příkazového řádku nástroje pro profilaci nástroje sady Visual Studio.
+Tento článek popisuje postup připojení profileru k aplikaci spuštěné samostatné (klient) rozhraní .NET Framework a shromažďování dat paměti pomocí příkazového řádku nástroje pro profilaci nástroje sady Visual Studio.
 
 > [!NOTE]
-> Nástroje příkazového řádku nástroje profilace jsou umístěny v podadresáři nástroje \Team Tools\Performance [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] instalační adresář. Na 64bitových počítačích 64bitové a 32bitové verze nástroje jsou k dispozici. Chcete-li použít nástroje příkazového řádku profileru, musí přidat cestu nástroje do proměnné prostředí PATH okna příkazového řádku nebo ho přidat do samotný příkaz. Další informace najdete v tématu [určení cesty k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+> Nástroje příkazového řádku nástroje profilace jsou umístěné v *\Team Tools\Performance nástroje* podadresáři [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] instalační adresář. Na 64bitových počítačích 64bitové a 32bitové verze nástroje jsou k dispozici. Chcete-li použít nástroje příkazového řádku profileru, musí přidat cestu nástroje do proměnné prostředí PATH okna příkazového řádku nebo ho přidat do samotný příkaz. Další informace najdete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-Připojit k aplikaci .NET Framework a shromažďování paměti dat, je nutné použít [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) nástroj k chybě při inicializaci příslušné proměnné prostředí před spuštěním cílové aplikace. Po připojení profileru k aplikaci, můžete použít **VSPerfCmd.exe** nástroj pro pozastavení a obnovení dat kolekce.
+Připojit k aplikaci .NET Framework a shromažďování paměti dat, je nutné použít [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) nástroj k chybě při inicializaci příslušné proměnné prostředí před spuštěním cílové aplikace. Po připojení profileru k aplikaci, můžete použít *VSPerfCmd.exe* nástroj pro pozastavení a obnovení dat kolekce.
 
 K ukončení relace profilování, musí být profileru odpojit od všech PROFILOVANÉHO procesů a profileru musí být explicitně vypnuté. Ve většině případů doporučujeme vymazání na konci relace profilování proměnné prostředí.
 
-## <a name="attaching-the-profiler"></a>Připojení profileru
+## <a name="attach-the-profiler"></a>Připojení profileru
 
 ### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Chcete-li připojení profileru k spuštěné aplikace rozhraní .NET Framework
 
@@ -66,15 +67,15 @@ K ukončení relace profilování, musí být profileru odpojit od všech PROFIL
 
 5. Připojení profileru k cílové aplikaci. Typ:
 
-     **VSPerfCmd**[/ připojit](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
+     **VSPerfCmd**[/ připojit](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]
 
     - `PID` Určuje ID procesu cílová aplikace. `ProcessName` Určuje název procesu. Všimněte si, že pokud zadáte `ProcessName` a více procesy, které mají stejný název běží, výsledky mohou být nepředvídatelné. Proces ID všechny spuštěné procesy můžete zobrazit ve Správci úloh systému Windows.
 
     - **/targetclr:** `Version` určuje verzí common language runtime (CLR) má profil při načtení více než jednu verzi modulu runtime v aplikaci. Volitelné.
 
-## <a name="controlling-data-collection"></a>Řízení kolekce dat
+## <a name="control-data-collection"></a>Řízení shromažďování dat
 
-Pokud cílová aplikace běží, lze řídit shromažďování dat spuštění a zastavení zápisu dat do souboru pomocí **VSPerfCmd.exe** možnosti. Řízení shromažďování dat umožňuje shromažďování dat pro konkrétní součást spuštění programu, jako je například spouštění nebo ukončením aplikace.
+Pokud cílová aplikace běží, lze řídit shromažďování dat spuštění a zastavení zápisu dat do souboru pomocí *VSPerfCmd.exe* možnosti. Řízení shromažďování dat umožňuje shromažďování dat pro konkrétní součást spuštění programu, jako je například spouštění nebo ukončením aplikace.
 
 ### <a name="to-start-and-stop-data-collection"></a>Spuštění a zastavení shromažďování dat
 
@@ -86,7 +87,7 @@ Pokud cílová aplikace běží, lze řídit shromažďování dat spuštění a
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Spustí (**/processon**) nebo zastaví (**/processoff**) shromažďování dat pro proces, který je zadán `PID`.|
     |[/ připojit](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/ detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/ připojit** spustí ke shromažďování dat pro proces, který je zadán `PID` nebo název procesu (Nazev_procedury). **/ detach** zastaví shromažďování dat pro zadaný procesu nebo pro všechny procesy, pokud není zadán konkrétní proces.|
 
-## <a name="ending-the-profiling-session"></a>Ukončení relace profilování
+## <a name="end-the-profiling-session"></a>Ukončení relace profilování
 
 K ukončení relace profilování, musí být profileru odpojit od všech PROFILOVANÉHO procesů a profileru musí být explicitně vypnuté. Můžete odpojit profileru z aplikace, která byla profilovaným pomocí metody vzorkování ukončením aplikace nebo voláním **VSPerfCmd / detach** možnost. Potom zavolejte **/VSPerfCmd Shutdown** možnost vypnout profileru a zavřete profilování datového souboru. **Vsperfclrenv – / vypnuto** příkaz vymaže profilování proměnné prostředí.
 
@@ -108,7 +109,7 @@ K ukončení relace profilování, musí být profileru odpojit od všech PROFIL
 
      **VSPerfCmd / vypnuto**
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-[Profilace samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)  
+[Profil samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)  
 [Zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)

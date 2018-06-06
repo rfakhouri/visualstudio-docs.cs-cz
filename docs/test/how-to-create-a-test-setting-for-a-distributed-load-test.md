@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b9ffd7206023885fc45e66af585ca34f75ce67f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29517fcf0f788150db43988fdacf54b3b8b5800c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751816"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Postupy: Vytvoření nastavení testu pro distribuovaný zátěžový test
 
@@ -74,7 +75,7 @@ Postupujte podle těchto kroků k vytvoření a odebrat nastavení testu v řeš
 
      **Role** zobrazí se stránka.
 
-     ![Test nastavení role](../test/media/load_testtestrole.png "Load_TestTestRole")
+     ![Test nastavení role](../test/media/load_testtestrole.png)
 
 10. Ke spuštění testů vzdáleně, nebo pokud chcete spustit testy vzdáleně a vzdáleně shromažďování dat, použijte **Test provádění metody** rozevíracího seznamu a vyberte možnost **vzdálené spuštění**.
 
@@ -108,7 +109,7 @@ Postupujte podle těchto kroků k vytvoření a odebrat nastavení testu v řeš
 
      **Datové a diagnostické** zobrazí se stránka.
 
-     ![Test nastavení data a Diagnostika](../test/media/load_testtest.png "Load_TestTest")
+     ![Test nastavení data a Diagnostika](../test/media/load_testtest.png)
 
 18. V **diagnostiky a dat** stránky, můžete definovat, co roli nemá výběrem *adaptérů diagnostických dat* , roli použijete ke shromažďování dat. Proto pokud jeden nebo více dat a diagnostická adaptéry jsou povolené pro roli, testovací kontroler vyberte dostupné testovací počítač agenta ke shromažďování dat pro zadaná data a adaptérů diagnostických na základě atributů, které jste zadali pro roli. Vyberte data a adaptérů diagnostických dat, které chcete shromažďovat pro každou roli, vyberte roli. Pro každou roli vyberte adaptérů diagnostických dat podle potřeb testů. Chcete-li konfigurovat každý adaptér diagnostických dat, který jste vybrali pro každou roli, zvolte **konfigurace**.
 
@@ -190,7 +191,7 @@ Ve složce položky řešení v Průzkumníku řešení klikněte pravým tlač�
 
 Soubor nastavení testu je odebrán z vašeho řešení. Tato změna se odrazí v seznamu nabízených možností pro **vyberte testovací upgrade nastavení Active** a **upravit nastavení testu** možnosti na **Test** nabídky.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Kontrolery testů a testovací agenti](configure-test-agents-and-controllers-for-load-tests.md)
 - [Shromažďování diagnostických informací s použitím nastavení testu](../test/collect-diagnostic-information-using-test-settings.md)

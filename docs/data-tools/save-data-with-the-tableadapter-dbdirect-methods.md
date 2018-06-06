@@ -1,5 +1,5 @@
 ---
-title: Ukládání dat pomocí TableAdapter DBDirect metody
+title: Ukládání dat pomocí metod TableAdapter DBDirect
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51f855cca05d2f9f7e6a86524da6bcf866eb0856
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68842160d3ad7bf7e96d22f58607866c34f9ceb5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747544"
 ---
-# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Ukládání dat pomocí TableAdapter DBDirect metody
+# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Ukládání dat pomocí metod TableAdapter DBDirect
 Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL přímo s databází pomocí metod TableAdapter DBDirect. Metod TableAdapter DBDirect zadejte jemné úroveň kontroly nad aktualizace vaší databáze. Můžete je použít ke spuštění konkrétních příkazů SQL a uložených procedur voláním jednotlivých `Insert`, `Update`, a `Delete` metody podle potřeby vaší aplikace (oproti přetížené `Update` metodu, která provede aktualizace INSERT a DELETE příkazy všechny v jednom volání).
 
  Během tohoto návodu se dozvíte, jak:
@@ -63,7 +64,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu...** .
 
-2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Classic Desktop**.
+2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Desktop**.
 
 3. V prostředním podokně, vyberte **aplikace pro Windows Forms** typ projektu.
 
@@ -167,6 +168,6 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 -   Přidání další tabulky k datové sadě výběrem **konfigurace sady dat pomocí průvodce** uvnitř **zdroje dat** okno. Můžete přidat ovládací prvky, které zobrazení souvisejících dat přetažením související uzly do formuláře. Další informace najdete v tématu [vztahy v datových sadách](relationships-in-datasets.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

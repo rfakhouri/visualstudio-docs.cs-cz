@@ -17,7 +17,7 @@ ms.openlocfilehash: 1ced0f3e882025e4a6e1bdd940f5aa0d189beb58
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34690972"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile

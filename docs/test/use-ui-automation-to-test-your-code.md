@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 102b3eb7fa440e9c666020ddeda6e6763c208b23
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1ad00d05bf6eba2a3853c0af79bf9decaaba236f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692379"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751725"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Použití automatizace uživatelského rozhraní k testování kódu
 
@@ -100,7 +100,7 @@ Přístup k programových testů uživatelského rozhraní nástroje pro a šabl
 
      Zavřete okno kontrolní výraz a zvolte **generovat kód**.
 
-     ![Cílení na element programového testu UI](../test/media/codedui_1.png "CodedUI_1")
+     ![Programové elementu cílení testu uživatelského rozhraní](../test/media/codedui_1.png)
 
     > [!TIP]
     > Alternativní mezi zaznamenávání akcí a ověření hodnoty. Generovat kód na konci každé pořadí akcí nebo ověření. Pokud chcete, bude možné později vložit nových akcí a ověření.
@@ -134,7 +134,7 @@ Přístup k programových testů uživatelského rozhraní nástroje pro a šabl
 
      Otevřete UIMap.uitest. Tento soubor se otevře v programových uživatelského rozhraní editoru testu, kde vám může upravit všechny posloupnost akcí, které jste si poznamenali, stejně jako upravit vaše kontrolní výrazy.
 
-     ![Programový Editor testu uživatelského rozhraní](../test/media/cuit_editor_edit.png "CUIT_Editor_edit")
+     ![Editor programového testu UI](../test/media/cuit_editor_edit.png)
 
      Další informace najdete v tématu [testů uživatelského rozhraní pro úpravy programový pomocí editoru programových testů uživatelského rozhraní](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -164,20 +164,20 @@ Můžete použít **programového Tvůrce testování uživatelského rozhraní*
 
 Chcete-li vygenerovat kontrolní výrazy pro vaše ovládací prvky uživatelského rozhraní, zvolte **přidat kontrolní výrazy** nástroj v programových Tvůrce testování uživatelského rozhraní a přetáhněte ji do ovládacího prvku na aplikaci v části test, který chcete ověřit správnost. Pokud pole popisuje vlastního ovládacího prvku, tlačítko myši. Řídicí kód třída je okamžitě vytvořen v `UIMap.Designer.cs` souboru.
 
-![Cílení na element programového testu UI](../test/media/codedui_1.png "CodedUI_1")
+![Programové elementu cílení testu uživatelského rozhraní](../test/media/codedui_1.png)
 
 Vlastnosti pro tento ovládací prvek jsou nyní uvedeny v **přidat kontrolní výrazy** dialogové okno.
 
 Dalším způsobem, jak přejdete na určitý ovládací prvek je vyberte šipku **(<<)** rozbalte zobrazení **mapy ovládacího prvku uživatelského rozhraní**. Najít nadřazenou, na stejné úrovni nebo podřízený ovládací prvek, můžete klikněte kamkoli na mapě a použijte klávesy se šipkami pohyb stromu.
 
-![Programové uživatelského rozhraní testování vlastnosti](../test/media/codedui_2.png "CodedUI_2")
+![Programové vlastností testu uživatelského rozhraní](../test/media/codedui_2.png)
 
 > [!TIP]
 > Pokud nevidíte všechny vlastnosti, když vyberete ovládacího prvku v aplikaci nebo nevidíte ovládacího prvku mapy ovládacího prvku uživatelského rozhraní, ověřte, že ovládací prvek má jedinečné ID v kódu aplikace. Jedinečné ID může být atributu HTML ID nebo WPF UId.
 
 Dále otevřete místní nabídky na vlastnost pro ovládací prvek uživatelského rozhraní, který chcete ověřit a pak přejděte na **přidat kontrolní**. V **přidat kontrolní** dialogové okno, vyberte **Komparátor** pro assertion, například <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>a zadejte hodnotu pro vaše assertion v **hodnotu porovnání**.
 
-![Programové uživatelského rozhraní test kontrolní výrazy](../test/media/codedui_3.png "CodedUI_3")
+![Programové kontrolní výrazy testu uživatelského rozhraní](../test/media/codedui_3.png)
 
 Pokud jste přidali všechny kontrolní výrazy testovacího, zvolte **OK**.
 
@@ -198,7 +198,7 @@ Generování kódu pro vaše kontrolní výrazy a přidání ovládacího prvku 
 
 - Přidá metodu s názvem `AssertForAddTwoNumbers` do mapy uživatelského rozhraní (UIMap.uitest). Tento soubor se otevře v programových uživatelského rozhraní editoru testu, kde můžete upravit kontrolní výrazy.
 
-     ![Upravit assert pomocí editoru programových testů UI](../test/media/cuit_editor_assert.png "CUIT_Editor_assert")
+     ![Upravit assert pomocí editoru programových testů UI](../test/media/cuit_editor_assert.png)
 
      Další informace najdete v tématu [testů uživatelského rozhraní pro úpravy programový pomocí editoru programových testů uživatelského rozhraní](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -217,7 +217,7 @@ Pokud ovládací prvek, který chcete vybrat ztratí fokus a zmizí při výběr
 
 V některých případech při přidávání ovládacích prvků a ověřit jejich vlastnosti, budete nejspíš muset použít klávesnici. Například při pokusu o záznam programového testu uživatelského rozhraní, používající ovládacího prvku nabídka kontextu seznam položek nabídky v ovládacím prvku ztratí fokus a při pokusu o z Tvůrce testování uživatelského rozhraní programového vyberte nástroj přidat kontrolní výrazy zmizí. Tento postup je znázorněn na následujícím obrázku, kde v místní nabídce v Internet Exploreru ztratí fokus a zmizí, pokud se pokusíte vyberte ho pomocí nástroje přidejte kontrolní výrazy.
 
-![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png "CodedUITest_SelectControlKeyboard")
+![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
 
 Použití klávesnice k výběru ovládacího prvku uživatelského rozhraní, najeďte myší řízení pomocí myši. Podržte stisknutou **Ctrl** klíč a **I** klíče ve stejnou dobu. Uvolnění klíče. Ovládací prvek se zaznamenává pomocí Tvůrce programového testu UT.
 
@@ -232,7 +232,7 @@ Za určitých okolností konkrétní ovládací prvek, který se používá v pr
 
 Při provádění vaší programového testu uživatelského rozhraní, najeďte myší řízení. Stiskněte a podržte klávesu Ctrl, a stisknutím a podržením klávesy Shift a R na klávesnici. Uvolnění klíče. Pomocí Tvůrce programového testu UT se zaznamená událost hover myši.
 
-![CodedUI&#95;najeďte](../test/media/codedui_hover.png "CodedUI_Hover")
+![CodedUI&#95;ukazatele](../test/media/codedui_hover.png)
 
 Po vygenerování testu metoda, podobně jako v následujícím příkladu kódu budou přidány do souboru UIMap.Desinger.cs:
 

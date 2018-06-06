@@ -11,13 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c40c484a4a14ed103c1d29f979f4a767066a4a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a69f644fecd74328eb3fa007e4589ff194c8e11
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751514"
 ---
-# <a name="unit-test-basics"></a>Testování částí
+# <a name="unit-test-basics"></a>Základní informace o testování částí
 
 Zkontrolujte, že váš kód funguje podle očekávání tím vytváření a spouštění testování částí. Je volána testování, protože rozdělíte dolů funkce vašeho programu do diskrétní možností intenzivního testování chování, které můžete testovat jako jednotlivých částí *jednotky*. Visual Studio Průzkumníka testů poskytuje flexibilní a efektivní způsob, jak spustit testy částí a zobrazit jejich výsledky v sadě Visual Studio. Visual Studio nainstaluje testování architektury pro spravovaná a nativní kód částí společnosti Microsoft. Použití *framework testování částí* vytvářet testy částí, spouštění je a ohlásí výsledky tyto testy. Testování částí spusťte při provádění změn pro testování, aby váš kód stále funguje správně. Visual Studio Enterprise můžete k tomu automaticky s [Live testování částí](live-unit-testing-intro.md), který zjistí testy vliv kódu změní a běží na pozadí během psaní.
 
@@ -41,7 +42,7 @@ Průzkumníka testů můžete také spouštět třetích stran s otevřeným zdr
 
 V tomto tématu používáme vývoj fiktivních aplikace s názvem `MyBank` jako příklad. Nepotřebujete skutečný kód podle vysvětlení v tomto tématu. Test metody jsou napsané v C# a zobrazovat pomocí Microsoft Unit Testing Framework pro spravovaný kód, ale koncepty snadno přenést do jiných jazyků a rozhraní.
 
- ![Řešení MyBank](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")
+ ![MyBank řešení](../test/media/ute_mybanksolution.png)
 
  Naše o první pokus o navrhnout `MyBank` aplikace obsahuje komponentu účty, který představuje samostatný účet a jeho transakce s banka a databáze komponenty, která představuje funkci agregace a spravovat jednotlivé účty.
 
@@ -85,15 +86,15 @@ Teď, když máme nějaký kód, je čas pro testování.
 
 1.  V okně editoru kódu, klikněte pravým tlačítkem a zvolte **vytvořit testování částí** v místní nabídce.
 
-     ![V okně editor zobrazení v místní nabídce](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")
+     ![V okně editor zobrazení v místní nabídce](../test/media/createunittestsrightclick.png)
 
 2.  Klikněte na tlačítko OK potvrďte výchozí nastavení k vytvoření testů jednotek nebo změně hodnoty používané k vytvoření a název jednotka testování projektu a testování částí. Můžete vybrat kód, který je ve výchozím nastavení do metody test jednotky.
 
-     ![Pravé&#45;klikněte v editoru a zvolte Vytvořit testování částí](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
+     ![Pravé&#45;klikněte v editoru a zvolte Vytvořit testování částí](../test/media/createunittestsdialog.png)
 
 3.  Zástupných procedur test jednotky jsou vytvořené v nového projektu testů jednotek pro všechny metody ve třídě.
 
-     ![Testování částí vytvářejí](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")
+     ![Testy jednotek jsou vytvořeny.](../test/media/createunittestsstubs.png)
 
 4.  Teď přeskočit další postup [přidat kód do metody test jednotky](#BKMK_Writing_your_tests) , aby vaše smysluplný testování částí a všechny další jednotky testy, které chcete přidat do důkladně otestujte svůj kód.
 
@@ -204,7 +205,7 @@ public void My_Test ()
 
 Při sestavování testovacího projektu testů se zobrazí v Průzkumníku otestovat. Pokud není viditelná Průzkumníka testů, zvolte **Test** v sadě Visual Studio nabídce zvolte **Windows**a potom zvolte **Průzkumníka testů**.
 
- ![Průzkumníka testů jednotek](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![Jednotky Průzkumníka testů](../test/media/ute_failedpassednotrunsummary.png)
 
  Při spuštění, zápisu a znovu spusťte testy, výchozí zobrazení Průzkumníka testů zobrazí výsledky v skupiny **testy se nezdařilo**, **předán testy**, **přeskočen testy** a  **Nejde spustit testy**. Můžete použít záhlaví skupiny k otevření zobrazení, které se zobrazí všechny je testů v této skupině.
 
@@ -214,11 +215,11 @@ Při sestavování testovacího projektu testů se zobrazí v Průzkumníku otes
 
 Panel nástrojů Průzkumníka testů umožňuje zjistit, organizovat a spustit testy, které vás zajímají.
 
- ![Spouštění testů z panelu nástrojů Průzkumníka testů](../test/media/ute_toolbar.png "UTE_ToolBar")
+ ![Spouštění testů z panelu nástrojů Průzkumníka testů](../test/media/ute_toolbar.png)
 
  Můžete zvolit **spustit všechny** spustit všechny testy, nebo zvolte **spustit** vybrat podmnožinu testů ke spuštění. Po spuštění sada testů se zobrazí souhrn testovacím běhu v dolní části okna Průzkumníka testů. Vyberte testovací Chcete-li zobrazit podrobnosti o testu v dolním podokně. Zvolte **otevřete testovací** z místní nabídky (klávesnice: F12) Chcete-li zobrazit zdrojový kód pro vybrané test.
 
- Pokud jednotlivé testy žádné závislosti, které je zabránit spouštění v libovolném pořadí, zapnout spuštění testu paralelní s ![UTE&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný k spustit všechny testy.
+ Pokud jednotlivé testy žádné závislosti, které je zabránit spouštění v libovolném pořadí, zapnout spuštění paralelní testu pomocí ![UTE&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png) přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný k spustit všechny testy.
 
 ### <a name="run-tests-after-every-build"></a>Spouštění testů po každé sestavení
 
@@ -227,17 +228,17 @@ Panel nástrojů Průzkumníka testů umožňuje zjistit, organizovat a spustit 
 
 |||
 |-|-|
-|![Po sestavení spustit](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|Spouštění testů jednotek po každé místní sestavení, zvolte **Test** na standardní nabídce zvolte **spustit testy po sestavení** na panelu nástrojů Průzkumníka testů.|
+|![Spustit po sestavení](../test/media/ute_runafterbuild_btn.png)|Spouštění testů jednotek po každé místní sestavení, zvolte **Test** na standardní nabídce zvolte **spustit testy po sestavení** na panelu nástrojů Průzkumníka testů.|
 
 ### <a name="filter-and-group-the-test-list"></a>Filtr a seskupení seznamu testů
 
 Když máte velký počet testů, můžete zadat Průzkumníka testů vyhledávacího pole pro filtrování seznamu podle zadaného řetězce. Můžete omezit další výběrem ze seznamu filtru filtru událost.
 
- ![Prohledat kategorie filtru](../test/media/ute_searchfilter.png "UTE_SearchFilter")
+ ![Vyhledávací filtr kategorií](../test/media/ute_searchfilter.png)
 
 |||
 |-|-|
-|![Tlačítko Testovat Explorer skupiny](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Pro seskupení testů podle kategorie, vyberte **Group By** tlačítko.|
+|![Tlačítko Testovat Explorer skupiny](../test/media/ute_groupby_btn.png)|Pro seskupení testů podle kategorie, vyberte **Group By** tlačítko.|
 
  Další informace najdete v tématu [spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)
 
@@ -260,7 +261,7 @@ Podrobné informace o [ladění testování částí](../debugger/debugging-in-v
 
  **Odpověď:** pomocí IntelliSense pro generování třídy a metody ve vašem projektu kódu. Napsat příkaz v testovací metodu, která volá třída nebo metoda, kterou chcete vygenerovat, a otevřete nabídku IntelliSense v části volání. Pokud je volání konstruktoru nové třídy, vyberte **vygenerovat nový typ** z nabídky a postupujte podle průvodce a vloží třídu do projektu kódu. Pokud je volání do metody, zvolte **generovat nové metody** z nabídky IntelliSense.
 
- ![Metoda se zakázaným inzerováním IntelliSense nabídka Generovat](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")
+ ![Generovat nabídky IntelliSense Stub – metoda](../test/media/ute_generatemethodstubintellisense.png)
 
  **Otázka: je možné vytvářet testy částí, které provést několik sad dat jako vstup pro spuštění testu?**
 
@@ -304,7 +305,7 @@ S atributy metoda spustí jednou pro každý řádek v tabulce. Průzkumníka te
 
  Pokrytí výsledky se zobrazí v okně Výsledky pokrytí kódu.
 
- ![Výsledky pokrytí kódu](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")
+ ![Výsledky pokrytí kódu](../test/media/ute_codecoverageresults.png)
 
  Další informace o [pokrytí kódu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
@@ -326,6 +327,6 @@ Další informace o [izolace metody test jednotky s Microsoft Fakes](../test/iso
 
  **Odpověď:** Ano, postupujte podle těchto kroků [najít a nainstalovat ostatní platformy](../test/install-third-party-unit-test-frameworks.md). Po restartování sady Visual Studio otevřete řešení vytváření testů jednotek a poté vyberte nainstalované rozhraní tady:
 
- ![Vyberte jiné nainstalované částí unit test framework](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")
+ ![Vyberte jiné nainstalované částí unit test framework](../test/media/createunittestsdialogextensions.png)
 
  Vaše zástupných procedur test jednotky se vytvoří pomocí rozhraní vybrané.

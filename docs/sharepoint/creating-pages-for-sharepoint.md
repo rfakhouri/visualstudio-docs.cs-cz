@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4cfbe0a7ae0a27e41053457774217f049d5caf3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0532025fdb090c3811f09cb823745bd50e8d91c5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34694043"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765525"
 ---
-# <a name="creating-pages-for-sharepoint"></a>Vytváření stránek pro službu SharePoint
+# <a name="create-pages-for-sharepoint"></a>Vytváření stránek pro službu SharePoint
   Můžete vytvořit stránky aplikací, weby, hlavní stránky a stránky rozložení pro web služby SharePoint.  
   
  Stránky aplikací můžete vytvořit pomocí šablony v sadě Visual Studio. Vytvořte weby, hlavní stránky a rozložení stránek s použitím návrháře služby SharePoint. Pak můžete importovat tyto stránek do sady Visual Studio jejich použití v projektu služby SharePoint.  
@@ -67,7 +67,7 @@ ms.locfileid: "34694043"
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Vytváření stránek aplikací pro službu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Popisuje postup přidání stránky aplikací: obsah .aspx, který je sloučen s hlavní stránku služby SharePoint.|  
+|[Vytváření stránek aplikací pro službu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Popisuje postup přidání stránky aplikací: *.aspx* obsah, který je sloučen s hlavní stránku služby SharePoint.|  
 |[Postupy: Vytvoření stránky aplikace](../sharepoint/how-to-create-an-application-page.md)|Ukazuje, jak vytvořit stránek ASP.NET, které běží na webu služby SharePoint.|  
 |[Návod: Vytvoření stránky aplikace služby SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Ukazuje, jak navrhnout a ladit webové stránky ASP.NET pro web služby SharePoint.|  
   

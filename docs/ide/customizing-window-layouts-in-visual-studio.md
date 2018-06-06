@@ -25,11 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d2cd35623f1c90dbfa47204d901fdaa48340fc5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 62fa251eac1546b0d5588dfc4dc43bead725bf81
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746842"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Přizpůsobení rozložení oken v sadě Visual Studio
 
@@ -94,23 +95,23 @@ Chcete-li vrátit do jeho nejnovější ukotveného umístění okno nástroje n
 
 Následující obrázek znázorňuje kosočtverec Průvodce pro dokument windows, které lze ukotvit pouze v rámci úpravy:
 
-![Zdokumentujte okno Průvodce kosočtverec](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")
+![Kosočtverec Průvodce okna dokumentu](../ide/media/documentwindowguidediamonds.png)
 
 Nástroje systému windows může mít zapínání na jedné straně rámce v prostředí IDE nebo v rámci úpravy. Při přetahování okno nástroje do jiného umístění umožňují snadno znovu ukotvení okno se zobrazí Průvodce kosočtverec.
 
 Průvodce kosočtverec pro nástroje systému windows
 
-![Nástroj okno Průvodce diamanty](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
+![Nástroj okno Průvodce diamanty](../ide/media/vs10guidediamond.png)
 
 Následující obrázek znázorňuje **Průzkumníku řešení** se ukotven do nového umístění, které se zobrazí modré podbarvené oblasti:
 
-![Průzkumník řešení v nové pozici ukotvení](../ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")
+![Ukotvení Průzkumníku řešení v nové místo](../ide/media/vs2015_dock_diamond.png)
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Zavřete a automaticky skrýt okna nástrojů
 
 Kliknutím můžete zavřít okno nástroje **X** v pravém horním rohu stránky na záhlaví; Pokud chcete znovu otevřít okno, použijte jeho klávesnice zástupce nebo příkazu nabídky. Nástroje systému windows podporují funkci s názvem *automaticky skrýt*, což způsobí, že okno na snímek stranou použijete jiné časové období. Pokud je okno skrytý automaticky, jeho název se zobrazí na kartě na hranici rozhraní IDE. Okno znovu použít, přejděte na na kartě, aby snímky okno zpět do zobrazení.
 
-![Skrýt automaticky](../ide/media/vs2015_auto_hide.png "vs2017_auto_hide")
+![Skrýt automaticky](../ide/media/vs2015_auto_hide.png)
 
 > [!NOTE]
 > Chcete-li nastavit, jestli chcete automaticky skrýt funguje na nástroj windows samostatně nebo jako ukotveného skupin, zaškrtněte nebo zrušte **automaticky skrýt tlačítko ovlivňuje pouze aktivní nástroj windows** v **možnosti** dialogové okno. Další informace najdete v tématu [Obecné, prostředí, dialogové okno Možnosti](../ide/reference/general-environment-options-dialog-box.md).
@@ -167,7 +168,7 @@ Nejprve vytvořte testovací řešení, které má dva projekty každé rozlože
 
 Přepínat mezi rozložením, používání klávesových zkratek, nebo z hlavní nabídky zvolte **okno** > **použít rozložení okna**.
 
-![Nabídka Rozložení okna použít](../ide/media/vs2015_applywindowlayout.png "VS2017_ApplyWindowLayout")
+![Použít nabídku rozložení okna](../ide/media/vs2015_applywindowlayout.png)
 
 Po použití rozložení uživatelského rozhraní, Všimněte si, jak rozložení se zachová, i v režimu úprav i v režimu ladění.
 
@@ -180,12 +181,12 @@ Pokud máte doma instalace v práci a jednoho monitoru přenosného počítače 
 
 Můžete odebrat, přejmenovat nebo změnit jeho pořadí vlastní rozložení výběrem **okno** > **spravovat rozložení oken**. Pokud přesunete rozložení, vazbu klíče je automaticky upravována tak, aby odrážely novou pozici v seznamu. Vazby nelze jinak upravit, a proto můžete uložit maximálně 10 rozložení najednou.
 
-![Spravovat rozložení oken](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
+![Spravovat rozložení oken](../ide/media/managewindowlayouts.png)
 
 Abyste nezapomněli které klávesnice zkratka přiřazená k jaké rozložení, zvolte **okno** > **použít rozložení okna**.
 
 Tyto rozložení automaticky roaming mezi edice sady Visual Studio a taky mezi instancemi Blend na samostatné počítače a z jakékoli edice Express k jiné organizaci Express. Rozložení však není přenášet mezi Visual Studio, Blend a Express.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: pohyb v integrovaném vývojovém prostředí](../ide/how-to-move-around-in-the-visual-studio-ide.md)

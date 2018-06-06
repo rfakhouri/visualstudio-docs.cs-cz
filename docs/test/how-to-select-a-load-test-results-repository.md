@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d12279badb0d6898dca3dc06d23eb67a054cc1eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751998"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Postupy: Výběr úložiště výsledků zátěžového testu
 
@@ -37,7 +38,7 @@ Další informace o agentů najdete v tématu [testovací kontrolery a testovac�
 
 2.  Z **zátěžový Test** nástrojů vyberte **Správa testovacích Kontrolérů**. Zobrazí se dialogové okno Spravovat testovací kontroler. Používáte-li agent vzdáleně, je zapotřebí zvolit kontrolér.
 
-     ![Úložiště výsledků zátěžového testu vlastnosti připojení](../test/media/loadtestconnectionproperties.png "LoadTestConnectionProperties") vlastnosti připojení úložiště výsledků zátěžového testu
+     ![Úložiště výsledků zátěžového testu vlastnosti připojení](../test/media/loadtestconnectionproperties.png) vlastnosti připojení úložiště výsledků zátěžového testu
 
 3.  V **úložiště výsledků zátěžového testu**, klikněte na tlačítko (...) k zobrazení **vlastnosti připojení** dialogové okno.
 
@@ -54,7 +55,7 @@ Další informace o agentů najdete v tématu [testovací kontrolery a testovac�
 
 8.  Zvolte **Zavřít** v **spravovat Test Controller** dialogové okno.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Správa výsledků zátěžových testů v úložiště výsledků zátěžového testu](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Kontrolery testů a testovací agenti](configure-test-agents-and-controllers-for-load-tests.md)

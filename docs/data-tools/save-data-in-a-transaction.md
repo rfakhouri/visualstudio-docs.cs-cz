@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Ukládání dat do transakce'
+title: 'Návod: Uložení dat do transakce'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec2ff00c4d355b2683c888fcdb6a333bf15e1b99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c1f035fc56cd673f12ba694d6a94ec57aea1d93b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745526"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>Návod: Ukládání dat do transakce
+# <a name="walkthrough-save-data-in-a-transaction"></a>Návod: Uložení dat do transakce
 Tento návod ukazuje, jak k uložení dat v transakci pomocí <xref:System.Transactions> oboru názvů. V tomto návodu vytvoříte aplikaci Windows Forms. Průvodce konfigurací zdroje dat použijete k vytvoření datové sady pro dvě tabulky v ukázkové databázi Northwind. Data vázané ovládací prvky na formuláři Windows, a budete upravovat kód pro objektu BindingNavigator na tlačítko Uložit k aktualizaci databáze uvnitř objekt TransactionScope přidáte.
 
 ## <a name="prerequisites"></a>Požadavky
@@ -52,7 +53,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu...** .
 
-2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Classic Desktop**.
+2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Desktop**.
 
 3. V prostředním podokně, vyberte **aplikace pro Windows Forms** typ projektu.
 
@@ -171,7 +172,7 @@ Pořadí pro vyřešení změny na souvisejících dat je následující:
 
 -   Vyberte **F5** ke spuštění aplikace.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: ukládání dat pomocí transakce](../data-tools/save-data-by-using-a-transaction.md)
 - [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

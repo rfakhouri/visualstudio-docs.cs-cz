@@ -21,11 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a887d31eded0f7f37e9ec5390a934c192836697
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff7a135c11df03e203f8cf221f02c40264fb6bd6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749226"
 ---
 # <a name="options-text-editor-all-languages"></a>Možnosti, textový editor, všechny jazyky
 Toto dialogové okno umožňuje změnit výchozí chování z editoru kódu. Toto nastavení platí také pro jiné editory založen na editoru kódu, například zobrazení zdroje Návrháře HTML. Chcete-li otevřít toto dialogové okno, vyberte **možnosti** z **nástroje** nabídky. V rámci **textového editoru** složky, rozbalte **všechny jazyky** podsložky a potom zvolte **Obecné**.
@@ -70,7 +71,7 @@ Toto dialogové okno umožňuje změnit výchozí chování z editoru kódu. Tot
 
  Při výběru, vrátí šipku indikátoru se zobrazí, kde je dlouhý řádek zalomen na druhém řádku.
 
- ![LineBreakSymbol – snímek obrazovky](../../ide/reference/media/linebreak.gif "linebreak")
+ ![LineBreakSymbol – snímek obrazovky](../../ide/reference/media/linebreak.gif)
 
  Pokud nechcete zobrazit tyto ukazatele, zrušte zaškrtnutí tohoto políčka.
 

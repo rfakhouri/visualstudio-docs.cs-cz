@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11e8c592bb91fc516ad6a5379330201198c65c14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e67ca994015dcb2609dce8680000a6d47c3b3a4e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748202"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Postupy: Vytvoření základního Lambertova shaderu
 
@@ -41,17 +42,17 @@ Než začnete, ujistěte se, že **vlastnosti** okno a **sada nástrojů** jsou 
 > [!NOTE]
 > K předvedení lépe účinku shaderu na tomto obrázku, byla zadána oranžovou barvu pomocí **MaterialDiffuse** parametr shaderu. Hry nebo aplikace můžete tento parametr slouží k poskytování hodnotu jedinečnou barvu pro každý objekt. Informace o parametrech podstatným, najdete v části Náhled shadery v [shaderu Návrhář](../designers/shader-designer.md).
 
- ![Graf shaderu a náhled jeho platnost. ] (../designers/media/digit-lambert-effect-graph.png "Číslice společnost Lambert vliv grafu")
+ ![Graf shaderu a náhled jeho platnost.](../designers/media/digit-lambert-effect-graph.png)
 
  Určité tvarů může poskytovat lepší verze Preview pro některé shadery. Další informace o tom, jak zobrazit náhled shadery v Návrháři shaderu, najdete v části Náhled shadery v [shaderu Návrhář](../designers/shader-designer.md).
 
  Následující obrázek znázorňuje shaderu, který je popsaný v tomto dokumentu použít pro 3D model.
 
- ![Společnost Lambert osvětlení použít pro model. ] (../designers/media/digit-lambert-effect-result.png "Číslice společnost Lambert vliv výsledek")
+ ![Společnost Lambert osvětlení použít pro model.](../designers/media/digit-lambert-effect-result.png)
 
  Další informace o tom, jak používat shaderu 3D modelu najdete v tématu [postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)

@@ -9,17 +9,18 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: deb52bd6b905e8e1cd73b75abd6304698858a20b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751621"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak používat Boost.Test jazyka C++ v sadě Visual Studio
 
 V **Visual Studio 2017 verze 15,5** a novější, je adaptér testovací Boost.Test integrována do prostředí Visual Studio IDE jako součást sady **vývoj aplikací s jazykem C++** zatížení.
 
-![Testovat adaptér Boost.Test](media/cpp-boost-component.png "Test adaptéru pro součást Boost.Test")
+![Test adaptér Boost.Test](media/cpp-boost-component.png)
 
 Pokud nemáte **vývoj aplikací s jazykem C++** zatížení nainstalovaná, otevřete **instalační program Visual Studio** a vyberte **upravit**. Vyberte **vývoj aplikací s jazykem C++** zatížení, klikněte **upravit** tlačítko.
 
@@ -43,7 +44,7 @@ Vyžaduje Boost.Test [nárůst](http://www.boost.org/)! Pokud nemáte nárůst n
 
 1. Pokud chcete vytvořit soubor sada testů, klikněte pravým tlačítkem na uzel projektu v **Průzkumníku řešení** a zvolte **přidat novou položku**.
 
-   ![Šablony položky Boost.Test](media/boost_test_item_template.png "Boost.Test šablony položky")
+   ![Šablony Boost.Test položky](media/boost_test_item_template.png)
 
 1. Nový soubor obsahuje metodu testovacího vzorku. Sestavení projektu povolit **Průzkumníka testů** metodu zjišťování.
 
@@ -87,7 +88,7 @@ V aplikaci Visual Studio 2017 verze 15,5 jsou k dispozici pro Boost.Test žádn�
 
 1. Testovací soubor, přidejte všechny potřeby `#include` direktivy chcete zviditelnit vašeho programu typy a funkce pro testovací kód. Tento program je obvykle jednu úroveň v hierarchii složek. Pokud zadáte `#include "../"`, zobrazí se okno technologie IntelliSense a umožňuje vybrat úplnou cestu k souboru záhlaví.
 
-   ![Přidat # direktivy include](media/cpp-gtest-includes.png "přidat zahrnují direktivy pro test souboru")
+   ![Přidat # direktivy include](media/cpp-gtest-includes.png)
 
    Můžete použít samostatné knihovna se:
 
@@ -125,5 +126,5 @@ BOOST_AUTO_TEST_CASE(my\_boost_test)
 ## <a name="write-and-run-tests"></a>Zápis a spouštění testů
 Nyní jste připraveni k zápisu a testy skóre. Najdete v článku [dokumentaci ke knihovně pro testování nárůst](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html) informace o testovací makra. V tématu [spouštění testů jednotek pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md) informace o zjišťování, spuštění a seskupení testů pomocí **Průzkumníka testů**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 [Zápis testů částí pro C/C++](writing-unit-tests-for-c-cpp.md)

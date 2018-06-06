@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: dac63faa3c34983a8ac0be9ccd7cbd9fae9a1cbe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751686"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Použít Microsoft jednotka testování Framework pro C++ v sadě Visual Studio
 
@@ -55,7 +56,7 @@ Použít statické metody v [Assert](microsoft-visualstudio-testtools-cppunittes
 2.  V Průzkumníku testu zvolte **spustit všechny**, nebo vyberte konkrétní testy, kterou chcete spustit. Klikněte pravým tlačítkem myši na test pro další možnosti, včetně spuštění v režimu ladění se zarážkami povolena.
 3. V **výstup – okno** zvolte **testy** v rozevírací dolů zobrazení zprávy zapsané podle `Logger` třídy:
 
-  ![Okno výstup C++ zobrazující zkušebních zpráv](media/cpp-test-output-window.png "výstup – okno")
+  ![Okno výstup C++ zobrazující zkušebních zpráv](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Definování vlastnosti umožňující seskupení
 Můžete definovat vlastnosti na testovací metody, které vám umožní kategorií a skupin testů v **testování Explorer**. Můžete definovat výšku, použijte `TEST_METHOD_ATTRIBUTE` makro. Například můžete definovat výšku s názvem `TEST_MY_TRAIT`:
@@ -90,6 +91,6 @@ TEST_METHOD(Method1)
 |`TEST_PRIORITY(priority)`|Pomocí předdefinovaných znak Priority relativní priority přiřadit zkušební metody.|
 
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 [Rychlý začátek: Vývoj řízený testy s použitím Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)
 

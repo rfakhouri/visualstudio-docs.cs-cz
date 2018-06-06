@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e3b082c57e48d7c70fdda22c68c1a9d8980f71
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 78b7fbb6480f0793b1641159cd3f06c471907603
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750100"
 ---
-# <a name="cvinitprovider-function"></a>CvInitProvider – funkce
+# <a name="cvinitprovider-function"></a>Cvinitprovider – funkce
 Inicializuje zprostředkovatele značky. Musí být volána před provedením jakékoli jiné funkce SDK Vizualizéru souběžnosti.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -43,7 +44,7 @@ HRESULT CvInitProvider(
  S_OK, když je zprostředkovatel úspěšně inicializován nebo kód chyby v případě, že existuje byly všechny chyby. Makra úspěšné nebo NEÚSPĚŠNÉ použijte ke kontrole chybový stav.  
   
 ## <a name="requirements"></a>Požadavky  
- **Záhlaví:** cvmarkers.h  
+ **Záhlaví:** *cvmarkers.h*  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)

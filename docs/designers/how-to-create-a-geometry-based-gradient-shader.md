@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2aeea5cf70b3c9a70b9f8e80961825bfff179a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 056eae05911af2a9ae6be12f2d3d7b18106df9b1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745773"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Postupy: Vytvoření přechodu shaderu založeného na geometrii
 
 Tento článek ukazuje, jak vytvořit na základě geometrie přechodu shaderu pomocí návrháře shaderu a jazyk směrované shaderu grafu. Tato shaderu škáluje konstantní hodnotu barva RGB podle výšky každého bodu objektu v prostoru world.
 
-## <a name="create-a-geometry-based-gradient-shader"></a>Vytvořit na základě geometrie přechodu shaderu
+## <a name="create-a-geometry-based-gradient-shader"></a>Vytvoření přechodu shaderu založeného na geometrii
 
 Na základě geometrie shaderu můžete implementovat začleněním pozici pixelech do vaší shaderu. V jazyce stínování obsahuje jeden bod informace než jenom jeho barvy a umístění na 2D obrazovce. Jeden bod – označuje jako *fragment* v některé systémy – je kolekce hodnot, které popisují prostor, který odpovídá pixelu. Shaderu, který je popsaný v tomto dokumentu využívá výška jednotlivých pixelů 3D objektu v prostoru world ovlivnit barvu závěrečný výstup fragmentu.
 
@@ -49,17 +50,17 @@ Následující obrázek znázorňuje dokončené shaderu a náhled shaderu použ
 > [!NOTE]
 > V tomto obrázku oranžovou barvu je určena k lépe ukazují účinek shaderu, ale protože preview tvar, který má žádné pozici v prostoru world, shaderu nemůže zobrazit jejich náhled plně v Návrháři shaderu. Shaderu musí zobrazit náhled v skutečné scény k předvedení plný vliv.
 
- ![Graf shaderu a náhled jeho dopad](../designers/media/digit-gradient-effect-graph.png "číslice přechodu vliv grafu")
+ ![Graf shaderu a náhled jeho dopad](../designers/media/digit-gradient-effect-graph.png)
 
  Určité tvarů může poskytovat lepší verze Preview pro některé shadery. Informace o tom, jak zobrazit náhled shadery v Návrháři shaderu najdete v tématu **náhled shadery** v [shaderu návrháře](../designers/shader-designer.md)
 
  Následující obrázek znázorňuje shaderu, který je popsaný v tomto dokumentu použít pro 3D scény, která je znázorněna v [postup: Model 3D geologické struktury](../designers/how-to-model-3-d-terrain.md). Intenzita barvy se zvyšuje s výšky bodu v celém světě.
 
- ![Přechodu vliv u a 3&#45;D geologické struktury modelu](../designers/media/digit-gradient-effect-result.png "číslice přechodu vliv výsledek")
+ ![Přechodu vliv u a 3&#45;D geologické struktury modelu](../designers/media/digit-gradient-effect-result.png)
 
  Další informace o tom, jak používat shaderu 3D modelu najdete v tématu [postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)

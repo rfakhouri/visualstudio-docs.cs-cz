@@ -22,18 +22,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb2106c89b9bbef2babbe7e4d203c32a1d96d7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f0241f1e918b4c0022106059b0466a15559f2e84
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747730"
 ---
 # <a name="miscellaneous-files"></a>Ostatní soubory
 Můžete chtít použít [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editory pracovat nezávisle na soubory z projektu nebo řešení. Při řešení otevřené, můžete otevřít a upravit soubory bez jejich přidáním do řešení nebo do projektu. Soubory, které chcete pracovat nezávisle z kontejnerů se nazývají různé soubory. Ostatní soubory jsou externí vzhledem k řešení a projekty, nejsou zahrnuty v sestavení a nemůže být součástí řešení ve správě zdrojového kódu.
 
  Otevírání souborů nezávisle z kontejneru je vhodné pro celou řadu důvodů. Můžete mít soubor, který chcete zobrazit při vývoji řešení pro projekt ale není nezbytný pro vývoj řešení. Běžné mezi příklady patří vývoj poznámky nebo pokyny, schéma databáze a klipů kódu. Kromě toho můžete chtít vytvořit samostatný soubor.
 
- ![Projekty řešení](../../ide/reference/media/projects_solutions_misc.gif "Projects_Solutions_Misc")
+ ![Řešení pro projekty](../../ide/reference/media/projects_solutions_misc.gif)
 
  Průzkumník řešení může zobrazit složku různé soubory pro soubory, pokud jsou povolené možnosti složky. Možnosti můžete nastavit [dokumenty, prostředí, dialogové okno Možnosti](../../ide/reference/documents-environment-options-dialog-box.md). Když zavřete soubor různé, není přidružený žádné konkrétní řešení nebo produktu project Pokud možnost je povolen také pro tento.
 

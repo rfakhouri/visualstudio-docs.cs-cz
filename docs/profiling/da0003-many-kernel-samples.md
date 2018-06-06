@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 508ba3cd803aee877e022d447f061e6e3d495e51
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 97e2e745b59a22110f6392e2cd6fec1aea0a667a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750230"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Vysoký počet ukázek jádra
 |||  
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/19/2018
   
  Vzorkování je co nejúčinnější, když jsou profilace aplikací, které tráví většinu doba pro jejich pracuje v uživatelském režimu. Počet vzorků, které byly získány při provádění aplikace v režimu jádra, které může naznačovat časté vstupně-výstupních operací nebo může naznačit, že kontext, ve kterém dochází k přepínače. Ani jeden z těchto operací můžete prozkoumat pomocí metody vzorkování. Pokud jsou odebrány příliš mnoho vzorky režimu jádra, nesmí obsahovat data vzorkování dostatek ukázky režimu uživatele je statisticky významný.  
   
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
+## <a name="how-to-fix-violations"></a>Jak opravit porušení  
  Vezměte v úvahu profilace aplikace znovu pomocí jedné z následujících možností:  
   
 -   Profilu pomocí metody instrumentace.  

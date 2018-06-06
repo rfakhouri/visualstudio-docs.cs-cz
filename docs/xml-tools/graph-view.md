@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b95d8396cd96741187ae0146d2f727c3433b3ef
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751699"
 ---
 # <a name="graph-view"></a>Zobrazení grafu
 
@@ -22,7 +23,7 @@ Zobrazení grafu poskytuje grafické reprezentace globální schématu uzly a vz
 
  Následující obrázek znázorňuje zobrazení grafu se šesti globální uzly na jeho návrhové ploše.
 
- ![Zobrazení návrháře grafu schématu XML](../xml-tools/media/xsddesigner_graphview.gif "XSDDesigner_GraphView")
+ ![Zobrazení návrháře grafu schématu XML](../xml-tools/media/xsddesigner_graphview.gif)
 
 ## <a name="design-surface"></a>Návrhové plochy
 
@@ -34,7 +35,7 @@ Zobrazení grafu poskytuje grafické reprezentace globální schématu uzly a vz
 
  Pokud návrhovou plochu, která je prázdné, editoru XML **Explorer schématu XML**, a jsou zobrazeny vodoznak. *Vodoznak* seznam obsahuje odkazy na všechna zobrazení XSD Designer.
 
- ![Návrhář XSD; Graf zobrazení](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
+ ![Návrhář XSD; Zobrazení grafu](../xml-tools/media/xsdgraphviewwatermark.gif)
 
  Pokud sada schéma obsahuje chyby, zobrazí se následující text na konci seznamu: "K zobrazení a opravte chyby v sadě pomocí seznamu chyb."
 
@@ -98,7 +99,7 @@ Zobrazení grafu poskytuje grafické reprezentace globální schématu uzly a vz
 
  Tlačítka panelu nástrojů XSD následující jsou povolené, když je aktivní zobrazení grafu.
 
- ![XML schéma návrháře nástrojů](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")
+ ![Nástrojů Návrhář schématu XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Možnost|Popis|
 |------------|-----------------|
@@ -145,6 +146,6 @@ Posuvník přiblížení je plné krytí, pokud vyberte ho, při přechodu nebo 
 
  Pokud provedete změny schématu nastavení v editoru XML, změny budou synchronizovány v zobrazení grafu. Další informace najdete v tématu [integrace s editoru XML](../xml-tools/integration-with-xml-editor.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Návrhové plochy](../xml-tools/xml-schema-designer-workspace.md)

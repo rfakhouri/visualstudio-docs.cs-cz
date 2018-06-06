@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748228"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -93,7 +94,7 @@ Pokud zadáte [přepsat](/dotnet/csharp/language-reference/keywords/override) a 
 
 K zahájení **přidat pomocí** operace, pozice, umístěte kurzor na typu odkaz, který nelze přeložit. Například když Vytvořte konzolovou aplikaci a poté přidejte `XmlTextReader` k tělu `Main` metody červenou vlnovkou se zobrazuje na tohoto řádku kódu protože odkaz na typ nelze přeložit. Potom může **přidat pomocí** prostřednictvím **rychlé akce**. **Rychlé akce** je viditelná jen při kurzor je nastavený na nevázaný typ.
 
-![Přidat pomocí, rychlá rozšířené obrázek akce](../ide/media/addusing-quickaction.png "AddUsing QuickAction")
+![Přidat pomocí, rychlá rozšířené obrázek akce](../ide/media/addusing-quickaction.png)
 
 Klikněte na ikonu žárovky a potom zvolte **pomocí System.Xml;** a automaticky tak přidejte použití – direktiva.
 
@@ -143,11 +144,11 @@ V editoru kódu technologie IntelliSense můžete spojit metody (obslužné ruti
 
 Pokud zadáte `+=` operátor po na pole událostí v *.cs* souboru, IntelliSense zobrazí výzvu s možností stiskněte **kartě** klíč. Vloží novou instanci třídy delegáta, který odkazuje na metodu zpracování události.
 
-![Tlačítko automaticky háku až](../ide/media/vxautohookup.gif "vxAutoHookUp")
+![Automatické háku tlačítko nahoru](../ide/media/vxautohookup.gif)
 
 Pokud vyberete **kartě**, IntelliSense automaticky dokončení příkazu a odkazu na obslužnou rutinu události se zobrazí jako vybraný text v editoru kódu. K dokončení automatického událostí spojení, IntelliSense vyzváni ke stisknutí tlačítka **kartě** klíč znovu a vytvořit prázdný se zakázaným inzerováním obslužné rutiny událostí.
 
-![Generovat obslužné rutiny události](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
+![Vygenerování obslužné rutiny](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
 > Pokud nové delegáta, který je vytvořen pomocí IntelliSense odkazuje stávající obslužné rutiny události, IntelliSense komunikuje tyto informace v popisu tlačítka. Poté můžete upravit tento odkaz; text je již vybrána v editoru kódu. Jinak automatické událostí spojení je dokončena v tomto okamžiku.
@@ -157,7 +158,7 @@ Pokud vyberete **kartě**, IntelliSense zástupných procedur se metoda se sprá
 > [!NOTE]
 > Použití **přejděte zpětné** příkaz na **zobrazení** nabídky (**Ctrl**+**-**) se vrátíte k události příkaz spojení.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Používání technologie IntelliSense](../ide/using-intellisense.md)
 - [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)

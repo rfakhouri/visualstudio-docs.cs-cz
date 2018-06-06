@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d15cf1d8e2d7a7178b6ffc423319fcadd8e00cad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 233527e92a6d0d20294769d070e8dc81b33753b4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746813"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Připojte se k datům v databázi aplikace Access (Windows Forms)
 Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (soubor MDF nebo soubor ACCDB). Po definování připojení, data se zobrazí v **zdroje dat** okno. Odtud můžete přetáhnout tabulky nebo zobrazení do formulářů.
@@ -37,7 +38,7 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
 
 2.  Na **zobrazení** nabídce vyberte možnost **ostatní okna** > **zdroje dat**.
 
-     ![Zobrazit další zdroje dat Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Zobrazit další zdroje dat systému Windows](../data-tools/media/viewdatasources.png)
 
 3.  V **zdroje dat** okně klikněte na tlačítko **přidat nový zdroj dat**.
 
@@ -59,7 +60,7 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
 
 9. Zpět v **přidat připojení** dialogové okno, vyberte **Microsoft Office 12.0 zprostředkovatel Access Database Engine OLE DB** z **zprostředkovatele OLE DB** rozevíracího seznamu.
 
-     ![OLE DB zprostředkovatel Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
+     ![OLE DB zprostředkovatel Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
 
      > [!NOTE]
      >  Pokud nevidíte **Microsoft Office 12.0 zprostředkovatel Access Database Engine OLE DB** ve zprostředkovateli OLE DB rozevíracího seznamu, budete muset nainstalovat [ovladač systému Office 2007: součásti pro připojení dat](https://www.microsoft.com/download/confirmation.aspx?id=23734).
@@ -87,7 +88,7 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
 
 2.  Na **zobrazení** nabídce vyberte možnost **ostatní okna** > **zdroje dat**.
 
-     ![Zobrazit další zdroje dat Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Zobrazit další zdroje dat systému Windows](../data-tools/media/viewdatasources.png)
 
 3.  V **zdroje dat** okně klikněte na tlačítko **přidat nový zdroj dat**.
 
@@ -103,7 +104,7 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
 
 8.  V **název souboru databáze**, zadejte cestu a název souboru .mdb, kterou chcete připojit k a pak vyberte **OK**.
 
-     ![Přidat připojení souboru databáze aplikace Access](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")
+     ![Přidat připojení souboru databáze aplikace Access](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. Vyberte **Další** na **zvolit datové připojení** stránky.
 
@@ -127,6 +128,6 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
 
 -   Přidejte logiku ověření pro <xref:System.Data.DataTable.ColumnChanging> nebo <xref:System.Data.DataTable.RowChanging> událostí tabulek dat v datové sadě (viz [ověření dat v datových sadách](../data-tools/validate-data-in-datasets.md)).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přidání připojení](../data-tools/add-new-connections.md)

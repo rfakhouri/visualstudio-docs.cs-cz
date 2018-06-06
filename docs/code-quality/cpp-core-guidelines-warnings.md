@@ -10,11 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a56c8bd9ac0c3745e8096dc12fbfee730ba9558a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef0b06be65322dc6a15f92b1d808d585960f0331
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746063"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Pomocí kameny základní pokyny pro C++
 Základní pokyny C++ jsou přenosné sadu pokyny, pravidla a osvědčené postupy o kódování v jazyce C++ vytvořené odborníky C++ a návrháři. Visual Studio aktuálně podporuje podmnožinu tato pravidla v rámci jeho nástrojů pro analýzu kódu pro jazyk C++. Kameny platí základní jsou nainstalované ve výchozím nastavení v Visual Studio 2017 a [k dispozici jako balíčku NuGet pro Visual Studio 2015](#vs2015_corecheck).
@@ -25,11 +26,11 @@ Základní pokyny C++ jsou přenosné sadu pokyny, pravidla a osvědčené postu
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Povolit podle pokynů zkontrolujte základní C++ v analýza kódu
  Analýza kódu v projektu můžete povolit výběrem **povolit analýza kódu při sestavování** zaškrtnout políčko **analýza kódu** části **stránky vlastností** dialogové okno pro váš projekt.
 
- ![Stránka vlastností pro nastavení obecné analýzy kódu](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")
+ ![Stránka vlastností pro nastavení obecné analýzy kódu](../code-quality/media/cppcorecheck_codeanalysis_general.png)
 
  Zkontrolujte základní C++ pravidla jsou rozšíření sad výchozí pravidlo, které spustit, když je povolena analýza kódu. Protože C++ základní zkontrolujte pravidla jsou ve vývoji, některá pravidla jsou dobře známou a některé nemusí být připraven k použití na všechny kód, ale stále může být informativní. Pravidla jsou rozděleny do dvou skupin: bylo uvolněno a experimentální. Můžete zvolit, jestli se má spustit vydaná nebo experimentální pravidla ve vlastnostech projektu.
 
- ![Stránka vlastností pro nastavení rozšíření analýzy kódu](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")
+ ![Stránka vlastností pro nastavení rozšíření analýzy kódu](../code-quality/media/cppcorecheck_codeanalysis_extensions.png)
 
  Chcete-li povolit nebo zakázat sady pravidel C++ zkontrolujte jádra, otevřete **stránky vlastností** dialogové okno pro váš projekt. V části **vlastnosti konfigurace**, rozbalte položku **analýza kódu**, **rozšíření**. V rozevírací nabídce řízení vedle **povolit C++ základní zkontrolujte (vydané)** nebo **povolit C++ základní zkontrolujte (experimentální)**, zvolte **Ano** nebo **ne**. Zvolte **OK** nebo **použít** uložte provedené změny.
 
@@ -228,7 +229,7 @@ Musíte používat správné parametry příkazového řádku pro kompilátor a 
 
 2.  V **Správce balíčků NuGet** vyhledejte Microsoft.CppCoreCheck.
 
-     ![Okno Správce balíčků Nuget ukazuje CppCoreCheck balíček](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")
+     ![Okno Správce balíčků Nuget ukazuje CppCoreCheck balíčku](../code-quality/media/cppcorecheck_nuget_window.png)
 
 3.  Vyberte balíček Microsoft.CppCoreCheck a potom zvolte **nainstalovat** tlačítko Přidat pravidla do projektu.
 

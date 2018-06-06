@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bf719eec2b9695e6019cf78e16ec5018639a92ed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d358a5f4035d3da1dee4a391fb07931b15d68733
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751043"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Oprava nedetekovatelných dynamických parametrů v testu výkonnosti webu
 
@@ -36,13 +37,13 @@ K předvedení rozpoznat a nedetekovatelných dynamických parametrů, vytvoří
 
 1.  Vytvořte nový projekt ASP.NET s názvem DynamicParamaterSample.
 
-     ![Vytvořit prázdný projekt webové aplikace ASP.NET](../test/media/web_test_dynamicparameter_aspproject.png "Web_Test_DynamicParameter_ASPProject")
+     ![Vytvořit prázdný projekt webové aplikace ASP.NET](../test/media/web_test_dynamicparameter_aspproject.png)
 
 2.  Přidání webového formuláře s názvem Querystring.aspx.
 
 3.  V návrhovém zobrazení přetáhněte ji HiddenField na stránku a v pak změňte hodnotu pro vlastnost (ID) pro HiddenFieldSessionID.
 
-     ![Přidat HiddenField](../test/media/web_test_dynamicparameter_hiddenfield.png "Web_Test_DynamicParameter_HiddenField")
+     ![Přidat HiddenField](../test/media/web_test_dynamicparameter_hiddenfield.png)
 
 4.  Změnit zobrazení zdroje pro stránku řetězce dotazu a přidejte že následující zvýrazněnou kódu ASP.NET a JavaScript sloužící ke generování dynamických parametrů ID imitované relace:
 
@@ -77,19 +78,19 @@ K předvedení rozpoznat a nedetekovatelných dynamických parametrů, vytvoří
 
 7.  V návrhovém zobrazení přetáhněte popisek na stránku a změňte hodnotu pro vlastnost jeho (ID) na IndexLabel.
 
-     ![Přidání štítku do webového formuláře](../test/media/web_test_dynamicparameter_label.png "Web_Test_DynamicParameter_Label")
+     ![Přidání štítku do webového formuláře](../test/media/web_test_dynamicparameter_label.png)
 
 8.  Přetáhněte hypertextový odkaz na stránku a změňte vale pro vlastnost Text na zpět.
 
-     ![Přidání hypertextového odkazu ve webovém formuláři](../test/media/web_test_dynamicparameter_hyperlink.png "Web_Test_DynamicParameter_Hyperlink")
+     ![Přidání hypertextového odkazu ve webovém formuláři](../test/media/web_test_dynamicparameter_hyperlink.png)
 
 9. Zvolte (...) pro vlastnost NavigationURL.
 
-     ![Upravit vlastnosti NavigateURL](../test/media/web_test_dynamicparameter_hyperlink_navurl.png "Web_Test_DynamicParameter_Hyperlink_NavURL")
+     ![Upravit vlastnosti NavigateURL](../test/media/web_test_dynamicparameter_hyperlink_navurl.png)
 
      Vyberte Querystring.aspx.
 
-     ![Vyberte adresu URL jako Querystring.aspx](../test/media/web_test_dynamicparameter_hyperlink_navurl2.png "Web_Test_DynamicParameter_Hyperlink_NavURL2")
+     ![Vyberte adresu URL jako Querystring.aspx](../test/media/web_test_dynamicparameter_hyperlink_navurl2.png)
 
 10. Otevřete soubor ASPQuery.aspx.cs a přidejte následující zvýrazněný kód do metody Page_Load:
 
@@ -104,7 +105,7 @@ K předvedení rozpoznat a nedetekovatelných dynamických parametrů, vytvoří
 
      Stejně jako jsme to udělali pro druhé stránce, přetáhněte štítek na nastavení jeho (ID) vlastnost IndexLabel formuláře a přetáhněte hypertextový odkaz na nastavení jeho vlastnost text zpět a jeho vlastnost NavigationURL na Querystring.aspx formuláře.
 
-     ![Přidejte a nakonfigurujte třetí webového formuláře](../test/media/web_test_dynamicparameter_addwebform3.png "Web_Test_DynamicParameter_AddWebForm3")
+     ![Přidejte a nakonfigurujte třetí webového formuláře](../test/media/web_test_dynamicparameter_addwebform3.png)
 
 12. Otevřete soubor JScriptQuery.aspx.cs a přidejte následující zvýrazněný kód do metody Page_Load:
 
@@ -119,33 +120,33 @@ K předvedení rozpoznat a nedetekovatelných dynamických parametrů, vytvoří
 
 14. V Průzkumníku řešení nastavte Querystring.aspx jako úvodní stránky.
 
-     ![Nastavení úvodní stránky na Querystring.aspx](../test/media/web_test_dynamicparameter_setstartpage.png "Web_Test_DynamicParameter_SetStartPage")
+     ![Nastavení úvodní stránky na Querystring.aspx](../test/media/web_test_dynamicparameter_setstartpage.png)
 
 15. Stisknutím kombinace kláves CTRL + F5 a spusťte webovou aplikaci v prohlížeči. Zkopírujte adresu URL. Je nutné ho při záznamu svůj test.
 
 16. Zkuste i odkazy. Se musí každý zobrazí se zpráva "úspěch. Dynamické řetězec dotazu nebyl nalezen parametr."
 
-     ![Spuštění webové aplikace](../test/media/web_test_dynamicparameter_runapp.png "Web_Test_DynamicParameter_RunApp")
+     ![Spuštění webové aplikace](../test/media/web_test_dynamicparameter_runapp.png)
 
-     ![Success&#33;](../test/media/web_test_dynamicparameter_runapp2.png "Web_Test_DynamicParameter_RunApp2")
+     ![Úspěch&#33;](../test/media/web_test_dynamicparameter_runapp2.png)
 
 ## <a name="create-a-web-performance-test"></a>Vytvoření testu výkonnosti webu
 
 1.  Přidejte výkonu webu a zatížení testovacího projektu do vašeho řešení.
 
-     ![Přidat web perfromance a zatížení testování projektu](../test/media/web_test_dynamicparameter_addtestproject.png "Web_Test_DynamicParameter_AddTestProject")
+     ![Přidání webového projektu testovací perfromance a zatížení](../test/media/web_test_dynamicparameter_addtestproject.png)
 
 2.  Přejmenujte WebTest1.webtest DynamicParameterSampleApp.webtest.
 
-     ![Přejmenujte testu výkonnosti webu](../test/media/web_test_dynamicparameter_renametest.png "Web_Test_DynamicParameter_RenameTest")
+     ![Přejmenujte testu výkonnosti webu](../test/media/web_test_dynamicparameter_renametest.png)
 
 3.  Záznam test.
 
-     ![Zaznamenejte testu výkonnosti webu](../test/media/web_test_dynamicparameter_recordtest.png "Web_Test_DynamicParameter_RecordTest")
+     ![Záznam testu výkonnosti webu](../test/media/web_test_dynamicparameter_recordtest.png)
 
 4.  Zkopírujte a vložte adresu URL z webového serveru, které testujete do prohlížeče.
 
-     ![Vložte adresu URL z webu testuje](../test/media/web_test_dynamicparameter_recordtest2.png "Web_Test_DynamicParameter_RecordTest2")
+     ![Vložte adresu URL z webu testuje](../test/media/web_test_dynamicparameter_recordtest2.png)
 
 5.  Procházejte webové aplikace. Zvolte ASP.NET odkazu, odkaz zpět a javascript odkazu, který následuje zpětný odkaz.
 
@@ -159,15 +160,15 @@ K předvedení rozpoznat a nedetekovatelných dynamických parametrů, vytvoří
 
      Klepněte na tlačítko OK přidat pravidla pro extrakci do Querystring.aspx, vazbu na stránku ASPQuery.
 
-     ![Zvýšení úrovně dynamický parametr zjištěné](../test/media/web_test_dynamicparameter_promotedialog.png "Web_Test_DynamicParameter_PromoteDialog")
+     ![Zvýšení úrovně zjištěné dynamický parametr](../test/media/web_test_dynamicparameter_promotedialog.png)
 
      Pravidla pro extrakci se přidá na první požadavek pro Querystring.aspx.
 
-     ![Pravidla pro extrakci přidána do žádosti o](../test/media/web_test_dynamicparameter_autoextractionrule.png "Web_Test_DynamicParameter_AutoExtractionRule")
+     ![Pravidla pro extrakci přidány k žádosti](../test/media/web_test_dynamicparameter_autoextractionrule.png)
 
      Rozbalte druhý žádost ve stromové struktuře žádost o ASPQuery.aspx a Všimněte si, že CustomQueryString hodnota byla svázána se pravidlo rozbalení.
 
-     ![CustomQueryString vázána na pravidla pro extrakci](../test/media/web_test_dynamicparameter_autoextractionrule2.png "Web_Test_DynamicParameter_AutoExtractionRule2")
+     ![CustomQueryString vázána na pravidla pro extrakci](../test/media/web_test_dynamicparameter_autoextractionrule2.png)
 
 8.  Uložte test.
 
@@ -175,19 +176,19 @@ K předvedení rozpoznat a nedetekovatelných dynamických parametrů, vytvoří
 
 1.  Spuštění testu.
 
-     ![Spuštění testu výkonnosti webu](../test/media/web_test_dynamicparameter_runtest.png "Web_Test_DynamicParameter_RunTest")
+     ![Spuštění testu výkonnosti webu](../test/media/web_test_dynamicparameter_runtest.png)
 
 2.  Čtvrtý požadavek pro stránku JScriptQuery.aspx selže. Přejděte na webový test.
 
-     ![Chyba dynamický parametr ve výsledcích testu](../test/media/web_test_dynamicparameter_runresults.png "Web_Test_DynamicParameter_RunResults")
+     ![Chyba dynamický parametr ve výsledcích testu](../test/media/web_test_dynamicparameter_runresults.png)
 
      Uzel JScriptQuery.aspx požadavku je zvýrazněn v editoru. Rozbalte uzel a Všimněte si, že část "1v0yhyiyr0raa2w4j4pwf5zl" CustomQueryString se zdá být dynamické.
 
-     ![By mohly vzbuzovat podezření dynamický parametr v CustomQueryString](../test/media/web_test_dynamicparameter_runresults2.png "Web_Test_DynamicParameter_RunResults2")
+     ![By mohly vzbuzovat podezření dynamický parametr v CustomQueryString](../test/media/web_test_dynamicparameter_runresults2.png)
 
 3.  Vraťte prohlížeč výsledků testu výkonnosti webu a vyberte stránku JScriptQuery.aspx, který selhal. Zvolte kartu požadavku, ověřte, zda je zaškrtnuté políčko Zobrazit nezpracovaná data, přejděte dolů a vyberte rychle najít na CustomQueryString.
 
-     ![Použití rychlého hledání k izolaci dynamických parametru](../test/media/web_test_dynamicparameter_runresultsquckfind.png "Web_Test_DynamicParameter_RunResultsQuckFind")
+     ![Použití rychlého hledání k izolaci dynamických parametru](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
 4.  Víme z vyhledávání v editoru testu, který požadavek JScriptQuery.aspx CustomQueryString byla přiřazena hodnota: `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`, a že je podezření dynamické část "1v0yhyiyr0raa2w4j4pwf5zl". V Najít co rozevíracího seznamu, odeberte podezření část hledaný řetězec. Řetězec by měl být "CustomQueryString = jScriptQueryString___".
 
@@ -206,43 +207,43 @@ K předvedení rozpoznat a nedetekovatelných dynamických parametrů, vytvoří
 
 5.  Použití rychlé hledání na HiddenFieldSessionID, vymazání hledání až zaškrtávací políčko a vyberete aktuální požadavek.
 
-     ![Použití rychlého hledání na HiddenFieldSession](../test/media/web_test_dynamicparameter_runresultsquckfindhiddensession.png "Web_Test_DynamicParameter_RunResultsQuckFindHiddenSession")
+     ![Použití rychlého hledání na HiddenFieldSession](../test/media/web_test_dynamicparameter_runresultsquckfindhiddensession.png)
 
      Všimněte si, že vrácená hodnota je záznam není stejný řetězec jako původní testu výkonnosti webu. Pro tento test spustit, je hodnota vrácená "5w4v3yrse4wa4axrafykqksq" a v původním záznamu, hodnota je "1v0yhyiyr0raa2w4j4pwf5zl". Vzhledem k tomu, že hodnota není shodná s původní záznamu, je generována chyba.
 
 6.  Protože máme opravit dynamický parametr v původním záznamu, vyberte na panelu nástrojů zaznamenaná výsledek.
 
-     ![Zvolte zaznamenaná výsledek](../test/media/web_test_dynamicparameter_recordedresult.png "Web_Test_DynamicParameter_RecordedResult")
+     ![Zvolte zaznamenaná výsledek](../test/media/web_test_dynamicparameter_recordedresult.png)
 
 7.  Ve výsledcích zaznamenaná vyberte třetí požadavku, což je stejný Querystringrequest.aspx požadavek, který izolované v testovacím běhu výsledky.
 
-     ![Vyberte stejné žádosti ve výsledcích zaznamenaná](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png "Web_Test_DynamicParameter_RecordedResultsSelectNode")
+     ![Vyberte stejné žádosti ve výsledcích zaznamenaná](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png)
 
      Vyberte kartu odpovědi, posuňte se dolů a vyberte původní hodnotu dynamický parametr "1v0yhyiyr0raa2w4j4pwf5zl", který jste dříve izolované a přidání pravidla pro extrakci.
 
-     ![Přidání pravidla pro extrakci pro dynamický parametr](../test/media/web_test_dynamicparameter_recordedresultaddextractionrule.png "Web_Test_DynamicParameter_RecordedResultAddExtractionRule")
+     ![Přidání pravidla pro extrakci pro dynamický parametr](../test/media/web_test_dynamicparameter_recordedresultaddextractionrule.png)
 
      Nové pravidlo extrakce se přidá k žádosti o Querystring.aspx a je přiřazena hodnota 'Param0'.
 
      Pokud dialogové okno nám informuje, že nebyly nalezeny extrahované text pro vazby parametru, klepněte na tlačítko Ano.
 
-     ![Vytvoření pravidla pro extrakci](../test/media/web_test_dynamicparameter_addextractiondialog.png "Web_Test_DynamicParameter_AddExtractionDialog")
+     ![Vytvoření pravidla pro extrakci](../test/media/web_test_dynamicparameter_addextractiondialog.png)
 
 8.  Zvolte Najít další. Na první shodu je ten, který je potřeba změnit, což je parametr pro CustomQueryString v JScriptQuery stránky.
 
-     ![Najít a nahradit text pro parametr](../test/media/web_test_dynamicparameter_addextractionfindreplace.png "Web_Test_DynamicParameter_AddExtractionFindReplace")
+     ![Najít a nahradit text pro parametr](../test/media/web_test_dynamicparameter_addextractionfindreplace.png)
 
 9. Zvolte nahrazení.
 
-     ![Nahraďte text s parametrem](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png "Web_Test_DynamicParameter_AddExtractionFindReplace2")
+     ![Nahraďte text s parametrem](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
      Parametr řetězce dotazu v žádosti o JScriptQuery.aspx se aktualizuje pomocí nový parametr kontextu: CustomQueryString = jScriptQueryString___ {{Param0}}.
 
-     ![Parametr řetězce dotazu použít](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png "Web_Test_DynamicParameter_AddExtractionFindReplace3")
+     ![Parametr řetězce dotazu použít](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
 10. Zavřete najít a nahradit dialogové okno. Všimněte si, podobně jako strukturu ve stromové struktuře žádost mezi dynamický parametr zjištěné a -zjistil dynamický parametr, který je korelační.
 
-     ![Byla zjištěna a korelační dynamických parametrů](../test/media/web_test_dynamicparameter_conclusion.png "Web_Test_DynamicParameter_Conclusion")
+     ![Zjištěné a korelační dynamické parametry](../test/media/web_test_dynamicparameter_conclusion.png)
 
 11. Spuštění testu. Nyní pracuje bez chyby.
 

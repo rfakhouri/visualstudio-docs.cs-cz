@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1c7df62a0801534f8a23f7b5cde984c75742406a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d88ba8b5648135d361a145dbc98a82dee6836e50
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745591"
 ---
 # <a name="add-new-data-sources"></a>Přidat nové zdroje dat
 V rámci .NET data nástroje v sadě Visual Studio termín *zdroj dat* odkazují na objekty .NET, které se připojují k úložišti dat a zpřístupnit data pro aplikace .NET. Návrháři Visual Studio můžete využívat výstup zdroje dat pro generování často používaný kód, který váže data do formulářů, když jste přetažení databázové objekty z **zdroje dat** okno. Tento typ zdroje dat může být:
@@ -39,11 +40,11 @@ V rámci .NET data nástroje v sadě Visual Studio termín *zdroj dat* odkazují
 
  Vytvářet a upravovat zdroje dat pomocí **Průvodce konfigurací zdroje dat** v aplikaci Windows Forms nebo Windows Presentation Foundation. Rozhraní Entity Framework, nejprve vytvořit třídy entity, a poté spusťte Průvodce výběrem **projektu** > **přidat nový zdroj dat** (podrobněji popsané v dále v tomto článku).
 
- ![Průvodce konfigurací zdroje dat](../data-tools/media/data-source-configuration-wizard.png "Průvodce konfigurací zdroje dat")
+ ![Průvodce konfigurací zdroje dat](../data-tools/media/data-source-configuration-wizard.png)
 
  Po vytvoření zdroje dat, zobrazí se v **zdroje dat** okno nástroje (Shift + Alt + D nebo **zobrazení** > **ostatní okna**  >  **Zdroj dat**). Můžete přetáhnout zdroje dat z **zdroje dat** okna do formuláře návrhové ploše nebo ovládací prvek. To způsobí, že má být vygenerován často používaný kód – kódu, který zobrazuje data, která pochází v úložišti dat pro uživatele. Následující obrázek ukazuje datovou sadu, která byla vyřazena na formuláři Windows. Pokud jste vybrali F5 na aplikaci, by se data z databáze v ovládacích prvků formuláře.
 
- ![Zdroj dat přetáhněte operaci](../data-tools/media/raddata-data-source-drag-operation.png "raddata zdroj dat přetáhněte operace")
+ ![Operace přetažení zdroje dat](../data-tools/media/raddata-data-source-drag-operation.png)
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>Zdroj dat pro databáze nebo souboru databáze
 
@@ -53,15 +54,15 @@ V rámci .NET data nástroje v sadě Visual Studio termín *zdroj dat* odkazují
 ### <a name="entity-classes"></a>Třídy entity
  Chcete-li vytvořit model Entity Framework jako zdroj dat, nejprve spustit **Entity Data Model Wizard** k vytváření tříd entity (**projektu** > **přidat novou položku**  >  **Model ADO.NET Entity Data Model**).
 
- ![Nová položka projektu modelu Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png "položka projektu modelu raddata nové Entity Framework")
+ ![Nová položka projektu modelu Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
  Zvolte metodu, pomocí kterého chcete generovat model.
 
- ![Entity Data Model průvodce](../data-tools/media/raddata-entity-data-model-wizard.png "raddata Průvodce Model dat Entity")
+ ![Průvodce Model dat entity](../data-tools/media/raddata-entity-data-model-wizard.png)
 
  Přidáte jako zdroj dat modelu. Zobrazí třídy, které byly vygenerovány v **Průvodce konfigurací zdroje dat** při výběru **objekty** kategorie.
 
- ![Průvodce konfigurací zdroje dat s tříd entit](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png "raddata Průvodce konfigurací zdroje dat s tříd entit")
+ ![Průvodce konfigurací zdroje dat s tříd entit](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
 ## <a name="data-source-for-a-service"></a>Zdroj dat pro služby
  Chcete-li vytvořit zdroj dat ze služby, spusťte **Průvodce konfigurací zdroje dat** a zvolte **služby** typ zdroje dat. Toto je pouze zástupce **přidat odkaz na službu** dialogové okno, které můžete otevřít také kliknutím pravým tlačítkem myši na projekt v **Průzkumníku řešení** a výběrem **přidat odkaz na službu** .

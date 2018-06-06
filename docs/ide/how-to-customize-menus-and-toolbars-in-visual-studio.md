@@ -29,11 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6400f1d501ef6a89a6f98cf040d2f729469ccf71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9e9cab18be65d29b6cdd22b8948d2e89f75c4fe9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745946"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Postupy: přizpůsobení nabídek a panelů nástrojů v sadě Visual Studio
 
@@ -52,7 +53,7 @@ Visual Studio můžete přizpůsobit, nejen přidávání a odebírání nabídk
 
     -   Chcete-li přidat nabídku, zvolte **přidat nové nabídky** tlačítko, vyberte **změnit výběr** tlačítko s názvem v nabídce, která chcete přidat.
 
-        ![Přizpůsobit dialogové okno znázorňující způsob přidání nabídky](../ide/media/addmenu.png "PřidatNabídku")
+        ![Přizpůsobit dialogové okno znázorňující způsob přidání nabídky](../ide/media/addmenu.png)
 
     -   Odebrat z nabídky, vyberte ho v **ovládací prvky** seznamu a potom vyberte **odstranit** tlačítko.
 
@@ -68,7 +69,7 @@ Visual Studio můžete přizpůsobit, nejen přidávání a odebírání nabídk
 
     -   Chcete-li přidat panel nástrojů, zvolte **nový** tlačítko, zadejte název pro panel nástrojů, který chcete přidat a potom vyberte **OK** tlačítko.
 
-        ![Přizpůsobit dialogové okno znázorňující postup přidání panelů nástrojů](../ide/media/addtoolbar.png "AddToolbar")
+        ![Přizpůsobit dialogové okno znázorňující postup přidání panelů nástrojů](../ide/media/addtoolbar.png)
 
     -   Odebrat vlastní panel nástrojů, vyberte ho **panely nástrojů** seznamu a potom vyberte **odstranit** tlačítko.
 
@@ -96,7 +97,7 @@ Visual Studio můžete přizpůsobit, nejen přidávání a odebírání nabídk
 
         V **přidejte příkaz** dialogovém okně vyberte položku v **kategorie** vyberte položku v **příkazy** seznamu a potom vyberte **OK**tlačítko.
 
-        ![Příkaz dialogové okno Přidat v sadě Visual Studio](../ide/media/addcommand.png "addcommand –")
+        ![Příkaz dialogové okno Přidat v sadě Visual Studio](../ide/media/addcommand.png)
 
     -   Pokud chcete odstranit příkaz, vyberte ho v **ovládací prvky** seznamu a potom vyberte **odstranit** tlačítko.
 
@@ -118,7 +119,7 @@ Visual Studio můžete přizpůsobit, nejen přidávání a odebírání nabídk
 
     Můžete také obnovit všechny nabídek a panelů nástrojů výběrem **Obnovit vše** tlačítko.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přizpůsobení integrovaného vývojového prostředí](../ide/personalizing-the-visual-studio-ide.md)
 - [Přizpůsobení editoru](../ide/customizing-the-editor.md)

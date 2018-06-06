@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2aaa32de4742d5c3897ec2290e77223b0d6cdd56
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752660"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu pro sadu Visual Studio
 
@@ -69,7 +70,7 @@ Můžete hledat ve IDE pro příkazy, soubory a možnosti, kromě filtrování o
 
 - **Vyhledání dialogových oken, příkazy nabídky a možnosti**. V [Snadné spuštění](../ide/reference/quick-launch-environment-options-dialog-box.md) zadejte klíčová slova nebo fráze pro položky, které se pokoušíte najít. Například se zobrazí následující možnosti, pokud zadáte `new project`:
 
-    ![Rychlé spuštění výsledky pro 'nový projekt'](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
+    ![Rychlé spuštění výsledky pro "nový projekt.](../ide/media/productivity_quicklaunch.png)
 
     **Snadné spuštění** zobrazí odkazy na **nový projekt** dialogové okno, **přidat novou položku** dialogové okno a **projekty a řešení** stránku **Možnosti** dialogové okno, mimo jiné. Rychlé spuštění výsledky mohou také obsahovat soubory projektu a nástroje systému windows.
 
@@ -79,7 +80,7 @@ Ladění může využívat velké množství času, ale následující tipy vám
 
 - **Test stejné stránky, aplikace nebo webu v různých prohlížečích**. Při ladění kódu můžete snadno přepínat mezi nainstalovaných webových prohlížečů, včetně [nástroj Page Inspector (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), aniž byste museli spouštět **procházet s** dialogové okno. Můžete použít **cíl ladění** seznam, který je na **standardní** nástrojů vedle **spustit ladění** tlačítko rychle ověření prohlížeče, který používáte jako při ladění nebo zobrazení stránky.
 
-    ![Vyberte možnosti ladění webové prohlížeče](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+    ![Vyberte možnosti ladění webové prohlížeče](../ide/media/webbrowserdropdowntoolbar.png)
 
 - **Nastavte zarážky dočasné**. Můžete vytvořit dočasný zarážek v aktuálního řádku kódu a současně spuštění ladicího programu. Při kliknutí na tento řádek kódu, ladicího programu vstupuje do režimu pozastavení. Další informace najdete v tématu [přejděte prostřednictvím kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md).
 
@@ -119,7 +120,7 @@ Současně můžete být práce ve více souborech kódu a přesun mezi několik
 
 - **Přizpůsobit písma, které se zobrazují v sadě Visual Studio**. Můžete změnit vzhled písma, velikosti a barvy, která se používá u textů v prostředí IDE. Můžete například přizpůsobit barvu elementů konkrétního kódu v editoru a tučné písmo v systému windows nástroj nebo v celé prostředí IDE. Další informace najdete v tématu [postupy: Změna písma a barev](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) a [postupy: Změna písma a barev v editoru](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Výchozí klávesové zkratky pro často používané příkazy](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Postupy: přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)

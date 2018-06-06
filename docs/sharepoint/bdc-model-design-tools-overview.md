@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 11469e76464cf4177d581705004bf640d71c43a1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8ba5f5464a770342b2e2266bf0327160d37cc109
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691476"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765749"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Přehled nástrojů pro navrhování modelu služby BDC
   Business Data Connectivity (BDC) modelu můžete navrhnout pomocí návrháře BDC **podrobnosti o metodě BDC** okně a **Průzkumník modelu BDC**.  
@@ -56,14 +56,14 @@ ms.locfileid: "34691476"
   
  Můžete rychle vytvořit metody vyhledávací, specifická metoda Finder, Creator, aktualizační a metoda odstranění v **podrobnosti o metodě BDC** okno. Při generování těchto metod, Visual Studio přidá metadata, například parametry, instancí a typ popisovače metodě. Tato metadata pro uspokojení konkrétní scénář, můžete upravit.  
   
- Chcete-li otevřít **podrobnosti o metodě BDC** okně na řádku nabídek zvolte **zobrazení**, **ostatní okna**, **podrobnosti o metodě BDC**.  
+ Chcete-li otevřít **podrobnosti o metodě BDC** okně na řádku nabídek zvolte **zobrazení** > **ostatní okna** > **podrobnosti o metodě BDC** .  
   
  Chcete-li zobrazit metody v **podrobnosti o metodě BDC** okně zvolte entity v Návrháři BDC. Metody vybrané entity se zobrazí v **podrobnosti o metodě BDC** okno. Pokud jste nezvolili entity v Návrháři BDC **podrobnosti o metodě BDC** zobrazují žádné informace.  
   
  Rozbalit nebo sbalit uzly v **podrobnosti o metodě BDC** okno Definovat parametry, instance, a filtrovat popisovače. Použití **Průzkumník modelu BDC** zadat typ popisovače.  
   
 ## <a name="bdc-explorer"></a>Průzkumník modelu BDC
- **Průzkumník modelu BDC** zobrazí prvky, které tvoří modelu. Chcete-li otevřít **Průzkumník modelu BDC**, na řádku nabídek zvolte **zobrazení**, **ostatní okna**, **Průzkumník modelu BDC**. Chcete-li procházet modelu, rozbalte uzly v **Průzkumník modelu BDC**. Každý uzel reprezentuje element v souboru XML souboru modelu.  
+ **Průzkumník modelu BDC** zobrazí prvky, které tvoří modelu. Chcete-li otevřít **Průzkumník modelu BDC**, na řádku nabídek zvolte **zobrazení** > **ostatní okna** > **Průzkumník modelu BDC**. Chcete-li procházet modelu, rozbalte uzly v **Průzkumník modelu BDC**. Každý uzel reprezentuje element v souboru XML souboru modelu.  
   
  Jako zvolte uzly v **Průzkumník modelu BDC**, vlastnosti každého uzlu, který zvolíte, se zobrazí v **vlastnosti** okno. Mnoho z těchto vlastností odpovídají atributy v souboru modelu. Pomocí vyhledávacího pole v horní části lze vyhledat modelu **Průzkumník modelu BDC**.  
   

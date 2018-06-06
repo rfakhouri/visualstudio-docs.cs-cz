@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c18bb0c42138f861cf48a13777a6ee13c05148
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9208879400846d7acfa2cb89d1c30efaa65631a0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746582"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Postupy: Vytvoření základního Phongova shaderu
 
@@ -45,7 +46,7 @@ Než začnete, ujistěte se, že **vlastnosti** okno a **sada nástrojů** jsou 
 > [!NOTE]
 > K předvedení lépe účinku shaderu na tomto obrázku, byla zadána oranžovou barvu pomocí **MaterialDiffuse** je zadán parametr shaderu a dokončit se kovovým vyhledávání pomocí **MaterialSpecular** a **MaterialSpecularPower** parametry. Informace o parametrech podstatným, najdete v části Náhled shadery v [shaderu Návrhář](../designers/shader-designer.md).
 
- ![Graf shaderu a náhled jeho dopad](../designers/media/digit-lighting-graph.png "číslice. osvětlení grafu")
+ ![Graf shaderu a náhled jeho dopad](../designers/media/digit-lighting-graph.png)
 
  Určité tvarů může poskytovat lepší verze Preview pro některé shadery. Další informace o tom, jak zobrazit náhled shadery v Návrháři shaderu, najdete v části Náhled shadery v [shaderu návrháře](../designers/shader-designer.md)
 
@@ -56,11 +57,11 @@ Než začnete, ujistěte se, že **vlastnosti** okno a **sada nástrojů** jsou 
 >
 > **MaterialSpecularPower** vlastnost určuje, jak velký zrcadlová světla. Zrcadlová zajišťuje vysokou simulovat méně výrazné, další lokalizované označuje. Velmi nízkou zrcadlová zajišťuje simulovat velký, obezřetností označuje, které se dají oversaturate a skrýt barva celou plochu.
 
- ![Použít pro model osvětlení Phong](../designers/media/digit-lighting-model.png "číslice. osvětlení modelu")
+ ![Phong osvětlení použít pro model](../designers/media/digit-lighting-model.png)
 
  Další informace o tom, jak používat shaderu 3D modelu najdete v tématu [postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)

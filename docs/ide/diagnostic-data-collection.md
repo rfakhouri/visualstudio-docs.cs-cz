@@ -10,10 +10,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: f55d8a0f32886ed477026e298ed2c8c5d6e26f16
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34478348"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Shromážděné sadou Visual Studio protokoly generované systémem
 
@@ -71,7 +72,7 @@ Autoři rozšíření měli omezit expozice osobní údaje bez použití osobní
 
 Zadaný účel data, která shromažďujeme a omezení u jeho přístup a uchovávání, doporučujeme, abyste použili výchozí nastavení ochrany osobních údajů pro Visual Studio a systému Windows. Můžete však [chodit](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) z programu zlepšování zkušeností Visual Studio. Pro vyjádření výslovného nesouhlasu kolekce generována protokolu pro všechny programy, najdete v části [diagnostiky, zpětnou vazbu a ochrana osobních údajů ve Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Možnosti se mohou lišit v závislosti na verzi Windows, který používáte.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Program Zlepšování softwaru a služeb na základě zkušeností uživatelů](visual-studio-experience-improvement-program.md)
 - [Diagnostika, zpětnou vazbu a ochrana osobních údajů ve Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

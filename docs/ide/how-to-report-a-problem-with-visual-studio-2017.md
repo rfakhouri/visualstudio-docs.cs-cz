@@ -12,17 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0979c0e7ec0fa53879766136d27ab79b0f490a17
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745992"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Postup nahlásit problém s Visual Studio 2017
 
 Pokud dojde k potížím s Visual Studio, chceme vědět o něm. Chcete-li nahlásit problém tak, aby jsme diagnostikovat a opravit.
 
-## <a name="sign-in-to-visual-studio"></a>Přihlaste se k sadě Visual Studio
+## <a name="sign-in-to-visual-studio"></a>Přihlášení k sadě Visual Studio
 
 Pokud jste tak již neučinili, přihlaste k sadě Visual Studio před nahlásit problém. Tímto způsobem můžete na něm ohlásit problém, který se má a také hlasovat nebo nastavte jako komentář. Můžete dokonce hlasovat nebo komentář na jiný problém, který se zobrazí příliš odeslány.
 
@@ -30,14 +31,14 @@ Pokud jste tak již neučinili, přihlaste k sadě Visual Studio před nahlásit
 2. Pokud nejste přihlášení, vyberte **přihlásit**; je na pravé straně nástroje, jak je znázorněno na následujícím snímku obrazovky.
 3. Postupujte podle pokynů na obrazovce přihlášení.
 
- ![Přihlaste se k nahlásit problém](../ide/media/sign-in-new-ux.png "Přihlaste se k nahlásit problém")
+ ![Přihlaste se k nahlásit problém](../ide/media/sign-in-new-ux.png)
 
 ## Hledání a hlasů pro podobné problémy <a name="search_and_vote"></a>
 
 1. Vyhledejte váš problém a zjistit, pokud ostatní mají, příliš.
 2. Pokud někdo ohlásil ho, "až hlas" jej a dejte nám vědět.
 
-  ![Hledání a hlasů pro podobné problémy](../ide/media/search-and-vote.png "vyhledávání a hlasů pro podobné problémy")
+  ![Hledání a hlasů pro podobné problémy](../ide/media/search-and-vote.png)
 
 ## Nahlásit problém nové <a name="report_new_problem"></a>
 
@@ -45,7 +46,7 @@ Pokud jste tak již neučinili, přihlaste k sadě Visual Studio před nahlásit
 2. Vytvořte popisný název pro problém, který pomáhá nám směrovat na správný tým Visual Studio.
 3. Pokud je to možné, uveďte další podrobnosti a připojte postup, abychom mohli problém reprodukovat.
 
-  ![Nahlásit problém nové](../ide/media/report-new-problem.png "nahlásit problém nové")
+  ![Nahlásit problém nové](../ide/media/report-new-problem.png)
 
 ## Zadejte snímek a přílohy (volitelné) <a name="provide_screenshots"></a>
 
@@ -58,7 +59,7 @@ Trasování a haldy souborů výpisu paměti jsou užitečné v pomáhá nám di
 1. Vyberte **záznam** kartě.
 2. Zvolte **spustit záznam**. Udělte oprávnění ke spuštění nástroje.
 
-  ![Zvolte "Spustit záznam" můžete zadat souboru výpisu trasování a haldy ] (../ide/media/record-dialog-box.png "soubory výpisů zadejte trasování a haldy")
+  ![Zvolte "Spustit záznam" můžete zadat souboru výpisu trasování a haldy ](../ide/media/record-dialog-box.png)
 
 3. Když **kroky zapisovač** nástroj se zobrazí, proveďte kroky, které problém reprodukovat.
 4. Až skončíte, zvolte **zastavit záznam** tlačítko.
@@ -84,7 +85,7 @@ Pokud nechcete nebo nemůže používat Visual Studio k nahlásit problém, exis
 
 Pokud nemáte problém do sestavy, ale chcete poskytnout zpětnou vazbu produktu nebo návrh, je místo, takže příliš. Další informace najdete v tématu [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide) stránky.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Kontaktujte nás](../ide/talk-to-us.md)
 * [Visual Studio komunity vývojářů](https://developercommunity.visualstudio.com/)

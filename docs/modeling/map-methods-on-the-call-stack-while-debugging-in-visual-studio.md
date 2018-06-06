@@ -30,16 +30,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83ee400201ff76745612e7fe7ce36020ba5234a8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 111a1180f694b57a4e5ae013a41128a4a7e9e9f5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748683"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapování metod v zásobníku volání při ladění v sadě Visual Studio
 Vytvoření mapy kódu pro vizuální trasování zásobníku volání při ladění. Můžete si dělat poznámky na mapě ke sledování kódu činnosti tak, abyste se mohli zaměřit na hledání chyb.
 
- ![Ladění pomocí zásobníky volání na map kódu](../debugger/media/debuggermap_overview.png "DebuggerMap_Overview")
+ ![Ladění pomocí zásobníky volání na map kódu](../debugger/media/debuggermap_overview.png)
 
  Budete potřebovat:
 
@@ -71,60 +72,60 @@ Vytvoření mapy kódu pro vizuální trasování zásobníku volání při lad�
 
 2.  Když aplikace přejde do režimu pozastavení nebo krok do funkce, vyberte **Mapa kódu**. (Klávesové: **Ctrl** + **Shift** + **`**)
 
-     ![Zvolte Mapa kódu zahájíte mapování zásobníku volání](../debugger/media/debuggermap_choosecodemap.png "DebuggerMap_ChooseCodeMap")
+     ![Zvolte Mapa kódu zahájíte mapování zásobníku volání](../debugger/media/debuggermap_choosecodemap.png)
 
      Aktuální aktuální zásobník volání se zobrazí oranžově na mapě nového kódu:
 
-     ![Najdete v zásobníku volání na mapě kódu](../debugger/media/debuggermap_seeundocallstack.png "DebuggerMap_SeeUndoCallStack")
+     ![Najdete v zásobníku volání na mapě kódu](../debugger/media/debuggermap_seeundocallstack.png)
 
      Mapy se aktualizuje automaticky, když budete pokračovat, ladění. V tématu [aktualizovat mapy další zásobníkem volání](#UpdateMap).
 
 ##  <a name="MakeNotes"></a> Zkontrolujte poznámky o kód
  Přidejte komentář ke sledování, co se děje v kódu. Chcete-li přidat nový řádek v komentář, stiskněte **Shift + vrátit**.
 
- ![Přidejte komentář k zásobník volání na mapě kódu](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
+ ![Přidejte komentář k zásobník volání na mapě kódu](../debugger/media/debuggermap_addcomment.png)
 
 ##  <a name="UpdateMap"></a> Aktualizace mapa s další zásobníku volání
  Spuštění vaší aplikace na další zarážku nebo krok do funkce. Mapování přidá nový zásobník volání.
 
- ![Mapa kódu aktualizace další zásobníkem volání](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
+ ![Mapa kódu aktualizace s další zásobník volání](../debugger/media/debuggermap_addclearcallstack.png)
 
 ##  <a name="AddRelatedCode"></a> Přidání souvisejících kódu do mapy
  Nyní máte k dispozici mapu - co dále? Pokud pracujete s C# nebo Visual Basic, přidejte položky, jako je například pole, vlastnosti a jiných metod pro sledování, co se děje v kódu.
 
  Dvakrát klikněte na metodu zobrazíte jeho definice kód, nebo pomocí místní nabídky pro metodu. (Klávesové: Vyberte metodu na mapu a stiskněte klávesu **F12**)
 
- ![Přejděte do definice kód pro metodu na mapě kódu](../debugger/media/debuggermap_gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
+ ![Přechod na definici kód pro metodu na mapě kódu](../debugger/media/debuggermap_gotocodedefinition.png)
 
  Přidejte položky, které chcete sledovat na mapě.
 
- ![Zobrazit pole v metodě na mapě kódu zásobník volání](../debugger/media/debuggermap_showfields.png "DebuggerMap_ShowFields")
+ ![Zobrazit pole v metodě na mapě kódu zásobník volání](../debugger/media/debuggermap_showfields.png)
 
 > [!NOTE]
 >  Ve výchozím nastavení přidávání položek do mapy také přidá nadřazených uzlů skupiny například třída, obor názvů a sestavení. To je užitečné, abyste zajistili, že mapy jednoduché můžete vypnout pomocí této funkce **zahrnují nadřazené položky** tlačítka na panelu nástrojů mapy nebo stisknutím klávesy **CTRL** při přidávání položek.
 
- ![Pole související s metodu na mapě kódu zásobník volání](../debugger/media/debuggermap_showedfields.png "DebuggerMap_ShowedFields")
+ ![Pole související metody na mapě kódu zásobník volání](../debugger/media/debuggermap_showedfields.png)
 
  Zde můžete snadno zobrazit metody, které používají stejná pole. Poslední přidané položky se zobrazí zeleně.
 
  Pokračujte v sestavování mapy, pokud chcete zobrazit další kód.
 
- ![Najdete v části metody, které používají pole: Mapa kódu zásobník volání](../debugger/media/debuggermap_findallreferences.png "DebuggerMap_FindAllReferences")
+ ![Najdete v části metody, které používají pole: Mapa kódu zásobník volání](../debugger/media/debuggermap_findallreferences.png)
 
- ![Metody, které používají pole na mapě kódu zásobník volání](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")
+ ![Metody, které používají pole na mapě kódu zásobník volání](../debugger/media/debuggermap_foundallreferences.png)
 
 ##  <a name="FindBugs"></a> Najít chyby pomocí mapy
  Vizualizace kódu můžete nalézt chyby rychleji. Předpokládejme například, že jste příčin chyb v aplikaci pro kreslení. Když nakreslíte čáru a pokusíte se vrátit akci zpět, nic se nestane, dokud nenakreslíte další čáru.
 
  Nastavte zarážky v `clear`, `undo`, a `Repaint` metody, spusťte ladění a sestavení mapy podobné následujícímu:
 
- ![Přidejte jiný zásobník volání na mapě kódu](../debugger/media/debuggermap_addpaintobjectcallstack.png "DebuggerMap_AddPaintObjectCallStack")
+ ![Přidejte jiný zásobník volání na mapě kódu](../debugger/media/debuggermap_addpaintobjectcallstack.png)
 
  Všimněte si, že všechny uživatelské gesta na volání map `Repaint`, s výjimkou `undo`. To mohou vysvětlit, proč `undo` nefunguje okamžitě.
 
  Po oprava chyby a pokračovat spuštění programu, mapy přidá nové volání z `undo` k `Repaint`:
 
- ![Přidat nové zásobník volání k volání metody na mapě kódu](../debugger/media/debuggermap_addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")
+ ![Přidat nové zásobník volání k volání metody na mapě kódu](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
 ##  <a name="QA"></a> Q & A
 
@@ -132,11 +133,11 @@ Vytvoření mapy kódu pro vizuální trasování zásobníku volání při lad�
 
      Ve výchozím nastavení zobrazí se pouze vlastní kód na mapě. Externí kódu najdete ji v zapnout **zásobníkem volání** okno:
 
-     ![Zobrazení externí kódu pomocí okno zásobník volání](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
+     ![Zobrazení externí kódu pomocí okno zásobník volání](../debugger/media/debuggermap_callstackmenu.png)
 
      nebo vypněte **povolit volbu pouze vlastní kód** v sadě Visual Studio možnosti ladění:
 
-     ![Zobrazit externí kódu pomocí dialogovém okně Možnosti](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
+     ![Zobrazit externí kódu pomocí dialogové okno Možnosti](../debugger/media/debuggermap_debugoptions.png)
 
 -   **Změna mapy kód vliv?**
 
@@ -160,11 +161,11 @@ Vytvoření mapy kódu pro vizuální trasování zásobníku volání při lad�
 
      Můžete exportovat mapu, odeslat ji ostatním uživatelům, pokud máte aplikaci Microsoft Outlook, nebo ji uložit do vašeho řešení, abyste ji mohli vrátit se změnami do řízení verzí Team Foundation.
 
-     ![Sdílené složky volání zásobníku Mapa kódu s ostatními](../debugger/media/debuggermap_sharewithothers.png "DebuggerMap_ShareWithOthers")
+     ![Sdílené složky volání zásobníku Mapa kódu s ostatními uživateli](../debugger/media/debuggermap_sharewithothers.png)
 
 -   **Jak zabráním mapy v přidávání nových zásobníky volání automaticky?**
 
-     Zvolte ![tlačítko &#45; zásobníku volání zobrazit na mapě kódu automaticky](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") na panelu nástrojů mapy. Ručně přidat aktuální zásobníku volání do mapy, stiskněte klávesu **Ctrl** + **Shift** + **`**.
+     Zvolte ![tlačítko &#45; zásobníku volání zobrazit na mapě kódu automaticky](../debugger/media/debuggermap_automaticupdateicon.gif) na panelu nástrojů mapy. Ručně přidat aktuální zásobníku volání do mapy, stiskněte klávesu **Ctrl** + **Shift** + **`**.
 
      Mapy bude pokračovat, zvýraznění existující zásobníky volání na mapě při ladění.
 
@@ -172,7 +173,7 @@ Vytvoření mapy kódu pro vizuální trasování zásobníku volání při lad�
 
      Chcete-li získat další informace o položce, přesuňte ukazatel myši nad ním a podívejte se na popisku položky. Můžete také zobrazit **legendy** se dozvíte, co znamená každá ikona.
 
-     ![Co znamenají ikony na mapě kódu zásobník volání ] (../debugger/media/debuggermap_showlegend.png "DebuggerMap_ShowLegend")
+     ![Co znamenají ikony na mapě kódu zásobník volání](../debugger/media/debuggermap_showlegend.png)
 
  Další informace:
 

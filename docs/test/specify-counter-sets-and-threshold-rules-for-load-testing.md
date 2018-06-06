@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13fcfac02761a8661195f6f888a9280b468e5de3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751339"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Určení sad čítačů a mezních pravidel pro počítače v zátěžovém testu
 
@@ -51,7 +52,7 @@ Testovací nástroje zatížení shromažďovat a graf údaje o výkonu pomocí 
 
 Existují tři kategorie čítače: procent, počty a průměry. Některé příklady jsou % využití procesoru, počtu uzamčení systému SQL Server a služby IIS požadavků za sekundu.
 
-![Načtení sady čítačů testovací](../test/media/loadtestcountersets.png "LoadTestCounterSets")
+![Sady čítačů testu zatížení](../test/media/loadtestcountersets.png)
 
 Údaje o výkonu pro jednotlivé požadavky HTTP je hlášen počítači, který spouští test. například počítači agenta. Pro žádosti může sledovat data, jako jsou Průměrná doba do prvního bajtu, doba odezvy a počet požadavků za sekundu.
 
@@ -96,7 +97,7 @@ Nastavte **výstrahy Pokud přes** vlastnost **True** k označení, což předst
 
 Nastavte **výstrahy Pokud přes** vlastnost **False** k označení, které spadají pod prahovou hodnotu je problém. Například, pokud je prahová hodnota pravidlo nastavené na **požadavků za sekundu**, a vy chcete být upozorněni, pokud hodnota je menší než 50, použijte **porovnat konstantní** typ pravidla, nastavte **kritickou prahovou hodnotu** do 50 a nastavte **výstrahy Pokud přes** k **False**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: Přidání mezního pravidla](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)
 - [Analýza mezních pravidel](../test/analyze-threshold-rule-violations-in-load-tests.md)

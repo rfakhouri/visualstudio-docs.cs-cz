@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8d25e93c0c5fefeae2d7891d458373d81d5ff370
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 257377ae84249f6e55c52223478d0f4aa0c12e59
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750880"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Postupy: Ruční vytvoření sestavy výkonnosti pro zátěžový test pomocí aplikace Microsoft Word
 
@@ -45,7 +46,7 @@ Můžete ručně vytvořit sestav Microsoft Word pro zátěžový test pomocí k
 
 2.  (Volitelné) Přiblížení konkrétní grafu, který chcete zkopírovat do dokumentu Microsoft Wordu, jak je znázorněno na následujícím obrázku. Další informace najdete v tématu [postupy: přiblížení oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
-     ![Graf ovládání pro zvětšení zobrazení](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl")
+     ![Ovládání pro zvětšení zobrazení grafu](../test/media/ltest_zoomcontrol.png)
 
 3.  V grafu, kterou chcete zkopírovat do dokumentu aplikace Microsoft Word, klikněte pravým tlačítkem a vyberte **kopie**.
 
@@ -54,7 +55,7 @@ Můžete ručně vytvořit sestav Microsoft Word pro zátěžový test pomocí k
     > [!WARNING]
     > Graf nelze zkopírovat ze vzdálené plochy a vložit jej do jiného počítače, protože budou zkopírovány pouze informace o tabulce, která je přidružena ke grafu, a nikoli obraz grafu. Obraz grafu je uložen v dočasném adresáři v počítači, ze kterého byl zkopírován, a druhý počítač nemůže přes ukazatel přistoupit k tomuto adresáři.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytváření sestav zatížení výsledků testů pro porovnávání testů a analýzu trendů](../test/compare-load-test-results.md)
 - [Postupy: vytváření sestav výkonnosti pro zátěžový Test pomocí aplikace Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

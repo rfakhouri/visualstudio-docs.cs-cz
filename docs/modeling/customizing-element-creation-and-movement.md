@@ -13,11 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7d86dd961a5192d63cee9501eb16aaf51b3fd629
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4563756e42b5c0bdc1a56e938ca6326e04b104
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748656"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Přizpůsobení vytvoření a přesunutí elementu
 Můžete povolit element být přetažen na jiné, z panelu nástrojů nebo v vkládání nebo operace přesunutí. Můžete mít přesunutý elementy propojené s cílových elementů, pomocí vztahy, které zadáte.
@@ -38,7 +39,7 @@ Můžete povolit element být přetažen na jiné, z panelu nástrojů nebo v vk
 
  Je zodpovědností EMD je k rozhodování o tom, jak objekt nebo skupinu objektů, které by měly být sloučeny do konkrétního umístění v modelu. Konkrétně rozhodne, jaké relace musí být vytvořena instance propojení skupině sloučené do modelu. Můžete také upravit, je možné nastavit vlastnosti a vytvořit další objekty.
 
- ![DSL&#45;EMD&#95;sloučení](../modeling/media/dsl-emd_merge.png "DSL EMD_Merge") roli sloučení direktivu Element
+ ![DSL&#45;EMD&#95;sloučení](../modeling/media/dsl-emd_merge.png) roli sloučení direktivu Element
 
  EMD je vytvořen automaticky, když definujete vnoření vztah. Toto výchozí nastavení EMD vytvoří instance vztahu, když uživatelé přidají nové instance podřízené do nadřazené. Tyto výchozí EMDs, můžete upravit třeba tak, že přidáte vlastní kód.
 
@@ -47,7 +48,7 @@ Můžete povolit element být přetažen na jiné, z panelu nástrojů nebo v vk
 ## <a name="defining-an-element-merge-directive"></a>Definování direktivu Element sloučení
  Element sloučení direktivy můžete přidat do třídy domény, relace domény, tvarů, konektory a diagramy. Můžete přidat nebo je najít v Průzkumníku DSL pod přijímající třídou domény. Přijímající třídy je třída domény elementu, který už v modelu a do které budou sloučeny element nové nebo zkopírovaný.
 
- ![DSL&#45;EMD&#95;podrobnosti](../modeling/media/dsl-emd_details.png "DSL EMD_Details")
+ ![DSL&#45;EMD&#95;podrobnosti](../modeling/media/dsl-emd_details.png)
 
  **Indexování třída** je třída domény elementů, které mohou být sloučeny do členy přijímající třídy. Instance podtřídami třídy indexování bude být také sloučit tak, že tento EMD, není-li nastavena **platí pro podtřídy** na hodnotu False.
 

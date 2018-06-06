@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c47ca792c25efe6ef77f3ee3a9baad61e801624
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c2d4b3f802b3854fc311a359149f44d75562691e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752693"
 ---
 # <a name="toolbox-html-tab"></a>Sada nástrojů, Karta HTML
 
@@ -33,13 +34,13 @@ Tyto nástroje jsou k dispozici ve výchozím nastavení na kartě HTML.
 
 **Ukazatele**
 
-![Ukazatel stránka HTML – návrhář mobilních ASP.NET](../../ide/reference/media/vxpointer.gif "vxPointer")
+![Mobilní technologie ASP.NET návrháře stránka HTML – ukazatele](../../ide/reference/media/vxpointer.gif)
 
 Tento nástroj je standardně vybraná, když se otevře žádné kartu panelu nástrojů. Nelze odstranit. Ukazatele umožňuje přetažením objektů na návrhovou plochu zobrazení, změňte si jejich velikost a změnit jejich umístění na stránku nebo formuláře. Další informace najdete v tématu [sada nástrojů](../../ide/reference/toolbox.md).
 
 **Vstup (tlačítko)**
 
-![Tlačítko webové stránky HTML](../../ide/reference/media/vxbutton.gif "vxButton")
+![Tlačítko webové stránky HTML](../../ide/reference/media/vxbutton.gif)
 
 Vloží `input` element `type="button"`. Chcete-li změnit text, který se zobrazí, upravte `name` vlastnost. Ve výchozím nastavení `id="Button1"` je vložen pro první tlačítko `id="Button2"` sekundu a tak dále.
 
@@ -51,7 +52,7 @@ Při přetažení **vstup (tlačítko)** na návrhovou plochu zobrazení, je zna
 
 **Vstup (Reset)**
 
-![HTMLpageResetButton – snímek obrazovky](../../ide/reference/media/vxreset.gif "vxReset")
+![HTMLpageResetButton – snímek obrazovky](../../ide/reference/media/vxreset.gif)
 
 Vloží `input` element `type="reset"`. Chcete-li změnit text, který se zobrazí, upravte `name` vlastnost. Ve výchozím nastavení `id="Reset1"` je vložen pro první resetování tlačítko `id="Reset2"` sekundu a tak dále.
 
@@ -63,7 +64,7 @@ Při přetažení **vstup (Reset)** na návrhovou plochu zobrazení, je značka 
 
 **Vstup (Odeslat)**
 
-![HTMLpageToolbarSubmitButton – snímek obrazovky](../../ide/reference/media/vxsubmit.gif "vxSubmit")
+![HTMLpageToolbarSubmitButton – snímek obrazovky](../../ide/reference/media/vxsubmit.gif)
 
 Vloží `input` element `type="submit"`. Chcete-li změnit text, který se zobrazí, upravte `name` vlastnost. Ve výchozím nastavení `id="Submit1"` je vložen pro první tlačítko odeslání `id="Submit2"` sekundu a tak dále.
 
@@ -75,7 +76,7 @@ Při přetažení **vstup (Odeslat)** na návrhovou plochu zobrazení, je značk
 
 **Vstup (Text)**
 
-![HTMLpageToolbarTextField – snímek obrazovky](../../ide/reference/media/vxtextfield.gif "vxTextfield")
+![HTMLpageToolbarTextField – snímek obrazovky](../../ide/reference/media/vxtextfield.gif)
 
 Vloží `input` element `type="text"` v dokumentu. Chcete-li změnit výchozí text, který se zobrazí, upravte `value` atribut. Ve výchozím nastavení `id="Text1"` je vložen pro první textové pole, `id="Text2"` sekundu a tak dále.
 
@@ -90,7 +91,7 @@ Při přetažení **vstup (Text)** na návrhovou plochu zobrazení, je značka j
 
 **Vstup (soubor)**
 
-![Stránky HTML pole souboru](../../ide/reference/media/vxfilefield.gif "vxFilefield")
+![Stránky HTML pole souboru](../../ide/reference/media/vxfilefield.gif)
 
 Vloží `input` element `type="file"` v dokumentu. Ve výchozím nastavení `id="File1"` je vložen pro první pole souboru `id="File2"` sekundu a tak dále.
 
@@ -105,7 +106,7 @@ Při přetažení **vstup (soubor)** na návrhovou plochu zobrazení, je značka
 
 **Vstup (heslo)**
 
-![Pole hesla Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")
+![Pole hesla v sadě Visual Studio](../../ide/reference/media/vxpassword.gif)
 
 Vloží `input` element `type="password"`. Ve výchozím nastavení `id="Password1"` je vložen první pole pro heslo, `id="Password2"` sekundu a tak dále.
 
@@ -120,7 +121,7 @@ Při přetažení **vstup (heslo)** na návrhovou plochu zobrazení, je značka 
 
 **Vstup (zaškrtávací políčko)**
 
-![Webová stránka HTML sady nástrojů políčko možnost](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")
+![Webová stránka HTML možnost políčko sada nástrojů](../../ide/reference/media/vxcheckbox.gif)
 
 Vloží `input` element `type="checkbox"`. Chcete-li změnit text, který se zobrazí, upravte `name` vlastnost. Ve výchozím nastavení `id="Checkbox1"` je vložen pro první políčko `id="Checkbox2"` sekundu a tak dále.
 
@@ -132,7 +133,7 @@ Při přetažení **vstup (zaškrtávací políčko)** na návrhovou plochu zobr
 
 **Vstup (přepínač)**
 
-![VisualStudioHTMLpageRadioButton – snímek obrazovky](../../ide/reference/media/vxradio.gif "vxRadio")
+![VisualStudioHTMLpageRadioButton – snímek obrazovky](../../ide/reference/media/vxradio.gif)
 
 Vloží `input` element `type="radio"`. Chcete-li změnit text, který se zobrazí, upravte `name` vlastnost. Ve výchozím nastavení `id="Radio1"` je vložen pro první přepínač `id="Radio2"` sekundu a tak dále.
 
@@ -144,7 +145,7 @@ Při přetažení **vstup (přepínač)** na návrhovou plochu zobrazení, je zn
 
 **Vstup (skryté)**
 
-![Stránky HTML skrytá položka](../../ide/reference/media/vxhidden.gif "vxhidden")
+![Skrytá položka stránky HTML](../../ide/reference/media/vxhidden.gif)
 
 Vloží `input` element `type="hidden"`. Ve výchozím nastavení `id="Hidden1"` je vložen pro první skryté pole `id="Hidden2"` sekundu a tak dále.
 
@@ -156,7 +157,7 @@ Při přetažení **vstup (skryté)** na návrhovou plochu zobrazení, je značk
 
 **Textarea**
 
-![Stránka HTML – nástrojů textová oblast](../../ide/reference/media/vxtextarea.gif "vxTextarea")
+![Stránka HTML – nástrojů textová oblast](../../ide/reference/media/vxtextarea.gif)
 
 Vloží `textarea` elementu. Můžete změnit velikost textová oblast nebo používat jeho posuvníky Chcete-li zobrazit text, který rozšiřuje nad rámec jeho oblast zobrazení. Chcete-li změnit výchozí text, který se zobrazí, upravte `value` atribut. Ve výchozím nastavení `id="textarea1"` je první textová oblast, Vložit `id=" textarea 2"` sekundu a tak dále.
 
@@ -171,7 +172,7 @@ Při přetažení **Textarea** na návrhovou plochu zobrazení, je značka jazyk
 
 **Tabulka**
 
-![HTMLpageToolbarTable – snímek obrazovky](../../ide/reference/media/vxtable.gif "vxTable")
+![HTMLpageToolbarTable – snímek obrazovky](../../ide/reference/media/vxtable.gif)
 
 Vloží `table` elementu.
 
@@ -183,7 +184,7 @@ Při přetažení **tabulky** na návrhovou plochu zobrazení, je značka jazyka
 
 **Obrázek**
 
-![Stránky HTML obrázek položky](../../ide/reference/media/vximage.gif "vxImage")
+![Stránky HTML obrázek položky](../../ide/reference/media/vximage.gif)
 
 Vloží `img` elementu. Upravit tento element zadat jeho `src` a jeho `alt` text.
 
@@ -195,7 +196,7 @@ Při přetažení **Image** na návrhovou plochu zobrazení, je značka jazyka H
 
 **Vyberte**
 
-![Stránky HTML sady nástrojů rozevírací](../../ide/reference/media/vxdropdown.gif "vxDropdown")
+![Stránky HTML rozevírací sada nástrojů](../../ide/reference/media/vxdropdown.gif)
 
 Vloží rozevíracího seznamu `select` – element (bez `size` atributu). Ve výchozím nastavení `id="select1"` je vložen pro první pole se seznamem, `id="select2"` sekundu a tak dále.
 
@@ -209,7 +210,7 @@ Můžete vytvořit více řádků `select` element zvýšením hodnotu velikosti
 
 **Vodorovné pravítko**
 
-![Stránky HTML vodorovné položku pravidla](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")
+![Stránky HTML vodorovné položku pravidla](../../ide/reference/media/vxhorizontal.gif)
 
 Vloží `hr` elementu. Chcete-li zvýšit tloušťky čáry, upravte `size` atribut.
 
@@ -221,7 +222,7 @@ Při přetažení **vodorovné pravítko** na návrhovou plochu zobrazení, je z
 
 **div**
 
-![Stránky HTML Label](../../ide/reference/media/vxlabel.gif "vxLabel")
+![Stránky HTML popisek](../../ide/reference/media/vxlabel.gif)
 
 Vloží `div` element, který zahrnuje `ms_positioning="FlowLayout"` atribut. S výjimkou šířky a výšky tato položka je stejný jako rozložení panelu toku. K formátování textu, který je obsažen v rámci `div` elementu, přidejte `class="stylename"` atribut počáteční značka.
 
@@ -231,6 +232,6 @@ Při přetažení **Div** na návrhovou plochu zobrazení, je značka jazyka HTM
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Panel nástrojů](../../ide/reference/toolbox.md)

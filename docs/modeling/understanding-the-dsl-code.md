@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c5daaad156b2a4372ab43a19ba2f2bdd6cdb87b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 27581387b9775d2e2cf4401c811dab09b15c3722
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748670"
 ---
 # <a name="understanding-the-dsl-code"></a>Porozumění kódu DSL
 Jazyk specifické pro doménu DSL řešení generuje rozhraní API, které můžete použít ke čtení a aktualizovat instance DSL v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Toto rozhraní API je definována v kód, který se vygeneruje z definice DSL. Toto téma popisuje generovaného rozhraní API.
@@ -28,7 +29,7 @@ Jazyk specifické pro doménu DSL řešení generuje rozhraní API, které můž
 
  Stisknutím klávesy F5 a experiment, pokud nejste obeznámeni s touto šablonou řešení. Všimněte si zejména vytvořit portů přetažením nástroj port na komponentu a že se můžete připojit porty.
 
- ![Součásti a vzájemně propojena porty](../modeling/media/componentsample.png "ComponentSample")
+ ![Součásti a vzájemně propojena porty](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Struktura řešení DSL
  **Dsl** projektu definuje rozhraní API pro vaše DSL. **DslPackage** projektu definuje, jak se integruje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Můžete také přidat vlastní projekty, které může také obsahovat kód, který vygenerovala z modelu.

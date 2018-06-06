@@ -17,7 +17,7 @@ ms.openlocfilehash: 9b9b740689175f91f4bc69396121da0bed336532
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34548707"
 ---
 # <a name="callercallee-view---sampling-data"></a>Zobrazení volající/volaný – vzorkování dat

@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7094aba90a8844480536e6f44951fb7dc15ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: bc18b436a7f25baad9870e36c3224f23de920241
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745734"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Postupy: přizpůsobení posuvník sledují kódu
 
@@ -33,11 +34,11 @@ Při práci se soubory dlouho kódu, může být obtížné všechno mějte na p
 
     Zde je, jak vypadá posuvníku po hledání řetězce. Všimněte si, že se zobrazují všechny instance řetězce.
 
-    ![Posuvník po hledání řetězce. ] (../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
+    ![Posuvník po hledání řetězce.](../ide/media/enhancedscrollbarsearch.png)
 
     Zde je posuvníku po nahrazení všechny instance řetězce. Můžete zobrazit okamžitě, že operace nezdařila z důvodu některé problémy.
 
-    ![Scrollbar po nahrazení řetězec s chybami](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
+    ![Scrollbar po nahrazení řetězec s chybami](../ide/media/enhancedscrollbarreplace.png)
 
 ## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Chcete-li nastavit režim zobrazení pro posuvník
 
@@ -47,14 +48,14 @@ Při práci se soubory dlouho kódu, může být obtížné všechno mějte na p
 
     Zde je, jak vypadá v příkladu vyhledávání map režim je na a šířka je nastavena na **střední**:
 
-    ![Posuvník v režimu mapy](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
+    ![Posuvník v režimu mapy](../ide/media/enhancedscrollbar.png)
 
 2. V režimu mapy, chcete-li verze Preview kódu při přesunutí ukazatele nahoru a dolů posuvníku, vyberte **zobrazit náhled popisek** možnost. Zde je, jak vypadá:
 
-    ![Posuvník s popisek](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")
+    ![Posuvník s popisek](../ide/media/enhancedscrollbarsearchtooltip.png)
 
     Pokud chcete zachovat režimu mapy posouvání chování a popisek preview, ale nechcete, aby zobrazíte Přehled zdrojového kódu, můžete nastavit **zdroj přehled** k **vypnout**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md)

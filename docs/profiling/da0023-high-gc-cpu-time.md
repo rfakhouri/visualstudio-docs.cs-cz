@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1509c4fda8759e3ad8dece654921fc56b8b9c2e7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 26b5296dcbd2630d70bae91c539df36a30e97722
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750139"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: Vysoký čas procesoru uvolňování paměti
 |||  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="rule-description"></a>Popis pravidla  
  Rozhraní Microsoft .NET běžné language runtime (CLR) poskytuje mechanismus správy automatické paměti, který používá systém uvolňování paměti pro uvolnění paměti objekty, které aplikace se už používá. Uvolňování paměti je orientované na generování založen na předpokladu, že jsou krátkodobou mnoho přidělení. Lokální proměnné, například by měl mít krátkodobé trvání. Spustit nově vytvořené objekty v generaci 0 (0. generace) a pak průběhu generace 1, pokud se uvolňování paměti spusťte a nakonec přechodu na 2. generace zvládnout situaci, kdy aplikace je stále používá.  
   
- Objekty v generace 0 se shromažďují často a obvykle velmi efektivně. Objekty v generace 1 se shromažďují méně často a méně efektivní. Nakonec dlohotrvající objekty v generace 2 by měl být shromažďovány i méně často. 2. generace kolekce, což je úplná uvolňování spustit, je také nejvíce náročná operace.  
+ Objekty v generace 0 se shromažďují často a efektivně. Objekty v generace 1 se shromažďují méně často a méně efektivní. Nakonec dlohotrvající objekty v generace 2 by měl být shromažďovány i méně často. 2. generace kolekce, což je úplná uvolňování spustit, je také nejvíce náročná operace.  
   
  Toto pravidlo aktivuje se v případě množství času stráveného v uvolňování paměti je důležité ve srovnání s časem zpracování celkový počet aplikací.  
   
@@ -47,4 +48,4 @@ ms.lasthandoff: 04/19/2018
 ## <a name="how-to-investigate-a-warning"></a>Jak prozkoumat upozornění  
  Klikněte dvakrát na zprávy v okně Seznam chyb, přejděte na [značky zobrazení](../profiling/marks-view.md) profilování data. Najít **využívání paměti rozhraním .NET CLR\\% čas** sloupce. Zjistěte, jestli konkrétní fáze spuštění programu kde režií při uvolňování paměti spravované paměti je větší než ostatní fáze. Porovnejte hodnoty % čas hodnoty na míru uvolňování uvedený v **# 0. generace kolekce**, **Počet úklidů 1. generace**, **Počet úklidů 2. generace** hodnoty .  
   
- % Času v hodnotě GC se pokusí množství času, který aplikace tráví provádění uvolňování úměrná celkový objem zpracování sestavy. Uvědomte si, že existují okolnosti, kdy % času v hodnotě GC může hlásit na velmi vysokou hodnotu, ale není z důvodu nadměrného uvolňování paměti. Další informace o způsobu, jímž % času v hodnotě uvolňování paměti se počítá najdete v tématu [rozdíl mezi výkonu dat hlášené různých nástrojů - 4](http://go.microsoft.com/fwlink/?LinkId=177863) položku **Maoni na Weblogu** na webu MSDN. Pokud se vyskytnou chyby stránky nebo aplikace se během uvolňování paměti přepnuto jinou vyšší prioritu práci na počítači, bude odrážet % času v čítači GC tyto další zpoždění.
+ % Času v hodnotě GC se pokusí množství času, který aplikace tráví provádění uvolňování úměrná celkový objem zpracování sestavy. Mějte na paměti existují případech, kdy % času v hodnotě GC může hlásit vysoké hodnoty, ale není z důvodu nadměrného uvolňování paměti. Další informace o způsobu, jímž % času v hodnotě uvolňování paměti se počítá najdete v tématu [rozdíl mezi výkonu dat hlášené různých nástrojů - 4](http://go.microsoft.com/fwlink/?LinkId=177863) položku **Maoni na Weblogu** na webu MSDN. Pokud se vyskytnou chyby stránky nebo aplikace se během uvolňování paměti přepnuto jinou vyšší prioritu práci na počítači, bude odrážet % času v čítači GC tyto další zpoždění.

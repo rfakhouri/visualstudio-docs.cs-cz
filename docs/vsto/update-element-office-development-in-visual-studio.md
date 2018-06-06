@@ -1,5 +1,5 @@
 ---
-title: '&lt;Aktualizovat&gt; – Element (vývoj pro Office v sadě Visual Studio) | Microsoft Docs'
+title: '&lt;Aktualizovat&gt; – element (vývoj pro Office v sadě Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f0e1fdc26e285ce9b6a1fd5ecc1aa638fe909b8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c51a7f79165d421f080d05088418d02a48680b66
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767605"
 ---
-# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Aktualizovat&gt; – Element (vývoj pro Office v sadě Visual Studio)
+# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Aktualizovat&gt; – element (vývoj pro Office v sadě Visual Studio)
   `update` Element určuje interval, kdy řešení zkontroluje aktualizace.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <update  
   enabled>  
   <expiration  
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/16/2018
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`maximumAge`|-Vyžaduje. Nastavte toto celé číslo.|  
+|`maximumAge`|   Požadováno. Nastavte toto celé číslo.|  
 |`unit`|Požadováno. Nastavit `unit` na jednu z následujících hodnot:<br /><br /> -   **Hodiny**<br />-   **počet dnů**<br />-   **Týdny**|  
   
 ## <a name="example-of-always-checking-for-updates"></a>Příklad vždy kontrola aktualizací  
@@ -66,27 +67,27 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kód  
   
-```  
+```xml  
 <vstav3:update enabled="true" />  
 ```  
   
-## <a name="example-of-setting-a-default-update-interval"></a>Příklad nastavení výchozí Interval aktualizace  
+## <a name="example-of-setting-a-default-update-interval"></a>Příklad nastavení výchozí interval aktualizace  
   
 ### <a name="description"></a>Popis  
  Následující příklad kódu ukazuje `update` element v manifestu aplikace pro řešení Office. Tento příklad kódu je součástí většího příkladu vztahujícího se v [manifesty aplikací pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kód  
   
-```  
+```xml  
 <vstav3:update enabled="true">  
     <vstav3:expiration maximumAge="7" unit="days" />  
 </vstav3:update>  
 ```  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Nasazení řešení Office s použitím technologie ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Manifesty aplikace pro řešení pro systém Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce – manifest aplikace ](/visualstudio/deployment/clickonce-application-manifest)  
+ [ClickOnce – manifest aplikace](/visualstudio/deployment/clickonce-application-manifest)  
   
   

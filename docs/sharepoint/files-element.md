@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ee8794ad3b381f58721da72b4ec3950f001a0888
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 330c408aa0e283eb282b93f77726ccc5d9547795
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691892"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766903"
 ---
-# <a name="files-element"></a>Element Soubory
+# <a name="files-element"></a>Files – element
   Určuje soubory k nasazení s položkou projektu služby SharePoint, jako je například souborů funkcí a výstup závislé jiné-projektů služby SharePoint.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -37,26 +37,26 @@ ms.locfileid: "34691892"
 ## <a name="type"></a>Typ  
  **FileCollectionType**  
   
-## <a name="attributes-and-elements"></a>Atributy a elementy  
+## <a name="attributes-and-elements"></a>Atributy a elementy
  Následující části popisují atributy, podřízené prvky a nadřazené prvky.  
   
 ### <a name="attributes"></a>Atributy  
  Žádné  
   
-### <a name="child-elements"></a>Podřízené elementy  
+### <a name="child-elements"></a>Podřízené prvky
   
 |Prvek|Popis|  
 |-------------|-----------------|  
 |[ProjectItemFile –](../sharepoint/projectitemfile-element.md)|Volitelné **ProjectItemFileType** element.<br /><br /> Představuje soubor SharePoint, jako je například soubor prvku funkce zahrnout s položkou projektu při nasazení do služby SharePoint.|  
 |[ProjectOutputFile –](../sharepoint/projectoutputfile-element.md)|Volitelné **ProjectOutputFileType** element.<br /><br /> Představuje výstup projektu zahrnout s položkou projektu při nasazení do služby SharePoint.|  
   
-### <a name="parent-elements"></a>Nadřazené elementy  
+### <a name="parent-elements"></a>Nadřazené prvky
   
 |Prvek|Popis|  
 |-------------|-----------------|  
 |[ProjectItem –](../sharepoint/projectitem-element.md)|Představuje položky projektu služby SharePoint. Tento element požadovaný kořenový element z `.spdata` souboru.|  
   
-## <a name="element-information"></a>Informace o elementu  
+## <a name="element-information"></a>Informace o elementu
   
 |||  
 |-|-|  
@@ -65,7 +65,7 @@ ms.locfileid: "34691892"
 |**Ověření souboru**|ProjectItemModelSchema.xsd|  
 |**Nesmí být prázdné**|Ne|  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Referenční dokumentace schématu položek projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

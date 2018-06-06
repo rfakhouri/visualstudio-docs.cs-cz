@@ -17,27 +17,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48d18ef87bdda3abb147310bd49738a10d31040f
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: d0f4f12eee56d1d4962e5c340037094d5192c718
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766796"
 ---
-# <a name="getting-started-sharepoint-development-in-visual-studio"></a>Začínáme (vývoj pro SharePoint v sadě Visual Studio)
+# <a name="get-started-sharepoint-development-in-visual-studio"></a>Získat Začínáme (vývoj pro SharePoint v sadě Visual Studio)
   Tato část vám pomůže spustit práci s [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vývoj řešení služby SharePoint, které využívají [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] a [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].  
   
  Informace o SharePoint 2013 a doplňky SharePoint najdete v tématu [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) a [doplňky sestavení SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
   
  SharePoint nabízí platformy pro spolupráci založené na webu. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] poskytuje že mnoho projektu šablony pro vytváření webů služby SharePoint a obsah, včetně seznam definic, pracovní postupy, modelů připojení obchodních dat a definice webů. Kromě toho můžete vytvořit rozšíření pro projekty SharePoint a nástrojů v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-## <a name="in-this-section"></a>V tomto oddílu  
+## <a name="in-this-section"></a>V tomto oddílu
   
 |Téma|Popis|  
 |-----------|-----------------|  
 |[Požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|Uvádí požadavky na software pro vývoj pro SharePoint.|  
 |[Další informace o chybách služby SharePoint](../sharepoint/additional-information-for-sharepoint-errors.md)|Popisuje, kde chcete najít nápovědu během vývoj pro SharePoint a řešení potíží.|  
   
-## <a name="related-sections"></a>Související oddíly  
+## <a name="related-sections"></a>Související oddíly
   
 |Téma|Popis|  
 |-----------|-----------------|  
@@ -53,7 +54,7 @@ ms.lasthandoff: 05/22/2018
 |[Balení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|Popisuje, jak ho zabalit a nasadit řešení služby SharePoint.|  
 |[Rozšíření nástrojů SharePoint v aplikaci Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|Popisuje, jak rozšířit nástroje služby SharePoint pro vytvoření funkce, které potřebujete.|  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Procházení připojení služby SharePoint pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   

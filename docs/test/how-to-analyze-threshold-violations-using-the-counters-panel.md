@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 483a591e190efa557ffff42c958c18171269e7ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fdb54122344ce91fe873d854768d0890a83f198a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751803"
 ---
 # <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Postupy: Analýza překročení mezních hodnot s použitím panelu čítačů v Analyzéru zátěžového testu
 
@@ -22,21 +23,21 @@ Panel čítačů je v zobrazení grafů a zobrazení tabulek v Analyzéru zát
 
  Porušení pravidel mezních jsou přidruženy konkrétních čítačích výkonu a naznačují, že čítač výkonu překročil, nebo klesla pod prahovou hodnotu sady. Ikony v panelu čítačů komunikovat mezních hodnot.
 
- ![Uzel počítače čítač panely](../test/media/ltest_compnode.png "LTest_CompNode")
+ ![Čítač panelu počítačového uzlu](../test/media/ltest_compnode.png)
 
  Ikona pro porušení prahové hodnoty je rozšířena z uzlu stromu, které se čítač selhání nachází do kořenového adresáře. Ikona upozornění uživatele k narušení u čítačů, které nemusí být vidět ve stromu, protože nebyl rozšířila stromu. Příklad ikony si můžete prohlédnout ve **počítače uzlu** panelu čítačů na předchozím obrázku.
 
  Ikona bude jeden z následujících akcí:
 
- ![Žádná porušení prahové hodnoty](../test/media/icon_ltest_1.gif "Icon_LTest_1") žádné porušení prahové hodnoty.
+ ![Žádná porušení prahové hodnoty](../test/media/icon_ltest_1.gif) Žádná porušení prahové hodnoty.
 
- ![Porušení kritické prahové hodnoty na posledního intervalu](../test/media/icon_ltest_2.gif "Icon_LTest_2") na posledního intervalu došlo k porušení kritické prahové hodnoty.
+ ![Porušení kritické prahové hodnoty na posledního intervalu](../test/media/icon_ltest_2.gif) Na poslední intervalu, došlo k porušení kritické prahové hodnoty.
 
- ![Porušení kritické prahové hodnoty v předchozí intervalu](../test/media/icon_ltest_3.gif "Icon_LTest_3") na předchozí interval došlo k porušení kritické prahové hodnoty.
+ ![Porušení kritické prahové hodnoty na předchozí interval](../test/media/icon_ltest_3.gif) V předchozí intervalu došlo k porušení kritické prahové hodnoty.
 
- ![Porušení výstražné prahové hodnoty na posledního intervalu](../test/media/icon_ltest_4.gif "Icon_LTest_4") na posledního intervalu došlo k porušení výstražné prahové hodnoty.
+ ![Porušení výstražné prahové hodnoty na posledního intervalu](../test/media/icon_ltest_4.gif) Na poslední intervalu, došlo k porušení výstražné prahové hodnoty.
 
- ![Porušení výstražné prahové hodnoty v předchozí intervalu](../test/media/icon_ltest_5.gif "Icon_LTest_5") na předchozí interval došlo k porušení výstražné prahové hodnoty.
+ ![Porušení výstražné prahové hodnoty na předchozí interval](../test/media/icon_ltest_5.gif) V předchozí intervalu došlo k porušení výstražné prahové hodnoty.
 
 ## <a name="to-analyze-threshold-violations-in-the-counters-panel"></a>Analýza překročení mezních hodnot na panelu čítačů
 
@@ -74,7 +75,7 @@ Panel čítačů je v zobrazení grafů a zobrazení tabulek v Analyzéru zát
     > [!TIP]
     > Je-li překročení mezní hodnoty zjištěno v průběhu zátěžového testu, ve stavovém řádku Analyzéru zátěžového testu se zobrazí odkaz s názvem „překročení mezních hodnot“, včetně počtu překročení. Můžete na odkaz zobrazíte všechny překročení mezních hodnot v **prahové hodnoty** tabulky zobrazení tabulek.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Použitím panelu čítačů v zobrazení grafů a tabulek zobrazení](../test/counters-panel-in-load-test-analyzer.md)
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

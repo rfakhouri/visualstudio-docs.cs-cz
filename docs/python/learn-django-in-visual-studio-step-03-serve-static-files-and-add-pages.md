@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750331"
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Kurz – krok 3: statické soubory, přidat stránky a používat šablonu dědičnosti
 
 **Předchozí krok: [vytvoření aplikace Django s zobrazení a stránka šablony](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
-V předchozích krocích tohoto kurzu když jste se naučili vytvoření minimální aplikace Django s jednu stránku HTML, úplný a samostatný. Moderní webové aplikace, ale se obvykle skládají mnoho stránek a použití sdílených prostředků jako šablon stylů CSS a JavaScript a soubor zajistit konzistentní stylů a chování.
+V předchozích krocích tohoto kurzu když jste se naučili vytvoření minimální aplikace Django s jednu stránku HTML, úplný a samostatný. Moderní webové aplikace, ale se obvykle skládají mnoho stránek a ujistěte se, používání sdílených prostředků, jako jsou soubory šablon stylů CSS a JavaScript zajistit konzistentní stylů a chování.
 
 V tomto kroku, dozvíte, jak:
 
@@ -40,8 +41,6 @@ Chcete-li zobrazit dostupné šablony, přejděte na **Průzkumníku řešení**
 ![Přidat dialogové okno Nový položku v sadě Visual Studio](media/django/step03-add-new-item-dialog.png)
 
 Pro použití šablony, vyberte požadované šablony, zadejte název souboru a vyberte **OK**. Přidání položky tímto způsobem automaticky přidá soubor do projektu sady Visual Studio a označí změny zdrojového kódu.
-
-Visual Studio také přidá do některé nejčastěji používaných možností **přidat** nabídky přímo. V projektu jazyka Python, například, můžete se setkat **stránku HTML** nebo **list stylu** příkazy v dolní části **přidat** nabídky, které vyzvou k zadání názvu a vytvoří soubor.
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Otázka: jak Visual Studio vědět, které položky šablony na nabídku?
 
@@ -187,7 +186,7 @@ Základní šablonu určí bloky pomocí `{% block <block_name> %}` a `{% endblo
 
 Následující kroky ukazují dědičnosti:
 
-1. V dané aplikaci `templates/HelloDjangoApp` složky, vytvořte nový soubor HTML (pomocí **přidat** > **nová položka** kontextové nabídky nebo **přidat**  >   **Stránky HTML**) názvem `layout.html`a vložte následující obsah. Můžete zjistit, že tato šablona obsahuje blok s názvem "obsah", je všechno, co odkazující stránky potřeba nahradit:
+1. V dané aplikaci `templates/HelloDjangoApp` složky, vytvořte nový soubor HTML (pomocí **přidat** > **nová položka** kontextové nabídky nebo **přidat**  >   **Stránky HTML**) názvem `layout.html`a nahraďte jeho s kód níže. Můžete zjistit, že tato šablona obsahuje blok s názvem "obsah", je všechno, co odkazující stránky potřeba nahradit:
 
     ```html
     <!DOCTYPE html>

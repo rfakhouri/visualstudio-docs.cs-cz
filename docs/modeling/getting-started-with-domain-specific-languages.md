@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61fdb4b652b7fe74f3baf80c6e9d6332914a9a1e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77fe0d04b49cf12401c38b4a8842a14d6f84ccd2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750256"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Začínáme s jazyky specifickými pro doménu
 Toto téma vysvětluje základní koncepce při definování a používání jazyka specifické pro doménu (DSL) vytvořené pomocí sady SDK modelování pro sadu Visual Studio.
@@ -28,7 +29,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
  Když navrženy DSL, můžete distribuovat jako součást balíčku rozšíření integrace aplikace Visual Studio (VSIX). Uživatelé pracovat s DSL v sadě Visual Studio:
 
- ![Rodina stromového diagramu, nástrojů a explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![Rodina stromového diagramu, nástrojů a explorer](../modeling/media/familyt_instance.png)
 
  Notace je jenom část DSL. Společně s zápis vašeho balíčku VSIX obsahuje nástroje, které uživatelé mohou nainstalovat na jejich upravit a vytvoření materiálu z jejich modelů.
 
@@ -60,7 +61,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
 3.  Klikněte na tlačítko **Návrhář jazyka domény**.
 
-     ![Dialogové okno DSL vytvořit](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Dialogové okno DSL vytvořit](../modeling/media/create_dsldialog.png)
 
 4.  V **název** zadejte **FamilyTree**. Click **OK**.
 
@@ -87,7 +88,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
  Uživatelské rozhraní je nyní podobný na následujícím obrázku.
 
- ![Návrhář DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![Návrhář jazyka domény](../modeling/media/dsl_designer.png)
 
  Toto řešení definuje konkrétní jazyk domény. Další informace najdete v tématu [přehled nástroje uživatelského rozhraní pro specifické pro doménu jazyk](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -136,7 +137,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
  Experimentální sady Visual Studio bude vypadat podobně jako v následujícím příkladu:
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>Obsah modelu
  Obsah souboru, který je instancí DSL nazývá *modelu*. Model obsahuje *modelu ** elementy* a *odkazy* mezi elementy. Definice DSL Určuje, jaké typy prvků modelu a odkazy může existovat v modelu. Například v DSL, vytvořené z šablony minimální jazyk, je jeden typ prvku modelu a jeden typ odkazu.
@@ -196,7 +197,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
 1.  V diagramu DslDefinition přejmenovat **ExampleModel** k **FamilyTreeModel**, **ExampleElement** k **osoba**,  **Cíle** k **nadřazené položky**, a **zdroje** k **podřízené objekty**. Můžete kliknout na každý popisek ho změnit.
 
-     ![Diagram DSL definice &#45; rodiny stromu modelu](../modeling/media/familyt_person.png "FamilyT_Person")
+     ![Diagram DSL definice &#45; rodiny stromu modelu](../modeling/media/familyt_person.png)
 
 2.  Přejmenování elementu a konektor nástroje.
 
@@ -255,7 +256,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
     4.  Vyberte každý nový dekoratéra a v okně vlastností nastavte **pozice** pole. Určuje, kde bude zobrazovat hodnota vlastnosti domény na tvaru. Například nastavit **InnerBottomLeft** a **InnerBottomRight**.
 
-         ![Prostoru pro definice na tvar](../modeling/media/familyt_compartment.png "FamilyT_Compartment")
+         ![Definice tvar prostředí](../modeling/media/familyt_compartment.png)
 
 3.  Mapovat dekoratéry vlastnosti.
 
@@ -271,7 +272,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
 6.  V souboru .tt můžete přidat kód, který získá vlastnosti každá osoba.
 
- ![Rodina stromového diagramu, nástrojů a explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![Rodina stromového diagramu, nástrojů a explorer](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Definovat nové třídy
  Třídy domény a vztahy můžete přidat k modelu. Můžete například vytvořit novou třídu k reprezentaci městech a nový vztah k reprezentaci, že uživatel žít ve městě.
@@ -297,7 +298,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
     1.  Klikněte **referenční vztah** nástroje, klikněte na tlačítko osoby a pak klikněte na města.
 
-         ![Fragment definice DSL: kořen stromu rodiny](../modeling/media/familyt_root.png "FamilyT_Root")
+         ![Fragment definice DSL: kořen stromu rodiny](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         >  Referenční relace představují křížové odkazy z jedné části stromu modelu do jiného.
@@ -322,7 +323,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
     2.  Použití **Diagram Element mapy** nástroj pro nový konektor propojit vztah mezi osoby a města.
 
-         ![Definice rodiny stromu s přidané obrazce mapy](../modeling/media/familyt_shapemap.png "FamilyT_ShapeMap")
+         ![Definice rodiny stromu s přidané obrazce mapy](../modeling/media/familyt_shapemap.png)
 
 6.  Vytvořte nástroj pro vytváření nové městě na element.
 
@@ -402,7 +403,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
 2.  Znovu vytvořit všechny experimentální DSL, linky nebo jiných experimentální rozšíření sady Visual Studio, které chcete použít.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Porozumění modelům, třídám a vztahům](../modeling/understanding-models-classes-and-relationships.md)
 - [Jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md)

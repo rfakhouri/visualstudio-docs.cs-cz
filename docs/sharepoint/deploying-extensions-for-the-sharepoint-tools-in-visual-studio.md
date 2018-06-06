@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7ed6b037d04e867b2d94a28fef5ecb6760e39dc
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dba88bde834ddf8e5eba938325b21434560827a1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767257"
 ---
-# <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Nasazování rozšíření pro nástroje služby SharePoint v aplikaci Visual Studio
-  Chcete-li nasadit rozšíření nástrojů SharePoint, vytvořte [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] balíček rozšíření (VSIX), který obsahuje sestavení rozšíření a další soubory, které chcete distribuovat s rozšířením. Balíčku VSIX je komprimovaný soubor, který následuje standardní otevřete balení konvence OPC (). VSIX balíčky mít příponu VSIX.  
+# <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio
+  Chcete-li nasadit rozšíření nástrojů SharePoint, vytvořte [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] balíček rozšíření (VSIX), který obsahuje sestavení rozšíření a další soubory, které chcete distribuovat s rozšířením. Balíčku VSIX je komprimovaný soubor, který následuje standardní otevřete balení konvence OPC (). VSIX balíčky *VSIX* rozšíření.  
   
  Po vytvoření balíčku VSIX mohou ostatní uživatelé spusťte soubor VSIX k instalaci rozšíření. Když uživatel nainstaluje rozšíření, jsou nainstalovány všechny soubory do složky %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions. Pokud chcete nasadit rozšíření, můžete nahrát balíčku VSIX pro [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webové stránky, nebo můžete distribuovat balíček zákazníkům jiným způsobem, jako je například hostování balíček ve sdílené síťové složky nebo jiný webový server.  
   
@@ -30,7 +31,7 @@ ms.lasthandoff: 05/22/2018
   
  Balíčku VSIX můžete vytvořit pomocí **projektu VSIX** balíčku VSIX šablony v sadě Visual Studio, nebo můžete vytvořit ručně.  
   
-## <a name="using-vsix-projects-to-create-vsix-packages"></a>Použití VSIX projekty k vytvoření balíčků VSIX  
+## <a name="use-vsix-projects-to-create-vsix-packages"></a>Použití VSIX projekty k vytváření balíčků VSIX
  Můžete použít **projektu VSIX** šablony poskytované Visual Studio SDK k vytvoření balíčků VSIX pro rozšíření nástrojů služby SharePoint. Použití projektu VSIX poskytuje několik výhod oproti vytváření balíčku VSIX ručně:  
   
 -   Visual Studio automaticky vytvoří balíček VSIX při sestavování projektu. Úlohy, jako je například přidávání soubory nasazení do balíčku a vytvoření souboru XML [Content_Types] pro balíček se provádějí za vás.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 05/22/2018
   
  Další informace o použití projektu VSIX najdete v tématu [šablona projektu VSIX](/visualstudio/extensibility/vsix-project-template).  
   
-### <a name="organizing-your-projects"></a>Uspořádání vašich projektů  
+### <a name="organize-your-projects"></a>Uspořádání vašich projektů
  Ve výchozím nastavení projekty VSIX generovat jenom balíčky VSIX, není sestavení. Proto je obvykle neimplementují rozšíření nástrojů SharePoint v projektu VSIX. Obecně pracujete s alespoň dva projekty:  
   
 -   Projekt VSIX.  
@@ -56,7 +57,7 @@ ms.lasthandoff: 05/22/2018
   
  Pokud zahrnete všechny projekty v řešení stejné sady Visual Studio, můžete upravit soubor source.extension.vsixmanifest v projektu VSIX pro zahrnutí výstupu sestavení projektů knihovny tříd.  
   
-### <a name="editing-the-vsix-manifest"></a>Úpravy VSIX Manifest  
+### <a name="edit-the-vsix-manifest"></a>Upravte VSIX manifest
  Musíte upravit soubor source.extension.vsixmanifest v projektu VSIX pro zahrnutí položky pro všechny položky, které chcete zahrnout do rozšíření. Když otevřete soubor source.extension.vsixmanifest ze své místní nabídky, soubor se zobrazí v návrháři, který poskytuje uživatelské rozhraní pro úpravy XML v souboru. Další informace najdete v tématu [Návrhář manifestu VSIX](/visualstudio/extensibility/vsix-manifest-designer).  
   
  Je nutné přidat položky do souboru source.extension.vsixmanifest pro následující položky:  
@@ -167,7 +168,7 @@ ms.lasthandoff: 05/22/2018
   
      *YourTemplateName*.zip  
   
-     Například pokud máte šablony položky s názvem ContosoCustomAction.zip, která podporuje národní prostředí Czech (Czech Republic), úplná cesta může být ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip.  
+     Pokud máte šablony položky s názvem ContosoCustomAction.zip, která podporuje národní prostředí Czech (Czech Republic), úplná cesta může být například *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*.  
   
 3.  V **Průzkumníku řešení**, vyberte soubor šablony (*YourTemplateName*.zip).  
   
@@ -185,7 +186,7 @@ ms.lasthandoff: 05/22/2018
   
 8.  V **zdroj** vyberte **souboru v systému souborů**.  
   
-9. V **cesta** pole, zadejte úplnou cestu k sestavení (například **ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip**, nebo použijte **Procházet**tlačítko vyhledejte a vyberte sestavení a potom vyberte **OK** tlačítko.  
+9. V **cesta** pole, zadejte úplnou cestu k sestavení (například *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*, nebo použijte **Procházet**tlačítko vyhledejte a vyberte sestavení a potom vyberte **OK** tlačítko.  
   
 ##### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>Zahrnout Průvodce pro šablony projektu nebo šablony položek  
   
@@ -207,7 +208,7 @@ ms.lasthandoff: 05/22/2018
   
 5.  Vyberte **OK** tlačítko.  
   
-### <a name="related-walkthroughs"></a>Související návody  
+### <a name="related-walkthroughs"></a>Související návody
  Následující tabulka uvádí návodů, které ukazují, jak nasadit různé typy rozšíření nástrojů služby SharePoint pomocí projektu VSIX.  
   
 |Typ rozšíření.|Související návody|  
@@ -217,7 +218,7 @@ ms.lasthandoff: 05/22/2018
 |Rozšíření, které obsahuje šablony sady Visual Studio|[Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|  
 |Rozšíření, které obsahuje Průvodce pro šablony|[Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|  
   
-## <a name="creating-vsix-packages-manually"></a>Ruční vytváření balíčků VSIX  
+## <a name="create-vsix-packages-manually"></a>Ruční vytvoření balíčků VSIX
  Pokud chcete ručně vytvořit balíčku VSIX pro rozšíření nástrojů služby SharePoint, proveďte následující kroky:  
   
 1.  Vytvořte soubor extension.vsixmanifest a souboru .xml [Content_Types] do nové složky. Další informace najdete v tématu [anatomie balíčku VSIX](/visualstudio/extensibility/anatomy-of-a-vsix-package).  
@@ -260,10 +261,9 @@ ms.lasthandoff: 05/22/2018
   
 ```  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Rozšíření systému projektu služby SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Volání do služby SharePoint objektové modely](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [Ladění rozšíření pro nástroje služby SharePoint v aplikaci Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  
   

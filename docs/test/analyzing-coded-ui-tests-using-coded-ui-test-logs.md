@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0c2ce02ddef992bc9b9bde56be699a097594ffae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750724"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analýza programových testů uživatelského rozhraní pomocí protokolů z těchto testů
 
@@ -72,19 +73,19 @@ Při spuštění programového testu uživatelského rozhraní se změny **QTAge
 
 4.  Vyberte **výstup** odkaz ve výsledcích Průzkumníka testů.
 
-     ![Výstup odkaz v Průzkumníka testů](../test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")
+     ![Výstup odkaz v Průzkumníka testů](../test/media/cuit_htmlactionlog1.png)
 
      Zobrazí se výstup pro test, který obsahuje odkaz na protokol akcí.
 
-     ![Výsledky a odkazy na výstup z programového testu uživatelského rozhraní](../test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")
+     ![Výsledky a odkazy na výstup z programového testu uživatelského rozhraní](../test/media/cuit_htmlactionlog2.png)
 
 5.  Vyberte *UITestActionLog.html* odkaz.
 
      Protokol se zobrazí ve webovém prohlížeči.
 
-     ![Programové uživatelského rozhraní testovací soubor protokolu](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")
+     ![Programového souboru protokolu testu uživatelského rozhraní](../test/media/cuit_htmlactionlog3.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)
 - [Postupy: spouštění testů ze sady Microsoft Visual Studio](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

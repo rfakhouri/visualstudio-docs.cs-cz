@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f6cff8e8890b97e7aeddad69c4a1a3e0ff5db8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0a2d25029455f3e263013c4d6063ee7453a283b6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747102"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Postupy: úprava bodu Pivot 3D modelu
 
 Tento článek ukazuje, jak upravit pomocí editoru modelu *bodu otáčení* 3D modelu. Bod pivot je bod v prostor, který definuje matematické center objektu pro otáčení a škálování.
 
-## <a name="modify-the-pivot-point-of-a-3d-model"></a>Úprava bodu pivot 3D modelu
+## <a name="modify-the-pivot-point-of-a-3d-model"></a>Změna bodu otáčení 3D modelu
 
 Původ 3D model můžete upravit změnou jeho pivot bodu.
 
@@ -41,9 +42,9 @@ Ujistěte se, že **vlastnosti** okno a **sada nástrojů** jsou zobrazeny.
 
 Tady je model, který má bod upravené pivot:
 
-![Model úklidové, který má bod upravené pivot](../designers/media/digit-modified-model.png "číslice upravit modelu")
+![Model úklidové, který má bod upravené pivot](../designers/media/digit-modified-model.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: vytvoření základní 3D modelu](../designers/how-to-create-a-basic-3-d-model.md)
 - [Editor modelů](../designers/model-editor.md)

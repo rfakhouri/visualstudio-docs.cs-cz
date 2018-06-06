@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 304c31a9cfd389bb3a5af6b1a8191f41d881165b
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765665"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a použití sady Visual Studio a služby Azure za serverem brány firewall nebo proxy server
 
@@ -31,7 +32,7 @@ Pokud vaše organizace používá bezpečnostní opatření, jako je například
 
 * **[Pomocí sady Visual Studio a služby Azure](#use-visual-studio-and-azure-services)**: Tato tabulka obsahuje domény adresy URL do seznamu povolených IP adres a portů a protokolů otevřete tak, aby měli přístup ke všem funkce a služby, které chcete.
 
-## <a name="install-visual-studio"></a>Instalaci sady Visual Studio
+## <a name="install-visual-studio"></a>Instalace sady Visual Studio
 
 ### <a name="urls-to-whitelist"></a>Adresy URL do seznamu povolených IP adres
 
@@ -133,8 +134,9 @@ Zde jsou několik další možnosti podpory můžete:
 * Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-* [Řešení potíží s chybami související se sítí v sadě Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
-* [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
-* [Nainstalovat Visual Studio 2017](install-visual-studio.md)
+* [Vytvořit síťovou instalaci sady Visual Studio](create-a-network-installation-of-visual-studio.md)
+* [Řešení chyb související se sítí v sadě Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
+* [Příručka správce Visual Studio](visual-studio-administrator-guide.md)
+

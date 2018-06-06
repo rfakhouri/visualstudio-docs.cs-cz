@@ -9,13 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751420"
 ---
-# <a name="quickstart-test-driven-development-with-test-explorer"></a>Rychlý úvod: Testování vývoj řízený testy pomocí Průzkumníka testů
+# <a name="quickstart-test-driven-development-with-test-explorer"></a>Rychlý start: Vývoj řízený testy s použitím Průzkumníka testů
 
 Doporučujeme vytvořit testování částí zajistit, aby byl váš kód funguje prostřednictvím mnoho kroků přírůstkové vývoje. Existuje několik rozhraní, které můžete použít k zápisu testy jednotek, včetně některých vyvinuté třetími stranami. Některé testovací rozhraní se specializují na testování v různých jazycích nebo platformy. Průzkumníka testů poskytuje jednotné rozhraní pro testování částí v některém z těchto rozhraní. Jsou k dispozici pro rozhraní nejčastěji používaných adaptéry a můžete napsat vlastní adaptéry pro ostatní platformy.
 
@@ -28,7 +29,7 @@ Doporučujeme vytvořit testování částí zajistit, aby byl váš kód funguj
 -   Najdete v jednom okně veškeré informace, které potřebujete.
 
 ## <a name="using-test-explorer"></a>Pomocí Průzkumníka testů
- ![Tlačítko Spustit všechny zobrazuje Průzkumníka testů jednotek](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")
+ ![Tlačítko Spustit všechny jednotky zobrazuje Průzkumníka testů](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Pro spuštění testů jednotek pomocí Průzkumníka testů
 
@@ -44,7 +45,7 @@ Doporučujeme vytvořit testování částí zajistit, aby byl váš kód funguj
 
     2.  Každý test jednotky jako metody zápisu Předpony každá metoda test s `[TestMethod]` atribut.
 
-2.  Pokud jednotlivé testy žádné závislosti, které je zabránit spouštění v libovolném pořadí, zapnout spuštění testu paralelní s ![UTE&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný k spustit všechny testy.
+2.  Pokud jednotlivé testy žádné závislosti, které je zabránit spouštění v libovolném pořadí, zapnout spuštění paralelní testu pomocí ![UTE&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png) přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný k spustit všechny testy.
 
 3.  Na řádku nabídek zvolte **Test**, **spuštění testů jednotek**, **všechny testy**.
 
@@ -79,7 +80,7 @@ Doporučujeme vytvořit testování částí zajistit, aby byl váš kód funguj
 
     -   V **nový projekt** dialogovém okně, vyberte **Visual C#**, **Test** a potom zvolte **projektu testování částí**.
 
-         ![Nové projekty kódu a testování](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+         ![Nový kód a testování projektů](../test/media/unittestexplorerwalk1.png)
 
 3.  Write – metoda základní test. Ověřte výsledek pro specifický vstup:
 
@@ -125,7 +126,7 @@ Doporučujeme vytvořit testování částí zajistit, aby byl váš kód funguj
 
 7.  Vyberte položky v rámci **trasování zásobníku** zobrazíte, kde test se nezdařil.
 
- ![Testování jednotky testování Explorer zobrazující se nezdařilo. ] (../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+ ![Testování jednotky testování Explorer zobrazující se nezdařilo.](../test/media/unittestexplorerwalkthrough2.png)
 
  V tomto okamžiku jste vytvořili testovací a kódu, který upravíte tak, aby test byl úspěšný.
 
@@ -146,7 +147,7 @@ Doporučujeme vytvořit testování částí zajistit, aby byl váš kód funguj
 
      Test byl úspěšný.
 
-     ![Průzkumník testování částí zobrazující testu předávání. ] (../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![Průzkumník testování částí zobrazující testu předávání.](../test/media/unittestexplorerwalkthrough3.png)
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Přidávat testy rozšířit rozsah vstupy
 
@@ -288,4 +289,4 @@ Doporučujeme vytvořit testování částí zajistit, aby byl váš kód funguj
 
      Všechny testy byly stále úspěšné.
 
-     ![Zobrazuje 3 předaný testy Průzkumníka testů jednotek. ] (../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Zobrazuje 3 předaný testy Průzkumníka testů jednotek.](../test/media/unittestexplorerwalkthrough4.png)

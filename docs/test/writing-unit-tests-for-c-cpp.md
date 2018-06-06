@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752076"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zápis testů částí pro C/C++ v sadě Visual Studio
 
@@ -51,19 +52,19 @@ Následující části vysvětlují základní kroky, které vám pomůžou zač
 
 Můžete definovat a spustit testy uvnitř jeden nebo více projektů testů, které jsou ve stejném řešení jako kód, který chcete testovat. Chcete-li přidat nový projekt testu do existujícího řešení, klikněte pravým tlačítkem na uzel řešení v **Průzkumníku řešení** a zvolte **přidat | Nový projekt**. Potom v levém podokně vyberte **testu sady Visual C++** a vyberte jeden z typů projektu z podokna center. Následující obrázek znázorňuje projektů testů, které jsou k dispozici, při zpracování **vývoj plochy s jazykem C++** zatížení je nainstalován:
 
-![Testování projektů C++](media/cpp-new-test-project.png "C++ otestovat nové šablony projektů")
+![Projekty C++ testu](media/cpp-new-test-project.png)
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Vytvořit odkazy na další projekty v řešení
 
 Chcete-li povolit testovacího kódu pro přístup k funkcím v projekt, který má být testována, přidejte do testovacího projektu odkaz na projekt. Klikněte pravým tlačítkem na uzel projektu testu v **Průzkumníku řešení** a zvolte **přidat | Referenční dokumentace**. Potom v dialogovém okně vyberte projekty, které chcete otestovat.
 
-![Přidat odkaz](media/cpp-add-ref-test-project.png "C++ testovací přidat odkaz na projekty, které má být testována")
+![Přidání odkazu](media/cpp-add-ref-test-project.png)
 
 ### <a name="add-include-directives-for-header-files"></a>Přidat #include pro soubory hlaviček
 
 Dále v jednotky testovací soubor, přidejte `#include` direktivy pro všechny hlavičky souborů, které deklarovat typy a funkce, kterou chcete otestovat. Typ `#include "` a poté bude aktivovat IntelliSense, které vám pomohou zvolit. Opakujte pro všechny další záhlaví.
 
-![Přidání direktivy začlenění](media/cpp-add-includes-test-project.png "C++ testovací přidat zahrnuje pro soubory hlaviček")
+![Přidání direktivy začlenění](media/cpp-add-includes-test-project.png)
 
 ### <a name="write-test-methods"></a>Test metody zápisu
 
@@ -72,7 +73,7 @@ Dále v jednotky testovací soubor, přidejte `#include` direktivy pro všechny 
 
 Ve vašem projektu testovacího souboru má třída se zakázaným inzerováním a metoda definované pro vás jako příklad jak napsat testování kódu. Všimněte si, že podpisů používat TEST_CLASS a TEST_METHOD makra, které metody zjistitelnost z okna Průzkumníka testů.
 
-![Přidání direktivy začlenění](media/cpp-write-test-methods.png "C++ testovací přidat zahrnuje pro soubory hlaviček")
+![Přidání direktivy začlenění](media/cpp-write-test-methods.png)
 
 TEST_CLASS a TEST_METHOD jsou součástí [Microsoft nativní Test Framework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Testování Explorer** zjistí testovací metody v jiné podporované architektury podobným způsobem.
 
@@ -94,7 +95,7 @@ Můžete přidat *vlastnosti* k testování metody k určení testovací vlastn�
 
 1. Na **Test** nabídce zvolte **Windows** > **Průzkumníka testů**. Následující obrázek znázorňuje testovacího projektu, jehož testy dosud nebyly spuštěny.
 
-   ![Testování Explorer před spuštěním testů](media/cpp-test-explorer.png "C++ Průzkumníka testů")
+   ![Průzkumníka testů před spuštěním testů](media/cpp-test-explorer.png)
 
    > [!NOTE]
    > CTest integrace s **Průzkumníka testů** dosud nejsou k dispozici. Spusťte testy CTest z hlavní nabídky CMake.
@@ -103,7 +104,7 @@ Můžete přidat *vlastnosti* k testování metody k určení testovací vlastn�
 
 1. V Průzkumníku testu zvolte **spustit všechny**, nebo vyberte konkrétní testy, kterou chcete spustit. Klikněte pravým tlačítkem myši na test pro další možnosti, včetně spuštění v režimu ladění se zarážkami povolena. Okně se zobrazí po spuštění všechny testy, které testy předán a ty, které se nezdařilo:
 
-![Po spuštění testů vyzkoušet Explorer](media/cpp-test-explorer-passed.png "C++ Průzkumníka testů po spuštění testů")
+![Průzkumníka testů po spuštění testů](media/cpp-test-explorer-passed.png)
 
 Zpráva pro neúspěšných testů, nabízí podrobnosti, které pomohou při určování příčin. Můžete kliknout pravým tlačítkem na test selhání a vyberte **ladění vybrané testy** krok prostřednictvím funkce, kde došlo k chybě.
 
@@ -111,6 +112,6 @@ Další informace o používání **Průzkumníka testů**, najdete v části [s
 
 Doporučené postupy související s testování částí, najdete v části [testování částí](unit-test-basics.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 [Testování částí kódu](unit-test-your-code.md)

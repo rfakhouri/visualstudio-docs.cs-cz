@@ -18,11 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4aea2750e3900beb0aaa62156c215376ff16d1ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f870bce3abea444d6a04c0076d7110345c55ea7c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750425"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 Definovat jazyk specifické pro doménu (DSL), řešení sady Visual Studio vytvořit ze šablony. Klíčovou součástí řešení je diagram definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a obrazců DSL. Po úpravě a přidáte k těmto prvkům, můžete přidat kód programu k přizpůsobení DSL podrobněji.
@@ -48,7 +49,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
 1.  Vytvoření řešení s **jazyka domény** šablony, která najdete v části **ostatní typy/rozšiřitelnost projektů** v **nový projekt** dialogové okno.
 
-     ![Dialogové okno DSL vytvořit](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Dialogové okno DSL vytvořit](../modeling/media/create_dsldialog.png)
 
      Když kliknete na tlačítko **OK**, **specifické pro doménu jazyk průvodce** otevře a zobrazí se seznam šablon DSL řešení.
 
@@ -86,7 +87,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
  Uživatelské rozhraní je nyní podobný na následujícím obrázku.
 
- ![Návrhář DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![Návrhář jazyka domény](../modeling/media/dsl_designer.png)
 
  Toto řešení definuje konkrétní jazyk domény. Další informace najdete v tématu [přehled nástroje uživatelského rozhraní pro specifické pro doménu jazyk](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -99,7 +100,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
  Pokud spuštění řešení, které jste vytvořili z **minimální jazyk** šablony, experimentální sady Visual Studio bude vypadat podobně jako v následujícím příkladu:
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
  Experimentujte s nástroje. Vytvořte elementy a jejich připojení.
 
@@ -139,11 +140,11 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
  Následující obrázek ukazuje třídy a vztahy část DSL, který slouží jako příklad v tomto tématu.
 
- ![Vložení a referenční dokumentace vztahy](../modeling/media/music_classes.png "Music_Classes")
+ ![Vztahy vložení a referenční informace](../modeling/media/music_classes.png)
 
  Následující obrázek je příklad model z této DSL:
 
- ![Instance modelu generovaného DSL](../modeling/media/music_instance.png "Music_Instance")
+ ![Instance modelu generovaného DSL](../modeling/media/music_instance.png)
 
 > [!NOTE]
 >  "Model" odkazuje na instanci vaše DSL, vytvoříte uživatele a obvykle se zobrazí jako diagram. Toto téma popisuje diagram DSL definice a modelu diagramy, které se zobrazí při vaší DSL se používá.
@@ -235,7 +236,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Chcete-li definovat třídu elementů, které se zobrazují jako obrazce v diagramu
 
-1.  **Definování a testování třídu domény, jak je popsáno v**[definice třídy domény](#classes) **.** 
+1.  **Definování a testování třídu domény, jak je popsáno v**[definice třídy domény](#classes) **.**
 
     -   Kořenová třída by měla být nadřazené třídy. To znamená měla by existovat vnoření relaci mezi kořenová třída a nová třída domény.
 
@@ -285,7 +286,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
     4.  Ujistěte se, že spolu s každou dekoratéra název se zobrazí zaškrtnutí.
 
-     ![Mapování tvar a podrobnosti DSL okno](../modeling/media/dsldetailswindow.png "DslDetailsWindow")
+     ![Okno tvar mapování a podrobnosti DSL](../modeling/media/dsldetailswindow.png)
 
 7.  **Zkontrolujte položky sady nástrojů pro vytváření elementy třídy domény.**
 
@@ -331,7 +332,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
  Například pokud Hudba alba a umělci jsou zobrazeny jako obrazce v diagramu, můžete třeba definovat relace s názvem ArtistsAppearedOnAlbums, který odkazuje na alb, na kterých už pracovali umělci. Podívejte se na příklad na obrázku.
 
- ![Instance modelu generovaného DSL](../modeling/media/music_instance.png "Music_Instance")
+ ![Instance modelu generovaného DSL](../modeling/media/music_instance.png)
 
  Referenční relace, můžete také propojit elementy stejného typu. Například v DSL, představující stromu rodiny, vztah mezi nadřazené položky a jejich podřízené je referenční vztah osoby z osoby.
 
@@ -348,7 +349,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
  **Nastavte vlastnost relace, umožňuje duplikuje** Pokud mezi stejného páru prvků modelu může existovat více než jeden odkaz pro stejnou třídu. Například může povolit učitelem naučit více než jeden vztahují stejné Student.
 
- ![Obrazce mapy pro konektory](../modeling/media/music_connector.png "Music_Connector")
+ ![Obrazce mapy pro konektory](../modeling/media/music_connector.png)
 
  Další informace najdete v tématu [vztahy domén vlastnosti](../modeling/properties-of-domain-relationships.md) a [Vlastnosti rolí domény](../modeling/properties-of-domain-roles.md).
 
@@ -411,11 +412,11 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 ##  <a name="compartments"></a> Definování tvarů, které obsahují seznamy: prostoru pro tvarů
  Obrazce prostředí obsahuje jeden nebo více seznam položek. Například v DSL knihovna Hudba, můžete použít prostředí tvarů představují Hudba alb. V každé Album je seznam skladeb.
 
- ![Prostoru pro tvar](../modeling/media/compartmentshape.png "CompartmentShape")
+ ![Tvar prostředí](../modeling/media/compartmentshape.png)
 
  V Nejjednodušším způsobem, jak dosažení tímto účelem se v definici DSL definujete jednu třídu domény pro kontejner a jednu třídu domény pro každý seznamu. Kontejner – třída je namapována na tvar prostředí.
 
- ![Obrazce mapy](../modeling/media/music_mapcomp.png "Music_MapComp")
+ ![Obrazce mapy](../modeling/media/music_mapcomp.png)
 
  Další informace najdete v tématu [vlastnosti prostředí tvarů](../modeling/properties-of-compartment-shapes.md).
 
@@ -505,7 +506,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 
 7.  Otevřete Průzkumníka jazyk. Ověřte, uvidíte kontejner uzly s uzlů položky seznamu v rámci.
 
- ![Vygenerovaný explorer DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![Vygenerovaný explorer DSL](../modeling/media/music_explorer.png)
 
  Po dokončení testu nejprve obrazce prostředí, můžete upravit některé jeho vlastnosti a přidejte některé pokročilejší funkce. Další informace najdete v tématu [přizpůsobení a rozšíření jazyka domény](../modeling/customizing-and-extending-a-domain-specific-language.md).
 

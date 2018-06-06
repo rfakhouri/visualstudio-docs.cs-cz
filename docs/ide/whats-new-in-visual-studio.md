@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8430e81cc0f4c15bdcb9d7ed3accaa041afa8d8e
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 7a529c52472eca82d3b78860087c9e81aace45d5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750477"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s nového ve Visual Studio 2017
 
@@ -57,7 +58,7 @@ Zde uvádíme podrobnější informace o některých nejdůležitějším vylep�
 
 Vyberte úlohy, je třeba a změnit, pokud je potřeba.
 
- ![Dialogové okno nastavení Visual Studio 2017](../install/media/install-visual-studio-enterprise.png "obrazovky instalačního programu Visual Studio 2017")
+ ![Visual Studio 2017 dialogové okno nastavení](../install/media/install-visual-studio-enterprise.png)
 
 A máte k dispozici možnosti a systém doladit vaší instalace příliš:
 
@@ -89,7 +90,7 @@ Nové centrum výkonu Visual Studio můžete optimalizovat čas spuštění IDE.
 
 Visual Studio je přesunutí jeho rozšíření (a práci s rozšíření jiných výrobců příliš) tak, aby se zatížení na vyžádání, nikoli při spuštění IDE. Chcete zjistit, které rozšíření dopad spuštění, řešení zatížení a zadáním výkonu? Zobrazí se tyto informace v **pomoci** > **Správa výkonu Visual Studio**.
 
-  ![Dialogové okno Možnosti v aplikaci Visual Studio 2017](../ide/media/vs2017ide-manage-vs-perf.png "nápovědě k sadě Visual Studio dialogové okno-správu výkonu")
+  ![Dialogové okno Možnosti v Visual Studio 2017](../ide/media/vs2017ide-manage-vs-perf.png)
 
 #### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>Správa rozšíření pomocí Správce rozšíření pro Roaming
 
@@ -97,19 +98,19 @@ Je jednodušší a nastavte každý vývojového prostředí obsahovala vaše ob
 
 Chcete-li zobrazit seznam rozšíření v sadě Visual Studio, klikněte na tlačítko **nástroje** > **rozšíření & aktualizace**a pak klikněte na tlačítko **Správce rozšíření pro Roaming**.
 
-![Visual Studio 2017 – dialogové okno rozšíření a aktualizace](../ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017 - nástroje > dialogové okno rozšíření a aktualizace")
+![Visual Studio 2017 – dialogové okno rozšíření a aktualizace](../ide/media/vs2017ide-extensions-and-updates.png)
 
 Správce rozšíření pro Roaming sleduje všechna rozšíření, které nainstalujete, ale můžete vybrat ty, které chcete přidat do vašeho seznamu roamingu.
 
-![Visual Studio 2017 – dialogové okno rozšíření a aktualizace](../ide/media/vs2017ide-RoamingExtensionManager.png "2017 Visual Studio – Správce rozšíření pro Roaming")
+![Visual Studio 2017 – dialogové okno rozšíření a aktualizace](../ide/media/vs2017ide-RoamingExtensionManager.png)
 
 Pokud použijete Správce rozšíření pro Roaming, existují tři typy ikon na seznamu:
 
-* ![Ikona s roamingem](../ide/media/vs2017ide-roamedicon.png "Roamované ikonu") ***roamingem***: příponu, která je součástí tohoto seznamu roamingu, ale není nainstalovaná na počítači.
+* ![Ikona s roamingem](../ide/media/vs2017ide-roamedicon.png) ***roamingem***: příponu, která je součástí tohoto seznamu roamingu, ale není nainstalovaná na počítači.
   (Můžete nainstalovat tak, že pomocí **Stáhnout** tlačítko.)
-* ![Ikona s roamingem a nainstalované](../ide/media/vs2017ide-roamedinstalledicon.png "roamingem a nainstalované ikonu") ***Roamované & nainstalován***: všechna rozšíření, které jsou součástí tohoto seznamu roamingu a nainstalované ve vašem prostředí vývojářů.
+* ![Ikona s roamingem a nainstalované](../ide/media/vs2017ide-roamedinstalledicon.png) ***Roamované & nainstalován***: všechna rozšíření, které jsou součástí tohoto seznamu roamingu a nainstalované ve vašem prostředí vývojářů.
   (Pokud se rozhodnete nechcete se bude používat roaming, můžete odebrat tak, že pomocí **zastavit Roaming** tlačítko.)
-* ![Ikona nainstalovaná](../ide/media/vs2017ide-installedicon.png "nainstalován ikonu") ***nainstalovaná***: všechna rozšíření, která jsou nainstalovaná v tomto prostředí, ale nejsou součástí vašeho seznamu roamingu.
+* ![Ikona nainstalovaná](../ide/media/vs2017ide-installedicon.png) ***nainstalovaná***: všechna rozšíření, která jsou nainstalovaná v tomto prostředí, ale nejsou součástí vašeho seznamu roamingu.
   (Můžete přidat rozšíření do seznamu roamingu pomocí **spustit Roaming** tlačítko.)
 
 Všechny rozšíření, které si stáhnout, když jste přihlášení je přidán do seznamu jako **Roamované & nainstalován**. Rozšíření se pak stane součástí vašeho seznamu roamingu, která umožňuje přístup k němu z libovolného počítače.
@@ -118,7 +119,7 @@ Všechny rozšíření, které si stáhnout, když jste přihlášení je přid�
 
 V aplikaci Visual Studio Enterprise 2017 za provozu poskytuje bydlíte výsledky testů částí kódu a pokrytí kódu v editoru při jsou kódování testování částí. Funguje s projekty C# a Visual Basic pro rozhraní .NET Framework a .NET Core a podporuje tři systémů testování Mstestu, xUnit a NUnit.
 
-![Live testování částí](../ide/media/lut-codewindow.png "příklad nová funkce Live testování částí v edici Enterprise sady Visual Studio")
+![Live Unit Testing](../ide/media/lut-codewindow.png)
 
 Další informace najdete v tématu [představení Live jednotkové testování](../test/live-unit-testing-intro.md). Seznam nových funkcí v každé verzi Visual Studio Enterprise 2017 najdete v tématu [co je nového v za provozu testování částí](../test/live-unit-testing-whats-new.md).
 
@@ -153,27 +154,27 @@ Další informace najdete v tématu [rychlé akce](../ide/common-quick-actions.m
 
 Když pracujete s projektem v sadě Visual Studio, můžete nastavit a rychle potvrzení a publikování kódu službě Git. Můžete také spravovat vaše úložiště Git pomocí nabídky kliknutí ze tlačítka v pravém dolním rohu rozhraní IDE.
 
-![Visual Studio 2017 komunikuje s dialogu Git](../ide/media/vsIDE-GitInteraction.png "Git nástrojů v prostředí Visual Studio IDE")
+![Visual Studio 2017 komunikuje s dialogu Git](../ide/media/vsIDE-GitInteraction.png)
 
 #### <a name="experience-improved-navigation-controls"></a>Ovládací prvky pro navigaci vylepšené prostředí
 
 Navigace prostředí můžete získat z A a B s větší jistotou rušeni aktualizována.
 
-* **Novinka v 15.4**: **přejít k definici** (**Ctrl**+**klikněte na tlačítko** nebo **F12**) &ndash; myši uživatelů máte snadný způsob, jak přejít k definici člena stisknutím **Ctrl** a pak levým na člen. Stisknutím **Ctrl** a ukazatele myši na symbol kód bude underline ho a zapnout na odkaz. V tématu [přejít k definici a prohlížení definice](../ide/go-to-and-peek-definition.md) Další informace.  
+* **Novinka v 15.4**: **přejít k definici** (**Ctrl**+**klikněte na tlačítko** nebo **F12**) &ndash; myši uživatelů máte snadný způsob, jak přejít k definici člena stisknutím **Ctrl** a pak levým na člen. Stisknutím **Ctrl** a ukazatele myši na symbol kód bude underline ho a zapnout na odkaz. V tématu [přejít k definici a prohlížení definice](../ide/go-to-and-peek-definition.md) Další informace.
 
 * **Přejít na implementaci** (**Ctrl**+**F12**) &ndash; přejde z jakékoli základní typ nebo člen na její různé implementace.
 
 * **Přejděte na všechny** (**Ctrl**+**T** nebo **Ctrl**+**,**) &ndash; přejděte přímo do každé prohlášení souboru nebo typ/člen nebo symbol. Můžete si na seznam výsledků nebo filtrovat, použijte syntaxi dotazu (například "f searchTerm" pro soubory.), "t searchTerm" pro typy atd.
 
-  ![Vylepšené přejděte na všechny](../ide/media/vs2017ide-navigation-go-to.png "příklad vylepšené přejděte na všechny funkce")
+  ![Vylepšené, přejděte na všechny](../ide/media/vs2017ide-navigation-go-to.png)
 
 * **Najít všechny odkazy** (**Shift**+**F12**) &ndash; s zabarvení syntaxe, můžete najít všechny odkaz výsledky seskupovat podle kombinace projektu, definice a cestu. Je také možné "zamknout" výsledky, aby mohl pokračovat k nalezení dalších odkazů na bez ztráty původní výsledky.
 
-  ![Nový nástroj Najít všechny odkazy](../ide/media/vs2017ide-find-all-references.png "příklad nový nástroj Najít všechny odkazy")
+  ![Nový nástroj Najít všechny odkazy](../ide/media/vs2017ide-find-all-references.png)
 
-* **Struktury vizualizér** &ndash; s tečkami, šedé svislé čáry (odsazení příručky) fungovat jako zajímavá v kódu kontextu v rámci vaší rámce zobrazení. Můžete je rozpoznat z oblíbených nástrojů Power produktivitu. Můžete je používat k vizualizaci a zjistit, jaké blok kódu můžete začít kdykoli bez nutnosti posouvání. Ukazatele myši na řádky zobrazí popis, který ukazuje otevření tohoto bloku a jejích nadřazených tříd. Je k dispozici pro všechny jazyky podporované prostřednictvím TextMate gramatika, jakož i C#, Visual Basic a XAML.  
+* **Struktury vizualizér** &ndash; s tečkami, šedé svislé čáry (odsazení příručky) fungovat jako zajímavá v kódu kontextu v rámci vaší rámce zobrazení. Můžete je rozpoznat z oblíbených nástrojů Power produktivitu. Můžete je používat k vizualizaci a zjistit, jaké blok kódu můžete začít kdykoli bez nutnosti posouvání. Ukazatele myši na řádky zobrazí popis, který ukazuje otevření tohoto bloku a jejích nadřazených tříd. Je k dispozici pro všechny jazyky podporované prostřednictvím TextMate gramatika, jakož i C#, Visual Basic a XAML.
 
-  ![Visual Studio 2017 struktura vizualizér](../ide/media/vsIDE-StructureVisualizer.png "struktura vizualizér v sadě Visual Studio")
+  ![Visual Studio 2017 struktura vizualizéru](../ide/media/vsIDE-StructureVisualizer.png)
 
 Další informace o nových funkcích produktivitu najdete v tématu [produktivitu při Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) příspěvku na blogu podle Wilson blogu Thomase značky.
 
@@ -191,13 +192,13 @@ Taky jsme vyřešili více než 250 chyb a hlášené problémy v kompilátoru a
 
 Teď můžete snadno přeskočit během ladění bez nastavení boru přerušení na řádek, který chcete zastaví. Po zastavení v ladicím programu stačí kliknout na ikonu, která se zobrazí vedle řádek kódu. Váš kód bude spustit a zastavit na tomto řádku při příštím je dosáhl v kódové cestě.
 
-![Ladění jazyka Visual Studio 2017 - spustit kliknutím na](../ide/media/vs2017ide-RunToClick.png "spustit na klikněte v sadě Visual Studio ladění a diagnostiky")
+![Ladění jazyka Visual Studio 2017 - spuštění klikněte na](../ide/media/vs2017ide-RunToClick.png)
 
 #### <a name="the-new-exception-helper"></a>Nový Pomocník výjimka
 
 Nového pomocníka výjimka můžete zobrazit vaše výjimka informace na Přehled. Informace jsou poskytovány compact formuláře s okamžitým přístupem k vnitřním výjimkám. Po dokončení diagnostiky NullReferenceException, můžete rychle zjistit, co měl hodnotu null právo uvnitř pomocníka výjimka.
 
-![Dialogové okno nového pomocníka výjimka v sadě Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png "dialogové okno Nový Pomocník výjimka")
+![Dialogové okno nového pomocníka výjimka v sadě Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png)
 
 Další informace najdete v tématu [pomocí nového pomocníka výjimka v sadě Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) příspěvku na blogu.
 
@@ -247,7 +248,7 @@ Další informace najdete v tématu [ladění za provozu aplikace ASP.NET pomoc�
 
 Univerzální platformu Windows (UWP) je platforma aplikace pro Windows 10. Můžete vyvíjet aplikace pro UPW s jedinou sadu rozhraní API, balíček aplikace jeden a jedno úložiště k dosažení všech zařízeních s Windows 10 &ndash; počítač, tablet, phone, Xbox, HoloLens, Surface Hub a další. UWP podporuje jiné velikosti obrazovky a mnoha interakce, ať to dotykového ovládání, myši a klávesnice, herní zařízení nebo pera. Základem aplikace UWP je představu, uživatelé mají svoje prostředí na všech jejich zařízeních jsou mobilní a že chtějí používat, ať zařízení pro na prováděné úloze je nejvíce vhodnou nebo produktivitu.
 
- ![Univerzální platformu Windows](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")
+ ![Univerzální platforma pro Windows](../cross-platform/media/uwp_coreextensions.png)
 
 Vyberte si jazyk upřednostňované vývoj&mdash;z jazyka C#, Visual Basic, C++ nebo JavaScript&mdash;k vytvoření aplikace pro univerzální platformu Windows pro zařízení s Windows 10. Visual Studio 2017 poskytuje šablony aplikace UPW pro jednotlivé jazyky, které umožňují vytvořit jeden projekt pro všechna zařízení. Po dokončení práce, můžete vytvořit balíček aplikace a odešlete ji do Microsoft Store z Visual Studia schválení vaší aplikace zákazníkům na jakékoli zařízení s Windows 10.
 
@@ -270,7 +271,7 @@ Další informace najdete v tématu [Visual Studio a Xamarin](../cross-platform/
 
 **Novinka v 15.3**: pro vaše potřeby vývoj pro iOS, jsme přidali samostatné editor oprávnění. Obsahuje uživatelsky přívětivý uživatelské rozhraní, které lze snadno procházet. Chcete-li jej spustit, dvakrát klikněte na vaše *entitlements.plist* souboru.
 
-![Editor nároku pro Xamarin](../ide/media/xamarin-entitlements-editor.png "nárocích editor pro Xamarin")
+![Editor nároku pro Xamarin](../ide/media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools pro Xamarin
 
@@ -309,9 +310,9 @@ Další informace najdete v tématu [Redgate nástrojů Data v aplikaci Visual S
 
 Platformy .NET Core se provádí z několika komponent, které zahrnují spravované kompilátory, modul runtime, knihovny základní třídy a množství modely aplikace, jako je ASP.NET Core. .NET core podporuje tři hlavní operační systémy: Windows, Linux a systému macOS. .NET Core můžete použít v zařízení, cloud a scénáře vložených/IoT.
 
-A teď obsahuje podporu Docker.  
+A teď obsahuje podporu Docker.
 
-**Novinka v 15.3**: Visual Studio 2017 verze 15.3 podporuje vývoj .NET Core 2.0. Použití rozhraní .NET 2.0 základní vyžaduje stahování a instalace .NET Core 2.0 SDK samostatně.  
+**Novinka v 15.3**: Visual Studio 2017 verze 15.3 podporuje vývoj .NET Core 2.0. Použití rozhraní .NET 2.0 základní vyžaduje stahování a instalace .NET Core 2.0 SDK samostatně.
 
 Další informace najdete v tématu [.NET Core průvodce](/dotnet/core/index) stránky.
 
@@ -352,7 +353,7 @@ Pokud chcete navrhnout zlepšení o tom, jak jsme můžete zlepšit Visual Studi
 
  V některých případech zprávu není dost pro vyjádření celkovému dopadu na problém, která byla zjištěna. Pokud dojde zablokování, havárie nebo jiné problémy s výkonem, můžete snadno sdílet zkopírujte kroky a podpůrné soubory (například snímky obrazovky a trasování a haldy soubory výpisů) s námi pomocí **nahlásit problém** nástroj. Další informace o tom, jak tento nástroj použít, najdete v článku [postup nahlásit problém](how-to-report-a-problem-with-visual-studio-2017.md) stránky.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Poznámky k verzi Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
 * [Co je nového ve Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)

@@ -14,11 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 415e2ee4da01affd2d34b2bbb1aafb5de697767e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766321"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Ladění za provozu aplikací ASP.NET Azure pomocí snímku ladicí program
 
@@ -26,30 +27,34 @@ Ladicí program snímku pořídí snímek aplikací v provozním, když provede 
 
 Snappoints a logpoints jsou podobná zarážky, ale na rozdíl od zarážky, nemusíte snappoints zastavení aplikace při průchodu. Pořízením na snappoint obvykle trvá 10 20 milisekund. 
 
-Snímek kolekce je k dispozici pro následující webové aplikace běžící v Azure App Service:
-
-- Aplikace ASP.NET spuštěné na rozhraní .NET Framework 4.6.1 nebo novější.
-- ASP.NET Core aplikací běžících na .NET Core 2.0 nebo novější na systému Windows.
-
-Kromě toho ladicí program snímku je dostupná jenom pro Visual Studio Enterprise 2017 verze 15,5 nebo vyšší a plány služby App Service základní nebo vyšší. 
-
-V tomto kurzu provedete následující:
+V tomto kurzu se naučíte:
 
 > [!div class="checklist"]
 > * Spuštění ladicího programu snímku
 > * Nastavení snappoint a zobrazení snímku
 > * Nastavte logpoint
 
-## <a name="start-the-snapshot-debugger"></a>Spuštění ladicího programu snímku
+## <a name="prerequisites"></a>Požadavky
 
-1. Nainstalujte [Visual Studio Enterprise 2017 verze 15,5](https://www.visualstudio.com/downloads/) nebo novější. Při aktualizaci z předchozí instalace Visual Studio 2017, spusťte instalační program Visual Studio a zkontrolujte ladicí program snímku součástí technologie ASP.NET a webové úlohy vývoj.
+* Ladicí program snímku je dostupná jenom pro Visual Studio Enterprise 2017 verze 15,5 nebo vyšší s **ASP.NET a webové úlohy vývoj**. Pro ASP.NET Core, musíte taky. **NET základní vývoj** zatížení nainstalována.
 
-2. Otevřete projekt, který chcete snímek ladění. 
+    Pokud ještě není nainstalovaný, nainstalujte [Visual Studio Enterprise 2017 verze 15,5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) nebo novější. Při aktualizaci z předchozí instalace Visual Studio 2017, spusťte instalační program Visual Studio a změnami komponentu snímku ladicí program **ASP.NET a webové úlohy vývoj**.
+
+* Plán aplikační služby Azure základní nebo vyšší.
+
+* Snímek kolekce je k dispozici pro následující webové aplikace běžící v Azure App Service:
+
+    * Aplikace ASP.NET spuštěné na rozhraní .NET Framework 4.6.1 nebo novější.
+    * ASP.NET Core aplikací běžících na .NET Core 2.0 nebo novější na systému Windows.
+
+## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Otevřete projekt a spusťte snímek ladicí program
+
+1. Otevřete projekt, který chcete snímek ladění. 
 
     > [!IMPORTANT] 
     > K ladění snímek, budete muset otevřít **stejnou verzi zdrojový kód** je publikována ve službě Azure App Service. 
 
-3. V Průzkumníku cloudu (**zobrazení > Průzkumník cloudu**), klikněte pravým tlačítkem na projekt se nasadí do služby Azure App Service a vyberte **připojit ladicí program snímku**.
+1. V Průzkumníku cloudu (**zobrazení > Průzkumník cloudu**), klikněte pravým tlačítkem na projekt se nasadí do služby Azure App Service a vyberte **připojit ladicí program snímku**.
 
    ![Spuštění ladicího programu snímku](../debugger/media/snapshot-launch.png)
 

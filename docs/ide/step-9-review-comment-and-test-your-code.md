@@ -11,85 +11,86 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04039ebbbef5f2e20fe9f35ca9db331820870b81
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: f8e6043142fa58cd5991815ebc107d425cc36950
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747991"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9: Zkontrolujte, okomentujte a otestujte svůj kód
-Dále přidejte komentář k vašeho kódu. Komentář je poznámka, která nelze změnit způsob, který se chová program. Umožňuje jednodušší někomu, kdo je čtení kód a co provádí. Přidávání komentářů do kódu je dobré která podporují nahrát do. V jazyce Visual C# dvě lomítka (/ /) označení řádku jako komentář. V jazyce Visual Basic jednoduché uvozovky (') slouží k označení řádku jako komentář. Po přidání komentáře otestujete váš program. Je vhodné spustit a otestovat kód často při práci na projekty, aby bylo možné zachytit a opravili všechny problémy před kód získá složitější. To se označuje jako *iterativnější testování,*.  
+Dále přidejte komentář k vašeho kódu. Komentář je poznámka, která nelze změnit způsob, který se chová program. Umožňuje jednodušší někomu, kdo je čtení kód a co provádí. Přidávání komentářů do kódu je dobré která podporují nahrát do. V jazyce Visual C# dvě lomítka (/ /) označení řádku jako komentář. V jazyce Visual Basic jednoduché uvozovky (') slouží k označení řádku jako komentář. Po přidání komentáře otestujete váš program. Je vhodné spustit a otestovat kód často při práci na projekty, aby bylo možné zachytit a opravili všechny problémy před kód získá složitější. To se označuje jako *iterativnější testování,*.
 
- Právě jste vytvořili něco, který funguje, a sice ještě není Hotovo, můžete již načíst obrázek. Než přidejte komentář k kódu a otestovat ji, časově Seznamte se s koncepty kódu, protože se používají tyto koncepty často:  
-  
--   Když dvakrát kliknuli **zobrazit obrázek** tlačítka na **Návrhář formulářů Windows**, IDE, automaticky přidá *metoda* kódu vašeho programu.  
-  
--   Metody jsou, jak můžete organizovat kód: je, jak je váš kód seskupeny dohromady.  
+ Právě jste vytvořili něco, který funguje, a sice ještě není Hotovo, můžete již načíst obrázek. Než přidejte komentář k kódu a otestovat ji, časově Seznamte se s koncepty kódu, protože se používají tyto koncepty často:
 
--   Ve většině případů, metodu provádí malý počet akcí v určitém pořadí, například jak vaše `showButton_Click()` metoda zobrazí dialogové okno a potom načte obrázek.  
+-   Když dvakrát kliknuli **zobrazit obrázek** tlačítka na **Návrhář formulářů Windows**, IDE, automaticky přidá *metoda* kódu vašeho programu.
 
--   Metoda je tvořen kód *příkazy*, nebo řádků kódu. Metoda si můžete představit jako způsob, jak vytvořit balíček kódu příkazy společně.  
+-   Metody jsou, jak můžete organizovat kód: je, jak je váš kód seskupeny dohromady.
 
--   Pokud je metoda spuštěna, nebo *názvem*, příkazy v metodě jsou spouštěny v pořadí, jeden po druhém, počínaje první z nich.  
+-   Ve většině případů, metodu provádí malý počet akcí v určitém pořadí, například jak vaše `showButton_Click()` metoda zobrazí dialogové okno a potom načte obrázek.
 
-     Následuje příklad příkazu.  
+-   Metoda je tvořen kód *příkazy*, nebo řádků kódu. Metoda si můžete představit jako způsob, jak vytvořit balíček kódu příkazy společně.
 
-    ```csharp  
-    pictureBox1.Load(openFileDialog1.FileName);  
-    ```  
+-   Pokud je metoda spuštěna, nebo *názvem*, příkazy v metodě jsou spouštěny v pořadí, jeden po druhém, počínaje první z nich.
 
-    ```vb  
-    pictureBox1.Load(openFileDialog1.FileName)  
-    ```  
+     Následuje příklad příkazu.
 
-     Příkazy jsou, ujistěte se, co vaše programy provádět akce. V jazyce Visual C# příkaz vždy končí středníkem. V jazyce Visual Basic je konci řádku konec příkazu. (Žádný středník není třeba v jazyce Visual Basic). Předchozí příkaz sděluje vaše <xref:System.Windows.Forms.PictureBox> řízení se načíst soubor, který uživatel vybral s **OpenFileDialog** součásti.  
-  
- ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) nebo [kurzu 1: vytvoření prohlížeče obrázků v jazyce C# – Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
-  
-## <a name="to-add-comments"></a>K přidání komentářů  
+    ```csharp
+    pictureBox1.Load(openFileDialog1.FileName);
+    ```
 
-1.  Přidejte následující komentář do vašeho kódu.  
+    ```vb
+    pictureBox1.Load(openFileDialog1.FileName)
+    ```
+
+     Příkazy jsou, ujistěte se, co vaše programy provádět akce. V jazyce Visual C# příkaz vždy končí středníkem. V jazyce Visual Basic je konci řádku konec příkazu. (Žádný středník není třeba v jazyce Visual Basic). Předchozí příkaz sděluje vaše <xref:System.Windows.Forms.PictureBox> řízení se načíst soubor, který uživatel vybral s **OpenFileDialog** součásti.
+
+ ![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) nebo [kurzu 1: vytvoření prohlížeče obrázků v jazyce C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
+
+## <a name="to-add-comments"></a>K přidání komentářů
+
+1.  Přidejte následující komentář do vašeho kódu.
 
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
-     [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]  
+     [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
 
     > [!NOTE]
-    >  Vaše **showButton** tlačítka <xref:System.Windows.Forms.Control.Click> obslužné rutiny události je nyní dokončen, a to funguje. Zahájili jste psaní kódu, počínaje `if` příkaz. `if` Příkaz je, jak zjistit vašeho programu: "Zkontrolujte tuto jednu věc a pokud je hodnota true, proveďte tyto akce." V takovém případě se zjistit vaše program k otevírání **otevřít soubor** dialogové okno, a pokud uživatel vybere soubor a vybere **OK** tlačítko, načte soubor do **PictureBox**.  
-  
+    >  Vaše **showButton** tlačítka <xref:System.Windows.Forms.Control.Click> obslužné rutiny události je nyní dokončen, a to funguje. Zahájili jste psaní kódu, počínaje `if` příkaz. `if` Příkaz je, jak zjistit vašeho programu: "Zkontrolujte tuto jednu věc a pokud je hodnota true, proveďte tyto akce." V takovém případě se zjistit vaše program k otevírání **otevřít soubor** dialogové okno, a pokud uživatel vybere soubor a vybere **OK** tlačítko, načte soubor do **PictureBox**.
+
     > [!TIP]
-    >  Rozhraní IDE je sestaveno snadno můžete napsat kód, a *výstřižky kódu* jsou jedním ze způsobů, které dělá. Fragment je zkratka, která je rozšířena do malé bloku kódu.  
-    >   
-    >  Zobrazí se všechny dostupné fragmenty kódu. Na řádku nabídek zvolte **nástroje** > **Správce fragmentů kódu**. Visual C# `if` fragment kódu je v **Visual C#** . V jazyce Visual Basic `if` fragmenty kódu jsou v **podmínky a smyčky** > **kódu, které vypadají**. Tento správce můžete procházet existující fragmenty nebo přidat vlastní fragmenty kódu.  
-    >   
-    >  Pokud chcete aktivovat fragment při psaní kódu, zadejte ho a zvolte **kartě** klíč. Mnoho výstřižků se zobrazuje v **IntelliSense** okno, které je důvod, proč je zvolit **kartě** klíč dvakrát: nejdřív k výběru fragment kódu ze **IntelliSense** okno a potom říct použít fragmentu rozhraní IDE. (Podporuje technologii IntelliSense `if` fragment kódu, ale ne `ifelse` fragment kódu.)  
-  
-2.  Před spuštěním programu, uložte program a vybrat **Uložit vše** tlačítka panelu nástrojů, které se zobrazí takto.  
+    >  Rozhraní IDE je sestaveno snadno můžete napsat kód, a *výstřižky kódu* jsou jedním ze způsobů, které dělá. Fragment je zkratka, která je rozšířena do malé bloku kódu.
+    >
+    >  Zobrazí se všechny dostupné fragmenty kódu. Na řádku nabídek zvolte **nástroje** > **Správce fragmentů kódu**. Visual C# `if` fragment kódu je v **Visual C#** . V jazyce Visual Basic `if` fragmenty kódu jsou v **podmínky a smyčky** > **kódu, které vypadají**. Tento správce můžete procházet existující fragmenty nebo přidat vlastní fragmenty kódu.
+    >
+    >  Pokud chcete aktivovat fragment při psaní kódu, zadejte ho a zvolte **kartě** klíč. Mnoho výstřižků se zobrazuje v **IntelliSense** okno, které je důvod, proč je zvolit **kartě** klíč dvakrát: nejdřív k výběru fragment kódu ze **IntelliSense** okno a potom říct použít fragmentu rozhraní IDE. (Podporuje technologii IntelliSense `if` fragment kódu, ale ne `ifelse` fragment kódu.)
 
-     ![Uložit všechny tlačítka panelu nástrojů](../ide/media/express_iconsaveall.png "Express_IconSaveAll")  
-**Uložte všechny** tlačítko  
-  
-     Můžete taky uložit program na panelu nabídek, zvolte **soubor** > **Uložit vše**. Je osvědčeným postupem uložte včas a často.  
-  
-     Když je spuštěn, váš program by měl vypadat jako na následujícím obrázku.  
+2.  Před spuštěním programu, uložte program a vybrat **Uložit vše** tlačítka panelu nástrojů, které se zobrazí takto.
 
-     ![Obrázek prohlížeči](../ide/media/express_pictureviewerdonerun.png "Express_PictureViewerDoneRun")  
-**Prohlížeč obrázků**  
-  
-## <a name="to-test-your-program"></a>K testování aplikace  
-  
-1.  Vyberte **F5** klíče nebo zvolte **spustit ladění** tlačítka panelu nástrojů.  
-  
-2.  Vyberte **zobrazit obrázek** tlačítko spustit kód, který jste napsali. Nejprve program otevře **otevření souboru** dialogové okno. Ověřte, že filtry zobrazují v **soubory typu** rozevíracím seznamu v dolní části dialogových oken. Pak přejděte do obrázku a otevřete jej. Obvykle můžete najít vzorové obrázky, dodávané s operačním systémem Windows ve vaší *dokumenty* složku, uvnitř *Moje Obrázky\Příklady obrázků* složky.  
-  
+     ![Uložit všechny tlačítka panelu nástrojů](../ide/media/express_iconsaveall.png)
+**Uložit vše** tlačítko
+
+     Můžete taky uložit program na panelu nabídek, zvolte **soubor** > **Uložit vše**. Je osvědčeným postupem uložte včas a často.
+
+     Když je spuštěn, váš program by měl vypadat jako na následujícím obrázku.
+
+     ![Obrázek prohlížeči](../ide/media/express_pictureviewerdonerun.png)
+**obrázek prohlížeč**
+
+## <a name="to-test-your-program"></a>K testování aplikace
+
+1.  Vyberte **F5** klíče nebo zvolte **spustit ladění** tlačítka panelu nástrojů.
+
+2.  Vyberte **zobrazit obrázek** tlačítko spustit kód, který jste napsali. Nejprve program otevře **otevření souboru** dialogové okno. Ověřte, že filtry zobrazují v **soubory typu** rozevíracím seznamu v dolní části dialogových oken. Pak přejděte do obrázku a otevřete jej. Obvykle můžete najít vzorové obrázky, dodávané s operačním systémem Windows ve vaší *dokumenty* složku, uvnitř *Moje Obrázky\Příklady obrázků* složky.
+
     > [!NOTE]
-    >  Pokud nevidíte všechny Image v **vyberte soubor s obrázkem** dialogu, ujistěte se, který **všechny soubory (*.\*)**  filtru je vybraný v rozevíracím seznamu na pravé straně nižší dialogového okna.  
-  
-3.  Načtení obrázku a zobrazí se ve vašem PictureBox. Poté se pokuste změnit velikost formuláře přetažením jeho okrajů. Protože máte vaší PictureBox ukotven uvnitř ovládacího prvku TableLayoutPanel, které je ukotven uvnitř formuláře, vaší oblasti obrázku změní velikost sebe sama tak, aby je širší jako formulář a doplní nejvyšší 90 procent formuláře. To je důvod, proč jste použili <xref:System.Windows.Forms.TableLayoutPanel> a <xref:System.Windows.Forms.FlowLayoutPanel> kontejnery: jejich zachovat formuláře správné velikosti, když uživatel změní jeho velikost.  
+    >  Pokud nevidíte všechny Image v **vyberte soubor s obrázkem** dialogu, ujistěte se, který **všechny soubory (*.\*)**  filtru je vybraný v rozevíracím seznamu na pravé straně nižší dialogového okna.
 
-     Nyní správné, větší obrázků přejděte přesahuje hranice váš prohlížeč obrázků. V dalším kroku přidáte kód, aby obrázky podle velikosti okna.  
+3.  Načtení obrázku a zobrazí se ve vašem PictureBox. Poté se pokuste změnit velikost formuláře přetažením jeho okrajů. Protože máte vaší PictureBox ukotven uvnitř ovládacího prvku TableLayoutPanel, které je ukotven uvnitř formuláře, vaší oblasti obrázku změní velikost sebe sama tak, aby je širší jako formulář a doplní nejvyšší 90 procent formuláře. To je důvod, proč jste použili <xref:System.Windows.Forms.TableLayoutPanel> a <xref:System.Windows.Forms.FlowLayoutPanel> kontejnery: jejich zachovat formuláře správné velikosti, když uživatel změní jeho velikost.
 
-## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
-  
--   Chcete-li přejít k dalšímu kroku kurzu, přečtěte si téma [krok 10: zapište kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
-  
+     Nyní správné, větší obrázků přejděte přesahuje hranice váš prohlížeč obrázků. V dalším kroku přidáte kód, aby obrázky podle velikosti okna.
+
+## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
+
+-   Chcete-li přejít k dalšímu kroku kurzu, přečtěte si téma [krok 10: zapište kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+
 -   Pokud chcete vrátit do předchozího kroku kurzu, najdete v části [krok 8: zapište kód pro zobrazení obslužné rutiny události obrázek tlačítka](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

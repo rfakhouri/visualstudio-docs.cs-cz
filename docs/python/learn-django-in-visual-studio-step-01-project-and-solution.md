@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82f7de8649e36c03f1ae1004c01c93dd7580b3a1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34468995"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750295"
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Kurz – krok 1: Začínáme s webového rozhraní Django v sadě Visual Studio
 
@@ -34,11 +34,13 @@ V tomto kurzu se naučíte:
 
 ## <a name="prerequisites"></a>Požadavky
 
-- Visual Studio 2017 s následující možnosti:
+- Visual Studio 2017 v systému Windows se následující možnosti:
   - **Vývoj Python** zatížení (**zatížení** kartě v instalačním programu). Pokyny najdete v tématu [instalaci Python podporují v sadě Visual Studio](installing-python-support-in-visual-studio.md).
   - **Git pro Windows** a **Githubu rozšíření pro Visual Studio** na **jednotlivých součástí** v části **Code nástroje**.
 
 Šablony projektů Django jsou také všechny starší verze nástrojů Python Tools pro sadu Visual Studio, i když podrobnosti se můžou lišit od co je popsané v tomto kurzu (zejména různých ve starších verzích rozhraní Django).
+
+Vývoj Python není podporována v současné době v sadě Visual Studio for Mac. Na Mac a Linux, použijte [rozšíření Python ve Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
 ### <a name="visual-studio-projects-and-django-projects"></a>"Projektů sady visual Studio" a "Django projekty"
 

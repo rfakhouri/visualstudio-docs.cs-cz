@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c64f271f041c28dc621ed85a8cd9d79c36caa3dd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746712"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Postupy: zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)
 
@@ -29,7 +30,7 @@ Můžete použít **funkce Náhled definice** s kódem jazyka C#, Visual Basic a
 
      Na tomto obrázku **funkce Náhled definice** okna pro metodu, která je s názvem `Print()`:
 
-     ![Prohlížení okno](../ide/media/peekwindow.png "PeekWindow")
+     ![Prohlížení okna](../ide/media/peekwindow.png)
 
      Definice okna se zobrazí pod `printer.Print("Hello World!")` řádku v původní soubor. Okno neskryje žádný kód v původním souboru. Řádky, které následují `printer.Print("Hello World!")` vyskytovat v části okna definice.
 
@@ -43,19 +44,19 @@ Můžete použít **funkce Náhled definice** s kódem jazyka C#, Visual Basic a
 
 Pokud již máte **funkce Náhled definice** okno otevřít, můžete volat **funkce Náhled definice** znovu na kód v okně. Otevře se jiné okno definice. Vedle karty okna definice se zobrazí sada teček s popisem cesty, která slouží k navigaci mezi okny definice. Popisek tlačítka na každé tečce zobrazuje název souboru a cestu k souboru definice, který tečka přestavuje.
 
-   ![Funkce Náhled okna v rámci časového období funkce Náhled](../ide/media/peekwithinpeek.png "PeekWithinPeek")
+   ![Prohlížení okno v rámci časového období funkce Náhled](../ide/media/peekwithinpeek.png)
 
 ### <a name="peek-definition-with-multiple-results"></a>Funkce Náhled definice s více výsledků
 
 Pokud používáte **funkce Náhled definice** na kód, který má více než jednu definici (například částečné třídy), zobrazí se seznam výsledků napravo od definice zobrazení kódu. Můžete zvolit některý z výsledků v seznamu k zobrazení jeho definice.
 
-   ![Funkce Náhled okno z více výsledků](../ide/media/peekmultiple.png "PeekMultiple")
+   ![Prohlížení okno z více výsledků](../ide/media/peekmultiple.png)
 
 ### <a name="edit-inside-the-peek-definition-window"></a>Upravit v okně funkce Náhled definice
 
 Když spustíte upravit uvnitř **funkce Náhled definice** okno, soubor, který upravujete, automaticky se otevře jako samostatné kartě v editoru kódu a odráží změny, které jste udělali. Můžete vytvořit, vrátit zpět a změny uložit do **funkce Náhled definice** okno a na kartě budou nadále tyto změny projevily. I když zavřete **funkce Náhled definice** okno bez uložení změn, můžete nastavit, vrátit zpět a další změny uložit na kartě Výběr přesně tam, kde jste přestali v **funkce Náhled definice** okno.
 
-   ![Úpravy v rámci časového období funkce Náhled](../ide/media/peekedit.png "PeekEdit")
+   ![Úpravy v rámci časového období funkce Náhled](../ide/media/peekedit.png)
 
 ### <a name="to-change-options-for-peek-definition"></a>Chcete-li změnit možnosti pro prohlížení definice
 
@@ -83,7 +84,7 @@ Můžete použít tyto klávesové zkratky s **funkce Náhled definice** okno:
 > [!NOTE]
 > Můžete také použít stejné klávesové zkratky úprav kódu v **funkce Náhled definice** okno jako můžete použít na jiném místě v sadě Visual Studio.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přejděte kódu](../ide/navigating-code.md)
 - [Přejít k definici a Náhled definice](../ide/go-to-and-peek-definition.md)

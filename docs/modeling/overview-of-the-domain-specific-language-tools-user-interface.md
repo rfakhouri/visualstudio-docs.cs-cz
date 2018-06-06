@@ -13,16 +13,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b3dec7405e6d9964a1e622d5d872ad31efcd541d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ab473e4835e4ba6467a9af83e69bfabc43e8236
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748722"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Přehled uživatelského rozhraní Jazykových nástrojů specifických pro doménu
 Když poprvé otevřete řešení jazykové nástroje specifické pro doménu (DSL Tools) v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], uživatelské rozhraní bude vypadat podobně jako na následujícím obrázku.
 
- ![Návrhář DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![Návrhář jazyka domény](../modeling/media/dsl_designer.png)
 
  Následující tabulka vysvětluje, jak se používají částí uživatelského rozhraní.
 
@@ -36,7 +37,7 @@ Když poprvé otevřete řešení jazykové nástroje specifické pro doménu (D
 ## <a name="the-domain-model-diagram"></a>Diagram modelu domény
  Diagram modelu domény je rozdělena na dva oddíly. Jedné straně diagram znázorňuje elementů a vztahů v modelu. Druhá strana ukazuje, jak je model, který se má zobrazit a zahrnuje tvarů, které se používají k zobrazení elementy a vlastnosti diagramu modelu. Na následujícím obrázku je znázorněno na obrázku.
 
- ![Návrhář DSL s dráha](../modeling/media/dsl_desinger.png "dsl_desinger")
+ ![Návrhář DSL s dráha](../modeling/media/dsl_desinger.png)
 
  Následující tabulka popisuje některé elementů diagramu modelu domény.
 

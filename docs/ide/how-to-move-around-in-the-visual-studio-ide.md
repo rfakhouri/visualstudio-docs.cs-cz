@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e78cba542c5a511eed13eedcde2665a832b09ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d38c465cac0c24c7e776acc131a5b5fe22aa824
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747128"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Postupy: pohyb v sadě Visual Studio IDE
 
@@ -55,7 +56,7 @@ Také můžete přepnout konkrétní soubor otevřete v editoru, bez ohledu na t
 
 **IDE Navigátor** funguje podobně jako přepínači aplikace systému Windows. Není k dispozici z nabídek a k němu přístup pouze pomocí klávesové zkratky. Můžete buď dva příkazy pro přístup **IDE Navigátor** (zobrazené dole) k procházení souborů, v závislosti na pořadí, ve kterém chcete procházet.
 
-![Visual Studio IDE Navigátor](../ide/media/vs2015_ide_navigator.png "VS2015_IDE_Navigator")
+![Visual Studio IDE Navigátor](../ide/media/vs2015_ide_navigator.png)
 
 `Window.PreviousDocumentWindowNav` Umožňuje přesunout do posledního přístupu k souboru a `Window.NextDocumentWindowNav` umožňuje přesunout v obráceném pořadí. **Obecná nastavení vývoj** přiřadí **Shift**+**Alt**+**F7** k `Window.PreviousDocumentWindowNav` a **Alt**  + **F7** k `Window.NextDocumentWindowNav`.
 
@@ -93,7 +94,7 @@ Také můžete přepnout konkrétní soubor otevřete v editoru, bez ohledu na t
     > [!TIP]
     > Pořadí, ve kterém můžete projít **Active nástroj Windows** seznamu, podržte klávesu **Shift**+**Alt** klíče a stiskněte klávesu **F7**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přizpůsobení rozložení oken](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md)

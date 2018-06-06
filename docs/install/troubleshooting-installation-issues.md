@@ -1,5 +1,5 @@
 ---
-title: Odstraňování problémů instalace
+title: Řešení potíží s instalací s Visual Studio 2017
 description: V některých případech může problémů. Pokud instalaci sady Visual Studio nebo upgrade selže, může pomoci tuto stránku.
 ms.date: 11/21/2017
 ms.technology: vs-acquisition
@@ -14,11 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0009aa15919cf04c3ff8e56edf4f10adcb7e0ea
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 99547ff029e8bde94118918b8b0c538e3f7fad7d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766035"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Řešení potíží s Visual Studio 2017 instalace a upgrade
 
@@ -108,8 +109,9 @@ Tady je několik více možností:
 * Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (To vyžaduje [Githubu](https://github.com/) účtu.)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
 * [Nástroje pro zjišťování a správu instancí sady Visual Studio](tools-for-managing-visual-studio-instances.md)
+* [Instalaci sady Visual Studio za serverem brány firewall nebo proxy server](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Odebrat Visual Studio 2017](remove-visual-studio.md)

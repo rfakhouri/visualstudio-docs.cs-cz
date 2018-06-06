@@ -9,13 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e7e939a5acaf89b3013cb5465b8fac6c272dd5d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1169d4e482f097ca923cc017964724e5886658d1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751563"
 ---
-# <a name="troubleshoot-code-coverage"></a>Řešení potíží s pokrytí kódu
+# <a name="troubleshoot-code-coverage"></a>Řešení problémů s pokrytím kódu
 
 Analytické nástroje pokrytí kódu v aplikaci Visual Studio shromažďují data pro nativní a spravovaná sestavení (soubory .dll nebo .exe). Avšak v některých případech se v okně Výsledky pokrytí kódu zobrazí chyba, jako je „Byly generovány prázdné výsledky: ...“. Tady je několik důvodů, proč můžete získat výsledky prázdný. Tento článek pomůže při řešení těchto problémů.
 
@@ -23,7 +24,7 @@ Analytické nástroje pokrytí kódu v aplikaci Visual Studio shromažďují dat
 
 Pokud se rozhodnete **analýza pokrytí kódu** příkazu v nabídce testů a pokud sestavení a testů úspěšně spuštěna, pak by měl zobrazit seznam výsledků v okně pokrytí kódu. Pro zobrazení podrobností je možno položky rozbalit.
 
-![Kód pokrytí výsledků s barevné zvýrazňování](../test/media/codecoverage1.png "CodeCoverage1")
+![Výsledky pokrytí kódu pomocí barevné zvýrazňování](../test/media/codecoverage1.png)
 
 Další informace najdete v tématu [pomocí pokrytí kódu k určení jak mnohem kódu se testuje](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
@@ -124,6 +125,6 @@ Vysvětlení&mdash;nástroj pokrytí kódu funguje tak, že vložení do sestave
 
 Řešení&mdash;None.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Použití pokrytí kódu k určení rozsahu testovaného kódu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

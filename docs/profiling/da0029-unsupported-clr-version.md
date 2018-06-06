@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad41dc48303fa836e4c15f0e450b3fade60ff646
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f6ab40efbba692cfa85f14b750d3c853d1112704
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765736"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Nepodporovaná verze CLR
 |||  
@@ -38,5 +39,5 @@ ms.lasthandoff: 04/19/2018
 ## <a name="rule-description"></a>Popis pravidla  
  Toto upozornění se zobrazí, protože nástrojů pro profilaci nelze vyřešit symboly pro spravovaný kód spuštěný v aplikaci. Nástroje pro profilaci nelze vyřešit symboly spravovaného kódu pro aplikace, které jsou spuštěny [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].  
   
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
+## <a name="how-to-fix-violations"></a>Jak opravit porušení  
  Žádné

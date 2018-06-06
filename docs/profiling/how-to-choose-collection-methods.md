@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e801404fbf3356b597471d7c3dda23264eb0c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765385"
 ---
-# <a name="how-to-choose-collection-methods"></a>Postupy: Výběr metod kolekcí
+# <a name="how-to-choose-collection-methods"></a>Postupy: výběr metod kolekcí
 
 Visual Studio Tools profilace podporují tři metody shromažďování dat o výkonu: vzorkování, instrumentace a souběžnosti. Metoda vzorkování nebo instrumentace můžete použít také ke shromažďování dat paměti přidělení a dobu života rozhraní .NET.
 
@@ -52,7 +53,7 @@ Můžete použít výkonnostní relace **metoda** vlastnosti a určit nejvhodně
 
 1. V **prohlížeč výkonu**, vyberte výkonnostní relace.
 
-     Název souboru relace výkonu má příponu .psess.
+     Má název souboru relace výkonu. *psess* rozšíření.
 
 2. Klikněte pravým tlačítkem na výkonnostní relace a pak klikněte na **vlastnosti**.
 
@@ -80,7 +81,7 @@ Můžete použít výkonnostní relace **metoda** vlastnosti a určit nejvhodně
 
 6. (Volitelné) Klikněte na tlačítko **taky shromažďovat informace o doba života objektu .NET** ke shromažďování dat o generace uvolňování paměti kolekce, ve kterých byl objekt paměť uvolnit.
 
-     Informace o dalších možnostech, které jsou k dispozici, při shromažďování dat paměti .NET najdete v tématu [shromažďování přidělení paměti .NET a životnosti](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).
+     Informace o dalších možnostech, které jsou k dispozici, při shromažďování dat paměti .NET najdete v tématu [data přidělení a dobu života paměti .NET shromažďovat](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Chcete-li vybrat shromažďování dat souběžnosti pomocí vlastnosti výkonnostní relace
 
@@ -90,8 +91,8 @@ Můžete použít výkonnostní relace **metoda** vlastnosti a určit nejvhodně
 
 3. Klikněte na tlačítko **souběžnosti**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)  
-[Porozumění hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)  
+[Pochopení hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)  
 [Vlastnosti výkonnostní relace](../profiling/performance-session-properties.md)

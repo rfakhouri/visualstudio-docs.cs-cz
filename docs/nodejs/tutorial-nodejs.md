@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 207d5941527d51c18c6690166ef751b4782b481c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c364c977ebd7f1160bd9265f2a0228bd2e514442
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34477246"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765827"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Kurz: Vytvoření Node.js a expresní aplikaci v sadě Visual Studio
 V tomto kurzu pro vývoj sady Visual Studio pomocí Node.js a Express vytvořit jednoduchou webovou aplikaci Node.js, přidat kód, prozkoumejte některé funkce integrovaného vývojového prostředí a spuštění aplikace. Pokud jste si sadu Visual Studio ještě nenainstalovali, nainstalujte si ji zdarma [odtud](http://www.visualstudio.com).
@@ -27,17 +27,33 @@ V tomto kurzu se naučíte:
 > [!div class="checklist"]
 > * Vytvořit projekt Node.js
 > * Přidat kód
-> * Používání technologie IntelliSense
+> * Použijte pro úpravu kódu technologie IntelliSense
 > * Spuštění aplikace
-> * Stiskněte tlačítko zarážky
+> * Stiskněte tlačítko zarážek v ladicím programu
+
+## <a name="before-you-begin"></a>Než začnete
+
+Zde je rychlý nejčastější dotazy k vám představí některé klíčové koncepty.
+
+### <a name="what-is-nodejs"></a>Co je Node.js?
+
+Platforma Node.js je prostředí runtime jazyka JavaScript na straně serveru, které provádí JavaScript na straně serveru.
+
+### <a name="what-is-npm"></a>Co je npm?
+
+npm je výchozí Správce balíčků pro Node.js. Správce balíčků je jednodušší pro programátory v jazyce k publikování a sdílení zdrojového kódu Node.js knihoven a slouží k instalaci, aktualizaci a odinstalaci knihoven zjednodušit.
+
+### <a name="what-is-express"></a>Co je express?
+
+Express je architektura webových aplikací, sloužit jako server rozhraní pro Node.js pro tvorbu webových aplikací. Express umožňuje používat zvolte jinou front-endové rozhraní pro vytvoření uživatelského rozhraní, jako je například Pug (dříve se označovaly jako Jade). V tomto kurzu se používá pug.
 
 ## <a name="prerequisites"></a>Požadavky
 
 * Je nutné mít nainstalovanou sadu Visual Studio 2017 a úlohu Vývoj aplikací Node.js.
 
-    Pokud jste si sadu Visual Studio ještě nenainstalovali, nainstalujte si ji zdarma [odtud](http://www.visualstudio.com).
+    Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
-    Pokud potřebujete nainstalovat úlohu, ale Visual Studio už máte, klikněte v dialogovém okně **Nový projekt** v levém podokně na odkaz **Otevřít instalační program pro Visual Studio**. Spustí se instalační program pro Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
+    Pokud potřebujete nainstalovat zatížení, ale už máte Visual Studio, klikněte na tlačítko **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno (vyberte **soubor**  >  **Nové** > **projektu**). Spustí se instalační program pro Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
 
 * Je nutné mít nainstalovaný modul runtime Node.js.
 
@@ -45,8 +61,11 @@ V tomto kurzu se naučíte:
 
     V tomto kurzu byla testována s Node.js 8.10.0.
 
-## <a name="create-a-project"></a>Vytvoření projektu
-Nejdřív vytvoříte projekt Node.js webové aplikace.
+## <a name="create-a-new-nodejs-project"></a>Vytvořte nový projekt Node.js
+
+Spravuje soubory pro jednu aplikaci v sadě Visual Studio *projektu*. Projekt obsahuje zdrojový kód, prostředky a konfiguračních souborů.
+
+V tomto kurzu začnete s Jednoduchý projekt obsahující kód pro Node.js a expresní aplikaci.
 
 1. Otevřete Visual Studio 2017.
 
@@ -54,23 +73,29 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
 1. V dialogovém okně **Nový projekt** v levém podokně rozbalte položku **JavaScript** a zvolte **Node.js**. V prostředním podokně vyberte **základní Azure Node.js Express 4 aplikační** a potom zvolte **OK**.
 
-     Pokud nevidíte **základní Azure Node.js Express 4 aplikační** šablony projektu, je nutné nainstalovat **Node.js vývoj** zatížení první.
+     Pokud nevidíte **základní Azure Node.js Express 4 aplikační** šablony projektu, je nutné nainstalovat **Node.js vývoj** zatížení první (viz požadavky na pokyny).
 
-    Visual Studio vytvoří nové řešení a otevře příslušný projekt. *App.js* projektu soubor se otevře v editoru (levé podokno).
+    Visual Studio vytvoří nové řešení a projekt se otevře v pravém podokně. *App.js* projektu soubor se otevře v editoru (levé podokno).
 
-    - Projekt je zvýrazněný tučným písmem a má název, který jste zadali v dialogovém okně **Nový projekt**. V systému souborů je tento projekt reprezentovaný souborem *.njsproj* ve složce projektu. Vlastnosti a proměnné prostředí přidružené k projektu můžete nastavit tak, že kliknete pravým tlačítkem na projekt a zvolíte **Vlastnosti**. Odezvy pomocí jiných nástrojů pro vývoj, můžete provést, protože soubor projektu neprovede vlastní změny ke zdroji projekt Node.js.
+    ![Struktura projektu](../nodejs/media/tutorial-project-structure.png)
 
-    - Na nejvyšší úrovni je řešení, které má ve výchozím nastavení stejný název jako příslušný projekt. Řešení, reprezentované na disku souborem *.sln*, je kontejner pro jeden nebo více souvisejících projektů.
+    (1) zvýrazněných v **tučné** je váš projekt pomocí názvu, který jste zadali **nový projekt** dialogové okno. V systému souborů je tento projekt reprezentovaný souborem *.njsproj* ve složce projektu. Vlastnosti a proměnné prostředí přidružené k projektu můžete nastavit tak, že kliknete pravým tlačítkem na projekt a zvolíte **Vlastnosti**. Odezvy pomocí jiných nástrojů pro vývoj, můžete provést, protože soubor projektu neprovede vlastní změny ke zdroji projekt Node.js.
 
-    - Uzel npm zobrazuje všechny nainstalované balíčky npm. Po kliknutí pravým tlačítkem na uzel npm lze vyhledat a nainstalovat balíčky npm pomocí dialogového okna.
+    (2) na nejvyšší úrovni je řešení, které ve výchozím nastavení má stejný název jako projektu. Řešení, reprezentované na disku souborem *.sln*, je kontejner pro jeden nebo více souvisejících projektů.
 
-    - Soubory, jako projektu *app.js* zobrazí na uzel projektu. *app.js* je spuštění souboru projektu.
+    (3) npm uzlu se zobrazuje všechny balíčky nainstalované npm. Kliknete pravým tlačítkem na uzel npm Hledat a instalovat balíčky npm pomocí dialogové okno nebo instalace a aktualizace balíčků pomocí nastavení v *package.json* a klikněte pravým tlačítkem na možnosti v uzlu npm.
+
+    (4) *package.json* je soubor používaný npm ke správě závislosti balíčků a verze balíčku pro místně nainstalované balíčky.
+
+    (5) soubory projektu, jako *app.js* zobrazí na uzel projektu. *app.js* je spuštění souboru projektu a který je Proč se zobrazí v **tučné**. Spuštění souboru můžete nastavit tak, že kliknete pravým tlačítkem na soubor v projektu a výběr **nastavit jako spouštěcí soubor Node.js**.
 
 1. Otevřete **npm** uzlu a ujistěte se, že všechny požadované npm balíčky jsou k dispozici.
 
-    Pokud některý chybí (ikona vykřičník), kliknete pravým tlačítkem **npm** uzel a zvolte **nainstalovat chybějící balíčky npm**.
+    Pokud všechny balíčky jsou chybí (ikona vykřičník), kliknete pravým tlačítkem **npm** uzel a zvolte **nainstalovat chybějící balíčky npm**.
 
 ## <a name="add-some-code"></a>Přidat kód
+
+Aplikace používá Pug pro rozhraní front-end JavaScript. Pug používá jednoduchý kód kód, který se zkompiluje do formátu HTML. (Pug je nastaven jako zobrazovací modul v *app.js*. Kód, který nastaví modul zobrazení v *app.js* je `app.set('view engine', 'pug');`.)
 
 1. V Průzkumníku řešení (pravé podokno), otevřete složku, zobrazení a pak otevřete *index.pug*.
 
@@ -96,7 +121,7 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
-    Předchozí kód přidá značku dynamicky generovat stránku HTML s názvem a uvítací zprávy. Stránka taky obsahuje kód, který zobrazí obrázek, který změní pokaždé, když klikněte tlačítko.
+    Předchozí kód je používaný k dynamickému generování stránku HTML s názvem a uvítací zprávy. Stránka taky obsahuje kód, který zobrazí obrázek, který změní pokaždé, když klikněte tlačítko.
 
 1. Ve složce trasy, otevřete *index.js*.
 
@@ -123,15 +148,17 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
     });
     ```
     
-    Předchozí kód nastaví aktuální stránku pomocí objektu směrovač Express a vykreslí stránku, předá objekt názvu a data na stránku.
+    Předchozí kód nastaví aktuální stránku pomocí objektu směrovač Express a vykreslí stránku, předá objekt názvu a data na stránku. *Index.pug* je zadán jako na při načtení stránky *index.js* běží. *index.js* je nakonfigurovaný jako výchozí trasu v *app.js* kódu (není vidět).
 
     K předvedení několik funkcí sady Visual Studio, jsme součástí chybu na řádek obsahující kód `res.render`. Musíme opravte chybu před spuštěním aplikace. Chybu opravte v další části.
 
 ## <a name="use-intellisense"></a>Používání technologie IntelliSense
 
+IntelliSense je nástroj Visual Studio, který vám pomůže při psaní kódu.
+
 1. V *index.js*, přejděte na řádek obsahující kód `res.render`.
 
-1. Umístěte kurzor po `data` řetězce, zadejte `: get` a IntelliSense si ukážeme `getData` funkce. Vyberte `getData`.
+1. Umístěte kurzor po `data` řetězce, zadejte `: get` a IntelliSense si ukážeme `getData` funkci definovanou dříve v kódu. Vyberte `getData`.
 
     ![Používání technologie IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 
@@ -141,7 +168,7 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
     Poslední řádek této zprávy vás informuje, že překladač JavaScript čárkou (`,`).
 
-1. Klikněte **seznam chyb** kartě.
+1. V dolním podokně, klikněte **seznam chyb** kartě.
 
     Zobrazí upozornění a popis společně s číslo a název souboru a řádku.
 
@@ -149,7 +176,11 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
 1. Opravte kód přidáním čárkou (`,`) před `"data"`.
 
+    Při opravě, řádku kódu by měl vypadat přibližně takto: `res.render('index', { title: 'Express', "data": getData() });`
+
 ## <a name="set-a-breakpoint"></a>Nastavení zarážky
+
+Nyní klikněte na tlačítko spustit aplikaci pomocí ladicího programu sady Visual Studio, připojit. Před jsme to udělat, je potřeba nastavit zarážky.
 
 1. V *index.js*, klikněte v levém oddělovací mezery před následující řádek kódu pro nastavení zarážky:
 

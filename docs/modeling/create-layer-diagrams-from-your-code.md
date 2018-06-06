@@ -1,5 +1,5 @@
 ---
-title: Vytváření diagramů závislost z vašeho kódu
+title: Vytváření diagramů závislostí z kódu
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,17 +14,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3a34d52bb4b9af535d1b11843967ac5b9619a153
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73f3cf2bbb5903a3c2dda8c531f28e9aa81facad
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749698"
 ---
-# <a name="create-dependency-diagrams-from-your-code"></a>Vytváření diagramů závislost z vašeho kódu
+# <a name="create-dependency-diagrams-from-your-code"></a>Vytváření diagramů závislostí z kódu
 
 K vizualizaci Architektura vysoké úrovně, logické systému softwaru, vytvořit *diagram závislostí* v sadě Visual Studio. Abyste měli jistotu, že váš kód zůstává konzistentní s Tento návrh, ověření kódu s diagram závislostí. Můžete vytvořit diagramy závislostí pro projekty Visual C# a Visual Basic. Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [verze podpora architektura a modelování nástroje](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-![Vytvoření diagramu závislostí](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
+![Vytvoření diagramu závislostí](../modeling/media/layerdiagramvisualizecode.png)
 
 Diagram závislostí umožňuje uspořádat do logických, abstraktní skupin nazývaných položky řešení sady Visual Studio *vrstvy*. Pomocí vrstev můžete popsat hlavní úlohy, které provádějí tyto artefakty, nebo hlavní komponenty systému. Každá vrstva může obsahovat další vrstvy, které popisují podrobnější úlohy. Můžete také určit určené nebo existující *závislosti* mezi vrstvami. Tyto závislosti, které jsou reprezentovány šipkami, zobrazují, které vrstvy mohou použít nebo právě používají funkce představované ostatními vrstvami. Chcete-li si udržet architektonickou kontrolu nad kódem, zobrazte zamýšlené závislosti v diagramu a potom ověřte kód proti diagramu.
 

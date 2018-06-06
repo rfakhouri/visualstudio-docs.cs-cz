@@ -13,7 +13,7 @@ ms.openlocfilehash: e759733738d35ea71cd8133179ccca1ee1037d22
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34476453"
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>Odstranění přiřazení v sadě Visual Studio předplatných

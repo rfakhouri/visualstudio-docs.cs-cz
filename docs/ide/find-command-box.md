@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c93c2d77f62fe22c682240b879b85af8040974
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c5e11d83ea0c87bae058f5421c424922fa389a9c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752408"
 ---
 # <a name="findcommand-box"></a>pole Najít/příkaz
 
@@ -27,7 +28,7 @@ Ke spuštění [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příka
 
 **Najít/příkaz** pole uchovává poslední 20 položek zadaných a zobrazí je v rozevíracím seznamu. Můžete přejít pomocí seznamu tak, že zvolíte **klávesy se šipkami**.
 
-![Najít&#47;příkaz pole](../ide/media/findcommandbox.png "FindCommandBox")
+![Najít&#47;příkaz pole](../ide/media/findcommandbox.png)
 
 ## <a name="searching-for-text"></a>Hledání textu
 
@@ -53,7 +54,7 @@ Alternativně můžete také použít **příkaz** okno k zadání a spustit jed
 
 Šipka nahoru funguje stejně, jestli je uvnitř nebo mimo uvozovky. Pokud šipka nahoru poslední znak v řádku, je ignorován.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Příkazové okno](../ide/reference/command-window.md)
 - [Hledání a nahrazení textu](../ide/finding-and-replacing-text.md)

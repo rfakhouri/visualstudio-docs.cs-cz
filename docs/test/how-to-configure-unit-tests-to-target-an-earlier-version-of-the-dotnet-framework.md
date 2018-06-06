@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 4bb2cd04d005700ac0a4f647d04e495f717d0ed7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750737"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Postupy: Konfigurace testů jednotek pro cílení na dřívější verzi rozhraní .NET Framework
 
@@ -63,11 +64,11 @@ Když znovu cíle testovací projekty, aby používaly starší verze rozhraní 
 
 5.  Na **zkompilovat** , zvolte **Upřesnit možnosti kompilace** jak je znázorněno na následujícím obrázku.
 
-     ![Rozšířené možnosti kompilace](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")
+     ![Možnosti rozšířené kompilace](../test/media/howtoconfigureunittest35frameworka.png)
 
 6.  Použití **cílové rozhraní (všechny konfigurace)** rozevíracího seznamu můžete změnit cílové rozhraní k **rozhraní .NET Framework 3.5** nebo novější verze, jak je znázorněno na následujícím obrázku popisku B. Neměla by být zadána jako verze klienta.
 
-     ![Cílový framework rozevírací&#45;dolů seznamu](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
+     ![Cílový framework rozevírací&#45;dolů seznamu](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Znovu cílení na konkrétní verzi rozhraní .NET Framework pro Visual C# projektů testování částí
 
@@ -85,7 +86,7 @@ Když znovu cíle testovací projekty, aby používaly starší verze rozhraní 
 
 5.  Na **aplikace** , zvolte **cílové rozhraní**. V rozevíracím seznamu vyberte **rozhraní .NET Framework 3.5** nebo novější, jak je znázorněno na následujícím obrázku. Neměla by být zadána jako verze klienta.
 
-     ![Cílový framework rozevírací&#45;dolů seznamu](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
+     ![Cílový framework rozevírací&#45;dolů seznamu](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Znovu cílení na konkrétní verzi rozhraní .NET Framework pro C + +/ CLI projektů testování částí
 
@@ -123,7 +124,7 @@ Když znovu cíle testovací projekty, aby používaly starší verze rozhraní 
 
 8.  V Průzkumníku řešení, zvolte Výběr **znovu načíst projekt** z místní nabídky vaší nové testovacího projektu Visual C++.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření řešení služby SharePoint](/office-dev/office-dev/create-sharepoint-solutions)
 - [Sestavování a ladění řešení služby SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)

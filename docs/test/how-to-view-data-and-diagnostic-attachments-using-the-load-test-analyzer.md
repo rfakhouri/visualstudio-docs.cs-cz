@@ -10,21 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2bed9c90bb7562072c2f0855c361fc307227976d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 525f4a1d11cd4026410baf696b4593daf2595e12
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751362"
 ---
 # <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>Postupy: Zobrazení příloh diagnostiky dat pomocí analyzéru zátěžového testu
 
 Před spuštěním zátěžového testu si lze vybrat nastavení testu, které určuje diagnostické adaptéry a adaptéry dat, které chcete použít. Po dokončení zátěžového testu lze pomocí Analyzéru zátěžového testu zobrazit podrobnosti těchto diagnostických adaptérů a adaptérů dat během analýzy výsledků. Chcete-li zobrazit data a adaptéru diagnostických podrobnosti, vyberte **zobrazení dat a příloh diagnostiky** tlačítka na panelu nástrojů Analyzéru zátěžového testu. Pokud měl například zátěžový test v nastavení nakonfigurován adaptér systémových informací, lze zobrazit systémové informace pro počítač, který byl při běhu zátěžového testu použit.
 
-![Výběr dialogové okno přílohy adaptér diagnostických dat](../test/media/load_adapterdialog.png "Load_AdapterDialog")
+![Výběr dialogové okno přílohy adaptér diagnostických dat](../test/media/load_adapterdialog.png)
 
 Dalším příkladem je zátěžový test, který v nastavení testu zahrnuje adaptér technologie IntelliTrace. Adaptér technologie IntelliTrace umožňuje otevírat souhrnnou stránku technologie IntelliTrace.
 
-![Souhrn IntelliTrace](../test/media/load_intellitrace.png "Load_IntelliTrace")
+![Souhrn IntelliTrace](../test/media/load_intellitrace.png)
 
 Další informace najdete v tématu [shromažďovat diagnostické informace využitím testovacích nastavení](../test/collect-diagnostic-information-using-test-settings.md) a [dat shromažďování IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
 
@@ -36,6 +37,6 @@ Další informace najdete v tématu [shromažďovat diagnostické informace vyu�
 
 2.  Vyberte přílohu adaptéru diagnostických dat, která chcete analyzovat a pak zvolte **OK**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

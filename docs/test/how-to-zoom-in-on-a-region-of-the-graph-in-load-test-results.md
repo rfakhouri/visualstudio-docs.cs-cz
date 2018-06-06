@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 33191a5ba3d037453a70b069c302de0ca7ddd5cc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a61d53e8dbdbbce9c5a09fc8f8cd180a8b312d2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750968"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Postupy: Přiblížení oblasti grafu ve výsledcích zátěžového testu
 
@@ -39,7 +40,7 @@ Po dokončení testu zatížení můžete přiblížení řádky přiblížení 
 > [!TIP]
 > Můžete použít **synchronizovat vodorovné zvětšení ovládací prvky** na panelu nástrojů. Chcete-li zapnout nebo vypnout automatické vodorovné přiblížení synchronizace. V synchronizaci na všechny přibližování týkají grafu se také být použit na všechny ostatní grafy v zobrazení grafů.
 
- ![Graf ovládání pro zvětšení zobrazení](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl") ovládací prvek Lupa grafu
+ ![Graf ovládání pro zvětšení zobrazení](../test/media/ltest_zoomcontrol.png) ovládací prvek Lupa grafu
 
  Na předchozím obrázku má byla systému za testovací grafu přiblížení můžete prozkoumat problémy prahovou hodnotu. Byly povoleny překročení mezních hodnot s použitím **zobrazit porušení prahové hodnoty v grafu** z **možnosti grafu** rozevírací seznam v panelu nástrojů.
 
@@ -111,7 +112,7 @@ Po dokončení testu zatížení můžete přiblížení řádky přiblížení 
 
      Tím se zmenší zobrazíte spuštění celou dobu trvání zátěžový test.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Analýza výsledků zátěžových testů v zobrazení grafů](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -11,7 +11,7 @@ ms.openlocfilehash: 58d0fc5c31b02574661f8b86a4ae8bcaf393be3a
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693770"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Připojení do správy verzí Team Foundation 

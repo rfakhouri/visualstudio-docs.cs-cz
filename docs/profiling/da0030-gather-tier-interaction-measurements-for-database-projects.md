@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dca42fb108c2465db2b882957ea2bbcb25cd5ef8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7d53bd0975edfcaf02b0383834eb53db7716c982
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766191"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Získat Měření interakce vrstev pro databázové projekty
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Získat měření interakce vrstvy pro databázové projekty
 |||  
 |-|-|  
 |Id pravidla|DA0030|  
@@ -35,11 +36,11 @@ ms.lasthandoff: 04/19/2018
 ## <a name="rule-description"></a>Popis pravidla  
  Toto pravidlo aktivuje vždy, když je aktivita významných funkcí, které jsou umístěny v oborech názvů System.Data, včetně <xref:System.Data.Linq> <xref:System.Data.Linq>.  
   
- Víceúrovňových aplikací pomocí vrstev služby pro jejich prezentační a datové vrstvy. Datová vrstva často je samostatný proces spuštěný systém pro správu databází, jako je Microsoft Sql Server. Datová vrstva můžou běžet i na samostatný počítač od ostatních aplikace. Vzorkování profily poskytují jen málo informací do funkce a služby spuštěné mimo proces, nebo vzdáleně.  
+ Víceúrovňových aplikací pomocí vrstev služby pro jejich prezentační a datové vrstvy. Datová vrstva často je samostatný proces spuštěný systém pro správu databází, jako je Microsoft SQL Server. Datová vrstva můžou běžet i na samostatný počítač od ostatních aplikace. Vzorkování profily poskytují jen málo informací do funkce a služby spuštěné mimo proces, nebo vzdáleně.  
   
- Nástroje pro profilaci můžete shromáždit informace časování pro víceúrovňových aplikací, které komunikují s vrstvou dat Microsoft Sql Server pomocí asynchronní volání služby ADO.NET. Je potřeba explicitně povolit profilace interakce vrstvy. Není zapnutá ve výchozím nastavení.  
+ Nástroje pro profilaci můžete shromáždit informace časování pro víceúrovňových aplikací, které komunikují s vrstvou dat Microsoft SQL Server pomocí asynchronní volání služby ADO.NET. Je potřeba explicitně povolit profilace interakce vrstvy. Není zapnutá ve výchozím nastavení.  
   
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
+## <a name="how-to-fix-violations"></a>Jak opravit porušení  
  Toto pravidlo je pouze informativní a nemusejí být nutné opravné akce.  
   
  Informace o způsobu přidání dat interakce vrstev pro profilace data z prostředí Visual Studio IDE najdete v tématu [shromažďování dat interakce vrstev](../profiling/collecting-tier-interaction-data.md). Informace o způsobu přidání dat interakce vrstev z příkazového řádku najdete v tématu [shromažďování dat interakce vrstev](../profiling/adding-tier-interaction-data-from-the-command-line.md).

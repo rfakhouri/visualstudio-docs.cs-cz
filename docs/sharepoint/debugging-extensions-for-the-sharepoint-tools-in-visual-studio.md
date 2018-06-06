@@ -15,16 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7f976db455fc0cd847c648eb586b95fb81f6d5fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a4e2e6f3858833be49caf59d4d53fc1f8a131f10
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765291"
 ---
-# <a name="debugging-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Ladění rozšíření pro nástroje služby SharePoint v aplikaci Visual Studio
+# <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Ladění rozšíření pro nástroje služby SharePoint v sadě Visual Studio
   Můžete ladit rozšíření nástrojů služby SharePoint v experimentální instanci nebo normální instanci sady Visual Studio. Pokud potřebujete Poradce při potížích s chováním rozšíření, můžete také upravit hodnoty registru zobrazíte další informace o chybě a nakonfigurovat, jak Visual Studio provede příkazy služby SharePoint.  
   
-## <a name="debugging-extensions-in-the-experimental-instance-of-visual-studio"></a>Ladění rozšíření v experimentální instanci sady Visual Studio  
+## <a name="debug-extensions-in-the-experimental-instance-of-visual-studio"></a>Ladění rozšíření v experimentální instanci sady Visual Studio
  K ochraně vývojového prostředí sady Visual Studio před náhodným poškozením netestovaným rozšířením, Visual Studio SDK poskytuje alternativní instanci sady Visual Studio, volá se *experimentální instanci*, který můžete použít k instalaci a testování rozšíření. Při vývoji nových rozšíření pomocí normální instanci sady Visual Studio, ale ladění a spouštění v experimentální instanci. Další informace najdete v tématu [experimentální instanci](/visualstudio/extensibility/the-experimental-instance).  
   
  Pokud používáte k nasazení rozšíření projektu VSIX a projekt VSIX je projekt po spuštění ve vašem řešení, Visual Studio automaticky nainstaluje a spustí rozšíření v experimentální instanci při ladění řešení. Projekt po spuštění je projekt, který se spustí při ladění řešení, která obsahuje více projektů. Další informace o použití projektu VSIX k nasazení rozšíření najdete v tématu [nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
@@ -41,18 +42,18 @@ ms.lasthandoff: 04/16/2018
   
 -   [Návod: Volání do modelu klientského objektu služby SharePoint v rozšíření průzkumníka serveru](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)  
   
-## <a name="debugging-extensions-in-the-regular-instance-of-visual-studio"></a>Ladění rozšíření v normální instanci sady Visual Studio  
+## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>Ladění rozšíření v normální instanci sady Visual Studio
  Pokud chcete k ladění projektu rozšíření v normální instanci sady Visual Studio, nejprve nainstalujte rozšíření v normální instanci. Potom připojte ladicí program k druhému procesu Visual Studio. Jakmile budete hotovi, můžete odebrat rozšíření tak, aby už načtenou ve vývojovém počítači.  
   
 #### <a name="to-install-the-extension"></a>Chcete-li nainstalovat rozšíření  
   
 1.  Zavřete všechny instance sady Visual Studio.  
   
-2.  Ve výstupní složce sestavení pro rozšíření projektu otevřete soubor VSIX poklepáním nebo otevřením jeho místní nabídky a pak vyberete **otevřete**:  
+2.  V sestavení výstupní složky pro rozšíření projektu, otevřete *VSIX* soubor poklepáním nebo otevřením jeho místní nabídky a pak vyberete **otevřete**:  
   
 3.  V **instalační program Visual Studio rozšíření** dialogovém okně vyberte edice sady Visual Studio, do kterého chcete nainstalovat rozšíření a potom vyberte **nainstalovat** tlačítko.  
   
-     Visual Studio nainstaluje soubory rozšíření do %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\\*jméno autora*\\*název rozšíření* \\ *verze*. Poslední tři složky v této cestě se vytvářejí na základě `Author`, `Name`, a `Version` elementů v souboru extension.vsixmanifest pro rozšíření.  
+     Visual Studio nainstaluje soubory rozšíření do %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\\*jméno autora*\\*název rozšíření* \\ *verze*. Poslední tři složky v této cestě se vytvářejí na základě `Author`, `Name`, a `Version` elementů v *extension.vsixmanifest* souboru rozšíření.  
   
 4.  Po instalaci rozšíření sady Visual Studio vyberte **Zavřít** tlačítko.  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Na řádku nabídek zvolte **ladění**, **připojit k procesu**.  
   
-5.  V **dostupné procesy** vyberte devenv.exe. Tato položka odkazuje na druhou instanci sady Visual Studio; Toto je instance, kterou chcete ladit rozšíření vašeho projektu.  
+5.  V **dostupné procesy** vyberte *devenv.exe*. Tato položka odkazuje na druhou instanci sady Visual Studio; Toto je instance, kterou chcete ladit rozšíření vašeho projektu.  
   
 6.  Vyberte **Attach** tlačítko.  
   
@@ -92,8 +93,8 @@ ms.lasthandoff: 04/16/2018
   
 4.  Vyberte **restartovat nyní** tlačítko k dokončení odinstalace.  
   
-## <a name="debugging-sharepoint-commands"></a>Ladění SharePoint – příkazy  
- Pokud chcete ladit příkaz SharePoint, který je součástí rozšíření nástrojů SharePoint, je nutné připojit ladicí program k procesu vssphost4.exe. Toto je 64bitová verze hostitele proces, který spouští příkazy služby SharePoint. Další informace o příkazech SharePoint a vssphost4.exe najdete v tématu [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+## <a name="debug-sharepoint-commands"></a>Ladění SharePoint – příkazy
+ Pokud chcete ladit příkaz SharePoint, který je součástí rozšíření nástrojů SharePoint, je nutné připojit ladicí program na *vssphost4.exe* procesu. Toto je 64bitová verze hostitele proces, který spouští příkazy služby SharePoint. Další informace o příkazech SharePoint a *vssphost4.exe*, najdete v části [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
 #### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>Chcete-li proces vssphost4.exe připojit ladicí program  
   
@@ -101,17 +102,17 @@ ms.lasthandoff: 04/16/2018
   
 2.  V instanci sady Visual Studio, ve kterém běží ladicího programu, v řádku nabídek zvolte **ladění**, **připojit k procesu**.  
   
-3.  V **dostupné procesy** vyberte vssphost.exe.  
+3.  V **dostupné procesy** vyberte *vssphost.exe*.  
   
     > [!NOTE]  
-    >  Pokud vssphost.exe v seznamu nezobrazí, je třeba spustit proces vssphost4.exe v instanci sady Visual Studio, ve kterém jsou spuštěna rozšíření. Obvykle to uděláte tak, že provedete akci, která způsobí, že chcete připojit k webu služby SharePoint na vývojovém počítači Visual Studio. Například Visual Studio spustí vssphost4.exe po rozbalení uzlu připojení k webu (uzel, který zobrazuje adresu URL webu) v části **připojení služby SharePoint** uzel v **Průzkumníka serveru** okno, nebo když jste Některé položky projektu služby SharePoint, přidejte například **instanci seznamu** nebo **příjemce událostí** položek do projektu služby SharePoint.  
+    >  Pokud vssphost.exe v seznamu nezobrazí, musíte spustit *vssphost4.exe* procesů v instanci sady Visual Studio, ve kterém jsou spuštěna rozšíření. Obvykle to uděláte tak, že provedete akci, která způsobí, že chcete připojit k webu služby SharePoint na vývojovém počítači Visual Studio. Například Visual Studio spustí *vssphost4.exe* po rozbalení uzlu připojení k webu (uzel, který zobrazuje adresu URL webu) v části **připojení služby SharePoint** uzlu **Průzkumníka serveru**  okno, nebo když přidáte některé položky projektu služby SharePoint, jako například **instanci seznamu** nebo **příjemce událostí** položek do projektu služby SharePoint.  
   
 4.  Vyberte **Attach** tlačítko.  
   
 5.  V instanci sady Visual Studio, který je právě laděn proveďte kroky, které jsou nutné k provedení příkazu.  
   
-## <a name="modifying-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Úpravy hodnot registru, které pomáhají SharePoint ladění rozšíření nástrojů  
- Při ladění rozšíření nástrojů služby SharePoint v sadě Visual Studio, můžete změnit hodnoty v registru k vyřešení rozšíření. Hodnoty existovat pod klíčem HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools. Tyto hodnoty nejsou k dispozici ve výchozím nastavení.  
+## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Upravit hodnot registru, které pomáhají ladit rozšíření nástrojů SharePoint
+ Při ladění rozšíření nástrojů služby SharePoint v sadě Visual Studio, můžete změnit hodnoty v registru k vyřešení rozšíření. Hodnoty existovat pod **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools** klíč. Tyto hodnoty nejsou k dispozici ve výchozím nastavení.  
   
  Pomoc při řešení potíží s jakékoli rozšíření nástrojů služby SharePoint, můžete vytvořit a nastavit hodnotu EnableDiagnostics. Následující tabulka popisuje tuto hodnotu.  
   
@@ -123,14 +124,13 @@ ms.lasthandoff: 04/16/2018
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
-|AttachDebuggerToHostProcess|REG_DWORD, která určuje, jestli se má zobrazit dialogové okno, která umožňuje připojit ladicí program k vssphost4.exe při spuštění. To je užitečné, pokud příkaz, který chcete ladit spuštěn ve vssphost.exe ihned po jeho spuštění, a není k dispozici dostatek času na ručně připojit ladicí program před provedením příkazu. Chcete-li zobrazit dialogové okno, vssphost4.exe volání <xref:System.Diagnostics.Debugger.Break%2A> metoda po jeho spuštění.<br /><br /> Chcete-li toto chování, nastavte tuto hodnotu na 1. Chcete-li toto chování vypnout, nastavte tuto hodnotu na 0 nebo tuto hodnotu odstraňte.<br /><br /> Pokud tuto hodnotu nastavíte na 1, můžete taky zvýšit hodnotu HostProcessStartupTimeout, abyste měli dostatek času k připojit ladicí program, než Visual Studio očekává vssphost4.exe signál, že je úspěšně spuštěn.|  
+|AttachDebuggerToHostProcess|REG_DWORD, která určuje, jestli se má zobrazit dialogové okno, která umožňuje připojit ladicí program na *vssphost4.exe* při jeho spuštění. To je užitečné, pokud příkaz, který chcete ladit spuštěn ve vssphost.exe ihned po jeho spuštění, a není k dispozici dostatek času na ručně připojit ladicí program před provedením příkazu. Chcete-li zobrazit dialogové okno, *vssphost4.exe* volání <xref:System.Diagnostics.Debugger.Break%2A> metoda po jeho spuštění.<br /><br /> Chcete-li toto chování, nastavte tuto hodnotu na 1. Chcete-li toto chování vypnout, nastavte tuto hodnotu na 0 nebo tuto hodnotu odstraňte.<br /><br /> Pokud tuto hodnotu nastavíte na 1, můžete také chtít zvýšit hodnotu HostProcessStartupTimeout, abyste měli dostatek času k připojit ladicí program, než se očekává v sadě Visual Studio *vssphost4.exe* signál, že je úspěšně spuštěn.|  
 |ChannelOperationTimeout|REG_DWORD, který určuje dobu v sekundách, který Visual Studio čeká k provedení příkazu SharePoint. Pokud příkaz nepracuje v čase, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> je vyvolána výjimka.<br /><br /> Výchozí hodnota je 120 sekundách.|  
-|HostProcessStartupTimeout|REG_DWORD, který určuje dobu v sekundách, který Visual Studio čeká na signál, vssphost4.exe se úspěšně spustila. Pokud vssphost4.exe nevydá signál úspěšně spustit v průběhu času, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> je vyvolána výjimka.<br /><br /> Výchozí hodnota je 60 sekund.|  
-|MaxReceivedMessageSize|REG_DWORD, která určuje maximální povolená velikost v bajtech zpráv WCF, které se předávají mezi sadou Visual Studio a vssphost4.exe.<br /><br /> Výchozí hodnota je 1 048 576 bajtů (1 MB).|  
-|MaxStringContentLength|REG_DWORD, která určuje maximální povolená velikost v bajtech řetězců, které se předávají mezi sadou Visual Studio a vssphost4.exe.<br /><br /> Výchozí hodnota je 1 048 576 bajtů (1 MB).|  
+|HostProcessStartupTimeout|REG_DWORD, který určuje dobu v sekundách, sadou Visual Studio čeká na *vssphost4.exe* signál, že je úspěšně spuštěn. Pokud *vssphost4.exe* nevydá signál úspěšně spustit v průběhu času, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> je vyvolána výjimka.<br /><br /> Výchozí hodnota je 60 sekund.|  
+|MaxReceivedMessageSize|REG_DWORD, která určuje maximální povolenou velikost v bajtech zpráv WCF, které se předávají mezi sadou Visual Studio a *vssphost4.exe*.<br /><br /> Výchozí hodnota je 1 048 576 bajtů (1 MB).|  
+|MaxStringContentLength|REG_DWORD, která určuje maximální povolenou velikost v bajtech řetězců, které se předávají mezi sadou Visual Studio a *vssphost4.exe*.<br /><br /> Výchozí hodnota je 1 048 576 bajtů (1 MB).|  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [Nasazování rozšíření pro nástroje služby SharePoint v aplikaci Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  
-  
+

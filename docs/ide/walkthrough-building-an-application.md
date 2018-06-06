@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření aplikace'
+title: 'Návod: Sestavení aplikace'
 ms.date: 09/25/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -9,13 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eaa236a5cc4a11832cee3b4dfc43aa4ef0cb97c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748215"
 ---
-# <a name="walkthrough-build-an-application"></a>Návod: Vytvoření aplikace
+# <a name="walkthrough-build-an-application"></a>Návod: Sestavení aplikace
 
 Provedením tohoto návodu budete seznámení s několik možností, které můžete nakonfigurovat při vytváření aplikací pomocí sady Visual Studio. Budete vytvářet vlastní konfiguraci sestavení, skrýt některé zprávy upozornění a zvýšit sestavení výstupní informace pro ukázkovou aplikaci.
 
@@ -33,31 +34,31 @@ Můžete změnit nebo vytvořit platformy nastavení a konfigurace pomocí **ná
 
 1. Otevřete **nástroje Configuration Manager** dialogové okno.
 
-   ![Vytvoření nabídky nástroje Configuration Manager příkaz](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+   ![Vytvoření nabídky, příkaz nástroje Configuration Manager](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
 1. V **aktivní konfigurace řešení** vyberte  **\<nový... \>**.
 
 1. V **novou konfiguraci řešení** dialogové okno, název novou konfiguraci `Test`, Kopírovat nastavení z existující **ladění** konfigurace a potom vyberte **OK**tlačítko.
 
-   ![Nové řešení dialogové okno Konfigurace](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
+   ![Nové řešení dialogové okno Konfigurace](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
 1. V **platforma Active řešení** vyberte  **\<nový... \>**.
 
 1. V **nová platforma řešení** dialogovém okně vyberte **x64**a není Kopírovat nastavení z x86 platformy.
 
-   ![Řešení platformy dialogové okno Nový](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
+   ![Řešení platformy dialogové okno Nový](../ide/media/buildwalk_newsolutionplatform.png)
 
 1. Vyberte **OK** tlačítko.
 
    Konfigurace aktivního řešení se změnil na **Test** s platformou aktivním řešení nastavena na x64.
 
-   ![Configuration Manager s testovací konfigurace](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![Configuration Manager s Konfigurace testu](../ide/media/buildwalk_configmanagertestconfig.png)
 
 1. Zvolte **Zavřít**.
 
 Můžete rychle ověřte nebo změňte konfiguraci active řešení pomocí **konfigurace řešení** na seznamu **standardní** panelu nástrojů.
 
-![Možnost konfigurace řešení standardním panelu nástrojů](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+![Možnost konfigurace řešení standardním panelu nástrojů](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png)
 
 ## <a name="build-the-application"></a>Sestavení aplikace
 
@@ -83,9 +84,9 @@ Dále budete zavedeme některé kód, který způsobí, že má být vygenerová
 
 **Výstup** okně se zobrazí výsledky sestavení. Sestavení bylo úspěšné, ale byly vygenerovány upozornění:
 
-![Výstup – okno jazyka Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+![Výstup – okno jazyka Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png)
 
-![Výstup – okno Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+![Výstup – okno Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png)
 
 Můžete dočasně skrýt některé zprávy upozornění během sestavení místo kliknul zbytečných souborů až výstupu sestavení.
 
@@ -99,7 +100,7 @@ Můžete dočasně skrýt některé zprávy upozornění během sestavení míst
 
 1. Vyberte **sestavení** stránky a pak na **potlačení upozornění** zadejte číslo upozornění **0168**.
 
-     ![Vytvoření stránky, Návrhář projektu](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")
+     ![Vytvoření stránky, Návrhář projektu](../ide/media/buildwalk_csharpsupresswarnings.png)
 
      Další informace najdete v tématu [stránka sestavení, Návrhář projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -107,7 +108,7 @@ Můžete dočasně skrýt některé zprávy upozornění během sestavení míst
 
      **Výstup** okně zobrazí pouze souhrnné informace o sestavení.
 
-     ![Okno výstup, Visual C&#35; sestavení upozornění](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![Okno výstup, Visual C&#35; sestavení upozornění](../ide/media/buildwalk_visualcsharpbuildwarnings.png)
 
 ### <a name="suppress-all-visual-basic-build-warnings"></a>Potlačit všech upozornění sestavení jazyka Visual Basic
 
@@ -119,7 +120,7 @@ Můžete dočasně skrýt některé zprávy upozornění během sestavení míst
 
 1. Na **zkompilovat** vyberte **zakázat všech upozornění** zaškrtávací políčko.
 
-     ![Stránka kompilovat, Návrhář projektu](../ide/media/buildwalk_vbsupresswarnings.png "BuildWalk_VBSupressWarnings")
+     ![Stránka kompilovat, Návrhář projektu](../ide/media/buildwalk_vbsupresswarnings.png)
 
      Další informace najdete v tématu [Konfigurace upozornění v jazyce Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -127,7 +128,7 @@ Můžete dočasně skrýt některé zprávy upozornění během sestavení míst
 
  **Výstup** okně zobrazí pouze souhrnné informace o sestavení.
 
- ![Okno výstup, Visual Basic sestavení upozornění](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+ ![Okno výstup, Visual Basic sestavení upozornění](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
  Další informace najdete v tématu [postupy: potlačení upozornění kompilátoru](../ide/how-to-suppress-compiler-warnings.md).
 
@@ -143,7 +144,7 @@ Kolik informace o procesu sestavení se zobrazí v, můžete změnit **výstup**
 
 1. Otevřete **možnosti** dialogové okno.
 
-     ![Možnosti příkazu v nabídce Nástroje pro](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE ToolsOptionsmenu")
+     ![Příkaz Možnosti v nabídce Nástroje](../ide/media/exploreide-toolsoptionsmenu.png)
 
 1. Vyberte **projekty a řešení** kategorie a potom zvolte **sestavit a spustit** stránky.
 
@@ -174,7 +175,7 @@ Další informace najdete v tématu [postupy: Změna výstupního adresáře ses
 
 1. Otevřete **Návrhář projektu**.
 
-     ![Nabídka Zobrazit příkaz – stránky vlastností](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Nabídka Zobrazit, příkaz stránky vlastností](../ide/media/buildwalk_viewpropertypages.png)
 
 1. Vyberte **zkompilovat** stránky.
 
@@ -191,13 +192,13 @@ Další informace najdete v tématu [postupy: Změna výstupního adresáře ses
 
 1. Sestavení aplikace.
 
-     ![Sestavit řešení – příkaz v nabídce sestavení](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")
+     ![V nabídce sestavení sestavit řešení – příkaz](../ide/media/exploreide-buildsolution.png)
 
 ### <a name="specify-a-release-build-for-c"></a>Zadejte sestavení pro vydání pro jazyk C# #
 
 1. Otevřete **Návrhář projektu**.
 
-     ![Nabídka Zobrazit příkaz – stránky vlastností](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Nabídka Zobrazit, příkaz stránky vlastností](../ide/media/buildwalk_viewpropertypages.png)
 
 1. Vyberte **sestavení** stránky.
 
@@ -216,13 +217,13 @@ Další informace najdete v tématu [postupy: Změna výstupního adresáře ses
 
 1. Sestavení aplikace.
 
-     ![Sestavit řešení – příkaz v nabídce sestavení](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")
+     ![V nabídce sestavení sestavit řešení – příkaz](../ide/media/exploreide-buildsolution.png)
 
    Spustitelný soubor zkopírován do cesty sítě, který jste zadali. Jeho cesta by byla `\\myserver\builds\\FileName.exe`.
 
 Blahopřejeme: jste úspěšně dokončit tento postup.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Návod: Vytvoření projektu (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Přehled technologie ASP.NET do webové aplikace projektu předkompilace](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)

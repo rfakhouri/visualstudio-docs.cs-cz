@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56c70f1ba622e8fb24c2ece0f52c9c653051d588
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fba456d6a06281e0472e907b27bcd76b57b17e93
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747115"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Postupy: Vytvoření shaderu základní barvy
 
@@ -41,11 +42,11 @@ Následující obrázek znázorňuje dokončené shaderu graf a náhled shaderu 
 > [!NOTE]
 > Na obrázku oranžovou barvu zadaná lépe předvedení účinek shaderu.
 
-![Graf shaderu a jeho výsledek a 3&#45;D modelu](../designers/media/digit-flat-color-effect.png "číslice dvojrozměrném barevný efekt")
+![Graf shaderu a jeho výsledek a 3&#45;D modelu](../designers/media/digit-flat-color-effect.png)
 
 Určité tvarů může poskytovat lepší verze Preview pro některé shadery. Další informace o tom, jak zobrazit náhled shadery v Návrháři shaderu najdete v tématu [shaderu Návrhář](../designers/shader-designer.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)

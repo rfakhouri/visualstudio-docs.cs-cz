@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 827b76f3b4b40f59fe22b3c5424c6d8c13087809
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 44994b7b643d63f548092aba9a878b939f3968af
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750991"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Postupy: Nastavení testů pro záznam obrazovky a zvuku během testování
 
@@ -38,7 +39,7 @@ Záznam obrazovky a zvuku lze použít s ruční nebo automatické testů. Např
 
      Adaptéru konfigurace diagnostických dat – zobrazí se dialogové okno obrazovky a záznam hlasu.
 
-     ![Konfigurace zobrazení](../test/media/testsettingvideoconfiggdr.png "TestSettingVideoConfigGDR")
+     ![Konfigurace zobrazení](../test/media/testsettingvideoconfiggdr.png)
 
 4.  (Volitelné) Vyberte **povolit záznam hlasu** k zaznamenání zvukového obsahu ve vaší záznam.
 
@@ -60,7 +61,7 @@ Záznam obrazovky a zvuku lze použít s ruční nebo automatické testů. Např
     > [!TIP]
     > Chcete-li obnovit konfiguraci pro tento adaptér diagnostických dat, zvolte **resetovat na výchozí konfiguraci** pro sadu Visual Studio a **obnovit výchozí** nástroje Microsoft Test Manager.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Shromažďování diagnostických dat při testování (VSTS)](/vsts/manual-test/collect-diagnostic-data)
 - [Shromažďování diagnostických dat v manuálních testech (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c62137422a4cbd7b85b4f7415e9b3fa85c2c0248
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f3d4c27f0aedf879137b3ef7a154fb7dd6f9164
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766256"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Kurz: Další informace k ladění pomocí sady Visual Studio
 
@@ -27,11 +28,11 @@ Můžete buď si přečíst podél zobrazíte funkce ladicího programu nebo mů
 
 |         |         |
 |---------|---------|
-|  ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video")  |    [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) ladění, který ukazuje podobným způsobem. |
+|  ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video")  |    [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) ladění, který ukazuje podobným způsobem. |
 
 I když ukázkovou aplikaci C#, funkce se vztahuje na C++, Visual Basic, JavaScript a dalších jazyků – podpora Visual Studio (Pokud není uvedeno jinak).
 
-V tomto kurzu provedete následující:
+V tomto kurzu se naučíte:
 
 > [!div class="checklist"]
 > * Spuštění ladicího programu a stiskněte tlačítko zarážky.
@@ -39,6 +40,14 @@ V tomto kurzu provedete následující:
 > * Zkontrolujte proměnné v datových tipech a ladicího programu
 > * Prozkoumat zásobník volání
 > * Použití pomocníka výjimka
+
+## <a name="prerequisites"></a>Požadavky
+
+* Musíte mít nainstalované Visual Studio 2017 a. **NET vývoj aplikací** zatížení.
+
+    Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
+
+    Pokud potřebujete nainstalovat zatížení, ale už máte Visual Studio, klikněte na tlačítko **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno (vyberte **soubor**  >  **Nové** > **projektu**). Spustí se instalační program pro Visual Studio. Zvolte. **NET vývoj aplikací** zatížení, zvolte **upravit**.
 
 ## <a name="start-the-debugger"></a>Spuštění ladicího programu!
 

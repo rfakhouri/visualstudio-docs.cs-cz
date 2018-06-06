@@ -15,11 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 357101a9430eb8d22aeab39179a0a4f70f0dc1bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f39ddf910f120c30cf8ef55e77d4fe09f645e148
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748524"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Přizpůsobení nástrojů a panelu nástrojů
 Je nutné zadat položek sady nástrojů pro prvky, které chcete, aby mohli uživatelé přidat do jejich modely. Existují dva typy nástrojů: element nástroje a nástroje pro připojení. V Návrháři generovaného uživatele můžete vybrat nástroj na element přetáhněte obrazců do diagramu a můžete vybrat nástroj pro připojení k vykreslení odkazy mezi obrazce. Obecně platí nástroje pro element uživatelům přidání instancí třídy domény do jejich modely a nástroje připojení k zajištění jejich přidání instancí vztahů mezi doménami.
@@ -199,17 +200,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **Připojení přicházejících na OutPort z vnořené součásti**
 
- ![Tvůrce připojení](../modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")
+ ![Tvůrce připojení](../modeling/media/connectionbuilder_3.png)
 
  Proto můžete zadat, že připojení mohou pocházet z vnořených součástí do OutPort. Pokud chcete zadat toto připojení, můžete nastavit **používá vlastní přijmout** na **InPort** typ jako zdrojovou roli a **OutPort** jako cíl role v typu **DSL podrobnosti**  okno, jak je znázorněno na následujícím obrázku:
 
  **Odkaz připojit v Průzkumníku DSL – direktiva**
 
- ![Obrázek připojení Tvůrce](../modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")
+ ![Obrázek Tvůrce připojení](../modeling/media/connectionbuilder_4a.png)
 
  **Odkaz připojit – direktiva v okně podrobností DSL**
 
- ![](../modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")
+ ![](../modeling/media/connectionbuilder_4b.png)
 
  Pak je nutné zadat metody ve třídě ConnectionBuilder:
 

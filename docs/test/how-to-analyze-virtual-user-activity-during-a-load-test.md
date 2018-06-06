@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0e1c990a0014051c6732eb187150bd0c1d89afc8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f7da7f881cf70ebfdafb3dbaaf2821471327fa81
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751231"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Postupy: Analýza činnosti virtuálních uživatelů během zátěžového testu pomocí graf aktivity virtuálního uživatele
 
@@ -75,7 +76,7 @@ Níže uvedených postupech ukazují, jak zobrazit grafu aktivity virtuálního 
 
      **Panel podrobnosti legendy**
 
-     ![Podrobnosti legendy panely](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+     ![Panel podrobnosti legendy](../test/media/ltest_detailslegend.png)
 
 2.  Vyberte nebo zrušte zaškrtnutí políček u chyby, protokoly, testů, vyhledávání a stránky aspx, které jsou přidruženy zátěžový test.
 
@@ -87,7 +88,7 @@ Níže uvedených postupech ukazují, jak zobrazit grafu aktivity virtuálního 
 
      **Výsledky panel Filtr**
 
-     ![Filtrovat výsledky panely](../test/media/ltest_filterresults.png "LTest_FilterResults")
+     ![Výsledky panel Filtr](../test/media/ltest_filterresults.png)
 
 3.  Ve výsledcích filtru vyberte nebo zrušte zaškrtnutí políčka pro následující možnosti filtru:
 
@@ -102,7 +103,7 @@ Níže uvedených postupech ukazují, jak zobrazit grafu aktivity virtuálního 
 
      Grafu aktivity virtuálního uživatele se aktualizuje.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Návod: Izolace problémů pomocí graf aktivity virtuálního uživatele](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

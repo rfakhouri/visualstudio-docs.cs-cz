@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70e120d0f33e89d914e50cea48aea5944612846f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747505"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Rychlý úvod: Projekty a řešení
 
@@ -57,7 +58,7 @@ Nyní Pojďme přidat naše první projekt do řešení. Jsme budete začít s p
 
    **Přidat nový projekt** otevře se dialogové okno.
 
-1. V levém podokně rozbalte **Visual C#** a zvolte **Windows Classic Desktop**. Zvolte v prostředním podokně **prázdný projekt (rozhraní .NET Framework)**. Název projektu "QuickDate", a potom vyberte **OK** tlačítko.
+1. V levém podokně rozbalte **Visual C#** a zvolte **Windows Desktop**. Zvolte v prostředním podokně **prázdný projekt (rozhraní .NET Framework)**. Název projektu "QuickDate", a potom vyberte **OK** tlačítko.
 
    Projekt s názvem "QuickDate" se zobrazí pod řešení v **Průzkumníku řešení**. Aktuálně obsahuje jednoho souboru s názvem *App.config*.
 
@@ -180,12 +181,12 @@ Pokud chcete zkontrolovat, že vaše testování částí funguje, zvolte **test
 
 Blahopřejeme k dokončení tento rychlý start! Potom můžete prozkoumávat některé z dalších Quickstarts pro sadu Visual Studio nebo Další informace o tom, jak [vytváření projektů a řešení](../ide/creating-solutions-and-projects.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Rychlý úvod: První pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)
 - [Rychlý úvod: Přizpůsobení Visual Studio IDE a editor](../ide/quickstart-personalize-the-ide.md)
 - [Rychlý úvod: Kódování v editoru](../ide/quickstart-editor.md)
-- [Správa vlastností projektů a řešení](../ide/managing-project-and-solution-properties.md)
+- [Správa vlastností projektu a řešení](../ide/managing-project-and-solution-properties.md)
 - [Správa odkazů v projektu](../ide/managing-references-in-a-project.md)
 - [Vývoj kódu v sadě Visual Studio bez projektů nebo řešení](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Přehled Visual Studio IDE](../ide/visual-studio-ide.md)

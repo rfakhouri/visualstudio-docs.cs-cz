@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4100066d6c6b86bf319cad3bc123098835807acb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27975cf387c92e5afcc61bd267f383a6bed414a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747388"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio
 Data můžete zobrazit uživatelům vaší aplikace pomocí vytvoření vazby dat s ovládacími prvky. Tyto ovládací prvky vázané na data můžete vytvořit tak, že přetáhnete položky z **zdroje dat** okno na návrhovou plochu nebo ovládacích prvků na prostor v sadě Visual Studio.
@@ -45,7 +46,7 @@ Data můžete zobrazit uživatelům vaší aplikace pomocí vytvoření vazby da
 ## <a name="data-sources-window"></a>okno Zdroje dat
  Zdroje dat jsou k dispozici pro váš projekt jako položky v **zdroje dat** okno. Toto okno se zobrazí, nebo je přístupný z **zobrazení** nabídky, když návrhová plocha formuláře je aktivní okno ve vašem projektu. Přetahování položek z tohoto okna vytvořit ovládací prvky vázané na základní data a můžete také konfigurovat zdroje dat kliknutím pravým tlačítkem myši.
 
- ![Okno zdroje dat](../data-tools/media/raddata-data-sources-window.png "raddata okna zdroje dat")
+ ![okno Zdroje dat](../data-tools/media/raddata-data-sources-window.png)
 
  Pro každý typ dat, který se zobrazí v **zdroje dat** okně ovládacího prvku výchozí se vytvoří při přetáhněte ji do návrháře. Před přetáhnete položky z **zdroje dat** okno, můžete změnit ovládací prvek, který bude vytvořen. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 

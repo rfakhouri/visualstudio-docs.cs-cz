@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a2fee12882275d78d759e39d69674b4aef2f38b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f80072e3ea2e6e9d870c6ca3b2b61400624b744b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746024"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Vývoj kódu v sadě Visual Studio bez projekty a řešení
 
@@ -65,7 +66,7 @@ Následující příklad ukazuje, jak klonovat úložiště GitHub a pak otevře
 
 |         |         |
 |---------|---------|
-|  ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video")|    [Přehrát video,](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) o tom, jak klonovat a otevřete kód z úložiště GitHub v sadě Visual Studio. |
+|  ![film ikonu fotoaparátu pro video](../install/media/video-icon.png)|    [Přehrát video,](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) o tom, jak klonovat a otevřete kód z úložiště GitHub v sadě Visual Studio. |
 
 ## <a name="run-and-debug-your-code"></a>Spuštění a ladění kódu
 
@@ -110,9 +111,9 @@ Pokud váš kód složka obsahuje projekt sady Visual Studio, můžete určit pr
 
 ![Projekt na tlačítko Start](media/customize-start-button-project.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Přizpůsobení sestavení a ladění úloh](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
+- [Přizpůsobení úloh sestavení a ladění](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
 - [Otevřete složku projektů jazyka C++](/cpp/ide/non-msbuild-projects)
 - [CMake projektů v jazyce C++](/cpp/ide/cmake-tools-for-visual-cpp)
 - [Psaní kódu v editoru kódu a text.](../ide/writing-code-in-the-code-and-text-editor.md)

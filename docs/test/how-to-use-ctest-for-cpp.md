@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ec0dd78b7bfdc3389a9867478e546c5456e42437
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 98e258c2547bbd3cd1b87d289bf643956acfdb1d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751030"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Jak používat CTest jazyka C++ v sadě Visual Studio
 
@@ -29,7 +30,7 @@ V aplikaci Visual Studio 2017 verze 15,6 operací, CTest jsou plně integrované
 
 Následující obrázek znázorňuje výsledky CTest, spustí pomocí Google Test framework:
 
-![CTest s Google Test Framework v VS2017 15,6 operací](media/ctest-test-explorer.png "CTest a Google testů v testovací Explorer")
+![CTest s Google Test Framework v VS2017 15,6 operací](media/ctest-test-explorer.png)
 
 Pokud používáte CTest, ale není Google nebo nárůst adaptérů, zobrazí výsledky na úrovni CTest místo jednotlivých testů metoda úroveň. Můžete ladit a procházení po kroku jen CTest spustitelné soubory, ale trasování zásobníku na jednotlivé testy nejsou podporovány.
 
@@ -37,8 +38,8 @@ Pokud používáte CTest, ale není Google nebo nárůst adaptérů, zobrazí v�
 
 V **Visual Studio 2017 verze 15,5**, CTest není integrovaná s **Průzkumníka testů**. Testy můžete spustit z hlavní nabídky CMake nebo v místní nabídce na **CMakeLists.txt** souboru v **Průzkumníku řešení**. Výsledky testů jsou směrované sady Visual Studio **výstup – okno**.
 
-![Spuštění testů CTest 15,5 VS2017](media/cpp-cmake-run-tests.png "CTest spuštění testů v 15,5")
+![Spuštění testů CTest VS2017 15,5](media/cpp-cmake-run-tests.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 [Zápis testů částí pro C/C++](writing-unit-tests-for-c-cpp.md)

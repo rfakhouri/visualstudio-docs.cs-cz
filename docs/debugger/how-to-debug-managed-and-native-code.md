@@ -16,17 +16,18 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 548b86406ba36a6f46a2dfb3d4d894b5621c298c
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: d8987d24a6302c9d9ffd7ffdb127e52c57e22ff9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764550"
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Kurz: Ladění nativního a spravovaného kódu v sadě Visual Studio
 
 Visual Studio umožňuje povolit více než jeden typ ladicí program při ladění, která se nazývá ladění ve smíšeném režimu. V tomto kurzu nastavíte možnosti ladění spravovaná a nativní kód v rámci jedné relace ladění. Tento kurz ukazuje, jak k ladění nativního kódu ze spravované aplikace, ale můžete také provést zpětného, a [ladění spravovaného kódu z nativní aplikace](../debugger/how-to-debug-in-mixed-mode.md). Ladicí program podporuje i jiné typy ladění ve smíšeném režimu, jako je například ladění [Python a nativní kód](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md) a používání ladicího programu skript v typy aplikací, jako je například technologie ASP.NET.
 
-V tomto kurzu provedete následující:
+V tomto kurzu se naučíte:
 
 > [!div class="checklist"]
 > * Vytvoření jednoduchého nativní knihovny DLL
@@ -39,9 +40,9 @@ V tomto kurzu provedete následující:
 
 * Musíte mít nainstalovanou sadu Visual Studio a **vývoj aplikací s jazykem C++** zatížení.
 
-    Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).
+    Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
-    Pokud potřebujete nainstalovat zatížení, ale už máte Visual Studio, klikněte na tlačítko **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí instalační program Visual Studio. Vyberte **Node.js vývoj** zatížení, zvolte **upravit**.
+    Pokud potřebujete nainstalovat úlohu, ale Visual Studio už máte, klikněte v dialogovém okně **Nový projekt** v levém podokně na odkaz **Otevřít instalační program pro Visual Studio**. Spustí se instalační program pro Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
 
 * Je také nutné mít buď **vývoj aplikací .NET** zatížení nebo **.NET Core křížové vývoj platformy** zatížení nainstalovaná, v závislosti na typ aplikace, které chcete vytvořit.
 
@@ -73,7 +74,7 @@ V tomto kurzu provedete následující:
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
     #define MIXED_MODE_MULTIPLY_HPP
-    
+
     extern "C"
     {
         __declspec(dllexport) int __stdcall mixed_mode_multiply(int a, int b) {
@@ -106,7 +107,7 @@ V tomto kurzu provedete následující:
 
 1. Vyberte šablonu pro kód aplikace.
 
-    Pro rozhraní .NET Framework v **nový projekt** dialogovém okně vyberte **Visual C#**, **Windows Classic Desktop** z části nainstalovaných šablon a potom v prostředním podokně Vyberte **konzolovou aplikaci (rozhraní .NET Framework)**.
+    Pro rozhraní .NET Framework v **nový projekt** dialogovém okně vyberte **Visual C#**, **Windows Desktop** z části nainstalovaných šablon a potom v prostředním podokně vyberte  **Konzole aplikace (rozhraní .NET Framework)**.
 
     Pro .NET Core v **nový projekt** dialogovém okně vyberte **Visual C#**, **.NET Core** z části nainstalovaných šablon a potom v prostředním podokně vyberte  **Konzole aplikace (.NET Core)**.
 
@@ -119,7 +120,7 @@ V tomto kurzu provedete následující:
     ```csharp
     using System;
     using System.Runtime.InteropServices;
-    
+
     namespace Mixed_Mode_Calling_App
     {
         public class Program
@@ -133,7 +134,7 @@ V tomto kurzu provedete následující:
             "mixed_mode_multiply", CallingConvention = CallingConvention.StdCall)]
             public static extern int Multiply(int x, int y);
             public static void Main(string[] args)
-            { 
+            {
                 int result = Multiply(7, 7);
                 Console.WriteLine("The answer is {0}", result);
                 Console.ReadKey();
@@ -165,9 +166,9 @@ Ve většině verzí aplikace Visual Studio 2017, musíte povolit ladění ve sm
     ```
     "nativeDebugging": true
     ```
-    
+
     Ano například souboru může vypadat následovně:
-    
+
     ```
     {
       "profiles": {
@@ -213,7 +214,7 @@ Ve většině verzí aplikace Visual Studio 2017, musíte povolit ladění ve sm
 
 1. Stiskněte klávesu **Shift + F11** (**ladění** > **Krokovat s Vystoupením**) a pokračovat v provádění aplikace pozastavit znovu ve spravované aplikaci.
 
-1. Stiskněte klávesu **F5** pokračujte aplikace.
+1. Pokud chcete pokračovat v aplikaci, stiskněte **F5**.
 
     Blahopřejeme! Dokončili jste kurz na ladění ve smíšeném režimu.
 

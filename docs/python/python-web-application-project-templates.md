@@ -1,7 +1,7 @@
 ---
 title: Šablony webové aplikace pro jazyk Python
 description: Přehled šablony sady Visual Studio pro webové aplikace napsané v Pythonu pomocí rozhraní Bottle, Flask a Django, včetně ladění konfigurace a publikování do služby Azure App Service.
-ms.date: 04/17/2018
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d76bc7868c78b1def09376cb2382aa39cff1cda
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: f975b726b8be76af1e3daeff59a06a18988644ab
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752037"
 ---
 # <a name="python-web-application-project-templates"></a>Šablony projektu webové aplikace Python
 
@@ -41,7 +42,7 @@ Všechny šablony "Prázdná (framework) webový projekt" Vytvoření projektu s
 | --- | --- |
 | Prázdné Bottle webového projektu | Generuje minimální aplikace v `app.py` s domovskou stránku pro `/` a `/hello/<name>` stránky, která vrátí `<name>` pomocí šablony velmi krátké vložené stránky. |
 | Prázdné Django webového projektu | Generuje projekt Django se strukturu základní Django lokality, ale žádné aplikace Django. Další informace najdete v tématu [Django šablony](python-django-web-application-project-template.md) a [Learning Django kroku 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| Webový projekt Flask prázdné | Generuje minimální aplikace pomocí jedné "Hello, World!" stránka pro `/`. Tato aplikace je podobná výsledek podrobné kroků v [rychlý start: použití Visual Studio k vytvoření první webové aplikace Python](../ide/quickstart-python.md?context=visualstudio/python/default).
+| Webový projekt Flask prázdné | Generuje minimální aplikace pomocí jedné "Hello, World!" stránka pro `/`. Tato aplikace je podobná výsledek podrobné kroků v [rychlý start: použití Visual Studio k vytvoření první webové aplikace Python](../ide/quickstart-python.md?context=visualstudio/python/default). Viz také [Learning Flask kroku 1](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Skupina webových
 
@@ -51,19 +52,19 @@ Všechny šablony "(Framework) webového projektu" vytvořte úvodní webovou ap
 | --- | --- |
 | Bottle webového projektu | Generuje aplikace, jejichž statické soubory jsou součástí `static` složky a zpracovává prostřednictvím kódu v `app.py`. Směrování pro jednotlivé stránky je součástí `routes.py`a `views` složka obsahuje šablony stránky.|
 | Django webového projektu | Generuje projekt Django a aplikace Django s tři stránky, podpora ověřování a databáze SQLite (ale žádné modely dat). Další informace najdete v tématu [Django šablony](python-django-web-application-project-template.md) a [Learning Django krok 4](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
-| Webový projekt flask | Generuje aplikace, jejichž statické soubory jsou součástí `static` složky. Kód na `views.py` zpracovává směrování s stránky šablony pomocí modulu Jinja součástí `templates` složky. `runserver.py` Soubor poskytuje spuštění kódu. |
-| Webový projekt flask/Jade | Generuje stejné aplikaci jako se šabloně "Webový projekt Flask", ale pomocí modulu Jade ukázka. |
+| Webový projekt flask | Generuje aplikace, jejichž statické soubory jsou součástí `static` složky. Kód na `views.py` zpracovává směrování s stránky šablony pomocí modulu Jinja součástí `templates` složky. `runserver.py` Soubor poskytuje spuštění kódu. V tématu [učení Flask krok 4](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
+| Webový projekt flask/Jade | Generuje stejná aplikace jako s "Webový projekt Flask" šablony ale pro modul ukázka Jinja pomocí Jade rozšíření. |
 
 ### <a name="polls-group"></a>Hlasování skupiny
 
-"Hlasování (framework) webového projektu" šablony vytvořit úvodní webovou aplikaci, pomocí kterého můžete hlasovat uživatele na různých dotazování otázky. Každá aplikace je založen na strukturu šablony projektů "Web" používat ke správě hlasování a odpovědi uživatele databáze. Zahrnout příslušné datové modely aplikace a aplikace na zvláštní stránce ("/ počáteční hodnoty"), načte hlasování z `samples.json` souboru.
+"Hlasování (framework) webového projektu" šablony vytvořit úvodní webovou aplikaci, pomocí kterého můžete hlasovat uživatele na různých dotazování otázky. Každá aplikace je založen na strukturu šablony projektů "Web" používat ke správě hlasování a odpovědi uživatele databáze. Zahrnout příslušné datové modely aplikace a aplikace na zvláštní stránce (/ počáteční hodnoty), načte hlasování z `samples.json` souboru.
 
 | Šablony | Popis |
 | --- | --- |
 | Hlasování Bottle webového projektu | Generuje aplikaci, která se dají spouštět i proti databázi v paměti, MongoDB nebo Azure Table Storage, který je konfigurován pomocí `REPOSITORY_NAME` proměnné prostředí. Datové modely a data store kód jsou součástí `models` složku a `settings.py` soubor obsahuje kód, určit, jaké úložiště dat se používá. |
 | Hlasování Django webového projektu | Generuje projekt Django a aplikace Django s tři stránky a databáze SQLite. Zahrnuje přizpůsobení rozhraní pro správu Django povolit ověřené správce k vytváření a správě hlasování. Další informace najdete v tématu [Django šablony](python-django-web-application-project-template.md) a [Learning Django krok 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
-| Webový projekt Flask hlasování | Generuje aplikaci, která se dají spouštět i proti databázi v paměti, MongoDB nebo Azure Table Storage, který je konfigurován pomocí `REPOSITORY_NAME` proměnné prostředí. Datové modely a data store kód jsou součástí `models` složku a `settings.py` soubor obsahuje kód, určit, jaké úložiště dat se používá. Aplikace používá modul Jinja pro stránku šablony. |
-| Webový projekt Flask/Jade hlasování | Generuje stejné aplikaci jako se šabloně "Hlasovací webový projekt Flask", ale pomocí modulu Jade ukázka. |
+| Webový projekt Flask hlasování | Generuje aplikaci, která se dají spouštět i proti databázi v paměti, MongoDB nebo Azure Table Storage, který je konfigurován pomocí `REPOSITORY_NAME` proměnné prostředí. Datové modely a data store kód jsou součástí `models` složku a `settings.py` soubor obsahuje kód, určit, jaké úložiště dat se používá. Aplikace používá modul Jinja pro stránku šablony. V tématu [učení Flask krok 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
+| Webový projekt Flask/Jade hlasování | Generuje stejná aplikace jako s "Hlasovací webový projekt Flask" šablony ale pro modul ukázka Jinja pomocí Jade rozšíření. |
 
 ## <a name="installing-project-requirements"></a>Požadavky na instalaci projektu
 
@@ -71,7 +72,7 @@ Při vytváření projektu ze šablony konkrétní rozhraní, zobrazí se dialog
 
 ![Dialog, který nainstaluje potřebné balíčky pro šablony projektu](media/template-web-requirements-txt-wizard.png)
 
-Pokud používáte zdrojového kódu, je obvykle vynechat složky pak virtuální prostředí jako prostředí můžete znovu vytvořit pomocí pouze `requirements.txt`. Nejlepší způsob, jak vyloučit složku, je nejprve vybrat **I je nainstaluje sám** v řádku uvedené výše, potom zakázat automatické potvrzení před vytvořením virtuálního prostředí. Podrobnosti najdete v tématu [kurz Django učení - kroky 1 – 2 a 1 – 3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)
+Pokud používáte zdrojového kódu, je obvykle vynechat složky pak virtuální prostředí jako prostředí můžete znovu vytvořit pomocí pouze `requirements.txt`. Nejlepší způsob, jak vyloučit složku, je nejprve vybrat **I je nainstaluje sám** v řádku uvedené výše, potom zakázat automatické potvrzení před vytvořením virtuálního prostředí. Podrobnosti najdete v tématu [kurz Django učení - kroky 1 – 2 a 1 – 3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) a [kurz Flask učení - kroky 1 – 2 a 1 – 3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)
 
 Pokud nasazujete do služby Microsoft Azure App Service, vyberte verzi jazyka Python jako [lokality rozšíření](https://aka.ms/PythonOnAppService) a ručně nainstalujte balíčky. Navíc vzhledem k tomu, že nemá Azure App Service **není** automaticky instalovat balíčky z `requirements.txt` souboru při nasazení ze sady Visual Studio, postupujte podle podrobností konfigurace na [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
@@ -143,7 +144,7 @@ Pokud máte nastavení pro jiná rozhraní, které chcete sdílet, nebo pokud ch
 
 ![Převést na Microsoft Azure cloud service projekt – příkaz](media/template-web-convert-menu.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Referenční příručka šablon položek Python](python-item-templates.md)
 - [Publikování do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

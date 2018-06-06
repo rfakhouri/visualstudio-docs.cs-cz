@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 28ba3f0abd948714e17ef0c69267eb7c1df9162e
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7caabbe6875f6c51b0c84d0bb8f4b5e4e18a10d2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750867"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generování testů částí kódu s IntelliTest
 Jsou zde popsány IntelliTest ke generování testovacích datech a sada testů částí kódu .NET. Pro každý příkaz v kódu, je generována testovací vstup, spustí tento příkaz. Case analýzy se provádí pro každou podmíněného větve v kódu. Například `if` příkazů, kontrolní výrazy a všechny operace, které můžete vyvolat výjimky jsou analyzovány. Této analýze slouží ke generování testovacích dat pro testování částí parametrizované pro každou z vaší metody vytváření testů jednotek s pokrytí vysoké kódu.
@@ -41,15 +42,15 @@ Jsou zde popsány IntelliTest ke generování testovacích datech a sada testů 
 
 2.  Klikněte pravým tlačítkem na metodu ve vašem kódu a vyberte **spustit IntelliTest** pro generování testů částí pro kód ve své metodě.
 
-     ![Pravé&#45;klikněte do metodu pro generování testů částí](../test/media/runpex.png "RunPEX")
+     ![Pravé&#45;klikněte na tlačítko ve své metodě ke generování testů jednotek](../test/media/runpex.png)
 
      IntelliTest spustí kód tolikrát, kolikrát se různé vstupy. Každé spuštění je reprezentována v tabulka zobrazující vstupní testovací data a výsledná výstupní nebo výjimky.
 
-     ![Zobrazí se okno výsledků zkoumání s testy](../test/media/pexexplorationresults.png "PEXExplorationResults")
+     ![Zobrazí se okno výsledků zkoumání pomocí testů](../test/media/pexexplorationresults.png)
 
      Pro generování testů částí pro všechny veřejné metody ve třídě, jednoduše klikněte pravým tlačítkem na třídu, nikoli konkrétní metody. Zvolte **spustit IntelliTest**. Pomocí rozevíracího seznamu v okně výsledky zkoumání můžete zobrazit testy částí a vstupní data pro jednotlivé metody ve třídě.
 
-     ![Výsledky testů, které chcete zobrazit v seznamu vyberte](../test/media/selectpextest.png "SelectPEXTest")
+     ![Vyberte výsledky testů, chcete-li zobrazit ze seznamu](../test/media/selectpextest.png)
 
      Pro testy, které předat, zkontrolujte, zda hlášené výsledky ve sloupci výsledek odpovídat vašim požadavkům na váš kód. Testy, které nesplní opravte kódu podle potřeby. Poté znovu spusťte IntelliTest ověření opravy.
 
@@ -57,11 +58,11 @@ Jsou zde popsány IntelliTest ke generování testovacích datech a sada testů 
 
 1.  Vyberte řádky dat, na které chcete uložit s testu parametrizované jednotek do testovacího projektu.
 
-     ![Vyberte testy; pravé&#45;klikněte a zvolte Uložit](../test/media/savepextests.png "SavePEXTests")
+     ![Vyberte testy; pravé&#45;klikněte a zvolte Uložit](../test/media/savepextests.png)
 
      Můžete si zobrazit k testovacímu projektu a parametrizované jednotky test, který byl vytvořen - testování jednotlivých částí, odpovídající každé řádků, se ukládají do. soubor g.cs k testovacímu projektu a testování částí parametrizované je uložen v jeho odpovídající soubor .cs. Můžete spustit testy jednotek a zobrazit výsledky z Průzkumníka testů, stejně jako pro všechny testy jednotek, které jste vytvořili ručně.
 
-     ![Soubor otevřít třídu v testovací metoda zobrazíte testování částí](../test/media/testmethodpex.png "TestMethodPEX")
+     ![Soubor otevřít třídu v testovací metoda zobrazíte testování částí](../test/media/testmethodpex.png)
 
      Všechny nezbytné odkazy budou přidány také pro projekt test.
 
@@ -73,11 +74,11 @@ Jsou zde popsány IntelliTest ke generování testovacích datech a sada testů 
 
      Zobrazte upozornění k rozhodování, co chcete udělat.
 
-     ![Zobrazit upozornění](../test/media/pexviewwarning.png "PEXViewWarning")
+     ![Zobrazení upozornění](../test/media/pexviewwarning.png)
 
 2.  Po zkoumání kódu a pochopit, co chcete testovat, můžete je vyřešit upozornění zvolit které třídy sloužící k testování rozhraní.
 
-     ![Pravé&#45;klikněte na upozornění a zvolte opravu](../test/media/pexfixwarning.png "PEXFixWarning")
+     ![Pravé&#45;klikněte na upozornění a zvolte oprava](../test/media/pexfixwarning.png)
 
      Tato volba se přidá do souboru PexAssemblyInfo.cs.
 
@@ -85,7 +86,7 @@ Jsou zde popsány IntelliTest ke generování testovacích datech a sada testů 
 
 3.  Nyní můžete znovu spustit IntelliTest testovacích dat pouze pomocí třídy, která je pevná a vygenerování testu parametrizované jednotky.
 
-     ![Znovu spustit IntelliTest ke generování testovacích datech](../test/media/pexwarningsfixed.png "PEXWarningsFixed")
+     ![Znovu spustit IntelliTest ke generování testovacích datech](../test/media/pexwarningsfixed.png)
 
 ## <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Zadejte: Použití IntelliTest ověřit správnost vlastnosti, které zadáte v kódu
 
@@ -131,11 +132,11 @@ Zadejte obecné vztah mezi vstupy a výstupy, které chcete testů generovaného
 
 **Odpověď:** Ano, klikněte pravým tlačítkem na třída nebo metoda, a potom vyberte **vytvořit IntelliTest**.
 
- ![Pravé&#45;klikněte na editor, zvolte Vytvořit IntelliTest](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")
+ ![Pravé&#45;klikněte na editor, zvolte Vytvořit IntelliTest](../test/media/pexcreateintellitest.png)
 
  Přijměte výchozí formát ke generování testů nebo změnit, jak jsou pojmenované projekt a testy. Můžete vytvořit nový projekt testu nebo uložit testů do existujícího projektu.
 
- ![Vytvoření IntelliTest pomocí Mstestu výchozí](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")
+ ![Vytvoření IntelliTest pomocí Mstestu výchozí](../test/media/pexcreateintellitestmstest.png)
 
 <a name="extend-framework"></a>
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Otázka: je možné použít jiné systémů testů jednotek s IntelliTest?
@@ -149,7 +150,7 @@ Test framework – rozšíření jsou k dispozici také v Visual Studio Marketpl
 
 Po restartování sady Visual Studio a znovu otevřete řešení, klikněte pravým tlačítkem na třída nebo metoda, a potom vyberte **vytvořit IntelliTest**. Vyberte nainstalované framework tady:
 
-![Vyberte jiné částí unit test framework pro IntelliTest](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")
+![Vyberte jiné částí unit test framework pro IntelliTest](../test/media/pexcreateintellitestextensions.png)
 
 Spusťte IntelliTest ke generování testování jednotlivých částí v jejich odpovídajících. g.cs soubory.
 

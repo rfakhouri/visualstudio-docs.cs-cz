@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35733a737f10fccab7d9fd6cab350478182b2259
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 329214cded185a15fa1ef21b162955957523f5fc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746998"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Návod: Vytvoření víceúrovňové datové aplikace
 *N-vrstvá* data aplikace jsou aplikace, které přístup k datům a jsou rozdělené do několika logických vrstev, nebo *vrstev*. Rozdělit součásti aplikace do diskrétní úrovní zvyšuje udržovatelnosti a škálovatelnost aplikace. Dělá to tím, že umožňuje snazší přijetí nové technologie, které mohou být použity k jedné vrstvě, aniž by bylo potřeba změnit návrh celého řešení. N-vrstvá architektura obsahuje prezentační vrstvy, střední vrstvy, a datové vrstvy. Střední vrstva obvykle zahrnuje vrstva přístupu k datům, vrstvy obchodní logiky a sdílené komponenty, například ověřování a ověřování. Datová vrstva obsahuje relační databáze. Vícevrstvé aplikace obvykle uložit citlivé informace vrstva přístupu k datům ze střední vrstvě udržovat izolace koncovým uživatelům, kteří přistupují k prezentační vrstvy. Další informace najdete v tématu [vícevrstvé datové aplikace přehled](../data-tools/n-tier-data-applications-overview.md).
@@ -49,7 +50,7 @@ Během tohoto návodu budete provádět následující kroky:
 
 -   Napište kód pro naplnění dat tabulky.
 
-![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") video verzi tohoto tématu naleznete v části [Video postupy: vytvoření datové aplikace s N-vrstvá](http://go.microsoft.com/fwlink/?LinkId=115188).
+![odkaz na video](../data-tools/media/playvideo.gif) video verzi tohoto tématu naleznete v části [Video postupy: vytvoření datové aplikace s N-vrstvá](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Požadavky
 Tento návod používá SQL Server Express LocalDB a ukázková databáze Northwind.
@@ -78,7 +79,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu...** .
 
-2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Classic Desktop**.
+2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Desktop**.
 
 3. V prostředním podokně, vyberte **knihovny tříd** typ projektu.
 
@@ -289,7 +290,7 @@ Tento návod ukazuje, jak přístup úroveň přístupu dat pomocí služby WCF,
 
 1.  Klikněte pravým tlačítkem na řešení v Průzkumníku řešení a zvolte **přidat**, **nový projekt...** .
 
-2.  V **nový projekt** dialogové okno, v levém podokně vyberte **Windows Classic Desktop**. V prostředním podokně vyberte **aplikace pro Windows Forms**.
+2.  V **nový projekt** dialogové okno, v levém podokně vyberte **Windows Desktop**. V prostředním podokně vyberte **aplikace pro Windows Forms**.
 
 3.  Název projektu **PresentationTier** a klikněte na tlačítko **OK**.
 
@@ -378,7 +379,7 @@ Spusťte aplikaci stisknutím **F5**. Data z tabulky Zákazníci a objednávky z
 
 -   Přidejte další metody do služby pro aktualizaci data zpět do databáze.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Práce s datovými sadami ve vícevrstvých aplikacích](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [Hierarchická aktualizace](../data-tools/hierarchical-update.md)

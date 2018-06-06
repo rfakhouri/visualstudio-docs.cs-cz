@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5031481ddf785a85b77747c28d76e79d32a0d599
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748735"
 ---
 # <a name="cpu-and-windows-counters"></a>Čítače procesoru a systému Windows
 
@@ -45,7 +46,7 @@ Visual Studio profiler i nadále podporuje konkrétní události pro konkrétní
 
 Přenosné události jsou skupiny čítačů procesoru, které nejsou specifické pro specifické procesory. Všechny ostatní čítače CPU se nazývají události platformy a nemusí být podporován na různých platformách.
 
- Čítače pro platformu a přenositelností události jsou definovány v. Soubory XML, které jsou k dispozici konkrétní hodnoty, které se vztahují k počítadla. Existuje více souborů pro různé procesory, protože data pro Intel a AMD procesorů, například se liší. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] Profileru používá tuto informaci k příslušné čítače přenositelností a platformy, k dispozici pro uživatele pro měření výkonu.
+ Čítače pro platformu a přenositelností události jsou definovány v. *xml* soubory, které jsou k dispozici konkrétní hodnoty, které se vztahují k počítadla. Existuje více souborů pro různé procesory, protože data pro Intel a AMD procesorů, například se liší. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] Profileru používá tuto informaci k příslušné čítače přenositelností a platformy, k dispozici pro uživatele pro měření výkonu.
 
 ### <a name="portable-events"></a>Přenosné události
 
@@ -78,7 +79,7 @@ Přenosné události obsahují následující události:
 |L2 Neúspěšné přístupy mezipaměti pro čtení|Označuje, že počet druhé úrovně mezipaměti čtení neúspěšných přístupů.|
 |L2 Mezipaměti pro čtení odkazy|Označuje, že počet druhé úrovně mezipaměti čtení odkazy. Zahrnuje neúspěchy zatížení a číst pro neúspěchy vlastnictví (předpisy RRO) a přístupů.|
 
-## <a name="viewing-available-counters"></a>Zobrazení k dispozici čítače
+## <a name="view-available-counters"></a>Zobrazení k dispozici čítače
 
 V okně příkazového řádku, můžete vytvořit seznam na k dispozici čítače CPU v prostředí Visual Studio IDE.
 
@@ -126,13 +127,13 @@ Pomocí [VSPerfCmd](../profiling/vsperfcmd.md) nástroj příkazového řádku, 
 
      **\<Visual Studio výkonu nástroje Directory > \VSPerfCmd /querycounters**
 
-     kde  **\<Visual Studio výkonu nástroje Directory >** obvykle představuje cestu k adresáři nástroje pro sledování výkonu instalace sady Visual Studio
+     kde  *\<Visual Studio výkonu nástroje Directory >* obvykle představuje cestu k adresáři nástroje pro sledování výkonu instalace sady Visual Studio
 
-     C:\Program Files\Microsoft Visual Studio 10.0\Team nástroje nástroje
+     *C:\Program Files\Microsoft Visual Studio 10.0\Team nástroje nástroje*
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 [Přehledy](../profiling/overviews-performance-tools.md)  
-[Postupy: výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md)  
-[Postupy: shromažďování dat čítačů procesoru](../profiling/how-to-collect-cpu-counter-data.md)  
-[Postupy: Shromažďování dat čítačů Windows](../profiling/how-to-collect-windows-counter-data.md)
+[Postupy: Výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md)  
+[Postupy: Shromažďování dat čítačů procesoru](../profiling/how-to-collect-cpu-counter-data.md)  
+[Postupy: shromažďování dat čítačů Windows](../profiling/how-to-collect-windows-counter-data.md)

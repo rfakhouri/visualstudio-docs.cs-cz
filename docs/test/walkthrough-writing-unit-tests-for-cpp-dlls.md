@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 290eebefbe02284222278fd665ce87fb0db0e010
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751829"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Postupy: zápis testů částí pro C++ – knihovny DLL
 
@@ -45,11 +46,11 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
 
      V tomto návodu k testovacímu projektu jmenuje `NativeRooterTest`.
 
-     ![Vytvoření projektu testování částí C++](../test/media/utecpp01.png "UteCpp01")
+     ![Vytvoření projektu testování částí C++](../test/media/utecpp01.png)
 
 2.  V novém projektu, zkontrolujte **unittest1.cpp**
 
-     ![Testovacího projektu s testovací&#95;třídy a testovací&#95;metoda](../test/media/utecpp2.png "UteCpp2")
+     ![Testovacího projektu s testovací&#95;třídy a testovací&#95;– metoda](../test/media/utecpp2.png)
 
      Všimněte si, že:
 
@@ -82,7 +83,7 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
 
          Test se zobrazí pod **předán testy**.
 
-         ![Jednotka testování Explorer se jeden předaný test](../test/media/utecpp04.png "UteCpp04")
+         ![Jednotka testování Explorer se jeden předaný test](../test/media/utecpp04.png)
 
 ##  <a name="create_dll_project"></a> Vytvoření projektu knihovny DLL
 
@@ -90,17 +91,17 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
 
      V tomto návodu je projekt s názvem `RootFinder`.
 
-     ![Vytvoření projektu C++ Win32](../test/media/utecpp05.png "UteCpp05")
+     ![Vytvoření projektu C++ Win32](../test/media/utecpp05.png)
 
 2.  Vyberte **DLL** a **exportovat symboly** v Průvodci aplikace Win32.
 
      **Exportovat symboly** možnost generuje pohodlný makro, které můžete použít k deklaraci exportovaný metody.
 
-     ![C++ – Průvodce projektem nastavení pro knihovnu DLL a exportovat symboly](../test/media/utecpp06.png "UteCpp06")
+     ![Nastavení pro knihovnu DLL a exportovat symboly C++ – Průvodce projektem](../test/media/utecpp06.png)
 
 3.  Deklarujte exportované funkce v souboru hlavní h:
 
-     ![Nový kód projektu a .h souboru DLL pomocí rozhraní API makra](../test/media/utecpp07.png "UteCpp07")
+     ![Nový kód projektu a .h souboru DLL pomocí rozhraní API makra](../test/media/utecpp07.png)
 
      Deklarátor `__declspec(dllexport)` způsobí, že veřejné a chráněné členy třídy viditelné mimo knihovnu DLL. Další informace najdete v tématu [používání příkazů dllimport a dllexport ve třídách jazyka C++](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
@@ -120,13 +121,13 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
 
     1.  Otevřete vlastnosti k testovacímu projektu a zvolte **společných vlastností**, **Framework a odkazy na**.
 
-         ![Vlastnosti projektu C++ | Architektura a odkazy na](../test/media/utecpp08.png "UteCpp08")
+         ![Vlastnosti projektu C++ | Architektura a odkazy](../test/media/utecpp08.png)
 
     2.  Zvolte **přidat nový odkaz**.
 
          V **přidat odkaz na** dialogovém okně vyberte projektu knihovny DLL a zvolte **přidat**.
 
-         ![Vlastnosti projektu C++ | Přidat nový odkaz](../test/media/utecpp09.png "UteCpp09")
+         ![Vlastnosti projektu C++ | Přidat nový odkaz](../test/media/utecpp09.png)
 
 2.  V souboru hlavní jednotky testovací sada zahrňte soubor hlaviček kód knihovny DLL:
 
@@ -160,7 +161,7 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
 
 5.  V Průzkumníku testu zvolte **spustit všechny**.
 
-     ![Průzkumníka testů jednotek &#45; základní Test proběhl](../test/media/utecpp10.png "UteCpp10")
+     ![Průzkumníka testů jednotek &#45; základní Test proběhl](../test/media/utecpp10.png)
 
  Máte nastavení testu a projektů kód a ověřit, že můžete spustit testy, které běží funkce v projektu kódu. Teď můžete začít zapisovat skutečné testy a kódu.
 
@@ -189,7 +190,7 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
 
      Nový test se nezdaří.
 
-     ![Selhání RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest selže](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Ověřte, že každý test se nezdaří, ihned po jeho jste napsali. To umožňuje vyhnout se snadno chybu zápisu testu, který nikdy selže.
@@ -217,7 +218,7 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
 
      Oba testy byly úspěšné.
 
-     ![Průzkumníka testů jednotek &#45; rozsah Test proběhl](../test/media/utecpp12.png "UteCpp12")
+     ![Průzkumníka testů jednotek &#45; rozsah Test proběhl](../test/media/utecpp12.png)
 
     > [!TIP]
     > Vývoj kódu přidáním testy jeden najednou. Ujistěte se, že všechny testy byly úspěšné po každé iteraci.
@@ -263,7 +264,7 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
 
      Je označený selhání kontrolního výrazu. Zpráva o neúspěšném zpracování je zobrazen v podokně podrobností Průzkumníka testů.
 
-     ![NegativeRangeTests se nezdařilo](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests se nezdařilo](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 4.  Chcete-li zjistit, proč test se nezdaří, kroku prostřednictvím funkce:
 
@@ -291,10 +292,10 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
 
 6.  Všechny testy byly úspěšné teď.
 
-     ![Všechny testy byly úspěšné](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+     ![Všechny testy byly úspěšné](../test/media/ute_ult_alltestspass.png)
 
 > [!TIP]
-> Pokud jednotlivé testy žádné závislosti, které je zabránit spouštění v libovolném pořadí, zapnout spuštění testu paralelní s ![UTE&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný k spustit všechny testy.
+> Pokud jednotlivé testy žádné závislosti, které je zabránit spouštění v libovolném pořadí, zapnout spuštění testu paralelní s ![UTE&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png) přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný k spustit všechny testy.
 
 
 ##  <a name="refactor"></a> Refaktorovat kód beze změny testů
@@ -326,7 +327,7 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
 
      Můžete také vyžádá minimální úroveň pokrytí kódu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přidání testů částí do stávajících aplikací C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
 - [Using Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)

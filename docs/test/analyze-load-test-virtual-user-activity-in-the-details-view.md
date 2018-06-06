@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e422bb2129b1446a336286d8436a7828b67c1653
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c91cd1a2ea721743c289b6664ddd0a76ceedbc4f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750835"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analýza aktivity virtuálních uživatelů v rámci zátěžového testu v podrobném zobrazení analyzéru zátěžového testu
 
 **Graf aktivity virtuálního uživatele**
 
- ![Graf aktivity virtuálního uživatele](../test/media/virtual_actchart.png "Virtual_ActChart")
+ ![Graf aktivity virtuálního uživatele](../test/media/virtual_actchart.png)
 
  Zobrazení podrobností se zobrazí virtuální graf aktivity uživatele, který se používá k vizuálně analyzovat, co jednotlivé virtuálních uživatelů při zatížení otestovat. Graf aktivity virtuálního uživatele umožňuje najdete v části vzory aktivity uživatelů, vzory zátěže, korelovat testy selhání nebo pomalé a najdete v části požadavky, které ostatní aktivity virtuálních uživatelů. Grafu aktivity virtuálního uživatele také vám pomohou určit špičky využití procesoru, vyřazuje v požadavků za sekundu a jaké testů nebo stránky běžely během špičky a hodnota neklesne.
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 
  **Panel podrobnosti legendy**
 
- ![Podrobnosti legendy panely](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+ ![Panel podrobnosti legendy](../test/media/ltest_detailslegend.png)
 
  Panel podrobností legendy je viditelný v grafu aktivity virtuálního uživatele. Podrobnosti o umožňuje podokně legendy, filtrovat testy, stránky a transakce na základě několika různých kritérií. Můžete například odebrat určité testy ze zobrazení, nebo odeberte všechny testy úspěšné nebo odeberte testy, které se nezdařilo s určitým chybám. Rovněž můžete odebrat všechny testy, které nemají protokoly.
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/26/2018
 
  **Filtrování výsledků panely**
 
- ![Filtrovat výsledky panely](../test/media/ltest_filterresults.png "LTest_FilterResults")
+ ![Výsledky panel Filtr](../test/media/ltest_filterresults.png)
 
  Panel výsledky filtr je viditelný v grafu aktivity virtuálního uživatele. Panel Filtr výsledky můžete filtrovat podle následující:
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/26/2018
 |**Zobrazení výsledků testu zatížení, které obsahují data aktivity virtuálních uživatelů:** po zátěžový test byly vytvořeny, konfigurovány a dokončení běhu, můžete zobrazit data aktivit virtuálních uživatelů pomocí grafu aktivity virtuálního uživatele.|-   [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Postupy: analýza, co dělají virtuálních uživatelů během zátěžového testu](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
 |**Izolovat problémy s výkonem v zátěžových testech:** grafu aktivity virtuálního uživatele můžete izolovat problémy s výkonem v zátěžovém testu.|-   [Návod: Izolace problémů pomocí graf aktivity virtuálního uživatele](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

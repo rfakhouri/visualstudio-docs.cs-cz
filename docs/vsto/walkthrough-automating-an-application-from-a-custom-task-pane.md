@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Automatizace aplikace z vlastního podokna úloh | Microsoft Docs'
+title: 'Návod: Automatizace aplikace z vlastního podokna úloh'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7269690e9ab7835f355939340d6c91dc56dd008
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7af399ca55c1fc2355da508662fe67314a519070
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768076"
 ---
-# <a name="walkthrough-automating-an-application-from-a-custom-task-pane"></a>Návod: Automatizace aplikace z vlastního podokna úloh
+# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Návod: Automatizace aplikace z vlastního podokna úloh
   Tento návod ukazuje postup vytvoření vlastního podokna úloh umožňuje automatizovat PowerPoint. Vlastního podokna úloh vloží data do snímku, když uživatel klikne <xref:System.Windows.Forms.MonthCalendar> ovládací prvek, který je v podokně úloh.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -51,16 +52,16 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft PowerPoint 2010 nebo [!INCLUDE[PowerPoint_15_short](../vsto/includes/powerpoint-15-short-md.md)].  
   
-## <a name="creating-the-add-in-project"></a>Vytvoření projektu doplňku  
+## <a name="create-the-add-in-project"></a>Vytvoření projektu doplňku  
  Prvním krokem je vytvoření projektu doplňku VSTO pro PowerPoint.  
   
-#### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
+### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
-1.  Vytvoření projektu doplňku VSTO pro PowerPoint s názvem **MyAddIn**, a to pomocí šablony projektu doplňku PowerPoint. Další informace najdete v tématu [postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Vytvoření projektu doplňku VSTO pro PowerPoint s názvem **MyAddIn**, a to pomocí šablony projektu doplňku PowerPoint. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře se **ThisAddIn.cs** nebo **ThisAddIn.vb** kód soubor a přidá **MyAddIn** projektu do **Průzkumníku řešení**.  
   
-## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Návrh uživatelského rozhraní vlastního podokna úloh  
+## <a name="design-the-user-interface-of-the-custom-task-pane"></a>Návrh uživatelského rozhraní vlastního podokna úloh  
  Neexistuje žádné vizuálního návrháře pro vlastní podokna úloh, ale můžete navrhnout uživatelský ovládací prvek pro rozložení, které chcete. Dále v tomto návodu přidáte vlastního podokna úloh uživatelského ovládacího prvku.  
   
 #### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Návrh uživatelského rozhraní vlastního podokna úloh  
@@ -75,10 +76,10 @@ ms.lasthandoff: 04/16/2018
   
      Pokud **MonthCalendar** ovládací prvek je větší než návrhové ploše uživatelského ovládacího prvku, změnit velikost uživatelského ovládacího prvku přizpůsobit **MonthCalendar** ovládacího prvku.  
   
-## <a name="automating-powerpoint-from-the-custom-task-pane"></a>Automatizace aplikace PowerPoint z vlastního podokna úloh  
+## <a name="automate-powerpoint-from-the-custom-task-pane"></a>Automatizovat PowerPoint z vlastního podokna úloh  
  Účelem doplňku VSTO je uvést vybraným datem na prvním snímku aktivní prezentace. Použití <xref:System.Windows.Forms.MonthCalendar.DateChanged> události ovládacího prvku přidat vybraným datem vždy, když se změní.  
   
-#### <a name="to-automate-powerpoint-from-the-custom-task-pane"></a>K automatizaci PowerPoint z vlastního podokna úloh  
+### <a name="to-automate-powerpoint-from-the-custom-task-pane"></a>K automatizaci PowerPoint z vlastního podokna úloh  
   
 1.  V návrháři, dvakrát klikněte <xref:System.Windows.Forms.MonthCalendar> ovládacího prvku.  
   
@@ -101,10 +102,10 @@ ms.lasthandoff: 04/16/2018
   
 5.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **MyAddIn** projektu a pak klikněte na **sestavení**. Ověřte, že sestavení projektu bez chyb.  
   
-## <a name="displaying-the-custom-task-pane"></a>Zobrazení vlastního podokna úloh  
+## <a name="display-the-custom-task-pane"></a>Zobrazení vlastního podokna úloh  
  K zobrazení vlastního podokna úloh při doplňku VSTO spuštění, přidat uživatelský ovládací prvek do podokna úloh v <xref:Microsoft.Office.Tools.AddIn.Startup> obslužné rutiny události z doplňku VSTO.  
   
-#### <a name="to-display-the-custom-task-pane"></a>Chcete-li zobrazit vlastního podokna úloh  
+### <a name="to-display-the-custom-task-pane"></a>Chcete-li zobrazit vlastního podokna úloh  
   
 1.  V **Průzkumníku řešení**, rozbalte položku **PowerPoint**.  
   
@@ -120,12 +121,12 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#5)]
      [!code-csharp[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#5)]  
   
-## <a name="testing-the-add-in"></a>Testování v aplikaci  
+## <a name="test-the-add-in"></a>Testování v aplikaci  
  Po spuštění projektu PowerPoint se doplňku VSTO zobrazí vlastního podokna úloh. Klikněte <xref:System.Windows.Forms.MonthCalendar> řízení k testování kódu.  
   
-#### <a name="to-test-your-vsto-add-in"></a>K testování vaší doplňku VSTO  
+### <a name="to-test-your-vsto-add-in"></a>K testování vaší doplňku VSTO  
   
-1.  Stisknutím klávesy F5 spusťte projekt.  
+1.  Stiskněte klávesu **F5** ke spuštění projektu.  
   
 2.  Potvrďte, že vlastního podokna úloh je zobrazen.  
   
@@ -140,12 +141,12 @@ ms.lasthandoff: 04/16/2018
   
 -   Vytvoří tlačítko pásu karet, které lze použít ke skrytí nebo zobrazení vlastního podokna úloh. Další informace najdete v tématu [návod: synchronizace vlastního podokna úloh s tlačítkem pásu karet](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
--   Vytvoření vlastního podokna úloh pro každý e-mailová zpráva, která je otevřen v aplikaci Outlook. Další informace najdete v tématu [návod: zobrazení vlastních podoken s e-mailových zpráv v aplikaci Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Vytvoření vlastního podokna úloh pro každý e-mailová zpráva, která je otevřen v aplikaci Outlook. Další informace najdete v tématu [návod: zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Vlastní podokna úloh](../vsto/custom-task-panes.md)   
  [Postupy: Přidání vlastního podokna úloh do aplikace](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [Návod: Synchronizace vlastního podokna úloh s tlačítkem pásu karet](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
- [Návod: Zobrazení vlastních podoken úloh s e-mailovými zprávami v aplikaci Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+ [Návod: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
   
   

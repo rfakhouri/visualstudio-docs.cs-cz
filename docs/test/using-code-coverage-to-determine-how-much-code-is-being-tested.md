@@ -15,11 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ec694fc904df2fd15ada008d9cb9f64f1df8492e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752089"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Použití pokrytí kódu k určení, kolik kódu se testuje
 
@@ -84,7 +85,7 @@ V některých situacích se na základě testovacích dat použijí různé blo
 
  Například při spuštění testu se vstupem „2“ je zjištěno 50% pokrytí určité funkce. Při druhém spuštění testu se vstupem „-2“ se v okně pokrytí zobrazí pokrytí zbylých 50 % funkce. Po sloučení výsledků těchto dvou testovacích běhů ukáže sestava i vybarvení 100% pokrytí funkce.
 
- Použití ![ikony pro tlačítko sloučení v okně pokrytí kódu](../test/media/codecoverage-mergeicon.png "CodeCoverage MergeIcon")**sloučení výsledky pokrytí kódu** k tomu. Ke sloučení je možné použít libovolnou kombinaci předešlých běhů nebo importovaných výsledků. Pokud je potřeba sloučit exportované výsledky, je nejprve nutné je importovat.
+ Použití ![ikony pro tlačítko sloučení v okně pokrytí kódu](../test/media/codecoverage-mergeicon.png)**sloučení výsledky pokrytí kódu** k tomu. Ke sloučení je možné použít libovolnou kombinaci předešlých běhů nebo importovaných výsledků. Pokud je potřeba sloučit exportované výsledky, je nejprve nutné je importovat.
 
  Použití **exportovat výsledky pokrytí kódu** uložte výsledky operace sloučení.
 
@@ -258,7 +259,7 @@ Při vrácení kódu se změnami jsou testy spuštěny na serveru sestavení spo
 
    Pokud máte více než jednu definici Zdroje testu, opakujte tento krok pro každou z nich.
 
-   ![Nastavení definici sestavení pro pokrytí kódu](../test/media/codecoverage-plaincc.png "CodeCoverage plainCC")
+   ![Nastavení definici sestavení pro pokrytí kódu](../test/media/codecoverage-plaincc.png)
 
 > [!TIP]
 > Pokud není k dispozici žádné pole s názvem **typ spuštění nastavení souboru**, změnit **Test Runner** vlastnost. V části **automatizovaných testů**, vyberte **testovací sestavení** a zvolte tlačítko se třemi tečkami **[...]**  na konci řádku. V **spuštění testu, přidat či upravit** dialogovém **Test Runner**, zvolte **Visual Studio Test Runner**.
@@ -281,7 +282,7 @@ Pro spuštění testů z příkazového řádku se používá příkaz vstest.c
 
 Pokud se nezobrazí výsledky pokrytí kódu, [řešení potíží s pokrytí kódu](../test/troubleshooting-code-coverage.md) tématu vám můžou pomoct.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md)
 - [Poradce při potížích s pokrytím kódu](../test/troubleshooting-code-coverage.md)

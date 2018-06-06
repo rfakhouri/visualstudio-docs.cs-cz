@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1a9d878ee8b5384784ba77cb6de2d9eee1289d0c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34469008"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750503"
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Kurz – krok 2: vytvoření aplikace Django s zobrazení a stránka šablony
 
@@ -107,7 +107,7 @@ V tomto bodu, pokud znovu spusťte projekt v sadě Visual Studio (pomocí tlač�
 
 Protože jste udělali změny kódu a jejich otestovali úspěšně, teď je nejvhodnější doba ke kontrole a uložte provedené změny do správy zdrojového kódu. Pozdější kroky v tomto kurzu vám připomene příslušná doba potvrzení znovu do správy zdrojového kódu a odkazovat zpět do této části.
 
-1. Vyberte tlačítko změn ve spodní části sady Visual Studio (kroužky níže), která přejde na **Team Explorer**.
+1. Kliknutím na tlačítko změny ve spodní části Visual Studio (v kroužku níže), která přejde na **Team Explorer**.
 
     ![Tlačítko změny zdroj ovládacího prvku na stavovém řádku Visual Studio](media/django/step02-source-control-changes-button.png)
 
@@ -211,9 +211,7 @@ Následující kroky ukazují použití šablon stránky:
 
 1. Spusťte projekt a sledovat výstup. Měli byste vidět podobná zpráva k této zaznamenané kroku 2-2, což indikuje, že šablona funguje.
 
-    Sledovat, ale, že HTML, můžete používat ve `content` vlastnost vykreslí pouze jako prostý text, protože `render` funkce automaticky řídicí sekvence této HTML. I když můžete získat kolem uvozovací znaky, v ideálním případě byste neměli používat vložené HTML na prvním místě. Formátování a styly se nejlépe uchovává se v šabloně stránky není v kódu, a je jednoduché, chcete-li vytvořit další proměnné tam, kde je potřeba.
-
-    Můžete například změnit `templates/index.html` tak, aby odpovídala následující kód, který přidá název stránky a udržuje všechny formátování v šabloně stránky:
+    Sledovat, ale, že HTML, můžete používat ve `content` vlastnost vykreslí pouze jako prostý text, protože `render` funkce automaticky řídicí sekvence této HTML. Automatické uvozovací znaky zabránit náhodnému ohrožení zabezpečení prostřednictvím injektáže: vývojáři často shromažďovat vstup z jedné stránky a použít jako hodnotu v jiném prostřednictvím zástupný text šablony. Uvozovací znaky slouží také jako připomenutí, že je znovu nejlepší mít HTML v šabloně stránky a mimo kód. Naštěstí je jednoduché, chcete-li vytvořit další proměnné tam, kde je potřeba. Můžete například změnit `templates/index.html` tak, aby odpovídala následující kód, který přidá název stránky a udržuje všechny formátování v šabloně stránky:
 
     ```html
     <html>

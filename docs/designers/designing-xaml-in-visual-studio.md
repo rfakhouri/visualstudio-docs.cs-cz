@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c4ebc75ccd436b36e6f96bdc94372ee37b048989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6eb91664c78f3c11039f519a306e55a76f9c8e5a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745721"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Návrh XAML v sadě Visual Studio
 
@@ -37,7 +38,7 @@ Pro nejzákladnější úkoly rozhraní IDE pro sadu Visual Studio a nástroj Bl
 
 - **Konzistentní uživatelské rozhraní:** můžete navrhnout vaše aplikace v rámci známé kontextu uživatelského rozhraní sady Visual Studio, takže je přepínání mezi integrovaného vývojového prostředí více příjemný a produktivní prostředí. Blendu pro Visual Studio používá Visual Studio tmavý motiv, který umožňuje zaměřit se na obsah, který navrhujete vylepšením kontrast mezi obsahem a uživatelské rozhraní. V tématu [vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-     ![Blend for Visual Studio IDE](../designers/media/blendide.png "BlendIDE")
+     ![Blend for Visual Studio – sada IDE](../designers/media/blendide.png)
 
 - **XAML IntelliSense:** jak integrovaného vývojového prostředí podporovat všechny běžné funkce, které očekáváte od včetně dokončování příkazů, podporu pro běžné operace editoru, jako při psaní komentářů a formátování kódu a navigace k prostředkům, IntelliSense vazba a kód.
 
@@ -45,7 +46,7 @@ Pro nejzákladnější úkoly rozhraní IDE pro sadu Visual Studio a nástroj Bl
 
 - **Soubor znovu načíst zkušeností:** vaše soubory XAML v buď Blend for Visual Studio nebo Visual Studio můžete upravit, a mít upravených souborů znovu načtěte automaticky jak přepínat mezi nimi. Chcete-li minimalizovat přerušení pracovního postupu, můžete teď můžete nastavit váš soubor předvolby opětovného načtení v dialogovém okně znovu načíst soubor.
 
-     ![Soubor znovu načíst prostředí](../designers/media/blendfilereload.png "BlendFileReload")
+     ![Soubor znovu načíst prostředí](../designers/media/blendfilereload.png)
 
 - **Synchronizovat rozložení a nastavení:** vlastní rozložení umožňují uložit a použít nástroj přizpůsobení rozložení oken. Visual Studio se synchronizují tyto úpravy a předvolby pro Visual Studio a Blend for Visual Studio mezi počítači, když se přihlásíte pomocí stejného účtu Microsoft. V tématu [přizpůsobení sady Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).
 

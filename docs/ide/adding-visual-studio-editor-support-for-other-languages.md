@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f3178738b707069fdf885c9821b7b7f1e17b246c
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 3e139fe1858772ed0505f774ce4c36e00bc059e0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746123"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Přidání podpory editoru Visual Studio pro jiné jazyky
 
@@ -32,7 +33,7 @@ Další informace o tom, jak editoru Visual Studio podporuje čtení a procháze
 
 Funkce v editoru Visual Studio například zabarvení syntaxe, dokončování a přejít na vám může pomoct další snadno číst, vytvářet a upravovat kód. Následující snímek obrazovky ukazuje příklad úpravy skript Perl v sadě Visual Studio. Syntaxe je automaticky obarvené. Například poznámky v kódu, se zobrazí zeleně, je kód černé, cest red a příkazy jsou modré. Editoru Visual Studio automaticky použije zabarvení syntaxe pro žádný jazyk, kterou podporuje. Kromě toho, abyste před zahájením zadejte známé jazyk – klíčové slovo nebo objekt, dokončování zobrazí seznam možných příkazy a objektů. Dokončování příkazů můžete vytvořit kód více snadno a rychle.
 
-![Zabarvení syntaxe ve skriptu Perl](../ide/media/vside_perledit.png "VSIDE_PerlEdit")
+![Zabarvení syntaxe ve skriptu Perl](../ide/media/vside_perledit.png)
 
 Visual Studio teď poskytuje, zabarvení syntaxe a základní dokončování podporu pro následující jazyky pomocí [TextMate gramatika](https://manual.macromates.com/en/language_grammars). Pokud váš oblíbený jazyk není v tabulce, ale Nebojte – můžete ho přidat.
 
@@ -85,7 +86,7 @@ V systému Windows *% userprofile %* přeloží cestu: *c:\Users\\\<uživatelsk�
 
 Podrobnosti o tom, jak vytvořit TextMate gramatika najdete v tématu [TextMate – Úvod do gramatika jazyka: vložené tom, jak přidat zvýraznění syntaxe zdrojového kódu ve formátu HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) a [poznámky o tom, jak vytvořit gramatika jazyka a vlastní Motiv pro sady Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md)
 - [Návod: Zobrazení dokončování](../extensibility/walkthrough-displaying-statement-completion.md)

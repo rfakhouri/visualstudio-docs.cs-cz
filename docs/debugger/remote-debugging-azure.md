@@ -12,11 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 202e9ce6e0a53c6967ebe1bacaa6553a1241298e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: a4e03f9a369959a5736d7030a1dac885771d7984
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746764"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Vzdálené ladění jádra ASP.NET ve službě IIS v Azure v Visual Studio 2017
 
@@ -73,7 +74,7 @@ Ze sady Visual Studio můžete rychle publikovat a ladění aplikace do zcela z�
 
     Podrobné pokyny najdete v tématu [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
-    ![Publikování do služby Azure App Service](../debugger/media/remotedbg_azure_app_service_profile.png)
+    ![Publikování do Azure App Service](../debugger/media/remotedbg_azure_app_service_profile.png)
 
 1. Otevřete **Průzkumníka serveru** (**zobrazení** > **Průzkumníka serveru**), klikněte pravým tlačítkem myši na instanci služby App Service a zvolte **připojit ladicí program**.
 
@@ -196,7 +197,7 @@ Pokud máte potíže při otevření stránky s stahování vzdáleného ladicí
 
 ### <a name="BKMK_attach"></a> Připojení k aplikaci ASP.NET z počítače, Visual Studio
 
-1. Otevřete v sadě Visual Studio počítači, **MyASPApp** řešení.
+1. Na počítači, Visual Studio, otevřete řešení, které se pokoušíte ladění (**MyASPApp** pokud postupujete podle kroků v tomto článku).
 2. V sadě Visual Studio, klikněte na tlačítko **ladění > připojit k procesu** (Ctrl + Alt + P).
 
     > [!TIP]

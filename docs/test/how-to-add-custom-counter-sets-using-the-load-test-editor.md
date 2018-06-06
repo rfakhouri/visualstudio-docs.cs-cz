@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bd58cc29368ed66d3dd8c35fa4bdf3c87aa6a747
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 862afc0755e8d478d5e8bca76019abd899d842f8
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752011"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Postupy: Přidání vlastních sad čítačů pomocí editoru zátěžových testů
 
@@ -27,7 +28,7 @@ Když vytvoříte zátěžový test pomocí **načíst testování Průvodce nov
 
 Spravovat vaše čítače v **editoru zátěžových testů**. Sady čítačů, které již byly přidány k testovací jsou viditelné v **nastaví čítač** pracovního zátěžového testu. Po vytvoření zátěžového testu k němu lze přidat nové vlastní sady čítačů.
 
-![Sada vlastní čítačů](../test/media/loadtestcustomcounter.png "LoadTestCustomCounter")
+![Vlastní sada čítačů](../test/media/loadtestcustomcounter.png)
 
 ## <a name="to-add-a-custom-counter-set-to-a-load-test"></a>Přidání vlastní sady čítačů k zátěžovému testu
 
@@ -45,7 +46,7 @@ Spravovat vaše čítače v **editoru zátěžových testů**. Sady čítačů, 
     > [!NOTE]
     > Vlastní sadu čítačů lze také přidat kliknutím pravým tlačítkem myši na existující sadu čítačů, výběrem příkazu kopírování a následným vložením do uzlu sad čítačů. Další čítače, které jsou zkopírovány, ale nejsou vyžadovány, je možné odstranit. Můžete změnit název nové sady pomocí čítačů **vlastnosti** okno.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Určení sad čítačů a mezních pravidel pro počítače v zátěžovém testu](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Konfigurace běhu zátěžových testů](../test/configure-load-test-run-settings.md)

@@ -15,11 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c4851577a62db08e2c759f7140895e15b230ec60
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 49d33858970eebd9231eac35d4e4e58999771ae1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748895"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Postupy: Vytváření řešení jazyka specifického pro doménu
 Jazyk specifické pro doménu (DSL) je vytvořená pomocí specializované [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení.
@@ -58,7 +59,7 @@ Jazyk specifické pro doménu (DSL) je vytvořená pomocí specializované [!INC
         > [!NOTE]
         >  Název, který zadáte ideálně by měl být platný Visual C# identifikátor, protože může být použit pro generování kódu.
 
-     ![Dialogové okno DSL vytvořit](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Dialogové okno DSL vytvořit](../modeling/media/create_dsldialog.png)
 
 2.  Vyberte šablonu DSL.
 
@@ -130,7 +131,7 @@ Tato výchozí název skládá z vaší společnosti a názvy produktů.
 
  Další informace o silné názvy najdete v tématu [vytvoření a použití sestavení](http://go.microsoft.com/fwlink/?LinkId=186073).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md)
 - [Glosář nástroje jazyka domény](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

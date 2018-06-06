@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6c47739b2f6de55ea51a2a00ffc90aec696e8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747226"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifikovat a přizpůsobení klávesových zkratek v sadě Visual Studio
 
@@ -48,7 +49,7 @@ Pokud je klávesová zkratka přiřazena k příkazu v globálním kontextu a be
 
 2. Rozbalte položku **prostředí**a potom zvolte **klávesnice**.
 
-   ![Zobrazit klávesové zkratky v dialogovém okně Možnosti](../ide/media/optionskeyboard.png "OptionsKeyboard")
+   ![Zobrazit klávesové zkratky v dialogové okno Možnosti](../ide/media/optionskeyboard.png)
 
 3. V **zobrazit příkazy obsahující** zadejte část nebo celý název příkazu bez mezer.
 
@@ -60,7 +61,7 @@ Pokud je klávesová zkratka přiřazena k příkazu v globálním kontextu a be
 
 5. Pokud příkaz obsahuje klávesové zkratky, zobrazí se v **zástupce pro vybraný příkaz** seznamu.
 
-   ![Zobrazení zástupce pro zadaný příkaz](../ide/media/viewshortcut.png "ViewShortcut")
+   ![Zobrazení zástupce pro zadaný příkaz](../ide/media/viewshortcut.png)
 
 ## <a name="customize-a-keyboard-shortcut"></a>Přizpůsobení klávesové zkratky
 
@@ -86,7 +87,7 @@ Pokud je klávesová zkratka přiřazena k příkazu v globálním kontextu a be
 
      Pokud zástupce je již přiřazen do jiného příkazu, zobrazí se v **zástupce aktuálně používané** pole. V takovém případě zvolte **Backspace** klíč odstranit tento zástupce, než se pokusíte jiný.
 
-    ![Zadejte jiný zástupce pro příkaz](../ide/media/reassignshortcut.png "ReassignShortcut")
+    ![Zadejte jiný zástupce pro příkaz](../ide/media/reassignshortcut.png)
 
 7. Vyberte **přiřadit** tlačítko.
 
@@ -107,7 +108,7 @@ Vlastní klávesové zkratky je možné sdílet exportováním do souboru a pře
 
 4. Vyberte **klávesnice** zaškrtněte políčko a potom vyberte **Další** tlačítko.
 
-    ![Export pouze přizpůsobené klávesové zkratky](../ide/media/exportshortcuts.png "ExportShortcuts")
+    ![Exportovat jenom vlastní klávesové zkratky](../ide/media/exportshortcuts.png)
 
 5. V **co chcete název souboru nastavení?** a **uložit soubor s nastaveními v tomto adresáři** polí buď ponechte výchozí hodnoty nebo zadejte jiné hodnoty a potom vyberte  **Dokončit** tlačítko.
 
@@ -129,8 +130,8 @@ Vlastní klávesové zkratky je možné sdílet exportováním do souboru a pře
 
 7. Vyberte **klávesnice** zaškrtněte políčko a potom vyberte **Dokončit** tlačítko.
 
-    ![Importovat pouze přizpůsobené klávesové zkratky](../ide/media/importshortcuts.png "ImportShortcuts")
+    ![Importovat pouze vlastní klávesové zkratky](../ide/media/importshortcuts.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Funkce pro usnadnění přístupu sady Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

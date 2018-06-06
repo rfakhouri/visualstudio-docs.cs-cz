@@ -14,17 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c996e0e896a125a0d0ab9342e63b81ad2b9b24
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 17d95ed3ceeaa93110fa17b301e8d37ed87f073d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766240"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Rychlý úvod: Vytvoření první aplikace konzoly v sadě Visual Studio s jazykem Visual Basic
 
 V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou aplikaci jazyka Visual Basic, která běží na konzole.
 
-Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránky instalaci zdarma.
+Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
@@ -32,7 +33,7 @@ Nejdřív vytvoříte projekt aplikace Visual Basic. Typ projektu se dodává s 
 
 1. Otevřete Visual Studio 2017.
 
-2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu**.
+2. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
 
 3. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a potom zvolte **.NET Core**. V prostředním podokně vyberte **konzolové aplikace (.NET Core)**. Zadejte název projektu *HelloWorld*.
 
@@ -42,7 +43,7 @@ Nejdřív vytvoříte projekt aplikace Visual Basic. Typ projektu se dodává s 
 
    ![Klikněte na odkaz otevřete instalační program Visual Studio z dialogového okna Nový projekt](../ide/media/vb-open-visual-studio-installer-hello-world.png)
 
-     Spustí instalační program Visual Studio. Vyberte **vývoj pro různé platformy .NET Core** zatížení a potom zvolte **upravit**.
+     Spustí se instalační program pro Visual Studio. Vyberte **vývoj pro různé platformy .NET Core** zatížení a potom zvolte **upravit**.
 
      ![Vývoj pro různé platformy zatížení .NET core v instalačním programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
@@ -68,7 +69,8 @@ Přidejme nějaký kód pozastavení aplikace a pak požádejte na vstup uživat
    Console.Write("Press any key to continue...")
    Console.ReadKey(true)
    ```
-   Tento skript pozastaví program dokud stisknutí klávesy.
+
+    Tento skript pozastaví program dokud stisknutí klávesy.
 
 2. Na panelu nabídek vyberte **sestavení** > **sestavit řešení**.
 

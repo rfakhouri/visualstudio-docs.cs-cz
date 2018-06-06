@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 6fabaa7b1df2522abd9e76a8e4772a2f8111cfe9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748082"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
@@ -35,29 +36,29 @@ Když začnete psát klíčové slovo, typ, funkce, název proměnné nebo jiné
 
 Seznam ikony a jejich významy, naleznete v části [ikony zobrazení třídy a prohlížeč objektů](../ide/class-view-and-object-browser-icons.md).
 
-![Visual C&#43; &#43; dokončení Word okno](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
+![Visual C&#43; &#43; okno dokončení aplikace Word](../ide/media/vs2015_cpp_complete_word.png)
 
 Při prvním vyvolání seznam členů pouze zobrazuje členy, které jsou dostupné pro aktuální kontext. Pokud vyberete **Ctrl**+**J** po, který se zobrazí všechny členy, bez ohledu na usnadnění přístupu. Pokud vyvolání ho třetí čas, zobrazí se i širší seznam prvky programu. Můžete vypnout seznam členů v **možnosti** dialogovém **textového editoru** > **C/C++** > **Obecné**  >  **Automatický seznam členů**.
 
-![Visual C&#43;&#43; Member List](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
+![Visual C&#43; &#43; seznam členů](../ide/media/vs2015_cpp_list_members.png)
 
 ### <a name="parameter-help"></a>Parametr nápovědy
 
 Když zadáte žádná levá složená závorka volání funkce nebo lomená závorka v deklaraci třídy šablony proměnné, představuje editoru malém okně s typy parametrů pro každé přetížení funkce nebo konstruktor. Parametr "aktuální"&mdash;v závislosti na umístění kurzoru&mdash;je tučným písmem. Informace o parametrech v můžete vypnout **možnosti** dialogovém **textového editoru** > **C/C++** > **Obecné**  >  **Informace o parametrech**.
 
-![Visual C&#43;&#43; Parameter Help](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
+![Visual C&#43; &#43; parametr nápovědy](../ide/media/vs_2015_cpp_param_help.png)
 
 ### <a name="quick-info"></a>Rychlé informace
 
 Když najedete myší do proměnné, zobrazí se vložené, která obsahuje informace o typu a záhlaví, ve kterém je definovaný typ malém okně. Podržte ukazatel nad volání funkce zobrazíte podpis funkce. Můžete vypnout v rychlé informace **možnosti** dialogovém **textového editoru** > **C/C++** > **Upřesnit**  >  **Automaticky rychlé informace**.
 
-![Visual C&#43;&#43; QuickInfo](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
+![Visual C&#43; &#43; QuickInfo](../ide/media/vs2015_cpp_quickinfo.png)
 
 ### <a name="error-squiggles"></a>Chyba podtržení vlnovkou
 
 Podtržení vlnovkou pod element programu (proměnné, – klíčové slovo, složené závorce, název typu a tak dále) volání pozornost chyba nebo potenciální chyby v kódu. Zelená vlnovku se zobrazí, když napíšete dopředného deklarace, a tak poznáte, že stále nutné zapsat implementace. Fialové vlnovku se zobrazí v sdílený projekt když dojde k chybě v kódu, který není aktuálně aktivní, třeba když pracují v kontextu systému Windows, ale něco zadat, která by byla v kontextu Android chybu. Červenou vlnovkou označuje kompilátoru chyby nebo upozornění v active kód, který je potřeba řešit.
 
-![Visual C&#43; &#43; podtržení vlnovkou chyba](../ide/media/vs2015_cpp_error_quiggles.png "vs2015_cpp_error_quiggles")
+![Visual C&#43; &#43; chyba podtržení vlnovkou](../ide/media/vs2015_cpp_error_quiggles.png)
 
 ### <a name="code-colorization-and-fonts"></a>Kód zabarvení a písem
 
@@ -69,7 +70,7 @@ V projektu sdíleného kódu některé funkce IntelliSense, jako je například 
 
 Zde je aplikace OpenGLES nakonfigurovaný tak, aby sestavení pro Android a iOS. Na obrázku upravovaný sdíleného kódu. V první bitovou kopii aktivní projekt je Android:
 
-![Aktivní projekt je projektu pro Android. ] (../ide/media/intellisensecppcrossplatform.png "IntelliSenseCppCrossPlatform")
+![Aktivní projekt je projektu pro Android.](../ide/media/intellisensecppcrossplatform.png)
 
 Všimněte si následujících akcí:
 
@@ -81,7 +82,7 @@ Všimněte si následujících akcí:
 
 Teď změňte aktivní projekt **iOS.StaticLibrary** a Všimněte si, jak podtržení vlnovkou změnit.
 
-![iOS je vybrán jako aktivní projekt. ] (../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
+![iOS je vybrán jako aktivní projekt.](../ide/media/intellisensecppcrossplatform2.png)
 
 Všimněte si následujících akcí:
 
@@ -95,12 +96,12 @@ Všimněte si následujících akcí:
 
 Když otevřete jeden soubor mimo žádného projektu, se stále objevuje IntelliSense. Můžete povolit nebo zakázat konkrétní funkce IntelliSense **možnosti** dialogovém **textového editoru** > **C/C++**  >  **Rozšířené**. Chcete-li nakonfigurovat IntelliSense pro jednotlivé soubory, které nejsou součástí projektu, vyhledejte **IntelliSense a procházení souborů jiný projekt** části.
 
-![Visual C&#43; &#43; jeden soubor intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
+![Visual C&#43; &#43; jeden soubor intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
 Ve výchozím nastavení jedním souborem IntelliSense pouze používá standardní zahrnují adresáře, které chcete najít soubory hlaviček. Pokud chcete přidat další adresáře, otevřete v místní nabídce **řešení** uzel a přidejte do adresáře **ladění zdrojového kódu** seznamu, jak ukazuje následující obrázek:
 
-![Přidání cesty do souboru záhlaví. ] (../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
+![Přidání cesty do souboru záhlaví.](../ide/media/intellisensedebugyourcode.jpg)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Používání technologie IntelliSense](../ide/using-intellisense.md)

@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1c3cf206b952ebf8879045bcdc2881c2d2f4cc0c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752063"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů jednotek pomocí Průzkumníka testů
 
@@ -29,13 +30,13 @@ Visual Studio obsahuje rozhraní testování částí Microsoft pro spravovaná 
 
 Při sestavování testovacího projektu testů se zobrazí v Průzkumníku otestovat. Pokud není viditelná Průzkumníka testů, zvolte **Test** v sadě Visual Studio nabídce zvolte **Windows**a potom zvolte **Průzkumníka testů**.
 
-![Průzkumníka testů jednotek](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+![Jednotky Průzkumníka testů](../test/media/ute_failedpassednotrunsummary.png)
 
 Při spuštění, zápisu a znovu spusťte testy Průzkumníka testů zobrazí výsledky v výchozí skupiny **testy se nezdařilo**, **předán testy**, **přeskočen testy** a  **Nejde spustit testy**. Můžete změnit způsob Průzkumníka testů skupiny testů.
 
 Můžete provádět většinu práce hledání, uspořádání a spouštění testů z panelu nástrojů Průzkumníka testů.
 
-![Spouštění testů z panelu nástrojů Průzkumníka testů](../test/media/ute_toolbar.png "UTE_ToolBar")
+![Spouštění testů z panelu nástrojů Průzkumníka testů](../test/media/ute_toolbar.png)
 
 ### <a name="run-tests"></a>Spouštění testů
 
@@ -47,7 +48,7 @@ Můžete spustit všechny testy v řešení, všechny testy ve skupině nebo sad
 
 - Vyberte jednotlivé testy, které chcete spustit, otevřete v místní nabídce pro vybrané test a zvolte **spustit vybrané testy**.
 
-- Pokud jednotlivé testy žádné závislosti, které je zabránit spouštění v libovolném pořadí, zapnout spuštění testu paralelní s ![UTE&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný k spustit všechny testy.
+- Pokud jednotlivé testy žádné závislosti, které je zabránit spouštění v libovolném pořadí, zapnout spuštění paralelní testu pomocí ![UTE&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png) přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný k spustit všechny testy.
 
 Na panelu průchodu nebo selže v horní části okna Průzkumníka testů je animované jako Spusťte testy. Při ukončení spustit test změní zelená panelu průchodu nebo selhání, pokud všechny testy byly splněny, nebo červenou, pokud žádné test se nezdařil.
 
@@ -65,7 +66,7 @@ Při spuštění, zápisu a znovu spusťte testy Průzkumníka testů zobrazí v
 
 Chcete-li zobrazit podrobnosti o jednotlivé testy, vyberte test.
 
-![Podrobnosti o spuštění testu](../test/media/ute_testdetails.png "UTE_TestDetails")
+![Podrobnosti o spuštění testu](../test/media/ute_testdetails.png)
 
 V podokně podrobností testovací zobrazí následující informace:
 
@@ -91,9 +92,9 @@ Průzkumníka testů umožňuje seskupení testů do předdefinovaných kategori
 
 ### <a name="group-tests-in-the-test-list"></a>Testy skupiny v seznamu testů
 
- A změnit tak, že jsou uspořádány testy, vyberte na šipku dolů vedle **Group By** tlačítko ![Průzkumníka testů skupiny tlačítko](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn") a vyberte nový seskupení kritéria.
+ A změnit tak, že jsou uspořádány testy, vyberte na šipku dolů vedle **Group By** tlačítko ![Průzkumníka testů skupiny tlačítko](../test/media/ute_groupby_btn.png) a vyberte nová kritéria seskupení.
 
- ![Skupina testy podle kategorie ve Průzkumníka testů](../test/media/ute_groupbycategory.png "UTE_GroupByCategory")
+ ![Testy skupiny podle kategorie ve Průzkumníka testů](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>Skupiny Průzkumníka testů
 
@@ -135,7 +136,7 @@ Filtrovat podle různých kritérií:
 
 3. Zadejte hodnotu pro filtr mezi uvozovky.
 
-![Filtrovat testů v Průzkumníka testů](../test/media/ute_filtertestlist.png "UTE_FilterTestList")
+![Filtr testy Průzkumníka testů](../test/media/ute_filtertestlist.png)
 
 > [!NOTE]
 > Hledání se malá a velká písmena a odpovídat zadaný řetězec na libovolnou část hodnotu pro kritéria.
@@ -162,7 +163,7 @@ Například `FullName:"MyClass" - FullName:"PerfTest"` vrátí všechny testy, k
 
  Můžete vytvořit a uložit seznam testy, které chcete spustit nebo zobrazit jako skupinu. Když vyberete seznam skladeb, testy v seznamu se zobrazí Průzkumníka testů. Test můžete přidat do více než jeden seznam stop, a všechny testy ve vašem projektu jsou k dispozici, když zvolíte výchozí **všechny testy** seznam stop.
 
- ![Vyberte seznam stop](../test/media/ute_playlist.png "UTE_Playlist")
+ ![Vyberte seznam stop](../test/media/ute_playlist.png)
 
  **Chcete-li vytvořit seznam stop**, zvolte jeden nebo více testů v Průzkumníka testů. V místní nabídce vyberte **přidat do seznamu stop**, **NewPlaylist**. Uložte soubor s názvem a umístění, které určíte v **vytvořit nový seznam stop** dialogové okno.
 
@@ -170,7 +171,7 @@ Například `FullName:"MyClass" - FullName:"PerfTest"` vrátí všechny testy, k
 
  **Chcete-li otevřít seznam stop**, zvolte testovací, seznam stop v nabídce sady Visual Studio a buď ze seznamu naposledy použité seznamy stop, nebo zvolte otevřete seznam stop a zadat název a umístění seznamu stop.
 
- Pokud jednotlivé testy žádné závislosti, které je zabránit spouštění v libovolném pořadí, zapnout spuštění testu paralelní s ![UTE&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný k spustit všechny testy.
+ Pokud jednotlivé testy žádné závislosti, které je zabránit spouštění v libovolném pořadí, zapnout spuštění paralelní testu pomocí ![UTE&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png) přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný k spustit všechny testy.
 
 ## <a name="debug-and-analyze-unit-tests"></a>Ladění a analýze testování částí
 
@@ -221,7 +222,7 @@ Testy můžete spustit z **testování Explorer**, kliknutím pravým tlačítke
 > [!NOTE]
 > V abstraktní třídu, nelze spustit test, protože testy jsou definována pouze v abstraktní třídy a není vytvořena instance. Ke spuštění testů v abstraktní třídy, vytvořte třídu, která je odvozena z abstraktní třídy.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Testování částí kódu](../test/unit-test-your-code.md)
 - [Spuštění testování částí v podobě 64bitového procesu](../test/run-a-unit-test-as-a-64-bit-process.md)

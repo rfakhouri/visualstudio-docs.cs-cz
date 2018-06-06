@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7ee33d880a56103ea024f22038350ec36021561b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 3b03de87c13744e3b678d4f51e3950352fa2d475
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691785"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766711"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties – element
   Kolekce hodnot vlastností, které jsou součástí funkce při nasazení do služby SharePoint. Po nasazení funkce můžete přistupovat hodnoty vlastností v kódu.  
@@ -33,19 +33,19 @@ ms.locfileid: "34691785"
 </FeatureProperties>  
 ```  
   
-## <a name="attributes-and-elements"></a>Atributy a elementy  
+## <a name="attributes-and-elements"></a>Atributy a elementy
  Následující části popisují atributy, podřízené prvky a nadřazené prvky.  
   
 ### <a name="attributes"></a>Atributy  
  Žádné  
   
-### <a name="child-elements"></a>Podřízené elementy  
+### <a name="child-elements"></a>Podřízené prvky
   
 |Prvek|Popis|  
 |-------------|-----------------|  
 |[FeatureProperty –](../sharepoint/featureproperty-element.md)|Volitelný element.<br /><br /> Představuje vlastní vlastnost, ve formátu klíč/hodnota.|  
   
-### <a name="parent-elements"></a>Nadřazené elementy  
+### <a name="parent-elements"></a>Nadřazené prvky
   
 |Prvek|Popis|  
 |-------------|-----------------|  
@@ -54,7 +54,7 @@ ms.locfileid: "34691785"
 ## <a name="remarks"></a>Poznámky  
  Další informace o vlastnosti funkcí najdete v tématu [poskytování balení a informace o nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## <a name="element-information"></a>Informace o elementu  
+## <a name="element-information"></a>Informace o elementu
   
 |Prvek|Popis|  
 |-------------|-----------------|  
@@ -63,7 +63,7 @@ ms.locfileid: "34691785"
 |**Ověření souboru**|ProjectItemModelSchema.xsd|  
 |**Nesmí být prázdné**|Ne|  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Poskytování informací o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   

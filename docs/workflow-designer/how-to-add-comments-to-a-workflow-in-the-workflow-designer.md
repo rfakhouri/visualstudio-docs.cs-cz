@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ba21ba5b2ce6126d29d34f5df662e9e332359ed3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d740614ed94d0fd91ba9f3e73a083791b9112919
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752024"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Postupy: Přidání komentářů do pracovního postupu v Návrháři pracovních postupů
 
@@ -52,11 +53,11 @@ K usnadnění vytváření rozsáhlejších, složitějších pracovních postup
 
    Poznámka se zobrazí v Návrháři aktivity. Na tomto snímku obrazovky zobrazí se v Návrháři aktivity poznámky "Počáteční aktivita v pracovním postupu".
 
-   ![Poznámky v Návrháři aktivity zobrazeny](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
+   ![Poznámky ukazuje Návrhář aktivity](../workflow-designer/media/annotationindesigner.png)
 
 1. Pokud chcete zobrazit poznámky mimo Návrhář aktivity, najeďte myší na oblasti poznámky v Návrháři aktivity a klikněte na tlačítko **Odepnout** ikonu
 
-   ![Poznámky zobrazí mimo aktivity designe](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
+   ![Poznámky zobrazí mimo designe aktivity](../workflow-designer/media/annotationoutsidedesigner.png)
 
 ## <a name="showing-or-hiding-all-annotations"></a>Zobrazení nebo skrytí všechny poznámky
 

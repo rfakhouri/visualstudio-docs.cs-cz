@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bb6e746c0ace5892dae7db014125c7e6dba92f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9ba084cb3d18d661198f481323d012c98cb37b2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746777"
 ---
 # <a name="shader-designer"></a>Návrhář shaderů
 
@@ -66,7 +67,7 @@ Příkazy, které ovlivňují stav návrháře shaderu jsou umístěny na **rež
 
 Tady je **režimu návrháře shaderu** nástrojů:
 
-![Modální nástrojů shaderu návrháře. ] (../designers/media/digit-dsd-modal-toolbar.png "Číslice DSD modální nástrojů")
+![Modální nástrojů shaderu návrháře.](../designers/media/digit-dsd-modal-toolbar.png)
 
 Tato tabulka popisuje položky na **režimu návrháře shaderu** nástrojů, které jsou uvedeny v pořadí, ve kterém se zobrazí zleva doprava:
 

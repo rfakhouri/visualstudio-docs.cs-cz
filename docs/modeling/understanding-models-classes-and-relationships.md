@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 408c74dbbf23abee5d548484014e0f2ddc66963e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 394b21d396bf92b794060ff27ed940e25a77aa26
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748485"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Porozumění modelům, třídám a vztahům
 Jazyk specifické pro doménu (DSL) je definován v souboru jeho definice DSL, spolu s vlastní program kód, který může zapsat. Většinu kódu programu v řešení DSL se generují z tohoto souboru.
@@ -25,13 +26,13 @@ Jazyk specifické pro doménu (DSL) je definován v souboru jeho definice DSL, s
 ## <a name="the-dsl-definition"></a>Definice DSL
  Když otevřete `Dsl\DslDefinition.dsl`, vaše [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okno se podobá následující obrázek.
 
- ![Návrhář DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![Návrhář jazyka domény](../modeling/media/dsl_designer.png)
 
  V definici DSL nejdůležitější informace se zobrazí v diagramu DSL definice. Další informace, což je také součástí DslDefinition.dsl, se zobrazí v Průzkumníku DSL, které se obvykle zobrazuje na straně diagramu. Pracujete s diagram pro nejčastěji se vyskytující úlohy a pomocí Průzkumníka DSL pro pokročilejší vlastní nastavení.
 
  Definice DSL diagram znázorňuje třídy domény, které definují prvků modelu a vztahy, které definují propojení mezi elementů modelu. Také ukazuje tvarů a konektory, které se používají k zobrazení prvků modelu pro uživatele.
 
- ![Návrhář DSL s dráha](../modeling/media/dsl_desinger.png "dsl_desinger")
+ ![Návrhář DSL s dráha](../modeling/media/dsl_desinger.png)
 
  Když vyberete položku v definici DSL, diagram nebo v Průzkumníku DSL, zobrazí se informace o něm v okně Vlastnosti. V okně podrobností DSL, může se zobrazit další informace.
 
@@ -45,13 +46,13 @@ Jazyk specifické pro doménu (DSL) je definován v souboru jeho definice DSL, s
 
  Tento obrázek ukazuje model, který byl vytvořen uživatelem knihovna Hudba DSL. Hudba alb jsou reprezentované pomocí polí, které obsahují seznam skladeb. Umělci jsou reprezentované pomocí zaoblenými polí a jsou připojené k alb, ke kterým mají podílí.
 
- ![Instance modelu generovaného DSL](../modeling/media/music_instance.png "Music_Instance")
+ ![Instance modelu generovaného DSL](../modeling/media/music_instance.png)
 
  Definice DSL odděluje dva aspekty. Vzhled elementů modelu v diagramu modelu je definována pomocí konektoru třídy a třídy tvaru. Informace v modelu je definována pomocí třídy domény a vztahy domén.
 
  Následující obrázek znázorňuje třídy domény a vztahy v definici DSL knihovna Hudba.
 
- ![Vložení a referenční dokumentace vztahy](../modeling/media/music_classes.png "Music_Classes")
+ ![Vztahy vložení a referenční informace](../modeling/media/music_classes.png)
 
  Na obrázku čtyři domény třídy: Hudba, alb, umělcem a skladbu. Domény třídy definují vlastnosti domény, například název, název a tak dále. Ve instance model hodnoty některých z těchto vlastností jsou zobrazeny v diagramu.
 
@@ -104,7 +105,7 @@ Jazyk specifické pro doménu (DSL) je definován v souboru jeho definice DSL, s
 ### <a name="the-explorer-displays-the-embedding-tree"></a>Průzkumníku zobrazí stromu vnoření
  DSL Definition vytvoří také explorer, který uživatelé uvidí spolu s jejich diagramu modelu.
 
- ![Vygenerovaný explorer DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![Vygenerovaný explorer DSL](../modeling/media/music_explorer.png)
 
  Průzkumníku ukazuje všechny elementy v modelu, včetně těch, pro které nebyly definovány žádné tvarů. Zobrazuje elementů a vztahů vnoření, ale není odkaz relace.
 
@@ -122,7 +123,7 @@ Jazyk specifické pro doménu (DSL) je definován v souboru jeho definice DSL, s
 
  Na následujícím obrázku, řádek mezi **vydavatele** třída domény a **PublisherCatalog** relace domény je zdrojovou roli. Řádek mezi relace domény a **Album** domény třída je target role.
 
- ![Role a vlastnosti. ] (../modeling/media/propertycode.png "PropertyCode")
+ ![Role a vlastnosti.](../modeling/media/propertycode.png)
 
  Názvy přidružené k relaci jsou zvlášť důležité při psaní kódu programu, který prochází skrz modelu. Například při sestavování řešení DSL generovaná třída vydavatele má vlastnost katalog, který je kolekce alb. Třída Album má vlastnost Publisher, který je jedna instance třídy vydavatele.
 

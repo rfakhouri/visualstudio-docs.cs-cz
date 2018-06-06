@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b82a35ed56c0930b8d9c0ff8ec7bfcbd008a7648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751530"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Postupy: Vytváření sestav výkonnosti pro zátěžový test pomocí aplikace Microsoft Excel
 
@@ -39,7 +40,7 @@ Můžete vygenerovat sestav Microsoft Excel zátěžový test, které jsou zalo�
 
  Na následujícím obrázku je příkladem sestavu, která obsahuje korelace mezi odmítnout v transakci (aktualizace košíku) rychlost a degenerace čítače (% procesoru). To ukazuje na potenciální problém v kódu aplikace, místo databáze nebo síti a je vhodný pro diagnostiku pomocí ASP.NET Profiler.
 
- ![Potenciální problém v kódu aplikace](../test/media/lt_excel.png "LT_Excel")
+ ![Potenciální problém v kódu aplikace](../test/media/lt_excel.png)
 
  Sestavy aplikace Excel můžete buď vytvořit v Analyzéru zátěžového testu pomocí **vytvořit sestavu aplikace Excel** tlačítka na panelu nástrojů nebo z Excelu pomocí **sestava testu zatížení** možnost **zátěžového testu**  karty na pásu karet Office.
 
@@ -145,6 +146,6 @@ Můžete vygenerovat sestav Microsoft Excel zátěžový test, které jsou zalo�
 
 Výsledků zátěžových testů a sestavy obsahovat potenciálně citlivé informace, které lze použít k vytvoření útoku proti počítači nebo síti. Výsledků zátěžových testů a sestavy obsahují názvy počítačů a připojovací řetězce. Je třeba věnovat pozornost tohoto při sdílení sestav pro zátěžový test s jinými uživateli.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytváření sestav zatížení výsledků testů pro porovnávání testů a analýzu trendů](../test/compare-load-test-results.md)

@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb8471728adda5bb141422833c96e0278fed8e5f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 13065ac4b55b8ae84d299aa15eeb184e7d864d2e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749811"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008: Shromážděno málo ukázek
 |||  
@@ -36,5 +37,5 @@ ms.lasthandoff: 04/19/2018
 ## <a name="rule-description"></a>Popis pravidla  
  Při použití metody vzorkování, mají shromažďovat statisticky velký počet vzorků, abyste měli jistotu, že data představují skutečné program chování. Chcete-li minimalizovat chyby vzorkování, se pokuste shromažďovat alespoň 1 000 ukázky chování při spuštění programu instrukcí. Pokud jste neshromažďují dostatek ukázky, vám může omyl, při analýze dat profilování.  
   
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
+## <a name="how-to-fix-violations"></a>Jak opravit porušení  
  Zvažte profilace již spuštění aplikace nebo pomocí rychlejší vzorkovací frekvenci pro získání statisticky významný výsledků. Informace o tom, jak změnit vzorkovací frekvenci v integrovaném vývojovém prostředí sady Visual Studio najdete v tématu [postupy: výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md). Další informace o tom, jak změnit vzorkovací frekvenci při použití nástroje pro profilaci příkazového řádku najdete v tématu [časovače](../profiling/timer.md) v [VSPerfCmd](../profiling/vsperfcmd.md) odkaz.

@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22897b072d7051eef5c08d27fc3235050474da60
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 27a1cdd3390d6f068947bfcb0daef76eb93fd026
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751985"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Postupy: Správa sad čítačů pomocí editoru zátěžových testů
 
@@ -30,7 +31,7 @@ Když vytvoříte zátěžový test pomocí **načíst testování Průvodce nov
 
 Správa sad čítačů zahrnuje výběr sadu počítačů, které chcete shromažďovat údaje o výkonu z a přiřazení sadu sad čítačů ke shromažďování z jednotlivých počítačů. Spravovat vaše čítače v **editoru zátěžových testů**.
 
-![Správa sad čítačů](../test/media/loadtestmanagecountersets.png "LoadTestManageCounterSets")
+![Správa sad čítačů](../test/media/loadtestmanagecountersets.png)
 
 ## <a name="to-manage-counter-sets"></a>Správa sad čítačů
 
@@ -59,7 +60,7 @@ Správa sad čítačů zahrnuje výběr sadu počítačů, které chcete shroma�
 
 6.  Zvolte **OK**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Kontrolery testů a testovací agenti](configure-test-agents-and-controllers-for-load-tests.md)
 - [Určení sad čítačů a mezních pravidel pro počítače v zátěžovém testu](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

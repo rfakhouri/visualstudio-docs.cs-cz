@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: c5c172ff3ec3033b50815efdb0b4ee293853ab1e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f91fd6e8c101b674b745c120978a47adb17c9b91
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765372"
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Publikování aplikace ASP.NET nebo ASP.NET Core Azure App Service pomocí sady Visual Studio
 
@@ -26,9 +27,9 @@ Pokud již účet Azure nemáte, můžete [zaregistrujte si zde](https://azure.m
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Musíte mít nainstalované Visual Studio 2017 a **ASP.NET** a **rozhraní .NET Framework** vývoj zatížení. Pro aplikace .NET Core, musíte taky **.NET Core** zatížení.
+* Musíte mít nainstalované Visual Studio 2017 a **ASP.NET a webové vývoj** pracovního vytížení a. **NET vývoj aplikací** zatížení. Pro aplikace .NET Core, musíte. **NET základní** zatížení.
 
-    Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).
+    Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu 
 
@@ -44,7 +45,7 @@ Pokud již účet Azure nemáte, můžete [zaregistrujte si zde](https://azure.m
 
 1. Zvolte **sestavení > Sestavit řešení** a tím projekt sestavit.
 
-## <a name="publish-to-azure-app-service"></a>Publikování do služby Azure App Service
+## <a name="publish-to-azure-app-service"></a>Publikování do Azure App Service
 
 1. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**.
 

@@ -28,13 +28,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf87ea20c3b37ffd6998cf078a08e1ef11049be5
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 966be7ab50c2e14ae43da7cf68d7ef6168255207
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749623"
 ---
-# <a name="cvwritemessage-function"></a>CvWriteMessage – funkce
+# <a name="cvwritemessage-function"></a>Cvwritemessage – funkce
 Zapíše zprávu do Concurrency Visualizer trasovacího souboru.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -113,11 +114,11 @@ HRESULT CvWriteMessageExVA(
  S_OK, pokud zpráva je úspěšně zapsána. Kód chyby v případě, že byly všechny chyby. Makra úspěšné nebo NEÚSPĚŠNÉ použijte ke kontrole chybový stav.  
   
 ## <a name="requirements"></a>Požadavky  
- **Záhlaví:** cvmarkers.h  
+ **Záhlaví:** *cvmarkers.h*  
   
  **Unicode:** cvwritemessagew –, cvwritemessagevw –, cvwritemessageexw –, cvwritemessageexvw –  
   
  **ANSI:** cvwritemessagea –, cvwritemessageva –, cvwritemessageexa –, cvwritemessageexva –  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)

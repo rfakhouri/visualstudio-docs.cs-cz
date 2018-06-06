@@ -10,19 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 813f637f3bb12c3f3f4eec75abf1423de06f9707
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751842"
 ---
-# <a name="start-view"></a>Spuštění zobrazení
+# <a name="start-view"></a>Počáteční zobrazení
 
 Spuštění zobrazení je spouštěcí bod pro Návrhář schématu XML (XSD). Když vytvoříte nový soubor XSD, zobrazí se původně zobrazení spustit.
 
 Spuštění zobrazení obsahuje dvě hlavní části, *vodoznak* a **podrobnosti o nastavení schématu** podokně. Zahrnuje také panelu nástrojů, která je k dispozici ve všech zobrazeních XSD Designer.
 
-![XML schéma návrháře spuštění zobrazení](../xml-tools/media/xsddesigner_startview.gif "XSDDesigner_StartView")
+![Zobrazení návrháře počáteční schématu XML](../xml-tools/media/xsddesigner_startview.gif)
 
 ## <a name="watermark"></a>Vodoznak
 
@@ -36,7 +37,7 @@ V podokně vodoznak obsahuje seznam odkazů na všechna XSD Návrhář zobrazen�
 
 Mezi spuštění zobrazení, můžete přejít [zobrazení obsahu modelu](../xml-tools/content-model-view.md) a [zobrazení grafu](../xml-tools/graph-view.md) na panelu nástrojů Návrhář schématu XML.
 
-![XML schéma návrháře nástrojů](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
+![Nástrojů Návrhář schématu XML](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 Následující tlačítka jsou povolené v panelu nástrojů Návrhář XSD při spuštění zobrazení je aktivní:
 
@@ -46,7 +47,7 @@ Následující tlačítka jsou povolené v panelu nástrojů Návrhář XSD při
 |**Nastaví zobrazení modelu obsahu**|Přepne do zobrazení modelu obsahu. Toto zobrazení je přístupná pomocí klávesové zkratky: **Ctrl**+**2**.|
 |**Zobrazit zobrazení grafu**|Přepne do zobrazení grafu. Toto zobrazení je přístupná pomocí klávesové zkratky: **Ctrl**+**3**.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Průzkumník schémat XML](../xml-tools/xml-schema-explorer.md)
 - [Zobrazení grafu](../xml-tools/graph-view.md)

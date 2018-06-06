@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a3fe4cf9591d64465fa7ec44d1653bbfc65ec8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 92d82cfaf2f06018ce93e6c1fce1abd0b63809f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747307"
 ---
 # <a name="image-editor"></a>Editor obrázků
 
@@ -92,7 +93,7 @@ Editor obrázků panely nástrojů obsahovat příkazy, které pomohou práce s 
 
  Tady je **Editor obrázků režimu** nástrojů:
 
- ![Editor obrázků modální nástrojů. ] (../designers/media/digit-tre-modal-toolbar.png "Číslice TRE modální nástrojů")
+ ![Editor obrázků modální nástrojů.](../designers/media/digit-tre-modal-toolbar.png)
 
  Tato tabulka popisuje položky na **Editor obrázků režimu** nástrojů, které jsou uvedeny v pořadí, ve kterém se zobrazí zleva doprava.
 
@@ -116,7 +117,7 @@ Editor obrázků panely nástrojů obsahovat příkazy, které pomohou práce s 
 
  Tady je **Editor obrázků** panelu nástrojů.
 
- ![Editor obrázků panelu nástrojů](../designers/media/digit-tre-toolbar.png "číslice. TRE nástrojů")
+ ![Panel nástrojů editoru obrázků](../designers/media/digit-tre-toolbar.png)
 
  Následující tabulka popisuje položky na **Editor obrázků** nástrojů, které jsou uvedeny v pořadí, ve kterém se zobrazí shora dolů.
 

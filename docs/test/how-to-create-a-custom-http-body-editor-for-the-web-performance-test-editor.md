@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d43bd048b19f0a9b8516769440fafb5a5013b867
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750692"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Postupy: Vytvoření vlastního editoru těla HTTP pro editor testu výkonnosti webu
 
@@ -52,7 +53,7 @@ Tato rozhraní jsou součástí <xref:Microsoft.VisualStudio.TestTools.WebTestin
 
 5.  Z **sada nástrojů**v části **běžné ovládací prvky** kategorie, přetáhněte <xref:System.Windows.Forms.RichTextBox> na plochu UserControl1.
 
-6.  Zvolte glyfy značky akce (![inteligentní značky glyfy](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) v pravém horním rohu <xref:System.Windows.Forms.RichTextBox> řízení a potom vyberte a **ukotvení v nadřazený kontejner**.
+6.  Zvolte glyfy značky akce (![inteligentní značky glyfy](../test/media/vs_winformsmttagglyph.gif)) v pravém horním rohu <xref:System.Windows.Forms.RichTextBox> řízení a potom vyberte a **ukotvení v nadřazený kontejner**.
 
 7.  V Průzkumníku řešení klikněte pravým tlačítkem na projekt knihovny formulářů Windows a vyberte **vlastnosti**.
 
@@ -316,7 +317,7 @@ Ověřte, že cílová framework projektu knihovny ovládacích prvků Windows r
 
 Další informace najdete v tématu [stránka aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>

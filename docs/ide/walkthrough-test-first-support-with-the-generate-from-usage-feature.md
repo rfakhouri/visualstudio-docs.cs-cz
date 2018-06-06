@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748189"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Návod: Vývoj včasného testování s funkcí generování před využitím
 
@@ -41,7 +42,7 @@ Toto téma ukazuje, jak používat [generování před využitím](../ide/visual
 
 3.  V prostředním podokně vyberte **projektu testování částí** a přijměte výchozí název `UnitTestProject1`. Následující obrázek znázorňuje dialogové okno, když se objeví v [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. V [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], dialogové okno bude vypadat podobně jako.
 
-     ![Dialogové okno Nový projekt Test](../ide/media/newproject_test.png "NewProject_Test")
+     ![Dialogové okno Nový projekt testu](../ide/media/newproject_test.png)
 
 4.  Zvolte **OK** zavřete **nový projekt** dialogové okno.
 
@@ -66,9 +67,9 @@ Toto téma ukazuje, jak používat [generování před využitím](../ide/visual
 
 3.  Vyhledejte `TestMethod1()` metoda a přejmenujte ji na `DefaultAutomobileIsInitializedCorrectly()`. Uvnitř této metody vytvořit novou instanci třídy s názvem `Automobile`, jak je vidět na následujících snímcích obrazovky. Podtržení vlnovkou se zobrazí, což značí chybu kompilace a [rychlé akce](../ide/quick-actions.md) žárovky se zobrazí na levém okraji (C# pouze) nebo přímo pod vlnovka při umístění nad ním.
 
-     ![Rychlé akce v jazyce Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")
+     ![Rychlé akce v jazyce Visual Basic](../ide/media/genclass_underlinevb.png)
 
-     ![Rychlé akce v jazyce C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")
+     ![Rychlé akce v jazyce C&#35;](../ide/media/genclass_underline.png)
 
 4.  Zvolte nebo klepněte **rychlé akce** žárovky. Zobrazí se chybová zpráva, která uvádí, že typ `Automobile` není definován. Také se zobrazí některá řešení.
 
@@ -76,7 +77,7 @@ Toto téma ukazuje, jak používat [generování před využitím](../ide/visual
 
 6. V **projektu** seznamu, klikněte na tlačítko **GFUDemo\_VB** nebo **GFUDemo_CS** dáte pokyn, aby soubor přidat do projektu knihovny tříd místo testu sady Visual Studio projekt. Pokud již není vybrána, vyberte **vytvořit nový soubor** a pojmenujte ji *Automobile.cs* nebo *Automobile.vb*.
 
-     ![Generovat dialogové okno Nový typ](../ide/media/genotherdialog.png "GenOtherDialog")
+     ![Generovat dialogové okno Nový typ](../ide/media/genotherdialog.png)
 
 6.  Klikněte na tlačítko **OK** zavřete dialogové okno a vytvořte nový soubor.
 
@@ -133,7 +134,7 @@ Předpokládejme, že specifikace uvádí, že nový `Automobile` můžou být p
 
      **Výsledky testů** okno je znázorněno na následujícím obrázku.
 
-     ![Výsledky testu, který selhal](../ide/media/testsfailed.png "TestsFailed")
+     ![Výsledky testů, které se nezdařilo](../ide/media/testsfailed.png)
 
 2.  V **výsledky testu** okno, dvakrát klikněte na každý řádek výsledků testu do přejděte do umístění každého testu.
 
@@ -155,9 +156,9 @@ Předpokládejme, že specifikace uvádí, že nový `Automobile` můžou být p
 
      Tentokrát jsou testy úspěšné. **Výsledky testů** okno je znázorněno na následujícím obrázku.
 
-     ![Výsledky testu, který předává](../ide/media/testspassed.png "TestsPassed")
+     ![Výsledky testů, které předávají](../ide/media/testspassed.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Generování před využitím](../ide/visual-csharp-intellisense.md#generate-from-usage)
 - [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -18,32 +18,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2269a457ee8466a5c119659e048f506cd85e4ed3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 622ac8b6fd9f003c8bfccbd953f4b5f51cd00332
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766282"
 ---
-# <a name="developing-sharepoint-solutions"></a>Vývoj řešení služby SharePoint
+# <a name="develop-sharepoint-solutions"></a>Vývoj řešení služby SharePoint
   Několik šablon typ projektu služby SharePoint jsou k dispozici v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vytváření webů služby SharePoint a prvky webu. Seznam dostupné typy projektů, naleznete v části [projektu služby SharePoint a šablony položek projektu](../sharepoint/sharepoint-project-and-project-item-templates.md). Následuje popis elementy a vlastnosti projektu služby SharePoint.  
   
  Informace o SharePoint 2013 a doplňky SharePoint najdete v tématu [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) a [doplňky sestavení SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
   
-## <a name="elements-of-a-sharepoint-project"></a>Prvky projektu služby SharePoint  
+## <a name="elements-of-a-sharepoint-project"></a>Prvky projektu služby SharePoint
  Uzly v rámci projektu služby SharePoint se označují jako *SharePoint – položky*. SharePoint – položky může také obsahovat jeden nebo více podsoubory, označuje jako *souborů položek služby SharePoint*, jako například [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] konfigurační soubory, formulářů .aspx a další.  
   
  Místo vytváření projektů pomocí šablony projektu, které jsou už vyplněné souborů projektu položek, můžete použít **prázdný projekt** šablony pro vytvoření prázdného projektu služby SharePoint a poté ručně přidejte položky projektu. Projekty SharePoint může volitelně obsahovat jeden nebo více souborů funkcí (pro aktivaci ve službě SharePoint) a soubor balíčku, ve které chcete distribuovat projektu.  
   
-### <a name="special-nodes"></a>Speciální uzly  
+### <a name="special-nodes"></a>Speciální uzly
  Každý projekt SharePoint obsahuje dva uzly, které nelze přejmenovat, odstranit, Vyjmout, kopírovat nebo přetažením z projektu. Tyto uzly jsou následující:  
   
--   Funkce  
-  
+-   Funkce    
 -   Balíček  
   
  Oba uzly se vždy zobrazují v všechny projekty SharePoint i v případě, že jsou definována žádná funkce nebo balíčků pro projekt.  
   
-#### <a name="features-node"></a>Funkce uzlu  
+#### <a name="features-node"></a>Funkce uzlu
  **Funkce** uzel obsahuje jeden nebo více funkcí projektu služby SharePoint. Funkce je kontejner rozšíření pro službu SharePoint. Po nasazení funkce na server služby SharePoint, můžete zahrnout do definice webů nebo aktivovat jednotlivě správci služby SharePoint na webech služby SharePoint. Další informace najdete v tématu [práci s funkcemi](http://go.microsoft.com/fwlink/?LinkID=147704).  
   
  Při přidání položky, jako je například typ obsahu nebo seznamu instanci, do projektu služby SharePoint, je přidán do funkcí **funkce** uzlu. Rozsah položka určuje, zda je přidána do nové nebo stávající funkce. Pokud nová položka má stejný obor jako existující funkce, se přidá do této funkce. Položka, jinak se přidá do nové funkce.  
@@ -52,17 +52,17 @@ ms.lasthandoff: 05/17/2018
   
  Pokud funkce přidá do projektu služby SharePoint, zobrazí se v **Průzkumníku řešení** jako uzel s výchozím názvem funkce*x*.feature, kde *x* je jedinečné číslo. Po nasazení funkce na server služby SharePoint, Správce služby SharePoint můžete aktivovat, zpřístupnění uživatele webů služby SharePoint.  
   
-#### <a name="package-node"></a>Uzel balíčku  
+#### <a name="package-node"></a>Uzel balíčku
  **Balíček** uzel obsahuje jeden soubor, který slouží jako mechanismus distribuce pro projektu služby SharePoint. Tento soubor, označuje jako *balíčku řešení*, je. Na základě souboru CAB s. WSP rozšíření. Balíček řešení je nasadit, opakovaně použitelný soubor, který obsahuje sadu funkcí, definice webů a sestavení, která platí pro weby služby SharePoint a která můžete povolit nebo zakázat jednotlivě. **Balíček** uzel obsahuje také vždy souboru, který je pojmenován Package.wspdef, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] definiční soubor balíčku. Jakmile balíček je nasazen na serveru se systémem SharePoint, Správce služby SharePoint můžete ho nainstalovat a aktivovat jeho funkce.  
   
  Můžete zobrazit nebo změnit obsah balíčku v Návrháři balíček dvojitým kliknutím na uzel balíček nebo otevřením jeho místní nabídky a pak vyberete **otevřete**. Další informace najdete v tématu [vytváření balíčků řešení služby SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).  
   
-## <a name="sharepoint-project-and-project-item-properties"></a>Projektu služby SharePoint a vlastnosti položky projektu  
+## <a name="sharepoint-project-and-project-item-properties"></a>Projektu služby SharePoint a vlastnosti položky projektu
  Projekty SharePoint, stejně jako jiné [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projekty, zobrazí vlastnosti v okně vlastností a stránky vlastností. Vlastnosti, které se zobrazují závisí na uzlu, který je vybraný.  
   
  Vybrání projektu služby SharePoint, položka projektu nebo uzel souboru položky projektu v **Průzkumníku**, v okně Vlastnosti a na stránce vlastností zobrazovat následující vlastnosti:  
   
-### <a name="project-properties"></a>Vlastnosti projektu  
+### <a name="project-properties"></a>Vlastnosti projektu
   
 |Název vlastnosti|Popis|  
 |-------------------|-----------------|  
@@ -82,7 +82,7 @@ ms.lasthandoff: 05/17/2018
   
  Když vyberete soubor položky SharePoint (například pracovního postupu nebo funkce v uzlu funkce), se zobrazí v okně Vlastnosti následující vlastnosti:  
   
-### <a name="project-item-properties"></a>Vlastnosti položky projektu  
+### <a name="project-item-properties"></a>Vlastnosti položky projektu
   
 |Název vlastnosti|Popis|  
 |-------------------|-----------------|  
@@ -93,7 +93,7 @@ ms.lasthandoff: 05/17/2018
 |Odkazy na výstup projektu|Určuje závislost, například sestavení, která položka vašeho projektu je potřeba spustit. Další informace najdete v tématu [poskytování balení a informace o nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
 |Bezpečné ovládací prvek položky|Určuje ovládací prvky, které jsou bezpečné pro přístup z nedůvěryhodným uživatelům upravit. Další informace najdete v tématu [poskytování balení a informace o nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
   
-### <a name="project-item-file-properties"></a>Položka projektu vlastnosti souboru  
+### <a name="project-item-file-properties"></a>Položka projektu vlastnosti souboru
   
 |Název vlastnosti|Popis|  
 |-------------------|-----------------|  
@@ -104,11 +104,11 @@ ms.lasthandoff: 05/17/2018
 |Umístění nasazení|Plně kvalifikovanou cestu k souboru na serveru SharePoint. Tato cesta se skládá z dílčí vlastnosti nasazení kořenové a cesta pro nasazení.|  
 |Cesta pro nasazení|Relativní cestu k souboru na soubor SharePoint Server, jako je například Workflow1\\. Plně kvalifikovaná cesta k souboru se vytvoří zřetězením *Cesta nasazení* hodnotu na konec *nasazení kořenové* hodnotu.<br /><br /> Vyberte hodnotu *RootFile* pro *typ nasazení* změny vlastností *nasazení kořenové* vlastnost {SharePointRoot}\\, což plně kvalifikovaná cesta {SharePointRoot} \Workflow1\\. Další informace najdete v tématu [balení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Nasazení kořenové|Řetězec. Kořenové složky, kde je nainstalován na serveru SharePoint. Například {SharePointRoot} \Template\Features\\{FeatureName}\\.<br /><br /> Hodnota *nasazení kořenové* vlastnost je dáno *typ nasazení* nastavení.|  
-|Typ nasazení|Typ nasazení v souboru, který určuje jeho *nasazení kořenové* hodnotu. Může být jedna z následujících hodnot:<br /><br /> NoDeployment: \<žádná hodnota ><br /><br /> ElementManifest: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> ElementFile: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> TemplateFile: {SharePointRoot} \Template\\<br /><br /> RootFile: {SharePointRoot}\\<br /><br /> GlobalResource: {SharePointRoot} \Resources\\<br /><br /> ClassResource: {ClassResourcePath}\\<br /><br /> Další informace naleznete v tématu <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Typ nasazení|Typ nasazení v souboru, který určuje jeho *nasazení kořenové* hodnotu. Může být jedna z následujících hodnot:<br /><br /> NoDeployment:  *\<žádná hodnota >*<br /><br /> ElementManifest: *\Template\Features {SharePointRoot}\\{FeatureName}*\\<br /><br /> ElementFile: *\Template\Features {SharePointRoot}\\{FeatureName}\\*<br /><br /> TemplateFile: *{SharePointRoot} \Template\\*<br /><br /> RootFile: *{SharePointRoot}\\*<br /><br /> GlobalResource: *\Resources {SharePointRoot}\\*<br /><br /> ClassResource: *{ClassResourcePath}\\*<br /><br /> Další informace naleznete v tématu <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Název souboru|Název souboru nebo složky pro soubor položky.|  
 |Úplná cesta|Umístění souboru pro položku. (Jen pro čtení.)|  
   
-## <a name="related-topics"></a>Související témata  
+## <a name="related-topics"></a>Související témata
   
 |Název|Popis|  
 |-----------|-----------------|  
@@ -131,7 +131,7 @@ ms.lasthandoff: 05/17/2018
 |[Zabezpečení pro řešení služby SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Popisuje důležité informace o zabezpečení pro vývoj řešení služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Dialogové okno pro výběr adresy URL &#40;vývoj pro SharePoint v sadě Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Popisuje dialogové okno, které můžete použít k přidání odkazů na cestu k prostředkům ve vašem projektu nebo na místním serveru SharePoint.|  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Začínáme &#40;vývoj pro SharePoint v sadě Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [Procházení připojení služby SharePoint pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   

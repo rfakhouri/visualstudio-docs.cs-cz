@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7747892e9c206fa0844c913bca3da92bb8e417d9
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: abd70e53c06da53f22bcac4c7f041aaef75bd412
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747864"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Krok 2: Vytvořte náhodný problém s přidáním
 V druhé části tohoto kurzu provedete kvízu náročné přidáním matematické úlohy, které jsou založeny na náhodných čísel. Můžete také vytvořit metodu, která je s názvem `StartTheQuiz()` a který vyplní úlohy a spustí časovač odpočítávání. Později v tomto kurzu přidáte odčítání, násobení a dělení problémy.
@@ -59,7 +60,7 @@ V druhé části tohoto kurzu provedete kvízu náročné přidáním matematick
 
      Všimněte si, že když zadáte tečku (.) po `randomizer` v kódu, otevře okno technologie IntelliSense a jsou zobrazeny všechny objekt náhodných metody, které můžete volat. Například IntelliSense zobrazí seznam `Next()` metoda následujícím způsobem.
 
-     ![Next – metoda](../ide/media/express_randomwhite.png "Express_RandomWhite") Next – metoda
+     ![Next – metoda](../ide/media/express_randomwhite.png) Next – metoda
 
      Když zadáte tečku po objekt, IntelliSense zobrazí seznam členů objektu, například vlastnosti, metod a události.
 
@@ -88,7 +89,7 @@ V druhé části tohoto kurzu provedete kvízu náročné přidáním matematick
 
      Zobrazí se náhodný problém s přidáním, jak ukazuje následující obrázek.
 
-     ![Náhodný problém s přidáním](../ide/media/express_additionproblem.png "Express_AdditionProblem") náhodných sčítání
+     ![Náhodný problém s přidáním](../ide/media/express_additionproblem.png) náhodných sčítání
 
      V dalším kroku kurzu přidáte součet.
 

@@ -21,14 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8bc73918a2af82acab1fd465f5f80755cc594ba9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9fab7bbed25d3f308eef02b7f975e71af6fa8183
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691976"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765002"
 ---
-# <a name="creating-application-pages-for-sharepoint"></a>Vytváření stránek aplikací pro službu SharePoint
+# <a name="create-application-pages-for-sharepoint"></a>Vytváření stránek aplikací pro službu SharePoint
   *Stránky aplikace* představuje stránku ASP.NET Web, který je určen k použití na webu služby SharePoint. Stránky aplikací se speciálním typem stránku ASP.NET. Hlavní rozdíl mezi stránky aplikace a standardní stránky ASP.NET je, že stránky aplikace obsahuje obsah, který je sloučen s hlavní stránku služby SharePoint. Na hlavní stránce umožňuje stránky aplikace sdílet stejný vzhled a chování jako ostatní stránky v lokalitě.  
   
  Visual Studio umožňuje návrh stránek aplikací pomocí návrháře. Návrhář zobrazí oblast obsahu pro každý zástupný symbol obsahu, který je definován na hlavní stránce. Stránka aplikace můžete navrhnout přetažením ovládacích prvků do těchto oblastí obsahu.  
@@ -55,7 +55,7 @@ ms.locfileid: "34691976"
   
 |Soubor|Popis|  
 |----------|-----------------|  
-|Soubor stránky ASP.NET (.aspx)|Obsahuje kód XML, který definuje stránky.|  
+|Soubor stránky ASP.NET (*.aspx*)|Obsahuje kód XML, který definuje stránky.|  
 |Soubor kódu stránky aplikace|Obsahuje kódu stránky aplikace. Přidejte kód, který zpracovává události do tohoto souboru.|  
 |Soubor návrháře kódu stránky aplikace|Obsahuje kód, který je generován návrháře. Neupravujte přímo tento soubor.|  
   

@@ -23,11 +23,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31bee5d824b612ddaeb264fe2f944746cdda68fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 442d6cd60597219c25b41f26ad8c2dc2151248ee
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747466"
 ---
 # <a name="hierarchical-update"></a>Hierarchická aktualizace
 *Hierarchická aktualizace* odkazuje na proces ukládání aktualizovaná data (z datové sady s dvou nebo více souvisejících tabulek) zpět do databáze při zachování pravidla referenční integrity. *Referenční integrity* odkazuje na pravidla konzistence poskytované omezení v databázi, která řídí chování vkládání, aktualizaci a odstraňování souvisejících záznamů. Například je referenční integrity, který vynutí vytvoření záznamu zákazníka před povolením objednávky vytvoření tohoto zákazníka.  Další informace o vztahy v datových sadách najdete v tématu [vztahy v datových sadách](../data-tools/relationships-in-datasets.md)
@@ -39,12 +40,12 @@ ms.lasthandoff: 04/26/2018
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Povolit hierarchické aktualizace v datové sadě
  Hierarchická aktualizace je standardně zapnuté pro všechny nové datové sady, které se přidají nebo vytvoření v projektu. Hierarchická aktualizace zapnout nebo vypnout pomocí nastavení **hierarchické aktualizace** vlastnost typové datové sady v datové sadě na **True** nebo **False**:
 
- ![Hierarchická aktualizace nastavení](../data-tools/media/hierarchical-update-setting.png "nastavení hierarchická aktualizace")
+ ![Hierarchická aktualizace nastavení](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>Vytvořit nový vztah mezi tabulkami
  Pokud chcete vytvořit nový vztah mezi dvěma tabulkami, v Návrháři Dataset vyberte záhlaví každé tabulky, pak klikněte pravým tlačítkem a vyberte **přidat vztah**.
 
- ![Hierarchická aktualizace vztah nabídka přidat](../data-tools/media/hierarchical-update-add-relation-menu.png "vztah nabídka přidat hierarchická aktualizace")
+ ![Vztah nabídka přidat hierarchická aktualizace](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
 ## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>Pochopení omezení cizího klíče, kaskádové aktualizace a odstranění
  Je důležité pochopit, jak cizí klíč omezení a kaskádových chování v databázi se vytvoří v kódu generovaného datovou sadu.
@@ -118,6 +119,6 @@ Kromě potvrzení změn v tabulce souvisejících podřízených před uložení
 |*Název tabulky* `TableAdapter` vlastnost|Představuje `TableAdapter`. Generovaný objekt `TableAdapterManager` obsahuje vlastnost pro každý `TableAdapter` spravuje. Například je generována datovou sadu s tabulkou Zákazníci a objednávky `TableAdapterManager` obsahující `CustomersTableAdapter` a `OrdersTableAdapter` vlastnosti.|
 |`UpdateOrder` Vlastnost|Určuje pořadí jednotlivých insert, update a delete příkazy. Tuto možnost nastavíte na jednu z hodnot v `TableAdapterManager.UpdateOrderOption` výčtu.<br /><br /> Ve výchozím nastavení `UpdateOrder` je nastaven na **InsertUpdateDelete**. To znamená, které vloží, pak aktualizací a poté se odstraní se pro všechny tabulky v datové sadě.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6d338217d3112fc56307ddc2f9af696c99e96a
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 6960f7ca6db9584af8d43b9cee0d0c6bc810bc7f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747890"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Krok 6: Přidejte problém odečtení
 V šesté části tohoto kurzu budete přidejte problém odečtení a zjistěte, jak provádět následující úlohy:
@@ -51,12 +52,12 @@ V šesté části tohoto kurzu budete přidejte problém odečtení a zjistěte,
 
      Můžete volat `Next()` metoda náhodných třídy, která je s názvem "randomizer" dříve v tomto kurzu několika způsoby. Metody, které můžete volat více než jedním způsobem se označují jako přetížený a IntelliSense můžete prozkoumat je. Podívejte se na popis okno IntelliSense pro znovu `Next()` metoda.
 
-     ![Okno IntelliSense popisu tlačítka](../ide/media/express_overloads.png "Express_Overloads")
+     ![Okno IntelliSense popisu tlačítka](../ide/media/express_overloads.png)
 **IntelliSense** okno popisu tlačítka
 
      Zobrazí popisek **(+ 2 overload(s))**, což znamená, že můžete volat `Next()` metoda dva další způsoby. Přetížení obsahovat různý počet nebo různé typy argumentů, tak, aby fungovaly trochu jinak od sebe navzájem. Například metoda může trvat celé číslo jeden argument a jeden z jeho přetížení může trvat celé číslo a řetězec. Zvolíte správné přetížení založené na co chcete udělat. Když přidáte kód, který `StartTheQuiz()` metoda, další informace se zobrazí v okně IntelliSense při zadání `randomizer.Next(`. Chcete-li procházení přetížení, zvolte **šipka nahoru** a **šipka dolů** klíče, jak je znázorněno na následujícím obrázku:
 
-     ![Přetížení pro další&#40; &#41; metoda IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload") přetížení pro **Next()** metoda v **IntelliSense**
+     ![Přetížení pro další&#40; &#41; metoda IntelliSense](../ide/media/express_nextoverload.png) přetížení pro **Next()** metoda v **IntelliSense**
 
      V takovém případě budete chtít zvolte poslední přetížení, protože můžete zadat minimální a maximální hodnoty.
 
@@ -76,7 +77,7 @@ V šesté části tohoto kurzu budete přidejte problém odečtení a zjistěte,
 
      Váš program zahrnuje odčítání, jak ukazuje následující obrázek:
 
-     ![Matematického kvízu s problém odečtení](../ide/media/express_addsubtract.png "Express_AddSubtract")
+     ![Matematického kvízu s problém odečtení](../ide/media/express_addsubtract.png)
 **matematického kvízu** s problém odečtení
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat

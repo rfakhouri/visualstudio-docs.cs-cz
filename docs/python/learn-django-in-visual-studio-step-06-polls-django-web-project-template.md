@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 78cb5f54994c24fcf79f81fd6eff31eedd884908
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691443"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750490"
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Kurz – krok 6: použití šablony hlasovací webový projekt Django
 
@@ -112,7 +112,7 @@ class Choice(models.Model):
         return self.text
 ```
 
-Jak vidíte, hlasování udržuje popis v jeho `text` pole a publikaci datum v `pub_date`. Tato pole jsou pouze onesields, který neexistuje pro dané dotazování v databázi. `total_votes` pole se vypočítává za běhu.
+Jak vidíte, hlasování udržuje popis v jeho `text` pole a publikaci datum v `pub_date`. Tato pole jsou pouze ty, které existují pro dané dotazování v databázi. `total_votes` pole se vypočítává za běhu.
 
 Výběr má vztah k dotazování prostřednictvím `poll` pole, obsahuje popis v `text`a udržuje počet pro jejich výběr v `votes`. `votes_percentage` Pole se vypočítává za běhu a nebyl nalezen v databázi.
 

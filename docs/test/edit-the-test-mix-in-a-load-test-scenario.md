@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750932"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Úpravy poměru testů k určení, které výkonnosti webu, částí a programové testy uživatelského rozhraní mají být zahrnuty scénáře zátěžového testu
 
@@ -36,7 +37,7 @@ Když vytvoříte nový scénář pomocí Průvodce novým testování zatížen
 
 Pomocí editoru zátěžových testů, můžete přidat další výkon webové a testování částí pro text směs scénáři.
 
-![Přidání testu do existující zátěžový test](../test/media/ltest_addingtests.png "LTest_AddingTests")
+![Přidání testu do existující zátěžový test](../test/media/ltest_addingtests.png)
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>Chcete-li přidat další testy se scénářem existující
 
@@ -55,7 +56,7 @@ Pomocí editoru zátěžových testů, můžete přidat další výkon webové a
 5.  (Volitelné) Upravte ovládacího prvku kombinace určení distribučních testu. Další informace najdete v tématu [o kombinaci řídicí](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
 ##  <a name="EditingTestMixRemoveTest"></a> Odebírání testů z scénáři
- ![Odebrání testu z existující zátěžový test](../test/media/ltest_removetest.png "LTest_RemoveTest")
+ ![Odebrání testu z existující zátěžový test](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>K odebrání scénáři testů
 
@@ -89,6 +90,6 @@ Pomocí editoru zátěžových testů, můžete přidat další výkon webové a
 
  Když ručně zadáte procentní hodnoty, měli byste si ověřit, že součet všech položek je 100 %. Při ukládání kombinaci, pokud součet není 100 %, vyzve tak, aby přijímal procentní hodnoty, jako jsou, nebo se vrátit a jejich nastavení. Pokud zvolíte možnost je přijmout, protože se jedná o, bude poměrně rozložen na 100 %.  Například pokud máte dvě položky a je ručně nastavte na 80 % a 40 %, první položka bude nastavena pro 66.67 % (80 dělený 120) a druhá položka bude nastavena pro 33,33 % (40 dělený 120).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Úpravy scénářů zátěžových testů](../test/edit-load-test-scenarios.md)

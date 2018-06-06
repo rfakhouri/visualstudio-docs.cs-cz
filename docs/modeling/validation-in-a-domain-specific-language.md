@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 63d3153bfcc38b28ace3db5ad976a2c2a6a650fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f0d7962446d5cf21822a101354284c63a7df98c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749925"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Ověřování v jazyce specifickém pro doménu
 Jako autor jazyka specifické pro doménu (DSL) můžete definovat omezení ověřování, abyste ověřili smysluplný model vytvořený uživatelem. Pokud vaše DSL umožňuje uživatelům kreslení rodiny strom osoby a jejich nadřazených, můžete například napsat omezení, které zajistí, že podřízené položky data narození po svých nadřazených složek.
@@ -140,7 +141,7 @@ public partial class ParentsHaveChildren
 
  V příkladu platí pro následující modelu domény. Relace ParentsHaveChildren má role, které jsou s názvem podřízenými a nadřazenými.
 
- ![Diagram DSL definice &#45; rodiny stromu modelu](../modeling/media/familyt_person.png "FamilyT_Person")
+ ![Diagram DSL definice &#45; rodiny stromu modelu](../modeling/media/familyt_person.png)
 
 ## <a name="validation-categories"></a>Ověření kategorie
  V <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> atribut, zadejte v případě, že metodu ověřování, kterou se má provést.

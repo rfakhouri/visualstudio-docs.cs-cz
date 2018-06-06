@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 239d1966c45aaebc8960601372852704935d5fcf
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751602"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Konfigurace iterací testů ve scénáři zátěžového testu
 
@@ -42,7 +43,7 @@ Můžete zadat maximální počet pokusů, které chcete spustit testy pro scén
 
  **Maximální testovacích iterací** vlastnost je užitečná pro různé situace. Některé zatížení testery přednost chování na základě iterace testování, zatímco jiné zatížení testery přednost chování na základě doby trvání testování.
 
- ![Určení iterací testů ve scénáři](../test/media/loadtest_prop.png "LoadTest_Prop")
+ ![Určení iterací testů ve scénáři](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Chcete-li určit maximální testovacích iterací
 
@@ -88,7 +89,7 @@ Můžete zadat maximální počet pokusů, které chcete spustit testy pro scén
 
 5. Po dokončení změn vlastnosti, vyberte **Uložit** na **souboru** nabídky. Potom můžete spustit vaší zátěžového testu pomocí nové **vezměte v úvahu dobu mezi testování iterací** hodnotu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Úpravy scénářů zátěžových testů](../test/edit-load-test-scenarios.md)
 - [Konfigurace testovacích agentů a testovací kontrolery pro zátěžové testy](../test/configure-test-agents-and-controllers-for-load-tests.md)

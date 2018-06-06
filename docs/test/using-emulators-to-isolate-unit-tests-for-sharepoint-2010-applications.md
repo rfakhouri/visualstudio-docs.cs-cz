@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 13f06279857897ba1562c157a7ffa1c76dd3c6c8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 020bdb53a62d49eeaf3431c7cca45198c9a2266d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751777"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Izolace testů jednotek aplikací pro SharePoint 2010 s použitím emulátorů
 Balíček Microsoft.SharePoint.Emulators poskytuje sadu knihoven, které vám pomohou vytvořit testy izolované jednotek aplikací pro Microsoft SharePoint 2010. Použít emulátorů [překrytí](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) z [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) izolace rámec vytvořit jednoduché objekty v paměti, které napodobují nejběžnější objekty a metody rozhraní API služby SharePoint. Pokud není emulovaných metoda služby SharePoint, nebo pokud chcete změnit výchozí chování emulátoru, můžete vytvořit překrytí Fakes výsledky, které chcete poskytnout.
@@ -33,7 +34,7 @@ Balíček Microsoft.SharePoint.Emulators poskytuje sadu knihoven, které vám po
 ##  <a name="BKMK_The_AppointmentsWebPart_example"></a> Příklad AppointmentsWebPart
  AppointmentsWebPart umožňuje zobrazit a spravovat seznam serveru SharePoint událostí.
 
- ![Události webovou část](../test/media/ut_emulators_appointmentswebpart.png "UT_EMULATORS_AppointmentsWebPart")
+ ![Webová část událostí](../test/media/ut_emulators_appointmentswebpart.png)
 
  Otestujeme dvě metody webové části v tomto příkladu:
 
@@ -118,7 +119,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
 3.  Hledání **Online** kategorii pro `Microsoft.SharePoint.Emulators`a potom zvolte **nainstalovat**.
 
- ![Balíček NuGet emulátorů SharePoint](../test/media/ut_emulators_nuget.png "UT_EMULATORS_Nuget")
+ ![Balíček NuGet emulátorů služby SharePoint](../test/media/ut_emulators_nuget.png)
 
 ###  <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> Spuštění testu metody s emulace
  Instalace balíčku přidá odkazy na požadované knihovny do vašich projektů. Chcete-li snadno použitelný emulátorů v existující třídy test, přidat obory názvů `Microsoft.SharePoint.Emulators` a `Microsoft.QualityTools.Testing.Emulators`.
@@ -155,7 +156,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
  Po provedení testů metoda volá runtime emulátoru Microsoft Fakes dynamicky vložení kódu do služby SharePoint metod k volání na tyto metody na delegáty, které jsou deklarované v Microsoft.SharePoint.Fakes.dll přesměrovat. Microsoft.SharePoint.Emulators.dll implementuje delegáty pro emulované metody úzce mimicking skutečné chování služby SharePoint. Když součást testovaného nebo testovací metoda volá metodu služby SharePoint, chování, která způsobí, že je u emulaci.
 
- ![Tok provádění emulátoru](../test/media/ut_emulators_flowchart.png "UT_EMULATORS_FlowChart")
+ ![Emulátor provádění toku](../test/media/ut_emulators_flowchart.png)
 
 ##  <a name="BKMK_Creating_dual_use_classes_and_methods"></a> Vytváření duální použití třídy a metody
  K vytvoření metody, které lze použít pro obě integrace testy skutečné rozhraní API služby SharePoint a testy izolované jednotek, které používají emulátorů, použijte přetížené konstruktor `SharePointEmulationScope(EmulationMode)` zabalit testovacího kódu metoda. Dvě hodnoty `EmulationMode` výčtu zadejte, zda rozsah používá emulátorů (`EmulationMode.Enabled`) nebo zda oboru používá rozhraní API služby SharePoint (`EmulationMode.Passthrough`).
@@ -266,11 +267,11 @@ namspace MySPAppTests
 
 1.  Pokud chcete na kód shim SharePoint třídu, která není emulovaných, upravte soubor Microsoft.SharePoint.fakes a přidejte třídu do seznamu shimmed třídy. Najdete v článku [konfigurace kódu generování zástupných procedur a překrytí](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs) části [vytváření, kompilace a konvence pojmenování ve Microsoft Fakes kódu](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md).
 
-     ![Fakes složky v Průzkumníku řešení](../test/media/ut_emulators_fakesfilefolder.png "UT_EMULATORS_FakesFileFolder")
+     ![Fakes složky v Průzkumníku řešení](../test/media/ut_emulators_fakesfilefolder.png)
 
 2.  Projekt znovu sestavte testovací alespoň jednou po instalaci balíčku emulátorů Microsoft SharePoint, a pokud jste upravili Microsoft.SharePoint.Fakes souboru. Sestavení projektu vytvoří a naplní **FakesAssembly** složky v kořenové složce projektu na disku.
 
-     ![Složka FakesAssembly](../test/media/ut_emulators_fakesassemblyfolder.png "UT_EMULATORS_FakesAssemblyFolder")
+     ![FakesAssembly složky](../test/media/ut_emulators_fakesassemblyfolder.png)
 
 3.  Přidat odkaz na **Microsoft.SharePoint.14.0.0.0.Fakes.dll** sestavení, které se nachází v **FakesAssembly** složky.
 
@@ -545,7 +546,7 @@ namspace MySPAppTests
 
  [Microsoft.SharePoint.SPWebCollection](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPWebCollection)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Testování částí kódu](../test/unit-test-your-code.md)
 - [Testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)

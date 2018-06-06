@@ -16,7 +16,7 @@ ms.openlocfilehash: a6eb52273633e0b65aa4a7a7049198c49c20633d
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34476999"
 ---
 # <a name="understand-sampling-data-values"></a>Pochopení hodnotám dat vzorkování

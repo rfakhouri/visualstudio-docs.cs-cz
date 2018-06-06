@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8e17d0f9e25616f70e1d5f74cd0ed4916efc7b8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7a5f87a83b8c743ae869a700618051e07c8c2e75
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750919"
 ---
 # <a name="how-to-specify-plot-options-for-graphing-counters"></a>Postupy: Určení možností grafu pro čítače grafů
 
 **Vykreslení možnosti** dialogové okno umožňuje změnit styl barvy a řádku možná vykreslená čítače v grafu. Lze také nastavit rozsah na konkrétní hodnotu nebo nastavit to, aby byl rozsah automaticky upraven na základě vzorkovaných dat.
 
-![Vykreslení dialogovém okně Možnosti](../test/media/ltest_plotoptions.png "LTest_PlotOptions")
+![Vykreslení dialogové okno Možnosti](../test/media/ltest_plotoptions.png)
 
 ## <a name="to-specify-plotting-options-for-graphs"></a>Určení možností zobrazování grafů
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/26/2018
 
      Čítač výkonu, pro který jste změnili možnosti, se zobrazí v grafu se změnami, které jste zadali.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Analýza výsledků zátěžových testů v zobrazení grafů](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Postupy: vytváření vlastních grafů](../test/how-to-create-custom-graphs-in-load-test-results.md)

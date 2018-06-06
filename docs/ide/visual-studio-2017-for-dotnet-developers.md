@@ -12,11 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd517cd859f47f9b4cb41884bd116005aa31fa29
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748748"
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Visual Studio 2017 produktivitu Příručka pro vývojáře .NET
 
@@ -88,7 +89,7 @@ Visual Studio 2017 se dodává s velkým množstvím refaktoring, kód generová
   - [SonarLint pro sadu Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 
-![Refaktoring v sadě Visual Studio](../ide/media/VSGuide_CodeAnalysis.png "VSGuide_CodeAnalysis")
+![Refaktoring v sadě Visual Studio](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>Potřebuji použití najít, přejděte k implementaci, přejděte k Decompiled sestavení
 Visual Studio 2017 obsahuje mnoho funkcí pro usnadnění hledání a přejděte vaší základu kódu. Další informace o [Code vlastnosti navigace](../ide/navigating-code.md)
@@ -119,7 +120,7 @@ Přidali jsme tuny nové schopnosti ladění ve Visual Studio 2017.
 - [Krok zpět](../debugger/how-to-use-intellitrace-step-back.md) ladění můžete přejít zpět na předchozí zarážky nebo kroky a zobrazení stavu aplikace, stejně jako tomu bylo v minulosti.
 - [Ladění snímku](/azure/application-insights/app-insights-snapshot-debugger) umožňuje prozkoumat stav za provozu webové aplikace se momentálně došlo k výjimce (musí být v Azure).
 
-![Nového pomocníka výjimka v VS2017](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
+![Nového pomocníka výjimka v VS2017](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Chci použití správy verzí s projekty.
 Git nebo TFVC slouží k ukládání a aktualizujte kód v sadě Visual Studio.

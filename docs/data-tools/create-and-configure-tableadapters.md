@@ -1,5 +1,5 @@
 ---
-title: Vytvoření a konfigurace TableAdapters
+title: Vytvoření a konfigurace objektů TableAdapter
 ms.date: 09/01/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,13 +16,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c59128fe0ed0c1053c044431bbde68fb5906de31
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76c00f33bfcf277dcad9fdda32661b29e08bbfc3
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748954"
 ---
-# <a name="create-and-configure-tableadapters"></a>Vytvoření a konfigurace TableAdapters
+# <a name="create-and-configure-tableadapters"></a>Vytvoření a konfigurace objektů TableAdapter
 Objekty TableAdapter umožňují komunikaci mezi aplikací a databází. Připojení k databázi, spusťte dotazy nebo uložené procedury a vraťte se nová data tabulky nebo zadejte existující <xref:System.Data.DataTable> s vrácená data. TableAdapters můžete také odeslat aktualizovaná data z vaší aplikace zpět do databáze.
 
 TableAdapters jsou vytvořeny pro můžete provést jednu z následujících akcí:
@@ -40,7 +41,7 @@ Můžete také vytvořit nové TableAdapter a nakonfigurovat ho se zdrojem dat t
 ## <a name="use-the-tableadapter-configuration-wizard"></a>Pomocí Průvodce konfigurací TableAdapter
 Spustit **Průvodce nastavením TableAdapter** k vytváření a úpravám objektů TableAdapters a jejich přidružené DataTables. Můžete nakonfigurovat existující TableAdapter kliknutím pravým tlačítkem na jeho **návrháře Dataset**.
 
-![raddata Průvodce konfigurací adaptéru tabulky](../data-tools/media/raddata-table-adapter-configuration-wizard.png "raddata Průvodce konfigurací adaptéru tabulky")
+![raddata Průvodce konfigurací adaptéru tabulky](../data-tools/media/raddata-table-adapter-configuration-wizard.png)
 
 Pokud přetáhněte nové TableAdapter z panelu při **návrháře Dataset** má zaměřit, spustí průvodce a vyzve k zadání datových zdroje TableAdapter by se měly připojit. Na další stránce Průvodce zobrazí dotaz, jaký druh příkazy, měla by používat ke komunikaci s databází, příkazy SQL nebo uložené procedury. (Můžete nebude vidět, pokud konfigurujete TableAdapter, který je už přidružená ke zdroji dat.)
 
@@ -63,7 +64,7 @@ Namapujte parametry z vybraná uložená procedura na odpovídající sloupce v 
 ## <a name="configure-a-tableadapters-fill-method"></a>Konfigurace TableAdapter Fill – metoda
 V některých případech můžete chtít změnit schéma tabulky TableAdapter. K tomuto účelu upravíte TableAdapter primární `Fill` metoda. TableAdapters jsou vytvořeny pomocí primární `Fill` metody, která definuje schéma tabulky přidružená data. Primární `Fill` metoda je založena na dotazu nebo uložené procedury, které jste zadali, když jste nakonfigurovali TableAdapter. Je první metodu (nejhornější) v tabulce dat v Návrháři DataSet.
 
-![TableAdapter s více dotazy](../data-tools/media/tableadapter.gif "TableAdapter")
+![TableAdapter s více dotazy](../data-tools/media/tableadapter.gif)
 
 Veškeré změny, které provedete TableAdapter je hlavní `Fill` metoda se projeví ve schématu tabulky přidružená data. Například odebrání sloupce z dotazu v hlavní `Fill` metoda také odebere sloupce z tabulky přidružená data. Kromě toho odebrání sloupce z hlavní `Fill` metoda odebere sloupec žádné další dotazy pro tento TableAdapter.
 
@@ -110,6 +111,6 @@ Následující příklad ukazuje, jak volat další dotaz s názvem `FillByCity`
     > [!NOTE]
     >  Přetahování **dotazu** přímo do objektu **návrháře Dataset** vytvoří metodu, která vrátí pouze skalární hodnota (jeden). Při dotazu nebo uložené procedury, kterou vyberete může vrátit více než jednu hodnotu, vrátí metoda, která je vytvořené průvodcem pouze jednu hodnotu. Například dotaz může vrátit první sloupec prvního řádku vrácená data.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vyplnění datové sady s použitím objektů TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

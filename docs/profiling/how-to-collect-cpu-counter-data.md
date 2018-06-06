@@ -14,15 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994a50e66164dcd7a2a3768c8284825019e281e1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765096"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Postupy: Shromažďování dat čítačů procesoru
+# <a name="how-to-collect-cpu-counter-data"></a>Postupy: shromažďování dat čítačů procesoru
 
-Čítač Procesor událostí se používá ke shromažďování dat výkonu hardwaru. Toto téma ukazuje, jak shromažďování dat čítačů událostí při použití metoda profilování instrumentace.
+Čítač Procesor událostí se používá ke shromažďování dat výkonu hardwaru. Tento článek ukazuje, jak shromažďování dat čítačů událostí při použití metoda profilování instrumentace.
 
 Provedou se dva typy událostí čítače procesoru:
 
@@ -59,9 +60,9 @@ Provedou se dva typy událostí čítače procesoru:
     > [!NOTE]
     > **K dispozici čítače** je povoleno pouze v případě, že jste vybrali **čítače CPU shromažďovat** zaškrtávací políčko.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)  
 [Vlastnosti výkonnostní relace](../profiling/performance-session-properties.md)  
-[Využití procesoru a čítačů systému Windows](../profiling/cpu-and-windows-counters.md)  
-[Postupy: výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md)
+[Čítače procesoru a systému Windows](../profiling/cpu-and-windows-counters.md)  
+[Postupy: Výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md)

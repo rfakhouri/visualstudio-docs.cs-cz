@@ -28,14 +28,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2a9cb18d1b9de7f4f67f8c3d153a9dfa4598612d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691529"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765723"
 ---
-# <a name="creating-web-parts-for-sharepoint"></a>Vytvoření webové části pro službu SharePoint
+# <a name="create-web-parts-for-sharepoint"></a>Vytvoření webové části pro službu SharePoint
   Pomocí webové části můžete upravit obsah, vzhled a chování stránek webu služby SharePoint pomocí prohlížeče. Webové části jsou serverové ovládací prvky, které běží v stránku webové části: jsou stavební bloky stránek, které se zobrazují na web služby SharePoint. V tématu [stavebním blokem: webové části](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Můžete vytvořit a ladit webové části na web služby SharePoint pomocí šablony ze sady Visual Studio.  
@@ -50,7 +50,7 @@ ms.locfileid: "34691529"
   
 |Soubor|Popis|  
 |----------|-----------------|  
-|Elements.XML|Obsahuje informace, které soubor definice funkce v projektu používá k nasazení webové části.|  
+|*Elements.XML*|Obsahuje informace, které soubor definice funkce v projektu používá k nasazení webové části.|  
 |soubor .webpart|Poskytuje informace, které je potřeba zobrazení webové části v galerii webových částí služby SharePoint.|  
 |Souboru kódu|Obsahuje metody, která přidání ovládacích prvků do webové části a který generovat vlastní obsah v rámci webové části.|  
   
@@ -65,14 +65,14 @@ ms.locfileid: "34691529"
 |Název ovládacího prvku|Popis|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Vloží nabídce ASP. Další informace najdete v tématu [– Přehled ovládacího prvku nabídka](http://go.microsoft.com/fwlink/?LinkId=235316).|  
-|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Vloží **odkaz** prvku do stránky .aspx a použije jeden nebo více externí šablony stylů definované **CssRegistration**.|  
-|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Vloží data a času ovládacího prvku do stránky .aspx.|  
-|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Vloží do stránky .aspx ověření zabezpečení|  
+|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Vloží **odkaz** element do *.aspx* stránky a použije jeden nebo více externí šablony stylů definované **CssRegistration**.|  
+|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Vloží do ovládacího prvku data a času *.aspx* stránky.|  
+|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Vloží ověření zabezpečení do *.aspx* stránky|  
 |[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|Vrátí hodnotu vlastnosti zadaného seznamu.|  
 |[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|Vrátí globální vlastnost aktuální webové stránky.|  
-|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Vloží odkaz informačního kanálu RSS na stránce .aspx.|  
+|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Vloží odkaz informačního kanálu RSS do *.aspx* stránky.|  
 |[Žádost ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Poskytuje vlastnosti a metody pro registraci prostředky, například skripty, na stránce tak, aby mohou být požadována při vykreslení stránky.|  
-|[Motiv](http://go.microsoft.com/fwlink/?LinkId=235314)|Použije motiv na stránku .aspx.|  
+|[Motiv](http://go.microsoft.com/fwlink/?LinkId=235314)|Použije motiv na *.aspx* stránky.|  
   
 ## <a name="debug-a-web-part"></a>Ladění webové části
  Můžete ladit projektu služby SharePoint, který obsahuje webovou část stejně, jako by ladění jiných projektů sady Visual Studio. Při spuštění ladicího programu sady Visual Studio, Visual Studio otevře web služby SharePoint.  

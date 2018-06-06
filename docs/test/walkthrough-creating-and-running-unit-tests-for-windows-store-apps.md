@@ -14,11 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 4de04bcd612c11f2b739fbdb1521008a45a3aead
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751712"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Návod: Vytváření a spouštění testování částí pro aplikace UWP
 
@@ -45,11 +46,11 @@ Následující postupy popisují postup vytvoření, spuštění a ladění test
 
 6.  Ponechte **vytvořit adresář pro řešení** možnost vybrána a vyberte **OK** tlačítko.
 
-     ![Přizpůsobit knihovny Test jednotky](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")
+     ![Knihovna testovací šité na míru jednotky](../test/media/unit_test_win8_1.png)
 
      Průzkumník řešení je naplněna projektu testování částí UWP a editoru kódu zobrazí výchozí testu jednotek s názvem UnitTest1.
 
-     ![Nový projekt test šité na míru jednotky](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![Nový projekt test šité na míru jednotky](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Úprava souboru manifestu aplikace UWP projektu testování částí
 
@@ -99,13 +100,13 @@ V editoru kódu upravit testování částí a přidat vyhodnotí a logiku potř
     >
     > Kromě toho můžete **ladění vybrané testy**, **otevřete testovací**a použít **vlastnosti** možnost.
     >
-    > ![Průzkumníka testů jednotek &#45; uni testovací kontextovou nabídku](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![Průzkumníka testů jednotek &#45; uni testovací kontextové nabídky](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
     Jednotka test spustí. Po dokončení testování Explorer zobrazí stav testu, uplynulý čas a obsahuje odkaz na zdroj.
 
     ![Průzkumníka testů jednotek &#45; test byla dokončena](../test/media/unit_test_win8_unittestexplorer_done.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Testování aplikací pro UWP se sadou Visual Studio](../test/testing-store-apps-with-visual-studio.md)
 - [Vytvoření a testování aplikací UWP](/vsts/build-release/apps/windows/universal?tabs=vsts)

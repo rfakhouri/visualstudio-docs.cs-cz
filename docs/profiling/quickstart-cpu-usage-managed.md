@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c55c4bde3a1cc5cc6a6f150f9e73b4d56f510be5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 69b1179763433213539af81bf29e34d09e98bf3b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34477220"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750282"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Rychlý úvod: Analyzujte data o využití procesoru v sadě Visual Studio (spravovaný kód)
 
@@ -33,7 +33,7 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
 
 1. V sadě Visual Studio, vyberte **soubor > Nový projekt**.
 
-2. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **Windows Classic Desktop**a potom v prostředním podokně vyberte **konzolovou aplikaci (rozhraní .NET Framework)**.
+2. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **konzolovou aplikaci (rozhraní .NET Framework)**.
 
 3. Zadejte název jako **MyProfilerApp** a klikněte na tlačítko **OK**.
 
@@ -48,7 +48,7 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
         const int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
         long m_totalIterations = 0;
         readonly object m_totalItersLock = new object();
         // The method that will be called when the thread is started.
@@ -56,10 +56,10 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
         {
             Console.WriteLine(
                 "ServerClass.InstanceMethod is running on another thread.");
-    
+
             var x = GetNumber();
         }
-    
+
         private int GetNumber()
         {
             var rand = new Random();
@@ -69,8 +69,8 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -78,7 +78,7 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
             return result;
         }
     }
-    
+
     public class Simple
     {
         public static void Main()
@@ -91,14 +91,14 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
         public static void CreateThreads()
         {
             ServerClass serverObject = new ServerClass();
-    
+
             Thread InstanceCaller = new Thread(new ThreadStart(serverObject.DoWork));
             // Start the thread.
             InstanceCaller.Start();
-    
+
             Console.WriteLine("The Main() thread calls this after "
                 + "starting the new InstanceCaller thread.");
-    
+
         }
     }
     ```
@@ -106,21 +106,21 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
     ```vb
     Imports System
     Imports System.Threading
-    
+
     Namespace MyProfilerApp
         Public Class ServerClass
             Const MIN_ITERATIONS As Integer = Integer.MaxValue / 1000
             Const MAX_ITERATIONS As Integer = MIN_ITERATIONS + 10000
-    
+
             Private m_totalIterations As Long = 0
             ReadOnly m_totalItersLock As New Object()
             ' The method that will be called when the thread is started.
             Public Sub DoWork()
                 Console.WriteLine("ServerClass.InstanceMethod is running on another thread.")
-    
+
                 Dim x = GetNumber()
             End Sub
-    
+
             Private Function GetNumber() As Integer
                 Dim rand = New Random()
                 Dim iters = rand.[Next](MIN_ITERATIONS, MAX_ITERATIONS)
@@ -128,15 +128,15 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
                 SyncLock m_totalItersLock
                     m_totalIterations += iters
                 End SyncLock
-                ' we're just spinning here  
-                ' and using Random to frustrate compiler optimizations  
+                ' we're just spinning here
+                ' and using Random to frustrate compiler optimizations
                 For i As Integer = 0 To iters - 1
                     result = rand.[Next]()
                 Next
                 Return result
             End Function
         End Class
-    
+
         Public Class Simple
             Public Shared Sub Main()
                 For i As Integer = 0 To 199
@@ -145,13 +145,13 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
             End Sub
             Public Shared Sub CreateThreads()
                 Dim serverObject As New ServerClass()
-    
+
                 Dim InstanceCaller As New Thread(New ThreadStart(AddressOf serverObject.DoWork))
                 ' Start the thread.
                 InstanceCaller.Start()
-    
+
                 Console.WriteLine("The Main() thread calls this after " + "starting the new InstanceCaller thread.")
-    
+
             End Sub
         End Class
     End Namespace
@@ -160,8 +160,8 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
     > [!NOTE]
     > V jazyce Visual Basic, ujistěte se objekt spuštění je nastavena na `Sub Main` (**vlastnosti > aplikace > spouštěcí objekt**).
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>1. krok: Shromáždění profilačních dat 
-  
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>1. krok: Shromáždění profilačních dat
+
 1.  Nejdřív nastavit zarážky ve vaší aplikaci tento řádek kódu `Main` funkce:
 
     `for (int i = 0; i < 200; i++)`
@@ -178,7 +178,7 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
 
     > [!TIP]
     > Nastavením dvou zarážek omezíte shromažďování dat jenom na analyzovanou část kódu.
-  
+
 3.  **Diagnostické nástroje** okno již viditelné, pokud jste vypnuli ho. Pokud ho chcete znovu zobrazit, klikněte na **Ladit / Okna / Zobrazit diagnostické nástroje**.
 
 4.  Klikněte na **Ladit / Spustit ladění** (nebo na panelu nástrojů stiskněte **Start** nebo **F5**).
@@ -198,7 +198,7 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
      Teď máte údaje o výkonu aplikace přesně pro oblast kódu spuštěnou mezi dvěma zarážkami.
 
      Profiler začne připravovat údaje o vlákně. Počkejte, až skončí.
-  
+
      V nástroji Využití procesoru se na kartě **Využití procesoru** zobrazí sestava.
 
      Teď můžete začít analyzovat data.
@@ -216,7 +216,7 @@ Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kar
 
 2. V seznamu funkce dvakrát klikněte `ServerClass::GetNumber` funkce.
 
-    Když dvakrát kliknete funkce **volající/volaný** zobrazení se otevře v levém podokně. 
+    Když dvakrát kliknete funkce **volající/volaný** zobrazení se otevře v levém podokně.
 
     ![Zobrazení Volající/volaný v diagnostických nástrojích](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
 
@@ -235,7 +235,7 @@ Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kar
 - [Analýza využití procesoru](../profiling/cpu-usage.md) podrobnější informace o nástroji využití procesoru.
 - Analýza využití procesoru bez připojit ladicí program nebo cílením spuštěné aplikaci - Další informace najdete v tématu [shromažďování dat profilaci bez ladění](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) v [spustit profilování nástroje s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také
 
- [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)
+- [Profilace v sadě Visual Studio](../profiling/index.md)
+- [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)

@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b293c5a6fe64324cb306933d90049548e7a6098
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bda60d1e18f18d602f95d1eafb5843811cdc5f24
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765164"
 ---
 # <a name="net-memory-allocations-view"></a>Přidělení paměti .NET – zobrazení
 Zobrazení přidělení obsahuje typy, které byly vytvořeny při profilování spustit. Každý typ je kořenový uzel stromu volání, která zobrazuje funkce cesty provádění, jejichž výsledkem přidělení typu.  
@@ -34,7 +35,7 @@ Zobrazení přidělení obsahuje typy, které byly vytvořeny při profilování
   
  Data pro funkce zobrazuje počet objekty vytvořené a počet bajtů přidělených pro objekty typu nadřazený.  
   
-## <a name="highlighting-the-execution-hot-path"></a>Zvýraznění aktivní trase provádění  
+## <a name="highlight-the-execution-hot-path"></a>Zvýraznit cestu aktivní provádění  
  Můžete najít cestu spuštění stromu volání, který vytvořili většinu objektů typu nadřazený.  
   
 -   Zobrazení Nejaktivnější cesty, klikněte pravým tlačítkem na typ nebo funkci a pak klikněte na tlačítko **rozbalte aktivní trase**.  

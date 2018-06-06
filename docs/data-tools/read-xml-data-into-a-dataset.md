@@ -1,5 +1,5 @@
 ---
-title: Čtení dat XML do datové sady
+title: Načtení dat XML do datové sady
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,13 +22,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d54811f2fe46733d256a473c5fcb1c523a15a71e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bda3c6914259232eb3b579caaf2eb0a4f0d2e16e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745933"
 ---
-# <a name="read-xml-data-into-a-dataset"></a>Čtení dat XML do datové sady
+# <a name="read-xml-data-into-a-dataset"></a>Načtení dat XML do datové sady
 ADO.NET poskytuje jednoduché metody pro práci s daty XML. V tomto návodu vytvoříte aplikace Windows, která načte XML data do datové sady. Datová sada se následně zobrazí <xref:System.Windows.Forms.DataGridView> ovládacího prvku. Nakonec schématu XML na základě obsahu souboru XML se zobrazí v textovém poli.
 
  Tento názorný postup se skládá z pěti hlavních kroků:
@@ -53,7 +54,7 @@ ADO.NET poskytuje jednoduché metody pro práci s daty XML. V tomto návodu vytv
 
 1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu...** .
 
-2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Classic Desktop**.
+2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Desktop**.
 
 3. V prostředním podokně, vyberte **aplikace pro Windows Forms** typ projektu.
 
@@ -243,7 +244,7 @@ ADO.NET poskytuje jednoduché metody pro práci s daty XML. V tomto návodu vytv
 
 -   Úpravy dat v datové sadě a zapsat je do databáze. Další informace najdete v tématu [ukládání dat](../data-tools/saving-data.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Nástroje XML v sadě Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

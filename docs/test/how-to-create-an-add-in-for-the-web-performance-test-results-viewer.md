@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 720a5d7ca5dfd0d8ab21100fa41c5b249a99858d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751673"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Postupy: Vytvoření doplňku sady Visual Studio pro prohlížeč výsledků testu výkonnosti webu
 
@@ -135,7 +136,7 @@ Doplněk sady Visual Studio vytvořili v předchozím postupu odkazuje na projek
 
 6.  Ze sady nástrojů, přetáhněte <xref:System.Windows.Forms.DataGridView> na plochu userControl1.
 
-7.  Klikněte na tlačítko glyfy značky akce (![inteligentní značky glyfy](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) v pravém horním rohu <xref:System.Windows.Forms.DataGridView> a postupujte podle těchto kroků:
+7.  Klikněte na tlačítko glyfy značky akce (![inteligentní značky glyfy](../test/media/vs_winformsmttagglyph.gif)) v pravém horním rohu <xref:System.Windows.Forms.DataGridView> a postupujte podle těchto kroků:
 
     1.  Zvolte **ukotvení v nadřazený kontejner**.
 
@@ -364,7 +365,7 @@ Kromě toho tato stránka Možnosti můžete zadat složky, ve kterých vyhledá
 
 -   **Umožňuje přidat součásti načíst z adresy URL.** Není vybrán ve výchozím nastavení. Při výběru doplňky mohou být načten z externích webových stránek. Pokud není vybrána, vzdálené doplňky nesmějí načítání v sadě Visual Studio. Pokud z nějakého důvodu nelze načíst doplněk, pak ho nelze načíst z webu. Toto nastavení řídí pouze načítání knihovnu DLL. Na. Doplněk registrační soubory musí být vždy umístěny v místním systému.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - <xref:System.Windows.Forms.UserControl>
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>

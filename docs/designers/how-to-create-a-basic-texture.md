@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d58cbb439eb370af16ee68ca03a4d1db467861f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745627"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Postupy: Vytvoření základní textury
 Tento dokument ukazuje, jak vytvořit základní texture pomocí editoru obrázků.
@@ -36,7 +37,7 @@ Tento dokument ukazuje, jak vytvořit základní texture pomocí editoru obrázk
 
  Následující kroky ukazují, jak vytvořit texture, který představuje cíl "terč". Po dokončení textury by měla vypadat jako na následujícím obrázku. K předvedení lépe průhlednost v textury, Editor obrázků má nakonfigurované použití vzoru zelený, šachovnicová mřížka můžete ho zobrazit.
 
- !["Terč" cíl s průhlednost zobrazené zeleně](../designers/media/digit-bullseye-texture-in-editor.png "číslice-terč-Texture-v-editoru")
+ !["Terč" cíl s průhlednost zobrazené zeleně](../designers/media/digit-bullseye-texture-in-editor.png)
 
  Než začnete, ujistěte se, že **vlastnosti** zobrazí se okno. Můžete použít **vlastnosti** okna nastavit velikost bitové kopie, změňte vlastnosti nástroje a zadat barvy při práci.
 
@@ -84,10 +85,10 @@ Tento dokument ukazuje, jak vytvořit základní texture pomocí editoru obrázk
 
  Texture cíl "terč" bylo dokončeno. Zde je výsledný obraz, zobrazí s průhlednost.
 
- ![Dokončení "terč" cíle texture](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")
+ ![Cíl textury úplný "terč"](../designers/media/gfx_image_demo_bullseye.png)
 
  Jako další krok můžete vygenerovat MIP úrovně pro tento texture. Informace najdete v tématu [postupy: vytvoření a upravit MIP úrovně](../designers/how-to-create-and-modify-mip-levels.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Editor obrázků](../designers/image-editor.md)

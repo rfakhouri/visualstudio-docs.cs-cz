@@ -11,16 +11,17 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc3f85e776fa7ec45bd157a9cffe99f6ac0b1aac
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: fd9703e6d18f075cb1033a03552caa7708b719b7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751385"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalace podpory Python v sadě Visual Studio
 
 > [!Note]
-> Podpora jazyka Python je v současné době dostupná jenom na Visual Studio pro Windows; na Mac a Linux Python podpora je k dispozici prostřednictvím Visual Studio Code. V tématu [otázky a odpovědi](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
+> Podpora jazyka Python je v současné době dostupná jenom na Visual Studio pro Windows; na Mac a Linux, je k dispozici prostřednictvím podpory Python [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
 1. Stáhněte a spusťte nejnovější verzi instalačního programu Visual Studio 2017 pro Windows (podpora v jazyce Python je součástí verze 15.2 a novější). Pokud máte už nainstalovanou sadu Visual Studio, spusťte instalační program sady Visual Studio a přejděte ke kroku 2.
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 05/07/2018
 > [!div class="nextstepaction"]
 > [Krok 1: Vytvoření projektu jazyka Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Ručně identifikace existující překladač Pythonu](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 - [Instalace podpory Python v sadě Visual Studio 2015 a starší](installing-python-support-in-visual-studio.md).

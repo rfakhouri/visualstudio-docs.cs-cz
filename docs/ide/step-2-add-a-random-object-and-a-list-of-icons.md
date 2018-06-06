@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95996165351be2ead2f24556da1bfdcdd6fcc048
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 84c9c837fdb812b18f72e768b8ee528118b28777
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746829"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Krok 2: Přidejte náhodný objekt a seznam ikon
 V tomto kroku vytvoříte sadu odpovídajících symbolů pro hru. Každý symbol je přidán do dvou náhodných buněk v kontejneru TableLayoutPanel ve formuláři. K tomuto účelu použijete, dva `new` příkazy k vytvoření dvou objektů. První je <xref:System.Random> objekt, jako jste použili ve hře matematický kvízu s časovým limitem. V tomto kódu slouží k náhodnému výběru buněk v kontejneru TableLayoutPanel. Druhý objekt, který může být pro vás nový, je <xref:System.Collections.Generic.List%601> objekt, který se používá k ukládání náhodně zvolenou symboly.
@@ -35,7 +36,7 @@ V tomto kroku vytvoříte sadu odpovídajících symbolů pro hru. Každý symbo
 
 3.  Při přidávání objektu seznamu, Všimněte si **IntelliSense** otevřeném okně. Následuje příklad pro jazyk Visual C#, ale podobný text se zobrazí také při přidávání seznamu v jazyce Visual Basic.
 
-     ![Vlastnosti – okno zobrazení klikněte na událost](../ide/media/express_listintellisense.png "Express_ListIntellisense") okno technologie IntelliSense
+     ![Vlastnosti – okno zobrazení klikněte na událost](../ide/media/express_listintellisense.png) okno technologie IntelliSense
 
     > [!NOTE]
     >  Pouze v případě, že ručně zadejte kód, zobrazí se okno IntelliSense. Pokud kód zkopírujete a vložíte, nezobrazí se.

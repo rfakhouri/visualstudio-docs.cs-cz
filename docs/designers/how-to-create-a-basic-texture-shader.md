@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea7bd7368dbdd5d66f1921d555fbbf731cebd664
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c73ba8007bf107f9dae5cc1422fb582aa5415916
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747050"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Postupy: Vytvoření shaderu základní textury
 
 Tento článek ukazuje, jak vytvořit jeden texture shaderu pomocí návrháře shaderu a jazyk shaderu grafu (DGSL) přesměruje. Tato shaderu nastaví barvu konečné přímo na RGB a alfa hodnot, které jsou odebírána data z textury.
 
-## <a name="create-a-basic-texture-shader"></a>Vytvořte základní texture shaderu
+## <a name="create-a-basic-texture-shader"></a>Vytvoření shaderu základní textury
 
 Základní, jedním texture shaderu můžete implementovat pomocí zápisu barvy a alfa hodnot ukázku texture přímo do barvu závěrečný výstup.
 
@@ -47,11 +48,11 @@ Následující obrázek znázorňuje dokončené shaderu graf a náhled shaderu 
 > [!NOTE]
 > V tomto obrázku rovině slouží jako tvaru preview a texturou byla zadána lépe předvedení účinek shaderu.
 
-![Graf shaderu a náhled jeho dopad](../designers/media/digit-texture-effect.png "číslice. Texture vliv")
+![Graf shaderu a náhled jeho dopad](../designers/media/digit-texture-effect.png)
 
 Určité tvarů může poskytovat lepší verze Preview pro některé shadery. Další informace o tom, jak zobrazit náhled shadery v Návrháři shaderu najdete v tématu [shaderu návrháře](../designers/shader-designer.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Editor obrázků](../designers/image-editor.md)

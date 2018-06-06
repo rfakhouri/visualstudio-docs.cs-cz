@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6245647ca0af639bdd960e43f2c1adeed3982562
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750822"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Přidání zdroje dat do testu výkonnosti webu
 
@@ -143,11 +144,11 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
 1. Vytvořte složku pro uspořádání artefakty databáze projekty a přidejte položku.
 
-     ![Přidání nové položky ke složce Data](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![Přidat novou položku do složky dat](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Vytvořte textový soubor.
 
-     ![Název nového textového souboru ColorData.csv](../test/media/web_test_databinding_foldernewitemtextfile.png "Web_Test_DataBinding_FolderNewItemTextFile")
+     ![Název nového textového souboru ColorData.csv](../test/media/web_test_databinding_foldernewitemtextfile.png)
 
 3. Upravit textový soubor a přidejte následující:
 
@@ -159,7 +160,7 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
 4. Postupujte podle kroků v [vazby dat SQL](#AddingDataBindingWebTest_BindSQLData), zvolte soubor CSV jako zdroj dat, ale.
 
-     ![Zadejte název a vyberte soubor CSV](../test/media/web_test_databinding_adddatasourcedialog.png "Web_Test_DataBinding_AddDataSourceDialog")
+     ![Zadejte název a vyberte soubor CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
 ### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Otázka: Co když Můj existující soubor CSV neobsahuje záhlaví sloupců?
 
@@ -167,7 +168,7 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
 1. Přidáte nový textový soubor s názvem schema.ini.
 
-     ![Přidejte soubor schema.ini](../test/media/web_test_databinding_schemafile.png "Web_Test_DataBinding_SchemaFile")
+     ![Přidejte soubor schema.ini](../test/media/web_test_databinding_schemafile.png)
 
 2. Upravte soubor schema.ini přidat informace, které popisuje strukturu vaše data. Například soubor schématu s popisem soubor CSV může vypadat například takto:
 
@@ -178,39 +179,39 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
 3. Přidání zdroje dat na test.
 
-     ![Přidat zdroje dat do testu výkonnosti webu](../test/media/web_test_databinding_sql_adddatasource.png "Web_Test_DataBinding_SQL_AddDataSource")
+     ![Přidat zdroje dat do testu výkonnosti webu](../test/media/web_test_databinding_sql_adddatasource.png)
 
 4. Pokud používáte soubor schema.ini, vyberte jako zdroj dat a název databáze (ne soubor CSV).
 
-     ![Přidat zdroje dat databáze](../test/media/web_test_databinding_adddatasourcecolortext.png "Web_Test_DataBinding_AddDataSourceColorText")
+     ![Přidat zdroje dat databáze](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
 5. Vytvoření nového připojení.
 
-     ![Zvolte nové připojení](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png "Web_Test_DataBinding_SQL_AddDataSourceDialogConnectionNew")
+     ![Zvolte nové připojení](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png)
 
 6. Vyberte zprostředkovatele dat .NET Framework pro OLE DB.
 
-     ![Vyberte zprostředkovatele dat .NET framework OLE DB](../test/media/web_test_databinding_adddatasourcecolortext2.png "Web_Test_DataBinding_AddDataSourceColorText2")
+     ![Vyberte zprostředkovatele dat .NET framework OLE DB](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
 7. Vyberte rozšířené.
 
-     ![Vyberte rozšířené](../test/media/web_test_databinding_advanced.png "Web_Test_DataBinding_Advanced")
+     ![Vyberte rozšířené](../test/media/web_test_databinding_advanced.png)
 
 8. Pro vlastnost poskytovatele vyberte Microsoft.Jet.OLEDB.4.0 a pak nastavte rozšířené vlastnosti k textu. ZÁHLAVÍ = NE.
 
-     ![Použít rozšířené vlastnosti](../test/media/web_test_databinding_advancedproperties.png "Web_Test_DataBinding_AdvancedProperties")
+     ![Použít rozšířené vlastnosti](../test/media/web_test_databinding_advancedproperties.png)
 
 9. Zadejte název složky, která obsahuje soubor schématu a vyzkoušejte připojení.
 
-     ![Zadejte cestu ke složce data](../test/media/web_test_databinding_adddatasourcecolortext5.png "Web_Test_DataBinding_AddDataSourceColorText5")
+     ![Zadejte cestu ke složce dat](../test/media/web_test_databinding_adddatasourcecolortext5.png)
 
 10. Vyberte soubor CSV, který chcete použít.
 
-     ![Vyberte soubor text](../test/media/web_test_databinding_adddatasourcecolortext6.png "Web_Test_DataBinding_AddDataSourceColorText6")
+     ![Vyberte textový soubor](../test/media/web_test_databinding_adddatasourcecolortext6.png)
 
      Po dokončení, zobrazí se soubor CSV jako tabulku.
 
-     ![Zdroj dat přidat k testování](../test/media/web_test_databinding_adddatasourcecolortext7.png "Web_Test_DataBinding_AddDataSourceColorText7")
+     ![Zdroj dat přidat k testování](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
 ### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Otázka: jak používat soubor XML jako zdroj dat?
 
@@ -218,11 +219,11 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
 1. Vytvořte složku pro uspořádání artefakty databáze projekty a přidejte položku.
 
-     ![Přidání nové položky ke složce Data](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![Přidat novou položku do složky dat](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Vytvořte soubor XML.
 
-     ![Přidejte soubor ColorData.xml](../test/media/web_test_databinding_additemxmlfile.png "Web_Test_DataBinding_AddItemXMLFile")
+     ![Přidejte soubor ColorData.xml](../test/media/web_test_databinding_additemxmlfile.png)
 
 3. Upravte soubor XML a přidejte data:
 
@@ -242,7 +243,7 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
 4. Postupujte podle kroků v [vazby dat SQL](#AddingDataBindingWebTest_BindSQLData), vyberte soubor XML jako zdroj dat, ale.
 
-     ![Zadejte název a vyberte soubor XML](../test/media/web_test_databinding_adddatasourcedialogxml.png "Web_Test_DataBinding_AddDataSourceDialogXML")
+     ![Zadejte název a vyberte soubor XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
 ### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Otázka: je možné přidat datové vazby k požadavku webové služby, který používá SOAP?
 
@@ -250,7 +251,7 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
 1. Zvolte žádosti webové služby ve stromové struktuře požadavku a v okně Vlastnosti a potom vyberte se třemi tečkami (...) ve vlastnosti řetězec textu.
 
-     ![Upravit těle webové služby řetězec](../test/media/web_test_databinding_webservicerequest.png "Web_Test_DataBinding_WebServiceRequest")
+     ![Upravit řetězec textu webové služby](../test/media/web_test_databinding_webservicerequest.png)
 
 2. Nahraďte hodnoty v těle protokolu SOAP hodnotami vázané na data pomocí následující syntaxe:
 

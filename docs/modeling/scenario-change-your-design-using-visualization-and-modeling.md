@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 829fd8ed601eae28d367e4b2f3de0a5c7b709985
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 7784bcfc8db3c8f2709bde045622c747a326ddcc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750165"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 
@@ -150,13 +151,13 @@ Večeři nyní musíte odhadnout náklady splňuje nový požadavek. To závisí
 
  Třeba vývojář vytvoří mapa kódu. Jana upraví jeho oboru a zaměřit se na oblasti, které ovlivní nový scénář. Tyto oblasti jsou vybrané a zvýrazní na mapě:
 
- ![Graf závislostí Namespace](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")
+ ![Graf závislostí Namespace](../modeling/media/namespace_reviewsystem.png)
 
  **Namespace Mapa kódu**
 
  Vývojář rozšíří vybrané obory názvů zobrazíte jejich tříd, metod a relace:
 
- ![Graf závislostí rozšířené obor názvů](../modeling/media/dep_reviewsystem.png "Dep_ReviewSystem")
+ ![Graf závislostí rozšířené obor názvů](../modeling/media/dep_reviewsystem.png)
 
  **Mapa kódu rozšířené oboru názvů s viditelné skupinu křížové odkazy**
 
@@ -177,7 +178,7 @@ Večeři nyní musíte odhadnout náklady splňuje nový požadavek. To závisí
 
  Například následující závislost diagram popisuje závislosti mezi vrstvy a počtu artefaktů, které jsou spojeny s každou vrstvu:
 
- ![Diagram závislostí integrované platebních systému](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Diagram závislostí integrované platebních systému](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagram závislostí**
 
@@ -277,19 +278,19 @@ Například večeři nyní musíte odhadnout náklady na komponentu PaymentProce
 
 Následující mapa zobrazuje závislosti mezi třídou PaymentProcessing a dalšími částmi systému večeři teď zobrazovaných vybrané:
 
-![Graf závislostí pro večeři teď platebních systém](../modeling/media/dep_dnpayment.png "Dep_DNPayment")
+![Graf závislostí pro večeři teď platebních systém](../modeling/media/dep_dnpayment.png)
 
 **Mapa kódu večeři teď platebních systému**
 
 Vývojáři jsou zde popsány mapy rozšíření třídy PaymentProcessing a její členy zobrazíte oblastí, které se vztahuje potenciálně výběrem:
 
-![Metody uvnitř PaymentProcessing a závislosti](../modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")
+![Metody uvnitř PaymentProcessing a závislosti](../modeling/media/depgraph_expandeddn.png)
 
 **Metody uvnitř PaymentProcessing třídy a jejich závislosti**
 
 Generují následující mapa pro systém platebních Lucerne zkontrolovat její tříd, metod a závislosti. Tým uvidí Lucerne systému může také vyžadovat pracovní k interakci se ostatní části večeři teď:
 
-![Graf závislostí pro systém platebních Lucerne](../modeling/media/depgraph_lucernepay.png "DepGraph_LucernePay")
+![Graf závislostí pro Lucerne platebních systém](../modeling/media/depgraph_lucernepay.png)
 
 **Mapa kódu pro systém platebních Lucerne**
 
@@ -297,7 +298,7 @@ Jak týmy společně zjištění změn, které jsou nutné k integraci dvou syst
 
 Po reorganizace kód, týmy generovat nové Mapa kódu zobrazíte aktualizované struktura a vztahů:
 
-![Graf závislostí reorganizovány všechny kódem](../modeling/media/depgraph_integrated.png "DepGraph_Integrated")
+![Graf závislostí reorganizovány všechny kódem](../modeling/media/depgraph_integrated.png)
 
 **Mapa kódu reorganizovány všechny kódem**
 
@@ -338,7 +339,7 @@ Tato mapa znázorňuje, že třída PaymentApprover je nyní v oboru názvů Din
 
  Abyste Lucerne popisují a popisují entit, které v případě použití procesu platebních jejich kreslení následující diagram třídy:
 
- ![Zpracování platebních entity v diagramu tříd](../modeling/media/uml_payentities.png "UML_PayEntities")
+ ![Zpracování platebních entity v diagramu – třída](../modeling/media/uml_payentities.png)
 
  **Zpracování platebních entity v diagramu – třída**
 
@@ -346,7 +347,7 @@ Tato mapa znázorňuje, že třída PaymentApprover je nyní v oboru názvů Din
 
  Během vývoje Lucerne používá následující diagram třída popsat a popisují podrobnosti o každé třídě:
 
- ![Zpracování platebních entity podrobnosti o diagramu tříd](../modeling/media/uml_payment.png "UML_Payment")
+ ![Zpracování platebních entity podrobnosti v diagramu – třída](../modeling/media/uml_payment.png)
 
  **Podrobnosti o platebních procesu v diagramu – třída**
 
@@ -407,7 +408,7 @@ Návrhář tříd jako výchozí bod pro prozkoumat a popisují existujících t
 
  Pokud chcete zachovat kód konzistentní s návrh, teď večeři a Lucerne použijte následující diagram závislostí ověřit svůj kód vývoj:
 
- ![Diagram závislostí integrované platebních systému](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Diagram závislostí integrované platebních systému](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagram závislostí pro večeři nyní integrována Lucerne**
 
@@ -417,13 +418,13 @@ Návrhář tříd jako výchozí bod pro prozkoumat a popisují existujících t
 
  Následující mapa kódu zobrazuje nové volání mezi teď večeři a PaymentApprover:
 
- ![Graf závislostí aktualizované pomocí integrovaného systému](../modeling/media/depgraph_intsystem.png "DepGraph_IntSystem")
+ ![Graf závislostí aktualizované pomocí integrovaného systému](../modeling/media/depgraph_intsystem.png)
 
  **Mapa kódu pomocí volání aktualizované – metoda**
 
  Po jejich potvrdit, že systém funguje podle očekávání, teď večeři si kód PaymentProcessing komentáře. Ověření sestavy vrstvy jsou čisté a výsledné Mapa kódu ukazuje, že neexistují žádné další závislosti PaymentProcessing:
 
- ![Graf závislostí bez PaymentProcessing](../modeling/media/depgraph_nomore.png "DepGraph_NoMore")
+ ![Graf závislostí bez PaymentProcessing](../modeling/media/depgraph_nomore.png)
 
  **Mapa kódu bez PaymentProcessing**
 
@@ -481,7 +482,7 @@ Diagramy závislostí vám pomůže:
 |------------------|---------------|
 |**Fóra**|- [Visual Studio vizualizace a modelování nástroje](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio vizualizace a modelování SDK (nástroje DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vizualizace kódu](../modeling/visualize-code.md)
 - [Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)

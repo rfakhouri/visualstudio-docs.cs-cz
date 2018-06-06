@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8f811905fb6fed0e0cbc061128622c72bf09fc07
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: fd6d3bc8dbe1ec92fd2802e6cc2b88956d74e854
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692324"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751647"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Návod: Vytváření, úpravy a údržbu programového testu uživatelského rozhraní
 
@@ -50,7 +50,7 @@ V tomto návodu dozvíte, jak vytvořit, upravit a udržovat programové uživat
 
 12. Vyberte ovládací prvek Zaškrtávací políčko. V okně vlastností změňte hodnotu **název** vlastnost z \<ne název > checkBox1 a clear **hodnotu IsEnabled** vlastnost.
 
-     ![Aplikace WPF jednoduché](../test/media/codedui_wpfapp.png "CodedUI_WPFApp")
+     ![Aplikace jednoduchého grafického subsystému WPF](../test/media/codedui_wpfapp.png)
 
 13. Dvakrát klikněte na ovládací prvek tlačítko pro přidání obslužnou rutinu události kliknutí.
 
@@ -353,11 +353,11 @@ V tomto návodu dozvíte, jak vytvořit, upravit a udržovat programové uživat
 
 ## <a name="videos"></a>Videa
 
-![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [Začínáme s testy programového uživatelského rozhraní](http://go.microsoft.com/fwlink/?LinkID=230573)
+![odkaz na video](../data-tools/media/playvideo.gif) [Začínáme s testy programového uživatelského rozhraní](http://go.microsoft.com/fwlink/?LinkID=230573)
 
-![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [údržbu a ladění programové testy uživatelského rozhraní](http://go.microsoft.com/fwlink/?LinkID=230574)
+![odkaz na video](../data-tools/media/playvideo.gif) [údržbu a ladění programové testy uživatelského rozhraní](http://go.microsoft.com/fwlink/?LinkID=230574)
 
-![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [ruční kódování programové testy uživatelského rozhraní](http://go.microsoft.com/fwlink/?LinkID=230575)
+![odkaz na video](../data-tools/media/playvideo.gif) [ruční kódování programové testy uživatelského rozhraní](http://go.microsoft.com/fwlink/?LinkID=230575)
 
 ## <a name="faq"></a>Nejčastější dotazy
 

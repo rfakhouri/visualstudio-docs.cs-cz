@@ -16,17 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 989ebc629e79194fb6cd4c900b032cb93a090977
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41849b5ac9b55ff97735dbbda4df909d54f8a346
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751855"
 ---
 # <a name="load-test-results-summary-overview"></a>Přehled souhrnu výsledků zátěžového testu
 
 Po spuštění zátěžového testu, můžete zobrazit souhrn testu zatížení rychle pochopit výsledky. Souhrn testu zatížení poskytuje klíče výsledky compact a easy číst formátu. Můžete také vytisknout souhrn testu zatížení. Díky tomu je vhodnější použít při komunikaci výsledky zúčastněným stranám. Souhrn testu zatížení je také výchozí zobrazení při otevření výsledků testů zatížení z dříve spuštění zátěžového testu. Další informace najdete v tématu [postupy: přístup výsledků zátěžového testu pro analýzu](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Souhrnné zobrazení](../test/media/ltest_summaryview.png "LTest_SummaryView")
+ ![Souhrnné zobrazení](../test/media/ltest_summaryview.png)
 
 ## <a name="the-load-test-summary"></a>Souhrn testu zatížení
 
@@ -135,7 +136,7 @@ V části chyby obsahuje seznam všech chyb, ke kterým došlo během zátěžov
 
 Souhrn testu zatížení můžete vytisknout tak, že zvolíte **tisku** v místní nabídce v souhrnu. Náhled tisku první můžete zobrazit výběrem **Náhled** v místní nabídce v souhrnu. Můžete také vytisknout přímo z obrazovky preview.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Analýza mezních pravidel](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

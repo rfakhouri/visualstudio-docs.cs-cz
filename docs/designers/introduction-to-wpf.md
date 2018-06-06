@@ -13,11 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c4bf6ba014d594dd6f5b26420ffa6ee7e61a79a1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 34c0b1a09a6483d45adda63f0fa1bf9d3ff032fa
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747278"
 ---
 # <a name="introduction-to-wpf"></a>Úvod do WPF
 
@@ -67,7 +68,7 @@ XAML je založený na jazyce XML značek jazyk, který se používá k implement
 
  Následující obrázek znázorňuje uživatelské rozhraní (UI), který je definován XAML v předchozím příkladu.
 
- ![Okno, které obsahuje tlačítko](../designers/media/wpfintrofigure10.png "WPFIntroFigure10")
+ ![Okno, které obsahuje tlačítko](../designers/media/wpfintrofigure10.png)
 
  Vzhledem k tomu, že XAML je založený na jazyce XML, je v hierarchii vnořených elementů známé jako sestaví uživatelské rozhraní, které tvoří ho [element stromu](/dotnet/framework/wpf/advanced/trees-in-wpf). Element stromu poskytuje logické a intuitivní způsob, jak vytvořit a spravovat uživatelská rozhraní.
 
@@ -300,7 +301,7 @@ Další informace najdete v tématu [tvarů a základní kreslení v přehledu W
 
 <xref:System.Windows.Media.Geometry> objekty lze použít pro výstřižek, stiskněte klávesu testování a 2D grafické datech pro vykreslení.
 
-![Různé použití cesty](../designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")
+![Různé použití cesty](../designers/media/wpfintrofigure5.png)
 
 Další informace najdete v tématu [geometrie přehled](/dotnet/framework/wpf/graphics-multimedia/geometry-overview).
 
@@ -308,7 +309,7 @@ Další informace najdete v tématu [geometrie přehled](/dotnet/framework/wpf/g
 
 Podmnožinu WPF 2D možnosti zahrnují vizuální efekty, například přechody, rastrové obrázky, kresby, Malování videa, otáčení, změnu velikosti a zkosení. Tyto jsou všechny dosáhnout s štětce; Následující obrázek ukazuje některé příklady.
 
-![Ilustrace různých štětců](../designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")
+![Ilustrace různých štětců](../designers/media/wpfintrofigure6.png)
 
 Další informace najdete v tématu [WPF štětce přehled](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview).
 
@@ -316,7 +317,7 @@ Další informace najdete v tématu [WPF štětce přehled](/dotnet/framework/wp
 
 WPF také zahrnuje 3D vykreslování možnosti, které se integrují s 2D grafiky umožňující vytvoření více zajímavé a zajímavé uživatelská rozhraní. Například následující obrázek znázorňuje 2D obrazů vykresleny také na 3D tvarů.
 
-![Snímek obrazovky Visual3D –](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")
+![Snímek obrazovky Visual3D – ukázka](../designers/media/wpfintrofigure13.png)
 
 Další informace najdete v tématu [3D přehled grafiky](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).
 
@@ -324,7 +325,7 @@ Další informace najdete v tématu [3D přehled grafiky](/dotnet/framework/wpf/
 
 Umožňuje podporu animace WPF provedené ovládací prvky růst, zatřesením, typu číselník a objevování, chcete-li vytvořit zajímavé stránky přechody a další. Můžete animace Většina tříd WPF, dokonce i vlastní třídy. Následující obrázek znázorňuje jednoduchý animace v akci.
 
-![Bitové kopie animovaný datové krychle](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")
+![Bitové kopie animovaný datové krychle](../designers/media/wpfintrofigure7.png)
 
 Další informace najdete v tématu [animace přehled](/dotnet/framework/wpf/graphics-multimedia/animation-overview).
 
@@ -336,7 +337,7 @@ Je možné vyjádřit bohaté obsah prostřednictvím audiovizuální média. WP
 
 Bitové kopie jsou společné pro většinu aplikací a WPF poskytuje několik způsobů, jak je používat. Následující obrázek znázorňuje uživatelské rozhraní s pole se seznamem, který obsahuje obrázky miniatur. Pokud je vybrána na miniaturu, se zobrazí obrázek plné velikosti.
 
-![Obrázky miniatur a úplné&#45;velikost obrázku](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")
+![Obrázky miniatur a úplné&#45;velikost obrázku](../designers/media/wpfintrofigure8.png)
 
 Další informace najdete v tématu [Imaging přehled](/dotnet/framework/wpf/graphics-multimedia/imaging-overview).
 
@@ -348,7 +349,7 @@ Další informace najdete v tématu [Imaging přehled](/dotnet/framework/wpf/gra
 
 Okno v následující obrázek ukazuje <xref:System.Windows.Controls.MediaElement> ovládací prvek v akci.
 
-![Ovládací prvek MediaElement se audio a video](../designers/media/wpfintrofigure1.png "WPFIntroFigure1")
+![Ovládací prvek MediaElement se audio a video](../designers/media/wpfintrofigure1.png)
 
 Další informace najdete v tématu [grafika a multimédia](/dotnet/framework/wpf/graphics-multimedia).
 
@@ -397,7 +398,7 @@ Je hlavním účelem většiny ovládacích prvků WPF k zobrazení obsahu. V gr
 
 Následující obrázek znázorňuje výsledek.
 
-![Textové pole ovládací prvek, který obsahuje text](../designers/media/wpfintrofigure21.png "WPFIntroFigure21")
+![Textové pole ovládací prvek, který obsahuje text](../designers/media/wpfintrofigure21.png)
 
 Další ovládací prvky, ale může obsahovat více položek různých typů obsahu; obsah <xref:System.Windows.Controls.Button>zadaný pomocí <xref:System.Windows.Controls.ContentControl.Content%2A> vlastnost, může obsahovat celou řadu položek včetně rozložení ovládacích prvků, text, obrázky a tvarů. Následující příklad ukazuje <xref:System.Windows.Controls.Button> s obsahem, který zahrnuje <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Border>a <xref:System.Windows.Controls.MediaElement>.
 
@@ -423,7 +424,7 @@ Další ovládací prvky, ale může obsahovat více položek různých typů ob
 
 Následující obrázek znázorňuje obsah toto tlačítko.
 
-![Tlačítko, které obsahuje několik typů obsahu](../designers/media/wpfintrofigure22.png "WPFIntroFigure22")
+![Tlačítko, které obsahuje několik typů obsahu](../designers/media/wpfintrofigure22.png)
 
 Další informace o obsahu, který podporují různé ovládací prvky najdete v tématu [modelu obsahu WPF](/dotnet/framework/wpf/controls/wpf-content-model).
 
@@ -452,7 +453,7 @@ V tomto příkladu se nahradil výchozí tlačítko uživatelské rozhraní <xre
 
 Zatímco šablony ovládacího prvku slouží k určení vzhledu ovládacího prvku, datová šablona vám umožní určit vzhled ovládacího prvku obsahu. Šablony dat se často používají k vylepšení jak vázaných dat se zobrazí. Následující obrázek znázorňuje výchozí vzhled <xref:System.Windows.Controls.ListBox> která je vázaná na kolekci `Task` objekty, kde každý úkol má název, popis a priority.
 
-![Pole se seznamem s výchozím vzhledem](../designers/media/wpfintrofigure18.png "WPFIntroFigure18")
+![Pole se seznamem s výchozím vzhledem](../designers/media/wpfintrofigure18.png)
 
 Výchozí vzhled je byste očekávali od <xref:System.Windows.Controls.ListBox>. Výchozí vzhled každý úkol, ale obsahuje pouze název úlohy. Chcete-li zobrazit název úlohy, popisu a prioritu, výchozí vzhled <xref:System.Windows.Controls.ListBox> položky seznamu vázaného ovládacího prvku musí změnit pomocí <xref:System.Windows.DataTemplate>. Definuje následující XAML, například <xref:System.Windows.DataTemplate>, které platí pro každou úlohu pomocí <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> atribut.
 
@@ -649,7 +650,7 @@ Následující příklad ukazuje vlastní číselné nahoru/dolů ovládací prv
 
  Následující obrázek ukazuje `NumericUpDown` řízení hostované v <xref:System.Windows.Window>.
 
- ![Vlastní UserControl](../designers/media/wpfintrofigure3.png "WPFIntroFigure3")
+ ![Vlastní UserControl](../designers/media/wpfintrofigure3.png)
 
 Další informace o vlastních ovládacích prvcích najdete v tématu [vytváření – Přehled ovládacího prvku](/dotnet/framework/wpf/controls/control-authoring-overview).
 
@@ -669,7 +670,7 @@ Jsme si prohlédli klíčových funkcích služby WPF. Nyní je čas vytvoření
 > [!div class="nextstepaction"]
 > [Návod: Můj první grafický subsystém WPF aplikace na ploše](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Začínáme s WPF (Windows Presentation Foundation)](../designers/getting-started-with-wpf.md)
 - [Windows Presentation Foundation](/dotnet/framework/wpf/index)

@@ -16,7 +16,7 @@ ms.openlocfilehash: 081c61cb0d5a2db28b04ebdd12fd53713b41363f
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34694117"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Vytvoření programové uživatelského rozhraní testu aplikace UWP

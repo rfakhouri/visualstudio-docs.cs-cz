@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dab522c19971e734e5a42f607d99f38f8e44930d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d5800acfded9d500c68a0e071ffa6501d6b3c77e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749607"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: Vysoké využití procesoru
 |||  
@@ -33,10 +34,10 @@ ms.lasthandoff: 04/19/2018
  Pokud je profil s použitím vzorkování, využívání paměti rozhraním .NET nebo metody sporu prostředků, musí shromažďovat alespoň 10 vzorků pro aktivaci tohoto pravidla.  
   
 ## <a name="cause"></a>příčina  
- Využití procesoru (CPU) byla v profilaci data, která nebyla shromážděna pomocí metody instrumentace výrazně vysoká. Zvažte použití vzorkování metoda profilace při profilace procesor vázaný aplikace.  
+ Využití procesoru (CPU) byla v profilaci data, která nebyla shromážděna pomocí metody instrumentace vysoká. Zvažte použití vzorkování metoda profilace při profilace procesor vázaný aplikace.  
   
 ## <a name="rule-description"></a>Popis pravidla  
- V průběhu této spuštění profilování byly konzistentně velmi zaneprázdněny procesoru (nebo procesory). Vysoké využití procesoru může znamenat aplikace vázané na procesor. Instrumentované profily nejsou obvykle co nejúčinnější způsob, jak prozkoumat využití procesoru scénáře. Vzorkování je obvykle účinnější, pokud jsou profilace aplikací, které stráví velkou část doba pro jejich provádění pokyny na procesor.  
+ V průběhu této spuštění profilování byl konzistentně zaneprázdněn procesoru (nebo procesory). Vysoké využití procesoru může znamenat aplikace vázané na procesor. Instrumentované profily nejsou co nejúčinnější způsob, jak prozkoumat scénáře využití procesoru. Vzorkování je účinnější, pokud jsou profilace aplikací, které stráví velkou část doba pro jejich provádění pokyny na procesor.  
   
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
+## <a name="how-to-fix-violations"></a>Jak opravit porušení  
  Vezměte v úvahu profilace aplikace znovu pomocí metody vzorkování místo metody instrumentace, pokud požadujete časování funkce, nebo vás zajímá více Principy vstupu a výstupu než kritické body procesoru.

@@ -20,11 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 236a5b9e7367aba2fa987fb68ad99dad20f7cd0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c46fbfe13e7e4c795703a53debedca20ae39c145
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752317"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Hierarchická organizace zdrojů pro lokalizaci
 
@@ -42,13 +43,13 @@ V sadě Visual Studio jsou uložené v samostatné soubory lokalizované prostř
 
  Nejlepší způsob, jak ukládat vaše prostředky je generalize je co nejvíce. To znamená, že k uložení lokalizované řetězce, Image, a tak dále v soubory prostředků pro neutrální jazykové verze, nikoli konkrétní jazykové verze, kdykoli je to možné. Například pokud máte prostředky pro belgické francouzština ("fr-být") jazykovou verzi a okamžitě výše uvedené prostředky jsou nouzové prostředky v angličtině, k problému může dojít, když někdo používá aplikace v systému nakonfigurovaný pro francouzštině Kanadští jazykovou verzi. Systém hledá satelitní sestavení pro "fr-CA", ale nelze najít, tak načte hlavní sestavení obsahující záložní prostředků angličtinu, namísto načítání francouzské prostředky. Následující obrázek znázorňuje tuto nežádoucího scénář.
 
- ![Pouze konkrétní prostředky](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")
+ ![Pouze konkrétní prostředky](../ide/media/vbspecificresourcesonly.gif)
 
  Pokud dodržíte doporučený postup uvedení množství prostředků nejdříve do souboru neutrální prostředků pro jazykovou verzi "fr", francouzštině Kanadští uživatel nebude vidět prostředky označené pro "fr-být" jazykovou verzi, ale by zobrazit řetězce ve francouzštině. Následující situaci znázorňuje tento upřednostňované scénář.
 
- ![NeutralSpecificResources – grafika](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")
+ ![NeutralSpecificResources – grafika](../ide/media/vbneutralspecificresources.gif)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Neutrální jazyky zdrojů pro lokalizaci](../ide/neutral-resources-languages-for-localization.md)
 - [Zabezpečení a lokalizovaná satelitní sestavení](../ide/security-and-localized-satellite-assemblies.md)

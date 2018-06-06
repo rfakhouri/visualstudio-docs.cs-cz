@@ -13,10 +13,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477545"
 ---
 # <a name="understand-instrumentation-data-values"></a>Pochopení hodnotám dat instrumentace
 
@@ -96,7 +97,7 @@ Procento celkové aplikace včetně hodnoty relace profilování které byly fun
 
 100 * funkce exkluzivní aplikace nebo relace aplikace (včetně).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 [Analýza dat nástrojů pro měření výkonu](../profiling/analyzing-performance-tools-data.md)  
 [Postupy: Výběr metod shromažďování](../profiling/how-to-choose-collection-methods.md)

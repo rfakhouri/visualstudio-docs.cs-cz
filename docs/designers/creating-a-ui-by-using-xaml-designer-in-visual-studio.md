@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 514bbd4b4b65a2f32b42a1f260368f219972e22c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 707fdd9c1ea0712d743bb62276599783507f0739
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745747"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí Návrháře XAML v sadě Visual Studio
 Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní vám pomohou návrhu založených na XAML Windows a webové aplikace. Uživatelská rozhraní pro vaše aplikace můžete vytvořit tak, že přetáhnete ovládacích prvků z **sada nástrojů** a nastavení vlastností ve **vlastnosti** okno. Můžete taky upravit XAML přímo v zobrazení jazyka XAML.
@@ -34,7 +35,7 @@ Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní vám pomoho
 
  V návrhovém zobrazení obsahující okno *návrhové plochy* je aktivní okno a můžete ji použít jako primární pracovní prostor. Můžete ho použít pro vizuální návrh stránky v aplikaci přidáním nebo kreslení elementy a poté podle jejich změně. Další informace najdete v tématu [práce s prvky v Návrháři XAML](../designers/working-with-elements-in-xaml-designer.md). Tento obrázek ukazuje návrhové plochy v zobrazení návrhu.
 
- ![Návrh zobrazení návrháře XAML](../designers/media/xaml_editor_design_view.png "xaml_editor_design_view")
+ ![Zobrazení návrhu Návrháře XAML](../designers/media/xaml_editor_design_view.png)
 
  Tyto funkce jsou dostupné v kreslicí plochy:
 
@@ -56,7 +57,7 @@ Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní vám pomoho
 
  V návrhovém zobrazení jsou k dispozici v levé dolní části obrazovky návrhové plochy další příkazy, jak je vidět tady:
 
- ![Návrh zobrazení příkazy](../designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")
+ ![Příkazy zobrazení návrhu](../designers/media/xaml_editor_design_controls.png)
 
  Tyto příkazy jsou k dispozici tento panel nástrojů:
 
@@ -70,7 +71,7 @@ Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní vám pomoho
 
  V zobrazení jazyka XAML okno obsahuje editoru XAML je aktivní okno a editoru XAML, je primární nástroj pro vytváření. Extensible aplikace Markup Language (XAML) obsahuje slovník deklarativní, na základě XML určení uživatelské rozhraní aplikace. Zobrazení XAML zahrnuje IntelliSense, automatického formátování, zvýraznění syntaxe a značky navigace. Tento obrázek ukazuje zobrazení jazyka XAML:
 
- ![Zobrazení jazyka XAML](../designers/media/xaml_editor.png "xaml_editor")
+ ![Zobrazení XAML](../designers/media/xaml_editor.png)
 
  **Zobrazení příčku** příčku zobrazení se zobrazí v horní části zobrazení jazyka XAML, když je editoru XAML, v okně nižší. Zobrazení příčku vám umožňuje řídit relativní velikosti zobrazení návrhu a zobrazení jazyka XAML. Můžete také exchange umístění zobrazení (pomocí **Prohodit podokna** tlačítko), zadejte, zda jsou vodorovně nebo svisle uspořádané zobrazení a sbalit buď zobrazení.
 
@@ -79,7 +80,7 @@ Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní vám pomoho
 ## <a name="device-window"></a>Okno zařízení
  Okno zařízení v Návrháři XAML umožňuje simulovat v době návrhu různých zobrazení, zobrazí a zobrazit možnosti pro váš projekt. Okno zařízení je k dispozici na **návrhu** nabídky, když pracujete v Návrháři XAML. Tady je bude vypadat takto:
 
- ![Okno zařízení](../designers/media/xaml_editor_device_panel.png "xaml_editor_device_panel")
+ ![Okno zařízení](../designers/media/xaml_editor_device_panel.png)
 
  Toto jsou možnosti k dispozici v okně zařízení:
 
@@ -114,7 +115,7 @@ Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní vám pomoho
 
  Chcete-li zobrazit okno Osnova dokumentu, na řádku nabídek zvolte **zobrazení**, **ostatní okna**, **Osnova dokumentu**.
 
- ![Osnova dokumentu – okno](../designers/media/xaml_editor_doc_outline.png "xaml_editor_doc_outline")
+ ![Osnova dokumentu – okno](../designers/media/xaml_editor_doc_outline.png)
 
  Toto jsou možnosti k dispozici v okně Osnova dokumentu:
 
@@ -129,13 +130,13 @@ Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní vám pomoho
 ## <a name="properties-window"></a>Vlastnosti – okno
  Okno vlastností umožňuje nastavování hodnot vlastností ovládacích prvků. Tady je bude vypadat takto:
 
- ![Vlastnosti – okno](../designers/media/xaml_editor_prop_window.png "xaml_editor_prop_window")
+ ![Vlastnosti – okno](../designers/media/xaml_editor_prop_window.png)
 
  Existují různé možnosti v horní části okna Vlastnosti. Název aktuálně vybraného elementu můžete změnit pomocí **název** pole. V levém horním rohu je ikonu, která představuje aktuálně vybraného elementu. Chcete-li uspořádat vlastnosti podle kategorie a abecedně, klikněte na tlačítko **kategorie**, **název**, nebo **zdroj** v **uspořádat podle** seznamu. Chcete-li zobrazit seznam událostí pro ovládací prvek, klikněte na tlačítko **události** tlačítko, které zobrazí symbol lightning funkcí bolt. Vyhledat vlastnosti, spusťte pro název vlastnosti v typu **vlastností vyhledávání** pole. V okně Vlastnosti se zobrazí vlastnosti, které odpovídají kritériím hledání během psaní. Některé vlastnosti umožňují nastavit upřesňující vlastnosti tak, že vyberete šipku dolů. Další informace o používání vlastnosti a zpracování událostí najdete v tématu [rychlé spuštění: Přidání ovládacích prvků a zpracování událostí](http://go.microsoft.com/fwlink/?LinkID=247983)
 
  Napravo od každou vlastnost hodnota je *značka vlastnosti* které se zobrazí jako pole symbolu. Vzhled značky vlastnost určuje, jestli je datová vazba nebo použít pro vlastnost prostředku. Například symbol bílé pole určuje výchozí hodnotu, symbol černé políčko obvykle označuje, že byl použit místní prostředek, a oranžové pole obvykle značí, že byl použit datová vazba. Po kliknutí na tlačítko Vlastnosti značky, přejděte na definici stylu, otevřete Tvůrce vazby dat nebo otevřít dialogové okno Výběr prostředků.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Práce s elementy v Návrháři XAML](../designers/working-with-elements-in-xaml-designer.md)
 - [Postup vytvoření a použití prostředku](../designers/how-to-create-and-apply-a-resource.md)

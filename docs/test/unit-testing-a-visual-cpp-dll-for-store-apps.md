@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 717786fea5d0ae355af5b8ea4993932a95d01196
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751868"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Postup testování knihovny DLL Visual C++
 
@@ -31,11 +32,11 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
 3.  Název projektu `RooterLibTests`, zadejte umístění, název řešení `RooterLib`; a zajistěte, aby **vytvořit adresář pro řešení** je zaškrtnuté.
 
-     ![Zadejte název řešení a projektu a umístění](../test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
+     ![Zadejte název řešení a projektu a umístění](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
 4.  V novém projektu, otevřete **unittest1.cpp**.
 
-     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")
+     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
      Všimněte si, že:
 
@@ -64,13 +65,13 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
      K testovacímu projektu vytvoří a spustí. Zobrazí se okno Průzkumníka testů a testovací je uveden v části **předán testy**. Souhrn panelu v dolní části okna poskytuje další informace o vybrané testu.
 
-     ![Testování Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
+     ![Průzkumník testů](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> Do řešení přidat projektu knihovny DLL
 
 1.  V Průzkumníku řešení vyberte název řešení. V místní nabídce vyberte příkaz **přidat**a potom **přidat nový projekt**.
 
-     ![Vytvoření projektu RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")
+     ![Vytvoření projektu RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  V **přidat nový projekt** dialogovém okně vyberte **knihovny DLL (aplikace pro UPW)**.
 
@@ -104,7 +105,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
     1.  V Průzkumníku řešení, vyberte **RooterLib** projektu a potom vyberte **vlastnosti** z místní nabídky.
 
-         ![Přidejte definici – symbol preprocesoru](../test/media/ute_cpp_windows_addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
+         ![Přidejte definici – symbol preprocesoru](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
     2.  V dialogovém okně Stránka vlastností RooterLib rozbalte **vlastnosti konfigurace**, rozbalte položku **C++** a zvolte **preprocesor**.
 
@@ -175,7 +176,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
 5.  V Průzkumníku testu zvolte **spustit všechny**.
 
-     ![Základní Test proběhl](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+     ![Základní Test proběhl úspěšně.](../test/media/ute_cpp_testexplorer_basictest.png)
 
  Máte nastavení testu a projektů kód a ověřit, že můžete spustit testy, které běží funkce v projektu kódu. Teď můžete začít zapisovat skutečné testy a kódu.
 
@@ -206,7 +207,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
 3.  Test se nezdaří.
 
-     ![Selhání RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest selže](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Ověřte, že každý test se nezdaří, ihned po jeho jste napsali. To umožňuje vyhnout se snadno chybu zápisu testu, který nikdy selže.
@@ -278,7 +279,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
      Test se nezdaří. Zvolte název testu v Průzkumníku otestovat. Je označený selhání kontrolního výrazu. Zpráva o neúspěšném zpracování je zobrazen v podokně podrobností Průzkumníka testů.
 
-     ![NegativeRangeTests se nezdařilo](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests se nezdařilo](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 3.  Chcete-li zjistit, proč test se nezdaří, kroku prostřednictvím funkce:
 
@@ -308,7 +309,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
  Všechny testy byly úspěšné teď.
 
- ![Všechny testy byly úspěšné](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+ ![Všechny testy byly úspěšné](../test/media/ute_ult_alltestspass.png)
 
 ##  <a name="Refactor_the_code_without_changing_tests"></a> Refaktorovat kód beze změny testů
 

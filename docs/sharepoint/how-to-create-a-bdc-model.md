@@ -18,21 +18,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aae6789d9961fa3cbf63ce073a33251465ee308a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 357730c8095e9449e9556fd4926afa0bbd53fb30
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767293"
 ---
-# <a name="how-to-create-a-bdc-model"></a>Postupy: Vytvoření modelu služby BDC
+# <a name="how-to-create-a-bdc-model"></a>Postupy: vytvoření modelu služby BDC
   Business Data Connectivity (BDC) modelu můžete vytvořit pomocí šablony pro tento typ položky a potom přidat model do jakéhokoli projektu služby SharePoint. Další informace najdete v tématu [vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md). Další informace o tom, jak návrhu modelu najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-bdc-project"></a>Vytvoření projektu BDC  
   
-1.  Na řádku nabídek zvolte **soubor**, **nový**, **projektu**.  
+1.  Na řádku nabídek zvolte **soubor** > **nový** > **projektu**.  
   
     > [!NOTE]  
-    >  Pokud vaše IDE nastaven pro použití vývojové nastavení jazyka Visual Basic, zvolte **soubor**, **nový projekt**.  
+    >  Pokud vaše IDE nastaven pro použití vývojové nastavení jazyka Visual Basic, zvolte **soubor** > **nový projekt**.  
   
      **Nový projekt** otevře se dialogové okno.  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
   
      Prázdný projekt SharePoint je vytvořen.  
   
-5.  Na řádku nabídek zvolte **projektu**, **přidat novou položku**.  
+5.  Na řádku nabídek zvolte **projektu** > **přidat novou položku**.  
   
 6.  V **přidat novou položku** dialogovém okně vyberte **Office/SharePoint** uzlu.  
   
@@ -61,11 +62,10 @@ ms.lasthandoff: 04/16/2018
   
      A **modelu připojení obchodních dat** položka byla přidána do projektu. Ve výchozím nastavení zobrazí v Návrháři BDC se modelu. Další informace najdete v tématu [vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Postupy: Přidání stávajícího souboru modelu služby BDC do projektu služby SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
  [Postupy: určení lokalizovaných názvů, vlastností a oprávnění pomocí zdrojového souboru](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [Postupy: zahrnutí vlastního sestavení ve funkci BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Integrace obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
   

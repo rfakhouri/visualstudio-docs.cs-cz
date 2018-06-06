@@ -16,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d119e84bba07c68e8d0466902d52d4ed9d151123
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ec6f0ef523733a0737b6d762d2835073ed1f3c06
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692012"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766386"
 ---
-# <a name="creating-sharepoint-features"></a>Vytváření funkcí služby SharePoint
+# <a name="create-sharepoint-features"></a>Vytváření funkcí služby SharePoint
   Funkce služby SharePoint můžete použít k seskupení souvisejících položek projektu služby SharePoint pro snazší nasazení. Můžete vytvořit funkce, nastavení rozsahů a označit další funkce, jako závislosti pomocí návrháře funkce služby SharePoint. Návrhář vytvoří také manifestu, který je soubor XML, který popisuje každou funkci.  
   
 ## <a name="add-features-to-the-sharepoint-solution"></a>Přidání funkce do řešení služby SharePoint

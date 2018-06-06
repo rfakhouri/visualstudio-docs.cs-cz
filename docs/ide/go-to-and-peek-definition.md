@@ -15,13 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afe72522d235579147b645c27cf4f560827f555d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745760"
 ---
-# <a name="view-type-and-member-definitions"></a>Definice zobrazení typu a členu
+# <a name="view-type-and-member-definitions"></a>Zobrazení definic typů a členů
 
 Vývojáři často potřebují zobrazit zdrojový kód definice pro typy nebo členy třídy, které používají v svůj kód. V sadě Visual Studio **přejít k definici** a **funkce Náhled definice** funkce umožňují snadno zobrazit definici typ nebo člen. Pokud zdrojový kód není k dispozici, zobrazí se místo toho metadat.
 
@@ -61,7 +62,7 @@ Při spuštění **přejít k definici** nebo **funkce Náhled definice** přík
 
 Například pokud spustíte **přejít k definici** příkazu pro <xref:System.Console>, metadata pro <xref:System.Console> se zobrazí v editoru kódu jako zdrojový kód C#. Kód podobá jeho deklaraci, ale nezobrazuje implementace.
 
-![Metadata jako zdroj](../ide/media/metadatasource.png "MetadataSource")
+![Metadata jako zdroj](../ide/media/metadatasource.png)
 
 > [!NOTE]
 > Při pokusu o spuštění **přejít k definici** nebo **funkce Náhled definice** příkaz pro typy nebo členy, které jsou označené jako interní sady Visual Studio nezobrazuje jako zdrojový kód, bez ohledu na to, jestli jejich metadat odkazující sestavení je přítele či nikoli.
@@ -75,7 +76,7 @@ Nové ve Visual Studio 2017 verze 15,6 operací, můžete nastavit možnost při
 > [!NOTE]
 > Visual Studio rekonstruuje pomocí ILSpy dekompilace těla metody. Při prvním používat tuto funkci, musí přijmout právní omezení týkající se softwaru licencování a autorských právech a ochranné zákony.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přejděte kódu](../ide/navigating-code.md)
 - [Postupy: zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

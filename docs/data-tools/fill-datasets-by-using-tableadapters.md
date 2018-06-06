@@ -21,11 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87639a4ebb123415014994dcc1bfa7af1d7fb301
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a3f3dd16bef85ebe8b90dd5f456f4e386113a8b6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745695"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Vyplnění datové sady s použitím objektů TableAdapters
 Součást TableAdapter doplní datové sady daty z databáze, na základě jednoho nebo více dotazy nebo uložené procedury, které zadáte. Můžete také provést TableAdapters přidání, aktualizace a odstranění v databázi k zachování změn, které můžete provést na datovou sadu. Mohou také vystavovat globální příkazy, které se nevztahují žádné konkrétní tabulky.
@@ -49,7 +50,7 @@ Součást TableAdapter doplní datové sady daty z databáze, na základě jedno
 ## <a name="tableadapter-overview"></a>TableAdapter – přehled
  TableAdapters jsou generované Návrhář součásti, které se připojují k databázi, spusťte dotazy nebo uložené procedury a vyplníte jejich DataTable vrácená data. TableAdapters také odeslat aktualizovaná data z vaší aplikace zpět do databáze. Můžete spustit jako v mnoha dotazy tak, jak chcete na TableAdapter tak dlouho, dokud schématu tabulky, ke kterému je přiřazeno TableAdapter vracejí data, která vyhovuje. Následující diagram znázorňuje, jak TableAdapters komunikovat s databází a dalších objektů v paměti:
 
- ![Tok dat v aplikaci klienta](../data-tools/media/clientdatadiagram.gif "ClientDataDiagram")
+ ![Tok dat v aplikaci klienta](../data-tools/media/clientdatadiagram.gif)
 
  Během TableAdapters jsou navrženy s **návrháře Dataset**, jako vnořené třídy nejsou generované třídy TableAdapter <xref:System.Data.DataSet>. Se nacházejí v samostatné obory názvů, které jsou specifické pro každé datové sady. Například, pokud máte datovou sadu s názvem `NorthwindDataSet`, TableAdapters, které jsou přidružené <xref:System.Data.DataTable>s v `NorthwindDataSet` by v `NorthwindDataSetTableAdapters` oboru názvů. Pro programový přístup k určitému typu TableAdapter musíte deklarovat novou instanci typu TableAdapter. Příklad:
 
@@ -63,7 +64,7 @@ Součást TableAdapter doplní datové sady daty z databáze, na základě jedno
  Aktualizace funkcí TableAdapter je závislá na tom, kolik informace jsou k dispozici v hlavní dotazu v Průvodci nastavením TableAdapter. Například objekty TableAdapter, které jsou nakonfigurovány k načtení hodnot z více tabulek (spojení JOIN), skalárních hodnot, zobrazení nebo výsledků agregačních funkcí, nejsou původně vytvořeny s možností odesílat aktualizace zpět do databáze. Ale můžete nakonfigurovat ručně v příkazy INSERT, UPDATE a DELETE **vlastnosti** okno.
 
 ## <a name="tableadapter-queries"></a>TableAdapter – dotazy
- ![TableAdapter s více dotazy](../data-tools/media/tableadapter.gif "TableAdapter")
+ ![TableAdapter s více dotazy](../data-tools/media/tableadapter.gif)
 
  TableAdapters může obsahovat více dotazů k vyplnění tabulky jejich přidružená data. Objektu TableAdapter lze definovat tolik dotazů, kolik vyžaduje vaše aplikace, pokud každý dotaz vrací data, která odpovídají stejnému schématu jako jeho přidružená tabulka dat. Tato funkce umožňuje TableAdapter načíst odlišné výsledky na základě kritérií odlišné.
 
@@ -125,6 +126,6 @@ Součást TableAdapter doplní datové sady daty z databáze, na základě jedno
 ## <a name="security"></a>Zabezpečení
 Při použití datové příkazy s vlastnost CommandType nastavena na <xref:System.Data.CommandType.Text>, pečlivě zkontrolujte informace, které se odesílá z klienta před jeho odesláním k vaší databázi. Uživatelé se zlými úmysly může pokusu o odeslání (Vložit) upraveném nebo další příkazy SQL ve snaze o získání neoprávněného přístupu nebo dojít k poškození databáze. Před přenosem vstupu uživatele na databázi vždy zkontrolujte, že je platný. Osvědčeným postupem je vždy nutné použít parametrických dotazů nebo uložené procedury, pokud je to možné.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Nástroje datové sady](../data-tools/dataset-tools-in-visual-studio.md)

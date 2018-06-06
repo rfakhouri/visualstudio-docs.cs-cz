@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 918a2087635b88e018234f4c5dddff5e1f5f45d5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 15298414788c112c4f6a1f761055efd38933dfde
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751439"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Použití ovládacích prvků HTML5 v programových testech UI
 
@@ -45,7 +46,7 @@ Programové testy uživatelského rozhraní zahrnují podporu pro některé z ov
 ###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Zvuk ovládací prvek
  **Ovládání zvuku:** akce na ovládací prvek jazyka HTML5 zvuk správně zaznamenána a přehrání.
 
- ![Ovládací prvek jazyka HTML5 zvuk](../test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")
+ ![Ovládací prvek jazyka HTML5 zvuk](../test/media/codedui_html5_audio.png)
 
 |Akce|Záznam|Generovaný kód|
 |------------|---------------|--------------------|
@@ -89,7 +90,7 @@ string Volume
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Video ovládací prvek
  **Video ovládacího prvku:** akce v ovládacím prvku HTML5 Video správně zaznamenána a přehrání.
 
- ![Ovládací prvek HTML5 Video](../test/media/codedui_html5_video.png "CodedUI_HTML5_Video")
+ ![HTML5 Video ovládací prvek](../test/media/codedui_html5_video.png)
 
 |Akce|Záznam|Generovaný kód|
 |------------|---------------|--------------------|
@@ -120,7 +121,7 @@ string VideoWidth
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Posuvník
  **Posuvník:** akce na ovládacího prvku posuvník HTML5 správně zaznamenána a přehrání.
 
- ![Posuvník HTML5](../test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")
+ ![HTML5 posuvník](../test/media/codedui_html5_slider.png)
 
 |Akce|Záznam|Generovaný kód|
 |------------|---------------|--------------------|
@@ -140,9 +141,9 @@ string ValueAsNumber
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar
  **Ovládací prvek ProgreesBar:** je ProgressBar – ovládací prvek-interactable. Kontrolní výrazy lze přidat na `Value` a `Max` vlastnosti tohoto ovládacího prvku.
 
- ![HTML5 ProgressBar – ovládací prvek](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")
+ ![HTML5 ProgressBar – ovládací prvek](../test/media/codedui_html5_progressbar.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Elementy HTML](http://go.microsoft.com/fwlink/?LinkID=232441)
 - [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)

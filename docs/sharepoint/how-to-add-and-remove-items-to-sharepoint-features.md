@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7d097562ecf1abe021d78440bc6c96019d2eb97d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6155aa13c8b05036dbb5fb2d9f895ed38719741
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767371"
 ---
-# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Postupy: Přidání a odebrání položek z funkcí služby SharePoint
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Postupy: Přidání a odebrání položek z funkcí služby SharePoint
   Když vytvoříte řešení služby SharePoint, Visual Studio přidá výchozí položky projektu služby SharePoint k vaší funkci. Před nasazením můžete přidávat a odebírat položky projektu služby SharePoint k úpravě funkce služby SharePoint.  
   
 ## <a name="adding-sharepoint-project-items-to-a-feature"></a>Přidávání položek projektu služby SharePoint do funkce  
@@ -46,9 +47,9 @@ ms.lasthandoff: 04/16/2018
   
      Položky projektu služby SharePoint se zobrazí ve **položky ve funkci** seznamu.  
   
-## <a name="removing-sharepoint-project-items-from-a-feature"></a>Odebírání položek projektu služby SharePoint z funkce  
+## <a name="removing-sharepoint-project-items-from-a-feature"></a>Odebrání položek projektu služby SharePoint z funkce  
   
-#### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Odebrat položky služby SharePoint pomocí návrháře funkce  
+#### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Odebrat položky služby SharePoint pomocí návrháře funkce
   
 1.  Vyberte jeden nebo více položek v **položky ve funkci** seznamu.  
   
@@ -56,8 +57,7 @@ ms.lasthandoff: 04/16/2018
   
      Položky projektu služby SharePoint se zobrazí ve **položky v řešení** seznamu.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Vytváření funkcí služby SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Balení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
   

@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d9b900e47febb9e75b825fdb662c942fce7188b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6a12bdbb45c5cdfdf0abb8fb738ae87bf67c45c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748371"
 ---
 # <a name="customizing-copy-behavior"></a>Přizpůsobení chování kopírování
 V jazyce specifické pro doménu (DSL) vytvořené pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vizualizace a modelování SDK, můžete změnit, co se stane, když uživatel zkopíruje a vloží elementy.
@@ -29,7 +30,7 @@ V jazyce specifické pro doménu (DSL) vytvořené pomocí [!INCLUDE[vsprvs](../
 
  Toto pravidlo vztahuje rekurzivně zkopírovaný elementy a odkazy.
 
- ![Zkopírovat a vložit elementy](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
+ ![Zkopírované a vložené prvky](../modeling/media/dslcopypastedefault.png)
 
  Serializované a uložené v zkopírovaný elementy a odkazy <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), která je umístěna do schránky.
 
@@ -217,7 +218,7 @@ V tématu [postupy: přidání obslužné rutiny a přetažení](../modeling/how
 ##  <a name="customizeLinks"></a> Přizpůsobení chování Kopírovat odkaz
  Když uživatel kopie elementu, standardní chování je, že jsou všechny vložené prvky také zkopírován. Standardní chování kopírování, můžete upravit. V definici DSL vybrat roli na jedné straně relace a v sadě okno Vlastnosti **rozšíří kopie** hodnotu.
 
- ![Rozšíří vlastnost kopírování role domény](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
+ ![Rozšíří vlastnost kopírování role domény](../modeling/media/dslpropagatescopy.png)
 
  Existují tři hodnoty:
 
@@ -227,7 +228,7 @@ V tématu [postupy: přidání obslužné rutiny a přetažení](../modeling/how
 
 -   Rozšíří kopie propojení a opačným role player - zkopírovaný skupina obsahuje kopii elementu na druhém konci odkazu.
 
- ![Účinek kopírování s PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
+ ![Účinek kopírování s PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
 
  Elementy a bitovou kopii, která se zkopírují, bude mít vliv změny, které provedete.
 
@@ -237,9 +238,9 @@ V tématu [postupy: přidání obslužné rutiny a přetažení](../modeling/how
 > [!TIP]
 >  Další informace o přizpůsobení modelu pomocí programu kódu najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- ![Diagram pořadí operace kopírování](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
+ ![Diagram pořadí operace kopírování](../modeling/media/dslcopyseqdiagram.png)
 
- ![Diagram pořadí operaci vložení](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
+ ![Diagram pořadí operaci vložení](../modeling/media/dslpasteseqdiagram.png)
 
 #### <a name="to-define-your-own-elementoperations"></a>Chcete-li definovat vlastní ElementOperations
 
@@ -560,7 +561,7 @@ namespace Company.MyDsl
 
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md)
 - [Postupy: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)

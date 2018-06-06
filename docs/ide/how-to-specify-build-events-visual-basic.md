@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f2c371f50accf52c3c2702c3f09770f0bbe9b49
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6d673877ecabcbd68759c7f1e7fa821335f8eb6c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746205"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Postupy: určení sestavení události (Visual Basic)
 
@@ -128,7 +129,7 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
 
 1.  Vytvoření aplikace pro systém Windows pro projekt, který má být publikována. Z **soubor** nabídky, klikněte na tlačítko **nový**a potom klikněte na **projektu**.
 
-2.  V **nový projekt** v dialogovém **jazyka Visual Basic** uzlu, vyberte **Windows Classic Desktop** a potom **aplikace pro Windows Forms** Šablona. Název projektu `VBWinApp`.
+2.  V **nový projekt** v dialogovém **jazyka Visual Basic** uzlu, vyberte **Windows Desktop** a potom **aplikace pro Windows Forms** šablony. Název projektu `VBWinApp`.
 3.  S projekt vybraný v **Průzkumníku řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
 
 4.  V **Návrhář projektu**, přejděte na **publikovat** stránky a nastavte **umístění pro publikování** k *C:\TEMP*.
@@ -163,7 +164,7 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Stránka kompilovat, Návrhář projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Publikovat stránku, Návrhář projektu](../ide/reference/publish-page-project-designer.md)

@@ -12,11 +12,12 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: fa732c8b2fbf55b1cb2c8b80a06cf1ab18d6b50c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2e74fca7109a19c789215424526eef6190b568c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752395"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Data nástroje sady Visual Studio pro jazyk C++
 
@@ -34,11 +35,11 @@ Využít výhod vlastních funkcí v systému SQL Server 2005 a novější, pou�
 
 3.  Pomocí SQL Server Management Studio pro připojení souboru rozbalené Northwind.mdf na instanci localDB. Při spuštění služby SQL Server Management Studio připojte \MSSQLLocalDB (localdb).
 
-     ![Dialogové okno připojení přes SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS připojit dialogové okno")
+     ![Dialogové okno připojení přes SSMS](../data-tools/media/raddata-ssms-connect-dialog.png)
 
      Klikněte pravým tlačítkem na uzel localdb v levém podokně a zvolte **Attach**.
 
-     ![Aplikace SSMS připojit databázi](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS připojit databáze")
+     ![Aplikace SSMS připojit databáze](../data-tools/media/raddata-ssms-attach-database.png)
 
 4.  Stažení ukázky ODBC Windows SDK a rozbalte ho do nového umístění. Tento příklad ukazuje základní rozhraní ODBC příkazy, které se používají pro připojení k databázi a problém dotazy a příkazy. Další informace o těchto funkcí v [Microsoft připojení ODBC (Open Database)](/sql/odbc/microsoft-open-database-connectivity-odbc). Při načítání nejprve řešení (se nachází v C++ složce), Visual Studio navrhne upgrade řešení na aktuální verzi sady Visual Studio. Klikněte na tlačítko **Ano**.
 
@@ -67,8 +68,8 @@ A tento adresář knihovny:
 
 8.  Stisknutím klávesy F5 sestavení a spuštění aplikace. Měli byste vidět dialogové okno z ovladače, která vás vyzve k databázi. Zadejte `(localdb)\MSSQLLocalDB`a zkontrolujte **použít důvěryhodné připojení**. Press **OK**. Měli byste vidět Konzola se zpráva s informací, úspěšné připojení. Měli byste taky vidět příkazového řádku můžete zadat v příkazu jazyka SQL. Následující obrazovka ukazuje příklad dotazu a výsledky:
 
-     ![ODBC ukázkový dotaz výstup](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC ukázkový dotaz výstup")
+     ![ODBC ukázkový dotaz výstup](../data-tools/media/raddata-odbc-sample-query-output.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

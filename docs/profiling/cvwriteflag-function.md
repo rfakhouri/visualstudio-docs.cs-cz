@@ -20,13 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac01c1fab1c1ef0ce2c7846bad56491fa03765f
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 417d901504eb20894b3bd3e83d286dac4e66b072
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749369"
 ---
-# <a name="cvwriteflag-function"></a>CvWriteFlag – funkce
+# <a name="cvwriteflag-function"></a>Cvwriteflag – funkce
 Zapíše příznak vizualizér souběžnosti trasovacího souboru.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -83,11 +84,11 @@ HRESULT CvWriteFlagExVA(
  S_OK, pokud zpráva je úspěšně zapsána. Kód chyby v případě, že byly všechny chyby. Makra úspěšné nebo NEÚSPĚŠNÉ použijte ke kontrole chybový stav.  
   
 ## <a name="requirements"></a>Požadavky  
- **Záhlaví:** cvmarkers.h  
+ **Záhlaví:** *cvmarkers.h*  
   
  **Unicode:** cvwriteflagexw –, cvwriteflagexvw –  
   
  **ANSI:** cvwriteflagexa –, cvwriteflagexva –  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)

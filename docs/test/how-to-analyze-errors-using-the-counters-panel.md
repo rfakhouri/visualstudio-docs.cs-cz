@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e37b39d504059491318913f6eb1345d73ef3074b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc7beb1100b5e1bfe3fd554da53520ffc9888e64
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751881"
 ---
 # <a name="how-to-analyze-errors-using-the-counters-panel"></a>Postupy: Analýza chyb s použitím panelu čítačů
 
@@ -22,7 +23,7 @@ Panel čítačů je v zobrazení grafů a zobrazení tabulek v Analyzéru zát
 
  **Chyby** uzlu v panelu čítačů obsahuje všechny chyby, které byly zjištěny během zátěžového testu. Uzel chyby obsahuje několik uzlů chyba dílčí kategorie, které jsou specifické pro různé druhy chyb. Například **výjimky** a **chyby protokolu HTTP**.
 
- ![Čítač panely chyby uzlu](../test/media/ltest_errornode.png "LTest_ErrorNode")
+ ![Čítač chyby uzlu panelu](../test/media/ltest_errornode.png)
 
 ## <a name="to-analyze-errors-in-the-counters-panel"></a>K analýze chyb v panelu čítačů
 
@@ -55,7 +56,7 @@ Panel čítačů je v zobrazení grafů a zobrazení tabulek v Analyzéru zát
     > [!TIP]
     > Pokud všechny chyby byly zjištěny během zátěžového testu, spuštění, odkaz s názvem, včetně počtu chyb zjištěno, že bude k dispozici ve stavovém řádku načíst testování analyzátor. Můžete na odkaz zobrazíte všechny chyby v **chyby** tabulky zobrazení tabulek.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Použitím panelu čítačů v zobrazení grafů a tabulek zobrazení](../test/counters-panel-in-load-test-analyzer.md)
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

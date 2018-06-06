@@ -1,5 +1,5 @@
 ---
-title: Důvěřující řešení Office s použitím seznamech povolených položek | Microsoft Docs
+title: Vztah důvěryhodnosti řešení Office s použitím seznamech povolených položek
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e8b26ef4c262f830cd2c6444b56e05f128316c6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6fb44e7927136ba02d04f4b57f38ae52cc76c9fd
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767881"
 ---
-# <a name="trusting-office-solutions-by-using-inclusion-lists"></a>Nastavení důvěry pro řešení systému Office s použitím seznamů povolených položek
+# <a name="trust-office-solutions-by-using-inclusion-lists"></a>Vztah důvěryhodnosti řešení Office s použitím seznamech povolených položek
   Seznamy povolených povolit uživatelům udělit vztah důvěryhodnosti řešení pro systém Office, které jsou podepsané certifikátem, který identifikuje vydavatele. Zahrnutí seznamy jsou specifické pro uživatele a mohou být použity pro přizpůsobení na úrovni dokumentu a doplňků VSTO.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -32,20 +33,20 @@ ms.lasthandoff: 04/16/2018
  Když uživatel spustí řešení Office, který nebyl udělen vztahu důvěryhodnosti pro tohoto uživatele, řešení Microsoft Office vyzve k rozhodnutí zabezpečení se mu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] výzvu vztahu důvěryhodnosti. Pokud se uživatel rozhodne důvěřovat řešení, spustí přizpůsobení a uživatel nebude vyzván k dalším.  
   
 ## <a name="inclusion-list-and-windows-installer"></a>Seznam povolených položek a instalační služba systému Windows  
- Instalace řešení pro systém Office do adresář Program Files pomocí Instalační služby systému Windows vyžaduje oprávnění správce. Pro řešení Office v adresáři Program Files sady Visual Studio Tools for Office Runtime už zkontroluje seznam povolených položek, protože řešení pro systém Office již bylo uděleno oprávnění FullTrust.  
+ Instalace řešení pro systém Office do adresář Program Files pomocí Instalační služby systému Windows vyžaduje oprávnění správce. Pro řešení Office v adresáři Program Files sady Visual Studio Tools for Office runtime už zkontroluje seznam povolených položek, protože řešení pro systém Office již bylo uděleno oprávnění FullTrust.  
   
 ## <a name="clickonce-trust-prompt"></a>Vztahu důvěryhodnosti ClickOnce  
  Pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] implementace pro řešení Office, správci můžete nakonfigurovat úroveň důvěryhodnosti výzva povolení výzvy, zakažte výzvy nebo vyžadují důvěryhodný certifikát. Tato konfigurace se provádí pomocí klíče registru, který určuje přístup do seznamu povolených.  
   
  Pokud je zakázána výzvy, lze nainstalovat pouze řešení, které mají certifikát důvěryhodným a známým. Pokud nabízení úroveň je nastavená na požadované Authenticode, řešení musí být podepsané certifikátem od známých autority, ale nevyžaduje certifikát který je zřetězen do důvěryhodného kořenového úřadu (důvěryhodný certifikát). Pokud je povolen výzvy, řešení by mohly být podepsány certifikátem identitou neznámé. V tomto scénáři je odložení rozhodnutí o vztahu důvěryhodnosti pro koncového uživatele a dočasné certifikátu by dostatečná k instalaci řešení.  
   
- Další informace najdete v tématu [postupy: konfigurace zabezpečení se seznamem povolených](../vsto/how-to-configure-inclusion-list-security.md) a tabulka 2, s názvem výzvy úroveň registru klíč hodnota spusťte důsledky, v [konfigurace ClickOnce důvěryhodných vydavatelů](http://go.microsoft.com/fwlink/?LinkId=94774).  
+ Další informace najdete v tématu [postupy: konfigurace zabezpečení se seznamem povolených](../vsto/how-to-configure-inclusion-list-security.md) a tabulka 2, s názvem výzvy úroveň registru klíč hodnota spusťte důsledky, v [konfigurace ClickOnce důvěryhodného vydavatele](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="structure-of-the-inclusion-list"></a>Struktura seznam povolených položek  
  Položka seznamu platný zahrnutí má dvě části: cesta k manifestu nasazení a veřejný klíč používaný k podepisování řešení. Po řešení se přidá do seznamu povolených, bude považován za důvěryhodný. Při spuštění řešení Office, aplikace Office porovná veřejný klíč v seznamu povolených s podpisový klíč v manifestu nasazení, aby ověřte, zda řešení, které běží v současné době je stejný jako původní verze důvěryhodné.  
   
-## <a name="see-also"></a>Viz také  
- [Udělení důvěry pro řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md)   
+## <a name="see-also"></a>Viz také:  
+ [Vztah důvěryhodnosti grant řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md)   
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)  
   
   

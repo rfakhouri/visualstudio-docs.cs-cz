@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89b5a5130264dc46e953ee87f048a768d756ce9c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f79e80b5b4e4e14772548ad92e8886150749b7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749054"
 ---
 # <a name="model-user-requirements"></a>Modelování uživatelských požadavků
 
@@ -63,7 +64,7 @@ Obchodní pravidlo je požadavek, který není spojen s případu konkrétní po
 
  Mnoho obchodní pravidla jsou omezení vztahy mezi koncepční třídy. Můžete napsat tyto *statické ** obchodní pravidla* jako komentáře přidružené k příslušné třídy v diagramu koncepční třídy. Příklad:
 
- ![Pravidlo v připojené k třídě objednávka komentář. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")
+ ![Pravidlo v připojené k třídě objednávka komentář.](../modeling/media/uml_reqmcd2.png)
 
  *Dynamické obchodní pravidla* omezit povolený pořadí událostí. Například pomocí diagramu pořadí nebo aktivita k zobrazení, jestli uživatel musí přihlásit před prováděním dalších operací ve vašem systému.
 
@@ -97,7 +98,7 @@ Pokud restaurace odstraní položku nabídky, zatímco zákazníka je řazení j
 
 V tématu [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md) se dozvíte, jak vyvíjet kód, který dodržuje kvality služeb požadavky.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)
 - [Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)

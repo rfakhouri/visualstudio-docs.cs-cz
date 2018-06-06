@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c3e6909bcb7299f4fd6d725334c26d2b59e0edb
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d781bbfefa59b2e124cf76c11b8fd7c06cc66dda
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764667"
 ---
-# <a name="diagnostic-namespace"></a>diagnostic – obor názvů
+# <a name="diagnostic-namespace"></a>Diagnostic – obor názvů
 `diagnostics` Obor názvů poskytuje funkce pro generování značek Vizualizéru souběžnosti.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -45,9 +46,9 @@ namespace diagnostic;
 |[marker_importance – výčet](../profiling/marker-importance-enumeration.md)|Představuje úroveň důležitosti značky Vizualizéru souběžnosti.|  
   
 ## <a name="requirements"></a>Požadavky  
- **Záhlaví:** cvmarkersobj.h  
+ **Záhlaví:** *cvmarkersobj.h*  
   
  **Namespace:** souběžnosti  
   
-## <a name="see-also"></a>Viz také  
- [Obor názvů souběžnosti (Vizualizér souběžnosti)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+## <a name="see-also"></a>Viz také:  
+ [Obor názvů souběžnosti (vizualizér souběžnosti)](../profiling/concurrency-namespace-concurrency-visualizer.md)

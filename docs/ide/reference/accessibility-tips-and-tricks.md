@@ -13,11 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ebcf8adb89a2e152f1f4dd1cd0e324d1b25a782
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747453"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Usnadnění tipy a triky pro Visual Studio
 
@@ -34,13 +35,13 @@ Visual Studio obsahuje vestavěných funkcí usnadnění, které jsou kompatibil
 
 Pro některé zaměstnance je složité najdete některé barvy. Pokud chcete další kontrast, jako je kód, ale nechcete použít typické "Vysoký kontrast" motivy, nabízíme nyní motiv "Blue (navíc kontrast)".
 
-  ![Porovnat motiv modrý a motiv modrý navíc kontrastem](media/blue-extra-contrast-theme.png "vidět rozdíl mezi motiv modrý a motiv modrý navíc kontrast")
+  ![Porovnat motiv modrý a motiv modrý navíc kontrastem](media/blue-extra-contrast-theme.png)
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Použití poznámek na nich užitečné informace o kódu
 
 Editoru Visual Studio obsahuje mnoho text "vylepšení" které umožňují vědět o vlastnosti a funkce na konkrétní body na řádek kódu, například lightbulbs, chyby a upozornění "podtržení vlnovkou", záložky a tak dále. Můžete nastavit vám pomohou zjistit a potom přejděte mezi těchto vylepšení příkaz "Zobrazit čáry poznámky".
 
-  ![Použít sadu příkazů nástroje zobrazit čáry poznámky](media/show-line-annotations-command-set.png "ukazuje, jak nastavit sadu příkazů nástroje zobrazit čáry poznámky")
+  ![Použít sadu příkazů nástroje zobrazit čáry poznámky](media/show-line-annotations-command-set.png)
 
 ## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>Panely nástrojů přístup pomocí kombinace klávesových zkratek
 
@@ -82,22 +83,22 @@ Tady je způsob.
 
 1. V **vyhledávání** pole v počítači se systémem Windows 10, typ **změnit systémové zvuky**.
 
-  ![Vyhledávací pole ve Windows 10](media/type-here-to-search.png "pole typu zvuků do vyhledávání v počítači se systémem Windows 10")
+  ![Vyhledávací pole ve Windows 10](media/type-here-to-search.png)
 
   (Případně, pokud máte povolené Cortana, vyslovení "Blogu Hey Cortana" a poté vyslovte "Změnit systémové zvuky".)
 
 2. Klikněte dvakrát na **změnit systémové zvuky**.
 
-  ![Výsledky hledání ve Windows 10](media/change-system-sounds.png "dvojitým kliknutím změnit systémové zvuky ve výsledcích hledání")
+  ![Výsledky hledání ve Windows 10](media/change-system-sounds.png)
 
 3. V **zvuk** dialogové okno, klikněte **zvuků** kartě. <br><br>
  Potom v **programu události**, přejděte k položce **Microsoft Visual Studio**a vyberte zvuků, které chcete použít k událostem, které zvolíte.
 
-  ![Na kartě zvuky zvukové apletu ve Windows 10](media/sound-applet.png "dvojitým kliknutím změnit systémové zvuky ve výsledcích hledání")
+  ![Na kartě zvuky zvukové apletu ve Windows 10](media/sound-applet.png)
 
 4. Click **OK**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Funkce pro usnadnění přístupu sady Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Postupy: přizpůsobení nabídek a panelů nástrojů v sadě Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)

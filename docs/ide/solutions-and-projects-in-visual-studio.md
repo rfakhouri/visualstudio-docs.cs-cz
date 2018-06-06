@@ -26,11 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dc94838423cea7eeab8cef6357267609394352b
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: fe7db915f2953bf99b9805700e1236d3d79a194a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747623"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Řešení a projektů v sadě Visual Studio
 
@@ -64,8 +65,8 @@ Můžete také vytvořit vlastní šablony projektů a položek. Další informa
 
 Po vytvoření nového projektu, můžete použít **Průzkumníku řešení** k zobrazení a správě projektu a řešení a jejich přidružené položky. Následující obrázek znázorňuje **Průzkumníku řešení** s řešením C#, který obsahuje dva projekty.
 
-![Průzkumník řešení](../ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")
+![Průzkumník řešení](../ide/media/vs2015_solution_explorer.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)

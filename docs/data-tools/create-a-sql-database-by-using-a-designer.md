@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 433a8bc7cae982b5ec8106966ec8c6ca0af45076
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 53f34fbed4a2067836c5f2c7a8d4bf8aa6c09d29
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34690923"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747037"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Vytvoření databáze a přidání tabulek v sadě Visual Studio
 Visual Studio můžete použít k vytváření a aktualizaci místního databázového souboru v SQL serveru Express LocalDB. Můžete také vytvořit databázi spuštěním příkazů Transact-SQL v **Průzkumník objektů systému SQL Server** okno nástroje v sadě Visual Studio. V tomto tématu jsme vytvoříte soubor MDF a přidání tabulek a klíče pomocí Návrháře tabulky.
@@ -36,7 +36,7 @@ Pro dokončení tohoto návodu, musíte mít volitelné **úložiště dat a zpr
 
 3.  V seznamu šablon položek, posuňte se dolů a vyberte **databáze založené na službě**.
 
-     ![Dialogové okno šablony položky](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")
+     ![Dialogové okno šablony položek](../data-tools/media/raddata-vsitemtemplates.png)
 
 4.  Název databáze **SampleDatabase**a pak vyberte **přidat** tlačítko.
 
@@ -95,7 +95,7 @@ V této části vytvoříte dvě tabulky, primární klíč v každé tabulce a 
 
     Měli byste vidět zhruba takhle:
 
-    ![Návrhář tabulky](../data-tools/media/raddata-table-designer.png "raddata návrháře tabulky")
+    ![Návrhář tabulky](../data-tools/media/raddata-table-designer.png)
 
 7.  V levém horním rohu **návrháře tabulky**, vyberte **aktualizace** tlačítko.
 
@@ -130,7 +130,7 @@ V této části vytvoříte dvě tabulky, primární klíč v každé tabulce a 
 ### <a name="to-create-a-foreign-key"></a>Vytvoření cizího klíče
 1.  V podokně kontext na pravé straně mřížky otevřete místní nabídku pro **cizí klíče**a potom vyberte **přidat nový cizí klíč**, jak ukazuje následující obrázek.
 
-     ![Přidání cizí klíče v Návrháři tabulky](../data-tools/media/foreignkey.png "cizí klíč")
+     ![Přidání cizí klíče v Návrháři tabulky](../data-tools/media/foreignkey.png)
 
 2.  Do textového pole nahradit **ToTable** s `Customers`.
 

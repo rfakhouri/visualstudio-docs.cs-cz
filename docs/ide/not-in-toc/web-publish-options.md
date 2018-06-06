@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fd980aa7da59c98348c4dede5aee9835863d522
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: acc136462f8905be924357399b644a05569258b1
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766178"
 ---
 # Jaké možnosti publikování je pro mě nejlepší?
 
@@ -83,7 +84,7 @@ Všimněte si, že pokud z nějakého důvodu (například přístup k počíta�
 
 Další informace o nasazení aplikací .NET Core najdete v tématu [.NET Core nasazení aplikace pomocí sady Visual Studio](/dotnet/core/deploying/deploy-with-vs).
 
-## Vlastní cíle
+## Vlastní cíle (služby IIS, FTP)
 
 Vlastní cíl umožňuje nasadit webovou aplikaci na cíl, než Azure App Service, virtuální počítače Azure nebo místního systému souborů. Můžete nasadit systém souborů nebo jiný server (Internetu nebo intranetu) ke kterému máte přístup, včetně těch, na jiných cloudových služeb. Můžete pracovat s web nasazení (soubory nebo. ZIP) a FTP.
 
@@ -102,4 +103,4 @@ Můžete vytvořit libovolný počet vlastní profily nasazení v sadě Visual S
 - Chcete nasadit, pomocí přihlašovacích údajů než ty, které používáte v sadě Visual Studio, nebo těch, které přímo navázána na vaše účty Azure.
 - Chcete odstranit soubory z cíle pokaždé, když nasazujete.
 
-Další informace o publikování do služby IIS najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) a [vzdáleného ladění ASP.NET ve vzdáleném počítači IIS](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
+Další informace o publikování do služby IIS najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)

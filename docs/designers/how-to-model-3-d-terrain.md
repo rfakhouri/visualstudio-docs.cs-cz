@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3618c33c1d5dca9c676177cdce362b14b7f1858
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745575"
 ---
 # <a name="how-to-model-3d-terrain"></a>Postupy: Model 3D geologické struktury
 
@@ -26,7 +27,7 @@ Tento článek ukazuje, jak použití editoru Model pro vytvoření modelu 3D ge
 
 Jakmile budete hotovi, modelu by měl vypadat přibližně takto:
 
-![3&#45;scény D, který znázorňuje model geologické struktury](../designers/media/digit-terrain-model.png "číslice. geologické struktury modelu")
+![3&#45;scény D, který znázorňuje model geologické struktury](../designers/media/digit-terrain-model.png)
 
 Než začnete, ujistěte se, že **vlastnosti** okno a **sada nástrojů** jsou zobrazeny.
 
@@ -52,10 +53,10 @@ Než začnete, ujistěte se, že **vlastnosti** okno a **sada nástrojů** jsou 
 
 Model geologické struktury je dokončena. Tady je poslední model znovu s Phong stínování použít:
 
-![3&#45;scény D, který znázorňuje model geologické struktury](../designers/media/digit-terrain-model.png "číslice. geologické struktury modelu")
+![3&#45;scény D, který znázorňuje model geologické struktury](../designers/media/digit-terrain-model.png)
 
 Tento model geologické struktury můžete použít k předvedení efektu barevného přechodu shaderu, která je popsána v [postupy: vytvoření přechodu shaderu na základě geometrie](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Editor modelů](../designers/model-editor.md)

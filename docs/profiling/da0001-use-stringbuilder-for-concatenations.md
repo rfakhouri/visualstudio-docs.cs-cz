@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78b8e4d8b0a8ac7a2afbe0eb501ff496b3ade188
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2b073640670d3e6e650fc4144c61e971c085aec2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749721"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Pro zřetězování používejte StringBuilder
 |||  
@@ -39,6 +40,6 @@ ms.lasthandoff: 04/19/2018
  Třídy StringBuilder je měnitelný objekt, a na rozdíl od System.String, většina metod na StringBuilder, které upravují instance této třídy vrátíte odkaz na stejnou instanci. Můžete vložit znaky nebo připojit k instanci StringBuilder, text a odebrat nebo nahrazení znaků v instanci bez nutnosti přidělování novou instanci a odstraňování původní instance.  
   
 ## <a name="how-to-investigate-a-warning"></a>Jak prozkoumat upozornění  
- Klikněte dvakrát na zprávy v okně Seznam chyb, přejděte na [zobrazení podrobností funkce](../profiling/function-details-view.md) odběru data profilu. Najít v částech programu, které využívají nejčastěji se vyskytující zřetězení řetězců. Pomocí třídy StringBuilder pro manipulace s řetězci komplexní, včetně operace sřetězení časté řetězec.  
+ Dvakrát klikněte na zprávu ve **seznam chyb** přejděte do okna [zobrazení podrobností funkce](../profiling/function-details-view.md) odběru data profilu. Najít v částech programu, které využívají nejčastěji se vyskytující zřetězení řetězců. Pomocí třídy StringBuilder pro manipulace s řetězci komplexní, včetně operace sřetězení časté řetězec.  
   
  Další informace o tom, jak pracovat s řetězce [operace s řetězci](http://go.microsoft.com/fwlink/?LinkId=177816) části [kapitoly 5 - zlepšení výkonu kódu spravované](http://go.microsoft.com/fwlink/?LinkId=177817) v knihovně Microsoft Patterns and Practices.

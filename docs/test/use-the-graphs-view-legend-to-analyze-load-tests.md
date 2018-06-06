@@ -11,17 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 55d38dcb87081ea7fc0b16d7d500d13e72f77269
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 065e50b123ccf4ac96ba6bec89db74bb51990f58
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751398"
 ---
 # <a name="using-the-graphs-view-legend-to-analyze-load-tests"></a>Použití legendy zobrazení grafů k analýze zátěžových testů
 
 Zobrazení grafů Analyzéru zátěžového testu obsahuje panel legendy, jenž zobrazuje informace pro každý čítač výkonu, který je přidružen k aktuálně vybranému grafu.
 
-![Legenda zobrazení grafů](../test/media/load_viewlegend.png "Load_ViewLegend")
+![Legenda zobrazení grafů](../test/media/load_viewlegend.png)
 
 Legenda obsahuje následující informace:
 
@@ -56,7 +57,7 @@ Výběr položky v legendě provede následující:
 > [!TIP]
 > Můžete použít **rozevírací seznam možnosti grafu** tlačítka na panelu nástrojů a vyberte Analyzéru zátěžového testu **zobrazit legendu** zobrazit nebo skrýt **legendy** panel, který je spojen s zobrazení grafu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: určení možností grafu pro čítače grafů](../test/how-to-specify-plot-options-for-graphing-counters.md)
 - [Postupy: přiblížení oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)

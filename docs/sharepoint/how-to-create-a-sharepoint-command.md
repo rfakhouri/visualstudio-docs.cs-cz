@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fbfaeba966a2608f67ff63b0de39f13669a7169f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 026c15241ace87a3d7454afb2439e045d06ce67b
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767660"
 ---
-# <a name="how-to-create-a-sharepoint-command"></a>Postupy: Vytvoření příkazu SharePoint
+# <a name="how-to-create-a-sharepoint-command"></a>Postupy: vytvoření příkazu SharePoint
   Pokud chcete použít objektový model serveru v rozšíření nástrojů služby SharePoint, je třeba vytvořit vlastní *příkazu SharePoint* pro volání rozhraní API. Příkaz SharePoint definujete v sestavení, které můžete volat přímo do objektový model serveru.  
   
  Další informace o účelu SharePoint – příkazy najdete v tématu [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -77,11 +78,10 @@ ms.lasthandoff: 04/16/2018
 -   Microsoft.SharePoint  
   
 ## <a name="deploying-the-command"></a>Příkaz nasazení  
- K nasazení příkaz, zahrnují sestavení příkazu ve stejné [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] balíček rozšíření (VSIX) s sestavení rozšíření, která pomocí příkazu. Musíte taky přidat položku pro příkaz sestavení v souboru extension.vsixmanifest. Další informace najdete v tématu [nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ K nasazení příkaz, zahrnují sestavení příkazu ve stejné [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozšíření (*vsix*) balíček s sestavení rozšíření, která pomocí příkazu. Musíte taky přidat položku pro příkaz sestavení v souboru extension.vsixmanifest. Další informace najdete v tématu [nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Volání do služby SharePoint objektové modely](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [Postup: provedení příkazu SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [Návod: Rozšíření průzkumníka serveru pro zobrazení částí webu](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
   

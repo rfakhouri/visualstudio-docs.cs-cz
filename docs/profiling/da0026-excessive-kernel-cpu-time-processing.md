@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f7f38bbf0655099e3c90f3893c34be39ef4b28
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4a571b0eee0a0cdd4b6e232dc13bd8e8923da805
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750178"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Nadměrný čas zpracování procesoru jádra
 |||  
@@ -37,5 +38,5 @@ ms.lasthandoff: 04/19/2018
 ## <a name="rule-description"></a>Popis pravidla  
  Relativně vysoký podíl času stráveného aplikace při provádění režimu jádra je důvod k další šetření. Aplikace v uživatelském režimu přejde do režimu jádra k provedení vstupně-výstupních operací, počkejte vlákna nebo proces synchronizace primitiv, anebo systémová volání. Můžete prozkoumat druhy systémová volání umožňuje aplikace a funkce, které jsou zodpovědní za je, když vyberete možnost získat zásobníky volání ukázka podle systémová volání.  
   
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- K prozkoumání druhy systémová volání, které vaše aplikace umožňuje spustit profil znovu a vyberte možnost ke shromáždění ukázky podle systémová volání. V tématu [postupy: výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md) Pokud používáte nástrojů pro profilaci uvnitř IDE pro další informace. Pokud používáte nástrojů pro profilaci z příkazového řádku, najdete v článku **možnosti intervalu vzorkování** části [VSPerfCmd](../profiling/vsperfcmd.md) téma v nástrojích pro profilaci příkazového řádku nástroje odkaz.
+## <a name="how-to-fix-violations"></a>Jak opravit porušení  
+ K prozkoumání druhy systémová volání, které vaše aplikace umožňuje spustit profil znovu a vyberte možnost ke shromáždění ukázky podle systémová volání. V tématu [postupy: výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md) Pokud používáte nástrojů pro profilaci uvnitř IDE pro další informace. Pokud používáte nástrojů pro profilaci z příkazového řádku, přečtěte si téma **ukázkové interval možnosti** části [VSPerfCmd](../profiling/vsperfcmd.md) článek v nástrojích pro profilaci odkaz nástroje příkazového řádku.

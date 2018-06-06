@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 110aa964c6163f508ba9cd5f26409d0a9912a17e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3293b526b3380d3052123d45f3fb7f6599f7b5f7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751972"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Postupy: Přidání a odstranění čítačů pro grafy ve výsledcích zátěžového testu
 
 Panel čítačů můžete použít k přidání čítačů výkonu do grafu.
 
- ![Přidání čítačů do grafu](../test/media/ltest_selectcounter.png "LTest_SelectCounter")
+ ![Přidání čítačů do grafu.](../test/media/ltest_selectcounter.png)
 
  **Aspekty Interval vzorkování čítače výkonu**
 
@@ -81,7 +82,7 @@ Další informace najdete v tématu [postupy: určení vlastnosti úložiště p
     > [!NOTE]
     > Můžete také umístit čítače výkonu v legendě, ale nejsou v grafu pomocí **přidat čítače v legendě** příkaz.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Analýza výsledků zátěžových testů v zobrazení grafů](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Postupy: vytváření vlastních grafů](../test/how-to-create-custom-graphs-in-load-test-results.md)

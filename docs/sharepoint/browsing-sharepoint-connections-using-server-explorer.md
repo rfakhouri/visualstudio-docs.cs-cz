@@ -21,15 +21,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5631699f324451034d0d5c66161c004c793add37
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8d19dc2cb621cc99b94524806d63eebba137668a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691414"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765853"
 ---
-# <a name="browsing-sharepoint-connections-that-use-server-explorer"></a>Procházení připojení služby SharePoint, které pomocí Průzkumníka serveru
-  Nyní je možné procházet místní připojení služby SharePoint v **Průzkumníka serveru**. Pomocí tohoto postupu lze procházet součástí webu služby SharePoint ve vašem systému. Součástí webu SharePoint, např. seznam definic a typy obsahu, se zobrazí v uzlu, který je pojmenován **připojení služby SharePoint** v zobrazení stromu **Průzkumníka serveru**. Chcete-li zobrazit **Průzkumníka serveru**, na řádku nabídek zvolte **zobrazení**, **Průzkumníka serveru**. Kromě zobrazení lokality součásti služby SharePoint, můžete odebrat položky, zobrazit jejich vlastnosti nebo aktualizujte zobrazení stromu pomocí příkazů v místní nabídce.  
+# <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Procházení připojení služby SharePoint pomocí Průzkumníka serveru
+  Nyní je možné procházet místní připojení služby SharePoint v **Průzkumníka serveru**. Pomocí tohoto postupu lze procházet součástí webu služby SharePoint ve vašem systému. Součástí webu SharePoint, např. seznam definic a typy obsahu, se zobrazí v uzlu, který je pojmenován **připojení služby SharePoint** v zobrazení stromu **Průzkumníka serveru**. Chcete-li zobrazit **Průzkumníka serveru**, na řádku nabídek zvolte **zobrazení** > **Průzkumníka serveru**. Kromě zobrazení lokality součásti služby SharePoint, můžete odebrat položky, zobrazit jejich vlastnosti nebo aktualizujte zobrazení stromu pomocí příkazů v místní nabídce.  
   
 > [!IMPORTANT]  
 >  Procházet web služby SharePoint, musíte být správce kolekce webů služby SharePoint a spuštění sady Visual Studio jako správce místního počítače. Jinak, server se zobrazí v **Průzkumníka serveru**, ale nelze rozbalit její uzel. Pokud chcete ověřit, zda jste přihlášeni jako správce kolekce webů, otevřete web ve webovém prohlížeči, otevřete **Akce webu** nabídce zvolte **oprávnění lokality**a pak klikněte na **oprávnění: Team Lokality** vyberte **správci kolekce webů** příkaz **spravovat** skupinu na pásu karet. Název se zobrazí v textovém poli, pokud jste správce kolekce webů. Pokud **správci kolekce webů** příkaz nezobrazí ve skupině spravovat na pásu karet, nejsou správce kolekce webů a je nutné získat od správce webu příslušná oprávnění.  

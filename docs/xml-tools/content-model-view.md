@@ -10,19 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 355fe0485327c5c92441cd54d42253d022c7bb6e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 0d7f04c482149cbc063a3788dd6be44c643bae6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751790"
 ---
-# <a name="content-model-view"></a>Zobrazení obsahu modelu
+# <a name="content-model-view"></a>Zobrazení modelu obsahu
 
 Zobrazení obsahu modelu poskytuje grafické reprezentace místní a globální schématu uzlů a jejich komponent, včetně jednoduché a komplexní typy, elementy, skupiny modelů, atributy a skupin atributů. XML – komentáře a pokyny pro zpracování nelze zobrazit v zobrazení obsahu modelu. Zobrazení modelu obsahu obsahuje dva panely: **prostoru** panel, který obsahuje seznam uzlů v [prostoru Návrhář schématu XML](../xml-tools/xml-schema-designer-workspace.md)a na návrhovou plochu, kde se můžete podívat modelu obsahu schématu uzly, které jsou vybrány v **prostoru** panelu. Zobrazení obsahu modelu zahrnuje taky panelu nástrojů Návrhář schématu XML a navigačního panelu.
 
  Na následujícím obrázku **prostoru** panel obsahuje šest uzly schématu. `purchaseOrder` Vybrán uzel **prostoru** panelu a v návrhovou plochu, která se zobrazí.
 
- ![Zobrazení návrháře modelu obsahu schématu XML](../xml-tools/media/xsddesigner_contentmodelview.gif "XSDDesigner_ContentModelView")
+ ![Zobrazení návrháře modelu obsahu schématu XML](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
 ## <a name="workspace-panel"></a>Pracovní prostor panely
 
@@ -78,7 +79,7 @@ Zobrazení obsahu modelu poskytuje grafické reprezentace místní a globální 
 
  Následující tlačítka panelu nástrojů Návrhář XSD je zapnuté, pokud je aktivní zobrazení obsahu modelu.
 
- ![XML schéma návrháře nástrojů](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")
+ ![Nástrojů Návrhář schématu XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
 |Možnost|Popis|
 |------------|-----------------|
@@ -124,6 +125,6 @@ Posuvník přiblížení je plné krytí, pokud vyberte ho, při přechodu nebo 
 
  Pokud provedete změny schématu nastavení v editoru XML jsou synchronizovány změny v modelu zobrazení obsahu. Další informace najdete v tématu [integrace s editoru XML](../xml-tools/integration-with-xml-editor.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Pracovní prostor Návrháře schémat XML](../xml-tools/xml-schema-designer-workspace.md)

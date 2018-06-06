@@ -18,7 +18,7 @@ ms.openlocfilehash: cb50f0a1a16a8b6a72862a3441cf1e72697042ec
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34690764"
 ---
 # <a name="cores-view-logical-cores"></a>Logická jádra zobrazení jader

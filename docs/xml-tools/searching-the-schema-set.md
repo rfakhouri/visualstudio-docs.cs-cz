@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c110344499281243628d633d005506af5cd801d0
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 1133d6a67442bde5a9f949553efcffd07e2d3ffe
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751738"
 ---
 # <a name="search-the-schema-set"></a>Hledání sadu schématu
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 05/24/2018
 
  Provádět – klíčové slovo hledání tak, že zadáte podřetězce v **vyhledávání SchemaSet** textovém poli **Explorer schématu XML** panelu nástrojů.
 
- ![Hledání klíčových slov Explorer schématu XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+ ![Hledání klíčových slov Explorer schématu XML](../xml-tools/media/schemaexplorersearch.gif)
 
  **Explorer schématu XML** vyhledá schéma nastavení pro následující atributy:
 
@@ -48,12 +49,12 @@ ms.lasthandoff: 05/24/2018
 
  Výsledky hledání můžete přidat do pracovního prostoru kliknutím **přidat zvýrazněné uzly do pracovního prostoru** stisknutí tlačítka na panelu shrnutí výsledků.
 
- ![Výsledek hledání Explorer schématu XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+ ![Výsledek hledání Explorer schématu XML](../xml-tools/media/schemaexplorersearchresult.gif)
 
 ## <a name="clear-search-results"></a>Vymazat výsledky hledání
 
  Pokud chcete vymazat výsledky hledání, klikněte na tlačítko **x** tlačítko v podokně souhrnu výsledků **Explorer schématu XML** vyhledávání panelu nástrojů.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Průzkumník schémat XML](../xml-tools/xml-schema-explorer.md)

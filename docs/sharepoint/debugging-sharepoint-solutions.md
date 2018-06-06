@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfa72bab32aa6af2188f8f6c04411b768b441e92
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4937bcdef14cadccfa940b2176cf002a976fa16d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692210"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766412"
 ---
-# <a name="debugging-sharepoint-solutions"></a>Ladění řešení služby SharePoint
+# <a name="debug-sharepoint-solutions"></a>Ladění řešení služby SharePoint
   Můžete ladění řešení služby SharePoint pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicí program. Při spuštění ladění, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na serveru SharePoint nasadí soubory projektu a pak otevře instanci web služby SharePoint ve webovém prohlížeči. Následující části popisují postup ladění aplikací služby SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 -   [Povolení ladění](#EnableDebug)  
@@ -40,7 +40,7 @@ ms.locfileid: "34692210"
   
 -   [Povolení Rozšířené ladicí informace](#EnhancedDebug)  
   
-##  <a name="EnableDebug"></a> Povolení ladění  
+## <a name="enable-debugging"></a>Povolení ladění
  Při první ladění řešení služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dialogové okno vás upozorní, že pokud chcete povolit ladění není nakonfigurován v souboru web.config. (V souboru web.config se vytvoří při instalaci serveru SharePoint. Další informace najdete v tématu [práce se soubory Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) Dialogové okno vám dává možnost buď spuštění projektu bez ladění nebo úprava souboru web.config. Pokud chcete povolit ladění. Pokud zvolíte možnost první, projekt se spustí normálně. Pokud si zvolíte druhou možnost, v souboru web.config nastaven tak, aby:  
   
 -   Zapnout v zásobníku volání (`CallStack="true"`)  
@@ -86,7 +86,7 @@ ms.locfileid: "34692210"
   
 -   Zakázat ladění kompilace (`<compilation debug="false">`)  
   
-##  <a name="Deployment"></a> F5 ladění a proces nasazení  
+## <a name="f5-debug-and-deployment-process"></a>Proces nasazení a ladění F5
  Při spuštění v režimu ladění projektu služby SharePoint, procesu nasazení služby SharePoint provádí následující úlohy:  
   
 1.  Spouští přizpůsobitelné příkazy před nasazením.  
@@ -110,7 +110,7 @@ ms.locfileid: "34692210"
   
 9. Spouští příkazy přizpůsobitelné po nasazení.  
   
-10. Připojí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicího programu na [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] proces (w3wp.exe). Pokud typ projektu můžete změnit *řešení v izolovaném prostoru* vlastnost a její hodnota je nastavena na **true**, pak připojí ladicí program k jiným procesem (SPUCWorkerProcess.exe). Další informace najdete v tématu [v izolovaném prostoru aspekty řešení](../sharepoint/sandboxed-solution-considerations.md).  
+10. Připojí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicího programu na [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] procesu (*w3wp.exe*). Pokud typ projektu můžete změnit *řešení v izolovaném prostoru* vlastnost a její hodnota je nastavena na **true**, pak připojí ladicí program k jiným procesem (*SPUCWorkerProcess.exe*). Další informace najdete v tématu [v izolovaném prostoru aspekty řešení](../sharepoint/sandboxed-solution-considerations.md).  
   
 11. Ladicí program JavaScript spustí, pokud řešení služby SharePoint je řešení farmy.  
   
@@ -118,14 +118,14 @@ ms.locfileid: "34692210"
   
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Zobrazí stavové zprávy v okně výstupu. Po dokončení každé úlohy. Pokud úloha nemůže být dokončena, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zobrazí chybovou zprávu v okně Seznam chyb.  
   
-##  <a name="Features"></a> Funkce projektu služby SharePoint  
+## <a name="sharepoint-project-features"></a>Funkce projektu služby SharePoint
  Funkce je jednotka přenosné a modulární funkci, která zjednodušuje úpravy lokalit pomocí definice webů. Je také balíček [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] elementy (WSS), může být aktivovaný pro konkrétní obor a který pomáhá uživatelům provádět určité cíle nebo úkolu. Šablony jsou nasazeny jako funkce.  
   
- Když na projekt v režimu ladění, proces nasazení vytvoří složku v *funkce* adresář na %COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES. Funkce názvy mají formát *název projektu*_Feature*x*, jako je například TestProject_Feature1.  
+ Když na projekt v režimu ladění, proces nasazení vytvoří složku v *funkce* adresář na *%COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES*. Funkce názvy mají formát *název projektu*_Feature*x*, jako je například TestProject_Feature1.  
   
- Obsahuje složky na řešení v adresáři funkce *definice funkce* souboru a *definice pracovního postupu* souboru. Soubor definice funkce (souboru funkce.XML) popisuje soubory v projektu funkci definiční soubor projektu (Elements.xml) popisuje šablona projektu. Elements.XML lze nalézt v **Průzkumníku**, ale souboru funkce.XML se vygeneruje při vytvoření balíčku řešení. Další informace o těchto souborech najdete v tématu [projektu služby SharePoint a šablony položek projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+ Obsahuje složky na řešení v adresáři funkce *definice funkce* souboru a *definice pracovního postupu* souboru. Soubor definice funkce (souboru funkce.XML) popisuje soubory v souboru projektu funkci projektu definice (*Elements.xml*) popisuje šablona projektu. *Elements.xml* lze nalézt v **Průzkumníku**, ale souboru funkce.XML se vygeneruje při vytvoření balíčku řešení. Další informace o těchto souborech najdete v tématu [projektu služby SharePoint a šablony položek projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
-##  <a name="Workflow"></a> Ladění pracovních postupů  
+## <a name="debug-workflows"></a>Ladění pracovních postupů
  Když ladíte projekty workflow [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] přidá šablonu pracovního postupu (v závislosti na jeho typu) do knihovny nebo do seznamu. Pracovní postup šablony potom můžete spustit ručně nebo pomocí přidání nebo aktualizace položku. Pak můžete použít [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] k ladění pracovního postupu.  
   
 > [!NOTE]  
@@ -135,15 +135,15 @@ ms.locfileid: "34692210"
   
  Například pokud jste zadali, že pracovní postup lze spustit ručně, spusťte pracovní postup přímo z položky v seznamu nebo knihovny. Další informace o tom, jak ručně spustit pracovní postup najdete v tématu [ručně spustit pracovní postup na položku dokumentu](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
-##  <a name="FeatureEvents"></a> Ladění přijímačů událostí funkce  
+## <a name="debug-feature-event-receivers"></a>Ladění přijímačů událostí funkce
  Ve výchozím nastavení při spuštění [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aplikace služby SharePoint, jeho funkce jsou automaticky aktivované pro vás na serveru SharePoint. Však dojde k potížím při ladění přijímačů událostí funkce, protože když je aktivován funkce [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], běží v jiném procesu než ladicího programu. To znamená, že některé funkce ladění, jako je například zarážky, nebudou fungovat správně.  
   
  Pokud chcete zakázat automatickou aktivaci funkce ve službě SharePoint a povolit správné ladění přijímačů událostí funkce, nastavte hodnotu projektu **aktivní konfigurace nasazení** vlastnost, která má **bez aktivace** před ladění. Potom po spuštění k ladění aplikace SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], je nutné ručně aktivovat funkci ve službě SharePoint. Pokud chcete aktivovat funkci, otevřete **Akce webu** nabídky ve službě SharePoint, zvolte **nastavení lokality**, vyberte **spravovat funkce lokality** propojit a potom zvolte **Aktivovat** tlačítko vedle funkci, chcete-li pokračovat, ladění jako normální.  
   
-##  <a name="EnhancedDebug"></a> Povolení Rozšířené ladicí informace  
- Z důvodu někdy složité interakce mezi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] procesu (devenv.exe), [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint hostitelského procesu (vssphost4.exe), SharePoint a vrstvě WCF, může být diagnostikování chyb vzniklých při vytváření, nasazování a tak dále výzvy. Chcete-li vyřešte tyto chyby, můžete povolit rozšířené ladicí informace. Chcete-li to provést, přejděte na následující klíč registru v registru systému Windows:  
+## <a name="enable-enhanced-debug-information"></a>Povolit rozšířené ladicí informace
+ Z důvodu někdy složité interakce mezi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] procesu (devenv.exe), [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint hostitelského procesu (*vssphost4.exe*), SharePoint a vrstva WCF, diagnostikování chyb vzniklých při vytváření, nasazování a tak dále, může být složité. Chcete-li vyřešte tyto chyby, můžete povolit rozšířené ladicí informace. Chcete-li to provést, přejděte na následující klíč registru v registru systému Windows:  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools]  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**  
   
  Pokud "EnableDiagnostics" **REG_DWORD** hodnota ještě neexistuje, vytvořte ho ručně. Nastavte hodnotu "EnableDiagnostics" na "1".  
   
@@ -151,7 +151,6 @@ ms.locfileid: "34692210"
   
  Další informace o jiných klíčů registru služby SharePoint, naleznete v části [ladění rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Řešení potíží s řešeními služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
-  
   

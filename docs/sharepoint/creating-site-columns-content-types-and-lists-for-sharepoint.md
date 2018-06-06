@@ -21,20 +21,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8c1869f11d4202237d628ff3f15f73906822ec47
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e2108ce50cca32be707931f5bcf11d4501e8d3d3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692519"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764917"
 ---
-# <a name="creating-site-columns-content-types-and-lists-for-sharepoint"></a>Vytváření sloupců webu, typů obsahu a seznamů pro službu SharePoint
+# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Vytvoření sloupce webu, typů obsahu a seznamů pro službu SharePoint
   Visual Studio poskytuje šablony položek projektu pro mnoho různých základní položek služby SharePoint, včetně *uvádí* a *typů obsahu*, která můžete začlenit sloupců webu (nebo  *pole*). Nové Designer pro seznamy a typy obsahu zkontrolujte vytváření těchto položek jednodušší než kdy dřív.  
   
 ## <a name="site-columns"></a>Sloupce webu
  Sloupce webu jsou jedním z nejzákladnější prvky, které přidáte do projektu služby SharePoint. Sloupec lokality představuje typ dat, například telefonní číslo, komentář nebo název města kontaktu, seznamu kontaktů.  
   
- Šablony položky projektu sloupce nové lokality usnadňuje vytváření sloupců webu než ve starší verzi sady Visual Studio. Po vytvoření nového sloupce webu, můžete upravit soubor XML v souboru Elements.xml sloupec lokality zahrnují informace, které chcete, například jeho zobrazovaný název, typ dat a skupiny, ve kterém má sloupec lokality zobrazí ve službě SharePoint. Další informace o sloupců webu najdete v tématu [Úvod do sloupce](http://go.microsoft.com/fwlink/?LinkId=224996).  
+ Šablony položky projektu sloupce nové lokality usnadňuje vytváření sloupců webu než ve starší verzi sady Visual Studio. Po vytvoření nového sloupce webu, můžete upravit soubor XML ve sloupci lokality *Elements.xml* informace, které chcete, například jeho zobrazovaný název, typ dat a skupiny, ve kterém má sloupec lokality zobrazí v souboru Služby SharePoint. Další informace o sloupců webu najdete v tématu [Úvod do sloupce](http://go.microsoft.com/fwlink/?LinkId=224996).  
   
 ## <a name="content-types-and-lists"></a>Seznamy a typy obsahu
  Seznamy a typy obsahu patří mezi nejčastěji používaných prvků ve službě SharePoint.  

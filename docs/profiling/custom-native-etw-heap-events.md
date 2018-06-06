@@ -12,13 +12,14 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d08abca1d20641a8e12261577ec1fdcf8179e080
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749457"
 ---
-# <a name="custom-native-etw-heap-events"></a>Vlastní nativní ETW – události haldy
+# <a name="custom-native-etw-heap-events"></a>Vlastní nativní události haldy Trasování událostí pro Windows
 
 Visual Studio obsahuje celou řadu [profilování a diagnostické nástroje](../profiling/profiling-tools.md), včetně nativní paměti profileru.  Tato profileru zachytí [události trasování událostí](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) od zprostředkovatele haldy a poskytuje analýzu jak paměti se přidělovány a využívány.  Ve výchozím nastavení tento nástroj můžete analyzovat pouze přidělení z standardní haldy Windows žádost a rozdělení mimo tento nativní haldy by se zobrazit.
 
@@ -136,7 +137,7 @@ V této knihovně můžete snadno použít jazyka C a C++.
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="tracking-memory-usage"></a>Sledování využití paměti
+## <a name="track-memory-usage"></a>Sledování využití paměti
 Pomocí těchto volání na místě, vaše vlastní haldy využití lze nyní sledovat přes standardní **využití paměti** nástroje v sadě Visual Studio.  Další informace o tom, jak pomocí tohoto nástroje najdete v tématu [využití paměti](../profiling/memory-usage.md) dokumentaci. Zkontrolujte, zda že jste povolili haldy profilace pomocí snímků, jinak se nezobrazí vaše vlastní haldy využití zobrazí. 
 
 ![Povolit haldy profilace](media/heap-enable-heap.png)
@@ -145,7 +146,7 @@ Chcete-li zobrazit vaše vlastní haldy sledování, použijte **haldy** rozeví
 
 ![Výběr haldy](media/heap-example-custom-heap.png)
 
-Pomocí výše uvedeného příkladu kódu s `MemoryPool` vytváření `VSHeapTracker::CHeapTracker` objekt a na našem vlastní `allocate` metoda teď volání `AllocateEvent` metoda, se zobrazí výsledek tohoto vlastní přidělení zobrazující 3 instancí součtem 24 bajtů, všechny typu `Foo`.
+Pomocí výše uvedeného příkladu kódu s `MemoryPool` vytváření `VSHeapTracker::CHeapTracker` objekt a na našem vlastní `allocate` metoda teď volání `AllocateEvent` metoda, se zobrazí výsledek tohoto vlastní přidělení zobrazující součtem 24 bajtů, všechny tři instance typ `Foo`.
 
 Výchozí hodnota *NT haldy* haldy vypadá a to stejně jako dříve, a uveďte naše `CHeapTracker` objektu.
 
@@ -154,8 +155,8 @@ Výchozí hodnota *NT haldy* haldy vypadá a to stejně jako dříve, a uveďte 
 I s standardní haldy Windows, můžete také použít tento nástroj porovnat snímky a vyhledejte nevracení a poškození vlastní haldy, který je popsán v hlavní [využití paměti](../profiling/memory-usage.md) dokumentaci.
 
 > [!TIP]
-> Visual Studio také obsahuje **využití paměti** nástroj v **profilace výkonu** sada nástrojů, která je povolena z **ladění > výkonu profileru** nabídky, nebo **Alt + F2** klávesové kombinace.  Tato funkce nezahrnuje haldy sledování a nezobrazí vaše vlastní haldy podle postupu popsaného tady.  Pouze **diagnostické nástroje** okno, které můžete povolit **ladění > Windows > zobrazit diagnostické nástroje** nabídky, nebo **Ctrl + Alt + F2** klávesové kombinaci, obsahuje tato funkce.
+> Visual Studio také obsahuje **využití paměti** nástroj v **profilace výkonu** sada nástrojů, která je povolena z **ladění** >  **Výkon profileru** nabídky, nebo **Alt**+**F2** klávesové kombinace.  Tato funkce nezahrnuje haldy sledování a nezobrazí vaše vlastní haldy podle postupu popsaného tady.  Pouze **diagnostické nástroje** okno, které můžete povolit **ladění**>**Windows**>**zobrazit diagnostické nástroje**  nabídky, nebo **Ctrl**+**Alt**+**F2** klávesové kombinace, obsahuje tato funkce.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 [Nástroje pro profilaci](../profiling/profiling-tools.md)  
 [Využití paměti](../profiling/memory-usage.md)

@@ -11,13 +11,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e98be1dd16705be00f388419013686f861f3753
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 18f4153db019dd6ded97337d4599f02a6b02ef49
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748931"
 ---
-# <a name="navigate-and-update-a-model-in-program-code"></a>Procházení a aktualizace modelu v programovém kódu
+# <a name="navigate-and-update-a-model-in-program-code"></a>Procházení a aktualizace modelu v programovém kódu
 
 Můžete napsat kód vytvořit a odstranit elementů modelu, nastavit jejich vlastnosti a vytvářet a odstraňovat propojení mezi elementy. Všechny změny, musí být provedeny v rámci transakce. Pokud se elementy jsou zobrazovat v diagramu, diagram bude "vyřešený" automaticky na konci transakce.
 
@@ -55,11 +56,11 @@ Můžete napsat kód vytvořit a odstranit elementů modelu, nastavit jejich vla
 ##  <a name="example"></a> Definici příklad DSL
  Toto je hlavní část DslDefinition.dsl příklady v tomto tématu:
 
- ![Diagram DSL definice &#45; rodiny stromu modelu](../modeling/media/familyt_person.png "FamilyT_Person")
+ ![Diagram DSL definice &#45; rodiny stromu modelu](../modeling/media/familyt_person.png)
 
  Tento model je instance této DSL:
 
- ![Tudor rodiny stromu modelu](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")
+ ![Tudor rodiny stromu modelu](../modeling/media/tudor_familytreemodel.png)
 
 ### <a name="references-and-namespaces"></a>Odkazy a obory názvů
  Spustí kód v tomto tématu, by měla odkazovat:
@@ -350,7 +351,7 @@ using (Transaction t = targetDiagram.Store.
  V DSL element modelu domény, který představuje koncept jako je osoba nebo skladbu, je nezávislý na element tvar, který představuje, najdete v diagramu. Element modelu domény ukládá důležité vlastností a vztahů koncepty. Element tvar ukládá velikost, pozici a barvu zobrazení objektu v diagramu a rozložení jeho součásti.
 
 ### <a name="presentation-elements"></a>Prvky prezentace, které
- ![Diagram třídy základních typů tvar a element](../modeling/media/dslshapesandelements.png "DSLshapesAndElements")
+ ![Diagram základní typy elementu a tvar – třída](../modeling/media/dslshapesandelements.png)
 
  Každý element, který určíte v vaší definice DSL, vytvoří třídu, která je odvozena z jedné z následujících tříd standardní.
 
@@ -509,12 +510,12 @@ partial class MyDiagram
  Tvary, konektory a diagramy jsou podtypů <xref:Microsoft.VisualStudio.Modeling.ModelElement> a za provozu v úložišti. Proto musí měnit jim pouze uvnitř transakce. Další informace najdete v tématu [postupy: použití transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 ##  <a name="docdata"></a> Zobrazení dokumentů a dat dokumentu
- ![Diagram třídy typů standardní diagram](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")
+ ![Třída diagram diagram standardní typy](../modeling/media/dsldiagramsanddocs.png)
 
 ## <a name="store-partitions"></a>Oddíly úložiště
  Při načítání modelu doprovodné diagramu je načten ve stejnou dobu. Obvykle modelu je načten do Store.DefaultPartition a diagram obsahu je načten do druhý oddíl. Obsah každý oddíl jsou obvykle načíst a uložit do samostatného souboru.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Ověřování v jazyce specifickém pro doménu](../modeling/validation-in-a-domain-specific-language.md)

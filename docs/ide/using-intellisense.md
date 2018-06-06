@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4960e1f829e2f5d673b1e7069b5813b68ab7bdb
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34690936"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748472"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense v sadě Visual Studio
 
@@ -38,7 +38,7 @@ Po výběru položky, můžete jej přidat do vašeho kódu stisknutím **kartě
 
 V seznamu členů ikona vlevo představuje typ členu, například obor názvů, třídu, funkci nebo proměnnou. Seznam ikon, naleznete v části [ikony zobrazení třídy a prohlížeč objektů](../ide/class-view-and-object-browser-icons.md). V seznamu může být poměrně dlouho, můžete stisknout **PgUp** a **Page Down** přesunout nahoru nebo dolů v seznamu.
 
-![Seznam členů v sadě Visual Studio](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
+![Seznam členů v sadě Visual Studio](../ide/media/vs2015_intellisense.png)
 
 Můžete vyvolat **vypsat členy** funkce ručně zadáním **Ctrl**+**J**, výběrem možnosti **upravit**  >  **IntelliSense** > **vypsat členy**, nebo výběrem **vypsat členy** tlačítka na panelu nástrojů editoru. Při vyvolání na prázdném řádku nebo mimo podporovaný rozsah zobrazí seznam symboly v globálním oboru názvů.
 
@@ -52,7 +52,7 @@ Informace o parametru poskytují informace o počtu, názvech a typech parametr�
 
 Parametr tučně označuje další parametr, který je vyžadován při zadávání funkce. Přetížené funkce, můžete použít **až** a **dolů** klávesy se šipkami zobrazit informace o alternativní parametr pro přetížení funkce.
 
-![Parameter Info](../ide/media/vs2015_param_info.png "VS2015_param_Info")
+![Informace o parametrech](../ide/media/vs2015_param_info.png)
 
 Když opatřujete poznámkami funkce a parametry s komentáři XML dokumentace, komentáře se zobrazí jako informace o parametru. Další informace najdete v tématu [komentáře kódu XML zadat](../ide/supplying-xml-code-comments.md).
 
@@ -62,11 +62,11 @@ Informace o parametrech můžete vyvolat ručně tak, že zvolíte **upravit** >
 
 Rychlé informace zobrazí úplnou deklaraci pro libovolný identifikátor ve vašem kódu.
 
-![Visual Studio Quick Info](../ide/media/vs2015_quick_info.png "VS2015_Quick_info")
+![Rychlé informace sadě Visual Studio](../ide/media/vs2015_quick_info.png)
 
 Když vyberete člena z **vypsat členy** pole, se také zobrazí rychlé informace.
 
-![Informace o parametrech v a C&#35; souboru kódu](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
+![Informace o parametrech v a C&#35; souboru kódu](../ide/media/vs2015_paraminfo.png)
 
 Rychlé informace můžete vyvolat ručně tak, že zvolíte **upravit** > **IntelliSense** > **rychlé informace**, stisknutím klávesy **Ctrl** + **I**, nebo výběrem **rychlé informace** tlačítka na panelu nástrojů editoru.
 

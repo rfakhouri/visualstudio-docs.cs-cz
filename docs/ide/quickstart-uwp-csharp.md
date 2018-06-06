@@ -14,17 +14,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d8585d2f8ec34371226c2211e318b71e356a331
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765866"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Rychlý úvod: Vytvoření první aplikace pro univerzální platformu Windows v sadě Visual Studio s XAML a C&#35;
 
 V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte aplikaci "Hello World", který běží na jakékoli zařízení s Windows 10. K tomu budete používat šablona projektu univerzální platformu Windows (UWP), Extensible aplikace Markup Language (XAML) a programovací jazyk C#.
 
-Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránky instalaci zdarma.
+Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
@@ -32,14 +33,14 @@ Nejprve vytvořte projekt univerzální platformu Windows. Typ projektu se dodá
 
 1. Otevřete Visual Studio 2017.
 
-2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu**.
+2. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
 
 3. V levém podokně **nový projekt** dialogové okno, rozbalte seznam **Visual C#** a potom zvolte **univerzální pro Windows**. V prostředním podokně vyberte **prázdná aplikace (univerzální pro Windows)**. Pojmenujte projekt *HelloWorld* a zvolte **OK**.
 
    ![Univerzální pro Windows šablona projektu v dialogovém okně Nový projekt v prostředí Visual Studio IDE](../ide/media/new-project-csharp-uwp-helloworld.png)
 
    > [!NOTE]
-   > Pokud nevidíte **prázdná aplikace (univerzální pro Windows)** projektu šablony, klikněte na tlačítko **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.<br><br>![Klikněte na odkaz otevřete instalační program Visual Studio z dialogového okna Nový projekt](../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Spustí instalační program Visual Studio. Vyberte **vývoj pro univerzální platformu Windows** zatížení a potom zvolte **upravit**.<br><br>![Univerzální platforma Windows vývoj zatížení v instalačním programu Visual Studio](../ide/media/uwp-dev-workload.png)
+   > Pokud nevidíte **prázdná aplikace (univerzální pro Windows)** projektu šablony, klikněte na tlačítko **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.<br><br>![Klikněte na odkaz otevřete instalační program Visual Studio z dialogového okna Nový projekt](../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Spustí se instalační program pro Visual Studio. Vyberte **vývoj pro univerzální platformu Windows** zatížení a potom zvolte **upravit**.<br><br>![Univerzální platforma Windows vývoj zatížení v instalačním programu Visual Studio](../ide/media/uwp-dev-workload.png)
 
 4. Když **nový projekt univerzální platformu Windows** se zobrazí dialogové okno, zvolte **OK**.
 
@@ -59,7 +60,7 @@ Je čas spuštění vývoj. Budete přidání ovládacího prvku tlačítko, na 
 
   ![Otevřete MainPage.xaml v Průzkumníku řešení ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  Existují dvě podokna: **návrháře XAML**, což zahrnuje na plátno návrhu a **editoru XAML**, kde můžete přidat nebo změnit kód.    
+  Existují dvě podokna: **návrháře XAML**, což zahrnuje na plátno návrhu a **editoru XAML**, kde můžete přidat nebo změnit kód.
 
   ![V podokně Návrhář XAML v editoru XAML](../ide/media/uwp-xaml-editor.png)
 
@@ -130,7 +131,7 @@ Je čas vytvořit, nasadit a spustit aplikaci UWP "Hello World" v tématu vypad�
 
 1. Zvolte **místního počítače** a spusťte aplikaci.
 
-   ![Klikněte na místním počítači a spuštění ladění aplikace UWP](../ide/media/uwp-start-or-debug.png "klikněte na místním počítači spustit a ladění aplikace UWP")
+   ![Klikněte na místním počítači a spuštění ladění aplikace UWP](../ide/media/uwp-start-or-debug.png)
 
    (Alternativně můžete **ladění** > **spustit ladění** z řádku nabídek nebo klikněte na tlačítko **F5** spuštění vaší aplikace.)
 

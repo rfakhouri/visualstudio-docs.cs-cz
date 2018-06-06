@@ -13,11 +13,12 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 62bdcd8109263cc86e13484d146e46f8e95c7198
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 103000c2ded944236762ffd55603877ece7b7968
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768219"
 ---
 Tyto kroky ukazují pouze základní konfiguraci služby IIS. Podrobnější informace, nebo nainstalovat do počítače s Windows Desktop, najdete v části [publikování do služby IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration) nebo [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
@@ -25,6 +26,6 @@ Pro operační systémy Windows Server, použijte **přidat role a funkce** Prů
 
 ![Role webového serveru IIS je vybrali v kroku rolí vyberte server.](../media/remotedbg-server-roles-ws2012.png)
 
-Na **služby rolí** kroku, vyberte služby rolí služby IIS požadavky nebo přijměte výchozí nastavení role služeb zadaný. Pokud plánujete nasadit pomocí nástroje nasazení webu, ujistěte se, že **IIS skripty a nástroje správy** je vybrána.
+Na **služby rolí** kroku, vyberte služby rolí služby IIS požadavky nebo přijměte výchozí nastavení role služeb zadaný. Pokud chcete povolit nasazení pomocí publikovat nastavení a nasazení webu, ujistěte se, že **IIS skripty a nástroje správy** je vybrána.
 
 Pokračujte potvrzení postup instalace role Webový server a služby. Po instalaci role webového serveru (IIS) není nutné restartovat server nebo služby IIS.
