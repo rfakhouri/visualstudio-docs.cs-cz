@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 387077f8845d4e070d4ad0a07f6549a97552a233
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750360"
 ---
 # <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Kurz – krok 4: použití kompletní šablonou webový projekt Django
 
 **Předchozí krok: [obsluhovat statické soubory, přidat stránky a použití šablony dědičnosti](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
-Teď, když jste prozkoumali základní informace o rozhraní Django podle budovy aplikace na šabloně "Prázdný projekt Django aplikace" v sadě Visual Studio, můžete snadno pochopit úplnější aplikaci, která je produkovaný šabloně "Webový projekt Django".
+Teď, když jste prozkoumali základní informace o rozhraní Django podle budovy aplikace na šabloně "Prázdný webový projekt Django" v sadě Visual Studio, můžete snadno pochopit úplnější aplikaci, která je produkovaný šabloně "Webový projekt Django".
 
 V tomto kroku můžete nyní:
 
@@ -40,7 +41,7 @@ V tomto kroku můžete nyní:
 
 1. Protože znovu obsahuje šablony `requirements.txt` souboru, Visual Studio zobrazí dotaz, kam se má nainstalovat tyto závislosti. Zvolte možnost **nainstalovat do virtuálního prostředí**a v **Přidání virtuálního prostředí** dialogovém okně vyberte **vytvořit** přijměte výchozí hodnoty.
 
-1. Po dokončení nastavení virtuální prostředí Python, postupujte podle pokynů v zobrazené `readme.html` vytvoření superuživatele uživatele Django (který je správcem). Právě klikněte pravým tlačítkem na projekt Visual Studio a vyberte **Python** > **vytvoření superuživatele Django** příkaz a potom postupujte podle pokynů. Ujistěte se, že záznam uživatelského jména a hesla při používání při výkonu funkce ověřování aplikace.
+1. Po dokončení nastavení virtuálního prostředí sady Visual Studio, postupujte podle pokynů v zobrazené `readme.html` vytvoření superuživatele uživatele Django (který je správcem). Právě klikněte pravým tlačítkem na projekt Visual Studio a vyberte **Python** > **vytvoření superuživatele Django** příkaz a potom postupujte podle pokynů. Ujistěte se, že záznam uživatelského jména a hesla při používání při výkonu funkce ověřování aplikace.
 
 1. Nastavte projekt "DjangoWeb", který má být výchozí nastavení pro řešení sady Visual Studio tak, že kliknete pravým tlačítkem na takový projekt v **Průzkumníku řešení** a výběrem **nastavit jako spouštěný projekt**. Spouštěný projekt, který se zobrazí v tučné písmo, je co běží při spuštění ladicího programu.
 

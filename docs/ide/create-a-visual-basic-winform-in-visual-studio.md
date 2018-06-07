@@ -14,17 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 603fe9c8aaa328e0ae1b42f385a0f8f2b5867955
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3d0d514c3ab7c2ecf491e1bb1adb5f7d545afd70
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746011"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Vytvoření Windows Forms aplikace v sadě Visual Studio s jazykem Visual Basic
 
 Tento stručný úvod v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou aplikaci jazyka Visual Basic, která má založené na Windows uživatelské rozhraní (UI).
 
-Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránky instalaci zdarma.
+Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
@@ -34,9 +35,9 @@ Nejdřív vytvoříte projekt aplikace Visual Basic. Typ projektu se dodává s 
 
 2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .
 
-3. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a potom zvolte **Windows Classic Desktop**. V prostředním podokně vyberte **aplikace pro Windows Forms (rozhraní .NET Framework)**. Potom zadejte název souboru `HelloWorld`.
+3. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a potom zvolte **Windows Desktop**. V prostředním podokně vyberte **aplikace pro Windows Forms (rozhraní .NET Framework)**. Potom zadejte název souboru `HelloWorld`.
 
-     Pokud nevidíte **aplikace pro Windows Forms (rozhraní .NET Framework)** projektu šablony, zrušte mimo **nový projekt** dialogové okno a z panelu horní nabídce zvolte **nástroje**  >  **Získat funkcí a nástrojů pro...** . Spustí instalační program Visual Studio. Vyberte **vývoj aplikací .NET** zatížení, zvolte **upravit**.
+     Pokud nevidíte **aplikace pro Windows Forms (rozhraní .NET Framework)** projektu šablony, zrušte mimo **nový projekt** dialogové okno a z panelu horní nabídce zvolte **nástroje**  >  **Získat funkcí a nástrojů pro...** . Spustí se instalační program pro Visual Studio. Vyberte **vývoj aplikací .NET** zatížení, zvolte **upravit**.
 
      ![.NET core zatížení v instalačním programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
 
@@ -101,7 +102,7 @@ Teď, když jsme přidali ovládacího prvku tlačítko pro vytvoření akce, p�
 
 Blahopřejeme k dokončení tento rychlý start! Věříme, že jste se dozvěděli, chvíli o jazyka Visual Basic a Visual Studio IDE. Pokud chcete pustíte hlubší, pokračujte prosím se v kurzu **kurzy** části obsahu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Rychlý úvod: Vytvoření aplikace konzoly v sadě Visual Studio s jazykem Visual Basic](quickstart-visual-basic-console.md)
 * [Další informace o jazyka Visual Basic IntelliSense](visual-basic-specific-intellisense.md)
