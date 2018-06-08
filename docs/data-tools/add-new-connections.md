@@ -9,12 +9,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a7b580f8bd04c4fbce9518d903a568bbd0f9175a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747089"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845012"
 ---
 # <a name="add-new-connections"></a>Přidat nové připojení
 
@@ -26,7 +26,7 @@ Zkontrolujte připojení k databázi nebo službu a prozkoumejte obsah databáze
 
 - Průzkumník cloudu
 
-   Nainstalujte tohoto okna ručně tak, že vyberete rozšíření sady Visual Studio **nástroje**, **rozšíření a aktualizace**, **Online**, **Visual Studio Markeplace**. Poskytuje specializované funkce pro zkoumání a připojení ke službám Azure.
+   Nainstalujte tohoto okna ručně tak, že vyberete rozšíření sady Visual Studio **nástroje** > **rozšíření a aktualizace** > **Online**  >  **Markeplace sady visual Studio**. Poskytuje specializované funkce pro zkoumání a připojení ke službám Azure.
 
 - Průzkumník objektů systému SQL Server
 

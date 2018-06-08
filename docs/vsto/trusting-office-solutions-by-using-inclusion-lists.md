@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6fb44e7927136ba02d04f4b57f38ae52cc76c9fd
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 9e2fea115b941af4b119b59dade16114cab3383d
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767881"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844222"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Vztah důvěryhodnosti řešení Office s použitím seznamech povolených položek
   Seznamy povolených povolit uživatelům udělit vztah důvěryhodnosti řešení pro systém Office, které jsou podepsané certifikátem, který identifikuje vydavatele. Zahrnutí seznamy jsou specifické pro uživatele a mohou být použity pro přizpůsobení na úrovni dokumentu a doplňků VSTO.  
@@ -33,7 +33,7 @@ ms.locfileid: "34767881"
  Když uživatel spustí řešení Office, který nebyl udělen vztahu důvěryhodnosti pro tohoto uživatele, řešení Microsoft Office vyzve k rozhodnutí zabezpečení se mu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] výzvu vztahu důvěryhodnosti. Pokud se uživatel rozhodne důvěřovat řešení, spustí přizpůsobení a uživatel nebude vyzván k dalším.  
   
 ## <a name="inclusion-list-and-windows-installer"></a>Seznam povolených položek a instalační služba systému Windows  
- Instalace řešení pro systém Office do adresář Program Files pomocí Instalační služby systému Windows vyžaduje oprávnění správce. Pro řešení Office v adresáři Program Files sady Visual Studio Tools for Office runtime už zkontroluje seznam povolených položek, protože řešení pro systém Office již bylo uděleno oprávnění FullTrust.  
+ Instalace do řešení pro systém Office *Program Files* adresáře pomocí Instalační služby systému Windows vyžaduje oprávnění správce. Pro řešení Office *Program Files* adresář, protože řešení pro systém Office již bylo uděleno oprávnění FullTrust sady Visual Studio Tools for Office runtime už zkontroluje seznam povolených položek.  
   
 ## <a name="clickonce-trust-prompt"></a>Vztahu důvěryhodnosti ClickOnce  
  Pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] implementace pro řešení Office, správci můžete nakonfigurovat úroveň důvěryhodnosti výzva povolení výzvy, zakažte výzvy nebo vyžadují důvěryhodný certifikát. Tato konfigurace se provádí pomocí klíče registru, který určuje přístup do seznamu povolených.  

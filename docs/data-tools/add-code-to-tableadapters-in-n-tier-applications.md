@@ -1,5 +1,5 @@
 ---
-title: Přidávání kódu do prvků TableAdapters ve víceúrovňových aplikacích
+title: Přidávání kódu do objektů TableAdapter ve vícevrstvých aplikacích
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,18 +16,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 70c889f6cccd5605758dce05b2a0c4d405aa6714
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5a9aad4aaecb629f5860fadf56e35a55455be63
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844092"
 ---
-# <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Přidávání kódu do prvků TableAdapters ve víceúrovňových aplikacích
-Vytvořením souboru třídu pro TableAdapter a přidání kódu k němu můžete rozšířit funkce TableAdapter (místo přidávání kódu do *DatasetName*. Soubor DataSet.Designer). Částečné třídy povolit kód pro určité třídy rozdělit mezi několik fyzických souborů. Další informace najdete v tématu [částečné](/dotnet/visual-basic/language-reference/modifiers/partial) nebo [partial (typ)](/dotnet/csharp/language-reference/keywords/partial-type).
+# <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Přidávání kódu do objektů TableAdapter ve vícevrstvých aplikacích
+Vytvořením souboru třídu pro TableAdapter a přidání kódu k němu můžete rozšířit funkce TableAdapter (místo přidávání kódu do *DatasetName.DataSet.Designer* souboru). Částečné třídy povolit kód pro určité třídy rozdělit mezi několik fyzických souborů. Další informace najdete v tématu [částečné](/dotnet/visual-basic/language-reference/modifiers/partial) nebo [partial (typ)](/dotnet/csharp/language-reference/keywords/partial-type).
 
 Kód, který definuje TableAdapter je generována pokaždé, když jsou provedeny změny TableAdapter v datové sadě. Tento kód se vygeneroval také při změně během spuštění všechny průvodce, která upraví konfiguraci TableAdapter. Chcete-li zabránit odstranění během opětovné vygenerování TableAdapter kódu, přidejte kód do souboru třídu TableAdapter.
 
-Ve výchozím nastavení po oddělíte datovou sadu a TableAdapter kód, výsledkem je soubor diskrétní třídy v každém projektu. Původní projekt obsahuje soubor s názvem *DatasetName*. Designer.vb (nebo *DatasetName*. Designer.cs) obsahující kód TableAdapter. Projekt, který je určen v **Dataset projekt** vlastnost má soubor s názvem *DatasetName*. DataSet.Designer.vb (nebo *DatasetName*. DataSet.Designer.cs) obsahující kód datovou sadu.
+Ve výchozím nastavení po oddělíte datovou sadu a TableAdapter kód, výsledkem je soubor diskrétní třídy v každém projektu. Původní projekt obsahuje soubor s názvem *DatasetName.Designer.vb* (nebo *DatasetName.Designer.cs*) obsahující kód TableAdapter. Projekt, který je určen v **Dataset projekt** vlastnost má soubor s názvem *DatasetName.DataSet.Designer.vb* (nebo *DatasetName.DataSet.Designer.cs*), obsahuje kód pro datovou sadu.
 
 > [!NOTE]
 >  Když oddělíte datových sad a TableAdapters (nastavením **DataSet projekt** vlastnost), nebude automaticky přesunout existující datovou sadu částečné třídy v projektu. Existující datovou sadu částečné třídy je třeba přesunout ručně dataset projekt.
@@ -39,9 +40,9 @@ Ve výchozím nastavení po oddělíte datovou sadu a TableAdapter kód, výsled
 
 ## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Přidání uživatelského kódu do TableAdapter ve vícevrstvé aplikace
 
-1.  Najděte projekt, který obsahuje soubor XSD.
+1.  Najít projekt, který obsahuje *XSD* souboru.
 
-2.  Klikněte dvakrát **XSD** soubor otevřete **návrháře Dataset**.
+2.  Klikněte dvakrát *XSD* soubor otevřete **návrháře Dataset**.
 
 3.  Klikněte pravým tlačítkem na TableAdapter, který chcete přidat kód pro a potom vyberte **kód zobrazení**.
 
@@ -66,9 +67,9 @@ Ve výchozím nastavení po oddělíte datovou sadu a TableAdapter kód, výsled
     }
     ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md)
 - [Přidávání kódu do datových sad ve vícevrstvých aplikacích](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
-- [Vytvoření a konfigurace TableAdapters](create-and-configure-tableadapters.md)
+- [Vytvoření a konfigurace objektů TableAdapter](create-and-configure-tableadapters.md)
 - [Přehled hierarchické aktualizace](hierarchical-update.md)

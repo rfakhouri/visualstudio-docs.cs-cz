@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 068e49c1fb095691cfa68f7a744a2159a8c173a3
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751686"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845490"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Použít Microsoft jednotka testování Framework pro C++ v sadě Visual Studio
 
@@ -32,7 +32,7 @@ V některých případech, například při testování-exportované funkce v kn
 
     3.  Klikněte na šipku dolů ve následující řádky a zvolte **<Edit>** :
 
-        |||
+        |Adresář|Vlastnost|
         |-|-|
         |**Zahrnout adresáře**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
         |**Adresáře knihovny**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
@@ -67,7 +67,7 @@ Můžete definovat vlastnosti na testovací metody, které vám umožní kategor
 
  Použití definované znak v testů částí:
 
-```
+```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)
     TEST_OWNER(L"OwnerName")
     TEST_PRIORITY(1)

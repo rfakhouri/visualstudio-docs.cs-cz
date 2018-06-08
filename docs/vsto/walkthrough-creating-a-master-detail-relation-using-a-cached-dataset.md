@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření hlavního podrobný vztah, který pomocí datové sady v mezipaměti | Microsoft Docs'
+title: 'Návod: Vytvoření hlavního podrobný vztah, pomocí datové sady v mezipaměti'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: abe0b766214c1906afcf443c23948c492a6bde90
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 534398e57c1a8111f2b1f83a61322a581539c962
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845451"
 ---
-# <a name="walkthrough-creating-a-master-detail-relation-using-a-cached-dataset"></a>Návod: Vytvoření hlavního podrobný vztah, který pomocí datové sady v mezipaměti
+# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Návod: Vytvoření hlavního podrobný vztah, pomocí datové sady v mezipaměti
   Tento návod ukazuje vytvoření vztahu seznam podrobnosti v listu a ukládání do mezipaměti dat, aby řešení můžete použít v režimu offline.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -51,21 +52,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Oprávnění ke čtení z a zapisovat do databáze SQL serveru.  
   
-## <a name="creating-a-new-project"></a>Vytvoření nového projektu  
+## <a name="create-a-new-project"></a>Vytvoření nového projektu  
  V tomto kroku vytvoříte projekt sešitu aplikace Excel.  
   
-#### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
+### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
 1.  Vytvoření projektu sešitu aplikace Excel s názvem **Moje seznam-podrobnosti**, pomocí Visual Basic a C#. Ujistěte se, že **vytvoříte nový textový dokument** je vybrána. Další informace najdete v tématu [postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Visual Studio otevře nové sešitu aplikace Excel v návrháři a přidá **Moje seznam-podrobnosti** projektu do **Průzkumníku řešení**.  
   
-## <a name="creating-the-data-source"></a>Vytvoření zdroje dat  
+## <a name="create-the-data-source"></a>Vytvoření zdroje dat  
  Použití **zdroje dat** okno pro přidání typové datové sady do projektu.  
   
-#### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat  
+### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat  
   
-1.  Pokud **zdroje dat** okno není viditelný, zobrazit, na řádku nabídky, výběr **zobrazení**, **ostatní okna**, **zdroje dat**.  
+1.  Pokud **zdroje dat** okno není viditelný, zobrazit, na řádku nabídky, výběr **zobrazení** > **ostatní okna**  >   **Zdroje dat**.  
   
 2.  Zvolte **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.  
   
@@ -85,10 +86,10 @@ ms.lasthandoff: 04/16/2018
   
  Průvodce přidá dvě tabulky **zdroje dat** okno. Také přidá typové datové sady do projektu, který se zobrazí na **Průzkumníku řešení**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Přidání ovládacích prvků na list  
+## <a name="add-controls-to-the-worksheet"></a>Přidání ovládacích prvků do listu  
  V tomto kroku přidáte pojmenované oblasti, objekt seznamu a dvě tlačítka první sešitu. Nejprve přidejte pojmenované oblasti a objekt v seznamu **zdroje dat** okna tak, aby automaticky jsou vázány na zdroj dat. Dál přidejte tlačítka z **sada nástrojů**.  
   
-#### <a name="to-add-a-named-range-and-a-list-object"></a>Chcete-li přidat pojmenované oblasti a objekt seznamu  
+### <a name="to-add-a-named-range-and-a-list-object"></a>Chcete-li přidat pojmenované oblasti a objekt seznamu  
   
 1.  Ověřte, zda **Moje hlavní-Detail.xlsx** je sešit otevřít v návrháři Visual Studio s **Sheet1** zobrazí.  
   
@@ -106,7 +107,7 @@ ms.lasthandoff: 04/16/2018
   
 7.  A <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek s názvem **Order_DetailsListObject** je vytvořen v buňce **A6**a vázaný k <xref:System.Windows.Forms.BindingSource>.  
   
-#### <a name="to-add-two-buttons"></a>Chcete-li přidat dvě tlačítka  
+### <a name="to-add-two-buttons"></a>Chcete-li přidat dvě tlačítka  
   
 1.  Z **běžné ovládací prvky** kartě **sada nástrojů**, přidejte <xref:System.Windows.Forms.Button> ovládacího prvku do buňky **A3** listu.  
   
@@ -118,10 +119,10 @@ ms.lasthandoff: 04/16/2018
   
  V dalším kroku označte datové sady do mezipaměti v dokumentu.  
   
-## <a name="caching-the-dataset"></a>Ukládání do mezipaměti datové sady  
+## <a name="cache-the-dataset"></a>Datové sady do mezipaměti  
  Označit datové sady do mezipaměti v dokumentu tím, že datová sada veřejné a nastavení **CacheInDocument** vlastnost.  
   
-#### <a name="to-cache-the-dataset"></a>Pro ukládání do mezipaměti datové sady  
+### <a name="to-cache-the-dataset"></a>Pro ukládání do mezipaměti datové sady  
   
 1.  Vyberte **NorthwindDataSet** na hlavním panelu součásti.  
   
@@ -133,10 +134,10 @@ ms.lasthandoff: 04/16/2018
   
  Dalším krokem je přidání textu do tlačítka a v jazyce C# přidejte kód spojit Obslužné rutiny událostí.  
   
-## <a name="initializing-the-controls"></a>Inicializace ovládacích prvků  
+## <a name="initialize-the-controls"></a>Inicializace ovládacích prvků  
  Nastavte text tlačítka a přidejte obslužné rutiny událostí během <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> událostí.  
   
-#### <a name="to-initialize-the-data-and-the-controls"></a>K chybě při inicializaci dat a ovládací prvky  
+### <a name="to-initialize-the-data-and-the-controls"></a>K chybě při inicializaci dat a ovládací prvky  
   
 1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na **Sheet1.vb** nebo **Sheet1.cs**a potom klikněte na **kód zobrazení** v místní nabídce.  
   
@@ -149,10 +150,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]  
   
-## <a name="adding-code-to-enable-scrolling-through-the-records"></a>Přidání kódu povolit posouvání záznamů  
+## <a name="add-code-to-enable-scrolling-through-the-records"></a>Přidat kód pro povolení posouvání záznamů  
  Přidejte kód, který <xref:System.Windows.Forms.Control.Click> obslužné rutiny události z každé tlačítko pro procházení záznamů.  
   
-#### <a name="to-scroll-through-the-records"></a>Chcete-li procházet záznamů  
+### <a name="to-scroll-through-the-records"></a>Chcete-li procházet záznamů  
   
 1.  Přidání obslužné rutiny události pro <xref:System.Windows.Forms.Control.Click> události `Button1`a přidejte následující kód do zpětné procházení záznamů:  
   
@@ -164,10 +165,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
      [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]  
   
-## <a name="testing-the-application"></a>Testování aplikace  
+## <a name="test-the-application"></a>Testování aplikace  
  Nyní můžete otestovat vašeho sešitu, abyste měli jistotu, že data zobrazuje podle očekávání a, které můžete použít řešení do offline režimu.  
   
-#### <a name="to-test-the-data-caching"></a>K otestování dat ukládání do mezipaměti  
+### <a name="to-test-the-data-caching"></a>K otestování dat ukládání do mezipaměti  
   
 1.  Stiskněte klávesu **F5**.  
   
@@ -179,7 +180,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Zakážete připojení k databázi. Odpojte síťový kabel z vašeho počítače, pokud se databáze nachází na serveru, nebo zastavte službu serveru SQL Server, pokud se databáze nachází na vašem vývojovém počítači.  
   
-6.  Otevřete aplikaci Excel a pak otevřete **Moje hlavní-Detail.xlsx** z adresáře \bin (\My Master-Detail\bin v jazyce Visual Basic nebo \My Master-Detail\bin\debug v jazyce C#).  
+6.  Otevřete aplikaci Excel a pak otevřete **Moje hlavní-Detail.xlsx** z *\bin* adresáře (*\My Master-Detail\bin* v jazyce Visual Basic nebo *\My Master-Detail\bin\ ladění* v jazyce C#).  
   
 7.  Posuňte některé záznamy zobrazit, že listu pracuje normálně při odpojení.  
   
@@ -190,10 +191,10 @@ ms.lasthandoff: 04/16/2018
   
 -   Nasazení řešení. Další informace najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md)  
   
-## <a name="see-also"></a>Viz také  
- [Vazba dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+## <a name="see-also"></a>Viz také:  
+ [Vázání dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)   
- [Ukládání dat do mezipaměti](../vsto/caching-data.md)   
- [Přehled hostitelských položek a hostitelských ovládacích prvků](../vsto/host-items-and-host-controls-overview.md)  
+ [Data do mezipaměti](../vsto/caching-data.md)   
+ [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)  
   
   

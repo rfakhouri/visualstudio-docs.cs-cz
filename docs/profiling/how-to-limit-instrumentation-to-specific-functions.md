@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 883059693115496ddbc58f5fccc5e36ede5be720
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d725becd8a047af9eec3e76e517f39e037fb2466
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844775"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Postupy: Omezení instrumentace na konkrétní funkce
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Postupy: omezení instrumentace na konkrétní funkce
 Instrumentace a shromažďování dat pro jednu nebo více funkcí můžete omezit nastavením možností v **Upřesnit** stránky **výkonnostní relace** nebo cílení binární vlastnosti stránky:  
   
 -   Pokud zadáte na stránce vlastností relace výkonu funkce, pouze tyto funkce jsou vybaveny v instrumentované binární soubory relace.  
@@ -66,7 +67,7 @@ Instrumentace a shromažďování dat pro jednu nebo více funkcí můžete omez
     > [!NOTE]
     >  Pro zobrazení seznamu funkcí v binární, otevřete okno příkazového řádku v nástrojích pro profilaci instalační adresář (obvykle adresáře nástroje \Team Tools\Performance pod [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] instalační adresář) a pak zadejte **vsinstr – / DumpFuncs**  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Řízení shromažďování dat](../profiling/controlling-data-collection.md)   
  [Postupy: omezení instrumentace na konkrétní knihovny DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
- [Postupy: určení dalších možností instrumentace](../profiling/how-to-specify-additional-instrumentation-options.md)
+ [Postupy: Určení dalších možností instrumentace](../profiling/how-to-specify-additional-instrumentation-options.md)

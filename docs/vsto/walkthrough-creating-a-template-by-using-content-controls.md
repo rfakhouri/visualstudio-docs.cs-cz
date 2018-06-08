@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření šablony s použitím ovládacích prvků obsahu | Microsoft Docs'
+title: 'Návod: Vytvoření šablony s použitím ovládacích prvků obsahu'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8c7f5026d4cbe8b7c38b8163ce00d893e1e406f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bceecf82bcbf455e25e2867580f6ab53b27470ef
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845155"
 ---
-# <a name="walkthrough-creating-a-template-by-using-content-controls"></a>Návod: Vytvoření šablony s použitím ovládacích prvků obsahu
+# <a name="walkthrough-create-a-template-by-using-content-controls"></a>Návod: Vytvoření šablony s použitím ovládacích prvků obsahu
   Tento návod ukazuje, jak vytvořit přizpůsobení na úrovni dokumentu používá ovládací prvky obsahu k vytváření strukturovaných a opakovaně použitelný obsah do šablony aplikace Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -53,19 +54,19 @@ ms.lasthandoff: 04/16/2018
   
 -   Aplikace Microsoft Word.  
   
-## <a name="creating-a-new-word-template-project"></a>Vytvoření nového projektu šablony aplikace Word  
+## <a name="create-a-new-word-template-project"></a>Vytvoření nového projektu šablony aplikace Word  
  Vytvoření šablony aplikace Word tak, aby uživatelé mohou snadno vytvářet své vlastní kopie.  
   
-#### <a name="to-create-a-new-word-template-project"></a>K vytvoření nového projektu šablony aplikace Word  
+### <a name="to-create-a-new-word-template-project"></a>K vytvoření nového projektu šablony aplikace Word  
   
-1.  Vytvoření projektu šablony aplikace Word s názvem **MyBuildingBlockTemplate**. V průvodci vytvořte nový dokument v řešení. Další informace najdete v tématu [postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Vytvoření projektu šablony aplikace Word s názvem **MyBuildingBlockTemplate**. V průvodci vytvořte nový dokument v řešení. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře se nové šablony aplikace Word v návrháři a přidá **MyBuildingBlockTemplate** projektu do **Průzkumníku řešení**.  
   
-## <a name="creating-the-employee-table"></a>Vytvoření tabulky zaměstnanců  
+## <a name="create-the-employee-table"></a>Vytvoření tabulky zaměstnanců  
  Vytvořte tabulku, která obsahuje čtyři různé typy ovládacích prvků obsahu kde uživatele můžete zadat informace o zaměstnanec.  
   
-#### <a name="to-create-the-employee-table"></a>K vytvoření tabulky zaměstnanců  
+### <a name="to-create-the-employee-table"></a>K vytvoření tabulky zaměstnanců  
   
 1.  V šabloně aplikace Word, jejímž hostitelem je [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer a na pásu karet klikněte na tlačítko **vložit** kartě.  
   
@@ -101,12 +102,12 @@ ms.lasthandoff: 04/16/2018
   
 12. V **ovládací prvky** klikněte na možnost **obsahu ovládacího prvku obrázek** tlačítko ![PictureContentControl](../vsto/media/pictcontentcontrol.gif "PictureContentControl") přidat <xref:Microsoft.Office.Tools.Word.PictureContentControl> na poslední buňku.  
   
-## <a name="creating-the-customer-feedback-table"></a>Vytvoření tabulky zpětné vazby zákazníka  
+## <a name="create-the-customer-feedback-table"></a>Vytvoření tabulky zpětné vazby zákazníka  
  Vytvořte tabulku, která obsahuje tři různé typy obsahu ovládacích prvků, kde může uživatel zadat údaje zpětné vazby zákazníka.  
   
-#### <a name="to-create-the-customer-feedback-table"></a>K vytvoření tabulky zpětné vazby zákazníka  
+### <a name="to-create-the-customer-feedback-table"></a>K vytvoření tabulky zpětné vazby zákazníka  
   
-1.  V šabloně aplikace Word klikněte v řádku po tabulky zaměstnanců, které jste přidali dříve a stiskněte klávesu ENTER, chcete-li přidat nový odstavec.  
+1.  Šablony aplikace Word, klikněte v řádku po tabulky zaměstnanců, které jste přidali dříve a stiskněte klávesu **Enter** přidat nový odstavec.  
   
 2.  Na pásu karet klikněte na **vložit** kartě.  
   
@@ -134,10 +135,10 @@ ms.lasthandoff: 04/16/2018
   
 11. V **ovládací prvky** klikněte na možnost **formátovaného textu** tlačítko ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") přidat <xref:Microsoft.Office.Tools.Word.RichTextContentControl>na poslední buňku.  
   
-## <a name="populating-the-combo-box-and-drop-down-list-programmatically"></a>Vyplní se seznamem se pole a v rozevíracím seznamu prostřednictvím kódu programu  
- Ovládací prvky obsahu můžete inicializovat v době návrhu pomocí **vlastnosti** okno v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Je také možné inicializovat za běhu, která umožňuje nastavit jejich počáteční stav dynamicky. Pro účely tohoto postupu použít k naplnění položek v kódu <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> a <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> na běh tak, abyste viděli, jak fungují tyto objekty.  
+## <a name="populate-the-combo-box-and-drop-down-list-programmatically"></a>Naplnění – pole se seznamem a rozevíracího seznamu prostřednictvím kódu programu  
+ Ovládací prvky obsahu můžete inicializovat v době návrhu pomocí **vlastnosti** okno v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Je také možné inicializovat za běhu, která umožňuje nastavit jejich počáteční stav dynamicky. Pro účely tohoto postupu použít k naplnění položek v kódu <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> a <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> za běhu, aby mohli zobrazit tyto objekty fungování.  
   
-#### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>Chcete-li upravit uživatelské ovládací prvky obsahu prostřednictvím kódu programu  
+### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>Chcete-li upravit uživatelské ovládací prvky obsahu prostřednictvím kódu programu  
   
 1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na **ThisDocument.cs** nebo **ThisDocument.vb**a potom klikněte na **kód zobrazení**.  
   
@@ -151,22 +152,22 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]  
   
-## <a name="preventing-users-from-editing-the-employee-table"></a>Brání uživatelům v úpravy tabulky zaměstnanců  
+## <a name="prevent-users-from-editing-the-employee-table"></a>Zabránit uživatelům v úpravy tabulky zaměstnanců  
  Použití <xref:Microsoft.Office.Tools.Word.GroupContentControl> objektu, jestli deklaruje starší k ochraně tabulky zaměstnanců. Po nastavení ochrany v tabulce, uživatelé stále mohou upravovat ovládací prvky obsahu v tabulce. Nelze však upravit text ve sloupci první nebo úpravu tabulky jinými způsoby, například přidávání nebo odstraňování řádků a sloupců. Další informace o tom, jak používat <xref:Microsoft.Office.Tools.Word.GroupContentControl> chránit část dokumentu, najdete v části [ovládací prvky obsahu](../vsto/content-controls.md).  
   
-#### <a name="to-prevent-users-from-editing-the-employee-table"></a>Chcete-li uživatelům zabránit v úpravách tabulky zaměstnanců  
+### <a name="to-prevent-users-from-editing-the-employee-table"></a>Chcete-li uživatelům zabránit v úpravách tabulky zaměstnanců  
   
 1.  Přidejte následující kód, který `ThisDocument_Startup` metodu `ThisDocument` třída po kód, který jste přidali v předchozím kroku. Tento kód zabraňuje uživatelům v úpravy tabulky zaměstnanců vložením tabulka uvnitř <xref:Microsoft.Office.Tools.Word.GroupContentControl> objekt, který jste předtím deklarován.  
   
      [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#3)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]  
   
-## <a name="adding-the-tables-to-the-building-block-collection"></a>Přidání tabulky do kolekce stavební blok.  
+## <a name="add-the-tables-to-the-building-block-collection"></a>Přidání tabulky do kolekce stavební blok  
  Přidání tabulky do kolekce stavební bloky dokumentu v šabloně tak, aby uživatelé můžete vložit do dokumentu tabulky, které jste vytvořili. Další informace o stavební bloky dokumentu najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md).  
   
-#### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>Přidání tabulky do stavebních bloků v šabloně  
+### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>Přidání tabulky do stavebních bloků v šabloně  
   
-1.  Přidejte následující kód, který `ThisDocument_Startup` metodu `ThisDocument` třída po kód, který jste přidali v předchozím kroku. Tento kód přidá nové stavební bloky, které obsahují tabulky do kolekce Microsoft.Office.Interop.Word.BuildingBlockEntries, který obsahuje všechny opakovaně použitelné stavebních bloků v šabloně. Nové stavební bloky, které jsou definovány v novou kategorii s názvem **zaměstnance a informace o zákazníkovi** a jsou přiřazeny stavební blok typem Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1.  
+1.  Přidejte následující kód, který `ThisDocument_Startup` metodu `ThisDocument` třída po kód, který jste přidali v předchozím kroku. Tento kód přidá nové stavební bloky, které obsahují tabulky do kolekce Microsoft.Office.Interop.Word.BuildingBlockEntries, který obsahuje všechny opakovaně použitelné stavebních bloků v šabloně. Nové stavební bloky, které jsou definovány v novou kategorii s názvem **zaměstnance a informace o zákazníkovi** a jsou přiřazeny stavební blok typem `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.  
   
      [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]  
@@ -176,22 +177,22 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]  
   
-## <a name="creating-a-content-control-that-displays-the-building-blocks"></a>Vytvoření ovládacího prvku obsahu, který zobrazí stavební bloky  
+## <a name="create-a-content-control-that-displays-the-building-blocks"></a>Vytvoření ovládacího prvku obsahu, který zobrazuje stavební bloky  
  Vytvoření ovládacího prvku obsahu, který poskytuje přístup k stavební bloky (tedy tabulky), které jste předtím vytvořili. Uživatelé kliknutím na tento ovládací prvek pro přidání tabulky do dokumentu.  
   
-#### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>Vytvoření ovládacího prvku obsahu, která zobrazí stavební bloky  
+### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>Vytvoření ovládacího prvku obsahu, která zobrazí stavební bloky  
   
-1.  Přidejte následující kód, který `ThisDocument_Startup` metodu `ThisDocument` třída po kód, který jste přidali v předchozím kroku. Tento kód inicializuje <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> objekt, který jste předtím deklarován. <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> Zobrazí všechny stavební bloky, které jsou definovány v kategorii **zaměstnance a informace o zákazníkovi** a které mají typ stavebním blokem Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1.  
+1.  Přidejte následující kód, který `ThisDocument_Startup` metodu `ThisDocument` třída po kód, který jste přidali v předchozím kroku. Tento kód inicializuje <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> objekt, který jste předtím deklarován. <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> Zobrazí všechny stavební bloky, které jsou definovány v kategorii **zaměstnance a informace o zákazníkovi** a které mají typ stavebním blokem `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.  
   
      [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]  
   
-## <a name="testing-the-project"></a>Testování projektu  
+## <a name="test-the-project"></a>Testování projektu  
  Ovládací prvky galerie stavebních bloků v dokumentu vložit do tabulky zaměstnanců nebo v tabulce zpětné vazby zákazníka mohou uživatelé kliknout. Uživatelé mohou zadejte nebo vyberte odpovědi v ovládacích prvků obsahu v obou tabulkách. Mohou uživatelé změnit dalších částí tabulky zpětné vazby zákazníků, ale jejich by neměl být možné měnit dalších částí tabulky zaměstnanců.  
   
-#### <a name="to-test-the-employee-table"></a>K testování tabulky zaměstnanců  
+### <a name="to-test-the-employee-table"></a>K testování tabulky zaměstnanců  
   
-1.  Stisknutím klávesy F5 spusťte projekt.  
+1.  Stiskněte klávesu **F5** spustit projekt.  
   
 2.  Klikněte na tlačítko **zvolte první stavební blok** zobrazíte první prvek obsahu galerie stavebních bloků.  
   
@@ -211,7 +212,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  Zkuste přidat řádky nebo sloupce do tabulky a pokuste se odstranit řádky a sloupce z tabulky. Ověřte, že nelze změnit v tabulce. <xref:Microsoft.Office.Tools.Word.GroupContentControl> Nemůžete provádět žádné změny.  
   
-#### <a name="to-test-the-customer-feedback-table"></a>K testování v tabulce zpětné vazby zákazníka  
+### <a name="to-test-the-customer-feedback-table"></a>K testování v tabulce zpětné vazby zákazníka  
   
 1.  Klikněte na tlačítko **vyberte druhý stavební blok** zobrazíte prvku druhý stavebním blokem galerie.  
   
@@ -234,10 +235,10 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Další kroky  
  Další informace o tom, jak používat ovládací prvky obsahu z tohoto tématu:  
   
--   Vytvoření vazby ovládacích prvků obsahu s částí XML, také s názvem vlastní části XML, které jsou vloženy do dokumentu. Další informace najdete v tématu [návod: vytvoření vazby ovládacích prvků obsahu s vlastní části XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+-   Vytvoření vazby ovládacích prvků obsahu s částí XML, také s názvem vlastní části XML, které jsou vloženy do dokumentu. Další informace najdete v tématu [návod: vytvoření vazby ovládacích prvků obsahu do vlastní části XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
-## <a name="see-also"></a>Viz také  
- [Automatizace v aplikaci Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md)   
+## <a name="see-also"></a>Viz také:  
+ [Automatizace aplikace Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md)   
  [Ovládací prvky obsahu](../vsto/content-controls.md)   
  [Postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Postupy: ochrana částí dokumentů pomocí ovládacích prvků obsahu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   

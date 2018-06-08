@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Návrh oblasti formuláře aplikace Outlook | Microsoft Docs'
+title: 'Návod: Návrh oblasti formuláře aplikace Outlook'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22d67ffe14b261911d220dfeb64a0204a6a16032
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3c1868768cd2d79392dbdde749f27b8716aa8c2f
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845181"
 ---
-# <a name="walkthrough-designing-an-outlook-form-region"></a>Návod: Návrh oblasti formuláře aplikace Outlook
-  Oblasti formuláře vlastní rozšířit standardní nebo vlastní formuláře aplikace Microsoft Office Outlook. V tomto návodu se navrhnout vlastní formulář oblasti, která se zobrazí jako nová stránka v okně Inspector kontaktní položky. Této oblasti formuláře zobrazí mapu každou adresu, která je uvedena získáte, posílejte informace o adresy na Windows Live místní vyhledávací web. Informace o oblasti formuláře najdete v tématu [vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md).  
+# <a name="walkthrough-design-an-outlook-form-region"></a>Návod: Návrh oblasti formuláře aplikace Outlook
+  Oblasti formuláře vlastní rozšířit standardní nebo vlastní formuláře aplikace Microsoft Office Outlook. V tomto návodu se navrhnout vlastní formulář oblasti, která se zobrazí jako nová stránka v okně Inspector kontaktní položky. Této oblasti formuláře zobrazí mapu každou adresu, která je uvedena získáte, posílejte informace o adresy na Windows Live místní vyhledávací web. Informace o oblasti formuláře najdete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -50,10 +51,10 @@ ms.lasthandoff: 04/16/2018
   
  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") video verzi tohoto tématu naleznete v části [Video postupy: Návrh oblasti formuláře aplikace Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).  
   
-## <a name="creating-a-new-outlook-vsto-add-in-project"></a>Vytvoření nové aplikace Outlook VSTO přidejte v projektu  
+## <a name="create-a-new-outlook-vsto-add-in-project"></a>Vytvoření nového projektu doplňku VSTO pro Outlook  
  Nejprve vytvořte základní projekt doplňku VSTO.  
   
-#### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>K vytvoření nového projektu doplňku VSTO pro Outlook  
+### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>K vytvoření nového projektu doplňku VSTO pro Outlook  
   
 1.  V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vytvoření projektu doplňku VSTO pro Outlook s názvem **MapItAddIn**.  
   
@@ -61,12 +62,12 @@ ms.lasthandoff: 04/16/2018
   
 3.  Uložte do libovolného adresáře projektu.  
   
-     Další informace najdete v tématu [postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-## <a name="adding-a-form-region-to-the-outlook-vsto-add-in-project"></a>Přidání oblasti formuláře do projektu doplňku aplikace Outlook VSTO  
+## <a name="add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Přidání oblasti formuláře do projektu doplňku VSTO pro Outlook  
  Řešení doplňku VSTO pro Outlook může obsahovat jednu nebo více položek oblasti formuláře aplikace Outlook. Přidat položku oblasti formuláře do projektu s použitím **nové oblasti formuláře aplikace Outlook** průvodce.  
   
-#### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Přidání oblasti formuláře do projektu doplňku VSTO pro Outlook  
+### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Přidání oblasti formuláře do projektu doplňku VSTO pro Outlook  
   
 1.  V **Průzkumníku řešení**, vyberte **MapItAddIn** projektu.  
   
@@ -80,7 +81,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Na **vyberte typ oblasti formuláře, které chcete vytvořit** klikněte na tlačítko **samostatné**a pak klikněte na **Další**.  
   
-     A *samostatné* oblasti formuláře přidá novou stránku pomocí formuláře aplikace Outlook. Další informace o typech oblasti formuláře najdete v tématu [vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md).  
+     A *samostatné* oblasti formuláře přidá novou stránku pomocí formuláře aplikace Outlook. Další informace o typech oblasti formuláře najdete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).  
   
 6.  Na **zadejte popisný text a vybrat vaše předvolby zobrazení** zadejte **mapy ho** v **název** pole.  
   
@@ -90,14 +91,14 @@ ms.lasthandoff: 04/16/2018
   
 8.  Na **identifikovat zpráva třídy, které se zobrazí tato oblasti formuláře** zrušte zaškrtnutí políčka **e-mailovou zprávu**, vyberte **kontaktujte**a pak klikněte na tlačítko **Dokončit**.  
   
-     Soubor MapIt.cs nebo MapIt.vb se přidá do projektu.  
+     A *MapIt.cs* nebo *MapIt.vb* soubor je přidán do projektu.  
   
-## <a name="designing-the-layout-of-the-form-region"></a>Navrhování rozložení oblasti formuláře  
+## <a name="design-the-layout-of-the-form-region"></a>Návrh rozložení oblasti formuláře  
  Vývoj oblasti formuláře vizuálně pomocí *Návrhář oblasti formuláře*. Spravované ovládací prvky můžete přetáhnout na plochu návrháře oblasti formuláře. Použít Návrháře dotazů a **vlastnosti** okno Upravit rozložení ovládacích prvků a vzhledu.  
   
-#### <a name="to-design-the-layout-of-the-form-region"></a>Při návrhu rozložení oblasti formuláře  
+### <a name="to-design-the-layout-of-the-form-region"></a>Při návrhu rozložení oblasti formuláře  
   
-1.  V **Průzkumníku řešení**, rozbalte **MapItAddIn** projektu a potom dvakrát klikněte na MapIt.cs nebo MapIt.vb otevřít Návrhář oblasti formuláře.  
+1.  V **Průzkumníku řešení**, rozbalte **MapItAddIn** projektu a potom dvakrát klikněte na *MapIt.cs* nebo *MapIt.vb* otevřete oblasti formuláře Návrhář.  
   
 2.  Klikněte pravým tlačítkem designer a pak klikněte na **vlastnosti**.  
   
@@ -111,14 +112,14 @@ ms.lasthandoff: 04/16/2018
   
      **WebBrowser** zobrazí mapu každou adresu, která je uvedena kontaktu.  
   
-## <a name="customizing-the-behavior-of-the-form-region"></a>Přizpůsobení chování oblasti formuláře  
+## <a name="customize-the-behavior-of-the-form-region"></a>Přizpůsobení chování oblasti formuláře  
  Přidáte kód pro obslužné rutiny událostí oblasti formuláře lze upravit způsob oblasti formuláře chová za běhu. Pro tuto oblast formuláře kód prozkoumá vlastnosti položky aplikace Outlook a určuje, zda se zobrazení oblasti formuláře mapy ho. Pokud se zobrazí oblasti formuláře, kód přejde na Windows Live místní vyhledávání a načte mapu každou adresu uvedené v položce kontaktů aplikace Outlook.  
   
-#### <a name="to-customize-the-behavior-of-the-form-region"></a>Chcete-li přizpůsobit chování oblasti formuláře  
+### <a name="to-customize-the-behavior-of-the-form-region"></a>Chcete-li přizpůsobit chování oblasti formuláře  
   
-1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na MapIt.cs nebo MapIt.vb a pak klikněte na tlačítko **kód zobrazení**.  
+1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na *MapIt.cs* nebo *MapIt.vb*a potom klikněte na **kód zobrazení**.  
   
-     MapIt.cs nebo MapIt.vb se otevře v editoru kódu.  
+     *MapIt.cs* nebo *MapIt.vb* otevře v editoru kódu.  
   
 2.  Rozbalte **Factory oblasti formuláře** kód oblasti.  
   
@@ -140,12 +141,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#2)]
      [!code-vb[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#2)]  
   
-## <a name="testing-the-outlook-form-region"></a>Testování oblasti formuláře aplikace Outlook  
+## <a name="test-the-outlook-form-region"></a>Testování oblasti formuláře aplikace Outlook  
  Při spuštění projektu sady Visual Studio otevře aplikace Outlook. Otevřete položku kontaktní zobrazení oblasti formuláře mapy ho. Oblasti formuláře mapy ho se zobrazí na stránce ve formě libovolnou kontaktní položku, která obsahuje adresu.  
   
-#### <a name="to-test-the-map-it-form-region"></a>K testování oblasti formuláře mapy ho  
+### <a name="to-test-the-map-it-form-region"></a>K testování oblasti formuláře mapy ho  
   
-1.  Stisknutím klávesy F5 spusťte projekt.  
+1.  Stiskněte klávesu **F5** spustit projekt.  
   
      Otevře se aplikace Outlook.  
   
@@ -172,14 +173,14 @@ ms.lasthandoff: 04/16/2018
   
 -   Další informace o tom, jak přizpůsobit na pásu karet položky aplikace Outlook najdete v tématu [přizpůsobení pásu karet pro aplikaci Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Přístup k oblasti formuláře za běhu](../vsto/accessing-a-form-region-at-run-time.md)   
  [Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)   
- [Pokyny pro vytváření oblastí formulářů aplikace Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Návod: Import oblasti formuláře navržené v aplikaci Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [Postupy: přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Pokyny k vytváření oblastí formulářů aplikace Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
+ [Návod: Importujte oblasti formuláře navržené v aplikaci Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
+ [Postupy: přidání oblasti formuláře do projektu doplněk aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Přidružení oblasti formuláře k třídě zpráv aplikace Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Vlastní akce v oblastí formulářů aplikace Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
- [Postupy: Zabránění zobrazení oblasti formuláře v aplikaci Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
+ [Postupy: zabránění zobrazení oblasti formuláře aplikace Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
   
   

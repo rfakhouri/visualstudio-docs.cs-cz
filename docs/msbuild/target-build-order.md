@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c54fd6406350f5d0ad9620f10eef4fb9a546b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 30bd83819dcbfd4423c399c42aeb518a1d11e6e9
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844180"
 ---
 # <a name="target-build-order"></a>Pořadí sestavení cílů
 Pokud vstup jeden cíl závisí na výstup jiný cíl, musejí být seřazeny cíle. Tyto atributy můžete použít k určení pořadí, ve kterém jsou spuštěny cíle:  
@@ -115,7 +116,7 @@ Pokud vstup jeden cíl závisí na výstup jiný cíl, musejí být seřazeny c�
   
 4.  Před provedením cíl jeho `DependsOnTargets` spouštějí cíle.  
   
-5.  Před provedením cíl žádné cílové, jsou uvedené v `BeforeTargets` atribut běží.  
+5.  Před provést nebo přeskočen, všechny cíl, který uvádí v cíl je `BeforeTargets` atribut běží.  
   
 6.  Před provedením cíl jeho `Inputs` atribut a `Outputs` jsou porovnávány atribut. Pokud MSBuild zjistí, že všechny výstupní soubory jsou zastaralé s ohledem na odpovídající vstupní soubor nebo soubory a potom MSBuild provede cíl. MSBuild přeskočí, jinak hodnota cíle.  
   

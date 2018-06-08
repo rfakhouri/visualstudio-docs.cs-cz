@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751420"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845753"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Rychlý start: Vývoj řízený testy s použitím Průzkumníka testů
 
@@ -66,11 +66,11 @@ Doporučujeme vytvořit testování částí zajistit, aby byl váš kód funguj
 
 
 > [!NOTE]
-> Pokud žádné testů se zobrazí, ujistěte se, nainstalovaný adaptér pro připojení k rozhraní test, který používáte testovací Explorer. Další informace najdete v tématu [pomocí různých systémů testů pomocí Průzkumníka testů](#frameworks).
+> Pokud žádné testů se zobrazí, ujistěte se, nainstalovaný adaptér pro připojení k rozhraní test, který používáte testovací Explorer. Další informace najdete v tématu [instalace systémů testů jednotek třetích stran](install-third-party-unit-test-frameworks.md).
 
 
 ##  <a name="walkthrough"></a> Návod: Použití testování částí pro vývoj – metoda
- Tento návod ukazuje, jak vyvíjet otestované metoda v C# s použitím rozhraní testování částí Microsoft. Můžete snadno upravit ho pro jiné jazyky a použití jiných systémů testování například NUnit. Další informace najdete v tématu [pomocí různých systémů testování](#frameworks).
+ Tento návod ukazuje, jak vyvíjet otestované metoda v C# s použitím rozhraní testování částí Microsoft. Můžete snadno upravit ho pro jiné jazyky a použití jiných systémů testování například NUnit. Další informace najdete v tématu [instalace systémů testů jednotek třetích stran](install-third-party-unit-test-frameworks.md).
 
 #### <a name="creating-the-test-and-method"></a>Vytváření testovacích a – metoda
 
@@ -190,7 +190,7 @@ Doporučujeme vytvořit testování částí zajistit, aby byl váš kód funguj
 
 3.  Zkontrolujte metodu pod test ke zjištění toho, co mohou být další potíže. V `MyMath.Rooter` třídy, přepište kód:
 
-    ```
+    ```csharp
     public double SquareRoot(double input)
     {
       double result = input;

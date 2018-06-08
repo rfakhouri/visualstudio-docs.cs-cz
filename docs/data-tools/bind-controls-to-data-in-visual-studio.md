@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d27975cf387c92e5afcc61bd267f383a6bed414a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b44d57fbd36e82a84aaa0b2e837d24d429073f79
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747388"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845315"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio
 Data můžete zobrazit uživatelům vaší aplikace pomocí vytvoření vazby dat s ovládacími prvky. Tyto ovládací prvky vázané na data můžete vytvořit tak, že přetáhnete položky z **zdroje dat** okno na návrhovou plochu nebo ovládacích prvků na prostor v sadě Visual Studio.
@@ -48,7 +48,7 @@ Data můžete zobrazit uživatelům vaší aplikace pomocí vytvoření vazby da
 
  ![okno Zdroje dat](../data-tools/media/raddata-data-sources-window.png)
 
- Pro každý typ dat, který se zobrazí v **zdroje dat** okně ovládacího prvku výchozí se vytvoří při přetáhněte ji do návrháře. Před přetáhnete položky z **zdroje dat** okno, můžete změnit ovládací prvek, který bude vytvořen. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+ Pro každý typ dat, který se zobrazí v **zdroje dat** okně ovládacího prvku výchozí se vytvoří při přetáhněte ji do návrháře. Před přetáhnete položky z **zdroje dat** okno, můžete změnit ovládací prvek, který je vytvořen. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="tasks-involved-in-binding-controls-to-data"></a>Úkoly při vytvoření vazby ovládacích prvků k datům
  Následující tabulka uvádí některé z nejčastějších úloh, můžete provést k vytvoření vazby ovládacích prvků k datům.
@@ -64,7 +64,7 @@ Data můžete zobrazit uživatelům vaší aplikace pomocí vytvoření vazby da
 |Filtrování dat, který se zobrazí v uživatelském rozhraní.|[Filtrování a řazení dat ve formulářové aplikaci Windows](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |Přizpůsobte titulky pro ovládací prvky.|[Úprava způsobu, kterým Visual Studio vytváří titulky pro ovládací prvky vázané daty](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Visual Studio Data Tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Windows Forms – datová vazba](/dotnet/framework/winforms/windows-forms-data-binding)

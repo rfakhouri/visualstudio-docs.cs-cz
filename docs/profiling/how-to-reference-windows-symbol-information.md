@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 198677eb431852d5249684d23ff0dcad025e63af
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ace6b0eaf71b4bfb992d0ff0ccdb09351eac2c19
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572401"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844167"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Postupy: Referenční informace o symbolech Windows
+# <a name="how-to-reference-windows-symbol-information"></a>Postupy: odkaz na Windows symbolů informace
 Visual Studio Tools profilace použít znak (. *pdb*) soubory přeložil symbolické názvy, jako funkce názvy v binárních souborů programu. Můžete provést tyto kroky automaticky stáhnout a aktualizovat správný. *pdb* soubory pro verzi systému Windows v místním počítači.  
   
 > [!NOTE]

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1ec0171efa5f394551aff8caeb7d8a0622db9207
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750822"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844804"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Přidání zdroje dat do testu výkonnosti webu
 
@@ -152,13 +152,13 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
 3. Upravit textový soubor a přidejte následující:
 
-    ```
+    ```text
     ColorId, ColorName
     0,Red
     1,Blue
     ```
 
-4. Postupujte podle kroků v [vazby dat SQL](#AddingDataBindingWebTest_BindSQLData), zvolte soubor CSV jako zdroj dat, ale.
+4. Postupujte podle kroků v [přidejte tento zdroj dat](#add-the-data-source), zvolte soubor CSV jako zdroj dat, ale.
 
      ![Zadejte název a vyberte soubor CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
@@ -172,7 +172,7 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
 2. Upravte soubor schema.ini přidat informace, které popisuje strukturu vaše data. Například soubor schématu s popisem soubor CSV může vypadat například takto:
 
-    ```
+    ```text
     [testdata.csv]
     ColNameHeader=False
     ```
@@ -241,7 +241,7 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
     </ColorData>
     ```
 
-4. Postupujte podle kroků v [vazby dat SQL](#AddingDataBindingWebTest_BindSQLData), vyberte soubor XML jako zdroj dat, ale.
+4. Postupujte podle kroků v [přidejte tento zdroj dat](#add-the-data-source), vyberte soubor XML jako zdroj dat, ale.
 
      ![Zadejte název a vyberte soubor XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
@@ -255,7 +255,7 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
 2. Nahraďte hodnoty v těle protokolu SOAP hodnotami vázané na data pomocí následující syntaxe:
 
-    ```
+    ```xml
     {{DataSourceName.TableName.ColumnName}}
     ```
 

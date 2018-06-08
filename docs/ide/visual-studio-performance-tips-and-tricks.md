@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec6563086968cb84c0ad2177d5a1c13e051012cf
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 08b2e1087b97cb16a52a8abdf8f204fd0f3a0bfb
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845194"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Rady a tipy pro zvýšení výkonu Visual Studio
 
@@ -23,25 +24,23 @@ Visual Studio výkonu doporučení jsou určené pro situace, nedostatek paměti
 > [!NOTE]
 > Pokud máte potíže s používáním produktu z důvodu problémů s pamětí, dejte nám vědět prostřednictvím [zpětnou vazbu nástroj](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
-## <a name="optimize-your-environment"></a>Optimalizace prostředí
+## <a name="use-a-64-bit-os"></a>Použít 64bitová verze OS
 
-- **Použít 64bitová verze OS**
+Pokud upgradujete systém z 32bitové verze systému Windows na 64bitovou verzi, rozbalte velikost virtuální paměti, které jsou k dispozici pro Visual Studio z 2 GB do 4 GB. To umožňuje sadě Visual Studio pro zpracování podstatně větší zatížení, i když je 32bitový proces.
 
-    Pokud upgradujete systém z 32bitové verze systému Windows na 64bitovou verzi, rozbalte velikost virtuální paměti, které jsou k dispozici pro Visual Studio z 2 GB do 4 GB. To umožňuje sadě Visual Studio pro zpracování podstatně větší zatížení, i když je 32bitový proces.
+Další informace najdete v tématu [paměťová omezení](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) a [použít/LARGEADDRESSAWARE v 64bitovém systému Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
-    Další informace najdete v tématu [paměťová omezení](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) a [použít/LARGEADDRESSAWARE v 64bitovém systému Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+## <a name="disable-automatic-file-restore"></a>Zakázat automatické souboru obnovení
 
-## <a name="configure-solution-and-projects"></a>Konfigurace řešení a projekty
+Visual Studio automaticky neotevře dokumenty, které byly ponechány otevřené v předchozí relace. To může prodloužit dobu potřebnou k načtení řešení až 30 % a víc, v závislosti na typu projektu a dokumenty otevíráte. Návrháři jako Windows Forms a XAML a některé JavaScript a typescript soubory, může být pomalé otevřete.
 
-Pokud máte velké řešení s mnoha projektů, může mít užitek tím, že provedete následující optimalizace:
+Visual Studio vás upozorní žlutě panelu při obnovení automatické dokumentů způsobuje řešení načíst výrazně pomalejší. Můžete zakázat automatické soubor znovu pomocí následujících kroků:
 
-- **Uvolnění projekty**
+1. Vyberte **nástroje** > **možnosti** otevřete **možnosti** dialogové okno.
 
-    Můžete ručně uvolnění je používána zřídka jednotlivých projektů z **Průzkumníku řešení** pomocí místní nabídky klikněte pravým tlačítkem.
+1. Na **projekty a řešení** > **Obecné** stránky, zrušte výběr **znovu otevřít dokumenty na zatížení řešení**.
 
-- **Refaktorovat řešení**
-
-    Řešení můžete rozdělit na několik menších souborů řešení s běžně používanými projekty. Tato refaktoring by výrazně snížit využití paměti pro pracovní postup. Menší řešení načíst také rychlejší.
+Pokud zakážete automatické souboru obnovení, je rychlý způsob, jak přejděte na soubory, které chcete otevřít pomocí [přejít na](../ide/go-to.md). Vyberte **upravit** > **přejít na** > **přejděte na všechny**, nebo stiskněte klávesu **Ctrl**+**T** .
 
 ## <a name="configure-debugging-options"></a>Konfigurace možností ladění
 
@@ -73,28 +72,29 @@ Pokud jste se obvykle dostatek paměti během relace ladění, můžete optimali
 
 ## <a name="disable-tools-and-extensions"></a>Zakázat nástroje a rozšíření
 
-Některé nástroje nebo rozšíření může vypnuté ke zlepšení výkonu.
+Některé nástroje nebo rozšíření může být vypnuto ke zlepšení výkonu.
 
 > [!TIP]
 > Často můžete izolovat problémy s výkonem vypnutím rozšíření jeden najednou a opětná kontrola výkonu.
 
-### <a name="managed-language-services-roslyn"></a>Jazyk spravované služby (Roslyn)
+### <a name="managed-language-service-roslyn"></a>Spravovaná služba jazyka (Roslyn)
 
 Informace o aspektech týkajících se výkonu kompilátoru platformu .NET ("Roslyn") najdete v tématu [důležité informace o výkonu pro velká řešení](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Zakázat úplnou analýzu řešení**
 
-    Visual Studio provádí analýzu na celé řešení Chcete-li poskytovat bohaté prostředí o chybách před vyvoláním sestavení. Tato funkce je užitečná k identifikaci chyby co nejdříve. Pro velmi velká řešení, ale tato funkce spotřebovat významné paměťových prostředků. Pokud dojde k přetížení paměti nebo podobné problémy, můžete zakázat toto prostředí pro uvolnění těchto prostředků. Ve výchozím nastavení tato možnost je povolena v jazyce Visual Basic a zakázané pro jazyk C#.
+    Visual Studio provádí analýzu na celé řešení Chcete-li poskytovat bohaté prostředí o chybách před vyvoláním sestavení. Tato funkce je užitečná k identifikaci chyby co nejdříve. Pro velká řešení, ale tato funkce může využít významné paměťových prostředků. Pokud dojde k přetížení paměti nebo podobné problémy, můžete zakázat toto prostředí pro uvolnění těchto prostředků. Ve výchozím nastavení tato možnost je povolena v jazyce Visual Basic a zakázané pro jazyk C#.
 
-    Chcete-li zakázat **analýzy celého řešení**, zvolte **nástroje** > **možnosti** > **textového editoru**  >  **< Visual Basic a C# >**. Zvolte **Upřesnit** a zrušte výběr **povolit úplnou analýzu řešení**.
+    Zakázat **analýzy celého řešení**, zvolte **nástroje** > **možnosti** > **textového editoru**, zvolte položku buď **jazyka Visual Basic** nebo **C#**. Zvolte **Upřesnit** a zrušte výběr **povolit úplnou analýzu řešení**.
 
 - **Zakázat Codelensu**
 
-    Visual Studio provádí **najít všechny odkazy** úloh na každou metodu, jak je uvedeno. Codelensu poskytuje funkce, jako je například zobrazení vložený počet odkazů. Práce se provádí v samostatném procesu (například *ServiceHub.RoslynCodeAnalysisService32*). Ve velmi velkých řešeních nebo na systémech prostředků omezené tato funkce může mít významný dopad na výkon, i když se spustí s nízkou prioritou. Pokud dojde k vysoké využití procesoru v tomto procesu nebo paměti problémy (například při načítání velkých řešení na počítači, 4 GB), můžete zkusit zakázáním této funkce tím se uvolní prostředky.
+    Visual Studio provádí **najít všechny odkazy** úloh na každou metodu, jak je uvedeno. Codelensu poskytuje funkce, jako je například zobrazení vložený počet odkazů. Práce se provádí v samostatném procesu, jako *ServiceHub.RoslynCodeAnalysisService32*. U velkých řešení, nebo na systémech omezené prostředků tato funkce může mít významný dopad na výkon. Pokud dojde k problémům s pamětí, například při načítání velkých řešení na počítač 4 GB nebo vysoké využití procesoru pro tento proces můžete zakázat Codelensu tím se uvolní prostředky.
 
     Chcete-li zakázat **Codelensu**, zvolte **nástroje** > **možnosti** > **textového editoru**  >   **Všechny jazyky** > **Codelensu**a zrušte výběr funkce.
 
-    Tato funkce je k dispozici v aplikaci Visual Studio Professional a Visual Studio Enterprise.
+    > [!NOTE]
+    > Codelensu je k dispozici v edicích sady Visual Studio Professional a Enterprise.
 
 ### <a name="other-tools-and-extensions"></a>Další nástroje a rozšíření
 
@@ -124,7 +124,7 @@ Pokud vynucení uvolňování paměti spolehlivě provede váš scénář fungov
 
 Podrobný popis garbage collector v CLR, najdete v části [základy uvolnění paměti](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Optimalizace výkonu v sadě Visual Studio](../ide/optimize-visual-studio-performance.md)
-- [Visual Studio blog - zatížení řešení rychlejší s Visual Studio 2017 verze 15,6 operací](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Spouštění řešení rychlejší (blog Visual Studio)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

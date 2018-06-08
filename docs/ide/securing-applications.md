@@ -1,6 +1,6 @@
 ---
-title: Zabezpečených aplikací v sadě Visual Studio
-ms.date: 11/04/2016
+title: Zabezpečení
+ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,46 +13,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec93a207f30218492bbbb3161f073ecfdca975cf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 87e9cb7e9400253713caab17da04c44eb11f5ed1
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843907"
 ---
-# <a name="secure-applications"></a>Zabezpečení aplikací
+# <a name="secure-applications"></a>Zabezpečené aplikace
 
-Zatímco většina aplikací mít běžné problémy zabezpečení, každou doménu aplikace má výzvy zabezpečení své vlastní.
+Zabezpečení byste měli věnovat pozornost ve všech aspektech vývoje aplikace od návrhu až po nasazení. Spusťte jako bezpečně spuštěním sady Visual Studio. V tématu [oprávnění uživatele](../ide/user-permissions-and-visual-studio.md).
 
-## <a name="general-security-considerations"></a>Obecné otázky zabezpečení
- Každý jazyk má svou vlastní aspekty zabezpečení a problémy.
+Abyste mohli efektivně vyvíjet bezpečné aplikace, měli byste znát základní principy konceptů zabezpečení a funkce zabezpečení platforem, pro které vyvíjíte. Také je třeba porozumět bezpečným technikám kódování.
 
- [Osvědčené postupy zabezpečení](/cpp/top/security-best-practices-for-cpp) poskytuje informace o funkcích zabezpečení a postupy, které jsou k dispozici při práci v jazyce Visual C++.
+## <a name="code-for-security"></a>Kód pro zabezpečení
 
- [Zabezpečení a programování (C# a Visual Basic)](https://msdn.microsoft.com/library/ms233782(v=vs.100).aspx) poskytuje informace o zabezpečení se první tři pro vývojáře v jazyce Visual Basic a C#: oprávnění, webových aplikací a instalaci sady Visual Studio.
+Protože vývojáři nesprávný předpoklady při práci s uživatelský vstup, nebo protože nemáte porozumí plně platformu, pro kterou provádíte vývoj dojít k většině kódování chybám, jejichž výsledkem ohrožení zabezpečení.
 
-## <a name="secure-mobile-applications"></a>Zabezpečení mobilní aplikace
- Při rostoucí oblíbenosti mobilních zařízení, stane se důležitější zabezpečení informací a dat na těchto zařízeních.
+- [Zabezpečené kódování pokyny](/dotnet/standard/security/secure-coding-guidelines) popisuje různé způsoby kód .NET může být navrženy pro práci s zabezpečení systému.
+- [Osvědčené postupy zabezpečení pro jazyk C++](/cpp/top/security-best-practices-for-cpp) obsahuje informace o nástrojích zabezpečení a postupy pro vývojáře C++.
 
- [Důležité informace o zabezpečení pro zařízení](http://msdn.microsoft.com/45fab484-8718-452e-8210-04fda3c6cb87) popisuje několika faktory, které ovlivňují zásady zabezpečení pro zařízení.
+## <a name="build-for-security"></a>Sestavení pro zabezpečení
 
- [Cíle zabezpečení pro rozhraní .NET Compact Framework](http://msdn.microsoft.com/64ac2770-e2bc-40a3-abbf-56c8a2c0e364) popisuje cíle pro rozhraní .NET Compact Framework zabezpečení.
+Zabezpečení je také důležitý faktor v procesu sestavení. Pár dalších kroků můžete zlepšit zabezpečení nasazené aplikace a pomáhá zabránit neoprávněnému zpětnou analýzu, falšování identity nebo jiným útokům:
 
- [Návrh zabezpečené stránky webového formuláře pro mobilní](http://msdn.microsoft.com/b69727c1-f81f-4221-a116-8f92f769365f) popisuje plánování a implementace podpora zabezpečení v bezdrátových sítí a mobilní zařízení.
+- [Dotfuscatoru](dotfuscator/index.md) volný a pomáhá chránit před zpětnou a neoprávněnému použití například neoprávněným ladění sestavení .NET.
+- [Podpis silného názvu](managing-assembly-and-manifest-signing.md) slouží k jednoznačné identifikaci softwarové součásti a zabránit falšování.
 
-## <a name="secure-web-applications"></a>Zabezpečení webových aplikací
- Chybně napsané webové stránky může ohrozit integrity a zabezpečení celý server a potenciálně celé síti. Proto je nutné si důležité informace o zabezpečení při plánování webové aplikace.
+## <a name="see-also"></a>Viz také:
 
- [Architektura ASP.NET zabezpečení](http://msdn.microsoft.com/Library/c34d6f4f-f64d-4697-bd32-02dd2ddf726f) poskytuje přehled ASP.NET infrastruktury a subsystému vztahy jako související se zabezpečením.
-
- [Zabezpečení webových aplikací ASP.NET](http://msdn.microsoft.com/Library/658d0430-1644-4744-b52d-08b0d6fcacb8) podrobnosti o tom, jak řešit potíže se autorizaci a ověřování technologie ASP.NET.
-
- [Postupy: použití zabezpečení přenosu](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297) popisuje, jak používat zabezpečení přenosu pro ověřování při připojování ke službě WCF.
-
-## <a name="secure-desktop-applications"></a>Zabezpečení aplikací klasické pracovní plochy
- Navrhování zabezpečení aplikací klasické pracovní plochy je základním krokem při vývoji aplikace.
-
- [Windows Forms – zabezpečení](/dotnet/framework/winforms/windows-forms-security) poskytuje přehled implementace zabezpečení Windows Forms.
-
-## <a name="see-also"></a>Viz také
-
-- [Zabezpečení](../ide/security-in-visual-studio.md)
+- [Zabezpečení v rozhraní .NET Framework](/dotnet/standard/security/index)
+- [Zabezpečení Azure](/azure/security/)
+- [Průvodce zabezpečením Windows 10 Mobile](/windows/security/threat-protection/windows-10-mobile-security-guide)
+- [Funkce zabezpečení platformy Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)
+- [ASP.NET Core zabezpečení](/aspnet/core/security/?view=aspnetcore-2.1)
+- [Windows Forms – zabezpečení](/dotnet/framework/winforms/windows-forms-security)

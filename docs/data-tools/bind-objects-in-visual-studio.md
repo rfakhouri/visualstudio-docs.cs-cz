@@ -18,17 +18,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1713221c56fe29357e708e3790aa292d456c4519
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8b86f7159e1e8c8e54c7045709d61b5f6fa7d60
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844703"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Vazby objektů v sadě Visual Studio
 Visual Studio poskytuje nástroje pro návrh pro práci s vlastní objekty jako zdroj dat v aplikaci. Když chcete k ukládání dat z databáze v objektu, který vytvoření vazby ovládacích prvků uživatelského rozhraní, o doporučený postup je použití rozhraní Entity Framework pro generování třídu nebo třídy. Rozhraní Entity Framework automaticky generuje všechny standardní sledování změn kód, což znamená, že všechny změny na místní objekty jsou automaticky trvalé do databáze při jste DbSet objektu volejte metodu AcceptChanges. Další informace najdete v tématu [Entity Framework dokumentaci](https://ef.readthedocs.org/en/latest/).
 
 > [!TIP]
->  Přístupy k objektu vazby v tomto článku byste měli uvažovat pouze pokud je aplikace již založená na datové sady. Tato řešení můžete také použijí, pokud jste již obeznámeni s datovými sadami a data, která bude zpracovávat se tabulkové a příliš složitý nebo příliš velký. Příklad i jednodušší, zahrnující načítání dat přímo do objektů pomocí DataReader – a ručně aktualizace uživatelského rozhraní bez vazby dat, naleznete v části [vytvoření jednoduché datové aplikace pomocí ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).
+>  Přístupy k objektu vazby v tomto článku byste měli uvažovat pouze pokud je aplikace již založená na datové sady. Můžete také použít tyto přístupy Pokud jste již obeznámeni s datovými sadami a data, která bude zpracovávat se tabulkové a příliš složitý nebo příliš velký. Příklad i jednodušší, zahrnující načítání dat přímo do objektů pomocí DataReader – a ručně aktualizace uživatelského rozhraní bez vazby dat, naleznete v části [vytvoření jednoduché datové aplikace pomocí ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).
 
 ## <a name="object-requirements"></a>Požadavky na objekt
  Jediný požadavek pro vlastní objekty pro práci s daty nástrojů návrhu v sadě Visual Studio je, že objekt potřebuje aspoň jedna veřejná vlastnost.
@@ -36,7 +37,7 @@ Visual Studio poskytuje nástroje pro návrh pro práci s vlastní objekty jako 
  Obecně platí vlastní objekty nevyžadují žádné konkrétní rozhraní, konstruktory nebo atributů tak, aby fungoval jako zdroj dat pro aplikaci. Ale pokud budete chtít přetáhněte objekt z **zdroje dat** okna návrhové ploše k vytvoření ovládacího prvku vázané na data, a pokud objekt implementuje <xref:System.ComponentModel.ITypedList> nebo <xref:System.ComponentModel.IListSource> rozhraní, objekt musí mít výchozí konstruktor. Jinak Visual Studio nelze doložit objekt zdroje dat a zobrazí chybu při přetažení položky na plochu návrháře.
 
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>Příklady použití vlastních objektů jako zdroje dat
- Při obrovském množství způsoby, jak implementovat aplikační logiku při práci s objekty jako zdroj dat se pro SQL databáze existuje jsou několik standardní operace, které můžete zjednodušit pomocí objektů TableAdapter generovaný Visual Studio. Tato stránka vysvětluje, jak implementovat tyto standardních procesů pomocí TableAdapters.It není určen jako vodítko k vytvoření vlastních objektů. Například obvykle provedete následující standardní operace bez ohledu na konkrétní implementaci vašich objektů nebo logiku aplikace:
+ Při obrovském množství způsoby, jak implementovat aplikační logiku při práci s objekty jako zdroj dat se pro SQL databáze existuje jsou několik standardní operace, které můžete zjednodušit pomocí objektů TableAdapter generovaný Visual Studio. Tato stránka vysvětluje, jak implementovat tyto standardních procesů pomocí TableAdapters. Není určen jako vodítko k vytvoření vlastních objektů. Například obvykle provedete následující standardní operace bez ohledu na konkrétní implementaci vašich objektů nebo logiku aplikace:
 
 -   Načítání dat do objektů (většinou z databáze).
 
@@ -60,7 +61,7 @@ Visual Studio poskytuje nástroje pro návrh pro práci s vlastní objekty jako 
  Nejjednodušší způsob, jak načíst vaše vlastní objekty s daty je volat `TableAdapter.GetData` metoda, procházení kolekce řádků v tabulce vrácená data a naplňte každý objekt s hodnotami v jednotlivých řádcích. Můžete vytvořit `GetData` metoda, která vrací tabulku vyplněná data pro jakýkoli dotaz, přidat do TableAdapter.
 
 > [!NOTE]
->  Visual Studio názvy dotazů TableAdapter `Fill` a `GetData` ve výchozím nastavení, ale tyto názvy můžete změnit na libovolný platný název metody.
+>  Visual Studio názvy dotazů TableAdapter `Fill` a `GetData` ve výchozím nastavení, ale tyto názvy, můžete změnit na libovolný platný název metody.
 
  Následující příklad ukazuje, jak projít řádků v tabulce dat a naplnit objekt s daty:
 
@@ -70,9 +71,9 @@ Visual Studio poskytuje nástroje pro návrh pro práci s vlastní objekty jako 
 ### <a name="create-a-typed-collection-of-objects"></a>Vytvoření typové kolekce objektů
  Můžete vytvořit kolekce tříd pro objektů nebo použít typu kolekce, které jsou automaticky poskytované [BindingSource – komponenta](/dotnet/framework/winforms/controls/bindingsource-component).
 
- Když vytváříte třídu vlastní kolekce pro objekty, doporučujeme dědění ze <xref:System.ComponentModel.BindingList%601>. Tato obecná třída poskytuje funkce pro správu kolekce, jakož i možnost vyvolávání událostí, které odesílat oznámení do infrastruktury datové vazby v systému Windows Forms.
+ Při vytváření třídy vlastní kolekce pro objekty, doporučujeme dědění ze <xref:System.ComponentModel.BindingList%601>. Tato obecná třída poskytuje funkce pro správu kolekce, jakož i možnost vyvolávání událostí, které odesílat oznámení do infrastruktury datové vazby v systému Windows Forms.
 
- Kolekce automaticky generovány v <xref:System.Windows.Forms.BindingSource> používá <xref:System.ComponentModel.BindingList%601> pro jeho typu kolekce. Pokud aplikace nevyžaduje žádný další funkce, pak je možné uchovávat v rámci vaší kolekce <xref:System.Windows.Forms.BindingSource>. Další informace najdete v tématu <xref:System.Windows.Forms.BindingSource.List%2A> vlastnost <xref:System.Windows.Forms.BindingSource> třídy.
+ Kolekce automaticky generovány v <xref:System.Windows.Forms.BindingSource> používá <xref:System.ComponentModel.BindingList%601> pro jeho typu kolekce. Pokud aplikace nevyžaduje žádné další funkce, je možné uchovávat v rámci vaší kolekce <xref:System.Windows.Forms.BindingSource>. Další informace najdete v tématu <xref:System.Windows.Forms.BindingSource.List%2A> vlastnost <xref:System.Windows.Forms.BindingSource> třídy.
 
 > [!NOTE]
 >  Pokud vaše kolekce vyžaduje funkce není poskytovaný základní implementace <xref:System.ComponentModel.BindingList%601>, měli byste vytvořit vlastní kolekce, můžete přidat do třídy podle potřeby.
@@ -139,6 +140,6 @@ Visual Studio poskytuje nástroje pro návrh pro práci s vlastní objekty jako 
  [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
  [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

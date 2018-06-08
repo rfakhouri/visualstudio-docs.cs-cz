@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 20c692e648e094d6d7c62cc5099b73ba2f27e3c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7313c12558da4ddda6cd38c8a1dff135a6f55cb8
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844300"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Použít testovací prostředí pro vaše devops
 
@@ -35,8 +36,8 @@ Zde jsou příklady topologií běžné prostředí testovacího prostředí:
 |![Cloud testovacího prostředí](../media/topology_cloud.png)| Tohoto testovacího prostředí poskytuje podobné funkce a funkce, jako _topologii serveru_, ale eliminuje požadavek pro fyzické nebo virtuální počítače spuštěné v místním prostředí; která mohou zkrátit čas instalace, zjednodušit Údržba a minimalizovat náklady. Nastavení více webů a virtuální počítače, spolu s vlastní sítě, je rychlý a snadný v cloudovém prostředí jako je Microsoft Azure.|
 |![Klient server testovacího prostředí](../media/topology_clientserver.png)| Má tohoto testovacího prostředí *klient server topologie*, což se často používá k testování aplikace, která obsahuje součásti serveru a klienta. V topologii klientem a serverem všechny klientských a serverových počítačů, které slouží k testování aplikace jsou ve vašem testovacím prostředí. Při použití této topologii z každý počítač, který má dopad na testy můžete shromažďovat testovacích datech.|
 
-|         |         |
-|---------|---------|
+|   |   |
+|---|---|
 |  ![film ikonu fotoaparátu pro video](../../install/media/video-icon.png)  |    [Přehrát video,](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) na správu testovací prostředí pro testování. |
 
 ## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>Použití cloudu s Team Services nebo Team Foundation Server sestavení a verze
@@ -138,7 +139,7 @@ Informace o nastavení prostředí najdete v tématu:
 * [(Virtuální) prostředí SCVMM](https://msdn.microsoft.com/library/ee943322.aspx)
 * [Vytváření a používání izolovaného síťového prostředí](https://msdn.microsoft.com/library/ee518924.aspx)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Instalace a konfigurace testovacích agentů](../../test/lab-management/install-configure-test-agents.md)
 * [Průvodce Správa testovacího prostředí sady Visual Studio](https://aka.ms/vsarsolutions)

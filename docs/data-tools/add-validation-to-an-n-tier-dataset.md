@@ -1,5 +1,5 @@
 ---
-title: Přidání ověřování do vícevrstvé datové sady
+title: Přidávání ověřování do vícevrstvé datové sady
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,13 +17,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8fbbf6a28d63e755929cc9d8a6c62ff7649b2f1c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 81d929aaffb6f08e5e1cda1cf3329de81fe13bc8
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845402"
 ---
-# <a name="add-validation-to-an-n-tier-dataset"></a>Přidání ověřování do vícevrstvé datové sady
+# <a name="add-validation-to-an-n-tier-dataset"></a>Přidávání ověřování do vícevrstvé datové sady
 Přidání ověřování do datové sady, který je rozdělené do řešení s n vrstvá je v podstatě stejný jako přidávání ověření do datové sady jedním souborem (datové sady v jednom projektu). Navrhované umístění k provedení ověření na data je během <xref:System.Data.DataTable.ColumnChanging> nebo <xref:System.Data.DataTable.RowChanging> události dat tabulky.
 
  Datová sada obsahuje funkci pro vytvoření částečné třídy, na které můžete přidat uživatelský kód Změna sloupce a řádku události tabulek dat v datové sadě. Další informace o přidání kódu do datové sady v n vrstvá řešení najdete v tématu [přidávání kódu do datových sad ve víceúrovňových aplikacích](../data-tools/add-code-to-datasets-in-n-tier-applications.md), a [přidávání kódu do prvků TableAdapters ve víceúrovňových aplikacích](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Další informace o částečné třídy najdete v tématu [postupy: rozdělení třídy na částečné třídy (návrhář tříd)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) nebo [částečné třídy a metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
@@ -37,7 +38,7 @@ Přidání ověřování do datové sady, který je rozdělené do řešení s n
 ## <a name="validate-changes-to-individual-columns"></a>Ověřit změny jednotlivých sloupců
  Ověřte hodnoty v jednotlivých sloupcích tak, že zpracování <xref:System.Data.DataTable.ColumnChanging> událostí. <xref:System.Data.DataTable.ColumnChanging> Událost se vyvolá, když dojde k úpravě hodnotu ve sloupci. Vytvoření obslužné rutiny události pro <xref:System.Data.DataTable.ColumnChanging> událostí poklikáním na požadovaném sloupci **návrháře Dataset**.
 
- Při prvním dvakrát kliknete na sloupci, návrháře generuje obslužné rutiny události pro <xref:System.Data.DataTable.ColumnChanging> událostí. `If...Then` Příkaz se vytvoří také který testů pro konkrétní sloupec. Například následující kód se vygeneruje, když dvakrát kliknete na požadované datum sloupec v tabulce Northwind objednávky:
+ Při prvním dvakrát kliknete na sloupci, návrháře generuje obslužné rutiny události pro <xref:System.Data.DataTable.ColumnChanging> událostí. `If...Then` Příkaz se vytvoří také který testů pro konkrétní sloupec. Například následující kód se vygeneruje, když dvakrát kliknete **požadované datum** sloupce v tabulce Northwind objednávky:
 
 ```vb
 Private Sub OrdersDataTable_ColumnChanging(ByVal sender As System.Object, ByVal e As System.Data.DataColumnChangeEventArgs) Handles Me.ColumnChanging
@@ -54,7 +55,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Přidat ověřování během změny hodnoty jednotlivých sloupců
 
-1.  Dvojitým kliknutím otevřete datovou sadu **XSD** souboru v **Průzkumníku řešení**. Další informace najdete v tématu [návod: vytvoření datové sady v Návrháři Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Dvojitým kliknutím otevřete datovou sadu *XSD* souboru v **Průzkumníku řešení**. Další informace najdete v tématu [návod: vytvoření datové sady v Návrháři Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Dvakrát klikněte na sloupec, který chcete ověřit. Tato akce vytvoří <xref:System.Data.DataTable.ColumnChanging> obslužné rutiny události.
 
@@ -110,7 +111,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Přidání ověřování během změny na celé řádky
 
-1.  Dvojitým kliknutím otevřete datovou sadu **XSD** souboru v **Průzkumníku řešení**. Další informace najdete v tématu [návod: vytvoření datové sady v Návrháři Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Dvojitým kliknutím otevřete datovou sadu *XSD* souboru v **Průzkumníku řešení**. Další informace najdete v tématu [návod: vytvoření datové sady v Návrháři Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Dvakrát klikněte na záhlaví tabulky dat v designeru.
 
@@ -165,8 +166,8 @@ End Sub
     }
     ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md)
-- [Návod: Vytvoření víceúrovňové datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Návod: Vytvoření vícevrstvé datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Ověřování dat v datových sadách](../data-tools/validate-data-in-datasets.md)

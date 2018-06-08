@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d7d15f2e65d30235e67fd0775684fd22e8eed0fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 093b937f7a957ef1d3a912c31d57a03f1a433ab0
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844235"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Postupy: Zabránění vypršení časových limitů u adaptérů diagnostických dat
 
@@ -63,7 +64,7 @@ Pokud používáte adaptérů diagnostických dat v nastavení testu, vypršení
 
 4.  Je třeba upravit v části Nastavení spuštění testu ke zvýšení hodnoty časového limitu. Tato část má následující formát:
 
-    ```
+    ```text
     <!-- Begin: Test execution settings -->
 
         <!-- How long test runner will wait for an event raised to all local data collectors to complete.  Default is 300. -->
@@ -81,7 +82,7 @@ Pokud používáte adaptérů diagnostických dat v nastavení testu, vypršení
 
 7.  Chcete-li zvýšit časový limit pro přenos žádná data shromažďují chyby nebo při testu končí k počítači, který běží testy, je nutné přidat následující časový limit na **mtm.exe.config** v části appSettings souboru:
 
-    ```
+    ```text
     <!-- How long test runner waits for data collected by diagnostic data adapters to be transferred to the computer. Default is 60 seconds. -->
     <add key="GetCollectorDataTimeout" value="300"/>
     ```
@@ -91,6 +92,6 @@ Pokud používáte adaptérů diagnostických dat v nastavení testu, vypršení
 
 8.  Uložit změny, které jste provedli k souboru a znovu spusťte testy, které dříve vypršel.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Shromažďování diagnostických informací s použitím nastavení testu](../test/collect-diagnostic-information-using-test-settings.md)

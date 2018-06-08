@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření vašeho prvního doplňku VSTO pro projekt | Microsoft Docs'
+title: 'Návod: Vytvoření vaší první VSTO Add-in pro projekt'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3572f07a9bb0e3fc9a38ec55ae260e19dd671620
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 671ea761588cc56437334e8a7b8b7c58a2061970
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845779"
 ---
-# <a name="walkthrough-creating-your-first-vsto-add-in-for-project"></a>Návod: Vytvoření vašeho prvního doplňku VSTO pro projekt
+# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Návod: Vytvoření vaší první VSTO Add-in pro projekt
   Tento návod ukazuje, jak vytvořit doplňku VSTO pro aplikaci Microsoft Office Project. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pro aplikace, samostatně, bez ohledu na to, které jsou otevřené projekty. Další informace najdete v tématu [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]  
@@ -48,9 +49,9 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Project_15_short](../vsto/includes/project-15-short-md.md)] nebo [!INCLUDE[Project_14_short](../vsto/includes/project-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Vytvoření projektu  
+## <a name="create-the-project"></a>Vytvoření projektu  
   
-#### <a name="to-create-a-new-project-in-visual-studio"></a>Chcete-li vytvořit nový projekt v sadě Visual Studio  
+### <a name="to-create-a-new-project-in-visual-studio"></a>Chcete-li vytvořit nový projekt v sadě Visual Studio  
   
 1.  Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -68,16 +69,16 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstProjectAddIn** projektu a otevře **ThisAddIn** souboru kódu v editoru.  
   
-## <a name="writing-code-that-adds-a-new-task-to-a-project"></a>Psaní kódu, který přidá novou úlohu do projektu  
+## <a name="write-code-that-adds-a-new-task-to-a-project"></a>Napsat kód, který přidá novou úlohu do projektu  
  Dál přidejte kód do souboru kódu ThisAddIn. Nový kód používá objektový model projektu k přidání nové úlohy do projektu. Ve výchozím nastavení soubor ThisAddIn kód obsahuje následující generovaný kód:  
   
--   Částečné definice `ThisAddIn` třídy. Tato třída představuje vstupní bod pro kód a poskytuje přístup k modelu objektu projektu. Další informace najdete v tématu [programování doplňků VSTO](../vsto/programming-vsto-add-ins.md). Zbývající část `ThisAddIn` třída definovaná v souboru skrytá kódu, který byste neměli upravovat.  
+-   Částečné definice `ThisAddIn` třídy. Tato třída představuje vstupní bod pro kód a poskytuje přístup k modelu objektu projektu. Další informace najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md). Zbývající část `ThisAddIn` třída definovaná v souboru skrytá kódu, který byste neměli upravovat.  
   
 -   `ThisAddIn_Startup` a `ThisAddIn_Shutdown` obslužné rutiny událostí. Tyto obslužné rutiny událostí jsou volány při projektu načte a uvolní vaší doplňku VSTO. Pomocí těchto obslužných rutin událostí k chybě při inicializaci doplňku VSTO, když je načten a vyčistit prostředky využívané třídou vaší doplňku VSTO v případě, že je odpojen. Další informace najdete v tématu [události v projektech Office](../vsto/events-in-office-projects.md).  
   
-#### <a name="to-add-a-task-to-a-new-project"></a>Chcete-li přidat úloha na nový projekt  
+### <a name="to-add-a-task-to-a-new-project"></a>Chcete-li přidat úloha na nový projekt  
   
-1.  V souboru kódu ThisAddIn, přidejte následující kód, který `ThisAddIn` třídy. Tento kód definuje obslužnou rutinu události pro událost NewProject Microsoft.Office.Interop.MSProject.Application třídy.  
+1.  V souboru kódu ThisAddIn, přidejte následující kód, který `ThisAddIn` třídy. Tento kód definuje obslužnou rutinu události pro `NewProject` události `Microsoft.Office.Interop.MSProject.Application` třídy.  
   
      Když uživatel vytvoří nový projekt, přidá této obslužné rutiny události úlohu do projektu.  
   
@@ -86,20 +87,19 @@ ms.lasthandoff: 04/16/2018
   
  Chcete-li upravit projektu, použijte tento příklad kódu následující objekty:  
   
--   `Application` Pole z `ThisAddIn` třídy. `Application` Pole vrátí objekt Microsoft.Office.Interop.MSProject.Application, který představuje aktuální instanci projektu.  
+-   `Application` Pole z `ThisAddIn` třídy. `Application` Pole vrátí `Microsoft.Office.Interop.MSProject.Application` objektu, který představuje aktuální instanci projektu.  
   
--   `pj` Parametr obslužné rutiny události pro událost NewProject. `pj` Parametr je Microsoft.Office.Interop.MSProject.Project objekt, který reprezentuje projektu. Další informace najdete v tématu [řešení projektu](../vsto/project-solutions.md).  
+-   `pj` Parametr obslužné rutiny události pro událost NewProject. `pj` Parametr `Microsoft.Office.Interop.MSProject.Project` objekt, který reprezentuje projektu. Další informace najdete v tématu [projektu řešení](../vsto/project-solutions.md).  
   
 1.  Pokud používáte C#, přidejte následující kód, který `ThisAddIn_Startup` obslužné rutiny události. Tento kód se připojí `Application_Newproject` obslužné rutiny události s NewProject událostí.  
   
      [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]  
   
--  
   
-## <a name="testing-the-project"></a>Testování projektu  
+## <a name="test-the-project"></a>Testování projektu  
  Při sestavení a spuštění projektu, ověřte, že nová úloha se zobrazí v výsledné nový projekt.  
   
-#### <a name="to-test-the-project"></a>Otestování projektu  
+### <a name="to-test-the-project"></a>Otestování projektu  
   
 1.  Stiskněte klávesu **F5** sestavení a spuštění projektu. Aplikace Microsoft Project spustí a automaticky se otevře nový prázdný projekt.  
   
@@ -113,29 +113,29 @@ ms.lasthandoff: 04/16/2018
   
 4.  Zavřete Microsoft Project.  
   
-## <a name="cleaning-up-the-project"></a>Čištění projektu  
+## <a name="clean-up-the-project"></a>Vyčistěte projekt  
  Po dokončení vývoj projektu, odeberte z vývojovém počítači doplňku VSTO sestavení, položky registru a nastavení zabezpečení. V opačném doplňku VSTO se spustí při každém otevření Microsoft Project na vývojovém počítači.  
   
-#### <a name="to-clean-up-your-project"></a>Vyčistěte projekt  
+### <a name="to-clean-up-your-project"></a>Vyčistěte projekt  
   
 1.  V sadě Visual Studio na **sestavení** nabídky, klikněte na tlačítko **Vyčistit řešení**.  
   
 ## <a name="next-steps"></a>Další kroky  
  Teď, když jste vytvořili základní VSTO Add-in pro projekt, další informace o tom, jak vyvíjet doplňků VSTO z těchto témat:  
   
--   Obecné programování úlohy, které můžete provádět v doplňků VSTO pro projekt: [programování doplňků VSTO](../vsto/programming-vsto-add-ins.md).  
+-   Obecné programování úlohy, které můžete provádět v doplňků VSTO pro projekt: [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Pomocí objektu modelu projektu: [řešení projektu](../vsto/project-solutions.md).  
+-   Pomocí objektu modelu projektu: [projektu řešení](../vsto/project-solutions.md).  
   
--   Sestavování a ladění doplňků VSTO pro projekt: [vytváření řešení pro systém Office](../vsto/building-office-solutions.md).  
+-   Sestavování a ladění doplňků VSTO pro projekt: [řešení pro systém Office sestavení](../vsto/building-office-solutions.md).  
   
 -   Nasazení doplňků VSTO pro projekt: [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
-## <a name="see-also"></a>Viz také  
- [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
+## <a name="see-also"></a>Viz také:  
+ [Program doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
  [Projektová řešení](../vsto/project-solutions.md)   
- [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)   
+ [Sestavení řešení pro systém Office](../vsto/building-office-solutions.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
- [Přehled šablon projektů Microsoft Office Project](../vsto/office-project-templates-overview.md)  
+ [Přehled šablon projektů Microsoft Office](../vsto/office-project-templates-overview.md)  
   
   

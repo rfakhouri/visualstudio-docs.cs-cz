@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 93befa75522f0445c5061a590d4f537bed9357b9
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845584"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analýza odezvy uživatelského rozhraní HTML v univerzálních aplikací pro Windows
 Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pomocí Profiler odezvy uživatelského rozhraní, nástroj výkonu k dispozici pro univerzální aplikace pro Windows.  
@@ -34,12 +35,12 @@ Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pom
   
 -   Visual aktualizace, které jsou méně časté, než se očekávalo. K tomu dojde, pokud je příliš zaneprázdněn udržovat smooth obnovovací frekvence vlákna uživatelského rozhraní. Například pokud je zaneprázdněné vlákna uživatelského rozhraní, může vyřadit rámce. Některé non-UI vlákno pracovat, jako jsou síťové požadavky, dekódování, bitové kopie a barvy můžete také omezit četnosti aktualizací visual. (Ne všechny Malování se provádí ve vlákně UI.)  
   
-##  <a name="RunningProfiler"></a> Spusťte nástroj odezvy uživatelského rozhraní HTML  
+## <a name="run-the-html-ui-responsiveness-tool"></a>Spusťte nástroj HTML odezvy uživatelského rozhraní  
  Pokud máte aplikace pro UPW pracovní otevřete v sadě Visual Studio, můžete použít nástroj odezvy uživatelského rozhraní HTML.  
   
 1.  Pokud spouštíte aplikaci ze sady Visual Studio na **standardní** panelu nástrojů v **spustit ladění** vyberte cíl nasazení, jako **místního počítače** nebo **Zařízení**.  
   
-2.  Na **ladění** nabídce zvolte **profileru výkonu...** .  
+2.  Na **ladění** nabídce zvolte **výkonu profileru**.  
   
      Pokud chcete změnit cíl analýzy pro profileru, zvolte**změnit cíl**.  
   
@@ -67,7 +68,7 @@ Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pom
   
 6.  Chcete-li zastavit profilace aplikace a zobrazení data, která profileru shromáždit, zvolte **zastavit shromažďování**.  
   
-##  <a name="IsolateAnIssue"></a> Izolovat problém  
+## <a name="isolate-an-issue"></a>Izolovat problém  
  V následujícím oddílu najdete návrhy můžete izolovat problémy s výkonem. Podrobné vysvětlení, jak identifikovat a opravit problémy s výkonem pomocí výkonu ukázka testování aplikace najdete v tématu [návod: odezvy zlepšení uživatelského rozhraní (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> Izolovat problém odezvy uživatelského rozhraní  
@@ -75,11 +76,11 @@ Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pom
   
 1.  Otevřete aplikaci v sadě Visual Studio.  
   
-2.  Testování aplikace problémů odezvy uživatelského rozhraní. (Stisknutím Ctrl + F5 a spusťte aplikaci bez ladění.)  
+2.  Testování aplikace problémů odezvy uživatelského rozhraní. (Stisknutím klávesy **Ctrl**+**F5** spuštění vaší aplikace bez ladění.)  
   
      Pokud narazíte na problém, pokračujte, testování a pokuste se zúžit časový rámec, ve kterém k danému problému dojde, nebo zkuste k identifikaci aktivační události, které způsobují chování.  
   
-3.  Přepněte do sady Visual Studio (stiskněte klávesy Alt + Tab) a zastavit aplikace (Shift + F5).  
+3.  Přepnout na Visual Studio (stiskněte **Alt**+**kartě**) a zastavení aplikace (**Shift**+**F5**).  
   
 4.  Můžete přidat uživatele značky kódu pomocí [označit kód pro analýzu](#ProfileMark).  
   
@@ -168,7 +169,7 @@ if (performance.mark && performance.measure) {
   
  ![Zobrazení podrobností události měr uživatele v časové ose](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")  
   
-##  <a name="AnalyzeData"></a> Analýza dat  
+## <a name="analyze-data"></a>Analýza dat  
  Následující části obsahují informace, které pomohou interpretovat data, která se zobrazí v profileru.  
   
 ###  <a name="Ruler"></a> Zobrazení časové osy relace diagnostiky  
@@ -300,10 +301,10 @@ if (performance.mark && performance.measure) {
   
  ![Časová osa události seskupené podle rámce](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
-##  <a name="SaveSession"></a> Uložení relace diagnostiky  
+## <a name="save-a-diagnostic-session"></a>Uložení relace diagnostiky  
  V sadě Visual Studio můžete uložit relaci diagnostiky, když zavřete kartu, která je přidružená k relaci. Později můžete znovu otevřít uložených relací.  
   
-##  <a name="ProfilerEvents"></a> Odkaz na události profileru  
+## <a name="profiler-event-reference"></a>Odkaz na události profileru  
  Profileru události jsou zařazené do kategorie a barevné kódování v Profiler odezvy uživatelského rozhraní. Toto jsou kategorie události:  
   
 -   **Načítání.** Označuje, že čas strávený načítání prostředků aplikace a analýzy HTML a CSS poprvé načte aplikaci. To může zahrnovat síťové požadavky.  
@@ -348,7 +349,7 @@ if (performance.mark && performance.measure) {
 |Rámec|Není k dispozici|Byly provedeny změny Visual DOM, který vyžaduje všechny příslušné části stránky překreslit. Toto je nástroj vygeneruje událost používat k vytváření skupin.|  
 |Míra uživatele|Není k dispozici|Scénářem specifické pro aplikace se měří pomocí `performance.measure` metoda. Toto je nástroj vygeneruje událost použít pro analýzu kódu.|  
   
-##  <a name="Tips"></a> Další informace  
+## <a name="additional-information"></a>Další informace  
   
 -   Kukátko [toto video](http://channel9.msdn.com/Events/Build/2013/3-316) z konference Build 2013 o Profiler odezvy uživatelského rozhraní.  
   
@@ -356,5 +357,5 @@ if (performance.mark && performance.measure) {
   
 -   Informace o model spouštění jednovláknové kódu a výkonu najdete v tématu [provádění kódu](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
-## <a name="see-also"></a>Viz také  
- [Nástroje pro profilaci](../profiling/profiling-tools.md)
+## <a name="see-also"></a>Viz také:  
+ [První pohled na nástroje pro profilaci](../profiling/profiling-tools.md)

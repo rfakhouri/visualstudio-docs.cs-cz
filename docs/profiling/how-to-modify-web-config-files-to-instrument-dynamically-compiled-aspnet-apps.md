@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 749bc81ff5c1ba325f7b84e6affccc81dc88055d
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: ceee8ee3781a367f351f20ca92b83f4db000b42b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336029"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844762"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Postupy: Úprava souborů web.config za účelem instrumentace a profil dynamicky kompilované webové aplikace ASP.NET
 Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody instrumentace nástrojích pro profilaci ke shromažďování podrobných dat časování, data přidělení paměti .NET a životnosti objektů .NET z dynamicky kompilovat [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace.  
   
- Toto téma popisuje, jak upravte konfigurační soubor web.config. Chcete-li povolit instrumentace a profilování z [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace.  
+ Toto téma popisuje postup úpravy *web.config* konfigurační soubor umožňující instrumentace a profilování z [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace.  
   
 > [!NOTE]
->  Není nutné upravit soubor web.config, když používáte metoda profilování se vzorkováním, nebo když chcete instrumentace předem kompilovaném [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] modulu.  
+>  Není nutné změnit *web.config* souborů při použití metoda profilování se vzorkováním, nebo když chcete instrumentace předem kompilovaném [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] modulu.  
   
- Kořenovém souboru web.config je **konfigurace** elementu. Instrumentace a profilu dynamicky kompilované [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci, musíte přidat nebo upravit následující prvky:  
+ Kořenové *web.config* soubor je **konfigurace** elementu. Instrumentace a profilu dynamicky kompilované [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci, musíte přidat nebo upravit následující prvky:  
   
 -   A **konfigurace/runtime nebo assemblybinding – / dependentAssembly** element, který identifikuje Microsoft.VisualStudio.Enterprise.ASPNetHelper sestavení, které řídí profilace. **DependentAssembly** element obsahuje dva podřízené elementy: **assemblyIdentity** a **základu kódu**.  
   
@@ -33,7 +33,7 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
   
 -   Dva **přidat** prvky, které identifikují umístění profilace nástrojům jsou přidány do **konfigurace/appSettings** části.  
   
- Doporučujeme vám, že vytvoříte kopii původního souboru web.config, který můžete použít k obnovení konfigurace aplikace.  
+ Doporučujeme vytvořit kopii původního *web.config* soubor, který můžete použít k obnovení konfigurace aplikace.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Chcete-li přidat sestavení ASPNetHelper jako konfigurace/runtime nebo assemblybinding – / dependentAssembly – element  
   
@@ -176,7 +176,7 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
 ```  
   
 ## <a name="example"></a>Příklad  
- Následující je soubor web.config dokončení, který umožňuje instrumentace a profilování z dynamicky kompilované [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace. Tento příklad předpokládá, že neexistují žádné další nastavení v souboru před úpravou.  
+ Toto je úplná *web.config* soubor, který umožňuje instrumentace a profilování z dynamicky kompilovat [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace. Tento příklad předpokládá, že neexistují žádné další nastavení v souboru před úpravou.  
   
 ```xml  
 <?xml version="1.0"?>  
@@ -221,6 +221,6 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
   
 ```  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Postupy: instrumentace dynamicky kompilované aplikace ASP.NET a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)   
  [Postupy: instrumentace dynamicky kompilované aplikace ASP.NET a shromažďování dat paměti](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

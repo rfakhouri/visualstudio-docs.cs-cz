@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d358a5f4035d3da1dee4a391fb07931b15d68733
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 439afb9142e3e5ae795b0457f6405ba47227105f
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751043"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845302"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Oprava nedetekovatelných dynamických parametrů v testu výkonnosti webu
 
@@ -198,7 +198,7 @@ K předvedení rozpoznat a nedetekovatelných dynamických parametrů, vytvoří
 
      Jak je vidět na kartě odpověď a v jazyce JavaScript implementována dříve vidíte níže, parametr řetězce dotazu CustomQueryString je přiřazena hodnota "jScriptQueryString___" a je také zřetězen s vrácená hodnota z var sessionId.
 
-    ```
+    ```javascript
     function jScriptQueryString()          {             var Hidden = document.getElementById("HiddenFieldSessionID");             var sessionId = Hidden.value;             window.location = 'JScriptQuery.aspx?CustomQueryString=jScriptQueryString___' + sessionId;          }
 
     ```
@@ -265,4 +265,4 @@ K předvedení rozpoznat a nedetekovatelných dynamických parametrů, vytvoří
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Otázka: Potřebuji ke konfiguraci Visual Studio k detekci dynamických parametrů?
 
- **Odpověď:** výchozí konfigurace sady Visual Studio je ke zjištění dynamických parametrů při záznamu testu výkonnosti webu. Ale pokud máte možnosti aplikace Visual Studio nakonfigurovat zjistit dynamických parametrů nebo testuje webová aplikace získá změnit, další dynamických parametrů; můžete stále [spustit dynamický parametr detekce z Editor testu výkonnosti webu](#FindingNonDetectableDynamicParamters_QA_ReRunDetection).
+ **Odpověď:** výchozí konfigurace sady Visual Studio je ke zjištění dynamických parametrů při záznamu testu výkonnosti webu. Ale pokud máte možnosti aplikace Visual Studio nakonfigurovat zjistit dynamických parametrů nebo testuje webová aplikace získá změnit, další dynamických parametrů; pořád se dá spustit dynamický parametr detekce z Editor testu výkonnosti webu.

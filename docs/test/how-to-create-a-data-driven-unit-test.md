@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b72f2099f629a35659d67832f4ec583f1409f1c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c15087e1e107dcbd01ba0662fecee336acd33b6
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844257"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Postupy: Testy jednotek řízené daty
 
@@ -113,13 +114,13 @@ public void AddIntegers_FromDataSourceTest()
 ###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Určení DataSourceAttribute
  `DataSource` Atribut určuje připojovací řetězec pro zdroj dat a název tabulky, který používáte v metodě testu. Přesné informace v připojovacím řetězci se liší v závislosti na tom, jaký typ zdroje dat, kterou používáte. V tomto příkladu jsme použili SqlServerCe databáze.
 
-```
+```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
 ```
 
 Atribut zdroje dat má tři konstruktory.
 
-```
+```csharp
 [DataSource(dataSourceSettingName)]
 ```
 
@@ -127,7 +128,7 @@ Atribut zdroje dat má tři konstruktory.
 
  Pomocí souboru app.config, můžete změnit umístění zdroje dat bez provedení změn testu jednotek sám sebe. Informace o tom, jak vytvořit a použít soubor app.config najdete v tématu [návod: použití konfiguračního souboru k definování zdroje dat](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
-```
+```csharp
 [DataSource(connectionString, tableName)]
 ```
 
@@ -135,7 +136,7 @@ Atribut zdroje dat má tři konstruktory.
 
  Připojovací řetězce, závisí na typu typu zdroje dat, ale měl by obsahovat element zprostředkovatele, který určuje invariantní název zprostředkovatele dat.
 
-```
+```csharp
 [DataSource(
     dataProvider,
     connectionString,
@@ -160,7 +161,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
  Když metoda testovaného po opravě a test znovu spustit, na panelu výsledků změní na zelenou a metodu test je přesunuta do **předán testování** skupiny.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>

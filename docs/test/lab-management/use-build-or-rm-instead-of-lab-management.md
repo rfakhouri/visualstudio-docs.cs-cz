@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 607bc4646a6bacd0ae119d07e832ffca2f279152
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 454407c3572f7a7c7a1c0f795462d2aec539049a
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845376"
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Použití sestavení a správu verzí místo Lab Management pro automatizované testování
 
@@ -58,7 +59,7 @@ Následující tabulka shrnuje typické aktivit, které můžete provádět v te
 
 | Kroky | S centrem testovacího prostředí | Sestavení nebo Správa verzí |
 |-------|----------------------|-----------------|
-| Spravujte knihovny šablon prostředí. | Vytvořte testovací prostředí. Na virtuálních počítačích nainstalujte potřebný software. Nástroj Sysprep a úložiště v prostředí jako šablona v knihovně. | Pomocí konzoly pro správu SCVMM přímo k vytváření a správě šablon virtuálních počítačů nebo šablony služby. Pokud používáte Azure, vyberte jednu z [šablony Azure rychlý Start](/resources/templates/). |
+| Spravujte knihovny šablon prostředí. | Vytvořte testovací prostředí. Na virtuálních počítačích nainstalujte potřebný software. Nástroj Sysprep a úložiště v prostředí jako šablona v knihovně. | Pomocí konzoly pro správu SCVMM přímo k vytváření a správě šablon virtuálních počítačů nebo šablony služby. Pokud používáte Azure, vyberte jednu z [šablony Azure rychlý Start](https://azure.microsoft.com/resources/templates/). |
 | Vytvořte testovací prostředí. | Vyberte šablonu prostředí v knihovně a nasaďte ji. Zadejte potřebné parametry k přizpůsobení konfigurace virtuálních počítačů. | Pomocí konzoly pro správu SCVMM přímo k vytvoření virtuálních počítačů nebo instancí služby ze šablony. Přímo do vytváření prostředků pomocí portálu Azure. Nebo vytvářet verze definice v prostředí. Použití Azure úlohy nebo úlohy z [SCVMM integrace rozšíření](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) k vytvoření nových virtuálních počítačů. Vytvoření nové verze této definice je ekvivalentní k vytvoření nového prostředí v testovacím centru. |
 | Připojte k počítačům. | Otevřete v prohlížeči prostředí testovacího prostředí. | Pomocí konzoly pro správu SCVMM přímo se připojit k virtuálním počítačům. Alternativně použijte IP adresy nebo názvy DNS virtuálních počítačů k otevření relace vzdálené plochy. |
 | Pořízení kontrolního bodu prostředí nebo obnovit prostředí do čistého kontrolní bod. | Otevřete v prohlížeči prostředí testovacího prostředí. Vyberte možnost k pořízení kontrolního bodu nebo k obnovení do předchozího kontrolního bodu. | Pomocí konzoly pro správu SCVMM přímo k provádění těchto operací na virtuálních počítačích. Nebo, proveďte tyto kroky jako součást větší automatizace, zahrňte kontrolního bodu úlohy z [SCVMM integrace rozšíření](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) v rámci prostředí v definici verze. |

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf6c17430c4f56ae1821a149d4a7cc5f82f0028e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0d31479ec46c407ca875a1ad2a1d81e1438b7715
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571427"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845207"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Postupy: určení umístění souboru se symboly z příkazového řádku
 K zobrazení informací o symbolu například názvy funkcí a čísla řádků, vsperfreport – nástroj příkazového řádku vyžaduje přístup k symbolu (. *pdb*) soubory PROFILOVANÉHO součásti a soubory systému Windows. Symbol soubory se vytvoří při kompilaci komponentu. Další informace najdete v tématu [vsperfreport –](../profiling/vsperfreport.md). Vsperfreport – automaticky vyhledá soubory symbolů v následujících umístěních:  
@@ -59,6 +59,6 @@ K zobrazení informací o symbolu například názvy funkcí a čísla řádků,
   
  **nastavit _NT_SYMBOL_PATH = srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  
   
- Následující příkazový řádek vsperfreport – přidá C:\Projects\Symbols adresář do cesty vyhledávání pomocí **/SymbolPath** možnost.  
+ Následující příkazový řádek vsperfreport – přidá *C:\Projects\Symbols* adresář do cesty vyhledávání pomocí **/SymbolPath** možnost.  
   
  **Vsperfreport –***Moje aplikace* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

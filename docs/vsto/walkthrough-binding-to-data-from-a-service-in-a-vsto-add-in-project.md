@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření vazby na Data ze služby v VSTO doplňku projekt | Microsoft Docs'
+title: 'Návod: Vytvoření vazby na data ze služby v projektu doplňku VSTO'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a89b9455051031b3faa0a44102f2fe97dca97d89
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3c7ed095d0efe756e7a23409cd5a54f9e6dcda8
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845870"
 ---
-# <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>Návod: Vytvoření vazby na Data ze služby v projektu doplňku VSTO
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Návod: Vytvoření vazby na data ze služby v projektu doplňku VSTO
   Data můžete vázat na hostitelské ovládací prvky v projekty doplňku VSTO. Tento návod ukazuje, jak přidání ovládacích prvků do dokumentu aplikace Microsoft Office Word, vytvoření vazby ovládacích prvků k datům získaný ze služby MSDN obsahu a reakce na události v době běhu.  
   
  **Platí pro:** informace v tomto tématu se vztahují na projekty na úrovni aplikace pro Word 2010. Další informace najdete v tématu [dostupné funkce podle aplikace Office a typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
@@ -45,21 +46,21 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## <a name="creating-a-new-project"></a>Vytvoření nového projektu  
+## <a name="create-a-new-project"></a>Vytvoření nového projektu  
  Prvním krokem je vytvoření projektu doplňku VSTO pro Word.  
   
-#### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
+### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
 1.  Vytvoření projektu doplňku VSTO pro Word s názvem **služba obsah MTPS**, pomocí Visual Basic a C#.  
   
-     Další informace najdete v tématu [postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Otevře se Visual Studio `ThisAddIn.vb` nebo `ThisAddIn.cs` souboru a přidá projekt **Průzkumníku řešení**.  
   
-## <a name="adding-a-web-service"></a>Přidání webové služby  
+## <a name="add-a-web-service"></a>Přidat webovou službu  
  V tomto návodu pomocí webové služby, se nazývá MTPS obsahu služba. Tato webová služba vrací informace ze zadaného článku na webu MSDN v podobě řetězce XML nebo prostý text. Později ukazuje, jak zobrazovat vráceném informace v obsahu ovládacího prvku.  
   
-#### <a name="to-add-the-mtps-content-service-to-the-project"></a>Chcete-li přidat službu MTPS obsah do projektu  
+### <a name="to-add-the-mtps-content-service-to-the-project"></a>Chcete-li přidat službu MTPS obsah do projektu  
   
 1.  Na **Data** nabídky, klikněte na tlačítko **přidat nový zdroj dat**.  
   
@@ -75,10 +76,10 @@ ms.lasthandoff: 04/16/2018
   
 6.  V **Průvodce přidáním odkazu** dialogové okno, klikněte na tlačítko **Dokončit**.  
   
-## <a name="adding-a-content-control-and-binding-to-data-at-run-time"></a>Přidání obsahu ovládacího prvku a vytvoření vazby na Data v době běhu  
+## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>Přidání obsahu ovládacího prvku a vytvoření vazby na data za běhu  
  V doplňku VSTO projekty můžete přidat a vytvoření vazby ovládacích prvků za běhu. Pro účely tohoto postupu nakonfigurujte obsahu ovládacího prvku k načtení dat z webové služby, když uživatel klikne v ovládacím prvku.  
   
-#### <a name="to-add-a-content-control-and-bind-to-data"></a>Přidání obsahu ovládacího prvku a vytvoření vazby na data  
+### <a name="to-add-a-content-control-and-bind-to-data"></a>Přidání obsahu ovládacího prvku a vytvoření vazby na data  
   
 1.  V `ThisAddIn` třídy, přidejte proměnné pro tuto službu obsah MTPS, obsah ovládacího prvku a datové vazby.  
   
@@ -105,10 +106,10 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#3)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#3)]  
   
-## <a name="testing-the-add-in"></a>Testování v aplikaci  
+## <a name="test-the-add-in"></a>Testování v aplikaci  
  Při otevření aplikace Word, <xref:Microsoft.Office.Tools.Word.RichTextContentControl> ovládací prvek se zobrazí. Text v řízení změny, po kliknutí na tlačítko uvnitř ho.  
   
-#### <a name="to-test-the-vsto-add-in"></a>K testování doplňku VSTO  
+### <a name="to-test-the-vsto-add-in"></a>K testování doplňku VSTO  
   
 1.  Stiskněte klávesu **F5**.  
   
@@ -116,7 +117,7 @@ ms.lasthandoff: 04/16/2018
   
      Informace o stáhli ze služby MTPS obsah a zobrazit uvnitř obsahu ovládacího prvku.  
   
-## <a name="see-also"></a>Viz také  
- [Vazba dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
+## <a name="see-also"></a>Viz také:  
+ [Vázání dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

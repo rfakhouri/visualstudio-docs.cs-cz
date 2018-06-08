@@ -1,5 +1,5 @@
 ---
-title: Přidání vlastních ovládacích prvků do okna zdroje dat
+title: Přidání vlastních ovládacích prvků do okna zdrojů dat
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,13 +19,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5db34de3244f7ee38ba4ef33c71b251f2bdbb6b0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: af6e0521fa2beb266d2022b73278bc6b07ae7dc3
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843933"
 ---
-# <a name="add-custom-controls-to-the-data-sources-window"></a>Přidání vlastních ovládacích prvků do okna zdroje dat
+# <a name="add-custom-controls-to-the-data-sources-window"></a>Přidání vlastních ovládacích prvků do okna zdrojů dat
 Když přetáhnete položky z **zdroje dat** okna návrhové ploše k vytvoření ovládacího prvku vázané na data, můžete vybrat typ ovládacího prvku, který vytvoříte. Každá položka v okně má rozevíracího seznamu, který zobrazuje ovládacích prvků, které můžete vybrat z. Sadu ovládacích prvků, které jsou spojené s každou položku je určen podle datový typ položky. Pokud ovládací prvek, který chcete vytvořit v seznamu nezobrazí, můžete podle pokynů v tomto tématu Přidání ovládacího prvku do seznamu.
 
  Další informace o výběru ovládací prvky vázané na data vytvoření pro položky v **zdroje dat** okně najdete v části [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
@@ -44,9 +45,9 @@ Když přetáhnete položky z **zdroje dat** okna návrhové ploše k vytvořen�
 
 3.  V rozevírací nabídce klikněte na **přizpůsobit**. Jeden z následujících dialogových otevře:
 
-    -   Pokud je otevřený, Návrhář formulářů Windows **přizpůsobení uživatelského rozhraní dat** stránky **možnosti** otevře se dialogové okno.
+    -   Pokud **Návrhář formulářů Windows** je otevřený, **přizpůsobení uživatelského rozhraní dat** stránky **možnosti** otevře se dialogové okno.
 
-    -   Pokud je otevřený, Návrhář WPF **přizpůsobit vazbu ovládacího prvku** otevře se dialogové okno.
+    -   Pokud **WPF Designer** je otevřený **přizpůsobit vazbu ovládacího prvku** otevře se dialogové okno.
 
 4.  V dialogovém okně vyberte datový typ z **datový typ** rozevíracího seznamu.
 
@@ -59,7 +60,7 @@ Když přetáhnete položky z **zdroje dat** okna návrhové ploše k vytvořen�
 5.  V **související ovládací prvky** zaškrtněte, každý ovládací prvek, který chcete, aby byly dostupné pro vybraný typ dat nebo zrušte výběr všech ovládacích prvků, které chcete odebrat ze seznamu.
 
     > [!NOTE]
-    >  Pokud ovládací prvek, který chcete vybrat nezobrazí v **související ovládací prvky** pole, je nutné přidat do seznamu ovládacího prvku. Další informace najdete v tématu [přidání ovládacích prvků do seznamu z související ovládací prvky pro datový typ](#addingcontrols).
+    >  Pokud ovládací prvek, který chcete vybrat nezobrazí v **související ovládací prvky** pole, je nutné přidat do seznamu ovládacího prvku. Další informace najdete v tématu [přidání ovládacích prvků do seznamu související ovládací prvky pro datový typ](#addingcontrols).
 
 6.  Click **OK**.
 
@@ -68,7 +69,7 @@ Když přetáhnete položky z **zdroje dat** okna návrhové ploše k vytvořen�
      Ovládací prvky, které jste vybrali v **související ovládací prvky** pole se nyní zobrazí v rozevírací nabídce pro položku.
 
 ##  <a name="addingcontrols"></a> Přidání ovládacích prvků do seznamu přidružených ovládacích prvcích pro datový typ
- Pokud chcete přiřadit ovládací prvek s datovým typem, ale ovládací prvek v nezobrazí **související ovládací prvky** pole ovládacího prvku musíte přidat do seznamu. Ovládací prvek musí být umístěn v aktuálním řešení nebo v odkazované sestavení. Také musí být k dispozici v **sada nástrojů**, a atribut, který určuje chování vazby dat ovládacího prvku.
+ Pokud chcete přiřadit ovládací prvek s datovým typem, ale ovládací prvek v nezobrazí **související ovládací prvky** pole ovládacího prvku musíte přidat do seznamu. Ovládací prvek musí být umístěn v aktuálním řešení nebo v odkazované sestavení. Také musí být k dispozici v **sada nástrojů** a mít atribut, který určuje chování vazby dat ovládacího prvku.
 
 #### <a name="to-add-controls-to-the-list-of-associated-controls"></a>K přidávání ovládacích prvků do seznamu přidružených ovládacích prvcích
 
@@ -82,13 +83,13 @@ Když přetáhnete položky z **zdroje dat** okna návrhové ploše k vytvořen�
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implementace tohoto atributu na ovládací prvky, které zobrazují seznamy (nebo tabulky) dat, například <xref:System.Windows.Forms.DataGridView>.|
     |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implementace tohoto atributu na ovládací prvky, které zobrazují seznamy (nebo tabulky), data, ale taky potřeba k dispozici jeden sloupec nebo vlastnost, například <xref:System.Windows.Forms.ComboBox>.|
 
-2.  Pro Windows Forms na **možnosti** dialogové okno, otevřete **přizpůsobení uživatelského rozhraní dat** stránky. Nebo WPF, otevřete **přizpůsobit vazbu ovládacího prvku** dialogové okno. Další informace najdete v tématu [přizpůsobení seznamu vazbu prvky pro datový typ](#customizinglist).
+2.  Pro Windows Forms na **možnosti** dialogové okno, otevřete **přizpůsobení uživatelského rozhraní dat** stránky. Nebo WPF, otevřete **přizpůsobit vazbu ovládacího prvku** dialogové okno. Další informace najdete v tématu [přizpůsobení seznamu vazbu ovládacích prvků pro datový typ](#customizinglist).
 
 3.  V **související ovládací prvky** pole ovládací prvek, který jste právě přidali **sada nástrojů** by se měla zobrazit.
 
     > [!NOTE]
     >  Seznam přidružených ovládacích prvcích lze přidat pouze ovládací prvky, které jsou umístěné v aktuálním řešení a v odkazované sestavení. (Ovládací prvky musí také implementovat jeden z atributů datové vazby v předchozí tabulce.) K vytvoření vazby dat vlastní ovládací prvek, který není k dispozici v **zdroje dat** okna, přetáhněte ovládací prvek z **sada nástrojů** do návrhová plocha a pak přetáhněte položka pro vazby z **dat Zdroje** okna do ovládacího prvku.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -1,6 +1,6 @@
 ---
-title: Oprávnění uživatele a Visual Studio
-ms.date: 11/04/2016
+title: Spustit jako správce
+ms.date: 06/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -14,55 +14,54 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08b12e09348a28276d0c5d2f375b26e75c1ac3c5
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 89ba7338645ab6cc421716832a3d6f424bb57dfc
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844388"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Oprávnění uživatele a Visual Studio
 
-Z důvodu bezpečnosti by měl být systém Visual Studio spuštěn s normálním uživatelským přístupem, kdykoli je to možné.
+Z důvodů zabezpečení byste měli spustit Visual Studio jako normální uživatelské kdykoli je to možné.
 
 > [!WARNING]
 > Je třeba zajistit, aby nebylo kompilováno, spouštěno nebo laděno jakékoli řešení systému Visual Studio, které nebylo získáno od důvěryhodné osoby nebo z důvěryhodného zdroje.
 
-V režimu normálního uživatele lze v integrovaném vývojovém prostředí IDE aplikace Visual Studio provádět téměř cokoli, ale pro provedení následujících úkolů je potřeba mít administrátorská oprávnění:
+Můžete to udělat téměř vše v prostředí Visual Studio IDE jako normální uživatel. Je třeba oprávnění správce pro dokončit následující úlohy:
 
 |Oblast|Úloha|Další informace|
 |----------|----------|--------------------------|
 |Instalace|Nainstalujte Visual Studio.|[Instalace sady Visual Studio](../install/install-visual-studio.md)|
-||Instalace, aktualizace nebo odebrání obsahu místní nápovědy|[Instalace a Správa místního obsahu](../ide/install-and-manage-local-content.md)|
-|Typy aplikací|Vývoj řešení pro službu SharePoint.|[Požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|  
-||Získání licence pro vývojáře [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Získat licenci vývojáře](http://go.microsoft.com/fwlink/?LinkID=241313)|
+||Instalace, aktualizovat nebo odebrat místní obsah nápovědy.|[Instalace a Správa místního obsahu nápovědy](../ide/install-and-manage-local-content.md)|
+|Typy aplikací|Vývoj řešení pro službu SharePoint.|[Požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|
 |Sada nástrojů|Přidání klasického modelu COM ovládacích prvků do **sada nástrojů**.|[Panel nástrojů](../ide/reference/toolbox.md)|
-|Doplňky|Instalace a používání doplňků, které byly vytvořeny pomocí klasického modelu COM v rozhraní IDE|[Vytváření doplňků a průvodců](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|
-|Sestavování|Použití událostí po sestavení, které registrují komponentu|[Vlastní kroky sestavení pochopit a události sestavení](/cpp/ide/understanding-custom-build-steps-and-build-events)|
-||Zahrnutí registračního kroku do sestavování projektů v jazyce C++|[Vlastní kroky sestavení pochopit a události sestavení](/cpp/ide/understanding-custom-build-steps-and-build-events)|
-|Ladění|Ladění aplikací spouštěných se zvýšenými oprávněními|[Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)|
-||Ladění aplikací, které běží pod jiným uživatelským účtem, jako jsou weby ASP.NET|[Ladění aplikací ASP.NET a AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
-||Ladění v zóně pro aplikace prohlížeče XAML (XBAP)|[Hostitel WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
-||Pomocí emulátoru k ladění projekty cloudových služeb pro Microsoft Azure.|[Ladění cloudové služby v sadě Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|
-||Konfigurace brány firewall pro vzdálené ladění|[Vzdálené ladění](../debugger/remote-debugging.md)|
+|Sestavování|Události po sestavení, které registraci komponenty použijte.|[Vlastní kroky sestavení pochopit a události sestavení](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+||Při sestavování projektů C++, zahrnují kroku registrace.||
+|Ladění|Ladění aplikace, které běží se zvýšenými oprávněními.|[Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)|
+||Ladění aplikace, které účet spustit v rámci jiného uživatele, jako webové stránky ASP.NET.|[Ladění aplikací ASP.NET a AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
+||Ladění pro aplikace prohlížeče XAML (XBAP) v zóně.|[WPF hostitele (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
+||Použití emulátoru k ladění projekty cloudových služeb pro Microsoft Azure.|[Ladění cloudové služby v sadě Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
+||Nastavení brány firewall pro vzdálené ladění.|[Vzdálené ladění](../debugger/remote-debugging.md)|
 |Nástroje pro měření výkonu|Profilace aplikace|[Průvodce začátečníka profilací výkonu](../profiling/beginners-guide-to-performance-profiling.md)|
-|Nasazení|Nasazení webové aplikace do Internetové informační služby (IIS) v místním počítači|[Nasadit webovou aplikaci ASP.NET do hostujícího zprostředkovatele pomocí sady Visual Studio nebo Visual Web Developer: nasazení do IIS jako testovacího prostředí](http://go.microsoft.com/fwlink/?LinkId=266478)|
->>>>>>> 346075117af3d2bd1fddd9c3aca24516a39fa6a3
+|Nasazení|Nasazení webové aplikace na Internetové informační služby (IIS) na místním počítači.|[Nasazení webové aplikace ASP.NET pomocí sady Visual Studio](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
 
 ## <a name="run-visual-studio-as-an-administrator"></a>Visual Studio spustit jako správce
 
-Sadu Visual Studio můžete spustit s oprávněními správce při každém spuštění rozhraní IDE nebo můžete upravit zástupce sady tak, aby se vždy spustila s oprávněními správce. Další informace naleznete v nápovědě pro Windows.
+Pokud potřebujete spustit sadu Visual Studio jako správce, otevřete prostředí IDE takto:
 
-### <a name="run-visual-studio-with-administrative-permissions"></a>Visual Studio spustit s oprávněním správce
-
-Tyto pokyny jsou určené pro Windows 10. Jsou podobné pro jiné verze systému Windows.
+> [!NOTE]
+> Tyto pokyny jsou určené pro Windows 10. Jsou podobné pro jiné verze systému Windows.
 
 1. Otevřete **spustit** nabídce a posuňte se Visual Studio 2017.
 
 1. Klikněte pravým tlačítkem nebo kontextu nabídce **Visual Studio 2017**, vyberte **Další** > **spustit jako správce**.
 
-     Při spuštění sady Visual Studio, **(správce)** se zobrazí po název produktu v záhlaví.
+   Při spuštění sady Visual Studio, **(správce)** se zobrazí po název produktu v záhlaví.
 
-## <a name="see-also"></a>Viz také
+Můžete také upravit zástupce aplikace vždy spustit s oprávněním správce.
+
+## <a name="see-also"></a>Viz také:
 
 - [Port, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Instalace sady Visual Studio](../install/install-visual-studio.md)
