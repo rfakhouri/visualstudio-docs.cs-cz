@@ -10,13 +10,15 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e58aab3f09c3f79a3c62760a7a39f5616df884d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa36dd0f213cffa1c5f44915de6794ecc6efa0c0
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237507"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) s aplikacemi Unity
+
 Vývoj aplikací pro moderní platformy zahrnuje mnoho další aktivity než právě psaní kódu. Tyto aktivity, označuje jako DevOps (vývoj + operations) span úplný životní cyklus aplikace a zahrnují plánování a sledování práce, navrhování a implementace kódu, Správa úložiště zdrojového kódu spuštění sestavení, Správa nepřetržité integrace nasazení, testování (včetně testování částí a testy uživatelského rozhraní), spuštěné různé formy diagnostiky v vývoj a provozní prostředí a monitorování výkonu a uživatel chování aplikace v reálném čase pomocí telemetrie a analýzy.
 
  Visual Studio společně s Visual Studio Team Services a serveru Team Foundation Server poskytují řadu možností DevOps, také označované jako správa životního cyklu aplikací nebo ALM. Řada z nich se vztahují na projekty a platformy, včetně hry a dokonalé grafické aplikace vytvořené s Unity – zejména v případě, že pomocí jazyka C# jako skriptovací jazyk. Ale protože Unity má svou vlastní vývojového prostředí a modul runtime, celou řadu funkcí ALM být použity jako u jiných typů projekty vytvořené v sadě Visual Studio.
@@ -24,9 +26,10 @@ Vývoj aplikací pro moderní platformy zahrnuje mnoho další aktivity než pr�
  Následující tabulky identifikuje způsob, jakým Visual Studio ALM funkce použít nebo nechcete použít při práci s Unity. Naleznete v dokumentaci propojené podrobnosti o funkce sami.
 
 ## <a name="agile-tools"></a>Nástroje pro agilní
- Použití odkazu: **[pracovní](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (pomocí Visual Studio Team Services nebo sady TFS, včetně Team Explorer Everywhere)
 
- Obecný komentář: všechny plánování a sledování funkce jsou nezávislé na kódování v jazycích jazyky a typu projektu.
+Použití odkazu: [o agilní nástroje a Agile projektu správy](/vsts/work/backlogs/overview?view=vsts) (pomocí Visual Studio Team Services nebo sady TFS, včetně Team Explorer Everywhere)
+
+Obecný komentář: všechny plánování a sledování funkce jsou nezávislé na kódování v jazycích jazyky a typu projektu.
 
 |Funkce|Podporované s Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
@@ -37,9 +40,10 @@ Vývoj aplikací pro moderní platformy zahrnuje mnoho další aktivity než pr�
 |Vytvoření sestavy a vizualizace průběhu|Ano||
 
 ## <a name="modeling"></a>Modelování
- Použití odkazu:  **[analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)**
 
- Obecný komentář: I když tyto funkce návrhu jsou buď bez ohledu na kódování jazyka nebo práci s jazyky rozhraní .NET, jako je C#, pracují na zlepší tradiční aplikace s hierarchií objektu a vztahy tříd. Navrhování hru v rámci Unity zahrnuje různé zlepší zcela, konkrétně vztahy grafické objekty, zvuky, shadery, skripty a tak dále. Z tohoto důvodu sady Visual Studio modelování diagram nástroje nejsou pro celý projekt Unity zvlášť důležité. Může být případně používán ke správě relací v rámci skripty jazyka C#, ale, který je součástí pouze jeden celek.
+Použití odkazu:  **[analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)**
+
+Obecný komentář: I když tyto funkce návrhu jsou buď bez ohledu na kódování jazyka nebo práci s jazyky rozhraní .NET, jako je C#, pracují na zlepší tradiční aplikace s hierarchií objektu a vztahy tříd. Navrhování hru v rámci Unity zahrnuje různé zlepší zcela, konkrétně vztahy grafické objekty, zvuky, shadery, skripty a tak dále. Z tohoto důvodu sady Visual Studio modelování diagram nástroje nejsou pro celý projekt Unity zvlášť důležité. Může být případně používán ke správě relací v rámci skripty jazyka C#, ale, který je součástí pouze jeden celek.
 
 |Funkce|Podporované s Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
@@ -56,9 +60,9 @@ Vývoj aplikací pro moderní platformy zahrnuje mnoho další aktivity než pr�
 
 |Funkce|Podporované s Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
-|[Použití správy verzí Team Foundation](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) nebo Visual Studio Team Services|Ano|Unity projekty jsou jednoduše kolekce souborů, které se dají umístit do verze řízení systémů jako jiného projektu, ale existuje několik zvláštní požadavky popsané za touto tabulkou.|
-|[Začínáme s Gitem v Team Services](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Ano|V části poznámky pod tabulkou.|
-|[Zlepšení kvality kódu](/visualstudio/test/improve-code-quality)|Ano||
+|[Použití správy verzí Team Foundation](/vsts/tfvc/overview?view=vsts) nebo Visual Studio Team Services|Ano|Unity projekty jsou jednoduše kolekce souborů, které se dají umístit do verze řízení systémů jako jiného projektu, ale existuje několik zvláštní požadavky popsané za touto tabulkou.|
+|[Začínáme s Gitem v Team Services](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Ano|V části poznámky pod tabulkou.|
+|[Zlepšení kvality kódu](../test/improve-code-quality.md)|Ano||
 |[Nalezení změn kódu a další historie](../ide/find-code-changes-and-other-history-with-codelens.md)|Ano||
 |[Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)|Ano||
 
@@ -94,7 +98,7 @@ Vývoj aplikací pro moderní platformy zahrnuje mnoho další aktivity než pr�
 
 ## <a name="improve-code-quality"></a>Zlepšení kvality kódu
 
-Použití odkazu:  **[zlepšení kvality kódu](/visualstudio/test/improve-code-quality)**
+Použití odkazu:  **[zlepšení kvality kódu](../test/improve-code-quality.md)**
 
 |Funkce|Podporované s Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
@@ -105,7 +109,8 @@ Použití odkazu:  **[zlepšení kvality kódu](/visualstudio/test/improve-code-
 |[Analýza problémů s pamětí rozhraní .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Ne|Nástroje sady Visual Studio nemusí háky do Mono framework (jako je použité ve Unity) pro vytváření profilů. Použití [Unity profileru](http://docs.unity3d.com/Manual/Profiler.html) (Unity dokumentaci).|
 
 ## <a name="release-management"></a>Správa vydaných verzí
- Použití odkazu:  **[automatizace nasazování pomocí správy verzí](https://msdn.microsoft.com/library/vs/alm/release/overview)**
+
+Použití odkazu: [sestavení a verze – přehled](/vsts/pipelines/overview?view=vsts)
 
 |Funkce|Podporované s Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
@@ -114,7 +119,8 @@ Použití odkazu:  **[zlepšení kvality kódu](/visualstudio/test/improve-code-
 |Nahrajte do obchodu s aplikacemi|Částečné|Rozšíření jsou k dispozici, můžete automatizovat tohoto procesu pro některé obchody s aplikacemi.  V tématu [rozšíření pro Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), například [rozšíření pro Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>Monitorování s HockeyApp
- Použití odkazu:  **[monitorování s HockeyApp](https://www.hockeyapp.net/features/)**
+
+Použití odkazu:  **[monitorování s HockeyApp](https://www.hockeyapp.net/features/)**
 
 |Funkce|Podporované s Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|

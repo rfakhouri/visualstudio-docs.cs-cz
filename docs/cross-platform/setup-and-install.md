@@ -10,13 +10,14 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 8ae03dfe4ed2e72015ca1f7d91153d862f44ce40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9e782c66f1201fdf8105cc7ef4fdc266c9d56db
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237796"
 ---
-# <a name="setup-and-install"></a>Nastavení a instalaci
+# <a name="setup-and-install"></a>Nastavení a instalace
 
 Vytvářet nativní aplikace pro iOS, Android a Windows aplikace z běžných C# / kód .NET základní pomocí Xamarin, potřebujete následující hardware a software:
 
@@ -84,7 +85,7 @@ Při instalaci, můžete pokračovat s pokyny pro instalaci Mac a projít [Dalš
 
 2.  Stáhněte a nainstalujte Xcode z [ https://developer.apple.com/xcode/ ](https://developer.apple.com/xcode/), a přidejte Apple ID, jak je popsáno na [přidání si účet na Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
 
-3.  Stáhněte a nainstalujte Visual Studio pro Mac podle pokynů [instalační program a nainstalujte Visual Studio pro Mac](/visualstudio/mac/installation.md).
+3.  Stáhněte a nainstalujte Visual Studio pro Mac podle pokynů [instalační program a nainstalujte Visual Studio pro Mac](/visualstudio/mac/installation).
 
 4.  Po dokončení instalace Xamarin v počítačích se systémy Windows a Mac, postupujte podle pokynů [připojení k počítači Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) , aby mohl pracovat s iOS a Mac ze sady Visual Studio v počítači s Windows.
 

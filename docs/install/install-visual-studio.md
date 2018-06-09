@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4a75ba456184ffe48cb59f77668625acf673d1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: d6ebc81e1aed2cd007bf34a5e9145c0b995517fd
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238235"
 ---
 # <a name="install-visual-studio-2017"></a>Nainstalovat Visual Studio 2017
 
@@ -49,12 +50,12 @@ Dotazy týkající se staršími verzemi sady Visual Studio vedle sebe s Visual 
 Další stáhněte si soubor zaváděcího nástroje Visual Studio. Uděláte to tak, klikněte na následující tlačítko, vyberte edici Visual Studio 2017, který chcete, klikněte na tlačítko **Uložit**a potom klikněte na **otevřít složku**.
 
  > [!div class="button"]
- > [Stažení sady Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+ > [Stažení sady Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 |         |         |
 |---------|---------|
-|  ![film ikonu fotoaparátu pro video](media/video-icon.png "přehrát video")  |    [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171) na stažení souboru zaváděcího nástroje sady Visual Studio a vyberte edice Visual Studia, která je pro vás nejvhodnější. |
+|  ![Ikona filmové kamery pro video](media/video-icon.png "Sledovat video")  |    [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171) na stažení souboru zaváděcího nástroje sady Visual Studio a vyberte edice Visual Studia, která je pro vás nejvhodnější. |
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>Krok 3 – instalace instalační program sady Visual Studio
 
@@ -93,7 +94,7 @@ Po instalaci instalační program vám pomůže ho svou instalaci přizpůsobit 
 
 |         |         |
 |---------|---------|
-|  ![film ikonu fotoaparátu pro video](media/video-icon.png "přehrát video")  |    [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171) o tom, jak nainstalovat Instalační program Visual Studio a nainstalujte zatížení. |
+|  ![Ikona filmové kamery pro video](media/video-icon.png "Sledovat video")  |    [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171) o tom, jak nainstalovat Instalační program Visual Studio a nainstalujte zatížení. |
 
 ## <a name="step-5---select-individual-components-optional"></a>Krok 5 – vyberte jednotlivé součásti (volitelné)
 
@@ -103,7 +104,7 @@ Pokud nechcete použít funkci úlohy k přizpůsobení instalace Visual Studia,
 
   |         |         |
   |---------|---------|
-  |  ![film ikonu fotoaparátu pro video](media/video-icon.png "přehrát video")  |   [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171) o postupu instalace jednotlivých součástí s použitím instalační program Visual Studio. |
+  |  ![Ikona filmové kamery pro video](media/video-icon.png "Sledovat video")  |   [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171) o postupu instalace jednotlivých součástí s použitím instalační program Visual Studio. |
 
 ## <a name="step-6---install-language-packs-optional"></a>Krok 6: instalace jazykové sady (volitelné)
 
@@ -113,7 +114,7 @@ Ve výchozím nastavení instalační program pokusí podle jazyka operačního 
 
   |         |         |
   |---------|---------|
-  |  ![film ikonu fotoaparátu pro video](media/video-icon.png "přehrát video")  |   [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171) o tom, jak nainstalovat jazykovou sadu pomocí Instalační program Visual Studio. |
+  |  ![Ikona filmové kamery pro video](media/video-icon.png "Sledovat video")  |   [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171) o tom, jak nainstalovat jazykovou sadu pomocí Instalační program Visual Studio. |
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>Změnit jazyk instalační program z příkazového řádku
 
@@ -148,7 +149,7 @@ Tady je několik další možnosti podpory:
 * Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Update Visual Studio 2017](update-visual-studio.md)
 * [Upravit Visual Studio 2017](modify-visual-studio.md)

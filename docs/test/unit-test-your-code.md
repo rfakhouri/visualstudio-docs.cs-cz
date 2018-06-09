@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ea1d186f280c41d5330b3860f5b0802fb001bf84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 487c5b4c730a4b49188857c2681aae6ff87a61e5
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237328"
 ---
 # <a name="unit-test-your-code"></a>Testování částí kódu
 
@@ -58,6 +59,6 @@ V následujících tématech naleznete informace týkající se vytváření tes
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Popisuje UnitTesting názvů, který poskytuje atributy, výjimky, vyhodnotí a jiné třídy testování částí tuto podporu.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> Popisuje UnitTesting.Web názvů, který rozšiřuje obor názvů UnitTesting tím, že poskytuje podporu pro ASP.NET a webové testy služby.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Zlepšení kvality kódu](/visualstudio/test/improve-code-quality)
+- [Zlepšení kvality kódu](../test/improve-code-quality.md)

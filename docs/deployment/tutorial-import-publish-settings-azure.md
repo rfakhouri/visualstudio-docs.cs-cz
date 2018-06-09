@@ -1,6 +1,6 @@
 ---
 title: Publikování v Azure pomocí importu nastavení publikování
-ms.custom: Create and import a publishing profile to deploy an application from Visual Studio to Azure App Service
+ms.description: Create and import a publishing profile to deploy an application from Visual Studio to Azure App Service
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
 ms.topic: tutorial
@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88dc37e555f6ceb30584d4a1c17b96506219631a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ccf8d30907e236ca1f3047b488a5522fd2631295
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766737"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237975"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby Azure App Service pomocí importu nastavení publikování v sadě Visual Studio
 
 Můžete použít **publikovat** nástroj k importu nastavení publikování a pak nasadíte aplikaci. V tomto článku používáme nastavení publikování pro služby Azure App Service, ale můžete podobný postup při importu nastavení publikování z [IIS](../deployment/tutorial-import-publish-settings-iis.md). V některých scénářích použití publikování, který profil nastavení může být rychlejší než ruční konfigurace nasazení se službou pro každou instalaci sady Visual Studio.
 
-Tento postup platí pro aplikace ASP.NET, .NET Core a ASP.NET Core v sadě Visual Studio. Můžete také importovat nastavení publikování pro [Python](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio) aplikace. Kroky odpovídají Visual Studio 2017 verze 15,6 operací.
+Tento postup platí pro aplikace ASP.NET, .NET Core a ASP.NET Core v sadě Visual Studio. Můžete také importovat nastavení publikování pro [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) aplikace. Kroky odpovídají Visual Studio 2017 verze 15,6 operací.
 
 V tomto kurzu se naučíte:
 
@@ -42,7 +42,7 @@ Soubor nastavení publikování (*\*.publishsettings*) je jiný než profil publ
 
     Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
-* Vytvoření služby Azure App Service. Podrobné pokyny najdete v tématu [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). 
+* Vytvoření služby Azure App Service. Podrobné pokyny najdete v tématu [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Vytvořte nový projekt ASP.NET v sadě Visual Studio
 

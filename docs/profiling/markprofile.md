@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00b26b89232b0a0c1c01c6e3c5fe5cbca8cdb3eb
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 98530a790963d1c7fc60742dda4bb16e14a28ab4
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238157"
 ---
 # <a name="markprofile"></a>MarkProfile
-`MarkProfile` Metoda vloží značku profil v souboru .vsp. Profilace pro přístup z více vláken obsahující `MarkProfile` funkce musí být ON pro značku, která má být vložen.  
+`MarkProfile` Metoda vloží značku profil v. *Vsp* souboru. Profilace pro přístup z více vláken obsahující `MarkProfile` funkce musí být ON pro značku, která má být vložen.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,7 +33,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
   
  Značky pro vložení. Značky musí být větší než nebo rovno 0 (nula).  
   
-## <a name="property-valuereturn-value"></a>Hodnota vlastnosti / návratová hodnota  
+## <a name="property-valuereturn-value"></a>Vlastnost Hodnota/Návratová hodnota  
  Funkce označuje úspěch či neúspěch pomocí **PROFILE_COMMAND_STATUS** výčtu. Vrácená hodnota může být jeden z následujících akcí:  
   
 |Enumerátor|Popis|  
@@ -46,22 +47,22 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_OK|MARK_OK je vrácen do indikuje úspěšné provedení.|  
   
 ## <a name="remarks"></a>Poznámky  
- Hodnota značky je vložen do souboru .vsp při každém spuštění kódu pokud je profilovaný vlákno obsahující MarkProfile funkce. MarkProfile můžete volat vícekrát.  
+ Hodnota značky vložena do. *vsp* souboru při každém spuštění kódu pokud je profilovaný vlákno obsahující MarkProfile funkce. MarkProfile můžete volat vícekrát.  
   
- Profil značky jsou globální v oboru. Například profil značka vložen do jedno vlákno slouží k označení počáteční nebo koncové segmentu dat v jakékoli vlákno v souboru .vsp.  
+ Profil značky jsou globální v oboru. Například profil značka vložen do jedno vlákno slouží k označení počáteční nebo koncové segmentu dat v jakékoli vlákno v. *vsp* souboru.  
   
  Profilování stavu podprocesu, který obsahuje funkci profilu značky musí být v značky a komentáře vložit příkaz Označit nebo s funkcí rozhraní API (CommentMarkAtProfile, CommentMarkProfile nebo MarkProfile).  
   
 > [!IMPORTANT]
 >  Metoda MarkProfile musí být použit s pouze profilace instrumentace.  
   
-## <a name="net-framework-equivalent"></a>Ekvivalent v rozhraní .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+## <a name="net-framework-equivalent"></a>Ekvivalent v rozhraní .NET framework  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informace o funkci  
- Hlavičky: V VSPerf.h deklarována  
+ Záhlaví: Deklarované v *VSPerf.h*  
   
- Import knihovny: VSPerf.lib  
+ Import knihovny: *VSPerf.lib*  
   
 ## <a name="example"></a>Příklad  
  Následující kód ukazuje MarkProfile funkce.  
@@ -98,5 +99,5 @@ void ExerciseMarkProfile()
 }  
 ```  
   
-## <a name="see-also"></a>Viz také  
- [Referenční dokumentace rozhraní API sady Visual Studio Profiler (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Viz také:  
+ [Visual Studio profiler referenční dokumentace rozhraní API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)

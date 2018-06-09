@@ -18,17 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c53dcbec5d41b6aa93eef115bba966076fcfda2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ea9b35192eb2584f92856e5ab9c50eac22da85f7
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237224"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Postupy: připojení a odpojení nástroje pro sledování výkonu ke spuštěným procesům
 Profileru lze připojit k nebo odebrat ze spuštěných procesů usnadnění vzorkování a shromáždit data výkonu. Tuto metodu můžete použít k profilu procesu, když budete chtít vyhnout shromažďování dat o čas načítání aplikace nebo sledovat výkon proces po jeho dosáhne určitý stav.  
   
 > [!NOTE]
->  Následující postup se vztahuje k připojení a odpojení procesy uvnitř [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] integrované environmnent vývoj (IDE). Informace o tom, jak pomocí nástroje příkazového řádku najdete v tématu [profilace z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md). Informace o tom, jak profilu služby najdete v tématu [profilace služeb](../profiling/command-line-profiling-of-services.md).  
+>  Následující postup se vztahuje k připojení a odpojení procesy uvnitř [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] integrované environmnent vývoj (IDE). Informace o tom, jak pomocí nástroje příkazového řádku najdete v tématu [profil z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md). Informace o tom, jak profilu služby najdete v tématu [profilu služby](../profiling/command-line-profiling-of-services.md).  
   
  Procesy, které jsou k dispozici pro profil závisí na přístupová oprávnění uživatelů, které nastavil správce počítače. Uživatelský účet, třeba mít oprávnění pro některé z následujících:  
   
@@ -38,7 +39,7 @@ Profileru lze připojit k nebo odebrat ze spuštěných procesů usnadnění vzo
   
 -   Odepřít přístup k profilace pro každého.  
   
- Další informace najdete v tématu [profilování a zabezpečení systému Windows Vista](../profiling/profiling-and-windows-vista-security.md) a možnosti správce v [VSPerfCmd](../profiling/vsperfcmd.md).  
+ Další informace najdete v tématu [profilování a Windows Vista zabezpečení](../profiling/profiling-and-windows-vista-security.md) a možnosti správce v [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Pro připojení k spuštěných procesů  
   
@@ -60,9 +61,9 @@ Profileru lze připojit k nebo odebrat ze spuštěných procesů usnadnění vzo
   
 3.  Klikněte na tlačítko **odpojit**.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Řízení shromažďování dat](../profiling/controlling-data-collection.md)   
  [Přehled výkonnostní relace](../profiling/performance-session-overview.md)   
  [Postupy: spuštění a ukončení shromažďování dat výkonu](../profiling/how-to-start-and-end-performance-data-collection.md)   
- [Profilování a zabezpečení systému Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
+ [Profilace a zabezpečení systému Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)
