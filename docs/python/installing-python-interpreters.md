@@ -1,7 +1,7 @@
 ---
 title: Výběr a instalace překladače Python
 description: Úplný seznam překladače Python, které jsou podporovány v sadě Visual Studio s stručné pokyny k vyhledávání jejich instalační programy.
-ms.date: 02/20/2018
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d5930ca6e2c416a4b212feb8662c854f9cb30c3d
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851848"
 ---
 # <a name="installing-python-interpreters"></a>Instalace překladače Python
 
@@ -25,7 +26,7 @@ Můžete také ručně nainstalovat všechny překladače uvedené v následují
 
 Pro **Visual Studio 2015 a starší**, je nutné ručně nainstalovat jeden z překladače.
 
-Visual Studio (všechny verze) automaticky rozpozná všechny nainstalované překladač Pythonu a jeho prostředí kontrolou registru (následující [období 514 - Python registrace v registru Windows](https://www.python.org/dev/peps/pep-0514/)).
+Visual Studio (všechny verze) automaticky rozpozná, kterých kontrolou registru podle nainstalované překladač Pythonu a jeho prostředí [období 514 - Python registrace v registru Windows](https://www.python.org/dev/peps/pep-0514/). Instalace jazyka Python se většinou nacházejí v rámci `HKEY_LOCAL_MACHINE\SOFTWARE\Python` (32 bitů) a `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` (64 bitů), pak v rámci uzlů pro distribuci jako například "PythonCore" (CPython) a "ContinuumAnalytics" (Anaconda).
 
 Pokud Visual Studio nerozpozná nainstalované prostředí, přečtěte si téma [ručně identifikovat stávajícího prostředí](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
@@ -56,7 +57,7 @@ Pokud přesouváte existující překladač do nového umístění pomocí syst�
 
 Následující tento proces zajišťuje, že jsou správně aktualizovat položky registru, které identifikují překladač na umístění, které používá Visual Studio. Pomocí instalačního programu také obstará žádné vedlejší účinky, které mohou existovat.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Správa prostředí Python](managing-python-environments-in-visual-studio.md)
 - [Výběr interpretu pro projekt](selecting-a-python-environment-for-a-project.md)

@@ -21,21 +21,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5ecae69e83e86e851705bd990d5e5887400a7104
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50e40b1a1b336f4547ed7eb446837cb0f300397d
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237611"
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Profilace výkonu aplikací služby SharePoint
- 
+
 Pokud vaše aplikace služby SharePoint se provádí pomalu nebo neefektivnímu, slouží k identifikaci problematické kódu a další elementy profilování funkce v sadě Visual Studio. Pomocí testování funkce zatížení, můžete určit, jakým způsobem aplikace SharePoint provádí vytížený, například když mnoho uživatelů současně přístup k aplikaci. Spuštěním testů výkonnosti webu budete vyhodnocovat, jakým způsobem aplikace provádí na webu. Pomocí programových testů uživatelského rozhraní, můžete ověřit, zda celou aplikaci služby SharePoint, včetně jeho uživatelské rozhraní, funguje správně. Použijete-li tyto testy společně, mohou pomoci identifikovat problémy s výkonem, před nasazením aplikace.
 
 ## <a name="profiling-tools-overview"></a>Přehled nástrojů pro profilaci
 
 Profilace odkazuje na proces sledování a zaznamenávání výkonu chování aplikace při jeho spuštění. Podle profilace aplikace, můžete odkrýt problémy, třeba kritická místa, neefektivní kód a problémy přidělení paměti, které způsobit selhání aplikací pracovat pomalu nebo použít příliš mnoho paměti. Například můžete profilace k identifikaci hotspotům ve vašem kódu, které jsou segmenty kódu, které se často nazývají a může zpomalit celkový výkon vaší aplikace. Po identifikaci hotspotům, můžete často optimalizovat nebo je odstranit.
 
-Několik nástrojů pro profilaci v integrované vývojové prostředí (IDE) slouží k identifikaci a najděte tyto druhy problémů s výkonem. Tyto nástroje fungovat stejným způsobem jako pro projekty SharePoint, stejně jako u jiných typů projektů sady Visual Studio. Průvodce profilace výkonu nástrojů pro vás provede Vytvoření výkonnostní relace, který používá testy, které zadáte. Výkonnostní relace je sada konfiguračních dat, který se používá pro shromažďování informací o výkonu z aplikace, spolu s výsledky jeden nebo více profilování spustí. Výkonnostní relace jsou uložené ve složce projektu a lze je zobrazit v **prohlížeč výkonu**. Další informace najdete v tématu [metody kolekce údajů o výkonu Principy](/visualstudio/profiling/understanding-performance-collection-methods).
+Několik nástrojů pro profilaci v integrované vývojové prostředí (IDE) slouží k identifikaci a najděte tyto druhy problémů s výkonem. Tyto nástroje fungovat stejným způsobem jako pro projekty SharePoint, stejně jako u jiných typů projektů sady Visual Studio. Průvodce profilace výkonu nástrojů pro vás provede Vytvoření výkonnostní relace, který používá testy, které zadáte. Výkonnostní relace je sada konfiguračních dat, který se používá pro shromažďování informací o výkonu z aplikace, spolu s výsledky jeden nebo více profilování spustí. Výkonnostní relace jsou uložené ve složce projektu a lze je zobrazit v **prohlížeč výkonu**. Další informace najdete v tématu [metody kolekce údajů o výkonu Principy](../profiling/understanding-performance-collection-methods.md).
 
 Po vytvoření a spuštění profilu analýzy ve vaší aplikaci, sestava obsahuje podrobné informace o jeho výkon. Tato sestava může být položky jako např graf využití procesoru určitou dobu, hierarchické funkce zásobník volání nebo volání stromu. Přesný obsah sestavy se může lišit v závislosti na typu test, který spouštíte, jako je například vzorkování nebo instrumentace. Další informace najdete v tématu [přehled sestavy nástrojů pro profilaci](http://go.microsoft.com/fwlink/?LinkId=224689).
 
@@ -58,7 +59,7 @@ Testy výkonnosti webu simulaci, jak koncový uživatel může komunikovat s apl
 
 ## <a name="testing-user-interfaces"></a>Testování uživatelského rozhraní
 
-Programové testy uživatelského rozhraní automaticky jednotky aplikace SharePoint jeho uživatelském rozhraní (UI). Tyto testy tématech ovládacích prvků uživatelského rozhraní, jako je například tlačítka a nabídky, chcete-li ověřit, že fungují správně. Tento druh testování je obzvláště užitečné, pokud se ověření nebo jiné logiky provádí v uživatelském rozhraní, například na webové stránce. Programové testy uživatelského rozhraní můžete použít také k automatizaci manuálních testů. Vytváříte programové testy uživatelského rozhraní pro vaše aplikace SharePoint stejným způsobem, jako je vytváření testů pro jiné typy aplikací. Další informace najdete v tématu [testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests).
+Programové testy uživatelského rozhraní automaticky jednotky aplikace SharePoint jeho uživatelském rozhraní (UI). Tyto testy tématech ovládacích prvků uživatelského rozhraní, jako je například tlačítka a nabídky, chcete-li ověřit, že fungují správně. Tento druh testování je obzvláště užitečné, pokud se ověření nebo jiné logiky provádí v uživatelském rozhraní, například na webové stránce. Programové testy uživatelského rozhraní můžete použít také k automatizaci manuálních testů. Vytváříte programové testy uživatelského rozhraní pro vaše aplikace SharePoint stejným způsobem, jako je vytváření testů pro jiné typy aplikací. Další informace najdete v tématu [testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md).
 
 ## <a name="related-topics"></a>Související témata
 
@@ -66,10 +67,10 @@ Programové testy uživatelského rozhraní automaticky jednotky aplikace ShareP
 |-----------|-----------------|
 |[Návod: Profilace aplikace SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Demonstruje postup proveďte v aplikace SharePoint analýzu profil vzorkování.|
 |[Testování výkonu aplikace před verzí](https://www.visualstudio.com/docs/test/performance-testing/run-performance-tests-app-before-release)|Popisuje, jak vytvořit zátěžové testy, které vám pomůžou aplikací služby SharePoint zátěžový test.|
-|[Testování částí kódu](/visualstudio/test/unit-test-your-code)|Popisuje, jak najít logické chyby v kódu pomocí testování částí.|
-|[Testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|Popisuje postup testování uživatelského rozhraní aplikací služby SharePoint.|
+|[Testování částí kódu](../test/unit-test-your-code.md)|Popisuje, jak najít logické chyby v kódu pomocí testování částí.|
+|[Testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)|Popisuje postup testování uživatelského rozhraní aplikací služby SharePoint.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-[Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-[Zlepšení kvality kódu](/visualstudio/test/improve-code-quality)
+- [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Zlepšení kvality kódu](../test/improve-code-quality.md)

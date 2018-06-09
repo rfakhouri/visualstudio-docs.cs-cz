@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fa7c836ba27202cff04b846c1e5d744ff0493f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ef9d4416cdb3e1ea0d7f50b1c8baeca37ac8b15e
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238001"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn a GlobalOff
-VSPerfCmd.exe **GlobalOff** a **GlobalOn** možnosti pozastavení a obnovení profilace pro všechny procesy a vláken v profilaci relaci příkazového řádku.  
+*VSPerfCmd.exe* **GlobalOff** a **GlobalOn** možnosti pozastavení a obnovení profilace pro všechny procesy a vláken v profilaci relaci příkazového řádku.  
   
- Můžete zadat **GlobalOn** a **GlobalOff** jako pouze možnosti příkazového řádku VSPerfCmd.exe, nebo můžete zahrnout do příkazové řádky, které také obsahují **spustit**, **Spusťte**, nebo **Attach** možnosti.  
+ Můžete zadat **GlobalOn** a **GlobalOff** jako pouze možnosti v *VSPerfCmd.exe* příkazového řádku, nebo můžete zahrnout do příkazové řádky, které také obsahují  **Spustit**, **spusťte**, nebo **Attach** možnosti.  
   
  **GlobalOn** a **GlobalOff** může být spojen s **ProcessOn**, **ProcessOff**, **ThreadOn**a  **ThreadOff** možnosti.  
   
@@ -31,7 +32,7 @@ VSPerfCmd.exe **GlobalOff** a **GlobalOn** možnosti pozastavení a obnovení pr
   
 -   **GlobalOn** okamžitě Nastaví globální počet spuštění a zastavení na 1 a proto obnoví profilace.  
   
- Další informace najdete v tématu [profilace rozhraní API nástroje](../profiling/profiling-tools-apis.md).  
+ Další informace najdete v tématu [rozhraní API nástroje pro profilaci](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -82,8 +83,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Vsperfcmd –](../profiling/vsperfcmd.md)   
- [Profilace samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilace služeb](../profiling/command-line-profiling-of-services.md)
+ [Profil samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profil služby](../profiling/command-line-profiling-of-services.md)

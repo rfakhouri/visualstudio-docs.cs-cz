@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b59072f17ecfa810bec422770aeff24e0d8e2d99
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8fb5534d376cf1a0c60b20080df8c8bfc6ad6689
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851822"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Určete, zda chcete ladit pouze uživatelského kódu pomocí pouze můj kód v sadě Visual Studio
 Můžete nakonfigurovat Visual Studio automaticky krok přes systému, framework a jiná volání neuživatelských a sbalit těchto volání v okně zásobník volání. Funkce, která povolí nebo zakáže toto chování se nazývá *pouze můj kód*. Toto téma popisuje, jak použít pouze můj kód v projektu C#, Visual Basic, C++ a JavaScript.
@@ -82,7 +83,7 @@ Pro většinu programovacích jazyků je ve výchozím nastavení povolená pouz
   
  Ve výchozím nastavení, pouze funkce zadaný v `*.natstepfilter` soubory `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` složky jsou považovány za bez uživatelského kódu.  
   
- Můžete vytvořit vlastní `.natstepfilter` a `.natjmc` přizpůsobit posílení a chování okno zásobník volání v `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
+ Můžete vytvořit vlastní `.natstepfilter` a `.natjmc` přizpůsobit posílení a chování okno zásobník volání v `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers`.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Krokování s chování  
  Pokud jste **Krokovat s vnořením** (klávesové zkratky: F11) neuživatelských kód z uživatelského kódu, ladicí program přes kód na další řádek uživatelského kódu. Pokud jste **Krokovat s Vystoupením** (klávesové: Shift + F11), ladicí program spouští na další řádek uživatelského kódu. Pokud je zjištěna žádná uživatelského kódu, pak provádění pokračuje v až aplikace ukončí, je stiskněte tlačítko zarážku nebo dojde k výjimce.  
@@ -97,7 +98,7 @@ Pro většinu programovacích jazyků je ve výchozím nastavení povolená pouz
   
 -   Zadat jiný uživatelský kód pro všechny uživatele počítače Visual Studio, přidejte soubor .natstepfilter `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` složky.  
   
--   Pokud chcete zadat jiný uživatelský kód pro jednotlivé uživatele, přidání .natstepfilter soubor `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` složky.  
+-   Pokud chcete zadat jiný uživatelský kód pro jednotlivé uživatele, přidání .natstepfilter soubor `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` složky.  
   
  .natstepfilter soubory jsou soubory xml s touto syntaxí:  
   
@@ -129,7 +130,7 @@ Pro většinu programovacích jazyků je ve výchozím nastavení povolená pouz
   
 -   Zadat jiný uživatelský kód pro všechny uživatele počítače Visual Studio, přidejte soubor .natjmc `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` složky.  
   
--   Pokud chcete zadat jiný uživatelský kód pro jednotlivé uživatele, přidání .natjmc soubor `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` složky.  
+-   Pokud chcete zadat jiný uživatelský kód pro jednotlivé uživatele, přidání .natjmc soubor `%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers` složky.  
   
  .natjmc soubory jsou soubory xml s touto syntaxí:  
   

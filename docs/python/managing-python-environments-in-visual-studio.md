@@ -1,7 +1,7 @@
 ---
 title: Správa prostředí Python a překladače
 description: Použijte okno prostředí Python a spravovat globální, virtuální a conda prostředí, instalace překladače Python a balíčky a přiřazení prostředí k projektů sady Visual Studio.
-ms.date: 05/22/2018
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8c500b5f10f424cf60d92fd75a77e0ccb55866e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 571cbdac0a311ab1cd65b957b0081c26c7f96bd9
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477571"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851861"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak vytvořit a spravovat prostředí Python v sadě Visual Studio
 
@@ -87,7 +87,7 @@ V obou případech **prostředí Python** okno se zobrazí jako karty na stejné
 
 ![Okno prostředí Python](media/environments-default-view.png)
 
-Pokud nevidíte očekávané prostředí v seznamu, přečtěte si téma [ručně identifikovat stávajícího prostředí](#manually-identify-an-existing-environment).
+Visual Studio následuje [období 514](https://www.python.org/dev/peps/pep-0514/) k identifikaci nainstalovaného prostředí pomocí klíče registru. Pokud nevidíte očekávané prostředí v seznamu, přečtěte si téma [ručně identifikovat stávajícího prostředí](#manually-identify-an-existing-environment).
 
 Výběr prostředí v seznamu zobrazí různé vlastnosti a příkazy pro prostředí na **přehled** kartě. Například, uvidíte na předchozím obrázku, zda je umístění překladač `C:\Python36-32`. Pomocí rozevíracího seznamu pod seznamem prostředí můžete přepnout na různé karty, jako **balíčky**, a **IntelliSense**. Tyto karty jsou popsané v [prostředí Python okno karty](python-environments-window-tab-reference.md).
 
@@ -118,7 +118,27 @@ Pokud znáte máte překladač Pythonu ve vašem počítači, ale Visual Studio 
 >
 > Ale pokud přesunete ručně překladač a jeho prostředí pomocí systému souborů, Visual Studio nebude vědět nové umístění. Další informace najdete v tématu [přesun překladač](installing-python-interpreters.md#moving-an-interpreter).
 
-< a name = "ručně identifikace existující prostředí ></a>
+## <a name="fix-invalid-environments"></a>Opravte neplatné prostředí
+
+Pokud Visual Studio vyhledá položky registru pro prostředí, ale cesta k překladač je neplatná, okno prostředí Python zobrazuje název s písmo přeškrtnutí:
+
+![Okno prostředí Python zobrazující neplatný prostředí](media/environments-invalid-entry.png)
+
+Chcete-li prostředí, které chcete zachovat, zkuste je napřed pomocí možnosti oprav jeho instalační služby. Instalační programy pro standardní Python 3.x, patří například **Repair** možnost.
+
+Opravte prostředí, které nemá možnost opravit nebo odebrat neplatný prostředí, použijte následující postup upravit registr přímo. Visual Studio automaticky aktualizuje okno prostředí Python, když provedete změny registru.
+
+1. Run `regedit.exe`.
+1. Přejděte na `HKEY_LOCAL_MACHINE\SOFTWARE\Python` pro 32-bit překladače, nebo `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` pro 64bitové překladače.
+1. Rozbalte uzel, který odpovídá distribuce, jako `PythonCore` pro CPython nebo `ContinuumAnalytics` pro Anaconda.
+1. Zkontrolujte hodnoty v části `InstallPath` uzlu:
+
+    ![Položky registru pro typické instalace CPython](media/environments-registry-entries.png)
+
+    - Pokud prostředí stále existuje v počítači, změňte hodnotu `ExecutablePath` do správného umístění. Také opravit `(Default)` a `WindowedExecutablePath` hodnoty a aktualizovat podle potřeby.
+    - Pokud prostředí už existuje v počítači a chcete ho odebrat z okna prostředí Python, odstraňte nadřazený uzel z `InstallPath`, jako například `3.6` na předchozím obrázku.
+
+<a name="manually-identifying-an-existing-environment"></a>
 
 ## <a name="manually-identify-an-existing-environment"></a>Ručně identifikovat stávajícího prostředí
 
