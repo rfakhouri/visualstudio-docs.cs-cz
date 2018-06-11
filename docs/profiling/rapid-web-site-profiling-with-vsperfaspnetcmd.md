@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c30aebca3fc57912ac1a9bfc6fb16379dda24ed
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 32078c69453a1d569fdba23313917759ff500bd6
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815555"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256068"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Rychlé profilování webových stránek pomocí VSPerfASPNETCmd
 
@@ -84,7 +84,7 @@ Ke shromažďování dat interakce vrstev s dat paměti .NET:
 
 **vsperfaspnetcmd /memory**[**: doba platnosti**] *  */tip *** websiteUrl*
 
-## <a name="UsingNoWait"></a> Pomocí možnosti/nowait
+## <a name="use-the-nowait-option"></a>Použít možnost/nowait
 
 Ve výchozím nastavení, nevrátí příkazovém řádku po **vsperfaspnetcmd** příkaz. Možnost následující syntaxe můžete vynutit vrátit příkazového řádku. Pak můžete dělat jiné operace v okně příkazového řádku. Pokud chcete ukončit profilace, použijte **/Shutdown** možnost v samostatném **vsperfaspnetcmd** příkaz.
 

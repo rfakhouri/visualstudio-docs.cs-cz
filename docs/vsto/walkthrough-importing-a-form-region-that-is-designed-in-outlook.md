@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Import oblasti formuláře navržené v aplikaci Outlook | Microsoft Docs'
+title: 'Návod: Importujte oblasti formuláře navržené v aplikaci Outlook'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7823284096894dce54d0ba83b4aec0027a76fe97
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 247d8b72a86707d8c7bdfa889273b622635b87ec
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258941"
 ---
-# <a name="walkthrough-importing-a-form-region-that-is-designed-in-outlook"></a>Návod: Import oblasti formuláře navržené v aplikaci Outlook
+# <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Návod: Importujte oblasti formuláře navržené v aplikaci Outlook
   Tento návod ukazuje, jak návrh oblasti formuláře v aplikaci Microsoft Office Outlook a pak import oblasti formuláře do projektu doplňku VSTO pro Outlook pomocí **nové oblasti formuláře** průvodce. Návrh oblasti formuláře v aplikaci Outlook umožňuje můžete přidat nativní ovládací prvky aplikace Outlook do oblasti formuláře, který vytvoření vazby na data Outlooku. Po importu oblasti formuláře může zpracovávat události každý ovládací prvek.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -47,14 +48,14 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak provést I: vytvořit Outlook formuláře oblastí pomocí sady Visual Studio 2008?](http://go.microsoft.com/fwlink/?LinkID=130305).  
+ ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak oblastí formulářů aplikace Outlook vytvořit I: pomocí sady Visual Studio 2008?](http://go.microsoft.com/fwlink/?LinkID=130305).  
   
-## <a name="designing-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Návrh oblasti formuláře pomocí návrháře oblasti formuláře v aplikaci Outlook  
+## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Návrh oblasti formuláře pomocí návrháře oblasti formuláře v aplikaci Outlook  
  V tomto kroku navrhnete oblasti formuláře v aplikaci Outlook. Budete pak uložení oblasti formuláře do umístění snadno najít tak, aby je bylo možné importovat do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
  Tento příklad oblasti formuláře zcela nahradí obvyklé úlohy formuláře. Poskytuje způsob, jak sledovat průběh všechny úlohy, které je třeba dokončit před hlavní úloha může být provedeny (požadované úkoly). Oblasti formuláře zobrazí seznam požadované úkoly a v seznamu se zobrazí stav dokončení pro každou úlohu. Uživatele můžete přidat do seznamu úloh a je odebrat. Můžete se taky aktualizovat stav dokončení každé úlohy.  
   
-#### <a name="to-design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Návrh oblasti formuláře pomocí návrháře oblasti formuláře v aplikaci Outlook  
+### <a name="to-design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Návrh oblasti formuláře pomocí návrháře oblasti formuláře v aplikaci Outlook  
   
 1.  Spusťte aplikaci Microsoft Office Outlook.  
   
@@ -112,14 +113,14 @@ ms.lasthandoff: 04/16/2018
   
      Název oblasti formuláře **TaskFormRegion** a uložte ho do místního adresáře v počítači.  
   
-     Aplikace Outlook ukládá oblasti formuláře jako soubor úložiště formuláře aplikace Outlook (.ofs). Oblasti formuláře je uložen pod názvem TaskFormRegion.ofs.  
+     Aplikace Outlook ukládá oblasti formuláře jako úložiště formuláře aplikace Outlook (*.ofs*) souboru. Oblasti formuláře je uložen pod názvem *TaskFormRegion.ofs*.  
   
 27. Ukončete aplikaci Outlook.  
   
-## <a name="creating-a-new-outlook-add-in-project"></a>Vytvoření nové aplikace Outlook přidejte v projektu  
+## <a name="create-a-new-outlook-add-in-project"></a>Vytvoření nového projektu doplněk aplikace Outlook  
  V tomto kroku vytvoříte projektu doplňku VSTO v Outlooku. Dále v tomto návodu budete importovat oblasti formuláře do projektu.  
   
-#### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>K vytvoření nového projektu doplňku VSTO pro Outlook  
+### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>K vytvoření nového projektu doplňku VSTO pro Outlook  
   
 1.  V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vytvoření projektu doplňku VSTO pro Outlook s názvem **TaskAddIn**.  
   
@@ -127,12 +128,12 @@ ms.lasthandoff: 04/16/2018
   
 3.  Uložte projekt do výchozí adresář projektu.  
   
-     Další informace najdete v tématu [postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-## <a name="importing-the-form-region"></a>Import oblasti formuláře  
+## <a name="import-the-form-region"></a>Import oblasti formuláře  
  Můžete importovat oblasti formuláře navržené v aplikaci Outlook do projektu doplňku VSTO pro Outlook pomocí **nové oblasti formuláře aplikace Outlook** průvodce.  
   
-#### <a name="to-import-the-form-region-into-the-outlook-vsto-add-in-project"></a>Import oblasti formuláře do projektu doplňku VSTO pro Outlook  
+### <a name="to-import-the-form-region-into-the-outlook-vsto-add-in-project"></a>Import oblasti formuláře do projektu doplňku VSTO pro Outlook  
   
 1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **TaskAddIn** projektu, přejděte na **přidat**a potom klikněte na **novou položku**.  
   
@@ -142,28 +143,28 @@ ms.lasthandoff: 04/16/2018
   
 3.  Na **vyberte způsob vytvoření oblasti formuláře** klikněte na tlačítko **importovat úložiště formuláře aplikace Outlook (.ofs) souboru**a potom klikněte na **Procházet**.  
   
-4.  V **existující umístění souboru oblasti formuláře aplikace Outlook** dialogové okno, přejděte do umístění **TaskFormRegion.ofs**, vyberte **TaskFormRegion.ofs**, klikněte na tlačítko **Otevřete**a potom klikněte na **Další**.  
+4.  V **existující umístění souboru oblasti formuláře aplikace Outlook** dialogové okno, přejděte do umístění *TaskFormRegion.ofs*, vyberte **TaskFormRegion.ofs**, klikněte na tlačítko **Otevřete**a potom klikněte na **Další**.  
   
 5.  Na **vyberte typ oblasti formuláře, které chcete vytvořit** klikněte na tlačítko **nahradit všechny**a potom klikněte na **Další**.  
   
-     A *nahradit všechny* oblasti formuláře nahradí celý formuláře aplikace Outlook. Další informace o typech oblasti formuláře najdete v tématu [vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md).  
+     A *nahradit všechny* oblasti formuláře nahradí celý formuláře aplikace Outlook. Další informace o typech oblasti formuláře najdete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).  
   
 6.  Na **zadejte popisný text a vybrat vaše předvolby zobrazení** klikněte na tlačítko **Další**.  
   
 7.  Na **identifikovat zpráva třídy, které se zobrazí tato oblasti formuláře** stránky v **které třídy vlastní zpráva se zobrazí tato oblasti formuláře** zadejte **IPM. Task.TaskFormRegion**a potom klikněte na **Dokončit**.  
   
-     Soubor TaskFormRegion.cs nebo TaskFormRegion.vb se přidá do projektu.  
+     A *TaskFormRegion.cs* nebo *TaskFormRegion.vb* soubor je přidán do projektu.  
   
-## <a name="handling-the-events-of-controls-on-the-form-region"></a>Zpracování událostí ovládacích prvků v oblasti formuláře  
- Teď, když máte oblasti formuláře v projektu, můžete přidat kód, který zpracovává událost Microsoft.Office.Interop.Outlook.OlkCommandButton.Click tlačítka, které jste přidali do oblasti formuláře v aplikaci Outlook.  
+## <a name="handle-the-events-of-controls-on-the-form-region"></a>Zpracování událostí ovládacích prvků v oblasti formuláře  
+ Teď, když máte oblasti formuláře v projektu, můžete přidat kód, který zpracovává `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` události tlačítka, který jste přidali do oblasti formuláře v aplikaci Outlook.  
   
  Navíc přidejte kód, který <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> událost, která aktualizuje ovládacích prvků na oblasti formuláře, když se zobrazí v oblasti formuláře.  
   
-#### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>Zpracování událostí ovládacích prvků v oblasti formuláře  
+### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>Zpracování událostí ovládacích prvků v oblasti formuláře  
   
-1.  V **Průzkumníku řešení**TaskFormRegion.cs nebo TaskFormRegion.vb klikněte pravým tlačítkem a pak klikněte na tlačítko **kód zobrazení**.  
+1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na *TaskFormRegion.cs* nebo *TaskFormRegion.vb*a potom klikněte na **kód zobrazení**.  
   
-     TaskFormRegion.cs nebo TaskFormRegion.vb se otevře v editoru kódu.  
+     *TaskFormRegion.cs* nebo *TaskFormRegion.vb* otevře v editoru kódu.  
   
 2.  Přidejte následující kód, který `TaskFormRegion` třídy. Tento kód naplní pole se seznamem na oblasti formuláře s předmětem jednotlivých úloh ve složce aplikace Outlook úlohy.  
   
@@ -172,9 +173,9 @@ ms.lasthandoff: 04/16/2018
   
 3.  Přidejte následující kód, který `TaskFormRegion` třídy. Tento kód provede následující:  
   
-    -   Vyhledá Microsoft.Office.Interop.Outlook.TaskItem ve složce úlohy voláním `FindTaskBySubjectName` Pomocná metoda a předání předmět požadovanou úlohu. Přidáte `FindTaskBySubjectName` Pomocná metoda v dalším kroku.  
+    -   Vyhledá `Microsoft.Office.Interop.Outlook.TaskItem` ve složce úlohy voláním `FindTaskBySubjectName` Pomocná metoda a předání předmět požadovanou úlohu. Přidáte `FindTaskBySubjectName` Pomocná metoda v dalším kroku.  
   
-    -   Přidá hodnoty Microsoft.Office.Interop.Outlook.TaskItem.Subject a Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete do pole se seznamem úkolů závislé.  
+    -   Přidá `Microsoft.Office.Interop.Outlook.TaskItem.Subject` a `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` hodnoty pro pole se seznamem úkolů závislé.  
   
     -   Přidá předmět úlohy do pole Skrytá v oblasti formuláře. Skryté pole ukládá tyto hodnoty jako součást položky aplikace Outlook.  
   
@@ -190,9 +191,9 @@ ms.lasthandoff: 04/16/2018
   
     -   Aktualizuje pole se seznamem na oblasti formuláře s aktuálním stavem dokončení každé úlohy závislé.  
   
-    -   Analyzuje pole skrytého textu, které chcete získat předmět každé závislé úlohy. Poté vyhledá každý Microsoft.Office.Interop.Outlook.TaskItem ve složce úlohy voláním `FindTaskBySubjectName` Pomocná metoda a předání předmět jednotlivých úloh.  
+    -   Analyzuje pole skrytého textu, které chcete získat předmět každé závislé úlohy. Poté vyhledá každý `Microsoft.Office.Interop.Outlook.TaskItem` v *úlohy* složky voláním `FindTaskBySubjectName` Pomocná metoda a předání předmět jednotlivých úloh.  
   
-    -   Přidá hodnoty Microsoft.Office.Interop.Outlook.TaskItem.Subject a Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete do pole se seznamem úkolů závislé.  
+    -   Přidá `Microsoft.Office.Interop.Outlook.TaskItem.Subject` a `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` hodnoty pro pole se seznamem úkolů závislé.  
   
      [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
      [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]  
@@ -206,12 +207,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Outlook_FR_Import#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#5)]
      [!code-vb[Trin_Outlook_FR_Import#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#5)]  
   
-## <a name="testing-the-outlook-form-region"></a>Testování oblasti formuláře aplikace Outlook  
+## <a name="test-the-outlook-form-region"></a>Testování oblasti formuláře aplikace Outlook  
  K testování oblasti formuláře, přidání úkolů do seznamu požadovaných úloh v oblasti formuláře. Aktualizujte stav dokončení požadovaných úkolů a potom zobrazit stav aktualizované dokončení úlohy v seznamu požadovaných úloh.  
   
-#### <a name="to-test-the-form-region"></a>K testování oblasti formuláře  
+### <a name="to-test-the-form-region"></a>K testování oblasti formuláře  
   
-1.  Stisknutím klávesy F5 spusťte projekt.  
+1.  Stiskněte klávesu **F5** spustit projekt.  
   
      Spuštění aplikace Outlook.  
   
@@ -231,7 +232,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  V **, vyberte úlohu. Chcete-li přidat do seznamu závislé úlohy** – pole se seznamem, vyberte **závislé úlohy**a potom klikněte na **přidat úloha závislé**.  
   
-     **0 % Complete – závislé úlohy** se zobrazí v **tato úloha závisí na následujících úloh** pole se seznamem. Tento příklad ukazuje úspěšně zpracovat událost Microsoft.Office.Interop.Outlook.OlkCommandButton.Click tlačítka.  
+     **0 % Complete – závislé úlohy** se zobrazí v **tato úloha závisí na následujících úloh** pole se seznamem. To znamená, že úspěšně zpracována `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` události tlačítka.  
   
 9. Uložte a zavřete **primární úloh** položky.  
   
@@ -254,14 +255,14 @@ ms.lasthandoff: 04/16/2018
   
 -   Další informace o tom, jak přidat vlastního podokna úloh do aplikace Outlook, najdete v části [vlastní podokna úloh](../vsto/custom-task-panes.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Přístup k oblasti formuláře za běhu](../vsto/accessing-a-form-region-at-run-time.md)   
  [Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)   
- [Pokyny pro vytváření oblastí formulářů aplikace Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Postupy: Návrh oblasti formuláře aplikace Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Postupy: přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Pokyny k vytváření oblastí formulářů aplikace Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
+ [Návod: Návrh oblasti formuláře aplikace Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [Postupy: přidání oblasti formuláře do projektu doplněk aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Přidružení oblasti formuláře k třídě zpráv aplikace Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Vlastní akce v oblastí formulářů aplikace Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
- [Postupy: Zabránění zobrazení oblasti formuláře v aplikaci Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
+ [Postupy: zabránění zobrazení oblasti formuláře aplikace Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
   
   

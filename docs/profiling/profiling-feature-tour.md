@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab4e8bacb4d8188667822cd060166f217ba05df2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 72107c7d4bd072019115ca22d70e57eae75ab261
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255954"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Rychlý úvod: První pohled na nástroje pro profilaci
 
@@ -31,7 +32,7 @@ Při ladění, můžete použít **diagnostické nástroje** okno k analýze CPU
 
 ![Zobrazení diagnostických nástrojů souhrnu](../profiling/media/prof-tour-cpu-and-memory-graph.gif "souhrn diagnostické nástroje")
 
-**Diagnostické nástroje** okno je často upřednostňovaný způsob, jak profil aplikace, ale pro verzi sestavení můžete také provést analýzu postmortální aplikace místo. Pokud chcete další informace o různý přístup, najdete v části [spuštění profilace nástroje s nebo bez ladicí program](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Profilace nástroj pro podporu různých typů aplikací najdete v tématu [které nástroje?](#tool_support_info).
+**Diagnostické nástroje** okno je často upřednostňovaný způsob, jak profil aplikace, ale pro verzi sestavení můžete také provést analýzu postmortální aplikace místo. Pokud chcete další informace o různý přístup, najdete v části [spustit profilování nástroje s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Profilace nástroj pro podporu různých typů aplikací najdete v tématu [které nástroje?](#tool_support_info).
 
 ## <a name="analyze-cpu-usage"></a>Analýza využití procesoru
 
@@ -53,7 +54,7 @@ Dvakrát klikněte na funkce, že máte zájem, a zobrazí podrobnější pohled
 
 ## <a name="analyze-memory-usage"></a>Analýza využití paměti
 
-Okno diagnostické nástroje také umožňuje vyzkoušet využití paměti v aplikaci. Například můžete si prohlédnout počet a velikost objektů v haldě. Podrobné pokyny k analýze paměti, najdete v části [analýza využití paměti](../profiling/memory-usage.md).
+**Diagnostické nástroje** okno také umožňuje vyzkoušet využití paměti v aplikaci. Například můžete si prohlédnout počet a velikost objektů v haldě. Podrobné pokyny k analýze paměti, najdete v části [analýza využití paměti](../profiling/memory-usage.md).
 
 Chcete-li analýza využití paměti, vytvořte alespoň jeden snímek paměti při ladění. Často je nejlepší způsob, jak analyzovat paměti dvě vytváření snímků; první těsně před problém možného paměti a druhý snímku bezprostředně za podezřelé paměti problém nastane. Potom můžete zobrazit diferencovat dvě snímků a najdete v části přesně co se změnilo.
 
@@ -78,19 +79,19 @@ Stejné události také zobrazí v editoru kódu, který se zobrazí jako PerfTi
 
 ![Profilace prohlídka PerfTips](../profiling/media/prof-tour-perf-tips.png "profilace PerfTips prohlídka")
 
-## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Zkontrolujte výkon uživatelského rozhraní a usnadnění události (UWP)
+## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Zkontrolujte uživatelského rozhraní událostí výkonu a usnadnění (UWP)
 
-V aplikacích pro UPW můžete povolit **uživatelského rozhraní Analysis** v okně diagnostické nástroje. Nástroj vyhledá běžné problémy s výkonem a usnadnění a zobrazí je v **události** zobrazení při ladění. Popisy událostí obsahují informace, které mohou pomoci vyřešit problémy.
+V aplikacích pro UPW můžete povolit **uživatelského rozhraní Analysis** v **diagnostické nástroje** okno. Nástroj vyhledá běžné problémy s výkonem a usnadnění a zobrazí je v **události** zobrazení při ladění. Popisy událostí obsahují informace, které mohou pomoci vyřešit problémy.
 
-![Zobrazit události Analysis uživatelského rozhraní v diagnostických nástrojích](../profiling/media/prof-tour-ui-analysis.png "diagnostických nástrojů zobrazení uživatelského rozhraní analýzy událostí")
+![Zobrazit události analysis uživatelského rozhraní v diagnostických nástrojích](../profiling/media/prof-tour-ui-analysis.png "diagnostických nástrojů zobrazení uživatelského rozhraní analýzy událostí")
 
 ## <a name="profile-release-builds-without-the-debugger"></a>Profil verze sestavení bez ladicí program
 
-Profilace nástroje jako využití CPU a využití paměti lze použít s ladicím programem (viz předchozí části), nebo ji můžete spustit pomocí profileru výkonu, který je určen k poskytování analýz pro nástroje pro profilaci **verze** sestavení. V profileru výkonu můžete shromažďovat diagnostické informace, když aplikace běží a pak zkontrolujte shromážděné informace po zastavení aplikace. Další informace o těchto různý přístup, najdete v části [spuštění profilace nástroje s nebo bez ladicí program](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Profilace nástroje jako využití CPU a využití paměti lze použít s ladicím programem (viz předchozí části), nebo ji můžete spustit pomocí profileru výkonu, který je určen k poskytování analýz pro nástroje pro profilaci **verze** sestavení. V profileru výkonu můžete shromažďovat diagnostické informace, když aplikace běží a pak zkontrolujte shromážděné informace po zastavení aplikace. Další informace o těchto různý přístup, najdete v části [spustit profilování nástroje s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 ![Výkon profileru](../profiling/media/prof-tour-performance-profiler.png "výkonu profileru")
 
-Otevřete profileru výkonu výběrem **ladění nebo výkonu profileru**.
+Otevřete profileru výkonu výběrem **ladění**>**výkonu profileru**.
 
 Okno vám umožní vybrat více nástrojů pro profilaci v některých scénářích. Nástroje, jako je využití procesoru může poskytovat doplňující data, která můžete použít při v analýzy.
 
@@ -146,7 +147,7 @@ Pokud potřebujete například instrumentace funkce, které nejsou aktuálně na
 
 ![Nástroj Průzkumník výkonu](../profiling/media/prof-tour-performance-explorer.png "prohlížeč výkonu")
 
-## <a name="tool_support_info"></a>Který nástroj mám použít?  
+## <a name="which-tool-should-i-use"></a>Který nástroj mám použít?  
 
 Tady je tabulku, která obsahuje seznam různých nástrojů, které nabízí Visual Studio a typy jiný projekt můžete například vytvořit pomocí:
   
@@ -164,7 +165,7 @@ Tady je tabulku, která obsahuje seznam různých nástrojů, které nabízí Vi
 |[Paměť jazyka JavaScript](../profiling/javascript-memory.md)|Ne|Ano pro HTML, ne pro jazyk XAML|Ne|
 
 > [!NOTE]
-> Pro .NET Core a ASP.NET Core nástroje využití CPU aktuálně neposkytuje přesné výsledky s přenosné PBDs. Místo toho použijte úplný soubory PDB.
+> U platforem .NET Core a ASP.NET Core nástroj Využití procesoru v současnosti neposkytuje přesné výsledky o přenosných souborech PDB. Proto raději použijte celé soubory PDB.
 
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)

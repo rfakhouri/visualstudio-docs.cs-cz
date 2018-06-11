@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: naplnění prostřednictvím kódu programu tabulek aplikace Word s vlastností dokumentu | Microsoft Docs'
+title: 'Postupy: naplnění prostřednictvím kódu programu tabulek aplikace Word prostřednictvím vlastnosti dokumentu'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0feb203e517cffcd859e3094abcee95d532eafc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c202a663f87a77da9a40116b76c2f09e84464ceb
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257443"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Postupy: Vkládání vlastností dokumentu do tabulek aplikace Word prostřednictvím kódu programu
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Postupy: naplnění prostřednictvím kódu programu tabulek aplikace Word prostřednictvím vlastnosti dokumentu
   Následující příklad vytvoří tabulku aplikace Microsoft Office Word v horní části dokumentu a naplní s vlastnostmi hostitele dokumentu.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="populating-tables-in-a-document-level-customization"></a>Naplnění tabulky v přizpůsobení na úrovni dokumentu  
+## <a name="populate-tables-in-a-document-level-customization"></a>Naplnění tabulky v přizpůsobení na úrovni dokumentu  
   
-#### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Chcete-li vytvořit tabulku a jeho naplnění vlastnosti dokumentu  
+### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Chcete-li vytvořit tabulku a jeho naplnění vlastnosti dokumentu  
   
 1.  Nastavte rozsah na začátek dokumentu.  
   
@@ -61,9 +62,9 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#89)]
  [!code-csharp[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#89)]  
   
-## <a name="populating-tables-in-a-vsto-add-in"></a>Naplnění tabulky v doplňku VSTO  
+## <a name="populate-tables-in-a-vsto-add-in"></a>Naplnění tabulky v doplňku VSTO  
   
-#### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Chcete-li vytvořit tabulku a jeho naplnění vlastnosti dokumentu  
+### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Chcete-li vytvořit tabulku a jeho naplnění vlastnosti dokumentu  
   
 1.  Nastavte rozsah na začátek dokumentu.  
   
@@ -95,10 +96,10 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#89)]
  [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Postupy: vytváření tabulek aplikace Word prostřednictvím kódu programu](../vsto/how-to-programmatically-create-word-tables.md)   
  [Postupy: přidávání textu a formátování do buněk tabulek aplikace Word prostřednictvím kódu programu](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
  [Postupy: Programové přidávání řádků a sloupců do tabulek aplikace Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
- [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

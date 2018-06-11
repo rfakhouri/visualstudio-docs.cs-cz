@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 5221b8683a871baec94bea144d22932832cad77e
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256081"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analýza využití sítě v aplikacích pro UPW
 Visual Studio **sítě** nástroj diagnostiky shromažďuje informace o síťových operací provést pomocí [Windows.Web.Http API](/uwp/api/windows.web.http). Analyzuje data vám může pomoct vyřešit problémy, jako je přístup a ověřování problémy, nesprávné použití mezipaměti a nízký zobrazení a stažení výkonu.  
@@ -71,8 +72,8 @@ Visual Studio **sítě** nástroj diagnostiky shromažďuje informace o síťov�
   
 3.  Tlačítko odpovědi poměrně tisk (uvnitř kartě textu) můžete analyzovat prostřednictvím formátu JSON, XML, HTML, CSS, JavaScript a TypeScript datové části odpovědi zvýšením čitelnost obsahu.  
   
-## <a name="see-also"></a>Viz také  
- [Spuštění nástroje pro profilaci s nebo bez ladicí program](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
+## <a name="see-also"></a>Viz také:  
+ [Spouštění nástrojů pro profilaci s ladicím programem nebo bez něj](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Visual Studio blog: inspector sítě představení sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Video Channel 9: VS diagnostické nástroje – nové sítě profileru](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Profilace v sadě Visual Studio](../profiling/index.md)  

@@ -9,17 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd72de016e9f44987fae43e7b49820e21af0a288
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 94c065d17d60ac8090e057f9b8c961d7718504a5
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254664"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Rychlý úvod: První pohled na Visual Studio IDE
 
 V této 5 až 10 minut Úvod do integrované vývojové prostředí (IDE) sady Visual Studio provedeme prohlídka některých systému windows, nabídky a další funkce uživatelského rozhraní.
 
-Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránky instalaci zdarma.
+Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
 ## <a name="start-page"></a>Úvodní stránka
 
@@ -97,7 +98,7 @@ Jsme si prohlédli uvedeno několik funkcí prostředí Visual Studio IDE se sez
 
 - Podrobnější prohlídku rozhraní IDE a i dabble v ladění, v [přehled Visual Studio IDE](../ide/visual-studio-ide.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Rychlý úvod: Přizpůsobení integrovaného vývojového prostředí](../ide/personalizing-the-visual-studio-ide.md)
 - [Rychlý úvod: Kódování v editoru](../ide/quickstart-editor.md)

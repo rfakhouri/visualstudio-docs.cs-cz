@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f12caeb35e2c5c100069c3a5df066775beb5af3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ecb92c2d17cf0ec80560a8037b15d57f5bf91c52
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255775"
 ---
-# <a name="profile-memory-usage-in-visual-studio"></a>Profil využití paměti v sadě Visual Studio
+# <a name="profile-memory-usage-in-visual-studio"></a>Využití paměti profilu v sadě Visual Studio
 Najít nevracení paměti a neefektivní paměti při ladění pomocí integrované ladicí program **využití paměti** nástroj pro diagnostiku. Umožňuje nástroj využití paměti, proveďte jeden nebo více *snímky* spravovaná a nativní paměti haldy pro lepší porozumění tomu dopad využití paměti typy objektů. Můžete shromažďovat snímky .NET, nativní nebo smíšený režim (.NET a nativní) aplikace.  
   
  Následující grafické ukazuje **diagnostické nástroje** okno (k dispozici ve Visual Studiu 2015 Update 1 nebo novější):  
@@ -32,7 +33,7 @@ Najít nevracení paměti a neefektivní paměti při ladění pomocí integrova
 >   
 >  `__declspec(allocator) void* myMalloc(size_t size)` 
 
-V tomto kurzu provedete následující:
+V tomto kurzu se naučíte:
 
 > [!div class="checklist"]
 > * Udělat snímky paměti
@@ -49,24 +50,24 @@ V tomto kurzu provedete následující:
 
 2.  Druhý zarážku na konci funkce nebo kód, který chcete analyzovat oblasti (nebo po výskytu problému možného paměti).
   
-3.  **Diagnostické nástroje** okno se automaticky zobrazí, pokud jste vypnuli ho. Zobrazte okno znovu, klikněte na tlačítko **ladění / Windows / zobrazit diagnostické nástroje**.
+3.  Okno **Diagnostické nástroje** se zobrazí automaticky (pokud jste ho nevypnuli). Zobrazte okno znovu, klikněte na tlačítko **ladění**>**Windows**>**zobrazit diagnostické nástroje**.
 
 4.  Zvolte **využití paměti** s **vyberte nástroje** nastavení na panelu nástrojů.
 
-     ![Zobrazit nástroje pro diagnostiku](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Zobrazení diagnostických nástrojů](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
-5.  Klikněte na tlačítko **ladění / spusťte ladění** (nebo **spustit** na panelu nástrojů nebo **F5**).
+5.  Klikněte na **Ladit / Spustit ladění** (nebo na panelu nástrojů stiskněte **Start** nebo **F5**).
 
-     Po dokončení nahrávání aplikace se zobrazí přehled o diagnostické nástroje.
+     Jakmile se aplikace načte, zobrazí se souhrnný přehled diagnostických nástrojů.
 
-     ![Diagnostické nástroje kartu Souhrn](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Karta Souhrn v diagnostických nástrojích](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  Protože shromažďování paměti, že data mohou ovlivnit výkon ladění aplikací pro nativní nebo ve smíšeném režimu, jsou ve výchozím nastavení zakázané snímky paměti. Povolit snímky v aplikacích pro nativní nebo ve smíšeném režimu, spusťte relaci ladění (klávesovou zkratku: **F5**). Když **diagnostické nástroje** se zobrazí v okně vyberte na kartě využití paměti a potom vyberte **profilace haldy**.  
+     >  Protože shromažďování paměti, že data mohou ovlivnit výkon ladění aplikací pro nativní nebo ve smíšeném režimu, jsou ve výchozím nastavení zakázané snímky paměti. Povolit snímky v aplikacích pro nativní nebo ve smíšeném režimu, spusťte relaci ladění (klávesovou zkratku: **F5**). Když **diagnostické nástroje** se zobrazí v okně vyberte **využití paměti** a pak klikněte na příkaz **profilace haldy**.  
      >   
      >  ![Povolit snímky](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
      >   
-     >  Zastavit (klávesovou zkratku: **Shift + F5**) a znovu spusťte ladění.  
+     >  Zastavit (klávesovou zkratku: **Shift**+**F5**) a znovu spusťte ladění.  
 
 6.  K pořízení snímku na začátku relaci ladění, zvolte **trvat snímek** na **využití paměti** souhrnné panelu nástrojů. (Ho mohou pomoci nastavit zarážky zde také).
 
@@ -75,15 +76,15 @@ V tomto kurzu provedete následující:
      > [!TIP]
      >  Chcete-li vytvořit směrný plán pro porovnání paměti, zvažte pořízení snímku na začátku relaci ladění.  
 
-6.  Spusťte scénář, který způsobí, že vaše první zarážky být narazí.
+6.  Spusťte scénář, který se zastaví u první zarážky.
 
 7.  Při první zarážky bylo pozastaveno ladicího programu, zvolte **trvat snímek** na **využití paměti** souhrnné panelu nástrojů.  
 
-8.  Stiskněte F5 a spusťte aplikaci k vaší zarážce druhý.
+8.  Stiskněte klávesu **F5** a spusťte aplikaci k vaší zarážce druhý.
 
 9.  Nyní vytvořte nový snímek.
 
-     V tomto okamžiku můžete začít analyzovat data.    
+     Teď můžete začít analyzovat data.    
   
 ## <a name="analyze-memory-usage-data"></a>Analyzovat data o využití paměti
 Řádky tabulku souhrnu využití paměti uvádí snímků, které jste provedli během ladicí relace a nabízí odkazy na podrobnější zobrazení.
@@ -126,7 +127,7 @@ Chcete-li analýza využití paměti, klikněte na jeden z odkazů, které se ot
   
  ![Zobrazení instancí](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
   
- **Instance** zobrazení ve snímku v horním podokně zobrazí instance vybraný objekt. Cesty do podokna kořenové a odkazuje typy zobrazit objekty, které odkazují ve vybrané instanci a typy, které odkazuje na vybranou instanci. Po zastavení ladicího programu v okamžiku, kdy pořízení snímku najedete můžete hodnotu buňky pro zobrazení hodnot z objektu v popisu tlačítka.  
+ **Instance** zobrazení ve snímku v horním podokně zobrazí instance vybraný objekt. **Cest k kořenové** a **odkazuje objekty** podokně zobrazí objekty, které odkazují ve vybrané instanci a typy, které odkazuje na vybranou instanci. Po zastavení ladicího programu v okamžiku, kdy pořízení snímku přesunutí ukazatele myši **hodnotu** buněk k zobrazení hodnot z objektu v popisu tlačítka.  
   
 ### <a name="native-type-reports"></a>Nativní typ sestavy  
  Vyberte aktuální odkaz **přidělení (rozdílové)** nebo **velikost haldy (rozdílové)** buňky v souhrnné tabulce využití paměti **diagnostické nástroje** okno.  
@@ -163,7 +164,7 @@ Chcete-li analýza využití paměti, klikněte na jeden z odkazů, které se ot
 
 |         |         |
 |---------|---------|
-|  ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video")  |    [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) o používání nástroje diagnostiky, které ukazuje, jak analyzovat využití paměti a využití procesoru v aplikaci Visual Studio 2017. |
+|  ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video")  |    [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) o používání nástroje diagnostiky, které ukazuje, jak analyzovat využití paměti a využití procesoru v aplikaci Visual Studio 2017. |
 
  [Analýza využití procesoru a paměti při ladění](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   

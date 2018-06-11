@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: povolení kódu spuštění na pozadí dokumentů s omezenými oprávněními | Microsoft Docs'
+title: 'Postupy: povolení kód pro spuštění pozadí dokumentů s omezenými oprávněními'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,20 +20,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb5b9421bd6d0228a93ba7ba7516c9ebc7b7c761
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b02afb7008233c720feae179b4726f9958a44af
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255283"
 ---
-# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Postupy: Povolení spuštění kódu na pozadí dokumentů s omezenými oprávněními
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Postupy: povolení kód pro spuštění pozadí dokumentů s omezenými oprávněními
   Omezit oprávnění k dokumentu nebo sešitu, můžete použít funkci Správa informačních práv (IRM) systému Microsoft Office. Ve výchozím nastavení není povoleno spustit kód s omezeným přístupem dokument aplikace Microsoft Office Word nebo sešitu aplikace Microsoft Office Excel. Výchozí nastavení můžete změnit tak, aby vaše rozšíření spravovaného kódu můžete přístup k modelu objektu a řešení bude fungovat.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
  Musí být Autor dokumentu nebo sešitu nebo mají úplný přístup, abyste mohli změnit nastavení oprávnění.  
   
-### <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>K povolení kód pro spuštění pozadí dokumentů s omezenými oprávněními  
+## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>K povolení kód pro spuštění pozadí dokumentů s omezenými oprávněními  
   
 1.  Otevřete dokument nebo sešit v aplikaci Word nebo Excel.  
   
@@ -48,11 +49,11 @@ ms.lasthandoff: 04/16/2018
   
  Word či Excel bude povolit programový přístup k objektu modelu.  
   
-## <a name="see-also"></a>Viz také  
- [Přehled rozšíření spravovaného kódu a Information Rights Management](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+## <a name="see-also"></a>Viz také:  
+ [Přehled rozšíření spravovaného kódu a Správa přístupových práv](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [Ochrana dokumentů v řešeních na úrovni dokumentu](../vsto/document-protection-in-document-level-solutions.md)   
  [Ochrana heslem v dokumentech Office](../vsto/password-protection-on-office-documents.md)   
- [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
+ [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: při vytváření oblastí prostřednictvím kódu programu vyloučení značek odstavů | Microsoft Docs'
+title: 'Postupy: programové vyloučení značek odstavů při vytváření oblastí'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a12d041c82be2be2ebfc6facc97bb769675555e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6133249720711a057ed66516571563f8a5ee0db9
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256959"
 ---
-# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Postupy: Vyloučení značek odstavů při vytváření oblastí prostřednictvím kódu programu
+# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Postupy: programové vyloučení značek odstavů při vytváření oblastí
   Vždy, když vytvoříte <xref:Microsoft.Office.Interop.Word.Range> objekt v závislosti na odstavce, všechny netisknutelné znaky, jako je například značky odstavce, jsou zahrnuty v rozsahu. Chcete vložit text ze zdroje odstavce do cílového odstavce. Pokud nechcete rozdělení cílového odstavce na samostatné odstavce, pak je nutné nejprve odstranit značku odstavce z odstavce zdroje. Navíc vzhledem k tomu, že informace o formátování odstavce je uložena v rámci značku odstavce, nemusí chcete být při vložení rozsahu do existujícího odstavce.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
  Následující ukázkový postup deklaruje dvě proměnné řetězec, načte obsah odstavců první a druhý v aktivním dokumentu a poté výměny jejich obsah. Příklad ukazuje pak odebrání značky odstavce z rozsahu pomocí <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metoda a vkládání textu uvnitř odstavce.  
   
-### <a name="to-control-paragraph-structure-when-inserting-text"></a>K řízení odstavce struktura při vkládání textu  
+## <a name="to-control-paragraph-structure-when-inserting-text"></a>K řízení odstavce struktura při vkládání textu  
   
 1.  Vytvořte dvě proměnné rozsahu pro první a druhý odstavec a načíst jejich obsah, pomocí <xref:Microsoft.Office.Interop.Word.Range.Text%2A> vlastnost.  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="document-level-customization-example"></a>Příklad přizpůsobení na úrovni dokumentu  
   
-#### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>K řízení odstavce struktura při vkládání textu v přizpůsobeních na úrovni dokumentu  
+### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>K řízení odstavce struktura při vkládání textu v přizpůsobeních na úrovni dokumentu  
   
 1.  Následující příklad ukazuje metodu dokončení pro přizpůsobení na úrovni dokumentu. Chcete-li použít tento kód, spusťte jej z `ThisDocument` třídy ve vašem projektu.  
   
@@ -110,19 +111,19 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="vsto-add-in-example"></a>Příklad doplňku VSTO  
   
-#### <a name="to-control-paragraph-structure-when-inserting-text-in-an-vsto-add-in"></a>K řízení odstavce struktura při vkládání textu v doplňku VSTO  
+### <a name="to-control-paragraph-structure-when-inserting-text-in-an-vsto-add-in"></a>K řízení odstavce struktura při vkládání textu v doplňku VSTO  
   
 1.  Následující příklad ukazuje metodu dokončení pro doplňku VSTO. Chcete-li použít tento kód, spusťte jej z `ThisAddIn` třídy ve vašem projektu.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#26)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Postupy: rozšiřování oblastí v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Postupy: programové sbalování oblastí nebo výběrů v dokumentech](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Postupy: sbalení prostřednictvím kódu programu oblastí nebo výběrů v dokumentech](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
  [Postupy: programové vkládání textu do dokumentů aplikace Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [Postupy: dokumentů prostřednictvím kódu programu. resetování oblastí v aplikaci Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Postupy: programové resetování oblastí v dokumentech aplikace Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
  [Postupy: programové definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

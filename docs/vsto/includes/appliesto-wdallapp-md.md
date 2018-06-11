@@ -1,3 +1,3 @@
-  **Platí pro:** Informace v tomto tématu se vztahují na projekty doplňku VSTO ve Wordu. Další informace najdete v tématu [dostupné funkce podle aplikace Office a typu projektu](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Platí pro:** informace v tomto tématu se vztahují na VSTO přidat\-v projektech pro aplikaci Word. Další informace najdete v tématu [dostupné funkce podle aplikace a projekt typu Office](../../vsto/features-available-by-office-application-and-project-type.md).
 
   

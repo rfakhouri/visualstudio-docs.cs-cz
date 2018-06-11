@@ -12,16 +12,16 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4d353e6a9f52a11821799e6d20ec26bcb0045a71
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748748"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257469"
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Visual Studio 2017 produktivitu Příručka pro vývojáře .NET
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/) umožňuje vývojářům zvýšit produktivitu než kdy dřív! Vylepšili výkon a spolehlivost pro spuštění řešení a zatížení, test zjišťování a zadáním latence. Také jsme přidali a pokročilé funkce, které umožňují rychlejší psaní lepší kódu. Mezi tyto funkce patří: navigace na decompiled sestavení, proměnné Název návrhy, jak budete zadávat, zobrazení hierarchie v **Průzkumníka testů**, přejděte na všechny (**Ctrl** +  **T**) přejděte na soubor nebo typ/člen nebo symbol deklarace inteligentního **pomocníka výjimka**, styl konfigurace a vynucení a mnoho refaktoring kódu a kódu opravy.
+[Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) umožňuje vývojářům zvýšit produktivitu než kdy dřív! Vylepšili výkon a spolehlivost pro spuštění řešení a zatížení, test zjišťování a zadáním latence. Také jsme přidali a pokročilé funkce, které umožňují rychlejší psaní lepší kódu. Mezi tyto funkce patří: navigace na decompiled sestavení, proměnné Název návrhy, jak budete zadávat, zobrazení hierarchie v **Průzkumníka testů**, přejděte na všechny (**Ctrl** +  **T**) přejděte na soubor nebo typ/člen nebo symbol deklarace inteligentního **pomocníka výjimka**, styl konfigurace a vynucení a mnoho refaktoring kódu a kódu opravy.
 
 Postupujte podle tohoto průvodce k optimalizaci produktivitu.
 

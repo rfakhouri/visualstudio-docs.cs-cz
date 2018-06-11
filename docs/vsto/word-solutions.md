@@ -1,5 +1,5 @@
 ---
-title: Řešení aplikace Word | Microsoft Docs
+title: řešení pro aplikaci Word
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -29,13 +29,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44cd5633d7cc03fb78c6508c24a117a0500fa142
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce2c80e3d4ec62daa4774b99686ff10130834a78
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258694"
 ---
-# <a name="word-solutions"></a>Řešení pro Word
+# <a name="word-solutions"></a>řešení pro aplikaci Word
   Visual Studio poskytuje šablony projektů, které můžete použít k vytvoření přizpůsobení na úrovni dokumentu a doplňků VSTO pro aplikaci Microsoft Office Word. Tato řešení můžete použít k automatizaci aplikace Word, rozšířit funkce aplikace Word a přizpůsobení uživatelského rozhraní (UI) aplikace Word. Další informace o rozdílech mezi úpravy na úrovni dokumentu a doplňků VSTO najdete v tématu [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -45,9 +46,9 @@ ms.lasthandoff: 04/16/2018
   
  Toto téma poskytuje následující informace:  
   
--   [Automatizace v aplikaci Word](#automating).  
+-   [Automatizace aplikace Word](#automating).  
   
--   [Vývoj přizpůsobení na úrovni dokumentu ve Wordu](#doclevel).  
+-   [Úpravy na úrovni dokumentu ve Wordu vytvořte](#doclevel).  
   
 -   [Vývoj doplňků VSTO pro Word](#applevel).  
   
@@ -56,31 +57,31 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="automating"></a> Automatizace aplikace Word  
  Model objektů aplikace Word zpřístupní mnoho typů, které můžete použít k automatizaci aplikace Word. Například můžete prostřednictvím kódu programu vytvářet tabulky, formátování dokumentů a nastavit text v rozsahy a odstavce. Další informace najdete v tématu [přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md).  
   
- Při vývoji řešení aplikace Word v sadě Visual Studio, můžete také použít *hostitele položky* a *hostování ovládacích prvků* v řešení. Jedná se o objekty, které rozšiřují určité běžně používané objekty ve model objektů aplikace Word, jako <xref:Microsoft.Office.Interop.Word.Document> a <xref:Microsoft.Office.Interop.Word.ContentControl> objekty. Rozšířené objekty chovají jako Word objekty, které jsou založené na, ale přidat další události a možnosti pro datové vazby k objektům. Další informace najdete v tématu [automatizace aplikace Word pomocí rozšířených objekty](../vsto/automating-word-by-using-extended-objects.md).  
+ Při vývoji řešení aplikace Word v sadě Visual Studio, můžete také použít *hostitele položky* a *hostování ovládacích prvků* v řešení. Jedná se o objekty, které rozšiřují určité běžně používané objekty ve model objektů aplikace Word, jako <xref:Microsoft.Office.Interop.Word.Document> a <xref:Microsoft.Office.Interop.Word.ContentControl> objekty. Rozšířené objekty chovají jako Word objekty, které jsou založené na, ale přidat další události a možnosti pro datové vazby k objektům. Další informace najdete v tématu [automatizace aplikace Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md).  
   
 ##  <a name="doclevel"></a> Vývoj přizpůsobení na úrovni dokumentu pro Word  
  Přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Word se skládá ze sestavení, které souvisí s konkrétním dokumentu. Sestavení obvykle rozšiřuje dokumentu přizpůsobení uživatelského rozhraní a automatizace aplikace Word. Na rozdíl od Add-in VSTO, který je spojen s aplikací Word, samotné, funkce, které můžete implementovat přizpůsobení je k dispozici jenom v případě, že je otevřený v aplikaci Word přidružené dokument.  
   
- K vytvoření projektu přizpůsobení na úrovni dokumentu ve Wordu, pomocí šablony projektu dokument aplikace Word nebo šablony aplikace Word v **nový projekt** dialogové okno sady Visual Studio. Další informace najdete v tématu [postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ K vytvoření projektu přizpůsobení na úrovni dokumentu ve Wordu, pomocí šablony projektu dokument aplikace Word nebo šablony aplikace Word v **nový projekt** dialogové okno sady Visual Studio. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Další informace o přizpůsobení pracovní jak úrovni dokumentu [architektura z úpravy na úrovni dokumentů](../vsto/architecture-of-document-level-customizations.md).  
+ Další informace o přizpůsobení pracovní jak úrovni dokumentu [architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md).  
   
-### <a name="word-customization-programming-model"></a>Model programování přizpůsobení aplikace Word  
+### <a name="word-customization-programming-model"></a>Programovací model přizpůsobení aplikace Word  
  Když vytvoříte projekt na úrovni dokumentu ve Wordu, Visual Studio vygeneruje třídu s názvem `ThisDocument`, což je základ pro vaše řešení. Tato třída reprezentuje dokument, který je spojen s vaším řešením, a poskytuje výchozí bod pro psaní kódu.  
   
- Další informace o `ThisDocument` třídy a další funkce, které můžete použít v projektech na úrovni dokumentu, najdete v části [programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md).  
+ Další informace o `ThisDocument` třídy a další funkce, které můžete použít v projektech na úrovni dokumentu, najdete v části [programu úpravy na úrovni dokumentů](../vsto/programming-document-level-customizations.md).  
   
 ##  <a name="applevel"></a> Vývoj doplňků VSTO pro Word  
  VSTO Add-in pro aplikaci Microsoft Office Word se skládá z sestavení zavedená aplikace Word. Sestavení obvykle rozšíří slovo přizpůsobení uživatelského rozhraní a automatizace aplikace Word. Na rozdíl od přizpůsobení na úrovni dokumentu, který je přidružen ke konkrétní dokumentu, není omezen na jednom dokumentu funkce, které můžete implementovat v doplňku VSTO.  
   
- K vytvoření projektu doplňku VSTO pro Word, použití šablon projektu doplňku pro aplikaci Word v **nový projekt** dialogové okno sady Visual Studio. Další informace najdete v tématu [postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ K vytvoření projektu doplňku VSTO pro Word, použití šablon projektu doplňku pro aplikaci Word v **nový projekt** dialogové okno sady Visual Studio. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Obecné informace o fungování doplňků VSTO najdete v tématu [architektura VSTO doplňky](../vsto/architecture-of-vsto-add-ins.md).  
   
-### <a name="word-add-in-programming-model"></a>Model programování doplňku aplikace Word  
+### <a name="word-add-in-programming-model"></a>Word Add-in programovací model  
  Při vytváření projektu doplňku VSTO pro Word, Visual Studio vygeneruje třídu s názvem `ThisAddIn`, což je základ pro vaše řešení. Tato třída poskytuje výchozí bod pro zápis kódu a taky zpřístupňuje objektový model slova pro vaše doplňku VSTO.  
   
- Další informace o `ThisAddIn` třídy a další funkce, které můžete použít VSTO Add-in, najdete v části [programování doplňků VSTO](../vsto/programming-vsto-add-ins.md).  
+ Další informace o `ThisAddIn` třídy a další funkce, které můžete použít VSTO Add-in, najdete v části [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).  
   
 ##  <a name="UI"></a> Přizpůsobení uživatelského rozhraní aplikace Word  
  Přizpůsobení uživatelského rozhraní aplikace Word několika různými způsoby. Některé možnosti jsou k dispozici pro všechny typy projektů a další možnosti jsou k dispozici jenom doplňků VSTO nebo úpravy na úrovni dokumentů.  
@@ -106,18 +107,18 @@ ms.lasthandoff: 04/16/2018
   
 |Úloha|Další informace|  
 |----------|--------------------------|  
-|Vytvoření vlastního podokna úloh.|[Vlastní podokona úloh](../vsto/custom-task-panes.md)|  
+|Vytvoření vlastního podokna úloh.|[Vlastní podokna úloh](../vsto/custom-task-panes.md)|  
   
 ### <a name="related-topics"></a>Související témata  
   
 |Název|Popis|  
 |-----------|-----------------|  
 |[Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)|Poskytuje přehled hlavních typů poskytované model objektů aplikace Word.|  
-|[Automatizace v aplikaci Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md)|Poskytuje informace o rozšířených objektů (poskytované [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]), můžete použít v řešeních pro aplikaci Word.|  
-|[Přehled ovládacích prvků modelu Windows Forms v dokumentech Office](../vsto/windows-forms-controls-on-office-documents-overview.md)|Popisuje, jak můžete přidat ovládací prvky Windows Forms do dokumentů aplikace Word.|  
+|[Automatizace aplikace Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md)|Poskytuje informace o rozšířených objektů (poskytované [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]), můžete použít v řešeních pro aplikaci Word.|  
+|[Ovládací prvky Windows Forms na přehled dokumenty sady Office](../vsto/windows-forms-controls-on-office-documents-overview.md)|Popisuje, jak můžete přidat ovládací prvky Windows Forms do dokumentů aplikace Word.|  
 |[Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Ukazuje, jak vytvořit základní přizpůsobení na úrovni dokumentu ve Wordu.|  
-|[Návody: Vytvoření prvního doplňku VSTO pro Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Ukazuje, jak vytvořit základní Add-in VSTO ve Wordu.|  
-|[Návod: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Ukazuje, jak přidat Windows Forms tlačítko a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu za běhu pomocí doplňku VSTO.|  
-|[Wordu 2010 v vývoj pro Office](http://go.microsoft.com/fwlink/?LinkId=199020)|Obsahuje odkazy na články a referenční dokumentaci o vývoj řešení pro aplikaci Word (nejsou specifické pro vývoj pro Office pomocí sady Visual Studio).|  
+|[Návod: Vytvoření vaší první Add-in VSTO pro Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Ukazuje, jak vytvořit základní Add-in VSTO ve Wordu.|  
+|[Návod: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Ukazuje, jak přidat Windows Forms tlačítko a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu za běhu pomocí doplňku VSTO.|  
+|[Word 2010 v vývoj pro Office](http://go.microsoft.com/fwlink/?LinkId=199020)|Obsahuje odkazy na články a referenční dokumentaci o vývoj řešení pro aplikaci Word (nejsou specifické pro vývoj pro Office pomocí sady Visual Studio).|  
   
   

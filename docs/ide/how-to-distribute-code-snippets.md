@@ -14,17 +14,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1841dc30fce8e3799191ff9e2d91b94c7d8ac96b
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 44bf87f67c8042484e3b0907ea4d597136dcd820
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255454"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Postupy: distribuce fragmentů kódu
 
 Můžete poskytnout vaše fragmenty kódu přátelům a mít je instalace fragmenty kódu v jejich počítačích pomocí Správce fragmentů kódu. Ale pokud máte několik fragmenty kódu k distribuci nebo chcete je poměrně distribuovat, můžete zahrnout souboru fragment kódu v rozšíření sady Visual Studio, kteří uživatelé sady Visual Studio můžete nainstalovat.
 
-Chcete-li vytvořit rozšíření Visual Studia, je nutné nainstalovat sadu Visual Studio SDK. Najít verzi VSSDK, který odpovídá instalace Visual Studia na [Visual Studio stáhne](https://www.visualstudio.com/downloads/).
+Chcete-li vytvořit rozšíření Visual Studia, je nutné nainstalovat sadu Visual Studio SDK. Najít verzi VSSDK, který odpovídá instalace Visual Studia na [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 ## <a name="set-up-the-extension"></a>Nastavit rozšíření
 
@@ -104,6 +105,6 @@ V tomto postupu budeme používat stejné fragment kódu Hello, World vytvořen�
     Console.WriteLine("Hello, World!")
     ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Fragmenty kódu](../ide/code-snippets.md)

@@ -19,18 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09d18fec3e8d3830764846d1c25c9109b79b6fe4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 834288c063a4bc0d830f121dcb8589b509c61bcf
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256159"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Postupy: Ladění ve smíšeném režimu
 Následující postupy popisují postup ladění spravovaná a nativní kód, také známé jako ladění ve smíšeném režimu. Existují dva scénáře pro to, v závislosti na tom, zda knihovnu DLL nebo aplikace napsané v nativním kódu:  
   
 -   Volající aplikace, který volá vaše knihovna DLL je napsán v nativním kódu. V takovém případě je spravovat vaše knihovna DLL a spravovaná a nativní ladicí programy musí být povoleno ladění obě. To můžete zkontrolovat  **\<Projekt > stránky vlastností** dialogové okno. Tento postup závisí na tom, jestli spuštění ladění z projektu knihovny DLL nebo volání projekt aplikace.  
   
--   Volající aplikace, který volá vaše knihovna DLL je zapsané ve spravovaném kódu a vaše knihovna DLL je zapsán v nativním kódu.  
+-   Volající aplikace, který volá vaše knihovna DLL je zapsané ve spravovaném kódu a vaše knihovna DLL je zapsán v nativním kódu. Kurz vás provede tyto kroky v tématu [ladění spravovaná a nativní kód](../debugger/how-to-debug-managed-and-native-code.md).
   
 > [!NOTE]
 >  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).

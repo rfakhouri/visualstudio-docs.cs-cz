@@ -10,13 +10,14 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 3d392a24aa4a901e26a3e6cee3909aae581d3505
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90b9cfa94189e52a49e6ba22cc700568a21f9c91
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255233"
 ---
-# <a name="setup-install-and-verifications-for-mac-users"></a>Instalační program, instalace a ověření pro uživatele Mac
+# <a name="setup-install-and-verifications-for-mac-users"></a>Nastavení, instalace a ověření pro uživatele počítačů Mac
 Toto téma je určené výhradně pro vývojáře, kteří pracují hlavně na Macu a kteří volitelně použijte sadu Visual Studio uvnitř virtuálního počítače s Windows v Mac. Pokud jste vývojář pracující hlavně na počítači se systémem Windows a muset nastavit sekundární Mac pro cílení na iOS, přečtěte si téma hlavní [nastavení a instalaci](../cross-platform/setup-and-install.md) tématu.
 
  Pro práci s Xamarin na Macu, budete potřebovat následující:
@@ -43,7 +44,7 @@ Toto téma je určené výhradně pro vývojáře, kteří pracují hlavně na M
 
 ##  <a name="windows"></a> Instalační program systému Windows v Parallels (Visual Studio a Xamarin)
 
-1.  Pomocí plochy Windows, který jste nakonfigurovali v Parallels nebo VMWare, [stáhněte a spusťte instalační program pro všechny edice Visual Studio 2017](https://www.visualstudio.com/downloads/) (Community, Professional a Enterprise). Visual Studio 2017 Community je bezplatná edice; edice Professional a Enterprise můžete použít na základě zkušební verze po dobu 30 dnů.
+1.  Pomocí plochy Windows, který jste nakonfigurovali v Parallels nebo VMWare, [stáhněte a spusťte instalační program pro všechny edice Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (Community, Professional a Enterprise). Visual Studio 2017 Community je bezplatná edice; edice Professional a Enterprise můžete použít na základě zkušební verze po dobu 30 dnů.
 
 2.  V rámci instalačního programu, klikněte na **další možnosti** tlačítko (ikona tři řádky) _vedle_ **spusťte** zvolte **upravit**.:  
   

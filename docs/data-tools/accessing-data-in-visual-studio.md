@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fbfd4227a2a4acfd8e21703cc29ff13ec36bd986
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: eb9937804ccce197bbfead71f8706aa7456e8538
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255899"
 ---
 # <a name="access-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 
@@ -28,7 +29,7 @@ V sadě Visual Studio, můžete vytvořit aplikace, které se připojují k dat�
 
 Pro aplikace v jazyce JavaScript, Python, PHP, Ruby nebo C++ můžete připojit k datům jako cokoliv jiného, proveďte získáním knihovny a psaní kódu. Pro aplikace .NET Visual Studio poskytuje nástroje, které můžete použít k prozkoumat zdroje dat, vytváření modelů objekt uložení a pracovat s daty v paměti a vytvoření vazby dat s uživatelským rozhraním. Microsoft Azure poskytuje sady SDK pro .NET, Java, Node.js, PHP, Python, Ruby a mobilní aplikace a nástroje v sadě Visual Studio pro připojení k Azure Storage.
 
-Následující seznamy shrnují jen některé z mnoha systémy databáze a úložiště, které lze použít ze sady Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) nabídky jsou data služby, které zahrnují všechny zřizování a správy služby příslušné úložiště dat. **Azure development** zatížení v [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) umožňuje pracovat s Azure datová úložiště přímo ze sady Visual Studio.
+Následující seznamy shrnují jen některé z mnoha systémy databáze a úložiště, které lze použít ze sady Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) nabídky jsou data služby, které zahrnují všechny zřizování a správy služby příslušné úložiště dat. **Azure development** zatížení v [Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) umožňuje pracovat s Azure datová úložiště přímo ze sady Visual Studio.
 
 ![Vývoj pro Azure zatížení](media/azure-development-workload.png)
 

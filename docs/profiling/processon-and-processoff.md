@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e33d17e5f54066b038da36611329bb7169de4
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: b94001c13f5925107cecb49936ecdc5fb1e73514
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254355"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn a ProcessOff
 VSPerfCmd.exe **ProcessOff** a **ProcessOn** dílčích příkazů pozastavení a obnovení profilace pro proces zadaný v profilaci relaci příkazového řádku. **ProcessOff** zastaví profilace proces a **ProcessOn** spustí profilace proces.  
@@ -40,7 +41,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
   
 #### <a name="parameters"></a>Parametry  
  `PID`  
- Celé číslo identifikátor procesu spuštění nebo zastavení. ID procesu jsou uvedeny na kartě proces Správce úloh systému Windows.  
+ Celé číslo identifikátor procesu spuštění nebo zastavení. ID procesu jsou uvedené na **proces** karty Správce úloh systému Windows.  
   
 ## <a name="required-subcommands"></a>Požadované dílčích příkazů  
  Žádné  
@@ -78,8 +79,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Vsperfcmd –](../profiling/vsperfcmd.md)   
- [Profilace samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilace služeb](../profiling/command-line-profiling-of-services.md)
+ [Profil samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profil služby](../profiling/command-line-profiling-of-services.md)

@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a9e782c66f1201fdf8105cc7ef4fdc266c9d56db
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 62871cefc6d5b4f54d56ea17f04774d9d91b9984
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237796"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254950"
 ---
 # <a name="setup-and-install"></a>Nastavení a instalace
 
@@ -51,7 +51,7 @@ Pro cíl iOS emulátorů a zařízení z vašeho počítače Windows budete tak�
 
 Pokud jste ještě nenainstalovali Visual Studio 2017, proveďte následující kroky:
 
-1.  [Stáhněte a spusťte instalační program pro všechny edice Visual Studio 2017](https://www.visualstudio.com/downloads/) (Community, Professional a Enterprise). Visual Studio 2017 Community je edice free. Po dobu 30 dnů, po které je nutné licence jsou k dispozici na základě zkušební edice Professional a Enterprise.
+1.  [Stáhněte a spusťte instalační program pro všechny edice Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (Community, Professional a Enterprise). Visual Studio 2017 Community je edice free. Po dobu 30 dnů, po které je nutné licence jsou k dispozici na základě zkušební edice Professional a Enterprise.
 
 2.  Když **instalace** otevře se dialogové okno, zkontrolujte následující pole:    
 

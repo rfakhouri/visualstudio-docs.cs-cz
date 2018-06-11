@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: programové vkládání textu do dokumentů aplikace Word | Microsoft Docs'
+title: 'Postupy: programové vkládání textu do dokumentů aplikace Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bbbcc0543ce6017ac83ed2d1fcc09fed201e466f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 331fa8a91bb4fff51cb59b7a9f3cce23a38b3d2e
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257209"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Postupy: Vkládání textu do dokumentů aplikace Word prostřednictvím kódu programu
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Postupy: programové vkládání textu do dokumentů aplikace Word
   Vkládání textu do dokumentů aplikace Microsoft Office Word tři primární způsoby:  
   
 -   Vložte text v rozsahu.  
@@ -35,14 +36,14 @@ ms.lasthandoff: 04/16/2018
 -   Použití <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> metodu <xref:Microsoft.Office.Interop.Word.Selection> objekt, který chcete vložit text v kurzoru nebo výběru.  
   
 > [!NOTE]  
->  Můžete také vložit text do ovládacích prvků obsahu a záložky. Další informace najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md) a [ovládacího prvku záložek](../vsto/bookmark-control.md).  
+>  Můžete také vložit text do ovládacích prvků obsahu a záložky. Další informace najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md) a [Bookmark – ovládací prvek](../vsto/bookmark-control.md).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="inserting-text-in-a-range"></a>Vkládání textu v rozsahu  
+## <a name="insert-text-in-a-range"></a>Zadejte text v rozsahu  
  Použití <xref:Microsoft.Office.Interop.Word.Range.Text%2A> vlastnost <xref:Microsoft.Office.Interop.Word.Range> objekt, který chcete vložit text v dokumentu.  
   
-#### <a name="to-insert-text-in-a-range"></a>Chcete-li vložit text v rozsahu  
+### <a name="to-insert-text-in-a-range"></a>Chcete-li vložit text v rozsahu  
   
 1.  Zadejte rozsah na začátku dokumentu a vložit text **nového textu**.  
   
@@ -61,10 +62,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]  
   
-## <a name="replacing-text-in-a-range"></a>Nahrazování textu v rozsahu  
+## <a name="replace-text-in-a-range"></a>Nahradí text v rozsahu  
  Pokud zadaný rozsah obsahuje text, veškerého textu v rozsahu se nahradí vložený text.  
   
-#### <a name="to-replace-text-in-a-range"></a>Chcete-li nahradit text v rozsahu  
+### <a name="to-replace-text-in-a-range"></a>Chcete-li nahradit text v rozsahu  
   
 1.  Vytvoření <xref:Microsoft.Office.Interop.Word.Range> objekt, který se skládá z prvních 12 znaků v dokumentu.  
   
@@ -88,10 +89,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]  
   
-## <a name="inserting-text-using-typetext"></a>Vkládání textu s použitím TypeText  
+## <a name="insert-text-using-typetext"></a>Vložit text s použitím TypeText  
  <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> Metoda vloží text ve výběru. <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> pracuje odlišně v závislosti na možnostech nastavit v počítači uživatele. Kód v následujícím postupu deklaruje <xref:Microsoft.Office.Interop.Word.Selection> objektová proměnná a vypne zobrazování **přepisování** možnost, pokud je zapnutá. Pokud **přepisování** je aktivovaná možnost a potom se přepíše jakýkoli text vedle kurzor.  
   
-#### <a name="to-insert-text-using-the-typetext-method"></a>Chcete-li vložit text pomocí metody TypeText  
+### <a name="to-insert-text-using-the-typetext-method"></a>Chcete-li vložit text pomocí metody TypeText  
   
 1.  Deklarace <xref:Microsoft.Office.Interop.Word.Selection> proměnné objektu.  
   
@@ -120,16 +121,16 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
      [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
   
- Můžete také <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> metodu <xref:Microsoft.Office.Interop.Word.Selection> objekt, který napodobuje funkci BACKSPACE klíče na klávesnici. Ale při rozhodování o vložení a manipulace s nimi text, <xref:Microsoft.Office.Interop.Word.Range> objekt nabízí větší kontrolu.  
+ Můžete také <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> metodu <xref:Microsoft.Office.Interop.Word.Selection> objektu, která napodobuje funkce **Backspace** klíče na klávesnici. Ale při rozhodování o vložení a manipulace s nimi text, <xref:Microsoft.Office.Interop.Word.Range> objekt nabízí větší kontrolu.  
   
  Následující příklad ukazuje kód dokončení. Pokud chcete použít v tomto příkladu, spustit kód `ThisDocument` nebo `ThisAddIn` třídy ve vašem projektu.  
   
  [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
  [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Postupy: formátování textu v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-format-text-in-documents.md)   
  [Postupy: programové definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Postupy: Rozšiřování oblastí v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
+ [Postupy: rozšiřování oblastí v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
   
   

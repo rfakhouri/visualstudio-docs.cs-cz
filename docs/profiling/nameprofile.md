@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7f3b6ddfd52863585e26a1972f00e55515996d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 3f52b647cb6d110d111666df172d7243b0fd8ea4
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256133"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` Funkce přiřadí řetězec zadaný proces nebo přístup z více vláken.  
@@ -60,7 +61,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  Profilace úrovně identifikátor. Pomocí procesu nebo vlákna identifikátor, který je generováno systémem.  
   
-## <a name="property-valuereturn-value"></a>Hodnota vlastnosti / návratová hodnota  
+## <a name="property-valuereturn-value"></a>Vlastnost Hodnota/Návratová hodnota  
  Funkce označuje úspěch či neúspěch pomocí **PROFILE_COMMAND_STATUS** výčtu. Vrácená hodnota může být jeden z následujících akcí:  
   
 |Enumerátor|Popis|  
@@ -84,15 +85,15 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 > [!IMPORTANT]
 >  Funkce CreateProcess() a rozhraní API CreateThread() může vrátit před vlákno nebo procesu je inicializován.  
   
-## <a name="net-framework-equivalent"></a>Ekvivalent v rozhraní .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+## <a name="net-framework-equivalent"></a>Ekvivalent v rozhraní .NET framework  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informace o funkci  
   
 |||  
 |-|-|  
-|**Záhlaví**|Zahrnout VSPerf.h|  
-|**Knihovna**|Použití VSPerf.lib|  
+|**Záhlaví**|Zahrnout *VSPerf.h*|  
+|**Knihovna**|Použití *VSPerf.lib*|  
 |**Unicode**|Implementovaná jako `NameProfileW` (Unicode) a `NameProfileA` (ANSI).|  
   
 ## <a name="example"></a>Příklad  
@@ -133,5 +134,5 @@ void ExerciseNameProfile()
 }  
 ```  
   
-## <a name="see-also"></a>Viz také  
- [Referenční dokumentace rozhraní API sady Visual Studio Profiler (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Viz také:  
+ [Visual Studio profiler referenční dokumentace rozhraní API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)

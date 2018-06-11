@@ -9,17 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d40211b7d69d46bfbb24f6c1e0de8855809cda
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 326da0003e73c78a17df489473b49cf6d7b62380
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255412"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Rychlý úvod: Přizpůsobení Editor a Visual Studio – sada IDE
 
 V tento rychlý start 5 až 10 minut jsme budete přizpůsobit barvu motivu sady Visual Studio a barvy textu v **textového editoru**.
 
-Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránky instalaci zdarma.
+Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
 ## <a name="set-the-color-theme"></a>Nastavit Barva motivu
 
@@ -96,7 +97,7 @@ Nyní jsme budete přizpůsobit některé barvy textu pro Editor. První otevře
 
 Jsme prozkoumali jenom několik způsobů přizpůsobení barev v sadě Visual Studio. Doufáme, že budete prozkoumat další možnosti přizpůsobení v **možnosti** dialogové okno, a vytvořit tak Visual Studio vlastní.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Rychlý úvod: První pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)
 - [Rychlý úvod: Kódování v editoru](../ide/quickstart-editor.md)

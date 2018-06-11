@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 99e46e6e21eb08095aab0fe4f0baa9486ad3f721
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255925"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analýza využití paměti bez ladicího programu sady Visual Studio
 Můžete použít **využití paměti** nástroje bez ladění proveďte následující  
@@ -31,17 +32,17 @@ Můžete použít **využití paměti** nástroje bez ladění proveďte násled
   
  Toto téma popisuje, jak použít nástroj využití paměti pro analýzu aplikace UWP XAML. Pokud chcete analýza využití paměti v aplikaci UWP, která používá JavaScript a HTML najdete v tématu [analýza využití paměti (JavaScript)](../profiling/javascript-memory.md).  
   
-##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Spustit diagnostické relaci využití paměti  
+## <a name="start-a-memory-usage-diagnostic-session"></a>Spustit diagnostické relaci využití paměti  
   
 1.  Otevřete projekt C# Universal Windows v sadě Visual Studio.  
   
-2.  Na řádku nabídek zvolte **ladění** > **výkonu profileru**.  
+2.  Na řádku nabídek zvolte **ladění**>**výkonu profileru**.  
   
 3.  Vyberte **využití paměti** a potom zvolte **spustit** tlačítko v dolní části stránky.  
   
      ![Spustit diagnostické relaci využití paměti](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-##  <a name="BKMK_Monitor_memory_use"></a> Monitorování využití paměti  
+## <a name="monitor-memory-use"></a>Monitorování využití paměti  
  Přestože je možné použít **využití paměti** nástroje generovat podrobné sestavy, které vám pomůže najít a opravit problémy, můžete ji použít i k účinky v reálném čase paměti scénáři aktivně vyvíjíte.  
   
  Při spuštění relace diagnostiky spuštění vaší aplikace a **diagnostické nástroje** okně se zobrazí graf časová osa využití paměti vaší aplikace.  
@@ -55,12 +56,12 @@ Můžete použít **využití paměti** nástroje bez ladění proveďte násled
   
  Chcete-li ukončit relaci sledování bez vytváření sestavy, právě zavřete okno diagnostiky. Chcete-li vygenerovat sestavu, pokud jste pořídili snímky paměti, zvolte **Zastavit**.  
   
-##  <a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a> Pořízení snímků je stav paměti aplikace  
+## <a name="take-snapshots-of-the-memory-state-of-your-app"></a>Pořízení snímků je stav paměti aplikace  
  Pokud zjistíte paměti problém, který chcete prozkoumat, může trvat snímky během relace diagnostiky k zachycení objekty v paměti v konkrétní situacích. Protože se některá aplikace používá velký počet mnoho typů objektů, můžete chtít analýzy soustředit se jenom na jeden scénář. Je také vhodné k vytvoření standardních hodnot výpisu aplikace předtím, než se zobrazí chybu paměti, nový snímek po prvním výskytem problému a jeden nebo více další snímky Pokud scénáři, můžete opakovat.  
   
  Shromažďování snímků, zahájit novou relaci diagnostiky. Zvolte **trvat snímku** Pokud chcete zaznamenání dat o paměti. Chcete-li vygenerovat sestavu, zvolte **Zastavit**.  
   
-##  <a name="BKMK_Memory_Usage_overview_page"></a> Stránka s přehledem využití paměti  
+##  <a name="memory-usage-overview-page"></a>Stránka s přehledem využití paměti  
  Poté, co zastavíte shromažďování dat, nástroj využití paměti ukončí aplikaci a zobrazí přehled sestavy.  
   
  ![Stránka s přehledem využití paměti](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
@@ -78,12 +79,12 @@ Můžete použít **využití paměti** nástroje bez ladění proveďte násled
   
 |||  
 |-|-|  
-|![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Text odkazu zobrazuje celkový počet bajtů v paměti, když pořízení snímku.<br /><br /> Vyberte tento odkaz na Zobrazit sestavu Podrobnosti snímku seřazených podle celková velikost instance typu.|  
-|![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|Text odkazu zobrazuje celkový počet objektů v paměti, když pořízení snímku.<br /><br /> Vyberte tento odkaz na Zobrazit sestavu Podrobnosti snímku seřazených podle počtu instancí typy.|  
-|![Krok 3](../profiling/media/procguid_3.png "ProcGuid_3")|Text odkazu ukazuje rozdíl mezi celková velikost objektů v paměti v tuto chvíli tento snímek a celková velikost předchozí snímek.<br /><br /> Text odkazu je kladné číslo, když tento snímek velikost paměti je větší než předchozí a na záporné číslo, když velikost je menší. Text odkazu **směrného plánu** označuje, že tento snímek je první v relace diagnostiky; **Žádný rozdíl** označuje, že rozdíl je nula.<br /><br /> Vyberte tento odkaz na Zobrazit sestavu rozdílové snímku seřazených podle rozdíl ve celková velikost instance typy.|  
-|![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|Text odkazu ukazuje rozdíl mezi celkový počet paměťových objektech v tento snímek a počet objektů v předchozí snímek.<br /><br /> Vyberte tento odkaz na Zobrazit sestavu rozdílové snímku seřazených podle rozdíl ve celkový počet instancí typy.|  
+|![1. krok](../profiling/media/procguid_1.png "ProcGuid_1")|Text odkazu zobrazuje celkový počet bajtů v paměti, když pořízení snímku.<br /><br /> Vyberte tento odkaz na Zobrazit sestavu Podrobnosti snímku seřazených podle celková velikost instance typu.|  
+|![2. krok](../profiling/media/procguid_2.png "ProcGuid_2")|Text odkazu zobrazuje celkový počet objektů v paměti, když pořízení snímku.<br /><br /> Vyberte tento odkaz na Zobrazit sestavu Podrobnosti snímku seřazených podle počtu instancí typy.|  
+|![3. krok](../profiling/media/procguid_3.png "ProcGuid_3")|Text odkazu ukazuje rozdíl mezi celková velikost objektů v paměti v tuto chvíli tento snímek a celková velikost předchozí snímek.<br /><br /> Text odkazu je kladné číslo, když tento snímek velikost paměti je větší než předchozí a na záporné číslo, když velikost je menší. Text odkazu **směrného plánu** označuje, že tento snímek je první v relace diagnostiky; **Žádný rozdíl** označuje, že rozdíl je nula.<br /><br /> Vyberte tento odkaz na Zobrazit sestavu rozdílové snímku seřazených podle rozdíl ve celková velikost instance typy.|  
+|![4. krok](../profiling/media/procguid_4.png "ProcGuid_4")|Text odkazu ukazuje rozdíl mezi celkový počet paměťových objektech v tento snímek a počet objektů v předchozí snímek.<br /><br /> Vyberte tento odkaz na Zobrazit sestavu rozdílové snímku seřazených podle rozdíl ve celkový počet instancí typy.|  
   
-##  <a name="BKMK_Snapshot_reports"></a> Snímku sestavy  
+## <a name="snapshot-reports"></a>Snímku sestavy  
  ![Využití paměti snímek sestavy](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
   
 ###  <a name="BKMK_Snapshot_report_trees"></a> Stromy snímku sestavy  
@@ -118,7 +119,7 @@ Můžete použít **využití paměti** nástroje bez ladění proveďte násled
 ####  <a name="BKMK_Just_My_Code"></a> Pouze můj kód  
  **Pouze můj kód** filtru skryje většina instancí, které jsou generovány nástrojem externí kódu. Externí typy patří v operačním systému nebo součástí architektury, nebo jsou generované kompilátorem.  
   
-##  <a name="BKMK_Snapshot_details_reports"></a> Podrobnosti snímku sestavy  
+## <a name="snapshot-details-reports"></a>Podrobnosti snímku sestavy  
  Použijete snímek podrobnosti sestavy a zaměřit se na jeden snímek z relace diagnostiky. Otevřete sestavu podrobnosti, vyberte jednu z odkazů v zobrazení snímku, jak je znázorněno na následujícím obrázku. Obě odkaz otevře stejné sestavě; jediným rozdílem je výchozí pořadí řazení **spravovaná halda** stromu v sestavě. V obou případech můžete změnit pořadí řazení po sestava se otevře.  
   
  ![Odkazy na snímek sestavy v zobrazení snímku](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -157,7 +158,7 @@ Můžete použít **využití paměti** nástroje bez ladění proveďte násled
 |**Velikost (bajty)**|Pro typ, velikost všech instancích typu, s výjimkou velikost objekty obsažené v typu.<br /><br /> Pro instance, velikost objektu, s výjimkou velikost objekty obsažené v objektu.|  
 |**(Včetně). velikost (bajty)**|Celková velikost instance typu nebo velikost instance, včetně velikosti obsažené objekty.|  
   
-##  <a name="BKMK_Snapshot_difference__diff__reports"></a> Sestavy snímek rozdíl (rozdílové)  
+## <a name="snapshot-difference-diff-reports"></a>Sestavy snímek rozdíl (rozdílové)  
  Snímek sestavy rozdíl (rozdílové) zobrazuje změny mezi primární snímku a jeho snímek, která byla provedena bezprostředně před. Otevřete sestavu rozdílů, vyberte jednu z odkazů v zobrazení snímku, jak je znázorněno na následujícím obrázku. Obě odkaz otevře stejné sestavě; jediným rozdílem je výchozí pořadí řazení **spravovaná halda** stromu v sestavě. Po sestava se otevře, můžete změnit pořadí řazení.  
   
  ![Odkazy na rozdíl sestavy v zobrazení snímku](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
@@ -199,7 +200,7 @@ Můžete použít **využití paměti** nástroje bez ladění proveďte násled
 |**Velikost (bajty)**|Pro instance, velikost objektu v primární snímek, s výjimkou velikost objekty obsažené v instanci.<br /><br /> Pro typ, celková velikost instance typu v primární snímek, s výjimkou velikost objekty obsažené v instanci.|  
 |**(Včetně). velikost (bajty)**|Velikost objektů v primární snímek, včetně velikosti objekty obsažené v objektech.|  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Paměť jazyka JavaScript](../profiling/javascript-memory.md)  
  [Profilace v sadě Visual Studio](../profiling/index.md)  
  [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)  

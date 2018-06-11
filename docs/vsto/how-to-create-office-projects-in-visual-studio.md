@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: vytváření projektů Office v sadě Visual Studio | Microsoft Docs'
+title: 'Postupy: vytváření projektů Office v sadě Visual Studio'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -24,13 +24,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 29e84c08241bba09ab7923fa5997333f2371270d
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b1bf4270210334d38efc42dac62857505622c161
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255967"
 ---
-# <a name="how-to-create-office-projects-in-visual-studio"></a>Postupy: Vytváření projektů pro systém Office v prostředí Visual Studio
+# <a name="how-to-create-office-projects-in-visual-studio"></a>Postupy: vytváření projektů Office v sadě Visual Studio
   Můžete použít [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoření doplňku VSTO a na úrovni dokumentu vlastní nastavení pro aplikace Microsoft Office. Další informace o těchto typech projektů najdete v tématu [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -39,7 +40,7 @@ ms.lasthandoff: 05/17/2018
   
 ### <a name="to-create-a-vsto-add-in-project"></a>Vytvoření projektu doplňku VSTO  
   
-1.  Na **soubor** nabídce zvolte **nový**, **projektu**. Pokud integrované vývojové prostředí (IDE) je nastavený na použití [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] nastavení pro vývoj na **soubor** nabídce zvolte **nový**, **projektu**.  
+1.  Na **soubor** nabídce zvolte **nový** > **projektu**. Pokud integrované vývojové prostředí (IDE) je nastavený na použití [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] nastavení pro vývoj na **soubor** nabídce zvolte **nový** > **projektu**.  
   
      **Nový projekt** zobrazí se dialogové okno.  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 05/17/2018
   
 ### <a name="to-create-a-document-level-customization-project"></a>Vytvoření projektu přizpůsobení na úrovni dokumentu  
   
-1.  Na **soubor** nabídce zvolte **nový**, **projektu**. Pokud vaše IDE je nastavený na použití nastavení vývoj jazyka Visual Basic, na **soubor** nabídce zvolte **nový**, **projektu**.  
+1.  Na **soubor** nabídce zvolte **nový** > **projektu**. Pokud vaše IDE je nastavený na použití nastavení vývoj jazyka Visual Basic, na **soubor** nabídce zvolte **nový** > **projektu**.  
   
      **Nový projekt** zobrazí se dialogové okno.  
   
@@ -117,7 +118,7 @@ ms.lasthandoff: 05/17/2018
   
 7.  Vyberte **vytvoříte nový textový dokument** Pokud chcete vytvořit nový dokument pro řešení, nebo vyberte **zkopírovat stávající dokument** Pokud chcete přizpůsobit existující dokument.  
   
-     Pokud vytvoříte nový textový dokument, zadejte název v **název** pole a vyberte formát dokumentu pomocí **formát** pole. Další informace o dostupných formátů najdete v tématu [architektura z úpravy na úrovni dokumentů](../vsto/architecture-of-document-level-customizations.md).  
+     Pokud vytvoříte nový textový dokument, zadejte název v **název** pole a vyberte formát dokumentu pomocí **formát** pole. Další informace o dostupných formátů najdete v tématu [architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md).  
   
      Pokud chcete použít stávající dokument, zadejte umístění dokumentu v **úplnou cestu stávající dokument** pole. Můžete použít absolutní cesty a cesty UNC. Nepoužívejte HTTP, FTP nebo jiných protokol cest k dokumentu.  
   
@@ -146,22 +147,22 @@ ms.lasthandoff: 05/17/2018
     -   Znak procenta (%)  
   
     > [!NOTE]  
-    >  Pokud používáte stávající dokument v [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] projektu, používat jenom dokumenty, které byly vytvořeny nebo převést na [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Podobně pokud používáte stávající dokument aplikace Word 2010 projektu, používat jenom dokumenty, které byly vytvořeny nebo převést na Wordu 2010. Některé funkce budou zakázané v dokumentu, pokud používáte dokument, který byl vytvořen ve starší verzi aplikace Word. Pokud se pokusíte napsat kód, který používá tyto funkce, které může dojít k chybám ve vašem projektu. Chcete-li převést dokument, otevřete ho v [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo Word 2010 na **soubor** na pásu karet, zvolte **informace o**, **převést**.  
+    >  Pokud používáte stávající dokument v [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] projektu, používat jenom dokumenty, které byly vytvořeny nebo převést na [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Podobně pokud používáte stávající dokument aplikace Word 2010 projektu, používat jenom dokumenty, které byly vytvořeny nebo převést na Wordu 2010. Některé funkce budou zakázané v dokumentu, pokud používáte dokument, který byl vytvořen ve starší verzi aplikace Word. Pokud se pokusíte napsat kód, který používá tyto funkce, které může dojít k chybám ve vašem projektu. Chcete-li převést dokument, otevřete ho v [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo Word 2010 na **soubor** na pásu karet, zvolte **informace o** > **převést**.  
   
 8.  Zvolte **Dokončit**.  
   
 9. Přidejte projekt složce a jejích podsložkách do seznamu důvěryhodných lokalit v Centru zabezpečení v aplikaci Word v následujících případech:  
   
-    -   Vytváříte dokument aplikace Word, který je založen na soubor DOCM a dokument obsahuje projekt VBA nebo hostitelem ovládací prvky Windows Forms. Přidání složky projektu do seznamu důvěryhodných lokalit vám pomůže, ujistěte se, že dokument funguje podle očekávání v době návrhu.  
+    -   Vytváříte založený na dokument aplikace Word *DOCM* soubor a dokument obsahuje projekt VBA nebo hostitelem ovládací prvky Windows Forms. Přidání složky projektu do seznamu důvěryhodných lokalit vám pomůže, ujistěte se, že dokument funguje podle očekávání v době návrhu.  
   
-    -   Vytvoříte projekt šablony aplikace Word, který je založen na DOTX souboru. Složce projektu musíte přidat do seznamu důvěryhodných lokalit, aby mohli spustit a ladění projektu.  
+    -   Vytváření projektu šablony aplikace Word, který je založen na *DOTX* souboru. Složce projektu musíte přidat do seznamu důvěryhodných lokalit, aby mohli spustit a ladění projektu.  
   
      Další informace o tom, jak přidat do důvěryhodného umístění dokumentu, najdete v článku na webu společnosti Microsoft Office Online [Create, odebrat nebo změnit důvěryhodném umístění pro soubory](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Přehled šablon projektů Microsoft Office](../vsto/office-project-templates-overview.md)   
  [Spolupráce na vývoji řešení pro systém Office](../vsto/collaborative-development-of-office-solutions.md)   
- [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
- [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
+ [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

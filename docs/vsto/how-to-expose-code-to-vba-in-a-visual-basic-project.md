@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: vystavení kódu do VBA v projektu jazyka Visual Basic | Microsoft Docs'
+title: 'Postupy: vystavení kódu do VBA v projektu jazyka Visual Basic'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 39dc659f7c8841bcf350249332278091232a32d2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a979d62c8320d57c3243e4d60ef93ee56eb06cf
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256094"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Postupy: Vystavení kódu v projektu jazyka Visual Basic pro jazyk VBA
+# <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Postupy: vystavení kódu do VBA v projektu jazyka Visual Basic
   Můžete vystavení kódu v [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projektu do jazyka Visual Basic pro aplikace (VBA) kód, pokud chcete, aby dva typy kódu dojít ke vzájemné interakci.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -38,18 +39,18 @@ ms.lasthandoff: 04/16/2018
   
 -   [Vystavení kódu, který není v třídě položky hostitele](#NonHostItem)  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak provést I: volání VSTO kódu z jazyka VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
+ ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak VSTO I: volání kódu z jazyka VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
 ##  <a name="HostItemCode"></a> Vystavení kódu v třídě položky hostitele  
  Chcete-li povolit VBA kód volat kód jazyka Visual Basic v třídě položky hostitele, nastavte **EnableVbaCallers** vlastnosti položky hostitele k **True**.  
   
- Návod, jak vystavit metodu, třídu položky hostitele a poté ji volat z jazyka VBA najdete v tématu [návod: volání kódu z jazyka VBA v projektu jazyka Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Další informace o hostitelských položkách najdete v tématu [hostitelských položek a Přehled ovládacích prvků hostitele](../vsto/host-items-and-host-controls-overview.md).  
+ Návod, jak vystavit metodu, třídu položky hostitele a poté ji volat z jazyka VBA najdete v tématu [návod: volání kódu z jazyka VBA v projektu jazyka Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Další informace o hostitelských položkách najdete v tématu [hostitele položky a hostitelem Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).  
   
 #### <a name="to-expose-code-in-a-host-item-to-vba"></a>K vystavení kódu v položce hostitele pro jazyk VBA  
   
 1.  Otevřít nebo vytvořit úrovni dokumentu [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projektu, který je založený na dokument aplikace Word, sešit aplikace Excel nebo Excel šablony, která podporuje makra, který již obsahuje VBA kód.  
   
-     Další informace o formátech souborů dokumentu, které podporují makra najdete v tématu [kombinování VBA pro vytváření a úpravy na úrovni dokumentů](../vsto/combining-vba-and-document-level-customizations.md).  
+     Další informace o formátech souborů dokumentu, které podporují makra najdete v tématu [kombinovat VBA pro vytváření a úpravy na úrovni dokumentů](../vsto/combining-vba-and-document-level-customizations.md).  
   
     > [!NOTE]  
     >  Tuto funkci nelze použít v šabloně projekty aplikace Word.  
@@ -78,11 +79,11 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="NonHostItem"></a> Vystavení kódu, který není v třídě položky hostitele  
  Povolit VBA kód volat kód jazyka Visual Basic, který není v třídě položky hostitele, upravte kód tak, aby byl viditelný pro jazyk VBA.  
   
-#### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>Aby se zveřejnily kód, který není v třídě položky hostitele pro jazyk VBA  
+### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>Aby se zveřejnily kód, který není v třídě položky hostitele pro jazyk VBA  
   
 1.  Otevřít nebo vytvořit úrovni dokumentu [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projektu, který je založený na dokument aplikace Word, sešit aplikace Excel nebo Excel šablony, která podporuje makra, který již obsahuje VBA kód.  
   
-     Další informace o formátech souborů dokumentu, které podporují makra najdete v tématu [kombinování VBA pro vytváření a úpravy na úrovni dokumentů](../vsto/combining-vba-and-document-level-customizations.md).  
+     Další informace o formátech souborů dokumentu, které podporují makra najdete v tématu [kombinovat VBA pro vytváření a úpravy na úrovni dokumentů](../vsto/combining-vba-and-document-level-customizations.md).  
   
     > [!NOTE]  
     >  Tuto funkci nelze použít v šabloně projekty aplikace Word.  
@@ -119,9 +120,9 @@ ms.lasthandoff: 04/16/2018
   
 9. Sestavte projekt.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
+ [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
  [Kombinování VBA pro vytváření a úpravy na úrovni dokumentů](../vsto/combining-vba-and-document-level-customizations.md)   
  [Návod: Volání kódu z jazyka VBA v projektu jazyka Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
  [Postupy: vystavení kódu do VBA v Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 885d01d0d8f363a0b5b3a6abe2d3c2c018334092
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ce535ee8df4d33ad67f62c3a69def65ceabf3e79
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255155"
 ---
 # <a name="performance-session-overview"></a>Přehled výkonnostní relace
 Tento přehled popisuje základní informace o vytváření profilů. Vývojáři, kteří jsou pro nové pracovní výkonu zobrazí jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích pro profilaci mohou pomoci produktivitu rychle a zvýšit výkon svůj kód. Vývojáři, kteří mají zkušenosti v profilaci může získat přehled o konkrétní nástrojích pro profilaci funkce a procesy.  
@@ -49,7 +50,7 @@ Tento přehled popisuje základní informace o vytváření profilů. Vývojář
   
  Výkonnostní relace v můžete nakonfigurovat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu jako součást řešení projektu, nebo profil libovolný binární soubory prostřednictvím [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Můžete zadat vlastnosti relace na stránkách vlastností výkonnostní relace nebo můžete použít Průvodce profilace.  
   
-## <a name="collect-profiling-data"></a>Shromažďování dat profilaci  
+## <a name="collect-profiling-data"></a>Shromažďovat data profilování  
  Spustit profilování data z kolekce **prohlížeč výkonu**. Můžete pozastavit a obnovit, profilace omezit množství dat, které shromažďujete. Také můžete připojit k procesu, který je již spuštěn.  
   
  Při spuštění aplikace **ovládací prvek kolekce dat** zobrazí okno [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Z **ovládací prvek kolekce dat** můžete profil konkrétní částí aplikace pomocí pozastavení a obnovení proces shromažďování. Můžete také **ovládací prvek kolekce dat** okno značky vložení do data, která se shromažďují. Značky jsou uživatelem definované datové body, které jsou zobrazeny v zobrazení profil a který mohou být použity k filtrování data profilování.  
@@ -68,12 +69,12 @@ Tento přehled popisuje základní informace o vytváření profilů. Vývojář
 ## <a name="modify-the-application-code"></a>Upravit kód aplikace  
  Po mají izolované jeden nebo více problémů s výkonem relevantní, můžete upravit kód pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE a pak shromažďování dat pro změny profilaci.  
   
-## <a name="collect-profiling-data-again-and-compare-the-data-between-the-profiling-runs"></a>Shromažďování dat znovu profilaci a porovnávání dat mezi profilování běží  
+## <a name="collect-profiling-data-again-and-compare-the-data-between-the-profiling-runs"></a>Znovu shromažďovat data profilování a porovnávání dat mezi profilování běží  
  Zobrazení sestavy profilace porovnání nástrojů zobrazí rozdíl v modulu, funkce nebo výkonu řádek mezi dvě datových souborů profilace vybrané. Můžete zadat profilování datových hodnot, které chcete porovnat, a můžete přepínat mezi porovnání zobrazení a zobrazení jednotlivých souborů.  
   
 ## <a name="generate-a-report-of-the-results"></a>Vygenerování sestavy výsledků  
  Řádky všechna zobrazení sestavy výkonu můžete vložit do e-mailů a tabulek a můžete generovat sestavy, které obsahují data pro jeden nebo více zobrazení.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Přehled](../profiling/overviews-performance-tools.md)   
- [Návod: Identifikace problémy s výkonem](../profiling/walkthrough-identifying-performance-problems.md)
+ [Návod: Identifikace problémů s výkonem](../profiling/walkthrough-identifying-performance-problems.md)

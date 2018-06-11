@@ -1,5 +1,5 @@
 ---
-title: '&lt;aplikace&gt; – Element (vývoj pro Office v sadě Visual Studio) | Microsoft Docs'
+title: '&lt;aplikace&gt; – element (vývoj pro Office v sadě Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,18 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90810bf6e9a3b47148598c3e9c3d217989f115ea
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 0d513ce5d9439ffa55a32d5210669162c0a21e2e
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255818"
 ---
-# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;aplikace&gt; – Element (vývoj pro Office v sadě Visual Studio)
+# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;aplikace&gt; – element (vývoj pro Office v sadě Visual Studio)
   `application` Element `vstav3` obor názvů zabalí popis řešení pro systém Office. Podřízené elementy se liší pro přizpůsobení na úrovni dokumentu a doplňků VSTO.  
   
 ## <a name="syntax-for-document-level-customizations"></a>Syntaxe pro úpravy na úrovni dokumentů  
   
-```  
+```xml  
 <application>  
   <customization  
     id  
@@ -37,9 +38,9 @@ ms.lasthandoff: 04/27/2018
 </application>  
 ```  
   
-## <a name="syntax-for-application-level-add-ins"></a>Syntaxe pro doplňky na úrovni aplikace  
+## <a name="syntax-for-application-level-add-ins"></a>Syntaxe pro doplňky úrovni aplikace  
   
-```  
+```xml
 <application>  
   <customization  
     id  
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/27/2018
   
  `application` Element má následující element.  
   
-### <a name="customization"></a>přizpůsobení  
+### <a name="customization"></a>Přizpůsobení  
  Role `customization` element v `vstov3` obor názvů je definován v [ &#60;přizpůsobení&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Příklad přizpůsobení na úrovni dokumentu  
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="code"></a>Kód  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -90,7 +91,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="code"></a>Kód  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -120,9 +121,9 @@ ms.lasthandoff: 04/27/2018
 </vstav3:application>  
 ```  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Manifesty aplikace pro řešení pro systém Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce – manifest aplikace ](/visualstudio/deployment/clickonce-application-manifest)  
+ [ClickOnce – manifest aplikace](/visualstudio/deployment/clickonce-application-manifest)  
   
   

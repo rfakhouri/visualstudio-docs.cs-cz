@@ -11,11 +11,12 @@ ms.author: shoag
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: eb180dfa5550cf6237697c4e214a3742b195b065
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 89d92bb28f6f81dace335fabff8b2aa75674fd3f
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254402"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Vývoj aplikací pro Univerzální platformu Windows (UWP)
 Univerzální platformu Windows a naše jeden jádro systému Windows můžete spustit na jakékoli zařízení s Windows 10, z telefonů pro stolní počítače stejné aplikaci. Vytvořte tyto univerzální aplikace pro Windows s Visual Studio a nástroje pro vývoj pro univerzální aplikace pro Windows.  
@@ -39,7 +40,7 @@ Univerzální platformu Windows je jednoduše kolekce kontrakty a verze. To umo�
   
 -   [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 podporuje vývoj UWP jenom na Windows 10. Další podrobnosti najdete v sadě Visual Studio [cílení na platformy](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs) a [požadavky na systém](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs).   
   
--   [Visual Studio](https://www.visualstudio.com/downloads/). Budete také potřebovat volitelné úlohy vývoj pro univerzální platformu Windows.  
+-   [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Budete také potřebovat volitelné úlohy vývoj pro univerzální platformu Windows.  
 
      ![Zatížení UWP](media/uwp_workload.png)
   
@@ -52,5 +53,5 @@ Pokud máte existující aplikace Windows Store 8.1, Windows Phone 8.1 aplikace 
   
 Po vytvoření aplikace pro Universal Windows, musíte sestavit balíček aplikaci instalovat do zařízení Windows 10 nebo odeslat na web Windows Store. V tématu [balení aplikací](/windows/uwp/packaging/index).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 [Vývoj multiplatformních mobilních řešení v sadě Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)  

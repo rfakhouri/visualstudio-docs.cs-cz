@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81e5f0696db8f8e29204f9fbed49cc347a4afb74
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 53366b300c94166116c0dc03b108991fc80af013
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255129"
 ---
 # <a name="perftips"></a>PerfTips
 Ladicí program Visual Studio *PerfTips* a integrovaná s ladicím programem **diagnostické nástroje** umožňují monitorovat a analyzovat výkon aplikace při ladění.  
   
- I když integrovaná s ladicím programem diagnostické nástroje jsou skvělý způsob od zjištění této problémy s výkonem při vývoji, ladicí program může mít významný dopad na výkon vaší aplikace. Ke shromažďování dat přesnější výkonu, zvažte použití nástroje Visual Studio diagnostiky, které spustit mimo ladicí program příliš jako další část vaší vyšetřování výkonu. V tématu [spuštění nástroje pro profilaci s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md).  
+ I když integrovaná s ladicím programem diagnostické nástroje jsou skvělý způsob od zjištění této problémy s výkonem při vývoji, ladicí program může mít významný dopad na výkon vaší aplikace. Ke shromažďování dat přesnější výkonu, zvažte použití nástroje Visual Studio diagnostiky, které spustit mimo ladicí program příliš jako další část vaší vyšetřování výkonu. V tématu [spustit profilování nástroje s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md).  
   
 ## <a name="perftips"></a>PerfTips  
  Při zastavení ladicího programu provádění na zarážek nebo taktování operace, uplynulý čas mezi rozdělení a předchozí zarážek se jako tlačítka v okně editoru. Další informace najdete v tématu [PerfTips: informace o výkonu v přehledem při ladění pomocí sady Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).  
@@ -27,9 +28,9 @@ Ladicí program Visual Studio *PerfTips* a integrovaná s ladicím programem **d
  ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>Okno diagnostické nástroje  
- Zarážky a přidružené časových dat se zaznamenávají v okně diagnostické nástroje  
+ Zarážky a přidružené časových dat se zaznamenávají **diagnostické nástroje** okno.  
   
- Následující obrázek ukazuje okno diagnostické nástroje ve Visual Studiu 2015 Update 1:  
+ Následující grafické ukazuje **diagnostické nástroje** okno ve Visual Studiu 2015 Update 1:  
   
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
@@ -55,6 +56,6 @@ Ladicí program Visual Studio *PerfTips* a integrovaná s ladicím programem **d
   
 2.  Zaškrtněte nebo zrušte zaškrtnutí **povolit diagnostické nástroje při ladění**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
  [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Prohlídka funkce profilace](../profiling/profiling-feature-tour.md)
+ [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)

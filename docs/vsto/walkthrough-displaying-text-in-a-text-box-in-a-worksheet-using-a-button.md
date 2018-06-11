@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Zobrazení textu v textovém poli na listu s použitím tlačítka | Microsoft Docs'
+title: 'Návod: Zobrazení textu v textovém poli na listu s použitím tlačítka'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e141618fb5b647f0cdb5341627356588df932fed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e9f9679f235837521b06943b1335eb6577c9408
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258438"
 ---
-# <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Návod: Zobrazení textu v textovém poli na listu s použitím tlačítka
+# <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Návod: Zobrazení textu v textovém poli na listu s použitím tlačítka
   Tento návod ukazuje základy používání tlačítka a pole textu v listech aplikace Microsoft Office Excel a postup vytvoření projekty aplikace Excel pomocí nástroje pro vývoj pro Office v sadě Visual Studio. Výsledek jako hotová ukázka najdete v sekci Ukázka ovládací prvky aplikace Excel v [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -47,19 +48,19 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Vytvoření projektu  
+## <a name="create-the-project"></a>Vytvoření projektu  
  V tomto kroku vytvoříte projekt sešitu aplikace Excel pomocí sady Visual Studio.  
   
-#### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
+### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
-1.  Vytvoření projektu sešitu aplikace Excel s názvem **Moje aplikace Excel tlačítko**. Ujistěte se, že **vytvoříte nový textový dokument** je vybrána. Další informace najdete v tématu [postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Vytvoření projektu sešitu aplikace Excel s názvem **Moje aplikace Excel tlačítko**. Ujistěte se, že **vytvoříte nový textový dokument** je vybrána. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otevře nové sešitu aplikace Excel v návrháři a přidá **Moje aplikace Excel tlačítko** projektu do **Průzkumníku řešení**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Přidání ovládacích prvků na list  
+## <a name="add-controls-to-the-worksheet"></a>Přidání ovládacích prvků do listu  
  V tomto návodu budete potřebovat tlačítka a textové pole na prvním listu.  
   
-#### <a name="to-add-a-button-and-a-text-box"></a>Přidání tlačítka a textové pole  
+### <a name="to-add-a-button-and-a-text-box"></a>Přidání tlačítka a textové pole  
   
 1.  Ověřte, zda **Moje aplikace Excel Button.xlsx** je sešit otevřít v návrháři Visual Studio s `Sheet1` zobrazí.  
   
@@ -78,10 +79,10 @@ ms.lasthandoff: 04/16/2018
   
  Nyní psát kód pro spuštění při kliknutí na tlačítko.  
   
-## <a name="populating-the-text-box-when-the-button-is-clicked"></a>Při kliknutí na tlačítko naplnění textového pole  
+## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Při kliknutí na tlačítko naplnit textového pole  
  Pokaždé, když uživatel klikne na tlačítko **Hello, World!** připojí se k textového pole.  
   
-#### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Při kliknutí na tlačítko zapsat do textového pole  
+### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Při kliknutí na tlačítko zapsat do textového pole  
   
 1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na **Sheet1**a potom klikněte na **kód zobrazení** v místní nabídce.  
   
@@ -90,16 +91,16 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]  
   
-3.  V jazyce C#, je nutné přidat obslužnou rutinu události a <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> událostí, jak je uvedeno níže. Informace o vytváření obslužných rutin událostí najdete v tématu [postupy: vytvoření obslužné rutiny událostí v projektech Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  V jazyce C#, je nutné přidat obslužnou rutinu události a <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> událostí, jak je uvedeno níže. Informace o vytváření obslužných rutin událostí najdete v tématu [postupy: vytváření obslužných rutin událostí v projektech Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]  
   
-## <a name="testing-the-application"></a>Testování aplikace  
+## <a name="test-the-application"></a>Testování aplikace  
  Nyní můžete otestovat váš sešit Ujistěte se, že zpráva **Hello, World!** v textovém poli se zobrazí, když kliknete na tlačítko.  
   
-#### <a name="to-test-your-workbook"></a>K testování sešitu  
+### <a name="to-test-your-workbook"></a>K testování sešitu  
   
-1.  Stisknutím klávesy F5 spusťte projekt.  
+1.  Stiskněte klávesu **F5** ke spuštění projektu.  
   
 2.  Klikněte na tlačítko.  
   
@@ -110,11 +111,11 @@ ms.lasthandoff: 04/16/2018
   
 -   Nasazení projektu. Další informace najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
--   Chcete-li změnit formátování pomocí zaškrtávacích políček. Další informace najdete v tématu [návod: Změna listu formátování pomocí ovládacích prvků CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
+-   Chcete-li změnit formátování pomocí zaškrtávacích políček. Další informace najdete v tématu [návod: Změna formátování listů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
   
-## <a name="see-also"></a>Viz také  
- [Postupy: Přidání ovládacích prvků do dokumentů Office Windows Forms](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Návody pro práci s aplikací Excel](../vsto/walkthroughs-using-excel.md)   
- [Omezení ovládacích prvků modelu Windows Forms v dokumentech Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+## <a name="see-also"></a>Viz také:  
+ [Postupy: Přidání ovládacích prvků Windows Forms do dokumentů Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Návody pomocí aplikace Excel](../vsto/walkthroughs-using-excel.md)   
+ [Omezení ovládacích prvků Windows Forms v dokumentech Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

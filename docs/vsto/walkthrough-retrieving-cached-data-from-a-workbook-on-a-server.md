@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b9b9296bd57e7f3057dfbca86c16b1ac41418ba0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 1ff950e5e4f67321b4bb5f90f9220aa701c02463
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258603"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Návod: Načtení dat uložených v mezipaměti ze sešitu na serveru
   Tento návod ukazuje, jak načíst data z datové sady, které se uloží do mezipaměti v sešitu aplikace Microsoft Office Excel bez spuštění aplikace Excel pomocí <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy.  
@@ -63,7 +64,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Vytvoření projektu knihovny tříd, která definuje datové sady  
  Pokud chcete používat se stejnou datovou v projektu sešitu aplikace Excel a konzolovou aplikaci, je nutné zadat datovou sadu v samostatném sestavení, který je odkazován obě tyto projekty. V tomto návodu definování datové sady v projektu knihovny tříd.  
   
-#### <a name="create-the-class-library-project"></a>Vytvoření projektu knihovny tříd  
+### <a name="create-the-class-library-project"></a>Vytvoření projektu knihovny tříd  
   
 1.  Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -90,7 +91,7 @@ ms.lasthandoff: 05/17/2018
   
  Je datová sada *typové datové sady* představující data v tabulce produktu databáze AdventureWorksLT. Další informace o typové datové sady, najdete v části [datové sady nástrojů v sadě Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).  
   
-#### <a name="define-a-typed-dataset-in-the-class-library-project"></a>Definování typové datové sady v projektu knihovny tříd  
+### <a name="define-a-typed-dataset-in-the-class-library-project"></a>Definování typové datové sady v projektu knihovny tříd  
   
 1.  V **Průzkumníku řešení**, klikněte **AdventureWorksDataSet** projektu.  
   
@@ -125,7 +126,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="create-an-excel-workbook-project"></a>Vytvoření projektu sešitu aplikace Excel  
  Vytvoření projektu sešitu aplikace Excel pro rozhraní k datům. Dále v tomto návodu vytvoříte <xref:Microsoft.Office.Tools.Excel.ListObject> , zobrazí data a přidáte instanci datové sady do mezipaměti data v sešitu.  
   
-#### <a name="create-the-excel-workbook-project"></a>Vytvoření projektu sešitu aplikace Excel  
+### <a name="create-the-excel-workbook-project"></a>Vytvoření projektu sešitu aplikace Excel  
   
 1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **AdventureWorksDataSet** řešení, přejděte na příkaz **přidat**a potom klikněte na **nový projekt**.  
   
@@ -201,7 +202,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="checkpoint"></a>Kontrolní bod  
  Sestavte a spusťte projekt sešitu aplikace Excel, který má zajistit, aby zkompiluje a spustí bez chyb. Tato operace také vyplní celé datové sady v mezipaměti a uloží data v sešitu.  
   
-#### <a name="build-and-run-the-project"></a>Sestavení a spuštění projektu  
+### <a name="build-and-run-the-project"></a>Sestavení a spuštění projektu  
   
 1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **AdventureWorksReport** projektu, zvolte **ladění**a potom klikněte na **spustit novou instanci**.  
   
@@ -233,11 +234,11 @@ ms.lasthandoff: 05/17/2018
 ## <a name="retrieve-data-from-the-cached-dataset-by-using-the-console-application"></a>Načtení dat z datové sady v mezipaměti pomocí konzolové aplikace  
  Použití <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> – třída v konzolové aplikaci k načtení dat do místní `AdventureWorksLTDataSet` objektu. Potvrďte, že byl inicializován místní datovou sadu s daty z datové sady v mezipaměti, aplikace zobrazí počet řádků v místní datové sadě.  
   
-#### <a name="retrieve-data-from-the-cached-dataset"></a>Načtení dat z datové sady v mezipaměti  
+### <a name="retrieve-data-from-the-cached-dataset"></a>Načtení dat z datové sady v mezipaměti  
   
 1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **DataReader –** projektu a klikněte na tlačítko **přidat odkaz na**.  
   
-2.  Na **.NET** vyberte Microsoft.VisualStudio.Tools.Applications.ServerDocument.  
+2.  Na **.NET** vyberte **Microsoft.VisualStudio.Tools.Applications.ServerDocument**.  
   
 3.  Click **OK**.  
   
@@ -282,7 +283,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="test-the-project"></a>Testování projektu  
  Když spustíte konzolové aplikace, zobrazí počet řádků v místní datové sadě.  
   
-#### <a name="test-the-workbook"></a>Testování sešitu  
+### <a name="test-the-workbook"></a>Testování sešitu  
   
 1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **DataReader –** projektu, přejděte na **ladění**a potom klikněte na **spustit novou instanci**.  
   
@@ -295,7 +296,7 @@ ms.lasthandoff: 05/17/2018
   
 -   Změna dat v datové sady v mezipaměti bez spuštění aplikace Excel. Další informace najdete v tématu [návod: Změna mezipaměti data v sešitu na serveru](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Návod: Vložení dat do sešitu na serveru](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)   
  [Návod: Změna data uložená v mezipaměti v sešitu na serveru](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)   
   
