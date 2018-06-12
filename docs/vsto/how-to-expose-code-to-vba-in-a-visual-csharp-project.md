@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: vystavení kódu do VBA v projektu jazyka Visual C# | Microsoft Docs'
+title: 'Postupy: vystavení kódu do VBA v projektu jazyka Visual C#'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,29 +18,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7564d64763549f2fefe8e0a8b9813fdef9a16b6f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36bdcd7360099818ac8510d9eab87d6d3dc0f0fc
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257248"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Postupy: Vystavení kódu v projektu jazyka Visual C# pro jazyk VBA
+# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Postupy: vystavení kódu do VBA v projektu jazyka Visual C#
   Můžete vystavení kódu v jazyce Visual C# projektu do jazyka Visual Basic pro aplikace (VBA) kód, pokud chcete, aby dva typy kódu dojít ke vzájemné interakci.  
   
  Proces Visual C# se liší od proces jazyka Visual Basic. Další informace najdete v tématu [postupy: vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
-## <a name="exposing-code-in-a-visual-c-project"></a>Vystavení kódu v projektu jazyka Visual C#  
+## <a name="expose-code-in-a-visual-c-project"></a>Vystavení kódu v projektu jazyka Visual C#  
  Pokud chcete povolit VBA kód pro volání kódu v projektu jazyka Visual C#, změnit kód tak, aby byl viditelný pro COM a nastavte **ReferenceAssemblyFromVbaProject** vlastnost, která má **True** v návrháři.  
   
  Návod, který ukazuje, jak volat metodu z jazyka VBA v projektu jazyka Visual C#, najdete v části [návod: volání kódu z jazyka VBA v Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
-#### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>K vystavení kódu v projektu jazyka Visual C# pro jazyk VBA  
+### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>K vystavení kódu v projektu jazyka Visual C# pro jazyk VBA  
   
 1.  Otevřete nebo vytvořte projekt na úrovni dokumentu, který je založený na dokument aplikace Word, sešit aplikace Excel nebo Excel šablony, která podporuje makra, který již obsahuje VBA kód.  
   
-     Další informace o formátech souborů dokumentu, které podporují makra najdete v tématu [kombinování VBA pro vytváření a úpravy na úrovni dokumentů](../vsto/combining-vba-and-document-level-customizations.md).  
+     Další informace o formátech souborů dokumentu, které podporují makra najdete v tématu [kombinovat VBA pro vytváření a úpravy na úrovni dokumentů](../vsto/combining-vba-and-document-level-customizations.md).  
   
     > [!NOTE]  
     >  Tuto funkci nelze použít v šabloně projekty aplikace Word.  
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/16/2018
         }  
         ```  
   
-     Další informace o hostitelských položkách najdete v tématu [hostitelských položek a Přehled ovládacích prvků hostitele](../vsto/host-items-and-host-controls-overview.md).  
+     Další informace o hostitelských položkách najdete v tématu [hostitele položky a hostitelem Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).  
   
 6.  Extrahování rozhraní ze třídy, která jsou vystavení pro jazyk VBA. V **extrahování rozhraní** dialogovém okně vyberte veřejné členy, které chcete zahrnout do deklarace rozhraní. Další informace najdete v tématu [extrahování rozhraní refaktoring](../ide/reference/extract-interface.md).
   
@@ -102,11 +103,11 @@ ms.lasthandoff: 04/16/2018
   
 12. Sestavte projekt.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
+ [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
  [Kombinování VBA pro vytváření a úpravy na úrovni dokumentů](../vsto/combining-vba-and-document-level-customizations.md)   
  [Návod: Volání kódu z jazyka VBA v Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
- [Postupy: Vystavení kódu v projektu jazyka Visual Basic pro jazyk VBA](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
+ [Postupy: vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   
