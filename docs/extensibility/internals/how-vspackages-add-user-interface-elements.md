@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136078"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak přidat VSPackages prvky uživatelského rozhraní
 VSPackage můžete přidávat prvky uživatelského rozhraní (UI, například nabídky panely nástrojů) a nástroje systému windows pro Visual Studio prostřednictvím .vsct souboru.  

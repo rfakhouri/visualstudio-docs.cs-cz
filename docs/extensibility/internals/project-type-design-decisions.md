@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131488"
 ---
 # <a name="project-type-design-decisions"></a>Rozhodnutí o návrhu typ projektu
 Než vytvoříte nový typ projektu, musíte nastavit několik rozhodnutí o návrhu týkající se typu vašeho projektu. Musíte se rozhodnout, jaké typy položky, které bude obsahovat projekty, jak bude natrvalo soubory projektu a jaké závazků model budete používat.  

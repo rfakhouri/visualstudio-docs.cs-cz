@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131144"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Postupy: přístup k vestavěná písma a barevné schéma
 Integrované vývojové prostředí (IDE) sady Visual Studio má schéma písma a barvy, která souvisí s okno editoru. Toto schéma prostřednictvím dostanete <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> rozhraní.
@@ -38,7 +39,7 @@ Integrované vývojové prostředí (IDE) sady Visual Studio má schéma písma 
 
 1.  Vytvořte libovolný identifikátor GUID.
 
-     Tento identifikátor GUID slouží k jednoznačné identifikaci kategorii**.** Prostředí IDE výchozí písma a barvy specifikace opětovně používá tuto kategorii.
+     Tento identifikátor GUID slouží k jednoznačné identifikaci kategorii **.** Prostředí IDE výchozí písma a barvy specifikace opětovně používá tuto kategorii.
 
     > [!NOTE]
     >  Při načítání dat písma a barev pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> nebo dalších rozhraní VSPackages pomocí identifikátoru GUID předdefinované informace odkazovat.
@@ -51,7 +52,7 @@ Integrované vývojové prostředí (IDE) sady Visual Studio má schéma písma 
 
 1.  Vytvořte zvláštní druh položky registru kategorie v následujícím umístění:
 
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<verze sady Visual Studio >*\FontAndColors\\*\<kategorie >*]
+     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<verze sady Visual Studio >* \FontAndColors\\*\<kategorie >*]
 
      *\<Kategorie >* je Nelokalizováno název kategorie.
 

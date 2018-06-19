@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137337"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout – funkce
 Tato funkce vrátí zpět předchozí operace checkout, a tak obnovit obsah vybraného souboru nebo soubory do stavu před rezervaci. Všechny změny provedené v souboru od rezervaci budou ztraceny.  

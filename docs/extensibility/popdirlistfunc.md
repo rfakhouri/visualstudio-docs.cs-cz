@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142183"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Toto je funkce zpětného volání, zadané [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) funkce aktualizujte kolekci adresářů a (volitelně) názvy souborů a zjistěte, které jsou v části Správa zdrojového kódu.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135675"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Podpora pro fragmenty kódu ve službě jazyk starší verze
 Fragment kódu je úsek kódu, který je vložen do zdrojového souboru. Fragment kódu, samotné je šablonu na základě XML s sady polí. Tato pole jsou vyznačené po tomto fragmentu kódu je vložen a může mít různé hodnoty v závislosti na kontextu, ve kterém je vložen fragmentu. Ihned po tomto fragmentu kódu je vložen, může služba jazyka formátu fragmentu.  
@@ -52,7 +53,7 @@ Fragment kódu je úsek kódu, který je vložen do zdrojového souboru. Fragmen
   
  Obvykle jsou dvě místa, kde jsou uloženy soubory šablony fragment kódu: 1) Pokud byl nainstalován svůj jazyk a 2) ve složce uživatele. Tato umístění jsou přidány do registru, který sady Visual Studio **Správce fragmentů kódu** můžete najít fragmenty kódu. Složka uživatele je, kde jsou uloženy fragmenty vytvořený uživatelem.  
   
- Složka obvykle rozložení pro soubory šablon nainstalované fragment kódu vypadá takto: *[Kořenová_složka_instalace]*\\*[TestLanguage]*\Snippets\\*[LCID]*\Snippets.  
+ Složka obvykle rozložení pro soubory šablon nainstalované fragment kódu vypadá takto: *[Kořenová_složka_instalace]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
   
  *[Kořenová_složka_instalace]*  je složka, je váš jazyk nainstalovaný v.  
   
@@ -60,7 +61,7 @@ Fragment kódu je úsek kódu, který je vložen do zdrojového souboru. Fragmen
   
  *[LCID]*  je ID národního prostředí. Jedná se jak lokalizované verze vaší fragmenty kódu jsou uložené. Například ID národního prostředí pro angličtinu je 1033, takže *[LCID]* je nahrazena 1033.  
   
- Je nutné zadat jeden další soubor a který je indexový soubor, obvykle nazývá SnippetsIndex.xml nebo ExpansionsIndex.xml (můžete použít libovolný platný název souboru končí na .xml). Tento soubor je obvykle uložen ve *[Kořenová_složka_instalace]*\\*[TestLanguage]* složce a určuje přesné umístění složky fragmenty společně s ID jazyka a identifikátor GUID jazyka Služba, která používá fragmenty kódu. Přesnou cestu k souboru indexu je uvést do registru, jak je popsáno dále v "Instalace položky registru". Tady je příklad SnippetsIndex.xml souboru:  
+ Je nutné zadat jeden další soubor a který je indexový soubor, obvykle nazývá SnippetsIndex.xml nebo ExpansionsIndex.xml (můžete použít libovolný platný název souboru končí na .xml). Tento soubor je obvykle uložen ve *[Kořenová_složka_instalace]*\\ *[TestLanguage]* složce a určuje přesné umístění složky fragmenty společně s ID jazyka a identifikátor GUID jazyka Služba, která používá fragmenty kódu. Přesnou cestu k souboru indexu je uvést do registru, jak je popsáno dále v "Instalace položky registru". Tady je příklad SnippetsIndex.xml souboru:  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -81,7 +82,7 @@ Fragment kódu je úsek kódu, který je vložen do zdrojového souboru. Fragmen
   
  Tento příklad předpokládá, že jste nainstalovali služby jazyk v instalační složce Nástroje Visual Studio. LCID % se nahradí aktuální ID národního prostředí uživatele Více \<SnippetDir > značky mohou být přidány, jednu pro každý jiný adresář a národní prostředí. Kromě toho fragment kódu složka může obsahovat podsložek, z nichž každý je definovaný v soubor indexu s \<SnippetSubDir > značky, která je součástí \<SnippetDir > značky.  
   
- Uživatelé mohou také vytvářet své vlastní fragmenty pro svůj jazyk. Tyto jsou obvykle uložen ve složce nastavení uživatele, například *[TestDocs]*\Code fragmenty\\*[TestLanguage]*\Test fragmenty kódu, kde *[TestDocs]* je umístění uživatele nastavení složky pro sadu Visual Studio.  
+ Uživatelé mohou také vytvářet své vlastní fragmenty pro svůj jazyk. Tyto jsou obvykle uložen ve složce nastavení uživatele, například *[TestDocs]* \Code fragmenty\\ *[TestLanguage]* \Test fragmenty kódu, kde *[TestDocs]* je umístění uživatele nastavení složky pro sadu Visual Studio.  
   
  Tyto prvky nahrazení mohou být umístěny v cestě uložené v \<DirPath > značky v souboru indexu.  
   
@@ -91,7 +92,7 @@ Fragment kódu je úsek kódu, který je vložen do zdrojového souboru. Fragmen
 |% Kořenová_složka_instalace %|Kořenová složka instalace pro Visual Studio, například C:\Program Files\Microsoft Visual Studio 8.|  
 |% ProjDir %|Složka obsahující aktuálního projektu.|  
 |% ProjItem %|Složka obsahující aktuální položka projektu.|  
-|% TestDocs %|Složku ve složce nastavení uživatele, například C:\Documents and Settings\\*[username]*\My Documents\Visual Studio\8.|  
+|% TestDocs %|Složku ve složce nastavení uživatele, například C:\Documents and Settings\\ *[username]* \My Documents\Visual Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Povolení služby jazyk fragmenty kódu  
  Fragmenty kódu můžete povolit pro vaši službu jazyk přidáním <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> atribut vaše VSPackage (najdete v části [registrace služby jazyk starší](../../extensibility/internals/registering-a-legacy-language-service1.md) podrobnosti). <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> a <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parametry jsou volitelné, ale by měla obsahovat `SearchPaths` s názvem parametru, aby bylo možné informovat o tom, **Správce fragmentů kódu** umístění vaší fragmenty kódu.  

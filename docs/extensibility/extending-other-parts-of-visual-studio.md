@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133659"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Rozšíření dalšími částmi sady Visual Studio
 Existuje více částí rozhraní Visual Studio, které můžete rozšířit. Zde jsme vám ukážou, pár.  

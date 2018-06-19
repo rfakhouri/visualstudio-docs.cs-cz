@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133414"
 ---
 # <a name="getting-started-with-source-control-vspackages"></a>Začínáme s VSPackages zdroj ovládacího prvku
 Správa zdrojového kódu VSPackage je pokročilejší alternativa k modulu plug-in zdrojového kódu. (Viz [vytvoření modulu Plugin zdroj ovládacího prvku](../../extensibility/internals/creating-a-source-control-plug-in.md) Další informace o zdrojovém řízení moduly plug-in.) Správa zdrojového kódu VSPackage umožňuje úplnou kontrolu nad model řízení zdroje, funkce a uživatelské rozhraní (UI) a integruje do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí jako VSPackage.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140417"
 ---
 # <a name="when-to-create-project-types"></a>Kdy vytvořit typy projektů
 Vytvoření nového projektu typu poskytuje základ pro přizpůsobení [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pro vaše uživatele. Však není pro všechny požadované vytvoření nového projektu typu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] přizpůsobení. Následující pokyny by měly pomoci při určování, zda je požadována pro váš scénář nový typ projektu.  

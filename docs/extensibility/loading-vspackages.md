@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140011"
 ---
 # <a name="loading-vspackages"></a>Načítání VSPackages
 VSPackages jsou načteny do sady Visual Studio jenom v případě, že se požaduje jejich funkce. Například VSPackage je načtena, když Visual Studio použije objekt pro vytváření projektu nebo služba, která implementuje VSPackage. Tato funkce je volána zpožděné načítání, který se používá, pokud je to možné ke zlepšení výkonu.  

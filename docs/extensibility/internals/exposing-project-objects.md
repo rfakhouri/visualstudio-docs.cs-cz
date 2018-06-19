@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130450"
 ---
 # <a name="exposing-project-objects"></a>Vystavení objektů projektu
 Typy vlastních projektů zajistí objekty automatizace, aby bylo možné povolit přístup k projektu pomocí rozhraní automatizace. Každý typ projektu se očekává poskytování standardní <xref:EnvDTE.Project> automatizace objektu, který je přístupný z <xref:EnvDTE.Solution>, který obsahuje kolekce všechny projekty, které jsou otevřeny v integrovaném vývojovém prostředí. Každá položka v projektu musí být vystavené <xref:EnvDTE.ProjectItem> objekt s `Project.ProjectItems`. Kromě těchto objektů standardní automatizace můžete zvolit projekty nabízejí objekty automatizace specifické pro projekt.  

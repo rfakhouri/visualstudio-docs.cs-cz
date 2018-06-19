@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949708"
 ---
 # <a name="toolbox-data-tab"></a>Sada nástrojů, karta Data
 Zobrazí objekty dat můžete přidat do formulářů a součásti. **Data** kartě **sada nástrojů** se zobrazí, když vytvoříte projekt, který má přidružený designer. **Sada nástrojů** se zobrazí ve výchozím nastavení v integrovaném vývojovém prostředí sady Visual Studio; Pokud je třeba zobrazit **sada nástrojů**, vyberte **sada nástrojů** z **Zobrazení** nabídky.

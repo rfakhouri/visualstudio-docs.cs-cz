@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139861"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Prostředí pro práci uživatelů sady Visual Studio
 Visual Studio prostředí pro práci uživatelů jsou určené pro ty, kteří návrhu nové funkce pro sadu Visual Studio. Tyto pokyny obsahují informace o běžných modely uživatele a interakce vzory tak, aby návrháři nové uživatelské rozhraní (UI) můžete vytvořit uživatelského prostředí, které jsou snadné a konzistentní v rámci vývojového prostředí.  

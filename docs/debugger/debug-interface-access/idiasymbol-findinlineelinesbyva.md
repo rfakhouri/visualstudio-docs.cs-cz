@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464385"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
 Načte výčet, který umožňuje klientům k iteraci v rámci řádku informace o čísle všech funkcí, které jsou vložená, přímo ani nepřímo, v tento symbol v rámci zadané virtuální adresy (VA).  

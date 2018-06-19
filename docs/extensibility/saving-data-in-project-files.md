@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140174"
 ---
 # <a name="saving-data-in-project-files"></a>Ukládání dat v souborech projektu
 Podtyp projektu můžete uložit a načíst data specifická pro dílčí v souboru projektu. Spravované balíček Framework (MPF) nabízí dvě rozhraní k provedení této úlohy:  

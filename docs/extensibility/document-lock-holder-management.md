@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130541"
 ---
 # <a name="document-lock-holder-management"></a>Správa vlastníka zámku dokumentu
 Spuštění dokumentu EFS (r... tabulky) zaznamenává počet otevřené dokumenty a zámky žádné úpravy, které mají. Zámek úpravy můžete umístit na dokument v r... při prostřednictvím kódu programu úpravách na pozadí bez uživatele zobrazuje dokument otevřít v okně dokumentu. Tato funkce se často používá návrháři, které upravují více souborů přes grafické uživatelské rozhraní.  

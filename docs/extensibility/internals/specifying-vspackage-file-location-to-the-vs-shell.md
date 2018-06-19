@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131999"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Zadání umístění souboru VSPackage prostředí VS
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] musí být schopný k nalezení knihovny DLL pro načtení VSPackage sestavení. Abyste ji mohli najít různými způsoby, jak je popsáno v následující tabulce.  

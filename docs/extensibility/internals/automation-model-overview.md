@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134744"
 ---
 # <a name="automation-model-overview"></a>Přehled modelu automatizace
 Model automatizace obsahuje sadu objektů, proti kterým může zapisovat na doplněk sady Visual Studio nebo příponu. Doplněk je aplikace, která můžete pracovat s prostředí Visual Studio a automatizaci běžných úkolů. Rozšíření sady Visual Studio můžete vytvořit vlastní součásti sady Visual Studio nebo přidat do funkce standardní komponenty, například textovém editoru.  

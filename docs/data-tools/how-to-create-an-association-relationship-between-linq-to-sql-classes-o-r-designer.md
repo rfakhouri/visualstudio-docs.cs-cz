@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923387"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Postupy: vytvoření přidružení mezi technologie LINQ to SQL třídy (Návrhář relací objektů)
 Přidružení mezi třídami entity v [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] se podobá se relace mezi tabulkami v databázi. Můžete vytvořit přidružení mezi tříd entit s použitím **přidružení Editor** dialogové okno.

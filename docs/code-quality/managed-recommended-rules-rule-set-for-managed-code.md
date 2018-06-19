@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924807"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Sada pravidel Spravovaná doporučená pravidla pro spravovaný kód
 Pravidlo doporučená pravidla spravované Microsoft nastavit a zaměřit se na nejdůležitější problémy v spravovaného kódu, včetně potenciální bezpečnostní díry, dojde k chybě aplikace a další důležité chyby logiku a návrhu můžete použít. Toto pravidlo nastavené v žádné vlastní sady pravidel, které vytvoříte pro projekty by měla obsahovat.

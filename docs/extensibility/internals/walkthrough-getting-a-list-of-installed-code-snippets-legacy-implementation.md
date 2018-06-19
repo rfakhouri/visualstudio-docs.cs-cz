@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141350"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Návod: Získáním seznamu fragmenty kódu nainstalovaný (implementace starší verze)
 Fragment kódu je úsek kódu, který lze vložit do zdrojová vyrovnávací paměť s příkazu v nabídce (který umožňuje výběr mezi seznam fragmenty kódu nainstalovaná) nebo pomocí zástupce fragment kódu výběrem ze seznamu doplňování IntelliSense.  

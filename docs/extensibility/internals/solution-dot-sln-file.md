@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133401"
 ---
 # <a name="solution-sln-file"></a>Řešení (. Soubor SLN –)
 Řešení je struktura pro uspořádání projekty v sadě Visual Studio. Řešení udržuje informace o stavu pro projekty v .sln (založený na textu, sdílený) a soubory .suo (možnosti řešení binární, specifický pro uživatele). Další informace o soubory .suo najdete v tématu [uživatelské možnosti řešení (. Suo) soubor](../../extensibility/internals/solution-user-options-dot-suo-file.md).  

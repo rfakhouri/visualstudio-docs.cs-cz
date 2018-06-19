@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141448"
 ---
 # <a name="using-msbuild"></a>Pomocí nástroje MSBuild
 MSBuild poskytuje dobře definovaný a rozšiřitelné formátu XML pro vytvoření souborů projektu, které plně popisují položky projektu vytvořeny, vytvářet úlohy a konfigurace sestavení.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923122"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Postupy: přidávání ověření do tříd entit
 *Ověřování* tříd entit je proces ověření, že hodnot zadaných do datových objektů v souladu s omezeními ve schématu objektu a také pravidel stanovených pro aplikaci. Ověřování dat, ještě před odesláním aktualizací do základní databáze je dobrým zvykem, která snižuje chyby. Také snižuje potenciální počet odezev mezi aplikace a databáze.

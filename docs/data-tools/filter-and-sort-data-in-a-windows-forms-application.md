@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924966"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtrování a řazení dat v aplikaci Windows Forms
 Filtrování dat nastavením <xref:System.Windows.Forms.BindingSource.Filter%2A> vlastnost řetězcového výrazu, který vrací požadované záznamy.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134405"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Když zarážku váže nebo stane nevázaný
 Když zarážku nemůže být vázán v době Přišla žádost o [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) metoda, vazeb čas a vytvořit čas zarážce se liší.  

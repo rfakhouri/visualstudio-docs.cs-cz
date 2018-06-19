@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148269"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Sdílené barvy pro sadu Visual Studio
 Při navrhování uživatelské rozhraní, které používá společné prvky prostředí sady Visual Studio, nebo chcete vaše rozhraní element konzistentní s podobné funkce, použijte existující token názvy v definičních souborech balíčku a vyberte a přiřaďte barvy. To zajišťuje, že vaše uživatelské prostředí zůstává konzistentní s celkovou prostředí Visual Studio a jeho aktualizace automaticky při přidávání nebo aktualizaci motivů.  

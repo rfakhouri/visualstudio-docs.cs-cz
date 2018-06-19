@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129942"
 ---
 # <a name="feedback-to-the-user"></a>Zpětná vazba pro uživatele
 V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE), vizuální zpětnou vazbu týkající k dispozici funkce je založena na aktuální výběr a globální výběr kontextu uživatele. Následující tabulka uvádí funkce, které jsou k dispozici v kontextech jiný výběr.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924193"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Vytváření parametrizovaných dotazů TableAdapter
 Zadání parametrizovaného dotazu vrátí data, která splňuje podmínky klauzule WHERE v dotazu. Například můžete parametrizovat seznam zákazníků k zobrazení pouze zákazníků v určitém městě přidáním `WHERE City = @City` na konec příkazu SQL, který vrátí seznam zákazníků.

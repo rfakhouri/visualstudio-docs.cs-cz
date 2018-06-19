@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923439"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Postupy: vytvoření metody DataContext namapované na uložené procedury a funkce (Návrhář relací objektů)
 Uložené procedury a funkce lze přidat do [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] jako <xref:System.Data.Linq.DataContext> metody. Volání metody a předávání v požadované parametry spouští uložená procedura nebo funkce v databázi a vrací data v návratový typ <xref:System.Data.Linq.DataContext> metoda. Podrobné informace o <xref:System.Data.Linq.DataContext> metody, najdete v části [DataContext metody (Návrhář relací objektů)](../data-tools/datacontext-methods-o-r-designer.md).

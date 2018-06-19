@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952625"
 ---
 # <a name="properties-of-image-shapes"></a>Vlastnosti obrazových obrazců
 Tvary bitové kopie můžete použít k určení, jak třídy domény se zobrazí v generované návrháře. Definování obrazce image nastavením `Image` vlastnost třídy do souboru předdefinované bitové kopie. Jsou podporovány následující formáty:

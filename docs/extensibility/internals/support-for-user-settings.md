@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134085"
 ---
 # <a name="support-for-user-settings"></a>Podpora pro uživatelských nastavení
 VSPackage může definovat jeden nebo více kategorií nastavení, které jsou skupiny proměnné stavu, které zachovat, když uživatel vybere **nastavení importu a exportu** příkaz na **nástroje** nabídky. Pokud chcete povolit tento trvalost, použijete nastavení rozhraní API v [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -33,14 +34,14 @@ VSPackage může definovat jeden nebo více kategorií nastavení, které jsou s
      Pokud jeden VSPackage podporuje několik bodů vlastní nastavení, každý bod vlastní nastavení je implementováno modulem samostatné třídy a každý je registrován ve jedinečný instanci <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> třídy. Nastavení, implementace třídy v důsledku toho může podporovat více než jednu kategorii nastavení.  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>Podrobnosti o položku registru bodu vlastní nastavení  
- Vlastní nastavení body jsou vytvořené v položka registru v následujícím umístění: HKLM\Software\Microsoft\VisualStudio\\*\<verze >*\UserSettings\\`<CSPName>`, kde `<CSPName>` je název vlastního nastavení bodu podporuje VSPackage a  *\<verze >* je verze [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], například 8.0.  
+ Vlastní nastavení body jsou vytvořené v položka registru v následujícím umístění: HKLM\Software\Microsoft\VisualStudio\\*\<verze >* \UserSettings\\`<CSPName>`, kde `<CSPName>` je název vlastního nastavení bodu podporuje VSPackage a  *\<verze >* je verze [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], například 8.0.  
   
 > [!NOTE]
 >  Kořenové cestě HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >* lze přepsat pomocí náhradní root, kdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) inicializovat. Další informace najdete v tématu [přepínače příkazového řádku](../../extensibility/command-line-switches-visual-studio-sdk.md).  
   
  Dole je zobrazená strukturu položky registru:  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<verze >*\UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<verze >* \UserSettings\  
   
  `<CSPName`> = s: 12345 #.  
   

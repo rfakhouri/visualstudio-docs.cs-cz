@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133540"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Postupy: Instalace modulu Plug-in Správa zdrojového kódu
 Vytvoření ovládacího prvku zdroj modulu plug-in zahrnuje tři kroky:  
@@ -37,7 +38,7 @@ Vytvoření ovládacího prvku zdroj modulu plug-in zahrnuje tři kroky:
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>Zaregistrujte zdroj řízení knihovnu DLL modulu plug-in  
   
-1.  Přidáte dvě položky pod klíčem HKEY_LOCAL_MACHINE v podklíči SOFTWARE, který určuje podklíč název vaší společnosti následuje vaší podklíč název produktu. Vzor je HKEY_LOCAL_MACHINE\SOFTWARE\\*[název společnosti]*\\*[název produktu]*\\*[položka]* = hodnota. Dvě položky se nazývají vždy SCCServerName a SCCServerPath. Každá je regulární řetězec.  
+1.  Přidáte dvě položky pod klíčem HKEY_LOCAL_MACHINE v podklíči SOFTWARE, který určuje podklíč název vaší společnosti následuje vaší podklíč název produktu. Vzor je HKEY_LOCAL_MACHINE\SOFTWARE\\ *[název společnosti]*\\ *[název produktu]*\\ *[položka]* = hodnota. Dvě položky se nazývají vždy SCCServerName a SCCServerPath. Každá je regulární řetězec.  
   
      Například pokud je název vaší společnosti Microsoft a vaší zdrojové řízení produkt jmenuje SourceSafe, pak by tato cesta v registru HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe. V tomto podklíči první položka, SCCServerName, je uživatelem čitelný řetězec pojmenování svůj produkt. Druhá položka SCCServerPath, je úplná cesta ke zdroji řízení knihovnu DLL modulu plug-in, který by se měly připojit rozhraní IDE. Následující tabulka obsahuje ukázkové položky registru:  
   
@@ -66,7 +67,7 @@ Vytvoření ovládacího prvku zdroj modulu plug-in zahrnuje tři kroky:
   
 3.  Přidejte podklíč, SourceCodeControlProvider, pod klíčem HKEY_LOCAL_MACHINE v podklíči softwaru.  
   
-     V tomto podklíči položku registru ProviderRegKey nastavena na řetězec, který představuje podklíč, který jste umístili v registru v kroku 1. Vzor je HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = softwaru\\*[název společnosti]*\\*[název produktu]*.  
+     V tomto podklíči položku registru ProviderRegKey nastavena na řetězec, který představuje podklíč, který jste umístili v registru v kroku 1. Vzor je HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = softwaru\\ *[název společnosti]*\\ *[název produktu]*.  
   
      Zde je ukázkový obsah pro tento podklíč.  
   
@@ -79,7 +80,7 @@ Vytvoření ovládacího prvku zdroj modulu plug-in zahrnuje tři kroky:
   
 4.  Vytvořit podklíč s názvem InstalledSCCProviders v podklíči SourceCodeControlProvider a umístěte jedna položka v tomto podklíči.  
   
-     Název této položky je uživatelem čitelný název zprostředkovatele (stejný jako hodnota zadaná pro položku SCCServerName) a hodnota je znovu podklíč vytvořili v kroku 1. Vzor je HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\*[zobrazovaný název]* = softwaru\\*[název společnosti]* \\ *[název produktu]*.  
+     Název této položky je uživatelem čitelný název zprostředkovatele (stejný jako hodnota zadaná pro položku SCCServerName) a hodnota je znovu podklíč vytvořili v kroku 1. Vzor je HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[zobrazovaný název]* = softwaru\\ *[název společnosti]* \\ *[název produktu]*.  
   
      Příklad:  
   
@@ -102,7 +103,7 @@ Vytvoření ovládacího prvku zdroj modulu plug-in zahrnuje tři kroky:
 > [!NOTE]
 >  Prostředí IDE nenačte knihovny DLL z relativní cesty (například.\NewProvider.DLL). Musíte zadat úplnou cestu k souboru DLL (například c:\Providers\NewProvider.DLL). To brání načítání knihoven DLL modulu plug-in neoprávněným nebo zosobněnou posiluje zabezpečení rozhraní IDE.  
   
- Druhý způsobem najít knihovnu DLL, vypadá rozhraní IDE pro všechny položky v podklíči HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders*.* Každá položka má název a hodnotu. Rozhraní IDE zobrazuje seznam tyto názvy pro uživatele*.* Když uživatel vybere název, vyhledá rozhraní IDE pro vybraný název, který odkazuje na podklíč hodnota. Položka s názvem SccServerPath v tomto podklíči pod HKEY_LOCAL_MACHINE vyhledá rozhraní IDE. Hodnota této položky odkazuje na správný DLL rozhraní IDE.  
+ Druhý způsobem najít knihovnu DLL, vypadá rozhraní IDE pro všechny položky v podklíči HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders *.* Každá položka má název a hodnotu. Rozhraní IDE zobrazuje seznam tyto názvy pro uživatele *.* Když uživatel vybere název, vyhledá rozhraní IDE pro vybraný název, který odkazuje na podklíč hodnota. Položka s názvem SccServerPath v tomto podklíči pod HKEY_LOCAL_MACHINE vyhledá rozhraní IDE. Hodnota této položky odkazuje na správný DLL rozhraní IDE.  
   
  Správa zdrojového kódu modul plug-in musí podporovat obou směrech nalezení knihovny DLL a v důsledku toho nastavte ProviderRegKey, přepsal jakékoli předchozí nastavení. Je důležité se musí sám přidat do seznamu InstalledSccProviders takže uživatel může vybrat, které modul plug-in správy zdroje používat.  
   

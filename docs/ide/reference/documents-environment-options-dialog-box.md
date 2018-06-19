@@ -39,6 +39,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948974"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Dokumenty, prostředí, dialogové okno Možnosti
 Pomocí této stránky **možnosti** dialogové okno pro řízení zobrazení dokumentů v integrované vývojové prostředí (IDE) a spravovat externí změny dokumentů a souborů. Tohoto dialogového okna můžete přejít pomocí kliknutím na tlačítko **možnosti** na **nástroje** nabídce a potom vyberete **dokumenty** v **prostředí** uzlu. Pokud **dokumenty** nejsou uvedené v seznamu vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.

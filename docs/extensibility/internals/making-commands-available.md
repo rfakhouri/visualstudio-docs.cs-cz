@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134110"
 ---
 # <a name="making-commands-available"></a>Zpřístupnění příkazy
 Po přidání více VSPackages k sadě Visual Studio, může se pomocí příkazů přeplněné uživatelské rozhraní (UI). Můžete naprogramovat vašeho balíčku, abyste tento problém omezili, následujícím způsobem:

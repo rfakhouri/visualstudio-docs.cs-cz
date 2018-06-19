@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134630"
 ---
 # <a name="registering-a-project-type"></a>Registrace typu projektu
 Když vytvoříte nový typ projektu, musíte vytvořit položky registru, které umožňují [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozpoznat a pracovat s typ vašeho projektu. Obvykle vytvoříte tyto položky registru pomocí souboru registru skript (.).  

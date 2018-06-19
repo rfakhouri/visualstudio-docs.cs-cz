@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132928"
 ---
 # <a name="options-and-options-pages"></a>Možnosti a možnosti stránky
 Kliknutím na tlačítko **možnosti** na **nástroje** otevře se nabídka **možnosti** dialogové okno. Možnosti v tomto dialogovém se souhrnně označují jako možnosti stránky. V navigačním podokně ovládacího prvku strom zahrnuje možnosti kategorií a každou kategorii má možnosti stránky. Když vyberete na stránce, v pravém podokně zobrazí jeho možnosti. Tyto stránek umožňují změnit hodnoty možnosti, které určují stav VSPackage.  

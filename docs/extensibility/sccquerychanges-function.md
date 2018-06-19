@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139819"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges – funkce
 Tato funkce zobrazí daný seznam souborů a poskytuje informace o změnách název pro každý soubor prostřednictvím funkce zpětného volání.  

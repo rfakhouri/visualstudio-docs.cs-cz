@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926441"
 ---
 # <a name="shader-designer-nodes"></a>Uzly návrháře shaderů
 Články v této části dokumentace obsahují informace o různých shaderu Návrhář uzly, které můžete použít k vytvoření grafiky účinky.

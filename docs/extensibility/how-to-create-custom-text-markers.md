@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132258"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Postupy: vytvoření vlastní Text značek
 Pokud chcete vytvořit vlastní text značku zdůraznil nebo uspořádání kódu, musíte provést následující kroky:  
@@ -34,9 +35,9 @@ Pokud chcete vytvořit vlastní text značku zdůraznil nebo uspořádání kód
   
 1.  Vytvořte položku registru takto:  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >*\Text Editor\External značek\\*\<MarkerGUID >*  
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >* \Text Editor\External značek\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >*je `GUID` použít k identifikaci značky, který chcete přidat  
+     *\<MarkerGUID >* je `GUID` použít k identifikaci značky, který chcete přidat  
   
      *\<Verze >* je verze [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], například 8.0  
   
@@ -45,7 +46,7 @@ Pokud chcete vytvořit vlastní text značku zdůraznil nebo uspořádání kód
     > [!NOTE]
     >  Kořenové cestě HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >* monitorconfigurationoverride lze přepsat alternativní kořenové při inicializaci prostředí sady Visual Studio, další informace najdete v tématu, [Přepínače příkazového řádku](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Vytvořit čtyři hodnoty v části HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >*\Text Editor\External značek\\*\<MarkerGUID >*  
+2.  Vytvořit čtyři hodnoty v části HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >* \Text Editor\External značek\\*\<MarkerGUID >*  
   
     -   (Výchozí)  
   

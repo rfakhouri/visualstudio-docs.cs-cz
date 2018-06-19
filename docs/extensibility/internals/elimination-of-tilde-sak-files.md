@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129638"
 ---
 # <a name="elimination-of-sak-files"></a>Odstranění ~ SAK soubory
 1.2 rozhraní API modulu Plugin zdroj ovládacího prvku ~ SAK soubory byly nahrazeny schopností příznaky a nové funkce, která zjišťují, jestli podporuje modul plug-in správy zdroje MSSCCPRJ souborů a sdílené rezervace.  

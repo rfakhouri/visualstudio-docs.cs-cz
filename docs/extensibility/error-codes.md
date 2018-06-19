@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130771"
 ---
 # <a name="error-codes"></a>Kódy chyb
 Když zdroj ovládacího prvku Plug-in rozhraní API funkce vrátí chybu, očekává se, že se na jednu z následujících kódů chyb. Záporná, varování nebo informační chybové kódy jsou kladné, jsou všechny chyby a úspěchu je 0.  

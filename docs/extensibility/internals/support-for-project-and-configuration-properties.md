@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133570"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Podpora pro projekt a vlastnosti konfigurace
 **Vlastnosti** okno v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) můžete zobrazit vlastnosti projektu a konfigurace. Stránky vlastností můžete zadat pro vlastní typ projektu, takže uživatel může nastavit vlastnosti pro vaši aplikaci.  

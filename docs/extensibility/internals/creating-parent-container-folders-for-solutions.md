@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132558"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Vytváření složek nadřazený kontejner pro řešení
 V modulu Plugin řízení zdroj API verze 1.2 může uživatel určit, jeden kořenový zdroj ovládacího prvku cíl pro všechny webové projekty v řešení. Tento jeden kořenový nazývá Super Unified kořenové (SUR).  

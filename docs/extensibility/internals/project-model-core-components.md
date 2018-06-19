@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133105"
 ---
 # <a name="project-model-core-components"></a>Základní součásti služby projektu modelu
 V následujících tabulkách rozbalit na projekt modelu. Stručný popis rozhraní a služeb, které jsou určené v modelu a rozhraní a služby se specifickými objekty přidružené k dispozici v tabulkách. Kromě toho tabulky Podrobnosti dalších rozhraní, které jsou volitelné při vytváření projektu a údržbě v závislosti na požadavcích vaší konkrétní projekt typu.  

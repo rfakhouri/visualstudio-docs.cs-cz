@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950384"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Použití řídicích sekvencí v textových šablonách
 Můžete použít řídicích sekvencí v textových šablonách mají vygenerovat značky text šablony a (v C# pouze kód) řídicí řídicí znaky a znaky uvozovek.

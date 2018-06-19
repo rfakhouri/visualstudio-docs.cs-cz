@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954002"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Reagování na změny a šíření změn
 Pokud element vytvořit, odstranit nebo aktualizovat, můžete napsat kód, který rozšíří změny do dalších částí modelu, nebo externím prostředkům, například soubory, databáze nebo ostatní součásti.

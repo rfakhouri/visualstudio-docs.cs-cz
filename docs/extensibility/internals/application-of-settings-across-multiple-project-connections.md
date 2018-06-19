@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129203"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Aplikace nastavení mezi více připojení projektu
 Správa zdrojového kódu modulu plug-in sestaven pomocí rozhraní API 1.2 zdroj ovládacího prvku Plug-in můžete použít dávkové operace k provedení operace stejný zdroj ovládacího prvku napříč více projektů nebo kontextů více připojení. Dávky lze eliminovat redundantní, dialogová okna z činnost koncového uživatele na projekt.  

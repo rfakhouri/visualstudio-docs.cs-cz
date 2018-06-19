@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949563"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Vícesouborové DSL v jediném řešení
 V rámci jedné řešení můžete balíček několik DSL, linky, tak, že jsou nainstalovány společně.

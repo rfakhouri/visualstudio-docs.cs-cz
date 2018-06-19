@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130039"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Šablony zásad a v okně Vlastnosti
 Když na projekt se nachází v projektu šablony organizace, tento projekt šablony enterprise může vynutit zásady. Šablony zásad se změní na omezení systém, který můžete použít k nastavení výchozí hodnoty pro vlastnosti, skrýt vlastnosti, přidávat vlastnosti a tak dále.  

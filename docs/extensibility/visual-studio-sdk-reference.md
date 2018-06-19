@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146842"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK – referenční informace
 Tato část obsahuje informace o sadě Visual Studio obory názvů, související obory názvů a dalších oblastí zájmu pro vývojáře, kteří používají Visual Studio SDK.  

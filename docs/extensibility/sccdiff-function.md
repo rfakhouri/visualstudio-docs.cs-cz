@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138574"
 ---
 # <a name="sccdiff-function"></a>SccDiff – funkce
 Tato funkce zobrazí (nebo volitelně právě vyhledává) rozdíly mezi aktuální soubor (na místním disku) a jeho poslední verze, vráceno se změnami ve zdroji řízení systému.  

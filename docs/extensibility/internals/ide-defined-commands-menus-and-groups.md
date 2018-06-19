@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129386"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Příkazy definované IDE, nabídky a skupin
 Mnoho nabídek, příkazy a příkaz skupiny jsou již definováni pro použití [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Tyto příkazy jsou také k dispozici pro použití při rozšíření [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -35,7 +36,7 @@ Mnoho nabídek, příkazy a příkaz skupiny jsou již definováni pro použití
   
 -   ShellCmdPlace.vsct  
   
- Tyto soubory jsou umístěny v  *\<cesta instalace Visual Studio SDK >*\VisualStudioIntegration\Common\Inc\\. Tyto soubory poskytují definice a identifikátory GUID nabídky a skupiny, které můžete použít v souboru konfigurace (.vsct) tabulky příkaz vaší VSPackage jako kontejnery pro nabídky, skupin a příkazy.  
+ Tyto soubory jsou umístěny v  *\<cesta instalace Visual Studio SDK >* \VisualStudioIntegration\Common\Inc\\. Tyto soubory poskytují definice a identifikátory GUID nabídky a skupiny, které můžete použít v souboru konfigurace (.vsct) tabulky příkaz vaší VSPackage jako kontejnery pro nabídky, skupin a příkazy.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Identifikátory GUID a ID nabídek sady Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  

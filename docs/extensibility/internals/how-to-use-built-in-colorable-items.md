@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129680"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Postupy: použití předdefinované Colorable položek
 Než použijete integrovanou colorable položky, můžete musí nejprve signál integrované vývojové prostředí (IDE), nejsou poskytuje svoje vlastní vlastní colorable položky, které v tomto případě by byly <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> objekty. To provedete nastavením položky registru pro službu jazyka.  

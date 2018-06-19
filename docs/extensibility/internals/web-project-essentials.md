@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140992"
 ---
 # <a name="web-project-essentials"></a>Webový projekt Essentials
 Webové projekty vytvářet webové aplikace. Webového projektu slouží k vytvoření webové aplikace, které má inteligentní webové stránky. Inteligentní webová stránka obsahuje kódu na straně serveru, který vykreslí webovou stránku na vyžádání.  
@@ -34,7 +35,7 @@ Webové projekty vytvářet webové aplikace. Webového projektu slouží k vytv
   
     -   Projekt webové aplikace (WAP) vytvoří jeden spustitelný soubor, který kombinuje kód pro všechny inteligentní webové stránky, stejně jako všechny zdrojové soubory ve složce /App_Code.  
   
--   Soubor řešení pro webový projekt se nachází odděleně od přímo na webovém serveru. Ve výchozím nastavení, jsou umístěné v \Documents and Settings soubory řešení\\*YourAccount*dokumenty \My\\*\<Visual Studio ### >*\Projects\\ *YourWebSite*.  
+-   Soubor řešení pro webový projekt se nachází odděleně od přímo na webovém serveru. Ve výchozím nastavení, jsou umístěné v \Documents and Settings soubory řešení\\*YourAccount*dokumenty \My\\*\<Visual Studio ### >* \Projects\\ *YourWebSite*.  
   
     > [!NOTE]
     >  Pokud chcete zachovat soubor řešení s webovou stránku, data přesunout existuje a znovu jej otevřete.  

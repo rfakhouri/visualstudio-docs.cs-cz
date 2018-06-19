@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135378"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Postupy: použití AsyncPackage načíst VSPackages na pozadí
 V/v diskových operací může způsobit načtením a inicializací balíčku VS. V případě takové vstupně-výstupních operací na vlákno uživatelského rozhraní může vést k problémům odezvy. Chcete-li to vyřešit, Visual Studio 2015 zavedená <xref:Microsoft.VisualStudio.Shell.AsyncPackage> třídu, která umožňuje načítání balíčku na vlákna na pozadí.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130528"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Příkaz výchozí skupiny a umístění panelu nástrojů
 Pro produkt jednotnost a stabilitu, uživatelské rozhraní zobrazí určitých skupin příkaz ve výchozím nastavení, a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsahuje definice pro příkazy a příkaz skupiny. VSPackages můžete také použít standardní příkazy a příkaz skupiny.  

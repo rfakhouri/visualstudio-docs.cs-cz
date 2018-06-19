@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954349"
 ---
 # <a name="debugging-a-t4-text-template"></a>Ladění textové šablony T4
 Nastavte zarážky v textové šablony. Chcete-li ladit návrhu textové šablony, uložte tento textový soubor šablony a poté zvolte **ladění šablony T4** v místní nabídce souboru v Průzkumníku řešení. Chcete-li ladit spuštění textové šablony, jednoduše ladění aplikace, do které patří.

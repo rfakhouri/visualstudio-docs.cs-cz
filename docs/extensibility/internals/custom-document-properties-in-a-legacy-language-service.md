@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132492"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Vlastní vlastnosti dokumentu ve službě jazyk starší verze
 Vlastnosti dokumentu lze zobrazit v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **vlastnosti** okno. Programovací jazyky obvykle nemají vlastnosti související s jednotlivé zdrojové soubory. XML však podporuje vlastnosti dokumentu, které ovlivňují kódování, schémat a šablony stylů.  

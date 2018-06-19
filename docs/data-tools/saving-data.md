@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923426"
 ---
 # <a name="saving-data"></a>Ukládání dat
 Ukládání dat je, že proces uchování dat v datovém modelu aplikace vrátit zpět na původní úložiště dat, obvykle relační databáze jako SQL Server.

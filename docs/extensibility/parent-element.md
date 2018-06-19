@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137102"
 ---
 # <a name="parent-element"></a>Nadřazený element
 Nadřazený tohoto pole tlačítko nebo pole se seznamem může být pouze skupiny. Nadřazené nabídky nebo skupiny může být ostatní nabídky nebo skupiny. V [CommandPlacement Element](../extensibility/commandplacement-element.md), tento prvek je nutný; ve všech ostatních případech je volitelné. Pokud tento element je vynechán, nadřazeného `Group_Undefined:0` bude implicitní.  

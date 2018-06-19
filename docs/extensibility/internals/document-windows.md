@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129042"
 ---
 # <a name="document-windows"></a>Okna dokumentu
 V sadě Visual Studio *okna dokumentu* je rámcová podřízeného okna, který je přidružen okno rozhraní více dokumentů (MDI). Okna dokumentu se obvykle používají pro zobrazení a úprava zdrojový kód nebo text, ale můžete také uložit jiné typy funkční. Okna dokumentu:  

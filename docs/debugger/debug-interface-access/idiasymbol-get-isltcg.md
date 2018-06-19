@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464755"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
 Načte příznak určující, zda [kompilace](../../debugger/debug-interface-access/compiland.md) souvisel s přepínačem linkeru [/ltgc (vytváření kódu v době propojování)](/cpp/build/reference/ltcg-link-time-code-generation), který pomáhá při optimalizace celého programu. Tento přepínač platí pouze pro spravovaný kód.  

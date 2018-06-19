@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944671"
 ---
 # <a name="code-analysis-project-designer"></a>Analýza kódu, návrhář projektu
 Obsahuje nástroj pro analýzu kódu, který se můžete rozhodnout pro spuštění v kódu. Nástroj hlásí informace o sestavení, například porušení programování a pravidla návrhu uvedeným v pokynů pro návrh rozhraní Microsoft .NET Framework.

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141685"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Podpora pro Visual Studio SDK
 Několik možnosti podpory jsou dostupné pro zákazníky, kteří mají dotazy o tom, jak rozšířit integrované vývojové prostředí (IDE) sady Visual Studio.  

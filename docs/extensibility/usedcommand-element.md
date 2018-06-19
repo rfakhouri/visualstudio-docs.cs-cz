@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139065"
 ---
 # <a name="usedcommand-element"></a>UsedCommand Element
 Umožňuje VSPackage k získání přístupu k příkazu, který je definován v jiném souboru .vsct. Například, pokud vaše VSPackage používá standardní **kopie** příkaz, který je definovaný [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prostředí, můžete přidat příkaz nabídky nebo nástrojů bez implementace ho znovu.  

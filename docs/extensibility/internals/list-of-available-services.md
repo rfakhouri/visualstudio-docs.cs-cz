@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135907"
 ---
 # <a name="list-of-available-services"></a>Seznam dostupných služeb
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a Visual Studio SDK podporují následující služby. Některé balíčky nabízejí vlastní služby, které zde nejsou uvedeny – například jazyk služby nemají jedné služby identifikátor GUID. Název jazyka, musíte použít k vyhledání GUID služba jazyka v registru.  

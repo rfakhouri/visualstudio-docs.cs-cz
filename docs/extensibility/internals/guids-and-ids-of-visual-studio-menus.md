@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134211"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Identifikátory GUID a ID nabídky sady Visual Studio
 Toto téma se zobrazí hodnoty GUID a ID nabídky a skupin v řádku nabídek Visual Studio. Tyto hodnoty jsou definovány v .vsct soubory, které jsou nainstalovány v rámci sady Visual Studio SDK. Další informace najdete v tématu [IDE-Defined příkazy, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  

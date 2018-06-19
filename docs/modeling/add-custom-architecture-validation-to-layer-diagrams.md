@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952541"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Přidání ověřování vlastní architektury do diagramů závislostí
 V sadě Visual Studio můžete uživatele ověřit zdrojového kódu v projektu proti model vrstvy, aby můžete ověřit, že zdrojový kód odpovídá závislosti v diagramu závislostí. Je algoritmus standardní ověřování, ale můžete definovat vlastní rozšíření ověření.

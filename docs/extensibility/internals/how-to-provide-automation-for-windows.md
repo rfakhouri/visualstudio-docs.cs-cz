@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129469"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Postupy: poskytování automatizace pro Windows
 Můžete zadat automatizace pro dokument a nástroje systému windows. Poskytnete automatizace se doporučuje vždy, když chcete zpřístupnit objekty automatizace v okně prostředí a prostředí již neposkytuje objekt připravených automation, stejně jako se seznamem úkolů.

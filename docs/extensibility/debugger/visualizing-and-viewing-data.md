@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132479"
 ---
 # <a name="visualizing-and-viewing-data"></a>Vizualizace a zobrazení dat
 Zadejte vizualizérech a zobrazení dat vlastní prohlížeče způsobem, který je rychle smysl vývojář. Vyhodnocení výrazu (EE) může podporovat vizualizérech typ třetích stran, stejně jako zadat vlastní vlastní prohlížeče.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946569"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Najít a nahradit, prostředí, dialogové okno Možnosti
 Pomocí této stránky **možnosti** dialogové okno pro řízení zpráv a dalších aspektů najít a nahradit operaci. Dostanete toto dialogové okno z **nástroje** nabídky kliknutím **možnosti**, se zvětšující **prostředí**a pak levým na **najít a nahradit**. Pokud tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.

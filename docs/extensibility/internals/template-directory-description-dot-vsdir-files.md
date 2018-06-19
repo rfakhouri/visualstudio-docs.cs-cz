@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133992"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Popis Directory šablony (. Soubory VSDIR)
 Soubor popisu directory šablony (.vsdir) je textový soubor, který umožňuje integrované vývojové prostředí (IDE) k zobrazení složky, průvodce .vsz soubory a soubory šablony, které jsou spojeny s projektem v dialogových oknech. Obsahuje jeden záznam na soubor nebo složku. Všechny soubory .vsdir v uváděného umístění jsou sloučeny, i když pouze jeden projektový soubor je obvykle zadáváno, k popisu více složek, průvodci nebo soubory šablon.  

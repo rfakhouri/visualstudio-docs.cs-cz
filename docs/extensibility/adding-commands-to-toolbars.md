@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102366"
 ---
 # <a name="adding-commands-to-toolbars"></a>Přidání příkazů na panely nástrojů
 Panel nástrojů je vodorovné nebo svislé pruhu, který obsahuje tlačítka vázána na příkazy. Můžete přidat vlastní příkazy na panely nástrojů v mnoha různých systému windows v sadě Visual Studio: hlavní okno sady Visual Studio, Průzkumníka řešení a vlastní vlastní nástroj windows.  
