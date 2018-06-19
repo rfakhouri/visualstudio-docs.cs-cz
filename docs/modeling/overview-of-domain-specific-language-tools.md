@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949521"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Přehled Jazykových nástrojů specifických pro doménu
 Domény jazykové nástroje specifické (DSL Tools), které jsou hostované v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], umožňují návrh jazyka domény a pak generovat vše, co uživatelé musí mít k vytváření modelů, které jsou založeny na jazyce.

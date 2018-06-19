@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954134"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Postupy: Přidání obslužné rutiny operace přetažení myší
 Obslužné rutiny události přetažení myší můžete přidat do vaší DSL tak, aby uživatelé můžete přetáhnout položky na diagramu z jiných diagramů nebo z různých částí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Můžete také přidat obslužné rutiny pro události, jako poklikáním. Společně přetahování myší a dvojitým kliknutím obslužné rutiny se označují jako *gesty obslužné rutiny*.

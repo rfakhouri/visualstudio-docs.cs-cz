@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947297"
 ---
 # <a name="properties-window"></a>Okno vlastností
 Toto okno slouží k zobrazení a změna vlastnosti doby návrhu a události vybraných objektů, které se nacházejí v editorech a návrhářích. Můžete také **vlastnosti** okno Úprava a zobrazení souborů, projektů a řešení vlastnosti. Můžete najít **vlastnosti** okno na **zobrazení** nabídky. Můžete také otevřít ho stisknutím klávesy F4 nebo zadáním **vlastnosti** v **Snadné spuštění** okno.

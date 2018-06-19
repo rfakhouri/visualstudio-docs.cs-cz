@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943199"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoRecover, prostředí, dialogové okno Možnosti
 Pomocí této stránky dialogového okna Možnosti k určení, zda jsou soubory automaticky zálohovány. Tato stránka umožňuje zadat též upravené, že soubory budou obnoveny při neočekávaně ukončí integrované vývojové prostředí (IDE). Tohoto dialogového okna můžete přejít pomocí výběr **nástroje** nabídky a výběr **možnosti**a potom vyberete **prostředí** složku a výběr  **AutoRecover** stránky. Pokud tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.

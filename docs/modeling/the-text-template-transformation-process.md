@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951177"
 ---
 # <a name="the-text-template-transformation-process"></a>Proces transformace textových šablon
 Proces transformace textových šablon trvá textového souboru šablony jako vstup a generuje nový textový soubor jako výstup. Například textové šablony můžete použít ke generování kódu Visual Basic a C#, nebo můžete vygenerovat sestavu ve formátu HTML.

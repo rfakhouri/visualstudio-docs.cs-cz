@@ -37,6 +37,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950030"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Možnosti, textový editor, XAML, formátování
 Použití **formátování** na stránce vlastností zadejte způsob elementů a atributů formátování v dokumentech XAML. Otevřete **možnosti** dialogové okno, klikněte na tlačítko **nástroje** nabídce a pak klikněte na tlačítko **možnosti**. Pro přístup k **formátování** vlastnost rozbalte **textového editoru**, **XAML**, **formátování** uzlu.

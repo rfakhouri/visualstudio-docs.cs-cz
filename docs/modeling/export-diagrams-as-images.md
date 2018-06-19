@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946478"
 ---
 # <a name="export-diagrams-as-images"></a>Exportovat diagramy jako obrázky
 V sadě Visual Studio můžete uložit modelování diagramů v formáty jen pro čtení tak, aby sdílet je s zúčastněným stranám, uživatele nebo členů týmu, kteří nepoužívají stejnou verzi sady Visual Studio.

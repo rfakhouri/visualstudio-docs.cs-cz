@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919892"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Upozornění Analýzy kódu pro spravovaný kód
 Spravovaná analýza kódu nástroj poskytuje upozornění, které indikují porušení pravidel v knihovnách spravovaného kódu. Upozornění jsou uspořádány do oblasti pravidlo například návrhu, lokalizace, výkonu a zabezpečení. Každé upozornění označuje, že je porušení pravidel spravovaná analýza kódu. Tato část obsahuje podrobný diskusí a příklady pro každý upozornění analýzy spravovaného kódu.

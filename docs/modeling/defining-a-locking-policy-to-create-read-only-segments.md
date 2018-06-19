@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953594"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definování zásady zamykání pro vytváření segmentů jen pro čtení
 Rozhraní API neměnitelnosti [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vizualizace a modelování SDK umožňuje aplikaci zámku část nebo všechny model jazyka domény (DSL) tak, aby ho lze číst, ale nebyl změněn. Tato možnost jen pro čtení bylo možné použít, například tak, aby uživatel požádat kolegy opatřit poznámkami a zkontrolovat DSL model, ale můžete zakáže změnu původní.

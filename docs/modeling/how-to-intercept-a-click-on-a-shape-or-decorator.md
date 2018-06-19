@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952297"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Postupy: Zachycení kliknutí na obrazec či dekorátor
 Následující postupy ukazují, jak zachytit a klikněte na obrazce nebo na ikonu dekoratéra. Možné zachytit kliknutí, poklikáním, nastavuje tažením, a dalších gesta a vytvoření elementu reagovat.

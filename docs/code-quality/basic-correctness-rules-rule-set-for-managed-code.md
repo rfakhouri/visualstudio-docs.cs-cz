@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900627"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Sada pravidel Základní pravidla správnosti pro spravovaný kód
 Sada pravidel základní pravidla správnosti se zaměřuje na logických a běžných chyb využití Framework rozhraní API. Základní pravidla správnosti zahrnují pravidla v sadě pravidel minimální doporučená pravidla. Další informace najdete v tématu [sada pravidel spravovaná doporučená pravidla pro spravovaný kód](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) by měla obsahovat toto pravidlo nastavit rozšíření seznam upozornění, že minimální doporučená pravidla sestavy.

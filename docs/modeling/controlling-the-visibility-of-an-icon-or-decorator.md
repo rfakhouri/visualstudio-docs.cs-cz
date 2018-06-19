@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951369"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Řízení viditelnosti ikony či dekorátoru
 A *dekoratéra* je ikona nebo řádek textu, který se zobrazí na obrazce v jazyce specifické pro doménu (DSL). Můžete nastavit jsou zobrazeny dekoratéra a zmizí v závislosti na stavu vlastnosti v modelu. Například na obrazec představující osobu, může mít různé ikony, které jsou uvedeny v závislosti na osoby pohlaví, počet podřízených prvků a tak dále.

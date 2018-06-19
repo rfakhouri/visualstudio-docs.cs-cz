@@ -32,6 +32,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947921"
 ---
 # <a name="file-properties-javascript"></a>Vlastnosti souboru, JavaScript
 Vlastnosti souboru můžete akcí systému projektu proveďte na soubory. Například můžete nastavit vlastnosti souboru k označení, zda soubor musí být přidaní do balíčku jako soubor prostředků.

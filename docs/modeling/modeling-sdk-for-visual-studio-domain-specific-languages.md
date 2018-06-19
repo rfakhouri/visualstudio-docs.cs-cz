@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950839"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Sada Modeling SDK pro sadu Visual Studio – jazyky domény
 Pomocí sady SDK modelování pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], můžete vytvořit výkonné založené na modelu vývojové nástroje, které můžete integrovat do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Stejným způsobem můžete vytvořit jednu nebo několik definic modelu a integrovat je do sady nástrojů.

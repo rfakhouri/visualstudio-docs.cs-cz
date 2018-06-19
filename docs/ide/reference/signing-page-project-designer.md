@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951993"
 ---
 # <a name="signing-page-project-designer"></a>Stránka Podepisování, návrhář projektu (C#)
 Použití **podpisování** stránky **Návrhář projektu** k podepsání manifestů aplikace a nasazení a také k podepsání sestavení (podpis silného názvu).

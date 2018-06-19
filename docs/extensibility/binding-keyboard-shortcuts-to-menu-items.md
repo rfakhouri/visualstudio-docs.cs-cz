@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103354"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Vazba klávesové zkratky pro položky nabídky
 K vytvoření vazby příkazu nabídky vlastní klávesové zkratky, stačí přidáte položku do .vsct souboru pro balíček. Toto téma vysvětluje, jak k mapování klávesové zkratky vlastní tlačítko, položku nabídky nebo příkazu panelu nástrojů a jak použít mapování klávesnice v editoru výchozí nebo omezit na vlastní editor.  

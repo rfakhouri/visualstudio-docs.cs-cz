@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952712"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Přizpůsobení map kódu úpravou souborů DGML
 Chcete-li přizpůsobit Mapa kódu, můžete upravit soubor směrované grafu Markup Language (.dgml) mapy. Například můžete upravit prvky k určení vlastních stylů, kategorií a vlastností elementy kódu a odkazy, nebo odkaz dokumenty nebo přiřadit adresy URL elementy kódu nebo odkazy. Další informace o DGML elementy najdete v tématu [odkaz směrované grafů Markup Language (DGML)](../modeling/directed-graph-markup-language-dgml-reference.md).

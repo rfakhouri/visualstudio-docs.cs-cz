@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949420"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definování obrazců a konektorů
 Existuje několik typů základní tvary, které můžete použít k zobrazení informací v diagramu v jazyce specifické pro doménu (DSL).

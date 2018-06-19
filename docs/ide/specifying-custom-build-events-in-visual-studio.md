@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945919"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Zadejte vlastních událostí sestavení v sadě Visual Studio
 

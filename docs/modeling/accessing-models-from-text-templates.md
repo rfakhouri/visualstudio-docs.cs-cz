@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952323"
 ---
 # <a name="accessing-models-from-text-templates"></a>Přístup k modelům z textových šablon
 Pomocí textových šablon můžete vytvořit sestavu soubory, soubory zdrojového kódu a další textové soubory, které jsou založeny na modely jazyka domény. Základní informace o textové šablony najdete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md). Textové šablony budou fungovat v režimu experimentální při ladění vaší DSL a bude fungovat i v počítači, na kterém jste nasadili DSL.

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31068658"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Systémové požadavky pro emulátor sady Visual Studio pro Android
 Visual Studio Emulator for Android běží jako virtuální počítač s technologií Hyper-V, technologie virtualizace pro Windows 8 a novější verze. Pokud chcete spustit v emulátoru, počítač musí splňovat požadavky na spuštění technologie Hyper-V, jak je popsáno v tomto tématu.  

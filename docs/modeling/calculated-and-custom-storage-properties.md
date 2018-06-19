@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951307"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Vypočtené a vlastní vlastnosti úložiště
 Všechny vlastnosti domény v jazyce specifické pro doménu (DSL) lze zobrazit uživateli v diagramu a v Průzkumníku váš jazyk a je přístupný pomocí kódu programu. Vlastnosti se však lišit ve způsobu, jakým jsou uložena jejich hodnoty.

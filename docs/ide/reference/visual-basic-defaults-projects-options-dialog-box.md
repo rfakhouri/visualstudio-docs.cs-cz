@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945867"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Výchozí možnosti jazyka Visual Basic, projekty, dialogové okno Možnosti
 Určuje výchozí nastavení pro Visual Basic – možnosti projektu. Při vytvoření nového projektu Zadaná možnost příkazy se zařadí do záhlaví projektu v editoru kódu. Platí pro všechny projekty Visual Basic.

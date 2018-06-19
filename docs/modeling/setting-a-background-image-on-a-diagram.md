@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949890"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Nastavení obrázku pozadí v diagramu
 V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vizualizace a modelování SDK, můžete nastavit obrázek pozadí pro generovaný Návrhář pomocí vlastní kód.

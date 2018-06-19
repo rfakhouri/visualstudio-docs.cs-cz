@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944840"
 ---
 # <a name="build-events-page-project-designer-c"></a>Stránka Události sestavení, návrhář projektu (C#)
 Použití **události sestavení** stránky **Návrhář projektu** k určení pokyny ke konfiguraci sestavení. Můžete také zadat podmínky, za kterých se spustit žádné události po sestavení. Další informace najdete v tématu [postupy: určení událostí sestavení (C#)](../../ide/how-to-specify-build-events-csharp.md)a [postup: Zadejte události sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946803"
 ---
 # <a name="toggle-breakpoint-command"></a>Přepnout zarážku – příkaz
 V závislosti na aktuálním stavu, do aktuálního umístění v souboru se změní zarážek zapnout nebo vypnout.

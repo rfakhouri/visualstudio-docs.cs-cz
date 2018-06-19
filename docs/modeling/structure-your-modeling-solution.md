@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953083"
 ---
 # <a name="structure-your-modeling-solution"></a>Strukturujte svá řešení modelování
 Efektivně používat modely v projektu vývoj, musí být členy týmu mohou pracovat na modely z různých částí projektu ve stejnou dobu. Toto téma navrhuje schéma pro dělení aplikace do různých částí, které odpovídají vrstvy v celkovou rozvrstvení diagram.

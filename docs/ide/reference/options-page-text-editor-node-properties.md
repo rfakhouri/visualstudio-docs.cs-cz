@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951645"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Stránka Možnosti, vlastnosti uzlu textového editoru
 Tento dokument popisuje některé stránky (nebo vlastnosti kolekce), jsou přidružené **textového editoru** kategorie, `DTE.Properties("TextEditor", <Property Page>)`, z **možnosti** dialogové okno. Název každé část je hovoru, který se používá pro přístup k `Properties` kolekce a tabulkou v každou část jsou uvedeny vlastnosti v kolekci.

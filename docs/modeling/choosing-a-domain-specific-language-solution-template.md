@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949640"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Výběr šablony řešení jazyka specifického pro doménu
 Pokud chcete vytvořit řešení jazyka domény, vyberte jednu z šablony řešení, které jsou k dispozici v Průvodci Návrhář jazyk specifické pro doménu. Výběrem šablony, která nejvíce podobá jazyk, který chcete vytvořit můžete minimalizovat úpravy, které je nutné provést k počáteční řešení.

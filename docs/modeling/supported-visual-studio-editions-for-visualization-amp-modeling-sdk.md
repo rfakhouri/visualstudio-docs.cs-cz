@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948191"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Verze Visual Studia podporované pro Visualization &amp; Modeling SDK
 Seznam edice sady Visual Studio, které jsou podporovány jsou následující [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] v prostředí pro tvorbu a nasazení. Další informace o těchto edicích naleznete v tématu Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [středisku pro vývojáře](http://go.microsoft.com/fwlink/?LinkId=75628).

@@ -132,6 +132,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900443"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Zadávání poznámek k parametrům funkcí a návratovým hodnotám
 Tento článek popisuje typické použití anotací jednoduché funkce parametry – skalárních hodnot a ukazatelé na třídy a struktury – a většinou druhů vyrovnávací paměti.  Tento článek také ukazuje obecné vzory využití pro poznámky. Další poznámky, které se vztahují na funkce, najdete v části [zadávání poznámek k chování funkcí](../code-quality/annotating-function-behavior.md)

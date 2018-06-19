@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951242"
 ---
 # <a name="properties-of-port-shapes"></a>Vlastnosti obrazců portů
 Port tvarů můžete představují třídy domény v Návrháři vygenerovaný.

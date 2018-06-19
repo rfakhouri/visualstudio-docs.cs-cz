@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948571"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Možnosti, textový editor, všechny jazyky, karty
 Toto dialogové okno umožňuje změnit výchozí chování z editoru kódu. Toto nastavení platí také pro jiné editory založen na editoru kódu, například zobrazení zdroje Návrháře HTML. Pokud chcete zobrazit tyto možnosti, vyberte **možnosti** z **nástroje** nabídky. V rámci **textového editoru** rozbalte složku **všechny jazyky** podsložku a potom zvolte **karty**.

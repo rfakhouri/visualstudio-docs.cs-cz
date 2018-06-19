@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942939"
 ---
 # <a name="set-current-thread-command"></a>Nastavit aktuální vlákno – příkaz
 Nastaví zadaný vlákno jako aktuální vlákno.

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926376"
 ---
 # <a name="edit-data-in-datasets"></a>Úpravy dat v datových sadách
 Můžete upravit dat v datových tabulkách jako upravovat data v tabulce v některé z databází. Tento proces může obsahovat vkládání, aktualizaci a odstraňování záznamů v tabulce. Ve formuláři vázané na data můžete zadat pole, která budou uživatele nelze upravit. V takových případech infrastruktury vazby dat zpracovává všechny sledování změn, aby změny může být odeslána zpět do databáze později. Pokud provedete úpravy prostřednictvím kódu programu k datům, a chcete odeslat tyto změny zpět do databáze, musíte použít objekty a metody, které provádějí sledování změn pro vás.

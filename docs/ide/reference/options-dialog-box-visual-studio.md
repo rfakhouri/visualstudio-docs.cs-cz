@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946647"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Dialogové okno Možnosti (Visual Studio)
 **Možnosti** dialogové okno umožňuje nakonfigurovat integrované vývojové prostředí (IDE) vašim potřebám. Můžete například vytvořit výchozí umístění pro uložení pro projekty, změnit výchozí vzhled a chování systému windows a vytvoření zkratky pro často používané příkazy. Existují také možnosti specifické pro platformu a vývoj jazyk. Dostanete **možnosti** z **nástroje** nabídky.
