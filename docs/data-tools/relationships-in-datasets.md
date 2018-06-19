@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927201"
 ---
 # <a name="create-relationships-between-datasets"></a>Vytvářet vztahy mezi datové sady
 Datové sady, které obsahují související data tabulky, použijte <xref:System.Data.DataRelation> objekty představují vztah nadřazený podřízený mezi tabulkami a vrácení souvisejících záznamů od sebe navzájem. Přidání souvisejících tabulek do datové sady pomocí **Průvodce konfigurací zdroje dat**, nebo **návrháře Dataset**, vytvoří a nakonfiguruje <xref:System.Data.DataRelation> objekt pro vás.

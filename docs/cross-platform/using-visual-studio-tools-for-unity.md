@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31068985"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Používání sady Visual Studio Tools for Unity
 V této části se dozvíte, jak používat Visual Studio Tools for Unity na integrace a funkce produktivitu a používání ladicího programu sady Visual Studio pro vývoj Unity.

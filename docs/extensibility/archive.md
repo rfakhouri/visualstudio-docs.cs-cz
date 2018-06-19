@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097208"
 ---
 # <a name="archive"></a>Archiv
 Tato část obsahuje diskuse o technologiích rozšíření sady Visual Studio jsou stále podporovány, ale dostatek nahrazení technologie, které jsou novější.  

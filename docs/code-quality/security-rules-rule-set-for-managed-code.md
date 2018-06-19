@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925039"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Sada pravidel Pravidla zabezpečení pro spravovaný kód
 Sada co nejvíce možné problémy zabezpečení, které jsou hlášeny pravidel pravidla zabezpečení Microsoft by měla obsahovat.

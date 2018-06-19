@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951268"
 ---
 # <a name="text-template-control-blocks"></a>Řídicí bloky textových šablon
 Řídicí bloky umožňují napsat kód v textové šablony, aby bylo možné odlišit výstup. Existují tři druhy řídicí bloky, které jsou rozlišené jejich otvírací závorky:

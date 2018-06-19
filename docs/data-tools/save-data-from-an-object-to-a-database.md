@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924714"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Uložení dat z objektu do databáze
 Data můžete uložit v objektech k databázi předáním hodnoty z objektu do jednoho z TableAdapter DBDirect – metody (například `TableAdapter.Insert`). Další informace najdete v tématu [TableAdapter](../data-tools/create-and-configure-tableadapters.md).

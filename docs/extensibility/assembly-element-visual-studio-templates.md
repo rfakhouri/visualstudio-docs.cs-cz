@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099106"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Element sestavení (šablony sady Visual Studio)
 Určuje informace o sestavení, která šablona se používá k přidání odkazu z tohoto sestavení do projektů.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102197"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>Vytváření a správa modálních dialogových oken
 Při vytváření modální dialogové okno v sadě Visual Studio, je nutné zakázat nadřazeného okna dialogového okna, když se zobrazí dialogové okno a potom znovu povolit nadřazeného okna po zavření dialogu. Pokud to neuděláte, může dojít k chybě: "Microsoft Visual Studio nelze vypnout, protože modální dialogové okno je aktivní. Zavřete dialogové okno aktivní a akci opakujte."  

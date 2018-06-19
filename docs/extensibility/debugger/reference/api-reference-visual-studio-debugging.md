@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103237"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Referenční dokumentace rozhraní API (Visual Studio ladění)
 V části odkaz zahrnuje koncepční přehled rozhraní API, průvodce, který ukazuje syntaxi a použití pro všechny prvky rozhraní API a širokou příklady kódu. Všechny odkazy jsou abecedně uvedené podle kategorie.  

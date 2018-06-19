@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066515"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>Synchronizace změn mezi XCode a Visual Studio
 Microsoft Visual C++ pro vývoj mobilních řešení pro součást obsahuje vzdálené funkce pro synchronizaci práci mezi vaším Počítačem a vaše Mac. Pokud vaše prostředí Visual Studio a Mac počítače jsou spárovat, jsou k dispozici pro iOS aplikace projekty v sadě Visual Studio, který vám pomůže, otevřete projekt v XCode, nové možnosti přesunutí kódu mezi XCode a Visual Studio a vyčistit dočasný adresář projektu XCode.  

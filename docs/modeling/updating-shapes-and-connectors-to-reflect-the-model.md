@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950410"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Aktualizace tvarů a konektory tak, aby odrážela modelu
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066620"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ pro vývoj mobilních pro různé platformy
 Můžete vytvářet nativní aplikace C++ pro iOS, Android a Windows zařízení a společný kód sdílené složky v knihovnách vytvořené pro iOS, Android a Windows pomocí Visual C++ pro vývoj mobilních řešení pro různé platformy. Toto je možnost k dispozici ve Visual Studiu 2015, který nainstaluje sady SDK a nástroje, které jsou potřeba pro vývoj pro různé platformy sdílené knihovny a nativní aplikace. Při instalaci, můžete vytvořit kód, který běží na iOS a zařízení se systémem Android a platformy kromě Windows, Windows Phone a Xbox Visual C++.  

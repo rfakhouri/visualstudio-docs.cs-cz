@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926532"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Vytváření vyhledávacích tabulek v aplikacích WPF
 Termín *vyhledávací tabulky* (někdy nazývané *vyhledávání vazby*) popisuje ovládacího prvku, který zobrazí informace z tabulky jeden datový na základě hodnoty pole cizího klíče v druhé tabulce. Můžete vytvořit vyhledávací tabulku tak, že přetáhnete hlavní uzel nadřazené tabulky nebo objekt v **zdroje dat** oken na ovládací prvek, který je již vázána na sloupec nebo vlastnost v související podřízené tabulce.

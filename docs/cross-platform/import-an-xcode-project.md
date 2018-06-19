@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066935"
 ---
 # <a name="import-an-xcode-project"></a>Import projektu XCode
 Microsoft Visual C++ pro vývoj mobilních řešení pro různé platformy zahrnuje podporu pro přesun projekty XCode do sady Visual Studio, kde můžete vytvořit knihovny napříč platformami a sdílet s jinými projekty kódu. XCode Průvodce importem zjednodušuje proces import projektů a rozdělení out kódu C++ v vaše cíle XCode pro použít jako statické knihovny nebo sdílené kód projektu. Můžete spravovat specifické pro iOS kódu v sadě Visual Studio a stále proveďte scénářů a sestavení pomocí XCode. Informace o tom, jak snadno přesunout přepínat mezi sadou Visual Studio a XCode kódu najdete v tématu přesunout změny mezi XCode a Visual Studio.  

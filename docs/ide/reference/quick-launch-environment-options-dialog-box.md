@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946777"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Dialogové okno Snadné spuštění, Prostředí, Možnosti
 Můžete použít **Snadné spuštění** k rychlému vyhledání a provádět akce u prostředků IDE jako možnosti, šablony, nabídky. Nemůžete použít **Snadné spuštění** vyhledávání kódu a symboly. **Snadné spuštění** vyhledávacího pole je umístěna v pravém horním rohu panelu nabídek a je přístupný výběrem kombinace kláves Ctrl + Q klíče. Do pole zadejte hledaný řetězec. K vyhledání řetězce, které obsahují @, použijte ”@@”. 

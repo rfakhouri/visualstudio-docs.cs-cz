@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951892"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Přepisování a rozšiřování vygenerovaných tříd
 DSL Definition je platforma, ve kterém můžete vytvořit výkonnou sadu nástrojů, které jsou založené na jazyce specifické pro doménu. Mnoho rozšíření a přizpůsobení můžete provést pomocí přepsání a rozšíření třídy, které se generují z definice DSL. Tyto třídy zahrnují nejen třídy domény, které jste definovali explicitně v diagramu definice DSL, ale také další třídy, které definují sada nástrojů, Průzkumník, serializace a tak dále.

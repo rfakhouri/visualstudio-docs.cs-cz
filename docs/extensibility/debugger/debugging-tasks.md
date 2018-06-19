@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101141"
 ---
 # <a name="debugging-tasks"></a>Ladění úlohy
 Chcete-li ladit program, musí být spuštěn a modul ladění (DE) musí být připojené k němu, jinak DE musí být připojené k dříve spuštěného programu. Po připojení, musí je DE generovat určité události spuštění. V odpovědi balíček ladění pokusí navázat zarážky nastavení v IDE. Pokud se program dotkne vázané breakpoint, zastaví a čeká na vstup uživatele.  

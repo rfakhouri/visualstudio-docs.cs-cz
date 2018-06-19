@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098066"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Výběr strategie implementace modulu ladění
 Architektura běhu použijte k určení strategie implementace ladění modulu (DE). Modul ladění mohou být vytvořeny v rámci procesu pro program, který má být vyladěnou, v rámci procesu sadě Visual Studio relace ladění manager (SDM) nebo mimo proces do obou z nich. Následující pokyny by měly pomoci vám vybrat mezi tyto tři strategie.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945126"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Dialogové okno Oznámení, Prostředí, Možnosti
 Tuto možnost použijte k zastavení žádné oznámení, které jste dříve zvolili Ignorovat pomocí dialogu oznámení je ignorována. Další informace najdete v tématu [oznámení](../../ide/visual-studio-notifications.md).

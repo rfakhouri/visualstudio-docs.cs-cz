@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100413"
 ---
 # <a name="commandtable-element"></a>CommandTable Element
 CommandTable není kořenovým elementem .vsct souboru. Toto je soubor, který definuje skutečný rozložení a typ příkazů, které VSPackage poskytuje k prostředí IDE. Příkazy může zahrnovat položky nabídky, nabídek, panely nástrojů a pole se seznamem. Další informace najdete v tématu [tabulky příkaz Visual Studio (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  

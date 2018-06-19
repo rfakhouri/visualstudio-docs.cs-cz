@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945737"
 ---
 # <a name="options-text-editor-file-extension"></a>Možnosti, textový editor, přípona souboru
 Integrované vývojové prostředí (IDE) sady Visual Studio bude zpracovávat tento možností, které dialogové okno umožňuje určit, jak všechny soubory s určité přípony souborů. Pro každou **rozšíření** , které jste zadali, můžete vybrat úpravy prostředí. To umožňuje zvolit IDE editor nebo designer, ve kterém se otevře dokumenty určitého typu. Pokud chcete zobrazit tyto možnosti, zvolte **možnosti** z **nástroje** nabídky, rozbalte **textového editoru** uzel a vyberte možnost **příponu souboru**.

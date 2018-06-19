@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106978"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Postupy: Ladění modul vlastní ladění
 Typ projektu spustí modul ladění (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metoda. To znamená, že je DE spuštění pod kontrolou instanci [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] řízení typ projektu. Ale tuto instanci [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nelze ladění DE. Jaké způsobem kroky vám umožní ladit vaše vlastní DE.  
@@ -59,7 +60,7 @@ Typ projektu spustí modul ladění (DE) z <xref:Microsoft.VisualStudio.Shell.In
   
 1.  Spustit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] normální podregistru a zatížení projektu zadejte projektu (to je, zdrojů a typu projektu, není vytvoření instance typu vašeho projektu).  
   
-2.  Otevřete vlastnosti projektu a přejděte na **ladění** stránky. Pro **příkaz**, zadejte cestu k [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ve výchozím nastavení je to *[jednotka]*\Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
+2.  Otevřete vlastnosti projektu a přejděte na **ladění** stránky. Pro **příkaz**, zadejte cestu k [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ve výchozím nastavení je to *[jednotka]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
   
 3.  Pro **argumenty příkazu**, typ `/rootsuffix exp` pro experimentální podregistru (vytvořen při instalaci VSIP).  
   

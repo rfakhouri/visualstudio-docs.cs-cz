@@ -28,6 +28,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927465"
 ---
 # <a name="validate-data-in-datasets"></a>Ověřování dat v datových sadách
 Ověřování dat je proces ověření, která zadaných do datových objektů v souladu s omezeními ve schématu datové sady. Proces ověření také potvrdí, že tyto hodnoty jsou následující pravidla, které byly vytvořeny pro vaši aplikaci. Je vhodné ověřit data před odesláním aktualizací do základní databáze. Tím se snižuje chyby, jakož i potenciální počet odezev mezi aplikace a databáze.

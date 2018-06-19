@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106715"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 Představuje kontrolního součtu pro dokument ladění a umožňuje předávání kontrolního součtu mezi součástmi.  

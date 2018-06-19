@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946062"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Možnosti, textový editor, C/C++, formátování
 Umožňuje změnit výchozí chování editoru kódu při programování v jazyce C nebo C++.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104148"
 ---
 # <a name="binding-breakpoints"></a>Vazba zarážky
 Pokud uživatel nastaví zarážku, možná stisknutím klávesy F9, rozhraní IDE výrobky zpracovává žádost a vyzve k relaci ladění k vytvoření zarážce.  

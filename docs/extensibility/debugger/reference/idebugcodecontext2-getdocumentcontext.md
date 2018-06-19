@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105629"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 Získá kontext dokumentu, která odpovídá tento kontext kódu. Kontext dokumentu představuje pozici ve zdrojovém souboru, který odpovídá zdrojový kód, který vygeneroval tento pokyn.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102418"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Přidání podnabídky do nabídky
 Tento názorný postup je založený na ukázky v [přidání nabídky na panelu nabídek Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) ukazuje, jak přidat podnabídky k **TestMenu** nabídky.  

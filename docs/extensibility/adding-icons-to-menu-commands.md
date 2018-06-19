@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098389"
 ---
 # <a name="adding-icons-to-menu-commands"></a>Přidávání ikon na příkazy nabídky
 Příkazy se může zobrazit na nabídek a panelů nástrojů. Na panely nástrojů je běžné pro příkaz pro zobrazí právě ikonu (a šetřit tak místo) při v nabídkách, že příkaz se obvykle zobrazují s jak ikonu a text.  

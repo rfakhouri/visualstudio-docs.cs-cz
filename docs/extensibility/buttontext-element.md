@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100176"
 ---
 # <a name="buttontext-element"></a>ButtonText Element
 Toto pole umožňuje zadat text, který se zobrazí v různých nabídky. Ve výchozím nastavení `ButtonText` prvek se zobrazuje v nabídce řadiče. `ButtonText` Element také změní výchozí, pokud textová pole jsou prázdné. `ButtonText` Element nemůže být prázdný, i když nejsou určeny v ostatních polích text.  

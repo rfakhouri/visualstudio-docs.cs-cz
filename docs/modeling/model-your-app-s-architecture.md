@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952476"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelování aplikace&#39;architektura s
 K zajištění, že software systému nebo aplikace splňuje vašich uživatelů potřebuje, můžete vytvořit modely v sadě Visual Studio jako součást vaší popis celková struktura a chování softwaru systému nebo aplikace. Použití modelů, můžete také popisují vzorů, které se používají v rámci návrhu. Tyto modely vám pomůžou pochopit stávající architektura, popisují změny a vaše záměry jasně komunikovat.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097793"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Vytvoření okna nástroj s více instancemi
 Okno nástroje můžete naprogramovat tak, aby více instancí může být otevřena současně. Ve výchozím nastavení nástroj windows může mít pouze jednu instanci otevřete.  

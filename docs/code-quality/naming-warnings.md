@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927084"
 ---
 # <a name="naming-warnings"></a>Upozornění na pojmenování
 Upozornění na pojmenování podpora dodržování konvencí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pokynů pro návrh.

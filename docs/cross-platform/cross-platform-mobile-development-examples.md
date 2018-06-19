@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31065592"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Příklady mobilní vývoj pro různé platformy
 Některé šablony nainstalované ve Visual C++ pro vývoj mobilních řešení pro různé platformy generování dokončení příklady, které se můžete dozvědět se od. Kromě toho webu Windows Dev Center má několik příklad aplikace, které si můžete stáhnout a vyzkoušet v sadě Visual Studio.  

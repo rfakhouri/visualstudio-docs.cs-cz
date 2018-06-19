@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098989"
 ---
 # <a name="implementing-a-port-supplier"></a>Implementace Port dodavatele
 Port dodavatele poskytuje porty na žádost o správce ladicí relace (SDM). Port dodavatele musí implementovat při ladění do počítače bez modelu DCOM, nebo když nové zařízení musí být podporována. Zajistit ladění na mobilní telefon, například mohly implementovat dodavatele port, který poskytuje porty, které se připojují na mobilní telefon (možná prostřednictvím Reakcí nebo buňky připojení) a vytvoří výčet procesy a programy spuštěné na telefonu.  

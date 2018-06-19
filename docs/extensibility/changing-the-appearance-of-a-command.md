@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099080"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Změna vzhledu příkazu
 Změnou vzhledu příkazu můžete poskytnutí zpětné vazby pro vaše uživatele. Například můžete příkazu, který bude vypadat jinak, když není k dispozici. Můžete nastavit příkazy k dispozici nebo není k dispozici, skrýt nebo je zobrazit, nebo zaškrtněte nebo zrušte zaškrtnutí je v nabídce.  

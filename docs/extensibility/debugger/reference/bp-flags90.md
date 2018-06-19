@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100345"
 ---
 # <a name="bpflags90"></a>BP_FLAGS90
 Vytvoří výčet platné hodnoty pro volitelné příznaky. Volitelné příznaky lze určit další informace, když nastavit zarážky. Tento výčet rozšiřuje [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) výčtu.  

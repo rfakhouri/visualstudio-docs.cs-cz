@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097780"
 ---
 # <a name="accessing-thetext-view-by-using-the-legacy-api"></a>Přístup k zobrazení text s použitím rozhraní API starší verze
 Zobrazení textu je prezentace textu, který je uložen v textové vyrovnávací paměti. Zobrazení textu můžete přistupovat pomocí starší verze rozhraní API, jak je znázorněno v následující části.

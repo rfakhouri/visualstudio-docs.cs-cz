@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099334"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Změna nastavení zobrazení pomocí starší verze rozhraní API
 Nastavení pro základní funkce editoru, například zalamování řádků, výběr okraje a virtuální adresní prostor, můžete změnit uživatelem prostřednictvím **možnosti** dialogové okno. Ale je také možné tato nastavení změnit prostřednictvím kódu programu.  

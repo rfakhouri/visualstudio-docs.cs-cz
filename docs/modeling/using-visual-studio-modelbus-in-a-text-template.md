@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952823"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Použití prvku Visual Studio ModelBus v textové šabloně
 Pokud píšete textové šablony, které čtou model, který obsahuje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus odkazuje, můžete chtít vyřešte reference pro přístup k cílové modelů. V takovém případě je nutné přizpůsobit textové šablony a odkazované jazyky specifické pro doménu (DSL, linky):

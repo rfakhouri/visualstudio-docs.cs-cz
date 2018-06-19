@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102379"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Přizpůsobení ovládací prvky editoru a nabídky pomocí starší verze rozhraní API
 Služba jazyka nebo textového zobrazení můžete ovládat kontextové nabídky a ovládací prvky v editoru. Na stránkách v této části jsou upřesněny postupy pro práci s těmito funkcemi.  

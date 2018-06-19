@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925009"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Postupy: Export textury pro použití s rozhraním Direct2D nebo aplikacemi JavaScript
 Kanál obsahu bitové kopie můžete vygenerovat textury, které jsou kompatibilní s Direct2D na interní vykreslování konvence. Textury tohoto druhu, jsou vhodné pro použití v aplikacích, které používají Direct2D a v aplikacích pro UPW vytvořit pomocí jazyka JavaScript.

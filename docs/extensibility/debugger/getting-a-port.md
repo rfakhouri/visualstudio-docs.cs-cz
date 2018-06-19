@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102990"
 ---
 # <a name="getting-a-port"></a>Získávání Port
 Port představuje připojení k počítači, na kterém běží procesy. Tento počítač může být v místním počítači nebo vzdáleného počítače (který může pravděpodobně být nezaložené Windows operačním systémem, zjistit [porty](../../extensibility/debugger/ports.md) informace).  

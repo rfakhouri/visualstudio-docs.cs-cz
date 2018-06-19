@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946361"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Pokyny k nástrojům architektury Visual Studio
 Architektura nástrojů zásady se ke stažení balíčku praktické informace o použití nástrojů pro modelování v sadě Visual Studio 2010. Uvede široký přehled o tom, jak používat všechny nástroje pro modelování integrovanou a popisuje nejběžnějších scénářů, ve kterých se používají nástroje.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100936"
 ---
 # <a name="combo-element"></a>Element pole se seznamem
 Definuje příkazy, které se zobrazují v pole se seznamem. Existují čtyři typy pole se seznamem, následujícím způsobem: DropDownCombo, DynamicCombo, IndexCombo a MRUCombo.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944132"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Dialogové okno Události sestavení (Visual Basic)
 Použití **události sestavení** dialogové okno zadat pokyny ke konfiguraci sestavení. Můžete také zadat podmínky, za kterých se spustit žádné události před sestavením nebo po sestavení. Další informace najdete v tématu [postupy: určení události sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).

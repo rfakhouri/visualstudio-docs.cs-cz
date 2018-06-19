@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099373"
 ---
 # <a name="launch-based-attachment"></a>Na základě spuštění přílohy
 Na základě spuštění přílohy program je automaticky. Při spuštění procesu hostování program podle SDM odpovídá na základě spuštění přílohy podobná metodu ručního přílohy cestu. Informace najdete v tématu [připojení k programu](../../extensibility/debugger/attaching-to-the-program.md).  

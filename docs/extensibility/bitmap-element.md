@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098105"
 ---
 # <a name="bitmap-element"></a>Bitmap – Element
 Definuje rastrový obrázek. Bitmapy je načten z prostředku nebo ze souboru.  

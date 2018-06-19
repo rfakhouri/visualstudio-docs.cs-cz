@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066122"
 ---
 # <a name="create-an-android-native-activity-app"></a>Vytvoření aplikace pro Android nativní aktivity
 Když instalujete Visual C++ pro vývoj mobilních řešení pro různé platformy možnost, Visual Studio 2015 lze vytvářet plně funkční aplikace pro Android nativní aktivity. Android Kit pro nativní vývoj (NDK) je sada nástrojů, který umožňuje implementovat většina aplikací systému Android pomocí čistém kódu C/C++. Nějaký kód Java JNI funguje jako spojovací umožňující kódu C/C++ pro interakci s Android. Android NDK zavedla možnost vytvářet nativní aktivity aplikací s Androidem 9 úroveň rozhraní API. Nativní kód aktivity se používá pro vytváření hraní a grafické náročné aplikace, které používají Unreal Engine nebo OpenGL. Toto téma vás provede vytvoření jednoduché aplikace nativní aktivity, která používá OpenGL. Další témata provede vývojáře životní cyklus úpravy, vytváření, ladění a nasazování kód nativní aktivity.  

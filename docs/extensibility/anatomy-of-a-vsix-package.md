@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099548"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie balíčku VSIX
 Balíčku VSIX je soubor VSIX, který obsahuje jeden nebo více rozšíření Visual Studia, spolu s metadaty, které Visual Studio využívá ke klasifikaci a instalaci rozšíření. Aby metadata jsou obsaženy v manifestu VSIX a souboru .xml [Content_Types]. Balíčku VSIX může také obsahovat jeden nebo více souborů Extension.vsixlangpack zajistit lokalizované instalace text a může obsahovat další balíčků VSIX pro instalaci závislosti.  

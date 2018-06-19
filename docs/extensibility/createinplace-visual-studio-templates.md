@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099210"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (šablony sady Visual Studio)
 Určuje, jestli se k vytvoření projektu a provést nahrazení parametrů v zadaném umístění, nebo provést nahrazení parametru do dočasného umístění a potom uložte projekt do zadaného umístění.  

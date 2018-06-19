@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947934"
 ---
 # <a name="environment-options-dialog-box"></a>Dialogové okno Možnosti prostředí
 Můžete použít na stránkách v **prostředí** složku **možnosti** dialogové okno nastavit jak zobrazit některé prvky integrované vývojové prostředí (IDE) a chovat. Dostanete stránky prostředí, v nabídce panelu Výběr **nástroje**, **možnosti**a potom vyberete **prostředí**.

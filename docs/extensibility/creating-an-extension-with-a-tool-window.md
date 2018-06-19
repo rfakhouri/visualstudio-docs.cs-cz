@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102145"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>Vytváření rozšíření s okno nástroje
 V tomto postupu, další informace o použití šablona projektu VSIX a **okno nástroje vlastní** šablony položky k vytvoření rozšíření s okno nástroje.  

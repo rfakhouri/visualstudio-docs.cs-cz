@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104092"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Přidání uživatelského ovládacího prvku do úvodní stránky
 Tento návod ukazuje, jak přidat odkaz na stránku vlastní spuštění knihovny DLL. V příkladu přidáme sestavení uživatelského ovládacího prvku uživatelského ovládacího prvku k řešení a pak odkazuje na sestavení vytvořené ze souboru XAML – úvodní stránka. Novou kartu hostitelem uživatelského ovládacího prvku, který funguje jako základní webový prohlížeč.  

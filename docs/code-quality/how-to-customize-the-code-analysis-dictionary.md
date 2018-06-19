@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924301"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Postupy: Přizpůsobení slovníku Analýzy kódu
 Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kódu chyby v pravopisu, gramaticky případ a jiné zásady vytváření názvů služby [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pokyny. Můžete vytvořit vlastní slovník soubor Xml pro přidat, odebrat nebo změnit podmínky, zkratky a zkratky do slovníku předdefinované.

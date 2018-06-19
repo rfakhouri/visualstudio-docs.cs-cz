@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950930"
 ---
 # <a name="properties-of-swimlanes"></a>Vlastnosti drah
 Plaveckých drah můžete přidat do diagramu. Plaveckých drah rozdělení diagram na svislé nebo vodorovné oblasti. Můžete definovat, která se zobrazí uvnitř plaveckých drah ostatním tvarům. Další informace najdete v tématu [jak definovat jazyka domény](../modeling/how-to-define-a-domain-specific-language.md). Další informace o tom, jak používat tyto vlastnosti najdete v tématu [přizpůsobení a rozšíření jazyka domény](../modeling/customizing-and-extending-a-domain-specific-language.md).

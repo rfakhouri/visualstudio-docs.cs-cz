@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926238"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Návod: Ladění vícevláknové aplikace v sadě Visual Studio pomocí okna vláken
 Visual Studio poskytuje **vláken** prvky můžete ladění vícevláknových aplikací rozhraní okna a jiný uživatel. Tento kurz ukazuje, jak používat **vláken** okno a **ladění umístění** panelu nástrojů. Informace o dalších nástrojů najdete v tématu [Začínáme ladění vícevláknové aplikace](../debugger/get-started-debugging-multithreaded-apps.md). V tomto kurzu trvá jenom pár minut, ale jeho dokončení vás seznámí s funkcemi pro ladění vícevláknové aplikace.   

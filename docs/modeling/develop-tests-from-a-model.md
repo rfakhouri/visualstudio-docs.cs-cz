@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953492"
 ---
 # <a name="develop-tests-from-a-model"></a>Vývoj testů z modelu
 Požadavky a architektury modely můžete uspořádat testy systému a jeho součástí. Tento postup pomáhá, zajistěte, aby test požadavky, které jsou důležité pro uživatele a dalších zúčastněných osob a pomůže vám rychle aktualizovat testy při změně požadavky. Pokud používáte [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], můžete také zachovat propojení mezi modely a testy.

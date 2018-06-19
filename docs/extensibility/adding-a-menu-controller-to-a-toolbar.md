@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104628"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Přidávání řadiče nabídky na panelu nástrojů
 Tento názorný postup je založený na [přidání panelu nástrojů na okno nástroje](../extensibility/adding-a-toolbar-to-a-tool-window.md) návod a ukazuje, jak přidat řadič nabídky na panelu nástrojů okna. Postupy v tomto poli lze použít také na panelu nástrojů, který je vytvořen v [přidávání panelů nástrojů](../extensibility/adding-a-toolbar.md) návod.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101375"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Vytváření vlastních ladění modulu
 Modul ladění (DE) je komponenta umožňující ladění konkrétní běhu architektury. Je obvykle pouze jeden implementace DE za běhu prostředí.  

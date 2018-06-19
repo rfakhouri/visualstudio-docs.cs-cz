@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102789"
 ---
 # <a name="evaluating-expressions"></a>Vyhodnocení výrazů
 Výrazy se vytvářejí z řetězců, které jsou předávány z automobily, sledování, QuickWatch nebo okamžitou windows. Při vyhodnocování výrazu generuje tisknutelná řetězec, který obsahuje název a typ proměnné nebo argument a jeho hodnotu. Tento řetězec se zobrazí v okně odpovídající IDE.  

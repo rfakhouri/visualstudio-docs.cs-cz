@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102925"
 ---
 # <a name="debug-engine"></a>Ladění modulu
 Modul ladění (DE) pracuje s překladač nebo operačního systému, k poskytování ladění služby, jako je například spouštění řízení, zarážky a výraz vyhodnocení. DE je odpovědná za monitorování stavu laděné programu. K tomu je DE používá jakékoli metody je dostupné v podporovaných modulu runtime, zda z procesoru nebo z rozhraní API dodané modulem runtime.  

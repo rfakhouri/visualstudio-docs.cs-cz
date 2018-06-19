@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944684"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Stránka Možnosti, vlastnosti uzlu Písmo a barvy
 Tento dokument popisuje vlastnosti písma a barev pro okno nástroje, které je registrované k vyskytovat v části **písma a barev** v **prostředí** kategorii **možnosti** Dialogové okno. To podporuje dynamické povaha skupiny colorable položek, které můžete změnit, pokud jsou VSPackages nainstalována nebo odinstalována.

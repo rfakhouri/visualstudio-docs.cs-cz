@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952756"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Pravidla šířící změny v modelu
 Můžete vytvořit pravidlo úložiště rozšířit změnu od jednoho prvku na jiné vizualizace a modelování SDK (VMSDK). Když dojde ke změně na libovolný prvek v úložišti, pravidla je naplánováno spuštění, obvykle v případě, že nejkrajnější je transakce potvrzena. Existují různé typy pravidel pro různé druhy událostí, například přidávání element nebo odstranění. Pravidla můžete připojit na konkrétní typy elementů, tvarů nebo diagramů. Mnoho vestavěných funkcí jsou definována pravidly: například pravidla zajistěte, aby diagram aktualizovala při změně modelu. Jazyka specifické pro doménu můžete přizpůsobit přidáním vlastních pravidel.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100374"
 ---
 # <a name="attaching-directly-to-a-program"></a>Připojení přímo k programu
 Uživatelé, kteří chtějí k ladění programů v procesu, který je již spuštěn obvykle postupujte takto:  

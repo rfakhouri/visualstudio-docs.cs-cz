@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098170"
 ---
 # <a name="execution-control-and-state-evaluation"></a>Řízení provádění a stavu vyhodnocení
 Ladění aplikace vyžaduje implementace funkce řízení provádění, jako zanoříte se do funkce, zastavování na zarážkách a pokračování provádění. Visual Studio ladění základů jeho řízení provádění na události odeslané mezi součástmi ladicí program.  

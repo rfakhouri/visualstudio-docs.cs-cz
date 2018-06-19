@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926807"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Návod: Vytvoření služby WCF Data Service pomocí grafického subsystému WPF a Entity Framework
 Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] který je hostován v [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci a potom k němu přístup z aplikace Windows Forms.

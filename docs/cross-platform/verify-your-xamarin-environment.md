@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31068394"
 ---
 # <a name="verify-your-xamarin-environment"></a>Ověřte prostředí Xamarin
 
@@ -30,7 +31,7 @@ Po dokončení instalační programy (viz [nastavení a instalaci](../cross-plat
  
 V sadě Visual Studio, vyberte nejdřív **nástroje > rozšíření a aktualizace** a zaškrtněte políčko, pokud některé z těchto komponent Xamarin vyžadovat aktualizace.  
   
-Pak vytvořte nové řešení Xamarin.Forms v sadě Visual Studio pomocí **soubor > Nový projekt**. V dialogovém okně rozbalte **Visual C# > napříč platformami**, vyberte **mobilní aplikace (Xamarin.Forms)**a klikněte na tlačítko OK. V dialogovém okně, který následuje, vyberte **prázdnou aplikaci**. V části **strategie sdílení kódu**, vyberte **.NET Standard**. Klikněte na tlačítko OK.
+Pak vytvořte nové řešení Xamarin.Forms v sadě Visual Studio pomocí **soubor > Nový projekt**. V dialogovém okně rozbalte **Visual C# > napříč platformami**, vyberte **mobilní aplikace (Xamarin.Forms)** a klikněte na tlačítko OK. V dialogovém okně, který následuje, vyberte **prázdnou aplikaci**. V části **strategie sdílení kódu**, vyberte **.NET Standard**. Klikněte na tlačítko OK.
 
 Tyto akce vytvoření řešení s čtyři projekty: sdílené projektu knihovny standardní rozhraní .NET 2.0 a projekty aplikací pro Android, iOS a univerzální platformu Windows (UWP):  
   

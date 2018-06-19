@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946660"
 ---
 # <a name="replace-in-files-command"></a>Nahradit v souborech – příkaz
 Nahradí text v souborech pomocí podmnožinu dostupných v možnostech **nahradit v souborech** kartě **najít a nahradit** okno.

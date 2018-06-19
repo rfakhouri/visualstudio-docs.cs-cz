@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101791"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Přidání příkazů sady Visual Studio na úvodní stránky
 Když vytvoříte vlastní úvodní stránky, můžete do něj může přidat příkazy sady Visual Studio. Tento dokument popisuje různé způsoby, jak vytvořit vazbu příkazy sady Visual Studio na objekty XAML na úvodní stránce.  

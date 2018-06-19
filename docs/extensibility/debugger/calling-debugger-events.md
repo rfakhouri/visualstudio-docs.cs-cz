@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100024"
 ---
 # <a name="calling-debugger-events"></a>Události volání ladicí program
 Při ladění relace k událostem v určitém pořadí.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926257"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Začínáme ladění vícevláknových aplikací v sadě Visual Studio
 Visual Studio poskytuje několik nástrojů a prvky uživatelského rozhraní pro ladění vícevláknové aplikace. Tento kurz ukazuje, jak používat značky přístup z více vláken **paralelní zásobníky** okně **paralelního sledování** oken, podmíněné zarážky a filtr zarážky. V tomto kurzu trvá jenom pár minut, ale jeho dokončení vás seznámí s funkcemi pro ladění vícevláknové aplikace.

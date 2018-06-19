@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107495"
 ---
 # <a name="creating-a-settings-category"></a>Vytvoření kategorie nastavení
 V tomto názorném postupu vytvořit kategorii nastavení sady Visual Studio a používat k uložení hodnot a obnovení hodnoty z nastavení souboru. Kategorie nastavení je skupina souvisejících vlastností, které se zobrazují jako "bod vlastní nastavení;" To znamená jako zaškrtávací políčko v **Import a export nastavení** průvodce. (Najdete na **nástroje** nabídky.) Nastavení jsou uložena ani obnoveny v kategorii a jednotlivých nastavení nezobrazují v průvodci. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099470"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Přístup k textová vyrovnávací paměť s použitím rozhraní API starší verze
 Text je zodpovědný za správu textové datové proudy a soubor trvalost. I když vyrovnávací paměti můžou číst nebo zapisovat dalších formátů, všechny běžné komunikace s vyrovnávací paměti se provádí pomocí kódování Unicode. Ve starší verzi rozhraní API textovou vyrovnávací paměť můžete použít jeden – nebo dvourozměrná souřadnicový systém můžete určit umístění znaku ve vyrovnávací paměti.  

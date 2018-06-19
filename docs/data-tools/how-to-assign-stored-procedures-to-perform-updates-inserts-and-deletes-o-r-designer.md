@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926493"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Postupy: přiřazení uložené procedury k provedení aktualizací, vložení a odstranění (Návrhář relací objektů)
 Uložené procedury mohou být přidány do Návrhář relací objektů a provedeny jako obvyklé <xref:System.Data.Linq.DataContext> metody. Můžete také používají přepsat výchozí nastavení [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] modul runtime chování, které provádí vložení, aktualizace a odstraní se po uložení změn z tříd entit k databázi (například při volání metody <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metoda).

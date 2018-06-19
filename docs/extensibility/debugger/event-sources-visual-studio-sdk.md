@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099835"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Zdroje událostí (Visual Studio SDK)
 Existují dva zdroje událostí: ladění modulu (DE) a relace ladění manager (SDM). Událostí odeslaných z Zavedenými vlastní modul jinou hodnotu než NULL, zatímco událostí odeslaných z SDM vlastní modul hodnotu NULL.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104534"
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>Přidání atributu do položky projektu
 Metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> získávat a nastavovat hodnoty atributů položka projektu. SetItemAttribute vytvoří atribut Pokud již neexistuje, přidání do metadata položky projektu.  

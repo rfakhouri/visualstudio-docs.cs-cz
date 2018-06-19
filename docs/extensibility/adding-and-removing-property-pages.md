@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101287"
 ---
 # <a name="adding-and-removing-property-pages"></a>Přidávání a odebírání stránky vlastností
 Návrhář projektu poskytuje centralizované umístění pro správu vlastnosti projektu, nastavení a prostředky v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Zobrazí se jako v jednom okně systému [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) a obsahuje počet podokna na pravé straně, které jsou přístupné prostřednictvím karet na levé straně. Podokna (často označované jako stránky vlastností) v Návrháři projektu se liší podle typu projektu a jazyk. Návrhář projektu lze přistupovat pomocí **vlastnosti** příkaz na **projektu** nabídky.  

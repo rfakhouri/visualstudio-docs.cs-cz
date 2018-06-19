@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944876"
 ---
 # <a name="assembly-information-dialog-box"></a>Dialogové okno Informace o sestavení
 **Informací o sestavení** dialogové okno se používá k určení hodnoty [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] globální sestavení atributy, které jsou uložené v souboru AssemblyInfo vytváří automaticky s projektu. V **Průzkumníku řešení**, soubor se nachází v **Můj projekt** uzlu v [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (klikněte na tlačítko **zobrazit všechny soubory** k jejímu zobrazení); se nachází v  **Vlastnosti** v [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Další informace o atributech sestavení najdete v tématu [atributy](http://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).

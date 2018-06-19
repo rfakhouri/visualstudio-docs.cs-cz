@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102314"
 ---
 # <a name="expression-evaluator"></a>Vyhodnocení výrazu
 Vyhodnocovače výrazů (EE) zkontrolujte syntaxi jazyka analyzovat a vyhodnocovat proměnné a výrazy v době běhu, což jim umožní jde zobrazit uživatele, když prostředí IDE je v režimu pozastavení.  

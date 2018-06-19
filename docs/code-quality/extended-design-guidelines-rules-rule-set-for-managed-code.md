@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927097"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Sada pravidel Rozšířená pravidla pokynů návrhu pro spravovaný kód
 Sada pravidel pravidla obecných zásad rozšířené návrhu Microsoft rozšíří na pravidla obecných zásad návrhu základní maximalizovat použitelnost a jeho udržovatelnost problémy, které jsou hlášeny. Navíc je důraz na pokyny pro pojmenování. Měli byste zvážit, včetně toto pravidlo nastavte, pokud projekt obsahuje kód knihovny, nebo pokud chcete vynutit nejvyšší standardy pro psaní kódu, který se snadno spravovat.
