@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567951"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler – úloha
 `AspNetCompiler` Úloh zabalí aspnet_compiler.exe, nástroj předkompilovat [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557031"
 ---
 # <a name="clickonce-reference"></a>Referenční dokumentace technologie ClickOnce
 Na následujících stránkách popisují strukturu souborů XML používá k reprezentování aplikace ClickOnce.  

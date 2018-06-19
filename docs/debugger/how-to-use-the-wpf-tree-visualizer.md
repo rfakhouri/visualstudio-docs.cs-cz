@@ -23,11 +23,12 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475464"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Postupy: Použití vizualizéru stromu WPF
 Můžete vizualizéru stromu WPF a prozkoumejte vizuálním stromu WPF objektu a zobrazte vlastnosti závislosti WPF pro objekty, které jsou obsaženy ve stromové struktuře. Další informace o visual stromy najdete v tématu [stromy v grafickém subsystému WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Další informace o vlastnostech závislostí v tématu [přehled vlastností závislostí](/dotnet/framework/wpf/advanced/dependency-properties-overview).  
   
- Když otevřete vizualizéru stromu WPF, zobrazí se dvě podokna: **vizuálním stromu** na levé straně a **vlastnosti** *název***:***typ* podokně na pravé straně. Vyberte libovolný objekt v **vizuálním stromu** podokně a **vlastnosti** *název***:***typ* podokně se automaticky aktualizuje a zobrazí vlastnosti pro tento objekt.  
+ Když otevřete vizualizéru stromu WPF, zobrazí se dvě podokna: **vizuálním stromu** na levé straně a **vlastnosti** *název ***:*** typ* podokně na pravé straně. Vyberte libovolný objekt v **vizuálním stromu** podokně a **vlastnosti** *název ***:*** typ* podokně se automaticky aktualizuje a zobrazí vlastnosti pro tento objekt.  
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Chcete-li otevřít vizualizéru stromu WPF  
   
@@ -51,7 +52,7 @@ Můžete vizualizéru stromu WPF a prozkoumejte vizuálním stromu WPF objektu a
   
 ### <a name="to-search-the-properties-list"></a>Pro seznam vlastností vyhledávání  
   
--   V **vlastnosti** *název***:***typ* podokně zadejte řetězec, vaše chcete hledat v **filtru** pole.  
+-   V **vlastnosti** *název ***:*** typ* podokně zadejte řetězec, vaše chcete hledat v **filtru** pole.  
   
      Vizualizéru stromu WPF okamžitě vyhledá vlastnosti, které odpovídají řetězec, který jste zadali; v seznamu se nyní zobrazí pouze vlastnosti odpovídající řetězec, který jste zadali. Zadejte více znaků se najít přesnější shodu.  
   

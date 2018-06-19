@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572592"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Zápis protokolovacích nástrojů pro více procesorů
 Schopnost [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] chcete využít výhod více procesorů, může snížit čas sestavení projektu, ale také přidá složitost tak, aby sestavení protokolování událostí. V prostředí s jedním procesorem událostí, zprávy, upozornění a chyby přicházejí na protokolovacího nástroje předvídatelný, sekvenční způsobem. V prostředí s více procesory, můžete však události z různých zdrojů dorazí, ve stejnou dobu nebo mimo pořadí. Zajistit pro to, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje více-procesorů podporující protokolovacího nástroje a nový model protokolování a umožňuje vám vytvořit vlastní "předávání protokolovacích nástrojů."  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475636"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Postupy: Ladění zdroje rozhraní .NET Framework
 K ladění .NET Framework – zdroj, musí mít přístup k ladění symboly pro kód. Musíte také povolit zanoříte se do zdroje rozhraní .NET Framework.  

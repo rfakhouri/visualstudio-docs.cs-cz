@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572501"
 ---
 # <a name="item-definitions"></a>Definice položek
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 umožňuje statické deklaraci položky v souborech projektu pomocí [ItemGroup](../msbuild/itemgroup-element-msbuild.md) element. Však metadat lze přidat pouze na úrovni položek, i když je stejný pro všechny položky metadat. Počínaje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, element projektu s názvem [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) překonává toto omezení. *ItemDefinitionGroup* umožňuje definovat sadu definice položek, které přidat výchozí hodnoty metadata pro všechny položky v typu s názvem položky.  

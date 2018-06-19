@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476062"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Chyba: Zdá se, že Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) na vzdáleném počítači neběží.
 Tato chybová zpráva znamená, že Visual Studio nelze najít správný instanci Visual Studio Remote Debugging Monitor na vzdáleném počítači. Pro vzdálené ladění fungovat, musí být nainstalován Visual Studio Remote Debugging Monitor. Informace o stažení a nastavení vzdáleného ladicího programu najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  
@@ -71,7 +72,7 @@ Tato chybová zpráva znamená, že Visual Studio nelze najít správný instanc
 ## <a name="more-help"></a>Další nápovědu  
  Chcete-li získat nápovědu více vzdáleného ladicího programu, včetně přepínače příkazového řádku, klikněte na tlačítko **pomoci > využití** v okně vzdáleného ladicího programu. Pokud nemáte ho otevřete uvidíte webové stránky tak, že zkopírujete následující řádek do **Průzkumníka souborů** okno. (Je třeba nahradit \<Visual Studio Instalační adresář > s umístění instalace Visual Studia.)  
   
- res: / /*\<Visual Studio Instalační adresář >*\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm  
+ res: / /*\<Visual Studio Instalační adresář >* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm  
   
 ## <a name="see-also"></a>Viz také  
  [Vzdálené ladění chyby a řešení potíží](../debugger/remote-debugging-errors-and-troubleshooting.md)

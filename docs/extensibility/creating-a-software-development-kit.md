@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109175"
 ---
 # <a name="creating-a-software-development-kit"></a>Vytváření Software Development Kit
 (SDK) software development kit je kolekce rozhraní API, která jako jednu položku v sadě Visual Studio, můžete odkazovat. **Správce odkazů** dialogové okno obsahuje seznam všech sady SDK, které jsou relevantní pro projekt. Když přidáte sady SDK do projektu, rozhraní API jsou k dispozici v sadě Visual Studio.  
