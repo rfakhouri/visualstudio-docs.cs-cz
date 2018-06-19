@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920674"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Postupy: Nastavení vlastností analýzy kódu pro projekty C/C++
 Můžete nakonfigurovat pravidla, které používá nástroj pro analýzu kódu k analýze kódu v každé konfiguraci vašeho projektu. Kromě toho můžete nastavit analýzy kódu pro potlačení upozornění z kódu, které se generují a přidávají do projektu pomocí nástroje třetích stran.

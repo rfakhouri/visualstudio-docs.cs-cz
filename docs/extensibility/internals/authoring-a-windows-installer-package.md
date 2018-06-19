@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127921"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Vytváření balíčku Instalační služby systému Windows
 Datových jednotkách modelu Instalační služby systému Windows. Místo psaní procedurální skriptu ke zkopírování souborů a zápis položky registru, například vytváříte řádků a sloupců v tabulkách databáze, které obsahují data souboru a registru.  

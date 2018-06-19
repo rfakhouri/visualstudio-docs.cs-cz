@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923836"
 ---
 # <a name="customize-the-help-viewer"></a>Přizpůsobení programu help viewer
 Můžete přizpůsobit rozložení windows Prohlížeč nápovědy, stejně jako jiné možnosti, jako je například velikost písma, maximální počet výsledků a jestli se mají zahrnout obsah v angličtině.

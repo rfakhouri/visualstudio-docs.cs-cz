@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131285"
 ---
 # <a name="creating-options-pages"></a>Vytváření stránek možnosti
 V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] spravované balíček framework třídy odvozené od <xref:Microsoft.VisualStudio.Shell.DialogPage> rozšířit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE přidáním **možnosti** stránky v části **nástroje** nabídky.  

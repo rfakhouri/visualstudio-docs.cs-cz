@@ -18,6 +18,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704022"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Návod: Použití klávesovou zkratku s příponou editoru
 Může reagovat na klávesové zkratky v editoru rozšíření. Následující postup ukazuje, jak přidat dalších úprav zobrazení textového zobrazení pomocí klávesové zkratky. Tento názorný postup je založený na šabloně zobrazení dalších úprav editoru a umožňuje přidat dalších úprav pomocí + znak.  

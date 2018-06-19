@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129190"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Začínáme s šablona projektu VSIX
 Šablona projektu VSIX vytvoření rozšíření nebo balíček existující rozšíření pro nasazení. Šablona projektu VSIX má verze jazyka Visual Basic a Visual C# a bude nainstalován jako součást sady Visual Studio SDK.  
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
     2.  Na **projektu** nabídky, klikněte na tlačítko **exportovat šablonu**. Postupujte podle pokynů průvodce.  
   
-         Soubor ZIP je vytvořen v %USERPROFILE%\My Documents\Visual Studio  *\<verze >*šablony exportovat \My\\.  
+         Soubor ZIP je vytvořen v %USERPROFILE%\My Documents\Visual Studio  *\<verze >* šablony exportovat \My\\.  
   
 2.  Vytvořte prázdný projekt VSIX.  
   

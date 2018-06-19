@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24792198"
 ---
 # <a name="writing-javascript-code"></a>Psaní kódu jazyka JavaScript
 Jako mnoho jinými programovací jazyky [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] je uspořádán do příkazy, který se skládá z související sady příkazů a komentáře bloky. V rámci příkazu můžete proměnné, řetězců, čísel a výrazy.  

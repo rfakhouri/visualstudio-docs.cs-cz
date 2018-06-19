@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129167"
 ---
 # <a name="how-to-register-editor-file-types"></a>Postupy: registrace Editor typů souborů
 Nejjednodušší způsob, jak zaregistrovat editor typů souborů je pomocí atributy registrace zadaný jako součást [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] spravované třídy balíčků framework (MPF). Při implementaci vašeho balíčku v nativní [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], je také možné zapsat skript registru, který se zaregistruje jako editor a přidružené rozšíření.

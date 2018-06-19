@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921020"
 ---
 # <a name="code-analysis-application-errors"></a>Chyby aplikace Analýzy kódu
 Tato část je odkaz chybové zprávy, které jsou generovány nástrojem pro analýzy spravovaného kódu. Chcete-li získat nápovědu pro konkrétní chybová zpráva, zadejte číslo chyby v **vyhledejte** pole v indexu.

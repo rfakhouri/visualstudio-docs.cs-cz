@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947713"
 ---
 # <a name="properties-of-model-elements"></a>Vlastnosti elementů modelu
 Tato část obsahuje seznam vlastností, které vám při výběru element v diagramu DSL definice nebo v Průzkumníku DSL zobrazí v okně Vlastnosti.

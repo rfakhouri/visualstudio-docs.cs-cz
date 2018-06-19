@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916894"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Postupy: Ukládání a upravování připojovacích řetězců
 Připojovací řetězce v sadě Visual Studio aplikace můžete uložit v konfiguračním souboru aplikace (také označované jako nastavení aplikace) nebo pevně přímo v aplikaci. Ukládání připojovacích řetězců v konfiguračním souboru aplikace zjednodušuje správu vaší aplikace. Pokud je potřeba změnit připojovací řetězec, můžete ho aktualizovat v souboru nastavení aplikace (na rozdíl od nutnosti změnit ve zdrojovém kódu a překompilování aplikace).

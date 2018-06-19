@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127500"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>Získávání informací o službě z obchodu nastavení
 Nastavení úložiště můžete použít k vyhledání všech dostupných služeb nebo k určení, zda je nainstalována konkrétní službu. Typ třídy služeb, musíte znát.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129232"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Rozšíření a přizpůsobení okna nástrojů
 Visual Studio poskytuje několik různých typů systému windows, například nástroj windows, windows dokumentu a dialogové okno windows. Další windows například vlastnosti okna, ve výstupním okně a okno seznam úloh jsou typy nástroje systému windows.  

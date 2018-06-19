@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128164"
 ---
 # <a name="file-status-code-enumerator"></a>Enumerátor kód stavu souboru
 `SccStatus` Enumerátor obsahuje pojmenované konstantní hodnoty, které určují stav souboru v systému správy zdrojů. Tento výčet je používán [SccQueryInfo](../extensibility/sccqueryinfo-function.md) a `POPLISTFUNC` funkce zpětného volání (viz [POPLISTFUNC](../extensibility/poplistfunc.md) podrobnosti).  

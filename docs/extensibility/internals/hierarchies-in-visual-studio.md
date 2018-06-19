@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129919"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hierarchie v sadě Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrované vývojové prostředí (IDE) zobrazí projektu jako *hierarchie*. V prostředí IDE je hierarchii stromu uzlů, kde každý uzel má sadu přidružených vlastností. A *projektu hierarchie* je kontejner, který obsahuje položky projektu, položky vztahy a přidružených vlastností položky a příkazy.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131866"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Postupy: generovat informace o registru pro instalační program
 Nástroj RegPkg.exe slouží ke generování manifestu registrace pro spravované VSPackage. Manifest můžete začlenit do instalační balíček Instalační služby systému Windows. RegPkg také můžete generovat soubor, který může být součástí zdrojového souboru instalace na základě [sada nástrojů XML pro instalační program systému Windows](http://go.microsoft.com/fwlink/?LinkId=62238).  

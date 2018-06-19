@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132652"
 ---
 # <a name="service-essentials"></a>Služba Essentials
 Služba je smlouva mezi dvěma VSPackages. Jeden VSPackage poskytuje konkrétní sadu rozhraní pro jiné VSPackage využívat. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je kolekce VSPackages, která poskytuje služby do jiných VSPackages.  

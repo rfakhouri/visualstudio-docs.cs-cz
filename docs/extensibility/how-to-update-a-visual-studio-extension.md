@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134672"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Postupy: aktualizace rozšíření sady Visual Studio
 Rozšíření sady Visual Studio v systému můžete aktualizovat pomocí **rozšíření a aktualizace** nainstalovat aktualizovanou verzi. Pokud vytvoříte aktualizovanou verzi rozšíření, můžete se označují jako aktualizovat zvyšující číslo verze v manifestu VSIX.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923902"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Produkty a služby (Blend) usnadnění
 Společnosti Microsoft je poskytovat snadněji použitelné produkty a služby pro každodenní použití. V následujících oddílech jsou uvedeny informace o funkcích, produktech a službách, které usnadňují používání systému Microsoft Windows tělesně postiženým uživatelům:

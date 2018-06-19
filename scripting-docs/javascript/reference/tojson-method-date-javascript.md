@@ -1,13 +1,13 @@
 ---
-title: "tojson – metoda (Date) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: tojson – metoda (Date) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - toJSON method
 ms.assetid: f91df030-e9c9-425e-8e6d-b46bdda66cb6
-caps.latest.revision: 
+caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791898"
 ---
 # <a name="tojson-method-date-javascript"></a>toJSON – metoda (Date) (JavaScript)
 Používané [JSON.stringify](../../javascript/reference/json-stringify-function-javascript.md) způsob povolení transformace dat objektu pro serializaci JavaScript Object Notation (JSON).  

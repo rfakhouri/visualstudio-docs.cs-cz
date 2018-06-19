@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127034"
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Postupy: vyvolání události při editoru ztratí fokus
 V některých případech je potřeba vědět, kdy přestane být aktivní v rámce okna editoru. Například budete muset po editoru se už zaměřuje na něm extrahovat kód z okna kódu. Následující postup popisuje, jak postupovat, na které přijde upozornění editoru došlo ke ztrátě fokus.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923094"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Modifikační klávesy návrhové plochy v programu Blend
 Některé klávesové zkratky nejsou přidruženy položky nabídky, což znamená, že nelze použít [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] uživatelské rozhraní pro je zjišťovat. Následující tabulka uvádí zkratky, které akci, jako je například změna velikosti objektu.

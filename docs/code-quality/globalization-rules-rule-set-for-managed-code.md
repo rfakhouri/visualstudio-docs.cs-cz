@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920651"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Sada pravidel Pravidla globalizace pro spravovaný kód
 Můžete použít sadu a zaměřit se na problémy, které by mohly bránit dat v aplikaci ze storu správně v různých jazycích, národní prostředí a kultur pravidel pravidla globalizace společnosti Microsoft. By měla obsahovat toto pravidlo nastavit, pokud vaše aplikace je lokalizovaná, globalizovaná, nebo obojí.

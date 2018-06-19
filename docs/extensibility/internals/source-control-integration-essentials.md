@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132031"
 ---
 # <a name="source-control-integration-essentials"></a>Zdroj ovládacího prvku integrace Essentials
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podporuje dva typy integrace ovládacích prvků zdrojového: ovládací prvek zdroje modul plug-in, poskytuje základní funkce a je sestaven pomocí rozhraní API modulu Plugin zdroj ovládacího prvku (dříve označované jako rozhraní API MSSCCI) a integrace řešení řízení na základě VSPackage zdroje, poskytuje robustnější funkce.  

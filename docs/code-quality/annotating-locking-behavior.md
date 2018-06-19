@@ -39,6 +39,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31901525"
 ---
 # <a name="annotating-locking-behavior"></a>Zadávání poznámek o chování při zamykání
 Abyste se vyhnuli souběžnosti chyby v programu s více vlákny, vždy postupujte podle příslušné uzamčení oboru a použití poznámek SAL.

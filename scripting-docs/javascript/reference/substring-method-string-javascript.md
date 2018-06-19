@@ -1,13 +1,13 @@
 ---
-title: "substring – metoda (String) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: substring – metoda (String) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - substring
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - substrings
 - substring method
 ms.assetid: 9cf9a005-cbe3-42fd-828b-57a39f54224c
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791790"
 ---
 # <a name="substring-method-string-javascript"></a>substring – metoda (String) (JavaScript)
 Vrátí dílčí řetězec v zadaném umístění v rámci `String` objektu.  
@@ -52,7 +53,7 @@ Vrátí dílčí řetězec v zadaném umístění v rámci `String` objektu.
 ## <a name="remarks"></a>Poznámky  
  `substring` Metoda vrátí řetězec obsahující dílčí řetězec z `start` až do, nikoli však `end`.  
   
- **Substring** metoda používá nižší hodnotu `start` a `end` jako počáteční bod dílčí řetězec. Například strvar.substring (0, 3**)** a strvar.substring (3, 0) vrátí stejné dílčí řetězec.  
+ **Substring** metoda používá nižší hodnotu `start` a `end` jako počáteční bod dílčí řetězec. Například strvar.substring (0, 3 **)** a strvar.substring (3, 0) vrátí stejné dílčí řetězec.  
   
  Pokud má jedna `start` nebo `end` je `NaN` nebo záporná, je nahrazen nula.  
   

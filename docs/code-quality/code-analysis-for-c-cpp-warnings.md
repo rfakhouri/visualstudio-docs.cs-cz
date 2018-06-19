@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919674"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Upozornění Analýzy kódu pro C/C++
 Tato část uvádí upozornění analýzy kódu C/C++ s výjimkou těch, které jsou vydané [C++ základní pokyny kameny](code-analysis-for-cpp-corecheck.md). Informace o analýze kódu najdete v tématu [/ analyze (Analýza kódu)](/cpp/build/reference/analyze-code-analysis) a [rychlé zahájení: Analýza kódu pro C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).

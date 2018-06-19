@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126869"
 ---
 # <a name="icon-element"></a>Icon – Element
 Atribut guid ikonu značky je identifikátor guid definované rastrového obrázku.  Atribut id vybere přihrádky v pruhu rastrového obrázku. Tento element je volitelný.  Pokud je vynechán tento element hodnotu **guidOfficeIcon:msotcidNoIcon** bude implicitní.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921783"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Postupy: rozšíření kód vygenerovaný Návrhář relací objektů
 Kód vygenerovaný [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] znovu vygeneruje při změně tříd entit a dalších objektů na plochu návrháře. Z důvodu této nové vygenerování kódu se kód, který přidáte do generovaný kód přepíše obvykle při návrháře znovu generuje kód. [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Poskytuje možnost pro vygenerování souborů třídu, ve které můžete přidat kód, který nedojde k přepsání. Příkladem přidání vlastního kódu pro kód vygenerovaný [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] je přidání ověření dat pro LINQ na třídy SQL (entita). Informace najdete v tématu [postupy: přidávání ověření do tříd entit](../data-tools/how-to-add-validation-to-entity-classes.md).

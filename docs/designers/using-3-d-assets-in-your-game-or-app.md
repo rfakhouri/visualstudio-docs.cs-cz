@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917104"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Používání 3D prostředků ve vaší hry nebo aplikace
 

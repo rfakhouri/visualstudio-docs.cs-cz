@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126626"
 ---
 # <a name="editor-and-language-service-extensions"></a>Editor a rozšíření služeb jazyk
 Můžete rozšířit většinu funkcí editoru kódu v sadě Visual Studio. Editor je založený na Windows Presentation Foundation (WPF) a je zapsané ve spravovaném kódu. I když tento návrh se liší od návrhů v dřívějších verzích sady Visual Studio, poskytuje nejvíc stejné funkce. Chcete-li rozšířit editor, použijte Managed Extensibility Framework (MEF).  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128701"
 ---
 # <a name="detecting-system-requirements"></a>Zjišťování požadavky na systém
 VSPackage nemůže fungovat, pokud je nainstalován nástroj Visual Studio. Pokud používáte ke správě instalaci vaší VSPackage Instalační služby systému Windows, můžete nakonfigurovat instalační program ke zjištění, jestli je nainstalovaná sada Visual Studio. Můžete také nakonfigurovat ho na zkontrolujte systém další požadavky, například, konkrétní verzi systému Windows nebo konkrétní velikosti paměti RAM.  

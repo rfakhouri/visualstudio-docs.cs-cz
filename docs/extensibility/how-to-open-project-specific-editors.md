@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129038"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Postupy: otevření projektu konkrétní editory
 Pokud soubor položky se otevřít projekt vnitřně vázán na konkrétní editor pro tento projekt, musíte projektu otevřete soubor v editoru specifické pro projekt. Soubor není možné delegovat na rozhraní IDE mechanismus pro výběr editoru. Například místo pomocí editoru standardní rastrový obrázek, můžete použít tuto možnost editoru pro konkrétní projekt zadejte konkrétní bitové mapy editor, který rozpoznává informace v souboru, které jsou jedinečné pro váš projekt.  

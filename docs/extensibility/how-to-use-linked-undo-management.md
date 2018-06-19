@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127634"
 ---
 # <a name="how-to-use-linked-undo-management"></a>Postupy: použití modulu Správa propojená operace vrácení zpět
 Propojená operace vrácení zpět umožňuje uživateli současně vrátit zpět stejné úpravy ve více souborech. Například souběžných text se změní na napříč více programové soubory, jako je například hlavičkový soubor a soubor Visual C++, je propojená operace vrácení zpět transakci. Propojená operace vrácení zpět funkce je integrovaná v prostředí provádění správce vrácení zpět a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> umožňuje pracovat s Tato funkce. Propojená operace vrácení zpět je implementováno modulem jednotkou nadřazené vrácení zpět, která může propojit samostatné zpět zásobníky spolupracují, aby jednal jako jednotku jedné operace vrácení zpět. Postup pro používání propojená operace vrácení zpět je podrobně popsán v následující části.  

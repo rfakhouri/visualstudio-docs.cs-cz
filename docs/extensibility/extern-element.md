@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127689"
 ---
 # <a name="extern-element"></a>Extern – Element
 Extern element odkazuje na externí hlavičky () soubory sloučit s .vsct soubor v době kompilace. Soubory, který se má sloučit musí být na cestu zahrnutí zadané pro kompilátor VSCT nebo odkazuje [zahrnují Element](../extensibility/include-element.md). Soubory mohou být další .vsct soubory nebo soubory hlaviček C++.  

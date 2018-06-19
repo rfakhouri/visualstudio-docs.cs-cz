@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132231"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Vystavení události v sadě Visual Studio SDK
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umožňuje zdroje událostí s použitím automatizace. Doporučujeme vám, že je zdroj události pro projekty a položky projektu.  

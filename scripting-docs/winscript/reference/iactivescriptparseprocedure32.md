@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24793353"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
 Pokud modul Windows Script umožňuje zdrojový kód text postupy pro přidání do skriptu, implementuje `IActiveScriptParseProcedure32` rozhraní. Pro Interpretovaný skriptovací jazyky, které mají žádné nezávislé pro tvorbu prostředí, například VBScript, to poskytuje alternativní mechanismus (jiné než `IActiveScriptParse32` nebo `IPersist`*) Chcete-li přidat skript procedury do oboru názvů.  

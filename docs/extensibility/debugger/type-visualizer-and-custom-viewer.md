@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126907"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Typ vizualizér a vlastní prohlížeč
 Vizualizér typ je komponenta, která zobrazuje část dat ve velmi specifickém formátu. Tento formát, záleží zcela implementátor vizualizér, je-li jej koncového uživatele nebo jiného dodavatele třetích stran o vizualizérech.  

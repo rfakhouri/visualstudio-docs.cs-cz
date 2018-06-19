@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132247"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Konfigurace projektu pro správu nasazení
 Nasazení je v rámci fyzickým přesunutím položky výstup z procesu sestavení do očekávaného umístění pro ladění a instalaci. Například webové aplikace může vytvořené v místním počítači a pak umístit na serveru.  
