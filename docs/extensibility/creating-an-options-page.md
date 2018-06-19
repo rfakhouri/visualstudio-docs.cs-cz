@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108138"
 ---
 # <a name="creating-an-options-page"></a>Vytvoření stránky Možnosti
 Tento návod vytvoří jednoduchý nástroje/Možnosti stránky, která používá mřížkou vlastností sloužící ke zkoumání a nastavte vlastnosti.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704233"
 ---
 # <a name="evaluate-statement-command"></a>Ohodnotit příkaz – příkaz
 Vyhodnotí a zobrazí daný příkaz.

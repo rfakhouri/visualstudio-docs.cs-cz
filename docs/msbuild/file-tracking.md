@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567444"
 ---
 # <a name="file-tracking"></a>Sledování souborů
 Sledování souborů protokolů volání systému souborů pro proces a jeho podřízené procesy. Voláním funkce níže uvedené programy řídit, kdy chcete-li protokolování zapnout a vypnout a zadejte tento soubor protokolu.  

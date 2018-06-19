@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115408"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 Dál spuštěním tohoto programu z zastaveném stavu. Všechny předchozí stav spuštění (například krok) není zaškrtnuto, a program se spustí provádění znovu.  

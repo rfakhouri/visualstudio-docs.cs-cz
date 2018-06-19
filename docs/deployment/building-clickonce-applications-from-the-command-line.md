@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566183"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Vytváření aplikací ClickOnce z příkazového řádku
 V [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], můžete vytvořit projekty z příkazového řádku, i když jsou vytvořeny v integrované vývojové prostředí (IDE). Ve skutečnosti můžete znovu sestavit projekt s [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] na jiném počítači, který je k dispozici pouze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] nainstalována. To umožňuje reprodukci sestavení pomocí automatizovaného procesu, například v Centrální sestavení testovacího prostředí nebo pomocí pokročilých skriptovacích technik nad rámec sestavení projektu sám sebe.  

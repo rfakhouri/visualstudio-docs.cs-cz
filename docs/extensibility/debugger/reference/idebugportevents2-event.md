@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122142"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 Tato metoda odesílá události, které označuje vytvoření a zničení procesy a programy na portu.  

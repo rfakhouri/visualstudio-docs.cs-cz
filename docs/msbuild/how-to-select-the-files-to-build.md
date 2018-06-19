@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570675"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Postupy: Výběr souborů pro sestavení
 Při sestavování projektu obsahující několik souborů, můžete vytvořit seznam každý soubor v souboru projektu samostatně nebo můžete zahrnout všechny soubory v jednom adresáři nebo sadu adresáře vnořené zástupné znaky.  

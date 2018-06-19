@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578884"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Sada nástrojů MSBuild (atribut ToolsVersion)
 MSBuild používá sada nástrojů úlohy, cílů a nástrojů pro vytvoření aplikace. Sada nástrojů MSBuild obvykle zahrnuje microsoft.common.tasks souboru, soubor microsoft.common.targets a kompilátory například csc.exe a vbc.exe. Většina modulové lze použít pro kompilaci více než jedna verze rozhraní .NET Framework a více než jedné platformě systému. Sada nástrojů MSBuild 2.0 lze však cílí na rozhraní .NET Framework 2.0.  

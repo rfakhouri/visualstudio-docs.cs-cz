@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569518"
 ---
 # <a name="choose-element-msbuild"></a>Choose – element (MSBuild)
 Vyhodnotí podřízené elementy a vyberte jednu sadu `ItemGroup` elementy nebo `PropertyGroup` elementy k vyhodnocení.  

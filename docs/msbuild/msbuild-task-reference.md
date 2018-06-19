@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576037"
 ---
 # <a name="msbuild-task-reference"></a>Referenční dokumentace úlohy nástroje MSBuild
 Úlohy zadejte kód, který spouští během procesu sestavení. Úlohy v následujícím seznamu jsou součástí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Když [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] je nainstalovaná, další úlohy jsou k dispozici, které se používají k vytvoření [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projekty. Další informace najdete v tématu [úlohy Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  

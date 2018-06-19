@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573112"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardní a vlastní konfigurace sady nástrojů
 Sada nástrojů MSBuild obsahuje odkazy na úlohy, cílů a nástroje, které můžete použít pro sestavení projektu aplikace. MSBuild zahrnuje standardní sada nástrojů, ale můžete také vytvořit vlastní modulové. Informace o tom, jak určit nástrojů najdete v tématu [sada nástrojů (atribut ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  

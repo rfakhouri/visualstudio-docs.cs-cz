@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31119556"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Toto rozhraní umožňuje modul ladění (DE) nebo vlastní port dodavatelé zaregistrovat programy pro ladění.  

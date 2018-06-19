@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108783"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Bitové příznaky, které používá konkrétní příkazy
 Chování počet funkcí v rozhraní API ovládacího prvku Plug-in zdroje můžete upravit nastavení jeden nebo více bitů jedinou hodnotu. Tyto hodnoty jsou označovány jako bitové příznaky. Různé bitové příznaky používá rozhraní API ovládacího prvku Plug-in zdroje jsou podrobně popsané tady seskupených podle funkce, která je používá.  

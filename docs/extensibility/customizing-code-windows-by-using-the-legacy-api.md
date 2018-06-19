@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109961"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Přizpůsobení Windows kódu pomocí starší verze rozhraní API
 Okno kódu je objekt okna dokumentu, který podporuje jeden nebo více zobrazení textu. Přesný funkce okno kódu závisejí na službě přiřazená jazyková. V režimu rozhraní více dokumentů (MDI) je v okně Kód rámečku podřízeného MDI.  

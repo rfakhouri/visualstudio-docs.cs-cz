@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569352"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly – úloha
 Načte metadata v rámci zadaného sestavení a přidá nezbytné položky registru, která umožňuje klientům COM vytvořit [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] třídy transparentně. Chování této úlohy je podobný, ale není stejná jako ve [Regasm.exe (Nástroj registrace sestavení)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).  

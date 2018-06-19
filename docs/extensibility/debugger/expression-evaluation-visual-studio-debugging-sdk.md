@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109802"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Vyhodnocení výrazu (Visual Studio ladění SDK)
 Během režimu pozastavení musí být schopen vyhodnotit jednoduché výrazy zahrnující několik proměnné vašeho programu rozhraní IDE. K tomu, musí být schopen analyzovat a vyhodnocovat u nich výraz, který jste zadali do jednoho okna IDE modul ladění (DE).  

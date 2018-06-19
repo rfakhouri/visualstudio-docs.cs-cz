@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575790"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Návod: Vytvoření vložené úlohy
 Úlohy nástroje MSBuild obvykle vytváří kompilování třídu, která implementuje <xref:Microsoft.Build.Framework.ITask> rozhraní. Od verze rozhraní .NET Framework verze 4, můžete vytvořit úlohy vložené v souboru projektu. Chcete-li vytvořit samostatné sestavení pro hostování úlohy nemáte. Další informace najdete v tématu [vložené úlohy](../msbuild/msbuild-inline-tasks.md).  

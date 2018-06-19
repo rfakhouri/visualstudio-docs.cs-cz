@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109448"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Vytváření rozšíření s VSPackage
 Tento návod ukazuje, jak vytvořit projekt VSIX a přidat položku VSPackage projektu. Chcete-li zobrazit okno se zprávou získat službu prostředí uživatelského rozhraní budeme používat VSPackage.  

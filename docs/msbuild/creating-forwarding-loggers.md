@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568637"
 ---
 # <a name="creating-forwarding-loggers"></a>Vytváření předávajících (sekundárních) protokolovacích nástrojů
 Předávání protokolovacích nástrojů zvýšit efektivitu protokolování umožňují zvolit události, kterou chcete sledovat, když vytváříte projekty v systému s více procesory. Když povolíte předávání protokolovacích nástrojů, můžete zabránit nežádoucí události z zahltí centrální protokolovacího nástroje zpomalení čase vytvoření buildu a zbytečného protokolu.  

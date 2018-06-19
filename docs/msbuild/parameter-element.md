@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567938"
 ---
 # <a name="parameter-element"></a>Parameter – Element
 Obsahuje informace o určitém parametru pro úlohu, která je generován `UsingTask``TaskFactory`.  Název elementu je název parametru.  Chcete-li – další informace, najdete v tématu [usingtask – Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  

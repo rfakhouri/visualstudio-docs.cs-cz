@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109685"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funkce zpětného volání, které implementují rozhraní IDE
 Chcete-li integraci s integrované vývojové prostředí (IDE) jako bezproblémové nejblíže a nabízí jednotnou koncového uživatele prostředí, modul plug-in zdrojového kódu můžete použít funkce zpětného volání, které implementují rozhraní IDE. Modul plug-in můžete volat tyto funkce v příslušnou dobu během operace řízení zdroj předávat informace k prostředí IDE; prostředí IDE pak můžete zobrazit tyto informace jako vložené prvky v jeho nativní uživatelského rozhraní. Uživatel má méně fragmentovaných prostředí v tomto scénáři než pokud modul plug-in pracujících vlastní uživatelské rozhraní.  

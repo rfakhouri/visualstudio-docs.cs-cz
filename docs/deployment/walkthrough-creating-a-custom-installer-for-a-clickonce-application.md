@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565416"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Návod: Vytvoření vlastního instalátoru pro aplikaci ClickOnce
 Každá aplikace ClickOnce na základě souboru .exe můžete bezobslužně nainstalovat a aktualizovat vlastní instalační program. Vlastní instalační program můžete implementovat vlastní uživatelské rozhraní během instalace, včetně vlastních dialogových oken pro operace zabezpečení a údržby. K provedení operace instalace, používá vlastní instalační program <xref:System.Deployment.Application.InPlaceHostingManager> třídy. Tento návod ukazuje, jak vytvořit vlastní instalační program, který nainstaluje aplikaci ClickOnce bezobslužně.  

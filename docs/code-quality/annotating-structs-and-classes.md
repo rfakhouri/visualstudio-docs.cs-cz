@@ -30,6 +30,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31894345"
 ---
 # <a name="annotating-structs-and-classes"></a>Zadávání poznámek ke strukturám a třídám
 Členové struktury a třída může opatřit poznámkami pomocí poznámky, které fungují jako výstupních podmínek – nich předpokládá, že se na všechny volání funkce nebo funkce vstupu a výstupu, který zahrnuje nadřazených struktura jako parametr nebo výsledek hodnotu true.

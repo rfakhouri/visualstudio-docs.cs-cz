@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465405"
 ---
 # <a name="assertions-in-managed-code"></a>Kontrolní výrazy ve spravovaném kódu
 Na kontrolní výraz systému nebo `Assert` testuje podmínku, kterou zadáte jako argument pro příkaz, `Assert` příkaz. Pokud je podmínka vyhodnocena jako true, nedojde k žádné akci. Pokud je podmínka vyhodnocena jako false, kontrolní výraz se nezdaří. Pokud používáte s sestavení ladicí verze, váš program vstupuje do režimu pozastavení.  

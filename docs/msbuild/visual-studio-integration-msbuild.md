@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575933"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace sady Visual Studio (MSBuild)
 Visual Studio hostitelů [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k načtení a vytvoření spravované projekty. Protože [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zodpovídá za projektu, téměř každý projekt v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] můžete v úspěšně použít formát [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]i v případě projektu byla vytvořena pomocí různých nástrojů a má vlastní sestavení proces.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107943"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Vytvoření systému základní projektu, část 2
 První postup v této série [vytváření základní systému projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md), ukazuje, jak vytvořit základní projekt systému. Tento názorný postup je založený na systému základní projektu přidáním šablony sady Visual Studio, stránky vlastností a dalších funkcí. První postup musíte provést před zahájením této jeden.  

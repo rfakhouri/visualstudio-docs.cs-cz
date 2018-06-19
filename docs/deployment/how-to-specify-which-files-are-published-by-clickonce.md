@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561412"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Postupy: Určení souborů k publikování aplikací ClickOnce
 Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, všechny kód soubory v projektu nasazených spolu s aplikací. V některých případech nechcete nebo třeba určité soubory nebo můžete chtít nainstalovat určité soubory na základě podmínek. Visual Studio poskytuje možnosti, které chcete vyloučit soubory, soubory označit jako datové soubory nebo požadavky a vytvoření skupin souborů pro podmíněnou instalaci.  

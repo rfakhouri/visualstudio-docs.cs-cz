@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122428"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 Přepne stav virtualizované tohoto čekající na vyřízení zarážek. Když je virtualizované čekající zarážek, ladění modul se pokusí navázat jej pokaždé, když nový kód se načte do programu.  

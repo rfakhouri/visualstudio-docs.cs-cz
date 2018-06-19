@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107748"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Vytvoření ovládacího prvku Windows Forms sada nástrojů
 Šablony položek ovládacího prvku Windows Forms sada nástrojů, která je součástí sady Visual Studio Extensibility Tools (VS SDK) umožňuje vytvoření ovládacího prvku, který je automaticky přidán do **sada nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak používat šablony k vytvoření ovládacího prvku jednoduchý čítač, který distribuujete do jiných uživatelů.  

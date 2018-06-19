@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108466"
 ---
 # <a name="about-file-name-extensions"></a>O přípony názvů souborů
 Při registraci příponu VSPackage přidružit verzi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. To je důležité v případě více než jednu verzi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalován v počítači.  

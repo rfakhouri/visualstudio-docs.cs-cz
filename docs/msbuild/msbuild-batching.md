@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570626"
 ---
 # <a name="msbuild-batching"></a>Dávkování nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] má schopnost rozdělení seznamech položek do různých kategorií nebo dávek, na základě položky metadat a spusťte cíl a úloh s jednou jednotlivých dávek.  

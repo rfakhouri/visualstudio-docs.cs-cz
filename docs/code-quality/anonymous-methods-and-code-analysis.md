@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31892700"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Anonymní metody a analýza kódu
 *Anonymní metoda* je metoda, která nemá žádný název. Anonymní metody jsou nejčastěji sloužící k předávání blok kódu jako parametr delegáta.
