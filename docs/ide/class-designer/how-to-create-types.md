@@ -24,6 +24,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957253"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Postupy: vytváření typů pomocí návrháře tříd
 

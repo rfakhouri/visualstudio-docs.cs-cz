@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573135"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild – referenční dokumentace úlohy
 Proces sestavení Windows Presentation Foundation (WPF) rozšiřuje stroje Microsoft build engine (MSBuild) o další sadu sestavení úlohy, včetně úlohy kompilace kódu a zdroje procesu.  

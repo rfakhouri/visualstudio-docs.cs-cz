@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565689"
 ---
 # <a name="application-deployment-prerequisites"></a>Nezbytné součásti nasazení aplikace
 Zajistit, že vaše aplikace bude nainstalovat a úspěšně spuštěn, je nutné nejprve zajistit, že jsou na cílovém počítači již nainstalovány všechny součásti, na kterých je závislá vaše aplikace. Například většina aplikací vytvořených pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jsou závislé na [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; správnou verzi modulu CLR musí být na cílovém počítači před instalací aplikace.  

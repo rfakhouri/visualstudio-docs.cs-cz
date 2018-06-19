@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263210"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Přístup k pásu karet za běhu
   Můžete napsat kód pro zobrazení, skrytí a upravit na pásu karet a povolit uživatelům spustit kód z ovládacích prvků v vlastního podokna úloh, podokna akce nebo oblasti formuláře aplikace Outlook.  

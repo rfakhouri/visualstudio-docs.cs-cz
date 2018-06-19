@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127982"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Postupy: Přidání značek standardního textu
 Pomocí následujícího postupu vytvořit jeden z typů značky text výchozí součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní editor.  

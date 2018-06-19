@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262829"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Shromažďování podrobných dat časování pomocí instrumentace
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Metody instrumentace v nástrojích pro profilaci vloží profilování kód do kopie modulu. Kód zaznamenává každou položku, ukončení a volání funkce funkce v modulu během profilace spustit. Metoda instrumentace je užitečný při shromažďování časování podrobné informace o části kódu a porozumění vlivu vstupních a výstupních operací na výkon aplikace.  

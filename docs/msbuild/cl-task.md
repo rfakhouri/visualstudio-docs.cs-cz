@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578052"
 ---
 # <a name="cl-task"></a>CL – úloha
 Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitelné soubory (.exe), dynamická knihovna (DLL) soubory nebo soubory kódu modulu (.netmodule). Další informace najdete v tématu [– možnosti kompilátoru](/cpp/build/reference/compiler-options).  

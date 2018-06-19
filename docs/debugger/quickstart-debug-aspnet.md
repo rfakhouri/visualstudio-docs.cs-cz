@@ -18,6 +18,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477467"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Rychlý úvod: Ladění ASP.NET pomocí ladicího programu sady Visual Studio
 

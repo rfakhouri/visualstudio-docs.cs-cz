@@ -21,6 +21,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454635"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Zkontrolovat proměnné v automobily a místní hodnoty – Windows v sadě Visual Studio
 **Automobily** okno (při ladění, **CTRL + ALT + V, A**, nebo **ladění > Windows > automobily**) a **místní hodnoty –** okno (při ladění **CTRL + ALT + V, L**, nebo **ladění > Windows > místní hodnoty –**) jsou velmi užitečné, pokud chcete zobrazit hodnoty proměnné při ladění. **Místní hodnoty –** okno zobrazí proměnné, které jsou definovány v místní obor, což je obecně funkce nebo metoda, která je aktuálně spouštěna. **Automobily** okno se zobrazí proměnné používá kolem aktuálního řádku (místo, kde je zastavena ladicího programu). Přesně které proměnné zobrazení v tomto okně se liší v různých jazycích. V tématu [proměnné, které se zobrazí v okně automobily?](#bkmk_whatvariables) níže.  

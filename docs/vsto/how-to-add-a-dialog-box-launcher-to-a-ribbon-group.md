@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548385"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Postupy: Přidání Spouštěče dialogového okna do skupiny pásu karet
   Spouštěče dialogového okna můžete přidat na žádnou skupinu na pásu karet. Spouštěče dialogového okna je malý ikonu, která se zobrazí ve skupině. Uživatelé kliknou na tuto ikonu otevřete související dialogových oken nebo podokna úloh, které poskytují další možnosti, které se vztahují ke skupině.  

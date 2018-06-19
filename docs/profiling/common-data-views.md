@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263926"
 ---
 # <a name="common-data-views"></a>Obecná zobrazení dat
 Tato část obsahuje referenční informace o zobrazení a sestav profileru datových souborů, které jsou společné pro všechny metody profilování.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571354"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Řešení potíží s cílením na rozhraní .NET Framework
 Toto téma popisuje chyby nástroje MSBuild, kterým by mohlo dojít z důvodu odkaz problémy a jak můžete vyřešit tyto chyby.  

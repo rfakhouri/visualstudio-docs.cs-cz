@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478223"
 ---
 # <a name="debug-multiple-processes"></a>Ladění více procesů
 Chcete-li spustit ladění procesy, přepínat mezi procesy, rozdělit a pokračovat v provádění, projděte zdroje, zastavte ladění a ukončení nebo odpojení od procesy.  

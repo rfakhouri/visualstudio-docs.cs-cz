@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578598"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Postupy: Ignorování chyb v úlohách
 Někdy budete chtít sestavení jako toleranci vůči chyb v určitých úloh. Pokud tyto méně závažné úlohy selže, budete chtít sestavení pokračovat, protože jej může stále vytvořit požadované výstup. Například, pokud se používá na projekt `SendMail` úloha pro odeslání e-mailové zprávy, jakmile je vytvořen jednotlivé komponenty, můžete zvážit je přijatelné pro sestavení pokračovat do dokončení, i když poštovní servery nejsou k dispozici a nelze odeslat stavové zprávy. Nebo, například pokud zprostředkující soubory jsou obvykle odstraněny během sestavení, můžete zvážit je přijatelné pro sestavení pokračovat do dokončení, i když tyto soubory nelze odstranit.  

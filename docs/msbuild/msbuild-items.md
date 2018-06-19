@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577532"
 ---
 # <a name="msbuild-items"></a>Položky nástroje MSBuild
 Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle představují soubory. Položky jsou seskupeny do typů položek, které jsou založené na jejich názvy elementů. Typy položek jsou pojmenované seznam položek, které lze použít jako parametry pro úlohy. Úlohy pomocí hodnot položky podle kroků procesu sestavení.  

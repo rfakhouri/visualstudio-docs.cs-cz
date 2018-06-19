@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563372"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Ukázky nasazení ClickOnce a podrobné návody
 Tato část obsahuje ukázkové aplikace, příklad kódu a podrobné návody, které ilustrují syntaxi, struktura a techniky, které jsou používány k nasazení Windows Forms, WPF a konzolové aplikace.  

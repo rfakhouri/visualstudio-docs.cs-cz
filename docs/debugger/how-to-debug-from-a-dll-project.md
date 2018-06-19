@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475808"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>Postupy: ladění z projektu knihovny DLL v sadě Visual Studio
 Jednou z možností ladění projektu knihovny DLL je zadání volající aplikace ve vlastnostech projektu projektu knihovny DLL a potom můžete spustit ladění z projektu knihovny DLL, sám sebe. Pro tuto metodu za účelem práce, aplikace musí volat knihovnu DLL a knihovny DLL musí být v umístění, kde se předpokládá, že aplikace bude (jinak, aplikace může najít jinou verzi knihovny DLL a načíst, namísto toho a ho nebude stiskněte váš zarážky). Dalším metodám ladění knihoven DLL, najdete v části [ladění projektů knihovny DLL](../debugger/debugging-dll-projects.md).

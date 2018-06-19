@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574932"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Postupy: Zobrazování seznamu položek oddělených čárkami
 Při práci s položkou seznamů v [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), někdy je užitečné k zobrazení obsahu tyto položky seznamů způsobem, který se snadno přečíst. Nebo můžete mít úlohu, která přebírá seznam položek, které jsou odděleny řetězec speciální oddělovače. V obou případech můžete zadat řetězec oddělovač pro seznam položek.  

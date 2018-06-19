@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569300"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Co je nového v nástroji MSBuild 15
 MSBuild je nyní k dispozici jako součást [.NET Core SDK](https://www.microsoft.com/net/download/core) a mohou vytvářet projekty .NET Core v systému Windows, systému macOS a Linux.  

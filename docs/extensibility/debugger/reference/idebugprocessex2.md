@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31119159"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 Toto rozhraní umožňuje relace ladění manager (SDM) oznámit proces, který se připojuje k nebo probíhá odpojování od proces.  

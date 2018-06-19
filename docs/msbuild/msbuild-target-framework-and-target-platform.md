@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578273"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Cílová architektura a cílová platforma nástroje MSBuild
 Projekt se dají vytvářet ke spuštění na *cílové rozhraní*, což je konkrétní verzi rozhraní .NET Framework a *Cílová platforma*, což je architektura určitého softwaru.  Například můžete určit cílovou aplikaci spustit v rozhraní .NET Framework 2.0 na 32bitové platformě, který je kompatibilní s třídu procesoru 802 x 86 ("x86"). Kombinace Cílová architektura a cílová platforma se označuje jako *cílový kontext*.  

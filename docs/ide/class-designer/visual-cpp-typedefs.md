@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33958331"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Visual C++ definice TypeDef v Návrháři tříd
 

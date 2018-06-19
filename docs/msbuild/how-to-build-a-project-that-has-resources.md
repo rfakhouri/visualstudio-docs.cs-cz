@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569499"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Postupy: Sestavení projektu, který má prostředky
 Pokud vytváříte lokalizované verze projektu, musí být odděleny všechny prvky uživatelského rozhraní do zdrojových souborů pro různé jazyky. Pokud projekt používá pouze řetězce, můžete použít na soubory prostředků textových souborů. Soubory RESX můžete alternativně použít jako soubory prostředků.  

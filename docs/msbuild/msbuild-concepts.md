@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573174"
 ---
 # <a name="msbuild-concepts"></a>Koncepty nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje základní schéma XML, které můžete použít k řízení, jak platformy sestavení sestavení softwaru. Pokud chcete zadat komponenty v sestavení a jak se má být sestaven, použijte tyto čtyři části MSBuild: vlastnosti, položky, úlohy a cíle.  

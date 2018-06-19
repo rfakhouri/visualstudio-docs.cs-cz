@@ -24,6 +24,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065003"
 ---
 # <a name="debugger-security"></a>Zabezpečení ladicího programu
 Možnost ladění jiným procesem vám umožňuje velmi široký, které by jinak máte, zejména v případě, že ladění vzdáleně. Škodlivý ladicí program může způsobit poškození rozšířeným na počítači laděné.  

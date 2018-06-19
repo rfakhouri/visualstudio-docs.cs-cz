@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447814"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Postupy: Změna písma a barev v editoru
 Můžete změnit výchozí tučné písmo, upravit velikost písma a změnit barvy popředí a na pozadí pro různé text **zobrazení položek** v editoru kódu. Když změnu nastavení písma mějte na paměti následující informace:

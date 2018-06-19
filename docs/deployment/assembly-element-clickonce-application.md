@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704220"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;sestavení&gt; – Element (ClickOnce aplikace)
 Element nejvyšší úrovně pro manifest aplikace.  

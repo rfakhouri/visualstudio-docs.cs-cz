@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477716"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio"></a>Zobrazení událostí s použitím technologie IntelliTrace v sadě Visual Studio
 Můžete shromáždit informace o určité události nebo kategorie události nebo o volání jednotlivých funkcí kromě události IntelliTrace. Následující postupy ukazují, jak to udělat.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569186"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Postupy: Zápis speciálních znaků pomocí escape sekvence v nástroji MSBuild
 Některé znaky mají zvláštní význam [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] soubory projektu. Mezi příklady znaky patří středníkem (;) a hvězdičky (*). Úplný seznam tyto speciální znaky, najdete v části [speciální znaky nástroje MSBuild](../msbuild/msbuild-special-characters.md).  

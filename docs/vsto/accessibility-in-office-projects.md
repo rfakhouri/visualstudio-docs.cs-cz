@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262311"
 ---
 # <a name="accessibility-in-office-projects"></a>Usnadnění v projektech pro systém Office
   Microsoft Visual Studio a Microsoft Office zahrnout mnoho funkcí usnadnění, které umožňují vytvářet vlastní řešení, které splňují požadavky na standardní usnadnění přístupu. Společnost Microsoft publikuje pokyny pro usnadnění přístupu na webu. Podrobnosti najdete v tématu [webu usnadnění](http://go.microsoft.com/fwlink/?LinkID=37113).  

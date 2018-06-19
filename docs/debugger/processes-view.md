@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474843"
 ---
 # <a name="processes-view"></a>Zobrazení procesů
 Zobrazení procesů zobrazí strom všech aktivních procesů ve vašem systému. Název modulu a ID procesu jsou zobrazeny. Zobrazení procesů použijte, pokud chcete prozkoumat konkrétní systém procesu, který obvykle odpovídá provádění programu. Procesy, které jsou určeny názvy modulů, nebo se označují "systémových procesů."  

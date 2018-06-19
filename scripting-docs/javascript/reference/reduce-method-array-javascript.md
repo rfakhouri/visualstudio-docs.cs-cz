@@ -27,6 +27,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264773"
 ---
 # <a name="reduce-method-array-javascript"></a>reduce – metoda (Pole) (JavaScript)
 Volání funkce zadaný zpětného volání pro všechny elementy pole. Vrácená hodnota funkce zpětného volání je akumulovaný výsledek poskytnutý jako argument v dalším volání funkce zpětného volání.  

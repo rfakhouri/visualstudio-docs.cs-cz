@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569167"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Přehled cílení na více verzí nástroje MSBuild
 Pomocí nástroje MSBuild při kompilaci aplikace ke spuštění na libovolném několik verzí rozhraní .NET Framework a na některý ze několik platforem systému. Můžete například kompilovat aplikaci spustit v rozhraní .NET Framework 2.0 na 32bitové platformě a zkompilovat stejnou aplikaci spustit v rozhraní .NET Framework 4.5 na 64bitové platformě.  

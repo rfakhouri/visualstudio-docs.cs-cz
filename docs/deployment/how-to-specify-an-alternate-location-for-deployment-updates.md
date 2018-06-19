@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561347"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Postupy: Určení alternativního umístění pro aktualizace nasazení
 Můžete nainstalovat vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace původně z disku CD-ROM nebo sdílené složky, ale aplikace musí kontrolovat pravidelné aktualizace na webu. V manifestu nasazení můžete zadat alternativní umístění pro aktualizace, tak, aby vaše aplikace můžete aktualizovat přímo z webu po její počáteční instalaci.  

@@ -1,15 +1,16 @@
 ---
-title: "Zvláštní Chyba vlastnosti z metod asynchronní Windows Runtime | Microsoft Docs"
-ms.custom: 
+title: Zvláštní Chyba vlastnosti z metod asynchronní Windows Runtime | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45155584-06d8-4e7f-93a6-8564a93f643d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -18,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791742"
 ---
 # <a name="special-error-properties-from-asynchronous-windows-runtime-methods"></a>Zvláštní Chyba vlastnosti z metod asynchronní Windows Runtime
 Může být obtížné ladění asynchronních metod prostředí Windows Runtime v jazyce JavaScript, protože chyba může být vyvolána z hloubkové někde v zásobníku volání. Jazyk JavaScript `Error` objekt má zvláštních vlastností, které se zobrazují pouze pokud je vyvolána chyba z asynchronní metodu prostředí Windows Runtime když aplikace běží v režimu ladění.  

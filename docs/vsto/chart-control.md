@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267727"
 ---
 # <a name="chart-control"></a>Ovládací prvek graf
   <xref:Microsoft.Office.Tools.Excel.Chart> Ovládací prvek je objekt graf, který zpřístupní události. Když přidáte graf do listu, Visual Studio vytvoří <xref:Microsoft.Office.Tools.Excel.Chart> objektu, že můžete naprogramovat oproti přímo bez nutnosti procházení objektový model aplikace Microsoft Office Excel.  

@@ -29,6 +29,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262786"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Návod: Ruční nasazení aplikace ClickOnce, jež nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli
 Při vytváření [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a pak umožnit zákazníkovi k publikování a nasazení, zákazník tradičně museli aktualizovat manifest nasazení a podepište ho znovu. Přesto, že je stále upřednostňovanou metodou ve většině případů, rozhraní .NET Framework 3.5 umožňuje vytvářet [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, které lze nasadit zákazníky bez nutnosti znovu vygenerovat nový manifest nasazení. Další informace najdete v tématu [nasazení ClickOnce aplikace pro testování a produkční servery bez Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  

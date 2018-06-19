@@ -15,6 +15,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268266"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Spustit profilování nástroje s nebo bez ladicí program
 Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (například **využití procesoru** a **využití paměti**) lze spustit s nebo bez něj. Nástroje pro sledování výkonu non-ladicí program slouží ke spuštění na verzi konfigurace, zatímco integrovaná s ladicím programem nástroje jsou určeny pro spuštění pro ladění konfigurace.  

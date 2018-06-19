@@ -25,6 +25,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269138"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask – element (MSBuild)
 Mapuje úloha, která odkazuje [úloh](../msbuild/task-element-msbuild.md) element na sestavení, které obsahuje implementaci úloh.  

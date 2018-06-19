@@ -31,6 +31,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578754"
 ---
 # <a name="mt-task"></a>MT – úloha
 Zabalí nástroj Microsoft Manifest mt.exe. Další informace najdete v tématu "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  

@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475532"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Zobrazit zpětný překlad kódu v ladicím programu sady Visual Studio
 Tato funkce je dostupná pouze v případě, že je povoleno ladění na úrovni adresu **možnosti** dialogové okno, **ladění** uzlu. Není k dispozici pro ladění skriptu nebo jazyka SQL.  

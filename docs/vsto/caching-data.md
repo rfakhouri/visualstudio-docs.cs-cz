@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264366"
 ---
 # <a name="cache-data"></a>Data do mezipaměti
   Datové objekty v přizpůsobení na úrovni dokumentu můžete mezipaměti, takže data jsou přístupné v režimu offline, nebo bez otevření aplikace Microsoft Office Word nebo Microsoft Office Excel. Pro ukládání do mezipaměti objekt, objekt musí mít datový typ, který splňuje určité požadavky. Mnoho běžné typy dat v rozhraní .NET Framework splňovat tyto požadavky, včetně <xref:System.String>, <xref:System.Data.DataSet>, a <xref:System.Data.DataTable>.  

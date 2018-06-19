@@ -17,6 +17,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548197"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Postupy: použití Návrhář schématu XML s XML – literály
 

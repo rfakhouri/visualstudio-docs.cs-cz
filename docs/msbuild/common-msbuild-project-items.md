@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574256"
 ---
 # <a name="common-msbuild-project-items"></a>Společné položky projektu nástroje MSBuild
 V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], je určitá položka s názvem odkaz na jeden nebo více souborů. Položky obsahovat metadata, jako jsou názvy souborů, cesty a čísel verzí. Všechny typy v projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mají společnou několik položek. Tyto položky jsou definovány v souboru Microsoft.Build.CommonTypes.xsd.  

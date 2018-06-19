@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31564503"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Řešení konkrétních chyb v nasazeních ClickOnce
 Toto téma obsahuje následující běžné chyby, ke kterým dochází při nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a poskytuje postup řešení každého problému.  

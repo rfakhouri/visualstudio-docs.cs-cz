@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571809"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Postupy: Použití stejného cíle ve více souborech projektu
 Pokud jste vytvořili několik [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] soubory projektu, vám může zjistit, budete muset použít stejné úlohy a cíle v souborech jiný projekt. Místo v každém projektu souboru, včetně úplný popis těchto úloh nebo cíle, můžete uložit do samostatného souboru cíl a poté importovat do jiné projekt, který potřebuje používat cíl daného projektu.  

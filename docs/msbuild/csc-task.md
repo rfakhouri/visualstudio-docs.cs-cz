@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575654"
 ---
 # <a name="csc-task"></a>Csc – úloha
 Zabalí CSC.exe a vytvoří spustitelné soubory (soubory .exe), dynamické knihovny (soubory .dll) nebo moduly kódu (.netmodule soubory). Další informace o CSC.exe najdete v tématu [možnosti kompilátoru C#](/dotnet/csharp/language-reference/compiler-options/index).  

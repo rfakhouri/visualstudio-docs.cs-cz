@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479952"
 ---
 # <a name="graphics-pixel-history"></a>Historie pixelů grafiky
 Okno historie pixelů grafiky ve Visual Studio Graphics Analyzer vám pomůže pochopit, jak je konkrétní pixelů ovlivňován Direct3D – události, které nastaly během rámce hry nebo aplikace.  

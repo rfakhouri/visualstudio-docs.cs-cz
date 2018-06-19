@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570597"
 ---
 # <a name="msbuild-targets"></a>Cíle nástroje MSBuild
 Cíle seskupíte úlohy v určitém pořadí a umožněte proces sestavení se promítnou do menších jednotek. Jeden cíl může například odstranit všechny soubory v adresáři výstup přípravy na sestavení, zatímco jiné zkompiluje vstupy pro projekt a umístí je do prázdného adresáře. Další informace o úlohách najdete v tématu [úlohy](../msbuild/msbuild-tasks.md).  

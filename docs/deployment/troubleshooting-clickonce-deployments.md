@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561854"
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>Řešení potíží s nasazením ClickOnce
 Toto téma vám pomůže diagnostikovat a vyřešit nejběžnější problémy s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110026"
 ---
 # <a name="debug-package"></a>Ladění balíčku
 Balíček ladění běží v prostředí sady Visual Studio a zpracovává všechny uživatelské rozhraní. Ho využívá ladění v rozhraní sady Visual Studio a komunikuje s správce ladicí relace (SDM).  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576011"
 ---
 # <a name="msbuild-command-line-reference"></a>Referenční dokumentace pro použití nástroje MSBuild v příkazovém řádku
 Při použití MSBuild.exe pro vytvoření souboru projekt nebo řešení, může obsahovat několik přepínačů zadat různé aspekty procesu.  

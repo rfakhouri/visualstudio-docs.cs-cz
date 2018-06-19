@@ -1,16 +1,16 @@
 ---
-title: "Přehled ladění aktivních skriptů | Microsoft Docs"
-ms.custom: 
+title: Přehled ladění aktivních skriptů | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Active Script Debugging overview
 ms.assetid: ce4ec768-d017-4dfa-a7e3-cced3a29e679
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24792369"
 ---
 # <a name="active-script-debugging-overview"></a>Přehled ladění aktivních skriptů
 Rozhraní Active ladění skriptů povolit jazykově neutrální, hostitele jazykově neutrální ladění a podporují celou řadu vývojové prostředí.  

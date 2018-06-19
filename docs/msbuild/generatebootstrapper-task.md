@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573795"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper – úloha
 Poskytuje automatizovaný způsob, jak zjistit, stáhnout a nainstalovat aplikace a její požadované součásti. Slouží jako jeden instalační program, který se integruje se samostatný instalační programy pro všechny součásti tvořící aplikaci.  

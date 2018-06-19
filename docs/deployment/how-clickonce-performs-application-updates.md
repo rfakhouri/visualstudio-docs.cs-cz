@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557694"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Jak ClickOnce provádí aktualizaci aplikací
 ClickOnce používá informace o verzi souboru zadané v manifestu nasazení aplikace se rozhodnout, zda se má aktualizovat soubory aplikace. Po začátku aktualizace ClickOnce využívá techniku, nazývá *opravy souborů* předejdete redundantní stahování souborů aplikace.  

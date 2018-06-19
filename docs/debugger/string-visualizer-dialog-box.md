@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476972"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Zobrazení řetězců v vizualizéru řetězce v sadě Visual Studio
 Při ladění, můžete otevřít vizualizéru řetězce na řetězce zobrazení, které jsou příliš dlouhé zobrazíte v okně data tip nebo ladicí program. V mnoha případech vizualizér můžete identifikovat poškozený řetězce.

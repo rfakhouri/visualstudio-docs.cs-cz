@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559332"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Postupy: Instalace předpokladů s aplikací ClickOnce
 Všechny [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace vyžadují v počítači je nainstalována správná verze rozhraní .NET Framework, ještě před jejich spuštěním; mnoho aplikací mít také další požadavky. Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, můžete sadu součásti, které mají být zabaleny společně s vaší aplikace. Během instalace se provede kontrolu pro každý požadavek k určení, pokud již existuje; Pokud nebude nainstalována před instalací [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  

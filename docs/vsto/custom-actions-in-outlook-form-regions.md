@@ -21,6 +21,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264086"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Vlastní akce v oblastí formulářů aplikace Outlook
   Akce zobrazení tlačítek, které umožní uživatelům reagovat na položku Microsoft Office Outlook. Například reagovat na položku e-mailu, uživatelé kliknout **odpověď**, **Odpovědět všem**, nebo **dál** tlačítka akce. Všechny tyto akce vytvoří novou položku e-mailu a naplní položky pole pomocí informací z původní položky.  

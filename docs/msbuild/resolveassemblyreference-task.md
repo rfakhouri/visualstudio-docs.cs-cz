@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575855"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference – úloha
 Určuje, které jsou závislé na zadaná sestavení ve všech sestaveních. To zahrnuje sekundu a `n`tý pořadí závislostí.  

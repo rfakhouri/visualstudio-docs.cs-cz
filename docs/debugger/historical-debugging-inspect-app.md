@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476819"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Zkontrolujte vaše aplikace s použitím technologie IntelliTrace historické ladění v sadě Visual Studio
 Můžete použít [historické ladění](../debugger/historical-debugging.md) přesunout zpátky a předávat prostřednictvím spuštění vaší aplikace a zkontrolovat stav.  
