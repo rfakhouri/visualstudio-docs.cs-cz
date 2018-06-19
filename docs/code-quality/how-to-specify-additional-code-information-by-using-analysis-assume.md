@@ -19,6 +19,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031524"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Postupy: určení informací další kód pomocí _Analysis_assume
 Můžete zadat pomocné parametry nástroj pro analýzu kódu pro C/C++ kód, který bude pomůže procesu analýzy a snížit upozornění. Pokud chcete zadat další informace, použijte následující funkce:

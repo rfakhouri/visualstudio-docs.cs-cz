@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464807"
 ---
 # <a name="client-side-script-debugging"></a>Ladění skriptů na straně klienta
 Ladicí program Visual Studio poskytuje všestranné prostředí pro vyhledávání a opravy chyb v skripty na straně klienta na stránkách ASP.NET.  

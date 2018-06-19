@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31467298"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
 Načte výčet, který umožňuje klientům k iteraci v rámci informace číslo řádku všech funkcí, které jsou vložená, přímo nebo nepřímo, podle symbol zadaný nadřazený a jsou obsaženy v rámci zadaného relativní virtuální adresy (RVA).  

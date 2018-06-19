@@ -24,6 +24,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425154"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Návod: Vytvoření fragmentu kódu
 Fragment kódu můžete vytvořit pomocí pouhých několika krocích. Všechny, které musíte udělat je vytvořte soubor XML, vyplňte příslušná elementy a přidejte do ní váš kód. Můžete také přidat odkazy a nahrazující parametry do vašeho kódu. Fragment k instalaci sady Visual Studio můžete přidat pomocí **Import** na tlačítko **Správce fragmentů kódu** (**nástroje**  >   **Správce fragmentů kódu**).

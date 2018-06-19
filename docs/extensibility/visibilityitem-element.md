@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143462"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem Element
 `VisibilityItem` Element určuje, zda se statický příkazů a panely nástrojů. Každá položka identifikuje příkaz nebo nabídky a také kontextu přidružený příkaz uživatelského rozhraní. Sada Visual Studio zjistí příkazy, nabídek a panelů nástrojů a jejich viditelnost bez načítání VSPackages, který je definovat. Rozhraní IDE používá <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metoda k určení, zda kontext uživatelského rozhraní příkazů je aktivní.  

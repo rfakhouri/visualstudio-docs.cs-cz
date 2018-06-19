@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148243"
 ---
 # <a name="upgrading-projects"></a>Upgrade projektů
 Změny do projektu modelu z jedné verze nástroje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] na další může vyžadovat, aby projekty a řešení upgradovat tak, aby mohly běžet na novější verzi. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Poskytuje rozhraní, které lze použít k implementaci upgradu podporu ve vašich vlastních projektů.  

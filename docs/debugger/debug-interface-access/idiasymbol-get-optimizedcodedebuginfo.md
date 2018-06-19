@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471145"
 ---
 # <a name="idiasymbolgetoptimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
 Načte příznak, který určuje, jestli funkce obsahuje informace o ladění, která je specifická pro optimalizovaný kód.  

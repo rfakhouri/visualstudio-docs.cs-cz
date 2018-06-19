@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148191"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Návod: Vytvoření dalších úprav zobrazení, příkazy a nastavení (vodítka sloupců)
 Můžete rozšířit editor text/kódu Visual Studio s příkazy a zobrazit důsledky.  Toto téma ukazuje, jak začít pracovat s funkcí oblíbených rozšíření, vodítka sloupců.  Vodítka sloupce jsou vizuálně světla čáry vykreslené zobrazení textového editoru vám pomůžou spravovat svůj kód šířky konkrétní sloupců.  Konkrétně formátovaný kód může být důležité pro ukázky zahrnout v dokumentech, příspěvky blogu nebo chyb sestavy.  

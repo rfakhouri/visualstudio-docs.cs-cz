@@ -1,19 +1,20 @@
 ---
 title: Kolekce (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 23c26185-6a7b-4b69-9d22-63e1841b4905
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 01/12/2018
+ms.locfileid: "27783049"
 ---
 # <a name="collections-javascript"></a>Kolekce (JavaScript)
 Můžete použít objekty kolekce [mapy](../../javascript/reference/map-object-javascript.md), [nastavit](../../javascript/reference/set-object-javascript.md), a [WeakMap](../../javascript/reference/weakmap-object-javascript.md) k ukládání hodnot a objekty. Tyto objekty poskytují vhodné metody pro přidávání a načítání členů pomocí klíče nebo hodnoty místo indexu. Chcete-li získat přístup k členům kolekce pomocí indexu, použijte `Array` objektu. Další informace najdete v tématu [pomocí pole](../../javascript/advanced/using-arrays-javascript.md).  

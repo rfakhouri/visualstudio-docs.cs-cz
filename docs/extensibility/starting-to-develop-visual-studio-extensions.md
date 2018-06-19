@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144460"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Spouštění vyvíjet rozšíření Visual Studia
 Pokud jste nikdy zapsána rozšíření sady Visual Studio před, pravděpodobně máte nějaké otázky. Jsme některé z nejběžnějších těm, které jsou tady uvedené. Pokud nevidíte informace, které hledáte, použijte tlačítka zpětnou vazbu (**byly užitečné tuto stránku?** v dolní části obrazovky) a požádejte o co chcete použít.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148646"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX rozšíření schéma 2.0 – referenční informace
 Soubor manifestu nasazení VSIX popisuje obsah balíčku VSIX. Formát souboru se řídí schéma. Verze 2.0 toto schéma podporuje přidání vlastní typy a atributy.  Schéma manifest je rozšiřitelný. Manifestu zavaděč ignoruje XML elementů a atributů, které není pochopit.  

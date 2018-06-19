@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147578"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Návod: Vytvoření sady SDK, pomocí C++
 Tento návod ukazuje, jak vytvořit nativní C++ matematické knihovnu SDK, balíčku sady SDK jako Visual Studio rozšíření (VSIX) a pak ji použít k vytvoření aplikace. Průvodce je rozdělené do těchto kroků:  
@@ -43,9 +44,9 @@ Tento návod ukazuje, jak vytvořit nativní C++ matematické knihovnu SDK, bal�
   
      [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]  
   
-5.  V **Průzkumníku řešení**, otevřete místní nabídku pro **řešení 'NativeMath'**a potom zvolte **přidat**, **nový projekt**.  
+5.  V **Průzkumníku řešení**, otevřete místní nabídku pro **řešení 'NativeMath'** a potom zvolte **přidat**, **nový projekt**.  
   
-6.  V seznamu šablon, rozbalte položku **Visual C++**a pak vyberte **komponenty prostředí Windows Runtime** šablony. V **název** zadejte `NativeMathWRT`a potom zvolte **OK** tlačítko.  
+6.  V seznamu šablon, rozbalte položku **Visual C++** a pak vyberte **komponenty prostředí Windows Runtime** šablony. V **název** zadejte `NativeMathWRT`a potom zvolte **OK** tlačítko.  
   
 7.  Aktualizace Class1.h tak, aby odpovídaly tento kód:  
   
@@ -59,7 +60,7 @@ Tento návod ukazuje, jak vytvořit nativní C++ matematické knihovnu SDK, bal�
   
 ##  <a name="createVSIX"></a> Vytvoření projektu rozšíření NativeMathVSIX  
   
-1.  V **Průzkumníku řešení**, otevřete místní nabídku pro **řešení 'NativeMath'**a potom zvolte **přidat**, **nový projekt**.  
+1.  V **Průzkumníku řešení**, otevřete místní nabídku pro **řešení 'NativeMath'** a potom zvolte **přidat**, **nový projekt**.  
   
 2.  V seznamu šablon, rozbalte položku **Visual C#**, **rozšiřitelnost**a potom vyberte **projektu VSIX**. V **název** zadejte **NativeMathVSIX**a potom zvolte **OK** tlačítko.
   
@@ -95,7 +96,7 @@ Tento návod ukazuje, jak vytvořit nativní C++ matematické knihovnu SDK, bal�
                 \Neutral  
     ```  
   
-9. V **Průzkumníku řešení**, otevřete místní nabídku pro **řešení 'NativeMath'**a potom zvolte **otevřete složky v Průzkumníku souborů**.  
+9. V **Průzkumníku řešení**, otevřete místní nabídku pro **řešení 'NativeMath'** a potom zvolte **otevřete složky v Průzkumníku souborů**.  
   
 10. V **Průzkumníka souborů**, zkopírujte $SolutionRoot$\NativeMath\NativeMath.h a potom v **Průzkumníku řešení**v **NativeMathVSIX** projektu, vložte jej v $SolutionRoot$ \ Složka NativeMathVSIX\DesignTime\CommonConfiguration\Neutral\Include\.  
   

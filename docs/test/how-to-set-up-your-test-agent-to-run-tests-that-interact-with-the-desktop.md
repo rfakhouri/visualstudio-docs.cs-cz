@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974803"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Postupy: Nastavení agenta Test Agent pro spouštění testů komunikujících s plochou
 

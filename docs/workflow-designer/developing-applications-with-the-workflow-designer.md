@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31970122"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Vývoj aplikací pomocí návrháře pracovních postupů
 

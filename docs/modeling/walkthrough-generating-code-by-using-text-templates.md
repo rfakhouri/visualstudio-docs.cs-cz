@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979383"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Návod: Vytvoření kódu pomocí textových šablon
 Generování kódu umožňuje vytvářet kód programu, který je silného typu a ještě jde snadno změnit, pokud změny modelu zdroje. Tento rozdíl oproti alternativní postup zápisu úplně obecné program, který přijímá konfigurační soubor, který je flexibilnější, ale má za následek kód, který je ani jeden z nich tak snadno přečíst a změnit, ani je takové dobrý výkon. Tento návod ukazuje této výhody.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148659"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Nové nebo změněné chování adaptéry editoru
 Pokud aktualizujete kód, který byl napsaných pro starší verze sady Visual Studio základní editoru a máte v úmyslu použít editor adaptérů (nebo překrytí) místo pomocí nového rozhraní API, byste měli vědět následující rozdíly v chování nástroje adaptéry editoru s ohledem na předchozí základní editor.  

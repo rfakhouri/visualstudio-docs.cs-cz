@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471834"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Dialogové okno chybových zpráv operace Upravit a pokračovat
 Toto dialogové okno se zobrazí, když jsou ladění v jazyce, který podporuje upravit a pokračovat, ale **upravit a pokračovat** není k dispozici pro typ provedené změny kódu. Chybová zpráva uvnitř pole poskytuje podrobnější vysvětlení. Možné důvody pro zobrazení tohoto dialogového okna patří:  

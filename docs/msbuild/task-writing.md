@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965608"
 ---
 # <a name="task-writing"></a>Zápis úloh
 Úlohy zadejte kód, který spouští během procesu sestavení. Úlohy jsou obsažené v cíle. Knihovnu typické úlohy je součástí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], a můžete také vytvořit vlastní úlohy. Další informace o knihovně úlohy, které jsou součástí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], najdete v části [– Reference úlohy](../msbuild/msbuild-task-reference.md).  

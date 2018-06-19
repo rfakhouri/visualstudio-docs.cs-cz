@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965158"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Práce s průzkumníkem jazyka specifického pro doménu
 **DSL Explorer** několik druhů informace se zobrazí v zobrazení stromu. Další informace o většinu položky v Průzkumníku DSL najdete v tématu [jak definovat jazyka domény](../modeling/how-to-define-a-domain-specific-language.md).

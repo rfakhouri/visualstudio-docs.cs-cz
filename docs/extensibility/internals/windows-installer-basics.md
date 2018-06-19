@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144747"
 ---
 # <a name="windows-installer-basics"></a>Základy Instalační služby systému Windows
 Instalační služba systému Windows instaluje a odinstaluje aplikace nebo softwarové produkty na počítači uživatele, provádění těchto úkolů v jednotkách nazývané jako komponenty Instalační služby systému Windows (někdy nazývané WICs nebo jenom komponenty). Identifikátor GUID identifikuje každého WIC, což je základní jednotkou instalace a u instalace pomocí Instalační služby systému Windows při počítání referencí.  

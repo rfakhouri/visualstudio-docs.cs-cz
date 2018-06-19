@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145955"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Příručka pro testovací modulů plug-in programu zdroj ovládacího prvku
 Tato část obsahuje pokyny pro testování vaší zdrojového kódu pomocí modulu plug-in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Přehled rozsáhlé nejběžnější testování oblastech, jakož i některé z komplikovanější oblastí, které mohou způsobovat je k dispozici. Tento přehled není určená jako vyčerpávající seznam testovací případy.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33102651"
 ---
 # <a name="project-properties-reference"></a>Referenční dokumentace k vlastnostem projektu
 Další informace o tom, jak nakonfigurovat a upravit vlastnosti projektu.

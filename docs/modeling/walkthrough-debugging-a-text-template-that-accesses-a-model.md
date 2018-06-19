@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31968117"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Návod: Ladění textové šablony přistupující k modelu
 Když změníte nebo přidáte textové šablony v řešení jazyka domény, může docházet k chybám při modul transformuje šablony ke zdrojovému kódu nebo při kompilaci generovaného kódu. Následující návod ukazuje některé z akcí, které můžete provést k ladění textové šablony.

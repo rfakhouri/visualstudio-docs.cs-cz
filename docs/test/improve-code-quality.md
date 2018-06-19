@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967218"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testovací nástroje v sadě Visual Studio
 

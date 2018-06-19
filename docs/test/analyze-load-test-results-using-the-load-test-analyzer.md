@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31968287"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analýza výsledků zátěžového testu pomocí Analyzéru zátěžového testu
 

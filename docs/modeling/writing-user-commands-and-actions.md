@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965174"
 ---
 # <a name="writing-user-commands-and-actions"></a>Zápis uživatelských příkazů a akcí
 Jazyk specifické pro doménu můžete přizpůsobit přidáním příkazy k diagramu a odpovídá na požadavky gesta například přetahování myší, klikněte na tlačítko a dvakrát klikněte na události.

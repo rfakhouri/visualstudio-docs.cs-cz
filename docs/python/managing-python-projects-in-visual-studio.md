@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032187"
 ---
 # <a name="python-projects-in-visual-studio"></a>Python projekty v sadě Visual Studio
 

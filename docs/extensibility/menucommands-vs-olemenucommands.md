@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147187"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Příkazy nabídky můžete vytvořit buď z odvozením <xref:System.ComponentModel.Design.MenuCommand> nebo z <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objekt a impementling obslužné rutiny příslušné události. Ve většině případů můžete použít <xref:System.ComponentModel.Design.MenuCommand>, jak je šablona projektu VSPackage provádí, ale někdy budete možná muset použít <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  

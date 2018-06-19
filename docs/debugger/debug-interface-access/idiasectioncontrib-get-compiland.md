@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459991"
 ---
 # <a name="idiasectioncontribgetcompiland"></a>IDiaSectionContrib::get_compiland
 Získá odkaz na symbol kompilace, která podílí v této části.  

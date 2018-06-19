@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144892"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Návod: Propojení typu obsahu s příponu názvu souboru
 Můžete definovat vlastní typu obsahu a propojení příponu názvu souboru k němu pomocí rozšíření editorů Managed Extensibility Framework (MEF). V některých případech již byl definován příponu názvu souboru službou jazyk. Nicméně pro použití s MEF musíte stále propojit je typ obsahu.  

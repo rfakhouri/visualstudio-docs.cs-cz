@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31976429"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Návod: Izolace problémů pomocí graf aktivity virtuálního uživatele
 

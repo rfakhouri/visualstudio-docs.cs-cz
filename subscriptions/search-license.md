@@ -14,6 +14,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031179"
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Vyhledávání a filtrování Odběratelé, kteří v sadě Visual Studio předplatných
 Visual Studio odběry portálu pro správu umožňuje vyhledat určitou dílčí sadu odběratelů na základě různých kritérií. Odběratel seznam podle názvu, e-mailovou adresu, úrovni předplatného a různé další informace můžete filtrovat. 

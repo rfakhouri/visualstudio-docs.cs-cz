@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146816"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Pomocí sady Visual Studio spolupráce – sestavení
 Visual Studio sestavení vzájemné spolupráce povolit spravované aplikace pro přístup k rozhraní modelu COM, která zajistí možnosti rozšíření sady Visual Studio. Existují určité rozdíly mezi přímých rozhraní COM a jejich vzájemné spolupráce verze. Hodnoty HRESULT jsou obecně vyjádřené hodnoty int a je nutné zacházet stejným způsobem jako výjimky a parametry (zejména výstupní parametry) jsou zpracovávat odděleně.  

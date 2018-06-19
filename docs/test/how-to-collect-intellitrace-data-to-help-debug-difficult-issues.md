@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31976894"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Postupy: Shromáždění dat technologie IntelliTrace pro snazší ladění složitých problémů
 

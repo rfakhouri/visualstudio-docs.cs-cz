@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144704"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Co&#39;s ve Visual Studio 2015 SDK
 Visual Studio SDK obsahuje následující nové a aktualizované funkce pro Visual Studio 2015, Visual Studio 2015, aktualizovat a Visual Studio 2017.  

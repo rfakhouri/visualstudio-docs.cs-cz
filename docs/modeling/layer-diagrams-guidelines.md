@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954389"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy závislost: pokyny
 Popis architektury aplikace na vysoké úrovni vytvořením *závislostí diagramy* v sadě Visual Studio. Ujistěte se, že váš kód zůstává konzistentní s Tento návrh ověřením kódu s diagram závislostí. Ověření vrstev můžete použít také v procesu sestavení. V tématu [Channel 9 Video: návrh a ověřte vaší architektury pomocí závislostí diagramy](http://go.microsoft.com/fwlink/?LinkID=252073).

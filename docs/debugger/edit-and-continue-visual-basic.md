@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471041"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Upravit a pokračovat (Visual Basic)
 Upravit a pokračovat, je funkce pro [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ladění, který umožňuje změnit kódu, když je prováděna v režimu pozastavení. Po použití úprav kódu, můžete pokračovat v provádění kódu s novou úprav v místě a projevily.  

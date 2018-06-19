@@ -16,6 +16,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425332"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Úpravy modelů poměru testů určení pravděpodobnosti spuštění testu virtuálním uživatelem
 

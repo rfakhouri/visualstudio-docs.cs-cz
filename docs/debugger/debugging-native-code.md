@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472903"
 ---
 # <a name="debugging-native-code"></a>Ladění nativního kódu
 V části jsou popsané některé běžné problémy ladění a techniky pro nativní aplikace. Techniky popsané v této části jsou nejdůležitější techniky. Mechanismů používání ladicího programu sady Visual Studio, najdete v části [ladicí program plán](../debugger/debugger-basics.md).  

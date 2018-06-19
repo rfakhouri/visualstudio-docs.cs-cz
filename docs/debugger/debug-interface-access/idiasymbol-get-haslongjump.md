@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463904"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 Načte příznak, který určuje, zda obsahuje funkce použití [longjmp](/cpp/c-runtime-library/reference/longjmp) příkazu (spárované s [setjmp](/cpp/c-runtime-library/reference/setjmp) příkaz, tyto formuláři metodu stylu jazyka C zpracování výjimek).  

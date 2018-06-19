@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143316"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Návod: Zobrazení odpovídající složené závorky
 Můžete implementovat funkce založené na jazyce jako třeba závorky definováním složené závorky, které chcete porovnat a následným přidáním značku značky text odpovídající složené závorky, když pomocí kurzoru je na některém ze složené závorky. Můžete definovat složené závorky v kontextu jazyka, nebo můžete definovat typ vlastního souboru název rozšíření a obsahu a použití značek u právě tohoto typu nebo značky můžete použít pro existující typ obsahu (například "text"). Následující postup ukazuje, jak použít závorky značek k typu obsahu "text".  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032067"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Přidání vyhledávání okno nástroje
 Při vytváření nebo aktualizujte okno nástroje ve vašem rozšíření, můžete přidat stejné funkce vyhledávání, který se zobrazí někde v sadě Visual Studio. Tato funkce zahrnuje následující funkce:  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146193"
 ---
 # <a name="troubleshooting-vspackages"></a>Řešení potíží s VSPackages
 Následují nejčastější problémy, které může mít s vaší VSPackage a tipy pro řešení problémů.  
@@ -68,7 +69,7 @@ Následují nejčastější problémy, které může mít s vaší VSPackage a t
   
     1.  Identifikátor CLSID VSPackage naleznete v části balíčky registru:  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<verze >*\Packages  
+         HKLM\Software\Microsoft\Visual Studio\\*\<verze >* \Packages  
   
     2.  Zkontrolujte, zda je cesta poskytují podklíč SatelliteDll správné.  
   
@@ -121,7 +122,7 @@ Následují nejčastější problémy, které může mít s vaší VSPackage a t
   
 2.  Pro nespravovaného kódu najít identifikátor CLSID VSPackage v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uzlu registru CLSID:  
   
-     HKLM\Software\Microsoft\Visual Studio\\*\<verze >*\CLSID  
+     HKLM\Software\Microsoft\Visual Studio\\*\<verze >* \CLSID  
   
  Ujistěte se, že má položka InprocServer32 správnou cestu k souboru VSPackage dll.  
   

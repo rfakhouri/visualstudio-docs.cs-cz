@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031888"
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Vzdálené ladění kódu jazyka Python v Azure
 

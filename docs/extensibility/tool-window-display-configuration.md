@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143690"
 ---
 # <a name="tool-window-display-configuration"></a>Konfigurace zobrazení okna nástrojů
 Když VSPackage zaregistruje okno nástroje, výchozí umístění, velikost, styl ukotvení a další informace, zda je zadáno v volitelné hodnoty. Další informace o nástroj registrace okna, najdete v části [nástroj Windows v registru](../extensibility/tool-windows-in-the-registry.md)  

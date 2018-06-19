@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474957"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>Ladění ve smíšeném režimu je podporováno, pouze pokud používáte rozhraní Microsoft .NET Framework 2.0 nebo 3.0.
 Verze rozhraní Microsoft .NET Framework starší než 2.0 neposkytují podpora ladění ve smíšeném režimu 64bitové procesy. To znamená, že jste nelze krok ze spravovaného kódu do nativního kódu nebo z nativního kódu do spravovaného kódu, při ladění.  

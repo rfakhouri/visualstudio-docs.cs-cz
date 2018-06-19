@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144213"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Návod: Vytvoření sady SDK, pomocí jazyka JavaScript
 Tento názorný postup učí, jak vytvořit jednoduché matematické SDK jako Visual Studio rozšíření (VSIX) pomocí jazyka JavaScript.  Průvodce se dělí na tyto části:  

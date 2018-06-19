@@ -25,6 +25,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33103434"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Nastavení projektu VC++, projekty a řešení, dialogové okno Možnosti
 Toto dialogové okno umožňuje definovat [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] sestavení a nastavení související s protokolování, výkon a podporuje typy souborů projektu.

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031469"
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK pro Python
 

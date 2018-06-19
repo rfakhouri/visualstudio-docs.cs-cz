@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977267"
 ---
 # <a name="iterators-and-generators-javascript"></a>Iterátory a generátory (JavaScript)
 Iterátor je objekt, který se používá k procházení objektu kontejneru jako seznam. V jazyce JavaScript, není objekt jedinečné integrované iterator objekt, ale je objekt, který implementuje `next` metody přístup na další položku v objektu kontejneru.  

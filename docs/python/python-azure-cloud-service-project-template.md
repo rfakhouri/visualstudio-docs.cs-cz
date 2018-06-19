@@ -17,6 +17,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031810"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty Azure cloudových služeb pro jazyk Python
 

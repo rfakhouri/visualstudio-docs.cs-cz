@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31195319"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Nastavení předplatného služby Azure pro vývoj/testování průběžné platby
 Spolupracujte se svým týmem v cloudu.  Vytvořte více vývojářů a testovací průběžné platby odběry, povolení spolupráce s další odběratele a zároveň poskytuje izolaci mezi týmy a prostředí.  Obdrží výhradní hodinové zvýhodněné sazby pro vývojové a testovací a cloudu práv na používání pro vaše předplatné softwaru v Azure.

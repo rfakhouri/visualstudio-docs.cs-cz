@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31976686"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Tom, jak přiřadit prostředí Python, ve kterém se používá pro projekt
 

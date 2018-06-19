@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471749"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Chyba: Služba vzdáleného ladicího programu sady Visual Studio na cílovém počítači se nemůže připojit zpět k tomuto počítači.
 Tato chyba znamená, že služba Visual Studio Debugger vzdálené běží pod účtem uživatele, který nemůže ověřit při pokusu o připojení k počítači, který se ladění z.  

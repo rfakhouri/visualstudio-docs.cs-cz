@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147216"
 ---
 # <a name="walkthrough-highlighting-text"></a>Návod: Zvýraznění textu
 Různých vizuálních efektů můžete přidat do editoru vytvořením součásti Managed Extensibility Framework (MEF). Tento návod ukazuje, jak chcete zvýraznit všechny výskyty aktuální slova v textovém souboru. Pokud slovo dojde k více než jednou v textovém souboru a umístit pomocí kurzoru v jeden výskyt, každý výskyt zvýrazní.  

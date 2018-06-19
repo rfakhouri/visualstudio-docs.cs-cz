@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144275"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK umožňuje rozšířit funkce aplikace Visual Studio nebo integrovat nové funkce v sadě Visual Studio. Můžete distribuovat rozšíření jiným uživatelům a také na Visual Studio Marketplace. Tady jsou některé způsoby, ve kterém můžete rozšířit Visual Studio:  

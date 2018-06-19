@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142786"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struktura VSPackage (Zdroj ovládacího prvku VSPackage)
 Sada zdroj ovládacího prvku balíček SDK poskytuje pokyny pro vytváření VSPackage, který povolí zdroj ovládacího prvku implementátor integrovat své funkce správy zdrojového s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí. VSPackage je komponenty COM, která je obvykle načtena na vyžádání pomocí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) podle služby, které mají být inzerovány balíček v jeho položky registru. Každý VSPackage musí implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. VSPackage obvykle využívá službách nabízených [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE a proffers některé služby.  

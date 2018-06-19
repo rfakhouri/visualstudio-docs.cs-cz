@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31971542"
 ---
 # <a name="runtime-activity-designers"></a>Modul runtime návrháře aktivit
 Modul runtime návrháře aktivit se používají k zachování a ukončení aktivity pracovního postupu. Témata obsažené v této části poskytují pokyny o tom, jak používat návrháře aktivit pracovního postupu návrháře.

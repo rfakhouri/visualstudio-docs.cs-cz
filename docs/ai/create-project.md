@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29709359"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Vytvoření projektu AI ze šablony v sadě Visual Studio
 

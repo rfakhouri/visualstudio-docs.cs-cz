@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144931"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Návod: Vytvoření služby jazyk starší verze
 Použití třídy jazyka framework (MPF) spravovaných balíček k implementaci služba jazyka v [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] je jednoduché. Je nutné VSPackage hostit služba jazyka, samotnou službu jazyk a analyzátor pro daný jazyk.  

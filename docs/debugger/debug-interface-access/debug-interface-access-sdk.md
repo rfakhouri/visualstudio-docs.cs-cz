@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457443"
 ---
 # <a name="debug-interface-access-sdk"></a>Přístup k rozhraní ladění SDK
 Microsoft ladění rozhraní přístup Software Development Kit (DIA SDK) poskytuje přístup k ladění informace uložené v souborech databáze (.pdb) program generované postcompiler nástroje společnosti Microsoft. Vzhledem k tomu, že formát souboru PDB generované nástroji postcompiler zde nevyskytlo konstantní revize, vystavení formát je nepraktické. Pomocí rozhraní API DIA, můžete vyvíjet aplikace, které vyhledávání a procházení ladicí informace uložené v souboru pdb. Tyto aplikace může například sestavy informace zpětným trasování zásobníku a analýza dat výkonu.  

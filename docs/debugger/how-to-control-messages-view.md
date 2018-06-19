@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473196"
 ---
 # <a name="how-to-control-messages-view"></a>Postupy: Řízení zobrazení zpráv
 Pomocí nástroje Spy ++, budete mít značnou kontrolu nad obsah [zobrazení zpráv](../debugger/messages-view.md) okno. Můžete [spuštění a zastavení](../debugger/how-to-start-and-stop-the-message-log-display.md) zobrazení zpráv v kdykoli a můžete zadat:  

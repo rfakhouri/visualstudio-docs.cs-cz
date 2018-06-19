@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954269"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrace modelů pomocí Visual Studio Modelbus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus poskytuje metodu pro vytváření odkazů mezi modely a z dalších nástrojů do modelů. Můžete například propojit modely jazyka domény (DSL) a modely UML. Můžete vytvořit integrované sadu DSL, linky.

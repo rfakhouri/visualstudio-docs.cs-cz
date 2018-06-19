@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472199"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Ladění chyb a dialogových oken s upozorněním
 V následující tabulce jsou chyby a upozornění dialogová okna se můžete setkat při ladění aplikace.  

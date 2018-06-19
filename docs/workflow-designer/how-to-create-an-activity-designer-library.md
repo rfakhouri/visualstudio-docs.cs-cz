@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974588"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Postupy: vytvoření Knihovna návrháře aktivit
 Návrháři vlastních aktivit umožňují vytváření uživatelského rozhraní pro standardní nebo vlastní aktivity. Řízení složitosti uživatelské rozhraní a mít možnost vytvořit více než jeden návrhář aktivity pro aktivitu. Tento scénář vám umožní vytvořit návrhářů, které jsou přizpůsobené pro více publik.

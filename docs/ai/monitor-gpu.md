@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29709099"
 ---
 # <a name="monitoring-gpu-utilization"></a>Monitorování využití GPU
 Ke sledování využití GPU vzdáleného počítače se systémem Linux:

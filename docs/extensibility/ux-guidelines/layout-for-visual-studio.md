@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31149013"
 ---
 # <a name="layout-for-visual-studio"></a>Rozložení pro sadu Visual Studio
 Většina dialogová okna v sadě Visual Studio je [rozložení dialogové okno nástroj](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), které jsou unthemed tento standard postupujte podle kroků v dialogových oknech [Windows Desktop dialogové okno rozložení Principy](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx). Při přesunu Visual Studio k aktualizaci jeho uživatelském rozhraní, některé výraznější dialogová okna mají nový návrh, který stanoví je jako produktu definování prostředí. Tyto [motivu dialogové okno rozložení](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) vzhled motivu.  

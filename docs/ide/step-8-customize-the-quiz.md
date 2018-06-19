@@ -16,6 +16,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32065244"
 ---
 # <a name="step-8-customize-the-quiz"></a>Krok 8: Přizpůsobení kvízu
 V poslední části tutoriálu prozkoumáte několik způsobů, jak kvíz přizpůsobit a rozšíříte si již nabyté znalosti. Například se zamyslíte nad tím, jak program vytvoří problém náhodného dělení, jehož odpovědí není nikdy zlomek. Další informace, zapněte `timeLabel` řízení barvu a poskytněte příjemce kvízu s časovým limitem nápovědu.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146608"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Návod: Vytvoření sady SDK, pomocí jazyka C# nebo Visual Basic
 V tomto návodu dozvíte, jak vytvořit jednoduché SDK knihovny Math pomocí Visual C# a pak balíček sady SDK jako Visual Studio rozšíření (VSIX). Budete proveďte následující postupy:  

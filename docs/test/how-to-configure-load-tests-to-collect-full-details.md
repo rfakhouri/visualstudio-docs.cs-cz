@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967093"
 ---
 # <a name="how-to-configure-load-tests-to-collect-full-details-to-enable-virtual-user-activity-in-test-results"></a>Postupy: Nastavení zátěžových testů pro shromažďování veškerých podrobností a zpřístupnění aktivity virtuálních uživatelů ve výsledcích testu
 

@@ -33,6 +33,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954226"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Písma a barvy, prostředí, dialogové okno Možnosti
 **Písma a barev** stránky **možnosti** dialogové okno umožňuje vytvořit vlastní písma a barev režim pro různé prvky uživatelského rozhraní v integrované vývojové prostředí (IDE). Tohoto dialogového okna můžete přejít pomocí kliknutím na tlačítko **Nástroje / možnosti**a potom vyberete **prostředí / písma a barev**. Pokud tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.

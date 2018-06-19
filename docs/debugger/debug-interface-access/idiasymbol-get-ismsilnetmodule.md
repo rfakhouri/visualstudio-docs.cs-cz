@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468525"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 Získá příznak označující, zda modul .netmodule (Microsoft Intermediate Language (MSIL) modul, který obsahuje pouze metadata a žádné nativní symboly).  

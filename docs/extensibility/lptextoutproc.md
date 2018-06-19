@@ -24,6 +24,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143524"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Když uživatel provede operaci zdroj ovládacího prvku z uvnitř integrované vývojové prostředí (IDE), může modul plug-in správy zdroje mají být umístěny chyba nebo stavové zprávy týkající se operace. Modul plug-in seznam můžete zobrazit svůj vlastní okna zpráv pro tento účel. Ale pro další bezproblémovou integraci, modul plug-in můžete předat řetězce integrovaného vývojového prostředí, které zobrazí je v jeho nativní způsob zobrazení informací o stavu. Mechanismus pro toto je `LPTEXTOUTPROC` – ukazatel na funkci. Prostředí IDE implementuje tuto funkci (podrobněji popsané v následující) pro zobrazení stavů a chyb.  

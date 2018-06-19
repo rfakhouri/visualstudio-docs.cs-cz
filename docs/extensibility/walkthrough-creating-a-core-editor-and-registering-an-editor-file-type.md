@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147406"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Návod: Vytvoření základní editoru a registraci typu souboru editoru
 Tento návod ukazuje, jak vytvořit VSPackage začínající [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní editor, pokud soubor, který má příponu názvu souboru .myext je načíst.  

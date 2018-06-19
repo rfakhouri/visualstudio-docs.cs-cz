@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148734"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Barva hodnotu odkazu pro sadu Visual Studio
 Toto téma je odkaz pro vytvoření nové tokeny barev. Při vytváření nové uživatelské rozhraní, můžete vybrat barvy pro každou hlavní motiv a název barvy systému pro daný element pro vysoký kontrast motivy podobné barvy z existující uživatelského rozhraní. 

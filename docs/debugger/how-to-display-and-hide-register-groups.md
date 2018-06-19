@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474086"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>Postupy: Zobrazení a skrytí nabídky Registrovat skupiny
 **Zaregistruje** okno je k dispozici pouze v případě, že je povoleno ladění úrovni adresu v **možnosti** dialogové okno, **ladění** uzlu **Obecné**kategorie.  

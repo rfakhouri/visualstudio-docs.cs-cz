@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457898"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Začínáme (Přístup k rozhraní ladění SDK)
 Ladění rozhraní přístup (DIA) SDK poskytuje vám s instruktážní dokumentace a ukázky, která ukazuje, jak používat rozhraní API DIA. Použití rozhraní a metody v sadě DIA SDK k vývoji vlastních aplikací, které otevřete soubory PDB a dbg a vyhledat obsah pro symboly, hodnoty, atributy, adresy a další informace o ladění. Tato sada SDK poskytuje referenční tabulky pro vlastnosti přidružené k symboly v aplikací C++ nalezen.  
@@ -32,7 +33,7 @@ Ladění rozhraní přístup (DIA) SDK poskytuje vám s instruktážní dokument
   
 -   Visual integrované vývojové prostředí (IDE) Studio kompilaci ukázky  
   
- DIA SDK je obvykle nainstalován pomocí sady Visual Studio a jeho výchozí umístění je *[jednotka]*\Program Files\Microsoft 9.0\DIA Visual Studio SDK. Jako součást instalace, msdia90.dll, která implementuje DIA SDK, automaticky registruje, takže všechno, co musíte udělat pro použití je zahrnout `dia2.h` v programu a odkaz na `diaguids.lib`.  
+ DIA SDK je obvykle nainstalován pomocí sady Visual Studio a jeho výchozí umístění je *[jednotka]* \Program Files\Microsoft 9.0\DIA Visual Studio SDK. Jako součást instalace, msdia90.dll, která implementuje DIA SDK, automaticky registruje, takže všechno, co musíte udělat pro použití je zahrnout `dia2.h` v programu a odkaz na `diaguids.lib`.  
   
  Záhlaví: include\dia2.h  
   

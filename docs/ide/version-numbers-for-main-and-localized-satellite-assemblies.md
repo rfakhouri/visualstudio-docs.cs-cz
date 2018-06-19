@@ -21,6 +21,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32424936"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Čísla verzí pro hlavní a lokalizované satelitní sestavení
 <xref:System.Resources.SatelliteContractVersionAttribute> Třída poskytuje podporu správy verzí pro hlavní sestavení, který používá místní zdroje prostřednictvím Resource Manager. Použití <xref:System.Resources.SatelliteContractVersionAttribute> k aplikaci hlavní sestavení vám umožní aktualizovat a znovu nasaďte sestavení bez aktualizace jeho satelitních sestavení. Například můžete použít <xref:System.Resources.SatelliteContractVersionAttribute> třídy s aktualizací service pack, která není zavést nové prostředky bez znovu sestavit a znovu nasazovat satelitní sestavení. Pro vaše lokalizované prostředky k dispozici, musí odpovídat verzi satelitní kontrakt hlavní sestavení <xref:System.Reflection.AssemblyVersionAttribute> třída satelitních sestavení. Zadejte číslo přesnou verzi v <xref:System.Resources.SatelliteContractVersionAttribute>; zástupné znaky, jako například "*" nejsou povoleny. Další informace najdete v tématu [načtení prostředků](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).

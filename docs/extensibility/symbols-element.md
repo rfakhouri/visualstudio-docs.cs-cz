@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142773"
 ---
 # <a name="symbols-element"></a>Element symboly
 Definuje identifikátory, které jsou používány jiné VSCT elementy a identifikátory GUID. Pro nespravovaného kódu, tyto informace obvykle pochází z soubory hlaviček, které jsou určené [Extern Element](../extensibility/extern-element.md). Spravovaný kód používá podřízených elementů symboly elementu, který chcete definovat tyto informace.  

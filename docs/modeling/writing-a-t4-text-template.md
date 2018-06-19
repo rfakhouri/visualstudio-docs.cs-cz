@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31975517"
 ---
 # <a name="writing-a-t4-text-template"></a>Tvorba textové šablony T4
 Textová šablona obsahuje text, který z ní bude vygenerován. Například bude obsahovat šablonu, která vytvoří webovou stránku "\<html >..." a všechny ostatní standardní části na stránce HTML. Vložit do šablony jsou *řízení bloky*, které jsou fragmenty kódu programu. Řídicí bloky poskytují různé hodnoty a umožňují, aby části textu byly podmíněné a opakované.

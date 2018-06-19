@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979409"
 ---
 # <a name="unit-testing-visual-c-code"></a>Kód jazyka Visual C# testování částí
 

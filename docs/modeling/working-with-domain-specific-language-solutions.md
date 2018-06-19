@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965976"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Práce s řešeními jazyka specifického pro doménu
 Jazyk specifické pro doménu (DSL) je vytvořený pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení. Tato část se o tom, jak nastavit a přizpůsobit řešení.

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031979"
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Krok 4: Spuštění kódu v ladicím programu
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954744"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Postupy: Přidání příkazu do místní nabídky
 Příkazy nabídky můžete přidat do jazyka specifické pro doménu (DSL) tak, aby vaši uživatelé můžete provádět úlohy, které jsou specifické pro vaše DSL. Při kliknutí pravým tlačítkem myši v diagramu se zobrazují příkazy v nabídce kontextu (místní). Příkaz můžete definovat, aby se zobrazí pouze v nabídce v konkrétních situacích. Například můžete provést příkaz viditelná jenom v případě, že uživatel klikne na konkrétní typy elementu nebo elementů v konkrétní stavy.

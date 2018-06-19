@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967231"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Práce s diagramem definice DSL
 Diagram nástroje [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definice je důležitým nástrojem pro definování jazyka domény. Můžete přidat elementy k vaší doméně modelu a definovat vztahy v diagramu, a můžete upravit rozložení diagramu, aby byl čitelnější.

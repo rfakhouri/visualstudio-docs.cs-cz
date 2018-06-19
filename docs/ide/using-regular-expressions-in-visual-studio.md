@@ -23,6 +23,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425345"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Použití regulárních výrazů v sadě Visual Studio
 

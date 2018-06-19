@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472462"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Postupy: Kontrola systémového kódu po výjimce
 Když dojde k výjimce, můžete chtít Kontrola kódu uvnitř volání systému a zjistěte příčinu výjimku. Následující postup vysvětluje, jak to provést, pokud nemáte symboly načten pro kód systému nebo pokud je povoleno pouze můj kód.  

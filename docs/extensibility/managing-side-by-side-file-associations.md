@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146803"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Správa přidružení souboru vedle sebe
 Pokud vaše VSPackage poskytuje přidružení souborů, musíte rozhodnout, jak zpracovat souběžně sdílená zařízení, ve které konkrétní verzi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] by měla být volána k otevření souboru. Formáty souborů nekompatibilní složené problém.  

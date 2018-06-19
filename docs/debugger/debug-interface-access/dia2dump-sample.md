@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457823"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump – ukázka
 Dia2dump – ukázka je nainstalován pomocí sady Visual Studio a obsahuje dia2dump.cpp – zdrojový soubor. Kompilované spustitelný soubor spouští z příkazového řádku a zobrazí obsah souboru databáze (.pdb) celého programu.  

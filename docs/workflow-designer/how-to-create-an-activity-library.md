@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974041"
 ---
 # <a name="how-to-create-an-activity-library"></a>Postupy: vytvoření knihovna aktivit
 Vlastní aktivity se používají pro modelování konkrétní firemních procesů v pracovním postupu. Bylo zadáno šablona knihovny aktivit v sadě Visual Studio 2010 umožňující vytvářet takové vlastní aktivity vizuálně pomocí Návrháře pracovního postupu systému Windows.
