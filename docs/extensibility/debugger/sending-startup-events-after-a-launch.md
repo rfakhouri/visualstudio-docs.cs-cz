@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135751"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>Odesílání událostí spuštění po spuštění
 Jakmile modul ladění (DE) je připojen k programu, odešle řady událostí spuštění zpět na relaci ladění.  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464833"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Vytvořit vlastní Vizualizérech dat
  Vizualizérech jsou součástí [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] ladicí program uživatelské rozhraní. A *vizualizér* vytvoří dialogové okno nebo jiné rozhraní k zobrazení proměnné nebo objekt způsobem, který je vhodný pro jeho datového typu. Například HTML vizualizér interpretuje řetězec HTML a výsledek zobrazí, jako by se zobrazí v okně prohlížeče; Vizualizér rastrový obrázek interpretuje strukturu rastrového obrázku a zobrazí obrázek, který představuje. Některé vizualizérech umožňují upravit a také zobrazit data.

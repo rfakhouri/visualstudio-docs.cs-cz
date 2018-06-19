@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139663"
 ---
 # <a name="how-to-managing-multiple-threads-in-managed-code"></a>Postupy: Správa více vláken ve spravovaném kódu
 Pokud máte spravované VSPackage rozšíření, které volá asynchronní metody, nebo se operace, které jsou spouštěny na vláken než vlákna uživatelského rozhraní Visual Studio, postupujte podle níže uvedených pokynů. Vlákna uživatelského rozhraní můžete zachovat reakce, protože není třeba čekat pro práci na jiné vlákno k dokončení. Můžete provést kódu efektivnější, protože nemáte navíc vláken, které zabírají prostor v zásobníku, a je možné provádět spolehlivější a snazší ladění, protože se vyhnout blokování a zablokování.  

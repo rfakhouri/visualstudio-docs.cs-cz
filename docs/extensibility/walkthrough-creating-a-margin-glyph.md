@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142627"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>Návod: Vytvoření glyf rozpětí
 Pomocí vlastního editoru rozšíření můžete přizpůsobit vzhled okraje editoru. Tento názorný postup vlastní glyf umístí na okraj indikátoru vždy, když je slovo "todo" se zobrazí v komentář ke kódu.  

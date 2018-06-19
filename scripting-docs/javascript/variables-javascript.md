@@ -26,6 +26,7 @@ ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/03/2018
+ms.locfileid: "30307266"
 ---
 # <a name="variables-javascript"></a>Proměnné (JavaScript)
 V [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], proměnná obsahuje hodnotu, jako je například "hello" nebo 5. Pokud použijete proměnnou, odkazujete na data je představuje, například `NumberOfDaysLeft = EndDate - TodaysDate`.  

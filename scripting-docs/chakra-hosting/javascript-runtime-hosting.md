@@ -1,14 +1,14 @@
 ---
-title: "JavaScript Runtime – hostování | Microsoft Docs"
-ms.custom: 
+title: JavaScript Runtime – hostování | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6615079-2df7-420f-a126-077e7d42486c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788229"
 ---
 # <a name="javascript-runtime-hosting"></a>JavaScript Runtime – hostování
 Rozhraní API jazyka JavaScript Runtime (JsRT) poskytují způsob, jak pro stolní počítače, Windows Store a serverové aplikace spuštěné na operačním systému Windows pro přidání možností skriptování do aplikace pomocí založených na standardech Chakra JavaScript modulem, který je také využívaných Microsoft Edge a prohlížeče Internet Explorer. Tato rozhraní API jsou k dispozici ve Windows 10 a všechny verze operačního systému Windows, který má Internet Explorer verze 11.0 nainstalovat na počítač.  

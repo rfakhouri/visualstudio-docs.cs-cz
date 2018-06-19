@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138724"
 ---
 # <a name="vstextview-object"></a>Objekt VSTextView
 Zobrazení textu je okno, které umožňuje uživatelům zobrazit a upravit text v kódu Unicode textové vyrovnávací paměti. Zobrazení je v podstatě co většina uživatelů odkazovat jako editor. Protože zobrazení je oddělená od vyrovnávací paměti podle různých vrstev text (zalamování řádků, osnovy text a tak dále), nemusí být přesná reprezentace textu ve vyrovnávací paměti zobrazení. Další informace o textového zobrazení najdete v tématu [přístup k zobrazení text s použitím rozhraní API starší verze](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  

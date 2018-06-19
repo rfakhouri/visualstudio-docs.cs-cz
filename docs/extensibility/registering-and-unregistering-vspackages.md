@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139049"
 ---
 # <a name="registering-and-unregistering-vspackages"></a>Registrace a zrušení registrace VSPackages
 Použijte atributy k registraci VSPackage, ale  

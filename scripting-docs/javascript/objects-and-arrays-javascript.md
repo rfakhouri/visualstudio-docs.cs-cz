@@ -1,12 +1,13 @@
 ---
 title: Objekty a pole (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - arrays [JavaScript], objects
 ms.assetid: f5106284-1240-4f47-8c3b-5a45e227e5e1
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789132"
 ---
 # <a name="objects-and-arrays-javascript"></a>Objekty a pole (JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]objekty jsou kolekce vlastností a metod. Funkce, který je členem objektu je metoda. Vlastnost je hodnota nebo sadu hodnot (ve formě pole nebo objekt), který je členem objektu. [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]podporuje čtyři typy objektů:  

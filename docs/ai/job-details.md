@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29709828"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Zobrazit nejnovější úlohy výkon a podrobnosti
 Po odeslání úlohy se zobrazí se seznam úloh, které chcete zobrazit jejich stav, doba trvání a další.

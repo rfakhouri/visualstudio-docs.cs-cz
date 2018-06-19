@@ -1,11 +1,11 @@
 ---
 title: IPerPropertyBrowsing2::GetDisplayString | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IPerPropertyBrowsing2.GetDisplayString
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IPerPropertyBrowsing2::GetDisplayString
 ms.assetid: 8f75c6a9-86a9-4e2d-8cb4-74e7b1c0a524
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24794883"
 ---
 # <a name="iperpropertybrowsing2getdisplaystring"></a>IPerPropertyBrowsing2::GetDisplayString
 Získá řetězec k zobrazení typů, které nejsou ze své podstaty zobrazitelné vráceném textu budou zobrazeny je název popisující vlastnost a lze zobrazit v uživatelském rozhraní volajícího.  

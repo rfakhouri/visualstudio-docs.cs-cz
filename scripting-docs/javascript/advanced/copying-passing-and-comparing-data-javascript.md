@@ -1,12 +1,13 @@
 ---
-title: "Kopírování, předávání a porovnávání dat (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Kopírování, předávání a porovnávání dat (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -23,7 +24,7 @@ helpviewer_keywords:
 - ByVal argument
 - string comparison, testing data
 ms.assetid: fbccd877-7249-45d4-bd9f-6bcd8ba94a6b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -32,6 +33,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789120"
 ---
 # <a name="copying-passing-and-comparing-data-javascript"></a>Kopírování, předávání a porovnávání dat (JavaScript)
 V [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], jak se zpracují data závisí na jeho datového typu.  

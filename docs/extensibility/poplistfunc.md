@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138561"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Je součástí této zpětného volání [SccPopulateList](../extensibility/sccpopulatelist-function.md) zařízení IDE a je používána modulu plug-in zdrojového kódu se aktualizovat seznam souborů a složek (také zadaný do `SccPopulateList` funkce).  

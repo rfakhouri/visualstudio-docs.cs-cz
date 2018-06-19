@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "29899942"
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>Prototypy a jejich dědičnost
 V jazyce JavaScript `prototype` je vlastnost funkce a objekty, které jsou vytvořené pomocí funkce konstruktoru. Prototypem funkce je objekt. Nejčastěji se využívá, když se funkce použije jako konstruktor.  

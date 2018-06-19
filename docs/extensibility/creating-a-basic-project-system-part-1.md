@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108333"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Vytvoření systému základní projektu, část 1
 Projekty v sadě Visual Studio jsou kontejnery, které vývojáři použít k uspořádání soubory zdrojového kódu a další prostředky. Projekty zobrazí jako podřízené objekty řešení **Průzkumníku řešení**. Projekty umožňují uspořádat, vytváření, ladění a zavádění zdrojového kódu a vytvořit odkazy na webové služby, databáze a dalším prostředkům.  

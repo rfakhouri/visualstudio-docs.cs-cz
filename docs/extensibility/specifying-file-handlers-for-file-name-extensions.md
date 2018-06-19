@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140684"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Určení souboru obslužné rutiny pro přípony názvu souboru
 Existuje několik způsobů, jak zjistit, která zpracovává soubor, který má příponu souboru konkrétní aplikace. Příkazy OpenWithList a OpenWithProgids jsou dva způsoby, jak zadat soubor obslužných rutin pod položkou registru pro příponu souboru.  

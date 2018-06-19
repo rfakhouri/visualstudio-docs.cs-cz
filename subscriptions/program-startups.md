@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863648"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Visual Studio odběry nabízet pro startupy
 Kvalifikovaný startupy, kteří připojení společnosti Microsoft pro Startupy program vám mohou zajistit 5 [Visual Studio Enterprise měsíční Cloudová předplatná](https://www.visualstudio.com/vs/pricing/). Jedná se o stejné předplatné, které jsou nabízeny komerčně, bez zvláštní omezení a omezení. Každé předplatné musí být přiřazená k koncový uživatel (který je licencovaný uživatel) předtím, než uživatel může spustit sadu Visual Studio a rozpoznat jako odběratel v služby VSTS Visual Studio Enterprise.

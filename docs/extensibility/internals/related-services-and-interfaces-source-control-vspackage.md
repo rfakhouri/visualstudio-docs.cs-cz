@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135349"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Rozhraní (Zdroj ovládacího prvku VSPackage) a související služby
 Tato část obsahuje všechny zdrojové řízení VSPackage související rozhraní [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Správa zdrojového kódu VSPackage implementuje některé z těchto rozhraní a jiné používá k provádění úkolů správy zdrojového.  

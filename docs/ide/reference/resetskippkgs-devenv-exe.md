@@ -19,6 +19,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704496"
 ---
 # <a name="resetskippkgs-devenvexe"></a>/ResetSkipPkgs (devenv.exe)
 Vymaže všechny možnosti tak, aby přeskočil načítání přidaných do VSPackages uživatelé chtějí předejít přetížení problém VSPackages a potom spustí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107800"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Vytvoření ovládacího prvku sady nástrojů WPF
 Ovládací prvek sady nástrojů WPF (Windows Presentation Framework) šablona umožňuje vytvořit ovládacích prvků WPF, které jsou automaticky přidány do **sada nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak vytvořit pomocí šablony **sada nástrojů** ovládací prvek, který distribuujete do jiných uživatelů.  

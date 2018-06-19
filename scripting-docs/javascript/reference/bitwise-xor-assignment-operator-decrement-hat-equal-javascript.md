@@ -1,13 +1,13 @@
 ---
-title: "Operátor přiřazení bitové operace XOR (^ =) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Operátor přiřazení bitové operace XOR (^ =) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ^=
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - XOR operator
 - ^= operator
 ms.assetid: a6ded216-27b6-4fc4-a51b-7d10cc6f820c
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -31,6 +31,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789087"
 ---
 # <a name="bitwise-xor-assignment-operator--javascript"></a>Operátor přiřazení bitové operace XOR (^=) (JavaScript)
 Bitový exkluzivní OR provádí proměnné a výraz a přiřadí výsledek proměnné.  

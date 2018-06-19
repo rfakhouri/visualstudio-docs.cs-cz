@@ -1,17 +1,17 @@
 ---
-title: "Rozhraní ladicího programu aktivních skriptů | Microsoft Docs"
-ms.custom: 
+title: Rozhraní ladicího programu aktivních skriptů | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Active Script Debugger interfaces
 - activdbg.h
 ms.assetid: bf4750b1-4e58-442b-ab56-254e640de61d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -20,6 +20,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24792348"
 ---
 # <a name="active-script-debugger-interfaces"></a>Rozhraní ladicího programu aktivních skriptů
 Soubory hlaviček activdbg.h a activdbg100.h poskytují rozhraní, výčty a struktury uvedené v této části. Jsou pro ladění skriptu.  

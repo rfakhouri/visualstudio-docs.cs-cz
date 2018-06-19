@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134731"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Oblasti test 1: Přidání do nebo otevřete od správy zdrojového kódu
 Tento modul plug-in správy zdroje otestovat zahrnuje oblasti umístění řešení nebo projekty ve správě zdrojového kódu a jejich načítání od správy zdrojového kódu.  

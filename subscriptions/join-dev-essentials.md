@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863635"
 ---
 # <a name="how-to-join-visual-studio-dev-essentials"></a>Postup připojení Essentials vývojáře Visual Studio
 

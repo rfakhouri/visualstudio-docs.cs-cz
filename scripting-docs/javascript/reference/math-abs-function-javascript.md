@@ -1,13 +1,13 @@
 ---
-title: "Math.Abs – funkce (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Math.Abs – funkce (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - abs
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - numeric expressions
 - abs method
 ms.assetid: 9af4b5b8-de77-47bb-bb59-abdde371e4c3
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791019"
 ---
 # <a name="mathabs-function-javascript"></a>Math.abs – funkce (JavaScript)
 Vrátí absolutní hodnotu čísla (hodnota bez ohledu na tom, jestli je kladné a záporné). Například absolutní hodnota -5 je stejná jako absolutní hodnota 5.  

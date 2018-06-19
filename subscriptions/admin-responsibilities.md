@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30862995"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Přehled odpovědnosti správce
 Jako správce máte možnost Spravovat odběry pro vaši organizaci.  Role Správce také představuje odpovědnosti zajistit, že předplatná se spravují v souladu s licenčními podmínkami. Tento článek popisuje odpovědnosti, výhody a omezení role správce.

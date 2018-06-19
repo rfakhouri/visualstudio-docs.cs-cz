@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134880"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementace vlastních kategorií a zobrazit položky
 VSPackage může poskytnout kontrolu nad písma a barvy jeho text, který [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) prostřednictvím vlastních kategorií a zobrazení položky.
@@ -47,7 +48,7 @@ VSPackage může poskytnout kontrolu nad písma a barvy jeho text, který [!INCL
 
 ## <a name="to-create-or-identify-categories"></a>K vytvoření nebo určení kategorií
 
--   Vytvořit zvláštní druh položky registru kategorie [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<verze sady Visual Studio >*\FontAndColors\\`<Category>`]
+-   Vytvořit zvláštní druh položky registru kategorie [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<verze sady Visual Studio >* \FontAndColors\\`<Category>`]
 
      *\<Kategorie >* je Nelokalizováno název kategorie.
 
@@ -62,7 +63,7 @@ VSPackage může poskytnout kontrolu nad písma a barvy jeho text, který [!INCL
 
 ## <a name="to-create-or-identify-groups"></a>K vytvoření nebo určení skupiny
 
--   Vytvořit zvláštní druh položky registru kategorie [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<verze sady Visual Studio >*\FontAndColors\\  *\<skupiny >*]
+-   Vytvořit zvláštní druh položky registru kategorie [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<verze sady Visual Studio >* \FontAndColors\\  *\<skupiny >*]
 
      *\<skupiny >* je Nelokalizováno název skupiny.
 

@@ -1,12 +1,13 @@
 ---
-title: "Winrterror – objekt (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Winrterror – objekt (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - WinRTError object [JavaScript]
 - JavaScript, WinRTError object
 ms.assetid: d75ab8e5-e729-4d86-90fd-ea228c30dd66
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791778"
 ---
 # <a name="winrterror-object-javascript"></a>WinRTError – objekt (JavaScript)
 Po návratu HRESULT určující selhání volání prostředí Windows Runtime jazyka JavaScript převede na zvláštní Chyba prostředí Windows Runtime. Je k dispozici pouze v [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] aplikace, pokud je k dispozici, prostředí Windows Runtime v rámci globálního oboru názvů jazyka JavaScript.  

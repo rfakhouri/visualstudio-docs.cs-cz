@@ -1,13 +1,13 @@
 ---
-title: "do... while – příkaz (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: do... while – příkaz (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - do_JavaScriptKeyword
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - terminating loops
 - loop structures, do and do-while
 ms.assetid: 8b7782ba-fbad-48cd-9639-193566da6ae5
-caps.latest.revision: 
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24790497"
 ---
 # <a name="dowhile-statement-javascript"></a>do...while – příkaz (JavaScript)
 Spustí příkaz bloku jednou a pak opakuje provádění smyčky, dokud podmínky výraz vyhodnocen jako `false`.  

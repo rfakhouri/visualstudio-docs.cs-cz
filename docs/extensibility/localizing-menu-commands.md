@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142705"
 ---
 # <a name="localizing-menu-commands"></a>Lokalizace příkazy nabídky
 Můžete zadat text lokalizované nabídky a nástrojů příkazy vytvořením lokalizované .vsct soubory a lokalizované soubory RESX pro vaše VSPackage a potom aktualizuje soubory projektu, tak aby se projevily změny.  

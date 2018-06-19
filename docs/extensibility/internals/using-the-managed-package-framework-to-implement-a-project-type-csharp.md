@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140200"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Použití rozhraní spravované balíček k implementaci typu projektu (C#)
 Spravované balíček Framework (MPF) poskytuje třídy jazyka C# můžete použít nebo dědí implementovat vlastní typy projektů. Sady MPF mnoho rozhraní sady Visual Studio očekává typu projektu zajistit, implementuje, můžete ponechat volné soustředit na implementaci údaje o typu vašeho projektu.  

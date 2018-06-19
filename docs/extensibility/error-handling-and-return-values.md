@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135497"
 ---
 # <a name="error-handling-and-return-values"></a>Zpracování chyb a návratové hodnoty
 VSPackages a COM použít stejnou architekturu pro chyby. `SetErrorInfo` a `GetErrorInfo` funkce jsou součástí Win32 aplikační programovací rozhraní (API). Všechny VSPackage v integrované vývojové prostředí (IDE) můžete volat tyto globální rozhraní API Win32 pro informace o záznamu bohaté chybě při přijímání oznámení o chybě. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Poskytuje spolupráce – sestavení spravovat informace o chybě.  

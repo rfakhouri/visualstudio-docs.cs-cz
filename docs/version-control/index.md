@@ -1,8 +1,8 @@
 ---
 layout: LandingPage
-title: "Správa verzí v sadě Visual Studio | Služby VSTS & TFS"
-description: "Průvodce Začínáme se službou správy verzí v sadě Viual Studio"
-keywords: "Služby VSTS, sady TFS, Správa verzí"
+title: Správa verzí v sadě Visual Studio | Služby VSTS & TFS
+description: Průvodce Začínáme se službou správy verzí v sadě Viual Studio
+keywords: Služby VSTS, sady TFS, Správa verzí
 author: steved0x
 ms.manager: douge
 ms.author: sdanie
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795349"
 ---
 # <a name="version-control-in-visual-studio"></a>Správa verzí v sadě Visual Studio
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140213"
 ---
 # <a name="source-control-plug-ins"></a>Moduly plug-in programu zdroj ovládacího prvku
 Odkaz na zdroj ovládacího prvku Plug-in SDK obsahuje specifikace dokončení rozhraní, která umožňuje integraci s zdrojových systémů řízení [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Určuje syntaxi a sémantiku různé typy funkcí a dat, které se správa zdrojového kódu modul plug-in musí implementovat rozhraní s [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE).  

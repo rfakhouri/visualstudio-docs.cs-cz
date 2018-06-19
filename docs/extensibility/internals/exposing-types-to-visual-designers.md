@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135971"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Vystavení typy vizuální nástroje
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aby bylo možné zobrazit vizuálního návrháře musí mít přístup k definice tříd a typů v době návrhu. Třídy jsou načteny z předdefinovanou sadu sestavení, které obsahují sadu dokončení závislostí v aktuálním projektu (odkazy a jejich závislosti). Může být také nutné pro vizuální nástroje přístup tříd a typů, které jsou definovány v soubory generované vlastních nástrojů.  

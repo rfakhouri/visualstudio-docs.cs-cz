@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148623"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Návod: Zobrazení nápovědy podpis
 Podpis nápovědy (také označované jako *informace o parametrech*) zobrazí podpis metody ve formě popisu tlačítka, když uživatel zadá parametr seznamu úvodní znak (obvykle levé závorky). Jako parametr a parametr oddělovače (obvykle čárkou) jsou zadali, je aktualizována popisek na další parametr tučným písmem. Podpis pomoci můžete definovat v kontextu služby jazyk, nebo můžete definovat typ vlastního souboru název rozšíření a obsahu a zobrazit nápovědu k podpisu pro právě tento typ, nebo můžete zobrazit podpis pomoci pro existující typ obsahu (například "text"). Tento návod ukazuje, jak zobrazit nápovědu k podpisu pro typ obsahu "text".  

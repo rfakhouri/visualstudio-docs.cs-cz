@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135588"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Postupy: Zadejte kontext pro editory
 Pro editor kontext je aktivní jenom v případě, že editoru aktivní nebo měl fokus bezprostředně před fokus byla přesunuta do okno nástroje. Pomocí následujícího postupu můžete zadat kontextu editoru:  

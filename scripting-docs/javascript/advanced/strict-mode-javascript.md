@@ -1,12 +1,13 @@
 ---
-title: "Striktní režim (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Striktní režim (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1038
@@ -25,7 +26,7 @@ helpviewer_keywords:
 - strict mode
 - use strict
 ms.assetid: 0f27022a-f41c-4504-965c-5a2701f342cd
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -34,6 +35,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789261"
 ---
 # <a name="strict-mode-javascript"></a>Striktní režim (JavaScript)
 Striktní režim je způsob, jak zavést lepší kontrolu chyb do vašeho kódu. Při použití striktní režim můžete nelze, například použít implicitně deklarované proměnné, nebo přiřadit hodnotu vlastnosti jen pro čtení nebo přidání vlastnosti do objektu, který není rozšiřitelný. Omezení jsou uvedeny v [omezení kódu v striktní režim](../../javascript/advanced/strict-mode-javascript.md#rest) později v tomto tématu. Další informace o striktní režim najdete v tématu [specifikace jazyka ECMAScript, 5. edice](http://www.ecma-international.org/publications/standards/Ecma-262.htm).  

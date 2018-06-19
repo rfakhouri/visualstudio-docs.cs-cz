@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141939"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Text značky pomocí starší verze rozhraní API
 Text značky je plovoucí rozsah textu ve vyrovnávací paměť, která může mít vliv na zobrazení a chování oblasti textu. Značky zahrnují zarážky, záložky, podtržení vlnovkami a oblasti jen pro čtení. Text značky jsou v podstatě liší od barevné zvýrazňování syntaxe. Barevné zvýrazňování syntaxe je rychlý způsob, jak sdělit syntaxe jazyka, který je přidružené k oblasti textu. Barevné zvýrazňování syntaxe je obecně požadovány při Windows překreslí obrazovky, když je důležité rychlost. Barevné zvýrazňování syntaxe změní barvu textu. Text značek můžete změnit mnoho dalších vlastností text. Text značek můžete "float" a použít zvláštní chování barevné zvýrazňování.  

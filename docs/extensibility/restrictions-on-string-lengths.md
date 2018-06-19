@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136455"
 ---
 # <a name="restrictions-on-string-lengths"></a>Omezení délky řetězce
 Rozhraní API ovládacího prvku Plug-in Zdroj omezení délky řetězce použité v různých funkcí.  

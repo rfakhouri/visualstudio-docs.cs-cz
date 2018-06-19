@@ -1,12 +1,13 @@
 ---
-title: "Obor proměnné (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Obor proměnné (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -17,7 +18,7 @@ helpviewer_keywords:
 - variable scope [JavaScript]
 - variables, scope [JavaScript]
 ms.assetid: a811a9a6-856f-46e9-8be3-f2d22a0c245f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789114"
 ---
 # <a name="variable-scope-javascript"></a>Obor proměnné (JavaScript)
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]má dva obory: globální a místní. Proměnné, která je deklarovaná mimo definici funkce je globální proměnné a jeho hodnota může být přístupné a změn v rámci vašeho programu. Je místní proměnné, která je deklarován v definici funkce. Je vytvořen a zničen pokaždé, když funkce je spuštěna, a není přístupný pomocí kód vně funkce. Jazyk JavaScript nepodporuje oborem bloku (ve kterém složené závorky `{. . .}` definuje nového oboru), s výjimkou ve speciálním případě proměnných s rozsahem bloku.  

@@ -1,18 +1,18 @@
 ---
-title: "Pomocí prostředí Windows Runtime v jazyce JavaScript | Microsoft Docs"
-ms.custom: 
+title: Pomocí prostředí Windows Runtime v jazyce JavaScript | Microsoft Docs
+ms.custom: ''
 ms.date: 02/03/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JavaScript, Windows Runtime
 ms.assetid: 90658546-f746-4e34-a7d1-71cf9ee322a2
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24792033"
 ---
 # <a name="using-the-windows-runtime-in-javascript"></a>Pomocí prostředí Windows Runtime v jazyce JavaScript
 Při psaní aplikace univerzální platformu Windows (UWP), můžete použít prostředí Windows Runtime tříd, metod a vlastností mnohem stejným způsobem, že použijete nativních objektů jazyka JavaScript, metod a vlastností. Toto téma obsahuje úvodní informace a odkazy na témata, která vysvětlují základní koncepce pomocí rozhraní API systému Windows Runtime v jazyce JavaScript, včetně vysvětlení typy prostředí Windows Runtime zastoupení, jak používat asynchronních metod prostředí Windows Runtime a jak poslech a zpracování událostí prostředí Windows Runtime.  

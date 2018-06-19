@@ -1,14 +1,14 @@
 ---
-title: "Cílení na Edge vs. Starší moduly v rozhraních API JsRT | Microsoft Docs"
-ms.custom: 
+title: Cílení na Edge vs. Starší moduly v rozhraních API JsRT | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cbc7df6c-0bc9-48f5-b9ad-b9ed31c42f92
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789270"
 ---
 # <a name="targeting-edge-vs-legacy-engines-in-jsrt-apis"></a>Cílení na Edge vs. Starší moduly v rozhraních API JsRT
 Od verze Windows 10, jednu z těchto změn, které jsme provedli Chakra (JavaScript stroj), který je v souladu s Windows 10 prohlížeče strategie podporu nový modul vykreslování okraj, je podpora dva různé stroje Chakra:  

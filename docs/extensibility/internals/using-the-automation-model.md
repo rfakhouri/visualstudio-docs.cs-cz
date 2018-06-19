@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136533"
 ---
 # <a name="using-the-automation-model"></a>Pomocí modelu automatizace
 Po připojení vaší VSPackage automatizace, můžete získat vlastnosti a metody voláním <xref:EnvDTE.DTEClass.GetObject%2A> metodu <xref:EnvDTE._DTE> objekt, předávání řetězec představující objekt, který chcete načíst.  
