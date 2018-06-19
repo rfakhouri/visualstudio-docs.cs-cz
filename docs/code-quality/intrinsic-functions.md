@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920945"
 ---
 # <a name="intrinsic-functions"></a>Vnitřní funkce
 Výraz v SAL může být výraz C/C++, za předpokladu, že je výraz, který nemá vedlejší účinky – například ++,--a volání funkce v tomto kontextu jsou vybavené vedlejší účinky.  SAL však poskytuje některé funkce jako objekty a některé vyhrazené znaky, které můžete použít ve výrazech SAL. Tyto jsou označovány jako *vnitřní funkce*.

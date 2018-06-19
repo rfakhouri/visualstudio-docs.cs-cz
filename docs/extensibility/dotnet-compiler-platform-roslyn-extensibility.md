@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126933"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>Kompilátoru platformu .NET (&quot;Roslyn&quot;) rozšiřitelnosti
 Zvláště základní kompilátoru platformy .NET ("Roslyn") je otevírání až kompilátory jazyka C# a Visual Basic a povolení nástrojů a vývojářům sdílet v kompilátory bohaté informace mají o programy. Nástrojů pro analýzu kódu zlepšení kvality kódu a kódu generátory podpory v vytváření aplikace. Jak lépe nástroje, musí na další a další znalostí hloubkové kód, který měl pouze kompilátory přístup. Namísto neprůhledného překladatelé (zdrojový kód v a kód objektu out) nabízejí kompilátory Roslyn rozhraní API, které můžete použít pro úlohy související s kódem v nástrojů a aplikací.  

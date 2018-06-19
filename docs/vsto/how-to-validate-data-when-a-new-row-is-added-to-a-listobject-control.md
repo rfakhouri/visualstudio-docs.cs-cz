@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268357"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Postupy: ověření dat při přidání nového řádku do ovládacího prvku ListObject
   Uživatele můžete přidat nové řádky, které <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek, který je vázaný na data. Před potvrzením změny ke zdroji dat můžete ověřit data uživatele.  

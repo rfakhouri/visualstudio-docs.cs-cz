@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131033"
 ---
 # <a name="extending-the-output-window"></a>Rozšíření ve výstupním okně
 **Výstup** okno je sada podokna text pro čtení a zápis. Visual Studio má tyto předdefinované podokna: **sestavení**, v projekty, které komunikují zprávy o sestavení a **Obecné**, ve kterém [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komunikuje zprávy o rozhraní IDE. Projekty získat odkaz na **sestavení** podokně automaticky pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metody rozhraní a Visual Studio nabízí přímý přístup k **Obecné** podokně prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Služba. Kromě předdefinovaných podokna můžete vytvořit a spravovat vlastní vlastního podokna.  

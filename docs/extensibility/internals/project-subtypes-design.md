@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133796"
 ---
 # <a name="project-subtypes-design"></a>Návrh podtypů projektu
 Projekt podtypů umožní VSPackages rozšířit projekty založené na Microsoft Build Engine (MSBuild). Použití agregace, můžete znovu použít hromadné implementované v systému projektu jádro spravované [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ještě stále přizpůsobit chování pro konkrétní scénář.  

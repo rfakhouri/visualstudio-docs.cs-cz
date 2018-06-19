@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136826"
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>Ověření podtypů projektu v době běhu
 VSPackage, který závisí na dílčí vlastních projektů by měla obsahovat logiky hledání, která podtypu tak, aby ho může selhat řádně Pokud dílčí není k dispozici. Následující postup ukazuje, jak ověřit přítomnost zadaným podtypem.  

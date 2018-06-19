@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126780"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Postupy: Správa galerie privátní pomocí nastavení registru
 Pokud jste správce nebo vývojáře rozšířením izolovaném prostředí, můžete řídit přístup na ovládací prvky, šablony a nástroje v Galerii Visual Studia, Galerie ukázek nebo privátní galerie. Chcete-li galerie, k dispozici nebo není k dispozici, vytvořte soubor .pkgdef, který popisuje změny registru klíčů a jejich hodnoty.  

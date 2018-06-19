@@ -11,6 +11,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957535"
 ---
 # <a name="troubleshooting"></a>Poradce při potížích
 

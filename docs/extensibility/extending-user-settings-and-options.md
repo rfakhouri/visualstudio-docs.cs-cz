@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135531"
 ---
 # <a name="extending-user-settings-and-options"></a>Rozšíření uživatelská nastavení a možnosti
 V sadě Visual Studio jsou dva hlavní způsoby předvoleb uživatelů. **Nástroje / možnosti** stránky povolit uživatelům nastavit své vlastní hodnoty pro různé druhy, obecné a jazykové nastavení. Uživatelská nastavení umožňují uživatelům zadání obecných vlastností konfigurace sady Visual Studio. Další informace o možnosti stránky najdete v tématu [možnosti a možnosti stránky](../extensibility/internals/options-and-options-pages.md). Další informace o nastavení uživatele najdete v tématu [podpora pro uživatelských nastavení](../extensibility/internals/support-for-user-settings.md).  

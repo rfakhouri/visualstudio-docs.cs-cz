@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922551"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Postupy: Export textury s přednásobeným alfa
 Kanál obsahu bitové kopie můžete vygenerovat předem vynásobí alfa textury zdrojové bitové kopie. To může být jednodušší použít a větší odolnost než u textury, které neobsahují předem vynásobí alfa.

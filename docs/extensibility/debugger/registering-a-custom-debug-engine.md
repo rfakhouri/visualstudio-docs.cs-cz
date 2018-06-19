@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126285"
 ---
 # <a name="registering-a-custom-debug-engine"></a>Registrace modulu vlastní ladění
 Modul ladění musí registrovat jako objekt pro vytváření tříd souladu s konvencemi prostředí COM a také zaregistrovat pomocí sady Visual Studio prostřednictvím podklíč registru Visual Studio.  

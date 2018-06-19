@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134042"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Nejčastější dotazy: Převádění doplňků na VSPackage rozšíření
 Doplňky jsou nyní zastaralé. Chcete-li nové rozšíření sady Visual Studio, potřebujete vytvořit VSIX rozšíření. Tady najdete odpovědi na některé nejčastější dotazy o tom, jak převést přidat v sadě Visual Studio na VSIX rozšíření.  
@@ -67,7 +68,7 @@ Doplňky jsou nyní zastaralé. Chcete-li nové rozšíření sady Visual Studio
   
 1.  Vytvořte VSPackage, který má příkaz nabídky. (Další informace najdete v tématu [vytvoření rozšíření pomocí příkazu v nabídce](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Otevřete soubor, který obsahuje definici VSPackage. (V projektu jazyka C#, má  *\<název projektu >*Package.cs.)  
+2.  Otevřete soubor, který obsahuje definici VSPackage. (V projektu jazyka C#, má  *\<název projektu >* Package.cs.)  
   
 3.  Přidejte následující `using` příkazů do souboru:  
   
@@ -129,7 +130,7 @@ Doplňky jsou nyní zastaralé. Chcete-li nové rozšíření sady Visual Studio
   
 #### <a name="to-get-the-dte-object-from-a-vspackage"></a>Chcete-li získat objekt DTE z VSPackage  
   
-1.  V projektu VSIX pomocí šablony položky balíček Visual Studio, vyhledejte  *\<název projektu >*Package.cs souboru. Toto je třída, která je odvozena z <xref:Microsoft.VisualStudio.Shell.Package>; ho můžete pracovat s Visual Studio. V takovém případě použijte jeho <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> získat <xref:EnvDTE80.DTE2> objektu.  
+1.  V projektu VSIX pomocí šablony položky balíček Visual Studio, vyhledejte  *\<název projektu >* Package.cs souboru. Toto je třída, která je odvozena z <xref:Microsoft.VisualStudio.Shell.Package>; ho můžete pracovat s Visual Studio. V takovém případě použijte jeho <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> získat <xref:EnvDTE80.DTE2> objektu.  
   
 2.  Přidat tyto `using` příkazy:  
   
@@ -161,7 +162,7 @@ Doplňky jsou nyní zastaralé. Chcete-li nové rozšíření sady Visual Studio
   
 1.  Vytvořit VSPackage, který má příkaz nabídky, jako v [jak spustit vývoj rozšíření VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) části.  
   
-2.  Otevřete soubor, který obsahuje definici VSPackage. (V projektu jazyka C#, má  *\<název projektu >*Package.cs.)  
+2.  Otevřete soubor, který obsahuje definici VSPackage. (V projektu jazyka C#, má  *\<název projektu >* Package.cs.)  
   
 3.  Přidat tyto `using` příkazy:  
   
@@ -209,7 +210,7 @@ Doplňky jsou nyní zastaralé. Chcete-li nové rozšíření sady Visual Studio
   
 1.  Vytvořit VSPackage, který má příkaz nabídky, jako v [jak spustit vývoj rozšíření VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) části.  
   
-2.  Otevřete soubor, který obsahuje definici VSPackage. (V projektu jazyka C#, má  *\<název projektu >*Package.cs.)  
+2.  Otevřete soubor, který obsahuje definici VSPackage. (V projektu jazyka C#, má  *\<název projektu >* Package.cs.)  
   
 3.  Přidat tyto `using` příkazy:  
   

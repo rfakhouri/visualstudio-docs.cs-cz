@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141510"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Dokončení slova ve službě jazyk starší verze
 Dokončení slova vyplní chybějící znaky na částečně typu aplikace word. Pokud existuje jenom jeden možné dokončení, slovo byla dokončena, pokud je zadaný znak dokončení. Částečné aplikace word odpovídá více než jednu možnost, zobrazí se seznam možná dokončení. Znak dokončení může být libovolný znak, který se nepoužívá pro identifikátory.  

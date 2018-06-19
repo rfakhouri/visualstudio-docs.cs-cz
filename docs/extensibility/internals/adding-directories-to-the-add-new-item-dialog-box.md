@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127745"
 ---
 # <a name="adding-directories-to-the-add-new-item-dialog-box"></a>Přidávání do adresáře přidat novou položku – dialogové okno
 Následující příklad kódu ukazuje, jak zaregistrovat novou sadu adresářů pro **přidat novou položku** dialogové okno. Pro adresáře **přidat novou položku** dialogové okno se liší pro každý projekt. Proto jsou registrované adresáře v podklíči projekty v nalezen \<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects >:  

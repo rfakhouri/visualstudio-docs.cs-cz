@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130242"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Postupy: podpora osnovy ve službě starší verze jazyka
 Osnova se používá k rozbalit nebo sbalit různých oblastech textu. Osnova způsobem je použít určeny jinak různé jazyky. Další informace najdete v tématu [Osnova](../../ide/outlining.md).  

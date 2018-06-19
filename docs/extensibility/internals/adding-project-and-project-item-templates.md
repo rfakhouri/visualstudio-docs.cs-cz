@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128743"
 ---
 # <a name="adding-project-and-project-item-templates"></a>Přidání projektů a šablon položek projektu
 Když vytvoříte vlastní typy projektů, je nutné zadat podpora pro přidání nových projektů a položek projektu pomocí standardní [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývoj prostředí (IDE) dialogových oken. Následující témata popisují různé postupy pro přidání projektů a položek projektů.  

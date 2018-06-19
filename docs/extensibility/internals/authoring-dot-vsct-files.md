@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134770"
 ---
 # <a name="authoring-vsct-files"></a>Vytváření obsahu. Vsct soubory
 Tento dokument ukazuje, jak vytvořit soubor .vsct k přidání položky nabídky, panely nástrojů a další prvky uživatelského rozhraní (UI) v sadě Visual Studio integrované vývojové prostředí (IDE). Tyto kroky použijte, když přidáte prvky uživatelského rozhraní pro Visual Studio balíček (VSPackage), který ještě nemá soubor .vsct.  

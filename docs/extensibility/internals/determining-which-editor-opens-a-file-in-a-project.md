@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130006"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Určení Editor otevře soubor v projektu
 Když uživatel otevře soubor v projektu, prostředí projde procesu dotazování, nakonec otevřete editor odpovídající nebo návrháře pro tento soubor. Počáteční postup zaměstnaní prostředí je stejný pro standardní a vlastní editory. Prostředí používá celou řadu kritéria při dotazování které editoru otevřete soubor a VSPackage musí koordinaci s prostředím během tohoto procesu.  

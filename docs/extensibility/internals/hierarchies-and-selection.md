@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128556"
 ---
 # <a name="hierarchies-and-selection"></a>Hierarchie a výběr
 Když upravíte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], měli byste se seznámit jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zpracovává hierarchií, jako jsou projekty a jak ji používá výběr kontext k určení, co se zobrazí uživateli. Tato část popisuje koncepty [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hierarchií a výběr.  

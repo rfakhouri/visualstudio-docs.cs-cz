@@ -1,18 +1,19 @@
 ---
-title: "Zpracování událostí Windows Runtime v jazyce JavaScript | Microsoft Docs"
-ms.custom: 
+title: Zpracování událostí Windows Runtime v jazyce JavaScript | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JavaScript, Windows Runtime events
 - Windows Runtime events [JavaScript]
 ms.assetid: d9436aff-2c30-4846-b8df-eaa3e63fd75c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +22,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791910"
 ---
 # <a name="handling-windows-runtime-events-in-javascript"></a>Zpracování událostí Windows Runtime v jazyce JavaScript
 Prostředí Windows Runtime události nenachází v jazyce JavaScript stejným způsobem jako v C++ nebo rozhraní .NET Framework. Nejsou vlastnosti třídy, ale jsou reprezentovány jako řetězec identifikátory, které se budou předávat na třídu `addEventListener` a `removeEventListener` metody. Například můžete přidat obslužné rutiny události pro [Geolocator.PositionChanged](http://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.geolocation.geolocator.positionchanged.aspx) událostí pomocí předání řetězec "positionchanged" `Geolocator.addEventListener` metoda:  

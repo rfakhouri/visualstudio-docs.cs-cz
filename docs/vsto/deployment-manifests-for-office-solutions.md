@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263487"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifesty nasazení pro řešení Office
   Manifest nasazení je soubor XML, který popisuje nastavení nasazení řešení Office a identifikuje aktuální verze aplikace.  

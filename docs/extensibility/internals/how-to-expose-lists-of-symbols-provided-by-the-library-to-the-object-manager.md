@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135365"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Postupy: vystavení seznam symbolů poskytované knihovny ke správci objektů
 Nástroje procházení symbol **zobrazení tříd**, **Prohlížeč objektů**, **volání prohlížeče** a **Najít výsledky Symbol**, předat žádosti pro nová data se [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] objekt manager. Správce objektů najde odpovídající knihovny a požadavky nové seznamy symbolů. V knihovnách reagovat tím, že poskytuje požadovaná data do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] objekt manager prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> rozhraní. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Objekt manager volá metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> rozhraní k získání dat a použije ho k naplnění nebo aktualizovat zobrazení nástroje procházení symbol.  

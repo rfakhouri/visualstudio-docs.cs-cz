@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126081"
 ---
 # <a name="directory-status-code-enumerator"></a>Enumerátor kód stavu adresáře
 `SccDirStatus` Enumerátor obsahuje pojmenované konstantní hodnoty, které určují stav adresáře v systému správy zdrojů. Tento výčet je používán [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). To byla zavedena ve verzi 1.2 rozhraní API ovládacího prvku Plug-in zdroje.  

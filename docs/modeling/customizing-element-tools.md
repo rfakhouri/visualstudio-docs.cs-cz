@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946920"
 ---
 # <a name="customizing-element-tools"></a>Přizpůsobení nástrojů elementu
 V některých z nich DSL představují jeden koncept jako skupinu elementů. Například pokud vytvoříte model, ve kterém součást má pevnou sadu portů, vždy chcete porty, které mají být vytvořeny ve stejnou dobu jako jejich nadřazené součásti. Proto musíte přizpůsobit nástroj pro vytváření element tak, aby vytvoří skupinu elementů ne o jeden. Jak toho docílit, můžete přizpůsobit, jak je nástroj pro vytváření element inicializován.

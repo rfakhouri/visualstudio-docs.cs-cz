@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130255"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Data dokumentu a zobrazení dokumentu vlastní editorů
 Vlastní editor se skládá ze dvou částí: objekt dat dokumentu a objekt zobrazení dokumentu. Jako názvy naznačují, dokumentu datový objekt představuje textových dat, který se má zobrazit, a objekt zobrazení dokumentu (nebo "Zobrazit") představuje jeden nebo více windows, ve kterém chcete zobrazit data objektu dokumentu.  

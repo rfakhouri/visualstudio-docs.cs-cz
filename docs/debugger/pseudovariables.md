@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926833"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariables v ladicím programu sady Visual Studio
 Pseudovariables jsou podmínky, které slouží k zobrazení určité informace v okně proměnná nebo **QuickWatch** dialogové okno. Můžete zadat pseudovariable stejným způsobem, zadali byste normální proměnné. Pseudovariables není proměnné, ale a nemusí odpovídat názvy proměnných v programu.  

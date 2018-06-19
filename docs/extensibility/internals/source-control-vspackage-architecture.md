@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131884"
 ---
 # <a name="source-control-vspackage-architecture"></a>Architektura VSPackage zdroj ovládacího prvku
 Balíček správy zdrojového kódu se VSPackage, který používá služby, které [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] poskytuje IDE. Balíček správy zdrojového kódu, poskytuje jeho funkce jako zdroj řízení služby. Kromě toho je balíček správy zdrojového kódu rozmanitější alternativní než zdrojového kódu pro integraci správy zdrojového kódu do modulu plug-in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

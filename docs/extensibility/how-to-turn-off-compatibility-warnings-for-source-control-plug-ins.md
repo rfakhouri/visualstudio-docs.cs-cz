@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129547"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Postupy: vypnutí kompatibility upozornění pro moduly plug-in programu zdroj ovládacího prvku
 Uživatel může zobrazit několik kompatibility upozornění, když využívání zdrojového kódu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Upozornění uvedené závisí na možnostech modulu plug-in zdrojového kódu a je možné zakázat jako podrobné sem.  

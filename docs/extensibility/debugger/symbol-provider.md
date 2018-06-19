@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126165"
 ---
 # <a name="symbol-provider"></a>Symbol zprostředkovatele
 Implementace vyhodnocování výrazu musí přístup k symbolické ladicí informace generované kompilátor jazyka, aby bylo možné vyhodnotit proměnné a výrazy. Dělá to pomocí využívání rozhraní symbol zprostředkovatele (SP), označované taky jako obslužná rutina symbol.  

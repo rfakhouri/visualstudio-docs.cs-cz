@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922333"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat
 Ovládací prvky vázané na data můžete vytvořit tak, že přetáhnete položky z **zdroje dat** okna do WPF designer nebo Návrhář formulářů Windows. Jednotlivé položky **zdroje dat** okno má výchozí ovládací prvek, který se vytvoří, když ji přetáhněte do návrháře. Můžete ale vytvoření různých ovládacího prvku.

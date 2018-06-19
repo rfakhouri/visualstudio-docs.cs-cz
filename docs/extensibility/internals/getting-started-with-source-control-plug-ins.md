@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128910"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>Začínáme s moduly plug-in programu zdroj ovládacího prvku
 K vytvoření modulu Plugin pro ovládací prvek zdroje, musíte vytvořit knihovnu DLL, která implementuje funkce definované v rozhraní API modulu Plugin zdroj ovládacího prvku a potom registrace knihovny DLL s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aby byla k dispozici pro použití ve správě zdrojového kódu verzí.  

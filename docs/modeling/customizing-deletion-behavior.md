@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952612"
 ---
 # <a name="customizing-deletion-behavior"></a>Přizpůsobení chování odstranění
 Odstraňování element obvykle způsobí, že související prvky také odstranit. Všechny vztahy k němu připojená a všechny podřízené elementy jsou odstraněny. Toto chování je s názvem *odstranit šíření*. Odstranění šíření, například uspořádat, zda jsou odstraněny další související prvky můžete přizpůsobit. Psaní kódu programu, se může být odstranění šíření závisí na stavu modelu. Může také způsobit jiné změny, ke kterým došlo v reakci na odstranění.

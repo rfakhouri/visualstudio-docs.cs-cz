@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131262"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Výběr a měny v prostředí IDE
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrované vývojové prostředí (IDE) udržuje informace o uživatelů aktuálně vybrané objekty pomocí výběr *kontextu*. S kontextem výběr VSPackages lze použít při měna sledování dvěma způsoby:  

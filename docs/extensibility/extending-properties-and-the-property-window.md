@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126068"
 ---
 # <a name="extending-properties-and-the-property-window"></a>Rozšíření vlastností a v okně Vlastnosti
 **Vlastnosti** okna lze zobrazit a upravit vlastnosti doby návrhu a události vybraných objektů.  

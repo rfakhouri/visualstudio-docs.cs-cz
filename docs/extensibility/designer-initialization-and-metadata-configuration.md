@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132744"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Návrhář inicializace a konfigurace metadat
 Manipulace s metadat a filtrování atributů spojených s designer nebo součástí návrháře poskytuje mechanismus pro aplikace, můžete definovat, které nástroje se používají konkrétní designeru pro zpracování různých <xref:System.Type> objekty (například datové struktury třídy nebo grafické entity), pokud není k dispozici návrháře a konfiguraci prostředí Visual Studio IDE pro podporu návrháře (pro instanci, která **sada nástrojů** kategorie nebo karta je k dispozici).  

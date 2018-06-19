@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133369"
 ---
 # <a name="custom-colorable-items"></a>Vlastní Colorable položky
 Seznam typů můžete přepsat pro barevné, jako jsou klíčová slova a komentáře, implementovat vlastní colorable položky v rámci služby jazyk.  

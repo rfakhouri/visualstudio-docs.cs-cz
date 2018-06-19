@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447840"
 ---
 # <a name="zoom-control-utilization-view"></a>Ovládací prvek Lupa (zobrazení využití)
 Ovládací prvek Lupa umožňuje přiblížit na graf využití procesoru Chcete-li se zaměřit na oblasti zvláštní zájem. Tento ovládací prvek zvětší středu zobrazení. Předtím, než se můžete přiblížit, proto by měl center oblast zájmu.  

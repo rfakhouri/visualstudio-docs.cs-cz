@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262228"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Zobrazení stromu volání – data instrumentace
 Hodnoty pro funkci ve stromové struktuře volání označuje datum a čas pro instance funkce, které byly volá funkci nadřazené ve stromové struktuře volání. Procentní hodnoty se počítá srovnáním hodnotu instance funkce celkovou dobu uplynulá včetně všechny funkce v profilaci spustit.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139348"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Soubor SCC
 Při řešení sady Visual Studio nebo projektu je umístěn ve správě zdrojového kódu pomocí rozhraní IDE, rozhraní IDE obdrží dvě důležité informace od správy zdrojového kódu ve formě řetězce modulu plug-in. Tyto řetězce "AuxPath" a "ProjName", jsou neprůhledné IDE, ale používají se modul plug-in provede najít řešení nebo projektu ve správě verzí. Prostředí IDE obvykle obdrží tyto řetězce první voláním [SccGetProjPath](../extensibility/sccgetprojpath-function.md), a je pak uloží do souboru řešení nebo produktu project pro budoucí volání [SccOpenProject](../extensibility/sccopenproject-function.md). Když vložen soubory řešení a projektu, řetězce "AuxPath" a "ProjName" se neaktualizují automaticky, když uživatel větví, větve, nebo zkopíruje soubory řešení a projektu, které jsou ve správě verzí. Abyste měli jistotu, že soubory řešení a projektu ukazují jejich správné umístění ve správě verzí, uživatelé musí ručně aktualizovat řetězce. Vzhledem k tomu, že řetězce mají být neprůhledné, nemusí být vždy zrušte způsob jejich aktualizace.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065686"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Výběr strategie aktualizace ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] můžete zadat automatické aktualizace aplikace. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace pravidelně čte soubor manifestu nasazení, zda jsou k dispozici aktualizace pro aplikaci. Pokud je k dispozici nová verze aplikace, je stažena a spuštěna. Z důvodu efektivity budou staženy pouze soubory, které byly změněny.  

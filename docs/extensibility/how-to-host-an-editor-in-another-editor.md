@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136065"
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>Postupy: hostování editoru jiného editoru
 V sadě Visual Studio můžete hostovat jeden editor uvnitř jiné zadáním okno hostování jako nadřazeného okna. Chcete-li tak učinit, nastavit parametry <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> a <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> na rámec okna podřízené.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132424"
 ---
 # <a name="project-property-user-interface"></a>Projekt vlastnost uživatelské rozhraní
 Podtyp projektu můžete použít položky v projektu **stránky vlastností** dialogové okno jsou poskytnuté základní projekt skrýt nebo nastavit ovládací prvky určené jen pro čtení a celé stránky dodávaný nebo přidat stránek specifických pro dílčí projekt na **Stránky vlastností** dialogové okno.

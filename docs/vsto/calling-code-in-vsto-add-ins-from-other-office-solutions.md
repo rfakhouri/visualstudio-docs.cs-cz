@@ -25,6 +25,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265325"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Volání kódu v doplňcích VSTO z jiných řešení pro systém Office
   Objekt můžou zpřístupnit v doplňku VSTO do jiných řešení, včetně jiných řešení pro Microsoft Office. To je užitečné, pokud vaše doplňku VSTO poskytuje službu, která chcete povolit jiné řešení použít. Například pokud máte doplňku VSTO pro aplikaci Microsoft Office Excel, který provádí výpočtů finančních dat z webové služby, jiná řešení můžete provést tyto výpočty volání do doplněk aplikace Excel VSTO za běhu.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129803"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Postupy: otevření editory pro otevřené dokumenty
 Předtím, než na projekt se otevře okno dokument, projekt nejprve musí určit, zda soubor je již otevřete v okně dokumentu pro jiný editor. Soubor může být buď otevřete v editoru specifické pro projekt nebo jeden z standardní editory zaregistrován v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129219"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>Které přispívají k informacím přidat novou položku – dialogové okno
 Podtyp projektu může poskytnout úplný nový adresář položek pro **přidat novou položku** dialogové okno tak, že zaregistrujete **přidat položku** šablony v části `Projects` podklíč registru.  

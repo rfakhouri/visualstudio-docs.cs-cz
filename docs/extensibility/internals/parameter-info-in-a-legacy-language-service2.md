@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134604"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informace o parametrech ve službě jazyk starší verze
 Informace o parametrech IntelliSense je popisek, který se zobrazí podpis metody, když uživatel zadá seznam parametrů počáteční znak (obvykle otevřené závorky) pro seznam parametrů metody. Protože každý parametr zadán, a je zadán parametr oddělovače (obvykle čárkou), popisek je aktualizována na další parametr tučným písmem.  

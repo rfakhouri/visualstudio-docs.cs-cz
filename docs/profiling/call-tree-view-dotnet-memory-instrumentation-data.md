@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263595"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Zobrazení stromu volání – data instrumentace paměti .NET
 Zobrazení stromu volání .NET paměti přidělení profilování dat, která nebyla shromážděna pomocí metody instrumentace zobrazuje cesty provádění funkce, které byly provázán v PROFILOVANÉHO aplikaci. Kořen stromu je vstupním bodem do aplikací nebo součástí. Každý uzel funkce uvádí všechny funkce, které ji volat a využívání paměti rozhraním .NET a dat časování pro funkci.  

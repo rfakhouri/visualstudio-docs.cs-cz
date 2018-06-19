@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132639"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Postupy: podporují skrytého textu ve službě jazyk starší verze
 Můžete vytvořit skrytý text oblasti kromě outline oblasti. Oblasti skrytý text může být řízenou klienta nebo editor řízené a slouží k úplně skrýt oblast textu. Editor zobrazí skryté oblasti jako vodorovné čáry. Příkladem je zobrazení pouze skriptu v editoru HTML.  

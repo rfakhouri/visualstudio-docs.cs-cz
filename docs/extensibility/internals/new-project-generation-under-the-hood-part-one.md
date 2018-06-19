@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133757"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nové generace projektu: Pod pokličkou, první část
 Někdy představit o tom, jak vytvořit vlastní typ projektu? Zajímat, co se ve skutečnosti stane, když vytvoříte nový projekt? Umožňuje provést funkce Náhled pod pokličkou a zjistěte, co se skutečně děje.  

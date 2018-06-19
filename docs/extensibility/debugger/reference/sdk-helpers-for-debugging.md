@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135919"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Pomocníci SDK pro ladění
 Tyto funkce a deklarace jsou globální podpůrné funkce pro implementaci motorů ladění, vyhodnocovače výrazů a poskytovatelé symbol v jazyce C++.  
@@ -420,7 +421,7 @@ HRESULT EnumMetricSections(
 |*[výjimka]*|Název výjimku: například **_com_error** nebo **řízení-Break**. Tyto názvy se také používají k identifikaci určité výjimky pro uživatele.|  
   
 ## <a name="requirements"></a>Požadavky  
- Tyto soubory jsou umístěny v [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] adresáře instalace sady SDK (ve výchozím nastavení, *[jednotka]*\Program Files\Microsoft Visual Studio 2010 SDK\\).  
+ Tyto soubory jsou umístěny v [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] adresáře instalace sady SDK (ve výchozím nastavení, *[jednotka]* \Program Files\Microsoft Visual Studio 2010 SDK\\).  
   
  Záhlaví: includes\dbgmetric.h  
   

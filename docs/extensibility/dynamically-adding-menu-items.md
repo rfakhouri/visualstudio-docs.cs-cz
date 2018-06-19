@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133260"
 ---
 # <a name="dynamically-adding-menu-items"></a>Dynamicky přidání položek nabídky
 Položky nabídky můžete přidat v době běhu zadáním `DynamicItemStart` příkaz příznak na definici tlačítko zástupný symbol v sadě Visual Studio souboru příkaz – Tabulka (.vsct), pak definování (v kódu) počet nabídky položky k zobrazení a zpracování příkazy. Při načítání VSPackage zástupný text nahrazen položky dynamické nabídky.  

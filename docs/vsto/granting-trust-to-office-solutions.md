@@ -23,6 +23,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447242"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Vztah důvěryhodnosti grant řešení pro systém Office
   Vztah důvěryhodnosti grant Office řešení znamená úprava zásady zabezpečení o každém cílovém počítači tak, aby důvěřoval sestavení řešení, manifest aplikace, manifest nasazení a dokumentu. Vztah důvěryhodnosti lze udělit řešení Office vy nebo koncový uživatel.  

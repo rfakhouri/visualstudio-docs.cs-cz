@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140131"
 ---
 # <a name="managing-vspackages"></a>Správa VSPackages
 Ve většině případů nemusíte si dělat starosti o správě VSPackages, protože šablon projektů a položek registraci a automaticky načíst balíček. V některých případech můžete však zjistěte chvilku další, abyste mohli spravovat váš balíček.  

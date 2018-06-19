@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134962"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Test oblasti 3: Rezervovat / vrátit zpět rezervaci
 Tato oblast modulu plug-in testovací zdrojového kódu zahrnuje úpravy a navrácení položky z úložiště verzí prostřednictvím **rezervovat** a **vrátit zpět rezervaci** příkazy.  

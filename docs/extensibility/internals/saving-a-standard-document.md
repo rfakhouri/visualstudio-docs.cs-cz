@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132786"
 ---
 # <a name="saving-a-standard-document"></a>Ukládání standardní dokumentu
 Prostředí zajišťuje uložit, uložit jako a uložte všechny příkazy. Když uživatel vybere **Uložit**, **uložit jako**, nebo **Uložit vše** z **soubor** nabídky nebo ukončí řešení, což vede k  **Uložte všechny**, se spustí následující proces.  

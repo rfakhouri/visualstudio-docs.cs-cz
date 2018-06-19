@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920544"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Postupy: ukládání dat pomocí transakce
 Ukládání dat v transakci pomocí <xref:System.Transactions> oboru názvů. Použití <xref:System.Transactions.TransactionScope> objektu účast v transakci, která je pro vás automaticky spravovány.
@@ -39,7 +40,7 @@ Vrácení transakce, způsobí výjimku před voláním <xref:System.Transaction
 
 1.  Na **projektu** nabídce vyberte možnost **přidat odkaz na**.
 
-2.  Na **.NET** karta (**systému SQL Server** kartu pro projekty na SQL serveru), vyberte **System.Transactions –**a potom vyberte **OK**.
+2.  Na **.NET** karta (**systému SQL Server** kartu pro projekty na SQL serveru), vyberte **System.Transactions –** a potom vyberte **OK**.
 
      Odkaz na System.Transactions.dll se přidá do projektu.
 

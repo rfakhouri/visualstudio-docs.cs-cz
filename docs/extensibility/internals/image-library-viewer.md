@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133783"
 ---
 # <a name="image-library-viewer"></a>Image Viewer knihovny
 Nástroj Visual Studio Image Viewer knihovny můžete načíst a hledání manifesty bitové kopie, které uživateli umožňují s nimi manipulovat stejným způsobem, který by Visual Studio. Uživatel může změnit pozadí, velikosti, DPI, vysoký kontrast a další nastavení. Nástroj také zobrazí informace o načtení pro každý manifest bitové kopie a informace o zdroji každé bitové kopie v manifestu bitové kopie. Tento nástroj je užitečný pro:  

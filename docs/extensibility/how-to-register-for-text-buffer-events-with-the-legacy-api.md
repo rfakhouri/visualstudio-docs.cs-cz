@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127230"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Postupy: registrace pro textové vyrovnávací paměti události s rozhraním API pro starší verze
 Pokud se připojujete textová vyrovnávací paměť pomocí starší verze rozhraní API, byste měli zaregistrovat pro textové vyrovnávací paměti události, jak je znázorněno v následujícím postupu.  

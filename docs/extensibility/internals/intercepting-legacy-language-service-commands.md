@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129115"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Brání starší verze jazyka služby příkazy
 S [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], může mít jazyk služba zachycení příkazy, které by jinak zpracovat textového zobrazení. To je užitečné pro konkrétní jazyk chování, které nespravuje textového zobrazení. Přidáním více filtrů příkaz do textového zobrazení od vaší služby jazyk je možné zachytit těchto příkazů.  

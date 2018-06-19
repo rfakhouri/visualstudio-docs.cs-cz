@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132192"
 ---
 # <a name="project-configuration-for-output"></a>Konfigurace projektu pro výstup
 Všechny konfigurace dokáže zajistit podporu sadu sestavení procesy, které vytvoří výstupní položek, jako jsou soubory spustitelný soubor nebo prostředků. Tyto položky výstupní jsou soukromá pro uživatele a mohou být umístěny ve skupinách, které odkazují souvisejících typů výstupu, jako je například spustitelné soubory (.exe, .dll, .lib) a zdrojových souborů (.idl, souborů .h).  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132330"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Vytváření instancí editoru základní pomocí starší verze rozhraní API
 Editor je zodpovědná za úpravy funkce jako je například vložení, odstranění, kopírování a vložení textu. Tato funkce je kombinací s těmi, která poskytuje služby jazyk, jako je barevné zvýrazňování textu, odsazení a dokončování IntelliSense.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128874"
 ---
 # <a name="custom-tools"></a>Vlastní nástroje
 *Vlastní nástroje* vám umožní přidružit nástroj položku v projektu a spusťte tento nástroj vždy, když se soubor uložit. Některé vlastních nástrojů, někdy označovány jako *jedním souborem generátory*, se často používají k implementaci překladatele, které generují kód z dat a naopak. Můžete například vytvořit jeden soubor generátory [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] zdrojový kód soubory .settings a resx. Vygenerovaný zdrojový kód poskytuje silného typu přístup k datům v souborech .settings a resx. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] typy projektů podporu vlastních nástrojů; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] typy projektů nepodporují. Vlastní typy projektů může také podporovat vlastních nástrojů.  

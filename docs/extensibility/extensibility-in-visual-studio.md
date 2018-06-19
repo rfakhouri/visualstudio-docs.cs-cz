@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126487"
 ---
 # <a name="extensibility-in-visual-studio"></a>Rozšíření v sadě Visual Studio
 Visual Studio poskytuje mnoho možností rozšíření. Můžete vytvořit vlastní sady SDK, použít Windows, Windows Phone a sadami SDK služby Azure (které jsou nainstalované jako součást sady Visual Studio) a Visual Studio, sám rozšířit.  

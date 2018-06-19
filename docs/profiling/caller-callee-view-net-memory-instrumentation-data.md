@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265498"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Zobrazení volající/volaný – instrumentace paměti .NET Data
 Zobrazení volající/volaný paměti .NET profilace data, která nebyla shromážděna pomocí metody instrumentace zobrazí přidělení a dat časování pro vybrané funkce a funkce nadřazených a podřízených jeho vybrané funkce. Zobrazení volající/volaný obsahuje tři mřížky.  

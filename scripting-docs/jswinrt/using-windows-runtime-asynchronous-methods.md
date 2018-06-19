@@ -1,18 +1,18 @@
 ---
-title: "Použití asynchronních metod Windows Runtime | Microsoft Docs"
-ms.custom: 
+title: Použití asynchronních metod Windows Runtime | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JavaScript, Windows Runtime asynchronous methods
 ms.assetid: 70756833-44f7-4383-827f-2ac781558082
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24792012"
 ---
 # <a name="using-windows-runtime-asynchronous-methods"></a>Použití asynchronních metod Windows Runtime
 Mnoho prostředí Windows Runtime metody, hlavně metody, které může trvat dlouhou dobu pro dokončení, jsou asynchronní. Tyto metody vrací obecně asynchronní akce nebo operace (například `Windows.Foundation.IAsyncAction`, `Windows.Foundation.IAsyncOperation`, `Windows.Foundation.IAsyncActionWithProgress`, nebo `Windows.Foundation.IAsyncOperationWithProgress`). Tyto metody jsou reprezentována v jazyce JavaScript pomocí [CommonJS/lišící/A](http://go.microsoft.com/fwlink/p/?LinkId=244434) vzor. To znamená, že budou vracet Promise objekt, který má [pak](https://msdn.microsoft.com/en-us/library/windows/apps/br229728.aspx) funkce, pro které je nutné zadat `completed` funkce, která zpracovává výsledek, pokud je operace úspěšná. Pokud nechcete, aby k poskytování obslužná rutina, měli byste použít [provádí](https://msdn.microsoft.com/en-us/library/windows/apps/hh701079.aspx) funkce místo `then` funkce.  

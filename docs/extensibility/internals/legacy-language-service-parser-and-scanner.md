@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134576"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analyzátor jazyka starší verze služby a skener
 Analyzátor jsou srdcem služba jazyka. Třídy jazyka spravované Framework balíčku (MPF) vyžadují analyzátoru jazyka pro výběr informací o kódu se zobrazí. Analyzátor odděluje text do lexikální tokenů a pak identifikuje těchto tokenů podle typu a funkce.  

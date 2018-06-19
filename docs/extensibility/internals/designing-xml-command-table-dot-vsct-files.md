@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133356"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Návrh tabulky příkaz XML (. Soubory Vsct)
 Soubor XML příkaz tabulky (.vsct) popisuje rozložení a vzhled příkaz položky pro VSPackage. Příkaz položky zahrnují tlačítka, pole se seznamem, nabídek, panely nástrojů a skupiny příkaz položek. Toto téma popisuje XML příkaz tabulky souborů, jejich vlivu příkaz položek a nabídek a postup jejich vytvoření.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126298"
 ---
 # <a name="registering-the-program"></a>Registrace do programu
 Po modul ladění získal port, reprezentována [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) rozhraní, je dalším krokem při povolování program, který chcete ladit a zaregistrujte ho pomocí portu. Po registraci programu je k dispozici pro ladění pomocí jedné z těchto způsobů:  

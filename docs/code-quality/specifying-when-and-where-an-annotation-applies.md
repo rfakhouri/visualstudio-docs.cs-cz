@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920612"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Určení, kdy a kde se má poznámka použít
 Po podmíněného poznámky může požadovat dalších poznámek určíte, že do analyzátoru.  Například pokud má proměnná, která může být synchronní nebo asynchronní funkce, funkce chová následovně: V případě, že synchronní vždy nakonec operace proběhne úspěšně, ale v případě, že asynchronní ho nahlásí chybu, pokud nelze okamžitě úspěšné. Když je tato funkce volána synchronně, kontrolou hodnoty výsledek poskytuje žádnou hodnotu pro analyzátor kódu, protože nebude mít vrátil.  Když je tato funkce volána asynchronně a výsledek funkce není zaškrtnuto, mohlo dojít k závažné chybě. Tento příklad znázorňuje situaci, ve kterém můžete použít `_When_` poznámky – popsané dále v tomto článku – Povolení kontroly.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132101"
 ---
 # <a name="context-parameters"></a>Kontextové parametry
 V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE), můžete přidat průvodce, aby **nový projekt**, **přidat novou položku**, nebo **přidat projekt dílčí** dialogová okna. Průvodci přidané jsou k dispozici na **soubor** nabídky nebo kliknutím pravým tlačítkem na projekt v **Průzkumníku řešení**. Prostředí IDE předá kontextových parametrů k provádění průvodce. Kontextové parametry definovat stav projektu, pokud rozhraní IDE volá průvodce.  

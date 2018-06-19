@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128163"
 ---
 # <a name="determining-command-status-by-using-interop-assemblies"></a>Určení stavu příkazu pomocí spolupráce – sestavení
 VSPackage musí udržovat přehled o stavu příkazů, které může zpracovat. Prostředí nelze určit, když se změní na příkaz zpracovávaných v rámci vaší VSPackage povolený nebo zakázaný. Je zodpovědností vaší VSPackage k informování o stavy příkazového prostředí, například stav Obecné příkazy, jako **Vyjmout**, **kopie**, a **vložení**.  

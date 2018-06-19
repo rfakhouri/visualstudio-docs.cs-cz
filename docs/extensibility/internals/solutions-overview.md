@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131646"
 ---
 # <a name="solutions-overview"></a>Přehled řešení
 Řešení je skupina jednoho nebo více projektů, které vzájemně spolupracují a vytvoření aplikace. Informace o projektu a stav týkající se řešení jsou uloženy ve dvou souborech jiné řešení. Soubor řešení (.sln) je založený na textu a můžete umístit ve správě zdrojového kódu a sdílet mezi uživateli. Je binární soubor řešení uživatele možnost (.suo). V důsledku toho .suo soubor nemůže být umístěn v zdrojového kódu a obsahuje informace o uživateli.  
