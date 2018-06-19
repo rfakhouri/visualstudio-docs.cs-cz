@@ -10,6 +10,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957489"
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>Včetně balíček NuGet do projektu
 

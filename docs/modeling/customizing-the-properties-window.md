@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953989"
 ---
 # <a name="customizing-the-properties-window"></a>Přizpůsobení okna Vlastnosti
 Vzhled a chování okna vlastností můžete přizpůsobit v jazyce specifické pro doménu (DSL) v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. V definici vaší DSL definovat vlastnosti domény na každou třídu domény. Ve výchozím nastavení když vyberete instance třídy v diagramu nebo v Průzkumníku modelu je každý vlastnost domain uvedené v okně Vlastnosti. To vám umožní zobrazit a upravit hodnoty vlastnosti domény, i v případě, že nebyly je namapovaný na polí obrazce v diagramu.

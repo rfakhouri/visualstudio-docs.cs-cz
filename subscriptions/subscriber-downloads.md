@@ -14,6 +14,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065154"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Pomocí odběratele stáhne v sadě Visual Studio předplatných
 Jako součást výhody pro předplatitele máte přístup k široké škále stažení softwaru.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951788"
 ---
 # <a name="visual-studio-commands"></a>Příkazy sady Visual Studio
 Příkazy sady Visual Studio umožňují vyvolat příkaz z **příkaz** okně **Immediate** okno, nebo **najít/příkaz** pole. V každém případě větší než přihlašovací (`>`) slouží k označení, že příkaz spíše než operace hledání nebo ladění je provést.

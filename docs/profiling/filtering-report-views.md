@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262620"
 ---
 # <a name="filter-report-views"></a>Filtrování zobrazení sestav
 Profilace datových souborů profilování data, která se zobrazí v zobrazení výkon sestav a exportují do souborů sestav omezit, můžete použít filtry. Můžete omezit sestavy pro data mezi hodnot časového razítka a můžete omezit data, která mají konkrétní procesy a vlákna. Můžete uložit filtrů do souboru a pak vytvořit filtr na jiný soubor dat profilování importováním filtr.  

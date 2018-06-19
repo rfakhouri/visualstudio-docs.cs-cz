@@ -20,6 +20,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33103486"
 ---
 # <a name="build-page-project-designer-c"></a>Stránka Sestavení, návrhář projektu (C#)
 Použití **sestavení** stránky **Návrhář projektu** zadat vlastnosti konfigurace sestavení projektu. Tato stránka se vztahuje na [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] pouze projekty.

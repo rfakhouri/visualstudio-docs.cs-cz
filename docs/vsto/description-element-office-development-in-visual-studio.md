@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265112"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;Popis&gt; – element (vývoj pro Office v sadě Visual Studio)
   `description` Element `vstov4` obor názvů ukládá popis řešení Office, který se zobrazí v dialogovém okně Doplňky COM z aplikace Microsoft Office.  

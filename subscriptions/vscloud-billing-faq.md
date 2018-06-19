@@ -14,6 +14,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957129"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio Cloudová předplatná fakturace – nejčastější dotazy
 Zajistěte, abyste [porovnat výhody odběru cloudu a ceny](https://www.visualstudio.com/vs/pricing/) pochopit výhody sady každé sady Visual Studio předplatné s porovnání mezi cloudu a standardní sady Visual Studio odběry, podrobnosti na výhody pro předplatitele a další.

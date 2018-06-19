@@ -1,12 +1,13 @@
 ---
-title: "Použití polí (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Použití polí (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - arrays [JavaScript], objects
 ms.assetid: 785c5acd-b8b3-4152-af9a-dd42ecdd75ba
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788787"
 ---
 # <a name="using-arrays-javascript"></a>Použití polí (JavaScript)
 Maticových v [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] jsou *zhuštěných*. To znamená pokud máte pole s tři prvky, které jsou číslem 0, 1, 2, můžete vytvořit element 50 bez obav o elementy 3 až 49. Pokud má proměnná automatické délka pole (najdete v části [vnitřní objekty](../../javascript/intrinsic-objects-javascript.md) vysvětlení automatické monitorování délka pole), Délka proměnná se nastaví na 51, nikoli na 4. Můžete vytvořit pole, ve kterých nejsou žádné mezery v číslování elementů, ale nejste-li to požadováno.  

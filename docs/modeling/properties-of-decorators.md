@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954209"
 ---
 # <a name="properties-of-decorators"></a>Vlastnosti dekorátorů
 Dekoratéry jsou ikony, text nebo dvojitou šipkou rozbalit nebo sbalit, které se mohou objevit na tvary nebo konektory v diagramu. Vlastnosti pro tři druhy dekoratéra naleznete v následujících tabulkách. Některé vlastnosti se zobrazí pouze na tvar dekoratéry nebo pouze na dekoratéry konektor.

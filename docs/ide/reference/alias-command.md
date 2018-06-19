@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33703393"
 ---
 # <a name="alias-command"></a>Alias – příkaz
 Vytvoří nový alias pro dokončení příkazu, úplný příkaz i jeho argumenty nebo jiný alias.

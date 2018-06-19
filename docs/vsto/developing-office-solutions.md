@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268185"
 ---
 # <a name="develop-office-solutions"></a>Vývoj řešení pro systém Office
   Po návrhu projektu pomocí doplňku Office developer tools v sadě Visual Studio a nastavit soubory projektu, můžete začít soustředit na implementaci kódu a vlastní uživatelské rozhraní (UI).  

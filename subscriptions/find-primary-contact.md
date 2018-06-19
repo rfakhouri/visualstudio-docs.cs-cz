@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30862793"
 ---
 # <a name="locating-the-primary-contact-associated-with-visual-studio-subscriptions"></a>Vyhledání primárního kontaktu přidružené předplatné sady Visual Studio
 

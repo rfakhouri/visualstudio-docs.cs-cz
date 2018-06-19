@@ -1,11 +1,11 @@
 ---
-title: "Debugpropertyinfo – struktura | Microsoft Docs"
-ms.custom: 
+title: Debugpropertyinfo – struktura | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - DebugPropertyInfo
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - DebugPropertyInfo structure
 ms.assetid: 3246efbc-c212-4024-8f07-6414c2f85e75
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24791754"
 ---
 # <a name="debugpropertyinfo-structure"></a>DebugPropertyInfo – struktura
 Popisuje objekt hierarchické povahy, který má název, typ a hodnotu. Slouží k popisu vlastnosti ladění lokální proměnné, parametry, sledovat proměnné a výrazy a zaregistruje.  

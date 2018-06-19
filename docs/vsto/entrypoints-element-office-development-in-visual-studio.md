@@ -20,6 +20,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448386"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;entryPoints&gt; – element (vývoj pro Office v sadě Visual Studio)
   `entryPoints` Element `vstav3` obor názvů obsahuje všechny `entryPoint` elementy související s řešení Office.  
