@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863622"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Visual Studio odběry nabízí pro partnery v síti Microsoft Partner (MPN)
 Partneři, kdo vám competency nebo který nákupu Pack akce v MPN se mohou pomocí sady Visual Studio odběry. Tyto odběry licenci na uživatele a jsou platné v případě přiřazení ke konkrétní uživatelé, kteří pracují pro partnerskou společnost s názvem pouze. 

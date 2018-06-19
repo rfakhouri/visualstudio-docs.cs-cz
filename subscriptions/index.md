@@ -1,5 +1,5 @@
 ---
-title: "Předplatná sady Visual Studio"
+title: Předplatná sady Visual Studio
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795315"
 ---
 # <a name="visual-studio-subscriptions"></a>Předplatná sady Visual Studio
 Visual Studio odběrů je komplexní sadu prostředků můžete vytvářet, nasazovat a spravovat kvalitních aplikací na upřednostňované platformy a zařízení, včetně systému Windows, iOS, Android a Linux.  Výhody odběry zahrnovat přístup do nástroje pro vývojáře, cloudových služeb a softwaru, cvičení a podporu pro vývoj a testování potřebám.

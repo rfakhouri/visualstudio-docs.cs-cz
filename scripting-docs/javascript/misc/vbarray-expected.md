@@ -1,13 +1,13 @@
 ---
-title: "Byl očekáván objekt VBArray | Microsoft Docs"
-ms.custom: 
+title: Byl očekáván objekt VBArray | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5013
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: f2998d7d-13a4-4bbe-b872-3ff3316551e4
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24788793"
 ---
 # <a name="vbarray-expected"></a>Byl očekáván objekt VBArray
 Můžete zadat objekt, který nebyl safeArray jazyka Visual Basic, když byl očekáván jeden.  

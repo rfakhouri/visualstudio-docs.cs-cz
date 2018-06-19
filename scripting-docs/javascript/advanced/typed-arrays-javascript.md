@@ -1,19 +1,20 @@
 ---
-title: "Zadané pole (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Zadané pole (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: fa82c562-0ebf-4559-aecc-166e59f7fb64
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24789138"
 ---
 # <a name="typed-arrays-javascript"></a>Typovaná pole (JavaScript)
 Typovaná pole můžete použít pro zpracování binární data ze zdrojů, například síťové protokoly, binární formáty souborů a raw grafiky vyrovnávací paměti. Typovaná pole můžete použít také ke správě binární data v paměti s dobře známé bajtů rozložení.  
