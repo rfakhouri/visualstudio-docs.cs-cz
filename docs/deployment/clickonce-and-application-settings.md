@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561698"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce a nastavení aplikace
 Nastavení aplikace pro Windows Forms umožňuje snadno vytvářet, ukládat a udržovat vlastní aplikaci a uživatelské předvolby v klientovi. Následující dokument popisuje, jak fungují soubory nastavení aplikace v aplikaci ClickOnce a jak ClickOnce přenese nastavení při upgradu na další verzi.  

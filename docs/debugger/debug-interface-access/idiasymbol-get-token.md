@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471204"
 ---
 # <a name="idiasymbolgettoken"></a>IDiaSymbol::get_token
 Načte metadata tokenu spravované funkce nebo proměnná.  

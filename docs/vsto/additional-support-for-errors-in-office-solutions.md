@@ -64,6 +64,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267829"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Další podpora pro chyby v řešeních pro systém Office
   Můžete použít následující prostředky vám pomůžou najít odpovědi na problémy, na které narazíte, jako je vytváření řešení pro systém Office v sadě Visual Studio.  

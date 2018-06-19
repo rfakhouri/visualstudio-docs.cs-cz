@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479595"
 ---
 # <a name="using-saved-intellitrace-data"></a>Pomocí uložených dat technologie IntelliTrace
 Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejděte na určité místo spuštění vaší aplikace. Tento soubor může obsahovat události výkonu, výjimky, vláken, testovací kroky, moduly a jiné informace systému, aby záznamy IntelliTrace při vaše aplikace běží.  

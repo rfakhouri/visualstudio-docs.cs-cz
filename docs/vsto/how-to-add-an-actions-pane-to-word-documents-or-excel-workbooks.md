@@ -23,6 +23,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548554"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel
   Chcete-li přidat podokna akcí do dokumentu aplikace Microsoft Office Word nebo sešitu aplikace Microsoft Excel, nejdřív vytvořte uživatelského ovládacího prvku Windows Forms. Pak přidat uživatelský ovládací prvek na <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> vlastnost `ThisDocument.ActionsPane` pole (Word) nebo `ThisWorkbook.ActionsPane` pole (aplikace Excel) ve vašem projektu.  

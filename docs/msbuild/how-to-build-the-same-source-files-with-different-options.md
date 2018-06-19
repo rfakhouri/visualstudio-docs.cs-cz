@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575605"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Postupy: Sestavení stejných zdrojových souborů s různými možnostmi
 Při sestavování projektů zkompilujete často stejné komponenty s možnostmi jiné sestavení. Můžete například vytvořit sestavení ladicí verze informací o symbolu nebo sestavení pro vydání s bez informací o symbolu, ale s povolenými optimalizacemi. Nebo můžete vytvořit projekt ke spuštění na konkrétní platformu, jako je například x86 nebo [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. V těchto případech většina možností sestavení zůstat stejné. změnily se jenom pár možností k řízení je konfigurace sestavení. S [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], použijte vlastnosti a podmínky k vytvoření konfigurace jiné sestavení.  

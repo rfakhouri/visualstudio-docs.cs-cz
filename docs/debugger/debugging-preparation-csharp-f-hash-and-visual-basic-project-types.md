@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479213"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Příprava ladění: typy projektů jazyka C#, F# a Visual Basic
 Témata v této části popisují postup ladění jazyka C#, F # a [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu typy vytvořené [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] šablony projektu.  

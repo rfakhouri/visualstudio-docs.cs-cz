@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473313"
 ---
 # <a name="debugger-settings-and-preparation"></a>Nastavení ladicího programu a příprava
 Tato část popisuje nastavení související s ladicí program vlastností a přípravy k ladění programu s potřeba [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ladicí program. Pokud vytvoříte váš program v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pomocí šablony projektu, tato nastavení jsou správně nastavené pro vás v konfiguraci ladění.  

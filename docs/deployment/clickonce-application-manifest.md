@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565078"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce – manifest aplikace 
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace je soubor XML, který popisuje aplikaci, která se nasazuje pomocí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571946"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Postupy: Určení prvního cíle k sestavení
 Soubor projektu může obsahovat jednu nebo více `Target` prvků, které definují, jak sestavení projektu. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Modul sestavení první ho projektu najde a všechny závislosti, pokud soubor projektu neobsahuje `DefaultTargets` atribut `InitialTargets` pomocí příkazového řádku je zadán atribut nebo cíl **/ Cíl** přepínače.  

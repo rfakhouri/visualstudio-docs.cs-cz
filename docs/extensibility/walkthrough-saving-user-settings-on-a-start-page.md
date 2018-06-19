@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146088"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Návod: Ukládání uživatelských nastavení na stránce Start
 Můžete zachovat uživatelská nastavení pro úvodní stránku. Podle tohoto návodu, můžete vytvořit ovládací prvek, který uloží nastavení registru, když uživatel klikne na tlačítko a potom načte nastavení pokaždé, když se načte stránce Start. Vzhledem k tomu, že šablona projektu – úvodní stránka obsahuje přizpůsobitelný uživatelského ovládacího prvku a výchozí spuštění stránky XAML volá tuto kontrolu, nemáte upravit stránce Start sám sebe.  

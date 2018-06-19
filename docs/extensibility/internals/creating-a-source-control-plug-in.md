@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127853"
 ---
 # <a name="creating-a-source-control-plug-in"></a>Vytvoření ovládacího prvku zdroj modulu Plug-in
 Visual Studio SDK poskytuje prostředky, které vám umožní přidat možnost Zdroj ovládacího prvku [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Umožňuje vám použít jakékoli knihovnu DLL modulu plug-in, který je v souladu s rozhraním API Plug-in Zdroj ovládacího prvku uvedených v této dokumentaci.  

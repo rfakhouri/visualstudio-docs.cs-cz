@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566131"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Postupy: Opětovné podepisování manifestů aplikace a nasazení
 Když provedete změny vlastnosti nasazení v manifest aplikace pro aplikace Windows Forms, aplikací Windows Presentation Foundation (xbap) nebo řešení pro systém Office, musíte znovu podepsat obě aplikace a manifesty nasazení s certifikát. Tento proces zajišťuje, že nejsou nainstalovány zmanipulovanou soubory do počítačů koncových uživatelů.  

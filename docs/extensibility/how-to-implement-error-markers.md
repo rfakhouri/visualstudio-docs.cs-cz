@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127849"
 ---
 # <a name="how-to-implement-error-markers"></a>Postupy: implementace chyba značky
 Chyba značky (nebo červené podtržení vlnovkou) jsou nejobtížnější přizpůsobení textového editoru k implementaci. Ale výhody, které uvedou uživatelům vaší VSPackage můžete daleko převáží nad náklady na umožníte jim. Chyba značky trochu označte text, který vaše analyzátoru jazyka považuje za nesprávné vlnovkou nebo vlnovkami red řádek. Tento ukazatel pomůže vizuálně zobrazením nesprávný kód programátory v jazyce.  

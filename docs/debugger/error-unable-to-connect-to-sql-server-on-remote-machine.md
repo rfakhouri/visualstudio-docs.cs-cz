@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482149"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Chyba: Nepodařilo se připojit k serveru SQL Server na vzdáleném počítači.
 Nelze se připojit k systému SQL Server na vzdáleném počítači *název*. Přístup byl odepřen. Ověřte, že jste nainstalovali vzdáleného ladicího programu na vzdáleném počítači. Pokud vzdálený počítač není připojen k doméně, nebo pokud Visual Studio je spuštěn jako místní účet, vzdálený počítač musí mít účet s stejné uživatelské jméno a heslo místního účtu.  

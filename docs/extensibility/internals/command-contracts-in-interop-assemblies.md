@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127371"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Příkaz kontrakty spolupráce – sestavení
 Základní kontrakt pro zpracování pomocí příkazů <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní je, že prostředí volá <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metoda určit, zda příkaz se podporuje, a pokud ji podporuje, a určit její stav a text. Potom volání prostředí <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metoda provedení příkazu.  

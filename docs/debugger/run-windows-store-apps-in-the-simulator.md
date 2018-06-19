@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480658"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Spuštění aplikace UWP v simulátoru
 Visual Studio simulátor pro aplikace UWP je aplikace pracovní plochy, která simuluje aplikace UPW. Obvykle budete chtít ladění na místním počítači, připojeného zařízení nebo vzdáleném počítači. V některých scénářích, můžete však použít simulátoru Visual Studio k emulaci různých fyzických velikost a rozlišení obrazovky. Můžete také simulace událostí otočení a běžné touch a simulovat vlastnosti síťového připojení.

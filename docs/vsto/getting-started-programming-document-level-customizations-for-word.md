@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448851"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Začínáme s programováním přizpůsobení na úrovni dokumentu pro Word
   Pokud jste začali vytváření úpravy na úrovni dokumentů pro Microsoft Office Word pomocí sady Visual Studio, zde je, co potřebujete vědět.  

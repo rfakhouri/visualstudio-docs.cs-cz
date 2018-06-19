@@ -22,6 +22,7 @@ ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/15/2018
+ms.locfileid: "34178005"
 ---
 # <a name="security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process"></a>Upozornění zabezpečení: Připojení k procesu vlastníkem nedůvěryhodné uživatele může být nebezpečný. Pokud tyto informace nezdá nebo si nejste jistí, nepřipojujte tohoto procesu
 Toto dialogové okno upozornění se zobrazí, když se připojit k procesu, který obsahuje částečně důvěryhodného kódu nebo vlastní nedůvěryhodné uživatele okamžitě předtím, než dojde k připojení. Nedůvěryhodné proces, který obsahuje škodlivý kód se může poškodit počítač to ladění. Pokud máte důvod k nechtějí proces, a měli byste kliknout na **zrušit** aby se zabránilo ladění.  

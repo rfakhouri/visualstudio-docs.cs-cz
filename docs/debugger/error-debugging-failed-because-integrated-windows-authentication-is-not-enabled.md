@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477115"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Chyba: Ladění se nezdařilo, protože integrované ověřování systému Windows není povoleno.
 Ověření uživatele, který požadovaný ladění zabránily chyby ověřování. Tato situace může nastat, když zkusíte krok do webové aplikace nebo webové služby XML. Jeden příčinu této chyby je, že integrované ověřování systému Windows není povoleno. Ho Pokud chcete zapnout, postupujte podle kroků v "K povolení integrované ověřování systému Windows."  

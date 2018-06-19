@@ -25,6 +25,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263758"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Přehled rozšíření spravovaného kódu a Správa přístupových práv
   Aplikace Microsoft Office Word a Microsoft Office Excel poskytují Správa informačních práv (IRM), funkce, která vám mohou pomoci zabránit neoprávněným osobám v zobrazení nebo změna citlivé informace. Podrobnosti o tom, jak funguje Information Rights Management najdete v tématu nápovědy v konkrétní aplikaci Office.  

@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458070"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Háky přidělení a přidělení běhové paměti jazyka C
 Velmi důležité omezení na funkce háku přidělení je, že se musí explicitně Ignorovat `_CRT_BLOCK` bloky (přidělení paměti interně provedené funkce běhové knihovny jazyka C) Pokud udělají jakékoli volání funkce běhové knihovny jazyka C, které přidělují interní paměť. `_CRT_BLOCK` Bloky můžete ignorovat zahrnutím kódu, například následující na začátku vaší přidělení napojit funkce:  

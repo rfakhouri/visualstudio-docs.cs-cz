@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134332"
 ---
 # <a name="custom-parameters"></a>Vlastní parametry
 Vlastní parametry řízení činnosti průvodce po spuštění průvodce. Soubor související .vsz poskytuje pole parametrů definovaný uživatelem, které jsou zabalené integrované vývojové prostředí (IDE) a předá průvodce jako pole řetězců při spuštění průvodce. Průvodce potom analyzuje pole řetězců a informace používá k řízení skutečné činnosti průvodce. Tímto způsobem můžete průvodce přizpůsobit funkce v závislosti na obsahu souboru.  

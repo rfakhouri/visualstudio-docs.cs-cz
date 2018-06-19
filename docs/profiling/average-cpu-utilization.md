@@ -19,6 +19,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262308"
 ---
 # <a name="average-cpu-utilization"></a>Průměrné využití procesoru
 Zobrazí průměrné využití PROFILOVANÉHO proces logická jádra systému po dobu trvání procesu. Graf nezobrazuje, které konkrétní základní je aktivní v daném okamžiku. Například pokud každé dvě jádra jsou spuštěné v kapacitu 50 % za určité časové období, pak toto zobrazení zobrazí jednoho logického jádra využívání.  

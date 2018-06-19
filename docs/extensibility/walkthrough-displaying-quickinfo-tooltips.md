@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146761"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Návod: Zobrazení QuickInfo popisy tlačítek
 QuickInfo je funkce technologie IntelliSense, která zobrazuje metoda podpisy a popisy, když se uživatel přesune ukazatel myši název metody. Funkce založené na jazyce jako třeba QuickInfo můžete implementovat definováním identifikátory, pro které byste chtěli poskytnout QuickInfo popisy, a pak vytvořit popisek ve kterém chcete zobrazit obsah. Můžete definovat QuickInfo v kontextu služby jazyk, nebo můžete definovat typ vlastního souboru název rozšíření a obsahu a zobrazit QuickInfo právě tohoto typu nebo můžete zobrazit QuickInfo pro existující typ obsahu (například "text"). Tento návod ukazuje, jak má být zobrazen pro typ obsahu "text" QuickInfo.  

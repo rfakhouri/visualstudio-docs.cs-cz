@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127294"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Doporučené postupy pro zabezpečení v VSPackages
 K instalaci [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] v počítači, je třeba používat v souvislosti s přihlašovacími údaji správce. Základní jednotka zabezpečení a nasazení [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aplikace je [VSPackages](../../extensibility/internals/vspackages.md). VSPackage musí být registrovaný pomocí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], což také vyžaduje přihlašovací údaje pro správu.  

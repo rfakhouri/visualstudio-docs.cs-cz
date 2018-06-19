@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267773"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Spolupráce na vývoji řešení pro systém Office
   Více vývojářů může pracovat na Microsoft Office project stejným způsobem, který budou spolupracovat na jiných projektů sady Visual Studio. Visual Studio správně vyhledá instalaci sady Microsoft Office na každém počítači, i v případě Office je nainstalována v různých umístěních. Existují však některé důležité informace znát.  

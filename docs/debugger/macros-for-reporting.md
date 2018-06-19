@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476907"
 ---
 # <a name="macros-for-reporting"></a>Makra pro vytváření sestav
 Můžete použít **_rptn –**, a **_rptfn –** maker, definovaných v CRTDBG. H nahradit použití `printf` příkazy pro ladění. Tyto makra automaticky zmizí ve vaší verzi sestavení při **_DEBUG –** není definována, takže není nutné do nich uzavřete **#ifdef**s.  

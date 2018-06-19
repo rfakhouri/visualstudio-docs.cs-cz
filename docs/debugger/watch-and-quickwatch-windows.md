@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478760"
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Nastavovat sledování na proměnné pomocí sledování a QuickWatch Windows v sadě Visual Studio
 Při ladění, můžete použít **sledovat** a **QuickWatch** windows si chcete přehrát proměnné a výrazy.  Rozdíl je, že **sledovat** okno může zobrazit několika proměnných, při **QuickWatch** okno zobrazí jednu proměnnou najednou. 

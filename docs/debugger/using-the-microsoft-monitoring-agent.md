@@ -15,6 +15,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454580"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Použití služby Microsoft Monitoring Agent
 Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a služby SharePoint 2010 nebo 2013 aplikací pro chyby, problémy s výkonem nebo jiné problémy pomocí **agenta Microsoft Monitoring Agent**. Diagnostické události od agenta můžete uložit do souboru protokolu (.iTrace) IntelliTrace. V protokolu pak můžete otevřít ve Visual Studio Enterprise (ale ne edice Professional nebo komunity) pro ladění problémů s všechny diagnostické nástroje sady Visual Studio. Může taky shromažďovat diagnostická data IntelliTrace a metoda data spuštěním agenta v **trasování** režimu. Microsoft Monitoring Agent lze integrovat s [Application Insights](/azure/application-insights/) a [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx). Microsoft Monitoring Agent změnit prostředí cílového systému, když je nainstalovaná.  

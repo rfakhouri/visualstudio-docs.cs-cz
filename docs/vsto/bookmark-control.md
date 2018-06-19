@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264009"
 ---
 # <a name="bookmark-control"></a>Bookmark – ovládací prvek
   <xref:Microsoft.Office.Tools.Word.Bookmark> Řízení je záložku, na kterou má jedinečný název, zpřístupní události a mohou být vázány na data. Záložka slouží jako zástupný znak označit položku nebo místo v dokumentu aplikace Microsoft Office Word. <xref:Microsoft.Office.Tools.Word.Bookmark> Ovládací prvek je kombinací <xref:Microsoft.Office.Interop.Word.Bookmark> objektu a <xref:Microsoft.Office.Interop.Word.Range> objektu.

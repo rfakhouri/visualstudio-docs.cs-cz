@@ -18,6 +18,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33705083"
 ---
 # <a name="set-current-process"></a>Nastavit aktuální proces
 Nastaví zadaný proces jako aktivní proces v ladicím programu.

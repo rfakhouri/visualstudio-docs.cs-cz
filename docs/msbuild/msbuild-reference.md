@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570473"
 ---
 # <a name="msbuild-reference"></a>Referenční dokumentace nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je systém sestavení pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Následující odkazy vás přesměrují na témata, které obsahují [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] referenční informace.  

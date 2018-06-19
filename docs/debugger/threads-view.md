@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476894"
 ---
 # <a name="threads-view"></a>Zobrazení vláken
 Zobrazení vláken je plochý seznam všechna vlákna spojené s windows ve vašem systému. Vlákno ID a název modulu pro každé vlákno se zobrazí. Procesy nejsou zahrnuty, ale budete moci snadno najít proces, který vlastní vybrané vlákno.  

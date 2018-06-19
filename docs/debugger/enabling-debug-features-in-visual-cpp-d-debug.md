@@ -31,6 +31,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472575"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>Povolení funkcí ladění v jazyce Visual C++ (/D_DEBUG)
 V [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], ladění funkcí, jako je kontrolní výrazy jsou povolené, když zkompilujete váš program symbolem **_DEBUG –** definované. Můžete definovat **_DEBUG –** v jednom ze dvou způsobů:  

@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477034"
 ---
 # <a name="supported-code-changes-c"></a>Podporované změny kódu (C++)
 Upravit a pokračovat jazyka Visual C++ zpracovává většinu typů změn kódu. Některé změny však nelze použít při spuštění programu. Pokud chcete tyto změny použít, musíte zastavit provádění a vytvořit novou verzi kód.  

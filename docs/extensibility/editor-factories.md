@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128245"
 ---
 # <a name="editor-factories"></a>Objekty Factory editoru
 Objekt factory editoru vytvoří editor objektů a umístí je do rámec okna, označované jako fyzické zobrazení. Vytvoří dokument data a objekty zobrazení dokumentu, které jsou potřebné k vytvoření editory a návrháři. Objekt factory editoru potřebné pro vytvoření základní editoru Visual Studio a všechny standardní editor. Vlastní editor lze volitelně také můžete vytvořit pomocí objekt factory editoru.  

@@ -31,6 +31,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065075"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Vytváření aplikací ClickOnce k implementaci dalšími osobami
 Ne všechny vývojáře, kteří jsou vytvoření nasazení ClickOnce v plánu nasadit aplikace samotné. Řada z nich právě balíček své aplikace s použitím technologie ClickOnce a pak předá soubory na zákazníka, jako je například velké korporace. Zákazník bude ten, který je zodpovědný za hostování aplikace ve své síti. Toto téma popisuje některé potíže spočívající v takovýchto nasazeních ve verzích rozhraní .NET Framework verze 3.5. Popisuje pak zadaný v rozhraní .NET Framework 3.5 pomocí nové funkce "použití manifest pro vztah důvěryhodnosti" nové řešení. Nakonec dojde s doporučenou strategie pro vytvoření nasazení ClickOnce pro zákazníky, kteří stále používají starší verze rozhraní .NET Framework.  

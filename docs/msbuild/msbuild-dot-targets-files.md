@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571305"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild – soubory .Targets
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zahrnuje několik .TARGETS – soubory, které obsahují položky, vlastnosti, cílů a úloh pro běžné scénáře. Tyto soubory se automaticky importují do většinu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] soubory ke zjednodušení správy a čitelnost projektu.  

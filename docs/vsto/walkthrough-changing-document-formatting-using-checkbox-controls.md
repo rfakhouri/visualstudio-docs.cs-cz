@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263861"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Návod: Změna formátování dokumentů s použitím ovládacích prvků CheckBox
   Tento návod ukazuje, jak používat ovládací prvky Windows Forms v přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Word Změna formátování textu.  

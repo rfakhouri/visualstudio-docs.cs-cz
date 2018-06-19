@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136323"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>Příprava rozšíření pro nasazení Instalační služby systému Windows
 K instalaci balíčku VSIX nelze použít balíček Instalační služby systému Windows (MSI). Však můžete rozbalit obsah balíčku VSIX pro nasazení MSI. Tento dokument ukazuje, jak připravit na projekt, jejíž výchozí výstup je balíčku VSIX pro zahrnutí do projektu instalace.  

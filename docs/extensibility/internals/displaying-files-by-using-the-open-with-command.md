@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128615"
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>Zobrazení souborů pomocí příkazu Open
 Projekt můžete požádat IDE pro zobrazení **otevřít v** dialogové okno. Tento požadavek vyzývá uživatele k otevření souboru, který má výběr standardní editory. Následující kroky popisují tohoto procesu.  

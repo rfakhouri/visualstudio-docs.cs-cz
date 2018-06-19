@@ -25,6 +25,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262030"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Postupy: cíle vícejazyčné uživatelské rozhraní Office
   Multilingual User Interface (MUI) je funkce Microsoft Office, která dává možnost ke změně jazyka uživatelského rozhraní (UI) koncového uživatele. Koncový uživatel práce s anglickou uživatelského rozhraní můžete například změnit jazyk uživatelského rozhraní na španělština.  

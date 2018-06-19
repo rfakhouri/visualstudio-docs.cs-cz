@@ -32,6 +32,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574217"
 ---
 # <a name="lib-task"></a>LIB – úloha
 Zabalí nástroj Microsoft 32bitový Správce knihovny lib.exe. Správce knihovny vytváří a spravuje knihovnu běžných objekt souboru formátu () objekt soubory COFF. Správce knihovny můžete také vytvořit export souborů a knihoven importovat do definice odkaz exportovat. Další informace najdete v tématu [LIB odkaz](/cpp/build/reference/lib-reference) a [systémem LIB](/cpp/build/reference/running-lib).  

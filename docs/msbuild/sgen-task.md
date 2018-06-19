@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570012"
 ---
 # <a name="sgen-task"></a>SGen – úloha
 Vytvoří sestavení serializace XML pro typy v zadaném sestavení. Tato úloha zabalí nástroje Generátor serializátor XML (Sgen.exe). Další informace najdete v tématu [nástroje Generátor serializátor XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  

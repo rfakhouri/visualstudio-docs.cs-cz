@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572801"
 ---
 # <a name="item-functions"></a>Funkce položek
 Od verze nástroje MSBuild 4.0, kód v úlohy a cíle můžete volat funkce položek se získat informace o položkách v projektu. Tyto funkce zjednodušit získávání Distinct() položky a je rychlejší než ve smyčce přes položky.  

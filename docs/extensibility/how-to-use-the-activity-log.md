@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127095"
 ---
 # <a name="how-to-use-the-activity-log"></a>Postupy: použití protokolu aktivit
 VSPackages může zapisovat zprávy do protokolu činnosti. Tato funkce je užitečná zejména při ladění VSPackages v prostředích prodejní.  
@@ -48,7 +49,7 @@ VSPackages může zapisovat zprávy do protokolu činnosti. Tato funkce je užit
   
 1.  Visual Studio s spustit [/Log](../ide/reference/log-devenv-exe.md) přepínač příkazového řádku k zápisu ActivityLog.xml na disk během relace.
 
-2.  Po zavření Visual Studio, najít protokol aktivit v podsložce pro Visual Studio data: *data aplikací %*\Microsoft\VisualStudio\15.0\ActivityLog.xml.  
+2.  Po zavření Visual Studio, najít protokol aktivit v podsložce pro Visual Studio data: *data aplikací %* \Microsoft\VisualStudio\15.0\ActivityLog.xml.  
   
 3.  V každém textovém editoru otevřete protokol aktivit. Zde je typické položka:  
   

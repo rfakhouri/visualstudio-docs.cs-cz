@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568666"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Přidání místní nabídky v okně nástroje
 Tento názorný postup převádí místní nabídky v okně nástroje. Místní nabídka je nabídka, která se zobrazí, když uživatel klepne pravým tlačítkem na tlačítko, textového pole nebo pozadí okna. Příkazy v místní nabídce se chovají stejně jako příkazy na jinou nabídku nebo panely nástrojů. Pro podporu místní nabídky, zadejte ho do souboru .vsct a zobrazit ji v reakci na klikněte pravým tlačítkem myši.  

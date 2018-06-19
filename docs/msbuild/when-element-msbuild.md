@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577786"
 ---
 # <a name="when-element-msbuild"></a>When – prvek (MSBuild)
 Určuje možné blok kódu pro `Choose` elementu, který chcete vybrat.  

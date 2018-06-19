@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466055"
 ---
 # <a name="dia2dumpcpp-source-file"></a>Dia2dump.cpp – zdrojový soubor
 Následující dia2dump.cpp – zdrojový kód zobrazí obsah souboru pdb. Tento zdrojový kód je používán [dia2dump – ukázka](../../debugger/debug-interface-access/dia2dump-sample.md).  

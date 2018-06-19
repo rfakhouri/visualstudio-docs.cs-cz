@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142874"
 ---
 # <a name="wizard-vsz-file"></a>Průvodce (. Soubor vsz)
 Integrované vývojové prostředí (IDE) používá soubory ke spuštění průvodce. Tyto soubory .vsz obsahují informace, které rozhraní IDE používá k určení, které průvodce k volání a jaké informace, které mají být předána do průvodce.  

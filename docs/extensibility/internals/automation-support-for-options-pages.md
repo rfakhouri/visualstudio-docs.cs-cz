@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128569"
 ---
 # <a name="automation-support-for-options-pages"></a>Podpora automatizace pro možnosti stránky
 VSPackages můžete zadat vlastní **možnosti** dialogových oknech na **nástroje** nabídky (stránek možnosti nástrojů) v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a je zpřístupnit automatizace modelu.  

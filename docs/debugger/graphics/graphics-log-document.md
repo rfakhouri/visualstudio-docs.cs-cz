@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477872"
 ---
 # <a name="graphics-log-document"></a>Dokument grafických protokolů
 Dokument grafických protokolů je záznam grafiky události, které došlo k chybě aplikace byla spuštěna v rámci relace diagnostiky grafiky. Po zapsání můžete zkontrolovat protokol ve Visual Studio Graphics Analyzer k diagnostikování problémů vykreslování a výkonu.  

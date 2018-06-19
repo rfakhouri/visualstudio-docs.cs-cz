@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474545"
 ---
 # <a name="edit-and-continue-visual-c"></a>Upravit a pokračovat (Visual C++)
 Můžete upravit a pokračovat v projektech Visual C++. V tématu [podporované změny kódu (C++)](../debugger/supported-code-changes-cpp.md) informace o omezeních upravit a pokračovat.

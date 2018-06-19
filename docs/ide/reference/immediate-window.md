@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704522"
 ---
 # <a name="immediate-window"></a>Příkazové podokno
 **Immediate** okno slouží k ladění a vyhodnocení výrazů, spusťte příkazy, vytisknout hodnoty proměnných a tak dále. Umožňuje zadejte výrazy pro vyhodnocení nebo provedený jazyk vývoj během ladění. K zobrazení **Immediate** okno, otevřete projekt, a pak vyberte **Windows** z **ladění** nabídku a vyberte **Immediate**, nebo stiskněte kombinaci kláves CTRL + ALT + I.

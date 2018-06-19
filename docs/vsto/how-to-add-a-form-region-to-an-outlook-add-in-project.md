@@ -25,6 +25,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34549035"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Postupy: přidání oblasti formuláře do projektu doplněk aplikace Outlook
   Vytvoření rozšíření pomocí formuláře aplikace Microsoft Office Outlook standardní nebo vlastní oblasti formuláře **nové oblasti formuláře aplikace Outlook** průvodce. Můžete vytvořit nové oblasti formuláře a návrh uživatelského rozhraní v sadě Visual Studio, nebo můžete importovat oblasti formuláře, který byl navržen v aplikaci Outlook a přidejte kód jazyka Visual Basic nebo C#.  

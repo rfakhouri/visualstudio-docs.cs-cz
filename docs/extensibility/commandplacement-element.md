@@ -19,6 +19,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267972"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement Element
 CommandPlacement element umožňuje tlačítka, skupiny a nabídky mají být zahrnuty do více než jednu skupinu nebo nabídky. Pomocí elementu CommandPlacement nemáte zcela znovu definovat tyto položky k úpravě vzhledu uživatelské rozhraní.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578819"
 ---
 # <a name="msbuild-advanced-concepts"></a>Rozšířené koncepty nástroje MSBuild
 Dokumenty v této části popisují, jak zlepšit sestavení, které spustíte pomocí nástroje MSBuild využít pokročilé techniky.  

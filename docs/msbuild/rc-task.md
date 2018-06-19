@@ -29,6 +29,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574565"
 ---
 # <a name="rc-task"></a>RC – úloha
 Zabalí nástroj Microsoft kompilátor prostředků Windows rc.exe. **RC** úloh zkompiluje prostředky, například kurzory, ikony, rastrové obrázky, dialogová okna a písem a do souboru prostředků (.res). Další informace najdete v tématu "Kompilátor prostředků" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  

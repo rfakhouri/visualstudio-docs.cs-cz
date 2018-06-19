@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263451"
 ---
 # <a name="data-in-office-solutions"></a>Data v řešeních pro systém Office
   Mnoho řešení pro systém Office umožňuje uživatelům načíst nebo upravovat data. Když vytvoříte řešení pro systém Office pomocí sady Visual Studio, existují několika různými způsoby, kterými můžete pracovat s daty.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548422"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Obecné referenční informace (vývoj pro Office v sadě Visual Studio)
   Tato část obsahuje technické podrobnosti o projektů Microsoft Office v sadě Visual Studio.  

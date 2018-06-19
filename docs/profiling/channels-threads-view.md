@@ -19,6 +19,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269125"
 ---
 # <a name="channels-threads-view"></a>Kanály (zobrazení vláken)
 Vizualizér souběžnosti znázorňuje čtyři typy kanály: vláken kanály, disku kanály, značky kanálů a kanály GPU.  

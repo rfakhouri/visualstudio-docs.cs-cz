@@ -15,6 +15,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269187"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Práce s prvky v Návrháři XAML
 Můžete přidat prvky – ovládací prvky, rozložení a obrazců – do vaší aplikace v jazyce XAML, v kódu, nebo pomocí návrháře XAML. Toto téma popisuje, jak pracovat s prvky v Návrháři XAML v sadě Visual Studio nebo Blend for Visual Studio.

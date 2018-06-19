@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578260"
 ---
 # <a name="how-to-build-incrementally"></a>Postupy: Přírůstkové sestavování
 Když vytvoříte nový projekt, je důležité, který dříve vytvořené součásti, které jsou stále aktuální nejsou znovu sestavit. Pokud jsou všechny cíle pokaždé, když, bude každé sestavení trvat dlouhou dobu pro dokončení. Chcete-li povolit přírůstkové sestavení (sestavení, ve kterém jsou zastaralé, tyto cíle, které nebyly byla vytvořená před nebo které cílí jenom se znovu sestavit), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) můžete porovnat časová razítka vstupní soubory s časová razítka výstupních souborů a zjistěte, jestli se mají přeskočit, sestavení nebo částečně znovu sestavit cíl. Musí však být mapování 1: 1 mezi vstupy a výstupy. Transformace můžete povolit cíle k identifikaci této přímé mapování. Další informace o transformací najdete v tématu [transformuje](../msbuild/msbuild-transforms.md).  

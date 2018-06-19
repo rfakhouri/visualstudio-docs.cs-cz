@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576440"
 ---
 # <a name="getting-started-with-performance-tools"></a>Začínáme s nástroje pro sledování výkonu
 Tato část obsahuje přehled o konceptech a úlohy, které se používají při shromažďování, zobrazit a analyzovat výkon kódu pomocí nástroje pro sledování výkonu sady Visual Studio.  

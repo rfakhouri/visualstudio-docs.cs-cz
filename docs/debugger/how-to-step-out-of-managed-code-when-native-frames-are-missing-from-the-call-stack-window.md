@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472939"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Postupy: Vystoupení ze spravovaného kódu, pokud v okně Zásobník volání chybějí nativní rámce.
 Pokud má váš kód nativní rámce, které jsou v neviditelná **zásobníkem volání** okně krokování s mimo spravovaný kód může vést k neočekávaným výsledkům. Jako alternativní řešení, můžete použít zarážku místo **Krokovat s Vystoupením**.  

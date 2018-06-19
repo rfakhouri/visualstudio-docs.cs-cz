@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263962"
 ---
 # <a name="customize-performance-tools-report-views"></a>Přizpůsobení zobrazení sestav nástrojů výkonu
 Tato část obsahuje informace o přizpůsobení sestav, které se generují s [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích pro profilaci.  

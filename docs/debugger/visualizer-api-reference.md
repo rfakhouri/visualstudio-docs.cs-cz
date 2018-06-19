@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476949"
 ---
 # <a name="visualizer-api-reference"></a>Referenční dokumentace rozhraní API vizualizéru
 Rozhraní API Vizualizéru se zadat pro uživatele, kteří chtějí zápis vizualizéru v ladicím programu sady Visual Studio. Vizualizéru je malý aplikace, která rozšiřuje funkce ladicího programu sady Visual Studio uživatelské rozhraní. Vizualizéru můžete zobrazit (a volitelně upravit) objekt dat určitého typu, pro který je určený vizualizér.  

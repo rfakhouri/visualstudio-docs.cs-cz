@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472926"
 ---
 # <a name="debugging-preparation-console-projects"></a>Příprava ladění: projekty konzoly
 Příprava na ladění projektu pro konzoly je podobná Příprava na ladění projektu pro Windows, se některé další aspekty. Další informace najdete v tématu [aplikacích Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), a [Příprava ladění: Windows Forms aplikace (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Z důvodu podobnosti všechny aplikace konzoly Toto téma obsahuje následující typy projektů:  

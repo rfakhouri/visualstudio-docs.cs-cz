@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557980"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Postupy: Určení souborů podrobného protokolování pro nasazení ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] udržuje aktivity soubory protokolu pro všechna nasazení. Tyto protokoly dokumentu podrobnosti vztahující se k instalaci, inicializaci, aktualizaci a odinstalaci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení. Pro zvýšení podrobností, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zápisy na tyto soubory protokolu pomocí Editoru registru (**regedit.exe**) k určení úrovně podrobností.  

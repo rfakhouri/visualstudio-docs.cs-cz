@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135709"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Vlastnosti – okno pole a rozhraní
 Model pro výběr k určení, které informace se zobrazují v **vlastnosti** okno je založena na okno, který má právě fokus v prostředí IDE. Objekt kontextu jeho výběru nabídnutých do kontextu globální výběr mohou mít každý okno a objekt v rámci vybrané okno. Při toto okno je aktivní prostředí aktualizuje kontext globální výběr hodnotami z rámce okna. Když se změní fokus, takže nemá kontext výběr.  

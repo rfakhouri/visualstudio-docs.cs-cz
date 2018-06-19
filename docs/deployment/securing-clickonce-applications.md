@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562465"
 ---
 # <a name="securing-clickonce-applications"></a>Zabezpečování aplikací ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace podléhají omezením zabezpečení přístupu kódu v rozhraní .NET Framework ke omezení přístupu k chráněným prostředkům a operace. Z tohoto důvodu je důležité, že rozumíte důsledkům zabezpečení přístupu kódu k zápisu vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace odpovídajícím způsobem. K omezení přístupu mohou vaše aplikace používat plnou důvěryhodnost nebo částečné zóny, jako jsou zóny pro Internet a Intranet.  

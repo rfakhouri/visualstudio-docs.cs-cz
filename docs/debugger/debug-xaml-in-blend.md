@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477450"
 ---
 # <a name="debug-xaml-in-blend"></a>Ladění kódu XAML v programu Blend
 Můžete pomocí nástrojů v [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] k ladění kódu XAML v aplikaci. Při sestavování projektu se zobrazí nějaké chyby v **výsledky** panelu. Dvakrát klikněte na chybu zjistit kód týkající se chyby. Pokud potřebujete více místa k práci, můžete skrýt **výsledky** panely stisknutím klávesy F12.  
@@ -61,7 +62,7 @@ Můžete pomocí nástrojů v [!INCLUDE[blend_first](../debugger/includes/blend_
   
 5.  V **umístění** textové pole, ověřte umístění projektu.  
   
-6.  V **jazyk** seznamu, klikněte na tlačítko **Visual C#**a potom klikněte na **OK** a vytvořte tak projekt.  
+6.  V **jazyk** seznamu, klikněte na tlačítko **Visual C#** a potom klikněte na **OK** a vytvořte tak projekt.  
   
 7.  Klikněte pravým tlačítkem na návrhovou plochu a potom klikněte na **zobrazit zdroj** přepnout do **rozdělení** zobrazení.  
   

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264192"
 ---
 # <a name="stopprofile"></a>StopProfile
 `StopProfile` Funkce nastaví na hodnotu 0 (vypnuto) pro zadané úrovně profilování čítač.  

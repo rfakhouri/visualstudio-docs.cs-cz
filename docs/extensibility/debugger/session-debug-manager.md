@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126225"
 ---
 # <a name="session-debug-manager"></a>Správce ladicí relace
 Správce ladicí relace (SDM) spravuje libovolný počet modulů ladění (DE) ladění libovolný počet programy v několika procesů na libovolný počet počítačů. Kromě toho modul ladění multiplexor, SDM poskytuje jednotný pohled na relaci ladění k prostředí IDE.  

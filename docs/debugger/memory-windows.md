@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477544"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Použití Windows paměti v ladicím programu sady Visual Studio
 **Paměti** okno poskytuje pohled na místo na paměti, které používá vaše aplikace. **Sledovat** okně **QuickWatch** dialogové okno, **automobily** okně a **místní hodnoty –** okno zobrazit, obsah proměnné, které jsou uložené na konkrétní umístění v paměti. Ale **paměti** v okně se zobrazí ve velkém měřítku obrázek. Toto zobrazení může být vhodné pro zkoumání velké částí data (vyrovnávací paměti nebo velké řetězce, např.), která nezobrazovat i v dalších oknech. Ale **paměti** není omezena na zobrazení dat okno. Se zobrazuje všechno, co v paměti, informaci, jestli obsah data, kódu nebo náhodné bitů paměti v nepřiřazené paměti.  

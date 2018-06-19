@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480329"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Návod: Ladění webového formuláře
 Kroky v tomto návodu ukazují, jak k ladění [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci, také známé jako webového formuláře. Ukazuje, jak spustit a zastavit provádění, nastavit zarážky a zkontrolujte proměnné v **sledovat** okno.  

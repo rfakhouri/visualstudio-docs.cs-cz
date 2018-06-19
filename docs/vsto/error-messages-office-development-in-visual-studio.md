@@ -20,6 +20,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263274"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Chybové zprávy (vývoj pro Office v sadě Visual Studio)
   Každého tématu chybová zpráva obsahuje informace o možných příčinách chybu a potenciální řešení či alternativní řešení Chcete-li problém vyřešit.  

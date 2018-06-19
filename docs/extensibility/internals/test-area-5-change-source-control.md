@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134341"
 ---
 # <a name="test-area-5-change-source-control"></a>Test oblasti 5: Změna zdrojového kódu
 Tato oblast modulu plug-in testovací zdrojového kódu zahrnuje změnu zdrojového kódu pomocí **změnu zdrojového kódu** příkaz.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447866"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Ochrana dokumentů v řešeních na úrovni dokumentu
   Můžete využívat funkce ochrany aplikace Microsoft Office Word a Microsoft Office Excel v projekty na úrovni dokumentu. Tyto funkce brání neoprávněným uživatelům v provádění změn chráněných části dokumentu.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569885"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Postupy: použití sady SDK projektu nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 zaveden koncept "projektu SDK", což zjednodušuje použití software development Kit, které vyžadují vlastnosti a cíle určených k importu.

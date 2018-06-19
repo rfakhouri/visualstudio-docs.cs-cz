@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575101"
 ---
 # <a name="generateresource-task"></a>GenerateResource – úloha
 Převede mezi .txt a soubory RESX (formát založený na jazyce XML prostředku) a společné jazykové runtime .resources binární soubory, které můžete vložených do binární spustitelného nebo zkompilovat do satelitní sestavení. Tato úloha se obvykle používá převést soubory s příponou TXT nebo RESX soubory Resource. `GenerateResource` Úloh je funkčně podobná [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
