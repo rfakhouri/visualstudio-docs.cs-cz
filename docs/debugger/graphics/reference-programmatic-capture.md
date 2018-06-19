@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474385"
 ---
 # <a name="reference-programmatic-capture"></a>Referenční dokumentace (zachytávání prostřednictvím kódu programu)
 Diagnostika grafiky podporuje programovou kontrolu nad jeho zachycení funkce prostřednictvím zachytávání prostřednictvím kódu programu rozhraní API. Toto rozhraní API slouží k přepnutí a taky přidat zprávy do diagnostiky grafiky HUD (zobrazení Head-Up), inicializovat a vytvořit grafiky soubory protokolu a zaznamenání grafických informací.  

@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480225"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Smíšený kód a chybějící informace v okně Zásobník volání
 Z důvodu rozdíly mezi zásobníky volání pro spravovaná a nativní kód nelze ladicího programu vždy zobrazí zásobníku dokončení volání, když kód typy kombinaci. Když nativní kód zavolá spravovaného kódu, můžete si povšimnout následující nesrovnalostí v **zásobníkem volání** okno:  

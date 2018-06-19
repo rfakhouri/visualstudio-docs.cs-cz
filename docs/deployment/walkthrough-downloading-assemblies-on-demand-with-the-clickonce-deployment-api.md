@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565767"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Návod: Stahování sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce
 Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se stáhnou při prvním spuštění aplikace. Ale může mít části aplikace, které jsou používány malého uživatelů. V takovém případě budete chtít stáhnout sestavení, pouze když vytváříte jeden z jeho typů. Následující postup ukazuje, jak označit určité sestavení v aplikaci jako "volitelné", a jak je stáhnout pomocí tříd v <xref:System.Deployment.Application> obor názvů při common language runtime (CLR) požaduje.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "31622884"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Vytvořit sítě instalaci sady Visual Studio 2017
 

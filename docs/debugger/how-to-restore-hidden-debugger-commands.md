@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475194"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Postupy: Obnovení skrytých příkazů ladicího programu
 Při instalaci sady Visual Studio, jste vyzváni k vyberte sadu výchozích nastavení IDE pro primární programovacího jazyka. Výchozí nastavení IDE pro některé jazyky mohou skrývat určité příkazů ladicího programu.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570288"
 ---
 # <a name="configuring-targets-and-tasks"></a>Konfigurace cílů a úloh
 Můžete nakonfigurovat cíle MSBuild a aby úlohy běžely out-of-process pomocí nástroje MSBuild tak, aby můžete určit cílovou kontextů, které se liší od toho, kterou používáte na. Například můžete určit cílovou 32bitová aplikace rozhraní .NET Framework 2.0, když vývojovém počítači běží na operačním systému 64bitová verze rozhraní .NET Framework 4.5. Také můžete vybrat počítače, které spustit v rozhraní .NET Framework 4 nebo starším. Kombinace 32 - bitová nebo 64verze a na konkrétní verzi rozhraní .NET Framework se označuje jako *cílový kontext*.  

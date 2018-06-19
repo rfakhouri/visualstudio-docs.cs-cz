@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563671"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Postupy: Vytvoření manifestu balíčku
 K nasazení požadovaných součástí pro aplikaci, můžete použít balíček zaváděcího nástroje. Balíček zaváděcího nástroje obsahuje jeden produkt soubor manifestu ale manifest balíčku pro každé národní prostředí. Sdílené funkce přes různé lokalizované verze by měli přejít do manifestu produktu.  

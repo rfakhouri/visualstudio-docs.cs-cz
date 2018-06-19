@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577493"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Spuštění sestavení z prostředí IDE
 Musíte použít vlastní projektu systémy <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> spuštění sestavení. Toto téma popisuje důvody této a popisuje postup.  

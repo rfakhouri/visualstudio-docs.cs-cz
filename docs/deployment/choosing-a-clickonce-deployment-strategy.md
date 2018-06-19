@@ -22,6 +22,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454724"
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Výběr strategie nasazení ClickOnce
 Existují tři různé strategie pro nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace; strategie, kterou zvolíte, závisí hlavně na typu aplikace, kterou nasazujete. Toto jsou zmíněné tři strategie nasazení:  

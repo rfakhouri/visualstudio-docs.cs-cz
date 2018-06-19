@@ -24,6 +24,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133984"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Identifikátory panelů nástrojů Visual Studio a identifikátory GUID
 Toto téma uvádí hodnoty GUID a ID panelů nástrojů, které jsou zahrnuté v sadě Visual Studio integrované vývojové prostředí (IDE) a skupiny obsahují. Tyto hodnoty jsou definovány v .vsct soubory, které jsou nainstalovány v rámci sady Visual Studio SDK. Další informace najdete v tématu [IDE-Defined příkazy, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  

@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562179"
 ---
 # <a name="localizing-clickonce-applications"></a>Lokalizace aplikací ClickOnce
 Lokalizace je proces vytváření aplikace vhodné pro konkrétní jazykové verze. Tento proces zahrnuje překlad text v uživatelském rozhraní (UI) na oblast konkrétní jazyk pomocí správné datum a formátování měny, nastavení velikosti ovládacích prvků ve formuláři, a zrcadlení ovládacích prvků zprava doleva v případě potřeby.  

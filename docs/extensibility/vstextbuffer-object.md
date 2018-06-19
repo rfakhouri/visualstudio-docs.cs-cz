@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141031"
 ---
 # <a name="vstextbuffer-object"></a>Objekt VSTextBuffer
 Objekt textové vyrovnávací paměti představuje proud text v kódu Unicode, které je obecně přidružené k souboru. A <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objekt lze použít mimo kontext jádra editoru, jako v případě průvodce.  

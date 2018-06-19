@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576830"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly – úloha
 Zruší registraci na zadaná sestavení pro účely zprostředkovatele komunikace s objekty COM. Provádí opak [registerassembly – úloha](../msbuild/registerassembly-task.md).  

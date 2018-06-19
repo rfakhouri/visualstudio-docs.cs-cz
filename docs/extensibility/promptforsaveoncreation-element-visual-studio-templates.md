@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137544"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation – element (šablony sady Visual Studio)
 Určuje, zda uživatel je vyzván pro projekt prostřednictvím umístění pro uložení **nový projekt** dialogové okno při vytvoření projektu. Pokud tento element je nastaven na `true`, pak bude uživatel vyzván k uložení umístění; Pokud `false`, pak vyzve nejsou. (To znamená, dočasný projekt se vytvoří.)  

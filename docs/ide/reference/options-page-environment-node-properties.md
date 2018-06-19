@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953920"
 ---
 # <a name="options-page-environment-node-properties"></a>Stránka Možnosti, vlastnosti uzlu prostředí
 Tento dokument popisuje stránky (nebo vlastnosti kolekce), jsou přidružené **prostředí** kategorie, `DTE.Properties("Environment", <Property Page>)`, z **možnosti** dialogové okno. Název každé část je hovoru, který se používá pro přístup ke kolekci vlastností a v tabulce v každou část jsou uvedeny vlastnosti v kolekci.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463286"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 Načte příznak, který určuje, zda je funkce [holé](/cpp/cpp/naked-cpp) atribut (to znamená, funkce nemá žádný kód prologu nebo epilogu přidal kompilátor).  

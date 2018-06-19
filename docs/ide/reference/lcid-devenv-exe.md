@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704717"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 Nastaví výchozí jazyk používaný pro text, měny a dalších hodnot v rámci integrované vývojové prostředí (IDE).

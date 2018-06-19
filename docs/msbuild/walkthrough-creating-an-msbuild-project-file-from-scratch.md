@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575192"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Návod: Vytvoření souboru projektu MSBuild od začátku
 Programovací jazyky, které cílí na rozhraní .NET Framework použijte soubory projektu nástroje MSBuild k označení a řízení procesu sestavení aplikace. Pokud používáte Visual Studio k vytvoření souboru projektu nástroje MSBuild, příslušné XML je automaticky přidá do souboru. Ale možná bude vhodné se seznámit s uspořádání XML a jak ji k řízení sestavení můžete změnit.  

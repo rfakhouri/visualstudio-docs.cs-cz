@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476244"
 ---
 # <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>Postupy: ladění spustitelné soubory, které není součástí řešení sady Visual Studio
 V některých případech můžete chtít ladění spustitelné soubory (soubor .exe), které není součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. To může být spustitelný soubor můžete vytvořit mimo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo jenom spustitelný soubor, který jste dostali od někoho jiného.  

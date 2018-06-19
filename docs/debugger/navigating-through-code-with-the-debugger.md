@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479735"
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Procházení kódu s ladicím programu sady Visual Studio
 Seznamte se s příkazy a zkratky přejděte kódu v ladicím programu a který bude rychlejší a snazší najít a vyřešte problémy v aplikaci. Když přejdete kódu v ladicím programu, můžete zkontrolovat stav vaší aplikace nebo Další informace o toku jeho spuštění.  

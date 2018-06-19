@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950878"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Možnosti, textový editor, JavaScript, formátování
 Použití **formátování** stránky **možnosti** dialogové okno nastavit možnosti formátování kódu v editoru kódu. Pro přístup k této stránce, na řádku nabídek zvolte **nástroje**, **možnosti**a potom rozbalte **textového editoru**, **JavaScript**a **Formátování**.

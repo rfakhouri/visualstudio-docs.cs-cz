@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128936"
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>Postupy: implementace najít a nahradit mechanismus
 Visual Studio poskytuje dva způsoby implementace vyhledání a nahrazení. Jedním ze způsobů je předat bitovou kopii text do prostředí a nechat ji zpracovat vyhledávání, zvýraznění a nahraďte text. To umožňuje uživatelům zadat více rozpětí textu. Vaše VSPackage Alternativně můžete řídit tuto funkci, sám sebe. V obou případech musíte upozornit prostředí o aktuální cíl a cíle pro všechny otevřené dokumenty.  

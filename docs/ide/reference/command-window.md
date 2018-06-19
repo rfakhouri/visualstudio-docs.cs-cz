@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704756"
 ---
 # <a name="command-window"></a>Příkazové okno
 **Příkaz** okno se používá k provedení příkazy nebo přímo v aliasy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Můžete spustit příkazy nabídek a příkazů, které se nezobrazí na žádné nabídky. K zobrazení **příkaz** okně zvolte **ostatní okna** z **zobrazení** nabídce a vyberte **příkazové okno**.

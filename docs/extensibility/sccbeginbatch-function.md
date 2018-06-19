@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138233"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch – funkce
 Tato funkce spustí batch posloupnost operací se zdrojovým ovládacího prvku. [SccEndBatch](../extensibility/sccendbatch-function.md) bude volána k ukončení dávky. Tyto dávek nelze vnořit.  

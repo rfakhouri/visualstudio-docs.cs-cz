@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132142"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Postupy: podporují rozšířené popisující ve službě jazyk starší verze
 Existují dvě možnosti pro rozšíření osnovy podporu pro svůj jazyk nad rámec podpora **sbalit do definice** příkaz. Můžete přidat oblasti řízenou editor osnovy a přidat oblasti osnovy řízenou klienta.  

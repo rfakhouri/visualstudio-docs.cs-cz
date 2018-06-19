@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584396"
 ---
 # <a name="resource-details-view---contention-data"></a>Zobrazení podrobností o prostředku – Data kolizí
 Zobrazení podrobností prostředků uvede časová osa grafu blokování událostí, která byla způsobena kolizí nad vybraného prostředku. Blokování události dojde při vlákno je nucen se pozastavit provádění, protože jiné vlákno zablokuje přístup k prostředku.  

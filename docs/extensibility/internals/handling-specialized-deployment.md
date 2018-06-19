@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135777"
 ---
 # <a name="handling-specialized-deployment"></a>Zpracování specializuje nasazení
 Nasazení je volitelné operace pro projekty. Webového projektu, například podporuje nasazení umožníte projektu aktualizovat webový server. Podobně **Smart Device** projektu podporuje nasazení zkopírovat integrované aplikace cílového zařízení. Projekt podtypů můžete zadat chování specializovaná nasazení implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> rozhraní. Toto rozhraní definuje kompletní sadu operace nasazení:  

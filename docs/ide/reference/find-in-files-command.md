@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33705018"
 ---
 # <a name="find-in-files-command"></a>Najít v souborech – příkaz
 Hledání souborů pomocí podmnožinu dostupných na možnostech **hledání v souborech** kartě **najít a nahradit** okno.

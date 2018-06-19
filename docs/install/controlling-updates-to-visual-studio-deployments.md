@@ -19,6 +19,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704834"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Ovládací prvek aktualizací pro nasazení založené na síti Visual Studio
 

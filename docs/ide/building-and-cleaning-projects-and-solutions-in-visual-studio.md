@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31918527"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Sestavování a čištění projektů a řešení v sadě Visual Studio
 Pomocí postupů v tomto tématu lze vytvořit, znovu sestavit nebo vyčistit všechny nebo některé z projektů nebo položky projektu v řešení. Podrobný kurz, najdete v části [návod: vytváření aplikace](../ide/walkthrough-building-an-application.md).

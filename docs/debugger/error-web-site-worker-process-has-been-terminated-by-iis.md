@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481600"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Chyba: Pracovní proces webu byl ukončen službou IIS.
 Ladicí program zastavena spuštění kódu na webovém serveru. Příčinou Internetové informační služby (IIS) předpokládají, že měl pracovní proces přestal reagovat. Proto služba IIS byla ukončena pracovního procesu.  

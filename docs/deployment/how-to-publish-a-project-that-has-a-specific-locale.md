@@ -27,6 +27,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561607"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Postupy: Publikování projektu s konkrétním národním prostředím
 Je běžné pro aplikaci tak, aby obsahovala součásti, které mají různá národní prostředí. V tomto scénáři by vytvářet řešení, která má několik projektů a pak publikovat samostatné projekty pro každé národní prostředí. Tento postup ukazuje, jak pomocí makra publikování první projekt v řešení s použitím národního prostředí "en". Pokud chcete vyzkoušet tuto proceduru s národním prostředím než "en", nezapomeňte nastavit `localeString` v makru na odpovídající národního prostředí, který používáte (pro příklad, "de" nebo "de-DE").  

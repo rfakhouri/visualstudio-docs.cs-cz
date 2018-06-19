@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566196"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Příkazy&gt; – Element (zaváděcího nástroje)
 `Commands` Element implementuje testy popsané prvky pod `InstallChecks` elementu a deklaruje balíčky, které [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zaváděcího nástroje měli nainstalovat, pokud se test nezdaří.  

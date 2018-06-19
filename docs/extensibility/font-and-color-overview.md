@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130221"
 ---
 # <a name="font-and-color-overview"></a>Písma a barev – přehled
 Toto téma popisuje nastavení písma a barvy textu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Je také seznámíte se základními pojmy, kategorie a zobrazení položek a se popisuje, jak VSPackages a editoru základní použít atributy textu.  

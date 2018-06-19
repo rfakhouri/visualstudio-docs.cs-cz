@@ -20,6 +20,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454373"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName – element (šablony sady Visual Studio)
 Určuje, zda [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] systému projektu vygeneruje název výchozí šablony do **přidat novou položku** nebo **nový projekt** dialogové okno.  

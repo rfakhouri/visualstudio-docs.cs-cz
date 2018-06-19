@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141669"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Pomocí Správce Text k monitorování globální nastavení
 Pokud implementujete základní editor, je třeba sledovat změny, které jsou vytvářeny pro globální nastavení, protože tyto změny mohou ovlivnit vaše instance editoru. Změny můžete sledovat prostřednictvím naslouchání události vyvolané službou textový správce. Například když zadáte globální předvolby pro vzhled nebo chování komponenty v editoru jádra, jako je jeho datový objekt dokumentu textový správce ukládá tyto informace a komunikuje se všechny příslušné klienty.  

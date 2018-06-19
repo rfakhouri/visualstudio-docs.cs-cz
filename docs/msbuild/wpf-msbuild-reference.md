@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567964"
 ---
 # <a name="wpf-msbuild-reference"></a>Referenční dokumentace WPF MSBuild
 Windows Presentation Foundation (WPF) rozšiřuje stroje Microsoft build engine (MSBuild) s podporou dalších sestavení, která je popsána v této části.  

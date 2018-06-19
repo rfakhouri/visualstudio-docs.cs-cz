@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576804"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Postupy: Vyloučení souborů ze sestavení
 V souboru projektu slouží jako vstupy pro sestavení zahrnout všechny soubory v jednom adresáři nebo sadu adresáře vnořené zástupné znaky. Však může být jeden soubor v adresáři nebo v adresáři ve vnořených sadu adresáře, které nechcete zahrnout jako vstup pro sestavení. Tento soubor nebo adresář můžete výslovně vyloučit ze seznamu vstupy. V projektu, který chcete zahrnout za určitých podmínek může být také soubor. Je možné deklarovat explicitně podmínky, za kterých je soubor součástí sestavení.  

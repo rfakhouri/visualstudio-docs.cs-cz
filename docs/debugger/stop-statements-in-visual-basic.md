@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474892"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Příkazy Stop v jazyce Visual Basic
 Příkaz jazyka Visual Basic zastavit poskytuje programovací alternativou k nastavení boru přerušení. Když v ladicím programu dojde příkaz Stop, dělí spuštění programu (přejde do režimu přerušení). Stejného efektu pomocí volání do System.Diagnostics.Debugger.Break můžete dosáhnout programátory v jazyce C#.  

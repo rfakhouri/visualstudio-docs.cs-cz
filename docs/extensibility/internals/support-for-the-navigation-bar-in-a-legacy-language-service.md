@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134653"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Podpora pro navigační panel ve službě jazyk starší verze
 Navigační panel v horní části editoru zobrazení zobrazí typy a členy v souboru. V levém rozevíracího seznamu jsou uvedeny typy a členy se zobrazují v pravém rozevíracího seznamu. Když uživatel vybere typ, pomocí kurzoru je umístěn na prvním řádku typu. Když uživatel vybere člena, pomocí kurzoru je umístěn na definici tohoto člena. Rozevírací seznamy jsou aktualizovány tak, aby odrážela aktuální umístění pomocí kurzoru.  

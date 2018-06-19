@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131258"
 ---
 # <a name="selection-context-objects"></a>Výběr objektů kontextu
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrované vývojové prostředí (IDE) používá k určení, co má být zobrazena v prostředí IDE objekt kontextu globální výběr. Každý okna v prostředí IDE může mít svůj vlastní objekt kontextu výběr nabídnutých do kontextu globální výběr. Prostředí IDE aktualizuje kontext globální výběr hodnoty z okna při toto okno je aktivní. Další informace najdete v tématu [zpětnou vazbu pro uživatele](../../extensibility/internals/feedback-to-the-user.md).  

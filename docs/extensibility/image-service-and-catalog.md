@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134667"
 ---
 # <a name="image-service-and-catalog"></a>Bitové kopie služby a katalog
 Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí Visual Studio Service bitovou kopii a bitovou kopii katalogu byla zavedená v sadě Visual Studio 2015.  
@@ -165,7 +166,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí Visual Studi
 |-|-|  
 |**Atribut**|**Definice**|  
 |identifikátor URI|[Vyžaduje] Identifikátor URI, který definuje, kde lze načíst obrázek z. Může být jeden z následujících akcí:<br /><br /> -A [Pack URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) pomocí aplikace: / / / autority<br />– Odkaz na absolutní součásti prostředků<br />– Cesta k souboru, který obsahuje nativní prostředků|  
-|Pozadí|[Nepovinné] Určuje, co na druhu pozadí, které zdroj je určena k použití.<br /><br /> Může být jeden z následujících akcí:<br /><br /> *Lehký:* zdroji lze použít na světle pozadí.<br /><br /> *Světlý:*zdroji lze použít v tmavý pozadí.<br /><br /> *Funkce Vysoký kontrast:* zdroji lze použít na všechny pozadí v režimu vysokého kontrastu.<br /><br /> *HighContrastLight:* zdroji lze použít na světle pozadí v režimu vysokého kontrastu.<br /><br /> *HighContrastDark:* zdroji lze použít na tmavý pozadí v režimu vysokého kontrastu.<br /><br /> Pokud je vynechán atribut pozadí, zdroji lze použít v jakékoli pozadí.<br /><br /> Pokud je pozadí *Light*, *tmavý*, *HighContrastLight*, nebo *HighContrastDark*, jsou nikdy Invertovat barvy zdroj. Pokud je tento parametr vynechán nebo nastavte na pozadí *funkce Vysoký kontrast*, řídí inverzi barev zdroj obrázku **AllowColorInversion** atribut.|  
+|Pozadí|[Nepovinné] Určuje, co na druhu pozadí, které zdroj je určena k použití.<br /><br /> Může být jeden z následujících akcí:<br /><br /> *Lehký:* zdroji lze použít na světle pozadí.<br /><br /> *Světlý:* zdroji lze použít v tmavý pozadí.<br /><br /> *Funkce Vysoký kontrast:* zdroji lze použít na všechny pozadí v režimu vysokého kontrastu.<br /><br /> *HighContrastLight:* zdroji lze použít na světle pozadí v režimu vysokého kontrastu.<br /><br /> *HighContrastDark:* zdroji lze použít na tmavý pozadí v režimu vysokého kontrastu.<br /><br /> Pokud je vynechán atribut pozadí, zdroji lze použít v jakékoli pozadí.<br /><br /> Pokud je pozadí *Light*, *tmavý*, *HighContrastLight*, nebo *HighContrastDark*, jsou nikdy Invertovat barvy zdroj. Pokud je tento parametr vynechán nebo nastavte na pozadí *funkce Vysoký kontrast*, řídí inverzi barev zdroj obrázku **AllowColorInversion** atribut.|  
 |||  
   
  A \<zdroje > element může obsahovat právě jeden z následujících volitelné dílčí prvky:  

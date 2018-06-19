@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131907"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrace sestavení vzájemné spolupráce obslužné rutiny příkazů
 VSPackage musíte zaregistrovat u [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, aby integrované vývojové prostředí (IDE) směruje jeho příkazy správně.  
@@ -30,7 +31,7 @@ VSPackage musíte zaregistrovat u [!INCLUDE[vsprvs](../../code-quality/includes/
  [Příkaz odkaz na tabulku formátu](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f) prostředky jsou umístěny v nespravované satelitní knihovny DLL uživatelského rozhraní.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Příkaz obslužná rutina registrace VSPackage  
- VSPackage funguje jako obslužná rutina pro uživatelské rozhraní (UI) – na základě příkazy vyžaduje záznam registru s názvem, jako VSPackage `GUID`. Tato položka registru určuje umístění souboru prostředků VSPackage uživatelského rozhraní a nabídky prostředek v rámci tohoto souboru. Položky registru, samotné se nachází v HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<verze >*\Menus, kde  *\<verze >* je verze [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], například 9.0.  
+ VSPackage funguje jako obslužná rutina pro uživatelské rozhraní (UI) – na základě příkazy vyžaduje záznam registru s názvem, jako VSPackage `GUID`. Tato položka registru určuje umístění souboru prostředků VSPackage uživatelského rozhraní a nabídky prostředek v rámci tohoto souboru. Položky registru, samotné se nachází v HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<verze >* \Menus, kde  *\<verze >* je verze [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], například 9.0.  
   
 > [!NOTE]
 >  Kořenové cestě HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<verze >* lze přepsat pomocí náhradní root, kdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí je inicializován. Další informace o kořenovou cestu najdete v tématu [instalaci VSPackages pomocí Instalační služby systému Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  

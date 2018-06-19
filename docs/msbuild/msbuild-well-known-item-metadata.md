@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572605"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Metadata známé položky nástroje MSBuild
 Následující tabulka popisuje metadata přiřazené každá položka po vytvoření. V obou příkladech byl použit následující položky deklaraci zahrnout soubor `C:\MyProject\Source\Program.cs` v projektu.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146216"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Správa načítání projektu v řešení
 Řešení sady Visual Studio může obsahovat velké množství projekty. Výchozí chování sady Visual Studio je načíst všechny projekty v řešení v době, kdy je řešení otevřené a nechcete povolit uživateli přístup k žádným z projektů všechny z nich nedokončili načítání. Při procesu načítání projektu bude poslední více než dvě minuty, se zobrazí indikátor průběhu zobrazující počet projekty načíst a celkový počet projekty. Uživatel může mít za následek uvolnění projekty při práci s řešení s více projekty, ale tento postup má některé nevýhody: odpojen projekty nejsou vytvořené jako součást příkazu znovu sestavit řešení a popisy IntelliSense typů a členů uzavřený projekty nejsou zobrazeny.  

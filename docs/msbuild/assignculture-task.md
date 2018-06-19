@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578715"
 ---
 # <a name="assignculture-task"></a>AssignCulture – úloha
 Tato úloha přijímá seznam položek, které mohou obsahovat platný řetězec identifikátor jazykové verze rozhraní .NET jako součást názvu souboru a vytvoří položky, které mají metadata, s názvem `Culture` obsahující odpovídající identifikátor jazykovou verzi. Například má název souboru Form1.fr fr.resx embedded jazykovou verzi identifikátor "fr-fr", takže tato úloha vytvoří položku, která má stejný název souboru s metadaty `Culture` rovna `fr-fr`. Úloha také vytvoří seznam názvů souborů s jazykovou verzi odebrána z název souboru.  

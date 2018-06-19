@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447879"
 ---
 # <a name="zoom-control-threads-view"></a>Ovládací prvek Lupa (zobrazení vláken)
 Ovládací prvek Lupa je jezdce, který vám umožní přiblížení a oddálení na časové ose tak, aby se můžete soustředit na oblasti zvláštní zájem. Vzhledem k tomu, že tento ovládací prvek zvětší středu zobrazení časové osy, center před zvětšení oblasti, které vás zajímají.  

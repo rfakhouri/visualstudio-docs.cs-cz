@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474580"
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Odeslat diagnostické zprávy v okně Výstup
 Můžete napsat běhu zprávy a pokuste se **výstup** pomocí okna `Debug` – třída nebo `Trace` třídy, které jsou součástí z <xref:System.Diagnostics> knihovny tříd. Použití třídy ladění, pokud pouze výstup v ladicí verze vašeho programu. Používejte třídu trasování, pokud chcete, aby výstupu v ladění i vydání verze.  

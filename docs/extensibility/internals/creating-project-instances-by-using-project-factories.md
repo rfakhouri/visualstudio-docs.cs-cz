@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131745"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Vytváření instancí projektu pomocí objekty pro vytváření projektů
 Typy v projektu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] používat *vytváření projektu* k vytvoření instancí objektů projektu. Objekt pro vytváření projektu je podobná objekt standardní třídu pro cocreatable COM – objekty. Objekty projektu však nejsou cocreatable: jejich lze vytvořit pouze pomocí objekt pro vytváření projektu.  

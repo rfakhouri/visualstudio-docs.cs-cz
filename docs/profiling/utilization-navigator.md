@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31581874"
 ---
 # <a name="utilization-navigator"></a>Navigátor využití
 Navigátor využití v Concurrency Visualizer slouží k vyberte časový interval v trasování. Vizualizér souběžnosti znázorňuje využití jader procesoru procesem cíl v průběhu času. To usnadňuje zkontrolujte vzorů využití procesoru a také umožňuje srovnání data o využití a data v ostatních zobrazeních. Navigátor využití se zobrazí v horní části každé zobrazení v vizualizér souběžnosti. Následující obrázek znázorňuje Navigátor využití.  

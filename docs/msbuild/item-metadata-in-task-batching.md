@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573562"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadata položek v dávkování úloh
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] má schopnost rozdělení seznamech položek do různých kategorií nebo dávek, na základě položky metadat a spuštění úlohy jednou se jednotlivých dávek. Může být matoucí pochopit přesně položky, které jsou předávány s které dávky. Toto téma obsahuje následující běžné scénáře, které zahrnují dávkování.  

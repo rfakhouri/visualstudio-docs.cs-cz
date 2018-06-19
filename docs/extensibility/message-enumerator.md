@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140259"
 ---
 # <a name="message-enumerator"></a>Enumerátor zpráv
 Následující příznaky se používají pro `TEXTOUTPROC` funkci, která je funkce zpětného volání, která poskytuje rozhraní IDE při volání [SccOpenProject](../extensibility/sccopenproject-function.md) (najdete v části [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) podrobnosti o zpětné volání funkce).  

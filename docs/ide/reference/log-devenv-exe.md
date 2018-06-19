@@ -19,6 +19,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704769"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 Zaznamená veškerou aktivitu do souboru protokolu pro řešení potíží. Tento soubor se zobrazí po jste jste volali metodu `devenv /log` alespoň jednou. Ve výchozím nastavení je soubor protokolu:

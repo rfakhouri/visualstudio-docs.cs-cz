@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132718"
 ---
 # <a name="solution-configuration"></a>Konfigurace řešení
 Konfigurace řešení úložiště vlastnosti na úrovni řešení. Jejich přímé chování **spustit** klíč (F5) a **sestavení** příkazy. Ve výchozím nastavení tyto příkazy sestavit a spustit konfiguraci ladění. Oba příkazy spustí v kontextu konfigurace řešení. To znamená, že uživatel očekávat F5 start a sestavení bez ohledu aktivním řešení se konfigurují prostřednictvím nastavení. Prostředí je určena k optimalizaci pro řešení, nikoli projekty, pokud jde o vytváření a spouštění.  

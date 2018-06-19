@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578217"
 ---
 # <a name="how-to-clean-a-build"></a>Postupy: Vyčištění sestavení
 Při čištění sestavení se odstraní všechny zprostředkující a výstupní soubory, ponechat pouze soubory projektu a součást. Ze souborů projektu a součást nové instance třídy mezilehlých a výstupní soubory pak se dají vytvářet. Knihovny běžných úloh, které je k dispozici s [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zahrnuje [Exec](../msbuild/exec-task.md) úlohu, která můžete použít ke spuštění příkazů systému. Další informace o knihovně úlohy najdete v tématu [– Reference úlohy](../msbuild/msbuild-task-reference.md).  

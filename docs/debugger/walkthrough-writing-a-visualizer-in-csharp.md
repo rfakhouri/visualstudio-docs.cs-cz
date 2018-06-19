@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479835"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Návod: Zápis vizualizéru v jazyce C# #
 Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí jazyka C#. Vizualizér, které vytvoříte v tomto návodu zobrazí obsah řetězce pomocí systému Windows forms se zprávou. Tento jednoduchý řetězec vizualizér není obzvláště užitečná sám o sobě, ale zobrazí základní kroky, které je potřeba provést k vytvoření užitečnější vizualizérech pro jiné datové typy.  

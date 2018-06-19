@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31579040"
 ---
 # <a name="registering-extensions-of-the-net-framework"></a>Registrace rozšíření rozhraní .NET Framework
 Můžete vyvíjet sestavení, které rozšiřuje na konkrétní verzi rozhraní .NET Framework. Chcete-li povolit sestavení se objeví v sadě Visual Studio **přidat odkazy** dialogové okno, je nutné přidat složku, která obsahuje do registru systému.  

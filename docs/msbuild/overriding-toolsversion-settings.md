@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571552"
 ---
 # <a name="overriding-toolsversion-settings"></a>Přepsání nastavení parametru ToolsVersion
 Můžete změnit sada nástrojů pro projekty a řešení v jednom ze tří způsobů:  

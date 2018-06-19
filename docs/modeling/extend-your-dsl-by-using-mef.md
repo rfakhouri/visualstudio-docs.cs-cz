@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953518"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozšíření vašeho DSL pomocí MEF
 Jazyka specifické pro doménu (DSL) můžete rozšířit pomocí Managed Extensibility Framework (MEF). Vy nebo jiní vývojáři budou moci zapsat rozšíření pro DSL beze změny definice DSL a kód programu. Taková rozšíření zahrnují příkazy nabídky, obslužné rutiny přetahování myší a ověření. Budou uživatelé moci nainstalovat vaší DSL a volitelně nainstalovat rozšíření pro ni.

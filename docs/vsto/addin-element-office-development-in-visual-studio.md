@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262379"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;doplněk&gt; – element (vývoj pro Office v sadě Visual Studio)
   **Doplněk** element `vstav3` obor názvů obsahuje informace, které jsou specifické pro doplňky Microsoft Office VSTO a úpravy na úrovni dokumentů vyvinuté pomocí sady Visual Studio.  

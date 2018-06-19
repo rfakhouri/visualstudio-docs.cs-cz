@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574204"
 ---
 # <a name="lc-task"></a>LC – úloha
 Zabalí LC.exe, který generuje soubor .license z .licx – soubor. Další informace o LC.exe najdete v tématu [Lc.exe (kompilátor licencí)](/dotnet/framework/tools/lc-exe-license-compiler).  

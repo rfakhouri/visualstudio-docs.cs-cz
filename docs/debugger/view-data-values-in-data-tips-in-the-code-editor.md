@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477326"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Zobrazení hodnot dat v datatips – v editoru kódu
 Datatips – poskytují pohodlný způsob, jak zobrazit informace o proměnných v programu během ladění. Datatips – fungovat pouze v režimu pozastavení a pouze s proměnné, které jsou v aktuálním oboru provádění.

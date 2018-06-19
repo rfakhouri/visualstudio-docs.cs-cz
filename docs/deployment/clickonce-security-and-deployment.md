@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562829"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce – zabezpečení a nasazení
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] je nasazení technologie, která umožňuje vytvoření automatických aktualizací aplikací systému Windows, které můžete nainstalovat a spustit s minimálním uživatelským interakci. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poskytuje úplnou podporu pro publikování a aktualizace aplikace nasazené pomocí technologie ClickOnce, pokud jste si vytvořili projekt v jazyce Visual Basic a Visual C#. Další informace o nasazení aplikací Visual C++, najdete v části [ClickOnce – nasazení pro aplikace Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  

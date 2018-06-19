@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134457"
 ---
 # <a name="command-placement-guidelines"></a>Příkaz umístění pokyny
 Osvědčené postupy pro umístění příkazy v sadě Visual Studio integrované vývojové prostředí (IDE) se liší v závislosti na velikosti sadu příkazů. Příkazy jsou definováni a umístí podle informací v souborech .vsct.  

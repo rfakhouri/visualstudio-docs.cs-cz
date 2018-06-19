@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478106"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Vzdálené ladění projektu Visual C++ v sadě Visual Studio
 K ladění aplikace z Visual Studia na jiném počítači, instalaci a spuštění nástrojů pro vzdálenou na počítači, kde budou nasazovat aplikace, nakonfigurujete svůj projekt k připojení ke vzdálenému počítači ze sady Visual Studio, nasazení a spuštění aplikace.

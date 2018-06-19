@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475678"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Postupy: přepnutí na jiné vlákno během ladění v sadě Visual Studio
 Při ladění vícevláknové aplikace, můžete přejít z vlákno, které pracujete s na jiné vlákno jedné z několika metod.

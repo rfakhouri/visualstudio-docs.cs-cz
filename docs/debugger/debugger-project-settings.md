@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474021"
 ---
 # <a name="debugger-project-settings"></a>Nastavení projektu ladicího programu
 Některá nastavení projektu ovlivní také ladění. Tato nastavení zjistit, jaké adresáře ladicí program zjistí, příkaz i jeho argumenty příkazu použitý ke spuštění programu a typ ladicí informace o vytvoření programu. Můžete změnit tato nastavení v **stránky vlastností** dialogové okno.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129693"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Získávání písma a barev informace pro zabarvení textu
 Proces, který vykreslí nebo obarvené text se zobrazí prvky uživatelského rozhraní (UI) závisí na typu projektu, technologie a vývojáře předvolby. **Písma a barev** stránka vlastností ukládá nastavení.

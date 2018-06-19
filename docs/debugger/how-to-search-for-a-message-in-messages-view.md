@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473514"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Postupy: Hledání zprávy v zobrazení zpráv
 Můžete hledat konkrétní zprávy v zobrazení zpráv pomocí jeho popisovač, typ nebo ID zprávy jako kritéria vyhledávání. Kterákoli z těchto – nebo jejich kombinaci – bude platný vyhledávací kritéria. Můžete také zadat počáteční směr hledání. Atributy zprávu aktuálně vybranou se předem načtou pole v dialogovém okně.  

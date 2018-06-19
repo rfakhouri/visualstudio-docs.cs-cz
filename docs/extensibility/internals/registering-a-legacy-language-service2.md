@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134136"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrace služby jazyk starší verze
 V následujících částech najdete seznam položky registru pro různé jazyky možnosti služby, které jsou k dispozici v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -68,7 +69,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |Název|Typ|Rozsah|Popis|  
 |----------|----------|-----------|-----------------|  
-|(Výchozí)|REG_SZ|text|Výchozí hodnota slouží k dokumentu název jazyka. Název tohoto klíče je identifikátor GUID vyhodnocovací filtr výrazů, který má odpovídající záznam v  *\<VS Reg kořenové >*\AD7Metrics\Expression vyhodnocování.|  
+|(Výchozí)|REG_SZ|text|Výchozí hodnota slouží k dokumentu název jazyka. Název tohoto klíče je identifikátor GUID vyhodnocovací filtr výrazů, který má odpovídající záznam v  *\<VS Reg kořenové >* \AD7Metrics\Expression vyhodnocování.|  
   
 ### <a name="example"></a>Příklad  
   
@@ -159,7 +160,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```  
   
 ## <a name="registry-entries-for-logical-view-options"></a>Položky registru pro možnosti logické zobrazení  
- *VS Reg kořenové*\Editors\\*grafického uživatelského rozhraní editoru >*\LogicalViews klíč může obsahovat následující hodnoty.  
+ *VS Reg kořenové*\Editors\\*grafického uživatelského rozhraní editoru >* \LogicalViews klíč může obsahovat následující hodnoty.  
   
 |Název|Typ|Rozsah|Popis|  
 |----------|----------|-----------|-----------------|  

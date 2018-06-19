@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476725"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Postupy: Použití okna vláken GPU
 V okně vláken GPU můžete prozkoumat a práce s vlákny, které jsou spuštěny na grafického procesoru v aplikaci, kterou ladíte. Další informace o aplikacích, které běží na GPU najdete v tématu [přehled produktu C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  

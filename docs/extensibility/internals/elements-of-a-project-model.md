@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135556"
 ---
 # <a name="elements-of-a-project-model"></a>Prvky modelu projektu
 Rozhraní a implementace všechny projekty v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sdílet základní strukturu: model projektu pro typ vašeho projektu. V projektu modelu, který je VSPackage vyvíjíte, můžete vytvořit objekty, které splňují svoje rozhodnutí o návrhu a fungují společně s globální funkce poskytované službou rozhraní IDE. I když můžete řídit, jak je trvalý položka projektu, například nebudete řídit oznámení, že soubor musí zachovat. Když uživatel umístí fokus na položku otevřít projekt a vybere **Uložit** na **soubor** nabídce [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nabídky panelu, musí váš kód typ projektu intercept příkazu z prostředí IDE, zachovat soubor, a odešlete oznámení zpět do integrovaného vývojového prostředí už změny souboru.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147112"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Návod: Zobrazení dokončování příkazů
 Na základě jazyka dokončování můžete implementovat definováním identifikátory, pro které byste chtěli poskytnout dokončení a potom aktivuje relaci dokončení. Můžete definovat dokončování v kontextu služby jazyk, definovat vlastní příponu názvu souboru a typu obsahu a následně se zobrazí dokončení právě tohoto typu nebo můžete aktivovat dokončení pro existující typ obsahu – například prostý text"". Tento návod ukazuje, jak aktivovat dokončování pro typ obsahu "prostý text", což je typ obsahu textových souborů. Typ obsahu "text" je nadřazeného všechny ostatní typy obsahu, včetně kódu a soubory XML.  

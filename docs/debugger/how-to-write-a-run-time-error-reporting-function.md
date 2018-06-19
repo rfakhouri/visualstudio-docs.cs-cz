@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474879"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Postupy: Zápis funkce zasílání zpráv o chybách za běhu
 Vlastní sestavy funkce pro chyby musí mít stejnou deklaraci jako `_CrtDbgReportW`. Měla by vrátit hodnotu 1 pro ladicí program.  

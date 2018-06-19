@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473855"
 ---
 # <a name="how-to-start-spy"></a>Postupy: Spuštění nástroje Spy++
 Můžete spustit nástroje Spy ++ ze sady Visual Studio nebo na příkazovém řádku.  

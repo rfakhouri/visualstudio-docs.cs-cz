@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133265"
 ---
 # <a name="property-pages"></a>Stránky vlastností
 Uživatelé mohou zobrazit a změnit vlastnosti závislá na konfiguraci a - nezávislé projektu pomocí stránky vlastností. A **stránky vlastností** tlačítko je k dispozici v **vlastnosti** okno nebo na panelu nástrojů Průzkumníku řešení pro objekty, které poskytují zobrazení stránky vlastnosti vybraného objektu. Stránky vlastností jsou vytvořené pomocí prostředí a jsou dostupné pro projekty a řešení. Mohou, ale být k dispozici pro položky projektu, které používají závislá na konfiguraci vlastností. Tato funkce může použít, pokud soubory v rámci projektu vyžadují různé kompilátoru přepínač nastavení k vytvoření správně.  

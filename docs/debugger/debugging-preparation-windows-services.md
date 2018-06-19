@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479900"
 ---
 # <a name="debugging-preparation-windows-services"></a>Příprava ladění: služby systému Windows
 Služby systému Windows je program, který běží na pozadí v části Microsoft Windows. Mezi příklady patří služby Telnet a služby Systémový čas, který aktualizuje hodiny zobrazené v počítači. Nelze spustit službu systému Windows v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; musí běžet v kontextu správci řízení služeb. Další informace najdete v tématu [vytváření služby systému Windows](/dotnet/framework/windows-services/how-to-create-windows-services), [ladění aplikace služby systému Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications), a [aplikace služby systému Windows](/dotnet/framework/windows-services/index).  

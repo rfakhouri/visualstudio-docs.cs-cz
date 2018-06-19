@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134617"
 ---
 # <a name="legacy-language-service-interfaces"></a>Rozhraní služeb starší verze jazyka
 Pro žádný konkrétní programovací jazyk může být pouze jednu instanci služby jazyk najednou. Služba jednoho jazyka však může sloužit více než jeden editor.  

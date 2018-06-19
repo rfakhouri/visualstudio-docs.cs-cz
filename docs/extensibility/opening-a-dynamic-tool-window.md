@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138285"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Otevřete okno dynamické nástroj
 Nástroje systému windows jsou obvykle otevřít pomocí příkazu v nabídce, nebo ekvivalentní klávesové zkratky. V některých případech však může být zapotřebí okno nástroje, které se otevře vždy, když platí konkrétní kontext uživatelského rozhraní a zavře případě kontext uživatelského rozhraní se již nepoužívá. Tyto typy nástroje systému windows se nazývají *dynamické* nebo *automaticky viditelná*.  

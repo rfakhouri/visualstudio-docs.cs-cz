@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135176"
 ---
 # <a name="source-control-integration-overview"></a>Přehled integrace správy zdrojového kódu
 Tato část porovná dva způsoby, jak integrovat do zdrojového kódu pro Visual Studio; Správa zdrojového kódu modulů Plug-in a VSPackage, která poskytuje řešením pro řízení zdrojového a označuje nové funkce správy zdrojového. Visual Studio umožňuje ruční přepínání mezi VSPackages zdrojového kódu a modulů plug-in programu zdroj ovládacího prvku a také automatického přepínání na základě řešení.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132571"
 ---
 # <a name="extending-the-editor-and-language-services"></a>Rozšíření pro Editor a jazyk služby
 Můžete přidat vlastní editor jazykové funkce služby (například IntelliSense) a rozšířit většinu funkcí editoru kódu v sadě Visual Studio.  Úplný seznam co můžete rozšířit, najdete v části [služba jazyka a body rozšíření editoru](../extensibility/language-service-and-editor-extension-points.md).  

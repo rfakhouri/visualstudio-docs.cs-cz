@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133182"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nové generace projektu: Pod pokličkou, část 2
 V [nové generace projektu: pod pokličkou, jednu část](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) jsme viděli jak **nový projekt** dialogu zadá. Předpokládejme, jste vybrali **aplikaci Visual C# Windows**, vyplněné **název** a **umístění** textová pole a kliknutelnou OK.  

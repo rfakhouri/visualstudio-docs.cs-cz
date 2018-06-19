@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136114"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Postupy: určení symbolů v knihovně
 Procházení symbol nástrojů zobrazí hierarchické zobrazení symbolů. Symboly představují obory názvů, třídy, členy třídy, objektů a další elementy jazyka.  

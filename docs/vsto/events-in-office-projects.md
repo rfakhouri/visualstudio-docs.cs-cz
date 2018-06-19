@@ -40,6 +40,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448711"
 ---
 # <a name="events-in-office-projects"></a>Události v projektech pro systém Office
   Každá šablona projektu Office automaticky vytvoří několik obslužné rutiny událostí. Obslužné rutiny pro úpravy na úrovni dokumentů se mírně liší od obslužné rutiny události pro doplňky VSTO.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133206"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Kontrolní seznam: Vytvoření služby jazyk starší verze
 Následující kontrolní seznam shrnuje základní kroky, které je nutné provést před vytvořením služba jazyka pro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] základní editor. K integraci služby jazyk do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], je nutné vytvořit vyhodnocovací filtr výrazů ladění. Další informace najdete v tématu [zápis vyhodnocovací filtr výrazů CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) v [rozšiřitelnost ladicí program Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
