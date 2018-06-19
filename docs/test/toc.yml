@@ -353,16 +353,14 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: Vytvoření doplňku pro prohlížeč výsledků
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: Použití automatizace uživatelského rozhraní k testování kódu
+- name: Automatizace testů uživatelského rozhraní
   href: use-ui-automation-to-test-your-code.md
   items:
-    - name: 'Návod: Vytváření, upravování a údržba programového testu UI'
+    - name: 'Návod: Vytvoření, úprava a správa programového testu uživatelského rozhraní'
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
     - name: Testování aplikací pro UPW pomocí programových testů uživatelského rozhraní
-      href: test-windows-store-8-1-apps-with-coded-ui-tests.md
-    - name: Testování aplikací pro UPW a aplikací pro Windows Phone 8.1 pomocí programových testů uživatelského rozhraní
-      href: test-windows-phone-8-1-apps-with-coded-ui-tests.md
-    - name: Nastavení jedinečné vlastnosti automatizace pro ovládací prvky UPW za účelem testování
+      href: test-uwp-app-with-coded-ui-test.md
+    - name: Nastavení jedinečné vlastnosti automatizace pro ovládací prvky UPW
       href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: Použití ovládacích prvků HTML5 v programových testech uživatelského rozhraní
       href: using-html5-controls-in-coded-ui-tests.md
@@ -370,7 +368,7 @@
       href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
     - name: Vytvoření datově řízeného programového testu uživatelského rozhraní
       href: creating-a-data-driven-coded-ui-test.md
-    - name: Zajištění čekání programových testů uživatelského rozhraní na konkrétní události při přehrávání
+    - name: Čekání na konkrétní události při přehrávání
       href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
     - name: "Používání jiných webových prohlížečů v\_programových testech uživatelského rozhraní"
       href: using-different-web-browsers-with-coded-ui-tests.md
@@ -386,28 +384,10 @@
       href: testing-a-large-application-with-multiple-ui-maps.md
     - name: Povolení programového testování uživatelského rozhraní pro vaše ovládací prvky
       href: enable-coded-ui-testing-of-your-controls.md
-    - name: "Podporované konfigurace a\_platformy pro programové testy uživatelského rozhraní a\_zaznamenávání akcí"
+    - name: Podporované konfigurace a platformy
       href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
-    - name: Rozšíření programových testů uživatelského rozhraní a záznamů akcí pro podporu Microsoft Excelu
+    - name: Rozšíření rozhraní programových testů uživatelského rozhraní
       href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
-      items:
-        - name: Ukázka doplňku Excel pro programové testování uživatelského rozhraní
-          href: sample-excel-add-in-for-coded-ui-testing.md
-        - name: Ukázka rozhraní komunikátoru Excel
-          href: sample-excel-communicator-interface.md
-        - name: Ukázka rozšíření programového testu UI pro Excel
-          href: sample-coded-ui-test-extension-for-excel.md
-          items:
-            - name: 'Ukázka rozšíření aplikace Excel: třída ExtensionPackage'
-              href: sample-excel-extension-extensionpackage-class.md
-            - name: 'Ukázka rozšíření aplikace Excel: třída TechnologyManager'
-              href: sample-excel-extension-technologymanager-class.md
-            - name: 'Ukázka rozšíření aplikace Excel: třída PropertyProvider'
-              href: sample-excel-extension-propertyprovider-class.md
-            - name: 'Ukázka rozšíření Excel: Třídy Element'
-              href: sample-excel-extension-element-classes.md
-            - name: 'Ukázka rozšíření aplikace Excel: třída ActionFilter'
-              href: sample-excel-extension-actionfilter-class.md
 - name: Správa testovacích prostředí
   href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:
