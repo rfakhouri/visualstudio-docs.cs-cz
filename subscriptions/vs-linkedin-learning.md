@@ -9,12 +9,12 @@ description: Další informace o benefitech LinkedIn Learning jsou součástí L
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 71b6fca12acf1ee1ebd552622a41412f1d1ba269
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbc3f5bc39a21f76f8b45ba5da20ed8504ea1349
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199219"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233448"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Výhodou LinkedIn Learning odběry Visual Studio
 
@@ -89,7 +89,7 @@ Chcete aktivovat předplatné LinkedIn Premium a LinkedIn Learning výhody:
 
 17. Po dokončení aktivace úspěšně vaši nabídku předplatné Premium a nyní můžete začít používat LinkedIn učení a všechny další výhody Premium!
 
-    ![Domovské Learning Learning LinkedIn](_img\vs-linkedin\vs-linkedin-learning-home.png)
+    ![Learning domovské LinkedIn](_img\vs-linkedin\vs-linkedin-learning-home.png)
 
 ## <a name="eligibility"></a>Podmínky
 | Úrovni předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelných?    |
@@ -101,7 +101,7 @@ Chcete aktivovat předplatné LinkedIn Premium a LinkedIn Learning výhody:
 | Visual Studio Dev Essentials | NÁ  | 3 měsíců |Ne.  K dispozici pouze nové odběratele |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NÁ|
 
-<sup>1</sup>*zahrnuje: Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP).    Vyloučí: Microsoft Partner Network (MPN), FTE, MCT softwaru a služeb Developer, BizSpark, představte si, cenná partnera Microsoftu (MVP), oblast ředitel (RD).  MCT softwaru a služeb.*
+<sup>1</sup>*zahrnuje: Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP).  Vyloučí: Microsoft Partner Network (MPN), FTE, MCT softwaru a služeb Developer, BizSpark, představte si, cenná partnera Microsoftu (MVP), oblast ředitel (RD).  MCT softwaru a služeb.*
 
 
 

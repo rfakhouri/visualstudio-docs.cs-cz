@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8153625ec875cb54b0fc7b626d0cef61df2e9b71
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 857df921e928adae24abdce41ecdf9e697648643
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31557980"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235034"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Postupy: Určení souborů podrobného protokolování pro nasazení ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] udržuje aktivity soubory protokolu pro všechna nasazení. Tyto protokoly dokumentu podrobnosti vztahující se k instalaci, inicializaci, aktualizaci a odinstalaci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení. Pro zvýšení podrobností, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zápisy na tyto soubory protokolu pomocí Editoru registru (**regedit.exe**) k určení úrovně podrobností.  
@@ -36,7 +36,7 @@ ms.locfileid: "31557980"
   
 1.  Otevřete **Regedit.exe**.  
   
-2.  Přejděte na uzel `HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
+2.  Přejděte na uzel **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**.  
   
 3.  V případě potřeby vytvořte novou řetězcovou hodnotu s názvem `LogVerbosityLevel`.  
   

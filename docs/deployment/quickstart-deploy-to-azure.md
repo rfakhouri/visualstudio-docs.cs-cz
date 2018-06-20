@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f91fd6e8c101b674b745c120978a47adb17c9b91
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: f28de642d6a1f4f9071099593f990c6197ed34ec
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765372"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234748"
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Publikování aplikace ASP.NET nebo ASP.NET Core Azure App Service pomocí sady Visual Studio
 
@@ -33,7 +33,7 @@ Pokud již účet Azure nemáte, můžete [zaregistrujte si zde](https://azure.m
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu 
 
-1. V sadě Visual Studio, vyberte **soubor > Nový projekt**.
+1. V sadě Visual Studio, vyberte **soubor** > **nový projekt**.
 
 1. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně vyberte buď **webové aplikace ASP.NET (rozhraní .NET Framework)** nebo (C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na **OK**.
 
@@ -43,7 +43,7 @@ Pokud již účet Azure nemáte, můžete [zaregistrujte si zde](https://azure.m
 
     Visual Studio vytvoří projekt.
 
-1. Zvolte **sestavení > Sestavit řešení** a tím projekt sestavit.
+1. Zvolte **sestavení** > **sestavit řešení** a tím projekt sestavit.
 
 ## <a name="publish-to-azure-app-service"></a>Publikování do Azure App Service
 

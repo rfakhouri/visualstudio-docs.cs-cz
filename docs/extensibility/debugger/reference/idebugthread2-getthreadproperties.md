@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19c31fdc648d59879e03d97862f2b9518720a3eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76b2f11e53f8fca5fdf277ce982bcb767d7c8828
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120813"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234601"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Získá vlastnosti, které popisují tohoto podprocesu.  
@@ -46,7 +46,7 @@ int GetThreadProperties (
  [v] Kombinace příznaků z [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) výčet, který určuje, které pole `ptp` mají být vyplněna.  
   
  `ptp`  
- [ve out] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury, která obsahuje vlastnosti vlákno.  
+ [ve out] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktura, která obsahuje vlastnosti vlákno.  
   
 ## <a name="return-value"></a>Návratová hodnota  
  V případě úspěchu vrátí `S_OK`, jinak vrátí kód chyby.  

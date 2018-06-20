@@ -17,18 +17,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e963472ee51f2439b50807a49425dcd7f6d8443a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d1118fa4e6408698187e7f50ca6f9b61bf596a6e
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791910"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234943"
 ---
 # <a name="handling-windows-runtime-events-in-javascript"></a>Zpracování událostí Windows Runtime v jazyce JavaScript
-Prostředí Windows Runtime události nenachází v jazyce JavaScript stejným způsobem jako v C++ nebo rozhraní .NET Framework. Nejsou vlastnosti třídy, ale jsou reprezentovány jako řetězec identifikátory, které se budou předávat na třídu `addEventListener` a `removeEventListener` metody. Například můžete přidat obslužné rutiny události pro [Geolocator.PositionChanged](http://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.geolocation.geolocator.positionchanged.aspx) událostí pomocí předání řetězec "positionchanged" `Geolocator.addEventListener` metoda:  
+Prostředí Windows Runtime události nenachází v jazyce JavaScript stejným způsobem jako v C++ nebo rozhraní .NET Framework. Nejsou vlastnosti třídy, ale jsou reprezentovány jako identifikátory (malého) řetězce, které se budou předávat na třídu `addEventListener` a `removeEventListener` metody. Například můžete přidat obslužné rutiny události pro [Geolocator.PositionChanged](https://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.geolocation.geolocator.positionchanged.aspx) událostí pomocí předání řetězec "positionchanged" `Geolocator.addEventListener` metoda:  
   
 ```JavaScript  
-var locator =  new Windows.Devices.Geolocation.Geolocator();  
+var locator = new Windows.Devices.Geolocation.Geolocator();  
 locator.addEventListener(  
     "positionchanged",   
      function (ev) {  
@@ -36,9 +36,9 @@ locator.addEventListener(
     });  
 ```  
   
- Můžete také nastavit `locator.onpositionchanged` vlastnost.  
+ Můžete také nastavit `locator.onpositionchanged` vlastnost:  
   
-```  
+```JavaScript  
 locator.onpositionchanged =    
     function (ev) {  
         console.log("Got event");  
@@ -61,4 +61,4 @@ function (ev) {
 >  Prostředí Windows Runtime funkcí nejsou k dispozici pro aplikace, které běží v aplikaci Internet Explorer.  
   
 ## <a name="see-also"></a>Viz také  
- [Pomocí prostředí Windows Runtime v jazyce JavaScript](../jswinrt/using-the-windows-runtime-in-javascript.md)
+ [Použití prostředí Windows Runtime v jazyce JavaScript](../jswinrt/using-the-windows-runtime-in-javascript.md)

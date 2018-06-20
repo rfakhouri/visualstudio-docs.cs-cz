@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 425a4e6fd85f635d6e95122a55fe0d09fde7825c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752063"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238329"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů jednotek pomocí Průzkumníka testů
 
@@ -54,7 +54,7 @@ Na panelu průchodu nebo selže v horní části okna Průzkumníka testů je an
 
 ### <a name="run-tests-after-every-build"></a>Spouštění testů po každé sestavení
 
-|||
+|Tlačítko|Popis|
 |-|-|
 |![Spustit po sestavení](../test/media/ute_runafterbuild_btn.png)|Spouštění testů jednotek po každé místní sestavení, zvolte **Test** v nabídce standardní a potom zvolte **spustit testy po sestavení** na panelu nástrojů Průzkumníka testů.|
 
@@ -126,7 +126,7 @@ Průzkumníka testů umožňuje seskupení testů do předdefinovaných kategori
 
 Filtry Průzkumníka testů můžete použít k omezení metody testovací ve svých projektech, které můžete zobrazit a spustit.
 
-Zadejte řetězec v testovací Explorer vyhledávacího pole a zvolte ENTER, testovací seznam je filtrovaný pro zobrazení pouze testy, jejichž plně kvalifikované názvy obsahují řetězec.
+Při testování Explorer vyhledávacího pole zadejte řetězec a zvolte ENTER, testovací seznam je filtrovaný pro zobrazení pouze testy, jejichž plně kvalifikované názvy obsahují řetězec.
 
 Filtrovat podle různých kritérií:
 
@@ -153,7 +153,7 @@ Filtrovat podle různých kritérií:
 
 K vyloučení podsady výsledků filtr, použijte následující syntaxi:
 
-```
+```cpp
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 

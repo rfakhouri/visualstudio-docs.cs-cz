@@ -17,22 +17,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5540eb31d764e82cb0c6cd46eb63cb893559a70f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9aca0c3c17c64ccbc90550305e8f9673de388d98
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973151"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234459"
 ---
-# <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analýza výsledků zátěžových testů v zobrazení grafů Analyzéru zátěžového testu
+# <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analýza výsledků zátěžových testů v zobrazení grafů analyzéru spouštění testů
 
 Výsledky zátěžového testu se zobrazují jako data v několika různých podoken.
 
-Chcete-li zobrazit výsledky testů jako grafy, zvolte **grafy** na panelu nástrojů testu zatížení. Každé jednotlivé grafu se zobrazí panelu s názvem grafu zobrazí v horní v rozevíracím seznamu. Do jiného grafu se zobrazí v panelu, vyberte ze seznamu název jiného grafu.
+Chcete-li zobrazit výsledky testů jako grafy, zvolte **grafy** na **zátěžový test** panelu nástrojů. Každé jednotlivé grafu se zobrazí panelu s názvem grafu zobrazí v horní v rozevíracím seznamu. Do jiného grafu se zobrazí v panelu, vyberte ze seznamu název jiného grafu.
 
-Až čtyři grafu panelů lze zobrazit najednou. Můžete přepínat mezi různé panely rozložení pomocí tlačítka panelu nástrojů panely rozložení.
+Až čtyři grafu panelů lze zobrazit najednou. Můžete přepínat mezi různé panely rozložení pomocí **rozložení panelu** tlačítka panelu nástrojů.
 
-Jsou k dispozici několik předdefinovaných grafy. Můžete použít integrované grafů, jako je nebo je můžete přizpůsobit. Kromě toho můžete vytvořit vlastní grafy. Další informace najdete v tématu [postupy: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) a [postupy: vytvoření vlastní grafy](../test/how-to-create-custom-graphs-in-load-test-results.md).
+Jsou k dispozici několik předdefinovaných grafy. Můžete použít integrované grafů, jako je nebo je můžete přizpůsobit. Kromě toho můžete vytvořit vlastní grafy. Další informace najdete v tématu [postupy: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) a [postupy: vytváření vlastních grafů](../test/how-to-create-custom-graphs-in-load-test-results.md).
 
 ## <a name="built-in-graphs"></a>Předdefinované grafy
 
@@ -82,19 +82,19 @@ Následující tabulka uvádí předdefinované grafy, které jsou k dispozici p
 |**Zobrazení čítačů pro grafy:** můžete přidat různé druhy dat do testu zatížení výsledků grafu umístěním čítače v grafu.|-   [Postupy: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Přiblížení grafy:** po dokončení testu zatížení můžete použít přiblížení řádky přiblížení a přejděte do oblasti grafu. Pomocí zvětšení, můžete zkontrolovat data, která byla vygenerována během zátěžového testu spusťte jemnějšího podrobně.|-   [Postupy: přiblížení oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**Rozložení grafů vedle sebe:** můžete uspořádat grafy výsledků testu zatížení v některém z několika vzory. Můžete dlaždici až čtyři grafy.||
-|**Upravit vzhled pozemků čítače výkonu v grafech:** můžete změnit možnosti výkresu řádků pro čítače výkonu v grafech. To zahrnuje styl barvy a řádku. Kromě toho můžete určit, zda chcete automaticky nebo ručně zadat rozsah, který chcete použít pro vykreslení čítače výkonu.|-   [Postupy: určení možností grafu pro čítače grafů](../test/how-to-specify-plot-options-for-graphing-counters.md)|
+|**Upravit vzhled pozemků čítače výkonu v grafech:** můžete změnit možnosti výkresu řádků pro čítače výkonu v grafech. To zahrnuje styl barvy a řádku. Kromě toho můžete určit, zda chcete automaticky nebo ručně zadat rozsah, který chcete použít pro vykreslení čítače výkonu.|-   [Postupy: Zadejte možnosti pro čítače grafů vykreslení](../test/how-to-specify-plot-options-for-graphing-counters.md)|
 |**Vytváření vlastních grafů:** můžete navrhnout grafy zobrazují konkrétní informace o výsledcích zátěžového testu. Navrhnete vlastní graf zadáním čítače testu zatížení, které se zobrazí graf.|-   [Postupy: vytváření vlastních grafů](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**Exportovat data čítače výkonu v tomto grafu:** exportem dat grafu do aplikace Microsoft Excel pomocí Export dat grafu do aplikace Excel na panelu nástrojů Analyzéru zátěžového testu, když jste v zobrazení grafů.||
+|**Exportovat data čítače výkonu v tomto grafu:** data grafu do aplikace Microsoft Excel můžete exportovat pomocí **Export dat grafu do aplikace Excel** na tlačítko **Analyzéru zátěžového testu** nástrojů při jste na **grafy** zobrazení.||
 
 ## <a name="related-tasks"></a>Související úlohy
 
  [Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [Postupy: přístup k výsledků zátěžového testu pro analýzu](../test/how-to-access-load-test-results-for-analysis.md)
+ [Postupy: přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md)
 
  [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
 - [Postupy: vytváření vlastních grafů](../test/how-to-create-custom-graphs-in-load-test-results.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e6ae6e06daf43a6aec08097df2b37a21d2aaa3
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0be2bc034c209ad43abc7cb0866480ede61a7777
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766669"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235021"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby IIS pomocí importu nastavení publikování v sadě Visual Studio
 
@@ -47,7 +47,7 @@ Soubor nastavení publikování (*\*.publishsettings*) je jiný než profil publ
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Vytvořte nový projekt ASP.NET v sadě Visual Studio
 
-1. V počítači s Visual Studio, vyberte **soubor > Nový projekt**.
+1. V počítači s Visual Studio, vyberte **soubor** > **nový projekt**.
 
 1. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně vyberte buď **webové aplikace ASP.NET (rozhraní .NET Framework)** nebo (C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na **OK**.
 
@@ -59,7 +59,7 @@ Soubor nastavení publikování (*\*.publishsettings*) je jiný než profil publ
 
     Visual Studio vytvoří projekt.
 
-1. Zvolte **sestavení > Sestavit řešení** a tím projekt sestavit.
+1. Zvolte **sestavení** > **sestavit řešení** a tím projekt sestavit.
 
 ## <a name="install-and-configure-web-deploy-on-windows-server"></a>Instalace a konfigurace nasazení webu v systému Windows Server
 

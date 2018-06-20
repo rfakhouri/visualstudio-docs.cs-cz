@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4937bcdef14cadccfa940b2176cf002a976fa16d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 45990b9885d81192f6c1a7d12fb3027b6041fc6b
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766412"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234345"
 ---
 # <a name="debug-sharepoint-solutions"></a>Ladění řešení služby SharePoint
   Můžete ladění řešení služby SharePoint pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicí program. Při spuštění ladění, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na serveru SharePoint nasadí soubory projektu a pak otevře instanci web služby SharePoint ve webovém prohlížeči. Následující části popisují postup ladění aplikací služby SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -129,7 +129,7 @@ ms.locfileid: "34766412"
  Když ladíte projekty workflow [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] přidá šablonu pracovního postupu (v závislosti na jeho typu) do knihovny nebo do seznamu. Pracovní postup šablony potom můžete spustit ručně nebo pomocí přidání nebo aktualizace položku. Pak můžete použít [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] k ladění pracovního postupu.  
   
 > [!NOTE]  
->  Pokud přidáte odkazy na další sestavení, ujistěte se, že tyto sestavení nainstalované v globální mezipaměti sestavení ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Řešení pracovního postupu, jinak nebude úspěšná. Informace o tom, jak nainstalovat sestavení najdete v tématu [ručně spustit pracovní postup v dokumentu nebo položce](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
+>  Pokud přidáte odkazy na další sestavení, ujistěte se, zda jsou nainstalovány tyto sestavení v globální mezipaměti sestavení ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Řešení pracovního postupu, jinak nebude úspěšná. Informace o tom, jak nainstalovat sestavení najdete v tématu [ručně spustit pracovní postup v dokumentu nebo položce](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  Proces nasazení ale nespustí pracovního postupu. Z webu služby SharePoint je nutné spustit pracovní postup. Pracovní postup můžete spustit také pomocí klientské aplikace jako je například Microsoft Office Word 2010 nebo pomocí samostatných kódu na straně serveru. Použijte jeden z přístupů, zadaný v **Průvodce vlastním nastavením SharePoint**.  
   

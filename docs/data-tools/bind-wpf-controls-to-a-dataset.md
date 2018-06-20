@@ -17,15 +17,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 917bf166057ef304f3d045898838b7074d76c467
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2e16680b9122565430907b14e16b32d277bfb455
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690715"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234485"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Vytvoření vazby ovládacích prvků WPF k datové sadě
-V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky vázané na data. Ovládací prvky jsou vázány na záznamy produktu, které jsou zapouzdřené v datové sadě. Taky se přidá tlačítka Procházet produkty a uložit změny do produktu, záznamů.
+
+V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky vázané na data. Ovládací prvky jsou vázány na záznamy produktu, které jsou zapouzdřené v datové sadě. Můžete také přidat tlačítka Procházet produkty a uložit změny do produktu, záznamů.
 
 Tento návod znázorňuje následující úlohy:
 
@@ -40,39 +41,38 @@ Tento návod znázorňuje následující úlohy:
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="prerequisites"></a>Požadavky
+
 K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
+- Visual Studio
 
--   Přístup k spuštěnou instanci systému SQL Server nebo SQL Server Express, který má ukázkové databáze AdventureWorksLT k němu připojen. Si můžete stáhnout z databáze AdventureWorksLT [webu CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Přístup k spuštěnou instanci systému SQL Server nebo SQL Server Express, který má v ukázkové databázi AdventureWorks Light (AdventureWorksLT), který je připojený. Si můžete stáhnout z databáze AdventureWorksLT [webu CodePlex archivu](https://archive.codeplex.com/?p=awlt2008dbscript).
 
 Předchozí znalosti následující koncepty je také užitečné, ale není nutné k dokončení průvodce:
 
--   Datových sad a TableAdapters. Další informace najdete v tématu [datové sady nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) a [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+- Datových sad a TableAdapters. Další informace najdete v tématu [datové sady nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) a [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
--   Datové vazby WPF. Další informace najdete v tématu [přehled vazby dat](/dotnet/framework/wpf/data/data-binding-overview).
+- Datové vazby WPF. Další informace najdete v tématu [přehled vazby dat](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="create-the-project"></a>Vytvoření projektu
- Vytvořte nový projekt WPF. Projekt se zobrazí záznamy produktů.
 
-#### <a name="to-create-the-project"></a>Vytvoření projektu
+Vytvořte nový projekt WPF zobrazíte záznamy produktů.
 
 1.  Spuštění sady Visual Studio.
 
-2.  Na **soubor** nabídky, přejděte na příkaz **nový**a potom klikněte na **projektu**.
+2.  Na **soubor** nabídce vyberte možnost **nový** > **projektu**.
 
 3.  Rozbalte položku **jazyka Visual Basic** nebo **Visual C#** a potom vyberte **Windows**.
 
 4.  Vyberte **aplikaci WPF** šablona projektu.
 
-5.  V **název** zadejte `AdventureWorksProductsEditor` a klikněte na tlačítko **OK**.
+5.  V **název** zadejte **AdventureWorksProductsEditor** a pak vyberte **OK**.
 
-     Visual Studio vytvoří `AdventureWorksProductsEditor` projektu.
+   Visual Studio vytvoří projekt AdventureWorksProductsEditor.
 
 ## <a name="create-a-dataset-for-the-application"></a>Vytvořit datovou sadu pro aplikaci
- Před vytvořením ovládací prvky vázané na data, musíte pro svoji aplikaci definovat datový model a přidat jej do **zdroje dat** okno. V tomto návodu vytvoříte datové sady sloužící jako datový model.
 
-#### <a name="to-create-a-dataset"></a>Chcete-li vytvořit datové sady
+Před vytvořením ovládací prvky vázané na data, musíte pro svoji aplikaci definovat datový model a přidat jej do **zdroje dat** okno. V tomto návodu vytvoříte datové sady sloužící jako datový model.
 
 1.  Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
 
@@ -88,9 +88,9 @@ Předchozí znalosti následující koncepty je také užitečné, ale není nut
 
 5.  Na **vybrat datové připojení** vyberte jednu z následujících možností:
 
-    -   Pokud připojení dat k ukázkové databáze AdventureWorksLT je dostupný v rozevíracím seznamu, vyberte ho a pak klikněte na tlačítko **Další**.
+    - Pokud připojení dat k ukázkové databáze AdventureWorksLT je dostupný v rozevíracím seznamu, vyberte ho a pak klikněte na tlačítko **Další**.
 
-    -   Klikněte na tlačítko **nové připojení**a vytvořit připojení k databázi AdventureWorksLT.
+    - Klikněte na tlačítko **nové připojení**a vytvořit připojení k databázi AdventureWorksLT.
 
 6.  Na **uložit připojovací řetězec k souboru konfigurace aplikace** vyberte **Ano, uložte připojení jako** zaškrtněte políčko a potom klikněte na **Další**.
 
@@ -103,9 +103,8 @@ Předchozí znalosti následující koncepty je také užitečné, ale není nut
 9. Sestavte projekt.
 
 ## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Upravit výchozí metodu výplně TableAdapter
- Chcete-li vyplnit datovou sadu dat, použijte `Fill` metodu `ProductTableAdapter`. Ve výchozím nastavení `Fill` metoda výplněmi `ProductDataTable` v `AdventureWorksLTDataSet` se všechny řádky dat z tabulky produktu. Tato metoda vrátí pouze podmnožinu řádků, můžete upravit. V tomto návodu upravit `Fill` metoda vrátí řádky pouze pro produkty, které mají fotografie.
 
-#### <a name="to-load-product-rows-that-have-photos"></a>Chcete-li načíst produktu řádků, které mají fotografie
+Chcete-li vyplnit datovou sadu dat, použijte `Fill` metodu `ProductTableAdapter`. Ve výchozím nastavení `Fill` metoda výplněmi `ProductDataTable` v `AdventureWorksLTDataSet` se všechny řádky dat z tabulky produktu. Tato metoda vrátí pouze podmnožinu řádků, můžete upravit. V tomto návodu upravit `Fill` metoda vrátí řádky pouze pro produkty, které mají fotografie.
 
 1.  V **Průzkumníku řešení**, dvakrát klikněte `AdventureWorksLTDataSet.xsd` souboru.
 
@@ -124,13 +123,12 @@ Předchozí znalosti následující koncepty je také užitečné, ale není nut
 4.  Klikněte na tlačítko **Dokončit**.
 
 ## <a name="define-the-user-interface"></a>Definování uživatelského rozhraní
- Přidáte několik tlačítka v okně úpravou XAML v Návrháři WPF. Dále v tomto návodu přidáte kód, který umožňuje uživatelům posuňte prostřednictvím a uložte změny produkty záznamů pomocí těchto tlačítek.
 
-#### <a name="to-define-the-user-interface-of-the-window"></a>Chcete-li definovat uživatelské rozhraní okna
+Přidáte několik tlačítka v okně úpravou XAML v Návrháři WPF. Dále v tomto návodu přidáte kód, který umožňuje uživatelům posuňte prostřednictvím a uložte změny produkty záznamů pomocí těchto tlačítek.
 
-1.  V **Průzkumníku**, dvakrát klikněte na MainWindow.xaml.
+1.  V **Průzkumníku řešení**, dvakrát klikněte na *MainWindow.xaml*.
 
-     Otevře se okno v Návrháři WPF.
+     Otevře se v okně **WPF Designer**.
 
 2.  V [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] zobrazit návrháře, přidejte následující kód mezi `<Grid>` značky:
 
@@ -147,9 +145,8 @@ Předchozí znalosti následující koncepty je také užitečné, ale není nut
 3.  Sestavte projekt.
 
 ## <a name="create-data-bound-controls"></a>Vytvořit ovládací prvky vázané na data
- Vytvořit ovládací prvky, které zobrazují záznamy o zákaznících přetažením `Product` tabulce **zdroje dat** okna Návrháře WPF.
 
-#### <a name="to-create-data-bound-controls"></a>Chcete-li vytvořit ovládací prvky vázané na data
+Vytvořit ovládací prvky, které zobrazují záznamy o zákaznících přetažením `Product` tabulce **zdroje dat** okna Návrháře WPF.
 
 1.  V **zdroje dat** okně klikněte na rozevírací nabídku pro **produktu** uzel a vyberte možnost **podrobnosti**.
 
@@ -157,20 +154,20 @@ Předchozí znalosti následující koncepty je také užitečné, ale není nut
 
 3.  V tomto příkladu některá pole se nezobrazí, takže klikněte na rozevírací nabídku vedle následující uzly a vyberte **žádné**:
 
-    -   ProductCategoryID
+    - ProductCategoryID
 
-    -   ProductModelID
+    - ProductModelID
 
-    -   ThumbnailPhotoFileName
+    - ThumbnailPhotoFileName
 
-    -   ROWGUID
+    - ROWGUID
 
-    -   ModifiedDate
+    - ModifiedDate
 
 4.  Klikněte na rozevírací nabídku vedle **ThumbNailPhoto** uzel a vyberte možnost **Image**.
 
     > [!NOTE]
-    >  Ve výchozím nastavení, položky v **zdroje dat** okno, které představují obrázky nemají své výchozí kontrolu nastavena na **žádné**. Je to proto, že obrázky se ukládají jako pole bajtů v databázích a bajtová pole může obsahovat vše od jednoduchého pole bajtů ke spustitelnému souboru rozsáhlé aplikace.
+    > Ve výchozím nastavení, položky v **zdroje dat** okno, které představují obrázky nemají své výchozí kontrolu nastavena na **žádné**. Je to proto, že obrázky se ukládají jako pole bajtů v databázích a bajtová pole může obsahovat vše od jednoduchého pole bajtů ke spustitelnému souboru rozsáhlé aplikace.
 
 5.  Z **zdroje dat** okno, přetáhněte **produktu** uzlů na řádek mřížky v řádku, který obsahuje tlačítka.
 
@@ -181,9 +178,8 @@ Předchozí znalosti následující koncepty je také užitečné, ale není nut
 7.  V **vlastnosti** okno, zaškrtněte políčko vedle položky **IsReadOnly** vlastnost.
 
 ## <a name="navigating-product-records"></a>Procházení záznamů produktu
- Přidejte kód, který umožňuje uživatelům procházet záznamy produktu pomocí **\<** a **>** tlačítka.
 
-#### <a name="to-enable-users-to-navigate-product-records"></a>Chcete-li povolit uživatelům procházet záznamy produktu
+Přidejte kód, který umožňuje uživatelům procházet záznamy produktu pomocí **\<** a **>** tlačítka.
 
 1.  V návrháři, dvakrát klikněte **<** tlačítko na povrchu okno.
 
@@ -207,9 +203,8 @@ Předchozí znalosti následující koncepty je také užitečné, ale není nut
      [!code-vb[Data_WPFDATASET#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_3.vb)]
 
 ## <a name="save-changes-to-product-records"></a>Uložit změny do produktu, záznamů
-Přidejte kód, který umožňuje uživatelům uložit změny do záznamů produktu pomocí **uložit změny** tlačítko.
 
-#### <a name="to-add-the-ability-to-save-changes-to-product-records"></a>Chcete-li přidat možnost uložit změny do produktu, záznamů
+Přidejte kód, který umožňuje uživatelům uložit změny do záznamů produktu pomocí **uložit změny** tlačítko.
 
 1.  V návrháři, dvakrát klikněte **uložit změny** tlačítko.
 
@@ -221,20 +216,19 @@ Přidejte kód, který umožňuje uživatelům uložit změny do záznamů produ
      [!code-vb[Data_WPFDATASET#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_4.vb)]
 
     > [!NOTE]
-    >  Tento příklad používá `Save` metodu `TableAdapter` a uložte změny. Je to vhodné v tomto návodu, proto mění se pouze jednu datovou tabulku. Pokud potřebujete se uložit změny do více tabulek dat, případně můžete použít `UpdateAll` metodu `TableAdapterManager` vygenerovanou s datovou sadu Visual Studio. Další informace najdete v tématu [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+    > Tento příklad používá `Save` metodu `TableAdapter` a uložte změny. Je to vhodné v tomto návodu, proto mění se pouze jednu datovou tabulku. Pokud potřebujete se uložit změny do více tabulek dat, případně můžete použít `UpdateAll` metodu `TableAdapterManager` vygenerovanou s datovou sadu Visual Studio. Další informace najdete v tématu [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
 ## <a name="test-the-application"></a>Testování aplikace
- Sestavte a spusťte aplikaci. Ověřte, že můžete zobrazit a aktualizovat záznamy produktu.
 
-#### <a name="to-test-the-application"></a>Testování aplikace
+Sestavte a spusťte aplikaci. Ověřte, že můžete zobrazit a aktualizovat záznamy produktu.
 
 1.  Stiskněte klávesu **F5**.
 
      Aplikace vytvoří a spustí. Ověřte následující:
 
-    -   Do textových polí zobrazit data z první položky produktu, který má fotografie. Tento produkt má produkt ID 713 a název **dlouho obal Logo Jersey, S**.
+    - Do textových polí zobrazit data z první položky produktu, který má fotografie. Tento produkt má produkt ID 713 a název **dlouho obal Logo Jersey, S**.
 
-    -   Můžete kliknout na **>** nebo **<** tlačítka Procházet další záznamy produktu.
+    - Můžete kliknout na **>** nebo **<** tlačítka Procházet další záznamy produktu.
 
 2.  V jednom z záznamy produktů změnit **velikost** hodnotu a pak klikněte na **uložit změny**.
 
@@ -245,11 +239,12 @@ Přidejte kód, který umožňuje uživatelům uložit změny do záznamů produ
 5.  Zavřete aplikaci.
 
 ## <a name="next-steps"></a>Další kroky
- Po dokončení tohoto průvodce, můžete provádět následující úlohy související:
 
--   Další informace o použití **zdroje dat** oken v sadě Visual Studio pro vazbu WPF ovládací prvky na jiné typy datových zdrojů. Další informace najdete v tématu [prvky vazby WPF služby WCF data Service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
+Po dokončení tohoto průvodce, můžete je vyzkoušet související s následující úlohy:
 
--   Další informace o použití **zdroje dat** oken v sadě Visual Studio pro zobrazení souvisejících dat (tj. data v relaci nadřazený podřízený) v ovládacích prvků WPF. Další informace najdete v tématu [návod: zobrazení souvisejících dat v aplikaci WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Další informace o použití **zdroje dat** oken v sadě Visual Studio pro vazbu WPF ovládací prvky na jiné typy datových zdrojů. Další informace najdete v tématu [prvky vazby WPF služby WCF data Service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
+
+- Další informace o použití **zdroje dat** oken v sadě Visual Studio pro zobrazení souvisejících dat (tj. data v relaci nadřazený podřízený) v ovládacích prvků WPF. Další informace najdete v tématu [návod: zobrazení souvisejících dat v aplikaci WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Viz také:
 

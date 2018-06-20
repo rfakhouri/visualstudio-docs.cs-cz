@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: da826928ff44d306c72f330b8221361579840d6a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752076"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238325"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zápis testů částí pro C/C++ v sadě Visual Studio
 
@@ -38,7 +38,7 @@ Kromě nainstalované rozhraní můžete napsat vlastní test adaptéru pro libo
 
 - **Boost.Test** je dodávána jako součást výchozí **vývoj aplikací s jazykem C++** zatížení. Je integrován se **Průzkumníka testů** ale v současné době není šablona projektu, proto je nutné jej ručně nakonfigurovat. Další informace najdete v tématu [postupy: použití Boost.Test v sadě Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- **CTest** podpora je součástí [CMake Tools pro Visual Studio](/cpp/ide/cmake-tools-for-cpp) komponenta, která je součástí systému **vývoj aplikací s jazykem C++** zatížení. Ale CTest není ještě plně integrovaná s **Průzkumníka testů**. Další informace najdete v tématu [postupy: použití CTest v sadě Visual Studio](how-to-use-ctest-for-cpp.md).
+- **CTest** podpora je součástí [CMake Tools pro Visual Studio](/cpp/ide/cmake-tools-for-visual-cpp) komponenta, která je součástí systému **vývoj aplikací s jazykem C++** zatížení. Ale CTest není ještě plně integrovaná s **Průzkumníka testů**. Další informace najdete v tématu [postupy: použití CTest v sadě Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 a starší**
 
@@ -69,7 +69,7 @@ Dále v jednotky testovací soubor, přidejte `#include` direktivy pro všechny 
 ### <a name="write-test-methods"></a>Test metody zápisu
 
 > [!NOTE]
-> Tato část ukazuje syntaxi pro Microsoft Unit Testing Framework pro C/C++. Jsou zde uvedeny: [referenční dokumentace rozhraní API atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Google Test dokumentaci najdete v tématu [Úvod do testovací Google](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md). Boost.Test, najdete v části [nárůst testovací knihovny: The Unit Test Framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> Tato část ukazuje syntaxi pro Microsoft Unit Testing Framework pro C/C++. Jsou zde uvedeny: [referenční dokumentace rozhraní API atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Google Test dokumentaci najdete v tématu [Úvod do testovací Google](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Boost.Test, najdete v části [nárůst testovací knihovny: The Unit Test Framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
 Ve vašem projektu testovacího souboru má třída se zakázaným inzerováním a metoda definované pro vás jako příklad jak napsat testování kódu. Všimněte si, že podpisů používat TEST_CLASS a TEST_METHOD makra, které metody zjistitelnost z okna Průzkumníka testů.
 
@@ -77,7 +77,7 @@ Ve vašem projektu testovacího souboru má třída se zakázaným inzerováním
 
 TEST_CLASS a TEST_METHOD jsou součástí [Microsoft nativní Test Framework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Testování Explorer** zjistí testovací metody v jiné podporované architektury podobným způsobem.
 
-TEST_METHOD vrátí prázdnou hodnotu. Chcete-li vytvořit výsledků testů, použijte statických metod v `Assert` třídy proti očekávané skutečné výsledky testu. V následujícím příkladu se předpokládá `MyClass` má konstruktor, který, která má `std::string`. Abychom mohli otestovat, zda konstruktor inicializuje třídy podle očekávání takto:
+TEST_METHOD vrátí prázdnou hodnotu. Chcete-li vytvořit výsledků testů, použijte statických metod v `Assert` třídy proti očekávané skutečné výsledky testu. V následujícím příkladu se předpokládá `MyClass` má konstruktor, který přebírá `std::string`. Abychom mohli otestovat, zda konstruktor inicializuje třídy podle očekávání takto:
 
 ```cpp
         TEST_METHOD(TestClassInit)

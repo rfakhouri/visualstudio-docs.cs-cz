@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5a8ca3780af4db9a9fe8b59d58f8c2b537c621d8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 0f50e8a2f9381b4fd248b044772f5c2bdbf95a41
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255090"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234761"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Přidání zdroje dat do testu výkonnosti webu
 
@@ -24,7 +24,7 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
  ![Vazba dat do testu výkonnosti webu](../test/media/web_test_databinding_conceptual.png)
 
- Vytvoříme pomocí ukázkové aplikace ASP.NET. Má tři stránky ASPX – výchozí stránku, Red stránky a Blue stránku. Výchozí stránka má ovládací prvek přepínač zvolit red nebo blue a tlačítko pro odeslání. Další dvě stránky .aspx jsou velmi jednoduché. Jeden má popisek s názvem Red a dalších má popisek s názvem Blue. Když zvolíte odeslat na stránku výchozího zobrazujeme jedním z dalších stránek. Si můžete stáhnout [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) ukázkové nebo postupujte podle společně s webovou aplikaci.
+ Vytvoříme pomocí ukázkové aplikace ASP.NET. Má tři *.aspx* stránky – výchozí stránku, Red stránky a Blue stránku. Výchozí stránka má ovládací prvek přepínač zvolit red nebo blue a tlačítko pro odeslání. Další dvě *.aspx* stránky jsou velmi jednoduché. Jeden má popisek s názvem Red a dalších má popisek s názvem Blue. Když zvolíte odeslat na stránku výchozího zobrazujeme jedním z dalších stránek. Si můžete stáhnout [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) ukázkové nebo postupujte podle společně s webovou aplikaci.
 
  ![Spuštění webové aplikace má být testována](../test/media/web_test_databinding_runwebapp.png)
 
@@ -34,7 +34,7 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
 ## <a name="create-a-sql-database"></a>Vytvoření databáze SQL
 
-1. Pokud nemáte Visual Studio Enterprise, cand můžete ji stáhnout z [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky.
+1. Pokud nemáte Visual Studio Enterprise, si můžete stáhnout z [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky.
 
 2. Vytvoření databáze SQL.
 
@@ -90,11 +90,11 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
 ## <a name="bind-the-data"></a>Vytvoření vazby data
 
-1. Vytvoření vazby ColorName pole.
+1. Vytvoření vazby **ColorName** pole.
 
      ![Vytvoření vazby pole ColorName RadioButtonList1 hodnotu](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. V Průzkumníku řešení otevřete soubor Local.testsettings a vyberte jeden spustit na možnost řádek zdroje dat.
+2. Otevřete *Local.testsettings* souboru v **Průzkumníku řešení** a vyberte **jeden spustit na řádek zdroje dat** možnost.
 
      ![Úpravy souborů nastavení testů](../test/media/web_test_databinding_sql_testsettings.png)
 
@@ -106,13 +106,13 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
      ![Spuštění testu výkonnosti webu Ověření vazby](../test/media/web_test_databinding_sql_runtest.png)
 
-     Pro každý řádek dat se zobrazují dvě spustí. Spustit 1 odešle požadavek stránku Red.aspx a spustit 2 odešle požadavek na stránce Blue.aspx.
+     Pro každý řádek dat se zobrazují dvě spustí. Spustit 1 odešle požadavek stránku *Red.aspx*, a spusťte 2 odešle požadavek stránku *Blue.aspx*.
 
      ![Výsledky testu](../test/media/web_test_databinding_sql_runresults.png)
 
-     Při vytvoření vazby ke zdroji dat, může narušit výchozí pravidlo adresa URL odpovědi. V takovém případě Chyba v spustit 2 je způsobená pravidla, která očekává Red.aspx stránku z původní testovací záznam, ale datové vazby teď ho přesměruje na stránku Blue.aspx.
+     Při vytvoření vazby ke zdroji dat, může narušit výchozí pravidlo adresa URL odpovědi. V takovém případě Chyba v spustit 2 je způsobená pravidla, která očekává *Red.aspx* stránky z původní testovací záznam, ale datové vazby teď přesměruje, aby *Blue.aspx* stránky.
 
-2. Opravte chybu ověření adresa URL odpovědi ověřovací pravidlo odstranit a znovu spustit test.
+2. Opravte chybu ověření odstraněním **adresa URL odpovědi** ověřovací pravidlo a opakujte spuštění testu.
 
      ![Odstranit pravidlo ověření adresa URL odpovědi](../test/media/web_test_databinding_sql_deleteresponseurl.png)
 
@@ -166,11 +166,11 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
 **Odpověď:** Pokud záhlaví sloupců nelze přidat, můžete použít soubor popisu schématu do souboru CSV považovat za databázi.
 
-1. Přidáte nový textový soubor s názvem schema.ini.
+1. Přidat nový textový soubor s názvem *schema.ini*.
 
      ![Přidejte soubor schema.ini](../test/media/web_test_databinding_schemafile.png)
 
-2. Upravte soubor schema.ini přidat informace, které popisuje strukturu vaše data. Například soubor schématu s popisem soubor CSV může vypadat například takto:
+2. Upravit *schema.ini* soubor, abyste přidali informace, které popisuje strukturu vaše data. Například soubor schématu s popisem soubor CSV může vypadat například takto:
 
     ```text
     [testdata.csv]
@@ -181,7 +181,7 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
      ![Přidat zdroje dat do testu výkonnosti webu](../test/media/web_test_databinding_sql_adddatasource.png)
 
-4. Pokud používáte soubor schema.ini, vyberte jako zdroj dat a název databáze (ne soubor CSV).
+4. Pokud používáte *schema.ini* souboru, zvolte **databáze** (ne soubor CSV) jako zdroje dat a pojmenujte ho.
 
      ![Přidat zdroje dat databáze](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
@@ -193,11 +193,11 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
      ![Vyberte zprostředkovatele dat .NET framework OLE DB](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
-7. Vyberte rozšířené.
+7. Zvolte **rozšířené**.
 
      ![Vyberte rozšířené](../test/media/web_test_databinding_advanced.png)
 
-8. Pro vlastnost poskytovatele vyberte Microsoft.Jet.OLEDB.4.0 a pak nastavte rozšířené vlastnosti k textu. ZÁHLAVÍ = NE.
+8. Pro vlastnost poskytovatele, vyberte Microsoft.Jet.OLEDB.4.0 a pak nastavte **rozšířené vlastnosti** k textu. ZÁHLAVÍ = NE.
 
      ![Použít rozšířené vlastnosti](../test/media/web_test_databinding_advancedproperties.png)
 

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b7ba4e3d3a32aa7921d23b8719ec63733b9e239e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 451238283e5f256f9c7c302bd81dd45ad2825cf4
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948441"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233805"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimalizace času spuštění sady Visual Studio
 
@@ -70,7 +70,7 @@ Můžete vždy znovu povolit rozšíření pro budoucí relace pomocí **Správc
 > [!NOTE]
 > Některé starší verze Visual Studio 2017 měl funkci **lightweight řešení zatížení**. Tato funkce již není k dispozici ve verzi Visual Studio 2017 15,5 a novějším. V aplikaci Visual Studio 2017 verze 15,5 a novější velkých řešení, které obsahují spravované kód zatížení mnohem rychleji než dřív, i bez zatížení lightweight řešení.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Optimalizace výkonu v sadě Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Rady a tipy pro zvýšení výkonu Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)

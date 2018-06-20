@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d37e5fa465a5e19b1bfb7577f6ab06c61782f775
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 85657ed886b7eb2b164f9b5e05b2c59391e1147b
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561552"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233578"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Postupy: Konfigurace chování výzvy důvěryhodnosti ClickOnce
 Můžete nakonfigurovat vztahu důvěryhodnosti ClickOnce řídit, jestli koncoví uživatelé mají možnost instalace aplikace ClickOnce, například aplikace Windows Forms, aplikace Windows Presentation Foundation, konzolové aplikace, prohlížeč WPF aplikace a řešení pro systém Office. Nakonfigurujete výzvu vztahu důvěryhodnosti nastavením klíče registru na počítači koncového uživatele.  
@@ -63,7 +63,7 @@ Můžete nakonfigurovat vztahu důvěryhodnosti ClickOnce řídit, jestli koncov
   
 2.  Najděte následující klíč registru:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
      Pokud klíč neexistuje, vytvořte ho.  
   
@@ -122,7 +122,7 @@ Můžete nakonfigurovat vztahu důvěryhodnosti ClickOnce řídit, jestli koncov
   
 2.  Najděte následující klíč registru:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel** 
   
      Pokud klíč neexistuje, vytvořte ho.  
   
@@ -179,7 +179,7 @@ Můžete nakonfigurovat vztahu důvěryhodnosti ClickOnce řídit, jestli koncov
   
 2.  Najděte následující klíč registru:  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
      Pokud klíč neexistuje, vytvořte ho.  
   

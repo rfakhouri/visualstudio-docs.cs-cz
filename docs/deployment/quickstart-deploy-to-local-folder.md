@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 016538bded47a5186294c161cc7f310b26818d15
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 8f17e3214c1222eaadf43f3ea2d0e56742cd1ecf
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764216"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234657"
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Nasazení do místní složky pomocí nástroje Visual Studio publikovat webovou aplikaci nebo aplikaci .NET Core
 
@@ -33,7 +33,7 @@ Tento postup platí pro technologii ASP.NET, ASP.NET Core, .NET Core a Python ap
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu 
 
-1. V sadě Visual Studio, vyberte **soubor > Nový projekt**.
+1. V sadě Visual Studio, vyberte **soubor** > **nový projekt**.
 
 1. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **.NET Core**a klikněte v prostředním podokně **konzolové aplikace (.NET Core)**.
 

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3cc80a6ca29583fdc445b507aeb8f87267459d8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f645f030edc9b815e212b040fddc401ad8a4a8e9
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572722"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235073"
 ---
 # <a name="create-bootstrapper-packages"></a>Vytváření balíčků bootstrapperu
 Instalační program je obecný instalační program, který je možné nakonfigurovat na zjištění a instalace distribuovatelné součásti, jako jsou soubory Instalační služby systému Windows (.msi) a spustitelné programy. Instalační program je také označován jako zaváděcí nástroj. Je naprogramovaný tak, pomocí sady manifesty XML, které určují metadata pro správu instalace součásti.  Každý distribuovatelné součásti, nebo požadovaných součástí, které se zobrazí v **požadavky** dialogové okno pro ClickOnce je balíček zaváděcího nástroje. Balíček zaváděcího nástroje je skupina adresářů a souborů, které obsahují manifestu soubory, které popisují, jak by měly být nainstalovány požadované součásti. 
@@ -88,7 +88,7 @@ V následující tabulce jsou uvedeny vlastnosti, které se vyplní automaticky 
 |ProcessorArchitecture|Procesor a bits slova platformy cílem spustitelný soubor. Následující hodnoty:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
 |[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Číslo verze pro operační systémy Microsoft Windows 95, Windows 98 nebo Windows mi. Syntaxe verze je Major.Minor.ServicePack.|  
 |[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Číslo verze pro operační systémy Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 nebo Windows 7. Syntaxe verze je Major.Minor.ServicePack.|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Verze sestavení Instalační služby systému Windows (msi.dll) spustit během instalace.|  
+|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Verze sestavení Instalační služby systému Windows (msi.dll) ke spuštění během instalace.|  
 |[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Tato vlastnost nastavena, pokud má uživatel oprávnění správce. Hodnoty jsou true nebo false.|  
 |InstallMode|Režim instalace označuje, kde je potřeba nainstalovat ze součásti. Následující hodnoty:<br /><br /> -HomeSite - požadované součásti jsou nainstalované z webu dodavatele.<br />-SpecificSite - požadované součásti jsou nainstalované z umístění, které vyberete.<br />-SameSite - požadované součásti jsou nainstalovány ze stejného umístění jako aplikace.|  
   
@@ -97,7 +97,7 @@ Redistribuovatelné soubory můžete zabránit v projektech nastavení nasazovan
   
 `%ProgramFiles%\Microsoft.NET\RedistList`  
   
-Seznamu redistributable je soubor XML, který by měl název v následujícím formátu: *název společnosti*. *Název komponenty*. RedistList.xml. Ano, například pokud součást nazývá Datawidgets provedená: MSN, použít *Acme.DataWidgets.RedistList.xml*. Příklad seznamu redistributable obsahu může vypadat přibližně takto:  
+Seznamu redistributable je soubor XML, který by měl název v následujícím formátu: *název společnosti*. *Název komponenty*. RedistList.xml. Ano, například pokud součást nazývá DataWidgets provedená: MSN, použít *Acme.DataWidgets.RedistList.xml*. Příklad seznamu redistributable obsahu může vypadat přibližně takto:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  

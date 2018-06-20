@@ -10,29 +10,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0111226fdd3de300265f69930b7e9e56f90876c8
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a091f8fc770b2e9bc6ef2e61e8287f0e8ded5323
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34816013"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233610"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Postupy: Publikování aplikace WPF s povolenými vizuálními styly
 Vizuální styly povolit vzhled běžné ovládací prvky, chcete-li změnit podle motiv volená uživatelem. Ve výchozím nastavení nejsou povolené vizuální styly pro aplikace Windows Presentation Foundation (WPF), takže je nutné ručně povolit. Povolení vizuální styly pro aplikaci WPF a poté publikujete řešení způsobí chybu. Toto téma popisuje, jak vyřešit tuto chybu a proces pro publikování aplikace WPF s povolenými vizuálními styly. Další informace o vizuální styly najdete v tématu [vizuální styly přehled](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Další informace o chybovou zprávu najdete v tématu [řešení potíží s konkrétní chyby v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Chcete-li vyřešit chyby a publikování řešení, je třeba provést následující úlohy:  
   
--   [Publikování řešení bez povolenými vizuálními styly](#BKMK_publishsolwovs).  
+-   [Publikování řešení bez povolenými vizuálními styly](#publish-the-solution-without-visual-styles-enabled).  
   
--   [Vytvořte soubor manifestu](#BKMK_CreateManifest).  
+-   [Vytvořte soubor manifestu](#create-a-manifest-file).  
   
--   [Vložení souboru manifestu do spustitelného souboru publikované řešení](#BKMK_embedmanifest).  
+-   [Vložení souboru manifestu do spustitelného souboru publikované řešení](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution).  
   
--   [Podepisování manifestů aplikace a nasazení](#BKMK_signappdeplyman).  
+-   [Podepisování manifestů aplikace a nasazení](#sign-the-application-and-deployment-manifests).  
   
  Potom můžete přesunout publikované soubory do umístění, ze kterého chcete koncovým uživatelům k instalaci aplikace.  
   
-##  <a name="BKMK_publishsolwovs"></a> Publikování řešení bez povolenými vizuálními styly  
+##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Publikování řešení bez povolenými vizuálními styly  
   
 1.  Ujistěte se, že váš projekt nemá povolenými vizuálními styly. Nejdřív zkontrolujte soubor manifestu vašeho projektu, pro následující kód XML. Poté Pokud se nachází soubor XML, uzavřete XML s značkou komentář.  
   
@@ -71,7 +71,7 @@ Vizuální styly povolit vzhled běžné ovládací prvky, chcete-li změnit pod
   
 2.  Sestavení a publikování řešení. Další informace o tom, jak publikovat řešení najdete v tématu [postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-##  <a name="BKMK_CreateManifest"></a> Vytvořte soubor manifestu  
+## <a name="create-a-manifest-file"></a>Vytvořte soubor manifestu  
   
 1.  Vložte následující kód XML do souboru poznámkového bloku.  
   
@@ -92,7 +92,7 @@ Vizuální styly povolit vzhled běžné ovládací prvky, chcete-li změnit pod
     > [!NOTE]
     >  Zbývající postupech se předpokládá, že název tohoto souboru je **themes.manifest** a který je uložený soubor do adresáře C:\temp ve vašem počítači.  
   
-##  <a name="BKMK_embedmanifest"></a> Vložení souboru manifestu do spustitelného souboru publikované řešení  
+## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Vložení souboru manifestu do spustitelného souboru publikované řešení  
   
 1.  Otevřete **příkazového řádku Visual Studia**.  
   
@@ -121,7 +121,7 @@ cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\App
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   
-##  <a name="BKMK_signappdeplyman"></a> Podepisování manifestů aplikace a nasazení  
+## <a name="sign-the-application-and-deployment-manifests"></a>Podepisování manifestů aplikace a nasazení  
   
 1.  Na příkazovém řádku spusťte následující příkaz pro odebrání `.deploy` rozšíření ze spustitelného souboru v aktuálním adresáři.  
   

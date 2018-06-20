@@ -10,15 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 467099581a746005ecbe686b5806943b3f16ac7e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5af85e8112a4017465329b0284772dd6514ba415
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238379"
 ---
-# <a name="variable-explorer"></a>Proměnné Explorer
+# <a name="variable-explorer"></a>Průzkumník proměnných
 
-**Proměnné Explorer** okně Otevřít pomocí **R nástroje > Windows > proměnné Průzkumníka** (nebo kombinace kláves Ctrl + 8, pokud jste použili **R nástroje > Nastavení vědecké účely dat**), znázorňuje všechny proměnné v daném oboru v aktuální relaci R. Například, pokud jste otevřít proměnné Explorer a zadejte následující řádky do [interaktivních okna](interactive-repl-for-r-in-visual-studio.md):
+**Proměnné Explorer** okně Otevřít pomocí **R nástroje** > **Windows** > **proměnné Explorer** (nebo **Ctrl**+**8** Pokud jste použili **R nástroje** > **nastavení vědecké účely dat**), znázorňuje všechny proměnné v daném oboru v aktuální relaci R. Například, pokud jste otevřít proměnné Explorer a zadejte následující řádky do [interaktivních okna](interactive-repl-for-r-in-visual-studio.md):
 
 ```R
 x <- 42
@@ -34,7 +35,7 @@ Pokud máte složitější rámce R dat definované v relaci, můžete přejít 
 
 ![Rozšířené zobrazení Průzkumníka proměnné](media/variable-explorer-expanded-results.png)
 
-Pokud chcete odstranit proměnné, klikněte pravým tlačítkem a vyberte **odstranit**, nebo vyberte proměnnou a stiskněte klávesu Delete.
+Pokud chcete odstranit proměnné, klikněte pravým tlačítkem a vyberte **odstranit**, nebo vyberte proměnnou a stiskněte klávesu **odstranit** klíč.
 
 Můžete taky vyhledat pozorování v rámci dat pomocí Přírůstkové hledání. Nejprve rozbalte uzly v rámci dat, který chcete hledat, a poté do vyhledávacího pole zadejte hledaný text.
 
@@ -44,9 +45,9 @@ Protože data jsou často tabulkové, můžete zobrazit všechny komplexního da
 
 ![Proměnnou tabulky Průzkumník](media/variable-explorer-table-view.png)
 
-Kliknutím na záhlaví sloupce seřadí data podle sloupce (střídavě vzestupně a sestupně). Podržte klávesu Shift a kliknete na další sloupce řazení také přidá tyto sloupce. Kliknutím na sloupec bez posunutí vrátí jeden sloupec řazení.
+Kliknutím na záhlaví sloupce seřadí data podle sloupce (střídavě vzestupně a sestupně). Podržíte stisknutou **Shift** a kliknutím na další sloupce k řazení také přidá tyto sloupce. Kliknutím na sloupec bez **Shift** vrátí jeden sloupec řazení.
 
-Pořadí, ve kterém můžete kliknutím na záhlaví sloupce určuje pořadí, ve kterém se provádí toto řazení. Například Shift a kliknutí na **cyl** sloupec a potom kliknutím na Shift **mpg** sloupce seřadí dvakrát v seznamu vzestupně válců a sestupně podle spotřeby paliva:
+Pořadí, ve kterém můžete kliknutím na záhlaví sloupce určuje pořadí, ve kterém se provádí toto řazení. Například **Shift a kliknutí na** **cyl** sloupce, pak **Shift a kliknutí na** **mpg** sloupec dvakrát, seřadí seznam pro vzestupné počet cylindrů a sestupné miles za spotřeby:
 
 ![Zobrazení tabulky dat řazení podle dvou sloupců.](media/variable-explorer-table-view-sorting.png)
 
@@ -54,7 +55,7 @@ Vzhledem k proměnné Průzkumníka a zobrazení tabulky jsou v systému windows
 
 ## <a name="open-in-excel-or-other-csv-capable-application"></a>Otevřete v aplikaci Excel (nebo jiných aplikací podporujících sdílený svazek clusteru)
 
-Pro další zpracování a analýza je často užitečné proměnné relace exportovat do souboru CSV. Export provádí pomocí malé ikony aplikace Excel (![ikonu exportu Excel](media/variable-explorer-excel-icon.png)) vedle každého uzlu v proměnné Průzkumníku nebo kliknutím pravým tlačítkem myši na položku a výběrem **otevřít v aplikaci CSV**. Vyberte ikonu zapisuje data do nového souboru CSV v `%userprofile%\Documents\RTVS_CSV_Exports` složku a potom spustí je přidružen tohoto souboru, který ho otevře v libovolnou aplikaci `.csv` rozšíření.
+Pro další zpracování a analýza je často užitečné proměnné relace exportovat do souboru CSV. Export provádí pomocí malé ikony aplikace Excel (![ikonu exportu Excel](media/variable-explorer-excel-icon.png)) vedle každého uzlu v proměnné Explorer, případně podle **pravým tlačítkem myši na** položku a výběrem **otevřít v aplikaci CSV**. Vyberte ikonu zapisuje data do nového souboru CSV v *%userprofile%\Documents\RTVS_CSV_Exports* složku a potom spustí je přidružen tohoto souboru, který ho otevře v libovolnou aplikaci *.csv*rozšíření.
 
 ## <a name="scopes"></a>Obory
 
@@ -68,9 +69,9 @@ Můžete také přepnout obor funkce při zastavení na zarážce v ladicím pro
 
 Proměnné Explorer automaticky změní rozsah funkce v průběhu kódu v ladicím programu, například zobrazení místních proměnných ve funkci.
 
-## <a name="importing-data-into-variable-explorer"></a>Import dat do proměnné Explorer
+## <a name="import-data-into-variable-explorer"></a>Import dat do proměnné Explorer
 
-Dva příkazy na panelu nástrojů proměnné Explorer, které jsou také k dispozici prostřednictvím **R nástroje > dat** nabídce externích CSV datových import sad do relace prostředí R: **importovat datové sady do relace R z adresy URL webového** a **importovat datové sady do relace R z textového souboru**. 
+Dva příkazy na panelu nástrojů proměnné Explorer, které jsou také k dispozici prostřednictvím **R nástroje** > **Data** nabídce externích CSV datových import sad do relace prostředí R: **importovat Datové sady do relace R z adresy URL webového** a **importovat datové sady do relace R z textového souboru**.
 
 Jakmile jste zformulovali k importu souboru CSV, sada Visual Studio zobrazí **importovat datovou sadu** dialogové okno, ve kterém máte možnosti řízení, jak analyzovat tohoto datového souboru (to znamená, co je oddělovač polí a určuje způsob zpracování uvozovky). Můžete také zobrazit náhled rámečku importovaných dat a původní soubor dat:
 

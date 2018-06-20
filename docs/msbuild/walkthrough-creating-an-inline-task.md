@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b82f9813ce610979cd50a1ced7f510240299a612
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f906e6be7d45f3e386b2007c779c4b4906d7980e
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575790"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234095"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Návod: Vytvoření vložené úlohy
 Úlohy nástroje MSBuild obvykle vytváří kompilování třídu, která implementuje <xref:Microsoft.Build.Framework.ITask> rozhraní. Od verze rozhraní .NET Framework verze 4, můžete vytvořit úlohy vložené v souboru projektu. Chcete-li vytvořit samostatné sestavení pro hostování úlohy nemáte. Další informace najdete v tématu [vložené úlohy](../msbuild/msbuild-inline-tasks.md).  

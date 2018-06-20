@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ced0f3e882025e4a6e1bdd940f5aa0d189beb58
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d0eaaac47470378730c526b01b2ce2b637af5cd6
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690972"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233695"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` Metoda vloží hodnoty časového razítka, číselné značky a komentáře řetězce v. *Vsp* souboru. Hodnota časového razítka slouží k synchronizaci externí události. Značky a komentáře, které má být vložen profilace podprocesu, který obsahuje funkci CommentMarkAtProfile musí být ON.  
@@ -65,14 +65,14 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 >  CommentMarkAtProfile metody musí být použit s pouze instrumentace.  
   
 ## <a name="net-framework-equivalent"></a>Ekvivalent v rozhraní .NET framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informace o funkci  
   
 |||  
 |-|-|  
-|**Záhlaví**|Zahrnout VSPerf.h|  
-|**Knihovna**|Použití VSPerf.lib|  
+|**Záhlaví**|Zahrnout *VSPerf.h*|  
+|**Knihovna**|Použití *VSPerf.lib*|  
 |**Unicode**|Implementovaný jako CommentMarkAtProfileW (Unicode) a CommentMarkAtProfileA (ANSI).|  
   
 ## <a name="example"></a>Příklad  

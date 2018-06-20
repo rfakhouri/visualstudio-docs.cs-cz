@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a8b9dd119aba9a5c28b450db11b2eb380b1872a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238322"
 ---
 # <a name="frequently-asked-questions"></a>Nejčastější dotazy
 
@@ -33,7 +34,7 @@ A. Ne.
 A. Absolutně. Ve skutečnosti tady jsou některé, které jsou pro lidí pracujících s R.
 
 - [VsVim pro vim vazeb klíče](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
-- [Github](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
+- [GitHub](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
 - [Editor markdownu s živém náhledu](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
 
 Najdete v článku [Visual Studio Marketplace](https://marketplace.visualstudio.com/) najít další.
@@ -50,7 +51,7 @@ A. Je 1.0 verzi RTVS pouze angličtina. Verze 1.1 bude lokalizované pro stejnou
 
 **Q. Opravdu líbí se aktuální nastavení sady Visual Studio, ale chcete vyzkoušet nové vědecké zpracování dat nastavení. Co mám dělat?**
 
-A. Uložit aktuální nastavení sady Visual Studio pomocí **nástroje > Import a Export nastavení...** , potom přepnout na vědecké zpracování dat nastavení. Chcete-li obnovit uložená nastavení, použijte **nastavení importu a exportu...**  příkaz znovu.
+A. Uložit aktuální nastavení sady Visual Studio pomocí **nástroje** > **nastavení importu a exportu**, potom přepnout na vědecké zpracování dat nastavení. Chcete-li obnovit uložená nastavení, použijte **nastavení importu a exportu** příkaz znovu.
 
 **Q. Můžete uložit Moje projektu sady Visual Studio ve sdílené síťové složce?**
 
@@ -78,9 +79,9 @@ A. Ne, RTVS podporuje pouze 64-bit Edition R spuštěné v 64bitových edicích 
 
 A. Ano, můžete použít systému správy zdrojů, který je integrován do sady Visual Studio.
 
-**Q. Jaké jsou doporučené `.gitignore` nastavení pro projekt RTVS?**
+**Q. Jaké jsou doporučené *.gitignore* nastavení pro projekt RTVS?**
 
-A. Github udržuje hlavní úložiště doporučené `.gitignore` soubory. Zobrazí se zde: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
+A. Github udržuje hlavní úložiště doporučené *.gitignore* soubory. Zobrazí se zde: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>Vzdálené
 
@@ -88,9 +89,9 @@ OTÁZKY. **Novinky vzdálené v sadě Visual Studio**
 
 A. Vzdálené R pro sadu Visual Studio můžete nastavit počítač systému Windows nebo Linux a potom se připojte k němu z RTVS. V tématu [nastavení vzdálené pracovní prostory](setting-up-remote-r-workspaces.md).
 
-OTÁZKY. **Můžete RTVS připojit k serveru R Microsoft?**
+OTÁZKY. **Můžete RTVS připojit k serveru Microsoft Machine Learning?**
 
-A. Ne, protože Microsoft R Server je různé technologie a neposkytuje mechanismus stejné připojení jako vyžadují RTVS.
+A. Ne, protože Microsoft ML Server je různé technologie a neposkytuje mechanismus stejné připojení jako vyžadují RTVS.
 
 OTÁZKY. **Můžete RTVS připojit k virtuálnímu počítači vytvořené pomocí image virtuálního počítače vědecké účely dat v Azure?**
 

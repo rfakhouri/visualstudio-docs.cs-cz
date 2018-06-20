@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ecf9c2973a5fb09cf1a217bd700882dce41626
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec8a5520716f6073d49ab2b5a64becfb760092d2
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132812"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234920"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Element složky (šablony projektů sady Visual Studio)
 Určuje složku, který bude přidán do projektu.  
@@ -65,7 +65,7 @@ Určuje složku, který bude přidán do projektu.
 ## <a name="remarks"></a>Poznámky  
  `Folder` je volitelné podřízeným `Project`.  
   
- Můžete použít některou z následujících metod k uspořádání položek projektu do složky v šabloně:  
+ Položky projektu uspořádat do složek v šabloně můžete použít některou z následujících metod:  
   
 -   Zahrnout složky soubor .zip šablony a přidat je do tohoto projektu v souboru .vstemplate zadáním cesty k souboru v `ProjectItem` elementy bez `Folder` elementy. Toto je doporučená metoda. Příklad:  
   

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b669962fe1a0668b42aec29745072f3451966323
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0bc2ded6217346de3f1633f31a7e03d25f012aa8
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482006"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234254"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Návod: Chybějící objekty z důvodu použití funkce vertex shading
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostiky grafiky nástrojům pro zkoumání objekt, který nebyl nalezen z důvodu chyby, ke kterému dochází během fáze shaderu vrchol.  

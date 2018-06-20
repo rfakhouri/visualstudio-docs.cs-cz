@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: de7de0ce4d37ed74a7d2291ecf2f0db98c07478b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ad0e802bd63a9d489a98eb9f216e6739e378d590
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31147089"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233410"
 ---
-# <a name="language-server-protocol"></a>Jazyk serveru protokolu
+# <a name="language-server-protocol"></a>Protokol jazyka serveru
 
 ## <a name="what-is-the-language-server-protocol"></a>Co je protokol jazyk serveru?
 
@@ -54,7 +54,7 @@ Níže je příklad, jak nástroj a jazyk serveru komunikují během rutinu, kte
 
 * **Uživatel otevře soubor (označované jako dokument) v nástroji**: nástroj upozorní jazyk serveru je otevřený dokument (' textDocument/didOpen'). Od této chvíle pravdivosti o obsahu dokumentu již není v systému souborů, ale ponechá nástroj v paměti.
 
-* **Uživatel provede úpravy**: nástroj upozorní serveru o změně dokumentu (' textDocument/didChange") a sémantické informace programu je aktualizován serverem jazyk. K tomu dojde, jazyk serveru analýzy tyto informace a upozorní nástroj zjištěné chyby a upozornění (' textDocument/publishDiagnostics').
+* **Uživatel provede úpravy**: nástroj upozorní serveru o změně dokumentu (' textDocument/didChange") a sémantické informace programu je aktualizován serverem jazyk. K tomu dojde, jazyk serveru analyzuje tyto informace a upozorní nástroj zjištěné chyby a upozornění (' textDocument/publishDiagnostics').
 
 * **Uživatel provede "Přejít k definici" na symbol v editoru**: Tento nástroj se odešle požadavek 'textDocument a definic, s dva parametry: (1) je dokument URI a (2) pozice text, ze kterého byla spuštěna přejít k definici požadavek na server. Server odpoví dokumentu URI a pozice definice symbolu uvnitř dokumentu.
 

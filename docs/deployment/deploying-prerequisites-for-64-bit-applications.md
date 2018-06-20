@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3ffb52e73be1f86b9ae4be67d130807fc7e238
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4db38a1a95ca179f793dd7a9e13c35f25f623f03
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566001"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233682"
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>Nasazení nezbytných součástí pro 64bitové aplikace
 ClickOnce – nasazení podporuje instalaci aplikací na 64bitových platformách. Cílové platformy jsou **x86** pro 32bitovou platformu **x64** pro podporu sad instrukcí AMD64 a EM64T, počítače a **Itanium** pro 64bitový procesor Itanium.  

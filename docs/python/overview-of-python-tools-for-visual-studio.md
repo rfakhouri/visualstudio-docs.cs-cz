@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 587517bdeabf9755e2678b03206059ef5b403255
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 4a2a3b35f8757e0554a062a43954a776025f4ec7
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449166"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234709"
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Práce s Python v sadě Visual Studio v systému Windows
 
@@ -138,7 +138,7 @@ Další informace:
 
 Visual Studio poskytuje integrovanou podporu pro publikování webových aplikací a cloudové služby Azure. Visual Studio obsahuje nezbytné `web.config` šablon pro obsah dynamických a statických položek. Zatížení Python také obsahuje sadu Azure SDK pro Python, která zjednodušuje využívání služeb Azure z Windows, Mac OS X a Linux aplikace.
 
-![Publikování aplikace do Azure Python v sadě Visual Studio](media/azure-publish-dialog.png)
+![Publikování aplikace Python do Azure v sadě Visual Studio](media/azure-publish-dialog.png)
 
 Další informace:
 
@@ -149,7 +149,7 @@ Další informace:
 
 |   |   |
 |---|---|
-| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | <ul><li>[Úvod do programování s Pythonem](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python Začátečník: Řetězce a funkce](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python základy: Seznam a smyčky](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Otázky nejvyšší Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | <ul><li>[Úvod do programování s Pythonem](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python Začátečník: Řetězce a funkce](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python základy: Seznam a smyčky](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Otázky nejvyšší Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Otázky a odpovědi
 

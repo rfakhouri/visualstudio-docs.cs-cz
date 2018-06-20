@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd67f3db61662535a0a8522575e716886602f5b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 91f406ec97479472b29391c87b932d9178c2d1d8
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560320"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233711"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce – manifest nasazení
 Manifest nasazení je soubor XML, který popisuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, včetně identifikace aktuální [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] verze aplikace pro nasazení.  
@@ -52,7 +52,7 @@ Manifest nasazení je soubor XML, který popisuje [!INCLUDE[ndptecclick](../depl
  Soubor manifestu nasazení musí mít silné názvy a může také obsahovat certifikáty pro ověření vydavatele.  
   
 ## <a name="file-name-syntax"></a>Syntaxe názvu souboru  
- Název souboru manifestu nasazení musí končit příponou .application.  
+ Název souboru manifestu nasazení musí končit `.application` rozšíření.  
   
 ## <a name="examples"></a>Příklady  
  Následující příklad kódu ukazuje manifest nasazení.  

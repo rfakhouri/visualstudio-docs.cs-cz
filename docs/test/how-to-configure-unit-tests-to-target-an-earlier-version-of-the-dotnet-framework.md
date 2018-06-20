@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750737"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233487"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Postupy: Konfigurace testů jednotek pro cílení na dřívější verzi rozhraní .NET Framework
 
@@ -32,7 +32,7 @@ Můžete vytvořit jednotku projektů testů, které cílí určité verze rozhr
 
 **Testování aplikací pro SharePoint**
 
-Možnosti uvedené výše také umožňují zápisu testy částí a testy integrace aplikací služby SharePoint pomocí sady Visual Studio. Další informace o vývoji aplikací služby SharePoint pomocí sady Visual Studio najdete v tématu [vytvořit řešení služby SharePoint](/office-dev/office-dev/create-sharepoint-solutions), [sestavování a ladění řešení služby SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions) a [ověření a ladění kódu pro SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code).
+Možnosti uvedené výše také umožňují zápisu testy částí a testy integrace aplikací služby SharePoint pomocí sady Visual Studio. Další informace o vývoji aplikací služby SharePoint pomocí sady Visual Studio najdete v tématu [vytvořit řešení služby SharePoint](../sharepoint/create-sharepoint-solutions.md), [sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) a [ověření a ladění kódu pro SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
 
 **Omezení**
 
@@ -126,6 +126,6 @@ Když znovu cíle testovací projekty, aby používaly starší verze rozhraní 
 
 ## <a name="see-also"></a>Viz také:
 
-- [Vytvoření řešení služby SharePoint](/office-dev/office-dev/create-sharepoint-solutions)
-- [Sestavování a ladění řešení služby SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)
+- [Vytvoření řešení služby SharePoint](../sharepoint/create-sharepoint-solutions.md)
+- [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Dialogové okno Pokročilé nastavení kompilátoru (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

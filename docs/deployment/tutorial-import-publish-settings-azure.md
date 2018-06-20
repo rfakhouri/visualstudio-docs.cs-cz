@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf8d30907e236ca1f3047b488a5522fd2631295
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: aa38fa6cc15c3017195093e6386ce5aacd28ea83
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237975"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234137"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby Azure App Service pomocí importu nastavení publikování v sadě Visual Studio
 
@@ -46,7 +46,7 @@ Soubor nastavení publikování (*\*.publishsettings*) je jiný než profil publ
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Vytvořte nový projekt ASP.NET v sadě Visual Studio
 
-1. V počítači s Visual Studio, vyberte **soubor > Nový projekt**.
+1. V počítači s Visual Studio, vyberte **soubor** > **nový projekt**.
 
 1. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně vyberte buď **webové aplikace ASP.NET (rozhraní .NET Framework)** nebo (C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na **OK**.
 
@@ -58,7 +58,7 @@ Soubor nastavení publikování (*\*.publishsettings*) je jiný než profil publ
 
     Visual Studio vytvoří projekt.
 
-1. Zvolte **sestavení > Sestavit řešení** a tím projekt sestavit.
+1. Zvolte **sestavení** > **sestavit řešení** a tím projekt sestavit.
 
 ## <a name="create-the-publish-settings-file-in-azure-app-service"></a>Vytvořte soubor nastavení publikování v Azure App Service
 

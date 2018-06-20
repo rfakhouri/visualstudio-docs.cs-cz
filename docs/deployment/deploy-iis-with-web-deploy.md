@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: a63d9947f544ddff1de81aaf34ed62c9646fba3d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 87dc6c4152cd2f162880256b9b8372e04142913c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34794224"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233513"
 ---
 # <a name="deploy-aspnet-to-a-remote-iis-computer-using-web-deploy-in-visual-studio"></a>Nasazení technologie ASP.NET do vzdáleného počítače IIS pomocí nástroje nasazení webu v sadě Visual Studio
 
@@ -26,7 +26,7 @@ Tyto postupy jsme otestovali na tyto konfigurace serveru:
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Vytvoření projektu ASP.NET 4.5.2 aplikace na počítači Visual Studio
   
-1. V počítači s Visual Studio, vyberte **soubor > Nový projekt**.
+1. V počítači s Visual Studio, vyberte **soubor** > **nový projekt**.
 
 1. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně vyberte buď **webové aplikace ASP.NET (rozhraní .NET Framework)** a pak klikněte na **OK**.
 
@@ -38,15 +38,15 @@ Tyto postupy jsme otestovali na tyto konfigurace serveru:
 
     Visual Studio vytvoří projekt.
 
-1. Zvolte **sestavení > Sestavit řešení** a tím projekt sestavit.
+1. Zvolte **sestavení** > **sestavit řešení** a tím projekt sestavit.
 
-## <a name="bkmk_configureIIS"></a> Instalace a konfigurace služby IIS v systému Windows Server
+## <a name="install-and-configure-iis-on-windows-server"></a>Instalace a konfigurace služby IIS v systému Windows Server
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
 ## <a name="update-browser-security-settings-on-windows-server"></a>Aktualizovat nastavení zabezpečení prohlížeče v systému Windows Server
 
-Pokud je konfigurace rozšířeného zabezpečení aplikace je povoleno v aplikaci Internet Explorer (je povolená ve výchozím nastavení), budete muset přidat některé domény jako důvěryhodných serverů, abyste mohli stáhnout některé součásti webového serveru. Přidání důvěryhodných serverů přechodem na **Možnosti Internetu > zabezpečení > důvěryhodných serverů > lokality**. Přidejte následující domény.
+Pokud je konfigurace rozšířeného zabezpečení aplikace je povoleno v aplikaci Internet Explorer (je povolená ve výchozím nastavení), budete muset přidat některé domény jako důvěryhodných serverů, abyste mohli stáhnout některé součásti webového serveru. Přidání důvěryhodných serverů přechodem na **Možnosti Internetu** > **zabezpečení** > **důvěryhodných serverů** > **lokalit** . Přidejte následující domény.
 
 - microsoft.com
 - go.microsoft.com
@@ -55,7 +55,7 @@ Pokud je konfigurace rozšířeného zabezpečení aplikace je povoleno v aplika
 
 Při stahování softwaru, může dojít k žádosti o udělení oprávnění ke spouštění různých skripty webu a prostředky. Některé z těchto prostředků nejsou vyžadovány, ale chcete zjednodušit proces, klikněte na tlačítko **přidat** po zobrazení výzvy.
 
-## <a name="BKMK_deploy_asp_net"></a> Instalace technologie ASP.NET 4.5 na Windows serveru
+## <a name="install-aspnet-45-on-windows-server"></a>Instalace technologie ASP.NET 4.5 na Windows serveru
 
 Pokud potřebujete podrobnější informace k instalaci technologie ASP.NET ve službě IIS, najdete v části [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
@@ -72,11 +72,11 @@ Pokud potřebujete podrobnější informace k instalaci technologie ASP.NET ve s
 
 2. Restartování systému (nebo spuštění **net stop byl /y** následuje **net start w3svc** z příkazového řádku a pokračovat tam ke změně systému cesta).
 
-## <a name="BKMK_install_webdeploy"></a> Nasazení webu instalace 3.6 v systému Windows Server
+## <a name="install-web-deploy-36-on-windows-server"></a>Nasazení webu instalace 3.6 v systému Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-## <a name="BKMK_deploy_asp_net"></a> Konfigurace webu ASP.NET na počítač s Windows serverem
+## <a name="configure-aspnet-web-site-on-the-windows-server-computer"></a>Konfigurace webu ASP.NET na počítač s Windows serverem
 
 1. Otevřete Průzkumníka Windows a vytvořte novou složku, **C:\Publish**, kde později nasadíte projekt ASP.NET.
 
@@ -94,13 +94,13 @@ Pokud potřebujete podrobnější informace k instalaci technologie ASP.NET ve s
 
 8. S lokalitou vybrané ve Správci služby IIS, zvolte **upravit oprávnění**a ujistěte se, že IUSR, IIS_IUSRS nebo uživateli nakonfigurovanému pro fond aplikací je oprávněný uživatel s oprávněními Číst a spouštět. Pokud žádná z těchto uživatelů jsou v něm, přidejte jako uživatel s právy ke čtení a spouštění IUSR.
 
-## <a name="bkmk_webdeploy"></a> Publikujte a nasaďte aplikace pomocí nasazení webu ze sady Visual Studio
+## <a name="publish-and-deploy-the-app-using-web-deploy-from-visual-studio"></a>Publikujte a nasaďte aplikace pomocí nasazení webu ze sady Visual Studio
 
 [!INCLUDE [deploy-app-web-deploy](../deployment/includes/deploy-app-web-deploy.md)]
 
-Navíc budete muset přečíst v části na [řešení potíží s porty](#bkmk_openports).
+Potřebujete taky, přečtěte si následující části na řešení potíží s porty.
 
-## <a name="bkmk_openports"></a> Řešení potíží: Otevřete požadované porty v systému Windows Server
+## <a name="troubleshoot-open-required-ports-on-windows-server"></a>Řešení potíží: Otevřené požadované porty v systému Windows Server
 
 Ve většině nastavení jsou otevřené požadované porty při instalaci ASP.NET a nástroje nasazení webu. Potřebujete však ověřte, že jsou otevřené porty.
 
@@ -114,7 +114,7 @@ Požadované porty:
 
 1. Chcete-li otevřít port v systému Windows Server, otevřete **spustit** nabídky, vyhledejte **brány Windows Firewall s pokročilým zabezpečením**.
 
-2. Zvolte **příchozí pravidla > nové pravidlo > Port**. Zvolte **Další** a v části **určité místní porty**, zadejte číslo portu, klikněte na **Další**, pak **povolit připojení**, klikněte na tlačítko Další, a Přidejte název (**IIS**, **Web Deploy**, nebo **msvsmon**) pro příchozí pravidlo.
+2. Zvolte **příchozí pravidla** > **nové pravidlo** > **Port**. Zvolte **Další** a v části **určité místní porty**, zadejte číslo portu, klikněte na **Další**, pak **povolit připojení**, klikněte na tlačítko Další, a Přidejte název (**IIS**, **Web Deploy**, nebo **msvsmon**) pro příchozí pravidlo.
 
     Pokud chcete další informace o konfiguraci brány Windows Firewall, najdete v části [konfigurace brány Windows Firewall pro vzdálené ladění](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
 

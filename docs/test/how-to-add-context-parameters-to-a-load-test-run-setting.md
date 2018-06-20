@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dd19f945dec052ad2c90784252c0c85eba6889ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c479435ccd37c260c199b66a3a6fee20ce3e602
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969103"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235122"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Postupy: Přidání kontextových parametrů k parametrům spuštění zátěžového testu
 
@@ -36,9 +36,9 @@ Pokud přiřadíte hodnotu parametru kontextu webový_server1 `http://CorporateS
 
 Kromě toho přiřazením různé hodnoty na parametr kontextu za použití stejného názvu v nastavení testu různé zatížení můžete spustit zátěžový test pomocí různých prostředích:
 
--   Podnikový Web Server pracovní spustit nastavení: kontext parametru, který je pojmenován Webový_server1 =http://CorporateStagingWebServer
+-   Podnikový Web Server pracovní spustit nastavení: kontext parametru, který je pojmenován `WebServer1=http://CorporateStagingWebServer`
 
--   Nastavení spuštění podnikové produkční webový Server: Parametr kontextu, který je s názvem Webový_server1 =http://CorporateProductionWebServer
+-   Nastavení spuštění podnikové produkční webový Server: Parametr kontextu, který je s názvem `WebServer1=http://CorporateProductionWebServer`
 
  **Změna nastavení spuštění z příkazového řádku**
 
@@ -64,12 +64,12 @@ Kromě toho přiřazením různé hodnoty na parametr kontextu za použití stej
 
      Pokud spustit nastavení již obsahuje **kontextové parametry** složky, můžete ho klikněte pravým tlačítkem a pak zvolte **přidat parametr kontextu**.
 
-4.  V okně vlastností změňte hodnotu **název** podle potřeby (například Webový_server1). V okně vlastností změňte **hodnotu** na parametr, který chcete použít (například http://CorporateStagingWebServer).
+4.  V okně vlastností změňte hodnotu **název** podle potřeby (například Webový_server1). V okně vlastností změňte **hodnotu** na parametr, který chcete použít (například `http://CorporateStagingWebServer`).
 
-5.  (Volitelné) Zopakujte kroky 3 až 5 a použít jiný řetězec pro **hodnotu** vlastnosti (například http://CorporateProductionWebServer).
+5.  (Volitelné) Zopakujte kroky 3 až 5 a použít jiný řetězec pro **hodnotu** vlastnosti (například `http://CorporateProductionWebServer`).
 
 6.  Zvolte, které spustit nastavení, které chcete být aktivní. Otevřete místní nabídky na spuštění nastavení a vyberte **nastavená jako aktivní**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Konfigurace běhu zátěžových testů](../test/configure-load-test-run-settings.md)

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 020bdb53a62d49eeaf3431c7cca45198c9a2266d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: efc2cd7ccf0eddee72ac8dcb2828e6945554d0d7
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751777"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233944"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Izolace testů jednotek aplikací pro SharePoint 2010 s použitím emulátorů
 Balíček Microsoft.SharePoint.Emulators poskytuje sadu knihoven, které vám pomohou vytvořit testy izolované jednotek aplikací pro Microsoft SharePoint 2010. Použít emulátorů [překrytí](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) z [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) izolace rámec vytvořit jednoduché objekty v paměti, které napodobují nejběžnější objekty a metody rozhraní API služby SharePoint. Pokud není emulovaných metoda služby SharePoint, nebo pokud chcete změnit výchozí chování emulátoru, můžete vytvořit překrytí Fakes výsledky, které chcete poskytnout.
@@ -47,7 +47,7 @@ Balíček Microsoft.SharePoint.Emulators poskytuje sadu knihoven, které vám po
 
  `ScheduleAppointment` Metoda naše testovaného kódu je pravděpodobně jednu z metod první napsané pro komponentu:
 
-```
+```csharp
 // method under test
 public bool ScheduleAppointment(SPWeb web, string listName, string name,
     string phone, string email, string age, DateTime date, out string errorMsg)
@@ -550,4 +550,4 @@ namspace MySPAppTests
 
 - [Testování částí kódu](../test/unit-test-your-code.md)
 - [Testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)
-- [Vývoj řešení služby SharePoint](/office-dev/office-dev/developing-sharepoint-solutions)
+- [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)

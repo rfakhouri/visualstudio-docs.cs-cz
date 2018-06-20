@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d858b6c67893e49b4d4e9ec87c3b20fce56dd7c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ad41ea30f66e877155355aec60de0f4a40e8c6e7
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477859"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233636"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Hledání nevrácené paměti pomocí knihovny CRT
 Nevracení paměti definován jako selhání se správně zrušit přidělení paměti, které již bylo přiděleno, patří mezi nejvíce jemně a pevné zjištění chyby v aplikací C/C++. Nevracení paměti nemusí být si všimli v první, ale v čase, progresivní paměť způsobit příznaky rozsahu snížený výkon k selhání, když je aplikace spuštěná nedostatek paměti. Horší unikající aplikace, která používá všechny dostupnou paměť může způsobit jiná aplikace došlo k chybě, vytváření nejasnostem, která je zodpovědná aplikace. Nevracení paměti neškodné může být i zdánlivě symptomatických z jiných problémů, které by měly být opraveny.  
@@ -186,7 +186,7 @@ Znamená to, že bylo na řádku 20 debug_new.cpp uniklé přidělení.
   
 2.  Pokud aplikace dělí u zarážky, **sledovat** okno.  
   
-3.  V **sledovat** zadejte `_crtBreakAlloc` v v **název** sloupce.  
+3.  V **sledovat** zadejte `_crtBreakAlloc` v **název** sloupce.  
   
      Pokud používáte vícevláknové knihovny DLL verze knihovny CRT (/MD možnost), zahrnují kontext operátor: `{,,ucrtbased.dll}_crtBreakAlloc`  
   

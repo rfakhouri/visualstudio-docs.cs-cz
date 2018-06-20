@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52aca112b802789f45f0a1d667d75b53a7535919
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6c6556ab99f7c72407da9915d73e7a19e6dd45da
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583148"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234582"
 ---
 # <a name="debugging-python-and-c-together"></a>Společně ladění Python a C++
 
@@ -39,7 +39,7 @@ Funkce ladění ve smíšeném režimu patří, jak je popsáno v tomto článku
 
 |   |   |
 |---|---|
-| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | Úvod do vytváření, testování a ladění nativních modulů C sadou Visual Studio, najdete v části [podrobné informace: vytváření nativní moduly](https://youtu.be/D9RlT06a1EI) (webu youtube.com, 9 m 09s). Přehrávání videa se vztahuje na Visual Studio 2015 a 2017. |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | Úvod do vytváření, testování a ladění nativních modulů C sadou Visual Studio, najdete v části [podrobné informace: vytváření nativní moduly](https://youtu.be/D9RlT06a1EI) (webu youtube.com, 9 m 09s). Přehrávání videa se vztahuje na Visual Studio 2015 a 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Povolit ladění ve smíšeném režimu v projektu jazyka Python
 
@@ -64,7 +64,7 @@ Funkce ladění ve smíšeném režimu patří, jak je popsáno v tomto článku
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Povolit ladění ve smíšeném režimu v projektu C/C++
 
-Visual Studio 2017 (verze 15,5 a vyšší) podporuje ve smíšeném režimu ladění z projektu C/C++ (například když při [vložení Python v jiné aplikaci, jak je popsáno na python.org](https://docs.python.org/3/extending/embedding.html)). Pokud chcete povolit ladění ve smíšeném režimu, konfigurace projektu C/C++ pro spuštění "Ladicího programu Python/Native":
+Visual Studio 2017 (verze 15,5 a vyšší) podporuje ve smíšeném režimu ladění z projektu C/C++ (například když [vložení Python v jiné aplikaci, jak je popsáno na python.org](https://docs.python.org/3/extending/embedding.html)). Pokud chcete povolit ladění ve smíšeném režimu, konfigurace projektu C/C++ pro spuštění "Ladicího programu Python/Native":
 
 1. Klikněte pravým tlačítkem na projekt C/C++ v Průzkumníku řešení a vyberte **vlastnosti**
 1. Vyberte **ladění** vyberte "Python/nativní ladicí program" z **ladicí program ke spuštění**a vyberte **OK**.

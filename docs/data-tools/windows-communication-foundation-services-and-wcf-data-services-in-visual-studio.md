@@ -37,15 +37,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9ffe8acdf64394052e89af76ef5ade833c1bee9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a1fc9a9975f2caeea0c1361900dca4d211f4c2ee
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925911"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233623"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio
-Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation (WCF) a [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], technologiích společnosti Microsoft pro vytvoření distribuované aplikace. Toto téma obsahuje úvod do služby od [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspektivy. Úplnou dokumentaci najdete v tématu [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).
+Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation (WCF) a [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], technologiích společnosti Microsoft pro vytvoření distribuované aplikace. Toto téma obsahuje úvod do služby z hlediska Visual Studio. Úplnou dokumentaci najdete v tématu [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).
 
 ## <a name="what-is-wcf"></a>Co je WCF?
  [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] je jednotná architektura pro vytváření zabezpečeným, spolehlivým, zpracovaných a umožňuje vzájemnou spolupráci distribuované aplikace. Nahradí starší meziprocesová komunikace technologie, jako je například ASMX webové služby, .NET Remoting, podnikové služby (DCOM) a služby MSMQ. WCF spojuje funkce všech těchto technologií v rámci jednotný programovací model. Tato funkce zjednodušuje možnosti vývoje distribuovaných aplikací.
@@ -84,20 +84,20 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
  [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]
 
 ## <a name="wcf-tools-in-visual-studio"></a>Nástroje pro WCF v sadě Visual Studio
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poskytuje nástroje, které vám pomůžou vytvořit služby WCF a klienti WCF. Návod, která demonstruje nástroje najdete v tématu [návod: vytvoření jednoduché služby WCF ve Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
+ Visual Studio poskytuje nástroje, které vám pomůžou vytvořit služby WCF a klienti WCF. Návod, která demonstruje nástroje najdete v tématu [návod: vytvoření jednoduché služby WCF ve Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
 
 ### <a name="creating-and-testing-wcf-services"></a>Vytvoření a testování služby WCF
- Můžete použít WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] šablony jako základ k rychlému vytvoření vlastní služby. Potom můžete automaticky hostitel služby WCF a testovacího klienta WCF ladit a testovat službu. Tyto nástroje společně poskytují rychlý a pohodlný ladění a testování cyklu a eliminovat požadavky na zápis k hostování modelu včas.
+ Šablony sady Visual Studio WCF jako základ slouží k rychlému vytvoření vlastní služby. Potom můžete automaticky hostitel služby WCF a testovacího klienta WCF ladit a testovat službu. Tyto nástroje společně poskytují rychlý a pohodlný ladění a testování cyklu a eliminovat požadavky na zápis k hostování modelu včas.
 
 #### <a name="wcf-templates"></a>Šablony WCF
- WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] šablony poskytují základní strukturu třídy pro vývoj služby. Několik šablon WCF je k dispozici v **přidat nový projekt** dialogové okno. Jedná se o projekty knihovny služby WCF, webové servery služby WCF a šablon položek služby WCF.
+ Šablony sady Visual Studio WCF poskytují základní strukturu třídy pro vývoj služby. Několik šablon WCF je k dispozici v **přidat nový projekt** dialogové okno. Jedná se o projekty knihovny služby WCF, webové servery služby WCF a šablon položek služby WCF.
 
  Když vyberete šablonu, soubory jsou přidány pro kontraktu služby, implementace služby a konfiguraci služby. Všechny nezbytné atributy již byly přidány, vytvoření jednoduchého typu "Hello World" služby, a neměl psaní jakéhokoli kódu. Samozřejmě můžete přidat kód k poskytnutí funkce a metody pro skutečnou službu, ale šablony poskytují základ.
 
  Další informace o šablonách WCF najdete v tématu [WCF šablony sady Visual Studio](/dotnet/framework/wcf/wcf-vs-templates).
 
 #### <a name="wcf-service-host"></a>Hostitel služby WCF
- Při prvním spuštění [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ladicího programu (stisknutím klávesy F5) pro projekt služby WCF, hostitel služby WCF, bude automaticky spuštěn nástroj k hostování služby místně. Hostitel služby WCF vytvoří výčet služeb v projektu služby WCF, načte konfiguraci projektu a vytvoří instanci hostitele pro každou službu, kterou najde.
+ Při spuštění ladicího programu sady Visual Studio (stisknutím klávesy F5) projektu služby WCF, nástroj hostitel služby WCF se automaticky spustí k hostování služby místně. Hostitel služby WCF vytvoří výčet služeb v projektu služby WCF, načte konfiguraci projektu a vytvoří instanci hostitele pro každou službu, kterou najde.
 
  Pomocí hostitele služby WCF můžete testovat službu WCF bez psaní dalšího kódu nebo potvrzení k určitému hostiteli během vývoje.
 
@@ -111,7 +111,7 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
  Další informace o testovacího klienta WCF najdete v tématu [testovacího klienta WCF (WcfTestClient.exe)](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe).
 
 ### <a name="accessing-wcf-services-in-visual-studio"></a>Přístup ke službám WCF v sadě Visual Studio
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zjednodušuje vytváření klientů WCF, automatické generování proxy server a koncový bod pro služby, které můžete přidat pomocí **přidat odkaz na službu** dialogové okno. Všechny potřebné informace o konfiguraci se přidá do souboru app.config. Většinu času, všechno, co musíte udělat je vytvořit instanci služby, aby bylo možné ho použít.
+ Visual Studio zjednodušuje vytváření klientů WCF, automatické generování proxy server a koncový bod pro služby, které můžete přidat pomocí **přidat odkaz na službu** dialogové okno. Všechny potřebné informace o konfiguraci se přidá do souboru app.config. Většinu času, všechno, co musíte udělat je vytvořit instanci služby, aby bylo možné ho použít.
 
  **Přidat odkaz na službu** dialogové okno umožňuje zadat adresu služby nebo vyhledávání pro službu, která je definována v řešení. Dialogové okno vrátí seznam hodnot operace poskytují tyto služby a služby. Také umožňuje definovat obor názvů, pomocí kterého budete odkazovat služby v kódu.
 
@@ -236,10 +236,10 @@ K tomuto problému nedošlo, typy v odkazovaných sestaveních sdílejí ve výc
 
 |Název|Popis|
 |-----------|-----------------|
-|[Návod: Vytvoření jednoduché služby WCF ve Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Poskytuje podrobné demonstraci vytváření a používání služby WCF v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|
-|[Návod: Vytvoření služby WCF Data Service pomocí grafického subsystému WPF a Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Poskytuje podrobné demonstraci toho, jak vytvořit a použít [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|
-|[Používání vývojářských nástrojů WCF](/dotnet/framework/wcf/using-the-wcf-development-tools)|Popisuje postup vytvoření a testování služeb WCF v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|
-||[Postupy: Přidání, aktualizace nebo odebrání odkazu na službu WCF Data](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Popisuje, jak odkazovat a používat [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|
+|[Návod: Vytvoření jednoduché služby WCF ve Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Poskytuje podrobné demonstraci vytváření a používání služby WCF v sadě Visual Studio.|
+|[Návod: Vytvoření služby WCF Data Service pomocí grafického subsystému WPF a Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Poskytuje podrobné demonstraci toho, jak vytvořit a použít [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] v sadě Visual Studio.|
+|[Používání vývojářských nástrojů WCF](/dotnet/framework/wcf/using-the-wcf-development-tools)|Popisuje postup vytvoření a testování služeb WCF v sadě Visual Studio.|
+||[Postupy: Přidání, aktualizace nebo odebrání odkazu na službu WCF Data](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Popisuje, jak odkazovat a používat [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] v sadě Visual Studio.|
 |[Řešení potíží s odkazy na službu](../data-tools/troubleshooting-service-references.md)|Uvádí některé běžné chyby, které se můžou vyskytnout s odkazy na službu a jak chcete, aby.|
 |[Ladění služby WCF](../debugger/debugging-wcf-services.md)|Popisuje běžné problémy ladění a techniky, které mohou nastat při ladění služby WCF.|
 |[Návod: Vytvoření víceúrovňové datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Poskytuje podrobné pokyny pro vytvoření typové datové sady a rozdělit do více projektů kód TableAdapter a datové sady.|
@@ -250,6 +250,6 @@ K tomuto problému nedošlo, typy v odkazovaných sestaveních sdílejí ve výc
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Visual Studio Data Tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

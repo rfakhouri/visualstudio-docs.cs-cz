@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3ddc23ab56df017ef0a37c56cd5b0a81ee33a07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47788ccd2fb1bd03ce2f2981289d51f0d625b6a9
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135407"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234670"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 Tento článek obsahuje následující úlohy pro Visual Studio Help Viewer integrátorem:  
@@ -354,7 +354,7 @@ V následující tabulce je libovolný řetězec, který se zobrazí v hranatýc
 |Vlastnost (HTML reprezentace)|Popis|  
 |--------------------------------------|-----------------|  
 |\< obsah meta name="Microsoft.Help.Locale" = "[– kód jazyka]" / >|Nastaví národní prostředí pro toto téma. Pokud tato značka se používá v tématu, musí být použit pouze jednou a musí být vložený výše jiné značky Microsoft Help. Pokud tato značka se nepoužívá, základní text tohoto tématu je indexovaný pomocí dělení slov, která souvisí s národním prostředí produktu, pokud je zadán; jinak en-us se používá pro dělení slov. Tato značka vyhovuje ISOC RFC 4646. Aby se zajistilo, že Microsoft Help funguje správně, tuto vlastnost použijte místo obecné atributu jazyk.|  
-|\< obsah meta name="Microsoft.Help.TopicLocale" = "[– kód jazyka]" / >|Národní prostředí pro toto téma nastavuje, když se také používají jiným národním prostředím. Pokud tato značka se používá v tématu, musíte ho použít pouze jednou. Použijte tuto značku, pokud katalog obsahuje obsah ve více než jednom jazyku. Několika témat v katalogu může mít stejné ID, ale každý musíte zadat jedinečné TopicLocale. Téma, které určuje TopicLocale, odpovídajícímu národnímu katalogu se téma, které se zobrazí v obsahu. Všechny jazykové verze tohoto tématu se však zobrazí ve výsledcích hledání.|  
+|\< obsah meta name="Microsoft.Help.TopicLocale" = "[– kód jazyka]" / >|Národní prostředí pro toto téma nastavuje, když se také používají jiným národním prostředím. Pokud tato značka se používá v tématu, musíte ho použít pouze jednou. Použijte tuto značku, pokud katalog obsahuje obsah ve více než jednom jazyku. Několika témat v katalogu může mít stejné ID, ale každý musíte zadat jedinečné TopicLocale. Téma, které určuje TopicLocale, odpovídajícímu národnímu katalogu je téma, které se zobrazí v obsahu. Všechny jazykové verze tohoto tématu se však zobrazí ve výsledcích hledání.|  
 |\< title > [název] \< /title >|Určuje název tohoto tématu. Tato značka je vyžadován a musí být použit pouze jednou v tématu. Pokud text tématu neobsahuje název \<div > části, tento název se zobrazí v tomto tématu a v obsahu.|  
 |\< Meta name = "Microsoft.Help.Keywords" obsah = "[aKeywordPhrase]" / >|Určuje text odkazu, který se zobrazí v podokně indexu nápovědy. Při kliknutí na odkaz, zobrazí se téma. Můžete zadat několik klíčových slov index pro téma nebo tuto značku můžete vynechat, pokud nechcete, aby se odkazy na toto téma se objeví v indexu. Klíčová slova "K" z dřívějších verzí nápovědy lze převést na tuto vlastnost.|  
 |\< obsah meta name="Microsoft.Help.Id" = "[TopicID]" / >|Nastaví identifikátor pro toto téma. Tato značka je vyžadován a musí být použit pouze jednou v tématu. ID musí být jedinečný mezi témata v katalogu, které mají stejné nastavení národního prostředí. V jiné téma můžete vytvořit odkaz na toto téma pomocí číslem ID této.|  
@@ -454,7 +454,7 @@ Poznámka: proměnné, které jsou označeny "{n}" mají závislostem kódu – 
 |Použití:|Poskytnout zpětnou vazbu ovládacího prvku pro zákazníka, které chcete poskytnout zpětnou vazbu na aktuálním tématu prostřednictvím e-mailu.  Autorským text pro obsah.  Logo definice.|  
 |**Element**|**Hodnota (tyto řetězce můžete upravit tak, aby splňovaly potřeby obsahu adopter.)**|  
 |CopyRight|© 2013 Microsoft Corporation. Všechna práva vyhrazena.|  
-|SendFeedback|\<href = "{0}" {1} > odeslat zpětnou vazbu\</a > k tomuto tématu společnosti Microsoft.|  
+|SendFeedback|\<href = "{0}" {1}> odeslat zpětnou vazbu\</a > k tomuto tématu společnosti Microsoft.|  
 |FeedbackLink||  
 |LogoTitle|[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]|  
 |LogoFileName|vs_logo_bk.GIF|  
@@ -473,28 +473,28 @@ Poznámka: proměnné, které jsou označeny "{n}" mají závislostem kódu – 
 |**Element**|**Hodnota**|  
 |LinkTableTitle|Odkaz tabulky|  
 |TopicEnuLinkText|Zobrazit anglickou verzi\</a > v tomto tématu, která je k dispozici ve vašem počítači.|  
-|TopicOnlineLinkText|Zobrazení v tomto tématu \<href = "{0}" {1} > online\</a >|  
+|TopicOnlineLinkText|Zobrazení v tomto tématu \<href = "{0}" {1}> online\</a >|  
 |OnlineText|online|  
 |Funkce:|**Video zvuk ovládací prvek**|  
 |Použití:|Zobrazit elementy a text obsahu videa|  
 |**Element**|**Hodnota**|  
-|MultiMediaNotSupported|Internet Explorer 9 nebo vyšší musí být nainstalována na podporu obsah {0}.|  
+|MultiMediaNotSupported|Internet Explorer 9 nebo vyšší musí být nainstalován na podporu {0} obsah.|  
 |VideoText|zobrazení video|  
 |AudioText|datový proud zvuku|  
-|OnlineVideoLinkText|\<p > zobrazte video spojené s tímto tématem, klikněte na tlačítko {0}\<href = "\ {1\}" > {2}here\</a >.\< /p >|  
-|OnlineAudioLinkText|\<p > pro naslouchání na zvuk spojené s tímto tématem, klikněte na tlačítko {0}\<href = "\ {1\}" > {2}here\</a >.\< /p >|  
+|OnlineVideoLinkText|\<p > Chcete-li zobrazit video spojené s tímto tématem, klikněte na tlačítko {0} \<href = "{1}" >{2}sem\</a >.\< /p >|  
+|OnlineAudioLinkText|\<p > pro naslouchání na zvuk spojené s tímto tématem, klikněte na tlačítko {0} \<href = "{1}" >{2}sem\</a >.\< /p >|  
 |Funkce:|**Ovládací prvek obsahu není nainstalován**|  
 |Použití:|Elementy textu (řetězce) používá pro vykreslování contentnotinstalled.htm|  
 |**Element**|**Hodnota**|  
 |ContentNotInstalledTitle|V počítači nenašel se žádný obsah.|  
-|ContentNotInstalledDownloadContentText|\<p > Chcete-li stáhnout obsah do počítače, \<href = "{0}" {1} > klikněte na kartu Správa\</a >.\< /p >|  
+|ContentNotInstalledDownloadContentText|\<p > Chcete-li stáhnout obsah do počítače, \<href = "{0}" {1}> klikněte na kartu Správa\</a >.\< /p >|  
 |ContentNotInstalledText|\<p > v počítači je nainstalován žádný obsah. Podrobnosti viz svého správce místní instalace obsahu nápovědy. \</p >|  
 |Funkce:|**Téma nebyl nalezen ovládací prvek**|  
 |Použití:|Elementy textu (řetězce) používá pro vykreslování topicnotfound.htm|  
 |**Element**|**Hodnota**|  
 |TopicNotFoundTitle|Nelze najít požadovaný tématu ve vašem počítači.|  
-|TopicNotFoundViewOnlineText|\<p > tématu požadovaná nebyl nalezen v počítači, ale můžete \<href = "{0}" {1} > zobrazit v online tématu\</a >.\< /p >|  
-|TopicNotFoundDownloadContentText|\<p > naleznete na navigačním panelu odkazů na témata, podobné, nebo \<href = "{0}" {1} > klikněte na kartu Správa\</a > ke stahování obsahu do vašeho počítače.\< /p >|  
+|TopicNotFoundViewOnlineText|\<p > tématu požadovaná nebyl nalezen v počítači, ale můžete \<href = "{0}" {1}> zobrazit v online tématu\</a >.\< /p >|  
+|TopicNotFoundDownloadContentText|\<p > naleznete na navigačním panelu odkazů na témata, podobné, nebo \<href = "{0}" {1}> klikněte na kartu Správa\</a > ke stahování obsahu do vašeho počítače.\< /p >|  
 |TopicNotFoundText|\<p > tématu požadovaná nebyl nalezen v počítači. \</p >|  
 |Funkce:|**Téma poškozený ovládací prvek**|  
 |Použití:|Elementy textu (řetězce) používá pro vykreslování topiccorrupted.htm|  
@@ -506,7 +506,7 @@ Poznámka: proměnné, které jsou označeny "{n}" mají závislostem kódu – 
 |**Element**|**Hodnota**|  
 |HomePageTitle|Domovská stránka prohlížeč nápovědy|  
 |HomePageIntroduction|\<p > Vítá vás Microsoft prohlížeče nápovědy, základní zdroj informací pro všechny uživatele nástroje, produkty, technologie a služby společnosti Microsoft. Help Viewer umožňuje přístup k postupy a referenční informace, ukázky kódu, technické články a další. Hledání obsahu, budete potřebovat, procházet obsah, použít fulltextové vyhledávání nebo procházení obsahu pomocí indexu – klíčové slovo. \</p >|  
-|HomePageContentInstallText|\<p >\<br / > použití \<href = "{0}" {1} > Správa obsahu\</a > provést následující:\<ul >\<li > přidat obsah na váš počítač.\< /li >\<li > zkontrolujte aktualizace lokálního obsahu.\< /li >\<li > odebrat obsah z vašeho počítače.\< /li >\</ul >\</p >|  
+|HomePageContentInstallText|\<p >\<br / > použití \<href = "{0}" {1}> Správa obsahu\</a > provést následující:\<ul >\<li > přidat obsah na váš počítač.\< /li >\<li > zkontrolujte aktualizace lokálního obsahu.\< /li >\<li > odebrat obsah z vašeho počítače.\< /li >\</ul >\</p >|  
 |HomePageInstalledBooks|Nainstalované knihy|  
 |HomePageNoBooksInstalled|V počítači nenašel se žádný obsah.|  
 |HomePageHelpSettings|Nastavení obsahu nápovědy|  

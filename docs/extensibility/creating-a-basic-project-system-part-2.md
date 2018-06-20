@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f39150f02481e18997035a8027518648fa410f48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 022a449d94b09b9810309dc441d823fea0ec9e4e
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107943"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233948"
 ---
-# <a name="creating-a-basic-project-system-part-2"></a>Vytvoření systému základní projektu, část 2
+# <a name="creating-a-basic-project-system-part-2"></a>Vytvoření systému základního projektu, část 2
 První postup v této série [vytváření základní systému projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md), ukazuje, jak vytvořit základní projekt systému. Tento názorný postup je založený na systému základní projektu přidáním šablony sady Visual Studio, stránky vlastností a dalších funkcí. První postup musíte provést před zahájením této jeden.  
   
  Tento názorný postup učí, jak vytvořit typ projektu, který má .myproj rozšíření projektu soubor název. K dokončení průvodce, nemáte vytvořit svůj vlastní jazyk, protože návodu vypůjčí z existujícího systému projekt Visual C#.  
@@ -49,7 +49,7 @@ První postup v této série [vytváření základní systému projektu, část 
   
 1.  V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otevřete SimpleProject řešení, které jste vytvořili pomocí následujících [vytváření základní systému projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md).  
   
-2.  V souboru SimpleProjectPackage.cs najít atribut ProvideProjectFactory. Nahraďte druhý parametr (název projektu) s hodnotou null a čtvrtého parametru (cesta ke složce šablony projektu) ". \\\NullPath ", a to takto.  
+2.  V souboru SimpleProjectPackage.cs najdete atribut ProvideProjectFactory. Nahraďte druhý parametr (název projektu) s hodnotou null a čtvrtého parametru (cesta ke složce šablony projektu) ". \\\NullPath ", a to takto.  
   
     ```  
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,  

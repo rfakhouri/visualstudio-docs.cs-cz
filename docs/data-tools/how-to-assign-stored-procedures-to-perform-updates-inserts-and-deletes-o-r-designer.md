@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2d9f2c60a51d5e8a17b1fecf249e7a24a4ac25f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a1333f9a2ea475baca12a160fd33c31f4d31cedb
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926493"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233669"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Postupy: přiřazení uložené procedury k provedení aktualizací, vložení a odstranění (Návrhář relací objektů)
 Uložené procedury mohou být přidány do Návrhář relací objektů a provedeny jako obvyklé <xref:System.Data.Linq.DataContext> metody. Můžete také používají přepsat výchozí nastavení [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] modul runtime chování, které provádí vložení, aktualizace a odstraní se po uložení změn z tříd entit k databázi (například při volání metody <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metoda).
@@ -63,7 +63,7 @@ Uložené procedury mohou být přidány do Návrhář relací objektů a proved
 
 Vrátit zpět k používání výchozí logiku modulu runtime pro aktualizace, klikněte na tlačítko se třemi tečkami vedle příkaz Insert, Update, nebo odstranění příkazu v **vlastnosti** okna a potom vyberte **využití modulu runtime** v  **Konfigurace chování** dialogové okno.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Metody DataContext](../data-tools/datacontext-methods-o-r-designer.md)

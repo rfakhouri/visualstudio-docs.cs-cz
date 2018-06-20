@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750906"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234982"
 ---
-# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analýza překročení mezních pravidel v zátěžových testech pomocí analyzéru zátěžových testů
+# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analýza mezních pravidel v zátěžových testech pomocí Analyzéru načíst testu
 
 Prahová hodnota pravidel jsou přidružena konkrétních čítačích výkonu a narušení naznačují, že čítač výkonu překročil nebo klesl níže nastavte hodnotu. Při spuštění zátěžového testu můžete analyzovat porušení pro pravidla prahovou hodnotu, která jste dřív nastavili.
 
-Pokud došlo k chybě veškerá porušení zásad, **mezních hodnot** hypertextový odkaz se zobrazí na stavovém řádku Analyzéru zátěžového testu a určuje počet porušení zásad, která došlo k chybě. Zvolíte hypertextový odkaz na tabulku porušení prahové hodnoty zobrazení. Můžete také zobrazit mezních hodnot v **čítače** okno a v grafu.
+Pokud došlo k chybě veškerá porušení zásad, **mezních hodnot** hypertextový odkaz se zobrazí na **Analyzéru zátěžového testu** stavového řádku a určuje počet porušení zásad, která došlo k chybě. Zvolíte hypertextový odkaz na tabulku porušení prahové hodnoty zobrazení. Můžete také zobrazit mezních hodnot v **čítače** okno a v grafu.
 
 ## <a name="view-threshold-violations-in-the-table"></a>Zobrazení mezních hodnot v tabulce
 
@@ -74,7 +74,7 @@ Pokud došlo k chybě veškerá porušení zásad, **mezních hodnot** hypertext
 
  Překročení mezních hodnot můžete zobrazit v grafu. Podobně jako **čítače** panelech ikony komunikovat mezních hodnot v grafu. Ikony se zobrazí v grafu vedle datového bodu, kde došlo k porušení prahové hodnoty. Pokud dojde k porušení prahové hodnoty čítače, který se nenachází v grafu, můžete ho přidat do grafu, tak, že přetáhnete z **čítače** panelů do grafu.
 
- Další informace najdete v tématu [Analýza výsledků zátěžových testů v zobrazení grafů](../test/analyze-load-test-results-in-the-graphs-view.md).
+ Další informace najdete v tématu [výsledky testu zatížení analyzovat v zobrazení grafů](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Viz také:
 

@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0d514c3ab7c2ecf491e1bb1adb5f7d545afd70
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a37cc4c17a403b398fd523f3582aaba910338f4d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746011"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233597"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Vytvoření Windows Forms aplikace v sadě Visual Studio s jazykem Visual Basic
 
@@ -86,7 +86,7 @@ Teď, když jsme přidali ovládacího prvku tlačítko pro vytvoření akce, p�
 
 2. V **Form1.vb** okno, v rozmezí **privátní dílčí** řádku a **End Sub** řádek, zadejte nebo vložte `lblHelloWorld.Text = "Hello World!"`.
 
-     ![Přidejte kód pro formulář formuláře](../ide/media/vb-add-code-to-the-form.png)
+     ![Přidejte kód pro formulář](../ide/media/vb-add-code-to-the-form.png)
 
 ## <a name="run-the-application"></a>Spuštění aplikace
 

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6594b87ad313b7f452f579059af377e6128a887a
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 54a6dee20c35b290b50306d5484dc139e8a7600a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704756"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235099"
 ---
 # <a name="command-window"></a>Příkazové okno
 **Příkaz** okno se používá k provedení příkazy nebo přímo v aliasy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Můžete spustit příkazy nabídek a příkazů, které se nezobrazí na žádné nabídky. K zobrazení **příkaz** okně zvolte **ostatní okna** z **zobrazení** nabídce a vyberte **příkazové okno**.
@@ -75,7 +75,7 @@ ms.locfileid: "33704756"
  V **Immediate** okně naopak znak rovná se (=) interpretována jako operátor přiřazení. Tak například příkaz `>Debug.EvaluateStatement(varA=varB)` přiřadí do proměnné `varA` hodnotu proměnné `varB`.
 
 ## <a name="parameters-switches-and-values"></a>Parametry, přepínače a hodnoty
- Některé [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] příkazy vyžaduje příkazy a volitelné argumenty, přepínače a hodnoty. Při plánování práce s tyto příkazy platí určitá pravidla. Následuje příklad bohaté příkazu o vysvětlení, technologiím.
+ Některé [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] příkazy mají požadované a volitelné argumenty, přepínače a hodnoty. Při plánování práce s tyto příkazy platí určitá pravidla. Následuje příklad bohaté příkazu o vysvětlení, technologiím.
 
 ```cmd
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar

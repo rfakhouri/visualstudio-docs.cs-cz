@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f722dcc4ada5643f9de3342b85469fa667d4b7c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7550c2e3b7d635d20df342558537e7a3dbd7d619
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766549"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234696"
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Publikování webu pomocí nástroje Visual Studio publikovat webovou aplikaci nebo aplikaci .NET Core
 
@@ -33,7 +33,7 @@ Tento postup platí pro technologii ASP.NET, ASP.NET Core, .NET Core a Python ap
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu 
 
-1. V sadě Visual Studio, vyberte **soubor > Nový projekt**.
+1. V sadě Visual Studio, vyberte **soubor** > **nový projekt**.
 
 1. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně vyberte buď **webové aplikace ASP.NET (rozhraní .NET Framework)** nebo (C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na **OK**.
 
@@ -43,7 +43,7 @@ Tento postup platí pro technologii ASP.NET, ASP.NET Core, .NET Core a Python ap
 
     Visual Studio vytvoří projekt.
 
-1. Zvolte **sestavení > Sestavit řešení** a tím projekt sestavit.
+1. Zvolte **sestavení** > **sestavit řešení** a tím projekt sestavit.
 
 ## <a name="publish-to-a-web-site"></a>Publikování na webu.
 

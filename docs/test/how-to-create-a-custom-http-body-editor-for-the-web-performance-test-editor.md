@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 97f0d77e59b629523a34bbad55576219a9660109
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750692"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233981"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Postupy: Vytvoření vlastního editoru těla HTTP pro editor testu výkonnosti webu
 
@@ -301,7 +301,7 @@ Po dokončení úprav textu na řetězec a uživatel klikne na **OK** v dialogov
 
 1.  Vytvoření projektu testů.
 
-2.  Vytvoření testu výkonnosti webu a zadejte adresu URL v prohlížeči k webové službě, například http://dev.virtualearth.net/webservices/v1/metadata/searchservice/dev.virtualearth.net.webservices.v1.search.wsdl.
+2.  Vytvoření webové testování výkonu a zadejte adresu URL v prohlížeči k webové službě.
 
 3.  Po dokončení záznamu v webové editoru testu výkonnosti, rozbalte žádosti pro webovou službu a vyberte buď **řetězec textu** nebo **binární textu**.
 

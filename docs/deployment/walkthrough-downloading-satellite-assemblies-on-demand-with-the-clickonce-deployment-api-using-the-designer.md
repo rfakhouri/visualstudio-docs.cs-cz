@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a56cc87978ebc5b8c64c0a2a6774186048efa7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6438bbb905244902a8f5407a2ad8dea74430c430
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560892"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233461"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Návod: Stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce pomocí Návrháře
 Aplikace Windows Forms lze nakonfigurovat pro více jazykových verzí prostřednictvím satelitní sestavení. A *satelitní sestavení* je sestavení obsahující prostředky aplikace pro jazykovou verzi než výchozí jazykovou verzi aplikace.  
@@ -51,7 +51,7 @@ Aplikace Windows Forms lze nakonfigurovat pro více jazykových verzí prostřed
   
      Satelitní sestavení bude mít název ve tvaru *isoCode*\ApplicationName.resources.dll, kde *isoCode* je identifikátor jazyka ve formátu RFC 1766.  
   
-5.  Klikněte na tlačítko **nové...**  v **Skupina stažení** seznamu pro každý jazyk identifikátor. Po zobrazení výzvy k názvu skupiny stahování, zadejte identifikátor jazyka. Například by pro japonské satelitní sestavení, zadejte název skupiny stažení `ja-JP`.  
+5.  Klikněte na tlačítko **nový** v **Skupina stažení** seznamu pro každý jazyk identifikátor. Po zobrazení výzvy k názvu skupiny stahování, zadejte identifikátor jazyka. Například by pro japonské satelitní sestavení, zadejte název skupiny stažení `ja-JP`.  
   
 6.  Zavřít **soubory aplikace** dialogové okno.  
   

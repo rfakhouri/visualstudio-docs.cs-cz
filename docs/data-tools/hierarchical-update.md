@@ -23,17 +23,17 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 442d6cd60597219c25b41f26ad8c2dc2151248ee
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 513ac512c1f4bd368e069ceaf8448d5712a23b4e
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747466"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234563"
 ---
 # <a name="hierarchical-update"></a>Hierarchická aktualizace
 *Hierarchická aktualizace* odkazuje na proces ukládání aktualizovaná data (z datové sady s dvou nebo více souvisejících tabulek) zpět do databáze při zachování pravidla referenční integrity. *Referenční integrity* odkazuje na pravidla konzistence poskytované omezení v databázi, která řídí chování vkládání, aktualizaci a odstraňování souvisejících záznamů. Například je referenční integrity, který vynutí vytvoření záznamu zákazníka před povolením objednávky vytvoření tohoto zákazníka.  Další informace o vztahy v datových sadách najdete v tématu [vztahy v datových sadách](../data-tools/relationships-in-datasets.md)
 
- Hierarchická aktualizace funkce používá `TableAdapterManager` ke správě `TableAdapter`s v typové datové sady. `TableAdapterManager` Součást [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-vygenerované třídy, takže není součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Při přetažení tabulku z okna zdrojů dat na stránku WPF nebo do formulářů Windows Visual Studio. přidá proměnné typu TableAdapterManager formulář nebo stránky a zobrazení v Návrháři na hlavním panelu součásti. Podrobné informace o `TableAdapterManager` třídy, najdete v části odkaz TableAdapterManager [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+ Hierarchická aktualizace funkce používá `TableAdapterManager` ke správě `TableAdapter`s v typové datové sady. `TableAdapterManager` Součást je třída generovaný Visual Studio, takže není součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Při přetažení tabulku z okna zdrojů dat na stránku WPF nebo do formulářů Windows Visual Studio. přidá proměnné typu TableAdapterManager formulář nebo stránky a zobrazení v Návrháři na hlavním panelu součásti. Podrobné informace o `TableAdapterManager` třídy, najdete v části odkaz TableAdapterManager [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
  Ve výchozím nastavení datové sady související tabulky jsou považovány za "pouze vztahy" což znamená, že ji nebude vynutit omezení cizího klíče. Toto nastavení v době návrhu můžete upravit pomocí návrháře Dataset. Vyberte řádek vztah mezi dvěma tabulkami se zprovoznit **vztah** dialogové okno. Zde provedené změny se určí, jak TableAdapterManager chová při odesílání změny v souvisejících tabulek zpět do databáze.
 

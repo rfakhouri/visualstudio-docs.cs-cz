@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 864d0ef0f4934e040722a9a9fc00ba7a54f3331c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 20f7f09688fbeeb3ccd9d79b35dd334bdba888f5
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31558006"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235008"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Postupy: Určení stránky publikování pro aplikaci ClickOnce
 Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, je generována a publikována spolu s aplikací výchozí webové stránky (publish.htm). Tato stránka obsahuje název aplikace, odkaz na instalaci aplikace a všechny požadované součásti a odkaz na téma nápovědy popisující [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. **Publikovat stránku** vlastnost pro svůj projekt můžete zadat název webové stránky pro vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
@@ -45,7 +45,7 @@ Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
   
 5.  V **možnosti publikování** dialogové okno pole, ujistěte se, že **webovou stránku otevřít nasazení po publikování** políčko (měl by být vybrán ve výchozím nastavení).  
   
-6.  V **nasazení webové stránky:** pole, zadejte název pro svou webovou stránku a pak klikněte na tlačítko **OK**.  
+6.  V **nasazení webové stránky** pole, zadejte název pro svou webovou stránku a pak klikněte na tlačítko **OK**.  
   
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Chcete zabránit spouštění pokaždé, když publikujete stránky publikování  
   

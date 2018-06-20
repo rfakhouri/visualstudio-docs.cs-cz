@@ -21,31 +21,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a9829a80916f6e18e9adaf3d0e41fe825541438
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5c37bcfb086acf265a719abe688c6738fbcbfc01
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31564503"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234007"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Řešení konkrétních chyb v nasazeních ClickOnce
-Toto téma obsahuje následující běžné chyby, ke kterým dochází při nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a poskytuje postup řešení každého problému.  
+Tento článek obsahuje následující běžné chyby, ke kterým dochází při nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a poskytuje postup řešení každého problému.  
   
 ## <a name="general-errors"></a>Obecné chyby  
   
-#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Při pokusu vyhledat soubor .application, nedojde k žádné akci, nebo XML vykreslí v aplikaci Internet Explorer nebo se zobrazí dialogové okno spustit nebo uložit jako  
+#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Při pokusu o vyhledání souboru aplikace, nedojde k žádné akci, nebo XML vykreslí v aplikaci Internet Explorer nebo zobrazit dialogové okno spustit nebo uložit jako  
  Tato chyba je pravděpodobně způsobená typy obsahu (také označované jako typy MIME) nesprávně registrovanými na serveru nebo klienta.  
   
- Nejprve se ujistěte, že je server nakonfigurovaný pro přidružení příponu .application obsahu typ "application/x-ms-application".  
+ Nejprve se ujistěte, že je server nakonfigurovaný pro přidružení `.application` rozšíření s obsahem typ "application/x-ms-application."  
   
- Pokud server je nakonfigurován správně, ujistěte se, že [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] je v počítači nainstalována. Pokud [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] je nainstalován, a stále vidíte potíže, zkuste odinstalovat a znovu nainstalovat [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] se znovu registrovat, typu obsahu na straně klienta.  
+ Pokud server je nakonfigurován správně, zkontrolujte, zda [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] je v počítači nainstalována. Pokud [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] je nainstalován, a stále vidíte potíže, zkuste odinstalovat a znovu nainstalovat [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] se znovu registrovat, typu obsahu na straně klienta.  
   
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Uvádí chybová zpráva "nelze načíst aplikaci. Soubory v nasazení chybí"nebo"stažení aplikace byla přerušena, zkontrolujte chyby sítě a zkuste to znovu později"  
  Tato zpráva znamená, že jeden nebo více souborů, které se odkazují [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty nelze stáhnout. Nejjednodušší způsob, jak ladit tato chyba se pokusí stáhnout adresu URL, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uvádí nelze stáhnout. Zde jsou některé možné příčiny:  
   
 -   Pokud soubor protokolu říká "(403) zakázán" nebo "(404) Not found" Ověřte, že webový server je nakonfigurován tak, aby neblokovala stažení tohoto souboru. Další informace najdete v tématu [Server a problémy s konfigurací klienta v nasazeních ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Pokud soubor .config je blokován nastavením serveru, najdete v části "Chyba stažení při instalaci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci, která obsahuje soubor .config" dál v tomto tématu.  
+-   Pokud soubor .config je blokován nastavením serveru, najdete v části "Chyba stažení při instalaci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci, která obsahuje soubor .config" dále v tomto článku.  
   
 -   Určete, jestli k situaci došlo proto `deploymentProvider` URL v manifestu nasazení odkazuje na jiné umístění než použitá adresa URL pro aktivaci.  
   
@@ -129,9 +129,9 @@ Toto téma obsahuje následující běžné chyby, ke kterým dochází při nas
 |Aplikaci nelze spustit. Obraťte se na vydavatele aplikace.<br /><br /> Nelze spustit aplikaci. Požádejte dodavatele aplikace o pomoc.|Toto jsou obecné chybové zprávy, které dojít, když aplikace nelze spustit, a naleznete žádný konkrétní důvod. Často to znamená, že aplikace je nějakým způsobem poškozena nebo který [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] úložiště je poškozeno.|  
 |Nelze pokračovat. Aplikace je v nesprávném formátu. Pomoc, obraťte se na vydavatele aplikace.<br /><br /> Ověřování aplikací se nezdařilo. Nelze pokračovat.<br /><br /> Nelze načíst soubory aplikace. Soubory poškozený v nasazení.|Jeden ze souborů manifestu v nasazení není syntakticky správný, nebo obsahuje hodnotu hash, který nelze sjednotit pomocí odpovídající soubor. Tato chyba může taky znamenat, že manifest vložený uvnitř sestavení je poškozený. Znovu vytvořte nasazení a znovu zkompiluje vaší aplikace, nebo vyhledejte a opravte chyby ručně v vaše manifesty.|  
 |Nelze načíst aplikaci. Došlo k chybě ověřování.<br /><br /> Instalace aplikace se nezdařilo. Nelze nalézt soubory aplikace na serveru. Požádejte o pomoc vydavateli aplikace nebo svého správce.|Jeden nebo více souborů v nasazení nelze stáhnout, protože nemáte oprávnění pro přístup k nim. Může to být způsobeno chybou 403 Zakázáno vrácený webový server, který může dojít, pokud jeden ze souborů ve vašem nasazení končí příponou, která si webový server s nimi zacházet jako na chráněný soubor. Adresář, který obsahuje jeden nebo více souborů aplikace může také vyžadovat uživatelské jméno a heslo pro přístup.|  
-|Aplikaci nelze stáhnout. Aplikace chybí požadované soubory. Požádejte dodavatele aplikace nebo správce systému o pomoc.|Jeden nebo více souborů uvedených v manifestu aplikace nelze nalézt na serveru. Ověřte, zda odeslali soubory závislé všechna nasazení a zkuste to znovu.|  
+|Aplikaci nelze stáhnout. Aplikace chybí požadované soubory. Požádejte dodavatele aplikace nebo správce systému o pomoc.|Jeden nebo více souborů uvedených v manifestu aplikace nelze nalézt na serveru. Zkontrolujte, zda odeslali soubory závislé všechna nasazení a zkuste to znovu.|  
 |Stažení aplikace se nezdařilo. Zkontrolujte připojení k síti, nebo se obraťte na správce systému nebo poskytovatele síťové služby.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Nelze navázat síťové připojení k serveru. Zkontrolujte stav sítě a dostupnost serveru.|  
-|URLDownloadToCacheFile se nezdařila s hodnotou HRESULT:\<číslo > ". Došlo k chybě při pokusu o stažení '\<soubor >'.|Pokud uživatel nastavil možnost rozšířené zabezpečení aplikace Internet Explorer "Upozornit při změně mezi zabezpečeným a není zabezpečený režim" na cílovém počítači, nasazení a adresy URL instalační program instaluje aplikace ClickOnce k lokalitě zabezpečené přesměrována z nezabezpečeného (nebo naopak), instalace se nezdaří, protože ji přeruší upozornění aplikace Internet Explorer.<br /><br /> To vyřešit, můžete provést jednu z těchto možností:<br /><br /> -Zrušte výběr možnosti zabezpečení.<br />-Ujistěte se, že není URL přesměrována takovým způsobem, který mění režimy zabezpečení.<br />-Úplně odeberte přesměrování a přejděte na adresu URL skutečné instalační program.|  
+|URLDownloadToCacheFile se nezdařila s hodnotou HRESULT:\<číslo > ". Došlo k chybě při pokusu o stažení '\<soubor >'.|Pokud uživatel nastavil možnost rozšířené zabezpečení aplikace Internet Explorer "Upozornit při změně mezi zabezpečeným a není zabezpečený režim" na cílovém počítači, nasazení a adresy URL instalační program instaluje aplikace ClickOnce k lokalitě zabezpečené přesměrována z nezabezpečeného (nebo naopak), instalace se nezdaří, protože ji přeruší upozornění aplikace Internet Explorer.<br /><br /> Pokud chcete tuto chybu vyřešit, můžete provést jednu z následujících úloh:<br /><br /> -Zrušte výběr možnosti zabezpečení.<br />-Ověřte, zda není URL přesměrována takovým způsobem, který mění režimy zabezpečení.<br />-Úplně odeberte přesměrování a přejděte na adresu URL skutečné instalační program.|  
 |Zápis na disk došlo k chybě. Může být nedostatek místa k dispozici na disku. Požádejte dodavatele aplikace nebo správce systému o pomoc.|To může znamenat nedostatek místa na disku pro uložení aplikace, ale může také to znamenat další obecné vstupně-výstupní chyba při ukládání souborů aplikace na jednotku.|  
 |Nelze spustit aplikaci. Na disku není dostatek volného místa.|Pevný disk je zaplněn. Vyčistěte prostor a spusťte aplikaci znovu.|  
 |Příliš mnoho nasazených aktivací se pokus o načtení najednou.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] omezuje počet různých aplikací, které můžete spustit ve stejnou dobu. Toto je z velké části k ochraně proti škodlivým pokusům o k zahájení denial-of-service útoky na místní [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] služeb; uživatelů, kteří se pokuste spustit stejnou aplikaci opakovaně, rychle za sebou, bude pouze ukončí jednu instanci aplikace.|  

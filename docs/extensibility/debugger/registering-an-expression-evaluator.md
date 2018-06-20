@@ -14,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a34278ecca071c31e62ff4e405e9d7ada112d425
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3e764220fe5fe01e20b66af403dfd8b423e34e7
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129560"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234023"
 ---
-# <a name="registering-an-expression-evaluator"></a>Registrace vyhodnocení výrazu
+# <a name="registering-an-expression-evaluator"></a>Registrace vyhodnocovače výrazů
 > [!IMPORTANT]
 >  V sadě Visual Studio 2015 se již nepoužívá tímto způsobem implementace vyhodnocovače výrazů. Informace o implementaci vyhodnocovače výrazů CLR, najdete v tématu [vyhodnocovače výrazů CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
@@ -30,7 +30,7 @@ ms.locfileid: "31129560"
 ## <a name="managed-code-expression-evaluator"></a>Vyhodnocovací filtr výrazů spravovaného kódu  
  Spravovaný kód EE je implementovaný jako knihovny tříd, což je knihovna DLL, která registruje COM prostředí, obvykle spouštěné volání VSIP program **regpkg.exe**. Samotný proces zápisu klíče registru pro prostředí COM se proto automaticky.  
   
- Metoda hlavní třídy je označena <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, indikující, že dané metody se má volat při knihovnu DLL registrované s COM. Tato metoda registrace často říká `RegisterClass`, provede úlohu registrace knihovny DLL pomocí sady Visual Studio. Odpovídající `UnregisterClass` (označené jako <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), vrátí zpět důsledky `RegisterClass` při odinstalaci knihovnu DLL.  
+ Metoda hlavní třídy je označena <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, což indikuje, že metoda má být volána, když knihovnu DLL registrované s COM. Tato metoda registrace často říká `RegisterClass`, provede úlohu registrace knihovny DLL pomocí sady Visual Studio. Odpovídající `UnregisterClass` (označené jako <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), vrátí zpět důsledky `RegisterClass` při odinstalaci knihovnu DLL.  
   
  Stejné položky registru jsou vytvářeny jako EE napsané v nespravovaný kód. jediným rozdílem je, že neexistuje žádná pomocné funkce, jako `SetEEMetric` které udělají tuto práci za vás. Příkladem tohoto procesu registrace nebo odregistrace vypadá takto:  
   

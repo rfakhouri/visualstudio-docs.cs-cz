@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84166ed96fb49567f4ede3e8e0c4b7e8ba3cc814
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1179f1fa6b642f7f2523699332ec64ccc13e4b8f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142289"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233552"
 ---
 # <a name="signing-vsix-packages"></a>Podepisování balíčků VSIX
 Rozšíření sestavení nemusíte být podepsané před jejich spuštěním v sadě Visual Studio, ale je dobrým zvykem Uděláte to tak.  
@@ -39,7 +39,7 @@ Rozšíření sestavení nemusíte být podepsané před jejich spuštěním v s
   
 1.  Přidání vaší VSIX do projektu.  
   
-2.  Klikněte na uzel projektu v Průzkumníku řešení klikněte pravým tlačítkem na výběr **přidat &#124; spravovat balíčky NuGet**.  Další informace o NuGet a přidání balíčků NuGet naleznete v příručce najdete v článku [NuGet dokumentace](/NuGet) a [uživatelského rozhraní Správce balíčků](/NuGet/Tools/Package-Manager-UI) témata.  
+2.  Klikněte na uzel projektu v Průzkumníku řešení klikněte pravým tlačítkem na výběr **přidat &#124; spravovat balíčky NuGet**.  Další informace o NuGet a přidání NuGet balíčky najdete v článku [NuGet dokumentace](/NuGet) a [uživatelského rozhraní Správce balíčků](/NuGet/Tools/Package-Manager-UI) témata.  
   
 3.  Vyhledejte VSIXSignTool z VisualStudioExtensibility a nainstalujte balíček NuGet.  
   

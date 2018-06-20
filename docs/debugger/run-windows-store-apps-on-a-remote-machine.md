@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2c09d29340584f3f6187175342fd1171dd59ba37
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2845057fe970299d249d580d97b557a5ed311fc0
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477313"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233565"
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Spuštění aplikace UWP ve vzdáleném počítači v sadě Visual Studio
   
@@ -44,7 +44,7 @@ Pro počítače s Windows 10 pre-Creator aktualizace verzí systému Windows nai
 - Pro počítače s Windows 10 s verzí systému Windows 10 starší než Windows 10 Creator aktualizace, je nutné [instalaci a spuštění vzdáleného ladění součásti](#BKMK_download).
   
 ##  <a name="BKMK_Security"></a> Zabezpečení  
-Ve výchozím nastavení **Universal (nešifrovaného protokolu)** se používá ve Windows 10. Tuto protokolu lze používat pouze v důvěryhodných sítích. Ladění připojení je zranitelný vůči uživateli se zlými úmysly kteří může zachytávat a měnit data, které jsou předávány mezi vývoj a vzdáleného počítače.
+Ve výchozím nastavení **Universal (nešifrovaného protokolu)** se používá ve Windows 10. Tento protokol lze používat pouze v důvěryhodných sítích. Ladění připojení je zranitelný vůči uživateli se zlými úmysly kteří může zachytávat a měnit data, které jsou předávány mezi vývoj a vzdáleného počítače.
   
 > [!WARNING]
 >  Neexistuje žádné zabezpečení sítě, když nastavíte režim ověřování na **Universal (nešifrovaného protokolu)** nebo **žádné**. Zvolte těchto režimech pouze v případě, že jste si jisti, že síť není hrozí od provozu škodlivý nebo k tomuto účelu.  

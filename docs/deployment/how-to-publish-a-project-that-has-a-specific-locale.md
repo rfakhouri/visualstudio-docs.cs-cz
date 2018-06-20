@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8975c362039e347700e4256036998e8386c2e2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e67a44efface97c1cbcf0bd96756467268416ee2
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561607"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234124"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Postupy: Publikování projektu s konkrétním národním prostředím
 Je běžné pro aplikaci tak, aby obsahovala součásti, které mají různá národní prostředí. V tomto scénáři by vytvářet řešení, která má několik projektů a pak publikovat samostatné projekty pro každé národní prostředí. Tento postup ukazuje, jak pomocí makra publikování první projekt v řešení s použitím národního prostředí "en". Pokud chcete vyzkoušet tuto proceduru s národním prostředím než "en", nezapomeňte nastavit `localeString` v makru na odpovídající národního prostředí, který používáte (pro příklad, "de" nebo "de-DE").  
@@ -155,7 +155,7 @@ Je běžné pro aplikaci tak, aby obsahovala součásti, které mají různá n�
   
      Jakmile se zobrazí webová stránka publikování, zavřete ji. (Pro tento krok, budete muset publikování tohoto projektu, není nutné ji nainstalovat.)  
   
-5.  Znovu publikujte PublishLocales vyvoláním makra v okně příkazového řádku Visual Studia. Chcete-li zobrazit okno příkazového řádku, na **zobrazení** nabídky, přejděte na příkaz **ostatní okna** a pak klikněte na **příkazové okno**, nebo stiskněte klávesu CTRL + ALT + A. V okně příkazového řádku zadejte `macros`; automatické dokončování poskytne seznam dostupných makra. Vyberte následující makro a stiskněte klávesu ENTER:  
+5.  Znovu publikujte PublishLocales vyvoláním makra v okně příkazového řádku Visual Studia. Chcete-li zobrazit okno příkazového řádku, na **zobrazení** nabídky, přejděte na příkaz **ostatní okna** a pak klikněte na **příkazové okno**, nebo stiskněte klávesu **Ctrl** + **Alt**+**A**. V okně příkazového řádku zadejte `macros`; automatické dokončování poskytne seznam dostupných makra. Vyberte následující makro a stiskněte klávesu ENTER:  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   

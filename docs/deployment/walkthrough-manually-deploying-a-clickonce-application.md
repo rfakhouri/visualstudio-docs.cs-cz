@@ -22,11 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ab59e09f450d1656d77c551b3f44d0a60f1a57
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2255bab39a90e52423915d4b9ede3efdebd1ea26
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238336"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Návod: Ruční nasazení aplikace ClickOnce
 Pokud nemůžete použít Visual Studio k nasazení vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, nebo budete muset použít nasazení pokročilé funkce, jako je například nasazení důvěryhodných aplikací by měl použít nástroj příkazového řádku Mage.exe k vytvoření vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty. Tento návod popisuje, jak vytvořit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení pomocí příkazového řádku verze (Mage.exe) nebo grafické verze (MageUI.exe) generování manifestu a nástroj pro úpravy.  
@@ -82,7 +83,7 @@ Pokud nemůžete použít Visual Studio k nasazení vaší [!INCLUDE[ndptecclick
   
 5.  Vytvořte manifest aplikace pomocí volání Mage.exe. Následující příkaz vytvoří manifest aplikace pro kód zkompilovaný pro spuštění na procesor Intel x86.  
   
-    ```  
+    ```console  
     mage -New Application -Processor x86 -ToFile AppToDeploy.exe.manifest -name "My App" -Version 1.0.0.0 -FromDirectory .   
     ```  
   
@@ -91,34 +92,24 @@ Pokud nemůžete použít Visual Studio k nasazení vaší [!INCLUDE[ndptecclick
   
 6.  Podepsání manifestu aplikace certifikátem Authenticode. Nahraďte *mycert.pfx* s cestou k souboru certifikátu. Nahraďte *hesel* s heslem pro váš soubor certifikátu.  
   
-    ```  
+    ```console  
     mage -Sign AppToDeploy.exe.manifest -CertFile mycert.pfx -Password passwd  
     ```  
   
-     K podepsání manifestu aplikace s certifikátem CNG, použijte následující. Nahraďte *cngCert.pfx* s cestou k souboru certifikátu.  
-  
-    ```  
-    mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
-    ```  
-  
+    Od verze sady SDK rozhraní .NET Framework 4.6.2, který je distribuován pomocí sady Visual Studio a sada Windows SDK, přihlásí mage.exe manifesty s CNG, a také s certifikáty Authenticode. Stejně jako u Authenticode certifikáty pomocí stejné parametry příkazového řádku.
+    
 7.  Změnit na kořenovém adresáři pro nasazení.  
   
 8.  Generování manifestu nasazení s volání Mage.exe. Ve výchozím nastavení, Mage.exe označíte vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení jako instalované aplikace, takže to můžete spustit online a offline. Chcete-li aplikace k dispozici jenom v případě, že uživatel je online, použijte `-Install` možnost s hodnotou `false`. Pokud používáte výchozí nastavení, a uživatelé nainstalují aplikace ze webové stránky nebo sdílené složky, ujistěte se, že hodnota `-ProviderUrl` možnost odkazuje na umístění aplikace manifestu na webový server nebo sdílené složky.  
   
-    ```  
+    ```console  
     mage -New Deployment -Processor x86 -Install true -Publisher "My Co." -ProviderUrl "\\myServer\myShare\AppToDeploy.application" -AppManifest 1.0.0.0\AppToDeploy.exe.manifest -ToFile AppToDeploy.application  
     ```  
   
 9. Podepsání manifestu nasazení certifikátem Authenticode nebo CNG.  
   
-    ```  
+    ```console  
     mage -Sign AppToDeploy.application -CertFile mycert.pfx -Password passwd  
-    ```  
-  
-     or  
-  
-    ```  
-    mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
     ```  
   
 10. Zkopírujte všechny soubory v adresáři pro nasazení do cíle nasazení nebo médium. To může být buď do složky na webu nebo serveru FTP, sdílené složky nebo disku CD-ROM.  
@@ -138,7 +129,7 @@ Pokud nemůžete použít Visual Studio k nasazení vaší [!INCLUDE[ndptecclick
   
 4.  Spusťte grafický nástroj MageUI.exe.  
   
-    ```  
+    ```console  
     MageUI.exe  
     ```  
   
@@ -172,7 +163,7 @@ Pokud nemůžete použít Visual Studio k nasazení vaší [!INCLUDE[ndptecclick
   
 17. Na **název** kartě, zadejte název a verze číslo pro toto nasazení (**1.0.0.0** v tomto příkladu). Zadat také **procesoru** vytvořené aplikace, jako je například x86.  
   
-18. Vyberte **popis** a zadejte hodnoty pro **vydavatele** a **produkt *** t**. (**Produktu** je název přidělený k aplikaci v nabídce Start při instalaci aplikace na klientský počítač pro použití v offline režimu.)  
+18. Vyberte **popis** a zadejte hodnoty pro **vydavatele** a **produktu**. (**Produktu** je název přidělený k aplikaci v nabídce Start při instalaci aplikace na klientský počítač pro použití v offline režimu.)  
   
 19. Vyberte **možnosti nasazení** kartě a v **umístění spuštění** text pole, zadejte umístění manifestu aplikace na webovém serveru nebo sdílené složky. Například \\\myServer\myShare\AppToDeploy.application.  
   

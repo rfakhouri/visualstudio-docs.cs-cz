@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6808ac38a67146e53438e5b8f6dc0e07fd0bc5
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 210fd6049f3df068d02f58e0271318591a051396
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065075"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234270"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Vytváření aplikací ClickOnce k implementaci dalšími osobami
 Ne všechny vývojáře, kteří jsou vytvoření nasazení ClickOnce v plánu nasadit aplikace samotné. Řada z nich právě balíček své aplikace s použitím technologie ClickOnce a pak předá soubory na zákazníka, jako je například velké korporace. Zákazník bude ten, který je zodpovědný za hostování aplikace ve své síti. Toto téma popisuje některé potíže spočívající v takovýchto nasazeních ve verzích rozhraní .NET Framework verze 3.5. Popisuje pak zadaný v rozhraní .NET Framework 3.5 pomocí nové funkce "použití manifest pro vztah důvěryhodnosti" nové řešení. Nakonec dojde s doporučenou strategie pro vytvoření nasazení ClickOnce pro zákazníky, kteří stále používají starší verze rozhraní .NET Framework.  
@@ -43,7 +43,7 @@ Ne všechny vývojáře, kteří jsou vytvoření nasazení ClickOnce v plánu n
   
  Řekněme například, že má společnosti Adventure Works finančního oddělení a oddělení lidských zdrojů. Obě oddělení licence aplikací ClickOnce od Microsoft Corporation, která generuje sestavy z dat uložených v databázi SQL. Microsoft poskytuje každé oddělení s verzí aplikace, které je přizpůsobené pro svá data. Pokud aplikace jsou podepsané stejným certifikátem Authenticode, uživatele, který se snaží použít pro obě aplikace by dojít k chybě, protože ClickOnce bude považovat druhou aplikaci, že je stejný jako první. V takovém případě může u zákazníka dojít nežádoucím a nepředvídatelným vedlejší účinky, které patří ke ztrátě všech dat uložených místně aplikací.  
   
- Dalším problémem vztahujícím se k podepisování kódu je `deploymentProvider` element v manifestu nasazení, který udává ClickOnce, kde má být vyhledán aktualizace aplikace. Tento element musí být přidán do manifestu nasazení před jeho podpisem. Pokud tento element je přidán později, musí být znovu podepisovat manifest nasazení.  
+ Dalším problémem vztahujícím se k podepisování kódu je `deploymentProvider` element v manifestu nasazení, který udává ClickOnce, kde má být vyhledán aktualizace aplikace. Tento element musí být přidaný do manifestu nasazení před jeho podpisem. Pokud tento element je přidán později, musí být znovu podepisovat manifest nasazení.  
   
 ### <a name="requiring-the-customer-to-sign-the-deployment-manifest"></a>Vyžádání zákazníka k podepsání manifestu nasazení  
  Jedno řešení tohoto problému nasazení je tak, aby měl vývojáře přihlašovací manifest aplikace a zákazník podepsání manifestu nasazení. Zatímco tento přístup funguje, zavádí další problémy. Vzhledem k tomu, že certifikát Authenticode musí zůstat chráněný prostředek, nelze zákazník právě udělte certifikátu vývojáře k podepsání nasazení. Když zákazník může podepsání manifestu nasazení sami pomocí volně dostupných nástrojů sady SDK rozhraní .NET Framework, může to vyžadovat další technické znalosti, než je zákazník ochoten nebo schopen poskytnout. V takových případech obvykle vytvoří vývojář aplikací, webu nebo jiným mechanismem, pomocí kterého zákazníka můžete odeslat jejich verzi aplikace pro podepisování.  
@@ -95,7 +95,7 @@ Ne všechny vývojáře, kteří jsou vytvoření nasazení ClickOnce v plánu n
  Nevýhodou projektu metodě instalace nasazení je čas a výdaje potřebné k vytvoření vlastního nasazení aplikace.  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>Mít zákazníka generovat Manifest nasazení  
- Strategie třetí možné nasazení je předat pouze soubory aplikace a manifest aplikace vypnout zákazníka. V tomto scénáři zákazník zodpovídá za účelem generování a podepsání manifestu nasazení pomocí sady SDK rozhraní .NET Framework.  
+ Strategie třetí možné nasazení je předat vypnout pouze aplikace, manifest zákazník soubory a aplikace. V tomto scénáři zákazník zodpovídá za účelem generování a podepsání manifestu nasazení pomocí sady SDK rozhraní .NET Framework.  
   
  Nevýhodou této metody je, že vyžaduje zákazník instalace nástrojů pro rozhraní .NET Framework SDK a vývojáře nebo správce systému, který je kvalifikován k jejich použití. Někteří zákazníci mohou požadovat řešení, které vyžaduje žádné nebo téměř žádné technické úsilí z jejich strany.  
   

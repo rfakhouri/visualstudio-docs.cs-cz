@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d81438ef284464fb23ebc5a41c19e59d20739cf4
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 02f0c8dd142f9517dcaef3a40d613d43b8e650a3
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238337"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Nalezení změn kódu a další historie pomocí CodeLensu
 
@@ -83,7 +84,7 @@ Je to, co vidíte, že použijete Team Foundation verze ovládacího prvku (TFVC
 
 ![Codelensu: Get historie změn kódu v TFVC](../ide/media/codelens-code-changes.png)
 
-Výchozí hodnota je časové období posledních 12 měsíců. Pokud váš kód je uložený na serveru Team Foundation Server, můžete změnit časové období spuštěním [TFSConfig příkaz](/vsts/tfs-server/command-line/tfsconfig-cmd) s [codeindex – příkaz](../ide/codeindex-command.md) a **/indexHistoryPeriod**příznak.
+Výchozí hodnota je časové období posledních 12 měsíců. Pokud váš kód je uložený na serveru Team Foundation Server, můžete změnit časové období spuštěním [TFSConfig příkaz](/tfs/server/ref/command-line/tfsconfig-cmd) s [codeindex – příkaz](../ide/codeindex-command.md) a **/indexHistoryPeriod**příznak.
 
 Chcete-li zobrazit podrobné historie všechny změny, včetně těch, které z více než rokem, zvolte **zobrazit všechny změny souboru**:
 
@@ -205,23 +206,25 @@ Testy jednotek, které existují můžete zjistit kódu C# nebo Visual Basic bez
 
 1. Přejděte do kódu aplikace, který je spojen [jednotka testovacího kódu](../test/unit-test-your-code.md).
 
-2. Zkontrolujte testy pro kód stisknutím **Alt**+**3**.
+2. Pokud máte ještě není, sestavte aplikaci načíst indikátory testovací Codelensu. Zajistěte, aby [zjišťování podle integrovaný sestavení](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) je zapnutý.
+
+3. Zkontrolujte testy pro kód stisknutím **Alt**+**3**.
 
      ![Zvolte Codelensu - stav testu v editoru kódu](../ide/media/codelens-choose-test-indicator.png)
 
-3. Pokud se zobrazí ikona upozornění ![Ikona upozornění](../ide/media/codelenstestwarningicon.png), testy nebyly spustit ještě je proto spustit.
+4. Pokud se zobrazí ikona upozornění ![Ikona upozornění](../ide/media/codelenstestwarningicon.png), testy nebyly spustit ještě je proto spustit.
 
      ![Codelensu – testování částí zobrazení není ještě spuštěna](../ide/media/codelens-tests-not-yet-run.png)
 
-4. Ke kontrole testovací definice, dvakrát klikněte na položku testu v okně Codelensu ukazatele k otevření souboru kódu v editoru.
+5. Ke kontrole testovací definice, dvakrát klikněte na položku testu v okně Codelensu ukazatele k otevření souboru kódu v editoru.
 
      ![Codelensu - přechod na definici testů jednotek](../ide/media/codelens-unit-test-definition.png)
 
-5. A zkontrolovat výsledky test, zvolte indikátor stavu testu (![ikona selhání testu](../ide/media/codelenstestfailedicon.png) nebo ![test proběhl ikonu](../ide/media/codelenstestpassedicon.png)), nebo stiskněte klávesu **Alt**+**1**.
+6. A zkontrolovat výsledky test, zvolte indikátor stavu testu (![ikona selhání testu](../ide/media/codelenstestfailedicon.png) nebo ![test proběhl ikonu](../ide/media/codelenstestpassedicon.png)), nebo stiskněte klávesu **Alt**+**1**.
 
      ![Codelensu – viz výsledků testů jednotek](../ide/media/codelens-unit-test-result.png)
 
-6. Pokud chcete zobrazit, kolik lidí změnit tento test, který změnil tento test nebo byly provedeny změny kolik tento test [najít váš kód historie](#find-code-history) a propojené položky.
+7. Pokud chcete zobrazit, kolik lidí změnit tento test, který změnil tento test nebo byly provedeny změny kolik tento test [najít váš kód historie](#find-code-history) a propojené položky.
 
 ## <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
@@ -252,7 +255,7 @@ Zapněte Codelensu souborů indikátory zapnout a vypnout pomocí ikony dvojitou
 
 - Ujistěte se, že je zapnutý Codelensu. Přejděte na **nástroje** > **možnosti** > **textového editoru** > **všechny jazyky**  >  **Codelensu**.
 
-- Pokud váš kód je uložený v sadě TFS, ujistěte se, že kód indexování zapnutá pomocí [codeindex – příkaz](../ide/codeindex-command.md) s [příkazu TFS Config](/vsts/tfs-server/command-line/tfsconfig-cmd).
+- Pokud váš kód je uložený v sadě TFS, ujistěte se, že kód indexování zapnutá pomocí [codeindex – příkaz](../ide/codeindex-command.md) s [příkazu TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
 
 - Indikátory související s aplikací TFS se zobrazí pouze v případě, že jsou pracovní položky propojeny s kódem a máte oprávnění otevírat propojené pracovní položky. Potvrďte, že máte [team oprávnění členů](/vsts/work/scale/multiple-teams).
 
@@ -320,8 +323,12 @@ Použití klávesnice:
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Otázka: je možné spravovat, jak Codelensu zpracuje kód pro zobrazení historie a propojené položky?
 
-**Odpověď:** Ano. Pokud váš kód v sadě TFS, použijte [codeindex – příkaz](../ide/codeindex-command.md) s [příkazu TFS Config](/vsts/tfs-server/command-line/tfsconfig-cmd).
+**Odpověď:** Ano. Pokud váš kód v sadě TFS, použijte [codeindex – příkaz](../ide/codeindex-command.md) s [příkazu TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
 
-## <a name="see-also"></a>Viz také
+### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Otázka: Moje ukazatele testovací Codelensu se nebude zobrazovat v souboru při prvním otevření mém řešení. Jak je můžete je načíst?
+
+**Odpověď:** znovu sestavte projekt získat indikátory testovací Codelensu načíst v souboru. Zajistěte, aby [zjišťování podle integrovaný sestavení](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) je zapnutý. Pokud chcete zvýšit výkon, Visual Studio už načte informace o zdroji pro test indikátory při soubory kódu jsou načtena. Test indikátory jsou načtena po sestavení, nebo když přejdete k testu dvojitým kliknutím na něm v **testování Explorer**.
+
+## <a name="see-also"></a>Viz také:
 
 - [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md)

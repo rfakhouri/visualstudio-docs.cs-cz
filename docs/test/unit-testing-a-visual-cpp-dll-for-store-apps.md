@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0e2fbdc3d48b39bc481a392adc654f38551d333d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751868"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233526"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Postup testování knihovny DLL Visual C++
 
@@ -46,7 +46,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
     -   Test metody jsou seskupené do třídy pomocí `TEST_CLASS(YourClassName){...}`.
 
-         Když se testy spouštějí, se vytvoří instance třídy každého testu. Test metody jsou volány v neurčené pořadí. Můžete definovat speciální metody, které jsou vyvolány před a po každém modulu, třída nebo metoda. Další informace najdete v tématu [pomocí atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) v knihovně MSDN.
+         Když se testy spouštějí, se vytvoří instance třídy každého testu. Test metody jsou volány v neurčené pořadí. Můžete definovat speciální metody, které jsou vyvolány před a po každém modulu, třída nebo metoda. Další informace najdete v tématu [pomocí atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md) v knihovně MSDN.
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Ověřte, zda spustit testy v Průzkumníka testů
 
@@ -113,7 +113,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
 5.  Přidáte minimální implementace deklarované funkcí. Otevřete **RooterLib.cpp** a přidejte následující kód:
 
-    ```
+    ```cpp
     // constructor
     CRooterLib::CRooterLib()
     {
@@ -151,7 +151,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
 3.  Přidáte test, který používá importované funkce. Přidejte následující kód, který **unittest1.cpp**:
 
-    ```
+    ```cpp
     TEST_METHOD(BasicTest)
     {
         CRooterLib rooter;
@@ -245,7 +245,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
 1.  Přidání jiného testu na **unittest1.cpp**:
 
-    ```
+    ```cpp
     // Verify that negative inputs throw an exception.
      TEST_METHOD(NegativeRangeTest)
      {
@@ -291,7 +291,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
     3.  Přidejte kód, který **RooterLib.cpp** k zachycení výjimky:
 
-        ```
+        ```cpp
         #include <stdexcept>
         ...
         double CRooterLib::SquareRoot(double v)

@@ -1,5 +1,5 @@
 ---
-title: Vytvoření vazby ovládacích prvků WPF služby WCF data Service
+title: Vytvoření vazby ovládacích prvků WPF k datové službě WCF
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8152a02df8f335a92024134dde89b45d2f3e115a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5f45d8649667b6baaf13e9556bc8ef4abff7581
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927357"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234498"
 ---
-# <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Vytvoření vazby ovládacích prvků WPF služby WCF data Service
+# <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Vytvoření vazby ovládacích prvků WPF k datové službě WCF
 
 V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky vázané na data. Ovládací prvky jsou vázány na záznamy o zákaznících, které jsou zapouzdřené v [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. Taky se přidá tlačítka, které zákazníci mohou používat k zobrazení a aktualizaci záznamů.
 
@@ -45,7 +45,7 @@ Tento návod znázorňuje následující úlohy:
 ## <a name="prerequisites"></a>Požadavky
 K dokončení tohoto návodu budete potřebovat následující komponenty:
 
--   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
+-   Visual Studio
 
 -   Přístup k spuštěnou instanci systému SQL Server nebo SQL Server Express, který má ukázkové databáze AdventureWorksLT k němu připojen. Si můžete stáhnout z databáze AdventureWorksLT [webu CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
 
@@ -319,7 +319,7 @@ Po dokončení tohoto průvodce, můžete provádět následující úlohy souvi
 
 -   Další informace o použití **zdroje dat** oken v sadě Visual Studio pro zobrazení souvisejících dat (tj. data v relaci nadřazený podřízený) v ovládacích prvků WPF. Další informace najdete v tématu [návod: zobrazení souvisejících dat v aplikaci WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Vytvoření vazby ovládacích prvků WPF k datové sadě](../data-tools/bind-wpf-controls-to-a-dataset.md)

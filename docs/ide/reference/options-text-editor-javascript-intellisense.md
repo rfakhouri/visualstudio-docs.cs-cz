@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 962d185232fc8a98343ed97fa4dd0230d55f5bb7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b1c8fa80029618a9686c6eeddebb537757356d8f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948805"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233500"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Možnosti, textový editor, JavaScript, IntelliSense
 Použití **IntelliSense** stránky **možnosti** dialogové okno Upravit nastavení, které ovlivňují chování IntelliSense pro jazyk JavaScript. Dostanete **IntelliSense** stránky tak, že zvolíte **nástroje**, **možnosti** na řádku nabídek a pak se zvětšující **textového editoru**,  **JavaScript**, **IntelliSense.**
@@ -67,7 +67,7 @@ Použití **IntelliSense** stránky **možnosti** dialogové okno Upravit nastav
 
  Pomocí předdefinovaných referenčních skupin můžete určit, že konkrétní soubory .js technologie IntelliSense jsou v oboru pro různé projekty jazyka JavaScript. K dispozici jsou čtyři referenční skupiny:
 
--   Implicitní (Windows *verze*), pro [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikací pomocí jazyka JavaScript. Soubory zahrnuti do této skupiny jsou v oboru pro každý soubor .js otevřen v editoru kódu pro pro [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikací pomocí jazyka JavaScript.
+-   Implicitní (Windows *verze*), pro [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikací pomocí jazyka JavaScript. Soubory zahrnuti do této skupiny jsou v oboru pro každý soubor .js otevřen v editoru kódu pro [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] aplikací pomocí jazyka JavaScript.
 
 -   Implicitní (web) pro projekty HTML5. Soubory zahrnuté v této skupině jsou v oboru pro každý soubor .js otevřený v editoru kódu pro tyto typy projektů.
 

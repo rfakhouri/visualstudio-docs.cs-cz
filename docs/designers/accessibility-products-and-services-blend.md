@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afd65344520d003c138b7250bec7cd6f1cc9da79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 97919ae62a0d9fdde187c10aedb87243e69af61d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923902"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234238"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Produkty a služby (Blend) usnadnění
 Společnosti Microsoft je poskytovat snadněji použitelné produkty a služby pro každodenní použití. V následujících oddílech jsou uvedeny informace o funkcích, produktech a službách, které usnadňují používání systému Microsoft Windows tělesně postiženým uživatelům:
@@ -65,7 +65,7 @@ Společnosti Microsoft je poskytovat snadněji použitelné produkty a služby p
 
  Webové adresy se mohou měnit, takže je možné, že se k uvedeným stránkám nebudete moci připojit.
 
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>Služby zákazníkům pro uživatele s postižením sluchu
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Zákaznický servis pro osoby s poškozením sluchu
  Neslyšící uživatelé nebo uživatelé s vadou sluchu mohou získat kompletní přístup k produktům a zákaznickým službám společnosti Microsoft prostřednictvím služby textového telefonu (TTY/TDD):
 
  Zákaznický servis Kontaktujte Microsoft Sales Information Center na (800) 892-5234 mezi 6:30:00 a 17:30:00 pacifického času, pracovní dny mimo svátků.

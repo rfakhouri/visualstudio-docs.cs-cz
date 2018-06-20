@@ -14,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a838b193689d480c7e02053dd67adb6bfbd2314f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52fb199af53d0fbbf30c0ae0dc6a2ad7083e4971
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134576"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234644"
 ---
-# <a name="legacy-language-service-parser-and-scanner"></a>Analyzátor jazyka starší verze služby a skener
+# <a name="legacy-language-service-parser-and-scanner"></a>Analyzátor a skener služby starší verze jazyka
 Analyzátor jsou srdcem služba jazyka. Třídy jazyka spravované Framework balíčku (MPF) vyžadují analyzátoru jazyka pro výběr informací o kódu se zobrazí. Analyzátor odděluje text do lexikální tokenů a pak identifikuje těchto tokenů podle typu a funkce.  
   
 ## <a name="discussion"></a>Diskusní  
@@ -79,7 +79,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>Analýza pro odpovídající složené závorky  
  Tento příklad zobrazuje tok řízení pro odpovídající pravé složené závorce, který má uživatel zadal. V tomto procesu skener, který se používá pro zabarvení slouží také k určení typu token a zda token můžete aktivovat operace porovnání závorek. Pokud je nalezen aktivační událost, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda je volána k vyhledání odpovídajících složených závorek. Nakonec se zvýrazněnou dva složené závorky.  
   
- I když složené závorky se používají v názvech aktivační události a analyzovat z důvodů, tento proces se neomezuje na skutečné složené závorky. Jakýkoli pár znaků, které zadaných jako odpovídající spárujte je podporována. Mezi příklady patří (a), \< a >, a [a].  
+ I když složené závorky se používají v názvech aktivační události a analyzovat z důvodů, tento proces se neomezuje na skutečné složené závorky. Pár znaků, který je zadán jako pár odpovídající je podporována. Mezi příklady patří (a), \< a >, a [a].  
   
  Předpokládejme, že služba jazyk podporuje odpovídající složené závorky.  
   
