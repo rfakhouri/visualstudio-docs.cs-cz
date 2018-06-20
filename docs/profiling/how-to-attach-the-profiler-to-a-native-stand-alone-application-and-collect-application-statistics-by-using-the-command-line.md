@@ -102,6 +102,6 @@ Tento článek popisuje postup použití [!INCLUDE[vsprvs](../code-quality/inclu
   
      **Vsperfclrenv – / vypnuto**  
   
-## <a name="see-also"></a>Viz také:  
+## <a name="see-also"></a>Viz také  
  [Profil samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Zobrazení dat metody vzorkování](../profiling/profiler-sampling-method-data-views.md)
