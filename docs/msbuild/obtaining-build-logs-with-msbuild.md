@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6953017a034257900c467e7f2fac89897fa0d9e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fe22717ffa734e5f79efd73a6ee032ef447056c
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574682"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303306"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Získávání protokolů o sestavení pomocí nástroje MSBuild
 Pomocí nástroje MSBuild pomocí přepínačů, můžete zadat kolik dat sestavení, které chcete zkontrolovat a zda chcete uložit data sestavení na jeden nebo více souborů. Můžete také zadat vlastní protokolovacího nástroje ke shromažďování dat sestavení. Informace o parametrech příkazového řádku nástroje MSBuild, které nezahrnuje v tomto tématu najdete v tématu [Reference k příkazovému řádku](../msbuild/msbuild-command-line-reference.md).  
@@ -39,20 +39,20 @@ Pomocí nástroje MSBuild pomocí přepínačů, můžete zadat kolik dat sestav
   
  Procesu sestavení může být pomalejší, při nastavení **/verbosity** k `detailed` a pomalejší, i když nastavíte **/verbosity** k `diagnostic`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
 
 ## <a name="saving-the-build-log-to-a-file"></a>Uložení protokolu sestavení do souboru  
  Můžete použít **/fileLogger** (**fl**) přepínače k uložení dat sestavení do souboru. Následující příklad uloží data sestavení do souboru, který je pojmenován `msbuild.log`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fileLogger  
 ```  
   
  V následujícím příkladu je název souboru protokolu `MyProjectOutput.log`, a podrobností protokolu výstupu je nastavena na `diagnostic`. Zadejte tyto dvě nastavení pomocí **/filelogparameters** (`flp`) přepínače.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
@@ -63,7 +63,7 @@ msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diag
   
  **/Filelogparameters** (`flp`) přepne pro soubory 2 a 3 zadejte co název každého souboru a co chcete zahrnout do každého souboru. Není zadán žádný název souboru 1, takže výchozí název `msbuild1.log` se používá.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
   
 ```  
@@ -76,7 +76,7 @@ V protokolu můžete uložit v komprimované, binární formát pomocí **/binar
 
 V následujícím příkladu se vytvoří binární soubor protokolu s názvem `binarylogfilename`.
 
-```  
+```cmd  
 /bl:binarylogfilename.binlog
 ``` 
  

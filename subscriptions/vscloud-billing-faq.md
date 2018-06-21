@@ -9,15 +9,16 @@ description: Dotazy k fakturaci pro Cloudová předplatná.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e77cebba49447dcab4d30979753357a64075b1f2
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 2df0604cff45f6af63070be6c1ba10f23a84b060
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957129"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303319"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio Cloudová předplatná fakturace – nejčastější dotazy
-Zajistěte, abyste [porovnat výhody odběru cloudu a ceny](https://www.visualstudio.com/vs/pricing/) pochopit výhody sady každé sady Visual Studio předplatné s porovnání mezi cloudu a standardní sady Visual Studio odběry, podrobnosti na výhody pro předplatitele a další.
+
+Zajistěte, abyste [porovnat výhody odběru cloudu a ceny](https://visualstudio.microsoft.com/vs/pricing/) pochopit výhody sady každé sady Visual Studio předplatné s porovnání mezi cloudu a standardní sady Visual Studio odběry, podrobnosti na výhody pro předplatitele a další.
 
 ## <a name="general-purchasing-questions"></a>Obecné otázky nákupu
 
@@ -30,17 +31,19 @@ Odpověď: téměř všechny odběry služby Azure může být použít – podp
 Vyloučení pouze upozorňují na důležité je, že nelze použít [bezplatná zkušební verze Azure](https://azure.microsoft.com/pricing/free-trial/).
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>Otázka: je nutné zakoupit jinými službami Azure?
-Odpověď: vůbec. Pokud chcete zakoupit Visual Studio Cloudová předplatná přes Azure, můžete to udělat. 
+Odpověď: vůbec. Pokud chcete zakoupit Visual Studio Cloudová předplatná přes Azure, můžete to udělat.
 
 ## <a name="enterprise-agreement-ea-customers"></a>Zákazníci s Enterprise Agreement (EA)
 
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Otázka: je možné použít smlouvu Enterprise Agreement koupit cloudové předplatné sady Visual Studio?
 
-Odpověď: Ano, můžete. Musíte mít roli vlastníka nebo přispěvatele pro předplatné Azure, který byl vytvořen pro vaše EA. Ujistěte se, že nákupech vaší pro Visual Studio Cloudová předplatná přímo v aplikaci Visual Studio Marketplace. Není možné dokoupit Visual Studio Cloudová předplatná, pomocí pořadí od nákupu. 
+Odpověď: Ano, můžete. Musíte mít roli vlastníka nebo přispěvatele pro předplatné Azure, který byl vytvořen pro vaše EA. Ujistěte se, že nákupech vaší pro Visual Studio Cloudová předplatná přímo v aplikaci Visual Studio Marketplace. Není možné dokoupit Visual Studio Cloudová předplatná, pomocí pořadí od nákupu.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>Otázka: Jak poznám, jestli I mají potřebné oprávnění k zakoupení služeb v rámci smlouvy Enterprise Moje organizace Visual Studio Marketplace?
 
-A: snadný přístup k určení, pokud máte správná oprávnění je kliknout na odkaz **koupit** tlačítko pro službu nenabízí Visual Studio Marketplace. Musíte vybrat předplatné Azure (což je účet fakturace) z vidění seznam předplatných Azure, které jsou aktuálně propojení se vaše přihlášení. Vzhledem k tomu, že název předplatného Azure výchozí typ fakturace účtu ("Průběžné platby", "Smlouva Enterprise Agreement" atd.), je často jasné, jestli je předplatné Azure je součástí smlouvy Enterprise.
+A: snadný přístup k určení, pokud máte správná oprávnění je kliknout na odkaz **koupit** tlačítko pro službu nenabízí Visual Studio Marketplace.
+Musíte vybrat předplatné Azure (což je účet fakturace) z vidění seznam předplatných Azure, které jsou aktuálně propojení se vaše přihlášení.
+Vzhledem k tomu, že název předplatného Azure výchozí typ fakturace účtu ("Průběžné platby", "Smlouva Enterprise Agreement" atd.), je často jasné, jestli je předplatné Azure je součástí smlouvy Enterprise.
 
 Jiná možnost je k pokusu o přejděte [podnikový portál Azure](http://ea.azure.com).  Pokud úspěšně ho může dosáhnout, pak už máte správce podnikové sítě nebo roli vlastníka účtu. Pouze účet vlastníky můžete nastavit v smlouvu Enterprise Agreement nové účty Azure fakturace. Pokud máte přístup k portálu Azure Enterprise, pak prosím Dotázat se v rámci vaší organizace a zjistěte, kdo je Enterprise Admins a s žádostí o můžete přidat jako vlastníka účtu na portálu Azure Enterprise.  Pokud jste se nepodařilo najít tato osoba, můžete [odeslat lístek podpory](http://aka.ms/AzureEntSupport) a požadovat kontaktní informace.  Potřebujete název vaší organizace a vaše číslo prováděcí smlouvy Enterprise lístku podpory.
 
@@ -51,15 +54,17 @@ Odpověď: Ne, tyto předplacené peněžní prostředky nejsou způsobilé k n�
 ## <a name="how-charges-are-processed"></a>Zpracování poplatky
 
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Otázka: jak jsou **měsíční** cloudové předplatné poplatky zpracovat?
-Odpověď: na první nákup vám účtujeme poměrné množství tak, aby pokrývalo zbývající počet dnů do aktuálního měsíce. Například pokud zakoupení 10 Cloudová předplatná měsíční Visual Studio Professional byla provedena na duben 15, pak jsme by účtují 5 jednotky ni 50 % v měsíci (15 dny v měsíci 30 dnů). Na první může a každý měsíc po tomto datu až do zrušení, úplné 10 jednotek bude účtován.
+Odpověď: na první nákup vám účtujeme poměrné množství tak, aby pokrývalo zbývající počet dnů do aktuálního měsíce. Například pokud zakoupení 10 Cloudová předplatná měsíční Visual Studio Professional byla provedena na duben 15, pak jsme by účtují 5 jednotky ni 50 % v měsíci (15 dny v měsíci 30 dnů).
+Na první může a každý měsíc po tomto datu až do zrušení, úplné 10 jednotek bude účtován.
 
-Pokud zvýšíte množství placené později, prorate jsme vyšší jednotky tak, aby pokrývalo zbývající počet dnů do aktuálního měsíce. Pokud jste si zakoupili 1 Další Visual Studio Professional měsíční cloudové předplatné na může 10, vám proto by účtujeme zhruba 0.677 jednotky (21 dnů zbývajících do 31 den měsíce může). 
+Pokud zvýšíte množství placené později, prorate jsme vyšší jednotky tak, aby pokrývalo zbývající počet dnů do aktuálního měsíce. Pokud jste si zakoupili 1 Další Visual Studio Professional měsíční cloudové předplatné na může 10, vám proto by účtujeme zhruba 0.677 jednotky (21 dnů zbývajících do 31 den měsíce může).
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>Otázka: jak jsou **roční** cloudové předplatné poplatky zpracovat?
 Odpověď: při každém nákupu vám účtujeme celé množství zakoupili okamžitě. Poplatky za nejsou rozloženy v roce a neexistuje žádný k dispozici průběžné hodnoty. Pokud si zakoupíte roční předplatná cloudu v různých časech v roce, budete mít odběry obnovení v různých měsíců. Jsme neprovádějte všechny roční předplatná cloudu zákazníka shodných, jako je běžné s Microsoft svazek licencování smlouvy nákupu.
 
 ### <a name="q-how-do-cancelations-work"></a>Otázka: jak stornování funguje?
-Odpověď: Při zrušení cloudové předplatné sady Visual Studio, jsou Zrušení automatického obnovení. Předplatné pokračuje v až do jeho normální obnovení data a pak jednoduše vyprší. Na vypršení platnosti předplatitele sady Visual Studio už pomocí sady Visual Studio nebo jiné výhody z předplatného.
+Odpověď: Při zrušení cloudové předplatné sady Visual Studio, jsou Zrušení automatického obnovení. Předplatné pokračuje v až do jeho normální obnovení data a pak jednoduše vyprší.
+Na vypršení platnosti předplatitele sady Visual Studio už pomocí sady Visual Studio nebo jiné výhody z předplatného.
 
 S měsíční Cloudová předplatná stornování projeví první den v měsíci Další. Pokud zrušíte jenom některé z vašich předplatných měsíční cloudu, je nutné odebrat uživatele v prvním měsíci další zajistit, že oprávnění uživatelé dál obsahovat aktivní odběry, které jsou přiřazeny.
 
@@ -87,12 +92,12 @@ Před provedením nákupy, budete muset [limit útraty odebrat](https://azure.mi
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>Otázka: Jaký je rozdíl mezi roční a měsíční Cloudová předplatná?
 
-Odpověď: měsíční Cloudová předplatná zahrnují Visual Studio a použití služby VSTS a sady TFS. Roční předplatná cloudu nainstalován tento příliš, ale také zahrnovat výhody pro předplatitele, včetně použití systému Windows a dalšího softwaru společnosti Microsoft k instalaci a spuštění pro vývoj a testování, měsíčního kreditu Azure pro experimentování se službami Azure a provádění vývoj a testování v cloudu, školení, podpory a mnoho dalšího. 
-[Porovnání výhody odběru cloudu a ceny](https://www.visualstudio.com/vs/pricing/)
+Odpověď: měsíční Cloudová předplatná zahrnují Visual Studio a použití služby VSTS a sady TFS. Roční předplatná cloudu nainstalován tento příliš, ale také zahrnovat výhody pro předplatitele, včetně použití systému Windows a dalšího softwaru společnosti Microsoft k instalaci a spuštění pro vývoj a testování, měsíčního kreditu Azure pro experimentování se službami Azure a provádění vývoj a testování v cloudu, školení, podpory a mnoho dalšího.
+[Porovnání výhody odběru cloudu a ceny](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>Otázka: lze získat nové verze sady Visual Studio Pokud zakoupit cloudové předplatné sady Visual Studio?
 
-Odpověď: Ano. Jak jsou vydávány nové verze, můžete stáhnout a spustit. Navíc můžete nadále používat předchozí verze příliš. 
+Odpověď: Ano. Jak jsou vydávány nové verze, můžete stáhnout a spustit. Navíc můžete nadále používat předchozí verze příliš.
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>Otázka: je možné zakoupit cloudové předplatné sady Visual Studio z mému prodejci softwaru?
 
@@ -108,5 +113,5 @@ Odpověď: Ano, můžete, pokud váš prodejce, na které se účastní programu
 ## <a name="related-resources"></a>Související informační zdroje
 
 * [Visual Studio odběry správy portálu](https://manage.visualstudio.com/)
-* [Visual Studio – podpora předplatného](https://www.visualstudio.com/vs/support/)
+* [Visual Studio – podpora předplatného](https://visualstudio.microsoft.com/vs/support/)
 * [Visual Studio cloudové předplatné nákupu pro poskytovatele cloudových služeb](vscloud-csp.md)

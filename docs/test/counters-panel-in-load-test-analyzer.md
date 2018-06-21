@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dd276a70a99344b837dad5cb12a0d87365535f39
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd87cdb912b7e2dcf13476bab610935db5ca4fd7
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36304778"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Použití panelu čítačů v zobrazení grafů a tabulek zobrazení
 
-Panel čítačů je v zobrazení grafů a zobrazení tabulek v Analyzéru zátěžového testu zobrazen během zátěžového testu nebo během analýzy výsledku zátěžového testu. Další informace najdete v tématu [Analýza výsledků zátěžových testů v zobrazení grafů](../test/analyze-load-test-results-in-the-graphs-view.md), [Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) a [postupy: přístup k analýzevýsledkůzátěžovéhotestu](../test/how-to-access-load-test-results-for-analysis.md).
+**Čítače** panel je viditelné v zobrazení grafů a tabulek zobrazení v analyzátoru načíst testování běhu zátěžového testu nebo při analýze výsledků testů zatížení. Další informace najdete v tématu [výsledky testu zatížení analyzovat v zobrazení grafů](../test/analyze-load-test-results-in-the-graphs-view.md), [Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) a [postupy: přístup k analýzevýsledkůzátěžovéhotestu](../test/how-to-access-load-test-results-for-analysis.md).
 
-Panel čítačů zobrazí strukturovaných zobrazení všech čítačů výkonu, které byly shromážděny během zátěžového testu. Můžete zobrazit nebo skrýt panel čítačů výběrem **zobrazit Panel čítačů** zatížení testovací analyzátor panelu nástrojů.
+**Čítače** panelu zobrazí strukturovaných zobrazení všech čítačů výkonu, které byly shromážděny během zátěžového testu. Můžete zobrazit nebo skrýt **čítače** panely tak, že zvolíte **zobrazit Panel čítačů** na **Analyzéru zátěžového testu** panelu nástrojů.
 
 Čítače jsou uspořádány do stromové struktury, kde uzlů listu jsou instance čítače výkonu, které může být proto vytvořen.
 
@@ -46,7 +47,7 @@ Panel čítačů poskytuje následující funkce:
 
 ### <a name="scenario-name-node-in-counters-panel"></a>Název uzlu scénář panelu čítačů
 
-|||
+|Panel čítačů|Popis|
 |-|-|
 |![Čítač panelu scénář název uzlu](../test/media/ltest__namenode.png)|1. V rámci tohoto uzlu se zobrazují všechny čítače výkonu související s Scenario1 zátěžový test.<br />2. Všechny testy scénáře jsou umístěny pod jeho uzlem. Popisek označuje název testu.<br />3. Uzlů listu uzlu testovací jsou čítače testovacího případu testu zatížení, kde je název instance čítače název testu.<br />4. Všechny načtení testovací stránka čítač instance přidružené větev test výkonu webové. V tomto uzlu jsou zde uvedené zátěžového testu se stimulací podle instance čítače, které jsou přidružené stránku přihlášení získat (název Reporting) testu výkonnosti webu IBuyBrowse v Scenario1 zátěžový test.<br />5. Testovací stránka čítače jsou načíst uzlů listu uzlu stránky.<br />6. Čítač Požadavky test, který instance přidružené k testu výkonnosti webu jsou obsaženy v větev test výkonu webové se všechny načíst. V tomto uzlu všechna žádosti instance čítače, které jsou přidružené k žádosti přihlášení získat testu výkonnosti webu IBuyBrowse v Scenario1 o zátěžový test součástí zde (název Reporting).<br />7. Uzlů listu uzlu žádosti jsou načíst testovací žádost čítače.<br />8. Všechny zatížení testovací transakce čítač instance přidružené k testu výkonnosti webu jsou obsaženy v větev test výkonu Web. V tomto uzlu všechny instance čítače transakce přidružit transakce s názvem Transaction1 testu výkonnosti webu IBuyBrowse v Scenraio1 zátěžového testu jsou obsažené v tomto poli.<br />9. Uzlů listu uzlu transakce jsou načíst testovací transakce čítače.<br />10. Uzel test jednotky.|
 
@@ -54,9 +55,9 @@ Panel čítačů poskytuje následující funkce:
 
 |Úlohy|Související témata|
 |-----------|-----------------------|
-|**Přidat další čítače výkonu do grafu v zobrazení grafu:** panel v čítačů, můžete přidat různé druhy dat do grafu testu zatížení přidáním další čítače výkonu v grafu.|-   [Postupy: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
-|**Analýza prahy jste zadali v zátěžovém testu, které byla porušena:** panel čítačů zobrazí ikony představující překročení mezních hodnot, které poté můžete přidat do tabulky a grafy pro další analýzu.|-   [Postupy: Analýza překročení mezních hodnot s použitím panelu čítačů](../test/analyze-threshold-rule-violations-in-load-tests.md)|
-|**Analýza všechny chyby, které byly zjištěny během spuštění zátěžového testu:** panel čítačů zahrnuje k chyby uzlu, který obsahuje chyby kategorií a podkategorií například chyby protokolu HTTP, které můžete použít k přidání chyb do grafy k další analýze.|-   [Postupy: Analýza chyb s použitím panelu čítačů](../test/how-to-analyze-errors-using-the-counters-panel.md)|
+|**Přidat další čítače výkonu do grafu v zobrazení grafu:** v **čítače** panelu, můžete přidat různé druhy dat do grafu testu zatížení přidáním další čítače výkonu v grafu.|-   [Postupy: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
+|**Analýza prahy jste zadali v zátěžovém testu, které byla porušena:** **čítače** panelu zobrazí ikony představující překročení mezních hodnot, které poté můžete přidat do tabulky a grafy pro další analýzu.|-   [Postupy: Analýza překročení mezních hodnot s použitím panelu čítačů](../test/analyze-threshold-rule-violations-in-load-tests.md)|
+|**Analýza všechny chyby, které byly zjištěny během spuštění zátěžového testu:** **čítače** panel zahrnuje k chyby uzlu, který obsahuje chyby kategorií a podkategorií například chyby protokolu HTTP, které můžete použít k přidání chyb do grafy pro další analýze.|-   [Postupy: Analýza chyb s použitím panelu čítačů](../test/how-to-analyze-errors-using-the-counters-panel.md)|
 
 ## <a name="performance-counter-sampling-interval-considerations"></a>Aspekty Interval vzorkování čítače výkonu
 
@@ -71,16 +72,16 @@ Zde jsou uvedeny pokyny pro vzorkovací frekvence:
 |8 – 24 hodin|30 sekund|
 |> 24 hodin|60 sekund|
 
-## <a name="considerations-for-including-timing-details-to-collect-percentile-data"></a>Důležité informace týkající se včetně podrobností časování pro shromáždění dat percentilu
+## <a name="considerations-for-including-timing-details-to-collect-percentile-data"></a>Důležité informace týkající se včetně podrobností časování pro shromažďování dat percentilu
 
 V nastavení spuštění v editoru zátěžových testů s názvem je vlastnost **úložiště podrobností časování**. Pokud **úložiště podrobností časování** je povolena vlastnost a potom čas spuštění každé jednotlivé testy, transakce a stránku během zátěžového testu je uložen v úložiště výsledků zátěžového testu. To umožňuje data 90 a 95. percentil zobrazený v Analyzéru zátěžového testu v tabulkách testy, transakce a stránky.
 
-Existují dvě možnosti pro povolení **úložiště podrobností časování** vlastnost vlastností parametrů běhu:**StatisticsOnly** a **AllIndividualDetails**. U obou možností jednotlivých testů, stránky a transakce jsou vypršel časový limit a percentilu dat se počítá z dat jednotlivých časování. Rozdíl je, že se **StatisticsOnly** také data percentilu je vypočítána, možnost jednotlivých načasování data se odstraní z úložiště. Tím se snižuje množství volné místo v úložišti použijete časování podrobnosti. Pokročilí uživatelé však chtít ke zpracování dat podrobností časování jinými způsoby, pomocí nástrojů SQL. Pokud ano, **AllIndividualDetails** by měl být použit, aby byla dostupná pro toto zpracování podrobných dat časování. Kromě toho pokud nastavíte vlastnost na **AllIndividualDetails**, pak můžete analyzovat aktivity virtuálních uživatelů po dokončení zátěžového testu pomocí grafu aktivity virtuálních uživatelů v analyzátoru načíst testování systémem. Další informace najdete v tématu [analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Existují dvě možnosti pro povolení **úložiště podrobností časování** vlastnost vlastností parametrů běhu: **StatisticsOnly** a **AllIndividualDetails**. U obou možností jednotlivých testů, stránky a transakce jsou vypršel časový limit a percentilu dat se počítá z dat jednotlivých časování. Rozdíl je, že se **StatisticsOnly** také data percentilu je vypočítána, možnost jednotlivých načasování data se odstraní z úložiště. Tím se snižuje množství volné místo v úložišti použijete časování podrobnosti. Pokročilí uživatelé však chtít ke zpracování dat podrobností časování jinými způsoby, pomocí nástrojů SQL. Pokud ano, **AllIndividualDetails** by měl být použit, aby byla dostupná pro toto zpracování podrobných dat časování. Kromě toho pokud nastavíte vlastnost na **AllIndividualDetails**, pak můžete analyzovat aktivity virtuálního uživatele pomocí **aktivity virtuálních uživatelů** grafu v nástroje načíst testování Analyzer po zátěžového testu Konec běhu. Další informace najdete v tématu [analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 Množství místa, která je vyžadována ve úložiště výsledků zátěžového testu pro ukládání dat časování podrobnosti může být velký, zejména pro již spouštění zátěžových testů. Čas potřebný k uložení dat této v úložiště výsledků zátěžového testu na konci zátěžového testu je také déle, protože tato data jsou ukládána v testovacích agentů zatížení, dokud zátěžového testu dokončil provádění. Po dokončení zátěžový test, jsou data uložena do úložiště. Ve výchozím nastavení **úložiště podrobností časování** vlastnost povolena. Pokud je problém pro testovací prostředí, můžete chtít nastavit **úložiště podrobností časování** k **žádné**.
 
 Další informace najdete v tématu [postupy: určení vlastnosti úložiště podrobností časování](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -1,8 +1,8 @@
 ---
-title: Začínáme s ladicím programem
+title: Další informace k ladění pomocí ladicího programu sady Visual Studio
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: mvc
-ms.date: 03/16/2018
+ms.date: 06/15/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 helpviewer_keywords:
@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f3d4c27f0aedf879137b3ef7a154fb7dd6f9164
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 1144e7e33709510cb03ed02cb62020f81e8e8b62
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766256"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303143"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Kurz: Další informace k ladění pomocí sady Visual Studio
 
-Toto téma představuje funkce podrobný návod v ladicím programu sady Visual Studio. Pokud chcete vyšší úrovně zobrazení funkce ladicího programu, najdete v části [prohlídka funkce ladicího programu](../debugger/debugger-feature-tour.md).
+Toto téma představuje funkce podrobný návod v ladicím programu sady Visual Studio. Pokud chcete vyšší úrovně zobrazení funkce ladicího programu, najdete v části [prohlídka funkce ladicího programu](../debugger/debugger-feature-tour.md). Pokud jste *ladění aplikace*, obvykle to znamená, že používáte vaší aplikace pomocí ladicího programu připojen. Když to uděláte, ladicího programu poskytuje mnoho způsobů, jak zjistit, co kód dělá při spuštění. Můžete krokovat kód a podívejte se na hodnoty uložené v proměnné, můžete nastavit sleduje zobrazíte při změně hodnoty proměnné, můžete zkontrolovat cestu provádění kódu, a další. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete ke čtení [ladění pro začátečníky absolutní](../debugger/debugging-absolute-beginners.md) před přechodem prostřednictvím tohoto tématu.
 
 Můžete buď si přečíst podél zobrazíte funkce ladicího programu nebo můžete stáhnout kompletní příklad používá v prohlídka funkce a podle kroků. Chcete-li stáhnout vzorek a podle nich zorientujete, přejděte na [ukázku Prohlížeč fotografií](https://code.msdn.microsoft.com/windowsdesktop/WPF-Photo-Viewer-Demo-be75662a).
 
@@ -45,7 +45,7 @@ V tomto kurzu se naučíte:
 
 * Musíte mít nainstalované Visual Studio 2017 a. **NET vývoj aplikací** zatížení.
 
-    Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
+    Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
     Pokud potřebujete nainstalovat zatížení, ale už máte Visual Studio, klikněte na tlačítko **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno (vyberte **soubor**  >  **Nové** > **projektu**). Spustí se instalační program pro Visual Studio. Zvolte. **NET vývoj aplikací** zatížení, zvolte **upravit**.
 
@@ -62,13 +62,13 @@ V tomto kurzu se naučíte:
 
      ![Otevřete ukázkový projekt](../debugger/media/dbg-tour-open-project.png "otevřeného projektu")
 
-3. Otevřete ukázku Prohlížeč fotografií WPF > C# složky, vyberte soubor, photoapp.sln a vyberte **otevřete**.
+3. Otevřete ukázku Prohlížeč fotografií WPF > C# složky, vyberte *photoapp.sln* soubor a vyberte **otevřete**.
 
      Projekt se otevře v sadě Visual Studio. Průzkumník řešení v pravém podokně se zobrazí všechny soubory projektu.
 
     ![Soubory Průzkumníka řešení](../debugger/media/dbg-tour-solution-explorer.png "Průzkumníku řešení")
 
-4. Stisknutím klávesy F5 (**ladění > Spustit ladění** nebo **spustit ladění** tlačítko ![spustit ladění](../debugger/media/dbg-tour-start-debugging.png "spustit ladění") na panelu nástrojů ladění).
+4. Stiskněte klávesu **F5** (**ladění > Spustit ladění**) nebo **spustit ladění** tlačítko ![spustit ladění](../debugger/media/dbg-tour-start-debugging.png "spustit ladění ") na panelu nástrojů ladění.
 
      ![Aplikace prohlížeče fotografií](../debugger/media/dbg-tour-wpf-app.png "fotografii prohlížeč aplikace")
 
@@ -86,7 +86,9 @@ Chcete-li ladit, spusťte aplikaci pomocí ladicího programu připojit k proces
 
      ![Nastavit zarážky](../debugger/media/dbg-tour-set-a-breakpoint.gif "SetABreakPoint")
 
-6. Stisknutím klávesy F5 nebo **spustit ladění** tlačítko spustí aplikaci, a ladicí program spustí na řádek kódu, kde nastavit bod přerušení.
+    Zarážky jsou základní a nejjednodušší funkcí spolehlivého ladění. Zarážka určuje, kde má Visual Studio spuštěný kód pozastavit, abyste mohli zkontrolovat hodnoty proměnných či chování paměti, nebo abyste zjistili, jestli se nějaká větev kódu spouští. 
+
+6. Stiskněte klávesu **F5** nebo **spustit ladění** tlačítko spustí aplikaci, a ladicí program spustí na řádek kódu, kde nastavit bod přerušení.
 
     Žlutý šipku představuje příkaz na kterém pozastavena ladicí program, který také pozastaví spuštění aplikace na stejném místě (Tento příkaz ještě spuštěna).
 
@@ -94,9 +96,9 @@ Chcete-li ladit, spusťte aplikaci pomocí ladicího programu připojit k proces
 
     Zarážky jsou užitečné funkce, když víte, řádek kódu nebo části kódu, který chcete prozkoumat podrobně.
 
-## <a name="restart-your-app-quickly"></a>Restartujte aplikace rychle
+## <a name="optional-restart-your-app-quickly"></a>(Volitelné) Restartujte aplikace rychle
 
-Klikněte **restartujte** ![restartujte aplikace](../debugger/media/dbg-tour-restart.png "RestartApp") tlačítka na panelu nástrojů Debug (Ctrl + Shift + F5).
+Klikněte na tlačítko **restartujte** ![restartujte aplikace](../debugger/media/dbg-tour-restart.png "RestartApp") tlačítka na panelu nástrojů Debug (**Ctrl** + **posunutí**   +  **F5**).
 
 Po stisknutí klávesy **restartujte**, ho šetří čas a zastavení aplikace a restartování ladicího programu. Ladicí program se pozastaví u první zarážky, který je dosáhl spuštěním kódu.
 
@@ -106,7 +108,7 @@ Ladicí program zastaví znovu u zarážky v nastavíte `MainWindow` konstruktor
 
 Většinou, klávesové zkratky tady používáme, protože je dobrý způsob, jak získat rychlého při spuštění aplikace v ladicím programu (ekvivalentní příkazy jako nabídky příkazy se zobrazují v závorkách).
 
-1. Stisknutím klávesy F11 (**ladění > Krokovat s vnořením**) na dvakrát zálohy provádění aplikaci `InitializeComponent()` funkce.
+1. Stiskněte klávesu **F11** (**ladění > Krokovat s vnořením**) na dvakrát zálohy provádění aplikaci `InitializeComponent()` funkce.
 
      ![Pomocí kroku do kódu F11](../debugger/media/dbg-tour-f11.png "F11 Krokovat s vnořením")
 
@@ -115,7 +117,7 @@ Většinou, klávesové zkratky tady používáme, protože je dobrý způsob, j
      >[!NOTE]
      > Ve spravovaném kódu zobrazí se dialogové okno s dotazem, zda chcete být upozorněni, když automaticky krok přes vlastnosti a operátory (výchozí nastavení). Pokud chcete změnit nastavení později, zakažte **krok přes vlastnosti a operátory** nastavení v **nástroje > Možnosti** nabídky v části **ladění**.
 
-2. Stiskněte klávesu F10 (**ladění > Krokovat s přeskočením**) několikrát, dokud nebude ladicí program zastaví na první řádek kódu `OnApplicationStartup` obslužné rutiny události.
+2. Stiskněte klávesu **F10** (**ladění > Krokovat s přeskočením**) několikrát, dokud nebude ladicí program zastaví na první řádek kódu `OnApplicationStartup` obslužné rutiny události.
 
      ![Krokovat s přeskočením kódu pomocí F10](../debugger/media/dbg-tour-f10-step-over.png "F10 Krokovat s přeskočením")
 
@@ -125,7 +127,7 @@ Většinou, klávesové zkratky tady používáme, protože je dobrý způsob, j
 
 1. S ladicím programem pozastaveno na tomto řádku kódu:
 
-    ````
+    ````c#
     mainWindow.Photos.Path = Environment.CurrentDirectory + "\\images";
     ````
 
@@ -143,7 +145,7 @@ Většinou, klávesové zkratky tady používáme, protože je dobrý způsob, j
 
      ![Použití spustit kliknutím funkce](../debugger/media/dbg-tour-run-to-click-2.png "spustit kliknutím")
 
-    >  [!NOTE] 
+    >  [!NOTE]
     > **Spustit kliknutím** tlačítko je nového v [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Pokud se nezobrazí tlačítko zelenou šipku, použijte F11 v tomto příkladu posunut ladicího programu.
 
 6. Klikněte **spustit kliknutím** tlačítko ![spustit kliknutím](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
@@ -152,11 +154,11 @@ Většinou, klávesové zkratky tady používáme, protože je dobrý způsob, j
 
     Ladicí program přejde `Update` implementace metod.
 
-7. Stisknutím klávesy F11 přejde do `Update` metoda.
+7. Stiskněte klávesu **F11** k krokování s vnořením `Update` metoda.
 
      ![Výsledek zanoříte se do metodu aktualizace](../debugger/media/dbg-tour-update-method.png "krok do aktualizační metody")
 
-    Zde se nám najít další kód, který vypadá zajímavé; aplikace je získávání všechny soubory *.jpg umístěných v jednom adresáři a pak vytvořit objekt fotografií pro každý soubor. Tento kód nám poskytuje dobrý moci spustit, zkontrolujte stav vaší aplikace (proměnné) s ladicím programem. Bude to v dalších částech tohoto kurzu.
+    Zde se nám najít další kód, který vypadá zajímavé; aplikace je získávání všechny. *jpg* soubory, které se nacházejí v jednom adresáři a pak vytvořit objekt fotografií pro každý soubor. Tento kód nám poskytuje dobrý moci spustit, zkontrolujte stav vaší aplikace (proměnné) s ladicím programem. Bude to v dalších částech tohoto kurzu.
 
     Funkce, které vám umožní prohlédnout proměnné jsou jedním z nejužitečnějších funkcí ladicího programu a provést různými způsoby. Často když se pokusíte ladění problém, pokoušíte zjistit, jestli jsou proměnné ukládání hodnoty, které mají mít v určitém čase očekáváte.
 
@@ -181,25 +183,25 @@ Můžete také klikněte pravým tlačítkem na nabídky z **zásobníkem volán
 
 Řekněme, že skončíte zkoumání `Update` metoda v Data.cs a vy chcete využívat funkce, ale zůstane v ladicím programu. Můžete provést pomocí **Krokovat s Vystoupením** příkaz.
 
-1. Stiskněte Shift + F11 (nebo **ladění > Krok**).
+1. Stiskněte klávesu **Shift** + **F11** (nebo **ladění > Krok**).
 
      Tento příkaz obnoví spuštění aplikace (a posune ladění) až do aktuálního funkce vrátí hodnotu.
 
      Byste měli mít zpět `Update` volání metody v Data.cs.
 
-2. Stiskněte Shift + F11 znovu a ladicí program vloží zásobníkem volání zpět do `OnApplicationStartup` obslužné rutiny události.
+2. Stiskněte klávesu **Shift** + **F11** znovu, a ladicí program přejde zásobníkem volání zpět `OnApplicationStartup` obslužné rutiny události.
 
 ## <a name="run-to-cursor"></a>Spustit ke kurzoru
 
-1. Vyberte **Zastavte ladění** červené tlačítko ![Zastavte ladění](../debugger/media/dbg-tour-stop-debugging.png "Zastavte ladění") nebo Shift + F5.
+1. Vyberte **Zastavte ladění** červené tlačítko ![Zastavte ladění](../debugger/media/dbg-tour-stop-debugging.png "Zastavte ladění") nebo **Shift** + **F5** .
 
-2. V `Update` metoda v Data.cs, klikněte pravým tlačítkem myši `Add` metoda volání a zvolte **spustit ke kurzoru**. Tento příkaz spustí, ladění a nastaví dočasné zarážek na aktuálním řádku kódu.
+2. V `Update` metoda v *Data.cs*, klikněte pravým tlačítkem myši `Add` metoda volání a zvolte **spustit ke kurzoru**. Tento příkaz spustí, ladění a nastaví dočasné zarážek na aktuálním řádku kódu.
 
      ![Použití spustit funkci kurzor](../debugger/media/dbg-tour-run-to-cursor.png "spustit ke kurzoru")
 
     Jste měli pozastavena na zarážka v `MainWindow` (protože se první zarážky nastavit).
 
-3. Stisknutím klávesy F5 přechodu na `Add` jste vybrali metodu **spustit ke kurzoru**.
+3. Stiskněte klávesu **F5** pro přechod `Add` jste vybrali metodu **spustit ke kurzoru**.
 
     Tento příkaz je užitečné, pokud jsou úpravy kódu a chcete rychle zarážku dočasné a spuštění ladicího programu.
 
@@ -211,22 +213,22 @@ Můžete také klikněte pravým tlačítkem na nabídky z **zásobníkem volán
 
     Změnou toku provádění můžete provést akce, jako je testovací cesty provádění různých kódu nebo znova spustí kód bez restartování ladicího programu.
 
-2. Nyní stisknutím klávesy F5.
+2. Nyní, stiskněte klávesu **F5**.
 
     Můžete zobrazit bitové kopie, přidány do okna aplikace. Protože jsou opětným spuštěním kódu v `foreach` smyčky, některé z bitové kopie přidané dvakrát!
-    
+
     > [!WARNING]
     > Často budete muset pečlivě s touto funkcí a zobrazí upozornění v popisu tlačítka. Příliš se může zobrazit další upozornění. Přesunutí kurzoru nelze vrátit vaší aplikace do předchozího stavu aplikace.
 
 ## <a name="inspect-variables-with-data-tips"></a>Zkontrolujte proměnné s typy dat
 
-1. Otevřete Data.cs v fotografií prohlížeč ukázkovou aplikaci, klikněte pravým tlačítkem myši `private void Update` deklaraci funkce a zvolte **spustit ke kurzoru** (zastavit aplikaci nejprve Pokud ještě není spuštěná).
+1. Otevřete *Data.cs* v fotografií prohlížeč ukázkovou aplikaci, klikněte pravým tlačítkem `private void Update` deklaraci funkce a zvolte **spustit ke kurzoru** (zastavit aplikaci nejprve Pokud ještě není spuštěná).
 
     To se pozastaví aplikace s ladicím programem připojen. To umožňuje nám prozkoumat její stav.
 
 2. Najeďte myší `Add` metoda volání a klikněte na tlačítko **spustit kliknutím** tlačítko ![spustit kliknutím](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
-3. Nyní, najeďte myší na objekt souboru (`f`) a zobrazí jeho výchozí hodnotu vlastnosti, název souboru `market 031.jpg`.
+3. Nyní, najeďte myší na objekt souboru (`f`) a zobrazí jeho výchozí hodnotu vlastnosti, název souboru *na trhu 031. jpg*.
 
      ![Zobrazení dat tip](../debugger/media/dbg-tour-data-tips.gif "zobrazení dat tipu")
 
@@ -279,7 +281,7 @@ Můžete také klikněte pravým tlačítkem na nabídky z **zásobníkem volán
      ![Způsobí výjimku, která je vyvolána](../debugger/media/dbg-tour-cause-an-exception.png "výjimky")
 
      Vyvolá výjimku, aplikace a ladicí program přejdete na řádek kódu, která vrátila výjimku.
-     
+
      ![Pomocníka výjimka](../debugger/media/dbg-tour-exception-helper.png "pomocníka výjimka")
 
      Zde **pomocníka výjimka** se dozvíte, `System.ArgumentException` a chybová zpráva s upozorněním, že cesta není právní formuláře. Ano víme, že k chybě došlo na argumentu metody nebo funkce.
@@ -288,12 +290,12 @@ Můžete také klikněte pravým tlačítkem na nabídky z **zásobníkem volán
 
      Pomocníka výjimka je skvělé funkce, která vám může pomoct ladění chyb. Můžete také provádět akce podobně jako zobrazení Podrobnosti o chybě a přidat kukátko z pomocníka výjimka. Nebo v případě potřeby můžete změnit podmínky pro vyvolání konkrétní výjimka.
 
-    >  [!NOTE] 
+    >  [!NOTE]
     > Pomocníka výjimka nahrazuje Pomocníka pro výjimky v [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 2. Rozbalte **nastavení výjimky** uzlu zobrazíte další možnosti o tom, jak zpracovávat tento typ výjimky, ale nebudete muset změnit všechno u této ukázky!
 
-3. Stisknutím klávesy F5 aplikaci pokračovat.
+3. Pokud chcete pokračovat v aplikaci, stiskněte **F5**.
 
 Další informace o funkcích ladicího programu najdete v tématu [ladicí program tipy a triky](../debugger/debugger-tips-and-tricks.md).
 
