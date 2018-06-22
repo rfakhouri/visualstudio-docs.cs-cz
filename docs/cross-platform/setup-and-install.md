@@ -10,56 +10,56 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 62871cefc6d5b4f54d56ea17f04774d9d91b9984
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b5c990b89e3bd149481d7d908c4eec8f7ed56d40
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254950"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296352"
 ---
 # <a name="setup-and-install"></a>Nastavení a instalace
 
 Vytvářet nativní aplikace pro iOS, Android a Windows aplikace z běžných C# / kód .NET základní pomocí Xamarin, potřebujete následující hardware a software:
 
--   Pro práci s Windows a aplikací pro Android: vývoj počítači Windows (ne virtuální počítač) s Visual Studio 2017 (včetně funkce pro vývoj Xamarin) nainstalována.  
+-   Pro práci s Windows a aplikací pro Android: vývoj počítači Windows (ne virtuální počítač) s Visual Studio 2017 (včetně funkce pro vývoj Xamarin) nainstalována.
 
 -   Pro práci s aplikacemi pro iOS: Mac s systému macOS Sierra 10.12 nebo vyšší, s Xcode nainstalován a Visual Studio pro Mac, které jsou nainstalované.
 
 K použití platformě Xamarin se vyžaduje bez samostatné licence.
- 
+
 Můžete nastavit systému Windows a počítače Mac ve stejnou dobu, a v době spuštění těchto instalační programy můžete přejít [Další informace o pro vývoj mobilních řešení s Xamarinem](../cross-platform/learn-about-mobile-development-with-xamarin.md) ke čtení a podívejte se na pozadí nezbytné materiálů.
 
 Pokud máte problémy s platformou Xamarin po provedení tohoto nastavení a instalaci, vystavte tady svůj dotaz na [forums.xamarin.com](http://forums.xamarin.com/).
 
-<a name="prereq" /> 
+<a name="prereq" />
 
 ## <a name="pre-requisites"></a>Předpoklady
 
 ###  <a name="for-targeting-windows-and-android"></a>Pro cílení na Windows a Android
 
-V tématu [2017 produktu rodiny požadavky sady Visual Studio](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs) pro podrobné požadavky pro instalaci Visual Studio 2017.
+V tématu [2017 produktu rodiny požadavky sady Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs) pro podrobné požadavky pro instalaci Visual Studio 2017.
 
-Nainstalujte Visual 2017 na fyzickém počítači Windows (ne virtuální počítač) s Windows 10 nainstalované všechny aktualizace. 
+Nainstalujte Visual 2017 na fyzickém počítači Windows (ne virtuální počítač) s Windows 10 nainstalované všechny aktualizace.
 
 ### <a name="for-targeting-ios"></a>Pro cílení na iOS
 
-Pro cíl iOS emulátorů a zařízení z vašeho počítače Windows budete také potřebovat síťových Mac nebo Mac malé systémem systému macOS 10.12 nebo novějším a Xcode 8.3. V tématu [instalační program a nainstalujte Visual Studio pro Mac](/visualstudio/mac/installation.md) další požadavky.
+Pro cíl iOS emulátorů a zařízení z vašeho počítače Windows budete také potřebovat síťových Mac nebo Mac malé systémem systému macOS 10.12 nebo novějším a Xcode 8.3. V tématu [instalační program a nainstalujte Visual Studio pro Mac](/visualstudio/mac/installation) další požadavky.
 
-<a name="windows" /> 
+<a name="windows" />
 
 ##  <a name="windows-setup-visual-studio-and-xamarin"></a>Instalační program systému Windows (Visual Studio a Xamarin)
 
 Pokud jste ještě nenainstalovali Visual Studio 2017, proveďte následující kroky:
 
-1.  [Stáhněte a spusťte instalační program pro všechny edice Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (Community, Professional a Enterprise). Visual Studio 2017 Community je edice free. Po dobu 30 dnů, po které je nutné licence jsou k dispozici na základě zkušební edice Professional a Enterprise.
+1.  [Stáhněte a spusťte instalační program pro všechny edice Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (Community, Professional a Enterprise). Visual Studio 2017 Community je edice free. Po dobu 30 dnů, po které je nutné licence jsou k dispozici na základě zkušební edice Professional a Enterprise.
 
-2.  Když **instalace** otevře se dialogové okno, zkontrolujte následující pole:    
+2.  Když **instalace** otevře se dialogové okno, zkontrolujte následující pole:
 
-    - **Mobilní a herní > pro vývoj mobilních řešení s .NET**. Tato možnost také automaticky vybere různé nástroje pro Android a Software Development Kit. 
+    - **Mobilní a herní > pro vývoj mobilních řešení s .NET**. Tato možnost také automaticky vybere různé nástroje pro Android a Software Development Kit.
 
         ![Vyberte možnost vývoj mobilních řešení v rámci herní a vývoj mobilních řešení pro](../cross-platform/media/cross-plat-xamarin-setup-2a.png "Cross-Plat Xamarin instalace 2")
 
-    - (Volitelné) **Windows > vývoj pro univerzální platformu Windows**. 
+    - (Volitelné) **Windows > vývoj pro univerzální platformu Windows**.
 
 Pokud už máte Visual Studio 2017 nainstalován, ale ještě nenainstalovali platformě Xamarin, proveďte následující kroky:
 
@@ -75,7 +75,7 @@ Při instalaci, můžete pokračovat s pokyny pro instalaci Mac a projít [Dalš
 
 5.  Po dokončení instalace spusťte Visual Studio a přihlaste se pomocí účtu Microsoft, pokud se zobrazí výzva. Tento účet je stejného účtu, který budete používat v systému Windows.
 
-6.  Pro testování aplikací pro Android, použijte [emulátoru Android SDK](/xamarin/android/get-started/installation/android-emulator/) Pokud nemáte fyzického zařízení s Androidem. 
+6.  Pro testování aplikací pro Android, použijte [emulátoru Android SDK](/xamarin/android/get-started/installation/android-emulator/) Pokud nemáte fyzického zařízení s Androidem.
 
 <a name="mac" />
 

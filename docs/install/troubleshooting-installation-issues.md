@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99547ff029e8bde94118918b8b0c538e3f7fad7d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 02ed2724f82923ed2157133c3c36b9ff06a1b7d5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766035"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282951"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Řešení potíží s Visual Studio 2017 instalace a upgrade
 
@@ -33,7 +33,7 @@ Chcete-li tento problém obejít, postupujte podle těchto kroků.
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Krok 1 – Zkontrolujte, jestli tento problém se o známý problém
 
-Existují některé známé problémy s Visual Studio Instalační program, který společnost Microsoft pracuje na řešení. Pokud chcete zobrazit, pokud je alternativní řešení pro váš problém, zkontrolujte [části Známé problémy naše poznámky k verzi](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes#known-issues).
+Existují některé známé problémy s Visual Studio Instalační program, který společnost Microsoft pracuje na řešení. Pokud chcete zobrazit, pokud je alternativní řešení pro váš problém, zkontrolujte [části Známé problémy naše poznámky k verzi](/visualstudio/releasenotes/vs2017-relnotes#-known-issues).
 
 ### <a name="step-2---check-with-the-developer-community"></a>Krok 2 – Kontrola s komunitou vývojářů
 
@@ -48,7 +48,7 @@ Provedením následujících akcí přeinstaluje soubory Instalační program Vi
 
 1. Ukončete instalační program sady Visual Studio.
 2. Odstraňte adresář instalační program Visual Studio. Adresář je obvykle `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Spusťte instalační program Visual Studio zaváděcího nástroje. Možná zavaděč v složky se staženými soubory s názvem souboru, který následuje `vs_[Visual Studio edition]__*.exe` vzor. Pokud nenajdete tuto aplikaci, si můžete stáhnout zavaděč přechodem na [Visual Studio stáhne](https://www.visualstudio.com/downloads/) stránky a kliknutím na **Stáhnout** vaší verze sady Visual Studio. Spuštění spustitelného souboru resetovat metadata instalace.
+3. Spusťte instalační program Visual Studio zaváděcího nástroje. Možná zavaděč v složky se staženými soubory s názvem souboru, který následuje `vs_[Visual Studio edition]__*.exe` vzor. Pokud nenajdete tuto aplikaci, si můžete stáhnout zavaděč přechodem na [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/) stránky a kliknutím na **Stáhnout** vaší verze sady Visual Studio. Spuštění spustitelného souboru resetovat metadata instalace.
 4. Zkuste instalaci nebo aktualizaci sady Visual Studio znovu. Pokud instalační program dále nedaří, přejděte k dalšímu kroku.
 
 ### <a name="step-4---report-a-problem"></a>Krok 4 – nahlásit problém
@@ -71,7 +71,7 @@ Jako poslední možnost, můžete [odebrat Visual Studio](remove-visual-studio.m
 
 ### <a name="step-6---contact-us-optional"></a>Krok 6 – kontaktujte nás (volitelné)
 
-Pokud žádné další kroky umožňují úspěšně nainstalovat, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Pokud žádné další kroky umožňují úspěšně nainstalovat, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 ## <a name="how-to-troubleshoot-an-offline-installer"></a>Řešení potíží s offline instalačního programu
 
@@ -100,7 +100,7 @@ Shromažďovat protokoly:
 
 ## <a name="more-support-options"></a>Další možnosti podpory
 
-Pokud žádné další kroky umožňují úspěšně nainstalovat, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Pokud žádné další kroky umožňují úspěšně nainstalovat, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Tady je několik více možností:
 

@@ -10,19 +10,20 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 26f0618397ef1ccfdd23983afdde28eccb59ef29
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b5cc415d95377cdca0d44c31ed2c3b84cd11c5c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296301"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Postup instalace R nástrojů pro Visual Studio
 
 V tomto článku:
 
 - [Podporované verze sady Visual Studio](#supported-versions-of-visual-studio)
-- [Instalace RTVS v Visual Studio 2017](#installing-rtvs-in-visual-studio-2017)
-- [Instalace RTVS ve Visual Studiu 2015](#installing-rtvs-in-visual-studio-2015)
+- [Nainstalovat Visual Studio 2017 RTVS](#installing-rtvs-in-visual-studio-2017)
+- [Nainstalujte RTVS ve Visual Studiu 2015](#installing-rtvs-in-visual-studio-2015)
 - [Offline instalace](#offline-installation-of-visual-studio-and-rtvs)
 
 > [!Note]
@@ -30,13 +31,13 @@ V tomto článku:
 
 ## <a name="supported-versions-of-visual-studio"></a>Podporované verze sady Visual Studio
 
-R nástrojů pro Visual Studio (RTVS) je podporována v systému Windows se Community (zdarma), Professional a verze Enterprise Edition obou [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) a [Visual Studio 2015 Update 3 (nebo vyšší)](http://go.microsoft.com/fwlink/?LinkId=691129) (přímé ke stažení).
+R nástrojů pro Visual Studio (RTVS) je podporována v systému Windows se Community (zdarma), Professional a verze Enterprise Edition obou [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) a [Visual Studio 2015 Update 3 (nebo vyšší)](http://go.microsoft.com/fwlink/?LinkId=691129) (přímé ke stažení).
 
 RTVS není podporována v současné době v sadě Visual Studio for Mac.
 
 RTVS nenainstaluje, pokud máte pouze prostředí sady Visual Studio, který je součástí produkty například Visual Studio Test Professional a SQL Server Management Studio. Prostředí sady Visual Studio chybí komponenty potřebné pro RTVS.
 
-## <a name="installing-rtvs-in-visual-studio-2017"></a>Instalace RTVS v Visual Studio 2017
+## <a name="install-rtvs-in-visual-studio-2017"></a>Nainstalovat Visual Studio 2017 RTVS
 
 1. Spusťte instalační program sady Visual Studio a vyberte **upravit** možnost (podrobnosti najdete v tématu [upravit Visual Studio](../install/modify-visual-studio.md)). Pokud ještě nemáte nainstalovanou sadu Visual Studio, najdete v části [instalaci sady Visual Studio](../install/install-visual-studio.md). Ve Windows 7, ujistěte se, že instalačním programem vaší aktualizována na verzi Visual Studio 2017 *15.2 sestavení 26430.12* nebo novější.
 
@@ -46,9 +47,9 @@ RTVS nenainstaluje, pokud máte pouze prostředí sady Visual Studio, který je 
 
 1. Nastavte další možnosti na pravé straně pod stejným názvem úlohy. Ve výchozím nastavení zahrnuje tato zatížení F # a podporují Python. Pro R, jsou minimální požadavky **podporu jazyka R**, **podporu Runtime pro vývoj R**, a **klienta Microsoft R**.
 
-Je nainstalovaný RTVS: `%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio` kde `<version>` je obvykle `2017` a `<edition>` je `Community`, `Professional`, nebo `Enterprise`.
+RTVS je nainstalován v: *% ProgramFiles (x86) %\Microsoft Visual Studio\<verze >\<edice > Common7\IDE\Extensions\Microsoft\R nástrojů pro Visual Studio* kde  *\<verze >* je obvykle `2017` a  *\<edice >* je `Community`, `Professional`, nebo `Enterprise`.
 
-## <a name="installing-rtvs-in-visual-studio-2015"></a>Instalace RTVS ve Visual Studiu 2015
+## <a name="install-rtvs-in-visual-studio-2015"></a>Nainstalujte RTVS ve Visual Studiu 2015
 
 S Visual Studiem 2015 budete muset překladač R a nástroje R instalovat samostatně.
 
@@ -84,10 +85,10 @@ Offline instalace je vhodná pro počítače, které nejsou připojené k Intern
 
 1. Instalace sady Visual Studio a RTVS z offline instalační programy.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Začínáme s R](getting-started-with-r.md)
 - [Nástroje pro R ukázkové projekty](getting-started-samples.md)
-- [Získání nápovědy](getting-started-help.md)
-- [Nastavení možností](options-for-r-tools-in-visual-studio.md)
+- [Nápověda v nástrojích R](getting-started-help.md)
+- [Možnosti nástrojů R](options-for-r-tools-in-visual-studio.md)
 - [Microsoft Machine Learning Server (dříve R Server)](/machine-learning-server/)

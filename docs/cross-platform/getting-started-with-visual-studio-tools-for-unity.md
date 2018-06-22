@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1a406834a4916a8a91644d34d682d86497827c6f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: aa1c2e97b52027c81749d0e4cd75ea767f2d1c13
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255509"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280387"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Začínáme s nástroji Visual Studio Tools for Unity
 V této části se dozvíte, jak nainstalovat Visual Studio Tools for Unity a nakonfigurujete svůj projekt Unity pro práci s Visual Studio.
@@ -28,7 +28,7 @@ V této části se dozvíte, jak nainstalovat Visual Studio Tools for Unity a na
 
 -   Verzi **Visual Studio** podporující rozšíření, jako je například Visual Studio Community, Professional, Premium nebo Enterprise. Visual Studio Community si můžete stáhnout zdarma.
 
-     [Stáhněte si Visual Studio Community](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+     [Stáhněte si Visual Studio Community](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 -   **Unity** verze 4.0.0 nebo novější; **Unity** verze 5.2.0 nebo vyšší využít integrovanou podporu pro Visual Studio Tools for Unity verze 2.1 nebo vyšší.
 

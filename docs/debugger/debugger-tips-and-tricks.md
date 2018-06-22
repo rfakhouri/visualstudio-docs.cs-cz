@@ -1,6 +1,6 @@
 ---
 title: Tipy a triky v ladicím programu sady Visual Studio
-description: Další tipy pro vyšší produktivitu v ladicím programu sady Visual Studio
+description: Další informace o některých funkcí méně známé podporovaných ladicího programu sady Visual Studio
 ms.custom: ''
 ms.date: 06/15/2017
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4fb2c32f74a764e092e0e6f65685a358d64f54
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b67722884a675dd991cad608ca22cf277e2d6777
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927279"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303078"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Další Rady a tipy pro vyšší produktivitu v ladicím programu sady Visual Studio
 

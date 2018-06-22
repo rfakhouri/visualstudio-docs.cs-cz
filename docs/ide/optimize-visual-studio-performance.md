@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b185beaeefeeedaeb63ac6d102d2207926e52748
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8d67ef259309750e115be0065a6eb2024e4cf1c8
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257732"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280348"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimalizace výkonu v sadě Visual Studio
 
@@ -26,9 +26,9 @@ Tento článek obsahuje některé návrhy pokusit Pokud zjistíte, že Visual St
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Upgrade na verzi Visual Studio 2017 15,6 operací nebo novější
 
-Pokud aktuálně používáte Visual Studio 2015, stáhněte si [Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) zdarma a podívejte se na její lepší výkon. Řešení načíst dvakrát až třikrát rychlejší v aplikaci Visual Studio 2017 s vylepšení výkonu v jiných oblastech příliš. Visual Studio 2017 je vedle sebe kompatibilní s Visual Studiem 2015, abyste neztratili nic tak, že zkusíte.
+Pokud aktuálně používáte Visual Studio 2015, stáhněte si [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) zdarma a podívejte se na její lepší výkon. Řešení načíst dvakrát až třikrát rychlejší v aplikaci Visual Studio 2017 s vylepšení výkonu v jiných oblastech příliš. Visual Studio 2017 je vedle sebe kompatibilní s Visual Studiem 2015, abyste neztratili nic tak, že zkusíte.
 
-Pokud aktuálně používáte Visual Studio 2017, zkontrolujte, zda že používáte verzi 15.6 nebo novější. Data se zobrazují, že se řešení načíst dvě nebo tři časy rychlejší ve verzi 15,6 operací. Stažení [zde](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+Pokud aktuálně používáte Visual Studio 2017, zkontrolujte, zda že používáte verzi 15.6 nebo novější. Data se zobrazují, že se řešení načíst dvě nebo tři časy rychlejší ve verzi 15,6 operací. Stažení [zde](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 ## <a name="extensions-and-tool-windows"></a>Rozšíření a okna nástrojů
 

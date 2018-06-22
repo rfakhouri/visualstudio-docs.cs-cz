@@ -1,36 +1,34 @@
 ---
-title: Visual Studio 2017 pro vývojáře .NET
-description: Přehled funkcí Visual Studio 2017 můžete napsat kód lepší .NET rychlejší.
+title: Zvýšit produktivitu pro .NET – vývoj
+description: Přehled navigace, analýza kódu jednotky testování a další funkce k usnadnění psaní kódu .NET lepší rychlejší.
 author: kuhlenh
 ms.author: kaseyu
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.date: 01/16/2018
+ms.date: 06/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d353e6a9f52a11821799e6d20ec26bcb0045a71
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 3f6640d8e4c3adbd92dc6fd41469712988b9112d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257469"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281219"
 ---
-# <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Visual Studio 2017 produktivitu Příručka pro vývojáře .NET
+# <a name="visual-studio-2017-c-productivity-guide"></a>Průvodce produktivitu Visual Studio 2017 C#
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) umožňuje vývojářům zvýšit produktivitu než kdy dřív! Vylepšili výkon a spolehlivost pro spuštění řešení a zatížení, test zjišťování a zadáním latence. Také jsme přidali a pokročilé funkce, které umožňují rychlejší psaní lepší kódu. Mezi tyto funkce patří: navigace na decompiled sestavení, proměnné Název návrhy, jak budete zadávat, zobrazení hierarchie v **Průzkumníka testů**, přejděte na všechny (**Ctrl** +  **T**) přejděte na soubor nebo typ/člen nebo symbol deklarace inteligentního **pomocníka výjimka**, styl konfigurace a vynucení a mnoho refaktoring kódu a kódu opravy.
-
-Postupujte podle tohoto průvodce k optimalizaci produktivitu.
+Zjistěte, jak [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) umožňuje vývojářům zvýšit produktivitu než kdy dřív. Využít výhod naše vylepšení výkonu a produktivitu jako navigace na decompiled sestavení, název proměnné návrhy jako typ zobrazení hierarchie v **Průzkumníka testů**, přejděte na všechny (**Ctrl** + **T**) přejděte na soubor nebo typ/člen nebo symbol deklarace inteligentního **pomocníka výjimka**, styl konfigurace a vynucení a mnoho refaktoring kódu a opravy kódu.
 
 ##  <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Používá Moje klávesové zkratky z jiné rozšíření nebo editor/IDE.
 
 Pokud jsou pocházejících z jiného IDE nebo kódování prostředí, může se stát, některou z následujících přípon užitečné instalaci:
 
-- [EMACS emulace](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [Klávesové zkratky pro Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
+- [EMACS emulace](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
 Tady jsou oblíbených zkratky v sadě Visual Studio:
@@ -85,6 +83,7 @@ Visual Studio 2017 se dodává s velkým množstvím refaktoring, kód generová
   - V další informace naleznete v našem [dokumentace](https://aka.ms/refactorings)
 - Psát vlastní kód nebo refaktoring opravy s [Roslyn analyzátorů](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 - Několik členy komunity vytvořilo bezplatné rozšíření, která přidat další kód kontroly:
+  - [FXCop analyzátory](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/)
   - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
   - [SonarLint pro sadu Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
@@ -120,7 +119,7 @@ Přidali jsme tuny nové schopnosti ladění ve Visual Studio 2017.
 - [Krok zpět](../debugger/how-to-use-intellitrace-step-back.md) ladění můžete přejít zpět na předchozí zarážky nebo kroky a zobrazení stavu aplikace, stejně jako tomu bylo v minulosti.
 - [Ladění snímku](/azure/application-insights/app-insights-snapshot-debugger) umožňuje prozkoumat stav za provozu webové aplikace se momentálně došlo k výjimce (musí být v Azure).
 
-![Nového pomocníka výjimka v VS2017](../ide/media/VSGuide_Debugging.png)
+![Nového pomocníka výjimka v Visual Studio 2017](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Chci použití správy verzí s projekty.
 Git nebo TFVC slouží k ukládání a aktualizujte kód v sadě Visual Studio.
@@ -141,8 +140,6 @@ Tady je seznam funkcí editoru a produktivitu pro efektivní psaní kódu. Někt
 | Režim dokončení/návrhu | Změny chování při dokončování IntelliSense--vývojářům IntelliJ pozadí mají tendenci se měnit nastavení sem z výchozího | **Nabídky** > **upravit** > **IntelliSense** > **přepnout režim dokončení** |
 | [Codelensu](../ide/find-code-changes-and-other-history-with-codelens.md) | Zobrazí kód referenční informace a změnit historie v editoru | **Nástroje pro** > **možnosti** > **textového editoru** > **všechny jazyky**  >   **Codelensu** |
 | [Fragmenty kódu](../ide/visual-csharp-code-snippets.md) | Nápověda se zakázaným inzerováním na běžné standardní |  Zadejte název fragmentu kódu a stiskněte klávesu **kartě** dvakrát. |
-
-![Fragmenty kódu v sadě Visual Studio](../ide/media/VSGuide_SmartEditor.png)
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Chybí funkce, která vám umožňuje produktivní nebo právě probíhá nízký výkon?
 Chcete nám sdělit svůj názor několika způsoby:

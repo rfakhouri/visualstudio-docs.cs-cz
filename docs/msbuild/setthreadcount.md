@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 059c3015bf542dda6a420c80620bc74c9ee6ca6b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b36da837ae1f4c327969b398c3964bfd6dd2aea3
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567223"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302747"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 Nastaví počet globální vláken a přiřadí tento počet aktuální vlákno.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cmd  
 HRESULT WINAPI SetThreadCount(int threadCount);  
 ```  
   

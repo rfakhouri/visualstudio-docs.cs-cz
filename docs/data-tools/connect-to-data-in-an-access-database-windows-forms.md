@@ -16,18 +16,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 233527e92a6d0d20294769d070e8dc81b33753b4
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f1d0b5d2d0391d401394929e16d5bfc97aa6d555
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746813"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282636"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Připojte se k datům v databázi aplikace Access (Windows Forms)
-Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (soubor MDF nebo soubor ACCDB). Po definování připojení, data se zobrazí v **zdroje dat** okno. Odtud můžete přetáhnout tabulky nebo zobrazení do formulářů.
+Můžete připojit k databázi aplikace Access (buď *.mdf* souboru nebo *ACCDB* souboru) pomocí sady Visual Studio. Po definování připojení, data se zobrazí v **zdroje dat** okno. Odtud můžete přetáhnout tabulky nebo zobrazení do formulářů.
 
 ## <a name="prerequisites"></a>Požadavky
- Pokud chcete použít tyto postupy, musíte projekt aplikace Windows Forms a databázi (soubor ACCDB) nebo databázi Access 2000-2003 (soubor .mdb). Postupujte podle kroků odpovídajících vašemu typu souboru.
+ Pokud chcete použít tyto postupy, budete potřebovat projekt aplikace Windows Forms a databáze aplikace Access (*ACCDB* soubor) nebo databáze Access 2000-2003 (*.mdb* souboru). Postupujte podle kroků odpovídajících vašemu typu souboru.
 
 ## <a name="creating-the-dataset-for-an-accdb-file"></a>Vytvoření sady dat pro soubor ACCDB
  Pro databáze vytvořené prostřednictvím přístupu 2013, Office 365, přístup 2010 nebo Access 2007 pomocí následujícího postupu můžete připojit.
@@ -65,7 +65,7 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
      > [!NOTE]
      >  Pokud nevidíte **Microsoft Office 12.0 zprostředkovatel Access Database Engine OLE DB** ve zprostředkovateli OLE DB rozevíracího seznamu, budete muset nainstalovat [ovladač systému Office 2007: součásti pro připojení dat](https://www.microsoft.com/download/confirmation.aspx?id=23734).
 
-9. V **serveru nebo název souboru** textového pole zadejte cestu a soubor název ACCDB soubor, který chcete připojit k a pak vyberte **OK**. (Pokud se soubor databáze má uživatelské jméno a heslo, zadejte, je před výběrem **OK**.)
+9. V **serveru nebo název souboru** textového pole zadejte cestu a název souboru *ACCDB* souboru, kterou chcete připojit k a pak vyberte **OK**. (Pokud se soubor databáze má uživatelské jméno a heslo, zadejte, je před výběrem **OK**.)
 
 10. Vyberte **Další** na **zvolit datové připojení** stránky.
 
@@ -79,7 +79,7 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
 
      Datová sada se přidá do projektu a tabulky a zobrazení se zobrazí v **zdroje dat** okno.
 
-## <a name="creating-the-dataset-for-an-mdb-file"></a>Vytvoření sady dat pro soubor .mdb
+## <a name="create-the-dataset-for-an-mdb-file"></a>Vytvořit datová sada pro soubor .mdb
  Vytvořit datová sada spuštěním **Průvodce konfigurací zdroje dat**.
 
 #### <a name="to-create-the-dataset"></a>Vytvoření datové sady
@@ -102,7 +102,7 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
 
 7.  Pokud zdroj dat není **soubor databáze aplikace Microsoft Access (OLE DB)**, vyberte **změnu** otevřete **zdroj dat změny** dialogové okno a vybrat **Microsoft Přístup k souboru databáze**a potom vyberte **OK**.
 
-8.  V **název souboru databáze**, zadejte cestu a název souboru .mdb, kterou chcete připojit k a pak vyberte **OK**.
+8.  V **název souboru databáze**, zadejte cestu a název *.mdb* souboru, kterou chcete připojit k a pak vyberte **OK**.
 
      ![Přidat připojení souboru databáze aplikace Access](../data-tools/media/dataaddconnectionaccessmdb.png)
 

@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe4c8a1e1aa561a8a7fca1f3b8e9e0469bf6dc9
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1b60df36240b332e74e63aaef7fab75ff19c7d77
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296304"
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Nainstalovat Visual Studio 2017 na malou šířkou pásma nebo nespolehlivé mezi sítě v prostředích
 
 Doporučujeme vám, že zkusíte webovou Instalační službu sady Visual Studio&mdash;myslíme si, naleznete je kvalitní většině situací.
 
  > [!div class="button"]
- > [Stažení sady Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [Stažení sady Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 Ale pokud vaše připojení k Internetu je k dispozici nebo nespolehlivé, můžete příkazového řádku k vytvoření místní mezipaměti souborů, které potřebujete k dokončení instalace v režimu offline. Tady je způsob.
@@ -46,7 +47,7 @@ Instalační soubor&mdash;nebo být konkrétnější, soubor zaváděcího nást
 
 ## <a name="step-2---create-a-local-install-cache"></a>Krok 2 – Vytvoření mezipaměti místní instalace
 
-Musí mít připojení k Internetu k dokončení tohoto kroku. Pokud chcete vytvořit místní rozložení, otevřete příkazový řádek a použijte jednu z následujících příkladech příkazů: Příklady zde předpokládají, že používáte edice Community sady Visual Studio; Upravte příkaz podle potřeby vaší verze.
+Musí mít připojení k Internetu k dokončení tohoto kroku. Pokud chcete vytvořit místní rozložení, otevřete příkazový řádek a použijte jednu z následujících příkladech příkazů. Příklady zde předpokládají, že používáte edice Community sady Visual Studio; Upravte příkaz podle potřeby vaší verze.
 
 - Webové rozhraní .NET a vývoj aplikací .NET spusťte:
 
@@ -106,7 +107,7 @@ Použijte tento příkaz ke spuštění instalace:
 
 ## <a name="get-support"></a>Získat podporu
 
-V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Tady je několik další možnosti podpory:
 
@@ -115,8 +116,9 @@ Tady je několik další možnosti podpory:
 * Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Instalace sady Visual Studio](install-visual-studio.md)
 * [Příručka správce Visual Studio](visual-studio-administrator-guide.md)
 * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio 2017 pracovního vytížení a součást ID](workload-and-component-ids.md)

@@ -19,24 +19,24 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 28b2f4df3cba1c0dd56cda6c8ba4e6c7f5cbe495
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 8a09dc06ac76ff94ea8bbf933a1873221bfe0952
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032200"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281722"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Odkaz migrace a upgrade projektu pro Visual Studio 2017
 
-Každá nová verze sady Visual Studio obecně podporuje většinu typů předchozí projekty, soubory a dalších prostředků. Můžete pracovat s nimi [jako budete mít vždy](../ide/solutions-and-projects-in-visual-studio.md), a za předpokladu, že nemáte závisí na novější funkce, Visual Studio se pokusí obecně zachování zpětné kompatibility s předchozími verzemi jako Visual Studio 2015, Visual Studio 2013, a Visual Studio 2012. (Viz [poznámky k verzi](https://www.visualstudio.com/vs/release-notes/) pro funkce, které jsou specifické pro jaké verze.)
+Každá nová verze sady Visual Studio obecně podporuje většinu typů předchozí projekty, soubory a dalších prostředků. Můžete pracovat s nimi [jako budete mít vždy](../ide/solutions-and-projects-in-visual-studio.md), a za předpokladu, že nemáte závisí na novější funkce, Visual Studio se pokusí obecně zachování zpětné kompatibility s předchozími verzemi jako Visual Studio 2015, Visual Studio 2013, a Visual Studio 2012. (Viz [poznámky k verzi](https://visualstudio.microsoft.com/vs/release-notes/) pro funkce, které jsou specifické pro jaké verze.)
 
 Podpora pro některé typy projektů se také změní v čase. Novější verze sady Visual Studio už můžou podporovat určité projekty, nebo vyžaduje aktualizace projektu tak, že již není zpětně kompatibilní. Aktuální stav na problémy s migrací, najdete v části [webu Visual Studio Community vývojáře](https://developercommunity.visualstudio.com).
 
 > [!Important]
-> Tento článek existuje poskytuje podrobnosti pouze pro typy projektů ve Visual Studio 2017, které zahrnují migraci. Nezahrnuje typy podporované projektů, které mají žádné problémy migrace; Tento seznam se nachází na [cílení a kompatibilita platformy](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs). Všimněte si také, že některé typy projektů již nejsou podporovány v aplikaci Visual Studio 2017 vůbec a proto se nedají migrovat.
+> Tento článek existuje poskytuje podrobnosti pouze pro typy projektů ve Visual Studio 2017, které zahrnují migraci. Nezahrnuje typy podporované projektů, které mají žádné problémy migrace; Tento seznam se nachází na [cílení a kompatibilita platformy](/visualstudio/productinfo/vs2017-compatibility-vs). Všimněte si také, že některé typy projektů již nejsou podporovány v aplikaci Visual Studio 2017 vůbec a proto se nedají migrovat.
 
 > [!Important]
-> Některé typy projektů vyžadují instalaci příslušné úlohy prostřednictvím Instalační program sady Visual Studio. Pokud nemáte zatížení nainstalovaná, Visual Studio nahlásí typ projektu neznámý nebo není kompatibilní. V takovém případě zkontrolujte možnosti instalace a zkuste to znovu. Znovu, najdete v článku [cílení a kompatibilita platformy](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs) článku informace o podporovaných projektu ve Visual Studio 2017.
+> Některé typy projektů vyžadují instalaci příslušné úlohy prostřednictvím Instalační program sady Visual Studio. Pokud nemáte zatížení nainstalovaná, Visual Studio nahlásí typ projektu neznámý nebo není kompatibilní. V takovém případě zkontrolujte možnosti instalace a zkuste to znovu. Znovu, najdete v článku [cílení a kompatibilita platformy](/visualstudio/productinfo/vs2017-compatibility-vs) článku informace o podporovaných projektu ve Visual Studio 2017.
 
 ## <a name="project-types"></a>Typy projektů
 
@@ -76,7 +76,7 @@ Pokud nevidíte projektu nebo typ souboru tady, by měl být, najdete [Visual St
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Jak Visual Studio rozhodne, kdy se mají migrovat projektu
 
-Každá nová verze sady Visual Studio se obecně snaží zachování kompatibility s předchozími verzemi tak, aby stejné projektu můžete otevřít, upravit a vytvořené mezi různými verzemi. Existují však nevyhnutelné změny v čase tak, že některé typy projektů již nemusí být podporovány. (Viz [cílení a kompatibilita platformy](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs) pro které projekt typy podporovaných v aplikaci Visual Studio 2017.) V těchto případech novější verze sady Visual Studio nebude projekt načtete a nenabízí cestu migrace; je třeba spravovat tohoto projektu v předchozí verzi sady Visual Studio, které podporují.
+Každá nová verze sady Visual Studio se obecně snaží zachování kompatibility s předchozími verzemi tak, aby stejné projektu můžete otevřít, upravit a vytvořené mezi různými verzemi. Existují však nevyhnutelné změny v čase tak, že některé typy projektů již nemusí být podporovány. (Viz [cílení a kompatibilita platformy](/visualstudio/productinfo/vs2017-compatibility-vs) pro které projekt typy podporovaných v aplikaci Visual Studio 2017.) V těchto případech novější verze sady Visual Studio nebude projekt načtete a nenabízí cestu migrace; je třeba spravovat tohoto projektu v předchozí verzi sady Visual Studio, které podporují.
 
 V ostatních případech novější verze sady Visual Studio můžete otevřít projekt, ale musí aktualizovat nebo migrovat projekt tak, která může vykreslit kompatibilní s předchozími verzemi. Visual Studio použije kritéria k určení, zda je nutné tyto migrace:
 
@@ -92,7 +92,7 @@ Pokud takové kompatibility není možné, ale jako s některými typy projektů
 
 Tyto změny jednosměrný může zahrnovat změna `ToolsVersion` vlastnost v souboru projektu, který označuje přesně kterou verzi nástroje MSBuild můžete zapnout projektu zdrojový kód do spustitelného a nasadit artefaktů, které chcete výsledku. To znamená, co vykreslí projektu není kompatibilní s předchozími verzemi sady Visual Studio není *Visual Studio* verze, ale *MSBuild* verze, počítáno od `ToolsVersion`. Tak dlouho, dokud vaší verzí sady Visual Studio obsahuje MSBuild nástrojů, který odpovídá `ToolsVersion` v projektu, pak Visual Studio můžete vyvolat této nástrojů a tím projekt sestavit.
 
-K zachování maximální kompatibility s projekty vytvořené ve starších verzích, Visual Studio 2017 obsahuje nezbytné toolchains MSBuild pro podporu `ToolsVersion` 15, 14, 12 a 4. Projekty, které používají některá z těchto `ToolsVersion` hodnoty by měla mít za následek úspěšném sestavení. (Subjektu, znovu, jestli se Visual Studio 2017 podporuje typ projektu vůbec, jak je popsáno na [cílení a kompatibilita platformy](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs).)
+K zachování maximální kompatibility s projekty vytvořené ve starších verzích, Visual Studio 2017 obsahuje nezbytné toolchains MSBuild pro podporu `ToolsVersion` 15, 14, 12 a 4. Projekty, které používají některá z těchto `ToolsVersion` hodnoty by měla mít za následek úspěšném sestavení. (Subjektu, znovu, jestli se Visual Studio 2017 podporuje typ projektu vůbec, jak je popsáno na [cílení a kompatibilita platformy](/visualstudio/productinfo/vs2017-compatibility-vs).)
 
 V tomto kontextu přirozeně vzniká otázka zda snažte se ručně aktualizovat nebo migrovat na projekt novější `ToolsVersion` hodnotu. Taková změna není nutný a pravděpodobně by vygeneroval všechny chyby a upozornění, které je třeba opravit získat projekt znovu sestavit. Kromě toho pokud Visual Studio klesne podporu pro konkrétní `ToolsVersion` v budoucnu, pak otevření projektu spustí proces migrace projektu konkrétně, protože `ToolsVersion` je třeba hodnotu změnit. V takovém případě subsystém pro konkrétní projekt typu neví, přesně co je potřeba změnit a můžete provést tyto změny automaticky, jak je popsáno výše v tomto článku.
 

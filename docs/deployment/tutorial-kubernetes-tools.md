@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: a2bdc24a3e1ee30ffa569fa0c9e5b2ab208aa7ef
-ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
+ms.openlocfilehash: b354045ceb464a14ff909a503aa62477c73b983c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34851891"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280874"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Začínáme s Kubernetes nástroje sady Visual Studio
 
@@ -24,7 +24,7 @@ Visual Studio Kubernetes Tools zjednodušit vývoj cílení na Kubernetes kontej
 
 Můžete využít tyto nové funkce, budete potřebovat:
 
-- Nejnovější verzi preview [Visual Studio 2017](https://www.visualstudio.com/vs/preview) se zatížením, vývoj pro Azure.
+- Nejnovější verzi preview [Visual Studio 2017](https://visualstudio.microsoft.com/vs/preview) se zatížením, vývoj pro Azure.
 
 - [Kubernetes tools pro Visual Studio](https://aka.ms/get-vsk8stools), k dispozici jako samostatný soubor ke stažení.
 

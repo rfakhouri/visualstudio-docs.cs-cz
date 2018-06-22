@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 486ca90ac2a8a4b3b289b0896e2cd81239502558
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4c9a60212a3e89e8c7f445e5670858f524df9a70
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269138"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302947"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask – element (MSBuild)
 Mapuje úloha, která odkazuje [úloh](../msbuild/task-element-msbuild.md) element na sestavení, které obsahuje implementaci úloh.  
@@ -35,7 +35,7 @@ Mapuje úloha, která odkazuje [úloh](../msbuild/task-element-msbuild.md) eleme
 
 ## <a name="syntax"></a>Syntaxe  
 
-```  
+```xml  
 <UsingTask TaskName="TaskName"  
     AssemblyName = "AssemblyName"   
     TaskFactory = "ClassName"  

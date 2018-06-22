@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20570d0a2d0173ca2322cb6ab1e888c7335cb4c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a9035b9232d1b2e459be86c24758dcc6db6b1cdf
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972102"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281661"
 ---
-# <a name="install-test-agents-and-test-controllers"></a>Nainstalujte testovacích agentů a testovací kontrolery
+# <a name="install-test-agents-and-test-controllers"></a>Instalace testovacích agentů a kontrolerů testů
 
 Testovací scénáře, které používají Visual Studio a Visual Studio Team Services (VSTS) nebo Team Foundation Server (TFS) není nutné testovací kontroler. Agenti pro sadu Visual Studio zpracování orchestration komunikaci s služby VSTS nebo TFS. Scénáři může být spuštění průběžné testů pro sestavení a verze pracovních postupů v služby VSTS nebo TFS.
 
@@ -34,9 +34,9 @@ Také můžete zvážit, pokud je vhodnější použít [sestavení nebo Správa
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Nainstalujte testovací kontrolery a testovací agenti
 
-Můžete si stáhnout agentů pro Visual Studio 2017 z [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Přejděte do dolní části stránky a vyhledejte *agentů pro Visual Studio 2017*. Vyberte buď *agenta* nebo *řadič*a potom zvolte *Stáhnout*. Spusťte stažený spustitelný soubor instalace zařízení nebo testovacího agenta.
+Můžete si stáhnout agentů pro Visual Studio 2017 z [visualstudio.com](https://visualstudio.microsoft.com/downloads/?q=agents). Přejděte do dolní části stránky a vyhledejte *agentů pro Visual Studio 2017*. Vyberte buď *agenta* nebo *řadič*a potom zvolte *Stáhnout*. Spusťte stažený spustitelný soubor instalace zařízení nebo testovacího agenta.
 
-Agenty si můžete stáhnout pro Visual Studio 2015 a Visual Studio 2013 z [starší stahování](https://www.visualstudio.com/vs/older-downloads/) stránky.
+Agenty si můžete stáhnout pro Visual Studio 2015 a Visual Studio 2013 z [starší stahování](https://visualstudio.microsoft.com/vs/older-downloads/) stránky.
 
 Tato instalační programy jsou k dispozici jako soubory ISO Snadná instalace na virtuálních počítačích.
 

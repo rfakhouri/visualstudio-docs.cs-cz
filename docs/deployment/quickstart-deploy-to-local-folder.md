@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f17e3214c1222eaadf43f3ea2d0e56742cd1ecf
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 48c9e38a0e3a1bcc5a12ed764c43747b27a5e303
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234657"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283361"
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Nasazení do místní složky pomocí nástroje Visual Studio publikovat webovou aplikaci nebo aplikaci .NET Core
 
-Můžete použít **publikovat** nástroj pro publikování aplikace do místní složky. 
+Můžete použít **publikovat** nástroj pro publikování aplikace do místní složky.
 
 Tento postup platí pro technologii ASP.NET, ASP.NET Core, .NET Core a Python aplikace v sadě Visual Studio. Pro platformu Node.js kroky jsou podporované, ale uživatelské rozhraní se liší.
 
@@ -29,9 +29,9 @@ Tento postup platí pro technologii ASP.NET, ASP.NET Core, .NET Core a Python ap
 
 * Musíte mít nainstalované Visual Studio 2017 a. **NET vývoj aplikací** pracovního vytížení a. **Základní NET** zatížení.
 
-    Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
+    Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
-## <a name="create-a-new-project"></a>Vytvoření nového projektu 
+## <a name="create-a-new-project"></a>Vytvoření nového projektu
 
 1. V sadě Visual Studio, vyberte **soubor** > **nový projekt**.
 
@@ -63,7 +63,7 @@ Tento postup platí pro technologii ASP.NET, ASP.NET Core, .NET Core a Python ap
 
 1. Chcete-li konfigurovat nastavení nasazení, klikněte na tlačítko **nastavení** v souhrnu profilu.
 
-    ![Nastavení profilu](../deployment/media/quickstart-profile-settings.png "nastavení profilu") 
+    ![Nastavení profilu](../deployment/media/quickstart-profile-settings.png "nastavení profilu")
 
 1. Konfigurovat možnosti, například zda ladění nebo verze konfigurace nasazení a pak klikněte na tlačítko **Uložit**.
 

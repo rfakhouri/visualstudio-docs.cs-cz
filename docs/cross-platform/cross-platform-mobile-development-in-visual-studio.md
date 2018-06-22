@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e49ea6de96f89e2761699972ffaf6bf9fd16356
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: fdb86d41096ddcd45cbef9bf9a3a6ffbffe188c0
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238170"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281794"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Mobilní vývoj pro různé platformy v sadě Visual Studio
 
@@ -33,11 +33,11 @@ Pomocí nástrojů Visual Studio pro Xamarin můžete určit cílovou Android, i
 
 |**Víc se uč**|
 |--------------------|
-|[Instalaci sady Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Další informace o Xamarinu ve Visual Studiu](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
+|[Instalaci sady Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Další informace o Xamarinu ve Visual Studiu](http://visualstudio.microsoft.com/explore/xamarin-vs) (VisualStudio.com)|
 |[Dokumentace k vývoji mobilní aplikace Xamarin](/xamarin/) |
 |[Správa životního cyklu aplikací s aplikacemi Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
-|[Další informace o univerzální aplikace pro Windows v sadě Visual Studio](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
+|[Další informace o univerzální aplikace pro Windows v sadě Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Další informace o podobnosti mezi Swift a C#](http://aka.ms/scposter) (download.microsoft.com)|
 
 ###  <a name="AndroidHTML"></a> Cíl Android, iOS a Windows z jednoho základu kódu
@@ -106,9 +106,9 @@ Pomocí nástrojů Visual Studio pro Xamarin můžete určit cílovou Android, i
 
 |**Víc se uč**|
 |--------------------|
-|[Instalaci sady Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Instalaci sady Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Začínáme s nástroji Visual Studio Tools pro Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)|
-|[Další informace o emulátor sady Visual Studio pro Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[Další informace o emulátor sady Visual Studio pro Android](http://visualstudio.microsoft.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 <a name="CPP"></a>
 
@@ -135,11 +135,11 @@ Pomocí nástrojů Visual Studio pro Xamarin můžete určit cílovou Android, i
 
 |**Víc se uč**|
 |--------------------|
-|[Stáhněte si Visual Studio.](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Stáhněte si Visual Studio.](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Nainstalujte Visual C++ pro nástroje pro vývoj mobilních řešení pro různé platformy.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (Knihovna MSDN)|
-|[Další informace o používání C++ pro více cílových platforem.](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Další informace o používání C++ pro více cílových platforem.](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Nainstalujte co potřebujete a potom vytvořte nativní aktivity aplikace pro Android](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (Knihovna MSDN)|
-|[Další informace o sdílení kódu C++ s aplikací pro Android a Windows](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Další informace o sdílení kódu C++ s aplikací pro Android a Windows](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Vývoj pro různé platformy mobilních příklady pro jazyk C++](https://msdn.microsoft.com/library/dn707596.aspx) (Knihovna MSDN)|
 |[Příklady dalších mobilní vývoj pro různé platformy pro jazyk C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
@@ -155,7 +155,7 @@ Pomocí nástrojů Visual Studio pro Xamarin můžete určit cílovou Android, i
 
 |**Víc se uč**|
 |--------------------|
-|[Další informace o vytváření Unity hry pomocí sady Visual Studio](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
+|[Další informace o vytváření Unity hry pomocí sady Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Další informace o Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Začít používat Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Přečtěte si informace o nejnovější vylepšení pro sadu Visual Studio Tools pro Unity 2.0 Preview](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (blog Visual Studio)|

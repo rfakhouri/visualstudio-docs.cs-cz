@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f28de642d6a1f4f9071099593f990c6197ed34ec
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 05eab2ea5445c552f435151bbe696f913fa8cb5a
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234748"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282571"
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Publikování aplikace ASP.NET nebo ASP.NET Core Azure App Service pomocí sady Visual Studio
 
@@ -29,9 +29,9 @@ Pokud již účet Azure nemáte, můžete [zaregistrujte si zde](https://azure.m
 
 * Musíte mít nainstalované Visual Studio 2017 a **ASP.NET a webové vývoj** pracovního vytížení a. **NET vývoj aplikací** zatížení. Pro aplikace .NET Core, musíte. **NET základní** zatížení.
 
-    Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
+    Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
-## <a name="create-a-new-project"></a>Vytvoření nového projektu 
+## <a name="create-a-new-project"></a>Vytvoření nového projektu
 
 1. V sadě Visual Studio, vyberte **soubor** > **nový projekt**.
 
@@ -62,7 +62,7 @@ Pokud již účet Azure nemáte, můžete [zaregistrujte si zde](https://azure.m
     **Vytvořit službu App Service** zobrazí se dialogové okno.
 
     ![Vytvoření služby App Service](../deployment/media/quickstart-publish-settings-app-service.png "vytvoření služby Azure App Service")
-    
+
 1. Pokud nejste v sadě Visual Studio, přihlaste se a pak výchozí nastavení aplikace služby vyplňte pole.
 
     Profil publikování nastavení, které se otevře se dialogové okno.

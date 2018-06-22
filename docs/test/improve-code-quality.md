@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0312b3aaffb12757466b11aa117170387f01c19
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68bed424da371fa2c959b906e029942314fef3c4
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967218"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281612"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testovací nástroje v sadě Visual Studio
 
@@ -38,7 +38,7 @@ Testovací nástroje sady Visual Studio může pomoct a váš tým vyvíjet a ud
 - [Zátěžové testování](../test/quickstart-create-a-load-test-project.md) simuluje zatížení na server aplikace tak, že spustíte testy částí a testy výkonu webu.
 
 > [!NOTE]
-> Testování částí je dostupné ve všech edicích sady Visual Studio. Jiné testování nástroje, například live testování, částí IntelliTest, a testy programového uživatelského rozhraní jsou dostupné jen ve Visual Studio Enterprise edition. Další informace o edicích naleznete v části [porovnat Visual Studio 2017 integrovaného vývojového prostředí](https://www.visualstudio.com/vs/compare/).
+> Testování částí je dostupné ve všech edicích sady Visual Studio. Jiné testování nástroje, například live testování, částí IntelliTest, a testy programového uživatelského rozhraní jsou dostupné jen ve Visual Studio Enterprise edition. Další informace o edicích naleznete v části [porovnat Visual Studio 2017 integrovaného vývojového prostředí](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>Související scénáře
 

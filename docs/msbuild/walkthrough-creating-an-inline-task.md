@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f906e6be7d45f3e386b2007c779c4b4906d7980e
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 3bb1c2f43504a89ede3e9ad9e6f13c05130c9c34
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234095"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303050"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Návod: Vytvoření vložené úlohy
 Úlohy nástroje MSBuild obvykle vytváří kompilování třídu, která implementuje <xref:Microsoft.Build.Framework.ITask> rozhraní. Od verze rozhraní .NET Framework verze 4, můžete vytvořit úlohy vložené v souboru projektu. Chcete-li vytvořit samostatné sestavení pro hostování úlohy nemáte. Další informace najdete v tématu [vložené úlohy](../msbuild/msbuild-inline-tasks.md).  
@@ -65,7 +65,9 @@ ms.locfileid: "36234095"
   
 1.  V kořenovém `Project` uzlu, změny `DefaultTargets` atribut `TestBuild`. Výsledná `Project` uzlu by měl vypadat podobně jako tento příklad:  
   
-     `<Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">`  
+    ```xml
+    <Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    ```
   
 2.  Přidejte následující vložené úlohy a cílový soubor projektu těsně před `</Project>` značky.  
   
@@ -225,9 +227,13 @@ ms.locfileid: "36234095"
   
 3.  Zkontrolujte výstup v **okno příkazového řádku**. Měli byste vidět tyto řádky:  
   
-     `Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs`  
+    ```
+    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
+    ```  
   
-     `Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs`  
+    ```
+    Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs
+    ```  
   
  Tento kód definuje vložené úlohy, který má název RegX a tyto tři parametry:  
   
@@ -242,16 +248,16 @@ ms.locfileid: "36234095"
 ### <a name="handling-reserved-characters"></a>Zpracování vyhrazené znaky  
  Analyzátor MSBuild zpracovává vložené úlohy ve formátu XML. Znaky, které obsahují rezervované význam v XML, například "\<" a ">", jsou zjištěna a zpracovávají, jako kdyby byly XML a ne zdrojový kód rozhraní .NET. K obsahují vyhrazené znaky v kódu výrazy, například `Files.Length > 0`, zapisovat `Code` element tak, aby její obsah se obsažených ve výrazu CDATA následujícím způsobem:  
   
- `<Code Type="Fragment" Language="cs">`  
+ ```xml
+<Code Type="Fragment" Language="cs">  
+  <![CDATA[  
   
- `<![CDATA[`  
+  // Your code goes here.  
   
- `// Your code goes here.`  
-  
- `]]>`  
-  
- `</Code>`  
-  
+  ]]>  
+</Code>  
+```  
+
 ## <a name="see-also"></a>Viz také  
  [Vložené úlohy](../msbuild/msbuild-inline-tasks.md)   
  [Úlohy](../msbuild/msbuild-tasks.md)   

@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1294083fa14bd71ca0d46aed481a963b8dfd39d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f939947c4b96584439d85c33c234dc769531888d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968765"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280608"
 ---
-# <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Přiřazení rolí k testovacímu Kontroleru a testovacímu agentovi
+# <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Přiřazení rolí k testovací kontrolery a testovací agent
 
 Tento návod ukazuje, jak vytvořit a nakonfigurovat nastavení testu, který využívá testovacího kontroléru a agenta test k distribuci testování mezi několik počítačů pomocí sady Visual Studio. Kromě toho tento návod ukazuje, jak přidat adaptérů diagnostiky a dat do nastavení testu.
 
@@ -41,7 +41,7 @@ V tomto návodu dokončí následující úkoly:
 
 ## <a name="to-create-and-configure-a-test-setting"></a>Vytvořit a nakonfigurovat nastavení testu
 
-1.  V Průzkumníku řešení klikněte pravým tlačítkem na **položky řešení** přejděte na příkaz **přidat**a potom zvolte **novou položku**.
+1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na **položky řešení** přejděte na příkaz **přidat**a potom zvolte **novou položku**.
 
      **Přidat novou položku** zobrazí se dialogové okno.
 
@@ -51,7 +51,7 @@ V tomto návodu dokončí následující úkoly:
 
 4.  Zvolte **přidat**.
 
-     Nový test TestSettingDistributedTestWalkthrough.testsettings souboru se zobrazí v Průzkumníku řešení klikněte v části **položky řešení** složky.
+     Nový test *TestSettingDistributedTestWalkthrough.testsettings* souboru se zobrazí v **Průzkumníku řešení**v části **položky řešení** složky.
 
      **Nastavení testu** se zobrazí dialogové okno. **Obecné** je vybrány.
 
@@ -112,6 +112,6 @@ V tomto návodu dokončí následující úkoly:
 
      Když testovací kontroler zpracovává testy částí a programové testy uživatelského rozhraní, testovací kontroler rozděluje testy do skupin 100 a je odešle do testovacího počítače agenta. Například pokud máte 250 testy jednotek a tři testovací agenti, testy částí prvních 100 odešlou do agent1, testy dalších 100 jednotek odešlou do agent2 a zbývající testy jednotek 50 odešlou do agent3.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md)

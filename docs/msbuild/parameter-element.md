@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 544851ca500e417cbc3010c23ad122a4ab1f2cc0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 18db5f6cd5c2bccaca73161713af15a88175bf49
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567938"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302600"
 ---
-# <a name="parameter-element"></a>Parameter – Element
+# <a name="parameter-element"></a>Parameter – element
 Obsahuje informace o určitém parametru pro úlohu, která je generován `UsingTask``TaskFactory`.  Název elementu je název parametru.  Chcete-li – další informace, najdete v tématu [usingtask – Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
 
  \<Project>  
@@ -36,7 +36,7 @@ Obsahuje informace o určitém parametru pro úlohu, která je generován `Using
 
 ## <a name="syntax"></a>Syntaxe  
 
-```  
+```xml  
 <ParameterGroup ParameterType="SystemType"  
     Output="true/false"  
     Required="true/false" />  

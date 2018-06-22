@@ -1,5 +1,5 @@
 ---
-title: Zdroje pro řešení potíží obsahovaly chyby vývojového prostředí.
+title: Prostředky pro řešení potíží s chybami
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -95,22 +95,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0b0bd982e153e7213f36574b44f9060006ebc99
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 7ea3f5575f5ba09a4d3f4a69a6ed800bb703b732
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106918"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302623"
 ---
-# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zdroje pro řešení potíží obsahovaly chyby vývojového prostředí.
+# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Prostředky pro řešení potíží obsahovaly chyby vývojového prostředí
 
-Ne všechny chybové zprávy mít konkrétní přidružené tématu nápovědy. Informace v chybové zprávě není vám pomůžou vyřešit problém, naleznete další prostředky, například články znalostní báze Knowledge Base, komunity vývojářů nebo technické podpory.
+Ne všechny chybové zprávy mít konkrétní přidružené tématu nápovědy. Informace v chybové zprávě není vám pomůžou vyřešit problém, naleznete další prostředky například články znalostní báze Knowledge Base, fóra nebo technické podpory.
 
 ## <a name="knowledge-base-articles"></a>Články znalostní báze
 
 Ve znalostní bázi (KB) je možné hledat online články týkající se problémů s produktem. Ne všechny problémy mají odpovídající článek ve znalostní bázi, ale chyby, se kterými se setkal velký počet zákazníků, jsou obvykle uvedeny. Články znalostní BÁZE je k dispozici na [Microsoft Support](https://support.microsoft.com) webu.
 
-## <a name="the-developer-community"></a>Komunity vývojářů
+## <a name="developer-forums"></a>Fórech pro vývojáře
 
 Fóra umožňují interakci s dalšími vývojáři a také zaměstnanci společnosti Microsoft. Pokud narazíte na chybu, pro kterou nelze nalézt řešení, je možné poslat otázky týkající se problému na fórum. Také je možné prohledat diskusní skupiny a zjistit, zda někdo z ostatních psal o stejném problému.
 
@@ -120,6 +120,6 @@ Je k dispozici na fóra, blogy, konverzace a dalším prostředkům [technickýc
 
 Pokud stále máte otázky po zkuste jiné prostředky, můžete obrátit podpory společnosti Microsoft navštivte stránky [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) webu. Informace o podpoře produktu ve vaší oblasti najdete v tématu [kontaktujte nás](../../ide/talk-to-us.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Řešení potíží s související se sítí nebo chyby proxy](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)

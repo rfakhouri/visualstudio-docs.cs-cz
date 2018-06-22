@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5013f1ce5ed9c20ba51feef7dd73d80adc152103
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: cd8f99ffdba144d475b3d68d7509b57ad7ea4e3c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454698"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281095"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Nainstalovat pro vývoj mobilních řešení pro různé platformy s C++
 
@@ -25,7 +25,7 @@ C++ v sadě Visual Studio můžete použít k vytvoření aplikace Windows Deskt
 
 ## <a name="requirements"></a>Požadavky
 
-- Požadavky na instalaci, najdete v části [produktu rodiny požadavky sady Visual Studio](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs).
+- Požadavky na instalaci, najdete v části [produktu rodiny požadavky sady Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
    > [!IMPORTANT]
    > Pokud používáte systém Windows 7 nebo Windows Server 2008 R2, můžete vyvíjet kódu pro aplikace Windows Desktop, aplikace Android nativní aktivity a knihovny a aplikace a knihovny kódu pro iOS, ale ne Windows Phone nebo UWP aplikací.

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d6b30f3b264e5bdffc5f9c0f36ba17e67e8a5d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: e7a43ce46bc34ed6341d92833ee066479ca2392b
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31621165"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280439"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalace certifikátů vyžadovaných pro instalaci offline sady Visual Studio
 
@@ -109,13 +109,13 @@ Jedním ze způsobů, zkontrolujte instalaci systému je postupujte podle těcht
 
 Pokud nebyly v názvech certifikátů **vystaveno pro** sloupců, musí být nainstalován.  Pokud certifikát zprostředkující byla jenom v **aktuální uživatel** zprostředkující certifikát úložiště, pak je k dispozici pouze uživateli, který je přihlášen. Možná budete muset nainstalovat pro ostatní uživatele.
 
-## <a name="install-visual-studio"></a>Instalaci sady Visual Studio
+## <a name="install-visual-studio"></a>Instalace sady Visual Studio
 
 Po instalaci certifikátů, nasazení sady Visual Studio můžete pokračovat podle pokynů z [nasazení z síťovou instalaci](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) části stránky "Vytvořit síťovou instalaci sady Visual Studio".
 
 ## <a name="get-support"></a>Získat podporu
 
-V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Tady je několik další možnosti podpory:
 
@@ -124,7 +124,7 @@ Tady je několik další možnosti podpory:
 * Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Instalace sady Visual Studio](install-visual-studio.md)
 * [Příručka správce Visual Studio](visual-studio-administrator-guide.md)

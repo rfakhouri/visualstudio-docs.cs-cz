@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07f25edb63e3418bab44d71bc8314d3aa83e7a84
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dfdddaab181455ede946a47eac96fdfee022d200
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477151"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282480"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Co je nového v ladicím programu [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -58,7 +58,7 @@ Ladicí program obsahuje tyto nové funkce:
 
 - Teď můžete spustit na řádek kódu při pozastavena v ladicím programu výběrem **spuštění zde** ikonu zelenou šipku (při se zobrazí ikona ukazatele myši na řádek kódu). Tím se eliminuje potřeba nastavit dočasné zarážky.
 
-    ![Ladicí program je spustit kliknutím](../debugger/media/dbg-run-to-click.png "DbgRunToClick") 
+    ![Ladicí program je spustit kliknutím](../debugger/media/dbg-run-to-click.png "DbgRunToClick")
 
 - Podmínky můžete nastavit výjimky v **nastavení výjimky** dialogové okno (můžete to provést pomocí **upravit podmínky** v dialogovém okně Nastavení výjimky nebo pomocí v místní nabídce na ikonu došlo k výjimce.) Aktuálně podporované podmínky zahrnují názvy modulu pro zahrnutí nebo vyloučení pro výjimku.
 
@@ -66,10 +66,11 @@ Ladicí program obsahuje tyto nové funkce:
 
 - Připojte k procesu dialogové okno obsahuje novou funkci vyhledávání, která vám může pomoct další rychle identifikovat proces, který je potřeba přiřadit.
 
-    ![Hledání v připojit k procesu](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch") 
+    ![Hledání v připojit k procesu](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Další informace o těchto nových funkcích najdete v tématu [poznámky k verzi pro [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#debuggingdiag).
-  
-## <a name="see-also"></a>Viz také  
- [Ladění v sadě Visual Studio](../debugger/index.md)  
- [Prohlídka funkce ladicí program](../debugger/debugger-feature-tour.md)
+Další informace o těchto nových funkcích najdete v tématu [poznámky k verzi pro [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
+
+## <a name="see-also"></a>Viz také:
+
+- [Ladění v sadě Visual Studio](../debugger/index.md)
+- [Prohlídka funkce ladicí program](../debugger/debugger-feature-tour.md)

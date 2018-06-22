@@ -1,5 +1,5 @@
 ---
-title: Aktualizace síťovou instalaci sady Visual Studio
+title: Aktualizace síťové instalace sady Visual Studio
 description: Zjistěte, jak aktualizovat síťovou instalaci sady Visual Studio pomocí příkazu--rozložení
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
@@ -14,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad8cfdb54b690dd9f5639bea71d790ef0d79a19a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 64a8fbd599667c7c28a48f80ff97932161c9e2f7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31620450"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282558"
 ---
-# <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizace síťovou instalaci sady Visual Studio
+# <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizace síťové instalace sady Visual Studio
 
 Je možné aktualizace rozložení sítě instalace sady Visual Studio pomocí nejnovější aktualizace produktu, tak, aby je bylo možné použila i jako bod instalace pro nejnovější aktualizaci sady Visual Studio a také k údržbě instalace, které jsou již nasazeny do klienta pracovní stanice.
 
@@ -41,10 +41,10 @@ Projděme postup vytvoření a aktualizujte rozložení:
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
-* Chcete-li aktualizovat na novější verzi této stejné rozvržení. Není nutné specifikovat žádné další parametry příkazového řádku. Předchozí nastavení se uložilo a budou používat všechny následné rozložení příkazy v této složce rozložení.  
+* Chcete-li aktualizovat na novější verzi této stejné rozvržení. Není nutné specifikovat žádné další parametry příkazového řádku. Předchozí nastavení se uložilo a budou používat všechny následné rozložení příkazy v této složce rozložení.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout  
+  vs_enterprise.exe --layout c:\VS2017Layout
   ```
 
 * Chcete-li aktualizovat v bezobslužném rozložení na novější verzi. Operaci rozložení spustí proces instalace v nové okno konzoly. Okno je ponechány otevřené, takže uživatelé mohou vidět konečný výsledek a souhrn chyby, ke kterým může dojít. Pokud provádíte operaci rozložení v bezobslužném (například máte skript, který je spuštěn pravidelně aktualizovat na nejnovější verzi vaší rozložení), potom použít `--passive` parametr a tento proces se automaticky zavře okno.
@@ -96,7 +96,7 @@ Uvnitř layoutDir nelze vyvolat vs_enterprise.exe.
 > [!NOTE]
 > Některé důležité metadata soubory, které jsou vyžadovány `--verify` možnost musí být v mezipaměti offline rozložení. Pokud tyto soubory metadat chybí, "– Ověřte" nelze spustit, a nabídne instalační program k chybě. Pokud dojde k této chybě, znovu vytvořte nové offline rozložení do jiné složky (nebo do stejné složky, offline mezipaměti. Uděláte to tak, spusťte stejný příkaz rozložení, který jste použili k vytvoření počáteční offline rozložení. Například `Vs_enterprise.exe --layout <layoutDir>`.
 
-Microsoft dodává aktualizace pro Visual Studio pravidelně, tak nové rozložení, který vytvoříte, nemusí být stejnou verzi jako počáteční rozložení.  
+Microsoft dodává aktualizace pro Visual Studio pravidelně, tak nové rozložení, který vytvoříte, nemusí být stejnou verzi jako počáteční rozložení.
 
 ## <a name="how-to-fix-a-layout"></a>Jak opravit rozložení
 
@@ -114,9 +114,9 @@ Po provedení rozložení aktualizace offline mezipaměti, bude složka mezipam�
 
 K tomu budete potřebovat soubor cesty k manifest(s) katalogu, které obsahují tyto balíčky zastaralé. Můžete najít, že katalogu manifesty ve složce "Archivu" v mezipaměti offline rozložení. Jsou uloženy došlo při aktualizaci rozložení. Ve složce "Archivu" je jeden nebo více "GUID" název složky, z nichž každý obsahuje manifest zastaralé katalogu. Počet složek "GUID" by měl být stejný jako počet aktualizace provedené offline mezipaměti.
 
-Několik soubory jsou uloženy ve složce každý "GUID". Jsou dva soubory týkající se většina soubor "catalog.json" a "version.txt" soubor. Soubor "catalog.json" je zastaralé katalogu manifest je potřeba předat `--clean` možnost. Další version.txt soubor obsahuje verzi tohoto manifestu zastaralé katalogu. Podle toho, číslo verze, můžete rozhodnout, jestli chcete odebrat zastaralé balíčky z tohoto katalogu manifestu. Můžete provést stejný při procházení jiných složkách "GUID". Po provedení rozhodnutí v katalogy chcete vyčistit, spusťte `--clean` příkaz zadáním cesty soubory těchto katalogů.  
+Několik soubory jsou uloženy ve složce každý "GUID". Jsou dva soubory týkající se většina soubor "catalog.json" a "version.txt" soubor. Soubor "catalog.json" je zastaralé katalogu manifest je potřeba předat `--clean` možnost. Další version.txt soubor obsahuje verzi tohoto manifestu zastaralé katalogu. Podle toho, číslo verze, můžete rozhodnout, jestli chcete odebrat zastaralé balíčky z tohoto katalogu manifestu. Můžete provést stejný při procházení jiných složkách "GUID". Po provedení rozhodnutí v katalogy chcete vyčistit, spusťte `--clean` příkaz zadáním cesty soubory těchto katalogů.
 
-Tady je několik příkladů použití--čistou možnost:   
+Tady je několik příkladů použití--čistou možnost:
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
@@ -128,7 +128,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 
 Můžete také vyvolat vs_enterprise.exe uvnitř &lt;layoutDir&gt;. Tady je příklad:
 
-```cmd   
+```cmd
 c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
@@ -136,7 +136,7 @@ Při spuštění tohoto příkazu analyzuje instalace složky mezipaměti offlin
 
 ## <a name="get-support"></a>Získat podporu
 
-V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Tady je několik další možnosti podpory:
 
@@ -145,7 +145,7 @@ Tady je několik další možnosti podpory:
 * Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Instalace sady Visual Studio](install-visual-studio.md)
 * [Příručka správce Visual Studio](visual-studio-administrator-guide.md)

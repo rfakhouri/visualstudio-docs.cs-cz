@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 151f60d21914168ea62bdb2d978d93839c8b859b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d774a0daa9cc503bde91009b9c78288a6f043721
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975625"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303280"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio Průzkumníka testů – nejčastější dotazy
 
@@ -72,7 +72,7 @@ ms.locfileid: "31975625"
   Ikony vedle seskupení projektu, Namespace a třída odrážející stav testů v rámci tohoto seskupení. Najdete v následující tabulce.
 
   ![Ikony hierarchie Průzkumníka testů](media/testex-hierarchyicons.png)
-  
+
 ### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10. Do vyhledávacího pole Průzkumníka testů již není filtr "Cesta k souboru".
 
 Filtr cesta k souboru v **Průzkumníka testů** vyhledávacího pole odebral ve verzi Visual Studio 2017 15.7 verzi preview 3. Tato funkce měla nízkou využití a Průzkumníka testů můžete načíst testovací metody rychlejší tak, že s výjimkou této funkce. Pokud tuto změnu přerušení vaší vývoj toku, dejte nám vědět, odesláním zpětnou vazbu na [komunity vývojářů](https://developercommunity.visualstudio.com/).
@@ -94,7 +94,7 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 > [!NOTE]
 > Příznak pomocí stejného příkazu můžete vypnout pomocí hodnoty 0 namísto 1 po dword.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
 - [Vytváření a spouštění testování částí pro existujícího kódu](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

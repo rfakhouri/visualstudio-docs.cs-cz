@@ -14,19 +14,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f557807dd1275526b4fc0d7f8a8584df922325
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 2216a4678436a9d7811adbdb4bef2ee930fbabb2
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296298"
 ---
 # <a name="codeindex-command"></a>Codeindex – příkaz
 
 Použití **codeindex –** příkaz ke správě kódu indexování na Team Foundation Server. Například můžete chtít obnovit index pro opravu Codelensu informace nebo vypnout indexování prozkoumat problémy s výkonem serveru.
 
-**Požadovaná oprávnění**
+## <a name="required-permissions"></a>Požadovaná oprávnění
 
-Použít **codeindex –** příkaz, musíte být členem skupiny **Team Foundation správci** skupiny zabezpečení. V tématu [oprávnění a skupiny, které jsou definovány pro Team Services a sady TFS](https://www.visualstudio.com/docs/setup-admin/permissions).
+Použít **codeindex –** příkaz, musíte být členem skupiny **Team Foundation správci** skupiny zabezpečení. V tématu [oprávnění a skupiny, které jsou definovány pro Team Services a sady TFS](/vsts/organizations/security/permissions?view=vsts).
 
 > [!NOTE]
 > I v případě, že přihlášení s přihlašovacími údaji správce, musíte otevřít okno příkazového řádku se zvýšenými oprávněními ke spuštění tohoto příkazu. Tento příkaz musí spustit také z vrstvy aplikace pro produkt Team Foundation.
@@ -123,7 +124,7 @@ TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam We
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Nalezení změn kódu a další historie pomocí CodeLensu](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Správa konfigurace serveru s TFSConfig](/vsts/tfs-server/command-line/tfsconfig-cmd)
+- [Správa konfigurace serveru s TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)

@@ -13,18 +13,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 228ebc2fd2137b78b44347fa2e03d7ba949a23c7
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ce1c40a7031145a13eb2eebf8adaee4eba51e9fc
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764930"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280335"
 ---
 # <a name="get-started-with-visual-basic-in-visual-studio"></a>Začínáme s jazykem Visual Basic v sadě Visual Studio
 
 V tomto kurzu pro Visual Basic (VB) budete používat Visual Studio k vytvoření a spuštění aplikace několik různých konzoly a prozkoumat některé funkce [Visual Studio integrované vývojové prostředí (IDE)](visual-studio-ide.md) při uděláte.
 
-Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
+Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
 ## <a name="before-you-begin"></a>Než začnete
 
@@ -58,7 +58,7 @@ Nejdříve vytvoříme projekt aplikace Visual Basic. Typ projektu se dodává s
 
 2. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
 
-3. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a potom zvolte **.NET Core**. V prostředním podokně vyberte **konzolové aplikace (.NET Core)**. Potom zadejte název souboru *HelloWorld*.  
+3. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a potom zvolte **.NET Core**. V prostředním podokně vyberte **konzolové aplikace (.NET Core)**. Potom zadejte název souboru *HelloWorld*.
 
    ![Konzole šablony projektu aplikace (.NET Core) v dialogovém okně Nový projekt v prostředí Visual Studio IDE](../ide/media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
@@ -113,7 +113,7 @@ Umožňuje vytvořit aplikaci, která vás vyzve k zadání vaše jméno a potom
 
 1. Otevřete Visual Studio 2017 a potom vyberte z panelu horní nabídce **soubor** > **nový** > **projektu**.
 
-2. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a potom zvolte **.NET Core**. V prostředním podokně vyberte **konzolové aplikace (.NET Core)**. Potom zadejte název souboru *CalculateThis*.  
+2. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a potom zvolte **.NET Core**. V prostředním podokně vyberte **konzolové aplikace (.NET Core)**. Potom zadejte název souboru *CalculateThis*.
 
 3. Zadejte následující kód mezi `Module Program` řádku a `End Module` řádku:
 
@@ -136,7 +136,7 @@ Umožňuje vytvořit aplikaci, která vás vyzve k zadání vaše jméno a potom
 
    ![Okno kódu zobrazuje Calculate tento kód](../ide/media/vb-codewindow-calculate-this.png)
 
-4. Klikněte na tlačítko **CalculateThis** váš program spustit. Vaše okna konzoly by měl vypadat podobně jako na následujícím snímku obrazovky:       
+4. Klikněte na tlačítko **CalculateThis** váš program spustit. Vaše okna konzoly by měl vypadat podobně jako na následujícím snímku obrazovky:
 
     ![Okno konzoly zobrazující CaluculateThis aplikaci, která zahrnuje dotazování na jaké akce lze provést.](../ide/media/vb-console-calculate-this.png)
 

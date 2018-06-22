@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e50bd5231387261e56a62234858d10c3806de3dc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694113"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282522"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funkce sady Visual Studio 2017
 
@@ -24,7 +24,7 @@ ms.locfileid: "34694113"
 
 Modulární instalační program sady Visual Studio můžete vybrat a nainstalovat *úlohy*, což jsou skupiny součástí, které jsou potřebné pro programovací jazyk nebo platformu dáváte přednost. Tato strategie pomáhá chránit otisk instalaci sady Visual Studio, která je menší, což znamená, nainstaluje se a aktualizací příliš rychlejší.
 
-Pokud jste ještě nenainstalovali Visual Studio 2017, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
+Pokud jste ještě nenainstalovali Visual Studio 2017, přejděte k [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
 Další informace o nastavení v systému Visual Studia, najdete v části [nainstalovat Visual Studio 2017](../install/install-visual-studio.md).
 
@@ -52,17 +52,17 @@ K dispozici **připojené služby** závisí na typu vašeho projektu. Přidat s
 
 ![Visual Studio připojené služby](media/connected-services.png)
 
-Další informace najdete v tématu [přesunout do cloudu s Visual Studio a Azure](https://www.visualstudio.com/vs/azure-tools/).
+Další informace najdete v tématu [přesunout do cloudu s Visual Studio a Azure](https://visualstudio.microsoft.com/vs/azure-tools/).
 
 ## <a name="create-apps-for-the-web"></a>Vytvoření aplikace pro web
 
 Web jednotky naše moderní world a Visual Studio můžete usnadňuje psaní aplikací pro ni. Můžete vytvořit webové aplikace pomocí ASP.NET, Node.js, Python, JavaScript a TypeScript. Visual Studio rozumí webové platformy jako úhlová, jQuery, Express a další. Spuštěné na operačních systémech Windows, Mac a Linux .NET Core a ASP.NET Core. [ASP.NET Core](http://www.asp.net/core/overview) je hlavní aktualizace MVC, WebAPI a SignalR a běží na systému Windows, Mac a Linux.  ASP.NET Core má byly navrženy od základů až zajistit, že jste s .NET Štíhlá a bez možnosti složení zásobníku pro vytváření webových moderní cloudové aplikace a služby.
 
-Další informace najdete v tématu [moderní webové nástroje](https://www.visualstudio.com/vs/modern-web-tooling/).
+Další informace najdete v tématu [moderní webové nástroje](https://visualstudio.microsoft.com/vs/modern-web-tooling/).
 
 ## <a name="build-cross-platform-apps-and-games"></a>Vytváření aplikací pro různé platformy a hry
 
-Visual Studio můžete použít k vytvoření aplikace a hry pro systému macOS, Linux a Windows, a také pro Android, iOS a další [mobilní zařízení](https://www.visualstudio.com/vs/mobile-app-development/).
+Visual Studio můžete použít k vytvoření aplikace a hry pro systému macOS, Linux a Windows, a také pro Android, iOS a další [mobilní zařízení](https://visualstudio.microsoft.com/vs/mobile-app-development/).
 
 - Sestavení [.NET Core](/dotnet/core/) aplikace, které běží na systému Windows, systému macOS a Linux.
 
@@ -122,7 +122,7 @@ Kompilátoru platformu .NET ("Roslyn") můžete použít k zápisu vlastní anal
 
 Najít [existující rozšíření](https://marketplace.visualstudio.com/vs) pro sadu Visual Studio vytvořené vývojáři Microsoftu a také naše komunita vývoj.
 
-Další informace o rozšíření sady Visual Studio najdete v tématu [rozšíření Visual Studio IDE](https://www.visualstudio.com/vs/extend/).
+Další informace o rozšíření sady Visual Studio najdete v tématu [rozšíření Visual Studio IDE](https://visualstudio.microsoft.com/vs/extend/).
 
 ## <a name="see-also"></a>Viz také:
 

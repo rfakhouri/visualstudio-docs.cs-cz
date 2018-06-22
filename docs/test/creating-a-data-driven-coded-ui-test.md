@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0343058b2ae2910e81f345e81139d6f5114e330b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 442e37dfac8e7eb022ee12bfaadacae548625793
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692182"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303037"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Vytvoření datové programového testu uživatelského rozhraní
 
@@ -40,7 +40,7 @@ Tato ukázka vytvoří programového testu uživatelského rozhraní, která bě
    > [!NOTE]
    > Pokud nevidíte **programového projekt testování uživatelského rozhraní** šablony, budete muset [nainstalovat součást programového testu uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-2.  Zvolte záznam akce.
+2.  Zvolit **záznam akce**.
 
      ![Pokud se rozhodnete záznam akcí](../test/media/cuit_datadriven_generatecodedialog.png)
 
@@ -65,7 +65,7 @@ Tato ukázka vytvoří programového testu uživatelského rozhraní, která bě
 
 5.  Použití `AddNumbers()` metodu k ověření, že test běží. Umístěte kurzor do výše uvedená metoda test, otevřete kontextu nabídku a vyberte **spuštění testů**. (Klávesové zkratky: **Ctrl**+**R**,**T**).
 
-     Výsledek testu, který ukazuje Pokud test předán nebo se nezdařilo se zobrazí v okně Průzkumníka testů. Otevřete okno Průzkumníka testů z **Test** nabídce zvolte **Windows** a potom zvolte **Průzkumníka testů**.
+     Výsledek testu, který ukazuje Pokud test předán nebo se nezdařilo se zobrazí v **testování Explorer** okno. Otevřete okno Průzkumníka testů z **Test** nabídce zvolte **Windows** a potom zvolte **Průzkumníka testů**.
 
 6.  Protože zdroj dat lze také hodnoty parametrů assertion – které jsou používány test ověření očekávaných hodnot – přidejme kontrolní výrazy k ověření, zda je správný součet dvou čísel. Umístěte kurzor do výše uvedená metoda test, otevřete kontextu nabídku a vyberte **generovat kód pro programové testování uživatelského rozhraní**a potom **použití programových Tvůrce uživatelského rozhraní Test**.
 
@@ -98,7 +98,7 @@ Tato ukázka vytvoří programového testu uživatelského rozhraní, která bě
 
 ### <a name="step-2---create-a-data-set"></a>Krok 2 – Vytvoření datové sady
 
-1.  Přidejte do textového souboru do dataDrivenSample projektu s názvem `data.csv`.
+1.  Přidejte do textového souboru do dataDrivenSample projektu s názvem *data.csv*.
 
      ![Přidejte do projektu soubor hodnota hodnotami oddělenými čárkami](../test/media/cuit_datadriven_addcsvfile.png)
 
@@ -180,7 +180,7 @@ Tato ukázka vytvoří programového testu uživatelského rozhraní, která bě
 
      Vlastnosti, které hledání do kódu data, a pokuste se zjistit pomocí editoru programových testů uživatelského rozhraní.
 
-    -   Otevřete soubor UIMap.uitest.
+    -   Otevřete *UIMap.uitest* souboru.
 
          ![Otevřete editoru programových testů UI](../test/media/cuit_datadriven_opentesteditor.png)
 
@@ -188,7 +188,7 @@ Tato ukázka vytvoří programového testu uživatelského rozhraní, která bě
 
          ![Pomoc s kódu pomocí editoru programového testu uživatelského rozhraní](../test/media/cuit_datadriven_testeditor.png)
 
-    -   V okně vlastností otevřete **vlastností vyhledávání**. Vlastností vyhledávání **název** co je se s nimi manipulovat, v kódu pomocí zdroje dat je hodnota. Například `SearchProperties` je právě přiřazován hodnoty z prvního sloupce každý řádek dat: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Pro tři iterací tento test se změní **název** hodnotu pro vlastnost vyhledávání 3, potom 5 a nakonec 6.
+    -   V **vlastnosti** okno, otevřete **vlastností vyhledávání**. Vlastností vyhledávání **název** co je se s nimi manipulovat, v kódu pomocí zdroje dat je hodnota. Například `SearchProperties` je právě přiřazován hodnoty z prvního sloupce každý řádek dat: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Pro tři iterací tento test se změní **název** hodnotu pro vlastnost vyhledávání 3, potom 5 a nakonec 6.
 
          ![Použijte jako pomůcku při kódování vlastností vyhledávání](../test/media/cuit_datadriven_searchproperties.png)
 
@@ -230,15 +230,15 @@ Tato ukázka vytvoří programového testu uživatelského rozhraní, která bě
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Otázka: Proč nelze změnit kód v souboru UIMap.Designer?
 
-**Odpověď:** změny kódu provedené v souboru UIMapDesigner.cs budou přepsány pokaždé, když generování kódu pomocí zdroje UIMap - Tvůrce programového testu uživatelského rozhraní. V této ukázce a ve většině případů můžete provést změny kódu potřebnými k povolení testu budou používat zdroj dat k souboru zdrojového kódu testu (CodedUITest1.cs).
+**Odpověď:** žádné změny v kódu *UIMapDesigner.cs* soubor se přepíše pokaždé, když generování kódu pomocí zdroje UIMap - Tvůrce programového testu uživatelského rozhraní. V této ukázce a ve většině případů, můžete provést změny kódu potřebnými k povolení testu budou používat zdroj dat k souboru zdrojového kódu testu (tedy *CodedUITest1.cs*).
 
-Pokud je třeba změnit zaznamenanou metodu, musíte ji zkopírovat do souboru UIMap.cs a přejmenovat ji. Soubor UIMap.cs lze použít k přepsání metod a vlastností v souboru UIMapDesigner.cs. Je třeba odebrat odkaz na původní metodu v kódovaném souboru UITest.cs a nahradit ji názvem přejmenované metody.
+Pokud budete muset upravit zaznamenaná metodu, musíte zkopírovat jej do *UIMap.cs* souborů a přejmenujte ji. *UIMap.cs* soubor lze použít k přepsání metody a vlastnosti v *UIMapDesigner.cs* souboru. Musíte odebrat odkaz na původní metodou programový *UITest.cs* a nahraďte název přejmenované metody.
 
 ## <a name="see-also"></a>Viz také:
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)
-- [Vytváření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md)
-- [Doporučené postupy pro programové testy UI](../test/best-practices-for-coded-ui-tests.md)
-- [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Vytvoření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md)
+- [Osvědčené postupy pro programové testy uživatelského rozhraní](../test/best-practices-for-coded-ui-tests.md)
+- [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

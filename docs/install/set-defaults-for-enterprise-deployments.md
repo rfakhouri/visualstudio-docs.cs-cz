@@ -1,5 +1,5 @@
 ---
-title: Výchozí nastavení pro nasazení v podnicích sady Visual Studio
+title: Nastavení výchozích hodnot pro podniková nasazení sady Visual Studio
 description: Další informace o zásady domény a dalších operací konfigurace v případě podnikového nasazení sady Visual Studio.
 ms.date: 05/05/2017
 ms.technology: vs-acquisition
@@ -17,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f229ea889a478281ee0db123da00cd67c82ec13a
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9616c8fcc8d9c6cea6c91891f5765cd688c61ae0
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264214"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280219"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Výchozí nastavení pro nasazení v podnicích sady Visual Studio
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Nastavení výchozích hodnot pro podniková nasazení sady Visual Studio
 
 Můžete nastavit zásady registru, které ovlivňují nasazení sady Visual Studio. Tyto zásady jsou globální pro nového instalačního programu a vliv:
 
@@ -61,7 +61,7 @@ Můžete nastavit následující hodnoty registru:
 
 ## <a name="get-support"></a>Získat podporu
 
-V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Tady je několik další možnosti podpory:
 
@@ -70,7 +70,7 @@ Tady je několik další možnosti podpory:
 * Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
  * [Instalace sady Visual Studio](install-visual-studio.md)
  * [Zakázání nebo přesunutí mezipaměti balíčku](disable-or-move-the-package-cache.md)

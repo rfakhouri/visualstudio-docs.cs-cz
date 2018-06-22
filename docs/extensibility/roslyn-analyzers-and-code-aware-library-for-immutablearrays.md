@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ebafdd09e6fca0e1266c4eb03c4f6cb66554d06
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0e3006f14e98723068ea28f222c00fdff48af46d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148516"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281375"
 ---
-# <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn analyzátory a podporou kód knihovny pro ImmutableArrays
+# <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyzátory Roslyn a knihovny rozlišující kódy pro řešení ImmutableArrays
 
 [Platformy .NET kompilátoru](https://github.com/dotnet/roslyn) ("Roslyn") vám pomůže vytvořit kód využívající knihoven.  Knihovnu deklaracemi kódu poskytuje funkce, které můžete použít a nástrojů (Roslyn analyzátory) můžete v knihovně nejlepším způsobem, nebo aby nedocházelo k chybám.  Toto téma ukazuje, jak stavět skutečném světě Roslyn analyzátor zachycení běžných chyb při použití [System.Collections.Immutable](https://www.nuget.org/packages/System.Collections.Immutable) balíček NuGet.  Příklad také ukazuje, jak zajistit opravy kódu pro kód problém nalezen nástrojem analyzer.  Uživatelé vidí opravy kódu v sadě Visual Studio žárovky uživatelského rozhraní a provést opravu pro kód automaticky.
 
@@ -26,7 +26,7 @@ ms.locfileid: "31148516"
 
 Následující sestavení v tomto příkladu potřebujete:
 
-* Visual Studio 2015 (není edice Express) nebo novější verze.  Můžete použít bezplatnou [Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)
+* Visual Studio 2015 (není edice Express) nebo novější verze.  Můžete použít bezplatnou [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  Můžete také při instalaci sady Visual Studio, zkontrolovat Visual Studio Extensibility Tools v rámci běžných nástrojů k instalaci sady SDK ve stejnou dobu.  Pokud jste již nainstalovali Visual Studio, můžete taky nainstalovat tuto sadu SDK tak, že přejdete do hlavní nabídky **soubor &#124; nový &#124;projektu...** , výběr jazyka C# v levém navigačním podokně a pak vyberete rozšíření.  Pokud vyberete "**nainstalovat Visual Studio Extensibility Tools**" šablony projektu s popisem cesty, budete vyzváni ke stažení a instalace sady SDK.
 * [Kompilátoru platformu .NET ("Roslyn") SDK](http://aka.ms/roslynsdktemplates).  Tuto sadu SDK můžete taky nainstalovat tak, že přejdete do hlavní nabídky **soubor &#124; nový &#124; projektu...** , výběrem možnosti **C#** v levém navigačním podokně a pak vyberete **rozšiřitelnost**.  Pokud vyberete "**stáhnout sadu SDK platformy .NET kompilátoru**" šablony projektu s popisem cesty, budete vyzváni ke stažení a instalace sady SDK.  Tato sada SDK zahrnuje [Roslyn syntaxe vizualizér](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  Tato velmi užitečné nástroj pomáhá můžete zjistit, jaké typy modelu kódu je vhodné vyhledat ve vašem analyzátor.  Analyzátor infrastruktury volání do kódu pro konkrétní kód modelu typy, tak, aby váš kód pouze provede, když je to nutné a zaměřit pouze na Analýza relevantní kódu.
 
@@ -108,7 +108,7 @@ internal const string Category = "Naming";
 
 Změna `"Naming"` k `"API Guidance"`.
 
-Poté vyhledejte a otevřete `Resources.resx` souboru v projektu pomocí **Průzkumníku řešení**.  Umístit do popis pro analyzátor, název, atd.  Je-li změnit hodnotu pro všechny z nich k `"Don't use ImmutableArray<T> constructor"` teď.  Můžete použít a zadat řetězec formátování argumenty do řetězce ({0}, {1}, atd.) a novější při volání `Diagnostic.Create()`, můžete zadat `params` pole argumenty předávané.
+Poté vyhledejte a otevřete `Resources.resx` souboru v projektu pomocí **Průzkumníku řešení**.  Umístit do popis pro analyzátor, název, atd.  Je-li změnit hodnotu pro všechny z nich k `"Don't use ImmutableArray<T> constructor"` teď.  Můžete použít a zadat řetězec formátování argumenty ve vašem řetězci ({0}, {1}atd) a novější při volání `Diagnostic.Create()`, můžete zadat `params` pole argumenty předávané.
 
 ## <a name="analyzing-an-object-creation-expression"></a>Analýza výraz vytvoření objektu
 

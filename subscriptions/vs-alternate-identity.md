@@ -9,12 +9,12 @@ description: Postup přidání alternativní identity pro vaše předplatné sad
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 2899c6ba8c87d6f814dc1f0d59e6bd9defc214a2
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 1b8d260a101840b04bd2c54e64665abbec78dbe7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845597"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283390"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identity pro předplatitele sady Visual Studio
 
@@ -50,27 +50,26 @@ Pro všechna předplatná můžete přidat "pracovní nebo školní účet", aby
 
 2. Přejděte na **odběry**.
 
-  ![Přidání alternativního účtu – přejděte na předplatná v sadě VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
+   ![Přidání alternativního účtu – přejděte na předplatná v sadě VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
 3. Zvolte **přidání alternativního účtu**.
 
-  ![Zvolte přidání alternativního účtu ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+   ![Zvolte přidání alternativního účtu ](_img/vs-alternate-identity/choose-add-alternate-account.png)
 
 4. Přidáte pracovní nebo školní účet.
 
-  ![Přidat pracovní nebo školní účet](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+   ![Přidat pracovní nebo školní účet](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
 5. Použijte pracovní nebo školní účet pro přihlášení ke službě Visual Studio Team Services (https://{youraccount}.visualstudio.com).
 
-  ![Použijte svůj pracovní nebo školní účet](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
+   ![Použijte svůj pracovní nebo školní účet](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
-  Vaše alternativní účet je přidán do sady Visual Studio odběru, což obou identity využívat výhody předplatného, které vyžadují, abyste se přihlaste pomocí alternativního účtu (IDE, služby VSTS a Azure).
-
-Další informace o přidání alternativního účtu najdete v tématu [Moje Visual Studio – nejčastější dotazy](https://www.visualstudio.com/my/myvsfaq#alternate) stránky.
+   Vaše alternativní účet je přidán do sady Visual Studio odběru, což obou identity využívat výhody předplatného, které vyžadují, abyste se přihlaste pomocí alternativního účtu (IDE, služby VSTS a Azure).
 
 ## <a name="faq"></a>Nejčastější dotazy
 
 ### <a name="q--why-doesnt-vsts-recognize-me-as-a-visual-studio-subscriber"></a>Otázka: Proč služby VSTS nerozpoznal mi jako odběratel Visual Studio?
+
 A: služby VSTS by měl automaticky rozpoznat vaše předplatné při přihlášení pomocí vaší primární nebo alternativní identity. Pokud ne, můžete zkusit několik věcí:
 
 * Zkontrolujte, že máte aktivní předplatné sady Visual Studio, [zahrnuje služby VSTS jako výhody](vs-vsts.md).
@@ -79,4 +78,4 @@ A: služby VSTS by měl automaticky rozpoznat vaše předplatné při přihláš
 
 * Přejděte [portál odběratele Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) alespoň jednou před přihlášení do služby VSTS.
 
-Pokud služby VSTS stále nerozpoznal vaše předplatné [obraťte se na podporu](https://www.visualstudio.com/team-services/support/)
+Pokud služby VSTS stále nerozpoznal vaše předplatné [obraťte se na podporu](https://visualstudio.microsoft.com/team-services/support/)

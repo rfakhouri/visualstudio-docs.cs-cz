@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eef4f8b66da517e471a25bb36e777f6cc343b0a3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a6d8741982efd5329e7c14f0a32fb66bbdd377f5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995777"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282057"
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>Změňte umístění instalace v Visual Studio 2017
 
@@ -54,7 +54,7 @@ Tady je způsob.
 
 ## <a name="get-support"></a>Získat podporu
 
-V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránku nápovědy. Můžete nám také požádejte o pomoc instalace pomocí [live chat](https://www.visualstudio.com/vs/support/#talktous) (pouze v angličtině); Další informace najdete v tématu [Visual Studio "Kontaktujte nás" stránka](https://www.visualstudio.com/vs/support/#talktous).
+V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránku nápovědy. Můžete nám také požádejte o pomoc instalace pomocí [live chat](https://visualstudio.microsoft.com/vs/support/#talktous) (pouze v angličtině); Další informace najdete v tématu [Visual Studio "Kontaktujte nás" stránka](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Tady je několik další možnosti podpory:
 
@@ -63,7 +63,7 @@ Tady je několik další možnosti podpory:
 * Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Nainstalovat Visual Studio 2017](install-visual-studio.md)
 * [Update Visual Studio 2017](update-visual-studio.md)

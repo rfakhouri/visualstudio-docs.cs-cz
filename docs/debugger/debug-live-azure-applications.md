@@ -14,18 +14,18 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 5207af86d850dca3e4dfde515237452c293788ea
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766321"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281547"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Ladění za provozu aplikací ASP.NET Azure pomocí snímku ladicí program
 
 Ladicí program snímku pořídí snímek aplikací v provozním, když provede kód, který vás zajímá. Dáte pokyn, aby ladicí program na pořízení snímku, nastavte snappoints a logpoints ve vašem kódu. Ladicí program umožňuje zobrazit přesně kde došlo k chybě, bez vlivu na provoz produkční aplikace. Ladicí program snímku můžete výrazně zkrátit dobu potřebnou k vyřešení problémů, ke kterým došlo v produkčním prostředí.
 
-Snappoints a logpoints jsou podobná zarážky, ale na rozdíl od zarážky, nemusíte snappoints zastavení aplikace při průchodu. Pořízením na snappoint obvykle trvá 10 20 milisekund. 
+Snappoints a logpoints jsou podobná zarážky, ale na rozdíl od zarážky, nemusíte snappoints zastavení aplikace při průchodu. Pořízením na snappoint obvykle trvá 10 20 milisekund.
 
 V tomto kurzu se naučíte:
 
@@ -38,7 +38,7 @@ V tomto kurzu se naučíte:
 
 * Ladicí program snímku je dostupná jenom pro Visual Studio Enterprise 2017 verze 15,5 nebo vyšší s **ASP.NET a webové úlohy vývoj**. Pro ASP.NET Core, musíte taky. **NET základní vývoj** zatížení nainstalována.
 
-    Pokud ještě není nainstalovaný, nainstalujte [Visual Studio Enterprise 2017 verze 15,5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) nebo novější. Při aktualizaci z předchozí instalace Visual Studio 2017, spusťte instalační program Visual Studio a změnami komponentu snímku ladicí program **ASP.NET a webové úlohy vývoj**.
+    Pokud ještě není nainstalovaný, nainstalujte [Visual Studio Enterprise 2017 verze 15,5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) nebo novější. Při aktualizaci z předchozí instalace Visual Studio 2017, spusťte instalační program Visual Studio a změnami komponentu snímku ladicí program **ASP.NET a webové úlohy vývoj**.
 
 * Plán aplikační služby Azure základní nebo vyšší.
 
@@ -49,16 +49,16 @@ V tomto kurzu se naučíte:
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Otevřete projekt a spusťte snímek ladicí program
 
-1. Otevřete projekt, který chcete snímek ladění. 
+1. Otevřete projekt, který chcete snímek ladění.
 
-    > [!IMPORTANT] 
-    > K ladění snímek, budete muset otevřít **stejnou verzi zdrojový kód** je publikována ve službě Azure App Service. 
+    > [!IMPORTANT]
+    > K ladění snímek, budete muset otevřít **stejnou verzi zdrojový kód** je publikována ve službě Azure App Service.
 
 1. V Průzkumníku cloudu (**zobrazení > Průzkumník cloudu**), klikněte pravým tlačítkem na projekt se nasadí do služby Azure App Service a vyberte **připojit ladicí program snímku**.
 
    ![Spuštění ladicího programu snímku](../debugger/media/snapshot-launch.png)
 
-    Při prvním vyberete **připojit ladicí program snímku**, se zobrazí výzva k instalaci rozšíření lokality snímku ladicí program na Azure App Service. Tato instalace vyžaduje restart služby Azure App Service. 
+    Při prvním vyberete **připojit ladicí program snímku**, se zobrazí výzva k instalaci rozšíření lokality snímku ladicí program na Azure App Service. Tato instalace vyžaduje restart služby Azure App Service.
 
    Visual Studio je nyní v režimu ladění snímek.
 
@@ -77,7 +77,7 @@ V tomto kurzu se naučíte:
 
    ![Nastavte snappoint](../debugger/media/snapshot-set-snappoint.png)
 
-2. Klikněte na tlačítko **Start Collection** zapnout snappoint.  
+2. Klikněte na tlačítko **Start Collection** zapnout snappoint.
 
    ![Zapnout snappoint](../debugger/media/snapshot-start-collection.png)
 

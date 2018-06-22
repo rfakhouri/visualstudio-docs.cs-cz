@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9cdf1b9051f409571989073692cf38906d26b85b
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 7b48fc77dd88cf327050c0bf8ba893f8d4a626fa
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815948"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303000"
 ---
 # <a name="customize-code-coverage-analysis"></a>Přizpůsobení analýzy pokrytí kódu
 
@@ -34,7 +34,7 @@ Chcete-li přizpůsobit pokrytí kódu, postupujte takto:
 
 1. Přidejte obsah ze souboru příkladu na konci tohoto článku a jak je popsáno v následujících částech jej přizpůsobit svým potřebám.
 
-1. Vyberte soubor parametrů běhu na **testovací** nabídce zvolte **nastavení testu** > **vyberte soubor s nastavením testu**. Zadejte soubor parametrů běhu pro spouštění testů z příkazového řádku nebo v pracovním postupu sestavení, najdete v tématu [konfigurace testování částí s použitím souboru .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+1. Vyberte soubor parametrů běhu na **testovací** nabídce zvolte **nastavení testu** > **vyberte soubor s nastavením testu**. Zadejte soubor parametrů běhu pro spouštění testů z příkazového řádku nebo v pracovním postupu sestavení, najdete v tématu [konfigurace testů jednotek pomocí *.runsettings* soubor](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
 
    Když vyberete **analýza pokrytí kódu**, informace o konfiguraci je čtení ze souboru parametrů běhu.
 
@@ -89,7 +89,7 @@ Pokud **zahrnout** je prázdný, pak zpracování pokrytí kódu zahrnuje všech
 
 ### <a name="regular-expressions"></a>Regulární výrazy
 
-Pomocí regulárních výrazů můžete zahrnout a vyloučit uzly. Další informace najdete v tématu [použití regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Regulární výrazy nejsou stejné jako zástupné znaky. Zejména:
+Pomocí regulárních výrazů můžete zahrnout a vyloučit uzly. Další informace najdete v tématu [použití regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Regulární výrazy nejsou stejná jako zástupné znaky. Zejména:
 
 - **. \***  odpovídá řetězci všech znaků
 
@@ -135,7 +135,7 @@ Příklad:
 
 - **Zdroj** -odpovídá elementy název cesty zdrojového souboru, ve kterém jsou definovány.
 
-- **Atribut** -odpovídá elementy, na které je připojen konkrétní atribut. Zadejte úplný název atributu a inclue "Atribut" na konci názvu.
+- **Atribut** -odpovídá elementy, na které je připojen konkrétní atribut. Zadejte úplný název atributu a zahrnovat "Atribut" na konci názvu.
 
 - **Funkce** -odpovídá procedury, funkce nebo metody ve plně kvalifikovaný název. Tak, aby odpovídaly názvu funkce, musí odpovídat regulárnímu výrazu plně kvalifikovaný název funkce, včetně oboru názvů, název třídy, název metody a seznam parametrů. Příklad:
 

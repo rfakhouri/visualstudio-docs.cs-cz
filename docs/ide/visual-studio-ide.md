@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a7667cac2a26a3e98d2e92dfeb13cee36d870e9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d9e1149803516e0b411bfef1da06fd6e1af9a12f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691157"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282723"
 ---
 # <a name="visual-studio-ide-overview"></a>Přehled Visual Studio IDE
 
@@ -30,7 +30,7 @@ Tento článek se zaměřuje na Visual Studio 2017 pro Windows. Ho vás seznám�
 
 ## <a name="install-the-visual-studio-ide"></a>Instalace sady Visual Studio IDE
 
-Abyste mohli začít, [Stáhnout Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) a nainstalujte ho v systému.
+Abyste mohli začít, [Stáhnout Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) a nainstalujte ho v systému.
 
 Modulární instalační program vám umožňuje vybrat a nainstalovat *úlohy*, což jsou skupiny součástí, které jsou potřebné pro programovací jazyk nebo platformu dáváte přednost. Podle pokynů pro [vytváření program](#create-a-program), je nutné vybrat **vývoj pro různé platformy .NET Core** zatížení během instalace. Témata rychlý start, jako například [Začínáme s C++ v sadě Visual Studio](getting-started-with-cpp-in-visual-studio.md), obsahovat pokyny k instalaci dalších zatížení.
 
@@ -255,6 +255,6 @@ Můžete se taky podívat na bezplatné sady Visual Studio kurzy k dispozici na 
 ## <a name="see-also"></a>Viz také:
 
 * [Další funkce sady Visual Studio](../ide/advanced-feature-overview.md)
-* [www.VisualStudio.com](https://www.visualstudio.com/vs/)
+* [VisualStudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 * [Blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Soubory ke stažení sady Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+* [Soubory ke stažení sady Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)

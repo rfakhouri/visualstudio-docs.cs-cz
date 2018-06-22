@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a529c52472eca82d3b78860087c9e81aace45d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 542814c5902f2dba1c76b33f78273aadfb583eff
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750477"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282970"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s nového ve Visual Studio 2017
 
@@ -50,7 +50,7 @@ Zde uvádíme podrobnější informace o některých nejdůležitějším vylep�
 
 ### <a name="a-new-setup-experience"></a>Nové prostředí pro instalaci
 
-[Stáhněte si Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) nebo [požadavky na systém zkontrolujte Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[Stáhněte si Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) nebo [požadavky na systém zkontrolujte Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
 
  Visual Studio je snadnější a rychlejší instalaci jenom funkce, které budete potřebovat, pokud je potřebujete. A odinstaluje řádně, příliš.
 
@@ -338,8 +338,8 @@ Další informace najdete v tématu [Visual Studio Tools for AI](../ai/about-ai-
 
 Nové funkce, které můžou váš vývojový i lepší prostředí často aktualizujeme Visual Studio 2017. Tady je shrnutí některých naše nejdůležitějším aktualizací, které jsou ve verzi preview experimentální:
 
-* **[Live sdílené složky](https://www.visualstudio.com/services/live-share/)**, nový nástroj, který umožňuje sdílet codebase a jeho kontextu, teammate a získat rychlých obousměrný spolupráce přímo z Visual Studia. S Live sdílenou složkou teammate můžete číst, přejděte, upravit a ladění projektu, který je sdílíte a to provést bez problémů a bezpečně.<br><br>Další informace najdete v tématu [Live – nejčastější dotazy sdílené složky](/visualstudio/liveshare/faq).<br><br>
-* **[IntelliCode](https://www.visualstudio.com/services/intellicode/)**, novou funkci, která vylepšuje vývoj softwaru pomocí AI zajistit lepší podporou kontextu kód dokončování Průvodce vývojářům kódu vzory a styly jejich týmu, najít problémy obtížné catch kódu , a zkontroluje kód fokus na oblasti, které skutečně vás právě zajímají. <br><br>Další informace najdete v tématu [– nejčastější dotazy IntelliCode](../ide/not-in-toc/intellicode-faq.md).
+* **[Live sdílené složky](https://visualstudio.microsoft.com/services/live-share/)**, nový nástroj, který umožňuje sdílet codebase a jeho kontextu, teammate a získat rychlých obousměrný spolupráce přímo z Visual Studia. S Live sdílenou složkou teammate můžete číst, přejděte, upravit a ladění projektu, který je sdílíte a to provést bez problémů a bezpečně.<br><br>Další informace najdete v tématu [Live – nejčastější dotazy sdílené složky](/visualstudio/liveshare/faq).<br><br>
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, novou funkci, která vylepšuje vývoj softwaru pomocí AI zajistit lepší podporou kontextu kód dokončování Průvodce vývojářům kódu vzory a styly jejich týmu, najít problémy obtížné catch kódu , a zkontroluje kód fokus na oblasti, které skutečně vás právě zajímají. <br><br>Další informace najdete v tématu [– nejčastější dotazy IntelliCode](../ide/not-in-toc/intellicode-faq.md).
 
 Chcete vědět více o tom, co else je ve službě funguje pro Visual Studio 2017? Najdete v článku [Visual Studio plán](/visualstudio/productinfo/vs2018-roadmap) stránky.
 
@@ -358,5 +358,5 @@ Pokud chcete navrhnout zlepšení o tom, jak jsme můžete zlepšit Visual Studi
 * [Poznámky k verzi Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
 * [Co je nového ve Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Co je nového v jazyce C#](/dotnet/csharp/whats-new)
-* [Co je nového pro Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
-* [Co je nového v sadě Visual Studio pro Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
+* [Co je nového pro Team Foundation Server](/tfs/server/whats-new?view=vsts)
+* [Co je nového v sadě Visual Studio pro Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)

@@ -17,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c95e461f99a78a3241a091f7b590137e4dbc7066
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6aaba3be74e38e27f04db59cbb26b455245251be
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971394"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282275"
 ---
-# <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>Vytvoření vlastního pravidla ověřování pro test výkonnosti webu
+# <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Kód vlastního ověřovacího pravidla pro test výkonnosti webu
 
 Můžete vytvořit vlastní pravidla ověřování. K tomu, odvozujete od třídy, pravidla ověřování třídě pravidlo. Ověřovací pravidla jsou odvozeny od <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> základní třídy.
 
@@ -243,7 +243,7 @@ Namespace SampleWebTestRules
 End Namespace
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

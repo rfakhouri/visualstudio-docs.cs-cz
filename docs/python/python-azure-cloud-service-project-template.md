@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 49314b5a9e2c95549207b938187bbe94ba393de1
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031810"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280768"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty Azure cloudových služeb pro jazyk Python
 
@@ -29,7 +29,7 @@ Tento článek obsahuje podrobné informace o šabloně projektů a další podp
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
-1. Nainstalujte [.NET SDK služby Azure pro sadu Visual Studio](https://www.visualstudio.com/vs/azure-tools/), které je potřeba použít šablonu služby cloudu.
+1. Nainstalujte [.NET SDK služby Azure pro sadu Visual Studio](https://visualstudio.microsoft.com/vs/azure-tools/), které je potřeba použít šablonu služby cloudu.
 1. V sadě Visual Studio, vyberte **soubor > Nový > projekt...** , vyhledejte "Azure Python" a vyberte **Azure Cloud Service** ze seznamu:
 
     ![Šablona projektu cloudové Azure pro jazyk Python](media/template-azure-cloud-project.png)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fd9703e6d18f075cb1033a03552caa7708b719b7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e4825a65fa2ba09bc37b4962d51286a17c1fff92
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751385"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283546"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalace podpory Python v sadě Visual Studio
 
@@ -26,10 +26,10 @@ ms.locfileid: "34751385"
 1. Stáhněte a spusťte nejnovější verzi instalačního programu Visual Studio 2017 pro Windows (podpora v jazyce Python je součástí verze 15.2 a novější). Pokud máte už nainstalovanou sadu Visual Studio, spusťte instalační program sady Visual Studio a přejděte ke kroku 2.
 
     > [!div class="nextstepaction"]
-    > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Nainstalovat Visual Studio 2017 Community</a>
+    > <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Nainstalovat Visual Studio 2017 Community</a>
 
     >[!Tip]
-    > Community edition je pro jednotlivé vývojáři, učebny learning, academic výzkum a vývoj s otevřeným zdrojem. Pro jiné účely, nainstalujte <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Professional</a> nebo <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Enterprise</a>.
+    > Community edition je pro jednotlivé vývojáři, učebny learning, academic výzkum a vývoj s otevřeným zdrojem. Pro jiné účely, nainstalujte <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Professional</a> nebo <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Enterprise</a>.
 
 1. Instalační program nabídne seznam úloh, které jsou skupiny související možnosti jsou pro vývoj pro konkrétní oblasti. Pro jazyk Python, vyberte **vývoj Python** pracovního vytížení a vyberte **nainstalovat**:
 

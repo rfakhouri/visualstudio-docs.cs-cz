@@ -19,18 +19,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6ebc81e1aed2cd007bf34a5e9145c0b995517fd
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 51543921049082b4fca5a04f20b8adfc753d8112
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238235"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283442"
 ---
 # <a name="install-visual-studio-2017"></a>Nainstalovat Visual Studio 2017
 
 Vítá vás nový způsob instalaci sady Visual Studio! V našem nejnovější verzi jsme provedli jsme je snazší pro vás k výběru a instalaci součástí, které potřebujete. Také jsme jste snížení nároků sady Visual Studio tak, aby nainstaloval rychleji a s menšími dopady na systém než kdy dřív.
 
-Chcete se dozvědět více o tom, co je nového v této verzi? V tématu naše [poznámky k verzi](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+Chcete se dozvědět více o tom, co je nového v této verzi? V tématu naše [poznámky k verzi](/visualstudio/releasenotes/vs2017-relnotes).
 
 Připraveno k instalaci? Provedeme vás přes něj krok za krokem.
 
@@ -38,19 +38,19 @@ Připraveno k instalaci? Provedeme vás přes něj krok za krokem.
 
 Před zahájením instalace sady Visual Studio:
 
-1. Zkontrolujte [požadavky na systém](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs). Tyto požadavky můžete vědět, jestli počítač podporuje Visual Studio 2017.
+1. Zkontrolujte [požadavky na systém](/visualstudio/productinfo/vs2017-system-requirements-vs). Tyto požadavky můžete vědět, jestli počítač podporuje Visual Studio 2017.
 2. Použít nejnovější aktualizace systému Windows. Tyto aktualizace zkontrolujte, zda má počítač nejnovější aktualizace zabezpečení a požadované systémové součásti pro sadu Visual Studio.
 3. Restartování počítače. Restartování zajistí, že všechny čekající instalace nebo aktualizace není bránit instalaci sady Visual Studio.
 4. Uvolněte místo. Odebrání nepotřebných souborů a aplikací % SystemDrive %, například spuštění aplikace Vyčištění disku.
 
-Dotazy týkající se staršími verzemi sady Visual Studio vedle sebe s Visual Studio 2017, najdete v článku [informace o kompatibilitě sady Visual Studio](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
+Dotazy týkající se staršími verzemi sady Visual Studio vedle sebe s Visual Studio 2017, najdete v článku [informace o kompatibilitě sady Visual Studio](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
 
 ## <a name="step-2---download-visual-studio"></a>Krok 2 – stažení sady Visual Studio
 
 Další stáhněte si soubor zaváděcího nástroje Visual Studio. Uděláte to tak, klikněte na následující tlačítko, vyberte edici Visual Studio 2017, který chcete, klikněte na tlačítko **Uložit**a potom klikněte na **otevřít složku**.
 
  > [!div class="button"]
- > [Stažení sady Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+ > [Stažení sady Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 |         |         |
@@ -69,7 +69,7 @@ Potom spusťte soubor zaváděcího nástroje nainstalovat Instalační program 
 
   Pokud se zobrazí oznámení o řízení uživatelských účtů, klikněte na tlačítko **Ano**.
 
-2. Požádáme vás potvrdit Microsoft [licenční podmínky](https://www.visualstudio.com/license-terms/) a Microsoft [prohlášení o ochraně osobních údajů](https://go.microsoft.com/fwlink/?LinkID=824704). Klikněte na tlačítko **pokračovat**.  
+2. Požádáme vás potvrdit Microsoft [licenční podmínky](https://visualstudio.microsoft.com/license-terms/) a Microsoft [prohlášení o ochraně osobních údajů](https://go.microsoft.com/fwlink/?LinkID=824704). Klikněte na tlačítko **pokračovat**.
 
    ![Licenční podmínky a prohlášení o ochraně osobních údajů](media/vs2017-privacy-and-license-terms.PNG "licenční podmínky společnosti Microsoft a prohlášení o ochraně osobních údajů")
 
@@ -81,16 +81,16 @@ Po instalaci instalační program vám pomůže ho svou instalaci přizpůsobit 
 
  ![Vyberte zatížení z tohoto dialogového okna nastavení Visual Studio 2017](../install/media/install-visual-studio-community.png)
 
-     Vyberte například zatížení "Vývoj aplikací .NET". Se dodává s výchozí editor jádra, která obsahuje základní kódu úpravy podporu pro více než 20 jazycích, schopnost otevírat a upravovat kód z libovolné složky bez nutnosti vytvářet projekt a integrované správy zdrojového kódu.  
+     Vyberte například zatížení "Vývoj aplikací .NET". Se dodává s výchozí editor jádra, která obsahuje základní kódu úpravy podporu pro více než 20 jazycích, schopnost otevírat a upravovat kód z libovolné složky bez nutnosti vytvářet projekt a integrované správy zdrojového kódu.
 
 2. Po výběru workload(s) má, klikněte na tlačítko **nainstalovat**.
 
     Potom zobrazit stav obrazovky zobrazující průběh instalace Visual Studia.
 
-3. Po instalaci nové úlohy a součásti, klikněte na tlačítko **spusťte**.  
+3. Po instalaci nové úlohy a součásti, klikněte na tlačítko **spusťte**.
 
 > [!TIP]
-> Kdykoli po instalaci můžete nainstalovat úlohy nebo součásti, které jste původně nenainstalovali. Pokud máte Visual Studio otevřete, přejděte na **nástroje** > **funkcí a nástrojů pro získání...**  otevře se instalační program Visual Studio. Můžete také otevřít **instalační program Visual Studio** z nabídky Start. Odtud můžete vybrat úlohy nebo součásti, které chcete nainstalovat a pak klikněte na **upravit**.  
+> Kdykoli po instalaci můžete nainstalovat úlohy nebo součásti, které jste původně nenainstalovali. Pokud máte Visual Studio otevřete, přejděte na **nástroje** > **funkcí a nástrojů pro získání...**  otevře se instalační program Visual Studio. Můžete také otevřít **instalační program Visual Studio** z nabídky Start. Odtud můžete vybrat úlohy nebo součásti, které chcete nainstalovat a pak klikněte na **upravit**.
 
 |         |         |
 |---------|---------|
@@ -140,7 +140,7 @@ Další informace najdete v tématu [změňte umístění instalace v sadě Visu
 
 ## <a name="get-support"></a>Získat podporu
 
-V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Tady je několik další možnosti podpory:
 

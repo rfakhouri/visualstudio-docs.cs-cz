@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ceb6aef12851472d8c276b7077a9975e957930e
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5b85f9ea5e9e570203d6d1f4148f714b0da1f861
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255496"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283429"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Rychlý úvod: Projekty a řešení
 
 V tento rychlý start 10 minut jsme budete zjistit, co znamená vytvoření řešení a projektu v sadě Visual Studio. Podíváme vlastnosti projektu a některé soubory, které může obsahovat. Také vytvoříme odkaz na druhý projekt.
 
-Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
+Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
 > [!TIP]
 > Jsme budete jako výukových cvičení porozumět koncepci projektu vytváření řešení a projektu od začátku v tento rychlý start. V obecné používání sady Visual Studio pravděpodobně použijete mnoho šablony projektů, které Visual Studio nabízí při vytváření nového projektu.

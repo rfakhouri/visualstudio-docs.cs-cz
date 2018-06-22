@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d369075c03810ba0d8258296314ebc59116e234
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 1ef917b4e8aa5cde8d95c036523bb525799cc19e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237387"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279960"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Vytvoření offline instalace Visual Studio 2017
 
@@ -32,10 +32,10 @@ Jsme chtěli instalační program Visual Studio 2017 fungovat i v celé řadě p
 - Během procesu instalace pokusíme tři různé stažení technologie (WebClient, BITS a WinInet) Chcete-li minimalizovat narušení s antivirový a proxy softwaru;
 - Soubory, budete muset nainstalovat Visual Studio se distribuují v síti globální doručování, takže jsme můžete získat pro vás z místního serveru.
 
-Doporučujeme vám, že zkusíte [instalačního programu sady Visual Studio webové](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)&mdash;myslíme si, naleznete je dobré prostředí.
+Doporučujeme vám, že zkusíte [instalačního programu sady Visual Studio webové](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)&mdash;myslíme si, naleznete je dobré prostředí.
 
  > [!div class="button"]
- > [Stažení sady Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+ > [Stažení sady Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 Pokud chcete nainstalovat do offline režimu, protože připojení k Internetu je k dispozici nebo nespolehlivé, viz [nainstalovat Visual Studio 2017 na malou šířkou pásma nebo nespolehlivé mezi sítě v prostředích](../install/install-vs-inconsistent-quality-network.md). Příkazového řádku můžete použít k vytvoření místní mezipaměti souborů, které potřebujete k dokončení instalace v režimu offline. Tento proces nahradí soubory ISO k dispozici pro předchozí verze.
 
@@ -44,7 +44,7 @@ Pokud chcete nainstalovat do offline režimu, protože připojení k Internetu j
 
 ## <a name="get-support"></a>Získat podporu
 
-V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Tady je několik další možnosti podpory:
 

@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5f45d8649667b6baaf13e9556bc8ef4abff7581
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a7095b1cd8e386ec93d95f2a7cd13ed753b13a95
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234498"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282905"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Vytvoření vazby ovládacích prvků WPF k datové službě WCF
 
@@ -57,7 +57,7 @@ Předchozí znalosti následující koncepty je také užitečné, ale není nut
 
 -   Entity datové modely a ADO.NET Entity Framework. Další informace najdete v tématu [Entity Framework přehled](/dotnet/framework/data/adonet/ef/overview).
 
--   Datové vazby WPF. Další informace najdete v tématu [přehled vazby dat](/dotnet/framework/wpf/data/data-binding-overview).
+-   Datové vazby WPF. Další informace najdete v tématu [datové vazby přehled](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Vytvoření projektu služby
 Začněte tím, že vytvoření projektu pro tento návod [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
@@ -112,7 +112,7 @@ Vytvoření [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md
 
 1.  Na **projektu** nabídce vyberte možnost **přidat novou položku**.
 
-2.  V seznamu nainstalovaných šablonách klikněte na **webové**a pak vyberte **služby WCF Data Service** položka projektu.
+2.  V **nainstalovaných šablonách** seznamu, klikněte na tlačítko **webové**a pak vyberte **služby WCF Data Service** položka projektu.
 
 3.  V **název** zadejte `AdventureWorksService.svc`a klikněte na tlačítko **přidat**.
 
@@ -289,7 +289,7 @@ Sestavte a spusťte aplikaci ověřte, že můžete zobrazit a aktualizovat záz
 
 1.  Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**. Ověřte, že sestavení řešení bez chyb.
 
-2.  Stiskněte klávesu **Ctrl + F5**.
+2.  Stiskněte klávesu **Ctrl**+**F5**.
 
      Visual Studio spustí **AdventureWorksService** projektu, bez ladění.
 
@@ -317,7 +317,7 @@ Po dokončení tohoto průvodce, můžete provádět následující úlohy souvi
 
 -   Další informace o použití **zdroje dat** oken v sadě Visual Studio pro vazbu WPF ovládací prvky na jiné typy datových zdrojů. Další informace najdete v tématu [prvky vazby WPF k datové sadě](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
--   Další informace o použití **zdroje dat** oken v sadě Visual Studio pro zobrazení souvisejících dat (tj. data v relaci nadřazený podřízený) v ovládacích prvků WPF. Další informace najdete v tématu [návod: zobrazení souvisejících dat v aplikaci WPF](../data-tools/display-related-data-in-wpf-applications.md).
+-   Další informace o použití **zdroje dat** oken v sadě Visual Studio pro zobrazení souvisejících dat (tj. data v relaci nadřazený podřízený) v ovládacích prvků WPF. Další informace najdete v tématu [návod: zobrazování souvisejících dat v aplikaci WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Viz také:
 

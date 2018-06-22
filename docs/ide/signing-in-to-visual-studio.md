@@ -1,5 +1,5 @@
 ---
-title: Přihlaste se k sadě Visual Studio
+title: Přihlášení k sadě Visual Studio
 ms.custom: ''
 ms.date: 11/16/2017
 ms.prod: visual-studio-dev15
@@ -11,14 +11,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948337"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282224"
 ---
-# <a name="sign-in-to-visual-studio"></a>Přihlaste se k sadě Visual Studio
+# <a name="sign-in-to-visual-studio"></a>Přihlášení k sadě Visual Studio
 
 Můžete přizpůsobit a optimalizaci vašeho vývojového prostředí v sadě Visual Studio, pokud jste nastavili svůj účet přizpůsobení po přihlášení k prostředí IDE.
 
@@ -26,7 +26,7 @@ Můžete přizpůsobit a optimalizaci vašeho vývojového prostředí v sadě V
 
 Když se přihlásíte, můžete zlepšit komunikaci prostředí sady Visual Studio. Například po přihlášení, můžete synchronizovat nastavení mezi zařízeními, zkušební verzi prodloužit a automaticky se připojit k službě Azure a další.
 
-Tady je úplný seznam co můžete očekávat a co můžete dělat po přihlášení:  
+Tady je úplný seznam co můžete očekávat a co můžete dělat po přihlášení:
 
 - **Přístup k programu Visual Studio Dev Essentials** -tento program zahrnuje nabídky bezplatný software, školení, podpory a další. V tématu [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) Další informace.
 
@@ -62,9 +62,9 @@ Pokud se odhlásíte, budete automaticky přihlášení k sadě Visual Studio v�
 
 ## <a name="troubleshooting"></a>Poradce při potížích
 
-Pokud se vyskytnou potíže při přihlašování, přejděte na téma [účty podporu](https://www.visualstudio.com/subscriptions/support/) stránky zobrazíte nápovědu.
+Pokud se vyskytnou potíže při přihlašování, přejděte na téma [účty podporu](https://visualstudio.microsoft.com/subscriptions/support/) stránky zobrazíte nápovědu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-* [Jak odemknout Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Jak odemknout Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Integrované vývojové prostředí sady Visual Studio – přehled](../ide/visual-studio-ide.md)

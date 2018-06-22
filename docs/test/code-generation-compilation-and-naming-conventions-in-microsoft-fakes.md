@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 50b066020b04ce39dffa5c7267b89b889cf986e9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93aec7e83ba5af9bab8da351624df861b46e475c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976384"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282103"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Vytváření, kompilace a konvence pojmenování kódu v Napodobeniny Microsoft
 
@@ -32,9 +32,9 @@ Tento článek popisuje možnosti a problémy v generování kódu v napodobenin
 
 ### <a name="configure-code-generation-of-stubs"></a>Konfigurovat kód generování zástupných procedur
 
-Generování zástupných procedur typy je nakonfigurován v souboru XML, který má příponu souboru .fakes. Rozhraní framework Fakes integruje v procesu sestavení pomocí vlastní úlohy nástroje MSBuild a zjistí těchto souborů v čase vytvoření buildu. Generátor kódu Fakes kompilovaný typy se zakázaným inzerováním do sestavení a přidá odkaz na projekt.
+Generování zástupných procedur typy je nakonfigurovaný v souboru XML, který má *.fakes* příponu souboru. Rozhraní framework Fakes integruje v procesu sestavení pomocí vlastní úlohy nástroje MSBuild a zjistí těchto souborů v čase vytvoření buildu. Generátor kódu Fakes kompilovaný typy se zakázaným inzerováním do sestavení a přidá odkaz na projekt.
 
-Následující příklad ilustruje se zakázaným inzerováním typy definované v FileSystem.dll:
+Následující příklad ilustruje se zakázaným inzerováním typy definované v *FileSystem.dll*:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -44,9 +44,9 @@ Následující příklad ilustruje se zakázaným inzerováním typy definované
 
 ### <a name="type-filtering"></a>Filtrování typů
 
-Filtry lze nastavit v souboru .fakes omezit, které typy by měla být prázdná. Můžete přidat bez vazby počet zaškrtnutí, přidat, odebrat elementů v rámci elementu StubGeneration na seznam vybraných typů.
+Filtry lze nastavit v *.fakes* souboru omezit, které typy by měla být prázdná. Můžete přidat bez vazby počet zaškrtnutí, přidat, odebrat elementů v rámci elementu StubGeneration na seznam vybraných typů.
 
-Například následující soubor .fakes generuje zástupných procedur pro typy v oborech názvů systému a System.IO, ale nezahrnuje žádný typ, který obsahuje "Zpracování" v systému:
+Například následující *.fakes* soubor generuje zástupných procedur pro typy v oborech názvů systému a System.IO, ale nezahrnuje žádný typ, který obsahuje "Zpracování" v systému:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -86,7 +86,7 @@ Například následující soubor .fakes generuje zástupných procedur pro typy
 
 ### <a name="stub-concrete-classes-and-virtual-methods"></a>Konkrétní třídy se zakázaným inzerováním a virtuální metody
 
-Ve výchozím nastavení se zakázaným inzerováním typy jsou generovány pro všechny třídy, není zapečetěná. Je možné omezit se zakázaným inzerováním typy, které mají abstraktní třídy pomocí konfiguračního souboru .fakes:
+Ve výchozím nastavení se zakázaným inzerováním typy jsou generovány pro všechny třídy, není zapečetěná. Je možné, abyste omezili typy se zakázaným inzerováním na abstraktní třídy prostřednictvím *.fakes* konfigurační soubor:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -128,7 +128,7 @@ Generátor kódu Fakes generuje shim typy a typy se zakázaným inzerováním pr
         PublicKey=<Test_assembly_public_key>)]
     ```
 
-Pokud shimmed sestavení silným názvem, rozhraní Fakes podepíše automaticky důrazně vygenerované sestavení Fakes. Budete muset silné podepsání sestavení testu. V tématu [sestavení se silným názvem](/dotnet/framework/app-domains/strong-named-assemblies).
+Pokud shimmed sestavení silným názvem, rozhraní Fakes automaticky důrazně podepisuje vygenerované sestavení Fakes. Budete muset silné podepsání sestavení testu. V tématu [sestavení se silným názvem](/dotnet/framework/app-domains/strong-named-assemblies).
 
 Rozhraní framework Fakes používá stejný klíč k podepsání všechny generované sestavení, aby tento fragment kódu můžete použít jako počáteční bod přidat **InternalsVisibleTo** atribut pro sestavení fakes shimmed sestavení kódu.
 
@@ -136,7 +136,7 @@ Rozhraní framework Fakes používá stejný klíč k podepsání všechny gener
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Například klíč jste vytvořili pro shimmed sestavení, zadejte úplnou cestu k, můžete zadat jiný veřejný klíč pro sestavení Fakes **.snk** soubor, který obsahuje alternativní klíč jako `KeyFile` hodnotu v atributu `Fakes` \\ `Compilation` element **.fakes** souboru. Příklad:
+Například klíč jste vytvořili pro shimmed sestavení, zadejte úplnou cestu k, můžete zadat jiný veřejný klíč pro sestavení Fakes *.snk* soubor, který obsahuje alternativní klíč jako `KeyFile` hodnotu v atributu `Fakes` \\ `Compilation` element *.fakes* souboru. Příklad:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -145,7 +145,7 @@ Například klíč jste vytvořili pro shimmed sestavení, zadejte úplnou cestu
 </Fakes>
 ```
 
-Pak budete muset použít veřejný klíč alternativní **.snk** souboru jako druhý parametr atributu InternalVisibleTo Fakes sestavení v kódu shimmed sestavení:
+Pak budete muset použít veřejný klíč alternativní *.snk* souboru jako druhý parametr atributu InternalVisibleTo Fakes sestavení v kódu shimmed sestavení:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -163,11 +163,11 @@ Kompilace sestavení Fakes může výrazně zvýšit vaši čase vytvoření bui
 
 Z vaší projektů testování částí přidáte odkaz na kompilované Fakes sestavení, které jsou umístěny v části FakesAssemblies ve složce projektu.
 
-1.  Vytvořte nové knihovny tříd s verze rozhraní .NET runtime odpovídající testovací projekty. Umožňuje volání Fakes.Prebuild. Odstraňte soubor class1.cs z projektu, není potřeba.
+1.  Vytvořte nové knihovny tříd s verze rozhraní .NET runtime odpovídající testovací projekty. Umožňuje volání Fakes.Prebuild. Odeberte *class1.cs* souboru z projektu, není potřeba.
 
 2.  Přidáte odkaz na systém a sestavení třetích stran, které potřebujete Fakes pro.
 
-3.  Přidejte soubor .fakes pro každou z těchto sestavení a sestavení.
+3.  Přidat *.fakes* soubor pro každou z těchto sestavení a sestavení.
 
 4.  Z testovacího projektu
 
@@ -175,17 +175,17 @@ Z vaší projektů testování částí přidáte odkaz na kompilované Fakes se
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Pro každé sestavení, které jste vytvořili Fakes pro, přidejte odkaz na odpovídající soubor knihovny DLL ve složce Fakes.Prebuild\FakesAssemblies projektu.
+    -   Pro každé sestavení, který jste vytvořili Fakes pro, přidat odkaz na odpovídající soubor knihovny DLL v *Fakes.Prebuild\FakesAssemblies* složky vašeho projektu.
 
 ### <a name="avoid-assembly-name-clashing"></a>Vyhněte se s konfliktními název sestavení
 
-V prostředí Team Build jsou sloučit všechny výstupy sestavení do jednoho adresáře. Pokud více projektů pomocí zástupného rozhraní, může dojít, Fakes sestavení z různých verzí přepsat navzájem. Například TestProject1 fakes mscorlib.dll z rozhraní .NET Framework 2.0 a TestProject2 fakes mscorlib.dll pro rozhraní .NET Framework 4 by yield na mscorlib. Sestavení Fakes.dll Fakes.
+V prostředí Team Build jsou sloučit všechny výstupy sestavení do jednoho adresáře. Pokud více projektů pomocí zástupného rozhraní, může dojít, Fakes sestavení z různých verzí přepsat navzájem. Například TestProject1 fakes *mscorlib.dll* z rozhraní .NET Framework 2.0 a TestProject2 fakes *mscorlib.dll* pro rozhraní .NET Framework 4 obě povede k *mscorlib. Fakes.dll* Fakes sestavení.
 
- K tomuto problému vyhnout, by měl Fakes automaticky vytvoří verzi kvalifikovaný Fakes názvy sestavení pro odkazy na jiný projekt, při přidávání souborů .fakes. Verze kvalifikovaný název sestavení Fakes vloží číslo verze, když vytvoříte Fakes název sestavení:
+ K tomuto problému vyhnout, Fakes automaticky vytvořila názvy sestavení Fakes verze kvalifikovaný pro odkazy na jiný projekt při přidávání *.fakes* soubory. Verze kvalifikovaný název sestavení Fakes vloží číslo verze, když vytvoříte Fakes název sestavení:
 
  Zadaný MyAssembly sestavení a verze 1.2.3.4 je název sestavení Fakes MyAssembly.1.2.3.4.Fakes.
 
- Můžete změnit nebo odebrat tuto verzi a to úpravou atribut verze elementu sestavení v .fakes:
+ Můžete změnit nebo odebrat tuto verzi a to úpravou atribut verze v elementu sestavení *.fakes*:
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -276,6 +276,6 @@ Následující pravidla jsou rekurzivně:
 
 -   Pokud výsledný název je v konfliktu s kteréhokoli člena deklarující typ, použije se schéma číslování připojením letopočty čítač, začínající od 01.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Izolace testovaného kódu pomocí zástupného rozhraní Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)
+- [Izolace testovaného kódu pomocí Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

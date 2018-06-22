@@ -9,23 +9,23 @@ description: Přihlaste se k odběru předplatné MSDN časopis součástí vaš
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 590cd180c8bdf5e2fcef4d16c84350bdc1d00273
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7139bbe46b931ce32ea521eab27e7a26f77652dc
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196811"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280304"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Výhodou Časopis MSDN odběry Visual Studio
 
-Celkový přehled technologií Microsoft praktické řešení skutečných problémů.  V závislosti na vaše předplatné máte nárok na buď tištěných časopise nebo časná přístup k digitální verzi.  
+Celkový přehled technologií Microsoft praktické řešení skutečných problémů.  V závislosti na vaše předplatné máte nárok na buď tištěných časopise nebo časná přístup k digitální verzi.
 
 
 ## <a name="activation-steps"></a>Postup aktivace
-Kroky k aktivaci vaší výhody závisí na edici, kterou zvolíte.  
+Kroky k aktivaci vaší výhody závisí na edici, kterou zvolíte.
 
 ### <a name="digital-edition"></a>Digitální edition
-Digitální edice je k dispozici pro členy Essentials vývojáře Visual Studio.  
+Digitální edice je k dispozici pro členy Essentials vývojáře Visual Studio.
 
 1.  Pro přístup k digitální edice MSDN časopis, přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  Najděte dlaždici Časopis MSDN v části vývoj Professional a klikněte na **přístup**.
@@ -37,7 +37,7 @@ Digitální edice je k dispozici pro členy Essentials vývojáře Visual Studio
     ![Dlaždice katalogu výhody webu MSDN](_img\vs-msdn\vs-msdn-tile.png)
 
 
-3.  Na stránce MSDN časopis vyberte typ upřednostňované předplatného.  Můžete digitální edition bez poplatků, bez ohledu na to, kde bydlíte.  Na tištěných verzi je k dispozici zdarma těm, USA.  Přesouvání poplatky tištěné verze odeslané adresy mimo USA.  
+3.  Na stránce MSDN časopis vyberte typ upřednostňované předplatného.  Můžete digitální edition bez poplatků, bez ohledu na to, kde bydlíte.  Na tištěných verzi je k dispozici zdarma těm, USA.  Přesouvání poplatky tištěné verze odeslané adresy mimo USA.
 
     ![Odběry katalogu výhody webu MSDN](_img\vs-msdn\vs-msdn-subs-page-resized.png)
 
@@ -57,15 +57,15 @@ Digitální edice je k dispozici pro členy Essentials vývojáře Visual Studio
 |Visual Studio Enterprise, Visual Studio Professional (měsíční cloud)   | Azure |Není k dispozici      |  NÁ         |
 |Visual Studio Dev Essentials| NÁ |Digitální edition       |  Ano|
 
-<sup>1</sup>*vytištěná edition: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*   
+<sup>1</sup>*vytištěná edition: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*
 
 *Digitální Edition: MCT Software a služby, cenná Partner společnosti Microsoft (Professional), oblast ředitel (RD).*
 
 *Vyloučí: Představte si (Standard), BizSpark, MCT softwaru a služeb vývojáře*
 
 
-Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
+Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných.
 
 ## <a name="support-resources"></a>Podpora prostředky
--  Požádejte o pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné sady Visual Studio [odběry podporu](https://www.visualstudio.com/subscriptions/support/).
--  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://www.visualstudio.com/support/). 
+-  Požádejte o pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné sady Visual Studio [odběry podporu](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

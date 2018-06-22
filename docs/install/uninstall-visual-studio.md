@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48e4f28ae9015f446401556e4ba5f4b65a56a285
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 452a30b6af12045d2812b9cd84a4f03664fbe45f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31619364"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282021"
 ---
-# <a name="uninstall-visual-studio"></a>Odinstalace Visual Studio
+# <a name="uninstall-visual-studio"></a>Odinstalace sady Visual Studio
 
 Tato stránka provede odinstalace Visual Studio, naše integrovaná sada nástrojů produktivitu pro vývojáře.
 
@@ -35,13 +35,13 @@ Tato stránka provede odinstalace Visual Studio, naše integrovaná sada nástro
      >[!NOTE]
      V některých počítačích může instalační program Visual Studio uvedené v části písmeno **"M"** jako **Microsoft Visual Studio, instalační program**.<br/><br/> Alternativně můžete najít instalační program Visual Studio v následujícím umístění: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2. Kliknutím na spustit instalační program, klikněte na ![podrobnosti ikonu](media/vs2017uninstall-UninstallIcon.png "vyberte ikonu Možnosti") ikonu a pak klikněte na tlačítko **odinstalovat**.  
+2. Kliknutím na spustit instalační program, klikněte na ![podrobnosti ikonu](media/vs2017uninstall-UninstallIcon.png "vyberte ikonu Možnosti") ikonu a pak klikněte na tlačítko **odinstalovat**.
 
-     ![Úprava Visual Studio 2017; Změnit, spusťte opravit nebo odinstalovat](media/vs2017-uninstall.PNG "opravit nebo odinstalovat Visual Studio 2017")  
+     ![Úprava Visual Studio 2017; Změnit, spusťte opravit nebo odinstalovat](media/vs2017-uninstall.PNG "opravit nebo odinstalovat Visual Studio 2017")
 
 3. Klikněte na tlačítko **OK** potvrďte svou volbu.
 
-     ![Úprava Visual Studio 2017; Odinstalace produktu](media/vs2017-uninstall-confirm.PNG "potvrzení odinstalace Visual Studio 2017")  
+     ![Úprava Visual Studio 2017; Odinstalace produktu](media/vs2017-uninstall-confirm.PNG "potvrzení odinstalace Visual Studio 2017")
 
 Pokud později rozmyslíte a chcete znovu nainstalovat Visual Studio 2017, znovu spusťte instalační program Visual Studio a potom vyberte **nainstalovat** na obrazovce výběr.
 
@@ -49,13 +49,13 @@ Pokud později rozmyslíte a chcete znovu nainstalovat Visual Studio 2017, znovu
 
 Všechny instalace Visual Studio 2017, jakož i instalační program Visual Studio úplně odebrat z počítače, odinstalujte jej z aplikace a funkce.
 
-1. Otevřete aplikace a funkce. Například v systému Windows 10, vyberte **spustit**a v panelu vyhledávání, zadejte **aplikace a funkce**.  
-2. Najít **sady Microsoft Visual Studio 2017**.  
-3. Klikněte na tlačítko **odinstalovat**.  
+1. Otevřete aplikace a funkce. Například v systému Windows 10, vyberte **spustit**a v panelu vyhledávání, zadejte **aplikace a funkce**.
+2. Najít **sady Microsoft Visual Studio 2017**.
+3. Klikněte na tlačítko **odinstalovat**.
 
 ## <a name="get-support"></a>Získat podporu
 
-V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Tady je několik další možnosti podpory:
 
@@ -64,7 +64,7 @@ Tady je několik další možnosti podpory:
 * Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Instalace sady Visual Studio](install-visual-studio.md)
 * [Upravit Visual Studio 2017](modify-visual-studio.md)

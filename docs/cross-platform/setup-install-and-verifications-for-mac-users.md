@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 90b9cfa94189e52a49e6ba22cc700568a21f9c91
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a06a0212b6464d404e3ec94b32ad7ffc05df0542
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255233"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282145"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Nastavení, instalace a ověření pro uživatele počítačů Mac
 Toto téma je určené výhradně pro vývojáře, kteří pracují hlavně na Macu a kteří volitelně použijte sadu Visual Studio uvnitř virtuálního počítače s Windows v Mac. Pokud jste vývojář pracující hlavně na počítači se systémem Windows a muset nastavit sekundární Mac pro cílení na iOS, přečtěte si téma hlavní [nastavení a instalaci](../cross-platform/setup-and-install.md) tématu.
@@ -44,19 +44,19 @@ Toto téma je určené výhradně pro vývojáře, kteří pracují hlavně na M
 
 ##  <a name="windows"></a> Instalační program systému Windows v Parallels (Visual Studio a Xamarin)
 
-1.  Pomocí plochy Windows, který jste nakonfigurovali v Parallels nebo VMWare, [stáhněte a spusťte instalační program pro všechny edice Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (Community, Professional a Enterprise). Visual Studio 2017 Community je bezplatná edice; edice Professional a Enterprise můžete použít na základě zkušební verze po dobu 30 dnů.
+1.  Pomocí plochy Windows, který jste nakonfigurovali v Parallels nebo VMWare, [stáhněte a spusťte instalační program pro všechny edice Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (Community, Professional a Enterprise). Visual Studio 2017 Community je bezplatná edice; edice Professional a Enterprise můžete použít na základě zkušební verze po dobu 30 dnů.
 
-2.  V rámci instalačního programu, klikněte na **další možnosti** tlačítko (ikona tři řádky) _vedle_ **spusťte** zvolte **upravit**.:  
-  
-     ![Vyberete možnost upravit v instalaci sady Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-1a.png "Cross-Plat Xamarin instalační 1")  
-  
+2.  V rámci instalačního programu, klikněte na **další možnosti** tlačítko (ikona tři řádky) _vedle_ **spusťte** zvolte **upravit**.:
+
+     ![Vyberete možnost upravit v instalaci sady Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-1a.png "Cross-Plat Xamarin instalační 1")
+
 3.  Zkontrolujte následující pole:
 
-    1.  **Mobilní a herní > pro vývoj mobilních řešení s .NET**. To také automaticky vybere různé nástroje pro Android v rámci běžných nástrojů a Software Development Kit. Tato možnost by měl aktualizovat také případné existující instalace Xamarin.  
-  
-         ![Vyberte možnost vývoj mobilních řešení v rámci herní a vývoj mobilních řešení pro](../cross-platform/media/cross-plat-xamarin-setup-2a.png "Cross-Plat Xamarin instalace 2")  
-  
-    2. (Volitelné) **Windows > vývoj pro univerzální platformu Windows**. To zahrnuje možnosti instalace emulátorů bitových kopií, které bude trvat déle, než se stáhnout; vždy můžete vrátit do instalačního programu sady Visual Studio je přidat později.  
+    1.  **Mobilní a herní > pro vývoj mobilních řešení s .NET**. To také automaticky vybere různé nástroje pro Android v rámci běžných nástrojů a Software Development Kit. Tato možnost by měl aktualizovat také případné existující instalace Xamarin.
+
+         ![Vyberte možnost vývoj mobilních řešení v rámci herní a vývoj mobilních řešení pro](../cross-platform/media/cross-plat-xamarin-setup-2a.png "Cross-Plat Xamarin instalace 2")
+
+    2. (Volitelné) **Windows > vývoj pro univerzální platformu Windows**. To zahrnuje možnosti instalace emulátorů bitových kopií, které bude trvat déle, než se stáhnout; vždy můžete vrátit do instalačního programu sady Visual Studio je přidat později.
 
 4.  Klikněte **upravit** tlačítko a nechat spustit proces. Znovu, bude to trvat delší dobu, během které doby můžete pokračovat s pokyny pro instalaci Mac a projít [Další informace o pro vývoj mobilních řešení s Xamarinem](../cross-platform/learn-about-mobile-development-with-xamarin.md).
 

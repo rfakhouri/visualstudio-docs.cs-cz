@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4ee86cf7a42182cde4d015dfa10c7102563c9a6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: ca571b95d410dd2bd66dc818adeae12c80d00e9e
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957668"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302894"
 ---
 # <a id="top"> </a> Visual Studio bitové kopie v Azure
 
@@ -34,8 +34,8 @@ Bitové kopie pro nejnovější hlavní verze, Visual Studio 2017 a Visual Studi
 
 | Prodejní verze                                              | Edice                     |     Verze produktu     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: Nejnovější (verze 15.7)                    |    Enterprise, komunity     |      Verze 15.7.0     |
-| Visual Studio 2017: Nejnovější verze Preview (verze 15.8 Preview 1) |    Enterprise, komunity     |      Verze 15.8.1     |
+| Visual Studio 2017: Nejnovější (verze 15.7)                    |    Enterprise, komunity     |      Verze 15.7.3     |
+| Visual Studio 2017: Nejnovější verze Preview (verze 15.8 Preview 2) |    Enterprise, komunity     |      Verze 15.8.2     |
 |         Visual Studio 2017: RTW                              |    Enterprise, komunity     |      Verze 15.0.13    |
 |   Visual Studio 2015: Nejnovější (Update 3)                      |    Enterprise, komunity     |  Verze 14.0.25431.01  |
 |         Visual Studio 2015: RTW                              |             Žádné             | (Jeho platnost pro obsluhu) |

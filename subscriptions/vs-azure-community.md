@@ -9,16 +9,16 @@ description: Další informace o benefitech Azure komunity součástí vybrané 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 76384697d6bc0b56f8d7a1664b0c9fa72812f280
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ded290950425801f4e75dc03156f4260db264cfd
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199180"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280374"
 ---
-# <a name="azure-community"></a>Azure komunity  
+# <a name="azure-community"></a>Azure komunity
 
-Nápovědu přímo od týmu Azure v rámci vyberte fóra podpory prostřednictvím Azure komunity.  Výhodou komunity Azure poskytuje přístup ke kolekci fóra zaměřené na témata související s Azure.  
+Nápovědu přímo od týmu Azure v rámci vyberte fóra podpory prostřednictvím Azure komunity.  Výhodou komunity Azure poskytuje přístup ke kolekci fóra zaměřené na témata související s Azure.
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -33,18 +33,18 @@ Nápovědu přímo od týmu Azure v rámci vyberte fóra podpory prostřednictv�
 
 
 ## <a name="activation-steps"></a>Postup aktivace
-Začínáme s Azure komunity je snadné.  
+Začínáme s Azure komunity je snadné.
 1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Najděte dlaždici komunity Azure v části Podpora a klikněte na **získání nápovědy** odkaz. 
+2. Najděte dlaždici komunity Azure v části Podpora a klikněte na **získání nápovědy** odkaz.
 
    ![Dlaždice Azure komunity](_img/vs-azure-community/vs-azure-community-tile.png)
 
-3. Zobrazí seznam dostupných fóra.  Jednoduše klikněte na fóru podle svého výběru.  
+3. Zobrazí seznam dostupných fóra.  Jednoduše klikněte na fóru podle svého výběru.
 
    ![Azure komunitní fóra](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  V rámci fóra můžete zobrazit témata a odpovědi, vyhledejte odpovědi na svoji otázku nebo odeslat novou otázku. 
+4.  V rámci fóra můžete zobrazit témata a odpovědi, vyhledejte odpovědi na svoji otázku nebo odeslat novou otázku.
 
    ![Příklad Azure komunity](_img/vs-azure-community/vs-azure-community-example.png)
 
@@ -60,12 +60,12 @@ Dostupnost benefitu komunity Azure závisí na úrovni vašeho předplatného, j
 | Visual Studio Enterprise (měsíční cloudu), Visual Studio Professional (měsíční cloudu), NFR<sup>1</sup>                                          | Všechny                                              |Není k dispozici                                              |  Ne          |
 | Visual Studio Dev Essentials                                        | Není k dispozici                                              |Není k dispozici                                              |  Ne          |
 |
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Microsoft FTE, cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Visual Studio Industry Partner (VSIP), BizSpark, představte si, Microsoft Certified Trainer (MCT)* 
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Microsoft FTE, cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Visual Studio Industry Partner (VSIP), BizSpark, představte si, Microsoft Certified Trainer (MCT)*
 
-Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
+Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných.
 
 ## <a name="support-resources"></a>Podpora prostředky
 -  Další zdroje informací komunity Azure naleznete na adrese komunitou Azure [stránku podpory](https://azure.microsoft.com/support/forums/).
 -  [Dokumentace k Azure](/azure/).
--  Potřebujete pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné?  Obraťte se na Visual Studio [odběry podporu](https://www.visualstudio.com/subscriptions/support/).
--  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://www.visualstudio.com/support/). 
+-  Potřebujete pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné?  Obraťte se na Visual Studio [odběry podporu](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

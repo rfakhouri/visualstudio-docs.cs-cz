@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39242fc5b95b583ee153e5be5fc562fb49eb4d46
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5e2d9d26d91034d296334ae1456c92027a359175
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924219"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283123"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Zkompilování a vybuildování v sadě Visual Studio
 
@@ -36,7 +36,7 @@ V rámci řada produktů Visual Studio, existují tři metody, které můžete p
 | Příkazový řádek nástroje MSBuild| -Projekty sestavení bez instalace sady Visual Studio.<br />-Spuštění více procesorů sestavení pro všechny typy projektů.<br />-Přizpůsobte většině oblastí systém sestavení.|
 | Sestavení Team Foundation | -Automatizaci procesu sestavení jako součást nepřetržité integrace/průběžné doručování kanálu.<br />-Použijte automatizovaných testů s každou sestavení.<br />-Použít prakticky neomezené prostředky na základě může pro procesy sestavení.<br />-Upravte sestavení pracovního postupu a vytvořit sestavení aktivity hluboko přizpůsobené úkoly.|
 
-Dokumentaci v této části přejde na další informace o procesu sestavení na základě IDE. Další informace o dalších metodách v tématu [MSBuild](../msbuild/msbuild.md) a [průběžnou integraci a nasazení](https://www.visualstudio.com/docs/build/overview), v uvedeném pořadí.
+Dokumentaci v této části přejde na další informace o procesu sestavení na základě IDE. Další informace o dalších metodách v tématu [MSBuild](../msbuild/msbuild.md) a [průběžnou integraci a nasazení](/vsts/pipelines/index?view=vsts), v uvedeném pořadí.
 
 ## <a name="overview-of-building-from-the-ide"></a>Přehled vytváření z prostředí IDE
 
@@ -54,6 +54,6 @@ Odtud můžete prozkoumat celou řadu dalších úloh:
 - [Nastavení možností sestavení](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Vytvářet více projektů současně](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření (kompilace) projektů webu](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)

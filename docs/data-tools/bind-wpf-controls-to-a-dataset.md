@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2e16680b9122565430907b14e16b32d277bfb455
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: f9dcf9079a444b581cacbe4e013149259b3ecb87
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234485"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283204"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Vytvoření vazby ovládacích prvků WPF k datové sadě
 
@@ -106,11 +106,11 @@ Před vytvořením ovládací prvky vázané na data, musíte pro svoji aplikaci
 
 Chcete-li vyplnit datovou sadu dat, použijte `Fill` metodu `ProductTableAdapter`. Ve výchozím nastavení `Fill` metoda výplněmi `ProductDataTable` v `AdventureWorksLTDataSet` se všechny řádky dat z tabulky produktu. Tato metoda vrátí pouze podmnožinu řádků, můžete upravit. V tomto návodu upravit `Fill` metoda vrátí řádky pouze pro produkty, které mají fotografie.
 
-1.  V **Průzkumníku řešení**, dvakrát klikněte `AdventureWorksLTDataSet.xsd` souboru.
+1.  V **Průzkumníku řešení**, dvakrát klikněte *AdventureWorksLTDataSet.xsd* souboru.
 
      Otevře se Návrhář datových sad.
 
-2.  V návrháři, klikněte pravým tlačítkem myši **vyplnění GetData()** dotazu a vyberte **konfigurace**.
+2.  V návrháři, klikněte pravým tlačítkem myši **vyplnění**, **GetData()** dotazu a vyberte **konfigurace**.
 
      **TableAdapter konfigurace** otevře se průvodce.
 
@@ -177,7 +177,7 @@ Vytvořit ovládací prvky, které zobrazují záznamy o zákaznících přetaž
 
 7.  V **vlastnosti** okno, zaškrtněte políčko vedle položky **IsReadOnly** vlastnost.
 
-## <a name="navigating-product-records"></a>Procházení záznamů produktu
+## <a name="navigate-product-records"></a>Přejděte záznamy produktu
 
 Přidejte kód, který umožňuje uživatelům procházet záznamy produktu pomocí **\<** a **>** tlačítka.
 

@@ -9,21 +9,21 @@ description: Další informace o benefitech Concierge Chat zahrnuté v sadě Vis
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 65307a586ea9e9270a8af4a0e70c20d855238fad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7daaca8c9a98162a115453dcd28b0b598dbb67a7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196005"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281872"
 ---
 # <a name="concierge-chat"></a>Concierge chatu
 
-Služba Concierge Chat poskytuje pomoc při hledání informací o produktu a technické dokumentace také jako Nápověda k používání předplatného výhody Visual Studio.  
+Služba Concierge Chat poskytuje pomoc při hledání informací o produktu a technické dokumentace také jako Nápověda k používání předplatného výhody Visual Studio.
 
-Služba je k dispozici 24 hodin denně 7 a je aktuálně k dispozici v angličtině pouze (pro dotazy než účty, fakturace a předplatných). 
+Služba je k dispozici 24 hodin denně 7 a je aktuálně k dispozici v angličtině pouze (pro dotazy než účty, fakturace a předplatných).
 
 ## <a name="activation-steps"></a>Postup aktivace
-Získání nápovědy přes službu Concierge Chat je velmi snadné.  
+Získání nápovědy přes službu Concierge Chat je velmi snadné.
 1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Najděte dlaždici Concierge Chat v části Podpora výhody stránky a klikněte na **zahájit konverzaci**.
@@ -32,9 +32,9 @@ Získání nápovědy přes službu Concierge Chat je velmi snadné.
 
 3. Klikněte na tlačítko **pokračovat**.
 
-4. Otevře se okno konverzace a uvidíte čítač zobrazuje vaši pozici ve frontě.  
+4. Otevře se okno konverzace a uvidíte čítač zobrazuje vaši pozici ve frontě.
 
-5. Pokud agenta je k dispozici, se spustí chat. 
+5. Pokud agenta je k dispozici, se spustí chat.
 
     ![Relace Concierge chatu](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
@@ -48,18 +48,18 @@ Získání nápovědy přes službu Concierge Chat je velmi snadné.
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 | Visual Studio Dev Essentials | NÁ  | Není k dispozici |Není k dispozici |
 
-<sup>1</sup>*zahrnuje: Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.    Vyloučí: FTE společnost Microsoft s hodnotou partnera (MVP), oblast ředitel (RD), Microsoft Partner Network (MPN), představte si.*
+<sup>1</sup>*zahrnuje: Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Vyloučí: FTE společnost Microsoft s hodnotou partnera (MVP), oblast ředitel (RD), Microsoft Partner Network (MPN), představte si.*
 
-Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
+Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných.
 
 ## <a name="frequently-asked-questions"></a>Nejčastější dotazy
 
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>Otázka: je k dispozici v několika jazycích služba chatu?
-   Odpověď: pomoc s účty, fakturace a předplatných problémy je k dispozici v několika jazycích.  Pomoc s umístěním informace o produktu a technické dokumentace je k dispozici v angličtině. 
-   
+   Odpověď: pomoc s účty, fakturace a předplatných problémy je k dispozici v několika jazycích.  Pomoc s umístěním informace o produktu a technické dokumentace je k dispozici v angličtině.
+
 ## <a name="support-resources"></a>Podpora prostředky
--  Požádejte o pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné sady Visual Studio [odběry podporu](https://www.visualstudio.com/subscriptions/support/).
--  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://www.visualstudio.com/support/). 
+-  Požádejte o pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné sady Visual Studio [odběry podporu](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
 
 
 

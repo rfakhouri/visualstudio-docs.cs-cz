@@ -1,8 +1,8 @@
 ---
-title: První seznámení s ladicím programem
-description: Prohlédněte si rychlý různých funkcí ladicího programu sady Visual Studio.
+title: Začínáme s laděním v sadě Visual Studio
+description: Začínáme ladění aplikací pomocí ladicího programu sady Visual Studio
 ms.custom: mvc
-ms.date: 03/27/2018
+ms.date: 06/15/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,36 +13,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a2a01a392ee87d220079ba8f3d8704d739b83ae3
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691089"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303123"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>První pohled na Visual Studio Debugger
 
-Toto téma představuje funkce ladicího programu sady Visual Studio. Pokud chcete sledovat otevřením vlastní aplikace v sadě Visual Studio, můžete to udělat, nebo můžete provést společně s ukázkové aplikace pomocí [začátečníka](../debugger/getting-started-with-the-debugger.md).
+Toto téma představuje ladicí program nástrojů Visual Studio. V sadě Visual Studio kontextu při jste *ladění aplikace*, obvykle to znamená, že používáte aplikaci pomocí ladicího programu připojit (to znamená, v režimu ladicí program). Když to uděláte, ladicího programu poskytuje mnoho způsobů, jak zjistit, co kód dělá při spuštění. Můžete krokovat kód a podívejte se na hodnoty uložené v proměnné, můžete nastavit sleduje zobrazíte při změně hodnoty proměnné, můžete zkontrolovat cestu provádění kódu, a další. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete ke čtení [ladění pro začátečníky absolutní](../debugger/debugging-absolute-beginners.md) před přechodem prostřednictvím tohoto tématu.
 
 Funkce popsané tady platí pro C#, C++, Visual Basic, JavaScript a jiných jazyků – podpora Visual Studio (Pokud není uvedeno jinak).
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Nastavit zarážky a spuštění ladicího programu
 
-Chcete-li ladit, spusťte aplikaci pomocí ladicího programu připojit k procesu aplikací. F5 (**ladění > Spustit ladění**) je nejběžnější způsob, jak to udělat. Ale vpravo teď nemusí mít nastavit všechny zarážky pro zjištění aplikace kódu, proto jsme se učinit nyní a pak spusťte ladění.
+Chcete-li ladit, spusťte aplikaci pomocí ladicího programu připojit k procesu aplikací. **F5** (**ladění > Spustit ladění**) je nejběžnější způsob, jak to udělat. Ale vpravo teď nemusí mít nastavit všechny zarážky pro zjištění aplikace kódu, proto jsme se učinit nyní a pak spusťte ladění. Zarážky jsou základní a nejjednodušší funkcí spolehlivého ladění. Zarážka určuje, kde má Visual Studio spuštěný kód pozastavit, abyste mohli zkontrolovat hodnoty proměnných či chování paměti, nebo abyste zjistili, jestli se nějaká větev kódu spouští. 
 
 Pokud máte soubor otevřete v editoru kódu, můžete nastavit zarážky kliknutím na okraji nalevo od řádek kódu.
 
 ![Nastavit zarážky](../debugger/media/dbg-tour-set-a-breakpoint.gif "nastavit zarážky")
 
-Stisknutím klávesy F5 (**ladění > Spustit ladění**) a ladicí program spustí první zarážku, který nalezne. Pokud ještě není aplikace spuštěna, F5 spuštění ladicího programu a zastaví u první zarážky.
+Stiskněte klávesu **F5** (**ladění > Spustit ladění**) nebo **spustit ladění** tlačítko ![spustit ladění](../debugger/media/dbg-tour-start-debugging.png "spustit ladění ") v panelu nástrojů ladění a ladicí program spustí první zarážku, který nalezne. Pokud ještě není aplikace spuštěna, F5 spuštění ladicího programu a zastaví u první zarážky.
 
 Zarážky jsou užitečné funkce, když víte, řádek kódu nebo části kódu, který chcete prozkoumat podrobně.
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Přejděte kódu v ladicím programu pomocí příkazů krok
+## <a name="navigate"></a> Přejděte kódu v ladicím programu pomocí příkazů krok
 
 Poskytujeme klávesové zkratky pro většinu příkazů, protože navigační kódu aplikace rychlejší. (Ekvivalentní příkazy, například příkazy nabídky jsou uvedeny v závorkách.)
 
-Aplikace s ladicím programem připojené, stiskněte F11 (**ladění > Krokovat s vnořením**). Je F11 **Krokovat s vnořením** příkazů a přejde jeden příkaz spuštění aplikace v čase. Při spuštění aplikace s F11, ladicího programu dělí na první příkaz, který získá provést.
+Aplikace s ladicím programem připojené, stiskněte **F11** (**ladění > Krokovat s vnořením**). Je F11 **Krokovat s vnořením** příkazů a přejde jeden příkaz spuštění aplikace v čase. Při spuštění aplikace s F11, ladicího programu dělí na první příkaz, který získá provést.
 
 ![F11 Krok do](../debugger/media/dbg-tour-f11.png "F11 krok do")
 
@@ -55,7 +55,7 @@ F11 je dobrý způsob, jak prozkoumat toku provádění většiny podrobně. (Po
 
 ## <a name="step-over-code-to-skip-functions"></a>Krok přes kód, který přeskočí funkce
 
-Pokud jste na řádek kódu, který je volání funkci nebo metodu, můžete stisknout F10 (**ladění > Krokovat s přeskočením**) namísto F11.
+Pokud jste na řádek kódu, který je volání funkci nebo metodu, můžete stisknout **F10** (**ladění > Krokovat s přeskočením**) namísto F11.
 
 F10 Posune ladění bez zanoříte se do funkce nebo metody v kódu aplikace (kód stále provádí). Stisknutím klávesy F10, můžete přeskočit kód, který není vás zajímají. Tímto způsobem můžete rychle získat kódu, které vás zajímají další.
 
@@ -88,13 +88,13 @@ Pomocí tohoto tlačítka se podobá nastavením dočasné zarážky. Tento př�
 
 V některých případech můžete chtít pokračovat v relaci ladění ale zálohy ladicí program až aktuální funkce.
 
-Stiskněte Shift + F11 (nebo **ladění > Krok**).
+Stiskněte klávesu **Shift + F11** (nebo **ladění > Krok**).
 
 Tento příkaz obnoví spuštění aplikace (a posune ladění) až do aktuálního funkce vrátí hodnotu.
 
 ## <a name="run-to-cursor"></a>Spustit ke kurzoru
 
-Zastavení ladicího programu stisknutím **Zastavte ladění** červené tlačítko ![Zastavte ladění](../debugger/media/dbg-tour-stop-debugging.png "Zastavte ladění") nebo Shift + F5.
+Zastavení ladicího programu stisknutím **Zastavte ladění** červené tlačítko ![Zastavte ladění](../debugger/media/dbg-tour-stop-debugging.png "Zastavte ladění") nebo **Shift**  +  **F5**.
 
 Klikněte pravým tlačítkem myši na řádek kódu v aplikaci a vyberte **spustit ke kurzoru**. Tento příkaz spustí, ladění a nastaví dočasné zarážek na aktuálním řádku kódu.
 
@@ -102,9 +102,9 @@ Klikněte pravým tlačítkem myši na řádek kódu v aplikaci a vyberte **spus
 
 Pokud jste nastavili zarážky, ladicí program se pozastaví na první zarážce, kterou volání.
 
-Stisknutím klávesy F5, dokud se nedostanete na řádek kódu, kde jste vybrali **spustit ke kurzoru**.
+Stiskněte klávesu **F5** dokud nepřejdete na řádek kódu, kde jste vybrali **spustit ke kurzoru**.
 
-Tento příkaz je užitečné, pokud jsou úpravy kódu a chcete rychle zarážku dočasné a spuštění ladicího programu.
+Tento příkaz je užitečné, pokud jsou úpravy kódu a chcete rychle zarážku dočasné a spuštění ladicího programu ve stejnou dobu.
 
 > [!NOTE]
 > Můžete použít **spustit ke kurzoru** v **zásobníkem volání** okno při ladění.
@@ -176,7 +176,7 @@ Poklepáním na řádek kódu přejít, podívejte se na tomto zdrojovém kódu,
 
 Můžete také klikněte pravým tlačítkem na nabídky z **zásobníkem volání** okno provádět další akce. Například můžete vložit zarážky do určité funkce, restartujte aplikace pomocí **spustit ke kurzoru**a abyste přešli zkontrolujte zdrojového kódu. V tématu [postup: prozkoumat zásobník volání](../debugger/how-to-use-the-call-stack-window.md).
 
-## <a name="examine-an-exception"></a>Zkontrolujte výjimku
+## <a name="exception"></a> Zkontrolujte výjimku
 
 Pokud vaše aplikace vyvolá výjimku, ladicího programu přejdete na řádek kódu, která vrátila výjimku.
 

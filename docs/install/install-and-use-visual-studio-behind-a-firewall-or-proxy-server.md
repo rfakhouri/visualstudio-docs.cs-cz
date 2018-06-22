@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0a8eab90f0817051c57530cead9bd30dffa35584
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765665"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281164"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a použití sady Visual Studio a služby Azure za serverem brány firewall nebo proxy server
 
@@ -49,7 +49,7 @@ Vzhledem k tomu, že instalační program Visual Studio stáhne soubory z různ�
 | download.visualstudio.com | Nastavení umístění stahování balíčků |
 | dl.xamarin.com | Nastavení umístění stahování balíčků |
 | visualstudiogallery.msdn.microsoft.com | Umístění souboru ke stažení rozšíření Visual Studia |
-| www.visualstudio.com | Umístění dokumentace |
+| VisualStudio.microsoft.com | Umístění dokumentace |
 | docs.microsoft.com | Umístění dokumentace |
 | msdn.microsoft.com | Umístění dokumentace |
 | www.microsoft.com | Umístění dokumentace |

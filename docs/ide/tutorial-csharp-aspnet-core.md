@@ -14,18 +14,18 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3de8a60b6f9f4807bd0032fc457a9040f937c063
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 75036450694525f00f31159cdbeea1f4b98040f5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765512"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281830"
 ---
 # <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Začínáme s C# a ASP.NET v sadě Visual Studio
 
 V tomto kurzu pro vývoj C# pomocí ASP.NET Core pomocí sady Visual Studio budete vytvořit webovou aplikaci ASP.NET Core C#, přidejte do ní kód, prozkoumejte některé funkce integrovaného vývojového prostředí a spuštění aplikace.
 
-Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
+Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
 ## <a name="before-you-begin"></a>Než začnete
 
@@ -41,7 +41,7 @@ ASP.NET Core je představuje open source a napříč platformami rozhraní pro v
 
 ### <a name="what-is-visual-studio"></a>Co je Visual Studio?
 
-Visual Studio je sada integrované vývojové kancelářské nástroje pro vývojáře. Považujte ho za programu, které můžete použít k vytvoření programy a aplikace.  
+Visual Studio je sada integrované vývojové kancelářské nástroje pro vývojáře. Považujte ho za programu, které můžete použít k vytvoření programy a aplikace.
 
 ## <a name="start-developing"></a>Začít vyvíjet
 
@@ -81,7 +81,7 @@ Pokud nevidíte **webové aplikace ASP.NET Core** šablony projektu, můžete ho
 
 #### <a name="add-a-project-template"></a>Přidání šablony projektu
 
-1. V **nové webové aplikace ASP.NET Core** dialogovém okně vyberte **webové aplikace (Model-View-Controller)** šablona projektu.  
+1. V **nové webové aplikace ASP.NET Core** dialogovém okně vyberte **webové aplikace (Model-View-Controller)** šablona projektu.
 
 2. Vyberte **technologii ASP.NET 2.0 základní** v hlavní nabídce rozevíracího seznamu. (Pokud nevidíte **technologii ASP.NET 2.0 základní** v seznamu, nainstalujte ji podle **Stáhnout** odkaz, který by se měla objevit v žlutý pruh v horní části dialogové okno.) Zvolte **OK**.
 

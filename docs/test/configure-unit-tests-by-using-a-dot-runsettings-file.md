@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f0cb4989877445a0679a5682aaa17e4b7f759a33
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: d66d1027358e173f0ee86c4c799347b555196392
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815974"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303065"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek pomocí *.runsettings* souboru
 
@@ -164,7 +164,7 @@ V následujících podrobností elementy *.runsettings* souboru.
 |Uzel|Výchozí|Hodnoty|
 |----------|-------------|------------|
 |**ResultsDirectory**||Adresář, kde jsou umístěny výsledky testů.|
-|**targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Toto nastavení určuje, která verze částí unit test framework se používá k zjišťování a spusťte testy. Může se lišit od verze platformy .NET, kterou jste zadali ve vlastnostech sestavení projektu testování částí.|
+|**targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Toto nastavení určuje verzi rozhraní test jednotky použito k vyhledávání a spustit testy. Může se lišit od verze platformy .NET, kterou jste zadali ve vlastnostech sestavení projektu testování částí.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Jednu nebo více cest k adresáři, kde se nachází TestAdapters|
@@ -253,4 +253,4 @@ Tato nastavení jsou specifické pro adaptér test, který spouští test metody
 ## <a name="see-also"></a>Viz také:
 
 - [Přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio Test úloh (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Testovací úloha Visual Studio (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)

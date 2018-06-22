@@ -11,18 +11,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 29768717144efef9c843abb5e0e3e6e81817895d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: d12d17f1cacd6c77fb1f27420a4540fe33e6bffe
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255720"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281050"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Rychlý úvod: Použijte editor kódu
 
 V této 10 minut Úvod do editoru přidáme kód do souboru se podívat na některé způsoby, sada Visual Studio provádí zápis, navigace a pochopení kódu jednodušší.
 
-Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
+Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
 Tento rychlý start předpokládá, že jste již obeznámeni s programovací jazyk. Pokud si nejste, doporučujeme nejprve vypadat v některém z programovací elementy QuickStart, jako například vytvoření webové aplikace s [Python](../ide/quickstart-python.md) nebo [C#](../ide/tutorial-csharp-aspnet-core.md), nebo vytvořte konzolovou aplikaci s [jazyka Visual Basic](../ide/quickstart-visual-basic-console.md) nebo [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 

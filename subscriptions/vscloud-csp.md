@@ -9,21 +9,21 @@ description: Informace pro poskytovatele cloudových řešení, o tom, jak zakou
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdf956b02c4bfc5125b452b6eece0cb39e454bc3
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199076"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283374"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Zakoupit a spravovat odběry cloudových Visual Studio pro vaše zákazníky
 
-Partnerům v [Cloud Solution Provider (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) programu můžete zakoupit Visual Studio Enterprise a Visual Studio Professional Cloudová předplatná, která pro své zákazníky. 
+Partnerům v [Cloud Solution Provider (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) programu můžete zakoupit Visual Studio Enterprise a Visual Studio Professional Cloudová předplatná, která pro své zákazníky.
 
-[Porovnejte možnosti odběru cloudu](https://www.visualstudio.com/vs/pricing)
+[Porovnejte možnosti odběru cloudu](https://visualstudio.microsoft.com/vs/pricing)
 
 ## <a name="prerequisites"></a>Požadavky
-Musíte nejprve nastavení klientů zákazníka v centru partnera a předplatné Azure, vytvořte pro tohoto klienta. 
+Musíte nejprve nastavení klientů zákazníka v centru partnera a předplatné Azure, vytvořte pro tohoto klienta.
 [Víc se uč](https://docs.microsoft.com/vsts/billing/csp/set-up-csp-customer)
 
 ## <a name="how-to-buy"></a>Jak koupit
@@ -58,9 +58,10 @@ Jakmile potvrdíte, nákup, můžete zvolit **spravovat** přiřadit předplatn�
 
 Pokud máte více než jedno předplatné pro tohoto zákazníka, pomocí rozevírací nabídky vyberte předplatné Azure, pomocí kterého jste provedli nákupu.  **Licence Souhrn** uvádí počet odběrů, které byly přiřazeny a jaká je dostupná pro jednotlivé možnosti cloudové předplatné sady Visual Studio.  Souhrn také umožňuje zakoupit další předplatné nebo snižte počet odběrů.
 
-Zvolte **přidat** přiřadit předplatné s novým uživatelem.  Počet zobrazených aktualizace a koncový uživatel obdrží e-mailové oznámení. Koncový uživatel může pak se přihlaste pomocí e-mailovou adresu, které jste zadali k aktivaci jeho předplatnému Visual Studio [portál odběratele Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+Zvolte **přidat** přiřadit předplatné s novým uživatelem.  Počet zobrazených aktualizace a koncový uživatel obdrží e-mailové oznámení.
+Koncový uživatel může pak se přihlaste pomocí e-mailovou adresu, které jste zadali k aktivaci jeho předplatnému Visual Studio [portál odběratele Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 
-K přiřazení předplatné sady Visual Studio jiného uživatele, můžete odstranit aktuální odběratele a přidat nové odběratele. 
+K přiřazení předplatné sady Visual Studio jiného uživatele, můžete odstranit aktuální odběratele a přidat nové odběratele.
 
 Pokud odběratel ještě aktivována svoje předplatné sady Visual Studio, může to být vzhledem k tomu, že se e-mailová pozvánka vynechán.  Můžete požádat, že jsme znovu odeslat pozvánky aktivace uživateli z portálu pro správu sady Visual Studio příliš.
 
@@ -81,15 +82,17 @@ Nabízíme slevu 5 % 6. jednotce, které můžete zakoupit (pro danou zákazník
 
 ## <a name="frequently-asked-questions"></a>Nejčastější dotazy
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Otázka: jak jsou **měsíční** cloudové předplatné poplatky zpracovat?
-Odpověď: na první nákup vám účtujeme poměrné množství tak, aby pokrývalo zbývající počet dnů do aktuálního měsíce. Například pokud zakoupení 10 Cloudová předplatná měsíční Visual Studio Professional byl proveden v dubnu 15, pak jsme se účtují 5 jednotky, protože nejsou k dispozici left 15 dní v měsíci 30 dnů nebo 50 % a nám prorate jednotky poplatky z 50 %. Na první může a každý měsíc po tomto datu až do zrušení, úplné 10 jednotek bude účtován.
+Odpověď: na první nákup vám účtujeme poměrné množství tak, aby pokrývalo zbývající počet dnů do aktuálního měsíce. Například pokud zakoupení 10 Cloudová předplatná měsíční Visual Studio Professional byl proveden v dubnu 15, pak jsme se účtují 5 jednotky, protože nejsou k dispozici left 15 dní v měsíci 30 dnů nebo 50 % a nám prorate jednotky poplatky z 50 %.
+Na první může a každý měsíc po tomto datu až do zrušení, úplné 10 jednotek bude účtován.
 
-Pokud zvýšíte množství placené později, prorate jsme vyšší jednotky tak, aby pokrývalo zbývající počet dnů do aktuálního měsíce. Pokud jste si zakoupili 1 Další Visual Studio Professional měsíční cloudové předplatné na může 10, vám proto by účtujeme zhruba 0.677 jednotky (21 dnů zbývajících do 31 den měsíce může). 
+Pokud zvýšíte množství placené později, prorate jsme vyšší jednotky tak, aby pokrývalo zbývající počet dnů do aktuálního měsíce. Pokud jste si zakoupili 1 Další Visual Studio Professional měsíční cloudové předplatné na může 10, vám proto by účtujeme zhruba 0.677 jednotky (21 dnů zbývajících do 31 den měsíce může).
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>Otázka: jak jsou **roční** cloudové předplatné poplatky zpracovat?
 Odpověď: při každém nákupu vám účtujeme celé množství zakoupili okamžitě. Poplatky za nejsou rozloženy v roce a neexistuje žádný k dispozici průběžné hodnoty. Pokud si zakoupíte roční předplatná cloudu v různých časech v roce, budete mít odběry obnovení v různých měsíců. Jsme neprovádějte všechny roční předplatná cloudu zákazníka shodných, jako je běžné s Microsoft svazek licencování smlouvy nákupu.
 
 ### <a name="q-how-do-cancelations-work"></a>Otázka: jak stornování funguje?
-Odpověď: Při zrušení cloudové předplatné sady Visual Studio, jsou Zrušení automatického obnovení. Předplatné pokračuje v až do jeho normální obnovení data a pak jednoduše vyprší. Na vypršení platnosti předplatitele sady Visual Studio už pomocí sady Visual Studio nebo jiné výhody z předplatného.
+Odpověď: Při zrušení cloudové předplatné sady Visual Studio, jsou Zrušení automatického obnovení. Předplatné pokračuje v až do jeho normální obnovení data a pak jednoduše vyprší.
+Na vypršení platnosti předplatitele sady Visual Studio už pomocí sady Visual Studio nebo jiné výhody z předplatného.
 
 S měsíční Cloudová předplatná stornování projeví první den v měsíci Další. Pokud zrušíte jenom některé z vašich zákazníků měsíční Cloudová předplatná, nezapomeňte odebrat uživatele v prvním měsíci další zajistit, že oprávnění uživatelé dál obsahovat aktivní odběry, které jsou přiřazeny.
 
@@ -108,7 +111,7 @@ Ano například pokud si zakoupíte 6 Visual Studio Professional měsíční odb
 
 Navíc slevy platí jenom pro poplatky v daném měsíční fakturační období. Proto pokud koupit 5 Visual Studio Professional roční předplatná za jeden měsíc, a potom si zakoupíte 5 Další dalšího měsíce, budete platit běžná cena na všechny odběry 10.
 
-Tyto slevy se projeví v cenové dat v rámci [Partnerské centrum](https://partnercenter.microsoft.com). 
+Tyto slevy se projeví v cenové dat v rámci [Partnerské centrum](https://partnercenter.microsoft.com).
 
 ### <a name="q-are-there-renewal-discounts"></a>Otázka: existují slevy obnovení?
 

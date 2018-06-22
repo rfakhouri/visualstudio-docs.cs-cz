@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0f50e8a2f9381b4fd248b044772f5c2bdbf95a41
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 9539e8dec80afd1f334ca89e84a5130d8d47877e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234761"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283286"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Přidání zdroje dat do testu výkonnosti webu
 
@@ -34,7 +34,7 @@ Vázání dat různé hodnoty pro stejný test, třeba zajistit, aby poskytují 
 
 ## <a name="create-a-sql-database"></a>Vytvoření databáze SQL
 
-1. Pokud nemáte Visual Studio Enterprise, si můžete stáhnout z [Visual Studio stáhne](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky.
+1. Pokud nemáte Visual Studio Enterprise, si můžete stáhnout z [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky.
 
 2. Vytvoření databáze SQL.
 

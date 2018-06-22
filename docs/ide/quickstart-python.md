@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a62dfc6cfe5cef21cc2198dd90867a7960312f9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 56078a8a5e5af1b44adf55cabb08f7d72a042470
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296331"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Rychlý úvod: Vytvoření první webové aplikace Python pomocí sady Visual Studio
 
 V této 5 až 10 minut Úvod k sadě Visual Studio jako Python IDE vytvoříte jednoduchou webovou aplikaci Python založené na rozhraní framework Flask. Vytvoření projektu prostřednictvím diskrétní kroky, které vám pomůžou získat informace o základních funkcích nástroje Visual Studio.
 
-Pokud jste ještě nenainstalovali Visual Studio, přejděte na [Visual Studio stáhne](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) instalaci zdarma. V instalačním programu, je nutné vybrat **vývoj Python** zatížení.
+Pokud jste ještě nenainstalovali Visual Studio, přejděte na [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) instalaci zdarma. V instalačním programu, je nutné vybrat **vývoj Python** zatížení.
 
 ## <a name="create-the-project"></a>Vytvoření projektu
 

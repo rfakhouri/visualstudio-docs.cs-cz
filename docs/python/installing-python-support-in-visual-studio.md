@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f4af615091751f1076a5fe8659a8749fc41ca37
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 0c940fdefdc732f277b9a5c71ff3e9a7e8ed244a
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36296313"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Jak nainstalovat podporu jazyka Python v sadě Visual Studio v systému Windows
 
@@ -40,10 +41,10 @@ Chcete-li rychle otestování podpory Python po provedení kroků instalace, ote
 1. Stáhněte a spusťte nejnovější verzi instalačního programu Visual Studio 2017. Pokud máte už nainstalovanou sadu Visual Studio, spusťte instalační program Visual Studio, vyberte **upravit** možnost (najdete v části [upravit Visual Studio](../install/modify-visual-studio.md)) a přejděte ke kroku 2.
 
     > [!div class="nextstepaction"]
-    > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Nainstalovat Visual Studio 2017 Community</a>
+    > <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Nainstalovat Visual Studio 2017 Community</a>
 
     >[!Tip]
-    > Community edition je pro jednotlivé vývojáři, učebny learning, academic výzkum a vývoj s otevřeným zdrojem. Pro jiné účely, nainstalujte <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Professional</a> nebo <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Enterprise</a>.
+    > Community edition je pro jednotlivé vývojáři, učebny learning, academic výzkum a vývoj s otevřeným zdrojem. Pro jiné účely, nainstalujte <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Professional</a> nebo <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Enterprise</a>.
 
 1. Instalační program nabídne seznam úloh, které jsou skupiny související možnosti jsou pro vývoj pro konkrétní oblasti. Pro jazyk Python, vyberte **vývoj Python** zatížení.
 
@@ -67,13 +68,13 @@ Chcete-li rychle otestování podpory Python po provedení kroků instalace, ote
     | Nástroje pro nativní vývoj Python | Nainstaluje kompilátoru C++ a další komponenty potřebné k vývoji nativní rozšíření pro jazyk Python. V tématu [vytváření rozšíření pro C++ pro jazyk Python](working-with-c-cpp-python-in-visual-studio.md). Taky nainstalovat **vývoj aplikací s jazykem C++** zatížení pro plnou podporu C++. |
     | Základní nástroje Azure Cloud Services | Poskytuje další podporu pro vývojáře Azure Cloud Services v Pythonu. V tématu [Azure cloud service projekty](python-azure-cloud-service-project-template.md). |
 
-1. Po instalaci instalační program poskytuje možnosti změnit, spusťte, opravit nebo odinstalovat Visual Studio. **Upravit** tlačítko se změní na **aktualizace** při instalaci aktualizace Visual Studio jsou aktualizace dostupné pro všechny součásti. (Možnost upravit je pak k dispozici v rozevírací nabídce.) Visual Studio a instalační program z nabídky Start systému Windows můžete také spustit a to vyhledáním "Visual Studio".
+1. Po instalaci instalační program poskytuje možnosti změnit, spusťte, opravit nebo odinstalovat Visual Studio. **Upravit** tlačítko se změní na **aktualizace** když jsou k dispozici pro všechny nainstalované součásti aktualizace Visual Studio. (Možnost upravit je pak k dispozici v rozevírací nabídce.) Visual Studio a instalační program z nabídky Start systému Windows můžete také spustit a to vyhledáním "Visual Studio".
 
     ![Spuštění, úprava, úprava nebo odinstalace z instalačního programu sady Visual Studio](media/installation-vs-launch.png)
 
 |   |   |
 |---|---|
-| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) k instalaci podpory jazyka Python v sadě Visual Studio.|
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) k instalaci podpory jazyka Python v sadě Visual Studio.|
 
 ### <a name="troubleshooting"></a>Poradce při potížích
 

@@ -12,12 +12,12 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: 428139af8680bc60f4456367d1a17d4c97874efc
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: c06d612adc6f765b655f9fbe850b73ef5f7f8617
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29795349"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279905"
 ---
 # <a name="version-control-in-visual-studio"></a>Správa verzí v sadě Visual Studio
 
@@ -28,7 +28,7 @@ Git je systém správy nejčastěji používaných verzí dnes a rychle stává 
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://www.visualstudio.com/learn-git/">
+        <a href="https://docs.microsoft.com/azure/devops/git/what-is-git">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -145,11 +145,8 @@ Team Foundation – správa verzí (TFVC) je centralizovaný systém správy ver
 </ul>
 
 
-## <a name="resources"></a>Prostředky 
+## <a name="resources"></a>Prostředky
 
-- [Pro adresáře Git](https://git-scm.com/book/en/v2)  
-- [Plánování migrace na Git](https://www.visualstudio.com/learn/centralized-to-git/)  
-- [Migrace z TFVC do Git](https://www.visualstudio.com/learn/migrate-from-tfvc-to-git/)  
-
- 
-
+- [Pro adresáře Git](https://git-scm.com/book/en/v2)
+- [Plánování migrace na Git](https://docs.microsoft.com/azure/devops/git/centralized-to-git)
+- [Migrace z TFVC do Git](https://docs.microsoft.com/azure/devops/git/migrate-from-tfvc-to-git)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a6d78c20f245f2088af8a51e2e30da3c025ae517
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d1d57dc8c0eb07b90da79de3fee5d42678e7a22
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944408"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279983"
 ---
 # <a name="application-property-page-uwp-projects"></a>Stránka vlastností aplikace (projekty UWP)
 
@@ -46,9 +46,9 @@ Přístup prostřednictvím kódu programu naleznete v tématu <xref:VSLangProj.
 
 Pomocí rozevíracích seznamů v této části můžete nastavit cílovou verzi a minimální verzi Windows 10 pro vaši aplikaci. Je doporučeno, na které cílí nejnovější verzi Windows 10, a pokud vyvíjíte aplikace enterprise příliš podporují starší minimální verze. Další informace o Windows 10, kterou verzi má zvolte najdete v tématu [vyberte verzi UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version).
 
-Informace o platformě cílení v Visual Studio 2017, najdete v části [cílení na platformy](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs#a-iddevelopwindows-avisual-studio-2017-support-for-windows-development).
+Informace o platformě cílení v Visual Studio 2017, najdete v části [cílení na platformy](/visualstudio/productinfo/vs2017-compatibility-vs#a-iddevelopwindows-avisual-studio-2017-support-for-windows-development).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření první aplikace UWP](/windows/uwp/get-started/your-first-app)
 - [Vyberte verzi UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version)

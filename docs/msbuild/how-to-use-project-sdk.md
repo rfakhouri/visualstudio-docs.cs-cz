@@ -11,14 +11,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b595f08883023d1150612415fcdb6c50411db7e3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b4d5d404574c00332a63d4927de3198f096145c4
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569885"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302663"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Postupy: použití sady SDK projektu nástroje MSBuild
+
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 zaveden koncept "projektu SDK", což zjednodušuje použití software development Kit, které vyžadují vlastnosti a cíle určených k importu.
 
 ```xml
@@ -27,8 +28,8 @@ ms.locfileid: "31569885"
         <TargetFramework>net46</TargetFramework>
     </PropertyGroup>
 </Project>
-```  
-  
+```
+
 Během testování projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] přidá implicitní importy v horní a dolní části projektu:
 
 ```xml
@@ -42,30 +43,36 @@ Během testování projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/i
 
     <!-- Implicit bottom import -->
     <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
-</Project>  
-```  
+</Project>
+```
 
 ## <a name="referencing-a-project-sdk"></a>Odkazování na projekt SDK
+
  Existují tři způsoby, jak odkazovat na projekt SDK
 
 1. Použití `Sdk` atributu u `<Project/>` element:
+
     ```xml
     <Project Sdk="My.Custom.Sdk">
         ...
     </Project>
     ```
+
     Implicitní importu se přidá do horní a dolní projektu jak je popsáno výše.  Formát `Sdk` atribut je `Name[/Version]` kde verze je volitelné.  Například můžete zadat `My.Custom.Sdk/1.2.3`.
 
 2. Použít nejvyšší úrovně `<Sdk/>` element:
+
     ```xml
     <Project>
         <Sdk Name="My.Custom.Sdk" Version="1.2.3" />
         ...
     </Project>
    ```
+
    Implicitní importu se přidá do horní a dolní projektu jak je popsáno výše.  `Version` Atribut se nevyžaduje.
 
 3. Použití `<Import/>` element kdekoli v projektu:
+
     ```xml
     <Project>
         <PropertyGroup>
@@ -76,11 +83,13 @@ Během testování projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/i
         <Import Project="Sdk.targets" Sdk="My.Custom.Sdk" />
     </Project>
    ```
+
    Explicitně včetně importy ve vašem projektu umožňuje plnou kontrolu nad pořadí.
 
    Při použití `<Import/>` elementu, můžete zadat volitelný `Version` také atribut.  Například můžete zadat `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`.
 
 ## <a name="how-project-sdks-are-resolved"></a>Způsob řešení projektu sady SDK
+
 Při vyhodnocování importu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dynamicky přeloží cestu k projektu SDK podle názvu a verze, které jste zadali.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] také obsahuje seznam registrovaných překladačů SDK, které jsou zásuvné moduly, které najít projekt sady SDK na váš počítač.  Tyto moduly plug-in patří:
 
 1. Překladač na základě NuGet, který se dotazuje vašeho nakonfigurované balíčku informační kanály pro balíčky NuGet, které odpovídají ID a verzi sady SDK, které jste zadali.<br/>
@@ -99,8 +108,12 @@ Překladač na základě NuGet sady SDK podporuje určení verze ve vaší [glob
     }
 }
 ```
+
 Jenom jedna verze jednotlivých projektů sady SDK můžete použít během sestavení.  Pokud je odkazováno na dvě různé verze stejného projektu sady SDK, bude MSBuild posílat upozornění.  Doporučuje se **není** zadejte verzi v projektech, pokud je verze zadané v vaší `global.json`.  
 
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také
+
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
  [Přizpůsobení buildu](../msbuild/customize-your-build.md)   
+ [Balíčky, metadat a architektury](/dotnet/core/packages)   
+ [Přidání do formátu csproj pro .NET Core](/dotnet/core/tools/csproj)

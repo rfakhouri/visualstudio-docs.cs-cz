@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbd654cfd05b06646346b8629b646e8450ccf081
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2d32a6f2f8e03140ee5463f457201912c42026a
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967681"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302847"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurace testovacích agentů a testovací kontrolery pro spouštění zátěžových testů
 
@@ -23,7 +23,7 @@ Visual Studio můžete vygenerovat simulované zatížení pro vaši aplikaci po
 > [!NOTE]
 > Cloudové zátěžové testování můžete použít také k poskytování virtuálních počítačů, které generují zatížení mnoha uživateli přístup k webu ve stejnou dobu. Další informace o cloudové zátěžové testování v [spouštění zátěžových testů pomocí služby VSTS](/vsts/load-test/get-started-simple-cloud-load-test).
 
-## <a name="load-simulation-architecture"></a>Architektura simulace zátěže
+## <a name="load-simulation-architecture"></a>Architektura simulace zatížení
 
 Architektura simulace zátěže se skládá z klientské aplikace Visual Studio, testovacího kontroléru a testovacích agentů.
 
@@ -57,7 +57,7 @@ Tato architektura přináší následující výhody:
 
 Přestože testovací kontrolér obvykle spravuje několik testovacích agentů, jeden agent může být přidružen pouze k jednomu kontroléru. Každý testovací agent může být sdílen týmem vývojářů. Tato architektura umožňuje snadno zvýšit počet testovacích agentů a generovat tak větší zátěž.
 
-## <a name="test-agent-and-test-controller-interaction"></a>Interakce testovacího agentu a testovacího kontroléru
+## <a name="test-agent-and-test-controller-interaction"></a>Testovací agent a testování řadiče interakce
 
 Testovací kontrolér spravuje sadu testovacích agentů pro spouštění testů. Testovací kontroler komunikuje s testovací agenty testy spuštění, zastavení testů, sledovat stav agenta test a výsledky testu shromažďování.
 
@@ -65,30 +65,30 @@ Testovací kontrolér spravuje sadu testovacích agentů pro spouštění testů
 
 Testovací kontrolér poskytuje obecnou architekturu pro spouštění testů a zahrnuje speciální funkce pro spouštění zátěžových testů. Testovací kontrolér odesílá zátěžový test všem testovacím agentům a čeká, dokud není test inicializován všemi agenty. Jsou-li všichni testovací agenti připraveni, řadič testů jim odešle zprávu, aby zahájili test.
 
-### <a name="test-agent"></a>Test Agent
+### <a name="test-agent"></a>Testovací agent
 
 Testovací agent je spouštěn jako služba, která naslouchá požadavkům testovacího kontroléru na spuštění nového testu. Žádost o přijetí agentem test agent služby agenta test spustí proces, na kterém chcete spustit testy. Každý testovací agent spouští stejný zátěžový test.
 
- Testovacím agentům je správcem přiřazována váha a zátěž je přerozdělena dle váhy jednotlivých agentů. Pokud má například testovací agent 1 váhu 30 a testovací agent 2 váhu 70, přičemž je zátěž nastavena na 1000 uživatelů, testovací agent 1 simuluje 300 virtuálních uživatelů, zatímco testovací agent 2 jich simuluje 700. V tématu [Správa testovacích Kontrolérů a testovacích agentů v sadě Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+ Testovacím agentům je správcem přiřazována váha a zátěž je přerozdělena dle váhy jednotlivých agentů. Pokud má například testovací agent 1 váhu 30 a testovací agent 2 váhu 70, přičemž je zátěž nastavena na 1000 uživatelů, testovací agent 1 simuluje 300 virtuálních uživatelů, zatímco testovací agent 2 jich simuluje 700. V tématu [Správa testovacích kontrolérů a testovacích agentů v sadě Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
  Testovací agent vezme jako vstupní sadu testů a sadu parametrů simulace. Klíče koncept je nezávislé na počítači, kde jste spustit testy.
 
-## <a name="test-controller-and-test-agent-connection-points"></a>Spojovací body testovacího kontroléru a testovacího agentu
+## <a name="test-controller-and-test-agent-connection-points"></a>Testovací kontroler a testování body připojení agenta
 
 Následující obrázek znázorňuje spojovací body mezi testovacím kontrolérem, testovacím agentem a klientem. Se popisuje, jaké porty se používají pro příchozí a odchozí připojení a také omezení zabezpečení použít na těchto portech.
 
  ![Testování řadiče a otestovat agenta portů a zabezpečení](./media/test-controller-agent-firewall.png)
 
- Další informace najdete v části [konfigurace portů pro testovací Kontroléry a testovací agenty](../test/configure-ports-for-test-controllers-and-test-agents.md).
+ Další informace najdete v části [konfigurovat porty pro testovací kontrolery a testovací agenti](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
-## <a name="test-controller-and-agent-installation-information"></a>Informace o instalaci testovacího kontroléru a agentu
+## <a name="test-controller-and-agent-installation-information"></a>Informace o instalaci řadiče a agenta test
 
 Důležité informace o požadavcích na hardware a software pro testovacích kontrolérů a testovacích agentů najdete v tématu postupy pro spuštění instalace a konfigurace prostředí pro optimální výkon, [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).
 
-## <a name="using-the-test-controller-and-test-agent-with-unit-tests"></a>Použití testovacího kontroléru a testovacího agentu při testování částí
+## <a name="use-the-test-controller-and-test-agent-with-unit-tests"></a>Testovací kontrolery a testovací agenta pomocí testování částí
 
 Po instalaci testovacího kontroléru a jednoho nebo více agentů lze v nastavení zátěžových testů určit, zda má být u kontroléru používáno vzdálené spuštění. Dále lze v nastavení testu určit datové a diagnostické adaptéry, které mají být použity spolu s rolí přidruženou k agentům.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md)
