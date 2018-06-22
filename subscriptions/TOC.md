@@ -64,7 +64,7 @@
 #### [Předplatná po konci platnosti](handle-expired-license.md)
 #### [Předplatitelé s přihlášením pomocí osobního e-mailu](personal-email-sign-ins.md)
 ## Získání předplatných sady Visual Studio
-### [Porovnání možností předplatného](https://www.visualstudio.com/vs/pricing)
+### [Porovnání možností předplatného](https://visualstudio.microsoft.com/vs/pricing)
 ### Nákup cloudových předplatných
 #### [Přehled](vscloud-overview.md)
 #### [Časté otázky k fakturaci](vscloud-billing-faq.md)
@@ -75,8 +75,8 @@
 #### [Microsoft pro startupy](program-startups.md)
 ## Prostředky
 ### [White paper k licencování sady Visual Studio](http://aka.ms/vslicensing)
-### [Porovnání možností a cen předplatného](https://www.visualstudio.com/vs/pricing)
-### [Porovnání funkcí integrovaných vývojových prostředí (IDE) sady Visual Studio](https://www.visualstudio.com/vs/compare)
-### [Podpora správy a předplatných sady Visual Studio](https://www.visualstudio.com/support/support-overview-vs)
+### [Porovnání možností a cen předplatného](https://visualstudio.microsoft.com/vs/pricing)
+### [Porovnání funkcí integrovaných vývojových prostředí (IDE) sady Visual Studio](https://visualstudio.microsoft.com/vs/compare)
+### [Podpora správy a předplatných sady Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 ### [Podmínky multilicenčních programů](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Smlouva o produktech a službách společnosti Microsoft](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)
