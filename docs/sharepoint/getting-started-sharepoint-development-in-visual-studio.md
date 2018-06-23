@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d0f4f12eee56d1d4962e5c340037094d5192c718
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b9a06c7731f5cb3ea15b8eef8203b686b5b227dd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766796"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326189"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Získat Začínáme (vývoj pro SharePoint v sadě Visual Studio)
   Tato část vám pomůže spustit práci s [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vývoj řešení služby SharePoint, které využívají [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] a [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].  
@@ -43,21 +43,21 @@ ms.locfileid: "34766796"
 |Téma|Popis|  
 |-----------|-----------------|  
 |[Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)|Popisuje vývoj pro SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Vytváření sloupců webu, typů obsahu a seznamů pro službu SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Popisuje postup vytvoření sloupců vlastního webu, typů obsahu a seznamů pro službu SharePoint pomocí sady Visual Studio tools pro vývoj pro SharePoint.|  
-|[Vytváření řešení pracovního postupu služby SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Popisuje pracovní postup návrh a vývoj.|  
+|[Vytvoření sloupce webu, typů obsahu a seznamů pro službu SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Popisuje postup vytvoření sloupců vlastního webu, typů obsahu a seznamů pro službu SharePoint pomocí sady Visual Studio tools pro vývoj pro SharePoint.|  
+|[Vytvořit pracovní postup řešení služby SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Popisuje pracovní postup návrh a vývoj.|  
 |[Integrace obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Popisuje, jak se připojit k Business Data Connectivity (BDC) modely k integraci obchodní data.|  
-|[Vytváření webových částí pro službu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Popisuje webové části a webové části stránky, jako stavební bloky pro stránky na web služby SharePoint.|  
+|[Creatie webové části pro službu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Popisuje webové části a webové části stránky, jako stavební bloky pro stránky na web služby SharePoint.|  
 |[Vytváření stránek aplikací pro službu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Popisuje postup návrhu stránky aplikací pomocí návrháře.|  
 |[Vytváření opakovaně použitelných ovládacích prvků pro webové části nebo stránky aplikací](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Popisuje, jak vytvořit vlastní, opakovaně použitelné ovládací prvky pro stránky aplikací a webových částí ve službě SharePoint.|  
-|[Procházení připojení služby SharePoint pomocí průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Popisuje, jak procházet součástí webu služby SharePoint v okně nástroje Visual Studio.|  
-|[Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)|Popisuje postup vytváření a ladění řešení služby SharePoint.|  
-|[Balení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|Popisuje, jak ho zabalit a nasadit řešení služby SharePoint.|  
-|[Rozšíření nástrojů SharePoint v aplikaci Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|Popisuje, jak rozšířit nástroje služby SharePoint pro vytvoření funkce, které potřebujete.|  
+|[Procházení připojení služby SharePoint pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Popisuje, jak procházet součástí webu služby SharePoint v okně nástroje Visual Studio.|  
+|[Vytváření a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)|Popisuje, jak vytvořit a řešení ladění služby SharePoint.|  
+|[Zabalení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|Popisuje postup balíček a nasazení řešení služby SharePoint.|  
+|[Rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|Popisuje, jak rozšířit nástroje služby SharePoint pro vytvoření funkce, které potřebujete.|  
   
 ## <a name="see-also"></a>Viz také:
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Procházení připojení služby SharePoint pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
- [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Balení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Vytváření a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
+ [Zabalení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

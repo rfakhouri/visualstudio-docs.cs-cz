@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4e6599fc55143789e35aad5fd4848904ae0c37
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5240ebf307973c0ca6088053aabec4e19fa852a
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575842"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327034"
 ---
 # <a name="walkthrough-using-msbuild"></a>Návod: Použití nástroje MSBuild
 MSBuild je platforma sestavení pro Microsoft a Visual Studio. Tento návod vás seznámí s stavební bloky nástroje MSBuild a ukazuje, jak k zápisu, manipulaci a ladění projektů MSBuild. Co se dozvíte o:
@@ -129,7 +129,7 @@ MSBuild sleduje cíle sestavení a zaručuje, že každém cíli vychází více
 
 3.  Spusťte nástroje msbuild s /t:HelloWorld přepínač příkazu. To vybere a vytvoří HelloWorld cíle:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -178,7 +178,7 @@ MSBuild sleduje cíle sestavení a zaručuje, že každém cíli vychází více
 ## <a name="examining-a-property-value"></a>Zkoumání hodnotu vlastnosti
  K získání hodnoty vlastnosti, použijte následující syntaxi, kde PropertyName je název vlastnosti:
 
-```
+```xml
 $(PropertyName)
 ```
 
@@ -199,7 +199,7 @@ $(PropertyName)
 
 3.  Z **příkazové okno**, zadejte a spouštět tento řádek:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -237,7 +237,7 @@ $(PropertyName)
 
 1.  Z **příkazové okno**, zadejte a spouštět tento řádek:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
     ```
 
@@ -266,7 +266,7 @@ $(PropertyName)
 
 3.  Z **příkazové okno**, zadejte a spouštět tento řádek:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -308,7 +308,7 @@ $(PropertyName)
 ## <a name="examining-item-type-values"></a>Zkoumání hodnoty typu položky
  Chcete-li získat hodnoty typ položky, použijte následující syntaxi, kde typ položky je název typu položky:
 
-```
+```xml
 @(ItemType)
 ```
 
@@ -328,7 +328,7 @@ $(PropertyName)
 
 3.  Z **příkazové okno**, zadejte a spouštět tento řádek:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -342,7 +342,7 @@ $(PropertyName)
 
  Chcete-li změnit oddělovač typ položky, použijte následující syntaxi, kde typ položky je typ položky a oddělovače je řetězec znaků dělicí jeden nebo více:
 
-```
+```xml
 @(ItemType, Separator)
 ```
 
@@ -360,7 +360,9 @@ $(PropertyName)
 
 3.  Z **příkazové okno**, zadejte a spouštět tento řádek:
 
-     `msbuild buildapp.csproj /t:HelloWorld`
+    ```cmd
+    msbuild buildapp.csproj /t:HelloWorld
+    ```
 
 4.  Zkontrolujte výstup příkazu. Měli byste vidět tyto řádky:
 
@@ -438,7 +440,7 @@ $(PropertyName)
 
 4.  Z **příkazové okno**, zadejte a spouštět tento řádek:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -463,7 +465,7 @@ $(PropertyName)
 
  Získat metadata hodnotu typ položky, použijte následující syntaxi, kde typ položky je název typu položky a MetaDataName je název metadat:
 
-```
+```xml
 %(ItemType.MetaDataName)
 ```
 
@@ -479,7 +481,7 @@ $(PropertyName)
 
 3.  Z **příkazové okno**, zadejte a spouštět tento řádek:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -509,7 +511,7 @@ $(PropertyName)
 
 3.  Z **příkazové okno**, zadejte a spouštět tento řádek:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -529,7 +531,7 @@ $(PropertyName)
 ### <a name="metadata-transformations"></a>Metadata transformace
  Položky seznamů lze je transformovat do nové položky seznamů. K transformaci seznam položek, použijte následující syntaxi, kde typ položky je název typu položky a MetadataName je název metadat:
 
-```
+```xml
 @(ItemType -> '%(MetadataName)')
 ```
 
@@ -547,7 +549,7 @@ $(PropertyName)
 
 3.  Z **příkazové okno**, zadejte a spouštět tento řádek:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 

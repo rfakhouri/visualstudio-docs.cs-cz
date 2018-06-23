@@ -18,19 +18,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 24d8c7824e9bf90538a7d4dd1ae230d37cfbdb2f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 36cbcf01a7e070ab88230e0cd0165db935944a59
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765554"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326742"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Volání do objektových modelů služby SharePoint
   Při vytváření rozšíření pro nástroje služby SharePoint v sadě Visual Studio, bude pravděpodobně k volání rozhraní API služby SharePoint k provedení určité úlohy. Například pokud vytvoříte vlastního kroku nasazení pro projekty SharePoint, budete možná muset volání rozhraní API služby SharePoint k provedení některých úkolů k nasazení řešení.  
   
  [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] a [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] zadejte dva různé objektové modely, které můžete použít v rozšíření nástrojů služby SharePoint: objektový model serveru a objektového modelu klienta. Každý objektový model má své výhody a nevýhody v kontextu rozšíření nástrojů služby SharePoint.  
   
- Přehled objektových modelů služby SharePoint, naleznete v části [přehled programovací Model z rozšíření nástrojů SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
+ Přehled objektových modelů služby SharePoint, naleznete v části [přehled programovací model služby SharePoint rozšíření nástrojů](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
   
 ## <a name="use-the-client-object-model-in-extension-projects"></a>Pomocí objektového modelu klienta v rozšíření projektů
  Když budete vyvíjet rozšíření pro nástroje služby SharePoint, můžete ve vašem projektu jako jinou sadu spravovaných rozhraní API objektového modelu klienta. Odkazy na sestavení v objektového modelu klienta můžete přidat do projektu a můžete volat rozhraní API v objektového modelu klienta přímo z vašeho kódu.  
@@ -50,9 +50,9 @@ ms.locfileid: "34765554"
   
  Pokud chcete použít objektový model serveru v rozšíření nástrojů služby SharePoint, je třeba vytvořit vlastní *příkazu SharePoint* pro volání rozhraní API. Příkaz SharePoint definujete v sekundárním sestavení, které můžete volat přímo do objektový model serveru. V projektu rozšíření můžete volání příkazu SharePoint nepřímo metodě ExecuteCommand <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> objektu.  
   
- Další informace o vytváření a použití příkazů služby SharePoint, naleznete v části [postupy: vytvoření příkazu SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md) a [postup: provedení příkazu SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md). Informace o tom, jak nasadit SharePoint – příkazy najdete v tématu [nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Další informace o vytváření a použití příkazů služby SharePoint, naleznete v části [postupy: vytvoření příkazu SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md) a [postup: provedení příkazu SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md). Informace o tom, jak nasadit SharePoint – příkazy najdete v tématu [nasadit rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
- Návody, které ukazují, jak vytvořit a použít příkazy služby SharePoint, naleznete v části [návod: vytvoření vlastní krok nasazení pro projekty SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) a [návod: rozšíření Průzkumníka serveru pro webové zobrazení Části](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+ Návody, které ukazují, jak vytvořit a použít příkazy služby SharePoint, naleznete v části [návod: vytvoření vlastního kroku nasazení pro projekty SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) a [návod: rozšíření Průzkumníka serveru pro zobrazení webové části ](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>Pochopit, jak jsou vykonány SharePoint – příkazy
  Sestavení, které definují příkazy služby SharePoint jsou načteny v procesu 64-bit hostitele s názvem *vssphost4.exe*. Po zavolání metody příkazu SharePoint v rozšíření nástrojů služby SharePoint, je příkaz provedený *vssphost4.exe* místo 32bitový proces sady Visual Studio (*devenv.exe*). Můžete ovládat některé aspekty jak jsou provedeny příkazy SharePoint nastavením hodnoty v registru. Další informace najdete v tématu [ladění rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
@@ -60,5 +60,5 @@ ms.locfileid: "34765554"
 ## <a name="see-also"></a>Viz také:
  [Postupy: vytvoření příkazu SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
  [Postup: provedení příkazu SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
- [Přehled modelu programování rozšíření nástrojů služby SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
+ [Přehled modelu programování služby SharePoint rozšíření nástrojů](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
   

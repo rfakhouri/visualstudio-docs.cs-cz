@@ -17,15 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 433923234b890564d21915d56a906fe10060e4ae
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: f7211d31b8e57a88d3f6a5a585e912dd267cf943
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766269"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325583"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru
-  V sadě Visual Studio, můžete připojení na místní weby služby SharePoint na vývojovém počítači pomocí **připojení služby SharePoint** uzel v **Průzkumníka serveru** okno. Tento uzel zobrazuje mnoho součásti místních webů služby SharePoint v hierarchickém stromovém zobrazení. Můžete například zobrazit seznamy, knihovny dokumentů a typy obsahu na místních serverech. Další informace o používání **Průzkumníka serveru** Pokud chcete připojit k místní weby služby SharePoint, najdete v části [procházení SharePoint připojení pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
+  V sadě Visual Studio, můžete připojení na místní weby služby SharePoint na vývojovém počítači pomocí **připojení služby SharePoint** uzel v **Průzkumníka serveru** okno. Tento uzel zobrazuje mnoho součásti místních webů služby SharePoint v hierarchickém stromovém zobrazení. Můžete například zobrazit seznamy, knihovny dokumentů a typy obsahu na místních serverech. Další informace o používání **Průzkumníka serveru** Pokud chcete připojit k místní weby služby SharePoint, najdete v části [připojení Procházet služby SharePoint pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
   
  Můžete rozšířit **připojení služby SharePoint** uzlu vytváření rozšíření pro existující uzly, nebo vytvořením vlastního typu uzlu a její přidání do hierarchie uzlů.  
   
@@ -67,15 +67,15 @@ ms.locfileid: "34766269"
 |Přidružení pracovního postupu|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IWorkflowAssociationNodeInfo>|  
 |Pracovní postup šablony|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IWorkflowTemplateNodeInfo>|  
   
- Další informace o používání <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> vlastnost, najdete v části [přidružení vlastních dat k rozšíření nástrojů SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
+ Další informace o používání <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> vlastnost, najdete v části [rozšíření nástrojů přidružení vlastních dat se službou SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
   
 ## <a name="see-also"></a>Viz také:
  [Návod: Rozšíření Průzkumníka serveru pro zobrazení webové části](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Postupy: rozšíření uzlu služby SharePoint v Průzkumníku serveru](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
- [Postupy: Přidání uzlu vlastní služby SharePoint do Průzkumníka serveru](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   
+ [Postupy: Přidání vlastního uzlu služby SharePoint do Průzkumníka serveru](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   
  [Postupy: získání dat pro předdefinovaný uzel služby SharePoint v Průzkumníku serveru](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md)   
  [Přidružení vlastních dat k rozšíření nástrojů SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)   
  [Procházení připojení služby SharePoint pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
- [Rozšíření nástrojů SharePoint v aplikaci Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
+ [Rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
   
   

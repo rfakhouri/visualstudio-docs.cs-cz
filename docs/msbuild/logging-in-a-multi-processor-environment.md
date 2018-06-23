@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dedf90c51ec2cd4f1864d5573925ed17a0d69b2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7cba96b4ca87333acbd778282c86a73e531ec3cf
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575375"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327099"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Protokolování v prostředí s více procesory
 Schopnost nástroje MSBuild používat více procesorů může výrazně zkrátit čas sestavení projektu, ale bude mít také za následek složitější protokolování. V prostředí s jedním procesorem může protokolovací nástroj zpracovat příchozí události, zprávy, upozornění a chyby předvídatelným, sekvenčním způsobem. Avšak v prostředí s více procesory mohou události přicházet z různých zdrojů zároveň nebo mimo pořadí. Poskytuje nové více-procesorů podporující protokolovacího nástroje MSBuild a umožňuje vytvoření vlastní "předávání protokolovacích nástrojů."  
@@ -64,7 +64,7 @@ public interface IForwardingLogger: INodeLogger
 ### <a name="attaching-a-distributed-logger"></a>Připojení distribuovaného protokolovacího nástroje  
  Chcete-li připojit distribuovaný protokolovací nástroj v sestavení příkazového řádku, je třeba použít přepínač `/distributedlogger` (nebo `/dl`). Formát pro zadávání názvů typů a tříd protokolovacího nástroje je stejný jako u přepínače `/logger` s tím rozdílem, že distribuovaný prokolovací nástroj je tvořen dvěma třídami protokolování: předávající protokolovací nástroj a centrální protokolovací nástroj. Následuje příklad připojení distribuovaného protokolovacího nástroje:  
   
-```  
+```cmd  
 msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
 Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,  
 Culture=neutral  

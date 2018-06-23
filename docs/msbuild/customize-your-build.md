@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ea021decfc0940ecaaedde2ecfdde34db833b86
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ed794a50df41e6a8c6817a9e10d93edb7606b0e6
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973513"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326823"
 ---
-# <a name="customize-your-build"></a>Přizpůsobení buildu
+# <a name="customize-your-build"></a>Přizpůsobení sestavení
 
 Proces sestavení projektů MSBuild, které používají standardní (import `Microsoft.Common.props` a `Microsoft.Common.targets`) mají několik háky rozšiřitelnosti, které lze použít k přizpůsobení procesu sestavení.
 
@@ -124,13 +124,13 @@ Importuje Microsoft.Common.CurrentVersion.targets `$(MSBuildProjectFullPath).use
 
 Podle konvence pro mnoho základní import souborů logiky sestavení
 
-```
+```xml
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportBefore\*.targets
 ```
 
 před jejich obsah a
 
-```
+```xml
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e667c39d273b15e46ca0042130aa61fc6d16e224
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 58b430d1331a12e080d238d34a4817afea8585d1
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237741"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326862"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio
 
@@ -218,8 +218,8 @@ Následující tabulka uvádí návodů, které ukazují, jak nasadit různé ty
 
 |Typ rozšíření.|Související návody|
 |--------------------|--------------------------|
-|Rozšíření, které obsahuje pouze sestavení rozšíření|[Návod: Rozšiřování typu položky projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [Návod: Vytváření rozšíření projektu SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [Návod: Volání do modelu klientského objektu služby SharePoint v rozšíření průzkumníka serveru](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
-|Rozšíření, které obsahuje SharePoint – příkazy|[Návod: Vytvoření vlastního kroku nasazení pro projekty SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [Návod: Rozšíření průzkumníka serveru pro zobrazení částí webu](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
+|Rozšíření, které obsahuje pouze sestavení rozšíření|[Návod: Rozšíření typu položky projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [Návod: Vytváření rozšíření projektu SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [Návod: Volání do modelu klientského objektu služby SharePoint v rozšíření Průzkumníka serveru](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
+|Rozšíření, které obsahuje SharePoint – příkazy|[Návod: Vytvoření vlastního kroku nasazení pro projekty SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [Návod: Rozšíření Průzkumníka serveru pro zobrazení webové části](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
 |Rozšíření, které obsahuje šablony sady Visual Studio|[Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
 |Rozšíření, které obsahuje Průvodce pro šablony|[Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
 
@@ -270,6 +270,6 @@ Následující příklad ukazuje obsah souboru extension.vsixmanifest pro rozš�
 ## <a name="see-also"></a>Viz také:
 
 - [Rozšíření systému projektu služby SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
-- [Rozšíření uzlu připojení služby SharePoint v průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [Ladění rozšíření pro nástroje služby SharePoint v aplikaci Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Ladění rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)

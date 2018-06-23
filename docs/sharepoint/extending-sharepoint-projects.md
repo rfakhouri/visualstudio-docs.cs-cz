@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab99253efbef61a3a041f261e44e8944bc7d6024
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 76648e128db23415d6a986a7d0087968c549bd13
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764150"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326005"
 ---
 # <a name="extend-sharepoint-projects"></a>Rozšíření projektů služby SharePoint
   Vytváření rozšíření projektu, pokud chcete přizpůsobit funkce na úrovni projektu projektů SharePoint. Například můžete přidat vlastní vlastnosti projektu nebo reakce na události na úrovni projektu, které se vyvolá, když uživatel sama vyvinula řešení služby SharePoint v sadě Visual Studio.  
@@ -48,7 +48,7 @@ ms.locfileid: "34764150"
  [Postupy: Přidání položky místní nabídky do projektů služby SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
  [Postupy: Přidání vlastnosti do projektů služby SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [Návod: Vytváření rozšíření projektu SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)   
- [Definování typů položek projektu služby SharePoint vlastní](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
+ [Definování vlastních typů položek projektu služby SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Rozšíření položek projektu služby SharePoint](../sharepoint/extending-sharepoint-project-items.md)   
  [Rozšíření balení a nasazení SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [Rozšíření systému projektu služby SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)  

@@ -21,19 +21,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f63cf4517320b9acea0d289723a511dfeb9570
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4c97557b18b589ece08ce4f3a536201df3d98aa8
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31579196"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326799"
 ---
 # <a name="project-element-msbuild"></a>Project – element (MSBuild)
 Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.  
 
 ## <a name="syntax"></a>Syntaxe  
 
-```  
+```xml  
 <Project InitialTargets="TargetA;TargetB"  
          DefaultTargets="TargetC;TargetD"  
          TreatAsLocalProperty="PropertyA;PropertyB"  
@@ -75,7 +75,7 @@ Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/interna
 |[ProjectExtensions](../msbuild/projectextensions-element-msbuild.md)|Volitelný element.<br /><br /> Poskytuje způsob, jak zachovat jinou hodnotu než[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informace v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu. Může být nula nebo jeden `ProjectExtensions` elementy v projektu.|  
 |[PropertyGroup –](../msbuild/propertygroup-element-msbuild.md)|Volitelný element.<br /><br /> Element seskupení pro jednotlivé vlastnosti. Vlastnosti jsou určeny pomocí [vlastnost](../msbuild/property-element-msbuild.md) elementu. Může být nula nebo více `PropertyGroup` elementy v projektu.|
 |[Sdk](../msbuild/sdk-element-msbuild.md)|Volitelný element.<br /><br /> Odkazy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu sady SDK.  Tento element slouží jako alternativu k atribut Sdk.|  
-|[cíl](../msbuild/target-element-msbuild.md)|Volitelný element.<br /><br /> Obsahuje sadu úloh pro [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] postupně provést. Úlohy zadávají pomocí [úloh](../msbuild/task-element-msbuild.md) elementu. Může být nula nebo více `Target` elementy v projektu.|  
+|[Cíl](../msbuild/target-element-msbuild.md)|Volitelný element.<br /><br /> Obsahuje sadu úloh pro [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] postupně provést. Úlohy zadávají pomocí [úloh](../msbuild/task-element-msbuild.md) elementu. Může být nula nebo více `Target` elementy v projektu.|  
 |[Usingtask –](../msbuild/usingtask-element-msbuild.md)|Volitelný element.<br /><br /> Poskytuje způsob, jak zaregistrovat úlohy v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Může být nula nebo více `UsingTask` elementy v projektu.|  
 
 ### <a name="parent-elements"></a>Nadřazené elementy  

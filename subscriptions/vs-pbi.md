@@ -9,12 +9,12 @@ description: Další informace o Power BI Pro předplatné, které jsou součás
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fe98aef3da7ef74a802d9dfd67f8f8917b1a20b2
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: d1afbe07a27ac41c8f36399b4e8cbd7463bce0b9
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282421"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326290"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro v sadě Visual Studio předplatných
 
@@ -79,10 +79,21 @@ Pokud chcete používat Power BI Pro, budete muset nastavit účet nebo přihlá
 | Visual Studio Dev Essentials | NÁ  | Není k dispozici |NÁ|
 | Visual Studio Enterprise (měsíční cloud) | Azure                                       | Není k dispozici                                  |NÁ|
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT softwaru & vývojářů Services, MCT Software a služby, Microsoft s hodnotou partnera (MVP), oblast ředitel (RD).  Vyloučí: Představte si Microsoft Partner Network (MPN), FTE.*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT softwaru & vývojářů Services, MCT Software a služby, Microsoft s hodnotou partnera (MVP), oblast ředitel (RD).    Vyloučí: Představte si Microsoft Partner Network (MPN), FTE.*
 
 
 Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných.
+
+ 
+## <a name="frequently-asked-questions"></a>Nejčastější dotazy
+### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>Otázka: Pokud výhodou je volné, proč je nutné zadat číslo platební karty?
+Odpověď: výhodou je volné, ale aktivace používá stejný systém používá ke zpracování placené objednávky.  Nejsou k dispozici dva typy platba. 
+- Platební karty.  Pokud zadáte číslo platební karty, účtovat není karty. 
+- Faktury.  Pokud vyberete jako typ platby "Faktury", nemusíte zadejte číslo platební karty.  Můžete také nastavit interval, který "roční".  Tímto způsobem, obdržíte jednu e-mailovou umožňují vědět, že faktury je připravený pro vás.  Fakturovaná částka bude 0,00 Kč.  
+
+### <a name="q--can-the-power-bi-pro-benefit-included-in-my-subscription-be-used-in-a-production-environment"></a>Otázka: je možné používat Power BI Pro benefit součástí předplatného v produkčním prostředí?
+Odpověď: Ano.  
+
 
 ## <a name="support-resources"></a>Podpora prostředky
 -  Potřebujete pomoc s Power BI Pro?

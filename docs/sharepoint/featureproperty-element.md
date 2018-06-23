@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a937310ddbb866cbe046ea2975f8d76e75fe2a98
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ccc9e0d628d5c17283368de135c8e83dbd40bec1
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766962"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325979"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty – element
   Představuje vlastní vlastnost, která je součástí funkce při nasazení do služby SharePoint. Po nasazení funkce, můžete přejít vlastnost v kódu.  
@@ -52,19 +52,19 @@ ms.locfileid: "34766962"
 |[FeatureProperties –](../sharepoint/featureproperties-element.md)|Reprezentuje kolekci hodnot vlastností, které jsou součástí funkce při nasazení do služby SharePoint.|  
   
 ## <a name="remarks"></a>Poznámky  
- Další informace o vlastnosti funkcí najdete v tématu [poskytování balení a informace o nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+ Další informace o vlastnosti funkcí najdete v tématu [poskytování informací o nasazení balíčků a v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
 ## <a name="element-information"></a>Informace o elementu
   
 |||  
 |-|-|  
-|**obor názvů**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010 nebo SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010 nebo SharePointTools/SharePointProjectItemModel|  
 |**Název schématu**|Schéma položky projektu SharePoint|  
 |**Ověření souboru**|ProjectItemModelSchema.xsd|  
 |**Nesmí být prázdné**|Ne|  
   
 ## <a name="see-also"></a>Viz také:
  [Referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Poskytování informací o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
+ [Zadejte informace o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   
   

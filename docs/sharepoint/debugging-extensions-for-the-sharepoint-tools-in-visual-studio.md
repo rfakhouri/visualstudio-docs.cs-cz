@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 366103b7912491bca5c614e3681ab53e1c9f7257
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 5f878284c6e181956cbd3e708334301963aa25cf
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238066"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326092"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Ladění rozšíření pro nástroje služby SharePoint v sadě Visual Studio
   Můžete ladit rozšíření nástrojů služby SharePoint v experimentální instanci nebo normální instanci sady Visual Studio. Pokud potřebujete Poradce při potížích s chováním rozšíření, můžete také upravit hodnoty registru zobrazíte další informace o chybě a nakonfigurovat, jak Visual Studio provede příkazy služby SharePoint.
@@ -28,19 +28,19 @@ ms.locfileid: "35238066"
 ## <a name="debug-extensions-in-the-experimental-instance-of-visual-studio"></a>Ladění rozšíření v experimentální instanci sady Visual Studio
  K ochraně vývojového prostředí sady Visual Studio před náhodným poškozením netestovaným rozšířením, Visual Studio SDK poskytuje alternativní instanci sady Visual Studio, volá se *experimentální instanci*, který můžete použít k instalaci a testování rozšíření. Při vývoji nových rozšíření pomocí normální instanci sady Visual Studio, ale ladění a spouštění v experimentální instanci. Další informace najdete v tématu [experimentální instanci](../extensibility/the-experimental-instance.md).
 
- Pokud používáte k nasazení rozšíření projektu VSIX a projekt VSIX je projekt po spuštění ve vašem řešení, Visual Studio automaticky nainstaluje a spustí rozšíření v experimentální instanci při ladění řešení. Projekt po spuštění je projekt, který se spustí při ladění řešení, která obsahuje více projektů. Další informace o použití projektu VSIX k nasazení rozšíření najdete v tématu [nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Pokud používáte k nasazení rozšíření projektu VSIX a projekt VSIX je projekt po spuštění ve vašem řešení, Visual Studio automaticky nainstaluje a spustí rozšíření v experimentální instanci při ladění řešení. Projekt po spuštění je projekt, který se spustí při ladění řešení, která obsahuje více projektů. Další informace o použití projektu VSIX k nasazení rozšíření najdete v tématu [nasadit rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
  Příklady, které ukazují, jak ladit různé typy rozšíření v experimentální instanci sady Visual Studio najdete v tématu následující kurzy:
 
--   [Návod: Rozšiřování typu položky projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+-   [Návod: Rozšíření typu položky projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
 
 -   [Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 
 -   [Návod: Vytvoření vlastního kroku nasazení pro projekty SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 
--   [Návod: Rozšíření průzkumníka serveru pro zobrazení částí webu](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+-   [Návod: Rozšíření Průzkumníka serveru pro zobrazení webové části](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
--   [Návod: Volání do modelu klientského objektu služby SharePoint v rozšíření průzkumníka serveru](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
+-   [Návod: Volání do modelu klientského objektu služby SharePoint v rozšíření Průzkumníka serveru](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 
 ## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>Ladění rozšíření v normální instanci sady Visual Studio
  Pokud chcete k ladění projektu rozšíření v normální instanci sady Visual Studio, nejprve nainstalujte rozšíření v normální instanci. Potom připojte ladicí program k druhému procesu Visual Studio. Jakmile budete hotovi, můžete odebrat rozšíření tak, aby už načtenou ve vývojovém počítači.
@@ -118,7 +118,7 @@ ms.locfileid: "35238066"
 
 |Hodnota|Popis|
 |-----------|-----------------|
-|EnableDiagnostics|REG_DWORD, která určuje, zda diagnostické zprávy se zobrazují v **výstup** okno.<br /><br /> Chcete-li zobrazit diagnostické zprávy, nastavte tuto hodnotu na 1. Zastavení, zobrazení zprávy, nastavte tuto hodnotu na 0 nebo tuto hodnotu odstraňte.<br /><br /> Zápis zpráv, které mají **výstup** rozšíření nástrojů okna ze služby SharePoint, použijte projektu služby SharePoint. Další informace najdete v tématu [pomocí projektu služby SharePoint](../sharepoint/using-the-sharepoint-project-service.md).|
+|EnableDiagnostics|REG_DWORD, která určuje, zda diagnostické zprávy se zobrazují v **výstup** okno.<br /><br /> Chcete-li zobrazit diagnostické zprávy, nastavte tuto hodnotu na 1. Zastavení, zobrazení zprávy, nastavte tuto hodnotu na 0 nebo tuto hodnotu odstraňte.<br /><br /> Zápis zpráv, které mají **výstup** rozšíření nástrojů okna ze služby SharePoint, použijte projektu služby SharePoint. Další informace najdete v tématu [použití služby projektu služby SharePoint](../sharepoint/using-the-sharepoint-project-service.md).|
 
  Pokud vaše rozšíření obsahuje příkaz SharePoint, můžete vytvořit a nastavte další hodnoty za účelem odstranění příkaz. Následující tabulka popisuje tyto hodnoty.
 
@@ -132,5 +132,5 @@ ms.locfileid: "35238066"
 
 ## <a name="see-also"></a>Viz také:
 
-- [Rozšíření nástrojů SharePoint v aplikaci Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
-- [Nasazování rozšíření pro nástroje služby SharePoint v aplikaci Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

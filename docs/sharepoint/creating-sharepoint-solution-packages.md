@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 957789c4adfc476429179ed84f87f544c0d37143
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 87b80d7c607cf4de686e601263bcb67dcc2f92ae
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765268"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326849"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Vytváření balíčků řešení služby SharePoint
   Pomocí návrháře balíčků, můžete vytvořit a upravit balíčky pro nasazení. Například můžete přidat položky projektu služby SharePoint a funkce, obnovit server služby IIS, nastavte obory aktivace funkce a identifikovat funkcí. Návrhář také generuje manifest, soubor XML, který popisuje každý balíček.  
@@ -31,7 +31,7 @@ ms.locfileid: "34765268"
   
  Alternativně můžete použít **Průzkumníku balíčků** k úpravě funkcí a položek v souboru balíčku (*WSP*). Další informace najdete v tématu [postupy: Přidání nebo odebrání funkcí a položek z balíku pomocí Průzkumníku balíčků](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
- Visual Studio a nástroje MSBuild můžete použít k vytvoření balíčku (*WSP*) soubory k nasazení řešení služby SharePoint. Tento proces generuje manifest soubory potřebné pro nasazení služby SharePoint. Další informace najdete v tématu [postupy: vytvoření balíčku SharePoint](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b) a [postupy: vytvoření balíčku řešení služby SharePoint pomocí úlohy nástroje MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).  
+ Visual Studio a nástroje MSBuild můžete použít k vytvoření balíčku (*WSP*) soubory k nasazení řešení služby SharePoint. Tento proces generuje manifest soubory potřebné pro nasazení služby SharePoint. Další informace najdete v tématu [postupy: vytvoření balíčku řešení služby SharePoint pomocí úloh nástroje MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).  
   
 ## <a name="package-designer-options"></a>Možnosti návrháře balíčků
  Následující tabulka uvádí vlastnosti lze přizpůsobit v SharePoint balíčky s **návrháře balíčků**.  
@@ -49,12 +49,12 @@ ms.locfileid: "34765268"
   
  V následující tabulce jsou uvedeny dva cíle MSBuild, které můžete použít k přizpůsobení jak *WSP* soubor je vytvořen.  
   
-|cíl|Popis|  
+|Cíl|Popis|  
 |------------|-----------------|  
 |BeforeLayout|Cíl, který provádí úlohy bezprostředně před soubory se zkopírují do zprostředkující adresáře. Můžete změnit soubory, před vytvořením souboru balíčku (*WSP*).|  
 |AfterLayout|Cíl, který provádí úlohy ihned po soubory se zkopírují do zprostředkující adresáře.|  
   
- Další informace najdete [postupy: přizpůsobení balíčku řešení služby SharePoint pomocí cílů nástroje MSBuild pomocí](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).  
+ Další informace najdete [postupy: přizpůsobení balíčku řešení služby SharePoint pomocí cílů nástroje MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).  
   
 ## <a name="packaging-architecture"></a>Architektura balení
  Následující kroky dojít, když vytvoříte balíček služby SharePoint (*WSP*) v sadě Visual Studio.  
@@ -72,13 +72,13 @@ ms.locfileid: "34765268"
 6.  Soubory v adresáři zprostředkující budou přidány do *WSP* souboru.  
   
 ## <a name="package-folder-structure"></a>Struktura složek balíčku
- Když balíček projektu služby SharePoint *WSP* se vám v vytvoří soubor *SolutionFolder\bin\{BuildConfiguration}* složky. Například, pokud je vaše řešení v *C:\Visual Studio 2013\Projects\ListDefinition1* a vaše konfigurace sestavení nastavená na vydání *WSP* soubor je umístěný ve *2013\ C:\Visual Studio Projects\ListDefinition1\bin\Release*.  
+ Když balíček projektu služby SharePoint *WSP* se vám v vytvoří soubor *SolutionFolder\bin\\\<BuildConfiguration >* složky. Například, pokud je vaše řešení v *C:\Visual Studio 2013\Projects\ListDefinition1* a vaše konfigurace sestavení nastavená na vydání *WSP* soubor je umístěný ve *2013\ C:\Visual Studio Projects\ListDefinition1\bin\Release*.  
   
 ## <a name="see-also"></a>Viz také:
- [Postupy: Přizpůsobení balíčku řešení služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Postupy: přizpůsobení balíčku řešení služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [Postupy: Přidání nebo odebrání funkcí a položek z balíčku pomocí návrháře balíčků](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
- [Postupy: vytvoření balíčku služby SharePoint](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)   
  [Postupy: vytvoření balíčku řešení služby SharePoint pomocí úloh nástroje MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
- [Postupy: Přizpůsobení balíčku řešení SharePoint pomocí cílů nástroje MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
+ [Postupy: vytvoření balíčku řešení služby SharePoint pomocí úloh nástroje MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
+ [Postupy: přizpůsobení balíčku řešení služby SharePoint pomocí cílů nástroje MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
   
  

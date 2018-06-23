@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ce48f8fc21c1c035586edf48446ce1d3f103d3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2bd31b13b55defb4a8517ce9b0711395f09f99e6
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570457"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326875"
 ---
 # <a name="build-loggers"></a>Protokolovací nástroje sestavení
 Protokolovací nástroje poskytují způsob, jak můžete přizpůsobit výstup buildu a zobrazení zprávy, chyby nebo výstrahy v reakci na konkrétní sestavení události. Každý protokolovacího nástroje je implementovaný jako třídy rozhraní .NET, která implementuje <xref:Microsoft.Build.Framework.ILogger> rozhraní, která je definována v sestavení Microsoft.Build.Framework.dll.  
@@ -52,13 +52,13 @@ Protokolovací nástroje poskytují způsob, jak můžete přizpůsobit výstup 
   
  Následující příkaz vytvoří projekt `MyProject.csproj` a používá třídu protokoly implementované v `SimpleLogger.dll`. **/Nologo** přepínač skryje banner a zpráva o autorských právech a **/noconsolelogger** přepínač zakáže výchozí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] konzoly protokolovacího nástroje.  
   
-```  
+```cmd  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll  
 ```  
   
  Následující příkaz vytvoří projekt se stejným protokolovacího nástroje, ale s `Verbosity` úroveň `Detailed`.  
   
-```  
+```cmd  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed  
 ```  
   

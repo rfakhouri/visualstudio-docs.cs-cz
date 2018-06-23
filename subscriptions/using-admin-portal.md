@@ -9,11 +9,12 @@ mescription: Learn how to manage your organization's Visual Studio subscriptions
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 22351b94923777d5eb1fe40cd2e43e9dc20f2449
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327407"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Pomocí portálu správce předplatných Visual Studio
 
@@ -50,7 +51,7 @@ Pokud vaše organizace je připravené k zařazený, nemá pro Visual Studio odb
 > [!NOTE]
 > Pokud primární server nebo oznámení kontakty zobrazí více než jeden e-mailu, znamená to, že mají více než jeden kontrolního čísla výrobku. Bude nutné k dokončení procesu pomocí jedinečný odkaz pro kontrolního čísla výrobku, kterou se odkazuje v každém email.*
 
-Pokud potřebujete přidat do nové Visual Studio odběry portálu pro správu a nejste si jisti, který je primární nebo oznámení kontaktu, můžete najít tyto informace po přihlášení k [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Podívejte se na [najít vaše primárního kontaktu](/find-primary-contact/) tématu kroky, jak najít kontakt primární nebo oznámení v na webu VLSC.
+Pokud potřebujete přidat do nové Visual Studio odběry portálu pro správu a nejste si jisti, který je primární nebo oznámení kontaktu, můžete najít tyto informace po přihlášení k [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Podívejte se na [najít vaše primárního kontaktu](find-primary-contact.md) tématu kroky, jak najít kontakt primární nebo oznámení v na webu VLSC.
 Pokud jste již byla nastavili jako správce, pak můžete přejít přímo na [Visual Studio portálu pro správu předplatných](https://manage.visualstudio.com).
 
 ### <a name="understanding-the-subscribers-page"></a>Vysvětlení stránky odběratele
@@ -67,11 +68,9 @@ Jakmile jste přiřadili odběry, kartě odběratele poskytuje podrobné informa
 - Volitelné pole pro jinou e-mailovou adresu pro komunikaci, než přihlášení. 
 
 Na levé straně na této stránce se zobrazí další informace o počtu licencí předplatné zakoupené, přiřazené a stále k dispozici ve vaší organizaci pro každá smlouva.
-
-   ![Stránky Subscibers portál pro správu předplatných sady Visual Studio](_img/using-admin-portal/subscribers-page.png)
+    ![Stránky Subscibers portál pro správu předplatných sady Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Stránce s podrobnostmi o vysvětlení
 Další informace o smlouvu, že si prohlížíte vyberte kartu s podrobnostmi. Zobrazuje stav smlouvy, nákupu účet, podrobnosti org, primární kontakty (VLSC), super admins (Pokud je k dispozici) a jiné související informace.
-
-   ![Stránka podrobností portál pro správu předplatných sady Visual Studio](_img/using-admin-portal/details-page.png)
+    ![Stránka podrobností portál pro správu předplatných sady Visual Studio](_img/using-admin-portal/details-page.png)
 

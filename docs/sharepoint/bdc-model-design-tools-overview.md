@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ba5f5464a770342b2e2266bf0327160d37cc109
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 999c7d4adf47dfecddd379c9f1252a343583831d
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765749"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326215"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Přehled nástrojů pro navrhování modelu služby BDC
   Business Data Connectivity (BDC) modelu můžete navrhnout pomocí návrháře BDC **podrobnosti o metodě BDC** okně a **Průzkumník modelu BDC**.  
@@ -80,7 +80,7 @@ ms.locfileid: "34765749"
   
 ## <a name="see-also"></a>Viz také:
  [Postupy: vytvoření modelu služby BDC](../sharepoint/how-to-create-a-bdc-model.md)   
- [Postupy: Přidání Entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Postupy: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Postupy: přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)   
  [Postupy: Přidání specifické vyhledávací metody](../sharepoint/how-to-add-a-specific-finder-method.md)   
  [Postupy: přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md)   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a6fdb894c7dd2177afc7ced375b575de7d9532
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b9f870842427549c81f161b3f18b3ff846f974d3
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575192"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326904"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Návod: Vytvoření souboru projektu MSBuild od začátku
 Programovací jazyky, které cílí na rozhraní .NET Framework použijte soubory projektu nástroje MSBuild k označení a řízení procesu sestavení aplikace. Pokud používáte Visual Studio k vytvoření souboru projektu nástroje MSBuild, příslušné XML je automaticky přidá do souboru. Ale možná bude vhodné se seznámit s uspořádání XML a jak ji k řízení sestavení můžete změnit.  
@@ -367,7 +367,7 @@ Programovací jazyky, které cílí na rozhraní .NET Framework použijte soubor
   
 1.  V souboru projektu přidejte tyto atributy otevírání cíl sestavení:  
   
-    ```  
+    ```xml  
     Inputs="@(Compile)" Outputs="$(OutputPath)$(AssemblyName).exe"  
     ```  
   

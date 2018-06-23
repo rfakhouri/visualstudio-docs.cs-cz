@@ -9,12 +9,12 @@ description: Zjistěte, jak vyhledat a stáhnout produkty společnosti Microsoft
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c6e894093ababe13e3fecedcbd9afe00f22128bd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 8029af659fb45cf7a1ef028855a350935e41670f
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280530"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326342"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Pomocí odběratele stáhne v sadě Visual Studio předplatných
 Jako součást výhody pro předplatitele máte přístup k široké škále stažení softwaru.
@@ -51,6 +51,7 @@ Například pokud se rozhodnete **Visual Studio 2017** ze seznamu nástrojů pro
 Můžete snadno vyberte typ souborů, jazyk a architektura pomocí dostupné rozevíracích nabídek. Vyberte upřednostňované možnosti a klikněte na **Stáhnout** zahájíte stahování produktu.
 
 ### <a name="displaying-download-details"></a>Zobrazení podrobností o stažení
+
 Kliknutím na název produktu nebo na **informace** odkazu se zobrazí podrobnosti, pro který stáhnout a poskytovat přístup k poznámky k verzi pro produkt.
 
 ![Podrobnosti o sadě Visual Studio 2017 Pro stahování](_img\subscriber-downloads\vs2017-pro-details.png)

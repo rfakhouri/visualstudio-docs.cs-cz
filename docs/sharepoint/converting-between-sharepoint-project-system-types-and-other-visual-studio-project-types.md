@@ -15,19 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1bcce4a414985ba291f33d3ad56abe880c08e7d2
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: c5010a4cfba970f63cfa887f4c3be943cbdde731
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237433"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326176"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Převod mezi systémovými typy projektů SharePoint a jinými typy projektů Visual Studio
   V některých případech může mít objekt v systému projektu služby SharePoint a chcete používat funkce odpovídající objektu v sadě Visual Studio automatizace objektový model nebo integrace objektový model, nebo naopak. V těchto případech můžete použít <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> metoda projektu služby SharePoint převést objekt na jiný objekt modelu.
 
  Například můžete mít <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> objektu, ale chcete použít metody, které jsou dostupné jenom na <xref:EnvDTE.Project> nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> objektu. V takovém případě můžete použít <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> způsobů, jak převést <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> k <xref:EnvDTE.Project> nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>.
 
- Další informace o sadě Visual Studio automatizace objektový model a model objektu integrace sady Visual Studio najdete v tématu [přehled programovací Model z rozšíření nástrojů SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).
+ Další informace o sadě Visual Studio automatizace objektový model a model objektu integrace sady Visual Studio najdete v tématu [přehled programovací model služby SharePoint rozšíření nástrojů](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).
 
 ## <a name="types-of-conversions"></a>Převody typů
  Následující tabulka uvádí typy, které tuto metodu můžete přepínat mezi systému projektu služby SharePoint a jinými modely objekt sady Visual Studio.
@@ -51,7 +51,7 @@ ms.locfileid: "35237433"
 
 ## <a name="see-also"></a>Viz také:
 
-- [Použití služby projektu služby SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
-- [Postupy: Načtení služby projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
-- [Přehled modelu programování rozšíření nástrojů služby SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [Použití služby projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
+- [Postupy: načtení služby projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
+- [Přehled modelu programování služby SharePoint rozšíření nástrojů](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 

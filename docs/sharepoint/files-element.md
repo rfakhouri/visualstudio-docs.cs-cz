@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 330c408aa0e283eb282b93f77726ccc5d9547795
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 37fc7bb582482f645fe5699196ca33d79304a5c3
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766903"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327291"
 ---
 # <a name="files-element"></a>Files – element
   Určuje soubory k nasazení s položkou projektu služby SharePoint, jako je například souborů funkcí a výstup závislé jiné-projektů služby SharePoint.  
@@ -60,12 +60,12 @@ ms.locfileid: "34766903"
   
 |||  
 |-|-|  
-|**obor názvů**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010 nebo SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010 nebo SharePointTools/SharePointProjectItemModel|  
 |**Název schématu**|Schéma položky projektu SharePoint|  
 |**Ověření souboru**|ProjectItemModelSchema.xsd|  
 |**Nesmí být prázdné**|Ne|  
   
 ## <a name="see-also"></a>Viz také:
- [Referenční dokumentace schématu položek projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [Referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

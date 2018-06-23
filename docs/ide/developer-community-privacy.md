@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d1b1a8173e4bbab817cb1a07107da15f10526be
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2905cd6fcf9255eb8ba76d636d908651e2254115
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36304766"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327073"
 ---
 # <a name="developer-community-data-privacy"></a>Ochrana dat komunity vývojářů
 
@@ -45,6 +45,45 @@ Pokud máte obavy o ochrany osobních údajů, neuvádějte nic, co chcete zacho
    > Je omezena na připojené soubory 2 GB a maximálně 10 souborů. Pokud potřebujete větší soubor nahrát, můžete odeslat novou sestavu problém nebo žádat zaměstnanec společnosti Microsoft v privátní komentář adrese URL pro odeslání.
 
 Chcete-li zachovat ochranu vašich osobních údajů a zachovat citlivých informací mimo veřejné zobrazení, postará zachovat veškerou komunikaci se společností Microsoft k odpovědi v části Komentář viditelnost omezený. Odpovědi na jiné připomínky může vést k omylem prozrazeny citlivé informace.
+
+## <a name="data-we-collect"></a>Data, které shromažďujeme
+
+Pokud **nahlásit problém** je zahájeno z instalačního programu Visual Studio, shromažďujeme nejnovější protokolu instalace.
+
+Pokud **nahlásit problém** se zahájí ze sady Visual Studio, shromažďujeme jeden nebo více z následujících typů dat:
+
+- Programu Watson a .NET položky z protokolu událostí
+
+- Soubor protokolu v paměti aktivity Visual Studio
+
+- PerfWatson souborů, pokud je povolená kolekce Watson, z *VSFeedbackPerfWatsonData* složky
+
+- LiveShare soubory protokolu, pokud existují, z *VSFeedbackVSRTCLogs* složky
+
+- Xamarin soubory protokolu, pokud existují, z *%LOCALAPPDATA%\Xamarin\Logs*
+
+- Soubory protokolu Nuget, pokud existují, z *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*
+
+- Ladicí program protokolu souborů webové, pokud existují:
+
+   - *%TEMP%\vscode-Chrome-Debug.txt*
+
+   - *%TEMP%\vscode-node-debug2.txt*
+
+   - *%TEMP%\vscode-Edge-Debug.txt*
+
+- Snímek obrazovky, pokud zvolíte možnost ji zahrnout
+
+- Záznam dat, pokud se rozhodnete zahrnout záznam, který zahrnuje:
+
+   - Postup reprodukování problému
+
+   - Trasovací soubor ETL
+
+   - Souboru s výpisem
+
+   > [!NOTE]
+   > Můžete odstranit žádný záznam dat, která jste si jej nepřejete odeslání před odesláním sestavy.
 
 ## <a name="see-also"></a>Viz také:
 

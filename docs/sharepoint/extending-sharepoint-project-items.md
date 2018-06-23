@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45127afaeeadd6046c9726c8c56de9a4acf2338a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 2be6c99f8601ae8dfaa819a3b70119a7b5921214
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765600"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326982"
 ---
 # <a name="extend-sharepoint-project-items"></a>Rozšíření položek projektu služby SharePoint
   Vytváření rozšíření položky projektu, pokud chcete přidat funkce typu položky projektu služby SharePoint, který už je nainstalovaný v sadě Visual Studio. Například můžete vytvořit rozšíření pro integrované **příjemce událostí** nebo **definice seznamu** položky projektu v sadě Visual Studio, nebo můžete vytvořit rozšíření pro vlastního typu položky projektu. Můžete také vytvořit rozšíření pro všechny typy položek projektu služby SharePoint.  
@@ -36,7 +36,7 @@ ms.locfileid: "34765600"
   
 -   Přidáte vlastní vlastnost pro položky projektu. Vlastnost se zobrazí v **vlastnosti** okno při výběru položky projektu v **Průzkumníku řešení**. Další informace najdete v tématu [postupy: Přidání vlastnosti do rozšíření položky projektu služby SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).  
   
- Návod, jak vytvořit, nasadit a testování rozšíření položky projektu najdete v tématu [návod: rozšiřování typu položky projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md).  
+ Návod, jak vytvořit, nasadit a testování rozšíření položky projektu najdete v tématu [návod: rozšíření typu položky projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md).  
   
 ## <a name="understand-the-relationship-between-project-item-extensions-and-project-item-instances"></a>Pochopení vztah mezi rozšíření položky projektu a instancí položky projektu
  Při vytváření rozšíření položky projektu sady Visual Studio načte rozšíření, když je položka projektu přidružené typu přidán do projektu služby SharePoint. Například pokud vytvoříte rozšíření pro **příjemce událostí** položky projektu sady Visual Studio načte rozšíření při přidání **příjemce událostí** položka projektu pro projekt. Visual Studio používá stejnou instanci rozšíření pro všechny instance typu položky přidružené projektu. V předchozím příkladu, pokud uživatel přidá druhý **příjemce událostí** položek projektu do projektu, stejnou instanci rozšíření slouží k přizpůsobení druhá položka projektu.  
@@ -68,9 +68,9 @@ ms.locfileid: "34765600"
 |Formuláře přidružení pracovního postupu|Microsoft.VisualStudio.SharePoint.WorkflowAssociation|  
   
 ## <a name="see-also"></a>Viz také:
- [Postupy: vytváření rozšíření položky projektu služby SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
+ [Postupy: vytváření rozšíření položky projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
  [Postupy: Přidání položky místní nabídky do rozšíření položky projektu SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
  [Postupy: Přidání vlastnosti do rozšíření položky projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
- [Návod: Rozšiřování typu položky projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)   
+ [Návod: Rozšíření typu položky projektu SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)   
  [Rozšíření systému projektu služby SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)  
   

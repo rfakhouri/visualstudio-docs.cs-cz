@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9fab7bbed25d3f308eef02b7f975e71af6fa8183
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7faa1e88a37416db85624863968e13b28de40bc6
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765002"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326124"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Vytváření stránek aplikací pro službu SharePoint
   *Stránky aplikace* představuje stránku ASP.NET Web, který je určen k použití na webu služby SharePoint. Stránky aplikací se speciálním typem stránku ASP.NET. Hlavní rozdíl mezi stránky aplikace a standardní stránky ASP.NET je, že stránky aplikace obsahuje obsah, který je sloučen s hlavní stránku služby SharePoint. Na hlavní stránce umožňuje stránky aplikace sdílet stejný vzhled a chování jako ostatní stránky v lokalitě.  
@@ -69,7 +69,7 @@ ms.locfileid: "34765002"
   
  Pokud chcete zobrazit stránku aplikace, je nutné ručně přejít do umístění souboru stránky aplikace (například: http://*název_serveru*adresáři /_layouts/*název_projektu*/ApplicationPage1.aspx).  
   
- Další informace o ladění projektů služby SharePoint, naleznete v části [řešení potíží s řešení služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
+ Další informace o ladění projektů služby SharePoint, naleznete v části [řešení řešení služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
 ## <a name="choose-a-master-page"></a>Vyberte stránku předlohy
  Ve výchozím nastavení **stránky aplikace** položku odkazuje na hlavní stránku webu, který používáte k ladění projektu. Že stránka s názvem v4.master a najdete ji v uvedených **Galerie stránky předlohy** webu služby SharePoint.  

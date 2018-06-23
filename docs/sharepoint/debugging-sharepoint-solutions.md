@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45990b9885d81192f6c1a7d12fb3027b6041fc6b
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 99d7f5e813e3ac33b327ed0c2962b150b6eed755
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234345"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327164"
 ---
 # <a name="debug-sharepoint-solutions"></a>Ladění řešení služby SharePoint
   Můžete ladění řešení služby SharePoint pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicí program. Při spuštění ladění, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na serveru SharePoint nasadí soubory projektu a pak otevře instanci web služby SharePoint ve webovém prohlížeči. Následující části popisují postup ladění aplikací služby SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -110,7 +110,7 @@ ms.locfileid: "36234345"
   
 9. Spouští příkazy přizpůsobitelné po nasazení.  
   
-10. Připojí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicího programu na [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] procesu (*w3wp.exe*). Pokud typ projektu můžete změnit *řešení v izolovaném prostoru* vlastnost a její hodnota je nastavena na **true**, pak připojí ladicí program k jiným procesem (*SPUCWorkerProcess.exe*). Další informace najdete v tématu [v izolovaném prostoru aspekty řešení](../sharepoint/sandboxed-solution-considerations.md).  
+10. Připojí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicího programu na [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] procesu (*w3wp.exe*). Pokud typ projektu můžete změnit *řešení v izolovaném prostoru* vlastnost a její hodnota je nastavena na **true**, pak připojí ladicí program k jiným procesem (*SPUCWorkerProcess.exe*). Další informace najdete v tématu [aspekty řešení v izolovaném prostoru](../sharepoint/sandboxed-solution-considerations.md).  
   
 11. Ladicí program JavaScript spustí, pokud řešení služby SharePoint je řešení farmy.  
   
@@ -123,7 +123,7 @@ ms.locfileid: "36234345"
   
  Když na projekt v režimu ladění, proces nasazení vytvoří složku v *funkce* adresář na *%COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES*. Funkce názvy mají formát *název projektu*_Feature*x*, jako je například TestProject_Feature1.  
   
- Obsahuje složky na řešení v adresáři funkce *definice funkce* souboru a *definice pracovního postupu* souboru. Soubor definice funkce (souboru funkce.XML) popisuje soubory v souboru projektu funkci projektu definice (*Elements.xml*) popisuje šablona projektu. *Elements.xml* lze nalézt v **Průzkumníku**, ale souboru funkce.XML se vygeneruje při vytvoření balíčku řešení. Další informace o těchto souborech najdete v tématu [projektu služby SharePoint a šablony položek projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+ Obsahuje složky na řešení v adresáři funkce *definice funkce* souboru a *definice pracovního postupu* souboru. Soubor definice funkce (souboru funkce.XML) popisuje soubory v souboru projektu funkci projektu definice (*Elements.xml*) popisuje šablona projektu. *Elements.xml* lze nalézt v **Průzkumníku**, ale souboru funkce.XML se vygeneruje při vytvoření balíčku řešení. Další informace o těchto souborech najdete v tématu [SharePoint projekt a projekt šablon položek](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
 ## <a name="debug-workflows"></a>Ladění pracovních postupů
  Když ladíte projekty workflow [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] přidá šablonu pracovního postupu (v závislosti na jeho typu) do knihovny nebo do seznamu. Pracovní postup šablony potom můžete spustit ručně nebo pomocí přidání nebo aktualizace položku. Pak můžete použít [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] k ladění pracovního postupu.  
@@ -152,5 +152,5 @@ ms.locfileid: "36234345"
  Další informace o jiných klíčů registru služby SharePoint, naleznete v části [ladění rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Viz také:
- [Řešení potíží s řešeními služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
+ [Řešení potíží s řešení služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
   

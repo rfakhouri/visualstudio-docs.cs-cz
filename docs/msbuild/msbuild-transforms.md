@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1a7ba3bff8265e6e707605f02e0bbaba85aff5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 49044f620b928a60417e48cf368ec0d8ae1dcc85
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571617"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325287"
 ---
 # <a name="msbuild-transforms"></a>Transformace nástroje MSBuild
 Transformace je 1: 1 převod jednu položku seznamu do jiného. Kromě povolení projektu převést položek seznamů, umožňuje transformace cíl k identifikaci přímého mapování mezi jeho vstupů a výstupů. Toto téma vysvětluje, transformace a jak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je používá k vytvoření projektů efektivněji.  
@@ -28,7 +28,7 @@ Transformace nejsou libovolný, ale mají omezenou speciální syntaxi, ve kter�
   
 V následujícím příkladu, seznam *RESX* soubory transformována do seznamu *.resources* soubory. Modifikátor transformace %(filename) určuje, aby se každý *.resources* soubor má stejný název jako odpovídající *RESX* souboru.  
   
-```  
+```xml  
 @(RESXFile->'%(filename).resources')  
 ```
 
@@ -41,7 +41,7 @@ Například, pokud jsou položky v seznamu položek @(RESXFile) *Form1.resx*, *F
 ## <a name="using-multiple-modifiers"></a>Použití více modifikátory  
  Výraz transformace může obsahovat více modifikátory, které mohou být kombinovány v libovolném pořadí a lze je opakovat. V následujícím příkladu se změnil název adresáře, který obsahuje soubory, ale soubory zachovat původní přípona názvu název a souboru.  
   
-```  
+```xml  
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   

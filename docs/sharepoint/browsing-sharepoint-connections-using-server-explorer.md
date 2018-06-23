@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8d19dc2cb621cc99b94524806d63eebba137668a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e897469eee33a1e4ee48b9096714b4213c099a8f
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765853"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325992"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Procházení připojení služby SharePoint pomocí Průzkumníka serveru
   Nyní je možné procházet místní připojení služby SharePoint v **Průzkumníka serveru**. Pomocí tohoto postupu lze procházet součástí webu služby SharePoint ve vašem systému. Součástí webu SharePoint, např. seznam definic a typy obsahu, se zobrazí v uzlu, který je pojmenován **připojení služby SharePoint** v zobrazení stromu **Průzkumníka serveru**. Chcete-li zobrazit **Průzkumníka serveru**, na řádku nabídek zvolte **zobrazení** > **Průzkumníka serveru**. Kromě zobrazení lokality součásti služby SharePoint, můžete odebrat položky, zobrazit jejich vlastnosti nebo aktualizujte zobrazení stromu pomocí příkazů v místní nabídce.  

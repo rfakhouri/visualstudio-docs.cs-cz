@@ -3,18 +3,18 @@ title: Vylepšete svoje dovednosti vědecké účely data dnes s výhodou DataCa
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/20108
+ms.date: 05/30/20108
 ms.topic: Get-Started-Article
 description: Další informace o předplatném školení DataCamp součástí vybrané odběry Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d5fe6a531cdf1e691297c52e2fe8780e2a954484
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c200ec8a1f92f26fa414718ccc69014593d3aba5
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282610"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326365"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Výhodou školení DataCamp odběry Visual Studio
 
@@ -27,11 +27,9 @@ Platnost vaší DataCamp výhody závisí na vaše předplatné sady Visual Stud
 1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Najděte dlaždici benefit DataCamp v kategorii "Professional vývoj" a klikněte na **aktivovat**.
-
     ![Výhody DataCamp dlaždice](_img\vs-datacamp\vs-datacamp-tile-2.png)
 
 3. Na stránce DataCamp můžete vytvořit nový účet.  Můžete k zadání e-mailovou adresu a heslo, nebo se přihlaste pomocí existující účty ze sítě Facebook, LinkedIn nebo Google.  Jakmile jste zadali přihlašovací údaje, klikněte na možnost **Začínáme**.
-
     ![DataCamp vytvořit nový účet](_img\vs-datacamp\vs-datacamp-create-account.png)
 
     > [!NOTE]
@@ -41,6 +39,7 @@ Platnost vaší DataCamp výhody závisí na vaše předplatné sady Visual Stud
     - Learning R pro vědecké zpracování dat
     - Spuštění Learning Python vědecké zpracování dat
     - Vývoj Skillset vaše Data vědecké účely
+
 
     Klepněte na vaše vybrané cesty, abyste mohli začít.
 
@@ -56,6 +55,7 @@ Platnost vaší DataCamp výhody závisí na vaše předplatné sady Visual Stud
     ![Sledování DataCamp kariérní](_img\vs-datacamp\vs-datacamp-all-tracks.png)
 
 7. Až se zaregistrujete ve vašem sledovat, otevře se první kurz v této sledovat.  Kurz vysvětlením, jak pracovat se během, dozvíte se, včetně navigační a dokončení kurzu cvičení.
+
 
     ![DataCamp Začínáme](_img\vs-datacamp\vs-datacamp-getting-started.png)
 
@@ -75,7 +75,8 @@ Můžete kdykoli zastavit a obnovit vaše školení v další relaci.  Právě n
 
 
 
-<sup>1</sup>*zahrnuje: Představte si není pro prodej (NFR), FTE, cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark,*
+<sup>1</sup>*zahrnuje: Představte si není pro prodej (NFR), FTE, cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark,* 
+
 
 
 Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných.

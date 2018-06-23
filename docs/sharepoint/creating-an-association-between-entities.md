@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b96a316e451528b886dd1eba0840a3212678e922
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 22ac00ac48f4fe907e4fb4215992b49227f39961
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766344"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325460"
 ---
 # <a name="create-an-association-between-entities"></a>Vytvoření přidružení mezi entitami
   Je možné definovat vztahy mezi entity v modelu Business Data Connectivity (BDC) tak, že vytvoříte přidružení. Visual Studio generuje metody, které poskytují informace o každé přidružení příjemci modelu. Tyto metody mohou být spotřebovávána webových částí služby SharePoint, seznamy nebo vlastních aplikací zobrazíte relace mezi daty v uživatelském rozhraní (UI).  

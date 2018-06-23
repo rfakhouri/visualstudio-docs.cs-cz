@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca01699b8dfef3b427579b839359953742a15758
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 497479ea7b49581e478534e2f8d83d0dd917a2da
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36304769"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326948"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Postup ladění pro začátečníky absolutní
 
@@ -25,9 +25,9 @@ Získejte velmi základní informace o tom, jak ladit pomocí ladicího programu
 
 První, může být užitečné k odpovědi na některé základní otázky, jako "Co je ladění?" a "Co je ladění režimu?"
 
-* *Ladění* je proces odebrání chyby z vašeho kódu. V kontextu ladicí nástroj jako v aplikaci Visual Studio.
+* *Ladění* je proces odebrání chyby z vašeho kódu.
 
-* *Režim ladění* znamená používající vaši aplikaci (provádění kódu) při ladicího programu sady Visual Studio je připojen k vaší aplikaci. S ladicím programem připojené, uvidíte, co kód dělá při spuštění. Například si můžete prohlédnout aplikace stavu (pohled na proměnné), najdete v části co funkce získávání, se nazývají a zkuste najít chyby. V dokumentaci režim ladění, obvykle stačí říkáme, když chceme, abyste zadali "Spuštění ladicího programu" nebo "Spuštění aplikace v ladicím programu".
+* *Režim ladění* znamená používající vaši aplikaci (provádění kódu) při ladicí program je připojen k vaší aplikaci. Pomocí ladicího programu připojit, uvidíte, co kód dělá při spuštění. Například si můžete prohlédnout aplikace stavu (pohled na proměnné), najdete v části co funkce získávání, se nazývají a zkuste najít chyby. V dokumentaci sady Visual Studio režim ladění, obvykle stačí říkáme, když chceme, abyste zadali "Spuštění ladicího programu" nebo "Spuštění aplikace v ladicím programu".
 
 ## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Vysvětlení problému tím, že požádá sami správné otázky
 

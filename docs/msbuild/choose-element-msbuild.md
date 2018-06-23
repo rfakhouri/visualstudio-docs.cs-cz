@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc467b859e3a02282c6d6165dc263931900c5bc2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5c3e321495a362aa7f4551be7ccc913493dc3a73
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569518"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326919"
 ---
 # <a name="choose-element-msbuild"></a>Choose – element (MSBuild)
 Vyhodnotí podřízené elementy a vyberte jednu sadu `ItemGroup` elementy nebo `PropertyGroup` elementy k vyhodnocení.  
@@ -42,7 +42,7 @@ Vyhodnotí podřízené elementy a vyberte jednu sadu `ItemGroup` elementy nebo 
 
 ## <a name="syntax"></a>Syntaxe  
 
-```  
+```xml  
 <Choose>  
     <When Condition="'StringA'=='StringB'">... </When>  
     <Otherwise>... </Otherwise>  
@@ -59,14 +59,14 @@ Vyhodnotí podřízené elementy a vyberte jednu sadu `ItemGroup` elementy nebo 
 
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[v opačném případě](../msbuild/otherwise-element-msbuild.md)|Volitelný element.<br /><br /> Určuje blok kódu `PropertyGroup` a `ItemGroup` elementy k vyhodnocení, jestli podmínky všech `When` elementy vyhodnocení `false`. Může být nula nebo jeden `Otherwise` elementů v `Choose` element a musí být posledním prvkem.|  
+|[V opačném případě](../msbuild/otherwise-element-msbuild.md)|Volitelný element.<br /><br /> Určuje blok kódu `PropertyGroup` a `ItemGroup` elementy k vyhodnocení, jestli podmínky všech `When` elementy vyhodnocení `false`. Může být nula nebo jeden `Otherwise` elementů v `Choose` element a musí být posledním prvkem.|  
 |[Kdy](../msbuild/when-element-msbuild.md)|Požadovaný element.<br /><br /> Určuje možné blok kódu pro `Choose` elementu, který chcete vybrat. Může být jeden nebo více `When` elementů v `Choose` elementu.|  
 
 ### <a name="parent-elements"></a>Nadřazené elementy  
 
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[v opačném případě](../msbuild/otherwise-element-msbuild.md)|Určuje blok kódu provést, pokud všechny podmínky `When` elementy vyhodnocení `false`.|  
+|[V opačném případě](../msbuild/otherwise-element-msbuild.md)|Určuje blok kódu provést, pokud všechny podmínky `When` elementy vyhodnocení `false`.|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
 |[Kdy](../msbuild/when-element-msbuild.md)|Určuje možné blok kódu pro `Choose` elementu, který chcete vybrat.|  
 

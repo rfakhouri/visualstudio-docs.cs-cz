@@ -9,12 +9,12 @@ description: Zjistěte, jak mohou správci předplatného přístup k portálu p
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 mearchscope: VS Subscription
-ms.openlocfilehash: a5399545108ad3731e9e415cf8b830df8b2b7bcb
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 33bcd59bde2cf56349e8100baea6f596362bc1f1
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281534"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326925"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Přístup k portálu a správu správců - odběrů získaných prostřednictvím webu Volume Licensing (VL)
 
@@ -47,6 +47,6 @@ Pokud vaše organizace je připravené k zařazený, nemá pro Visual Studio odb
 
 3.  Přístup k portálu pro správu nové předplatné. Po migraci vaší organizace, odešle e-mailů pro nově přidaného super správci a správci pozváním pro přístup k portálu nový a začít spravovat odběry.
 
-Pokud potřebujete přidat do nové Visual Studio odběry portálu pro správu a nejste si jisti, který je primární nebo oznámení kontaktu, můžete najít tyto informace po přihlášení k [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Podívejte se [najít vaše primárního kontaktu](find-primary-contact.md) tématu kroky, jak najít kontakt primární nebo oznámení v na webu VLSC.
+Pokud potřebujete přidat do nové Visual Studio odběry portálu pro správu a nejste si jisti, který je primární nebo oznámení kontaktu, můžete najít tyto informace po přihlášení k [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Podívejte se na [najít vaše primárního kontaktu](find-primary-contact.md) tématu kroky, jak najít kontakt primární nebo oznámení v na webu VLSC.
 
 Pokud jste již byla nastavili jako správce, pak můžete přejít přímo na odběry v sadě Visual Studio na portálu pro správu: [ https://manage.visualstudio.com ](https://manage.visualstudio.com).

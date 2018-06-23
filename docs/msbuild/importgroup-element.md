@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe1ef9e06c7e14ecb28fff9ceb48b2243a129e68
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3d0bd5663383638de8411c44169b22adefadc758
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569238"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325486"
 ---
-# <a name="importgroup-element"></a>ImportGroup – Element
+# <a name="importgroup-element"></a>ImportGroup – element
 Obsahuje kolekci `Import` prvky, které jsou seskupené v rámci nepovinnou podmínku. Další informace najdete v tématu [Import – Element (MSBuild)](../msbuild/import-element-msbuild.md).  
 
  \<Project>  
@@ -33,7 +33,7 @@ Obsahuje kolekci `Import` prvky, které jsou seskupené v rámci nepovinnou podm
 
 ## <a name="syntax"></a>Syntaxe  
 
-```  
+```xml  
 <ImportGroup Condition="'String A' == 'String B'">  
     <Import ... />  
     <Import ... />  

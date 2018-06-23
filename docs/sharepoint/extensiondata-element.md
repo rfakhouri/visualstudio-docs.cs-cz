@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e065c64445710e6ff0a99d3bcf8a27c71425879e
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 9cb80965385d7d258523dc0caf5291791c5ea09a
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765710"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326228"
 ---
 # <a name="extensiondata-element"></a>ExtensionData – element
   Představuje kolekci vlastních datových položek, které jsou přidružené položky projektu služby SharePoint.  
@@ -52,18 +52,18 @@ ms.locfileid: "34765710"
 |[ProjectItem –](../sharepoint/projectitem-element.md)|Představuje položky projektu služby SharePoint. Tento element požadovaný kořenový element z `.spdata` souboru.|  
   
 ## <a name="remarks"></a>Poznámky  
- Když přidružení vlastních dat k položky projektu služby SharePoint pomocí <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> vlastnost <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objektu, Visual Studio uloží data, která mají **ExtensionData –** element v `.spdata` soubor projektu položka. Další informace najdete v tématu [ukládání dat do rozšíření systému projektu služby SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ Když přidružení vlastních dat k položky projektu služby SharePoint pomocí <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> vlastnost <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objektu, Visual Studio uloží data, která mají **ExtensionData –** element v `.spdata` soubor projektu položka. Další informace najdete v tématu [uložení dat v rozšíření systému projektu služby SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 ## <a name="element-information"></a>Informace o elementu
   
 |||  
 |-|-|  
-|**obor názvů**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010 nebo SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010 nebo SharePointTools/SharePointProjectItemModel|  
 |**Název schématu**|Schéma položky projektu SharePoint|  
 |**Ověření souboru**|ProjectItemModelSchema.xsd|  
 |**Nesmí být prázdné**|Ne|  
   
 ## <a name="see-also"></a>Viz také:
- [Referenční dokumentace schématu položek projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [Referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

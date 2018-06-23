@@ -18,18 +18,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c9bc2dc1af5f2f040a15c5bee25a8d5dfc91afe2
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: a621bb8c0f14cfb2c1869b98bb8bdbdd9c2d30bb
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764766"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327267"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Vytváření opakovaně použitelných ovládacích prvků pro webové části nebo stránky aplikací
   V sadě Visual Studio můžete vytvořit vlastní, opakovaně použitelné ovládací prvky, které mohou být spotřebovávána stránky aplikací a webových částí, které používají ve službě SharePoint. Tyto ovládací prvky se označují jako uživatelské ovládací prvky. Uživatelský ovládací prvek je druh složeného ovládacího prvku, který funguje podobně jako webovou stránku ASP.NET – můžete přidat existující ovládací prvky webového serveru a kód do uživatelského ovládacího prvku a definovat vlastnosti a metody pro ovládací prvek. Pak je můžete vložit do ASP.NET – webové stránky, kde budou fungovat jako jednotku.  
   
 ## <a name="create-a-user-control"></a>Vytvoření uživatelského ovládacího prvku
- Vytvoření uživatelského ovládacího prvku, přidejte **uživatelský ovládací prvek** k **prázdný projektu služby SharePoint**. Další informace najdete v tématu [postupy: vytvoření uživatelského ovládacího prvku pro stránku služby SharePoint aplikace nebo webové části](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md).  
+ Vytvoření uživatelského ovládacího prvku, přidejte **uživatelský ovládací prvek** k **prázdný projektu služby SharePoint**. Další informace najdete v tématu [postupy: vytvoření uživatelského ovládacího prvku pro část stránky nebo webové aplikace SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md).  
   
  Když přidáte **uživatelský ovládací prvek** položky, Visual Studio vytvoří složku ve vašem projektu a potom přidá několik souborů do složky. Následující tabulka popisuje každý soubor.  
   
@@ -59,11 +59,11 @@ ms.locfileid: "34764766"
   
  Ve službě SharePoint otevřete stránku aplikace, která zahrnuje uživatelského ovládacího prvku. Pokud uživatelský ovládací prvek je zahrnutý ve webové části, přidáte webovou část na stránku webové části ve službě SharePoint.  
   
- Další informace o ladění projektů služby SharePoint, naleznete v části [řešení potíží s řešení služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
+ Další informace o ladění projektů služby SharePoint, naleznete v části [řešení řešení služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
 ## <a name="related-topics"></a>Související témata
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Postupy: Vytvoření uživatelského ovládacího prvku pro stránku aplikace nebo webovou část služby SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Ukazuje, jak vytvořit vlastní, opakovaně použitelné ovládací prvky, které mohou být spotřebovávána stránky aplikací a webových částí, které používají ve službě SharePoint.|  
+|[Postupy: vytvoření uživatelského ovládacího prvku pro aplikace stránku nebo webovou část služby SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Ukazuje, jak vytvořit vlastní, opakovaně použitelné ovládací prvky, které mohou být spotřebovávána stránky aplikací a webových částí, které používají ve službě SharePoint.|  
   

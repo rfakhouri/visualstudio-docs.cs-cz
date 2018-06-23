@@ -9,12 +9,12 @@ description: Zjistěte, jak získat a spravovat vaše kódy product key v sadě 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 28db2b93a7d3d9593f0a8d66c8c7b0795530c8a1
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 810c560fcbae03678379a446f359e0a22d8ff085
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281271"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326812"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Použití kódů product key v sadě Visual Studio předplatných
 
@@ -47,9 +47,8 @@ Naše research ukazuje většina Odběratelé, kteří jsou předmětem počet s
 
 ## <a name="locating-and-claiming-product-keys"></a>Vyhledání a deklaraci identity kódy product key
 Chcete-li zobrazit product key, musíte být přihlášeni k předplatnému Visual Studio. Jednotlivých kódů product key se nacházejí výběrem modrý **získat klíč** odkaz pro konkrétní produkt na [stáhne](https://my.visualstudio.com/downloads) stránky, jak je uvedeno níže.  Všechny klíče jsou také k dispozici v agregace na [kódy Product Key](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) stránky. Pokud pro jeden produkt existuje více klíčů, poznámky se zobrazí na sloupci poznámky ke stažení pro snazší identifikaci, který klíč by měl použít.
-
-   ![Získat klíč ze stránky stahování](_img/product-keys/download-get-key.png)
-
+    ![Získat klíč ze stránky stahování](_img/product-keys/download-get-key.png)
+    
 Některé produkty sady víc edicí produktu do jednoho stahování. V těchto případech určuje zadaný kód product key, které vydání produktu je nainstalováno.
 Některé klíče jsou poskytovány automaticky, jako je například "statická" klíčů, které můžete použít jako podle potřeby, protože aktivace se nevyžaduje. Jiných klíčů musí být požadována výběrem **získat klíč** odkaz pro produkt.
 

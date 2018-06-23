@@ -18,18 +18,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d0971dc9d445c7a492d934c0c2bdc9b47de92028
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 27b83cefdaa24e5a439352318aa149ec4e24d09d
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766061"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327239"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Navrhování modelu připojení obchodních dat
   Přidáním entity a metody pro soubor modelu můžete vyvinout model pro službu Business Data Connectivity (BDC). Entity popisuje kolekci datová pole. Například entita může představovat tabulky v databázi. Metoda provede úlohu například přidání, odstranění nebo aktualizace dat reprezentována entity. Další informace najdete v tématu [integrace obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
 ## <a name="add-entities"></a>Přidání entity
- Entitu můžete přidat přetažením nebo kopírování **Entity** ze sady Visual Studio **sada nástrojů** do BDC návrháře. Další informace najdete v tématu [postupy: Přidání Entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+ Entitu můžete přidat přetažením nebo kopírování **Entity** ze sady Visual Studio **sada nástrojů** do BDC návrháře. Další informace najdete v tématu [postupy: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
  Definování polí entity v třídě. Například může přidat pole s názvem `Address` k `Customer` třídy. Můžete buď přidejte novou třídu do projektu, nebo použijte existující třídy vytvořené pomocí jiných nástrojů, například Návrhář relací objektů (Návrhář relací objektů). Název entity a název třídy, která reprezentuje entitu nemusí odpovídat. Třída v entitě týkají metody definujete v modelu.  
   
@@ -81,7 +81,7 @@ ms.locfileid: "34766061"
  Chyby ověření může dojít, když je nějakým způsobem porušena pravidla modelu. Například pokud **IsCollection** typ popisovače je nastavena na **true**, ale neexistuje žádné popisovače podřízeného typu, zobrazí se chyba ověření. Možná budete muset zohlednit pravidla modelu služby BDC pochopit některé chyby, které se zobrazují v sadě Visual Studio **seznam chyb**. Další informace o pravidlech modelu služby BDC najdete v tématu [BDCMetadata schématu](http://go.microsoft.com/fwlink/?LinkID=169275).  
   
 ## <a name="debug-the-solution-that-contains-the-model"></a>Ladění řešení, která obsahuje model
- Můžete ladit kód, jako by ladění žádný kód v sadě Visual Studio. Ladění kódu, kdekoli nastavte zarážky v kódu a pak spusťte ladicího programu. Visual Studio otevře web služby SharePoint. Ve službě SharePoint vytvořte na seznam nebo webovou část, která používá obchodní data. Poté můžete procházet váš kód. Další informace o ladění projektů služby SharePoint, naleznete v části [řešení potíží s řešení služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
+ Můžete ladit kód, jako by ladění žádný kód v sadě Visual Studio. Ladění kódu, kdekoli nastavte zarážky v kódu a pak spusťte ladicího programu. Visual Studio otevře web služby SharePoint. Ve službě SharePoint vytvořte na seznam nebo webovou část, která používá obchodní data. Poté můžete procházet váš kód. Další informace o ladění projektů služby SharePoint, naleznete v části [řešení řešení služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
  Můžete také ladění kódu v vlastní sestavení, které přidáte do projektu. K ladění kódu v vlastního sestavení, ale musíte přidat sestavení do balíčku řešení. Další informace najdete v tématu [postupy: Přidání a odebrání dalších sestavení](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
@@ -109,7 +109,7 @@ ms.locfileid: "34766061"
  Můžou nastat situace, kam chcete Visual Studio úplně odvolání modelu ze služby SharePoint. Model, například mohou být poškozené.  Pokud chcete znovu zavést modelu do služby SharePoint, nastavte **přírůstkové aktualizace** vlastnost modelu, který má **False**, a pak spusťte ladicího programu. **Přírůstkové aktualizace** vlastnost se zobrazí v **vlastnosti** okno při výběru uzlu, který představuje model **Průzkumník modelu BDC**. Ve výchozím nastavení, název modelu je **BdcModel1**.  
   
 ### <a name="change-identifier-names-of-entities-in-the-model"></a>Změňte identifikátor názvy entit v modelu
- Pokud změníte název identifikátoru po nasazení modelu, může se zobrazit chyba nasazení. Tuto chybu nelze vyřešit nastavením **přírůstkové aktualizace** vlastnost modelu, který má **False**. Musíte ručně odvolat modelu a znovu nasaďte řešení. Další informace najdete v tématu [řešení potíží s řešení služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md). Tato chyba se můžete vyhnout nastavením **přírůstkové aktualizace** vlastnost **False** před nasazením původně modelu.  
+ Pokud změníte název identifikátoru po nasazení modelu, může se zobrazit chyba nasazení. Tuto chybu nelze vyřešit nastavením **přírůstkové aktualizace** vlastnost modelu, který má **False**. Musíte ručně odvolat modelu a znovu nasaďte řešení. Další informace najdete v tématu [řešení řešení služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md). Tato chyba se můžete vyhnout nastavením **přírůstkové aktualizace** vlastnost **False** před nasazením původně modelu.  
   
 ## <a name="locate-documentation-for-bdc-model-elements"></a>Vyhledejte dokumentace pro prvky modelu služby BDC
  Visual Studio přidá XML element modelu pro každou entitu, metoda nebo jinou položku, kterou vytvoříte. Atributy elementu se zobrazí jako vlastnosti **vlastnosti** okno. Informace o elementy a atributy, které sada Visual Studio generuje při návrhu modelu najdete v tématu [BDCMetadata schématu](http://go.microsoft.com/fwlink/?LinkID=169275).  
@@ -118,19 +118,19 @@ ms.locfileid: "34766061"
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Přehled nástrojů pro navrhování modelů služby BDC](../sharepoint/bdc-model-design-tools-overview.md)|Popisuje nástroje, které můžete použít pro vizuální návrh model pro Záložní.|  
+|[Přehled nástrojů pro navrhování modelu služby BDC](../sharepoint/bdc-model-design-tools-overview.md)|Popisuje nástroje, které můžete použít pro vizuální návrh model pro Záložní.|  
 |[Postupy: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)|Ukazuje, jak přidat externích typů obsahu nebo entity do modelu.|  
-|[Postupy: Přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům zobrazení seznamu entit v seznamu nebo webové části.|  
+|[Postupy: přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům zobrazení seznamu entit v seznamu nebo webové části.|  
 |[Postupy: Přidání specifické vyhledávací metody](../sharepoint/how-to-add-a-specific-finder-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům zobrazit podrobnosti o konkrétní entity.|  
-|[Postupy: Přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům přidat záznamy na zdroji dat přímo ze seznamu nebo webové části.|  
-|[Postupy: Přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům odebrat data ze zdroje dat pomocí možností v uživatelské rozhraní (UI) seznam nebo webové části.|  
+|[Postupy: přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům přidat záznamy na zdroji dat přímo ze seznamu nebo webové části.|  
+|[Postupy: přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům odebrat data ze zdroje dat pomocí možností v uživatelské rozhraní (UI) seznam nebo webové části.|  
 |[Postupy: Přidání aktualizační metody](../sharepoint/how-to-add-an-updater-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům měnit záznamy dat ve zdroji dat přímo ze seznamu nebo webové části.|  
-|[Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Ukazuje, jak používat okno podrobností metoda v sadě Visual Studio k přidání parametrů vstupní a zpět na metodu.|  
-|[Postupy: Definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Ukazuje, jak definovat parametr datové typy v modelu.|  
-|[Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)|Ukazuje, jak vytvořit instanci metodu, která provede BDC.|  
+|[Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Ukazuje, jak používat okno podrobností metoda v sadě Visual Studio k přidání parametrů vstupní a zpět na metodu.|  
+|[Postupy: definování deskriptoru typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Ukazuje, jak definovat parametr datové typy v modelu.|  
+|[Postupy: definování instance metody](../sharepoint/how-to-define-a-method-instance.md)|Ukazuje, jak vytvořit instanci metodu, která provede BDC.|  
 |[Postupy: Přidání deskriptoru filtru do vyhledávací metody](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Ukazuje, jak povolit uživatelům omezení počtu instancí vrácených funkcí vyhledávací metody.|  
 |[Vytváření přidružení mezi entitami](../sharepoint/creating-an-association-between-entities.md)|Popisuje, jak je možné definovat vztahy mezi entit v modelu. Obchodní Data webové části, externí uvádí a vlastních aplikací můžete zobrazit tyto relace mezi daty v uživatelském rozhraní (UI).|  
 |[Postupy: vytvoření přidružení mezi entitami](../sharepoint/how-to-create-an-association-between-entities.md)|Ukazuje, jak definovat vztahy mezi entit v modelu.|  
-|[Návod: Vytvoření externího seznamu ve službě SharePoint s použitím obchodních dat](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Poskytuje podrobné pokyny, které ukazují, jak vytvořit a otestovat model, který se zobrazí v seznamu SharePoint externí kontakty.|  
+|[Návod: Createan externího seznamu ve službě SharePoint s použitím obchodních dat](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Poskytuje podrobné pokyny, které ukazují, jak vytvořit a otestovat model, který se zobrazí v seznamu SharePoint externí kontakty.|  
 |[Integrace obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Poskytuje přehled o vytváření a navrhování modelů služby BDC.|  
   

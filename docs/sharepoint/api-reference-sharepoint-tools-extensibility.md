@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1367a8850110fc720a9adfdd733a7c8cdf0aeb14
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 39b324d2eda0544482c1f2f5ca9f54941ea8d8d4
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692067"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325791"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Referenční dokumentace rozhraní API (rozšíření nástrojů služby SharePoint)
   Tato část obsahuje referenční dokumentace rozhraní API pro rozšíření nástrojů SharePoint v sadě Visual Studio.  
@@ -61,7 +61,7 @@ ms.locfileid: "34692067"
   
 ## <a name="see-also"></a>Viz také:
  [Referenční dokumentace &#40;rozšíření nástrojů SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
- [Přehled modelu programování SharePoint rozšíření nástrojů](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
+ [Přehled modelu programování služby SharePoint rozšíření nástrojů](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [Rozšíření systému projektu služby SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Rozšíření balení a nasazení SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   

@@ -9,12 +9,12 @@ description: Získejte maximum z vašich předplatných Visual Studio
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548720"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326995"
 ---
 # <a name="managing-subscriptions"></a>Správa předplatných
 
@@ -102,8 +102,8 @@ Kontaktní údaje a předvolby můžete snadno změnit ve vašem profilu.
 3.  Na **o** kartě, můžete změnit název, e-mailu, země nebo oblast, obrázků a obraťte se na předvolby profil.  Na **Předvolby** kartě můžete vybrat upřednostňovaný jazyk, datum a čas vzory, časové pásmo a uživatelské rozhraní motivu.  
 4.  Po dokončení změny, klikněte na tlačítko **Uložit**. 
 5.  Klikněte na tlačítko prohlížeče **zpět** tlačítko se vraťte na stránku výhody. 
+    ![Informace o úpravy profilu](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
-![Informace o úpravy profilu](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Propojování Moje předplatné do existující služby VSTS nebo předplatných Azure
 Pokud se přihlaste se k předplatnému pomocí osobního účtu Microsoft (MSA) a mít odběr, který zahrnuje Visual Studio Team Services nebo Microsoft Azure pomocí pracovního nebo školního účtu spravuje Azure, můžete propojit obě předplatná. To se nazývá "Alternativní účet" a umožňuje používat váš účet pro přihlášení ke svému předplatnému přitom má přístup ke stávajícím prostředkům Azure, služby VSTS nebo IDE, které jsou spojeny s vaší školní nebo pracovní účty. 
@@ -111,12 +111,11 @@ Pokud se přihlaste se k předplatnému pomocí osobního účtu Microsoft (MSA)
 I když oba účty použijte stejnou e-mailovou adresu, musíte přidat pracovní nebo školní účet jako náhradní používat své výhody v oba účty. 
 
 Přidání alternativního účtu:
-1. Přihlaste se k [portál odběratele](https://my.visualstudio.com) pomocí účtu Microsoft (MSA).
+1. Přihlaste se k [portál odběratele](https://my.visualstudio.com?wt.mc_id=o~msft~docs) pomocí účtu Microsoft (MSA).
 2. Klikněte na **odběry** kartě.
 3. V části **související odkazy**, zvolte **přidání alternativního účtu**.
 4. Zadejte svoji adresu emaiil pracovní nebo školní účet a klikněte na **přidat**. 
-
-![Alternativní účet](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    ![Alternativní účet](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Po přidání alternativního účtu, můžete aktualizovat nebo odebrat kdykoli klepnutím **odběry** kartě a vyberete příslušnou možnost v **související odkazy** části.  
 

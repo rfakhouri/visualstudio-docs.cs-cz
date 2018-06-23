@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0532025fdb090c3811f09cb823745bd50e8d91c5
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ecdbde69735f548b7ab70da132e9e2cc2080bbcb
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765525"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326047"
 ---
 # <a name="create-pages-for-sharepoint"></a>Vytváření stránek pro službu SharePoint
   Můžete vytvořit stránky aplikací, weby, hlavní stránky a stránky rozložení pro web služby SharePoint.  
@@ -59,7 +59,7 @@ ms.locfileid: "34765525"
 ## <a name="create-cascading-style-sheets-ecmascript-and-themes"></a>Vytvoření šablony stylů CSS, ECMAScript a motivů
  Visual Studio neposkytuje šablony pro vývoj stylů CSS (Cascading Style), ECMAScript (JavaScript, JScript) nebo soubory motivu pro weby služby SharePoint. Tyto soubory můžete vytvořit pomocí pokyny, které jsou k dispozici v sadě SDK SharePoint nebo pomocí nástrojů, jako je například návrháře služby SharePoint.  
   
- Tyto soubory můžete přidat do řešení přímo nebo je můžete importovat. V obou případech musíte vytvořit odpovídající mapované složky pro každou položku, která přidáte. Další informace o tom, jak vytvořit mapované složky najdete v tématu [postupy: Přidání a odebrání mapované složky](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
+ Tyto soubory můžete přidat do řešení přímo nebo je můžete importovat. V obou případech musíte vytvořit odpovídající mapované složky pro každou položku, která přidáte. Další informace o tom, jak vytvořit mapované složky najdete v tématu [postupy: Přidání a odebrání mapovaných složek](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   
  Další informace o vytváření šablony stylů CSS najdete v tématu [Cascading Style listy třída využití v SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkID=182098). Další informace o vytváření a používání jazyka JavaScript JScript soubory pro řešení služby SharePoint, naleznete v části [nastavení nahoru základní stránky ASPX pro ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099). Další informace o motivů najdete v tématu [stavebním blokem: stránek a uživatelské rozhraní](http://go.microsoft.com/fwlink/?LinkID=182095).  
   
@@ -68,6 +68,6 @@ ms.locfileid: "34765525"
 |Název|Popis|  
 |-----------|-----------------|  
 |[Vytváření stránek aplikací pro službu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Popisuje postup přidání stránky aplikací: *.aspx* obsah, který je sloučen s hlavní stránku služby SharePoint.|  
-|[Postupy: Vytvoření stránky aplikace](../sharepoint/how-to-create-an-application-page.md)|Ukazuje, jak vytvořit stránek ASP.NET, které běží na webu služby SharePoint.|  
+|[Postupy: vytvoření stránky aplikace](../sharepoint/how-to-create-an-application-page.md)|Ukazuje, jak vytvořit stránek ASP.NET, které běží na webu služby SharePoint.|  
 |[Návod: Vytvoření stránky aplikace služby SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Ukazuje, jak navrhnout a ladit webové stránky ASP.NET pro web služby SharePoint.|  
   

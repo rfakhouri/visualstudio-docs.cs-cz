@@ -9,12 +9,12 @@ description: Zjistěte, jak nechat program Visual Studio Dev Essentials
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 383216b898e9eef62fbe825454cda4ed6c11ea2c
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 1e826c4daebbd3ea63645b48b392a19304e2b571
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335863"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326771"
 ---
 # <a name="how-do-i-leave-the-visual-studio-dev-essentials-program"></a>Jak nechat program Visual Studio Dev Essentials? 
 
@@ -26,7 +26,7 @@ Pokud chcete nechat program Visual Studio Dev Essentials, postupujte podle těch
 4. Na řádek přidružený k Essentials vývojáře Visual Studio, klikněte na tlačítko **ponechejte program** ve sloupci odkazy na úplně vpravo.
 5. Automaticky otevírané okno se zobrazí. Vyberte **potvrďte**. 
 
-> [!NOTE]  
-> Vracející se zpět do programu Visual Studio Dev Essentials je snadné.  Jednoduše postupujte podle kroků 1-5 a klikněte na tlačítko **připojení Visual Studio Dev Essentials** tlačítka v horní části sloupce odkazy. Pak klikněte na tlačítko **potvrdit**.  
+    > [!NOTE]  
+    > Vracející se zpět do programu Visual Studio Dev Essentials je snadné.  Jednoduše postupujte podle kroků 1-5 a klikněte na tlačítko **připojení Visual Studio Dev Essentials** tlačítka v horní části sloupce odkazy. Pak klikněte na tlačítko **potvrdit**.  
 
 

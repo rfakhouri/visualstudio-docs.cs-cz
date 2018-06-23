@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c80d6f3e76d20e4b5a15af162ea4581b03999e61
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b8d76c6f7d28b990d133780c25577cab4e8c3cad
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765187"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326031"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Vytvoření modelu připojení obchodních dat
   Můžete vytvořit model Business Data Connectivity (BDC) nebo si přizpůsobit existujícího modelu služby BDC pomocí sady Visual Studio. Každý projekt SharePoint může obsahovat jenom jeden model. Další informace najdete v tématu [integrace obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -45,7 +45,7 @@ ms.locfileid: "34765187"
 |Soubor definice modelu|Obsahuje kód XML, který definuje entity, metod, systémové objekty obchodnímu systému (LOB) a další metadata, která popisuje model.<br /><br /> Změna metadat v tomto souboru pomocí návrháře BDC **Průzkumník modelu BDC**, **podrobnosti o metodě BDC** okně a **vlastnosti** okno.|  
 |Entity souboru kódu služby|Obsahuje metody, které získat, aktualizovat a odstranit instance entity výchozí.|  
   
- K definování vlastností entity, upravte soubor kód entity. Další informace najdete v tématu [postupy: Přidání Entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+ K definování vlastností entity, upravte soubor kód entity. Další informace najdete v tématu [postupy: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
  Získat, aktualizovat a odstraňovat instance entity, přidáte kód do souboru kódu služby entity. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
@@ -69,9 +69,9 @@ ms.locfileid: "34765187"
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Postupy: Vytvoření modelu služby BDC](../sharepoint/how-to-create-a-bdc-model.md)|Ukazuje, jak vytvořit nový model BDC.|  
+|[Postupy: vytvoření modelu služby BDC](../sharepoint/how-to-create-a-bdc-model.md)|Ukazuje, jak vytvořit nový model BDC.|  
 |[Postupy: Přidání stávajícího souboru modelu služby BDC do projektu služby SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Ukazuje, jak importovat existující model do projektu služby SharePoint.|  
-|[Postupy: Určení lokalizovaných názvů, vlastností a oprávnění pomocí zdrojového souboru](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Popisuje, jak poskytnout řetězce, které jsou slučovány metadat modelu, pokud model je spotřebovávají webové části nebo webové stránky.|  
-|[Postupy: Zahrnutí vlastního sestavení ve funkci BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Ukazuje, jak k zahrnutí vlastního sestavení ve funkci.|  
+|[Postupy: určení lokalizovaných názvů, vlastností a oprávnění pomocí zdrojového souboru](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Popisuje, jak poskytnout řetězce, které jsou slučovány metadat modelu, pokud model je spotřebovávají webové části nebo webové stránky.|  
+|[Postupy: zahrnutí vlastního sestavení ve funkci BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Ukazuje, jak k zahrnutí vlastního sestavení ve funkci.|  
   
  

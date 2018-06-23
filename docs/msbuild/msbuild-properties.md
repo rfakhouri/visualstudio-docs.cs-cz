@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19a45f4388fe02e7192da91a246b3dd05657f0ca
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 972deba96540d835ced02baa3abf33cb1972519f
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573957"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326251"
 ---
 # <a name="msbuild-properties"></a>Vlastnosti nástroje MSBuild
 Vlastnosti jsou páry název-hodnota, které lze použít ke konfiguraci sestavení. Vlastnosti jsou užitečné pro předávání hodnot úkolům, vyhodnocování podmínek a ukládání hodnot, na které bude odkazováno v celém souboru projektu.  
@@ -63,13 +63,13 @@ Vlastnosti jsou páry název-hodnota, které lze použít ke konfiguraci sestave
 ## <a name="registry-properties"></a>Vlastnosti registru  
  Je možné číst hodnoty systémového registru pomocí následující syntaxe, kde `Hive` je podregistr registru (například HKEY_LOCAL_MACHINE), `Key` je název klíče, `SubKey` je název podklíče a `Value` je hodnota v podklíči.  
   
-```  
+```xml  
 $(registry:Hive\MyKey\MySubKey@Value)  
 ```  
   
  Chcete-li získat výchozí hodnotu podklíče, je třeba vynechat `Value`.  
   
-```  
+```xml  
 $(registry:Hive\MyKey\MySubKey)  
 ```  
   
@@ -88,7 +88,7 @@ $(registry:Hive\MyKey\MySubKey)
   
  Následující příklad nastavuje globální vlastnost `Configuration` na `DEBUG`.  
   
-```  
+```cmd  
 msbuild.exe MyProj.proj /p:Configuration=DEBUG  
 ```  
   

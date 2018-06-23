@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c4585ace17669205345554477cafefb7965dd15
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 85d4dc4ab6b18cf7e9aa1f26167234572362231b
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691352"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326018"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Další informace o chybách služby SharePoint
   Můžete najít pomoc při řešení potíží [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů SharePoint chyby a upozornění při řešení potíží témata a veřejné fóra Microsoft Developer Network (MSDN).  
@@ -34,11 +34,11 @@ ms.locfileid: "34691352"
 ## <a name="troubleshoot-errors-and-issues"></a>Řešení chyb a problémů
  O pomoc s některé běžné chyby a další problémy v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, naleznete v následujících tématech:  
   
--   [Řešení potíží s řešeními služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
+-   [Řešení potíží s řešení služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
   
 -   [Ladění řešení služby SharePoint](../sharepoint/debugging-sharepoint-solutions.md)  
   
--   [Řešení potíží s balením a nasazením služby SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
+-   [Řešení potíží s balení a nasazení SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
 ## <a name="other-resources"></a>Další zdroje
  Následující tabulka uvádí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, fóra a další zdroje, které jsou k dispozici na webu MSDN.  
@@ -52,6 +52,6 @@ ms.locfileid: "34691352"
  Pokud stále nemůžete najít odpovědi, které potřebujete, můžete přístup k možnosti online podpory společnosti Microsoft, například kontaktování podpory společnosti Microsoft nebo hledání článků Knowledge Base. Další informace najdete v tématu [Microsoft Help and Support](http://go.microsoft.com/fwlink/?LinkID=155371) stránky.  
   
 ## <a name="see-also"></a>Viz také:
- [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+ [Vytváření a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
  

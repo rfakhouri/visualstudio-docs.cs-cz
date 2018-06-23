@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82eaa5deca395af985017d0db0a98c11b2be9592
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bea91ca50cca71f91499ff306036a7e4812a5807
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691601"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326060"
 ---
 # <a name="create-sharepoint-solutions"></a>Vytvoření řešení služby SharePoint
   Jako alternativu k jejich vytváření v aplikaci SharePoint Designer můžete vytvořit aplikací služby SharePoint v sadě Visual Studio. Visual Studio podporuje tím, že poskytuje funkce, jako Rozšířené ladicí nástroje, IntelliSense, dokončování a šablony projektů rychlý vývoj pro SharePoint. Visual Studio také využívá pokročilé nástroje založené na rozhraní .NET Framework a jazyky. Projekty SharePoint můžete vyvíjet pomocí jazyka Visual Basic a Visual C# a vyvíjíte aplikace pro projekty SharePoint pomocí jazyka JavaScript.  
@@ -34,8 +34,8 @@ ms.locfileid: "34691601"
   
 |||  
 |-|-|  
-|![Dokumentace](../sharepoint/media/vs-icon-documentation.gif "dokumentace")|**Dokumentace**<br /><br /> -   [Začínáme &#40;vývoj pro SharePoint v sadě Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)<br />-   [Lokalizace řešení služby SharePoint](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [Balení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [Rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
-|![Dokumentace](../sharepoint/media/vs-icon-documentation.gif "dokumentace")|**Vybrané úlohy**<br /><br /> -   [Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [Postupy: vytvoření přijímače událostí](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [Postupy: vytvoření modelu služby BDC](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [Postupy: vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [Postupy: vytvoření uživatelského ovládacího prvku pro stránku služby SharePoint aplikace nebo webovou část](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
+|![Dokumentace](../sharepoint/media/vs-icon-documentation.gif "dokumentace")|**Dokumentace**<br /><br /> -   [Začínáme &#40;vývoj pro SharePoint v sadě Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [Vývoj řešení služby sharePoint](../sharepoint/developing-sharepoint-solutions.md)<br />-   [Lokalizace řešení služby SharePoint](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [Vytváření a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [Řešení pro balíček a nasazení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [Rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
+|![Dokumentace](../sharepoint/media/vs-icon-documentation.gif "dokumentace")|**Vybrané úlohy**<br /><br /> -   [Návod: Vytvoření sloupce webu, typu obsahu a tist pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [Postupy: vytvoření přijímače událostí](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [Postupy: vytvoření modelu služby BDC](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [Postupy: vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [Postupy: vytvoření uživatelského ovládacího prvku pro aplikace stránku nebo webovou část služby SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
 |![Návody](../sharepoint/media/vs-icon-walkthroughs.gif "návody")|**Návody**<br /><br /> -   [Návody na vývoj pro SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|  
 |![Ukázky kódu](../sharepoint/media/vs-icon-codesamples.gif "ukázky kódu")|**Ukázky kódu**<br /><br /> -   [Ukázky vývoje pro SharePoint](../sharepoint/sharepoint-development-samples.md)<br />-   [Software pro vývojáře služby SharePoint](http://msdn.microsoft.com/sharepoint/aa905690.aspx)|  
 |![Cvičení](../sharepoint/media/vs-icon-training.gif "školení")|**Školení**<br /><br /> -   [Další vývoj pro SharePoint](http://msdn.microsoft.com/sharepoint/aa905692.aspx)|  

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec6f0ef523733a0737b6d762d2835073ed1f3c06
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 56bc4dbd50bedc15fcf6c69cbc334fe09c6094cc
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766386"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325596"
 ---
 # <a name="create-sharepoint-features"></a>Vytváření funkcí služby SharePoint
   Funkce služby SharePoint můžete použít k seskupení souvisejících položek projektu služby SharePoint pro snazší nasazení. Můžete vytvořit funkce, nastavení rozsahů a označit další funkce, jako závislosti pomocí návrháře funkce služby SharePoint. Návrhář vytvoří také manifestu, který je soubor XML, který popisuje každou funkci.  
@@ -37,7 +37,7 @@ ms.locfileid: "34766386"
  Řešení služby SharePoint může obsahovat jednu nebo několik funkcí služby SharePoint, které jsou seskupené v rámci uzlu funkce v Průzkumníku řešení. Jednotlivé funkce má svou vlastní **funkce Návrhář** , můžete upravit vlastnosti funkcí. Další informace najdete v tématu [postupy: přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md). K rozlišení funkce jeden z druhého, můžete konfigurovat vlastnosti funkce jako je například název, popis, verze a obor.  
   
 ### <a name="feature-designer-options"></a>Možnosti funkcí, které návrháře
- Po vytvoření funkci, můžete přizpůsobit funkce návrháře.  
+ Po vytvoření funkce, můžete přizpůsobit funkce návrháře.  
   
  Následující tabulka popisuje vlastnosti funkcí, které se zobrazují v Návrháři funkce.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "34766386"
 |--------------|-----------------|  
 |Název|Volitelné. Výchozí název funkce je nastaven na *název řešení SolutionName* *FeatureName*.|  
 |Popis|Volitelné. Popis funkce služby SharePoint.|  
-|Rozsah|Požadováno. Pokud funkce je vytvořená pomocí **Průzkumníku řešení**, na Web ve výchozím nastavení oboru.<br /><br /> -Farmy: Aktivace funkce pro farmu služby celý server.<br /><br /> -Site: Aktivace funkce pro všechny weby v kolekci webů.<br /><br /> -Webové: Aktivace funkce pro konkrétní web.<br /><br /> -WebApplication: Aktivujte funkci pro všechny webové servery ve webové aplikaci.|  
+|Rozsah|Požadováno. Pokud funkce je vytvořená pomocí **Průzkumníku řešení**, na Web ve výchozím nastavení oboru.<br /><br /> -Farmy: Aktivace funkce pro farmu služby celý server.<br /><br /> -Site: Aktivujte funkci pro všechny weby v kolekci webů.<br /><br /> -Webové: Aktivace funkce pro konkrétní web.<br /><br /> -WebApplication: Aktivujte funkci pro všechny webové servery ve webové aplikaci.|  
 |Položky v řešení|Všechny položky služby SharePoint, které mohou být přidány do funkce.|  
 |Položky ve funkci|Položky projektu služby SharePoint, které jsou přidané do funkce.|  
   

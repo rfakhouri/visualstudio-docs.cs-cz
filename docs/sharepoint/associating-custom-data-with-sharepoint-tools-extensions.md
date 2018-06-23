@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 051285d1a2b3fc1c32a813fbfd8aa778befa0545
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b72e058a2ef025b0118dac8fd419e75d1ad53349
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764872"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327226"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Přidružení vlastních dat k rozšíření nástrojů SharePoint
   Přidáním vlastních dat k určitým objektům v rozšíření nástrojů služby SharePoint. To je užitečné, když se data v jedné části rozšíření, kterou chcete později přístup z jiných kódu ve vašem rozšíření. Místo implementace vlastní způsob, jak ukládat a přistupovat k datům, můžete přidružit objekt data ve vašem rozšíření a následně načíst data ze stejného objektu později.  

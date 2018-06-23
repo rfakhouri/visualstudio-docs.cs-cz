@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a01fb5d47f390c311f119e669e7fdb75619b058
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b9d73e1748be34dda6913937ce71858b1c3648ea
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572592"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326726"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Zápis protokolovacích nástrojů pro více procesorů
 Schopnost [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] chcete využít výhod více procesorů, může snížit čas sestavení projektu, ale také přidá složitost tak, aby sestavení protokolování událostí. V prostředí s jedním procesorem událostí, zprávy, upozornění a chyby přicházejí na protokolovacího nástroje předvídatelný, sekvenční způsobem. V prostředí s více procesory, můžete však události z různých zdrojů dorazí, ve stejnou dobu nebo mimo pořadí. Zajistit pro to, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje více-procesorů podporující protokolovacího nástroje a nový model protokolování a umožňuje vám vytvořit vlastní "předávání protokolovacích nástrojů."  
@@ -75,7 +75,7 @@ public interface INodeLogger: ILogger
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Pomocí ConfigurableForwardingLogger pro jednoduché distribuované protokolování  
  Připojit ConfigurableForwardingLogger nebo vlastní předávání protokoly, použijte `/distributedlogger` přepínače (`/dl` pro zkrácení) v sestavení příkazového řádku MSBuild.exe. Formát pro zadání názvy typů protokolovacího nástroje a třídy je stejný jako pro `/logger` přepnout, s tím rozdílem, že distribuované protokolovacího nástroje má vždy dvě třídy protokolování místo jeden protokolovacího nástroje předávání a centrální protokolovacího nástroje. Následuje příklad toho, jak připojit vlastní předávání protokolovač, s názvem XMLForwardingLogger.  
   
-```  
+```cmd  
 msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral  
 ```  
   
@@ -86,7 +86,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
   
  Například pokud chcete být upozorněni jenom v případě, že je sestavení spustí a končí, a pokud dojde k chybě, předat `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT`, a `ERROREVENT` jako parametry. Několik parametrů lze předat jejich oddělením středníkem. Následuje příklad použití ConfigurableForwardingLogger předávat jenom `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT`, a `ERROREVENT` události.  
   
-```  
+```cmd  
 msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*ConfigureableForwardingLogger,C:\My.dll;BUILDSTARTEDEVENT; BUILDFINISHEDEVENT;ERROREVENT  
 ```  
   

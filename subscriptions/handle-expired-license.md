@@ -9,18 +9,17 @@ description: Zjistěte, jak správci zpracovávat neplatné odběry Visual Studi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8fa500e5909a855884975653417c3e61976f9f01
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 15d2b89d8a43f58302944d64dd9955a40c5c125e
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335616"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325122"
 ---
 # <a name="handling-expired-subscriptions"></a>Zpracování vypršela platnost předplatného
 
 Pokud vypršela platnost předplatného uživatele, je dána na portálu red panelu vedle jména v seznamu odběratelů. Pro tyto odběratele, kteří mají-li pokračovat v používání jejich výhody Visual Studio předplatné musíte obnovit své licence. 
-
-![Seznam vypršela platnost předplatného](_img\expired-subscriptions\expired-list.png) 
+    ![Seznam vypršela platnost předplatného](_img\expired-subscriptions\expired-list.png)
 
 **Obnovit předplatné**
 1.  Obraťte se na svého prodejce multilicenční smlouvou nebo váš prodejce Microsoft. 

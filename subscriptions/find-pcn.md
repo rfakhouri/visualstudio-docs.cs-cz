@@ -9,12 +9,12 @@ description: Zjistěte, jak najít číslo kontrolního (veřejná čísla výro
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 224cb02d2ffdeceb4c2288175968324badd0911c
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 137da647293907b7ca57a296f558121b30c50b1f
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30863294"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325424"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Jak najít Můj "veřejné zákaznické" kontrolního číslo nebo autorizační číslo?
 
@@ -24,16 +24,13 @@ K dokončení registrace vaší organizace na portálu pro správu předplatnéh
 
 1.  Přihlaste se k Volume Licensing Service Center v: [ https://www.Microsoft.com/licensing/servicecenter ](https://www.Microsoft.com/licensing/servicecenter).
 
-    ![Přihlaste se k webu VLSC](_img/vlsc/vlsc-login.png)
-
 2. Na kartě předplatných vyberte **Visual Studio odběry**.
-
     ![Vyberte předplatná v VLSC](_img/vlsc/vlsc-subscriptions.png)
 
 3. Kontrolního čísla výrobku nebo veřejné zákaznické číslo umístění je polovině vzdálenosti dolní části stránky.
-    
     ![Vyhledejte kontrolního čísla výrobku v VLSC](_img/vlsc/vlsc-pcn.png)
 
+    
 Pokud nejsou výše stránka zobrazuje a přesměrováni na přihlašovací stránce sadě Visual Studio, zkopírujte a vložte následující odkaz do prohlížeče: https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.
 
 ## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>Pokud budu potřebovat více než jeden kontrolního čísla výrobku, která mám použít?

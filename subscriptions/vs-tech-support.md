@@ -9,12 +9,12 @@ description: Zjistěte, jak aktivovat výhody se na technickou podporu součást
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1f80e5d95d5480dd2a1d63a04bdd601145a7961b
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 5769acd07d41acc5f43773e88fdda6aec301f09b
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302960"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326940"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivovat výhody technické podpory v sadě Visual Studio předplatných
 
@@ -25,13 +25,19 @@ Vyřešte problémy s opravu v testovacím prostředí. (Benefit musí být akti
 
    ![Dlaždice Benefit se na technickou podporu](_img\vs-tech-support\vs-tech-support-tile.png)
 
-1.  Chcete-li začít používat vaše benefit se na technickou podporu, klikněte na **aktivovat** na dlaždici se na technickou podporu.
-2.  Tím zahájíte relaci konverzace s zástupce, který můžete vytvořit vaše ID smlouvy a ID přístupu a poskytují těch, které pro vás.
+
+1.  Chcete-li začít používat vaše benefit se na technickou podporu, klikněte na **Chat aktivovat** na dlaždici se na technickou podporu. 
+2.  Tím zahájíte relaci konverzace s zástupce, který můžete vytvořit vaše ID smlouvy a ID přístupu a poskytují těch, které pro vás. 
 3.  Dokončete proces, je potřeba zadat zástupce s:
     - E-mailovou adresu, kterou používáte k přihlášení k předplatnému
     - ID předplatného, které lze najít na [odběry](https://my.visualstudio.com/subscriptions) kartě.
 
     ![Technickou podporu Benefit najít ID předplatného](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
+
+
+    > [!NOTE]
+    > Aktivujte účet podpory v jiných jazycích než angličtině, vyberte ve vaší zemi z [tento seznam](https://support.microsoft.com/help/14084/activate-support-contract).   
+
 
 ## <a name="how-to-submit-an-incident"></a>Postup odeslání incidentu
 

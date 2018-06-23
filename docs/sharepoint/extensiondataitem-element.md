@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb88c8adc3f32e428543e2bf1e0e80e9538678a2
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: a460f31679ef01fab9dbfb181905475a2cadede5
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766504"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325718"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem – element
   Vlastní datová položka, která je přidružená k položce projektu služby SharePoint, ve formátu klíč/hodnota. Klíč i hodnota musí být řetězce.  
@@ -52,18 +52,18 @@ ms.locfileid: "34766504"
 |[ExtensionData –](../sharepoint/extensiondata-element.md)|Představuje kolekci vlastních datových položek, které jsou přidružené položky projektu služby SharePoint.|  
   
 ## <a name="remarks"></a>Poznámky  
- Při přidružení vlastních dat k položky projektu služby SharePoint pomocí <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> vlastnost <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objektu, Visual Studio uloží data do nové **ExtensionDataItem –** element v `.spdata` souboru Položka projektu. Další informace najdete v tématu [ukládání dat do rozšíření systému projektu služby SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ Při přidružení vlastních dat k položky projektu služby SharePoint pomocí <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> vlastnost <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objektu, Visual Studio uloží data do nové **ExtensionDataItem –** element v `.spdata` souboru Položka projektu. Další informace najdete v tématu [uložení dat v rozšíření systému projektu služby SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 ## <a name="element-information"></a>Informace o elementu
   
 |||  
 |-|-|  
-|**obor názvů**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010 nebo SharePointTools/SharePointProjectItemModel| 
+|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010 nebo SharePointTools/SharePointProjectItemModel| 
 |**Název schématu**|Schéma položky projektu SharePoint|  
 |**Ověření souboru**|ProjectItemModelSchema.xsd|  
 |**Nesmí být prázdné**|Ne|  
   
 ## <a name="see-also"></a>Viz také:
- [Referenční dokumentace schématu položek projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [Referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

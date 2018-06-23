@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 735f0d5160466c81560ba5afb6bfc0e696d88230
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 6f59d12fc6e587287c6aa1b72de3404f6d56f23a
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302923"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326137"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Postup nahlásit problém s Visual Studio 2017
 
@@ -63,6 +63,8 @@ Chcete-li nahlásit problém pro sadu Visual Studio, je nutné inicializovat ses
 
 1. Vyberte **odeslání** k odeslání zprávy, spolu s všechny Image a trasování nebo odkládacích souborů. (Pokud **odeslání** tlačítko je zobrazeno šedě, ujistěte se, že jste zadali název a popis pro sestavu.)
 
+   Informace o jaká data se shromažďují najdete v tématu [dat Shromažďujeme](developer-community-privacy.md#data-we-collect).
+
 ## <a name="record-a-repro"></a>Záznam zkopírujte
 
 Trasování a haldy souborů výpisu paměti jsou užitečné v pomáhá nám diagnostikovat problémy. Vážíme si ho při použití **nahlásit problém** nástroj zaznamenávat vaše zkopírujte kroky a posílat data do Microsoftu. Chcete-li tak učinit:
@@ -82,6 +84,8 @@ Trasování a haldy souborů výpisu paměti jsou užitečné v pomáhá nám di
 1. Až budete hotoví, vyberte **zastavit záznam** tlačítko.
 
 1. Počkejte několik minut pro sadu Visual Studio a shromažďovat informace, které jste si poznamenali balíčku.
+
+   Informace o jaká data se shromažďují najdete v tématu [dat Shromažďujeme](developer-community-privacy.md#data-we-collect).
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Hledání řešení nebo poskytnutí zpětné vazby
 

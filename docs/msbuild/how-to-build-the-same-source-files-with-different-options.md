@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fc33c17c245ae06b7db35a1c1e938f7e14b95b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f08a159d9490c5c8f92c5b093bc1b52d01c3b3d
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575605"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326202"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Postupy: Sestavení stejných zdrojových souborů s různými možnostmi
 Při sestavování projektů zkompilujete často stejné komponenty s možnostmi jiné sestavení. Můžete například vytvořit sestavení ladicí verze informací o symbolu nebo sestavení pro vydání s bez informací o symbolu, ale s povolenými optimalizacemi. Nebo můžete vytvořit projekt ke spuštění na konkrétní platformu, jako je například x86 nebo [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. V těchto případech většina možností sestavení zůstat stejné. změnily se jenom pár možností k řízení je konfigurace sestavení. S [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], použijte vlastnosti a podmínky k vytvoření konfigurace jiné sestavení.  
@@ -56,13 +56,13 @@ Při sestavování projektů zkompilujete často stejné komponenty s možnostmi
   
 -   Použití **/property** přepínač s vlastností a hodnotu vlastnosti. Příklad:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
      - nebo –  
   
-    ```  
+    ```cmd  
     Msbuild file.proj /p:Flavor=Debug  
     ```  
   
@@ -70,13 +70,13 @@ Při sestavování projektů zkompilujete často stejné komponenty s možnostmi
   
 -   Použít **/property** nebo **/p** přepínač vícekrát s vlastností a hodnoty vlastností, nebo využít **/property** nebo **/p** přepínače a více vlastností oddělujte středníkem (;). Příklad:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug;Platform=x86  
     ```  
   
      - nebo –  
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
     ```  
   
@@ -91,13 +91,13 @@ Při sestavování projektů zkompilujete často stejné komponenty s možnostmi
   
  Chcete-li sestavení ladicí verze tohoto projektu, zadejte:  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=debug  
 ```  
   
  Chcete-li vytvořit maloobchodní verze tohoto projektu, zadejte:  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=retail  
 ```  
   
@@ -158,7 +158,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
   
  Pokud chcete vytvořit projekt, zadejte následující příkaz:  
   
-```  
+```cmd  
 msbuild colortest.proj /t:go /property:Color=Green  
 ```  
   

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8df7de09fe90b0825d1b990b18b3a7d2309e4a08
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1b7d300a1a47499f963e7ff717c12f72e2483e05
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575517"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326316"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup – element (MSBuild)
 Obsahuje sadu uživatelem definované [vlastnost](../msbuild/property-element-msbuild.md) elementy. Každý `Property` element používány [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musí být podřízenou `PropertyGroup` element.  
@@ -35,7 +35,7 @@ Obsahuje sadu uživatelem definované [vlastnost](../msbuild/property-element-ms
 
 ## <a name="syntax"></a>Syntaxe  
 
-```  
+```xml  
 <PropertyGroup Condition="'String A' == 'String B'">  
     <Property1>...</Property1>  
     <Property2>...</Property2>  

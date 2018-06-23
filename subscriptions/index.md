@@ -10,19 +10,19 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29795315"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327187"
 ---
 # <a name="visual-studio-subscriptions"></a>Předplatná sady Visual Studio
 Visual Studio odběrů je komplexní sadu prostředků můžete vytvářet, nasazovat a spravovat kvalitních aplikací na upřednostňované platformy a zařízení, včetně systému Windows, iOS, Android a Linux.  Výhody odběry zahrnovat přístup do nástroje pro vývojáře, cloudových služeb a softwaru, cvičení a podporu pro vývoj a testování potřebám.
 
 ##  <a name="get-started"></a>Začínáme
-Správci přihlásit k [https://manage.visualstudio.com](https://manage.visualstudio.com) přiřadit předplatných pro váš tým.<br>
-Odběratelé Přihlaste se k [https://my.visualstudio.com](https://my.visualstudio.com) pro přístup k vaší výhody předplatného.
+Správci přihlásit k [ https://manage.visualstudio.com ](https://manage.visualstudio.com) přiřadit předplatných pro váš tým.<br>
+Odběratelé Přihlaste se k [ https://my.visualstudio.com ](https://my.visualstudio.com) pro přístup k vaší výhody předplatného.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -126,7 +126,7 @@ Odběratelé Přihlaste se k [https://my.visualstudio.com](https://my.visualstud
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio App Center</h3>
+                        <h3>Centrum aplikace Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -149,7 +149,6 @@ Odběratelé Přihlaste se k [https://my.visualstudio.com](https://my.visualstud
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li>Team Foundation Server a CAL sady TFS</li>
                         </ul>                        
                     </div>
@@ -166,8 +165,8 @@ Odběratelé Přihlaste se k [https://my.visualstudio.com](https://my.visualstud
                         <p>V sadě Visual Studio předplatném se může zobrazit měsíčního kreditu Azure a volné přístup ke službám Azure, zvýhodněné sazby vývoj a testování a výhradní přístup k jen odběratele image g allery s předem konfigurovaných virtuálních počítačů. V závislosti na vaše předplatné může zahrnovat cloudové služby:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Vývojářského předplatného Office 365</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Vývojářský účet pro Windows</a></li>
                             <li>PowerBI Pro</li>

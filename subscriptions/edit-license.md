@@ -9,12 +9,12 @@ description: Zjistěte, jak správci můžete upravit přiřazení předplatnéh
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4ee209af97d09f5d7e2125d2111746f6fe491f5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b986aa50f282ef6df985919ab5fb83934befcee8
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476635"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325375"
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Úpravy přiřazení předplatné sady Visual Studio
 
@@ -24,17 +24,14 @@ Jako správce předplatného můžete provést změny odběry přiřazeny uživa
 Můžete upravit informace odběratele opravte chyby nebo aktualizovat informace. 
 
 Chcete-li upravit odběratele, vyberte na výpustky (...), které se zobrazují vedle e-mailová adresa odběratele, při přesunutí ukazatele myši nad ním. Zobrazí se rozevírací seznam.  Vyberte **upravit** upravit podrobnosti odběratele. Můžete také dvakrát klikněte na řádek odběratele v mřížce a otevřete okno Upravit.
+    ![Vyberte odběratele, které chcete upravit](_img\edit-license\select-subscriber.png)
 
-   <img alt="Select subscriber to edit" src="_img\edit-license\select-subscriber.png" style="border: 1px solid #CCCCCC" />
-    
 Můžete aktualizovat odběrateli křestní jméno, příjmení, země, jazyk a soubory ke stažení. Upravit informace o odběratele a potom klikněte na **Uložit**.
 
- 
-   <img alt="Edit subscriber details" src="_img\edit-license\edit-subscriber.png" style="border: 1px solid #CCCCCC" />
    > [!NOTE]
    > Pokud potřebujete změnit úroveň odběr pro odběratele, musíte odstranit uživatele z portálu a znovu přidejte. Předplatné úrovně se nedají upravovat.
 
-## <a name="editing-multiple-subscribers-by-using-bulk-edit"></a>Úprava více odběrateli pomocí hromadné úpravy
+## <a name="editing-multiple-subscribers-using-bulk-edit"></a>Úprava více odběrateli pomocí hromadné úpravy
 
 Můžete upravit více odběrateli najednou procesem hromadné úpravy. Tato funkce slouží především pro organizace, které jsou průchodu přes firemní e-mailová adresa změny nebo pokud se organizace rozhodla pro omezení přístupu ke stahování. 
 
@@ -43,19 +40,13 @@ Můžete upravit více odběrateli najednou procesem hromadné úpravy. Tato fun
 
 1.  Chcete-li upravit více odběrateli najednou, přejděte na kartu odběratele. Na pásu karet v horní části, klikněte na tlačítko **hromadně upravovat**. 
 
-    <img alt="Editing a License - Bulk Edits" src="_img\edit-license\edit-license-bulk-edit.png" style="border: 1px solid #CCCCCC" />
-
 2.  Hromadné úpravy používá šablony aplikace Excel k provádět úpravy informace o odběru. V dialogovém okně Upravit hromadné klikněte na tlačítko **Export to v aplikaci excel** stáhnout aktuální seznam odběratele, včetně všech jejich informací. 
-
-    <img alt="Editing a License - Export Bulk Edits List" src="_img\edit-license\edit-license-bulk-edit-export.png" style="border: 1px solid #CCCCCC" />
+    ![Úpravy licenci - Export provede hromadné úpravy seznamu](_img\edit-license\edit-license-bulk-edit-export.png)
 
 3.  V dalším kroku uložte soubor místně, abyste mohli snadno najít a proveďte potřebné změny před jejich odesláním ji. Chcete-li zaručit úspěšné odeslání, **nemusíte upravovat úrovni předplatného nebo GUID odběru** jako to může způsobit odeslání selhání. 
 
 4.  Vrátit na portál pro správu předplatných Visual Studio a v dialogovém okně hromadně upravovat, klikněte na tlačítko **Procházet**. Vyberte soubor aplikace Excel, který jste uložili a klikněte na tlačítko **OK**. Průběh nahrávání se zobrazí na obrazovce.
-
-    <img alt="Editing a License - Bulk Edits File Upload" src="_img\edit-license\edit-license-bulk-file-upload1.png" style="border: 1px solid #CCCCCC" />
+    ![Úpravy licenci - hromadné upravuje nahrávání souborů](_img\edit-license\edit-license-bulk-file-upload1.png)
 
 5.  Jakmile jste odeslali soubor, zobrazí se oznámení umožňují vědět, že byla úspěšná. V tomto okamžiku provedené úpravy se projeví v informace o odběrateli. 
-
-    <img alt="Editing a License - Bulk Edits Upload Complete" src="_img\edit-license\edit-license-bulk-upload-complete.png" style="border: 1px solid #CCCCCC" />
 
