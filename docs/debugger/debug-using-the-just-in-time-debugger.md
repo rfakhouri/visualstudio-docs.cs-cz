@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4c09d3b6bbc9f1b3c895f0b8844fc91875c1484
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 39721b55d134335e3b618821e50ed3678895a861
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280465"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757276"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Ladění pomocí ladicího programu JIT v sadě Visual Studio
 Ladění za běhu spustí Visual Studio automaticky při výjimku nebo havárie v aplikaci, která běží mimo aplikaci Visual Studio. To umožňuje aplikaci otestovat, pokud neběží v sadě Visual Studio a zahájit ladění pomocí sady Visual Studio, když dojde k potížím.
@@ -47,7 +47,7 @@ Můžete povolit nebo zakázat pouze za běhu ladění ze sady Visual Studio **n
 
 4.  V **ladění JIT povolit z těchto typů kódu** pole, zaškrtněte nebo zrušte typy relevantní program: **spravované**, **nativní**, nebo **skriptu**.
 
-5.  Click **OK**.
+5.  Klikněte na tlačítko **OK**.
 
 Ladění za běhu může nadále povolené i v případě, že v počítači je již nainstalované sady Visual Studio. Když Visual Studio není nainstalována, nelze zakázat pouze za běhu ladění ze sady Visual Studio **možnosti** dialogové okno. V takovém případě můžete zakázat pouze za běhu ladění úpravou registru systému Windows.
 
@@ -104,7 +104,7 @@ Ladění za běhu může nadále povolené i v případě, že v počítači je 
 
  Ujistěte se, že pouze za běhu ladění je [povoleno](#BKMK_Enabling).
 
- Pro účely tohoto oddílu vytočit konzolovou aplikaci C# v sadě Visual Studio, který vyvolá [NullReferenceException](http://msdn.microsoft.com/Library/658af786-d893-4114-a3c5-31c7d586056a).
+ Pro účely tohoto oddílu vytočit konzolovou aplikaci C# v sadě Visual Studio, který vyvolá [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
  Ve Visual Studiu Vytvořte konzolovou aplikaci C# (**soubor > Nový > Projekt > Visual C# > Konzolová aplikace**) s názvem **ThrowsNullException**. Další informace o vytváření projektů v sadě Visual Studio najdete v tématu [návod: vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
 
