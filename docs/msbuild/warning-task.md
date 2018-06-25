@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c717cc1bc744438afd277e5f154fdcd8852e8d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7a837e41a3aca165f638be5adb578728e9f6d91e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568433"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755782"
 ---
 # <a name="warning-task"></a>Warning – úloha
 Protokoly upozornění během sestavení založené na příkazu vyhodnotí podmíněného.  
@@ -43,7 +43,7 @@ Protokoly upozornění během sestavení založené na příkazu vyhodnotí podm
 ## <a name="remarks"></a>Poznámky  
  `Warning` Úloha umožňuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty tak, aby kontrolovat přítomnost požadovanou konfiguraci nebo vlastnost před pokračováním na další krok sestavení.  
   
- Pokud `Condition` parametr `Warning` úloh se vyhodnocuje `true`, hodnota `Text` zaznamená parametr a sestavení bude pokračovat v provádění. Pokud `Condition` parametr neobsahuje případech, se do protokolu zapíše text upozornění. Další informace o protokolování naleznete v tématu [získání sestavení protokoly](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Pokud `Condition` parametr `Warning` úloh se vyhodnocuje `true`, hodnota `Text` zaznamená parametr a sestavení bude pokračovat v provádění. Pokud `Condition` parametr neexistuje, se do protokolu zapíše text upozornění. Další informace o protokolování naleznete v tématu [získání sestavení protokoly](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
  Kromě výše uvedených parametrů tato úloha dědí parametry z <xref:Microsoft.Build.Tasks.TaskExtension> třída, které dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrech a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  
   

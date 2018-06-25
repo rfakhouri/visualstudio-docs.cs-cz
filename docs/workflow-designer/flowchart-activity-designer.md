@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81af4a51da2bb15bafd17fc7ba98d676f7b0decc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4dd44a91ac2a3d823c5a5690edbdd57422857ea9
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974271"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755625"
 ---
-# <a name="flowchart-activity-designer"></a>Vývojový diagram Návrhář aktivity
+# <a name="flowchart-activity-designer"></a>Návrhář aktivity Flowchart
 
-<xref:System.Activities.Statements.Flowchart> Aktivita se používá k vytváření pracovních postupů, které definovat a spravovat komplexní tok ovládací prvky. A <xref:System.Activities.Statements.Flowchart> může být vytvořené v kódu nebo pomocí návrháře pracovních postupů. Toto téma popisuje činnost návrháře pracovních postupů. Návrhář aktivity pracovního postupu Návrháře pracovního postupu systému Windows umožňuje vývojářům pro vytváření pracovních postupů přirozené způsobem.
+<xref:System.Activities.Statements.Flowchart> Aktivita se používá k vytváření pracovních postupů, které definovat a spravovat komplexní tok ovládací prvky. A <xref:System.Activities.Statements.Flowchart> může být vytvořené v kódu nebo pomocí návrháře pracovních postupů. Toto téma popisuje činnost návrháře pracovních postupů. Návrhář aktivity pracovního postupu návrháře pracovních postupů umožňuje vývojářům pro vytváření pracovních postupů přirozené způsobem.
 
 ## <a name="the-flowchart-activity"></a>Vývojový diagram aktivity
 
@@ -31,7 +31,7 @@ ms.locfileid: "31974271"
 
 ### <a name="using-the-flowchart-activity-designer"></a>Pomocí návrháře vývojový diagram aktivity
 
-**Vývojový diagram** Návrhář aktivity naleznete v **vývojový diagram** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů**kartě v Návrháři pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
+**Vývojový diagram** Návrhář aktivity naleznete v **vývojový diagram** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů**kartě v Návrháři pracovních postupů. Případně vyberte možnost **sada nástrojů** z **zobrazení** nabídky, nebo klikněte na tlačítko **Ctrl**+**Alt** + **X**.
 
 **Vývojový diagram** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na návrháře aktivit jsou obvykle umístěny, jako kořenové aktivity nebo jako podřízená jiné aktivity toku řízení. Pokud **vývojový diagram** Návrhář aktivity je vyřazeno na plochu návrháře pracovních postupů prázdné, vytvoří <xref:System.Activities.Statements.Flowchart> aktivity, který ve výchozím nastavení prezentuje v rozbalené zobrazení, ve kterém je počáteční uzel, který iniciuje provádění reprezentován jako zelená míč. Pokud **vývojový diagram** Návrhář aktivity je vyřazeno do další aktivity toku řízení, se prezentuje v minimalizovaném okně zobrazení, které lze rozšířit dvojitým kliknutím **vývojový diagram** Návrhář aktivity. Všechny aktivity v **sada nástrojů** může být přetažen přímo na **vývojový diagram** Návrhář aktivity, včetně další aktivity toku řízení.
 
@@ -48,7 +48,7 @@ Následující tabulce je zobrazena <xref:System.Activities.Statements.Flowchart
 |<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|<xref:System.Activities.Statements.FlowNode> Tedy spuštěna při <xref:System.Activities.Statements.Flowchart> spustí.|
 |<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|Obsahuje kolekci <xref:System.Activities.Statements.FlowNode> objekty v <xref:System.Activities.Statements.Flowchart>.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vývojový diagram](../workflow-designer/flowchart-activity-designers.md)
 - [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)

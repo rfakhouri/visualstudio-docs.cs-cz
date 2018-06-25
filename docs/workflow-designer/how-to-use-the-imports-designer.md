@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de974ebba6fbe746a4d7acb4c1a20fefa5488a8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d50267ca8899343d2b704aa28beabc07ed432936
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970645"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755859"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Postupy: použití návrháře importy
 
@@ -35,7 +35,7 @@ Návrhář importy reaguje na obou změny v uživatelském rozhraní a změny pr
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Chcete-li přidat obor názvů do seznamu importovaných oborů názvů
 
-1.  Otevřete aplikaci služby WCF pracovního postupu, pracovní postup konzolové aplikace nebo projektu knihovny aktivit v sadě Visual Studio 2010 nebo aplikace opětovné hostování nástroje pracovního postupu.
+1.  Otevřete aplikaci služby WCF pracovního postupu, pracovní postup konzolové aplikace nebo projektu knihovny aktivit v sadě Visual Studio nebo aplikace opětovné hostování nástroje pracovního postupu.
 
 2.  Klikněte na tlačítko **importy** v dolní části hlavní plátno. Zobrazí se importuje návrháře.
 

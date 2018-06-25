@@ -1,5 +1,5 @@
 ---
-title: Přizpůsobení, jak Visual Studio vytváří titulky pro ovládací prvky vázané na data
+title: Úprava způsobu, kterým Visual Studio vytváří titulky pro ovládací prvky vázané daty
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,14 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 60d2e181d0438f6ce180efe1cec2dd64dd8f2f5e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 69e97efe6db8b06f476b7dc004e3b52a77701cb0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33871185"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758417"
 ---
-# <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Přizpůsobení, jak Visual Studio vytváří titulky pro ovládací prvky vázané na data
+# <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Úprava způsobu, kterým Visual Studio vytváří titulky pro ovládací prvky vázané daty
 
 Když přetáhnete položky z [okno zdroje dat](add-new-data-sources.md) do návrháře, obzvláštní pozornost stává play: názvy sloupců v záhlaví popisky jsou naformátována do více čitelných řetězců, pokud dvě nebo více slova se zjistí zřetězen dohromady. Můžete upravit způsob, ve kterém jsou tyto popisky vytvořili, a nastavení **SmartCaptionExpression**, **SmartCaptionReplacement**, a **SmartCaptionSuffix** hodnoty v **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designer** klíč registru.
 
@@ -35,7 +35,7 @@ Následující tabulka popisuje hodnoty registru, které řídí titulek popisky
 
 |Položky registru|Popis|
 |-------------------|-----------------|
-|**SmartCaptionExpression**|Regulární výraz tak, aby odpovídaly vašim vzorům.|
+|**SmartCaptionExpression**|Regulární výraz, který můžete použít tak, aby odpovídaly vašim vzorům.|
 |**SmartCaptionReplacement**|Formát, který se zobrazí všechny skupiny obsažena ve **SmartCaptionExpression**.|
 |**SmartCaptionSuffix**|Volitelný řetězec má být připojen na konec titulek.|
 
@@ -43,9 +43,9 @@ Následující tabulka uvádí vnitřní výchozí nastavení pro tyto hodnoty r
 
 |Položky registru|Výchozí hodnota|Vysvětlení|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|Odpovídá malé písmeno a velké písmeno nebo podtržítko.|
-|**SmartCaptionReplacement**|$1 $2|$1 představuje znaky shodná v závorkách první výraz a $2 představuje znaky shodná v druhé závorkách. Pokud chcete nahrazení je na první shodu, mezeru a druhý shody.|
-|**SmartCaptionSuffix**|:|Představuje znak připojenou k vrácený řetězec. Například, pokud je titulek `Company Name`, přípona umožňuje `Company Name:`|
+|**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Odpovídá malé písmeno a velké písmeno nebo podtržítko.|
+|**SmartCaptionReplacement**|**$1 $2**|**1 USD** představuje znaky shodná v první závorkách výrazu a **$2** představuje znaky shodná v druhé závorkách. Pokud chcete nahrazení je na první shodu, mezeru a druhý shody.|
+|**SmartCaptionSuffix**|**:**|Představuje znak připojenou k vrácený řetězec. Například, pokud je titulek `Company Name`, přípona umožňuje `Company Name:`|
 
 > [!CAUTION]
 > Měli byste být velmi opatrní při provádění nic v editoru registru. Před úpravou ji zálohujte registru. Pokud Editor registru používán správně, můžete způsobit vážné problémy, které mohou vyžadovat přeinstalaci operačního systému. Microsoft nezaručuje, že lze vyřešit problémy, které způsobí nesprávně pomocí Editoru registru. Editor registru používáte na vlastní nebezpečí.
@@ -58,7 +58,7 @@ Následující tabulka uvádí vnitřní výchozí nastavení pro tyto hodnoty r
 
 2.  Typ `regedit` v **spustit** dialogové okno a klikněte na tlačítko **OK**.
 
-3.  Rozbalte **HKEY_CURRENT_USER**, **softwaru**, **Microsoft**, **Visual Studio** uzlu.
+3.  Rozbalte **HKEY_CURRENT_USER** > **softwaru** > **Microsoft** > **Visual Studio**uzlu.
 
 7.  Klikněte pravým tlačítkem myši **15.0** uzel a vytvořte novou **klíč** s názvem `Data Designers`.
 
@@ -88,7 +88,7 @@ Následující tabulka uvádí vnitřní výchozí nastavení pro tyto hodnoty r
 
 2.  Typ `regedit` v **spustit** dialogové okno a klikněte na tlačítko **OK**.
 
-3.  Rozbalte **HKEY_CURRENT_USER**, **softwaru**, **Microsoft**, **Visual Studio** uzlu.
+3.  Rozbalte **HKEY_CURRENT_USER** > **softwaru** > **Microsoft** > **Visual Studio**uzlu.
 
 7.  Klikněte pravým tlačítkem myši **15.0** uzel a vytvořte novou **klíč** s názvem `Data Designers`.
 
@@ -108,6 +108,6 @@ Následující tabulka uvádí vnitřní výchozí nastavení pro tyto hodnoty r
 
     Při příštím přetáhnete položky z **zdroje dat** okně titulek popisky jsou vytvořeny pomocí titulků beze změny.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

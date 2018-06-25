@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83664d6402c23da89adf332bc9cd34eac89384bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977641"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756591"
 ---
-# <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Klávesové zkratky v Návrháři pracovních postupů
+# <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Klávesové zkratky v návrháři postupu provádění
 
-Všechny základní funkce návrháře pracovního postupu systému Windows byla přístupná pomocí klávesnice.
+Všechny základní funkce návrháře pracovního postupu byla přístupná pomocí klávesnice.
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Navigace návrháře pracovních postupů pomocí klávesnice
 
-V sadě Visual Studio 2010 globální zkratky a zkratky ladění použití návrháře pracovních postupů. Navíc byly vytvořeny počet konkrétní klávesové zkratky v Návrháři pracovních postupů. V sadě Visual Studio 2010 všechny klávesové zkratky můžete přemapovat. Opětovné hostování nástroje aplikace, ale tyto klávesové zkratky jsou pevně zakódované.
+V sadě Visual Studio globální zkratky a zkratky ladění použití návrháře pracovních postupů. Navíc byly vytvořeny počet konkrétní klávesové zkratky v Návrháři pracovních postupů. V sadě Visual Studio všechny klávesové zkratky můžete přemapovat. Opětovné hostování nástroje aplikace, ale tyto klávesové zkratky jsou pevně zakódované.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Klávesové zkratky v Návrháři pracovních postupů
 
@@ -49,7 +49,7 @@ Následující tabulka shrnuje výchozí klávesové zkratky, která je přiřaz
 
 ### <a name="flowchart"></a>Vývojový diagram
 
-V následujícím seznamu jsou gesta použitý k vytvoření vývojový diagram pomocí klávesnice. Jako zbytek návrháře pracovních postupů se přidají aktivity na plochu návrháře pomocí zástupce globální sady nástrojů součástí sady Visual Studio 2010.
+V následujícím seznamu jsou gesta použitý k vytvoření vývojový diagram pomocí klávesnice. Jako zbytek návrháře pracovních postupů se přidají aktivity na plochu návrháře pomocí zástupce globální sady nástrojů poskytuje pomocí sady Visual Studio.
 
 - Chcete-li přesunout aktivitu, vyberte aktivitu a použijte klávesy se šipkami do jiného umístění.
 
@@ -85,7 +85,7 @@ Ve výchozím nastavení použít výchozí klávesové zkratky pro Visual Basic
    - Kopírovat
    - Vložit
    - Vybrat vše
-   - vrácení zpět
-   - znovu:
+   - Vrácení zpět
+   - Znovu:
 
-- Pokud chcete přemapovat klávesové zkratky pro příkazy pro úpravy výrazu v Návrháři pracovních postupů v sadě Visual Studio 2010, upravte zástupce v oboru pracovního postupu návrháře. Změny provedené v textovém editoru oboru automaticky nevztahují na návrháře pracovních postupů. Pokud chcete namapovat zástupce na obou místech, musíte použít změny dvakrát (jednou pro každý obor).
+- Pokud chcete přemapovat klávesové zkratky pro příkazy pro úpravy výrazu v Návrháři pracovních postupů v sadě Visual Studio, upravte zástupce v oboru pracovního postupu návrháře. Změny provedené v textovém editoru oboru automaticky nevztahují na návrháře pracovních postupů. Pokud chcete namapovat zástupce na obou místech, musíte použít změny dvakrát (jednou pro každý obor).

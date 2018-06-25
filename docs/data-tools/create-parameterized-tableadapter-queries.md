@@ -1,5 +1,5 @@
 ---
-title: Vytváření parametrizovaných dotazů TableAdapter
+title: Vytvoření parametrizovaných dotazů TableAdapter
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,14 +20,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7d3985cc8faf76c5c5767090abd5b87101ddbb45
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fe77d3622e9c41d98ff89972e522bb25aae58b9d
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924193"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756006"
 ---
-# <a name="create-parameterized-tableadapter-queries"></a>Vytváření parametrizovaných dotazů TableAdapter
+# <a name="create-parameterized-tableadapter-queries"></a>Vytvoření parametrizovaných dotazů TableAdapter
 Zadání parametrizovaného dotazu vrátí data, která splňuje podmínky klauzule WHERE v dotazu. Například můžete parametrizovat seznam zákazníků k zobrazení pouze zákazníků v určitém městě přidáním `WHERE City = @City` na konec příkazu SQL, který vrátí seznam zákazníků.
 
  Vytváření parametrizovaných dotazů TableAdapter v **návrháře Dataset**. Můžete také vytvořit v aplikaci Windows s **Parametrizace zdroj dat** příkaz na **Data** nabídky. **Parametrizace zdroj dat** příkaz vytvoří ovládacích prvků do formuláře, kde můžete zadat hodnoty parametrů a spusťte dotaz.
@@ -65,7 +65,7 @@ Zadání parametrizovaného dotazu vrátí data, která splňuje podmínky klauz
     > [!NOTE]
     >  Pokud **přidat dotazu** není k dispozici na **Data** nabídky, vyberte ovládací prvek na formuláři, zobrazí zdroj dat, které chcete přidat Parametrizace k. Například, pokud formulář zobrazuje data <xref:System.Windows.Forms.DataGridView> řídit, vyberte ji. Pokud formuláře zobrazí data v jednotlivých ovládacích prvků, vyberte všechny ovládací prvky vázané na data.
 
-3.  V **vyberte data zdrojová tabulka** oblasti, vyberte tabulku, která chcete přidat Parametrizace k.
+3.  V **vyberte data zdrojová tabulka** oblasti, vyberte tabulku, do které chcete přidat parametrizace.
 
 4.  Zadejte název do **nový název dotazu** pole, pokud vytváříte nový dotaz.
 
@@ -101,6 +101,6 @@ WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
 
 3.  Vyberte parametr, který povoluje hodnoty null a nastavte **AllowDbNull** vlastnost `true`.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vyplnění datové sady s použitím objektů TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

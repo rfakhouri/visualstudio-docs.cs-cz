@@ -24,15 +24,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 02a6daf7a3155113ecd06d991b337b54fb0d7cd4
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 2ac3df32dd384a6e8beeb164e897d6534e2a96fb
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768128"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757822"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Postupy: přidání metody odstranění
-  Můžete povolit koncový uživatel odstranit záznam dat z externího seznamu na web služby SharePoint tak, že přidání metody odstranění do modelu. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
+  Můžete povolit koncový uživatel odstranit záznam dat z externího seznamu na web služby SharePoint tak, že přidání metody odstranění do modelu. Další informace najdete v tématu [návrhu modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-deleter-method"></a>Chcete-li vytvořit metody odstranění  
   
@@ -40,7 +40,7 @@ ms.locfileid: "34768128"
   
 2.  Na řádku nabídek zvolte **zobrazení** > **ostatní okna** > **podrobnosti o metodě BDC**.  
   
-     **Podrobnosti o metodě BDC** otevře se okno. Další informace o tomto okně najdete v tématu [přehled nástrojů pro navrhování modelu služby BDC](../sharepoint/bdc-model-design-tools-overview.md).  
+     **Podrobnosti o metodě BDC** otevře se okno. Další informace o tomto okně najdete v tématu [návrhu modelu služby BDC nástroje Přehled](../sharepoint/bdc-model-design-tools-overview.md).  
   
 3.  V **přidejte metodu** vyberte **vytvořit metody odstranění**.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "34768128"
   
     -   Instance metody pro metodu.  
   
-     Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
+     Další informace najdete v tématu [návrhu modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 4.  V **Průzkumníku řešení**, otevřete nabídku zástupce služby kódu souboru, který byl vygenerován pro entitu a potom zvolte **kód zobrazení**.  
   
@@ -79,6 +79,6 @@ ms.locfileid: "34768128"
  [Postupy: Přidání aktualizační metody](../sharepoint/how-to-add-an-updater-method.md)   
  [Přehled nástrojů pro navrhování modelu služby BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  
+ [Postupy: definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  
   
   

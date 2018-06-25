@@ -19,19 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf59736e4cdeb8ddba256b24bc7c12984d288071
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: a2307a870487a3cc62a60b4162245db57653d452
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767155"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756090"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Postupy: Přidání nebo odebrání funkcí a položek z balíčku pomocí návrháře balíčků
   Když vytvoříte řešení služby SharePoint, Visual Studio přidá výchozí funkce služby SharePoint k balíčku v řešení. Před posledním nasazení můžete přidávat a odebírat položky projektu služby SharePoint a funkce, které chcete upravit balíček služby SharePoint.  
   
  Alternativně můžete Průzkumníku balíčků k přidání a odebrání položek projektu služby SharePoint. Můžete také zobrazit a změnit hierarchie položek projektu služby SharePoint a funkce, které se umístí do balíčku (WSP). Další informace najdete v tématu [postupy: Přidání nebo odebrání funkcí a položek z balíku pomocí Průzkumníku balíčků](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
-## <a name="adding-features-to-a-sharepoint-package"></a>Přidávání funkcí do balíčku služby SharePoint  
+## <a name="add-features-to-a-sharepoint-package"></a>Přidání funkcí do balíčku služby SharePoint  
  Návrháře balíčků můžete použít k přidání funkcí do balíčku služby SharePoint.  
   
 #### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Přidání funkcí služby SharePoint pomocí návrháře balíčků
@@ -52,7 +52,7 @@ ms.locfileid: "34767155"
   
      SharePoint – položky projektu a funkce se zobrazí v **položky v balíčku** seznamu.  
   
-## <a name="removing-features-from-a-sharepoint-package"></a>Odebrání funkce z balíčku služby SharePoint  
+## <a name="remove-features-from-a-sharepoint-package"></a>Odebrat funkce z balíčku služby SharePoint  
  Návrháře balíčků můžete použít k odebrání funkcí služby SharePoint do balíčku.  
   
 #### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Chcete-li odebrat funkcí služby SharePoint pomocí návrháře balíčků
@@ -63,6 +63,6 @@ ms.locfileid: "34767155"
   
 ## <a name="see-also"></a>Viz také:
  [Vytváření balíčků řešení služby SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Postupy: Přizpůsobení balíčku řešení služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Postupy: přizpůsobení balíčku řešení služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [Postupy: vytvoření balíčku](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)  
   

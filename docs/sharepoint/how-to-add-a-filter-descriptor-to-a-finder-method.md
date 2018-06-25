@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 307759881c6795d33dfb5a1c1425402aece05efb
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 63374f4d96c86ea3eafbd4c6fa3fbe3d1f5a5899
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766611"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755596"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Postupy: Přidání deskriptoru filtru do vyhledávací metody
-  Deskriptory filtrů povolení příjemcům modelu předat hodnoty metody před jejich provedení. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
+  Deskriptory filtrů povolení příjemcům modelu předat hodnoty metody před jejich provedení. Další informace najdete v tématu [návrhu modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
  Jeden běžný scénář je, že uživatele ve službě SharePoint chcete načíst instancí na externí typ obsahu, které odpovídají některé kritériím. Tento scénář může podporovat přidáním deskriptoru filtru do vyhledávací metody.  
   

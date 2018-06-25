@@ -12,26 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f664ac3a22b91780d392e0fef3224cd80b1e7919
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb12deec8bba5ac7974b0aa730726f309f1c9c46
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975429"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757748"
 ---
-# <a name="pick-activity-designer"></a>Vyberte Návrhář aktivity
+# <a name="pick-activity-designer"></a>Návrhář aktivity Pick
 
 <xref:System.Activities.Statements.Pick> Poskytuje aktivity toku řízení na základě událostí. Aktivity spustí jeden z několika větve v reakci na aktivační událost.
 
 ## <a name="the-pick-activity"></a>Vybrat aktivitu
 
-A <xref:System.Activities.Statements.Pick> aktivity obsahuje kolekci <xref:System.Activities.Statements.PickBranch> objekty, z nichž jeden <xref:System.Activities.Statements.Pick> aktivity můžete spustit z důvodu některých příchozí události, která slouží jako aktivační událost. Tímto způsobem Návrhář pracovního postupu systému Windows umožňuje modelování toku řízení na základě událostí. Každý <xref:System.Activities.Statements.PickBranch> obsahuje <xref:System.Activities.Statements.PickBranch.Trigger%2A> a <xref:System.Activities.Statements.PickBranch.Action%2A>. Na začátku <xref:System.Activities.Statements.Pick> provádění aktivity, všechny aktivační události aktivity <xref:System.Activities.Statements.PickBranch> elementy jsou naplánovány. Po dokončení první aktivitu, bude odpovídající aktivita akce je naplánováno a všechny ostatní aktivity aktivační události došlo ke zrušení.
+A <xref:System.Activities.Statements.Pick> aktivity obsahuje kolekci <xref:System.Activities.Statements.PickBranch> objekty, z nichž jeden <xref:System.Activities.Statements.Pick> aktivity můžete spustit z důvodu některých příchozí události, která slouží jako aktivační událost. Tímto způsobem Návrhář postupu provádění poskytuje modelování toku řízení na základě událostí. Každý <xref:System.Activities.Statements.PickBranch> obsahuje <xref:System.Activities.Statements.PickBranch.Trigger%2A> a <xref:System.Activities.Statements.PickBranch.Action%2A>. Na začátku <xref:System.Activities.Statements.Pick> provádění aktivity, všechny aktivační události aktivity <xref:System.Activities.Statements.PickBranch> elementy jsou naplánovány. Po dokončení první aktivitu, bude odpovídající aktivita akce je naplánováno a všechny ostatní aktivity aktivační události došlo ke zrušení.
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Jak používat návrháře vyberte aktivity
 
-**Vyberte** Návrhář aktivity naleznete v **tok řízení** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů**kartě v Návrháři pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
-
-**Vyberte** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na návrháře aktivit jsou obvykle umístěny například uvnitř  **Pořadí** Návrhář aktivity. Po posílá ji do pracovního postupu návrháře, vytvoří <xref:System.Activities.Statements.Pick> aktivity, který ve výchozím nastavení obsahuje dvě prázdný <xref:System.Activities.Statements.PickBranch> aktivitám v podobě elementů pomocí zobrazení názvů pobočka1 a Branch2. Tyto příslušných <xref:System.Activities.Statements.PickBranch.DisplayName%2A> hodnoty vlastností lze upravit v **PickBranch** návrháře hlavičky aktivity nebo uvnitř **vlastnosti** okna pro každou větev.
+Přístup **vyberte** Návrhář aktivity v **tok řízení** kategorii **sada nástrojů**. **Vyberte** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na návrháře aktivit jsou obvykle umístěny například uvnitř  **Pořadí** Návrhář aktivity. Po posílá ji do pracovního postupu návrháře, vytvoří <xref:System.Activities.Statements.Pick> aktivity, který ve výchozím nastavení obsahuje dvě prázdný <xref:System.Activities.Statements.PickBranch> aktivitám v podobě elementů pomocí zobrazení názvů pobočka1 a Branch2. Tyto příslušných <xref:System.Activities.Statements.PickBranch.DisplayName%2A> hodnoty vlastností lze upravit v **PickBranch** návrháře hlavičky aktivity nebo uvnitř **vlastnosti** okna pro každou větev.
 
 Existují dva způsoby, jak přidat <xref:System.Activities.Statements.PickBranch> aktivity do kolekce <xref:System.Activities.Statements.Pick> objektu: přetahování a vkládání **PickBranch** návrháře z **sada nástrojů** nebo pomocí místní nabídky z v rámci **vyberte** návrhovou plochu. Podrobnosti najdete v tématu [PickBranch](../workflow-designer/pickbranch-activity-designer.md) tématu. Všimněte si, že se za jedinou položku, která může být umístěna uvnitř **vyberte** je Návrhář aktivity **PickBranch** Návrhář aktivity.
 
@@ -43,7 +41,7 @@ Následující tabulce je zobrazena <xref:System.Activities.Statements.Pick> vla
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Určuje popisný název <xref:System.Activities.Statements.Pick> Návrhář aktivity v hlavičce. Výchozí hodnota je vybrat. Hodnota se dá upravit v mřížku vlastností, nebo přímo v hlavičce Návrhář aktivity.<br /><br /> I když <xref:System.Activities.Activity.DisplayName%2A> striktně nevyžaduje, je osvědčeným postupem použít.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Tok řízení](../workflow-designer/control-flow-activity-designers.md)
 - [Výběr aktivity](/dotnet/framework/windows-workflow-foundation/pick-activity)

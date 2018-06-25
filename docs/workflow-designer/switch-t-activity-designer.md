@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37155d7a322b2421fc0c9828d22df8d625f8573a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: afa5932ebfaea1e0a7f61997c26e95226ed51b1d
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978281"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758013"
 ---
 # <a name="switcht-activity-designer"></a>Přepínač\<T > Návrhář aktivity
 
 <xref:System.Activities.Statements.Switch%601> Aktivita vyhodnotí zadaný výraz a provádí aktivity z kolekce aktivit, jejichž přidružené klíč odpovídá hodnotě získané z vyhodnocení.
 
-**Přepínač < T\>**  Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.Switch%601> aktivity v Návrháři pracovních postupů Windows.
+**Přepínač < T\>**  Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.Switch%601> aktivity v Návrháři pracovních postupů.
 
 ## <a name="the-switchtactivity"></a>Přepínač\<T > aktivity
 
@@ -32,7 +32,7 @@ A <xref:System.Activities.Statements.Switch%601> obsahuje aktivitu <xref:System.
 
 ## <a name="how-to-use-the-switcht-activity-designer"></a>Jak používat přepínač\<T > Návrhář aktivity
 
-**Přepínač\<T >** Návrhář aktivity naleznete v **tok řízení** kategorii **sada nástrojů**, což je dostat kliknutím **Sada nástrojů** kartě v Návrháři pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.) Po vyřazení ho do návrháře pracovních postupů, se zobrazí **vyberte typy** dialogové okno, aby mohl uživatel zadat obecného typu *T* použít v <xref:System.Activities.Statements.Switch%601> aktivity. Výchozí hodnota je **Int32**. Jednou obecného typu *T* byla vybrána, **přepínač < T\>**  designer je přidán do návrháře pracovních postupů.
+Přístup **přepínač\<T >** Návrhář aktivity v **tok řízení** kategorii **sada nástrojů**. Po vyřazení ho do návrháře pracovních postupů, se zobrazí **vyberte typy** dialogové okno, aby mohl uživatel zadat obecného typu *T* použít v <xref:System.Activities.Statements.Switch%601> aktivity. Výchozí hodnota je **Int32**. Jednou obecného typu *T* byla vybrána, **přepínač < T\>**  designer je přidán do návrháře pracovních postupů.
 
 Toto jsou vlastnosti **přepínač < T\>**  designer. Všechny tyto vlastnosti se dá upravit v tabulce vlastností. Některé z nich můžete upravovat také na plochu návrháře.
 
@@ -51,12 +51,12 @@ Kliknutím na klíč existující případ změní klíč z štítek do textové
 
 Chcete-li odstranit případu 2 způsoby:
 
-1.  Vyberte tento případ a odstraňte ji.
+- Vyberte tento případ a odstraňte ji.
 
-2.  Vyberte případu, klikněte pravým tlačítkem a zobrazení v místní nabídce vyberte **odstranit**.
+- Vyberte případu, klikněte pravým tlačítkem a zobrazení v místní nabídce vyberte **odstranit**.
 
 Všimněte si, že je nutné vybrat samotného odstranit případu. Vyberete a odstraníte aktivity v případě odstraní pouze aktivity tak není.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Tok řízení](../workflow-designer/control-flow-activity-designers.md)

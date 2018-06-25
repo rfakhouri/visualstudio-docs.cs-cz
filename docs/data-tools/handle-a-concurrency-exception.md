@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c68a093effe39597fc2802bc54f471dbce8b1bf5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 179718223f181619a3121df8c88132a07e392678
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752330"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757172"
 ---
 # <a name="handle-a-concurrency-exception"></a>Zpracování výjimky souběžnosti
 Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) se vyvolá, když dva uživatelé pokusí změnit stejná data v databázi ve stejnou dobu. V tomto návodu vytvoříte aplikace systému Windows, která ukazuje, jak zachytit <xref:System.Data.DBConcurrencyException>, vyhledejte řádek, který chybu způsobil a další strategie, jak se nezdařilo.
@@ -44,16 +44,16 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) se vyvolá, k
 
 6.  Změňte stejné záznam na jinou hodnotu, aktualizujte datovou sadu a pokus o zápis do databáze, což vede k chybě souběžnosti vyvolaných změny.
 
-7.  Catch – chyba a potom zobrazit různé verze na záznam, které uživateli umožňují určit, zda chcete pokračovat a aktualizaci databáze, nebo zrušit aktualizaci.
+7.  Catch – chyba, zobrazit různé verze na záznam, které uživateli umožňují určit, jestli chcete pokračovat a aktualizaci databáze nebo zrušit aktualizaci.
 
 ## <a name="prerequisites"></a>Požadavky
 Tento návod používá SQL Server Express LocalDB a ukázková databáze Northwind.
 
-1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.
+1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V **instalační program Visual Studio**, SQL Server Express LocalDB můžete nainstalovat jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.
 
 2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:
 
-    1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz...** .
+    1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz**.
 
        Otevře se okno editoru dotazů.
 
@@ -61,7 +61,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
     3. Vložit do editoru dotazů skriptu T-SQL a potom vyberte **Execute** tlačítko.
 
-       Po krátkou dobu dotaz dokončí provádění a vytvoření databáze Northwind.
+       Po krátkou dobu dotaz dokončení spuštění a vytvoření databáze Northwind.
 
 > [!NOTE]
 >  Dialogová okna a příkazy nabídky, které vidíte, se může lišit od těch popsaných v nápovědě v závislosti na nastavení active nebo na edici, který používáte. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).
@@ -71,7 +71,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 #### <a name="to-create-a-new-windows-forms-application-project"></a>Chcete-li vytvořit nový projekt aplikace Windows Forms
 
-1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu...** .
+1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu**.
 
 2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Desktop**.
 
@@ -92,7 +92,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 2.  Na **zvolte typ zdroje dat** obrazovku, vyberte **databáze**.
 
-3.  Vyberte připojení k ukázková databáze Northwind ze seznamu dostupných připojení. Pokud připojení není k dispozici v seznamu připojení, vyberte **nové připojení**
+3.  Vyberte připojení k ukázková databáze Northwind ze seznamu dostupných připojení. Pokud připojení není k dispozici v seznamu připojení, vyberte **nové připojení**.
 
     > [!NOTE]
     >  Pokud se připojujete k lokálním databázovém souboru, vyberte **ne** když se zobrazí dotaz, pokud byste chtěli soubor přidat do projektu.
@@ -116,14 +116,14 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 4.  Přetažením v tabulce na na prázdnou oblast formuláře.
 
-     A <xref:System.Windows.Forms.DataGridView> ovládací prvek s názvem `CustomersDataGridView` a <xref:System.Windows.Forms.BindingNavigator> s názvem `CustomersBindingNavigator` jsou přidány do formulář, který je vázána <xref:System.Windows.Forms.BindingSource>. Toho je v, zapněte vázán na `Customers` tabulky v `NorthwindDataSet`.
+     A <xref:System.Windows.Forms.DataGridView> ovládací prvek s názvem `CustomersDataGridView` a <xref:System.Windows.Forms.BindingNavigator> s názvem `CustomersBindingNavigator` jsou přidány do formulář, který je vázána <xref:System.Windows.Forms.BindingSource>. To je, pak vázána `Customers` tabulky v `NorthwindDataSet`.
 
 ## <a name="test-the-form"></a>Testování formuláře
  Nyní můžete otestovat formuláře a ujistěte se, že se chová jako očekávány maximálně tento bod.
 
 #### <a name="to-test-the-form"></a>Postup testování formuláře
 
-1.  Vyberte **F5** ke spuštění aplikace
+1.  Vyberte **F5** ke spuštění aplikace.
 
      Formulář se zobrazí s <xref:System.Windows.Forms.DataGridView> ovládací prvek v něm, který naplní se data z `Customers` tabulky.
 
@@ -153,12 +153,12 @@ Uživatel je pak možné přepsat databázi navrhované verzí, nebo zrušit akt
 4.  Znovu odeslal aktualizaci nebo obnovení dat v datové sadě.
 
 ### <a name="add-code-to-handle-the-concurrency-exception"></a>Přidat kód pro zpracování výjimky souběžnosti
- Když se pokusíte provést aktualizace a získá k výjimce, obvykle chcete něco s informacemi, které zajišťuje vyvolané výjimky.
+ Když se pokusíte provést aktualizace a je vyvolána výjimka, obvykle chcete něco s informacemi, které zajišťuje vyvolané výjimky.
 
- V této části přidáte kód, který se pokouší aktualizovat databázi. Také zpracovat žádné <xref:System.Data.DBConcurrencyException> , může získat vyvolána, a také všechny ostatní výjimky.
+ V této části přidáte kód, který se pokouší aktualizovat databázi. Také zpracovat žádné <xref:System.Data.DBConcurrencyException> , může být vyvolána, a také všechny ostatní výjimky.
 
 > [!NOTE]
->  `CreateMessage` a `ProcessDialogResults` metody přidá dále v tomto návodu.
+>  `CreateMessage` a `ProcessDialogResults` metody jsou přidány později v tomto návodu.
 
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>Přidání zpracování chyb pro chyba souběžnosti
 
@@ -183,7 +183,7 @@ Uživatel je pak možné přepsat databázi navrhované verzí, nebo zrušit akt
      [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>Zpracovat odpověď uživatele
- Musíte taky kód se zpracovat odpověď uživatele do pole zpráva. Možnosti jsou buď na aktuální záznam v databázi přepsat navrhované změny, nebo zrušte místní změny a aktualizujte tabulku dat s záznam, který je aktuálně v databázi. Pokud se uživatel rozhodne Ano, <xref:System.Data.DataTable.Merge%2A> metoda je volána s *preserveChanges* argument nastaven na hodnotu `true`. To způsobí, že pokus o aktualizaci být úspěšné, protože původní verzi záznamu teď odpovídající záznam v databázi.
+ Musíte taky kód se zpracovat odpověď uživatele do pole zpráva. Možnosti jsou buď na aktuální záznam v databázi přepsat navrhované změny, nebo zrušte místní změny a aktualizujte tabulku dat s záznam, který je aktuálně v databázi. Pokud se uživatel rozhodne **Ano**, <xref:System.Data.DataTable.Merge%2A> metoda je volána s *preserveChanges* argument nastaven na hodnotu `true`. To způsobí, že pokus o aktualizaci být úspěšné, protože původní verzi záznamu teď odpovídající záznam v databázi.
 
 ##### <a name="to-process-the-user-input-from-the-message-box"></a>Při zpracování uživatele vstup z okno se zprávou
 
@@ -193,7 +193,7 @@ Uživatel je pak možné přepsat databázi navrhované verzí, nebo zrušit akt
      [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
 ## <a name="test-the-form"></a>Testování formuláře
- Nyní můžete otestovat formuláře a ujistěte se, že se chová podle očekávání. Pro simulaci narušení souběžnosti, budete muset změnit data v databázi po vyplnění NorthwindDataSet.
+ Nyní můžete otestovat formuláře a ujistěte se, že se chová podle očekávání. K simulaci narušení souběžnosti, změníte po vyplnění NorthwindDataSet data v databázi.
 
 #### <a name="to-test-the-form"></a>Postup testování formuláře
 

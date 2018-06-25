@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a46ab4db647c60f451ae2f9d5c9d68e654de7084
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747427"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757250"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Vytváření aplikací s nativním uživatelským rozhraním pomocí Xamarinu v sadě Visual Studio
 
@@ -50,7 +50,7 @@ Můžete to udělat ji od sestavit tyto věci:
 >  -   Xamarin aplikace s nativní uživatelského rozhraní:
 >     -   [Hello, Android](/xamarin/android/get-started/hello-android/) (jednoduché aplikace s jednu obrazovku)
 >     -   [Hello, Android Multiobrazovka](/xamarin/android/get-started/hello-android-multiscreen/) (aplikace s navigace mezi obrazovkami)
->     -   [Android návod fragmenty](/xamarin/android/platform/fragments/fragments/implementing-with-fragments/walkthrough/) (používá se pro obrazovky a podrobností, mimo jiné)
+>     -   [Android návod fragmenty](/xamarin/android/platform/fragments/implementing-with-fragments/) (používá se pro obrazovky a podrobností, mimo jiné)
 >     -   [Hello, iOS](/xamarin/ios/get-started/hello-iOS/)
 >     -   [Hello, iOS s více obrazovkami](/xamarin/ios/get-started/hello-iOS-multiscreen/)
 
@@ -249,10 +249,10 @@ Visual Studio není k dispozici šablona řešení pro vytváření nativních a
 
     |Vlastnost|Hodnota|
     |--------------|-----------|
-    |**Text**|**Vyhledávání podle PSČ**|
+    |**text**|**Vyhledávání podle PSČ**|
     |**id**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginStart**|`10dp`|
-    |**TextColor**|`@android:color/white`|
+    |**textColor**|`@android:color/white`|
     |**stylu písma**|`bold`|
 
     > [!TIP]
@@ -280,11 +280,11 @@ Visual Studio není k dispozici šablona řešení pro vytváření nativních a
 
     |Vlastnost|Hodnota|
     |--------------|-----------|
-    |**Text**|**PSČ**|
+    |**text**|**PSČ**|
     |**id**|`@+id/ZipCodeLabel`|
     |**layout_marginStart**|`10dp`|
     |**layout_marginTop**|`6dp`|
-    |**TextColor**|`@android:color/white`|
+    |**textColor**|`@android:color/white`|
 
     Tady je jak kód **zdroj** zobrazení by měl vypadat:
 
@@ -308,7 +308,7 @@ Visual Studio není k dispozici šablona řešení pro vytváření nativních a
     |**layout_marginStart**|`10dp`|
     |**layout_marginBottom**|`10dp`|
     |**Šířka**|`165dp`|
-    |**TextColor**|`@android:color/white`|
+    |**textColor**|`@android:color/white`|
 
     **Číslo** ovládací prvek je, kde bude uživatel zadat kód zip Spojených států pět číslic. Zde je kód, který odpovídá u daného ovládacího prvku:
 
@@ -330,7 +330,7 @@ Visual Studio není k dispozici šablona řešení pro vytváření nativních a
     |Vlastnost|Hodnota|
     |--------------|-----------|
     |**id**|`@+id/weatherBtn`|
-    |**Text**|**Získat informace o počasí**|
+    |**text**|**Získat informace o počasí**|
     |**layout_marginStart**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
     |**Šířka**|`165dp`|

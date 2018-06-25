@@ -13,19 +13,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 315bed179a21ec99a256fcc8cb16f6fc1164f238
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7b154b970d2a738e80efa5cbf669d29bd7bae589
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917065"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756763"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Vytváření vyhledávacích tabulek v aplikacích Windows Forms
 Termín *vyhledávací tabulky* popisuje ovládací prvky vázané na dva souvisejících dat tabulky. Tyto vyhledávací ovládací prvky zobrazují data v první tabulce na základě hodnoty vybrané v druhé tabulce.
 
  Vyhledávací tabulky můžete vytvořit tak, že přetáhnete hlavní uzel nadřazené tabulky (z [okno zdroje dat](add-new-data-sources.md)) na ovládací prvek na formuláři, který je již vázána na sloupec v tabulce souvisejících podřízených.
 
- Předpokládejme například tabulku `Orders` v prodejní databázi. Každý záznam v `Orders` tabulka obsahuje `CustomerID`, která určuje, které zákazníka umístit pořadí. `CustomerID` je cizí klíč odkazující na záznam zákazníka v tabulce `Customers`. V tomto scénáři můžete rozšířit `Orders` tabulky v **zdroje dat** okna a nastavte hlavní uzel na **podrobnosti**. Nastavte `CustomerID` sloupec používat <xref:System.Windows.Forms.ComboBox> (nebo všechny ostatní ovládací prvek, který podporuje vyhledávání vazby) a přetáhněte ji `Orders` uzlu do formuláře. Nakonec přetáhněte `Customers` uzlu na ovládací prvek, který je vázána na sloupec v relaci – v takovém případě <xref:System.Windows.Forms.ComboBox> vázána `CustomerID` sloupec.
+ Předpokládejme například tabulku `Orders` v prodejní databázi. Každý záznam v `Orders` tabulka obsahuje `CustomerID`, která určuje, které zákazníka umístit pořadí. `CustomerID` je cizí klíč odkazující na záznam zákazníka v tabulce `Customers`. V tomto scénáři můžete rozšířit `Orders` tabulky v **zdroje dat** okna a nastavte hlavní uzel na **podrobnosti**. Potom nastavte `CustomerID` sloupec používat <xref:System.Windows.Forms.ComboBox> (nebo všechny ostatní ovládací prvek, který podporuje vyhledávání vazby) a přetáhněte ji `Orders` uzlu do formuláře. Nakonec přetáhněte `Customers` uzlu na ovládací prvek, který je vázána na sloupec v relaci – v takovém případě <xref:System.Windows.Forms.ComboBox> vázána `CustomerID` sloupec.
 
 ## <a name="to-databind-a-lookup-control"></a>Vytvoření datové vazby ovládacího prvku vyhledávání
 
@@ -47,17 +47,17 @@ Termín *vyhledávací tabulky* popisuje ovládací prvky vázané na dva souvis
 
      Na formuláři se zobrazí ovládací prvky s datovou vazbou (včetně popisků) a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>). A [datovou sadu](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> se zobrazí v okně komponent.
 
-6.  Nyní přetáhněte hlavní nadřazený uzel tabulky z **zdroje dat** okna přímo do ovládacího prvku vyhledávání ( <xref:System.Windows.Forms.ComboBox>).
+6.  Nyní, přetáhněte hlavní nadřazený uzel tabulky z **zdroje dat** okna přímo do ovládacího prvku vyhledávání ( <xref:System.Windows.Forms.ComboBox>).
 
-     Nyní jsou vytvořeny vazby vyhledávání. Specifické vlastnosti, které byly nastaveny na ovládacím prvku, naleznete v tabulce níže.
+     Nyní jsou vytvořeny vazby vyhledávání. Naleznete v následující tabulce pro konkrétní vlastnosti, které byly nastavené na ovládací prvek.
 
     |Vlastnost|Vysvětlivky k nastavení|
     |--------------|----------------------------|
-    |**zdroj dat**|Aplikace Visual Studio nastaví tuto vlastnost na zdroj <xref:System.Windows.Forms.BindingSource> vytvořený pro tabulku, která byla přetažena na ovládací prvek (na rozdíl od zdroje <xref:System.Windows.Forms.BindingSource> vytvořeného při vytvoření ovládacího prvku).<br /><br /> Pokud je nutné provést úpravu, nastavte ji na zdroj <xref:System.Windows.Forms.BindingSource> tabulky se sloupcem, který chcete zobrazit.|
-    |**DisplayMember**|Aplikace Visual Studio nastaví tuto vlastnost na první sloupec po primárním klíči, který má datový typ řetězec, u tabulky, která je přetažena na ovládací prvek.<br /><br /> Pokud je nutné provést úpravu, nastavte tuto vlastnost na název sloupce, který chcete zobrazit.|
-    |**ValueMember**|Aplikace Visual Studio nastaví tuto vlastnost na první sloupec, který je součástí primárního klíče, nebo na první sloupec v tabulce, pokud není definován žádný klíč.<br /><br /> Pokud je nutné provést úpravu, nastavte tuto vlastnost na primární klíč u tabulky se sloupcem, který chcete zobrazit.|
-    |**SelectedValue**|Visual Studio tato vlastnost nastaví na původní sloupec vyřadit z **zdroje dat** okno.<br /><br /> Pokud je nutné provést úpravu, proveďte nastavení na sloupec cizího klíče v související tabulce.|
+    |**Zdroj dat**|Visual Studio tato vlastnost nastaví na <xref:System.Windows.Forms.BindingSource>, které byly vytvořeny pro tabulku přetáhněte do ovládacího prvku (Naproti tomu <xref:System.Windows.Forms.BindingSource>, vytvoření ovládacího prvku v okamžiku vytvoření).<br /><br /> Pokud potřebujete provést úpravu, nastavte na <xref:System.Windows.Forms.BindingSource> tabulky se sloupcem chcete zobrazit.|
+    |**DisplayMember**|Aplikace Visual Studio nastaví tuto vlastnost na první sloupec po primárním klíči, který má datový typ řetězec, u tabulky, která je přetažena na ovládací prvek.<br /><br /> Pokud potřebujete provést úpravu, nastavte na název sloupce, které chcete zobrazit.|
+    |**ValueMember**|Aplikace Visual Studio nastaví tuto vlastnost na první sloupec, který je součástí primárního klíče, nebo na první sloupec v tabulce, pokud není definován žádný klíč.<br /><br /> Pokud potřebujete provést úpravu, nastavte hodnotu primární klíč v tabulce s sloupec, který chcete zobrazit.|
+    |**SelectedValue**|Visual Studio tato vlastnost nastaví na původní sloupec vyřadit z **zdroje dat** okno.<br /><br /> Pokud potřebujete provést úpravu, nastavením sloupec cizího klíče v tabulce v relaci.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

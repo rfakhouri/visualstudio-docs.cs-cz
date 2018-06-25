@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76c00f33bfcf277dcad9fdda32661b29e08bbfc3
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d3a5cebc3cb04872ff9266a2fa404b261a32c2d6
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748954"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757094"
 ---
 # <a name="create-and-configure-tableadapters"></a>Vytvoření a konfigurace objektů TableAdapter
 Objekty TableAdapter umožňují komunikaci mezi aplikací a databází. Připojení k databázi, spusťte dotazy nebo uložené procedury a vraťte se nová data tabulky nebo zadejte existující <xref:System.Data.DataTable> s vrácená data. TableAdapters můžete také odeslat aktualizovaná data z vaší aplikace zpět do databáze.
@@ -32,7 +32,7 @@ TableAdapters jsou vytvořeny pro můžete provést jednu z následujících akc
 
 -   Přetáhněte objekty databáze z **Průzkumníka serveru** do **návrháře Dataset**.
 
-Můžete také vytvořit nové TableAdapter a nakonfigurovat ho se zdrojem dat tak, že přetáhnete TableAdapter z panelu nástrojů na prázdnou oblast v **návrháře Dataset** prostor.
+Můžete také vytvořit nové TableAdapter a nakonfigurovat ho se zdrojem dat tak, že přetáhnete TableAdapter z **sada nástrojů** do prázdné oblasti v **návrháře Dataset** prostor.
 
 Úvod do prvků TableAdapters, najdete v části [vyplnění datové sady s použitím TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
@@ -98,11 +98,11 @@ Následující příklad ukazuje, jak volat další dotaz s názvem `FillByCity`
 -   Pokud upravujete existující dotaz TableAdapter, klikněte pravým tlačítkem na dotaz a potom vyberte **konfigurace** z místní nabídky.
 
     > [!NOTE]
-    >  Pravým tlačítkem myši na hlavním dotazu TableAdapter změní konfiguraci TableAdapter a <xref:System.Data.DataTable> schématu. Pravým tlačítkem myši na TableAdapter další dotaz, ale lze konfigurovat pouze vybraný dotaz. **Průvodce nastavením TableAdapter** překonfigurujete definici TableAdapter, zatímco Průvodce konfigurací dotazu TableAdapter překonfigurujete pouze vybraný dotaz.
+    >  Pravým tlačítkem myši na hlavním dotazu TableAdapter změní konfiguraci TableAdapter a <xref:System.Data.DataTable> schématu. Pravým tlačítkem myši na TableAdapter další dotaz, ale lze konfigurovat pouze vybraný dotaz. **Průvodce nastavením TableAdapter** překonfigurujete definici TableAdapter při **Průvodce nastavením dotazu TableAdapter** překonfigurujete pouze vybraný dotaz.
 
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>Přidání globálního dotazu do TableAdapter
 
--   *Globální dotazy* jsou dotazů SQL, které vrátí jednu hodnotu (skalární) nebo žádná hodnota. Globální funkce obvykle provádět operace databáze, například vložení, aktualizace, odstraní. Budou také shromažďovat informace, například počet zákazníků v tabulce nebo celkové náklady pro všechny položky v určitém pořadí.
+-   Globální dotazy jsou dotazů SQL, které vrátí jednu hodnotu (skalární) nebo žádná hodnota. Globální funkce obvykle provádět databázové operace jako je například vložení, aktualizace a odstranění. Budou také shromažďovat informace, například počet zákazníků v tabulce nebo celkové náklady pro všechny položky v určitém pořadí.
 
      Přidávání globálních dotazů přetažením **dotazu** objektu z **datovou sadu** kartě **sada nástrojů** na prázdnou oblast **návrháře Dataset**.
 

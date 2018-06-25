@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c5625f42489752647da57fad9956cff8c64b8f5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83ae11cad7e132bd13bb930607abd40011e0392a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974397"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756464"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > Návrhář aktivity
 
@@ -27,7 +27,7 @@ ms.locfileid: "31974397"
  <xref:System.Activities.Statements.ExistsInCollection%601> Aktivity Určuje, zda zadaná položka existuje v určité kolekci.
 
 ### <a name="using-the-existsincollectiont-activity-designer"></a>Pomocí ExistsInCollection\<T > Návrhář aktivity
- **ExistsInCollection\<T >** Návrhář aktivity naleznete v **kolekce** kategorii **sada nástrojů**, což je dostat kliknutím  **Sada nástrojů** karta Návrháře pracovního postupu (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
+ **ExistsInCollection\<T >** Návrhář aktivity naleznete v **kolekce** kategorii **sada nástrojů**, což je dostat kliknutím  **Sada nástrojů** karta Návrháře pracovního postupu. Případně vyberte možnost **sada nástrojů** z **zobrazení** nabídky, nebo klikněte na tlačítko **Ctrl**+**Alt** + **X**.
 
  **ExistsInCollection\<T >** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na aktivity jsou obvykle umístěny, například jako uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.ExistsInCollection%601> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z ExistsInCollection < Int32\>. (Ve výchozím nastavení, *TypeArgument* je **Int32**. Ho můžete změnit v tabulce vlastností.)  <xref:System.Activities.Activity.DisplayName%2A> Hodnota se dá upravit v hlavičce **ExistsInCollection < T\>**  Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností. Ostatní vlastnosti musí být upravit na mřížku vlastností.
 
@@ -42,7 +42,7 @@ ms.locfileid: "31974397"
 |*TypeArgument*|Hodnota TRUE|Typ T položek, které jsou součástí <xref:System.Collections.Generic.ICollection%601>. Ve výchozím nastavení to *TypeArgument* je typ nastaven na **Int32**. Chcete-li změnit typ, změňte hodnotu *TypeArgument* do pole se seznamem v tabulce vlastností.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|Hodnota, která označuje, zda zadaná položka existuje v kolekci. Pokud chcete zadat proměnnou pro vazbu na výsledek, zadejte proměnnou jazyka Visual Basic v tabulce vlastností.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Kolekce](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)

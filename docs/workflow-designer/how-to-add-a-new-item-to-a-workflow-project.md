@@ -1,6 +1,6 @@
 ---
 title: 'Návrhář postupu provádění - postupy: Přidání nové položky do projektu pracovního postupu'
-ms.date: 11/04/2016
+ms.date: 06/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
 ms.technology: vs-workflow-designer
@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0aa2be7fd8ecccbd8de0aa54c2693dd6b02c7e10
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3f1202c87986eab6af899a3d4c3b7a5f62e5af6
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971638"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757676"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Postupy: Přidání nové položky do projektu pracovního postupu
 
 Po vytvoření projektu workflow, můžete přidat do projektu aktivity pracovního postupu, Designer a další známé položky Visual Studio.
 
-Následující tabulka uvádí položky Windows Workflow Foundation (WF), které můžete přidat do projektu pracovního postupu.
+Následující tabulka uvádí položky Windows Workflow Foundation (WF), které můžete přidat do projektu pracovního postupu:
 
 |Název|Popis|
 |----------|-----------------|
@@ -32,18 +32,19 @@ Následující tabulka uvádí položky Windows Workflow Foundation (WF), které
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Chcete-li přidat novou položku do projektu pracovního postupu
 
-1.  Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku...** .
+1. Na **projektu** nabídce vyberte možnost **přidat novou položku**.
 
-     **Přidat novou položku** otevře se dialogové okno.
+   **Přidat novou položku** otevře se dialogové okno.
 
-2.  V **nainstalovaných šablonách** podokně, vyberte **pracovního postupu** skupiny.
+1. V levém podokně, vyberte **pracovního postupu** kategorie a potom vyberte šablonu položky pracovního postupu.
 
-3.  Vyberte jeden ze čtyř položky. V předchozí tabulce jsou uvedeny možnosti, které jsou k dispozici.
+   > [!NOTE]
+   > Pokud nevidíte **pracovního postupu** kategorie, první instalaci **modelu Windows Workflow Foundation** součást produktu Visual Studio 2017. Podrobné pokyny najdete v tématu [nainstalovat Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-4.  Zadejte vhodný název pro položku v **název** pole v dolní části dialogových oken.
+1. Zadejte název položky v **název** pole v dolní části dialogových oken.
 
-5.  Klikněte na tlačítko **přidat** přidat položku do aktuálního projektu pracovního postupu.
+1. Vyberte **přidat** přidat položku do projektu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Vytvoření projektu pracovního postupu](../workflow-designer/creating-a-workflow-project.md)
+- [Vytvořit projekt workflow](../workflow-designer/creating-a-workflow-project.md)

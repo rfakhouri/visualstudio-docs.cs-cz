@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ca7f4befcb75a48e5b03637c143edfdd81b428a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 8f7508cf8c66343894c16da7ff840bd275abb65c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767738"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755895"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Postupy: Přidání stávajícího souboru modelu služby BDC do projektu služby SharePoint
   Můžete přizpůsobit, balíčků a znovu nasadit model Business Data Connectivity (BDC) pomocí sady Visual Studio přidat soubor modelu (*.bdcm*) k žádným projektem farmy služby SharePoint. Další informace najdete v tématu [vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md).  

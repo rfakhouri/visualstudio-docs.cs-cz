@@ -1,5 +1,5 @@
 ---
-title: Chybové zprávy v Návrháři pracovních postupů
+title: Chybové zprávy v návrháři postupu provádění
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c644922f240cd07c47e68e65432289c68bbe318
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83cbde06b10d1201c7e69c1823714007dfa57397
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971898"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755580"
 ---
-# <a name="error-messages-in-workflow-designer"></a>Chybové zprávy v Návrháři pracovních postupů
+# <a name="error-messages-in-workflow-designer"></a>Chybové zprávy v návrháři postupu provádění
 
-Toto téma popisuje typy chybové zprávy, které můžete došlo při práci s Návrháře pracovního postupu systému Windows.
+Toto téma popisuje typy chybové zprávy, které mohou být zjištěny při práci s návrháře pracovních postupů.
 
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Situace, v nichž dochází k chybám v Návrháři pracovních postupů
 

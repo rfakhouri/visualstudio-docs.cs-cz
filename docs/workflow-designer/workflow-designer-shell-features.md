@@ -1,5 +1,5 @@
 ---
-title: Funkce pracovního postupu návrháře prostředí
+title: Funkce prostředí návrháře postupu provádění
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4644d9bfa336b85b9ad124751db4f3fb0417475c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5d881a6c6e14983fd8537d8e78066ef9479b9633
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973705"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757200"
 ---
-# <a name="workflow-designer-shell-features"></a>Funkce pracovního postupu návrháře prostředí
+# <a name="workflow-designer-shell-features"></a>Funkce prostředí návrháře postupu provádění
 
-Návrháři pracovních postupů Windows se skládá ze tří hlavních oblastí uživatelského rozhraní: plochu návrháře, navigačního panelu nad ním a pod ním prostředí. Navigačního panelu, umístěný v horní části obrazovky se používá k zobrazení seznamu nadřazených aktuální kořenové aktivity. Další informace najdete v tématu [postupy: použití navigace](../workflow-designer/how-to-use-breadcrumb-navigation.md). Plochu návrháře umístěný v centru obrazovky se používá k vytváření pracovních postupů. Prostředí, umístěný v dolní části obrazovky, obsahuje řadu tlačítek pro Správa aktuálního zobrazení.
+Návrhář postupu provádění se skládá ze tří hlavních oblastí uživatelského rozhraní: plochu návrháře, navigačního panelu nad ním a pod ním prostředí. Navigačního panelu, umístěný v horní části obrazovky se používá k zobrazení seznamu nadřazených aktuální kořenové aktivity. Další informace najdete v tématu [postupy: použití navigace](../workflow-designer/how-to-use-breadcrumb-navigation.md). Plochu návrháře umístěný v centru obrazovky se používá k vytváření pracovních postupů. Prostředí, umístěný v dolní části obrazovky, obsahuje řadu tlačítek pro Správa aktuálního zobrazení.
 
 ## <a name="shell-features"></a>Funkce prostředí
  Prostředí má tlačítka na pravé straně panelu můžete zvětšit nebo zmenšit pracovní postup, podle obsahu pracovního postupu na velikost obrazovky a zobrazit nebo skrýt mapu přehledu. Také můžete zvětšit nebo zmenšit pracovní postup pomocí klávesové zkratky CTRL ++ a CTRL +-.
@@ -39,4 +39,4 @@ Návrháři pracovních postupů Windows se skládá ze tří hlavních oblastí
 
 ## <a name="fonts-and-colors"></a>Písma a barev
 
-Písma použitá v Návrháři pracovních postupů v sadě Visual Studio 2010 jsou řízeny písmo prostředí. Pokud používáte schéma s vysokým kontrastem barvu motivu operačního systému změnit barev zobrazí v Návrháři pracovních postupů. Visual Studio 2010 je nutné restartovat po provedení změny nastavení písma a barev, než změny se projeví v Návrháři pracovních postupů.
+Písma použitá v Návrháři pracovních postupů v prostředí Visual Studio jsou řízeny písmo prostředí. Pokud používáte schéma s vysokým kontrastem barvu motivu operačního systému změnit barev zobrazí v Návrháři pracovních postupů. Po provedení změny nastavení písma a barev, než změny se projeví v Návrháři pracovních postupů, musíte restartovat Visual Studio.

@@ -23,19 +23,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 513ac512c1f4bd368e069ceaf8448d5712a23b4e
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 2b1d1567feba85023d6d7bf5fc1bc1e43ca15482
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234563"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757263"
 ---
 # <a name="hierarchical-update"></a>Hierarchická aktualizace
 *Hierarchická aktualizace* odkazuje na proces ukládání aktualizovaná data (z datové sady s dvou nebo více souvisejících tabulek) zpět do databáze při zachování pravidla referenční integrity. *Referenční integrity* odkazuje na pravidla konzistence poskytované omezení v databázi, která řídí chování vkládání, aktualizaci a odstraňování souvisejících záznamů. Například je referenční integrity, který vynutí vytvoření záznamu zákazníka před povolením objednávky vytvoření tohoto zákazníka.  Další informace o vztahy v datových sadách najdete v tématu [vztahy v datových sadách](../data-tools/relationships-in-datasets.md)
 
  Hierarchická aktualizace funkce používá `TableAdapterManager` ke správě `TableAdapter`s v typové datové sady. `TableAdapterManager` Součást je třída generovaný Visual Studio, takže není součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Při přetažení tabulku z okna zdrojů dat na stránku WPF nebo do formulářů Windows Visual Studio. přidá proměnné typu TableAdapterManager formulář nebo stránky a zobrazení v Návrháři na hlavním panelu součásti. Podrobné informace o `TableAdapterManager` třídy, najdete v části odkaz TableAdapterManager [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
- Ve výchozím nastavení datové sady související tabulky jsou považovány za "pouze vztahy" což znamená, že ji nebude vynutit omezení cizího klíče. Toto nastavení v době návrhu můžete upravit pomocí návrháře Dataset. Vyberte řádek vztah mezi dvěma tabulkami se zprovoznit **vztah** dialogové okno. Zde provedené změny se určí, jak TableAdapterManager chová při odesílání změny v souvisejících tabulek zpět do databáze.
+ Ve výchozím nastavení datové sady související tabulky jsou považovány za "pouze vztahy" což znamená, že ji nebude vynutit omezení cizího klíče. Je-li změnit toto nastavení v době návrhu pomocí **návrháře Dataset**. Vyberte řádek vztah mezi dvěma tabulkami se zprovoznit **vztah** dialogové okno. Zde provedené změny se určí, jak `TableAdapterManager` chová při odesílání změny v souvisejících tabulek zpět do databáze.
 
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Povolit hierarchické aktualizace v datové sadě
  Hierarchická aktualizace je standardně zapnuté pro všechny nové datové sady, které se přidají nebo vytvoření v projektu. Hierarchická aktualizace zapnout nebo vypnout pomocí nastavení **hierarchické aktualizace** vlastnost typové datové sady v datové sadě na **True** nebo **False**:
@@ -78,7 +78,7 @@ ms.locfileid: "36234563"
  Uložit vygenerovaného kódu také obsahuje řádek kódu, který volá `CustomersBindingSource.EndEdit` metoda. Přesněji řečeno, zavolá <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda první <xref:System.Windows.Forms.BindingSource>přidaná do formuláře. Jinými slovy, tento kód se vygeneruje pouze pro první tabulka, která je přetažen z **zdroje dat** window do formuláře. <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Volání potvrdí všechny změny, které jsou v procesu v všechny ovládací prvky vázané na data, které jsou aktuálně Upravovaný. Proto pokud stále má ovládací prvek vázané na data fokus a klikněte na tlačítko **Uložit** tlačítko všechna nevyřízená úpravy v tom, že jsou před skutečným uložit potvrzené ovládací prvek ( `TableAdapterManager.UpdateAll` metoda).
 
 > [!NOTE]
->  Návrháři Dataset přidá jenom `BindingSource.EndEdit` kód pro první tabulka, která umístění na formuláři. Proto je nutné přidat řádek kódu pro volání `BindingSource.EndEdit` metoda pro každou související tabulku na formuláři. V tomto návodu, to znamená, budete muset přidat volání `OrdersBindingSource.EndEdit` metoda.
+>  **Návrháře Dataset** přidá jenom `BindingSource.EndEdit` kód pro první tabulka, která umístění na formuláři. Proto je nutné přidat řádek kódu pro volání `BindingSource.EndEdit` metoda pro každou související tabulku na formuláři. V tomto návodu, to znamená, budete muset přidat volání `OrdersBindingSource.EndEdit` metoda.
 
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Chcete-li aktualizovat kód potvrzení tabulky v relaci před uložením změn
 
@@ -89,7 +89,7 @@ ms.locfileid: "36234563"
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
 
-Kromě potvrzení změn v tabulce souvisejících podřízených před uložením dat do databáze, můžete také chtít potvrzení nově vytvořený nadřazené záznamy před přidáním nové podřízené záznamy do datové sady. Jinými slovy můžete chtít přidat nový záznam nadřazené (zákazníka) k datové sadě než omezení cizích klíčů povolit nové podřízené záznamy (objednávky), který se má přidat k datové sadě. K tomu můžete použít podřízených `BindingSource.AddingNew` událostí.
+Kromě potvrzení změn v tabulce souvisejících podřízených před uložením dat do databáze, můžete také chtít potvrzení nově vytvořený nadřazené záznamy před přidáním nové podřízené záznamy do datové sady. Jinými slovy, budete muset přidat nový záznam nadřazené (`Customer`) k datové sadě než omezení cizích klíčů povolit nové podřízené záznamy (`Orders`) mají být přidány do datové sady. K tomu můžete použít podřízených `BindingSource.AddingNew` událostí.
 
 > [!NOTE]
 > Zda je nutné potvrdit nové nadřazené záznamy, závisí na typu ovládacího prvku, který se používá k vytvoření vazby ke zdroji dat. V tomto návodu pomocí jednotlivých ovládacích prvků pro vazbu v nadřazené tabulce. To vyžaduje další kód nový záznam nadřazené potvrzení. Pokud nadřazené záznamy byly místo zobrazeny v ovládacím prvku složité vazby, jako <xref:System.Windows.Forms.DataGridView>, tento další <xref:System.Windows.Forms.BindingSource.EndEdit%2A> volání pro nadřazený záznam nebude nutné. Je to proto, že základní funkce vazby dat ovládacího prvku zpracovává potvrzení nové záznamy.
@@ -106,11 +106,12 @@ Kromě potvrzení změn v tabulce souvisejících podřízených před uložení
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
 
 ## <a name="tableadaptermanager-reference"></a>TableAdapterManager odkaz
- Ve výchozím nastavení `TableAdapterManager` třídy se vygeneruje, když vytvoříte datovou sadu, která obsahuje související tabulky. Abyste zabránili generovaná třída, změňte hodnotu `Hierarchical Update` vlastnosti datové sady na hodnotu false. Při přetažení tabulku, která má vztah na návrhovou plochu formuláře Windows nebo WPF stránky, Visual Studio deklaruje členské proměnné třídy. Pokud nepoužijete vazby dat, budete muset ručně deklarovat proměnnou.
 
- `TableAdapterManager` Třída není součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Proto je nelze jej vyhledat v dokumentaci. Je vytvořen v době návrhu jako součást procesu vytváření datové sady.
+Ve výchozím nastavení `TableAdapterManager` třídy se vygeneruje, když vytvoříte datovou sadu, která obsahuje související tabulky. Abyste zabránili generovaná třída, změňte hodnotu `Hierarchical Update` vlastnosti datové sady na hodnotu false. Při přetažení tabulku, která má vztah na návrhovou plochu formuláře Windows nebo WPF stránky, Visual Studio deklaruje členské proměnné třídy. Pokud nepoužijete vazby dat, budete muset ručně deklarovat proměnnou.
 
- Toto jsou často používané metody a vlastnosti `TableAdapterManager` třídy:
+`TableAdapterManager` Třída není součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Proto je nelze jej vyhledat v dokumentaci. Je vytvořen v době návrhu jako součást procesu vytváření datové sady.
+
+Toto jsou často používané metody a vlastnosti `TableAdapterManager` třídy:
 
 |Člen|Popis|
 |------------|-----------------|

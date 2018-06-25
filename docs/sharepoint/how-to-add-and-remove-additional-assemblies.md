@@ -19,19 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ddfdc09f27d5c94445064c064772e812779dcf08
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e5ff6fd7c9e78871d180f08c6148c25fbede3583
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767774"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756285"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Postupy: Přidání a odebrání dalších sestavení
   Pokud balíček SharePoint závisí na jiných sestavení pro funkce nebo data, můžete přidat sestavení do vašeho řešení balíčku (WSP). Tímto způsobem, serveru SharePoint zajišťuje, že vlastní sestavení jsou nainstalovány s balíčkem.  
   
  Můžete také přidat a změnit bezpečné ovládací prvky a třída prostředků soubory přidružené k sestavení.  
   
-## <a name="adding-additional-assemblies-safe-controls-and-class-resources"></a>Přidání dalších sestavení, bezpečné ovládací prvky a prostředky – třída  
+## <a name="add-additional-assemblies-safe-controls-and-class-resources"></a>Přidání dalších sestavení, bezpečné ovládací prvky a prostředky – třída  
  Můžete přidat další sestavení do balíčku řešení služby SharePoint. Další sestavení v řešení v izolovaném prostoru nasadit do globální mezipaměti sestavení, ale SharePoint – položky projektu v řešení v izolovaném prostoru jsou přidány do databáze s obsahem. Bezpečné ovládací prvky a třída prostředků můžete také přidat na tyto další sestavení. Další informace o bezpečné ovládací prvky najdete v tématu [poskytování balení a informace o nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) nebo "Vytváření SafeControl – záznam" v [nasazení webové části v SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=245505).  
   
 #### <a name="to-add-an-existing-assembly"></a>Přidat existující sestavení  
@@ -84,7 +84,7 @@ ms.locfileid: "34767774"
   
 3.  V **název souboru** sloupce, zvolte se třemi tečkami (![ASP.NET – Návrhář mobilních řešení elipsy](../sharepoint/media/mwellipsis.gif "ASP.NET – Návrhář mobilních řešení elipsy")) a vyberte třídu prostředek, který chcete přidat.  
   
-## <a name="deleting-custom-assemblies"></a>Odstranění vlastní sestavení  
+## <a name="delete-custom-assemblies"></a>Odstranit vlastní sestavení  
  Lze odstranit sestavení z balíčku služby SharePoint, nebo odstranit bezpečné ovládací prvky a prostředky třídy z existujících sestavení.  
   
 #### <a name="to-delete-an-existing-assembly"></a>Chcete-li odstranit existující sestavení  
@@ -116,5 +116,5 @@ ms.locfileid: "34767774"
 ## <a name="see-also"></a>Viz také:
  [Vytváření funkcí služby SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Postupy: přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Postupy: Přidání a odebrání položek z funkcí služby SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
+ [Postupy: Přidání a odebrání položek z funkcí služby SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
   

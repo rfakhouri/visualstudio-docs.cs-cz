@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92f3e35d4182297601741bd603aa3c5a17e54d67
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bea570ea8af34a7b448bbdf4b7367c96d8085907
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975063"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757616"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Postupy: použití navigace s popisem cesty
 
-Chcete-li změnit sadu aktivit, které se zobrazují v Návrháři pracovních postupů Windows třemi způsoby:
+Chcete-li změnit sadu aktivit, které se zobrazují v Návrháři pracovních postupů třemi způsoby:
 
 1.  Dvakrát klikněte na panel přejdete podřízené aktivity.
 

@@ -13,28 +13,28 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b47df77b9666b46f24665e9c99cbf9a0c52593cd
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bbf478424551e446ca9853dae77edb4e5b61d974
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746569"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756029"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Vytvoření a konfigurace datových sad v sadě Visual Studio
 
-A *datovou sadu* sadu objektů, které ukládají data z databáze v paměti a podporu, chcete-li povolit sledování změn je vytvářet, číst, aktualizovat a odstraňovat operace na data bez nutnosti byly neustále připojené k databázi. Datové sady byly navrženy pro jednoduché *forms nad daty* obchodních aplikací. Pro nové aplikace zvažte použití rozhraní Entity Framework pro ukládání a modelu data v paměti. Pro práci s datovými sadami, byste měli mít základní znalosti koncepce databáze.
+Datová sada obsahuje sadu objektů, které ukládají data z databáze v paměti a sledování změn, chcete-li povolit podporu vytvořit, číst, aktualizovat a odstranit operace na data bez nutnosti byly neustále připojené k databázi. Datové sady byly navrženy pro jednoduché *forms nad daty* obchodních aplikací. Pro nové aplikace zvažte použití rozhraní Entity Framework pro ukládání a modelu data v paměti. Pro práci s datovými sadami, byste měli mít základní znalosti koncepce databáze.
 
-Vytvoříte představuje zadaný <xref:System.Data.DataSet> třídy v sadě Visual Studio v době návrhu pomocí **Průvodce konfigurací zdroje dat**. Informace o vytváření datových sad prostřednictvím kódu programu najdete v tématu [vytváření datovou sadu (ADO.NET)](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).
+Vytvoříte představuje zadaný <xref:System.Data.DataSet> třídy v sadě Visual Studio v době návrhu pomocí **Průvodce konfigurací zdroje dat**. Informace o vytváření datových sad prostřednictvím kódu programu najdete v tématu [vytvoření datové sady (ADO.NET)](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Vytvořit novou sadu dat pomocí Průvodce konfigurací zdroje dat
 
 1.  Na **projektu** nabídky, klikněte na tlačítko **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.
 
-2.  Vyberte typ zdroje dat, která se připojují k.
+2.  Vyberte typ zdroje dat, ke které se připojují.
 
      ![Průvodce konfigurací zdroje dat](../data-tools/media/data-source-configuration-wizard.png)
 
-3.  Pro databáze vyberte databázi nebo databáze, které bude zdroj dat pro datovou sadu.
+3.  Vyberte databázi nebo databáze, které bude zdroj dat pro datovou sadu.
 
      ![Zdroj dat, vyberte připojení](../data-tools/media/data-source-choose-a-connection.png)
 
@@ -44,11 +44,11 @@ Vytvoříte představuje zadaný <xref:System.Data.DataSet> třídy v sadě Visu
 
 5.  Klikněte na tlačítko **Dokončit**.
 
-6.  Datová sada se zobrazí jako uzel v **Průzkumníku řešení**:
+6.  Datová sada se zobrazí jako uzel v **Průzkumníku řešení**.
 
      ![Datovou sadu v Průzkumníku řešení](../data-tools/media/dataset-in-solution-explorer.png)
 
-     Klikněte na tento uzel a datové sady se zobrazí v **návrháře DataSet**. Všimněte si, že má každá tabulka v datové sadě přidružené TableAdapter objekt, který je reprezentován v dolní části. Adaptér tabulky se používá k naplnění datové sady a volitelně odesílat příkazy do databáze.
+     Klikněte na tento uzel a datové sady se zobrazí v **návrháře DataSet**. Všimněte si, že má každá tabulka v datové sadě přidružené `TableAdapter` objekt, který je reprezentován v dolní části. Adaptér tabulky se používá k naplnění datové sady a volitelně odesílat příkazy do databáze.
 
      ![Návrháři DataSet](../data-tools/media/dataset-designer.png)
 
@@ -86,7 +86,7 @@ Tento postup ukazuje, jak přidat tabulku ze stejné databáze, který jste pou�
 
 2.  Přetáhněte <xref:System.Data.DataTable> třídy z **datovou sadu** kartě **sada nástrojů** na **návrháře Dataset**.
 
-3.  Přidáte sloupce, které chcete definovat datová tabulka. Klikněte pravým tlačítkem na tabulky a zvolte **Přidat > sloupec**. Použití **vlastnosti** okna v případě potřeby nastavte datový typ sloupce a klíč.
+3.  Přidáte sloupce, které chcete definovat datová tabulka. Klikněte pravým tlačítkem na tabulky a zvolte **přidat** > **sloupec**. Použití **vlastnosti** okna v případě potřeby nastavte datový typ sloupce a klíč.
 
 4.  Samostatné tabulky muset implementace `Fill` logiku v samostatných tabulkách tak, že je můžete vložit s daty. Informace o vyplnění tabulky samostatné dat, v tématu [naplňování datové sady z modul DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 

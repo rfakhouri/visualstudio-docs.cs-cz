@@ -17,19 +17,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 560d19c8efeaa6c1cf206bcb40fa0b11347b4217
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e79d4ba6db70876539aa2e85f0579953937cab14
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746517"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756321"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje vyhledávání datová vazba
 Při zobrazování dat ve Windows Forms, můžete zvolit existující ovládacích prvků z **sada nástrojů**, nebo můžete vytvořit vlastní ovládací prvky, pokud vaše aplikace vyžaduje funkce není k dispozici ve standardní ovládací prvky. Tento návod ukazuje postup vytvoření ovládacího prvku, který implementuje <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Určuje, které implementují <xref:System.ComponentModel.LookupBindingPropertiesAttribute> může obsahovat tři vlastnosti, které mohou být vázány na data. Tyto prvky jsou podobné <xref:System.Windows.Forms.ComboBox>.
 
- Další informace o vytváření řízení najdete v tématu [vývoj ovládacích prvků Windows Forms v době návrhu](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
+ Další informace o vytváření řízení najdete v tématu [vývoj Windows Forms – ovládací prvky v době návrhu](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
- Při vytváření ovládacích prvků pro použití v scénáře datových vazeb potřebujete implementovat jednu z následujících atributů datové vazby:
+ Při vytváření ovládacích prvků pro použití ve scénářích vazby dat, je třeba implementovat jednu z následujících atributů datové vazby:
 
 |Používání atributu datová vazba|
 |-----------------------------------|
@@ -37,7 +37,7 @@ Při zobrazování dat ve Windows Forms, můžete zvolit existující ovládací
 |Implementace <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> na ovládací prvky, jako <xref:System.Windows.Forms.DataGridView>, který zobrazí seznamy (nebo tabulky) data. Další informace najdete v tématu [vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje rozšířené datové vazby](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implementace <xref:System.ComponentModel.LookupBindingPropertiesAttribute> na ovládací prvky, jako je <xref:System.Windows.Forms.ComboBox>, které zobrazí seznamy (nebo tabulky) data, ale také muset jeden sloupec nebo vlastnost k dispozici. (Tento proces je popsaný v této stránce návod.)|
 
- Tento návod vytvoří ovládacího prvku vyhledávání, která se váže k datům ze dvou tabulek. Tento příklad používá `Customers` a `Orders` tabulky z ukázková databáze Northwind. Ovládací prvek vyhledávání bude vázán k `CustomerID` pole z `Orders` tabulky. Tato hodnota se bude používat pro vyhledání `CompanyName` z `Customers` tabulky.
+ Tento návod vytvoří ovládacího prvku vyhledávání, která se váže k datům ze dvou tabulek. Tento příklad používá `Customers` a `Orders` tabulky z ukázková databáze Northwind. Ovládacího prvku vyhledávání je vázána `CustomerID` pole z `Orders` tabulky. Tato hodnota používá k vyhledání `CompanyName` z `Customers` tabulky.
 
  Během tohoto návodu se dozvíte, jak:
 
@@ -59,11 +59,11 @@ Při zobrazování dat ve Windows Forms, můžete zvolit existující ovládací
 
 Tento návod používá SQL Server Express LocalDB a ukázková databáze Northwind.
 
-1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.
+1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V **instalační program Visual Studio**, SQL Server Express LocalDB můžete nainstalovat jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.
 
 2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:
 
-    1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz...** .
+    1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz**.
 
        Otevře se okno editoru dotazů.
 
@@ -71,14 +71,14 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
     3. Vložit do editoru dotazů skriptu T-SQL a potom vyberte **Execute** tlačítko.
 
-       Po krátkou dobu dotaz dokončí provádění a vytvoření databáze Northwind.
+       Po krátkou dobu dotaz dokončení spuštění a vytvoření databáze Northwind.
 
 ## <a name="create-a-windows-forms-application"></a>Vytvoření aplikace Windows Forms
  Prvním krokem je vytvoření **formulářové aplikace Windows**.
 
 #### <a name="to-create-the-new-windows-project"></a>Vytvoření nového projektu Windows
 
-1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu...** .
+1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový** > **projektu**.
 
 2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Desktop**.
 
@@ -120,7 +120,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 3.  Z **sestavení** nabídce zvolte **sestavit řešení**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Vytvoření zdroje dat z databáze
-Tento krok vytvoří zdroje dat pomocí **konfigurace zdroje dat**průvodce, na základě `Customers` a `Orders` tabulky v ukázkové databázi Northwind.
+Tento krok vytvoří zdroje dat pomocí **konfigurace zdroje dat** průvodce, na základě `Customers` a `Orders` tabulky v ukázkové databázi Northwind.
 
 #### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat
 
@@ -163,7 +163,7 @@ Tento krok vytvoří zdroje dat pomocí **konfigurace zdroje dat**průvodce, na 
 
 6.  Vyberte **LookupBox** ze seznamu **související ovládací prvky** v **možnosti přizpůsobení uživatelského rozhraní dat** dialogové okno.
 
-7.  Click **OK**.
+7.  Klikněte na tlačítko **OK**.
 
 8.  Klikněte na šipku rozevíracího seznamu **CustomerID** sloupce a vyberte **LookupBox**.
 
@@ -186,10 +186,10 @@ Tento krok vytvoří zdroje dat pomocí **konfigurace zdroje dat**průvodce, na 
 
 #### <a name="to-run-the-application"></a>Ke spuštění aplikace
 
--   Stisknutím klávesy F5 spusťte aplikaci.
+-   Stiskněte klávesu **F5** ke spuštění aplikace.
 
 -   Procházet některé záznamy a ověřte, zda `CompanyName` se zobrazí v `LookupBox` ovládacího prvku.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

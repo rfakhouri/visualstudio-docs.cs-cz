@@ -13,18 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0c4e985231f8e74095add3e8a3a3e412814bed0d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f44264eace04475fc96e42b533a288ef87dd2c2b
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745799"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758480"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Vytvoření jednoduché datové aplikace pomocí ADO.NET
 
 Když vytvoříte aplikaci, která zpracovává data v databázi, můžete provádět základní úlohy, jako je například definování připojovací řetězce, vkládání dat a spuštění uložené procedury. Podle tohoto tématu zjistíte, jak používat databázi v aplikaci jednoduchou aplikaci "forms over data" Windows Forms pomocí Visual C# nebo Visual Basic a ADO.NET.  Všechny dat technologie .NET – včetně datové sady, technologie LINQ to SQL a Entity Framework – nakonec proveďte kroky, které jsou velmi podobné těm, které jsou uvedené v tomto článku.
 
- Tento článek ukazuje jednoduchý způsob, jak získat data z databáze velmi rychlé způsobem. Pokud aplikace potřebuje ke změně dat nejsou v netriviálních způsoby a aktualizaci databáze, měli byste zvážit používající rozhraní Entity Framework a pomocí datové vazby ovládacích prvků uživatelského rozhraní na změny v základních datech automaticky synchronizovat.
+ Tento článek ukazuje jednoduchý způsob, jak získat data z databáze rychlé způsobem. Pokud aplikace potřebuje ke změně dat nejsou v netriviálních způsoby a aktualizaci databáze, měli byste zvážit používající rozhraní Entity Framework a pomocí datové vazby ovládacích prvků uživatelského rozhraní na změny v základních datech automaticky synchronizovat.
 
 > [!IMPORTANT]
 > Pro zjednodušení kód neobsahuje výjimek produkční prostředí.
@@ -45,7 +45,7 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
 
 1. V sadě Visual Studio, otevřete **Průzkumníka serveru** okno.
 
-2. Klikněte pravým tlačítkem na **datová připojení** a zvolte ** Vytvořit novou databázi SQL Server... ".
+2. Klikněte pravým tlačítkem na **připojení dat** a zvolte **vytvořit novou databázi SQL serveru**.
 
 3. V **název serveru** textové pole, zadejte **\mssqllocaldb (localdb)**.
 
@@ -61,21 +61,21 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
 
 7. Vložit do editoru dotazů skriptu T-SQL a potom vyberte **Execute** tlačítko.
 
-     Po krátkou dobu dotaz dokončí provádění a vytvoří se databázové objekty. Databáze obsahuje dvě tabulky: zákazníka a objednávky. Tyto tabulky původně neobsahují žádná data, ale můžete přidat dat při spuštění aplikace, které vytvoříte. Databáze také obsahuje čtyři jednoduché uložené procedury.
+     Po krátkou dobu ukončení dotaz a vytvoří se databázové objekty. Databáze obsahuje dvě tabulky: zákazníka a objednávky. Tyto tabulky původně neobsahují žádná data, ale můžete přidat dat při spuštění aplikace, které vytvoříte. Databáze také obsahuje čtyři jednoduché uložené procedury.
 
 ## <a name="create-the-forms-and-add-controls"></a>Vytvoření formulářů a přidání ovládacích prvků
 
-1.  Vytvořte projekt aplikace Windows Forms a pojmenujte ji SimpleDataApp.
+1.  Vytvoření projektu pro aplikaci Windows Forms a pojmenujte ji **SimpleDataApp**.
 
-     Visual Studio vytvoří projekt a několik souborů, včetně prázdný formuláře Windows, který je pojmenován Form1.
+     Visual Studio vytvoří projekt a několik souborů, včetně prázdný formuláře Windows, který je pojmenován **Form1**.
 
 2.  Do projektu přidejte dva formuláře Windows tak, aby měl tři formulářů a pak jim poskytnout tyto názvy:
 
-    -   Navigace
+    -   **Navigace**
 
-    -   Nový zákazník
+    -   **Nový zákazník**
 
-    -   FillOrCancel
+    -   **FillOrCancel**
 
 3.  Pro každý formulář přidejte do textových polí, tlačítek a jiných ovládacích prvků, které se zobrazují v následující ilustrace. Pro každý ovládací prvek nastavte vlastnosti, které jsou popsány v tabulce.
 
@@ -122,9 +122,9 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
 |Tlačítko|Název = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Připojovací řetězec uložit
- Když se aplikace pokusí otevřít připojení k databázi, aplikace musí mít přístup k připojovací řetězec. Abyste se vyhnuli, zadáte řetězec ručně na každý formulář, řetězec uložit v souboru App.config ve vašem projektu a vytvoření metody, která vrátí řetězec, pokud metoda je volána z libovolného formuláře v aplikaci.
+ Když se aplikace pokusí otevřít připojení k databázi, aplikace musí mít přístup k připojovací řetězec. Abyste se vyhnuli, zadáte řetězec ručně na každý formulář, uložení řetězec v *App.config* souborů ve vašem projektu a vytvoření metody, která vrátí řetězec, pokud metoda je volána z libovolného formuláře v aplikaci.
 
- Kliknutím pravým tlačítkem na můžete najít připojovací řetězec **prodej** datové připojení v **Průzkumníka serveru** a výběr **vlastnosti**. Vyhledejte **ConnectionString** vlastnost a potom pomocí kombinace kláves Ctrl + A Ctrl + C vyberte a zkopírujte řetězec do schránky.
+ Kliknutím pravým tlačítkem na můžete najít připojovací řetězec **prodej** datové připojení v **Průzkumníka serveru** a výběr **vlastnosti**. Vyhledejte **ConnectionString** vlastnost, pak použít **Ctrl**+**A**, **Ctrl**+**C**  vyberte a zkopírujte řetězec do schránky.
 
 1.  Pokud používáte C#, v **Průzkumníku řešení**, rozbalte **vlastnosti** uzlu v rámci projektu a pak otevřete **Settings.settings** souboru.
     Pokud používáte v jazyce Visual Basic **Průzkumníku řešení**, klikněte na tlačítko **zobrazit všechny soubory**, rozbalte **Můj projekt** uzel a potom otevřete **Settings.settings** souboru.
@@ -150,7 +150,7 @@ Navigace otevře při spuštění aplikace. **Přidat účet** tlačítko otevř
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Ujistěte se, navigace formuláři formulář spuštění.
 
-Pokud používáte C#, v **Průzkumníku řešení**, otevřete Program.cs a potom změňte `Application.Run` řádek, který se toto: `Application.Run(new Navigation());`
+Pokud používáte C#, v **Průzkumníku řešení**, otevřete **Program.cs**a poté změňte `Application.Run` řádek, který se toto: `Application.Run(new Navigation());`
 
 Pokud používáte v jazyce Visual Basic **Průzkumníku řešení**, otevřete **vlastnosti** vyberte **aplikace** a pak vyberte  **SimpleDataApp.Navigation** v **formulář spuštění** seznamu.
 

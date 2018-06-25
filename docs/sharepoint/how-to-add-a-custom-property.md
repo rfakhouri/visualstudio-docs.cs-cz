@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85b37d275f2e8c63afff6f301c21794ba2742eaf
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ac95ffcaf686c3ab086f994680e7bce80c330f0f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767946"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756227"
 ---
 # <a name="how-to-add-a-custom-property"></a>Postupy: Přidání uživatelské vlastnosti
   Můžete přidat vlastní vlastnosti modelu pomocí **Editor vlastností**. Tyto vlastnosti můžete načíst informace, jako je připojovací řetězce a dalších dat za běhu v kódu můžete přistupovat.  

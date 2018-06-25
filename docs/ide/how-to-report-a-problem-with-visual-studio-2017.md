@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f59d12fc6e587287c6aa1b72de3404f6d56f23a
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326137"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755921"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Postup nahlásit problém s Visual Studio 2017
 
@@ -38,9 +38,15 @@ Chcete-li nahlásit problém pro sadu Visual Studio, je nutné inicializovat ses
 
    ![Přihlaste se k nahlásit problém](../ide/media/sign-in-new-ux.png)
 
-   Při přihlášení, můžete na něm ohlásit problém, který se má, nebo hlasovat nebo nastavte jako komentář. Můžete také hlasovat nebo publikované na jiný problém, který se zobrazí komentář.
+   Při přihlášení, může hlásit dojde k problému. Můžete také hlasovat nebo publikované na jiný problém, který se zobrazí komentář.
 
-1. Visual Studio poskytuje rozhraní vyhledávání pro váš problém a zobrazit, pokud ostatní nahlásilo, příliš. Pokud někdo ohlásil ho, "až hlas" jej a dejte nám vědět.
+1. Jakmile se přihlásíte, nebudete moci zobrazit vaše **problémy** a **aktivity** v **položky I postupujte podle** obrazovky
+
+    ![Položky, které I podle](../ide/media/items-i-follow.png)
+
+1. Visual Studio poskytuje rozhraní vyhledávání pro váš problém a zobrazit, pokud ostatní nahlásilo ho. Pokud někdo ohlásil ho, "až hlas" jej a dejte nám vědět.
+   > [!NOTE]
+   > Chcete-li hledat, zadejte požadovaný text do pole hledání a klikněte na tlačítko Enter nebo stiskněte klávesu na ikonu hledání.
 
    ![Hledání a hlasů pro podobné problémy](../ide/media/search-and-vote.png)
 
@@ -86,6 +92,34 @@ Trasování a haldy souborů výpisu paměti jsou užitečné v pomáhá nám di
 1. Počkejte několik minut pro sadu Visual Studio a shromažďovat informace, které jste si poznamenali balíčku.
 
    Informace o jaká data se shromažďují najdete v tématu [dat Shromažďujeme](developer-community-privacy.md#data-we-collect).
+
+## <a name="when-further-information-is-needed-need-more-info"></a>Při další informace budete potřebovat (potřebují další informace)
+
+Od verze Visual Studio 2017 verze 15,5, je nový pracovní postup pomoci uživatelům poskytovat další informace o sestavách problém.
+
+1. Když nastaví pracovníka společnosti Microsoft [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/) problému na **potřebovat další informace o** stavu, každý uživatel, který odesílat, hlasovali, a potom nebo komentář o problému získá oznámení v **Sestavy A problém** nástroje v sadě Visual Studio.
+
+   ![Potřebovat další informace o oznámení v sadě Visual Studio](../ide/media/nmi-notification.png)
+
+1. Klikněte na **zobrazení problémy** odkaz k filtrování a řazení zobrazení na problémy, které vyžadují pozornost. Tyto problémy také mají indikátor vedle je, že k odlišení je obecně vyhledávání.
+
+1. Klikněte na problém zobrazíte podrobnosti o problémech zobrazení.
+
+   ![Potřebovat další informace o oznámení](../ide/media/nmi-details-view.png)
+
+1. Chcete-li zobrazit **potřebovat další informace o** žádosti, klikněte na tlačítko **zobrazit jejich požadavek a odpověď** odkaz v zobrazení Podrobnosti o problému. Dialogové okno se zobrazí požadavek.
+
+   ![Potřebovat další informace o oznámení](../ide/media/nmi-request.png)
+
+1. Přidáním komentáře, přílohy nebo záznam kroky můžete zadat další informace. Toto prostředí je podobná reporting nové problém nebo poskytování dalších informací o při hlasování na problém.
+
+1. Vyžádání pracovníka společnosti Microsoft obdrží oznámení o další informace. Pokud budou mít dostatek informací k prozkoumání, změní se stav problému. Zpětnou analýzu, jinak hodnota požádá o i další informace.
+
+   > [!NOTE]
+   > * Při odesílání odpovědi, oznámení zmizí. Místo toho zobrazí banner, který jste Děkujeme vám a umožňuje poskytovat i další informace.
+   > * Jakmile problém změní stav, oznámení vyčkat pro všechny uživatele, který je následující potíže.
+   > * Víc než jedna osoba může odpovědět na stejnou **potřebovat další informace o** požadavku.
+   > * Není k dispozici **potřebovat další informace o** pracovního postupu na [komunity vývojářů](https://developercommunity.visualstudio.com/) když bude pracovat přímo prostřednictvím webového prohlížeče, ale můžete zadat taky komentáře a přílohy existuje.
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Hledání řešení nebo poskytnutí zpětné vazby
 

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4fe1106556e94155a0d01d3d7c9983d5ed122ad
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cdc82db1f701abb26b983fe0a1f2e4c7752c6c55
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746725"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756396"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Vytvoření formuláře Windows k vyhledávání dat
 Běžný scénář aplikace je zobrazení vybrané dat ve formuláři. Například můžete chtít zobrazit objednávky pro konkrétního zákazníka nebo podrobnosti o určitém pořadí. V tomto scénáři uživatel zadá informace do formuláře a potom je dotaz proveden se vstupem uživatele jako parametr; To znamená je vybraná data, na základě parametrizovaného dotazu. Dotaz vrátí jenom data, která splňuje kritéria zadaná uživatelem. Tento návod ukazuje, jak vytvořit dotaz, který vrátí zákazníků v konkrétním městě a upravit uživatelské rozhraní, aby uživatelé mohli zadejte název města a stiskněte tlačítko provést dotaz.
@@ -32,11 +32,11 @@ Běžný scénář aplikace je zobrazení vybrané dat ve formuláři. Napříkl
 
  Úkoly v tomto návodu zahrnují:
 
--   Vytvoření nového projektu aplikace Windows Forms.
+-   Vytvoření nové **formulářové aplikace Windows** projektu.
 
 -   Vytváření a konfiguraci zdroje dat v aplikaci s **konfigurace zdroje dat** průvodce.
 
--   Typ položky v nastavení **zdroje dat**okno.
+-   Typ položky v nastavení **zdroje dat** okno.
 
 -   Vytváření ovládacích prvků, které zobrazují data tak, že přetáhnete položky z **zdroje dat** okna do formuláře.
 
@@ -50,11 +50,11 @@ Běžný scénář aplikace je zobrazení vybrané dat ve formuláři. Napříkl
 
 Tento návod používá SQL Server Express LocalDB a ukázková databáze Northwind.
 
-1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.
+1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V **instalační program Visual Studio**, nainstalujte SQL Server Express LocalDB můžete v rámci **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.
 
 2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:
 
-    1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz...** .
+    1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v **instalační program Visual Studio**.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz**.
 
        Otevře se okno editoru dotazů.
 
@@ -62,14 +62,14 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
     3. Vložit do editoru dotazů skriptu T-SQL a potom vyberte **Execute** tlačítko.
 
-       Po krátkou dobu dotaz dokončí provádění a vytvoření databáze Northwind.
+       Po krátkou dobu dotaz dokončení spuštění a vytvoření databáze Northwind.
 
-## <a name="create-the-windows-forms-application"></a>Vytvořte aplikaci Windows Forms
+## <a name="create-the-windows-forms-application"></a>Vytvoření aplikace Windows Forms
  Prvním krokem je vytvoření **formulářové aplikace Windows**. Název přiřazení do projektu je nepovinný v tomto kroku, ale můžete budete pojmenujte ho tady vzhledem k tomu, že budete později uložení projektu.
 
 #### <a name="to-create-the-new-windows-forms-application-project"></a>Chcete-li vytvořit nový projekt aplikace Windows Forms
 
-1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu...** .
+1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový** > **projektu**.
 
 2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Desktop**.
 
@@ -145,11 +145,11 @@ Tento krok vytvoří zdroj dat z databáze pomocí **konfigurace zdroje dat** pr
      A **FillByCityToolStrip** je přidán do formuláře.
 
 ## <a name="testing-the-application"></a>Testování aplikace
- Spuštění aplikace otevře připravena převzít parametr jako vstup formuláře.
+ Spuštění aplikace otevře svého formuláře a je připravena vytvořit parametr jako vstup.
 
 #### <a name="to-test-the-application"></a>Testování aplikace
 
-1.  Stisknutím klávesy F5 spusťte aplikaci.
+1.  Stiskněte klávesu **F5** ke spuštění aplikace.
 
 2.  Typ **Londýn** do **města** textového pole a pak klikněte na tlačítko **FillByCity**.
 
@@ -162,6 +162,6 @@ Tento krok vytvoří zdroj dat z databáze pomocí **konfigurace zdroje dat** pr
 
 -   Úpravy datovou sadu, která přidat nebo odebrat databázové objekty. Další informace najdete v tématu [vytvořit a nakonfigurovat datové sady](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

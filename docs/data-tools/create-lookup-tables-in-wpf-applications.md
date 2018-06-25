@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 81edef642fd2d83f6bb65c01f9a1726812ba0fca
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fa14d9e2327288729bd97dd8a656f894e9fcef5d
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926532"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757133"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Vytváření vyhledávacích tabulek v aplikacích WPF
 Termín *vyhledávací tabulky* (někdy nazývané *vyhledávání vazby*) popisuje ovládacího prvku, který zobrazí informace z tabulky jeden datový na základě hodnoty pole cizího klíče v druhé tabulce. Můžete vytvořit vyhledávací tabulku tak, že přetáhnete hlavní uzel nadřazené tabulky nebo objekt v **zdroje dat** oken na ovládací prvek, který je již vázána na sloupec nebo vlastnost v související podřízené tabulce.
@@ -89,7 +89,7 @@ Předpokládejme například tabulku `Orders` v prodejní databázi. Každý z�
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio vytvoří vazbu tato vlastnost sloupec nebo vlastnost podřízené dat, která jste přetáhli do návrháře. Toto je cizí klíč k datům nadřazené.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio tato vlastnost nastaví na cestě sloupce nebo vlastnosti podřízených dat, která je cizí klíč k datům nadřazené.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Zobrazení souvisejících dat v aplikaci WPF](../data-tools/display-related-data-in-wpf-applications.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b94656c7242c4bc6bc1dd1430230dac62a5322f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 868fc13474e90be219cf1acebc00074641df142e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971869"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755519"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Postupy: používání Argument Designer
 
@@ -26,7 +26,7 @@ Ve srovnání s předchozí verzí rozhraní .NET Framework, argument designer u
 
 ## <a name="to-create-a-new-argument"></a>Chcete-li vytvořit nový argument
 
-1.  Otevřete řešení pracovního postupu nebo aktivity v sadě Visual Studio 2010.
+1.  Otevřete řešení pracovního postupu nebo aktivity v sadě Visual Studio.
 
 2.  Otevřít návrhář argumenty kliknutím **argumenty** tlačítko v levém horním rohu na plátno návrhu. Návrhář argumenty se zobrazí.
 
@@ -35,7 +35,7 @@ Ve srovnání s předchozí verzí rozhraní .NET Framework, argument designer u
     > [!NOTE]
     > Pokud chcete odstranit argument, kliknutím vyberte argument a potom stiskněte klávesu **odstranit** klíč.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Používání návrháře postupu provádění](../workflow-designer/using-the-workflow-designer.md)
 - [Proměnné a argumenty](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

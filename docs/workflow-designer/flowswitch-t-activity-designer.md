@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c655987f3cafd77b284d9d11eafefd56a188fc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d3e811e9d5463771b2a25b06b47e0a411f5dcd7
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978002"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757219"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T > Návrhář aktivity
 
@@ -32,7 +32,7 @@ ms.locfileid: "31978002"
 
 ### <a name="using-the-flowswitcht-activity-designer"></a>Pomocí FlowSwitch\<T > Návrhář aktivity
 
-**FlowSwitch\<T >** Návrhář aktivity naleznete v **vývojový diagram** kategorii **sada nástrojů**, což je dostat kliknutím **Sada nástrojů** karty na levé straně návrháře pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
+**FlowSwitch\<T >** Návrhář aktivity naleznete v **vývojový diagram** kategorii **sada nástrojů**, což je dostat kliknutím **Sada nástrojů** karty na levé straně návrháře pracovních postupů. Případně vyberte možnost **sada nástrojů** z **zobrazení** nabídky, nebo klikněte na tlačítko **Ctrl**+**Alt** + **X**.
 
 **FlowSwitch\<T >** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch v Návrháři pracovních postupů **vývojový diagram** Návrhář aktivity. Použití **vyberte typy** okně, které se zobrazí k určení typu (související v kódu pomocí <xref:System.Activities.Statements.FlowSwitch%601> podle jeho obecný parametr) získané z vyhodnocení <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Tento postup vytvoří <xref:System.Activities.Statements.FlowSwitch%601> aktivity s názvem bez přípony **přepínač** v rámci <xref:System.Activities.Statements.Flowchart> aktivity. <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> Lze napsat **výraz** pole **vlastnosti** okno kliknutím, kde text nápovědy říká "Zadejte výraz jazyka Visual Basic".
 
@@ -48,7 +48,7 @@ Následující tabulce je zobrazena <xref:System.Activities.Statements.FlowSwitc
 |<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|False|Určuje jedinečný mapování z možných výsledků získaných z vyhodnocení <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> na sadu <xref:System.Activities.Statements.FlowNode> objekty.|
 |<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|Hodnota TRUE|Určuje mapování při vyhodnocení <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> neodpovídá jednu z hodnot, které jsou součástí <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> objektu.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vývojový diagram](../workflow-designer/flowchart-activity-designers.md)
 - [Vývojový diagram](../workflow-designer/flowchart-activity-designer.md)

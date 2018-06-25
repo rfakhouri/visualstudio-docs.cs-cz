@@ -22,15 +22,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd566eacba7f94cfe7617e9396440c90dc32f51e
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 353d834ccd32376b53c875be356865711a4f89fd
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767126"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757232"
 ---
 # <a name="how-to-add-a-creator-method"></a>Postupy: přidání metody vytvoření
-  Metody vytvoření přidává nová data do zdroje dat entity. Business Data Connectivity (BDC) služby volá tuto metodu, když uživatelé vybrat, **nová položka** na tlačítko **pásu karet** seznamu, která je založená na modelu. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
+  Metody vytvoření přidává nová data do zdroje dat entity. Business Data Connectivity (BDC) služby volá tuto metodu, když uživatelé vybrat, **nová položka** na tlačítko **pásu karet** seznamu, která je založená na modelu. Další informace najdete v tématu [návrhu modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-creator-method"></a>Přidání metody vytvoření  
   
@@ -38,7 +38,7 @@ ms.locfileid: "34767126"
   
 2.  Na řádku nabídek zvolte **zobrazení** > **ostatní okna** >**podrobnosti o metodě BDC**.  
   
-     **Podrobnosti o metodě BDC** otevře se okno. Další informace o tomto okně najdete v tématu [přehled nástrojů pro navrhování modelu služby BDC](../sharepoint/bdc-model-design-tools-overview.md).  
+     **Podrobnosti o metodě BDC** otevře se okno. Další informace o tomto okně najdete v tématu [návrhu modelu služby BDC nástroje Přehled](../sharepoint/bdc-model-design-tools-overview.md).  
   
 3.  V **přidejte metodu** vyberte **vytvořit metody vytvoření**.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "34767126"
   
     -   Instance metody pro metodu.  
   
-     Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
+     Další informace najdete v tématu [návrhu modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 4.  V **Průzkumníku řešení**, otevřete nabídku zástupce služby kódu souboru, který byl vygenerován pro entitu a potom zvolte **kód zobrazení**.  
   
@@ -76,6 +76,6 @@ ms.locfileid: "34767126"
  [Postupy: Přidání aktualizační metody](../sharepoint/how-to-add-an-updater-method.md)   
  [Přehled nástrojů pro navrhování modelu služby BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  
+ [Postupy: definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  
   
   

@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea0806b1abc4febbdcf89c59025452c5879addb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e525d2529ce47059025e76dbefaeec1eb15ef81
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967397"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758391"
 ---
-# <a name="control-flow-activity-designers"></a>Návrháře aktivit toku řízení
+# <a name="control-flow-activity-designers"></a>Návrháři aktivit toku řízení
 
-Návrháři pracovních postupů Windows zahrnuje několik poskytované systémem aktivit, které můžete použít při vytváření vaše pracovní postupy. Tato část obsahuje poskytované systémem aktivity použít k řízení toku v pracovním postupu. V následujících tématech popisují tyto aktivity a poskytují pokyny o tom, jak je používat.
+Návrhář postupu provádění zahrnuje několik poskytované systémem aktivit, které můžete použít při vytváření vaše pracovní postupy. Tato část obsahuje poskytované systémem aktivity použít k řízení toku v pracovním postupu. V následujících tématech popisují tyto aktivity a poskytují pokyny o tom, jak je používat.
 
 ## <a name="reference"></a>Odkaz
 

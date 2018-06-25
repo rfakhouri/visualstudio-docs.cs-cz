@@ -12,28 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93ce95c7a821d243af842170ba30ec82647933ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3525eb8964ed603e40ba74f0c06b17b494390c7
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971787"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755837"
 ---
-# <a name="initialize-correlation-dialog-box"></a>Inicializace dialogové okno korelace
+# <a name="initialize-correlation-dialog-box"></a>Dialogové okno Inicializace korelace
 
-**Inicializovat korelace** dialogové okno se používá v Návrháři pracovních postupů Windows upravit <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity. Další informace najdete v tématu [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) tématu.
+**Inicializovat korelace** dialogové okno se používá v Návrháři pracovních postupů, chcete-li upravit <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity. Další informace najdete v tématu [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md).
 
- Následující tabulka popisuje prvky uživatelského rozhraní (UI) **inicializovat korelace** dialogové okno.
+Následující tabulka popisuje prvky uživatelského rozhraní (UI) **inicializovat korelace** dialogové okno:
 
 |Prvek uživatelského rozhraní (UI)|Popis|
 |----------------|-----------------|
 |**Korelace**|<xref:System.ServiceModel.Activities.CorrelationHandle> Korelace k chybě při inicializaci.|
-|**Inicializace na**|Dvojice klíč/hodnota, která obsahuje data k chybě při inicializaci. To odpovídá <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost. Příkladem dvojici klíč/hodnota platná by klíč s názvem "OrderID" spárovaný s proměnné s názvem OrderID.|
+|**Inicializace na**|Dvojice klíč/hodnota, která obsahuje data k chybě při inicializaci. Tato hodnota odpovídá <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost. Příkladem dvojici platný klíč/hodnota je klíč s názvem "OrderID" spárovaný s proměnné s názvem OrderID.|
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Spusťte inicializaci korelace dialogových oken
 
--   Klikněte na tlačítko **zobrazení** na **InitializeCorrelation** aktivity návrháře nebo vyberte <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity v Návrháři pracovních postupů a pak klikněte na tlačítko se třemi tečkami vedle <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost v Vlastnost mřížky.
+Klikněte na tlačítko **zobrazení** na **InitializeCorrelation** aktivity návrháře nebo vyberte <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity v Návrháři pracovních postupů. Potom klikněte na tlačítko se třemi tečkami vedle <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost v tabulce vlastností.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

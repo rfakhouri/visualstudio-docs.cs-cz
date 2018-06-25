@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7573c126ce8e11143d3b39a637c44649d15acf95
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1fb30ce4b4792b7083cbe22afaa259d07b9a0821
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979513"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756650"
 ---
-# <a name="receive-activity-designer"></a>Přijímat Návrhář aktivity
+# <a name="receive-activity-designer"></a>Návrhář aktivity Receive
 
 **Receive** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.ServiceModel.Activities.Receive> aktivity. A <xref:System.ServiceModel.Activities.Receive> aktivitu, která obdrží zprávu, která může být buď předdefinovaný typ, jako je aktivita <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> nebo <xref:System.Xml.Linq.XElement>, nebo kontrakt dat definované aplikací, kontrakt zprávy nebo XML třídu, která může serializovat.
 
@@ -28,16 +28,16 @@ ms.locfileid: "31979513"
 <xref:System.ServiceModel.Activities.Receive> Aktivity může přijímat položku jeden nebo více položek v závislosti na typu přijmout obsah použít. A <xref:System.ServiceModel.Activities.SendReply> aktivity mohou být vázány na <xref:System.ServiceModel.Activities.Receive> aktivity, která přijímá zprávy jako součást vzorce výměny zpráv požadavků a odpovědí ve službě.
 
 ### <a name="using-the-receive-activity-designer"></a>Pomocí přijímat Návrhář aktivity
- **Receive** Návrhář aktivity naleznete v **zasílání zpráv** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů**kartě v Návrháři pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
 
- **Receive** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na aktivity jsou obvykle umístěny. Tím se vytvoří <xref:System.ServiceModel.Activities.Receive> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> Receive. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **Receive** Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností.
+Přístup **Receive** Návrhář aktivity v **zasílání zpráv** kategorii **sada nástrojů**. **Receive** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na aktivity jsou obvykle umístěny. Tím se vytvoří <xref:System.ServiceModel.Activities.Receive> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> Receive. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **Receive** Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností.
 
- K vytvoření <xref:System.ServiceModel.Activities.SendReply> aktivity a navázat jej na vybrané <xref:System.ServiceModel.Activities.Receive> aktivity, klikněte pravým tlačítkem myši **Receive** návrháře, klikněte na aktivitu **vytvořit SendReply** položka v místní nabídce a **SendReplyToReceive** designer se zobrazí pod **Receive** designer. <xref:System.ServiceModel.Activities.SendReply> Aktivity je aktivitou, která odešle zprávu odpovědi jako součást vzorce výměny zpráv požadavků a odpovědí ve službě. Můžete nakonfigurovat pomocí **SendReplyToReceive** designer.
+K vytvoření <xref:System.ServiceModel.Activities.SendReply> aktivity a navázat jej na vybrané <xref:System.ServiceModel.Activities.Receive> aktivity, klikněte pravým tlačítkem myši **Receive** návrháře, klikněte na aktivitu **vytvořit SendReply** položka v místní nabídce a **SendReplyToReceive** designer se zobrazí pod **Receive** designer. <xref:System.ServiceModel.Activities.SendReply> Aktivity je aktivitou, která odešle zprávu odpovědi jako součást vzorce výměny zpráv požadavků a odpovědí ve službě. Můžete nakonfigurovat pomocí **SendReplyToReceive** designer.
 
- Případně **ReceiveAndSendReply** návrhář šablony v **zasílání zpráv** kategorii **sada nástrojů** lze vytvořit pár předem nakonfigurovaná <xref:System.ServiceModel.Activities.Receive>a <xref:System.ServiceModel.Activities.SendReply> aktivity. Další informace o použití **ReceiveAndSendReply** a **SendReplyToReceive** šablony, najdete v článku [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md) tématu.
+Případně **ReceiveAndSendReply** návrhář šablony v **zasílání zpráv** kategorii **sada nástrojů** lze vytvořit pár předem nakonfigurovaná <xref:System.ServiceModel.Activities.Receive>a <xref:System.ServiceModel.Activities.SendReply> aktivity. Další informace o použití **ReceiveAndSendReply** a **SendReplyToReceive** šablony, najdete v článku [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md) tématu.
 
 ### <a name="the-receive-activity-properties"></a>Zobrazí vlastnosti aktivit
- Následující tabulce je zobrazena <xref:System.ServiceModel.Activities.Receive> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti se dá upravit v mřížce vlastnosti nebo na plochu návrháře pracovních postupů. Je požadovaná vlastnost pouze <xref:System.ServiceModel.Activities.Receive.OperationName%2A> vlastnost.
+
+Následující tabulce je zobrazena <xref:System.ServiceModel.Activities.Receive> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti se dá upravit v mřížce vlastnosti nebo na plochu návrháře pracovních postupů. Je požadovaná vlastnost pouze <xref:System.ServiceModel.Activities.Receive.OperationName%2A> vlastnost.
 
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
@@ -54,7 +54,7 @@ ms.locfileid: "31979513"
 |<xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>|False|Určuje typ serializátoru pro operace služby, které jsou implementované <xref:System.ServiceModel.Activities.Receive> aktivity. Výchozí hodnota je <xref:System.Runtime.Serialization.DataContractSerializer>, který serializuje a deserializuje instance typu do datového proudu XML nebo dokument, který používá zadaný datový kontrakt. <xref:System.Xml.Serialization.XmlSerializer> Lze také pokud přes XML je potřeba další řízení.|
 |<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|Určuje akci záhlaví zprávy. Pokud není explicitně nastavena, jeho výchozí hodnota je: https://tempuri.org/{service smlouvy obor názvů} / {název kontraktu služby} / {operaci name}.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)

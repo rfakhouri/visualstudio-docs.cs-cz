@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50786f1f42c27a793c48cb06c871b7f11c2dda25
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 754968b95ce1332991ddc921138741a1d9235015
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325430"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756922"
 ---
 # <a name="output-element-msbuild"></a>Output – element (MSBuild)
 Úložiště úlohy výstupní hodnoty položky a vlastnosti.  
@@ -52,7 +52,7 @@ ms.locfileid: "36325430"
 |---------------|-----------------|  
 |`TaskParameter`|Požadovaný atribut.<br /><br /> Název úlohy je výstupní parametr.|  
 |`PropertyName`|Buď `PropertyName` nebo `ItemName` atribut je požadován.<br /><br /> Vlastnost, která přijímá úlohu výstupu hodnotu parametru. Projekt pak můžete odkazovat vlastnost s `$(` *PropertyName* `)` syntaxe. Název této vlastnosti může být buď nový název vlastnosti nebo název, který je již definován v projektu.<br /><br /> Tento atribut nelze použít, pokud `ItemName` se také používá.|  
-|`ItemName`|Buď `PropertyName` nebo `ItemName` atribut je požadován.<br /><br /> Položka, která přijímá úlohu výstupu hodnotu parametru. Projekt pak můžete odkazovat položka se `@(` *název položky* `)` syntaxe. Název položky může být buď nový název položky nebo název, který je již definován v projektu.<br /><br /> Tento atribut nelze použít, pokud `PropertyName` se také používá.|  
+|`ItemName`|Buď `PropertyName` nebo `ItemName` atribut je požadován.<br /><br /> Položka, která přijímá úlohu výstupu hodnotu parametru. Projekt pak můžete odkazovat položka se `@(` *název položky* `)` syntaxe. Název položky může být buď nový název položky nebo název, který je již definován v projektu. Pokud je název položky stávající položku, výstupní parametr hodnoty se přidají do existující položku. <br /><br /> Tento atribut nelze použít, pokud `PropertyName` se také používá.|  
 |`Condition`|Nepovinný atribut.<br /><br /> Podmínku, která má být vyhodnocen. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|  
 
 ### <a name="child-elements"></a>Podřízené elementy  

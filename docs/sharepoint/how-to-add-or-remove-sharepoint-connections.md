@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 117c2c95eb9b7ea92f41e72fa2ecca9a4e713c93
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 17f1b1ccdee75a379dfc7bce42df2b5a117bdd2e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768180"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755412"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Postupy: Přidání nebo odebrání připojení služby SharePoint
   V Průzkumníku serveru umožňuje procházet webů služby SharePoint, jakož i datová připojení. Ale předtím, než můžete procházet obsah webu služby SharePoint je třeba přidat ji do **připojení služby SharePoint** uzlu.  
@@ -49,5 +49,5 @@ ms.locfileid: "34768180"
     >  Tento krok nedojde k odstranění podkladové lokality; Odstraní pouze připojení z **Průzkumníka serveru**.  
   
 ## <a name="see-also"></a>Viz také:
- [Procházení připojení služby SharePoint pomocí průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)  
+ [Procházení připojení služby SharePoint pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)  
   

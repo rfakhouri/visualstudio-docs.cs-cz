@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd7d3220bc67b764b96033ad516eb857bec6014
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 53b8a8790cfa4f4e1f962fa5e6ce82b62781430f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978268"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756903"
 ---
 # <a name="parallelforeach-activity-designer"></a>Návrhář aktivity ParallelForEach
 
@@ -35,7 +35,7 @@ Ale pokud máte aktivity ve <xref:System.Activities.Statements.ParallelForEach%6
 
 ### <a name="using-the-parallelforeacht-activity-designer"></a>Pomocí ParallelForEach\<T > Návrhář aktivity
 
-**ParallelForEach\<T >** Návrhář aktivity naleznete v **tok řízení** kategorii **sada nástrojů**, což je dostat kliknutím  **Sada nástrojů** karty na levé straně návrháře pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
+Přístup **ParallelForEach\<T >** Návrhář aktivity v **tok řízení** kategorii **sada nástrojů**.
 
 **ParallelForEach\<T >** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na návrháře aktivit jsou obvykle umístěny, pro Příklad, uvnitř **pořadí** Návrhář aktivity. Po vyřazení ho do návrháře pracovních postupů, vytvoří <xref:System.Activities.Statements.ParallelForEach%601> aktivity, který ve výchozím nastavení obsahuje <xref:System.Activities.Activity.DisplayName%2A> z **ParallelForEach < Int32\>.**
 
@@ -53,7 +53,7 @@ V následující tabulce jsou velmi užitečné <xref:System.Activities.Statemen
 
 Ve výchozím nastavení iterace smyčky názvem položky. Můžete změnit název proměnné iterator v **ForEach** pole **ParallelForEach\<T >** Návrhář aktivity. Iterator smyčky lze použít ve výrazech v podřízených prvků <xref:System.Activities.Statements.ParallelForEach%601> aktivity.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Pořadí](../workflow-designer/sequence-activity-designer.md)
 - [Paralelní](../workflow-designer/parallel-activity-designer.md)

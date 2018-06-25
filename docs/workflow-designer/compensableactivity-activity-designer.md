@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdab42766fd20989831e446a45115d17b3ee28fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d723b50fe0267939119239861c5ae951e01cd445
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978658"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758278"
 ---
 # <a name="compensableactivity-activity-designer"></a>Návrhář aktivity CompensableActivity
 
@@ -27,7 +27,7 @@ ms.locfileid: "31978658"
  <xref:System.Activities.Statements.CompensableActivity> Definuje jednotky práce, která může být potvrzen nebo kompenzované po úspěšném dokončení.
 
 ### <a name="using-the-compensableactivity-activity-designer"></a>Pomocí návrháře CompensableActivity aktivity
- **CompensableActivity** Návrhář aktivity naleznete v **transakce** kategorii **sada nástrojů**. Otevřete **sada nástrojů**, vyberte **sada nástrojů** karty na levé straně návrháře pracovních postupů. Případně vyberte možnost **nástrojů** z **zobrazení** nabídce nebo stiskněte klávesu CTRL + ALT + X.
+ **CompensableActivity** Návrhář aktivity naleznete v **transakce** kategorii **sada nástrojů**. Otevřete **sada nástrojů**, vyberte **sada nástrojů** karty na levé straně návrháře pracovních postupů. Případně vyberte možnost **sada nástrojů** z **zobrazení** nabídky, nebo klikněte na tlačítko **Ctrl**+**Alt** + **X**.
 
  **CompensableActivity** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů. Návrhář aktivity uvnitř může vyřadit <xref:System.Activities.Statements.Sequence>. Vyřazení Návrhář aktivity vytvoří <xref:System.Activities.Statements.CompensableActivity> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z CompensableActivity. Upravit <xref:System.Activities.Activity.DisplayName%2A> hodnota v hlavičce **CompensableActivity** Návrhář aktivity. Také se dá upravit v **DisplayName** pole mřížku vlastností.
 
@@ -43,7 +43,7 @@ ms.locfileid: "31978658"
 |<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|Určuje aktivity budou spuštěny při kompenzace <xref:System.Activities.Statements.CompensableActivity.Body%2A> aktivity. Tuto obslužnou rutinu nelze explicitně vyvolat pomocí <xref:System.Activities.Statements.Compensate> aktivity.<br /><br /> Chcete-li přidat aktivitu, vyřaďte jeho Návrhář aktivity z **sada nástrojů** do **CompensationHandler** pole na **CompensableActivity** Návrhář aktivity. Přidejte text nápovědy "Aktivity Sem přetáhněte".|
 |<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|Určuje aktivity budou spuštěny při potvrzení <xref:System.Activities.Statements.CompensableActivity.Body%2A> aktivity. Tuto obslužnou rutinu nelze explicitně vyvolat pomocí <xref:System.Activities.Statements.Confirm> aktivity.<br /><br /> Chcete-li přidat aktivitu, vyřaďte jeho Návrhář aktivity z **sada nástrojů** do **ConfirmationHandler** pole na **CompensableActivity** Návrhář aktivity. Přidejte text nápovědy "Aktivity Sem přetáhněte".|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Transakce](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)

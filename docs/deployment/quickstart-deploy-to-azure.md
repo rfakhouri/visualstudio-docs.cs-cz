@@ -1,7 +1,7 @@
 ---
-title: Publikování do služby Azure App Service – Visual Studio | Microsoft Docs
+title: Publikování do Azure App Service
 ms.custom: ''
-ms.date: 11/22/2017
+ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,70 +12,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 05eab2ea5445c552f435151bbe696f913fa8cb5a
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 3d15cc293f2b2b22b63e0af202bfcee8afa2cf13
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282571"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755993"
 ---
-# <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Publikování aplikace ASP.NET nebo ASP.NET Core Azure App Service pomocí sady Visual Studio
+# <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publikování webové aplikace do služby Azure App Service pomocí sady Visual Studio
 
-Můžete použít **publikovat** nástroj pro publikování aplikací ASP.NET, ASP.NET Core, Python, Node.js a .NET Core do služby Azure App Service.
+Můžete použít **publikovat** nástroj k publikování aplikace ASP.NET, jádro ASP.NET, Node.js a .NET Core pro Azure App Service a Azure App Service Linux (pomocí kontejnery). Pro aplikace, Python, postupujte podle kroků [Python - publikování do služby Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-Pokud již účet Azure nemáte, můžete [zaregistrujte si zde](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
-
-## <a name="prerequisites"></a>Požadavky
-
-* Musíte mít nainstalované Visual Studio 2017 a **ASP.NET a webové vývoj** pracovního vytížení a. **NET vývoj aplikací** zatížení. Pro aplikace .NET Core, musíte. **NET základní** zatížení.
-
-    Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
-
-## <a name="create-a-new-project"></a>Vytvoření nového projektu
-
-1. V sadě Visual Studio, vyberte **soubor** > **nový projekt**.
-
-1. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně vyberte buď **webové aplikace ASP.NET (rozhraní .NET Framework)** nebo (C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na **OK**.
-
-1. Zvolte **MVC** (nebo zvolte **webové aplikace (Model-View-Controller)** pro .NET Core), ujistěte se, že **bez ověřování** je vybrána a pak klikněte na tlačítko **OK** .
-
-1. Zadejte název jako **MyWebApp** a klikněte na tlačítko **OK**.
-
-    Visual Studio vytvoří projekt.
-
-1. Zvolte **sestavení** > **sestavit řešení** a tím projekt sestavit.
+[!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
 ## <a name="publish-to-azure-app-service"></a>Publikování do Azure App Service
 
-1. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**.
+1. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat** (nebo použijte **sestavení** > **publikovat** položky nabídky).
 
-    ![Zvolte publikování](../deployment/media/quickstart-publish-aspnet.png "zvolte publikování")
+    ![Příkaz Publikovat v místní nabídce Projekt v Průzkumníku řešení](../deployment/media/quickstart-publish.png "zvolte publikování")
 
-1. Pokud jste dříve nakonfigurovali žádné profily publikování **publikovat** podokně se zobrazí. Klikněte na tlačítko **vytvořit nový profil**.
+1. Pokud jste dříve nakonfigurovali žádné profily publikování **publikovat** podokně se zobrazí, ve které případu vyberte **vytvořit nový profil**.
 
 1. V **vyberte cíl publikování** dialogovém okně vyberte **služby App Service**.
 
     ![Vyberte aplikační služba Azure](../deployment/media/quickstart-publish-azure.png "vyberte aplikační služba Azure")
 
-1. Klikněte na tlačítko **publikování**.
-
-    **Vytvořit službu App Service** zobrazí se dialogové okno.
+1. Vyberte **publikování**. **Vytvořit službu App Service** zobrazí se dialogové okno. Přihlaste se pomocí jste účet Azure, pokud nezbytné výchozí nastavení aplikace služby a vyplňte pole.
 
     ![Vytvoření služby App Service](../deployment/media/quickstart-publish-settings-app-service.png "vytvoření služby Azure App Service")
 
-1. Pokud nejste v sadě Visual Studio, přihlaste se a pak výchozí nastavení aplikace služby vyplňte pole.
+1. Vyberte **vytvořit**. Visual Studio nasadí aplikaci do Azure App Service a načte webové aplikace v prohlížeči. Vlastnosti projektu **publikovat** podokně se zobrazí adresa URL webu a další podrobnosti.
 
-    Profil publikování nastavení, které se otevře se dialogové okno.
-
-    ![Vyberte složku,](../deployment/media/quickstart-publish-settings-web.png "vyberte složku,")
-
-    V tomto dialogovém můžete vybrat odběr, který používáte, vyberte nebo vytvořte skupinu prostředků Azure, atd.
-
-1. Klikněte na tlačítko **vytvořit**.
-
-    Visual Studio nasadí aplikaci do Azure App Service a načte webové aplikace v prohlížeči.
-
-    V Souhrn **publikovat** podokně, najdete v části Adresa URL webu pro nové Azure App Service.
+    ![Vlastnost podokně zobrazující Souhrn profilu publikování](../deployment/media/quickstart-publish-app-service-summary.png)
 
 ## <a name="next-steps"></a>Další kroky
 

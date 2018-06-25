@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0d92e2c8e09791aa2efa4cc1d3c0df6c91ce36aa
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1e68542de70c868f6113348e519f866bf60bc381
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691021"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758960"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analýza spotřeby prostředků a aktivita vláken uživatelského rozhraní (XAML)
 Použití **časová osa aplikace** profileru najít a opravit interakce aplikace související s problémy s výkonem v aplikacích XAML. Tento nástroj pomáhá zlepšit výkon aplikace XAML tím, že poskytuje podrobný přehled o spotřeby prostředků aplikace. Čas strávený aplikací Příprava rámce uživatelského rozhraní (rozložení a vykreslování), sítě a disku požadavky obsluhy a ve scénářích, jako je spuštění aplikace, načítání stránky, můžete analyzovat a změňte velikost systému Windows.  
@@ -97,7 +97,7 @@ Použití **časová osa aplikace** profileru najít a opravit interakce aplikac
 |||  
 |-|-|  
 |**Analýza**|Čas strávený analýzy soubory XAML a vytváření objektů.<br /><br /> Rozšiřování **Parsing** uzlu v **časová osa podrobnosti** zobrazí řetězec závislostí všechny soubory XAML, které byly analyzovat v důsledku události kořenové. To vám umožní identifikovat nepotřebných souborů analýzy a objekt vytvoření ve scénářích citlivé výkonu a optimalizovat je.|  
-|**Rozložení**|V velké aplikace může být uvedené na obrazovce tisíce elementy ve stejnou dobu. To může způsobit nízkou obnovovací frekvence uživatelského rozhraní a odezvu odpovídajícím způsobem nízký aplikací. Událost rozložení přesně určuje náklady rozložení jednotlivých prvků (tedy časem stráveným uspořádat, míry, ApplyTemplate, ArrangeOverride a ArrangeOverride) a vytvoří visual stromy, které trvalo část při průchodu rozložení. Tuto vizualizaci můžete použít k určení, které vaše logické stromy, chcete-li vyřadit nebo vyhodnotit jiným mechanismem odložení za účelem optimalizace vaší průchodu rozložení.|  
+|**Rozložení**|V velké aplikace může být uvedené na obrazovce tisíce elementy ve stejnou dobu. To může způsobit nízkou obnovovací frekvence uživatelského rozhraní a odezvu odpovídajícím způsobem nízký aplikací. Událost rozložení přesně určuje náklady rozložení jednotlivých prvků (tedy časem stráveným uspořádat, míry, ApplyTemplate a ArrangeOverride) a vytvoří visual stromy, které trvalo část při průchodu rozložení. Tuto vizualizaci můžete použít k určení, které vaše logické stromy, chcete-li vyřadit nebo vyhodnotit jiným mechanismem odložení za účelem optimalizace vaší průchodu rozložení.|  
 |**Vykreslení**|Čas strávený vykreslení elementů XAML na obrazovku.|  
 |**I / 0**|Čas strávený načítání dat z místního disku nebo síťovým prostředkům, které jsou přístupné prostřednictvím [Microsoft Windows Internet (WinINet) rozhraní API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Kód aplikace**|Čas strávený provádění kódu aplikace (uživatel), která nesouvisí se analýza nebo rozložení.|  
@@ -121,4 +121,4 @@ Použití **časová osa aplikace** profileru najít a opravit interakce aplikac
  [Osvědčené postupy z hlediska výkonu pro aplikace UWP pomocí C++, C# a Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [Optimalizace výkonu aplikace WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
  [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)
+ [První pohled na nástroje pro profilaci](../profiling/profiling-feature-tour.md)

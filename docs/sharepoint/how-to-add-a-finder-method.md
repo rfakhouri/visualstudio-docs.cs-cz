@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7773c2c81527e065652486eb851f3c27828bf76d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 3c7233f344282b5ce5793f7b6733e5e657534023
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767128"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756977"
 ---
 # <a name="how-to-add-a-finder-method"></a>Postupy: přidání vyhledávací metody
   Chcete-li povolit službu Business Data Connectivity (BDC) k zobrazení seznamu entit ve webové části nebo seznamu, je nutné vytvořit *vyhledávací* metoda. Vyhledávací metody je speciální metoda, která vrátí kolekci instancí entit. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
@@ -36,11 +36,11 @@ ms.locfileid: "34767128"
   
 1.  Na **BDC Návrhář**, zvolte entity.  
   
-     Další informace najdete v tématu [postupy: Přidání Entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+     Další informace najdete v tématu [postupy: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
 2.  Na řádku nabídek zvolte **zobrazení** > **ostatní okna** > **podrobnosti o metodě BDC**.  
   
-     **Podrobnosti o metodě BDC** otevře se okno. Další informace o **podrobnosti o metodě BDC** okně najdete v části [přehled nástrojů pro navrhování modelu služby BDC](../sharepoint/bdc-model-design-tools-overview.md).  
+     **Podrobnosti o metodě BDC** otevře se okno. Další informace o **podrobnosti o metodě BDC** okně najdete v části [návrhu modelu služby BDC nástroje Přehled](../sharepoint/bdc-model-design-tools-overview.md).  
   
 3.  V **přidejte metodu** vyberte **vytvořit vyhledávací metody**.  
   
@@ -75,6 +75,6 @@ ms.locfileid: "34767128"
  [Postupy: přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md)   
  [Postupy: Přidání aktualizační metody](../sharepoint/how-to-add-an-updater-method.md)   
  [Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  
+ [Postupy: definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  
   
   

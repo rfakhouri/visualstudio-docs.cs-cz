@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 264fb0617f22f5112b28576416ab6b5c772f9a1e
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 72dbebd8ff9b2e7bf7b001d540158656271c0556
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766916"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757706"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Postupy: Přidání entity do modelu
   Pokud chcete vytvořit entitu, přidání ovládacího prvku entity ze sady Visual Studio **sada nástrojů** do návrháře Business Data Connectivity (BDC).  

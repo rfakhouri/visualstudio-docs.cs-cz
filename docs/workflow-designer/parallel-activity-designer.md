@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2315c27bc0a35ac1dc839b5fd98003105d92bd4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c4f10b9bb564268f5aeee59d871fd44324097cc
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977232"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756673"
 ---
-# <a name="parallel-activity-designer"></a>Návrhář paralelní aktivity
+# <a name="parallel-activity-designer"></a>Návrhář aktivity Parallel
 
 <xref:System.Activities.Statements.Parallel> Aktivita provede kolekce aktivit podřízené současně.
 
@@ -31,7 +31,7 @@ ms.locfileid: "31977232"
 
 ### <a name="using-the-parallel-activity-designer"></a>Pomocí návrháře paralelní aktivita
 
-**Paralelní** Návrhář aktivity naleznete v **tok řízení** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů**karty na levé straně návrháře pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
+Přístup **paralelní** Návrhář aktivity v **tok řízení** kategorii **sada nástrojů**.
 
 **Paralelní** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na návrháře aktivit jsou obvykle umístěny, například uvnitř **Pořadí** Návrhář aktivity. Po vyřazení ho do návrháře pracovních postupů, vytvoří <xref:System.Activities.Statements.Parallel> aktivity, který ve výchozím nastavení obsahuje <xref:System.Activities.Activity.DisplayName%2A> z **paralelní**
 
@@ -47,7 +47,7 @@ Následující tabulka uvádí vlastnosti paralelních aktivit a popisuje, jak s
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|Hodnota TRUE|Obsahuje kolekci podřízené aktivity a provést.|
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Vyhodnocení po dokončení větev. Pokud je vyhodnocen jako **True**, pak naplánované čekající na vyřízení větví došlo ke zrušení. Pokud tato vlastnost není nastaven, nebo se vyhodnocuje **False**, když byly dokončeny všechny jeho podřízené aktivity dokončení aktivity. Výchozí hodnota je **null**.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Pořadí](../workflow-designer/sequence-activity-designer.md)
 - [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)

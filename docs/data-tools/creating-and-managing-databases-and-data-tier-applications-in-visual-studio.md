@@ -15,15 +15,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bf9869c81100352d97b168a1dc0694d9fcd010f4
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 03dca206f38d98c44e711e945f5d4015142f0af9
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234995"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758404"
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Databázové projekty a aplikace na datové vrstvě v sadě Visual Studio
-Databázové projekty můžete použít k vytvoření nové databáze nové aplikace na datové vrstvě (DAC) a k aktualizaci existující databáze a aplikace na datové vrstvě. Databázové projekty i DAC projekty umožňují použít techniky verze řízení a projekt správy pro váš vývojový program databáze na mnohem stejným způsobem, že použijete tyto techniky spravovaným nebo nativním kódem. Vám může pomoci váš vývojový tým vytvoříte spravovat změny databáze a databázové servery *DAC projektu*, *projekt databáze*, nebo *serverový projekt* a umístit ho v části Správa verzí. Členy týmu prohlížet soubory a ujistěte se, vytvářet a testovat změny v *izolované vývojového prostředí*, nebo izolovaného prostoru, než je sdílet s týmem. K zajištění kvality kódu, můžete váš tým dokončit a otestovat všechny změny pro konkrétní verzi databáze v testovacím prostředí, před nasazením změny do produkčního prostředí.
+Databázové projekty můžete použít k vytvoření nové databáze nové aplikace na datové vrstvě (DAC) a k aktualizaci existující databáze a aplikace na datové vrstvě. Databázové projekty i DAC projekty umožňují použít techniky verze řízení a projekt správy pro váš vývojový program databáze na mnohem stejným způsobem, že použijete tyto techniky spravovaným nebo nativním kódem. Můžete pomoct váš vývojový tým spravovat změny databáze a databázové servery vytvořením projektu DAC, projekt databáze nebo Serverový projekt a vložení v rámci správy verzí. Soubory, ujistěte se, vytvářet a testovat změny v izolované vývojového prostředí, nebo izolovaného prostoru, než je sdílet s týmem prohlížet členy týmu. K zajištění kvality kódu, můžete váš tým dokončit a otestovat všechny změny pro konkrétní verzi databáze v testovacím prostředí, před nasazením změny do produkčního prostředí.
 
 Seznam funkcí databáze, které podporuje aplikace datové vrstvy, najdete v části [funkce podporované v aplikace datové vrstvy](http://go.microsoft.com/fwlink/?LinkId=164239) na webu společnosti Microsoft. Pokud ve vaší databázi funkce, které nepodporuje aplikace datové vrstvy, místo toho používejte databázového projektu spravovat změny k vaší databázi.
 

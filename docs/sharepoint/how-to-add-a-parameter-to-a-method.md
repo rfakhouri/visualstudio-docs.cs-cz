@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9268fd0deb463a29c8e6d19e98ad63c86b965292
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 196ac37cc9bc4f53cfa886b92c62c7a301c3451a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767085"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756308"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Postupy: Přidání parametru k metodě
   Použijte parametr k předání informací do metodu nebo k vrácení informací z metody. Všechny metody musí mít minimálně jeden parametr. Další informace o tom, jak navrhnout parametr pro podporu typ metody, které chcete vytvořit, naleznete v části [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
@@ -54,14 +54,14 @@ ms.locfileid: "34767085"
   
 7.  V **podrobnosti o metodě BDC** oken, otevřete seznam, který se zobrazí ve směru parametru a potom zvolte **v**, **InOut**, **Out**, nebo **vrátit**.  
   
-     Další informace o směru zvolit typ metody, kterou vytváříte, najdete v části [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
+     Další informace o směru zvolit typ metody, kterou vytváříte, najdete v části [návrhu modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 8.  Upravte popisovač typu parametru. Další informace najdete v tématu [postupy: definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
 ## <a name="see-also"></a>Viz také:
  [Přehled nástrojů pro navrhování modelu služby BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Postupy: Přidání Entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Postupy: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Postupy: definování deskriptoru typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [Postupy: definování Instance metody](../sharepoint/how-to-define-a-method-instance.md)   
+ [Postupy: definování instance metody](../sharepoint/how-to-define-a-method-instance.md)   
  [Navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md)  
   

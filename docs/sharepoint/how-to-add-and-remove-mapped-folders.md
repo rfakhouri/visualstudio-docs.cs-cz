@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8cf70cf7f69091590c950d6b5eccd6393708e7c9
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: fe9868a9909dbb78bf510f18584472520948d6f9
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767206"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757645"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Postupy: Přidání a odebrání mapovaných složek
   Některé nejčastěji používané složky ve službě SharePoint, například bitové kopie a rozložení, jsou hluboko vložené v hierarchii souborů. Tyto složky můžete mapovat do projektu služby SharePoint na snadněji používat. Mapované složky jsou složky v projektu služby SharePoint, které odpovídají na fyzické umístění souborů v instalaci serveru SharePoint.  
@@ -59,7 +59,7 @@ ms.locfileid: "34767206"
      Složku s názvem **prostředky** se zobrazí ve vašem projektu. Tato složka může ukládat položek, jako jsou soubory prostředků řetězec. Podsložky může být užitečná pro uspořádání obsahu mapované složky, ale vytváří automaticky při přidání mapované složky pomocí **přidat složku SharePoint mapovat** příkaz. Při přidávání podsložku, vyberte **prostředky** složku a potom na řádku nabídek zvolte **projektu** > **novou složku**.  
   
 ## <a name="change-the-deployment-location-of-a-mapped-folder"></a>Změňte umístění nasazení mapované složky  
- Ve výchozím nastavení jsou mapované složky přidán do konkrétní umístění relativní k cestě instalace kořenové služby SharePoint, který označuje token {SharePointRoot}. Toto umístění však můžete změnit změnou **umístění nasazení** vlastnost mapované složky. Každý mapované složky má svou vlastní **umístění nasazení** vlastnost.  
+ Ve výchozím nastavení, mapované složky jsou přidány do určitých umístění relativně k SharePoint kořenovou cestu instalace, který token \<SharePointRoot > označuje. Toto umístění však můžete změnit změnou **umístění nasazení** vlastnost mapované složky. Každý mapované složky má svou vlastní **umístění nasazení** vlastnost.  
   
 #### <a name="to-change-the-deployment-location-of-a-mapped-folder"></a>Chcete-li změnit umístění nasazení mapované složky  
   

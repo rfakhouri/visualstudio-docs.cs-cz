@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4edb752ca64afd899ac9b3e463b9d29e4b3b68a1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5cedf05457b397598d7417bce331be27aa8ac4e0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973767"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756500"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Postupy: přidání aktivit do sady nástrojů
 
@@ -30,7 +30,7 @@ Aktivity mohou být přidány do **sada nástrojů** ve vašem řešení v něko
 3.  Sestavte projekt. Pokud bylo úspěšné, sestavení novou kategorii v **sada nástrojů** s názvem "\<*název projektu*>" se zobrazí s vlastní aktivity, které jsou součástí této kategorie spadají.
 
     > [!NOTE]
-    > Pokud se resetuje sady nástrojů, vlastní aktivity se odebere, i v případě, že je řešení znovu sestaven. Poté, co byla obnovena, znovu vyplnit nástrojů vlastních aktivit, restartujte Visual Studio 2010.
+    > Pokud se resetuje sady nástrojů, vlastní aktivity se odebere, i v případě, že je řešení znovu sestaven. Znovu naplnit nástrojů vlastní aktivity po byla obnovena, restartujte Visual Studio.
 
     > [!NOTE]
     > V panelu nástrojů můžete zobrazit pouze jednu aktivitu daného názvu. Pokud dvě aktivity z různých sestavení mají stejný název třídy, se zobrazí pouze jeden.
@@ -60,6 +60,6 @@ Aktivity mohou být přidány do **sada nástrojů** ve vašem řešení v něko
 
 6.  Vlastní aktivity se zobrazí v **sada nástrojů** v kategorii, která byla aktivní před přidáním položky. Například pokud **Obecné** kategorie byla vybrána v **sada nástrojů** před přidáním položky panelu nástrojů, tato aktivita se zobrazí v části **Obecné** kategorie.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Používání návrháře postupu provádění](../workflow-designer/using-the-workflow-designer.md)

@@ -10,16 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d3b5863e6273e96d7e0047f89cd16a69358c49cc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3e8e44586f6b0f2f8aea5ab13eb27886d7b3a6e8
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751660"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757965"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Postupy: použití hledání v Návrháři pracovních postupů
 
-Usnadňuje vytváření rozsáhlejších, složitějších pracovních postupů vyhledávání můžete použít v Návrháři pracovních postupů k vyhledání položky podle klíčového slova. Všimněte si, že návrháře nepodporuje nahrazení. Hledání v Návrháři najdete následující:
+K usnadnění vytváření rozsáhlejších, složitějších pracovních postupů, můžete hledat v Návrháři pracovních postupů k nalezení položek podle klíčového slova. Všimněte si, že návrháře nepodporuje nahrazení.
 
 ## <a name="quick-find"></a>Rychle najít
 
@@ -33,24 +33,24 @@ Rychle najít vyhledá v Návrháři následující:
 
 -   Výrazy
 
-### <a name="using-quick-find"></a>Použití rychlého hledání
+### <a name="use-quick-find"></a>Použití rychlého hledání
 
-1.  Pomocí návrháře pracovních postupů otevřete, stiskněte klávesu **Ctrl + F**, nebo vyberte **upravit**, **najít a nahradit**, **rychlého hledání**.
+1.  Pomocí návrháře pracovních postupů otevřete, stiskněte klávesu **Ctrl + F**, nebo vyberte **upravit** > **najít a nahradit** > **rychlého hledání**.
 
 2.  Zadejte hledaný termín do **najít** textové pole a klikněte na tlačítko **najít další**.
 
-3.  Hledaný termín budou umístěny v aktuálním pracovním postupu. Následující snímek obrazovky ukazuje název zobrazení aktivity se nachází v návrháři.
+3.  Hledaný termín se nachází v aktuálním pracovním postupu. Následující obrázek ukazuje název zobrazení aktivity se nachází v Návrháři:
 
-     ![Výsledek hledání v Návrháři pracovních postupů](../workflow-designer/media/designersearch.png)
+   ![Výsledek hledání v Návrháři pracovních postupů](../workflow-designer/media/designersearch.png)
 
 ## <a name="find-in-files"></a>Hledání v souborech
 
-Použití funkce hledání v souborech vyhledá řetězce v soubory pracovního postupu, včetně souborů XAML.
+Najít v souborech vyhledá řetězce v soubory pracovního postupu, včetně souborů XAML.
 
-### <a name="using-find-in-files"></a>Použití funkce hledání v souborech
+### <a name="use-find-in-files"></a>Používání funkce najít v souborech
 
-1.  V sadě Visual Studio, stiskněte klávesu **Ctrl + Shift + F**, nebo vyberte **upravit**, **najít a nahradit**, **hledání v souborech**
+1.  V sadě Visual Studio, stiskněte klávesu **Ctrl**+**Shift**+**F**, nebo vyberte **upravit**  >   **Najít a nahradit** > **hledání v souborech**.
 
-2.  Zadejte hledanou položku do **najít** textové pole a klikněte na tlačítko **najít všechny**
+2.  Zadejte hledanou položku do **najít** textové pole a klikněte na tlačítko **najít všechny**.
 
-3.  Výsledek hledání se zobrazí v sadě Visual Studio**najít výsledek** zobrazení. Dvakrát klikněte na položku výsledek bude přejděte do aktivity, který obsahuje shody v Návrháři pracovních postupů.
+3.  Výsledek hledání se zobrazí v **najít výsledek** zobrazení. Dvakrát klikněte na položku výsledek přejde na aktivitu, která obsahuje shody v Návrháři pracovních postupů.

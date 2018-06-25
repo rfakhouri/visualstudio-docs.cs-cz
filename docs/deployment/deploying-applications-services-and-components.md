@@ -2,7 +2,7 @@
 title: Prohlídka funkce nasazení
 description: Další informace o možnostech pro nasazení aplikací ze sady Visual Studio.
 ms.custom: mvc
-ms.date: 11/26/2017
+ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 dev_langs:
@@ -24,22 +24,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e301131afc62b0564ca302adb9a079b42b52c5f8
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a37207fb541a57bbf67b63bff5168185135bc27f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234683"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756954"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Rychlý úvod: První pohled na nasazení v sadě Visual Studio
 
-Nasazením aplikace, služby nebo komponenty ji budete distribuovat pro instalaci na dalších počítačích, zařízeních, serverech nebo v cloudu. V sadě Visual Studio můžete zvolit vhodnou metodu pro potřebný typ nasazení. (Mnoho typů aplikací podporují jiné nástroje nasazení jako je například nasazení příkazového řádku nebo NuGet, které nejsou tady popsané).
+Nasazením aplikace, služby nebo součásti, distribuovat pro instalaci v jiných počítačích, zařízení nebo servery, nebo v cloudu. V sadě Visual Studio můžete zvolit vhodnou metodu pro potřebný typ nasazení. (Mnoho typů aplikací podporují jiné nástroje nasazení jako je například nasazení příkazového řádku nebo NuGet, které nejsou tady popsané).
 
-Najdete podrobné pokyny pro podrobné pokyny. Pokud nasazujete webovou aplikaci a potřebujete podrobnější informace k rozhodování o na nejlepší možnost nasazení ze sady Visual Studio, najdete v části [jaké možnosti publikování je pro mě nejlepší?](../ide/not-in-toc/web-publish-options.md).
+Zobrazit – elementy QuickStart a kurzy pro podrobné pokyny. Přehled možností nasazení, naleznete v části [jaké možnosti publikování je pro mě nejlepší?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
 ## <a name="deploy-to-local-folder"></a>Nasazení do místní složky
 
-Nasazení do místní složky se obvykle používá pro testování nebo zahájíte dvoufázové nasazení, ve kterém se použije jiný nástroj pro nasazení poslední.
+Nasazení do místní složky se obvykle používá pro testování nebo zahájíte dvoufázové nasazení, ve kterém se používá jiný nástroj pro nasazení poslední.
 
 - **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, a. **Základní NET**: použijte nástroj pro publikování pro nasazení do místní složky. Možnosti dostupné závisí na typu vaší aplikace. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**. (Pokud jste dříve nakonfigurovali žádné profily publikování, musíte pak kliknout na **vytvořit nový profil**.) V dalším kroku vyberte **složky**. Další informace najdete v tématu [nasadit do místní složky](quickstart-deploy-to-local-folder.md).
 
@@ -53,7 +53,9 @@ Nasazení do místní složky se obvykle používá pro testování nebo zaháj�
 
     ![Vyberte aplikační služba Azure](../deployment/media/quickstart-publish-azure.png "vyberte aplikační služba Azure")
 
-    V aplikaci Visual Studio 2017 verze 15.7, můžete nasadit aplikace ASP.NET Core **služby App Service pro Linux**.
+    V aplikaci Visual Studio 2017 verze 15.7 a novější, můžete nasadit aplikace ASP.NET Core **služby App Service pro Linux**.
+
+    Pro aplikace, Python, také zjistit [Python - publikování do služby Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
     Informace o import profilu publikování ze služby Azure App Service pro Visual Studio najdete v tématu [importu nastavení publikování a nasazení do Azure](../deployment/tutorial-import-publish-settings-azure.md).
 
@@ -124,8 +126,7 @@ V prostředí team můžete povolit průběžné nasazování aplikace Visual St
 
 ## <a name="next-steps"></a>Další kroky
 
-V tomto kurzu trvalo rychle zobrazit možnosti nasazení pro různé aplikace. Pokud nasazujete webovou aplikaci, jako je ASP.NET, přečtěte si podrobnější informace o některých možností nasazení k dispozici v sadě Visual Studio.
+V tomto kurzu trvalo rychle zobrazit možnosti nasazení pro různé aplikace.
 
 > [!div class="nextstepaction"]
-> [Jaké možnosti publikování je pro mě nejlepší?](../ide/not-in-toc/web-publish-options.md)
-
+> [Jaké možnosti publikování je pro mě nejlepší?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)

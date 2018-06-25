@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 099a512bcbca7136541c9896e32f43b9e518ed8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 751519fe2cba331f0de08b492505e2fba568fe8b
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978346"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758494"
 ---
-# <a name="send-activity-designer"></a>Odeslat Návrhář aktivity
+# <a name="send-activity-designer"></a>Návrhář aktivity Send
 
 **Odeslat** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.ServiceModel.Activities.Send> aktivity.
 
@@ -28,16 +28,16 @@ ms.locfileid: "31978346"
  A <xref:System.ServiceModel.Activities.Send> aktivita se používá k odeslání zprávy do služby. A <xref:System.ServiceModel.Activities.ReceiveReply> aktivity mohou být vázány na <xref:System.ServiceModel.Activities.Send> aktivity, která přijímá zprávy jako součást vzorce výměny zpráv požadavků a odpovědí na straně klienta.
 
 ### <a name="using-the-send-activity-designer"></a>Pomocí návrháře aktivity odesílání
- **Odeslat** Návrhář aktivity naleznete v **zasílání zpráv** kategorii **sada nástrojů**, který přistupuje kliknutím **sada nástrojů** Karta v Návrháři pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
 
- **Odeslat** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na aktivity jsou obvykle umístěny. Tím se vytvoří <xref:System.ServiceModel.Activities.Send> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> o odeslání. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **odeslat** Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností.
+Přístup **odeslat** Návrhář aktivity v **zasílání zpráv** kategorii **sada nástrojů**. **Odeslat** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na aktivity jsou obvykle umístěny. Tím se vytvoří <xref:System.ServiceModel.Activities.Send> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> o odeslání. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **odeslat** Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností.
 
- K vytvoření <xref:System.ServiceModel.Activities.ReceiveReply> aktivity a navázat jej na vybrané <xref:System.ServiceModel.Activities.Send> aktivity, klikněte pravým tlačítkem myši **odeslat** návrháře, klikněte na aktivitu **vytvořit ReceiveReply** položka v místní nabídce a **ReceiveReplyForSend** designer se zobrazí pod **odeslat** designer. <xref:System.ServiceModel.Activities.ReceiveReply> Aktivity je aktivitou, která přijme zprávu o jako součást vzorce výměny zpráv požadavků a odpovědí na straně klienta. Můžete nakonfigurovat pomocí **ReceiveReplyForSend** designer.
+K vytvoření <xref:System.ServiceModel.Activities.ReceiveReply> aktivity a navázat jej na vybrané <xref:System.ServiceModel.Activities.Send> aktivity, klikněte pravým tlačítkem myši **odeslat** návrháře, klikněte na aktivitu **vytvořit ReceiveReply** položka v místní nabídce a **ReceiveReplyForSend** designer se zobrazí pod **odeslat** designer. <xref:System.ServiceModel.Activities.ReceiveReply> Aktivity je aktivitou, která přijme zprávu o jako součást vzorce výměny zpráv požadavků a odpovědí na straně klienta. Můžete nakonfigurovat pomocí **ReceiveReplyForSend** designer.
 
- Případně **SendAndReceiveReply** návrhář šablony v **zasílání zpráv** kategorii **sada nástrojů** lze vytvořit pár předem nakonfigurovaná <xref:System.ServiceModel.Activities.Send>a <xref:System.ServiceModel.Activities.ReceiveReply> aktivity. Další informace o použití **SendAndReceiveReply** a **ReceiveReplyForSend** šablony, najdete v článku [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) tématu.
+Případně **SendAndReceiveReply** návrhář šablony v **zasílání zpráv** kategorii **sada nástrojů** lze vytvořit pár předem nakonfigurovaná <xref:System.ServiceModel.Activities.Send>a <xref:System.ServiceModel.Activities.ReceiveReply> aktivity. Další informace o použití **SendAndReceiveReply** a **ReceiveReplyForSend** šablony, najdete v článku [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) tématu.
 
 ### <a name="the-send-activity-properties"></a>Vlastnosti aktivity odesílání
- Následující tabulce je zobrazena <xref:System.ServiceModel.Activities.Send> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti se dá upravit v mřížce vlastnosti nebo na plochu návrháře pracovních postupů.
+
+Následující tabulce je zobrazena <xref:System.ServiceModel.Activities.Send> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti se dá upravit v mřížce vlastnosti nebo na plochu návrháře pracovních postupů.
 
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
@@ -56,7 +56,7 @@ ms.locfileid: "31978346"
 |<xref:System.ServiceModel.Activities.Send.EndpointAddress%2A>||<xref:System.ServiceModel.EndpointAddress> Na které je zpráva odeslána.|
 |<xref:System.ServiceModel.Activities.Send.EndpointConfigurationName%2A>||Název konfigurace koncového bodu. Tato vlastnost nastavena, když konfigurujete koncový bod v konfiguračním souboru. Tato vlastnost by měla být nastavená na daný název  **\<endpoint >** element v konfiguračním souboru. Pokud je tato vlastnost nastavena, <xref:System.ServiceModel.Activities.Send.Endpoint%2A> vlastnost by měla být **null**.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)

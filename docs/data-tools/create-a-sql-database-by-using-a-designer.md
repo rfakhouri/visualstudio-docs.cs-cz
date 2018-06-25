@@ -14,15 +14,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 53f34fbed4a2067836c5f2c7a8d4bf8aa6c09d29
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5d21ba3f239bb4c5e3fdd1ba717b1288956b8550
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747037"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756152"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Vytvoření databáze a přidání tabulek v sadě Visual Studio
-Visual Studio můžete použít k vytváření a aktualizaci místního databázového souboru v SQL serveru Express LocalDB. Můžete také vytvořit databázi spuštěním příkazů Transact-SQL v **Průzkumník objektů systému SQL Server** okno nástroje v sadě Visual Studio. V tomto tématu jsme vytvoříte soubor MDF a přidání tabulek a klíče pomocí Návrháře tabulky.
+Visual Studio můžete použít k vytváření a aktualizaci místního databázového souboru v SQL serveru Express LocalDB. Můžete také vytvořit databázi spuštěním příkazů Transact-SQL v **Průzkumník objektů systému SQL Server** okno nástroje v sadě Visual Studio. V tomto tématu, vytvoříme *.mdf* souboru a přidejte tabulkami a klíči pomocí Návrháře tabulky.
 
 ## <a name="prerequisites"></a>Požadavky
 Pro dokončení tohoto návodu, musíte mít volitelné **úložiště dat a zpracování** zatížení, které jsou nainstalované v sadě Visual Studio. K její instalaci, otevřete **instalační program Visual Studio** a zvolte **úlohy** kartě. V části **Web a Cloud**, zvolte **úložiště dat a zpracování**. Vyberte **upravit** tlačítko zatížení přidat do sady Visual Studio.
@@ -32,7 +32,7 @@ Pro dokončení tohoto návodu, musíte mít volitelné **úložiště dat a zpr
 ### <a name="to-create-a-project-and-a-database-file"></a>Vytvoření projektu a databázového souboru
 1.  Vytvoření projektu Windows Forms, který je pojmenován `SampleDatabaseWalkthrough`.
 
-2.  Na panelu nabídek vyberte **projektu**, **přidat novou položku**.
+2.  Na panelu nabídek vyberte **projektu** > **přidat novou položku**.
 
 3.  V seznamu šablon položek, posuňte se dolů a vyberte **databáze založené na službě**.
 
@@ -41,7 +41,7 @@ Pro dokončení tohoto návodu, musíte mít volitelné **úložiště dat a zpr
 4.  Název databáze **SampleDatabase**a pak vyberte **přidat** tlačítko.
 
 ### <a name="to-add-a-data-source"></a>Chcete-li přidat zdroje dat
-5.  Pokud **zdroje dat** okno není otevřený, otevřete ho tak, že vyberete **Shift + Alt + D** klíče nebo v nabídce panelu Výběr **zobrazení**, **ostatní okna**, **Zdroje dat**.
+5.  Pokud **zdroje dat** okno není otevřený, otevřete ho tak, že vyberete **Shift**+**Alt**+**D** klíče nebo na řádku nabídek vyberte **zobrazení** > **ostatní okna** > **zdroje dat**.
 
 6.  V **zdroje dat** vyberte **přidat nový zdroj dat** odkaz.
 
@@ -58,11 +58,11 @@ Pro dokončení tohoto návodu, musíte mít volitelné **úložiště dat a zpr
 11. Jeden **zvolte databázové objekty** stránky, zobrazí se zpráva, že databáze neobsahuje žádné objekty. Zvolte **Dokončit**.
 
 ### <a name="to-view-properties-of-the-data-connection"></a>Chcete-li zobrazit vlastnosti datového připojení
-Připojovací řetězec pro soubor SampleDatabase.mdf můžete zobrazit tak, že otevřete okno Vlastnosti datového připojení:
+Připojovací řetězec pro můžete zobrazit *SampleDatabase.mdf* souboru tak, že otevřete okno Vlastnosti datového připojení:
 
--   V sadě Visual Studio, vyberte **zobrazení**, **Průzkumník objektů systému SQL Server** Pokud toto okno už není otevřený. Otevřete okno Vlastnosti rozšířením **připojení dat** uzlu, otevření místní nabídky pro SampleDatabase.mdf a pak vybrat **vlastnosti**.
+-   V sadě Visual Studio, vyberte **zobrazení** > **Průzkumník objektů systému SQL Server** Pokud toto okno už není otevřený. Otevřete okno Vlastnosti rozšířením **připojení dat** uzlu, na místní nabídku pro otevření *SampleDatabase.mdf*a potom vyberete **vlastnosti**.
 
--   Alternativně můžete vybrat **zobrazení**, **Průzkumníka serveru**, pokud toto okno už není otevřený. Otevřete okno Vlastnosti rozšířením **datová připojení** uzlu. Otevřete místní nabídky pro SampleDatabase.mdf a pak vyberte **vlastnosti**.
+-   Alternativně můžete vybrat **zobrazení** > **Průzkumníka serveru**, pokud toto okno už není otevřený. Otevřete okno Vlastnosti rozšířením **datová připojení** uzlu. Otevřete místní nabídku pro *SampleDatabase.mdf*a potom vyberte **vlastnosti**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Vytvoření tabulky a klíče pomocí Návrháře tabulky
 V této části vytvoříte dvě tabulky, primární klíč v každé tabulce a pár řádků ukázková data. Pokud vytvoříte cizí klíč, který chcete určit, jak se záznamy v jedné tabulce odpovídají záznamy v druhé tabulce.
@@ -165,9 +165,9 @@ V této části vytvoříte dvě tabulky, primární klíč v každé tabulce a 
 6.  Přidáte data pro některé objednávky.
 
     > [!IMPORTANT]
-    > Zajistěte, aby všechny identifikátory pořadí a počty pořadí jsou celá čísla a že každý ID zákazníka odpovídá hodnotu, která jste zadali v sloupec CustomerID tabulku zákazníků.
+    > Ujistěte se, zda jsou všechny ID pořadí a počty pořadí celá čísla a to každé ID zákazníka hodnotu, která jste zadali v **CustomerID** sloupec tabulky zákazníků.
 
-7.  Na panelu nabídek vyberte **soubor**, **Uložit vše**.
+7.  Na panelu nabídek vyberte **soubor** > **Uložit vše**.
 
 ## <a name="see-also"></a>Viz také:
 

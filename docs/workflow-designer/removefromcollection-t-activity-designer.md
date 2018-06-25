@@ -12,27 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6aedee945ab19201406ce26183db4e2f3519263
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 53fc58e231e5ef1cbbc6106e279b4925d145dd9f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977956"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755934"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > Návrhář aktivity
 
 **RemoveFromCollection\<T >** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.RemoveFromCollection%601> aktivity.
 
 ## <a name="the-removefromcollectiontactivity"></a>RemoveFromCollection\<T > aktivity
- <xref:System.Activities.Statements.RemoveFromCollection%601> Aktivity odebere určenou položku z konkrétní kolekce.
+
+<xref:System.Activities.Statements.RemoveFromCollection%601> Aktivity odebere určenou položku z konkrétní kolekce.
 
 ### <a name="using-the-removefromcollectiont-activity-designer"></a>Pomocí RemoveFromCollection\<T > Návrhář aktivity
- **RemoveFromCollection\<T >** Návrhář aktivity naleznete v **kolekce** kategorii **sada nástrojů**, který přistupuje kliknutím **Sada nástrojů** kartě v Návrháři pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
 
- **RemoveFromCollection\<T >** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a bez ohledu na aktivity jsou obvykle umístěny, jako například vyřadit na povrch Návrhář postupu provádění uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.RemoveFromCollection%601> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z RemoveFromCollection < Int32\>. <xref:System.Activities.Activity.DisplayName%2A> Hodnota se dá upravit v hlavičce **RemoveFromCollection < T\>**  Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností. Ostatní vlastnosti musí být upravit na mřížku vlastností.
+Přístup **RemoveFromCollection\<T >** Návrhář aktivity v **kolekce** kategorii **sada nástrojů**. **RemoveFromCollection\<T >** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a bez ohledu na aktivity jsou obvykle umístěny, jako například vyřadit na povrch Návrhář postupu provádění uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.RemoveFromCollection%601> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z RemoveFromCollection < Int32\>. <xref:System.Activities.Activity.DisplayName%2A> Hodnota se dá upravit v hlavičce **RemoveFromCollection < T\>**  Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností. Ostatní vlastnosti musí být upravit na mřížku vlastností.
 
 ### <a name="the-removefromcollectiont-properties"></a>RemoveFromCollection < T\> vlastnosti
- Následující tabulce je zobrazena <xref:System.Activities.Statements.RemoveFromCollection%601> vlastnosti a popisuje, jak se používají v návrháři.
+
+Následující tabulce je zobrazena <xref:System.Activities.Statements.RemoveFromCollection%601> vlastnosti a popisuje, jak se používají v návrháři.
 
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
@@ -42,7 +43,7 @@ ms.locfileid: "31977956"
 |*TypeArgument*|Hodnota TRUE|Typ T položek, které jsou součástí <xref:System.Collections.Generic.ICollection%601>. Ve výchozím nastavení to *TypeArgument* je typ nastaven na **Int32**. Chcete-li změnit typ, změňte hodnotu *TypeArgument* do pole se seznamem v tabulce vlastností.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|Hodnota, která označuje, zda zadaná položka byla odebrána z kolekce. Chcete-li zadat proměnnou pro vazbu na výsledek, zadejte v proměnné v tabulce vlastností|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Kolekce](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)

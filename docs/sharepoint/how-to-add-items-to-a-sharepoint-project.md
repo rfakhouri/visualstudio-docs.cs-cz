@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a64da6c7289aa8af67436ca38404ef3d050b5ab
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 80181525c63593da783b620917b82c5a8c0bf177
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768102"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758206"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Postupy: přidání položek do projektu služby SharePoint
   Řešení služby SharePoint obsahovat jeden nebo více projektů, z nichž každý obsahuje více položek projektu služby SharePoint. Po otevření nebo vytvoření řešení služby SharePoint, můžete přidat nové nebo existující položky na těchto projekty. Například nové projekty workflow součástí výchozího formuláře, který je pojmenován default.aspx, ale můžete nahradit tato forma nové nebo jiné formuláře, nebo přidejte jiný ASPX formulář.  
