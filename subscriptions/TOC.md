@@ -1,4 +1,5 @@
 # [Předplatná sady Visual Studio](index.md)
+## [Co je nového](whats-new-in-subscriptions.md)
 ## Prostředí pro předplatitele
 ### [Použití Portálu pro předplatitele](using-the-subscriber-portal.md)
 #### [Aktivace maloobchodních předplatných](activate-store-subscriptions.md)
