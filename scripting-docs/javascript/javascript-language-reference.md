@@ -22,17 +22,20 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f1b67e86120ae4604d12b53acdafd3e7f5f3b56
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 981e04d94ac803c76705cd7014f5d29721188512
+ms.sourcegitcommit: c842955aa9ee9f149bb63e66e46c5c29be6e9881
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24789084"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36962655"
 ---
 # <a name="javascript-language-reference"></a>Referenční dokumentace jazyka JavaScript
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)]je skriptovací jazyk, který může být vložen do webových stránek a dalších aplikací.  
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] je skriptovací jazyk, který může být vložen do webových stránek a dalších aplikací.  
   
  Tato dokumentace popisuje implementaci jazyka JavaScript společnosti Microsoft, který je kompatibilní se specifikací ECMAScript Language Specification 5th Edition. Poskytuje také další funkce, které nejsou součástí norem ECMA.  
+
+> [!NOTE]
+> Jsme se připojili k úsilí komunity celou aby [MDN webových dokumentů](https://developer.mozilla.org/en-US/) prostředků na webu centrální, významný vývoj, přesměrováním všech (500 + stránkách) společnosti Microsoft JavaScript referenční dokumentace rozhraní API z webu docs.microsoft.com k jejich MDN svými protějšky. Podrobnosti najdete v tématu to [oznámení](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
   
  Můžete použít [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] kód v prohlížeči aplikace společně s jazyky HTML, CSS a modelu DOM (Document Object), která představuje HTML a prohlížeč objektů.  
   
@@ -53,21 +56,6 @@ ms.locfileid: "24789084"
 -   Informace o používání rozhraní API systému Windows Runtime v jazyce JavaScript naleznete v tématu [pomocí prostředí Windows Runtime v jazyce JavaScript](../jswinrt/using-the-windows-runtime-in-javascript.md).  
   
  Editor jazyka JavaScript v aplikaci Visual Studio poskytuje podporu technologie IntelliSense. Další informace najdete v tématu [JavaScript IntelliSense](http://go.microsoft.com/fwlink/p/?LinkId=256499).  
-  
-## <a name="in-this-section"></a>V tomto oddílu  
- Následující kapitoly poskytují další informace o jazyce JavaScript.  
-  
- [Co je nového v jazyce JavaScript](../javascript/what-s-new-in-javascript.md)  
- Popisuje nové funkce v jazyce JavaScript.  
-  
- [Základy jazyka JavaScript](../javascript/javascript-fundamentals.md)  
- Poskytuje úvod do základních struktur v jazyce JavaScript.  
-  
- [Pokročilý JavaScript](../javascript/advanced/advanced-javascript.md)  
- Vysvětluje pokročilé funkce jazyka JavaScript, například rekurzi, pole, řešení problémů apod.  
-  
- [Referenční dokumentace technologie JavaScript](../javascript/reference/javascript-reference.md)  
- Vysvětluje prvky jazyka JavaScript.  
   
 ## <a name="see-also"></a>Viz také  
  [Document Object Model](http://go.microsoft.com/fwlink/?LinkId=148095)

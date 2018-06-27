@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3e9fd68630b9477be69bfad7c9d4e3bad08dd22a
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750490"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947060"
 ---
-# <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Kurz – krok 6: použití šablony hlasovací webový projekt Django
+# <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6: Použití šablony hlasovací webový projekt Django
 
 **Předchozí krok: [ověřování uživatelů v Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
 

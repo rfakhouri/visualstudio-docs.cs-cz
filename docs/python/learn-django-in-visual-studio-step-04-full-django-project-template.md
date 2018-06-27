@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 8b9d14a9ba3c6428b4ec997d91addfaea30c0baf
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750360"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947481"
 ---
-# <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Kurz – krok 4: použití kompletní šablonou webový projekt Django
+# <a name="step-4-use-the-full-django-web-project-template"></a>Krok 4: Použití kompletní šablonou webový projekt Django
 
 **Předchozí krok: [obsluhovat statické soubory, přidat stránky a použití šablony dědičnosti](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
@@ -73,7 +73,7 @@ Na úrovni nejširší vytvoří šablona "Webový projekt Django" následujíc�
   - `requirements.txt` obsahující závislost na Django 1.x.
   - `readme.html`, soubor, který se zobrazí v sadě Visual Studio po vytvoření projektu. Jak je uvedeno v předchozí části, postupujte podle pokynů tady k vytvoření účtu superuživatele (správce) pro aplikaci.
 - `app` Složka obsahuje všechny soubory aplikace, včetně zobrazení, modely, testů, formulářů, šablony a statické soubory (viz krok 4-2). Obvykle přejmenujete tuto složku a použít více rozlišovací název aplikace.
-- `DjangoWeb` (Projekt Django) složka obsahuje typické soubory projekt Django: `__init.py__`, `settings.py`, `urls.py`, a `wsgi.py`. Pomocí šablony projektu, `settings.py` už je nakonfigurovaný pro aplikaci a databázový soubor, a `urls.py` už nakonfigurované trasy pro všechny aplikace stránky, včetně přihlašovací formulář.
+- `DjangoWeb` (Projekt Django) složka obsahuje typické soubory projekt Django: `__init__.py`, `settings.py`, `urls.py`, a `wsgi.py`. Pomocí šablony projektu, `settings.py` už je nakonfigurovaný pro aplikaci a databázový soubor, a `urls.py` už nakonfigurované trasy pro všechny aplikace stránky, včetně přihlašovací formulář.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Otázka: Je možné sdílet mezi projektů sady Visual Studio virtuálního prostředí?
 
@@ -215,7 +215,7 @@ Odpověď: Chybí koncové "$" v regulárním výrazu byl jednoduché dohledu v 
 > [!div class="nextstepaction"]
 > [Ověřování uživatelů v Django](learn-django-in-visual-studio-step-05-django-authentication.md)
 
-## <a name="going-deeper"></a>Budete hlubší
+## <a name="go-deeper"></a>Přejděte hlubší
 
 - [Zápis první aplikace Django, část 4 - formulářů a obecného zobrazení](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - Kurz zdrojového kódu na Githubu: [Microsoft nebo python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

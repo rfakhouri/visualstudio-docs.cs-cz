@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a6eb2d2c690642a12be6ced7da29b0e85bdbb046
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750331"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947073"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Kurz – krok 3: statické soubory, přidat stránky a používat šablonu dědičnosti
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsluhovat statické soubory, přidat stránky a použití šablony dědičnosti
 
 **Předchozí krok: [vytvoření aplikace Django s zobrazení a stránka šablony](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
@@ -277,7 +277,7 @@ Následující kroky ukazují dědičnosti:
 > [!div class="nextstepaction"]
 > [Použít úplnou šablonu webový projekt Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
-## <a name="going-deeper"></a>Budete hlubší
+## <a name="go-deeper"></a>Přejděte hlubší
 
 - [Zápis první aplikace Django, část 3 (zobrazení)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - Další možnosti šablon Django, například tok řízení, najdete v části [jazyk šablony Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)

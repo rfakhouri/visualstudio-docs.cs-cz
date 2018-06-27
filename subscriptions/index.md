@@ -1,26 +1,28 @@
 ---
 title: Předplatná sady Visual Studio
 Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
+Ms.author: tglee
+Manager: lank
 layout: LandingPage
-Ms.date: 02/26/2018
+Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327187"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946923"
 ---
 # <a name="visual-studio-subscriptions"></a>Předplatná sady Visual Studio
+
 Visual Studio odběrů je komplexní sadu prostředků můžete vytvářet, nasazovat a spravovat kvalitních aplikací na upřednostňované platformy a zařízení, včetně systému Windows, iOS, Android a Linux.  Výhody odběry zahrnovat přístup do nástroje pro vývojáře, cloudových služeb a softwaru, cvičení a podporu pro vývoj a testování potřebám.
 
-##  <a name="get-started"></a>Začínáme
+## <a name="get-started"></a>Začínáme
+
 Správci přihlásit k [ https://manage.visualstudio.com ](https://manage.visualstudio.com) přiřadit předplatných pro váš tým.<br>
 Odběratelé Přihlaste se k [ https://my.visualstudio.com ](https://my.visualstudio.com) pro přístup k vaší výhody předplatného.
 
@@ -134,6 +136,12 @@ Odběratelé Přihlaste se k [ https://my.visualstudio.com ](https://my.visualst
         </a>
     </li>   
 </ul>
+
+---
+
+## <a name="whats-new"></a>Co je nového
+
+Chcete-li vaše předplatné i užitečnější, jsme přidejte a často aktualizovat výhody předplatného. Další informace najdete v tématu [co je nového v předplatných](whats-new-in-subscriptions.md) stránky.
 
 ---
 

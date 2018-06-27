@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 7e2f9f4635a1effc7ad46d1d842f22b3943a2b16
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031979"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947011"
 ---
-# <a name="step-4-running-code-in-the-debugger"></a>Krok 4: Spuštění kódu v ladicím programu
+# <a name="step-4-run-code-in-the-debugger"></a>Krok 4: Spuštění kódu v ladicím programu
 
 **Předchozí krok: [pomocí interaktivních okna REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
@@ -106,7 +106,7 @@ Kromě správy projektů, zajištění s formátováním úpravy prostředí a o
 > [!div class="nextstepaction"]
 > [Instalace balíčků ve vašem prostředí Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
-### <a name="going-deeper"></a>Budete hlubší
+### <a name="go-deeper"></a>Přejděte hlubší
 
 - [Ladění](debugging-python-in-visual-studio.md)
 - [Ladění v sadě Visual Studio](../debugger/debugger-feature-tour.md) poskytuje úplnou dokumentaci sady Visual Studio je ladění funkcí.

@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2eadee7562f8dd08de55f333ade005ceaf766a66
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031706"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946854"
 ---
-# <a name="working-with-python-in-visual-studio"></a>Práce s Python v sadě Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Kurz: Práce s Python v sadě Visual Studio
 
 Python je oblíbených programovací jazyk, který je spolehlivá, flexibilní, usnadňuje další, bez použití na všech operačních systémech a nepodporuje komunity silné vývojářů a mnoho volné knihovny. Jazyk podporuje všechny způsobů vývoje, včetně webových aplikací, webové služby, aplikace klasické pracovní plochy, skriptování a vědecké výpočty a používá mnoho vysoké školy, vědců, běžné vývojáři a profesionální vývojáře agentem.
 
@@ -73,7 +73,7 @@ V tomto kurzu začnete s Jednoduchý projekt obsahující soubor jeden, prázdn�
 > [!div class="nextstepaction"]
 > [Psaní a spuštění kódu](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 
-## <a name="going-deeper"></a>Budete hlubší
+## <a name="go-deeper"></a>Přejděte hlubší
 
 - [Python projekty v sadě Visual Studio](managing-python-projects-in-visual-studio.md).
 - [Další informace o jazyka Python na python.org](https://www.python.org)

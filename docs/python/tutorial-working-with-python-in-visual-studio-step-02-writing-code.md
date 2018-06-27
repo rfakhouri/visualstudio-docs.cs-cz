@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 6624e6730d141421dc4373f8ee9cef91edc9efd6
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031547"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947047"
 ---
-# <a name="step-2-writing-and-running-code"></a>Krok 2: Psaní a spuštění kódu
+# <a name="step-2-write-and-run-code"></a>Krok 2: Zápis a spuštění kódu
 
-**Předchozí krok: [vytvoření nového projektu Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Předchozí krok: [vytvořte nový projekt Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
 Sice Průzkumníku řešení, kde budete spravovat soubory projektu, *editor* okno je obvykle kde pracovat *obsah* souborů, jako zdrojový kód. Editor má zasílat informace o typu souboru, který upravujete, včetně programovací jazyk (založené na příponě souboru) a nabízí funkce vhodné pro daný jazyk, například barevné zvýrazňování syntaxe a automatické dokončování pomocí IntelliSense.
 
@@ -91,7 +91,7 @@ Sice Průzkumníku řešení, kde budete spravovat soubory projektu, *editor* ok
 > [!div class="nextstepaction"]
 > [Používání okna interaktivní REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
-## <a name="going-deeper"></a>Budete hlubší
+## <a name="go-deeper"></a>Přejděte hlubší
 
 - [Úpravy kódu](editing-python-code-in-visual-studio.md)
 - [Formátování kódu](formatting-python-code.md)

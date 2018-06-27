@@ -1,7 +1,7 @@
 ---
 title: Integrace systému SQL Server s R
 description: Visual Studio podporuje vytváření a spouštění dotazů SQL z R a možnost R pro práci s uložené procedury.
-ms.date: 01/24/2018
+ms.date: 06/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 63196bcf7188ffea838390cbb2c4133aece95313
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 3b9fa1f675754257a2278c7282c45d9816c034cd
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238321"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946910"
 ---
 # <a name="work-with-sql-server-and-r"></a>Práce s systému SQL Server a R
 
@@ -75,13 +75,13 @@ RTVS zjednodušuje proces jinak nepraktické a náchylné kombinace kódu SQL a 
 
 ### <a name="write-and-test-a-sql-stored-procedure"></a>Psaní a testování uloženou proceduru SQL
 
-Chcete-li přidat novou uloženou proceduru SQL, klikněte pravým tlačítkem na projekt, vyberte možnost **přidat** > **nová položka**, vyberte **uloženou proceduru SQL s R** ze seznamu šablon Zadejte název souboru (*StoredProcedure.R* v tomto příkladu) a vyberte **OK**.
+Chcete-li přidat novou uloženou proceduru SQL, klikněte pravým tlačítkem na projekt, vyberte možnost **přidat** > **nová položka**, vyberte **uloženou proceduru SQL s R** ze seznamu šablon Zadejte název souboru a vyberte **OK**. Výchozí název souboru je *SqlSProc.R*; pro snadnější čtení, název souboru *StoredProcedure.R* se používá ve zbývající části této části. Pokud máte více uložené procedury, každý soubor musí mít jedinečný název souboru.
 
 RTVS vytvoří tři soubory pro uložené procedury: *. R* soubor pro váš kód R *. Query.SQL* v souboru kódu SQL a *. Template.SQL* soubor, který kombinuje dva. Jejich pozdější dva zobrazí v Průzkumníku řešení jako podřízené objekty *. R* souboru:
 
 ![Průzkumník řešení rozšířit zobrazení SQL uloženou proceduru s R](media/sql-solution-explorer-expanded.png)
 
-*StoredProcedure.R* (v tomto příkladu) je, kde můžete napsat kód R. Výchozí obsah jsou:
+*. R* souboru (*StoredProcedure.R* v tomto příkladu) je, kde můžete napsat kód R. Výchozí obsah jsou:
 
 ```R
 # @InputDataSet: input data frame, result of SQL query execution
@@ -103,9 +103,9 @@ Jednoduše řečeno, obdrží kód R dataframe názvem `InputDataSet` a vrátí 
 
 Další generovaný kód (v komentářích) poskytuje testu malých skript, který se používá [RODBC balíček](https://cran.r-project.org/web/packages/RODBC/index.html) k přenosu příkazu jazyka SQL do systému SQL Server, spusťte ji a načíst její sadu výsledků jako R dataframe. Můžete Odkomentujte, že tento kód testovací interaktivně zapsat svůj kód R s výsledek nastaven, můžete získat z SQL serveru.
 
-*StoredProcedure.Query.sql* Určuje, kde zapsat a otestovat dotaz SQL, který generuje data pro `InputDataSet`. Pomocí této *.sql* souboru editoru poskytuje všechny potřebné obvyklé Transact-SQL pro vás.
+*. Query.SQL* souboru (*StoredProcedure.Query.sql* v tomto příkladu) určuje, kde zapsat a otestovat dotaz SQL, který generuje data pro `InputDataSet`. Pomocí této *.sql* souboru editoru poskytuje všechny potřebné obvyklé Transact-SQL pro vás.
 
-Jakmile budete spokojeni s kódu SQL, integrovat do vašeho kódu jazyka R v *StoredProcedure.R* přetažením *.sql* soubor do otevřete editor pro *. R* souboru. Na obrázku níže *StoredProcedure.Query.sql* byla přetáhnout do bodu za desetinnou čárkou v `sqlQuery(channel, )`:
+Jakmile budete spokojeni s kódu SQL, integrovat do vašeho kódu jazyka R přetažením *.sql* soubor do otevřete editor pro *. R* souboru. Na obrázku níže *StoredProcedure.Query.sql* má byla přetáhnout do bodu v *StoredProcedure.R* za desetinnou čárkou v `sqlQuery(channel, )`:
 
 ![Čtení souboru SQL do proměnné řetězec R](media/sql-reference-sql-file-from-r.png)
 
@@ -113,7 +113,7 @@ Jak můžete vidět, tento krok jednoduché automaticky generuje kód R otevřet
 
 Teď můžete interaktivně zápisu R kód, který zpracovává `InputDataSet` dataframe podle potřeby. Nezapomeňte, že můžete právě vyberte v editoru kódu jazyka R a odeslat ho do [interaktivních okna](interactive-repl-for-r-in-visual-studio.md) stisknutím **Ctrl**+**Enter**.
 
-*StoredProcedure.Template.sql*, nakonec obsahuje šablony pro generování SQL uloženou proceduru:
+*. Template.SQL* souboru (*StoredProcedure.Template.sql* v tomto příkladu), nakonec obsahuje šablony pro generování SQL uloženou proceduru:
 
 ```sql
 CREATE PROCEDURE [StoredProcedure]
@@ -127,8 +127,8 @@ EXEC sp_execute_external_script @language = N'R'
 END;
 ```
 
-- `_RCODE_` Zástupný symbol je nahrazena obsah *StoredProcedure.R*.
-- `_INPUT_QUERY_` Zástupný symbol je nahrazena obsah *StoredProcedure.Query.sql*.
+- `_RCODE_` Zástupný symbol je nahrazena obsah *. R* souboru (například *StoredProcedure.R*).
+- `_INPUT_QUERY_` Zástupný symbol je nahrazena obsah *. Query.SQL* souboru (například *StoredProcedure.Query.sql*).
 - Upravit `WITH RESULT SETS` klauzule k popisu schéma sada výsledků vrácená z uložené procedury. Konkrétně identifikovat sloupců z `OutputDataSet` dataframe, který chcete vrátit do volající uložené procedury.
 
 Například následující dotaz:

@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9aeba681e1a4ab7bae77197d8af10a90f49a40d0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 907b20d3665a84f764619dc40a906b1d4096fd04
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752498"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946840"
 ---
-# <a name="tutorial-step-2-create-a-flask-app-with-views-and-page-templates"></a>Kurz – krok 2: vytvoření aplikace Flask s zobrazení a stránka šablony
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Krok 2: Vytvoření aplikace Flask s zobrazení a šablony stránky
 
 **Předchozí krok: [vytvoření projektu Visual Studia a řešení](learn-flask-visual-studio-step-01-project-solution.md)**
 
@@ -217,7 +217,7 @@ Odpověď: Ano, můžete použít podsložky a potom se podívejte na relativní
 > [!div class="nextstepaction"]
 > [Statické soubory, přidat stránky a používat šablonu dědičnosti](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
 
-## <a name="going-deeper"></a>Budete hlubší
+## <a name="go-deeper"></a>Přejděte hlubší
 
 - [Rychlý start flask - vykreslování šablony](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) (flask.pocoo.org)
 - Kurz zdrojového kódu na Githubu: [Microsoft nebo python – ukázka vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

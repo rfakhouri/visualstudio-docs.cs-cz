@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2c5f9461eafa83551ba15c36d8ef212922a52ff
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 35650e1fe22026968c06ed4bf0c9bc4cd1d2d54e
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103135"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946972"
 ---
-# <a name="tutorial-step-5-authenticate-users-in-django"></a>Kurz – krok 5: ověření uživatele v Django
+# <a name="step-5-authenticate-users-in-django"></a>Krok 5: Ověření uživatele v Django
 
 **Předchozí krok: [použít úplnou šablonu webový projekt Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
@@ -33,7 +33,7 @@ V tomto kroku dozvíte:
 
 Následující kroky postupu tok ověřování a popisují části projektu, které se podílejí:
 
-1. Pokud jste ještě již postupovali podle pokynů v `readme.html` soubor v kořenu projektu pro vytvoření účtu superuživatele (správce), udělejte to teď.
+1. Pokud jste ještě není postupovali podle pokynů v `readme.html` soubor v kořenu projektu pro vytvoření účtu superuživatele (správce), udělejte to teď.
 
 1. Spusťte aplikaci pomocí sady Visual Studio **ladění** > **spustit ladění** (F5). Když se aplikace zobrazí v prohlížeči, sledovat **přihlásit** se zobrazí v pravém horním rohu stránky navigačního panelu.
 
@@ -62,7 +62,7 @@ Následující kroky postupu tok ověřování a popisují části projektu, kte
     {% endif %}
     ```
 
-1. Vzhledem k tomu, že žádný uživatel ověřen při prvním spuštění aplikace, tento kód šablony vykreslí pouze "Přihlášení" odkaz na relativní cestou "přihlášení". Jak je uvedeno v `urls.py` znázorněné v předchozí části tohoto postupu je namapována na `django.contrib.auth.views.login` zobrazení, který je uveden následující data:
+1. Vzhledem k tomu, že žádný uživatel ověřen při prvním spuštění aplikace, tento kód šablony vykreslí pouze "Přihlášení" odkaz na relativní cestou "přihlášení". Jak je uvedeno v `urls.py` (jako uvedené v předchozí části), danou trasu je namapována na `django.contrib.auth.views.login` zobrazení. Toto zobrazení obdrží následující data:
 
     ```python
     {
@@ -95,7 +95,7 @@ Následující kroky postupu tok ověřování a popisují části projektu, kte
                                        'placeholder':'Password'}))
     ```
 
-    Jak vidíte, tato třída tvaru odvozená z `AuthenticationForm` a konkrétně přepsání pole uživatelské jméno a heslo pro přidání zástupný text. Šablony sady Visual Studio obsahuje tento explicitní kód za předpokladu, že budete pravděpodobně chtít přizpůsobení formuláře, jako je například přidávání ověření síly hesla.
+    Jak vidíte, tato třída tvaru odvozená z `AuthenticationForm` a konkrétně přepsání pole uživatelské jméno a heslo pro přidání zástupný text. Šablony sady Visual Studio obsahuje tento explicitní kód na za předpokladu, že pravděpodobně chcete přizpůsobit formuláře, jako je například přidávání ověření síly hesla.
 
 1. Když přejdete na stránku přihlášení pak vykreslí aplikace `login.html` šablony. Proměnné `{{ form.username }}` a `{{ form.password }}` vykreslení `CharField` forms z `BootstrapAuthenticationForm`. Je také předdefinované části zobrazíte chyby ověření a element připravenou pro sociálních přihlášení, pokud zvolíte možnost Přidat těchto služeb.
 
@@ -144,13 +144,13 @@ Následující kroky postupu tok ověřování a popisují části projektu, kte
     {% endblock %}
     ```
 
-1. Při odesílání formuláře Django pokus o ověření přihlašovacích údajů, které poskytnete (například přihlašovací údaje super uživatele). Pokud se ověření nezdaří, zůstanete na stejné stránce, ale `form.errors` nastaven na hodnotu true. Pokud je ověření úspěšné, Django přejde na relativní adresu URL do pole "Další" `<input type="hidden" name="next" value="/" />`, který v tomto případě je domovská stránka (`/`).
+1. Při odesílání formuláře Django pokusy o ověření vašich přihlašovacích údajů (například přihlašovací údaje super uživatele). Pokud se ověření nezdaří, zůstanete na aktuální stránce, ale `form.errors` nastaven na hodnotu true. Pokud je ověření úspěšné, Django přejde na relativní adresu URL do pole "Další" `<input type="hidden" name="next" value="/" />`, který v tomto případě je domovská stránka (`/`).
 
 1. Teď, když na domovskou stránku vykreslením znovu, `user.is_authenticated` vlastnost má hodnotu true, pokud `loginpartial.html` šablony je vykreslen. V důsledku toho zobrazí zpráva "Hello (username)" a "Odhlásit". Můžete použít `user.is_authenticated` v dalších částech tohoto aplikaci kontrolovat ověřování.
 
     ![Hello zprávu a odhlášení řízení na stránce aplikace webový projekt Django](media/django/step05-logoff-control.png)
 
-1. Pokud chcete zkontrolovat, zda je ověřený uživatel oprávnění pro přístup k určitým prostředkům, budete potřebovat pro načtení uživatelská oprávnění v databázi pro daného uživatele. Další podrobnosti najdete v tématu [pomocí ověřování systému Django](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django dokumentace).
+1. Pokud chcete zkontrolovat, zda je ověřený uživatel oprávnění pro přístup k určitým prostředkům, budete muset načtení uživatelská oprávnění z vaší databáze. Další informace najdete v tématu [pomocí ověřování systému Django](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django dokumentace).
 
 1. Superuživatele nebo správce, zejména, má oprávnění k přístupu integrované rozhraní správce Django pomocí relativní adresy URL "/admin/" a "/ správce/doc /". Chcete-li tato rozhraní, otevřete projekt Django `urls.py` a odebere komentáře z následující položky:
 
@@ -200,14 +200,14 @@ Následující kroky postupu tok ověřování a popisují části projektu, kte
 
 ### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Otázka: co je účelem {% crsf_token %} značek, které se zobrazí v \<formuláře\> elementy?
 
-Odpověď: `{% crsf_token %}` značka zahrnuje integrovanou na Django [webů požadavek padělání (crsf) ochrany](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django dokumentace). Obvykle přidat tuto značku pro libovolný element, který zahrnuje POST, PUT a DELETE požadavek metody, jako jsou formuláře a vykreslování funkce šablony (`render`) vloží nezbytné ochrany.
+Odpověď: `{% crsf_token %}` značka zahrnuje integrovanou na Django [webů požadavek padělání (crsf) ochrany](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django dokumentace). Obvykle přidáte tuto značku pro libovolný element, který zahrnuje POST, PUT a DELETE požadavek metody, jako jsou formuláře. Funkce šablony vykreslování (`render`) pak vloží nezbytné ochrany.
 
 ## <a name="next-steps"></a>Další kroky
 
 > [!div class="nextstepaction"]
 > [Použít šablonu hlasovací webový projekt Django](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
 
-## <a name="going-deeper"></a>Budete hlubší
+## <a name="go-deeper"></a>Přejděte hlubší
 
 - [Ověření uživatele v Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (docs.djangoproject.com)
 - Kurz zdrojového kódu na Githubu: [Microsoft nebo python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

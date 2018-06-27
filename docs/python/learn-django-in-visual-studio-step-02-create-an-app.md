@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7e8989c9c122791fea840f30835be1c090a8972
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750503"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947484"
 ---
-# <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Kurz – krok 2: vytvoření aplikace Django s zobrazení a stránka šablony
+# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Vytvoření aplikace Django s zobrazení a šablony stránky
 
 **Předchozí krok: [vytvoření projektu Visual Studia a řešení](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
@@ -50,8 +50,8 @@ Pomocí těchto metod, vytvořte aplikaci s názvem "HelloDjangoApp". Výsledkem
 
 | Položka | Popis |
 | --- | --- |
-| `__init.py__` | Soubor, který identifikuje jako balíček aplikace. |
-| `migrations` | Složka, ve kterém Django ukládá skripty, které jsou zarovnané s změny modely má databáze aktualizovat. Nástroje pro migraci na rozhraní Django následně použít potřebné změny všechny předchozí verze databáze tak, aby odpovídala aktuální modelů. Pomocí migrace, zachovat fokus na modely a nechat Django zpracování základní schématu databáze. Migrace jsou popsané v kroku 6; Prozatím se jednoduše složka obsahuje `__init.py__` souboru (což znamená, že složka definuje vlastní balíček Python). |
+| `__init__.py` | Soubor, který identifikuje jako balíček aplikace. |
+| `migrations` | Složka, ve kterém Django ukládá skripty, které jsou zarovnané s změny modely má databáze aktualizovat. Nástroje pro migraci na rozhraní Django následně použít potřebné změny všechny předchozí verze databáze tak, aby odpovídala aktuální modelů. Pomocí migrace, zachovat fokus na modely a nechat Django zpracování základní schématu databáze. Migrace jsou popsané v kroku 6; Prozatím se jednoduše složka obsahuje `__init__.py` souboru (což znamená, že složka definuje vlastní balíček Python). |
 | `templates` | Složku pro Django stránky šablon, které obsahují jeden soubor `index.html`. Šablony jsou bloky HTML, do kterého zobrazení můžete přidat informace, které dynamicky vykreslení stránky. Například stránka šablony "proměnné," `{{ content }}` v `index.html`, jsou zástupné symboly pro dynamické hodnoty, jak je popsáno dále v tomto článku (krok 2). Obvykle aplikace Django vytvořit obor názvů pro jejich šablony tak, že je do podsložky, která odpovídá názvu aplikace. |
 | `admin.py` | Je soubor Python, ve kterém můžete rozšířit aplikace pro správu rozhraní (viz krok 6), který se používá ke zjištění a úpravy dat v databázi. Na začátku tento soubor obsahuje pouze příkaz `from django.contrib import admin`. Ve výchozím nastavení, rozhraní Django obsahuje standardní rozhraní pro správu prostřednictvím položky v projektu Django `settings.py` souboru, který můžete zapnout pomocí uncommenting existující položky v `urls.py`. |
 | `apps.py` | Soubor Python, která definuje třídu konfigurace pro aplikaci (viz níže za touto tabulkou). |
@@ -272,7 +272,7 @@ Odpověď: Když Django hledá šablonu podle `render` funkce, používá libovo
 > [!div class="nextstepaction"]
 > [Statické soubory, přidat stránky a používat šablonu dědičnosti](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
 
-## <a name="going-deeper"></a>Budete hlubší
+## <a name="go-deeper"></a>Přejděte hlubší
 
 - [Zápis první aplikace Django, část 1 - zobrazení](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (docs.djangoproject.com)
 - Další možnosti Django šablony, například zahrnuje a dědičnosti, najdete v části [jazyk šablony Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)

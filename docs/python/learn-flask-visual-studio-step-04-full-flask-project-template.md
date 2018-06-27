@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4c50a7b6e3fe14f27bfd78e6814f9e120864d60
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c463fdde3c22986211ed7345c3552b288516a4de
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752499"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947483"
 ---
-# <a name="tutorial-step-4-use-the-full-flask-web-project-template"></a>Kurz – krok 4: použití kompletní šablonou webový projekt Flask
+# <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4: Použití kompletní šablonou webový projekt Flask
 
 **Předchozí krok: [obsluhovat statické soubory, přidat stránky a použití šablony dědičnosti](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
@@ -231,8 +231,8 @@ Nebojte se, že experimentovat s Jinja a Jade syntaxe v tématu, které z nich v
 > [!div class="nextstepaction"]
 > [Šablona webový projekt Flask hlasování](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
 
-## <a name="going-deeper"></a>Budete hlubší
+## <a name="go-deeper"></a>Přejděte hlubší
 
 - [Zápis první aplikace Flask, část 4 - formulářů a obecného zobrazení](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - [Jade na GitHib (dokumentace)](https://github.com/liuliqiang/pyjade) (webu github.com)
-- Kurz zdrojového kódu na Githubu: [Microsoft nebo python – ukázka vs další flask](https://github.com/Microsoft/python-sample-vs-learn-flask)
+- Kurz zdrojového kódu na Githubu: [Microsoft nebo python – ukázka vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

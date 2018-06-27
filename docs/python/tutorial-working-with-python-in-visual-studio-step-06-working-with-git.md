@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c428082a061224f5bb8f3703d6ab4bed2b33aa76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7fb05e6032e985d2e282b089ba5afc93421f4d82
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965017"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946772"
 ---
-# <a name="step-6-working-with-git"></a>Krok 6: Práce s Gitem
+# <a name="step-6-work-with-git"></a>Krok 6: Práce s Gitem
 
 **Předchozí krok: [instalaci balíčků a správu prostředí Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
@@ -52,7 +52,7 @@ Tento článek obsahuje základní přehled vytváření místní úložiště G
 
 1. Pokud používáte místní úložiště, potvrzené změny přejděte přímo do úložiště. Pokud jste připojení k Vzdálené úložiště, vyberte záhlaví rozevíracího seznamu v **Team Explorer**, zvolte **synchronizace** přepnout do **synchronizace** části a pracovat existuje uvedených příkazů vyžádané a načtení.
 
-## <a name="going-deeper"></a>Budete hlubší
+## <a name="go-deeper"></a>Přejděte hlubší
 
 Krátký návod pro vytvoření projektu ze vzdáleného úložiště Git najdete v tématu [rychlý start: klonovat úložiště Python kódu v sadě Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 

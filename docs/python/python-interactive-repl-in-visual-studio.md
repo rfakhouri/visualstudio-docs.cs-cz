@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81c4b2cceb75874135f6d18cbf167f719ced48b9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a4de49b7ebb7299a005ab822bc880707196b1da3
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582342"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947024"
 ---
-# <a name="working-with-the-python-interactive-window"></a>Práce s oknem interaktivní Python
+# <a name="work-with-the-python-interactive-window"></a>Práce s oknem interaktivní Python
 
 Visual Studio poskytuje okno s interaktivní čtení vyhodnotit tiskových smyčky (REPL) pro každé prostředí Python, která vylepšuje REPL dostanete s `python.exe` na příkazovém řádku. Interaktivních okna (otevřít pomocí **zobrazení > ostatní okna > &lt;prostředí&gt; interaktivní** příkazy nabídky) vám umožní zadat libovolný kód Python a zobrazte výsledky okamžitě. Tento způsob kódování pomáhá Další informace a experimentovat s rozhraní API a knihovny a interaktivně vyvíjet funkční kód pro zahrnutí do vašich projektů.
 
@@ -39,7 +39,7 @@ Podrobný návod s příklady, včetně interakce s editoru, jako je například
 
 |   |   |
 |---|---|
-| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) v okně interaktivní (2 m 22s).|
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) v okně interaktivní (2 m 22s).|
 
 ## <a name="opening-an-interactive-window"></a>Otevření interaktivních okna
 

@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 384905370a16cbdcd9b4c9165f079bcbdf71a250
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b6c0e01106664429b3d355e488b453fa05cca4c6
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752497"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946959"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Kurz – krok 3: statické soubory, přidat stránky a používat šablonu dědičnosti
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsluhovat statické soubory, přidat stránky a použití šablony dědičnosti
 
 **Předchozí krok: [vytvoření aplikace Flask s zobrazení a stránka šablony](learn-flask-visual-studio-step-02-create-app.md)**
 
@@ -283,7 +283,7 @@ Následující kroky ukazují dědičnosti:
 > [!div class="nextstepaction"]
 > [Použít úplnou šablonu webový projekt Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
-## <a name="going-deeper"></a>Budete hlubší
+## <a name="go-deeper"></a>Přejděte hlubší
 
 - Další možnosti Jinja šablon, jako je například tok řízení, najdete v části [dokumentace návrháře šablony Jinja](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
 - Podrobnosti o použití `url_for`, najdete v části [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) v dokumentaci k objektu aplikace Flask (flask.pocoo.org)

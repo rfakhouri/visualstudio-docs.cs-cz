@@ -1,7 +1,7 @@
 ---
 title: Port, migrace a Upgrade projektů
 description: Referenční dokumentace pro podporu ve Visual Studio 2017 projektů vytvořených v dřívějších verzích sady Visual Studio a rozhodne se jak Visual Studio, když je potřeba migrovat projektu.
-ms.date: 03/14/2018
+ms.date: 06/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,21 +19,20 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 8a09dc06ac76ff94ea8bbf933a1873221bfe0952
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ea7f001179a206e3dfcf8e7026b54d6da6ebffbd
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281722"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947177"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Odkaz migrace a upgrade projektu pro Visual Studio 2017
 
 Každá nová verze sady Visual Studio obecně podporuje většinu typů předchozí projekty, soubory a dalších prostředků. Můžete pracovat s nimi [jako budete mít vždy](../ide/solutions-and-projects-in-visual-studio.md), a za předpokladu, že nemáte závisí na novější funkce, Visual Studio se pokusí obecně zachování zpětné kompatibility s předchozími verzemi jako Visual Studio 2015, Visual Studio 2013, a Visual Studio 2012. (Viz [poznámky k verzi](https://visualstudio.microsoft.com/vs/release-notes/) pro funkce, které jsou specifické pro jaké verze.)
 
-Podpora pro některé typy projektů se také změní v čase. Novější verze sady Visual Studio už můžou podporovat určité projekty, nebo vyžaduje aktualizace projektu tak, že již není zpětně kompatibilní. Aktuální stav na problémy s migrací, najdete v části [webu Visual Studio Community vývojáře](https://developercommunity.visualstudio.com).
+Podpora pro některé typy projektů se také změní v čase. Novější verze sady Visual Studio může již nepodporují vůbec určité projekty, nebo vyžaduje aktualizace projektu tak, že již není zpětně kompatibilní. Aktuální stav na problémy s migrací, najdete v části [webu Visual Studio Community vývojáře](https://developercommunity.visualstudio.com).
 
-> [!Important]
-> Tento článek existuje poskytuje podrobnosti pouze pro typy projektů ve Visual Studio 2017, které zahrnují migraci. Nezahrnuje typy podporované projektů, které mají žádné problémy migrace; Tento seznam se nachází na [cílení a kompatibilita platformy](/visualstudio/productinfo/vs2017-compatibility-vs). Všimněte si také, že některé typy projektů již nejsou podporovány v aplikaci Visual Studio 2017 vůbec a proto se nedají migrovat.
+Tento článek existuje poskytuje podrobnosti pouze pro typy projektů, které lze migrovat Visual Studio 2017. Článek vyloučí typy projektů, které již nejsou podporovány v aplikaci Visual Studio 2017 a proto nelze migrovat. V článku také vyloučí typy podporované projektů, které mají žádné problémy migrace; Tento seznam se nachází na [cílení a kompatibilita platformy](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs).
 
 > [!Important]
 > Některé typy projektů vyžadují instalaci příslušné úlohy prostřednictvím Instalační program sady Visual Studio. Pokud nemáte zatížení nainstalovaná, Visual Studio nahlásí typ projektu neznámý nebo není kompatibilní. V takovém případě zkontrolujte možnosti instalace a zkuste to znovu. Znovu, najdete v článku [cílení a kompatibilita platformy](/visualstudio/productinfo/vs2017-compatibility-vs) článku informace o podporovaných projektu ve Visual Studio 2017.

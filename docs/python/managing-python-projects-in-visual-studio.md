@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2ed8b99f51cbcce5445ef0c6f27f26ddfe5400f4
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032187"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947086"
 ---
 # <a name="python-projects-in-visual-studio"></a>Python projekty v sadě Visual Studio
 
@@ -37,8 +37,8 @@ Visual Studio poskytuje řadu šablon projektu Python rychle nastavit počet str
 
 |   |   |
 |---|---|
-| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) Úvod do projektů v jazyce Python (2 m 17s). |
-| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | Viz také [podrobné informace: Správa zdrojového kódu pomocí projektů v jazyce Python](https://youtu.be/Aq8eqApnugM) (webu youtube.com, 8 m 55s). |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) Úvod do projektů v jazyce Python (2 m 17s). |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | Viz také [podrobné informace: Správa zdrojového kódu pomocí projektů v jazyce Python](https://youtu.be/Aq8eqApnugM) (webu youtube.com, 8 m 55s). |
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Přidávání souborů, přiřazení spouštění souborů a nastavení prostředí
 
@@ -109,7 +109,7 @@ Připojené soubory jsou ignorovány ve všech následujících podmínek:
 - Připojený soubor obsahuje odkaz metadata a odkaz cesta je relativní cesta mimo hierarchii projektu
 - Cesta odkazu je root.
 
-### <a name="working-with-linked-files"></a>Práce s připojené soubory
+### <a name="work-with-linked-files"></a>Práce s připojené soubory
 
 Chcete-li přidat existující položku jako odkaz, klikněte pravým tlačítkem na složku v projektu, kam chcete soubor přidat a pak vyberte **Přidat > ukončení položky...** . V dialogovém okně se zobrazí, vyberte soubor a zvolte **přidat jako odkaz** z rozevíracího seznamu na **přidat** tlačítko. Za předpokladu, že nejsou žádné konfliktní soubory, tento příkaz vytvoří odkaz ve vybrané složce. Odkaz není však přidat, pokud již soubor se stejným názvem nebo odkaz na daný soubor již existuje v projektu.
 

@@ -1,7 +1,7 @@
 ---
 title: IPython REPL (interaktivních okna)
 description: Použití interaktivních okna Visual Studio v režimu IPython pro uživatelsky přívětivý interaktivní vývojové prostředí s funkcemi interaktivní paralelní výpočty.
-ms.date: 07/13/2017
+ms.date: 06/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1581c9cd7cb317a50932e85bb46159c508d8522
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e35e8be8434adcf26f29f01c41720455f33232dd
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582524"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946868"
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>V okně interaktivní pomocí IPython
 
@@ -27,9 +27,9 @@ Pro účely tohoto postupu byste měli mít [Anaconda](https://www.continuum.io)
 > [!Note]
 > IronPython nepodporuje IPython, přestože, které můžete vybrat ve formuláři interaktivní možnosti. Další informace najdete v článku [žádost o funkce](https://github.com/Microsoft/PTVS/issues/84).
 
-1. Otevřete Visual Studio, přepněte do okna prostředí Python (**zobrazení > ostatní okna > prostředí Python**) a vyberte prostředí Python, které se zobrazily při spuštění IPython.
+1. Otevřete Visual Studio, přepněte do okna prostředí Python (**zobrazení > ostatní okna > prostředí Python**) a vyberte Anaconda prostředí.
 
-1. Podívejte se na **balíčky** (nebo **pip**) kartě a ujistěte se, že `IPython` a `matplotlib` jsou uvedeny. Pokud tomu tak není, nainstalujte je zde.
+1. Zkontrolujte **balíčky (Conda)** karta (což se může zobrazit **pip** nebo **balíčky**) pro tento prostředí a ujistěte se, že `IPython` a `matplotlib` jsou uvedeny. Pokud tomu tak není, nainstalujte je zde. (Viz [Windows prostředí Python – karta balíčky](python-environments-window-tab-reference.md).)
 
 1. Vyberte **přehled** a vyberte **použití IPython interaktivním režimu.** (V sadě Visual Studio 2015, vyberte **konfigurovat interaktivní možnosti** otevřete **možnosti** dialogové okno, nastavte **interaktivním režimu** IPython a vyberte **OK** ).
 
@@ -49,7 +49,7 @@ Pro účely tohoto postupu byste měli mít [Anaconda](https://www.continuum.io)
 
     ![Vložené grafu v okně interaktivní](media/ipython-repl-04.png)
 
-1. Místo zadání do REPL, můžete místo toho napsat kód v editoru, vyberte ho, klikněte pravým tlačítkem a vyberte **odeslat do interaktivní** příkazu (nebo stiskněte klávesu Ctrl-zadejte). Vyzkoušejte si vložením kódu níže do nového souboru v editoru její Ctrl-A potom odesílání do okna interaktivní výběr. (Všimněte si, že Visual Studio odešle kód jako jednu jednotku, aby se zabránilo budete zprostředkující nebo jeho část grafy. Všimněte si, že pokud nemáte otevřete pomocí různých prostředí vybrané projekt Python, Visual Studio otevře interaktivních okna pro libovolnou prostředí je vybraná jako výchozí v **prostředí Python** okno.)
+1. Místo zadání do REPL, můžete místo toho napsat kód v editoru, vyberte ho, klikněte pravým tlačítkem a vyberte **odeslat do interaktivní** příkazu (nebo stiskněte klávesu Ctrl + Enter). Vyzkoušejte si vložením kódu níže do nového souboru v editoru její Ctrl-A potom odesílání do okna interaktivní výběr. (Visual Studio odešle kód jako jednu jednotku, aby se zabránilo budete zprostředkující nebo jeho část grafy. A pokud nemáte otevřete pomocí různých prostředí vybrané projekt Python, Visual Studio otevře okno s interaktivní pro libovolnou prostředí je vybraná jako výchozí v **prostředí Python** okno.)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
