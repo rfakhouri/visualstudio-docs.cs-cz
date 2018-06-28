@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8da672193dcbe12581122a48559c9027f01e77c9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573242"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057580"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Používání atributu DebuggerDisplay
 [DebuggerDisplayAttribute – třída](/dotnet/api/system.diagnostics.debuggerdisplayattribute) ovládací prvky zobrazení objektu, vlastnost nebo pole v proměnnými ladicího programu. Tento atribut lze použít pro typy, delegáti, vlastnosti, pole a sestavení.  
@@ -51,7 +51,7 @@ ms.locfileid: "34573242"
   
  Pokud chcete vytvořit autoexp.cs, otevřete si příkazový řádek vývojáře pro VS2015 a spusťte následující příkazy  
   
-```  
+```cmd
 cd <directory containing autoexp.cs>  
 csc /t:library autoexp.cs  
 ```  

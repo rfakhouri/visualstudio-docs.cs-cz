@@ -1,7 +1,7 @@
 ---
 title: Ladění kódu jazyka Python
 description: Návod funkce ladění v sadě Visual Studio speciálně pro kód Python, včetně nastavení zarážek, krokování, zkontrolujte hodnoty, prohlížení výjimky a ladění v okně interaktivní.
-ms.date: 03/05/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: dbce50a578bc056510b9982dce63d355da383e93
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032252"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058179"
 ---
 # <a name="debugging-your-python-code"></a>Ladění kódu jazyka Python
 
@@ -31,7 +31,7 @@ Také najdete v následujících článcích ladění konkrétní scénáře:
 
 |   |   |
 |---|---|
-| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) pro předvedení Python ladění (3 m 32s).|
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) pro předvedení Python ladění (3 m 32s).|
 
 <a name="debugging-without-a-project"></a>
 
@@ -177,13 +177,13 @@ Ladění interaktivních okna podporuje speciální meta příkazy kromě [stand
 | `$frame` | id rámce | Přepne do zadaného rámce id aktuálního snímku.
 | `$load` | Načte příkazy ze souboru a provede až do dokončení |
 | `$proc` |  | Zobrazí aktuální id procesu. |
-| `$proc` | Id procesu | Aktuální proces se přepne do id zadaný procesu. |
+| `$proc` | id procesu | Aktuální proces se přepne do id zadaný procesu. |
 | `$procs` | | Zobrazí seznam procesů, které jsou právě laděn. |
 | `$stepin`, `$step`, `$s` | Kroky do další volání funkce, pokud je to možné. |
 | `$stepout`, `$return`, `$r` | Kroky mimo aktuální funkce. |
 | `$stepover`, `$until`, `$unt` | Kroky přes další volání funkce. |
 | `$thread` | | Zobrazí aktuální id vlákna. |
-| `$thread` | Id podprocesu | Aktuální vlákno se přepne do id zadaný vlákna. |
+| `$thread` | id vlákna | Aktuální vlákno se přepne do id zadaný vlákna. |
 | `$threads` | | Uvádí vláken právě laděn. |
 | `$up`, `$u` | | Aktuální úroveň jeden rámeček přesunete nahoru v trasování zásobníku. |
 | `$where`, `$w`, `$bt` | Uvádí rámce pro aktuální vlákno. |
@@ -194,6 +194,6 @@ Ladění interaktivních okna má vlastní sadu možností, které můžete při
 
 ![Ladění interaktivní okno Možnosti](media/debugging-interactive-options.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 Kompletní informace o ladicího programu sady Visual Studio, najdete v části [ladění v sadě Visual Studio](../debugger/debugger-feature-tour.md).

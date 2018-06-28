@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482110"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058721"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Chyba: Ladění neběží&#39;t možné, protože v systému je povolen ladicí program jádra
 Při ladění spravovaného kódu, zobrazí se následující chybová zpráva:  
   
-```  
+```cmd
 Debugging isn't possible because a kernel debugger is enabled on the system  
 ```  
   
@@ -60,7 +60,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 -   V příkazovém řádku zadejte příkaz:  
   
-    ```  
+    ```cmd
     Kdbgctrl.exe -d  
     ```  
   
@@ -68,7 +68,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  V příkazovém řádku zadejte příkaz:  
   
-    ```  
+    ```cmd
     bcdedit /debug off   
     ```  
   
@@ -78,13 +78,13 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  Vyhledejte soubor boot.ini na systémové jednotce (obvykle C:\\). Soubor boot.ini může být skryté a jen pro čtení. Tedy je nutné použít následující příkaz k jeho zobrazení:  
   
-    ```  
+    ```cmd
     dir /ASH  
     ```  
   
 2.  Otevřete soubor boot.ini pomocí poznámkového bloku a odeberte následující možnosti:  
   
-    ```  
+    ```cmd
     /debug  
     /debugport  
     /baudrate  

@@ -1,7 +1,7 @@
 ---
 title: Pro jazyk Python testování částí
 description: Nastavení pro kód Python v sadě Visual Studio testování částí pro plně využít výhod funkce Průzkumníka testů, které chcete zjišťovat, spuštění a ladění testy.
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e75a689f3c03d7ad358da6dc9413f70aaf2c4eab
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 37d545adf33a6350f3d2484e4f820ebca8f7353d
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584159"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056420"
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Nastavení pro kód Python testování částí
 
@@ -28,7 +28,7 @@ Tento článek poskytuje stručný obrys možnosti testování v sadě Visual St
 
 |   |   |
 |---|---|
-| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) na jednotce testování v Pythonu (2 m 31s). |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) na jednotce testování v Pythonu (2 m 31s). |
 
 ## <a name="discovering-and-viewing-tests"></a>Zjišťování a zobrazení testů
 

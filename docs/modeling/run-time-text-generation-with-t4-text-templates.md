@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5b39437dc5f81b17c0bcfe27dbb7b8d99bebbc87
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0647cde0b81c74250306ad45ad015f8f8710d8a4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953112"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057928"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generování textu za běhu pomocí textových šablon T4
 
@@ -182,7 +182,7 @@ Můžete nastavit zarážky v textové šablony. Pokud spustíte aplikaci v rež
 
 ### <a name="passing-parameters-in-the-constructor"></a>Předávání parametrů v konstruktoru
 
-Šablonu obvykle nutné importovat některá data z dalších částí aplikace. Usnadnění, kód vytvořené šablony je konkrétní třídu. Další součástí stejné třídy můžete vytvořit v jiném souboru ve vašem projektu. Tento soubor může obsahovat konstruktor s parametry, vlastnosti a funkce, které můžete získat přístup, jak kód, který se vloží v šabloně a zbývající aplikace.
+Šablonu obvykle nutné importovat některá data z dalších částí aplikace. Usnadnění, kód vytvořené šablony je konkrétní třídu. Další součástí stejné třídy můžete vytvořit v jiném souboru ve vašem projektu. Tento soubor může obsahovat konstruktor s parametry, vlastnosti a funkce, které je přístupná pomocí kódu, který se vloží v šabloně i ve zbývající části aplikace.
 
 Například můžete vytvořit samostatný soubor **MyWebPageCode.cs**:
 
@@ -435,7 +435,7 @@ Návrh šablony: Pokud chcete použít šablonu pro generování kódu, se stane
 
 Spuštění šablony lze použít v jakékoli aplikaci určeným šablony a jejich obsah v době kompilace. Ale pokud chcete zapsat rozšíření sady Visual Studio, který generuje text ze šablon, které změní za běhu, najdete v části [volání transformací textu v rozšíření VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md)
 - [Zápis textové šablony T4](../modeling/writing-a-t4-text-template.md)

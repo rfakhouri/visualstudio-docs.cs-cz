@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 241937c8462577d6af375d2440efe828a738a8cc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 458b320b971cbb3c4db74d6f2202455332ca5465
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475921"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056319"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Ladění aplikace UWP použitím prefetched obsahu v sadě Visual Studio
   
- Aplikace UWP dosáhnete rychlejší reakce, můžete požádat o Windows přednačtení některé webový obsah, jako jsou webové stránky nebo bitové kopie, do aplikace [WinINet](http://msdn.microsoft.com/library/0a06f2af-957a-4dff-a8cc-187370181b5c) mezipaměti. Tato funkce je volána prefetching. Je zvláště efektivní pro obsah, který se používá při spuštění, ale předběžné jiných často používaných obsahu, může načtení příliš. Metody [Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher) třída umožňují zadat identifikátory URI, kterou chcete přednačtení obsahu. Sada Windows SDK [předběžné načtení obsahu ukázka](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) příklady, jak přidat funkce ContentPrefetcher do vaší aplikace.  
+ Aplikace UWP dosáhnete rychlejší reakce, můžete požádat o Windows přednačtení některé webový obsah, jako jsou webové stránky nebo bitové kopie, do aplikace [WinINet](/windows/desktop/WinInet/about-wininet) mezipaměti. Tato funkce je volána prefetching. Je zvláště efektivní pro obsah, který se používá při spuštění, ale předběžné jiných často používaných obsahu, může načtení příliš. Metody [Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher) třída umožňují zadat identifikátory URI, kterou chcete přednačtení obsahu. Sada Windows SDK [předběžné načtení obsahu ukázka](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) příklady, jak přidat funkce ContentPrefetcher do vaší aplikace.  
   
  Systém Windows použije heuristiku k určení Pokud a v případě prefetching provedeno a prostředky, ke kterým se budou stahovat. Heuristiky brát v síti systému účet a podmínky napájení, historie využití aplikace uživatele a výsledky pokusů o předběžné načtení předchozí. V sadě Visual Studio, můžete použít **předběžného načtení aplikace aktivační události systému Windows Store** příkaz vynutit ignorovat ContentPrefetcher heuristiky a přednačtení všechny zadané webového obsahu. To může být užitečné, pokud chcete otestovat výkon s obsahem pro předběžné načtení ve známého stavu (načtena nebo není načtená.) nebo chování aplikace.  
   

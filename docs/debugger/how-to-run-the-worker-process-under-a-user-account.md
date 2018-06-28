@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad6407e4768acbeaf32cf4bebaf7064f04f21fba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 05c0fb64c5be7912f9453d3f9f25fd86a6fbfc1e
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475751"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057184"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Postupy: Spuštění pracovního procesu v rámci uživatelského účtu
 Chcete-li nastavit v počítači, takže můžete spustit [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces (aspnet_wp.exe nebo w3wp.exe) pod uživatelským účtem, postupujte podle těchto kroků.  
@@ -58,12 +58,12 @@ Chcete-li nastavit v počítači, takže můžete spustit [!INCLUDE[vstecasp](..
   
 5.  Otevřete příkazový řádek systému Windows a obnovte server spuštěním:  
   
-    ```  
+    ```cmd
     iisreset  
     ```  
     – nebo –  
   
-    ```  
+    ```cmd
     net stop iisadmin /y  
     net start w3svc  
     ```  

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9610f71a197c47521e2139d40aff1afde6a8a894
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6d6ada3b5375737cb4deec777f64344096fbdaae
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478077"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058507"
 ---
 # <a name="how-to-debug-optimized-code"></a>Postupy: Ladění optimalizovaného kódu
 > [!NOTE]
@@ -84,7 +84,7 @@ ms.locfileid: "31478077"
   
  Při ladění optimalizovaného kódu, použijte **zpětný překlad** okna zobrazíte jaké pokyny jsou ve skutečnosti vytvořit a spustit. Když nastavíte zarážky, je třeba vědět, že zarážce může přesunout společně s instrukce. Zvažte například následující kód:  
   
-```  
+```cpp
 for (x=0; x<10; x++)  
 ```  
   

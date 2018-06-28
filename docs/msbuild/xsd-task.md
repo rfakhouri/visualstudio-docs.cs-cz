@@ -1,7 +1,7 @@
 ---
 title: XSD – úloha | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -22,15 +22,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7505f3d18e0b32ebdbc8b82d447e49b26fe4182e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b292c0bf1bc80f811cbf2f845385f91987184674
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571192"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057369"
 ---
 # <a name="xsd-task"></a>XSD – úloha
 Zabalí nástroj definice schématu XML (xsd.exe), který generuje schématu nebo třída soubory ze zdroje.  
+
+> [!NOTE]
+> V aplikaci Visual Studio 2017 podpora projektu C++ xsd.exe je zastaralá. Můžete dál používat **Microsoft.VisualC.CppCodeProvider** rozhraní API můžete ručně přidat **CppCodeProvider.dll** do mezipaměti GAC. 
   
 ## <a name="parameters"></a>Parametry  
  Následující tabulka popisuje parametry **XSD** úloh.  
@@ -61,7 +64,7 @@ Zabalí nástroj definice schématu XML (xsd.exe), který generuje schématu neb
   
      Vybírejte z těchto možností **CS** (C#, což výchozí nastavení), **VB** (Visual Basic), nebo **JS** (JScript). Můžete také zadat plně kvalifikovaný název pro třídu, která implementuje `System.CodeDom.Compiler.CodeDomProvider Class`.  
   
--   **obor názvů**  
+-   **Namespace**  
   
      Volitelné **řetězec** parametr.  
   

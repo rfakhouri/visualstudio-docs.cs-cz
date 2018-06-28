@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cfbeef2de041cfd71fbf163d7860d903a6cb59e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 85eee51941f6fb549c96dcc257335f9d77b6b0f2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135497"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057125"
 ---
-# <a name="error-handling-and-return-values"></a>Zpracování chyb a návratové hodnoty
+# <a name="error-handling-and-return-values"></a>Zpracování chyb a návratových hodnot
 VSPackages a COM použít stejnou architekturu pro chyby. `SetErrorInfo` a `GetErrorInfo` funkce jsou součástí Win32 aplikační programovací rozhraní (API). Všechny VSPackage v integrované vývojové prostředí (IDE) můžete volat tyto globální rozhraní API Win32 pro informace o záznamu bohaté chybě při přijímání oznámení o chybě. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Poskytuje spolupráce – sestavení spravovat informace o chybě.  
   
 ## <a name="interop-methods"></a>Spolupráce metody  
@@ -58,6 +58,6 @@ VSPackages a COM použít stejnou architekturu pro chyby. `SetErrorInfo` a `GetE
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [SetErrorInfo (součást automatizace)](http://msdn.microsoft.com/en-us/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
- [GetErrorInfo –](http://msdn.microsoft.com/en-us/03317526-8c4f-4173-bc10-110c8112676a)   
- [ISupportErrorInfo rozhraní](http://msdn.microsoft.com/en-us/42d33066-36b4-4a5b-aa5d-46682e560f32)
+ [SetErrorInfo (součást automatizace)](http://msdn.microsoft.com/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
+ [GetErrorInfo –](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-geterrorinfo)   
+ [ISupportErrorInfo rozhraní](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo)

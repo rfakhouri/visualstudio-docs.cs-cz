@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dca1e37a0cde89a2a531d3fceea4337bb9e348dd
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 046aeb3d43066dbe0bd28ef76036478efdbda49f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957334"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057021"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Rychlý úvod: Vytvořte projekt Python ze šablony v sadě Visual Studio
 
@@ -37,11 +37,31 @@ Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](inst
     > [!Tip]
     > Abyste před zahájením projektu, ho má důrazně doporučujeme vytvoření virtuálního prostředí hned, protože většina šablony sady Visual Studio pozvat, abyste mohli provádět. Virtuální prostředí Údržba přesných požadavcích vašeho projektu v průběhu času, jak přidávat a odebírat knihovny. Potom můžete snadno generovat `requirements.txt` souboru, který použijete k přeinstalaci těchto závislostí na jiných počítačích vývoj (jako při používání zdroje ovládací prvek) a při nasazování projektu na provozním serveru. Další informace o virtuální prostředí a jejich výhody, najdete v části [pomocí virtuální prostředí](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments) a [Správa požadované balíčky s requirements.txt](../python/managing-required-packages-with-requirements-txt.md).
 
-1. Jakmile sady Visual Studio vytvoří prostředí, podívejte se **Průzkumníku řešení** a podívejte se, že máte `app.py` souboru spolu s `requirements.txt`. Otevřete `app.py` zobrazíte, že šablona poskytl kódu, jako je například v [rychlý start - vytvořit webovou aplikaci s Flask](../ide/quickstart-python.md), se dvěma přidat části.
+1. Jakmile sady Visual Studio vytvoří prostředí, podívejte se **Průzkumníku řešení** a podívejte se, že máte `app.py` souboru spolu s `requirements.txt`. Otevřete `app.py` zobrazíte, že šablona poskytl kódu, jako je například v [rychlý start - vytvořit webovou aplikaci s Flask](../ide/quickstart-python.md), s několika přidané oddíly. Kód ukazuje následující obrázek se vytvoří šablonou, takže je nebudete muset vložit žádné do `app.py` sami.
 
-    Nejprve je v řádku `wsgi_app = app.wsgi_app` , může být užitečné při nasazení aplikace webového hostitele.
+    Kód začíná nezbytné importy:
 
-    Druhou je spuštění kód, který vám umožní nastavit hostitele a portu prostřednictvím proměnné prostředí místo pevně kódováno je. Takový kód vám pomůže snadno řídit konfiguraci na počítačích, vývoj a produkční beze změny kódu:
+    ```python
+    from flask import Flask
+    app = Flask(__name__)
+    ```
+
+    Dále je následující řádek, který může být užitečné při nasazení aplikace do webového hostitele:
+
+    ```python
+    wsgi_app = app.wsgi_app
+    ```
+
+    Poté pochází dekoratéra trasy na jednoduchý funkci, která definuje zobrazení:
+
+    ```python
+    @app.route('/')
+    def hello():
+        """Renders a sample page."""
+        return "Hello World!"
+    ```
+
+    Nakonec spuštění kódu níže můžete nastavit hostitele a portu prostřednictvím proměnné prostředí místo pevně kódováno je. Takový kód vám pomůže snadno řídit konfiguraci na počítačích, vývoj a produkční beze změny kódu:
 
     ```python
     if __name__ == '__main__':
@@ -73,7 +93,7 @@ Pomocí šablon šetří důležité čas při vytváření projektu nebo vytvá
 > [!div class="nextstepaction"]
 > [Kurz: Práce s Python v sadě Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Ručně identifikace existující překladač Pythonu](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 - [Instalace podpory Python v sadě Visual Studio 2015 a starší](installing-python-support-in-visual-studio.md).

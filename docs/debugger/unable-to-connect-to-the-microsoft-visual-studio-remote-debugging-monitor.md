@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7af9c41aac0531a9af014a49e9e0a1e71763d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e3f52834b1983b808a2da57795dc2c5653511f88
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478236"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058708"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nepodařilo se připojit ke sledování Microsoft Visual Studio Remote Debugging Monitor.
 Tato zpráva může dojít, protože sledování vzdáleného ladění není správně nastavena na vzdáleném počítači nebo vzdálený počítač je nedostupný v důsledku potížím se sítí nebo přítomnost bránou firewall.
@@ -84,7 +84,7 @@ Visual Studio se nemohl připojit k vzdáleného ladicího programu. Tato zpráv
 - Verze vzdáleného ladicího programu sady Visual Studio neodpovídá. Chcete-li získat správnou verzi vzdáleného ladicího programu, najdete v části [vzdálené ladění](../debugger/remote-debugging.md)
 
 
-## <a name="#valid_name"></a> Název požadovaného platné, ale nebyla nalezena žádná data požadovaného typu
+## <a name="valid_name"></a> Název požadovaného platné, ale nebyla nalezena žádná data požadovaného typu
 
 Vzdálený počítač existuje, ale Visual Studio se nemohl připojit k vzdáleného ladicího programu. Tato zpráva může mít několik příčin:
 

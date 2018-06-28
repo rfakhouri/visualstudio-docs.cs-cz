@@ -25,23 +25,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 562944404d3e02a2e5768fcd74c67302475e6190
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 093b7732f78f7257a2e58812ca2697496d65682f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481175"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056479"
 ---
 # <a name="report-hook-functions"></a>Sestava funkcí háku
 Funkce háku sestavy, nainstalovat pomocí [_crtsetreporthook –](/cpp/c-runtime-library/reference/crtsetreporthook), se nazývá pokaždé, když [_crtdbgreport –](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) generuje sestavy ladění. Můžete použít, mimo jiné pro filtrování sestavy a zaměřit se na konkrétní typy přidělení. Funkce háku sestavy musí mít prototyp takto:  
   
-```  
+```cpp
 int YourReportHook(int nRptType, char *szMsg, int *retVal);  
 ```  
   
  Ukazatele, který můžete předat **_crtsetreporthook –** je typu **_crt_report_hook –**, jak jsou definovány v CRTDBG. V:  
   
-```  
+```cpp
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
 ```  
   

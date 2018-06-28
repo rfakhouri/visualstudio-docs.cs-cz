@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: b462c3ed02ebd622a39cd08039037b3ba63e7f57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fd660ea2cdeaaae5d37811406221a7d150ab9bef
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479419"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056658"
 ---
 # <a name="error-aspnet-not-installed"></a>Chyba: Prostředí ASP.NET není nainstalováno.
 Tato chyba nastane, když [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] není správně nainstalován v počítači, který se pokoušíte ladění. To může znamenat, že [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nebyl nikdy nainstalovaný nebo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] byla nainstalována jako první a služba IIS byla nainstalována později.  
@@ -35,7 +35,7 @@ Tato chyba nastane, když [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_
   
 1.  V okně příkazového řádku spusťte následující příkaz:  
   
-    ```  
+    ```cmd
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
     ```  
   

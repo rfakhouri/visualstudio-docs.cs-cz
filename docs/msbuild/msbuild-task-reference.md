@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 939a1220d1106330ffbec7fa1af705567ff66dd6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6cbaeaeca87c4e32a0c9db9a463e1f5f417527ae
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576037"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058643"
 ---
 # <a name="msbuild-task-reference"></a>Referenční dokumentace úlohy nástroje MSBuild
 Úlohy zadejte kód, který spouští během procesu sestavení. Úlohy v následujícím seznamu jsou součástí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Když [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] je nainstalovaná, další úlohy jsou k dispozici, které se používají k vytvoření [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projekty. Další informace najdete v tématu [úlohy Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -88,6 +88,9 @@ ms.locfileid: "31576037"
   
  [Delete – úloha](../msbuild/delete-task.md)  
  Odstraní zadané soubory.  
+
+ [DownloadFile úloh](../msbuild/downloadfile-task.md)  
+ Soubor se stáhne do zadaného umístění.  
   
  [Error – úloha](../msbuild/error-task.md)  
  Zastaví sestavení a protokoly chybu založené na příkazu vyhodnotí podmíněného.  
@@ -200,6 +203,9 @@ ms.locfileid: "31576037"
  [UnregisterAssembly – úloha](../msbuild/unregisterassembly-task.md)  
  Zruší registraci na zadaná sestavení pro účely zprostředkovatele komunikace s objekty COM.  
   
+ [Unzip – úloha](../msbuild/unzip-task.md)  
+ Unzips `.zip` archivu do zadaného umístění.
+  
  [UpdateManifest – úloha](../msbuild/updatemanifest-task.md)  
  Aktualizace vybraných vlastností v manifestu a odstoupí.  
   
@@ -223,6 +229,9 @@ ms.locfileid: "31576037"
   
  [XslTransformation – úloha](../msbuild/xsltransformation-task.md)  
  Transformuje vstup XML pomocí *rozšiřitelný jazyk transformace šablony stylů* (XSLT) nebo zkompilovat XSLT a výstupy do výstupní zařízení nebo souboru.  
+  
+  [ZipDirectory úloh](../msbuild/zipdirectory-task.md)  
+ Vytvoří `.zip` archivu z obsahu adresáře.
   
 ## <a name="see-also"></a>Viz také  
  [MSBuild – Reference](../msbuild/msbuild-reference.md)   

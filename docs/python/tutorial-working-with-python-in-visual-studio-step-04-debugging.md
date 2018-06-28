@@ -1,7 +1,7 @@
 ---
 title: Práce s laděním Python kurzu krok 4
 description: Krok 4 jádra návod Python funkcí v sadě Visual Studio, ke spouštění kódu jazyka Python v ladicím programu.
-ms.date: 03/08/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e2f9f4635a1effc7ad46d1d842f22b3943a2b16
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: a164c68a8a6f4392d91c522c9cb4f9d225e8820a
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947011"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057814"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Krok 4: Spuštění kódu v ladicím programu
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3418e1d2e05d687f8cb73a7857178ae1060d56f8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 438e5a96ef07faf399d06ae517afe313a44673b4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479387"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057847"
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Ladění aplikací ASP.NET v sadě Visual Studio
 
@@ -88,7 +88,7 @@ V souboru web.config by měl vypadat jako v následujícím příkladu:
   
 #### <a name="example"></a>Příklad  
   
-```  
+```xml
 <configuration>  
     ...  
     <system.web>  

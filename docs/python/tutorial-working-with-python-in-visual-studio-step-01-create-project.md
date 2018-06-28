@@ -1,7 +1,7 @@
 ---
 title: Práce s kurzu Python kroku 1, vytvoření projektu
 description: Přehled a základní Průvodce funkcí Python v sadě Visual Studio, včetně požadavků a vytvoření nového projektu Python kroku 1.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2eadee7562f8dd08de55f333ade005ceaf766a66
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: c1c9941c59fb02ecd1332250cb3ac3ca73a67144
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946854"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057008"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Kurz: Práce s Python v sadě Visual Studio
 

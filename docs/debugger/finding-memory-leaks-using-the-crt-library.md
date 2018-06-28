@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad41ea30f66e877155355aec60de0f4a40e8c6e7
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 58acebc2607ba05f121a7673f726d8f4bbcb38bd
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233636"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057210"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Hledání nevrácené paměti pomocí knihovny CRT
 Nevracení paměti definován jako selhání se správně zrušit přidělení paměti, které již bylo přiděleno, patří mezi nejvíce jemně a pevné zjištění chyby v aplikací C/C++. Nevracení paměti nemusí být si všimli v první, ale v čase, progresivní paměť způsobit příznaky rozsahu snížený výkon k selhání, když je aplikace spuštěná nedostatek paměti. Horší unikající aplikace, která používá všechny dostupnou paměť může způsobit jiná aplikace došlo k chybě, vytváření nejasnostem, která je zodpovědná aplikace. Nevracení paměti neškodné může být i zdánlivě symptomatických z jiných problémů, které by měly být opraveny.  
@@ -48,7 +48,7 @@ Nevracení paměti definován jako selhání se správně zrušit přidělení p
   
  Pokud chcete povolit funkce haldy ladění, vložte následující příkazy v programu:  
   
-```  
+```cpp
 #define _CRTDBG_MAP_ALLOC  
 #include <stdlib.h>  
 #include <crtdbg.h>  
@@ -62,13 +62,13 @@ Nevracení paměti definován jako selhání se správně zrušit přidělení p
   
  Po povolení funkce haldy ladění pomocí těchto příkazů, můžete umístit volání `_CrtDumpMemoryLeaks` před bod ukončení aplikace zobrazíte sestavu nevrácená paměť systému při ukončení aplikace:  
   
-```  
+```cpp
 _CrtDumpMemoryLeaks();  
 ```  
   
  Pokud aplikace obsahuje více ukončí, není nutné ručně umístit volání [_crtdumpmemoryleaks –](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) v každém bodě ukončení. Volání `_CrtSetDbgFlag` na začátku aplikace způsobí automatické volání `_CrtDumpMemoryLeaks` na každé ukončení bodu. Musíte nastavit dvě bitových polí znázorněno zde:  
   
-```  
+```cpp
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
 ```  
   
@@ -76,14 +76,14 @@ _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
   
  Pokud chcete použít knihovnu, knihovny může resetovat výstup do jiného umístění. V takovém případě můžete nastavit výstupní umístění zpět **výstup** okno, jak je vidět tady:  
   
-```  
+```cpp
 _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );  
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Interpretace sestavy nevracení paměti  
  Pokud vaše aplikace nedefinuje `_CRTDBG_MAP_ALLOC`, [_crtdumpmemoryleaks –](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) zobrazí zprávu o nevracení paměti, že vypadá podobně jako tento:  
   
-```  
+```cmd
 Detected memory leaks!  
 Dumping objects ->  
 {18} normal block at 0x00780E80, 64 bytes long.  
@@ -93,7 +93,7 @@ Object dump complete.
   
  Pokud vaše aplikace definuje `_CRTDBG_MAP_ALLOC`, nevrácená paměť systému sestava vypadá takto:  
   
-```  
+```cmd
 Detected memory leaks!  
 Dumping objects ->  
 c:\users\username\documents\projects\leaktest\leaktest.cpp(20) : {18}   
@@ -202,20 +202,20 @@ Znamená to, že bylo na řádku 20 debug_new.cpp uniklé přidělení.
   
  Můžete také nastavit zarážky přidělení paměti v kódu. Toto lze provést dvěma způsoby:  
   
-```  
+```cpp
 _crtBreakAlloc = 18;  
 ```  
   
  nebo:  
   
-```  
+```cpp
 _CrtSetBreakAlloc(18);  
 ```  
   
 ## <a name="comparing-memory-states"></a>Porovnání stavy paměti  
  Jiná metoda vyhledání nevracení paměti zahrnuje pořizování snímků stav paměti aplikace na klíčové body. Pořízení snímku je stav paměti k danému bodu v aplikaci, vytvořte **_crtmemstate –** struktury a předejte jej `_CrtMemCheckpoint` funkce. Tato funkce vyplní struktura s snímek aktuální stav paměti:  
   
-```  
+```cpp
 _CrtMemState s1;  
 _CrtMemCheckpoint( &s1 );  
   
@@ -225,14 +225,14 @@ _CrtMemCheckpoint( &s1 );
   
  K vypsání obsah **_crtmemstate –** struktury, předat k strukturu `_ CrtMemDumpStatistics` funkce:  
   
-```  
+```cpp
 _CrtMemDumpStatistics( &s1 );  
   
 ```  
   
  `_ CrtMemDumpStatistics` výstupy výpis stavu paměti, které vypadá takto:  
   
-```  
+```cmd
 0 bytes in 0 Free Blocks.  
 0 bytes in 0 Normal Blocks.  
 3071 bytes in 16 CRT Blocks.  
@@ -245,7 +245,7 @@ Total allocations: 3764 bytes.
   
  Chcete-li zjistit, zda nevrácené paměti došlo k chybě v části kódu, můžete pořízení snímků je stav paměti před a po části a pak použijte `_ CrtMemDifference` k porovnání dvou stavů:  
   
-```  
+```cpp
 _CrtMemCheckpoint( &s1 );  
 // memory allocations take place here  
 _CrtMemCheckpoint( &s2 );  

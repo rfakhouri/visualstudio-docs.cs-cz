@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab48d9b6a67563171e28dab1f08e496750585288
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 59379e2b6a10ac98a739487eac064f3b261f35c5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476046"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057801"
 ---
 # <a name="remote-debugger-port-assignments"></a>Přiřazení portů vzdáleného ladicího programu
 Visual Studio Debugger vzdálené můžete spustit jako aplikace nebo služba pozadí. Když je spuštěna jako aplikace, používá port, který je přiřazen ve výchozím nastavení následujícím způsobem:  
@@ -52,9 +52,8 @@ Visual Studio Debugger vzdálené můžete spustit jako aplikace nebo služba po
 ## <a name="remote-debugger-ports-on-azure"></a>Porty vzdáleného ladicího programu v Azure  
  Používá následující porty vzdáleného ladicího programu v Azure. Porty cloudové služby jsou mapovány na porty pro jednotlivé virtuální počítač. Jsou všechny porty TCP.  
   
-||||  
+|Připojení|Port v cloudové službě|Port ve virtuálním počítači|
 |-|-|-|  
-|**Připojení**|**Port v cloudové službě**|**Port ve virtuálním počítači**|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  

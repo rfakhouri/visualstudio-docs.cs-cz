@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2804b07db0b7cf8d01c8578877d4b722d6ceb96
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 069dd7638296987c195fbae6cc9d858fdd3421ee
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477518"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058669"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Začínáme s diagnostikou grafiky sady Visual Studio
 V této části budete připravit k použití diagnostiky grafiky poprvé, pak budete zachycení snímků z aplikace Direct3D – a prozkoumejte je Graphics Analyzeru.  
@@ -89,4 +89,4 @@ V této části budete připravit k použití diagnostiky grafiky poprvé, pak b
  Další informace o používání nástroje Analyzátor grafiky společně najdete v tématu [příklady](graphics-diagnostics-examples.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Direct3D – 12 grafiky](http://msdn.microsoft.com/en-us/52094ae3-3b44-4689-9ee7-1ba1b3a779cb)
+ [Direct3D – 12 grafiky](/windows/desktop/direct3d12/direct3d-12-graphics)

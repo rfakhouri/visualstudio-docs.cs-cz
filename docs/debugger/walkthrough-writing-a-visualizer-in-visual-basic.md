@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e1e42eee6003baabc0beec291795c6a1f74a1e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ba2be58b600a57fb405b55069df1c838019bfdab
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478132"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058695"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Návod: Zápis vizualizéru v jazyce Visual Basic
 Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Vizualizér, které vytvoříte v tomto návodu zobrazí obsah řetězce pomocí Windows Forms okno se zprávou. Tento jednoduchý řetězec vizualizér je základní příklad zobrazit, jak můžete vytvořit vizualizérech pro jiné datové typy hodí víc do vašich projektů.  
@@ -45,7 +45,7 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 4.  V **název** zadejte vhodný název pro knihovnu tříd, jako například **MyFirstVisualizer**.  
   
-5.  Click **OK**.  
+5.  Klikněte na tlačítko **OK**.  
   
  Po vytvoření knihovny tříd, je musí přidat odkaz na Microsoft.VisualStudio.DebuggerVisualizers.DLL, tak, aby můžete tříd definovaných existuje. Nejprve však dáváte projektu nějaký výstižný název.  
   
@@ -62,11 +62,11 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 4.  V **přidat odkaz na** v dialogovém **.NET** , klikněte na Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
   
-5.  Click **OK**.  
+5.  Klikněte na tlačítko **OK**.  
   
 6.  V DebuggerSide.vb, přidejte následující příkaz na `Imports` příkazy:  
   
-    ```  
+    ```vb
     Imports Microsoft.VisualStudio.DebuggerVisualizers  
     ```  
   
@@ -77,13 +77,13 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 1.  V DebuggerSide.vb přejděte na následující řádek kódu:  
   
-    ```  
+    ```vb
     Public Class DebuggerSide  
     ```  
   
 2.  Upravte kód tak, aby vypadá takto:  
   
-    ```  
+    ```vb
     Public Class DebuggerSide  
     Inherits DialogDebuggerVisualizer  
     ```  
@@ -94,7 +94,7 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 -   V `public class DebuggerSide`, přidejte následující metodu:  
   
-    ```  
+    ```vb
     Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
   
         End Sub  
@@ -108,11 +108,11 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 2.  V **přidat odkaz na** v dialogovém **.NET** , klikněte na **System.Windows.Forms**.  
   
-3.  Click **OK**.  
+3.  Klikněte na tlačítko **OK**.  
   
 4.  V DebuggerSide.cs, přidejte následující příkaz na `Imports` příkazy:  
   
-    ```  
+    ```vb
     Imports System.Windows.Forms  
     ```  
   
@@ -123,7 +123,7 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 1.  V `Show` metoda, přidejte následující řádek kódu:  
   
-    ```  
+    ```vb
     MessageBox.Show(objectProvider.GetObject().ToString())  
     ```  
   
@@ -138,7 +138,7 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 1.  Přidejte následující kód atribut DebuggerSide.vb, po `Imports` příkazy ale předtím, než `namespace MyFirstVisualizer`:  
   
-    ```  
+    ```vb
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>  
     ```  
   
@@ -151,7 +151,7 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 1.  Přidejte následující metodu do třídy `public DebuggerSide`:  
   
-    ```  
+    ```vb
     Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
         Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
     visualizerHost.ShowVisualizer()  
@@ -170,7 +170,7 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 3.  V **název** zadejte nějaký výstižný název konzolové aplikace, jako například **MyTestConsole**.  
   
-4.  Click **OK**.  
+4.  Klikněte na tlačítko **OK**.  
   
  Nyní je nutné přidat tak MyTestConsole můžete volat MyFirstVisualizer odkazuje na nezbytné.  
   
@@ -180,13 +180,13 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 2.  V **přidat odkaz na** v dialogovém **.NET** , klikněte na Microsoft.VisualStudio.DebuggerVisualizers.  
   
-3.  Click **OK**.  
+3.  Klikněte na tlačítko **OK**.  
   
 4.  Klikněte pravým tlačítkem na **MyTestConsole**a potom klikněte na **přidat odkaz na** znovu.  
   
 5.  V **přidat odkaz na** dialogové okno, klikněte na tlačítko **projekty** a pak vyberte MyFirstVisualizer.  
   
-6.  Click **OK**.  
+6.  Klikněte na tlačítko **OK**.  
   
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>Dokončit Test Harness a testování vaší Vizualizéru  
  Nyní přidáte kód, který dokončit test harness.  
@@ -201,13 +201,13 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 3.  V TestConsole. VB, přidejte následující `Imports` příkaz:  
   
-    ```  
+    ```vb
     Imports MyFirstVisualizer  
     ```  
   
 4.  V metodě `Main`, přidejte následující kód:  
   
-    ```  
+    ```vb
     Dim myString As String = "Hello, World"  
     DebuggerSide.TestShowVisualizer(myString)  
     ```  

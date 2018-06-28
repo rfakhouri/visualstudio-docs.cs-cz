@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4e256aeef1a068ddc46d13e98b344bcce56d08b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 15e76507b64ea15d390f10cf4896830c03a2c963
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477950"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056795"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Návod: Ladění formuláře systému Windows
 Aplikace modelu Windows Form jsou jedny nejběžnějších spravovaných aplikací. Model Windows Form vytvoří standardní aplikaci systému Windows. Tuto rekapitulaci lze dokončit pomocí jazyků Visual Basic, C# nebo C++.  
@@ -59,7 +59,7 @@ Aplikace modelu Windows Form jsou jedny nejběžnějších spravovaných aplikac
   
 4.  V **název** pole, zadejte jedinečný název (například Walkthrough_SimpleDebug) projektu.  
   
-5.  Click **OK**.  
+5.  Klikněte na tlačítko **OK**.  
   
      Systém Visual Studio vytvoří nový projekt a nový formulář zobrazí v Návrháři formulářů Windows Forms. Další informace najdete v tématu [Návrhář formulářů Windows](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
   
@@ -77,14 +77,15 @@ Aplikace modelu Windows Form jsou jedny nejběžnějších spravovaných aplikac
   
 10. Do funkce `button1_Click` přidejte následující kód:  
   
+    ```vb  
+    textBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    textBox1.Text = "Button was clicked!"  
   
-    // C#  
-    textBox1.Text = "Button was clicked!";  
+    ```csharp 
+    textBox1.Text = "Button was clicked!";
+    ```  
   
-    // C++  
+    ```cpp  
     textBox1->Text = "Button was clicked!";  
     ```  
   
@@ -99,16 +100,17 @@ Aplikace modelu Windows Form jsou jedny nejběžnějších spravovaných aplikac
   
 1.  V okně zdroje klikněte na levý okraj řádku, na který jste přidali text:  
   
+     ```vb  
+    textBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    textBox1.Text = "Button was clicked!"  
   
-    // C#  
-    textBox1.Text = "Button was clicked!";  
+    ```csharp 
+    textBox1.Text = "Button was clicked!";
+    ```  
   
-    // C++  
+    ```cpp  
     textBox1->Text = "Button was clicked!";  
-    ```  
+    ``` 
   
      Zobrazí se červená tečka a text řádku se zvýrazní červeně. Tato červená tečka představuje zarážku. Další informace najdete v tématu [zarážky](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Při spuštění aplikace pomocí ladicího programu v tomto místě ladicí program přeruší provádění, když je tento řádek kódu dosažen. Poté lze zobrazit stav aplikace a ladit ji.  
   
@@ -129,17 +131,13 @@ Aplikace modelu Windows Form jsou jedny nejběžnějších spravovaných aplikac
   
      **Watch1** okno zobrazuje hodnotu této proměnné v uvozovkách jako:  
   
-    ```  
-    ""  
-    ```  
-  
+    `""`  
+ 
 6.  Na **ladění** nabídky, zvolte **Krokovat s vnořením**.  
   
      Hodnota textBox1.Text změny v **Watch1** okna:  
   
-    ```  
-    Button was clicked!  
-    ```  
+    `Button was clicked!`  
   
 7.  Na **ladění** nabídce zvolte **pokračovat** obnovit ladění vašeho programu.  
   
@@ -160,33 +158,33 @@ Aplikace modelu Windows Form jsou jedny nejběžnějších spravovaných aplikac
   
 1.  V projektu, který jste vytvořili výše, klikněte na levý okraj řádku, který jste přidali, abyste znovu nastavili zarážku:  
   
-    ```  
-    ' Visual Basic  
-    textBox1.Text = "Button was clicked!"  
-  
-    // C#  
-    textBox1.Text = "Button was clicked!"  
-  
-    // C++  
-    textBox1->Text = "Button was clicked!";  
+     ```vb  
+    textBox1.Text = "Button was clicked!"
     ```  
   
-2.  Na **ladění** nabídce vyberte možnost **spustit bez ladění**.  
+    ```csharp 
+    textBox1.Text = "Button was clicked!";
+    ```  
   
-     Aplikace modelu Windows Form se spustí v systému Windows stejně, jako kdyby jste dvakrát kliknuli na její spustitelný soubor. Ladicí program není připojen.  
+    ```cpp  
+    textBox1->Text = "Button was clicked!";   
   
-3.  Na **ladění** nabídce vyberte možnost **připojit k procesu**. (Tento příkaz je také k dispozici na **nástroje** nabídky.)  
+2.  On the **Debug** menu, select **Start Without Debugging**.  
   
-     **Připojit k procesu** zobrazí se dialogové okno.  
+     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.  
   
-4.  V **dostupné procesy** podokně, najít proces názvu (Walkthrough_SimpleDebug.exe) **proces** sloupce a klikněte na něj.  
+3.  On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)  
   
-5.  Klikněte **Attach** tlačítko.  
+     The **Attach to Process** dialog box appears.  
   
-6.  Na formuláři Windows Form vaší aplikace klikněte na tlačítko.  
+4.  In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.  
   
-     Ladicí program při dosažení zarážky přeruší spuštění formuláře aplikace modelu Windows Form.  
+5.  Click the **Attach** button.  
   
-## <a name="see-also"></a>Viz také  
- [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   
- [Zabezpečení ladicího programu](../debugger/debugger-security.md)
+6.  In your Windows Form, click the one and only button.  
+  
+     The debugger breaks execution of the Windows Form at the breakpoint.  
+  
+## See Also  
+ [Debugging Managed Code](../debugger/debugging-managed-code.md)   
+ [Debugger Security](../debugger/debugger-security.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9035b9232d1b2e459be86c24758dcc6db6b1cdf
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 09d48461d46153731d66844080cb35aa1135d17c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281661"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056975"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalace testovacích agentů a kontrolerů testů
 
@@ -34,7 +34,7 @@ Také můžete zvážit, pokud je vhodnější použít [sestavení nebo Správa
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Nainstalujte testovací kontrolery a testovací agenti
 
-Můžete si stáhnout agentů pro Visual Studio 2017 z [visualstudio.com](https://visualstudio.microsoft.com/downloads/?q=agents). Přejděte do dolní části stránky a vyhledejte *agentů pro Visual Studio 2017*. Vyberte buď *agenta* nebo *řadič*a potom zvolte *Stáhnout*. Spusťte stažený spustitelný soubor instalace zařízení nebo testovacího agenta.
+Můžete si stáhnout agentů pro Visual Studio 2017 z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Přejděte do dolní části stránky a vyhledejte *agentů pro Visual Studio 2017*. Vyberte buď *agenta* nebo *řadič*a potom zvolte *Stáhnout*. Spusťte stažený spustitelný soubor instalace zařízení nebo testovacího agenta.
 
 Agenty si můžete stáhnout pro Visual Studio 2015 a Visual Studio 2013 z [starší stahování](https://visualstudio.microsoft.com/vs/older-downloads/) stránky.
 

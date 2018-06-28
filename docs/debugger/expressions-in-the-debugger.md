@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 063fe4f61e6e3d8e8ed9e54b990029f2cf408e24
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: caaa13d67c30e07cd95c7a959e17117199188c0c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454541"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056645"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Výrazy v ladicím programu sady Visual Studio
 Zahrnuje vyhodnocovače výrazů, které fungují při zadání výrazu v ladicím programu sady Visual Studio **QuickWatch** dialogové okno, **sledovat** okno, nebo **Immediate** okno. Vyhodnocovače výrazů jsou také v práci v **zarážky** okno a mnoho dalších místech ladicího programu.
@@ -147,7 +147,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic – Nepodporovaná výrazy  
   
 ### <a name="dynamic-objects"></a>Dynamické objekty  
- Proměnné můžete použít ve výrazech ladicího programu, které jsou zadány staticky jako dynamický. Pokud objekty, které implementují [IDynamicMetaObjectProvider rozhraní](http://msdn.microsoft.com/Library/e887a72d-ebe2-4253-a7e8-3d8d05154647) jsou vyhodnocovány v okně Sledování dynamického zobrazení přidání uzlu. Uzel dynamického zobrazení ukazuje členové objektu, ale neumožňuje úpravy hodnot členů.  
+ Proměnné můžete použít ve výrazech ladicího programu, které jsou zadány staticky jako dynamický. Pokud objekty, které implementují [IDynamicMetaObjectProvider rozhraní](/dotnet/api/system.dynamic.idynamicmetaobjectprovider) jsou vyhodnocovány v okně Sledování dynamického zobrazení přidání uzlu. Uzel dynamického zobrazení ukazuje členové objektu, ale neumožňuje úpravy hodnot členů.  
   
  Nejsou podporovány následující funkce dynamické objektů:  
   

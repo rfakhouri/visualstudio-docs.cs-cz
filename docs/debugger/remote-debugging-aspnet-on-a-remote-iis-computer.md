@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 607f4bb2bcce3d8895a4a07df8d70c866e7a6aab
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d9515d208f2ab4bb8c429d5063e5134676c71c24
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746927"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057554"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core na počítači vzdálené služby IIS v Visual Studio 2017
 K ladění aplikace ASP.NET, která byla nasazena do služby IIS, instalaci a spuštění nástrojů pro vzdálenou na počítači, kde jste nasadili aplikace a pak připojte k běžící aplikaci ze sady Visual Studio.
@@ -199,7 +199,7 @@ Informace o spuštění jako služba vzdáleného ladicího programu najdete v t
 Ve většině nastavení jsou otevřené požadované porty při instalaci ASP.NET a vzdáleného ladicího programu. Potřebujete však ověřte, že jsou otevřené porty.
 
 > [!NOTE]
-> Ve virtuálním počítači Azure, musíte otevřít porty prostřednictvím [skupinu zabezpečení sítě](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
+> Ve virtuálním počítači Azure, musíte otevřít porty prostřednictvím [skupinu zabezpečení sítě](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
 
 Požadované porty:
 

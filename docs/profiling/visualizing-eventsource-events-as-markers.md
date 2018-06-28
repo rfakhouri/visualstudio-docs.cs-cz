@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d144728d86bf57a5af837fb8740becd1b6ee4c22
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 3e6c28682bb6b93a2a72aaa353a2af68a9450cb9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449023"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058588"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Vizualizace událostí EventSource v podobě značek
 Vizualizér souběžnosti můžete zobrazit událostí EventSource jako značky a můžete řídit zobrazení značek. Chcete-li zobrazit EventSource značek, zaregistrujte zprostředkovatele trasování událostí pro Windows GUID pomocí [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno. Vizualizér souběžnosti má výchozích konvencí představují událostí EventSource jako [značky příznaků](../profiling/flag-markers.md), [značky Span](../profiling/span-markers.md), a [značky zpráv](../profiling/message-markers.md). Zobrazení událostí EventSource přidáním vlastních polí k událostem, které můžete přizpůsobit. Další informace o značkách najdete v části [značek Vizualizéru souběžnosti](../profiling/concurrency-visualizer-markers.md). Další informace o událostech EventSource najdete v tématu <xref:System.Diagnostics.Tracing>.  
@@ -25,9 +25,9 @@ Vizualizér souběžnosti můžete zobrazit událostí EventSource jako značky 
   
 ### <a name="marker-type"></a>Typ značky  
   
-1.  Události, které mají [Opcode](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win: počáteční nebo win: zastavení jsou považovány za začátku nebo na konci značky span, v uvedeném pořadí.  Vnořené nebo překrývající se rozsahy nelze zobrazit. Páry událostí, které začínají na jedno vlákno a končí na jiném nelze zobrazit.  
+1.  Události, které mají [Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win: počáteční nebo win: zastavení jsou považovány za začátku nebo na konci značky span, v uvedeném pořadí.  Vnořené nebo překrývající se rozsahy nelze zobrazit. Páry událostí, které začínají na jedno vlákno a končí na jiném nelze zobrazit.  
   
-2.  Událost, jejichž operační kód není win: spuštění ani win: zastavení je považován za příznak značky, pokud jeho [úroveň](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (pole z EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) je win: podrobný nebo vyšší.  
+2.  Událost, jejichž operační kód není win: spuštění ani win: zastavení je považován za příznak značky, pokud jeho [úroveň](/windows/desktop/WES/defining-severity-levels) (pole z EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) je win: podrobný nebo vyšší.  
   
 3.  Ve všech ostatních případech je událost považována za zprávu.  
   
@@ -95,5 +95,5 @@ Vizualizér souběžnosti můžete zobrazit událostí EventSource jako značky 
 > [!NOTE]
 >  Použití SpanID lze vnořit rozsahy, mohly částečně překrývat ve stejném vlákně, nebo jejich spuštění na jedno vlákno povolíte a end na jiném není podporována.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Značky vizualizéru souběžnosti](../profiling/concurrency-visualizer-markers.md)

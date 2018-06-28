@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 0abe9da4ff34217097cd8c4021f44b2ce7d52d5f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 1f34f6af0a98e71f5feb910f84e8d67ada051ae9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281128"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057034"
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Kurz: Ladění nativního a spravovaného kódu v sadě Visual Studio
 
@@ -163,13 +163,13 @@ Ve většině verzí aplikace Visual Studio 2017, musíte povolit ladění ve sm
 
 1. V *lauchsettings.json* soubor, přidejte následující vlastnost:
 
-    ```
+    ```csharp
     "nativeDebugging": true
     ```
 
     Ano například souboru může vypadat následovně:
 
-    ```
+    ```csharp
     {
       "profiles": {
         "Mixed_Mode_Calling_App": {

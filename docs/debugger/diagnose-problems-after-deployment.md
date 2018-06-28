@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a29e25c19d3dae18efd967a4fb26e1cd4f576a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3364bdcab6ac455833e33cf59391aaef4f0af81d
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479608"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058006"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnostika problémů po nasazení
 Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použitím technologie IntelliTrace, obsahovat informace o sestavení s vaší verzí umožníte Visual Studio automaticky vyhledá správné zdrojové soubory a soubory symbolů, které jsou nutné k ladění protokolu IntelliTrace.  
@@ -102,7 +102,7 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
   
      A přidejte tyto řádky do souboru webového projektu (.csproj, .vbproj):  
   
-    ```  
+    ```xml
     <!-- Import the targets file. Change the folder location as necessary. -->  
        <Import Project=""$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" />  
   
@@ -282,7 +282,7 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
      Název projektu v sadě Visual Studio. Příklad:  
 
-    ```  
+    ```xml
     <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
     ```  
 
@@ -300,7 +300,7 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
          Příklad:  
 
-        ```  
+        ```xml
         <SourceControl type="TFS">  
            <TfsSourceControl>  
               <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>  
@@ -322,7 +322,7 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
          Příklad:  
 
-        ```  
+        ```xml
         <SourceControl type="Git">   
            <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">  
               <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>  
@@ -350,7 +350,7 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
     -   **SADY TFS**  
 
-        ```  
+        ```xml
         <Build type="TeamBuild">  
            <MsBuild>  
               <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>  
@@ -364,7 +364,7 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
     -   **Git**  
 
-        ```  
+        ```xml
         <Build type="MSBuild">   
            <MSBuild>  
               <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>  

@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddbce0e003f2825d76458146e1d2fe009a43709e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2424fdcb36e9157c358ab510849a4dbb709d7e62
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477924"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057697"
 ---
-# <a name="command-line-capture-tool"></a>Nástroj příkazového řádku zachycení
+# <a name="command-line-capture-tool"></a>Nástroj příkazového řádku pro zachytávání
 DXCap.exe je nástroj příkazového řádku pro zachycení diagnostiky grafiky a přehrávání. Podporuje Direct3D – 10 až 12 Direct3D – mezi všechny funkce úrovně.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```ms-dos  
+```cmd  
 DXCap.exe [-file filename] [-frame frames | -period periods | -manual] -c app [args...]  
 DXCap.exe -p [filename] [-debug | -warp | -hw] [-config] [-rawmode]  
 DXCap.exe -p [filename] -screenshot [-frame frames]  
@@ -33,18 +33,18 @@ DXCap.exe -info
 ```  
   
 #### <a name="parameters"></a>Parametry  
- `-file``filename`  
+ `-file` `filename`  
  V režimu zachycení (`-c`), `filename` Určuje název souboru protokolu grafiky, který je grafických informací zaznamenaná za účelem. Pokud `filename` není zadán, grafických informací se zaznamená do souboru s názvem `<appname>-<date>-<time>.vsglog` ve výchozím nastavení.  
   
  V části ověření (-v) režimu `filename` Určuje název souboru protokolu grafiky má být ověřen. Pokud `filename` není zadán, je znovu použít protokol grafiky, který byl naposledy ověřena.  
   
- `-frame``frames`  
+ `-frame` `frames`  
  V režimu zachycení `frames` určuje počet snímků, které chcete zaznamenat. První snímek je 1. Můžete zadat více snímků pomocí čárky a rozsahy adres. Například pokud `frames` je `2, 5, 7-9, 15`, pak rámců `2`, `5`, `7`, `8`, `9`, a `15` zaznamenání.  
 
 > [!TIP]
 > Použití `-frame` `manual` k určení, že rámce bude zaznamenat ručně stisknutím klávesy Print Screen. Rámce se dají zachytit při spuštění aplikace; Zastavit sběr rámců, vraťte k rozhraní příkazového řádku a stiskněte klávesu enter.  
   
- `-period``periods`  
+ `-period` `periods`  
  V režimu zachycení `periods` určuje rozsahy dobu v sekundách, během kterých chcete zaznamenat rámce. Můžete zadat více období pomocí čárky a rozsahy adres. Například pokud `periods` je `2.1-5, 7.0-9.3`, pak rámců, které jsou generovány mezi `2.1` a `5` sekund a mezi`7` a `9.3` zaznamenání sekund.  
   
  `-c` `app` [`args...`]  
@@ -74,7 +74,7 @@ DXCap.exe -info
  `-v`  
  Režim ověření. V režimu ověřování zaznamenané rámce se přehrávají zpět na hardware a OSNOVĚ a jejich výsledky jsou porovnávány pomocí funkce porovnání bitové kopie. Tato funkce vám pomůže rychle identifikovat problémy ovladače, které ovlivňují vaší vykreslování.  
   
- `-examine``events`  
+ `-examine` `events`  
  V režimu ověřování `events` určuje sadu událostí grafiky jsou porovnávány, jejichž okamžitou výsledky. Například `-examine present,draw,copy,clear` omezuje porovnání k událostem, které patří do těchto kategorií.  
   
 > [!TIP]
@@ -89,7 +89,7 @@ DXCap.exe -info
  `-showprogress`  
  V režimu ověřování `-showprogress` zobrazí informace o průběhu relace ověřování. Zobrazí se průběh OSNOVĚ na levé straně; Zobrazí se průběh hardwaru na pravé straně.  
   
- `-e``search_string`  
+ `-e` `search_string`  
  Vytvoří výčet aplikace UWP, které jsou nainstalovány. Tyto informace můžete použít k provedení příkazového řádku zachycení s aplikace UWP.  
   
  `-info`  

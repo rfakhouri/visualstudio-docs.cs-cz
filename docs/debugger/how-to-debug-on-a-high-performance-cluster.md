@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97e692d4d376473f3eaf283a53117d0bf343ea71
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5a4a82f8974576b2a917b7bbaee7e757513501c7
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477661"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058032"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Postupy: Ladění na klastru s vysokým výkonem
 Program multiprocesing na clusteru, vysoce výkonné ladění je jako ladění normální program na vzdáleném počítači. Existuje však několik dalších důležitých informací. Obecné nastavení vzdálené požadavky najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  
@@ -54,7 +54,7 @@ Program multiprocesing na clusteru, vysoce výkonné ladění je jako ladění n
   
      Chcete-li vytvořit složitější filtr, můžete kombinovat pomocí klauzule `&`, operátor AND `||`, operátor OR `!`, operátor NOT a kulaté závorky.  
   
-4.  Click **OK**.  
+4.  Klikněte na tlačítko **OK**.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>Chcete-li nastavit zarážky na specifickém procesu  
   
@@ -72,7 +72,7 @@ Program multiprocesing na clusteru, vysoce výkonné ladění je jako ladění n
   
      Chcete-li vytvořit složitější filtr, můžete kombinovat pomocí klauzule `&`, operátor AND `||`, operátor OR `!`, operátor NOT a kulaté závorky.  
   
-4.  Click **OK**.  
+4.  Klikněte na tlačítko **OK**.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>Chcete-li nastavit zarážky konkrétní vlákna  
   
@@ -90,14 +90,13 @@ Program multiprocesing na clusteru, vysoce výkonné ladění je jako ladění n
   
      Chcete-li vytvořit složitější filtr, můžete kombinovat pomocí klauzule `&`, operátor AND `||`, operátor OR `!`, operátor NOT a kulaté závorky.  
   
-4.  Click **OK**.  
+4.  Klikněte na tlačítko **OK**.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje, jak vytvořit filtr pro zarážku na počítači s názvem `marvin` a vlákna s názvem `fourier1`.  
   
-```  
-(MachineName = marvin) & (ThreadName = fourier1)  
-```  
+`(MachineName = marvin) & (ThreadName = fourier1)`  
+
   
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

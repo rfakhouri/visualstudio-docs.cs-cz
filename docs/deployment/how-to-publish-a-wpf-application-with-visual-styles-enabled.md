@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a091f8fc770b2e9bc6ef2e61e8287f0e8ded5323
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 921cb50efa3806c550d7fe8c949e00c3eb08f478
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233610"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057408"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Postupy: Publikování aplikace WPF s povolenými vizuálními styly
-Vizuální styly povolit vzhled běžné ovládací prvky, chcete-li změnit podle motiv volená uživatelem. Ve výchozím nastavení nejsou povolené vizuální styly pro aplikace Windows Presentation Foundation (WPF), takže je nutné ručně povolit. Povolení vizuální styly pro aplikaci WPF a poté publikujete řešení způsobí chybu. Toto téma popisuje, jak vyřešit tuto chybu a proces pro publikování aplikace WPF s povolenými vizuálními styly. Další informace o vizuální styly najdete v tématu [vizuální styly přehled](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Další informace o chybovou zprávu najdete v tématu [řešení potíží s konkrétní chyby v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
+Vizuální styly povolit vzhled běžné ovládací prvky, chcete-li změnit podle motiv volená uživatelem. Ve výchozím nastavení nejsou povolené vizuální styly pro aplikace Windows Presentation Foundation (WPF), takže je nutné ručně povolit. Povolení vizuální styly pro aplikaci WPF a poté publikujete řešení způsobí chybu. Toto téma popisuje, jak vyřešit tuto chybu a proces pro publikování aplikace WPF s povolenými vizuálními styly. Další informace o vizuální styly najdete v tématu [vizuální styly přehled](/windows/desktop/Controls/visual-styles-overview). Další informace o chybovou zprávu najdete v tématu [řešení potíží s konkrétní chyby v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Chcete-li vyřešit chyby a publikování řešení, je třeba provést následující úlohy:  
   
@@ -163,6 +163,6 @@ cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\App
   
 ## <a name="see-also"></a>Viz také  
  [Řešení konkrétních chyb v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
- [Vizuální styly – přehled](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)   
+ [Vizuální styly – přehled](/windows/desktop/Controls/visual-styles-overview)   
  [Povolení vizuální styly](https://msdn.microsoft.com/library/bb773175.aspx)   
  [Příkazové řádky](/dotnet/framework/tools/developer-command-prompt-for-vs)

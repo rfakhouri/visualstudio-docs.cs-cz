@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ebcf0508c5bc4d5788be1f7515604b5b4be228f1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 686a6393a219d089d185789a776a76d5726dfde2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477450"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058536"
 ---
 # <a name="debug-xaml-in-blend"></a>Ladění kódu XAML v programu Blend
 Můžete pomocí nástrojů v [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] k ladění kódu XAML v aplikaci. Při sestavování projektu se zobrazí nějaké chyby v **výsledky** panelu. Dvakrát klikněte na chybu zjistit kód týkající se chyby. Pokud potřebujete více místa k práci, můžete skrýt **výsledky** panely stisknutím klávesy F12.  
@@ -68,7 +68,7 @@ Můžete pomocí nástrojů v [!INCLUDE[blend_first](../debugger/includes/blend_
   
 8.  Zkopírujte následující kód kliknutím **kopie** odkaz v pravém horním rohu kódu.  
   
-    ```  
+    ```xml
     <Grid HorizontalAlignment="Left" Height="222" VerticalAlignment="Top>  
          <Button content="Button" x:Mame="Home" HorizontalAlignment="Left" VerticalAlignment="Top"/>  
          <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,38,0,0">  
@@ -81,7 +81,7 @@ Můžete pomocí nástrojů v [!INCLUDE[blend_first](../debugger/includes/blend_
   
 9. Vyhledejte výchozí **mřížky**a vložte kód mezi počáteční a koncovou **mřížky** značky. Jakmile budete hotovi, váš kód by měl vypadat takto:  
   
-    ```  
+    ```xml
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">  
          <Grid HorizontalAlignment="Left" Height="222" VerticalAlignment="Top>  
               <Button content="Button" x:Mame="Home" HorizontalAlignment="Left" VerticalAlignment="Top"/>  

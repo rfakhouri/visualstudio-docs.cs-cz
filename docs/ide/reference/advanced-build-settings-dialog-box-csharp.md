@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc9900927218e543b4e7ba962d7ea019d927c8a8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c39e68c05f438b787bb7a0930f2ad0ba6a324ee1
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948350"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057531"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Dialogové okno Upřesnit nastavení sestavení (C#)
 
@@ -54,7 +54,7 @@ Použití **Upřesnit nastavení sestavení** dialogové okno s **Návrhář pro
 
  Následující možnosti vám umožňují určit možnosti pokročilé výstupu.
 
- **Informace o ladění** Určuje typ ladicí informace generované kompilátorem. Informace o tom, jak nakonfigurovat ladění výkonu aplikace, najdete v tématu [snadněji bitové kopie pro ladění](http://msdn.microsoft.com/Library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3). Toto nastavení má následující možnosti:
+ **Informace o ladění** Určuje typ ladicí informace generované kompilátorem. Informace o tom, jak nakonfigurovat ladění výkonu aplikace, najdete v tématu [snadněji bitové kopie pro ladění](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Toto nastavení má následující možnosti:
 
 - **None**
 
@@ -67,7 +67,7 @@ Použití **Upřesnit nastavení sestavení** dialogové okno s **Návrhář pro
 - **pdbonly**
 
   Umožňuje zdrojového kódu, ladění, když program běží v ladicím programu, ale zobrazí jenom assembleru po spuštěným programem k ladicího programu.
-- **Přenositelností**
+- **přenosná**
 
   Vytváří. Soubor PDB, soubor platformy konkrétní, přenosné symbol, který poskytuje jiných nástrojů, zejména ladicí programy, informace o tom, co je v hlavní spustitelný soubor a jak bylo vytvořeno. V tématu [přenosné PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) Další informace.
 

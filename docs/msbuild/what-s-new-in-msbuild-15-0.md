@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd8c5100158b5761047d38e10f953fc832e0ce2b
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 485350efd38fda9c141fe0ee1ae9ee5cfbffcafd
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302881"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056368"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Co je nového v nástroji MSBuild 15
 
@@ -40,8 +40,7 @@ MSBuild je nyní k dispozici jako součást [.NET Core SDK](https://www.microsof
 - `SDK35ToolsPath` a `SDK40ToolsPath` vlastnosti bodu na rozhraní .NET Framework SDK, který je součástí balíčku tato verze sady Visual Studio (například 10.0A nástroje 4.X).
 
 ## <a name="updates"></a>Aktualizace
-
-- [Element projektu](../msbuild/project-element-msbuild.md) má nový `SDK` atribut. Také `Xmlns` atribut je volitelný. Další informace najdete v tématu [postupy: použití nástroje MSBuild projektu sady SDK](../msbuild/how-to-use-project-sdk.md)a také [balíčky, metadat a architektur](/dotnet/core/packages) a [doplňky csproj formátu pro .NET Core](/dotnet/core/tools/csproj).
+- [Element projektu](../msbuild/project-element-msbuild.md) má nový `SDK` atribut. Také `Xmlns` atribut je volitelný. Další informace o `SDK` atributů najdete v tématu [postupy: použití nástroje MSBuild projektu sady SDK](../msbuild/how-to-use-project-sdk.md), [balíčky, metadat a architektur](/dotnet/core/packages) a [doplňky csproj formátu pro .NET Core ](/dotnet/core/tools/csproj).
 - [Položka Element](../msbuild/item-element-msbuild.md) mimo cíle má nový `Update` atribut. Také omezení na `Remove` atribut se odstranilo.
 - `Directory.Build.props` je soubor definovaný uživatelem, který poskytuje přizpůsobení projektů adresáře. Tento soubor je automaticky importovány ze Microsoft.Common.props, pokud vlastnost `ImportDirectoryBuildTargets` je nastaven na **false**. `Directory.Build.targets` importovaných pomocí Microsoft.Common.targets.
 - Veškerá metadata, s názvem, který není v konfliktu s aktuální seznam atributů může být volitelně vyjádřený jako atribut. Další informace najdete v tématu [Item – prvek](../msbuild/item-element-msbuild.md).

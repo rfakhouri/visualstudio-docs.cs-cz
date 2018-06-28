@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c5da503dd3eb1aec83c5f1fdef58261960d66d7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d5118aafae296d839ad182d51b996da11a6bc556
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477414"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057395"
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Ladění projektů knihovny DLL ze sady Visual Studio
 Následující šablony sady Visual Studio vytvořte knihovny DLL:  
@@ -82,7 +82,7 @@ Než začnete ladění volající aplikace, obvykle můžete nastavit zarážky 
   
 2.  K testování metodu s názvem `Test` ve třídě `Class1`, vytvoří instanci objektu typu `Class1` zadáním následujícího kódu C# do hodnot proměnných. Tento spravovaný kód funguje pro Visual Basic a jazyce C++ pomocí vhodné syntaxe změny:  
   
-    ```  
+    ```cpp
     Class1 obj = new Class1();  
     ```  
   
@@ -90,7 +90,7 @@ Než začnete ladění volající aplikace, obvykle můžete nastavit zarážky 
   
 3.  Za předpokladu, že `Test` má jednu `int` parametr vyhodnotit `Test` pomocí **Immediate** okno:  
   
-    ```  
+    ```cpp
     ?obj.Test(10)  
     ```  
   
@@ -98,7 +98,7 @@ Než začnete ladění volající aplikace, obvykle můžete nastavit zarážky 
   
 4.  Můžete pokračovat v ladění `Test` umístěním zarážku uvnitř ho a pak znovu vyhodnocení funkce:  
   
-    ```  
+    ```cpp
     ?obj.Test(10);  
     ```  
   

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 187c9e682877a0f0633e7d3210454d40cae9de0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 71a29a5d8961688f710181dce553d0895a4bb475
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478760"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057158"
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Nastavovat sledování na proměnné pomocí sledování a QuickWatch Windows v sadě Visual Studio
 Při ladění, můžete použít **sledovat** a **QuickWatch** windows si chcete přehrát proměnné a výrazy.  Rozdíl je, že **sledovat** okno může zobrazit několika proměnných, při **QuickWatch** okno zobrazí jednu proměnnou najednou. 
@@ -153,7 +153,7 @@ static void Main(string[] args)
 ##  <a name="bkmk_sideEffects"></a> Vedlejší efekty a výrazy  
  Hodnocení některých výrazů může změnit hodnotu proměnné nebo jinak ovlivnit stav programu. Například následující výraz vyhodnocení změní hodnotu `var1`:  
   
-```  
+```csharp
 var1 = var2  
 ```  
   

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a865a9852b8a6700e250225244546567967257de
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7b579712827033dab1556739f4ea79340232e761
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476995"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058520"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Omezení ladění WCF
 Existují tři způsoby, můžete začít ladění služby WCF:  
@@ -47,7 +47,7 @@ Existují tři způsoby, můžete začít ladění služby WCF:
   
 -   Následující kód v souboru Web.config nebo app.config musí být povoleno ladění:  
   
-    ```  
+    ```xml
     <system.web>  
       <compilation debug="true" />  
     </system.web>  
@@ -69,7 +69,7 @@ Existují tři způsoby, můžete začít ladění služby WCF:
   
 -   Následující kód v souboru Web.config nebo app.config musí být povoleno ladění:  
   
-    ```  
+    ```xml
     <system.web>  
       <compilation debug="true" />  
     <system.web>  

@@ -1,7 +1,7 @@
 ---
 title: Řešení potíží s Azure vzdálené ladění pro jazyk Python
 description: Řešení potíží při ladění aplikace Python spuštěné v Azure App Service pomocí sady Visual Studio.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,20 +12,20 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 845ec37c14bcc6927f8db6c492756c4e83d1cc75
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 111a166e561bccb0eb5a14143479b7ad251d9b61
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296382"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058549"
 ---
 # <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Vzdálené ladění Poradce při potížích pro Python a Azure
 
 Nepodaří připojit k sadě Visual Studio [Azure App Service pro vzdálené ladění](debugging-remote-python-code-on-azure.md) pro některý z následujících důvodů:
 
-| Důvod | Rozlišení |
+| Důvod | Řešení |
 | --- | --- |
-| Nemají Visual Studio 2013 Update 4 nebo novější. | Nainstalujte vhodnou verzi z [visualstudio.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). |
+| Nemají Visual Studio 2013 Update 4 nebo novější. | Nainstalujte vhodnou verzi z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). |
 | Projekt, který je nasazen do služby App Service se neshoduje se jeden otevřete v sadě Visual Studio. | Načtení správný projekt do sady Visual Studio. |
 | Projekt nebyl nasazen s konfigurací ladění. | Znovu nasaďte aplikaci pravým tlačítkem na projekt v Průzkumníku řešení a výběrem **publikovat**. V **nastavení** , zkontrolujte, zda **ladění** je vybrané konfigurace. |
 | App Service není spuštěna. | Spusťte z Průzkumníka serveru v sadě Visual Studio nebo z portálu Azure. |

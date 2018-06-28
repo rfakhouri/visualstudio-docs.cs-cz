@@ -1,7 +1,7 @@
 ---
 title: Ladění kódu jazyka Python na vzdálených počítačích systému Linux
 description: Jak používat k ladění kódu Pythonu spuštěný na vzdálených počítačích systému Linux, včetně nezbytné konfigurační kroky, zabezpečení a řešení potíží s Visual Studio.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1a5a4f5b0400c4bf3896e2d1c1ec7ec3e8664d31
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: de32c1d0309d6b6510a914fe359193105e2febde
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582810"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057382"
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Vzdálené ladění kódu jazyka Python v systému Linux
 
@@ -26,7 +26,7 @@ Při použití ptvsd, kód Python laděné hostuje ladění serveru, na kterou m
 
 |   |   |
 |---|---|
-| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | Úvod do vzdáleného ladění, najdete v části [podrobné informace: vzdálené ladění napříč platformami](https://youtu.be/y1Qq7BrV6Cc) (webu youtube.com, 6m22s), který je použitelný pro Visual Studio 2015 a 2017. |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | Úvod do vzdáleného ladění, najdete v části [podrobné informace: vzdálené ladění napříč platformami](https://youtu.be/y1Qq7BrV6Cc) (webu youtube.com, 6m22s), který je použitelný pro Visual Studio 2015 a 2017. |
 
 ## <a name="setting-up-a-linux-computer"></a>Nastavení počítač se systémem Linux
 

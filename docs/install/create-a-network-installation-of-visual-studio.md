@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f25e277a4743d27115485e791fd44f12078a4b2f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 142aff42eff0184e957242ca09bc3b591b919d1f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282584"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057993"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Vytvořit sítě instalaci sady Visual Studio 2017
 
@@ -127,11 +127,11 @@ Při instalaci z rozložení obsahu, který je nainstalován se získávají z r
 
 Pokud jste použili `--wait` parametr a potom v závislosti na výsledku operace, `%ERRORLEVEL%` proměnná prostředí je nastavená na jednu z následujících hodnot:
 
-  | **Hodnota** | **výsledek** |
+  | **Hodnota** | **Výsledek** |
   | --------- | ---------- |
   | 0 | Operace byla úspěšně dokončena |
   | 3010 | Operace úspěšně dokončena, ale instalace vyžaduje restart, před použitím |
-  | Ostatní | Došlo k selhání podmínku – Zkontrolujte protokoly pro další informace |
+  | Jiné | Došlo k selhání podmínku – Zkontrolujte protokoly pro další informace |
 
 ## <a name="updating-a-network-install-layout"></a>Aktualizuje se síťové instalace rozložení
 
@@ -140,7 +140,7 @@ Jakmile budou k dispozici aktualizace produktu, můžete chtít [aktualizovat s�
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>Postup vytvoření rozložení pro předchozí verze Visual Studio 2017
 
 > [!NOTE]
-> Visual Studio 2017 samozaváděcích, které jsou dostupné na [VisualStudio.com](http://visualstudio.microsoft.com) stáhněte a nainstalujte nejnovější verzi Visual Studio 2017, která je k dispozici vždy, když běží. Pokud ještě dnes stáhnout zaváděcího nástroje Visual Studio a spustit od tohoto okamžiku šest měsíců, nainstaluje na Visual Studio 2017 vydání, které je k dispozici v tomto později. Pokud vytvoříte rozložení, instalace sady Visual Studio z tohoto rozložení nainstaluje určitou verzi sady Visual Studio, která existuje v rozložení. I v případě, že na novější verzi může být online, abyste měli k verzi sady Visual Studio, který je v rozložení.
+> Visual Studio 2017 samozaváděcích, které jsou dostupné na [visualstudio.microsoft.com](http://visualstudio.microsoft.com) stáhněte a nainstalujte nejnovější verzi Visual Studio 2017, která je k dispozici vždy, když běží. Pokud ještě dnes stáhnout zaváděcího nástroje Visual Studio a spustit od tohoto okamžiku šest měsíců, nainstaluje na Visual Studio 2017 vydání, které je k dispozici v tomto později. Pokud vytvoříte rozložení, instalace sady Visual Studio z tohoto rozložení nainstaluje určitou verzi sady Visual Studio, která existuje v rozložení. I v případě, že na novější verzi může být online, abyste měli k verzi sady Visual Studio, který je v rozložení.
 
 Pokud potřebujete vytvořit rozložení pro starší verze Visual Studio 2017, můžete přejít na https://my.visualstudio.com ke stažení "pevné" verzích samozaváděcích Visual Studio 2017.
 

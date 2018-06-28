@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d19e39ef16bddce9910a65c6833e79d9263fba97
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9bc66f2017b243f94ae0012b354230aae66c76fd
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478288"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058734"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Zobrazení vláken a úloh pomocí okna paralelní zásobníky
 **Paralelní zásobníky** je užitečná při ladění vícevláknové aplikace. Jeho **zobrazení vláken** zobrazí informace v zásobníku volání pro všechna vlákna ve vaší aplikaci. Umožňuje vám přecházet mezi vláken a rámce zásobníku na těchto vláken. Ve spravovaném kódu **zobrazení úlohy** ukáže zásobníky z volání <xref:System.Threading.Tasks.Task?displayProperty=fullName> objekty. V nativním kódu **zobrazení úlohy** ukáže zásobníky z volání [úkolů skupiny](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [paralelní algoritmy](/cpp/parallel/concrt/parallel-algorithms), [asynchronních agentů](/cpp/parallel/concrt/asynchronous-agents)a [prosté úlohy](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -37,7 +37,7 @@ ms.locfileid: "31478288"
  Na obrázku modře zvýrazněný volání cesta aktuální vlákno a aktuální umístění (aktivní zásobníku) vlákno jsou označeny žlutou šipku. Můžete změnit tak, že vyberete jinou metodu v aktuální rámec zásobníku **paralelní zásobníky** okno. To může dojít také přepínání aktuální vlákno, v závislosti na tom, jestli metodu, kterou jste vybrali je součástí aktuální vlákno již nebo jiné vlákno. Následující tabulka popisuje hlavní funkce **paralelní zásobníky** okno, jak je znázorněno na obrázku.  
   
 |Písmeno popisku|Název elementu|Popis|  
-|--------------------|------------------|-----------------|  
+|-|-|-|  
 |OBJEKT|Uzel nebo Segment zásobník volání|Obsahuje řadu metody pro jeden nebo více vláken. Pokud uzel nemá žádné řádky šipku připojeny, pak představuje cestu celý volání pro podprocesy.|  
 |B|Modré zvýraznění|Určuje cestu volání aktuálního vlákna.|  
 |C|Šipka řádky|Připojte uzly a společně tvoří celá volání cestu pro podprocesy.|  
@@ -50,9 +50,8 @@ ms.locfileid: "31478288"
 ## <a name="stack-frame-icons"></a>Ikony rámce zásobníku  
  Následující tabulka popisuje ikony, které obsahují informace o rámce zásobníku aktivní a aktuální:  
   
-|||  
-|-|-|  
 |Ikona|Popis|  
+|-|-|  
 |![Paralelní zásobníky – žlutá šipka](../debugger/media/icon_parallelyellowarrow.gif "Icon_ParallelYellowArrow")|Určuje, že metoda obsahuje aktuální umístění aktuální vlákno (aktivní zásobníku).|  
 |![Paralelní zásobníky – ikona vláken](../debugger/media/icon_parallelthreads.gif "Icon_ParallelThreads")|Určuje, že metoda obsahuje aktuální umístění (aktivní zásobníku) bez aktuální vlákno.|  
 |![Paralelní zásobníky – zelenou šipku](../debugger/media/icon_parallelgreenarrow.gif "Icon_ParallelGreenArrow")|Určuje, že metoda obsahuje aktuální rámec zásobníku (aktuální kontextu ladicího programu). Tento název metody je ve všech uzlech, ve kterých se zobrazí tučně.|  
@@ -63,7 +62,7 @@ ms.locfileid: "31478288"
  ![Nástrojů okna paralelní zásobníky](../debugger/media/parallel_stackstoolbar.png "Parallel_StacksToolbar")  
   
 |Písmeno popisku|Ovládací prvek|Popis|  
-|--------------------|-------------|-----------------|  
+|-|-|-|  
 |OBJEKT|Pole se seznamem vláken nebo úlohy|Přepínače zobrazení mezi zásobníky vlákna volání a zásobníky úloh volání. Další informace najdete v zobrazení úloh a zobrazení vláken.|  
 |B|Zobrazit pouze příznakem|Zásobníky volání zobrazuje pouze pro vláken, která jsou označena v jiných ladění windows, jako **vláken GPU** okno a **paralelního sledování** okno.|  
 |C|Přepnout zobrazení – metoda|Přepíná mezi zásobníku a zobrazení metody. Další informace najdete v tématu zobrazení metody.|  
@@ -76,7 +75,7 @@ ms.locfileid: "31478288"
  ![Místní nabídky v okně paralelní zásobníky](../debugger/media/parallel_contmenu.png "Parallel_ContMenu")  
   
 |Položka nabídky|Popis|  
-|---------------|-----------------|  
+|-|-|  
 |Příznak|Označí vybrané položky.|  
 |Odstranění označení|Unflags vybranou položku.|  
 |Zablokování|Zablokuje vybranou položku.|  

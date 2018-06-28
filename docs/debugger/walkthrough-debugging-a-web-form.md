@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22fd6f033dd76e15311912256bc0597dfc3260c6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fe3b8333f116ea5606a354dd9d0f88f111077a1b
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480329"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057171"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Návod: Ladění webového formuláře
 Kroky v tomto návodu ukazují, jak k ladění [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci, také známé jako webového formuláře. Ukazuje, jak spustit a zastavit provádění, nastavit zarážky a zkontrolujte proměnné v **sledovat** okno.  
@@ -53,7 +53,7 @@ Kroky v tomto návodu ukazují, jak k ladění [!INCLUDE[vstecasp](../code-quali
   
 5.  V **jazyk** seznamu, klikněte na tlačítko **Visual C#** nebo **jazyka Visual Basic**.  
   
-6.  Click **OK**.  
+6.  Klikněte na tlačítko **OK**.  
   
      [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Vytvoří nový projekt a zobrazí výchozí zdrojový kód HTML. Také vytvoří nový virtuální adresář s názvem **webu** pod **Default Web Site** ve službě IIS.  
   
@@ -73,11 +73,11 @@ Kroky v tomto návodu ukazují, jak k ladění [!INCLUDE[vstecasp](../code-quali
   
 12. V `Button1_Click` fungovat, přidejte následující kód:  
   
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
   
-    // C#  
+    ```csharp
     TextBox1.Text = "Button was clicked!";  
     ```  
   
@@ -91,11 +91,11 @@ Kroky v tomto návodu ukazují, jak k ladění [!INCLUDE[vstecasp](../code-quali
   
 1.  V okně Default.aspx.cs nebo Default.aspx.vb klikněte levým okrajem na stejném řádku jako text, který jste přidali:  
   
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
-  
-    // C#  
+
+    ```csharp  
     textBox1.Text = "Button was clicked!";  
     ```  
   
@@ -117,17 +117,13 @@ Kroky v tomto návodu ukazují, jak k ladění [!INCLUDE[vstecasp](../code-quali
   
      **Sledovat** v okně se zobrazí hodnota proměnné `TextBox1.Text`:  
   
-    ```  
-    ""  
-    ```  
+    '""' 
   
 7.  Na **ladění** nabídky, klikněte na tlačítko **Krokovat s přeskočením**.  
   
      Hodnota `TextBox1.Text` změn v **sledovat** okno ke čtení:  
   
-    ```  
-    "Button was clicked!"  
-    ```  
+    `"Button was clicked!"`  
   
 8.  Na **ladění** nabídky, klikněte na tlačítko **pokračovat**.  
   
@@ -147,11 +143,11 @@ Kroky v tomto návodu ukazují, jak k ladění [!INCLUDE[vstecasp](../code-quali
   
 2.  V okně Default.aspx.cs nebo Default.aspx.vb klikněte na levém okraji se znovu nastavit zarážky na řádek, který jste přidali:  
   
-    ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
+    ```
   
-    // C#  
+    ```csharp  
     textBox1.Text = "Button was clicked!";  
     ```  
   

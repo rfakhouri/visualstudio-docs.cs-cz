@@ -1,5 +1,5 @@
 ---
-title: Úlohy nástroje MSBuild vložené | Microsoft Docs
+title: Úlohy nástroje MSBuild vložené s RoslynCodeTaskFactory | Microsoft Docs
 ms.custom: ''
 ms.date: 09/21/2017
 ms.technology: msbuild
@@ -12,29 +12,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77bda15937c9761d21f982a7a5006d457ac91d40
+ms.openlocfilehash: b12d0ae775d37a436898bb34acca0c7f4a50e649
 ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056776"
+ms.locfileid: "37059335"
 ---
-# <a name="msbuild-inline-tasks"></a>Vložené úlohy nástroje MSBuild
-Úlohy nástroje MSBuild obvykle vytváří kompilování třídu, která implementuje <xref:Microsoft.Build.Framework.ITask> rozhraní. Další informace najdete v tématu [úlohy](../msbuild/msbuild-tasks.md).  
-  
- Od verze rozhraní .NET Framework verze 4, můžete vytvořit úlohy vložené v souboru projektu. Chcete-li vytvořit samostatné sestavení pro hostování úlohy nemáte. To usnadňuje ke sledování zdrojového kódu a snazší nasazování úlohu. Zdrojový kód je integrovaná do skriptu.  
-  
+# <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Vložené úlohy nástroje MSBuild s RoslynCodeTaskFactory
+Podobně jako [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory používá ke generování sestavení úloh v paměti pro použití jako vložené úlohy kompilátory Roslyn napříč platformami.  Úlohy RolynCodeTaskFactory zacílit .NET Standard a může pracovat na rozhraní .NET Framework a .NET Core moduly runtime a také jiné platformy jako Linux a Mac OS.
 
- V MSBuild 15.8 [RoslnCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) byl přidán, který můžete vytvořit standardní .NET napříč platformami vložené úlohy.  Pokud budete muset použít vložené úlohy na .NET Core, je nutné použít RoslynCodeTaskFactory.
-## <a name="the-structure-of-an-inline-task"></a>Struktura vložené úlohy  
- Vložené úlohy je obsažený v [usingtask –](../msbuild/usingtask-element-msbuild.md) elementu. Vložené úlohy a `UsingTask` element, který jej obsahuje obvykle součástí souboru .targets a naimportovat do jiných souborů projektu podle potřeby. Zde je základní vložené úlohy. Všimněte si, že ho neprovede žádnou akci.  
+**Poznámka:** `RolynCodeTaskFactory` je k dispozici v MSBuild 15.8 a výše pouze.
+  
+## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Struktura vložené úlohy s RoslynCodeTaskFactory
+ Vložené úlohy RoslynCodeTaskFactory jsou deklarovány stejným způsobem jako [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md). Jediným rozdílem je, že cílí .NET Standard.  Vložené úlohy a `UsingTask` element, který jej obsahuje obvykle součástí souboru .targets a naimportovat do jiných souborů projektu podle potřeby. Zde je základní vložené úlohy. Všimněte si, že ho neprovede žádnou akci.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task does nothing. -->  
   <UsingTask  
     TaskName="DoNothing"  
-    TaskFactory="CodeTaskFactory"  
+    TaskFactory="RoslynCodeTaskFactory"  
     AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
@@ -91,14 +89,14 @@ ms.locfileid: "37056776"
 >  Při definování třída úlohy ve zdrojovém souboru, název třídy, musíte souhlasit s `TaskName` atribut odpovídající [usingtask –](../msbuild/usingtask-element-msbuild.md) elementu.  
   
 ## <a name="hello-world"></a>Hello World  
- Zde je robustnější vložené úlohy. Zobrazí úlohu HelloWorld "Hello, world!" v zařízení výchozí protokolování chyb, který je obvykle systémové konzoly nebo sady Visual Studio **výstup** okno. `Reference` Element v příkladu je zahrnutý jenom pro obrázek.  
+ Zde je robustnější vložené úlohy s RoslynCodeTaskFactory. Zobrazí úlohu HelloWorld "Hello, world!" v zařízení výchozí protokolování chyb, který je obvykle systémové konzoly nebo sady Visual Studio **výstup** okno. `Reference` Element v příkladu je zahrnutý jenom pro obrázek.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task displays "Hello, world!" -->  
   <UsingTask  
     TaskName="HelloWorld"  
-    TaskFactory="CodeTaskFactory"  
+    TaskFactory="RoslynCodeTaskFactory"  
     AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
@@ -149,7 +147,7 @@ Například
 ```xml  
 <ParameterGroup>  
     <Expression Required="true" />  
-      <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
+    <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
     <Tally ParameterType="System.Int32" Output="true" />  
 </ParameterGroup>  
 ```  
@@ -165,30 +163,94 @@ definuje tyto tři parametry:
  Pokud `Code` má element `Type` atribut `Fragment` nebo `Method`, pak vlastnosti se vytvářejí automaticky pro všechny parametry. Vlastnosti, jinak hodnota musí být explicitně deklarován ve zdrojovém kódu úloh a musí přesně shodovat jejich definicemi parametrů.  
   
 ## <a name="example"></a>Příklad  
- Následující vložené úlohy nahradí všechny výskyty řetězce token v daný soubor s danou hodnotou.  
+ Následující vložené úlohy protokolů některé zprávy a vrátí řetězec.  
   
 ```xml  
 <Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
   
-  <UsingTask TaskName="TokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">  
-    <ParameterGroup>  
-      <Path ParameterType="System.String" Required="true" />  
-      <Token ParameterType="System.String" Required="true" />  
-      <Replacement ParameterType="System.String" Required="true" />  
-    </ParameterGroup>  
-    <Task>  
-      <Code Type="Fragment" Language="cs"><![CDATA[  
-string content = File.ReadAllText(Path);  
-content = content.Replace(Token, Replacement);  
-File.WriteAllText(Path, content);  
+    <UsingTask TaskName="MySample"
+               TaskFactory="RoslynCodeTaskFactory"
+               AssemblyFile="$(MSBuildBinPath)\Microsoft.Build.Tasks.Core.dll">
+        <ParameterGroup>
+            <Parameter1 ParameterType="System.String" Required="true" />
+            <Parameter2 ParameterType="System.String" />
+            <Parameter3 ParameterType="System.String" Output="true" />
+        </ParameterGroup>
+        <Task>
+            <Using Namespace="System" />
+            <Code Type="Fragment" Language="C#">
+              <![CDATA[
+              Log.LogMessage(MessageImportance.High, "Hello from an inline task created by Roslyn!");
+              Log.LogMessageFromText($"Parameter1: '{Parameter1}'", MessageImportance.High);
+              Log.LogMessageFromText($"Parameter2: '{Parameter2}'", MessageImportance.High);
+              Parameter3 = "A value from the Roslyn CodeTaskFactory";
+            ]]>
+            </Code>
+        </Task>
+    </UsingTask>
   
-]]></Code>  
-    </Task>  
-  </UsingTask>  
+    <Target Name="Demo">  
+      <MySample Parameter1="A value for parameter 1" Parameter2="A value for parameter 2">
+          <Output TaskParameter="Parameter3" PropertyName="NewProperty" />
+      </MySample>
+
+      <Message Text="NewProperty: '$(NewProperty)'" />
+    </Target>  
+</Project>  
+```  
+
+ Tyto vložené úlohy můžete kombinovat cesty a získat název souboru.  
   
-  <Target Name='Demo' >  
-    <TokenReplace Path="C:\Project\Target.config" Token="$MyToken$" Replacement="MyValue"/>  
-  </Target>  
+```xml  
+<Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
+  
+    <UsingTask TaskName="PathCombine"
+               TaskFactory="RoslynCodeTaskFactory"
+               AssemblyFile="$(MSBuildBinPath)\Microsoft.Build.Tasks.Core.dll">
+        <ParameterGroup>
+            <Paths ParameterType="System.String[]" Required="true" />
+            <Combined ParameterType="System.String" Output="true" />
+        </ParameterGroup>
+        <Task>
+            <Using Namespace="System" />
+            <Code Type="Fragment" Language="C#">
+            <![CDATA[
+            Combined = Path.Combine(Paths);
+            ]]>
+            </Code>
+        </Task>
+    </UsingTask>
+
+    <UsingTask TaskName="PathGetFileName"
+             TaskFactory="RoslynCodeTaskFactory"
+             AssemblyFile="$(MSBuildBinPath)\Microsoft.Build.Tasks.Core.dll">
+        <ParameterGroup>
+            <Path ParameterType="System.String" Required="true" />
+            <FileName ParameterType="System.String" Output="true" />
+        </ParameterGroup>
+        <Task>
+            <Using Namespace="System" />
+            <Code Type="Fragment" Language="C#">
+            <![CDATA[
+            FileName = System.IO.Path.GetFileName(Path);
+            ]]>
+            </Code>
+        </Task>
+    </UsingTask>
+  
+    <Target Name="Demo">  
+        <PathCombine Paths="$(Temp);MyFolder;$([System.Guid]::NewGuid()).txt">
+            <Output TaskParameter="Combined" PropertyName="MyCombinedPaths" />
+        </PathCombine>
+
+        <Message Text="Combined Paths: '$(MyCombinedPaths)'" />
+
+        <PathGetFileName Path="$(MyCombinedPaths)">
+            <Output TaskParameter="FileName" PropertyName="MyFileName" />
+        </PathGetFileName>
+
+        <Message Text="File name: '$(MyFileName)'" />
+    </Target>  
 </Project>  
 ```  
   

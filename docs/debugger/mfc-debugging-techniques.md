@@ -27,11 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2ae47be54f175f798e321da7644540f8ea5049
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ccaafc15d2aff7e9ecfd32dbdb225d450198780c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37059354"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniky ladění MFC
 Pokud ladíte aplikaci MFC, může být užitečné tyto techniky ladění.  
@@ -64,14 +65,14 @@ Pokud ladíte aplikaci MFC, může být užitečné tyto techniky ladění.
 ##  <a name="BKMK_AfxDebugBreak"></a> Afxdebugbreak –  
  Knihovna MFC poskytuje speciální [afxdebugbreak –](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) funkce pro pevně kódováno zarážky ve zdrojovém kódu:  
   
-```  
+```cpp
 AfxDebugBreak( );  
   
 ```  
   
  Na platformách Intel `AfxDebugBreak` vytváří následující kód, který zalomení ve zdroji code místo jádra kódu:  
   
-```  
+```cpp
 _asm int 3  
 ```  
   
@@ -86,7 +87,7 @@ _asm int 3
   
  Následující příklady ukazují způsoby, kterými můžete **trasování** makro. Jako `printf`, **trasování** makro dokáže zpracovat počet argumentů.  
   
-```  
+```cpp
 int x = 1;  
 int y = 16;  
 float z = 32.0;  
@@ -101,7 +102,7 @@ TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
   
  Makro trasování správně zpracovává char * i wchar_t\* parametry. Následující příklady ukazují použití trasování makro společně s různé typy parametrů řetězce.  
   
-```  
+```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
   
 TRACE( L"This is a test of the TRACE macro that uses a UNICODE string: %s %d\n", L"The number is:", 2);  
@@ -122,7 +123,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  Pokud nechcete přepsání celý váš program používat `DEBUG_NEW` místě **nové**, toto makro můžete definovat ve zdrojových souborech:  
   
-```  
+```cpp
 #define new DEBUG_NEW  
 ```  
   
@@ -159,15 +160,15 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Pořizování snímků paměti  
   
-1.  Vytvoření [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) objekt a volání [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint) – členská funkce. Tím se vytvoří první snímku paměti.  
+1.  Vytvoření [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) objekt a volání [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) – členská funkce. Tím se vytvoří první snímku paměti.  
   
 2.  Poté, co váš program provede jeho operací přidělení a zrušení přidělení paměti, vytvořte další `CMemoryState` objekt a volání `Checkpoint` pro tento objekt. To získá druhý snímku využití paměti.  
   
-3.  Vytvoření třetí `CMemoryState` objekt a volání jeho [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) – členská funkce, jako argumenty zadávání předchozí dva `CMemoryState` objekty. Pokud je rozdíl mezi stavy dvě paměti `Difference` funkce vrátí nenulovou hodnotu. To znamená, že, nebyly bylo zrušeno některé bloky paměti.  
+3.  Vytvoření třetí `CMemoryState` objekt a volání jeho [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure#difference) – členská funkce, jako argumenty zadávání předchozí dva `CMemoryState` objekty. Pokud je rozdíl mezi stavy dvě paměti `Difference` funkce vrátí nenulovou hodnotu. To znamená, že, nebyly bylo zrušeno některé bloky paměti.  
   
      Tento příklad ukazuje, jak vypadá kód:  
   
-    ```  
+    ```cpp
     // Declare the variables needed  
     #ifdef _DEBUG  
         CMemoryState oldMemState, newMemState, diffMemState;  
@@ -190,16 +191,16 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
      Všimněte si, že příkazy Kontrola paměti jsou v závorkách podle **_DEBUG #ifdef – / #endif** blokuje tak, že se kompilují pouze v ladicí verze vašeho programu.  
   
-     Nyní když znáte nevrácená paměť systému existuje, můžete použít jiné členské funkce [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) který vám pomůže ho najít.  
+     Nyní když znáte nevrácená paměť systému existuje, můžete použít jiné členské funkce [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) který vám pomůže ho najít.  
   
  [V tomto tématu](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> Zobrazení statistiky paměti  
- [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) funkce porovná dva objekty stav paměti a zjišťuje všechny objekty, které není zrušeno přidělení haldy mezi stavy začátek a konec. Poté, co jste pořídili snímky paměti a porovná je s pomocí `CMemoryState::Difference`, můžete volat [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) získat informace o objektech, které nebyly bylo zrušeno.  
+ [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure#difference) funkce porovná dva objekty stav paměti a zjišťuje všechny objekty, které není zrušeno přidělení haldy mezi stavy začátek a konec. Poté, co jste pořídili snímky paměti a porovná je s pomocí `CMemoryState::Difference`, můžete volat [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) získat informace o objektech, které nebyly bylo zrušeno.  
   
  Podívejte se na následující příklad:  
   
-```  
+```cpp  
 if( diffMemState.Difference( oldMemState, newMemState ) )  
 {  
    TRACE( "Memory leaked!\n" );  
@@ -209,7 +210,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
   
  Ukázka výpis z příkladu vypadá takto:  
   
-```  
+```cpp
 0 bytes in 0 Free Blocks  
 22 bytes in 1 Object Blocks  
 45 bytes in 4 Non-Object Blocks  
@@ -230,7 +231,7 @@ Total allocations: 67 bytes
  [V tomto tématu](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_object_dumps"></a> Vezme objekt výpisy paměti  
- V aplikaci MFC můžete použít [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) vypsat popis všech objektů v haldě, které nebyly bylo zrušeno. `DumpAllObjectsSince` Vypíše všechny objekty přidělené od minulého [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint). Pokud žádné `Checkpoint` volání neproběhla, `DumpAllObjectsSince` vypíše všechny objekty a nonobjects aktuálně v paměti.  
+ V aplikaci MFC můžete použít [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) vypsat popis všech objektů v haldě, které nebyly bylo zrušeno. `DumpAllObjectsSince` Vypíše všechny objekty přidělené od minulého [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Pokud žádné `Checkpoint` volání neproběhla, `DumpAllObjectsSince` vypíše všechny objekty a nonobjects aktuálně v paměti.  
   
 > [!NOTE]
 >  Než budete moct použít MFC vypsání objektu, musíte [zapnout diagnostické trasování](#BKMK_Enabling_Memory_Diagnostics).  
@@ -240,7 +241,7 @@ Total allocations: 67 bytes
   
  Následující kód testů pro nevrácená paměť systému srovnáním dvou stavů – stav paměti a vypíše všechny objekty, pokud je zjištěn nevrácenou.  
   
-```  
+```cpp
 if( diffMemState.Difference( oldMemState, newMemState ) )  
 {  
    TRACE( "Memory leaked!\n" );  
@@ -250,7 +251,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
   
  Obsah výpisu vypadat takto:  
   
-```  
+```cmd
 Dumping objects ->  
   
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -278,7 +279,7 @@ Phone #: 581-0215
 ####  <a name="BKMK_Interpreting_memory_dumps"></a> Interpretace paměti výpisy paměti  
  Podívejte se na tento objekt výpisu podrobněji:  
   
-```  
+```cmd
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
 {4} strcore.cpp(80) : non-object block at $00A751F8, 5 bytes long  
 {3} strcore.cpp(80) : non-object block at $00A751D6, 6 bytes long  
@@ -293,7 +294,7 @@ Phone #: 581-0215
   
  Program, který vygeneroval tento výpis měl pouze dva explicitní přidělení – jednu v zásobníku a jeden v haldě:  
   
-```  
+```cpp
 // Do your memory allocations and deallocations.  
 CString s("This is a frame variable");  
 // The next object is a heap object.  
@@ -302,7 +303,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  `CPerson` Konstruktor přijímá tři argumenty, které jsou ukazatele na `char`, které se používají k inicializaci `CString` proměnné členů. V výpis stavu paměti, se zobrazí `CPerson` objekt spolu s tři nonobject bloky (3, 4 a 5). Tyto znaky pro uložení `CString` členské proměnné a nebude možné odstranit, když `CPerson` destruktoru objektu je volána.  
   
- Blok číslo 2 je `CPerson` samotného objektu. `$51A4` představuje adresu bloku a následuje obsah objektu, které byly výstupem `CPerson`::`Dump` při volání [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince).  
+ Blok číslo 2 je `CPerson` samotného objektu. `$51A4` představuje adresu bloku a následuje obsah objektu, které byly výstupem `CPerson`::`Dump` při volání [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince).  
   
  Snadno uhodnout je přidružen blok číslo 1 `CString` proměnné rámce z důvodu jeho pořadové číslo a velikost, která odpovídá počet znaků v rámečku `CString` proměnné. Proměnné přidělené rámec jsou automaticky zrušeno při rámečku ocitne mimo rozsah.  
   
@@ -310,7 +311,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  Obecně platí by neměl starat o haldy objekty přidružené proměnné rámce, protože jsou automaticky navrácena při proměnné rámce se dostala mimo rozsah. Abyste se vyhnuli zbytečné soubory ve vašem diagnostiky výpisy paměti, měli umístit vaše volání `Checkpoint` , aby byly mimo rozsah proměnné rámce. Například do hranatých závorek oboru v předchozí kód přidělení, jak je vidět tady:  
   
-```  
+```cpp
 oldMemState.Checkpoint();  
 {  
     // Do your memory allocations and deallocations ...  
@@ -323,7 +324,7 @@ newMemState.Checkpoint();
   
  Do závorek oboru na místě výpis stavu paměti v tomto příkladu je následující:  
   
-```  
+```cmd 
 Dumping objects ->  
   
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -338,7 +339,7 @@ Phone #: 581-0215
   
  **Nonobject přidělení**  
   
- Všimněte si, že některé přidělení jsou objekty (například `CPerson`) a některé jsou nonobject přidělení. "Nonobject přidělení" jsou přidělení pro objekty, které není odvozen od `CObject` nebo přidělení primitivní typy C jako `char`, `int`, nebo `long`. Pokud **CObject -**odvozené třídy přiděluje další prostor, například pro vnitřní vyrovnávací paměti, zobrazí ty objekty, objekt a nonobject přidělení.  
+ Všimněte si, že některé přidělení jsou objekty (například `CPerson`) a některé jsou nonobject přidělení. "Nonobject přidělení" jsou přidělení pro objekty, které není odvozen od `CObject` nebo přidělení primitivní typy C jako `char`, `int`, nebo `long`. Pokud **CObject -** odvozené třídy přiděluje další prostor, například pro vnitřní vyrovnávací paměti, zobrazí ty objekty, objekt a nonobject přidělení.  
   
  **Brání nevracení paměti**  
   
@@ -346,7 +347,7 @@ Phone #: 581-0215
   
  Pro objekty přidělené v haldě ale musíte explicitně odstranit objekt, aby se zabránilo nevrácenou pamětí. Chcete-li vyčistit poslední nevrácená paměť systému v předchozím příkladu, odstraňte `CPerson` objekt přidělené v haldě, následujícím způsobem:  
   
-```  
+```cpp  
 {  
     // Do your memory allocations and deallocations.  
     CString s("This is a frame variable");  
@@ -359,7 +360,7 @@ Phone #: 581-0215
  [V tomto tématu](#BKMK_In_this_topic)  
   
 ####  <a name="BKMK_Customizing_object_dumps"></a> Přizpůsobení objektu výpisy paměti  
- Pokud odvodíte třídu od [CObject](/cpp/mfc/reference/cobject-class), můžete přepsat `Dump` – členská funkce můžete poskytnout dodatečné informace, pokud používáte [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) k výpisu objekty, které se [Výstup – okno](../ide/reference/output-window.md).  
+ Pokud odvodíte třídu od [CObject](/cpp/mfc/reference/cobject-class), můžete přepsat `Dump` – členská funkce můžete poskytnout dodatečné informace, pokud používáte [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) k výpisu objekty, které se [Výstup – okno](../ide/reference/output-window.md).  
   
  `Dump` Funkce zapíše textovou reprezentaci objektu členské proměnné na kontext výpisu ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Kontext výpisu je podobný datovému proudu vstupně-výstupních operací. Můžete použít operátor připojení (**<<**) pro odesílání dat na `CDumpContext`.  
   
@@ -367,7 +368,7 @@ Phone #: 581-0215
   
  Prohlášení o `Dump` funkce vypadá takto:  
   
-```  
+```cpp  
 class CPerson : public CObject  
 {  
 public:  
@@ -385,7 +386,7 @@ public:
   
  V následujícím příkladu `Dump` první volání funkce `Dump` funkce pro základní třídu. Pak zapíše krátký popis jednotlivých členské proměnné společně s hodnotu člena s hodnotou diagnostiky datového proudu.  
   
-```  
+```cpp  
 #ifdef _DEBUG  
 void CPerson::Dump( CDumpContext& dc ) const  
 {  
@@ -401,7 +402,7 @@ void CPerson::Dump( CDumpContext& dc ) const
   
  Je nutné zadat `CDumpContext` argument k určení, kde bude výstup dump přejděte. Ladicí verze knihovny MFC poskytuje i předdefinovanou `CDumpContext` objekt s názvem `afxDump` který odesílá výstup na ladicího programu.  
   
-```  
+```cpp 
 CPerson* pMyPerson = new CPerson;  
 // Set some fields of the CPerson object.  
 //...  

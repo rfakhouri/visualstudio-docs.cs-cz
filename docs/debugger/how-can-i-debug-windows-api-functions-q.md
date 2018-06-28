@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d9aa387861de41b7d3f782fec85d8d26c7d3ae
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 042f243c0469b8b37e301cf5c9f2410cf201f7be
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480873"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058603"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Jak mohu ladit funkce rozhraní API systému Windows?
 Pokud chcete ladit funkce rozhraní API systému Windows, která má symboly NT načíst, postupujte takto.  
@@ -37,7 +37,7 @@ Pokud chcete ladit funkce rozhraní API systému Windows, která má symboly NT 
   
 -   Zadejte název funkce společně s názvem knihovny DLL, kde se funkce nachází. V kódu 32-bit formulář dekorovaný název funkce. Chcete-li nastavit zarážky **MessageBeep**, například musíte zadat následující.  
   
-    ```  
+    ```cpp
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
