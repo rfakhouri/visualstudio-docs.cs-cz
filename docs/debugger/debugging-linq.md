@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52b4c9eb74207e966c17a212b9a9181293581297
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ca92fe5142957faf85ead5f9c9068b062d25a8d
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474931"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056692"
 ---
 # <a name="debugging-linq"></a>Ladění LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podporuje ladění jazyka integrované dotazu (LINQ) kód, s omezeními. Funkce nejvíce ladění pracovat s příkazy LINQ, včetně krokování, nastavení zarážek a zobrazení výsledků v ladicím programu windows. Toto téma popisuje hlavní omezení ladění LINQ.  
@@ -45,7 +45,7 @@ ms.locfileid: "31474931"
 ##  <a name="BKMK_SteppingAndLinq"></a> Krokování a LINQ  
  Při ladění kódu LINQ krokování má několik rozdílů chování, které byste měli vědět o.  
   
-### <a name="linq-to-sql"></a>Technologie LINQ to SQL  
+### <a name="linq-to-sql"></a>LINQ to SQL  
  V technologii LINQ to SQL dotazy kód predikátem je nad rámec řízení ladicího programu. Proto nelze krok do predikátu kódu. Jakýkoli dotaz kompilovaný na strom výrazu vytvoří kód, který je mimo kontrolu ladicího programu.  
   
 ### <a name="stepping-in-visual-basic"></a>Krokování s v jazyce Visual Basic  
@@ -53,7 +53,7 @@ ms.locfileid: "31474931"
   
  Pokud projděte následující příklad kódu, jsou vysvětlené deklarace dotazu nebo vytvoření dotazu jako jediný příkaz ladicího programu.  
   
-```  
+```vb
 Function MyFunction(ByVal x As Char)  
     Return True  
 End Function  
@@ -76,7 +76,7 @@ End Sub
 ### <a name="replacing-a-predicate-with-a-function-to-enable-stepping-visual-basic"></a>Nahraďte predikát funkce umožňující taktování (Visual Basic)  
  Pokud máte na krok prostřednictvím predikátem kódu pro účely ladění, můžete nahradit predikát volání funkce, která obsahuje původní kód predikátem. Předpokládejme například, že máte tento kód:  
   
-```  
+```vb
 Dim items() as integer ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10}  
   
 ' Get the even numbers  
@@ -89,7 +89,7 @@ Next
   
  Nové funkce, volá se můžete přesunout kód predikátem `IsEven`:  
   
-```  
+```vb
 Dim items () as integer ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10}  
   
 ' Get the even numbers  

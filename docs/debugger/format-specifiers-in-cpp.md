@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d9d2ecc00e0d29f39cb82dab997fb28704f518
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3bd99ed0a4350dbaf8c2e158f8b86464f50393c4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478119"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057753"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specifikátory formátu v jazyce C++ v ladicím programu sady Visual Studio
 Formát, ve kterém je zobrazená hodnota v lze změnit **sledovat** okno použití specifikátorů formátu.  
@@ -76,7 +76,7 @@ int main() {
 |**sb**|const char * řetězec (bez uvozovek)|\<umístění > "hello, world"|Ahoj světe|  
 |s8|Řetězec ve formátu UTF-8|\<umístění > "Toto je â˜• Šálek kávy UTF-8"|"Toto je ☕ Šálek kávy UTF-8"|
 |**s8b**|Řetězec ve formátu UTF-8 (bez uvozovek)|\<umístění > "hello, world"|Ahoj světe|  
-|su|Řetězec znaků Unicode (kódování UTF-16)|\<umístění > L "hello, world"|L "hello, world"<br /><br /> U "hello world"|  
+|su|Řetězec znaků Unicode (kódování UTF-16)|\<umístění > L "hello, world"|L "hello, world"<br /><br /> u "hello, world"|  
 |Sub –|Řetězec znaků Unicode (kódování UTF-16) (bez uvozovek)|\<umístění > L "hello, world"|Ahoj světe|  
 |bstr|Řetězce BSTR|\<umístění > L "hello, world"|L "hello, world"|  
 |env|Blok prostředí (ukončenou řetězec dvojitou hodnotu null)|\<umístění > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
@@ -115,13 +115,13 @@ int main() {
 |**l,h**|dlouhé nebo krátké předponu pro: d, i u, o x X|00406042|0x0c22|  
 |**f**|podepsané plovoucí desetinné čárky|(3. / 2.), f|1.500000|  
 |**e**|podepsaného vědecká notace|(3.0/2.0)|1.500000e + 000|  
-|**g**|podepsané plovoucí desetinnou čárkou nebo podepsané exponenciální notace, podle toho, co je kratší|(3.0/2.0)|1.5|  
+|**g**|plovoucí desetinná čárka podepsaný nebo podepsaného vědecká notace<br/> podle toho, co je kratší|(3.0/2.0)|1.5|  
 |c|jeden znak|\<umístění >|101 "e"|  
 |s|const char *|\<umístění >|"hello, world"|  
 |su|Const wchar_t *<br /><br /> Const char16_t\*|\<umístění >|L "hello, world"|  
 |Sub –|Const wchar_t *<br /><br /> Const char16_t\*|\<umístění >|Ahoj světe|  
 |s8|const char *|\<umístění >|"hello, world"|  
-|personální oddělení|Kód chyby HRESULT nebo Win32. (Ladicí program nyní dekóduje hodnoty HRESULT automaticky, takže tento specifikátor nevyžaduje v těchto případech.|S_OK|S_OK|  
+|personální oddělení|Kód chyby HRESULT nebo Win32.<br/>(Ladicí program dekóduje hodnoty HRESULT automaticky<br/> Ano specifikátor v těchto případech není požadováno.|S_OK|S_OK|  
 |RC|Okno třída příznak.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Čísla zpráv Windows|0x0010|FUNKCE WM_CLOSE BUDE|  
 |!|formátu RAW, ignoruje veškerá přizpůsobení zobrazení typu dat|\<přizpůsobit reprezentace >|4|  

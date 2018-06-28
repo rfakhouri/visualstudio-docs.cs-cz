@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18cd64e24481111e22b3b9b842433bb1b1c19e0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0f530dc6f1223bebeaada4f1225dd025474ceb1c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477703"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058607"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Vzdálené ladění projektu C# nebo Visual Basic v sadě Visual Studio
 K ladění aplikace z Visual Studia, která byla nasazena do jiného počítače, instalaci a spuštění nástrojů pro vzdálenou na počítači, kde jste nasadili aplikace, nakonfigurujete svůj projekt pro připojení ke vzdálenému počítači ze sady Visual Studio a pak spusťte aplikaci.
@@ -101,7 +101,7 @@ Ladicí program nemůže nasadit Visual C# nebo Visual Basic aplikací klasické
   
 15. Na počítači Visual Studio byste měli vidět, že provádění zastavil u zarážky.
   
- Pokud máte jiný kód soubory, které je potřeba použít v aplikaci, musíte zahrnout je do projektu Visual Studia. Vytvořte složku projekt pro další soubory (v **Průzkumníku řešení**, klikněte na tlačítko **Přidat > novou složku**). Pak přidat soubory do složky (v **Průzkumníku řešení**, klikněte na tlačítko **Přidat > existující položka**, vyberte soubory). Na **vlastnosti** stránky pro každý soubor, nastavte **kopírovat do výstupního adresáře** k **vždy Kopírovat**.
+ Pokud máte všechny soubory jiný kód, které je potřeba použít v aplikaci, musíte zahrnout je do projektu Visual Studia. Vytvořte složku projekt pro další soubory (v **Průzkumníku řešení**, klikněte na tlačítko **Přidat > novou složku**). Pak přidat soubory do složky (v **Průzkumníku řešení**, klikněte na tlačítko **Přidat > existující položka**, vyberte soubory). Na **vlastnosti** stránky pro každý soubor, nastavte **kopírovat do výstupního adresáře** k **vždy Kopírovat**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Nastavení ladění se vzdálené symboly 
 

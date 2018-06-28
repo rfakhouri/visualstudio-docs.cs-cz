@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37b2c34971750d8e6db0173f6034342b9efbfd97
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474411"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056294"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>O okně registr v sadě Visual Studio
 **Zaregistruje** okno je k dispozici pouze v případě, že je povoleno ladění úrovni adresu v **možnosti** dialogové okno, **ladění** uzlu.  
@@ -41,13 +41,9 @@ ms.locfileid: "31474411"
   
  Další informace o zobrazení **zaregistruje** okně najdete v části [pomocí okna zaregistruje](../debugger/how-to-use-the-registers-window.md).  
   
- Když se podíváte na **zaregistruje** okno, zobrazí se položky, jako je například v tomto příkladu:  
+ Když se podíváte **zaregistruje** okně se zobrazí položky jako `EAX = 003110D8`.  
   
-```  
-EAX = 003110D8  
-```  
-  
- Symbol nalevo od přihlašovací = je název registrace, EAX, v tomto případě. Toto číslo napravo od přihlašovací = představuje obsah registrace.  
+ Symbol nalevo od `=` přihlášení je název registrace `EAX`, v tomto případě. Číslo napravo `=` přihlašovací reprezentuje obsah registrace.  
   
  **Zaregistruje** okno umožňuje provést více než jen zobrazení obsah registru. Pokud jste v režimu pozastavení v nativním kódu, můžete kliknutím na obsah registru a upravit hodnotu. To však není něco, které byste měli udělat náhodně. Pokud budete rozumět tomu, registrace, který upravujete a k datům, které obsahuje, je pravděpodobně selhání programu nebo jiné nežádoucí důsledkem výsledek careless úpravy. Bohužel podrobné vysvětlení registrace sady různé procesory Intel a kompatibilní s Intel přejde daleko nad rámec Tento stručný úvod.  
   

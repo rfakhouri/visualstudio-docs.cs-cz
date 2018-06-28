@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1a674e854aaf587aca28f096883839ebd82e1e8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: af106709ca578abeab19c4f474548476efbeea57
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926833"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057682"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariables v ladicím programu sady Visual Studio
 Pseudovariables jsou podmínky, které slouží k zobrazení určité informace v okně proměnná nebo **QuickWatch** dialogové okno. Můžete zadat pseudovariable stejným způsobem, zadali byste normální proměnné. Pseudovariables není proměnné, ale a nemusí odpovídat názvy proměnných v programu.  
@@ -32,9 +32,7 @@ Pseudovariables jsou podmínky, které slouží k zobrazení určité informace 
 ## <a name="example"></a>Příklad  
  Předpokládejme, že jsou psaní nativního kódu aplikace a chcete si prohlédnout počet popisovačů přidělené ve vaší aplikaci. V **sledovat** okně můžete zadat následující pseudovariable v **název** sloupec a poté stiskněte klávesu vrátit se k vyhodnocení:  
   
-```  
-$handles  
-```  
+`$handles`
   
  V nativním kódu můžete použít pseudovariables uvedené v této tabulce:  
   
@@ -64,10 +62,10 @@ $handles
   
 |Pseudovariable|Funkce|  
 |--------------------|--------------|  
-|`$delete` Nebo `$$delete`|Odstraní implicitní proměnné, který byl vytvořen v **Immediate** okno. Syntaxe je `$delete,` *proměnná* nebo`$delete,` *proměnné*`.`|  
-|`$objectids` Nebo `$listobjectids`|Zobrazí všechny aktivní ID objektů jako podřízené objekty, z určeného výrazu. Syntaxe je `$objectid,` *výraz* nebo`$listobjectids,` *výraz*`.`|  
+|`$delete` nebo `$$delete`|Odstraní implicitní proměnné, který byl vytvořen v **Immediate** okno. Syntaxe je `$delete,` *proměnná* nebo`$delete,` *proměnné*`.`|  
+|`$objectids` nebo `$listobjectids`|Zobrazí všechny aktivní ID objektů jako podřízené objekty, z určeného výrazu. Syntaxe je `$objectid,` *výraz* nebo`$listobjectids,` *výraz*`.`|  
 |`$` *N* `#`|Zobrazí objekt s ID objektu rovna *N*.|  
-|`$dynamic`|Zobrazí speciální **dynamického zobrazení** uzel pro objekt, který implementuje `IDynamicMetaObjectProvider`. Rozhraní. Syntaxe je `$dynamic,` *objekt*. Tato funkce se vztahuje pouze na kód, který používá rozhraní .NET Framework verze 4.|  
+|`$dynamic`|Zobrazí speciální **dynamického zobrazení** uzel pro objekt, který implementuje `IDynamicMetaObjectProvider`. rozhraní. Syntaxe je `$dynamic,` *objekt*. Tato funkce se vztahuje pouze na kód, který používá rozhraní .NET Framework verze 4.|  
   
 ## <a name="see-also"></a>Viz také  
  [Sledování a QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   

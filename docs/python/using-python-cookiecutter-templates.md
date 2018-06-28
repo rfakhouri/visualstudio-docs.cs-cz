@@ -1,7 +1,7 @@
 ---
 title: CookieCutter rozšíření pro jazyk Python
 description: Visual Studio podporuje grafické rozšíření Cookiecutter ke zjištění šablony pro kód Python a vytváření projektů z těchto šablon.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b2f3851d479a976d4e43317f94aa7a5328deb4fb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a4cee1acbeeafb1360912f1f7342310a51ad54ff
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584656"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058461"
 ---
 # <a name="using-the-cookiecutter-extension"></a>Použití rozšíření Cookiecutter
 
@@ -38,7 +38,7 @@ Domovská stránka Cookiecutter zobrazí seznam šablon můžete vybírat, uspo�
 
 | Skupina | Popis |
 | --- | --- |
-| nainstalovaná | Šablony, které byly nainstalovány do místního počítače. Pokud je online šablony, je jeho úložiště automaticky klonovat do podsložky `~/.cookiecutters`. Stisknutím kombinace kláves můžete odstranit vybrané nainstalované šablony **Del**. |
+| Nainstalovaná | Šablony, které byly nainstalovány do místního počítače. Pokud je online šablony, je jeho úložiště automaticky klonovat do podsložky `~/.cookiecutters`. Stisknutím kombinace kláves můžete odstranit vybrané nainstalované šablony **Del**. |
 | Doporučeno | Šablony načíst z doporučené informačního kanálu. Výchozí informačního kanálu je spravovaných společností Microsoft. V tématu [Cookiecutter možnosti](#cookiecutter-options) níže podrobnosti o přizpůsobení informačního kanálu. |
 | GitHub | Výsledky hledání Githubu – klíčové slovo cookiecutter. Výsledky z Githubu se vraťte čísla stránek vložena, pokud jsou k dispozici, další výsledky **zatížení Další** se zobrazí na konci tohoto seznamu. |
 | Vlastní | Do pole hledání zadáte do vlastního umístění, zobrazí se v této skupině. Můžete buď zadejte úplnou cestu k úložišti GitHub, nebo úplnou cestu ke složce na místním pevném disku. |
@@ -100,7 +100,7 @@ Je možné zvýšit na tento vykreslování zadáním dalších metadat v vaší
 | --- | --- |
 | Popisek | Určuje, co se zobrazí nad editor pro proměnnou, ne v názvu proměnné. |
 | Popis | Určuje popisek, který se zobrazí na textové pole, namísto výchozí hodnoty pro tuto proměnnou. |
-| Adresa URL | Změní štítek na hypertextový odkaz popisku, který zobrazuje adresu URL. Kliknutím na hypertextový odkaz otevře výchozí prohlížeč uživatele pro tuto adresu URL. |
+| URL | Změní štítek na hypertextový odkaz popisku, který zobrazuje adresu URL. Kliknutím na hypertextový odkaz otevře výchozí prohlížeč uživatele pro tuto adresu URL. |
 | Selektor | Umožňuje přizpůsobení editoru proměnné. Aktuálně jsou podporovány následující selektory:<ul><li>`string`: Standardního textového pole, výchozí hodnoty pro řetězce.</li><li>`list`: Pole se seznamem standard, výchozí hodnoty pro seznamy.</li><li>`yesno`: Pole se seznamem si vybrat mezi `y` a `n`, pro řetězce.</li><li>`odbcConnection`: Textové pole s tlačítko "...", které se zobrazí dialogové okno připojení databáze.</li></ul> |
 
 Příklad:

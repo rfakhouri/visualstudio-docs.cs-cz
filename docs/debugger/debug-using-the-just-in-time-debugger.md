@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39721b55d134335e3b618821e50ed3678895a861
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 99a57f217cc92051f2b85b1b210ce3adf5a189be
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757276"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058760"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Ladění pomocí ladicího programu JIT v sadě Visual Studio
 Ladění za běhu spustí Visual Studio automaticky při výjimku nebo havárie v aplikaci, která běží mimo aplikaci Visual Studio. To umožňuje aplikaci otestovat, pokud neběží v sadě Visual Studio a zahájit ladění pomocí sady Visual Studio, když dojde k potížím.
@@ -83,7 +83,7 @@ Ladění za běhu může nadále povolené i v případě, že v počítači je 
 
 2.  Nastavte `jitDebugging` hodnotu `true` v `system.windows.form` části souboru machine.config nebo  *\<název aplikace >*. exe.config souboru:
 
-    ```
+    ```xml
     <configuration>
         <system.windows.forms jitDebugging="true" />
     </configuration>
@@ -91,7 +91,7 @@ Ladění za běhu může nadále povolené i v případě, že v počítači je 
 
 3.  V aplikaci C++ Windows Form, je nutné také nastavit `DebuggableAttribute` do souboru .config nebo v kódu. Pokud je kompilovat s [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) a bez [/Og](/cpp/build/reference/og-global-optimizations), kompilátor tento atribut nastaví za vás. Pokud chcete k ladění sestavení pro vydání není optimalizovaná, ale musíte nastavit sobě. Můžete provést přidáním následujícího řádku vám jste soubor AssemblyInfo.cpp vaší aplikace:
 
-    ```
+    ```cpp
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
     ```
 

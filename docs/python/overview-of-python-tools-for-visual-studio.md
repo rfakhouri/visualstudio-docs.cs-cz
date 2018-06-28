@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 542aedca4aa1cfb472a6cbf1c96c8f46cc8983ec
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: e2e240438161d8058753b72f8711362a47926790
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947164"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058045"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Práce s Python v sadě Visual Studio v systému Windows
 
@@ -178,7 +178,7 @@ Funkce jazyka Python lze nainstalovat v následujících edicích sady Visual St
 - Visual Studio 2012 (Pro edice nebo vyšší)
 - Visual Studio 2010 SP1 (Pro edice nebo vyšší; vyžaduje .NET 4.5)
 
-Jsou k dispozici v sadě Visual Studio 2015 a starší [visualstudio.com/vs/older-downloads/](https://visualstudio.microsoft.com/vs/older-downloads/).
+Jsou k dispozici v sadě Visual Studio 2015 a starší [visualstudio.microsoft.com/vs/older-downloads/](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 > [!Important]
 > Funkce jsou plně podporované a udržovat jenom nejnovější verzi sady Visual Studio. Funkce jsou dostupné v starší verze, ale nejsou aktivně spravovány.

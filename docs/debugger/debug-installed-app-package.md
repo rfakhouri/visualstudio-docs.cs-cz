@@ -21,11 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ffddb3f49f4603c6f09bb12ef81d4c45bf0210c7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6bb43288b7e5a4dd9241a7492baeed9de1c49890
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37059329"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Ladění balíček nainstalovanou aplikaci v aplikaci Visual Studio (UWP)
 
@@ -90,7 +91,7 @@ Když ladíte balíčku aplikace nainstalované ve vzdáleném počítači poprv
      > [!NOTE]
 > Na k dispozici, XBox nebo HoloLens zařízení bude restartováno aplikace s ladicím programem připojen, pokud je již spuštěna.
 
-Informace o rozšířené možnosti pro vzdálené nasazení aplikace UWP v tématu [nasazení a ladění aplikace UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options). 
+Informace o rozšířené možnosti pro nasazení vzdálené aplikace UPW najdete v tématu [UWP apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) pro nasazení a ladění. 
   
 ## <a name="see-also"></a>Viz také  
  [Ladění v sadě Visual Studio](../debugger/index.md)  
