@@ -1,6 +1,6 @@
 ---
-title: Další prostředky pro odstraňování chyb přístupu k datům
-ms.date: 11/04/2016
+title: Přejít na fóra dat
+ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
@@ -222,37 +222,36 @@ ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 author: gewarren
 ms.author: gewarren
 manager: douge
-robots: noindex,nofollow
 ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 811e044b4a7c629b27ae878fe93eec2ebc9e6236
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845792"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089073"
 ---
-# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Další prostředky pro odstraňování chyb přístupu k datům
+# <a name="troubleshoot-data-access-errors-on-the-forums"></a>Odstraňování chyb přístupu k datům ve fórech
 
-Pomoc při řešení potíží chyby a upozornění můžete najít ve veřejné fórech Microsoft Developer Network (MSDN). Následující tabulka uvádí data související s fóra k dispozici na webu MSDN.
+Pomoc při řešení potíží chyby a upozornění můžete najít ve veřejné fórech Microsoft Developer Network (MSDN). Tady jsou některé fóra souvisejících s daty k dispozici na webu MSDN:
 
- [Windows forms – ovládací prvky datových a datové vazby](http://go.microsoft.com/fwlink/?LinkId=160179) poskytuje fórum pro dotazy týkající se a obecné diskuse o přístup k datům ve Windows Forms.
+- [Ovládací prvky Windows Forms dat a datové vazby](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
- [Fórum ADO.NET DataSet](http://go.microsoft.com/fwlink/?LinkId=160180) poskytuje fórum pro dotazy týkající se a Obecná diskuse datových sad.
+- [Fórum pro technologii ADO.NET datové sady](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
- [ADO.NET entity framework a technologii LINQ to entities](http://go.microsoft.com/fwlink/?LinkId=191520) poskytuje fórum pro dotazy týkající se a Obecná diskuse aplikací rozhraní Entity Framework a LINQ to Entities jazyk.
+- [ADO.NET Entity Framework a technologii LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
- [Fórum služby WCF data](http://go.microsoft.com/fwlink/?LinkId=160181) poskytuje fórum pro dotazy týkající se a Obecná diskuse datové služby.
+- [Fórum služby WCF data](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
- [Fórum pro přístup k datům systému SQL Server](http://go.microsoft.com/fwlink/?LinkID=160184) poskytuje fórum pro otázky o a obecné diskuse o přístup k datům v systému Microsoft SQL Server.
+- [Fórum přístup dat systému SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
- [Technologie LINQ to SQL fórum](http://go.microsoft.com/fwlink/?LinkId=160183) poskytuje fórum pro dotazy týkající se a Obecná diskuse technologie LINQ to SQL.
+- [Technologie LINQ to SQL fórum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
- [Fórum zprostředkovatele dat ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160182) poskytuje fórum pro dotazy týkající se a obecné diskuse o různých zprostředkovatele dat .NET Framework.
+- [Fórum zprostředkovatele dat ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
- Informace o řešení potíží s připojením k serveru SQL Server najdete v tématu [řešení potíží s připojením k databázovému stroji systému SQL Server](http://go.microsoft.com/fwlink/?LinkID=246151).
+Informace o řešení potíží s připojením k serveru SQL Server najdete v tématu [Poradce při připojování k databázovému stroji systému SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 ## <a name="see-also"></a>Viz také:
 

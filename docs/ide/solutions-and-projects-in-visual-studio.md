@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7db915f2953bf99b9805700e1236d3d79a194a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7368778928384f50e96bfd8c5f3f1e107e6b411d
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747623"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089656"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Řešení a projektů v sadě Visual Studio
 
@@ -53,7 +53,12 @@ V sadě Visual Studio, je používán souboru projektu **Průzkumníku řešení
 
 Je součástí projektu *řešení*. Řešení obsahuje jeden nebo více souvisejících projekty, společně s informacemi o sestavení, Visual Studio okna nastavení a všechny ostatní soubory, které nejsou přidruženy k konkrétní projekt. Řešení je popsán textového souboru (rozšíření *.sln*) s svůj vlastní jedinečný formát; není určen k provádění úprav ručně.
 
-Řešení má přidruženou *.suo* soubor, který ukládá nastavení, předvoleb a informace o konfiguraci pro každý uživatel, který pracoval na projekt.
+Visual Studio používá dva typy souborů (*.sln* a *.suo*) k uložení nastavení pro řešení:
+
+|Rozšíření|Název|Popis|
+|---------------|----------|-----------------|
+|.sln|Řešení sady Visual Studio|Slouží k uspořádání projekty, položky projektu a řešení položky v řešení.|
+|.suo|Možnosti řešení uživatele|Ukládá individuální nastavení a vlastní nastavení, jako je například zarážky.|
 
 ## <a name="create-new-projects"></a>Vytvořit nové projekty
 
@@ -63,7 +68,7 @@ Můžete také vytvořit vlastní šablony projektů a položek. Další informa
 
 ## <a name="manage-projects-in-solution-explorer"></a>Řízení projektů v Průzkumníku řešení
 
-Po vytvoření nového projektu, můžete použít **Průzkumníku řešení** k zobrazení a správě projektu a řešení a jejich přidružené položky. Následující obrázek znázorňuje **Průzkumníku řešení** s řešením C#, který obsahuje dva projekty.
+Po vytvoření nového projektu, můžete použít **Průzkumníku řešení** k zobrazení a správě projektu a řešení a jejich přidružené položky. Následující obrázek znázorňuje **Průzkumníku řešení** s řešením C#, který obsahuje dva projekty:
 
 ![Průzkumník řešení](../ide/media/vs2015_solution_explorer.png)
 

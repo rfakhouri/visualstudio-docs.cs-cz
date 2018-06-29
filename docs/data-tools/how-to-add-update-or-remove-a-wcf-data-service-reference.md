@@ -16,23 +16,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e39b28a3de5aa97ac7c0673cd16b71508ae4276
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b6726b2c859143f5dbc9b264e67bb9bb91757de5
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925973"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089309"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Postupy: Přidání, aktualizace nebo odebrání odkazu na službu WCF Data Service
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Postupy: Přidání, aktualizace nebo odebrání odkazu na službu WCF data
 A *odkaz na službu* umožňuje projektu přístup k jedné nebo více [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Použití **přidat odkaz na službu** dialogové okno pro vyhledávání [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] v aktuálním řešení, místně, v místní síti nebo na Internetu.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="adding-a-service-reference"></a>Přidání odkazu na službu
+## <a name="add-a-service-reference"></a>Přidat odkaz na službu
 
-#### <a name="to-add-a-reference-to-an-external-service"></a>Chcete-li přidat odkaz na externí služby
+### <a name="to-add-a-reference-to-an-external-service"></a>Chcete-li přidat odkaz na externí služby
 
-1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt, který chcete přidat službu a pak klikněte na tlačítko **přidat odkaz na službu**.
+1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na název projektu, do které chcete přidat službu a pak klikněte na **přidat odkaz na službu**.
 
      **Přidat odkaz na službu** zobrazí se dialogové okno.
 
@@ -43,7 +43,7 @@ A *odkaz na službu* umožňuje projektu přístup k jedné nebo více [!INCLUDE
 
      Můžete také vybrat adresu URL z **adresu** seznam, který ukládá předchozí 15 adres URL, na kterých metadata platný služby nebyla nalezena.
 
-     Indikátor průběhu se zobrazí, když se provádí vyhledávání. Hledání kdykoli můžete ukončit kliknutím na **Zastavit**.
+     Indikátor průběhu zobrazí, když se provádí vyhledávání. Hledání kdykoli můžete ukončit kliknutím na **Zastavit**.
 
 3.  V **služby** seznamu, rozbalte uzel pro službu, kterou chcete použít a vyberte sadu entit.
 
@@ -51,11 +51,11 @@ A *odkaz na službu* umožňuje projektu přístup k jedné nebo více [!INCLUDE
 
 5.  Klikněte na tlačítko **OK** se přidat odkaz na projekt.
 
-     Klient služby (proxy) je generován a metadata, která popisuje služby se přidá do souboru app.config.
+     Klient služby (proxy) je generován a metadata, která popisuje služby se přidá *app.config* souboru.
 
-#### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>Chcete-li přidat odkaz na službu v aktuálním řešení
+### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>Chcete-li přidat odkaz na službu v aktuálním řešení
 
-1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt, který chcete přidat službu a pak klikněte na tlačítko **přidat odkaz na službu**.
+1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na název projektu, do které chcete přidat službu a pak klikněte na **přidat odkaz na službu**.
 
      **Přidat odkaz na službu** zobrazí se dialogové okno.
 
@@ -69,29 +69,29 @@ A *odkaz na službu* umožňuje projektu přístup k jedné nebo více [!INCLUDE
 
 5.  Klikněte na tlačítko **OK** se přidat odkaz na projekt.
 
-     Klient služby (proxy) je generován a metadata, která popisuje služby se přidá do souboru app.config.
+     Generuje služba klienta (proxy) a metadata, která popisuje služby se přidá *app.config* souboru.
 
-## <a name="updating-a-service-reference"></a>Aktualizace odkazu na službu
- Datový Model Entity pro [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] někdy změní. Pokud k tomu dojde, je třeba aktualizovat odkaz na službu.
+## <a name="update-a-service-reference"></a>Aktualizace odkazu na službu
+ Datový Model Entity pro [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] někdy změny. V takovém případě je nutné aktualizovat odkaz na službu.
 
-#### <a name="to-update-a-service-reference"></a>K aktualizaci odkazu na službu
+### <a name="to-update-a-service-reference"></a>K aktualizaci odkazu na službu
 
 -   V **Průzkumníku řešení**, klikněte pravým tlačítkem na odkaz na službu a pak klikněte na tlačítko **aktualizovat odkaz na službu**.
 
-     Zatímco odkaz je aktualizována z původního umístění, a klient služby je vygenerován tak, aby odrážela všechny změny v metadatech, zobrazí se dialogové okno průběhu.
+     Při odkaz je aktualizována z původního umístění, a klient služby je vygenerován tak, aby odrážela všechny změny v metadatech se zobrazí dialogové okno průběhu.
 
-## <a name="removing-a-service-reference"></a>Odebrání odkazu na službu
+## <a name="remove-a-service-reference"></a>Odebrat odkaz na službu
  Pokud se už používá odkazu na službu, můžete jej odebrat z vašeho řešení.
 
-#### <a name="to-remove-a-service-reference"></a>Chcete-li odebrat odkaz na službu
+### <a name="to-remove-a-service-reference"></a>Chcete-li odebrat odkaz na službu
 
 -   V **Průzkumníku řešení**, klikněte pravým tlačítkem na odkaz na službu a pak klikněte na tlačítko **odstranit**.
 
-     Klienta služby se odebere z řešení a metadata, která popisuje službu se odeberou ze souboru app.config.
+     Klienta služby se odebere z řešení a metadata, která popisuje službu bude odebrána z *app.config* souboru.
 
     > [!NOTE]
-    >  Kód, který odkazuje na odkaz na službu bude muset ručně odstranit.
+    >  Kód, který odkazuje na odkaz na službu musíte ručně odstranit.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Služby Windows Communication Foundation a WCF data services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

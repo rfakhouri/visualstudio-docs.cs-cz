@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3e9fd68630b9477be69bfad7c9d4e3bad08dd22a
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: d88f1e258bf8aa9801555c256f825841fff9d476
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947060"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089500"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6: Použití šablony hlasovací webový projekt Django
 
@@ -368,11 +368,11 @@ Nyní jste prozkoumali celého šablony "Prázdný webový projekt Django", "Web
 
 Spuštění webové aplikace ve svém vývojovém počítači je jedním krokem zpřístupnění aplikace k vašim zákazníkům. Další kroky může zahrnovat následující úlohy:
 
+- Nasazení webové aplikace na produkčním serveru, například Azure App Service. V tématu [publikování do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md), což zahrnuje určité změny, které jsou potřeba pro aplikace Django.
+
 - Přizpůsobení stránce 404 vytvořením šablony s názvem `templates/404.html`. Pokud jsou k dispozici, Django Tato šablona používá namísto jeho výchozí nastavení. Další informace najdete v tématu [zobrazení chyby](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) v dokumentaci k rozhraní Django.
 
 - Zápis testů jednotek `tests.py`; šablony projektů Visual Studio poskytují výchozí bod pro tyto a další informace naleznete na [zápis první aplikace Django, část 5 – testování](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) a [testování v Django](https://docs.djangoproject.com/en/2.0/topics/testing/) v dokumentaci k rozhraní Django.
-
-- Nasazení webové aplikace na produkčním serveru, například Azure App Service. V tématu [publikování do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md), což zahrnuje určité změny, které jsou potřeba pro aplikace Django.
 
 - Aplikace můžete změňte z SQLite k úložišti dat produkční úrovni jako je například PostgreSQL, MySQL a SQL Server (všechny z nich může být hostovaný v Azure). Jak je popsáno na [kdy použít SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite funguje bez problémů pro s nízkou až střední provoz lokality s méně než 100 tisíc přístupů za den, ale nedoporučuje se používat pro vyšší svazky. Je také omezena na jednom počítači, takže ji nelze použít v žádném scénáři více serverů, jako je například Vyrovnávání zatížení a geografická replikace. Informace o podpoře na Django pro jiné databáze najdete v tématu [nastavení databáze](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Můžete také [Azure SDK pro jazyk Python](azure-sdk-for-python.md) pro práci s služby Azure storage jako tabulky a objekty BLOB.
 

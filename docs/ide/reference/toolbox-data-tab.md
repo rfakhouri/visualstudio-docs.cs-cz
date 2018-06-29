@@ -14,22 +14,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7deb9fef0ee50ecd202cc711566795932a9f51b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1af6ac0f9a382a91d2c87e5cb84053b8b51bf961
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949708"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089669"
 ---
 # <a name="toolbox-data-tab"></a>Sada nástrojů, karta Data
+
 Zobrazí objekty dat můžete přidat do formulářů a součásti. **Data** kartě **sada nástrojů** se zobrazí, když vytvoříte projekt, který má přidružený designer. **Sada nástrojů** se zobrazí ve výchozím nastavení v integrovaném vývojovém prostředí sady Visual Studio; Pokud je třeba zobrazit **sada nástrojů**, vyberte **sada nástrojů** z **Zobrazení** nabídky.
 
 > [!TIP]
-> Spuštění Průvodce konfigurací zdroje dat bude automaticky vytvořit a nakonfigurovat většina datových položek. Další informace najdete v tématu [přidat nové zdroje dat](../../data-tools/add-new-data-sources.md).
-
+> Spuštění Průvodce konfigurací zdroje dat automaticky vytvoří a nakonfiguruje většina datových položek. Další informace najdete v tématu [přidat nové zdroje dat](../../data-tools/add-new-data-sources.md).
 
 ## <a name="ui-element-list"></a>Seznam prvků uživatelského rozhraní
- Pokud chcete přejít přímo na stránku referenční dokumentace rozhraní .NET Framework pro součást, stiskněte **F1** na položce v **sada nástrojů** nebo na položku součásti na hlavním panelu návrháře.
+
+Pokud chcete přejít přímo na stránku referenční dokumentace rozhraní .NET Framework pro součást, stiskněte **F1** na položce v **sada nástrojů** nebo na položku součásti na hlavním panelu návrháře.
 
 |Název|Popis|
 |----------|-----------------|
@@ -47,4 +48,3 @@ Zobrazí objekty dat můžete přidat do formulářů a součásti. **Data** kar
 - [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Úprava dat v datových sadách](../../data-tools/edit-data-in-datasets.md)
 - [Ověřování dat v datových sadách](../../data-tools/validate-data-in-datasets.md)
-- [Ukládání dat](../../data-tools/saving-data.md)

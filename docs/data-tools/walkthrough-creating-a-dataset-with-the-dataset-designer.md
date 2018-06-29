@@ -15,32 +15,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 349103e59df3acb3719b7b36162cac818f94f03e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5f73248ee79be384ae3733924e9235363717fb82
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746680"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089610"
 ---
-# <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Návod: Vytvoření datové sady pomocí Návrháře DataSet
+# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Návod: Vytvoření datové sady pomocí návrháře Dataset
 
-V tomto návodu vytvoříte datové sady pomocí **návrháře Dataset**. Bude vás provede procesem vytvoření nového projektu a přidání nového **datovou sadu** položky k němu. Naučíte se vytvářet tabulky na základě tabulek z databáze bez použití průvodce.
-
-Úkoly v tomto návodu zahrnují:
-
--   Vytvoření nové **formulářové aplikace Windows** projektu.
-
--   Přidání prázdnou **datovou sadu** položku do projektu.
-
--   Vytváření a konfiguraci zdroje dat v aplikaci podle budovy datová sada se **návrháře Dataset**.
-
--   Vytvoření připojení k databázi Northwind v **Průzkumníka serveru**.
-
--   Vytváření tabulek pomocí instancí TableAdapter v datové sadě založené na tabulkách v databázi.
-
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+V tomto návodu vytvoříte datové sady pomocí **návrháře Dataset**. Článek vás provede procesem vytvoření nového projektu a přidání nového **datovou sadu** položky k němu. Dozvíte, jak vytvářet tabulky založena na tabulky v databázi bez použití průvodce.
 
 ## <a name="prerequisites"></a>Požadavky
+
 Tento návod používá SQL Server Express LocalDB a ukázková databáze Northwind.
 
 1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.
@@ -57,11 +44,9 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
        Po krátkou dobu dotaz dokončí provádění a vytvoření databáze Northwind.
 
-## <a name="creating-a-new-windows-forms-application-project"></a>Vytvoření nového projektu aplikace Windows Forms
+## <a name="create-a-new-windows-forms-application-project"></a>Vytvořte nový projekt aplikace Windows Forms
 
-#### <a name="to-create-a-new-windows-forms-application-project"></a>Chcete-li vytvořit nový projekt aplikace Windows Forms
-
-1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu...** .
+1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový** > **projektu**.
 
 2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Desktop**.
 
@@ -71,11 +56,9 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
      Visual Studio. přidá projekt **Průzkumníku řešení** a zobrazení nového formuláře v návrháři.
 
-## <a name="adding-a-new-dataset-to-the-application"></a>Přidání nové datové sady do aplikace
+## <a name="add-a-new-dataset-to-the-application"></a>Přidat novou datovou sadu pro aplikaci
 
-#### <a name="to-add-a-new-dataset-item-to-the-project"></a>Postup přidání nové položky datové sady do projektu
-
-1.  Na **projektu** nabídce vyberte možnost **přidat novou položku...** .
+1.  Na **projektu** nabídce vyberte možnost **přidat novou položku**.
 
      **Přidat novou položku** zobrazí se dialogové okno.
 
@@ -85,9 +68,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
      Visual Studio. přidá do souboru s názvem **NorthwindDataset.xsd** do projektu a otevře ji v **návrháře Dataset**.
 
-## <a name="creating-a-data-connection-in-server-explorer"></a>Vytvoření datového připojení v Průzkumníku serveru
-
-#### <a name="to-create-a-connection-to-the-northwind-database"></a>Postup vytvoření připojení k databázi Northwind
+## <a name="create-a-data-connection-in-server-explorer"></a>Vytvořit datové připojení v Průzkumníku serveru
 
 1.  Na **zobrazení** nabídky, klikněte na tlačítko **Průzkumníka serveru**.
 
@@ -95,10 +76,11 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 3.  Vytvořte připojení ke vzorové databázi Northwind.
 
-## <a name="creating-the-tables-in-the-dataset"></a>Vytváření tabulek v datové sadě
+## <a name="create-the-tables-in-the-dataset"></a>Vytváření tabulky v datové sadě
+
 Tato část vysvětluje postup přidání tabulky do datové sady.
 
-#### <a name="to-create-the-customers-table"></a>Vytvoření tabulky Zákazníci
+### <a name="to-create-the-customers-table"></a>Vytvoření tabulky Zákazníci
 
 1.  Rozbalte datové připojení, kterou jste vytvořili v **Průzkumníka serveru**a potom rozbalte **tabulky** uzlu.
 
@@ -106,21 +88,19 @@ Tato část vysvětluje postup přidání tabulky do datové sady.
 
      A **zákazníci** tabulku dat a **CustomersTableAdapter** jsou přidány do datové sady.
 
-#### <a name="to-create-the-orders-table"></a>Vytvoření tabulky objednávek
+### <a name="to-create-the-orders-table"></a>Vytvoření tabulky objednávek
 
 -   Přetáhněte **objednávky** tabulce **Průzkumníka serveru** na **návrháře Dataset**.
 
      **Objednávky** datová tabulka **OrdersTableAdapter**a data vztah mezi **zákazníci** a **objednávky** tabulky jsou přidány do datové sady.
 
-#### <a name="to-create-the-orderdetails-table"></a>Postup vytvoření tabulky OrderDetails
+### <a name="to-create-the-orderdetails-table"></a>Postup vytvoření tabulky OrderDetails
 
 -   Přetáhněte **pořadí podrobnosti** tabulce **Průzkumníka serveru** na **návrháře Dataset**.
 
      **Pořadí podrobnosti** datová tabulka **OrderDetailsTableAdapter**a data vztah mezi **objednávky** a **Rozpis objednávek** tabulky budou přidány do datové sady.
 
 ## <a name="next-steps"></a>Další kroky
-
-### <a name="to-add-functionality-to-your-application"></a>Přidání funkce do vaší aplikace
 
 -   Uložte datovou sadu.
 
@@ -136,4 +116,3 @@ Tato část vysvětluje postup přidání tabulky do datové sady.
 - [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Ověřování dat](../data-tools/validate-data-in-datasets.md)
-- [Ukládání dat](../data-tools/saving-data.md)

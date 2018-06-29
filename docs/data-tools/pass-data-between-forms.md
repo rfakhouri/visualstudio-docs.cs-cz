@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a6f1aca4b0a97211cfcc1d5559868c95b856e5c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c8d400f8fa46fa10876d1827205671b6d90a3e33
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746175"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089435"
 ---
 # <a name="pass-data-between-forms"></a>Předávání dat mezi formuláři
 Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho formátu do druhého. Pomocí zákazníků a tabulky objednávky z Northwind, jeden formulář umožňuje vybrat zákazníka a druhý formulář obsahuje objednávky vybraného zákazníka. Tento návod ukazuje postup vytvoření metody na druhý formulář, který přijímá data z první formulář.
@@ -55,7 +55,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:
 
-    1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz...** .
+    1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz**.
 
        Otevře se okno editoru dotazů.
 
@@ -63,13 +63,13 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
     3. Vložit do editoru dotazů skriptu T-SQL a potom vyberte **Execute** tlačítko.
 
-       Po krátkou dobu dotaz dokončí provádění a vytvoření databáze Northwind.
+       Po krátkou dobu dotaz dokončení spuštění a vytvoření databáze Northwind.
 
 ## <a name="create-the-windows-forms-application"></a>Vytvořte aplikaci Windows Forms
 
-#### <a name="to-create-the-new-windows-project"></a>Vytvoření nového projektu Windows
+### <a name="to-create-the-new-windows-project"></a>Vytvoření nového projektu Windows
 
-1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu...** .
+1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový** > **projektu**.
 
 2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Desktop**.
 
@@ -81,7 +81,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 ## <a name="create-the-data-source"></a>Vytvoření zdroje dat
 
-#### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat
+### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat
 
 1.  Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
 
@@ -110,7 +110,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 ## <a name="create-the-first-form-form1"></a>Vytvoření první formuláře (Form1)
  Můžete vytvořit mřížky vázané na data ( <xref:System.Windows.Forms.DataGridView> ovládací prvek), tak, že přetáhnete **zákazníci** uzlu z **zdroje dat** window do formuláře.
 
-#### <a name="to-create-a-data-bound-grid-on-the-form"></a>Vytvoření mřížky vázané na data ve formuláři
+### <a name="to-create-a-data-bound-grid-on-the-form"></a>Vytvoření mřížky vázané na data ve formuláři
 
 -   Přetáhněte hlavní **zákazníci** uzlu z **zdroje dat** okna do **Form1**.
 
@@ -118,7 +118,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 ## <a name="create-the-second-form-form2"></a>Vytvořte druhý formulář (Form2)
 
-#### <a name="to-create-a-second-form-to-pass-the-data-to"></a>Chcete-li vytvořit druhý formulář k předávání dat do
+### <a name="to-create-a-second-form-to-pass-the-data-to"></a>Chcete-li vytvořit druhý formulář k předávání dat do
 
 1.  Z **projektu** nabídce zvolte **přidat formuláře Windows**.
 
@@ -134,7 +134,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 ## <a name="add-a-tableadapter-query-to-form2-to-load-orders-for-the-selected-customer-on-form1"></a>Přidejte do Form2 načíst objednávky pro vybrané odběratele na Form1 dotazu TableAdapter
 
-#### <a name="to-create-a-tableadapter-query"></a>K vytvoření dotazu TableAdapter
+### <a name="to-create-a-tableadapter-query"></a>K vytvoření dotazu TableAdapter
 
 1.  Dvakrát klikněte **NorthwindDataSet.xsd** souboru v **Průzkumníku řešení**.
 
@@ -165,7 +165,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Vytvoření metody na Form2 k předávání dat do
 
-#### <a name="to-create-a-method-to-pass-data-to"></a>Vytvořit metodu k předávání dat do
+### <a name="to-create-a-method-to-pass-data-to"></a>Vytvořit metodu k předávání dat do
 
 1.  Klikněte pravým tlačítkem na **Form2**a vyberte **kód zobrazení** otevřete **Form2** v **Editor kódu**.
 
@@ -176,7 +176,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Vytvoření metody na Form1 k předávání dat a zobrazení Form2
 
-#### <a name="to-create-a-method-to-pass-data-to-form2"></a>Vytvořit metodu k předávání dat na Form2
+### <a name="to-create-a-method-to-pass-data-to-form2"></a>Vytvořit metodu k předávání dat na Form2
 
 1.  V **Form1**klikněte pravým tlačítkem mřížky dat zákazníka a pak klikněte na tlačítko **vlastnosti**.
 
@@ -193,9 +193,9 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 ## <a name="run-the-application"></a>Spuštění aplikace
 
-#### <a name="to-run-the-application"></a>Ke spuštění aplikace
+### <a name="to-run-the-application"></a>Ke spuštění aplikace
 
--   Stisknutím klávesy F5 spusťte aplikaci.
+-   Stiskněte klávesu **F5** ke spuštění aplikace.
 
 -   Klikněte dvakrát na záznam zákazníka v **Form1** otevřete **Form2** s objednávky tohoto zákazníka.
 
@@ -203,7 +203,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 V závislosti na požadavcích vaší aplikace existuje několik kroků, které můžete chtít provést po předávání dat mezi formuláři. Mezi vylepšení, která je možné pro tento návod provést, patří:
 
--   Úpravy datovou sadu, přidat nebo odebrat databázové objekty. Další informace najdete v tématu [vytvořit a nakonfigurovat datové sady](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+-   Úpravy datovou sadu, která přidat nebo odebrat databázové objekty. Další informace najdete v tématu [vytvořit a nakonfigurovat datové sady](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 -   Přidání funkce k uložení dat zpět do databáze. Další informace najdete v tématu [uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md).
 

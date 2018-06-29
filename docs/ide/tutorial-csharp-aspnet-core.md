@@ -1,7 +1,7 @@
 ---
 title: Začínáme s C# a ASP.NET Core v sadě Visual Studio
 ms.custom: ''
-ms.date: 12/11/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 75036450694525f00f31159cdbeea1f4b98040f5
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 40aba1d8847b405c3e80f0d6890471f0e2065a86
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281830"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089448"
 ---
 # <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Začínáme s C# a ASP.NET v sadě Visual Studio
 
@@ -65,9 +65,9 @@ Pokud nevidíte **webové aplikace ASP.NET Core** šablony projektu, můžete ho
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>Možnost 1: Pomocí dialogového okna Nový projekt
 
-1. Klikněte **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.
+1. Vyberte **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.
 
-   ![Klikněte na odkaz otevřete instalační program Visual Studio z dialogového okna Nový projekt](../ide/media/vs-open-visual-studio-installer-generic.png)
+   ![Vyberte odkaz otevřete instalační program Visual Studio z dialogového okna Nový projekt](../ide/media/vs-open-visual-studio-installer-generic.png)
 
 2. Spustí se instalační program pro Visual Studio. Vyberte **ASP.NET a webové vývoj** zatížení a potom zvolte **upravit**.
 
@@ -134,7 +134,7 @@ Vzor MVC pomáhá vytvářet aplikace, které se snadněji testování a aktuali
 
 1. Vyberte **IIS Express** tlačítko v integrovaném vývojovém prostředí pro sestavení a spuštění aplikace v režimu ladění. (Nebo stisknout **F5**, nebo zvolte **ladění > Spustit ladění** z řádku nabídek.)
 
-   ![Klikněte na tlačítko IIS Express v sadě Visual Studio](../ide/media/csharp-aspnet-iis-express-button.png)
+   ![Vyberte tlačítko IIS Express v sadě Visual Studio](../ide/media/csharp-aspnet-iis-express-button.png)
 
   > [!NOTE]
   > Pokud se zobrazí chybová zpráva, která uvádí, že **nebylo možné se připojit k webovému serveru služby IIS Express**, zavřete Visual Studio a otevřete jej pomocí **spustit jako správce** možnost v nabídce klikněte pravým tlačítkem nebo kontextu. Pak spusťte aplikaci znovu.
@@ -179,11 +179,13 @@ Vzor MVC pomáhá vytvářet aplikace, které se snadněji testování a aktuali
 
 11. Vyberte **Zastavte ladění** tlačítka panelu nástrojů na Zastavte ladění. (Nebo stisknout **Shift**+**F5**, nebo zvolte **ladění** > **Zastavte ladění** z řádku nabídek.)
 
-   ![Klikněte na tlačítko Zastavit ladění na panelu nástrojů](../ide/media/csharp-aspnet-stop-debugging.png)
+   ![Kliknutím na tlačítko Zastavit ladění na panelu nástrojů](../ide/media/csharp-aspnet-stop-debugging.png)
 
 ## <a name="next-steps"></a>Další kroky
 
-Blahopřejeme k dokončení tohoto kurzu! Věříme, že jste se dozvěděli, chvíli o C#, ASP.NET Core a Visual Studio IDE. I více informací naleznete v následujícím kurzu pokračujte.
+Blahopřejeme k dokončení tohoto kurzu! Věříme, že jste se dozvěděli, chvíli o C#, ASP.NET Core a Visual Studio IDE. Pokud chcete zobrazit aplikaci spuštěnou na veřejný server, vyberte na následující tlačítko.
 
- > [!div class="nextstepaction"]
- > [Začínáme s ASP.NET MVC jádra a sady Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
+> [!div class="nextstepaction"]
+> [Nasazení aplikace do Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+
+Můžete si také přečíst o používání rozhraní Model-View-Controller (MVC) v ASP.NET Core podle kurzu [Začínáme s ASP.NET MVC jádra a sady Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x).

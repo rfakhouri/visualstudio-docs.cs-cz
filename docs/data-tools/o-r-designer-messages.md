@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c88134bb3b0df901ecb20cb91ed41ceb7e472b9f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b9b9b52cd09801d7b9435a354249e5d2d6296d35
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922307"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089050"
 ---
 # <a name="or-designer-messages"></a>Zprávy Návrhář relací objektů
 
@@ -59,7 +59,7 @@ Toto téma uvádí zprávy, které se můžete setkat při práci s Návrhář r
 
 <xref:System.Data.Linq>
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

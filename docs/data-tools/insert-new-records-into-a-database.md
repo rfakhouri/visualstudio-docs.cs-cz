@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c0b85c0f373f9536da2d2ad621e5898b4365c456
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 515140564d9523c9f1dfe6b3b904aaa3b37df45f
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922650"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089568"
 ---
 # <a name="insert-new-records-into-a-database"></a>Vkládání nových záznamů do databáze
 Chcete-li vkládání nových záznamů do databáze, můžete použít `TableAdapter.Update` metoda nebo jeden z TableAdapter DBDirect – metody (konkrétně `TableAdapter.Insert` metoda). Další informace najdete v tématu [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
@@ -35,14 +35,14 @@ Chcete-li vkládání nových záznamů do databáze, můžete použít `TableAd
 
  Pokud vaše aplikace používá objekty k ukládání dat, nebo pokud chcete ovládat přesněji vytváření nových záznamů v databázi, použijte `TableAdapter.Insert` metoda.
 
- Pokud vaše TableAdapter nemá `Insert` metoda, znamená to, že je buď TableAdapter nakonfigurované na použití uložené procedury nebo jeho `GenerateDBDirectMethods` je nastavena na `false`. Zkuste nastavit TableAdapter `GenerateDBDirectMethods` vlastnost `true` uvnitř **návrháře Dataset**a potom uložte datovou sadu. Tímto se znova vygeneruje TableAdapter. Pokud TableAdapter stále nemá `Insert` metoda a potom v tabulce pravděpodobně neposkytuje dostatek informací o schématu k rozlišení jednotlivých řádků (například může zde být nastavený žádný primární klíč tabulky).
+ Pokud vaše TableAdapter nemá `Insert` metoda, znamená to, že je buď TableAdapter nakonfigurované na použití uložené procedury nebo jeho `GenerateDBDirectMethods` je nastavena na `false`. Zkuste nastavit TableAdapter `GenerateDBDirectMethods` vlastnost `true` uvnitř **návrháře Dataset**a potom uložte datovou sadu. Tímto se znova vygeneruje TableAdapter. Pokud TableAdapter stále nemá `Insert` metoda, tabulka pravděpodobně neposkytuje dostatek informací o schématu k rozlišení jednotlivých řádků (například může zde být nastavený žádný primární klíč tabulky).
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>Vkládání nových záznamů pomocí TableAdapters
  TableAdapters poskytují různé způsoby vkládání nových záznamů do databáze, v závislosti na požadavcích vaší aplikace.
 
- Pokud vaše aplikace používá k ukládání dat datové sady, pak můžete jednoduše přidat nové záznamy na požadovanou <xref:System.Data.DataTable> v datové sadě a pak volání `TableAdapter.Update` metoda. `TableAdapter.Update` Metoda odešle všechny změny v <xref:System.Data.DataTable> do databáze (včetně upravené a odstraněné záznamy).
+ Pokud vaše aplikace používá k ukládání dat datové sady, můžete jednoduše přidat nové záznamy na požadovanou <xref:System.Data.DataTable> v datové sadě a pak volání `TableAdapter.Update` metoda. `TableAdapter.Update` Metoda odešle všechny změny v <xref:System.Data.DataTable> do databáze (včetně upravené a odstraněné záznamy).
 
-#### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Chcete-li vkládání nových záznamů do databáze pomocí TableAdapter.Update – metoda
+### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Chcete-li vkládání nových záznamů do databáze pomocí TableAdapter.Update – metoda
 
 1.  Přidání nových záznamů do požadované <xref:System.Data.DataTable> tak, že vytvoříte novou <xref:System.Data.DataRow> a jejím přidáním do <xref:System.Data.DataTable.Rows%2A> kolekce.
 
@@ -53,7 +53,7 @@ Chcete-li vkládání nových záznamů do databáze, můžete použít `TableAd
  [!code-vb[VbRaddataSaving#14](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_1.vb)]
  [!code-csharp[VbRaddataSaving#14](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_1.cs)]
 
-#### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Chcete-li vkládání nových záznamů do databáze pomocí TableAdapter.Insert – metoda
+### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Chcete-li vkládání nových záznamů do databáze pomocí TableAdapter.Insert – metoda
 Pokud vaše aplikace používá objekty k ukládání dat, můžete použít `TableAdapter.Insert` metodu pro vytvoření nové řádky přímo v databázi. `Insert` Metoda přijímá jednotlivé hodnoty pro každý sloupec jako parametry. Volání metody vloží nový záznam do databáze s předané hodnoty parametru.
 
 - Volání TableAdapter `Insert` metodu předáním v hodnoty pro každý sloupec jako parametry.
@@ -69,7 +69,7 @@ Pokud vaše aplikace používá objekty k ukládání dat, můžete použít `Ta
 ## <a name="insert-new-records-by-using-command-objects"></a>Vkládání nových záznamů pomocí objekty příkazu
 Nové záznamy můžete vložit přímo do databáze pomocí příkazu objekty.
 
-#### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Chcete-li vkládání nových záznamů do databáze pomocí příkazu objektů
+### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Chcete-li vkládání nových záznamů do databáze pomocí příkazu objektů
 
 -   Vytvořit nový objekt příkazu a poté nastavte její `Connection`, `CommandType`, a `CommandText` vlastnosti.
 
@@ -78,9 +78,9 @@ Nové záznamy můžete vložit přímo do databáze pomocí příkazu objekty.
  [!code-vb[VbRaddataSaving#16](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_3.vb)]
  [!code-csharp[VbRaddataSaving#16](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_3.cs)]
 
-## <a name="net-framework-security"></a>Zabezpečení rozhraní .NET Framework
+## <a name="net-framework-security"></a>zabezpečení v rozhraní .NET Framework
  Musíte mít přístup k databázi, kterou se pokoušíte připojit k, jakož i oprávnění k provedení vloží do požadované tabulky.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

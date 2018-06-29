@@ -14,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7459b4292220e6bb1e5a00b912efe7eb99cce825
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 090ebd4abd7905816393a211dc817d28348611ed
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148646"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089367"
 ---
-# <a name="vsix-extension-schema-20-reference"></a>VSIX rozšíření schéma 2.0 – referenční informace
+# <a name="vsix-extension-schema-20-reference"></a>VSIX Extension Schema 2.0 – referenční informace
 Soubor manifestu nasazení VSIX popisuje obsah balíčku VSIX. Formát souboru se řídí schéma. Verze 2.0 toto schéma podporuje přidání vlastní typy a atributy.  Schéma manifest je rozšiřitelný. Manifestu zavaděč ignoruje XML elementů a atributů, které není pochopit.  
   
 > [!IMPORTANT]
@@ -182,7 +182,9 @@ Soubor manifestu nasazení VSIX popisuje obsah balíčku VSIX. Formát souboru s
   
          Můžete vytvořit vlastní typy a přiřadit jim jedinečné názvy. V době běhu v sadě Visual Studio můžete kód výčet a využít tyto vlastní typy prostřednictvím rozhraní API Správce rozšíření.  
   
-    -   Cesta - relativní cestu k souboru nebo složky v balíčku, který obsahuje asset.  
+    -   `Path` -relativní cestu k souboru nebo složky v balíčku, který obsahuje asset.  
+    
+    -   `TargetVersion` -verze rozsahu, ve kterém se daný prostředek vztahuje na. Použít pro přesouvání různých verzích prostředky pro různé verze sady Visual Studio. Vyžaduje Visual Studio 2017.3 nebo novější mít vliv.
   
     -   `AnyAttribute*` -Zprostředkovává sadu atributů, které budete vystavený v době běhu jako slovník dvojice název hodnota.  
   

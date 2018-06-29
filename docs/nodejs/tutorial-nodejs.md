@@ -2,7 +2,7 @@
 title: Vytvoření Node.js a expresní aplikaci
 description: V tomto kurzu vytvoříte aplikaci pomocí nástrojů Node.js Tools for Visual Studio.
 ms.custom: ''
-ms.date: 03/13/2018
+ms.date: 06/27/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f3d8bb6eb64433ef8e2cd369ed0c1e0ba59a03dd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e22b530fdebf227597e3c70b3bf58dd538754b3c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282506"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089597"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Kurz: Vytvoření Node.js a expresní aplikaci v sadě Visual Studio
 V tomto kurzu pro vývoj sady Visual Studio pomocí Node.js a Express vytvořit jednoduchou webovou aplikaci Node.js, přidat kód, prozkoumejte některé funkce integrovaného vývojového prostředí a spuštění aplikace. Pokud jste si sadu Visual Studio ještě nenainstalovali, nainstalujte si ji zdarma [odtud](http://visualstudio.microsoft.com).
@@ -138,7 +138,7 @@ Aplikace používá Pug pro rozhraní front-end JavaScript. Pug používá jedno
     }
     ````
 
-    Tento kód vytvoří datový objekt, který jsme předá dynamicky generovaném stránku HTML.
+    Tento kód vytvoří datový objekt, který předáte dynamicky generovaném stránku HTML.
 
 1. Nahraďte `router.get` funkce volání následujícím kódem:
 
@@ -150,7 +150,7 @@ Aplikace používá Pug pro rozhraní front-end JavaScript. Pug používá jedno
 
     Předchozí kód nastaví aktuální stránku pomocí objektu směrovač Express a vykreslí stránku, předá objekt názvu a data na stránku. *Index.pug* je zadán jako na při načtení stránky *index.js* běží. *index.js* je nakonfigurovaný jako výchozí trasu v *app.js* kódu (není vidět).
 
-    K předvedení několik funkcí sady Visual Studio, jsme součástí chybu na řádek obsahující kód `res.render`. Musíme opravte chybu před spuštěním aplikace. Chybu opravte v další části.
+    K předvedení několik funkcí sady Visual Studio, je záměrné Chyba v řádku kódu obsahující `res.render`. Musíte chybu opravit, než aplikaci můžete spustit, které uděláte v další části.
 
 ## <a name="use-intellisense"></a>Používání technologie IntelliSense
 
@@ -180,7 +180,7 @@ IntelliSense je nástroj Visual Studio, který vám pomůže při psaní kódu.
 
 ## <a name="set-a-breakpoint"></a>Nastavení zarážky
 
-Nyní klikněte na tlačítko spustit aplikaci pomocí ladicího programu sady Visual Studio, připojit. Před jsme to udělat, je potřeba nastavit zarážky.
+Budete dalším spuštění aplikace pomocí ladicího programu sady Visual Studio, připojit. Před učinit, je potřeba nastavit zarážky.
 
 1. V *index.js*, klikněte v levém oddělovací mezery před následující řádek kódu pro nastavení zarážky:
 
@@ -238,7 +238,7 @@ Blahopřejeme k dokončení tohoto kurzu!
 
 ## <a name="next-steps"></a>Další kroky
 
-V tomto kurzu jste zjistili, jak pro vytvoření a spuštění aplikace Node.js pomocí expresního a stiskněte tlačítko zarážku používání ladicího programu.
-
 > [!div class="nextstepaction"]
-> [Node.js Tools for Visual Studio](https://github.com/Microsoft/nodejstools)
+> [Nasazení aplikace do Azure App Service](../deployment/quickstart-deploy-to-azure.md)
+
+V tomto kurzu jste zjistili, jak pro vytvoření a spuštění aplikace Node.js pomocí expresního a stiskněte tlačítko zarážku používání ladicího programu. Další informace najdete v tématu [Node.js tools pro Visual Studio na Githubu](https://github.com/Microsoft/nodejstools).

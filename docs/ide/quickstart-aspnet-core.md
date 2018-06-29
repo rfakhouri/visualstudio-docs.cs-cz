@@ -2,7 +2,7 @@
 title: Použijte sadu Visual Studio k vytvoření webové aplikace ASP.NET Core v jazyce C#
 description: Naučte se vytvářet webové aplikace ASP.NET Core v sadě Visual Studio pomocí C#, krok za krokem.
 ms.custom: mvc
-ms.date: 10/10/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1240056d8a4ad90b763e28d0576d87282bdc7518
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 9d8aa6a6147ff57ba72f1cc69240ef5a7137cd73
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296364"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089296"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Rychlý úvod: Použití Visual Studio k vytvoření první webové aplikace ASP.NET Core
 
@@ -53,7 +53,7 @@ Nejdřív vytvoříte projekt webové aplikace technologie ASP.NET Core. Typ pro
 
    ![Přejít k definici kontextové nabídky](../ide/media/quickstart-aspnet-gotodefinition.png)
 
-1. Potom jsme budete vyčištění `using` direktivy v horní části souboru pomocí jednoduchého zástupce. Vybrat kteroukoli z aktivní out pomocí direktiv a [rychlé akce](../ide/quick-actions.md) žárovky se zobrazí pod vsuvka nebo na levém okraji. Zvolte žárovky a potom vyberte **odeberte nepotřebné direktiv Using**.
+1. Další vyčištění `using` direktivy v horní části souboru pomocí jednoduchého zástupce. Vybrat kteroukoli z zašedlá pomocí direktiv a [rychlé akce](../ide/quick-actions.md) žárovky se zobrazí pod vsuvka nebo na levém okraji. Zvolte žárovky a potom vyberte **odeberte nepotřebné direktiv Using**.
 
      Nepotřebné direktiv Using se odstraní ze souboru.
 
@@ -87,7 +87,10 @@ Nejdřív vytvoříte projekt webové aplikace technologie ASP.NET Core. Typ pro
 Blahopřejeme k dokončení tento rychlý start! Věříme, že jste se naučili chvíli o prostředí Visual Studio IDE. Pokud chcete pustíte hlubší do jeho možnosti, pokračujte prosím se v kurzu **kurzy** části obsahu.
 
 ## <a name="next-steps"></a>Další kroky
-Blahopřejeme k dokončení tento rychlý start! Věříme, že jste se dozvěděli, chvíli o C#, ASP.NET Core a Visual Studio IDE. Další informace najdete v následujícím kurzu pokračujte.
+
+Blahopřejeme k dokončení tento rychlý start! Věříme, že jste se dozvěděli, chvíli o C#, ASP.NET Core a Visual Studio IDE. Pokud chcete zobrazit aplikaci spuštěnou na veřejný server, vyberte na následující tlačítko.
 
 > [!div class="nextstepaction"]
-> [Začínáme s C# a ASP.NET v sadě Visual Studio](tutorial-csharp-aspnet-core.md)
+> [Nasazení aplikace do Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+
+Další informace, pokračujte kurzy, [začít pracovat s C# a ASP.NET v sadě Visual Studio](tutorial-csharp-aspnet-core.md) a [Začínáme s ASP.NET MVC jádra a sady Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x).

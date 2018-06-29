@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b6c0e01106664429b3d355e488b453fa05cca4c6
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: dbdcf2222aab4b70ba9817792b0d72d4dadf5802
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946959"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089799"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsluhovat statické soubory, přidat stránky a použití šablony dědičnosti
 
@@ -285,6 +285,7 @@ Následující kroky ukazují dědičnosti:
 
 ## <a name="go-deeper"></a>Přejděte hlubší
 
+- [Nasazení webové aplikace do Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Další možnosti Jinja šablon, jako je například tok řízení, najdete v části [dokumentace návrháře šablony Jinja](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
 - Podrobnosti o použití `url_for`, najdete v části [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) v dokumentaci k objektu aplikace Flask (flask.pocoo.org)
 - Kurz zdrojového kódu na Githubu: [Microsoft nebo python – ukázka vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

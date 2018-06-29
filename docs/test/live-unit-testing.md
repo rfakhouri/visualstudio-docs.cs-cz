@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: f60b9ebe3847db0f139c9369f5a3e0fc6c4fd8a9
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4cc9ec25ab6bc69359649764074a3e908c06c4ae
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296307"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089552"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Testování částí pomocí Visual Studio 2017 za provozu
 
@@ -155,7 +155,7 @@ Existují určité rozdíly mezi Live testování částí automaticky spuštěn
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Testování částí za provozu a velké řešení
 
-Pokud má vaše řešení 10 nebo více projektů po spuštění Live testování částí a není žádná trvalá data, nebo když vyberete **Test**, **Live testování částí**, **resetovat čistou** možnost nejvyšší úrovně nabídce sady Visual Studio, Visual Studio zobrazí následující dialogové okno s upozorněním na dynamické zpracování velkého počtu testů v rozsáhlých projektů může vážně ovlivnit výkon. Pokud vyberete **OK**, Live testování částí provede všechny texty v řešení. Pokud vyberete **zrušit**, můžete vybrat testy provést. Informace o tom, jak to udělat, najdete v následující části [zahrnutí a vyloučení testování projektů a testování metody](#including-and-excluding-test-projects-and-test-methods).
+Pokud má vaše řešení 10 nebo více projektů po spuštění Live testování částí a není žádná trvalá data, nebo když vyberete **Test**, **Live testování částí**, **resetovat čistou** možnost nejvyšší úrovně nabídce sady Visual Studio, Visual Studio zobrazí následující dialogové okno s upozorněním na dynamické zpracování velkého počtu testů v rozsáhlých projektů může vážně ovlivnit výkon. Pokud vyberete **OK**, Live testování částí spustí všechny testy v řešení. Pokud vyberete **zrušit**, můžete vybrat testy provést. Informace o tom, jak to udělat, najdete v následující části [zahrnutí a vyloučení testování projektů a testování metody](#including-and-excluding-test-projects-and-test-methods).
 
  ![Za provozu dialogu pro rozsáhlých projektů testování částí](media/lut-large-project.png)
 

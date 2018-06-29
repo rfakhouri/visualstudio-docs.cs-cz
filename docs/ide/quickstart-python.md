@@ -1,7 +1,7 @@
 ---
 title: 'Rychlý úvod: použijte sadu Visual Studio k vytvoření webové aplikace Python'
 description: V tento rychlý start vytvoříte pomocí sady Visual Studio a rozhraní Flask pro vytvoření jednoduché webové aplikace v Pythonu.
-ms.date: 05/07/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 56078a8a5e5af1b44adf55cabb08f7d72a042470
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b8668bbdb686b3c8c60380dd5592a2897a43b45b
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296331"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089422"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Rychlý úvod: Vytvoření první webové aplikace Python pomocí sady Visual Studio
 
@@ -146,15 +146,12 @@ Nyní jste připraveni přidat kousek kód Python implementovat minimální webo
 
 Blahopřejeme k spuštění vaší první aplikace Python ze sady Visual Studio, ve které jste se naučili o něco o pomocí sady Visual Studio jako Python IDE!
 
-Protože jsou poměrně obecné kroky, které jste udělali v tento rychlý start, jste pravděpodobně uhádnout, můžete a dobré automatizovat. Tato automatizace je role šablony projektů Visual Studio. Vyberte tlačítko pro ukázku, která vytvoří webovou aplikaci podobnou té, kterou jste vytvořili v tomto článku, ale s méně kroků.
-
 > [!div class="nextstepaction"]
-> [Rychlý start - vytvořte projekt Python pomocí šablony](../python/quickstart-02-python-in-visual-studio-project-from-template.md)
+> [Nasazení aplikace do Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
-Chcete-li pokračovat s úplnější kurz Python v sadě Visual Studio, včetně použití interaktivních okna, ladění, vizualizace dat a práce s Gitem, vyberte níže uvedené tlačítko.
+Protože jsou poměrně obecné kroky, které jste udělali v tento rychlý start, jste pravděpodobně uhádnout, můžete a dobré automatizovat. Tato automatizace je role šablony projektů Visual Studio. Projděte [rychlý start - vytvořit pomocí šablony projektu Python](../python/quickstart-02-python-in-visual-studio-project-from-template.md) pro ukázku, která vytvoří webovou aplikaci podobné jste vytvořili v tomto článku, ale s méně kroků.
 
-> [!div class="nextstepaction"]
-> [Kurz: Začínáme s Pythonem v sadě Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+Chcete pokračovat s úplnější kurz Python v sadě Visual Studio, včetně použití interaktivních okna, ladění, vizualizace dat a práce s Gitem, projít [kurz: Začínáme s Pythonem v sadě Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
 Chcete-li prozkoumat více, že nabídka má Visual Studio, vyberte odkazy níže.
 

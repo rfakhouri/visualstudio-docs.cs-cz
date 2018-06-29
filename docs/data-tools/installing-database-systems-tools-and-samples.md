@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 883287c782742aa7bfb7d24f9e2d846a1caa149e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6cb532ee53e61842eb9f36ae0ecd437ef8fe0e0f
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923620"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089192"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Databázi kompatibilní se systémy pro sadu Visual Studio
 
@@ -27,7 +27,7 @@ K vývoji aplikací dat připojené v sadě Visual Studio, obvykle instalace sys
 
 Pro systém databáze byla přístupná z aplikace .NET a mají být zobrazeny v sadě Visual Studio data nástroje windows musí mít zprostředkovatel ADO.NET data provider. Zprostředkovatel musí podporovat rozhraní Entity Framework konkrétně, pokud budete chtít použít Entity datových modelech v aplikaci .NET. Mnoho poskytovatelů jsou nabízena prostřednictvím Správce balíčků NuGet nebo prostřednictvím Visual Studio Marketplace.
 
-Pokud používáte rozhraní API úložiště Azure, nainstalujte emulátorů úložiště Azure na místním počítači během vývoje aby se zabránilo poplatky, dokud nebudete připraveni k nasazení do produkčního prostředí. Další informace najdete v tématu [použití emulátoru úložiště Azure pro vývoj a testování](/azure/storage/common/storage-use-emulator).
+Pokud používáte rozhraním API v Azure storage, nainstalujte emulátorů úložiště Azure v místním počítači během vývoje aby se zabránilo poplatky, dokud nebudete připraveni k nasazení do produkčního prostředí. Další informace najdete v tématu [pomocí emulátoru úložiště Azure pro vývoj a testování](/azure/storage/common/storage-use-emulator).
 
 Následující seznam obsahuje některé z oblíbenější systémů databáze, které lze použít v projektech Visual Studio. Seznam není vyčerpávající. Seznam jiných dodavatelů, které nabízí zprostředkovatelé dat ADO.NET, které umožňují těsná integrace s nástroji Visual Studio najdete v tématu [zprostředkovatele dat ADO.NET](/dotnet/framework/data/adonet/data-providers).
 
@@ -37,15 +37,15 @@ SQL Server je databáze nejdůležitějšího Microsoft nabídky. SQL Server 201
 
 ## <a name="oracle"></a>Oracle
 
-Si můžete stáhnout na placené nebo bezplatnou verzi z databáze Oracle [síťové technologie Oracle](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) stránky. Pro podporu rozhraní Entity Framework a TableAdapters návrhu, budete potřebovat [Oracle Developer Tools pro sadu Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Další oficiální Oracle produkty, včetně Oracle rychlých klienta, jsou k dispozici prostřednictvím Správce balíčků NuGet.  Ukázka schémata Oracle si můžete stáhnout podle pokynů v [Online dokumentaci Oracle](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
+Si můžete stáhnout na placené nebo bezplatnou verzi z databáze Oracle [síťové technologie Oracle](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) stránky. Pro podporu rozhraní Entity Framework a TableAdapters návrhu, budete potřebovat [Oracle Developer tools pro sadu Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Další oficiální Oracle produkty, včetně Oracle rychlých klienta, jsou k dispozici prostřednictvím Správce balíčků NuGet. Ukázka schémata Oracle si můžete stáhnout podle pokynů v [online dokumentaci Oracle](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
 
 ## <a name="mysql"></a>MySQL
 
-MySQL je systém oblíbených open-source databáze, který se často používá v podnicích a weby. Stahování pro databázi MySQL, MySQL pro Visual Studio a souvisejících produktů je v [MySQL v systému Windows](http://www.mysql.com/why-mysql/windows/).  Třetí strany nabízejí různé rozšíření Visual Studia a samostatné správy aplikací pro databázi MySQL. Můžete procházet nabídek Správce balíčků NuGet (**nástroje** > **Správce balíčků NuGet** > **spravovat balíčky NuGet pro řešení**) .
+MySQL je systém oblíbených open-source databáze, který se často používá v podnicích a weby. Stahování pro databázi MySQL, MySQL pro Visual Studio a souvisejících produktů je v [MySQL v systému Windows](http://www.mysql.com/why-mysql/windows/). Třetí strany nabízejí různé rozšíření Visual Studia a samostatné správy aplikací pro databázi MySQL. Můžete procházet nabídek Správce balíčků NuGet (**nástroje** > **Správce balíčků NuGet** > **spravovat balíčky NuGet pro řešení**) .
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL je relační databázový systém volné, open-source objektu. Chcete-li jej nainstalovat na Windows, můžete stáhnout z [stránky pro stažení PostgreSQL](http://www.postgresql.org/download/windows/).  Můžete také vytvořit PostgreSQL ze zdrojového kódu.  Systém jádra PostgreSQL obsahuje rozhraní jazyka C. Mnoho třetím stranám uveďte balíčky NuGet pro používání PostgreSQL z aplikací .NET.  Můžete procházet nabídek Správce balíčků NuGet (**nástroje** > **Správce balíčků NuGet** > **spravovat balíčky NuGet pro řešení**) . Možná je poskytovaný balíček nejoblíbenější [npgsql.org](http://www.npgsql.org).
+PostgreSQL je relační databázový systém volné, open-source objektu. Chcete-li jej nainstalovat na Windows, můžete stáhnout z [stránky pro stažení PostgreSQL](http://www.postgresql.org/download/windows/). Můžete také vytvořit PostgreSQL ze zdrojového kódu. Systém jádra PostgreSQL obsahuje rozhraní jazyka C. Mnoho třetím stranám uveďte balíčky NuGet pro používání PostgreSQL z aplikací .NET. Můžete procházet nabídek Správce balíčků NuGet (**nástroje** > **Správce balíčků NuGet** > **spravovat balíčky NuGet pro řešení**) . Případně, nejoblíbenější balíček zajišťuje [npgsql.org](http://www.npgsql.org).
 
 ## <a name="sqlite"></a>SQLite
 
@@ -55,7 +55,7 @@ SQLite je vložený databázový stroj SQL, který běží v procesu aplikace vl
 
 Firebird je systém, databáze SQL open source. Si můžete stáhnout z [stránky pro stažení Firebird](http://firebirdsql.org/en/downloads/). Zprostředkovatel ADO.NET data provider je k dispozici prostřednictvím Správce balíčků NuGet.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Jak určit verzi a edici systému SQL Server a jeho komponenty](http://support.microsoft.com/kb/321185)

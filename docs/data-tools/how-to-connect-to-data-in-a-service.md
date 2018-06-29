@@ -18,21 +18,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3975d7f0bcfc9b80c944c892cde52f2b625e0bbf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6f90a99a387452500686af332edb1d112a88f82
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921098"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089115"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Postupy: Připojování k datům ve službě
+# <a name="how-to-connect-to-data-in-a-service"></a>Postupy: připojení k datům ve službě
 
 Připojení aplikace s daty vrácenými ze služby spuštěním [Průvodce konfigurací zdroje dat](../data-tools/media/data-source-configuration-wizard.png) a výběrem **služby** na **zvolte typ zdroje dat**stránky.
 
 Po dokončení průvodce, odkaz na službu se přidá do projektu a je okamžitě k dispozici v [okno zdroje dat](add-new-data-sources.md).
 
 > [!NOTE]
-> Položky, které se zobrazují v **zdroje dat** okna jsou závislé na informace, které se vrátí službu. Některé služby nemusí poskytuje dostatek informací **Průvodce konfigurací zdroje dat** vytvořit vazbu objekty. Například pokud služba vrátí netypové datové sady, pak se neobjeví žádné položky v **okno zdroje dat** po dokončení průvodce. To je proto netypové datové sady neposkytují schématu, proto Průvodce nemá dostatek informací pro vytvoření zdroje dat.
+> Položky, které se zobrazují v **zdroje dat** okna jsou závislé na informace, které se vrátí službu. Některé služby nemusí poskytuje dostatek informací **Průvodce konfigurací zdroje dat** vytvořit vazbu objekty. Například pokud služba vrátí netypové datové sady, žádné položky, které se zobrazí v **okno zdroje dat** po dokončení průvodce. To je proto netypové datové sady neposkytují schématu, proto Průvodce nemá dostatek informací pro vytvoření zdroje dat.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -44,10 +44,10 @@ Po dokončení průvodce, odkaz na službu se přidá do projektu a je okamžit�
 
 3.  Zadejte adresu služby, kterou chcete použít, nebo klikněte na tlačítko **Discover** vyhledání služeb v aktuálním řešení a potom klikněte na **přejděte**.
 
-4.  Volitelně můžete nový **Namespace** lze zadat místo výchozí hodnota.
+4.  Volitelně můžete zadat nový **Namespace** místo výchozí hodnota.
 
     > [!NOTE]
-    > Klikněte na tlačítko **Upřesnit** otevřete [konfigurace služby odkaz dialogové okno](../data-tools/configure-service-reference-dialog-box.md).
+    > Klikněte na tlačítko **Upřesnit** otevřete [dialogové okno nastavit odkaz na službu](../data-tools/configure-service-reference-dialog-box.md).
 
 5.  Klikněte na tlačítko **OK** přidat odkaz na službu do projektu.
 
@@ -59,7 +59,7 @@ Po dokončení průvodce, odkaz na službu se přidá do projektu a je okamžit�
 
 K přidání funkcí do vaší aplikace, vyberte položku v **zdroje dat** okna a přetáhněte ji na formulář pro vytvoření vázané ovládací prvky. Další informace najdete v tématu [vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření vazby ovládacích prvků WPF k datové službě WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
-- [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Služby Windows Communication Foundation a WCF data services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

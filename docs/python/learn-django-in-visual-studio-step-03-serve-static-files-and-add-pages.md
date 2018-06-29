@@ -1,7 +1,7 @@
 ---
 title: Kurz – další Django v sadě Visual Studio, krok 3
 description: Návod, základní informace o rozhraní Django v kontextu projektů sady Visual Studio, konkrétně který ukazuje, jak statické soubory, přidání stránky v aplikaci, a používat šablonu dědičnosti
-ms.date: 04/25/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a6eb2d2c690642a12be6ced7da29b0e85bdbb046
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 558353fcae63172273e4e2070a51dfafdea6913e
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947073"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089584"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsluhovat statické soubory, přidat stránky a použití šablony dědičnosti
 
@@ -279,6 +279,7 @@ Následující kroky ukazují dědičnosti:
 
 ## <a name="go-deeper"></a>Přejděte hlubší
 
+- [Nasazení webové aplikace do Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Zápis první aplikace Django, část 3 (zobrazení)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - Další možnosti šablon Django, například tok řízení, najdete v části [jazyk šablony Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - Úplné podrobnosti o použití `{% url %}` značky najdete v tématu [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) v rámci [předdefinované šablony značky a filtry pro referenční informace k šablonám Django](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (docs.djangoproject.com)

@@ -13,15 +13,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 17e91ac47b4e8a6a2d94caa523309bc0cfe9dd7e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 8ea6494cbf71cced24ead52cd091500578b25f8c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281362"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089812"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Kurz: Vytvoření aplikace Node.js a React v sadě Visual Studio
-Visual Studio vám umožňuje snadno vytvořit projekt Node.js a využívat IntelliSense a další integrované funkce, které podporují Node.js. V tomto kurzu pro Visual Studio vytvoříte projekt webové aplikace Node.js ze šablony sady Visual Studio. Pak vytvoříte jednoduchou aplikaci pomocí Reactu.
+
+Visual Studio můžete snadno vytvořit projekt Node.js a zkušenosti IntelliSense a jiné integrované funkce, které podporují Node.js. V tomto kurzu pro Visual Studio vytvoříte projekt webové aplikace Node.js ze šablony sady Visual Studio. Pak vytvoříte jednoduchou aplikaci pomocí Reactu.
 
 V tomto kurzu se naučíte:
 > [!div class="checklist"]
@@ -37,7 +38,7 @@ V tomto kurzu se naučíte:
 
     Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
-    Pokud potřebujete nainstalovat úlohu, ale Visual Studio už máte, klikněte v dialogovém okně **Nový projekt** v levém podokně na odkaz **Otevřít instalační program pro Visual Studio**. Spustí se instalační program pro Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
+    Pokud potřebujete nainstalovat zatížení, ale už mít Visual Studio, vyberte **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
 
 * Je nutné mít nainstalovaný modul runtime Node.js.
 
@@ -46,6 +47,7 @@ V tomto kurzu se naučíte:
     Pokud ho nemáte nainstalovaný, nainstalujte si verzi LTS z webu [Node.js](https://nodejs.org/en/download/). Obecně platí, že Visual Studio automaticky rozpozná nainstalovaný modul runtime Node.js. Pokud se nainstalovaný modul runtime nerozpozná, můžete projekt nakonfigurovat na stránce vlastností pomocí odkazu na nainstalovaný modul runtime (po vytvoření projektu klikněte pravým tlačítkem na uzel projektu a zvolte **Vlastnosti**).
 
 ## <a name="create-a-project"></a>Vytvoření projektu
+
 Nejprve vytvoříte projekt webové aplikace Node.js.
 
 1. Otevřete Visual Studio 2017.
@@ -60,13 +62,13 @@ Nejprve vytvoříte projekt webové aplikace Node.js.
 
     ![Projekt Node.js v Průzkumníku řešení](../nodejs/media/tutorial-nodejs-react-project-structure.png)
 
-    - Projekt je zvýrazněný tučným písmem a má název, který jste zadali v dialogovém okně **Nový projekt**. V systému souborů je tento projekt reprezentovaný souborem *.njsproj* ve složce projektu. Vlastnosti a proměnné prostředí přidružené k projektu můžete nastavit tak, že kliknete pravým tlačítkem na projekt a zvolíte **Vlastnosti**. Je možné provádět zpětné převody umožňující práci v jiných nástrojích pro vývoj, protože soubor projektu neprovádí vlastní změny ve zdroji projektu Node.js.
+    * Projekt je zvýrazněný tučným písmem a má název, který jste zadali v dialogovém okně **Nový projekt**. V systému souborů je tento projekt reprezentovaný souborem *.njsproj* ve složce projektu. Vlastnosti a proměnné prostředí přidružené k projektu můžete nastavit tak, že kliknete pravým tlačítkem na projekt a zvolíte **Vlastnosti**. Je možné provádět zpětné převody umožňující práci v jiných nástrojích pro vývoj, protože soubor projektu neprovádí vlastní změny ve zdroji projektu Node.js.
 
-    - Na nejvyšší úrovni je řešení, které má ve výchozím nastavení stejný název jako příslušný projekt. Řešení, reprezentované na disku souborem *.sln*, je kontejner pro jeden nebo více souvisejících projektů.
+    * Na nejvyšší úrovni je řešení, které má ve výchozím nastavení stejný název jako příslušný projekt. Řešení, reprezentované na disku souborem *.sln*, je kontejner pro jeden nebo více souvisejících projektů.
 
-    - Uzel npm zobrazuje všechny nainstalované balíčky npm. Po kliknutí pravým tlačítkem na uzel npm lze vyhledat a nainstalovat balíčky npm pomocí dialogového okna.
+    * Uzel npm zobrazuje všechny nainstalované balíčky npm. Po kliknutí pravým tlačítkem na uzel npm lze vyhledat a nainstalovat balíčky npm pomocí dialogového okna.
 
-    - Soubory projektu, například *server.js*, se zobrazují pod uzlem projektu. *Server.js* je spouštěcí soubor projektu.
+    * Soubory projektu, například *server.js*, se zobrazují pod uzlem projektu. *Server.js* je spouštěcí soubor projektu.
 
 ## <a name="add-npm-packages"></a>Přidání balíčků npm
 
@@ -85,11 +87,11 @@ Tato aplikace vyžaduje ke správnému fungování řadu modulů npm.
 
     V dialogovém okně **Nainstalovat nové balíčky npm** můžete zvolit instalaci nejnovější verze balíčků nebo určit konkrétní verzi. Pokud zvolíte instalaci nejnovější verze těchto balíčků, ale při dalším postupu dojde k neočekávaným chybám, bude asi potřeba nainstalovat přesně ty verze balíčků, které jsou uvedené dále v tomto postupu.
 
-1. V dialogovém okně **Nainstalovat nové balíčky npm** vyhledejte balíček react a kliknutím na **Nainstalovat balíček** ho nainstalujte.
+1. V **nainstalovat nové balíčky npm** dialogové okno, vyhledejte balíček reagují a vyberte **instalovat balíček** k její instalaci.
 
     ![Instalace balíčků npm](../nodejs/media/tutorial-nodejs-react-install-packages.png)
 
-    Klikněte na tlačítko **výstup** okna zobrazíte průběh o instalaci balíčku (vyberte **Npm** v **zobrazit výstup z** pole). Po dokončení instalace se tento balíček zobrazí pod uzlem **npm**.
+    Vyberte **výstup** okna zobrazíte průběh o instalaci balíčku (vyberte **Npm** v **zobrazit výstup z** pole). Po dokončení instalace se tento balíček zobrazí pod uzlem **npm**.
 
     Soubor *package.json* tohoto projektu se aktualizuje informacemi o novém balíčku, včetně verze tohoto balíčku.
 
@@ -110,7 +112,7 @@ Tato aplikace vyžaduje ke správnému fungování řadu modulů npm.
 
 1. Klikněte pravým tlačítkem na **npm** uzlu ve vašem projektu a zvolte **aktualizovat balíčky npm**.
 
-    Klikněte **výstup** okna zobrazíte průběh k instalaci balíčků. To může trvat několik minut a okamžitě se nemusí zobrazovat výsledky.
+    Vyberte **výstup** okna zobrazíte průběh k instalaci balíčků. Instalace může trvat několik minut a okamžitě se nemusí zobrazovat výsledky.
 
     Tady jsou moduly npm, které se po instalaci zobrazí v Průzkumníku řešení.
 
@@ -132,7 +134,7 @@ Nové soubory projektu pro tuto jednoduchou aplikaci přidáte do kořenu projek
 
 1. V Průzkumníku řešení klikněte pravým tlačítkem na projekt **NodejsWebAppBlank** a zvolte **Přidat** > **Nová položka**.
 
-1. V dialogovém okně **Přidat novou položku** vyberte **Soubor TypeScript JSX**, zadejte název *app.tsx* a klikněte na **OK**.
+1. V **přidat novou položku** dialogovém okně vyberte **TypeScript JSX soubor**, zadejte název *app.tsx*a vyberte **OK**.
 
 1. Opakováním tohoto postupu přidejte *webpack config.js*. Místo souboru TypeScript JSX, zvolte **soubor JavaScript**.
 
@@ -268,13 +270,13 @@ V předchozím postupu jste do projektu přidali *webpack-config.js*. Dále při
 
     Pokud se místo uvedeného výstupu zobrazují nějaké chyby, je potřeba je před použitím aplikace odstranit. Příčinou těchto chyb může být skutečnost, že se vaše verze balíčků npm liší od verzí používaných v tomto kurzu. Jednou možností, jak chyby odstranit, je použití přesně těch verzí, které jsou uvedené v dřívějším postupu. Pokud jsou některé z těchto verzí balíčků zastaralé a způsobují chyby, může být k odstranění chyb potřeba nainstalovat novější verze.
 
-1. V Průzkumníku řešení klikněte pravým tlačítkem na uzel projektu a zvolte **Přidat** > **Existující složka**, pak zvolte složku *dist* a klikněte na **Vybrat složku**.
+1. V Průzkumníku řešení klikněte pravým tlačítkem na uzel projektu a zvolte **přidat** > **existující složku**, zvolte *dist* složky a vyberte  **Vyberte složku**.
 
     Visual Studio přidá do projektu složku *dist*, která obsahuje *app-bundle.js* a *app-bundle.js.map*.
 
 1. Otevřete *app-bundle.js* a zobrazte transpilovaný kód jazyka JavaScript.
 
-1. Pokud se zobrazí výzva k novému načtení externě změněných souborů, klikněte na **Ano všem**.
+1. Pokud se zobrazí výzva k znovu načíst externě změněné soubory, vyberte **Ano všem**.
 
     ![Načtení změněných souborů](../nodejs/media/tutorial-nodejs-react-reload-files.png)
 
@@ -340,7 +342,7 @@ V předchozí části jste připojili ladicí program ke kódu Node.js na stran�
 
 1. V dialogovém okně **Připojit k procesu** v poli **Připojit k** zvolte **Webkit kód** a zadáním slova **chrome** do pole pro filtr vyfiltrujte výsledky hledání.
 
-1. Vyberte proces Chrome se správným portem hostitele (v tomto příkladu 1337) a klikněte na **Připojit**.
+1. Vyberte proces Chrome s hostitelem správný port (1337 v tomto příkladu) a vyberte **Attach**.
 
     ![Připojení k procesu](../nodejs/media/tutorial-nodejs-react-attach-to-process.png)
 
@@ -366,7 +368,7 @@ V předchozí části jste připojili ladicí program ke kódu Node.js na stran�
 
 ## <a name="next-steps"></a>Další kroky
 
-V tomto kurzu jste se naučili vytvořit aplikaci Node.js a React, transpilovat JSX a provést ladění. Další informace o nástrojích Node.js Tools for Visual Studio najdete na wiki stránce.
-
 > [!div class="nextstepaction"]
-> [Node.js Tools for Visual Studio](https://github.com/Microsoft/nodejstools)
+> [Nasazení aplikace do Azure App Service](../deployment/quickstart-deploy-to-azure.md)
+
+V tomto kurzu jste se naučili vytvořit aplikaci Node.js a React, transpilovat JSX a provést ladění. Další informace najdete v tématu [Node.js tools pro Visual Studio na Githubu](https://github.com/Microsoft/nodejstools).

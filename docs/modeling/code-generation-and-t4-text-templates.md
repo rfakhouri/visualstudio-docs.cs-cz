@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f4fed2cbf00717e4eaf9c1353370dbd96037491
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fa6195a531c74aebbcb7884cc8e3158df6b9ca96
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425498"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089396"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Vytvoření kódu a textové šablony T4
 
@@ -58,7 +58,7 @@ Další informace najdete v tématu [generování textu běhu pomocí textových
 
 ## <a name="design-time-t4-text-templates"></a>Návrh textových šablon T4 čas
 
-Návrh čas tempaltes definovat součástí zdrojového kódu a dalším prostředkům vaší aplikace. Obvykle použijete několik šablon, které číst data v jednom vstupního souboru nebo databáze a generovat některé z vaší *.cs*, *VB*, nebo jiné zdrojové soubory. Každá šablona generuje jeden soubor. Jsou prováděna v sadě Visual Studio nebo MSBuild.
+Šablony doby návrhu definovat součástí zdrojového kódu a dalším prostředkům vaší aplikace. Obvykle použijete několik šablon, které číst data v jednom vstupního souboru nebo databáze a generovat některé z vaší *.cs*, *VB*, nebo jiné zdrojové soubory. Každá šablona generuje jeden soubor. Jsou prováděna v sadě Visual Studio nebo MSBuild.
 
 Soubor XML konfiguračních dat může být například vstupní data. Vždy, když chcete upravit soubor XML při vývoji, znovu vygenerujte textové šablony součástí kódu aplikace. Jednu z šablon může podobat následujícímu příkladu:
 

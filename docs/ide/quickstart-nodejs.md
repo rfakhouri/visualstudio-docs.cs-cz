@@ -1,7 +1,7 @@
 ---
 title: 'Rychlý úvod: Použití Visual Studio k vytvoření první aplikace Node.js'
 description: V tento rychlý start můžete vytvořit aplikaci Node.js v sadě Visual Studio
-ms.date: 11/15/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
@@ -14,18 +14,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6eebbcd696b55a6034864cc3cf0c4f44eaca8259
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 664eb75fb8fe105058ef78470245500e5e835515
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296292"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089274"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Rychlý úvod: Použití Visual Studio k vytvoření první aplikace Node.js
 
 V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou webovou aplikaci Node.js. Pokud jste ještě nenainstalovali Visual Studio 2017, přejděte k [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
 
 ## <a name="create-a-project"></a>Vytvoření projektu
+
 Nejdřív vytvoříte projekt Node.js webové aplikace.
 
 1. Pokud nemáte runtime Node.js již nainstalována, nainstalovat verzi LTS [Node.js](https://nodejs.org/en/download/) webu.
@@ -50,11 +51,11 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
    ![Průzkumník řešení](../ide/media/quickstart-nodejs-solution-explorer.png)
 
-  - Projekt je zvýrazněný tučným písmem a má název, který jste zadali v dialogovém okně **Nový projekt**. Na disku, je reprezentována tento projekt *.njsproj* soubor ve složce projektu.
+   - Projekt je zvýrazněný tučným písmem a má název, který jste zadali v dialogovém okně **Nový projekt**. Na disku, je reprezentována tento projekt *.njsproj* soubor ve složce projektu.
 
-  - Na nejvyšší úrovni je řešení, které má ve výchozím nastavení stejný název jako příslušný projekt. Řešení, reprezentované na disku souborem *.sln*, je kontejner pro jeden nebo více souvisejících projektů.
+   - Na nejvyšší úrovni je řešení, které má ve výchozím nastavení stejný název jako příslušný projekt. Řešení, reprezentované na disku souborem *.sln*, je kontejner pro jeden nebo více souvisejících projektů.
 
-  - Uzel npm zobrazuje všechny nainstalované balíčky npm. Po kliknutí pravým tlačítkem na uzel npm lze vyhledat a nainstalovat balíčky npm pomocí dialogového okna.
+   - Uzel npm zobrazuje všechny nainstalované balíčky npm. Po kliknutí pravým tlačítkem na uzel npm lze vyhledat a nainstalovat balíčky npm pomocí dialogového okna.
 
 1. Pokud chcete nainstalovat balíčky npm nebo node.js příkazy z příkazového řádku, klikněte pravým tlačítkem na uzel projektu a zvolte **sem otevřete příkazový řádek**.
 
@@ -84,9 +85,12 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
 1. Zavřete webový prohlížeč.
 
-Blahopřejeme k dokončení tento rychlý start! Věříme, že jste se naučili chvíli o prostředí Visual Studio IDE. Pokud chcete pustíte hlubší do jeho možnosti, pokračujte prosím se v kurzu **kurzy** části obsahu.
+Blahopřejeme k dokončení tento rychlý start, ve které jste získali začali s Visual Studio IDE a Node.js. Pokud chcete pustíte hlubší do jeho možnosti, pokračujte v kurzu **kurzy** části obsahu.
 
 ## <a name="next-steps"></a>Další kroky
 
-- Projděte [kurzu Node.js a Express](../nodejs/tutorial-nodejs.md)
-- Projděte [kurzu Node.js a reagují](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+> [!div class="nextstepaction"]
+> [Nasazení aplikace do Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+
+- [Kurz Node.js a Express](../nodejs/tutorial-nodejs.md)
+- [Kurz Node.js a reagují](../nodejs/tutorial-nodejs-with-react-and-jsx.md)

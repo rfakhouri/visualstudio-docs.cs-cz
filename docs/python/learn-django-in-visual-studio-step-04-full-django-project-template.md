@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8b9d14a9ba3c6428b4ec997d91addfaea30c0baf
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947481"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090046"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Krok 4: Použití kompletní šablonou webový projekt Django
 
@@ -217,5 +217,6 @@ Odpověď: Chybí koncové "$" v regulárním výrazu byl jednoduché dohledu v 
 
 ## <a name="go-deeper"></a>Přejděte hlubší
 
+- [Nasazení webové aplikace do Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Zápis první aplikace Django, část 4 - formulářů a obecného zobrazení](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - Kurz zdrojového kódu na Githubu: [Microsoft nebo python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

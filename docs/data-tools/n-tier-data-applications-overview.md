@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 43e75e69899f74fb67980172c546cdc99d41d173
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4e386c052b43ee62ddde0516fa203298fe1babe5
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747141"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089027"
 ---
 # <a name="n-tier-data-applications-overview"></a>Přehled vícevrstvých datových aplikací
 *N-vrstvá* data aplikací jsou data aplikací, které jsou rozdělené do několika *vrstev*. Nazývají se také „distribuované aplikace“ a „vícevrstvé aplikace“. N-vrstvé aplikace oddělují zpracování do samostatných vrstev, které jsou distribuovány mezi klientem a serverem. Při vývoji aplikací s přístupem k datům by mělo být cíleno na rozdělení mezi různými úrovněmi, které aplikaci tvoří.
@@ -72,14 +72,14 @@ Následující obrázek znázorňuje funkce a technologie, které jsou k dispo
 
 K datové vrstvě nelze přistupovat přímo z klienta v prezentační vrstvě. Namísto toho je ke komunikaci mezi prezentační a datovou vrstvou použita komponenta datového přístupu ve střední vrstvě.
 
-## <a name="help-for-n-tier-development"></a>Nápověda pro N-vrstvý vývoj
+## <a name="help-for-n-tier-development"></a>Nápověda pro vývoj n vrstvá
 Následující témata obsahují informace o práci s n-vrstvými aplikacemi:
 
 [Rozdělování datových sad a objektů TableAdapter do různých projektů](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
 [Návod: Vytvoření víceúrovňové datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
-[N-vrstvé a vzdálené aplikace s LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+[N-vrstvá a vzdálené aplikace s dotazy LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
 ## <a name="see-also"></a>Viz také:
 
