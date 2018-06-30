@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a21a84a9b8e96d771478415eae1a874d015572f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a83d9287fa4e89db439853737ed8d3140197ce69
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746283"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117638"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Návod: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (Návrhář relací objektů)
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) podporuje jedno tabulková dědičnost obvykle je implementované v relačním systémech. Tento názorný postup jejich rozšířením obecné kroky uvedené v [postupy: Konfigurace dědičnosti pomocí Návrhář relací objektů](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tématu a poskytuje některé reálná data za účelem ukázky použití dědičnosti v [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -53,10 +53,10 @@ ms.locfileid: "34746283"
 
     |Název sloupce|Datový typ|Povolit hodnoty Null|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**False**|
+    |**ID**|**int**|**false**|
     |**Typ**|**int**|**Hodnota TRUE**|
-    |**FirstName**|**Nvarchar(200)**|**False**|
-    |**LastName**|**Nvarchar(200)**|**False**|
+    |**FirstName**|**nvarchar(200)**|**false**|
+    |**LastName**|**nvarchar(200)**|**false**|
     |**Správce**|**int**|**Hodnota TRUE**|
 
 3.  Sloupec ID nastavte jako primární klíč.
@@ -93,7 +93,7 @@ ms.locfileid: "34746283"
 
 #### <a name="to-create-the-new-windows-forms-application"></a>Chcete-li vytvořit novou aplikaci Windows Forms
 
-1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu...** .
+1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový** > **projektu**.
 
 2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Desktop**.
 

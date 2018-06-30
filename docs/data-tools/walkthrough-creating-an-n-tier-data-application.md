@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 329214cded185a15fa1ef21b162955957523f5fc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5dae8a0cbc58bb202a609f465461e073006768e9
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746998"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117703"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Návod: Vytvoření víceúrovňové datové aplikace
 *N-vrstvá* data aplikace jsou aplikace, které přístup k datům a jsou rozdělené do několika logických vrstev, nebo *vrstev*. Rozdělit součásti aplikace do diskrétní úrovní zvyšuje udržovatelnosti a škálovatelnost aplikace. Dělá to tím, že umožňuje snazší přijetí nové technologie, které mohou být použity k jedné vrstvě, aniž by bylo potřeba změnit návrh celého řešení. N-vrstvá architektura obsahuje prezentační vrstvy, střední vrstvy, a datové vrstvy. Střední vrstva obvykle zahrnuje vrstva přístupu k datům, vrstvy obchodní logiky a sdílené komponenty, například ověřování a ověřování. Datová vrstva obsahuje relační databáze. Vícevrstvé aplikace obvykle uložit citlivé informace vrstva přístupu k datům ze střední vrstvě udržovat izolace koncovým uživatelům, kteří přistupují k prezentační vrstvy. Další informace najdete v tématu [vícevrstvé datové aplikace přehled](../data-tools/n-tier-data-applications-overview.md).
@@ -59,7 +59,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:
 
-    1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz...** .
+    1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz**.
 
        Otevře se okno editoru dotazů.
 
@@ -77,7 +77,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Vytvoření n-vrstvého řešení a knihovny tříd DataEntityTier
 
-1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu...** .
+1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový** > **projektu**.
 
 2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Desktop**.
 
@@ -94,7 +94,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 #### <a name="to-create-a-separate-class-library-for-the-tableadapters"></a>Vytvoření samostatné třídy knihovny pro TableAdapters
 
-1.  Klikněte pravým tlačítkem na řešení v Průzkumníku řešení a zvolte **přidat**, **nový projekt...** .
+1.  Klikněte pravým tlačítkem na řešení v Průzkumníku řešení a zvolte **přidat** > **nový projekt**.
 
 2.  V **nový projekt** dialogové okno, v prostředním podokně, vyberte **knihovny tříd**.
 
@@ -164,7 +164,7 @@ Tento návod ukazuje, jak přístup úroveň přístupu dat pomocí služby WCF,
 
 #### <a name="to-create-a-new-wcf-service-application"></a>Vytvoření nové aplikace služby WCF
 
-1.  Klikněte pravým tlačítkem na řešení v Průzkumníku řešení a zvolte **přidat**, **nový projekt...** .
+1.  Klikněte pravým tlačítkem na řešení v Průzkumníku řešení a zvolte **přidat** > **nový projekt**.
 
 2.  V **nový projekt** dialogové okno, v levém podokně vyberte **WCF**.  V prostředním podokně vyberte **knihovny služby WCF**.
 
@@ -218,7 +218,7 @@ Tento návod ukazuje, jak přístup úroveň přístupu dat pomocí služby WCF,
 
 3.  Vyberte **DataAccessTier** a **DataEntityTier** projekty.
 
-4.  Click **OK**.
+4.  Klikněte na tlačítko **OK**.
 
 ## <a name="adding-functions-to-the-service-to-call-the-getcustomers-and-getorders-methods-in-the-data-access-tier"></a>Přidání funkcí do služby za účelem volání metod GetCustomers a GetOrders ve vrstvě přístupu k datům
  Teď, když datová vrstva obsahuje metody, které se vrátit data, vytvořte metody ve službě data k volání metody v datové vrstvě přístup.
@@ -288,7 +288,7 @@ Tento návod ukazuje, jak přístup úroveň přístupu dat pomocí služby WCF,
 
 #### <a name="to-create-the-presentation-tier-project"></a>Vytvoření projektu prezentační vrstvy
 
-1.  Klikněte pravým tlačítkem na řešení v Průzkumníku řešení a zvolte **přidat**, **nový projekt...** .
+1.  Klikněte pravým tlačítkem na řešení v Průzkumníku řešení a zvolte **přidat** > **nový projekt**.
 
 2.  V **nový projekt** dialogové okno, v levém podokně vyberte **Windows Desktop**. V prostředním podokně vyberte **aplikace pro Windows Forms**.
 

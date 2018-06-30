@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c27cb590b5a8a4b38a143de5e6faba80414f97ba
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d128216f84228c9cd4946f9a38c6c1b7845f92f1
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926138"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117235"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Vypnutí omezení při naplňování datové sady
 
@@ -36,7 +36,7 @@ Obsahuje-li datovou sadu omezení (například omezení cizího klíče), může
 Kdyby existovalo žádný mechanismus pro povolit omezení pro dočasné pozastavení, by pokaždé, když jste se pokusili načíst záznamu do tabulky podřízené vyvolána chyba. Je také možné pozastavit všechna omezení v datové sadě s <xref:System.Data.DataRow.BeginEdit%2A>, a <xref:System.Data.DataRow.EndEdit%2A> vlastnosti.
 
 > [!NOTE]
-> Události ověření (například <xref:System.Data.DataTable.ColumnChanging> a<xref:System.Data.DataTable.RowChanging>) nebude se vyvolá, když jsou vypnuté omezení.
+> Události ověření (například <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.RowChanging>) nebude se vyvolá, když jsou vypnuté omezení.
 
 ## <a name="to-suspend-update-constraints-programmatically"></a>Pozastavení omezení aktualizace prostřednictvím kódu programu
 
@@ -51,7 +51,7 @@ Kdyby existovalo žádný mechanismus pro povolit omezení pro dočasné pozasta
 
 2.  V **vlastnosti** nastavte <xref:System.Data.DataSet.EnforceConstraints%2A> vlastnost `false`.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vyplnění datové sady s použitím objektů TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 - [Vztahy v datových sadách](../data-tools/relationships-in-datasets.md)

@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2cb92476d64abebb0dae24109e57940a19505cc1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c9d6a726b290bfed1c086f9fb03290a37c91490
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120167"
 ---
 # <a name="requirements-for-developing-sharepoint-solutions"></a>Požadavky na vývoj řešení služby SharePoint
- 
 Před použitím nástroje vývoj řešení služby SharePoint zahrnuté v sadě Visual Studio, musíte nainstalovat následující požadavky na systém:
 
 - Visual Studio C# nebo Visual Basic nebo edici nástroje Visual Studio Application Lifecycle Management (ALM).
@@ -49,15 +49,13 @@ Pro vývoj řešení služby SharePoint v sadě Visual Studio, je nutné nainsta
 Další informace o tom, jak nainstalovat [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], najdete v části [instalaci sady Visual Studio](../install/install-visual-studio.md).
 
 ## <a name="vista-and-windows-7-user-account-control-uac"></a>Řízení uživatelských účtů v systémech Vista a Windows 7
-
 [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] a [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] začlenit funkce zabezpečení, která se označuje jako řízení uživatelských účtů (UAC). Pro vývoj řešení služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] a [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] systémy, nástroje Řízení uživatelských účtů vyžaduje, že spustíte [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] jako správce systému. Na ploše otevřete místní nabídku pro [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]a potom zvolte **spustit jako správce**.
 
 Ke konfiguraci zástupce na ploše vždy spustit jako správce, otevřete jeho místní nabídky, zvolte **vlastnosti**, vyberte **Upřesnit** tlačítko a pak vyberte **spustit jako správce**  zaškrtávací políčko.
 
 Další informace najdete v tématu [pochopení a konfigurace řízení uživatelských účtů v systému Windows Vista](http://go.microsoft.com/fwlink/?LinkID=156476). a [řízení uživatelských účtů systému Windows 7](http://go.microsoft.com/fwlink/?LinkId=177523).
 
-## <a name="sharepoint-permissions-considerations"></a>Důležité informace o oprávnění služby SharePoint
-
+## <a name="sharepoint-permissions-considerations"></a>Aspekty oprávnění služby SharePoint
 Pro vývoj řešení služby SharePoint, musíte mít dostatečná oprávnění ke spouštění a ladění řešení služby SharePoint. Chcete-li otestovat řešení služby SharePoint, ujistěte se, zda máte potřebná oprávnění pomocí následujících kroků:
 
 1. Váš uživatelský účet přidáte jako správce systému.
@@ -70,6 +68,5 @@ Pro vývoj řešení služby SharePoint, musíte mít dostatečná oprávnění 
 
 3. Přidat uživatelský účet ke skupině WSS_ADMIN_WPG.
 
-## <a name="see-also"></a>Viz také
-
+## <a name="see-also"></a>Viz také:
 [Začínáme &#40;vývoj pro SharePoint v sadě Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)

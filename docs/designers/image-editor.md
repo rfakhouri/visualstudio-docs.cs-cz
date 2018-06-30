@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d82cfaf2f06018ce93e6c1fce1abd0b63809f6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 2981a94ec34d9631b8a125407e709b8400eaa0dd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747307"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117846"
 ---
 # <a name="image-editor"></a>Editor obrázků
 
@@ -46,7 +46,7 @@ Tato část popisuje, jak přidat bitovou kopii do projektu sady Visual Studio a
 
 ### <a name="to-add-an-image-to-your-project"></a>Chcete-li přidat bitovou kopii do projektu
 
-1.  V **Průzkumníku řešení**, otevřete místní nabídku pro projekt, který chcete přidat do a potom vyberte **přidat**, **novou položku**.
+1.  V **Průzkumníku řešení**, otevřete místní nabídku pro projekt, který chcete přidat do a potom vyberte **přidat** > **novou položku**.
 
 2.  V **přidat novou položku** dialogovém **nainstalovaná**, vyberte **grafiky**a pak vyberte příslušný formát pro bitovou kopii. Informace o tom, jak zvolte podle požadavků na formát souboru najdete v následující části.
 
@@ -124,10 +124,10 @@ Editor obrázků panely nástrojů obsahovat příkazy, které pomohou práce s 
 |Položka na panelu nástrojů|Popis|
 |------------------|-----------------|
 |**Tužky**|Výběr active barva se použije k vykreslení tahu alias. Můžete nastavit barvy a tloušťky tahu v **vlastnosti** okno.|
-|**štětce**|Výběr active barva se použije k vykreslení tahu vyhlazené. Můžete nastavit barvy a tloušťky tahu v **vlastnosti** okno.|
+|**Štětce**|Výběr active barva se použije k vykreslení tahu vyhlazené. Můžete nastavit barvy a tloušťky tahu v **vlastnosti** okno.|
 |**Rozprašovač**|Výběr active barva se použije k vykreslení tahu vyhlazené, který smíchá společně s bitovou kopii a že bude sytější jako funkce čas. Můžete nastavit barvy a tloušťky tahu v **vlastnosti** okno.|
 |**Kapátko**|Nastaví aktivní barva výběr barvy vybraných pixelů.|
-|**výplně**|Výběr active barva se použije k vyplnění oblasti obrázku. Ovlivněné oblast je definován jako pixelů, kdy se používá výplň, společně s každou pixelů, který je připojený ke svému pixelů stejné barvy a který je stejné barvy sám sebe. Výplň je použit v rámci aktivní výběr, je omezené oblasti ovlivněný výběrem.<br /><br /> Ve výchozím nastavení je spolu s ovlivněných oblast bitovou kopii podle jeho alfa součást smíšení active barva výběru. Pokud chcete přepsat oblasti ovlivněných pomocí active barva výběru, stiskněte a podržte klávesu Shift při použití nástroje výplně.|
+|**Vyplnění**|Výběr active barva se použije k vyplnění oblasti obrázku. Ovlivněné oblast je definován jako pixelů, kdy se používá výplň, společně s každou pixelů, který je připojený ke svému pixelů stejné barvy a který je stejné barvy sám sebe. Výplň je použit v rámci aktivní výběr, je omezené oblasti ovlivněný výběrem.<br /><br /> Ve výchozím nastavení je spolu s ovlivněných oblast bitovou kopii podle jeho alfa součást smíšení active barva výběru. Pokud chcete přepsat oblasti ovlivněných pomocí active barva výběru, stiskněte a podržte klávesu Shift při použití nástroje výplně.|
 |**Mazání**|Nastaví pixelů na plně průhlednou barvu, pokud bitovou kopii podporuje kanálu alfa. Barva pozadí aktivní, jinak hodnota nastaví pixelů.|
 |**Řádek**, **obdélníku**, **zaoblený obdélník**, **třemi tečkami**|Kreslení obrazce na bitovou kopii. Můžete nastavit barvy a Tloušťka obrysu v **vlastnosti** okno.<br /><br /> Kreslení na primitivní, který má stejné šířky a výšky, stiskněte a podržte stisknutou klávesu Shift při kreslení.|
 |**Text**|Kreslení textu pomocí výběr barev popředí. Barva pozadí je určen podle výběr barvu pozadí. Alfa hodnota výběru barva pozadí pro průhledné pozadí, musí být 0. Při oblasti textu je aktivní, můžete nastavit, zda text vykreslením s tahu vyhlazené a můžete nastavit text **hodnotu**, **písma**, **velikost**a stylu –**Bold**, **Italics**, nebo **podtržené**– v **vlastnosti** okno. Obsah a vzhled textu je dokončené, když je již aktivní oblasti textu.|
@@ -145,7 +145,7 @@ Některé bitové kopie formáty – například prostor pro nastavení obnovova
 |Nástroj|Popis|
 |----------|-----------------|
 |**Tužky**, **štětce**, **rozprašovač**, **řádku**, **obdélníku**, **zaoblený obdélník** , **Elipsy**, **textu**|A přizpůsobte active barva výběru společně s bitovou kopii, v **vlastnosti** okno, rozbalte **kanály** skupinu vlastností a sadu **kreslení** zaškrtávací políčko je na  **Alpha** kanálu a pak kreslení normálně.<br /><br /> Kreslení pomocí active barva výběr a ponechejte alfa bitové kopie na místě, zrušte **kreslení** políčko z **Alpha** kanálu a pak kreslení normálně.|
-|**výplně**|A přizpůsobte active barva výběru společně s bitovou kopii, vyberte právě oblasti k vyplnění.<br /><br /> Použít active barva výběru – včetně hodnotu alfa kanálu – přepsat bitovou kopii, stiskněte a podržte stisknutou klávesu Shift a potom zvolte oblasti k vyplnění.|
+|**Vyplnění**|A přizpůsobte active barva výběru společně s bitovou kopii, vyberte právě oblasti k vyplnění.<br /><br /> Použít active barva výběru – včetně hodnotu alfa kanálu – přepsat bitovou kopii, stiskněte a podržte stisknutou klávesu Shift a potom zvolte oblasti k vyplnění.|
 
 ### <a name="image-properties"></a>Vlastnosti bitové kopie
 

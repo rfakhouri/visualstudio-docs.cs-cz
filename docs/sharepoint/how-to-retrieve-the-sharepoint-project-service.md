@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f1e8cdcc863cfd363b1a73f11ed05ffb5a5ff12e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e2dc633621734740065b8e0c80dd34795eac830
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120361"
 ---
-# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Postupy: Načtení služby projektu SharePoint
+# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Postupy: načtení služby projektu SharePoint
   Mají přístup ke službě SharePoint projektu v následující typy řešení:  
   
 -   Rozšíření systému projektu služby SharePoint, jako je například rozšíření projektu, rozšíření položky projektu nebo definici typu položky projektu. Další informace o těchto typech rozšíření najdete v tématu [rozšíření systému projektu služby SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Jiný typ rozšíření sady Visual Studio, jako je například VSPackage.  
   
-## <a name="retrieving-the-service-in-project-system-extensions"></a>Načtení služby v rozšíření systému projektu  
+## <a name="retrieve-the-service-in-project-system-extensions"></a>Načtení služby v rozšíření systému projektu  
  V rozšíření systému projektu služby SharePoint, můžete přístup k projektu služby pomocí <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectService%2A> vlastnost <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> objektu.  
   
  Pomocí následujících postupů můžete také načíst služby projektu.  
@@ -74,7 +75,7 @@ ms.lasthandoff: 04/16/2018
   
      Další informace o definování typů položek projektu najdete v tématu [postupy: definování typu položky projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
-## <a name="retrieving-the-service-in-server-explorer-extensions"></a>Načtení služby v rozšíření Průzkumníka serveru  
+## <a name="retrieve-the-service-in-server-explorer-extensions"></a>Načtení služby v rozšíření Průzkumníka serveru  
  V rozšíření **připojení služby SharePoint** uzlu v **Průzkumníka serveru**, mají přístup ke službě projekt pomocí <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> vlastnost <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> objektu.  
   
 #### <a name="to-retrieve-the-service-in-a-server-explorer-extension"></a>Načtení služby v rozšíření Průzkumníka serveru  
@@ -90,7 +91,7 @@ ms.lasthandoff: 04/16/2018
   
      Další informace o rozšíření **připojení služby SharePoint** uzlu v **Průzkumníka serveru**, najdete v části [postupy: rozšíření uzlu služby SharePoint v Průzkumníku serveru](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
-## <a name="retrieving-the-service-in-other-visual-studio-extensions"></a>Načtení služby v jiné rozšíření Visual Studia  
+## <a name="retrieve-the-service-in-other-visual-studio-extensions"></a>Načtení služby v jiné rozšíření Visual Studia  
  Můžete načíst službu projektu ve VSPackage nebo v jakékoli rozšíření sady Visual Studio, který má přístup k <xref:EnvDTE80.DTE2> objektu v modelu objektu automatizace, jako je například Průvodce šablonou projektu, který implementuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní.  
   
  Ve VSPackage můžete požádat <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objekt pomocí jedné z následujících metod:  
@@ -101,9 +102,8 @@ ms.lasthandoff: 04/16/2018
   
  V rozšíření sady Visual Studio, který má přístup k <xref:EnvDTE80.DTE2> objekt, můžete požádat <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objekt pomocí <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> metodu <xref:Microsoft.VisualStudio.Shell.ServiceProvider> objektu. Další informace najdete v tématu [získávání služby z objektu DTE](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Použití služby projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
  [Postupy: získání služby](../extensibility/how-to-get-a-service.md)   
- [Postupy: Použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Postupy: použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md)  
   

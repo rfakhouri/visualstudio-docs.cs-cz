@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e94a842ce4c2b45dd746c96f8e4a84f479a84d
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: b7d0604e0e80fcb0fa14c65bd57669f60e68fd11
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238330"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118262"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Návod: Rozšíření typu položky projektu SharePoint
   Můžete použít **modelu připojení obchodních dat** položka projektu pro vytvoření modelu pro službu Business Data Connectivity (BDC) ve službě SharePoint. Ve výchozím nastavení když vytvoříte model pomocí této položky projektu data v modelu se uživatelům nezobrazí. Musíte taky vytvořit externího seznamu ve službě SharePoint umožňuje uživatelům zobrazit data.  
@@ -42,9 +42,9 @@ ms.locfileid: "36238330"
 ## <a name="prerequisites"></a>Požadavky  
  Následující součásti na vývojovém počítači k dokončení tohoto názorného postupu potřebujete:  
   
--   Podporované edice systému Microsoft Windows, SharePoint a Visual Studio. Další informace najdete v tématu [požadavky pro vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Podporované edice systému Microsoft Windows, SharePoint a Visual Studio. Další informace najdete v tématu [požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Tento návod používá **projektu VSIX** šablony v sadě SDK k vytvoření balíčku VSIX pro nasazení položka projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Tento návod používá **projektu VSIX** šablony v sadě SDK k vytvoření balíčku VSIX pro nasazení položka projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
  Znalost následující koncepty je užitečné, ale není nutné k dokončení průvodce:  
   

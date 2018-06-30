@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 173dbc74a24166f69ca97da6d5f68332345b90ea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76654568825bd0761097a1edd3ec8eb3bbc7060d
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120282"
 ---
-# <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Postupy: Ladění aplikace SharePoint s použitím technologie IntelliTrace
+# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Návod: Ladění aplikace SharePoint s použitím technologie IntelliTrace
 
 S použitím technologie IntelliTrace, můžete snadno ladění řešení služby SharePoint. Tradiční ladicí programy získáte jen snímek řešení aktuálně. Ale můžete použít IntelliTrace ke kontrole posledních událostí, které nastaly v řešení a kontext, ve které došlo k chybě a přejděte ke kódu.
 
@@ -55,7 +56,7 @@ K dokončení tohoto návodu budete potřebovat následující komponenty:
 
 - Visual Studio Enterprise.
 
-## <a name="BKMK_CreateReceiver"></a> Vytvoření příjemce funkce
+## <a name="create-a-feature-receiver"></a>Vytvoření příjemce funkce
 
 Nejprve je třeba vytvořit prázdný projektu služby SharePoint, který má příjemce funkce.
 
@@ -69,11 +70,11 @@ Nejprve je třeba vytvořit prázdný projektu služby SharePoint, který má p�
 
 3. V **Průzkumníku řešení**, otevřete místní nabídku pro **funkce** uzel a potom zvolte **přidat funkce**.
 
-     Zobrazí se Feature1.Feature.
+     *Feature1.Feature* se zobrazí.
 
 4. Otevřete místní nabídku pro Feature1.feature a potom zvolte **přidat příjemce událostí** přidat modul kódu s funkcí.
 
-## <a name="BKMK_AddCode"></a> Přidejte kód k příjemce funkce
+## <a name="add-code-to-the-feature-receiver"></a>Přidejte kód k příjemce funkce
 
 Dál přidejte kód pro dvě metody v příjemce funkce: `FeatureActivated` a `FeatureDeactivating`. Tyto metody se aktivuje vždy, když je funkce aktivace nebo deaktivace ve službě SharePoint, v uvedeném pořadí.
 
@@ -247,7 +248,7 @@ Dál přidejte kód pro dvě metody v příjemce funkce: `FeatureActivated` a `F
     }
     ```
 
-## <a name="BKMK_Test1"></a> Testování projektu
+## <a name="test-the-project"></a>Testování projektu
 
 Teď, když kód se přidá k příjemce funkce a data collector běží, nasadit a provozovat řešení služby SharePoint a otestovat, jestli správně funguje.
 
@@ -274,7 +275,7 @@ Teď, když kód se přidá k příjemce funkce a data collector běží, nasadi
 
      Obslužné rutiny události FeatureDeactivating() vrátí chybu.
 
-## <a name="BKMK_CollectDiagnosticData"></a> Shromáždění dat technologie IntelliTrace pomocí agenta Microsoft Monitoring Agent
+## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Shromáždění dat technologie IntelliTrace pomocí agenta Microsoft Monitoring Agent
 
 Pokud instalujete agenta Microsoft Monitoring Agent na počítači se systémem SharePoint, můžete ladit řešení služby SharePoint pomocí dat, která jsou podrobnější než obecné informace, které se vrátí IntelliTrace. Agent funguje mimo Visual Studio pomocí rutin prostředí PowerShell umožňuje zaznamenat informace o ladění při vaší spustí řešení služby SharePoint.
 
@@ -299,7 +300,7 @@ Pokud instalujete agenta Microsoft Monitoring Agent na počítači se systémem 
 
      **Příkaz Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"* 
 
-## <a name="BKMK_DebugSolution"></a> Ladění a opravte řešení služby SharePoint
+## <a name="debug-and-fix-the-sharepoint-solution"></a>Ladění a opravte řešení služby SharePoint
 
 Nyní můžete zobrazit soubor protokolu IntelliTrace v sadě Visual Studio můžete najít a opravte chybu v řešení služby SharePoint.
 
@@ -331,8 +332,8 @@ Nyní můžete zobrazit soubor protokolu IntelliTrace v sadě Visual Studio mů�
 
      Spustí kód nástroje nyní správně.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-[Zobrazení a ladění kódu pro SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
+[Ověřte a ladění kódu služby SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
 [IntelliTrace](/visualstudio/debugger/intellitrace)  
 [Návod: Ověření kódu pro SharePoint pomocí testování částí](https://msdn.microsoft.com/library/gg599006(v=vs.100).aspx)

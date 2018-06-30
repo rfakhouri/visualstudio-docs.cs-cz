@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c1554bad679a856725a984504d914859733ee73
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: b0bbea76c3c63cf562203f9a622acb2a54804bde
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238339"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117833"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Návod: Rozšíření Průzkumníka serveru pro zobrazení webové části
   V sadě Visual Studio, můžete použít **připojení služby SharePoint** uzlu **Průzkumníka serveru** zobrazíte součásti na webech služby SharePoint. Ale **Průzkumníka serveru** nezobrazí některé součásti ve výchozím nastavení. V tomto návodu budete rozšíříte **Průzkumníka serveru** tak, aby zobrazil galerii webových částí na každý z nich připojený web služby SharePoint.  
@@ -36,7 +36,7 @@ ms.locfileid: "36238339"
   
     -   Rozšíření definuje nový typ uzlu, který představuje instanci webové části. Tento nový typ uzlu je základem pro podřízené uzly v rámci nové **Galerie webových částí** uzlu. Zobrazí informace v nového typu uzlu webové části **vlastnosti** okno webová část, která reprezentuje. Typ uzlu také zahrnuje vlastní položku nabídky, můžete použít jako východisko pro provedení dalších úloh, které se týkají webové části.  
   
--   Vytváření dva vlastní příkazy služby SharePoint, které volá sestavení rozšíření. SharePoint – příkazy jsou metody, které je možné volat v sestavení rozšíření pro použití rozhraní API v objektovém modelu serveru pro službu SharePoint. V tomto návodu vytvoříte příkazy, které načíst informace o webové části z místního webu služby SharePoint na vývojovém počítači. Další informace najdete v tématu [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+-   Vytvořte dva vlastní příkazy služby SharePoint, které volá sestavení rozšíření. SharePoint – příkazy jsou metody, které je možné volat v sestavení rozšíření pro použití rozhraní API v objektovém modelu serveru pro službu SharePoint. V tomto návodu vytvoříte příkazy, které načíst informace o webové části z místního webu služby SharePoint na vývojovém počítači. Další informace najdete v tématu [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
 -   Vytváření rozšíření pro Visual Studio (VSIX) balíčku pro nasazení rozšíření.  
   
@@ -48,7 +48,7 @@ ms.locfileid: "36238339"
 ## <a name="prerequisites"></a>Požadavky  
  Následující součásti na vývojovém počítači k dokončení tohoto názorného postupu potřebujete:  
   
--   Podporované edice systému Windows, SharePoint a Visual Studio. Další informace najdete v tématu [požadavky pro vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Podporované edice systému Windows, SharePoint a Visual Studio. Další informace najdete v tématu [požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio SDK. Tento návod používá **projektu VSIX** šablony v sadě SDK k vytvoření balíčku VSIX pro nasazení položka projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
@@ -374,7 +374,7 @@ ms.locfileid: "36238339"
   
 ## <a name="see-also"></a>Viz také:
  [Rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Návod: Volání do objektového modelu klienta pro SharePoint v rozšíření Průzkumníka serveru](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
+ [Návod: Volání do modelu klientského objektu služby SharePoint v rozšíření Průzkumníka serveru](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Editor obrázků pro ikony](/cpp/windows/image-editor-for-icons)   
  [Vytvoření ikony nebo jiného obrázku &#40;Editor obrázků pro ikony&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   

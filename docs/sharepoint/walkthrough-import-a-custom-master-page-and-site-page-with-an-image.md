@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8d53cad00e3a1faedf07af42966a5cceddc2f33
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: eed72e71cbebc3bec167e23179220dc1c1a1f061
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238335"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118249"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Návod: Importujte vlastní stránky předlohy a stránka s bitovou kopií
   Tento návod ukazuje, jak importovat SharePoint stránky předlohy a stránky webu, který obsahuje bitovou kopii do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.  
@@ -177,7 +177,7 @@ ms.locfileid: "36238335"
   
 7.  Otevřete web služby SharePoint k zobrazení nasazené položky.  
   
- Alternativní způsob k importu souborů do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a nasadit je do služby SharePoint je na přidání souborů do modulů v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Postupy: Import stránky předlohy nebo motivu](../sharepoint/how-to-import-a-master-page-or-theme.md) a [vložené soubory v řešení pomocí modulů](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+ Alternativní způsob k importu souborů do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a nasadit je do služby SharePoint je na přidání souborů do modulů v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Postupy: Import stránky předlohy nebo motivu](../sharepoint/how-to-import-a-master-page-or-theme.md) a [použijte moduly vložení souborů do řešení](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
 ## <a name="see-also"></a>Viz také:
  [Import položek z existující stránky SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   

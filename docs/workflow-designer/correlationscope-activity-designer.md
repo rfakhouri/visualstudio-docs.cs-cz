@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b0ce34d5d8cdc3de6225aafa90b5b20016e5062
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: eae1f0d61492eba29b442d0fbfb22b77377228fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757710"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117059"
 ---
 # <a name="correlationscope-activity-designer"></a>Návrhář aktivity CorrelationScope
 
@@ -33,7 +33,7 @@ ms.locfileid: "36757710"
 
 **CorrelationScope** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů. Tím se vytvoří <xref:System.ServiceModel.Activities.CorrelationScope> aktivitu výchozí **DisplayName** z CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **CorrelationScope** Návrhář aktivity nebo v **DisplayName** pole **vlastnosti** okno.
 
-K určení <xref:System.ServiceModel.Activities.CorrelationHandle> používá podřízené aktivity zasílání zpráv, klikněte na tlačítko se třemi tečkami vedle položky **CorrelatesWith** pole **vlastnosti** okna zobrazte **Editor výrazů**  dialogové okno. Tuto vlastnost lze nastavit také na plochu návrháře aktivit.
+K určení <xref:System.ServiceModel.Activities.CorrelationHandle> používá podřízené aktivity zasílání zpráv, vyberte tlačítko se třemi tečkami vedle položky **CorrelatesWith** pole **vlastnosti** okna zobrazte **výraz Editor** dialogové okno. Tuto vlastnost lze nastavit také na plochu návrháře aktivit.
 
 Vyřazení jejich designeru v rámci aktivity obor v korelaci jsou určené **textu** pole v rámci **CorrelationScope** designer.
 

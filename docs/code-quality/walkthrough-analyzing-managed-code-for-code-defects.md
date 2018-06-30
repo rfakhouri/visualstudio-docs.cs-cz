@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a353d7a61f9bc1dbb83d37ad419c3d2fbdf656ba
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 49c122e5cf22e9290f6dab1d45539887c68c01bd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746556"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117716"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Návod: Analýza spravovaného kódu pro kód vady
 
@@ -29,7 +29,7 @@ Tento názorný postup vás provede procesem použití analýzy kódu pro analý
 
 ### <a name="to-create-a-class-library"></a>K vytvoření knihovny tříd
 
-1. Na **soubor** nabídce zvolte **nový** > **projektu...** .
+1. Na **soubor** nabídce zvolte **nový** > **projektu**.
 
 1. V **nový projekt** dialogové okno, rozbalte seznam **nainstalovaná** > **Visual C#** a potom zvolte **Windows Desktop**.
 

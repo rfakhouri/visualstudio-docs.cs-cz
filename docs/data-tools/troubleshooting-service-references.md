@@ -18,14 +18,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c244489f21dec3783aed9d970b46805d204a1104
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4230f2787dcfb84567cd60173cc102c243375e5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925052"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118080"
 ---
-# <a name="troubleshoot-service-references"></a>Řešení potíží s odkazy na službu
+# <a name="troubleshoot-service-references"></a>Řešení potíží s odkazy na služby
 
 V tomto tématu jsou uvedeny běžné problémy, které mohou nastat při práci s Windows Communication Foundation (WCF) nebo odkazy na služby WCF Data Services v sadě Visual Studio.
 
@@ -35,7 +35,7 @@ Když se vrátíte `DataSet` nebo `DataTable` ze služby, se může zobrazit vý
 
 Chcete-li vyřešit tuto chybu:
 
-1.  V **Průzkumníku**, poklikejte na soubor app.config a otevře se.
+1.  V **Průzkumníku řešení**, dvakrát klikněte *app.config* jej otevřete.
 
 2.  Vyhledejte `MaxReceivedMessageSize` vlastnost a změňte jej na hodnotu větší.
 
@@ -58,7 +58,7 @@ Chcete-li vyřešit tuto chybu:
 2.  Na **možnosti spuštění** zrušte **ověřování protokolem NTLM** zaškrtávací políčko.
 
     > [!NOTE]
-    > Měli byste vypnout ověřování protokolem NTLM pouze pro webové servery, které obsahují výhradně služby WCF. Zabezpečení služeb WCF je spravováno prostřednictvím konfigurace v souboru web.config. Díky tomu ověřování protokolem NTLM zbytečné.
+    > Měli byste vypnout ověřování protokolem NTLM pouze pro webové servery, které obsahují výhradně služby WCF. Zabezpečení služeb WCF je spravován prostřednictvím konfigurace v *web.config* souboru. Díky tomu ověřování protokolem NTLM zbytečné.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Úroveň přístupu pro vygenerované třídy nastavení nemá žádný vliv
 
@@ -104,6 +104,6 @@ Chcete-li tuto chybu vyřešit, zakažte informačních kanálů RSS:
 
 4.  Klikněte na tlačítko **OK** zavřete **Možnosti Internetu** dialogové okno.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

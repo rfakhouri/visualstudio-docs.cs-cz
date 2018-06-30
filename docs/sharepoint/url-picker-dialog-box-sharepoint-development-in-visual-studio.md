@@ -18,18 +18,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c890d1cd1acfa0acc5a28c6418dbd961f795107e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7820723c88fd76639fa47e5c97ad179a208fc18
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120163"
 ---
-# <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Dialogové okno pro výběr adresy URL (vývoj pro SharePoint v sadě Visual Studio)
+# <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Dialogové okno pro výběr adresy URL (vývoj pro SharePoint v sadě Visual Studio)
   V dialogovém okně pro výběr adresy URL můžete soubory, jako jsou hlavní stránkovací soubory nebo soubory obrázků, které jsou umístěné ve vašem projektu nebo na místním serveru, na kterém běží SharePoint.  
   
  Toto dialogové okno se zobrazí, když máte možnost vybrat soubor, který chcete nastavit vlastnost. Toto dialogové okno můžete otevřít tak, že zvolíte tlačítko se třemi tečkami (![ASP.NET – Návrhář mobilních řešení elipsy](../sharepoint/media/mwellipsis.gif "ASP.NET – Návrhář mobilních řešení elipsy")) vedle různé vlastnosti v **vlastnosti** okno. Tlačítko se třemi tečkami se rovněž zobrazuje jako IntelliSense výzvy při přiřazení hodnoty k určité atributy v **zdroj** zobrazení návrháře.  
   
-## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
+## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
  **Složky projektu**  
  Zobrazí seznam složek definované v projektu nebo na místním serveru, na kterém běží SharePoint. Zvolte tlačítko se rozšíření pro zobrazení podsložky.  
   
@@ -57,9 +58,8 @@ ms.lasthandoff: 04/16/2018
  **Soubory typu**  
  Umožňuje vybrat ze seznamu souborů, které jsou vhodné pro úlohy, kterou provádíte.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Vytváření stránek aplikací pro službu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Vytvoření webové části pro službu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Vytváření opakovaně použitelných ovládacích prvků pro webové části nebo stránky aplikací](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
-  
   

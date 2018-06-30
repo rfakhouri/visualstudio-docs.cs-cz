@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 907b20d3665a84f764619dc40a906b1d4096fd04
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 3af16a72832c15aa8471bee0b3dfc1af773d941b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946840"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118197"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Krok 2: Vytvoření aplikace Flask s zobrazení a šablony stránky
 
@@ -36,7 +36,7 @@ V kódu vytvořených šablonou "Prázdný webový projekt Flask", máte jediný
 
 1. Ve složce projektu, vytvořte složku aplikaci s názvem `HelloFlask` (klikněte pravým tlačítkem na projekt v **Průzkumníku řešení** a vyberte **přidat** > **novou složku** .)
 
-1. V `HelloFlask` složky, vytvořte soubor s názvem `__init.py__` s tímto obsahem, které vytvoří `Flask` instance a načte zobrazení aplikace (vytvořený v dalším kroku):
+1. V `HelloFlask` složky, vytvořte soubor s názvem `__init__.py` s tímto obsahem, které vytvoří `Flask` instance a načte zobrazení aplikace (vytvořený v dalším kroku):
 
     ```python
     from flask import Flask

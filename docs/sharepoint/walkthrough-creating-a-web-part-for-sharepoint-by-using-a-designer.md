@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edc9665882caae64e0548a00507022f32f3b2bd5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 01efc1972ea4833900b5e6f002d36ae51fa63a85
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120180"
 ---
-# <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>Návod: Vytvoření webové části pro službu SharePoint pomocí návrháře
+# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Návod: Vytvoření webové části pro službu SharePoint pomocí návrháře
 
 Pokud vytvoříte webové části pro web služby SharePoint, vaši uživatelé můžete přímo upravit obsah, vzhled a chování stránek v dané lokalitě pomocí prohlížeče. Tento postup vám ukáže, jak vytvořit webovou část vizuálně pomocí webu služby SharePoint **Visual webovou část** šablona projektu v sadě Visual Studio.
 
@@ -47,13 +48,13 @@ K dokončení tohoto návodu budete potřebovat následující komponenty:
 
 - Podporované edice systému Windows a služby SharePoint. V tématu [požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
 
-## <a name="creating-a-web-part-project"></a>Vytvoření projektu webové části
+## <a name="create-a-web-part-project"></a>Vytvoření projektu webové části
 
 Nejprve vytvořte projekt webové části pomocí **Visual webovou část** šablona projektu.
 
 1. Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pomocí **spustit jako správce** možnost.
 
-2. Na řádku nabídek zvolte **soubor**, **nový**, **projektu**.
+2. Na řádku nabídek zvolte **soubor** > **nový** > **projektu**.
 
      **Nový projekt** zobrazí se dialogové okno.
 
@@ -73,7 +74,7 @@ Návrh webové části přidáním ovládacích prvků z **sada nástrojů** na 
 
 1. V aplikaci Visual Web Developer, zvolte **návrhu** tab přepněte do zobrazení návrhu.
 
-2. Na řádku nabídek zvolte **zobrazení**, **sada nástrojů**.
+2. Na řádku nabídek zvolte **zobrazení** > **sada nástrojů**.
 
 3. V **standardní** uzlu **sada nástrojů**, vyberte **CheckBoxList** řízení a poté proveďte jednu z následujících kroků:
 
@@ -85,7 +86,7 @@ Návrh webové části přidáním ovládacích prvků z **sada nástrojů** na 
 
 5. V návrháři, vyberte **Button1** tlačítko.
 
-6. Na řádku nabídek zvolte **zobrazení**, **vlastnosti – okno**.
+6. Na řádku nabídek zvolte **zobrazení** > **vlastnosti – okno**.
 
      **Vlastnosti** otevře se okno.
 
@@ -129,7 +130,7 @@ Přidejte kód, který umožňuje uživateli přidat kalendáře na zobrazení h
      [!code-vb[SP_VisualWebPart#4](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#4)]
      [!code-csharp[SP_VisualWebPart#4](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#4)]
 
-## <a name="testing-the-web-part"></a>Testování webové části
+## <a name="test-the-web-part"></a>Test webové části
 
 Když spouštíte projekt, otevře se web služby SharePoint. Webová část je automaticky přidá do Galerie webových částí služby SharePoint. K otestování tohoto projektu, budete provádět následující úlohy:
 
@@ -139,7 +140,7 @@ Když spouštíte projekt, otevře se web služby SharePoint. Webová část je 
 
 ### <a name="to-add-events-to-calendar-lists-on-the-site"></a>Přidání události do kalendáře seznamy na webu
 
-1. V sadě Visual Studio vyberte klávesy F5.
+1. Ve Visual Studiu zvolte **F5** klíč.
 
      Otevře se stránka serveru SharePoint a [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] panel Snadné spuštění se zobrazí na stránce.
 
@@ -189,9 +190,8 @@ Ve webové části zadejte kalendářích, které chcete zahrnout do zobrazení 
 
 Události ze všech kalendářů, které jste zadali se zobrazí v zobrazení měsíčního kalendáře.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-[Vytváření webových částí pro službu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Postupy: Vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Postupy: Vytvoření webové části služby SharePoint pomocí návrháře](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
+[Vytvoření webové části pro službu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
+[Postupy: vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
 [Návod: Vytvoření webové části pro službu SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

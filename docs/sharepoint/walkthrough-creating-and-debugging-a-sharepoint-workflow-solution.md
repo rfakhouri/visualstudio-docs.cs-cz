@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90015dce107eb15859fcb707cc265b84840ca546
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6035b8ceb693434e2e8bc652b91ee31ceb3ebe02
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120188"
 ---
-# <a name="walkthrough-creating-and-debugging-a-sharepoint-workflow-solution"></a>Návod: Vytváření a ladění řešení pracovního postupu služby SharePoint
+# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Návod: Vytváření a ladění řešení pracovního postupu služby SharePoint
   Tento návod ukazuje, jak vytvořit šablonu základní sekvenční pracovní postup. Pracovní postup kontroluje vlastnost knihovny sdílených dokumentů k určení, zda byl revidován dokumentu. Pokud dokument byl revidován, dokončení pracovního postupu.  
   
  Tento návod znázorňuje následující úlohy:  
@@ -46,11 +47,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  
   
--   Podporované edice systému Microsoft Windows a služby SharePoint. Další informace najdete v tématu [požadavky pro vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Podporované edice systému Microsoft Windows a služby SharePoint. Další informace najdete v tématu [požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
-## <a name="adding-properties-to-the-sharepoint-shared-documents-library"></a>Přidání vlastnosti do SharePoint sdílené knihovny dokumentů  
+## <a name="add-properties-to-the-sharepoint-shared-documents-library"></a>Přidání vlastnosti do knihovny sdílených dokumentů služby SharePoint
  Sledovat stav kontroly dokumenty v **sdílené dokumenty** knihovny, vytvoříme tři nové vlastnosti pro sdílené dokumenty na našem webu služby SharePoint: `Status`, `Assignee`, a `Review Comments`. Jsme definovali tyto vlastnosti v **sdílené dokumenty** knihovny.  
   
 #### <a name="to-add-properties-to-the-sharepoint-shared-documents-library"></a>Přidání vlastnosti do služby SharePoint sdílené dokumenty knihovny  
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  Vytvořte další dva sloupce a název je **zmocněnec** a **zkontrolovat komentáře**. Nastavte typ sloupce zmocněnec jako jeden řádek textu a typ sloupce zkontrolovat komentáře jako více řádků textu.  
   
-## <a name="enabling-documents-to-be-edited-without-requiring-a-check-out"></a>Povolení dokumenty k provádění úprav bez nutnosti vyhradit si  
+## <a name="enable-documents-to-be-edited-without-requiring-a-check-out"></a>Povolit dokumenty k provádění úprav bez nutnosti podívejte se na
  Aby bylo jednodušší testovací šablonu pracovního postupu, když upravujete dokumenty bez nutnosti podívejte se na. V dalším postupu můžete nakonfigurovat web služby SharePoint, povolit.  
   
 #### <a name="to-enable-documents-to-be-edited-without-checking-them-out"></a>Chcete-li povolit dokumenty k provádění úprav bez rezervovat je  
@@ -86,14 +87,14 @@ ms.lasthandoff: 04/16/2018
   
 5.  Zavřete prohlížeč.  
   
-## <a name="creating-a-sharepoint-sequential-workflow-project"></a>Vytvoření projektu sekvenčního pracovního postupu služby SharePoint  
+## <a name="create-a-sharepoint-sequential-workflow-project"></a>Vytvoření projektu sekvenčního pracovního postupu služby SharePoint
  Sekvenční pracovní postup je sada kroky, které provádí v pořadí, až skončí poslední aktivita. V tomto postupu vytvoříme sekvenční pracovní postup, který se bude vztahovat na našich seznamu Sdílené dokumenty. Pracovní postup Průvodce umožňuje přidružit definici webu nebo v seznamu definici pracovního postupu a umožňuje vám určit, kdy se spustí pracovní postup.  
   
 #### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>Vytvoření projektu sekvenčního pracovního postupu služby SharePoint  
   
 1.  Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Na řádku nabídek zvolte **soubor**, **nový**, **projektu** zobrazíte **nový projekt** dialogové okno.  
+2.  Na řádku nabídek zvolte **soubor** > **nový** > **projektu** zobrazíte **nový projekt** dialogové okno.  
   
 3.  Rozbalte **SharePoint** uzel v rámci buď **Visual C#** nebo **jazyka Visual Basic**a potom zvolte **2010** uzlu.  
   
@@ -105,9 +106,9 @@ ms.lasthandoff: 04/16/2018
   
 6.  V **zadejte úroveň lokality a zabezpečení pro ladění** vyberte **nasadit jako řešení farmy** možnost tlačítko a potom vyberte **Dokončit** tlačítko tak, aby přijímal úroveň a výchozí web vztah důvěryhodnosti.  
   
-     Tento krok nastaví úroveň důvěryhodnosti pro řešení jako řešení farmy, k dispozici jenom možnost pro projekty pracovního postupu. Další informace najdete v tématu [v izolovaném prostoru aspekty řešení](../sharepoint/sandboxed-solution-considerations.md).  
+     Tento krok nastaví úroveň důvěryhodnosti pro řešení jako řešení farmy, k dispozici jenom možnost pro projekty pracovního postupu. Další informace najdete v tématu [aspekty řešení v izolovaném prostoru](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  V **Průzkumníku řešení**, vyberte uzel projektu a potom na řádku nabídek zvolte **projektu**, **přidat novou položku**.  
+7.  V **Průzkumníku řešení**, vyberte uzel projektu a potom na řádku nabídek zvolte **projektu** > **přidat novou položku**.  
   
 8.  V části buď **Visual C#** nebo **jazyka Visual Basic**, rozbalte **SharePoint** uzel a potom vyberte **2010** uzlu.  
   
@@ -125,7 +126,7 @@ ms.lasthandoff: 04/16/2018
   
      Tato stránka umožňuje určit při spuštění pracovního postupu. Ve výchozím nastavení spustí pracovní postup buď když se uživatel ručně spustí v SharePoint nebo při vytvoření nové položky, ke kterému je přidružené pracovního postupu.  
   
-## <a name="creating-workflow-activities"></a>Vytváření aktivit pracovního postupu  
+## <a name="create-workflow-activities"></a>Vytvoření aktivity pracovního postupu
  Pracovní postupy obsahují jednu nebo více *aktivity* které představují akce k provedení. Pomocí návrháře pracovních postupů můžete uspořádat aktivity pracovního postupu. V tomto postupu přidáme dvě aktivity do pracovního postupu: Aktivita typu HandleExternalEventActivity a OnWorkFlowItemChanged. Tyto aktivity monitorovat stav kontroly dokumenty v **sdílené dokumenty** seznamu  
   
 #### <a name="to-create-workflow-activities"></a>Chcete-li vytvořit aktivity pracovního postupu  
@@ -171,12 +172,12 @@ ms.lasthandoff: 04/16/2018
     |**CorrelationToken**|**workflowToken**|  
     |**Vyvolání**|**onWorkflowItemChanged**|  
   
-## <a name="handling-activity-events"></a>Zpracování události aktivit  
+## <a name="handle-activity-events"></a>Zpracování události aktivit
  Nakonec zkontrolujte stav dokumentu z každé aktivity. Pokud dokument byl revidován, je dokončení pracovního postupu.  
   
 #### <a name="to-handle-activity-events"></a>Zpracování události aktivit  
   
-1.  V Workflow1.cs nebo Workflow1.vb, přidat následující pole do horní části `Workflow1` třídy. V tomto poli se používá v aktivitě k určení, jestli po dokončení pracovního postupu.  
+1.  V *Workflow1.cs* nebo *Workflow1.vb*, přidat následující pole do horní části `Workflow1` třídy. V tomto poli se používá v aktivitě k určení, jestli po dokončení pracovního postupu.  
   
     ```vb  
     Dim workflowPending As Boolean = True  
@@ -247,14 +248,14 @@ ms.lasthandoff: 04/16/2018
   
 5.  Uložte projekt.  
   
-## <a name="testing-the-sharepoint-workflow-template"></a>Testování šabloně pracovního postupu služby SharePoint  
+## <a name="test-the-sharepoint-workflow-template"></a>Testování šablony pracovního postupu služby SharePoint
  Při spuštění ladicího programu, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na serveru SharePoint nasadí šablonu pracovního postupu a přidruží pracovního postupu se **sdílené dokumenty** seznamu. Testování pracovního postupu, spusťte instanci pracovního postupu z dokumentu v **sdílené dokumenty** seznamu.  
   
 #### <a name="to-test-the-sharepoint-workflow-template"></a>K testování šablony pracovního postupu služby SharePoint  
   
-1.  V Workflow1.cs nebo Workflow1.vb nastavit zarážky vedle **onWorkflowActivated** metoda.  
+1.  V *Workflow1.cs* nebo *Workflow1.vb*, vedle položky zarážku **onWorkflowActivated** metoda.  
   
-2.  Zvolte klávesy F5 sestavení a spuštění řešení.  
+2.  Vyberte **F5** klíč sestavení a spuštění řešení.  
   
      Zobrazí se stránka serveru SharePoint.  
   
@@ -268,7 +269,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ověřte, že ladicí program zastaví u zarážky vedle `onWorkflowActivated` metoda.  
   
-7.  Zvolte klávesy F5 pro pokračování v provádění.  
+7.  Vyberte **F5** klíč pro pokračování v provádění.  
   
 8.  Můžete změnit nastavení pro zde dokumentu, ale v je ponechte výchozí hodnoty pro nyní výběrem **Uložit** tlačítko.  
   
@@ -284,16 +285,15 @@ ms.lasthandoff: 04/16/2018
   
 12. V **sdílené dokumenty** ověřte, zda hodnota pod **stav dokumentu** sloupec je nastavený na **zkontrolujte dokončení**. Obnovit **sdílené dokumenty** stránky a ověřte, že hodnota pod **MySharePointWorkflow - Workflow1** sloupec je nastavený na **dokončeno**. Znamená to, že po dokončení pracovního postupu a že byl revidován dokumentu.  
   
-## <a name="next-steps"></a>Další kroky  
+## <a name="next-steps"></a>Další kroky
  Další informace o tom, jak vytvořit pracovní postup šablony z těchto témat:  
   
 -   Další informace o aktivitách pracovního postupu služby SharePoint, v tématu [aktivity pracovního postupu pro SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=178992).  
   
 -   Další informace o aktivitách modelu Windows Workflow Foundation, najdete v části [System.Workflow.Activities Namespace](http://go.microsoft.com/fwlink/?LinkId=178993).  
   
-## <a name="see-also"></a>Viz také  
- [Vytváření řešení pracovního postupu služby SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
+## <a name="see-also"></a>Viz také:
+ [Vytvořit pracovní postup řešení služby SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Projektu služby SharePoint a šablony položek projektu](../sharepoint/sharepoint-project-and-project-item-templates.md)   
- [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  
+ [Vytváření a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   

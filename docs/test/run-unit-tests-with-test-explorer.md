@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 425a4e6fd85f635d6e95122a55fe0d09fde7825c
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: ecdb9e80273075be02daa274177577d70d9e2e62
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238329"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118223"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů jednotek pomocí Průzkumníka testů
 
@@ -44,7 +44,7 @@ Můžete spustit všechny testy v řešení, všechny testy ve skupině nebo sad
 
 - Pokud chcete spustit všechny testy v řešení, zvolte **spustit všechny**.
 
-- Pokud chcete spustit všechny testy ve výchozí skupině, vyberte **spustit...**  a pak zvolte skupinu v nabídce.
+- Pokud chcete spustit všechny testy ve výchozí skupině, vyberte **spustit** a pak zvolte skupinu v nabídce.
 
 - Vyberte jednotlivé testy, které chcete spustit, otevřete v místní nabídce pro vybrané test a zvolte **spustit vybrané testy**.
 

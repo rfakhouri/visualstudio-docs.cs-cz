@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 25e56d77ef9094338455b3a3f576fe8bc58387b2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 35c5854afe5363641979e0f79af70c2d3b925b05
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947359"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37116985"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generovat třídy nebo typu v sadě Visual Studio
 
@@ -68,7 +68,7 @@ Generování kódu platí pro:
    > [!TIP]
    > Použití **zobrazení náhledu změn** odkaz v dolní části okna náhledu [zobrazíte všechny změny](../../ide/preview-changes.md) , budou provedeny před provedením váš výběr.
 
-1. Pokud jste vybrali **vygenerovat nový typ...**  položku **generovat typ** otevře se dialogové okno. Konfigurovat usnadnění, typ a umístění nového typu.
+1. Pokud jste vybrali **vygenerovat nový typ** položku **generovat typ** otevře se dialogové okno. Konfigurovat usnadnění, typ a umístění nového typu.
 
    ![Vygenerovat typ](media/class-newtype-cs.png)
 
@@ -90,7 +90,7 @@ Třídě nebo struktuře se vytvoří. Pro jazyk C# se také vytvoří konstrukt
 
    ![Generování výsledků třídy jazyka Visual Basic](media/class-result-vb.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Generování kódu](../code-generation-in-visual-studio.md)
 - [Náhled změn](../../ide/preview-changes.md)

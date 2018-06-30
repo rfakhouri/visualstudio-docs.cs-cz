@@ -22,16 +22,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab104ee31246a524e2c34c513a66a5f5143d5f55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa210047a65870806877e1d22e08fc1f2b9bc010
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120170"
 ---
-# <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Postupy: Zahrnutí vlastního sestavení ve funkci BDC
+# <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Postupy: zahrnutí vlastního sestavení ve funkci BDC
   Projekt odkazovat z jiných projektů ve stejném řešení sestavení. Ale musíte přidat tyto sestavení do souboru funkce projektu pomocí **přiřazení odkazovaná sestavení do LobSystems** dialogové okno.  
   
-### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>K zahrnutí vlastního sestavení ve funkci Business Data Connectivity (BDC)  
+### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>K zahrnutí vlastního sestavení ve funkci připojení (BDC) obchodních dat
   
 1.  V **Průzkumníku**, vyberte složku, která obsahuje modelu služby BDC.  
   
@@ -51,11 +52,10 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Pokud chcete ladit kód v vlastní sestavení, je nutné přidat sestavení balíčku řešení. Další informace najdete v tématu [postupy: Přidání a odebrání dalších sestavení](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Postupy: určení lokalizovaných názvů, vlastností a oprávnění pomocí zdrojového souboru](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [Postupy: Přidání stávajícího souboru modelu služby BDC do projektu služby SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
  [Vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Postupy: vytvoření modelu služby BDC](../sharepoint/how-to-create-a-bdc-model.md)   
- [Integrace obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
+ [Integragte podniková data do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   

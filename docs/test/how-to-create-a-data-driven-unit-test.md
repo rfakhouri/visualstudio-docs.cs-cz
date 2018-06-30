@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2c15087e1e107dcbd01ba0662fecee336acd33b6
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: f8811d2c9b1d27a2a436004da29711a7a4e34f55
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844257"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117589"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Postupy: Testy jednotek řízené daty
 
@@ -153,7 +153,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
 ##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Spouštění testu a zobrazení výsledků
- Po dokončení zápisu testovací metoda sestavte projekt test. Metoda testů se zobrazí v okně Průzkumníka testů v **není spuštění testů** skupiny. Při spuštění, zápisu a znovu spusťte testy Průzkumníka testů zobrazí výsledky v skupiny **se nezdařilo testy**, **předán testy**, a **není spuštění testů**. Můžete zvolit **spustit všechny** spustit všechny testy, nebo zvolte **spustit...**  vybrat podmnožinu testů ke spuštění.
+ Po dokončení zápisu testovací metoda sestavte projekt test. Metoda testů se zobrazí v okně Průzkumníka testů v **není spuštění testů** skupiny. Při spuštění, zápisu a znovu spusťte testy Průzkumníka testů zobrazí výsledky v skupiny **se nezdařilo testy**, **předán testy**, a **není spuštění testů**. Můžete zvolit **spustit všechny** spustit všechny testy, nebo zvolte **spustit** vybrat podmnožinu testů ke spuštění.
 
  Na panelu výsledků testu v horní části Průzkumníka je animované svůj test běží. Na konci testovacím běhu panelu bude zelený, pokud všechny testy prošly nebo red Pokud některý z testů se nezdařilo. V podokně podrobností v dolní části okna Průzkumníka testů se zobrazí souhrn testovacím běhu. Vyberte testovací Chcete-li zobrazit podrobnosti o testu v dolním podokně.
 

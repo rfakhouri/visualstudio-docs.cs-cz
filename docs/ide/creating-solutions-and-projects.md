@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3a25927b80db9da2c9217ce04cf2064e26461a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: dc3b7e95e2d162df5a9a84fbc8777907253149e5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571611"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118099"
 ---
 # <a name="create-solutions-and-projects"></a>Vytváření řešení a projektů
 
@@ -43,7 +43,7 @@ Který výše uvedeného, projekty a řešení není nutné vývoj aplikací v s
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Vytvoření projektu ze šablony projektu
 
-1. Chcete-li vytvořit nový projekt v sadě Visual Studio několika způsoby. Na **– úvodní stránka**, zadejte název šablony projektu v **vyhledávání šablony projektů** pole, nebo zvolte **vytvořit nový projekt** odkazu k otevření **nový Projekt** dialogové okno. Můžete také **soubor** > **nový** > **projektu...**  v nabídce panelu, nebo zvolte **nový projekt** tlačítka na panelu nástrojů.
+1. Chcete-li vytvořit nový projekt v sadě Visual Studio několika způsoby. Na **– úvodní stránka**, zadejte název šablony projektu v **vyhledávání šablony projektů** pole, nebo zvolte **vytvořit nový projekt** odkazu k otevření **nový Projekt** dialogové okno. Můžete také **soubor** > **nový** > **projektu** v nabídce panelu, nebo zvolte **nový projekt** tlačítko na panelu nástrojů.
 
   ![Úvodní stránka](./media/vside-newproject1.png)
 
@@ -100,7 +100,7 @@ Můžete také vytvořit prázdný řešení, které mají žádné projekty. To
 
 ### <a name="to-create-an-empty-solution"></a>Vytvoření prázdného řešení
 
-1. V nabídce zvolte **soubor** > **nový** > **projektu...** .
+1. V nabídce zvolte **soubor** > **nový** > **projektu**.
 
 1. V levém (**šablony**) podokně vyberte **jiné typy projektů** > **řešení sady Visual Studio** v seznamu rozšířené.
 

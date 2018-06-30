@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 794f3aeab023d6b6c5c606a4c1fb8f706a4a7989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83cc24d72bfb679a1b683a67b995356fc887064c
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978915"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117794"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Začínáme s Live jednotkové testování v sadě Visual Studio
 
@@ -41,7 +41,7 @@ Začněte tím, že vytváření řešení sady Visual Studio s názvem `Utility
 
 Řešení je kontejner pro jeden nebo více projektů. Pokud chcete vytvořit řešení, otevřete Visual Studio 2017 a proveďte následující kroky:
 
-1. Vyberte **soubor**, **nový**, **projektu** nejvyšší úrovně nabídce sady Visual Studio.
+1. Vyberte **soubor** > **nový** > **projektu** nejvyšší úrovně nabídce sady Visual Studio.
 
 1. V **nový projekt** dialogové okno, rozbalte **jiné typy projektů** uzel a vyberte možnost **řešení sady Visual Studio**. Vyberte **prázdného řešení** šablony v pravém podokně a zadejte `UtilityLibraries` v **název** textového pole, jak ukazuje následující obrázek:
 
@@ -52,7 +52,7 @@ Začněte tím, že vytváření řešení sady Visual Studio s názvem `Utility
 Teď, když jste vytvořili řešení, vytvoříte knihovny tříd s názvem `StringLibrary` obsahující počet rozšiřující metody pro práci s řetězci.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na `UtilityLibraries` řešení a vyberte **přidat**, **nový projekt**.
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na `UtilityLibraries` řešení a vyberte **přidat** > **nový projekt**.
 
 1. V **přidat nový projekt** dialogovém okně, vyberte jazyka C# uzlu, pak vyberte **.NET Standard**.
 
@@ -80,7 +80,7 @@ Teď, když jste vytvořili řešení, vytvoříte knihovny tříd s názvem `St
 1.  Vyberte **sestavení**, **sestavit řešení** nejvyšší úrovně nabídce sady Visual Studio. Visual Studio má úspěšně sestavit knihovnu.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
-1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na `UtilityLibraries` řešení a vyberte **přidat**, **nový projekt**.
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na `UtilityLibraries` řešení a vyberte **přidat** > **nový projekt**.
 
 1. V **přidat nový projekt** dialogovém okně, vyberte uzel jazyka Visual Basic a pak vyberte **.NET Standard**.
 
@@ -118,7 +118,7 @@ Teď, když jste vytvořili řešení, vytvoříte knihovny tříd s názvem `St
 Dalším krokem je vytvoření projektu testů jednotek pro testování `StringLibrary` knihovny. Vytvořte testy částí provedením následujících kroků:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na `UtilityLibraries` řešení a vyberte **přidat**, **nový projekt**.
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na `UtilityLibraries` řešení a vyberte **přidat** > **nový projekt**.
 
 1. V **přidat nový projekt** dialogovém okně, vyberte jazyka C# uzlu, pak vyberte **.NET Core**.
 
@@ -156,7 +156,7 @@ Dalším krokem je vytvoření projektu testů jednotek pro testování `StringL
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
-1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na `UtilityLibraries` řešení a vyberte **přidat**, **nový projekt**.
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na `UtilityLibraries` řešení a vyberte **přidat** > **nový projekt**.
 
 1. V **přidat nový projekt** dialogovém okně, vyberte uzel jazyka Visual Basic a pak vyberte **.NET Core**.
 
@@ -382,6 +382,6 @@ To poskytuje dostatek informací pro předběžné šetření o chybě. Buď `Te
 
 ---
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 [Live testování v sadě Visual Studio částí](live-unit-testing.md)
 [za provozu jednotky testování často kladené dotazy](live-unit-testing-faq.md)

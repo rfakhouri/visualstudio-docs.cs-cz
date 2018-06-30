@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff164eda610bcc69f908910e2dd23de3439f541f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bafcec9def78d05c7c7d03f43dfc1d184348bcd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954089"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117690"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Vytvoření kódu v době návrhu pomocí textových šablon T4
 Textové šablony T4 návrhu umožňují generování programovém kódu a další soubory v vaší [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Většinou se tak, aby se liší kód, který generují podle data z zápisu šablony *modelu*. Model je soubor nebo databáze, která obsahuje klíčové informace o požadavcích vaší aplikace.
@@ -42,11 +42,11 @@ Textové šablony T4 návrhu umožňují generování programovém kódu a dalš
 
 1.  Vytvoření [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu nebo otevření stávajícího.
 
-     Například **soubor** nabídce zvolte **nový**, **projektu**.
+     Například **soubor** nabídce zvolte **nový** > **projektu**.
 
 2.  Do projektu přidejte textový soubor šablonu a zadejte jeho název, který má příponu **.tt**.
 
-     Chcete-li to provést, v **Průzkumníku řešení**, na místní nabídky projektu, zvolte **přidat**, **novou položku**. V **přidat novou položku** dialogové okno pole vyberte **textové šablony** v prostředním podokně.
+     Chcete-li to provést, v **Průzkumníku řešení**, na místní nabídky projektu, zvolte **přidat** > **novou položku**. V **přidat novou položku** dialogové okno pole vyberte **textové šablony** v prostředním podokně.
 
      Všimněte si, že **Custom Tool** vlastnost souboru je **TextTemplatingFileGenerator**.
 
@@ -67,7 +67,7 @@ Textové šablony T4 návrhu umožňují generování programovém kódu a dalš
 
 5.  Uložte soubor.
 
-     Můžete se setkat **upozornění zabezpečení** okno zprávy, které vás vyzve k potvrzení, že chcete spustit šablonu. Click **OK**.
+     Můžete se setkat **upozornění zabezpečení** okno zprávy, které vás vyzve k potvrzení, že chcete spustit šablonu. Klikněte na tlačítko **OK**.
 
 6.  V **Průzkumníku řešení**, rozbalte uzel šablony soubor a soubor, který má příponu **.txt**. Tento soubor obsahuje textu ze šablony.
 

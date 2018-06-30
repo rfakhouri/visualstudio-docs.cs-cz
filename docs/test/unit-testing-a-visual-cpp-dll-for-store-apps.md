@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 0e2fbdc3d48b39bc481a392adc654f38551d333d
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233526"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117625"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Postup testování knihovny DLL Visual C++
 
@@ -26,7 +26,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> Vytvoření řešení a projektu testování částí
 
-1.  Na **soubor** nabídce zvolte **nový** > **nový projekt...** .
+1.  Na **soubor** nabídce zvolte **nový** > **nový projekt**.
 
 2.  V dialogovém okně Nový projekt rozbalte **nainstalovaná** > **Visual C++** a zvolte **univerzální pro Windows**. Zvolte **jednotky testování aplikace (univerzální pro Windows)** ze seznamu šablon projektu.
 
@@ -131,11 +131,11 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
 1.  Přidejte do projektu RooterLibTests RooterLib.
 
-    1.  V Průzkumníku řešení, vyberte **RooterLibTests** projektu a potom zvolte **odkazy...**  v místní nabídce.
+    1.  V Průzkumníku řešení, vyberte **RooterLibTests** projektu a potom zvolte **odkazy** v místní nabídce.
 
     2.  V dialogovém okně Vlastnosti projektu RooterLib rozbalte **společných vlastností** a zvolte **Framework a odkazy na**.
 
-    3.  Zvolte **přidat nový odkaz...**
+    3.  Zvolte **přidat nový odkaz**
 
     4.  V **přidat odkaz na** dialogové okno, rozbalte seznam **řešení** a potom zvolte **projekty**. Vyberte **RouterLib** položky.
 

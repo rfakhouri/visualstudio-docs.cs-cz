@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: acd471ca33b0b3dc5057744e22c9d7e5a4c25980
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca29232acae2b67d4e2b04c96bd1dde5e595b83f
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120266"
 ---
-# <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Návod: Import položek z existující stránky SharePoint
+# <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Návod: Import položek z existující stránky SharePoint
   Tento návod ukazuje, jak import položek z existující stránky SharePoint do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.  
   
  Tento návod ukazuje následující úlohy:  
@@ -40,11 +41,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  
   
--   Podporované edice systému [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] a služby SharePoint. Další informace najdete v tématu [požadavky pro vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Podporované edice systému [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] a služby SharePoint. Další informace najdete v tématu [požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
-## <a name="customizing-a-sharepoint-site"></a>Přizpůsobení webu služby SharePoint  
+## <a name="customize-a-sharepoint-site"></a>Přizpůsobení webu služby SharePoint
  V tomto příkladu vytvoříte a přizpůsobit podřízeného webu služby SharePoint a přidání nového sloupce webu do jiného podřízeného webu pro pozdější použití. Později budete exportovat do souboru WSP první web a pak importovat sloupec vlastní lokality do druhé podřízeného webu pomocí WSP Importovat projekt.  
   
 #### <a name="to-create-and-customize-a-sharepoint-site"></a>Vytvářet a přizpůsobovat webu služby SharePoint  
@@ -75,7 +76,7 @@ ms.lasthandoff: 04/16/2018
   
 13. **Testovací sloupec** sloupec se zobrazí ve sloupci vlastní nadpis v galerii sloupce webu.  
   
-## <a name="exporting-the-sharepoint-site"></a>Export Web služby SharePoint  
+## <a name="exporting-the-sharepoint-site"></a>Export Web služby SharePoint
  V dalším kroku získat soubor SharePoint instalační program (WSP), který obsahuje položky služby SharePoint a elementy, které chcete importovat do vaší [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint. Pokud již soubor WSP nemáte, musíte z existující stránky SharePoint vytvořit. V tomto příkladu budete exportovat do souboru WSP výchozí web služby SharePoint.  
   
 > [!IMPORTANT]  
@@ -101,12 +102,12 @@ ms.lasthandoff: 04/16/2018
   
 7.  V **stažení souboru** dialogovém okně vyberte **Uložit** tlačítko pro uložení souboru v lokálním systému, ve výchozím nastavení v složky se staženými soubory.  
   
-## <a name="importing-the-wsp-file"></a>Import souborů WSP  
- Teď, když máte WSP soubor, který obsahuje položky, kterou chcete znovu použít (vlastní stránky sloupec testovací sloupec), import souborů WSP k přístupu.  
+## <a name="import-the-wsp-file"></a>Import souborů WSP
+ Teď, když máte *WSP* soubor, který obsahuje položky, kterou chcete znovu použít (vlastní stránky sloupec testovací sloupec), naimportujte *WSP* souboru k němu přístup.  
   
 #### <a name="to-import-a-wsp-file"></a>Import souborů WSP  
   
-1.  V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], na řádku nabídek zvolte **soubor**, **nový**, **projektu** zobrazíte **nový projekt** dialogové okno. Pokud vaše IDE nastaven pro použití nastavení vývoj jazyka Visual Basic, v řádku nabídek, zvolte **soubor**, **nový projekt**.  
+1.  V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], na řádku nabídek zvolte **soubor** > **nový** > **projektu** zobrazíte **nový projekt**dialogové okno. Pokud vaše IDE nastaven pro použití nastavení vývoj jazyka Visual Basic, v řádku nabídek, zvolte **soubor** > **nový projekt**.  
   
 2.  Rozbalte **SharePoint** uzel v rámci buď **Visual C#** nebo **jazyka Visual Basic**a potom zvolte **2010** uzlu.  
   
@@ -118,23 +119,23 @@ ms.lasthandoff: 04/16/2018
   
 5.  V **co je úrovně důvěryhodnosti pro toto řešení služby SharePoint?** část, ponechte výběr jako **nasadit jako řešení v izolovaném prostoru**.  
   
-6.  V **zadejte nový zdroj projektu** stránce, přejděte do umístění na serveru, kam jste uložili soubor WSP, dříve a pak vyberte **Další** tlačítko.  
+6.  V **zadejte nový zdroj projektu** stránky, přejděte do umístění na serveru, kam jste uložili *WSP* dříve souboru a potom zvolte **Další** tlačítko.  
   
     > [!NOTE]  
-    >  Pokud se rozhodnete **Dokončit** tlačítko na této stránce, všechny dostupné položky v souboru WSP budou importovány.  
+    >  Pokud se rozhodnete **Dokončit** tlačítko na této stránce, všechny položky k dispozici v *WSP* souboru budou importovány.  
   
 7.  V **vybrat položky k importu** pole, zrušte zaškrtnutí všech políček v seznamu, s výjimkou **testovací sloupec**a potom zvolte **Dokončit** tlačítko.  
   
-     Vzhledem k tomu, že seznam obsahuje mnoho položek, můžete zvolit Ctrl + klíče vyberte všechny položky v seznamu, vyberte klíč MEZERNÍK zrušte zaškrtnutí všech políček a potom vyberte zaškrtněte políčko vedle položky **testovací sloupec** položky.  
+     Vzhledem k tomu, že seznam obsahuje mnoho položek, můžete **Ctrl**+**A** klíče vybrat všechny položky v seznamu, vyberte klíč MEZERNÍK zrušte zaškrtnutí všech políček a pak vyberte pouze kontroly vedle pole **testovací sloupec** položky.  
   
-     Po dokončení operace importu nový projekt s názvem **WspImportProject1** se vytvoří složku s názvem, který obsahuje **pole**. V této složce se sloupci vlastní stránky **testovací sloupec** a jeho definice souboru Elements.xml.  
+     Po dokončení operace importu nový projekt s názvem **WspImportProject1** se vytvoří složku s názvem, který obsahuje **pole**. V této složce se sloupci vlastní stránky **testovací sloupec** a jeho definice souboru *Elements.xml*.  
   
-## <a name="deploying-the-project"></a>Nasazení projektu  
+## <a name="deploy-the-project"></a>Nasazení projektu
  Nakonec nasazení **WspImportProject1** na druhý server SharePoint podřízeného webu, že jste dříve vytvořili zobrazení sloupci vlastní stránky.  
   
 #### <a name="to-deploy-the-project"></a>K nasazení projektu  
   
-1.  V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vyberte nasazení a spuštění projektu import WSP klávesy F5.  
+1.  V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vyberte **F5** klíč k nasazení a spuštění *WSP* Importovat projekt.  
   
 2.  Na webu služby SharePoint otevřete **Akce webu** nabídce a potom zvolte **nastavení lokality** zobrazíte na stránce Nastavení webu.  
   
@@ -144,9 +145,8 @@ ms.lasthandoff: 04/16/2018
   
      Všimněte si, že sloupec vlastní lokality, který jste importovali z první web služby SharePoint se zobrazí v seznamu.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Import položek z existující stránky SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Vytváření opakovaně použitelných ovládacích prvků pro webové části nebo stránky aplikací](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-  
   

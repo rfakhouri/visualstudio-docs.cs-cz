@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4ee4d9a1c64d39e6ef05f9c01b26686f13c6dea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7a1ef45b6bfa51944cb7fb3ac38057d9fc02a1dc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926807"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118184"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Návod: Vytvoření služby WCF Data Service pomocí grafického subsystému WPF a Entity Framework
 Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] který je hostován v [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci a potom k němu přístup z aplikace Windows Forms.
@@ -49,7 +49,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:
 
-    1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz...** .
+    1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz**.
 
        Otevře se okno editoru dotazů.
 
@@ -154,7 +154,7 @@ V dalších krocích vytvoříte klientskou aplikaci založenou na modelu Windo
 
 #### <a name="to-create-the-client-application"></a>Vytvoření klientské aplikace
 
-1.  V řádku nabídek zvolte soubor, **přidat**, **nový projekt**.
+1.  V řádku nabídek zvolte soubor, **přidat** > **nový projekt**.
 
 2.  V **nový projekt** dialogové okno, rozbalte seznam **jazyka Visual Basic** nebo **Visual C#** uzel a zvolte **Windows** uzel a potom zvolte  **Aplikaci Windows Forms**.
 
@@ -287,7 +287,7 @@ V dalším volitelném kroku se dozvíte, jak filtrovat data, která služba vr
 
 6.  Do textového pole zadejte **Londýn**a pak zvolte tlačítko. Zobrazí se pouze zákazníci z Londýna.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Postupy: Přidání, aktualizace nebo odebrání odkazu na službu WCF Data](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

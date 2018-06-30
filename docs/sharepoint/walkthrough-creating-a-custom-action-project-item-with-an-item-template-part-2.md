@@ -14,16 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86e176ba2b6b4da026e5ecfc341ac535d9a32f84
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: 13d3c9db34824808cf5e02fbe7fb1af3911dfd0f
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120200"
 ---
-# <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2
+# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružit ho pomocí šablony položky v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce vám pomůže shromažďovat informace od uživatelů při použití šablony přidat novou instanci položky projektu do projektu. Informace, které slouží k inicializaci položky projektu.  
   
- V tomto návodu budete přidávat Průvodce pro položky projektu vlastní akce, která je znázorněna v [návod: vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Pokud uživatel přidá vlastní položky projektu akce do projektu služby SharePoint, Průvodce shromažďuje informace o vlastní akci (třeba jeho polohu a adresu URL má přejít při koncový uživatel rozhodne ho) a přidá tyto informace do souboru Elements.xml v novém Položka projektu.  
+ V tomto návodu budete přidávat Průvodce pro položky projektu vlastní akce, která je znázorněna v [návod: vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Pokud uživatel přidá vlastní položky projektu akce do projektu služby SharePoint, Průvodce shromažďuje informace o vlastní akci (třeba jeho polohu a adresu URL má přejít při koncový uživatel rozhodne ho) a přidá tyto informace *Elements.xml* soubor v nové položky projektu.  
   
  Tento návod ukazuje následující úlohy:  
   
@@ -43,7 +44,7 @@ ms.lasthandoff: 05/23/2018
   
  Potřebujete taky následující součásti na vývojovém počítači k dokončení tohoto názorného postupu:  
   
--   Podporované edice systému Windows, SharePoint a Visual Studio. Další informace najdete v tématu [požadavky pro vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Podporované edice systému Windows, SharePoint a Visual Studio. Další informace najdete v tématu [požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio SDK. Tento návod používá **projektu VSIX** šablony v sadě SDK k vytvoření balíčku VSIX pro nasazení položka projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
@@ -53,7 +54,7 @@ ms.lasthandoff: 05/23/2018
   
 -   Vlastní akce ve službě SharePoint. Další informace najdete v tématu [vlastní akce](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
-## <a name="creating-the-wizard-project"></a>Vytvoření projektu průvodce  
+## <a name="create-the-wizard-project"></a>Vytvoření projektu průvodce
  Pro dokončení tohoto návodu, musíte přidat projekt do CustomActionProjectItem řešení, které jste vytvořili v [návod: vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Budete implementovat <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní a definovat Průvodce uživatelského rozhraní v tomto projektu.  
   
 #### <a name="to-create-the-wizard-project"></a>Vytvoření projektu průvodce  
@@ -72,7 +73,7 @@ ms.lasthandoff: 05/23/2018
   
 6.  Odstraňte položku UserControl1 z projektu.  
   
-## <a name="configuring-the-wizard-project"></a>Konfigurace projektu průvodce  
+## <a name="configure-the-wizard-project"></a>Konfigurace projektu průvodce
  Než vytvoříte v průvodci, musíte přidat okno Windows Presentation Foundation (WPF), souboru kódu a odkazy na sestavení do projektu.  
   
 #### <a name="to-configure-the-wizard-project"></a>Ke konfiguraci projektu průvodce  
@@ -103,12 +104,12 @@ ms.lasthandoff: 05/23/2018
   
 9. V **vlastnosti** okno, změňte hodnotu **vložit zprostředkovatel komunikace s objekty typy** vlastnost **False**.  
   
-## <a name="defining-the-default-location-and-id-strings-for-custom-actions"></a>Definování výchozí umístění a ID řetězce pro vlastní akce  
- Každá vlastní akce obsahuje umístění a ID, který je uveden v `GroupID` a `Location` atributy `CustomAction` element v souboru Elements.xml. V tomto kroku definujete některé platné řetězce pro tyto atributy v projektu ItemTemplateWizard. Po dokončení tohoto průvodce, tyto řetězce se zapisují do souboru Elements.xml v položky projektu akce vlastní když uživatelé zadat umístění a ID v průvodci.  
+## <a name="define-the-default-location-and-id-strings-for-custom-actions"></a>Zadejte výchozí umístění a ID řetězce pro vlastní akce
+ Každá vlastní akce obsahuje umístění a ID, který je uveden v `GroupID` a `Location` atributy `CustomAction` element v *Elements.xml* souboru. V tomto kroku definujete některé platné řetězce pro tyto atributy v projektu ItemTemplateWizard. Po dokončení tohoto průvodce, tyto řetězce se zapisují do *Elements.xml* souboru v položce projektu vlastní akce, když uživatelé zadat umístění a ID v průvodci.  
   
  Tato ukázka pro jednoduchost, podporuje pouze podmnožinu identifikátory a dostupná výchozí umístění. Úplný seznam najdete v tématu [výchozí umístění vlastní akce a ID](http://go.microsoft.com/fwlink/?LinkId=181964).  
   
-#### <a name="to-define-the-default-location-and-id-strings"></a>Zadat výchozí umístění a ID řetězce  
+#### <a name="to-define-the-default-location-and-id-strings"></a>Zadat výchozí umístění a ID řetězce
   
 1.  Otevřete.  
   
@@ -117,10 +118,10 @@ ms.lasthandoff: 05/23/2018
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs#6)]
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb#6)]  
   
-## <a name="creating-the-wizard-ui"></a>Vytvoření uživatelského rozhraní Průvodce  
+## <a name="create-the-wizard-ui"></a>Vytvořit průvodce uživatelského rozhraní
  Přidejte XAML pro definování uživatelského rozhraní průvodce a přidat kód pro vazbu některé ovládací prvky v průvodci na ID řetězce. Průvodce, který vytvoříte vypadá takto: integrované Průvodce pro projekty SharePoint v sadě Visual Studio.  
   
-#### <a name="to-create-the-wizard-ui"></a>Chcete-li vytvořit průvodce uživatelského rozhraní  
+#### <a name="to-create-the-wizard-ui"></a>Chcete-li vytvořit průvodce uživatelského rozhraní
   
 1.  V **ItemTemplateWizard** projektu, otevřete místní nabídku pro **WizardWindow.xaml** souboru a potom vyberte **otevřete** a otevřete okno v návrháři.  
   
@@ -145,7 +146,7 @@ ms.lasthandoff: 05/23/2018
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb#7)]
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs#7)]  
   
-## <a name="implementing-the-wizard"></a>Implementace průvodce  
+## <a name="implement-the-wizard"></a>Implementace průvodce
  Definujte funkci Průvodce implementací <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní.  
   
 #### <a name="to-implement-the-wizard"></a>K implementaci Průvodce  
@@ -160,9 +161,9 @@ ms.lasthandoff: 05/23/2018
   
 #### <a name="to-build-your-project"></a>K sestavení projektu  
   
-1.  Na řádku nabídek zvolte **sestavení**, **sestavit řešení**.  
+1.  Na řádku nabídek zvolte **sestavení** > **sestavit řešení**.  
   
-## <a name="associating-the-wizard-with-the-item-template"></a>Průvodce přidružením šablony položky  
+## <a name="associate-the-wizard-with-the-item-template"></a>Průvodce přidružit šablony položky
  Teď, když jste implementovali průvodce, musíte přidružíte **vlastní akce** šablony položky provedením tři hlavní kroky:  
   
 1.  Podepsání sestavení silným názvem průvodce.  
@@ -181,7 +182,7 @@ ms.lasthandoff: 05/23/2018
   
 4.  V **vytvořit klíč se silným názvem** dialogovém okně zadejte název, zrušte **chránit Moje soubor klíče s heslem** zaškrtněte políčko a potom vyberte **OK** tlačítko.  
   
-5.  Na řádku nabídek zvolte **sestavení**, **sestavit řešení**.  
+5.  Na řádku nabídek zvolte **sestavení** > **sestavit řešení**.  
   
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>K získání tokenu veřejného klíče pro sestavení průvodce  
   
@@ -191,13 +192,13 @@ ms.lasthandoff: 05/23/2018
     sn.exe -T PathToWizardAssembly  
     ```  
   
-     Token veřejného klíče pro sestavení ItemTemplateWizard.dll je zapsán do okna příkazového řádku Visual Studia.  
+     Token veřejného klíče pro *ItemTemplateWizard.dll* sestavení je zapsán do okna příkazového řádku Visual Studia.  
   
 2.  Nechte okno příkazového řádku Visual Studia otevřené. Token veřejného klíče pro dokončení dalšího postupu budete potřebovat.  
   
 #### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>Chcete-li přidat odkaz na sestavení průvodce v souboru .vstemplate  
   
-1.  V **Průzkumníku řešení**, rozbalte **ItemTemplate** uzel projektu a pak otevřete soubor ItemTemplate.vstemplate.  
+1.  V **Průzkumníku řešení**, rozbalte **ItemTemplate** uzel projektu a pak otevřete *ItemTemplate.vstemplate* souboru.  
   
 2.  U konce souboru, přidejte následující `WizardExtension` element mezi `</TemplateContent>` a `</VSTemplate>` značky. Nahraďte *YourToken* hodnotu `PublicKeyToken` atributem, token veřejného klíče, který jste získali v předchozím postupu.  
   
@@ -212,14 +213,14 @@ ms.lasthandoff: 05/23/2018
   
 3.  Soubor uložte a zavřete.  
   
-## <a name="adding-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Přidání do souboru Elements.xml v šabloně položky nahraditelné parametry  
- Přidejte do souboru Elements.xml v projektu ItemTemplate několik nahraditelné parametry. Tyto parametry jsou inicializovány v `PopulateReplacementDictionary` metoda v `CustomActionWizard` třídu, která je definována dříve. Pokud uživatel přidá do projektu položka projektu vlastní akce, Visual Studio automaticky nahradí tyto parametry v souboru Elements.xml v nové položky projektu hodnot zadaných v průvodci.  
+## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Nahraditelné parametry pro přidání *Elements.xml* souboru v šabloně položky
+ Přidat několik nahraditelné parametry *Elements.xml* souboru v projektu ItemTemplate. Tyto parametry jsou inicializovány v `PopulateReplacementDictionary` metoda v `CustomActionWizard` třídu, která je definována dříve. Pokud uživatel přidá do projektu položka projektu vlastní akce, Visual Studio automaticky nahradí tyto parametry v *Elements.xml* souboru v nové položky projektu s hodnotami, které zadal v průvodci.  
   
  Nahraditelné parametr je token, který se spustí a končí znak dolaru ($). Kromě definování vlastní nahraditelné parametry, můžete použít předdefinované parametry, které definuje systému projektu služby SharePoint a inicializuje. Další informace najdete v tématu [nahraditelné parametry](../sharepoint/replaceable-parameters.md).  
   
-#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Chcete-li přidat do souboru Elements.xml nahraditelné parametry  
+#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Nahraditelné parametry pro přidání *Elements.xml* souboru
   
-1.  V projektu ItemTemplate nahraďte obsah souboru Elements.xml následující kód XML.  
+1.  V projektu ItemTemplate, nahraďte obsah *Elements.xml* soubor s následující kód XML.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -239,7 +240,7 @@ ms.lasthandoff: 05/23/2018
   
 2.  Soubor uložte a zavřete.  
   
-## <a name="adding-the-wizard-to-the-vsix-package"></a>Průvodce přidáním balíčku VSIX  
+## <a name="add-the-wizard-to-the-vsix-package"></a>V průvodci Přidat do balíčku VSIX
  V souboru source.extension.vsixmanifest v projektu VSIX přidejte odkaz na projekt průvodce tak, aby se nasazuje s balíčku VSIX, který obsahuje položky projektu.  
   
 #### <a name="to-add-the-wizard-to-the-vsix-package"></a>Chcete-li přidat průvodce balíčku VSIX  
@@ -256,9 +257,9 @@ ms.lasthandoff: 05/23/2018
   
 5.  V **projektu** vyberte **ItemTemplateWizard**a potom zvolte **OK** tlačítko.  
   
-6.  Na řádku nabídek zvolte **sestavení**, **sestavit řešení**a pak se ujistěte, že řešení zkompiluje bez chyb.  
+6.  Na řádku nabídek zvolte **sestavení** > **sestavit řešení**a pak se ujistěte, že řešení zkompiluje bez chyb.  
   
-## <a name="testing-the-wizard"></a>Testování průvodce  
+## <a name="test-the-wizard"></a>Testování průvodce
  Nyní jste připraveni k testování průvodce. Nejprve spusťte ladění řešení CustomActionProjectItem v experimentální instanci sady Visual Studio. Otestujte průvodce pro položky projektu vlastní akce v projektu služby SharePoint v experimentální instanci sady Visual Studio. Nakonec sestavte a spusťte projektu služby SharePoint k ověření, že vlastní akce funguje podle očekávání.  
   
 #### <a name="to-start-to-debug-the-solution"></a>Spusťte ladění řešení  
@@ -267,17 +268,17 @@ ms.lasthandoff: 05/23/2018
   
 2.  V projektu ItemTemplateWizard otevřete soubor kódu CustomActionWizard a pak přidejte zarážku na první řádek kódu `RunStarted` metoda.  
   
-3.  Na řádku nabídek zvolte **ladění**, **výjimky**.  
+3.  Na řádku nabídek zvolte **ladění** > **výjimky**.  
   
 4.  V **výjimky** dialogové okno pole, ujistěte se, že **vyvolaná** a **neošetřené uživatelem** zaškrtnutí políček u **běžné výjimky za běhu jazyka**jsou vymazány a potom vyberte **OK** tlačítko.  
   
-5.  Spuštění ladění výběrem klávesu F5, nebo na panelu nabídek, výběr **ladění**, **spustit ladění**.  
+5.  Spuštění ladění výběrem **F5** klíče, nebo v nabídce panelu Výběr **ladění** > **spustit ladění**.  
   
      Visual Studio nainstaluje rozšíření do %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom akce Project Item\1. 0 a spustí experimentální instanci sady Visual Studio. Položka projektu budete testovat v této instanci sady Visual Studio.  
   
 #### <a name="to-test-the-wizard-in-visual-studio"></a>K testování průvodce v sadě Visual Studio  
   
-1.  V experimentální instanci sady Visual Studio na řádku nabídek zvolte **soubor**, **nový**, **projektu**.  
+1.  V experimentální instanci sady Visual Studio na řádku nabídek zvolte **soubor** > **nový** > **projektu**.  
   
 2.  Rozbalte položku **Visual C#** nebo **jazyka Visual Basic** uzlu (v závislosti na jazyce, který podporuje vaše šablony položky), rozbalte **SharePoint** uzel a potom zvolte **2010** uzlu.  
   
@@ -293,7 +294,7 @@ ms.lasthandoff: 05/23/2018
   
 8.  Ověřte, že kód ve druhé instanci sady Visual Studio zastaví na zarážce, kterou jste nastavili výše v `RunStarted` metoda.  
   
-9. Pokračujte výběrem klávesy F5 nebo v nabídce panelu Výběr ladění projektu **ladění**, **pokračovat**.  
+9. Pokračujte výběrem ladění projektu **F5** klíč, nebo v nabídce panelu Výběr **ladění** > **pokračovat**.  
   
      Zobrazí se Průvodce nastavením služby SharePoint.  
   
@@ -307,11 +308,11 @@ ms.lasthandoff: 05/23/2018
   
 14. V **URL** zadejte **http://msdn.microsoft.com/sharepoint/default.aspx**a potom zvolte **Dokončit** tlačítko.  
   
-     Visual Studio přidá položku s názvem **CustomAction1** projektu a otevře Elements.xml souboru v editoru. Ověřte, zda Elements.xml obsahuje hodnoty, které jste zadali v průvodci.  
+     Visual Studio. přidá položku s názvem **CustomAction1** projektu a otevře *Elements.xml* souboru v editoru. Ověřte, že *Elements.xml* obsahuje hodnoty, které jste zadali v průvodci.  
   
 #### <a name="to-test-the-custom-action-in-sharepoint"></a>K testování vlastní akce ve službě SharePoint  
   
-1.  V experimentální instanci sady Visual Studio, vyberte klávesy F5 nebo v řádku nabídek zvolte **ladění**, **spustit ladění**.  
+1.  V experimentální instanci sady Visual Studio, vyberte **F5** klíče, nebo na řádku nabídek zvolte **ladění** > **spustit ladění**.  
   
      Vlastní akce se zabalí a nasazené na web služby SharePoint určeného **adresa URL webu** vlastností projektu a webový prohlížeč otevře na stránku výchozího tohoto webu.  
   
@@ -328,12 +329,12 @@ ms.lasthandoff: 05/23/2018
   
 4.  V části **komunikace** záhlaví v horní části stránky, vyberte **SharePoint Developer Center** propojit, ověřte, že prohlížeči se otevře web http://msdn.microsoft.com/sharepoint/default.aspxa pak zavřete prohlížeč.  
   
-## <a name="cleaning-up-the-development-computer"></a>Čištění vývojovém počítači  
+## <a name="cleaning-up-the-development-computer"></a>Čištění vývojovém počítači
  Po dokončení testování položky projektu odeberte položku Šablona projektu z experimentální instanci sady Visual Studio.  
   
 #### <a name="to-clean-up-the-development-computer"></a>Vyčistěte vývojovém počítači  
   
-1.  V experimentální instanci sady Visual Studio na řádku nabídek zvolte **nástroje**, **rozšíření a aktualizace**.  
+1.  V experimentální instanci sady Visual Studio na řádku nabídek zvolte **nástroje** > **rozšíření a aktualizace**.  
   
      **Rozšíření a aktualizace** otevře se dialogové okno.  
   
@@ -343,12 +344,11 @@ ms.lasthandoff: 05/23/2018
   
 4.  Zavřete obě instance sady Visual Studio (experimentální instance a instance sady Visual Studio, ve kterém je otevřen CustomActionProjectItem řešení).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
- [Definování typů položek projektu služby SharePoint vlastní](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
- [Vytváření šablon položek a projektů pro položky projektu služby SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
+ [Definování vlastních typů položek projektu služby SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
+ [Vytváření šablon položek a šablony projektů pro položky projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Odkaz na schéma šablon sady Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [Postupy: použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md)   
  [Výchozí umístění vlastní akce a ID](http://go.microsoft.com/fwlink/?LinkId=181964)  
-  
   

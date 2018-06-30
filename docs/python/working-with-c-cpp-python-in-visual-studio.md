@@ -1,7 +1,7 @@
 ---
 title: Práce s C++ a Python
 description: Návod, vytváření rozšíření pro C++ pro jazyk Python pomocí sady Visual Studio, včetně ladění ve smíšeném režimu.
-ms.date: 04/03/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c83a0bb7a8132b6daf0961f7f9d72f8b98782776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c339b531e120c6e257dc4b5ee84c8a41b64ec6bd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979266"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118301"
 ---
 # <a name="creating-a-c-extension-for-python"></a>Vytvoření rozšíření C++ pro Python
 
@@ -323,6 +323,6 @@ Existuje mnoho různých prostředků k vytvoření rozšíření Python, jak je
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generovat vazby u mnoha jazycích najednou. | Nadměrnému zatížení, pokud Python je jediný cíl. |
 | cffi | 2013 | [kryptografie](https://cryptography.io/en/latest/), [pypy](http://pypy.org/) | Snadná integrace, PyPy kompatibility. | Novější, méně vyspělá. |
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 Je hotová ukázka z tohoto návodu můžete najít na [python ukázky vs-cpp přípona](https://github.com/Microsoft/python-sample-vs-cpp-extension) (Githubu).

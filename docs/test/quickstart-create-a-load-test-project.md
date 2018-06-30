@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4349220f650eef98ee765c1e7dbacb69263fe845
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 89a72c115edf8eae11fc1159686dee2b7b3f44d6
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976712"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118278"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Rychlý úvod: Vytvoření projektu testování zatížení
+# <a name="quickstart-create-a-load-test-project"></a>Rychlý start: Vytvoření projektu zátěžového testu
 
 V tento rychlý start 10 minut dozvíte, jak vytvořit a spustit výkonu webu a zatížení testovacího projektu v sadě Visual Studio. Zátěžové testy spustit výkonu webů nebo testy jednotek k simulaci mnoha uživateli přístup k serveru ve stejnou dobu.
 
@@ -27,7 +27,7 @@ V tento rychlý start 10 minut dozvíte, jak vytvořit a spustit výkonu webu a 
 
 Pokud nemáte již výkonu webů a spouštění testování nainstalována součást nástroje, musíte ji nainstalovat prostřednictvím Instalační program Visual Studio.
 
-1. Instalační program Visual Studio otevřete z nabídky Start v systému Windows. Můžete také k němu přístup v sadě Visual Studio z **nový projekt** dialogové okno, nebo výběrem **nástroje** > **funkcí a nástrojů pro získání...**  z řádku nabídek.
+1. Instalační program Visual Studio otevřete z nabídky Start v systému Windows. Můžete také k němu přístup v sadě Visual Studio z **nový projekt** dialogové okno, nebo výběrem **nástroje** > **funkcí a nástrojů pro získání** z řádku nabídek.
 
 1. V instalačním programu Visual Studio, vyberte **jednotlivých součástí** kartě a přejděte dolů k položce **ladění a testování** části. Vyberte **výkonnosti webů a zátěžové testování nástroje**.
 
@@ -41,7 +41,7 @@ Pokud nemáte již výkonu webů a spouštění testování nainstalována souč
 
 V této části vytvoříme projekt testu zatížení C#. Testovacího projektu Visual Basic zatížení, můžete také vytvořit, pokud dáváte přednost.
 
-1. Otevřete Visual Studio a zvolte **soubor** > **nový** > **projektu...**  z řádku nabídek.
+1. Otevřete Visual Studio a zvolte **soubor** > **nový** > **projektu** z řádku nabídek.
 
    **Nový projekt** otevře se dialogové okno.
 
@@ -55,7 +55,7 @@ V této části vytvoříme projekt testu zatížení C#. Testovacího projektu 
 
 ## <a name="add-a-load-test-to-the-project"></a>Do projektu přidat zátěžový test
 
-1. V nabídce klikněte pravým tlačítkem, nebo v místní nabídce uzlu projektu v **Průzkumníku řešení**, zvolte **přidat** > **zátěžový Test...** .
+1. V nabídce klikněte pravým tlačítkem, nebo v místní nabídce uzlu projektu v **Průzkumníku řešení**, zvolte **přidat** > **zátěžový Test**.
 
    **Nového Průvodce zátěžovým testem** otevře.
 

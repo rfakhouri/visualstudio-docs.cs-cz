@@ -18,15 +18,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21191ec585b83099aefad4f1c43949ba94cfc4ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e31b06d642947d88d1076b3ad365e62b663c8d4a
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120171"
 ---
-# <a name="walkthrough-creating-a-sharepoint-application-page"></a>Návod: Vytvoření stránky aplikace služby SharePoint
+# <a name="walkthrough-create-a-sharepoint-application-page"></a>Návod: Vytvoření stránky aplikace služby SharePoint
  
-Stránky aplikace je specializovaná forma stránky ASP.NET. Stránky aplikací zahrnují obsah, který je sloučen s hlavní stránku služby SharePoint. Další informace najdete v tématu [vytváření stránek aplikací pro službu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
+Stránky aplikace je specializovaná forma stránky ASP.NET. Stránky aplikací zahrnují obsah, který je sloučen s hlavní stránku služby SharePoint. Další informace najdete v tématu [vytvoření stránky aplikací pro službu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
 Tento návod ukazuje postup vytvoření stránky aplikace a pak ho ladění pomocí místního webu služby SharePoint. Tato stránka zobrazuje všechny položky, které má každý uživatel vytvoření nebo úpravě ve všech lokalitách na serverové farmě.
 
@@ -43,9 +44,9 @@ Tento návod znázorňuje následující úlohy:
 
 ## <a name="prerequisites"></a>Požadavky
 
-- Podporované edice systému Windows a služby SharePoint. Další informace najdete v tématu [požadavky pro vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Podporované edice systému Windows a služby SharePoint. Další informace najdete v tématu [požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
 
-## <a name="creating-a-sharepoint-project"></a>Vytvoření projektu SharePoint
+## <a name="create-a-sharepoint-project"></a>Vytvoření projektu služby SharePoint
 
 Nejprve vytvořte **prázdný projektu služby SharePoint**. Později, přidejte **stránky aplikace** položku do projektu.
 
@@ -59,13 +60,13 @@ Nejprve vytvořte **prázdný projektu služby SharePoint**. Později, přidejte
 
 4. Vyberte **nasadit jako řešení farmy** možnost tlačítko a potom vyberte **Dokončit** tlačítko přijmout výchozí místní web služby SharePoint.
 
-## <a name="creating-an-application-page"></a>Vytvoření stránky aplikace
+## <a name="create-an-application-page"></a>Vytvoření stránky aplikace
 
 K vytvoření stránky aplikace, přidejte **stránky aplikace** položku do projektu.
 
 1. V **Průzkumníku řešení**, vyberte **MySharePointProject** projektu.
 
-2. Na řádku nabídek zvolte **projektu**, **přidat novou položku**.
+2. Na řádku nabídek zvolte **projektu** > **přidat novou položku**.
 
 3. V **přidat novou položku** dialogovém okně vyberte **stránky aplikace (jenom řešení farmy** šablony.
 
@@ -73,11 +74,11 @@ K vytvoření stránky aplikace, přidejte **stránky aplikace** položku do pro
 
      Zobrazí stránka aplikace v návrháři Visual Web Developer **zdroj** zobrazení, kde se můžete podívat elementů HTML stránky. Návrhář zobrazí kód pro několik <xref:System.Web.UI.WebControls.Content> ovládací prvky. Každý ovládací prvek se mapuje <xref:System.Web.UI.WebControls.ContentPlaceHolder> ovládací prvek, který je definován v aplikaci stránku.
 
-## <a name="designing-the-layout-of-the-application-page"></a>Návrh rozložení stránky aplikace
+## <a name="design-the-layout-of-the-application-page"></a>Návrh rozložení stránky aplikace
 
 Položka stránky aplikace umožňuje používat návrháře k přidávání ovládacích prvků ASP.NET na stránku aplikace. Tento návrhář je stejné návrháře použít v aplikaci Visual Web Developer. Přidání štítek, seznam přepínačů a tabulka, která se **zdroj** zobrazení v návrháři a nastavte vlastnosti stejně jako při návrhu všechny standardní stránky ASP.NET.
 
-1. Na řádku nabídek zvolte **zobrazení**, **sada nástrojů**.
+1. Na řádku nabídek zvolte **zobrazení** > **sada nástrojů**.
 
 2. V uzlu standardní **sada nástrojů**, proveďte jednu z následujících kroků:
 
@@ -99,7 +100,7 @@ Položka stránky aplikace umožňuje používat návrháře k přidávání ovl
     </asp:DropDownList>
     ```
 
-## <a name="handling-the-events-of-controls-on-the-page"></a>Zpracování událostí ovládacích prvků na stránce
+## <a name="handle-the-events-of-controls-on-the-page"></a>Zpracování událostí ovládacích prvků na stránce
 
 Ovládací prvky v stránky aplikace zpracujte, stejně jako jakoukoli stránku ASP.NET. V tomto postupu bude zpracovávat `SelectedIndexChanged` události z rozevíracího seznamu.
 
@@ -127,13 +128,13 @@ Ovládací prvky v stránky aplikace zpracujte, stejně jako jakoukoli stránku 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
 
-## <a name="testing-the-application-page"></a>Testování stránky aplikace
+## <a name="test-the-application-page"></a>Testovací stránka aplikace
 
 Když spouštíte projekt, otevře se stránka serveru SharePoint a zobrazí se stránka aplikace.
 
 1. V **Průzkumníku řešení**, otevřete místní nabídku pro stránku aplikace a zvolte **nastavit jako položku při spuštění**.
 
-2. Zvolte klávesy F5.
+2. Vyberte **F5** klíč.
 
      Otevře se stránka serveru SharePoint.
 
@@ -145,9 +146,9 @@ Když spouštíte projekt, otevře se stránka serveru SharePoint a zobrazí se 
 
      Stránka aplikace aktualizuje a zobrazí všechny položky, které jste vytvořili ve všech lokalitách na serverové farmě.
 
-## <a name="next-ateps"></a>Další ateps
+## <a name="next-steps"></a>Další kroky
 
-Další informace o stránek aplikací služby SharePoint, naleznete v části [vytváření stránek aplikací pro službu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
+Další informace o stránek aplikací služby SharePoint, naleznete v části [vytvoření stránky aplikací pro službu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
 Se více o tom, jak navrhnout obsahu stránce služby SharePoint pomocí návrháře Visual z těchto témat:
 
@@ -155,7 +156,7 @@ Se více o tom, jak navrhnout obsahu stránce služby SharePoint pomocí návrh�
 
 - [Vytváření opakovaně použitelných ovládacích prvků pro webové části nebo stránky aplikací](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-[Postupy: Vytvoření stránky aplikace](../sharepoint/how-to-create-an-application-page.md)  
+[Postupy: vytvoření stránky aplikace](../sharepoint/how-to-create-an-application-page.md)  
 [Napište _layouts aplikace](http://go.microsoft.com/fwlink/?LinkID=169274)

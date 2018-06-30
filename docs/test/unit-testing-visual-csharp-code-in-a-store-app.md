@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: b409e3faa44b19cf0018e770915c8a3868f9ead4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5be318dd520cf9d7b5942200f635fa3f726634fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979409"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117398"
 ---
 # <a name="unit-testing-visual-c-code"></a>Kód jazyka Visual C# testování částí
 
@@ -26,7 +26,7 @@ Toto téma také vytvoří jeden řešení sady Visual Studio a samostatné proj
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>Vytvoření řešení a projektu testování částí
 
-1. Na **soubor** nabídce zvolte **nový** > **projektu...** .
+1. Na **soubor** nabídce zvolte **nový** > **projektu**.
 
 2. V **nový projekt** dialogové okno, rozbalte seznam **nainstalovaná** > **Visual C#** a zvolte **univerzální pro Windows**. Zvolte **prázdnou aplikaci** ze seznamu šablon projektu.
 
@@ -116,7 +116,7 @@ Toto téma také vytvoří jeden řešení sady Visual Studio a samostatné proj
 
 1. Do projektu RooterTests přidáte odkaz na aplikaci matematické výrazy.
 
-    1. V Průzkumníku řešení, vyberte **RooterTests** projektu a potom zvolte **přidat odkaz na...**  v místní nabídce.
+    1. V Průzkumníku řešení, vyberte **RooterTests** projektu a potom zvolte **přidat odkaz na** v místní nabídce.
 
     2. V **přidat odkaz - RooterTests** dialogové okno, rozbalte seznam **řešení** a zvolte **projekty**. Vyberte **matematické výrazy** položky.
 

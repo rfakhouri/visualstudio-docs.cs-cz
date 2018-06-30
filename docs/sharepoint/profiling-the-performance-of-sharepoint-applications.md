@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3375d0cadf7a484a4965123b3ee9e82675f11ef9
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 7fc119bbd990dab11a144ccc4e1894bb827a2fe1
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296343"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118051"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profil výkonu aplikací služby SharePoint
 
@@ -64,12 +64,12 @@ Programové testy uživatelského rozhraní automaticky jednotky aplikace ShareP
 
 |Název|Popis|
 |-----------|-----------------|
-|[Návod: Profilace aplikace SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Demonstruje postup proveďte v aplikace SharePoint analýzu profil vzorkování.|
+|[Návod: Profil aplikace SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Demonstruje postup proveďte v aplikace SharePoint analýzu profil vzorkování.|
 |[Testování výkonu aplikace před verzí](/vsts/test/load-test/run-performance-tests-app-before-release?view=vsts)|Popisuje, jak vytvořit zátěžové testy, které vám pomůžou aplikací služby SharePoint zátěžový test.|
 |[Testování částí kódu](/visualstudio/test/unit-test-your-code)|Popisuje, jak najít logické chyby v kódu pomocí testování částí.|
 |[Testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|Popisuje postup testování uživatelského rozhraní aplikací služby SharePoint.|
 
 ## <a name="see-also"></a>Viz také:
 
-- [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Zlepšení kvality kódu](/visualstudio/test/improve-code-quality)
+[Vytváření a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+[zlepšení kvality kódu](/visualstudio/test/improve-code-quality)

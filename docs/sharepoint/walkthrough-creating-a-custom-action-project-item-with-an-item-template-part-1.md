@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 02f3311b96d8f1287f2c2f2a81f9b37e51d4f7f6
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: 300d30f4c224336d4b78112a5472391d24f82290
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120208"
 ---
-# <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1
+# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1
   Systému projektu služby SharePoint v sadě Visual Studio můžete rozšířit vytvořením vlastní projektu typu položky. V tomto návodu vytvoříte položky projektu, který lze přidat do projektu služby SharePoint k vytvoření vlastní akce na web služby SharePoint. Vlastní akce přidá položku nabídky **Akce webu** nabídky Web služby SharePoint.  
   
  Tento návod ukazuje následující úlohy:  
@@ -51,7 +52,7 @@ ms.lasthandoff: 05/23/2018
 ## <a name="prerequisites"></a>Požadavky  
  Následující součásti na vývojovém počítači k dokončení tohoto názorného postupu potřebujete:  
   
--   Podporované edice systému Microsoft Windows, SharePoint a Visual Studio. Další informace najdete v tématu [požadavky pro vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Podporované edice systému Microsoft Windows, SharePoint a Visual Studio. Další informace najdete v tématu [požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Tento návod používá **projektu VSIX** šablony v sadě SDK k vytvoření balíčku VSIX pro nasazení položka projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
@@ -61,7 +62,7 @@ ms.lasthandoff: 05/23/2018
   
 -   Šablony položek v sadě Visual Studio. Další informace najdete v tématu [vytváření projektů a šablon položek](/visualstudio/ide/creating-project-and-item-templates).  
   
-## <a name="creating-the-projects"></a>Vytváření projektů  
+## <a name="create-the-projects"></a>Vytváření projektů
  K dokončení tohoto postupu potřebujete vytvořit tří projektů:  
   
 -   Projekt VSIX. Tento projekt vytvoří balíčku VSIX pro nasazení položky projektu služby SharePoint.  
@@ -76,7 +77,7 @@ ms.lasthandoff: 05/23/2018
   
 1.  Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Na řádku nabídek zvolte **soubor**, **nový**, **projektu**.  
+2.  Na řádku nabídek zvolte **soubor** > **nový** > **projektu**.  
   
 3.  V seznamu v horní části **nový projekt** dialogové okno pole, ujistěte se, že **rozhraní .NET Framework 4.5** je vybrána.  
   
@@ -119,7 +120,7 @@ ms.lasthandoff: 05/23/2018
   
 5.  Odstraňte soubor kódu Class1 z projektu.  
   
-## <a name="configuring-the-extension-project"></a>Konfigurace projektu rozšíření  
+## <a name="configure-the-extension-project"></a>Konfigurace projektu rozšíření
  Než napíšete kód pro definování typu položky projektu služby SharePoint, budete muset přidat soubory kódu a odkazy na sestavení na projekt.  
   
 #### <a name="to-configure-the-project"></a>Konfigurace projektu  
@@ -142,7 +143,7 @@ ms.lasthandoff: 05/23/2018
   
 7.  Vyberte **rozšíření** uzlu, zaškrtněte políčko vedle sestavení Microsoft.VisualStudio.Sharepoint a zvolte **OK** tlačítko.  
   
-## <a name="defining-the-new-sharepoint-project-item-type"></a>Definování nového typu položky projektu SharePoint  
+## <a name="define-the-new-sharepoint-project-item-type"></a>Definování nového typu položky projektu SharePoint
  Vytvořte třídu, která implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> rozhraní k definování chování nového typu položky projektu. Toto rozhraní implementujte vždy, když chcete k definování nového typu položky projektu.  
   
 #### <a name="to-define-the-new-sharepoint-project-item-type"></a>Chcete-li definovat nové typu položky projektu SharePoint  
@@ -154,7 +155,7 @@ ms.lasthandoff: 05/23/2018
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/CSharp/customactionprojectitem/projectitemtypedefinition/customaction.cs#1)]
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/projectitemdefinition/customaction.vb#1)]  
   
-## <a name="creating-an-icon-for-the-project-item-in-solution-explorer"></a>Vytvoření ikony pro položku projekt v Průzkumníku řešení  
+## <a name="create-an-icon-for-the-project-item-in-solution-explorer"></a>Vytvoření ikony pro položku projektu v Průzkumníku řešení
  Když vytvoříte vlastní položky projektu služby SharePoint, můžete přidružit položka projektu bitovou kopii (ikony nebo rastrový obrázek). Zobrazuje se vedle položky projektu v **Průzkumníku řešení**.  
   
  V následujícím postupu vytvoříte ikonu pro položku projektu a na ikonu pro vložení do sestavení rozšíření. Tato ikona se odkazuje <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute> z `CustomActionProjectItemTypeProvider` třídu, která jste vytvořili dříve.  
@@ -187,14 +188,14 @@ ms.lasthandoff: 05/23/2018
   
 1.  Otevřete místní nabídku pro **ProjectItemDefinition** projektu a zvolte **sestavení**.  
   
-## <a name="creating-a-visual-studio-item-template"></a>Vytvoření položky šablony sady Visual Studio  
+## <a name="create-a-visual-studio-item-template"></a>Vytvoření položky šablony sady Visual Studio
  Pokud chcete povolit jiné vývojářům používat vaše položky projektu, musíte vytvořit projekt šablony nebo šablony položky. Vývojáři použít tyto šablony v sadě Visual Studio k vytvoření instance položky projektu vytvořením nového projektu nebo přidání položky do existujícího projektu. Pro účely tohoto postupu použijte ke konfiguraci položky projektu ItemTemplate projektu.  
   
 #### <a name="to-create-the-item-template"></a>Vytvoření šablony položek  
   
 1.  Odstraňte soubor kódu Class1 z projektu ItemTemplate.  
   
-2.  V projektu ItemTemplate otevřete soubor ItemTemplate.vstemplate.  
+2.  V projektu ItemTemplate, otevřete *ItemTemplate.vstemplate* souboru.  
   
 3.  Následující kód XML, nahraďte obsah souboru a uložte a zavřete soubor.  
   
@@ -228,7 +229,7 @@ ms.lasthandoff: 05/23/2018
   
 6.  V **název** zadejte **CustomAction.spdata**a potom zvolte **přidat** tlačítko.  
   
-7.  Přidejte následující kód XML do souboru CustomAction.spdata a potom uložte a zavřete soubor.  
+7.  Přidejte následující XML tak, aby *CustomAction.spdata* souboru a potom uložte a zavřete soubor.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -240,7 +241,7 @@ ms.lasthandoff: 05/23/2018
     </ProjectItem>  
     ```  
   
-     Tento soubor obsahuje informace o souborech, které jsou obsaženy v položce projektu. `Type` Atribut `ProjectItem` element musí být nastaven na stejném řetězci, který je předán <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> v definici položky projektu ( `CustomActionProjectItemTypeProvider` třídy, které jste vytvořili dříve v tomto návodu). Další informace o obsahu soubory .spdata najdete v tématu [referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).  
+     Tento soubor obsahuje informace o souborech, které jsou obsaženy v položce projektu. `Type` Atribut `ProjectItem` element musí být nastaven na stejném řetězci, který je předán <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> v definici položky projektu ( `CustomActionProjectItemTypeProvider` třídy, které jste vytvořili dříve v tomto návodu). Další informace o obsahu *.spdata* soubory, najdete v části [referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).  
   
 8.  V **Průzkumníku řešení**, otevřete místní nabídku pro **ItemTemplate** projektu, zvolte **přidat**a potom zvolte **novou položku**.  
   
@@ -248,7 +249,7 @@ ms.lasthandoff: 05/23/2018
   
 10. V **název** zadejte **Elements.xml**a potom zvolte **přidat** tlačítko.  
   
-11. Nahraďte obsah souboru Elements.xml následující kód XML a potom uložte a zavřete soubor.  
+11. Nahraďte obsah *Elements.xml* soubor s následující kód XML a potom uložte a zavřete soubor.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -266,7 +267,7 @@ ms.lasthandoff: 05/23/2018
   
      Definuje vlastní výchozí akci, která vytvoří položku nabídky na tento soubor **Akce webu** nabídky Web služby SharePoint. Pokud uživatel vybere položku nabídky, adresa URL zadaná v `UrlAction` element otevře ve webovém prohlížeči. Další informace o elementy XML, která můžete použít k definování vlastní akce najdete v tématu [definice vlastní akce](http://go.microsoft.com/fwlink/?LinkId=177801).  
   
-12. Volitelně můžete otevřít soubor ItemTemplate.ico a upravit ji tak, aby měl návrh, který dokáže rozpoznat. Tato ikona se zobrazí vedle položky projektu v **přidat novou položku** dialogové okno.  
+12. Volitelně můžete otevřít *ItemTemplate.ico* soubor a upravte ho tak, aby měl návrh, který dokáže rozpoznat. Tato ikona se zobrazí vedle položky projektu v **přidat novou položku** dialogové okno.  
   
 13. V **Průzkumníku řešení**, otevřete místní nabídku pro **ItemTemplate** projektu a potom vyberte **uvolnit projekt**.  
   
@@ -290,7 +291,7 @@ ms.lasthandoff: 05/23/2018
   
 17. V **Průzkumníku řešení**, otevřete místní nabídku pro **ItemTemplate** projektu a potom vyberte **znovu načíst projekt**.  
   
-## <a name="creating-a-vsix-package-to-deploy-the-project-item"></a>Vytvoření balíčku VSIX k nasazení položky projektu  
+## <a name="create-a-vsix-package-to-deploy-the-project-item"></a>Vytvoření balíčku VSIX pro nasazení položky projektu
  K nasazení rozšíření, použijte k vytvoření balíčku VSIX VSIX projekt ve vašem řešení. Nejprve nakonfigurujte balíčku VSIX úpravou souboru source.extension.vsixmanifest, který je zahrnutý v projektu VSIX. Pak vytvořte balíčku VSIX vytvořením řešení.  
   
 #### <a name="to-configure-and-create-the-vsix-package"></a>Ke konfiguraci a vytvoření balíčku VSIX  
@@ -333,13 +334,13 @@ ms.lasthandoff: 05/23/2018
   
 13. Vyberte **OK** tlačítko.  
   
-14. Na řádku nabídek zvolte **sestavení**, **sestavit řešení**a pak se ujistěte, že projekt zkompiluje bez chyb.  
+14. Na řádku nabídek zvolte **sestavení** > **sestavit řešení**a pak se ujistěte, že projekt zkompiluje bez chyb.  
   
 15. Ujistěte se, že složku výstupu sestavení pro projekt CustomActionProjectItem obsahuje soubor CustomActionProjectItem.vsix.  
   
      Ve výchozím nastavení, je složku výstupu sestavení... \bin\Debug složku na složku obsahující projekt CustomActionProjectItem.  
   
-## <a name="testing-the-project-item"></a>Testování položky projektu  
+## <a name="test-the-project-item"></a>Testování položky projektu
  Nyní jste připraveni k testování položka projektu. Nejprve spusťte ladění řešení CustomActionProjectItem v experimentální instanci sady Visual Studio. Pak test **vlastní akce** položka projektu v projektu služby SharePoint v experimentální instanci sady Visual Studio. Nakonec sestavte a spusťte projektu služby SharePoint k ověření, že vlastní akce funguje podle očekávání.  
   
 #### <a name="to-start-debugging-the-solution"></a>Spustit ladění řešení  
@@ -354,7 +355,7 @@ ms.lasthandoff: 05/23/2018
   
 #### <a name="to-test-the-project-item-in-visual-studio"></a>K testování položky projektu v sadě Visual Studio  
   
-1.  V experimentální instanci sady Visual Studio na řádku nabídek zvolte **soubor**, **nový**, **projektu**.  
+1.  V experimentální instanci sady Visual Studio na řádku nabídek zvolte **soubor** > **nový** > **projektu**.  
   
 2.  Rozbalte položku **Visual C#** nebo **jazyka Visual Basic** (v závislosti na jazyce, který podporuje vaše šablony položky), rozbalte položku **SharePoint**a potom vyberte **2010**  uzlu.  
   
@@ -372,7 +373,7 @@ ms.lasthandoff: 05/23/2018
   
 8.  Vyberte **vlastní akce** položku a potom vyberte **přidat** tlačítko.  
   
-     Visual Studio. přidá položku s názvem **CustomAction1** projektu a otevře Elements.xml souboru v editoru.  
+     Visual Studio. přidá položku s názvem **CustomAction1** projektu a otevře *Elements.xml* souboru v editoru.  
   
 9. Ověřte, že kód ve druhé instanci sady Visual Studio zastaví na zarážce, kterou jste nastavili výše v `InitializeType` metoda.  
   
@@ -384,7 +385,7 @@ ms.lasthandoff: 05/23/2018
   
      Tato nabídka zástupce můžete poskytnout další možnosti nebo příkazy pro vývojáře, například zobrazení návrháře pro vlastní akci.  
   
-13. Na řádku nabídek zvolte **zobrazení**, **výstup**.  
+13. Na řádku nabídek zvolte **zobrazení** > **výstup**.  
   
      **Výstup** otevře se okno.  
   
@@ -394,9 +395,9 @@ ms.lasthandoff: 05/23/2018
   
 #### <a name="to-test-the-custom-action-in-sharepoint"></a>K testování vlastní akce ve službě SharePoint  
   
-1.  V experimentální instanci sady Visual Studio, otevřete soubor Elements.xml, který je podřízená **MyCustomAction** položka projektu.  
+1.  V experimentální instanci sady Visual Studio, otevřete *Elements.xml* soubor, který je podřízená **MyCustomAction** položka projektu.  
   
-2.  V souboru Elements.xml proveďte následující změny a pak soubor uložte:  
+2.  V *Elements.xml* souboru, proveďte následující změny a pak soubor uložte:  
   
     -   V `CustomAction` , nastavena `Id` atribut identifikátor GUID nebo jiný jedinečný řetězec jako na následujícím příkladu:  
   
@@ -422,7 +423,7 @@ ms.lasthandoff: 05/23/2018
         Url="http://msdn.microsoft.com/sharepoint/default.aspx"  
         ```  
   
-3.  Zvolte klávesy F5.  
+3.  Vyberte **F5** klíč.  
   
      Vlastní akce se zabalí a nasazené na web služby SharePoint, který je uveden v **adresa URL webu** vlastnosti projektu. Otevře se webový prohlížeč na stránku výchozího tohoto webu.  
   
@@ -431,12 +432,12 @@ ms.lasthandoff: 05/23/2018
   
 4.  Na **Akce webu** nabídce zvolte **SharePoint Developer Center**, ověřte, že prohlížeči se otevře web http://msdn.microsoft.com/sharepoint/default.aspxa pak zavřete webový prohlížeč.  
   
-## <a name="cleaning-up-the-development-computer"></a>Čištění vývojovém počítači  
+## <a name="clean-up-the-development-computer"></a>Vyčištění vývojovém počítači
  Po dokončení testování položky projektu odeberte položku Šablona projektu z experimentální instanci sady Visual Studio.  
   
 #### <a name="to-clean-up-the-development-computer"></a>Vyčistěte vývojovém počítači  
   
-1.  V experimentální instanci sady Visual Studio na řádku nabídek zvolte **nástroje**, **rozšíření a aktualizace**.  
+1.  V experimentální instanci sady Visual Studio na řádku nabídek zvolte **nástroje** > **rozšíření a aktualizace**.  
   
      **Rozšíření a aktualizace** otevře se dialogové okno.  
   
@@ -448,16 +449,15 @@ ms.lasthandoff: 05/23/2018
   
 5.  Zavřete experimentální instanci sady Visual Studio a instance, ve kterém je otevřen CustomActionProjectItem řešení.  
   
-## <a name="next-steps"></a>Další kroky  
- Po dokončení tohoto postupu můžete přidat průvodce pro šablony položky. Pokud uživatel přidá vlastní položky projektu akce projektu služby SharePoint, Průvodce shromažďuje informace o akci (třeba jeho polohu a adresu URL, přejděte na při výběru akce) a přidá tyto informace do souboru Elements.xml v nové položky projektu. Další informace najdete v tématu [návod: vytvoření vlastní položky projektu akce pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
+## <a name="next-steps"></a>Další kroky
+ Po dokončení tohoto postupu můžete přidat průvodce pro šablony položky. Pokud uživatel přidá vlastní položky projektu akce projektu služby SharePoint, Průvodce shromažďuje informace o akci (třeba jeho polohu a adresu URL, přejděte na při výběru akce) a přidá tyto informace *Elements.xml*soubor v nové položky projektu. Další informace najdete v tématu [návod: vytvoření vlastní položky projektu akce pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
- [Definování typů položek projektu služby SharePoint vlastní](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
- [Vytváření šablon položek a projektů pro položky projektu služby SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
+ [Definování vlastních typů položek projektu služby SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
+ [Vytváření šablon položek a šablony projektů pro položky projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Použití služby projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
  [Odkaz na schéma šablon sady Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [Editor obrázků pro ikony](/cpp/windows/image-editor-for-icons)   
  [Vytvoření ikony nebo jiného obrázku &#40;Editor obrázků pro ikony&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
-  
   

@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d136c98acd2719abd07f8feb2f9def48ec6b2ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 50b9b61f34ba9e78efd8bc40c7d97583ee0c25f7
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973912"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117014"
 ---
-# <a name="browse-and-select-a-net-type-dialog-box"></a>Procházet a vyberte dialogové okno typ rozhraní .NET
+# <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogové okno Procházet a vybrat typ .NET
 
-V **vlastnosti** oken, dialogových oken nebo návrháře například návrháře proměnné, když vyberete **Procházet pro typy...**  ze seznamu datových typů, je **Procházet a vyberte typ formátu .NET** dialogové okno (uvedené ve zkrácené formě jako "typ prohlížeče"). V tomto dialogovém můžete typu ze sestavení a projektů zobrazení stromu.
+V **vlastnosti** oken, dialogových oken nebo návrháře například návrháře proměnné, když vyberete **Procházet pro typy** ze seznamu datových typů, je **Procházet a vyberte typ formátu .NET** dialogové okno (uvedené ve zkrácené formě jako "typ prohlížeče"). V tomto dialogovém můžete typu ze sestavení a projektů zobrazení stromu.
 
  Toto dialogové okno je vzhledem k počtu uživatelských scénářů, včetně následujících:
 
@@ -72,6 +72,6 @@ V **vlastnosti** oken, dialogových oken nebo návrháře například návrhář
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Výběr kontraktu služby pomocí dialogového okna prohlížeče typu
  Při výběru typu kontraktu služby, typ prohlížeče se zobrazí pouze typy, které mají <xref:System.ServiceModel.ServiceContractAttribute> atribut.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Používání návrhářů aktivit](../workflow-designer/using-the-activity-designers.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 683d848aaab7b17fbb6756c9a31d10e02aa97985
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a784015c57aee41488b1d8988166bea1cf7ca874
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281625"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117118"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Vývoj kódu v sadě Visual Studio bez projekty a řešení
 
@@ -89,7 +89,7 @@ Pokud vaše codebase používá vlastní nástroje pro sestavení, pak se musí 
 
 Pokud vaše základu kódu obsahuje kód, Python nebo JavaScript, nemusíte konfigurovat *.json* soubory, ale je nutné nainstalovat odpovídající úlohy. Je také potřeba nakonfigurovat spouštěcího skriptu:
 
-1. Nainstalujte [Node.js vývoj](https://visualstudio.microsoft.com/vs/node-js/) nebo [vývoj Python](https://visualstudio.microsoft.com/vs/python/) zatížení výběrem **nástroje** > **funkcí a nástrojů pro získání...** , nebo zavírání sady Visual Studio a spuštěním instalační program Visual Studio.
+1. Nainstalujte [Node.js vývoj](https://visualstudio.microsoft.com/vs/node-js/) nebo [vývoj Python](https://visualstudio.microsoft.com/vs/python/) zatížení výběrem **nástroje** > **získat nástroje a funkce**, nebo zavírání sady Visual Studio a spuštěním instalační program Visual Studio.
 
    ![Vývoj zatížení Node.js a Python](media/python_nodejs_workloads.png)
 

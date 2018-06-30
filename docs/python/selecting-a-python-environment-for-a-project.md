@@ -1,7 +1,7 @@
 ---
 title: Výběr překladač Pythonu a prostředí pro projekt
 description: Jak přiřadit prostředí Python, který chcete použít pro projekt sady Visual Studio a navíc pokyny k vytvoření virtuálních prostředí.
-ms.date: 03/21/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 85ac0ab5fe06db5af677290a99f914616e3ed064
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c38436c5cf3d89b4224fbdbe9bd072f2a6c10d0
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976686"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117105"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Tom, jak přiřadit prostředí Python, ve kterém se používá pro projekt
 
@@ -116,7 +116,7 @@ Také Upozorňujeme, že Visual Studio nepodporuje v současné době použití 
 > [!Tip]
 > Je běžné situace, kde pip nepodaří nainstalovat balíček, pokud balíček obsahuje zdrojový kód pro nativní součásti v `*.pyd` soubory. Bez požadovaná verze sady Visual Studio nainstalována nelze zkompilovat pip těchto součástí. Chybová zpráva zobrazená v této situaci je `error: Unable to find vcvarsall.bat`. `easy_install` často je možné stáhnout předem kompilovaném binární soubory, a můžete si stáhnout vhodný kompilátoru pro starší verze jazyka Python z [ http://aka.ms/VCPython27 ](http://aka.ms/VCPython27). Další podrobnosti najdete v tématu [řešení problémů s problémové z "nelze najít vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) na Python tools blogu týmu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Správa prostředí Python v sadě Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Používání souboru requirements.txt pro závislosti](managing-required-packages-with-requirements-txt.md)

@@ -16,12 +16,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: aec11e54547f05e3ac7babae29e0c95737bc725e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7fe91532c3b4e020541f5f96152253f1df673ded
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924415"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117781"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Potlačení upozornění analýzy kódu
 
@@ -35,7 +35,7 @@ V jazyce C + +/ CLI, použijte makra certifikační Autority\_POTLAČIT\_zpráva
 > -Source suppressions byste neměli používat u sestavení pro vydání, aby se zabránilo omylem přesouvání metadata potlačení v zdroje. Kromě toho kvůli zpracování náklady potlačení ve zdroje, aplikace může být ke snížení výkonu.
 
 > [!NOTE]
-> Pokud provádíte migraci projektu pro Visual Studio 2017, může vám najednou potýkají s čtenáře počet upozornění analýzy kódu. Pokud jste ještě nejsou připraveny upozornění, a chcete dočasně vypnout analýza kódu, otevřete stránky vlastností projektu (**projektu** > ***projektu* vlastnosti...** ) a přejděte na **analýza kódu** kartě. Zrušte výběr **povolit analýza kódu v sestavení**a pak znovu sestavte projekt. Alternativně můžete vybrat jiný, menší sadu pravidel, která spouštění kódu. Mějte na paměti, chcete-li analýza kódu zpět na když budete chtít opravte upozornění.
+> Pokud provádíte migraci projektu pro Visual Studio 2017, může vám najednou potýkají s čtenáře počet upozornění analýzy kódu. Pokud jste ještě nejsou připraveny upozornění, a chcete dočasně vypnout analýza kódu, otevřete stránky vlastností projektu (**projektu** > **\<Projekt > vlastnosti**) a přejděte na **analýza kódu** kartě. Zrušte výběr **povolit analýza kódu v sestavení**a pak znovu sestavte projekt. Alternativně můžete vybrat jiný, menší sadu pravidel, která spouštění kódu. Mějte na paměti, chcete-li analýza kódu zpět na když budete chtít opravte upozornění.
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage – atribut
 
@@ -165,7 +165,7 @@ Globální úrovni suppressions jsou jedině k potlačení zprávy, které odkaz
 
 Soubor globální potlačení udržuje suppressions, které jsou globální úrovni suppressions nebo suppressions, které neurčují cíl. Například suppressions pro porušení úrovně sestavení jsou uloženy v tomto souboru. Navíc některé suppressions ASP.NET jsou uloženy v tomto souboru, protože nastavení projektu nejsou k dispozici pro kódu na pozadí formuláře. Globální potlačení soubor je vytvořen a přidán do projektu při prvním vyberete **v souboru projektu potlačení** možnost **potlačit** v příkazu **seznam chyb**okno.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - <xref:System.Diagnostics.CodeAnalysis>
 - [Použití Roslyn analyzátory](../code-quality/use-roslyn-analyzers.md)

@@ -13,19 +13,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9fe44a0a83b82afb317346b719d804e12b13293b
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d817938a7611d7390e400cfbf69c6836b9256f3b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233474"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117222"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typové a netypové datové sady
 Typové datové sady je datovou sadu, která je první odvozený od základní <xref:System.Data.DataSet> třídy a pak používá informace z **návrháře Dataset**, která je uložena v souboru XSD vygenerovat nový, dataset – třída silného typu. Informace ze schématu (tabulek, sloupců atd.) je generována a zkompilovat do tato nová třída datovou sadu jako sada první třídy objektů a vlastností. Protože typové datové sady dědí od základní <xref:System.Data.DataSet> třída, typovaná třída předpokládá všechny funkce <xref:System.Data.DataSet> třídy a lze použít s metod, které berou instanci <xref:System.Data.DataSet> třída jako parametr.
 
  Netypové datové sady, na rozdíl od nemá žádné odpovídající integrované schéma. Jako typové datové sady, netypové datové sady obsahuje tabulky, sloupce a tak dále – ale těch, které jsou zveřejněné pouze jako kolekce. (Však po vytvoření ručně tabulky a další prvky dat v datové sadě služby bez typu, můžete exportovat datovou sadu struktura jako schéma pomocí datovou sadu <xref:System.Data.DataSet.WriteXmlSchema%2A> metoda.)
 
-## <a name="contrasting-data-access-in-typed-and-untyped-datasets"></a>Kontrastní přístup k datům v typu a netypové datové sady
+## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>Přístup k datům kontrast v typu a netypové datové sady
  Třída pro typové datové sady obsahuje model objektu, ve kterém jeho vlastnosti trvat na skutečné názvy tabulek a sloupců. Například pokud pracujete s typové datové sady, můžete odkazovat na sloupec pomocí kódu, například následující:
 
  [!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)]

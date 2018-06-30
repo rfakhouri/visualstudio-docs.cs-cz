@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba084cb3d18d661198f481323d012c98cb37b2c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d42699e08bd407f5481b7ad99981aef4ea3638bc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746777"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117573"
 ---
 # <a name="shader-designer"></a>Návrhář shaderů
 
@@ -43,7 +43,7 @@ Tato část popisuje postup přidání DGSL shaderu k vaší [!INCLUDE[vsprvs](.
 
 ### <a name="to-add-a-dgsl-shader-to-your-project"></a>Chcete-li přidat shaderu DGSL do projektu
 
-1.  V **Průzkumníku řešení**, otevřete místní nabídku pro projekt, který chcete přidat shaderu k a potom vyberte **přidat**, **novou položku**.
+1.  V **Průzkumníku řešení**, otevřete místní nabídku pro projekt, který chcete přidat shaderu k a potom vyberte **přidat** > **novou položku**.
 
 2.  V **přidat novou položku** dialogovém **nainstalovaná**, vyberte **grafiky**a potom vyberte **Visual shaderu grafu (.dgsl)**.
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cedf05457b397598d7417bce331be27aa8ac4e0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a009f36152163e3ac23b85deac4ea99f26092be9
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756500"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118210"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Postupy: přidání aktivit do sady nástrojů
 
@@ -48,9 +48,9 @@ Aktivity mohou být přidány do **sada nástrojů** ve vašem řešení v něko
 
 1.  Otevřete řešení pracovního postupu.
 
-2.  Z **nástroje** nabídce vyberte možnost **výběr položek sady nástrojů...** .
+2.  Z **nástroje** nabídce vyberte možnost **výběr položek sady nástrojů**.
 
-3.  V **výběr položek sady nástrojů** dialogové okno, vyberte **systém. součásti** kartě a pak klikněte na **Procházet...**  přejděte na sestavení, které obsahuje vlastní aktivity chcete přidat.
+3.  V **výběr položek sady nástrojů** dialogové okno, vyberte **systém. součásti** kartě a pak klikněte na **Procházet** přejděte na sestavení, které obsahuje vlastní aktivity, které chcete přidat.
 
 4.  Vyberte sestavení a klikněte na **OK**. Součást vlastní aktivity se přidá do seznamu součástí a je automaticky vybrán.
 

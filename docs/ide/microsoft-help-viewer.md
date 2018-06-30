@@ -21,28 +21,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be587e708857a5c46c92986decff75a4807f8897
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb2c375aebd327d3d56b8f720b1b3619fab9b256
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948204"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117157"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
-Můžete nainstalovat a zobrazit obsah pro různé produkty a technologie v místním počítači pomocí nápovědy společnosti Microsoft, včetně sady Visual Studio, rozhraní .NET Framework, referenční informace k jazyku, SQL Server a Windows Development. Prohlížeč nápovědy umožňuje:
+Můžete nainstalovat a zobrazit obsah pro různé produkty a technologie v místním počítači pomocí prohlížeče Microsoft Help Viewer. Tyto produkty zahrnují Visual Studio, rozhraní .NET Framework, referenční informace k jazyku, SQL Server a Windows Development. Prohlížeč nápovědy umožňuje:
 
--   Najděte a stáhnout sady obsahu, které jsou také označovány jako knih.
+- Stáhněte si sadu obsahu, které jsou také označovány jako knih. To může být užitečné, pokud potřebujete práce "offline" a mít dál přístup k dokumentaci.
 
--   Témata hledat podle názvu procházení a vyhledávání obsahu.
+- Témata hledat podle názvu procházení a vyhledávání obsahu.
 
--   Vyhledejte témata v indexu.
+- Vyhledejte témata v indexu.
 
--   Najít informace o pomocí fulltextové vyhledávání.
+- Najít informace o pomocí fulltextové vyhledávání.
 
--   Zobrazení, záložek a tisku témata.
+- Zobrazení, záložek a tisku témata.
 
 Instalace prohlížeče nápovědy, najdete v části [instalace Prohlížeč nápovědy](../ide/microsoft-help-viewer-installation.md). Začne číst témata nápovědy v okně nápovědy, nikoli online, přejděte na **pomoci** nabídky v sadě Visual Studio a potom zvolte **nastavit předvolby pomoci** > **spouštět v Help Viewer** .
+
+> [!TIP]
+> Jiný způsob, jak stáhnout obsah místně, můžete zobrazit, pokud nemáte připojení k Internetu je stáhnout si PDF verzi ho. Mnoho sad dokumentace na docs.microsoft.com obsahovat odkaz na konci obsahu (obsah) Chcete-li stáhnout soubor PDF, který obsahuje všechny články pro tohoto obsahu.
+>
+> ![Stažení souborů PDF pro dokumentaci k sadě Visual Studio](media/download-pdf.png)
 
 ## <a name="help-viewer-tour"></a>Prohlídka Prohlížeč nápovědy
 
@@ -74,21 +79,21 @@ V seznamu obsahu jsou uvedeny knihy, které můžete nainstalovat nebo jste již
 
 V panelu nástrojů **Help Viewer** okno obsahuje následující tlačítka:
 
--   **Tématu zobrazit v obsah** zobrazí tlačítko umístění tématu v **obsah** kartě.
+- **Tématu zobrazit v obsah** zobrazí tlačítko umístění tématu v **obsah** kartě.
 
--   **Přidat k oblíbeným položkám** tlačítko přidá active tématu, které chcete **Oblíbené** kartě.
+- **Přidat k oblíbeným položkám** tlačítko přidá active tématu, které chcete **Oblíbené** kartě.
 
--   **Najít v tématu** tlačítko označuje hledaný text v active tématu.
+- **Najít v tématu** tlačítko označuje hledaný text v active tématu.
 
--   **Tiskových** vytiskne, nebo se zobrazí ukázka aktivního tématu.
+- **Tiskových** vytiskne, nebo se zobrazí ukázka aktivního tématu.
 
--   **Možnosti prohlížeče** tlačítko zobrazí nastavení, jako například jak velký hledaný text zobrazuje, kolik výsledků vyhledávání do vrátit, kolik témata, které se zobrazí v historii a jestli se má zjišťovat online aktualizace.
+- **Možnosti prohlížeče** tlačítko zobrazí nastavení, jako například jak velký hledaný text zobrazuje, kolik výsledků vyhledávání do vrátit, kolik témata, které se zobrazí v historii a jestli se má zjišťovat online aktualizace.
 
--   **Spravovat obsahu** tlačítko díky **spravovat obsah** kartě aktivní.
+- **Spravovat obsahu** tlačítko díky **spravovat obsah** kartě aktivní.
 
--   Malý trojúhelník na pravé straně otevře seznam karty, včetně karet tématu a **spravovat obsah** kartě. Můžete použít název karty chcete-li aktivní karty.
+- Malý trojúhelník na pravé straně otevře seznam karty, včetně karet tématu a **spravovat obsah** kartě. Můžete použít název karty chcete-li aktivní karty.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Instalace Microsoft Help Viewer](../ide/microsoft-help-viewer-installation.md)
 - [Příručka správce Help Viewer](../ide/help-viewer-administrator-guide.md)

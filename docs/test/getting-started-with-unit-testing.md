@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5101040d52527a80c7531d4984ead5cb4061f70f
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425212"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117248"
 ---
 # <a name="get-started-with-unit-testing"></a>Začínáme s testování částí
 
@@ -113,7 +113,7 @@ Testování částí v sadě Visual Studio můžete spustit pomocí rozhraní te
 
 Následují postup povolení systémů testování částí třetí:
 
-1. Zvolte **nástroje** > **rozšíření a aktualizace...**  z řádku nabídek.
+1. Zvolte **nástroje** > **rozšíření a aktualizace** z řádku nabídek.
 
 1. V **rozšíření a aktualizace** dialogové okno, rozbalte seznam **Online** kategorie a potom **Visual Studio Marketplace**. Pak zvolte **nástroje** > **testování**.
 
@@ -125,7 +125,7 @@ Následují postup povolení systémů testování částí třetí:
 
    ![Název projektu knihovny tříd a přidejte ji](media/create3rdpartyunittest3.png)
 
-1. Instalace modulu plug-in. V **Průzkumníku řešení**, vyberte projektu knihovny tříd a poté zvolte **spravovat balíčky NuGet...**  z jeho klikněte pravým tlačítkem nebo kontextové nabídky.
+1. Instalace modulu plug-in. V **Průzkumníku řešení**, vyberte projektu knihovny tříd a poté zvolte **spravovat balíčky NuGet** z jeho klikněte pravým tlačítkem nebo kontextové nabídky.
 
    ![Správa balíčků NuGet k instalaci modulu plug-in](media/create3rdpartyunittest3a.png)
 
@@ -139,7 +139,7 @@ Následují postup povolení systémů testování částí třetí:
 
    ![Referenční dokumentace pro systém testování částí 3. stran se přidá do vašeho řešení](media/create3rdpartyunittest6.png)
 
-1. Z projektu knihovny tříd **odkazy** uzlu, vyberte **přidat odkaz na...** .
+1. Z projektu knihovny tříd **odkazy** uzlu, vyberte **přidat odkaz na**.
 
    ![Přidat odkaz na projekt](media/createunittest6.png)
 
@@ -151,7 +151,7 @@ Následují postup povolení systémů testování částí třetí:
 
    ![Přidání kódu do vaší testování částí](media/create3rdpartyunittest7.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Vytvoření příkazu pro testování částí](create-unit-tests-menu.md)
 * [Generování testů s IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)

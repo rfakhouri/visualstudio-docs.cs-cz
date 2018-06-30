@@ -10,14 +10,14 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3dc06a19abdde00d4572e5c58895dc9b406ae6ba
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bc4ba4c019801c4461313149c0f3befacefa93d2
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34582618"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118142"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>Přizpůsobení souboru vnoření v Průzkumníku řešení
+# <a name="customize-file-nesting-in-solution-explorer"></a>Přizpůsobení vnořování souborů v Průzkumníku řešení
 
 Vnoření souvisejících souborů v **Průzkumníku řešení** není nový, ale dokud teď jste měli žádnou kontrolu nad vnoření pravidla. Můžete si vybrat mezi přednastavení **vypnout**, **výchozí** a **webové**, ale můžete také upravit vnoření přesně ke své libosti. Můžete například vytvořit konkrétní řešení a specifická nastavení projektu, ale také další informace o všech této později. Nejprve přejděte přes dostanete se na pole.
 
@@ -116,7 +116,7 @@ Tento zprostředkovatel umožňuje definovat souboru vnoření pravidla založen
 
 ![fileToFile příklad pravidla](media/filenesting_filetofile.png) ![Příklad vliv fileToFile](media/filenesting_filetofile_effect.png)
 
-* *bower.JSON* vnořen v části *.bowerrc* z důvodu **fileToFile** pravidlo
+* *.bowerrc* vnořen v části *bower.json* z důvodu **fileToFile** pravidlo
 
 ### <a name="rule-order"></a>Pořadí pravidel
 

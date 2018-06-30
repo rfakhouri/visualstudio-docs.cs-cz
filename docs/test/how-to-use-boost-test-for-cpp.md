@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 739368b8611d4755138466b8de37c16e5552fe11
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751621"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120173"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak používat Boost.Test jazyka C++ v sadě Visual Studio
 
@@ -48,20 +48,20 @@ Vyžaduje Boost.Test [nárůst](http://www.boost.org/)! Pokud nemáte nárůst n
 
 1. Nový soubor obsahuje metodu testovacího vzorku. Sestavení projektu povolit **Průzkumníka testů** metodu zjišťování.
 
-Varianta jedním záhlaví Boost.Test používá šablony položky, ale můžete upravit #include cestu na variant knihovny samostatné. Další informace najdete v tématu [direktivy začlenění přidat](#add_include_directives).
+Varianta jedním záhlaví Boost.Test používá šablony položky, ale můžete upravit #include cestu na variant knihovny samostatné. Další informace najdete v tématu [direktivy začlenění přidat](#add-include-directives).
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Vytvoření projektu testování (Visual Studio 2017 verze 15,5)
 
 V aplikaci Visual Studio 2017 verze 15,5 jsou k dispozici pro Boost.Test žádné předem nakonfigurovaná testovacího projektu nebo šablony položek. Proto musíte vytvořit a nakonfigurovat projekt konzolové aplikace pro uložení testy.
 
-1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na uzel řešení a zvolte **přidat** > **nový projekt...** .
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na uzel řešení a zvolte **přidat** > **nový projekt**.
 
 1. V levém podokně vyberte **Visual C++** > **Windows Desktop**a potom zvolte **konzolové aplikace pro Windows** šablony.
 
 1. Pojmenujte projekt a zvolte **OK**.
 1. Odstranit `main` funkce v souboru.
 
-1. Pokud používáte verzi Boost.Test jedním záhlaví nebo dynamické knihovny, přejděte na [direktivy začlenění přidat](#add_include_directives). Pokud používáte verzi statickou knihovnu, budete muset provést některé další konfigurace:
+1. Pokud používáte verzi Boost.Test jedním záhlaví nebo dynamické knihovny, přejděte na [direktivy začlenění přidat](#add-include-directives). Pokud používáte verzi statickou knihovnu, budete muset provést některé další konfigurace:
 
    a. Chcete-li upravit soubor projektu, nejdřív uvolněte ji. V **Průzkumníku řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte možnost **uvolnit projekt**. Potom klikněte pravým tlačítkem na uzel projektu a zvolte **upravit < název\>VCXPROJ**.
 

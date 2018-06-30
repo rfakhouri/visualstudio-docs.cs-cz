@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 04889d508903a80717f7055599a8b63b354e32ce
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: 3d34c03d74aae6ba1fb82e7357b6159b261cc2ad
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120202"
 ---
-# <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1
+# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1
   Projekty SharePoint jsou kontejnery pro jednu nebo více položek projektu služby SharePoint. Vytváření vlastních typů položek projektu služby SharePoint a poté je přidružení pomocí šablony projektu můžete rozšířit systému projektu služby SharePoint v sadě Visual Studio. V tomto návodu se definování typu položky projektu pro vytvoření sloupce webu a pak vytvoříte projekt šablonu, která slouží k vytvoření nového projektu, který obsahuje položky projektu sloupce webu.  
   
  Tento návod ukazuje následující úlohy:  
@@ -45,9 +46,9 @@ ms.lasthandoff: 05/23/2018
 ## <a name="prerequisites"></a>Požadavky  
  Následující součásti na vývojovém počítači k dokončení tohoto názorného postupu potřebujete:  
   
--   Podporované edice systému Windows, SharePoint a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [požadavky pro vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Podporované edice systému Windows, SharePoint a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Tento návod používá **projektu VSIX** šablony v sadě SDK k vytvoření balíčku VSIX pro nasazení položka projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Tento návod používá **projektu VSIX** šablony v sadě SDK k vytvoření balíčku VSIX pro nasazení položka projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
  Znalostní báze následující konceptu je užitečné, ale není nutné k dokončení průvodce:  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 05/23/2018
   
 -   Šablony projektů v sadě Visual Studio. Další informace najdete v tématu [vytváření projektů a šablon položek](/visualstudio/ide/creating-project-and-item-templates).  
   
-## <a name="creating-the-projects"></a>Vytváření projektů  
+## <a name="create-the-projects"></a>Vytváření projektů
  K dokončení tohoto postupu potřebujete vytvořit tří projektů:  
   
 -   Projekt VSIX. Tento projekt vytvoří balíčku VSIX pro nasazení položky projektu sloupce webu a v šabloně projektů.  
@@ -70,7 +71,7 @@ ms.lasthandoff: 05/23/2018
   
 1.  Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Na řádku nabídek zvolte **soubor**, **nový**, **projektu**.  
+2.  Na řádku nabídek zvolte **soubor** > **nový** > **projektu**.  
   
 3.  V horní části **nový projekt** dialogové okno pole, ujistěte se, že **rozhraní .NET Framework 4.5** je vybrán v seznamu verze rozhraní .NET Framework.  
   
@@ -103,15 +104,15 @@ ms.lasthandoff: 05/23/2018
   
 7.  Pokud jste vytvořili projektu jazyka Visual Basic, také odstraňte následující soubory z projektu:  
   
-    -   MyApplication.Designer.vb  
+    -   *MyApplication.Designer.vb*  
   
     -   MyApplication.myapp  
   
-    -   Resources.Designer.vb  
+    -   *Resources.Designer.vb*  
   
-    -   Resources.resx  
+    -   *Resources.resx*  
   
-    -   Settings.Designer.vb  
+    -   *Settings.Designer.vb*  
   
     -   Settings.Settings  
   
@@ -129,20 +130,20 @@ ms.lasthandoff: 05/23/2018
   
 5.  Odstraňte soubor kódu Class1 z projektu.  
   
-## <a name="configuring-the-extension-project"></a>Konfigurace projektu rozšíření  
+## <a name="configure-the-extension-project"></a>Konfigurace projektu rozšíření
  Přidáte soubory kódu a odkazy na sestavení ke konfiguraci rozšíření projektu.  
   
 #### <a name="to-configure-the-project"></a>Konfigurace projektu  
   
 1.  V projektu ProjectItemTypeDefinition přidat souboru kódu, který je pojmenován **SiteColumnProjectItemTypeProvider**.  
   
-2.  Na řádku nabídek zvolte **projektu**, **přidat odkaz na**.  
+2.  Na řádku nabídek zvolte **projektu** > **přidat odkaz na**.  
   
 3.  V **správce odkazů - ProjectItemTypeDefinition** dialogové okno, rozbalte seznam **sestavení** uzlu, vyberte **Framework** uzel a potom vyberte System.ComponentModel.Composition zaškrtávací políčko.  
   
 4.  Vyberte **rozšíření** uzlu, zaškrtněte políčko vedle sestavení Microsoft.VisualStudio.SharePoint a zvolte **OK** tlačítko.  
   
-## <a name="defining-the-new-sharepoint-project-item-type"></a>Definování nového typu položky projektu SharePoint  
+## <a name="define-the-new-sharepoint-project-item-type"></a>Definování nového typu položky projektu SharePoint
  Vytvořte třídu, která implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> rozhraní k definování chování nového typu položky projektu. Toto rozhraní implementujte vždy, když chcete k definování nového typu položky projektu.  
   
 #### <a name="to-define-the-new-sharepoint-project-item-type"></a>Chcete-li definovat nové typu položky projektu SharePoint  
@@ -152,8 +153,8 @@ ms.lasthandoff: 05/23/2018
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs#1)]
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]  
   
-## <a name="creating-a-visual-studio-project-template"></a>Vytvoření šablony projektů sady Visual Studio  
- Vytvořením šablony projektu povolíte jinými vývojáři k vytváření projektů služby SharePoint, které obsahují položky projektu sloupce webu. Šablona projektu služby SharePoint obsahuje soubory, které jsou požadovány pro všechny projekty v sadě Visual Studio, jako je například .csproj nebo .vbproj a soubory .vstemplate a soubory, které jsou specifické pro projekty SharePoint. Další informace najdete v tématu [vytváření šablon položek a šablony projektů pro položky projektu služby SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+## <a name="create-a-visual-studio-project-template"></a>Vytvoření šablony projektů sady Visual Studio
+ Vytvořením šablony projektu povolíte jinými vývojáři k vytváření projektů služby SharePoint, které obsahují položky projektu sloupce webu. Šablona projektu služby SharePoint obsahuje soubory potřebné pro všechny projekty v sadě Visual Studio, například *.csproj* nebo *.vbproj* a *.vstemplate* soubory a soubory, které jsou specifické pro projekty SharePoint. Další informace najdete v tématu [položky vytvářet šablony a šablony projektů pro položky projektu služby SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
  V tomto postupu můžete vytvořit prázdný projekt SharePoint pro vygenerování souborů, které jsou specifické pro projekty SharePoint. Potom přidáte tyto soubory do projektu SiteColumnProjectTemplate tak, že jsou zahrnuté v šabloně, které se generují z tohoto projektu. Můžete také nakonfigurovat soubor projektu SiteColumnProjectTemplate k určení, kde se zobrazí v šabloně projektů **nový projekt** dialogové okno.  
   
@@ -181,21 +182,21 @@ ms.lasthandoff: 05/23/2018
   
 8.  Opakujte kroky 5 až 8 přidejte následující soubory ze zadaného podsložky v adresáři BaseSharePointProject:  
   
-    -   \Field1\Elements.XML  
+    -   *\Field1\Elements.XML*  
   
-    -   \Field1\SharePointProjectItem.spdata  
+    -   *\Field1\SharePointProjectItem.spdata*  
   
-    -   \Features\Feature1\Feature1.Feature  
+    -   *\Features\Feature1\Feature1.Feature*  
   
-    -   \Features\Feature1\Feature1.template.XML  
+    -   *\Features\Feature1\Feature1.template.XML*  
   
-    -   \Package\Package.Package  
+    -   *\Package\Package.Package*  
   
-    -   \Package\Package.template.XML  
+    -   *\Package\Package.template.XML*  
   
-     Přidejte tyto soubory přímo do projektu SiteColumnProjectTemplate; nemusíte znovu vytvořit podsložky pole1, funkce nebo balíček v projektu. Další informace o těchto souborech najdete v tématu [vytváření šablon položek a šablony projektů pro položky projektu služby SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+     Přidejte tyto soubory přímo do projektu SiteColumnProjectTemplate; nemusíte znovu vytvořit podsložky pole1, funkce nebo balíček v projektu. Další informace o těchto souborech najdete v tématu [položky vytvářet šablony a šablony projektů pro položky projektu služby SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
-#### <a name="to-configure-how-developers-discover-the-project-template-in-the-new-project-dialog-box"></a>Ke konfiguraci, jak vývojáři zjistit šablona projektu v dialogovém okně Nový projekt  
+#### <a name="to-configure-how-developers-discover-the-project-template-in-the-new-project-dialog-box"></a>Ke konfiguraci, jak vývojáři zjistit šablona projektu v dialogovém okně Nový projekt
   
 1.  V **Průzkumníku řešení**, otevřete místní nabídku pro **SiteColumnProjectTemplate** uzel projektu a potom zvolte **uvolnit projekt**. Pokud se zobrazí výzva se uložit změny do všechny soubory, vyberte **Ano** tlačítko.  
   
@@ -221,28 +222,28 @@ ms.lasthandoff: 05/23/2018
   
 6.  V **Průzkumníku řešení**, otevřete místní nabídku pro **SiteColumnProjectTemplate** projektu a potom vyberte **znovu načíst projekt**.  
   
-## <a name="editing-the-project-template-files"></a>Úpravy souborů projektu šablony  
+## <a name="edit-the-project-template-files"></a>Upravit soubory šablon projektu
  V projektu SiteColumnProjectTemplate upravte následující soubory pro definování chování projektu šablony:  
   
--   AssemblyInfo.cs nebo AssemblyInfo.vb  
+-   *AssemblyInfo.cs* nebo *AssemblyInfo.vb*  
   
--   Elements.XML  
+-   *Elements.XML*  
   
--   SharePointProjectItem.spdata  
+-   *SharePointProjectItem.spdata*  
   
--   Feature1.Feature  
+-   *Feature1.Feature*  
   
--   Package.Package  
+-   *Package.Package*  
   
--   SiteColumnProjectTemplate.vstemplate  
+-   *SiteColumnProjectTemplate.vstemplate*  
   
--   ProjectTemplate.csproj nebo ProjectTemplate.vbproj  
+-   *ProjectTemplate.csproj* nebo *ProjectTemplate.vbproj*  
   
  V následujících postupech přidáte nahraditelné parametry k některé z těchto souborů. Nahraditelné parametr je token, který se spustí a končí znak dolaru ($). Pokud uživatel používá tato šablona projektu pro vytvoření projektu, Visual Studio automaticky nahradí tyto parametry v novém projektu s konkrétními hodnotami. Další informace najdete v tématu [nahraditelné parametry](../sharepoint/replaceable-parameters.md).  
   
-#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>Chcete-li upravit soubor AssemblyInfo.cs nebo AssemblyInfo.vb  
+#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>Chcete-li upravit soubor AssemblyInfo.cs nebo AssemblyInfo.vb
   
-1.  V projektu SiteColumnProjectTemplate otevřete soubor AssemblyInfo.cs nebo AssemblyInfo.vb a potom přidejte následující příkaz na začátek:  
+1.  V projektu SiteColumnProjectTemplate, otevřete *AssemblyInfo.cs* nebo *AssemblyInfo.vb* souboru a poté přidejte na začátek následující příkaz:  
   
     ```vb  
     Imports System.Security  
@@ -256,9 +257,9 @@ ms.lasthandoff: 05/23/2018
   
 2.  Soubor uložte a zavřete.  
   
-#### <a name="to-edit-the-elementsxml-file"></a>Chcete-li upravit soubor Elements.xml  
+#### <a name="to-edit-the-elementsxml-file"></a>Chcete-li upravit soubor Elements.xml
   
-1.  V projektu SiteColumnProjectTemplate nahraďte obsah souboru Elements.xml následující kód XML.  
+1.  V projektu SiteColumnProjectTemplate nahraďte obsah *Elements.xml* soubor s následující kód XML.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -276,9 +277,9 @@ ms.lasthandoff: 05/23/2018
   
 2.  Soubor uložte a zavřete.  
   
-#### <a name="to-edit-the-sharepointprojectitemspdata-file"></a>Chcete-li upravit soubor SharePointProjectItem.spdata  
+#### <a name="to-edit-the-sharepointprojectitemspdata-file"></a>Chcete-li upravit soubor SharePointProjectItem.spdata
   
-1.  V projektu SiteColumnProjectTemplate nahraďte obsah souboru SharePointProjectItem.spdata následující kód XML.  
+1.  V projektu SiteColumnProjectTemplate nahraďte obsah *SharePointProjectItem.spdata* soubor s následující kód XML.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -296,13 +297,13 @@ ms.lasthandoff: 05/23/2018
   
     -   Odebere `SupportedTrustLevels` a `SupportedDeploymentScopes` atributy z `ProjectItem` elementu. Tyto hodnoty atributů nejsou potřeba, protože úrovně důvěryhodnosti a nasazení obory jsou určené v `SiteColumnProjectItemTypeProvider` třídy ProjectItemTypeDefinition projektu.  
   
-     Další informace o obsahu soubory .spdata najdete v tématu [referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).  
+     Další informace o obsahu *.spdata* soubory, najdete v části [referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).  
   
 2.  Soubor uložte a zavřete.  
   
-#### <a name="to-edit-the-feature1feature-file"></a>Chcete-li upravit soubor Feature1.feature  
+#### <a name="to-edit-the-feature1feature-file"></a>Chcete-li upravit soubor Feature1.feature
   
-1.  V projektu SiteColumnProjectTemplate nahraďte obsah souboru Feature1.feature následující kód XML.  
+1.  V projektu SiteColumnProjectTemplate nahraďte obsah *Feature1.feature* soubor s následující kód XML.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -322,13 +323,13 @@ ms.lasthandoff: 05/23/2018
   
     -   Změní hodnoty `itemId` atribut `projectItemReference` element `$guid2$`.  
   
-     Další informace o souborech .feature najdete v tématu [vytváření šablon položek a šablony projektů pro položky projektu služby SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+     Další informace o *.feature* soubory, najdete v části [položky vytvářet šablony a šablony projektů pro položky projektu služby SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
 2.  Soubor uložte a zavřete.  
   
-#### <a name="to-edit-the-packagepackage-file"></a>Chcete-li upravit soubor Package.package  
+#### <a name="to-edit-the-packagepackage-file"></a>Chcete-li upravit soubor Package.package
   
-1.  V projektu SiteColumnProjectTemplate nahraďte obsah souboru Package.package následující kód XML.  
+1.  V projektu SiteColumnProjectTemplate nahraďte obsah *Package.package* soubor s následující kód XML.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -347,11 +348,11 @@ ms.lasthandoff: 05/23/2018
   
     -   Změní hodnoty `itemId` atribut `featureReference` element `$guid4$`.  
   
-     Další informace o souborech .package najdete v tématu [vytváření šablon položek a šablony projektů pro položky projektu služby SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+     Další informace o *.package* soubory, najdete v části [položky vytvářet šablony a šablony projektů pro položky projektu služby SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
 2.  Soubor uložte a zavřete.  
   
-#### <a name="to-edit-the-sitecolumnprojecttemplatevstemplate-file"></a>Chcete-li upravit soubor SiteColumnProjectTemplate.vstemplate  
+#### <a name="to-edit-the-sitecolumnprojecttemplatevstemplate-file"></a>Chcete-li upravit soubor sitecolumnprojecttemplate.vstemplate
   
 1.  V projektu SiteColumnProjectTemplate nahraďte obsah souboru SiteColumnProjectTemplate.vstemplate s jedním z těchto částí XML.  
   
@@ -435,13 +436,13 @@ ms.lasthandoff: 05/23/2018
   
     -   Používá obor názvů "http://schemas.microsoft.com/developer/vstemplate/2005". Ostatní soubory projektu v tomto řešení "http://schemas.microsoft.com/developer/msbuild/2003" oboru názvů. Proto se budou generovat zprávy upozornění schématu XML, ale je v tomto návodu můžete ignorovat.  
   
-     Další informace o obsahu soubory .vstemplate najdete v tématu [Visual Studio odkaz na schéma šablon](/visualstudio/extensibility/visual-studio-template-schema-reference).  
+     Další informace o obsahu *.vstemplate* soubory, najdete v části [Visual Studio odkaz na schéma šablon](/visualstudio/extensibility/visual-studio-template-schema-reference).  
   
 2.  Soubor uložte a zavřete.  
   
-#### <a name="to-edit-the-projecttemplatecsproj-or-projecttemplatevbproj-file"></a>Chcete-li upravit soubor ProjectTemplate.csproj nebo ProjectTemplate.vbproj  
+#### <a name="to-edit-the-projecttemplatecsproj-or-projecttemplatevbproj-file"></a>Chcete-li upravit soubor projecttemplate.csproj nebo projecttemplate.vbproj
   
-1.  V projektu SiteColumnProjectTemplate nahraďte obsah souboru ProjectTemplate.csproj nebo ProjectTemplate.vbproj soubor s jedním z těchto částí XML.  
+1.  V projektu SiteColumnProjectTemplate nahraďte obsah *ProjectTemplate.csproj* souboru nebo *ProjectTemplate.vbproj* soubor s jedním z těchto částí XML.  
   
     -   Pokud vytváříte šablonu projekt Visual C#, použijte následující kód XML.  
   
@@ -630,11 +631,11 @@ ms.lasthandoff: 05/23/2018
   
     -   Přidá `Reference` prvky pro sestavení odkazuje využívající projektů služby SharePoint.  
   
-    -   Přidá elementy pro každý soubor výchozí v projektu, například Elements.xml a SharePointProjectItem.spdata.  
+    -   Přidá elementy pro každý soubor výchozí v projektu, například *Elements.xml* a *SharePointProjectItem.spdata*.  
   
 2.  Soubor uložte a zavřete.  
   
-## <a name="creating-a-vsix-package-to-deploy-the-project-template"></a>Vytvoření balíčku VSIX pro nasazení v šabloně projektů  
+## <a name="create-a-vsix-package-to-deploy-the-project-template"></a>Vytvoření balíčku VSIX pro nasazení v šabloně projektů
  Chcete-li nasadit rozšíření, použijte VSIX projekt v **SiteColumnProjectItem** řešení k vytvoření balíčku VSIX. Nejprve nakonfigurujte balíčku VSIX úpravou souboru source.extension.vsixmanifest, který je zahrnutý v projektu VSIX. Pak vytvořte balíčku VSIX vytvořením řešení.  
   
 #### <a name="to-configure-and-create-the-vsix-package"></a>Ke konfiguraci a vytvoření balíčku VSIX  
@@ -675,9 +676,9 @@ ms.lasthandoff: 05/23/2018
   
 12. V **projektu** vyberte **ProjectItemTypeDefinition**a potom zvolte **OK** tlačítko.  
   
-13. Na řádku nabídek zvolte **sestavení**, **sestavit řešení**a pak se ujistěte, že projekt zkompiluje bez chyb.  
+13. Na řádku nabídek zvolte **sestavení** > **sestavit řešení**a pak se ujistěte, že projekt zkompiluje bez chyb.  
   
-## <a name="testing-the-project-template"></a>Testování v šabloně projektů  
+## <a name="test-the-project-template"></a>Test v šabloně projektů
  Nyní jste připraveni k testování v šabloně projektů. Nejprve spusťte ladění řešení SiteColumnProjectItem v experimentální instanci sady Visual Studio. Pak test **sloupec lokality** projektu v experimentální instanci sady Visual Studio. Nakonec sestavte a spusťte projektu služby SharePoint k ověření, že sloupec lokality funguje podle očekávání.  
   
 #### <a name="to-start-debugging-the-solution"></a>Spustit ladění řešení  
@@ -692,7 +693,7 @@ ms.lasthandoff: 05/23/2018
   
 #### <a name="to-test-the-project-in-visual-studio"></a>K testování projektu v sadě Visual Studio  
   
-1.  V experimentální instanci sady Visual Studio na řádku nabídek zvolte **soubor**, **nový**, **projektu**.  
+1.  V experimentální instanci sady Visual Studio na řádku nabídek zvolte **soubor** > **nový** > **projektu**.  
   
 2.  Rozbalte položku **Visual C#** nebo **jazyka Visual Basic** uzlu (v závislosti na jazyce, který podporuje vaše šablona projektu), rozbalte **SharePoint** uzel a potom vyberte **2010** uzlu.  
   
@@ -736,12 +737,12 @@ ms.lasthandoff: 05/23/2018
   
 7.  Zavřete webový prohlížeč.  
   
-## <a name="cleaning-up-the-development-computer"></a>Čištění vývojovém počítači  
+## <a name="clean-up-the-development-computer"></a>Vyčištění vývojovém počítači
  Po dokončení testování projektu, odeberte v šabloně projektů z experimentální instanci sady Visual Studio.  
   
 #### <a name="to-clean-up-the-development-computer"></a>Vyčistěte vývojovém počítači  
   
-1.  V experimentální instanci sady Visual Studio na řádku nabídek zvolte **nástroje**, **rozšíření a aktualizace**.  
+1.  V experimentální instanci sady Visual Studio na řádku nabídek zvolte **nástroje** > **rozšíření a aktualizace**.  
   
      **Rozšíření a aktualizace** otevře se dialogové okno.  
   
@@ -753,14 +754,13 @@ ms.lasthandoff: 05/23/2018
   
 5.  Zavřete obě instance sady Visual Studio (experimentální instance a instance sady Visual Studio, ve kterém je otevřen SiteColumnProjectItem řešení).  
   
-## <a name="next-steps"></a>Další kroky  
- Po dokončení tohoto postupu můžete přidat do šablony projektu průvodce. Když uživatel vytvoří projektu sloupce webu, tento průvodce zobrazí uživatele na adresu URL serveru pro ladění a jestli je nové řešení v izolovaném prostoru a Průvodce konfiguruje nový projekt pomocí těchto informací. Průvodce taky shromažďuje informace o sloupci (například základní typ a skupinu, ve které seznam sloupec v galerii sloupec lokality) a přidá tyto informace do souboru Elements.xml v novém projektu. Další informace najdete v tématu [návod: vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
+## <a name="next-steps"></a>Další kroky
+ Po dokončení tohoto postupu můžete přidat do šablony projektu průvodce. Když uživatel vytvoří projektu sloupce webu, tento průvodce zobrazí uživatele na adresu URL serveru pro ladění a jestli je nové řešení v izolovaném prostoru a Průvodce konfiguruje nový projekt pomocí těchto informací. Průvodce taky shromažďuje informace o sloupci (například základní typ a skupinu, ve které seznam sloupec v galerii sloupec lokality) a přidá tyto informace *Elements.xml* souboru v novém projektu. Další informace najdete v tématu [návod: vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
- [Definování typů položek projektu služby SharePoint vlastní](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
- [Vytváření šablon položek a projektů pro položky projektu služby SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
- [Ukládání dat do rozšíření systému projektu služby SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
- [Přidružení vlastních dat k rozšíření nástrojů služby SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
-  
+ [Definování vlastních typů položek projektu služby SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
+ [Vytváření šablon položek a šablony projektů pro položky projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
+ [Uložení dat v rozšíření systému projektu služby SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
+ [Přidružení vlastních dat k rozšíření nástrojů SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
   

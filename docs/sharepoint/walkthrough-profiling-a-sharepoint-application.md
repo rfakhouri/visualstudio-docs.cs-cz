@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f6eb4e9f78a9defaafb774551e301d6101cc40d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c52fdfd2a4598c63073476ae6b0ce3ee96bd94a
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120278"
 ---
-# <a name="walkthrough-profiling-a-sharepoint-application"></a>Postupy: Profilace aplikace SharePoint
+# <a name="walkthrough-profile-a-sharepoint-application"></a>Návod: Profil aplikace SharePoint
   Tento návod ukazuje způsob použití nástrojů pro profilaci k optimalizaci výkonu aplikace SharePoint v sadě Visual Studio. Ukázková aplikace je příjemce událostí funkce služby SharePoint, obsahující nečinné smyčky, která snižuje výkon přijímače událostí funkcí. Visual Studio profiler umožňuje nalézt a eliminovat nejnákladnější (nejpomalejší provádění) součástí projektu, také známé jako *aktivní trase*.  
   
  Tento návod ukazuje následující úlohy:  
@@ -46,12 +47,12 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
-## <a name="creating-a-sharepoint-project"></a>Vytvoření projektu SharePoint  
+## <a name="create-a-sharepoint-project"></a>Vytvoření projektu služby SharePoint
  Nejprve vytvořte projektu služby SharePoint.  
   
 #### <a name="to-create-a-sharepoint-project"></a>Vytvoření projektu služby SharePoint  
   
-1.  Na řádku nabídek zvolte **soubor**, **nový**, **projektu** zobrazíte **nový projekt** dialogové okno.  
+1.  Na řádku nabídek zvolte **soubor** > **nový** > **projektu** zobrazíte **nový projekt** dialogové okno.  
   
 2.  Rozbalte **SharePoint** uzel v rámci buď **Visual C#** nebo **jazyka Visual Basic**a potom zvolte **2010** uzlu.  
   
@@ -65,11 +66,11 @@ ms.lasthandoff: 04/16/2018
   
 6.  V **co je úrovně důvěryhodnosti pro toto řešení služby SharePoint?** zvolte **nasadit jako řešení farmy** tlačítko.  
   
-     V současné době můžete pouze profil řešení ve farmách. Další informace o řešení v izolovaném prostoru a řešení ve farmách najdete v tématu [v izolovaném prostoru aspekty řešení](../sharepoint/sandboxed-solution-considerations.md).  
+     V současné době můžete pouze profil řešení ve farmách. Další informace o řešení v izolovaném prostoru a řešení ve farmách najdete v tématu [aspekty řešení v izolovaném prostoru](../sharepoint/sandboxed-solution-considerations.md).  
   
 7.  Vyberte **Dokončit** tlačítko. Projekt se objeví v **Průzkumníku řešení**.  
   
-##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a> Přidání funkce a příjemce událostí funkce  
+## <a name="add-a-feature-and-feature-event-receiver"></a>Přidání funkce a příjemce událostí funkce
  Funkce v dalším kroku přidejte do projektu spolu s přijímače událostí pro funkci. Tento příjemce událostí bude obsahovat kód, který se profilovaným.  
   
 #### <a name="to-add-a-feature-and-feature-event-receiver"></a>Chcete-li přidat funkce a příjemce událostí funkce  
@@ -190,7 +191,7 @@ ms.lasthandoff: 04/16/2018
   
 9. Uložte projekt.  
   
-##  <a name="BKMK_ConfigSharePointApp"></a> Konfigurace a nasazení aplikace SharePoint  
+## <a name="configure-and-deploy-the-sharepoint-application"></a>Nakonfigurujte a nasaďte aplikace SharePoint
  Teď, když projektu služby SharePoint je připraveno, ho nakonfigurovat a nasadit server služby SharePoint.  
   
 #### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Umožňuje nakonfigurovat a nasadit aplikace SharePoint  
@@ -213,7 +214,7 @@ ms.lasthandoff: 04/16/2018
   
      Průvodce umožňuje profilace aplikací na serveru, zobrazí **prohlížeč výkonu** okna a potom sestavení nasadí a spouští aplikace SharePoint.  
   
-##  <a name="BKMK_RunSPApp"></a> Spuštění aplikace SharePoint  
+## <a name="run-the-sharepoint-application"></a>Spusťte aplikaci služby SharePoint
  Aktivovat funkci ve službě SharePoint, která aktivuje `FeatureActivation` událostí kód pro spuštění.  
   
 #### <a name="to-run-the-sharepoint-application"></a>Ke spuštění aplikace SharePoint  
@@ -234,10 +235,10 @@ ms.lasthandoff: 04/16/2018
   
      Po ukončení služby SharePoint, profileru vytvoří a zobrazí zprávu o ukázka profilace a uloží ji jako soubor .vsp v **ProfileTest** složce projektu.  
   
-##  <a name="BKMK_ViewResults"></a> Zobrazení a interpretací výsledků profilace  
+## <a name="view-and-interpret-the-profile-results"></a>Zobrazení a interpretovat výsledky profilu
  Teď, když máte spustit a profilovaným aplikace SharePoint, zobrazíte výsledky testů.  
   
-#### <a name="to-view-and-interpret-the-profiling-results"></a>K zobrazení a interpretovat výsledky profilace  
+#### <a name="to-view-and-interpret-the-profile-results"></a>K zobrazení a interpretovat výsledky profilu
   
 1.  V **nejvíce jednotlivých pracuje funkce** části ukázkové sestavy profilace, Všimněte si, že `TimeCounter` je v horní části seznamu.  
   
@@ -255,7 +256,7 @@ ms.lasthandoff: 04/16/2018
   
      Chcete-li zobrazit sestavu kdykoli znovu, otevřete soubor .vsp v **prohlížeč výkonu** okno.  
   
-## <a name="fixing-the-code-and-reprofiling-the-application"></a>Oprava kód a Reprofiling aplikace  
+## <a name="fix-the-code-and-reprofile-the-application"></a>Opravte kód a reprofile aplikace
  Teď, když byla zjištěna hotspotů funkce v aplikaci služby SharePoint, opravte ji.  
   
 #### <a name="to-fix-the-code-and-reprofile-the-application"></a>Kód, a reprofile aplikace  
@@ -274,10 +275,9 @@ ms.lasthandoff: 04/16/2018
   
      Funkce by měly aktivovat mnohem rychleji teď, když se odstranilo volání nečinné smyčky. Ukázková sestava profilace musí tuto skutečnost.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Prohlížeč výkonu](/visualstudio/profiling/performance-explorer)   
  [Přehled výkonnostní relace](/visualstudio/profiling/performance-session-overview)   
  [Průvodce začátečníka profilací výkonu](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
  [Najít kritická místa aplikace pomocí sady Visual Studio Profiler](http://go.microsoft.com/fwlink/?LinkID=137266)  
-  
   

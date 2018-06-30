@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3ace523bd68b9d96916c23ebdbc93eaadd339da6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c4301d69b8358375b901f329f8725ab26aa42a73
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446498"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117560"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Vytvořte nastavení editoru přenosné, vlastní s EditorConfig
 
@@ -58,7 +58,7 @@ Když odeberete soubor EditorConfig z projektu nebo základu kódu, musí zavře
 
 1. Otevřete projekt nebo řešení v sadě Visual Studio. Vyberte uzel na projekt nebo řešení, podle toho, jestli vaše *.editorconfig* nastavení by se měly používat pro všechny projekty v řešení nebo pouze jeden. Můžete také vybrat složku v projekt nebo řešení pro přidání *.editorconfig* do souboru.
 
-1. V řádku nabídek zvolte **projektu** > **přidat novou položku...** , nebo stiskněte klávesu **Ctrl**+**Shift**+**A**.
+1. V řádku nabídek zvolte **projektu** > **přidat novou položku**, nebo stiskněte klávesu **Ctrl**+**Shift** + **A**.
 
    **Přidat novou položku** otevře se dialogové okno.
 
@@ -157,7 +157,7 @@ dir .editorconfig /s
 
 Obor názvů vaší EditorConfig můžete ovládat nastavením ```root=true``` vlastnost v *.editorconfig* soubor v kořenovém adresáři vašeho úložiště nebo v adresáři, který se nachází váš projekt. Visual Studio hledá soubor s názvem *.editorconfig* v adresáři otevřený soubor a každý nadřazený adresář. Hledání končí, když dorazí do kořenové filepath nebo *.editorconfig* soubor s ```root=true``` nalezen.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Pravidla týkající se rozhraní .NET kódu stylu](../ide/editorconfig-code-style-settings-reference.md)
 - [Zásady vytváření názvů rozhraní .NET](../ide/editorconfig-naming-conventions.md)

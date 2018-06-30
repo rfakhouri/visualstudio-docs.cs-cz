@@ -19,16 +19,16 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924469"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117209"
 ---
 # <a name="code-snippets"></a>Fragmenty kódu
 
-Fragmenty kódu jsou malé bloky opakovaně použitelný kód, který lze vložit do souboru kódu s použitím příkazu nabídky kontext nebo kombinace klávesových zkratek. Obvykle obsahují bloky kódu se často používá jako `try-finally` nebo `if-else` bloky, ale slouží k vložení celé třídy nebo metody.
+Fragmenty kódu jsou malé bloky opakovaně použitelný kód, který lze vložit do souboru kódu s použitím příkazu nabídky kontext nebo kombinace klávesových zkratek. Obvykle obsahují bloky kódu běžně používané jako `try-finally` nebo `if-else` bloky, ale slouží k vložení celé třídy nebo metody.
 
 Fragmenty kódu jsou k dispozici pro různé jazyky, včetně C#, C++, Visual Basic, XML a T-SQL, a další. Chcete-li zobrazit všechny dostupné nainstalované fragmenty kódu pro jazyk, otevřete **Správce fragmentů kódu** z **nástroje** nabídky v sadě Visual Studio a zvolte jazyk, z rozevírací nabídky v horní části.
 
@@ -36,9 +36,9 @@ Fragmenty kódu jsou k dispozici pro různé jazyky, včetně C#, C++, Visual Ba
 
 Fragmenty kódu jsou přístupné obecné takto:
 
-- Na řádku nabídek zvolte **upravit** > **IntelliSense** > **Vložit fragment...**
+- Na řádku nabídek zvolte **upravit** > **IntelliSense** > **Vložit fragment kódu**
 
-- V nabídce klikněte pravým tlačítkem nebo kontextu v editoru kódu, zvolte **fragment kódu** > **Vložit fragment...**
+- V nabídce klikněte pravým tlačítkem nebo kontextu v editoru kódu, zvolte **fragment kódu** > **Vložit fragment kódu**
 
 - Pomocí klávesnice, stiskněte klávesu **Ctrl**+**tisíc**+**X**
 
@@ -74,7 +74,7 @@ if (true)
 
 Fragmenty kódu může obsahovat nahrazující parametry, které jsou zástupné symboly, které je třeba nahradit podle přesné kód, který vytváříte. V předchozím příkladu `true` je parametr nahrazení, který by nahraďte vhodné podmínky. Nahrazení, které se opakuje pro každou instanci parametr nahrazení v tomto fragmentu kódu.
 
-Například v jazyce Visual Basic není fragment kódu, která vloží vlastnost. Chcete-li vložit fragment, zvolte **fragment kódu...**   >  **Vložit fragment** v nabídce klikněte pravým tlačítkem nebo kontextu v souboru kódu jazyka Visual Basic. Pak zvolte **kódu, které vypadají** > **vlastnosti, postupy, události** > **definovat vlastnost**.
+Například v jazyce Visual Basic není fragment kódu, která vloží vlastnost. Chcete-li vložit fragment, zvolte **fragment kódu** > **Vložit fragment** v nabídce klikněte pravým tlačítkem nebo kontextu v souboru kódu jazyka Visual Basic. Pak zvolte **kódu, které vypadají** > **vlastnosti, postupy, události** > **definovat vlastnost**.
 
 ![Nabídka fragmentu kódu pro definování vlastnosti](media/code-snippets-vb-property.png)
 
@@ -94,7 +94,7 @@ End Property
 
 Pokud změníte `newPropertyValue` k `m_property`, pak všechny instance řetězce `newPropertyValue` se změnilo. Pokud změníte `String` k `Int` v deklarace vlastnosti pak hodnota v set se také změní na `Int`.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md)
 - [Postupy: distribuce fragmentů kódu](../ide/how-to-distribute-code-snippets.md)
@@ -102,4 +102,4 @@ Pokud změníte `newPropertyValue` k `m_property`, pak všechny instance řetěz
 - [Řešení potíží s fragmenty kódu](../ide/troubleshooting-snippets.md)
 - [Fragmenty kódu v C#](../ide/visual-csharp-code-snippets.md)
 - [Fragmenty kódu Visual C++](../ide/visual-cpp-code-snippets.md)
-- [Fragmenty kódu – odkaz schématu](../ide/code-snippets-schema-reference.md)
+- [Referenční informace ke schématu fragmentů kódu](../ide/code-snippets-schema-reference.md)

@@ -1,6 +1,6 @@
 ---
 title: Kódování nastavení konvence pro EditorConfig v sadě Visual Studio .NET
-ms.date: 02/28/2018
+ms.date: 06/14/2018
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -18,16 +18,18 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: caedbf46ce3d56d57a22541f1ddc042d8e41eb48
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5789f246f004bbe4bc5400a740e9b901173c26c4
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572644"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117862"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kódování nastavení konvence pro EditorConfig rozhraní .NET
 
-V Visual Studio 2017, můžete definovat a udržovat styl konzistentní kód ve vaší základu kódu s použitím [EditorConfig](../ide/create-portable-custom-editor-options.md) souboru. EditorConfig obsahuje několik jader formátování vlastností, jako například `indent_style` a `indent_size`. V sadě Visual Studio .NET kódování konvence nastavení lze také nakonfigurovat pomocí souboru EditorConfig. Soubory EditorConfig umožňují vám umožní povolit nebo zakázat jednotlivé .NET konvence kódování a nakonfigurovat na úroveň, na který chcete konvence vynucuje prostřednictvím úroveň závažnosti. Další informace o tom, jak zajistit konzistenci v vaší codebase pomocí EditorConfig [vytvoření přenosné vlastního editoru možnosti](../ide/create-portable-custom-editor-options.md). Můžete také zobrazit [platformy .NET kompilátoru .editorconfig soubor](https://github.com/dotnet/roslyn/blob/master/.editorconfig) jako příklad.
+V Visual Studio 2017, můžete definovat a udržovat styl konzistentní kód ve vaší základu kódu s použitím [EditorConfig](../ide/create-portable-custom-editor-options.md) souboru. EditorConfig obsahuje několik jader formátování vlastností, jako například `indent_style` a `indent_size`. V sadě Visual Studio .NET kódování konvence nastavení lze také nakonfigurovat pomocí souboru EditorConfig. Soubory EditorConfig umožňují vám umožní povolit nebo zakázat jednotlivé .NET konvence kódování a nakonfigurovat na úroveň, na který chcete konvence vynucuje prostřednictvím úroveň závažnosti. Další informace o tom, jak zajistit konzistenci v vaší codebase pomocí EditorConfig [vytvoření přenosné vlastního editoru možnosti](../ide/create-portable-custom-editor-options.md). 
+
+Najdete na konci tohoto dokumentu pro .editorconfig příklad.
 
 Existují tři podporované .NET kódování konvence kategorie:
 
@@ -47,7 +49,7 @@ Existují tři podporované .NET kódování konvence kategorie:
 
 Pravidla pro jazyk konvence mít následující formát:
 
-`options_name = false|true : none|suggestion|warning|error`
+`options_name = false|true : none|silent|suggestion|warning|error`
 
 Pro každé pravidlo konvence jazyk, je nutné zadat buď **true** (upřednostnit tento styl) nebo **false** (není přednost tento styl) a **závažnost**. Závažnost určuje úroveň vynucení pro daný styl.
 
@@ -55,10 +57,10 @@ Následující tabulka uvádí možné závažnost hodnoty a jejich důsledky:
 
 Závažnost | Efekt
 :------- | ------
-žádná nebo tichou | Nezobrazovat nic uživateli při porušení toto pravidlo. Funkce generování kódu vygeneruje kód v tomto stylu, ale.
-Návrh | Pokud toto pravidlo stylu je došlo k porušení, je zobrazit uživateli jako návrh. Návrhy se zobrazí jako tři tečky šedé pod první dva znaky.
-upozornění | Pokud toto pravidlo stylu je došlo k porušení, zobrazit upozornění kompilátoru.
-Chyba | Pokud toto pravidlo stylu je došlo k porušení, zobrazit chyba kompilátoru.
+`none` nebo `silent` | Nezobrazovat nic uživateli při porušení toto pravidlo. Funkce generování kódu vygeneruje kód v tomto stylu, ale. Pravidla s `none` závažnost nikdy joinkind *rychlé akce a refaktoring* nabídky. Ve většině případů je to "Zakázat" nebo "Ignorovat".
+`suggestion` | Pokud toto pravidlo stylu je došlo k porušení, je zobrazit uživateli jako návrh. Návrhy se zobrazí jako tři tečky šedé pod první dva znaky.
+`warning` | Pokud toto pravidlo stylu je došlo k porušení, zobrazit upozornění kompilátoru.
+`error` | Pokud toto pravidlo stylu je došlo k porušení, zobrazit chyba kompilátoru.
 
 V následujícím seznamu jsou povolená jazyk pravidla konvence:
 
@@ -80,8 +82,10 @@ V následujícím seznamu jsou povolená jazyk pravidla konvence:
         - DotNet\_styl\_object_initializer
         - DotNet\_styl\_collection_initializer
         - DotNet\_styl\_explicitní\_tuple_names
-        - DotNet\_přednost\_odvodit\_tuple_names
-        - DotNet\_přednost\_odvodit\_anonymní\_typ\_member_names
+        - DotNet\_styl\_přednost\_odvodit\_tuple_names
+        - DotNet\_styl\_přednost\_odvodit\_anonymní\_typ\_member_names
+        - DotNet\_styl\_přednost\_automaticky\_vlastnosti
+        - DotNet\_styl\_přednost\_je\_null\_zkontrolujte\_přes\_odkaz\_rovnosti\_– metoda
     - ["Null" Kontrola předvolby](#null_checking)
         - dotnet\_style\_coalesce_expression
         - dotnet\_style\_null_propagation
@@ -419,6 +423,8 @@ Následující tabulka uvádí názvy pravidel, pravidlo ID, použít programova
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0 + a Visual Basic 15 + | hodnotu true: návrh | První verze |
 | dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1 + a Visual Basic 15 + | hodnotu true: návrh | 15,6 operací |
 | dotnet_style_prefer_inferred_anonymous_ type_member_names | IDE0037 | C# a Visual Basic | hodnotu true: návrh | 15,6 operací |
+| dotnet_style_prefer_auto_properties | IDE0032 | C# a Visual Basic | hodnotu true: žádné | 15.7 |
+| dotnet_style_prefer_is_null_check_over_reference_equality_method | IDE0041 | C# a Visual Basic | hodnotu true: návrh | 15.7 |
 
 **DotNet\_styl\_object_initializer**
 
@@ -516,6 +522,14 @@ var tuple = (age, name);
 var tuple = (age: age, name: name);
 ```
 
+```vb
+' dotnet_style_prefer_inferred_tuple_names = true
+Dim tuple = (name, age)
+
+' dotnet_style_prefer_inferred_tuple_names = false
+Dim tuple = (name:=name, age:=age)
+```
+
 **DotNet\_styl\_přednost\_odvodit\_anonymní\_typ\_member_names**
 
 - Když je toto pravidlo nastavená na **true**, raději názvy člen vyvozen anonymního typu.
@@ -532,6 +546,81 @@ var anon = new { age = age, name = name };
 
 ```
 
+```vb
+' dotnet_style_prefer_inferred_anonymous_type_member_names = true
+Dim anon = New With {name, age}
+
+' dotnet_style_prefer_inferred_anonymous_type_member_names = false
+Dim anon = New With {.name = name, .age = age}
+
+```
+
+**DotNet\_styl\_přednost\_automaticky\_vlastnosti**
+
+- Když je toto pravidlo nastavená na **true**, raději automaticky vlastnosti přes vlastnosti s privátní základní pole.
+- Když je toto pravidlo nastavená na **false**, raději vlastnosti s privátní základní pole přes automaticky vlastnosti.
+
+Příklady kódu:
+
+```csharp
+// dotnet_style_prefer_auto_properties = true
+private int Age { get; }
+
+// dotnet_style_prefer_auto_properties = false
+private int age;
+
+public int Age
+{
+    get
+    {
+        return age;
+    }
+}
+```
+
+```vb
+' dotnet_style_prefer_auto_properties = true
+Public ReadOnly Property Age As Integer
+
+' dotnet_style_prefer_auto_properties = false
+Private _age As Integer
+
+Public ReadOnly Property Age As Integer
+    Get
+        return _age
+    End Get
+End Property 
+```
+
+**DotNet\_styl\_přednost\_je\_null\_zkontrolujte\_přes\_odkaz\_rovnosti\_– metoda**
+
+- Když je toto pravidlo nastavená na **true**, raději pomocí kontrolu null porovnávání přes objekt. ReferenceEquals.
+- Když je toto pravidlo nastavená na **false**, raději objektu. ReferenceEquals přes kontrolu null s porovnávání.
+
+Příklady kódu:
+
+```csharp
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+if (value is null)
+    return;
+
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+if (object.ReferenceEquals(value, null))
+    return;
+```
+
+```vb
+' dotnet_style_prefer_auto_properties = true
+If value Is Nothing
+    Return
+End If
+
+' dotnet_style_prefer_auto_properties = false
+If Object.ReferenceEquals(value, Nothing)
+    Return
+End If
+```
+
 Tato pravidla mohou být zobrazeny v *.editorconfig* následujícím způsobem:
 
 ```EditorConfig
@@ -542,6 +631,7 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_auto_properties = true:none
 ```
 
 #### <a name="null_checking"></a>Kontrola Null předvolby
@@ -1120,6 +1210,12 @@ V následujícím seznamu jsou k dispozici v sadě Visual Studio pravidla formá
         - csharp_space_between_method_declaration_parameter_list_parentheses
         - csharp_space_between_method_call_parameter_list_parentheses
         - csharp_space_between_parentheses
+        - csharp_space_before_colon_in_inheritance_clause
+        - csharp_space_after_colon_in_inheritance_clause
+        - csharp_space_around_binary_operators
+        - csharp_space_between_method_declaration_empty_parameter_list_parentheses
+        - csharp_space_between_method_call_name_and_opening_parenthesis
+        - csharp_space_between_method_call_empty_parameter_list_parentheses
     - [Možnosti zabalení](#wrapping)
         - csharp_preserve_single_line_statements
         - csharp_preserve_single_line_blocks
@@ -1526,6 +1622,12 @@ Následující tabulka uvádí názvy pravidel, použitelné jazyky, výchozí h
 | csharp_space_between_method_declaration_parameter_ list_parentheses |  C# | false | 15.3  |
 | csharp_space_between_method_call_parameter_list_parentheses |  C# | false | 15.3  |
 | csharp_space_between_parentheses |  C# | false | 15.3  |
+| csharp_space_before_colon_in_inheritance_clause |  C# | true | 15.7  |
+| csharp_space_after_colon_in_inheritance_clause |  C# | true | 15.7  |
+| csharp_space_around_binary_operators |  C# | before_and_after | 15.7  |
+| csharp_space_between_method_declaration_empty_parameter_list_parentheses |  C# | false | 15.7  |
+| csharp_space_between_method_call_name_and_opening_parenthesis |  C# | false | 15.7  |
+| csharp_space_between_method_call_empty_parameter_list_parentheses |  C# | false | 15.7  |
 
 **csharp\_space\_after_cast**
 
@@ -1612,6 +1714,186 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 int y = ( int )x;
 ```
 
+**CSharp\_místo\_před\_dvojtečkou\_v\_inheritance_clause**
+
+- Když je toto pravidlo nastavená na **true**, před dvojtečkou pro zakládá nebo rozhraní v deklaraci typu vyžadovat mezerou.
+- Když je toto pravidlo nastavená na **false**, vyžadují _žádné_ místo před dvojtečkou pro zakládá nebo rozhraní v deklaraci typu.
+
+Příklady kódu:
+
+```csharp
+// csharp_space_before_colon_in_inheritance_clause = true
+interface I
+{
+
+}
+
+class C : I 
+{
+
+}
+
+// csharp_space_before_colon_in_inheritance_clause = false
+interface I
+{
+
+}
+
+class C: I 
+{
+
+}
+```
+
+**CSharp\_místo\_po\_dvojtečkou\_v\_inheritance_clause**
+
+- Když je toto pravidlo nastavená na **true**, vyžadují mezeru po dvojtečkou pro zakládá nebo rozhraní v deklaraci typu.
+- Když je toto pravidlo nastavená na **false**, vyžadují _žádné_ místo po dvojtečkou pro zakládá nebo rozhraní v deklaraci typu.
+
+Příklady kódu:
+
+```csharp
+// csharp_space_after_colon_in_inheritance_clause = true
+interface I
+{
+
+}
+
+class C : I 
+{
+
+}
+
+// csharp_space_after_colon_in_inheritance_clause = false
+interface I
+{
+
+}
+
+class C :I 
+{
+
+}
+```
+
+**CSharp\_místo\_kolem\_binary_operators**
+
+Toto pravidlo je možné zadat jednu hodnotu v následující tabulce:
+
+| Hodnota | Popis |
+| ----- |:------------|
+| before_and_after | Vložit místo před a za binární operátor |
+| žádná | Odebrání mezer před a po binární operátor |
+| ignorovat | Ignorovat mezery okolo binární operátory |
+
+Pokud vynecháte toto pravidlo, nebo použít hodnotu s jinými než `before_and_after`, `none`, nebo `ignore`, není použita nastavení.
+
+Příklady kódu:
+
+```csharp
+// csharp_space_around_binary_operators = before_and_after
+return x * (x - y);
+
+// csharp_space_around_binary_operators = none
+return x*(x-y);
+
+// csharp_space_around_binary_operators = ignore
+return x  *  (x-y);
+```
+
+**csharp_space_between_method_declaration_empty_parameter_list_parentheses**
+
+- Když je toto pravidlo nastavená na **true**, vkládat mezery v uvozovkách seznamu prázdný parametr pro deklaraci metody.
+- Když je toto pravidlo nastavená na **false**, odeberte místa v uvozovkách seznamu prázdný parametr pro deklaraci metody.
+
+Příklady kódu:
+
+```csharp
+// csharp_space_between_method_declaration_empty_parameter_list_parentheses = true
+void Goo( )
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+
+// csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
+**csharp_space_between_method_call_name_and_opening_parenthesis**
+
+- Když je toto pravidlo nastavená na **true**, vložte mezeru mezi název volání metody a levé závorky.
+- Když je toto pravidlo nastavená na **false**, odeberte mezeru mezi název volání metody a levé závorky.
+
+Příklady kódu:
+
+```csharp
+// csharp_space_between_method_call_name_and_opening_parenthesis = true
+void Goo()
+{
+    Goo (1);
+}
+
+void Goo(int x)
+{
+    Goo ();
+}
+
+// csharp_space_between_method_call_name_and_opening_parenthesis = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
+**csharp_space_between_method_call_empty_parameter_list_parentheses**
+
+- Když je toto pravidlo nastavená na **true**, vkládat mezery v uvozovkách seznamu prázdný argument.
+- Když je toto pravidlo nastavená na **false**, odeberte prostor v rámci prázdný argument seznamu závorek.
+
+Příklady kódu:
+
+```csharp
+// csharp_space_between_method_call_empty_parameter_list_parentheses = true
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo( );
+}
+
+// csharp_space_between_method_call_empty_parameter_list_parentheses = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
 Příklad *.editorconfig* souboru:
 
 ```EditorConfig
@@ -1622,6 +1904,12 @@ csharp_space_after_keywords_in_control_flow_statements = true
 csharp_space_between_method_declaration_parameter_list_parentheses = true
 csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
 ```
 
 #### <a name="wrapping"></a>Možnosti zabalení
@@ -1677,6 +1965,151 @@ Příklad *.editorconfig* souboru:
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 ```
+
+## <a name="example-editorconfig-file"></a>Příklad EditorConfig souboru
+Chcete-li začít pracovat, tady je příklad *.editorconfig* souborů s výchozími možnostmi:
+
+```EditorConfig
+###############################
+# Core EditorConfig Options   #
+###############################
+root = true
+
+# All files
+[*]
+indent_style = space
+
+# Code files
+[*.{cs,csx,vb,vbx}]
+indent_size = 4
+insert_final_newline = true
+charset = utf-8-bom
+
+###############################
+# .NET Coding Conventions     #
+###############################
+[*.{cs,vb}]
+# Organize usings
+dotnet_sort_system_directives_first = true
+
+# this. preferences
+dotnet_style_qualification_for_field = false:none
+dotnet_style_qualification_for_property = false:none
+dotnet_style_qualification_for_method = false:none
+dotnet_style_qualification_for_event = false:none
+
+# Language keywords vs BCL types preferences
+dotnet_style_predefined_type_for_locals_parameters_members = true:none
+dotnet_style_predefined_type_for_member_access = true:none
+
+# Modifier preferences
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:none
+dotnet_style_readonly_field = true:suggestion
+
+# Expression-level preferences
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:none
+dotnet_prefer_inferred_tuple_names = true:suggestion
+dotnet_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_auto_properties = true:none
+
+###############################
+# Naming Conventions          #
+###############################
+
+# Style Definitions
+dotnet_naming_style.pascal_case_style.capitalization             = pascal_case
+
+# Use PascalCase for constant fields  
+dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols  = constant_fields
+dotnet_naming_rule.constant_fields_should_be_pascal_case.style    = pascal_case_style
+dotnet_naming_symbols.constant_fields.applicable_kinds            = field
+dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
+dotnet_naming_symbols.constant_fields.required_modifiers          = const
+
+###############################
+# C# Coding Conventions       #
+###############################
+[*.cs]
+# var preferences
+csharp_style_var_for_built_in_types = true:none
+csharp_style_var_when_type_is_apparent = true:none
+csharp_style_var_elsewhere = true:none
+
+# Expression-bodied members
+csharp_style_expression_bodied_methods = false:none
+csharp_style_expression_bodied_constructors = false:none
+csharp_style_expression_bodied_operators = false:none
+csharp_style_expression_bodied_properties = true:none
+csharp_style_expression_bodied_indexers = true:none
+csharp_style_expression_bodied_accessors = true:none
+
+# Pattern matching preferences
+csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
+csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
+
+# Null-checking preferences
+csharp_style_throw_expression = true:suggestion
+csharp_style_conditional_delegate_call = true:suggestion
+
+# Modifier preferences
+csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:suggestion
+
+# Expression-level preferences
+csharp_prefer_braces = true:none
+csharp_style_deconstructed_variable_declaration = true:suggestion
+csharp_prefer_simple_default_expression = true:suggestion
+csharp_style_pattern_local_over_anonymous_function = true:suggestion
+csharp_style_inlined_variable_declaration = true:suggestion
+
+###############################
+# C# Formatting Rules         #
+###############################
+# New line preferences
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_between_query_expression_clauses = true
+
+# Indentation preferences
+csharp_indent_case_contents = true 
+csharp_indent_switch_labels = true 
+csharp_indent_labels = flush_left
+
+# Space preferences
+csharp_space_after_cast = false
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_between_method_call_parameter_list_parentheses = false 
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_parentheses = false
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+
+# Wrapping preferences
+csharp_preserve_single_line_statements = true
+csharp_preserve_single_line_blocks = true
+
+###############################
+# VB Coding Conventions       #
+###############################
+[*.vb]
+# Modifier preferences
+visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
+
+```
+
 
 ## <a name="see-also"></a>Viz také:
 

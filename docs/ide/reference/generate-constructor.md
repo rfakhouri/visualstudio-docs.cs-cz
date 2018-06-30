@@ -9,12 +9,12 @@ ms.author: kaseyu
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44235bcacf6f60a3c58fa08f01465f6aad9e57f4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3b2aee5bd4fe8a9e65f82cbcbc90edfb583bbbb
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954485"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117731"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generovat konstruktor v sadě Visual Studio
 
@@ -54,7 +54,7 @@ Generování kódu platí pro:
 
    ![Vytvoření náhledu – konstruktor](media/constructor1-preview-cs.png)
 
-1. Vyberte **generování konstruktor...**  z rozevírací nabídky.
+1. Vyberte **generování konstruktor** z rozevírací nabídky.
 
    **Vyberte memebers** otevře se dialogové okno.
 
@@ -178,7 +178,7 @@ Generování kódu platí pro:
 
    ![Generování výsledků – konstruktor](media/constructor5-result-cs.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Generování kódu](../code-generation-in-visual-studio.md)
 - [Náhled změn](../../ide/preview-changes.md)

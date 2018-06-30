@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 019c1d4b20f1d7a53fc68ef561d45989e93eee28
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ec4c37c8014fe20b136f01d7170240fc4813d04
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120280"
 ---
-# <a name="walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Postupy: Vytvoření webové části Silverlight, která zobrazuje data OData pro SharePoint
+# <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Návod: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint
   SharePoint 2010 zveřejňuje data seznamu prostřednictvím OData. Ve službě SharePoint je služba RESTful ListData.svc implementováno službu OData. Tento návod ukazuje postup vytvoření webové části služby SharePoint, který je hostitelem aplikace Silverlight. Aplikace Silverlight zobrazí informace o seznamu oznámení služby SharePoint pomocí ListData.svc. Další informace najdete v tématu [rozhraní REST SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) a [protokol](http://go.microsoft.com/fwlink/?LinkId=226000).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -33,15 +34,15 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
-##  <a name="creating-a-silverlight-application-and-silverlight-web-part"></a>Vytváření aplikací Silverlight a webové části Silverlight  
+## <a name="create-a-silverlight-application-and-silverlight-web-part"></a>Vytvoření aplikace Silverlight a webové části Silverlight
  Nejprve vytvořte aplikaci Silverlight v sadě Visual Studio. Aplikace Silverlight načítá data z seznamu SharePoint oznámení pomocí služby ListData.svc.  
   
 > [!NOTE]  
 >  Žádné verze Silverlight před 4.0 podporují rozhraní požadované pro odkazování na data seznamu služby SharePoint.  
   
-#### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Chcete-li vytvořit aplikaci Silverlight a webové části Silverlight  
+#### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Chcete-li vytvořit aplikaci Silverlight a webové části Silverlight
   
-1.  Na řádku nabídek zvolte **soubor**, **nový**, **projektu** zobrazíte **nový projekt** dialogové okno.  
+1.  Na řádku nabídek zvolte **soubor** > **nový** > **projektu** zobrazíte **nový projekt** dialogové okno.  
   
 2.  Rozbalte **SharePoint** uzel v rámci buď **Visual C#** nebo **jazyka Visual Basic**a potom zvolte **2010** uzlu.  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  V **co je úrovně důvěryhodnosti pro toto řešení služby SharePoint?** zvolte **nasadit jako řešení farmy** tlačítko.  
   
-     I když tento příklad používá řešení farmy, projekty Silverlight webovou část se dá nasadit jako farmy nebo řešení v izolovaném prostoru. Další informace o řešení v izolovaném prostoru a řešení ve farmách najdete v tématu [v izolovaném prostoru aspekty řešení](../sharepoint/sandboxed-solution-considerations.md).  
+     I když tento příklad používá řešení farmy, projekty Silverlight webovou část se dá nasadit jako farmy nebo řešení v izolovaném prostoru. Další informace o řešení v izolovaném prostoru a řešení ve farmách najdete v tématu [aspekty řešení v izolovaném prostoru](../sharepoint/sandboxed-solution-considerations.md).  
   
 7.  V **jak chcete přidružit webové části Silverlight** části **zadejte informace o konfiguraci Silverlight** vyberte **vytvořte nový projekt Silverlight a přidružte ji k webové části** tlačítko.  
   
@@ -65,10 +66,10 @@ ms.lasthandoff: 04/16/2018
   
      Řešení obsahuje dva projekty: aplikací Silverlight a webové části Silverlight. Aplikace Silverlight načte a zobrazí seznam data ze služby SharePoint a aplikace Silverlight, umožňuje zobrazit ve službě SharePoint hostuje webové části Silverlight.  
   
-##  <a name="customizing-the-silverlight-application"></a>Přizpůsobení aplikace Silverlight  
+## <a name="customize-the-silverlight-application"></a>Přizpůsobit aplikaci Silverlight
  Přidáte elementy kódu a návrhu aplikace Silverlight.  
   
-#### <a name="to-customize-the-silverlight-application"></a>Chcete-li přizpůsobit aplikaci Silverlight  
+#### <a name="to-customize-the-silverlight-application"></a>Chcete-li přizpůsobit aplikaci Silverlight
   
 1.  Přidáte odkaz na sestavení pro System.Windows.Data v aplikaci Silverlight. Další informace najdete v tématu [postupy: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz na](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
@@ -83,9 +84,9 @@ ms.lasthandoff: 04/16/2018
   
 4.  Vyberte **OK** tlačítko Přidat odkaz na službu do projektu a použít výchozí název služby, ServiceReference1.  
   
-5.  Na řádku nabídek zvolte **sestavení**, **sestavit řešení**.  
+5.  Na řádku nabídek zvolte **sestavení** > **sestavit řešení**.  
   
-6.  Přidáte nový zdroj dat do projektu na základě služby SharePoint. Chcete-li to provést v řádku nabídek, zvolte **zobrazení**, **ostatní okna**, **zdroje dat**.  
+6.  Přidáte nový zdroj dat do projektu na základě služby SharePoint. Chcete-li to provést v řádku nabídek, zvolte **zobrazení** > **ostatní okna** > **zdroje dat**.  
   
      **Zdroje dat** v okně se zobrazí všechny dostupné dat seznamu služby SharePoint, jako jsou úlohy, oznámení a kalendáři.  
   
@@ -95,7 +96,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  Změnit velikost ovládacího prvku mřížky na jednu stránku Silverlight.  
   
-9. V souboru kódu MainPage.xaml (MainPage.xaml.cs pro Visual C#) nebo MainPage.xaml.vb jazyka Visual Basic přidejte následující odkazy na obor názvů.  
+9. V souboru kódu MainPage.xaml (*MainPage.xaml.cs* pro Visual C# nebo *MainPage.xaml.vb* jazyka Visual Basic), přidejte následující odkazy na obor názvů.  
   
     ```vb  
     ' Add the following three Imports statements.  
@@ -192,7 +193,7 @@ ms.lasthandoff: 04/16/2018
     }  
     ```  
        
-## <a name="modifying-the-silverlight-web-part"></a>Úprava Silverlight webové části  
+## <a name="modify-the-silverlight-web-part"></a>Úprava webové části Silverlight
  Změňte vlastnosti v projektu webové části Silverlight povolit ladění aplikací Silverlight.  
   
 #### <a name="to-modify-the-silverlight-web-part"></a>Chcete-li upravit webové části Silverlight  
@@ -205,12 +206,12 @@ ms.lasthandoff: 04/16/2018
   
 4.  Uložte projekt.  
   
-##  <a name="testing-the-silverlight-web-part"></a>Testování Silverlight webové části  
+## <a name="test-the-silverlight-web-part"></a>Test webové části Silverlight
  Otestujte novou webovou část Silverlight ve službě SharePoint zajistit, že se zobrazí data seznamu SharePoint správně.  
   
 #### <a name="to-test-the-silverlight-web-part"></a>K otestování webové části Silverlight  
   
-1.  Zvolte klávesy F5 sestavení a spuštění řešení služby SharePoint.  
+1.  Vyberte **F5** klíč sestavení a spuštění řešení služby SharePoint.  
   
 2.  Ve službě SharePoint na **Akce webu** nabídce zvolte **nová stránka**.  
   
@@ -231,8 +232,8 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Při přístupu k datům v programu Silverlight napříč doménami, Silverlight chrání před chybami zabezpečení, které lze použít ke zneužití webových aplikací. Pokud narazíte na potíže při přístupu k vzdálených dat, Silverlight, přečtěte si téma [provádění služby k dispozici za domény hranicemi](http://go.microsoft.com/fwlink/?LinkId=223276).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Vytvoření webové části pro službu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Nasazení, publikování a upgrade balíčků řešení služby SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)  
+ [Nasazení, publikování a upgradování balíčků řešení služby SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)  
   
   

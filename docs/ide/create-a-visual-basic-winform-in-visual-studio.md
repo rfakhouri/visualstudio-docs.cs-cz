@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 48ce29f06289f99444fc9fa231ea853a667ccc82
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c815652ae37fb04373cbf39279d54099a2d808a5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281570"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117768"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Vytvoření Windows Forms aplikace v sadě Visual Studio s jazykem Visual Basic
 
@@ -33,11 +33,11 @@ Nejdřív vytvoříte projekt aplikace Visual Basic. Typ projektu se dodává s 
 
 1. Otevřete Visual Studio 2017.
 
-2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .
+2. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
 
 3. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a potom zvolte **Windows Desktop**. V prostředním podokně vyberte **aplikace pro Windows Forms (rozhraní .NET Framework)**. Potom zadejte název souboru `HelloWorld`.
 
-     Pokud nevidíte **aplikace pro Windows Forms (rozhraní .NET Framework)** projektu šablony, zrušte mimo **nový projekt** dialogové okno a z panelu horní nabídce zvolte **nástroje**  >  **Získat funkcí a nástrojů pro...** . Spustí se instalační program pro Visual Studio. Vyberte **vývoj aplikací .NET** zatížení, zvolte **upravit**.
+     Pokud nevidíte **aplikace pro Windows Forms (rozhraní .NET Framework)** projektu šablony, zrušte mimo **nový projekt** dialogové okno a z panelu horní nabídce zvolte **nástroje**  >  **Získat funkcí a nástrojů pro**. Spustí se instalační program pro Visual Studio. Vyberte **vývoj aplikací .NET** zatížení, zvolte **upravit**.
 
      ![.NET core zatížení v instalačním programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
 

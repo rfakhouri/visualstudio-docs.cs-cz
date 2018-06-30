@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0659c354980eb302beb903d0107024882c6b160
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c7430b6fc2afc5af872c9f03174451a223e05b3e
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37120189"
 ---
-# <a name="walkthrough-creating-a-web-part-for-sharepoint"></a>Návod: Vytvoření webové části pro službu SharePoint
+# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Návod: Vytvoření webové části pro službu SharePoint
 
 Webové části umožňují uživatelům přímo upravit obsah, vzhled a chování stránek webu služby SharePoint pomocí prohlížeče. Tento postup vám ukáže postup vytvoření webové části pomocí **webovou část** šablony položky v sadě Visual Studio 2010.
 
@@ -48,17 +49,17 @@ Tento návod znázorňuje následující úlohy:
 
 ## <a name="prerequisites"></a>Požadavky
 
-- Podporované edice systému Microsoft Windows a služby SharePoint. Další informace najdete v tématu [požadavky pro vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Podporované edice systému Microsoft Windows a služby SharePoint. Další informace najdete v tématu [požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
 
 - Visual Studio 2017 nebo edici nástroje Visual Studio Application Lifecycle Management (ALM).
 
-## <a name="creating-an-empty-sharepoint-project"></a>Vytváření prázdného projektu služby SharePoint
+## <a name="create-an-empty-sharepoint-project"></a>Vytvoření prázdného projektu služby SharePoint
 
 Nejprve vytvořte projektu služby SharePoint prázdný. Později, bude přidat webovou část na projekt pomocí **webovou část** šablony položky.
 
 1. Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pomocí **spustit jako správce** možnost.
 
-2. Na panelu muže zvolte **soubor**, **nový**, **projektu**.
+2. Na panelu muže zvolte **soubor** > **nový** > **projektu**.
 
 3. V **nový projekt** dialogové okno, rozbalte seznam **SharePoint** uzel v jazyce, který chcete použít a potom vyberte **2010** uzlu.
 
@@ -68,11 +69,11 @@ Nejprve vytvořte projektu služby SharePoint prázdný. Později, bude přidat 
 
 5. Vyberte **nasadit jako řešení farmy** možnost tlačítko a potom vyberte **Dokončit** tlačítko přijmout výchozí místní web služby SharePoint.
 
-## <a name="adding-a-web-part-to-the-project"></a>Přidání webové části do projektu
+## <a name="add-a-web-part-to-the-project"></a>Přidat webovou část do projektu
 
 Přidat **webovou část** položku do projektu. **Webovou část** položky přidá k souboru kódu webové části. Později přidáte kód do souboru kódu webové části vykreslení obsahu webové části.
 
-1. Na řádku nabídek zvolte **projektu**, **přidat novou položku**.
+1. Na řádku nabídek zvolte **projektu** > **přidat novou položku**.
 
 2. V **přidat novou položku** v dialogovém **nainstalovaných šablonách** podokně rozbalte **SharePoint** uzel a potom zvolte **2010** uzlu.
 
@@ -84,7 +85,7 @@ Přidat **webovou část** položku do projektu. **Webovou část** položky př
 
 Můžete zadat ovládacích prvků, které se má zobrazit ve webové části jejich přidáním do kolekce ovládacích prvků třídy webové části.
 
-1. V **Průzkumníku**, otevřete WebPart1.vb (v jazyce Visual Basic) nebo WebPart1.cs (v jazyku C#).
+1. V **Průzkumníku řešení**, otevřete *WebPart1.vb* (v jazyce Visual Basic) nebo *WebPart1.cs* (v jazyku C#).
 
      Webová část kódu soubor se otevře v editoru kódu.
 
@@ -129,7 +130,7 @@ Můžete zadat ovládacích prvků, které se má zobrazit ve webové části je
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]
 
-## <a name="testing-the-web-part"></a>Testování webové části
+## <a name="test-the-web-part"></a>Test webové části
 
 Když spouštíte projekt, otevře se web služby SharePoint. Webová část je automaticky přidá do Galerie webových částí služby SharePoint. Můžete přidat webovou část na stránku všechny webové části.
 
@@ -166,7 +167,7 @@ Když spouštíte projekt, otevře se web služby SharePoint. Webová část je 
         </employees>
     ```
 
-2. V poznámkovém bloku na řádku nabídek zvolte **soubor**, **uložit jako**.
+2. V poznámkovém bloku na řádku nabídek zvolte **soubor** > **uložit jako**.
 
 3. V **uložit jako** dialogu **uložit jako typ** vyberte **všechny soubory**.
 
@@ -194,7 +195,7 @@ Když spouštíte projekt, otevře se web služby SharePoint. Webová část je 
 
      Na stránce se zobrazí webová část.
 
-## <a name="testing-the-custom-property"></a>Testování vlastní vlastnosti
+## <a name="test-the-custom-property"></a>Otestovat vlastní vlastnosti
 
 K naplnění dat mřížky, který se zobrazí ve webové části, zadejte cestu souboru XML, který obsahuje data o zaměstnanci.
 
@@ -206,7 +207,7 @@ K naplnění dat mřížky, který se zobrazí ve webové části, zadejte cestu
 
      Ověřte, že zaměstnanci objeví ve webové části.
 
-## <a name="testing-the-web-part-verb"></a>Testování příkaz webové části
+## <a name="test-the-web-part-verb"></a>Testování příkaz webové části
 
 Zobrazení a skrytí zaměstnanci, kteří nejsou správci kliknutím na položku, která se zobrazí v nabídce operací webové části.
 
@@ -218,9 +219,9 @@ Zobrazení a skrytí zaměstnanci, kteří nejsou správci kliknutím na položk
 
      Všechny zaměstnance se zobrazí ve webové části.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-[Vytváření webových částí pro službu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Postupy: Vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Postupy: Vytvoření webové části služby SharePoint pomocí návrháře](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
+[Vytvoření webové části pro službu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
+[Postupy: vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Postupy: vytvoření webové části služby SharePoint pomocí návrháře](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
 [Návod: Vytvoření webové části pro službu SharePoint pomocí návrháře](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
