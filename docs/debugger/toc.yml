@@ -826,3 +826,5 @@
   items:
     - name: Novinky v ladicím programu sady Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
+    - name: Ladění pro naprosté začátečníky
+      href: debugging-absolute-beginners.md

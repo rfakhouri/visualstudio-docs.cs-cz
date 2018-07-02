@@ -2,6 +2,10 @@
   href: ide/index.md
 - name: Přehled
   href: ide/visual-studio-ide.md
+  expanded: true
+  items:
+    - name: Pokročilé funkce
+      href: ide/advanced-feature-overview.md
 - name: Instalace
   items:
     - name: Instalace sady Visual Studio
@@ -630,6 +634,8 @@
           href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
         - name: Přizpůsobení rozložení oken
           href: ide/customizing-window-layouts-in-visual-studio.md
+        - name: Přizpůsobení vnořování souborů v Průzkumníku řešení
+          href: ide/file-nesting-solution-explorer.md
         - name: Přizpůsobení úvodní stránky
           href: ide/customizing-the-start-page-for-visual-studio.md
         - name: Vyhledání a používání rozšíření sady Visual Studio
@@ -645,17 +651,6 @@
           href: ide/optimize-visual-studio-startup-time.md
         - name: "Tipy a\_triky"
           href: ide/visual-studio-performance-tips-and-tricks.md
-    - name: Zabezpečení
-      href: ide/security-in-visual-studio.md
-      items:
-        - name: Zabezpečené aplikace
-          href: ide/securing-applications.md
-        - name: Zajištění zabezpečení
-          href: ide/maintaining-security.md
-        - name: Oprávnění uživatele
-          href: ide/user-permissions-and-visual-studio.md
-        - name: Bibliografie k zabezpečení
-          href: ide/security-bibliography.md
     - name: Správa funkcí pro usnadnění přístupu
       href: ide/reference/accessibility-features-of-visual-studio.md
       items:
@@ -860,6 +855,8 @@
               items:
                 - name: Dialogové okno Pokročilé nastavení služeb
                   href: ide/reference/advanced-settings-for-services-dialog-box.md
+            - name: 'Stránka Nastavení, Návrhář projektu'
+              href: ide/reference/settings-page-project-designer.md
             - name: 'Stránka Podepisování, návrhář projektu (C#)'
               href: ide/reference/signing-page-project-designer.md
         - name: 'Stránky vlastností, JavaScript'
@@ -997,6 +994,14 @@
           href: ide/reference/toggle-breakpoint-command.md
         - name: Kukátko – příkaz
           href: ide/reference/watch-command.md
+    - name: Zabezpečení
+      items:
+        - name: Vývoj zabezpečených aplikací
+          href: ide/securing-applications.md
+        - name: Spuštění sady Visual Studio s oprávněními normálního uživatele nebo správce
+          href: ide/user-permissions-and-visual-studio.md
+        - name: Windows Information Protection (WIP)
+          href: ide/exempt-visual-studio-from-wip.md
     - name: Microsoft Help Viewer
       href: ide/microsoft-help-viewer.md
       items:
@@ -1043,6 +1048,8 @@
           href: /visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default
         - name: Frekvence vydávání nových verzí
           href: /visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default
+        - name: Plán přidávání nových funkci do sady Visual Studio
+          href: /visualstudio/productinfo/vs2018-roadmap?context=visualstudio/default
         - name: Požadavky na systém
           href: /visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default
         - name: Kompatibilita platforem

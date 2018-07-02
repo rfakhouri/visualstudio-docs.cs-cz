@@ -85,5 +85,5 @@
       href: /vsts/git/tutorial/howto?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
 - name: Prostředky
   items:
-    - name: Seznámení s Gitem
-      href: 'https://www.visualstudio.com/learn-git/'
+    - name: Co je Git
+      href: /azure/devops/git/what-is-git

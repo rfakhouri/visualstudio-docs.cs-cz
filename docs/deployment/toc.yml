@@ -34,10 +34,12 @@
           href: tutorial-import-publish-settings-azure.md
         - name: Import nastavení publikování a nasazení do služby IIS
           href: tutorial-import-publish-settings-iis.md
+        - name: Nasazení do služby IIS pomocí rozšíření Nasazení webu
+          href: deploy-iis-with-web-deploy.md
         - name: Průběžné nasazování ASP.NET Core do Azure s Gitem
           href: /aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
-        - name: Nasazení technologie ASP.NET do služby IIS
-          href: /iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+        - name: Publikování do Kubernetes pomocí rozšíření Visual Studio Kubernetes Tools
+          href: tutorial-kubernetes-tools.md
     - name: Nativní
       items:
         - name: Nasazení ve Visual C++...
@@ -46,7 +48,7 @@
           href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
         - name: Nasazení nativní aplikace pomocí technologie ClickOnce...
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
-    - name: UPW
+    - name: UWP
       items:
         - name: Balíček aplikace pro UPW pomocí sady Visual Studio
           href: /windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
