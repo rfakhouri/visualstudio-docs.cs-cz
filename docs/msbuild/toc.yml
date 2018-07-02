@@ -84,6 +84,8 @@
               items:
                 - name: 'Návod: Vytvoření vložené úlohy'
                   href: walkthrough-creating-an-inline-task.md
+            - name: Vložené úlohy MSBuild s použitím RoslynCodeTaskFactory
+              href: msbuild-roslyncodetaskfactory.md
         - name: Porovnávání vlastností a položek
           href: comparing-properties-and-items.md
         - name: Speciální znaky nástroje MSBuild
@@ -279,6 +281,8 @@
               href: csc-task.md
             - name: Delete – úloha
               href: delete-task.md
+            - name: Úloha DownloadFile
+              href: downloadfile-task.md
             - name: Error – úloha
               href: error-task.md
             - name: Exec – úloha
@@ -351,6 +355,8 @@
               href: touch-task.md
             - name: UnregisterAssembly – úloha
               href: unregisterassembly-task.md
+            - name: Úloha Unzip
+              href: unzip-task.md
             - name: UpdateManifest – úloha
               href: updatemanifest-task.md
             - name: Vbc – úloha
@@ -367,6 +373,8 @@
               href: xmlpoke-task.md
             - name: XslTransformation – úloha
               href: xsltransformation-task.md
+            - name: Úloha ZipDirectory
+              href: zipdirectory-task.md
         - name: Podmínky nástroje MSBuild
           href: msbuild-conditions.md
         - name: Podmíněné konstrukty nástroje MSBuild
