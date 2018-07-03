@@ -155,8 +155,6 @@
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
             - name: Přidání a odebrání položek projektu
               href: ide/adding-and-removing-project-items.md
-            - name: Typy souborů projektu a řešení
-              href: ide/reference/project-and-solution-file-types.md
             - name: Správa vlastností projektu a řešení
               href: ide/managing-project-and-solution-properties.md
             - name: Správa odkazů v projektu
@@ -604,11 +602,6 @@
           href: ide/how-to-specify-build-events-csharp.md
         - name: Konfigurace upozornění v jazyce Visual Basic
           href: ide/configuring-warnings-in-visual-basic.md
-        - name: Zákaz procesu hostování
-          href: ide/how-to-disable-the-hosting-process.md
-          items:
-            - name: Proces hostování (vshost.exe)
-              href: ide/hosting-process-vshost-exe.md
         - name: "Návod: Vytvoření prostředí pro sestavení s\_použitím více počítačů"
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Ladění...
@@ -1055,13 +1048,16 @@
         - name: Kompatibilita platforem
           href: /visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default
         - name: Licencování
-          href: 'https://www.visualstudio.com/license-terms/'
+          href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: Distribuovatelný kód
           href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default
         - name: Životní cyklus podpory a aktualizace
           href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default
     - name: Postup ohlášení problému se sadou Visual Studio
       href: ide/how-to-report-a-problem-with-visual-studio-2017.md
+      items:
+        - name: Ochrana osobních údajů komunity vývojářů
+          href: ide/developer-community-privacy.md
     - name: Program Zlepšování softwaru a služeb na základě zkušeností uživatelů
       href: ide/visual-studio-experience-improvement-program.md
       items:
