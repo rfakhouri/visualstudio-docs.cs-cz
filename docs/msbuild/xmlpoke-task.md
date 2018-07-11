@@ -1,5 +1,5 @@
 ---
-title: Xmlpoke – úloha | Microsoft Docs
+title: Xmlpoke – úloha | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
@@ -19,15 +19,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 31c76ba53e858d9eab41d6579950f47b16f8c9b8
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/27/2018
+ms.lasthandoff: 07/11/2018
 ms.locfileid: "37056352"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke – úloha
 
-Nastaví hodnoty podle specifikace dotaz XPath do souboru XML.
+Nastaví hodnoty podle specifikace dotazu XPath do souboru XML.
 
 ## <a name="parameters"></a>Parametry
 
@@ -35,14 +35,14 @@ Nastaví hodnoty podle specifikace dotaz XPath do souboru XML.
   
 |Parametr|Popis|
 |---------------|-----------------|
-|`Namespaces`|Volitelné `String` parametr.<br /><br /> Určuje obor názvů pro předpony dotaz XPath. `Namespaces` je fragmentu kódu XML skládající se z `Namespace` elementy s atributy `Prefix` a `Uri`. Atribut `Prefix` Určuje předponu pro obor názvů specifikovaný v přidružení `Uri` atribut. Nepoužívejte prázdnou `Prefix`.|
-|`Query`|Volitelné `String` parametr.<br /><br /> Určuje dotaz XPath.|
-|`Value`|Požadované <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Určuje hodnotu, která má být vložen do zadané cesty.|
-|`XmlInputPath`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Určuje vstup XML jako cestu k souboru.|
+|`Namespaces`|Volitelné `String` parametru.<br /><br /> Určuje obor názvů u předpony dotazu XPath. `Namespaces` je fragment kódu XML, který se skládá z `Namespace` elementy s atributy `Prefix` a `Uri`. Atribut `Prefix` určuje předpona, kterou chcete přidružit k oboru názvů určenému ve `Uri` atribut. Nepoužívejte prázdné `Prefix`.|
+|`Query`|Volitelné `String` parametru.<br /><br /> Určuje dotaz XPath.|
+|`Value`|Vyžaduje <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Určuje hodnotu, která má být vložen do zadané cesty.|
+|`XmlInputPath`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Určuje vstup XML jako cestu k souboru.|
 
 ## <a name="remarks"></a>Poznámky
 
- Kromě s parametry, které jsou uvedené v tabulce, zdědí tento úkol parametry z <xref:Microsoft.Build.Tasks.TaskExtension> třída, které dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrech a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
+ Kromě s parametry, které jsou uvedené v tabulce, zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Příklad
 
@@ -57,7 +57,7 @@ Tady je sample.xml upravit:
 </Package>
 ```
 
-V tomto příkladu, pokud chcete upravit `/Package/mp:PhoneIdentity/PhonePublisherId`, pak použít
+V tomto příkladu, pokud chcete upravit `/Package/mp:PhoneIdentity/PhonePublisherId`, pak použijte
 
 ```
 <Project>
@@ -79,7 +79,7 @@ V tomto příkladu, pokud chcete upravit `/Package/mp:PhoneIdentity/PhonePublish
 </Project>
 ```
 
-`dn` Zde slouží jako předponu umělé obor názvů pro výchozí obor názvů.
+`dn` Zde slouží jako předponu oboru názvů umělé pro výchozí obor názvů.
 
 ## <a name="see-also"></a>Viz také
 

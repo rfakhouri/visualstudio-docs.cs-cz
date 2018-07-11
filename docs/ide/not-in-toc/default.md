@@ -1,5 +1,5 @@
 ---
-title: Výchozí stránku pro F1 – Nápověda
+title: Výchozí stránku nápovědy klávesy F1
 ms.date: 02/28/2018
 ms.topic: troubleshooting
 robots: noindex,nofollow
@@ -12,30 +12,30 @@ ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 07/11/2018
 ms.locfileid: "34335704"
 ---
-# F1 – Nápověda
+# Nápověda F1
 
-Zdá se nám nepodařilo najít, co jste hledali a Omlouváme se. Prosím [Pomozte nám vylepšit](#help-us-improve-f1).
+Zdá se nám nepovedlo najít, co jste hledali a Omlouváme se. Prosím [Pomozte nám zlepšovat kvalitu](#help-us-improve-f1).
 
 ## Pozice kurzoru
 
-Pokud hledáte F1 – Nápověda na – klíčové slovo nebo název rozhraní API, ujistěte se, kurzor je nastavený uvnitř nebo do pravé aplikace word před stiskněte **F1**. Pokud tento stále nebude fungovat, vyberte [užitečné odkazy](#useful-links) seznamu, nebo hledáním na https://docs.microsoft.com.
+Pokud hledáte nápovědu F1 – klíčové slovo nebo název rozhraní API, měli byste se kurzor dovnitř nebo jenom k pravému okraji slovo před stisknutím klávesy **F1**. Pokud tento stále nefunguje, vyberte [užitečných odkazů](#useful-links) seznamu nebo provádět vyhledávání na https://docs.microsoft.com.
 
 ## Užitečné odkazy
 
-- Obecné informace o sadě Visual Studio najdete v tématu [přehled Visual Studio](../../ide/visual-studio-ide.md).
-- Nápovědu v textovém editoru Visual Studio najdete v tématu [pomocí editoru kódu](../../ide/writing-code-in-the-code-and-text-editor.md).
+- Obecné informace o sadě Visual Studio najdete v tématu [Visual Studio – přehled](../../ide/visual-studio-ide.md).
+- Nápovědu v textovém editoru sady Visual Studio najdete v tématu [použít editor kódu](../../ide/writing-code-in-the-code-and-text-editor.md).
 - C# nápovědu najdete v tématu [průvodce v C#](/dotnet/csharp/index).
-- Visual Basic pomoc najdete v tématu [příručka jazyka Visual Basic](/dotnet/visual-basic/).
-- F # nápovědu najdete v tématu [Průvodce F #](/dotnet/fsharp/).
-- Nápovědu Python najdete v tématu [Python v sadě Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
-- C++ pomoc najdete v tématu [C++ v sadě Visual Studio](/cpp/visual-cpp-in-visual-studio).
+- Nápověda pro Visual Basic, najdete v článku [průvodce Visual Basicem](/dotnet/visual-basic/).
+- F # nápovědu najdete v tématu [Průvodce jazykem F #](/dotnet/fsharp/).
+- Nápovědu Pythonu najdete v tématu [Python v sadě Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
+- C++ – Nápověda, naleznete v tématu [C++ v sadě Visual Studio](/cpp/visual-cpp-in-visual-studio).
 
-## Pomozte nám vylepšit F1
+## Pomozte nám zlepšovat kvalitu F1
 
-Pomozte nám vylepšit Nápověda F1. Protokolu nápovědy problému s produktem kliknutím **váš názor produktu** níže uvedené tlačítko. Zahrnout, co jste hledali nápovědu při stisknutí **F1**, například jaké symbol nebo kurzor byl na okno. Děkuju!
+Pomozte nám zlepšovat kvalitu prostředí nápovědy F1. Protokolovat problému s produktem nápovědy kliknutím **poskytnout názor na produkt** tlačítko níže. Zahrnout, co jste hledali nápovědu při stisknutí **F1**, například jaké symbol nebo se ukazatel myši na okno. Děkuju!

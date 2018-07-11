@@ -1,31 +1,31 @@
 ---
-title: Hledat a filtr | Microsoft Docs
+title: Vyhledávání a filtrování | Dokumentace Microsoftu
 author: evanwindom
 ms.author: tglee
 manager: douge
 ms.date: 06/27/2018
 ms.topic: conceptual
-description: Zjistěte, jak mohou správci najít jednotlivých odběratelů nebo skupiny v portálu správce.
+description: Zjistěte, jak můžou správci vyhledejte jednotlivými odběrateli nebo skupiny na portálu správce.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
 ms.openlocfilehash: 4dcdb5ce46bc0fbabd5b35199d0743a43a035c11
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/28/2018
+ms.lasthandoff: 07/11/2018
 ms.locfileid: "37089721"
 ---
-# <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Hledat a filtr Odběratelé, kteří v sadě Visual Studio předplatných
+# <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Vyhledávání a filtrování předplatitele v předplatných sady Visual Studio
 
-Visual Studio odběry portálu pro správu umožňuje vyhledat určitou dílčí sadu odběratelů na základě různých kritérií. Odběratel seznam podle názvu, e-mailovou adresu, úrovni předplatného a další informace můžete filtrovat.
+Portál pro správu předplatných Visual Studio umožňuje najít konkrétní podmnožinu zákazníků na základě různých kritérií. Můžete filtrovat seznam předplatitelů podle názvu, e-mailovou adresu, úrovni předplatného a dalších informací.
 
-1. Chcete-li vyhledat konkrétní skupinu odběratele, vyberte **filtru**.
+1. Chcete-li vyhledat konkrétní skupiny odběratelů, vyberte **filtr**.
 
-   ![Vyberte filtr, který odběratele seznamu hledání](media\filter-list.png)
+   ![Vyberte filtr, aby se hledat seznam předplatitelů](media\filter-list.png)
 
-2. Zadejte kritéria, kterou chcete použít jako základ pro hledání a potom vyberte **filtru** znovu.
+2. Zadejte kritéria, které chcete použít jako základ pro hledání a pak vyberte **filtr** znovu.
 
    ![Dostupná pole použít k filtrování dat odběratele](media\filter-subscribers.png)
 
-   Seznamu Odběratel pak odpovídá kritéria, které jste zvolili.
+   Váš seznam předplatitelů poté porovnává kritéria, která jste zvolili.
