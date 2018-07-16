@@ -106,7 +106,7 @@ Tento článek obsahuje následující běžné chyby, ke kterým dochází při
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Chybová zpráva: Nelze vytvořit webovou stránku se\<lokality >'. Nejsou nainstalovány součásti pro komunikaci s serverová rozšíření FrontPage.  
  Ujistěte se, že máte součást sady Microsoft Visual Studio webové vytváření nainstalovaný na počítači, který publikujete z. Tato součást není pro uživatele Express nainstalována ve výchozím nastavení. Další informace najdete na webu [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
   
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Chybová zpráva: Nelze najít soubor ' Microsoft.Windows.Common – ovládací prvky, verze 6.0.0.0, Culture = =\*, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, typ = win32.  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Chybová zpráva: Nelze najít soubor ' Microsoft.Windows.Common – ovládací prvky, verze=  6.0.0.0, Culture=\*, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, typ = win32.  
  Při pokusu o publikování aplikace WPF s povolenými vizuálními styly, zobrazí se tato chybová zpráva. Chcete-li tento problém vyřešit, najdete v části [postupy: publikování aplikace WPF s vizuální styly povoleny](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
   
 ## <a name="using-mage"></a>Pomocí Mage  
