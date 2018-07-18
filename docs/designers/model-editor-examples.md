@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 798cf3622c5f6bc8462ce475c780ce26190b7ae6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5207c995d79f83df89224d8f44b41986ef21e898
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917433"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978056"
 ---
 # <a name="model-editor-examples"></a>Příklady editoru modelů
 
-Články v této části dokumentace obsahují příklady, které ukazují, jak můžete použít Editor modelu.
+Články v této části dokumentace obsahují příklady, které ukazují, jak můžete použít Editor modelů.
 
 ## <a name="related-topics"></a>Související témata
 
 |Název|Popis|
 |-----------|-----------------|
-|[Postupy: vytvoření základní 3D modelu](../designers/how-to-create-a-basic-3-d-model.md)|Popisuje, jak vytvořit základní 3D model.|
-|[Postupy: úprava bodu Pivot 3D modelu](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md)|Popisuje postup úpravy bodu pivot a škálování 3D modelu.|
-|[Postupy: Model 3D geologické struktury](../designers/how-to-model-3-d-terrain.md)|Popisuje, jak vytvořit základní šířku scény.|
-|[Postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md)|Popisuje postup použití shaderu 3D modelu.|
+|[Postupy: Vytvoření základního 3D modelu](../designers/how-to-create-a-basic-3-d-model.md)|Popisuje postup vytvoření základního 3D modelu.|
+|[Postupy: Změna bodu otáčení 3D modelu](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md)|Popisuje postup úpravy bodu otáčení a měřítka 3D modelu.|
+|[Postupy: Modelování 3D terénu](../designers/how-to-model-3-d-terrain.md)|Popisuje, jak vytvořit základní na šířku scény.|
+|[Postupy: Použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)|Popisuje způsob použití shaderu na 3D model.|

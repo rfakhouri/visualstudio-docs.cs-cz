@@ -1,5 +1,5 @@
 ---
-title: Data nástroje sady Visual Studio pro .NET
+title: Visual Studio Data Tools for .NET
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
@@ -11,39 +11,39 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 2b7fc572541e0c2f0f5aa04c6e676d1e2913ff9f
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 7a0df2adbb5dfb6a3ac8fa1c6312784bb6fa6768
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33864717"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174023"
 ---
-# <a name="visual-studio-data-tools-for-net"></a>Data nástroje sady Visual Studio pro .NET
+# <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools for .NET
 
-Visual Studio a rozhraní .NET Framework společně poskytují rozsáhlejší rozhraní API a podpora nástrojů pro připojení k databázím, modelování data v paměti a zobrazení dat v uživatelském rozhraní. Třídy rozhraní .NET Framework, které poskytují přístup k datům funkce se označují jako [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, spolu s daty nástrojů v sadě Visual Studio, byla vytvořena především pro podporu relačních databází a XML. V současnosti mnoho dodavatelů databáze NoSQL či třetích stran, nabízejí poskytovatelé ADO.NET.
+Visual Studio a rozhraní .NET Framework společně poskytují rozsáhlé rozhraní API a podpora nástrojů pro připojení k databázím, modelování dat v paměti a zobrazení dat v uživatelském rozhraní. Tříd rozhraní .NET Framework, které poskytují přístup k datům funkce jsou označovány jako [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, spolu s daty nástroje v sadě Visual Studio, je navržená především pro podporu relačních databází a XML. V dnešních dnech mnoho dodavatelů databáze typu NoSQL nebo třetími stranami, nabízejí poskytovatele ADO.NET.
 
-[.NET core](/dotnet/core/) podporuje ADO.NET, s výjimkou datových sad a souvisejících typů. Pokud jsou cílení na .NET Core a vyžadují vrstvu relační objekt mapování (ORM), použijte [Entity Framework Core](/ef/core/).
+[.NET core](/dotnet/core/) podporuje technologie ADO.NET, s výjimkou datové sady a souvisejících typů. Pokud se zaměřujete na .NET Core a vyžadují vrstvu objektově relační mapování (ORM), použijte [Entity Framework Core](/ef/core/).
 
-Následující diagram ukazuje zjednodušený přehled základní architektury:
+Následující diagram znázorňuje zjednodušenou zobrazení základní architektury:
 
-![Architektura technologie ADO.NET](../data-tools/media/raddata-ado-net-architecture-diagram.png)
+![Architektura ADO.NET](../data-tools/media/raddata-ado-net-architecture-diagram.png)
 
-## <a name="typical-workflow"></a>Obvyklý pracovní postup
+## <a name="typical-workflow"></a>Typický pracovní postup
 
-Obvyklý pracovní postup je následující:
+Typický pracovní postup je následující:
 
-1. Nainstalujte vývojové nebo testovací databáze na místním počítači. V tématu [instalace databáze systémy, nástroje a ukázky](../data-tools/installing-database-systems-tools-and-samples.md). Pokud používáte služby Azure data, není nutné tento krok.
+1. Nainstalujte vývojové nebo testovací databáze na místním počítači. Zobrazit [instalace systémů databází, nástroje a ukázky](../data-tools/installing-database-systems-tools-and-samples.md). Pokud používáte službu Azure data, tento krok není nezbytný.
 
-2. Test připojení k databázi (nebo služby nebo místního souboru) v sadě Visual Studio. V tématu [přidat nová připojení](../data-tools/add-new-connections.md).
+2. Otestujte připojení k databázi (nebo službu nebo místní soubor) v sadě Visual Studio. Zobrazit [přidat nové připojení](../data-tools/add-new-connections.md).
 
-3. (Volitelné) Pomocí nástrojů pro vygenerování a konfigurovat nový model. Modely založena na Entity Framework jsou doporučení výchozí pro nové aplikace. Model, kteréhokoli z nich chcete použít, je zdroj dat, který komunikuje aplikace. Model je logicky mezi databází nebo služby a aplikace. V tématu [přidat nové zdroje dat](../data-tools/add-new-data-sources.md).
+3. (Volitelné) Pomocí nástrojů vygenerovat a nakonfigurovat nový model. Modely založené na rozhraní Entity Framework jsou výchozí doporučení pro nové aplikace. Model, kteréhokoli z nich použijete, je zdroj dat, pomocí kterého aplikace komunikuje. Model je logicky mezi databází nebo služby a aplikace. Zobrazit [přidat nové zdroje dat](../data-tools/add-new-data-sources.md).
 
-4. Přetáhněte zdroj dat z **zdroje dat** okna do Windows Forms, ASP.NET nebo Windows Presentation Foundation návrhová plocha ke generování kódu vazby dat, který se zobrazí data uživateli způsobem, který určíte. V tématu [vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+4. Přetáhnout zdroje dat z **zdroje dat** okno na návrhovou plochu Windows Forms, ASP.NET nebo Windows Presentation Foundation ke generování kódu vázání dat, která tato data budou zobrazovat uživateli způsobem, který zadáte. Zobrazit [vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-5. Přidáte vlastní kód pro věci, jako je obchodní pravidla, vyhledávání a ověřování dat nebo využít vlastních funkcí, které zpřístupňuje základní databáze.
+5. Přidání vlastního kódu pro takové věci, jako jsou obchodní pravidla, vyhledávání a ověřování dat nebo využívat vlastní funkce, které zpřístupňuje základní databáze.
 
-Můžete přeskočit krok 3 a aplikaci .NET vydat příkazy přímo do databáze, místo použití modelu. V takovém případě najdete v příslušné dokumentaci od zde: [ADO.NET](/dotnet/framework/data/adonet/index). Upozorňujeme, že jste stále můžete použít Průvodce konfigurací zdroje dat a návrhářů, pro generování kódu vazby dat při naplňování vlastní objekty v paměti a poté vytvořit datovou vazbu ovládacích prvků uživatelského rozhraní k těmto objektům.
+Můžete přeskočit krok 3 a programu .NET aplikace vydat příkazy přímo do databáze, nikoli pomocí modelu. V takovém případě najdou relevantní dokumentaci: [ADO.NET](/dotnet/framework/data/adonet/index). Všimněte si, že se můžete stále použít **Průvodce konfigurací zdroje dat** , návrháři, generovat datové vazby kód při naplňování vlastních objektů v paměti a potom vytvořte datovou vazbu ovládacích prvků uživatelského rozhraní na tyto objekty.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

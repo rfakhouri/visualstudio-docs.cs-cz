@@ -1,7 +1,5 @@
 - name: Přehled
-  items:
-    - name: Přístup k datům v sadě Visual Studio
-      href: accessing-data-in-visual-studio.md
+  href: accessing-data-in-visual-studio.md
 - name: Kurzy
   items:
     - name: Vytvoření jednoduché datové aplikace pomocí technologie ADO.NET

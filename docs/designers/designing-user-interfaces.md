@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 192010763a5a00981ca65adc2cbb5fe8fa024aab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82b44b024b3914061bf79f70fedf76c81a3ebffc
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920889"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890019"
 ---
-# <a name="design-user-interfaces"></a>Návrh uživatelského rozhraní
+# <a name="design-user-interfaces"></a>Návrh uživatelských rozhraní
 
-Můžete vytvořit a návrh uživatelského rozhraní pro vaši aplikaci pomocí různých nástrojů v sadě Visual Studio.
+Můžete vytvořit a návrh uživatelského rozhraní pro vaši aplikaci s použitím různých nástrojů v sadě Visual Studio.
 
 |Další informace o|Další informace naleznete v tématu|
 |-------------------------|---------|
-| Funkce návrháři XAML v sadě Visual Studio a nástroj Blend for Visual Studio | [Navrhování XAML v sadě Visual Studio a nástroj Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md) |
+| Funkce návrháře XAML v sadě Visual Studio a nástroje Blend for Visual Studio | [Návrh XAML v sadě Visual Studio a nástroje Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md) |
 | Navrhování všech aplikací založených na XAML pomocí sady Visual Studio|[Vytvoření uživatelského rozhraní pomocí návrháře XAML v sadě Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) |
-| Navrhování všech aplikací založených na XAML pomocí Blendu pro Visual Studio | [Vytvoření uživatelského rozhraní pomocí nástroje Blend pro Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md) |
-|Navrhování aplikací klasické pracovní plochy, které používají příchuť WPF XAML | [Začínáme s Windows Presentation Foundation](../designers/getting-started-with-wpf.md) |
+| Navrhování všech aplikací založených na XAML pomocí programu Blend pro Visual Studio | [Vytvoření uživatelského rozhraní pomocí nástroje Blend pro Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md) |
+|Navrhování aplikací, které používají charakter WPF XAML | [Začínáme s Windows Presentation Foundation](../designers/getting-started-with-wpf.md) |
 | Vývoj aplikace rozhraní DirectX v sadě Visual Studio | [Práce s 3D prostředky pro hry a aplikace](../designers/working-with-3-d-assets-for-games-and-apps.md) |
 | Standardní ikony, které jsou k dispozici pro vaše programy | [Knihovna obrázků sady Visual Studio](../designers/the-visual-studio-image-library.md) |

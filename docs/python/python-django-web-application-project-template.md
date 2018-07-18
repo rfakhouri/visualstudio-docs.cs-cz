@@ -1,7 +1,7 @@
 ---
-title: Šablona projektu webového rozhraní Django pro jazyk Python
-description: Přehled šablony sady Visual Studio pro webové aplikace napsané v Pythonu pomocí rozhraní Django.
-ms.date: 04/17/2018
+title: Šablona webového projektu Django pro Python
+description: Přehled šablon sady Visual Studio pro webové aplikace napsané v Pythonu pomocí rozhraní Django.
+ms.date: 07/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,59 +11,60 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 077619b7d47441bb4a02dbe87e7cf714b634beff
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: c46eda83f74b55644165997295d45ce852af9f31
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031345"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847749"
 ---
 # <a name="django-web-project-template"></a>Šablona webového projektu Django
 
-[Django](https://www.djangoproject.com/) je určená pro vývoj webů rychlé, zabezpečené a škálovatelné vysoké úrovně rozhraní Python. Podpora v jazyce Python v sadě Visual Studio obsahuje několik šablon projektu nastavení struktury založené na rozhraní Django webové aplikace. Chcete-li použít šablonu v sadě Visual Studio, vyberte **soubor** > **nový** > **projektu**, vyhledejte "Django" a vyberte z "prázdné Django webu Projekt,""Webový projekt Django"a"Hlasovací webový projekt Django"šablony. Najdete v článku [Learning Django kurzu](learn-django-in-visual-studio-step-01-project-and-solution.md) návod všechny šablony.
+[Django](https://www.djangoproject.com/) je vysoké úrovně rozhraní Python pro vývoj pro web rychlé, zabezpečené a škálovatelné. Podpora Pythonu v sadě Visual Studio obsahuje několik šablon projektů nastavení struktury Django webové aplikace. Chcete-li použít šablony v sadě Visual Studio, vyberte **souboru** > **nový** > **projektu**, vyhledejte "Django" a vyberte z "prázdné Django webu "Projekt,"Webového projektu Django"a"Dotazuje webového projektu Django"šablony. Najdete v článku [kurzu učení Django](learn-django-in-visual-studio-step-01-project-and-solution.md) návod všechny šablony.
 
-Visual Studio poskytuje úplné IntelliSense pro projekty Django:
+Visual Studio obsahuje plnou podporou technologie IntelliSense pro projekty v Django:
 
-- Proměnné kontext je předán do šablony:
+- Kontextové proměnné předaný do šablony:
 
-    ![IntelliSense pro kontext proměnné](media/template-django-intellisense.png)
+    ![Technologie IntelliSense pro kontextové proměnné](media/template-django-intellisense.png)
 
-- Označování a filtrování pro obě built-ins a uživatelem definované:
+- Značek a filtrování pro obě předdefinované a uživatelem definovanými:
 
-    ![IntelliSense pro značky a filtry](media/template-django-intellisense-filter.png)
+    ![Technologie IntelliSense pro značky a filtry](media/template-django-intellisense-filter.png)
 
-- Pro vložených šablon stylů CSS a JavaScript zvýrazňování syntaxe:
+- Barevné zvýrazňování vložených šablon stylů CSS a JavaScript syntaxe:
 
-    ![IntelliSense šablon stylů CSS](media/template-django-intellisense-css.png)
+    ![Šablony stylů CSS, IntelliSense](media/template-django-intellisense-css.png)
 
     ![JavaScript IntelliSense](media/template-django-intellisense-js.png)
 
-Visual Studio také poskytuje úplné [ladění podporu](debugging-python-in-visual-studio.md) pro projekty Django: 
+Visual Studio také poskytuje úplný [podporu ladění](debugging-python-in-visual-studio.md) Django projekty: 
 
 ![Zarážky](media/template-django-debugging.png)
 
-Je obvyklé, Django projektů se mají spravovat prostřednictvím jejich `manage.py` souboru, který se předpokládá, který následuje Visual Studio. Pokud zastavíte pomocí tento soubor jako vstupní bod, v podstatě rozdělit souboru projektu. V takovém případě budete muset [znovu vytvořit projektu z existujících souborů](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files) bez označení jako projekt Django.
+Je typické Django projektů, které jde spravovat pomocí svých `manage.py` soubor, což je předpoklad, který následuje sady Visual Studio. Chcete-li zrušit pomocí tohoto souboru jako vstupní bod je v podstatě přerušit souboru projektu. V takovém případě budete muset [znovu vytvořit projekt z existujících souborů](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files) bez označení jako projekt Django.
 
 ## <a name="django-management-console"></a>Konzola pro správu Django
 
-Konzola pro správu Django přistupuje prostřednictvím různých příkazy **projektu** nabídky nebo kliknutím pravým tlačítkem na projekt v Průzkumníku řešení.
+Konzola pro správu Django se přistupuje přes různé příkazy na **projektu** nabídek nebo kliknutím pravým tlačítkem myši na projekt v Průzkumníku řešení.
 
-- **Otevřete prostředí Django...** : otevře prostředí v kontextu vaší aplikace, která umožňuje pracovat s modely "
+- **Otevřete prostředí Django...** : otevře prostředí v kontextu vaší aplikace, která umožňuje pracovat s vašimi modely "
 
     ![Konzola](media/template-django-console-shell.png)
 
-- **Django synchronizace DB**: provede `manage.py syncdb` v interaktivních okna:
+- **Django synchronizace DB**: spustí `manage.py syncdb` v interaktivním okně:
 
     ![Konzola](media/template-django-console-sync-db.png)
 
-- **Shromažďovat statické**: provede `manage.py collectstatic --noinput` zkopírovat všechny statické soubory do cestu určenou položkou `STATIC_ROOT` ve vaší `settings.py`. Když [publikování do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md), statické soubory jsou shromažďovány automaticky v rámci operace publikování.
+- **Shromažďovat statické**: spustí `manage.py collectstatic --noinput` zkopírovat všechny statické soubory do cesta zadaná položkou `STATIC_ROOT` ve vašich `settings.py`. Když [publikování do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md), statické soubory se automaticky shromažďují, jako součást operace publikování.
 
     ![Konzola](media/template-django-console-collect-static.png)
 
-- **Ověření**: provede `manage.py validate`, které sestavy všechny chyby ověřování nainstalovaný modely určeného `INSTALLED_APPS` ve vaší `settings.py`:
+- **Ověření**: spustí `manage.py validate`, která hlásí chyby ověření v nainstalované modely určené `INSTALLED_APPS` v vaše `settings.py`:
 
     ![Konzola](media/template-django-console-validate.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Kurz Django učení](learn-django-in-visual-studio-step-01-project-and-solution.md)
+- [Kurz učení Django](learn-django-in-visual-studio-step-01-project-and-solution.md)
+- [Publikování do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

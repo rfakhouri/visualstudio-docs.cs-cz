@@ -1,94 +1,95 @@
 ---
-title: Ověřte prostředí Xamarin | Microsoft Docs
+title: Ověření prostředí Xamarinu | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 03/30/2018
 ms.topic: conceptual
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
 author: charlespetzold
 ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 862af0d8912811aee8e0110b48fa8cc3e8f1c06b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d53a668014ba8f08b0715a0f0a02c351756435e
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31068394"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924470"
 ---
-# <a name="verify-your-xamarin-environment"></a>Ověřte prostředí Xamarin
+# <a name="verify-your-xamarin-environment"></a>Ověření prostředí Xamarinu
 
-Po dokončení instalační programy (viz [nastavení a instalaci](../cross-platform/setup-and-install.md)), věnovat několik minut, ověřte, zda je vše připraveno prostředí vývoj na platformě Xamarin.  
-  
- Po dokončení ověření instalace zkuste jednu nebo obě následující kurzy:  
-  
--   [Další informace základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md) sestavit aplikaci Xamarin.Forms.
-  
--   [Vývoj aplikací s nativní uživatelského rozhraní v sadě Visual Studio pomocí Xamarin](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md) používat nativní uživatelského rozhraní na jednotlivých platformách ale sdílet nějaký kód v rozhraní .NET standardní knihovně.
-  
-## <a name="all-platforms"></a>Všechny platformy 
- 
-V sadě Visual Studio, vyberte nejdřív **nástroje > rozšíření a aktualizace** a zaškrtněte políčko, pokud některé z těchto komponent Xamarin vyžadovat aktualizace.  
-  
-Pak vytvořte nové řešení Xamarin.Forms v sadě Visual Studio pomocí **soubor > Nový projekt**. V dialogovém okně rozbalte **Visual C# > napříč platformami**, vyberte **mobilní aplikace (Xamarin.Forms)** a klikněte na tlačítko OK. V dialogovém okně, který následuje, vyberte **prázdnou aplikaci**. V části **strategie sdílení kódu**, vyberte **.NET Standard**. Klikněte na tlačítko OK.
+Po dokončení instalační programy (viz [nastavení a instalaci](../cross-platform/setup-and-install.md)), věnujte několik minut, chcete-li ověřit, že je vše připraveno k prostředí vývoj na platformě Xamarin.
 
-Tyto akce vytvoření řešení s čtyři projekty: sdílené projektu knihovny standardní rozhraní .NET 2.0 a projekty aplikací pro Android, iOS a univerzální platformu Windows (UWP):  
-  
-![Výsledky vytvoření nového projektu z šablony prázdnou aplikaci Xamarin.Forms](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin ověřte 1")  
-   
-## <a name="android"></a>Android  
-  
-1. Zkontrolujte, že máte nejnovější Android SDK nástroje nainstalované přechodem na **nástroje > Android > Android SDK Manager**. Nainstalujte nejnovější verze nástroje pro Android SDK, nástroje pro platformu Android SDK a nástroje sestavení Android SDK. Není potřeba vždycky nainstalovat nejnovější úroveň rozhraní API systému Android. Úroveň rozhraní API, které potřebujete, závisí na úrovni platformy, které chcete zacílit. Obecně platí instalace platformě Xamarin nainstaluje úroveň platformu Android, která vyžaduje.  
-  
-2.  Ověření, sestavování a ladění na emulátoru nebo zařízení:  
-  
-    -   Klikněte pravým tlačítkem na projekt pro Android v Průzkumníku řešení a vyberte **nastavit jako spouštěný projekt**.  
-  
-    -   Na panelu nástrojů měli byste vidět rozevírací seznam obsahující seznam zařízení se systémem Android k dispozici a emulátorů. 
-    
-    Zařízení se systémem Android musí být povolen pro ladění v možnosti pro vývojáře stránky nastavení zařízení USB. Zařízení je pak připojený k počítači pomocí kabelu USB. 
-    
-    Emulátorů jsou také uvedeny. Vyberte jednu z zařízení nebo emulátorů Visual Studio:
+ Po dokončení ověření instalace, zkuste jednu nebo obě z následujících návodech:
 
-  ![Výběr emulátor sady Visual Studio pro Android jako cíl ladění](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin ověřte 3")  
-  
-  Podrobnější informace najdete v části [emulátor představení sady Visual Studio pro Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Visual Studio ALM blog). Pokud narazíte na problémy získávání emulátor fungovat, najdete v článku [řešení potíží s Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Můžete také vytvořit nové profily zařízení pro emulátor výběrem **nástroje > Android > Správce emulátoru Android**.  
-  
-3. Stisknutím klávesy F5 a nasazení programu na emulátoru nebo zařízení s Androidem.
-  
-## <a name="windows"></a>Windows 
-  
-1.  Universal Windows project v Průzkumníku řešení klikněte pravým tlačítkem a vyberte **nastavit jako spouštěný projekt**.  
+-   [Základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md) k sestavení aplikace Xamarin.Forms.
+
+-   [Vytvářejte aplikace s nativním uživatelským rozhraním pomocí Xamarinu v sadě Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md) používat nativní uživatelská rozhraní na jednotlivých platformách ale sdílení kódu v knihovně .NET Standard.
+
+## <a name="all-platforms"></a>Všechny platformy
+
+V sadě Visual Studio, vyberte nejdřív **nástroje > rozšíření a aktualizace** a zaškrtněte políčko, pokud některé z těchto komponent Xamarin vyžadovat aktualizace.
+
+Pak vytvořte nové řešení Xamarin.Forms v sadě Visual Studio pomocí **soubor > Nový projekt**. V dialogovém okně rozbalte **Visual C# > Cross-Platform**vyberte **mobilní aplikace (Xamarin.Forms)** a klikněte na tlačítko OK. V dialogovém okně, který následuje, vyberte **prázdnou aplikaci**. V části **strategie sdílení kódu**vyberte **.NET Standard**. Klikněte na tlačítko OK.
+
+Tyto akce vytvořit řešení se čtyřmi projekty: projekt sdílené knihovny .NET Standard 2.0 a projekty aplikací pro Android, iOS a univerzální platformu Windows (UPW):
+
+![Vytvoření nového projektu z šablony prázdné aplikace Xamarin.Forms výsledky](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin ověřte 1")
+
+## <a name="android"></a>Android
+
+1. Zkontrolujte, že máte nainstalované tak, že přejdete na nejnovější nástroje sady Android SDK **nástroje > Android > správce sady Android SDK**. Nainstalujte nejnovější verze sady Android SDK Tools, nástroje pro platformu Android SDK a Android SDK Build tools. Není nutné vždy nainstalujte nejnovější rozhraní Android API úrovně. Úroveň rozhraní API, které potřebujete, závisí na úrovni platformy, kterou chcete cílit. Obecně platí instalace platformu Xamarin nainstaluje úroveň platformy Android, které vyžaduje.
+
+2.  Ověření, sestavování a ladění na zařízení nebo emulátoru:
+
+    -   Klikněte pravým tlačítkem na projekt pro Android v Průzkumníku řešení a vyberte **nastavit jako spouštěný projekt**.
+
+    -   Na panelu nástrojů měli byste vidět rozevíracího seznamu, který obsahuje seznam emulátory a zařízení se systémem Android k dispozici.
+
+    Zařízení s androidem musí být povolena pro ladění v možnosti pro vývojáře o stránku s nastavením zařízení USB. Zařízení je pak připojen k počítači pomocí kabelu USB.
+
+    Emulátory jsou také uvedeny. Vyberte jednu z zařízení nebo emulátorů sady Visual Studio:
+
+  ![Výběr emulátoru Visual Studia pro Android jako cíl ladění](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin ověřte 3")
+
+  Další informace najdete v tématu [představení sady Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (blogu Visual Studio ALM). Pokud narazíte na problémy, získávání emulátor fungovat najdete v tématu [řešení potíží s Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Můžete také vytvořit nové profily zařízení pro emulátor serveru tak, že vyberete **nástroje > Android > Správce emulátoru Androidu**.
+
+3. Stiskněte klávesu F5 ke kompilaci a program nasadit do zařízení s Androidem nebo emulátoru.
+
+## <a name="windows"></a>Windows
+
+1.  Klikněte pravým tlačítkem na projekt Universal Windows v Průzkumníku řešení a vyberte **nastavit jako spouštěný projekt**.
 
 2.  V **platformy řešení** rozevíracího seznamu, vyberte **x86** nebo **x64**. Vyberte **místního počítače**.
 
 3.  Stisknutím klávesy F5 nasazení programu na ploše.
-  
-## <a name="ios"></a>iOS  
-  
-1.  Zkontrolujte, že počítač Mac je dostupný v síti a spárované sadou Visual Studio, jak je popsáno na [připojení k počítači Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/).  
-  
-2.  Klikněte pravým tlačítkem na projekt pro iOS v Průzkumníku řešení a vyberte **nastavit jako spouštěný projekt**.  
-  
-3.  Vyberte **iPhoneSimulator** cíle ze sestavení sady Visual Studio rozevíracího seznamu, jak je uvedeno níže, nebo **iPhone** cíle, pokud máte zařízení uvazována pro Mac.   
-  
- ![Výběr iPhoneSimulator sestavení cíl](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin ověřte 5") 
 
- Pokud nejsou uvedeny žádné simulátorů, spusťte na počítači Mac, vyberte Xcode **Xcode > Předvolby**a klikněte na tlačítko **Stáhnout**. V části **součásti** záhlaví jste měli vidět simulátoru verze, které jsou k dispozici ke stažení. Další pokyny pro ladění naleznete na [iOS ladění](/xamarin/ios/deploy-test/debugging-in-xamarin-ios/?tabs=vsmac#Debugging_on_the_Simulator) stránky.
-  
-4.  Cíl zařízení emulátoru, vyberte z rozevíracího seznamu v sadě Visual Studio:
+## <a name="ios"></a>iOS
 
- ![Výběr cíli ladění iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin ověřte 6")
+1.  Ujistěte se, že váš Mac bude dostupný v síti a je spárovaná s aplikací Visual Studio, jak je popsáno na [připojení k Macu](/xamarin/ios/get-started/installation/windows/connecting-to-mac/).
 
-5. Stisknutím klávesy F5 spusťte ladicího programu. Simulátor se spustí v systému Mac, kde budete pracovat s aplikací, při ladění se stane v sadě Visual Studio. Pokud máte fyzického zařízení iPhone nebo iPad připojené k počítači Mac, zobrazí se v seznamu a můžete ji vybrat místo. Pokud se nezobrazí žádné zařízení nebo simulátorů uvedené, zkontrolujte připojení k Mac. Přečtěte si článek propojené ve výše uvedeném kroku 1, nebo přejít na **nástroje > iOS > pár pro Mac**  
-  
-6.  Pokud narazíte na potíže s připojením k počítači Mac, přečtěte si [odstraňování problémů s připojením](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/).  
-  
-7.  Pokud se zobrazí chyba s oznámením "žádné nainstalované zřizovacích profilů odpovídat nainstalované iOS podpisových klíčů", zkuste následující návrhy:  
-  
-  - Zkontrolujte, že váš účet Apple Id je přidaný do Xcode na počítači Mac, jak je popsáno na [přidání si účet na Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  Po přidání účtu, je nutné restartovat Visual Studio a Xcode.  
-    
-  - Ověřte v iOS sady vlastností projektu v iOS podpisový kartě, že vlastní pole nárocích je prázdná pro konfiguraci ladění active.  Poznámka: pouze vyzkoušejte odebrání toto nastavení, pokud byla zjištěna výše chybová zpráva.  
-  
-  ![CrossPlat Xamarin ověřte 8](../cross-platform/media/crossplat-xamarin-verify-8.png "CrossPlat Xamarin ověřte 8")  
+2.  Klikněte pravým tlačítkem na projekt pro iOS v Průzkumníku řešení a vyberte **nastavit jako spouštěný projekt**.
+
+3.  Vyberte **iPhoneSimulator** cílové sestavení sady Visual Studio rozevíracím seznamu, jak je uvedeno níže, nebo **iPhone** cílit, pokud máte zařízení připojeném k počítači Mac.
+
+ ![Výběr iPhoneSimulator cíl sestavení](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin ověřte 5")
+
+ Pokud nejsou uvedeny žádné simulátory, spusťte Xcode na Macu, vyberte **Xcode > Předvolby**a klikněte na tlačítko **Stáhnout**. V části **součásti** záhlaví jste měli vidět simulátor verze, které jsou k dispozici ke stažení. Další návod pro ladění k dispozici na [iOS ladění](/xamarin/ios/deploy-test/debugging-in-xamarin-ios/?tabs=vsmac#Debugging_on_the_Simulator) stránky.
+
+4.  Vyberte cíl emulátor zařízení z rozevírací nabídky sady Visual Studio:
+
+ ![Vyberte cíl ladění iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "6 ověřte CrossPlat Xamarin")
+
+5. Stisknutím klávesy F5 spusťte ladicí program. Simulátor se spouští na počítači Mac, kde budete pracovat s aplikací během ladění se stane v sadě Visual Studio. Pokud už máte fyzické zařízení iPhone nebo iPad připojené k počítači Mac, se zobrazí v seznamu a můžete ho vybrat místo toho. Pokud nevidíte žádné zařízení nebo simulátoru uvedené, zkontrolujte připojení k počítači Mac. Přečtěte si článek propojené výše v kroku 1, nebo přejít na **nástroje > iOS > spárovat s počítačem Mac**
+
+6.  Pokud narazíte na potíže s připojením k počítači Mac, přečtěte si [řešení potíží s připojením](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/).
+
+7.  Pokud se zobrazí chyba s oznámením "žádné nainstalované zřizovací profily odpovídají nainstalovaných iOS podpisových klíčů", vyzkoušejte následující návrhy:
+
+  - Zkontrolujte, že váš účet Apple Id, které se přidá v Xcode na počítači Mac, jak je popsáno v [přidávání účtu do Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  Po přidání vašeho účtu, je potřeba restartovat Visual Studio a Xcode.
+
+  - Ověřte v iOS sadu vlastností projektu v systému iOS podpisový kartu, nic pole vlastní oprávnění pro ladění aktivní konfiguraci.  Poznámka: pouze snažte odebrání toto nastavení, pokud jste se setkali výše chybová zpráva.
+
+  ![CrossPlat Xamarin ověřte 8](../cross-platform/media/crossplat-xamarin-verify-8.png "CrossPlat Xamarin ověřte 8")

@@ -19,124 +19,124 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5cd225fe1eae267116610e2f08c7092d33c592af
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2829e1dffa0975a1970b8727f9baf79febf9b32c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117677"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174884"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Návod: Uložení dat do transakce
-Tento návod ukazuje, jak k uložení dat v transakci pomocí <xref:System.Transactions> oboru názvů. V tomto návodu vytvoříte aplikaci Windows Forms. Průvodce konfigurací zdroje dat použijete k vytvoření datové sady pro dvě tabulky v ukázkové databázi Northwind. Data vázané ovládací prvky na formuláři Windows, a budete upravovat kód pro objektu BindingNavigator na tlačítko Uložit k aktualizaci databáze uvnitř objekt TransactionScope přidáte.
+Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transactions> oboru názvů. V tomto návodu vytvoříte aplikaci Windows Forms. Průvodce konfigurací zdroje dat použijete k vytvoření datové sady pro dvě tabulky v ukázkové databázi Northwind. Přidáte data vázané ovládací prvky do formuláře Windows a upravíte kód BindingNavigator na tlačítko Uložit aktualizace databáze uvnitř objekt TransactionScope.
 
 ## <a name="prerequisites"></a>Požadavky
-Tento návod používá SQL Server Express LocalDB a ukázková databáze Northwind.
+Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northwind.
 
-1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **vývoj aplikací .NET** zatížení, nebo jako jednotlivých součástí.
+1.  Pokud nemáte SQL Server Express LocalDB, nainstalujte ji z [SQL Server Express stránku pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo prostřednictvím **instalační program sady Visual Studio**. V aplikaci Visual Studio Instalační služby systému SQL Server Express LocalDB lze nainstalovat jako součást **vývoj desktopových aplikací .NET** úlohy, nebo jako jednotlivých komponent.
 
-2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:
+2.  Instalace ukázkové databáze Northwind pomocí následujících kroků:
 
-    1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz**.
+    1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okna. (Průzkumník objektů systému SQL Server je nainstalován jako součást **ukládání a zpracování dat** úlohy v instalačním programu sady Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na instanci LocalDB a vyberte **nový dotaz**.
 
-       Otevře se okno editoru dotazů.
+       Otevře se okno editor dotazů.
 
-    2. Kopírování [Northwind Transact-SQL skriptu](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do schránky. Tento skript T-SQL vytvoří databázi Northwind od začátku a naplní s daty.
+    2. Kopírovat [Northwind příkazů jazyka Transact-SQL skriptů](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do schránky. Tento skript T-SQL vytvoří databázi Northwind úplně od začátku a naplní daty.
 
-    3. Vložit do editoru dotazů skriptu T-SQL a potom vyberte **Execute** tlačítko.
+    3. Vložte skript T-SQL do editoru dotazů a klikněte na tlačítko **Execute** tlačítko.
 
-       Po krátkou dobu dotaz dokončí provádění a vytvoření databáze Northwind.
+       Po chvilce dotaz doběhnutí a vytvořit databázi Northwind.
 
 ## <a name="create-a-windows-forms-application"></a>Vytvoření aplikace Windows Forms
- Prvním krokem je vytvoření **formulářové aplikace Windows**.
+ Prvním krokem je vytvoření **formulářová aplikace Windows**.
 
 #### <a name="to-create-the-new-windows-project"></a>Vytvoření nového projektu Windows
 
-1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový** > **projektu**.
+1. V sadě Visual Studio na **souboru** nabídce vyberte možnost **nový** > **projektu**.
 
-2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Desktop**.
+2. Rozbalte buď **Visual C#** nebo **jazyka Visual Basic** v levém podokně vyberte **Windows Desktop**.
 
-3. V prostředním podokně, vyberte **aplikace pro Windows Forms** typ projektu.
+3. V prostředním podokně, vyberte **aplikace Windows Forms** typ projektu.
 
-4. Název projektu **SavingDataInATransactionWalkthrough**a potom zvolte **OK**.
+4. Pojmenujte projekt **SavingDataInATransactionWalkthrough**a klikněte na tlačítko **OK**.
 
-     **SavingDataInATransactionWalkthrough** je vytvořen a přidán do projektu **Průzkumníku řešení**.
+     **SavingDataInATransactionWalkthrough** projekt je vytvořen a přidán do **Průzkumníka řešení**.
 
-## <a name="create-a-database-data-source"></a>Vytvoření zdroje dat databáze
+## <a name="create-a-database-data-source"></a>Vytvoření databázového zdroje dat
  Tento krok používá **Průvodce konfigurací zdroje dat** vytvořit zdroj dat na základě `Customers` a `Orders` tabulky v ukázkové databázi Northwind.
 
 #### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat
 
 1.  Na **Data** nabídce vyberte možnost **zobrazit zdroje dat**.
 
-2.  V **zdroje dat** vyberte **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.
+2.  V **zdroje dat** okně **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.
 
-3.  Na **zvolte typ zdroje dat** obrazovku, vyberte **databáze**a potom vyberte **Další**.
+3.  Na **zvolte typ zdroje dat** obrazovky, vyberte **databáze**a pak vyberte **Další**.
 
-4.  Na **zvolit datové připojení** proveďte obrazovky, jednu z následujících akcí:
+4.  Na **vyberte datové připojení** obrazovky proveďte následující:
 
     -   Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.
 
          -nebo-
 
-    -   Vyberte **nové připojení** ke spuštění **přidat či upravit připojení** dialogové okno pole a vytvořit připojení k databázi Northwind.
+    -   Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno a vytvořte připojení k databázi Northwind.
 
-5.  Pokud vaše databáze vyžaduje heslo, vyberte možnost obsahují citlivá data a pak vyberte **Další**.
+5.  Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak vyberte **Další**.
 
-6.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace** obrazovku, vyberte **Další**.
+6.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace** obrazovky, vyberte **Další**.
 
-7.  Na **zvolte databázové objekty** obrazovky, rozbalte **tabulky** uzlu.
+7.  Na **zvolte vaše databázové objekty** obrazovky, rozbalte **tabulky** uzlu.
 
-8.  Vyberte `Customers` a `Orders` tabulky a potom vyberte **Dokončit**.
+8.  Vyberte `Customers` a `Orders` tabulky a pak vyberte **Dokončit**.
 
-     **NorthwindDataSet** se přidá do projektu a `Customers` a `Orders` tabulky se zobrazí v **zdroje dat** okno.
+     **NorthwindDataSet** se přidá do vašeho projektu a `Customers` a `Orders` tabulky se zobrazí v **zdroje dat** okna.
 
-## <a name="add-controls-to-the-form"></a>Přidání ovládacích prvků formuláře
- Ovládací prvky vázané na data můžete vytvořit tak, že přetáhnete položky z **zdroje dat** okna do svého formuláře.
+## <a name="add-controls-to-the-form"></a>Přidání ovládacích prvků do formuláře
+ Můžete vytvořit ovládací prvky vázané na data přetažením položek z **zdroje dat** okna do formuláře.
 
-#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Chcete-li vytvořit data vázané ovládací prvky na formuláři Windows
+#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Vytvoření dat vázané ovládací prvky na formuláři Windows
 
--   V **zdroje dat** okno, rozbalte **zákazníci** uzlu.
+-   V **zdroje dat** okna, rozbalte **zákazníkům** uzlu.
 
--   Přetáhněte hlavní **zákazníci** uzlu z **zdroje dat** okna do **Form1**.
+-   Přetáhněte hlavní **zákazníkům** uzlu z **zdroje dat** okna do **Form1**.
 
-     A <xref:System.Windows.Forms.DataGridView> řízení a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů jsou zobrazena na formuláři. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> se zobrazí v okně komponent.
+     A <xref:System.Windows.Forms.DataGridView> ovládacího prvku a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí ve formuláři. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.
 
--   Přetáhněte související **objednávky** uzlu (není hlavním **objednávky** uzlu, ale uzlu související podřízenou tabulku níže **Fax** sloupce) do následující formulář  **CustomersDataGridView**.
+-   Přetáhněte související **objednávky** uzlu (není hlavním **objednávky** uzlu, ale následující související podřízené tabulky uzlu **Fax** sloupce) do níže uvedeného formuláře  **CustomersDataGridView**.
 
-     A <xref:System.Windows.Forms.DataGridView> se zobrazí na formuláři. `OrdersTableAdapter` a <xref:System.Windows.Forms.BindingSource> se zobrazí v okně komponent.
+     A <xref:System.Windows.Forms.DataGridView> se zobrazí ve formuláři. `OrdersTableAdapter` a <xref:System.Windows.Forms.BindingSource> zobrazují v panelu komponent.
 
-## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Přidat odkaz na sestavení System.Transactions –
- Použití transakcí <xref:System.Transactions> oboru názvů. Projektu odkaz na sestavení System.Transactions – nebyla přidána ve výchozím nastavení, takže budete muset ručně ji přidejte.
+## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Přidat odkaz na sestavení System.Transactions
+ Použití transakce <xref:System.Transactions> oboru názvů. Odkaz na sestavení system.transactions není přidán ve výchozím nastavení, takže je třeba ručně přidat.
 
-#### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Chcete-li přidat odkaz na soubor System.Transactions – knihovny DLL
+#### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Chcete-li přidat odkaz na soubor System.Transactions DLL
 
-1.  Na **projektu** nabídce vyberte možnost **přidat odkaz na**.
+1.  Na **projektu** nabídce vyberte možnost **přidat odkaz**.
 
-2.  Vyberte **System.Transactions –** (na **.NET** kartě) a potom vyberte **OK**.
+2.  Vyberte **System.Transactions** (na **.NET** kartu) a pak vyberte **OK**.
 
      Odkaz na **System.Transactions** se přidá do projektu.
 
-## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>Změňte kód v tlačítko SaveItem BindingNavigator
- Pro první tabulky vyřadit do formuláře, je přidán kód ve výchozím nastavení `click` událostí uložení tlačítko <xref:System.Windows.Forms.BindingNavigator>. Budete muset ručně přidejte kód, který umožňuje aktualizovat všechny další tabulky. V tomto návodu budeme Refaktorovat existující uložit kód mimo uložení tlačítko obslužné rutiny události. Můžeme také vytvořit několik další metody, které poskytují funkce konkrétní aktualizaci založené na tom, zda řádek je nutné přidat nebo odstranit.
+## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>Změňte kód v tlačítko SaveItem prvku BindingNavigator
+ Kód je jako první tabulku přetaženy do formuláře přidán ve výchozím nastavení `click` události uložení tlačítko <xref:System.Windows.Forms.BindingNavigator>. Budete muset ručně přidat kód pro aktualizaci žádné další tabulky. V tomto návodu budeme Refaktorovat stávající uložit kód mimo uložení tlačítko obslužné rutiny události. Můžeme také vytvořit několik další metody, které poskytují funkce konkrétní aktualizace na základě na, jestli řádku musí být přidány nebo odstraněny.
 
-#### <a name="to-modify-the-auto-generated-save-code"></a>Chcete-li upravit automaticky generovaný uložit kódu
+#### <a name="to-modify-the-auto-generated-save-code"></a>Chcete-li změnit automaticky generovanou uložit kódu
 
-1.  Vyberte **Uložit** tlačítko **CustomersBindingNavigator** (tlačítko s ikonou disketovou jednotku).
+1.  Vyberte **Uložit** tlačítko **CustomersBindingNavigator** (tlačítko s ikonou diskety).
 
-2.  Nahraďte `CustomersBindingNavigatorSaveItem_Click` metoda následujícím kódem:
+2.  Nahradit `CustomersBindingNavigatorSaveItem_Click` metodu s následujícím kódem:
 
      [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]
 
-Pořadí pro vyřešení změny na souvisejících dat je následující:
+Sjednocování změn na související data pořadí vypadá takto:
 
--   Odstraňte podřízené záznamy. (V takovém případě odstraňte záznamy z `Orders` tabulku.)
+-   Odstraňte podřízené záznamy. (V tomto případě odstranit záznamy `Orders` tabulky.)
 
--   Odstraňte nadřazené záznamy. (V takovém případě odstraňte záznamy z `Customers` tabulku.)
+-   Odstraňte nadřazené záznamy. (V tomto případě odstranit záznamy `Customers` tabulky.)
 
--   Vložte nadřazené záznamy. (V tomto případě vložit záznamů `Customers` tabulku.)
+-   Vložte nadřazené záznamy. (V tomto případě vkládání záznamů v `Customers` tabulky.)
 
--   Vložte podřízené záznamy. (V tomto případě vložit záznamů `Orders` tabulku.)
+-   Vložte podřízené záznamy. (V tomto případě vkládání záznamů v `Orders` tabulky.)
 
 #### <a name="to-delete-existing-orders"></a>Chcete-li odstranit existující objednávky
 
@@ -145,7 +145,7 @@ Pořadí pro vyřešení změny na souvisejících dat je následující:
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
-#### <a name="to-delete-existing-customers"></a>Chcete-li odstranit stávající zákazníky služby
+#### <a name="to-delete-existing-customers"></a>Chcete-li odstranit stávající zákazníci
 
 -   Přidejte následující `DeleteCustomers` metodu **Form1**:
 

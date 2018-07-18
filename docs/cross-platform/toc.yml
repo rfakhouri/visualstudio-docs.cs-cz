@@ -18,7 +18,7 @@
     - name: 'Nastavení, instalace a ověření pro uživatele počítačů Mac'
       href: setup-install-and-verifications-for-mac-users.md
 - name: Visual Studio Tools pro Apache Cordova
-  href: visual-studio-tools-for-apache-cordova.md
+  href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Visual Studio Tools for Unity
   href: visual-studio-tools-for-unity.md
   items:
@@ -78,7 +78,7 @@
           href: clanglink-prop-page.md
         - name: Vlastnosti NMake (Android C++)
           href: nmake-android-prop-page.md
-- name: Vývoj aplikací pro Univerzální platformu Windows (UPW)
+- name: Vývoj aplikací pro Univerzální platformu Windows (UWP)
   href: develop-apps-for-the-universal-windows-platform-uwp.md
 - name: Emulátor sady Visual Studio pro Android
   href: visual-studio-emulator-for-android.md

@@ -1,5 +1,5 @@
 ---
-title: Referenční dokumentace rozhraní API pro rozšiřitelnost technologie IntelliTrace | Microsoft Docs
+title: Reference k rozhraní API pro rozšiřitelnost technologie IntelliTrace | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907b47aacf7ad0d63c79f22dcf992ac042dd2e7e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0542912c15a92728cd7476b7482782fa7cf65fb2
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457459"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433142"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Referenční dokumentace k rozhraní API pro rozšiřitelnost technologie IntelliTrace
-Podle informací uvedených v této části můžete rozšiřitelnost technologie IntelliTrace rozhraní API ke čtení a dekódování soubory .itrace ve vaší aplikaci.  
+Rozšiřitelnost technologie IntelliTrace rozhraní API podle informací uvedených v této části slouží ke čtení a dekódovat soubory .itrace ve vaší aplikaci.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  Toto rozhraní API pro rozšiřitelnost technologie IntelliTrace jsou obsaženy v jednom oboru názvů  
@@ -29,7 +29,7 @@ Podle informací uvedených v této části můžete rozšiřitelnost technologi
   
 ## <a name="related-sections"></a>Související oddíly  
  [IntelliTrace](../debugger/intellitrace.md)  
- Poskytuje informace o tom, jak ladit se IntelliTrace.  
+ Poskytuje informace o tom, jak ladit pomocí nástroje IntelliTrace.  
   
- [Galerie kódů MSDN](http://go.microsoft.com/fwlink/?LinkId=166091)  
- Hostitelem ukázkové aplikace znázorňující způsob použití rozšiřitelnost technologie IntelliTrace.
+ [Galerie kódu na webu MSDN](https://code.msdn.microsoft.com/)  
+ Hostuje ukázkovou aplikaci ukazující způsob použití rozšiřitelnost technologie IntelliTrace.

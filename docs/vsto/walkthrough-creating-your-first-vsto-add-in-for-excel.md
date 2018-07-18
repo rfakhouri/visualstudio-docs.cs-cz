@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření vaší první Add-in VSTO pro Excel'
+title: 'Návod: Vytvoření vašeho prvního doplňku VSTO pro Excel'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,14 +19,14 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: 6421df0109d68d2647cafff5713aecb297c3536d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845805"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38797796"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Návod: Vytvoření vaší první Add-in VSTO pro Excel
-  Tento úvodní návod ukazuje, jak vytvořit úrovni aplikace Add-in pro aplikaci Microsoft Office Excel. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pro vlastní, bez ohledu na to, které jsou otevřené sešity aplikace.  
+# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Návod: Vytvoření vašeho prvního doplňku VSTO pro Excel
+  Tento úvodní návod ukazuje, jak vytvořit doplňkem úrovni aplikace pro Microsoft Office Excel. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pro vlastní, bez ohledu na to, které jsou otevřené sešity aplikace.  
   
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]  
   
@@ -34,11 +34,11 @@ ms.locfileid: "34845805"
   
 -   Vytvoření projektu doplňku VSTO v Excelu pro aplikaci Excel.  
   
--   Psaní kódu, který používá objektový model aplikace Excel k přidání textu do sešitu při jeho uložení.  
+-   Psaní kódu, který používá objektový model aplikace Excel se při uložení přidat text do sešitu.  
   
--   Sestavení a spuštění projektu to vyzkoušíte.  
+-   Vytváření a spouštění projektů a otestovat ho.  
   
--   Čistí dokončený projekt tak, aby doplňku VSTO již nebude automaticky spustí na svém vývojovém počítači.  
+-   Čištění dokončený projekt tak, aby doplňku VSTO už nespouští automaticky na vašem vývojovém počítači.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -51,96 +51,96 @@ ms.locfileid: "34845805"
   
 ## <a name="create-the-project"></a>Vytvoření projektu  
   
-#### <a name="to-create-a-new-excel-vsto-add-in-project-in-visual-studio"></a>K vytvoření nového projektu doplňku VSTO pro Excel v sadě Visual Studio  
+#### <a name="to-create-a-new-excel-vsto-add-in-project-in-visual-studio"></a>Chcete-li vytvořit nový projekt doplňku VSTO pro Excel v sadě Visual Studio  
   
 1.  Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Na **soubor** nabídky, přejděte na příkaz **nový**a potom klikněte na **projektu**.  
+2.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
   
-3.  Rozbalte v podokně šablon **Visual C#** nebo **jazyka Visual Basic**a potom rozbalte **Office/SharePoint**.  
+3.  V podokně šablony rozbalte **Visual C#** nebo **jazyka Visual Basic**a potom rozbalte **Office/SharePoint**.  
   
-4.  V části sada rozšířeného **Office/SharePoint** uzlu, vyberte **Office Add in** uzlu.  
+4.  V rozbalených **Office/SharePoint** uzlu, vyberte **Office Add-ins** uzlu.  
   
-5.  V seznamu šablon projektu, vyberte **doplněk aplikace Excel 2010** nebo **doplněk Excelu 2013**.  
+5.  V seznamu šablon projektu vyberte **doplněk aplikace Excel 2010** nebo **doplněk Excelu 2013**.  
   
 6.  V **název** zadejte **FirstExcelAddIn**.  
   
-7.  Click **OK**.  
+7.  Klikněte na tlačítko **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstExcelAddIn** projektu a otevře soubor ThisAddIn kódu v editoru.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstExcelAddIn** projekt a otevře soubor kódu ThisAddIn v editoru.  
   
-## <a name="write-code-to-add-text-to-the-saved-workbook"></a>Psaní kódu přidat text do uloženého sešitu  
- Dál přidejte kód do souboru kódu ThisAddIn. Nový kód používá objektový model aplikace Excel k vložení často používaný text v prvním řádku aktivního listu. Aktivního listu je listu, která je otevřená, když uživatel uloží do sešitu. Ve výchozím nastavení soubor ThisAddIn kód obsahuje následující generovaný kód:  
+## <a name="write-code-to-add-text-to-the-saved-workbook"></a>Napsání kódu pro přidání textu k sešitu uložený  
+ V dalším kroku přidejte kód do soubor kódu ThisAddIn. Nový kód používá objektový model aplikace Excel k vložení často používaný text v prvním řádku v aktivním listu. V aktivním listu je list, který je otevřený, když uživatel uloží sešit. Ve výchozím nastavení obsahuje soubor kódu ThisAddIn následující generovaného kódu:  
   
--   Částečné definice `ThisAddIn` třídy. Tato třída představuje vstupní bod pro kód a poskytuje přístup k modelu objektů aplikace Excel. Další informace najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md). Zbývající část `ThisAddIn` třída definovaná v souboru skrytá kódu, který byste neměli upravovat.  
+-   Částečnou definici `ThisAddIn` třídy. Tato třída představuje vstupní bod pro kód a poskytuje přístup k objektovému modelu Excelu. Další informace najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md). Zbývající část `ThisAddIn` třída je definována v souboru skryté kódu, který byste neměli měnit.  
   
--   `ThisAddIn_Startup` a `ThisAddIn_Shutdown` obslužné rutiny událostí. Tyto obslužné rutiny událostí jsou volány při Excel načte a uvolní vaší doplňku VSTO. Pomocí těchto obslužných rutin událostí k chybě při inicializaci doplňku VSTO, když je načten a vyčistit prostředky využívané třídou vaší Add-in, když je odpojen. Další informace najdete v tématu [události v projektech Office](../vsto/events-in-office-projects.md).  
+-   `ThisAddIn_Startup` a `ThisAddIn_Shutdown` obslužných rutin událostí. Tyto obslužné rutiny událostí jsou volány při Excel načte a uvolní doplňku VSTO. Pomocí těchto obslužných rutin událostí k inicializaci doplňku VSTO, když je načten a chcete vyčistit prostředky využívané třídou váš doplněk, pokud je uvolněna. Další informace najdete v tématu [události v projektech pro systém Office](../vsto/events-in-office-projects.md).  
   
-### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>Přidání řádku textu uložené sešitu  
+### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>Chcete-li přidat řádek textu uložené sešitu  
   
-1.  V souboru kódu ThisAddIn, přidejte následující kód, který `ThisAddIn` třídy. Nový kód definuje obslužnou rutinu události pro <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> událost, která se vyvolá, když je sešit uložit.  
+1.  V soubor kódu ThisAddIn, přidejte následující kód, který `ThisAddIn` třídy. Definuje obslužnou rutinu události pro nový kód <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> událost, která se vyvolá, když je sešit uložený.  
   
-     Když uživatel uloží sešitu, obslužné rutiny události přidá nový text na začátku aktivního listu.  
+     Když uživatel uloží sešit, přidá obslužnou rutinu události nového textu na začátku aktivního listu.  
   
      [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
      [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Pokud používáte C#, přidat následující požadované kód, který `ThisAddIn_Startup` obslužné rutiny události. Tento kód se používá k připojení `Application_WorkbookBeforeSave` obslužné rutiny události s <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> událostí.  
+2.  Pokud používáte C#, přidejte následující kód vyžaduje k `ThisAddIn_Startup` obslužné rutiny události. Tento kód slouží k připojení `Application_WorkbookBeforeSave` obslužné rutině události <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> událostí.  
   
      [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
   
- Chcete-li upravit sešit při jeho uložení, předchozí příklady kódu použijte následující objekty:  
+ Chcete-li upravit sešit uložený, použijte v předchozích příkladech kódu následující objekty:  
   
--   `Application` Pole z `ThisAddIn` třídy. `Application` Pole vrátí <xref:Microsoft.Office.Interop.Excel.Application> objekt, který představuje aktuální instanci aplikace Excel.  
+-   `Application` Pole `ThisAddIn` třídy. `Application` Pole vrátí <xref:Microsoft.Office.Interop.Excel.Application> objektu, který představuje aktuální instanci aplikace Excel.  
   
--   `Wb` Parametr obslužné rutiny události pro <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> událostí. `Wb` Parametr <xref:Microsoft.Office.Interop.Excel.Workbook> objekt, který reprezentuje uložené sešitu. Další informace najdete v tématu [přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).  
+-   `Wb` Parametr obslužné rutiny události pro <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> událostí. `Wb` Parametr je <xref:Microsoft.Office.Interop.Excel.Workbook> objektu, který představuje uložený sešitu. Další informace najdete v tématu [přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).  
   
 ## <a name="test-the-project"></a>Testování projektu  
   
 ### <a name="to-test-the-project"></a>Otestování projektu  
   
-1.  Stiskněte klávesu **F5** sestavení a spuštění projektu.  
+1.  Stisknutím klávesy **F5** sestavení a spuštění projektu.  
   
-     Při sestavování projektu se zkompilovat kód do sestavení, které je součástí složku výstupu sestavení pro projekt. Visual Studio také vytvoří sadu položky registru, které umožňují Excel zjišťovat a načíst doplňku VSTO a nakonfiguruje nastavení zabezpečení na vývojovém počítači povolit doplňku VSTO ke spuštění. Další informace najdete v tématu [řešení pro systém Office sestavení](../vsto/building-office-solutions.md).  
+     Při sestavování projektu kód je zkompilován do sestavení, která je zahrnutá ve výstupní složce sestavení pro projekt. Visual Studio také vytvoří sadu položky registru, které umožňují Excel zjišťovat a načíst doplněk VSTO, a nakonfiguruje nastavení zabezpečení na vývojovém počítači povolit doplňku VSTO pro spuštění. Další informace najdete v tématu [řešení pro systém Office sestavení](../vsto/building-office-solutions.md).  
   
-2.  V aplikaci Excel uložte sešit.  
+2.  V Excelu uložte sešit.  
   
-3.  Ověřte, zda je přidána následující text k sešitu.  
+3.  Ověřte, že následující text je přidán do sešitu.  
   
-     **Tento text byl přidán pomocí kódu.**  
+     **Tento text byl přidán s použitím kódu.**  
   
-4.  Zavření Excelu.  
+4.  Zavřete aplikaci Excel.  
   
 ## <a name="clean-up-the-project"></a>Vyčistěte projekt  
- Po dokončení vývoj projektu, odeberte z vývojovém počítači doplňku VSTO sestavení, položky registru a nastavení zabezpečení. V opačném doplňku VSTO bude nadále spouštět pokaždé, když ve svém vývojovém počítači otevřete aplikaci Excel.  
+ Po dokončení vývoje projektu doplňku VSTO sestavení, položky registru a nastavení zabezpečení odeberte z vývojového počítače. V opačném případě doplňku VSTO bude nadále spuštěna pokaždé, když otevřete aplikaci Excel na vašem vývojovém počítači.  
   
-### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Vyčistěte dokončený projekt na vývojovém počítači  
+### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Chcete-li vyčistit dokončený projekt na vašem vývojovém počítači  
   
 1.  V sadě Visual Studio na **sestavení** nabídky, klikněte na tlačítko **Vyčistit řešení**.  
   
 ## <a name="next-steps"></a>Další kroky  
- Teď, když jste vytvořili základní Add-in VSTO pro Excel, můžete další informace o tom, jak vyvíjet doplňků VSTO z těchto témat:  
+ Teď, když jste vytvořili základní doplňku VSTO pro Excel, můžete další informace o tom, jak vývoj doplňků VSTO z těchto témat:  
   
--   Obecné programování úlohy, které můžete provádět v doplňcích VSTO: [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).  
+-   Obecné programování úkolů, které můžete provádět v doplňcích VSTO: [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Úlohy programování, které jsou specifické pro doplňky VSTO aplikace Excel: [řešení v aplikaci Excel](../vsto/excel-solutions.md).  
+-   Úkoly programování, které jsou specifické pro doplňky VSTO pro Excel: [řešení pro Excel](../vsto/excel-solutions.md).  
   
--   Pomocí modelu objektů aplikace Excel: [přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).  
+-   Použití objektového modelu aplikace Excel: [přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).  
   
--   Přizpůsobení uživatelského rozhraní (UI) aplikace Excel, například pomocí vytvoření vlastní karty na pásu karet nebo vytváření vlastních vlastního podokna úloh: [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).  
+-   Přizpůsobení uživatelského rozhraní (UI) aplikace Excel, například podle přidat vlastní kartu na pás karet nebo vytváření vlastních vlastního podokna úloh: [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).  
   
 -   Sestavování a ladění doplňků VSTO pro Excel: [řešení pro systém Office sestavení](../vsto/building-office-solutions.md).  
   
 -   Nasazení doplňků VSTO pro Excel: [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Viz také:  
- [Přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Řešení pro aplikaci Excel](../vsto/excel-solutions.md)   
- [Program doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
  [Přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md)   
- [Přizpůsobení uživatelského rozhraní sady Office](../vsto/office-ui-customization.md)   
- [Sestavení řešení pro systém Office](../vsto/building-office-solutions.md)   
+ [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)   
+ [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
- [Přehled šablon projektů Microsoft Office](../vsto/office-project-templates-overview.md)  
+ [Přehled šablon projektů Office](../vsto/office-project-templates-overview.md)  
   
   

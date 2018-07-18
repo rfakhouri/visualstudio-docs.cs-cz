@@ -22,41 +22,41 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e743eebf7873a7eabdd41907acbe3f5d8bce9c8b
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: dec4ca4ccd4b318cc337b10086fbf6b31a0e962c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089513"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174772"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Načtení dat XML do datové sady
 
-ADO.NET poskytuje jednoduché metody pro práci s daty XML. V tomto návodu vytvoříte aplikace Windows, která načte XML data do datové sady. Datová sada se následně zobrazí <xref:System.Windows.Forms.DataGridView> ovládacího prvku. Nakonec schématu XML na základě obsahu souboru XML se zobrazí v textovém poli.
+ADO.NET obsahuje jednoduché metody pro práci s daty XML. V tomto návodu vytvoříte aplikaci Windows, který načítá XML data do datové sady. Datová sada se následně zobrazí <xref:System.Windows.Forms.DataGridView> ovládacího prvku. Nakonec schématu XML na základě obsahu souboru XML se zobrazí v textovém poli.
 
 > [!NOTE]
-> Dialogová okna a příkazy nabídky, které vidíte, se může lišit od těch popsaných v nápovědě v závislosti na nastavení active nebo na edici, kterou používáte. Chcete-li změnit nastavení, na **nástroje** nabídce vyberte možnost **nastavení importu a exportu**. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Dialogová okna a příkazy nabídek, které se zobrazí, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici, kterou používáte. Chcete-li změnit nastavení na **nástroje** nabídce vyberte možnost **nastavení importu a exportu**. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
 
-V tomto kroku vytvoříte projekt jazyka Visual Basic a Visual C#.
+V tomto kroku vytvoříte projekt jazyka Visual Basic nebo Visual C#.
 
-1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový** > **projektu**.
+1. V sadě Visual Studio na **souboru** nabídce vyberte možnost **nový** > **projektu**.
 
-2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Desktop**.
+2. Rozbalte buď **Visual C#** nebo **jazyka Visual Basic** v levém podokně vyberte **Windows Desktop**.
 
-3. V prostředním podokně, vyberte **aplikace pro Windows Forms** typ projektu.
+3. V prostředním podokně, vyberte **aplikace Windows Forms** typ projektu.
 
-4. Název projektu **ReadingXML**a potom zvolte **OK**.
+4. Pojmenujte projekt **ReadingXML**a klikněte na tlačítko **OK**.
 
-   **ReadingXML** je vytvořen a přidán do projektu **Průzkumníku řešení**.
+   **ReadingXML** projekt je vytvořen a přidán do **Průzkumníka řešení**.
 
-## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Generování souboru XML načte do datové sady
+## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Generovat soubor XML pro čtení do datové sady
 
-Vzhledem k tomu, že Tento názorný postup se zaměřuje na čtení dat XML do datové sady, je k dispozici obsah souboru XML.
+Protože tento návod se zaměřuje na čtení dat XML do datové sady, je k dispozici obsah souboru XML.
 
 1.  Na **projektu** nabídce vyberte možnost **přidat novou položku**.
 
-2.  Vyberte **souboru XML**, název souboru **authors.xml**a potom vyberte **přidat**.
+2.  Vyberte **soubor XML**, pojmenujte soubor **authors.xml**a pak vyberte **přidat**.
 
    Soubor XML načte do návrháře a je připravený pro úpravy.
 
@@ -122,7 +122,7 @@ Vzhledem k tomu, že Tento názorný postup se zaměřuje na čtení dat XML do 
     </Authors_Table>
     ```
 
-4.  Na **soubor** nabídce vyberte možnost **uložit authors.xml**.
+4.  Na **souboru** nabídce vyberte možnost **uložit authors.xml**.
 
 ## <a name="create-the-user-interface"></a>Vytvoření uživatelského rozhraní
 
@@ -132,84 +132,84 @@ Uživatelské rozhraní pro tuto aplikaci se skládá z následujících akcí:
 
 -   A <xref:System.Windows.Forms.TextBox> ovládací prvek, který zobrazí schéma XML pro soubor XML.
 
--   Dva <xref:System.Windows.Forms.Button> ovládací prvky.
+-   Dvě <xref:System.Windows.Forms.Button> ovládacích prvků.
 
-    -   Jedno tlačítko načte soubor XML do datové sady a zobrazí se v <xref:System.Windows.Forms.DataGridView> ovládacího prvku.
+    -   Jedno tlačítko přečte soubor XML do datové sady a zobrazí ho v <xref:System.Windows.Forms.DataGridView> ovládacího prvku.
 
-    -   Druhé tlačítko extrahuje schéma z datové sady a prostřednictvím <xref:System.IO.StringWriter> zobrazí ho <xref:System.Windows.Forms.TextBox> ovládací prvek.
+    -   Druhé tlačítko extrahuje schéma z datové sady a prostřednictvím <xref:System.IO.StringWriter> zobrazí ho v <xref:System.Windows.Forms.TextBox> ovládacího prvku.
 
-### <a name="to-add-controls-to-the-form"></a>K přidávání ovládacích prvků formuláře
+### <a name="to-add-controls-to-the-form"></a>Chcete-li přidat ovládací prvky do formuláře
 
-1.  Otevřete `Form1` v zobrazení návrhu.
+1.  Otevřít `Form1` v návrhovém zobrazení.
 
-2.  Z **sada nástrojů**, přetáhněte ovládací prvky na formuláři:
+2.  Z **nástrojů**, přetáhněte následující ovládací prvky na formuláři:
 
-    -   Jeden <xref:System.Windows.Forms.DataGridView> ovládací prvek
+    -   Jeden <xref:System.Windows.Forms.DataGridView> ovládacího prvku
 
-    -   Jeden <xref:System.Windows.Forms.TextBox> ovládací prvek
+    -   Jeden <xref:System.Windows.Forms.TextBox> ovládacího prvku
 
-    -   Dva <xref:System.Windows.Forms.Button> ovládací prvky
+    -   Dvě <xref:System.Windows.Forms.Button> ovládacích prvků
 
 3.  Nastavte následující vlastnosti:
 
     |Ovládací prvek|Vlastnost|Nastavení|
     |-------------|--------------|-------------|
-    |`TextBox1`|**Víceřádkového výrazu**|`true`|
-    ||**Posuvníky**|**Svislý**|
+    |`TextBox1`|**Multiline**|`true`|
+    ||**Posuvníky**|**Svisle**|
     |`Button1`|**Jméno**|`ReadXmlButton`|
     ||**Text**|`Read XML`|
     |`Button2`|**Jméno**|`ShowSchemaButton`|
     ||**Text**|`Show Schema`|
 
-## <a name="create-the-dataset-that-receives-the-xml-data"></a>Vytvořit datovou sadu, která přijímá XML data
+## <a name="create-the-dataset-that-receives-the-xml-data"></a>Vytvořte datovou sadu, která přijímá XML data
 
-V tomto kroku vytvoříte novou datovou sadu s názvem `authors`. Další informace o datových sadách najdete v tématu [datové sady nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+V tomto kroku vytvoříte novou datovou sadu s názvem `authors`. Další informace o datových sadách najdete v tématu [datovou sadu nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-1.  V **Průzkumníku řešení**, vyberte zdrojový soubor pro **Form1**a pak vyberte **Návrhář zobrazení** tlačítko **Průzkumníku řešení** panel nástrojů.
+1.  V **Průzkumníka řešení**, vyberte zdrojový soubor pro **Form1**a pak vyberte **Návrhář zobrazení** tlačítko **Průzkumníka řešení** panel nástrojů.
 
-2.  Z [sada nástrojů, karta Data](../ide/reference/toolbox-data-tab.md), přetáhněte ji **datovou sadu** na **Form1**.
+2.  Z [panel nástrojů, karta Data](../ide/reference/toolbox-data-tab.md), přetáhněte **datovou sadu** do **Form1**.
 
-3.  V **přidat datovou sadu** dialogové okno, vyberte **Netypové datové sady**a potom vyberte **OK**.
+3.  V **přidat datovou sadu** dialogu **netypovou datovou sadu**a pak vyberte **OK**.
 
-     **DataSet1** se přidá do komponent.
+     **DataSet1** se přidá do panelu komponent.
 
-4.  V **vlastnosti** nastavte **název** a <xref:System.Data.DataSet.DataSetName%2A> vlastnosti`AuthorsDataSet`.
+4.  V **vlastnosti** okno, nastaveno **název** a <xref:System.Data.DataSet.DataSetName%2A> vlastnosti`AuthorsDataSet`.
 
-## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Vytvoření obslužné rutiny události pro čtení tohoto souboru XML do datové sady
+## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Vytvořte obslužnou rutinu události ke čtení souboru XML do datové sady
 
-**XML pro čtení** tlačítko načte soubor XML do datové sady. Potom nastaví vlastnosti pro <xref:System.Windows.Forms.DataGridView> ovládací prvek, který vazby k datové sadě.
+**XML pro čtení** tlačítko přečte soubor XML do datové sady. Potom nastaví vlastnosti pro <xref:System.Windows.Forms.DataGridView> ovládací prvek, který vázat na datovou sadu.
 
-1.  V **Průzkumníku řešení**, vyberte **Form1**a pak vyberte **Návrhář zobrazení** tlačítko **Průzkumníku řešení** panelu nástrojů.
+1.  V **Průzkumníka řešení**vyberte **Form1**a pak vyberte **Návrhář zobrazení** tlačítko **Průzkumníka řešení** nástrojů.
 
 2.  Vyberte **XML pro čtení** tlačítko.
 
-     **Editor kódu** otevře na `ReadXmlButton_Click` obslužné rutiny události.
+     **Editor kódu** se otevře na `ReadXmlButton_Click` obslužné rutiny události.
 
 3.  Zadejte následující kód do `ReadXmlButton_Click` obslužné rutiny události:
 
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
 
-4.  V `ReadXMLButton_Click` kód obslužné rutiny události, změny `filepath =` položku na správnou cestu.
+4.  V `ReadXMLButton_Click` kód obslužné rutiny událostí, změnit `filepath =` položky na správnou cestu.
 
-## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Vytvoření obslužné rutiny události pro zobrazení schématu do textového pole
+## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Vytvořte obslužnou rutinu události pro zobrazení schématu do textového pole
 
-**Zobrazit schématu** vytvoří tlačítko <xref:System.IO.StringWriter> objekt, který je vyplněn schéma a zobrazí se v <xref:System.Windows.Forms.TextBox>ovládacího prvku.
+**Zobrazit schéma** tlačítko vytvoří <xref:System.IO.StringWriter> objekt, který je vyplněna schématu a zobrazí se v <xref:System.Windows.Forms.TextBox>ovládacího prvku.
 
-1.  V **Průzkumníku řešení**, vyberte **Form1**a pak vyberte **Návrhář zobrazení** tlačítko.
+1.  V **Průzkumníka řešení**vyberte **Form1**a pak vyberte **Návrhář zobrazení** tlačítko.
 
-2.  Vyberte **zobrazit schématu** tlačítko.
+2.  Vyberte **zobrazit schéma** tlačítko.
 
-     **Editor kódu** otevře na `ShowSchemaButton_Click` obslužné rutiny události.
+     **Editor kódu** se otevře na `ShowSchemaButton_Click` obslužné rutiny události.
 
 3.  Vložte následující kód do `ShowSchemaButton_Click` obslužné rutiny události.
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
 
-## <a name="test-the-form"></a>Testování formuláře
+## <a name="test-the-form"></a>Testovací formulář
 
-Nyní můžete otestovat formuláře a ujistěte se, že se chová podle očekávání.
+Teď můžete otestovat formulář, abyste měli jistotu, že se chová podle očekávání.
 
 1.  Vyberte **F5** ke spuštění aplikace.
 
@@ -217,17 +217,17 @@ Nyní můžete otestovat formuláře a ujistěte se, že se chová podle očeká
 
      Ovládací prvek DataGridView zobrazí obsah souboru XML.
 
-3.  Vyberte **zobrazit schématu** tlačítko.
+3.  Vyberte **zobrazit schéma** tlačítko.
 
-     V textovém poli zobrazí schéma XML pro soubor XML.
+     Do textového pole zobrazuje schéma XML pro soubor XML.
 
 ## <a name="next-steps"></a>Další kroky
 
-Tento názorný postup se dozvíte, jaké základní informace o čtení souboru XML do datové sady, jakož i vytváření schématu na základě obsahu souboru XML. Zde jsou některé úlohy, které můžete využít, dále:
+Tento návod vás naučí základy čtení souboru XML do datové sady, jakož i vytváření schématu na základě obsahu souboru XML. Tady jsou některé úlohy, které vám může dělat:
 
--   Úpravy dat v datové sadě a zápis zpátky formátu XML. Další informace naleznete v tématu <xref:System.Data.DataSet.WriteXml%2A>.
+-   Úprava dat v datové sadě a zápis jej vrátit jako XML. Další informace naleznete v tématu <xref:System.Data.DataSet.WriteXml%2A>.
 
--   Úpravy dat v datové sadě a zapsat je do databáze.
+-   Úprava dat v datové sadě a vypsat do databáze.
 
 ## <a name="see-also"></a>Viz také:
 

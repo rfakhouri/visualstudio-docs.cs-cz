@@ -14,7 +14,7 @@
       href: quickstart-cpu-usage-aspnet.md
 - name: Kurzy
   items:
-    - name: Výkon aplikace profilu v sadě Visual Studio
+    - name: Profilování výkonu aplikace v sadě Visual Studio
       href: beginners-guide-to-performance-profiling.md
     - name: Využití paměti profilu v sadě Visual Studio
       href: memory-usage.md
@@ -26,9 +26,6 @@
   items:
     - name: Analýza využití procesoru
       href: cpu-usage.md
-      items:
-        - name: Analýza využití procesoru v univerzální aplikaci pro Windows (UPW)
-          href: analyze-cpu-usage-in-a-windows-universal-app.md
     - name: Analýza využití paměti
       href: analyze-memory-usage.md
       items:
@@ -44,16 +41,10 @@
       href: perftips.md
     - name: Analýza paměti jazyka JavaScript
       href: javascript-memory.md
-      items:
-        - name: 'Návod: Vyhledání nevrácené paměti (JavaScript)'
-          href: walkthrough-find-a-memory-leak-javascript.md
     - name: Analýza využití sítě
       href: network-usage.md
     - name: Analýza odezvy uživatelského rozhraní s kódem HTML
       href: html-ui-responsiveness.md
-      items:
-        - name: 'Návod: Zvýšení rychlosti odezvy uživatelského rozhraní (HTML)'
-          href: walkthrough-improving-ui-responsiveness-html.md
     - name: Použití prohlížeče výkonu
       href: performance-explorer.md
       items:

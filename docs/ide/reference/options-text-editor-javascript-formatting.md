@@ -15,14 +15,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 84c2f89aa578aa8b2c3c9ea4d033a5cff66a238e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950878"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38800617"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Možnosti, textový editor, JavaScript, formátování
-Použití **formátování** stránky **možnosti** dialogové okno nastavit možnosti formátování kódu v editoru kódu. Pro přístup k této stránce, na řádku nabídek zvolte **nástroje**, **možnosti**a potom rozbalte **textového editoru**, **JavaScript**a **Formátování**.
+Použití **formátování** stránku **možnosti** dialogové okno Nastavení možností pro formátování kódu v editoru kódu. Pro přístup k této stránce, na panelu nabídek zvolte **nástroje**, **možnosti**a potom rozbalte **textový Editor**, **JavaScript**a **Formátování**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -33,34 +33,34 @@ Použití **formátování** stránky **možnosti** dialogové okno nastavit mo�
 
 |Možnost|Popis|
 |------------|-----------------|
-|**Formát dokončí řádek na Enter**|Pokud je vybraná tato možnost, editoru kódu automaticky naformátuje řádek, když zvolíte klávesu Enter.|
-|**Formát dokončí příkaz po;**|Pokud je vybraná tato možnost, editoru kódu automaticky naformátuje řádek, když zvolíte klíč středníkem.|
-|**Formát dokončí blok po}**|Pokud je vybraná tato možnost, editoru kódu automaticky naformátuje řádek, když zvolíte uzavírací závorku klíč.|
-|**Formátování v vložení**|Pokud je vybraná tato možnost, přeformátuje editoru kódu při vkládání do editoru kódu. Editor používá aktuálně definovaných pravidel formátování. Pokud tuto možnost nevyberete, používá editor původní formátování vložit v kódu.|
+|**Formátovat dokončený řádek při stisknutí klávesy Enter**|Pokud je vybraná tato možnost, Editor kódu automaticky naformátuje řádek, pokud zvolíte klávesu Enter.|
+|**Formátovat dokončený příkaz při;**|Pokud je vybraná tato možnost, Editor kódu automaticky naformátuje řádek, pokud zvolíte klávesu středník.|
+|**Formátovat dokončený ený blok při}**|Pokud je vybraná tato možnost, Editor kódu automaticky naformátuje řádek, pokud zvolíte uzavírací složenou závorku klíč.|
+|**Formátovat při vložení**|Pokud je vybraná tato možnost, přeformátuje editoru kódu při vložení do editoru kódu. Editor používá aktuálně definovaných pravidel formátování. Pokud tato možnost není vybraná, používá editor původní formátování kódu vložili se změnami.|
 
 ## <a name="new-lines"></a>Nové řádky
- Tyto možnosti určují, jestli editoru kódu vloží otevřenou složenou závorku pro funkce a řídicí bloky na nový řádek.
+ Tyto možnosti určují, zda Editor kódu umístí na nový řádek levou složenou závorku funkce a řídicí bloky.
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
 
 |Možnost|Popis|
 |------------|-----------------|
-|**Umístěte otevřete závorek na nový řádek pro funkce**|Pokud je vybraná tato možnost, přesune editoru kódu otevřete závorek přidružené funkce, která se nový řádek.|
-|**Umístit na nový řádek pro řídicí bloky otevřete závorek**|Pokud je vybraná tato možnost, editoru kódu přesune otevřenou závorku přidružené řídicí blok (například `if` a `while` řízení bloky) na nový řádek.|
+|**Umístit levou složenou závorku na nový řádek pro funkce**|Pokud je vybraná tato možnost, Editor kódu přesune levou složenou závorku spojené s funkcí na nový řádek.|
+|**Umístit levou složenou závorku na nový řádek pro řídicí bloky**|Pokud je vybraná tato možnost, Editor kódu přesune levou složenou závorku, přidružené řídicí blok (například `if` a `while` řídicí bloky) na nový řádek.|
 
 ## <a name="spacing"></a>Mezery
- Tyto možnosti určují, jak jsou vloženy mezery v **zdroj**zobrazení.
+ Tyto možnosti určují, jak budou vkládány mezery v **zdroj**zobrazení.
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
 
 |Možnost|Popis|
 |------------|-----------------|
-|**Vložit mezeru po oddělovač čárkami**|Pokud je vybraná tato možnost, přidá editoru kódu mezeru po oddělovače čárkami.|
-|**Vložit mezeru po středník v pro příkaz**|Pokud je vybraná tato možnost, editoru kódu přidá mezeru po každé středník v prvním řádku `for` smyčky.|
-|**Vložit místo před a za binární operátory**|Pokud je vybraná tato možnost, editoru kódu přidá mezeru před a za binární operátory (například, +, -, & &, &#124; &#124;).|
-|**Vložit mezeru po klíčová slova v příkazech toku řízení**|Pokud je vybraná tato možnost, přidá editoru kódu mezeru po klíčová slova jazyka JavaScript v příkazech toku řízení.|
-|**Vložte mezeru po – klíčové slovo funkce pro anonymní funkce.**|Pokud je vybraná tato možnost, přidá mezeru po v editoru kódu `function` – klíčové slovo pro anonymní funkce.|
-|**Vložit mezeru po otevření a před jeho zavřením neprázdný závorky**|Pokud je vybraná tato možnost, editoru kódu přidá mezeru po levé závorky a před uzavírací kulatá závorka Pokud znaků neprázdné hodnoty se nacházejí v závorkách.|
+|**Vložit mezeru za čárku jako oddělovač**|Pokud je vybraná tato možnost, Editor kódu přidá mezeru za čárkou oddělovače.|
+|**Vložit mezeru za středník v příkazu for**|Pokud je vybraná tato možnost, Editor kódu přidá mezeru za každý středník v prvním řádku `for` smyčky.|
+|**Vložit mezeru před a za binární operátory**|Pokud je vybraná tato možnost, Editor kódu přidá mezeru před a za binární operátory (například, +, -, & & &#124; &#124;).|
+|**Vložit mezeru po klíčovém slovu v příkazech toku řízení**|Pokud je vybraná tato možnost, Editor kódu přidá mezeru za klíčová slova jazyka JavaScript v příkazech toku řízení.|
+|**Vložte mezeru za klíčové slovo function pro anonymní funkce.**|Pokud je vybraná tato možnost, Editor kódu přidá mezeru za `function` pro anonymní funkce.|
+|**Vložit mezeru za levou a před pravou závorku prázdné**|Pokud je vybraná tato možnost, editoru kódu přidá mezeru za levou (otevírací) a před pravou závorku. Pokud jsou k dispozici v rámci závorky prázdné znaky.|
 
 ## <a name="see-also"></a>Viz také
 

@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: úprava bodu Pivot 3D modelu'
+title: 'Postupy: Změna bodu otáčení 3D modelu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,41 +10,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a2d25029455f3e263013c4d6063ee7453a283b6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 352685e6b31aa688ff51f9564f141fa800c348d8
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747102"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977809"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Postupy: úprava bodu Pivot 3D modelu
+# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Postupy: Změna bodu otáčení 3D modelu
 
-Tento článek ukazuje, jak upravit pomocí editoru modelu *bodu otáčení* 3D modelu. Bod pivot je bod v prostor, který definuje matematické center objektu pro otáčení a škálování.
+Tento článek ukazuje, jak upravit pomocí Editoru modelů *bodu otáčení* 3D modelu. Bod otáčení je bod v prostoru, který definuje střed matematické objektu pro rotace a změnu měřítka.
 
 ## <a name="modify-the-pivot-point-of-a-3d-model"></a>Změna bodu otáčení 3D modelu
 
-Původ 3D model můžete upravit změnou jeho pivot bodu.
+Původ na 3D model můžete upravit tak, že upravíte jejich bodem otáčení.
 
-Ujistěte se, že **vlastnosti** okno a **sada nástrojů** jsou zobrazeny.
+Ujistěte se, že **vlastnosti** okno a **nástrojů** jsou zobrazeny.
 
-1.  Začátek s existující 3D modelu, například ten, který je popsaný v [postupy: vytvoření základního modelu 3D](../designers/how-to-create-a-basic-3-d-model.md).
+1.  Začátek s existující 3D model, jako je ten, který je popsaný v [postupy: vytvoření základního 3D modelu](../designers/how-to-create-a-basic-3-d-model.md).
 
-2.  Zadejte režim pivot. Na **modelu Editor režimu** nástrojů, vyberte **Pivot režimu** tlačítko aktivovat pivot režimu. Pole se kolem **Pivot režimu** tlačítko, které označuje, že editoru modelu je nyní v režimu pivot. V režimu pivot operace jako je například překlad ovlivňují pivot bodu objektu místo strukturu objektu v místa na světě.
+2.  Zadejte režim pivotu. Na **režim editoru modelů** nástrojů, zvolte **režim Pivotu** tlačítko aktivovat režim pivotu. Pole se zobrazí kolem **režim Pivotu** tlačítko k označení, že Editor modelů je nyní v režim pivotu. V režim pivotu ovlivňují operace, jako jsou překladu bodu otáčení objektu namísto strukturu objektů v prostoru světa.
 
-3.  Úprava pivot bodu objektu. V **vyberte** režimu, vyberte objekt a pak na **modelu prohlížeč** nástrojů, vyberte **přeložit** nástroj. Pole, který představuje bod pivot, zobrazí se na návrhovou plochu. Přesuňte pole k úpravě pivot bodu objektu.
+3.  Změna bodu otáčení objektu. V **vyberte** režimu, vyberte objekt a pak na **prohlížeč modelu** nástrojů, zvolte **přeložit** nástroj. Na návrhové ploše se objeví pole, které představuje bodu otáčení. Přesuňte pole a změna bodu otáčení objektu.
 
-     Přesunutím pole můžete přesunout pivot bod v všechny tři dimenze. Přeložit bodem pivot jednu osu, přesuňte na šipku, která odpovídá této osy. Pole a dvojice šipek, které změní na žlutou barvu, která má znamenat ose, která jsou ovlivněná překlad.
+     Díky přesunu do pole, můžete přesunout bodu otáčení v všechny tři dimenze. K překladu bodu otáčení jednu osu přemístěte tuto šipku, která odpovídá na této osy. Pole a šipky změní na žlutou barvou pro označení toho osy, která jsou ovlivněná překlad.
 
-     Bod pivot můžete také zadat pomocí **Pivot překlad** vlastnost **vlastnosti** okno.
+     Bod otáčení můžete také zadat pomocí **posunutí pozice Pivotu** vlastnost **vlastnosti** okna.
 
     > [!TIP]
-    > Můžete zobrazit účinku nový bod pivot otáčení objektu. Otočení, použijte **otočit** nástroje nebo změnit **otočení** vlastnost.
+    > Otočení objektu, můžete zobrazit vliv nového bodu otáčení. Otočení, použijte **otočit** nástroje nebo změnit **otočení** vlastnost.
 
 Tady je model, který má bod upravené pivot:
 
-![Model úklidové, který má bod upravené pivot](../designers/media/digit-modified-model.png)
+![Model, který má bod upravené otáčení domu](../designers/media/digit-modified-model.png)
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: vytvoření základní 3D modelu](../designers/how-to-create-a-basic-3-d-model.md)
+- [Postupy: Vytvoření základního 3D modelu](../designers/how-to-create-a-basic-3-d-model.md)
 - [Editor modelů](../designers/model-editor.md)
