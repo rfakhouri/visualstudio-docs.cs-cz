@@ -10,324 +10,324 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 02f0c8dd142f9517dcaef3a40d613d43b8e650a3
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
+ms.lasthandoff: 07/11/2018
 ms.locfileid: "36238337"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Nalezení změn kódu a další historie pomocí CodeLensu
 
-Codelensu umožňuje soustředit na svou práci při můžete zjistit, co se stalo s kódu&ndash;bez opuštění editoru. Můžete najít odkazy na kód, změny kódu, propojené chyby, pracovní položky, kód recenze a testování částí.
+CodeLens vám umožňuje soustředit se na svou práci při můžete zjistit, co se stalo se váš kód&ndash;bez opuštění editoru. Můžete najít odkazy na část kódu, změny kódu, propojené chyby, pracovní položky, revize kódu a testy jednotek.
 
 > [!NOTE]
-> Codelensu je k dispozici pouze v edicích Visual Studio Enterprise a Visual Studio Professional. Není k dispozici v aplikaci Visual Studio Community edition.
+> CodeLens je k dispozici pouze v edicích sady Visual Studio Enterprise a Visual Studio Professional. Není k dispozici v aplikaci Visual Studio Community edition.
 
-V tématu, kde a jak jednotlivé části kódu se používají ve vašem řešení:
+V tématu, kde a jak se ve vašem řešení používají jednotlivé části kódu:
 
-![Indikátory Codelensu v editoru kódu](../ide/media/codelens-overview.png)
+![Indikátory CodeLens v editoru kódu](../ide/media/codelens-overview.png)
 
-Kontaktujte tým o změnách kódu bez opuštění editoru:
+Obraťte se na váš tým o změny kódu bez opuštění editoru:
 
-![Codelensu - kontaktujte tým](../ide/media/codelens-contact-info.png)
+![Funkce CodeLens - vám poskytne tým](../ide/media/codelens-contact-info.png)
 
-Chcete-li zvolit indikátory, které chcete zobrazit, nebo k Codelensu vypnutí a zapnutí, přejděte na **nástroje** > **možnosti** > **textového editoru**  >  **Všechny jazyky** > **Codelensu**.
+Zvolte indikátory, které chcete zobrazit nebo vypněte a zapněte funkci CodeLens, přejděte na **nástroje** > **možnosti** > **textový Editor**  >  **Všechny jazyky** > **CodeLens**.
 
-## <a name="find-references-to-your-code"></a>Najít odkazy na váš kód
+## <a name="find-references-to-your-code"></a>Najít odkazy na kód
 
-Odkazy můžete najít v C# nebo kód jazyka Visual Basic.
+Najít odkazy v jazyce C# nebo kódu jazyka Visual Basic.
 
-1. Vyberte **odkazy** indikátoru, nebo klikněte na tlačítko **Alt**+**2**.
+1. Zvolte **odkazy** ukazatel nebo stisknutím klávesy **Alt**+**2**.
 
-   ![Odkazy na Codelensu](../ide/media/codelens-view-references.png)
+   ![Odkazy na funkce CodeLens](../ide/media/codelens-view-references.png)
 
    > [!NOTE]
-   > Pokud se bude zobrazovat indikátoru **0 odkazy**, budete mít žádné odkazy z kódu jazyka C# nebo Visual Basic. Však může existovat odkazy v ostatních položkách, jako *XAML* a *.aspx* soubory.
+   > Pokud se indikátor zobrazuje **0 odkazů**, nemáte žádné odkazy z kódu jazyka C# nebo Visual Basic. Však nemusí některé odkazy v jiné položky, jako *.xaml* a *.aspx* soubory.
 
-2. Chcete-li zobrazit kód odkazující myši přes odkaz v seznamu.
+2. Chcete-li zobrazit kód odkazující myši nad odkaz v seznamu.
 
-   ![Codelensu – odkaz funkce Náhled](../ide/media/codelens-peek-reference.png)
+   ![CodeLens - náhledu odkazu](../ide/media/codelens-peek-reference.png)
 
-3. Chcete-li otevřít soubor, který obsahuje odkaz na, dvakrát klikněte na odkaz.
+3. K otevření souboru, který obsahuje odkaz na, dvakrát klikněte na odkaz.
 
 ### <a name="code-maps"></a>Mapy kódu
 
-Zobrazit vztahy mezi kód a jeho odkazy [vytvoření mapy kódu](../modeling/map-dependencies-across-your-solutions.md). V místní nabídce Mapa kódu, vyberte **zobrazit všechny odkazy**.
+Chcete-li zobrazit vztahy mezi kódem a jeho odkazy [Vytvořte mapu kódu](../modeling/map-dependencies-across-your-solutions.md). V místní nabídce mapy kódu vyberte **zobrazit všechny odkazy**.
 
-![Codelensu – odkazy na mapě kódu](../ide/media/codelensmappedreferences.png)
+![Funkce CodeLens – odkazy na mapě kódu](../ide/media/codelensmappedreferences.png)
 
-## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>Najít změny v kódu
+## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>Vyhledat změny v kódu
 
-Zkontrolujte historii vašeho kódu a zjistěte, co se stalo s vašeho kódu. Nebo můžete zkontrolovat změny, než jste sloučeny do kódu, proto můžete lépe pochopit, jak změny v ostatní větve zůstanou mohou ovlivnit váš kód.
+Prozkoumejte historii vašeho kódu a zjistěte, co se stalo se váš kód. Nebo můžete zkontrolovat změny předtím, než se sloučí do kódu to vám umožní lépe pochopit změny v další větve, jak může ovlivnit váš kód.
 
 Potřebuješ:
 
-- Visual Studio Enterprise nebo Visual Studio Professional
+- Visual Studio Enterprise nebo Professional sady Visual Studio
 
 - Team Foundation Server 2013 nebo novější, Visual Studio Team Services nebo Git
 
-- [Skype pro firmy](/skypeforbusiness/), nebo Lync 2010 nebo novější, kontaktujte tým z editoru kódu
+- [Skype pro firmy](/skypeforbusiness/), nebo Lync 2010 nebo novější, ke kontaktování týmem z editoru kódu
 
-Pro kód C# nebo Visual Basic, který je uložená se Team Foundation verze ovládacího prvku (TFVC) nebo Git, získat Codelensu podrobnosti na úrovni třídy a metody (*kód úrovni element* indikátory). Pokud je úložiště Git hostovaná v TfGit, také získáte odkazy na pracovní položky sady TFS.
+Pro kód jazyka C# nebo Visual Basic, který se uloží spolu s Team Foundation verze ovládacího prvku (TFVC) nebo Git, získání podrobností funkce CodeLens na úrovni třídy a metody (*úrovni element kódu* ukazatele). Pokud v TfGit je hostitelem vašeho úložiště Git, budete mít také odkazy na pracovní položky sady TFS.
 
-![Kód úrovni elementu indikátory](../ide/media/codelens-element-level-indicators.png)
+![Indikátory na úrovni element Code](../ide/media/codelens-element-level-indicators.png)
 
-Pro soubor typy jiné než *.cs* nebo *VB*, získat podrobnosti o Codelensu pro celý soubor na jednom místě v dolní části okna (*souborů* indikátory).
+Pro soubor typy jiné než *.cs* nebo *.vb*, získání podrobností funkce CodeLens pro celý soubor na jednom místě v dolní části okna (*úrovni souboru* ukazatele).
 
-![Indikátory Codelensu úrovni souborů](../ide/media/almcodelensfilelevelindicators.png)
+![Indikátory CodeLens na úrovni souborů](../ide/media/almcodelensfilelevelindicators.png)
 
-### <a name="code-element-level-indicators"></a>Kód úrovni elementu indikátory
+### <a name="code-element-level-indicators"></a>Indikátory na úrovni element Code
 
-Kód úrovni elementu indikátory umožňuje sledovat, kdo změny kódu a jaké změny budou provedeny. Úroveň elementu indikátory kódu jsou k dispozici pro kód C# a Visual Basic.
+Kód indikátory na úrovni prvku vám umožní vidět, kdo ho změnil kód a jaké změny byly provedeny. Indikátory na úrovni prvku kódu jsou k dispozici pro kód jazyka C# a Visual Basic.
 
-Je to, co vidíte, že použijete Team Foundation verze ovládacího prvku (TFVC) v Team Foundation Server nebo Visual Studio Team Services:
+Je to, co se zobrazí při použití Team Foundation verze ovládacího prvku (TFVC) v Team Foundation Server nebo Visual Studio Team Services:
 
-![Codelensu: Get historie změn kódu v TFVC](../ide/media/codelens-code-changes.png)
+![CodeLens: Získat historii změn pro svůj kód v TFVC](../ide/media/codelens-code-changes.png)
 
-Výchozí hodnota je časové období posledních 12 měsíců. Pokud váš kód je uložený na serveru Team Foundation Server, můžete změnit časové období spuštěním [TFSConfig příkaz](/tfs/server/ref/command-line/tfsconfig-cmd) s [codeindex – příkaz](../ide/codeindex-command.md) a **/indexHistoryPeriod**příznak.
+Výchozí časové období se za posledních 12 měsíců. Pokud je váš kód uložen v sadě Team Foundation Server, můžete změnit časové období spuštěním [příkazu TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd) s [codeindex – příkaz](../ide/codeindex-command.md) a **/indexHistoryPeriod**příznak.
 
-Chcete-li zobrazit podrobné historie všechny změny, včetně těch, které z více než rokem, zvolte **zobrazit všechny změny souboru**:
+Chcete-li zobrazit podrobnou historii všech změn, včetně těch, které z více než rokem, zvolte **zobrazit všechny změny souborů**:
 
 ![Zobrazit všechny změny kódu](../ide/media/codelens-show-all-file-changes.png)
 
 **Historie** otevře se okno:
 
-![Okno historie pro všechny změny kódu](../ide/media/codelenscodechangeshistory.png)
+![Okno historie u všech změn kódu](../ide/media/codelenscodechangeshistory.png)
 
-Když jsou vaše soubory v úložišti Git a zvolíte indikátor element úrovni změn kódu, je to, co se zobrazí:
+Když jsou soubory v úložišti Git a zvolte indikátor změn na úrovni prvku kódu, tím se zobrazí:
 
-![Codelensu: Get historie změn kódu v úložišti Git](../ide/media/codelens-code-changes-git.png)
+![CodeLens: Získat historii změn pro svůj kód v Gitu](../ide/media/codelens-code-changes-git.png)
 
-### <a name="file-level-indicators"></a>Ukazatele na úrovni souborů
+### <a name="file-level-indicators"></a>Indikátory na úrovni souboru
 
-Najděte změny pro celý soubor na úrovni souborů značky v dolní části okna.
+Vyhledejte změny pro celý soubor v indikátory úrovni souboru v dolní části okna:
 
-![Codelensu: Získání kódu podrobnosti souboru](../ide/media/codelens-file-level.png)
+![CodeLens: Podrobnosti o souborech získat kód](../ide/media/codelens-file-level.png)
 
 > [!NOTE]
-> Indikátory úrovni souboru nejsou k dispozici pro soubory C# a Visual Basic.
+> Indikátory na úrovni souboru nejsou k dispozici pro soubory C# a Visual Basic.
 
-Chcete-li získat další informace o změně, klikněte pravým tlačítkem na danou položku. V závislosti na tom, jestli používáte TFVC nebo Git existuje možnost porovnat verzích souboru, zobrazení podrobností a sledovat sadu změn, získat vybrané verzi souboru a e-mailu autora tato změna. Některé z těchto podrobnosti se zobrazují v **Team Explorer**.
+Pokud chcete získat další podrobnosti o změnu, klikněte pravým tlačítkem na danou položku. V závislosti na tom, jestli používáte TFVC nebo Git jsou možnosti, jak porovnat verze souboru, zobrazit podrobnosti a sledovat sadu změn, získat vybranou verzi souboru a e-mail autora tuto změnu. Některé z těchto podrobností se zobrazují v **Team Exploreru**.
 
-Zobrazí se také, kdo časem změnit váš kód. To vám může pomoct najít vzory v změny vašeho týmu a vyhodnocení jejich dopad.
+Můžete také zobrazit, kdo ho změnil kódu v čase. To může pomoct najít vzory ve změnách vašeho týmu a posoudit jejich dopad.
 
-![Codelensu: Najdete v části historie změn kódu jako grafu.](../ide/media/codelens.png)
+![CodeLens: Zobrazit historii změn kódu jako graf](../ide/media/codelens.png)
 
-### <a name="find-changes-in-your-current-branch"></a>Najít změny v aktuální větvi
+### <a name="find-changes-in-your-current-branch"></a>Vyhledat změny v aktuální větvi
 
-Váš tým může mít více větví, například hlavní větve a podřízené vývoj větev, abyste snížili riziko nejnovější stabilní kódu.
+Váš tým může mít několik větví, například hlavní větev i podřízené větvení vývoje, aby se snížilo riziko narušení stabilní kód.
 
-![Codelensu: Najít, když byla součástí vašeho kódu podmínky](../ide/media/codelensfirstbranchconceptual.png)
+![CodeLens: Vyhledání, pokud byl váš kód rozvětvených](../ide/media/codelensfirstbranchconceptual.png)
 
-Můžete zjistit, kolik lidí změnit kódu a kolik změny byly provedeny v hlavní větve stisknutím **Alt**+**6**:
+Můžete zjistit, kolik lidí změnilo kódu a kolik změny byly provedeny v hlavní větvi stisknutím kombinace kláves **Alt**+**6**:
 
-![Codelensu: Kolik změny v větev najít](../ide/media/codelens-branch-changes.png)
+![CodeLens: Najdete kolik změn ve větvi](../ide/media/codelens-branch-changes.png)
 
-### <a name="find-when-your-code-was-branched"></a>Najít, když byla součástí vašeho kódu podmínky
+### <a name="find-when-your-code-was-branched"></a>Najít, pokud byl váš kód rozvětvených
 
-Najít, když byla součástí vašeho kódu podmínky, přejděte do kódu v pobočce podřízené. Pak vyberte **změny** indikátoru nebo klikněte na tlačítko**Alt**+**6**:
+K vyhledání, pokud byl váš kód rozvětvených, přejděte na svůj kód v podřízené větve. Vyberte **změny** ukazatel nebo stisknutím klávesy**Alt**+**6**:
 
-![Codelensu: Najít, když byla součástí vašeho kódu podmínky](../ide/media/codelens-first-branch.png)
+![CodeLens: Vyhledání, pokud byl váš kód rozvětvených](../ide/media/codelens-first-branch.png)
 
-### <a name="find-incoming-changes-from-other-branches"></a>Najít příchozí změny od jiných poboček
+### <a name="find-incoming-changes-from-other-branches"></a>Vyhledat příchozí změny další větve
 
-![Codelensu: Změny kódu v ostatní větve zůstanou najít](../ide/media/codelensbranchchangecheckinconceptual.png)
+![CodeLens: Vyhledat změny kódu v jiných větvích](../ide/media/codelensbranchchangecheckinconceptual.png)
 
-Příchozí změny si můžete prohlédnout. Na následujícím snímku obrazovky oprava chyb byl proveden v pobočce "Dev":
+Příchozí změny si můžete prohlédnout. Na následujícím snímku obrazovky oprava chyby proběhla ve větvi "Dev":
 
-![Codelensu: Změna zaškrtnutí do jiné větve](../ide/media/codelens-branch-changes-dev.png)
+![CodeLens: Změna zapsány do jiné větve](../ide/media/codelens-branch-changes-dev.png)
 
-Změny můžete zkontrolovat aniž byste museli opustit váš aktuální větev ("hlavní"):
+Aniž byste museli opustit aktuální větvi ("hlavní") můžete zkontrolovat změny:
 
-![Codelensu: Viz příchozí změnit z jiné větve](../ide/media/codelens-branch-changes-main.png)
+![CodeLens: Viz příchozí změna z jiné větve](../ide/media/codelens-branch-changes-main.png)
 
-### <a name="find-when-changes-got-merged"></a>Najít, když získali sloučit změny
+### <a name="find-when-changes-got-merged"></a>Najít, když máte změny sloučit
 
-Když získali sloučit změny, můžete zjistit, můžete určit, jaké změny jsou součástí větev:
+Můžete zobrazit, když máte změny sloučit, aby mohl určit, jaké změny jsou zahrnuté ve vaší větvi:
 
-![Codelensu - sloučené změny mezi větví](../ide/media/codelensbranchmergedconceptual.png)
+![CodeLens - sloučení změn mezi větvemi](../ide/media/codelensbranchmergedconceptual.png)
 
-Například kódu v hlavní pobočce má nyní oprava chyby z větve "Dev":
+Například váš kód v hlavní větvi teď má oprava chyby z větve "Dev":
 
-![Codelensu - sloučené změny mezi větví](../ide/media/codelens-branch-merged.png)
+![CodeLens - sloučení změn mezi větvemi](../ide/media/codelens-branch-merged.png)
 
-### <a name="compare-an-incoming-change-with-your-local-version"></a>Porovnání s místní verze příchozí změnit
+### <a name="compare-an-incoming-change-with-your-local-version"></a>Porovnání příchozí změny s místní verzí
 
-Porovnání s místní verze příchozí změnit stisknutím **Shift**+**F10**, nebo dvojitým kliknutím na sadu změn.
+Porovnání příchozí změny s místní verzí stisknutím kombinace kláves **Shift**+**F10**, nebo na něj poklikejte sadu změn.
 
-![Codelensu: Porovnání s místní příchozí změnit](../ide/media/codelens-branch-incoming-change-menu.png)
+![CodeLens: Porovnání příchozí změny s místní](../ide/media/codelens-branch-incoming-change-menu.png)
 
-### <a name="branch-icons"></a>Větev ikony
+### <a name="branch-icons"></a>Ikony větve
 
-Na ikonu v **větve** sloupec vám říká vztah větev do větve v práci.
+Na ikonu **větev** sloupec vám říká, jak se vztahuje větev do větve, ve které pracujete.
 
 |**Ikona**|**Tato změna pochází:**|
 |--------------|-----------------------------------------|
-|![Codelensu: Změnit z aktuální větve ikony](../ide/media/codelensbranchcurrenticon.png)|Aktuální větve|
-|![Codelensu: Změna z nadřazené větve ikony](../ide/media/codelensbranchparenticon.png)|Nadřazené větve|
-|![Codelensu: Změna z podřízené větve ikony](../ide/media/codelensbranchchildicon.png)|Podřízené větve|
-|![Codelensu: Změny z větve ikona sdílené](../ide/media/codelensbranchpeericon.png)|Větev peer|
-|![Codelensu: Změny z větve další tokeny ikony](../ide/media/codelensbranchfurtherawayicon.png)|Větev další rychle než nadřazené, podřízené nebo partnera|
-|![Codelensu: Sloučení z nadřazené ikony](../ide/media/codelensbranchmergefromparenticon.png)|Sloučení z větve nadřazené do podřízené větve|
-|![Codelensu: Sloučení z podřízené větve ikony](../ide/media/codelensbranchmergefromchildicon.png)|Sloučení z podřízené větve do nadřazené větve|
-|![Codelensu: Sloučení z nesouvisejících větve ikony](../ide/media/codelensbranchmergefromunrelatedicon.png)|Sloučení z nesouvisejících firemní pobočky (bez základu sloučení)|
+|![CodeLens: Změna z aktuální větve ikony](../ide/media/codelensbranchcurrenticon.png)|Aktuální větev|
+|![CodeLens: Změna z nadřazené větve ikony](../ide/media/codelensbranchparenticon.png)|Nadřazená větev|
+|![CodeLens: Změna z podřízené větve ikony](../ide/media/codelensbranchchildicon.png)|Podřízené větve|
+|![CodeLens: Změna z ikony sdílené větve](../ide/media/codelensbranchpeericon.png)|Sdílené větve|
+|![CodeLens: Změn z větve další tokeny ikony](../ide/media/codelensbranchfurtherawayicon.png)|Další větve jinam než nadřazený, podřízený nebo partnera|
+|![CodeLens: Sloučení z nadřazené ikony](../ide/media/codelensbranchmergefromparenticon.png)|Sloučení z větve nadřazené do podřízené větve|
+|![CodeLens: Sloučení z podřízené větve ikony](../ide/media/codelensbranchmergefromchildicon.png)|Sloučení z podřízené větve do nadřazené větve|
+|![CodeLens: Sloučení z větve nesouvisejících ikony](../ide/media/codelensbranchmergefromunrelatedicon.png)|Sloučení z nesouvisejících větve (nepodložené sloučení)|
 
 ## <a name="linked-work-items"></a>Propojené pracovní položky
 
-Hledání propojené pracovních položek výběrem **pracovní položky** indikátoru nebo stisknutím kombinace kláves **Alt**+**8**.
+Vyhledání propojených pracovních položek tak, že vyberete **pracovní položky** ukazatele nebo stisknutím klávesy **Alt**+**8**.
 
-![Codelensu - najít pracovní položky pro konkrétního kódu](../ide/media/codelens-work-items.png)
+![Funkce CodeLens – hledání pracovních položek pro konkrétní kód](../ide/media/codelens-work-items.png)
 
-## <a name="linked-code-reviews"></a>Zkontroluje propojené kódu
+## <a name="linked-code-reviews"></a>Revize kódu propojené
 
-Najít odkazovaný kód recenze výběrem **zkontroluje** indikátoru. Chcete-li použít klávesnici, podržte klávesu **Alt** klíče a potom stiskněte klávesu **šipku vlevo** nebo **šipku vpravo** přejděte možnosti ukazatele.
+Vyhledání propojeného kódu kontroly tak, že vyberete **kontroly** indikátoru. Použití klávesnice, podržte stisknutou **Alt** klíče a potom stiskněte klávesu **šipku vlevo** nebo **šipku vpravo** přejděte na možnosti indikátoru.
 
-![Zkontrolujte požadavky Codelensu - zobrazení kódu](../ide/media/codelens-code-reviews.png)
+![Kontrola žádostí o funkce CodeLens - zobrazení kódu](../ide/media/codelens-code-reviews.png)
 
 ## <a name="linked-bugs"></a>Propojené chyby
 
-Najít odkazovaný chyby výběrem **chyby** indikátoru nebo stisknutím kombinace kláves **Alt**+**7**.
+Vyhledání propojených chyb tak, že vyberete **chyby** ukazatele nebo stisknutím klávesy **Alt**+**7**.
 
-![Codelensu - nalézt chyby propojené s změn](../ide/media/codelens-bugs-changesets.png)
+![CodeLens - najít chyby spojené s sady změn](../ide/media/codelens-bugs-changesets.png)
 
-## <a name="contact-the-owner-of-an-item"></a>Obraťte se na vlastníka položky
+## <a name="contact-the-owner-of-an-item"></a>Otázka: Moje funkce CodeLens zobrazeny indikátory testu už v souboru při prvním otevření Moje řešení.
 
-Najít Autor položky výběrem **autoři** indikátoru nebo stisknutím kombinace kláves **Alt**+**5**.
+Najděte autora položky výběrem indikátoru **autorů** nebo stisknutím klávesy **Alt**+**5**.
 
-![Obraťte se na vlastníka položky](../ide/media/codelens-contact-item-owner.png)
+![Otázka: Moje funkce CodeLens zobrazeny indikátory testu už v souboru při prvním otevření Moje řešení.](../ide/media/codelens-contact-item-owner.png)
 
-Otevřete místní nabídku pro položku, kterou chcete zobrazit kontaktní možnosti. Pokud máte Lync nebo Skype pro firmy nainstalovaná, zobrazí se tyto možnosti:
+Odpověď: znovu sestavit projekt získat indikátory CodeLens testu načíst v souboru. Kvůli zvýšení výkonu se Visual Studio už načítá informace o zdroji pro indikátory testu, když jsou načteny soubory s kódem.
 
-![Obraťte se na možnosti pro položku](../ide/media/codelens-item-contact-menu.png)
+![Indikátory testu jsou načteny po sestavení nebo přejděte na test na něj poklikejte na něj v Průzkumníka testů.](../ide/media/codelens-item-contact-menu.png)
 
-## <a name="associated-unit-tests"></a>Testování částí přidružený
+## <a name="associated-unit-tests"></a>Funkce editoru kódu
 
-Testy jednotek, které existují můžete zjistit kódu C# nebo Visual Basic bez otevírání **Průzkumníka testů**.
+Může zjišťovat testy jednotek, které existují bez spuštění kódu jazyka C# nebo Visual Basic **Průzkumník testů**.
 
-1. Přejděte do kódu aplikace, který je spojen [jednotka testovacího kódu](../test/unit-test-your-code.md).
+1. Přejděte do aplikace kód, který je spojen [kód testu jednotek](../test/unit-test-your-code.md).
 
-2. Pokud máte ještě není, sestavte aplikaci načíst indikátory testovací Codelensu. Zajistěte, aby [zjišťování podle integrovaný sestavení](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) je zapnutý.
+2. Pokud nemáte, sestavení aplikace načíst indikátory CodeLens na test. Ujistěte se, že [zjišťování z vytvořených sestavení](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) zapnutý.
 
-3. Zkontrolujte testy pro kód stisknutím **Alt**+**3**.
+3. Zkontrolujte testy Code stisknutím kombinace kláves **Alt**+**3**.
 
-     ![Zvolte Codelensu - stav testu v editoru kódu](../ide/media/codelens-choose-test-indicator.png)
+     ![Zvolte CodeLens – stav testu v editoru kódu](../ide/media/codelens-choose-test-indicator.png)
 
-4. Pokud se zobrazí ikona upozornění ![Ikona upozornění](../ide/media/codelenstestwarningicon.png), testy nebyly spustit ještě je proto spustit.
+4. Pokud se zobrazí výstražná ikona ![Ikona upozornění](../ide/media/codelenstestwarningicon.png), testy nebyly spustit ještě tak jejich spuštění.
 
-     ![Codelensu – testování částí zobrazení není ještě spuštěna](../ide/media/codelens-tests-not-yet-run.png)
+     ![CodeLens – zobrazení testů jednotek není ještě spuštěna](../ide/media/codelens-tests-not-yet-run.png)
 
-5. Ke kontrole testovací definice, dvakrát klikněte na položku testu v okně Codelensu ukazatele k otevření souboru kódu v editoru.
+5. Zkontrolujte definici testu, dvakrát klikněte na položku testů v okno indikátor CodeLens v editoru otevřete soubor kódu.
 
-     ![Codelensu - přechod na definici testů jednotek](../ide/media/codelens-unit-test-definition.png)
+     ![Funkce CodeLens - přejít k definici testu jednotek](../ide/media/codelens-unit-test-definition.png)
 
-6. A zkontrolovat výsledky test, zvolte indikátor stavu testu (![ikona selhání testu](../ide/media/codelenstestfailedicon.png) nebo ![test proběhl ikonu](../ide/media/codelenstestpassedicon.png)), nebo stiskněte klávesu **Alt**+**1**.
+6. Chcete-li zobrazit výsledky testu, zvolte indikátor stavu testu (![ikona selhání testu](../ide/media/codelenstestfailedicon.png) nebo ![test prošel ikonu](../ide/media/codelenstestpassedicon.png)), nebo stiskněte klávesu **Alt**+**1**.
 
-     ![Codelensu – viz výsledků testů jednotek](../ide/media/codelens-unit-test-result.png)
+     ![Funkce CodeLens – viz výsledky testů jednotek](../ide/media/codelens-unit-test-result.png)
 
-7. Pokud chcete zobrazit, kolik lidí změnit tento test, který změnil tento test nebo byly provedeny změny kolik tento test [najít váš kód historie](#find-code-history) a propojené položky.
+7. Pokud chcete zobrazit, kolik lidí změnilo tento test, kdo změnil nebo kolik změny byly provedeny s tímto testem [najít historii vašeho kódu](#find-code-history) a propojené položky.
 
 ## <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
-Chcete-li vybrat indikátory pomocí klávesnice, stiskněte a podržte **Alt** klíče zobrazit související číslo klíče a pak stiskněte klávesu číslo, které odpovídá indikátoru, kterou chcete vybrat.
+Chcete-li vybrat ukazatele pomocí klávesnice, stiskněte a podržte **Alt** klíč k zobrazení souvisejících počet klíčů a potom stiskněte klávesu číslo, které odpovídá ukazatele, které chcete vybrat.
 
 ![Čísla přístup klávesnice](../ide/media/codelens-alt-keys.png)
 
 > [!NOTE]
-> Chcete-li vybrat **zkontroluje** indikátoru, podržte stisknutou klávesu **Alt** při pomocí klávesy se šipkami vlevo a vpravo procházejte.
+> Vyberte **kontroly** ukazatel, podržte stisknutou klávesu **Alt** při použití klávesy šipka doleva a doprava pro navigaci.
 
 ## <a name="q--a"></a>Dotazy a odpovědi
 
-### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>Otázka: jak zapnout Codelensu nebo vypnout, nebo zvolte které indikátory zobrazíte?
+### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>Otázka: jak funkce CodeLens zapnutí nebo vypnutí, nebo zvolte které indikátory zobrazíte?
 
-**Odpověď:** můžete zapnout indikátory nebo vypnout, s výjimkou odkazy na ukazatele. Přejděte na **nástroje** > **možnosti** > **textového editoru** > **všechny jazyky**  >  **Codelensu**.
+**Odpověď:** posunete ukazatele nebo vypnutí, s výjimkou indikátor odkazů. Přejděte na **nástroje** > **možnosti** > **textový Editor** > **všechny jazyky**  >  **CodeLens**.
 
-Když na značky jsou zapnuté, můžete také otevřít možnosti Codelensu z ukazatele.
+Když jsou indikátory zapnuté, můžete také otevřít možnosti funkce CodeLens z indikátorů.
 
-![Codelensu - indikátory zapnout nebo vypnout](../ide/media/codelensturnoffonindicatorsfromcode.png)
+![CodeLens - indikátory zapnutí nebo vypnutí](../ide/media/codelensturnoffonindicatorsfromcode.png)
 
-Zapněte Codelensu souborů indikátory zapnout a vypnout pomocí ikony dvojitou v dolní části okna editoru.
+Indikátory CodeLens na úrovni souborů zapněte a vypnout pomocí ikony šipky v dolní části okna editoru.
 
-![Zapnout indikátory souborů zapnout a vypnout](../ide/media/codelensfilelevelonandoff.png)
+![Zapnutí a vypnutí indikátory na úrovni souboru](../ide/media/codelensfilelevelonandoff.png)
 
-### <a name="q-where-is-codelens"></a>Otázka: kde je Codelensu?
+### <a name="q-where-is-codelens"></a>Otázka: kde je funkce CodeLens?
 
-**Odpověď:** Codelensu se zobrazí v kódu jazyka C# a Visual Basic na úrovni metodu, třídu, indexer a vlastnost. Codelensu se zobrazí na úrovni souborů pro všechny ostatní typy souborů.
+**Odpověď:** CodeLens se zobrazí v kódu jazyka C# a Visual Basic na úrovni metody, třídy, indexerů a vlastnost. CodeLens se zobrazí na úrovni pro všechny ostatní typy souborů.
 
-- Ujistěte se, že je zapnutý Codelensu. Přejděte na **nástroje** > **možnosti** > **textového editoru** > **všechny jazyky**  >  **Codelensu**.
+- Ujistěte se, že je zapnutá funkce CodeLens. Přejděte na **nástroje** > **možnosti** > **textový Editor** > **všechny jazyky**  >  **CodeLens**.
 
-- Pokud váš kód je uložený v sadě TFS, ujistěte se, že kód indexování zapnutá pomocí [codeindex – příkaz](../ide/codeindex-command.md) s [příkazu TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
+- Pokud je váš kód uložen v sadě TFS, ujistěte se, jestli indexování kódu je zapnutá pomocí [codeindex – příkaz](../ide/codeindex-command.md) s [příkaz TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
 
-- Indikátory související s aplikací TFS se zobrazí pouze v případě, že jsou pracovní položky propojeny s kódem a máte oprávnění otevírat propojené pracovní položky. Potvrďte, že máte [team oprávnění členů](/vsts/work/scale/multiple-teams).
+- Indikátory související s aplikací TFS se zobrazí pouze v případě, že jsou pracovní položky propojeny s kódem a máte oprávnění otevírat propojené pracovní položky. Potvrďte, že máte [oprávnění člena týmu](/vsts/work/scale/multiple-teams).
 
-- Indikátory test jednotky se nezobrazí, když kód aplikace nemá testování částí. Indikátory stavu testu se automaticky zobrazí v projektech testů. Pokud znáte kód aplikace má testování částí, že testovací indikátory nezobrazí, zkuste jej sestavit řešení (**Ctrl**+**Shift**+**B**).
+- Pokud kód aplikace nemá testování částí, nejsou zobrazeny indikátory testu jednotek. Indikátory stavu testu se automaticky zobrazí v projektech testů. Pokud víte, že váš kód aplikace má testování částí, ale nejsou zobrazeny indikátory testu, zkuste sestavit řešení (**Ctrl**+**Shift**+**B**).
 
-### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Otázka: Proč nevidím v pracovní položce. podrobnosti pro potvrzení?
+### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Otázka: Proč nevidím podrobnosti pracovní položky pro potvrzení změn?
 
-**Odpověď:** této situaci může dojít, protože Codelensu nelze nalézt pracovních položek v sadě TFS. Zkontrolujte, že jste připojení k týmovému projektu, který má těch, které pracovní položky, a zda máte oprávnění k zobrazení těch, které pracovní položky. Podrobnosti o položkách pracovní nemusí také nezobrazovat Pokud popis potvrzení má nesprávné informace o ID pracovní položky v sadě TFS.
+**Odpověď:** příčinou může být funkce CodeLens nelze najít pracovní položky v TFS. Zkontrolujte, že jste připojeni k týmovému projektu, který má ty pracovní položky, a zda máte oprávnění k zobrazení ty pracovní položky. Podrobnosti o pracovní položce nemusí také nezobrazovat Pokud popis potvrzení obsahuje nesprávné informace o ID pracovních položek v sadě TFS.
 
 ### <a name="q-why-dont-i-see-the-skype-indicators"></a>Otázka: Proč nevidím indikátory Skype?
 
-**Odpověď:** indikátory Skype se nezobrazí, pokud nejste do Skype pro firmy, není k dispozici je nainstalována, nebo nemáte podporovanou konfiguraci. Však může i dál posílat e-mailu:
+**Odpověď:** nejsou zobrazeny indikátory Skype, jestliže nejste přihlášeni ke Skypu pro firmy, nemáte ji nainstalovánu nebo nemáte podporovanou konfiguraci. Stále však můžete odesílat e-mailu:
 
-![Codelensu - obraťte se na vlastníka změn prostřednictvím e-mailu](../ide/media/codelenscodesendmailchangesetnolync1.png)
+![Funkce CodeLens – vlastník sady změn kontaktujte e-mailem](../ide/media/codelenscodesendmailchangesetnolync1.png)
 
-**Které Skype a Lync konfigurace jsou podporovány?**
+**Které konfigurace Skypu a Lync jsou podporovány?**
 
 - Skype pro firmy (32bitová nebo 64bitová verze)
 
-- Aplikace Lync 2010 nebo novější samostatně (32bitová nebo 64bitová verze), ale aplikace Lync 2013 Basic není s Windows 8.1
+- Lync 2010 nebo novější samostatně (32bitová verze nebo 64bitovou), ale ne Lync Basic 2013 s Windows 8.1
 
-Codelensu nepodporuje s různými verzemi aplikace Lync nebo nainstalovat Skype. Nemusí být lokalizovaný pro všechny její lokalizované verze sady Visual Studio.
+Funkce CodeLens nepodporuje existenci různých verzí aplikace Lync nebo Skype nainstalované. Nemusí být lokalizována pro všechny lokalizované verze sady Visual Studio.
 
-### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>Otázka: jak změnit písmo a barvy u Codelensu?
+### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>Otázka: Jak mohu změnit písmo a barvu funkce codelens?
 
-**Odpověď:** přejít na **nástroje** > **možnosti** > **prostředí** > **písma a barev**.
+**Odpověď:** přejít na **nástroje** > **možnosti** > **prostředí** > **písma a barvy**.
 
-![Codelensu - změnit nastavení písma a barvy](../ide/media/codelensoptionsfontscolorssettings.png)
+![Funkce CodeLens - změnit nastavení písma a barvy](../ide/media/codelensoptionsfontscolorssettings.png)
 
 Použití klávesnice:
 
-1. Stiskněte klávesu **Alt**+**T**+**O** otevřete **možnosti** dialogové okno.
+1. Stisknutím klávesy **Alt**+**T**+**O** otevřít **možnosti** dialogové okno.
 
-2. Stiskněte klávesu **šipka nahoru** nebo **šipka dolů** přejít na **prostředí** uzlu, stiskněte **šipka doleva** rozbalte uzel.
+2. Stisknutím klávesy **šipka nahoru** nebo **šipka dolů** přejdete **prostředí** uzlu, stiskněte klávesu **šipka vlevo** rozbalte uzel.
 
-3. Stiskněte klávesu **šipka dolů** přejít na **písma a barev**.
+3. Stisknutím klávesy **šipka dolů** přejdete na **písma a barvy**.
 
-4. Stiskněte klávesu **kartě** přejít na **zobrazit nastavení pro** seznamu a potom stiskněte klávesu **šipka dolů** vyberte **Codelensu**.
+4. Stisknutím klávesy **kartu** přejdete **zobrazit nastavení pro** seznamu a potom stiskněte klávesu **šipka dolů** vyberte **CodeLens**.
 
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Otázka: Lze přesunout pohotové zobrazení funkce CodeLens?
 
-**Odpověď:** Ano, zvolte ![ikonu ukotvení](../ide/media/codelensdockwindow.png) chcete ukotvit Codelensu jako okna.
+**O:** Ano, zvolte ![Dock ikonu](../ide/media/codelensdockwindow.png) k dokování CodeLens jako okna.
 
-![Ukotvení tlačítka v okně indikátor Codelensu](../ide/media/codelensselectdockwindow.png)
+![Ukotvit tlačítka v okně indikátor CodeLens](../ide/media/codelensselectdockwindow.png)
 
-![Okno ukotveného Codelensu odkazy](../ide/media/codelensreferencesdockedwindow.png)
+![Ukotvené odkazy CodeLens okno](../ide/media/codelensreferencesdockedwindow.png)
 
 ### <a name="q-how-do-i-refresh-the-indicators"></a>Otázka: Jak mohu aktualizovat indikátory?
 
 **Odpověď:** to závisí na ukazatele:
 
-- **Odkazy na**: Tento ukazatel se automaticky aktualizuje, když se změní kód. Pokud **odkazy** indikátor ukotven jako samostatné okno, obnovte indikátoru výběrem **aktualizovat**:
+- **Odkazy na**: Tento indikátor se aktualizuje automaticky při změně kódu. Pokud **odkazy** indikátor je ukotven jako samostatné okno, aktualizovat tak, že vyberete indikátoru **aktualizovat**:
 
-     ![Aktualizujte tlačítko v odkazech na Codelensu](../ide/media/codelensviewreferencesdocked.png)
+     ![Aktualizovat odkazy CodeLens](../ide/media/codelensviewreferencesdocked.png)
 
-- **Tým**: aktualizovat tyto ukazatele výběrem **aktualizovat indikátory Team Codelensu** v místní nabídce:
+- **Tým**: tyto indikátory aktualizovat tak, že vyberete **aktualizovat indikátory týmu funkce CodeLens** v místní nabídce:
 
-     ![Aktualizujte položku nabídky indikátory Team Codelensu](../ide/media/codelensrefreshindicatorsfromcode.png)
+     ![Aktualizujte indikátory týmu funkce CodeLens položky nabídky](../ide/media/codelensrefreshindicatorsfromcode.png)
 
-- **Test**: [najít testování částí kódu](#Find-unit-tests-for-your-code) aktualizace **Test** indikátoru.
+- **Test**: [najít testy jednotek pro kód](#Find-unit-tests-for-your-code) aktualizovat **Test** indikátoru.
 
 ### <a name="q-whats-local-version"></a>Otázka: co je "Místní verze"?
 
-**Odpověď:** **místní verze** šipku odkazuje na poslední sadu změn ve vaší místní verzi souboru. Pokud je serveru novější změn, se objeví nad nebo pod **místní verze** šipku, v závislosti na pořadí slouží k řazení změn.
+**Odpověď:** **místní verze** šipka ukazuje na poslední sady změn ve vaší místní verzi souboru. Pokud na serveru existují novější sady změn, zobrazují se nad nebo pod **místní verze** šipku, v závislosti na pořadí použitém k řazení sady změn.
 
-### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Otázka: je možné spravovat, jak Codelensu zpracuje kód pro zobrazení historie a propojené položky?
+### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Dotaz: lze spravovat, jak funkce CodeLens zpracovává kód k zobrazení historie a propojené položky?
 
-**Odpověď:** Ano. Pokud váš kód v sadě TFS, použijte [codeindex – příkaz](../ide/codeindex-command.md) s [příkazu TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
+**Odpověď:** Ano. Pokud je váš kód v TFS, použijte [codeindex – příkaz](../ide/codeindex-command.md) s [příkaz TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
 
-### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Otázka: Moje ukazatele testovací Codelensu se nebude zobrazovat v souboru při prvním otevření mém řešení. Jak je můžete je načíst?
+### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Otázka: Moje funkce CodeLens zobrazeny indikátory testu už v souboru při prvním otevření Moje řešení. Jak je můžete je načíst?
 
-**Odpověď:** znovu sestavte projekt získat indikátory testovací Codelensu načíst v souboru. Zajistěte, aby [zjišťování podle integrovaný sestavení](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) je zapnutý. Pokud chcete zvýšit výkon, Visual Studio už načte informace o zdroji pro test indikátory při soubory kódu jsou načtena. Test indikátory jsou načtena po sestavení, nebo když přejdete k testu dvojitým kliknutím na něm v **testování Explorer**.
+**Odpověď:** znovu sestavit projekt získat indikátory CodeLens testu načíst v souboru. Ujistěte se, že [zjišťování z vytvořených sestavení](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) zapnutý. Kvůli zvýšení výkonu se Visual Studio už načítá informace o zdroji pro indikátory testu, když jsou načteny soubory s kódem. Indikátory testu jsou načteny po sestavení nebo přejděte na test na něj poklikejte na něj v **Průzkumníka testů**.
 
 ## <a name="see-also"></a>Viz také:
 
