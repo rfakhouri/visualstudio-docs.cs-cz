@@ -9,36 +9,36 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d66d1027358e173f0ee86c4c799347b555196392
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: ad01352b9b5376d1a55946a7c5da9029b52fd064
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303065"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978408"
 ---
-# <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek pomocí *.runsettings* souboru
+# <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek s použitím *s příponou .runsettings* souboru
 
-Testování částí v sadě Visual Studio můžete nakonfigurovat pomocí *.runsettings* souboru. Například můžete změnit verzi rozhraní .NET Framework, na kterém testy spouštějí, adresář pro výsledky testů nebo data shromážděná během spuštění testu.
+Testování částí v sadě Visual Studio můžete konfigurovat pomocí *s příponou .runsettings* souboru. Například můžete změnit verzi rozhraní .NET Framework, na kterém jsou testy spuštěny, adresář pro výsledky testů nebo data, která je shromážděn v rámci testovacího běhu.
 
-Soubory parametrů běhu jsou volitelné. Pokud nevyžadujete žádnou zvláštní konfiguraci, nepotřebujete *.runsettings* souboru. Nejběžnější použití *.runsettings* soubor je k přizpůsobení [analýza pokrytí kódu](../test/customizing-code-coverage-analysis.md).
+Soubory parametrů běhu jsou volitelné. Pokud nevyžadují žádnou zvláštní konfiguraci, není nutné *s příponou .runsettings* souboru. Nejběžnější použití nástroje *s příponou .runsettings* soubor je pro přizpůsobení [analýza pokrytí kódu](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="specify-a-run-settings-file"></a>Zadejte soubor parametrů běhu
 
-Spustit soubory můžete použít ke konfiguraci testy, které jsou spouštěny z příkazového řádku v prostředí IDE, nebo v nastavení [sestavení pracovního postupu](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) pomocí Visual Studio Team Services (VSTS) nebo Team Foundation Server (TFS).
+Soubory můžete použít ke konfiguraci testů, které jsou spouštěny z parametrů spuštění [příkazového řádku](vstest-console-options.md), v integrovaném vývojovém prostředí nebo v [sestavení pracovního postupu](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) pomocí Visual Studio Team Services (VSTS) nebo Team Foundation Server (TFS).
 
-### <a name="specify-a-run-settings-file-in-the-ide"></a>Zadejte soubor parametrů běhu v prostředí IDE
+### <a name="specify-a-run-settings-file-in-the-ide"></a>Zadejte soubor parametrů spuštění v integrovaném vývojovém prostředí
 
-Vyberte **Test** > **nastavení testu** > **vyberte soubor s nastavením testu** a pak vyberte *.runsettings*souboru. Soubor se zobrazí na **nastavení testu** nabídce a můžete vybrat nebo ji zrušte. Po výběru souboru parametrů běhu platí vždy, když vyberete **analýza pokrytí kódu**.
+Vyberte **testovací** > **nastavení testu** > **vybrat soubor nastavení testu** a pak vyberte *s příponou .runsettings*souboru. Soubor se zobrazí na **nastavení testu** nabídky kde můžete vybrat nebo výběr zrušte. Po výběru souboru parametrů běhu platí vždy, když vyberete **analyzovat pokrytí kódu**.
 
-![Vyberte nabídku souborů nastavení testů v sadě Visual Studio](media/select-test-settings-file.png)
+![Vyberte nabídky Soubor nastavení testu v sadě Visual Studio](media/select-test-settings-file.png)
 
-### <a name="specify-a-run-settings-file-at-the-command-line"></a>Zadejte nastavení spuštění soubor na příkazovém řádku
+### <a name="specify-a-run-settings-file-at-the-command-line"></a>Zadejte soubor parametrů běhu na příkazovém řádku
 
-Ke spuštění testů z příkazového řádku, použijte *vstest.console.exe* a určete soubor nastavení pomocí **/Settings** parametr.
+Ke spuštění testů z příkazového řádku, použijte *vstest.console.exe* a zadejte soubor s nastaveními pomocí **/Settings** parametru.
 
 1. Spusťte příkazový řádek pro vývojáře v sadě Visual Studio:
 
-   V systému Windows **spustit** nabídce zvolte **Visual Studio 2017** > **příkazový řádek vývojáře pro VS 2017**.
+   V Windows **Start** nabídce zvolte **Visual Studio 2017** > **Developer Command Prompt for VS 2017**.
 
 2. Zadejte příkaz podobný:
 
@@ -46,25 +46,27 @@ Ke spuštění testů z příkazového řádku, použijte *vstest.console.exe* a
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
    ```
 
-## <a name="customize-tests"></a>Přizpůsobit testy
+Další informace najdete v tématu [možnosti příkazového řádku VSTest.Console.exe](vstest-console-options.md).
 
-Chcete-li přizpůsobit testy pomocí *.runsettings* souboru, postupujte takto:
+## <a name="customize-tests"></a>Přizpůsobení testů
+
+Přizpůsobení testů pomocí *s příponou .runsettings* souborů, postupujte podle těchto kroků:
 
 1. Přidání souboru XML do řešení sady Visual Studio a uložte ho jako *test.runsettings*.
 
    > [!TIP]
-   > Název souboru není důležité, tak dlouho, dokud pomocí rozšíření *.runsettings*.
+   > Název souboru není důležité, za předpokladu, pomocí rozšíření *s příponou .runsettings*.
 
-1. Nahraďte obsah souboru XML z příkladu, který následuje a přizpůsobit podle potřeby.
+1. Nahraďte obsah souboru XML z příkladu, který následuje a podle potřeby upravte.
 
-1. Na **Test** nabídce zvolte **nastavení testu** > **vyberte soubor s nastavením testu**. Vyhledejte *.runsettings* souboru, kterou jste vytvořili a potom vyberte **OK**.
+1. Na **testovací** nabídce zvolte **nastavení testu** > **vybrat soubor nastavení testu**. Přejděte *s příponou .runsettings* souboru, kterou jste vytvořili a pak vyberte **OK**.
 
    > [!TIP]
-   > Můžete vytvořit více než jeden *.runsettings* souborů ve vašem řešení a vyberte jednu jako soubor active testovací nastavení podle potřeby.
+   > Můžete vytvořit více než jeden *s příponou .runsettings* souborů ve vašem řešení a vyberte jednu z nich jako aktivní testovací soubor nastavení podle potřeby.
 
-## <a name="example-runsettings-file"></a>Příklad *.runsettings* souboru
+## <a name="example-runsettings-file"></a>Příklad *s příponou .runsettings* souboru
 
-Následující kód XML zobrazí obsah typické *.runsettings* souboru. Každý prvek souboru je volitelný, protože má výchozí hodnotu.
+Následující kód XML zobrazuje obsah typické *s příponou .runsettings* souboru. Každý prvek souboru je volitelný, protože má výchozí hodnotu.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -142,11 +144,11 @@ Následující kód XML zobrazí obsah typické *.runsettings* souboru. Každý 
 </RunSettings>
 ```
 
-## <a name="elements-of-a-runsettings-file"></a>Elementy *.runsettings* souboru
+## <a name="elements-of-a-runsettings-file"></a>Prvky *s příponou .runsettings* souboru
 
-V následujících podrobností elementy *.runsettings* souboru.
+Následující části podrobně popisují prvky *s příponou .runsettings* souboru.
 
-### <a name="run-configuration"></a>Spuštění nástroje Konfigurace
+### <a name="run-configuration"></a>Konfigurace spuštění
 
 ```xml
 <RunConfiguration>
@@ -164,16 +166,16 @@ V následujících podrobností elementy *.runsettings* souboru.
 |Uzel|Výchozí|Hodnoty|
 |----------|-------------|------------|
 |**ResultsDirectory**||Adresář, kde jsou umístěny výsledky testů.|
-|**targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Toto nastavení určuje verzi rozhraní test jednotky použito k vyhledávání a spustit testy. Může se lišit od verze platformy .NET, kterou jste zadali ve vlastnostech sestavení projektu testování částí.|
+|**Parametr targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Toto nastavení určuje verzi rozhraní testování částí pro zjištění a provedení testů. Může se lišit od verze platformy .NET, kterou jste zadali ve vlastnostech sestavení projektu testování částí.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Jednu nebo více cest k adresáři, kde se nachází TestAdapters|
-|**MaxCpuCount**|1|Tato nastavení ovládacích prvků stupeň spuštění paralelní testu při testování částí spuštěné, pomocí jader dostupných na počítači. Spouštěcí modul testu se spustí jako odlišné proces v každém dostupné core a poskytuje každý základní kontejner s testy ke spuštění. Kontejner může být sestavení, knihovny DLL nebo relevantní artefaktů. Kontejner testů je plánování jednotka. V jednotlivých kontejnerech testy se spouštějí podle rozhraní test. Pokud existují mnoho kontejnerů, pak jako zpracovává dokončit provádění testů v kontejneru, jste, získá další dostupné kontejneru.<br /><br />MaxCpuCount může být:<br /><br />n, kde 1 < = n < = počet jader: až n procesy spuštění<br /><br />n, kde n = jakoukoli jinou hodnotu: počet spuštění procesů může být maximálně počet dostupných jader|
-|**TestSessionTimeout**||Umožňuje uživatelům ukončení relace testu, pokud se překročí daného časového limitu. Nastavení, které zajistí vypršení časového limitu a spotřebování prostředky a testovací relace jsou omezené na nastavte čas. Toto nastavení je k dispozici v **Visual Studio 2017 verze 15,5** a novější.|
+|**MaxCpuCount**|1|Tato nastavení ovládacích prvků stupeň paralelní provádění testů při spuštění testů jednotky, pomocí dostupných jader v počítači. Prováděcí modul testu spouští jako samostatného procesu na každém z dostupných jader a poskytuje každé jádro kontejner s testy ke spuštění. Kontejner může být sestavení, knihovna DLL nebo relevantní artefakt. Jednotkou plánování je kontejnerem testu. V jednotlivých kontejnerech spuštění testů podle rozhraní pro testování. Pokud existuje spousta kontejnerů, pak jako zpracovává dokončení provádění testů v kontejneru, že získá k dalšímu dostupnému kontejneru.<br /><br />Může být MaxCpuCount:<br /><br />n, kde 1 < = n < = počet jader: až n procesů vydávaných<br /><br />n, kde n = libovolné jiné hodnoty: počet procesů spuštěných může být maximálně počet dostupných jader|
+|**TestSessionTimeout**||Umožňuje ukončit relaci testování, když překročí daného časového limitu. Nastavení časového limitu zajistí, že se dobře spotřebovávají prostředky a relace testování jsou omezeny na nastavenou dobu. Toto nastavení je k dispozici v **Visual Studio 2017 verze 15.5** a novější.|
 
-### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptérů diagnostických dat (sběrače dat)
+### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptéry diagnostických dat (sběrače dat)
 
-**DataCollectors** element určuje nastavení dat diagnostiky adaptérů. Adaptérů diagnostických dat sbírat dodatečné informace o prostředí a aplikace v rámci testu. Každý adaptér má výchozí nastavení a budete muset zadat nastavení, pokud nechcete použít výchozí hodnoty.
+**DataCollectors** prvek určuje nastavení diagnostických dat adaptérů. Adaptéry diagnostických dat získání dalších informací o prostředí a testovanou aplikaci. Každý adaptér má výchozí nastavení a máte jenom k poskytování nastavení, pokud nechcete použít výchozí hodnoty.
 
 #### <a name="code-coverage-adapter"></a>Adaptér pokrytí kódu
 
@@ -192,13 +194,13 @@ V následujících podrobností elementy *.runsettings* souboru.
 </CodeCoverage>
 ```
 
-Kolektor dat pokrytí kódu vytvoří protokol uvádějící, které části kódu aplikace byly použity v testu. Další informace o přizpůsobení nastavení pro pokrytí kódu najdete v tématu [přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md).
+Kolektor dat pokrytí kódu vytvoří protokol uvádějící, které části kódu aplikace byly použity v testu. Další informace o přizpůsobení nastavení pro pokrytí kódu naleznete v tématu [přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md).
 
-#### <a name="video-data-collector"></a>Sběrač dat video
+#### <a name="video-data-collector"></a>Kolektor dat videa
 
-Kolekce video dat zaznamená obrazovky, zaznamenávání při spuštění testů. Tento záznam je užitečná pro řešení potíží s testy uživatelského rozhraní. Kolekce video dat je k dispozici v **Visual Studio 2017 verze 15,5** a novější.
+Kolekce dat video zachycuje záznam obrazovky, pokud jsou testy spuštěny. Tento záznam je užitečné při řešení potíží s testy uživatelského rozhraní. Videa data collector je k dispozici v **Visual Studio 2017 verze 15.5** a novější.
 
-Chcete-li přizpůsobit žádný jiný druh adaptérů diagnostických dat, použijte [soubor s nastavením testu](../test/collect-diagnostic-information-using-test-settings.md).
+Chcete-li přizpůsobit jakýkoli jiný typ adaptéry diagnostických dat, použijte [soubor nastavení testu](../test/collect-diagnostic-information-using-test-settings.md).
 
 ### <a name="testrunparameters"></a>TestRunParameters
 
@@ -210,7 +212,7 @@ Chcete-li přizpůsobit žádný jiný druh adaptérů diagnostických dat, pou�
 </TestRunParameters>
 ```
 
-Parametry testu poskytují způsob, jak definovat proměnných a hodnot, které jsou k dispozici pro testy za běhu. Přístup k parametry, pomocí <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> vlastnost:
+Parametry testovacího běhu poskytují způsob, jak definovat proměnné a hodnoty, které jsou k dispozici pro testy v době běhu. Přístup k parametrům pomocí <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> vlastnost:
 
 ```csharp
 [TestMethod]
@@ -219,9 +221,9 @@ public void HomePageTest()
     string appURL = TestContext.Properties["webAppUrl"];
 ```
 
-Pokud chcete používat parametry testu, spuštění, přidejte privátního <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pole a veřejné <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> vlastnosti ke třídě testu.
+Pokud chcete používat parametry testovacího běhu, přidejte privátní <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pole a veřejnou <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> vlastnost do vaší testovací třídy.
 
-### <a name="mstest-run-settings"></a>Mstestu parametry spuštění
+### <a name="mstest-run-settings"></a>MSTest nastavení spuštění
 
 ```xml
 <MSTest>
@@ -235,20 +237,20 @@ Pokud chcete používat parametry testu, spuštění, přidejte privátního <xr
 </MSTest
 ```
 
-Tato nastavení jsou specifické pro adaptér test, který spouští test metody, které mají <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atribut.
+Tato nastavení jsou specifická pro testovací adaptér, který spouští testovací metody, které mají <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atribut.
 
 |Konfigurace|Výchozí|Hodnoty|
 |-------------------|-------------|------------|
-|**ForcedLegacyMode**|false|V sadě Visual Studio 2012 bylo optimalizováno adaptér Mstestu zajistit rychlejší a větší škálovatelnost. Některé rysy chování sady, jako například pořadí, ve kterém jsou testy spuštěny, nemusí být přesně stejné jako v předchozích edicích sady Visual Studio. Nastavte tuto hodnotu na **true** používat starší test adaptér.<br /><br />Například můžete použít toto nastavení, pokud máte *app.config* soubor zadané pro testování částí.<br /><br />Doporučujeme zvážit refaktoring testů, aby bylo možné použít novější adaptér.|
+|**ForcedLegacyMode**|false|V sadě Visual Studio 2012 se k němu rychlejší a lépe škálovatelný optimalizované adaptér MSTest. Některé rysy chování sady, jako například pořadí, ve kterém jsou testy spuštěny, nemusí být přesně stejné jako v předchozích edicích sady Visual Studio. Nastavte tuto hodnotu na **true** aby používala starší testovací adaptér.<br /><br />Například můžete použít toto nastavení, pokud máte *app.config* souboru určeného pro testování částí.<br /><br />Doporučujeme zvážit refaktoring testů, aby bylo možné použít novější adaptér.|
 |**IgnoreTestImpact**|false|Funkce dopadu testu upřednostňuje při spuštění testů prostřednictvím adaptéru MSTest nebo nástroje Microsoft Test Manager testy, které jsou ovlivněny nedávnými změnami. Toto nastavení funkci deaktivuje. Další informace najdete v tématu [které testy je třeba spustit od předchozího sestavení](https://msdn.microsoft.com/library/dd286589).|
-|**Soubor_nastavení**||Můžete zadat souboru nastavení testů pro použití s Mstestu adaptéru v tomto poli. Můžete taky zadat souborů nastavení testů výběrem **testování** > **Test nastavení** > **vyberte testovací soubor s nastaveními**.<br /><br />Pokud zadáte tuto hodnotu, je nutné také nastavit **ForcedlegacyMode** k **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
-|**KeepExecutorAliveAfterLegacyRun**|false|Po dokončení běhu testu je adaptér MSTest vypnut. Jakýkoli proces, který je spuštěn jako součást test je také byly ukončeny. Pokud chcete zachovat vykonavatele testovací aktivní, nastavte hodnotu na **true**. Můžete například použít toto nastavení Pokud chcete zachovat v prohlížeči spuštění mezi programové testy uživatelského rozhraní.|
-|**DeploymentEnabled**|true|Pokud nastavíte hodnotu na **false**, nasazení položky, které jste určili ve své metodě testovací nejsou zkopírovat do adresáře nasazení.|
-|**CaptureTraceOutput**|true|Je možné zapsat do trasování ladění z pomocí metoda testovací <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
-|**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Pokud chcete zachovat adresáře nasazení po spuštění testu, nastavte hodnotu **false**.|
-|**MapInconclusiveToFailed**|false|V případě, test skončí s neprůkazné stav, je namapovaný na přeskočené stav v **testování Explorer**. Pokud chcete testy neprůkazné zobrazený jako neúspěšná, nastavte hodnotu na **true**.|
-|**InProcMode**|false|Pokud chcete testů ke spuštění v rámci jednoho procesu, jako je adaptér Mstestu, nastavte hodnotu **true**. Toto nastavení poskytuje malé zvýšení výkonu. Ale pokud testu ukončení s výjimkou zbývající testy nespouštět.|
-|**AssemblyResolution**|false|Při hledání a spouštění testů jednotek můžete určit cest do dalších sestavení. Například použijte tyto cesty pro závislost sestavení, které nejsou ve stejném adresáři jako testovací sestavení. Pokud chcete zadat cestu, použijte **cesta k adresáři** elementu. Cesty může obsahovat proměnné prostředí.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+|**Soubor_nastavení**||Můžete určit soubor nastavení testu pro použití s zde adaptér MSTest. Můžete také určit soubor nastavení testu tak, že vyberete **testování** > **nastavení testu** > **vybrat soubor nastavení testu**.<br /><br />Pokud chcete zadat tuto hodnotu, je nutné také nastavit **ForcedlegacyMode** k **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**KeepExecutorAliveAfterLegacyRun**|false|Po dokončení běhu testu je adaptér MSTest vypnut. Jakýkoli proces, který je spuštěn jako část testu je také ukončen. Pokud chcete zachovat prováděcí modul testování aktivní, nastavte hodnotu na **true**. Toto nastavení můžete například použít pro zachování chodu mezi programové testy uživatelského rozhraní prohlížeče.|
+|**DeploymentEnabled**|true|Pokud nastavíte hodnotu na **false**, položky nasazení, které jste určili v testovací metodě nejsou zkopírovány do adresáře nasazení.|
+|**CaptureTraceOutput**|true|Můžete zapisovat do trasování ladění z testovací metody pomocí <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
+|**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Po testovacím běhu zachovat adresář nasazení, nastavte tuto hodnotu na **false**.|
+|**MapInconclusiveToFailed**|false|Pokud test skončí v neprůkazném stavu, je mapován na stav přeskočeno v **Průzkumníka testů**. Pokud chcete neprůkazné testy zobrazený jako neúspěšný, nastavte hodnotu na **true**.|
+|**InProcMode**|false|Pokud chcete testy spouštět ve stejném procesu jako adaptér MSTest, nastavte tuto hodnotu na **true**. Toto nastavení poskytuje malé zvýšení výkonu. Pokud však test ukončen výjimkou, zbývající testy nejsou.|
+|**AssemblyResolution**|false|Při hledání a spouštění testů jednotek, můžete určit cest na další sestavení. Například pomocí těchto cest pro závislosti sestavení, které nejsou ve stejném adresáři jako testovací sestavení. Chcete-li zadat cestu, použijte **cestu k adresáři** elementu. Cesty může obsahovat proměnné prostředí.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
 ## <a name="see-also"></a>Viz také:
 

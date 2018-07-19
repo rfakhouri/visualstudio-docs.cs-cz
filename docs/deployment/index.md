@@ -1,24 +1,25 @@
 ---
 layout: LandingPage
-title: Nasazení aplikací v sadě Visual Studio | Microsoft Docs
-description: Další informace o použití Visual Studio 2017 k nasazení aplikací, služeb a komponent.
+title: Nasazování aplikací v sadě Visual Studio | Dokumentace Microsoftu
+description: Zjistěte, jak pomocí sady Visual Studio 2017 k nasazení aplikací, služeb a komponent.
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 77314e7ed1000c90c194516aa1fc1705be8eae2e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 83013d3baf0c9c041a3873a223cd218c773ae20c
+ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815321"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39030400"
 ---
 # <a name="deployment-in-visual-studio"></a>Nasazení v sadě Visual Studio
 
-Visual Studio poskytuje několik různých nástrojů, které vám pomohou při nasazení aplikace.
+Visual Studio poskytuje několik různých nástrojů, které vám pomohou při nasazování vašich aplikací.
 
-<h2>Prostředí sady Visual Studio nasazení s 5 minut – elementy QuickStart</h2>
+<h2>Prostředí nasazení sady Visual Studio s zprovoznění během 5 minut</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -68,7 +69,7 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Nasazení na webu nebo sdílené síťové složce</h3>
+                        <h3>Nasazení na webu nebo síťové sdílené složky</h3>
                     </div>
                 </div>
             </div>
@@ -95,7 +96,7 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
     </li>
 </ul>
 
-<h2>Přejděte hlubší s kurzy</h2>
+<h2>Seznamte se blíž s kurzy</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -163,7 +164,7 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Balíček aplikace na ploše pro Microsoft Store (C#, C++)</h3>
+                        <h3>Balíček desktopové aplikace pro Microsoft Store (C#, C++)</h3>
                     </div>
                 </div>
             </div>
@@ -181,7 +182,7 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Nasazení do Azure Python</h3>
+                        <h3>Nasazení Pythonu do Azure</h3>
                     </div>
                 </div>
             </div>
@@ -199,7 +200,7 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Import nastavení publikování a nasazení do Azure App Service</h3>
+                        <h3>Import nastavení publikování a nasazení do služby Azure App Service</h3>
                     </div>
                 </div>
             </div>

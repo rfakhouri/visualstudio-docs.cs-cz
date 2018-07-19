@@ -18,40 +18,40 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f4c865dcf55f8796748308822b8a6dde5f96ef8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1c5d8d9f961db7c6560f1dd7a73f2ea62a974bac
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920544"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174208"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Postupy: ukládání dat pomocí transakce
-Ukládání dat v transakci pomocí <xref:System.Transactions> oboru názvů. Použití <xref:System.Transactions.TransactionScope> objektu účast v transakci, která je pro vás automaticky spravovány.
+Ukládání dat v transakci pomocí <xref:System.Transactions> oboru názvů. Použití <xref:System.Transactions.TransactionScope> objektu k účasti v transakci, která se automaticky spravuje za vás.
 
-Projekty nejsou vytvořeny s odkazem na System.Transactions – sestavení, proto musíte ručně přidejte odkaz na projekty, které používají transakce.
+Projekty nejsou vytvořeny s odkazem na *System.Transactions* sestavení, takže je třeba ručně přidat odkaz na projektech, které používají transakce.
 
-Nejjednodušší způsob, jak implementovat transakce je k vytváření instancí <xref:System.Transactions.TransactionScope> objekt v `using` příkaz. (Další informace najdete v tématu [příkazu Using](/dotnet/visual-basic/language-reference/statements/using-statement), a [pomocí příkazu](/dotnet/csharp/language-reference/keywords/using-statement).) Kód, který běží v rámci `using` příkaz účastní transakce.
+Nejjednodušší způsob, jak implementovat transakce je k vytvoření instance <xref:System.Transactions.TransactionScope> objekt `using` příkazu. (Další informace najdete v tématu [příkaz Using](/dotnet/visual-basic/language-reference/statements/using-statement), a [příkaz Using](/dotnet/csharp/language-reference/keywords/using-statement).) Kód, který běží v rámci `using` příkaz účastní v transakci.
 
-Potvrzení transakce, volání <xref:System.Transactions.TransactionScope.Complete%2A> metoda jako poslední příkaz v pomocí blokovat.
+Chcete-li zapsat transakci, zavolejte <xref:System.Transactions.TransactionScope.Complete%2A> metody jako poslední příkaz v pomocí blokovat.
 
-Vrácení transakce, způsobí výjimku před voláním <xref:System.Transactions.TransactionScope.Complete%2A> metoda.
+Chcete-li vrátit zpět transakci, vyvolat výjimku před voláním <xref:System.Transactions.TransactionScope.Complete%2A> metody.
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Chcete-li přidat odkaz na System.Transactions.dll
 
-1.  Na **projektu** nabídce vyberte možnost **přidat odkaz na**.
+1.  Na **projektu** nabídce vyberte možnost **přidat odkaz**.
 
-2.  Na **.NET** karta (**systému SQL Server** kartu pro projekty na SQL serveru), vyberte **System.Transactions –** a potom vyberte **OK**.
+2.  Na **.NET** kartu (**systému SQL Server** kartu pro projekty na SQL serveru) vyberte **System.Transactions**a pak vyberte **OK**.
 
-     Odkaz na System.Transactions.dll se přidá do projektu.
+     Odkaz na *System.Transactions.dll* se přidá do projektu.
 
-## <a name="to-save-data-in-a-transaction"></a>K uložení dat v transakci
+## <a name="to-save-data-in-a-transaction"></a>Chcete-li uložit data v transakci
 
--   Přidejte kód pro uložení dat v rámci pomocí příkazu, který obsahuje transakce. Následující kód ukazuje, jak vytvořit a vytvoření instancí <xref:System.Transactions.TransactionScope> objektu v pomocí příkazu:
+-   Přidejte kód pro uložení dat v rámci nástroje pomocí příkazu, který obsahuje transakci. Následující kód ukazuje, jak vytvořit a vytvoření instance <xref:System.Transactions.TransactionScope> objektu v pomocí příkazu:
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)
 - [Návod: Uložení dat do transakce](../data-tools/save-data-in-a-transaction.md)
