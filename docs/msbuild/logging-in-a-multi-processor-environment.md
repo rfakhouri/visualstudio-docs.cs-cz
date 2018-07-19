@@ -1,5 +1,5 @@
 ---
-title: Protokolování v prostředí s více procesory | Microsoft Docs
+title: Protokolování v prostředí s více procesory | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
@@ -13,23 +13,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cba96b4ca87333acbd778282c86a73e531ec3cf
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 864b60a7f2262803e9a25b967831c35202799cd5
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327099"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077575"
 ---
-# <a name="logging-in-a-multi-processor-environment"></a>Protokolování v prostředí s více procesory
-Schopnost nástroje MSBuild používat více procesorů může výrazně zkrátit čas sestavení projektu, ale bude mít také za následek složitější protokolování. V prostředí s jedním procesorem může protokolovací nástroj zpracovat příchozí události, zprávy, upozornění a chyby předvídatelným, sekvenčním způsobem. Avšak v prostředí s více procesory mohou události přicházet z různých zdrojů zároveň nebo mimo pořadí. Poskytuje nové více-procesorů podporující protokolovacího nástroje MSBuild a umožňuje vytvoření vlastní "předávání protokolovacích nástrojů."  
+# <a name="logging-in-a-multi-processor-environment"></a>Protokolování v prostředí s více procesory
+Schopnost nástroje MSBuild používat více procesorů může výrazně zkrátit čas sestavení projektu, ale bude mít také za následek složitější protokolování. V prostředí s jedním procesorem může protokolovací nástroj zpracovat příchozí události, zprávy, upozornění a chyby předvídatelným, sekvenčním způsobem. Avšak v prostředí s více procesory mohou události přicházet z různých zdrojů zároveň nebo mimo pořadí. Nástroj MSBuild poskytuje nový protokolovací nástroj více-procesorů s ohledem na a povolí vytváření vlastních "předávajících protokolovacích nástrojů."  
   
-## <a name="logging-multiple-processor-builds"></a>Protokolování víceprocesorových sestavení  
- Při sestavování jednoho nebo více projektů v systému s více procesory nebo s více jádry jsou události sestavení nástroje MSBuild pro všechny projekty generovány současně. Lavině data události může přicházejí na protokolovacího nástroje ve stejnou dobu nebo mimo pořadí. To můžete zahlcovat protokolovacího nástroje a způsobit časy vyšší sestavení, výstup nesprávný protokolovacího nástroje nebo dokonce poškozená sestavení. Chcete-li tyto problémy vyřešit, můžete protokolovacího nástroje MSBuild zpracovat události mimo pořadí a korelovat události a jejich zdroje.  
+## <a name="log-multiple-processor-builds"></a>Protokol víceprocesorových sestavení  
+ Při sestavování jednoho nebo více projektů v systému s více procesory nebo s více jádry jsou události sestavení nástroje MSBuild pro všechny projekty generovány současně. Dorazit lavina dat událostí může do protokolovacího nástroje ve stejnou dobu nebo mimo pořadí. To můžete zahlcovat protokolovací nástroj a způsobit zvýšení doby sestavení, nesprávnému výstupu protokolovacího nástroje nebo dokonce k přerušení sestavení. Pro řešení těchto problémů, může protokolovací nástroj MSBuild zpracovávat události mimo pořadí a provádět korelaci událostí a jejich zdrojů.  
   
  Efektivitu protokolování lze ještě více zlepšit vytvořením vlastního předávajícího protokolovacího nástroje. Uživatelský předávající protokolovací nástroj funguje jako filtr tím, že umožňuje před sestavením zvolit události, které je třeba sledovat. Použitím vlastního předávajícího protokolovacího nástroje nedojde k zaplavení protokolovacího nástroje nechtěnými událostmi, nedojde k nadbytku při protokolování nebo zpomalení doby sestavení.  
   
 ### <a name="central-logging-model"></a>Model centrálního protokolování  
- Nástroj MSBuild používá pro víceprocesorová sestavení „model centrálního protokolování“. V modelu centrálního protokolování slouží instance nástroje MSBuild.exe jako primární proces sestavení nebo jako „centrální uzel“. Sekundární instance nástroje MSBuild.exe nebo též „sekundární uzly“ jsou připojeny k centrálnímu uzlu. Jakékoli protokolovací nástroje založené na nástroji ILogger, které jsou připojeny k centrálnímu uzlu, se nazývají „centrální protokolovací nástroje“, a protokolovací nástroje připojené k sekundárním uzlům se nazývají „sekundární protokolovací nástroje“.  
+ Nástroj MSBuild používá pro víceprocesorová sestavení „model centrálního protokolování“. V modelu centrálního protokolování může instance *MSBuild.exe* sestavení slouží jako primární proces, nebo "centrální uzel". Sekundární instance nástroje *MSBuild.exe*, nebo "sekundární uzly" jsou připojeny k centrálnímu uzlu. Jakékoli protokolovací nástroje založené na nástroji ILogger, které jsou připojeny k centrálnímu uzlu, se nazývají „centrální protokolovací nástroje“, a protokolovací nástroje připojené k sekundárním uzlům se nazývají „sekundární protokolovací nástroje“.  
   
  Dojde-li k sestavení, sekundární protokolovací nástroje přesměrují svůj provoz událostí na centrální protokolovací nástroje. Vzhledem k tomu, že události pocházejí z několika sekundárních uzlů, přicházejí data do centrálního uzlu současně, avšak prokládaně. Chcete-li vyřešit odkazy událost na projekt a událost na cíl, obsahují argumenty události další kontextové informace události sestavení.  
   
@@ -59,7 +59,7 @@ public interface IForwardingLogger: INodeLogger
   
  Chcete-li přeposílat události v předávajícím protokolovacím nástroji, je třeba volat metodu <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> rozhraní <xref:Microsoft.Build.Framework.IEventRedirector>. Předejte příslušné argumenty <xref:Microsoft.Build.Framework.BuildEventArgs> nebo jejich odvozené části jako parametr.  
   
- Další informace najdete v tématu [vytváření předávání protokolovacích nástrojů](../msbuild/creating-forwarding-loggers.md).  
+ Další informace najdete v tématu [vytvořit předávající Protokolovací nástroje](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Připojení distribuovaného protokolovacího nástroje  
  Chcete-li připojit distribuovaný protokolovací nástroj v sestavení příkazového řádku, je třeba použít přepínač `/distributedlogger` (nebo `/dl`). Formát pro zadávání názvů typů a tříd protokolovacího nástroje je stejný jako u přepínače `/logger` s tím rozdílem, že distribuovaný prokolovací nástroj je tvořen dvěma třídami protokolování: předávající protokolovací nástroj a centrální protokolovací nástroj. Následuje příklad připojení distribuovaného protokolovacího nástroje:  
@@ -72,6 +72,6 @@ Culture=neutral
   
  Hvězdička (*) v přepínači `/dl` odděluje názvy dvou protokolovacích nástrojů.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Protokolovací nástroje sestavení](../msbuild/build-loggers.md)   
- [Vytváření předávajících (sekundárních) protokolovacích nástrojů](../msbuild/creating-forwarding-loggers.md)
+ [Vytvořit předávající Protokolovací nástroje](../msbuild/creating-forwarding-loggers.md)

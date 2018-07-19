@@ -1,5 +1,5 @@
 ---
-title: Dynamické vlastnosti XAttribute – třída
+title: Dynamické vlastnosti třídy XAttribute
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 781e1e03cbf8a0df91bc0cb02ce69ec615dd66d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b25d6cc6a88e1e5b7bd0b839cfdca5be713c6b7e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926911"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077184"
 ---
-# <a name="xattribute-class-dynamic-properties"></a>Dynamické vlastnosti XAttribute – třída
+# <a name="xattribute-class-dynamic-properties"></a>Dynamické vlastnosti třídy XAttribute
 
-Tato část popisuje dynamických vlastností <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>.
+Tato část popisuje dynamické vlastnosti daného <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>.
 
 ## <a name="in-this-section"></a>V tomto oddílu
 
@@ -27,7 +27,7 @@ Tato část popisuje dynamických vlastností <xref:System.Xml.Linq.XAttribute?d
 |-----------|-----------------|
 |[Hodnota](../designers/value-xattribute-dynamic-property.md)|Získá nebo nastaví hodnotu atributu XML.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>
 - [Dynamické vlastnosti LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)

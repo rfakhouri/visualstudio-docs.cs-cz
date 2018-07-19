@@ -1,5 +1,5 @@
 ---
-title: '&lt;Plány&gt; prvek (zavaděče) | Microsoft Docs'
+title: '&lt;Plány&gt; – Element (zaváděcí nástroj) | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c551bc9335dc41f82800e2c3435d8508967a6db
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: e891064b0f2ac522312b2bb654c4d05e9f7bf47c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815467"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078251"
 ---
-# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Plány&gt; – Element (zaváděcího nástroje)
-`Schedules` Obsahuje element `Schedule` elementy, které definují konkrétní časy, ve které příkazy definované `Command` element by měl být spuštěn.  
+# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Plány&gt; – element (zaváděcí nástroj)
+`Schedules` Obsahuje element `Schedule` prvky, které definují konkrétní časy, ve které příkazy určené `Command` element by měl být spuštěn.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,28 +42,28 @@ ms.locfileid: "34815467"
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementy a atributy  
- `Schedules` Element je podřízená `Product` elementu. Každý `Product` element může mít maximálně jeden `Schedules` elementu. `Schedules` Element nemá žádné atributy.  
+ `Schedules` Element je podřízeným prvkem `Product` elementu. Každý `Product` element může obsahovat nanejvýš jeden `Schedules` elementu. `Schedules` Prvek nemá žádné atributy.  
   
 ## <a name="schedule"></a>Plán  
- `Schedule` Element je podřízená `Schedules` elementu. A `Schedules` element musí mít alespoň jeden `Schedule` elementu.  
+ `Schedule` Element je podřízeným prvkem `Schedules` elementu. A `Schedules` element musí mít aspoň jeden `Schedule` elementu.  
   
  `Schedule` má následující atribut.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Name`|Požadováno. Název položky plánu. To odpovídá `ScheduleName` vlastnost `Command` elementu. Když `Command` odkazuje na pojmenované plán, bude spuštěn pouze v době uvedené v tomto `Schedule` element. Plány mohou být také přidruženy `FailIf` a `BypassIf` prvky, které omezují podmíněných testů spouštění podle zadaného plánu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
+|`Name`|Požadováno. Název položky plánu. To odpovídá `ScheduleName` vlastnost `Command` elementu. Když `Command` odkazuje na pojmenovanou plánu, bude spuštěn pouze v době uvedené díky tomu `Schedule` element. Plány mohou také být přiřazena `FailIf` a `BypassIf` prvky, které omezují tyto testy podmíněného spouštění podle zadaného plánu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
   
- A zadané `Schedule` element může mít přesně jeden z následujících podřízených prvků.  
+ A vzhledem `Schedule` element může mít nastavený právě jeden z následujících podřízených prvků.  
   
 ## <a name="buildlist"></a>BuildList  
- `BuildList` Element dá pokyn ke spuštění příkazu ihned po startu zaváděcí aplikace Instalační služby.  
+ `BuildList` Element dává pokyn k provedení příkazu okamžitě po spuštění zaváděcí aplikace Instalační služby.  
   
 ## <a name="beforepackage"></a>BeforePackage  
- `BeforePackage` Element dá pokyn ke spuštění příkazu před instalací zadaný balíček Instalační služby.  
+ `BeforePackage` Element dává pokyn k provedení příkazu, než bude nainstalován zadaný balíček Instalační služby.  
   
 ## <a name="afterpackage"></a>AfterPackage  
- `AfterPackage` Element dá pokyn ke spuštění příkazu po instalaci zadaný balíček Instalační služby.  
+ `AfterPackage` Element instruuje instalační program ke spuštění příkazu po zadaný balíček nainstalován.  
   
-## <a name="see-also"></a>Viz také  
- [\<Produkt > elementu](../deployment/product-element-bootstrapper.md)   
- [Referenční schéma balíčku a produktu](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Viz také:  
+ [\<Produkt > – element](../deployment/product-element-bootstrapper.md)   
+ [Referenční dokumentace schématu produktů a balíčků](../deployment/product-and-package-schema-reference.md)

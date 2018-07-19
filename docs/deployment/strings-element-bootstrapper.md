@@ -1,5 +1,5 @@
 ---
-title: '&lt;Řetězce&gt; prvek (zavaděče) | Microsoft Docs'
+title: '&lt;Řetězce&gt; – Element (zaváděcí nástroj) | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fccc928efe8d30ef5a2ee99b476a5b0e35b2090e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815441"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077669"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Řetězce&gt; – Element (zaváděcího nástroje)
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Řetězce&gt; – element (zaváděcí nástroj)
 Definuje lokalizované řetězce pro názvy produktů, názvů balíčků a chybové zprávy instalace.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -42,10 +42,10 @@ Definuje lokalizované řetězce pro názvy produktů, názvů balíčků a chyb
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementy a atributy  
- `Strings` Element je podřízená `Package` elementu. Nemá žádné atributy.  
+ `Strings` Element je podřízeným prvkem `Package` elementu. Nemá žádné atributy.  
   
 ## <a name="string"></a>String  
- `String` Element je podřízená `Strings` elementu. A `Strings` element může mít jeden nebo více `String` elementy.  
+ `String` Element je podřízeným prvkem `Strings` elementu. A `Strings` element může obsahovat jeden nebo více `String` elementy.  
   
  `String` má následující atribut.  
   
@@ -75,5 +75,5 @@ Definuje lokalizované řetězce pro názvy produktů, názvů balíčků a chyb
 </Strings>  
 ```  
   
-## <a name="see-also"></a>Viz také  
- [\<Balíček > elementu](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>Viz také:  
+ [\<Balíček > – element](../deployment/package-element-bootstrapper.md)

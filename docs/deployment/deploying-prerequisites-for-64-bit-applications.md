@@ -1,5 +1,5 @@
 ---
-title: Nasazení nezbytných součástí pro 64bitové aplikace | Microsoft Docs
+title: Nasazení nezbytných součástí pro 64bitové aplikace | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,30 +20,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4db38a1a95ca179f793dd7a9e13c35f25f623f03
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 91935bc819987823f5a2f3ad0781e975c72f7e0d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233682"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077929"
 ---
-# <a name="deploying-prerequisites-for-64-bit-applications"></a>Nasazení nezbytných součástí pro 64bitové aplikace
-ClickOnce – nasazení podporuje instalaci aplikací na 64bitových platformách. Cílové platformy jsou **x86** pro 32bitovou platformu **x64** pro podporu sad instrukcí AMD64 a EM64T, počítače a **Itanium** pro 64bitový procesor Itanium.  
+# <a name="deploy-prerequisites-for-64-bit-applications"></a>Nasazení nezbytných součástí pro 64bitové aplikace
+ClickOnce – nasazení podporuje instalaci aplikací na 64bitových platformách. Cílové platformy jsou **x86** pro 32bitové platformy, **x64** pro počítače podporuje AMD64 a podporou technologie EM64T instrukční sadu, a **Itanium** pro procesor Itanium 64-bit.  
   
 ## <a name="prerequisites"></a>Požadavky  
- Následující tabulka uvádí redistributables, který můžete použít jako předpoklady pro instalaci aplikace 64-bit.  
+ V následující tabulce jsou uvedeny distribuovatelné součásti, které můžete použít jako požadavky na instalaci 64bitové aplikace.  
   
- Pokud vyberete požadovaných součástí, která nemá 64bitové komponenty, může se zobrazit upozornění oznamující, že vybrané balíčky nejsou k dispozici pro 64bitovou platformu.  
+ Pokud vyberete požadovanou součást, která se nevyznačuje 64bitové komponenty, může se zobrazit upozornění oznamující, že vybrané balíčky nejsou k dispozici pro 64bitovou platformu.  
   
-|Redistributable|Podpora x64|Podpora IA64|  
+|Distribuovatelné součásti|Podpora x64|Podpora IA64|  
 |---------------------|-----------------|------------------|  
 |[!INCLUDE[vsto_runtime](../deployment/includes/vsto_runtime_md.md)]|Ano|Ne|  
-|Visual C++ 2010 Runtime knihovny (IA64)|Ne|Ano|  
-|Visual C++ 2010 Runtime knihovny (x64)|Ano|Ne|  
-|Rozhraní Microsoft .NET Framework 4 (x86 a x64)|Ano||  
-|Rozhraní Microsoft .NET Framework 4 Client Profile (x86 a x64)|Ano||  
+|Knihovny Visual C++ 2010 Runtime (IA64)|Ne|Ano|  
+|Knihovny Visual C++ 2010 Runtime (x64)|Ano|Ne|  
+|Microsoft .NET Framework 4 (x86 a x64)|Ano||  
+|Microsoft .NET Framework 4 Client Profile (x86 a x64)|Ano||  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Nasazení aplikací, služeb a komponent](../deployment/deploying-applications-services-and-components.md)   
  [Postupy: instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [64bitové aplikace](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cba770195ced84083e67ae42afbef53631e5ba1
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
-ms.translationtype: HT
+ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890211"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131866"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Ladění pro naprosté začátečníky
 
@@ -41,7 +41,7 @@ Pomáhá vysvětlení problému, který jste narazili před pokusem o jeho řeš
 
 ## <a name="examine-your-assumptions"></a>Prozkoumejte předpokladů
 
-Předtím, než byste prozkoumat chybu nebo chybu, si můžete Představte předpokladů, které můžete očekávat, že některé výsledek provedli. Skrytý nebo Neznámý předpoklady mohou bránit identifikace problému i v případě, že chcete přímo na příčinu problému ve ladicího programu. Může být dlouhý seznam možných předpoklady! Tady je několik otázek k položte vybízí předpokladů.
+Předtím, než byste prozkoumat chybu nebo chybu, si můžete Představte předpokladů, které můžete očekávat, že některé výsledek provedli. Skrytý nebo Neznámý předpoklady mohou bránit identifikace problému i v případě, že chcete přímo na příčinu problému ve ladicího programu. Může být dlouhý seznam možných předpoklady! Tady je pár otázek se ptát na ověřovací předpokladů.
 
 * Používáte správné rozhraní API (to znamená, správný objekt, funkce, metoda nebo vlastnost)? Rozhraní API, které používáte nebudete dělat, co si myslíte, že dělá. (Po kontrole volání rozhraní API v ladicím programu, její opravu může vyžadovat postoupí do dokumentace vám pomůže identifikovat správné rozhraní API.)
 
@@ -322,7 +322,7 @@ Když najdete oblasti kódu s problémem, který pomocí ladicího programu k pr
 
 * [Kontrolovat proměnné](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) a zkontrolujte, zda neobsahují typu hodnoty, které by měl obsahovat. Pokud zjistíte chybná hodnota, zjistěte, ve kterém byla nastavena chybná hodnota (najít, kde byla nastavena hodnotu, může být nutné restartovat ladicí program, podívejte se na [zásobníku volání](../debugger/how-to-use-the-call-stack-window.md), nebo obojí).
 
-* Zkontrolujte, jestli vaše aplikace spouští kód, který očekáváte. (Například v ukázkové aplikaci očekávali jsme kód pro příkaz switch postup nastavení typu galaxy nepravidelné, ale aplikace přeskočeno kódu z důvodu překlep.)
+* Zkontrolujte, jestli vaše aplikace spouští kód, který očekáváte. (Například v ukázkové aplikaci očekávali jsme kód pro příkaz switch postup nastavení typu galaxy nestandardní, ale aplikace přeskočeno kódu z důvodu překlep.)
 
 > [!TIP]
 > Pomocí ladicího programu můžete najít chyby. Ladicí nástroj pomůže hledat chyby *za vás* pouze v případě, že zná záměru kódu. Nástroj lze pouze vědět záměru kódu, pokud vás jako na vývojáři express tohoto záměru. Zápis [testování částí](../test/improve-code-quality.md) je, jak to udělat.

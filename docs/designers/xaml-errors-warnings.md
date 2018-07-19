@@ -10,37 +10,37 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a263f361e28c515f1694238c4d60fdeffb95f03a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4af9ec3cffc7375dd77be72887baee6a56e1b391
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746621"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077806"
 ---
-# <a name="xaml-errors-and-warnings"></a>XAML chyby a upozornění
+# <a name="xaml-errors-and-warnings"></a>Chyby a upozornění XAML
 
-Při vytváření XAML, Visual Studio analyzuje kód při psaní. Vlnovku se zobrazí na řádek kódu, když dojde k chybě. Ukazatele myši vlnovka získáte další informace o chybě nebo upozornění. Některé chyby a upozornění žárovek rychlé akce je zobrazení a pomocí **Ctrl**+**.** klávesové zkratky zobrazí možnosti vyřešit problém.
+Při vytváření obsahu XAML, sada Visual Studio analyzuje při psaní kódu. Vlnovku se zobrazí na řádku kódu, když dojde k chybě. Ukazatel myši piktogram obsahuje bližší informace o chybě nebo upozornění. Některé chyby a upozornění žárovky rychlá akce je zobrazení a použití **Ctrl**+**.** stiskněte kombinaci kláves zobrazí možnosti k vyřešení problému.
 
 ## <a name="error-types"></a>Typy chyb
 
-Na pozadí několik nástrojů analyzovat XAML paralelně. Chyby jazyka XAML jsou rozdělené do jedné z následujících tří typů, založené na nástroj, který zjištěna chyba:
+Na pozadí analyzovat více nástrojů pro XAML paralelně. Chyby XAML jsou rozdělené do jedné z následujících tří typů, založené na nástroj, který se zjistila Chyba:
 
-|**Chyba detekovaných službou**|**Formát kódu chyby**|
+|**Detekoval chybu**|**Formát kódu chyby**|
 |--------------------------------|-----------------|
-|Služba jazyka XAML (XAML editor)|XLSxxxx|
+|Služba jazyka XAML (editoru XAML)|XLSxxxx|
 |Návrhář XAML|XDGxxxx|
 |XAML upravit a pokračovat|XECxxxx|
 
 > [!Note]
-> Ne všechny chyby a varování mají odpovídající kód. Tyto chyby jsou obvykle chyby návrháře XAML.
+> Ne všechny chyby nebo upozornění mají odpovídající kód. Tyto chyby jsou obvykle chyby návrháře XAML.
 
 
-## <a name="suppress-xaml-designer-errors"></a>Potlačit chyby Návrhář XAML
+## <a name="suppress-xaml-designer-errors"></a>Potlačit chyby návrháře XAML
 
-Otevřete **možnosti** dialogové okno výběrem **nástroje > Možnosti**a potom vyberte **textový Editor > XAML > různé**.
+Otevřít **možnosti** dialogové okno tak, že vyberete **nástroje > Možnosti**a pak vyberte **textový Editor > XAML > různé**.
 
-Zrušte zaškrtnutí políčka **zobrazit chyby zjištěno pomocí návrháře XAML** zaškrtávací políčko.
+Zrušte zaškrtnutí políčka **zobrazit chyby zjištěné návrhářem XAML** zaškrtávací políčko.
 
-![Potlačit chyby Návrhář XAML](../designers/media/suppress_xaml_designer_errors.png)
+![Potlačit chyby návrháře XAML](../designers/media/suppress_xaml_designer_errors.png)
 
 

@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: referenční projektu MSBuild SDK | Microsoft Docs'
+title: 'Postupy: odkaz sadu SDK projektu MSBuild | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 01/25/2018
 ms.technology: msbuild
@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4d5d404574c00332a63d4927de3198f096145c4
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: ee92d81f9b22fb0fe60f8c51ce4e9d53c606f1e7
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302663"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077324"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>Postupy: použití sady SDK projektu nástroje MSBuild
+# <a name="how-to-use-msbuild-project-sdks"></a>Postupy: projektu MSBuild pomocí sady SDK
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 zaveden koncept "projektu SDK", což zjednodušuje použití software development Kit, které vyžadují vlastnosti a cíle určených k importu.
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 představil nový koncept "Projekt SDK", což zjednodušuje pomocí sad SDK, které vyžadují vlastností a cílů, které se mají naimportovat.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -30,7 +30,7 @@ ms.locfileid: "36302663"
 </Project>
 ```
 
-Během testování projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] přidá implicitní importy v horní a dolní části projektu:
+Během vyhodnocování projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] přidává implicitní importy v horní a dolní části vašeho projektu:
 
 ```xml
 <Project>
@@ -46,11 +46,11 @@ Během testování projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/i
 </Project>
 ```
 
-## <a name="referencing-a-project-sdk"></a>Odkazování na projekt SDK
+## <a name="reference-a-project-sdk"></a>Odkazovat na sadu SDK projektu
 
- Existují tři způsoby, jak odkazovat na projekt SDK
+ Existují tři způsoby, jak odkazovat na sadu SDK projektu:
 
-1. Použití `Sdk` atributu u `<Project/>` element:
+1. Použití `Sdk` atribut na `<Project/>` element:
 
     ```xml
     <Project Sdk="My.Custom.Sdk">
@@ -58,9 +58,9 @@ Během testování projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/i
     </Project>
     ```
 
-    Implicitní importu se přidá do horní a dolní projektu jak je popsáno výše.  Formát `Sdk` atribut je `Name[/Version]` kde verze je volitelné.  Například můžete zadat `My.Custom.Sdk/1.2.3`.
+    Implicitní import se přidá do horní a dolní část projektu, jak je popsáno výše.  Formát `Sdk` atribut je `Name[/Version]` kde verze je nepovinná.  Například můžete zadat `My.Custom.Sdk/1.2.3`.
 
-2. Použít nejvyšší úrovně `<Sdk/>` element:
+2. Použít na nejvyšší úrovni `<Sdk/>` element:
 
     ```xml
     <Project>
@@ -69,9 +69,9 @@ Během testování projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/i
     </Project>
    ```
 
-   Implicitní importu se přidá do horní a dolní projektu jak je popsáno výše.  `Version` Atribut se nevyžaduje.
+   Implicitní import se přidá do horní a dolní část projektu, jak je popsáno výše.  `Version` Atribut se nevyžaduje.
 
-3. Použití `<Import/>` element kdekoli v projektu:
+3. Použití `<Import/>` element kdekoli ve vašem projektu:
 
     ```xml
     <Project>
@@ -84,21 +84,21 @@ Během testování projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/i
     </Project>
    ```
 
-   Explicitně včetně importy ve vašem projektu umožňuje plnou kontrolu nad pořadí.
+   Explicitně zahrnutí importů do projektu umožňuje plnou kontrolu nad pořadí.
 
-   Při použití `<Import/>` elementu, můžete zadat volitelný `Version` také atribut.  Například můžete zadat `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`.
+   Při použití `<Import/>` element, můžete zadat volitelný `Version` atributem také.  Například můžete zadat `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`.
 
-## <a name="how-project-sdks-are-resolved"></a>Způsob řešení projektu sady SDK
+## <a name="how-project-sdks-are-resolved"></a>Způsob řešení projekt sady SDK
 
-Při vyhodnocování importu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dynamicky přeloží cestu k projektu SDK podle názvu a verze, které jste zadali.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] také obsahuje seznam registrovaných překladačů SDK, které jsou zásuvné moduly, které najít projekt sady SDK na váš počítač.  Tyto moduly plug-in patří:
+Při vyhodnocování importu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dynamicky přeloží cestu k projektu sadu SDK na základě názvu a verze, které jste zadali.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obsahuje také seznam registrovaných překladačů sady SDK, které jsou moduly plug-in, které se najít projekt sady SDK na svém počítači.  Tyto moduly plug-in patří:
 
-1. Překladač na základě NuGet, který se dotazuje vašeho nakonfigurované balíčku informační kanály pro balíčky NuGet, které odpovídají ID a verzi sady SDK, které jste zadali.<br/>
-   Tento překladač je aktivní, pouze pokud jste zadali ve verzi volitelné a lze použít pro všechny vlastní projekt SDK.  
-2. Překladač rozhraní příkazového řádku .NET, která přeloží sady SDK, které jsou nainstalované s .NET rozhraní příkazového řádku.<br/>
-   Tento překladač vyhledá projektu sady SDK, jako `Microsoft.NET.Sdk` a `Microsoft.NET.Sdk.Web` které jsou součástí produktu.
-3. Výchozí překladač, která přeloží sady SDK, které byly nainstalované pomocí nástroje MSBuild.
+1. Překladač založená na Nugetu, který se dotazuje nakonfigurované balíček informační kanály pro balíčky NuGet, které odpovídají ID a verzi sady SDK, které jste zadali.<br/>
+   Tento překladač je aktivní, pouze pokud jste zadali volitelné verze a můžou používat pro všechny vlastní sadu SDK projektu.  
+2. Překladač .NET CLI, který se přeloží sad SDK, které se instalují s .NET CLI.<br/>
+   Tento překladač vyhledá sady SDK projektu jako `Microsoft.NET.Sdk` a `Microsoft.NET.Sdk.Web` které jsou součástí produktu.
+3. Výchozí překladač, který se přeloží sad SDK, které byly nainstalovány s nástrojem MSBuild.
 
-Překladač na základě NuGet sady SDK podporuje určení verze ve vaší [global.json](https://docs.microsoft.com/en-us/dotnet/core/tools/global-json) , které umožňuje uživateli řídit verze sady SDK projektu na jednom místě, ne ve všech projektech:
+Překladač založená na Nugetu SDK podporuje určení verze ve vaší [global.json](https://docs.microsoft.com/en-us/dotnet/core/tools/global-json) , který umožňuje řízení verze sady SDK projektu na jednom místě, nikoli v každý projekt:
 
 ```json
 {
@@ -109,11 +109,11 @@ Překladač na základě NuGet sady SDK podporuje určení verze ve vaší [glob
 }
 ```
 
-Jenom jedna verze jednotlivých projektů sady SDK můžete použít během sestavení.  Pokud je odkazováno na dvě různé verze stejného projektu sady SDK, bude MSBuild posílat upozornění.  Doporučuje se **není** zadejte verzi v projektech, pokud je verze zadané v vaší `global.json`.  
+Během sestavení lze použít pouze jednu verzi každého projektu sady SDK.  Pokud odkazujete na dvě různé verze stejného projektu sadu SDK, nástroj MSBuild vygeneruje upozornění.  Doporučuje se **není** určit verzi ve vašich projektech, pokud je zadán s verzí v vaše *global.json*.  
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
- [Přizpůsobení buildu](../msbuild/customize-your-build.md)   
- [Balíčky, metadat a architektury](/dotnet/core/packages)   
- [Přidání do formátu csproj pro .NET Core](/dotnet/core/tools/csproj)
+ [Přizpůsobení sestavení](../msbuild/customize-your-build.md)   
+ [Balíčky, metadata a architektur](/dotnet/core/packages)   
+ [Dodatky k formátu csproj pro .NET Core](/dotnet/core/tools/csproj)

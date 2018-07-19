@@ -1,5 +1,5 @@
 ---
-title: ItemDefinitionGroup – Element (MSBuild) | Microsoft Docs
+title: ItemDefinitionGroup – Element (MSBuild) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 03/13/2017
 ms.technology: msbuild
@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c83d8f0bc0474c040bcfee4a825c3a800814fbe
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 650b550b21f239f382bb464078ee766920262309
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327343"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079846"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup – element (MSBuild)
-`ItemDefinitionGroup` Vám umožňuje definovat sadu definice položek, které jsou hodnoty metadata, která se použijí pro všechny položky v projektu, ve výchozím nastavení. ItemDefinitionGroup nahrazuje nutnost používat [createitem – úloha](../msbuild/createitem-task.md) a [CreateProperty – úloha](../msbuild/createproperty-task.md). Další informace najdete v tématu [definice položek](../msbuild/item-definitions.md).  
+`ItemDefinitionGroup` Prvek umožňuje definovat sadu definice položek, které jsou hodnoty metadat, které se použijí u všech položek v projektu, ve výchozím nastavení. ItemDefinitionGroup – nahrazuje nutnost používat [createitem – úloha](../msbuild/createitem-task.md) a [CreateProperty – úloha](../msbuild/createproperty-task.md). Další informace najdete v tématu [definice položek](../msbuild/item-definitions.md).  
 
  \<Project>  
- \<ItemDefinitionGroup >  
+ \<ItemDefinitionGroup – >  
 
 ## <a name="syntax"></a>Syntaxe  
 
@@ -51,20 +51,20 @@ ms.locfileid: "36327343"
 |---------------|-----------------|  
 |`Condition`|Nepovinný atribut. Podmínku, která má být vyhodnocen. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|  
 
-### <a name="child-elements"></a>Podřízené elementy  
+### <a name="child-elements"></a>Podřízené prvky  
 
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Položka](../msbuild/item-element-msbuild.md)|Definuje vstupní hodnoty pro proces sestavení. Může být nula nebo více `Item` elementů v `ItemDefinitionGroup`.|  
+|[Položka](../msbuild/item-element-msbuild.md)|Definuje vstupy pro proces sestavení. Může být nula nebo více `Item` prvky `ItemDefinitionGroup`.|  
 
-### <a name="parent-elements"></a>Nadřazené elementy  
+### <a name="parent-elements"></a>Nadřazené prvky  
 
 |Prvek|Popis|  
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
 
 ## <a name="example"></a>Příklad  
- Následující příklad kódu definuje dvě položky metadat, m a n, ItemDefinitionGroup. V tomto příkladu je výchozí metadata "m" použít na položku "i", protože metadata "m" nejsou výslovně definované položkou "i". Výchozí metadata "n" však není použita na položku "i", protože metadata "n" je již definována položka "i".  
+ Následující příklad kódu definuje dvě položky metadat, stiskem n, m v ItemDefinitionGroup –. V tomto příkladu je použít výchozí metadat "m" k položce "i", protože metadata "m" není explicitně určené položky "i". Výchozí metadat "n" však není použít k položce "i", protože metadata "n" je již definován položky "i".  
 
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -84,6 +84,6 @@ ms.locfileid: "36327343"
 </Project>  
 ```  
 
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)   
  [Položky](../msbuild/msbuild-items.md)

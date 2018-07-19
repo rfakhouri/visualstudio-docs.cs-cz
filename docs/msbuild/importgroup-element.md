@@ -1,5 +1,5 @@
 ---
-title: ImportGroup – Element | Microsoft Docs
+title: Importgroup – Element | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 03/13/2017
 ms.technology: msbuild
@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0bd5663383638de8411c44169b22adefadc758
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 184c7ee5fc5155b532243c51f85d8b5420892925
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325486"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079237"
 ---
-# <a name="importgroup-element"></a>ImportGroup – element
-Obsahuje kolekci `Import` prvky, které jsou seskupené v rámci nepovinnou podmínku. Další informace najdete v tématu [Import – Element (MSBuild)](../msbuild/import-element-msbuild.md).  
+# <a name="importgroup-element"></a>Importgroup – element
+Obsahuje kolekci `Import` prvky, které jsou seskupeny podle nepovinnou podmínku. Další informace najdete v tématu [Import – element (MSBuild)](../msbuild/import-element-msbuild.md).  
 
  \<Project>  
- \<ImportGroup >  
+ \<Importgroup – >  
 
 ## <a name="syntax"></a>Syntaxe  
 
@@ -49,19 +49,17 @@ Obsahuje kolekci `Import` prvky, které jsou seskupené v rámci nepovinnou podm
 |---------------|-----------------|  
 |`Condition`|Nepovinný atribut.<br /><br /> Podmínku, která má být vyhodnocen. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|  
 
-### <a name="child-elements"></a>Podřízené elementy  
+### <a name="child-elements"></a>Podřízené prvky  
 
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Import](../msbuild/import-element-msbuild.md)|Importuje obsah z jednoho souboru projektu do jiného souboru projektu.|  
+|[Import](../msbuild/import-element-msbuild.md)|Importuje obsah jednoho souboru projektu do jiného souboru projektu.|  
 
-### <a name="parent-elements"></a>Nadřazené elementy  
+### <a name="parent-elements"></a>Nadřazené prvky  
 
 |Prvek|Popis|  
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
-
-## <a name="remarks"></a>Poznámky  
 
 ## <a name="example"></a>Příklad  
  Následující příklad kódu ukazuje `ImportGroup` elementu.  
@@ -76,6 +74,6 @@ Obsahuje kolekci `Import` prvky, které jsou seskupené v rámci nepovinnou podm
 </Project>  
 ```  
 
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)   
  [Položky](../msbuild/msbuild-items.md)

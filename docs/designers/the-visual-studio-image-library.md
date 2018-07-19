@@ -18,22 +18,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 224341ab753c5dd1ad7d4af072c67207f5dd6774
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bd67b6b548852fa21a28696328004d75ec53fe8
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921189"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078898"
 ---
 # <a name="the-visual-studio-image-library"></a>Knihovna obrázků sady Visual Studio
 
-Knihovna obrázků služby Visual Studio obsahuje Image aplikací, které se zobrazují v sadě Microsoft Visual Studio, Microsoft Windows, systém Office a dalšího softwaru společnosti Microsoft. Tato sada více než 1 000 bitové kopie slouží k vytvoření aplikací, které vypadají vizuálně konzistentní s software společnosti Microsoft.
+Knihovna obrázků Visual Studio obsahuje obrázky aplikace, které se zobrazí v aplikaci Microsoft Visual Studio, Microsoft Windows, systému Office a další software od Microsoftu. Tato sada více než 1 000 obrázků je možné vytvářet aplikace, které vypadají vizuálně konzistentně se softwarem společnosti Microsoft.
 
-[Stáhnout knihovna obrázků Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=275090)
+[Stáhnout knihovna obrázků sady Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=275090)
 
-Knihovna obrázků jsou rozdělené do pěti kategorií: společné prvky, akce, poznámky, ikony a objekty. Soubory Readme jsou zahrnuty ve formátu PDF pro společné prvky a typy ikon. Obsahují informace o tom, jak pomocí těchto bitových kopií správně ve svých aplikacích.
+Knihovna obrázků je rozdělena do pěti kategorií: společné prvky, akce, poznámky, ikony a objekty. Soubory Readme jsou u společných elementů a typů ikon zahrnuté ve formátu PDF. Obsahují informace o tom, jak pomocí těchto bitových kopií odpovídajícím způsobem ve svých aplikacích.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Instalace sady Visual Studio](../install/install-visual-studio.md)
 - [Obrázky, rastrové obrázky a metasoubory](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

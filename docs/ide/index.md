@@ -1,6 +1,6 @@
 ---
-title: Dokumentace k Visual Studio
-description: Zjistěte, jak Visual Studio umožňuje vyvíjet aplikace pomocí různých programovacích jazyků.
+title: Dokumentace k sadě Visual Studio
+description: Zjistěte, jak Visual Studio umožňuje vyvíjet aplikace pomocí různých programovacích jazycích.
 ms.date: 01/01/2018
 layout: LandingPage
 author: gewarren
@@ -10,17 +10,17 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: fafcbd925d144cb619696da105f51e2f00db1421
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ce4e642f06777fd66a12ebffe5a7f9c9aedacc4e
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103200"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131941"
 ---
-# <a name="visual-studio-documentation"></a>Dokumentace k Visual Studio
+# <a name="visual-studio-documentation"></a>Dokumentace k sadě Visual Studio
 
-Zjistěte, jak Visual Studio umožňuje vyvíjet aplikace pomocí různých programovacích jazyků.
-Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplikace pomocí sady Visual Studio.
+Zjistěte, jak Visual Studio umožňuje vyvíjet aplikace pomocí různých programovacích jazycích.
+Kurzy, videa a další dokumentace ukazují, jak vytvářet kód a aplikace pomocí sady Visual Studio.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -34,7 +34,7 @@ Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplik
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Zjistěte, jak nainstalovat a sady Visual Studio</h3>
+                            <h3>Další informace o instalaci a instalace sady Visual Studio</h3>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplik
                             </div>
                         </div>
                         <div class="cardText">
-                            <h3>Přehled sady Visual Studio</h3>
+                            <h3>Získejte přehled o Visual Studio</h3>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplik
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio 2017 na Microsoft Virtual Academy</h3>
+                        <h3>Visual Studio 2017 na webu Microsoft Virtual Academy</h3>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@ Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplik
     </li>
 </ul>
 
-<h2>Prostředí Visual Studio s 5 minut "Quickstarts"</h2>
+<h2>Vyzkoušejte Visual Studio s zprovoznění"během 5 minut"</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -93,7 +93,7 @@ Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplik
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Získat orientované integrované vývojové prostředí (IDE)</h3>
+                        <h3>Si udělat představu pomocí integrovaného vývojového prostředí (IDE)</h3>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@ Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplik
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Další informace o projekty a řešení</h3>
+                        <h3>Seznamte se s projekty a řešení</h3>
                     </div>
                 </div>
             </div>
@@ -147,7 +147,7 @@ Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplik
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Přizpůsobení barev motivů a text.</h3>
+                        <h3>Přizpůsobení motivu a barev textu</h3>
                     </div>
                 </div>
             </div>
@@ -165,7 +165,7 @@ Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplik
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Vytvoření webové aplikace pomocí C#</h3>
+                        <h3>Vytvoření webové aplikace pomocí jazyka C#</h3>
                     </div>
                 </div>
             </div>
@@ -183,7 +183,7 @@ Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplik
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Vytvoření konzolové aplikace v jazyce Visual Basic</h3>
+                        <h3>Vytvoření konzolové aplikace pomocí jazyka Visual Basic</h3>
                     </div>
                 </div>
             </div>
@@ -201,7 +201,7 @@ Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplik
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Vytvořte aplikaci konzoly s C++</h3>
+                        <h3>Vytvoření konzolové aplikace v jazyce C++</h3>
                     </div>
                 </div>
             </div>
@@ -219,7 +219,7 @@ Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplik
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Vytvoření webové aplikace s Pythonem</h3>
+                        <h3>Vytvoření webové aplikace v Pythonu</h3>
                     </div>
                 </div>
             </div>
@@ -237,7 +237,7 @@ Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplik
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Vytvoření webové aplikace s Node.js</h3>
+                        <h3>Vytvoření webové aplikace s využitím Node.js</h3>
                     </div>
                 </div>
             </div>
@@ -246,7 +246,7 @@ Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplik
     </li>
 </ul>
 
-<h2>Přejděte hlubší s kurzy</h2>
+<h2>Seznamte se blíž s kurzy</h2>
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
@@ -260,7 +260,7 @@ src="https://docs.microsoft.com/media/logos/logo_TS.svg"><span>TypeScript</span>
 
 <div class="ico48Link"><a href="/cpp/build/vscpp-step-0-installation"><img width="48" height="48" alt="C++ tutorial"
 src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C++</span></a></div>
-<div class="ico48Link"><a href="/visualstudio/nodejs/tutorial-nodejs"><img width="48" height="48" alt="Node.js tutorial"
+<div class="ico48Link"><a href="/visualstudio/javascript/tutorial-nodejs"><img width="48" height="48" alt="Node.js tutorial"
 src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
 <div class="ico48Link"><a href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project"><img width="48" height="48" alt="Python tutorial"
 src="https://docs.microsoft.com/media/logos/logo_Python.svg"><span>Python</span></a></div>
