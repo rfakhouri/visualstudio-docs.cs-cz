@@ -13,15 +13,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 517698aa2e042d74138579dae3633930b338cd61
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756272"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38781910"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Nasazení aplikace do místní složky pomocí sady Visual Studio
 
-Můžete použít **publikovat** nástroj pro publikování aplikací ASP.NET, ASP.NET Core, .NET Core a Python do místní složky ze sady Visual Studio. Pro platformu Node.js kroky jsou podporované, ale uživatelské rozhraní se liší.
+Můžete použít **publikovat** nástroj pro publikování aplikace ASP.NET, ASP.NET Core, .NET Core a Pythonu do místní složky ze sady Visual Studio. Pro Node.js kroky jsou podporované, ale uživatelské rozhraní se liší.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
@@ -29,29 +29,29 @@ Můžete použít **publikovat** nástroj pro publikování aplikací ASP.NET, A
 
 1. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat** (nebo použijte **sestavení** > **publikovat** položky nabídky).
 
-    ![Příkaz Publikovat v místní nabídce Projekt v Průzkumníku řešení](../deployment/media/quickstart-publish.png "zvolte publikování")
+    ![Příkaz Publikovat v místní nabídce projektu v Průzkumníku řešení](../deployment/media/quickstart-publish.png "tlačítko Publikovat")
 
-1. Pokud jste dříve nakonfigurovali žádné profily publikování **publikovat** podokně se zobrazí. Vyberte **vytvořit nový profil**.
+1. Pokud jste dříve nakonfigurovali všech profilů publikování **publikovat** otevře se podokno. Vyberte **vytvořit nový profil**.
 
-1. V **vyberte cíl publikování** dialogovém okně vyberte **složky**.
+1. V **vyberte cíl publikování** dialogového okna zvolte **složky**.
 
-    ![Vyberte jako typ publikovat místní složky](../deployment/media/quickstart-publish-folder.png "vybrat složku")
+    ![Zvolte místní složku jako publikovat nějaký](../deployment/media/quickstart-publish-folder.png "vybrat složku")
 
-1. Zadejte cestu nebo vyberte **Procházet** zadat do místní složky.
+1. Zadejte cestu nebo vyberte **Procházet** určit místní složku.
 
-1. Vyberte **publikování**. Visual Studio vytvoří projekt a publikuje do zadané složky. Vlastnosti projektu **publikovat** podokně se zobrazí, zobrazující profil souhrnu.
+1. Vyberte **publikovat**. Visual Studio vytvoří projekt a publikuje ji do zadané složky. Vlastnosti projektu **publikovat** otevře se podokno, zobrazuje profil souhrnu.
 
-    ![Vlastnost podokně zobrazující Souhrn profilu publikování](../deployment/media/quickstart-publish-folder-summary.png)
+    ![Podokno vlastností zobrazuje souhrn profil publikování](../deployment/media/quickstart-publish-folder-summary.png)
 
-1. Chcete-li konfigurovat nastavení nasazení, vyberte **konfigurace** v profilu přehled a vyberte **nastavení** kartě.
+1. Chcete-li konfigurovat nastavení nasazení, vyberte **konfigurovat** v profilu summary a vyberte **nastavení** kartu.
 
     ![Nastavení profilu](../deployment/media/quickstart-profile-settings.png "nastavení profilu")
 
-1. Konfigurovat možnosti, například zda ladění nebo verze konfigurace nasazení a potom vyberte **Uložit**.
+1. Konfigurovat možnosti, jako například, jestli se má nasadit konfigurace ladění nebo uvolnění a pak vyberte **Uložit**.
 
 1. Chcete-li znovu publikovat, vyberte **publikovat**.
 
-Publikované soubory žádným způsobem, který chcete nasaďte. Například je do balíčků *.zip* souboru, použijte příkaz jednoduché kopírování nebo nasadit pomocí jakékoli instalačního balíčku podle svého výběru.
+Nasaďte publikované soubory žádným způsobem, který vám vyhovuje. Například je do balíčku *ZIP* souboru, použijte příkaz jednoduché kopírování nebo nasazení v balíčcích instalace podle vašeho výběru.
 
 ## <a name="next-steps"></a>Další kroky
 

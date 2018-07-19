@@ -16,15 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d238370586a9256d91f89f06fddbe3c58abc27e8
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 4be55cb2108b24c7a8f912844b719e6aa3135a06
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703818"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923993"
 ---
-# <a name="open-file-command"></a>Otevřít soubor – příkaz
-Otevře existující soubor a umožňuje vám určit editoru.
+# <a name="open-file-command"></a>Příkaz pro otevření souboru
+
+Otevře existující soubor a umožňuje určit editor.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,37 +34,41 @@ File.OpenFile filename [/e:editorname]
 ```
 
 ## <a name="arguments"></a>Arguments
- `filename`
 
- Požadováno. Úplné nebo částečné cestu a název soubor otevřete. Cesty obsahujících mezery musí být uzavřena v uvozovkách.
+`filename`
+
+Požadováno. Celý nebo jeho část cestu a název soubor otevřete. Cesty obsahující mezery, musí být uzavřen v uvozovkách.
 
 ## <a name="switches"></a>Přepínače
- / e:`editorname`
 
- Volitelné. Název editoru, ve kterém bude soubor otevřít. Pokud je argument zadaný ale zadaný žádný název editoru, **otevřít v** zobrazí se dialogové okno.
+/ e:`editorname`
 
- / E:`editorname` argument syntaxe používá názvy editor, jak se zobrazují v dialogovém okně Otevřít s, uzavřena v uvozovkách.
+Volitelné. Název editoru, ve kterém chcete soubor otevřít. Pokud je zadán argument, ale žádný editor název je zadán, **otevřít v** zobrazí se dialogové okno.
 
- Například by k otevření souboru v editoru zdrojového kódu, zadejte následující pro / e:`editorname` argument.
+/ E:`editorname` argument syntaxe používá názvy editoru, jak se objeví v dialogovém okně Otevřít s, do uvozovek.
+
+Například by pro otevření souboru v editoru zdrojového kódu, zadejte následující pro / e:`editorname` argument.
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="remarks"></a>Poznámky
- Při zadávání cestu automatické doplňování pokusí se najít správnou cestu a název souboru.
+
+Co zadáte cestu, automatické dokončování pokusí se najít správnou cestu a název souboru.
 
 ## <a name="example"></a>Příklad
- Tento příklad otevře soubor styl "Test1.css" v editoru zdrojového kódu.
+
+Tento příklad otevře soubor style "Test1.css" v editoru zdrojového kódu.
 
 ```cmd
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Příkazové okno](../../ide/reference/command-window.md)
+- [Okno příkazového řádku](../../ide/reference/command-window.md)
 - [Příkazové podokno](../../ide/reference/immediate-window.md)
 - [Pole najít/příkaz](../../ide/find-command-box.md)
-- [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio aliasy příkazů](../../ide/reference/visual-studio-command-aliases.md)

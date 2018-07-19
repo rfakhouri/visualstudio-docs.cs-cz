@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f9dcf9079a444b581cacbe4e013149259b3ecb87
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: HT
+ms.openlocfilehash: aef6236b896495f81e91cbdd7befd2923c013a33
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38801120"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131957"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Vytvoření vazby ovládacích prvků WPF k datové sadě
 
@@ -240,7 +240,7 @@ Sestavte a spusťte aplikaci. Ověřte, že můžete zobrazit a aktualizovat zá
 
 ## <a name="next-steps"></a>Další kroky
 
-Po dokončení tohoto návodu, které můžete vyzkoušet následující související úlohy:
+Po dokončení tohoto návodu, můžete vyzkoušet následující související úlohy:
 
 - Další informace o použití **zdroje dat** okna v sadě Visual Studio k vytvoření vazby WPF ovládací prvky na jiné typy datových zdrojů. Další informace najdete v tématu [WPF vytvoření vazby ovládacích prvků do datové služby WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 

@@ -1,6 +1,6 @@
 ---
-title: 'Rychlý úvod: použijte sadu Visual Studio k vytvoření webové aplikace Python'
-description: V tento rychlý start vytvoříte pomocí sady Visual Studio a rozhraní Flask pro vytvoření jednoduché webové aplikace v Pythonu.
+title: 'Rychlý start: vytvoření webové aplikace v Pythonu pomocí sady Visual Studio'
+description: V tomto rychlém startu pomocí sady Visual Studio a rozhraní Flask k vytvoření jednoduché webové aplikace v Pythonu.
 ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,83 +11,83 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8668bbdb686b3c8c60380dd5592a2897a43b45b
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089422"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131983"
 ---
-# <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Rychlý úvod: Vytvoření první webové aplikace Python pomocí sady Visual Studio
+# <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Rychlý start: Vytvoření první webové aplikace v Pythonu pomocí sady Visual Studio
 
-V této 5 až 10 minut Úvod k sadě Visual Studio jako Python IDE vytvoříte jednoduchou webovou aplikaci Python založené na rozhraní framework Flask. Vytvoření projektu prostřednictvím diskrétní kroky, které vám pomůžou získat informace o základních funkcích nástroje Visual Studio.
+V tomto úvodu 5 až 10 minut do sady Visual Studio jako integrované vývojové prostředí Pythonu vytvoříte jednoduchou webovou aplikaci Python, který je založená na platformě Flask. Vytvoření projektu prostřednictvím diskrétní kroky, které vám pomůžou informace o základní funkce sady Visual Studio.
 
-Pokud jste ještě nenainstalovali Visual Studio, přejděte na [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) instalaci zdarma. V instalačním programu, je nutné vybrat **vývoj Python** zatížení.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte na [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) nainstalovat zdarma. V instalačním programu, je nutné vybrat **vývoj v jazyce Python** pracovního vytížení.
 
 ## <a name="create-the-project"></a>Vytvoření projektu
 
-Následující postup vytvořit prázdný projekt, který slouží jako kontejner pro aplikaci:
+Následujícím postupem se vytvoří prázdný projekt, který slouží jako kontejner pro aplikace:
 
 1. Otevřete Visual Studio 2017.
 
-1. V horní nabídce vyberte příkaz **soubor > Nový > projekt**.
+1. V horní nabídce zvolte **soubor > Nový > projekt**.
 
-1. V **nový projekt** dialogové okno pole zadejte "Python webového projektu" v poli vyhledávání v pravém horním rohu, zvolte **webového projektu** v seznamu střední projekt pojmenujte jako "HelloPython", a potom vyberte **OK**.
+1. V **nový projekt** dialogové okno pole, zadejte "Python webový projekt" do vyhledávacího pole v pravém horním rohu, zvolte **webový projekt** v seznamu v prostředním projekt pojmenujte například "HelloPython" a pak zvolte **OK**.
 
-    ![Dialogové okno Nový projekt s vybraným webovým projektem Python](media/quickstart-python-00-web-project.png)
+    ![Dialogové okno nového projektu s vybraným webovým projektem Python](media/quickstart-python-00-web-project.png)
 
-    Pokud nevidíte šablony projektů jazyka Python, zrušit mimo **nový projekt** dialogové okno a z panelu horní nabídce zvolte **nástroje > funkcí a nástrojů pro získání** otevřete **Visual Studio Instalační program**. Vyberte **vývoj Python** zatížení, zvolte **upravit**.
+    Pokud nevidíte šablony projektů Python, zrušit z celkového počtu **nový projekt** dialogového okna a v horní nabídce vyberte **nástroje > Získejte nástroje a funkce** otevřít **sady Visual Studio Instalační program**. Zvolte **vývoj v jazyce Python** úloh, klikněte na tlačítko **změnit**.
 
-    ![Python vývoj zatížení v instalačním programu sady Visual Studio](../python/media/installation-python-workload.png)
+    ![Úloha vývoj v jazyce Python v instalačním programu sady Visual Studio](../python/media/installation-python-workload.png)
 
-1. Nový projekt se otevře v **Průzkumníku řešení** v pravém podokně. Projekt je v tomto okamžiku prázdná, protože neobsahuje žádné další soubory.
+1. Otevře se nový projekt v **Průzkumníka řešení** v pravém podokně. Projekt je v tuto chvíli prázdná, protože neobsahuje žádné soubory.
 
     ![Průzkumník řešení zobrazující nově vytvořený prázdný projekt](media/quickstart-python-01-empty-project.png)
 
-**Otázka: Co je výhodou vytvoření projektu v sadě Visual Studio pro aplikaci Python?**
+**Otázka: Co je výhodou vytvoření projektu aplikace v Pythonu v sadě Visual Studio?**
 
-**Odpověď**: Python aplikace jsou obvykle definovány pomocí pouze složky a soubory, ale může stát tato jednoduchá struktura zátěží, jako aplikace, se zvětšit a případně zahrnují automaticky generovaný soubory JavaScript pro webové aplikace a tak dále. Projekt sady Visual Studio pomáhá spravovat Tato složitost. Projekt ( *.pyproj* souboru) identifikuje všechny zdroje a soubory obsahu přidružené k projektu, obsahuje informace o sestavení pro každý soubor, udržuje informace o integraci se systémy správy zdrojového kódu a pomáhá uspořádejte do logických součástí vaší aplikace.
+**Odpověď**: aplikací v Pythonu se obvykle definují použití pouze souborů a složek, ale tato jednoduchá struktura se může stát zátěží aplikací, větší a možná zahrnují automaticky generované soubory jazyka JavaScript pro webové aplikace, a tak dále. Projekt sady Visual Studio pomáhá spravovat Tato složitost. Projekt ( *.pyproj* souboru) identifikuje všechny zdroje a soubory obsahu přidružené k projektu, obsahuje informace o sestavení pro každý soubor, udržuje informace o integraci se systémy správy zdrojového kódu a pomáhá Uspořádejte aplikace do logické součásti.
 
-**Otázka: Co je "řešení" zobrazeno v Průzkumníku řešení?**
+**Otázka: Co je "řešení" zobrazovat v Průzkumníkovi řešení?**
 
-**Odpověď**: řešení sady Visual Studio A je kontejner, který vám pomůže spravovat pro jeden nebo více souvisejících projekty jako skupina a ukládá nastavení konfigurace, které nejsou specifické pro projekt. Projekty v řešení můžete taky odkazovat navzájem, tak, aby spuštění jeden projektu (aplikace Python) automaticky vytvoří druhý projekt (například příponou C++ použít v aplikaci Python).
+**Odpověď**: řešení sady Visual Studio A je kontejner, který vám pomůže spravovat jako skupinu pro jeden nebo více souvisejících projektů a ukládá nastavení konfigurace, které nejsou specifické pro projekt. Projekty v řešení lze také odkazovat navzájem, tak, že běží jeden projekt (aplikace v Pythonu) automaticky vytvoří druhý projektu (například rozšíření C++ v aplikaci Python).
 
-## <a name="install-the-flask-library"></a>Nainstaluje knihovny Flask
+## <a name="install-the-flask-library"></a>Nainstalujte knihovnu Flask
 
-Webové aplikace v Pythonu téměř vždy použijte jeden z mnoha dostupných knihoven Python pro zpracování nízké úrovně podrobnosti, třeba směrování webových požadavků a odpovědí shaping. Pro tento účel Visual Studio poskytuje řadu šablon pro webové aplikace, z nichž jeden použijete později v tento rychlý start.
+Webové aplikace v Pythonu téměř vždy používat jeden z mnoha dostupných knihoven Pythonu ke zpracování podrobnosti nižší úrovně, jako je směrování webových požadavků a tvarování odpovědi. Pro tento účel Visual Studio poskytuje celou řadu šablon pro službu web apps, z nichž jeden použijete později v tomto rychlém startu.
 
-Zde tyto kroky použijete k instalaci knihovny Flask do výchozí "globální prostředí" používaný pro tento projekt sady Visual Studio.
+Tady můžete následujícím postupem ji nainstalovat do výchozí "globálního prostředí", který používá Visual Studio pro tento projekt Flask.
 
-1. Rozbalte **prostředí Python** uzlu v projektu zobrazíte výchozí prostředí pro projekt.
+1. Rozbalte **prostředí Pythonu** uzlu projektu zobrazíte výchozí prostředí pro projekt.
 
-    ![Průzkumník řešení zobrazující výchozí prostředí](media/quickstart-python-02-default-environment.png)
+    ![Průzkumník řešení zobrazující výchozího prostředí](media/quickstart-python-02-default-environment.png)
 
-1. Klikněte pravým tlačítkem na prostředí a vyberte **instalovat balíček Python**. Tento příkaz otevře **prostředí Python** okno na **balíčky** kartě.
+1. Klikněte pravým tlačítkem na prostředí a vyberte **instalovat balíček Pythonu**. Tento příkaz otevře **prostředí Pythonu** na okno **balíčky** kartu.
 
-1. Do pole vyhledávání zadejte "flask" a vyberte **pip nainstalovat flask z úložiště PyPI**. Přijměte zobrazování výzev pro oprávnění správce a sledovat **výstup** okna v sadě Visual Studio pro průběh. (Výzva pro zvýšení oprávnění se stane, když se nachází v rámci chráněná oblast složce balíčků pro globální prostředí jako *C:\Program Files*.)
+1. Do vyhledávacího pole zadejte "flask" a vyberte **flask instalace pip z PyPI**. Přijměte všechny vyzve k zadání oprávnění správce a podívejte se **výstup** okna v sadě Visual Studio pro průběh. (Výzva pro zvýšení oprávnění se stane, když se nachází v rámci chráněnou oblast složce balíčků pro globální prostředí, jako jsou *C:\Program Files*.)
 
-    ![Instalace Flask knihovny](media/quickstart-python-03-install-package.png)
+    ![Instalace knihovny Flask](media/quickstart-python-03-install-package.png)
 
-1. Po instalaci, zobrazí se v prostředí v **Průzkumníku**, tzn., které můžete použít jeho použití v kódu jazyka Python.
+1. Po instalaci, zobrazí se v prostředí v knihovně **Průzkumníka řešení**, což znamená, že, které lze využít v kódu Pythonu.
 
-    ![Knihovna flask nainstalován](media/quickstart-python-04-package-installed.png)
+    ![Nainstalovanou knihovnu Flask](media/quickstart-python-04-package-installed.png)
 
 > [!Note]
-> Místo instalace knihovny v globální prostředí, vývojáři obvykle vytvoříte "virtuální prostředí" do kterého chcete nainstalovat knihovny pro konkrétní projekt. Šablony sady Visual Studio obvykle nabízejí tuto možnost, jak je popsáno v [rychlý start - vytvořte projekt Python pomocí šablony](../python/quickstart-02-python-in-visual-studio-project-from-template.md).
+> Místo instalace knihovny do globálního prostředí, vývojáři obvykle "virtuální prostředí vytvořte" ve kterém k instalaci knihoven pro konkrétní projekt. Šablony sady Visual Studio obvykle nabízejí tuto možnost, jak je popsáno v [rychlý start – vytvoření projektu Pythonu pomocí šablony](../python/quickstart-02-python-in-visual-studio-project-from-template.md).
 
-**Otázka: Kde I Další informace o dalších dostupných balíčků Python?**
+**Otázka: Kde najdu Další informace o dalších dostupných balíčků Python?**
 
 **Odpověď**: přejděte [indexu balíčků Pythonu](https://pypi.org/).
 
 ## <a name="add-a-code-file"></a>Přidání souboru kódu
 
-Nyní jste připraveni přidat kousek kód Python implementovat minimální webové aplikace.
+Nyní jste připraveni přidat bitového kódu implementovat minimální webové aplikace v Pythonu.
 
-1. Klikněte pravým tlačítkem na projekt v **Průzkumníku řešení** a vyberte **Přidat > Nová položka**.
+1. Klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **Přidat > Nová položka**.
 
-1. V dialogovém okně se zobrazí, vyberte **prázdný soubor Python**, pojmenujte ji *app.py*a vyberte **přidat**. Visual Studio automaticky otevře soubor v okně editoru.
+1. V zobrazeném dialogu vyberte **prázdný soubor Python**, pojmenujte ho *app.py*a vyberte **přidat**. Visual Studio automaticky otevře soubor v okně editoru.
 
-1. Zkopírujte následující kód a vložte ji do *app.py*:
+1. Zkopírujte následující kód a vložte ho do *app.py*:
 
     ```python
     from flask import Flask
@@ -112,49 +112,49 @@ Nyní jste připraveni přidat kousek kód Python implementovat minimální webo
         app.run('localhost', 4449)
     ```
 
-1. Jste si všimli, **Přidat > Nová položka** dialogové okno zobrazí mnoho dalších typů souborů, které můžete přidat do projektu Python, včetně třídu Python, balíček Python, testování částí Python, *web.config* soubory a další. Tyto šablony položky, jako nazývají, jsou obecně skvělý způsob, jak rychle vytvořit soubory s užitečné často používaný kód.
+1. Mohli jste si všimnout, který **Přidat > Nová položka** mnoho dalších typů souborů, které můžete přidat do projektu Pythonu, včetně třída Pythonu, balíček Pythonu, test jednotky Pythonu, zobrazí se dialogové *web.config* soubory a další. Obecně tyto šablony položky, jako jsou volány, jsou skvělý způsob, jak rychle vytvořit soubory s užitečné často používaný kód.
 
-**Otázka: Kde I Další informace o Flask?**
+**Otázka: Kde dozvím víc o Flask?**
 
-**Odpověď**: naleznete v dokumentaci Flask, počínaje [rychlý start Flask](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart).
+**Odpověď**: naleznete v dokumentaci Flask, počínaje [Flask Quickstart](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart).
 
 ## <a name="run-the-application"></a>Spuštění aplikace
 
-1. Klikněte pravým tlačítkem na *app.py* v **Průzkumníku řešení** a vyberte **nastavit jako spouštěcí soubor**. Tento příkaz identifikuje soubor kód ke spuštění v Pythonu při spuštění aplikace.
+1. Klikněte pravým tlačítkem na *app.py* v **Průzkumníka řešení** a vyberte **nastavit jako spouštěcí soubor**. Tento příkaz určuje soubor kód ke spuštění pythonu při spuštění aplikace.
 
-    ![Nastavení spuštění souboru pro projekt v Průzkumníku řešení](media/quickstart-python-05-set-as-startup-file.png)
+    ![Nastavení spouštěcího souboru pro projekt v Průzkumníku řešení](media/quickstart-python-05-set-as-startup-file.png)
 
-1. Klikněte pravým tlačítkem na projekt v **Průzkumníku řešení** a vyberte **vlastnosti**. Vyberte **ladění** kartě a nastavte **číslo portu** vlastnost `4449`. Tento krok zajistí, že Visual Studio spustí prohlížeč s `localhost:4449` tak, aby odpovídala `app.run` argumenty v kódu.
+1. Klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **vlastnosti**. Vyberte **ladění** kartu a nastavit **číslo portu** vlastnost `4449`. Tento krok zajistí, že Visual Studio spustí prohlížeč s `localhost:4449` tak, aby odpovídaly `app.run` argumenty v kódu.
 
-1. Vyberte **ladění > Spustit bez ladění** (**Ctrl**+**F5**), který uloží změny do soubory a spustí aplikace.
+1. Vyberte **ladit > Spustit bez ladění** (**Ctrl**+**F5**), který uloží změny do souborů aplikace a spustí se.
 
-1. Zobrazí se okno příkazového řádku se zprávou "* spuštěné v https://localhost:4449/", a otevřít okno prohlížeče na `localhost:4449` tam, kde se zobrazí zpráva, "Hello, Python!" Požadavek GET se zobrazí také v příkazovém okně se stavem 200.
+1. Zobrazí se okno příkazového řádku se zprávou "* používané https://localhost:4449/", a mělo by se otevřít okno prohlížeče `localhost:4449` tam, kde se zobrazí zpráva "Hello, Python!" Požadavek na získání se zobrazí také v příkazovém okně se stavem 200.
 
-    Pokud prohlížeč nespustí automaticky, spustit prohlížeč a přejděte do `localhost:4449`.
+    Pokud se prohlížeč nespustí automaticky, spustit libovolný prohlížeč a přejděte do `localhost:4449`.
 
-    Pokud se zobrazí pouze Python interaktivní prostředí v příkazovém okně nebo pokud toto okno bliká na obrazovce stručně, ujistěte se, že jste nastavili *app.py* jako spouštěcí soubor v kroku 1 výše.
+    Pokud se zobrazí pouze Python interaktivního prostředí v příkazovém okně nebo na obrazovce stručně bliká tohoto okna, ujistěte se, že jste nastavili *app.py* jako spouštěcí soubor v kroku 1 výše.
 
-1. Přejděte na `localhost:4449/hello` otestujte, jestli dekoratéra pro `/hello` prostředku taky funguje. Požadavek GET zobrazí znovu, se v příkazovém okně se stavem 200. Nebojte se, že některé jiné také adresu URL pokusí zjistěte, zda zobrazují 404 stavové kódy v příkazovém okně.
+1. Přejděte do `localhost:4449/hello` otestujte, jestli dekoratér pro `/hello` prostředku taky funguje. Požadavek na získání znovu, zobrazí se v příkazovém okně se stavem 200. Nebojte se pokusí zjistit, že v příkazovém okně zobrazí stavový kód 404 některé další také adresu URL.
 
-1. Zavřete okno příkaz k zastavení aplikace a pak zavřete okno prohlížeče.
+1. Zavřete příkazové okno a zastavte tak aplikace a potom zavřete okno prohlížeče.
 
 **Otázka: Jaký je rozdíl mezi příkaz Spustit bez ladění a spustit ladění?**
 
-**Odpověď**: použijete **spustit ladění** a spusťte aplikaci v kontextu [ladicího programu sady Visual Studio](../python/debugging-python-in-visual-studio.md), umožňuje nastavit zarážky, zkontrolujte proměnné a krokovat kód řádek po řádku. Aplikace může pomaleji v ladicím programu z důvodu různých háky, které umožňují, ladění. **Spustit bez ladění**, naproti tomu spustí aplikaci přímo jako v případě, že jste spustili z příkazového řádku, bez ladění kontextu a také automaticky spustí prohlížeč a přejde na adresu URL zadanou ve vlastnostech projektu  **Ladění** kartě.
+**Odpověď**: používáte **spustit ladění** ke spuštění aplikace v rámci [ladicí program sady Visual Studio](../python/debugging-python-in-visual-studio.md), což vám umožní nastavit zarážky, zkontrolujte proměnné a procházet kódem řádek po řádku. Aplikace mohou běžet pomaleji v ladicím programu z důvodu různých háky, které usnadňují ladění je to možné. **Spustit bez ladění**, naproti tomu přímo spustí aplikaci, jako kdyby jste spustili z příkazového řádku pomocí žádný kontext ladění a také automaticky spustí prohlížeč a přejde na adresu URL zadanou ve vlastnostech projektu  **Ladění** kartu.
 
 ## <a name="next-steps"></a>Další kroky
 
-Blahopřejeme k spuštění vaší první aplikace Python ze sady Visual Studio, ve které jste se naučili o něco o pomocí sady Visual Studio jako Python IDE!
+Blahopřejeme vám k spuštění vaší první aplikace v Pythonu v sadě Visual Studio, v kterých jste se naučili o něco o používání sady Visual Studio jako integrované vývojové prostředí Pythonu.
 
 > [!div class="nextstepaction"]
-> [Nasazení aplikace do Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
+> [Nasaďte aplikaci do služby Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
-Protože jsou poměrně obecné kroky, které jste udělali v tento rychlý start, jste pravděpodobně uhádnout, můžete a dobré automatizovat. Tato automatizace je role šablony projektů Visual Studio. Projděte [rychlý start - vytvořit pomocí šablony projektu Python](../python/quickstart-02-python-in-visual-studio-project-from-template.md) pro ukázku, která vytvoří webovou aplikaci podobné jste vytvořili v tomto článku, ale s méně kroků.
+Protože jsou poměrně obecné kroky, které jste udělali v rámci tohoto rychlého startu, jste pravděpodobně uhodnout, můžete a by mělo být automatické. Tato automatizace je role šablony projektů Visual Studio. Projděte si [rychlý start – vytvoření projektu Pythonu pomocí šablony](../python/quickstart-02-python-in-visual-studio-project-from-template.md) ukázku, která vytvoří webovou aplikaci, podobně jako jste vytvořili v tomto článku, ale s použitím méně kroků.
 
-Chcete pokračovat s úplnější kurz Python v sadě Visual Studio, včetně použití interaktivních okna, ladění, vizualizace dat a práce s Gitem, projít [kurz: Začínáme s Pythonem v sadě Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
+Chcete pokračovat s plnější kurz v Pythonu v sadě Visual Studio, včetně použití interaktivní okno ladění, vizualizace dat a práce s úložištěm Git, projděte si [kurz: Začínáme s Pythonem v sadě Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
-Chcete-li prozkoumat více, že nabídka má Visual Studio, vyberte odkazy níže.
+Teď prozkoumáme i další, má Visual Studio nabízí, vyberte níže uvedených odkazů.
 
-- Další informace o [Python webové šablony aplikace v sadě Visual Studio](../python/python-web-application-project-templates.md).
-- Další informace o [Python ladění](../python/debugging-python-in-visual-studio.md)
+- Další informace o [webová aplikace šablony v sadě Visual Studio v Pythonu](../python/python-web-application-project-templates.md).
+- Další informace o [ladění Pythonu](../python/debugging-python-in-visual-studio.md)
 - Další informace o [Visual Studio IDE](../ide/visual-studio-ide.md) obecně.

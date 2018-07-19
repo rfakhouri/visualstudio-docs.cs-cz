@@ -10,37 +10,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b2126f38053cc8f83be92aeb5d3939df07e58c2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae3b12ffa91b419717e91125b658f29e7d74deb6
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923324"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923891"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Postupy: Export textury obsahující mipmapy
 
-Kanál obsahu bitové kopie můžete vygenerovat mipmaps zdrojové bitové kopie v rámci fáze sestavení vašeho projektu. K dosažení určité účinky, někdy je nutné k určení bitové kopie obsahu jednotlivých úrovní MIP ručně. Pokud nepotřebujete k určení bitové kopie obsahu jednotlivých úrovní MIP ručně, generování mipmaps v čase vytvoření buildu zajišťuje mipmap obsah nikdy stát se na synchronizaci. Také eliminuje náklady výkonu generování mipmaps za běhu.
+Kanál s obsahem obrazu může generovat mipmapy ze zdrojového obrazu jako část fáze se sestavením projektu. K dosažení určitých efektů, někdy je nutné ručně zadat obsah bitové kopie každé úrovně MIP. Když není nutné ručně zadat obsah bitové kopie každé úrovně MIP, generování mipmaps v okamžiku sestavení zajistí, že obsah mipmap nikdy stát mimo synchronizace. Také eliminuje náklady na generování Mipmap v době běhu.
 
-Tento článek se zabývá:
+Tento článek se týká:
 
-- Konfigurace zdrojové bitové kopie na zpracování kanálu obsahu bitové kopie.
+- Konfigurace zdrojového obrazu pro zpracování obsahu kanálu obrázku.
 
-- Konfigurace obsahu kanálu bitové kopie, který se má generovat mipmaps.
+- Konfigurace obsahu kanálu obrázku ke generování Mipmap.
 
-## <a name="export-mipmaps"></a>Export Mipmaps
+## <a name="export-mipmaps"></a>Export mipmapy
 
-Mipmapping poskytuje automatické místo na obrazovce úroveň--detailů pro texturou ploch v 3D hry nebo aplikace. Zvyšuje tak výkon vykreslování hry nebo aplikace pomocí předem computing vzorkovat nižší verze texturou. Předem computing vzorkovat nižší verze, znamená to, že celá texture nemusí být nižší vzorkovat pokaždé, když ho je vzorků.
+Mipmapping zajišťuje úroveň of-Detail automatické místo na obrazovce pro texturované povrchy u 3D her nebo aplikací. To zvyšuje rychlost vykreslování hry nebo aplikace předvýpočtem zredukovaných verzí textur výpočtem předem. Předem computingu předvýpočtem zredukovaných verzí, znamená, že celá textura nemusela být zredukována pokaždé, když se odebírá.
 
-### <a name="to-export-a-texture-that-has-mipmaps"></a>Chcete-li exportovat texture, který má mipmaps
+### <a name="to-export-a-texture-that-has-mipmaps"></a>Pro export textury obsahující mipmapy
 
-1.  Začněte základní texturou. Nahrajte existující soubor bitové kopie, nebo ji vytvořte jak je popsáno v [postupy: vytvoření základní Texture](../designers/how-to-create-a-basic-texture.md). Pro podporu mipmaps, zadejte texture, který má šířka a výška, které jsou stejné power dva velikosti, například 64 x 64, 256 x 256 nebo 512 x 512.
+1.  Začněte základní texturou. Načtěte stávající obrazový soubor nebo jej vytvořte podle pokynů v [postupy: vytvoření základní textury](../designers/how-to-create-a-basic-texture.md). Na podporu Mipmap určete texturu, která má šířku a výšku, které mají stejný výkon rozměry, například 64 x 64, 256 x 256 nebo 512 x 512.
 
-2.  Nakonfigurujte texture soubor, který jste právě vytvořili, aby se zpracování obsahu kanálu bitové kopie. V **Průzkumníku řešení**, otevřete místní nabídku pro soubor textury jste vytvořili a potom zvolte **vlastnosti**. Na **vlastnosti konfigurace** > **Obecné** nastavte **typ položky** vlastnost **bitové kopie obsahu kanálu**. Ujistěte se, že **obsahu** je nastavena na **Ano** a **vyloučit ze sestavení** je nastaven na **ne**. Vyberte **použít**.
+2.  Nakonfigurujte soubor textury, které jste právě vytvořili, aby byl zpracován kanálem obsahu obrázku. V **Průzkumníka řešení**, otevřete místní nabídku pro soubor textury, který jste vytvořili a klikněte na tlačítko **vlastnosti**. Na **vlastnosti konfigurace** > **Obecné** nastavte **typ položky** vlastnost **kanál obsahu obrazu**. Ujistěte se, že **obsahu** je nastavena na **Ano** a **vyloučit ze sestavení** je nastavena na **ne**. Vyberte **použít**.
 
-   **Bitové kopie obsahu kanálu** zobrazí se stránka vlastností konfigurace.
+   **Kanál obsahu obrazu** se zobrazí stránka pro konfiguraci vlastností.
 
-3.  Konfiguraci kanálu bitové kopie obsahu k vygenerování mipmaps. Na **vlastnosti konfigurace** > **bitové kopie obsahu kanálu** > **Obecné** nastavte **generovat Mips** vlastnost **Ano (nebo generatemips)**.
+3.  Nakonfigurujte kanál obsahu obrázku ke generování Mipmap. Na **vlastnosti konfigurace** > **kanál obsahu obrazu** > **Obecné** nastavte **generovat Mips** vlastnost **Ano (/ generatemips)**.
 
 4.  Vyberte **OK**.
 
-Při sestavování projektu bitové kopie obsahu kanálu převede zdrojové bitové kopie z formátu pracovní výstupní formát, který jste zadali, MIP úrovní. Výsledek zkopírován do výstupního adresáře projektu.
+Při vytváření projektu kanál obsahu obrázku tak převede zdrojový obraz z pracovního formátu na výstupní formát, který jste zadali, včetně úrovní MIP. Výsledek je zkopírován do výstupního adresáře projektu.
