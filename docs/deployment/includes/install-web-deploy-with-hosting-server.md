@@ -1,21 +1,21 @@
-Nasazení webu 3.6 pro hostování servery poskytuje další konfiguraci funkce, které umožňují vytvářet soubor nastavení publikování v uživatelském rozhraní.
+Nástroj nasazení webu 3.6 pro servery hostující poskytuje další konfiguraci funkce, které umožňují vytváření souboru s nastavením publikování v uživatelském rozhraní.
 
-1. Pokud máte nasazení 3.6 Web, který je již nainstalována v systému Windows Server, odinstalujte ji pomocí **ovládací panely** > **programy** > **odinstalační Program**.
+1. Pokud máte webové nasazení 3.6 už nainstalovaná v systému Windows Server, odinstalujte ji pomocí **ovládací panely** > **programy** > **odinstalační Program**.
 
 1. Dále nainstalujte 3.6 nasadit Web pro hostování servery v systému Windows Server.
 
-    Instalovat nasazení webu pro hostování servery, použijte [instalačního programu webové platformy (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). (Odkaz Web Platform Installer ze služby IIS, vyberete **IIS** v levém podokně Správce serveru. Pravým tlačítkem na server a vyberte **Správce Internetové informační služby (IIS)**.)
+    Chcete-li nainstalovat nasazení webu pro hostování servery, použijte [instalačního programu webové platformy (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). (Chcete-li najít odkaz na Web Platform Installer ze služby IIS, vyberte **IIS** v levém podokně Správce serveru. Klikněte pravým tlačítkem na server a vyberte **Správce Internetové informační služby (IIS)**.)
 
-    V instalačním programu webové platformy můžete najít **nasazení webu pro hostování servery** na kartě aplikace.
+    Instalace webové platformy najdete **nasazení webu pro hostování servery** na kartě aplikace.
 
-1. Pokud jste již neinstalovali **IIS skripty a nástroje správy**, nyní nainstalovat.
+1. Pokud jste ještě nenainstalovali **IIS skripty a nástroje správy**, jeho instalaci.
 
-    Přejděte na **vybrat role serveru** > **webového serveru (IIS)** > **nástroje pro správu**a potom vyberte **skriptů pro správu služby IIS. Nástroje a** role, klikněte na tlačítko **Další**a poté nainstalujte roli.
+    Přejděte na **vybrat role serveru** > **webového serveru (IIS)** > **nástroje pro správu**a pak vyberte **skriptů pro správu služby IIS Nástroje a** roli, klikněte na tlačítko **Další**a potom nainstalujte roli.
 
-    ![Instalace nástrojů a skriptů pro správu služby IIS.](../../deployment/media/tutorial-iis-management-scripts-and-tools.png)
+    ![Nainstaluje nástroje a skripty pro správu služby IIS](../../deployment/media/tutorial-iis-management-scripts-and-tools.png)
 
-    Skripty a nástroje jsou potřeba povolit generování soubor nastavení publikování.
+    Skripty a nástroje, je potřeba povolit generování souboru s nastavením publikování.
 
-1. (Volitelné) Ověřte, zda Web Deploy je spuštěna správně otevřením **ovládací panely > systém a zabezpečení > Nástroje pro správu > služby** a ujistěte se, že **Služba agenta pro nasazení webu** běží (na název služby se liší v starší verze).
+1. (Volitelné) Ověřte, že nasazení webu běží správně tak, že otevřete **ovládací panely > systém a zabezpečení > Nástroje pro správu > služby** a ujistěte se, že **webová služba agenta nasazení** běží () název služby se liší ve starších verzích).
 
-    Pokud není spuštěna Služba agenta, spusťte ji. Pokud není přítomen vůbec, přejděte na **ovládací panely > programy > odinstalovat program**, Najít **Microsoft Web Deploy <version>** . Zvolit **změnu** instalaci a ujistěte se, že zvolíte **bude nainstalována na místní pevný disk** pro součásti nástroje nasazení webu. Proveďte kroky instalace změnu.
+    Pokud služba agent není spuštěna, spusťte ji. Pokud není k dispozici na všech, přejděte na **ovládací panely > programy > odinstalovat program**, Najít **Microsoft Web Deploy <version>** . Zvolit **změnu** instalace a ujistěte se, že jste zvolili **se nainstaluje na místní pevný disk** pro součásti nasazení webu. Dokončete instalaci změnit.

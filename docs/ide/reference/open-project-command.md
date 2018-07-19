@@ -1,11 +1,12 @@
 ---
-title: Otevřít projekt – příkaz
+title: otevřít projekt – příkaz
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.openproject
+- file.opensolution
 helpviewer_keywords:
 - op command
 - File.OpenProject command
@@ -16,15 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6663ef73f87ea0fa80eb16a3deef6765265882db
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 0ff848ded38b0f59d3894ec4f78dd79ec9d182b8
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704129"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924145"
 ---
 # <a name="open-project-command"></a>Otevřít projekt – příkaz
-Otevře existující projekt.
+
+Otevře existující projekt nebo řešení.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,27 +35,31 @@ File.OpenProject filename
 ```
 
 ## <a name="arguments"></a>Arguments
- `filename`
 
- Požadováno. Úplné a cesta k souboru název projektu otevřete.
+`filename`
 
- Syntaxe `filename` argument vyžaduje, aby cesty obsahující mezery, použijte uvozovky.
+Požadováno. Úplnou cestu a název souboru název projektu nebo řešení mohlo být otevřeno.
+
+> [!NOTE]
+> Syntaxe `filename` argument vyžaduje, aby cesty, které obsahují mezery, použijte uvozovky.
 
 ## <a name="remarks"></a>Poznámky
- Automatické doplňování, pokusí se najít správnou cestu a název souboru při psaní.
 
- Tento příkaz není k dispozici při ladění.
+Automatické dokončování, pokusí se najít správnou cestu a název souboru během psaní.
+
+Tento příkaz není k dispozici při ladění.
 
 ## <a name="example"></a>Příklad
- Otevře se v tomto příkladu [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu, Test1.
+
+Následující příklad otevře projekt jazyka Visual Basic **Test1**:
 
 ```cmd
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Příkazové okno](../../ide/reference/command-window.md)
+- [Okno příkazového řádku](../../ide/reference/command-window.md)
 - [Pole najít/příkaz](../../ide/find-command-box.md)
-- [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio aliasy příkazů](../../ide/reference/visual-studio-command-aliases.md)
