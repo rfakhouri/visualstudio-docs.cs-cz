@@ -11,43 +11,43 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6ed3212affbcc7cee3587780116d435b19a4706f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0841faf5e63b6c4108b9f65777416ded63227bb9
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968629"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152425"
 ---
-# <a name="edit-load-tests"></a>Upravit zátěžových testů
+# <a name="edit-load-tests"></a>Úpravy zátěžových testů
 
-Zátěžové testy spustit testy výkonnosti webu nebo testy jednotek k simulaci mnoha uživateli přístup k serveru ve stejnou dobu. Zátěžový test umožňuje přístup k datům zátěže a výkonu aplikace. Zátěžový test lze nakonfigurovat pro emulaci rozličných podmínek zátěže, jako je uživatelská zátěž nebo typ sítě.
+Zátěžové testy spustit testy webového výkonu nebo jednotkových testů ke simulace mnoha uživatelů přistupujících na server ve stejnou dobu. Zátěžový test umožňuje přístup k datům zátěže a výkonu aplikace. Zátěžový test lze nakonfigurovat pro emulaci rozličných podmínek zátěže, jako je uživatelská zátěž nebo typ sítě.
 
 > [!NOTE]
-> Zátěžové testování je k dispozici pouze v edici Enterprise systému Visual Studio 2017.
+> Zátěžové testování je k dispozici pouze v edici Enterprise sady Visual Studio 2017.
 
-Zátěžový test je definována *scénáře*, *čítače sady*, a *spustit nastavení*. Na následujícím obrázku vysvětluje rozdíly mezi [scénáře](../test/edit-load-test-scenarios.md), [čítače sady](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md), a [spustit nastavení](../test/load-test-run-settings-properties.md):
+Zátěžový test je definován *scénáře*, *sady čítačů*, a *parametry běhu*. Na následujícím obrázku vysvětluje rozdíly mezi [scénáře](../test/edit-load-test-scenarios.md), [sady čítačů](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md), a [parametry běhu](../test/load-test-run-settings-properties.md):
 
-![Architektura testu zatížení](../test/media/load_test_editor.png)
+![Architektura zátěžového testu](../test/media/load_test_editor.png)
 
-## <a name="edit-load-test-scenario-settings"></a>Upravit nastavení načítání testovací scénář
+## <a name="edit-load-test-scenario-settings"></a>Upravit nastavení scénáře zátěžového testu
 
-Scénář se používá k modelu, jak skupiny uživatelů komunikuje s serverová aplikace. Scénáře se skládají ze vzoru zatížení, modelu kombinace testů, kombinace testů, kombinace prohlížečů a kombinace sítí. Zátěžový test může mít více než jeden scénář a jeden scénář může obsahovat testy výkonnosti webu a testy částí. Seskupením podobných nastavení umožňuje scénář seskupit podobné testy a spustit je současně.
+Scénáře se používají k modelování způsobu interakce skupiny uživatelů se serverovou aplikací. Scénáře se skládají ze vzoru zatížení, modelu kombinace testů, kombinace testů, kombinace prohlížečů a kombinace sítí. Zátěžový test může mít více než jeden scénář a jeden scénář může obsahovat testy výkonnosti webu a testy částí. Seskupením podobných nastavení umožňuje scénář seskupit podobné testy a spustit je současně.
 
 Další informace najdete v tématu [úpravy scénářů zátěžových testů](../test/edit-load-test-scenarios.md) a [vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md).
 
 ## <a name="configure-and-manage-performance-counter-sets"></a>Konfigurace a Správa sad čítačů výkonu
 
-Zátěžové testy zadat sady s názvem čítače, uspořádané podle technologie, které jsou užitečné při analýze dat čítačů výkonu. Sady čítačů zahrnují zátěžový Test, IIS, ASP.NET a SQL. Když vytvoříte zátěžový test s načíst testování Průvodce novým, počáteční sadu předdefinovaných a důležité čítače je nakonfigurován pro počítače, které zadáte pro zahrnutí do zátěžový test. Můžete spravovat vaše čítače v editoru zátěžových testů.
+Zátěžové testy poskytují pojmenované sady čítačů organizované podle technologie, které jsou užitečné při analýze dat čítače výkonu. Nastavení čítače zahrnují testu zatížení, IIS, ASP.NET a SQL. Když vytvoříte zátěžový test pomocí **nového Průvodce zátěžovým testem**, Počáteční sada předdefinovaných a důležitých čítačů je nakonfigurován pro počítače, které zahrnete do zátěžového testu. Můžete spravovat čítače v **editoru zátěžových testů**.
 
-Další informace najdete v tématu [určení sad čítačů a mezních pravidel pro počítače v zátěžovém testu](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Další informace najdete v tématu [určení sad čítačů a mezních pravidel pro počítače v rámci zátěžového testu](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
-## <a name="configure-and-manage-load-test-run-settings"></a>Konfigurovat a spravovat nastavení testu zatížení
+## <a name="configure-and-manage-load-test-run-settings"></a>Konfigurace a Správa parametrů spuštění zátěžového testu
 
-Spuštění nastavení jsou vlastnosti, které ovlivňují způsob spuštění zátěžového testu. Spuštění nastavení jsou uspořádány do kategorií v okně Vlastnosti.
+Parametry spuštění představují vlastnosti, které ovlivňují způsob, jakým běží zátěžové testy. Parametry spuštění jsou uspořádány podle kategorií v **vlastnosti** okna.
 
-Další informace najdete v tématu [konfigurace parametrů běhu testu zatížení](../test/configure-load-test-run-settings.md) a [vlastnosti nastavení spustit Test zatížení](../test/load-test-run-settings-properties.md).
+Další informace najdete v tématu [konfigurovat zátěžovým testem nastavení](../test/configure-load-test-run-settings.md) a [zátěžového testu spusťte nastavení](../test/load-test-run-settings-properties.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analýza mezních pravidel](../test/analyze-threshold-rule-violations-in-load-tests.md)

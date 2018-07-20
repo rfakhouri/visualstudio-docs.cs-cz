@@ -1,0 +1,31 @@
+- name: Dokumentace Node.js
+- name: Rychlý start
+  items:
+    - name: Vytvoření projektu Node.js
+      href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json
+    - name: Vytvoření projektu Vue.js
+      href: quickstart-vuejs-with-nodejs.md
+- name: Kurzy
+  items:
+    - name: Vytvoření aplikace Node.js přes Express
+      href: tutorial-nodejs.md
+    - name: Vytvoření aplikace Node.js přes React
+      href: tutorial-nodejs-with-react-and-jsx.md
+    - name: Publikování do App Service pro Linux
+      href: publish-nodejs-app-azure.md
+- name: Návody
+  items:
+    - name: Vytvoření aplikace Vue.js
+      href: create-application-with-vuejs.md
+    - name: Správa balíčků npm
+      href: npm-package-management.md
+    - name: Vývoj bez projektů nebo řešení (Otevřít složku)
+      href: develop-javascript-code-without-solutions-projects.md
+    - name: Testování jednotek javascriptového kódu
+      href: unit-testing-javascript-with-visual-studio.md
+    - name: JavaScript IntelliSense
+      href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
+- name: Prostředky
+  items:
+    - name: Stránka Wiki pro nástroje Node.js
+      href: 'https://github.com/Microsoft/nodejstools'

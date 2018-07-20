@@ -1,5 +1,5 @@
 ---
-title: SDK – Element (MSBuild) | Microsoft Docs
+title: SDK – Element (MSBuild) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/25/2018
 ms.technology: msbuild
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d674e7613898816f905e0d0a11bdc2484cf4f25
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 15084b21c80967a5ebd170e175adf09d9623be5b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325320"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154090"
 ---
-# <a name="sdk-element-msbuild"></a>Sdk – element (MSBuild)
+# <a name="sdk-element-msbuild"></a>SDK – element (MSBuild)
 Odkazy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu sady SDK.  
 
  \<Project>  
@@ -47,18 +47,18 @@ Odkazy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_
 
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Name`|Požadovaný atribut.<br /><br /> Název projektu sady SDK.|  
+|`Name`|Požadovaný atribut.<br /><br /> Název projektu sadu SDK.|  
 |`Version`|Nepovinný atribut.<br /><br /> Verze projektu sady SDK|  
 
-### <a name="child-elements"></a>Podřízené elementy  
+### <a name="child-elements"></a>Podřízené prvky  
  Žádné
 
-### <a name="parent-elements"></a>Nadřazené elementy  
+### <a name="parent-elements"></a>Nadřazené prvky  
  |Prvek|Popis|  
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
 
-## <a name="see-also"></a>Viz také  
- [Postupy: referenční projektu MSBuild SDK](../msbuild/how-to-use-project-sdk.md)   
+## <a name="see-also"></a>Viz také:  
+ [Postupy: odkaz sadu SDK projektu MSBuild](../msbuild/how-to-use-project-sdk.md)   
  [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)   
  [MSBuild](../msbuild/msbuild.md)

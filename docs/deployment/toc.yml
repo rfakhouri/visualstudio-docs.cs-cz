@@ -19,9 +19,9 @@
     - name: .NET
       items:
         - name: Nasazení aplikace .NET Core pomocí nástroje Publish
-          href: /dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /dotnet/core/deploying/deploy-with-vs
         - name: Balíček desktopové aplikace pro Microsoft Store (přemostění na desktop)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: Nasazení desktopové aplikace pomocí technologie ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Vytváření aplikací ClickOnce z příkazového řádku
@@ -29,15 +29,15 @@
     - name: ASP.NET
       items:
         - name: Publikování aplikace ASP.NET Core do Azure
-          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
+        - name: Nasazení do služby IIS pomocí rozšíření Nasazení webu
+          href: deploy-iis-with-web-deploy.md
         - name: Import nastavení publikování a nasazení do Azure
           href: tutorial-import-publish-settings-azure.md
         - name: Import nastavení publikování a nasazení do služby IIS
           href: tutorial-import-publish-settings-iis.md
-        - name: Nasazení do služby IIS pomocí rozšíření Nasazení webu
-          href: deploy-iis-with-web-deploy.md
         - name: Průběžné nasazování ASP.NET Core do Azure s Gitem
-          href: /aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /aspnet/core/publishing/azure-continuous-deployment
         - name: Publikování do Kubernetes pomocí rozšíření Visual Studio Kubernetes Tools
           href: tutorial-kubernetes-tools.md
     - name: Nativní
@@ -45,21 +45,21 @@
         - name: Nasazení ve Visual C++...
           href: /cpp/ide/deployment-in-visual-cpp
         - name: Balíček desktopové aplikace pro Microsoft Store (přemostění na desktop)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: Nasazení nativní aplikace pomocí technologie ClickOnce...
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
       items:
         - name: Balíček aplikace pro UPW pomocí sady Visual Studio
-          href: /windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: Publikování na webu Azure pomocí Nasazení webu
-          href: 'https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json'
+        - name: Publikování do App Service pro Linux
+          href: /visualstudio/javascript/publish-nodejs-app-azure
     - name: Python
       items:
         - name: Publikování do Azure App Service
-          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio
 - name: Návody
   items:
     - name: ClickOnce – zabezpečení a nasazení

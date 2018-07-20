@@ -21,24 +21,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808439"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152497"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Návod: Vytvoření vlastního bootstrapperu s dotazem souvisejícím se soukromím
 Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestavení pomocí novější verze souboru a verze sestavení k dispozici. Pokud chcete mít jistotu, že vaši zákazníci souhlas pro toto chování, můžete zobrazit soukromím k nim. Potom se můžete zvolit, jestli chcete udělit oprávnění k aplikaci automaticky aktualizovat. Pokud aplikace nemá povolný automaticky aktualizovat, ji není možné nainstalovat.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  
   
 -   Visual Studio 2010.  
   
-## <a name="create-an-update-consent-dialog-box"></a>Vytvořit dialogové okno souhlasu s Update  
+## <a name="create-an-update-consent-dialog-box"></a>Vytvořit dialogové okno s souhlas aktualizace  
  Chcete-li zobrazit soukromím, vytvořte aplikaci, která se čtenáře dotáže na souhlas s automatickými aktualizacemi pro aplikaci.  
   
 #### <a name="to-create-a-consent-dialog-box"></a>Chcete-li vytvořit dialogové okno souhlasu  
@@ -116,7 +116,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
   
     2.  Na **projektu** nabídky, klikněte na tlačítko **přidat modul**a potom klikněte na tlačítko **přidat**.  
   
-    3.  V souboru kódu Module1.vb přidejte následující kód.  
+    3.  V *Module1.vb* soubor kódu, přidejte následující kód.  
   
          [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
@@ -131,7 +131,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
   
      Visual C# pouze pro vývojáře:  
   
-     Otevřete soubor Program.cs a přidejte následující kód.  
+     Otevřít *Program.cs* soubor kódu a přidejte následující kód.  
   
      [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
@@ -142,29 +142,29 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
   
  Tento postup ukazuje, jak vytvořit vlastní balíček zaváděcího nástroje tak, že vytvoříte následující dokumenty:  
   
--   Product.xml manifest souboru popsat její obsah zaváděcí nástroj.  
+-   A *product.xml* soubor manifestu pro popis obsahu zaváděcího nástroje.  
   
--   Soubor manifestu package.xml seznam lokalizace specifických aspektů vašeho balíčku, jako jsou řetězce a licenční podmínky pro software.  
+-   A *package.xml* soubor manifestu do seznamu lokalizace specifických aspektů vašeho balíčku, jako jsou řetězce a licenční podmínky pro software.  
   
 -   Dokument pro licenční podmínky pro software.  
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>Krok 1: Vytvoření adresáře zaváděcího nástroje  
   
-1.  Vytvořte adresář **UpdateConsentDialog** v %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
+1.  Vytvořte adresář **UpdateConsentDialog** v *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.  
   
     > [!NOTE]
     >  Budete potřebovat oprávnění správce k vytvoření této složky.  
   
-2.  V adresáři UpdateConsentDialog vytvořte podadresář s názvem en.  
+2.  V *UpdateConsentDialog* adresáře, vytvořte podadresář s názvem *en*.  
   
     > [!NOTE]
     >  Vytvořte nový adresář pro každé národní prostředí. Například můžete přidat podadresáře pro národní prostředí cs a Německo. Tyto adresáře by obsahoval francouzštinu a češtinu řetězce a jazykových sad v případě potřeby.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Krok 2: Vytvoření souboru manifestu product.xml  
   
-1.  Vytvořte textový soubor s názvem `product.xml`.  
+1.  Vytvořte textový soubor s názvem *product.xml*.  
   
-2.  V souboru product.xml přidejte následující kód XML. Ujistěte se, že nedojde k přepsání existujícího kódu XML.  
+2.  V *product.xml* přidejte následující kód XML. Ujistěte se, že nedojde k přepsání existujícího kódu XML.  
   
     ```xml  
     <Product  
@@ -194,9 +194,9 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
   
 #### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Krok 3: Vytvoření manifestu package.xml souborů a softwaru licenční podmínky  
   
-1.  Vytvořte textový soubor s názvem `package.xml`.  
+1.  Vytvořte textový soubor s názvem *package.xml*.  
   
-2.  V souboru package.xml přidejte následující kód XML k definování národní prostředí a zahrnují licenční podmínky pro software. Ujistěte se, že nedojde k přepsání existujícího kódu XML.  
+2.  V *package.xml* přidejte následující kód XML k definování národní prostředí a zahrnují licenční podmínky pro software. Ujistěte se, že nedojde k přepsání existujícího kódu XML.  
   
     ```xml  
     <Package   
@@ -220,14 +220,14 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
   
 3.  Uložte soubor do podadresáře en v UpdateConsentDialog zaváděcí nástroj.  
   
-4.  Vytvořte dokument s názvem eula.rtf pro licenční podmínky pro software.  
+4.  Vytvořit dokument s názvem *eula.rtf* pro licenční podmínky pro software.  
   
     > [!NOTE]
     >  Licenční podmínky pro software by měl obsahovat informace o licencích, záruk, závazků a místními zákony. Tyto soubory by měl být specifické pro národní prostředí, proto se ujistěte, že je soubor uložen ve formátu, který podporuje znaky znakové sady MBCS a UNICODE. Vyhledejte právního oddělení o obsah licenčních podmínek softwaru.  
   
-5.  Uložte dokument do en podadresář v adresáři UpdateConsentDialog zaváděcí nástroj.  
+5.  Uložte dokument do podadresáře en v *UpdateConsentDialog* adresáře zaváděcího nástroje.  
   
-6.  V případě potřeby vytvořte nový soubor manifestu package.xml a nový dokument eula.rtf pro licenční podmínky pro software pro každé národní prostředí. Pokud jste vytvořili pro národní prostředí cs a de, vytvořte samostatné soubory manifestu package.xml a licenční podmínky pro software a uložit je do podadresáře fr a Německo.  
+6.  V případě potřeby vytvořte novou *package.xml* manifest souboru a nový *eula.rtf* dokumentu licenční podmínky pro software pro každé národní prostředí. Pokud jste vytvořili pro národní prostředí cs a de, vytvořte samostatné soubory manifestu package.xml a licenční podmínky pro software a uložit je do podadresáře fr a Německo.  
   
 ## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Nastavení aktualizace aplikace souhlasu jako předpoklad  
  V sadě Visual Studio můžete nastavit aplikaci souhlas aktualizace jako předpoklad.  
@@ -260,7 +260,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
   
 4.  Pokud výstup publikování se neotevře automaticky, přejděte na výstup publikování.  
   
-5.  Spusťte Setup.exe program.  
+5.  Spustit *Setup.exe* programu.  
   
      Instalační program zobrazí dialogové okno souhlasu aktualizace softwaru licenční smlouvy.  
   
@@ -286,7 +286,7 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
   
 4.  Pokud výstup publikování se neotevře automaticky, přejděte na výstup publikování.  
   
-5.  Spusťte Setup.exe program.  
+5.  Spustit *Setup.exe* programu.  
   
      Instalační program zobrazí dialogové okno souhlasu aktualizace softwaru licenční smlouvy.  
   
@@ -300,9 +300,9 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
   
 8.  Pokud se zobrazí dialogové okno aplikace provést instalaci, klikněte na tlačítko **nainstalovat**.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Nezbytné součásti nasazení aplikace](../deployment/application-deployment-prerequisites.md)   
- [Vytváření balíčků Bootstrapperu](../deployment/creating-bootstrapper-packages.md)   
+ [Vytváření balíčků bootstrapperu](../deployment/creating-bootstrapper-packages.md)   
  [Postupy: vytvoření manifestu produktu](../deployment/how-to-create-a-product-manifest.md)   
  [Postupy: vytvoření manifestu balíčku](../deployment/how-to-create-a-package-manifest.md)   
- [Referenční schéma balíčku a produktu](../deployment/product-and-package-schema-reference.md)
+ [Referenční dokumentace schématu produktů a balíčků](../deployment/product-and-package-schema-reference.md)

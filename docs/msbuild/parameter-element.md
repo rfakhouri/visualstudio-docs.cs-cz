@@ -1,5 +1,5 @@
 ---
-title: Parameter – Element | Microsoft Docs
+title: Parameter – Element | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 03/13/2017
 ms.technology: msbuild
@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18db5f6cd5c2bccaca73161713af15a88175bf49
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2d2407d37191e5a083080db579bc18b91b6c9449
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302600"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151743"
 ---
 # <a name="parameter-element"></a>Parameter – element
-Obsahuje informace o určitém parametru pro úlohu, která je generován `UsingTask``TaskFactory`.  Název elementu je název parametru.  Chcete-li – další informace, najdete v tématu [usingtask – Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+Obsahuje informace o určitý parametr u úkolu, který je generován `UsingTask` `TaskFactory`.  Název elementu je název parametru.  Další informace najdete v tématu [usingtask – element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
 
  \<Project>  
  \<Usingtask – >  
- \<ParameterGroup >  
+ \<Parametergroup – >  
  \<Parametr >  
 
 ## <a name="syntax"></a>Syntaxe  
@@ -49,18 +49,18 @@ Obsahuje informace o určitém parametru pro úlohu, která je generován `Using
 
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`ParameterType`|Nepovinný atribut.<br /><br /> Typ formátu .NET parametru, například "System.String".|  
+|`ParameterType`|Nepovinný atribut.<br /><br /> Typ formátu .NET parametru, například `System.String`.|  
 |`Output`|Volitelný logický atribut.<br /><br /> Pokud `true`, tento parametr je výstupní parametr pro úlohu. Výchozí hodnota je `false`.|  
 |`Required`|Volitelný logický atribut.<br /><br /> Pokud `true`, tento parametr je povinný parametr pro úlohu. Výchozí hodnota je `false`.|  
 
-### <a name="child-elements"></a>Podřízené elementy  
+### <a name="child-elements"></a>Podřízené prvky  
  Žádné  
 
-### <a name="parent-elements"></a>Nadřazené elementy  
+### <a name="parent-elements"></a>Nadřazené prvky  
 
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Obsahuje volitelný seznam parametrů, které bude k dispozici na úloha, která je generován `UsingTask``TaskFactory`.|  
+|[ParameterGroup](../msbuild/parametergroup-element.md)|Obsahuje volitelný seznam parametrů, které bude k dispozici na na úkol, který je generován `UsingTask` `TaskFactory`.|  
 
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje způsob použití `Parameter` elementu.  
@@ -78,7 +78,7 @@ Obsahuje informace o určitém parametru pro úlohu, která je generován `Using
 </UsingTask>  
 ```  
 
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Úlohy](../msbuild/msbuild-tasks.md)   
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
  [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)

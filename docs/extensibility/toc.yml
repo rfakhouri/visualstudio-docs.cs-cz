@@ -296,7 +296,7 @@
           href: requiredframeworkversion-element-visual-studio-templates.md
         - name: ShowByDefault (šablony sady Visual Studio)
           href: showbydefault-visual-studio-templates.md
-        - name: SolutionFolder – element (šablony sady Visual Studio)
+        - name: SolutionFolder – element (šablony Visual Studia)
           href: solutionfolder-element-visual-studio-templates.md
         - name: SortOrder – element (šablony sady Visual Studio)
           href: sortorder-element-visual-studio-templates.md
@@ -425,6 +425,8 @@
       href: getting-started-with-the-vsix-project-template.md
     - name: 'Návod: Publikování rozšíření sady Visual Studio'
       href: walkthrough-publishing-a-visual-studio-extension.md
+    - name: 'Návod: Publikování rozšíření sady Visual Studio pomocí příkazového řádku'
+      href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
     - name: Přidání závislosti k balíčku VSIX
       href: how-to-add-a-dependency-to-a-vsix-package.md
     - name: Anatomie balíčku VSIX

@@ -24,6 +24,8 @@
       href: how-to-debug-managed-and-native-code.md
     - name: Zobrazení snímků pomocí zpětného kroku IntelliTrace
       href: how-to-use-intellitrace-step-back.md
+    - name: Ladění pro naprosté začátečníky
+      href: debugging-absolute-beginners.md
 - name: Návody
   items:
     - name: Procházení kódu ladicím programem
@@ -105,8 +107,6 @@
           items:
             - name: Použití úprav v režimu pozastavení operace Upravit a pokračovat
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-            - name: Nepodporované úpravy operace Upravit a pokračovat ve Visual Basicu
-              href: unsupported-edits-in-visual-basic-edit-and-continue.md
         - name: 'Nepodporovaná operace Upravit a pokračovat v F#'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Zobrazení dat ladicího programu
@@ -826,5 +826,3 @@
   items:
     - name: Novinky v ladicím programu sady Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
-    - name: Ladění pro naprosté začátečníky
-      href: debugging-absolute-beginners.md

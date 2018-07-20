@@ -1,9 +1,9 @@
 ---
-title: 'Postupy: reakce na ladicí program za běhu | Microsoft Docs'
+title: 'Postupy: reakce na ladicí program Just-In-Time | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 05/23/17
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
@@ -13,41 +13,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21301bd7fce15152c8beb825f749b3d05fd0837a
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5cec8887ddf2023a8abd08f409b93f47efdc7001
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281495"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155565"
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Postupy: reakce na ladicí program za běhu
 
-Akce, které byste měli vzít až uvidíte pouze v době dialogové okno ladicí program závisí na co chcete udělat:
+Akce, které byste měli provést, když se zobrazí Just-in-Time dialogové okno ladicího programu závisí na co se pokoušíte provést:
 
-#### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Pokud chcete opravit nebo ladění chyb (Visual Studio uživatelů)
+#### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Pokud chcete opravit nebo ladění chyby (uživatelům aplikace Visual Studio)
 
-- Musíte mít [nainstalovanou sadu Visual Studio](http://visualstudio.microsoft.com) Chcete-li zobrazit podrobné informace o chybě a pokusit se je ladění. Další informace najdete v tématu [ladění pomocí ladicího programu JIT](../debugger/debug-using-the-just-in-time-debugger.md). Pokud nelze vyřešit chyby a opravte aplikace, požádejte vlastníka aplikace opravte případné chyby.
+- Musíte mít [nainstalovanou sadu Visual Studio](http://visualstudio.microsoft.com) Chcete-li zobrazit podrobné informace o této chybě a zkuste ho ladit. Další informace najdete v tématu [ladění pomocí ladicího programu za běhu](../debugger/debug-using-the-just-in-time-debugger.md). Pokud nelze vyřešit chyby a opravit aplikaci, obraťte se na vlastníka aplikace tuto chybu napravíme.
 
-#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Pokud chcete zabránit zobrazování dialogových oken ladicího programu JIT
+#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Pokud chcete zabránit zobrazování dialogových oken ladicího programu za běhu
 
-Můžete provést kroky, aby se zabránilo pouze v době ladicí program dialogové okno ze storu. Pokud aplikace zpracovává chyby, můžete aplikaci spustit normálně.
+Můžete provést kroky, aby se zabránilo Just-in-Time ladicí program dialogové okno nezobrazovalo. Pokud aplikace zpracuje chybu, můžete tuto aplikaci spustit normálně.
 
 1. (Webové aplikace) Pokud se pokoušíte spustit webovou aplikaci, můžete zakázat ladění skriptů.
 
-    Pro Internet Explorer nebo Microsoft Edge zakážete ladění skriptů v dialogovém okně Možnosti Internetu. Z těchto nastavení můžete přejít **ovládací panely** > **síť a Internet** > **Možnosti Internetu** (přesný postup závisí na vaší verze systému Windows a prohlížeč).
+    Pro Internet Explorer nebo Microsoft Edge zakážete ladění skriptů v dialogovém okně Možnosti Internetu. Dostanete z těchto nastavení **ovládací panely** > **síť a Internet** > **Možnosti Internetu** (přesný postup závisí na vaší verze Windows a prohlížeči).
 
     ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
 
-    Znovu otevřete webovou stránku, kde jste našli chyba. Pokud toto nastavení problém nevyřeší, obraťte se na vlastníka webové aplikace vyřešit problém.
+    Znovu otevřete webovou stránku, kde jste našli chybu. Pokud toto nastavení problém nevyřeší, obraťte se na vlastníka webové aplikace k vyřešení problému.
 
-3. (Uživatelé sady visual Studio) Pokud máte nainstalovanou sadu Visual Studio (nebo pokud bylo dřív nainstalované a odebrali), [ladění zakázat pouze za běhu](../debugger/debug-using-the-just-in-time-debugger.md) a pokuste se znovu spusťte aplikaci.
+3. (Uživatelům aplikace visual Studio) Pokud máte nainstalovanou sadu Visual Studio (nebo pokud jste měli dříve nainstalovaná a tento alias odebrali), [zakázání Just-in-Time ladění](../debugger/debug-using-the-just-in-time-debugger.md) a pokuste se znovu spusťte aplikaci.
 
     > [!IMPORTANT]
-    > Pokud zakážete těsně za běhu ladění a aplikace, dojde k neošetřené výjimce (chyba), budou buď zobrazit dialogové okno Standardní chyba místo nebo aplikace bude k chybě nebo zablokování. Aplikace se normálně nespustí, dokud se nevyřeší chyby (podle vy nebo vlastník aplikace).
+    > Pokud zakážete Just-in-Time ladění a aplikace dojde neošetřené výjimce (chyba), buď zobrazí se dialogové okno Standardní chyba místo nebo bude k chybě nebo zablokování aplikace. Aplikace se nespustí obvykle, dokud se nevyřeší chyby (podle vy nebo vlastník aplikace).
 
-2. (ASP.NET a IIS) Pokud hostujete ASP.NET webové aplikace ve službě IIS, zakážete ladění na straně serveru.
+2. (Technologie ASP.NET a IIS) Pokud hostujete webové aplikace v ASP.NET ve službě IIS, zakážete ladění na straně serveru.
 
-    Ve Správci služby IIS klikněte pravým tlačítkem na uzel serveru a zvolte **přepnout na zobrazení funkcí**. V části, ASP.NET, vyberte **kompilace rozhraní .NET** a ujistěte se, zvolíte **False** jako chování ladění (postup se liší v starší verze služby IIS).
+    Ve Správci služby IIS klikněte pravým tlačítkem na uzel serveru a zvolte **přepnout na zobrazení funkcí**. V části, ASP.NET, zvolte **kompilace .NET** a zkontrolujte, že zvolíte **False** jako chování ladění (postup se liší ve starších verzích služby IIS).
 
 ## <a name="see-also"></a>Viz také
  [Základy ladicího programu](../debugger/debugger-basics.md)

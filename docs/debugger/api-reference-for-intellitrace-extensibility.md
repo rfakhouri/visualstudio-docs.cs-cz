@@ -12,22 +12,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0542912c15a92728cd7476b7482782fa7cf65fb2
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 03f86c1e93de5a2443a91d047c68528f3ec49b08
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433142"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153501"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Referenční dokumentace k rozhraní API pro rozšiřitelnost technologie IntelliTrace
+
 Rozšiřitelnost technologie IntelliTrace rozhraní API podle informací uvedených v této části slouží ke čtení a dekódovat soubory .itrace ve vaší aplikaci.  
   
-## <a name="in-this-section"></a>V tomto oddílu  
+## <a name="in-this-section"></a>V tomto oddílu
+
  Toto rozhraní API pro rozšiřitelnost technologie IntelliTrace jsou obsaženy v jednom oboru názvů  
   
--   <xref:Microsoft.VisualStudio.IntelliTrace>  
+- <xref:Microsoft.VisualStudio.IntelliTrace>  
   
-## <a name="related-sections"></a>Související oddíly  
+## <a name="related-sections"></a>Související oddíly
+
  [IntelliTrace](../debugger/intellitrace.md)  
  Poskytuje informace o tom, jak ladit pomocí nástroje IntelliTrace.  
   

@@ -1,3 +1,5 @@
+- name: Dokumentace k analýze kódu
+  href: index.md
 - name: Přehled
   items:
     - name: Analýza kódu pro spravovaný kód
@@ -6,7 +8,7 @@
       href: roslyn-analyzers-overview.md
     - name: Analýza kódu pro C/C++
       href: code-analysis-for-c-cpp-overview.md
-    - name: Měření udržitelnosti kódu pomocí metrik kódu
+    - name: Měření udržovatelnosti kódu pomocí metrik kódu
       href: code-metrics-values.md
 - name: Rychlý start
   items:
@@ -149,7 +151,7 @@
               href: ca5350-do-not-use-weak-cryptographic-algorithms.md
             - name: 'CA5351: Nepoužívejte poškozené kryptografické algoritmy'
               href: ca5351-do-not-use-broken-cryptographic-algorithms.md
-        - name: Upozornění návrhu
+        - name: Upozornění ohledně návrhu
           href: design-warnings.md
           items:
             - name: 'CA1000: Nedeklarujte statické členy v obecných typech'

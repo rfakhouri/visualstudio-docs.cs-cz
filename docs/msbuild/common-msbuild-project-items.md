@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83cdf4071be735636c9f2ffb559c68d284685892
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 900241a25fabc259fb19ffa2b75f2fa12ad6e517
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945517"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152552"
 ---
 # <a name="common-msbuild-project-items"></a>Společné položky projektu nástroje MSBuild
 V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], položka je pojmenovaný odkaz na jeden nebo více souborů. Položky obsahují metadat – například názvy souborů, cesty a čísel verzí. Všechny typy v projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mají společnou několik položek. Tyto položky jsou definovány v souboru *Microsoft.Build.CommonTypes.xsd*.  
@@ -78,6 +78,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 |Název|Volitelný řetězec. Zobrazovaný název odkazu.|  
 |Projekt|Volitelný řetězec. Identifikátor GUID pro odkaz ve formuláři {12345678-1234-1234-1234-1234567891234}.|  
 |Balíček|Volitelný řetězec. Cesta souboru projektu, který se odkazuje.|  
+|ReferenceOutputAssembly|Nepovinný datový typ boolean. Pokud nastavena na `false`, neobsahuje výstup Odkazovaný projekt jako [odkaz](#Reference) tohoto projektu, ale přesto se zajistí, že jiný projekt sestavení před tímto. Výchozí hodnota je `true`.|
   
 ### <a name="compile"></a>Kompilace  
  Představuje zdrojové soubory pro kompilátor.  
