@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e435b420377c2b8a1cf3c2b85769a418a2c3e7c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 81687eac5b109c9e3fd441fa5ba0c526f380c3d6
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945751"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155539"
 ---
 # <a name="build-loggers"></a>Protokolovací nástroje sestavení
 Protokolovací nástroje poskytují způsob, jak můžete upravit výstupní sestavení a zobrazení zprávy, chyby nebo upozornění v reakci na události v konkrétním sestavení. Každý protokolovacího nástroje je implementován jako třída rozhraní .NET, která implementuje <xref:Microsoft.Build.Framework.ILogger> rozhraní, která je definována v *Microsoft.Build.Framework.dll* sestavení.  
@@ -70,8 +70,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
 ### <a name="code"></a>Kód  
  [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]  
   
-### <a name="comments"></a>Komentáře  
-  
 ## <a name="example"></a>Příklad  
   
 ### <a name="description"></a>Popis  
@@ -79,8 +77,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="code"></a>Kód  
  [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]  
-  
-### <a name="comments"></a>Komentáře  
   
 ## <a name="see-also"></a>Viz také:  
  [Získávání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)   

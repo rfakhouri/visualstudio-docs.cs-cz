@@ -1,5 +1,5 @@
 ---
-title: PropertyGroup – Element (MSBuild) | Microsoft Docs
+title: PropertyGroup – Element (MSBuild) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 03/13/2017
 ms.technology: msbuild
@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7d300a1a47499f963e7ff717c12f72e2483e05
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: e8c532692b7faddd90a3a67ffdd52b512511d719
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326316"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152185"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup – element (MSBuild)
-Obsahuje sadu uživatelem definované [vlastnost](../msbuild/property-element-msbuild.md) elementy. Každý `Property` element používány [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musí být podřízenou `PropertyGroup` element.  
+Obsahuje sadu uživatelem definované [vlastnost](../msbuild/property-element-msbuild.md) elementy. Každý `Property` prvku použitého při [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musí být podřízeným `PropertyGroup` elementu.  
 
  \<Project>  
- \<PropertyGroup – >  
+ \<PropertyGroup >  
 
 ## <a name="syntax"></a>Syntaxe  
 
@@ -51,13 +51,13 @@ Obsahuje sadu uživatelem definované [vlastnost](../msbuild/property-element-ms
 |---------------|-----------------|  
 |Podmínka|Nepovinný atribut.<br /><br /> Podmínku, která má být vyhodnocen. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|  
 
-### <a name="child-elements"></a>Podřízené elementy  
+### <a name="child-elements"></a>Podřízené prvky  
 
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Vlastnost](../msbuild/property-element-msbuild.md)|Volitelný element.<br /><br /> Definované vlastnosti jméno uživatele, který obsahuje hodnoty vlastnosti. Může být nula nebo více *vlastnost* elementů v `PropertyGroup` elementu.|  
+|[Vlastnost](../msbuild/property-element-msbuild.md)|Volitelný element.<br /><br /> Název definované vlastnosti uživatele, který obsahuje hodnotu vlastnosti. Může být nula nebo více *vlastnost* prvky `PropertyGroup` elementu.|  
 
-### <a name="parent-elements"></a>Nadřazené elementy  
+### <a name="parent-elements"></a>Nadřazené prvky  
 
 |Prvek|Popis|  
 |-------------|-----------------|  
@@ -74,6 +74,6 @@ Obsahuje sadu uživatelem definované [vlastnost](../msbuild/property-element-ms
 </PropertyGroup>  
 ```  
 
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)  
  [Vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md)

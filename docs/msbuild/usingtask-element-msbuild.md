@@ -1,5 +1,5 @@
 ---
-title: Usingtask – Element (MSBuild) | Microsoft Docs
+title: Usingtask – Element (MSBuild) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 03/13/2017
 ms.technology: msbuild
@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c9a60212a3e89e8c7f445e5670858f524df9a70
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 64d3fd57f5c55a321ca09495adcd7c712964b01f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302947"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154601"
 ---
-# <a name="usingtask-element-msbuild"></a>UsingTask – element (MSBuild)
-Mapuje úloha, která odkazuje [úloh](../msbuild/task-element-msbuild.md) element na sestavení, které obsahuje implementaci úloh.  
+# <a name="usingtask-element-msbuild"></a>Usingtask – element (MSBuild)
+Mapuje na úkol, který se odkazuje v [úloh](../msbuild/task-element-msbuild.md) element na sestavení, které obsahuje implementaci úkolu.  
 
  \<Project>  
  \<Usingtask – >  
@@ -49,35 +49,35 @@ Mapuje úloha, která odkazuje [úloh](../msbuild/task-element-msbuild.md) eleme
 
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`AssemblyName`|Buď `AssemblyName` atribut nebo `AssemblyFile` atribut je požadován.<br /><br /> Název sestavení, které chcete načíst. `AssemblyName` Atribut přijímá sestavení se silným názvem, i když silné názvy není potřeba. Pomocí tohoto atributu je ekvivalentní načítání sestavení pomocí <xref:System.Reflection.Assembly.Load%2A> metoda v rozhraní .NET.<br /><br /> Tento atribut nelze použít, pokud `AssemblyFile` je použit atribut.|  
-|`AssemblyFile`|Buď `AssemblyName` nebo `AssemblyFile` atribut je požadován.<br /><br /> Cesta k souboru sestavení. Tento atribut přijme úplné cesty nebo relativní cesty. Relativní cesty jsou relativní vzhledem k adresáři projektu soubor nebo soubor cíle kde `UsingTask` je deklarovaný element. Pomocí tohoto atributu je ekvivalentní načítání sestavení pomocí <xref:System.Reflection.Assembly.LoadFrom%2A> metoda v rozhraní .NET.<br /><br /> Tento atribut nelze použít, pokud `AssemblyName` je použit atribut.|  
-|`TaskFactory`|Nepovinný atribut.<br /><br /> Určuje třídu v sestavení, která je zodpovědná za generování instance zadaného `Task` název.  Uživatel může také zadat `TaskBody` jako podřízený element, který objekt pro vytváření úloh obdrží a používá ke generování úlohu. Obsah `TaskBody` jsou specifické pro vytváření úloh.|  
-|`TaskName`|Požadovaný atribut.<br /><br /> Název úlohy na ni mohli odkazovat ze sestavení. Pokud nejednoznačnosti je možné, tento atribut by měl být určen úplné obory názvů. Pokud existují nejednoznačnosti, MSBuild zvolí libovolný shodu, která by mohla vést k neočekávaným výsledkům.|  
-|`Condition`|Nepovinný atribut.<br /><br /> Podmínky pro vyhodnocení. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|  
+|`AssemblyName`|Buď `AssemblyName` atribut nebo `AssemblyFile` atribut je vyžadován.<br /><br /> Název sestavení, které chcete načíst. `AssemblyName` Atribut je možné zadat sestavení se silným názvem, i když není potřeba silné názvy. Pomocí tohoto atributu je ekvivalentní k načtení sestavení s použitím <xref:System.Reflection.Assembly.Load%2A> metoda v rozhraní .NET.<br /><br /> Tento atribut nelze použít, pokud `AssemblyFile` atribut se používá.|  
+|`AssemblyFile`|Buď `AssemblyName` nebo `AssemblyFile` atribut je vyžadován.<br /><br /> Cesta k souboru sestavení. Tento atribut je možné zadat relativní cesty nebo úplné cesty. Relativní cesty jsou relativní vzhledem k adresáři projektu soubor nebo soubor cílů kde `UsingTask` je deklarován element. Pomocí tohoto atributu je ekvivalentní k načtení sestavení s použitím <xref:System.Reflection.Assembly.LoadFrom%2A> metoda v rozhraní .NET.<br /><br /> Tento atribut nelze použít, pokud `AssemblyName` atribut se používá.|  
+|`TaskFactory`|Nepovinný atribut.<br /><br /> Určuje třídu v sestavení, který je zodpovědný za generování instance zadaného `Task` název.  Uživatel může také určit `TaskBody` jako podřízený prvek, který přijímá objekt pro vytváření úkolů a používá ke generování úlohy. Obsah `TaskBody` jsou specifická pro objekt pro vytváření úloh.|  
+|`TaskName`|Požadovaný atribut.<br /><br /> Název úkolu odkazovat ze sestavení. Pokud nejasnostem, je možné, tento atribut by měl být určen úplný obory názvů. Pokud existují nejednoznačnosti, vybere MSBuild libovolného shodu, což může vést k neočekávaným výsledkům.|  
+|`Condition`|Nepovinný atribut.<br /><br /> Podmínky pro hodnocení. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|  
 
-### <a name="child-elements"></a>Podřízené elementy  
+### <a name="child-elements"></a>Podřízené prvky  
 
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Sadu parametrů, které se zobrazují na úloha, která je generována pomocí zadané `TaskFactory`.|  
-|[Úloha](../msbuild/task-element-msbuild.md)|Data, která je předána `TaskFactory` ke generování instance úlohy.|  
+|[ParameterGroup](../msbuild/parametergroup-element.md)|Sada parametrů, které se zobrazují na úkol, který je generována pomocí zadané `TaskFactory`.|  
+|[Úloha](../msbuild/task-element-msbuild.md)|Data, která je předána `TaskFactory` k vytvoření instance úlohy.|  
 
-### <a name="parent-elements"></a>Nadřazené elementy  
+### <a name="parent-elements"></a>Nadřazené prvky  
 
 |Prvek|Popis|  
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
 
 ## <a name="remarks"></a>Poznámky  
- Proměnné prostředí, vlastnosti příkazového řádku, vlastnosti na úrovni projektu a úrovni projektu položky může být odkazováno v `UsingTask` elementy, které jsou zahrnuty v souboru projektu, buď přímo nebo prostřednictvím projektu importovaný soubor. Další informace najdete v tématu [úlohy](../msbuild/msbuild-tasks.md).  
+ Proměnné prostředí, vlastnosti příkazového řádku, vlastností na úrovni projektu a položek na úrovni projektu může být odkazováno v `UsingTask` prvky, které jsou zahrnuty v souboru projektu, ať už přímo nebo prostřednictvím importovaném projektu souboru. Další informace najdete v tématu [úlohy](../msbuild/msbuild-tasks.md).  
 
 > [!NOTE]
->  Vlastnosti na úrovni projektu a položky mít žádný význam, pokud `UsingTask` element pochází z jednoho z .tasks soubory, které jsou globálně registrované s modulem MSBuild. Hodnoty úrovni projektu nejsou globální pro MSBuild.  
+>  Vlastnosti na úrovni projektu a položky nemají význam, pokud `UsingTask` element pochází z jednoho z *.tasks* soubory, které jsou globálně zaregistrované stroji MSBuild engine. Hodnoty na úrovni projektu nejsou globální nástroji MSBuild.  
 
- V nástroji MSBuild 4.0 pomocí úloh lze načíst z .overridetask souborů.  
+ V MSBuild 4.0 pomocí úlohy je možné načíst z *.overridetask* soubory.  
 
 ## <a name="example"></a>Příklad  
- Následující příklad ukazuje, jak používat `UsingTask` element s `AssemblyName` atribut.  
+ Následující příklad ukazuje způsob použití `UsingTask` element s `AssemblyName` atribut.  
 
 ```xml  
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">  
@@ -93,14 +93,14 @@ Mapuje úloha, která odkazuje [úloh](../msbuild/task-element-msbuild.md) eleme
 ```  
 
 ## <a name="example"></a>Příklad  
- Následující příklad ukazuje, jak používat `UsingTask` element s `AssemblyFile` atribut.  
+ Následující příklad ukazuje způsob použití `UsingTask` element s `AssemblyFile` atribut.  
 
 ```xml  
 <UsingTask TaskName="Email"  
               AssemblyFile="c:\myTasks\myTask.dll" />  
 ```  
 
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Úlohy](../msbuild/msbuild-tasks.md)   
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
  [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)

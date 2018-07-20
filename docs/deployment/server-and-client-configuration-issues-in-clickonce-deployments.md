@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb3d1aa14e404cbc4e8efdc425a4c3099f7a42f5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078849"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154382"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problémy s konfigurací serveru a klienta v nasazeních ClickOnce
 Pokud používáte Internetové informační služby (IIS) v systému Windows Server a vaše nasazení obsahuje typ souboru, který se nedokáže rozpoznat Windows, jako je například Microsoft Word soubor, služba IIS odmítne přenášet tento soubor a nasazení se nezdaří.  
@@ -93,7 +93,7 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce a namapované jednotky  
  Pokud používáte sadu Visual Studio k publikování aplikace ClickOnce, nelze zadat mapovanou jednotku jako umístění instalace. Však můžete upravit aplikaci ClickOnce, instalace z mapované jednotky pomocí generátor manifestu a Editor (Mage.exe a MageUI.exe). Další informace najdete v tématu [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) a [MageUI.exe (Manifest Generation and Editing Tool, grafický klient)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
-## <a name="ftp-protocol-nt-supported-for-installing-applications"></a>FTP protokolu nt podporována pro instalaci aplikací  
+## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protokol FTP není podporován pro instalaci aplikací  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] podporuje instalaci aplikací z libovolné HTTP 1.1 webového nebo souborového serveru. FTP, File Transfer Protocol, není podporován pro instalaci aplikace. Publikování aplikací jenom pomocí funkce FTP. Následující tabulka shrnuje tyto rozdíly:  
   
 |Typ adresy URL|Popis|  

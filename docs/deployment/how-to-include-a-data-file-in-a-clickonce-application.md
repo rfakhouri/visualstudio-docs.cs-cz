@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: zahrnutí datového souboru v aplikaci ClickOnce | Microsoft Docs'
+title: 'Postupy: zahrnutí datového souboru do aplikace ClickOnce | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,41 +18,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ced10a16bae0e5892fddec1a79b9f7793b4dac43
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a3b6b92dda0936c61d4eb69ff29021c58da30c99
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815542"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151697"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Postupy: Zahrnutí datového souboru do aplikace ClickOnce
-Každý [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalací aplikací je přiřazen adresář na místní disk cílového počítače, kde aplikace může spravovat svá vlastní data. Datové soubory mohou zahrnovat souborů všech typů: textové soubory, soubory XML nebo i soubory databáze (.mdb) Microsoft Access. Následující postupy ukazují, jak přidat datový soubor libovolného typu do vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Postupy: zahrnutí datového souboru do aplikace ClickOnce
+Každý [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci nainstalujete, je přiřazen adresář data na místním disku cílového počítače, kde aplikace může spravovat svoje vlastní data. Datové soubory můžete zahrnout soubory libovolného typu: textové soubory, soubory XML nebo dokonce i databáze Microsoft Access (*.mdb*) soubory. Následující postupy ukazují, jak přidat soubor dat libovolného typu do vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
   
-### <a name="to-include-a-data-file-by-using-mageexe"></a>Chcete-li zahrnout datový soubor pomocí Mage.exe  
+### <a name="to-include-a-data-file-by-using-mageexe"></a>Zahrnout soubor dat s využitím Mage.exe  
   
-1.  Přidáte datový soubor do adresáře aplikace s ostatními soubory aplikace.  
+1.  Přidáte datový soubor do adresáře aplikace se zbytkem soubory vaší aplikace.  
   
-     Obvykle adresáře aplikace bude adresář s názvem bez přípony s aktuální verzí nasazení – například v1.0.0.0.  
+     Obvykle adresáře aplikace bude označen s aktuální verzí nasazení – například v1.0.0.0.  
   
-2.  Aktualizujte manifest aplikace do seznamu datového souboru.  
+2.  Aktualizujte manifest aplikace do seznamu datový soubor.  
   
      `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
      Jak tento úkol provést znovu vytvoří seznam souborů v manifestu aplikace a také automaticky vygeneruje podpisy hodnoty hash.  
   
-3.  Otevřete manifest aplikace v upřednostňovaném textovém editoru nebo editoru XML a najděte `file` element nedávno přidaného souboru.  
+3.  Otevřete manifest aplikace v upřednostňovaném textovém editoru nebo editoru XML a najděte `file` – element pro nedávno přidaný soubor.  
   
-     Pokud jste přidali soubor XML s názvem `Data.xml`, soubor bude vypadat podobně jako následující příklad kódu.  
+     Pokud jste přidali soubor XML s názvem `Data.xml`, soubor bude vypadat podobně jako v následujícím příkladu kódu.  
   
  `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Přidat atribut `type` do tohoto elementu a zadejte s hodnotou `data`.  
+1.  Přidejte atribut `type` na tento element a zadejte ji s hodnotou `data`.  
   
  `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Opětovné podepsání manifestu aplikace pomocí páru klíčů nebo certifikátu a znovu podepsání manifestu nasazení.  
+1.  Znovu podepsat manifest aplikace pomocí páru klíčů nebo certifikát a nové podepsání manifestu nasazení.  
   
-     Manifest nasazení musíte znovu podepsat, protože došlo ke změně jeho hodnoty hash manifestu aplikace.  
+     Musíte znovu podepsat manifestu nasazení, protože došlo ke změně jeho hodnoty hash manifestu aplikace.  
   
      `mage -s app manifest -cf cert_file -pwd password`
   
@@ -60,29 +60,29 @@ Každý [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instal
   
      `mage -s deployment manifest -cf certfile -pwd password`
   
-### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Chcete-li zahrnout datový soubor pomocí MageUI.exe  
+### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Zahrnout soubor dat s využitím MageUI.exe  
   
-1.  Přidáte datový soubor do adresáře aplikace s ostatními soubory aplikace.  
+1.  Přidáte datový soubor do adresáře aplikace se zbytkem soubory vaší aplikace.  
   
-2.  Obvykle adresáře aplikace bude adresář s názvem bez přípony s aktuální verzí nasazení – například v1.0.0.0.  
+2.  Obvykle adresáře aplikace bude označen s aktuální verzí nasazení – například v1.0.0.0.  
   
-3.  Na **soubor** nabídky, klikněte na tlačítko **otevřete** otevřete manifest aplikace.  
+3.  Na **souboru** nabídky, klikněte na tlačítko **otevřete** otevřete manifest aplikace.  
   
-4.  Vyberte **soubory** kartě.  
+4.  Vyberte **soubory** kartu.  
   
-5.  V textovém poli v horní části karty zadejte adresář obsahující soubory aplikace a pak klikněte na tlačítko **vyplnit**.  
+5.  Do textového pole v horní části karty zadejte adresář, který obsahuje soubory vaší aplikace a pak klikněte na tlačítko **naplnit**.  
   
      Datový soubor se zobrazí v mřížce.  
   
 6.  Nastavte **typ souboru** hodnotu datového souboru **Data**.  
   
-7.  Uložte manifest aplikace a pak se znovu přihlaste soubor.  
+7.  Uložit manifest aplikace a opětovné podepsání souboru.  
   
-     MageUI.exe vás vyzve k znovu podepsat soubor.  
+     *MageUI.exe* vás vyzve k opětovné podepsání souboru.  
   
 8.  Opětovné podepsání manifestu nasazení  
   
-     Manifest nasazení musíte znovu podepsat, protože došlo ke změně jeho hodnoty hash manifestu aplikace.  
+     Musíte znovu podepsat manifestu nasazení, protože došlo ke změně jeho hodnoty hash manifestu aplikace.  
   
-## <a name="see-also"></a>Viz také  
- [Přístup k místním a vzdáleným datům v aplikacích ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+## <a name="see-also"></a>Viz také:  
+ [Přístup k lokálním a vzdáleným datům v aplikacích ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

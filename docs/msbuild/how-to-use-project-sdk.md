@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee92d81f9b22fb0fe60f8c51ce4e9d53c606f1e7
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f76c88cafd1ce0e448d32faa902f1cebcf3430f8
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077324"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151012"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Postupy: projektu MSBuild pomocí sady SDK
 
@@ -59,6 +59,9 @@ Během vyhodnocování projektu [!INCLUDE[vstecmsbuild](../extensibility/interna
     ```
 
     Implicitní import se přidá do horní a dolní část projektu, jak je popsáno výše.  Formát `Sdk` atribut je `Name[/Version]` kde verze je nepovinná.  Například můžete zadat `My.Custom.Sdk/1.2.3`.
+
+    > [!NOTE]
+    > Toto je momentálně jediný podporovaný způsob, jak odkazovat na projekt SDK v sadě Visual Studio pro Mac.
 
 2. Použít na nejvyšší úrovni `<Sdk/>` element:
 
