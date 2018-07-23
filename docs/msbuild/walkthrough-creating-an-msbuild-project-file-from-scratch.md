@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d60ef5e69b2675edfe348c032828ef09f2cf4c66
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d70460671bcea19f0a4e56de6ebdd3c7affdb670
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152585"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179187"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Návod: Vytvoření souboru projektu MSBuild od začátku
 Programovací jazyky, které jsou cíleny rozhraní .NET Framework používají soubory projektu MSBuild k popisu a řízení procesu sestavení aplikace. Při použití sady Visual Studio k vytvoření souboru projektu MSBuild je odpovídající kód XML je automaticky přidán do souboru. Však může být pro vás užitečné porozumět uspořádání XML a jak můžete změnit, aby řídil sestavení.  

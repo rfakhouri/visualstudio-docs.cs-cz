@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7abbd976e1ed97df257856f6b31b13966441fd9a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154395"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179437"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Úpravy vzorů zatížení pro model aktivity virtuálního uživatele
 
@@ -36,7 +36,7 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 
 #### <a name="constant-load-pattern-considerations"></a>Důležité informace o konstantní zatížení vzorek
 
- Konstantní zatížení vzorek se používá ke spuštění stejnému zatížení uživatelem při spuštění zátěžového testu. Buďte opatrní při použití konstantního vzoru zatížení s vysokým počtem uživatelů; To uděláte tak mohou klást způsobit nepřiměřený a nereálný požadavek na serveru nebo serverech na začátku zátěžového testu. Například pokud zátěžový test obsahuje test webu, který začíná žádostí na domovskou stránku a nastavíte zkušební zatížení s konstantním zatížením 1 000 uživatelů, zátěžový test odešle prvních 1 000 požadavků na domovskou stránku co nejrychleji. To nemusí být realistická simulace skutečného přístupu k vašemu webovému serveru. Chcete-li tento problém zmírnit, zvažte použití kroku vzoru zatížení, který se postupně zvyšuje na 1000 uživatelů, nebo zadejte zahřívání nastavení spuštění zátěžového testu. Pokud je zadán zahřívání, zátěžový test automaticky zvýší zatížení postupně během doby zahřívání. Další informace najdete v tématu [konfigurace zpoždění pro spuštění scénáře](../test/configure-scenario-start-delays.md).
+ Konstantní zatížení vzorek se používá ke spuštění stejnému zatížení uživatelem při spuštění zátěžového testu. Buďte opatrní při použití konstantního vzoru zatížení s vysokým počtem uživatelů; To uděláte tak mohou klást způsobit nepřiměřený a nereálný požadavek na serveru nebo serverech na začátku zátěžového testu. Například pokud zátěžový test obsahuje test webu, který začíná žádostí na domovskou stránku a nastavíte zkušební zatížení s konstantním zatížením 1 000 uživatelů, zátěžový test odešle prvních 1 000 požadavků na domovskou stránku co nejrychleji. To nemusí být realistická simulace skutečného přístupu na váš web. Chcete-li tento problém zmírnit, zvažte použití kroku vzoru zatížení, který se postupně zvyšuje na 1000 uživatelů, nebo zadejte zahřívání nastavení spuštění zátěžového testu. Pokud je zadán zahřívání, zátěžový test automaticky zvýší zatížení postupně během doby zahřívání. Další informace najdete v tématu [konfigurace zpoždění pro spuštění scénáře](../test/configure-scenario-start-delays.md).
 
 ### <a name="step"></a>Krok
 

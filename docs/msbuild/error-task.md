@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7928ceb1f99e86f84247af3376edd3119deac8ea
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ec7f52701e0748e2433d26aedf1c7b0e5dd2927c
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945780"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179710"
 ---
 # <a name="error-task"></a>Error – úloha
 Sestavení se zastaví a protokoly chybu na základě Vyhodnocená podmíněného příkazu.  
@@ -66,4 +66,4 @@ Sestavení se zastaví a protokoly chybu na základě Vyhodnocená podmíněnéh
   
 ## <a name="see-also"></a>Viz také:  
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
- [Získávání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)
+ [Získání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)

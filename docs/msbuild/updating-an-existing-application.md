@@ -13,7 +13,7 @@ ms.openlocfilehash: f0c18e4e895d8a0563699cf08e5a49fdecc973ab
 ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
+ms.lasthandoff: 07/20/2018
 ms.locfileid: "39152256"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aktualizace existující aplikace pro MSBuild 15
@@ -71,7 +71,7 @@ Odkaz na balíček Microsoft.Build.Locator zajistit, že vaše aplikace automati
 
 ### <a name="ensure-output-is-clean"></a>Ujistěte se, že je vyčistit výstup
 
-Sestavte projekt a zkontrolujte výstupní adresář, abyste měli jistotu, že neobsahuje žádné *Microsoft.Build.\*. Knihovna DLL* sestavení jiný než *Microsoft.Build.Locator.dll*přidali v dalším kroku.
+Sestavte projekt a zkontrolujte výstupní adresář, abyste měli jistotu, že neobsahuje žádné *Microsoft.Build\*. Knihovna DLL* sestavení jiný než *Microsoft.Build.Locator.dll*přidali v dalším kroku.
 
 ### <a name="add-package-reference"></a>Přidání odkazu na balíček
 

@@ -13,30 +13,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8a1c38dfac5e403d7060031d70c6c6c558eff9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8acd51675aaca979a1dce0edddb9d7d937422d49
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951645"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177809"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Stránka Možnosti, vlastnosti uzlu textového editoru
-Tento dokument popisuje některé stránky (nebo vlastnosti kolekce), jsou přidružené **textového editoru** kategorie, `DTE.Properties("TextEditor", <Property Page>)`, z **možnosti** dialogové okno. Název každé část je hovoru, který se používá pro přístup k `Properties` kolekce a tabulkou v každou část jsou uvedeny vlastnosti v kolekci.
+Tento dokument popisuje některé stránky (nebo kolekce vlastností), které jsou přidruženy **textový Editor** kategorie, `DTE.Properties("TextEditor", <Property Page>)`, nástroje **možnosti** dialogové okno. Název každého pododdílu je volání, které slouží k přístupu `Properties` kolekce a v tabulce v každém pododdílu jsou uvedeny vlastnosti v kolekci.
 
- Makra jazyka Visual Basic v [řízení nastavení možnosti](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d) ukazují, jak zobrazit aktuální možnosti a jejich hodnoty pro každou stránku **možnosti** dialogové okno.
+ Makra jazyka Visual Basic v [Controlling Options Settings](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d) ukazují, jak zobrazit aktuální možnosti a jejich hodnoty pro každou stránku **možnosti** dialogové okno.
 
 ## <a name="general"></a>Obecné
  `DTE.Properties("TextEditor", "General")`
 
 |Název položky vlastnosti|Hodnota|Popis|
 |------------------------|-----------|-----------------|
-|GoToAnchorAfterEscape|Get/Set (Boolean)|Pokud `True`, stisknutí řídicí při výběru způsobí, že bod vložení přesunout do kterého byla spuštěna akce, který vytvořili výběr. `False` Posune kurzor na konec výběru.|
+|GoToAnchorAfterEscape|Get/Set (Boolean)|Pokud `True`, stiskněte escape při výběru způsobí, že kurzor přesunout do kterého byla spuštěna akce, která vytvořila tento výběr. `False` Přesune kurzor na konec výběru.|
 |DragNDropTextEditing|Get/Set (Boolean)|Určuje, zda lze při operacích kopírování nebo vyjmutí a vložení vybranou oblast textu přetáhnout v dokumentu z jednoho místa do jiného.|
 |HorizontalScrollBar|Get/Set (Boolean)|Určuje, zda se v oknech editoru zobrazuje vodorovný posuvník.|
 |VerticalScrollBar|Get/Set (Boolean)|Určuje, zda se v oknech editoru zobrazuje svislý posuvník.|
 |SelectionMargin|Get/Set (Boolean)|Určuje, zda je na levé straně podokna textu místo pro speciální operace výběru, ikony pro kreslení zarážek atd.|
 |MarginIndicatorBar|Get/Set (Boolean)|Určuje, zda se zobrazuje svislá čára, která odděluje levý okraj podokna textu od hlavní části tohoto podokna.|
-|UndoCaretActions|Get/Set (Boolean)|Pokud `True`. operace vrácení zpět zahrnují pohybu bod vložení, výběr příkazy a tak dále, kromě úpravy akcí, které upravují vyrovnávací paměti.|
+|UndoCaretActions|Get/Set (Boolean)|Pokud `True`. operace vrácení zpět zahrnují přesunutí kurzoru, výběrové příkazy a tak dále, kromě editačních akcí, které mění vyrovnávací paměť.|
 |AutoDelimiterHighlighting|Get/Set (Boolean)|Určuje, zda při zadání koncového oddělovače zvýrazní editor počáteční oddělovač. Editor vždy zobrazí počáteční oddělovač tučně bez ohledu na hodnotu této vlastnosti.|
 |EditorEmulation|Get/Set (Enum)||
 |DetectUTF8WithoutSignature|Get/Set (Boolean)|Zjistí, zda soubor používá kódování UTF-8, pokud nemá signaturu kódování.|
@@ -45,20 +45,20 @@ Tento dokument popisuje některé stránky (nebo vlastnosti kolekce), jsou přid
 ## <a name="plain-text"></a>Prostý text
  `DTE.Properties("TextEditor", "PlainText")`
 
- `PlainText` Možností editoru vliv na nastavení editoru při úpravách textových souborů. Každý programovací jazyk a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] balíčku má svou vlastní konkrétní **textového editoru** nastavení. Například pro zobrazení nebo změny [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] použít nastavení editoru `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Pro **skript SQL** použít nastavení editoru `DTE.Properties("TextEditor", "SQL ")`.
+ `PlainText` Možnosti editoru ovlivňují nastavení editoru při úpravě textových souborů. Každý programovací jazyk a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] balíček má své vlastní zvláštní **textový Editor** nastavení. Například k zobrazení nebo změna [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] použít nastavení editoru `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Pro **skript SQL** použít nastavení editoru `DTE.Properties("TextEditor", "SQL ")`.
 
 |Název položky vlastnosti|Hodnota|Popis|
 |------------------------|-----------|-----------------|
 |AutoListMembers|Get/Set (Boolean)|Určuje, zda se automaticky zobrazí dostupný seznam členů, když uživatel zadá za odkaz na proměnnou tečku.|
 |AutoListParams|Get/Set (Boolean)|Určuje, zda se automaticky zobrazí popis seznamu argumentů, když uživatel zadá za název funkce závorku (.|
 |HideAdvancedMembers|Get/Set (Boolean)|Určuje, zda se mají v seznamech doplňování výrazů vypisovat všechny členy nebo pouze nejpoužívanější.|
-|VirtualSpace|Get/Set (Boolean)|Určuje, zda se prázdné znaky zobrazují jako grafika. Toto nastavení na `true` způsobí, že `WordWrap` vlastnost položky (v tomto seznamu) na hodnotu `false`.|
-|WordWrap|Get/Set (Boolean)|Určuje, zda se dlouhé řádky v tomto zobrazení zalamují na hranicích slov. Toto nastavení na `true` způsobí, že `VirtualSpace` vlastnost položky (v tomto seznamu) na hodnotu `false`.|
+|VirtualSpace|Get/Set (Boolean)|Určuje, zda se prázdné znaky zobrazují jako grafika. Nastavení na `true` způsobí, že `WordWrap` vlastnost položky (v tomto seznamu) nastavit `false`.|
+|WordWrap|Get/Set (Boolean)|Určuje, zda se dlouhé řádky v tomto zobrazení zalamují na hranicích slov. Nastavení na `true` způsobí, že `VirtualSpace` vlastnost položky (v tomto seznamu) nastavit `false`.|
 |WordWrapGlyphs|Get/Set (Boolean)|Zobrazí piktogram na konci řádku; označuje, že se tento řádek zalamuje na další řádek.|
-|EnableLeftClickForURLs|Get/Set (Boolean)|Určuje, zda editor podtrhuje adresy URL a umožňuje v systémem zaregistrovaném webovém prohlížeči přejít na tuto adresu URL jedním kliknutím.|
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Určuje styl odsazení: výchozí, inteligentní nebo žádné.|
+|EnableLeftClickForURLs|Get/Set (Boolean)|Určuje, zda editor podtrhuje adresy URL a umožňuje jednu přejít na adresu URL v prohlížeči registrované systému.|
+|IndentStyle|Získá nebo nastaví (<xref:EnvDTE.vsIndentStyle>)|Určuje styl odsazení: výchozí, inteligentní nebo žádné.|
 |TabSize|Get/Set (Long)|Představuje počet mezer pro tabulátor. Nastavení celého čísla mimo rozsah 1–60 (včetně) se nezdaří.|
-|InsertTabs|Get/Set (Boolean)|Pokud `True`, jsou použity znaky KARTĚ, pokud se používá odsazení.|
+|InsertTabs|Get/Set (Boolean)|Pokud `True`, při odsazení použijí znaky TABULÁTORU.|
 |IndentSize|Get/Set (Long)|Představuje počet mezer pro jednu úroveň odsazení. Nastavení celočíselné hodnoty mimo rozsah 1–60 (včetně) se nezdaří.|
 |ShowLineNumbers|Get/Set (Boolean)|Určuje, zda se při zobrazení dokumentu v základním editoru zobrazují na levém okraji čísla řádků.|
 |ShowNavigationBar|Get/Set (Boolean)|Určuje, zda se v horní části oken editoru zobrazují rozevírací seznamy a tlačítka.|
@@ -66,7 +66,7 @@ Tento dokument popisuje některé stránky (nebo vlastnosti kolekce), jsou přid
 
 ## <a name="see-also"></a>Viz také
 
-- [Ovládání možnosti nastavení](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Určení názvů vlastností položky na stránkách možnosti](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Řízení nastavení možností](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Určování názvů položky vlastností na stránkách možností](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Stránka Možnosti, vlastnosti uzlu Prostředí](../../ide/reference/options-page-environment-node-properties.md)
 - [Stránka Možnosti, vlastnosti uzlu Písma a barvy](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

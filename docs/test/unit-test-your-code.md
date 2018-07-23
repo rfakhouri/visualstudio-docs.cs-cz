@@ -1,5 +1,5 @@
 ---
-title: V sadě Visual Studio testování částí
+title: Testování jednotek v sadě Visual Studio
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -13,30 +13,30 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 487c5b4c730a4b49188857c2681aae6ff87a61e5
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: bc69869e8f1cd60bad1f30f6ee9c37ca5d2821bd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237328"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179213"
 ---
 # <a name="unit-test-your-code"></a>Testování částí kódu
 
-Testování částí vývojáři a testerům, sada poskytují rychlý způsob, jak hledat logické chyby v metody třídy v projektu C#, Visual Basic a C++.
+Testování částí poskytuje vývojářům a testerům rychlý způsob vyhledávání logických chyb v rámci metod tříd v projektech C#, Visual Basic a C++.
 
 Nástroje testování částí zahrnují:
 
-* **Testování Explorer**&mdash;můžete spustit testy jednotek a zobrazte jejich výsledky v **Průzkumníka testů**. Můžete použít libovolnou architekturu test jednotky, včetně rozhraní třetích stran, který má adaptér pro **testování Explorer**.
+* **Průzkumník testů**&mdash;můžete spustit testy jednotky a analyzovat jejich výsledky v **Průzkumník testů**. Můžete použít libovolné rozhraní testování částí, včetně rozhraní třetích stran, které má adaptér pro **Průzkumníka testů**.
 
-* **Částí Microsoft unit test framework pro spravovaný kód**&mdash;Microsoft částí unit test framework pro spravovaný kód je nainstalován pomocí sady Visual Studio a poskytuje rozhraní pro kód .NET pro testování.
+* **Rámce jednotkových testů společnosti Microsoft pro spravovaný kód**&mdash;rozhraní testování částí Microsoft pro spravovaný kód se instaluje se sadou Visual Studio a poskytuje rozhraní pro testování kódu rozhraní .NET.
 
-* **Částí Microsoft unit test framework pro C++**&mdash;Microsoft částí unit test framework pro C++ je nainstalován jako součást **vývoj aplikací s jazykem C++** zatížení. Poskytuje rozhraní pro testování nativního kódu. Google Test, Boost.Test a CTest architektury jsou také zahrnuté a třetích stran adaptéry jsou k dispozici pro další test rozhraní. Další informace najdete v tématu [zápis testování částí pro C/C++](../test/writing-unit-tests-for-c-cpp.md).
+* **Rámce jednotkových testů společnosti Microsoft pro jazyk C++**&mdash;Microsoft pro testování částí C++ je nainstalován jako součást **vývoj desktopových aplikací pomocí C++** pracovního vytížení. Poskytuje rozhraní pro testování nativního kódu. Jsou také zahrnuté CTest, Google Test a Boost.Test rozhraní a adaptéry třetích stran jsou k dispozici pro rozhraní pro další testování. Další informace najdete v tématu [psaní testů jednotek pro C/C++](../test/writing-unit-tests-for-c-cpp.md).
 
-* **Nástroje pro pokrytí kódu**&mdash;můžete určit množství paměti, že vaše jednotka testů cvičení z jednoho příkazu v Průzkumníka testů kód produktu.
+* **Nástroje pokrytí kódu**&mdash;můžete určit množství kódu produktu, testování částí kontroluje jedním příkazem v Průzkumníku testů.
 
-* **Microsoft Fakes izolace rámec**&mdash;izolace rámec můžete vytvořit Fakes Microsoft nahradit třídy a metody pro kód produkční a systému, které vytvářejí závislosti v testovaného kódu. Implementací napodobenin delegátů pro funkci je možné kontrolovat chování a výstup závislého objektu.
+* **Izolační rozhraní Microsoft Fakes**&mdash;izolačního můžete vytvořit napodobeniny Microsoft zástupné třídy a metody pro produkční a systémový kód, které vytváří závislosti v kódu v rámci testu. Implementací napodobenin delegátů pro funkci je možné kontrolovat chování a výstup závislého objektu.
 
-Můžete také použít [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) prozkoumat ke generování testovacích datech a sada testů částí kódu .NET. Pro každý příkaz v kódu, je generována testovací vstup, spustí tento příkaz. Case analýzy se provádí pro každou podmíněného větve v kódu.
+Můžete také použít [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) prozkoumat kód .NET a vygenerovat testovací data a sady testování částí. Pro každý příkaz v kódu se generuje zkušební vstup, který tento příkaz spustí. Pro každou podmíněnou větev v kódu se provede Případová analýza.
 
 ## <a name="key-tasks"></a>Klíčové úkoly
 
@@ -44,20 +44,20 @@ V následujících tématech naleznete informace týkající se vytváření tes
 
 |Úlohy|Související témata|
 |-----------|-----------------------|
-|**Rychlé zahájení práce a návody:** používat další jednotky testování v sadě Visual Studio z příklady kódu v následujících tématech.|-   [Návod: Vytváření a spouštění testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Rychlý úvod: Testy řízený vývoj pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Přidání testů částí do stávajících aplikací C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
-|**Testování částí pomocí Průzkumníka testů:** zjistěte, jak můžete Průzkumníka testů pomocí vytvoření produktivní a efektivní testování částí.|-   [Testování částí](../test/unit-test-basics.md)<br />-   [Vytvoření projektu testování částí](../test/create-a-unit-test-project.md)<br />-   [Spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)<br />-   [Instalace systémů testů jednotek třetích stran](../test/install-third-party-unit-test-frameworks.md)|
-|**Testování částí spravovaného kódu:**|-   [Zápis testů částí pro rozhraní .NET Framework s částí Microsoft Unit Test Framework pro spravovaný kód](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)|
-|**C++ – kód testování částí**|-   [Zápis testů částí pro C/C++ s Microsoft Unit Testing Framework pro C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
-|**Uzavírací testování částí**|-   [Izolace testovaného kódu pomocí zástupného rozhraní Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**Použijte pokrytí kódu k určení, jaké části kódu vašeho projektu je testován:** Další informace o funkci pokrytí kódu testovací nástroje sady Visual Studio.|-   [Použití pokrytí kódu k určení jak mnohem kódu se testuje](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Provést přízvuk a analýza výkonu pomocí zátěžových testů:** můžete vytvořit zátěžový test a přidejte testů jednotek do ní ke zjištění výkonu a vystavila zátěži problémy ve vaší aplikaci.|-   [Spouštění testování (služby VSTS a sady TFS)](/vsts/load-test/)|
-|**Nastavení brány kvality:** vytvořením brány kvality vynutit spuštění testů, než se změnami kódu, abyste zajistili kvality kódu.|-   [Vrácení se změnami zásad (VSTS)](/vsts/tfvc/add-check-policies)|
-|**Nastavení možností otestování:** například můžete zadat, kde jsou uložené výsledky testů.|[Konfigurace testů částí s použitím souboru .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
+|**Rychlé začátky a návody:** další testování v sadě Visual Studio z příkladů kódů použijte následující témata.|-   [Postupy: Vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Rychlý start: Vývoj řízený testováním pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Přidání testů jednotek do stávajících aplikací C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
+|**Testování částí pomocí Průzkumníka testů:** zjistěte, jak může Průzkumník testů pomoci vytváření produktivnějších a efektivnějších testů jednotek.|-   [Základní informace o testování částí](../test/unit-test-basics.md)<br />-   [Vytvořte projekt testu jednotek](../test/create-a-unit-test-project.md)<br />-   [Spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)<br />-   [Nainstalujte rozhraní pro testování jednotky třetí strany](../test/install-third-party-unit-test-frameworks.md)|
+|**Testování částí spravovaného kódu:**|-   [Zápis testů částí pro rozhraní .NET Framework s použitím rozhraní Microsoft Unit Test Framework pro spravovaný kód](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)|
+|**Testování částí kódu C++**|-   [Zápis testů jednotek pro C/C++ se sadou Microsoft Unit Testing Framework pro C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
+|**Izolující testování částí**|-   [Izolace testovaného kódu pomocí napodobenin Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**Použití pokrytí kódu k identifikaci, jaká část projektového kódu je testována:** přečtěte si víc o funkcích pokrytí kódu testovacích nástrojů sady Visual Studio.|-   [Použití pokrytí kódu k určení jak mnohem kódu je testována](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**Provedení zátěžové a výkonnostní analýzy použitím zátěžových testů:** můžete vytvořit zátěžový test a testování částí přidejte do ní pro lepší izolaci výkonnostních a zátěžových problémů aplikace.|-   [Zátěžové testování (VSTS a TFS)](/vsts/load-test/)|
+|**Nastavení brány kvality:** můžete vytvořit brány kvality k vynucení spuštění testů předtím, než je kód vrácen se změnami, k zajištění kvality kódu.|-   [Zásady vrácení se změnami (VSTS)](/vsts/tfvc/add-check-policies)|
+|**Nastavení možností testování:** například můžete určit, kde jsou uloženy výsledky testů.|[Konfigurace testů částí s použitím souboru .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Referenční dokumentace rozhraní API
 
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Popisuje UnitTesting názvů, který poskytuje atributy, výjimky, vyhodnotí a jiné třídy testování částí tuto podporu.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> Popisuje UnitTesting.Web názvů, který rozšiřuje obor názvů UnitTesting tím, že poskytuje podporu pro ASP.NET a webové testy služby.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Popisuje obor názvů UnitTesting, který poskytuje atributy, výjimky, kontrolní výrazy a další třídy této podporují testování částí.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> Popisuje obor názvů UnitTesting.Web, který rozšiřuje obor názvů UnitTesting poskytováním podpory pro ASP.NET a webové testy služby.
 
 ## <a name="see-also"></a>Viz také:
 

@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b796bf5b17460425d25ec91f3ecca7c147784039
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: HT
+ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174975"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178384"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Návod: Vytvoření datové služby WCF s WPF a Entity Framework
 Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , která je hostována v [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci a pak k němu přístup z aplikace Windows Forms.
@@ -66,7 +66,7 @@ V prvním kroku přidáte webový projekt pro hostování služby.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-the-web-project"></a>Vytvoření webového projektu
+#### <a name="to-create-the-web-project"></a>K vytvoření webového projektu
 
 1.  V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 

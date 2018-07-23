@@ -8,11 +8,12 @@
 - name: Rychlý start
   items:
     - name: Vytvoření webové aplikace pomocí Flasku
-      href: ../ide/quickstart-python.md?context=visualstudio/python/default
+      href: ../ide/quickstart-python.md
+      maintainContext: true
     - name: Vytvoření projektu ze šablony
       href: quickstart-02-python-in-visual-studio-project-from-template.md
     - name: "Vytvoření projektu z\_existujícího kódu"
-      href: quickstart-01-project-from-existing.md
+      href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
     - name: Vytvoření projektu z úložiště
       href: quickstart-03-python-in-visual-studio-project-from-repository.md
     - name: Vytvoření projektu ze šablony Cookiecutter
@@ -87,14 +88,14 @@
           href: search-paths.md
         - name: Okno Environment (Prostředí) – referenční dokumentace
           href: python-environments-window-tab-reference.md
-    - name: Úpravy kódu
+    - name: Úprava kódu v Pythonu
       href: editing-python-code-in-visual-studio.md
       items:
         - name: Formátování kódu
           href: formatting-python-code.md
-        - name: Refaktoring kódu
+        - name: Refaktorování kódu
           href: refactoring-python-code.md
-        - name: Použití PyLintu
+        - name: Použití analyzátoru PyLint
           href: linting-python-code.md
     - name: Definování vlastních příkazů nabídky
       href: defining-custom-python-project-commands.md

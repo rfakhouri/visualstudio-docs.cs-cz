@@ -8,27 +8,26 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 987193cb7f78947087c6d387e16261d83a20e7c2
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 491b01d87e4f1a9980143e9ffcc501b3cda7c922
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38809237"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39189251"
 ---
 1.  Na zařízení nebo server počítač, který chcete ladit (nikoli na počítači sadu Visual Studio) získáte správná verze nástrojů remote tools.
 
     |Version|Odkaz|Poznámky|
     |-|-|-|
-    |Visual Studio 2017 (nejnovější verze)|[Vzdálené nástroje](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Kdykoli stáhněte verzi, která odpovídá operačního systému zařízení (x 86, x64 nebo ARM64). V systému Windows Server, naleznete v tématu [odblokovat stahování souborů](../../debugger/remote-debugging.md#unblock_msvsmon) nápovědu ke stažení nástroje remote tools.|
-    |Visual Studio 2017 (starší)|[Vzdálené nástroje](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Remote tools pro dřívější verze sady Visual Studio 2017 jsou k dispozici My.VisualStudio.com. Pokud se zobrazí výzva, spojení skupině Visual Studio Dev Essentials zdarma, nebo se přihlaste pomocí předplatného sady Visual Studio ID. V systému Windows Server, naleznete v tématu [odblokovat stahování souborů](../../debugger/remote-debugging.md#unblock_msvsmon) nápovědu ke stažení nástroje remote tools.|
-    |Visual Studio 2015 (starší)|[Vzdálené nástroje](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Pokud se zobrazí výzva, spojení skupině Visual Studio Dev Essentials zdarma, nebo se přihlaste pomocí předplatného sady Visual Studio ID. V systému Windows Server, naleznete v tématu [odblokovat stahování souborů](../../debugger/remote-debugging.md#unblock_msvsmon) nápovědu ke stažení nástroje remote tools.|
+    |Visual Studio 2017 (nejnovější verze)|[Vzdálené nástroje](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Nejnovější verze nástrojů remote tools je kompatibilní se všemi verzemi sady Visual Studio 2017. Kdykoli stáhněte verzi, která odpovídá operačního systému zařízení (x 86, x64 nebo ARM64). V systému Windows Server, naleznete v tématu [odblokovat stahování souborů](../../debugger/remote-debugging-unblock-file-download.md) nápovědu ke stažení nástroje remote tools.|
+    |Visual Studio 2015|[Vzdálené nástroje](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Nástroje Remote tools for Visual Studio 2015 jsou k dispozici My.VisualStudio.com. Pokud se zobrazí výzva, připojte se k bezplatné [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) programu, nebo se přihlaste pomocí ID předplatného sady Visual Studio. V systému Windows Server, naleznete v tématu [odblokovat stahování souborů](../../debugger/remote-debugging-unblock-file-download.md) nápovědu ke stažení nástroje remote tools.|
     |Visual Studio 2013|[Vzdálené nástroje](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Stáhněte si stránku v dokumentaci k sadě Visual Studio 2013|
     |Visual Studio 2012|[Vzdálené nástroje](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Stáhněte si stránku v dokumentaci k sadě Visual Studio 2012|
 
 2.  Na stránce pro stahování zvolte verzi nástrojů, který odpovídá operačnímu systému (x86, x64, ARM a ARM64) a stáhněte si nástroje remote tools.
 
     > [!IMPORTANT]
-    >  Doporučujeme že nainstalovat nejnovější verzi nástrojů remote tools, která odpovídá verzi sady Visual Studio. Verze se nedoporučuje. Kromě toho musíte nainstalovat nástroje remote tools, které mají stejnou architekturu jako operační systém, na kterém chcete nainstalovat. Jinými slovy Pokud chcete ladit 32bitovou aplikaci na vzdáleném počítači s 64bitovým operačním systémem, musíte nainstalovat 64bitová verze produktu remote tools na vzdáleném počítači.
+    >  Doporučujeme nainstalovat nejnovější verzi nástrojů remote tools pro vaši verzi sady Visual Studio. Nejnovější verze (například 15.8) je kompatibilní s předchozími verzemi (například 15.0); starší verze však nejsou kompatibilní s novější verzí. Kromě toho musíte nainstalovat nástroje remote tools, které mají stejnou architekturu jako operační systém, na kterém chcete nainstalovat. Jinými slovy Pokud chcete ladit 32bitovou aplikaci na vzdáleném počítači s 64bitovým operačním systémem, musíte nainstalovat 64bitová verze produktu remote tools na vzdáleném počítači.
     >
     >  Pro ladění ve Windows 10 na zařízeních ARM, klikněte na tlačítko ARM64 stáhnout k dispozici v nejnovější verzi nástrojů remote Tools.  Pro zařízení s Windows RT zvolte verzi ARM, která je k dispozici soubor ke stažení Visual Studio 2015 RTW.
 
