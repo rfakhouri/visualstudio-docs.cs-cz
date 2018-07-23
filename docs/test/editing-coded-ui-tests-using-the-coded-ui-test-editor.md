@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 60ba453db218b108e9f1bb6c65a320a0e1d97594
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: HT
+ms.openlocfilehash: 50d677eec2a88f2470a7a329c4cf9e2b85f065da
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154232"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177354"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Úprava programových testů uživatelského rozhraní pomocí editoru programového testu uživatelského rozhraní
 
