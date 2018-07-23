@@ -1,5 +1,5 @@
 ---
-title: Testu výkonnosti webu rozhraní API v sadě Visual Studio
+title: API testu výkonnosti webu v sadě Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,61 +11,61 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 330e0aa9bcf51b0ce9d57ea93a13303b7a356982
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ed3e4a32f1870e854720608270373f89c98ce940
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969126"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175792"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Postupy: Použití rozhraní API testu výkonnosti webu
 
-Můžete napsat kód pro vaše testy výkonnosti webu. Testu výkonnosti webu, které rozhraní API slouží k vytvoření programových testy výkonnosti webu, testovací zásuvné moduly výkonu webového, žádost moduly plug-in, požadavků, pravidla pro extrakci a pravidla ověřování. Třídy, které tvoří tyto typy jsou základní třídy v tomto rozhraní API. Jiné typy v tomto rozhraní API slouží k podpoře vytváření <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>, a <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> objekty. Můžete použít <xref:Microsoft.VisualStudio.TestTools.WebTesting> obor názvů pro vytvoření přizpůsobené testy výkonnosti webu.
+Můžete napsat kód pro testy výkonu webu. Test webového výkonu rozhraní API slouží k vytvoření kódované testy webového výkonu, webového výkonu test modulů plug-in, požadavek moduly plug-in, požadavky, pravidla pro extrakci a pravidel ověřování. Třídy, které tvoří tyto typy jsou základní třídy v tomto rozhraní API. Další typy v tomto rozhraní API se používá pro podporu vytváření <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>, a <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> objekty. Můžete použít <xref:Microsoft.VisualStudio.TestTools.WebTesting> obor názvů umožní vytvořit vlastní testy výkonnosti webu.
 
- Můžete také Web API testu výkonu prostřednictvím kódu programu vytvoříte a uložíte deklarativní testy výkonnosti webu. Chcete-li to provést, použijte <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> a <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> třídy.
+ Můžete také použít API výkonnostních testů webu prostřednictvím kódu programu vytvořit a uložit deklarativní webové testy výkonu. Chcete-li to provést, použijte <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> a <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> třídy.
 
 > [!TIP]
-> Kontrola pomocí prohlížeče objektů <xref:Microsoft.VisualStudio.TestTools.WebTesting> oboru názvů. Editory jak Visual C# a Visual Basic nabízí podporu technologie IntelliSense pro psaní kódu s použitím třídy v oboru názvů.
+> Ke kontrole použijte prohlížeč objektů <xref:Microsoft.VisualStudio.TestTools.WebTesting> oboru názvů. Editory Visual C# i Visual Basic nabízí podporu technologie IntelliSense pro kódování s třídami v oboru názvů.
 
 
- Můžete také vytvořit modulů Plugin pro zátěžové testy. Další informace najdete v tématu [postupy: použití rozhraní API testu zatížení](../test/how-to-use-the-load-test-api.md) a [postupy: vytvoření modulu Plugin pro Test zatížení](../test/how-to-create-a-load-test-plug-in.md).
+ Můžete také vytvořit moduly plug-in pro zátěžové testy. Další informace najdete v tématu [postupy: použití rozhraní API zátěžového testu](../test/how-to-use-the-load-test-api.md) a [postupy: vytvoření modulu Plug-In zátěžového testu](../test/how-to-create-a-load-test-plug-in.md).
 
-## <a name="to-use-the-webtesting-namespace"></a>Pro používání oboru názvů WebTesting
+## <a name="to-use-the-webtesting-namespace"></a>Používání oboru názvů WebTesting
 
-1.  Otevřete projekt testu výkonnosti webu a zátěžového testu, který obsahuje test výkonnosti webu.
+1.  Otevřete webový výkon a projekt zátěžového testu, který obsahuje test výkonnosti webu.
 
-2.  Přidejte Visual C# nebo Visual Basic projektu knihovny tříd do řešení pro test.
+2.  Přidejte Visual C# nebo Visual Basic projekt knihovny tříd pro vaše řešení pro testování.
 
-3.  Přidejte odkaz na projekt knihovny tříd ve webovém projektu test výkonu a zatížení.
+3.  Přidáte odkaz v projektu webového výkonu a zátěžový test do projektu knihovny tříd.
 
-4.  Přidejte odkaz na knihovnu DLL Microsoft.VisualStudio.QualityTools.WebTestFramework v projektu knihovny tříd.
+4.  V projektu knihovny tříd přidejte odkaz na knihovnu DLL Microsoft.VisualStudio.QualityTools.WebTestFramework.
 
-5.  V souboru třídy, který je umístěný v projektu knihovny tříd, přidejte `using` údajů <xref:Microsoft.VisualStudio.TestTools.WebTesting> obor názvů.
+5.  V souboru třídy, který se nachází v projektu knihovny tříd, přidejte `using` příkaz pro <xref:Microsoft.VisualStudio.TestTools.WebTesting> oboru názvů.
 
 6.  Vytvořte třídu, která implementuje <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> rozhraní.
 
 7.  Sestavte projekt.
 
-8.  Přidání nového testu výkonnosti webu modulu plug-in pomocí Editor testů výkonnosti webu:
+8.  Přidáte nový test výkonnosti webu modulu plug-in pomocí editoru testu výkonnosti webu:
 
-    1.  Zvolte **přidat zásuvný modul testu Web** na panelu nástrojů.
+    1.  Zvolte **přidat modul webového testu Plug-in** na panelu nástrojů.
 
-         **Přidat zásuvný modul testu Web** se zobrazí dialogové okno.
+         **Přidat modul webového testu Plug-in** se zobrazí dialogové okno.
 
-    2.  V části **vyberte modul plug-in**vyberte výkon vašich webových testů modulu plug-in třídy.
+    2.  V části **vyberte modul plug-in**vyberte modul plug-in třídu testu výkonu webu.
 
-    3.  V **vlastnosti pro vybraný modul plug-in** podokně nastavit počáteční hodnoty pro modul plug-in pro použití v době běhu.
+    3.  V **vlastnosti pro vybraný modul plug-in** podokno, nastavte počáteční hodnoty pro modul plug-in pro použití v době běhu.
 
         > [!NOTE]
-        > Z modulu plug-in lze vystavit libovolný počet vlastností, ale je třeba je nastavit jako veřejné a nastavitelné a musí mít základní typ, jako je například Integer, Boolean nebo String. Můžete také upravit vlastnosti modulu plug-in test výkonu webové později pomocí okna Vlastnosti.
+        > Z modulu plug-in lze vystavit libovolný počet vlastností, ale je třeba je nastavit jako veřejné a nastavitelné a musí mít základní typ, jako je například Integer, Boolean nebo String. Modul plug-in vlastností testu výkonnosti webu můžete upravit i později pomocí okna Vlastnosti.
 
     4.  Zvolte **OK**.
 
-9. Spusťte test výkonnosti webu.
+9. Spuštění testu výkonnosti webu.
 
-     Pro příklad implementace <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, najdete v části [postupy: vytvoření zásuvný modul testu výkonu Web](../test/how-to-create-a-web-performance-test-plug-in.md).
+     Pro příklad implementace <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, naleznete v tématu [postupy: vytvoření zásuvný modul Web výkon testu](../test/how-to-create-a-web-performance-test-plug-in.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Vytvoření vlastního kódu a modulů Plugin pro zátěžové testy](../test/create-custom-code-and-plug-ins-for-load-tests.md)

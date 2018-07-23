@@ -10,30 +10,30 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 093b937f7a957ef1d3a912c31d57a03f1a433ab0
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: fca48c45af5ec93519e1688ec54677c233d2fe17
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844235"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178316"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Postupy: Zabránění vypršení časových limitů u adaptérů diagnostických dat
 
-Pokud používáte adaptérů diagnostických dat v nastavení testu, vypršení časového limitu může dojít, když spustíte test spustit z jednoho z následujících důvodů:
+Pokud používáte adaptéry diagnostických dat ve vašem nastavení testu, vypršení časového limitu může dojít při spuštění testů z jednoho z následujících důvodů:
 
--   Služba řadiče testovací neběží na testovacím počítači řadiče. Možná budete muset restartovat službu. Další informace o tom, jak určit řadiči test a správa testovacích kontrolérů najdete v tématu [Správa testovací Kontroléry a testovací agenty pomocí sady Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+-   Služba testovací kontrolér není spuštěna v počítači řadiče testu. Budete muset restartovat službu. Další informace o způsobu určení testovacího kontroléru a spravovat kontrolery testů naleznete v tématu [Správa testovacích Kontrolérů a agentů testování pomocí sady Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
--   Pokud se shromažďování dat ve vzdáleném počítači, brána firewall může blokovat nástroje Microsoft Test Manager. Počítač, který spouští Microsoft Test Manager musíte přijmout příchozí spojení z testovacího kontroleru. Vypršení časového limitu při nástroje Microsoft Test Manager neobdrží zprávu z řadiče, protože je blokován branou firewall. Je nutné zkontrolovat nastavení brány firewall v počítači, který spouští nástroje Microsoft Test Manager. Další informace o nastavení brány firewall, viz následující [webu společnosti Microsoft](http://go.microsoft.com/fwlink/?LinkId=184980).
+-   Pokud shromažďujete data na vzdáleném počítači, brána firewall může blokovat nástroje Microsoft Test Manager. Počítač, na kterém běží Microsoft Test Manager musíte přijmout příchozí připojení z kontroleru testů. Vypršení časového limitu vyvolá se v případě nástroje Microsoft Test Manager neobdrží zprávu z řadiče, protože je blokován branou firewall. Je třeba zkontrolovat nastavení brány firewall na počítači, na kterém běží Microsoft Test Manager.
 
--   Testovací kontroler nelze vyřešit název počítače, na kterém běží Microsoft Test Manager. Tomu může dojít, pokud DNS poskytuje na nesprávnou adresu pro tento počítač. Bude pravděpodobně nutné kontaktovat správce sítě k vyřešení tohoto problému.
+-   Testovací kontrolér nemůže přeložit název počítače, na kterém běží Microsoft Test Manager. Tato situace může nastat, pokud služba DNS poskytuje nesprávnou adresu pro tento počítač. Budete muset kontaktovat správce sítě k vyřešení tohoto problému.
 
- Když spustíte dlouho test, který musí shromažďovat velké množství dat, je možné, že shromažďováním těchto dat časového limitu. Následující postup slouží k vyřešení tohoto problému.
+Při spuštění dlouhého testu, který musí shromáždit velké množství dat, můžete zjistit, že se shromažďováním těchto dat vyprší časový limit. Následující postup slouží k vyřešení tohoto problému.
 
- Aktualizace konfiguračního souboru pro Microsoft Test Manager nebo konfiguračního souboru pro test agent, který je vypršel časový limit, může zvýšit časový limit.
+Můžete zvýšit časový limit aktualizací konfiguračního souboru pro Microsoft Test Manager nebo konfiguračního souboru pro testovacího agenta, který je vypršení časového limitu.
 
- Nástroje Microsoft Test Manager konfiguračního souboru se nazývá **mtm.exe.config**. Se nachází v následujícím adresáři: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+Nástroje Microsoft Test Manager konfigurační soubor nazývá **mtm.exe.config**. Je umístěn v následujícím adresáři: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
- Aktualizovat agenta test, je třeba aktualizovat následující konfigurační soubory v počítači agenta test. Všechny tyto soubory jsou umístěny v počítači agenta test ve stejném adresáři: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+Pokud chcete aktualizovat testovacího agenta, je nutné aktualizovat následující konfigurační soubory v počítači testovacího agenta. Všechny tyto soubory jsou umístěny v počítači testovacího agenta ve stejném adresáři: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 -   QTAgent.exe.config
 
@@ -43,26 +43,26 @@ Pokud používáte adaptérů diagnostických dat v nastavení testu, vypršení
 
 -   QTDCAgent32.exe.config
 
- Spouštění manuálních testů a shromažďovat data z prostředí, když je vytvořena chyby nebo dokončení testovacího případu, se všechna data, která shromáždil adaptérů diagnostických dat přenese do počítače, který běží manuálních testů. Pokud jste shromáždili velké množství dat nebo mají pomalé síťové připojení, může trvat déle než výchozí hodnotu 60 sekund. Například pokud jste nakonfigurovali adaptér IntelliTrace pro shromažďování událostí IntelliTrace a volání informace pro velký počet procesů, přenos těchto dat může překročit výchozí časový limit. Tuto hodnotu zvýšit, můžete použít následující postup k aktualizaci **mtm.exe.config**.
+Pokud spuštění manuálních testů a shromažďování dat z prostředí, při vytvoření chyby nebo dokončení testovacího případu, přenese se všechna data, která byla shromážděna adaptéry diagnostických dat na počítači, který spouští ruční testy. Pokud jste shromáždili velké množství dat nebo máte pomalé připojení k síti, může trvat déle, než je výchozí hodnota 60 sekund. Například pokud jste nakonfigurovali adaptér IntelliTrace ke shromáždění události IntelliTrace a volali informace pro mnoho procesů, přenos těchto dat může překročit výchozí časový limit. Tuto hodnotu zvýšit, můžete použít následující postup aktualizovat **mtm.exe.config**.
 
- Chybová zpráva se zobrazí, pokud aktivita Test Runner časového limitu, nebo pokud agentem test agent vyprší časový limit. V chybové zprávě agenta test bude obsahovat informace o nástroji pro testování, které počítače agenta vypršel. Použijte následující postup k aktualizaci konfigurace souborů, v závislosti na chybovou zprávu, kterou jste přijali.
+Pokud vyprší časový limit nástroje Test Runner nebo testovacího agenta vyprší časový limit, zobrazí se chybová zpráva. Chybová zpráva pro testovací agent bude obsahovat informace, o které testovací počítače agenta vypršení časového limitu. Použijte následující postup k aktualizaci konfiguračních souborů, v závislosti na chybovou zprávu jste obdrželi.
 
-## <a name="to-increase-the-time-outs-for-your-diagnostic-data-adapters"></a>Pokud chcete zvýšit vypršení časových limitů pro vaše adaptérů diagnostických dat
+## <a name="to-increase-the-time-outs-for-your-diagnostic-data-adapters"></a>Zvýšení časových limitů pro adaptéry diagnostických dat
 
-1.  Otevřete okno Průzkumníka Windows (nebo v Průzkumníku souborů).
+1.  Otevřete okno Průzkumníka Windows (nebo Průzkumníka souborů).
 
-     Chcete-li to provést, klikněte pravým tlačítkem **spustit** a přejděte na **prozkoumat**.
+     Chcete-li to provést, klikněte pravým tlačítkem na **Start** a přejděte na **prozkoumat**.
 
     > [!NOTE]
-    > Může vyžadovat oprávnění správce k aktualizaci souboru.
+    > Budete potřebovat oprávnění správce k aktualizaci souboru.
 
-2.  Vyhledejte adresář v počítači *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* obsahující soubor, který je nutné aktualizovat.
+2.  Vyhledejte adresář v počítači *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* , která obsahuje soubor, který je nutné aktualizovat.
 
-3.  Klikněte pravým tlačítkem na soubor a přejděte na **otevřít v**. Vyberte editoru.
+3.  Klikněte pravým tlačítkem na soubor a přejděte na **otevřít v**. Vyberte editor.
 
-     Soubor se zobrazí v editoru. Existuje mnoho nastavení uložená v tomto souboru. Většinu těchto nastavení můžete změnit pomocí nástroje Microsoft Test Manager. Nastavení časového limitu však musíte změnit ručně, jak je popsáno v následujících krocích.
+     Soubor se zobrazí v editoru. Existuje mnoho nastavení uložených v tomto souboru. Většinu těchto nastavení můžete změnit pomocí nástroje Microsoft Test Manager. Nastavení časového limitu však musíte změnit ručně, jak je popsáno v následujících krocích.
 
-4.  Je třeba upravit v části Nastavení spuštění testu ke zvýšení hodnoty časového limitu. Tato část má následující formát:
+4.  Je třeba upravit oddíl nastavení spouštění testu ke zvýšení hodnot časového limitu. Tato část má následující formát:
 
     ```text
     <!-- Begin: Test execution settings -->
@@ -76,11 +76,11 @@ Pokud používáte adaptérů diagnostických dat v nastavení testu, vypršení
         <!-- End: Test execution settings -->
     ```
 
-5.  Chcete-li prodloužit dobu, kterou čekat adaptérů diagnostických dat pro události, které mají být dokončena, zvyšte hodnotu pro klíč **DataCollectorEventTimeoutInSeconds**
+5.  Pokud chcete zvýšit dobu, po kterou adaptéry diagnostických dat čekat na dokončení událostí, zvyšte hodnotu pro klíč **DataCollectorEventTimeoutInSeconds**
 
-6.  Pokud je tato chybová zpráva Časový limit aktivity pro spuštění testu, musíte zvýšit hodnotu pro klíč **RunOperationTimeoutInSeconds**.
+6.  Pokud chybová zpráva vypršení časového limitu je pro aktivitu nástroje Test Runner, musíte zvýšit hodnotu pro klíč **RunOperationTimeoutInSeconds**.
 
-7.  Chcete-li zvýšit časový limit pro přenos žádná data shromažďují chyby nebo při testu končí k počítači, který běží testy, je nutné přidat následující časový limit na **mtm.exe.config** v části appSettings souboru:
+7.  Pokud chcete zvýšit časový limit pro přenos dat shromážděných pro chybu nebo při ukončení testu k počítači, na kterém běží testy, je nutné přidat následující časový limit do **mtm.exe.config** v oddíle appSettings souboru:
 
     ```text
     <!-- How long test runner waits for data collected by diagnostic data adapters to be transferred to the computer. Default is 60 seconds. -->
@@ -88,10 +88,10 @@ Pokud používáte adaptérů diagnostických dat v nastavení testu, vypršení
     ```
 
     > [!NOTE]
-    > Hodnota časového limitu je v sekundách.
+    > Hodnota časového limitu je během několika sekund.
 
-8.  Uložit změny, které jste provedli k souboru a znovu spusťte testy, které dříve vypršel.
+8.  Uložit změny provedené k souboru a znovu spusťte testy, které dříve vypršel.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Shromažďování diagnostických informací s použitím nastavení testu](../test/collect-diagnostic-information-using-test-settings.md)
+- [Shromažďování diagnostických údajů pomocí nastavení testů](../test/collect-diagnostic-information-using-test-settings.md)

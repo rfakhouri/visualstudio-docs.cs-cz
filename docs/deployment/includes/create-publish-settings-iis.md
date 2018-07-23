@@ -1,15 +1,15 @@
 
-1. Zavřete a znovu otevřete konzolu pro správu služby IIS zobrazíte možnosti aktualizované konfigurace v uživatelském rozhraní.
+1. Zavřete a znovu otevřete konzolu pro správu služby IIS na zobrazit aktualizovanou konfiguraci možností v uživatelském rozhraní.
 
-1. Ve službě IIS, klikněte pravým tlačítkem myši **Default Web Site**, zvolte **nasadit** > **konfigurace nasazení publikování na webu**.
+1. Ve službě IIS, klikněte pravým tlačítkem myši **výchozí webový server**, zvolte **nasadit** > **konfigurace nasazení publikování na webu**.
 
-    ![Nakonfigurujte konfiguraci nasazení webu](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
+    ![Konfiguraci nasazení webu](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
 
-1. V **konfigurace nasazení publikování na webu** dialogové okno pole, zkontrolujte nastavení.
+1. V **konfigurace nasazení publikování na webu** dialogovém okně zkontrolujte nastavení.
 
-1. Klikněte na tlačítko **instalační program**.
+1. Klikněte na tlačítko **nastavení**.
 
-    V **výsledky** panelu ukazuje výstup, které přístupová práva jsou udělena zadaného uživatele a že soubor s *.publishsettings* přípona souboru byla vygenerována v uvedeném v dialogovém okně umístění pole.
+    V **výsledky** panelu ukazuje výstup, které přístupová práva jsou udělena pro zadaného uživatele a že soubor s *.publishsettings* přípona souboru byl vytvořen v části znázorněné v dialogovém okně pole.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -26,14 +26,14 @@
     </publishData>
     ```
 
-    V závislosti na konfiguraci systému Windows Server a služby IIS najdete v části různé hodnoty v souboru XML. Zde jsou několik podrobnosti o hodnoty, které se zobrazí:
+    V závislosti na konfiguraci systému Windows Server a služby IIS najdete v článku různé hodnoty v souboru XML. Tady je několik podrobností o hodnoty, které se zobrazí:
 
-    * *Msdeploy.axd* souboru v odkazuje `publishUrl` atribut je dynamicky generovaném soubor obslužné rutiny HTTP pro nasazení webu. (Pro účely testování `http://myhostname:8172` obecně funguje stejně.)
-    * `publishUrl` Port nastaven na port 8172, což je výchozí nastavení pro nasazení webu.
-    * `destinationAppUrl` Port je nastavený na portu 80, což výchozí nastavení pro službu IIS.
-    * Pokud není možné se připojit ke vzdálenému hostiteli v sadě Visual Studio pomocí názvu hostitele (v následujících krocích), otestujte IP adresu místo názvu hostitele.
+    * *Msdeploy.axd* soubor odkazuje `publishUrl` atribut je dynamicky generovaný soubor obslužné rutiny HTTP pro nasazení webu. (Pro testovací účely `http://myhostname:8172` obecně funguje stejně.)
+    * `publishUrl` Je port nastaven na port 8172, což je výchozí nastavení pro nasazení webu.
+    * `destinationAppUrl` Je port nastaven na port 80, což je výchozí hodnota pro službu IIS.
+    * Pokud se nemůžete připojit ke vzdálenému hostiteli v sadě Visual Studio pomocí názvu hostitele (v následujících krocích), otestujte adresu IP místo názvu hostitele.
 
     > [!NOTE]
-    > Pokud publikujete IIS a běžící na virtuálním počítači Azure, musíte otevřít Web Deploy a porty služby IIS ve skupině zabezpečení sítě. Podrobné informace najdete v tématu [instalace a spuštění služby IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
+    > Pokud publikujete do IIS a běžící na Virtuálním počítači Azure, je nutné otevřít nasazení webu a portů služby IIS ve skupině zabezpečení sítě. Podrobné informace najdete v tématu [instalace a spuštění služby IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
 
-1. Zkopírujte tento soubor do počítače, kde je spuštěn nástroj Visual Studio.
+1. Zkopírujte tento soubor do počítače, ve kterém běží sady Visual Studio.

@@ -1,6 +1,6 @@
 ---
-title: Řešení potíží s chybami související se sítí, když instalujete nebo použijte sadu Visual Studio
-description: Najít řešení chyby související s sítě nebo proxy, které se můžete setkat při instalaci nebo použití sady Visual Studio za bránou firewall nebo proxy server.
+title: Řešení potíží s chyby související se sítí při instalaci nebo používání sady Visual Studio
+description: Řešení chyby související s sítě nebo proxy, které můžete narazit při instalaci nebo používání sady Visual Studio za bránou firewall nebo proxy server.
 ms.custom: ''
 ms.date: 02/12/2018
 ms.technology: vs-acquisition
@@ -18,26 +18,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e62b6ecddaa58ba8fd7172886bbf567402a03006
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b6397a8b35934842497a756fc3294a47e30fb281
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282649"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978069"
 ---
-# <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Řešení potíží s chybami související se sítí, když instalujete nebo použijte sadu Visual Studio
+# <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Řešení potíží s chyby související se sítí při instalaci nebo používání sady Visual Studio
 
-My jsme řešení nejčastější chyby související s sítě nebo proxy, které se můžete setkat při instalaci nebo použití sady Visual Studio za bránou firewall nebo proxy server.
+Máme řešení obvykle chyby související s sítě nebo proxy, které můžete narazit při instalaci nebo používání sady Visual Studio za bránou firewall nebo proxy server.
 
-## <a name="error-proxy-authorization-required"></a>Chyba: "Proxy autorizace požadované"
+## <a name="error-proxy-authorization-required"></a>Chyba: "proxy server vyžaduje se autorizace"
 
-Této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu prostřednictvím proxy serveru a proxy server blokuje volání, které provádí některým síťovým prostředkům v sadě Visual Studio.
+K této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu prostřednictvím proxy serveru a proxy server blokuje volání, která vytvoří malou Visual Studio k některým síťovým prostředkům.
 
 ### <a name="to-fix-this-proxy-error"></a>Chcete-li vyřešit tuto chybu proxy
 
-- Restartujte sadu Visual Studio. By se zobrazit dialogové okno ověřování proxy serveru. Zadejte přihlašovací údaje po zobrazení výzvy v dialogovém okně.
+- Restartujte sadu Visual Studio. By se zobrazit dialogové okno ověřování proxy serveru. Zadejte svoje přihlašovací údaje po zobrazení výzvy v dialogovém okně.
 
-- Pokud restartování sady Visual Studio není problém vyřešen, může to být proxy server nezobrazí výzvu pro přihlašovací údaje pro protokol http:&#47;&#47;go.microsoft.com adresy, ale nebude tak &#42;. visualStudio.com adresy. Pro tyto servery zvažte vytvoření seznamu povolených následující adresy URL odblokování všech scénářích přihlášení v sadě Visual Studio:
+- Pokud restartování sady Visual Studio problém nevyřeší, může být, že váš proxy server nezobrazí výzvu pro přihlašovací údaje pro protokol http:&#47;&#47;go.microsoft.com řeší, ale provádí se &#42;. visualStudio.com adresy. Pro tyto servery zvažte přidání na seznam povolených následující adresy URL pro odblokování všech scénářů přihlašování v aplikaci Visual Studio:
 
     - &#42;.windows.net
 
@@ -49,37 +49,37 @@ Této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu pr
 
     - &#42;.live.com
 
-- V opačném případě můžete odebrat http:&#47;&#47;go.microsoft.com adresní ze seznamu povolených serverů, aby se objeví dialogové okno ověřování proxy serveru pro službu protokolu http:&#47;&#47;go.microsoft.com adresy a koncové body serveru, pokud je v sadě Visual Studio restartovat.
+- V opačném případě můžete odebrat http:&#47;&#47;go.microsoft.com adresy, ze seznamu povolených, aby se zobrazí dialog ověřování proxy serveru pro obě http:&#47;&#47;go.microsoft.com adresy a koncové body serveru, když je aplikace Visual Studio restartovat.
 
     NEBO
 
-- Pokud chcete k použití výchozích pověření s proxy, můžete provádět následující akce:
+- Pokud chcete použít výchozí pověření s proxy serverem, můžete provádět následující akce:
 
-    1. Najít **devenv.exe.config** (konfigurační soubor devenv.exe) v: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** nebo **% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
+    1. Najít **devenv.exe.config** (konfigurační soubor devenv.exe) v: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** nebo **% ProgramFiles (x86) %\Microsoft Vizuální Studio\2017\Enterprise\Common7\IDE**.
 
-    1. V konfiguračním souboru najít `<system.net>` blokovat a poté přidejte tento kód:
+    1. V konfiguračním souboru najít `<system.net>` blokovat a následně přidejte následující kód:
 
         ```xml
         <defaultProxy enabled="true" useDefaultCredentials="true">
-            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#" http://<yourproxy:port#>"/>
+            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
         </defaultProxy>
         ```
 
-        Je třeba vložit správné proxy adres pro vaši síť v `proxyaddress="<http://<yourproxy:port#>`.
+        Je třeba vložit adresu proxy serveru správná pro vaši síť v `proxyaddress="<http://<yourproxy:port#>`.
 
     NEBO
 
-- Můžete také podle pokynů v [postup připojení prostřednictvím ověřený server Proxy webové](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) příspěvku na blogu, který ukazuje, jak přidat kód, který vám umožní použít proxy server.
+- Také postupujte podle pokynů [jak se připojit přes ověřený proxy server webové](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) blogový příspěvek, který ukazuje, jak přidat kód, který vám umožní používat proxy server.
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Chyba: "základní připojení bylo ukončeno."
 
-Pokud používáte Visual Studio v privátní síti, která má brána firewall, Visual Studio nemusí být možné se připojit k některým síťovým prostředkům. Tyto prostředky mohou zahrnovat Visual Studio Team Services (VSTS) pro přihlašování a licencování NuGet a službami Azure. Pokud Visual Studio se nepodaří připojit k jeden z těchto prostředků, zobrazí se následující chybová zpráva:
+Pokud používáte Visual Studio v privátní síti, která má bránu firewall, Visual Studio nemusí být schopný se připojit k některým síťovým prostředkům. Tyto prostředky mohou zahrnovat Visual Studio Team Services (VSTS) pro přihlašování a licencování NuGet a službami Azure. Pokud Visual Studio nepodaří připojit k jednomu z těchto prostředků, může se zobrazit následující chybová zpráva:
 
-  **Základní připojení bylo ukončeno: došlo k neočekávané chybě při odesílání**
+  **Nadřízené připojení bylo uzavřeno: došlo k neočekávané chybě při odesílání**
 
-Visual Studio používá k připojení k síťovým prostředkům protokol zabezpečení TLS (Transport Layer) 1.2. Zabezpečovací zařízení v některých soukromých sítích blokují některá serverová připojení, když Visual Studio používá TLS 1.2.
+Visual Studio používá k připojení k síťovým prostředkům protokol zabezpečení TLS (Transport Layer) 1.2. Zabezpečovací zařízení několik soukromých sítích blokují některá serverová připojení, když sada Visual Studio používá TLS 1.2.
 
-### <a name="to-fix-this-connection-error"></a>Odstranění této chyby připojení
+### <a name="to-fix-this-connection-error"></a>Chcete-li vyřešit tuto chybu připojení
 
 Povolte připojení pro následující adresy URL:
 
@@ -97,34 +97,34 @@ Povolte připojení pro následující adresy URL:
 
 - https:&#47;&#47;app.vsspsext.visualstudio.com
 
-- &#42;. azurewebsites.net (pro Azure připojení)
+- &#42;. azurewebsites.net (pro připojení Azure)
 
 - &#42;.visualstudio.com
 
-- CDN.vsassets.IO (sítě pro doručování obsahu hostitele nebo CDN, obsah)
+- CDN.vsassets.IO (síť pro doručování obsahu hostitele nebo CDN, obsah)
 
-- &#42;. gallerycdn.vsassets.io (rozšíření hostitele služby VSTS)
+- &#42;. gallerycdn.vsassets.io (rozšíření VSTS hostitelů)
 
-- static2.sharepointonline.com (hostuje prostředky, které Visual Studio používá v sadě Office uživatelského rozhraní Fabric kit, jako je například písem)
+- static2.sharepointonline.com (prostředky hostitele, které Visual Studio používá v uživatelském rozhraní Office Fabric kit, jako je například písma)
 
 - &#42;. nuget.org (pro připojení NuGet)
 
  > [!NOTE]
- > Soukromě vlastněných že URL serverů NuGet nemusejí být uvedené v tomto seznamu. Můžete zkontrolovat pro servery NuGet, které používáte ve % APPData%\Nuget\NuGet.Config.
+ > Soukromě vlastněných že nuget serverové adresy URL nemusí být zahrnuté v tomto seznamu. Můžete vyhledat servery NuGet, které používáte v % APPData%\Nuget\NuGet.Config.
 
 ## <a name="get-support"></a>Získat podporu
 
-Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud žádná z instalace při řešení potíží pomoci, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
+Pokud se nezdaří instalace aplikace Visual Studio, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud žádný z kroků pro řešení potíží instalace pomoct, kontaktujte nás podle živý chat pro pomoc s instalací (jenom v angličtině). Podrobnosti najdete v tématu [stránku podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
-Tady je několik další možnosti podpory:
+Tady je několik dalších možností podpory:
 
-* Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
+* Může probíhat hlášení problémů s produktem nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu sady Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
+* Můžete sledovat problémů s produktem a najít odpovědi v [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com/).
+* Můžete také Spolupracujte s námi a jinými vývojáři Visual Studio prostřednictvím [konverzace sady Visual Studio v komunitě Gitteru](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účet.)
 
 ## <a name="see-also"></a>Viz také:
 
 * [Instalace a používání sady Visual Studio za bránou firewall nebo proxy serverem](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
-* [Nainstalovat Visual Studio 2017](install-visual-studio.md)
+* [Instalace sady Visual Studio 2017](install-visual-studio.md)

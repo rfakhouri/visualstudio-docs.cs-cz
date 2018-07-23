@@ -1,5 +1,5 @@
 ---
-title: L2DBForm.XAML.cs zdrojového kódu
+title: Zdrojový kód L2DBForm.XAML.cs
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,58 +10,58 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 793e1cbe4c03cb5ddfec51d583437a9b5294fbd2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 405ca2a0d2f676cb56d2c5dffebc1bac1230015d
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926054"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977730"
 ---
-# <a name="l2dbformxamlcs-source-code"></a>L2DBForm.XAML.cs zdrojového kódu
+# <a name="l2dbformxamlcs-source-code"></a>Zdrojový kód L2DBForm.xaml.cs
 
-Toto téma obsahuje obsah a popis C# zdrojový kód v souboru L2DBForm.xaml.cs. L2XDBForm třídu obsažené v tomto souboru je možné rozdělit do tří logických částí: datové členy a `OnRemove` a `OnAddBook` obslužné rutiny události kliknutí na tlačítko.
+Toto téma obsahuje obsah a popis jazyka C# zdrojový kód v souboru *L2DBForm.xaml.cs*. Částečné třídy L2XDBForm obsažené v tomto souboru je možné rozdělit do tří logických částí: datové členy a `OnRemove` a `OnAddBook` obslužné rutiny události kliknutí na tlačítko.
 
 ## <a name="data-members"></a>Datové členy
 
-Dva členové privátní data se používají k přidružení této třídy lze použít v L2DBForm.xaml prostředky okno.
+Dva soukromé datové členy slouží k přidružení této třídy do okna prostředků používaných v *L2DBForm.xaml*.
 
--   Obor názvů proměnná `myBooks` je inicializováno `"http://www.mybooks.com"`.
+-   Proměnná oboru názvů `myBooks` je inicializován na `"http://www.mybooks.com"`.
 
--   Člen `bookList` je inicializován v konstruktoru CDATA řetězec v L2DBForm.xaml tento řádek:
+-   Člen `bookList` je inicializována v konstruktoru na řetězec CDATA v *L2DBForm.xaml* tento řádek:
 
-    ```
+    ```csharp
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;
     ```
 
-## <a name="onaddbook-event-handler"></a>Obslužné rutiny události OnAddBook
+## <a name="onaddbook-event-handler"></a>Obslužná rutina události OnAddBook
 
 Tato metoda obsahuje následující tři příkazy:
 
--   První příkaz podmíněného slouží k ověření vstupu.
+-   První podmíněný příkaz se používá k ověření vstupu.
 
--   Druhý příkaz vytvoří novou <xref:System.Xml.Linq.XElement> z řetězce hodnoty zadané uživatelem v **přidat nové knihy** části uživatelské rozhraní (UI).
+-   Druhý příkaz vytvoří novou <xref:System.Xml.Linq.XElement> z řetězce hodnoty zadané v uživatelem **přidat nová kniha** části uživatelského rozhraní (UI).
 
--   Poslední příkaz přidá tento nový element adresáře ke zprostředkovateli dat v L2DBForm.xaml. V důsledku toho se dynamické datová vazba automaticky aktualizuje uživatelské rozhraní s touto novou položkou; žádné velmi kód uživatele je povinný.
+-   Poslední příkaz přidá tento nový prvek book na poskytovatele dat v *L2DBForm.xaml*. V důsledku toho vázání dat dynamického automaticky aktualizuje uživatelské rozhraní s touto novou položkou; není vyžadován žádný extra uživatelský kód.
 
-## <a name="onremove-event-handler"></a>Obslužné rutiny události OnRemove
+## <a name="onremove-event-handler"></a>OnRemove obslužné rutiny události
 
-`OnRemove` Obslužná rutina je složitější než `OnAddBook` obslužná rutina dvou důvodů. Protože původní XML obsahuje zachovaných prázdné znaky, odpovídající vložení znaků newline musí také být nejprve odebrány s položku v seznamu. Výběr, která byla odstraněné položky, druhý pro potřeby se resetuje předchozímu v seznamu.
+`OnRemove` Obslužná rutina je složitější než `OnAddBook` obslužné rutiny pro dva důvody. Protože nezpracovaném kódu XML obsahuje mezeru zachovaných, odpovídající vložení znaků newline musí také být nejprve odebrány s položku v seznamu. Za druhé, usnadnění výběru, která byla v odstraněné položky, resetuje na předchozí objektem v seznamu.
 
-Základní pracovní položce vybrané knihy odebrání ale provádí pouze dva příkazy:
+Základní práce odebrání položky vybrané knihy však provádí pouze dva příkazy:
 
--   Nejprve je načíst prvek knihy spojené s aktuálně vybrané položky v seznamu:
+-   Nejprve je načten prvek knihy, které jsou spojené s aktuálně vybranou položku v seznamu:
 
-    ```
+    ```csharp
     XElement selBook = (XElement)lbBooks.SelectedItem;
     ```
 
--   Tento element je neodstraní z poskytovatele dat:
+-   Potom tento prvek je odstraněn z poskytovatele dat:
 
-    ```
+    ```csharp
     selBook.Remove();
     ```
 
-Znovu dynamické datová vazba zaručuje, že programu rozhraní automaticky aktualizováno.
+Vázání dat dynamického znovu, zajišťuje programu uživatelského rozhraní se automaticky aktualizuje.
 
 ## <a name="example"></a>Příklad
 
@@ -137,9 +137,9 @@ namespace LinqToXmlDataBinding {
 
 ### <a name="comments"></a>Komentáře
 
-Související zdroje XAML pro tyto obslužné rutiny, najdete v části [L2DBForm.xaml zdrojový kód](../designers/l2dbform-xaml-source-code.md).
+Související zdroje XAML pro tyto obslužné rutiny naleznete v tématu [zdrojový kód L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Návod: Příklad LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
 - [Zdrojový kód L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md)

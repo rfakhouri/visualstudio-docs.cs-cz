@@ -1,5 +1,5 @@
 ---
-title: Soubor vnoření pravidla pro Průzkumníku řešení
+title: Soubor vnoření pravidla pro Průzkumníka řešení
 ms.date: 05/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,143 +10,143 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: bc4ba4c019801c4461313149c0f3befacefa93d2
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118142"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177519"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Přizpůsobení vnořování souborů v Průzkumníku řešení
 
-Vnoření souvisejících souborů v **Průzkumníku řešení** není nový, ale dokud teď jste měli žádnou kontrolu nad vnoření pravidla. Můžete si vybrat mezi přednastavení **vypnout**, **výchozí** a **webové**, ale můžete také upravit vnoření přesně ke své libosti. Můžete například vytvořit konkrétní řešení a specifická nastavení projektu, ale také další informace o všech této později. Nejprve přejděte přes dostanete se na pole.
+Vnoření sady souvisejících souborů v **Průzkumníka řešení** není nový, ale až do nyní neměl žádnou kontrolu nad vnoření pravidla. Můžete si vybrat přednastavení **vypnout**, **výchozí** a **webové**, ale můžete také přizpůsobit vnořování přesně na míru. Můžete dokonce vytvářet specifické pro řešení a nastavení specifická pro projekt, ale další informace o to později. Nejprve probereme získáte out-of-the-box.
 
 > [!NOTE]
-> Tato funkce je aktuálně podporuje jenom pro projekty ASP.NET Core.
+> Tato funkce je momentálně podporována pouze pro projekty ASP.NET Core.
 
-## <a name="file-nesting-options"></a>Soubor vnoření možnosti
+## <a name="file-nesting-options"></a>Vnoření možnosti souboru
 
-![Tlačítko pro zapnutí souboru vnoření zapnutí nebo vypnutí](media/filenesting_onoff.png)
+![Tlačítko pro zapnutí souboru vnoření zapnuto/vypnuto](media/filenesting_onoff.png)
 
-Jsou k dispozici možnosti pro vnoření neupravené souboru:
+Dostupné možnosti pro vnořování souborů neupravené jsou:
 
-* **Vypnout**: Tato možnost vám dává plochý seznam souborů, bez jakékoli vnoření.
+* **Vypnout**: Tato možnost vám poskytne plochý seznam souborů bez jakékoli vnoření.
 
-* **Výchozí**: Tato možnost vám dává výchozí soubor vnoření chování v **Průzkumníku řešení**. Pokud neexistují žádná nastavení pro typ daného projektu, jsou vnořeny žádné soubory v projektu. Pokud nastavení existuje, například pro webový projekt, použije se vnoření.
+* **Výchozí**: Tato možnost vám poskytne výchozí soubor vnoření chování v **Průzkumníka řešení**. Pokud neexistuje žádná nastavení pro daný projekt typu, jsou vnořené žádné soubory v projektu. Pokud nastavení existuje, například pro webový projekt, použije se vnoření.
 
-* **Webové**: Tato možnost se vztahuje **webové** souboru vnoření chování na všechny projekty v aktuálním řešení. Obsahuje mnoho pravidel a doporučujeme vám ji rezervovat a dejte nám vědět, co si myslíte. Následující snímek obrazovky upozorňuje jenom několik příkladů vnoření chování souboru, kterou můžete získat pomocí této možnosti:
+* **Web**: Tato možnost se vztahuje **webové** souboru vnoření chování do všech projektů v aktuálním řešení. Má mnoho pravidel a doporučujeme vám ji rezervovat a Řekněte nám, co si myslíte. Na následujícím snímku obrazovky najdete pár příkladů vnoření chování souboru, který dostanete, když je tato možnost:
 
    ![Soubor vnoření v Průzkumníku řešení](media/filenesting.png)
 
-## <a name="customize-file-nesting"></a>Přizpůsobení souboru vnoření
+## <a name="customize-file-nesting"></a>Vlastní nastavení vnořování souborů
 
-Pokud vám nevyhovuje, zobrazí se na pole, můžete vytvořit vlastní, vlastního souboru vnoření nastavení, které dávají pokyn **Průzkumníku řešení** jak lze vnořit soubory. Můžete přidat libovolný počet vlastního souboru vnoření nastavení, jak se vám líbí a můžete přepnout mezi nimi podle potřeby. Pokud chcete vytvořit nové vlastní nastavení, můžete začít s prázdný soubor, nebo můžete použít **webové** nastavení jako výchozí bod:
+Pokud se vám získáte out-of-the-box, můžete vytvořit vlastní, vlastní soubor nastavení, které dáte pokyn, aby vnořování **Průzkumníka řešení** postupy vnořené soubory. Můžete přidat tolik vlastního souboru vnoření nastavení, jak se vám líbí a můžete přepínat mezi nimi podle potřeby. Chcete-li vytvořit nové vlastní nastavení, můžete začít s prázdný soubor nebo můžete použít **webové** nastavení jako výchozí bod:
 
-![Přidání vlastního souboru vnoření pravidla](media/filenesting_addcustom.png)
+![Přidání vlastního souboru vnoření pravidel](media/filenesting_addcustom.png)
 
-Doporučujeme použít **webové** nastavení jako váš výchozí bod, protože je snazší s ním pracovat něco, která již funkce. Pokud použijete **webové** nastavení jako počáteční bod, *. filenesting.json* soubor bude vypadat podobně jako následující soubor:
+Doporučujeme použít **webové** nastavení jako vaše počáteční bod vzhledem k tomu je snazší pracovat s něco, která již funkce. Pokud používáte **webové** nastavení jako výchozí bod, *. filenesting.json* souboru vypadá podobně jako následující soubor:
 
-![Použít existující soubor vnoření pravidla jako základ pro vlastní nastavení](media/filenesting_editcustom.png)
+![Použít existující soubor jako základ pro vlastní nastavení vnořování pravidla](media/filenesting_editcustom.png)
 
-Umožňuje zaměřit se na uzlu **dependentFileProviders** a jeho podřízené uzly. Každý podřízený uzel je typ pravidla, Visual Studio můžete použít k vnořit soubory. Například **mají stejný název souboru, avšak jiné rozšíření** je jeden typ pravidla. Jsou uvedená dostupná pravidla:
+Zaměřme se na uzlu **dependentFileProviders** a jeho podřízených uzlů. Každý podřízený uzel je typ pravidla, pomocí sady Visual Studio můžete vnořit soubory. Například **mají stejný název souboru, ale s jinou příponou** je jeden typ pravidla. Dostupná pravidla jsou:
 
-* **extensionToExtension**: pomocí tohoto typu pravidla vnořit *file.js* pod *file.ts*
+* **extensionToExtension**: pomocí tohoto typu pravidla můžete vnořit *file.js* pod *file.ts*
 
-* **fileSuffixToExtension**: pomocí tohoto typu pravidla vnořit *soubor vsdoc.js* pod *file.js*
+* **fileSuffixToExtension**: pomocí tohoto typu pravidla můžete vnořit *souboru vsdoc.js* pod *file.js*
 
-* **addedExtension**: pomocí tohoto typu pravidla vnořit *file.html.css* pod *file.html*
+* **addedExtension**: pomocí tohoto typu pravidla můžete vnořit *file.html.css* pod *file.html*
 
-* **pathSegment**: pomocí tohoto typu pravidla vnořit *jquery.min.js* pod *jquery.js*
+* **pathSegment**: pomocí tohoto typu pravidla můžete vnořit *jquery.min.js* pod *jquery.js*
 
-* **allExtensions**: pomocí tohoto typu pravidla vnořit *soubor.* * v části *file.js*
+* **allExtensions**: pomocí tohoto typu pravidla můžete vnořit *souboru.* * v části *file.js*
 
-* **fileToFile**: pomocí tohoto typu pravidla vnořit *bower.json* pod *.bowerrc*
+* **fileToFile**: pomocí tohoto typu pravidla můžete vnořit *bower.json* pod *.bowerrc*
 
-### <a name="the-extensiontoextension-provider"></a>Zprostředkovatel extensionToExtension
+### <a name="the-extensiontoextension-provider"></a>Poskytovatel extensionToExtension
 
-Tento zprostředkovatel umožňuje definovat pravidla vnoření souborů pomocí konkrétní přípony souborů. Podívejte se na následující příklad:
+Tento zprostředkovatel umožňuje definovat pravidla vnoření souborů pomocí konkrétní přípony souborů. Vezměte v úvahu v následujícím příkladu:
 
-![extentionToExtension příklad pravidla](media/filenesting_extensiontoextension.png) ![Příklad vliv extentionToExtension](media/filenesting_extensiontoextension_effect.png)
+![Příklad pravidla extentionToExtension](media/filenesting_extensiontoextension.png) ![Příklad efekt extentionToExtension](media/filenesting_extensiontoextension_effect.png)
 
-* *Cart.js* vnořen v části *cart.ts* z důvodu první **extensionToExtension** pravidlo
+* *Cart.js* je vnořený *cart.ts* kvůli první **extensionToExtension** pravidlo
 
-* *Cart.js* není vnořené pod *cart.tsx* protože **.ts** zaslána před **.tsx** v pravidlech, a může existovat jenom jednou nadřazenou položkou.
+* *Cart.js* nebyl vnořen v rámci *cart.tsx* protože **.ts** byla zaslána před **.tsx** v pravidlech, a může existovat pouze jeden nadřazený prvek
 
-* *Light.CSS* vnořen v části *light.sass* z důvodu druhý **extensionToExtension** pravidlo
+* *Light.CSS* je vnořený *light.sass* kvůli druhý **extensionToExtension** pravidlo
 
-* *Home.HTML* vnořen v části *home.md* z důvodu třetí **extensionToExtension** pravidlo
+* *Home.HTML* je vnořený *home.md* kvůli třetí **extensionToExtension** pravidlo
 
-### <a name="the-filesuffixtoextension-provider"></a>Zprostředkovatel fileSuffixToExtension
+### <a name="the-filesuffixtoextension-provider"></a>Poskytovatel fileSuffixToExtension
 
-Tento zprostředkovatel funguje podobně jako **extensionToExtension** zprostředkovatele s z jenom rozdíl je pravidlo bude vypadat na příponě souboru místo právě rozšíření. Podívejte se na následující příklad:
+Tento zprostředkovatel funguje stejně jako **extensionToExtension** zprostředkovatele s z jediný rozdíl je, který toto pravidlo zjistí příponu souboru, ne jenom rozšíření. Vezměte v úvahu v následujícím příkladu:
 
-![fileSuffixToExtension příklad pravidla](media/filenesting_filesuffixtoextension.png) ![Příklad vliv fileSuffixToExtension](media/filenesting_filesuffixtoextension_effect.png)
+![Příklad pravidla fileSuffixToExtension](media/filenesting_filesuffixtoextension.png) ![Příklad efekt fileSuffixToExtension](media/filenesting_filesuffixtoextension_effect.png)
 
-* *portál vsdoc.js* vnořen v části *portal.js* z důvodu **fileSuffixToExtension** pravidlo
+* *portál vsdoc.js* je vnořený *portal.js* z důvodu **fileSuffixToExtension** pravidlo
 
-* každý další aspekt pravidla funguje stejným způsobem jako **extensionToExtension**
+* všechny ostatní aspekty pravidla funguje stejným způsobem jako **extensionToExtension**
 
-### <a name="the-addedextension-provider"></a>Zprostředkovatel addedExtension
+### <a name="the-addedextension-provider"></a>Poskytovatel addedExtension
 
-Tento zprostředkovatel vnořena souborů s příponou další pod soubor bez další rozšíření. Další rozšíření může vyskytovat pouze na konci úplný název souboru. Podívejte se na následující příklad:
+Tento zprostředkovatel vnoří soubory s příponou další v rámci souboru bez další rozšíření. Další rozšíření může nacházet pouze na konci úplný název souboru. Vezměte v úvahu v následujícím příkladu:
 
-![addedExtension příklad pravidla](media/filenesting_addedextension.png) ![Příklad vliv addedExtension](media/filenesting_addedextension_effect.png)
+![Příklad pravidla addedExtension](media/filenesting_addedextension.png) ![Příklad efekt addedExtension](media/filenesting_addedextension_effect.png)
 
-* *File.HTML.CSS* vnořen v části *file.html* z důvodu **addedExtension** pravidlo
+* *File.HTML.CSS* je vnořený *file.html* z důvodu **addedExtension** pravidlo
 
-### <a name="the-pathsegment-provider"></a>Zprostředkovatel pathSegment
+### <a name="the-pathsegment-provider"></a>Poskytovatel pathSegment
 
-Tento zprostředkovatel vnořena souborů s příponou další v souboru bez další rozšíření. Další rozšíření může vyskytovat pouze ve středu úplný název souboru. Podívejte se na následující příklad:
+Tento zprostředkovatel vnoří soubory s příponou další v rámci souboru bez další rozšíření. Další rozšíření může vyskytovat jenom na střední úplný název souboru. Vezměte v úvahu v následujícím příkladu:
 
-![pathSegment příklad pravidla](media/filenesting_pathsegment.png) ![Příklad vliv pathSegment](media/filenesting_pathsegment_effect.png)
+![Příklad pravidla pathSegment](media/filenesting_pathsegment.png) ![Příklad efekt pathSegment](media/filenesting_pathsegment_effect.png)
 
-* *jQuery.min.js* vnořen v části *jquery.js* z důvodu **pathSegment** pravidlo
+* *jQuery.min.js* je vnořený *jquery.js* z důvodu **pathSegment** pravidlo
 
-### <a name="the-allextensions-provider"></a>Zprostředkovatel allExtensions
+### <a name="the-allextensions-provider"></a>Poskytovatel allExtensions
 
-Tento zprostředkovatel umožňuje definovat pravidla vnoření souborů pro soubory s jakoukoli příponu ale stejný název základního souboru. Podívejte se na následující příklad:
+Tento zprostředkovatel umožňuje definovat pravidla vnoření souborů pro soubory s jakoukoli příponu, ale stejný základní název souboru. Vezměte v úvahu v následujícím příkladu:
 
-![allExtensions příklad pravidla](media/filenesting_allextensions.png) ![Příklad vliv allExtensions](media/filenesting_allextensions_effect.png)
+![Příklad pravidla allExtensions](media/filenesting_allextensions.png) ![Příklad efekt allExtensions](media/filenesting_allextensions_effect.png)
 
-* *Template.cs* a *template.doc* jsou vnořeny pod *template.tt* z důvodu **allExtensions** pravidlo.
+* *Template.cs* a *template.doc* jsou vnořené pod *template.tt* z důvodu **allExtensions** pravidlo.
 
-### <a name="the-filetofile-provider"></a>Zprostředkovatel fileToFile
+### <a name="the-filetofile-provider"></a>Poskytovatel fileToFile
 
-Tento zprostředkovatel umožňuje definovat souboru vnoření pravidla založená na celé názvy souborů. Podívejte se na následující příklad:
+Tento zprostředkovatel umožňuje definovat pravidla vnoření souborů podle celého názvu souboru. Vezměte v úvahu v následujícím příkladu:
 
-![fileToFile příklad pravidla](media/filenesting_filetofile.png) ![Příklad vliv fileToFile](media/filenesting_filetofile_effect.png)
+![Příklad pravidla fileToFile](media/filenesting_filetofile.png) ![Příklad efekt fileToFile](media/filenesting_filetofile_effect.png)
 
-* *.bowerrc* vnořen v části *bower.json* z důvodu **fileToFile** pravidlo
+* *.bowerrc* je vnořený *bower.json* z důvodu **fileToFile** pravidlo
 
 ### <a name="rule-order"></a>Pořadí pravidel
 
-Pořadí je důležité v každé části souboru vlastní nastavení. Pořadí, ve kterém jsou prováděny pravidla pomocí přesunutí nahoru nebo dolů uvnitř můžete změnit **dependentFileProvider** uzlu. Například, pokud máte jednoho pravidla, která vytváří **file.js** nadřazeného **file.ts** a jiné pravidlo, které umožňuje **file.coffee** nadřazeného **file.ts**, pořadí, ve kterém se zobrazí v souboru stanoví vnoření chování, pokud jsou přítomné všechny tři soubory. Vzhledem k tomu **file.ts** může mít pouze jednu nadřazenou položku, podle toho, která pravidlo provádí první wins.
+Pořadí je důležité v každé části soubor s vlastním nastavením. Můžete změnit pořadí, ve kterém pravidla provedení jejich přesunutím směrem nahoru nebo dolů v **dependentFileProvider** uzlu. Například, pokud máte jednoho pravidla, která provádí **file.js** nadřazený **file.ts** a další pravidlo, které umožňuje **file.coffee** nadřazený **file.ts**, pořadí, v jakém jsou uvedeny v souboru určuje vnoření chování, když jsou všechny tři soubory k dispozici. Protože **file.ts** může mít pouze jeden nadřazený prvek, podle toho, která pravidlo spustí první wins.
 
-Pořadí je důležité pro pravidlo oddíly sami, ne jenom pro soubory v rámci oddílu. Jakmile pár soubory se najde shoda s vnoření pravidla souborů, ostatní pravidla další dolů v souboru jsou ignorovány a zpracování další pár souborů.
+Řazení je také důležité pro pravidlo oddíly sami, nikoli pouze pro soubory v rámci oddílu. Jakmile dvojici souborů je nalezena shoda s pravidlem vnoření souborů, ostatní pravidla další dolů v souboru jsou ignorovány a další pár souborů se zpracovává.
 
-### <a name="file-nesting-button"></a>Tlačítko vnoření soubor
+### <a name="file-nesting-button"></a>Vnoření souboru – tlačítko
 
-Můžete spravovat všechna nastavení, včetně vlastní nastavení, prostřednictvím stejné tlačítka na **Průzkumníku řešení**:
+Můžete spravovat všechna nastavení, včetně vlastní nastavení, pomocí stejného tlačítka v **Průzkumníka řešení**:
 
-![Aktivovat vlastního souboru vnoření pravidla](media/filenesting_activatecustom.png)
+![Aktivovat vnoření vlastního souboru pravidel](media/filenesting_activatecustom.png)
 
-## <a name="create-solution-specific-and-project-specific-settings"></a>Vytvoření nastavení specifická řešení a projektu
+## <a name="create-solution-specific-and-project-specific-settings"></a>Vytvoření nastavení specifická pro řešení a specifické pro projekt
 
-Můžete vytvořit nastavení specifická řešení a projektu prostřednictvím místní nabídky pro každé řešení a projektu:
+Můžete vytvořit nastavení specifická pro řešení a specifické pro projekt přes místní nabídku jednotlivých řešení a projektu:
 
-![Řešení a pravidla týkající se projektu vnoření](media/filenesting_solutionprojectspecific.png)
+![Vnoření pravidla specifická pro projekt a řešení](media/filenesting_solutionprojectspecific.png)
 
-Specifické řešení a projektu nastavení spolu se aktivní nastavení sady Visual Studio. Například můžete mít soubor prázdného projektu konkrétní nastavení, ale **Průzkumníku řešení** je stále vnoření soubory. Vnoření chování pochází z nastavení specifických pro řešení nebo nastavení sady Visual Studio. Prioritu pro slučování vnoření nastavení souboru je: Visual Studio > řešení > projekt.
+Specifické řešení a projektu nastavení spolu se aktivní nastavení sady Visual Studio. Například může být soubor prázdný nastavení specifické pro projekt, ale **Průzkumníka řešení** je stále vnořování souborů. Vnoření chování pochází z nastavení specifická pro řešení nebo nastavení sady Visual Studio. Priorita pro sloučení nastavení vnořování souborů je: Visual Studio > řešení > projekt.
 
-Visual Studio ignorovat nastavení specifická řešení a projektu, můžete zjistit, i když soubory existují na disku, když zapnete možnost **ignorovat nastavení řešení a projektu** pod **nástroje**  >  **Možnosti** > **ASP.NET Core** > **souboru vnoření**.
+Visual Studio ignorovat nastavení specifická pro řešení a specifické pro projekt, můžete říct, i v případě, že soubory existují na disku, když zapnete možnost **ignorovat nastavení řešení a projektů** pod **nástroje**  >  **Možnosti** > **ASP.NET Core** > **souboru vnoření**.
 
-Můžete provést jako opak a řekněte sady Visual Studio *pouze* použít konkrétní řešení nebo nastavení pro konkrétní projekt, nastavením **kořenové** uzlu **true**. Visual Studio přestane sloučení souborů na této úrovni a nebude ho spojovat se soubory vyšší nahoru v hierarchii.
+Můžete provést opak a že se sada Visual Studio *pouze* použít konkrétní řešení nebo nastavení specifické pro projekt tak, že nastavíte **kořenové** uzlu **true**. Visual Studio přestane slučování souborů na této úrovni a nebude ho spojovat se soubory výše v hierarchii.
 
-Specifické řešení a projektu nastavení lze do správy zdrojového kódu a celý tým funguje na základu kódu můžete sdílet je zkontrolovat.
+Nastavení specifická pro řešení a specifické pro projekt může být zařazeno do správy zdrojového kódu a celý tým, že funguje v základu kódu můžete je sdílet.
 
-## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>Zakázat globální soubor vnoření pravidla pro konkrétní řešení nebo projektu
+## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>Zákaz pravidel vnoření globálního souboru pro konkrétní řešení nebo projekt
 
-Existující pravidla vnoření globální souborů pro projekty nebo konkrétní řešení můžete zakázat pomocí **odebrat** akce pro zprostředkovatele místo **přidat**. Pokud přidejte následující kód nastavení do projektu, například všechny **pathSegment** pravidla, která mohou existovat globálně pro tento konkrétní projekt jsou zakázány:
+Můžete zakázat existující pravidla vnoření globálního souboru pro konkrétní řešení nebo projektů s použitím **odebrat** akce zprostředkovatele místo **přidat**. Pokud přidáte následující kód nastavení do projektu, například všechny **pathSegment** pravidla, která mohou existovat globálně tohoto konkrétního projektu jsou zakázané:
 
 ```json
 "dependentFileProviders": {

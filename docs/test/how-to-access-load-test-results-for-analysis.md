@@ -16,42 +16,42 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d20754bc61a003b1b7f6d1eb84ce419c2c6e442b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966684"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175670"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>Postupy: Přístup k výsledkům zátěžového testu pro analýzu
+# <a name="how-to-access-load-test-results-for-analysis"></a>Postupy: přístup k analýze výsledků zátěžového testu
 
-Při spuštění zátěžového testu z editoru načíst otestovat, automaticky otevře výsledků zátěžových testů a spuštěné zátěžového testu se zobrazí v analyzátoru načíst testování. Při spuštění zátěžového testu z příkazového řádku, je nutné ručně získat přístup výsledků zátěžového testu.
+Když spustíte zátěžový test z editoru zátěžových testů, výsledky zátěžového testu se automaticky otevře a spuštění zátěžového testu se zobrazí v **Analyzéru zátěžového testu**. Při spuštění zátěžového testu z příkazového řádku, je nutné ručně přejít výsledky zátěžového testu.
 
-Výsledek testu zatížení pro dokončeného zátěžového testu obsahuje vzorků a informace o chybě, která nebyla shromážděna pravidelně z počítačů v rámci testu. Během spuštění zátěžového testu se můžou shromažďovat velký počet vzorků. Množství dat výkonu, která se shromažďují závisí na délce testu, spuštění, intervalu vzorkování, počet počítačů v rámci testů, počet shromažďovaných čítače, sběrače dat, které jsou nakonfigurované a úrovně protokolování. Pro velké zátěžový test množství dat výkonu, která se shromažďují lze snadno několik GB. Další informace najdete v tématu [testovací kontrolery a testovací agenti](configure-test-agents-and-controllers-for-load-tests.md).
+Výsledek testu zatížení pro dokončený test zatížení obsahuje ukázky čítače výkonu a informace o chybách, které byly pravidelně shromažďovány z testovaných počítačů. V průběhu spuštění zátěžového testu lze shromažďovat velké množství vzorků čítačů výkonu. Množství shromážděných dat o výkonu závisí na délce zkoušky, intervalu vzorkování, počtu testovaných počítačů, počtu shromažďovaných čítačů, sběračích dat, které jsou nakonfigurovány a úrovní protokolování. Pro velký zátěžový test může množství shromážděných dat o výkonu snadno dosáhnout několika gigabajtů. Další informace najdete v tématu [testovací kontrolery a testovací agenty](configure-test-agents-and-controllers-for-load-tests.md).
 
-## <a name="to-access-a-load-test-result"></a>Pro přístup k výsledku testu zatížení
+## <a name="to-access-a-load-test-result"></a>Pro přístup k výsledku zátěžového testu
 
-1.  Z projektu testu výkonnosti webu a zátěžového testu otevřete zátěžový test.
+1.  Z webového výkonu a zátěžové testování projektu, otevřete zátěžový test.
 
-2.  V panelu nástrojů editoru zátěžových testů, vyberte **otevřete a správa výsledků** tlačítko.
+2.  V panelu nástrojů editoru zátěžového testu, zvolte **otevřít a spravovat výsledky** tlačítko.
 
-     **Otevřete a správa výsledků** zobrazí se dialogové okno.
+     **Otevřít a spravovat výsledky** zobrazí se dialogové okno.
 
-3.  V **zadejte název řadiče najít výsledků zátěžového testu**, vyberte řadič. Vyberte  **\<místní >-žádný řadič** přístup výsledky ukládají místně.
+3.  V **zadat název kontroléru pro vyhledání výsledků zátěžového testu**, vyberte řadič. Vyberte  **\<místní > – žádný kontrolér** pro přístup k výsledkům uloženým místně.
 
-4.  V **zobrazit výsledky pro následující zátěžový test**, vyberte zátěžový test, jejichž výsledky, které chcete zobrazit. Vyberte  **\<zobrazit výsledky pro všechny testy >** zobrazíte všechny výsledky pro všechny testy.
+4.  V **zobrazit výsledky pro následující zátěžový test**, vyberte test zatížení, jejichž výsledky chcete zobrazit. Vyberte  **\<zobrazit výsledky všech testů >** zobrazíte všechny výsledky pro všechny testy.
 
-     Pokud jsou k dispozici výsledků zátěžového testu, se objeví v **výsledků zátěžového testu** seznamu. Sloupce **čas**, **doba trvání**, **uživatele**, **výsledek**, **Test**, a  **Popis**. **Testování** obsahuje název testu a **popis** obsahuje nepovinný popis, který se přidá před spuštěním testu.
+     Pokud jsou k dispozici výsledky zátěžového testu, jsou uvedeny v **výsledky zátěžového testu** seznamu. Sloupce jsou **čas**, **doba trvání**, **uživatele**, **výsledek**, **testovací**, a  **Popis**. **Testování** obsahuje název testu, a **popis** obsahuje volitelný popis, který je přidán před spuštěním testu.
 
     > [!NOTE]
-    > Výsledky se zobrazí ve výsledcích nejnovější v horní části seznamu.
+    > Výsledky se zobrazí s nejnovější výsledky v horní části seznamu.
 
-5.  V **výsledků zátěžového testu** vyberte výsledků zátěžových testů, které chcete analyzovat a zvolte **otevřete**.
+5.  V **výsledky zátěžového testu** vyberte výsledky zátěžového testu, kterou chcete analyzovat a zvolte **otevřít**.
 
-6.  Zobrazí se Analyzéru zátěžového testu. Výsledek testu vybrané zatížení se zobrazí v souhrnné zobrazení. Další informace najdete v tématu [přehled souhrnu výsledků testu zatížení](../test/load-test-results-summary-overview.md).
+6.  **Analyzéru zátěžového testu** se zobrazí. Výsledek vybraný zátěžového testu se zobrazí v souhrnném zobrazení. Další informace najdete v tématu [přehled souhrnu výsledků zátěžového testu](../test/load-test-results-summary-overview.md).
 
-     Další aspekty výsledků zátěžových testů v otevřete dialogové okno a správa výsledků včetně import, export a odebrání výsledků zátěžových testů můžete spravovat. Další informace najdete v tématu [Správa výsledků zátěžových testů v úložiště výsledků zátěžového testu](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+     Můžete spravovat výsledky zátěžového testu v pracovat s dalšími aspekty **otevřít a spravovat výsledky** dialogové okno včetně importu, exportu a odebrání výsledky zátěžového testu. Další informace najdete v tématu [spravovat výsledky zátěžového testu v zátěžového testu úložiště výsledků](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3678e418680d034b3699286fd6e6a182936c0f8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b745920a6afd4fb07d1904b7587e32350bb796a3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945894"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177835"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Linker sestavení) – úloha
 Al – úloha zabalí *AL.exe*, nástroj, který je distribuován spolu s [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Tento nástroj Linker sestavení se používá k vytvoření sestavení s manifestem z jednoho nebo více souborů, které jsou buď moduly nebo souborů prostředků. Kompilátory a vývojová prostředí už zadat tyto možnosti tak, aby byl často není potřeba přímo pomocí této úlohy. Linker sestavení je zvláště užitečná pro vývojáře, které by bylo potřeba vytvořte jedno sestavení z více souborů součástí, například ty, které může být vytvořen z jazyků vývoj. Tato úloha není možné sloučit moduly do jednoho sestavení souboru; jednotlivé moduly musí být stále distribuované a k dispozici v pořadí pro výsledné sestavení se načíst správně. Další informace o *AL.exe*, naleznete v tématu [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).  
@@ -59,7 +59,7 @@ Al – úloha zabalí *AL.exe*, nástroj, který je distribuován spolu s [!INCL
 |`ProductVersion`|Volitelné `String` parametru.<br /><br /> Určuje řetězec pro `ProductVersion` pole v sestavení. Další informace najdete v tématu v dokumentaci `/productv[ersion]` možnost [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`ResponseFiles`|Volitelné `String[]` parametru.<br /><br /> Určuje soubory odpovědí, které obsahují další možnosti předávání do propojovacího programu sestavení.|  
 |`SdkToolsPath`|Volitelné `String` parametru.<br /><br /> Určuje cestu k sadě SDK nástroje, jako je resgen.exe.|  
-|`SourceModules`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Jeden nebo více modulů se zkompiluje do sestavení. Moduly budou uvedené v manifestu výsledné sestavení a stále muset distribuované a k dispozici v pořadí pro načtení sestavení. Položek předaných do tento parametr může mít další metadata, která volá `Target`, který určuje cestu a název souboru, ke kterému úkol zkopíruje soubor, po jejímž uplynutí se zkompiluje tohoto nového souboru do sestavení. Další informace najdete v dokumentaci pro [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker). Tento parametr odpovídá seznamu modulů předán Al.exe bez konkrétním přepínačem.|  
+|`SourceModules`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Jeden nebo více modulů se zkompiluje do sestavení. Moduly budou uvedené v manifestu výsledné sestavení a stále muset distribuované a k dispozici v pořadí pro načtení sestavení. Položek předaných do tento parametr může mít další metadata, která volá `Target`, který určuje cestu a název souboru, ke kterému úkol zkopíruje soubor, po jejímž uplynutí se zkompiluje tohoto nového souboru do sestavení. Další informace najdete v dokumentaci pro [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker). Tento parametr odpovídá seznamu modulů, které jsou předány do *Al.exe* bez konkrétním přepínačem.|  
 |`TargetType`|Volitelné `String` parametru.<br /><br /> Určuje formát výstupního souboru: `library` (kód knihovny), `exe` (konzolové aplikace), nebo `win` (aplikace založené na Windows). Výchozí hodnota je `library`. Tento parametr `/t[arget]` možnost [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`TemplateFile`|Volitelné `String` parametru.<br /><br /> Určuje sestavení, ze kterého se dědí všechna metadata sestavení s výjimkou pole jazykové verze. Zadané sestavení musí mít silný název.<br /><br /> Sestavení, které vytvoříte pomocí `TemplateFile` parametr bude satelitní sestavení. Tento parametr `/template` možnost [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Timeout`|Volitelné `Int32` parametru.<br /><br /> Určuje množství času, v milisekundách, po jejichž uplynutí je spustitelný soubor s úkolem ukončen. Výchozí hodnota je `Int.MaxValue`, která udává, že neexistuje žádný časový limit.|  

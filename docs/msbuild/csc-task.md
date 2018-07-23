@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ce653c1b7f8eb3b7118fac3ab61f40ba77082e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1cce49157ad4c9c811c51ba0c491b3e97fea1736
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945881"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177214"
 ---
 # <a name="csc-task"></a>Csc – úloha
 Zabalí *csc.exe*a vytváří spustitelné soubory (*.exe* soubory), dynamické knihovny (*.dll* soubory), nebo moduly kódu (*.netmodule* soubory). Další informace o *csc.exe*, naleznete v tématu [možnosti kompilátoru C#](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -60,12 +60,12 @@ Zabalí *csc.exe*a vytváří spustitelné soubory (*.exe* soubory), dynamické 
 |`ModuleAssemblyName`|Volitelné `String` parametru.<br /><br /> Určuje název sestavení, které bude tento modul součástí.|  
 |`NoConfig`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, sděluje kompilátoru, aby proveďte kompilaci s *csc.rsp* souboru. Další informace najdete v tématu [- noconfig (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option).|  
 |`NoLogo`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, potlačí zobrazení informací nápisu kompilátoru. Další informace najdete v tématu [- nologo (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/nologo-compiler-option).|  
-|`NoStandardLib`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, brání import mscorlib.dll, která definuje obor názvů celého systému. Tento parametr použijte, pokud chcete definovat nebo vytvořit vlastní System – obor názvů a objekty. Další informace najdete v tématu [- nostdlib (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).|  
+|`NoStandardLib`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, brání import *mscorlib.dll*, která definuje obor názvů celého systému. Tento parametr použijte, pokud chcete definovat nebo vytvořit vlastní System – obor názvů a objekty. Další informace najdete v tématu [- nostdlib (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).|  
 |`NoWin32Manifest`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, neobsahují výchozí manifest Win32.|  
 |`Optimize`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, povolí optimalizace. Pokud `false`, zakáže optimalizace. Další informace najdete v tématu [-optimalizovat (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).|  
 |`OutputAssembly`|Volitelné `String` výstupní parametr.<br /><br /> Určuje název výstupního souboru. Další informace najdete v tématu [-out (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option).|  
 |`OutputRefAssembly`|Volitelné `String` parametru.<br /><br /> Určuje název výstupního souboru referenční sestavení. Další informace najdete v tématu [- refout (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option).|  
-|`PdbFile`|Volitelné `String` parametru.<br /><br /> Určuje název souboru ladicích informací. Výchozí název je název výstupního souboru s příponou .pdb.|  
+|`PdbFile`|Volitelné `String` parametru.<br /><br /> Určuje název souboru ladicích informací. Výchozí název je název výstupního souboru s *PDB* rozšíření.|  
 |`Platform`|Volitelné `String` parametru.<br /><br /> Určuje platformu procesor, který bude cílen výstupním souborem. Tento parametr může mít hodnotu `x86`, `x64`, nebo `anycpu`. Výchozí hodnota je `anycpu`. Další informace najdete v tématu [-platform (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).|  
 |`References`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Způsobí, že úloha pro import informací o veřejný typ ze zadaných položek do aktuálního projektu. Další informace najdete v tématu [– referenční dokumentace (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Můžete zadat [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] alias v odkazu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru tak, že přidáte metadata `Aliases` k původní položce "Odkaz". Chcete-li například nastavit alias "LS1" v příkazovém řádku následující Csc:<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> měli byste použít:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  
 |`Resources`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Vloží [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] prostředků do výstupního souboru.<br /><br /> Položek předaných do tento parametr může mít volitelná metadata položky s názvem `LogicalName` a `Access`. `LogicalName` odpovídá `identifier` parametr `/resource` přepnout, a `Access` odpovídá `accessibility-modifier` parametru. Další informace najdete v tématu [-resource (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option).|  
@@ -78,9 +78,9 @@ Zabalí *csc.exe*a vytváří spustitelné soubory (*.exe* soubory), dynamické 
 |`WarningLevel`|Volitelné `Int32` parametru.<br /><br /> Určuje úroveň upozornění kompilátoru k zobrazení. Další informace najdete v tématu [-warn (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option).|  
 |`WarningsAsErrors`|Volitelné `String` parametru.<br /><br /> Označí seznam upozornění pro nakládání s chybami. Další informace najdete v tématu [- warnaserror (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Přepíše tento parametr `TreatWarningsAsErrors` parametru.|  
 |`WarningsNotAsErrors`|Volitelné `String` parametru.<br /><br /> Označí seznam upozornění, která nemají být považována za chyby. Další informace najdete v tématu [- warnaserror (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Tento parametr je užitečná pouze pokud `TreatWarningsAsErrors` parametr je nastaven na `true`.|  
-|`Win32Icon`|Volitelné `String` parametru.<br /><br /> Vloží soubor .ico do sestavení, které dává výstupnímu souboru požadovaný vzhled v Průzkumníku souborů. Další informace najdete v tématu [-win32icon (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option).|  
+|`Win32Icon`|Volitelné `String` parametru.<br /><br /> Vloží *.ico* souboru v sestavení, které dává výstupnímu souboru požadovaný vzhled v **Průzkumníka souborů**. Další informace najdete v tématu [-win32icon (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option).|  
 |`Win32Manifest`|Volitelné `String` parametru.<br /><br /> Určuje manifest Win32 mají být zahrnuty.|  
-|`Win32Resource`|Volitelné `String` parametru.<br /><br /> Do výstupního souboru vloží soubor prostředků (.res) Win32. Další informace najdete v tématu [-win32res (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option).|  
+|`Win32Resource`|Volitelné `String` parametru.<br /><br /> Vloží prostředek systému Win32 (*.res*) soubor do výstupního souboru. Další informace najdete v tématu [-win32res (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option).|  
   
 ## <a name="remarks"></a>Poznámky  
  Kromě výše uvedených parametrů zdědí tento úkol parametry ze `Microsoft.Build.Tasks.ManagedCompiler` třída, která dědí z <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.ToolTask> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [tooltaskextension – základní třída](../msbuild/tooltaskextension-base-class.md).  

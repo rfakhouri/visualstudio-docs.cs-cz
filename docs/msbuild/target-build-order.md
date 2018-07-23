@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 726bc92a670cea08bcd4af0f89c6eb3a00de9f7c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155612"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178953"
 ---
 # <a name="target-build-order"></a>Pořadí sestavení cílů
 Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřazeny cíle. Tyto atributy můžete určit pořadí, ve kterém jsou spuštěny cíle:  
@@ -103,7 +103,7 @@ Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřaze
 </Target>  
 ```  
   
-## <a name="determining-the-target-build-order"></a>Určení pořadí sestavení cílů  
+## <a name="determine-the-target-build-order"></a>Určení pořadí sestavení cílů  
  MSBuild určuje pořadí sestavení cílů následujícím způsobem:  
   
 1.  `InitialTargets` cíle jsou spuštěny.  

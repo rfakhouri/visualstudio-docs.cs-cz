@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 233088958605c5d03f5ad5ce932b63868729e6c0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cf333c5339ce9a4d6046fb5156e37157004491b9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945504"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177877"
 ---
 # <a name="assignculture-task"></a>AssignCulture – úloha
 Tento úkol přijímá seznam položek, které mohou obsahovat platný řetězec identifikátor jazykové verze .NET jako součást názvu souboru a vytvoří položky, které mají metadat s názvem `Culture` obsahuje odpovídající jazykovou verzi identifikátor. Například název souboru *Form1.fr-fr.resx* neobsahuje vložený jazykovou verzi identifikátor "fr-fr", proto tento úkol vytvoří položka, která má stejný název souboru s metadaty `Culture` rovna `fr-fr`. Úloha také vytvoří seznam názvů souborů pomocí jazykové verze odebrána z názvu souboru.  
@@ -74,10 +74,10 @@ Tento úkol přijímá seznam položek, které mohou obsahovat platný řetězec
   
 |Kolekce položek|Obsah|  
 |---------------------|--------------|  
-|`OutAssignedFiles`|`MyResource1.fr.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx` (žádné další metadata)|  
-|`OutAssignedFilesWithCulture`|`MyResource1.fr.resx (Culture="fr")`|  
-|`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx` (žádné další metadata)|  
-|`OutCultureNeutralAssignedFiles`|`MyResource1.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx (`žádné další metadata)|  
+|`OutAssignedFiles`|*MyResource1.fr.resx* (jazyková verze = "fr")<br /><br /> *MyResource2.XX.resx* (žádné další metadata)|  
+|`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (jazyková verze = "fr")|  
+|`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* (žádné další metadata)|  
+|`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (jazyková verze = "fr")<br /><br /> *MyResource2.XX.resx* (žádné další metadata)|  
   
 ## <a name="see-also"></a>Viz také:  
  [Úlohy](../msbuild/msbuild-tasks.md)   

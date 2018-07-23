@@ -11,55 +11,55 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 01028cd0c2a838335cdaab2705bf5c9bbcd73b44
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548404"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178345"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Postupy: spuštění ladění XSLT
 
-Ladicí program XSLT slouží k ladění stylů XSLT nebo XSLT aplikaci. Při ladění, můžete provést jeden řádek kódu současně zanoříte se do, krokování přes nebo krokování s mimo kód. Příkazy využívat funkce krokování kódu jsou že stejné pro ladicí program XSLT jako u jiných sady Visual Studio ladicí programy. Po spuštění ladění, otevře se XSLT ladicího programu windows, které ukazují, že vstupní dokument a XSLT výstup.
+Ladicí program XSLT slouží k ladění šablony stylů XSLT nebo z některé aplikace XSLT. Při ladění, můžete spustit jeden řádek kódu v čase krokování s vnořením do krokování přes nebo Krokování ven z kódu. Příkazy pro funkci krokování kódu jsou že stejné pro ladicí program XSLT jako u sady Visual Studio ladicí programy. Po spuštění ladění otevře ladicí program XSLT windows lze zobrazit, že vstupní dokument a XSLT výstupu.
 
-## <a name="xml-editor"></a>XML Editor
+## <a name="xml-editor"></a>Editor XML
 
-Ladicí program lze spustit z editoru XML. To umožňuje ladění jako navrhujete šablony stylů.
+Ladicí program lze spustit z editoru XML. To umožňuje ladit, jako jsou návrh šablony stylů.
 
-### <a name="to-start-debugging-from-a-style-sheet"></a>Spustit ladění ze šablony stylů
+### <a name="to-start-debugging-from-a-style-sheet"></a>Spuštění ladění od šablony stylů
 
-1. Otevřete v editoru XML šablony stylů.
+1. Otevření šablony stylů v editoru XML.
 
 1. Vyberte **ladění XSL** z **XML** nabídky.
 
-### <a name="to-start-debugging-from-an-xml-input-document"></a>Spustit ladění ze vstupní dokument XML
+### <a name="to-start-debugging-from-an-xml-input-document"></a>Spuštění ladění od vstupní dokument XML
 
 1. Otevřete dokument XML v editoru XML.
 
 1. Vyberte **ladění XSL** z **XML** nabídky.
 
-## <a name="xslt-from-other-languages"></a>XSLT z jiných jazyků
+## <a name="xslt-from-other-languages"></a>Transformace XSLT z jiných jazyků
 
-Můžete taky krok do XSLT při ladění aplikace. Po stisknutí klávesy F11 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> volání do kódu XSLT můžete krok ladicího programu.
+Můžete také Krokovat s vnořením XSLT při ladění aplikace. Po stisknutí klávesy F11 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> volání ladicího programu můžete krokovat s vnořením kód XSLT.
 
 > [!NOTE]
-> Zanoříte se do XSLT z <xref:System.Xml.Xsl.XslTransform> třída není podporována. <xref:System.Xml.Xsl.XslCompiledTransform> Třída je pouze XSLT procesor, který podporuje zanoříte se do XSLT při ladění.
+> Krokování s vnořením do XSLT z <xref:System.Xml.Xsl.XslTransform> třída není podporována. <xref:System.Xml.Xsl.XslCompiledTransform> Třídy je pouze procesoru XSLT, který podporuje krokování XSLT, při ladění.
 
-### <a name="to-start-debugging-an-xslt-application"></a>Spustit ladění aplikace XSLT
+### <a name="to-start-debugging-an-xslt-application"></a>Pro spuštění ladění XSLT aplikace
 
-1. Při vytváření instance <xref:System.Xml.Xsl.XslCompiledTransform> objektu, nastavte `enableDebug` parametru `true` v kódu.
+1. Při vytváření instance <xref:System.Xml.Xsl.XslCompiledTransform> objektu, nastaven `enableDebug` parametr `true` ve vašem kódu.
 
-     Tato hodnota informuje XSLT procesor pro vytvoření informace o ladění při kompilaci kódu.
+     Říká, že procesoru XSLT se vytvářet i informace o ladění při kompilaci kódu.
 
-1. Stisknutím klávesy F11 přejde do kódu XSLT.
+1. Stisknutím klávesy F11 lze přepínat mezi Krokovat s vnořením kód XSLT.
 
-     Styl XSLT je načten do nového okna dokumentu a ladicí program XSLT je spuštěná.
+     Šablony stylů XSLT je načten v novém okně dokumentu a ladicí program XSLT je spuštěn.
 
-     Alternativně můžete přidat bod rozdělení do šablony stylů a spusťte aplikaci.
+     Alternativně můžete přidat přerušení k šabloně stylů a spusťte aplikaci.
 
 ### <a name="example"></a>Příklad
 
-Následuje příklad programu v C# XSLT. Ukazuje, jak povolit ladění XSLT.
+Následuje příklad programu v jazyce C# XSLT. Ukazuje, jak povolit ladění XSLT.
 
 ```csharp
 using System;
@@ -91,7 +91,7 @@ namespace ConsoleApplication
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Návod: Ladění stylů XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [Základy ladicího programu](../debugger/debugger-basics.md)
+- [Návod: Ladění šablony stylů XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)

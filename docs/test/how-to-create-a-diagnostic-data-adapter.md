@@ -10,55 +10,55 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 923296a6eaed79edc345b9071d5e1d4e2ececefe
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: bf2b6986894d996d5307d2551ddf79ad37f8a8e9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844739"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176977"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Postupy: Vytvoření adaptéru diagnostických dat
 
-Chcete-li vytvořit *adaptér diagnostických dat*, vytvoření knihovny tříd pomocí sady Visual Studio a poté přidejte diagnostických dat adaptéru rozhraní API poskytované Visual Studio Enterprise knihovny tříd. Veškeré informace, které chcete používat jako datový proud nebo soubor, který chcete odeslat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> poskytuje rozhraní, při zpracování události, které jsou vyvolány během spuštění testu. Datové proudy nebo soubory odeslané <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> jsou uloženy jako přílohy výsledků testů, až se dokončí test. Pokud vytvoříte chyby z nich testování výsledků nebo při použití [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], soubory jsou také propojit k chybě.
+Chcete-li vytvořit *adaptér diagnostických dat*, vytvořte knihovnu třídy pomocí sady Visual Studio a potom přidat do knihovny tříd poskytuje Visual Studio Enterprise API adaptéru diagnostických dat. Veškeré informace, které chcete, aby jako datový proud nebo soubor, který chcete odeslat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> poskytovaného rámcem, při zpracování událostí, které jsou aktivovány v průběhu testovacího běhu. Datové proudy nebo soubory odeslané <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> jsou uloženy jako přílohy k výsledkům testu po dokončení testu. Pokud vytvoříte chybu z těchto výsledků testování nebo při použití [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], soubory se také s chybou propojen.
 
- Můžete vytvořit adaptér diagnostických dat, která má vliv na počítači, kde se spouští testy nebo počítač, který je součástí prostředí, ve kterém používáte aplikaci spustit v testu. Například shromažďování souborů na testovacím počítači, kde se testy spouštějí, nebo shromažďování souborů na počítači obsluhující v roli webového serveru pro vaši aplikaci.
+ Můžete vytvořit adaptér diagnostických dat, který má vliv na počítači, kde probíhají testy, nebo počítač, který je součástí prostředí, který používáte ke spuštění aplikace v rámci testu. Například shromažďování souborů na testovacím počítači, ve kterém jsou testy spustit nebo shromažďování souborů na počítač, který je v roli webového serveru pro vaši aplikaci.
 
- Adaptér diagnostických dat, můžete zajistit popisný název, který se zobrazí při vytváření nastavení testů pomocí nástroje Microsoft Test Manager nebo pomocí sady Visual Studio. Nastavení testů umožňují definovat, jaké role počítače se spustí adaptérů konkrétní diagnostických dat ve vašem prostředí, při spuštění testů. Vaše adaptérů diagnostických dat můžete také konfigurovat při vytvoření nastavení testu. Můžete například vytvořit adaptér diagnostických dat, která shromažďuje vlastní protokoly z webového serveru. Při vytváření testovacích nastavení, můžete vybrat možnost spustit tento adaptér diagnostických dat na počítači nebo počítačů, které fungují této role Webový server a můžete upravit konfiguraci pro nastavení testovací shromažďovat pouze poslední tři protokoly, které byly vytvořeny. Další informace o nastavení testu najdete v tématu [shromažďování diagnostických informací pomocí Test nastavení](../test/collect-diagnostic-information-using-test-settings.md).
+ Adaptér diagnostických dat můžete dát popisný název, který se zobrazí při vytvoření nastavení testu pomocí nástroje Microsoft Test Manager nebo pomocí sady Visual Studio. Test nastavení umožňují definovat, které role počítače budou spouštět určité adaptéry diagnostických dat ve vašem prostředí při spuštění testů. Můžete také nakonfigurovat adaptéry diagnostických dat při vytvoření nastavení testu. Můžete například vytvořit adaptér diagnostických dat, který shromažďuje vlastní protokoly z webového serveru. Když vytvoříte nastavení testu, můžete vybrat spustit tento adaptér diagnostických dat na počítači nebo počítačích, které provádějí tuto roli webového serveru a můžete upravovat konfiguraci pro vaše nastavení testu k získání pouze posledních tří protokolů, které byly vytvořeny. Další informace o nastaveních testu naleznete v tématu [shromažďovat Diagnostic Information Using Test Settings](../test/collect-diagnostic-information-using-test-settings.md).
 
- Události jsou vyvolány, když spustíte testy, aby adaptér diagnostických dat můžete v tomto bodě provádět úlohy v testu.
+ Události jsou vyvolány při spuštění testů tak, aby adaptér diagnostických dat můžete v tomto okamžiku provádět úlohy v testu.
 
 > [!IMPORTANT]
-> Tyto události může být aktivována v různých vláknech, zejména v případě, že máte testy spouštění na více počítačích. Proto musíte znát možné problémy vláken a není neúmyslně poškozen interních datových vlastní adaptéru. Zajistěte, aby byl adaptér diagnostických dat bezpečné pro přístup z více vláken.
+> Tyto události mohou být vyvolány v různých vláknech, zvláště když máte testy spuštěné ve více počítačích. Proto musíte znát možné problémy s tvorbou vláken a nikoli neúmyslně poškodit vnitřní data vlastního adaptéru. Ujistěte se, že váš adaptér diagnostických dat je bezpečné pro vlákna.
 
- Následuje částečný seznam klíčů událostí, které můžete použít při vytváření adaptér diagnostických dat. Úplný seznam událostí adaptéru diagnostických dat najdete v tématu abstraktní <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> třídy.
+ Následuje částečný seznam klíčových událostí, které můžete použít při vytváření adaptéru diagnostických dat. Úplný seznam diagnostických dat adaptéru událostí naleznete v abstraktní <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> třídy.
 
 |Událost|Popis|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Začátek spustit test|
-|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Konec spustit test|
-|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseStart>|Spustit všechny testy v testovacím běhu|
-|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseEnd>|Konec všechny testy v testovacím běhu|
-|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestStepStart>|Spuštění každého kroku testu v testu|
-|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestStepEnd>|Konec každý krok testu v testu|
+|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Začátek vašeho spuštění testu|
+|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Konec vašeho spuštění testu|
+|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseStart>|Začátek každého testu v testovacím běhu|
+|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseEnd>|Konec každého testu v testovacím běhu|
+|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestStepStart>|Začátek každého kroku testu v testu|
+|<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestStepEnd>|Konec každého kroku testu v testu|
 
 > [!NOTE]
-> Po dokončení manuálního testu žádné další události kolekce dat jsou odesílány adaptér diagnostických dat. Když se znovu spustí testu, bude mít nový identifikátor testovacího případu. Pokud uživatel resetuje testu během testu (kterou vyvolá <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> událostí), nebo změny a testovací krok výsledek, žádná data kolekce událost je odeslána do adaptéru diagnostických dat, ale identifikátor testovacího případu zůstává stejná. Pokud chcete zjistit, zda byl obnoven testovacího případu, musíte ve adaptér diagnostických dat sledovat identifikátor testovacího případu.
+> Po dokončení manuálního testu adaptér diagnostických dat jsou odesílány žádné další události kolekce. Když se znovu spustí test, bude mít nový identifikátor testovacího případu. Pokud uživatel obnoví test při zkoušce (která vyvolává <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> událostí), nebo změny testovací krok výsledek, žádná událost kolekce dat je odeslána do adaptéru diagnostických dat, ale identifikátor testovacího případu zůstává stejný. K určení, zda byla obnovena testovacího případu, musíte sledovat identifikátor testovacího případu v adaptéru diagnostických dat.
 
- Použijte následující postup k vytvoření adaptéru diagnostických dat, která shromažďuje datový soubor, který je založený na informacích, můžete konfigurovat při vytvoření nastavení testu.
+ Pomocí následujícího postupu vytvořte adaptér diagnostických dat, který shromažďuje datový soubor, který je založen na informacích, které konfigurujete při vytvoření nastavení testu.
 
- Adaptér projektu kompletní příklad diagnostických dat, včetně editor vlastní konfigurace, najdete v části [ukázkový projekt pro vytvoření adaptéru diagnostických dat](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
+ Kompletní příklad diagnostických dat adaptéru projektu, včetně vlastního konfiguračního editoru, najdete v části [ukázkový projekt pro vytvoření adaptéru diagnostiky dat](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
 
 ##  <a name="CreateAdapter"></a> Vytvoření a instalace adaptéru diagnostických dat
 
 #### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Vytvoření a instalace adaptéru diagnostických dat
 
-1.  Vytvořte nové knihovny tříd.
+1.  Vytvořte novou knihovnu tříd.
 
-    1.  Na **soubor** nabídce zvolte **nový**a pak přejděte na **nový projekt**.
+    1.  Na **souboru** nabídce zvolte **nový**a pak na **nový projekt**.
 
     2.  Z **typy projektů**, vyberte jazyk, který chcete použít.
 
-    3.  Z **Visual Studio – nainstalované šablony**, vyberte **knihovny tříd**.
+    3.  Z **instalované šablony sady Visual Studio**vyberte **knihovny tříd**.
 
     4.  Zadejte název pro adaptér diagnostických dat.
 
@@ -66,7 +66,7 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvoření knihovny tříd 
 
 2.  Přidat sestavení **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-    1.  V Průzkumníku řešení klikněte pravým tlačítkem na **odkazy** a zvolte **přidat odkaz na** příkaz.
+    1.  V Průzkumníku řešení klikněte pravým tlačítkem na **odkazy** a zvolte **přidat odkaz** příkazu.
 
     2.  Zvolte **.NET** a vyhledejte **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
@@ -74,13 +74,13 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvoření knihovny tříd 
 
 3.  Přidat sestavení **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  V Průzkumníku řešení klikněte pravým tlačítkem na **odkazy** a vyberte **přidat odkaz na** příkaz.
+    1.  V Průzkumníku řešení klikněte pravým tlačítkem na **odkazy** a vyberte **přidat odkaz** příkazu.
 
     2.  Zvolte **/.NET**, vyhledejte **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
     3.  Zvolte **OK**.
 
-4.  Přidejte následující `using` příkazů do souboru třídy:
+4.  Přidejte následující `using` příkazy do souboru třídy:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.Common;
@@ -91,32 +91,32 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvoření knihovny tříd 
     using System;
     ```
 
-5.  Přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> do třídy pro adaptér diagnostických dat k identifikaci jako adaptéru diagnostických dat, nahraďte **společnosti**, **produktu**, a **verze** s příslušné informace pro adaptér diagnostických dat:
+5.  Přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> do třídy pro adaptér diagnostických dat k jeho identifikaci jako adaptéru diagnostických dat, nahrazení **společnosti**, **produktu**, a **verze** s odpovídajícími informacemi pro adaptér diagnostických dat:
 
     ```csharp
     [DataCollectorTypeUri("datacollector://Company/Product/Version")]
     ```
 
-6.  Přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> atribut třídy, nahraďte parametry příslušné informace pro adaptér diagnostických dat:
+6.  Přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> atribut třídy, nahraďte parametry s odpovídajícími informacemi pro adaptér diagnostických dat:
 
     ```csharp
     [DataCollectorFriendlyName("Collect Log Files", false)]
     ```
 
-     Tento popisný název se zobrazí v testovacích nastavení aktivit.
+     Tento popisný název se zobrazí v aktivitě nastavení testu.
 
     > [!NOTE]
-    > Můžete také přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> k určení `Type` editoru vaše vlastní konfigurace pro tento adaptér dat a volitelně zadat soubor nápovědy pro editor.
+    > Můžete také přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> zadat `Type` z editoru vlastní konfigurace pro tento datový adaptér a volitelně zadat soubor nápovědy pro použití v editoru.
     >
-    > Můžete taky použít <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> k určení, zda se má vždy povolit.
+    > Můžete také použít <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> k určení, že je vždy povolena.
 
-7.  Třídě adaptéru diagnostických dat musí dědit z <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> třídy následujícím způsobem:
+7.  Vaše třída adaptéru diagnostických dat musí dědit z <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> třídy následujícím způsobem:
 
     ```csharp
     public class MyDiagnosticDataAdapter : DataCollector
     ```
 
-8.  Přidejte místní proměnné následujícím způsobem:
+8.  Přidejte lokální proměnné následujícím způsobem:
 
     ```csharp
     private DataCollectionEvents dataEvents;
@@ -125,7 +125,7 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvoření knihovny tříd 
     private XmlElement configurationSettings;
     ```
 
-9. Přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector.Initialize*> metoda a **Dispose** metoda. V `Initialize` metody inicializaci jímku dat, všechny konfigurační data z nastavení testů a registraci obslužné rutiny událostí, které chcete použít takto:
+9. Přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector.Initialize*> metoda a **Dispose** metoda. V `Initialize` metody inicializujete jímky dat, všechna konfigurační data z nastavení testu a registrujete obslužné rutiny událostí, které chcete použít následujícím způsobem:
 
     ```csharp
     public override void Initialize(
@@ -170,7 +170,7 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvoření knihovny tříd 
     }
     ```
 
-10. Použijte následující kód obslužné rutiny událostí a soukromá metoda ke shromažďování soubor protokolu vygenerovaných během testu:
+10. Použijte následující kód obslužné rutiny události a soukromou metodu k získání souboru protokolu generovaného během testu:
 
     ```csharp
     public void OnTestCaseEnd(sender, TestCaseEndEventArgs e)
@@ -220,14 +220,14 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvoření knihovny tříd 
     }
     ```
 
-     Tyto soubory jsou připojené k výsledky testů. Pokud vytvoříte chyby z nich testování výsledků nebo při použití [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], soubory jsou také připojené k chybě.
+     Tyto soubory jsou připojeny k výsledkům testu. Pokud vytvoříte chybu z těchto výsledků testování nebo při použití [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], jsou soubory také připojeny k chybě.
 
-     Pokud chcete použít vlastní editor ke shromažďování dat použít v nastavení testu, najdete v článku [postupy: vytvoření vlastního editoru dat pro vaše adaptéru diagnostických dat](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
+     Pokud chcete použít vlastní editor pro shromažďování dat pro použití v nastaveních testu naleznete v části [postupy: vytvoření vlastního editoru dat pro váš adaptér diagnostických dat](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
 
-11. Chcete-li shromažďovat soubor protokolu, po dokončení testu v závislosti na to, co uživatel nakonfigurované v nastavení testu, musíte vytvořit `App.config` souboru a přidejte ji do vašeho řešení. Tento soubor má následující formát a musí obsahovat identifikátor URI pro adaptér diagnostických dat pro identifikaci. Nahradit skutečné hodnoty "Společnosti nebo ProductName nebo verze".
+11. Pokud chcete získat soubor protokolu po dokončení testu založené na to, co uživatel nakonfiguroval v nastavení testu, musíte vytvořit `App.config` a přidejte ji do vašeho řešení. Tento soubor má následující formát a musí obsahovat identifikátor URI pro adaptér diagnostických dat pro jeho rozpoznání. Nahraďte skutečné hodnoty "společnost/NázevProduktu/verze".
 
     > [!NOTE]
-    > Pokud není nutné konfigurovat žádné informace pro adaptér diagnostických dat, není potřeba, vytvořte konfigurační soubor.
+    > Pokud nepotřebujete konfigurovat žádné informace pro adaptér diagnostických dat, není potřeba vytvořit konfigurační soubor.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -253,27 +253,27 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvoření knihovny tříd 
     ```
 
     > [!NOTE]
-    > Výchozí konfigurace element může obsahovat žádná data, která požadujete. Pokud uživatel nekonfiguruje adaptér diagnostických dat v nastavení testů a výchozí data se předá adaptér diagnostických dat, když se spustí. Protože soubor XML, který je přidat do `<DefaultConfigurations>` oddíl není pravděpodobné, že součást deklarované schéma, můžete ignorovat všechny chyby XML vygeneruje.
+    > Prvek výchozí konfigurační může obsahovat libovolná data, která požadujete. Pokud uživatel nenakonfiguruje adaptér diagnostických dat v nastaveních testu, pak výchozí data budou předána adaptéru diagnostických dat, po spuštění. Protože XML, které přidáte do `<DefaultConfigurations>` oddíl není pravděpodobně součástí deklarovaného schématu, můžete ignorovat všechny chyby XML generuje.
     >
-    > Existují další příklady konfigurační soubory v následující cestě založené na instalační adresář: **10.0\Common7\IDE\PrivateAssemblies\DataCollectors Program Files\Microsoft Visual Studio**.
+    > Existují jiné příklady konfiguračních souborů v následující cestě podle instalačního adresáře: **Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors**.
 
-     Další informace o tom, jak nakonfigurovat nastavení testu pro používání prostředí při spuštění testů najdete v tématu [shromažďování diagnostických dat v manuálních testech (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat v manuálních testů (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
 
-     Další informace o instalaci konfiguračního souboru, najdete v části [postupy: instalace vlastního adaptéru diagnostických dat](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
+     Další informace o instalaci konfiguračního souboru najdete v tématu [postupy: instalace vlastního adaptéru diagnostiky dat](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
 
-12. Vytvoření vlastního řešení k vytvoření vašeho sestavení adaptéru diagnostických dat.
+12. Sestavte řešení k vytvoření sestavení adaptéru diagnostických dat.
 
-13. Informace o instalaci vlastního editoru najdete v tématu [postupy: instalace vlastního adaptéru diagnostických dat](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
+13. Informace o instalaci vlastního editoru naleznete v tématu [postupy: instalace vlastního adaptéru diagnostiky dat](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
 
-14. Další informace o tom, jak nakonfigurovat nastavení testu pro používání prostředí při spuštění testů najdete v tématu [shromažďování diagnostických dat v manuálních testech (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+14. Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat v manuálních testů (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
 
-15. Pokud chcete vybrat adaptér diagnostických dat, musí nejprve vyberte existujícího nastavení testu nebo vytvořte novou z Microsoft Test Manager nebo Visual Studio. Adaptér se zobrazí na **datové a diagnostické** kartě nastavení testu s popisným názvem, který jste přiřadili k třídě.
+15. Pokud chcete vybrat adaptér diagnostických dat, musíte nejprve vybrat existující nastavení testu nebo vytvořit nový štítek z Microsoft Test Manager nebo Visual Studio. Adaptér se zobrazí na **dat a diagnostiky** karty ve vašem nastavení testu s popisným názvem, který jste přiřadili do třídy.
 
-16. Nastavte tyto otestovat nastavení jako aktivní. Další informace o nastavení testu najdete v tématu [shromažďování diagnostických informací pomocí Test nastavení](../test/collect-diagnostic-information-using-test-settings.md).
+16. Nastavte toto jako aktivní nastavení testu. Další informace o nastaveních testu naleznete v tématu [shromažďovat Diagnostic Information Using Test Settings](../test/collect-diagnostic-information-using-test-settings.md).
 
-17. Spouštění testů pomocí nastavení testů adaptér diagnostických dat vybraná.
+17. Spusťte testy pomocí nastavení testu společně s výběrem adaptéru diagnostiky dat vybrali.
 
-   Datový soubor, který jste zadali, je připojený k si výsledky testu.
+   K výsledkům testů je připojen datový soubor, který jste zadali.
 
 ## <a name="see-also"></a>Viz také:
 
@@ -284,7 +284,7 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvoření knihovny tříd 
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
-- [Shromažďování diagnostických informací s použitím nastavení testu](../test/collect-diagnostic-information-using-test-settings.md)
-- [Shromažďování diagnostických dat v manuálních testech (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [Shromažďování diagnostických údajů pomocí nastavení testů](../test/collect-diagnostic-information-using-test-settings.md)
+- [Shromažďování diagnostických dat v manuálních testů (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
 - [Shromažďování diagnostických dat při testování (VSTS)](/vsts/manual-test/collect-diagnostic-data)
 - [Postupy: vytvoření vlastního editoru dat pro adaptér diagnostických dat](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)

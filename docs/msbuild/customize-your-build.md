@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aa56cf0d0ae6d715685ee331cd60c95eedc5c60
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945972"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175953"
 ---
 # <a name="customize-your-build"></a>Přizpůsobení sestavení
 
 Projekty MSBuild, které používají standardní proces sestavení (import *Microsoft.Common.props* a *cílů Microsoft.Common.targets*) mají několik háky rozšíření, které můžete použít k přizpůsobení sestavení proces.
 
-## <a name="adding-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Přidání argumentů příkazového řádku MSBuild volání pro váš projekt
+## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Přidání argumentů příkazového řádku MSBuild volání pro váš projekt
 
 A *Directory.Build.rsp* souboru nebo nad zdrojový adresář se použijí pro sestavení příkazového řádku vašeho projektu. Podrobnosti najdete v tématu [soubory odezvy nástroje MSBuild](../msbuild/msbuild-response-files.md#directorybuildrsp).
 
@@ -138,7 +138,7 @@ později. To umožňuje nainstalovaných sad SDK k posílení logiku sestavení 
 
 Stejnou adresářovou strukturu je prohledávána v `$(MSBuildUserExtensionsPath)`, což je složka uživatelská *%LOCALAPPDATA%\Microsoft\MSBuild*. Pro všechna sestavení odpovídající typ projektu spuštěné pod přihlašovacími údaji uživatele se naimportují soubory umístěné v této složce. Rozšíření uživatele můžete zakázat nastavením vlastnosti s názvem po importu souboru ve vzoru `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`. Například nastavení `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` k `false` by jinak znemožňovaly import `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`.
 
-## <a name="customizing-the-solution-build"></a>Přizpůsobení sestavení řešení
+## <a name="customize-the-solution-build"></a>Přizpůsobení sestavení řešení
 
 > [!IMPORTANT]
 > Přizpůsobení sestavení řešení tímto způsobem se vztahuje pouze na příkazový řádek sestavení s *MSBuild.exe*. To **nemá** platí pro sestavení v sadě Visual Studio.

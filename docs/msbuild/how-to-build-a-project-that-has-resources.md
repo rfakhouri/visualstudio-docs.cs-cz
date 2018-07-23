@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: baf1fce1179dff0eb8965fbc65a2796546a4f80d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e7724969a4677bc0d8480b794ae72b2dbee74a86
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946661"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180344"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Postupy: sestavení projektu, který má prostředky
 Pokud vytváříte lokalizované verze projektu, musí se oddělit všechny prvky uživatelského rozhraní do souborů prostředků pro různé jazyky. Pokud projekt používá pouze řetězce, soubory prostředků pomocí textových souborů. Alternativně můžete použít *RESX* soubory jako soubory prostředků.  
   
-## <a name="compiling-resources-with-msbuild"></a>Kompilování prostředků pomocí nástroje MSBuild  
+## <a name="compile-resources-with-msbuild"></a>Kompilace prostředků pomocí nástroje MSBuild  
  Knihovny běžných úloh, které je součástí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zahrnuje `GenerateResource` úkol, který můžete použít ke kompilaci prostředků buď *RESX* nebo textové soubory. Tato úloha obsahuje `Sources` parametr k určení, který prostředek se soubory ke kompilaci a `OutputResources` parametr nazvat výstupní soubory prostředků. Další informace o `GenerateResource` úloh naleznete v tématu [generateresource – úloha](../msbuild/generateresource-task.md).  
   
 #### <a name="to-compile-resources-with-msbuild"></a>Chcete-li zkompilovat prostředků pomocí nástroje MSBuild  
@@ -82,4 +82,4 @@ Pokud vytváříte lokalizované verze projektu, musí se oddělit všechny prvk
 [MSBuild](../msbuild/msbuild.md)  
  [Generateresource – úloha](../msbuild/generateresource-task.md)   
  [CSC – úloha](../msbuild/csc-task.md)   
- [Resgen.exe (Generátor zdrojových souborů)](/dotnet/framework/tools/resgen-exe-resource-file-generator)
+ [Resgen.exe (generátor zdrojových souborů)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

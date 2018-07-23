@@ -11,35 +11,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: bb1adaf9e97a950c6e9c53b3734debf5588fe0b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c924a866f1bb34f41664fbf62e372b77f4d2620e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919946"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178234"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Postupy: Konfigurace Analýzy kódu pro webovou aplikaci ASP.NET
 
-V sadě Visual Studio, můžete vybrat ze seznamu analýza kódu *sad pravidel* použít [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace. Sada pravidel výchozí je Microsoft Minimální doporučená pravidla. Můžete vybrat jiné pravidlo nastavena na webovém serveru použít.
+V sadě Visual Studio, můžete vybrat ze seznamu analýzy kódu *sad pravidel* vyrovnat [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci. Výchozí sada pravidel je Microsoft Minimální doporučená pravidla. Můžete vybrat jinou sadu pravidel, která platí pro webové stránky.
 
-1. Vyberte web v **Průzkumníku řešení**.
+1. Vyberte web v **Průzkumníka řešení**.
 
-2. Na **analyzovat** nabídky, klikněte na tlačítko **konfigurace analýzy kódu pro webovou stránku**.
+2. Na **analyzovat** nabídky, klikněte na tlačítko **konfigurovat analýzu kódu pro webovou stránku**.
 
-3. Pokud jste vybrali řešení a řešení obsahuje více než jeden projekt, vyberte v sestavení konfigurace a cíle operačního systému z **konfigurace** a **platformy** uvádí.
+3. Pokud jste vybrali řešení a řešení obsahuje více než jeden projekt, vyberte sestavení konfigurace a cílový operační systém z **konfigurace** a **platformy** seznamy.
 
-4. Pro každý projekt v řešení, klikněte **sady pravidel** sloupec a potom klikněte na název pravidla nastaven na spouštění.
+4. Pro každý projekt v řešení, klikněte na tlačítko **sady pravidel** sloupec a pak klikněte na název pravidla nastaven na spouštění.
 
-5. Analýza kódu je ve výchozím nastavení, spusťte na všechny projekty v řešení. Zakázání nebo povolení analýzy kódu pro konkrétní projekt, postupujte takto:
+5. Ve výchozím nastavení je analýza kódu spuštěna na všechny projekty v řešení. Pokud chcete zakázat nebo povolit analýzu kódu pro konkrétní projekt, postupujte takto:
 
-    1. Klikněte pravým tlačítkem na název projektu a pak klikněte na položku Vlastnosti.
+    1. Klikněte pravým tlačítkem na název projektu a pak klikněte na vlastnosti.
 
-    2. Zaškrtněte nebo zrušte zaškrtnutí **povolit analýza kódu** zaškrtávací políčko. Vám může také ruční spuštění analýzy kódu tak, že vyberete **spuštění analýzy kódu na webovém serveru** z **analyzovat** nabídky.
+    2. Zaškrtněte nebo zrušte zaškrtnutí **povolit analýzu kódu** zaškrtávací políčko. Můžete také spustit analýzu kódu ručně tak, že vyberete **spustit analýzu kódu na webu** z **analyzovat** nabídky.
 
-6. V **spuštění této sady pravidel** rozevírací seznam, postupujte takto:
+6. V **spustit tuto sadu pravidel** rozevírací seznam, postupujte podle těchto kroků:
 
     - Vyberte sadu pravidel, který chcete použít.
 
-    - Vyberte  **\<procházet >** zadat existující vlastní pravidlo nastavit, který se nenachází v seznamu.
+    - Vyberte  **\<procházet >** zadat sadu existujících vlastních pravidel, která se nenachází v seznamu.
 
     - Definování [vlastní sady pravidel](../code-quality/how-to-create-a-custom-rule-set.md).

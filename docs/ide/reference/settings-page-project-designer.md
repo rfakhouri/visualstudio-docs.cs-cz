@@ -1,5 +1,5 @@
 ---
-title: Stránka nastavení, Návrhář projektu
+title: Stránka Nastavení, Návrhář projektu
 ms.date: 06/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,53 +15,53 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c0f7b47b56522f5c4aeef0054e6b7b52434ff87
-ms.sourcegitcommit: 562867be91ee1aebbed4658c8de0949f422860fa
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/14/2018
+ms.lasthandoff: 07/20/2018
 ms.locfileid: "35608944"
 ---
 # <a name="settings-page-project-designer"></a>Stránka nastavení, Návrhář projektu
 
-Použití **nastavení** stránky v Návrháři projektu k nastavení aplikace projektu. Nastavení aplikace umožňují uložení a načtení nastavení vlastností a další informace pro vaši aplikaci dynamicky. Umožňují také udržovat vlastní aplikaci a uživatelské předvolby v klientském počítači. Další informace najdete v tématu [Správa nastavení aplikace](../managing-application-settings-dotnet.md).
+Použití **nastavení** stránky Návrháře projektu k určení nastavení aplikace projektu. Nastavení aplikace umožňují snadno ukládat a načítat nastavení vlastností a další informace o vaší aplikaci dynamicky. Umožňují také udržovat vlastní aplikace a preference uživatelů v klientském počítači. Další informace najdete v tématu [spravovat nastavení aplikace](../managing-application-settings-dotnet.md).
 
-Pro přístup k **nastavení** vyberte uzel projektu v **Průzkumníku řešení**a potom vyberte **projektu** > **vlastnosti**. Jakmile se zobrazí v Návrháři projektu, vyberte **nastavení** kartě.
+Pro přístup **nastavení** stránky, vyberte uzel projektu v **Průzkumníka řešení**a pak vyberte **projektu** > **vlastnosti**. Jakmile se zobrazí Návrhář projektu, vyberte **nastavení** kartu.
 
-## <a name="header-bar"></a>Záhlaví panelu
+## <a name="header-bar"></a>Záhlaví řádku
 
-Na panelu hlavičky v horní části **nastavení** stránka obsahuje několik ovládacích prvků:
+Na panelu záhlaví v horní části **nastavení** stránka obsahuje několik ovládacích prvků:
 
 **Synchronizovat**
 
-**Synchronizovat** obnoví nastavení rozsahu uživatele, které aplikace používá za běhu nebo během ladění na výchozí hodnoty, jak jsou definovány v době návrhu. Chcete obnovit data, odeberte běhu generované soubory specifické pro aplikaci z disku, nikoli z projektu data.
+**Synchronizovat** obnoví nastavení rozsahu uživatele, které aplikace používá za běhu nebo při ladění na výchozí hodnoty, jak je definováno v době návrhu. Chcete-li obnovit data, odeberte za běhu generované soubory specifické pro aplikaci z disku, nikoli z dat projektu.
 
-**Nastavení webové zatížení**
+**Načtení webové nastavení**
 
-**Načtení nastavení webové** zobrazí **přihlášení** dialogu, který umožňuje načíst nastavení pro ověřeného uživatele nebo pro anonymní uživatele. Toto tlačítko je povolené jenom v případě, že jste povolili klientské aplikační služby na **služby** stránky a zadán **nastavení webové služby umístění**.
+**Načíst nastavení webu** zobrazí **přihlášení** dialogové okno, které umožňuje načíst nastavení pro ověřeného uživatele nebo pro anonymní uživatele. Toto tlačítko je povoleno pouze v případě, že jste povolili klientské aplikační služby na **služby** stránce a zadat **nastavení webové služby umístění**.
 
-**Zobrazení kódu**
+**Zobrazit kód**
 
-Pro projekty C# **kód zobrazení** tlačítka můžete zobrazit kód *Settings.cs* souboru. Definuje tento soubor `Settings` třídy, která umožňuje zpracovávat na konkrétní události `Settings` objektu. V jiných jazyků než jazyka Visual Basic, musíte explicitně zavolat `Save` metoda této obálkové třídy, aby zachovaly uživatelská nastavení. Obvykle k tomu **zavření** obslužné rutiny události hlavního formuláře. Tady je příklad volání `Save` metoda:
+Pro projekty jazyka C# **zobrazit kód** tlačítko umožňuje zobrazit kód v *Settings.cs* souboru. Tento soubor definuje `Settings` třídu, která umožňuje zpracovávat specifické události na `Settings` objektu. V jiných jazycích než jazyka Visual Basic, musíte explicitně volat `Save` metoda této obálkové třídy s cílem zachovat nastavení uživatele. Obvykle to provedete **zavření** obslužná rutina události hlavního formuláře. Tady je příklad volání `Save` metody:
 
 ```csharp
 Properties.Settings.Default.Save();
 ```
 
-Pro projekty Visual Basic **kód zobrazení** tlačítka můžete zobrazit kód *Settings.vb* souboru. Definuje tento soubor `MySettings` třídy, která umožňuje zpracovávat na konkrétní události `My.Settings` objektu. Další informace o přístup k nastavení aplikace pomocí `My.Settings` objektu, najdete v části [přístup k nastavení aplikace](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).
+Pro projekty jazyka Visual Basic **zobrazit kód** tlačítko umožňuje zobrazit kód v *Settings.vb* souboru. Tento soubor definuje `MySettings` třídu, která umožňuje zpracovávat specifické události na `My.Settings` objektu. Další informace o přístup k nastavení aplikace s použitím `My.Settings` objektu, najdete v článku [přístup k nastavení aplikace](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).
 
-Další informace o přístup k nastavení aplikace najdete v tématu [nastavení aplikace pro Windows Forms](/dotnet/framework/winforms/advanced/application-settings-for-windows-forms).
+Další informace o přístupu k nastavení aplikace najdete v tématu [nastavení aplikace pro Windows Forms](/dotnet/framework/winforms/advanced/application-settings-for-windows-forms).
 
 **Modifikátor přístupu**
 
-**– Modifikátor přístupu** tlačítko určuje úroveň přístupu `Properties.Settings` (v jazyku C#) nebo `My.Settings` (v jazyce Visual Basic) pomocná třída, která je Visual Studio vytvoří v *Settings.Designer.cs* nebo *Settings.Designer.vb*.
+**Modifikátor přístupu** tlačítko určuje úroveň přístupu `Properties.Settings` (v jazyce C#) nebo `My.Settings` (v jazyce Visual Basic) pomocné třídy, který generuje sada Visual Studio v *Settings.Designer.cs* nebo *Settings.Designer.vb*.
 
-Pro projekty Visual C#, může být – modifikátor přístupu **interní** nebo **veřejné**.
+Pro projekty Visual C#, může být modifikátor přístupu **interní** nebo **veřejné**.
 
-Pro projekty Visual Basic, může být – modifikátor přístupu **Friend** nebo **veřejné**.
+Pro projekty jazyka Visual Basic modifikátor přístupu lze **Friend** nebo **veřejné**.
 
-Ve výchozím nastavení je **interní** v jazyce C# a **Friend** v jazyce Visual Basic. Když Visual Studio generuje pomocné třídy jako **interní** nebo **Friend**, spustitelný soubor (*.exe*) aplikace nemají přístup k prostředkům a nastavení, které jste přidali do služby třídy knihovny (*.dll* soubory). Pokud máte sdílet prostředky a nastavení z knihovny tříd, nastavit – modifikátor přístupu **veřejné**.
+Ve výchozím nastavení je **interní** v jazyce C# a **Friend** v jazyce Visual Basic. Když sada Visual Studio generuje pomocné třídy jako **interní** nebo **Friend**, spustitelný soubor (*.exe*) aplikace nemají přístup k prostředkům a nastavení, které jste přidali do třídy knihovny (*.dll* soubory). Pokud máte sdílet prostředky a nastavení z knihovny tříd, nastavit modifikátor přístupu **veřejné**.
 
-Další informace o nastavení pomocných tříd, najdete v části [Správa nastavení aplikace](../managing-application-settings-dotnet.md).
+Další informace o nastavení tříd pomocných rutin najdete v tématu [spravovat nastavení aplikace](../managing-application-settings-dotnet.md).
 
 ## <a name="settings-grid"></a>Nastavení mřížky
 
@@ -69,23 +69,23 @@ Další informace o nastavení pomocných tříd, najdete v části [Správa nas
 
 **Jméno**
 
-Zadejte název pro nastavení aplikace v tomto poli.
+Zadejte název nastavení aplikace v tomto poli.
 
 **Typ**
 
-Pomocí rozevíracího seznamu vyberte typ nastavení. Nejčastěji používané typy v seznamu se zobrazí rozevírací seznam, například **řetězec**, **(připojovací řetězec)**, a **System.Drawing.Font**. Můžete si zvolit jiný typ výběrem **Procházet** na konci tohoto seznamu a pak vybrat typ z **vyberte typ** dialogové okno. Po zvolení typu, se přidá do běžné typy v rozevíracím seznamu (pro pouze aktuálním řešení).
+Pomocí rozevíracího seznamu vyberte typ nastavení. Nejčastěji používané typy v seznamu se zobrazí rozevírací seznam, například **řetězec**, **(připojovací řetězec)**, a **System.Drawing.Font**. Můžete tak, že vyberete jiný typ **Procházet** na konci seznamu a následným výběrem určitého typu **vyberte typ** dialogové okno. Až zvolíte typ, přidá se do běžných typů v rozevíracím seznamu (pro aktuální řešení pouze).
 
 **Rozsah**
 
 Vyberte buď **aplikace** nebo **uživatele**.
 
-Nastavení rozsahu aplikace, jako je například připojovací řetězce jsou přidružené k aplikaci. Uživatelé nemohou měnit nastavení rozsahu aplikace za běhu.
+Nastavení oboru aplikace, jako je například připojovací řetězce, jsou spojeny s aplikací. Uživatelé nemohou změnit nastavení oboru aplikace v době běhu.
 
-Uživatelských nastavení, jako je například systém písem a jsou určena pro použití pro uživatelské předvolby. Uživatelé mohou změnit je za běhu.
+Nastavení rozsahu uživatele, jako je například systémových písem, jsou určena pro použití pro uživatelské předvolby. Uživatelé mohou změnit je za běhu.
 
 **Hodnota**
 
-Data nebo hodnota přidružený k nastavení aplikace. Například pokud je nastavení písmo, jeho hodnota může být **Verdana, 9.75pt, styl = Bold**.
+Data nebo hodnotu přidruženou k nastavení aplikace. Například pokud je nastavení písma, jeho hodnota může být **Verdana 9.75pt, styl = tučné**.
 
 ## <a name="see-also"></a>Viz také:
 

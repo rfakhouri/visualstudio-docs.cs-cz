@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ba6a5b666777e692fe2c214f165c0bc1da7fee9d
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35675720"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178290"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Postupy: Zobrazení doby odezvy webové stránky v zátěžovém testu pomocí analyzéru zátěžového testu
 
@@ -49,7 +49,7 @@ Při spuštění testu výkonnosti webu ve stresu v rámci zátěžového testu,
     |-|-|
     |**Stránka**|Název webové stránky.|
     |**Scénář**|Název scénáře. Důležité: Pokud máte více než jeden scénář v testu výkonnosti webu.|
-    |**Test**|Název testu výkonnosti webu. Důležité: Pokud máte více než jeden test výkonnosti webu v zátěžovém testu.|
+    |**Test**|Název testu výkonnosti webu. Důležité: Pokud máte více než jeden výkon webového testu v zátěžovém testu.|
     |**Sítě**|Typ sítě.<br /><br /> Ve výchozím nastavení tato data nejsou shromažďována. Shromažďování těchto dat v **editoru zátěžových testů**v části **parametrů běhu** uzlu, vyberte uzel nastavení spuštění změnit. V **vlastnosti** okně pro **úložiště podrobností časování** vlastnosti, vyberte **AllIndividualDetails**.|
     |**Celkem**|Celkový počet požadavků, které byly provedeny pro webovou stránku. Toto je celkový součet pro všechny iterace v zátěžovém testu.|
     |**Uložit**|Průměrnou dobu odezvy stránky.<br /><br /> Ve výchozím nastavení tato data nejsou shromažďována. Shromažďování těchto dat v **editoru zátěžových testů**v části **parametrů běhu** uzlu, vyberte uzel nastavení spuštění změnit. V **vlastnosti** okně pro **úložiště podrobností časování** vlastnosti, vyberte **AllIndividualDetails**.|

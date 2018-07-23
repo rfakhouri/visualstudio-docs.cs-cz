@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bed3140653e586ee4fb4899e6eba2b83f97035b0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079093"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178559"
 ---
 # <a name="item-definitions"></a>Definice položek
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 umožňuje statických deklarací položky v souborech projektu pomocí [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Však může být přidají metadata pouze na úrovni položek, i v případě, že metadata jsou stejné pro všechny položky. Počínaje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, prvek projektu s názvem [ItemDefinitionGroup –](../msbuild/itemdefinitiongroup-element-msbuild.md) překonává toto omezení. *ItemDefinitionGroup –* umožňuje definovat sadu definice položek, které přidávají výchozí hodnoty metadat pro všechny položky v typu s názvem položky.  
@@ -144,7 +144,7 @@ Při přepsání dříve definovaných metadat poslední specifikace přednost. 
 </ItemDefinitionGroup>    
 ```  
   
-## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Pomocí ItemDefinitionGroup – podmínky  
+## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Podmínky použití v ItemDefinitionGroup –  
  Podmínky v ItemDefinitionGroup – slouží k řízení zahrnutí metadat. Příklad:  
   
 ```xml  
@@ -190,7 +190,7 @@ V příkladu výše položka "i" odkazuje na položku "test" v jeho stavu. Tento
 
 V příkladu výše, "m" se nastavuje na hodnotu "m1" jako odkazy na podmínky položky "i". hodnota metadat pro položku "Ano". 
   
-## <a name="overriding-and-deleting-metadata"></a>Přepisování a odstraňování metadat  
+## <a name="override-and-delete-metadata"></a>Přepsat a odstranění metadat  
  Metadata definované v ItemDefinitionGroup – element lze přepsat v pozdější ItemDefinitionGroup – element tak, že nastavíte hodnotu metadat na prázdnou hodnotu. Můžete také fakticky odstranit položku metadat nastavením na prázdnou hodnotu. Příklad:  
   
 ```xml  

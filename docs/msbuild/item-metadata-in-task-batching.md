@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cbe01c15e9798a29d4832b8c189718d95cf5a0d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1804bde2c3da7f83658784ca1520791a930f901
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078989"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177192"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadata položek v dávkování úloh
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] má schopnost rozdělení seznamů položek do různých kategorií nebo dávek, na základě položky metadat a spuštění úlohy jednou s jednotlivých dávek. Může být matoucí pochopit přesně položky, které jsou předávány pomocí které služby batch. Toto téma popisuje následující běžné scénáře, které se týkají dávkování.  
@@ -133,7 +133,7 @@ Následující příklad ukazuje, jak rozdělit do dávek na základě metadat p
   
  `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`  
   
-## <a name="batching-one-item-at-a-time"></a>Dávkování jedna položka v čase  
+## <a name="batch-one-item-at-a-time"></a>Batch najednou jednu položku  
  Dávkování lze provést také u známá metadata položky, která je přiřazená každé položce při vytvoření. To zaručuje, že každá položka v kolekci mají některá metadata pro dávkové zpracování. `Identity` Hodnota metadat je jedinečný pro každé položky a je užitečné pro rozdělení každá položka v seznamu položek do samostatné dávky. Úplný seznam známá metadata položky, naleznete v tématu [známá metadata položky](../msbuild/msbuild-well-known-item-metadata.md).  
   
  Následující příklad ukazuje, jak batch každou položku v seznamu položek jeden po druhém. Protože `Identity` hodnota metadat každá položka je jedinečný, `ExampColl` seznam položek je rozdělen do šesti dávek, každá dávka obsahující jednu položku seznamu položek. Přítomnost `%(Identity)`v `Text` atribut informuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , že má být provedena dávkování.  
@@ -172,7 +172,7 @@ Identity: "Item5" -- Items in ExampColl: Item5
 Identity: "Item6" -- Items in ExampColl: Item6  
 ```  
   
-## <a name="filtering-item-lists"></a>Filtrování seznamů položek  
+## <a name="filter-item-lists"></a>Filtrovat položky seznamů  
  Dávkování lze použít k filtrování některých položek ze seznamu položek před předáním k úkolu. Například filtrování `Extension` hodnota metadata známé položky umožňuje spouštět úlohy na pouze soubory s konkrétní příponou.  
   
  Následující příklad ukazuje, jak rozdělit seznam položek do dávek na základě položky metadat a vyfiltrujte těchto dávky, pokud jsou předány do úlohy. `ExampColl` Seznam položek je rozdělen na tři dávek na základě `Number` metadata položky. `Condition` Určuje atribut úkolu, který pouze s dávek `Number` položky metadat hodnotu `2` se předají do úlohy  

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e2459d50df3c54defc24c07bc1509b4e15c2c748
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 32fc3ef0684c89c422fac76550ba1fa123eb2f6b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153053"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180438"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Úprava modelů poměru testů a určení pravděpodobnosti, že virtuální uživatel spustí test
 
@@ -28,7 +28,7 @@ Můžete určit jednu z následujících možností model kombinace testů pro v
 
 -   **Na základě celkového počtu testů:** Určuje, který webového výkonu nebo Jednotkový test se spustí, když virtuální uživatel spustí iteraci testu. Na konci zátěžového testu odpovídá počet případů, kdy byla spuštěna určitého testu rozdělení přiřazeného testu. Použijte tento model kombinace testů, pokud vytváříte poměru testů podílu transakcí v protokolu služby IIS nebo v údajích o produkci.
 
--   **Na základě počtu virtuálních uživatelů:** Určuje procentuální podíl virtuálních uživatelů, kteří budou používat konkrétní webového výkonu nebo Jednotkový test. Kdykoli během zátěžového testu odpovídá počet uživatelů, kteří jsou spuštěn určitý test přiřazené distribuce. Použijte tento model kombinace testů, pokud vytváříte poměr testů na procento uživatelů, kteří spuštěn určitý test.
+-   **Na základě počtu virtuálních uživatelů:** Určuje procentuální podíl virtuálních uživatelů, kteří budou používat konkrétního webového výkonu nebo Jednotkový test. Kdykoli během zátěžového testu odpovídá počet uživatelů, kteří jsou spuštěn určitý test přiřazené distribuce. Použijte tento model kombinace testů, pokud vytváříte poměr testů na procento uživatelů, kteří spuštěn určitý test.
 
 -   **Založený na kroku uživatele:** v průběhu zátěžového testu je každý test webového výkonu nebo Jednotkový test spustit zadaný počet opakování za uživatele za hodinu. Použijte tento model kombinace testů, když potřebujete virtuálních uživatelů pro spuštění testu v určitém tempu zátěžového testu.
 
@@ -38,7 +38,7 @@ Můžete určit jednu z následujících možností model kombinace testů pro v
 
 |Úlohy|Související témata|
 |-----------|-----------------------|
-|**Určení poměru testů pro zátěžový test:** při vytváření zátěžového testu, můžete zadat nastavení pro zátěžový test v **nového Průvodce zátěžovým testem**. V **Průvodce novým zátěžovým testem**, zvolte existující Web a testy jednotek pro přidání do počáteční scénář. Po přidání testy do scénáře, určete kombinace testů pro scénář.<br /><br /> Pomocí možnosti modelování zatížení více přesně předpovědět očekávaného reálného využití webové stránky nebo aplikace, které jsou zátěžové testování. Je důležité provést, protože zátěžový test, který není založen na modelu přesné zatížení lze generovat zavádějící výsledky.|-   [Emulovat očekávaného reálného využití webové stránky nebo aplikace](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
+|**Určení poměru testů pro zátěžový test:** při vytváření zátěžového testu, můžete zadat nastavení pro zátěžový test v **nového Průvodce zátěžovým testem**. V **Průvodce novým zátěžovým testem**, zvolte existující web a testy jednotek pro přidání do počáteční scénář. Po přidání testy do scénáře, určete kombinace testů pro scénář.<br /><br /> Pomocí možnosti modelování zatížení více přesně předpovědět očekávaného reálného využití webu nebo aplikace, které jsou zátěžové testování. Je důležité provést, protože zátěžový test, který není založen na modelu přesné zatížení lze generovat zavádějící výsledky.|-   [Emulovat očekávaného reálného využití webu nebo aplikace](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**Upravit model kombinace testů:** do scénáře zátěžového testu pomocí jedné z modelů poměru testů můžete změnit **editoru zátěžového testu**.||
 |**Konfigurace nemusely zpoždění pro model poměru testů tempem uživatele:** Pokud vašeho scénáře zkušebního zatížení je konfigurován pro použití **založený na kroku model kombinace testů uživatele**, můžete určit, jak chcete rozdělení zpoždění Pacing nakonfigurované.|-   [Postupy: použít rozdělení na zpoždění stimulace, když model kombinace testů se stimulací podle uživatele](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 
@@ -71,7 +71,7 @@ Pomocí **editoru zátěžového testu**, model kombinace testů ve scénáři t
 
 6.  (Volitelné) Úpravy poměru testů pomocí **přidat**, **odebrat** a **rozmístit** tlačítka a distribuce posuvníky. Další informace najdete v tématu [upravit poměr testů k určení, které testy mají být zahrnuty do scénáře zátěžového testu](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-7.  (Volitelné) Zadejte webový test výkonu a jednotky k inicializaci nebo ukončit pomocí zaškrtávacích políček a výběrem požadované testy. Další informace najdete v tématu [Emulate očekává reálného využití webové stránky nebo aplikace](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
+7.  (Volitelné) Zadejte webový test výkonu a jednotky k inicializaci nebo ukončit pomocí zaškrtávacích políček a výběrem požadované testy. Další informace najdete v tématu [Emulate očekávané využití z reálného světa webu nebo aplikaci](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
 
 8.  Zvolte **OK**.
 

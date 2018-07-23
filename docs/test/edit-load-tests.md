@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0841faf5e63b6c4108b9f65777416ded63227bb9
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152425"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178410"
 ---
 # <a name="edit-load-tests"></a>Úpravy zátěžových testů
 
-Zátěžové testy spustit testy webového výkonu nebo jednotkových testů ke simulace mnoha uživatelů přistupujících na server ve stejnou dobu. Zátěžový test umožňuje přístup k datům zátěže a výkonu aplikace. Zátěžový test lze nakonfigurovat pro emulaci rozličných podmínek zátěže, jako je uživatelská zátěž nebo typ sítě.
+Zátěžové testy spouštět testy výkonnosti webů nebo testů jednotek simulace mnoha uživatelů přistupujících na server ve stejnou dobu. Zátěžový test umožňuje přístup k datům zátěže a výkonu aplikace. Zátěžový test lze nakonfigurovat pro emulaci rozličných podmínek zátěže, jako je uživatelská zátěž nebo typ sítě.
 
 > [!NOTE]
 > Zátěžové testování je k dispozici pouze v edici Enterprise sady Visual Studio 2017.
@@ -31,7 +31,7 @@ Zátěžový test je definován *scénáře*, *sady čítačů*, a *parametry b�
 
 ## <a name="edit-load-test-scenario-settings"></a>Upravit nastavení scénáře zátěžového testu
 
-Scénáře se používají k modelování způsobu interakce skupiny uživatelů se serverovou aplikací. Scénáře se skládají ze vzoru zatížení, modelu kombinace testů, kombinace testů, kombinace prohlížečů a kombinace sítí. Zátěžový test může mít více než jeden scénář a jeden scénář může obsahovat testy výkonnosti webu a testy částí. Seskupením podobných nastavení umožňuje scénář seskupit podobné testy a spustit je současně.
+Scénáře se používají k modelování způsobu interakce skupiny uživatelů se serverovou aplikací. Scénáře se skládají ze vzoru zatížení, modelu kombinace testů, kombinace testů, kombinace prohlížečů a kombinace sítí. Zátěžový test může mít více než jeden scénář a jeden scénář může obsahovat testy výkonnosti webu a testy jednotek. Seskupením podobných nastavení umožňuje scénář seskupit podobné testy a spustit je současně.
 
 Další informace najdete v tématu [úpravy scénářů zátěžových testů](../test/edit-load-test-scenarios.md) a [vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md).
 

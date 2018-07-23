@@ -15,15 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4beed25b1cdbc9f298df32743b9fec2e59fcdd8b
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 018d94f2952b8169890377410ff00baf1a80fd41
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704873"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176382"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser – příkaz
-Zobrazí adresu URL, zadejte v okně webového prohlížeče buď v rámci integrované vývojové prostředí (IDE) nebo externí k prostředí IDE.
+
+Zobrazí adresu URL zadanou v okně webového prohlížeče buď v rámci integrovaného vývojového prostředí (IDE) nebo mimo prostředí IDE.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,22 +35,22 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="arguments"></a>Arguments
  `URL`
 
- Požadováno. Adresa URL (Uniform Resource Locator) pro webovou stránku.
+ Požadováno. Adresa URL (Uniform Resource Locator) pro web.
 
 ## <a name="switches"></a>Přepínače
- / new
+ / Nový
 
- Volitelné. Určuje, že stránka se zobrazí v nové instanci webového prohlížeče.
+ Volitelné. Určuje, že se zobrazí v nové instanci webového prohlížeče.
 
  /ext
 
- Volitelné. Určuje, zda stránky se zobrazí ve webovém prohlížeči výchozí mimo prostředí IDE.
+ Volitelné. Určuje, že se zobrazí ve webovém prohlížeči výchozí mimo rozhraní IDE.
 
 ## <a name="remarks"></a>Poznámky
- Alias pro funkci **showwebbrowser –** příkaz je **přejděte** nebo **nav**.
+ Alias **showwebbrowser –** příkaz je **přejděte** nebo **nav**.
 
 ## <a name="example"></a>Příklad
- Následující příklad zobrazuje na webu MSDN Online domovskou stránku ve webovém prohlížeči mimo prostředí IDE. Pokud je již spuštěna instance webového prohlížeče, použije se; v opačném případě se spustí novou instanci.
+ Následující příklad zobrazí domovská stránka MSDN Online ve webovém prohlížeči mimo rozhraní IDE. Pokud instance webového prohlížeče je už otevřená, je použit. v opačném případě se spustí novou instanci.
 
 ```cmd
 >View.ShowWebBrowser http://msdn.microsoft.com /ext

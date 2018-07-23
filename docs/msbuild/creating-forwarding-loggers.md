@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c57229ea260ef2429273fab0d3220319b61c1dc7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d18e84e6c3637fb5d40dfcef14e8dd6a06dc47ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946804"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179200"
 ---
 # <a name="create-forwarding-loggers"></a>Vytvořit předávající Protokolovací nástroje
 Předávající Protokolovací nástroje zvýšit efektivitu protokolování tím, že umožňuje zvolit události, které chcete monitorovat při sestavování projektů v systému s více procesory. Tím, že předávající Protokolovací nástroje, je možné zabránit nežádoucí události od zahlcení centrálním protokolovacím zpomalení doby sestavení a nebudou zbytečně zabírat protokol.  
@@ -41,6 +41,6 @@ Předávající Protokolovací nástroje zvýšit efektivitu protokolování tí
  Při vytváření projektu v systému s více procesory zprávy každý procesor na sestavení nejsou automaticky prokládané jednotné postupně. Místo toho je potřeba vytvořit zprávu seskupení pomocí priority <xref:Microsoft.Build.Framework.BuildEventContext> třídu, která je připojena k všechny zprávy. Další informace o víceprocesorových sestavení naleznete v tématu [protokolování v prostředí s více procesory](../msbuild/logging-in-a-multi-processor-environment.md).  
   
 ## <a name="see-also"></a>Viz také:  
- [Získávání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)   
+ [Získání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Protokolovací nástroje sestavení](../msbuild/build-loggers.md)   
  [Protokolování v prostředí s více procesory](../msbuild/logging-in-a-multi-processor-environment.md)

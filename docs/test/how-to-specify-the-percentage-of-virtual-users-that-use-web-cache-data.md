@@ -1,5 +1,5 @@
 ---
-title: Určení procento z virtuálních uživatelů, která Data ve webové mezipaměti použijte pro zatížení testů v sadě Visual Studio
+title: Zadejte procento z virtuálního uživatele, který Data ve webové mezipaměti použít pro zátěžové testy v sadě Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,43 +10,43 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1bf1c0ce47e96438df768776244cc26bc9ea8929
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 360c8ea61a97256a316c726954bf53e4dcf3004b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447255"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180048"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Postupy: Určení procenta virtuálních uživatelů, kteří používají data ve webové mezipaměti
 
-Po vytvoření vaší zátěžový test pomocí **načíst testování Průvodce novým**, můžete změnit vlastnosti scénáře pro splnění vašich potřeb testování a cíle pomocí **načíst Editor testů**. Úplný seznam vlastnosti scénáře zátěžového testu a jejich popisy najdete v tématu [načíst vlastnosti scénář otestovat](../test/load-test-scenario-properties.md).
+Po vytvoření zátěžového testu pomocí **nového Průvodce zátěžovým testem**, můžete změnit vlastnosti scénářů pro splnění potřebám a cílům testování s použitím **editoru zátěžového testu**. Úplný seznam vlastnosti scénáře zátěžového testu a jejich popis najdete v tématu [načíst vlastnosti scénář testování](../test/load-test-scenario-properties.md).
 
-**Procento nových uživatelů** je nastavena v okně Vlastnosti. Můžete upravit vlastnosti scénáře zátěžového testu v editoru načíst otestovat.
+**Procentuální podíl nových uživatelů** je nastavena v okně Vlastnosti. Můžete upravit vlastnosti scénáře zátěžového testu v editoru zátěžového testu.
 
-**Procento nových uživatelů** vlastnost má vliv na způsob ve kterém simuluje zátěžový test, ukládání do mezipaměti, které se provádí pomocí webového prohlížeče. Ve výchozím nastavení **procento nových uživatelů** je nastavena na 0 %. Pokud hodnota **procento nových uživatelů** je nastavena na 100 %, každého testu výkonnosti webu, spusťte v zátěžovém testu je zpracován jako první čas uživatele na web, který nemá žádný obsah z webu v jejich mezipaměti prohlížeče z previ navštíví organizační jednotky. Všechny požadavky v testu webu, včetně všechny závislé požadavky, například bitové kopie, proto se stáhnou.
+**Procentuální podíl nových uživatelů** vlastnost ovlivňuje způsob, ve kterém zátěžový test simuluje ukládání do mezipaměti, která by se provedla ve webovém prohlížeči. Ve výchozím nastavení **procentuální podíl nových uživatelů** je nastavena na 0 %. Pokud hodnota **procentuální podíl nových uživatelů** je nastavena na 100 %, každý test výkonnosti webu spuštění v rámci zátěžového testu se zachází stejně jako jste nový uživatel na web který nemá žádný obsah z webu do mezipaměti prohlížeče z předchozí návštěvě. Proto se stáhnou všechny požadavky do webového testu, všechny závislé požadavky, jako jsou obrázky, včetně.
 
 > [!NOTE]
-> Vyžádání stejného zdroje lze uložit do mezipaměti je více než jednou v testu webu, se nestáhnou žádosti.
+> Pokud stejný prostředek možné ukládat do mezipaměti se požaduje více než jednou v testu webu, se nestáhnou požadavky.
 
-Pokud jste zatížení testování webu, který má velký počet návratový uživatelů, kteří mohou mít obrázky a další obsah Uložitelný do mezipaměti místně, pak nastavení 100 % pro **procento nových uživatelů** vlastnost vygeneruje informace požadavky na stažení než by tomu bylo v reálného využití. V takovém případě by měl odhadnout procento návštěv na webové stránky, které jsou z první uživatelé webu a nastavte **procento nových uživatelů** vlastnost odpovídajícím způsobem.
+Pokud jsou zátěžové testy webu, který má velký počet návratový uživatelů, kteří mohou mít obrázky a další možné ukládat do mezipaměti obsah v místní mezipaměti, potom nastavení 100 % **procentuální podíl nových uživatelů** vlastnost bude generovat informace požadavků na stažení než by tomu bylo v využití z reálného světa. V takovém případě by měl odhadnou procento návštěvy vašeho webu, které jsou z první čas uživatelé tohoto webu a nastavte **procentuální podíl nových uživatelů** vlastnost odpovídajícím způsobem.
 
-## <a name="to-specify-the-percentage-of-new-users-for-a-scenario"></a>Chcete-li určit procento nových uživatelů pro scénáře
+## <a name="to-specify-the-percentage-of-new-users-for-a-scenario"></a>K určení procentuální podíl nových uživatelů pro scénář
 
 1. Otevřete zátěžový test.
 
      **Editoru zátěžových testů** se zobrazí. Zobrazí se strom zátěžového testu.
 
-2. V zatížení testovat stromy **scénáře** složky, vyberte uzel scénáři chcete změnit nové uživatele procentuální hodnotu pro.
+2. V zátěžového testu stromů **scénáře** složky, zvolte scénář uzel, který chcete změnit nové uživatele procentuální hodnotu.
 
-3. Na **zobrazení** nabídce vyberte možnost **vlastnosti – okno**.
+3. Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
 
-     Tento scénář kategorií a vlastností se zobrazí v okně Vlastnosti.
+     Tento scénář kategorie a vlastnosti jsou zobrazeny v okně Vlastnosti.
 
-4. Nastavit hodnotu pro **procento nových uživatelů** vlastnost tak, že zadáte číslo pro procento nových uživatelů.
+4. Nastavte hodnotu **procento noví uživatelé** vlastnost tak, že zadáte číslo pro procentuální podíl nových uživatelů.
 
-5. Po dokončení změn vlastnosti, vyberte **Uložit** na **souboru** nabídky. Potom můžete spustit vaší zátěžového testu pomocí nové **procento nových uživatelů** hodnotu.
+5. Po dokončení změn vlastnosti, zvolte **Uložit** na **souboru** nabídky. Potom můžete spustit zátěžový test pomocí nového **procento noví uživatelé** hodnotu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Úpravy scénářů zátěžových testů](../test/edit-load-test-scenarios.md)
 - [Návod: Vytvoření a spuštění zátěžového testu](../test/walkthrough-create-and-run-a-load-test.md)

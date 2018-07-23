@@ -5,7 +5,7 @@ ms.topic: conceptual
 helpviewer_keywords:
 - custom validation rules
 - validation rules, creating
-- Web performance tests, creating custom validation rules
+- web performance tests, creating custom validation rules
 - rules, validation
 - validation rules
 ms.assetid: 989124bc-1a86-41f7-b37d-8f9e54dd4f0b
@@ -17,25 +17,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6aaba3be74e38e27f04db59cbb26b455245251be
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 99ed1a6db16b8e1fb765898c976b962bfe43f041
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282275"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178198"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Kód vlastního ověřovacího pravidla pro test výkonnosti webu
 
-Můžete vytvořit vlastní pravidla ověřování. K tomu, odvozujete od třídy, pravidla ověřování třídě pravidlo. Ověřovací pravidla jsou odvozeny od <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> základní třídy.
+Můžete vytvořit vlastní ověřovací pravidla. K tomuto účelu odvozujete od třídy pravidla pro ověření třídy vlastní pravidlo. Ověřovací pravidla odvozovat <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> základní třídy.
 
 > [!NOTE]
-> Můžete také vytvořit vlastních pravidel pro extrakci. Další informace najdete v tématu [vytvoření vlastního kódu a modulů Plugin pro zátěžové testy](../test/create-custom-code-and-plug-ins-for-load-tests.md).
+> Můžete také vytvořit vlastní pravidla pro extrakci. Další informace najdete v tématu [vytvoření vlastního kódu a modulů Plugin pro zátěžové testy](../test/create-custom-code-and-plug-ins-for-load-tests.md).
 
-## <a name="to-create-custom-validation-rules"></a>Chcete-li vytvořit vlastní pravidla ověřování
+## <a name="to-create-custom-validation-rules"></a>Chcete-li vytvořit vlastní ověřovací pravidla
 
 1.  Otevřete projekt testů obsahující test výkonnosti webu.
 
-2.  (Volitelné) Vytvořte samostatný projektu knihovny tříd pro uložení ověřovací pravidlo.
+2.  (Volitelné) Vytvořte samostatný projekt knihovny tříd, do kterého chcete uložit ověřovací pravidlo.
 
     > [!IMPORTANT]
     > Třídu lze vytvořit ve stejném projektu, ve kterém jsou testy. Nicméně pokud chcete pravidlo znovu použít, je vhodnější vytvořit samostatný projekt knihovny tříd, do které pravidlo uložíte. Pokud vytvoříte samostatný projekt, je nutné provést volitelné kroky v tomto postupu.
@@ -46,22 +46,22 @@ Můžete vytvořit vlastní pravidla ověřování. K tomu, odvozujete od tříd
 
 5.  (Volitelné) Vytvořte nový projekt knihovny tříd.
 
-6.  (Volitelné) K testovacímu projektu přidejte odkaz na projekt knihovny tříd, který obsahuje vlastní ověřovací pravidlo.
+6.  (Volitelné) V testovacím projektu přidejte odkaz na projekt knihovny tříd, který obsahuje vlastní ověřovací pravidlo.
 
-7.  V projektu otestovat, otevřete v testu výkonnosti webu **Editor testů výkonnosti webu**.
+7.  V projektu testů otevřete test výkonnosti webu v **editoru testu výkonnosti webu**.
 
-8.  Chcete-li přidat vlastního ověřovacího pravidla do testu výkonu webové žádosti, klikněte pravým tlačítkem požadavku a vyberte **přidat ověřovací pravidlo**.
+8.  Přidání vlastního ověřovacího pravidla na požadavek testu výkonnosti webu, klikněte pravým tlačítkem na žádost a vyberte **přidat ověřovací pravidlo**.
 
-     **Přidat ověřovací pravidlo** zobrazí se dialogové okno. Zobrazí se vlastní ověřovací pravidlo v **, vyberte pravidlo** seznamu, společně s předdefinované ověřovacích pravidel. Vyberte vlastní ověřovací pravidlo a pak zvolte **OK**.
+     **Přidat ověřovací pravidlo** zobrazí se dialogové okno. Zobrazí se vlastní ověřovací pravidlo v **vyberte pravidlo** seznamu, společně s předdefinovanými ověřovacími pravidly. Vyberte vlastní ověřovací pravidlo a pak zvolte **OK**.
 
-9. Spusťte test výkonnosti webu.
+9. Spuštění testu výkonnosti webu.
 
 ## <a name="example"></a>Příklad
 
-Následující kód ukazuje implementaci vlastního ověřovacího pravidla. Toto pravidlo ověření napodobuje chování předem definované pravidlo ověření požadované značky. Použijte tento příklad jako výchozí bod pro vlastní vlastní pravidla ověřování.
+Následující kód ukazuje implementaci vlastního ověřovacího pravidla. Toto ověřovací pravidlo napodobuje chování předdefinovaného ověřovacího pravidla požadované značky. Tento příklad použijte jako výchozí bod pro vlastní ověřovací pravidla.
 
 > [!WARNING]
-> Veřejné vlastnosti v kódu pro vlastní validátor nemůže mít hodnoty null.
+> Veřejné vlastnosti v kódu pro vlastní validátor nemůže mít hodnotu null.
 
 ```csharp
 using System;

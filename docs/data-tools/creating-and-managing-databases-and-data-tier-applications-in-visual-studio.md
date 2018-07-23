@@ -1,5 +1,5 @@
 ---
-title: Databázové projekty, server projekty a DAC projekty v sadě Visual Studio
+title: Databázové projekty, server projekty a projekty DAC v sadě Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,25 +15,26 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 03dca206f38d98c44e711e945f5d4015142f0af9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 6ca08103614989ddbfd096a08a1531e756c9f67c
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758404"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176100"
 ---
-# <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Databázové projekty a aplikace na datové vrstvě v sadě Visual Studio
-Databázové projekty můžete použít k vytvoření nové databáze nové aplikace na datové vrstvě (DAC) a k aktualizaci existující databáze a aplikace na datové vrstvě. Databázové projekty i DAC projekty umožňují použít techniky verze řízení a projekt správy pro váš vývojový program databáze na mnohem stejným způsobem, že použijete tyto techniky spravovaným nebo nativním kódem. Můžete pomoct váš vývojový tým spravovat změny databáze a databázové servery vytvořením projektu DAC, projekt databáze nebo Serverový projekt a vložení v rámci správy verzí. Soubory, ujistěte se, vytvářet a testovat změny v izolované vývojového prostředí, nebo izolovaného prostoru, než je sdílet s týmem prohlížet členy týmu. K zajištění kvality kódu, můžete váš tým dokončit a otestovat všechny změny pro konkrétní verzi databáze v testovacím prostředí, před nasazením změny do produkčního prostředí.
+# <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Databázové projekty a aplikace datové vrstvy v sadě Visual Studio
 
-Seznam funkcí databáze, které podporuje aplikace datové vrstvy, najdete v části [funkce podporované v aplikace datové vrstvy](http://go.microsoft.com/fwlink/?LinkId=164239) na webu společnosti Microsoft. Pokud ve vaší databázi funkce, které nepodporuje aplikace datové vrstvy, místo toho používejte databázového projektu spravovat změny k vaší databázi.
+Databázové projekty můžete vytvářet nové databáze nové aplikace datové vrstvy (DAC) a k aktualizaci stávajících databází a aplikací datové vrstvy. Databázové projekty a projekty DAC umožňují použít verzi ovládacího prvku a projekt správy techniky k vývoji vaší databáze, jako v podstatě stejným způsobem, platí tyto techniky pro spravovaný nebo nativní kód. Může pomoct váš vývojový tým, správou změn databáze a databázové servery vytvořením projektu DAC, databázový projekt nebo Serverový projekt a vložení v rámci správy verzí. Členy týmu můžete pak rezervace souborů provádět, sestavit a otestovat změny v izolované vývojové prostředí, nebo izolovaného prostoru, než je sdílet s týmem. K zajištění kvality kódu, můžete dokončit váš tým a testovat všechny změny pro konkrétní verzi databáze v testovacím prostředí před nasazením změny do produkčního prostředí.
 
-## <a name="common-high-level-tasks"></a>Běžné úlohy vysoké úrovně
+Seznam vlastností databáze, které podporuje aplikace datové vrstvy, naleznete v tématu [funkce podporovány v aplikace datové vrstvy](/previous-versions/visualstudio/visual-studio-2010/ee362013(v=vs.100)). Pokud používáte funkce ve vaší databázi, které nejsou podporované aplikace datové vrstvy, místo toho používejte databázového projektu ke správě změn k vaší databázi.
 
-|Podrobný úloh|Podpůrný obsah|
+## <a name="common-high-level-tasks"></a>Běžné úlohy vyšší úrovně
+
+|Základní úlohy|Podpůrný obsah|
 |----------------------|------------------------|
-|**Spustit vývoj aplikace datové vrstvy:** A DAC je nový koncept zavedené [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] obsahující definice [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] databáze a v podporu instance objektů, které jsou používány klient server nebo vrstvě 3 aplikace. DAC zahrnuje databázové objekty, jako jsou tabulky a zobrazení, společně s instance entitami, jako je například přihlášení. Visual Studio můžete použít k vytvoření projektu DAC, vytvoření souboru balíčku DAC a odeslat tento soubor balíčku DAC do správce databáze pro nasazení do instance [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] databázového stroje.|-   [Vytváření a Správa aplikace datové vrstvy](http://go.microsoft.com/fwlink/?LinkId=160741) (webu společnosti Microsoft)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Provádění vývoj iterativní databází:** Pokud jste vývojář nebo tester, podívejte se na částí projektu a potom je aktualizovat izolované vývojovém prostředí. Pomocí tohoto typu prostředí si můžete testovat změny bez ovlivnění dalších členové týmu. Po dokončení se změny, je třeba zkontrolovat soubory zpět do správy verzí, kde můžete získat změny a vytvořit a nasadit je na testovací server ostatní členové týmu.|-   [Dotaz a textové editory (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (webu společnosti Microsoft)<br />-   [Ladicí program Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) (webu společnosti Microsoft)|
-|**Při vytváření prototypu, ověření testů, výsledky a změny databázové skripty a objekty:** můžete použít [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] editor provést jednu z těchto běžné úlohy.|-   [Dotaz a textové editory (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (webu společnosti Microsoft)|
+|**Spuštění vývoje aplikace datové vrstvy:** A DAC je nový koncept nepředchází [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] , který obsahuje definici pro [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] databázi a podpůrné instance objektů, které jsou používány klient server nebo vrstvy 3 aplikace. DAC obsahuje databázové objekty, jako jsou tabulky a zobrazení, společně s instanci entity, jako jsou přihlášení. Můžete použít Visual Studio vytvořte projekt DAC sestavení souboru DAC balíček a odeslat tento soubor balíčku DAC správce databáze pro nasazení do instance [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] databázového stroje.|-   [Vytváření a Správa aplikace datové vrstvy](http://go.microsoft.com/fwlink/?LinkId=160741)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
+|**Provádění databáze iterativní vývoj:** Pokud jste vývojář nebo tester, projděte si části projektu a potom je aktualizovat v izolované vývojové prostředí. Pomocí tohoto typu prostředí můžete otestovat provedené změny aniž by to ovlivnilo ostatní členové týmu. Po dokončení se změny, zkontrolujte soubory zpět do správy verzí, kde můžete získat provedené změny a sestavení a nasazení testovacího serveru ostatním členům týmu.|-   [Dotaz a textových editorů (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)<br />-   [Ladicí program Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324)|
+|**Vytváření prototypů, ověření výsledcích testu a změny databáze skripty a objekty:** můžete použít [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] editor k provádění kterékoli z těchto běžných úkolů.|-   [Dotaz a textových editorů (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)|
 
 ## <a name="see-also"></a>Viz také:
 

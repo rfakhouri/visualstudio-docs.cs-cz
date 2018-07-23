@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e02be3774d0da28b96af0fb14ef64fd4bec6456e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 95203738486b7e1304bc2a26032a5d0193d1e2e8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080721"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180269"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Rychlý start: Projekty a řešení
 

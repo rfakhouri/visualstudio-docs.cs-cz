@@ -14,23 +14,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2216a4678436a9d7811adbdb4bef2ee930fbabb2
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 9ecd73fceda6916f547c67e599777a9cd139d3bb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296298"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176369"
 ---
 # <a name="codeindex-command"></a>Codeindex – příkaz
 
-Použití **codeindex –** příkaz ke správě kódu indexování na Team Foundation Server. Například můžete chtít obnovit index pro opravu Codelensu informace nebo vypnout indexování prozkoumat problémy s výkonem serveru.
+Použití **CodeIndex** příkaz pro správu indexování kódu na Team Foundation Server. Můžete například chtít resetovat index pro opravu informace CodeLens nebo vypnout indexování kódu a zjistit problémy s výkonem serveru.
 
 ## <a name="required-permissions"></a>Požadovaná oprávnění
 
-Použít **codeindex –** příkaz, musíte být členem skupiny **Team Foundation správci** skupiny zabezpečení. V tématu [oprávnění a skupiny, které jsou definovány pro Team Services a sady TFS](/vsts/organizations/security/permissions?view=vsts).
+Použít **CodeIndex** příkaz, musíte být členem skupiny **správci serveru Team Foundation** skupiny zabezpečení. Zobrazit [oprávnění a skupiny definované pro Team Services a TFS](/vsts/organizations/security/permissions?view=vsts).
 
 > [!NOTE]
-> I v případě, že přihlášení s přihlašovacími údaji správce, musíte otevřít okno příkazového řádku se zvýšenými oprávněními ke spuštění tohoto příkazu. Tento příkaz musí spustit také z vrstvy aplikace pro produkt Team Foundation.
+> I když se přihlásíte s přihlašovacími údaji správce, musíte otevřít okno příkazového řádku se zvýšenými oprávněními ke spuštění tohoto příkazu. Tento příkaz musíte také spustit z aplikační vrstvy pro Team Foundation.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,89 +42,89 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 |**Argument**|**Popis**|
 |------------------|---------------------|
-|`CollectionName`|Určuje název kolekce týmového projektu. Pokud název obsahuje mezery, uzavřete název v uvozovkách, například "Fabrikam webový server".|
+|`CollectionName`|Určuje název kolekce týmového projektu. Pokud název obsahuje mezery, uzavřete ho uvozovek, například "Fabrikam web".|
 |`CollectionId`|Určuje identifikační číslo kolekce týmového projektu.|
 |`ServerPath`|Určuje cestu k souboru kódu.|
 
 |**Možnost**|**Popis**|
 |----------------|---------------------|
-|**/indexingStatus**|Zobrazení stavu a konfiguraci služby indexování kódu.|
-|**/setIndexing:**[na &#124; vypnout &#124; keepupOnly]|-   **na**: spuštění indexování všech změn.<br />-   **vypnout**: Zastavit indexování všech změn.<br />-   **keepupOnly**: Zastavit indexování dříve vytvořenou změn a spustit indexování pouze nové sady změn.|
-|**/ignoreList:**[Přidat &#124; odebrat &#124; removeAll &#124; zobrazení] `ServerPath`<br /><br /> Při spuštění, end nebo oba konce cestu na serveru, můžete použít zástupný znak (*).|Určuje seznam soubory kódu a jejich cesty, které nechcete použít indexované.<br /><br /> -   **Přidat**: přidání souboru, který nechcete, aby indexována, aby seznam ignorovaných souborů.<br />-   **Odebrat**: odstranění souboru, který chcete indexované ze seznamu ignorovaných souboru.<br />-   **removeAll**: Vymazat seznam ignorovaných souborů a začít indexování všechny soubory.<br />-   **zobrazení**: Zobrazit všechny soubory, které nejsou probíhá indexování.|
-|**/listLargeFiles [/ fileCount:** `FileCount` **/minSize:** `MinSize`]|Zobrazuje zadaný počet souborů, který je delší než zadaná velikost v KB. Pak můžete použít **/ignoreList** možnost vyloučit tyto soubory z indexování.|
-|**/reindexAll**|Vymažte dříve indexovaná data a restartujte indexování.|
-|**/destroyCodeIndex [/noPrompt]**|Odstranit kód index a odeberte všechny indexovaná data. Nevyžaduje potvrzení, pokud použijete **/noPrompt** možnost.|
-|**/temporaryDataSizeLimit**: [zobrazení &#124; <`SizeInGBs`> &#124; zakázat]|Určit, kolik dočasná data, která vytvoří Codelensu při zpracování změn. Výchozí limit je 2 GB.<br /><br /> -   **zobrazení**: Zobrazit aktuální limit velikosti.<br />-   `SizeInGBs`: Změňte omezení velikosti.<br />-   **Zakázat**: odeberte omezení velikosti.<br /><br /> Tento limit je zaškrtnuta možnost než Codelensu zpracuje novou sadu změn. Pokud dočasná data, která překračuje tento limit, bude Codelensu pozastavit zpracování po sady změn, není nové. Codelensu se restartuje po dat je vyčištěna a klesne pod tento limit zpracování. Čištění se spustí automaticky jednou denně. To znamená, že dočasná data, která může překročí toto omezení, dokud nebude vyčištění spuštění.|
-|**/indexHistoryPeriod**: [zobrazení &#124; všechny &#124; <`NumberOfMonths`>]|Ovládací prvek, jak dlouho chcete indexu historii změn. To ovlivní, kolik historie Codelensu ukazuje. Výchozí limit je 12 měsíců. To znamená Codelensu Zobrazí historii změn z jenom za posledních 12 měsíců.<br /><br /> -   **zobrazení**: Zobrazit aktuální počet měsíců.<br />-   **všechny**: Index veškerou historii změn.<br />-   `NumberOfMonths`: Počet měsíců, používá k historii změn index změňte.|
-|**/collectionName:** `CollectionName`|Určuje název kolekce týmového projektu, na který se má spustit **codeindex –** příkaz. Vyžaduje, pokud nepoužíváte **/CollectionId**.|
-|**/collectionId:** `CollectionId`|Určuje identifikační číslo kolekce týmového projektu, na který se má spustit **codeindex –** příkaz. Vyžaduje, pokud nepoužíváte **/CollectionName**.|
+|**/indexingStatus**|Zobrazení stavu a konfigurace služby indexování kódu.|
+|**/setIndexing:**[na &#124; vypnout &#124; keepupOnly]|-   **na**: zahájení indexování všech sad změn.<br />-   **vypnout**: ukončení indexování všech sad změn.<br />-   **keepupOnly**: zastavení indexování dříve vytvořených sad změn a spuštění indexování pouze nových sad změn.|
+|**/ignoreList:**[Přidat &#124; odebrat &#124; removeAll &#124; zobrazení] `ServerPath`<br /><br /> Na začátku, konci nebo na obou koncích cesty k serveru můžete použít zástupný znak (*).|Určuje seznam souborů s kódem a jejich cesty, které nechcete indexované.<br /><br /> -   **Přidat**: přidání souboru, který nechcete indexovat do seznamu ignorovaných souborů.<br />-   **Odebrat**: odstranění souboru, který chcete indexovat ze seznamu ignorovaných souborů.<br />-   **removeAll**: vymazání seznamu ignorovaných souborů a zahájení indexování všech souborů.<br />-   **zobrazení**: Zobrazit všechny soubory, které nejsou indexovat.|
+|**/listLargeFiles [/ fileCount:** `FileCount` **/minSize:** `MinSize`]|Zobrazí zadaný počet souborů, která překračuje zadanou velikost v KB. Pak můžete použít **/ignoreList** možnost, chcete-li z indexování vyloučit tyto soubory.|
+|**/reindexAll**|Vymažte dříve indexovaná data a spusťte indexování znovu.|
+|**/destroyCodeIndex [/ noprompt]**|Smazat index kódu a odstranit všechna indexovaná data. Pokud používáte nevyžaduje potvrzení **/noprompt** možnost.|
+|**/temporaryDataSizeLimit**: [zobrazení &#124; <`SizeInGBs`> &#124; zakázat]|Určit, kolik dočasná data, která vytvoří CodeLens při zpracování sady změn. Výchozí omezení je 2 GB.<br /><br /> -   **zobrazení**: Zobrazit aktuální limit velikosti.<br />-   `SizeInGBs`: Změňte limit velikosti.<br />-   **Zakázat**: odebrání omezení velikosti.<br /><br /> Toto omezení je zaškrtnuto, než funkce CodeLens zpracuje novou sadu změn. Dočasná data, která překračuje tento limit, CodeLens pozastaví zpracování poslední sady změn, nikoli nové značky. CodeLens se restartuje po data se vyčistí a klesne pod tento limit zpracování. Čištění se spustí automaticky jednou denně. To znamená, že dočasná data, která může překročit tento limit, dokud se čištění se spustí.|
+|**/indexHistoryPeriod**: [zobrazení &#124; všechny &#124; <`NumberOfMonths`>]|Ovládací prvek, jak dlouho se má indexovat historii změn. To má vliv na tom, kolik historie CodeLens ukazuje. Výchozí limit je 12 měsíců. To znamená, že funkce CodeLens ukazuje historii změn z pouze za posledních 12 měsíců.<br /><br /> -   **zobrazení**: Zobrazit aktuální počet měsíců.<br />-   **všechny**: Index veškerá historie změn.<br />-   `NumberOfMonths`: Počet měsíců pro historii změn index změňte.|
+|**/collectionName:** `CollectionName`|Určuje název kolekce týmového projektu, ve kterém se spustí **CodeIndex** příkazu. Povinné, pokud nepoužíváte **/CollectionId**.|
+|**/collectionId:** `CollectionId`|Určuje identifikační číslo kolekce týmového projektu, ve kterém se spustí **CodeIndex** příkazu. Povinné, pokud nepoužíváte **/CollectionName**.|
 
 ## <a name="examples"></a>Příklady
 
 > [!NOTE]
-> Příklady společností, organizací, produktů, názvů domén, e-mailové adresy, loga, osoby, místa a události použité v ukázkách jsou smyšlené.  Žádné spojení se skutečnou společností, organizace, produktu, název domény, e-mailovou adresu, logem, osoba, místech nebo události je určený nebo událostmi.
+> Vzorové společnosti, organizace, produkty, názvy domén, e-mailové adresy, loga, osoby, místa a události použité v ukázkách jsou smyšlené.  Žádné jejich spojení se skutečnou společností, organizaci, produktu, název domény, e-mailovou adresu, loga, osoby, místa nebo události je určena ji vyvozovat.
 
- Pokud chcete zobrazit kód indexování stavu a konfiguraci:
-
-```cmd
-TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Web Site"
-```
-
- Spuštění indexování všech změn:
+ Chcete-li zobrazit kód stavu a konfiguraci indexování:
 
 ```cmd
-TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Website"
 ```
 
- Zastavení indexování dříve vytvořenou změn a spustit indexování pouze nové změn:
+ Zahájení indexování všech sad změn:
 
 ```cmd
-TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Website"
 ```
 
- Vyhledání až 50 souborů, které jsou větší než 10 KB:
+ Chcete-li zastavit indexování dříve vytvořených sad změn a spustit indexování pouze nových sad změn:
 
 ```cmd
-TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Website"
 ```
 
- Vyloučit konkrétní soubor z indexování a přidejte do seznamu ignorovaných souboru:
+ K vyhledání až 50 souborů, které jsou větší než 10 KB:
 
 ```cmd
-TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Web Site/Catalog.cs" /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Website"
 ```
 
- Pokud chcete zobrazit všechny soubory, které nejsou indexovány:
+ Chcete-li z indexování vyloučit určitý soubor a přidejte do seznamu ignorovaných souborů:
+
+```cmd
+TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Website/Catalog.cs" /collectionName:"Fabrikam Website"
+```
+
+ Pokud chcete zobrazit všechny soubory, které nejsou indexována:
 
 ```cmd
 TFSConfig CodeIndex /ignoreList:view
 ```
 
- Zrušte dříve indexovaná data a restartujte indexování:
+ Vymažte dříve indexovaná data a znovu spustit indexování:
 
 ```cmd
-TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Website"
 ```
 
  Uložte veškerá historie změn:
 
 ```cmd
-TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Website"
 ```
 
- Odeberte limit velikosti na Codelensu dočasná data a pokračovat indexování bez ohledu na velikost dočasná data:
+ Odebrání omezení velikosti pro dočasná data CodeLens a pokračovat indexování bez ohledu na velikost dočasných dat:
 
 ```cmd
-TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Website"
 ```
 
- Chcete-li odstranit kód index s potvrzení:
+ Chcete-li odstranit kód indexu s potvrzením:
 
 ```cmd
-TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ```
 
 ## <a name="see-also"></a>Viz také:
 
 - [Nalezení změn kódu a další historie pomocí CodeLensu](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Správa konfigurace serveru s TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)
+- [Správa konfigurace serveru pomocí nástroje TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)

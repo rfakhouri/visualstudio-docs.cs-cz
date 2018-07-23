@@ -1,5 +1,5 @@
 ---
-title: Přidání mezního pravidla pro zatížení testování v sadě Visual Studio
+title: Přidat pravidlo mezní hodnoty pro zátěžové testování v sadě Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ede6e8d3dde3b8a6f76164b02457a98102bcbac7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f68ab9b183119c18bed51bb7faaa86993d7f34ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965543"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179876"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Postupy: Přidání mezního pravidla pomocí editoru zátěžových testů
 
@@ -28,22 +28,21 @@ Mezní pravidla v zátěžových testech porovnávají hodnotu čítače výkon
 
 1.  Otevřete zátěžový test.
 
-2.  Rozbalte v editoru zátěžových testů **sad čítačů** uzlu.
+2.  V editoru zátěžového testu rozbalte **sady čítačů** uzlu.
 
-3.  Rozbalit jednu z **kategorie čítače** v jednom ze sady čítačů. Například můžete vybrat **LoadTest:Scenario**. Rozbalte uzel.
+3.  Rozbalte některou **kategorie čítačů** v jedné ze sad čítačů. Například můžete vybrat **loadtest: Scenario**. Rozbalte uzel.
 
-4.  Pravým tlačítkem jeden čítače, například na **zatížení uživatele**v části **LoadTest:Scenario**. Vyberte **přidání mezního pravidla**.
+4.  Klikněte pravým tlačítkem z čítačů, například **uživatelské zatížení**v části **loadtest: Scenario**. Vyberte **přidat pravidlo mezní hodnoty**.
 
-     **Přidání mezního pravidla** se zobrazí dialogové okno.
+     **Přidat pravidlo mezní hodnoty** se zobrazí dialogové okno.
 
-5.  Lze si vybrat ze dvou typů pravidel: konstanta porovnání a čítač porovnání. Vyberte požadovaný typ a nastavte hodnoty.
+5.  Můžete vybrat ze dvou typů pravidel: **konstanta porovnání** a **čítač porovnání**. Vyberte požadovaný typ a nastavte hodnoty.
 
     > [!NOTE]
-    > Nastavte **výstrahy Pokud přes** vlastnost **True** k označení, což představuje překročení prahové hodnoty je problém, nebo **False** k označení, které spadají pod prahovou hodnotu je problém.
+    > Nastavte **upozornění, pokud přesáhne** vlastnost **True** k označení, že překročení mezní hodnoty je nějaký problém nebo **False** označuje, že snížení pod mezní hodnotu k problému.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Analýza mezních pravidel](../test/analyze-threshold-rule-violations-in-load-tests.md)
-- [Určení sad čítačů a mezních pravidel pro počítače v zátěžovém testu](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Analýza překročení mezních pravidel](../test/analyze-threshold-rule-violations-in-load-tests.md)
+- [Určení sad čítačů a mezních pravidel pro počítače v rámci zátěžového testu](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Určení sad čítačů a mezních pravidel pro počítače v zátěžovém testu](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

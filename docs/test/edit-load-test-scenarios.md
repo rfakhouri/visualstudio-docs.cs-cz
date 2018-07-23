@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f55165e77b7bde7d922fd1544e1e8cc9959bc16c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c589e58fb1e5b6a63706889de666d4e622f0ceb5
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152126"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180240"
 ---
 # <a name="edit-load-test-scenarios"></a>Úpravy scénářů zátěžových testů
 
@@ -47,7 +47,7 @@ Má scénář několik dalších vlastností, které lze upravit pomocí **edito
 
 |Úlohy|Související témata|
 |-----------|-----------------------|
-|**Přidat pozastavení umělé lidské interakce ve vašem scénáři:** časy uvažování se používají pro simulaci lidského chování, které způsobuje, že lidé mezi interakcemi s webovým serverem čekání. Doby uvažování se vyskytují mezi požadavky v testu výkonnosti webu a mezi testovacími iteracemi v případě zkušebního scénáře. Použití času přemýšlení v testu zatížení může být užitečné při vytváření přesnější simulace zatížení.|-   [Úpravy dob uvažování pro simulaci prodlev při zásahem ze strany webové stránky](../test/edit-think-times-in-load-test-scenarios.md)|
+|**Přidat pozastavení umělé lidské interakce ve vašem scénáři:** časy uvažování se používají pro simulaci lidského chování, které způsobuje, že lidé mezi interakcemi s webem čekat. Doby uvažování se vyskytují mezi požadavky v testu výkonnosti webu a mezi testovacími iteracemi v případě zkušebního scénáře. Použití času přemýšlení v testu zatížení může být užitečné při vytváření přesnější simulace zatížení.|-   [Úpravy dob uvažování pro simulaci prodlev při zásahem ze strany webové stránky](../test/edit-think-times-in-load-test-scenarios.md)|
 |**Zadejte počet virtuálních uživatelů pro váš scénář:** můžete nakonfigurovat vlastnosti vzorku zatížení k určení, jak je upraveno simulované uživatelské zatížení během zkušební zatížení. Získat tři předdefinované načtené vzorky: Konstanta, krok a cílově zaměřeného vzoru zátížení. Vyberete vzorek zatížení a upravíte vlastnosti odpovídající úrovni pro vaše cíle zátěžového testu.|-   [Úpravy vzorů zatížení pro model aktivity virtuálního uživatele](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**Konfigurace pravděpodobnosti spuštění testu ve scénáři virtuálním uživatelem:** můžete použít kombinaci testů, která určuje pravděpodobnost, že virtuální uživatel spustí daný test ve scénáři testu zatížení. To umožňuje simulovat zatížení více realisticky. Namísto toho, aby pouze jeden pracovní postup prostřednictvím aplikace, může mít několik pracovních postupů, což je užší jak koncoví uživatelé pracují s vašimi aplikacemi.|-   [Úpravy modelů kombinací testů](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|
 |**Přidání nebo odebrání webového výkonu nebo Jednotkový test do scénáře zátěžového testu:** můžete přidávat nebo odebírat webového výkonu nebo Jednotkový test z testu zatížení ve scénáři. Zátěžový test obsahuje jeden nebo více scénářů, z nichž každý obsahuje jeden nebo více výkonu nebo jednotkových testů webu.|-   [Upravit poměr testů](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|

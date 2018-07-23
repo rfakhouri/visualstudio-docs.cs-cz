@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f66299f1e5f5a40e0ad8f022645f81873bc55b56
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151444"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179512"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Úpravy poměru testů určit, které webového výkonu, jednotek a programové testy uživatelského rozhraní mají být zahrnuty do scénáře zátěžového testu
 
-*Poměr testů* scénáře je kombinací výběr webového výkonu a testy jednotek, které jsou obsaženy ve scénáři a distribuce těchto testů ve scénáři. Distribuce je nastavení, které určíte pro pravděpodobnost, že určitého testu bude vybrán ve virtuálních uživatelů během spuštění testu zatížení.
+*Poměr testů* scénáře je kombinací výběr webového výkonu a testy jednotek, které jsou součástí scénáře a distribuce těchto testů ve scénáři. Distribuce je nastavení, které určíte pro pravděpodobnost, že určitého testu bude vybrán ve virtuálních uživatelů během spuštění testu zatížení.
 
  Po přidání sady testů k zátěžovému testu *poměr testů* kombinovat funguje stejně jako jiné možnosti. Virtuálních uživatelů náhodně vybere test, založený na pravděpodobnost, že jste zadali v kombinaci. Například pokud máte dva testy, každý 50 procent v kombinaci, nový virtuální uživatel zvolí pro spuštění prvního testu přibližně polovinu času. V kombinaci rozdělení 50/50 Pokud jeden test je dlouhý a další je krátký, pochází větší zatížení z dlouhého testu.
 
@@ -45,9 +45,9 @@ Můžete přidat další testy webového výkonu a jednotku s různými text sc�
 
 2.  V **editoru zátěžových testů**, klikněte pravým tlačítkem na existující scénář a pak zvolte **přidat testy**.
 
-     **Přidat testy** se zobrazí dialogové okno. Všechny webové výkonu, jednotek a programové testy uživatelského rozhraní v rámci vašeho řešení, které ještě nejsou ve vašem scénáři je možné přidat do scénáře.
+     **Přidat testy** se zobrazí dialogové okno. Webového výkonu, jednotek a programové testy uživatelského rozhraní v rámci vašeho řešení, které ještě nejsou ve vašem scénáři je možné přidat do scénáře.
 
-3.  V **dostupné testy** podokně, vyberte Web výkonu, jednotek a programové testy uživatelského rozhraní, které chcete přidat. Klikněte na šipku doprava, chcete-li přidat testy **vybrané testy** podokně.
+3.  V **dostupné testy** podokně, vyberte webového výkonu, jednotek a programové testy uživatelského rozhraní, které chcete přidat. Klikněte na šipku doprava, chcete-li přidat testy **vybrané testy** podokně.
 
 4.  Po dokončení přidávání testů, zvolte **OK**.
 
@@ -64,7 +64,7 @@ Můžete přidat další testy webového výkonu a jednotku s různými text sc�
 
 2.  V **editoru zátěžového testu**, v zátěžového testování stromu, klikněte pravým tlačítkem na scénář, ze kterého chcete odebrat test a vyberte **upravit kombinaci testů**. **Upravit kombinaci testů** se zobrazí dialogové okno.
 
-3.  Vyberte Web výkonu, jednotek nebo programový test uživatelského rozhraní v mřížce a potom zvolte **odebrat**.
+3.  Vyberte v mřížce webového výkonu, jednotek nebo programový test uživatelského rozhraní a klikněte na tlačítko **odebrat**.
 
     > [!NOTE]
     > Po odebrání test upravte kombinaci testů do upřednostňovaných distribučních.

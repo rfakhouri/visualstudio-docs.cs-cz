@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37b9914eae9a260af26d9e1a499180d0cf7f73d1
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d7e862322995c7cda4a7080ee387c7a080437748
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152536"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178515"
 ---
-# <a name="walkthrough-using-msbuild"></a>Návod: Použití nástroje MSBuild
+# <a name="walkthrough-use-msbuild"></a>Návod: Použití nástroje MSBuild
 Nástroj MSBuild je platforma sestavení pro společnost Microsoft a sady Visual Studio. Tento návod vás seznámí s stavební kameny nástroje MSBuild a ukazuje, jak psát, manipulaci a ladit projekty MSBuild. Kurzu se naučíte:
 
 -   Vytváření a manipulaci se soubor projektu.

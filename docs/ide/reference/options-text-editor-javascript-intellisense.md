@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1c8fa80029618a9686c6eeddebb537757356d8f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 584f2496e676b37b23afbe9b4e135f475a73d8df
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797506"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179746"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Možnosti, textový editor, JavaScript, IntelliSense
 Použití **IntelliSense** stránku **možnosti** dialogové okno Upravit nastavení, které ovlivňují chování technologie IntelliSense pro JavaScript. Můžete přistupovat **IntelliSense** stránky výběrem **nástroje**, **možnosti** na řádku nabídek a následným rozbalením položek **textový Editor**,  **JavaScript**, **technologie IntelliSense.**
@@ -46,7 +46,7 @@ Použití **IntelliSense** stránku **možnosti** dialogové okno Upravit nastav
  Pokud je toto políčko zaškrtnuto a soubor s kódem JavaScript je otevřen mimo kontext projektu, stáhne Visual Studio vzdálené soubory jazyka JavaScript odkazované v tomto souboru za účelem získání informací technologie IntelliSense. Při výběru této možnosti se soubory stáhnou, pokud je vložíte jako referenci do souboru s kódem JavaScript.
 
 > [!NOTE]
-> Pro webové projekty jsou ve výchozím nastavení vzdálené soubory, na které váš projekt odkazuje, staženy automaticky.
+> Pro webové projekty se ve výchozím nastavení stáhnou vzdálené soubory v projektu.
 
 
 ## <a name="statement-completion"></a>Doplňování výrazů
@@ -71,7 +71,7 @@ Použití **IntelliSense** stránku **možnosti** dialogové okno Upravit nastav
 
 -   Implicitní (web) pro projekty HTML5. Soubory zahrnuté v této skupině jsou v oboru pro každý soubor .js otevřený v editoru kódu pro tyto typy projektů.
 
--   Referenční skupiny vyhrazeného pracovníka, pro HTML5 Web Workers. Soubory zahrnuté v této skupině jsou v oboru pro každý soubor .js, který má explicitní odkaz na referenční skupinu vyhrazeného pracovníka.
+-   Referenční skupiny vyhrazeného pracovníka, pro HTML5 web workers. Soubory zahrnuté v této skupině jsou v oboru pro každý soubor .js, který má explicitní odkaz na referenční skupinu vyhrazeného pracovníka.
 
 -   Obecné, pro ostatní typy projektů jazyka JavaScript.
 

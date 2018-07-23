@@ -13,48 +13,48 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2663864f0cf9d23db22f11cccfd7a9c474d6577c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8c149f9febccb8363d5420c447c66bbdb5a5da6e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972089"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177770"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>Postupy: Import výsledků zátěžového testu do úložiště
 
-Při spuštění zátěžového testu budou informace shromážděné za běhu uloženy v úložišti výsledků zátěžových testů. Úložiště výsledků zátěžových testů obsahuje data čítače výkonu a informace o všech chybách. Další informace najdete v tématu [Správa výsledků zátěžových testů v úložiště výsledků zátěžového testu](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+Při spuštění zátěžového testu budou informace shromážděné za běhu uloženy v úložišti výsledků zátěžových testů. Úložiště výsledků zátěžových testů obsahuje data čítače výkonu a informace o všech chybách. Další informace najdete v tématu [Správa výsledků zátěžových testů v úložišti výsledků zátěžového testu](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
- Výsledků zátěžového testu z editoru načíst testování můžete spravovat pomocí **otevřete a správa výsledků načíst testování** dialogové okno. Můžete otevřít, import, export a odebrat výsledků zátěžového testu.
+ Výsledky zátěžového testu můžete spravovat z editoru zátěžového testu pomocí **otevřít a spravovat výsledky zátěžového testu** dialogové okno. Můžete otevřít, importovat, exportovat a odstranit výsledky zátěžových testů.
 
-## <a name="to-import-results-into-a-repository"></a>Chcete-li importovat výsledky do úložiště
+## <a name="to-import-results-into-a-repository"></a>Chcete-li importovat do úložiště výsledků
 
-1.  Z projektu testu výkonnosti webu a zátěžového testu otevřete zátěžový test.
+1.  Z webového výkonu a zátěžové testování projektu, otevřete zátěžový test.
 
-2.  Na panelu nástrojů vložený zvolte **otevřete a správa výsledků**.
+2.  Na panelu nástrojů themeroller vložený **otevřít a spravovat výsledky**.
 
-     **Otevřete a správa výsledků zátěžových testů** se zobrazí dialogové okno.
+     **Otevřít a spravovat výsledky zátěžového testu** se zobrazí dialogové okno.
 
-3.  V **zadejte název řadiče najít výsledků zátěžového testu**, vyberte řadič. Vyberte  **\<místní >** přístup výsledky ukládají místně.
+3.  V **zadat název kontroléru pro vyhledání výsledků zátěžového testu**, vyberte řadič. Vyberte  **\<místní >** pro přístup k výsledkům uloženým místně.
 
-     Pokud jsou k dispozici výsledků zátěžového testu, se objeví v **výsledků zátěžového testu** seznamu. Sloupce **čas**, **doba trvání**, **uživatele**, **výsledek**, **Test**, a  **Popis**. **Testování** obsahuje název testu a **popis** obsahuje nepovinný popis, který se přidá před spuštěním testu.
+     Pokud jsou k dispozici výsledky zátěžového testu, jsou uvedeny v **výsledky zátěžového testu** seznamu. Sloupce jsou **čas**, **doba trvání**, **uživatele**, **výsledek**, **testovací**, a  **Popis**. **Testování** obsahuje název testu, a **popis** obsahuje volitelný popis, který je přidán před spuštěním testu.
 
 4.  Zvolte **Import**.
 
      **Import výsledků zátěžového testu** zobrazí se dialogové okno.
 
-5.  V **název souboru** pole, zadejte název souboru výsledků archivovaný testu a pak zvolte **otevřete**.
+5.  V **název_souboru** zadejte název souboru výsledků archivované testu a klikněte na tlačítko **otevřít**.
 
      \- nebo –
 
-     Přejděte na soubor a potom zvolte **otevřete**.
+     Přejděte k souboru a klikněte na tlačítko **otevřít**.
 
     > [!NOTE]
-    > Soubor výsledků archivovaný test, který určíte v tomto kroku musí být vytvořen provedením operace exportu.
+    > Soubor výsledků archivované test, který zadáte v tomto kroku musí být vytvořen pomocí provádí se operace exportu.
 
-     Výsledky jsou importovány a zobrazují v **výsledků zátěžového testu** seznamu.
+     Výsledky jsou importovány a zobrazují v **výsledky zátěžového testu** seznamu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Správa výsledků zátěžových testů v úložiště výsledků zátěžového testu](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Správa výsledků zátěžových testů v úložišti výsledků zátěžového testu](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Postupy: Export výsledků zátěžového testu z úložiště](../test/how-to-export-load-test-results-from-a-repository.md)

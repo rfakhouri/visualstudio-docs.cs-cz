@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0bf21ec99bd7b98ce90cd49c3edf5e3738c25b1
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978395"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178631"
 ---
 # <a name="template-parameters"></a>Parametry šablony
 
@@ -64,7 +64,7 @@ Následující tabulka uvádí vyhrazené parametry šablon, které mohou využ�
 |SpecificSolutionName|Název řešení. Pokud je zaškrtnuto políčko „vytvořit adresář řešení“, `SpecificSolutionName` obsahuje název řešení. Pokud není zaškrtnuto políčko „vytvořit adresář řešení“, `SpecificSolutionName` je prázdné.|
 |USERDOMAIN|Aktuální uživatel domény.|
 |uživatelské jméno|Aktuální uživatelské jméno.|
-|webnamespace|Název aktuálního webu. Tento parametr se používá v šabloně webového formuláře zajistit jedinečné názvy tříd. Pokud v kořenovém adresáři webový server je webový server, tento parametr šablony přeloží do kořenového adresáře na webovém serveru.|
+|webnamespace|Název aktuální webové stránky. Tento parametr se používá v šabloně webového formuláře zajistit jedinečné názvy tříd. Pokud webová stránka se v kořenovém adresáři webového serveru, tento parametr šablony přeloží do kořenového adresáře na webovém serveru.|
 |Rok|Aktuální rok ve formátu RRRR.|
 
 > [!NOTE]

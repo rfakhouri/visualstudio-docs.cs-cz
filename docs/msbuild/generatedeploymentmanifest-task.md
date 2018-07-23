@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 470e08454d39bf63542a63359359b1577e70f5b3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: accf8ffb81b28451f7561b027e4a11fe5a59b202
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945354"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177601"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest – úloha
 
@@ -41,8 +41,8 @@ Následující tabulka popisuje parametry `GenerateDeploymentManifest` úloh.
 |`CreateDesktopShortcut`|Volitelné `Boolean` parametru.<br /><br /> Při hodnotě true je vytvořena ikona na ploše během instalace aplikace ClickOnce.|
 |`DeploymentUrl`|Volitelné `String` parametru.<br /><br /> Určuje umístění aktualizace pro aplikaci. Pokud není tento parametr zadán, je definován žádné umístění aktualizace pro aplikaci. Nicméně pokud `UpdateEnabled` parametr je `true`, umístění aktualizace musí být zadán. Zadaná hodnota musí být plně kvalifikovaná cesta URL nebo cestu UNC.|
 |`Description`|Volitelné `String` parametru.<br /><br /> Určuje volitelný popis pro aplikaci.|
-|`DisallowUrlActivation`|Volitelné `Boolean` parametru.<br /><br /> Určuje, zda aplikace spouštěna automaticky při otevření prostřednictvím adresy URL. Pokud je tento parametr `true`, aplikaci lze spustit pouze z nabídky Start. Výchozí hodnota tohoto parametru je `false`. Tento vstup platí pouze tehdy, když `Install` je hodnota parametru `true`.|
-|`EntryPoint`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Označuje položku zadání pro generované sestavení manifestu. Pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest nasazení, tento vstup Určuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace.<br /><br />Pokud `EntryPoint` není zadán parametr úlohy, `<customHostSpecified>` je vložena značka jako podřízený objekt `<entryPoint>` značku, například:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Závislosti mezi knihovnami DLL k manifestu aplikace můžete přidat pomocí následujících kroků:<br /><br /> 1.  Přeložit odkazy na sestavení pomocí volání <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Předejte výstup předchozího úkolu a samotného sestavení do <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Předejte závislosti pomocí `Dependencies` parametr <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|
+|`DisallowUrlActivation`|Volitelné `Boolean` parametru.<br /><br /> Určuje, zda aplikace spouštěna automaticky při otevření prostřednictvím adresy URL. Pokud je tento parametr `true`, aplikaci lze spustit pouze z **Start** nabídky. Výchozí hodnota tohoto parametru je `false`. Tento vstup platí pouze tehdy, když `Install` je hodnota parametru `true`.|
+|`EntryPoint`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Označuje položku zadání pro generované sestavení manifestu. Pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest nasazení, tento vstup Určuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace.<br /><br />Pokud `EntryPoint` není zadán parametr úlohy, `<customHostSpecified>` je vložena značka jako podřízený objekt `<entryPoint>` značku, například:<br /><br /> `<entryPoint xmlns="urn:schemas-microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Závislosti mezi knihovnami DLL k manifestu aplikace můžete přidat pomocí následujících kroků:<br /><br /> 1.  Přeložit odkazy na sestavení pomocí volání <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Předejte výstup předchozího úkolu a samotného sestavení do <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Předejte závislosti pomocí `Dependencies` parametr <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|
 |`ErrorReportUrl`|Volitelné <xref:System.String?displayProperty=fullName> parametru.<br /><br /> Určuje adresu URL webové stránky, který se zobrazí v dialogových oknech během instalace ClickOnce.|
 |`InputManifest`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Označuje vstupní dokument XML, který bude sloužit jako základ pro generátor manifestu. To umožňuje strukturovaným datům, například definicím vlastního manifestu, se projevovat ve výstupním manifestu. Kořenový element v dokumentu XML musí být uzel sestavení v oboru názvů asmv1.|
 |`Install`|Volitelné `Boolean` parametru.<br /><br /> Určuje, zda je aplikace nainstalovaná aplikace nebo aplikace pouze online. Pokud je tento parametr `true`, aplikace se nainstaluje na uživatele **Start** nabídky a můžete ji odstranit pomocí **přidat nebo odebrat programy** dialogové okno. Pokud je tento parametr `false`, aplikace je určena pro použití online z webové stránky. Výchozí hodnota tohoto parametru je `true`.|

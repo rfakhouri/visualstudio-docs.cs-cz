@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1a306ec5716a3b2e174cb5b849d678f289dcafb
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 7e874b29db1e74c554673c21709d9d230dc19827
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154717"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178472"
 ---
 # <a name="warning-task"></a>Warning – úloha
 Protokoly upozornění během sestavení podle Vyhodnocená podmíněném příkazu.  
@@ -43,7 +43,7 @@ Protokoly upozornění během sestavení podle Vyhodnocená podmíněném přík
 ## <a name="remarks"></a>Poznámky  
  `Warning` Úloha umožňuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty ke kontrole přítomnosti požadovanou konfiguraci nebo vlastnost před pokračováním na další krok sestavení.  
   
- Pokud `Condition` parametr `Warning` vyhodnotí jako úloha `true`, hodnota `Text` parametr je zaznamenána do protokolu a pokračuje v provádění sestavení. Pokud `Condition` neexistuje parametr, se do protokolu zapíše text upozornění. Další informace o protokolování naleznete v tématu [protokoly o sestavení získání](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Pokud `Condition` parametr `Warning` vyhodnotí jako úloha `true`, hodnota `Text` parametr je zaznamenána do protokolu a pokračuje v provádění sestavení. Pokud `Condition` neexistuje parametr, se do protokolu zapíše text upozornění. Další informace o protokolování naleznete v tématu [získat protokoly o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
  Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  
   
@@ -65,5 +65,5 @@ Protokoly upozornění během sestavení podle Vyhodnocená podmíněném přík
 ```  
   
 ## <a name="see-also"></a>Viz také:  
- [Získávání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)   
+ [Získání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)

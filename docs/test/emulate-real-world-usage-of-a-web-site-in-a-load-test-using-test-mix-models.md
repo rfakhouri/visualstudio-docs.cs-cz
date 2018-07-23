@@ -1,5 +1,5 @@
 ---
-title: Emulace reálného využití webové stránky pro zátěžové testování v sadě Visual Studio
+title: Emulace reálného využití webové stránky pro zátěžové testování
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 562e6d4070a7796a93a2b5adc4ddcd470ae1b1f6
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 682370de0964e8bc96a069f015f37144f4d9a83f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152002"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177263"
 ---
-# <a name="emulate-expected-real-world-usage-of-a-web-site-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulovat očekávaného reálného využití webové stránky nebo aplikace v rámci zátěžového testu pomocí modelu kombinace testů
+# <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulovat očekávaného reálného využití webu nebo aplikace v rámci zátěžového testu pomocí modelu kombinace testů
 
-Pomocí možnosti modelování zatížení více přesně předpovědět očekávaného reálného využití webové stránky nebo aplikace, které jsou zátěžové testování. Je důležité provést, protože zátěžový test, který není založen na modelu přesné zatížení lze generovat zavádějící výsledky.
+Pomocí možnosti modelování zatížení více přesně předpovědět očekávaného reálného využití webu nebo aplikace, které jsou zátěžové testování. Je důležité provést, protože zátěžový test, který není založen na modelu přesné zatížení lze generovat zavádějící výsledky.
 
 ## <a name="test-mix-model-enhancements"></a>Vylepšení model poměru testů
 
@@ -30,7 +30,7 @@ Můžete určit jednu z následujících možností model kombinace testů pro v
 
 -   **Na základě celkového počtu testů:** Určuje, který webového výkonu nebo Jednotkový test se spustí, když virtuální uživatel spustí iteraci testu. Na konci zátěžového testu odpovídá počet případů, kdy se spuštěním určitého testu rozdělení přiřazeného testu. Použijte tento model kombinace testů, pokud vytváříte poměru testů podílu transakcí v protokolu služby IIS nebo v údajích o produkci. Další informace najdete v tématu [procento podle spuštěných testů](#BasedOnTestsStarted).
 
--   **Na základě počtu virtuálních uživatelů:** Určuje procentuální podíl virtuálních uživatelů, kteří budou používat konkrétní webového výkonu nebo Jednotkový test. Kdykoli během zátěžového testu odpovídá počet uživatelů, kteří jsou spuštěn určitý test přiřazené distribuce. Použijte tento model kombinace testů, pokud vytváříte poměr testů na procento uživatelů, kteří jsou spuštěn určitý test. Další informace najdete v tématu [virtuálních uživatelů na základě procento](#PercentageBasedonVirtualUsers).
+-   **Na základě počtu virtuálních uživatelů:** Určuje procentuální podíl virtuálních uživatelů, kteří budou používat konkrétního webového výkonu nebo Jednotkový test. Kdykoli během zátěžového testu odpovídá počet uživatelů, kteří jsou spuštěn určitý test přiřazené distribuce. Použijte tento model kombinace testů, pokud vytváříte poměr testů na procento uživatelů, kteří jsou spuštěn určitý test. Další informace najdete v tématu [virtuálních uživatelů na základě procento](#PercentageBasedonVirtualUsers).
 
 -   **Založený na kroku uživatele:** v průběhu zátěžového testu je každý test webového výkonu nebo Jednotkový test spustit zadaný počet opakování za uživatele za hodinu. Použijte tento model kombinace testů, když potřebujete virtuálních uživatelů pro spuštění testu v určitém tempu zátěžového testu. Další informace najdete v tématu [poměru testů Pacing](#PacingTestMix).
 

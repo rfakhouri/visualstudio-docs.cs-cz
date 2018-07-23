@@ -37,18 +37,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e56e1129bfdd4b49dcf5b54614af715a20207750
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: e83a541c9cff15375f8dc0fcdde74119a40713e4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175314"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178875"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio
 Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation (WCF) a [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], technologie společnosti Microsoft pro vytváření distribuované aplikace. Toto téma obsahuje úvod do služeb z hlediska sady Visual Studio. Úplnou dokumentaci najdete v tématu [4.5 služby WCF Data](/dotnet/framework/data/wcf/index).
 
 ## <a name="what-is-wcf"></a>Co je WCF?
- [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] je jednotné rozhraní pro vytváření zabezpečené, spolehlivé, počet zrušených zpracovaných a interoperabilní distribuovaných aplikací. Nahrazuje starší technologie meziprocesové komunikace, jako je ASMX webové služby vzdálené komunikace .NET, podnikové služby (DCOM) a služby MSMQ. WCF v sobě spojuje funkčnost všech těchto technologií ještě používáte v rámci jednotný programovací model. To zjednodušuje vývoj distribuovaných aplikací.
+ [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] je jednotné rozhraní pro vytváření zabezpečené, spolehlivé, počet zrušených zpracovaných a interoperabilní distribuovaných aplikací. Nahrazuje starší technologie meziprocesové komunikace, jako je webovými službami ASMX, vzdálené komunikace .NET, podnikové služby (DCOM) a služby MSMQ. WCF v sobě spojuje funkčnost všech těchto technologií ještě používáte v rámci jednotný programovací model. To zjednodušuje vývoj distribuovaných aplikací.
 
 ### <a name="what-are-wcf-data-services"></a>Co jsou služby WCF Data Services
  [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] je standardní implementace protokol Open Data (OData).  Služby WCF Data Services umožňuje vystavit tabulková data jako sadu rozhraní REST API, což vám umožní vrátit data pomocí standardních příkazů HTTP, jako získat, POST, PUT nebo odstranění. Na straně serveru se nahrazuje služeb WCF Data Services [rozhraní ASP.NET Web API](http://www.asp.net/web-api) pro vytvoření nové služby OData. Klientská knihovna služby WCF Data Services i nadále být dobrou volbou pro využívání služby OData v aplikacích .NET v sadě Visual Studio (**projektu &#124; přidat odkaz na službu**). Další informace najdete v tématu [4.5 služby WCF Data](http://go.microsoft.com/fwlink/?LinkID=119952).
@@ -90,7 +90,7 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
  Šablony sady Visual Studio WCF můžete použít jako základ rychle vytvářet vlastní služby. Pak můžete automaticky hostitel služby WCF a testovacího klienta WCF pro ladění a otestování služby. Tyto nástroje společně poskytují rychlý a pohodlný ladění a testovací cyklus a eliminuje požadavek na potvrzení na model hostingu v rané fázi.
 
 #### <a name="wcf-templates"></a>Šablony pro WCF
- Šablony sady Visual Studio WCF poskytují strukturu základní třída pro vývoj služby. Jsou k dispozici v několika šablon WCF **přidat nový projekt** dialogové okno. Patří mezi ně projekty knihovny služby WCF, webové servery služby WCF a šablon položek služby WCF.
+ Šablony sady Visual Studio WCF poskytují strukturu základní třída pro vývoj služby. Jsou k dispozici v několika šablon WCF **přidat nový projekt** dialogové okno. Patří mezi ně projekty lLibrary služeb WCF, WCF služby websites a šablon položek služby WCF.
 
  Když vyberete šablonu, soubory jsou přidány pro servisní smlouvy, implementace služby a konfiguraci služby. Všechny atributy vyžadované již byly přidány, vytvoření jednoduchého typu "Hello World" služby, a nemáte psát jakýkoli kód. Samozřejmě, můžete přidat kód k poskytování funkcí a metod pro vaši službu reálného světa, ale šablony poskytují základ.
 

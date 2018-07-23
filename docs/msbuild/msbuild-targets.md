@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f6ae74ed310da6f937dcadf168630102c004877
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3700074a1d087c0626a86559ff1342698d8a4628
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081436"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176110"
 ---
 # <a name="msbuild-targets"></a>Cíle nástroje MSBuild
 Cíle seskupují úkoly v určitém pořadí a povolit procesu sestavení, abychom promítnout do menších jednotek. Například jeden cíl může odstranit všechny soubory ve výstupním adresáři připravit pro sestavení, zatímco jiné zkompiluje vstupy pro projekt a umístí je do prázdného adresáře. Další informace o úlohách najdete v části [úlohy](../msbuild/msbuild-tasks.md).  
   
-## <a name="declaring-targets-in-the-project-file"></a>Deklarace cílů v souboru projektu  
+## <a name="declare-targets-in-the-project-file"></a>Deklarovat cíle v souboru projektu  
  Cíle jsou deklarovány v souboru projektu se [cílové](../msbuild/target-element-msbuild.md) elementu. Například následující XML kód vytvoří cíl s názvem konstrukce, která potom volá CSC – úloha s typem položky kompilace.  
   
 ```xml  

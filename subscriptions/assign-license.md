@@ -9,12 +9,12 @@ description: Zjistěte, jak správci mohou přiřadit licence pro předplatitele
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e43e9050e2b021025ed4ae104f4345bce6e8eee3
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131928"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178397"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Přiřazení licencí na portálu správce předplatných sady Visual Studio
 
@@ -24,7 +24,7 @@ Pro skupiny uživatelů, můžete přiřadit předplatných k nim jednu v čase,
 
 ## <a name="individual-assignments"></a>Jednotlivé přiřazení
 
-Tady je postup, chcete-li přiřadit licenci předplatných sady Visual Studio k novému uživateli, takže bude mít přístup k výhodám předplatného.
+Tady je postup, chcete-li přiřadit licenci předplatného sady Visual Studio s novým uživatelem, takže bude mít přístup k výhodám předplatného.
 
 1. Přihlaste se k [portálu správce](https://manage.visualstudio.com).
 

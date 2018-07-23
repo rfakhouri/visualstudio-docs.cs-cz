@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cec8887ddf2023a8abd08f409b93f47efdc7001
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: fd3f565d8bb58ae290b0b569bb61d4cb57e8edaa
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155565"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179772"
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Postupy: reakce na ladicí program za běhu
 
@@ -50,4 +50,4 @@ Můžete provést kroky, aby se zabránilo Just-in-Time ladicí program dialogov
     Ve Správci služby IIS klikněte pravým tlačítkem na uzel serveru a zvolte **přepnout na zobrazení funkcí**. V části, ASP.NET, zvolte **kompilace .NET** a zkontrolujte, že zvolíte **False** jako chování ladění (postup se liší ve starších verzích služby IIS).
 
 ## <a name="see-also"></a>Viz také
- [Základy ladicího programu](../debugger/debugger-basics.md)
+ [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)

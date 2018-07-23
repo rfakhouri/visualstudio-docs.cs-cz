@@ -14,70 +14,70 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c323fd5f5f54bbc5c53934505c43dd20a9d58591
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 894328fed089ea631af41f7aa7ef1f08d6dc4d8f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950488"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179499"
 ---
 # <a name="publish-page-project-designer"></a>Publikovat stránku, návrhář projektu
-**Publikovat** stránky **Návrhář projektu** slouží ke konfiguraci vlastností pro ClickOnce – nasazení.
+**Publikovat** stránku **Návrháře projektu** slouží ke konfiguraci vlastností pro nasazení ClickOnce.
 
- Pro přístup k **publikovat** vyberte uzel projektu v **Průzkumníku řešení**a pak klikněte na **projektu** nabídky, klikněte na tlačítko **vlastnosti**. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **publikovat** kartě.
+ Pro přístup **publikovat** stránky, vyberte uzel projektu v **Průzkumníku řešení**a pak klikněte na **projektu** nabídky, klikněte na tlačítko **vlastnosti**. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **publikovat** kartu.
 
 > [!NOTE]
-> Některé vlastnosti ClickOnce popsané v tomto poli může být nastavena v **PublishWizard**, k dispozici **sestavení** nabídky nebo kliknutím **PublishWizard** na toto tlačítko stránka.
+> Některé vlastnosti ClickOnce je zde popsáno, můžete také nastavit v **PublishWizard**, která je dostupná z **sestavení** nabídek nebo kliknutím **PublishWizard** na toto tlačítko stránka.
 
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
- **Publikování umístění složky**
+ **Umístění složky pro publikování**
 
- Určuje umístění, kde je aplikace publikována. Může být cesta jednotky (`C:\deploy\myapplication`), sdílené složky (`\\server\myapplication`), nebo FTP server (`ftp://ftp.microsoft.com/myapplication`). Všimněte si, že text musí být součástí **umístění pro publikování** pole v pořadí pro Procházet (**...** ) tlačítko pracovat.
+ Určuje umístění, kde je aplikace publikována. Může být cesta jednotky (`C:\deploy\myapplication`), sdílené složky (`\\server\myapplication`), nebo FTP server (`ftp://ftp.microsoft.com/myapplication`). Všimněte si, že text musí být součástí **umístění pro publikování** pole mohl procházet (**...** ) tlačítko pro práci.
 
- **Adresy URL instalace složky**
+ **Adresa URL složky instalace**
 
- Volitelné. Určuje webu, ke kterému uživatelé instalovat aplikace. To je nezbytné, pouze pokud se liší od **umístění pro publikování**, například když je aplikace publikována na pracovní server.
+ Volitelné. Určuje web, ke kterému uživatelé přejít k instalaci aplikace. To je nezbytné, jenom když se liší od **umístění pro publikování**, například při publikování aplikace na testovacím serveru.
 
  **Režim instalace a nastavení**
 
- Určuje, zda je aplikace spuštěna přímo z **umístění pro publikování** (při **aplikace je k dispozici pouze online** je vybraná) nebo je nainstalována a přidat do **spustit**  nabídky a **přidat nebo odebrat programy** položky v **ovládací panely** (když **aplikace je k dispozici také offline** je vybraný).
+ Určuje, zda je aplikace spuštěna přímo z **umístění pro publikování** (když **aplikace je dostupná pouze online** je vybraná) nebo je nainstalován a přidán do **Start**  nabídky a **přidat nebo odebrat programy** položky v **ovládací panely** (když **aplikace je k dispozici také v režimu offline** je vybrána).
 
- Pro WPF aplikace webového prohlížeče **aplikace je k dispozici také offline** možnost je zakázána, protože takové aplikace jsou k dispozici pouze online.
+ Pro aplikace pro WPF webového prohlížeče **aplikace je k dispozici také v režimu offline** možnost je zakázána, protože tyto aplikace jsou k dispozici pouze online.
 
  **Soubory aplikace**
 
  Otevře dialogové okno souborů aplikace, které slouží k určení, jak a kde jsou nainstalovány jednotlivé soubory.
 
- **Požadavky**
+ **Požadované součásti**
 
- Otevře dialogové okno požadavky, které slouží k určení požadovaných součástí, jako je rozhraní .NET Framework, společně s aplikace nainstalována.
+ Otevře se dialogové okno požadavky, které slouží k určení požadovaných součástí, jako je například rozhraní .NET Framework nainstalovat spolu s aplikací.
 
  **Aktualizace**
 
- Otevře dialogové okno aktualizace aplikace, které slouží k určení chování aktualizací pro danou aplikaci. Nejsou k dispozici při **aplikace je k dispozici pouze online** je vybrána.
+ Otevře dialogové okno aktualizace aplikace, které slouží k určení chování aktualizací pro aplikaci. Nejsou k dispozici při **aplikace je dostupná pouze online** zaškrtnuto.
 
  **Možnosti**
 
- Otevře dialogové okno Možnosti publikování, který slouží k určení dalších upřesňujících možností publikování.
+ Otevře dialogové okno Možnosti publikování, který se používá k určení dalších rozšířené možnosti publikování.
 
  **Verze publikování**
 
- Nastaví číslo verze publikování pro aplikaci. Při změně číslo verze aplikace publikována jako aktualizace. Jednotlivých součástí verzi publikování (**hlavní**, **menší**, **sestavení**, **revize**) může mít maximální hodnota je 65355 (<xref:System.UInt16.MaxValue>), maximální povolenou <xref:System.Version>.
+ Nastaví číslo verze publikování pro aplikaci. Při změně číslo verze aplikace publikována jako aktualizace. Každá část verzi publikování (**hlavní**, **menší**, **sestavení**, **revize**) může mít maximální hodnotu 65355 (<xref:System.UInt16.MaxValue>), maximální povolenou <xref:System.Version>.
 
- Při instalaci více než jedna verze aplikace s použitím technologie ClickOnce, instalaci starší verze aplikace přesune do složky s názvem Archiv v umístění pro publikování, který určíte. Archivace dřívější verze tímto způsobem udržuje instalační adresář vymazat složek ze starší verze.
+ Při instalaci více než jednu verzi aplikace s použitím technologie ClickOnce, instalace přesune starší verze této aplikace do složky s názvem Archiv v umístění pro publikování, který zadáte. Archivace dřívějších verzí tímto způsobem udržuje instalační adresář čistý od složek starší verze.
 
- **Zvýšit automaticky revizi při každém publikování**
+ **Automaticky zvyšovat číslo při každém publikování**
 
- Volitelné. Pokud je vybraná tato možnost (výchozí), **revize** součástí číslo verze publikování se zvýší o jeden pokaždé, když je aplikace publikována. To způsobí, že aplikace má být publikován jako aktualizace.
+ Volitelné. Když je vybraná tato možnost (výchozí), **revize** část čísla verze publikování se zvýší o jedna pokaždé, když je aplikace publikována. To způsobí, že aplikace má být publikován jako aktualizace.
 
  **Průvodce publikováním**
 
- Otevře Průvodce publikováním. Probíhá dokončování Průvodce Publikovat má stejný účinek jako spuštěná **publikovat** příkaz na **sestavení** nabídky.
+ Otevře Průvodce publikováním. Dokončuje se Průvodce publikováním má stejný účinek jako spuštění **publikovat** příkaz **sestavení** nabídky.
 
- **Nyní publikování**
+ **Publikovat**
 
- Publikuje aplikace pomocí aktuální nastavení. Ekvivalentní **Dokončit** v tlačítko **PublishWizard**.
+ Publikuje aplikace s použitím aktuální nastavení. Ekvivalentní **Dokončit** tlačítko **PublishWizard**.
 
 ## <a name="see-also"></a>Viz také
 
