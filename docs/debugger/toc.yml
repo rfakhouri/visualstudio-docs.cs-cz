@@ -236,6 +236,8 @@
           href: remote-debugger-port-assignments.md
         - name: Konfigurace brány firewall ve Windows pro vzdálené ladění
           href: configure-the-windows-firewall-for-remote-debugging.md
+        - name: Odblokování stahování na Windows Serveru
+          href: remote-debugging-unblock-file-download.md
         - name: Chyby při vzdáleném ladění a jejich řešení
           href: remote-debugging-errors-and-troubleshooting.md
           items:

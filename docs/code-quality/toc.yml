@@ -1,6 +1,7 @@
 - name: Dokumentace k analýze kódu
   href: index.md
 - name: Přehled
+  expanded: true
   items:
     - name: Analýza kódu pro spravovaný kód
       href: code-analysis-for-managed-code-overview.md
@@ -80,6 +81,8 @@
     - name: Sady pravidel
       href: using-rule-sets-to-group-code-analysis-rules.md
       items:
+        - name: Sady pravidel pro balíčky analyzátoru
+          href: analyzer-rule-sets.md
         - name: Sady pravidel pro spravovaný kód
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
@@ -89,7 +92,7 @@
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
         - name: Vytvoření vlastní sady pravidel
           href: how-to-create-a-custom-rule-set.md
-        - name: Použití Editoru sad pravidel
+        - name: Použití editoru sad pravidel
           href: working-in-the-code-analysis-rule-set-editor.md
     - name: Zásady operace vrácení se změnami
       href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
@@ -126,7 +129,7 @@
         - name: Sada pravidel Pravidla globalizace pro spravovaný kód
           href: globalization-rules-rule-set-for-managed-code.md
         - name: Sada pravidel Spravovaná minimální pravidla pro spravovaný kód
-          href: managed-minimun-rules-rule-set-for-managed-code.md
+          href: managed-minimum-rules-rule-set-for-managed-code.md
         - name: Sada pravidel Spravovaná doporučená pravidla pro spravovaný kód
           href: managed-recommended-rules-rule-set-for-managed-code.md
         - name: Sada pravidel Smíšená minimální pravidla
