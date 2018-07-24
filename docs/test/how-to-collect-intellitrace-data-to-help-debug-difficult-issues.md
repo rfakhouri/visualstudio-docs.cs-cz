@@ -13,21 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e30bbcdfe2a309534a17a51ac3669c848b9a27de
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 42bc0ed6cea6025ad59c13566504daed7222ac2b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179759"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203849"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Postupy: Shromáždění dat technologie IntelliTrace pro snazší ladění složitých problémů
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Postupy: shromažďování dat IntelliTrace pro ladění složitých problémů
 
 Můžete nakonfigurovat adaptér diagnostických dat pro technologii IntelliTrace lze shromažďovat informace o specifickém diagnostickém trasování v Visual Stdio. Testy mohou tento adaptér používat. Test může shromažďovat podstatné diagnostické události aplikace, které může vývojář později použít pro trasování skrze kód a nalezení příčiny chyby. Adaptér diagnostiky dat pro technologii IntelliTrace lze použít pro manuální, nebo automatizované testy.
 
 > [!NOTE]
 > Technologie IntelliTrace pracuje pouze v aplikaci, která je napsána ve spravovaném kódu. Pokud testujete webovou aplikaci, která jako klienta používá prohlížeč, neměli byste povolit IntelliTrace pro klienta v nastavení testu protože není k dispozici pro trasovacího žádný spravovaný kód. V takovém případě můžete nastavit prostředí a shromažďovat IntelliTrace data vzdáleně na webovém serveru.
 
-Data IntelliTrace jsou uložena v souboru, který má příponu .iTrace. Při spuštění testu a testovací krok nezdaří, můžete vytvořit chybu. Soubor IntelliTrace, který obsahuje diagnostické informace, je automaticky připojen k této chybě.
+IntelliTrace data jsou uložena v souboru, který má příponu *.iTrace*. Při spuštění testu a testovací krok nezdaří, můžete vytvořit chybu. Soubor IntelliTrace, který obsahuje diagnostické informace, je automaticky připojen k této chybě.
 
 > [!NOTE]
 > Adaptér diagnostiky dat pro technologii IntelliTrace nevytvoří soubor IntelliTrace, pokud test proběhne úspěšně. Soubor se uloží pouze při selhání testovacího případu nebo při odeslání hlášení o chybě.
@@ -73,7 +73,7 @@ Před provedením kroků v tomto postupu je nutné otevřít nastavení testu po
 
 5.  Zvolte **Obecné** kartu. Vyberte **pouze události IntelliTrace** Chcete-li zaznamenávat podstatné diagnostické události, které mají minimální dopad na výkon při testování.
 
-     **-** nebo –
+     -nebo-
 
      Vyberte **události IntelliTrace a informací o volání** pro záznam diagnostických událostí a metoda úroveň trasování, které ukazuje informace o volání. Tato úroveň trasování může mít vliv na výkon při spuštění testů.
 

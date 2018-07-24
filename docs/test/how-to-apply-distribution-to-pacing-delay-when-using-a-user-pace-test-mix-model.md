@@ -1,5 +1,5 @@
 ---
-title: Použití rozdělení pro zpoždění interval pro zátěžové testování
+title: Použít rozdělení na zpoždění stimulace pro zátěžové testování
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,49 +10,49 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 268578638524ab4f5e5db605c3d394d28414547a
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 20fa17054c3334566114c5baf9bc98a71025c225
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448516"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204073"
 ---
-# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Postupy: použití rozdělení pro interval zpoždění pro model kombinace testů se stimulací podle uživatele
+# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Postupy: použít rozdělení na zpoždění pro kroku model kombinace testů uživatele stimulace
 
-Jakmile vytvoříte zátěžový test pomocí **načíst testování Průvodce novým**, editoru načíst testování můžete změnit vlastnosti tento scénář pro splnění vašich potřeb testování a cíle.
+Po vytvoření zátěžového testu s použitím **nového Průvodce zátěžovým testem**, chcete-li změnit vlastnosti ve scénáři podle potřebám a cílům testování můžete použít Editor zátěžového testu.
 
-**Použít distribuční interval zpoždění** je nastavena pomocí **vlastnosti** okno. Vlastnosti scénáře zátěžového testu jsou upravit pomocí editoru zátěžových testů.
+**Použít rozdělení na zpoždění stimulace** je nastavena pomocí **vlastnosti** okna. Vlastnosti scénáře zátěžového testu se upravit pomocí editoru zátěžových testů.
 
 > [!NOTE]
-> **Použít distribuční interval zpoždění** vlastnost platí jenom v případě *načíst poměru testů* je nakonfigurován na základě stimulací podle uživatele. Další informace najdete v tématu [úpravy modelů kombinací určení pravděpodobnosti virtuální uživatele spuštění testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+> **Použít rozdělení na zpoždění stimulace** vlastnost se projeví pouze v případě *načíst poměru testů* je nakonfigurovaný založený na kroku uživatele. Další informace najdete v tématu [úpravy modelů kombinací testů a určení pravděpodobnosti, že virtuální uživatel spustí test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-Hodnota **použít distribuční interval zpoždění** lze nastavit na true nebo false:
+Hodnota **použít rozdělení na zpoždění stimulace** lze nastavit na hodnotu true nebo false:
 
-- **Hodnota TRUE,**: Tento scénář platí normálního rozdělení. statistické zpoždění, které jsou určené hodnotě v **testy na uživatele za hodinu** sloupec v dialogovém okně Upravit poměru testů. Další informace najdete v tématu [úpravy modelů kombinací určení pravděpodobnosti virtuální uživatele spuštění testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **True**: Tento scénář platí normální statistické rozložení zpoždění, která jsou určena podle hodnoty v **testů na uživatele za hodinu** sloupec **upravit kombinaci testů** dialogové okno. Další informace najdete v tématu [úpravy modelů kombinací testů a určení pravděpodobnosti, že virtuální uživatel spustí test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Předpokládejme například, že máte **testy na uživatele za hodinu** hodnotu v dialogovém okně Upravit kombinace testů pro test nastavit dva uživatelům za hodinu. Pokud **použít distribuční interval zpoždění** je nastavena na **True**, normální statistické distribuční se použije na dobu čekání mezi testy. Testy budou přesto spuštěny dva testy za hodinu, ale nemusí být nutně 30 minut zpoždění mezi nimi. První test by mohl spustit až čtyři minut a druhý test po 45 minut.
+     Předpokládejme například, že máte **testů na uživatele za hodinu** hodnotu **upravit kombinaci testů** dialogové okno pro test nastavena na dva uživatele za hodinu. Pokud **použít rozdělení na zpoždění stimulace** je nastavena na **True**, normální statistické rozdělení se použije na čekací dobu mezi testy. Testy budou stále spuštěny dva testy za hodinu, ale nemusí být nutně 30 minut, než mezi nimi. První test spustit až čtyři minuty a druhý test za 45 minut.
 
-- **False**: testu tempem, který jste zadali pro hodnotu v **testy na uživatele za hodinu** sloupec v **úpravy poměru testů** dialogové okno. Další informace najdete v tématu [úpravy modelů kombinací určení pravděpodobnosti virtuální uživatele spuštění testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **False**: testy spuštěny tempem, které jste zadali pro hodnotu v **testů na uživatele za hodinu** sloupec **upravit kombinaci testů** dialogové okno. Další informace najdete v tématu [úpravy modelů kombinací testů a určení pravděpodobnosti, že virtuální uživatel spustí test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Předpokládejme například, že máte **testy na uživatele za hodinu** hodnotu **úpravy kombinace testů** nastavte dialogové okno pro test na dva uživatele za hodinu. Pokud **použít distribuční interval zpoždění** je nastavena na **False**, udělujete žádné volně mohou při spuštění testů. Test se spouští každých 30 minut. Tím je zajištěno, že můžete spustit dva testy za hodinu.
+     Předpokládejme například, že máte **testů na uživatele za hodinu** hodnotu **upravit kombinaci testů** dialogové okno pro test nastavena na dva uživatele za hodinu. Pokud **použít rozdělení na zpoždění stimulace** je nastavena na **False**, udělujete žádné volnost při spuštění testů. Test se spouští každých 30 minut. Tím zajistíte, že provést dva testy za hodinu.
 
-## <a name="to-specify-the-apply-distribution-to-pacing-delay-property-setting-for-a-scenario"></a>Určení distribučních použít k nastavení vlastnosti interval zpoždění pro scénáře
+## <a name="to-specify-the-apply-distribution-to-pacing-delay-property-setting-for-a-scenario"></a>Chcete-li určit použít rozdělení na zpoždění stimulace vlastnosti pro scénář
 
 1. Otevřete zátěžový test.
 
    **Editoru zátěžových testů** se zobrazí. Zobrazí se strom zátěžového testu.
 
-2. V **scénáře** složky stromu testu zatížení vyberte scénář uzlu, kterou chcete použít intervalu distribuce do.
+2. V **scénáře** složky strom zátěžového testu, vyberte uzel scénář, který chcete použít nemusely rozdělení na.
 
-3. Na **zobrazení** nabídce vyberte možnost **vlastnosti – okno**.
+3. Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
 
-   Kategorií a vlastností tohoto scénáře se zobrazují v **vlastnosti** okno.
+   Kategorie a vlastnosti scénáře jsou zobrazeny v **vlastnosti** okna.
 
-4. V hodnotě vlastnosti pro **použít distribuční interval zpoždění**, vyberte buď **True** nebo **False**.
+4. V hodnotě vlastnosti pro **použít rozdělení na zpoždění stimulace**, vyberte buď **True** nebo **False**.
 
-5. Vyberte **soubor** > **Uložit**. Teď můžete spustit zátěžový test pomocí nového **použít distribuční interval zpoždění** hodnotu.
+5. Vyberte **souboru** > **Uložit**. Teď můžete spustit zátěžový test pomocí nového **použít rozdělení na zpoždění stimulace** hodnotu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Úpravy scénářů zátěžových testů](../test/edit-load-test-scenarios.md)
 - [Návod: Vytvoření a spuštění zátěžového testu](../test/walkthrough-create-and-run-a-load-test.md)

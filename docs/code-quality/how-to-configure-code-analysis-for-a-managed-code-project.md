@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79791a56bdf1ea17e0dcf13cbfb0bdc866d67b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 72d9986a01482972154e228923073782a77a93d5
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179557"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204229"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Postupy: Konfigurace Analýzy kódu pro spravovaný projekt kódu
 
-V sadě Visual Studio, můžete ze seznamu analýzy kódu *sad pravidel* má použít pro spravovaný projekt kódu. Výchozí sada pravidel je *Microsoft Minimální doporučená pravidla*. Můžete použít jiné pravidlo nastavit do projektu nebo do všech projektů v řešení.
+V sadě Visual Studio, můžete zvolit ze seznamu analýzy kódu [sad pravidel](../code-quality/rule-set-reference.md)) chcete použít pro spravovaný projekt kódu. Ve výchozím nastavení **Microsoft Minimální doporučená pravidla** je vybraná sada pravidel, můžete ale použít jinou sadu v případě potřeby pravidel. Sady pravidel lze použít na jeden nebo více projektů v řešení.
 
 > [!TIP]
 > Informace o tom, jak nakonfigurovat sadu pravidel pro webové aplikace ASP.NET najdete v tématu [postupy: Konfigurace analýzy kódu pro technologie ASP.NET webové aplikace](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
@@ -76,4 +76,5 @@ Ve výchozím nastavení, jsou přiřazeny všechny spravované projekty z řeš
 
 ## <a name="see-also"></a>Viz také:
 
+- [Referenční dokumentace sady pravidel nástroje Analýza kódu](../code-quality/rule-set-reference.md)
 - [Postupy: Konfigurace analýzy kódu pro ASP.NET web Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

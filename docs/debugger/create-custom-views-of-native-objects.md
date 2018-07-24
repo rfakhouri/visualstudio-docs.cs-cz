@@ -2,7 +2,7 @@
 title: Vytváření vlastních pohledů nativních objektů
 description: Pomocí rozhraní Natvis přizpůsobit tak, že Visual Studio zobrazuje nativní typy v ladicím programu
 ms.custom: ''
-ms.date: 06/27/2017
+ms.date: 067/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49cb94e11f4ce5c472ef4fa445037cfcd2861fd4
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: b03e7809cb0958760e1a4fcc7b4bb5b4260a7429
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433571"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204242"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Vytváření vlastních zobrazení nativních objektů v ladicím programu sady Visual Studio
 Rozhraní Visual Studio Natvis umožňuje přizpůsobit způsob, jakým Visual Studio zobrazuje nativní typy v oknech proměnných ladicího programu (například **Watch** okně **lokální** okna a v  **DataTips**.
@@ -631,7 +631,7 @@ Podporují se následující vnitřní funkce:
 </Type>  
 ```  
   
- Vidíte příklad UIVisualizer v rozšíření Image Watch použít k zobrazení rastrové obrázky v paměti: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
+ Vidíte příklad UIVisualizer v rozšíření Image Watch použít k zobrazení rastrové obrázky v paměti: [ImageWatch](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017)  
   
 ### <a name="customvisualizer-element"></a>CustomVisualizer – element  
  `CustomVisualizer` je bod rozšíření, která určuje příponu VSIX, který píšete pro řízení vizualizaci v kódu, který běží v sadě Visual Studio. Další informace o psaní rozšíření VSIX, naleznete v tématu [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Zápis vlastního vizualizéru je mnohem více práce než psaní definice natvis XML, ale můžete libovolně z omezení, o jaké natvis podporuje nebo nepodporuje. Vlastní vizualizátory mají přístup k úplné sadě rozšiřitelností ladicího programu rozhraní API, která slouží k dotazování a upravit laděném procesu nebo komunikaci s jinými částmi sady Visual Studio.  

@@ -1,5 +1,5 @@
 ---
-title: Úlohy nástroje MSBuild vložené s RoslynCodeTaskFactory | Microsoft Docs
+title: Úlohy MSBuild Inline se RoslynCodeTaskFactory | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 09/21/2017
 ms.technology: msbuild
@@ -12,20 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b12d0ae775d37a436898bb34acca0c7f4a50e649
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 841a7d7bbf10fc4bba5ed99d7ffacf1b76f3a079
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059335"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204177"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Vložené úlohy nástroje MSBuild s RoslynCodeTaskFactory
-Podobně jako [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory používá ke generování sestavení úloh v paměti pro použití jako vložené úlohy kompilátory Roslyn napříč platformami.  Úlohy RolynCodeTaskFactory zacílit .NET Standard a může pracovat na rozhraní .NET Framework a .NET Core moduly runtime a také jiné platformy jako Linux a Mac OS.
+Podobně jako [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory používá kompilátory Roslyn napříč platformami ke generování sestavení úloh v paměti pro použití jako vložené úlohy.  Úlohy RoslynCodeTaskFactory cílit na .NET Standard a může pracovat na moduly runtime rozhraní .NET Framework a .NET Core, jakož i jiné platformy, jako je Linux a Mac OS.
 
-**Poznámka:** `RolynCodeTaskFactory` je k dispozici v MSBuild 15.8 a výše pouze.
+>[!NOTE]
+>RoslynCodeTaskFactory pouze je dostupná v MSBuild 15.8 a vyšší.
   
-## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Struktura vložené úlohy s RoslynCodeTaskFactory
- Vložené úlohy RoslynCodeTaskFactory jsou deklarovány stejným způsobem jako [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md). Jediným rozdílem je, že cílí .NET Standard.  Vložené úlohy a `UsingTask` element, který jej obsahuje obvykle součástí souboru .targets a naimportovat do jiných souborů projektu podle potřeby. Zde je základní vložené úlohy. Všimněte si, že ho neprovede žádnou akci.  
+## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Struktura s RoslynCodeTaskFactory vložené úlohy
+ Vložené úlohy RoslynCodeTaskFactory jsou deklarovány stejným způsobem jako [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), jediným rozdílem je, že cílí na .NET Standard.  Vložené úlohy a `UsingTask` element, který jej obsahuje, jsou typicky zahrnuty v *.targets* souboru a importovat do jiných souborů projektu podle potřeby. Tady je základní vložené úlohy. Všimněte si, že to nemá žádný účinek.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -45,51 +46,51 @@ Podobně jako [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeT
 </Project>  
 ```  
   
- `UsingTask` Element v příkladu má tři atributy, které popisují úlohy a úkolů vložený objekt factory, který zkompiluje ho.  
+ `UsingTask` Element v tomto příkladu má tři atributy, které popisují úlohy a vložené továrny úloh, který zkompiluje ho.  
   
--   `TaskName` Názvy atributů, úlohy, v takovém případě `DoNothing`.  
+-   `TaskName` Úkolu, názvy atributů v tomto případě `DoNothing`.  
   
--   `TaskFactory` Třídu, která implementuje objektu pro vytváření úloh vložené názvy atributů.  
+-   `TaskFactory` Názvy atributů třídy, která implementuje vložený objekt pro vytváření úloh.  
   
--   `AssemblyFile` Atribut poskytuje umístění objektu pro vytváření úloh vložené. Alternativně můžete použít `AssemblyName` atribut zadat plně kvalifikovaný název vloženého třídu objektů factory úloh, která se obvykle nachází v globální mezipaměti sestavení (GAC).  
+-   `AssemblyFile` Atribut poskytuje umístění továrny úloh vložené. Alternativně můžete použít `AssemblyName` atribut zadat plně kvalifikovaný název třídu objektů factory vložené úlohy, která se obvykle nachází v globální mezipaměti sestavení (GAC).  
+
+Zbývající prvky `DoNothing` úloh jsou prázdné a jsou k dispozici pro ilustraci pořadí a struktura vložené úlohy. Robustnější příkladu je uvedené dále v tomto tématu.  
   
- Zbývající prvků `DoNothing` úloh jsou prázdné a je určen k objasnění pořadí a struktura vložené úlohy. Robustnější příkladu je uvedené dále v tomto tématu.  
+-   `ParameterGroup` Element je volitelné. -Li zadána, deklaruje parametry pro úlohu. Další informace o vstupních a výstupních parametrech najdete v části [vstupní a výstupní parametry](#input-and-output-parameters) dále v tomto tématu.  
   
--   `ParameterGroup` Prvek je volitelný. -Li zadána, deklaruje parametry úlohy. Další informace o vstupní a výstupní parametry najdete v části "Vstupní a výstupní parametry" dál v tomto tématu.  
+-   `Task` Prvek popisuje a obsahuje zdrojový kód úkolu.  
   
--   `Task` Element popisuje a obsahuje zdrojový kód úloh.  
+-   `Reference` Prvek určuje odkazy na sestavení .NET, které používáte ve vašem kódu. Jde o ekvivalent k přidání odkazu na projekt v sadě Visual Studio. `Include` Atribut určuje cestu k odkazovanému sestavení.  
   
--   `Reference` Element určuje odkazy na sestavení .NET, které používáte ve svém kódu. Jde o ekvivalent přidat odkaz na projekt v sadě Visual Studio. `Include` Atribut určuje cestu odkazované sestavení.  
-  
--   `Using` Element uvádí obory názvů, které chcete získat přístup. To se podobá `Using` příkaz v jazyce Visual C#. `Namespace` Atribut určuje obor názvů, které chcete zahrnout.  
-  
- `Reference` a `Using` prvky jsou jazykově nezávislého. Vložené úlohy může být napsán v některém z podporovaných jazyků .NET CodeDom, například jazyka Visual Basic nebo Visual C#.  
+-   `Using` Prvek obsahuje seznam obory názvů, které chcete získat přístup. To se podobá `Using` příkaz v jazyce Visual C#. `Namespace` Atribut určuje obor názvů, které chcete zahrnout.  
+
+`Reference` a `Using` prvky jsou jazykově nezávislé. Vložené úlohy je možné psát v jedné z podporovaných jazyků .NET CodeDom, například Visual Basic nebo Visual C#.  
   
 > [!NOTE]
->  Elementů obsažených `Task` element jsou specifické pro úlohy vytváření, v takovém případě objektu pro vytváření úloh kódu.  
+>  Elementů obsažených `Task` element jsou specifické pro továrny úloh, v tomto případě továrny úloh kódu.  
   
-### <a name="code-element"></a>Element Code  
- Poslední podřízený element se objeví v rámci `Task` elementu je `Code` elementu. `Code` Obsahuje element, nebo vyhledá kód, který chcete být zkompilovány do úlohy. Umístit do `Code` element závisí na tom, jak chcete zapsat úlohu.  
+### <a name="code-element"></a>Element kódu  
+Poslední podřízený element má zobrazit `Task` prvek je `Code` elementu. `Code` Obsahuje element, nebo vyhledá kód, který má být zkompilovány do úlohy. Umístit do `Code` element závisí na způsob zápisu úkolu.  
+
+`Language` Atribut určuje jazyk, ve kterém je napsán kód. Přípustné hodnoty jsou `cs` pro jazyk C#, `vb` v jazyce Visual Basic.  
+
+`Type` Atribut určuje typ kódu, který se nachází v `Code` elementu.  
   
- `Language` Atribut určuje jazyk, ve kterém je zadán kód. Přípustné hodnoty jsou `cs` pro jazyk C#, `vb` jazyka Visual Basic.  
-  
- `Type` Atribut určuje typ kód, který se nachází v `Code` elementu.  
-  
--   Pokud hodnota `Type` je `Class`, pak se `Code` element obsahuje kód pro třídu, která pochází z <xref:Microsoft.Build.Framework.ITask> rozhraní.  
+-   Pokud hodnota `Type` je `Class`, pak bude `Code` prvek obsahuje kód, který je odvozen od třídy <xref:Microsoft.Build.Framework.ITask> rozhraní.  
   
 -   Pokud hodnota `Type` je `Method`, kód definuje přepsání `Execute` metodu <xref:Microsoft.Build.Framework.ITask> rozhraní.  
   
--   Pokud hodnota `Type` je `Fragment`, kód definuje obsah `Execute` metoda, ale není podpis nebo `return` příkaz.  
-  
- Samotný kód se obvykle zobrazují mezi `<![CDATA[` značky a `]]>` značky. Protože kód je v oddílu CDATA, nemusíte starat o uvozovací znaky vyhrazené znaky, například "\<" nebo ">".  
-  
- Alternativně můžete použít `Source` atribut `Code` element k určení umístění souboru, který obsahuje kód pro úlohu. Kód zdrojového souboru musí být typu, která je zadána `Type` atribut. Pokud `Source` atribut je k dispozici, výchozí hodnota `Type` je `Class`. Pokud `Source` nejsou k dispozici, výchozí hodnota je `Fragment`.  
-  
+-   Pokud hodnota `Type` je `Fragment`, kód definuje obsah `Execute` metody, ale ne podpis nebo `return` příkazu.  
+
+Samotný kód se obvykle zobrazuje mezi `<![CDATA[` značky a `]]>` značky. Protože kód je v oddílu CDATA, si nemusíte dělat starosti o uvozovací znaky vyhrazené znaky, například "\<" nebo ">".  
+
+Alternativně můžete použít `Source` atribut `Code` element k určení umístění souboru, který obsahuje kód pro vaše úlohy. Kód ve zdrojovém souboru musí být typu, který je určen `Type` atribut. Pokud `Source` atribut je k dispozici, výchozí hodnota `Type` je `Class`. Pokud `Source` není k dispozici, výchozí hodnota je `Fragment`.  
+
 > [!NOTE]
->  Při definování třída úlohy ve zdrojovém souboru, název třídy, musíte souhlasit s `TaskName` atribut odpovídající [usingtask –](../msbuild/usingtask-element-msbuild.md) elementu.  
+>  Při definování třídy úloh ve zdrojovém souboru, název třídy, musíte souhlasit s `TaskName` atribut k odpovídající položce [UsingTask](../msbuild/usingtask-element-msbuild.md) elementu.  
   
 ## <a name="hello-world"></a>Hello World  
- Zde je robustnější vložené úlohy s RoslynCodeTaskFactory. Zobrazí úlohu HelloWorld "Hello, world!" v zařízení výchozí protokolování chyb, který je obvykle systémové konzoly nebo sady Visual Studio **výstup** okno. `Reference` Element v příkladu je zahrnutý jenom pro obrázek.  
+ Tady je robustnější vložené úlohy s RoslynCodeTaskFactory. Úloha HelloWorld zobrazí "Hello, world!" v zařízení výchozí protokolování chyb, což je obvykle systémové konzoly nebo Visual Studio **výstup** okna. `Reference` Element v tomto příkladu je zahrnuta pouze pro ilustraci.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -113,9 +114,9 @@ Log.LogError("Hello, world!");
   </UsingTask>  
 </Project>  
 ```  
-  
- Může úloha HelloWorld uložení v souboru, který je pojmenován HelloWorld.targets a pak ho následujícím způsobem vyvolat z projektu.  
-  
+
+Úloha HelloWorld může uložit v souboru s názvem *HelloWorld.targets*a pak ho následujícím způsobem vyvolat z projektu.  
+
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <Import Project="HelloWorld.targets" />  
@@ -126,24 +127,24 @@ Log.LogError("Hello, world!");
 ```  
   
 ## <a name="input-and-output-parameters"></a>Vstupní a výstupní parametry  
- Parametry úlohy vložené jsou podřízených elementů `ParameterGroup` elementu. Název elementu, který ji definuje přebírá každý parametr. Následující kód definuje parametr `Text`.  
+ Parametry úlohy vložené jsou podřízené prvky `ParameterGroup` elementu. Každý parametr přebírá název elementu, který ji definuje. Následující kód definuje parametr `Text`.  
   
 ```xml  
 <ParameterGroup>  
     <Text />  
 </ParameterGroup>  
 ```  
+
+Parametry může mít jeden nebo více z těchto atributů:  
+
+-   `Required` je volitelný atribut, který je `false` ve výchozím nastavení. Pokud `true`, pak parametr je povinný a musí zadat hodnota před voláním úkolu.  
   
- Parametry může mít jeden nebo více těchto atributů:  
+-   `ParameterType` je volitelný atribut, který je `System.String` ve výchozím nastavení. Může být nastavená na všechny plně kvalifikovaný typ, který je buď hodnotu, která lze převést do a z řetězce pomocí System.Convert.ChangeType nebo položky. (Jinými slovy, jakýkoli typ, který lze předat do a z externích úkolů.)  
   
--   `Required` je volitelný atribut, který je `false` ve výchozím nastavení. Pokud `true`, pak parametr je povinná a musí být zadána hodnota před voláním úlohu.  
-  
--   `ParameterType` je volitelný atribut, který je `System.String` ve výchozím nastavení. Může být nastaven na žádný plně kvalifikovaný typ, který je určitá položka nebo hodnotu, která může být převeden do a z řetězce pomocí System.Convert.ChangeType. (Jinými slovy, žádný typ, který se dá předat do a z externí úkolů.)  
-  
--   `Output` je volitelný atribut, který je `false` ve výchozím nastavení. Pokud `true`, pak parametr musí být zadána hodnota před návratem od Metoda Execute.  
-  
+-   `Output` je volitelný atribut, který je `false` ve výchozím nastavení. Pokud `true`, pak tento parametr se musí předávat hodnotu před návratem z metody Execute.  
+
 Například  
-  
+
 ```xml  
 <ParameterGroup>  
     <Expression Required="true" />  
@@ -151,19 +152,19 @@ Například
     <Tally ParameterType="System.Int32" Output="true" />  
 </ParameterGroup>  
 ```  
-  
+
 definuje tyto tři parametry:  
-  
+
 -   `Expression` je povinný vstupní parametr typu System.String.  
   
--   `Files` je požadovaná položka vstupní parametr seznamu.  
+-   `Files` je vstupní parametr požadovanou položku seznamu.  
   
 -   `Tally` je výstupní parametr typu System.Int32.  
-  
- Pokud `Code` má element `Type` atribut `Fragment` nebo `Method`, pak vlastnosti se vytvářejí automaticky pro všechny parametry. Vlastnosti, jinak hodnota musí být explicitně deklarován ve zdrojovém kódu úloh a musí přesně shodovat jejich definicemi parametrů.  
+
+Pokud `Code` element má `Type` atribut `Fragment` nebo `Method`, pak vlastností se automaticky vytvoří pro každý parametr. V opačném případě vlastnosti musí být explicitně deklarovány ve zdrojovém kódu úkolu a musí přesně odpovídat jejich definice parametru.  
   
 ## <a name="example"></a>Příklad  
- Následující vložené úlohy protokolů některé zprávy a vrátí řetězec.  
+ Následující vložené úlohy některé zprávy protokolu a vrátí hodnotu typu string.  
   
 ```xml  
 <Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
@@ -199,8 +200,8 @@ definuje tyto tři parametry:
 </Project>  
 ```  
 
- Tyto vložené úlohy můžete kombinovat cesty a získat název souboru.  
-  
+Tyto vložené úlohy můžete kombinovat cesty a získat název souboru.  
+
 ```xml  
 <Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
   
@@ -253,7 +254,7 @@ definuje tyto tři parametry:
     </Target>  
 </Project>  
 ```  
-  
-## <a name="see-also"></a>Viz také  
+
+## <a name="see-also"></a>Viz také:  
  [Úlohy](../msbuild/msbuild-tasks.md)   
  [Návod: Vytvoření vložené úlohy](../msbuild/walkthrough-creating-an-inline-task.md)

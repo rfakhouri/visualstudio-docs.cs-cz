@@ -18,28 +18,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e295c08568e13fade750cadcea03b61d2a7ca9d3
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: fa2751b901323adb6aa17ab553aa2f464d883ebd
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766698"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204552"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Profilování výkonu aplikace v sadě Visual Studio
 Nástroje pro profilaci v sadě Visual Studio můžete použít k analýze problémů s výkonem aplikace. V tomto postupu si ukážeme, jak používat kartu **Využití procesoru** v diagnostických nástrojích k získání dat o výkonu vaší aplikace. Diagnostické nástroje jsou podporované pro vývoj rozhraní .NET v sadě Visual Studio, včetně ASP.NET, nativního vývoje a vývoje v jazyce C++.
   
 Když se ladicí program pozastaví, shromáždí nástroj **Využití procesoru** informace o funkcích spuštěných ve vaší aplikaci. Nástroj zobrazí seznam funkcí, které pracovaly, a nabídce graf s časovou osou, který můžete použít k podrobnému řešení konkrétních úseků vzorkovací relace.
 
-Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravovat diagnostické relace. Pokud potřebná data nezískáte nástrojem **Využití procesoru**, použijte [jiné nástroje pro profilaci](../profiling/Profiling-Tools.md), které nabízejí různé druhy užitečných informací. V řadě případů může být kritickým bodem aplikace něco jiného než procesor, třeba paměť, vykreslování uživatelského rozhraní nebo dlouhá odezva síťového požadavku. Diagnostické centrum nabízí řadu dalších možností, jak data tohoto druhu zaznamenávat a analyzovat.
+Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravovat diagnostické relace. Pokud potřebná data nezískáte nástrojem **Využití procesoru**, použijte [jiné nástroje pro profilaci](../profiling/profiling-feature-tour.md), které nabízejí různé druhy užitečných informací. V řadě případů může být kritickým bodem aplikace něco jiného než procesor, třeba paměť, vykreslování uživatelského rozhraní nebo dlouhá odezva síťového požadavku. Diagnostické centrum nabízí řadu dalších možností, jak data tohoto druhu zaznamenávat a analyzovat.
 
 |         |         |
 |---------|---------|
 |  ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video")  |    [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) o používání diagnostických nástrojů, kde se naučíte analyzovat využití procesoru a paměti. |
 
-V tomto článku probereme analýza využití procesoru v normálním pracovním postupu ladění. Využití procesoru také můžete analyzovat bez připojeného ladicího programu nebo se můžete zaměřit na spuštěnou aplikaci. Další informace najdete v tématu věnovaném [shromažďování profilačních dat bez ladění](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) v článku o [spuštění nástrojů pro profilaci s ladicím programem nebo bez něj](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
-
-> [!NOTE]
-> U platforem .NET Core a ASP.NET Core nástroj Využití procesoru v současnosti neposkytuje přesné výsledky o přenosných souborech PDB. Proto raději použijte celé soubory PDB.
+V tomto článku probereme analýza využití procesoru v normální ladicí pracovní postup. Využití procesoru také můžete analyzovat bez připojeného ladicího programu nebo se můžete zaměřit na spuštěnou aplikaci. Další informace najdete v tématu věnovaném [shromažďování profilačních dat bez ladění](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) v článku o [spuštění nástrojů pro profilaci s ladicím programem nebo bez něj](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 V tomto kurzu se naučíte:
 
@@ -47,7 +44,7 @@ V tomto kurzu se naučíte:
 > * Shromažďovat data o využití procesoru
 > * Analyzovat data o využití procesoru
   
-## <a name="step-1-collect-profiling-data"></a>Krok 1: Shromáždění data profilování 
+## <a name="step-1-collect-profiling-data"></a>Krok 1: Shromáždění profilačních dat 
   
 1.  Otevřete projekt, který chcete v sadě Visual Studio ladit, a nastavte v aplikaci zarážku do bodu, kde chcete prověřit využití procesoru.
 
@@ -56,15 +53,15 @@ V tomto kurzu se naučíte:
     > [!TIP]
     > Nastavením dvou zarážek omezíte shromažďování dat jenom na analyzovanou část kódu.
   
-3.  Okno **Diagnostické nástroje** se zobrazí automaticky (pokud jste ho nevypnuli). Pokud ho chcete znovu zobrazit, klikněte na **Ladit / Okna / Zobrazit diagnostické nástroje**.
+3.  Okno **Diagnostické nástroje** se zobrazí automaticky (pokud jste ho nevypnuli). Otevřete okno znovu, klikněte na tlačítko **ladění** > **Windows** > **zobrazit diagnostické nástroje**.
 
-4.  Na panelu nástrojů v nastavení **Vybrat nástroje** můžete vybrat, jestli chcete zobrazit [Využití procesoru](../profiling/Memory-Usage.md), **Využití paměti** nebo obojí. Pokud používáte Visual Studio Enterprise, můžete také zapnout nebo vypnout nástroj IntelliTrace v nabídce **Nástroje / Možnosti / IntelliTrace**.
+4.  Na panelu nástrojů v nastavení **Vybrat nástroje** můžete vybrat, jestli chcete zobrazit [Využití procesoru](../profiling/Memory-Usage.md), **Využití paměti** nebo obojí. Pokud používáte Visual Studio Enterprise, můžete také povolit nebo zakázat nástroje IntelliTrace v **nástroje** > **možnosti** > **IntelliTrace**.
 
      ![Zobrazení diagnostických nástrojů](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
      Zaměříme se hlavně na využití procesoru. Zkontrolujte, že je zapnuté **Využití procesoru** (je zapnuté automaticky).
 
-5.  Klikněte na **Ladit / Spustit ladění** (nebo na panelu nástrojů stiskněte **Start** nebo **F5**).
+5.  Klikněte na tlačítko **ladění** > **spustit ladění** (nebo **Start** na panelu nástrojů nebo **F5**).
 
      Jakmile se aplikace načte, zobrazí se souhrnný přehled diagnostických nástrojů.
 
@@ -76,7 +73,7 @@ V tomto kurzu se naučíte:
 
 7.  Jakmile se ladicí program pozastaví, zapněte shromažďování dat o využití procesoru a pak otevřete kartu **Využití procesoru**.
 
-     ![Diagnostické nástroje s povolenou profilací procesoru](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
+     ![Diagnostické nástroje povolit profilaci procesoru](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
      Když zvolíte **Zaznamenat profil CPU**, Visual Studio začne nahrávat funkce a zjistí dobu potřebnou k jejich provedení. Shromážděná data můžete zobrazit, jen když se aplikace zastaví na zarážce.
 
@@ -98,7 +95,7 @@ V tomto kurzu se naučíte:
 
      Teď můžete začít analyzovat data.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analyzovat data o využití procesoru
+## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analýza dat o využití procesoru
 
 Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kartě Využití procesoru. Zjistěte nejaktivnější funkce a pak se na každou z nich podívejte podrobněji.
 
@@ -132,7 +129,7 @@ Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kar
 |||
 |-|-|
 |![1. krok](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Nejvyšší uzel ve stromech volání Využití procesoru je fiktivní.|  
-|![2. krok](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Ve většině aplikací, ve kterých zakážete možnost [Zobrazit externí kód](#BKMK_External_Code), je v druhé úrovni uzel **[Externí kód]**, který obsahuje systémový kód a kód architektury, který spouští a zastavuje aplikaci, vykresluje uživatelské rozhraní, řídí plánování podprocesů a na nejnižší úrovni zajišťuje pro aplikaci další služby.|  
+|![2. krok](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Ve většině aplikací, ve kterých zakážete možnost [Zobrazit externí kód](#view-external-code), je v druhé úrovni uzel **[Externí kód]**, který obsahuje systémový kód a kód architektury, který spouští a zastavuje aplikaci, vykresluje uživatelské rozhraní, řídí plánování podprocesů a na nejnižší úrovni zajišťuje pro aplikaci další služby.|  
 |![3. krok](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Uzlu druhé úrovně jsou podřízeny metody uživatelského kódu a asynchronní rutiny, které volá nebo vytváří systémový kód a kód architektury druhé úrovně.|
 |![4. krok](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Podřízené uzly metody obsahují jenom data pro volání nadřízené metody. Pokud zakážete **Zobrazit externí kód**, mohou metody aplikace obsahovat také uzel **[Externí kód]**.|
 
@@ -144,7 +141,7 @@ Další informace k hodnotám ve sloupcích:
 
 - **Moduly**: Název modulu, který funkci obsahuje, nebo počet modulů obsahujících funkce v uzlu [Externí kód].
 
-## <a name="view-external-code"></a>Zobrazení externí kódu
+## <a name="view-external-code"></a>Zobrazit externí kód
 
 Externím kódem se rozumí funkce systémových komponent a komponent architektury, které jsou spouštěné vámi napsaným kódem. Externí kód zahrnuje funkce, které spouštějí a zastavují aplikaci, vykreslují uživatelské rozhraní, řídí dělení na podprocesy a na nejnižší úrovni zajišťuje pro aplikaci další služby. Externí kód vás většinou nebude zajímat, a proto nástroj Využití procesoru shromažďuje externí funkce metody uživatele do jednoho uzlu **[Externí kód]**.
   
@@ -157,11 +154,11 @@ Myslete na to, že řetězy volání externího kódu je většinou hluboko vno�
 K nalezení hledaného uzlu použijte vyhledávací pole a pak použijte k zobrazení dat vodorovný posuvník.
 
 > [!TIP]
-> Pokud je profil externí kód, který volá funkce systému Windows, měli byste si ověřit, že máte nejnovější. *pdb* soubory. Bez těchto souborů se v zobrazeních sestav zobrazí seznam funkcí Windows, jejichž názvy jsou nesrozumitelné a obtížně pochopitelné. Další informace o tom, abyste měli jistotu, že máte soubory, které potřebujete, najdete v části [zadání symbolu (. *pdb*) a zdrojových souborů v ladicím programu](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+> Pokud profilujete externí kód, který volá funkce Windows, by měl Ujistěte se, že máte nejnovější. *pdb* soubory. Bez těchto souborů se v zobrazeních sestav zobrazí seznam funkcí Windows, jejichž názvy jsou nesrozumitelné a obtížně pochopitelné. Další informace o tom, abyste měli jistotu, že máte soubory, které potřebujete, najdete v části [zadání symbolu (.pdb) a zdrojových souborů v ladicím programu](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="next-steps"></a>Další kroky
 
-V tomto kurzu jste se naučili shromažďovat data o využití procesoru a analyzovat je. Pokud jste dokončili [prohlídku profileru](../profiling/profiling-feature-tour.md), možná vás bude zajímat, jak v aplikacích analyzovat využití paměti.
+V tomto kurzu jste se naučili shromažďovat data o využití procesoru a analyzovat je. Pokud jste již dokončili [nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md), možná budete chtít získat rychlý přehled postupu k analýze využití paměti v aplikacích.
 
 > [!div class="nextstepaction"]
-> [Analýza využití paměti](../profiling/memory-usage.md) 
+> [Využití paměti profilu v sadě Visual Studio](../profiling/memory-usage.md) 

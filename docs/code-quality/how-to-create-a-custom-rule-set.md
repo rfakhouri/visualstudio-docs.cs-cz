@@ -13,75 +13,75 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b1d9b436c3e3be4f241d18791744085be4ece9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920687"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204112"
 ---
-# <a name="custom-rule-sets"></a>Vlastních sad pravidel
+# <a name="customize-a-rule-set"></a>Přizpůsobení sady pravidel
 
-Můžete vytvořit vlastní *sadu pravidel* podle potřeb konkrétní projekt pro analýzu kódu.
+Můžete vytvořit vlastní sadu pravidel, která podle potřeb konkrétního projektu pro analýzu kódu.
 
 ## <a name="create-a-custom-rule-set"></a>Vytvoření vlastní sady pravidel
 
-Chcete-li vytvořit vlastní pravidlo nastavte, můžete otevřít předdefinované pravidlo nastavené v **s editorem sad pravidel**. Odtud můžete přidat nebo odebrat konkrétní pravidla a můžete změnit akci, která nastane při porušení pravidlo&mdash;například zobrazit upozornění nebo chybu.
+Chcete-li vytvořit vlastní pravidlo nastavte, můžete otevřít sadu předdefinovaných pravidel **s editorem sad pravidel**. Odtud můžete přidat nebo odebrat konkrétní pravidla a akce, která nastane, pokud došlo k porušení pravidla můžete změnit&mdash;například zobrazit upozornění nebo chybu.
 
-1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a pak vyberte **vlastnosti**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a pak vyberte **vlastnosti**.
 
-2. Na **vlastnosti** stránky, vyberte **analýza kódu** kartě.
+2. Na **vlastnosti** stránky, vyberte **analýzy kódu** kartu.
 
-3. V **spuštění této sady pravidel** rozevíracího seznamu, proveďte jednu z následujících akcí:
+3. V **spustit tuto sadu pravidel** rozevíracího seznamu, proveďte jednu z následujících akcí:
 
     - Vyberte sadu pravidel, který chcete přizpůsobit.
 
      \- nebo –
 
-    - Vyberte  **\<Procházet... >** k určení nastavení existující pravidlo, které se nenachází v seznamu.
+    - Vyberte  **\<Procházet... >** zadat sadu existujících pravidel, která se nenachází v seznamu.
 
-4. Vyberte **otevřete** zobrazíte pravidla v editoru sadu pravidel.
+4. Vyberte **otevřít** zobrazíte pravidla v editoru sad pravidel.
 
 Můžete také vytvořit nový soubor sady pravidel z **nový soubor** dialogové okno:
 
-1. Vyberte **soubor** > **nový** > **soubor**, nebo stiskněte klávesu **Ctrl**+**N**.
+1. Vyberte **souboru** > **nový** > **souboru**, nebo stiskněte klávesu **Ctrl**+**N**.
 
-2. V **nový soubor** dialogové okno, vyberte **Obecné** kategorie na levé straně a potom vyberte **sady pravidel analýzy kódu**.
+2. V **nový soubor** dialogové okno, vyberte **Obecné** kategorii na levé straně a pak vyberte **sady pravidel analýzy kódu**.
 
-3. Vyberte **otevřete**.
+3. Vyberte **otevřít**.
 
-   Nové *analýza* soubor se otevře v editoru sadu pravidel.
+   Nové *.ruleset* soubor se otevře v editoru sad pravidel.
 
 ### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Vytvoření vlastního pravidla nastavit z více sad pravidel
 
-1. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a potom vyberte **vlastnosti**.
+1. V Průzkumníku řešení klikněte pravým tlačítkem myši na projekt a pak vyberte **vlastnosti**.
 
-2. Na **vlastnosti** stránky, vyberte **analýza kódu** kartě.
+2. Na **vlastnosti** stránky, vyberte **analýzy kódu** kartu.
 
-3. Vyberte  **\<zvolte více pravidlo nastaví... >** z **spuštění této sady pravidel**.
+3. Vyberte  **\<zvolit sady více pravidel... >** z **spustit tuto sadu pravidel**.
 
-4. V **přidat nebo odebrat pravidlo nastaví** dialogové okno, vyberte pravidlo sad, které chcete zahrnout do vaší nové sady pravidel.
+4. V **přidat nebo odebrat sady pravidel** dialogové okno, vyberte pravidlo sad, které chcete zahrnout do nové sady pravidel.
 
-   ![Přidat nebo odebrat dialogové okno sady pravidel](media/add-remove-rule-sets.png)
+   ![Přidání nebo odebrání dialogové okno sady pravidel](media/add-remove-rule-sets.png)
 
-5. Vyberte **uložit jako**, zadejte název *analýza* souboru a potom vyberte **Uložit**.
+5. Vyberte **uložit jako**, zadejte název *.ruleset* souboru a pak vyberte **Uložit**.
 
-   Nové sady pravidel je vybraný v **spuštění této sady pravidel** seznamu.
+   Nová sada pravidel je vybrán v **spustit tuto sadu pravidel** seznamu.
 
-6. Vyberte **otevřete** otevřít nové pravidlo nastavené v editoru sadu pravidel.
+6. Vyberte **otevřete** otevřete novou sadu pravidel v editoru sad pravidel.
 
 ## <a name="name-and-description"></a>Název a popis
 
-Pokud chcete změnit zobrazovaný název sadu pravidel, která je otevřen v editoru, otevřete **vlastnosti** okno výběrem **zobrazení** > **vlastnosti – okno** v řádku nabídek. Zadejte zobrazovaný název v **název** pole. Můžete také zadat popis pro sadu pravidel.
+Chcete-li změnit zobrazovaný název sady pravidel, která je otevřená v editoru, otevřete **vlastnosti** okna tak, že vyberete **zobrazení** > **okno vlastností** na řádku nabídek. Zadejte zobrazovaný název v **název** pole. Můžete také zadat popis sady pravidel.
 
 ## <a name="next-steps"></a>Další kroky
 
-Teď, když máte sadu pravidel, dalším krokem je přidání nebo odebrání pravidla nebo úpravou závažnost porušení pravidel přizpůsobit pravidla.
+Teď, když máte sadu pravidel, dalším krokem je přizpůsobit pravidla přidávání nebo odstraňování pravidel nebo úpravou závažnost porušení pravidel.
 
 > [!div class="nextstepaction"]
-> [Změňte pravidla, v editoru sadu pravidel](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
+> [Úprava pravidel v editoru sad pravidel](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: Konfigurace Analýzy kódu pro spravovaný projekt kódu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Referenční dokumentace sady pravidel nástroje Analýza kódu](../code-quality/rule-set-reference.md)

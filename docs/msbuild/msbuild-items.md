@@ -1,5 +1,6 @@
 ---
 title: Položky nástroje MSBuild | Dokumentace Microsoftu
+description: Použijte atribut MSBuild obsahovat element ItemGroup a určete soubory, které mají být zahrnuty v sestavení
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a483d6dcaa4de7c2b9760704f4933a73d810061
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081833"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204125"
 ---
 # <a name="msbuild-items"></a>Položky nástroje MSBuild
-Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle představují soubory. Položky jsou seskupeny do typů položek podle jejich názvy elementů. Seznam položek, které lze použít jako parametry pro úkoly jsou pojmenované typy položek. Úkoly pomocí hodnoty položek k provedení kroků procesu sestavení.  
+Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle představují soubory (soubory jsou určené v `Include` atributu). Položky jsou seskupeny do typů položek podle jejich názvy elementů. Seznam položek, které lze použít jako parametry pro úkoly jsou pojmenované typy položek. Úkoly pomocí hodnoty položek k provedení kroků procesu sestavení.  
   
  Protože položky jsou pojmenovány podle typu položky, do které patří, podmínky "item" a "položky hodnotu" zaměnitelné.  
   
