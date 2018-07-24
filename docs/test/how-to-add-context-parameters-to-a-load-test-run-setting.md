@@ -11,19 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6c8dfffbcbfee71721b97d81a775cb0093d18bb0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179814"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203751"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Postupy: Přidání kontextových parametrů k parametrům spuštění zátěžového testu
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Postupy: Přidání kontextových parametrů spuštění zátěžového testu
 
 Po vytvoření zátěžového testu s použitím **nového Průvodce zátěžovým testem**, můžete použít **editoru zátěžového testu** Chcete-li změnit vlastnosti scénářů pro splnění potřebám a cílům testování.
 
 > [!NOTE]
-> Úplný seznam vlastností parametrů spuštění a jejich popis najdete v tématu [vlastností nastavení spuštění zátěžového testu](../test/load-test-run-settings-properties.md).
+> Úplný seznam vlastností parametrů spuštění a jejich popis najdete v tématu [zátěžového testu spusťte nastavení](../test/load-test-run-settings-properties.md).
 
 Můžete vytvořit kontext parametry se mají použít v rámci zátěžového testu pomocí editoru zátěžových testů parametry běhu. Parametry kontextu umožňují parametrizovat řetězec.
 
@@ -64,7 +64,7 @@ Kromě toho přiřazením různých hodnot do parametru kontextu za použití st
 
      Pokud běh nastavení už obsahuje **kontextových parametrů** složky, můžete pravým tlačítkem myši a klikněte na tlačítko **přidat kontextový parametr**.
 
-4.  V okně Vlastnosti změňte hodnotu **název** podle potřeby (například Webový_server1). V okně Vlastnosti změňte **hodnotu** pro parametr, který chcete použít (například `http://CorporateStagingWebServer`).
+4.  V **vlastnosti** okna, změňte hodnotu **název** podle potřeby (například Webový_server1). V **vlastnosti** okno Změnit **hodnotu** pro parametr, který chcete použít (například `http://CorporateStagingWebServer`).
 
 5.  (Volitelné) Opakujte kroky 3 až 5 a použijte jiný řetězec pro **hodnotu** vlastnosti (například `http://CorporateProductionWebServer`).
 
@@ -72,4 +72,4 @@ Kromě toho přiřazením různých hodnot do parametru kontextu za použití st
 
 ## <a name="see-also"></a>Viz také:
 
-- [Konfigurace parametrů běhu zátěžových testů](../test/configure-load-test-run-settings.md)
+- [Konfigurace parametrů spuštění zátěžového testu](../test/configure-load-test-run-settings.md)
