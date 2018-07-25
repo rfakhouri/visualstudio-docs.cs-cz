@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80c04182733204a18ee669d3851deab867cc56cd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 53684537d20b483f74cbc270e988b130df3ba8c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "33877329"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232282"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Kurz: Začínáme s Azure Functions
 
@@ -46,8 +46,10 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
 
 1. Rozbalte uzly v **oblasti řešení**. Výchozí šablona projektu zahrnuje NuGet odkazy na celou řadu balíčky Azure WebJobs, jakož i balíček Newtonsoft.Json. 
 
-     Jsou také tři soubory:- **host.json** pro popis globální možnosti konfigurace pro hostitele - **local.settings.json** ke konfiguraci nastavení služby. 
-        – Šablona projektu také vytvoří výchozí HttpTrigger. Pro účely tohoto testovacího prostředí, měli byste odstranit **HttpTrigger.cs** soubor z projektu.
+     Existují tři soubory:  
+        - **Host.JSON** pro popis globální konfiguraci možností pro hostitele  
+        - **Local.Settings.JSON** ke konfiguraci nastavení služby.  
+        – Šablona projektu také vytvoří výchozí HttpTrigger. Pro účely tohoto testovacího prostředí, měli byste odstranit **HttpTrigger.cs** soubor z projektu.  
 
     Otevřít **local.settings.json**. Použije se výchozí s tím, že dvě nastavení prázdný připojovacího řetězce.
 
