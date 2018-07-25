@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7a4374a389176273f7ceaa63b680868fd546398e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: c28876a9bd8eaf055a5657047c966b0740b15765
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778518"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232267"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty v Pythonu v sadě Visual Studio
 
@@ -139,7 +139,18 @@ Můžete také přidat [cesty pro hledání](search-paths.md) ke složce obsahuj
 
 Při práci s IronPython, je možné přidat odkazy na sestavení .NET k povolení technologie IntelliSense. Pro projekty .NET ve vašem řešení, klikněte pravým tlačítkem na **odkazy** uzel v projektu v Pythonu, vyberte **přidat odkaz**, vyberte **projekty** kartu a přejděte do požadovaný odebíraný projekt. Pro knihovny DLL, které jste stáhnout samostatně, vyberte **Procházet** kartě místo a přejděte do požadované knihovny DLL.
 
-Protože odkazů v Ironpythonu nejsou k dispozici až do volání `clr.AddReference('AssemblyName')` je provedli, budete také muset přidat `clr.AddReference` volání do sestavení.
+Protože odkazů v Ironpythonu nejsou k dispozici až do volání `clr.AddReference('<AssemblyName>')` je proveden, je také třeba přidat odpovídající `clr.AddReference` volání do sestavení, obvykle na začátku kódu. Například kód vytvořený pomocí **formulářová aplikace Windows IronPython** šablona projektu v sadě Visual Studio obsahuje dvě volání v horní části souboru:
+
+```python
+import clr
+clr.AddReference('System.Drawing')
+clr.AddReference('System.Windows.Forms')
+
+from System.Drawing import *
+from System.Windows.Forms import *
+
+# Other code omitted
+```
 
 ### <a name="webpi-projects"></a>Projekty instalace webové platformy
 

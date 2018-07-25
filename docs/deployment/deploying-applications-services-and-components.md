@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9198e39be5149440b09ebab5115e803d60716423
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5824876adc75430085ea0f69dc6f01be722526f5
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080260"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231223"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Rychlý start: Nejdřív se podívejte na nasazení v sadě Visual Studio
 
@@ -57,9 +57,9 @@ Nasazení do místní složky se obvykle používá pro testování, nebo začn�
 
     Aplikace v Pythonu, také naleznete v tématu [Python - publikování do služby Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
-    Informace o importu profilu publikování z Azure App Service se sadou Visual Studio najdete v tématu [importovat nastavení publikování a nasazení do Azure](../deployment/tutorial-import-publish-settings-azure.md).
+    Rychlý úvod naleznete zde [publikovat do Azure](quickstart-deploy-to-azure.md) a [publikovat do Linuxu](quickstart-deploy-to-linux.md). Viz také [publikování aplikace ASP.NET Core do Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Nasazení přes Git, najdete v tématu [průběžné nasazování ASP.NET Core do Azure pomocí Gitu](/aspnet/core/publishing/azure-continuous-deployment).
 
-    Rychlý úvod naleznete zde [publikovat do Azure](quickstart-deploy-to-azure.md). Viz také [publikování aplikace ASP.NET Core do Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Nasazení přes Git, najdete v tématu [průběžné nasazování ASP.NET Core do Azure pomocí Gitu](/aspnet/core/publishing/azure-continuous-deployment).
+    Informace o importu profilu publikování z Azure App Service se sadou Visual Studio najdete v tématu [importovat nastavení publikování a nasazení do Azure](../deployment/tutorial-import-publish-settings-azure.md).
 
     > [!NOTE]
     > Pokud ještě nemáte účet Azure, můžete si [zaregistrovat](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).

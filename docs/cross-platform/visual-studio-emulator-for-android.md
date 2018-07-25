@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5fffd9ac865b281dc921997f48d7609a9429f64
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 9b39adc2c2b91016d14eb73787b17f8c4da51c9f
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890224"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233149"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulátor sady Visual Studio pro Android
 
@@ -26,9 +26,9 @@ Visual Studio Emulator for Android je desktopová aplikace, které emuluje zař�
 > - Visual Studio Emulator for Android není podporována po sadu Visual Studio 2015.
 > - – Image emulátorů novější než verze systému Android 6.0 nejsou k dispozici pro Visual Studio Emulator for Android.
 > - Emulátor Google Android teď podporuje [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v).
-> - Visual Studio Tools for Apache Cordova spolupracuje s emulátor Google Android. Další informace najdete v tématu [spuštění aplikace Apache Cordova v Androidu](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator) (Všimněte si, že už máte zakázat Hyper-V, jak je popsáno v tomto článku).
+> - Visual Studio Tools for Apache Cordova spolupracuje s emulátor Google Android. Další informace najdete v tématu [spuštění aplikace Apache Cordova v Androidu](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (Všimněte si, že už máte zakázat Hyper-V, jak je popsáno v tomto článku).
 >
-> Další informace o konfiguraci a použití emulátoru Google Android najdete v tématu [instalace sady Android Emulator](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).
+> Další informace o konfiguraci a použití emulátoru Google Android najdete v tématu [instalace emulátoru Androidu](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).
   
  Visual Studio Emulator for Android je navržené pro poskytování srovnatelné výkonu pro skutečné zařízení. Předtím, než můžete publikovat aplikaci, doporučujeme však, že testujete aplikaci na fyzickém zařízení.  
   
@@ -51,7 +51,7 @@ Visual Studio Emulator for Android je desktopová aplikace, které emuluje zař�
 ##  <a name="Requirements"></a> Požadavky na systém a zpětné kompatibility  
  Důležité informace o hardwaru, softwaru a požadavky na konfiguraci pro emulátor sady Visual Studio pro Android najdete v následujícím tématu.  
   
--   [Systémové požadavky pro emulátor sady Visual Studio pro Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [Požadavky na systém pro emulátor sady Visual Studio pro Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
  Vyžaduje Visual Studio 2015; Visual Studio Emulator for Android není zpětně kompatibilní s předchozími verzemi sady Visual Studio.  
   
@@ -104,6 +104,6 @@ Visual Studio Emulator for Android je desktopová aplikace, které emuluje zař�
   
 -   Nahlaste problém pomocí odeslat úsměv nástroje v sadě Visual Studio nebo v správce emulátoru.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Požadavky na systém pro emulátor sady Visual Studio pro Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
  [Poradce při potížích s emulátorem sady Visual Studio pro Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

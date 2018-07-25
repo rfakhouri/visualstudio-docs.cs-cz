@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fdd33968958c2f8423f16ae1ac964915fc12489
-ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
+ms.openlocfilehash: 8d38510799984e1ea690c9c145b7d7664b338f5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39030413"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231259"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke – úloha
 
@@ -81,7 +81,7 @@ V tomto příkladu, pokud chcete upravit `/Package/mp:PhoneIdentity/PhonePublish
 
 `dn` Zde slouží jako předponu oboru názvů umělé pro výchozí obor názvů.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
  [Úlohy](../msbuild/msbuild-tasks.md)   
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

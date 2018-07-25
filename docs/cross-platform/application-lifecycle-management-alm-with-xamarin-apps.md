@@ -1,5 +1,5 @@
 ---
-title: Správa životního cyklu aplikací (ALM) s aplikacemi Xamarin | Microsoft Docs
+title: Správa životního cyklu aplikací (ALM) s aplikacemi Xamarin | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
@@ -10,115 +10,115 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: f44ad3a7c44f9de592d3b4d4add261fca74f5c39
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b711c6c67eb7466d642048f2546c532b9b2e2926
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281297"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231853"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Správa životního cyklu aplikací s aplikacemi Xamarin
 
-Xamarin umožňuje vytvářet cílené na Android, iOS a Windows pomocí jazyka C# .NET a Visual Studio mobilní aplikace a platformy. Xamarin umožňuje velkou část kódu být sdílen mezi platformami s pouze malým procentem museli být specifické pro platformu. Další informace o Xamarin sám sebe, najdete v části [Visual Studio a Xamarin](../cross-platform/visual-studio-and-xamarin.md).
+Xamarin umožňuje vytvářet multiplatformní mobilní aplikace cílí na Android, iOS a Windows pomocí C#, .NET a Visual Studio. Xamarin umožňuje velkou část kódu sdílet mezi platformami s pouze malým procentem museli být specifické pro platformu. Další informace o Xamarinu, sama, naleznete v tématu [Visual Studio a Xamarin](../cross-platform/visual-studio-and-xamarin.md).
 
-Vývoj aplikací pro moderní platformy zahrnuje mnoho další aktivity než právě psaní kódu. Tyto aktivity, označuje jako DevOps (vývoj + operations), span úplný životní cyklus aplikace a zahrnují plánování a sledování práce, navrhování a implementace kódu, Správa úložiště zdrojového kódu spuštění sestavení, Správa nepřetržité integrace nasazení, testování (včetně testování částí a testy uživatelského rozhraní), spuštěné různé formy diagnostiky v vývoj a provozní prostředí a monitorování výkonu a uživatel chování aplikace v reálném čase pomocí telemetrie a analýzy.
+Vývoj aplikací pro moderní platformy zahrnuje mnoho aktivit více než jen psaní kódu. Tyto aktivity, označuje jako span kompletní životní cyklus aplikace DevOps (vývoj + operations) a zahrnují plánování a sledování práce, navrhování a implementace kódu, správu úložiště zdrojového kódu, běžících sestavení, Správa průběžné integrace nasazení, testování (včetně jednotkové testy a testy uživatelského rozhraní), spuštění různé formy diagnostiku ve vývojovém a produkčním prostředí a sledování výkonu a uživatel chování aplikací v reálném čase prostřednictvím telemetrie a analýz.
 
-Visual Studio společně s Visual Studio Team Services a serveru Team Foundation Server poskytují řadu možností DevOps, také označované jako správa životního cyklu aplikací nebo ALM. Mnoho z těchto se zcela vztahují na projekty napříč platformami.
+Visual Studio spolu s Visual Studio Team Services a Team Foundation Server poskytuje širokou škálu možnosti DevOps, také označuje jako správa životního cyklu aplikací nebo ALM. Mnohé z nich jsou zcela použitelná pro multiplatformní projekty.
 
-To platí hlavně s aplikacemi Xamarin vzhledem k tomu, že jsou integrované s C# a rozhraní .NET, kolem které některé ALM jsou integrované nástroje. Jiné nástroje, vyžadují úzkou integraci s buildu a běhového prostředí. Protože aplikace Xamarin spustit na jiných platforem než Windows a použít Mono implementace rozhraní .NET, Xamarin poskytuje specializované nástroje pro určité potřebuje.
+To platí zejména s aplikacemi Xamarin vzhledem k tomu, že tyto šablony jsou sestaveny pomocí jazyka C# a .NET, po které některé ALM jsou integrované nástroje. Další nástroje, vyžaduje úzkou integraci s buildu a běhového prostředí. Protože aplikace spustit na platformách než Windows a Xamarin používat Mono implementaci rozhraní .NET, Xamarin poskytuje pro určité vyžaduje specializované nástroje.
 
-Následující tabulky identifikuje funkce, které Visual Studio ALM můžete předpokládat fungují dobře u projektu Xamarin, a ty, které mají omezení. Naleznete v dokumentaci propojené podrobnosti o funkce sami.
+V tabulce dole najdete identifikuje funkcí, které Visual Studio ALM můžete očekávat fungovat dobře si projekt Xamarin a ty, které mají omezení. Naleznete v dokumentaci propojené informace o funkcích, sami.
 
-## <a name="agile-tools"></a>Nástroje pro agilní
+## <a name="agile-tools"></a>Agilní nástroje
 
-Použití odkazu:  **[o agilní nástroje a Agile projektu správy](/vsts/work/backlogs/overview?view=vsts)**
+Referenční odkaz:  **[o agilní nástroje a agilní řízení projektů](/vsts/work/backlogs/overview?view=vsts)**
 
-Obecný komentář: všechny plánování a sledování funkce jsou nezávislé na kódování v jazycích jazyky a typu projektu.
+Obecné komentáře: všechny plánování a sledování funkce jsou nezávislé na typu projektu a kódování jazyky.
 
-|Funkce|Podporované xamarinu|Další komentáře|
+|Funkce|Nepodporuje se Xamarinem|Další komentáře|
 |-------------|----------------------------|-------------------------|
-|Spravovat nevyřízené položky a sprintů|Ano||
+|Správa nevyřízených položek a sprintů|Ano||
 |Sledování práce|Ano||
 |Spolupráce pomocí týmové místnosti|Ano||
-|Kanbanové karty|Ano||
-|Vytvoření sestavy a vizualizace průběhu|Ano||
+|Kanbanové Tabule|Ano||
+|Sestavy a vizualizace průběhu|Ano||
 
 ## <a name="modeling"></a>Modelování
 
-Použití odkazu:  **[analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)**
+Referenční odkaz:  **[analyzovat a architektura modelu](../modeling/analyze-and-model-your-architecture.md)**
 
-Funkce návrhu jsou nezávislé na kódování jazyka nebo pracovat s jazyky rozhraní .NET, jako je C#. V tématu [role architektura a modelování diagramů v Software Development](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools) pro které aspekty se vztahují ke kódu.
+Funkce pro návrh platí bez ohledu na programovací jazyk, nebo pracovat s jazyky .NET, jako je C#. Zobrazit [role architektury a modelování diagramů při vývoji softwaru](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools) pro jaké aspekty se vztahují ke kódu.
 
-|Funkce|Podporované xamarinu|Další komentáře|
+|Funkce|Nepodporuje se Xamarinem|Další komentáře|
 |-------------|----------------------------|-------------------------|
 |Sekvenční diagramy|Ano||
 |Grafy závislostí|Ano||
 |Hierarchie volání|Ano||
 |Návrhář tříd|Ano||
-|Architektura explorer|Ano||
-|Diagramy UML (použijte případ, aktivity, třída, součást, pořadí a DSL)|Ano||
+|Průzkumník architektury|Ano||
+|Diagramy UML (použití případu, aktivit, třídy, komponenty, pořadí a DSL)|Ano||
 |Diagramy vrstev|Ano||
-|Ověření vrstev|Ano||
+|Ověření vrstvy|Ano||
 
 ## <a name="code"></a>Kód
 
-|Funkce|Podporované xamarinu|Další komentáře|
+|Funkce|Nepodporuje se Xamarinem|Další komentáře|
 |-------------|----------------------------|-------------------------|
 |[Použití správy verzí Team Foundation](/vsts/tfvc/overview?view=vsts) nebo Visual Studio Team Services|Ano||
-|[Začínáme s Gitem v Team Services](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Ano||
+|[Začínáme s úložištěm Git ve službě Team Services](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Ano||
 |[Zlepšení kvality kódu](../test/improve-code-quality.md)|Ano||
-|[Nalezení změn kódu a další historie](../ide/find-code-changes-and-other-history-with-codelens.md)|Ano|S výjimkou napříč hranicemi specifické pro platformu, kde není vyřešený implementace až při spuštění.|
+|[Nalezení změn kódu a další historie](../ide/find-code-changes-and-other-history-with-codelens.md)|Ano|S výjimkou napříč hranicemi specifické pro platformu, kde implementace není vyřešený až do spuštění.|
 |[Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)|Ano||
 
 ## <a name="build"></a>Sestavení
 
-Použití odkazu:  **[sestavení a verze](/vsts/pipelines/index?view=vsts)**
+Referenční odkaz:  **[sestavení a vydání](/vsts/pipelines/index?view=vsts)**
 
-|Funkce|Podporované xamarinu|Další komentáře|
+|Funkce|Nepodporuje se Xamarinem|Další komentáře|
 |-------------|----------------------------|-------------------------|
-|Na místním serveru TFS|Ano|Sestavení počítače musí mít nainstalovaný Xamarin a může být propojený na OSX počítači pro vývoj pro iOS. V tématu [použít TFVC](/vsts/tfvc/overview?view=vsts)|
-|Místní sestavení server propojený s Visual Studio Team Services|Ano|V tématu [sestavení a verzí agentů](/vsts/pipelines/agents/agents?view=vsts) pokyny.|
-|Hostované řadič služby Visual Studio Team Services|Ano|V tématu [sestavení vaší aplikace Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts).|
-|Vytváření definic s před a po skripty|Ano||
-|Průběžnou integraci včetně ověřované vrácení se změnami|Ano|Ověřované vrácení vrácení se změnami pro TFVC pouze jako Git funguje na žádost o přijetí změn modelu, nikoli vrácení se změnami.|
+|Na místním serveru TFS|Ano|Počítače sestavení musí mít nainstalovaný Xamarin a lze propojit na OSX počítač pro vývoj pro iOS. Zobrazit [můžete používat TFVC](/vsts/tfvc/overview?view=vsts)|
+|Místní server sestavení propojené s Visual Studio Team Services|Ano|Zobrazit [agenti sestavení a vydání](/vsts/pipelines/agents/agents?view=vsts) pokyny.|
+|Hostovaný kontroler služby Visual Studio Team Services|Ano|Zobrazit [sestavení vaší aplikace Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts).|
+|Vytvoření definice s předběžné a pozálohovacích skriptů|Ano||
+|Průběžná integrace, včetně hlídané vrácení se změnami se|Ano|Ověřované vrácení se změnami se pro TFVC pouze, jak Git funguje na modelu žádosti o přijetí změn spíše než vrácení se změnami.|
 
 ## <a name="test"></a>Test
 
-|Funkce|Podporované xamarinu|Další komentáře|
+|Funkce|Nepodporuje se Xamarinem|Další komentáře|
 |-------------|----------------------------|-------------------------|
 |Plánování testů, vytváření testovacích případů a uspořádání testovacích sad|Ano||
 |Manuální testování|Ano||
-|Nástroje Test Manager (záznam a přehrávání testů)|Ano|Zařízení se systémem Windows a Androidem emulátorů pouze ze sady Visual Studio. Záznam pro všechna zařízení je možné s [Xamarin testu záznamník](/appcenter/test-cloud/uitest/).|
+|Test Manager (záznam a přehrávání testů)|Ano|Zařízení Windows a emulátory Androidu jenom ze sady Visual Studio. Záznam pro všechna zařízení je možné s [Xamarin Test Recorder](/appcenter/test-cloud/uitest/).|
 |Pokrytí kódu|není k dispozici||
-|[Testování částí kódu](../test/unit-test-your-code.md)|Ano|Pro systém Windows a Androidem cíle lze použít integrované nástroje Mstestu. Xamarin pro spouštění testů jednotek v systému Windows, Android a iOS, doporučuje NUnit. V tématu [použít TFVC](/vsts/tfvc/overview?view=vsts).|
-|[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)|Pouze v systému Windows|Zapisovač testu uživatelského rozhraní sady Visual Studio je pouze v systému Windows. Všechny platformy, najdete v části [Xamarin.UITest](/appcenter/test-cloud/uitest/).|
+|[Testování částí kódu](../test/unit-test-your-code.md)|Ano|Pro Windows a cílech Android je možné integrované nástroje MSTest. Xamarin pro spuštění testů jednotek pro Windows, Android a iOS, doporučuje NUnit. Zobrazit [můžete používat TFVC](/vsts/tfvc/overview?view=vsts).|
+|[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)|Pouze Windows|Rekordér testu uživatelského rozhraní sady Visual Studio je jenom pro Windows. Pro všechny platformy, najdete v článku [Xamarin.UITest](/appcenter/test-cloud/uitest/).|
 
 ## <a name="improve-code-quality"></a>Zlepšení kvality kódu
 
-Použití odkazu:  **[zlepšení kvality kódu](../test/improve-code-quality.md)**
+Referenční odkaz:  **[zlepšení kvality kódu](../test/improve-code-quality.md)**
 
-|Funkce|Podporované xamarinu|Další komentáře|
+|Funkce|Nepodporuje se Xamarinem|Další komentáře|
 |-------------|----------------------------|-------------------------|
 |[Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Ano||
-|[Hledání duplicitního kódu pomocí zjišťování klonu kódu](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Ano||
+|[Hledání duplicitního kódu pomocí zjišťování klonování kódu](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Ano||
 |[Měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Ano||
-|[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ne|Použití [Xamarin profileru](/xamarin/cross-platform/deploy-test/) prostřednictvím Xamarin Studio místo. Všimněte si, že profileru Xamarin je aktuálně ve verzi preview a zatím nefunguje pro Windows cíle.|
-|[Analýza problémů s pamětí rozhraní .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Ne|Nástroje sady Visual Studio nemusí háky do Mono rozhraní pro profilaci.|
+|[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ne|Použití [Xamarin Profiler](/xamarin/cross-platform/deploy-test/) přes Xamarin Studio místo. Všimněte si, že Xamarin Profiler je aktuálně ve verzi preview a ještě nefunguje pro Windows cíle.|
+|[Analýza problémů paměti rozhraní .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Ne|Nástroje sady Visual Studio nemusí háky do Mono framework pro profilování.|
 
 ## <a name="release-management"></a>Správa vydaných verzí
 
-Použití odkazu:  **[sestavení a verzí v služby VSTS a TFS](/vsts/pipelines/overview?view=vsts)**
+Referenční odkaz:  **[buildu a verze ve VSTS a TFS](/vsts/pipelines/overview?view=vsts)**
 
-|Funkce|Podporované xamarinu|Další komentáře|
+|Funkce|Nepodporuje se Xamarinem|Další komentáře|
 |-------------|----------------------------|-------------------------|
-|Správa procesů verzí|Ano||
-|Nasazení na servery pro zkušební načtení prostřednictvím skriptů|Ano||
-|Nahrajte do obchodu s aplikacemi|Částečné|Rozšíření jsou k dispozici, můžete automatizovat tohoto procesu pro některé obchody s aplikacemi.  V tématu [rozšíření pro Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), například [rozšíření pro Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
+|Správa procesů vydávání verzí|Ano||
+|Nasazení na servery pro zkušební načtení pomocí skriptů|Ano||
+|Nahrát do app storu|Částečné|Rozšíření jsou k dispozici, který tento proces pro některé obchody automatizovat.  Zobrazit [rozšíření pro Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), například [rozšíření pro Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
-## <a name="monitor-with-hockeyapp"></a>Monitorování s HockeyApp
+## <a name="monitor-with-hockeyapp"></a>Monitorování pomocí aplikace HockeyApp
 
-Použití odkazu:  **[monitorování s HockeyApp](https://www.hockeyapp.net/features/)**
+Referenční odkaz:  **[monitorování pomocí aplikace HockeyApp](https://www.hockeyapp.net/features/)**
 
-|Funkce|Podporované xamarinu|Další komentáře|
+|Funkce|Nepodporuje se Xamarinem|Další komentáře|
 |-------------|----------------------------|-------------------------|
 |K chybě analýzy, telemetrie a beta rozdělení|Ano||

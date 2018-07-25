@@ -1,5 +1,5 @@
 ---
-title: Správa životního cyklu aplikací (ALM) s aplikacemi Unity | Microsoft Docs
+title: Správa životního cyklu aplikací (ALM) s aplikacemi Unity | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-unity-tools
@@ -10,118 +10,118 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: aa36dd0f213cffa1c5f44915de6794ecc6efa0c0
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: eca67ab58611d9a070114bebdd3594ec66580714
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237507"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232329"
 ---
-# <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) s aplikacemi Unity
+# <a name="application-lifecycle-management-alm-with-unity-apps"></a>Správa životního cyklu aplikací (ALM) s aplikacemi Unity
 
-Vývoj aplikací pro moderní platformy zahrnuje mnoho další aktivity než právě psaní kódu. Tyto aktivity, označuje jako DevOps (vývoj + operations) span úplný životní cyklus aplikace a zahrnují plánování a sledování práce, navrhování a implementace kódu, Správa úložiště zdrojového kódu spuštění sestavení, Správa nepřetržité integrace nasazení, testování (včetně testování částí a testy uživatelského rozhraní), spuštěné různé formy diagnostiky v vývoj a provozní prostředí a monitorování výkonu a uživatel chování aplikace v reálném čase pomocí telemetrie a analýzy.
+Vývoj aplikací pro moderní platformy zahrnuje mnoho aktivit více než jen psaní kódu. Tyto aktivity také říká DevOps (vývoj + operations) span kompletní životní cyklus aplikace a zahrnují plánování a sledování práce, navrhování a implementace kódu, správu úložiště zdrojového kódu, běžících sestavení, Správa průběžné integrace nasazení, testování (včetně jednotkové testy a testy uživatelského rozhraní), spuštění různé formy diagnostiku ve vývojovém a produkčním prostředí a sledování výkonu a uživatel chování aplikací v reálném čase prostřednictvím telemetrie a analýz.
 
- Visual Studio společně s Visual Studio Team Services a serveru Team Foundation Server poskytují řadu možností DevOps, také označované jako správa životního cyklu aplikací nebo ALM. Řada z nich se vztahují na projekty a platformy, včetně hry a dokonalé grafické aplikace vytvořené s Unity – zejména v případě, že pomocí jazyka C# jako skriptovací jazyk. Ale protože Unity má svou vlastní vývojového prostředí a modul runtime, celou řadu funkcí ALM být použity jako u jiných typů projekty vytvořené v sadě Visual Studio.
+ Visual Studio spolu s Visual Studio Team Services a Team Foundation Server poskytuje širokou škálu možnosti DevOps, také označuje jako správa životního cyklu aplikací nebo ALM. Mnohé z nich se vztahují na projekty napříč platformami, včetně hry a atraktivní grafických aplikací vytvořených v Unity, zvláště při použití jazyka C# jako skriptovací jazyk. Ale protože Unity má svou vlastní vývojové prostředí a modulu runtime, mnoho funkcí ALM nemůžete použít jako u jiných typů projektů vytvořených v sadě Visual Studio.
 
- Následující tabulky identifikuje způsob, jakým Visual Studio ALM funkce použít nebo nechcete použít při práci s Unity. Naleznete v dokumentaci propojené podrobnosti o funkce sami.
+ V tabulce dole najdete identifikuje jak Visual Studio ALM funkce použít nebo nemůžete použít při práci s Unity. Naleznete v dokumentaci propojené informace o funkcích, sami.
 
-## <a name="agile-tools"></a>Nástroje pro agilní
+## <a name="agile-tools"></a>Agilní nástroje
 
-Použití odkazu: [o agilní nástroje a Agile projektu správy](/vsts/work/backlogs/overview?view=vsts) (pomocí Visual Studio Team Services nebo sady TFS, včetně Team Explorer Everywhere)
+Referenční odkaz: [o agilní nástroje a agilní řízení projektů](/vsts/work/backlogs/overview?view=vsts) (pomocí Visual Studio Team Services nebo TFS, včetně Team Explorer Everywhere)
 
-Obecný komentář: všechny plánování a sledování funkce jsou nezávislé na kódování v jazycích jazyky a typu projektu.
+Obecné komentáře: všechny plánování a sledování funkce jsou nezávislé na typu projektu a kódování jazyky.
 
-|Funkce|Podporované s Unity|Další komentáře|
+|Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
-|Spravovat nevyřízené položky a sprintů|Ano||
+|Správa nevyřízených položek a sprintů|Ano||
 |Sledování práce|Ano||
 |Spolupráce pomocí týmové místnosti|Ano||
-|Kanbanové karty|Ano||
-|Vytvoření sestavy a vizualizace průběhu|Ano||
+|Kanbanové Tabule|Ano||
+|Sestavy a vizualizace průběhu|Ano||
 
 ## <a name="modeling"></a>Modelování
 
-Použití odkazu:  **[analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)**
+Referenční odkaz:  **[analyzovat a architektura modelu](../modeling/analyze-and-model-your-architecture.md)**
 
-Obecný komentář: I když tyto funkce návrhu jsou buď bez ohledu na kódování jazyka nebo práci s jazyky rozhraní .NET, jako je C#, pracují na zlepší tradiční aplikace s hierarchií objektu a vztahy tříd. Navrhování hru v rámci Unity zahrnuje různé zlepší zcela, konkrétně vztahy grafické objekty, zvuky, shadery, skripty a tak dále. Z tohoto důvodu sady Visual Studio modelování diagram nástroje nejsou pro celý projekt Unity zvlášť důležité. Může být případně používán ke správě relací v rámci skripty jazyka C#, ale, který je součástí pouze jeden celek.
+Obecné komentáře: I když tyto funkce návrhu jsou buď bez ohledu na programovací jazyk, nebo pracovat s jazyky .NET, jako je C#, pracují na paradigma tradiční aplikace s hierarchie objektů a relace tříd. Návrh her v Unity zahrnuje různé paradigma úplně se vynechá, konkrétně vztahy grafických objektů, zvuky, shadery, skripty a tak dále. Z tohoto důvodu, Visual Studio, diagram modelování nástroje nejsou zvlášť důležité u celé Unity projektu. Může být pravděpodobně používá ke správě relací v rámci skripty jazyka C#, ale to je jenom jedna část celé.
 
-|Funkce|Podporované s Unity|Další komentáře|
+|Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
 |Sekvenční diagramy|Ne||
 |Grafy závislostí|Ne||
 |Hierarchie volání|Ne||
 |Návrhář tříd|Ne||
-|Architektura explorer|Ne||
-|Diagramy UML (použijte případ, aktivity, třída, součást, pořadí a DSL)|Ne||
+|Průzkumník architektury|Ne||
+|Diagramy UML (použití případu, aktivit, třídy, komponenty, pořadí a DSL)|Ne||
 |Diagramy vrstev|Ne||
-|Ověření vrstev|Ne||
+|Ověření vrstvy|Ne||
 
 ## <a name="code"></a>Kód
 
-|Funkce|Podporované s Unity|Další komentáře|
+|Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
-|[Použití správy verzí Team Foundation](/vsts/tfvc/overview?view=vsts) nebo Visual Studio Team Services|Ano|Unity projekty jsou jednoduše kolekce souborů, které se dají umístit do verze řízení systémů jako jiného projektu, ale existuje několik zvláštní požadavky popsané za touto tabulkou.|
-|[Začínáme s Gitem v Team Services](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Ano|V části poznámky pod tabulkou.|
+|[Použití správy verzí Team Foundation](/vsts/tfvc/overview?view=vsts) nebo Visual Studio Team Services|Ano|Projekty Unity jsou jednoduše kolekce souborů, které jde umístit do systémů správy verzí, stejně jako libovolný jiný projekt, ale existuje několik důležitých popsané za touto tabulkou.|
+|[Začínáme s úložištěm Git ve službě Team Services](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Ano|Pod tabulkou naleznete v poznámkách.|
 |[Zlepšení kvality kódu](../test/improve-code-quality.md)|Ano||
 |[Nalezení změn kódu a další historie](../ide/find-code-changes-and-other-history-with-codelens.md)|Ano||
 |[Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)|Ano||
 
- Zvláštní upozornění pro správu verzí s Unity:
+ Zvláštní upozornění pro správu verzí pomocí Unity:
 
-1.  Unity sleduje metadata o herní prostředky v knihovně jeden, neprůhledné skrytá ve výchozím nastavení. Pro synchronizaci souborů a metadat, je nezbytné, chcete-li zobrazit metadata a uložit v dalších spravovatelných blocích. Podrobnosti najdete v části [pomocí systémy řízení externí verze se Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Unity dokumentaci).
+1.  Unity sleduje metadata o herních prostředků v jedné, neprůhledný knihovnu, která je ve výchozím nastavení skrytá. Pro synchronizaci souborů a metadat, je nezbytné, chcete-li zobrazit metadata a jeho uložení do více spravovatelných blocích. Podrobnosti najdete v [pomocí externích systémů pro správu verzí pomocí Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (dokumentace k Unity).
 
-2.  Ne všechny soubory a složky v projektu Unity jsou vhodné pro řízení zdroje, jako je také popsáno v výše uvedený odkaz. Prostředky a ProjectSettings složky musí být přidaní, ale knihovny a dočasné složky neměli. Doplňkový seznam generované soubory, které by přejděte do správy zdrojového kódu, najdete v části diskuse [použití Git pro Unity3D zdrojového kódu?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) v zásobníku. Celá řada vývojářů mít také rozsáhlý blok na toto téma nezávisle.
+2.  Ne všechny soubory a složky v Unity projektu jsou vhodné pro správu zdrojového kódu, jako je také popsáno v výše uvedený odkaz. Prostředky a ProjectSettings složky by měly být přidány, ale knihovny a dočasné složky by neměla. Další seznam generovaných souborů, které by přejít do správy zdrojového kódu, viz diskuze [jak používat Git pro správu zdrojového kódu enginy Unity3D?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) na StackOverflow. Mnoho vývojářů mají také blozích máte k tomuto tématu nezávisle na sobě.
 
-3.  Binární prostředky v projektu Unity – například textury nebo zvukové soubory, může trvat až velké množství úložiště. Různé systémy správy zdrojového jako Git ukládat jedinečnou kopii souboru pro každé změně, která se i v případě, že tato změna ovlivňuje pouze malou část souboru. To může způsobit opakovaném úložiště Git. Chcete-li vyřešit tím, Unity vývojáři často zvolit, aby byla pouze poslední prostředky přidat do jejich úložiště a použít jiný způsob dosavadní práce jejich prostředků, jako je například OneDrive, DropBox nebo git přílohy. Tento přístup funguje, protože tyto prostředky většinou nemusí být verzí společně s změny zdrojového kódu. Vývojáři také běžně nastavit režim serializace Asset editoru projektu na Force Text k ukládání souborů scény v textu, ne binární formát, který umožňuje sloučení ve správě zdrojového kódu. Podrobnosti najdete v tématu [nastavení editoru](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity dokumentaci).
+3.  Binární prostředky v Unity projektu – například textury nebo zvukové soubory, může trvat až velké množství úložiště. Různé systémy správy zdrojového kódu jako je Git uložit kopii soubor pro každé změny, který je vytvořen, jedinečný i v případě, že tato změna má vliv pouze malou část souboru. To může způsobit opakovaném úložiště Git. Z toho vývojářům Unity často se je rozhodnete pouze konečný prostředky přidejte do své úložiště a použít jiný způsob uchování historie pracovní svých prostředků, jako je například OneDrive, DropBox nebo git přílohy. Tento přístup funguje, protože tyto prostředky většinou nemusí být označené verzí společně se změnami zdrojového kódu. Vývojáři také běžně nastaven režim serializace Asset editoru projektu na platnost Text k ukládání souborů scény v textu, nikoli binární formát, který umožňuje sloučení ve správě zdrojového kódu. Podrobnosti najdete v tématu [nastavení editoru](http://docs.unity3d.com/Manual/class-EditorManager.html) (dokumentace k Unity).
 
 ## <a name="build"></a>Sestavení
- Použití odkazu:  **[sestavení a verze](/vsts/build-release/index)**
+ Referenční odkaz:  **[Build and Release](/vsts/build-release/index)**
 
-|Funkce|Podporované s Unity|Další komentáře|
+|Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
-|Na místním serveru TFS|Možné|Unity projekty jsou vytvořeny pomocí prostředí Unity a ne prostřednictvím sady Visual Studio sestavení systému (vytváření v rámci sady Visual Studio Tools pro Unity bude zkompilovat skripty, ale není vytvoření spustitelného souboru). Je možné [Unity projekty z příkazového řádku sestavení](http://docs.unity3d.com/Manual/CommandLineArguments.html) (Unity dokumentace), takže je možné konfigurovat MSBuild proces na serveru TFS provést odpovídající Unity příkazy, za předpokladu, že Unity samotné je nainstalován na Tento počítač.<br /><br /> Také nabízí Unity [Unity cloudu sestavení](https://build.cloud.unity3d.com/landing/), který sleduje úložiště Git nebo SVN a spustí pravidelné sestavení. V současné době ale nefunguje s verzí Team Foundation nebo Visual Studio Team Services.|
-|Místní sestavení server propojený s Visual Studio Team Services|Možné|Zadaný stejných podmínek jako výše je další možné směrovat sestavení vyvolané prostřednictvím Visual Studio Team Services pomocí sady TFS počítače místně.  V tématu [sestavení a verzí agentů](/vsts/build-release/concepts/agents/agents) pokyny.|
-|Hostované řadič služby Visual Studio Team Services|Ne|V současné době se nepodporují Unity sestavení.|
-|Vytváření definic s před a po skripty|Ano|Definici vlastní sestavení, která používá ke spuštění sestavení příkazového řádku Unity můžete také nakonfigurovat pro skripty před a po sestavení.|
-|Průběžnou integraci včetně ověřované vrácení se změnami|Ano|Ověřované vrácení vrácení se změnami pro TFVC pouze jako Git funguje na žádost o přijetí změn modelu, nikoli vrácení se změnami.|
+|Na místním serveru TFS|Je to možné|Projekty Unity jsou integrované prostřednictvím prostředí Unity a ne prostřednictvím sady Visual Studio sestavovacího systému (sestavení v rámci Visual Studio Tools pro Unity se zkompilovat skripty, ale výsledkem není spustitelný soubor). Je možné [sestavování projektů Unity z příkazového řádku](http://docs.unity3d.com/Manual/CommandLineArguments.html) (dokumentace k Unity), takže je možné nakonfigurovat procesu MSBuild na serveru TFS k provedení příslušné Unity příkazy, za předpokladu, že Unity samotného je nainstalovaný na Tento počítač.<br /><br /> Unity nabízí také [sestavení Unity cloudu](https://build.cloud.unity3d.com/landing/), který sleduje úložiště Git nebo SVN a spouští pravidelná sestavení. V současné době to nebude fungovat s verzí Team Foundation nebo Visual Studio Team Services.|
+|Místní server sestavení propojené s Visual Studio Team Services|Je to možné|Zadaný stejných podmínek jako výše je dál možné přímé sestavení vyvolané prostřednictvím Visual Studio Team Services v místním počítači TFS.  Zobrazit [agenti sestavení a vydání](/vsts/build-release/concepts/agents/agents) pokyny.|
+|Hostovaný kontroler služby Visual Studio Team Services|Ne|Unity sestavení nejsou v současné době nepodporují.|
+|Vytvoření definice s předběžné a pozálohovacích skriptů|Ano|Definice vlastního sestavení, která používá Unity příkazový řádek pro spuštění sestavení můžete také nakonfigurovat pro skripty před a po sestavení.|
+|Průběžná integrace, včetně hlídané vrácení se změnami se|Ano|Ověřované vrácení se změnami se pro TFVC pouze, jak Git funguje na modelu žádosti o přijetí změn spíše než vrácení se změnami.|
 
 ## <a name="testing"></a>Testování
 
-|Funkce|Podporované s Unity|Další komentáře|
+|Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
 |Plánování testů, vytváření testovacích případů a uspořádání testovacích sad|Ano||
 |Manuální testování|Ano||
-|Nástroje Test Manager (záznam a přehrávání testů)|Zařízení s Windows a Androidem emulátorů pouze||
-|Pokrytí kódu|není k dispozici|Není k dispozici jako jednotka testování se stane, v rámci Unity a není Visual Studio, najdete níže.|
-|[Testování částí kódu](../test/unit-test-your-code.md)|V rámci Unity, ale ne Visual Studio|Poskytuje Unity vlastní jednotkové testování framework jako součást [nástroje Test Unity](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset úložiště). Výsledky testů jednotek jsou hlášeny v rámci Unity a nebude prezentované v sadě Visual Studio.|
-|[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)|Ne|Programové testy uživatelského rozhraní závisí na čitelný ovládací prvky v uživatelském rozhraní aplikace; Aplikace Unity jsou grafické ve své podstatě a obsah není tak přečíst nástroje uživatelského rozhraní programového testu.|
+|Test Manager (záznam a přehrávání testů)|Jenom Android emulátory a zařízení Windows||
+|Pokrytí kódu|není k dispozici|Není k dispozici jako jednotky testování se stane v Unity a nikoli Visual Studio, najdete níže.|
+|[Testování částí kódu](../test/unit-test-your-code.md)|V rámci Unity, ale ne Visual Studio|Unity nabízí svůj vlastní rozhraní pro testování částí v rámci [testovacích nástrojů Unity](https://www.assetstore.unity3d.com/en/#!/content/13802) (Store Unity Asset). Výsledky testování částí jsou hlášeny v Unity a nesmí být prezentované v sadě Visual Studio.|
+|[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)|Ne|Programové testy uživatelského rozhraní závisí na čitelné ovládací prvky v Uživatelském rozhraní aplikace; Jsou ze své podstaty grafické aplikace Unity a proto není čitelný pomocí nástroje test uživatelského rozhraní pro obsah.|
 
 ## <a name="improve-code-quality"></a>Zlepšení kvality kódu
 
-Použití odkazu:  **[zlepšení kvality kódu](../test/improve-code-quality.md)**
+Referenční odkaz:  **[zlepšení kvality kódu](../test/improve-code-quality.md)**
 
-|Funkce|Podporované s Unity|Další komentáře|
+|Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
-|[Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Ano|Kód skriptu jazyka C# v sadě Visual Studio můžete analyzovat.|
-|[Hledání duplicitního kódu pomocí zjišťování klonu kódu](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Ano|Kód skriptu jazyka C# v sadě Visual Studio můžete analyzovat.|
-|[Měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Ano|Kód skriptu jazyka C# v sadě Visual Studio můžete analyzovat.|
-|[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ne|Použití [Unity profileru](http://docs.unity3d.com/Manual/Profiler.html) (Unity webu).|
-|[Analýza problémů s pamětí rozhraní .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Ne|Nástroje sady Visual Studio nemusí háky do Mono framework (jako je použité ve Unity) pro vytváření profilů. Použití [Unity profileru](http://docs.unity3d.com/Manual/Profiler.html) (Unity dokumentaci).|
+|[Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
+|[Hledání duplicitního kódu pomocí zjišťování klonování kódu](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
+|[Měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
+|[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ne|Použití [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (Unity webu).|
+|[Analýza problémů paměti rozhraní .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Ne|Nástroje sady Visual Studio nemusí háky do Mono framework (jako Unity) pro profilování. Použití [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (dokumentace k Unity).|
 
 ## <a name="release-management"></a>Správa vydaných verzí
 
-Použití odkazu: [sestavení a verze – přehled](/vsts/pipelines/overview?view=vsts)
+Referenční odkaz: [sestavení a vydání – přehled](/vsts/pipelines/overview?view=vsts)
 
-|Funkce|Podporované s Unity|Další komentáře|
+|Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
-|Správa procesů verzí|Ano||
-|Nasazení na servery pro zkušební načtení prostřednictvím skriptů|Ano||
-|Nahrajte do obchodu s aplikacemi|Částečné|Rozšíření jsou k dispozici, můžete automatizovat tohoto procesu pro některé obchody s aplikacemi.  V tématu [rozšíření pro Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), například [rozšíření pro Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
+|Správa procesů vydávání verzí|Ano||
+|Nasazení na servery pro zkušební načtení pomocí skriptů|Ano||
+|Nahrát do app storu|Částečné|Rozšíření jsou k dispozici, který tento proces pro některé obchody automatizovat.  Zobrazit [rozšíření pro Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), například [rozšíření pro Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
-## <a name="monitor-with-hockeyapp"></a>Monitorování s HockeyApp
+## <a name="monitor-with-hockeyapp"></a>Monitorování pomocí aplikace HockeyApp
 
-Použití odkazu:  **[monitorování s HockeyApp](https://www.hockeyapp.net/features/)**
+Referenční odkaz:  **[monitorování pomocí aplikace HockeyApp](https://www.hockeyapp.net/features/)**
 
-|Funkce|Podporované s Unity|Další komentáře|
+|Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
-|K chybě analýzy, telemetrie a beta rozdělení|Ano|HockeyApp je užitečné hlavně pro zpracování beta rozdělení a získání sestavy havárií.<br /><br /> Pro telemetrie z skripty jazyka C# je možné použít libovolnou architekturu analytics za předpokladu, že běží na verzi rozhraní .NET, který je používán Unity. To umožňuje však pro analýzu pouze v rámci herní skripty a není hlubšímu uvnitř modul Unity. V současné době není k dispozici žádný modul plug-in pro Application Insights, ale modulů plug-in, jako jsou k dispozici pro jiné řešení pro analýzu [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) a [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Služby jako Unity analýzy, které pochopení povahy projektu Unity bude samozřejmě poskytují mnohem víc smysluplný analysis než obecné rozhraní.|
+|K chybě analýzy, telemetrie a beta rozdělení|Ano|HockeyApp je užitečné hlavně pro zpracování distribuce beta verzí a získání hlášení o selhání.<br /><br /> Telemetrie z skripty jazyka C# je možné použít jakýkoli analytics rozhraní za předpokladu, že běží na verzi rozhraní .NET, která používá Unity. Nicméně díky tomu pro analýzu jenom v rámci her skriptů a ne hlouběji uvnitř herní engine Unity. V současné době neexistuje žádný modul plugin pro službu Application Insights, ale moduly plug-in, jako jsou k dispozici pro ostatní řešení pro analýzu [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) a [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Služeb, jako je Unity analýzy, které pochopení povahy Unity projektu bude samozřejmě poskytují mnohem větší smysl analýzy než obecného rozhraní.|

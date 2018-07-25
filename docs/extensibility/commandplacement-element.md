@@ -1,5 +1,5 @@
 ---
-title: CommandPlacement Element | Microsoft Docs
+title: Commandplacement – Element | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49de1e1cb41c13ef9b587689f36e302bcadf890c
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c5da750b3f33127fdcfdf2e2a76d4df1556561b2
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267972"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232426"
 ---
-# <a name="commandplacement-element"></a>CommandPlacement Element
-CommandPlacement element umožňuje tlačítka, skupiny a nabídky mají být zahrnuty do více než jednu skupinu nebo nabídky. Pomocí elementu CommandPlacement nemáte zcela znovu definovat tyto položky k úpravě vzhledu uživatelské rozhraní.  
+# <a name="commandplacement-element"></a>Commandplacement – element
+Commandplacement – element umožňuje tlačítka, skupiny a nabídek, které mají být zahrnuty do více než jedné skupině nebo v nabídce. Pomocí commandplacement – element nemáte zcela předefinovat tyto položky, aby bylo možné změnit vzhled uživatelského rozhraní.  
   
- Další informace najdete v tématu [vytváření skupin opakovaně použitelného z tlačítka](../extensibility/creating-reusable-groups-of-buttons.md).  
+ Další informace najdete v tématu [vytváření znovu použitelných skupin tlačítek](../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,22 +41,22 @@ CommandPlacement element umožňuje tlačítka, skupiny a nabídky mají být za
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|Identifikátor GUID|Požadováno. Identifikátor guid sadu příkazů, jak jsou definovány v [symboly Element](../extensibility/symbols-element.md).|  
-|id|Požadováno. Id nabídky, skupinu nebo příkaz umístit, jak jsou definovány v `Symbols Element`.|  
-|Priorita|Požadováno. Určuje pozici visual položky v jeho nadřazený element.|  
-|Podmínka|Volitelné. V tématu [podmíněné atributy](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|identifikátor GUID|Požadováno. Identifikátor guid sady příkazů, jak jsou definovány v [Symbols – element](../extensibility/symbols-element.md).|  
+|id|Požadováno. Id nabídky, skupiny nebo příkaz, který byl umístěn, jak jsou definovány v `Symbols Element`.|  
+|Priorita|Požadováno. Určuje vizuální umístění položky v svého nadřízeného elementu.|  
+|Podmínka|Volitelné. Zobrazit [podmíněného Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### <a name="child-elements"></a>Podřízené elementy  
+### <a name="child-elements"></a>Podřízené prvky  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|Nadřazené|Požadováno. Nabídky nebo skupiny, který je hostitelem položka, která má být umístěn.|  
+|nadřazené|Požadováno. Nabídky nebo skupiny, který je hostitelem položka, která má být umístěn.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[CommandPlacements – element](../extensibility/commandplacements-element.md)|Určuje skupiny CommandPlacements a CommandPlacement elementů.|  
+|[Commandplacements – element](../extensibility/commandplacements-element.md)|Určuje skupiny commandplacements – a commandplacement – prvků.|  
   
 ## <a name="example"></a>Příklad  
   
@@ -69,6 +69,6 @@ CommandPlacement element umožňuje tlačítka, skupiny a nabídky mají být za
 </CommandPlacements>  
 ```  
   
-## <a name="see-also"></a>Viz také  
- [CommandPlacements Element](../extensibility/commandplacements-element.md)   
- [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Viz také:  
+ [Commandplacements – element](../extensibility/commandplacements-element.md)   
+ [Soubory tabulky (.vsct) příkaz pro Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -9,12 +9,12 @@ title: Vývoj mobilních aplikací pomocí C++ dokumentace | Dokumentace Microso
 description: Vytvářejte nativní aplikace s C++ pro iOS, Android a Windows zařízení pomocí sady Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: cc428cd4b961fe42f3d1f80cd18982a2420aafd3
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: d10f0409b30198d7976f08a78b1d45d0099ac093
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924171"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232010"
 ---
 # <a name="mobile-development-with-c-documentation"></a>Vývoj mobilních aplikací pomocí dokumentace k C++
 
@@ -28,11 +28,11 @@ Vytvářejte nativní aplikace s C++ pro iOS, Android a Windows zařízení pomo
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_setup.svg" alt="">
+                            <img src="/media/common/i_setup.svg" alt="Set up Visual C++ for cross-platform mobile apps">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Instalace komponenty Visual C++ for Cross-Platform Mobile Development</h3>
+                        <h3>Instalovat Visual C++ pro vývoj mobilních řešení napříč platformami</h3>
                         <p>Nastavte si nástroje potřebné k vytváření mobilních aplikací pro různé platformy.</p>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ Vytvářejte nativní aplikace s C++ pro iOS, Android a Windows zařízení pomo
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="Learn about Visual C++ for cross-platform mobile develpment">
                         </div>
                     </div>
                     <div class="cardText">
@@ -66,11 +66,11 @@ Vytvářejte nativní aplikace s C++ pro iOS, Android a Windows zařízení pomo
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_xplat-code.svg" alt="">
+                            <img src="/media/common/i_xplat-code.svg" alt="Cross-platform mobile development examples">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Příklady vývoje multiplatformních mobilních řešení</h3>
+                        <h3>Příklady vývoj mobilních řešení napříč platformami</h3>
                         <p>Podívejte se na ukázky, které vám pomůžou začít s vývoj mobilních řešení napříč platformami.</p>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ Vytvářejte nativní aplikace s C++ pro iOS, Android a Windows zařízení pomo
                 <div class="card">
                     <div class="cardText">
                         <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
-                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">Integrované vývojové prostředí a nástroje pro vývoj v jazyce Visual C++</a><p>
+                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">IDE a nástroje pro vývoj v jazyce Visual C++</a><p>
                     </div>
                 </div>
             </div>
@@ -102,9 +102,9 @@ Vytvářejte nativní aplikace s C++ pro iOS, Android a Windows zařízení pomo
                 <div class="card">
                     <div class="cardText">
                         <h3>Platformy</h3>
-                        <p><a href="/cpp/windows/universal-windows-apps-cpp">Dokumentace ke službě Universal Windows Platform (UWP)</a></p>
-                        <p><a href="https://developer.apple.com/reference">dokumentace k rozhraní API systému iOS</a></p>
-                        <p><a href="https://developer.android.com/guide/index.html">Dokumentace k rozhraní API systému Android</a></p>
+                        <p><a href="/cpp/windows/universal-windows-apps-cpp">Dokumentace k univerzální platformě Windows (UPW)</a></p>
+                        <p><a href="https://developer.apple.com/reference">dokumentace k rozhraní API pro iOS</a></p>
+                        <p><a href="https://developer.android.com/guide/index.html">Android dokumentace k rozhraní API</a></p>
                     </div>
                 </div>
             </div>

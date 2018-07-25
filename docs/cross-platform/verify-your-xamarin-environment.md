@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 7d53a668014ba8f08b0715a0f0a02c351756435e
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924470"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233084"
 ---
 # <a name="verify-your-xamarin-environment"></a>Ověření prostředí Xamarinu
 
@@ -30,9 +30,9 @@ Po dokončení instalační programy (viz [nastavení a instalaci](../cross-plat
 
 ## <a name="all-platforms"></a>Všechny platformy
 
-V sadě Visual Studio, vyberte nejdřív **nástroje > rozšíření a aktualizace** a zaškrtněte políčko, pokud některé z těchto komponent Xamarin vyžadovat aktualizace.
+V sadě Visual Studio, vyberte nejdřív **nástroje** > **rozšíření a aktualizace** a zaškrtněte políčko, pokud některé z těchto komponent Xamarin vyžadovat aktualizace.
 
-Pak vytvořte nové řešení Xamarin.Forms v sadě Visual Studio pomocí **soubor > Nový projekt**. V dialogovém okně rozbalte **Visual C# > Cross-Platform**vyberte **mobilní aplikace (Xamarin.Forms)** a klikněte na tlačítko OK. V dialogovém okně, který následuje, vyberte **prázdnou aplikaci**. V části **strategie sdílení kódu**vyberte **.NET Standard**. Klikněte na tlačítko OK.
+Pak vytvořte nové řešení Xamarin.Forms v sadě Visual Studio pomocí **souboru** > **nový projekt**. V dialogovém okně rozbalte **Visual C#** > **Cross-Platform**vyberte **mobilní aplikace (Xamarin.Forms)** a klikněte na tlačítko **OK**. V dialogovém okně, který následuje, vyberte **prázdnou aplikaci**. V části **strategie sdílení kódu**vyberte **.NET Standard**. Klikněte na tlačítko **OK**.
 
 Tyto akce vytvořit řešení se čtyřmi projekty: projekt sdílené knihovny .NET Standard 2.0 a projekty aplikací pro Android, iOS a univerzální platformu Windows (UPW):
 
@@ -52,11 +52,11 @@ Tyto akce vytvořit řešení se čtyřmi projekty: projekt sdílené knihovny .
 
     Emulátory jsou také uvedeny. Vyberte jednu z zařízení nebo emulátorů sady Visual Studio:
 
-  ![Výběr emulátoru Visual Studia pro Android jako cíl ladění](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin ověřte 3")
+  ![Vyberte Visual Studio Emulator for Android jako cíl ladění](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin ověřte 3")
 
   Další informace najdete v tématu [představení sady Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (blogu Visual Studio ALM). Pokud narazíte na problémy, získávání emulátor fungovat najdete v tématu [řešení potíží s Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Můžete také vytvořit nové profily zařízení pro emulátor serveru tak, že vyberete **nástroje > Android > Správce emulátoru Androidu**.
 
-3. Stiskněte klávesu F5 ke kompilaci a program nasadit do zařízení s Androidem nebo emulátoru.
+3. Stisknutím klávesy **F5** ke kompilaci a program nasadit do zařízení s Androidem nebo emulátoru.
 
 ## <a name="windows"></a>Windows
 
@@ -64,7 +64,7 @@ Tyto akce vytvořit řešení se čtyřmi projekty: projekt sdílené knihovny .
 
 2.  V **platformy řešení** rozevíracího seznamu, vyberte **x86** nebo **x64**. Vyberte **místního počítače**.
 
-3.  Stisknutím klávesy F5 nasazení programu na ploše.
+3.  Stisknutím klávesy **F5** k nasazení programu na ploše.
 
 ## <a name="ios"></a>iOS
 
@@ -76,19 +76,19 @@ Tyto akce vytvořit řešení se čtyřmi projekty: projekt sdílené knihovny .
 
  ![Výběr iPhoneSimulator cíl sestavení](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin ověřte 5")
 
- Pokud nejsou uvedeny žádné simulátory, spusťte Xcode na Macu, vyberte **Xcode > Předvolby**a klikněte na tlačítko **Stáhnout**. V části **součásti** záhlaví jste měli vidět simulátor verze, které jsou k dispozici ke stažení. Další návod pro ladění k dispozici na [iOS ladění](/xamarin/ios/deploy-test/debugging-in-xamarin-ios/?tabs=vsmac#Debugging_on_the_Simulator) stránky.
+ Pokud nejsou uvedeny žádné simulátory, spusťte Xcode na Macu, vyberte **Xcode** > **Předvolby**a klikněte na tlačítko **Stáhnout**. V části **součásti** záhlaví jste měli vidět simulátor verze, které jsou k dispozici ke stažení. Další návod pro ladění k dispozici na [iOS ladění](/xamarin/ios/deploy-test/debugging-in-xamarin-ios) stránky.
 
 4.  Vyberte cíl emulátor zařízení z rozevírací nabídky sady Visual Studio:
 
  ![Vyberte cíl ladění iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "6 ověřte CrossPlat Xamarin")
 
-5. Stisknutím klávesy F5 spusťte ladicí program. Simulátor se spouští na počítači Mac, kde budete pracovat s aplikací během ladění se stane v sadě Visual Studio. Pokud už máte fyzické zařízení iPhone nebo iPad připojené k počítači Mac, se zobrazí v seznamu a můžete ho vybrat místo toho. Pokud nevidíte žádné zařízení nebo simulátoru uvedené, zkontrolujte připojení k počítači Mac. Přečtěte si článek propojené výše v kroku 1, nebo přejít na **nástroje > iOS > spárovat s počítačem Mac**
+5. Spusťte ladicí program stisknutím kombinace kláves **F5**. Simulátor se spouští na počítači Mac, kde budete pracovat s aplikací během ladění se stane v sadě Visual Studio. Pokud už máte fyzické zařízení iPhone nebo iPad připojené k počítači Mac, se zobrazí v seznamu a můžete ho vybrat místo toho. Pokud nevidíte žádné zařízení nebo simulátoru uvedené, zkontrolujte připojení k počítači Mac. Přečtěte si článek propojené výše v kroku 1, nebo přejít na **nástroje** > **iOS** > **spárovat s počítačem Mac**
 
 6.  Pokud narazíte na potíže s připojením k počítači Mac, přečtěte si [řešení potíží s připojením](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/).
 
 7.  Pokud se zobrazí chyba s oznámením "žádné nainstalované zřizovací profily odpovídají nainstalovaných iOS podpisových klíčů", vyzkoušejte následující návrhy:
 
-  - Zkontrolujte, že váš účet Apple Id, které se přidá v Xcode na počítači Mac, jak je popsáno v [přidávání účtu do Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  Po přidání vašeho účtu, je potřeba restartovat Visual Studio a Xcode.
+  - Zkontrolujte, že váš účet Apple Id, které se přidá v Xcode na počítači Mac, jak je popsáno v [přidání účtu do Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  Po přidání vašeho účtu, je potřeba restartovat Visual Studio a Xcode.
 
   - Ověřte v iOS sadu vlastností projektu v systému iOS podpisový kartu, nic pole vlastní oprávnění pro ladění aktivní konfiguraci.  Poznámka: pouze snažte odebrání toto nastavení, pokud jste se setkali výše chybová zpráva.
 

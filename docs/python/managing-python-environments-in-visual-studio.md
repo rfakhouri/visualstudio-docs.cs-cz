@@ -1,7 +1,7 @@
 ---
 title: Správa prostředí Pythonu a interprety
 description: Použijte okno prostředí Pythonu ke správě globální, virtuální a prostředí conda, instalace interpretů Pythonu a balíčky a přiřazení prostředí do projektů sady Visual Studio.
-ms.date: 06/29/2018
+ms.date: 07/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ce601d169654c4fddca30b5e9853e18dcae9ac5
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2b134dc54e2af31bb7d9fcb3f1dcdf3d31f799b5
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37250957"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232215"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak vytvořit a spravovat prostředí Pythonu v sadě Visual Studio
 
@@ -118,7 +118,7 @@ Pokud znáte mají překladač Pythonu ve vašem počítači, ale Visual Studio 
 >
 > Pokud přesunete ručně interpretu a její prostředí pomocí systému souborů, ale Visual Studio nepoznáte nové umístění. Další informace najdete v tématu [přesun interpretu](installing-python-interpreters.md#moving-an-interpreter).
 
-## <a name="fix-invalid-environments"></a>Oprava neplatné prostředí
+## <a name="fix-or-delete-invalid-environments"></a>Opravte nebo odstraňte neplatný prostředí
 
 Pokud sada Visual Studio najde položky registru pro prostředí, ale není platná cesta k interpretu, okno prostředí Pythonu zobrazuje název s přeškrtnuté písmo:
 
