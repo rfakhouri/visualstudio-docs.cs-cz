@@ -10,6 +10,8 @@
       href: deploying-applications-services-and-components.md
     - name: Nasazení do Azure App Service
       href: quickstart-deploy-to-azure.md
+    - name: Nasazení do App Service pro Linux
+      href: quickstart-deploy-to-linux.md
     - name: Nasazení na web
       href: quickstart-deploy-to-a-web-site.md
     - name: Nasazení do místní složky

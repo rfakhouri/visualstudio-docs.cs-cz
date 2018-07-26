@@ -22,9 +22,9 @@
 - name: Visual Studio Tools for Unity
   href: visual-studio-tools-for-unity.md
   items:
-    - name: Začínáme s nástroji Visual Studio Tools for Unity
+    - name: Začínáme s Visual Studio Tools for Unity
       href: getting-started-with-visual-studio-tools-for-unity.md
-    - name: Používání sady Visual Studio Tools for Unity
+    - name: Používání Visual Studio Tools for Unity
       href: using-visual-studio-tools-for-unity.md
     - name: Programování Visual Studio Tools for Unity
       href: programming-visual-studio-tools-for-unity.md
