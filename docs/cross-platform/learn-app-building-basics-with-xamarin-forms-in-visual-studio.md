@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: f9f233b5f43555f86f0a49c5e5853cad6d7456b1
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 2a8851a48d1629b5324d0eb7615c2f2c9f2719e0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924421"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251852"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio
 
@@ -55,11 +55,11 @@ Tyto kroky vytvoří řešení Xamarin.Forms, které obsahuje knihovnu tříd .N
 
     Pokud není šablona, bude pravděpodobně nainstalujte si Xamarin, nebo povolte funkce sady Visual Studio 2017. Zobrazit [nastavení a instalaci](../cross-platform/setup-and-install.md).
 
-2.  Po kliknutí na tlačítko OK, budete mít možnost vybrat několik možností. Vyberte si **prázdná aplikace** a **.NET Standard**:
+2.  Po kliknutí na tlačítko **OK**, budete mít možnost vybrat několik možností. Vyberte si **prázdná aplikace** a **.NET Standard**:
 
     ![Vytvoření nového projektu aplikace pro různé platformy](../cross-platform/media/crossplat-xamarin-formsguide-3.png "CrossPlat Xamarin FormsGuide 3")
 
-3.  Po kliknutí na tlačítko OK, abyste vytvořili řešení, budete mít řešení se čtyřmi projekty:
+3.  Po kliknutí na tlačítko **OK** k vytvoření řešení, budete mít řešení se čtyřmi projekty:
 
     -   **WeatherApp**: knihovny .NET Standard, kde budete psát kód, který je sdílen napříč platformami, včetně běžné obchodní logiky a kód uživatelského rozhraní pomocí Xamarin.Forms.
 
@@ -118,7 +118,7 @@ Takto přidejte kód knihovny .NET Standard pro přístup a ukládání dat z t�
 
 1.  Klikněte pravým tlačítkem myši **WeatherApp** projektu a vyberte **Přidat > třída...** . V **přidat novou položku** dialogového okna, název souboru **Weather.cs**. Tato třída budete používat k ukládání dat ze služby data o počasí.
 
-2.  Nahradí celý obsah **Weather.cs** následujícím kódem:
+2.  Nahradí celý obsah *Weather.cs* následujícím kódem:
 
     ```csharp
     namespace WeatherApp
@@ -274,7 +274,7 @@ Xamarin.Forms umožňuje implementovat sdíleným kódem uživatelského rozhran
     }
     ```
 
-4.  Chcete-li otevřít **WeatherPage** jako první obrazovku při spuštění aplikace nahradí výchozí konstruktor v **App.xaml.cs** následujícím kódem:
+4.  Chcete-li otevřít **WeatherPage** jako první obrazovku při spuštění aplikace nahradí výchozí konstruktor v *App.xaml.cs* následujícím kódem:
 
     ```csharp
     public App()
@@ -406,7 +406,7 @@ Xamarin.Forms vykreslí nativní ovládací prvky uživatelského rozhraní pro 
 
      I když není tady zobrazené, můžete použít `OnPlatform` značky v souborech XAML a vyberte hodnotu vlastnosti, které jsou specifické pro aktuální platformu, na kterém je aplikace spuštěna (naleznete v tématu [základní syntaxe XAML](/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax/).) V souboru kódu na pozadí můžete určit, jakou platformu aplikace běží porovnáním [ `Device.RuntimePlatform` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Device.RuntimePlatform/) vlastnost s konstanty definované v [ `Device` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Device/) třídu s názvem [ `Device.iOS` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.iOS/), [ `Device.Android` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.Android/), a [ `Device.UWP` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.UWP/).
 
-2.  V **WeatherPage.xaml.cs**, nahraďte `GetWeatherBtn_Clicked` obslužné rutiny události pomocí kódu níže. Tento kód ověří, že je kód zip do vstupního pole a načte data pro tento kód zip. Potom nastaví kontext vazby celou stránku na výsledný `Weather` instance. Dojde k závěru kód tak, že nastavíte text tlačítka na "Vyhledávání znovu." Každý popisek v uživatelském rozhraní vytvoří vazbu na vlastnost `Weather` třídy. Pokud nastavíte na kontextu vazby na obrazovce `Weather` instance, tyto popisky automaticky aktualizovat.
+2.  V *WeatherPage.xaml.cs*, nahraďte `GetWeatherBtn_Clicked` obslužné rutiny události pomocí kódu níže. Tento kód ověří, že je kód zip do vstupního pole a načte data pro tento kód zip. Potom nastaví kontext vazby celou stránku na výsledný `Weather` instance. Dojde k závěru kód tak, že nastavíte text tlačítka na "Vyhledávání znovu." Každý popisek v uživatelském rozhraní vytvoří vazbu na vlastnost `Weather` třídy. Pokud nastavíte na kontextu vazby na obrazovce `Weather` instance, tyto popisky automaticky aktualizovat.
 
     ```csharp
     private async void GetWeatherBtn_Clicked(object sender, EventArgs e)

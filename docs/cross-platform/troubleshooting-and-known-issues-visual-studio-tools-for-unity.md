@@ -10,14 +10,14 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: df458124be9650319f47979f7d2d98801d06a61f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153901"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251572"
 ---
-# <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Odstraňování potíží a známé problémy (Visual Studio Tools for Unity)
+# <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Řešení potíží a známé problémy (Visual Studio Tools for Unity)
 
 V této části vám najít řešení běžných potíží s nástroji Visual Studio Tools for Unity, popis známých problémů a zjistěte, jak můžete pomoci zvýšit zpráv o chybách Visual Studio Tools for Unity.
 
@@ -54,7 +54,7 @@ To by měl váš problém vyřešit. V případě, že stále dochází k probl�
 
 Několik modulů plug-in Unity, jako jsou analýzy, FMOD, JÍMKU (univerzální přehrávač), ZFBrowser nebo vložený prohlížeče jsou pomocí nativních vláken. Protože představuje problém, když modul plug-in končí nativních vláken se připojuje k modulu runtime, který potom provede blokování volání do operačního systému. To znamená Unity nelze přerušit bylo vlákno pro ladicí program (nebo opětovné načtení domény) a přestane reagovat.
 
-Fmod –, existuje alternativní řešení, můžete předat FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE inicializace [příznak](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) zakázat asynchronního zpracování a provádět veškeré zpracování na hlavním vlákně.
+Fmod –, existuje alternativní řešení, můžete předat `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` inicializace [příznak](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) zakázat asynchronního zpracování a provádět veškeré zpracování na hlavním vlákně.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Nekompatibilní projektu v sadě Visual Studio
 
@@ -114,7 +114,7 @@ Zkuste ho upgradovat vaše Visual Studio 2015 update 3.
 
 - Krokování do proměnné a z metody v některých případech se chová nesprávně, zejména v iterátory nebo v rámci příkazů přepínače.
 
-## <a name="reporting-errors"></a>Hlášení chyb
+## <a name="report-errors"></a>Hlášení chyb
 
  Pomozte nám zlepšovat kvalitu Visual Studio Tools for Unity odesíláním zpráv o chybách, když dochází k chybám, zablokuje nebo jiné chyby. To pomáhá nám prozkoumat a řešit problémy ve Visual Studio Tools for Unity. Děkuju!
 

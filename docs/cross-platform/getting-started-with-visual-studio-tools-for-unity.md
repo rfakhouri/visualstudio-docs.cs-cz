@@ -10,14 +10,14 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c46b5fffb2cde0298c252c7317f82654ce6defdc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154219"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252463"
 ---
-# <a name="getting-started-with-visual-studio-tools-for-unity"></a>Začínáme s nástroji Visual Studio Tools for Unity
+# <a name="get-started-with-visual-studio-tools-for-unity"></a>Začínáme s Visual Studio Tools for Unity
 
 ## <a name="install-visual-studio"></a>Instalace sady Visual Studio
 
@@ -77,7 +77,7 @@ Počínaje Unity 2018.1, Visual Studio by měl být výchozího externí skript 
 
 1. Po výběru v sadě Visual Studio **externí Editor skriptů** seznamu, ujistěte se, že **Editor připojení** zaškrtávací políčko zaškrtnuto.
 
-1. Zavřete dialogové okno Předvolby pro dokončení procesu konfigurace.
+1. Zavřít **Předvolby** dialogové okno pro dokončení procesu konfigurace.
 
 ## <a name="support-for-older-versions"></a>Podpora pro starší verze
 
@@ -93,4 +93,4 @@ Počínaje Unity 2018.1, Visual Studio by měl být výchozího externí skript 
 
 ## <a name="next-steps"></a>Další kroky
 
- Informace o práci s a ladit svým projektem Unity v sadě Visual Studio najdete v tématu [pomocí Visual Studio Tools for Unity](../cross-platform/using-visual-studio-tools-for-unity.md).
+ Informace o práci s a ladit svým projektem Unity v sadě Visual Studio najdete v tématu [Visual Studio Tools for Unity](../cross-platform/using-visual-studio-tools-for-unity.md).

@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14716aa85245dcbd7c1ba0bc85824f5a53bece2d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: de11159e513468a543229df5aab640142b006736
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079820"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251930"
 ---
 # <a name="debug-your-python-code"></a>Ladění kódu Pythonu
 
-Visual Studio nabízí komplexní možnosti ladění pro Python, včetně připojení ke spuštěným procesům, vyhodnocování výrazů v hodinkami a v/out nebo přes příkazy, nastavte další krok okamžité windows, kontrola lokální proměnné, zarážky, Příkaz a další.
+Visual Studio nabízí komplexní možnosti ladění pro Python, včetně připojení ke spuštěným procesům, vyhodnocování výrazů v **Watch** a **okamžité** windows, kontrola místní proměnné, zarážky, krok v/out nebo přes příkazy **nastavit další příkaz**a provádění dalších akcí.
 
 Také naleznete v následujících článcích ladění specifické pro scénář:
 
@@ -38,7 +38,7 @@ Také naleznete v následujících článcích ladění specifické pro scéná�
 > [!Tip]
 > Python v sadě Visual Studio podporuje ladění bez projektu. Samostatný Python soubor otevřít, klikněte pravým tlačítkem v editoru vyberte **začínat ladění**, a sady Visual Studio spustí skript s prostředím globální výchozí nastavení (naleznete v tématu [prostředí Pythonu](managing-python-environments-in-visual-studio.md)) a bez argumentů. Ale od té chvíle má úplnou podporu ladění.
 >
-> K řízení prostředí a argumenty, vytvořte projekt pro kód, který se snadno provádí pomocí [z existující Pythonu kódu](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files) šablony projektu.
+> K řízení prostředí a argumenty, vytvořte projekt pro kód, který se snadno provádí pomocí [z existující Pythonu kódu](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) šablony projektu.
 
 <a name="debugging-with-a-project"></a>
 
@@ -46,65 +46,65 @@ Také naleznete v následujících článcích ladění specifické pro scéná�
 
 Základní ladicí pracovní postup zahrnuje nastavení zarážek, krokování kódem, kontrolu hodnoty a zpracování výjimek, jak je popsáno v následujících částech.
 
-Ladicí relace začíná **ladění > Spustit ladění** příkazu **Start** tlačítko na panelu nástrojů nebo klávesy F5. Tyto akce spuštění po spuštění souboru projektu (ukazuje tučně v Průzkumníku řešení) s aktivní prostředí projektu a jakékoli argumenty příkazového řádku nebo cesty pro hledání, které byly zadány ve vlastnostech projektu (naleznete v tématu [ladění projektu možnosti](#project-debugging-options). **Visual Studio 2017 verze 15.6** a upozorní vás později, pokud není nutné nastavit spouštěcí soubor; starší verze může otevřít okno výstupu překladač Pythonu s nebo krátce se zobrazí v okně Výstup a zmizí. V každém případě klikněte pravým tlačítkem na příslušný soubor a vyberte **nastavit jako spouštěcí soubor**.
+Ladicí relace začíná **ladění** > **spustit ladění** příkazu **Start** tlačítko na panelu nástrojů nebo **F5**klíč. Tyto akce spuštění po spuštění souboru projektu (ukazuje tučně v **Průzkumníku řešení**) s aktivní prostředí projektu a jakékoli argumenty příkazového řádku nebo vyhledávací cesty zadané v **projektu Vlastnosti** (viz [možnosti ladění projektu](#project-debugging-options)). **Visual Studio 2017 verze 15.6** a upozorní vás později, pokud není nutné nastavit spouštěcí soubor; starší verze může otevřít okno výstupu překladač Pythonu s nebo krátce se zobrazí v okně Výstup a zmizí. V každém případě klikněte pravým tlačítkem na příslušný soubor a vyberte **nastavit jako spouštěcí soubor**.
 
 > [!Note]
-> Ladicí program vždy začíná na aktivní prostředí projektu Pythonu. Chcete-li změnit prostředí, ujistěte se, jiné jednu aktivní jak je popsáno na [výběr prostředí Pythonu pro projekt](selecting-a-python-environment-for-a-project.md).
+> Ladicí program vždy začíná na aktivní prostředí projektu Pythonu. Chcete-li změnit prostředí, ujistěte se, jiné jednu aktivní jak je popsáno na [vyberte prostředí Pythonu pro projekt](selecting-a-python-environment-for-a-project.md).
 
 ### <a name="breakpoints"></a>Zarážky
 
-Zarážky zastaví provádění kódu označenou okamžiku tak můžete kontrolovat stav programu. Nastavení zarážek kliknutím do levého okraje editoru kódu nebo tak, že kliknete pravým tlačítkem na řádek kódu a vyberete **zarážku > Vložit zarážku**. Na každém řádku s zarážky, zobrazí se červená tečka.
+Zarážky zastaví provádění kódu označenou okamžiku tak můžete kontrolovat stav programu. Nastavení zarážek kliknutím do levého okraje editoru kódu nebo tak, že kliknete pravým tlačítkem na řádek kódu a vyberete **zarážku** > **vložit zarážku**. Na každém řádku s zarážky, zobrazí se červená tečka.
 
 ![Zarážky v sadě Visual Studio](media/debugging-breakpoints.png)
 
-Kliknutím na červenou tečku nebo kliknete pravým tlačítkem na řádek kódu a výběrem **zarážku > odstranit zarážky** tím tuto zarážku odstraníte. Můžete ho také zakázat bez nutnosti odebírání pomocí **zarážku > zakázat zarážku** příkazu.
+Kliknutím na červenou tečku nebo kliknete pravým tlačítkem na řádek kódu a výběrem **zarážku** > **odstranění zarážky** tím tuto zarážku odstraníte. Můžete ho také zakázat bez nutnosti odebírání pomocí **zarážku** > **zakázat zarážku** příkazu.
 
 > [!Note]
-> Některé zarážky v jazyce Python se dá překvapivé pro vývojáře, kteří pracovali s jinými programovací jazyky. V jazyce Python je celý soubor spustitelného kódu, takže Python spustí soubor je načtena na zpracování jakékoli třídy nejvyšší úrovně nebo definice funkcí. Pokud byla nastavena na zarážku, můžete zjistit ladicí program zásadní součástí – způsob, jak prostřednictvím deklarace třídy. Toto chování správné, i když je někdy překvapivé.
+> Některé zarážky v jazyce Python se dá překvapivé pro vývojáře, kteří pracovali s jinými programovací jazyky. V jazyce Python je celý soubor spustitelného kódu, takže Python spustí soubor je načtena na zpracování jakékoli třídy nejvyšší úrovně nebo definice funkcí. Pokud byla nastavena na zarážku, můžete zjistit ladicí program zásadní součástí – způsob, jak prostřednictvím deklarace třídy. Toto chování je správná, i když je někdy překvapivé.
 
-Můžete přizpůsobit podmínky, za kterých se aktivuje zarážky, jako je zastavení jenom v případě, že proměnná je nastavena na hodnotu nebo rozsah hodnot. Chcete-li nastavit podmínky, klikněte pravým tlačítkem na červenou tečku k zarážce, vyberte **podmínku**, vytvořte výrazů pomocí kódu v Pythonu. Úplné podrobnosti o této funkci v sadě Visual Studio najdete v tématu [podmínky zarážky](../debugger/using-breakpoints.md#breakpoint-conditions)
+Můžete přizpůsobit podmínky, za kterých se aktivuje zarážky, jako je zastavení jenom v případě, že proměnná je nastavena na hodnotu nebo rozsah hodnot. Chcete-li nastavit podmínky, klikněte pravým tlačítkem na červenou tečku k zarážce, vyberte **podmínku**, vytvořte výrazů pomocí kódu v Pythonu. Úplné podrobnosti o této funkci v sadě Visual Studio najdete v tématu [podmínky zarážky](../debugger/using-breakpoints.md#breakpoint-conditions).
 
 Při nastavování podmínky, můžete také nastavit **akce** a vytvořit zprávu do protokolu v okně výstupu, Volitelně můžete pokračovat v provádění automaticky. Protokolování zprávy vytvoří, co se volá *zarážka s trasováním* bez přidání protokolování kódu přímo do vaší aplikace:
 
 ![Vytváření zarážku s trasováním s zarážku](media/debugging-tracepoint.png)
 
-### <a name="stepping-through-code"></a>Krokování kódem
+### <a name="step-through-code"></a>Krokovat kód
 
-Po zastavení na zarážce, budete mít různé způsoby, jak procházet kód nebo spuštění bloků kódu před dopadem na dřívější kód znovu. Tyto příkazy jsou dostupné v řadě míst, včetně nástrojů nejvyšší ladění **ladění** nabídky, v místní nabídce klikněte pravým tlačítkem v editoru kódu a pomocí klávesové zkratky (přes všechny příkazy jsou na všech místech):
+Po zastavení na zarážce, budete mít různé způsoby, jak procházet kód nebo spuštění bloků kódu před dopadem na dřívější kód znovu. Tyto příkazy jsou dostupné v řadě míst, včetně nástrojů nejvyšší ladění **ladění** nabídky, v místní nabídce klikněte pravým tlačítkem v editoru kódu a pomocí klávesové zkratky (ale ne všechny příkazy jsou na všech místech):
 
 | Funkce | Stisknutí kláves | Popis |
 | --- | --- | --- |
-| pokračovat | F5 | Spouští kód, dokud nebude dosaženo k další zarážce. |
-| Krokovat s vnořením | F11 | Následující příkaz spustí a zastaví. Pokud je volání funkce další příkaz, ladicí program se zastaví na prvním řádku volané funkce. |
-| Krok přes | F10 | Spustí další příkaz, včetně volání na funkci (s jeho kód) a použití jakékoli návratovou hodnotu. Krokování přes umožňuje snadno přeskočit funkce, které není potřeba ladění. |
-| Krokovat s Vystoupením | Shift+F11 | Spustí kód do konce aktuální funkci a pak kroky volání příkazu.  Tento příkaz je užitečné, když není nutné ladit zbytek aktuální funkce. |
-| Spustit ke kurzoru | Ctrl+F10 | Spustí kód do umístění blikající kurzor v editoru. Tento příkaz umožňuje snadno přeskočit část kódu, který není nutné k ladění. |
-| Nastavit další příkaz | Ctrl+Shift+F10 | Změny aktuálního spuštění bodu do umístění blikajícího kurzoru v kódu. Tento příkaz umožňuje vynechat segment kódu na všech spuštění, například pokud znáte kód je chybný nebo vytváří a nežádoucí vedlejší efekt. |
-| Zobrazit další příkaz | Alt+Num * | Vrátíte se do dalšího příkazu ke spuštění. Tento příkaz je užitečné, pokud jste hledání ve vašem kódu a nepamatujete, kde je zastavený ladicím programu. |
+| **pokračovat** | **F5** | Spouští kód, dokud nebude dosaženo k další zarážce. |
+| **Krokovat s vnořením** | **F11** | Následující příkaz spustí a zastaví. Pokud je volání funkce další příkaz, ladicí program se zastaví na prvním řádku volané funkce. |
+| **Krok přes** | **F10** | Spustí další příkaz, včetně volání na funkci (s jeho kód) a použití jakékoli návratovou hodnotu. Krokování přes umožňuje snadno přeskočit funkce, které není potřeba ladění. |
+| **Krokovat s Vystoupením** | **SHIFT**+**F11** | Spustí kód do konce aktuální funkci a pak kroky volání příkazu.  Tento příkaz je užitečné, když není nutné ladit zbytek aktuální funkce. |
+| **Spustit ke kurzoru** | **CTRL**+**F10** | Spustí kód do umístění blikající kurzor v editoru. Tento příkaz umožňuje snadno přeskočit část kódu, který není nutné k ladění. |
+| **Nastavení dalšího příkazu** | **CTRL**+**Shift**+**F10** | Změny aktuálního spuštění bodu do umístění blikajícího kurzoru v kódu. Tento příkaz umožňuje vynechat segment kódu na všech spuštění, jako když víte, kód je chybný nebo je výsledný nežádoucí vedlejší efekt. |
+| **Zobrazit další příkaz** | **ALT**+**Num**+**&#42;**| Vrátíte se do dalšího příkazu ke spuštění. Tento příkaz je užitečné, pokud jste hledání ve vašem kódu a nepamatujete, kde je zastavený ladicím programu. |
 
-### <a name="inspecting-and-modifying-values"></a>Prohlížení a úpravy hodnot
+### <a name="inspect-and-modify-values"></a>Kontrola a změny hodnot
 
-Při zastavení v ladicím programu, můžete zkontrolovat a změnit hodnoty proměnných. Okna kukátka můžete také použít ke sledování jednotlivých proměnné, stejně jako vlastní výrazy. (Viz [kontrolovat proměnné](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows) obecné podrobnosti.)
+Při zastavení v ladicím programu, můžete zkontrolovat a změnit hodnoty proměnných. Můžete také použít **Watch** okno monitorovat jednotlivé proměnné, stejně jako vlastní výrazy. (Viz [kontrolovat proměnné](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows) obecné podrobnosti.)
 
-Chcete-li zobrazit hodnotu pomocí datových tipů, jednoduše najeďte myší všechny proměnné v editoru. Můžete kliknout na hodnotu a změňte ji:
+Chcete-li zobrazit hodnotu pomocí **DataTips**, stačí najet myší přes všechny proměnné v editoru. Můžete kliknout na hodnotu a změňte ji:
 
 ![Datové tipy v ladicím programu](media/debugging-quick-tips.png)
 
-V okně Automatické hodnoty (**ladit > Windows > Automatické hodnoty**) obsahuje proměnné a výrazy, které jsou blízko aktuální příkaz. Můžete dvakrát klikněte ve sloupci Hodnota nebo vyberte a stiskněte klávesu F2, chcete-li upravit hodnoty:
+**Automatické hodnoty** okno (**ladění** > **Windows** > **automatické hodnoty**) obsahuje proměnné a výrazy, které blíží aktuální příkaz. Dvojitým kliknutím na sloupec hodnoty nebo vyberte a stiskněte **F2** upravte hodnotu:
 
 ![Okno Automatické hodnoty v ladicím programu](media/debugging-autos-window.png)
 
-V okně místních hodnot (**ladit > Windows > lokální**) zobrazí všechny proměnné, které jsou v aktuálním oboru, který lze upravovat znovu:
+**Lokální** okno (**ladění** > **Windows** > **lokální**) zobrazí všechny proměnné, které jsou v aktuální obor, který lze upravovat znovu:
 
 ![Okno místních hodnot v ladicím programu](media/debugging-locals-window.png)
 
-Další informace o používání automatické hodnoty a místní hodnoty, najdete v článku [kontrola proměnných v oknech pro automatické hodnoty a místní hodnoty Windows](../debugger/autos-and-locals-windows.md).
+Pro další použití v **automatické hodnoty** a **lokální**, naleznete v tématu [kontrolovat proměnné v okně Automatické hodnoty a místní hodnoty](../debugger/autos-and-locals-windows.md).
 
-Oknech kukátka (**ladění > Windows > sledovat > Podívejte se na 1 až 4**) vám umožní zadat libovolné výrazy Pythonu a zobrazit výsledky. Výrazy jsou již znovu pro každý krok:
+**Watch** systému windows (**ladění** > **Windows** > **Watch**  >   **Podívejte se na 1 až 4**) vám umožní zadat libovolné výrazy Pythonu a zobrazit výsledky. Výrazy jsou již znovu pro každý krok:
 
 ![Okno kukátka v ladicím programu](media/debugging-watch-window.png)
 
-Další informace o používání Watch, naleznete v tématu [nastavení sledování u proměnných pomocí kukátko a Rychlé kukátko Windows](../debugger/watch-and-quickwatch-windows.md).
+Pro další použití v **Watch**, naleznete v tématu [nastavení sledování u proměnných v oknech kukátka a Rychlé kukátko](../debugger/watch-and-quickwatch-windows.md).
 
 Při kontrole řetězcovou hodnotu (`str`, `unicode`, `bytes`, a `bytearray` jsou všechny považovány za řetězce k tomuto účelu), s ikonou lupy se zobrazí na pravé straně hodnoty. Kliknutím na ikonu se zobrazí hodnota řetězec bez uvozovek v dialogovém okně automaticky otevírané okno s zabalení a posouvání, což je užitečné pro dlouhé řetězce. Kromě toho na tlačítko se šipkou rozevíracího seznamu na ikonu vám umožní vybrat prostý text, HTML, XML a JSON vizualizace:
 
@@ -120,7 +120,7 @@ Pokud dojde k chybě ve svém programu během ladění, ale pro něj nemáte obs
 
 V tomto okamžiku můžete kontrolovat stav programu, včetně zásobníku volání. Ale pokud se pokusíte krokovat kód, výjimka dál vyvolávána, dokud se buď zpracovává nebo ukončení programu.
 
-**Ladit > Windows > Nastavení výjimek** příkaz nabídky zobrazí okno, ve kterém můžete rozbalit **Python výjimky**:
+**Ladění** > **Windows** > **nastavení výjimek** příkaz nabídky zobrazí okno, ve kterém můžete rozbalit **Pythonu Výjimky**:
 
 ![Okno výjimky](media/debugging-exception-settings.png)
 
@@ -132,7 +132,7 @@ Ke konfiguraci výjimky, které nejsou uvedené v tomto seznamu, klikněte na tl
 
 ## <a name="project-debugging-options"></a>Možnosti ladění projektu
 
-Ve výchozím nastavení spustí ladicí program programu pomocí standardní Spouštěč Pythonu, bez argumentů příkazového řádku a žádné jiné speciální cesty nebo podmínky. Možnosti spuštění jsou změnit prostřednictvím vlastnosti ladění projektu přistupuje váš projekt v Průzkumníku řešení klikněte pravým tlačítkem myši na výběr **vlastnosti**a vyberete **ladění** kartu.
+Ve výchozím nastavení spustí ladicí program programu pomocí standardní Spouštěč Pythonu, bez argumentů příkazového řádku a žádné jiné speciální cesty nebo podmínky. Možnosti spuštění jsou změnit prostřednictvím vlastnosti ladění projektu přistupovat kliknutím pravým tlačítkem myši na projekt v **Průzkumníka řešení**, kde vyberou **vlastnosti**a výběr **ladění**  kartu.
 
 ![Vlastnosti ladění projektu](media/debugging-project-properties.png)
 
@@ -140,34 +140,34 @@ Ve výchozím nastavení spustí ladicí program programu pomocí standardní Sp
 
 | Možnost | Popis |
 | --- | --- |
-| Standardní Spouštěč Pythonu | Použití ladění kódu napsaného v přenosných Pythonu, který je kompatibilní s CPython, IronPython a variant, jako jsou Stackless Python. Poskytuje nejlepší prostředí pro ladění čistého kódu v Pythonu. Jestliže se pokusíte připojit ke spuštěnému `python.exe` procesu, se používá tento program. Tento program také poskytuje [ladění ve smíšeném režimu](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) pro CPython, díky tomu Krokovat bez problémů mezi kódu C/C++ a kódu v Pythonu. |
-| Webový Spouštěč | Spustí výchozí prohlížeč při spuštění a povolí ladění šablon. Najdete v článku [ladění šablon webové](python-web-application-project-templates.md#debugging) části Další informace. |
-| Django webový Spouštěč | Stejné jako webový Spouštěč a zobrazuje pouze pro zpětnou kompatibilitu. |
-| Spouštěč pro IronPython (.NET) | Používá ladicí program .NET, která funguje jenom v Ironpythonu, ale umožňuje krokování mezi jakéhokoli projektu .NET jazyka, včetně C# a VB. Tento program se používá, pokud je připojit ke spuštěnému procesu .NET, který je hostitelem Ironpythonu. |
+| **Standardní Spouštěč Pythonu** | Použití ladění kódu napsaného v přenosných Pythonu, který je kompatibilní s CPython, IronPython a variant, jako jsou Stackless Python. Poskytuje nejlepší prostředí pro ladění čistého kódu v Pythonu. Jestliže se pokusíte připojit ke spuštěnému *python.exe* procesu, se používá tento program. Tento program také poskytuje [ladění ve smíšeném režimu](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) pro CPython, díky tomu Krokovat bez problémů mezi kódu C/C++ a kódu v Pythonu. |
+| **Webový Spouštěč** | Spustí výchozí prohlížeč při spuštění a povolí ladění šablon. Najdete v článku [ladění šablon webové](python-web-application-project-templates.md#debugging) části Další informace. |
+| **Django webový Spouštěč** | Stejné jako webový Spouštěč a zobrazuje pouze pro zpětnou kompatibilitu. |
+| **Spouštěč pro IronPython (.NET)** | Používá ladicí program .NET, která funguje jenom v Ironpythonu, ale umožňuje krokování mezi jakéhokoli projektu .NET jazyka, včetně C# a VB. Tento program se používá, pokud je připojit ke spuštěnému procesu .NET, který je hostitelem Ironpythonu. |
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Možností spuštění (cesty pro hledání, argumenty pro spuštění a proměnných prostředí)
 
 | Možnost | Popis |
 | --- | --- |
-| Cesty pro hledání | Tyto hodnoty odpovídat, co se zobrazí v uzlu cesty pro hledání projekt v Průzkumníku řešení. Tuto hodnotu Tady můžete upravit, ale je jednodušší použít Průzkumník řešení, která vám umožňuje procházet složky a automaticky převede do formuláře relativní cesty. |
-| Argumenty skriptu | Tyto argumenty jsou přidány do příkaz použitý ke spuštění skriptu, vyskytující se po název souboru vašeho skriptu. První položka zde je k dispozici pro váš skript jako `sys.argv[1]`, druhý jako `sys.argv[2]`, a tak dále. |
-| Argumenty pro interpret | Tyto argumenty jsou přidány do příkazového řádku Spouštěč před název vašeho skriptu. Běžné argumenty tady `-W ...` řízení upozornění `-O` mírně optimalizovat váš program a `-u` používat vstupně-výstupní operace bez vyrovnávací paměti. IronPython uživatelé můžou toto pole použít k předání `-X` možnosti, jako například `-X:Frames` nebo `-X:MTA`. |
-| Cesta k interpretu | Přepíše cestu spojené s aktuálním prostředí.  Hodnota může být užitečné při spouštění skriptu nestandardní překladač. |
-| Proměnné prostředí | V tomto poli víceřádkový text, přidat položky ve formuláři `NAME=VALUE`. Protože toto nastavení je použito jako poslední, v horní části všechny existující globálních proměnných prostředí a po `PYTHONPATH` nastavena podle nastavení cesty pro hledání, můžete použít k ruční přepsání něco z toho jiné proměnné. |
+| **Cesty pro hledání** | Tyto hodnoty odpovídat, jak je zobrazeno v uzlu projektu cesty pro hledání v **Průzkumníka řešení**. Tuto hodnotu Tady můžete upravit, ale je snáze se použít **Průzkumníka řešení** , který vám umožňuje procházet složky a automaticky převede do formuláře relativní cesty. |
+| **Argumenty skriptu** | Tyto argumenty jsou přidány do příkaz použitý ke spuštění skriptu, vyskytující se po název souboru vašeho skriptu. První položka zde je k dispozici pro váš skript jako `sys.argv[1]`, druhý jako `sys.argv[2]`, a tak dále. |
+| **Argumenty pro interpret** | Tyto argumenty jsou přidány do příkazového řádku Spouštěč před název vašeho skriptu. Běžné argumenty tady `-W ...` řízení upozornění `-O` mírně optimalizovat váš program a `-u` používat vstupně-výstupní operace bez vyrovnávací paměti. IronPython uživatelé můžou toto pole použít k předání `-X` možnosti, jako například `-X:Frames` nebo `-X:MTA`. |
+| **Cesta k interpretu** | Přepíše cestu spojené s aktuálním prostředí. Hodnota může být užitečné při spouštění skriptu nestandardní překladač. |
+| **Proměnné prostředí** | V tomto poli víceřádkový text, přidat položky ve formuláři \<NAME > =\<hodnota >. Protože toto nastavení je použito jako poslední, v horní části všechny existující globálních proměnných prostředí a po `PYTHONPATH` nastavena podle nastavení cesty pro hledání, můžete použít k ruční přepsání něco z toho jiné proměnné. |
 
 <a name="the-debug-interactive-window"></a>
 
 ## <a name="immediate-and-interactive-windows"></a>Okamžité a interaktivního okna
 
-Existují dva interaktivních oken, můžete použít během relace ladění: standardní příkazové okno Visual Studio a ladit interaktivní okno Pythonu.
+Existují dva interaktivních oken, můžete použít během relace ladění: standardní sady Visual Studio **okamžité** okně a **interaktivní ladění Pythonu** okna.
 
-Podokna (**ladit > Windows > okamžité**) se používá pro rychlé vyhodnocení výrazů Python a kontroly nebo přiřazení proměnných v běžící aplikaci. Zobrazit obecné [podokna](../ide/reference/immediate-window.md) , kde najdete podrobnosti.
+**Okamžité** okno (**ladění** > **Windows** > **okamžité**) se používá pro rychlé vyhodnocení Výrazy Pythonu a kontroly nebo přiřazení proměnných v běžící aplikaci. Zobrazit obecné [podokna](../ide/reference/immediate-window.md) , kde najdete podrobnosti.
 
-Ladění interaktivní okno Pythonu (**ladit > Windows > Interaktivní ladění Pythonu**) bohatší tak kompletní [interaktivní okno REPL](python-interactive-repl-in-visual-studio.md) dojde k dispozici při ladění, včetně psaní a spuštění kódu. Automaticky připojí k jakékoli proces spuštěný v ladicím programu pomocí Spouštěč standardní Pythonu (včetně procesů připojená prostřednictvím **ladit > připojit k procesu**). Není, ale k dispozici při ladění ve smíšeném režimu C/C++.
+**Interaktivní ladění Pythonu** okno (**ladění** > **Windows** > **interaktivní ladění Pythonu**) je bohatší tak kompletní [interaktivní okno REPL](python-interactive-repl-in-visual-studio.md) dojde k dispozici při ladění, včetně psaní a spouštění kódu. Automaticky připojí k jakékoli proces spuštěný v ladicím programu pomocí Spouštěč standardní Pythonu (včetně procesů připojená prostřednictvím **ladění** > **připojit k procesu**). Není, ale k dispozici při ladění ve smíšeném režimu C/C++.
 
 ![Ladění interaktivní okno Pythonu](media/debugging-interactive.png)
 
-Interaktivní ladění okna podporuje speciální meta příkazy kromě [standardní příkazy REPL](python-interactive-repl-in-visual-studio.md#meta-commands):
+**Interaktivní ladění** okna podporuje speciální meta příkazy kromě [standardní příkazy REPL](python-interactive-repl-in-visual-studio.md#meta-commands):
 
 | Příkaz | Arguments | Popis |
 | --- | --- | --- |
@@ -188,15 +188,15 @@ Interaktivní ladění okna podporuje speciální meta příkazy kromě [standar
 | `$up`, `$u` | | Posune aktuální rámec o jednu úroveň v trasování zásobníku. |
 | `$where`, `$w`, `$bt` | Vypíše rámce aktuálního vlákna. |
 
-Všimněte si, že standardní okna ladicího programu, jako jsou procesy, vlákna a zásobník volání nejsou synchronizované s ladění interaktivního okna. Změna aktivního procesu, vlákna nebo rámec v okně interaktivní ladění nemá vliv na ostatní okna ladicího programu. Změna aktivního procesu, vlákna nebo v jiných oknech ladicího programu snímků podobně neovlivní ladění interaktivního okna.
+Všimněte si, že standardní okna ladicího programu, jako například **procesy**, **vlákna**, a **zásobník volání** nejsou synchronizované s **interaktivní ladění** okna. Změna aktivního procesu, vlákna nebo snímek **interaktivní ladění** okno nemá vliv na ostatní okna ladicího programu. Naopak Změna aktivního procesu, vlákna nebo v jiných oknech ladicího programu snímků nemá vliv **interaktivní ladění** okna.
 
-Ladění interaktivní okno má vlastní sadu možností, které můžete přistupovat prostřednictvím **nástroje > Možnosti > Nástroje Pythonu > Interaktivní okno ladění**. Na rozdíl od pravidelných interaktivní okno Pythonu, který má samostatné instance pro každé prostředí Pythonu, je pouze jeden interaktivní okno pro ladění a vždy používá překladač Pythonu pro laděný proces. Zobrazit [možnosti – možnosti ladění](python-support-options-and-settings-in-visual-studio.md#debugging-options).
+**Interaktivní ladění** okno má vlastní sadu možností, které můžete přistupovat prostřednictvím **nástroje** > **možnosti**  >   **Nástroje Python Tools** > **interaktivní okno ladění**. Na rozdíl od standardní **interaktivní Python** okna, která má samostatné instance pro každé prostředí Pythonu, existuje pouze jeden **interaktivní ladění** okna a vždy používá překladač Pythonu pro proces je laděn. Zobrazit [možnosti – možnosti ladění](python-support-options-and-settings-in-visual-studio.md#debugging-options).
 
 ![Interaktivní okno Možnosti ladění](media/debugging-interactive-options.png)
 
 ## <a name="use-the-experimental-debugger"></a>Použít experimentální ladicí program
 
-Od verze Visual Studio 2017 Preview 4.0, můžete přejít do aplikace pomocí "experimentální ladicí program", která je založená na verzi ptvsd verze 4.1 a vyšší. Chcete-li vyjádřit výslovný souhlas, vyberte **nástroje** > **možnosti** nabídce příkaz a pak přejděte na **Python** > **experimentální**dialogové okno Možnosti a vyberte **použít experimentální ladicí program.**
+Od verze Visual Studio 2017 Preview 4.0, můžete přejít do aplikace pomocí "experimentální ladicí program", která je založená na verzi ptvsd verze 4.1 a vyšší. Chcete-li vyjádřit výslovný souhlas, vyberte **nástroje** > **možnosti** nabídce příkaz a pak přejděte na **Python** > **experimentální**dialogové okno Možnosti a vyberte **použít experimentální ladicí program**.
 
 Experimentální ladicí program je kompatibilní s pouze omezené prostředí Pythonu, jak je popsáno v následující tabulce:
 
@@ -208,7 +208,7 @@ Experimentální ladicí program je kompatibilní s pouze omezené prostředí P
 | 3.5 a novější | Ano |
 | IronPython | Ne |
 
-Pokud se pokusíte použít experimentální ladicí program s nekompatibilní prostředí, sada Visual Studio zobrazí chyba, "Ladicího programu není kompatibilní s tímto prostředím":
+Pokud se pokusíte použít experimentální ladicí program s nekompatibilní prostředí, sada Visual Studio zobrazí chybu, **ladicího programu není kompatibilní s tímto prostředím**:
 
 ![Ladicí program není kompatibilní s touto chybou prostředí při použití v experimentálním ladicím programu](media/debugging-experimental-incompatible-error.png)
 
@@ -217,7 +217,7 @@ Vyberte **zakázat v experimentálním ladicím programu** příkaz, který vyma
 > [!Note]
 > Upozornění se nezobrazí v současné době pro Python 3.3 a 3.4.
 
-Pokud si nainstalujete starší verzi ptvsd v aktuálním prostředí (například starší verze 4.0.x 3.x verze požadovaná pro vzdálené ladění), sada Visual Studio, zobrazí se chyba "balíček ladicí program nelze načíst", nebo upozornění, "ladicího programu balíčku je zastaralá":
+Pokud si nainstalujete starší verzi ptvsd v aktuálním prostředí (například starší verze 4.0.x 3.x verze požadovaná pro vzdálené ladění), sada Visual Studio zobrazí buď je chyba **balíčků ladicího programu se nepovedlo načíst**, nebo Toto upozornění **ladicí program balíček je zastaralý**:
 
 ![Ladicí program balíček nelze načíst chyby při použití v experimentálním ladicím programu](media/debugging-experimental-version-error.png)
 
@@ -225,7 +225,7 @@ Pokud si nainstalujete starší verzi ptvsd v aktuálním prostředí (napříkl
 
 Ke správě vaší instalace ptvsd, použijte **balíčky** kartu **prostředí Pythonu** okna, nebo použijte následující příkazy z příkazového řádku:
 
-```ps
+```powershell
 # Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
 pip uninstall ptvsd
 

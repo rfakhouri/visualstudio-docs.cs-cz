@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a0f9240cd729d26eecd3c098c28799369b48cea6
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8bbb27ad3368b53fc3e333d3260f2f30551c4177
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924366"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251189"
 ---
 # <a name="setup-and-install"></a>Nastavení a instalace
 
@@ -38,13 +38,13 @@ Pokud máte problémy s využitím platformy Xamarin po provedení tohoto nastav
 
 ###  <a name="for-targeting-windows-and-android"></a>Pro cílení na Windows a Android
 
-Zobrazit [Visual Studio 2017 produktová řada požadavky na systém](/visualstudio/productinfo/vs2017-system-requirements-vs) pro podrobné požadavky pro instalaci sady Visual Studio 2017.
+Zobrazit [požadavky na systém pro produktovou řadu sady Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) pro podrobné požadavky pro instalaci sady Visual Studio 2017.
 
 Instalovat Visual 2017 ve fyzickém počítači Windows (ne virtuální počítač) s Windows 10 se nainstalují všechny aktualizace.
 
 ### <a name="for-targeting-ios"></a>Pro cílení na iOS
 
-Cíl iOS emulátorů a zařízení z počítače Windows budete také potřebovat síťové Mac nebo Mac mini s macOS 10.12 nebo novější a Xcode 8.3. Zobrazit [nastavení a instalace sady Visual Studio pro Mac](/visualstudio/mac/installation) podrobnější požadavky.
+Cíl iOS emulátorů a zařízení z počítače Windows budete také potřebovat síťové Mac nebo Mac mini s macOS 10.12 nebo novější a Xcode 8.3. Zobrazit [nastavení a instalaci sady Visual Studio pro Mac](/visualstudio/mac/installation) podrobnější požadavky.
 
 <a name="windows" />
 
@@ -84,9 +84,9 @@ Během instalace můžete pokračovat s pokyny k instalaci Mac a projděte si [p
 
 1.  Vytvořit bezplatný Apple ID na [ https://appleid.apple.com ](https://appleid.apple.com/) Pokud již nemáte. Toto Apple ID je nezbytné pro instalaci a přihlášení do Xcode.
 
-2.  Stáhněte a nainstalujte Xcode z [ https://developer.apple.com/xcode/ ](https://developer.apple.com/xcode/), a přidejte svoje Apple ID, jak je popsáno na [přidávání účtu do Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
+2.  Stáhněte a nainstalujte Xcode z [ https://developer.apple.com/xcode/ ](https://developer.apple.com/xcode/), a přidejte svoje Apple ID, jak je popsáno na [přidání účtu do Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
 
-3.  Stažení a instalaci sady Visual Studio pro Mac podle pokynů v [nastavení a instalace sady Visual Studio pro Mac](/visualstudio/mac/installation).
+3.  Stažení a instalaci sady Visual Studio pro Mac podle pokynů v [nastavení a instalaci sady Visual Studio pro Mac](/visualstudio/mac/installation).
 
 4.  Po dokončení instalace Xamarinu na počítače s Windows i Mac, postupujte podle pokynů [připojení k Macu](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) , což umožní pracovat s iOS a Mac ze sady Visual Studio v počítači Windows.
 

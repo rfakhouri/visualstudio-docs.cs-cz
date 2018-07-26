@@ -10,18 +10,18 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d1c68db8282a74ce230d573450a359060bb0d12c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 84a665a39c9cfa9e0eee030d7bf4fdb9b3194bc1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155578"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251715"
 ---
-# <a name="using-visual-studio-tools-for-unity"></a>Používání sady Visual Studio Tools for Unity
+# <a name="use-visual-studio-tools-for-unity"></a>Použijte Visual Studio Tools for Unity
 
 V této části se dozvíte, jak používat Visual Studio Tools pro Unity a integrace a funkce pro zvýšení produktivity a jak pomocí ladicího programu sady Visual Studio pro vývoj pro Unity.
 
-## <a name="opening-unity-scripts-in-visual-studio"></a>Otevírání skriptů Unity v sadě Visual Studio
+## <a name="open-unity-scripts-in-visual-studio"></a>Otevírání skriptů Unity v sadě Visual Studio
 
 Jakmile je aplikace Visual Studio [nastavit jako externího skriptu editor pro Unity](getting-started-with-visual-studio-tools-for-unity.md#configure-unity-for-use-with-visual-studio), otevírání všech skriptů z Unity editoru se automaticky spustí nebo přepínače do sady Visual Studio pomocí skriptu pro zvolený otevřete. Stačí dvakrát kliknout na skript ve vašem Unity projektu.
 
@@ -33,7 +33,7 @@ Alternativně můžete otevřít Visual Studio bez skriptů, které jsou otevře
 
  Dokumentace ke službě rychle ze sady Visual Studio skriptování v Unity můžete přistupovat. Pokud Visual Studio Tools for Unity nedokáže najít dokumentaci k rozhraní API místně, pokusí se najít online.
 
-- V sadě Visual Studio, zvýrazněte nebo umístěte kurzor na slovo přes rozhraní API Unity chcete další informace o a poté stiskněte tlačítko **Ctrl + Alt + M, Ctrl + H**
+- V sadě Visual Studio, zvýrazněte nebo umístěte kurzor na slovo přes rozhraní API Unity chcete další informace o a poté stiskněte tlačítko **Ctrl**+**Alt**+**M**, **Ctrl**+**H**
 
 ## <a name="intellisense-for-unity-api-messages"></a>Technologie IntelliSense pro zprávy Unity rozhraní API
 
@@ -71,7 +71,7 @@ Průvodce MonoBehavior slouží k zobrazení seznamu všech metod rozhraní API 
 
 Vytvoření prázdné definice metod MonoBehavior pomocí Průvodce MonoBehavior:
 
-1. V sadě Visual Studio, umístěte kurzor myši místo metody vložit a potom stiskněte klávesu **Ctrl + Shift + M** spusťte Průvodce MonoBehavior.
+1. V sadě Visual Studio, umístěte kurzor myši místo metody vložit a potom stiskněte klávesu **Ctrl**+**Shift**+**M** spusťte MonoBehavior průvodce.
 
 1. V **vytvářet metody skriptů** okna, zaškrtněte políčko vedle názvu každé metody, které chcete přidat.
 
@@ -91,7 +91,7 @@ Vytvoření prázdné definice metod MonoBehavior pomocí Průvodce MonoBehavior
 
  Unity Project Exploreru zobrazí všechny soubory projektů Unity a adresáře stejným způsobem, který jako Unity Editor. To se liší od navigace Unity skripty s normální Visual Studio Průzkumníku řešení, které uspořádány do projektů a řešení vygenerované sadou Visual Studio.
 
-- V hlavní nabídce sady Visual Studio, zvolte **zobrazení > Unity Project Exploreru**. Klávesová zkratka: **Alt + Shift + E**
+- V hlavní nabídce sady Visual Studio, zvolte **zobrazení > Unity Project Exploreru**. Klávesová zkratka: **Alt**+**Shift**+**E**
 
      ![Zobrazte okno Průzkumníka projektů Unity. ] (../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -107,7 +107,7 @@ Vytvoření prázdné definice metod MonoBehavior pomocí Průvodce MonoBehavior
 
  Visual Studio Tools for Unity umožňuje ladit editoru i herní skripty pro Unity projektu pomocí výkonný ladicí program sady Visual Studio.
 
-### <a name="debugging-in-the-unity-editor"></a>Ladění v Unity editoru
+### <a name="debug-in-the-unity-editor"></a>Ladit v Unity editoru
 
 #### <a name="start-debugging"></a>Spustit ladění
 
@@ -141,9 +141,9 @@ Pro zvýšení pohodlí, můžete změnit **připojit k Unity** tlačítko **př
 
 Bude označené jako tlačítko Přehrát **připojit k Unity a hrát**. Kliknutím na toto tlačítko, nebo pomocí klávesové zkratky **F5** teď automaticky se přepne do editoru Unity a spustí hry v editoru, kromě připojení ladicího programu sady Visual Studio.
 
-Kliknutím **Zastavit** tlačítko v sadě Visual Studio nebo pomocí klávesové zkratky **Shift + F5** automaticky zastaví hry v Unity editoru.
+Kliknutím **Zastavit** tlačítko v sadě Visual Studio nebo pomocí klávesové zkratky **Shift**+**F5** automaticky zastaví hry v Unity editoru.
 
-### <a name="debugging-unity-player-builds"></a>Ladění Unity Playeru sestavení
+### <a name="debug-unity-player-builds"></a>Unity Playeru sestavení pro ladění
 
 Můžete ladit sestavení vývoj pro různé přehrávače Unity pomocí sady Visual Studio.
 
@@ -177,7 +177,7 @@ Můžete ladit sestavení vývoj pro různé přehrávače Unity pomocí sady Vi
 > [!IMPORTANT]
 > Vzhledem k tomu, že Visual Studio Tools for Unity a instanci Unity komunikují přes soket sítě UDP, brány firewall může požádat o něm. Pokud k tomu dojde, budete muset autorizovat připojení tak, aby mohla komunikovat VSTU a Unity.
 
-### <a name="debugging-a-dll-in-your-unity-project"></a>Ladění knihovny DLL ve vašem Unity projektu
+### <a name="debug-a-dll-in-your-unity-project"></a>Proveďte ladění knihovny DLL ve vašem Unity projektu
 
  Mnoho vývojářů Unity píšete kód komponenty jako externí knihovny DLL tak, aby funkce, které vytvářejí můžete snadno sdílet s jinými projekty. Visual Studio Tools for Unity usnadňuje ladění kódu v těchto knihoven DLL bez problémů s jiným kódem ve vašem Unity projektu.
 
@@ -214,9 +214,9 @@ Můžete ladit sestavení vývoj pro různé přehrávače Unity pomocí sady Vi
 
 |Příkaz|Zástupce|Místní název příkazu|
 |-------------|--------------|---------------------------|
-|Spustit Průvodce účtem MonoBehavior|**Ctrl + Shift + M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|Otevřete Průzkumníka projektů Unity|**Alt + Shift + E**|**View.UnityProjectExplorer**|
-|Přístup k dokumentaci k Unity|**Ctrl + Alt + M, Ctrl + H**|**Help.UnityAPIReference**|
+|Spustit Průvodce účtem MonoBehavior|**CTRL**+**Shift**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
+|Otevřete Průzkumníka projektů Unity|**ALT**+**Shift**+**E**|**View.UnityProjectExplorer**|
+|Přístup k dokumentaci k Unity|**CTRL**+**Alt**+**M, Ctrl**+**H**|**Help.UnityAPIReference**|
 |Připojit ladicí program Unity (přehrávač nebo editor)|***žádná výchozí hodnota***|**Debug.AttachUnityDebugger**|
 
- Kombinace klávesových zkratek můžete změnit, pokud se vám výchozí nastavení. Informace o tom, jak ho změnit, naleznete v tématu [určení a přizpůsobení klávesových zkratek v sadě Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+ Kombinace klávesových zkratek můžete změnit, pokud se vám výchozí nastavení. Informace o tom, jak ho změnit, naleznete v tématu [identifikovat a přizpůsobení klávesových zkratek v sadě Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

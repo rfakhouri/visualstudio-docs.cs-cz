@@ -9,18 +9,18 @@ description: Zjistěte, jak správci mohou přiřadit licence pro předplatitele
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0baa4ee731b8d69e18ab59c958801d94fb99869
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178397"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251702"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Přiřazení licencí na portálu správce předplatných sady Visual Studio
 
 Jako správce předplatných sady Visual Studio můžete použít portál správce předplatných přiřadit jednotlivým uživatelům a skupinám uživatelů.
 
-Pro skupiny uživatelů, můžete přiřadit předplatných k nim jednu v čase, nebo použijte **hromadné přidání** funkce nahrát seznam předplatitelů s informacemi o předplatné snadno a rychle. 
+Pro skupiny uživatelů, můžete přiřadit předplatných k nim jednu v čase, nebo použijte **hromadné přidání** funkce rychle a snadno nahrát seznam předplatitelů a jejich informace o předplatném.
 
 ## <a name="individual-assignments"></a>Jednotlivé přiřazení
 
@@ -32,7 +32,7 @@ Tady je postup, chcete-li přiřadit licenci předplatného sady Visual Studio s
 
    ![Přidat jednoho předplatitele](media\add-single-subscriber.png)
 
-3. Zadejte informace do polí formuláře pro nové předplatitele. Pokud vaše organizace používá Azure Active Directory, toto pole funguje jako vyhledávací funkce, která se najít v aktuálním adresáři, můžete vybrat správný uživatel ve výsledcích hledání. Jakmile vyberete osoby, se automaticky vyplní své jméno, přihlašovací e-mailu a e-mailové oznámení. 
+3. Zadejte informace do polí formuláře pro nové předplatitele. Pokud vaše organizace používá Azure Active Directory, toto pole funguje jako vyhledávací funkce, která se najít v aktuálním adresáři, můžete vybrat správný uživatel ve výsledcích hledání. Jakmile vyberete osoby, se automaticky vyplní své jméno, přihlašovací e-mailu a e-mailové oznámení.
 
    ![Přidáte novou e-mailovou adresu oznámení](media\add-new-subscriber-notification-email.png)
 
@@ -66,7 +66,7 @@ Tady je postup, chcete-li přiřadit licenci předplatného sady Visual Studio s
 
   ![Stáhněte si šablonu v Excelu na načíst několik předplatitelů](media\download-template-upload-subscribers.png)
 
-  >! [POZNÁMKA] Kdykoli stáhněte nejnovější verzi této šablony. Pokud používáte starší verzi, hromadné načtení může selhat.
+   > ! [POZNÁMKA] Kdykoli stáhněte nejnovější verzi této šablony. Pokud používáte starší verzi, hromadné načtení může selhat.
 
 1. V Excelovém listu vyplňte pole s informacemi pro jednotlivce, které chcete přiřadit odběrů. (*Odkaz* je volitelné pole.) Uložte soubor místně, až budete hotovi.
 
