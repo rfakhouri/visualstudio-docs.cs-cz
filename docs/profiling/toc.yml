@@ -399,36 +399,36 @@
                   href: collecting-application-statistics-for-stand-alone-applications.md
                   items:
                     - name: Spuštění samostatné aplikace s profilerem a shromažďování statistik aplikace pomocí příkazového řádku
-                      href: how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md
+                      href: how-to-launch-a-stand-alone-app-and-collect-application-statistics.md
                     - name: Připojení profileru k samostatné aplikaci .NET Framework a shromažďování statistik aplikace pomocí příkazového řádku
                       href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md
                     - name: Připojení profileru k nativní samostatné aplikaci a shromažďování statistik aplikace pomocí příkazového řádku
-                      href: how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md
+                      href: how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md
                 - name: Shromažďování podrobných dat časování pro samostatnou aplikaci pomocí příkazového řádku profileru
                   href: collecting-detailed-timing-data-for-a-stand-alone-application.md
                   items:
                     - name: Instrumentace samostatné součásti rozhraní .NET Framework a shromažďování dat časování s profilerem z příkazového řádku
-                      href: how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md
+                      href: how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md
                     - name: Instrumentace nativní samostatné součásti a shromažďování dat časování s profilerem z příkazového řádku
-                      href: how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md
+                      href: how-to-instrument-a-native-component-and-collect-timing-data.md
                 - name: Shromažďování dat souběžnosti pro samostatné aplikace pomocí příkazového řádku profileru
                   href: collecting-concurrency-data-for-stand-alone-applications.md
                   items:
                     - name: Spuštění samostatné aplikace rozhraní .NET Framework s profilerem za účelem shromáždění dat souběžnosti pomocí příkazového řádku
                       href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md
                     - name: Spuštění samostatné nativní aplikace s profilerem za účelem shromažďování dat souběžnosti pomocí příkazového řádku
-                      href: how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md
+                      href: how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md
                     - name: Připojení profileru k samostatné aplikaci .NET Framework ke shromažďování dat souběžnosti pomocí příkazového řádku
                       href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md
                     - name: Připojení profileru k nativní samostatné aplikaci a shromažďování dat souběžnosti pomocí příkazového řádku
-                      href: how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md
+                      href: how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md
                 - name: Shromažďování dat o paměti rozhraní .NET Framework pro samostatné aplikace pomocí příkazového řádku profileru
                   href: collecting-dotnet-framework-memory-data-for-stand-alone-applications.md
                   items:
                     - name: Spuštění samostatné aplikace rozhraní .NET Framework s profilerem za účelem shromáždění dat paměti pomocí příkazového řádku
-                      href: how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md
+                      href: how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md
                     - name: Připojení profileru k samostatné aplikaci .NET Framework ke shromažďování dat paměti pomocí příkazového řádku
-                      href: how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md
+                      href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
                     - name: Instrumentace samostatné součásti rozhraní .NET Framework a shromažďování dat paměti s profilerem z příkazového řádku
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
                 - name: 'Návod: Profilace z příkazového řádku s použitím vzorkování'
@@ -461,7 +461,7 @@
                     - name: Připojení profileru k webové aplikaci ASP.NET ke shromažďování dat paměti pomocí příkazového řádku
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md
                     - name: Instrumentace staticky kompilované webové aplikace ASP.NET a shromažďování dat paměti pomocí příkazového řádku profileru
-                      href: how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md
+                      href: how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md
                     - name: Instrumentace dynamicky kompilované webové aplikace ASP.NET a shromažďování dat paměti pomocí příkazového řádku profileru
                       href: how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md
                 - name: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET
