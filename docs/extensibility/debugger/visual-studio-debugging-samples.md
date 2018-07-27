@@ -1,5 +1,5 @@
 ---
-title: Ukázky ladění sady Visual Studio | Microsoft Docs
+title: Ukázky ladění sady Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,16 +15,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbc561f393b9d5f596f2def3898b447d561e74f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 58f0930a98051d1674cf1828ed738def2949ca30
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125434"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276878"
 ---
-# <a name="visual-studio-debugging-samples"></a>Visual Studio – ukázky ladění
-Dvou vzorcích ukazují, jak rozšířit pomocí ladicího programu sady Visual Studio [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
+# <a name="visual-studio-debugging-samples"></a>Ukázky ladění sady Visual Studio
+Dvě ukázky ukazují, jak rozšířit pomocí ladicího programu sady Visual Studio [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
   
--   Ladicí program výraz vyhodnocování ukázka pro spravované jazyky, je součástí [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. V [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] okně klikněte na tlačítko **ukázky** , klikněte na **všechny** nebo **C#** seznam jazyků a pak klikněte na tlačítko **ladicí program**.  
+-   Je součástí vzorku Chyba při vyhodnocování výrazu ladicího programu, pro spravované jazyky, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. V [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] okna, klikněte na tlačítko **ukázky** klikněte na tlačítko **všechny** nebo **jazyka C#** v seznamu jazyků a pak klikněte na tlačítko **ladicí program**.  
   
--   Visual Studio ladění modul ukázce pro nativní jazyky, je k dispozici na galerie kódů MSDN. Další informace najdete v části této stránky na webu společnosti Microsoft: [Visual Studio ladění ukázka modul](http://go.microsoft.com/fwlink/?LinkId=150236).
+-   Visual Studio ladit modul vzorek, nativním jazyce, je k dispozici na Galerie kódu na webu MSDN. Další informace najdete v tématu [ukázku modul ladění Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236) na webu společnosti Microsoft.

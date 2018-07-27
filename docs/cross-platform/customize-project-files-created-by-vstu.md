@@ -1,7 +1,7 @@
 ---
 title: Přizpůsobení souborů projektu vytvořených nástrojem VSTU | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 07/26/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 60b8cc1d-cacc-404d-b768-77e81bc354f8
@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 274b23eef51bfa86e961a850de7d4c33c217995c
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
+ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252333"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39310082"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Přizpůsobení souborů projektu vytvořených nástrojem VSTU
 Visual Studio Tools for Unity poskytuje stylu Unity zpětné volání při generování souboru projektu. Zaregistrujte se `VisualStudioIntegration.ProjectFileGeneration` událost pro úpravu souboru projektu pokaždé, když se znovu vygeneroval.
@@ -26,6 +26,7 @@ Visual Studio Tools for Unity poskytuje stylu Unity zpětné volání při gener
 ## <a name="example"></a>Příklad
 
 ```csharp
+#if ENABLE_VSTU
 using System;
 using System.IO;
 using System.Linq;
@@ -65,6 +66,7 @@ public class ProjectFileHook
         };
     }
 }
+#endif
 ```
 
 ## <a name="see-also"></a>Viz také:

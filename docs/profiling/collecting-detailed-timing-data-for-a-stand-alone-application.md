@@ -1,5 +1,5 @@
 ---
-title: Shromažďování podrobných dat časování pro samostatnou aplikaci pomocí příkazového řádku profileru | Microsoft Docs
+title: Shromažďování podrobných dat časování pro samostatnou aplikaci pomocí příkazového řádku Profiler | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,35 +13,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7203a337e69fd83ad97ee50c383f784ec0087d31
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 63ebe0869ec0450604468283f9db1769314a3ce7
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335811"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276348"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Shromažďování podrobných dat časování pro samostatnou aplikaci pomocí příkazového řádku profileru
-Tato část popisuje postupy a možnosti pro podrobné výkonu shromažďování dat pro součást klienta (samostatná) pomocí metody instrumentace z příkazového řádku.  
+Tato část popisuje postupy a možnosti k shromažďování údajů o výkonu podrobné údaje pro klienta (samostatné) součásti pomocí metody instrumentace z příkazového řádku.  
   
 ## <a name="common-tasks"></a>Běžné úlohy  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Profil aplikace rozhraní .NET Framework s použitím instrumentace**|-   [Postupy: instrumentace součásti .NET a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Profil aplikace C/C++ s použitím instrumentace**|-   [Postupy: instrumentace nativní součásti a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Přidání dat interakce vrstvy**|-   [Shromažďování dat interakce vrstev](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
+|**Profilovat aplikaci rozhraní .NET Framework pomocí instrumentace**|-   [Postupy: instrumentace součásti .NET a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
+|**Profil aplikace v jazyce C/C++ pomocí instrumentace**|-   [Postupy: instrumentace nativní součásti a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
+|**Přidání dat interakce vrstev**|-   [Shromažďování dat interakce vrstev](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Související úlohy
   
-### <a name="profile-stand-alone-applications"></a>Profil samostatných aplikací  
+### <a name="profile-stand-alone-applications"></a>Samostatné aplikace profilu  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Profil aplikace pomocí vzorkování**|-   [Shromažďování statistik aplikace pomocí vzorkování](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
-|**Profil .NET collection přidělení a uvolnění paměti**|-   [Shromažďování dat paměti .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
-|**Profil aktivita prostředku kolizí a přístup z více vláken**|-   [Shromažďování dat souběžnosti](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
+|**Profil aplikace s použitím vzorkování**|-   [Shromažďování statistik aplikace pomocí vzorkování](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
+|**Profilování paměti .NET přidělování a uvolňování paměti kolekce**|-   [Shromažďování dat paměti .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
+|**Profil aktivita prostředku kolize a vlákna**|-   [Shromažďování dat souběžnosti](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
   
-### <a name="profile-by-using-the-instrumentation-method"></a>Profilu pomocí metody instrumentace  
+### <a name="profile-by-using-the-instrumentation-method"></a>Profil s použitím metody instrumentace  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
