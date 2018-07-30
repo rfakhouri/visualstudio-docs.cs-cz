@@ -49,7 +49,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
      Existují tři soubory:  
         - **Host.JSON** pro popis globální konfiguraci možností pro hostitele  
         - **Local.Settings.JSON** ke konfiguraci nastavení služby.  
-        – Šablona projektu také vytvoří výchozí HttpTrigger. Pro účely tohoto testovacího prostředí, měli byste odstranit **HttpTrigger.cs** soubor z projektu.  
+        - Šablona projektu také vytvoří výchozí HttpTrigger. Pro účely tohoto testovacího prostředí, měli byste odstranit **HttpTrigger.cs** soubor z projektu.  
 
     Otevřít **local.settings.json**. Použije se výchozí s tím, že dvě nastavení prázdný připojovacího řetězce.
 
