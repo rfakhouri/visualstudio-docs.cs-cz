@@ -1,7 +1,7 @@
 ---
-title: Publikování aplikace Python do Azure App Service
-description: Postup publikování webové aplikace Python přímo do služby Azure App Service ze sady Visual Studio, včetně potřeby obsahu pro soubor web.config.
-ms.date: 09/27/2017
+title: Publikování aplikace v Pythonu do Azure App Service
+description: Jak publikovat webovou aplikaci Python přímo do služby Azure App Service ze sady Visual Studio, včetně nutný obsah pro soubor web.config.
+ms.date: 07/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,74 +12,77 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e28d306ede93cc4552e085e07e5ac5e977158386
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 249774da4ef088ae1f8a0b11c932d7ed92d1bcde
+ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032239"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39310095"
 ---
 # <a name="publishing-to-azure-app-service"></a>Publikování do služby Azure App Service
 
-Visual Studio poskytuje možnost publikovat webovou aplikaci Python přímo do služby Azure App Service. Publikování do služby Azure App Service znamená kopírování potřebné soubory na server a nastavením odpovídající `web.config` soubor, který se dá pokyn webového serveru, jak spusťte aplikaci.
+> [!Important]
+> Nasazení aplikace v Pythonu do služby Azure App Service pro Linux se v současné době nepodporuje ze sady Visual Studio. Microsoft také plány přestat používat Python ve službě App Service ve Windows. V tomto článku, pokud je k dispozici budou aktualizace zveřejňovány. Do té doby můžete nasadit do služby App Service v Linuxu pomocí kontejnerů. Další informace najdete v tématu [nasazení webové aplikace v Pythonu ve službě Web App for Containers](/azure/app-service/containers/quickstart-python).
 
-Proces publikování se liší mezi Visual Studio 2017 a Visual Studio 2015. Konkrétně Visual Studio 2015 automatizuje některé z kroků, včetně vytváření `web.config`, ale tato automatizace omezuje dlouhodobé flexibilitu a řízení. Visual Studio 2017 vyžaduje další provedení ručních kroků, ale zajišťuje přesnější kontrolu nad prostředí Python. Obě možnosti jsou popsány zde.
+Visual Studio poskytuje možnost publikovat přímo do služby Azure App Service webovou aplikaci v Pythonu. Publikování do služby Azure App Service znamená, že zkopírujete potřebné soubory na serveru a nastavení odpovídající `web.config` soubor, který se dá pokyn webového serveru, jak pro spuštění vaší aplikace.
+
+Proces publikování se liší mezi Visual Studio 2017 a Visual Studio 2015. Konkrétně, Visual Studio 2015 automatizuje některé z kroků, včetně vytváření `web.config`, ale tato automatizace omezuje dlouhodobé flexibility a kontroly. Visual Studio 2017 vyžaduje další ruční kroky, ale zajišťuje přesnější kontrolu nad prostředí Pythonu. Obě možnosti jsou popsány zde.
 
 > [!Note]
-> Pozadí na změny mezi Visual Studio 2015 a Visual Studio 2017, naleznete v příspěvku blogu, [publikovat do Azure na Visual Studio 2017](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/).
+> Informace o změny mezi Visual Studio 2015 a Visual Studio 2017, najdete v blogovém příspěvku, [publikovat do Azure v sadě Visual Studio 2017](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/).
 
 ## <a name="prerequisites"></a>Požadavky
 
-V tomto návodu je nutné projekt webové aplikace založené na rozhraní Bottle, Flask a Django. Pokud ještě nemáte projektu a chcete pokusit proces publikování, vytvoření projektu jednoduchá testovací následujícím způsobem:
+V tomto návodu budete potřebovat projekt webové aplikace založené na rozhraní Bottle, Flask a Django. Pokud ještě nemáte projektu a chtěli vyzkoušet proces publikování, vytvořte jednoduchou testovací projekt následujícím způsobem:
 
-1. V sadě Visual Studio, vyberte **soubor > Nový > projekt**, vyhledejte "Bottle", vyberte **Bottle webového projektu**, zadejte a název a cestu k projektu, klikněte na tlačítko **OK**. (Je součástí zatížení Python vývoj šablona Bottle; viz [instalace](installing-python-support-in-visual-studio.md).)
+1. V sadě Visual Studio, vyberte **soubor > Nový > projekt**, vyhledejte "Bottle", vyberte **Bottle webový projekt**, zadejte a název a cestu k projektu, klikněte na tlačítko **OK**. (Šablona Bottle je součástí úlohy pro vývoj v Pythonu; viz [instalace](installing-python-support-in-visual-studio.md).)
 
-1. Postupujte podle pokynů k instalaci externích balíčků, výběr **nainstalovat do virtuálního prostředí** a vaše upřednostňované základní překladač pro virtuální prostředí. Tato volba verze jazyka Python, které jsou nainstalované v App Service se obvykle shodují.
+1. Postupujte podle pokynů k instalaci externích balíčků, že vyberete **nainstalovat do virtuálního prostředí** a základním intepretu upřednostňované virtuálního prostředí. Obvykle odpovídají tato volba verzi Pythonu, které jsou nainstalované ve službě App Service.
 
-1. Testování projektu místně stisknutím klávesy F5 nebo výběrem **ladění > Spustit ladění**.
+1. Testování projektu místně stisknutím klávesy F5 nebo výběrem **ladit > Spustit ladění**.
 
 ## <a name="create-an-azure-app-service"></a>Vytvoření služby Azure App Service
 
-Publikování do služby Azure vyžaduje cíl služby App Service. Pro tento účel můžete vytvořit služby App Service pomocí předplatného Azure, nebo můžete použít dočasnou lokalitu.
+Publikování na platformě Azure, je požadován cíl služby App Service. K tomuto účelu můžete vytvořit služby App Service pomocí předplatného Azure nebo můžete použít dočasný Web.
 
-Pokud ještě nemáte předplatné, začínat [bezplatný účet Azure úplné](https://azure.microsoft.com/free/), což zahrnuje štědrém kredity u služby Azure. Také vzít v úvahu registrujete [Visual Studio Dev Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/), který vám dává 25 platební každý měsíc jeden rok.
+Pokud ještě nemáte předplatné, začněte tématem [bezplatný účet Azure úplné](https://azure.microsoft.com/free/), což zahrnuje velkorysá kredity pro služby Azure. Také zvažte [Visual Studio Dev Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/), kterým získáte kredit 25 USD měsíčně za celý rok.
 
 > [!Tip]
-> I když Azure požádá o platební karty se ověřit svůj účet, karta není účtován. Můžete také nastavit [útrat](/azure/billing/billing-spending-limit) rovna vaší bezplatný kredit zaručit, že dojde k žádné další poplatky. Kromě toho Azure poskytuje bezplatné služby App Service vrstvy plán, který je ideální pro jednoduchá testovací aplikace, jak je popsáno v následující části.
+> I když vyzve k zadání platební kartu k ověření svého účtu Azure, se neúčtuje karty. Můžete také nastavit [limit útraty](/azure/billing/billing-spending-limit) rovna vaše bezplatné kredity k zajištění, že dojde k žádné další poplatky. Kromě toho Azure nabízí free služby App Service úroveň plánu, který je ideální pro aplikace jednoduchý test, jak je popsáno v další části.
 
-### <a name="using-a-subscription"></a>Použití předplatného
+### <a name="using-a-subscription"></a>Pomocí předplatného
 
-S aktivní předplatné Azure vytvořte aplikační službu s prázdnou webovou aplikaci takto:
+S aktivní předplatné Azure vytvořte službu App Service s prázdnou webovou aplikaci následujícím způsobem:
 
 1. Přihlaste se na [portal.azure.com](https://portal.azure.com).
-1. Vyberte **+ nový**, pak vyberte **Web + mobilní** následuje **webové aplikace**.
-1. Zadejte název webové aplikace, ponechejte **skupiny prostředků** "Vytvořit nové" a zvolte **Windows** jako operační systém.
-1. Vyberte **umístění plán služby App**, vyberte **vytvořit nový**a zadejte název a umístění. Potom vyberte **cenová úroveň**, přejděte dolů a vyberte **F1 Free** plánování, stiskněte klávesu **vyberte**, za nímž následují **OK** a potom **Vytvořit**.
-1. (Volitelné) Po vytvoření služby App Service, přejděte k němu, vyberte **profilu publikování Get**a uložte soubor místně.
+1. Vyberte **+ nová**a pak vyberte **Web + mobilní zařízení** následovaný **webovou aplikaci**.
+1. Zadejte název webové aplikace, ponechejte **skupiny prostředků** "Vytvořit nový" a zvolte **Windows** jako operační systém.
+1. Vyberte **plán App service/umístění**vyberte **vytvořit nový**a zadejte název a umístění. Potom vyberte **cenová úroveň**, přejděte dolů a vyberte **F1 Free** plánovat, stiskněte klávesu **vyberte**následovaný **OK** a potom **Vytvořit**.
+1. (Volitelné) Po vytvoření služby App Service přejít k němu, vyberte **získat profil publikování**a uložte si soubor .CSR místně.
 
 ### <a name="using-a-temporary-app-service"></a>Pomocí dočasného služby App Service
 
-Vytvořte dočasnou služby App Service bez předplatného Azure následujícím způsobem:
+Vytvořte dočasný službu App Service bez předplatného Azure následujícím způsobem:
 
 1. Otevřete prohlížeč, abyste [try.azurewebsites.net](https://try.azurewebsites.net).
-1. Vyberte **webové aplikace** typu aplikace, pak vyberte **Další**.
-1. Vyberte **prázdný web**, za nímž následují **vytvořit**.
-1. Přihlaste se pomocí přihlášení prostřednictvím sociální sítě své volby a po krátkou dobu je připraven na zobrazené adrese URL vaší lokality.
-1. Vyberte **stáhnout profil publikování** a uložte `.publishsettings` souboru, který můžete použít později.
+1. Vyberte **webovou aplikaci** typ aplikace vyberte **Další**.
+1. Vyberte **prázdný web**následovaný **vytvořit**.
+1. Přihlaste se pomocí přihlášení prostřednictvím sociální sítě podle vašeho výběru a po krátkou dobu je připraven na zobrazenou adresu URL vašeho webu.
+1. Vyberte **stáhnout profil publikování** a uložit `.publishsettings` souboru, který můžete použít později.
 
-## <a name="configure-python-on-azure-app-service"></a>Konfigurace Python v Azure App Service
+## <a name="configure-python-on-azure-app-service"></a>Konfigurace Pythonu ve službě Azure App Service
 
-Jakmile je aplikační službu s prázdnou webová aplikace spuštěná, (buď v rámci vašeho předplatného nebo na lokalitu volné), nainstalujte zvolené verzi jazyka Python, jak je popsáno [Správa Python ve službě Azure App Service](managing-python-on-azure-app-service.md). Publikování z Visual Studio 2017 záznam přesnou cestu k překladač Pythonu nainstalované s příponou lokality, jak je popsáno v tomto článku.
+Jakmile budete mít služby App Service s prázdnou webovou aplikací běžící (buď v rámci vašeho předplatného, nebo na bezplatné webu), nainstalujte zvolené verzi jazyka Python, jak je popsáno [Správa Pythonu ve službě Azure App Service](managing-python-on-azure-app-service.md). Publikování ze sady Visual Studio 2017, zaznamenejte přesnou cestu k interpretu Pythonu nainstalována s rozšířením webu, jak je popsáno v tomto článku.
 
-V případě potřeby můžete taky nainstalovat `bottle` balíček pomocí procesu v těchto pokynech, protože tento balíček je nainstalován jako součást další kroky v tomto návodu.
+V případě potřeby můžete také nainstalovat `bottle` balíček pomocí procesu v těchto pokynech, protože tento balíček nainstaluje jako součást jiné kroky v tomto názorném postupu.
 
-## <a name="publish-to-app-service---visual-studio-2017"></a>Publikování do služby App Service - Visual Studio 2017
+## <a name="publish-to-app-service---visual-studio-2017"></a>Publikování do služby App Service – Visual Studio 2017
 
-Publikování do služby Azure App Service z kopie Visual Studio 2017 pouze soubory v projektu na server. Je proto nutné, vytvoření potřebné soubory pro konfiguraci prostředí serveru.
+Publikování do služby Azure App Service ze sady Visual Studio 2017 kopií pouze soubory v projektu na serveru. Je proto nutné, vytvořit soubory potřebné ke konfiguraci prostředí serveru.
 
-1. V sadě Visual Studio **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a vyberte **Přidat > novou položku...* . V dialogovém okně se zobrazí výběrem šablony "Azure web.config (rychlé CGI)" a vyberte možnost OK. Tím se vytvoří `web.config` souboru do kořenového adresáře projektu.
+1. V sadě Visual Studio **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a vyberte **Přidat > Nová položka...* . V zobrazeném dialogovém okně vyberete šablonu "Web.config pro Azure (Fast CGI)" a vyberte OK. Tím se vytvoří `web.config` souboru v kořenovém adresáři projektu.
 
-1. Změnit `PythonHandler` položku v `web.config` tak, aby cesta odpovídá Python instalace na serveru (najdete v části [odkaz Konfigurace služby IIS](https://www.iis.net/configreference) (iis.net) najdete přesné informace). Příklad pro jazyk Python 3.6.1 x64 položky by měl vypadat takto:
+1. Upravit `PythonHandler` záznam v `web.config` tak, aby cesta odpovídá instalaci Pythonu na serveru (naleznete v tématu [odkaz Konfigurace služby IIS](https://www.iis.net/configreference) (iis.net) najdete přesné informace). Například pro Python 3.6.1 x64 položka by měla vypadat následovně:
 
     ```xml
     <system.webServer>
@@ -91,132 +94,132 @@ Publikování do služby Azure App Service z kopie Visual Studio 2017 pouze soub
     </system.webServer>
     ```
 
-1. Nastavte `WSGI_HANDLER` položku v `web.config` podle potřeby pro architekturu používáte:
+1. Nastavte `WSGI_HANDLER` záznam v `web.config` podle potřeby pro architekturu používáte:
 
-    - **Bottle**: přidejte závorkách po `app.wsgi_app` jak je uvedeno níže. To je nezbytné, protože tento objekt je funkce (viz `app.py`) namísto proměnné:
+    - **Bottle**: Přidat závorky po `app.wsgi_app` jak je znázorněno níže. To je nezbytné, protože tento objekt je funkce (viz `app.py`) namísto proměnné:
 
         ```xml
         <!-- Bottle apps only -->
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: Změna `WSGI_HANDLER` hodnotu `<project_name>.app` kde `<project_name>` odpovídá názvu projektu. Můžete najít přesný identifikátor prohlížením `from <project_name> import app` příkaz v `runserver.py`. Například pokud projekt s názvem "FlaskAzurePublishExample", položka by měly vypadat následovně:
+    - **Flask**: Změna `WSGI_HANDLER` hodnota, která se `<project_name>.app` kde `<project_name>` odpovídá názvu vašeho projektu. Můžete najít přesně identifikátor pohledem `from <project_name> import app` příkaz v `runserver.py`. Například pokud má projekt název "FlaskAzurePublishExample", položka bude vypadat takto:
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django**: dvě změny jsou potřeba k `web.config` pro projekty Django. Nejprve změnit `WSGI_HANDLER` hodnotu `django.core.wsgi.get_wsgi_application()` (objekt je ve `wsgi.py` souborů):
+    - **Django**: dvě změny, které jsou potřeba k `web.config` pro projekty v Django. Nejprve změňte `WSGI_HANDLER` hodnota, která se `django.core.wsgi.get_wsgi_application()` (objekt je ve `wsgi.py` souboru):
 
         ```xml
         <!-- Django apps only -->
         <add key="WSGI_HANDLER" value="django.core.wsgi.get_wsgi_application()"/>
         ```
 
-        Druhý, přidejte následující položku pod pro `WSGI_HANDLER`, ve které nahradíte `DjangoAzurePublishExample` s názvem projektu:
+        Za druhé, přidejte následující položku níže pro `WSGI_HANDLER`a nahraďte `DjangoAzurePublishExample` s názvem vašeho projektu:
 
         ```xml
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **Jenom aplikace Django**: projektu v Django `settings.py` soubor, přidejte domény adresy URL webu `ALLOWED_HOSTS` jak vidíte níže, nahraďte 'vspython-test-02.azurewebsites .net, adresa URL, samozřejmě:
+1. **Jenom aplikace Django**: projekt v Django `settings.py` přidejte domény adresy URL webu do `ALLOWED_HOSTS` jak je znázorněno níže, nahradíte ".net vspython-test-02.azurewebsites" adresu URL a samozřejmě:
 
     ```python
     # Change the URL to your specific site
     ALLOWED_HOSTS = ['vspython-test-02.azurewebsites.net']
     ```
 
-    Nepodařilo se přidat adresu URL do pole výsledků v chybě "DisallowedHost / neplatný HTTP_HOST záhlaví: '\<URL webů\>'. Budete muset přidat '\<URL webů\>' k ALLOWED_HOSTS. "
+    Nepodařilo se přidat adresu URL svého výsledky do pole chyby "DisallowedHost na / neplatné záhlaví HTTP_HOST:"\<URL webu\>". Budete muset přidat "\<URL webu\>" k ALLOWED_HOSTS. "
 
-    Upozorňujeme, že pokud je pole prázdné, Django umožňuje automaticky "localhost", ale přidání URL produkční odebere této možnosti. Pro tohoto důvodu můžete chtít udržovat samostatné vývoj a produkční zkopíruje z `settings.py`, nebo použít k řízení běhu hodnoty proměnné prostředí.
+    Pamatujte, že pokud je pole prázdné, Django umožňuje automaticky "localhost", ale přidáte vaše adresa URL výroby odebere této funkce. Pro kopie z tohoto důvodu můžete chtít udržovat samostatnou vývoje a provozu `settings.py`, nebo použít proměnné prostředí pro řízení běhu hodnoty.
 
-1. V **Průzkumníku řešení**, rozbalte složku se stejným názvem jako projektu, klikněte pravým tlačítkem myši `static` složky, vyberte **Přidat > novou položku...** , vyberte šablonu, "Azure statické soubory web.config" a vyberte **OK**. Tato akce vytvoří jiné `web.config` v `static` složky, která zakáže Python zpracování pro tuto složku. Tato konfigurace zasílá požadavky pro statické soubory na webový server výchozí spíše než v aplikaci Python.
+1. V **Průzkumníka řešení**, rozbalte složku se stejným názvem jako váš projekt, klikněte pravým tlačítkem myši `static` složky, vyberte **Přidat > Nová položka...** , vyberte šablonu "Azure statických souborů web.config" a vyberte **OK**. Tato akce vytvoří další `web.config` v `static` složku, která zakáže zpracování pro složky Pythonu. Tato konfigurace odesílá požadavky pro statické soubory výchozí webový server, než pomocí aplikace v Pythonu.
 
-1. Uložte projekt, pak v sadě Visual Studio **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a vyberte **publikovat**.
+1. Uložte projekt, pak v sadě Visual Studio **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a vyberte **publikovat**.
 
-    ![Publikování příkaz na místní nabídku projektu](media/template-web-publish-command.png)
+    ![Publikování příkazu v místní nabídce projektu](media/template-web-publish-command.png)
 
 1. V **publikovat** kartu, která se zobrazí, vyberte cíl publikování:
 
-    a. Vlastní předplatné: vyberte **Microsoft Azure App Service**, pak **vybrat existující** následuje **publikovat**. Zobrazí se dialogové okno, ve kterém můžete vybrat odpovídající předplatné a služby app service. Pokud App Service se nezobrazí, použijte stažený profil publikování, jak je popsáno níže pro dočasné APp Service.
+    a. Ve vlastním předplatném Azure: vyberte **Microsoft Azure App Service**, pak **vybrat existující** následovaný **publikovat**. Zobrazí se dialogové okno, ve kterém můžete vybrat odpovídající předplatné a služby app service. Pokud není zobrazená služby App Service, použijte stažený profil publikování, jak je popsáno níže pro dočasné službu APp Service.
 
-    ![Publikovat do Azure kroku 1, Visual Studio 2017 existující odběry](media/tutorials-common-publish-1a-2017.png)
+    ![Publikování do Azure – krok 1, Visual Studio 2017 na stávající předplatná](media/tutorials-common-publish-1a-2017.png)
 
-    b. Pokud používáte dočasné služby App Service na try.azurewebsites.net nebo jinak budete muset použít profil publikování, vyberte **>** řízení najít **importovat profil**, vyberte tuto možnost, pak Vyberte **publikovat**. Tento parametr vyzve k zadání umístění `.publishsettings` soubor předtím stáhli.
+    b. Pokud používáte dočasné služby App Service na try.azurewebsites.net nebo jinak budete muset použít profil publikování, vyberte **>** ovládacího prvku najít **importovat profil**, vyberte tuto možnost, pak Vyberte **publikovat**. Tento parametr vyzve k zadání umístění `.publishsettings` soubor předtím stáhli.
 
-    ![Publikovat do Azure kroku 1, Visual Studio 2017 dočasné aplikační služby](media/tutorials-common-publish-1b-2017.png)
+    ![Publikování do Azure – krok 1, Visual Studio 2017, dočasné app service](media/tutorials-common-publish-1b-2017.png)
 
-1. Visual Studio zobrazí stav publikování v okně "Aktivity publikování webového" a okna Publikovat. Po dokončení publikování výchozí prohlížeč otevře na adresu URL webu. Adresa URL je také zobrazí v okně publikování.
+1. Visual Studio zobrazí stav publikování v okně "Web publikovat aktivity" a v okně Publikovat. Po dokončení publikování se otevře výchozí prohlížeč na adresu URL webu. Adresa URL se také zobrazí v okně Publikovat.
 
-1. Když se otevře v prohlížeči, zobrazí se zpráva "stránku nelze zobrazit, protože došlo k vnitřní chybě serveru." Tato zpráva znamená, že vaše prostředí Python na serveru není plně konfigurována, v takovém případě provést následující kroky:
+1. Když se otevře v prohlížeči, může se zobrazit zpráva, "na stránce nelze zobrazit, protože došlo k vnitřní chybě serveru." Tato zpráva znamená, že vaše prostředí Python na serveru není úplně nakonfigurovaný, v takovém případě postupujte takto:
 
-    a. Odkazovat znovu do [Správa Python ve službě Azure App Service](managing-python-on-azure-app-service.md), a ujistěte se, že máte odpovídající Python lokality rozšíření nainstalovat.
+    a. Odkazovat na akci [Správa Pythonu ve službě Azure App Service](managing-python-on-azure-app-service.md), ujistěte se, že máte odpovídající rozšíření nainstalované na webu Pythonu.
 
-    b. Zkontrolujte cestu k překladač Pythonu ve vaší `web.config` souboru. Cesta musí přesně shodovat umístění instalovat rozšíření zvolené lokality.
+    b. Zkontrolujte cestu k interpretu Pythonu ve vašich `web.config` souboru. Cesta musí přesně odpovídat umístění pro instalaci zvolený server rozšíření.
 
-    c. Pomocí konzole Kudu můžete upgradovat všechny balíčky uvedené ve vaší aplikaci `requirements.txt` souboru: přejděte do stejné složky Python, který se používá v `web.config`, jako například `/home/python361x64`, a spusťte následující příkaz, jak je popsáno v [Kudu konzole](managing-python-on-azure-app-service.md#azure-app-service-kudu-console)části:
+    c. Upgradovat všechny balíčky uvedené ve vaší aplikaci pomocí konzoly Kudu `requirements.txt` souboru: přejděte do stejné složky Pythonu, který se používá v `web.config`, jako například `/home/python361x64`, a spusťte následující příkaz, jak je popsáno v [KonzolaKudu](managing-python-on-azure-app-service.md#azure-app-service-kudu-console)části:
 
     ```command
     python -m pip install --upgrade -r /home/site/wwwroot/requirements.txt
     ```
 
-    Pokud se zobrazí chyby oprávnění při spuštění tohoto příkazu, zkontrolujte, že příkaz spouštíte ve složce rozšíření lokality a *není* ve složce jednoho z instalace Python výchozí služby App Service. Protože tato výchozí prostředí nelze změnit, pokusu o instalaci balíčků určitě selže.
+    Pokud se zobrazí chyby oprávnění při spuštění tohoto příkazu, zkontrolujte, že používáte příkaz ve složce rozšíření lokality a *není* ve složce instalace Pythonu výchozí služby App Service. Protože nelze upravit tyto výchozí prostředí, pokus o instalaci balíčků jistě selže.
 
-    d. Pro výstup podrobné informace o chybě, přidejte následující řádek na `web.config` v rámci `<system.webServer>` uzlu, který poskytuje podrobnější chyba výstupu:
+    d. Podrobné informace o chybě výstupu, přidejte následující řádek do `web.config` v rámci `<system.webServer>` uzlu, který poskytuje podrobnější chybový výstup:
 
     ```xml
     <httpErrors errorMode="Detailed"></httpErrors>
     ```
 
-    e. Zkuste restartovat App Service po instalaci nové balíčky. Restart je nezbytný, při změně `web.config`, jak služba aplikace nemá automatické restartování vždy, když `web.config` změny.
+    e. Zkuste restartovat App Service po instalaci nové balíčky. Restart je nezbytný, při změně `web.config`, jak služby App Service nepodporuje automatické restartování vždy, když `web.config` změny.
 
     > [!Tip]
-    > Pokud provedete změny do vaší aplikace `requirements.txt` souboru, je nutné znovu nainstalovat všechny balíčky, které jsou nyní uvedeny v tomto souboru pomocí konzole Kudu.
+    > Pokud provedete změny do vaší aplikace `requirements.txt` souboru, je nutné znovu pomocí konzoly Kudu nainstalovat všechny balíčky, které jsou teď uvedené v tomto souboru.
 
-1. Po dokončení konfigurace plně prostředí serveru, aktualizujte stránku v prohlížeči a webové aplikace by se měla objevit.
+1. Po dokončení konfigurace plně serverovém prostředí, aktualizujte stránku v prohlížeči a webovou aplikaci by se měla objevit.
 
-    ![Výsledky publikování Bottle, Flask a Django aplikace do služby App Service](media/azure-publish-results.png)
+    ![Výsledky publikování aplikace Bottle, Flask a Django do služby App Service](media/azure-publish-results.png)
 
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>Publikování do služby App Service – Visual Studio 2015
 
 > [!Note]
-> Krátké video tohoto procesu můžete najít na [kurzu Python Visual Studio: vytváření webu](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (webu youtube.com, 3m10s).
+> Krátké video tohoto procesu můžete najít na [Pythonu pro Visual Studio tento kurz: vytváření webu](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (webu youtube.com, 3m10s).
 
-1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt vyberte **publikovat**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt vyberte **publikovat**.
 
-1. V **publikovat** dialogovém okně, vyberte **Microsoft Azure App Service**:
+1. V **publikovat** dialogového okna, vyberte **Microsoft Azure App Service**:
 
-  ![Publikovat do Azure – krok 1](media/tutorials-common-publish-1.png)
+  ![Publikování do Azure – krok 1](media/tutorials-common-publish-1.png)
 
-1. Vyberte cíl:
+1. Vyberte cílovou třídu:
 
-    - Pokud máte předplatné Azure, vyberte **Microsoft Azure App Service** publikování cíl, pak v dialogovém okně následující vyberte stávající službu App Service nebo **nový** vytvořit nový.
-    - Pokud používáte lokalitu dočasné z try.azurewebsites.net, vyberte **Import** publikování cíl, pak vyhledat `.publishsettings` soubor stáhnout z webu a vyberte **OK**.
+    - Pokud máte předplatné Azure, vyberte **Microsoft Azure App Service** jako cíl publikování v následujícím dialogovém okně vyberte stávající službu App Service nebo vyberte **nový** vytvořit nový certifikát.
+    - Pokud používáte dočasný web z try.azurewebsites.net, vyberte **Import** jako cíl publikování, pak vyhledat `.publishsettings` soubor stáhnout z webu a vyberte **OK**.
 
-1. Podrobnosti služby App Service se zobrazí v **publikovat** dialogovém okně **připojení** níže uvedené kartě.
+1. Podrobnosti služby App Service se zobrazí v **publikovat** dialogového okna **připojení** kartu níže.
 
-  ![Publikovat do Azure – krok 2](media/tutorials-common-publish-2.png)
+  ![Publikování do Azure – krok 2](media/tutorials-common-publish-2.png)
 
-1. Vyberte **Další >** podle potřeby zkontrolovat další nastavení. Pokud máte v úmyslu [vzdáleně ladit kód Python ve službě Azure](debugging-remote-python-code-on-azure.md), je nutné nastavit **konfigurace** k **ladění**
+1. Vyberte **Další >** podle potřeby a zkontrolujte další nastavení. Pokud máte v úmyslu [vzdáleně ladit kód Pythonu v Azure](debugging-remote-python-code-on-azure.md), je nutné nastavit **konfigurace** k **ladění**
 
-1. Vyberte **publikování**. Jakmile vaše aplikace je nasazená do Azure, výchozí prohlížeč otevře na daném webu.
+1. Vyberte **publikovat**. Aplikaci nasadíte do Azure a váš výchozí prohlížeč otevře na dané lokalitě.
 
 Jako součást tohoto procesu Visual Studio také provede následující kroky:
 
-- Vytvoření `web.config` soubor na serveru, který obsahuje příslušné odkazy na aplikace `wsgi_app` funkce a do služby App Service výchozí Python 3.4 překladač.
-- Vypnout zpracování pro soubory v projektu `static` složky (Tato pravidla jsou ve `web.config`).
-- Publikujte virtuální prostředí pro server.
-- Přidat `web.debug.config` souborové služby a ptvsd ladění nástrojů, která umožňuje vzdálené ladění.
+- Vytvoření `web.config` souboru na serveru, který obsahuje příslušné odkazy na aplikace `wsgi_app` fungovat a do služby App Service výchozí Python 3.4 překladač.
+- Vypnout zpracování souborů v projektu `static` složky (pravidla pro tento `web.config`).
+- Virtuální prostředí publikujte na server.
+- Přidat `web.debug.config` Souborová služba a ptvsd ladicí nástroje vám umožní povolit vzdálené ladění.
 
-Jak již bylo uvedeno dříve, automatické takto zjednodušit proces publikování, ale to ztížit k řízení prostředí Python. Například `web.config` soubor je vytvořen pouze na serveru, ale není přidán do projektu. Proces publikování také trvá déle, protože kopírování celý virtuální prostředí z vývojovém počítači místo bude spoléhat na konfiguraci serveru.
+Jak bylo uvedeno dříve, postup automatického zjednodušení procesu publikování, ale to ztížit řízení prostředí Pythonu. Například `web.config` soubor je vytvořen pouze na serveru, ale nebyl přidán do projektu. Proces publikování také trvá déle, protože to je kopírování celé virtuální prostředí z vývojového počítače spíše než spoléhání se na konfiguraci serveru.
 
-Nakonec můžete chtít zachovat vlastní `web.config` souboru a používat `requirements.txt` přímo udržovat balíčků na serveru. Pomocí `requirements.txt`, zejména záruky, které vaše prostředí pro vývoj a server vždy odpovídat.
+Nakonec můžete chtít spravovat vlastní `web.config` a `requirements.txt` přímo udržovat balíčků na serveru. Pomocí `requirements.txt`, zejména záruky, které prostředí vývoje a server vždy odpovídat.
 
-## <a name="remote-debugging-on-azure-app-service"></a>Vzdálené ladění na Azure App Service
+## <a name="remote-debugging-on-azure-app-service"></a>Vzdálené ladění ve službě Azure App Service
 
-Když publikujete konfiguraci ladění z Visual Studia 2015, proces automaticky vytvoří `web.debug.config` souboru a přidá `ptvsd` nástroje složku obsahující potřebné ladění.
+Při publikování konfiguraci ladění ze sady Visual Studio 2015 automaticky vytvoří proces `web.debug.config` soubor a přidá `ptvsd` nástroje pro složku, která obsahuje nezbytné ladění.
 
-S Visual Studio 2017 místo toho přidejte tyto součásti přímo do projektu. Klikněte pravým tlačítkem na projekt v **Průzkumníku řešení**, vyberte **Přidat > novou položku...** a vyberte šablonu "Azure vzdálené ladění web.config". Ladění `web.debug.config` souboru a `ptvsd` nástroj složky objeví ve vašem projektu.
+Pomocí sady Visual Studio 2017 místo toho přidejte tyto součásti přímo do projektu. Klikněte pravým tlačítkem na projekt v **Průzkumníka řešení**vyberte **Přidat > Nová položka...** a vyberte šablonu "Azure vzdálené ladění web.config". Pro ladění `web.debug.config` souboru a `ptvsd` složky nástroje se zobrazí ve vašem projektu.
 
-Jakmile tyto soubory jsou nasazeny na server (automaticky s Visual Studiem 2015; v příštím publikování s Visual Studio 2017), můžete postupovat podle pokynů pro [Azure vzdálené ladění](debugging-remote-python-code-on-azure.md).
+Jakmile tyto soubory jsou nasazeny na server (automaticky pomocí sady Visual Studio 2015; v příštím publikování se sadou Visual Studio 2017), můžete postupovat podle pokynů pro [vzdálené ladění Azure](debugging-remote-python-code-on-azure.md).
