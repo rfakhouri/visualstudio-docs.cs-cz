@@ -11,23 +11,24 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2b134dc54e2af31bb7d9fcb3f1dcdf3d31f799b5
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 819555851b1067cbc3720b704d3d9caabcb01f45
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232215"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341866"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak vytvořit a spravovat prostředí Pythonu v sadě Visual Studio
 
 Python *prostředí* je kontext, ve kterém spuštění kódu Pythonu a zahrnuje globální, virtuální a prostředí conda. Prostředí se skládá z interpretu, knihovny (obvykle standardní knihovny Pythonu) a sada nainstalované balíčky. Společně tyto komponenty určují, syntaxi a jazykové konstrukce jsou platné, spouštění jaký operační systém funkce můžete přistupovat a které balíčky, můžete použít.
 
-V sadě Visual Studio ve Windows [okno prostředí Pythonu](#the-python-environments-window) okno, jak je popsáno v tomto článku je kde spravovat tato prostředí a vyberte jednu z nich jako výchozí pro nové projekty. U každého projektu, můžete také [vyberte konkrétní prostředí](selecting-a-python-environment-for-a-project.md) místo použití výchozí.
+V sadě Visual Studio ve Windows [ **prostředí Pythonu** ](#the-python-environments-window) okno, jak je popsáno v tomto článku je kde spravovat tato prostředí a vyberte jednu z nich jako výchozí pro nové projekty. U každého projektu, můžete také [vyberte konkrétní prostředí](selecting-a-python-environment-for-a-project.md) místo použití výchozí.
 
-**Poznámka:**: Pokud teprve začínáte pythonu v sadě Visual Studio, naleznete v následujících článcích pro potřeby pozadí:
-
-- [Práce s využitím Pythonu v sadě Visual Studio](overview-of-python-tools-for-visual-studio.md)
-- [Instalace podpory Pythonu v sadě Visual Studio](installing-python-support-in-visual-studio.md)
+>[!NOTE]
+>Pokud začínáte Python v sadě Visual Studio, naleznete v následujících článcích pro potřeby pozadí:
+>
+>- [Práce s využitím Pythonu v sadě Visual Studio](overview-of-python-tools-for-visual-studio.md)
+>- [Instalace podpory Pythonu v sadě Visual Studio](installing-python-support-in-visual-studio.md)
 
 Také Všimněte si, že nemůžete spravovat prostředí pro kód Python, který je otevřít pouze v režimu složky pomocí **souboru** > **otevřít** > **složky** příkaz. Místo toho [vytvoření projektu Pythonu z existujícího kódu](quickstart-01-python-in-visual-studio-project-from-existing-code.md) mohli využívat funkce prostředí sady Visual Studio.
 
@@ -37,22 +38,22 @@ Pokud chcete nainstalovat balíčky v prostředí, podívejte se na [balíčky k
 
 ### <a name="global-environments"></a>Globální prostředí
 
-Každé instalaci Pythonu (například, použije se Python 2.7, Python 3.6, Anaconda 4.4.0, atd., naleznete v tématu [výběru a instalace interpretů Pythonu](installing-python-interpreters.md)) udržuje svůj vlastní globálního prostředí. Každé prostředí se skládá z konkrétní interpret Pythonu, jeho standardní knihovny a sadu předem nainstalované balíčky. Instalaci balíčku do globálního prostředí je k dispozici pro všechny projekty pomocí daného prostředí. Pokud se prostředí nachází v oblasti Ochrana systému souborů (v rámci `c:\program files`, například), pak instalace balíčků vyžaduje oprávnění správce.
+Každé instalaci Pythonu (například, použije se Python 2.7, Python 3.6, Anaconda 4.4.0, atd., naleznete v tématu [interpretů Pythonu nainstalujte](installing-python-interpreters.md)) udržuje svůj vlastní globálního prostředí. Každé prostředí se skládá z konkrétní interpret Pythonu, jeho standardní knihovny a sadu předem nainstalované balíčky. Instalaci balíčku do globálního prostředí je k dispozici pro všechny projekty pomocí daného prostředí. Pokud se prostředí nachází v oblasti Ochrana systému souborů (v rámci *c:\program files*, například), pak instalace balíčků vyžaduje oprávnění správce.
 
-Globální prostředí jsou k dispozici pro všechny projekty v počítači. V sadě Visual Studio vyberte jednoho globálního prostředí jako výchozí, který se používá pro všechny projekty, pokud zvolíte jiný pro projekt. Další informace najdete v tématu [výběru prostředí k projektu](selecting-a-python-environment-for-a-project.md).
+Globální prostředí jsou k dispozici pro všechny projekty v počítači. V sadě Visual Studio vyberte jednoho globálního prostředí jako výchozí, který se používá pro všechny projekty, pokud zvolíte jiný pro projekt. Další informace najdete v tématu [vyberte prostředí pro projekt](selecting-a-python-environment-for-a-project.md).
 
 ### <a name="virtual-environments"></a>Virtuální prostředí
 
 Protože balíčky nainstalované do globálního prostředí jsou k dispozici pro všechny projekty, které používají toto prostředí, je v konfliktu může dojít, když dva projekty vyžadují, aby se nekompatibilní balíčky nebo různými verzemi stejného balíčku. Virtuální prostředí se vyhnout takové konflikty je použitím překladač a standardní knihovny z globálního prostředí ale udržování své vlastní balíček úložišť v izolovaném složky.
 
-V sadě Visual Studio můžete vytvořit virtuální prostředí pro konkrétní projekt, která je uložena v podsložce v projektu. Visual Studio poskytuje příkazu, který bude generovat `requirements.txt` souboru z virtuálního prostředí, což usnadňuje znovu vytvořte prostředí v jiných počítačích. Další informace najdete v tématu [pomocí virtuálními prostředími, která](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+V sadě Visual Studio můžete vytvořit virtuální prostředí pro konkrétní projekt, která je uložena v podsložce v projektu. Visual Studio poskytuje příkazu, který bude generovat *souboru requirements.txt* souboru z virtuálního prostředí, což usnadňuje znovu vytvořte prostředí v jiných počítačích. Další informace najdete v tématu [použít virtuální prostředí](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ### <a name="conda-environments"></a>Prostředí Conda
 
 Prostředí conda je vytvořené využitím `conda` nástroje, nebo pomocí integrovaného systému conda management v sadě Visual Studio 2017 verze 15.7 nebo novější. (Vyžaduje Anaconda nebo Miniconda; Anaconda je k dispozici prostřednictvím instalačního programu sady Visual Studio, naleznete v tématu [instalace – Visual Studio 2017](installing-python-support-in-visual-studio.md#visual-studio-2017).)
 
 > [!Note]
-> Chcete-li dosáhnout optimálních výsledků při prostředí conda, použijte conda 4.4.8 nebo novější (verze systému conda se liší od Anaconda verze). Anaconda 5.1 instalaci z instalačního programu sady Visual Studio 2017
+> Chcete-li dosáhnout optimálních výsledků při prostředí conda, použijte conda 4.4.8 nebo novější (verze systému conda se liší od Anaconda verze). Anaconda 5.1 nainstalujte z instalačního programu sady Visual Studio 2017.
 
 Verze systému conda, kde jsou uložené prostředí conda, a další informace zobrazíte spuštěním `conda info` na příkazovém řádku programu Anaconda (to znamená, že příkazový řádek se Anaconda v cestě):
 
@@ -79,21 +80,21 @@ Visual Studio 2017 verze 15.7 nebo novější prostředí conda automaticky zjis
 V prostředí, která sadě Visual Studio ví o jsou zobrazeny v **prostředí Pythonu** okna. Otevřete okno, použijte jednu z následujících metod:
 
 - Vyberte **zobrazení** > **ostatní Windows** > **prostředí Pythonu** příkazu nabídky.
-- Klikněte pravým tlačítkem myši **prostředí Pythonu** uzel projektu v Průzkumníku řešení a vyberte **zobrazit všechna prostředí Pythonu**:
+- Klikněte pravým tlačítkem myši **prostředí Pythonu** uzel projektu v **Průzkumníka řešení** a vyberte **zobrazit všechna prostředí Pythonu**:
 
     ![Zobrazit všechna prostředí příkazu v Průzkumníku řešení](media/environments-view-all.png)
 
-V obou případech **prostředí Pythonu** okna se zobrazí jako karty na stejné úrovni do Průzkumníka řešení:
+V obou případech **prostředí Pythonu** okna se zobrazí jako karty na stejné úrovni **Průzkumníka řešení**:
 
 ![Okno prostředí Pythonu](media/environments-default-view.png)
 
 Visual Studio následuje [období 514](https://www.python.org/dev/peps/pep-0514/) k identifikaci nainstalovaného prostředí pomocí registru. Pokud nevidíte očekávanému prostředí v seznamu, přečtěte si téma [ručně identifikovat existující prostředí](#manually-identify-an-existing-environment).
 
-Výběr prostředí v seznamu zobrazí různých vlastností a příkazy pro toto prostředí na **přehled** kartu. Například je vidět na obrázku výše, je umístění na překladač `C:\Python36-32`. Přepnout na různých záložkách například pomocí rozevíracího seznamu pod seznamem prostředí **balíčky**, a **IntelliSense**. Tyto karty jsou popsány v [odkaz na kartě okno prostředí Pythonu](python-environments-window-tab-reference.md).
+Výběr prostředí v seznamu zobrazí různých vlastností a příkazy pro toto prostředí na **přehled** kartu. Například je vidět na obrázku výše, je umístění na překladač *C:\Python36-32*. Přepnout na různých záložkách například pomocí rozevíracího seznamu pod seznamem prostředí **balíčky**, a **IntelliSense**. Tyto karty jsou popsány v [odkaz na kartě okno prostředí Pythonu](python-environments-window-tab-reference.md).
 
-Výběr prostředí neaktivuje žádným způsobem. Výchozího prostředí se zobrazí v tučné písmo v seznamu je aktuálně aktivovaná prostředí, které Visual Studio používá pro všechny nové projekty. Chcete-li aktivovat jiné prostředí, použijte **nastavit výchozí prostředí pro nové projekty** příkazu. V rámci projektu můžete aktivovat vždy jiné prostředí. Další informace najdete v tématu [výběru prostředí k projektu](selecting-a-python-environment-for-a-project.md).
+Výběr prostředí neaktivuje žádným způsobem. Výchozího prostředí se zobrazí v tučné písmo v seznamu je aktuálně aktivovaná prostředí, které Visual Studio používá pro všechny nové projekty. Chcete-li aktivovat jiné prostředí, použijte **nastavit výchozí prostředí pro nové projekty** příkazu. V rámci projektu můžete aktivovat vždy jiné prostředí. Další informace najdete v tématu [vyberte prostředí pro projekt](selecting-a-python-environment-for-a-project.md).
 
-Vpravo od každé uvedené prostředí je ovládací prvek, který se otevře interaktivní okno pro toto prostředí. (Visual Studio 2017 15.5 a dřívějších verzí jiný ovládací prvek se zobrazí, který aktualizuje databáze technologie IntelliSense pro příslušné prostředí. Zobrazit [odkaz na kartě okno prostředí](python-environments-window-tab-reference.md#intellisense-tab) podrobnosti o databázi).
+Vpravo od každé uvedené prostředí je ovládací prvek, který se otevře **interaktivní** okna pro toto prostředí. (Visual Studio 2017 15.5 a dřívějších verzí jiný ovládací prvek zobrazí se aktualizuje databáze technologie IntelliSense pro příslušné prostředí. Zobrazit [odkaz na kartě okno prostředí](python-environments-window-tab-reference.md#intellisense-tab) podrobnosti o databázi.)
 
 > [!Tip]
 > Po rozbalení **prostředí Pythonu** okno dost široké, získat kompletnější pohled prostředí, které může být pro vás být vhodnější pro práci s.
@@ -109,36 +110,34 @@ Vpravo od každé uvedené prostředí je ovládací prvek, který se otevře in
 
 ### <a name="what-if-no-environments-appear"></a>Co když se nezobrazí žádná prostředí?
 
-Pokud se nezobrazí žádná prostředí, znamená to, že Visual Studio se nepodařilo zjistit všechny instalace Pythonu ve standardním umístění. Například možná máte nainstalované Visual Studio 2017, ale vymazat všechny možnosti interpret v možnostech instalačního programu pro úlohu Pythonu. Podobně může mít nainstalované Visual Studio 2015 nebo starší, ale nenainstalovala interpretu ručně (naleznete v tématu [interpretů Pythonu instalace](installing-python-interpreters.md)).
+Pokud se nezobrazí žádná prostředí, znamená to, že Visual Studio se nepodařilo zjistit všechny instalace Pythonu ve standardním umístění. Například možná máte nainstalované Visual Studio 2017, ale vymazat všechny možnosti interpret v možnostech instalačního programu pro úlohu Pythonu. Podobně může mít nainstalované Visual Studio 2015 nebo starší, ale nenainstalovala interpretu ručně (viz [interpretů Pythonu nainstalujte](installing-python-interpreters.md)).
 
-Pokud znáte mají překladač Pythonu ve vašem počítači, ale Visual Studio (všechny verze) není rozpoznat je a pak použít **+ vlastní...**  příkaz a zadejte jeho umístění ručně. Viz následující část [ručně identifikovat existující prostředí](#manually-identify-an-existing-environment).
+Pokud znáte mají překladač Pythonu ve vašem počítači, ale Visual Studio (všechny verze) není rozpoznat je a pak použít **+ vlastní** příkaz a zadejte jeho umístění ručně. Viz následující část [ručně identifikovat existující prostředí](#manually-identify-an-existing-environment).
 
 > [!Tip]
 > Sada Visual Studio zjistí aktualizace existující interpret, jako je například upgrade Python 2.7.11 k 2.7.14 pomocí instalačních programů z python.org. Během procesu instalace starší prostředí dané zařízení zmizí z **prostředí Pythonu** seznamu předtím, než aktualizace se zobrazí na jeho místo.
 >
-> Pokud přesunete ručně interpretu a její prostředí pomocí systému souborů, ale Visual Studio nepoznáte nové umístění. Další informace najdete v tématu [přesun interpretu](installing-python-interpreters.md#moving-an-interpreter).
+> Pokud přesunete ručně interpretu a její prostředí pomocí systému souborů, ale Visual Studio nepoznáte nové umístění. Další informace najdete v tématu [přesunout interpretu](installing-python-interpreters.md#move-an-interpreter).
 
 ## <a name="fix-or-delete-invalid-environments"></a>Opravte nebo odstraňte neplatný prostředí
 
-Pokud sada Visual Studio najde položky registru pro prostředí, ale není platná cesta k interpretu, okno prostředí Pythonu zobrazuje název s přeškrtnuté písmo:
+Pokud sada Visual Studio najde položky registru pro prostředí, ale cesta k interpretu je neplatný, pak bude **prostředí Pythonu** okno zobrazuje název s přeškrtnuté písmo:
 
 ![Okno prostředí Pythonu neplatný prostředí](media/environments-invalid-entry.png)
 
 Chcete-li chcete zachovat prostředí, nejprve zkuste použít jeho instalační program **opravit** procesu. Instalační programy pro standardní Python 3.x, například zahrnout tuto možnost.
 
-Chcete-li prostředí, které nemá možnost opravit nebo odebrat neplatný prostředí, použijte následující kroky úprava registr přímo. Visual Studio automaticky aktualizuje okno prostředí Pythonu, když provedete změny do registru.
+Chcete-li prostředí, které nemá možnost opravit nebo odebrat neplatný prostředí, použijte následující kroky úprava registr přímo. Visual Studio automaticky aktualizuje **prostředí Pythonu** okno když provedete změny do registru.
 
-1. Spustit `regedit.exe`.
-1. Přejděte do `HKEY_LOCAL_MACHINE\SOFTWARE\Python` u 32-bit interpretů nebo `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` pro interprety 64-bit. Pro IronPython, vyhledejte `IronPython` místo.
-1. Rozbalte uzel, který odpovídá distribuce, jako například `PythonCore` pro CPython nebo `ContinuumAnalytics` pro Anaconda. Pro IronPython rozbalte uzel číslo verze.
-1. Zkontrolovat hodnoty v rámci `InstallPath` uzlu:
+1. Spustit *regedit.exe*.
+1. Přejděte do **HKEY_LOCAL_MACHINE\SOFTWARE\Python** u 32-bit interpretů nebo **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** pro interprety 64-bit. Pro IronPython, vyhledejte **IronPython** místo.
+1. Rozbalte uzel, který odpovídá distribuce, jako například **PythonCore** pro CPython nebo **ContinuumAnalytics** pro Anaconda. Pro IronPython rozbalte uzel číslo verze.
+1. Zkontrolovat hodnoty v rámci **InstallPath** uzlu:
 
     ![Položky registru pro typické instalace Cpythonu](media/environments-registry-entries.png)
 
-    - Pokud prostředí stále existuje ve vašem počítači, změňte hodnotu vlastnosti `ExecutablePath` do správného umístění. Také opravte `(Default)` a `WindowedExecutablePath` hodnoty podle potřeby.
-    - Pokud prostředí už existuje v počítači a chcete ho odebrat z okno prostředí Pythonu, odstranit nadřazený uzel `InstallPath`, jako například `3.6` na obrázku výše.
-
-<a name="manually-identifying-an-existing-environment"></a>
+    - Pokud prostředí stále existuje ve vašem počítači, změňte hodnotu vlastnosti **ExecutablePath** do správného umístění. Také opravte **(výchozí)** a **WindowedExecutablePath** hodnoty podle potřeby.
+    - Pokud prostředí už existuje v počítači a chcete ho odebrat **prostředí Pythonu** okně odstranit nadřazený uzel **InstallPath**, jako například **3.6** na obrázku výše.
 
 ## <a name="manually-identify-an-existing-environment"></a>Ručně identifikovat existující prostředí
 
@@ -150,9 +149,9 @@ Prostředí, ve kterém je nainstalovaný v nestandardním umístění (včetně
 
 1. Zadejte název prostředí **popis** pole.
 
-1. Zadejte nebo vyhledejte (pomocí **... ***) na cestu interpretu v **Předponovou cestu** pole.
+1. Zadejte nebo vyhledejte (pomocí **...** ) na cestu interpretu v **Předponovou cestu** pole.
 
-1. Pokud sada Visual Studio zjistí interpret Pythonu v tomto umístění (jako je například cesta pro prostředí conda najdete níž), umožňuje **automaticky rozpoznat** příkazu. Výběr **automaticky rozpoznat* dokončí zbývající pole. Tato pole lze dokončit také ručně.
+1. Pokud sada Visual Studio zjistí interpret Pythonu v tomto umístění (jako je například cesta pro prostředí conda najdete níž), umožňuje **automaticky rozpoznat** příkazu. Výběr **automaticky rozpoznat** dokončí zbývající pole. Tato pole lze dokončit také ručně.
 
     ![Povolení příkazu automaticky rozpoznat](media/environments-custom-2.png)
 
@@ -176,7 +175,7 @@ Prostředí, ve kterém je nainstalovaný v nestandardním umístění (včetně
 
     ![Po úspěšném vytvoření prostředí conda](media/environments-conda-2.png)
 
-1. V sadě Visual Studio, můžete aktivovat prostředí conda pro projekt, jako byste jiné prostředí, jak je popsáno na [výběru prostředí k projektu](selecting-a-python-environment-for-a-project.md).
+1. V sadě Visual Studio, můžete aktivovat prostředí conda pro projekt, jako byste jiné prostředí, jak je popsáno na [vyberte prostředí pro projekt](selecting-a-python-environment-for-a-project.md).
 
 1. Chcete-li instalovat balíčky v prostředí, použijte [balíčky kartu](python-environments-window-tab-reference.md#packages-tab).
 
