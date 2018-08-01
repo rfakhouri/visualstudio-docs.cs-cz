@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 138cff5920eef205cf8235ed0532754a843bbf46
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177045"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380652"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Postupy: Vytvoření vlastního editoru těla HTTP pro editor testu výkonnosti webu
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Postupy: vytvoření vlastního protokolu HTTP text editoru pro Editor testu výkonnosti webu
 
 Můžete vytvořit vlastní editor obsahu, který umožňuje upravovat obsah řetězce textu nebo binární tělo obsah požadavku webové služby, například SOAP, REST, asmx, wcf, RIA a jiných typů požadavek webové služby.
 
@@ -44,34 +44,34 @@ Tato rozhraní jsou obsažena v <xref:Microsoft.VisualStudio.TestTools.WebTestin
 
 3.  V seznamu šablon vyberte **Knihovna ovládacích prvků Windows Forms**.
 
-4.  Do textového pole Název zadejte název, například `MessageEditors`a zvolte **OK**.
+4.  V **název** textového pole zadejte název, například `MessageEditors`a zvolte **OK**.
 
     > [!NOTE]
     > Tato ukázka používá MessageEditors.
 
-     Projekt je přidán do nového řešení a <xref:System.Windows.Forms.UserControl> s názvem UserControl1.cs je předložen v návrháři.
+     Projekt je přidán do nového řešení a <xref:System.Windows.Forms.UserControl> s názvem *UserControl1.cs* je předložen v návrháři.
 
 5.  Z **nástrojů**v části **běžné ovládací prvky** kategorie, přetáhněte <xref:System.Windows.Forms.RichTextBox> na povrch UserControl1.
 
 6.  Zvolte piktogram akce (![piktogram inteligentní](../test/media/vs_winformsmttagglyph.gif)) v pravém horním rohu <xref:System.Windows.Forms.RichTextBox> ovládací prvek a potom vyberte a **ukotvit v nadřazeném kontejneru**.
 
-7.  V Průzkumníku řešení klikněte pravým tlačítkem na projekt Windows Forms Library a vyberte **vlastnosti**.
+7.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt Windows Forms Library a vyberte **vlastnosti**.
 
-8.  V okně Vlastnosti vyberte **aplikace** kartu.
+8.  V **vlastnosti**, vyberte **aplikace** kartu.
 
 9. V **Cílová architektura** rozevíracího seznamu vyberte **rozhraní .NET Framework 4**.
 
-10. Zobrazí se dialogové okno Změnit cílový rámec.
+10. **Změnit cílový rámec** se zobrazí dialogové okno.
 
 11. Zvolte **Ano**.
 
-12. V Průzkumníku řešení klikněte pravým tlačítkem myši **odkazy** uzel a vyberte možnost **přidat odkaz**.
+12. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **odkazy** uzel a vyberte možnost **přidat odkaz**.
 
 13. **Přidat odkaz** se zobrazí dialogové okno.
 
 14. Vyberte. **NET** kartu, posuňte se dolů a vyberte **Microsoft.VisualStudio.QualityTools.WebTestFramework** a klikněte na tlačítko **OK**.
 
-15. Pokud Návrhář zobrazení není stále otevřen v okně Průzkumník řešení, klikněte pravým tlačítkem na **UserControl1.cs** a pak vyberte **Návrhář zobrazení**.
+15. Pokud **Návrhář zobrazení** není stále otevřen v **Průzkumníka řešení**, klikněte pravým tlačítkem na **UserControl1.cs** a pak vyberte **Návrhář zobrazení**.
 
 16. Na návrhové ploše, klikněte pravým tlačítkem a vyberte **zobrazit kód**.
 
@@ -121,7 +121,7 @@ Tato rozhraní jsou obsažena v <xref:Microsoft.VisualStudio.TestTools.WebTestin
    }
    ```
 
-## <a name="add-a-class-for-to-the-windows-control-library-project"></a>Přidejte třídu pro projekt Knihovna ovládacích prvků Windows
+## <a name="add-a-class-to-the-windows-control-library-project"></a>Přidání třídy do projektu knihovny ovládací prvků Windows
 
 Přidání třídy do projektu. Se použije k implementaci <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> a <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> rozhraní.
 
@@ -139,7 +139,7 @@ private MessageEditorControl messageEditorControl
 
 ### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>Chcete-li vytvořit třídu a implementace kódu rozhraní IStringHttpBodyEditorPlugin
 
-1.  V Průzkumníku řešení klikněte pravým tlačítkem na projekt Knihovna ovládacích prvků formulářů Windows a vyberte **přidat novou položku**.
+1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt Knihovna ovládacích prvků formulářů Windows a vyberte **přidat novou položku**.
 
 2.  **Přidat novou položku** se zobrazí dialogové okno.
 
@@ -282,14 +282,14 @@ Po dokončení úprav textu řetězce a při kliknutí **OK** v dialogovém okn�
 
 ### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>K vytvoření a nasazení výsledné dll pro IStringHttpBodyEditorPlugin a IBinaryHttpBodyEditorPlugin
 
-1.  V nabídce sestavení zvolte **sestavení \<název projektu ovládacího prvku knihovny formulář Windows >**.
+1.  Na **sestavení** nabídce zvolte **sestavení \<název projektu ovládacího prvku knihovny formulář Windows >**.
 
 2.  Zavřete všechny instance sady Visual Studio.
 
     > [!NOTE]
     > Zavření sady Visual Studio zajišťuje, že *.dll* souboru není uzamčen před pokusem o zkopírování.
 
-3.  Zkopírujte výsledný *.dll* soubor z projektů *bin\debug* složky (například *MessageEditors.dll*) do %ProgramFiles%\Microsoft Visual Studio\2017\\ <edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins.
+3.  Zkopírujte výsledný *.dll* soubor z projektů *bin\debug* složky (například *MessageEditors.dll*) k *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
 4.  Otevřít Visual Studio.
 
@@ -305,11 +305,11 @@ Po dokončení úprav textu řetězce a při kliknutí **OK** v dialogovém okn�
 
 3.  Po dokončení nahrávání v editoru testu výkonnosti webu, rozbalte požadavek webové služby a vyberte buď **tělo řetězce** nebo **binární tělo**.
 
-4.  V okně Vlastnosti vyberte text řetězce nebo binární tělo a zvolte tři tečky (...).
+4.  V okně Vlastnosti vyberte text řetězce nebo binární tělo a zvolte tři tečky **(...)** .
 
      **Upravit Data těla protokolu HTTP** se zobrazí dialogové okno.
 
-5.  Teď můžete upravovat data a klikněte na tlačítko OK. To vyvolá vhodnou metodu GetNewValue k aktualizaci obsahu v <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
+5.  Teď můžete data upravit a zvolit **OK**. To vyvolá vhodnou metodu GetNewValue k aktualizaci obsahu v <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
 
 ## <a name="compile-the-code"></a>Kompilace kódu
 
@@ -326,8 +326,8 @@ Další informace najdete v tématu [stránka aplikace, Návrhář projektu (C#)
 - <xref:System.Windows.Forms.RichTextBox>
 - [Vytvoření vlastního kódu a modulů Plugin pro zátěžové testy](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Postupy: vytvoření modulu Plugin úrovni požadavků](../test/how-to-create-a-request-level-plug-in.md)
-- [Kódování vlastního pravidla extrakce pro test výkonnosti webu](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
-- [Vytvoření vlastního ověřovacího pravidla pro test výkonnosti webu](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Postupy: vytvoření modulu Plugin pro zátěžový Test](../test/how-to-create-a-load-test-plug-in.md)
+- [Kód vlastního pravidla extrakce pro test výkonnosti webu](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
+- [Kód vlastního ověřovacího pravidla pro test výkonnosti webu](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
+- [Postupy: vytvoření modulu Plugin pro zátěžový test](../test/how-to-create-a-load-test-plug-in.md)
 - [Generování a spuštění programový test výkonnosti webu](../test/generate-and-run-a-coded-web-performance-test.md)
 - [Postupy: Vytvoření doplňku sady Visual Studio pro prohlížeč výsledků testu výkonnosti webu](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

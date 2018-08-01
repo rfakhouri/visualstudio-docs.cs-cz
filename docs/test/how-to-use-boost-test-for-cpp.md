@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cca918309c0febb7b9c86b214d459a6bc8e37be
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: eebefa7b4033de5acec313e241d13cddab7120fa
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945481"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380447"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak používat Boost.Test pro C++ v sadě Visual Studio
 
@@ -42,7 +42,7 @@ Vyžaduje Boost.Test [Boost](http://www.boost.org/)! Pokud nemáte Boost nainsta
 
 ## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>Přidat šablonu položky (Visual Studio 2017 verze 15.6 a novější)
 
-1. K vytvoření souboru s příponou .cpp pro testy, klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a zvolte **přidat novou položku**.
+1. Chcete-li vytvořit *.cpp* souboru pro testy, klikněte pravým tlačítkem na uzel projektu v **Průzkumníku řešení** a zvolte **přidat novou položku**.
 
    ![Šablony položek Boost.Test](media/boost_test_item_template.png)
 
@@ -59,7 +59,8 @@ V sadě Visual Studio 2017 verze 15.5 jsou k dispozici pro Boost.Test žádná p
 1. V levém podokně vyberte **Visual C++** > **Windows Desktop**a klikněte na tlačítko **Konzolová aplikace Windows** šablony.
 
 1. Pojmenujte projekt a zvolte **OK**.
-1. Odstranit `main` funkce v souboru .cpp.
+
+1. Odstranit `main` fungovat v *.cpp* souboru.
 
 1. Pokud používáte verzi Boost.Test jedním záhlaví nebo dynamické knihovny, přejděte na [přidat direktiv](#add-include-directives). Pokud používáte verzi statické knihovny, budete muset provést některé další konfigurace:
 
@@ -74,19 +75,19 @@ V sadě Visual Studio 2017 verze 15.5 jsou k dispozici pro Boost.Test žádná p
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
-   c. Uložte a zavřete \*souboru .vcxproj a pak znovu načíst projekt.
+   c. Uložte a zavřete  *\*.vcxproj* souboru a pak znovu načtěte projekt.
 
    d. Chcete-li otevřít **stránky vlastností**, klikněte pravým tlačítkem na uzel projektu a zvolte **vlastnosti**.
 
    d. Rozbalte **C/C++** > **generování kódu**a pak vyberte **knihovny prostředí Runtime**. Vyberte **/MTD** pro statické běhovou ladicí knihovnou nebo **/MT** verze runtime statické knihovny.
 
-   f. Rozbalte **Linkeru > systém**. Ověřte, že **subsystému** je nastavena na **konzoly**.
+   f. Rozbalte **Linkeru** > **systému**. Ověřte, že **subsystému** je nastavena na **konzoly**.
 
    g. Zvolte **OK** stránku vlastností zavřete.
 
 ## <a name="add-include-directives"></a>Přidání direktiv
 
-1. V testovací soubor .cpp, přidejte všechny potřebné `#include` direktivy zviditelnit typy a funkce vaší aplikace k testovacímu kódu. Program je obvykle nahoru o jednu úroveň v hierarchii složek. Pokud zadáte `#include "../"`, zobrazí se okno technologie IntelliSense a umožňuje vybrat úplná cesta k souboru hlaviček.
+1. V testu *.cpp* přidejte všechny potřebné `#include` direktivy zviditelnit typy a funkce vaší aplikace k testovacímu kódu. Program je obvykle nahoru o jednu úroveň v hierarchii složek. Pokud zadáte `#include "../"`, zobrazí se okno technologie IntelliSense a umožňuje vybrat úplná cesta k souboru hlaviček.
 
    ![Přidejte #include](media/cpp-gtest-includes.png)
 
@@ -124,7 +125,9 @@ BOOST_AUTO_TEST_CASE(my_boost_test)
 ```
 
 ## <a name="write-and-run-tests"></a>Psání a spouštění testů
-Nyní jste připraveni pro zápis a spouštění testů Boost. Najdete v článku [Boost Test knihovny dokumentace](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html) informace o makra testu. Zobrazit [spouštění testů jednotek pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md) informace o zjišťování, spouštění a seskupení testů s použitím **Průzkumník testů**.
+
+Teď jste připravení psát a spouštět testy Boost test. Najdete v článku [dokumentaci ke knihovně Boost test](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html) informace o makra testu. Zobrazit [spouštění testů jednotek pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md) informace o zjišťování, spouštění a seskupení testů s použitím **Průzkumník testů**.
 
 ## <a name="see-also"></a>Viz také:
-[Zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md)
+
+- [Zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md)
