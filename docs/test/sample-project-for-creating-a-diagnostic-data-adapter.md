@@ -12,32 +12,32 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d2cd30faa5cbc5b4f8626c17de77c68bdf8bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1de27441ea5d0a6af320c031e43affd2c2e14be0
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977112"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380767"
 ---
 # <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Ukázkový projekt pro vytvoření adaptéru diagnostických dat
 
-"MyDiagnosticDataAdapter" je adaptér jednoduché diagnostických dat, který můžete připojit soubor protokolu pro výsledky testů, při spuštění testů.
+"MyDiagnosticDataAdapter" je jednoduchý adaptér diagnostiky dat, který může připojit soubor protokolu k výsledkům testu při spuštění testů.
 
- Budete potřebovat oprávnění správce na libovolném počítači kde kolekce diagnostických dat nebo konfigurace je nainstalován editor.
+ Budete potřebovat oprávnění správce na libovolný počítač, kde kolektor diagnostických dat nebo konfigurace je nainstalován editor.
 
-## <a name="example-data-adapter"></a>Příklad adaptér dat
+## <a name="example-data-adapter"></a>Příklad data adaptéru
 
 Tento příklad ukazuje, jak provádět následující úlohy:
 
--   Použití atributů zjistitelnost třídu do nástroje Microsoft Test Manager jako adaptéru diagnostických dat.
+-   Použijte atributy se mají nastavit zjistitelnost třídy pro nástroje Microsoft Test Manager jako adaptér diagnostických dat.
 
--   Použití atributů zjistitelnost třídu uživatelského ovládacího prvku do nástroje Microsoft Test Manager jako editor používat ke změně konfigurace pro adaptér diagnostických dat.
+-   Atributy, abyste nastavili uživatelský ovládací prvek třídy zjistitelný pro nástroje Microsoft Test Manager jako editor k použití pro změnu konfigurace pro adaptér diagnostických dat použijte.
 
--   Přístup k výchozí konfigurační data.
+-   Přístup k výchozím konfiguračním datům.
 
--   Registrace pro konkrétní shromažďování diagnostických dat události.
+-   Zaregistrujte se na určité události shromažďování diagnostických dat.
 
--   Připojte odesláním do souboru protokolu <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>.
+-   Připojí soubor protokolu a odeslat ho do <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>.
 
 ```csharp
 // My Data Collector Class
@@ -183,7 +183,7 @@ namespace MyCompany.MyDiagnosticDataAdapters
 
 ## <a name="example-configuration-editor"></a>Příklad konfigurace editoru
 
-Toto je Ukázková konfigurace editor pro adaptér diagnostických dat. Přidat uživatelský ovládací prvek do projektu a vytvořit velmi jednoduchý formulář, který má popisek ("název souboru protokolu:") a textové pole s názvem "FileTextBox".
+Toto je vzorový editor konfigurace adaptéru diagnostických dat. Přidat uživatelský ovládací prvek do projektu a vytvořit velmi jednoduchý formulář, který obsahuje popisek ("název souboru protokolu:") a textové pole s názvem "FileTextBox".
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.Common;
@@ -297,7 +297,7 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
 
 ## <a name="example-configuration-file"></a>Příklad konfiguračního souboru
 
-Toto je vzorový konfigurační soubor pro vaše editor konfigurací kolekce diagnostická data.
+Následuje ukázkový soubor konfigurace pro váš editor konfigurace kolekce diagnostických dat.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -324,72 +324,72 @@ Toto je vzorový konfigurační soubor pro vaše editor konfigurací kolekce dia
 
 ```
 
-## <a name="compiling-the-code"></a>Probíhá kompilace kódu
+## <a name="compile-the-code"></a>Kompilace kódu
 
-### <a name="to-create-the-code-project-for-this-diagnostic-adapter"></a>Vytvoření projektu kódu pro tento adaptér diagnostiky
+### <a name="to-create-the-code-project-for-this-diagnostic-adapter"></a>Chcete-li vytvořit projekt kódu pro tento diagnostický adaptér
 
-1.  Vytvoření nového projektu knihovny tříd s názvem "MyDataCollector".
+1.  Vytvořte nový projekt knihovny tříd, který má název "MyDataCollector".
 
-2.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a zvolte **vlastnosti**. Vyberte složku, chcete-li přidat, zvolte **cesty odkazů** a klikněte na tlačítko se třemi tečkami (**...** ).
+2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a klikněte na tlačítko **vlastnosti**. Chcete-li vybrat složku k přidání, zvolte **cesty odkazů** a klikněte na tlačítko se třemi tečkami (**...** ).
 
-     **Vyberte odkaz na cestu** se zobrazí dialogové okno.
+     **Vybrat cestu k referenci** se zobrazí dialogové okno.
 
-3.  Vyberte následující cestu, založené na instalační adresář: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*. Zvolte **OK**.
+3.  Vyberte následující cestu založenou na instalačním adresáři: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*. Zvolte **OK**.
 
 4.  Chcete-li přidat složku do cesty k odkazu, zvolte **přidat složku**.
 
-     Složka se zobrazí v seznamu cest odkaz.
+     Složka se zobrazí v seznamu cest odkazů.
 
-5.  Vyberte **Uložit vše** ikonu a uložte odkaz na cesty.
+5.  Zvolte **Uložit vše** ikony pro uložení cest odkazů.
 
 6.  Přidat sestavení **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-    1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na **odkazy** a potom zvolte **přidat odkaz na**.
+    1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** a klikněte na tlačítko **přidat odkaz**.
 
     2.  Zvolte **Procházet** a vyhledejte **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-         Toto sestavení budou nacházet v *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
+         Toto sestavení najdete v *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
 
     3.  Zvolte **OK**.
 
 7.  Přidat sestavení **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  V Průzkumníku řešení klikněte pravým tlačítkem na **odkazy** a vyberte **přidat odkaz na**.
+    1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** a vyberte **přidat odkaz**.
 
     2.  Zvolte **Procházet** a vyhledejte **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-         Toto sestavení budou nacházet v *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
+         Toto sestavení najdete v *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
 
     3.  Zvolte **OK**.
 
-8.  Zkopírujte Třída adaptéru diagnostických dat, který byl uveden výše v tomto dokumentu do třídy pro knihovny tříd. Uložte tuto třídu.
+8.  Zkopírujte třídu adaptéru diagnostických dat, která byla uvedena výše v tomto dokumentu do třídy pro knihovnu tříd. Uložte tuto třídu.
 
-9. Chcete-li přidat uživatelský ovládací prvek do projektu, klikněte pravým tlačítkem na projekt MyDataCollector v Průzkumníku řešení bod **přidat**a potom zvolte **uživatelský ovládací prvek**. Zvolte **přidat**.
+9. Chcete-li přidat uživatelský ovládací prvek do projektu, klikněte pravým tlačítkem na **MyDataCollector** projekt **Průzkumníka řešení**, přejděte na **přidat**a klikněte na tlačítko **uživatelský ovládací prvek** . Zvolte **přidat**.
 
-10. Pomocí sady nástrojů přidat uživatelský ovládací prvek popisek a změnit vlastnosti textu k **název souboru:**.
+10. Pomocí panelu nástrojů přidejte popisek uživatelského ovládacího prvku a změňte vlastnost textu na **název souboru:**.
 
-11. Pomocí panelu Přidat textové pole do uživatelského ovládacího prvku a změňte název **textBoxFileName**.
+11. Pomocí panelu nástrojů přidejte textové pole uživatelského ovládacího prvku a změňte název na **textBoxFileName**.
 
-12. V **Průzkumníku řešení**, klikněte pravým tlačítkem na uživatelský ovládací prvek a potom zvolte **zobrazení kódu.** Tato třída řízení uživatele nahraďte třída ovládacích prvků uživatele, který byl uveden výše v tomto dokumentu. Uložte tuto třídu.
+12. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uživatelský ovládací prvek a pak zvolte **zobrazení kódu.** Tato třída uživatelského ovládacího prvku nahraďte třídu, která byla uvedena výše v tomto dokumentu. Uložte tuto třídu.
 
     > [!NOTE]
-    > Ve výchozím nastavení se nazývá uživatelského ovládacího prvku UserControl1. Ujistěte se, že kód uživatelského ovládacího prvku třídu používá název svého uživatelského ovládacího prvku.
+    > Ve výchozím nastavení se nazývá uživatelský ovládací prvek UserControl1. Ujistěte se, že kód třídy uživatelského ovládacího prvku používá název uživatelského ovládacího prvku.
 
-13. Vytvoření konfiguračního souboru v **Průzkumníku řešení** pravým tlačítkem na řešení, přejděte na **přidat**a potom zvolte **novou položku**. Vyberte, chcete-li vybrat **konfigurační soubor aplikace**a potom zvolte **přidat**. Bude přidáno souboru, který je pojmenován **App.config** do řešení.
+13. Chcete-li vytvořit konfigurační soubor v **Průzkumníka řešení** klikněte pravým tlačítkem na řešení, přejděte na **přidat**a klikněte na tlačítko **nová položka**. Vybrat **konfiguračního souboru aplikace**a klikněte na tlačítko **přidat**. Tato možnost přidá soubor s názvem *App.config* do vašeho řešení.
 
-14. Zkopírujte soubor XML ve vzorku, který byl dříve zadán do souboru XML. Uložte soubor.
+14. Zkopírujte data XML ze vzorku, který byl dříve v souboru XML. Uložte soubor.
 
-15. Sestavte řešení a poté zkopírujte vytvořený sestavení a `App.config` soubor do *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors* adresáře.
+15. Sestavte řešení a potom zkopírujte vytvořené sestavení a *App.config* soubor do *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*adresáře.
 
-16. Vytvoření nastavení testu, které používají tento adaptér diagnostických dat vlastní. Nakonfigurujte nastavení testu shromažďování soubor, který již existuje.
+16. Vytvoření nastavení testu, které používají tento vlastní adaptér diagnostických dat. Konfigurovat nastavení testu, které shromáždí soubor, který existuje.
 
-     Pokud spouštíte testy Microsoft Test Manager, můžete přiřadit těchto nastavení testů do testovacího plánu před spuštěním testů nebo používají spustit pomocí možnosti příkazu k přiřazení nastavení testů a přepsat nastavení testů. Další informace o nastavení testu najdete v tématu [shromažďování diagnostických informací pomocí Test nastavení](../test/collect-diagnostic-information-using-test-settings.md).
+     Pokud spouštíte testy z nástroje Microsoft Test Manager, můžete přiřadit tato nastavení testu do plánu testování před spuštěním testů nebo pomocí spustit pomocí možnosti příkazu pro přidělení nastavení testu a přepsání nastavení testu. Další informace o nastaveních testu naleznete v tématu [shromažďování diagnostických informací pomocí nastavení testu](../test/collect-diagnostic-information-using-test-settings.md).
 
-17. Spouštění testů pomocí nastavení testů adaptér diagnostických dat vybraná.
+17. Spusťte testy pomocí nastavení testu společně s výběrem adaptéru diagnostiky dat vybrali.
 
-     Datový soubor, který jste zadali bude připojen k si výsledky testu, pokud se test spustí.
+     Datový soubor, který jste zadali budou připojena k výsledkům testu při spuštění testu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: vytvoření adaptéru diagnostických dat](../test/how-to-create-a-diagnostic-data-adapter.md)
 - [Postupy: vytvoření vlastního editoru dat pro adaptér diagnostických dat](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)

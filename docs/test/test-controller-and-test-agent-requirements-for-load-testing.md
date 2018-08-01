@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04150d09f1e80060efbd60be776731ec67ae59e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178488"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380802"
 ---
-# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Požadavky testovacího kontroléru a agenta Test Agent pro zátěžové testování
+# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Testovací kontrolér a testovací agent požadavky pro zátěžové testování
 
 Některé typy včetně částí, výkonu webu, zátěžových testů a ručních testů jsou integrované do sady Visual Studio. Visual Studio umožňuje uživatelům aplikace Visual Studio Application Lifecycle Management ke spuštění testů na vzdálených počítačích pomocí testovacího kontroléru a jednoho nebo více agentů. Zobrazit [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).
 
-## <a name="hardware-and-software-requirements"></a>Hardwarové a softwarové požadavky
+## <a name="hardware-and-software-requirements"></a>Požadavky na hardware a software
 
 Testovací kontrolér a testovací počítače agenta mají určité hardwarové a softwarové požadavky. Kromě toho pokud chcete nasadit řadič testu a počítače testovacích agentů ve více jazycích, je nutné naplánovat způsob podpory těchto jazyků.
 
@@ -39,7 +39,7 @@ V následující tabulce jsou uvedeny doporučené požadavky na hardware pro na
 |N x 30 počítačů v testovacím prostředí. To zahrnuje agenty a servery v rámci testu.|Kontroler testů|N procesorů 2,6 GHz|||
 
 > [!NOTE]
-> Počet virtuálních uživatelů se liší běžně z testu. Klíčové příčiny této odchylky je odchylka v *časy přemýšlení*, nebo zpoždění uživatele. Další informace najdete v tématu [úpravy dob uvažování pro simulaci prodlev webu lidské interakce](../test/edit-think-times-in-load-test-scenarios.md). V rámci zátěžového testu webové testy jsou obecně efektivnější a generují větší zatížení než testování částí. Čísla v předchozí tabulce jsou platné pro spuštění webových testů s 3 až 5 sekund časy přemýšlení u typické webové aplikace.
+> Počet virtuálních uživatelů se liší běžně z testu. Klíčové příčiny této odchylky je odchylka v *časy přemýšlení*, nebo zpoždění uživatele. Další informace najdete v tématu [zvažte úpravy časy pro simulaci prodlev při zásahem ze strany obsluhy webu](../test/edit-think-times-in-load-test-scenarios.md). V rámci zátěžového testu webové testy jsou obecně efektivnější a generují větší zatížení než testování částí. Čísla v předchozí tabulce jsou platné pro spuštění webových testů s 3 až 5 sekund časy přemýšlení u typické webové aplikace.
 
 Zde uvedené pokyny slouží jako obecné pokyny pro plánování hardwaru. Testování výkonu se liší, protože vždycky záleží na objemu testovacích dat a počtu testovacích agentů. Pro testovací agenty bude rychlost procesoru a paměti omezovat zkušební zatížení. Testovací kontroléry vyžadují větší prostředky, v závislosti na počtu testovacích agentů a množství dat v rámci testů.
 
@@ -57,7 +57,7 @@ Abyste zamezili nedorozumění a zjednodušili operaci, testovací kontrolér a 
 
 ## <a name="monitor-agent-resources"></a>Sledování prostředků agenta
 
-Můžete monitorovat počítače agentů k určení potřeb prostředků pozorováním **QTAgent\*.exe** procesy, které se spustí a škálování během testů. Nejběžnější problémové místo v QTAgent*.exe procesy, které je využití procesoru. Pokud využití procesoru je trvale v vysokou nineties je jako ukazatel toho, že agent je silně načítání. Další běžné problémovým místem je využití paměti. Vyhovovat i vašim náročným testy, monitorování těchto prostředků pomůže zjistit, zda by měl zvýšit prostředky počítače nebo jinak distribuci testů.
+Můžete monitorovat počítače agentů k určení potřeb prostředků pozorováním *QTAgent\*.exe* procesy, které se spustí a škálování během testů. Nejběžnější problémové místo v *QTAgent\*.exe* procesů je využití procesoru. Pokud využití procesoru je trvale v vysokou nineties je jako ukazatel toho, že agent je silně načítání. Další běžné problémovým místem je využití paměti. Vyhovovat i vašim náročným testy, monitorování těchto prostředků pomůže zjistit, zda by měl zvýšit prostředky počítače nebo jinak distribuci testů.
 
 ## <a name="see-also"></a>Viz také:
 
