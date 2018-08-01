@@ -1,6 +1,6 @@
 ---
-title: Práce s Python kurzu krok 0, instalace
-description: Krok 0 (požadavky na instalaci) návod jádra, práce s Python v sadě Visual Studio.
+title: Práce s Pythonu pro tento kurz, 0, krok instalace
+description: Krok 0 (požadavky na instalaci) core názorný postup práce s využitím Pythonu v sadě Visual Studio.
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,43 +11,41 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ce7a388a9cc26ba84796710ff6f94395890a3df
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: f2fefe4a85d75573d96c7f7584913310bb5d267e
+ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057645"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39409742"
 ---
-# <a name="install-python-support-in-visual-studio"></a>Instalace podpory Python v sadě Visual Studio
+# <a name="install-python-support-in-visual-studio"></a>Instalace podpory Pythonu v sadě Visual Studio
 
 > [!Note]
-> Podpora jazyka Python je v současné době dostupná jenom na Visual Studio pro Windows; na Mac a Linux, je k dispozici prostřednictvím podpory Python [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+> Podpora Pythonu je v současné době dostupná jenom v aplikaci Visual Studio pro Windows; na Mac a Linux, Python podpora je dostupná prostřednictvím [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
-1. Stáhněte a spusťte nejnovější verzi instalačního programu Visual Studio 2017 pro Windows (podpora v jazyce Python je součástí verze 15.2 a novější). Pokud máte už nainstalovanou sadu Visual Studio, spusťte instalační program sady Visual Studio a přejděte ke kroku 2.
+1. Stáhněte si a spusťte nejnovější instalační program sady Visual Studio 2017 pro Windows (podpora Python je k dispozici ve verzi 15.2 a novější). Pokud máte už nainstalovanou sadu Visual Studio, spusťte instalační program sady Visual Studio a přejděte ke kroku 2.
 
     > [!div class="nextstepaction"]
-    > <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Nainstalovat Visual Studio 2017 Community</a>
+    > [Nainstalovat sadu Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > Community edition je pro jednotlivé vývojáři, učebny learning, academic výzkum a vývoj s otevřeným zdrojem. Pro jiné účely, nainstalujte <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Professional</a> nebo <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Visual Studio 2017 Enterprise</a>.
+    > Edice Community je pro jednotlivé vývojáře, školní výuka, vědecký výzkum a vývoj open source. Pro jiné účely, nainstalujte [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) nebo [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
 
-1. Instalační program nabídne seznam úloh, které jsou skupiny související možnosti jsou pro vývoj pro konkrétní oblasti. Pro jazyk Python, vyberte **vývoj Python** pracovního vytížení a vyberte **nainstalovat**:
+1. Instalační program vám nabídne seznam úloh, které jsou skupiny související možnosti jsou pro vývoj pro konkrétní oblasti. Pro Python, vyberte **vývoj v jazyce Python** úlohy a vyberte **nainstalovat**:
 
-    ![Python vývoj zatížení v instalačním programu sady Visual Studio](media/installation-python-workload.png)
+    ![Úloha vývoj v jazyce Python v instalačním programu sady Visual Studio](media/installation-python-workload.png)
 
-1. Rychle otestovat podpora v jazyce Python, spuštění sady Visual Studio, stiskněte klávesu Alt + I otevřít okno Python interaktivní, a zadejte `2+2`. Pokud nevidíte výstup `4`, znovu zkontrolovat vaše kroky.
+1. Rychle otestovat technickou podporu Pythonu, spuštění sady Visual Studio, stiskněte Alt + I otevřete interaktivní okno Pythonu a zadejte `2+2`. Pokud nevidíte výstup `4`, spusťte opětovnou kontrolu kroků.
 
-    ![Testování pomocí okna interaktivní Python](media/installation-interactive-test.png)
+    ![Testování v prostředích s interaktivním okně Pythonu](media/installation-interactive-test.png)
 
 ## <a name="next-step"></a>Další krok
 
 > [!div class="nextstepaction"]
-> [Krok 1: Vytvoření projektu jazyka Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Krok 1: Vytvoření projektu Pythonu](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Viz také:
 
-- [Ručně identifikace existující překladač Pythonu](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
-- [Instalace podpory Python v sadě Visual Studio 2015 a starší](installing-python-support-in-visual-studio.md).
+- [Ruční určení existující interpret Pythonu](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
+- [Instalace podpory Pythonu v sadě Visual Studio 2015 a starší](installing-python-support-in-visual-studio.md).
 - [Umístění instalace](installing-python-support-in-visual-studio.md#install-locations).
-
-<iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />
