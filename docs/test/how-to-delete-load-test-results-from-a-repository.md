@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ff025118d0908fe35e8f3fd54a8e467c6340d419
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 77c44b3fda689b8b2710f959decf362f06c66424
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178862"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381814"
 ---
-# <a name="how-to-delete-load-test-results-from-a-repository"></a>Postupy: Odstranění výsledků zátěžového testu z úložiště
+# <a name="how-to-delete-load-test-results-from-a-repository"></a>Postupy: výsledků zátěžového testu odstranit z úložiště
 
-Při spuštění zátěžového testu, informace, které byly shromážděny během spuštění uložená v úložiště výsledků testu zátěže. Úložiště výsledků zátěžových testů obsahuje data čítače výkonu a informace o všech chybách. Další informace najdete v tématu [Správa výsledků zátěžových testů v úložišti výsledků zátěžového testu](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+Při spuštění zátěžového testu, informace, které byly shromážděny během spuštění uložená v úložiště výsledků testu zátěže. Úložiště výsledků zátěžových testů obsahuje data čítače výkonu a informace o všech chybách. Další informace najdete v tématu [výsledků zátěžového testu spravovat v úložiště výsledků testu zátěže](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
  Výsledky zátěžového testu můžete spravovat z editoru zátěžového testu pomocí **otevřít a spravovat výsledky zátěžového testu** dialogové okno. Můžete otevřít, importovat, exportovat a odstranit výsledky zátěžových testů.
 
@@ -42,7 +42,7 @@ Při spuštění zátěžového testu, informace, které byly shromážděny bě
 
      Pokud výsledky zátěžového testu jsou k dispozici, jsou uvedeny v **výsledky zátěžového testu** seznamu. Sloupce jsou **čas**, **doba trvání**, **uživatele**, **výsledek**, **testovací**, a  **Popis**. **Testování** obsahuje název testu, a **popis** obsahuje volitelný popis, který je přidán před spuštěním testu. **Popis** sloupec zobrazuje krátké popisy, které byly zadány v **komentáře analýzy** pro tento výsledek testu.
 
-5.  V **výsledky zátěžového testu** seznamu, vyberte výsledek. Chcete-li vybrat více než jeden výsledek, můžete použít klávesu Shift, klávesou Ctrl nebo obě.
+5.  V **výsledky zátěžového testu** seznamu, vyberte výsledek. Můžete použít **Shift** klíč, **Ctrl** klíč, nebo obojí a vyberte více než jeden výsledek.
 
 6.  Zvolte **odebrat**.
 
@@ -53,7 +53,7 @@ Při spuštění zátěžového testu, informace, které byly shromážděny bě
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Export výsledků zátěžového testu z úložiště](../test/how-to-export-load-test-results-from-a-repository.md)
-- [Správa výsledků zátěžových testů v úložišti výsledků zátěžového testu](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Postupy: Export zátěžový test výsledků z úložiště](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Správa výsledků zátěžových testů v úložiště výsledků testu zátěže](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Postupy: Import výsledků zátěžového testu do úložiště](../test/how-to-import-load-test-results-into-a-repository.md)

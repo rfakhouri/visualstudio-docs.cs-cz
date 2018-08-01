@@ -2,7 +2,7 @@
 title: Vytvoření webové aplikace ASP.NET Core v jazyce C# pomocí sady Visual Studio
 description: Zjistěte, jak vytvořit webovou aplikaci ASP.NET Core v sadě Visual Studio s C#, krok za krokem.
 ms.custom: mvc
-ms.date: 07/20/2018
+ms.date: 07/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a64674ae5a902e332ae8b9eb3cbe6a22d09a1133
+ms.openlocfilehash: ee0cd28fa6cbc05c2d31016cb9b66ad40cb75b45
 ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380613"
+ms.locfileid: "39382799"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Rychlý start: Použití sady Visual Studio k vytvoření vaší první webové aplikace ASP.NET Core
 
@@ -29,7 +29,7 @@ Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory k
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
-Nejprve vytvoříte projekt webové aplikace ASP.NET Core. Typ projektu obsahuje všechny soubory šablony k vytvoření webové aplikace, než jste přidali ještě nic!
+Nejprve vytvoříte projekt webové aplikace ASP.NET Core. Tady je způsob.
 
 1. Otevřete Visual Studio 2017.
 
@@ -37,7 +37,11 @@ Nejprve vytvoříte projekt webové aplikace ASP.NET Core. Typ projektu obsahuje
 
 1. V levém podokně **nový projekt** dialogového okna rozbalte **Visual C#** a klikněte na tlačítko **.NET Core**. V prostředním podokně vyberte **webové aplikace ASP.NET Core**. Pojmenujte svůj soubor `HelloWorld` a zvolte **OK**.
 
-   ![Vytvořit nový projekt webové aplikace ASP.NET Core pro jazyk C#](../ide/media/csharp-aspnet-choose-template-name-file.png)
+1. V **nová webová aplikace ASP.NET Core** dialogovém okně ověřte, zda **ASP.NET Core 2.0** se zobrazí v horní nabídce rozevíracího seznamu. Potom kliknutím na možnost **webovou aplikaci** a zvolte **OK**.
+
+  ![Zobrazit animovaný obrázek GIF soubor, který ukazuje, jak vytvořit projekt C# ASP.NET Core v sadě Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
+
+  Brzy NATO Visual Studio otevře soubor projektu.
 
    > [!NOTE]
    > Pokud se nezobrazí **.NET Core** kategorii šablony projektu, zvolte **otevřít instalační program Visual Studio** odkaz v levém podokně.
@@ -50,58 +54,30 @@ Nejprve vytvoříte projekt webové aplikace ASP.NET Core. Typ projektu obsahuje
    >
    > (Může mít ukončit sadu Visual Studio, abyste mohli pokračovat v instalaci nové úlohy.)
 
-1. V **nová webová aplikace ASP.NET Core** dialogovém okně ověřte, zda **ASP.NET Core 2.0** se zobrazí v horní nabídce rozevíracího seznamu. Potom kliknutím na možnost **webovou aplikaci** a zvolte **OK**.
+## <a name="create-and-run-the-app"></a>Vytvoření a spuštění aplikace
 
-   ![Dialogové okno nové webové aplikace ASP.NET Core](../ide/media/quickstart-aspnet-core20.png)
-
-Brzy NATO Visual Studio otevře soubor projektu.
-
-## <a name="create-the-app"></a>Vytvoření aplikace
+V dalším kroku vytvoříte a spouštění vaší webové aplikace "Hello World". Tady je způsob.
 
 1. V **Průzkumníka řešení**, rozbalte **stránky** složky a klikněte na tlačítko **About.cshtml**.
-
-   ![Zvolte soubor About.cshtml z Průzkumníka řešení](../ide/media/csharp-aspnet-about-page-html-file.png)
 
    Tento soubor odpovídá na stránku s názvem **o** ve webové aplikaci.
 
    ![Na stránce o ve webové aplikaci](../ide/media/csharp-aspnet-about-page.png)
 
-   V editoru HTML zobrazí kód pro oblasti "Další informace" **o** stránky.
-
-   ![Kód HTML pro další informace o oblasti v editoru sady Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page.png)
-
 1. Změní celý text "Další informace" číst "**Hello World!**".
 
-   ![Změnit výchozí kód HTML pro další informace o oblasti v editoru sady Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
-
-1. V **Průzkumníka řešení**, rozbalte **About.cshtml**a klikněte na tlačítko **About.cshtml.cs**. (Tento soubor také odpovídá **o** stránka ve webové aplikaci.)
-
-   ![Zvolte soubor About.cshtml z Průzkumníka řešení](../ide/media/csharp-aspnet-about-page-code-file.png)
-
-   V editoru, zobrazí se vám C# kód, který obsahuje text "Popis aplikace" oblasti **o** stránky.
-
-   ![Kód jazyka C# pro oblasti Popis aplikace v editoru sady Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
+1. V **Průzkumníka řešení**, rozbalte **About.cshtml**a klikněte na tlačítko **About.cshtml.cs**.
 
 1. Změní celý text zprávy "Popis aplikace" číst "**jaká je Moje zpráva?**".
 
-   ![Změnit výchozí text zprávy pro oblasti Popis aplikace v editoru sady Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
+1. Zvolte **služby IIS Express** nebo stiskněte klávesu **Ctrl**+**F5** ke spuštění aplikace a otevřete ho ve webovém prohlížeči.
 
-## <a name="run-the-app"></a>Spuštění aplikace
-
-1. Stisknutím klávesy **Ctrl**+**F5** ke spuštění aplikace a otevřete ho ve webovém prohlížeči.
+  ![Zobrazit animovaný obrázek GIF soubor, který ukazuje, jak vytvářet a spouštět webovou aplikaci C# ASP.NET Core v sadě Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > Pokud se zobrazí chybová zpráva s upozorněním, **nelze se připojit k webovému serveru služby IIS Express**, zavřete sadu Visual Studio a otevřete jej pomocí **spustit jako správce** možnost v nabídce klikněte pravým tlačítkem nebo kontext. Spusťte aplikaci znovu.
 
-1. V horní části webové stránky, zvolte **o**.
-
-   ![Vyberte o z webové stránky](../ide/media/csharp-aspnet-home-page-about.png)
-
-1. Zobrazení aktualizované text, který jste přidali do **o** stránky.
-
-   ![Zobrazit aktualizované informace o stránce obsahující text, který jste přidali](../ide/media/csharp-aspnet-about-page-hello-world.png)
-
-1. Zavřete webový prohlížeč.
+1. Ověřte, že **o** stránka obsahuje aktualizovaný text.
 
 Blahopřejeme k dokončení tohoto rychlého startu! Doufáme, že jste se dozvěděli ještě něco o jazyce C#, ASP.NET Core a Visual Studio IDE (integrované vývojové prostředí).
 

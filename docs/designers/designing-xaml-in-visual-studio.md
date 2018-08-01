@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5dc8ccda83f700538ae84dd565fcdd299d7d1331
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: e39a7d770308cae7e022d419b21695f9d478aad7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889993"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381690"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Návrh XAML v sadě Visual Studio
 
@@ -50,7 +50,7 @@ Nejzákladnější úkoly integrovaném vývojovém prostředí sady Visual Stud
 
 - **Synchronizovat nastavení a rozložení:** vlastní rozložení umožňuje uložit a použít vlastní nastavení rozložení okna nástroje. Když se přihlásíte pomocí stejného účtu Microsoft synchronizaci Visual Studia tato vlastní nastavení a předvolby pro Visual Studio i programu Blend for Visual Studio napříč počítači. Zobrazit [přizpůsobit prostředí IDE sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-- **Průzkumník řešení common:** Průzkumníku řešení vám poskytne uspořádaný náhled vašich projektů a jejich soubory, jakož i přístup k příkazů přidružených s nimi. Pomocí Průzkumníka řešení je snazší pracovat s velkými objemy podnikových projektů. Zobrazit [řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md).
+- **Průzkumník řešení common:** **Průzkumníka řešení** vám poskytne uspořádaný náhled vašich projektů a jejich soubory, jakož i přístup k příkazů přidružených s nimi. Pomocí Průzkumníka řešení je snazší pracovat s velkými objemy podnikových projektů. Zobrazit [řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md).
 
 - **Team Explorer:** pomocí Průzkumníku týmových projektů můžete spravovat vaše projekty s úložišti GIT nebo TFS usnadňuje spolupráci mezi týmy. Zobrazit [práci v Průzkumníku týmových projektů](http://msdn.microsoft.com/Library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
 

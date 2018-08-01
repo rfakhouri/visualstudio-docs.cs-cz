@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6862e6dc6ffe9e5a3a201390f419ffe04ea82ce4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 68e6fa138d2b6026a8831362d41cc7e8b407c471
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179382"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382549"
 ---
-# <a name="load-test-run-settings-properties"></a>Vlastnosti parametrů běhu zátěžových testů
+# <a name="load-test-run-settings-properties"></a>Vlastnosti nastavení běhu zátěžového testu
 
-Parametry spuštění zátěžového testu určují celou řadu dalších nastavení, včetně doby trvání testu, úroveň podrobností shromažďování výsledků a sady čítačů, které se shromažďují za běhu testu. Pro každý zátěžový test lze vytvořit a uložit několik parametrů spuštění a následně při spouštění testu zvolit jedno konkrétní nastavení. Při vytvoření zátěžového testu pomocí nového Průvodce zátěžovým testem, počáteční parametry spuštění se přidá do zátěžového testu.
+Parametry spuštění zátěžového testu určují celou řadu dalších nastavení, včetně doby trvání testu, úroveň podrobností shromažďování výsledků a sady čítačů, které se shromažďují za běhu testu. Pro každý zátěžový test lze vytvořit a uložit několik parametrů spuštění a následně při spouštění testu zvolit jedno konkrétní nastavení. Při vytváření vašeho testu zatížení pomocí doplňuje počáteční parametry spuštění zátěžového testu **nového Průvodce zátěžovým testem**.
 
  Následující tabulky popisují různé vlastnosti parametrů spuštění zátěžového testu. Tyto vlastnosti lze upravit tak, aby splňovaly konkrétní požadavky zátěžového testu.
 
- Další informace najdete v tématu [konfigurace nastavení běhu zátěžového testu](../test/configure-load-test-run-settings.md).
+ Další informace najdete v tématu [konfigurovat zátěžovým testem nastavení](../test/configure-load-test-run-settings.md).
 
 ## <a name="general-properties"></a>Obecné vlastnosti
 
@@ -45,14 +45,14 @@ Parametry spuštění zátěžového testu určují celou řadu dalších nastav
 |**Pro dokončené testy uložit frekvenci protokolování**|Určuje frekvenci, s jakou se zapíše protokol testu. Číslo označuje, že jedno vzdálené každý zadaný počet testů, které se uloží do protokolu testu. Například zadáte hodnotu 10 Určuje, že desetinu, dvacáté, třicetiny a tak dále, se zapíšou do protokolu testu. Nastavením této hodnoty na 0 určuje, že se uloží protokolů testu.<br /><br /> Další informace najdete v tématu [postupy: určení frekvence ukládání protokolů testování](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
 |**Selhání testu uložit protokol**|Logická hodnota, která určuje, zda-li ukládání protokolů testování selhání testu v rámci zátěžového testu. Výchozí hodnota je `True`.<br /><br /> Další informace najdete v tématu [postupy: určení, zda jsou selhání testu ukládána do protokolů testování](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
- Další informace najdete v tématu [úprava nastavení protokolování zátěžového testu](../test/modify-load-test-logging-settings.md).
+ Další informace najdete v tématu [nastavení upravit zátěžového testu protokolování](../test/modify-load-test-logging-settings.md).
 
 ## <a name="results-properties"></a>Vlastnosti výsledků
 
 |Vlastnost|Definice|
 |--------------|----------------|
 |**Typ úložiště**|Způsob, jak ukládat čítačů výkonu, které jsou získány v rámci zátěžového testu. Možnosti jsou následující:<br /><br /> -   **Databáze** -vyžaduje databázi SQL, který má **Store výsledků testu zatížení**.<br />-   **Žádný**.|
-|**Úložiště podrobností časování**|To se dá určit podrobnosti, které se budou ukládat v **Store výsledků testu zatížení**. K dispozici jsou tři hodnoty:<br /><br /> -   **AllIndividualDetails** – shromažďování a ukládání jednotlivé hodnoty časování pro každý test, transakci a stránku, které se spouštějí nebo vydanou v průběhu zátěžového testu v **Store výsledků testu zatížení**. Je vyžadován, pokud máte v úmyslu použít graf aktivity virtuálního uživatele v Analyzéru zátěžového testu.<br />     Další informace najdete v tématu [analýza aktivity virtuálního uživatele v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Žádný** -neshromažďují žádné hodnoty jednotlivých časování. Toto je výchozí hodnota pro Visual Studio 2013 Update 4 a novější verze.<br />-   **StatisticsOnly** – shromažďování a ukládání pouze statistiky místo uložení jednotlivé hodnoty časování pro každý test, transakci a stránku, který byl spuštěn nebo vydanou v průběhu zátěžového testu v **Store výsledků testu zatížení**.<br /><br /> Další informace najdete v tématu [postupy: určení vlastnosti úložiště podrobností časování](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
+|**Úložiště podrobností časování**|To se dá určit podrobnosti, které se budou ukládat v **Store výsledků testu zatížení**. K dispozici jsou tři hodnoty:<br /><br /> -   **AllIndividualDetails** – shromažďování a ukládání jednotlivé hodnoty časování pro každý test, transakci a stránku, které se spouštějí nebo vydanou v průběhu zátěžového testu v **Store výsledků testu zatížení**. Je vyžadován, pokud máte v úmyslu použít **graf aktivity virtuálního uživatele** v **Analyzéru zátěžového testu**.<br />     Další informace najdete v tématu [analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Žádný** -neshromažďují žádné hodnoty jednotlivých časování. Toto je výchozí hodnota pro Visual Studio 2013 Update 4 a novější verze.<br />-   **StatisticsOnly** – shromažďování a ukládání pouze statistiky místo uložení jednotlivé hodnoty časování pro každý test, transakci a stránku, který byl spuštěn nebo vydanou v průběhu zátěžového testu v **Store výsledků testu zatížení**.<br /><br /> Další informace najdete v tématu [postupy: určení vlastnosti úložiště podrobností časování](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
 
 ## <a name="sql-tracing-properties"></a>Vlastnosti trasování SQL
 
@@ -70,7 +70,7 @@ Parametry spuštění zátěžového testu určují celou řadu dalších nastav
 |**Test iterací**|Určuje celkový počet jednotlivých testů ke spuštění před dokončením zátěžového testu. Tato vlastnost se týká pouze pokud je vlastnost "použití testovacích iterací" `True`.|
 |**Použít průchod cyklem**|Pokud je testovací iterace použijte `True`, pak běhu zátěžového testu, dokud nedosáhne čísla, která je zadána vlastnost "Testovací iterace" počet jednotlivých testů dokončeno v rámci zátěžového testu. V takovém případě nastavení podle času, které jsou zahřívání doby trvání, doba běhu a doba trvání mimo provoz, jsou ignorovány. Pokud je "Iterace testu použijte" `False`použít všechna nastavení časování a "Testovacích iterací" se ignoruje.|
 
- Další informace najdete v tématu [jak: Zadejte počet testovacích iterací v nastavení spuštění](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+ Další informace najdete v tématu [postupy: určení počtu testovacích iterací v nastavení spuštění](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="timing-properties"></a>Vlastnosti časování
 
@@ -88,8 +88,8 @@ Parametry spuštění zátěžového testu určují celou řadu dalších nastav
 |**Model připojení WebTest**|Tato volba určuje použití připojení z zátěžový testovací agent na webový server pro testy výkonnosti webu, které jsou spouštěny v rámci zátěžového testu. K dispozici jsou tři webového výkonu testu připojení modelu možnosti:<br /><br /> – **Připojení na uživatele** modelu simuluje chování uživatele, který používá skutečný prohlížeč. Pokud je simulované aplikace Internet Explorer 6 nebo Internet Explorer 7, jednotlivé virtuální uživatele, který spouští test výkonnosti webu používá jeden nebo dva vyhrazené připojení k webovému serveru. První připojení při prvním požadavku v testu výkonnosti webu. Druhé připojení může použít, pokud stránka obsahuje více než jeden závislý požadavek. Tyto požadavky jsou vydávány paralelně s použitím dvě připojení. Tato připojení údaje znovu použijí pro následné požadavky v testu výkonnosti webu. Připojení zavřená, po dokončení testu výkonnosti webu. Navracení k tomuto modelu je, že počet připojení, která je otevřena v počítači agenta může být vysoká (až do dvojnásobku uživatelské zatížení). Prostředky, které jsou potřebné k podpoře tento počet vysokou připojení v důsledku toho může omezit uživatelské zatížení, které mohou být řízeny z agenta testu zatížení. Pokud je simulované aplikace Internet Explorer 8, jsou podporovány šest souběžných připojení.<br />– **Fondu připojení** modelu šetří prostředky na zátěžový testovací agent při sdílení připojení k webovému serveru mezi víc uživateli test výkonu virtuální web. Pokud uživatelské zatížení je větší než velikost fondu připojení, testů webového výkonu, které jsou spouštěny v různých virtuálních uživatelů budou sdílet připojení. To může znamenat, že tento test výkonnosti webu jeden muset počkat, než se vydá požadavek na, jestli používáte jiného testu výkonnosti webu je připojení. Průměrná doba testu výkonnosti webu čeká předtím, než odešle, že žádost je sledován pomocí funkce čítač výkonu zátěžového testu Průměrná doba čekání připojení. Tato hodnota musí být menší než průměrná doba odezvy stránky. Pokud není, je pravděpodobně příliš malá velikost fondu připojení.<br />– **Testem** model Určuje použití vyhrazené připojení pro každou iteraci testu.|
 |**Velikosti fondu připojení WebTest**|Určuje maximální počet připojení, aby mezi zátěžový testovací agent a webový server. To se týká pouze **fondu připojení** modelu.|
 
-##  <a name="LoadTestRunSettingsHowToChange"></a> Změna vlastností nastavení spuštění
- K zátěžovému testu lze přidat více parametrů spuštění s různými nastaveními vlastností a spouštět tak zátěžový test za jiných podmínek. Lze například přidat nové nastavení testu a použít jinou vzorkovací frekvenci či zadat delší dobu běhu. Můžete použít pouze jeden parametr spuštění najednou a je nutné zadat, která spuštění pro označením jako aktivní. Příklad najdete v tématu [jak: vybrat aktivní nastavení spuštění pro zátěžový Test](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+##  <a name="change-run-setting-properties"></a>Změna vlastností parametrů spuštění
+ K zátěžovému testu lze přidat více parametrů spuštění s různými nastaveními vlastností a spouštět tak zátěžový test za jiných podmínek. Lze například přidat nové nastavení testu a použít jinou vzorkovací frekvenci či zadat delší dobu běhu. Můžete použít pouze jeden parametr spuštění najednou a je nutné zadat, která spuštění pro označením jako aktivní. Příklad najdete v tématu [postupy: výběr aktivního parametru spuštění pro zátěžový test](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ### <a name="to-change-run-settings"></a>Chcete-li změnit nastavení běhu
 
@@ -106,7 +106,7 @@ Parametry spuštění zátěžového testu určují celou řadu dalších nastav
 5.  Použití **okno vlastností** Změna parametrů běhu. Například změnit dobu spuštění **00:05:00** na test běžel pět minut.
 
     > [!NOTE]
-    > Úplný seznam vlastností parametrů spuštění a jejich popis najdete v části [vlastností nastavení spuštění testu zatížení](../test/load-test-run-settings-properties.md).
+    > Úplný seznam vlastností parametrů spuštění a jejich popis najdete v části [vlastností parametrů spuštění zátěžového testu](../test/load-test-run-settings-properties.md).
 
 6.  Po dokončení změn vlastností uložte zátěžového testu. Na **souboru** nabídce zvolte **Uložit**.
 
@@ -115,4 +115,4 @@ Parametry spuštění zátěžového testu určují celou řadu dalších nastav
 
 ## <a name="see-also"></a>Viz také:
 
-- [Konfigurace parametrů běhu zátěžových testů](../test/configure-load-test-run-settings.md)
+- [Konfigurace parametrů spuštění zátěžového testu](../test/configure-load-test-run-settings.md)

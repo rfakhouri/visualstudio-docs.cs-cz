@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977788"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382331"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů jednotek pomocí Průzkumníka testů
 
@@ -25,7 +25,7 @@ Použití **Průzkumníka testů** spouštění testů jednotek sady Visual Stud
 
 Visual Studio obsahuje rozhraní testování částí Microsoft pro spravovaný i nativní kód. Ale **Průzkumníka testů** můžete taky spustit libovolné jednotky rozhraní testování, který zavedl adaptér Test Explorer. Další informace o instalaci rozhraní pro testování jednotky třetí strany, naleznete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](../test/install-third-party-unit-test-frameworks.md)
 
-**Průzkumník testů** můžete spouštět testy z více zkušebních projektů v řešení a z testů tříd, které jsou součástí výroby kódu projektů. Projekty testů mohou použít jiné jednotky rozhraní testování. Pokud testovaný kód je určené pro rozhraní .NET Framework, testovací projekt lze zapsat v libovolném jazyce, který také cílí na rozhraní .NET Framework, bez ohledu na jazyk cílového kódu. Nativní projekty kódu C/C++ musí být testovány pomocí rozhraní testování částí C++. Další informace najdete v tématu [psaní testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md).
+**Průzkumník testů** můžete spouštět testy z více zkušebních projektů v řešení a z testů tříd, které jsou součástí výroby kódu projektů. Projekty testů mohou použít jiné jednotky rozhraní testování. Pokud testovaný kód je určené pro rozhraní .NET Framework, testovací projekt lze zapsat v libovolném jazyce, který také cílí na rozhraní .NET Framework, bez ohledu na jazyk cílového kódu. Nativní projekty kódu C/C++ musí být testovány pomocí rozhraní testování částí C++. Další informace najdete v tématu [zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Spustit testy v Průzkumníku testů
 
@@ -35,7 +35,7 @@ Když sestavíte testovací projekt, testy se zobrazí v Průzkumníku testů. P
 
 Jak spustit, zápis a znovu spouštěny, zobrazuje Průzkumník testů výsledky ve výchozích skupinách **neúspěšné testy**, **úspěšné testy**, **přeskočené testy** a  **Nespuštěné testy**. Můžete změnit způsob, jakým Průzkumník testů seskupuje vaše testy.
 
-Můžete provádět většinu práce hledání, uspořádání a spuštění testů z panelu nástrojů Test Explorer.
+Můžete provádět většinu práce hledání, uspořádání a spouštění testů z **Průzkumník testů** nástrojů.
 
 ![Spuštění testů z panelu nástrojů Průzkumníka testů](../test/media/ute_toolbar.png)
 
@@ -51,13 +51,13 @@ Spustit všechny testy v řešení, všechny testy ve skupině nebo sadu testů,
 
 - Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png) přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.
 
-Panel úspěšný/selhání v horní části okna Průzkumníka testů je animovaný během spuštění testů. V závěru testovacího běhu panel úspěšný/selhání se změní na zelenou Pokud všechny testy předat, nebo zčervená, pokud některé testy selhaly.
+**Panel úspěšný/selhání** v horní části **Průzkumník testů** okna je animovaný ke spuštění testů. V závěru testovacího běhu **panel úspěšný/selhání** se změní na zelenou, pokud všechny testy proběhly úspěšně, nebo zčervená, pokud některé testy selhaly.
 
 ### <a name="run-tests-after-every-build"></a>Spustit testy po každém sestavení
 
 |Tlačítko|Popis|
 |-|-|
-|![Spustit po sestavení](../test/media/ute_runafterbuild_btn.png)|Chcete-li spouštět testy jednotek po každém místním sestavení, zvolte **testovací** ve standardní nabídce a klikněte na tlačítko **spustit testy po sestavení** na panelu nástrojů Průzkumník testů.|
+|![Spustit po sestavení](../test/media/ute_runafterbuild_btn.png)|Chcete-li spouštět testy jednotek po každém místním sestavení, zvolte **testovací** ve standardní nabídce a klikněte na tlačítko **spustit testy po sestavení** na **Průzkumníka testů** nástrojů.|
 
 ## <a name="view-test-results"></a>Zobrazení výsledků testu
 
@@ -127,7 +127,7 @@ Test Explorer umožňuje seskupit testy do předdefinovaných kategorií. Větš
 
 Filtry Průzkumníka testování filtrů můžete použít k omezení zkušebních metod v projektech, které můžete zobrazit a spustit.
 
-Zadejte řetězec do vyhledávacího pole Průzkumníka testů a zvolte ENTER, seznam testů je filtrován a zobrazuje pouze testy, jejichž plně kvalifikované názvy obsahují řetězec.
+Pokud zadáte řetězec **Průzkumníka testů** vyhledávací pole a tlačítko **Enter**, seznam testů je filtrován a zobrazuje pouze testy, jejichž plně kvalifikované názvy obsahují řetězec.
 
 Filtrovat podle různých kritérií:
 
@@ -162,15 +162,15 @@ Například `FullName:"MyClass" - FullName:"PerfTest"` vrátí všechny testy, k
 
 ## <a name="create-custom-playlists"></a>Vytvořit vlastní seznamy skladeb
 
- Můžete vytvořit a uložit seznam testů, které chcete spustit nebo zobrazit jako skupinu. Když vyberete seznam stop, testy v seznamu se zobrazí Průzkumník testů. Test můžete přidat k více než jednoho seznamu stop a všechny testy ve vašem projektu jsou k dispozici, když zvolíte výchozí **všechny testy** seznamu testů.
+ Můžete vytvořit a uložit seznam testů, které chcete spustit nebo zobrazit jako skupinu. Když vyberete seznam stop, testy v seznamu se zobrazí v Průzkumníku testů. Test můžete přidat k více než jednoho seznamu stop a všechny testy ve vašem projektu jsou k dispozici, když zvolíte výchozí **všechny testy** seznamu testů.
 
  ![Zvolte seznam stop](../test/media/ute_playlist.png)
 
- **Chcete-li vytvořit seznam stop**, vyberte jeden nebo více testů v aplikaci Průzkumník testů. V místní nabídce zvolte **přidat do seznamu testů**, **NewPlaylist**. Uložte soubor s názvem a umístění, které zadáte **vytvořit nový seznam testů** dialogové okno.
+ **Chcete-li vytvořit seznam stop**, vyberte jeden nebo více testů v aplikaci Průzkumník testů. V místní nabídce zvolte **přidat do seznamu testů** > **NewPlaylist**. Uložte soubor s názvem a umístění, které zadáte **vytvořit nový seznam testů** dialogové okno.
 
  **Chcete-li přidat testy do seznamu stop**, vyberte jeden nebo více testů v aplikaci Průzkumník testů. V místní nabídce zvolte **přidat do seznamu testů**a pak zvolte seznam testů, které chcete přidat testy.
 
- **Chcete-li otevřít seznam skladeb**, zvolte Test, seznam skladeb v nabídce sady Visual Studio a zvolte ze seznamu naposledy použitých seznamů stop nebo zvolte možnost Otevřít seznam stop, chcete-li určit název a umístění seznamu stop.
+ **Chcete-li otevřít seznam skladeb**, zvolte **testovací** > **stop** v nabídce sady Visual Studio a buď zvolte ze seznamu naposledy použitých seznamů stop nebo zvolte **otevřete Seznam testů** zadat název a umístění seznamu stop.
 
  Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png) přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.
 
@@ -187,11 +187,11 @@ Průzkumník testů můžete použít ke spuštění relace ladění pro testy. 
 
 2. V Průzkumníku testů vyberte testovací metody a pak zvolte **ladit vybrané testy** v místní nabídce.
 
- Další informace o ladicím programu, najdete v části [ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md).
+ Další informace o ladicím programu, najdete v části [ladit v sadě Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnostika problémů s výkonem test – metoda
 
- Chcete-li diagnostikovat, proč testovací metoda trvá příliš dlouho, v Průzkumníku testů vyberte metodu a zvolte profil v místní nabídce. Zobrazit [prohlížeč výkonu](../profiling/performance-explorer.md).
+ Chcete-li diagnostikovat, proč testovací metoda trvá příliš dlouho, v Průzkumníku testů vyberte metodu a zvolte **profilu** v místní nabídce. Zobrazit [prohlížeč výkonu](../profiling/performance-explorer.md).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analyzovat pokrytí kódem jednotkového testu
 
@@ -207,9 +207,9 @@ Pokud chcete spustit pokrytí kódu pro testovací metody v řešení:
 
     - **Všechny testy** spustí všechny testovací metody v řešení.
 
-Okno výsledky pokrytí kódu zobrazuje procento bloků kódu produktu, které byly vykonány podle řádku, funkce, třídy, oboru názvů a modulu.
+**Výsledky pokrytí kódu** okno zobrazuje procento bloků kódu produktu, které byly vykonány podle řádku, funkce, třídy, oboru názvů a modulu.
 
-Další informace najdete v tématu [pomocí pokrytí kódu k určení jak mnohem kódu je právě testováno](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Další informace najdete v tématu [použití pokrytí kódu k určení, kolik kódu je právě testováno](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ## <a name="test-shortcuts"></a>Testování klávesové zkratky
 
@@ -217,8 +217,8 @@ Testy můžete spustit z **Průzkumníka testů**, tak, že kliknete pravým tla
 
 |Časté příkazy| Klávesové zkratky|
 |--------------|------------------------|
-|TestExplorer.DebugAllTestsInContext|Ctrl+R, Ctrl+T|
-|TestExplorer.RunAllTestsInContext|Ctrl+R, T|
+|TestExplorer.DebugAllTestsInContext|**CTRL**+**R**, **Ctrl**+**T**|
+|TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
 
 > [!NOTE]
 > Nelze spustit test v abstraktní třídě, protože testy jsou definována pouze v abstraktní třídy a není vytvořena instance. Pro spouštění testů z abstraktní třídy, vytvořte třídu, která dědí z abstraktní třídy.

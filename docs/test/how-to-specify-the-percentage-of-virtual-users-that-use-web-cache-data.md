@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 360c8ea61a97256a316c726954bf53e4dcf3004b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 406c1c0c853563dc45b76e0bbcfefb3e21df0aff
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180048"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379368"
 ---
-# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Postupy: Určení procenta virtuálních uživatelů, kteří používají data ve webové mezipaměti
+# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Postupy: určení procentuální podíl virtuálních uživatelů, které používají data ve webové mezipaměti
 
-Po vytvoření zátěžového testu pomocí **nového Průvodce zátěžovým testem**, můžete změnit vlastnosti scénářů pro splnění potřebám a cílům testování s použitím **editoru zátěžového testu**. Úplný seznam vlastnosti scénáře zátěžového testu a jejich popis najdete v tématu [načíst vlastnosti scénář testování](../test/load-test-scenario-properties.md).
+Po vytvoření zátěžového testu pomocí **nového Průvodce zátěžovým testem**, můžete změnit vlastnosti scénářů pro splnění potřebám a cílům testování s použitím **editoru zátěžového testu**. Úplný seznam vlastnosti scénáře zátěžového testu a jejich popis najdete v tématu [vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md).
 
-**Procentuální podíl nových uživatelů** je nastavena v okně Vlastnosti. Můžete upravit vlastnosti scénáře zátěžového testu v editoru zátěžového testu.
+**Procentuální podíl nových uživatelů** je nastavena **vlastnosti** okna. Upravit vlastnosti scénáře zátěžového testu v **editoru zátěžového testu**.
 
 **Procentuální podíl nových uživatelů** vlastnost ovlivňuje způsob, ve kterém zátěžový test simuluje ukládání do mezipaměti, která by se provedla ve webovém prohlížeči. Ve výchozím nastavení **procentuální podíl nových uživatelů** je nastavena na 0 %. Pokud hodnota **procentuální podíl nových uživatelů** je nastavena na 100 %, každý test výkonnosti webu spuštění v rámci zátěžového testu se zachází stejně jako jste nový uživatel na web který nemá žádný obsah z webu do mezipaměti prohlížeče z předchozí návštěvě. Proto se stáhnou všechny požadavky do webového testu, všechny závislé požadavky, jako jsou obrázky, včetně.
 
@@ -40,7 +40,7 @@ Pokud jsou zátěžové testy webu, který má velký počet návratový uživat
 
 3. Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
 
-     Tento scénář kategorie a vlastnosti jsou zobrazeny v okně Vlastnosti.
+     Tento scénář kategorie a vlastnosti jsou zobrazeny v **vlastnosti** okna.
 
 4. Nastavte hodnotu **procento noví uživatelé** vlastnost tak, že zadáte číslo pro procentuální podíl nových uživatelů.
 
@@ -52,4 +52,4 @@ Pokud jsou zátěžové testy webu, který má velký počet návratový uživat
 - [Návod: Vytvoření a spuštění zátěžového testu](../test/walkthrough-create-and-run-a-load-test.md)
 - [Kontrolery testů a testovací agenti](configure-test-agents-and-controllers-for-load-tests.md)
 - [Vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md)
-- [Úpravy vzorů zatížení pro modelování aktivit virtuálních uživatelů](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Úpravy vzorů zatížení pro model aktivity virtuálního uživatele](../test/edit-load-patterns-to-model-virtual-user-activities.md)

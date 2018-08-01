@@ -11,55 +11,55 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a41b9e7470fb9741a47f355e533c0451fe67fc3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d50353bcda7d9071f9be55a414b7df42f52dd7a8
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974054"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379322"
 ---
-# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Postupy: Určení vlastnosti úložiště podrobností časování pro parametry běhu zátěžového testu
+# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Postupy: určení vlastnosti úložiště podrobností časování pro spuštění zátěžového testu
 
-Po vytvoření vaší zátěžový test pomocí **načíst testování Průvodce novým**, můžete použít **načíst Editor testů** Chcete-li změnit nastavení, aby splňovalo potřeby testování a cíle.
+Po vytvoření zátěžového testu pomocí **nového Průvodce zátěžovým testem**, můžete použít **editoru zátěžového testu** Chcete-li změnit nastavení, aby splňovalo potřebám a cílům testování.
 
-Můžete upravit nastavení spuštění **úložiště podrobností časování** hodnotu vlastnosti v **vlastnosti** okno. **Úložiště podrobností časování** může být nastavena na žádnou z následujících možností:
+Můžete upravit nastavení spuštění **úložiště podrobností časování** hodnotu vlastnosti v **vlastnosti** okna. **Úložiště podrobností časování** vlastnost lze nastavit na kteroukoli z následujících možností:
 
--   **Všechny podrobnosti o jednotlivých:** shromažďuje a ukládá data jednotlivých časování pro každý test, transakce a stránka vydané během testu.
+-   **Detaily o všech jednotlivých položkách:** shromažďuje a ukládá data jednotlivých časování pro každý test, transakci a stránku zmíněnou v průběhu testu.
 
     > [!NOTE]
-    > **Všech podrobností o jednotlivých** je třeba vybrat možnost povolení informace data virtuálních uživatelů v si výsledky testu zatížení. Další informace najdete v tématu [analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+    > **Detaily o všech jednotlivých položkách** musí být vybrána možnost povolit informace o datech virtuálních uživatelů ve vašich výsledcích zátěžového testu. Další informace najdete v tématu [analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
--   **Žádné:** neshromažďuje žádné informace o jednotlivých časování. Průměrné hodnoty jsou však stále k dispozici.
+-   **Žádné:** neshromažďuje žádné podrobnosti jednotlivých časování. Průměrné hodnoty jsou však stále k dispozici.
 
--   **Pouze statistiku:** ukládá data jednotlivých časování, ale pouze jako percentilu data. To umožňuje ušetřit místo na prostředky.
+-   **Pouze statistiky:** ukládá jednotlivá data časování, ale pouze jako percentil. Tím ušetříte prostředky prostoru.
 
  **Důležité informace týkající se vlastnosti úložiště podrobností časování**
 
- Pokud **úložiště podrobností časování** je povolena vlastnost a potom čas spuštění každé jednotlivé testy, transakce a stránku během zátěžového testu se budou ukládat do úložiště výsledků zátěžového testu. To umožňuje data 90 a 95. percentil zobrazený v Analyzéru zátěžového testu v tabulkách testy, transakce a stránky.
+ Pokud **úložiště podrobností časování** vlastnost je povolená, pak čas ke spuštění každé jednotlivé testy, transakce a stránky během zátěžového testu uložen v úložišti výsledků zátěžového testu. To umožňuje 90. percentil. a 95. percentil dat zobrazený v **Analyzéru zátěžového testu** v **testy**, **transakce**, a **stránky** tabulky.
 
- Pokud **úložiště podrobností časování** vlastnost povolena, podle nastavení její hodnoty na buď **StatisticsOnly** nebo **AllIndividualDetails**, všechny jednotlivé testy, stránky a transakce jsou vypršel časový limit a percentilu dat se počítá z dat jednotlivých časování. Rozdíl je, že se **StatisticsOnly** po vypočítáváno data percentilu možnost jednotlivých načasování data se odstraní z úložiště. Tím se snižuje množství místa, které je vyžadováno úložiště podrobností časování se používají. Můžete ale chtít zpracovat podrobných dat časování v jiné způsoby pomocí nástroje SQL, v takovém případě **AllIndividualDetails** by měl být použit, aby byla dostupná pro toto zpracování podrobných dat časování. Kromě toho pokud nastavíte vlastnost na **AllIndividualDetails**, pak můžete analyzovat aktivity virtuálních uživatelů po dokončení spuštění zátěžového testu pomocí grafu aktivity virtuálních uživatelů v analyzátoru načíst otestovat. Další informace najdete v tématu [analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+ Pokud **úložiště podrobností časování** je povolena vlastnost nastavením její hodnoty na buď **StatisticsOnly** nebo **AllIndividualDetails**, všechny individuální testy, stránky, a transakce jsou časovány a data percentilu se vypočtou z jednotlivých dat časování. Rozdíl je, že u **StatisticsOnly** poté, co byla vypočtena data pro percentil, možnost jednotlivá časová data odstraněna z úložiště. To snižuje množství místa, které je nutné v úložišti, pokud jsou použity podrobnosti časování. Můžete však chtít zpracovat podrobná data časování jiným způsobem pomocí nástrojů SQL, v takovém případě **AllIndividualDetails** by měl být použit, tak, aby podrobná data časování byla k dispozici pro zpracování. Navíc pokud nastavíte vlastnost na **AllIndividualDetails**, pak lze analyzovat aktivity virtuálního uživatele pomocí **graf aktivity virtuálního uživatele** v **Analyzéru zátěžového testu** po dokončení zátěžového testu. Další informace najdete v tématu [analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
- Množství místa v úložiště výsledků zátěžového testu pro ukládání dat časování podrobnosti může být velký, zejména pro již spouštění zátěžových testů. Navíc čas k uložení dat této v zátěžový test, který úložiště výsledků zátěžového testu na konci je delší, protože tato data jsou ukládána v testovacích agentů zatížení, dokud zátěžový test byl dokončen, po kterých jsou data uložena do úložiště. **Úložiště podrobností časování** vlastnost je ve výchozím nastavení povolené. Jedná se o problém pro testovací prostředí, můžete nastavit **úložiště podrobností časování** k **žádné**.
+ Množství místa potřebné v úložišti výsledků zátěžového testu k ukládání dat s podrobnosti časování může být značné, zejména pro delší zkoušky zatížení. Také čas pro ukládání těchto dat v zátěžovém testu, které úložiště výsledků na konci zátěžového testu je delší, protože tato data jsou uložena v agentech zátěžového testu, dokud zátěžový test neskončí, po kterém jsou data uložena do úložiště. **Úložiště podrobností časování** ve výchozím nastavení je povolena vlastnost. Pokud je to problém pro testovací prostředí, možná budete chtít nastavit **úložiště podrobností časování** k **žádný**.
 
- Podrobnosti dat časování je uložený v souboru LoadTestItemResults.dat během spuštění a je odeslána zpět do kontroleru, po dokončení zátěžový test. Velikost souboru je pro zátěžový test systémem po dlouhou dobu, velké. Pokud v počítači agenta není dostatek místa na disku, bude problém.
+ Podrobnosti časování, data se ukládají do *LoadTestItemResults.dat* ukládáte za běhu a jsou odeslány zpět do řadiče po dokončení zátěžového testu. U zátěžového test spuštěného na dlouhou dobu velikost souboru je velká. Pokud na počítači agenta není dostatek místa na disku, bude problém.
 
- Pokud projekt provádíte upgrade z předchozí verze sady Visual Studio zátěžový test, použijte následující postup povolení kolekce úplné podrobnosti.
+ Pokud provádíte upgrade projektu z předchozí verze zátěžového testu sady Visual Studio, pomocí následující postupu povolíte zcela podrobnou kolekci.
 
-## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>Konfigurovat vlastnosti úložiště podrobností časování v zátěžovém testu
+## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>Konfigurace vlastnosti úložiště podrobností načasování v zátěžovém testu
 
-1.  Otevřete v editoru zátěžových testů zátěžový test.
+1.  V editoru zátěžového testu otevřete zátěžový test.
 
-2.  Rozbalte **spustit nastavení** uzlu v zátěžovém testu.
+2.  Rozbalte **parametrů běhu** uzlu v zátěžovém testu.
 
-3.  Zvolit na spuštění nastavení, které chcete konfigurovat, například **spustit Settings1 [Active]**.
+3.  Zvolte v běhu, které chcete konfigurovat, například **běhu1 [aktivní]**.
 
-4.  Otevřete okno Vlastnosti. Na **zobrazení** nabídce vyberte možnost **vlastnosti – okno**.
+4.  Otevřít **vlastnosti** okna. Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
 
-5.  V části **výsledky** kategorie, vyberte **úložiště podrobností časování** vlastnost a vyberte **všech podrobností o jednotlivých**.
+5.  V části **výsledky** kategorie, zvolte **úložiště podrobností časování** vlastnosti a vyberte **detaily o všech jednotlivých položkách**.
 
-     Po dokončení konfigurace **všech podrobností o jednotlivých** nastavení **úložiště podrobností časování** vlastnost, můžete spustit zátěžový test a zobrazení grafu aktivity virtuálního uživatele. Další informace najdete v tématu [postupy: Analýza co virtuální uživatelé jsou to během zátěžový Test](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
+     Po nakonfigurování **detaily o všech jednotlivých položkách** nastavení **úložiště podrobností časování** vlastností, můžete spustit zatížení testování a zobrazení **graf aktivity virtuálního uživatele**. Další informace najdete v tématu [postupy: analýza, co dělají virtuálních uživatelů během zátěžového testu](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Návod: Izolace problémů pomocí graf aktivity virtuálního uživatele](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

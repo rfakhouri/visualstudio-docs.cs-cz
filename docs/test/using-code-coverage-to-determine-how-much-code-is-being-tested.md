@@ -15,14 +15,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a4164f9911ae9ca0eade08c1ef8c12fc6bc46300
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978246"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381713"
 ---
-# <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Použití pokrytí kódu k určení, kolik kódu je právě testováno.
+# <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Určení rozsahu testovaného kódu pomocí pokrytí kódu
 
 Funkci pokrytí kódu sady Visual Studio lze použít ke zjištění toho, jaký podíl kódu projektu je skutečně testován kódovanými testy, jako jsou například jednotkové testy. Pro efektivní ochranu před chybami je vhodné testovat, neboli „pokrýt“, velkou část kódu projektu.
 
@@ -51,7 +51,7 @@ Pokrytí kódu je jedna z možností při spouštění testovacích metod pomoc�
 > - Pokud pracujete s nespravovaným (nativním) kódem, použijte sestavení pro ladění
 > - Ujistěte se, že jsou generovány soubory s příponou .pdb (symbol) pro každé sestavení.
 
-Pokud neobdržíte výsledky, které jste očekávali, přečtěte si téma [Poradce při potížích s pokrytím kódu](../test/troubleshooting-code-coverage.md). . Nezapomeňte spustit pokrytí kódu po aktualizaci kódu. Výsledky pokrytí kódu a barevné zvýraznění kódu nejsou po změně kódu nebo při spuštění testů automaticky aktualizovány.
+Pokud neobdržíte výsledky, které jste očekávali, přečtěte si téma [Poradce při potížích s pokrytím kódu](../test/troubleshooting-code-coverage.md). Nezapomeňte spustit pokrytí kódu po aktualizaci kódu. Výsledky pokrytí kódu a barevné zvýraznění kódu nejsou po změně kódu nebo při spuštění testů automaticky aktualizovány.
 
 ## <a name="report-in-blocks-or-lines"></a>Sestava v blocích nebo řádcích
 
@@ -63,7 +63,7 @@ Někteří uživatelé dávají přednost určování pokrytí podle počtu řá
 
 ## <a name="manage-code-coverage-results"></a>Správa výsledků pokrytí kódu
 
-Okno Výsledky pokrytí kódu obvykle zobrazuje výsledek posledního běhu. Výsledky se budou lišit, pokud dojde ke změně zkušebních dat nebo jsou pokaždé spuštěny jen některé testy.
+**Výsledky pokrytí kódu** okno obvykle zobrazuje výsledek posledního spuštění. Výsledky se budou lišit, pokud dojde ke změně zkušebních dat nebo jsou pokaždé spuštěny jen některé testy.
 
 Okno pokrytí kódu lze také použít k zobrazení předchozích výsledků nebo výsledků získaných na jiných počítačích.
 
@@ -71,13 +71,13 @@ Je také možné sloučit výsledky několika běhů, pokud například použív
 
 -   **Chcete-li zobrazit předchozí sady výsledků**, vyberte ho z rozevírací nabídky. Nabídka obsahuje dočasný seznam, který je po otevření nového řešení vyprázdněn.
 
--   **Chcete-li zobrazit výsledky z předchozí relace**, zvolte **importovat výsledky pokrytí kódu**, přejděte do složky TestResults ve svém řešení a importujte soubor s příponou .coverage.
+-   **Pro zobrazení výsledků z předchozí relace**, zvolte **importovat výsledky pokrytí kódu**, přejděte **TestResults** složky v řešení a import *.coverage* souboru.
 
-    Vybarvení pokrytí může být nesprávné v případě, že byl zdrojový kód změněn od chvíle vygenerování souboru s příponou .coverage.
+    Vybarvení pokrytí může být nesprávné v případě, že byl zdrojový kód změněn od *.coverage* vygeneroval soubor.
 
--   **Aby byly výsledky čitelné jako text**, zvolte **exportovat výsledky pokrytí kódu**. Tím se vytvoří soubor s příponou .coveragexml, který je možné zpracovat v jiných nástrojích nebo jednoduše odeslat e-mailem.
+-   **Aby byly výsledky čitelné jako text**, zvolte **exportovat výsledky pokrytí kódu**. Tím se vygeneruje čitelné *.coveragexml* souboru, který může zpracovat v jiných nástrojích nebo jednoduše odeslat e-mailu.
 
--   **Pro odeslání výsledků někomu jinému**, odeslat soubor s příponou .coverage nebo .coveragexml exportovaný soubor s příponou. Tento soubor je pak možné importovat. Pokud se navíc shodují verze zdrojového kódu, je možné zobrazit i vybarvení pokrytí.
+-   **Pro odeslání výsledků někomu jinému**, odeslat buď *.coverage* souboru nebo exportovaná *.coveragexml* souboru. Tento soubor je pak možné importovat. Pokud se navíc shodují verze zdrojového kódu, je možné zobrazit i vybarvení pokrytí.
 
 ## <a name="merge-results-from-different-runs"></a>Sloučení výsledků různých běhů
 
@@ -245,15 +245,15 @@ Použijte následující makra:
 
 ### <a name="include-or-exclude-additional-elements"></a>Zahrnutí nebo vyloučení dalších prvků
 
-Analýza pokrytí kódu je provedena pouze u sestavení, která jsou načtena a pro něž je k dispozici soubor s příponou .pdb ve stejném adresáři jako soubor s příponou .dll nebo .exe. Proto je v některých případech možné rozšířit sadu zahrnutých sestavení získáním kopie jejich souborů s příponou .pdb.
+Analýza pokrytí kódu je provedena pouze na sestavení, která jsou načtena a pro které *PDB* je k dispozici ve stejném adresáři jako soubor *.dll* nebo *.exe* souboru. Proto v některých případech můžete rozšířit sadu sestavení, která je zahrnutá získáním kopie jejich odpovídající *PDB* soubory.
 
-Je také možné získat větší kontrolu nad sestaveními a prvky vybranými pro analýzu pokrytí kódu vytvořením souboru .runsettings. Je tak například možné vyloučit určitá sestavení bez nutnosti přidávání atributů jejich třídám. Další informace najdete v tématu [přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md).
+Je také možné získat větší kontrolu nad tím, které sestavení a prvky vybranými pro analýzu pokrytí kódu pomocí zápisu *s příponou .runsettings* souboru. Je tak například možné vyloučit určitá sestavení bez nutnosti přidávání atributů jejich třídám. Další informace najdete v tématu [přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="analyze-code-coverage-in-the-build-service"></a>Analýza pokrytí kódu ve službě sestavení
 
 Při vrácení kódu se změnami jsou testy spuštěny na serveru sestavení společně se všemi dalšími testy ostatních členů týmu. (Pokud jste ještě nenastavili to, přečtěte si téma [spuštění testů v procesu sestavení](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Je užitečné analyzovat pokrytí kódu na službě sestavení, protože to poskytuje nejaktuálnější a nejsrozumitelnější obraz o pokrytí celého projektu. Bude také zahrnovat automatizované systémové testy a další kódované testy, které nejsou obvykle spouštěny na počítačích vývojářů.
 
-1. V Průzkumníku týmových projektů otevřete **sestavení**a poté přidejte nebo upravte definici sestavení.
+1. V **Team Exploreru**, otevřete **sestavení**a poté přidejte nebo upravte definici sestavení.
 
 2. Na **procesu** stránce, rozbalte **automatizované testy**, **zdroj testu**, **parametrů běhu**. Nastavte **typ souboru parametrů běhu** k **povoleným pokrytím kódu**.
 

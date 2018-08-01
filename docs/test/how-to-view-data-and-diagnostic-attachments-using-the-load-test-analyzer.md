@@ -1,5 +1,5 @@
 ---
-title: Zobrazení dat a příloh diagnostiky pro zátěžové testy v sadě Visual Studio
+title: Zobrazit Data a diagnostické přílohy pro zátěžové testy v sadě Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,32 +10,32 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 525f4a1d11cd4026410baf696b4593daf2595e12
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 228f8306b803fcbd0e83e23e5b8e919dc2116c37
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751362"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382461"
 ---
-# <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>Postupy: Zobrazení příloh diagnostiky dat pomocí analyzéru zátěžového testu
+# <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>Postupy: zobrazení data a diagnostické přílohy pomocí Analyzéru zátěžového testu
 
-Před spuštěním zátěžového testu si lze vybrat nastavení testu, které určuje diagnostické adaptéry a adaptéry dat, které chcete použít. Po dokončení zátěžového testu lze pomocí Analyzéru zátěžového testu zobrazit podrobnosti těchto diagnostických adaptérů a adaptérů dat během analýzy výsledků. Chcete-li zobrazit data a adaptéru diagnostických podrobnosti, vyberte **zobrazení dat a příloh diagnostiky** tlačítka na panelu nástrojů Analyzéru zátěžového testu. Pokud měl například zátěžový test v nastavení nakonfigurován adaptér systémových informací, lze zobrazit systémové informace pro počítač, který byl při běhu zátěžového testu použit.
+Před spuštěním zátěžového testu si lze vybrat nastavení testu, které určuje diagnostické adaptéry a adaptéry dat, které chcete použít. Po dokončení zátěžového testu, můžete použít **Analyzéru zátěžového testu** zobrazíte podrobnosti o těchto adaptérech diagnostiky a dat během analýzy výsledků. Chcete-li zobrazit data a podrobnosti o adaptéru diagnostiky, zvolte **zobrazit Data a diagnostické přílohy** tlačítko **Analyzéru zátěžového testu** nástrojů. Pokud měl například zátěžový test v nastavení nakonfigurován adaptér systémových informací, lze zobrazit systémové informace pro počítač, který byl při běhu zátěžového testu použit.
 
-![Výběr dialogové okno přílohy adaptér diagnostických dat](../test/media/load_adapterdialog.png)
+![Výběr dialogového okna přílohu adaptéru diagnostiky dat](../test/media/load_adapterdialog.png)
 
-Dalším příkladem je zátěžový test, který v nastavení testu zahrnuje adaptér technologie IntelliTrace. Adaptér technologie IntelliTrace umožňuje otevírat souhrnnou stránku technologie IntelliTrace.
+Dalším příkladem je zátěžový test, který v nastavení testu zahrnuje adaptér technologie IntelliTrace. Adaptér technologie IntelliTrace umožňuje otevírat **IntelliTrace – Souhrn** stránky.
 
-![Souhrn IntelliTrace](../test/media/load_intellitrace.png)
+![IntelliTrace – souhrn](../test/media/load_intellitrace.png)
 
-Další informace najdete v tématu [shromažďovat diagnostické informace využitím testovacích nastavení](../test/collect-diagnostic-information-using-test-settings.md) a [dat shromažďování IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
+Další informace najdete v tématu [shromažďování diagnostických informací pomocí nastavení testu](../test/collect-diagnostic-information-using-test-settings.md) a [data IntelliTrace shromažďování](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
 
 ## <a name="to-view-data-and-diagnostic-attachments-in-a-load-test-from-the-load-test-analyzer"></a>Zobrazení příloh diagnostiky dat v zátěžovém testu z Analyzéru zátěžového testu
 
-1.  Po dokončení testu zatížení nebo po otevření výsledků testů zatížení, v panelu nástrojů nástroje načíst testování Analyzer společnosti, zvolte **zobrazení dat a příloh diagnostiky**.
+1.  Po dokončení zátěžového testu nebo po otevření výsledku zátěžového testu v **Analyzéru zátěžového testu** nástrojů, zvolte **zobrazit Data a diagnostické přílohy**.
 
-     **Zvolte adaptéru diagnostických dat** se zobrazí dialogové okno.
+     **Zvolte adaptér diagnostiky dat** se zobrazí dialogové okno.
 
-2.  Vyberte přílohu adaptéru diagnostických dat, která chcete analyzovat a pak zvolte **OK**.
+2.  Vyberte přílohu adaptéru diagnostiky dat, který chcete analyzovat a klikněte na tlačítko **OK**.
 
 ## <a name="see-also"></a>Viz také:
 

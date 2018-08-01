@@ -10,58 +10,58 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24ce9f954164cd8d243edfab4387f6b174c0648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968533"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379286"
 ---
-# <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Postupy: Instalace vlastního adaptéru diagnostických dat
+# <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Postupy: instalace vlastního adaptéru diagnostických dat
 
-Pokud jste vytvořili vlastního adaptéru diagnostických dat nebo vám byly zadány s vlastního adaptéru diagnostických dat použít, můžete nainstalovat vaše sestavení adaptéru diagnostických dat tak, že zkopírujete soubor sestavení pro něj ve správném adresáři na místním počítači.
+Pokud jste vytvořili vlastního adaptéru diagnostických dat nebo vám byl poskytnut vlastního adaptéru diagnostických dat použít, můžete nainstalovat sestavení adaptéru diagnostických dat zkopírováním souboru sestavení, do správného adresáře na místním počítači.
 
- Pokud chcete použít pro roli v prostředí vašeho vlastního adaptéru diagnostických dat, je nutné nainstalovat adaptér diagnostických dat na všech počítačích se systémem testovacích agentů, které lze použít pro tuto roli.
+ Pokud chcete použít pro roli v prostředí vašeho vlastního adaptéru diagnostických dat, musíte nainstalovat adaptér diagnostických dat na všech počítačích, které spustí testovací agenty, které můžete použít pro tuto roli.
 
- Použijte následující postup k instalaci vaší vlastního adaptéru diagnostických do vhodného umístění. Budete potřebovat oprávnění správce na jakýkoli počítač, který jste nainstalovali adaptér diagnostických dat.
+ Následujícím postupem nainstalujte vlastní diagnostický adaptér na příslušných místech. Budete potřebovat oprávnění správce na jakýkoli počítač, kam nainstalujete adaptér diagnostických dat.
 
-## <a name="installing-a-custom-diagnostic-data-adapter"></a>Instalace vlastního adaptéru diagnostických dat
+## <a name="install-a-custom-diagnostic-data-adapter"></a>Instalovat vlastního adaptéru diagnostických dat
 
 ### <a name="to-install-a-custom-diagnostic-data-adapter"></a>Chcete-li nainstalovat vlastního adaptéru diagnostických dat
 
-1.  Adaptér diagnostických dat použít při spuštění testů na klientský počítač nebo na počítač agenta, zkopírujte všechny soubory z adresáře sestavení v cílovém počítači, na základě cesty instalace na následující adresář:
+1.  Pokud chcete použít adaptér diagnostických dat při spuštění testů v klientském počítači nebo na počítači agenta, zkopírujte všechny soubory z adresáře sestavení do následující složky v cílovém počítači, na základě instalační cesty:
 
      *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*
 
-     Připojené soubory jsou:
+     Soubory ke kopírování jsou:
 
-    -   Adaptér diagnostických dat sestavení (.dll) (povinné).
+    -   Sestavení adaptéru diagnostických dat (*.dll*) (povinné).
 
-    -   Ladění datového souboru (.pdb) pro adaptér (volitelné).
+    -   Ladění datový soubor (*PDB*) pro adaptér (volitelné).
 
-    -   Konfigurační soubor pro adaptér (`<diagnostic data adapter name>.dll.config`), pokud máte výchozí nastavení (volitelné).
+    -   Konfigurační soubor pro adaptér (`<diagnostic data adapter name>.dll.config`), pokud jste nastavili výchozí nastavení konfigurace (nepovinné).
 
-    -   Sestavení configuration editor, pokud jste nějakou vytvořili upravit nastavení konfigurace pro adaptér (volitelné). Toto je pouze pro klientské počítače. Počítače agenta nepoužívejte editoru.
+    -   Sestavení konfiguračního editoru, pokud jste vytvořili pro úpravu nastavení konfigurace pro adaptér (volitelně). Toto je pouze pro klientské počítače. Počítačů agentů nepoužívejte v editoru.
 
     > [!NOTE]
-    > I když adaptér diagnostických dat a vaše konfigurace editor můžete vytvořit ve stejném projektu a integrované do stejného sestavení, můžete použít samostatné projekty a vytvořit samostatné sestavení pro ně, pokud dáváte přednost.
+    > Přestože adaptér diagnostických dat a konfigurační editor lze vytvořit ve stejném projektu a integrované do stejného sestavení, můžete použít samostatné projekty a vytvořit samostatné sestavení, který preferujete.
 
-     Další informace o tom, jak nakonfigurovat nastavení testu pro používání prostředí při spuštění testů najdete v tématu [shromažďování diagnostických dat v manuálních testech (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat v manuálních testů (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
 
-2.  Chcete-li vybrat adaptér diagnostických dat pro test, musí nejprve vybrat existujícího nastavení testu nebo vytvořte novou z Microsoft Test Manager nebo Visual Studio a pak vyberte adaptér diagnostických dat na **datové a diagnostické** na kartě nastavení vybrané testů.
+2.  Pokud chcete vybrat adaptér diagnostických dat pro test, musíte nejprve vybrat existující nastavení testu nebo vytvořit nový štítek z Microsoft Test Manager nebo Visual Studio a vybrat adaptér diagnostických dat na **dat a diagnostiky** Karta vybraná nastavení testu.
 
-3.  Pokud jste vytvořili a nainstalován diagnostických dat adaptér editor konfigurací, nakonfigurujte adaptér diagnostických dat pro testovací nastavení, vyberte **konfigurace** vedle adaptér a ujistěte se žádné změny. Zvolte **Uložit**. Další informace o tom, jak vytvořit konfiguraci editor pro vaše kolekce diagnostických dat najdete v tématu [postupy: vytvoření vlastního editoru dat pro vaše adaptéru diagnostických dat](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
+3.  Pokud máte vytvořen a nainstalován editoru adaptéru diagnostických dat konfigurace, nakonfigurovat adaptér diagnostických dat pro nastavení testu, zvolte **konfigurovat** vedle adaptéru a proveďte libovolné změny. Klikněte na tlačítko **Uložit**. Další informace o tom, jak vytvořit konfigurační editor pro váš kolektor diagnostických dat naleznete v tématu [postupy: vytvoření vlastního editoru dat pro adaptér diagnostických dat](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
 
-4.  Pokud spouštíte testy Microsoft Test Manager, můžete přiřadit tyto otestovat nastavení do testovacího plánu, než můžete spustit testy nebo používat **spustit s možností** příkaz přiřadit nastavení testů a přepsat nastavení testů. Další informace o nastavení testu najdete v tématu [shromažďování diagnostických informací pomocí Test nastavení](../test/collect-diagnostic-information-using-test-settings.md).
+4.  Pokud spouštíte testy z nástroje Microsoft Test Manager, můžete přiřadit tato nastavení testu do plánu testování před spuštěním testů nebo pomocí **spustit s možnostmi** příkaz pro přidělení nastavení testu a přepsání nastavení testu. Další informace o nastaveních testu naleznete v tématu [shromažďování diagnostických informací pomocí nastavení testu](../test/collect-diagnostic-information-using-test-settings.md).
 
-     Pokud používáte testů ze sady Visual Studio, je nutné nastavit tyto otestovat nastavení jako aktivní. Další informace o nastavení testu najdete v tématu [shromažďování diagnostických informací pomocí Test nastavení](../test/collect-diagnostic-information-using-test-settings.md).
+     Pokud používáte testy ze sady Visual Studio, musíte nastavit tyto jako aktivní nastavení testu. Další informace o nastaveních testu naleznete v tématu [shromažďování diagnostických informací pomocí nastavení testu](../test/collect-diagnostic-information-using-test-settings.md).
 
-5.  Spouštění testů pomocí adaptéru diagnostických dat, vybrané nastavení testu.
+5.  Spusťte testy pomocí nastavení testu adaptéru diagnostiky datu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: vytvoření adaptéru diagnostických dat](../test/how-to-create-a-diagnostic-data-adapter.md)
 - [Postupy: vytvoření vlastního editoru dat pro adaptér diagnostických dat](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
 - [Ukázkový projekt pro vytvoření adaptéru diagnostických dat](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)
 - [Vytvoření adaptéru diagnostických dat pro shromáždění vlastních dat nebo ovlivnění testovacího počítače](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
-- [Shromažďování diagnostických informací s použitím nastavení testu](../test/collect-diagnostic-information-using-test-settings.md)
+- [Shromažďování diagnostických údajů pomocí nastavení testů](../test/collect-diagnostic-information-using-test-settings.md)

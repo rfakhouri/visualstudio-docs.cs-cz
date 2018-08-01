@@ -1,6 +1,6 @@
 ---
-title: Ukázkový kód pro testování částí
-description: Tento článek obsahuje ukázkový kód, který může být testována pomocí jednotkových testů v sadě Visual Studio.
+title: Ukázkový kód pro vytváření testů jednotek
+description: Tento článek obsahuje ukázkový kód, který lze testovat pomocí testování částí v sadě Visual Studio.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -13,25 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a6627b96daefa48c9a72fd84726775fc449bde
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 93335be347e9c2ae66045bc49f9609d6cb3a929d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704600"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379771"
 ---
 # <a name="sample-code-for-testing"></a>Ukázkový kód pro testování
 
-Tento ukázkový kód obsahuje třídu, *bankovní účet*, pomocí různých metod, které může být testována pomocí testování částí.
+Tento vzorový kód obsahuje třídu, *BankAccount*, pomocí různých metod, které můžete otestovat pomocí testů jednotek.
 
-Kód se používá v následující kurzy:
+Kód se používá v následujících návodech:
 
-- [Vytváření a spouštění testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Tento názorný postup vás provede kroky pro vytváření a přizpůsobení testování částí, jejich spuštění a podívejte se na výsledky testu.
-- [Pomocí nástroje příkazového řádku testovací](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). V tomto návodu můžete pomocí nástroje příkazového řádku MSTest.exe spouštět testy a zobrazit výsledky.
+- [Vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Tento názorný postup vás provede kroky k vytvoření a přizpůsobení testů jednotek, je spustit a podívejte se na výsledky testu.
+- [Použijte nástroj příkazového řádku test](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). V tomto názorném postupu použijete *MSTest.exe* příkazový řádek pro spuštění testů a zobrazení výsledků.
 
 ## <a name="sample-code"></a>Ukázkový kód
 
-Pouze touto úmyslnou chybou v této ukázce je, že metodu v debetní "m_balance += částka" by měl mít minus, není plus přihlášení před symbolem rovná se.
+Pouze touto úmyslnou chybou v této ukázce je, že v metoda debetní "m_balance += částka" by měla mít minus není plus podepsat před znaménko rovná se.
 
 ```csharp
 using System;
@@ -126,13 +126,13 @@ namespace BankAccountNS
 }
 ```
 
-/ * Společností, organizací, produktů, názvů domén, e-mailové adresy, loga, osoby, místa a události použité v ukázkách jsou smyšlené. Žádné spojení se skutečnou společností, organizace, produktu, název domény, e-mailovou adresu, logem, osoba, místech nebo události je určený nebo událostmi. \*/
+/ * Vzorové společnosti, organizace, produkty, názvy domén, e-mailové adresy, loga, osoby, místa a události použité v ukázkách jsou smyšlené. Žádné jejich spojení se skutečnou společností, organizaci, produktu, název domény, e-mailovou adresu, loga, osoby, místa nebo události je určena ji vyvozovat. \*/
 
 ## <a name="create-the-project"></a>Vytvoření projektu
 
-Pro práci s tímto kódem, nejprve vytvořte projekt pro něj v sadě Visual Studio. Postupujte podle kroků pro vytvoření projektu v [návod: vytváření a spouštění testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test).
+Pro práci s tímto kódem, nejprve vytvořte projekt pro něj v aplikaci Visual Studio. Postupujte podle kroků pro vytvoření projektu v [návod: vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Návod: Vytváření a spouštění testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-- [Návod: Použití nástroje testů z příkazového řádku](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+- [Návod: Vytvoření a spuštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Návod: Použití nástroje příkazového řádku test](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

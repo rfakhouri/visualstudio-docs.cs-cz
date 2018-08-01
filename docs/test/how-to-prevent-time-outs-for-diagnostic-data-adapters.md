@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fca48c45af5ec93519e1688ec54677c233d2fe17
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8359aa76dc2f62afb63f6a36984492210d9aeeff
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178316"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380011"
 ---
-# <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Postupy: Zabránění vypršení časových limitů u adaptérů diagnostických dat
+# <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Postupy: zabránění vypršení časových limitů u adaptérů diagnostických dat
 
 Pokud používáte adaptéry diagnostických dat ve vašem nastavení testu, vypršení časového limitu může dojít při spuštění testů z jednoho z následujících důvodů:
 
--   Služba testovací kontrolér není spuštěna v počítači řadiče testu. Budete muset restartovat službu. Další informace o způsobu určení testovacího kontroléru a spravovat kontrolery testů naleznete v tématu [Správa testovacích Kontrolérů a agentů testování pomocí sady Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+-   Služba testovací kontrolér není spuštěna v počítači řadiče testu. Budete muset restartovat službu. Další informace o způsobu určení testovacího kontroléru a spravovat kontrolery testů naleznete v tématu [Správa testovacích kontrolérů a testovacích agentů v sadě Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
 -   Pokud shromažďujete data na vzdáleném počítači, brána firewall může blokovat nástroje Microsoft Test Manager. Počítač, na kterém běží Microsoft Test Manager musíte přijmout příchozí připojení z kontroleru testů. Vypršení časového limitu vyvolá se v případě nástroje Microsoft Test Manager neobdrží zprávu z řadiče, protože je blokován branou firewall. Je třeba zkontrolovat nastavení brány firewall na počítači, na kterém běží Microsoft Test Manager.
 
@@ -31,19 +31,19 @@ Při spuštění dlouhého testu, který musí shromáždit velké množství da
 
 Můžete zvýšit časový limit aktualizací konfiguračního souboru pro Microsoft Test Manager nebo konfiguračního souboru pro testovacího agenta, který je vypršení časového limitu.
 
-Nástroje Microsoft Test Manager konfigurační soubor nazývá **mtm.exe.config**. Je umístěn v následujícím adresáři: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+Nástroje Microsoft Test Manager konfigurační soubor nazývá *mtm.exe.config*. Je umístěn v následujícím adresáři: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 Pokud chcete aktualizovat testovacího agenta, je nutné aktualizovat následující konfigurační soubory v počítači testovacího agenta. Všechny tyto soubory jsou umístěny v počítači testovacího agenta ve stejném adresáři: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
--   QTAgent.exe.config
+-   *QTAgent.exe.config*
 
--   QTAgent32.exe.config
+-   *QTAgent32.exe.config*
 
--   QTDCAgent.exe.config
+-   *QTDCAgent.exe.config*
 
--   QTDCAgent32.exe.config
+-   *QTDCAgent32.exe.config*
 
-Pokud spuštění manuálních testů a shromažďování dat z prostředí, při vytvoření chyby nebo dokončení testovacího případu, přenese se všechna data, která byla shromážděna adaptéry diagnostických dat na počítači, který spouští ruční testy. Pokud jste shromáždili velké množství dat nebo máte pomalé připojení k síti, může trvat déle, než je výchozí hodnota 60 sekund. Například pokud jste nakonfigurovali adaptér IntelliTrace ke shromáždění události IntelliTrace a volali informace pro mnoho procesů, přenos těchto dat může překročit výchozí časový limit. Tuto hodnotu zvýšit, můžete použít následující postup aktualizovat **mtm.exe.config**.
+Pokud spuštění manuálních testů a shromažďování dat z prostředí, při vytvoření chyby nebo dokončení testovacího případu, přenese se všechna data, která byla shromážděna adaptéry diagnostických dat na počítači, který spouští ruční testy. Pokud jste shromáždili velké množství dat nebo máte pomalé připojení k síti, může trvat déle, než je výchozí hodnota 60 sekund. Například pokud jste nakonfigurovali adaptér IntelliTrace ke shromáždění události IntelliTrace a volali informace pro mnoho procesů, přenos těchto dat může překročit výchozí časový limit. Tuto hodnotu zvýšit, můžete použít následující postup aktualizovat *mtm.exe.config*.
 
 Pokud vyprší časový limit nástroje Test Runner nebo testovacího agenta vyprší časový limit, zobrazí se chybová zpráva. Chybová zpráva pro testovací agent bude obsahovat informace, o které testovací počítače agenta vypršení časového limitu. Použijte následující postup k aktualizaci konfiguračních souborů, v závislosti na chybovou zprávu jste obdrželi.
 
@@ -76,11 +76,11 @@ Pokud vyprší časový limit nástroje Test Runner nebo testovacího agenta vyp
         <!-- End: Test execution settings -->
     ```
 
-5.  Pokud chcete zvýšit dobu, po kterou adaptéry diagnostických dat čekat na dokončení událostí, zvyšte hodnotu pro klíč **DataCollectorEventTimeoutInSeconds**
+5.  Pokud chcete zvýšit dobu, po kterou adaptéry diagnostických dat čekat na dokončení událostí, zvyšte hodnotu pro klíč **DataCollectorEventTimeoutInSeconds**.
 
 6.  Pokud chybová zpráva vypršení časového limitu je pro aktivitu nástroje Test Runner, musíte zvýšit hodnotu pro klíč **RunOperationTimeoutInSeconds**.
 
-7.  Pokud chcete zvýšit časový limit pro přenos dat shromážděných pro chybu nebo při ukončení testu k počítači, na kterém běží testy, je nutné přidat následující časový limit do **mtm.exe.config** v oddíle appSettings souboru:
+7.  Pokud chcete zvýšit časový limit pro přenos dat shromážděných pro chybu nebo při ukončení testu k počítači, na kterém běží testy, je nutné přidat následující časový limit do *mtm.exe.config* v oddíle appSettings souboru:
 
     ```text
     <!-- How long test runner waits for data collected by diagnostic data adapters to be transferred to the computer. Default is 60 seconds. -->

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3bbb013c16c84ba1b19d262e89ea6ad63718f0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179733"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381117"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Správa kontrolerů testů a testovacích agentů
 
@@ -28,7 +28,7 @@ Ke konfiguraci a sledování testovacího řadiče a všech registrovaných agen
 
 Pro projekt zátěžového testu můžete také zvolit **spravovat řadič testu** z **zátěžový Test** nabídky.
 
-## <a name="add-a-test-agent-to-a-test-controller"></a>Přidat testovacího agenta do testovacího Kontroléru
+## <a name="add-a-test-agent-to-a-test-controller"></a>Přidat testovacího agenta do testovacího kontroléru
 
 Můžete chtít přidat testovacího agenta na jiný kontroler testů nebo bude pravděpodobně nutné přidat testovacího agenta do testovacího kontroléru, který jste právě nainstalovali.
 
@@ -45,7 +45,7 @@ Můžete chtít přidat testovacího agenta na jiný kontroler testů nebo bude 
 
      Budou vám nabídnuty dvě možnosti pro jak testovací agent bude běžet:
 
-     **Služba** Pokud nemáte spuštěny automatické testy, které spolupracují s plochou, jako jsou kódované testy uživatelského rozhraní nebo pořizování záznamu, když test běží, v části videa **spustit testovacího agenta jako**vyberte **služby**. Testovací agent bude spuštěn jako služba. Zvolte **Další**.
+     **Služba**: Pokud nemáte spuštěny automatické testy, které spolupracují s plochou, jako jsou kódované testy uživatelského rozhraní nebo pořizování záznamu, když test běží, v části videa **spustit testovacího agenta jako**vyberte **služby**. Testovací agent bude spuštěn jako služba. Zvolte **Další**.
 
      Nyní můžete zadat podrobnosti o uživateli, když se testovací agent spustí jako služba.
 
@@ -60,7 +60,7 @@ Můžete chtít přidat testovacího agenta na jiný kontroler testů nebo bude 
         |– Pokud je uživatelské jméno agenta není ve službě agenta, pokusí se ho přidat, což vyžaduje oprávnění testovacího kontroléru.|
         |-Uživatel, který se pokouší použít testovací kontrolér musí být účet uživatelé testovacího kontroléru nebo se nebude moci spouštět v kontroléru testy.|
 
-     **Interaktivní proces** Pokud chcete spustit automatizované testy, které musí spolupracovat s plochou, jako jsou kódované testy uživatelského rozhraní nebo vytvoření záznamu videa, když test běží, vyberte **interaktivní proces**. Testovací agent bude spuštěn jako interaktivní proces místo jako služba.
+     **Interaktivní proces**: Pokud chcete spustit automatizované testy, které musí spolupracovat s plochou, jako jsou kódované testy uživatelského rozhraní nebo vytvoření záznamu videa, když test běží, vyberte **interaktivní proces**. Testovací agent bude spuštěn jako interaktivní proces místo jako služba.
 
      Na další stránce zadejte podrobnosti o uživateli, když testovací agent spustí jako proces a další možnosti.
 
@@ -90,7 +90,7 @@ Můžete chtít přidat testovacího agenta na jiný kontroler testů nebo bude 
     > [!NOTE]
     > Výchozí číslo portu je 6901.
 
-4. Chcete-li uložit změny, zvolte **použít nastavení**. Zavřete **souhrnné informace o konfiguraci** dialogové okno a potom zavřete Nástroj pro konfiguraci testovacího agenta.
+4. Chcete-li uložit změny, zvolte **použít nastavení**. Zavřete **souhrnné informace o konfiguraci** dialogové okno a potom zavřete **Test Agent Configuration Tool**.
 
 > [!WARNING]
 > Pokud agent je nakonfigurován pro spuštění v jiném testovacím kontroléru, je třeba odebrat testovacího agenta z tohoto kontroléru.
@@ -160,7 +160,7 @@ Testovací agent hmotnosti a atributů testovacího agenta změny vejdou v platn
 (Volitelné) Chcete-li změnit stav testovacího agenta, vyberte agenta v seznamu a pak vyberte akci z dostupných voleb na základě aktuálního stavu agenta.
 
 > [!NOTE]
-> Pokud testovací agent je spuštěn jako proces, můžete spravovat stav testovacího agenta z ikony na oznamovací oblasti, na kterém běží na počítači, kde je nainstalován testovací agent. To zobrazuje stav testovacího agenta. Můžete spustit, zastavit nebo restartovat agenta, pokud je spuštěn jako proces, který používá tento nástroj. Chcete-li spustit testovacího agenta jako proces, pokud není spuštěn, zvolte **Start**, **všechny programy**, **sady Microsoft Visual Studio** , **Microsoft Visual Studio Test Agent**. To přidá ikonu oznamovací oblasti.
+> Pokud testovací agent je spuštěn jako proces, můžete spravovat stav testovacího agenta z ikony na oznamovací oblasti, na kterém běží na počítači, kde je nainstalován testovací agent. To zobrazuje stav testovacího agenta. Můžete spustit, zastavit nebo restartovat agenta, pokud je spuštěn jako proces, který používá tento nástroj. Chcete-li spustit testovacího agenta jako proces, pokud není spuštěn, zvolte **Start** > **všechny programy** > **sady Microsoft Visual Studio**  >  **Microsoft Visual Studio Test Agent**. To přidá ikonu oznamovací oblasti.
 
 ## <a name="configure-a-test-controller"></a>Konfigurovat kontroler testů
 
@@ -189,7 +189,7 @@ Pokud chcete registrovat testovací kontrolér s vaší kolekcí projektu Team F
 > [!NOTE]
 > Další informace o řešení potíží řadiče testů, naleznete v tématu [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).
 
-## <a name="manage-your-agents-when-you-run-your-tests-with-a-test-controller"></a>Správa agentů při spuštění testů pomocí testovacího Kontroléru
+## <a name="manage-your-agents-when-you-run-your-tests-with-a-test-controller"></a>Správa agentů při spuštění testů pomocí testovacího kontroléru
 
 Při přidání role pro vaši aplikaci do nastavení testu pro sadu Visual Studio můžete přidat vlastnosti agenta pro všechny své role. Určuje, kteří testovací agenti jsou k dispozici pro tuto roli. Při spuštění testů pomocí těchto nastavení testu, testovací kontrolér, který je vybrán pro nastavení testu, zjišťuje dostupnost požadovaných agentů. Jedná se o následující situace, které může dojít, když je určena dostupnost agenta:
 
@@ -217,15 +217,15 @@ Při přidání role pro vaši aplikaci do nastavení testu pro sadu Visual Stud
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Načíst testy ze sestavení se zpožděným podpisem
 
-Testovací kontrolér a testovací agenti mohou načítat pouze zkušební sestavení, které jsou silně podepsaná nebo nepodepsaná sestavení. Některé zkušební sestavení jsou podepsané se zpožděním protože potřebují mít přístup k produkčním sestavám aplikace. Tyto sestavení však nejsou podepsány silně protože jsou pouze zkušebními sestaveními a nejsou distribuovány. Tato sestavení nelze načíst, protože jsou podepsané se zpožděním, takže je potřeba zakázat ověřování silných názvů pro tato sestavení ve všech počítačích, kde bude sestavení načteno včetně počítače testovacího kontroléru. Zakázání ověření podpisu se zpožděním použijte sn.exe. Token veřejného klíče sestavení se zpožděným podpisem, pro které je požadováno přeskočení ověřování silných názvů také potřebovat mají být zahrnuty.
+Testovací kontrolér a testovací agenti mohou načítat pouze zkušební sestavení, které jsou silně podepsaná nebo nepodepsaná sestavení. Některé zkušební sestavení jsou podepsané se zpožděním protože potřebují mít přístup k produkčním sestavám aplikace. Tyto sestavení však nejsou podepsány silně protože jsou pouze zkušebními sestaveními a nejsou distribuovány. Tato sestavení nelze načíst, protože jsou podepsané se zpožděním, takže je potřeba zakázat ověřování silných názvů pro tato sestavení ve všech počítačích, kde bude sestavení načteno včetně počítače testovacího kontroléru. Chcete-li zakázat ověření podpisu se zpožděním, použijte *sn.exe*. Token veřejného klíče sestavení se zpožděným podpisem, pro které je požadováno přeskočení ověřování silných názvů také potřebovat mají být zahrnuty.
 
-Zakázání ověření podpisu se zpožděním použijte Sn.exe (nástroj Strong Name).
+Použití *Sn.exe* (nástroj Strong Name) k zakázání ověření podpisu se zpožděním.
 
 To zakáže ověřování silných názvů pro zadané sestavení, na počítači, na kterém jste příkaz spustili. To lze provést pouze v případě, že máte dostatečná oprávnění.
 
-Po dokončení zkoušky znovu povolte ověření zpožděného podepisování pomocí příkazu SN.exe.
+Po dokončení běhu testu, znovu povolte ověření zpožděného podepisování pomocí *SN.exe* příkazu.
 
-Doporučený postup zakázání a opětovného povolení ověření podpisu je použití příkazů SN.exe ve skriptech. Můžete vypnout ověřování v instalačním skriptu a znovu povolit ověření ve skriptu vyčištění.
+Doporučený postup zakázání a opětovného povolení ověření podpisu je použití *SN.exe* příkazy ve skriptech. Můžete vypnout ověřování v instalačním skriptu a znovu povolit ověření ve skriptu vyčištění.
 
 ## <a name="see-also"></a>Viz také:
 

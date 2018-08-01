@@ -10,47 +10,47 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 18fa71396caa0c164ef7f37183cda28c701cf4f8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2184c027651bf604b6ab89e5b2e63b6e945b2355
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970047"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382500"
 ---
-# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Postupy: Určení vzorkovací frekvence v parametrech běhu zátěžového testu
+# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Postupy: určení vzorkovací frekvence pro spuštění zátěžového testu
 
-Po vytvoření vaší zátěžový test pomocí **načíst testování Průvodce novým**, můžete použít **načíst Editor testů** ke změně vlastností pro splnění vašich potřeb testování a cíle.
+Po vytvoření zátěžového testu pomocí **nového Průvodce zátěžovým testem**, můžete použít **editoru zátěžového testu** Chcete-li změnit vlastnosti tak, aby vyhovovaly potřebám a cílům testování.
 
-Pomocí **editoru zátěžových testů**, můžete upravit nastavení spuštění **vzorkovací frekvence** hodnotu vlastnosti v **vlastnosti** okno. Úplný seznam vlastností parametrů běhu a jejich popisy najdete v tématu [vlastnosti nastavení spustit Test zatížení](../test/load-test-run-settings-properties.md).
+Použití **editoru zátěžových testů**, můžete upravit nastavení spuštění **vzorkovací frekvence** hodnotu vlastnosti v **vlastnosti** okna. Úplný seznam vlastností parametrů spuštění a jejich popis najdete v části [zátěžového testu spusťte nastavení](../test/load-test-run-settings-properties.md).
 
-Vyberte hodnotu odpovídající **vzorkovací frekvence** vlastnost pro zátěžový test, spusťte nastavení podle délka zátěžový test. Menší vzorkovací frekvence, jako je například na výchozí hodnotu pět sekund, vyžaduje více místa v databázi výsledky testu zatížení. Pro delší zátěžové testy zvýšení vzorkovací frekvence sníží množství dat, které shromažďujete. Další informace najdete v tématu [postupy: určení vzorkovací frekvence pro spuštění zátěžového testu](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Zvolte příslušnou hodnotu **vzorkovací frekvence** vlastnost pro spuštění zátěžového testu na základě délky zátěžového testu. Menší vzorkovací frekvence, jako je například výchozí hodnota pěti sekund, vyžaduje více místa v databázi výsledků zátěžového testu. Pro delší zátěžové testy vzorkovací frekvence snižuje množství dat, která shromažďujete. Další informace najdete v tématu [postupy: určení vzorkovací frekvence pro spuštění zátěžového testu](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Zde jsou uvedeny pokyny pro vzorkovací frekvence:
 
-|Doba trvání testu zatížení|Doporučená vzorkovací frekvence|
+|Doba trvání zátěžového testu|Doporučená frekvence vzorkování|
 |------------------------|-----------------------------|
 |\< 1 hodina|5 sekund|
 |1 - 8 hodin|15 sekund|
-|8 – 24 hodin|30 sekund|
+|8 - 24 hodin|30 sekund|
 |> 24 hodin|60 sekund|
 
-## <a name="to-specify-performance-counter-sampling-rate-in-a-run-setting"></a>Chcete-li určit míry vzorkování čítače výkonu v parametrech běhu
+## <a name="to-specify-performance-counter-sampling-rate-in-a-run-setting"></a>Chcete-li určit míry vzorkování čítače výkonu v nastavení spuštění
 
 1.  Otevřete zátěžový test.
 
      **Editoru zátěžových testů** se zobrazí. Zobrazí se strom zátěžového testu.
 
-2.  V zatížení otestovat ve stromu **spustit nastavení** složky, vyberte spuštění nastavení, které chcete určit vzorkovací frekvence.
+2.  V zátěžového testování stromu v **parametrů běhu** složky, zvolte, kterou chcete určení vzorkovací frekvence pro parametr spuštění.
 
-3.  Na **zobrazení** nabídce vyberte možnost **vlastnosti – okno**.
+3.  Na **zobrazení** nabídce vyberte možnost **okno vlastností**.
 
-     Zatížení spustit kategorií a vlastností nastavení se zobrazí v okně Vlastnosti.
+     Spuštění načtení nastavení uživatele kategorie a vlastnosti jsou zobrazeny v **vlastnosti** okna.
 
-4.  V **vzorkovací frekvence** vlastnost, zadejte čas hodnotu, která určuje četnost, kdy bude zátěžového testu shromažďování dat čítačů výkonu.
+4.  V **vzorkovací frekvence** vlastnost, zadejte hodnotu času, která určuje četnost, kdy bude zátěžový test shromažďovat data čítačů výkonu.
 
-5.  Po dokončení změn vlastnosti, vyberte **Uložit** na **souboru** nabídky. Potom můžete spustit vaší zátěžového testu pomocí nové **vzorkovací frekvence** hodnotu.
+5.  Po dokončení změn vlastnosti, zvolte **Uložit** na **souboru** nabídky. Potom můžete spustit zátěžový test pomocí nového **vzorkovací frekvence** hodnotu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Konfigurace běhu zátěžových testů](../test/configure-load-test-run-settings.md)
+- [Konfigurace parametrů spuštění zátěžového testu](../test/configure-load-test-run-settings.md)
 - [Vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 92c41fec7cf481c058f158e91c486134ca6c1740
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177250"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381104"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Postupy: Vytvoření doplňku sady Visual Studio pro prohlížeč výsledků testu výkonnosti webu
 
@@ -30,7 +30,7 @@ Kromě toho budete muset přidat odkaz na knihovnu LoadTestPackage DLL, který j
 
 -   K rozšíření **prohlížeče výsledků testu výkonnosti webu**prvku uživatelského rozhraní, je nutné vytvořit doplněk sady Visual Studio a uživatelský ovládací prvek. Následující postupy vysvětlují, jak vytvořit doplněk, uživatelský ovládací prvek a jak implementovat třídy nezbytné pro rozšíření **prohlížeče výsledků testu výkonnosti webu**prvku uživatelského rozhraní.
 
-## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Vytvořte nebo otevřete řešení, které obsahuje webovou aplikaci ASP.NET a webový výkon a projekt zátěžového testu
+## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Vytvořte nebo otevřete řešení, které obsahuje webovou aplikaci ASP.NET a projekt testu výkonu a zatížení webu
 
 ### <a name="to-prepare-for-extending-the-web-performance-test-results-viewer"></a>Příprava na rozšíření prohlížeče výsledků testu výkonnosti webu
 
@@ -41,27 +41,27 @@ Vytvořte nebo otevřete neprovozní řešení, můžete experimentovat s obsahu
 
 ## <a name="create-a-visual-studio-add-in"></a>Vytvoření doplňku sady Visual Studio
 
-Doplněk je zkompilovaná knihovna DLL, která běží v prostředí integrovaného vývojového (prostředí IDE) sady Visual Studio. Kompilace pomáhá chránit duševní vlastnictví a zvyšuje výkon. Ačkoli doplňky můžete vytvořit ručně, je jednodušší použít Průvodce doplňky. Tento průvodce vytvoří funkční, ale základní doplněk, který můžete spustit ihned po jeho vytvoření. Poté, co Průvodce doplňky vygeneruje základní program, můžete k němu přidat kód a přizpůsobit jej.
+Doplněk je zkompilovaná knihovna DLL, která běží v prostředí integrovaného vývojového (prostředí IDE) sady Visual Studio. Kompilace pomáhá chránit duševní vlastnictví a zvyšuje výkon. Ačkoli doplňky můžete vytvořit ručně, může být pro vás to usnadňuje používání **Průvodce doplňkem**. Tento průvodce vytvoří funkční, ale základní doplněk, který můžete spustit ihned po jeho vytvoření. Po **Průvodce doplňkem** vygeneruje základní program, můžete k němu přidat kód a přizpůsobit jej.
 
- Průvodce doplňkem umožňuje zadat zobrazovaný název a popis pro váš doplněk. Oba se objeví v **Add-In správce**. Volitelně můžete použít průvodce vygenerovat kód, který přidá **nástroje** nabídce příkaz pro otevření doplňku. Můžete také zobrazit vlastní **o** dialogové okno pro váš doplněk. Po dokončení průvodce máte nový projekt, který má pouze jednu třídu, která implementuje doplněk. Tato třída má název připojení.
+ **Průvodce doplňkem** umožňuje zadat zobrazovaný název a popis pro váš doplněk. Oba se objeví v **Add-In správce**. Volitelně můžete použít průvodce vygenerovat kód, který přidá **nástroje** nabídce příkaz pro otevření doplňku. Můžete také zobrazit vlastní **o** dialogové okno pro váš doplněk. Po dokončení průvodce máte nový projekt, který má pouze jednu třídu, která implementuje doplněk. Tato třída má název připojení.
 
- Budete používat **Add-In správce** na konci tohoto tématu.
+ Budete používat **Add-In správce** na konci tohoto článku.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>K vytvoření doplňku pomocí Průvodce doplňku
 
-1.  V Průzkumníku řešení klikněte pravým tlačítkem na řešení, zvolte **přidat** a pak vyberte **nový projekt**.
+1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, zvolte **přidat**a pak vyberte **nový projekt**.
 
-     Zobrazí se dialogové okno Nový projekt.
+     **Nový projekt** se zobrazí dialogové okno.
 
 2.  V části **nainstalované šablony**, rozbalte **ostatní typy projektů** a vyberte **rozšiřitelnost**.
 
 3.  V seznamu šablon vyberte **Visual Studio Add-in**.
 
-4.  Do pole Název zadejte název doplňku. Například **WebPerfTestResultsViewerAddin**.
+4.  V části **název**, zadejte název doplňku. Například **WebPerfTestResultsViewerAddin**.
 
 5.  Zvolte **OK**.
 
-     Spustí se Průvodce doplňky sady Visual Studio.
+     Visual Studio **Průvodce doplňkem** spustí.
 
 6.  Zvolte **Další**.
 
@@ -92,19 +92,19 @@ Doplněk je zkompilovaná knihovna DLL, která běží v prostředí integrovan�
 
 16. Vybrané možnosti se zobrazí na **Souhrn** stránky ke kontrole. Pokud jste spokojeni, vyberte **Dokončit** k vytvoření doplňku. Pokud chcete něco změnit, zvolte **zpět** tlačítko.
 
-     Vytvoří se nové řešení a projektu a soubor Connect.cs pro nový doplněk se zobrazí v editoru kódu.
+     Vytvoří se nové řešení a projektu a *Connect.cs* soubor pro nový doplněk se zobrazí v **Editor kódu**.
 
-     Přidejte kód do souboru Connect.cs po následující postup, který vytvoří uživatelský ovládací prvek, který bude odkazovat tento projekt WebPerfTestResultsViewerAddin.
+     Přidejte kód do *Connect.cs* soubor po následujícím postupu, který vytvoří uživatelský ovládací prvek, který bude odkazovat tento projekt WebPerfTestResultsViewerAddin.
 
- Po doplněk, zaregistrujte ho pomocí sady Visual Studio předtím, než je možné ho aktivovat v **Add-In správce**. Můžete to provést pomocí souboru XML, který má příponu názvu souboru .addin.
+ Po doplněk, zaregistrujte ho pomocí sady Visual Studio předtím, než je možné ho aktivovat v **Add-In správce**. Můžete to provést pomocí souboru XML, který má *.addin* příponu názvu souboru.
 
- Soubor .addin popisuje informace, které Visual Studio vyžaduje pro zobrazení doplňku v **Add-In správce**. Při spuštění sady Visual Studio, hledá v umístění souboru .addin pro jakékoli dostupné soubory .addin. Pokud najde všechny, přečte soubor XML a poskytuje **Add-In správce** informace, které vyžaduje pro spuštění doplňku po klepnutí.
+ *.Addin* soubor popisuje informace, které Visual Studio vyžaduje pro zobrazení doplňku v **Add-In správce**. Když Visual Studio spustí, podívá se do *.addin* umístění pro všechny souborů k dispozici *.addin* soubory. Pokud najde všechny, přečte soubor XML a poskytuje **Add-In správce** informace, které vyžaduje pro spuštění doplňku po klepnutí.
 
- Soubor .addin je vytvořen automaticky při vytvoření doplňku pomocí Průvodce doplňku.
+ *.Addin* soubor je vytvořen automaticky při vytvoření doplňku pomocí **Průvodce doplňkem**.
 
 ### <a name="add-in-file-locations"></a>Umístění souboru doplňku
 
-Dvě kopie souboru .addin jsou automaticky vytvořeny pomocí Průvodce doplňku následujícím způsobem:
+Dvě kopie *.addin* soubory jsou automaticky vytvářeny **Průvodce doplňkem**, následujícím způsobem:
 
 |**. Umístění souboru doplňku**|**Popis**|
 |------------------------------|----------------------------|---------------------|
@@ -117,7 +117,7 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>Vytvoření ovládacího prvku pro prohlížeč výsledků testu webu
 
-1.  V Průzkumníku řešení klikněte pravým tlačítkem na řešení, zvolte **přidat** a pak vyberte **nový projekt**.
+1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, zvolte **přidat**a pak vyberte **nový projekt**.
 
      **Nový projekt** se zobrazí dialogové okno.
 
@@ -132,9 +132,9 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
 5.  Zvolte **OK**.
 
-     Projekt knihovny ovládacích prvků formulářů Windows, přidané WebPerfTestResultsViewerControl v Průzkumníku řešení a UserControl1.cs se zobrazí v režimu návrhu.
+     Windows forms ovládací prvek WebPerfTestResultsViewerControl bude přidána do projektu knihovny **Průzkumníka řešení** a *UserControl1.cs* se zobrazí v režimu návrhu.
 
-6.  Z panelu nástrojů přetáhněte <xref:System.Windows.Forms.DataGridView> na povrch userControl1.
+6.  Z **nástrojů**, přetáhněte <xref:System.Windows.Forms.DataGridView> na povrch userControl1.
 
 7.  Klikněte na akci označit piktogram (![piktogram inteligentní](../test/media/vs_winformsmttagglyph.gif)) v pravém horním rohu <xref:System.Windows.Forms.DataGridView> a postupujte podle těchto kroků:
 
@@ -154,11 +154,11 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
     7.  Zvolte **Zavřít**.
 
-8.  V okně Vlastnosti změňte **(název)** vlastnost <xref:System.Windows.Forms.DataGridView> k **resultControlDataGridView**.
+8.  V **vlastnosti** okno Změnit **(název)** vlastnost <xref:System.Windows.Forms.DataGridView> k **resultControlDataGridView**.
 
 9. Klikněte pravým tlačítkem na návrhové ploše a vyberte **zobrazit kód**.
 
-     Soubor UserControl1.cs se zobrazí v editoru kódu.
+     *UserControl1.cs* soubor se zobrazí v **Editor kódu**.
 
 10. Změna názvu instance <xref:System.Windows.Forms.UserControl> třídy z UserContro1 na resultControl:
 
@@ -173,15 +173,15 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
             }
     ```
 
-     V dalším postupu přidáte kód do souboru Connect.cs projektu WebPerfTestResultsViewerAddin, který bude odkazovat na třídu resultControl.
+     V dalším postupu přidáte kód do projektu WebPerfTestResultsViewerAddin *Connect.cs* soubor, který bude odkazovat na třídu resultControl.
 
-     Budete přidávat další kód do souboru Connect.cs později.
+     Budete přidávat další kód pro *Connect.cs* souboru později.
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Přidejte kód do doplňku WebPerfTestResultsViewerAddin
 
-### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>Přidání kódu do sady Visual Studio Add-in k rozšíření prohlížeče výsledků testu webu
+### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>Přidání kódu do doplňku Visual Studio k rozšíření prohlížeče výsledků testu webu
 
-1.  V Průzkumníku řešení klikněte pravým tlačítkem myši **odkazy** uzel projektu WebPerfTestResultsViewerAddin a vyberte **přidat odkaz**.
+1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem myši **odkazy** uzel projektu WebPerfTestResultsViewerAddin a vyberte **přidat odkaz**.
 
 2.  V **přidat odkaz** dialogového okna zvolte **.NET** kartu.
 
@@ -193,7 +193,7 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
 6.  V **přidat odkaz** dialogového okna zvolte **Procházet** kartu.
 
-7.  Zvolte rozevírací seznam pro **Hledat v** a přejděte na % ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies a vyberte Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll soubor.
+7.  Zvolte rozevírací seznam pro **Hledat v** a přejděte do *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* a vyberte  *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* souboru.
 
 8.  Zvolte **OK**.
 
@@ -203,9 +203,9 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
 11. V části **název projektu**, vyberte **WebPerfTestResultsViewerControl** projekt a zvolte **OK**.
 
-12. Pokud není soubor Connect.cs stále otevřen v okně Průzkumník řešení, klikněte pravým tlačítkem myši **Connect.cs** v projektu WebPerfTestResultsViewerAddin a vyberte možnost **zobrazit kód**.
+12. Pokud *Connect.cs* soubor není stále otevřen v **Průzkumníku řešení**, klikněte pravým tlačítkem myši **Connect.cs** v projektu WebPerfTestResultsViewerAddin a vyberte možnost  **Zobrazení kódu**.
 
-13. V souboru Connect.cs přidejte následující příkazy Using:
+13. V *Connect.cs* přidejte následující příkazy Using:
 
     ```csharp
     using System.IO;
@@ -216,7 +216,7 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
     using WebPerfTestResultsViewerControl;
     ```
 
-14. Posuňte se dolů na konec souboru Connect.cs. Je třeba přidat seznam identifikátorů GUID pro <xref:System.Windows.Forms.UserControl> v případě více než jednu instanci **prohlížeče výsledků testu výkonnosti webu** je otevřený. Přidáte později kód, který používá tento seznam.
+14. Přejděte do dolní části *Connect.cs* souboru. Je třeba přidat seznam identifikátorů GUID pro <xref:System.Windows.Forms.UserControl> v případě více než jednu instanci **prohlížeče výsledků testu výkonnosti webu** je otevřený. Přidáte později kód, který používá tento seznam.
 
      Druhý seznam řetězce se používá v metodě OnDiscconection, která bude kódována později.
 
@@ -227,7 +227,7 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
     private Dictionary<Guid, List<UserControl>> m_controls = new Dictionary<Guid, List<UserControl>>();        private List<string> temporaryFilePaths = new List<string>();
     ```
 
-15. Soubor Connect.cs vytvoří instanci třídy s názvem připojení ze <xref:Extensibility.IDTExtensibility2> třídy a také obsahuje některé metody pro implementaci doplňku sady Visual Studio. Jednou z metod je metoda OnConnection, která obdrží oznámení, že doplněk se načítá. V metodě OnConnection použijete třídu LoadTestPackageExt pro vytvoření balíčku rozšíření pro **prohlížeče výsledků testu výkonnosti webu**. Přidejte následující kód do metody OnConnection:
+15. *Connect.cs* soubor vytvoří instanci třídy s názvem připojení ze <xref:Extensibility.IDTExtensibility2> třídy a také obsahuje některé metody pro implementaci doplňku sady Visual Studio. Jednou z metod je metoda OnConnection, která obdrží oznámení, že doplněk se načítá. V metodě OnConnection použijete třídu LoadTestPackageExt pro vytvoření balíčku rozšíření pro **prohlížeče výsledků testu výkonnosti webu**. Přidejte následující kód do metody OnConnection:
 
     ```csharp
     public void OnConnection(object application, ext_ConnectMode connectMode, object addInInst, ref Array custom)
@@ -273,19 +273,19 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
     }
     ```
 
-     Teď, když kód dokončen pro doplněk Visual Studio, budete muset přidat metodu aktualizace do resultControl v v projektu WebPerfTestResultsViewerControl.
+     Teď, když kód dokončen pro doplněk Visual Studio, budete muset přidat metodu aktualizace do resultControl v projektu WebPerfTestResultsViewerControl.
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>Přidejte kód do ovládacího prvku WebPerfTestResultsViewerControl
 
 ### <a name="to-add-code-to-the-user-control"></a>Přidání kódu do uživatelského ovládacího prvku
 
-1.  V Průzkumníku řešení klikněte pravým tlačítkem myši na uzel projektu WebPerfTestResultsViewerControl a vyberte **vlastnosti**.
+1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu WebPerfTestResultsViewerControl a vyberte **vlastnosti**.
 
-2.  Vyberte **aplikace** kartě a klikněte na tlačítko **Cílová architektura** rozevíracího seznamu a vyberte **rozhraní .NET Framework 4** a zavřete vlastnosti.
+2.  Vyberte **aplikace** kartě a klikněte na tlačítko **Cílová architektura** rozevíracího seznamu a vyberte **rozhraní .NET Framework 4** a zavřít **vlastnosti**.
 
      To je nutné pro podporu odkazů na knihovnu DLL, které jsou potřeba pro rozšíření **prohlížeče výsledků testu výkonnosti webu**.
 
-3.  V Průzkumníku řešení v projektu WebPerfTestResultsViewerControl klikněte pravým tlačítkem **odkazy** uzel a vyberte možnost **přidat odkaz**.
+3.  V **Průzkumníka řešení**, v projektu WebPerfTestResultsViewerControl klikněte pravým tlačítkem myši **odkazy** uzel a vyberte možnost **přidat odkaz**.
 
 4.  V **přidat odkaz** dialogové okno, klikněte na tlačítko **.NET** kartu.
 
@@ -293,14 +293,14 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
 6.  Zvolte **OK**.
 
-7.  V souboru UserControl1.cs přidejte následující příkazy Using:
+7.  V *UserControl1.cs* přidejte následující příkazy Using:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     using Microsoft.VisualStudio.TestTools.WebTesting.Rules;
     ```
 
-8.  Přidáte volanou metodu aktualizace, která předala WebTestRequestResult z metody WebPerfTestResultsViewerAddin webtestresultviewer_selectedchanged v souboru Connect.cs. Metoda aktualizovat naplní ovládací prvek DataGridView různými vlastnostmi, které do ní předány v WebTestRequestResult.
+8.  Přidáte volanou metodu aktualizace, která předala WebTestRequestResult z metody WebPerfTestResultsViewerAddin webtestresultviewer_selectedchanged v *Connect.cs* souboru. Metoda aktualizovat naplní ovládací prvek DataGridView různými vlastnostmi, které do ní předány v WebTestRequestResult.
 
     ```csharp
     public void Update(WebTestRequestResult WebTestResults)
@@ -345,7 +345,7 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
 ## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Spuštění testu výkonnosti webu pomocí sestavení doplňku WebPerfTestResultsViewerAddin
 
-### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Chcete-li spustit nový Add-In VS pro prohlížeč výsledků webového testu
+### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Ke spuštění nové VS doplňku pro prohlížeč výsledků testu webu
 
 1.  Spuštění testu výkonnosti webu a zobrazí se doplňku WebPerfTestResultsViewerAddin nová karta s názvem zobrazí v ukázkové **prohlížeče výsledků testu výkonnosti webu**.
 
@@ -355,15 +355,15 @@ Doplněk sady Visual Studio vytvořili v předchozí proceduře odkazuje na proj
 
 Chcete-li zlepšit zabezpečení zabráněním škodlivým doplňkům v automatické aktivaci, Visual Studio obsahuje nastavení na **možnosti nástrojů** stránku s názvem **přidat doplňků/maker zabezpečení**.
 
-Kromě toho tato stránka možností umožňuje určit složky, ve kterých hledá sady Visual Studio. Soubory registrace addIn. To vylepšuje zabezpečení tím, že je možné omezit místa kde. Může číst soubory registrace addIn. To pomáhá zabránit škodlivým. Soubory doplňků z neúmyslným použitím.
+Kromě toho tato stránka možností umožňuje určit složky, ve kterých hledá sady Visual Studio *. Doplněk* registrační soubory. To vylepšuje zabezpečení tím, že je možné omezit místa kde *. Doplněk* lze číst soubory registrace. To pomáhá zabránit škodlivým *. Doplněk* soubory z neúmyslným použitím.
 
  **Nastavení zabezpečení doplňku**
 
  Nastavení na stránce Možnosti pro doplněk zabezpečení jsou následující:
 
--   **Povolit přidání součásti pro načtení.** Ve výchozím nastavení je zaškrtnuto. Vyberete-li toto políčko, doplňky mohou načíst v sadě Visual Studio. Pokud není vybrána, doplňky mají zakázáno načítání v aplikaci Visual Studio.
+-   **Povolit přidat součásti pro načtení.** Ve výchozím nastavení je zaškrtnuto. Vyberete-li toto políčko, doplňky mohou načíst v sadě Visual Studio. Pokud není vybrána, doplňky mají zakázáno načítání v aplikaci Visual Studio.
 
--   **Povolit součástí doplňku z adresy URL načíst.** Nejsou vybrány ve výchozím nastavení. Vyberete-li toto políčko, doplňky mohou být načteny z externích webů. Pokud není vybrána, vzdálené doplňky mají zakázáno načítání v aplikaci Visual Studio. Pokud z nějakého důvodu nelze načíst doplněk, pak jej nelze načíst z webu. Toto nastavení řídí pouze načítání DLL doplňku. Na. Soubory registrace Addin musí být vždy umístěny v místním systému.
+-   **Povolit přidat součásti pro načtení z adresy URL.** Nejsou vybrány ve výchozím nastavení. Pokud je vybráno, je možné načíst doplňky z externích webových stránek. Pokud není vybrána, vzdálené doplňky mají zakázáno načítání v aplikaci Visual Studio. Pokud z nějakého důvodu nelze načíst doplněk, pak jej nelze načíst z webu. Toto nastavení řídí pouze načítání DLL doplňku. *. Doplněk* registrační soubory musí být vždy umístěny v místním systému.
 
 ## <a name="see-also"></a>Viz také:
 

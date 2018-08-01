@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176210"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382062"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>Postupy: Vytvoření modulu plugin rekordéru
+# <a name="how-to-create-a-recorder-plug-in"></a>Postupy: vytvoření modulu Plugin rekordéru
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Umožňuje upravovat test výkonnosti webu zaznamenané. Změna nastane po zvolení **Zastavit** webového výkonu test recorder nástrojů, ale před testu uložením a zobrazením v editoru testu výkonnosti webu.
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Umožňuje upravovat test výkonnosti webu zaznamenané. Změna nastane po zvolení **Zastavit** v **rekordéru testu výkonnosti webu** nástrojů, ale před test uložením a zobrazením v editoru testu výkonnosti webu.
 
-Modul plug-in rekordéru umožňuje provádění vlastní korelace dynamických parametrů. S funkcí vestavěné korelace testy výkonnosti webu rozpoznávají dynamické parametry na webu nahrávání po dokončení nebo při použití **povýšit dynamické parametry na parametry webového testu** na výkonnosti webu Panel nástrojů editoru testů. Nicméně integrovaná v detekce funkce nenajde vždy všechny dynamické parametry. Například nenajde ID relace, které obvykle svou hodnotu mění mezi 5 až 30 minut. Proto budete muset ručně provést proces korelace.
+Modul plug-in rekordéru umožňuje provádění vlastní korelace dynamických parametrů. S funkcí vestavěné korelace testy výkonnosti webu rozpoznávají dynamické parametry na webu nahrávání po dokončení nebo při použití **povýšit dynamické parametry na parametry webového testu** na **Web Editor testu výkonnosti** nástrojů. Nicméně integrovaná v detekce funkce nenajde vždy všechny dynamické parametry. Například nenajde ID relace, které obvykle svou hodnotu mění mezi 5 až 30 minut. Proto budete muset ručně provést proces korelace.
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Umožňuje napsat kód pro vlastní modul plug-in. Tento modul plug-in může provádět korelaci nebo změnu testu výkonnosti webu mnoha způsoby před uložením a zobrazením v editoru testu výkonnosti webu. Proto pokud zjistíte, že konkrétní Dynamická proměnná musí být korelována pro mnoho vašich nahrávek, můžete automatizovat proces.
 
@@ -29,13 +29,13 @@ Je několik způsobů, mohou používat modul plug-in rekordéru je pro přidáv
 
 Následující postupy popisují, jak vytvořit základní kód pro rekordér modul plug-in, jak nasadit doplněk a spustit. Následující postupy ukázkový kód ukazuje, jak pomocí Visual C# vytvořit modul plug-in záznamníku korelace dynamického parametru vlastní.
 
-## <a name="creating-a-recorder-plug-in"></a>Vytvoření modulu Plug-in rekordéru
+## <a name="create-a-recorder-plug-in"></a>Vytvoření modulu plug-in rekordéru
 
 ### <a name="to-create-a-recorder-plug-in"></a>Můžete vytvořit modul plug-in rekordéru
 
 1.  Otevřete řešení, která obsahuje webový výkon a projekt zátěžového testu pomocí testu výkonnosti webu, pro kterou chcete vytvořit modul plug-in rekordéru.
 
-2.  V Průzkumníku řešení klikněte pravým tlačítkem na řešení, vyberte **přidat**a klikněte na tlačítko **nový projekt**.
+2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, vyberte **přidat**a klikněte na tlačítko **nový projekt**.
 
      **Přidat nový projekt** se zobrazí dialogové okno.
 
@@ -45,9 +45,9 @@ Následující postupy popisují, jak vytvořit základní kód pro rekordér mo
 
 5.  V **název** textového pole zadejte název modulu plug-in rekordéru.
 
-     Knihovna tříd je přidána do okna Průzkumník řešení a nová třída se otevře v editoru kódu.
+     Knihovna tříd je přidána do **Průzkumníka řešení** a nová třída se otevře v **Editor kódu**.
 
-6.  V Průzkumníku řešení v nová knihovně tříd projektové složky, klikněte pravým tlačítkem myši **odkazy** a pak zvolte položku **přidat odkaz**.
+6.  V **Průzkumníku řešení**, v nová knihovně tříd projektové složky, klikněte pravým tlačítkem **odkazy** a pak zvolte položku **přidat odkaz**.
 
     > [!TIP]
     > Příklad nové složky projektu knihovny třídy je **RecorderPlugins**.
@@ -58,7 +58,7 @@ Následující postupy popisují, jak vytvořit základní kód pro rekordér mo
 
 8.  Přejděte dolů a vyberte možnost **Microsoft.VisualStudio.QualityTools.WebTestFramework** a klikněte na tlačítko **OK**.
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework** se přidá **odkazy** složku v Průzkumníku řešení.
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework** se přidá **odkazy** složky **Průzkumníku řešení**.
 
 9. Napište kód pro modul plug-in rekordéru. Nejprve vytvořte novou veřejnou třídu, která je odvozena z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
@@ -81,17 +81,17 @@ Následující postupy popisují, jak vytvořit základní kód pro rekordér mo
 
 11. Přidejte další kód podle toho, co jste má modul plug-in rekordéru provést po výskytu nahrávání webu. Můžete například přidat kód pro zpracování vlastní korelace, jak je znázorněno v následující ukázce. Můžete také vytvořit rekordéru modulu plug-in pro takové věci jako převod komentářů k transakci nebo přidání pravidel ověřování do webového testu.
 
-12. Na **sestavení** nabídce zvolte \<název projektu knihovny tříd >.
+12. Na **sestavení** nabídce zvolte **sestavení \<název projektu knihovny tříd >**.
 
 13. V dalším kroku je nutné nasadit postupně, aby se zaregistrovat pomocí sady Visual Studio modulu plug-in rekordéru.
 
-### <a name="deploy-the-recorder-plug-in"></a>Nasazení modulu Plug-in rekordéru
+### <a name="deploy-the-recorder-plug-in"></a>Nasazení modulu plug-in rekordéru
 
 Po kompilaci modulu plug-in rekordéru, je potřeba umístit výslednou knihovnu DLL jedním ze dvou umístění:
 
--   %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins
+-   *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   %USERPROFILE%\My Documents\Visual Studio \< *verze*> \WebTestPlugins
+-   *%USERPROFILE%\My Documents\Visual Studio \<* verze *> \WebTestPlugins*
 
 > [!WARNING]
 > Po zkopírování modulu plug-in rekordéru do jednoho ze dvou umístění, musíte restartovat Visual Studio k registraci modulu plug-in rekordéru.
@@ -102,7 +102,7 @@ Po kompilaci modulu plug-in rekordéru, je potřeba umístit výslednou knihovnu
 
      **Povolit WebTestRecordPlugins** zobrazí dialogové okno.
 
-2.  Zaškrtněte políčko pro doplněk rekordéru a klepněte na tlačítko OK.
+2.  Zaškrtněte políčko pro doplněk rekordéru a zvolte **OK**.
 
      Po dokončení nahrávání testu výkonnosti webu bude spuštěn nový modul plug-in rekordéru.
 

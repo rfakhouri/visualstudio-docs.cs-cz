@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178358"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380163"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Postupy: Vytvoření modulu plugin pro test výkonnosti webu
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Postupy: vytvoření modulu Plugin pro test výkonnosti webu
 
 Webového výkonu testy moduly plug-in umožňují izolovat a opakovaně používat kód mimo hlavní deklarativní příkazů v testu výkonnosti webu. Modul plug-in testu výkonnosti webu přizpůsobené nabízí způsob, jak volat nějaký kód při spuštění testu výkonnosti webu. Modul plug-in testu výkonnosti webu je spustit jednou pro každou iteraci testu. Kromě toho pokud přepíšete metodu PreRequest nebo PostRequest v modulu plug-in testu, tyto moduly plug-in požadavku se spustit před nebo po každého požadavku, v uvedeném pořadí.
 
@@ -29,13 +29,13 @@ Můžete vytvořit test výkonnosti webu vlastní modul plug-in odvozením vlast
 Můžete použít vlastní web výkon testu moduly plug-in s testy výkonnosti webu, který jste nahráli, která umožňuje zapsat minimální část kódu a získat vyšší úroveň kontroly nad testy výkonu webu. Ale také můžete je s kódované testy webového výkonu. Další informace najdete v tématu [generování a spuštění programový test výkonnosti webu](../test/generate-and-run-a-coded-web-performance-test.md).
 
 > [!NOTE]
-> Můžete také vytvořit test zatížení moduly plug-in. Zobrazit [postupy: vytvoření modulu Plugin pro zátěžový Test](../test/how-to-create-a-load-test-plug-in.md).
+> Můžete také vytvořit test zatížení moduly plug-in. Zobrazit [postupy: vytvoření modulu Plugin pro zátěžový test](../test/how-to-create-a-load-test-plug-in.md).
 
-## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Můžete vytvořit modul plug-in vlastní test výkonnosti webu
+## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Můžete vytvořit modul plug-in testu výkonnosti webu vlastní
 
 1.  Otevřete webový výkon a projekt zátěžového testu, který obsahuje test výkonnosti webu.
 
-2.  V Průzkumníku řešení klikněte pravým tlačítkem na řešení a vyberte **přidat** a klikněte na tlačítko **nový projekt**.
+2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení a vyberte **přidat** a klikněte na tlačítko **nový projekt**.
 
      **Přidat nový projekt** se zobrazí dialogové okno.
 
@@ -47,9 +47,9 @@ Můžete použít vlastní web výkon testu moduly plug-in s testy výkonnosti w
 
 6.  Zvolte **OK**.
 
-7.  Nový projekt knihovny tříd bude přidán do Průzkumníku řešení a nová třída se objeví v Editoru kódu.
+7.  Nový projekt knihovny tříd je přidána do **Průzkumníka řešení** a nová třída se objeví v **Editor kódu**.
 
-8.  V Průzkumníku řešení klikněte pravým tlačítkem myši **odkazy** složku novou knihovnu tříd a vyberte **přidat odkaz**.
+8.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** složku novou knihovnu tříd a vyberte **přidat odkaz**.
 
 9. **Přidat odkaz** se zobrazí dialogové okno.
 
@@ -57,17 +57,17 @@ Můžete použít vlastní web výkon testu moduly plug-in s testy výkonnosti w
 
 11. Zvolte **OK**.
 
-     Odkaz na **Microsoft.VisualStudio.QualityTools.WebTestFramework** se přidá do **odkaz** složku v Průzkumníku řešení.
+     Odkaz na **Microsoft.VisualStudio.QualityTools.WebTestFramework** se přidá do **odkaz** složky **Průzkumníka řešení**.
 
-12. V Průzkumníku řešení klikněte pravým tlačítkem myši na nejvyšší uzel webový výkon a projekt zátěžového testu, který obsahuje zátěžový test, ke kterému chcete přidat modul plug-in a vyberte test výkonnosti webu **přidat odkaz**.
+12. V **Průzkumníka řešení**, klikněte pravým tlačítkem na nejvyšší uzel webového výkonu a zatížení testovacího projektu, který obsahuje zátěžový test, ke kterému chcete přidat modul plug-in a vyberte test výkonnosti webu **přidat odkaz**.
 
 13. **Zobrazí se dialogové okno Přidat odkaz**.
 
-14. Zvolte **projekty** kartě a vyberte projekt knihovny tříd.
+14. Zvolte **projekty** kartě a vyberte **projekt knihovny tříd**.
 
 15. Zvolte **OK**.
 
-16. V editoru kódu psát kód modul plug-in. Nejprve vytvořte novou veřejnou třídu, která je odvozena z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
+16. V **Editor kódu**, psát kód modul plug-in. Nejprve vytvořte novou veřejnou třídu, která je odvozena z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
 17. Implementujte kód uvnitř jednoho nebo více obslužných rutin událostí. V následujícím oddílu s příklady naleznete ukázku implementace.
 
@@ -176,7 +176,7 @@ namespace SampleRules
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [Vytvoření vlastního kódu a modulů Plugin pro zátěžové testy](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Postupy: vytvoření modulu Plugin úrovni požadavků](../test/how-to-create-a-request-level-plug-in.md)
-- [Kódování vlastního pravidla extrakce pro test výkonnosti webu](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
-- [Vytvoření vlastního ověřovacího pravidla pro test výkonnosti webu](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Postupy: vytvoření modulu Plugin pro zátěžový Test](../test/how-to-create-a-load-test-plug-in.md)
+- [Kód vlastního pravidla extrakce pro test výkonnosti webu](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
+- [Kód vlastního ověřovacího pravidla pro test výkonnosti webu](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
+- [Postupy: vytvoření modulu Plugin pro zátěžový test](../test/how-to-create-a-load-test-plug-in.md)
 - [Generování a spuštění programový test výkonnosti webu](../test/generate-and-run-a-coded-web-performance-test.md)

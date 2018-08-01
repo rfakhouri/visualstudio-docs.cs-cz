@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 1b254856b819bda2a5d05210f9cef94968197053
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178290"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379479"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Postupy: Zobrazení doby odezvy webové stránky v zátěžovém testu pomocí analyzéru zátěžového testu
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Postupy: zobrazení doby odezvy webové stránky v zátěžovém testu pomocí Analyzéru zátěžového testu
 
 Čas potřebný pro každou webovou stránku pro načtení se označuje jako *doba odezvy*. Když vytvoříte test výkonnosti webu, můžete nastavit cílovou dobu odpovědi pro každý požadavek webové stránky v testu výkonnosti webu.
 
@@ -29,17 +29,17 @@ Při spuštění testu výkonnosti webu ve stresu v rámci zátěžového testu,
 
 -   Procento iterace testu, které splňují cílovou dobu odezvy stránky.
 
--   Doba odezvy webové stránky můžete analyzovat pomocí zobrazení tabulek nebo zobrazení grafů Analyzéru zátěžového testu:
+-   Doba odezvy webové stránky můžete analyzovat pomocí zobrazení tabulek nebo zobrazení grafů **Analyzéru zátěžového testu**:
 
 -   Analýza odezvy webové stránky v tabulkovém zobrazení
 
 -   Analýza odezvy webové stránky v zobrazení grafů
 
-## <a name="view-response-time-data-in-a-table"></a>Zobrazit Data o době odezvy v tabulce
+## <a name="view-response-time-data-in-a-table"></a>Zobrazit data o době odezvy v tabulce
 
 ### <a name="to-view-response-time-data-in-a-table"></a>Chcete-li zobrazit data o době odezvy v tabulce
 
-1.  V Analyzéru zátěžového testu, zvolte **tabulky** na panelu nástrojů, abyste měli jistotu, že se zobrazí mřížku tabulky.
+1.  V **Analyzéru zátěžového testu**, zvolte **tabulky** na panelu nástrojů, abyste měli jistotu, že se zobrazí mřížku tabulky.
 
 2.  V **tabulky** rozevíracího seznamu vyberte **stránky**.
 
@@ -66,13 +66,13 @@ Při spuštění testu výkonnosti webu ve stresu v rámci zátěžového testu,
 
  Další informace najdete v tématu [Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
-## <a name="view-response-time-data-in-a-graph"></a>Zobrazit Data o době odezvy v grafu
+## <a name="view-response-time-data-in-a-graph"></a>Zobrazit data o době odezvy v grafu
 
-V grafu zobrazíte změny v průběhu času během zátěžového testu můžete také zobrazit data o době odezvy. To je obzvláště užitečné, pokud vaše vzor zatížení zvýší při spuštění testů (například pokud používáte vzor zatížení kroku). Další informace najdete v tématu [úpravy vzorů zatížení pro aktivity virtuálního uživatele modelu](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+V grafu zobrazíte změny v průběhu času během zátěžového testu můžete také zobrazit data o době odezvy. To je obzvláště užitečné, pokud vaše vzor zatížení zvýší při spuštění testů (například pokud používáte vzor zatížení kroku). Další informace najdete v tématu [vzory zatížení úpravy aktivity virtuálního uživatele modelu](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 ### <a name="to-view-response-time-data-in-a-graph"></a>Chcete-li zobrazit data o době odezvy v grafu
 
-1.  V Analyzéru zátěžového testu, zvolte **grafy** na panelu nástrojů, abyste měli jistotu, že se zobrazí grafu.
+1.  V **Analyzéru zátěžového testu**, zvolte **grafy** na panelu nástrojů, abyste měli jistotu, že se zobrazí grafu.
 
 2.  V **čítače** okna, rozbalte uzel scénář, který vás zajímá (například `Scenario1`).
 
@@ -86,15 +86,15 @@ V grafu zobrazíte změny v průběhu času během zátěžového testu můžete
 
      Data je přidána do grafu.
 
-7.  (Volitelné) Opakujte předchozí krok pro střední Doba vytvoření stránky, cílová doba odezvy stránky a celkový počet stránek.
+7.  (Volitelné) Opakujte předchozí krok u **střední Doba vytvoření stránky**, **cílová doba odezvy stránky**, a **celkový počet stránek**.
 
     > [!NOTE]
-    > Cílová doba odezvy stránky je konstantní.
+    > **Cílová doba odezvy stránky** je konstantní.
 
- Další informace najdete v tématu [Analýza výsledků zátěžových testů v zobrazení grafů](../test/analyze-load-test-results-in-the-graphs-view.md).
+ Další informace najdete v tématu [výsledků zátěžového testu analyzovat v zobrazení grafů](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Viz také:
 
 - [Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [Postupy: přístup k výsledky zátěžového testu pro analýzu](../test/how-to-access-load-test-results-for-analysis.md)
+- [Postupy: přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

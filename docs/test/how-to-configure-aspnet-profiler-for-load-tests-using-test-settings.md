@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6e863ed52402dd56a81924f8ef7f4ecbd6ad258
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175549"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379803"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Postupy: Konfigurace služby ASP.NET Profiler pro zátěžové testy s využitím testovacích nastavení v sadě Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Postupy: Konfigurace služby ASP.NET profiler pro zátěžové testy pomocí nastavení testu v sadě Visual Studio
 
 Můžete použít adaptér diagnostiky dat profiler technologie ASP.NET ke shromažďování informací nástroje profilování technologie ASP.NET. Tento adaptér diagnostických dat shromažďuje údaje o výkonu pro aplikace ASP.NET.
 
@@ -29,7 +29,7 @@ Adaptér diagnostiky dat profiler technologie ASP.NET umožňuje shromažďovat 
 > [!NOTE]
 > Adaptér diagnostiky dat profiler technologie ASP.NET profiluje proces Internetové informační služby (IIS). Proto nebude fungovat proti vývojovému webovému serveru. Chcete-li Profilovat webu v zátěžovém testu, budete muset nainstalovat testovacího agenta na počítači, na kterém běží služby IIS. Testovací agent nebude generovat zátěž, ale bude to agent pouze pro sběr. Další informace najdete v tématu [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).
 
-Další informace najdete v tématu [postupy: vytvoření nastavení testu pro zátěžový Test distribuované](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
+Další informace najdete v tématu [postupy: vytvoření nastavení testu pro distribuovaný zátěžový test](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
 Následující postup popisuje konfiguraci adaptéru diagnostických dat pro profiler technologie ASP.NET.
 
@@ -52,7 +52,7 @@ Před provedením kroků v tomto postupu je nutné otevřít nastavení testů z
 
 4.  Chcete-li povolit profilaci interakce vrstev, vyberte **povolit profilaci interakce vrstev**.
 
-     Profilování interakce vrstev počítá počet požadavků, které se odesílají do webového serveru pro každý artefakt (například MyPage.aspx nebo CompanyLogo.gif), a doby trvání obsloužení jednotlivých požadavků. Profilování interakce vrstev dále shromažďuje informace o tom, která připojení ADO.NET byla použita jako součást požadavku na stránku a kolik dotazů a volání uložené procedury bylo provedeno jako součást řešení této žádosti.
+     Profilování interakce vrstev počítá počet požadavků, které se odesílají do webového serveru pro každý artefakt (například *MyPage.aspx* nebo *CompanyLogo.gif*) a dobu obsloužení jednotlivých požadavků. Profilování interakce vrstev dále shromažďuje informace o tom, která připojení ADO.NET byla použita jako součást požadavku na stránku a kolik dotazů a volání uložené procedury bylo provedeno jako součást řešení této žádosti.
 
      Jsou shromažďovány dvě různé sady informací o časování:
 
@@ -65,5 +65,5 @@ Pomocí technologie ASP.NET profiler diagnostických dat adaptéru nakonfigurova
 ## <a name="see-also"></a>Viz také:
 
 - [Shromažďování diagnostických údajů pomocí nastavení testů](../test/collect-diagnostic-information-using-test-settings.md)
-- [Postupy: vytvoření nastavení testu pro distribuovaný zátěžový Test](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [Postupy: vytvoření nastavení testu pro distribuovaný zátěžový test](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Kontrolery testů a testovací agenti](configure-test-agents-and-controllers-for-load-tests.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c3b7ae456886939dc47c93dfb155aae726e8ccf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d0f7ffbef8fade3e5723a84ac433ce95679c26c3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37175301"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381091"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Průvodce produktivitou Visual Studio 2017 C#
 
@@ -95,19 +95,19 @@ Visual Studio 2017 se dodává s velké množství refaktoringů, akcí generov�
   - [SonarLint for Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 
-![Povolení úplné analýzy řešení](../ide/media/VSGuide_CodeAnalysis.png)
+![Refaktoring v sadě Visual Studio](../ide/media/VSGuide_CodeAnalysis.png)
 
-## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>Zobrazit všechny chyby ve vašem řešení v seznam chyb
-Nástrojemožnostitextový Editorjazyka C#Advanced   Povolení úplné analýzy řešení Přečtěte si více o funkcích [Navigace kódu](../ide/navigating-code.md)
+## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>Potřebuji najít použití, přejít k implementaci, přejděte na Dekompilované sestavení
+Visual Studio 2017 obsahuje mnoho funkcí pro usnadnění hledání a navigaci vašeho základu kódu. Přečtěte si více o funkcích [Navigace kódu](../ide/navigating-code.md)
 
-| Funkce | Zástupce | Povolit přejít k definici pro typy nebo členy z externích zdrojů a ILSpy decompiler znázornit těl metod. |
+| Funkce | Zástupce | Podrobnosti a vylepšení |
 |- | - | -|
-| Najít všechny odkazy | **SHIFT**+**F12**| Nástrojemožnostitextový Editorjazyka C#Advanced   Povolit navigaci na dekompilované zdroje Režim dokončování a návrhu |
+| Najít všechny odkazy | **SHIFT**+**F12**| Výsledky jsou zabarvené a lze seskupovat podle projektu, definice, atd. Je také možné "zamknout" výsledky. |
 | Přejít k implementaci | **Ctrl**+**F12** | Chcete-li přejít na přepsaného člena, můžete použít klíčové slovo `override` k přechodu na klíč |
-| Přejít k definici | **F12** nebo **Ctrl**+**Klikni**| Funkce Chodelek |
-| Zobrazí odkaz na informace o kódu a změnit historii v editoru | **Alt**+**F12** | Nápověda zástupných procedur na běžné často používaný text |
-| Zadejte název fragmentu kódu a stiskněte klávesu kartu dvakrát. | Chybějící funkce, která vám umožňuje být produktivní nebo právě probíhá nízký výkon? | Existuje několik způsobů, jak odeslat nám názor: |
-| Navigace do dekompilovaných sestav | **F12** nebo **Ctrl**+**Klikni** | Visual Studio žádosti o funkce, chyby a problémy s výkonem můžete podává pomocí **odeslat zpětnou vazbu** ikonu v pravém horním rohu okna sady Visual Studio. |
+| Přejít k definici | **F12** nebo **Ctrl**+**Klikni**| Může obsahovat **Ctrl** při kliknutí na navgiate k definici |
+| Náhled definice | **Alt**+**F12** | Zobrazit vložené definice |
+| Vizualizér struktur | Šedé, tečkami čáry mezi složené závorky | Najetím myši zobrazíte struktury kódu |
+| Navigace do dekompilovaných sestav | **F12** nebo **Ctrl**+**Klikni** | Přejděte do externího zdroje (decompiled s ILSpy) tím, že tuto funkci: **nástroje** > **možnosti** > **textový Editor**  >  **Jazyka C#** > **Upřesnit** > **povolit navigaci na dekompilované zdroje**. |
 
 ![Přejít na vše a najít všechny odkazy](../ide/media/VSIDE_Productivity_Navigation.png)
 
@@ -140,7 +140,7 @@ Tady je seznam editoru a produktivitu funkcí pro zajištění efektivnějšího
 
 | Funkce | Podrobnosti | Jak povolit |
 |-|-|-|
-| Vyhledejte soubor v Průzkumníku řešení | Zvýrazní aktivního souboru v Průzkumníku řešení | **Nástroje** > **možnosti** > **projekty a řešení** > **sledovat aktivní položku v Průzkumníku řešení** |
+| Vyhledejte soubor v Průzkumníku řešení | Zvýrazní aktivní soubor v **Průzkumníka řešení** | **Nástroje** > **možnosti** > **projekty a řešení** > **sledovat aktivní položku v Průzkumníku řešení** |
 | Přidání direktivy using pro typy v referenční sestavení a balíčky NuGet | Zobrazí žárovka s opravu kódu se nainstalovat balíček NuGet pro neodkazovaný typ. | **Nástroje** > **možnosti** > **textový Editor** > **jazyka C#** > **Advanced**   >  **Navrhnout použití typů v sestaveních reference** a **navrhnout použití typů v balíčcích NuGet** |
 | Povolení úplné analýzy řešení | Zobrazit všechny chyby ve vašem řešení v **seznam chyb** | **Nástroje** > **možnosti** > **textový Editor** > **jazyka C#** > **Advanced**   >  **Povolení úplné analýzy řešení** |
 | Povolit navigaci na dekompilované zdroje | Povolit přejít k definici pro typy nebo členy z externích zdrojů a ILSpy decompiler znázornit těl metod. | **Nástroje** > **možnosti** > **textový Editor** > **jazyka C#** > **Advanced**   >  **Povolit navigaci na dekompilované zdroje** |

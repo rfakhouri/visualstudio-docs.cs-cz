@@ -1,5 +1,5 @@
 ---
-title: Nastavení protokolování v sadě Visual Studio zátěžových testů
+title: V sadě Visual Studio nastavení protokolování zátěžových testů
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,29 +10,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ffd20812ec37e324dc919ea5943cf30a5329321b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 61b67cb950ee1d429f5f65ef745ff5ac75ca69d8
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968191"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379654"
 ---
-# <a name="modify-load-test-logging-settings"></a>Úprava nastavení protokolování zátěžových testů
+# <a name="modify-load-test-logging-settings"></a>Úprava nastavení protokolování zátěžového testu
 
-Výsledek dokončeného zátěžového testu obsahuje vzorky čítače výkonu a informace o chybách pravidelně shromažďované z testovaných počítačů do protokolu. Během spuštění zátěžového testu se můžou shromažďovat velký počet vzorků. Množství shromážděných dat o výkonu závisí na délce běhu, intervalu vzorkování, počtu testovaných počítačů a počtu shromažďovaných čítačů. U velkých zátěžových testů může množství shromážděných dat o výkonu snadno dosáhnout několika GB, proto zvažte úpravu četnosti ukládání dat do protokolu. V tématu [testovací kontrolery a testovací agenti](configure-test-agents-and-controllers-for-load-tests.md).
+Výsledek dokončeného zátěžového testu obsahuje vzorky čítače výkonu a informace o chybách pravidelně shromažďované z testovaných počítačů do protokolu. V průběhu spuštění zátěžového testu lze shromažďovat velké množství vzorků čítačů výkonu. Množství shromážděných dat o výkonu závisí na délce běhu, intervalu vzorkování, počtu testovaných počítačů a počtu shromažďovaných čítačů. U velkých zátěžových testů může množství shromážděných dat o výkonu snadno dosáhnout několika GB, proto zvažte úpravu četnosti ukládání dat do protokolu. Zobrazit [testovací kontrolery a testovací agenty](configure-test-agents-and-controllers-for-load-tests.md).
 
-*Testovací kontroler* zařadí do fronty všechny shromážděné zatížení testovací ukázková data do protokolu databáze je spuštěn test. Další data, jako je například časování podrobnosti a podrobnosti o chybě, je po dokončení testu načten do databáze.
+*Testovací kontrolér* zařadí za všechny vzorkovací data shromážděná zátěžového testu do protokolu databáze, když je spuštěn test. Další data, jako jsou podrobnosti časování a podrobnosti o chybě, se načtou do databáze po dokončení testu.
 
 |Úloha|Související témata|
 |----------|-----------------------|
-|**Zadejte, jak často se uložit protokoly během spuštění zátěžového testu:** můžete určit, jak často se mají uložit při spuštění zátěžového testu test protokolu.|-   [Postupy: Zadejte, jak často ukládání protokolů testování](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
-|**Uložte protokoly, pokud selže zátěžový test:** můžete zadat, pokud chcete uložit protokol testovací vždy, když zátěžový test se nezdaří.|-   [Postupy: určení, zda jsou selhání při testu ukládána do protokolů testování](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Nastavit maximální velikost souboru protokolu:** můžete upravit konfigurační soubor XML, který je přidružen služba řadiče testovací zadat maximální velikost souboru chcete použít pro soubor protokolu.|[Postupy: určení maximální velikosti souboru protokolu](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**Určete, jak často k uložení protokolů při spuštění zátěžového testu:** můžete určit, jak často má být protokol testu při spuštění zátěžového testu.|-   [Postupy: určení frekvence ukládání protokolů testování](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|**Uložení protokolů, pokud zátěžový test selže:** můžete určit, jestli chcete při každém selhání testu uložit protokol testu.|-   [Postupy: určení, zda jsou selhání testu ukládána do protokolů testování](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Nastavit maximální velikost souboru protokolu:** můžete upravit konfigurační soubor XML, který je přidružený k službě kontroleru testů zadat maximální velikost souboru chcete použít pro soubor protokolu.|[Postupy: určení maximální velikosti souboru protokolu](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
 
 ## <a name="related-tasks"></a>Související úlohy
 
-Je související vlastnost **podrobností časování** úložiště. Další informace najdete v tématu [postupy: Konfigurace shromažďování veškerých podrobností a zpřístupnění grafu aktivity virtuálního uživatele](../test/how-to-configure-load-tests-to-collect-full-details.md).
+Související vlastností je **úložiště podrobností časování**. Další informace najdete v tématu [postupy: nastavení shromažďování veškerých podrobností a zpřístupnění grafu aktivity virtuálního uživatele](../test/how-to-configure-load-tests-to-collect-full-details.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Konfigurace běhu zátěžových testů](../test/configure-load-test-run-settings.md)
+- [Konfigurace parametrů spuštění zátěžového testu](../test/configure-load-test-run-settings.md)

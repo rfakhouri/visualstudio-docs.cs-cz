@@ -19,36 +19,36 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50825ea0d610625c69955deea1599206053fb889
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: e0e854cc2d271048a7d7205017710264efac0395
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064607"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381644"
 ---
 # <a name="manage-application-resources-net"></a>Správa prostředků aplikace (.NET)
 
-Soubory prostředků jsou soubory, které jsou součástí aplikace, ale nejsou kompilovány, pro soubory ikon příklad nebo zvukových souborů. Vzhledem k tomu, že tyto soubory nejsou součástí procesu kompilace, můžete je změnit bez nutnosti její kompilace vaší binární soubory. Pokud máte v úmyslu lokalizaci vaší aplikace, používejte zdrojové soubory pro všechny řetězce a další prostředky, které se musí změnit při lokalizaci berte vaší aplikace.
+Zdrojové soubory jsou soubory, které jsou součástí aplikace, ale nejsou zkompilovány, pro soubory ikon příklad nebo zvukové soubory. Protože tyto soubory nejsou součástí procesu kompilace, můžete je změnit bez nutnosti znovu kompilovat vaše binární soubory. Pokud máte v úmyslu lokalizovat vaši aplikaci, měli byste použít soubory prostředků pro všechny řetězce a další prostředky, které je potřeba změnit, pokud lokalizovat vaši aplikaci.
 
-Další informace o prostředcích v aplikacích klasické pracovní plochy rozhraní .NET najdete v tématu [prostředky v aplikacích klasické pracovní plochy](/dotnet/framework/resources/index).
+Další informace o prostředcích v desktopové aplikace .NET najdete v tématu [prostředky v desktopových aplikacích](/dotnet/framework/resources/index).
 
 ## <a name="work-with-resources"></a>Pracovat s prostředky
 
-V projektu spravovaného kódu otevřete okno Vlastnosti projektu. Buď můžete otevřít okno Vlastnosti:
+V spravovaný projekt kódu otevřete okno s vlastnostmi projektu. Otevřete okno Vlastnosti buď:
 
-- pravým tlačítkem myši na uzel projektu v **Průzkumníku řešení** a výběrem **vlastnosti**
-- zadáním "projektu vlastnosti" v **Snadné spuštění** okna
-- Výběr **Alt**+**Enter** v **Průzkumníku řešení** okna
+- Pravým tlačítkem myši na uzel projektu v **Průzkumníka řešení** a vyberete **vlastnosti**
+- Zadáním "vlastnosti projektu" v **Snadné spuštění** okna
+- Výběr **Alt**+**zadejte** v **Průzkumníka řešení**
 
-Vyberte **prostředky** kartě. Můžete přidat *RESX* souboru Pokud projekt není obsahovat jeden již, přidat a odstranit různé druhy prostředků a upravit existující prostředky.
+Vyberte **prostředky** kartu. Můžete přidat *RESX* souboru, pokud váš projekt není již obsahovat jednu, přidat a odstraňovat různé druhy prostředků a úpravám stávajících prostředků.
 
-## <a name="resources-in-other-project-types"></a>Prostředky v jiné typy projektu
+## <a name="resources-in-other-project-types"></a>Prostředky v jiných typů projektů
 
-Prostředky se spravují jinak v rozhraní .NET projektů než jiné typy projektů. Další informace o prostředcích v:
+Prostředky se spravují odlišně v projektech .NET než v jiných typů projektů. Další informace o prostředcích v:
 
-- Univerzální platformu Windows (UWP) aplikace, najdete v části [prostředky aplikace a systém správy prostředků](/windows/uwp/app-resources/)
-- Projekty C++, najdete v části [pracovat se soubory prostředků](/cpp/windows/working-with-resource-files) a [postupy: vytvoření prostředku](/cpp/windows/how-to-create-a-resource)
+- Univerzální aplikace pro platformu Windows (UPW), najdete v článku [prostředků aplikace a systém správy zdrojů](/windows/uwp/app-resources/)
+- Projekty C++, naleznete v tématu [práci se soubory prostředků](/cpp/windows/working-with-resource-files) a [postupy: vytvoření prostředku](/cpp/windows/how-to-create-a-resource)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Prostředky v aplikacích klasické pracovní plochy (rozhraní .NET Framework)](/dotnet/framework/resources/index)
+- [Prostředky v aplikacích klasické pracovní plochy (.NET Framework)](/dotnet/framework/resources/index)

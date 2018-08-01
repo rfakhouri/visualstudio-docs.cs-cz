@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef389ab3803aba5b6022c9d9ffa3a12d0801b49f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178446"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381013"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Návod: Vytvoření a spuštění zátěžového testu, který obsahuje testy jednotek
 
 V tomto návodu vytvoříte zátěžový test, který obsahuje testy jednotek.
 
-Tento návod obsahuje kroky vás provedou vytvořením a spuštěním zátěžového testu pomocí sady Visual Studio Enterprise. Zátěžový test je kontejner testů výkonnosti webu a testy jednotek. Vytváření zátěžových testů s Průvodce novým zátěžovým testem.
+Tento návod obsahuje kroky vás provedou vytvořením a spuštěním zátěžového testu pomocí sady Visual Studio Enterprise. Zátěžový test je kontejner testů výkonnosti webu a testy jednotek. Vytváření zátěžových testů s **Průvodce novým zátěžovým testem**.
 
-Zátěžové testy také vystaví mnoho vlastností spuštění, které lze upravit a generovat požadovanou simulaci zatížení. V tomto názorném postupu použijete přidání jednotkových testů do zátěžového testu nového Průvodce zátěžovým testem.
+Zátěžové testy také vystaví mnoho vlastností spuštění, které lze upravit a generovat požadovanou simulaci zatížení. V tomto názorném postupu použijete **nového Průvodce zátěžovým testem** přidání jednotkových testů do zátěžového testu.
 
 V tomto návodu dokončíte následující úkoly:
 
@@ -35,19 +35,19 @@ V tomto návodu dokončíte následující úkoly:
 
 -   Spuštění zátěžového testu.
 
--   Postupujte podle pokynů v [Walkthrough: Creating and Running testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) k vytvoření jednoduché knihovny tříd C#, která obsahuje webového výkonu a test zatížení projektu s některá testování částí v ní.
+-   Postupujte podle pokynů v [návod: vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) k vytvoření jednoduché knihovny tříd C#, která obsahuje webového výkonu a test zatížení projektu s některá testování částí v ní.
 
-## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Vytvořte zátěžový Test obsahující testování částí pomocí Průvodce novým zátěžovým testem
+## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Vytvořte zátěžový test obsahující testování částí pomocí nového Průvodce zátěžovým testem
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Chcete-li spustit Průvodce novým zátěžovým testem
 
-1.  Otevřete bankovní řešení, které jste vytvořili [Walkthrough: Creating and Running testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1.  Otevřete bankovní řešení, které jste vytvořili [návod: vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 2.  V **Průzkumníka řešení**, otevřete místní nabídku uzlu bankovní řešení, zvolte **přidat**a klikněte na tlačítko **nový projekt**.
 
-     Zobrazí se dialogové okno Přidat nový projekt.
+     **Přidat nový projekt** zobrazí dialogové okno.
 
-3.  V dialogovém okně Přidat nový projekt rozbalte **Visual C#** a zvolte **Test**. V seznamu šablon zvolte **webový výkon a projekt zátěžového testu** a **název** zadejte `BankLoadTest`. Zvolte **OK**.
+3.  V **přidat nový projekt** dialogového okna rozbalte **Visual C#** a zvolte **Test**. V seznamu šablon zvolte **webový výkon a projekt zátěžového testu** a **název** zadejte `BankLoadTest`. Zvolte **OK**.
 
      BankLoadTest webového výkonu a zatížení testovací projekt je přidán do řešení.
 
@@ -88,7 +88,7 @@ V tomto návodu dokončíte následující úkoly:
 
 ### <a name="to-select-test-mix-model-for-the-scenario"></a>Vyberte model kombinace testů pro scénář
 
-1.  V části Jak modelovat kombinace testů, vyberte **podle celkového počtu testů**.
+1.  V části **jak by být poměr testů modelován**vyberte **podle celkového počtu testů**.
 
 2.  Zvolte **Další**.
 
@@ -98,17 +98,17 @@ V tomto návodu dokončíte následující úkoly:
 
 2.  Zvolte **přidat** vyberte testy.
 
-3.  Zvolte testování částí CreditTest uvedené v **dostupné testy** podokno, které jsou uvedeny všechny testy webového výkonu a testy jednotek ve výkonnosti testu a projekt zátěžového testu.
+3.  Zvolte **CreditTest** jednotek testů uvedených v **dostupné testy** podokno, které jsou uvedeny všechny testy webového výkonu a testy jednotek ve výkonnosti testu a projekt zátěžového testu.
 
-4.  Výběrem šipky přidejte testování částí CreditTest do **vybrané testy** podokně.
+4.  Výběrem šipky přidejte **CreditTest** testu jednotky **vybrané testy** podokně.
 
-5.  Zopakujte kroky 3 a 4 pro testování částí DebitTest a FreezeAccountTest.
+5.  Zopakujte kroky 3 a 4 pro **DebitTest** a **FreezeAccountTest** testování částí.
 
 6.  Po přidání všech tří testování jednotek zvolte **OK**.
 
      Budou vám nabídnuty kombinace testů.
 
-7.  Přesuňte posuvník v části rozdělení pro CreditTest mírně vpravo k nastavení rozložení testu. Všimněte si, že i ostatní jezdce doleva automaticky přesunout tak, aby rozdělení zůstalo na 100 %.
+7.  Přesuňte posuvník v části **distribuce** pro **CreditTest** mírně vpravo k nastavení rozložení testu. Všimněte si, že i ostatní jezdce doleva automaticky přesunout tak, aby rozdělení zůstalo na 100 %.
 
 8.  Zvolte **Další**.
 
@@ -134,7 +134,7 @@ V tomto návodu dokončíte následující úkoly:
 
 2.  Zvolte **Dokončit**. Váš zátěžový test je otevře v **editoru zátěžových testů**.
 
-## <a name="running-the-load-test"></a>Spuštění zátěžového testu
+## <a name="run-the-load-test"></a>Spusťte zátěžový test
  Po vytvoření zátěžového testu ji spusťte a zjistit, jak vaše bankovní aplikace reaguje na simulaci zatížení. Když je spuštěn zátěžový test, se zobrazí **Analyzéru zátěžového testu** okna.
 
 ### <a name="to-run-the-load-test"></a>Ke spuštění zátěžového testu
@@ -145,8 +145,8 @@ V tomto návodu dokončíte následující úkoly:
 
 ## <a name="see-also"></a>Viz také:
 
-- [Úpravy poměru testů určující, které testy mají být zahrnuty do scénáře zátěžového testu](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
+- [Upravit poměr testů k určení, které testy mají být zahrnuty do scénáře zátěžového testu](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [Určení typů virtuálních sítí](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
 - [Úpravy scénářů zátěžových testů](../test/edit-load-test-scenarios.md)
-- [Úpravy vzorů zatížení pro modelování aktivit virtuálních uživatelů](../test/edit-load-patterns-to-model-virtual-user-activities.md)
-- [Úpravy modelů kombinací testů a určení pravděpodobnosti, že virtuální uživatel spustí Test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
+- [Úpravy vzorů zatížení pro model aktivity virtuálního uživatele](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Úpravy modelů kombinací testů a určení pravděpodobnosti, že virtuální uživatel spustí test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

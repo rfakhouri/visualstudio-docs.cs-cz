@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 95686812ecaa838742d0e09ac09c881753cd14da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 316abdc18973056619d47e50ae851f33d72bc32c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177276"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382045"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrace modelů pomocí Visual Studio Modelbus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus poskytuje metodu pro vytvoření propojení mezi modely a z dalších nástrojů do modelů. Je třeba propojit modely jazyka specifického pro doménu (DSL) a modelech UML. Můžete vytvořit integrovaná sada DSL.
@@ -127,10 +127,10 @@ ms.locfileid: "39177276"
 
 4.  Pokud jste se rozhodli odkazovat na prvek v modelu, můžete přidat seznam typů, které uživatel může vybrat, například Company.FamilyTree.Person.
 
-5.  Klikněte na tlačítko **OK**a potom klikněte na tlačítko **Transformovat všechny šablony** na panelu nástrojů Průzkumník řešení.
+5.  Klikněte na tlačítko **OK**a potom klikněte na tlačítko **Transformovat všechny šablony** v **Průzkumníka řešení** nástrojů.
 
     > [!WARNING]
-    >  Pokud jste nevybrali platný model nebo entity, na tlačítko OK se neprojeví, i když může zobrazit povoleno.
+    > Pokud jste nevybrali platný model nebo entity, na tlačítko OK se neprojeví, i když může zobrazit povoleno.
 
 6.  Pokud zadáte seznam cílové typy, jako je například Company.FamilyTree.Person, pak je nutné přidat odkaz na sestavení do projektu DSL odkazování na knihovnu DLL cíle DSL, například Company.FamilyTree.Dsl.dll
 
@@ -143,7 +143,7 @@ ms.locfileid: "39177276"
 3.  V ladění projektu v experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], přidejte soubory, které jsou instancemi každý DSL.
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus lze vyřešit pouze odkazy na modely, které jsou položky v rámci stejného [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení. Například nelze vytvořit odkaz na soubor modelu v jiné části systému souborů.
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus lze vyřešit pouze odkazy na modely, které jsou položky v rámci stejného [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení. Například nelze vytvořit odkaz na soubor modelu v jiné části systému souborů.
 
 4.  Vytvořte některé prvky a odkazy v instanci vystavené DSL a uložte ho.
 

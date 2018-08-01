@@ -1,5 +1,5 @@
 ---
-title: Zahrnout záznam obrazovky a zvuku během testování pomocí nastavení testů v sadě Visual Studio
+title: Zahrnout nahrávání obrazovky a hlasu během testů pomocí nastavení testů v sadě Visual Studio
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,60 +10,60 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 44994b7b643d63f548092aba9a878b939f3968af
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750991"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381967"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Postupy: Nastavení testů pro záznam obrazovky a zvuku během testování
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Postupy: patří nahrávání obrazovky a hlasu během testů pomocí nastavení testu
 
-V editoru konfigurace v sadě Visual Studio můžete nakonfigurovat adaptér diagnostických dat, který zaznamenává obrazovky a zvuku uživatele, který je spuštěn test. Tento adaptér diagnostických dat uloží obrazovky a zvuku záznam plochy relace během testu. Po uložení záznamu výsledků testů nebo ho můžete připojit k. Ostatní členové týmu lze izolovat aplikace závad, které je obtížné reprodukujte záznamu.
+Z editoru konfigurace v sadě Visual Studio můžete nakonfigurovat adaptér diagnostických dat, který zaznamenává obrazovku a hlas uživatele, který spustil test. Tento adaptér diagnostických dat uloží obrazovku a hlasovou nahrávku relace plochy během testu. Záznam je uložen s výsledkem zkoušky nebo může být připojen k chybě. Ostatní členové týmu mohou používat tento záznam k izolování problémů aplikací, které je obtížné reprodukovat.
 
 > [!WARNING]
-> Záznamy obrazovky a zvuku nepodporují víc konfigurací monitorování.
+> Obrazovky a hlasové nahrávky nepodporují více konfigurací monitoru.
 
-Záznam obrazovky a zvuku lze použít s ruční nebo automatické testů. Například pokud vzdáleně spuštění programového testu uživatelského rozhraní můžete chtít záznam plochy zobrazíte programového testu uživatelského rozhraní při jeho spuštění. Další informace o zachycení obrazovky a hlasového záznamu vzdáleně najdete v tématu [postupy: nastavení se vaše testovací Agent spustit testy, které komunikovat s plochou](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+Obrazovku a hlasový záznamník lze použít s ruční nebo automatické testy. Například pokud vzdáleně spustíte programový test uživatelského rozhraní můžete zaznamenat plochu za účelem zobrazení programového testu UI za běhu. Další informace o tom, jak zachytit obrazovku a hlasový záznam vzdáleně, naleznete v tématu [jak: nastavit testovacího agenta ke spuštění testů komunikujících s plochou](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
 
-## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Ke konfiguraci obrazovky a hlasového záznamu pro nastavení testu
+## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Konfigurace obrazovky a hlasového záznamu pro nastavení testu
 
-1.  Otevřete nastavení testů, které chcete nakonfigurovat pro záznam obrazovky a zvuku. Další informace najdete v tématu [shromažďování diagnostických dat při testování (VSTS)](/vsts/manual-test/collect-diagnostic-data) nebo [shromažďovat diagnostické informace využitím testovacích nastavení](../test/collect-diagnostic-information-using-test-settings.md).
+1.  Otevřete nastavení testu, které chcete konfigurovat pro nahrávání obrazovky a hlasu. Další informace najdete v tématu [shromažďování diagnostických dat při testování (VSTS)](/vsts/manual-test/collect-diagnostic-data) nebo [shromažďování diagnostických informací pomocí nastavení testu](../test/collect-diagnostic-information-using-test-settings.md).
 
-2.  V nastavení testu, vyberte **Role** sloužící k záznam obrazovky a zvuku.
+2.  V nastavení testu, vyberte **Role** chcete použít pro záznam obrazovky a hlasu.
 
     > [!NOTE]
-    > Pro ruční testy a automatizovaných testů bude na počítač, který spouští testy.
+    > Pro ruční a automatizované testy by toto byl počítač, který spouští testy.
 
-3.  Vyberte **obrazovky a záznam hlasu** a potom zvolte **konfigurace**.
+3.  Vyberte **záznam obrazovky a hlasu** a klikněte na tlačítko **konfigurovat**.
 
-     Adaptéru konfigurace diagnostických dat – zobrazí se dialogové okno obrazovky a záznam hlasu.
+     **Konfigurace adaptéru diagnostiky dat – záznam obrazovky a hlasu** se zobrazí dialogové okno.
 
      ![Konfigurace zobrazení](../test/media/testsettingvideoconfiggdr.png)
 
-4.  (Volitelné) Vyberte **povolit záznam hlasu** k zaznamenání zvukového obsahu ve vaší záznam.
+4.  (Volitelné) Vyberte **povolit záznam hlasu** k zachycení zvukového obsahu v záznamu.
 
-5.  (Volitelné) Zaškrtněte políčko vedle **uložit záznam v případě úspěšného testovacího případu** k určení ukládání záznamy obrazovky a zvuku pro obě se nezdařilo a předán testy.
+5.  (Volitelné) Zaškrtněte políčko vedle položky **uložit záznam, pokud testovací případ proběhne úspěšně** k určení ukládání záznamu obrazovky a hlasu pro obě neúspěšných a úspěšných testech.
 
     > [!WARNING]
-    > Pokud vyberete **uložit záznam v případě úspěšného testovacího případu**, záznamu je uložen s výsledky testů, který používá prostor úložiště na serveru. Nástroj Test přílohy čisticí můžete vyčistit tyto přílohy.
+    > Pokud vyberete **uložit záznam, pokud testovací případ proběhne úspěšně**, záznam je uložen s výsledky testů, které využívají úložný prostor na serveru. Můžete použít **Test Attachment Cleaner** nástroj k vyčištění těchto příloh.
 
-6.  V části **kvality záznamu obrazovky**, nakonfigurujte následující možnosti rozevíracího seznamu:
+6.  V části **kvalita nahrávání obrazovky**, nakonfigurujte následující možnosti rozevíracího seznamu:
 
-    1.  **Obnovovací frekvence:** zadejte, kolik snímků za sekundu, které chcete použít v obrazovky a záznam hlasu. Výchozí hodnota je 4 snímků za sekundu. Můžete třeba zadat hodnoty mezi 2 a 20.
+    1.  **Snímková frekvence:** zadejte, kolik snímků za sekundu, které chcete použít při záznamu hlasu a obrazovky. Výchozí hodnota je 4 snímky za sekundu. Je možné zadat hodnoty v rozmezí 2 až 20.
 
-    2.  **Přenosová rychlost:** zadejte, kolik kilobajtů za sekundu pro použití v obrazovky a záznam hlasu. Výchozí hodnota je 512. Můžete třeba zadat hodnoty 512 až 10 000.
+    2.  **Přenosová rychlost:** zadejte, kolik kilobajtů za sekundu se použije při záznamu hlasu a obrazovky. Výchozí hodnota je 512. Je možné zadat hodnoty v rozmezí 512 až 10 000.
 
-    3.  **Quality(1-100):** můžete zadat kvalitu obrazovky a hlasového záznamu výběrem rozsahu od 1 do 100. Výchozí hodnota je 50 (střední).
+    3.  **Kvalita(1-100):** můžete určit kvalitu obrazovky a hlasu výběrem rozsahu mezi 1 a 100. Výchozí hodnota je 50 (střední).
 
-7.  Zvolte **OK**. Nastavení kolekce diagnostické trasování jsou nyní nakonfigurována a uložit pro testovací nastavení.
+7.  Zvolte **OK**. Nastavení shromažďování diagnostického trasování jsou nyní nakonfigurováno a uloženo pro nastavení testu.
 
     > [!TIP]
-    > Chcete-li obnovit konfiguraci pro tento adaptér diagnostických dat, zvolte **resetovat na výchozí konfiguraci** pro sadu Visual Studio a **obnovit výchozí** nástroje Microsoft Test Manager.
+    > Chcete-li obnovit konfiguraci adaptéru diagnostických dat, zvolte **obnovit výchozí konfiguraci** pro sadu Visual Studio a **obnovit výchozí** nástroje Microsoft Test Manager.
 
 ## <a name="see-also"></a>Viz také:
 
 - [Shromažďování diagnostických dat při testování (VSTS)](/vsts/manual-test/collect-diagnostic-data)
-- [Shromažďování diagnostických dat v manuálních testech (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
-- [Shromažďování diagnostických informací s použitím nastavení testu](../test/collect-diagnostic-information-using-test-settings.md)
-- [Spouštění manuálních testů (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [Shromažďování diagnostických dat v manuálních testů (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [Shromažďování diagnostických údajů pomocí nastavení testů](../test/collect-diagnostic-information-using-test-settings.md)
+- [Spouštění ručních testů (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)

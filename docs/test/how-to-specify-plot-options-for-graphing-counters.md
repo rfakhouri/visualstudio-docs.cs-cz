@@ -1,5 +1,5 @@
 ---
-title: Vykreslení možnosti pro vytváření grafů čítače pro zátěžové testy v sadě Visual Studio
+title: Diagram možností pro grafické zobrazení čítačů pro zátěžové testy v sadě Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,32 +10,32 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a5f87a83b8c743ae869a700618051e07c8c2e75
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5df33a8cf05e4ad73b1643e2948392e49a32356e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750919"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382318"
 ---
-# <a name="how-to-specify-plot-options-for-graphing-counters"></a>Postupy: Určení možností grafu pro čítače grafů
+# <a name="how-to-specify-plot-options-for-graphing-counters"></a>Postupy: Zadejte možnosti pro čítače grafů grafu
 
-**Vykreslení možnosti** dialogové okno umožňuje změnit styl barvy a řádku možná vykreslená čítače v grafu. Lze také nastavit rozsah na konkrétní hodnotu nebo nastavit to, aby byl rozsah automaticky upraven na základě vzorkovaných dat.
+**Možnosti grafu** dialogové okno umožňuje změnit barvu a styl čáry vykresleného čítače v grafu. Lze také nastavit rozsah na konkrétní hodnotu nebo nastavit to, aby byl rozsah automaticky upraven na základě vzorkovaných dat.
 
-![Vykreslení dialogové okno Možnosti](../test/media/ltest_plotoptions.png)
+![Zobrazit dialogové okno Možnosti](../test/media/ltest_plotoptions.png)
 
 ## <a name="to-specify-plotting-options-for-graphs"></a>Určení možností zobrazování grafů
 
-1.  V nástroje načíst testování Analyzer, zvolte **grafy** na panelu nástrojů testu zatížení.
+1.  V **Analyzéru zátěžového testu**, zvolte **grafy** na panelu nástrojů.
 
-     Výsledky zátěžového testu se zobrazí v zobrazení grafů.
+     Výsledky zátěžového testu se zobrazí v zobrazení grafu.
 
-2.  V legendě nebo v grafu, klikněte pravým tlačítkem na řádek nebo aktuálního řádku výkresu čítače výkonu, pro kterou chcete změnit výkresu možnost a potom vyberte **vykreslení možnosti**.
+2.  V legendě nebo v grafu klikněte pravým tlačítkem na řádek nebo aktuální čáru grafu čítače výkonu, pro kterou chcete změnit možnost zobrazení a potom vyberte **možnosti grafu**.
 
-     **Vykreslení možnosti** zobrazí dialogové okno.
+     **Možnosti grafu** zobrazí dialogové okno.
 
 3.  Použít **barva** rozevíracího seznamu a vyberte barvu, kterou chcete použít pro vykreslení čítače výkonu.
 
-4.  Použít **styl** rozevíracího seznamu a vyberte ten, který chcete použít pro vykreslení čítače výkonu.
+4.  Použít **styl** rozevíracího seznamu a vyberte styl, který chcete použít pro vykreslení čítače výkonu.
 
 5.  Proveďte jednu z těchto akcí:
 
@@ -43,7 +43,7 @@ ms.locfileid: "34750919"
 
      \- nebo –
 
-     Zrušte **automaticky upravit rozsah** a použít **rozsah** rozevíracího seznamu k určení rozsahu, který chcete použít pro vykreslení čítače výkonu.
+     Vymazat **automaticky upravit rozsah** a použít **rozsah** rozevíracího seznamu k určení rozsahu, který chcete použít pro vykreslení čítače výkonu.
 
 6.  Zvolte **OK**.
 
@@ -53,4 +53,3 @@ ms.locfileid: "34750919"
 
 - [Analýza výsledků zátěžových testů v zobrazení grafů](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Postupy: vytváření vlastních grafů](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [Analýza výsledků zátěžových testů v zobrazení grafů](../test/analyze-load-test-results-in-the-graphs-view.md)

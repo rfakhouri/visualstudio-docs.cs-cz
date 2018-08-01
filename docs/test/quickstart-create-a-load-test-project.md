@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7838b9b04aa8d95fa9476cf9720815ccb5bed122
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8b18a80e8279513db6084852b10568b2327700d5
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176694"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380494"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Rychlý start: Vytvoření projektu zátěžového testu
 
@@ -27,9 +27,9 @@ V tomto rychlém startu během 10 minut dozvíte, jak vytvořit a spustit webov�
 
 Pokud nemáte již výkonu webu a načíst testování nainstalována součást nástroje, bude nutné ji nainstalovat pomocí instalačního programu sady Visual Studio.
 
-1. Otevřít instalační program sady Visual Studio z nabídky Start systému Windows. Se dostanete také ho v sadě Visual Studio z **nový projekt** dialogové okno, nebo výběrem **nástroje** > **stažení nástrojů a funkcí** z řádku nabídek.
+1. Otevřít **instalační program sady Visual Studio** z **Start** nabídku Windows. Se dostanete také ho v sadě Visual Studio z **nový projekt** dialogové okno, nebo výběrem **nástroje** > **stažení nástrojů a funkcí** z řádku nabídek.
 
-1. Ve Visual Studio Installer, zvolte **jednotlivé komponenty** kartu a přejděte dolů k položce **ladění a testování** oddílu. Vyberte **výkonnosti webů a zátěžové testování nástroje**.
+1. V **instalační program sady Visual Studio**, zvolte **jednotlivé komponenty** kartu a přejděte dolů k položce **ladění a testování** oddílu. Vyberte **výkonnosti webů a zátěžové testování nástroje**.
 
    ![Výkonnosti webů a zátěžové testování součást nástroje](media/web-perf-load-testing-tools-component.png)
 

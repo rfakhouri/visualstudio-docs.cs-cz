@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: nastavení vícenásobných spouštěných projektů'
+title: 'Postupy: nastavení více projektů po spuštění'
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,29 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc601f871d3f33ca408c24cd4ed070d2e5e77b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: aaff32bf9188b7cd33037992b9e2f120e6410e52
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942738"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379423"
 ---
-# <a name="how-to-set-multiple-startup-projects"></a>Postupy: nastavení vícenásobných spouštěných projektů
+# <a name="how-to-set-multiple-startup-projects"></a>Postupy: nastavení více projektů po spuštění
 
-Visual Studio můžete zadat více než jeden projekt se spustí při spuštění ladicího programu.
+Visual Studio můžete zadat více než jeden projekt je spuštěn při spuštění ladicího programu.
 
 ## <a name="to-set-multiple-startup-projects"></a>Chcete-li nastavit více projektů po spuštění
 
-1.  V **Průzkumníku**, vybrat řešení (nejvyšší uzel).
+1.  V **Průzkumníka řešení**, vyberte řešení (na nejvyšší uzel).
 
-2.  Zvolte kontext (klikněte pravým tlačítkem) nabídce uzlu řešení a potom zvolte **vlastnosti**. **Stránky vlastností řešení** zobrazí se dialogové okno.
+2.  Vyberte uzel řešení nabídka (kliknutí pravým tlačítkem myši) a pak zvolte **vlastnosti**. **Stránek vlastností řešení** zobrazí se dialogové okno.
 
-3.  Rozbalte **společných vlastností** uzel a zvolte **spouštěný projekt**.
+3.  Rozbalte **společné vlastnosti** uzel a zvolte **spouštěný projekt**.
 
-4.  Vyberte **více projektů po spuštění** možnost a nastavte příslušné akce.
+4.  Zvolte **více projektů po spuštění** možnosti a nastavte příslušné akce.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)
-- [Vytvoření řešení a projekty](../ide/creating-solutions-and-projects.md)
-- [Správa vlastností projektů a řešení](../ide/managing-project-and-solution-properties.md)
+- [Vytváření řešení a projektů](../ide/creating-solutions-and-projects.md)
+- [Správa vlastností projektu a řešení](../ide/managing-project-and-solution-properties.md)

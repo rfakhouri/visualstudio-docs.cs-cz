@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8a3ff542ebb40ecd10a92db81b985a9ded461fa7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179031"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382419"
 ---
 # <a name="configure-load-test-run-settings"></a>Konfigurace parametrů spuštění zátěžového testu
 
@@ -33,7 +33,7 @@ Počáteční parametr spuštění se vytvoří při vytvoření zátěžového 
 |-----------|-----------------------|
 |**Přidání dalších parametrů spuštění do zátěžového testu:** kromě nastavení spuštění, který je vytvořen při spuštění **nového Průvodce zátěžovým testem**, přidáním dalších parametrů spuštění do zátěžového testu tak, aby můžete spustit test v rámci různých podmínky.|-   [Postupy: přidání dalších parametrů běhu k zátěžovému testu](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Určení aktivního parametru spuštění pro zátěžový test:** vyberete parametr spuštění, který chcete používat se zátěžovým testem pomocí editoru zátěžového testu. Aktivní parametr spuštění lze rozpoznat pomocí přípony „[Active]“.|-   [Postupy: výběr aktivního parametru spuštění pro zátěžový test](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
-|**Úprava vlastností parametrů spuštění:** spuštění můžete upravit nastavení vlastností pro takové věci jako možnosti protokolování (Další informace naleznete níže), určení délky testu, dobu zahřívání, maximální počet chyb podrobnosti o ohlášených, vzorkovací frekvenci připojení Model (pouze testy webového výkonu), typ úložiště výsledků, úroveň validace a SQL trasování. Parametry spuštění by měly odrážet cíle zátěžového testu.|-   [Vlastnosti nastavení běhu zátěžového testu](../test/load-test-run-settings-properties.md)<br />-   [Změna vlastností nastavení spuštění](../test/load-test-run-settings-properties.md#LoadTestRunSettingsHowToChange)|
+|**Úprava vlastností parametrů spuštění:** spuštění můžete upravit nastavení vlastností pro takové věci jako možnosti protokolování (Další informace naleznete níže), určení délky testu, dobu zahřívání, maximální počet chyb podrobnosti o ohlášených, vzorkovací frekvenci připojení Model (pouze testy webového výkonu), typ úložiště výsledků, úroveň validace a SQL trasování. Parametry spuštění by měly odrážet cíle zátěžového testu.|-   [Vlastnosti nastavení běhu zátěžového testu](../test/load-test-run-settings-properties.md)<br />-   [Změna vlastností nastavení spuštění](../test/load-test-run-settings-properties.md#change-run-setting-properties)|
 |**Určení počtu iterací testu v spuštění zátěžového testu:** můžete určit počet, kolikrát chcete spustit všechny webového výkonu a testy jednotek ve všech scénářích zátěžových testů pomocí konfigurace **testovací iterace** Vlastnost.|-   [Postupy: určení počtu testovacích iterací v nastavení spuštění](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**Určení vzorkovací frekvence pro spuštění zátěžového testu:** můžete určit, jak často chcete, aby zátěžový test shromažďoval data čítačů výkonu tím, že nakonfigurujete **vzorkovací frekvence** vlastnost.|-   [Postupy: určení vzorkovací frekvence](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**Zadejte možnosti úložiště podrobností časování:** můžete určit, jak chcete podrobnosti zátěžového testu uložen tím, že nakonfigurujete **úložiště podrobností časování** vlastnost.|-   [Postupy: určení vlastnosti úložiště podrobností časování](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|

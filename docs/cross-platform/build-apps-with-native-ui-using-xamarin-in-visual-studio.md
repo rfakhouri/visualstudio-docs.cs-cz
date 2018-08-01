@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 928002d58a03ed6c52e85114c09e42a75b63aef0
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 3475bfff07b64c171b506ff1cefaee6c8e55cdda
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232387"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381078"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Vytváření aplikací s nativním uživatelským rozhraním pomocí Xamarinu v sadě Visual Studio
 
@@ -86,7 +86,7 @@ Visual Studio nemá šablonu řešení pro vytváření aplikací pro nativní u
 
 6. Přidat **Newtonsoft.Json** balíček NuGet pro projekt .NET Standard, které budete používat ke zpracování informace načtenými z datové služby weather:
 
-    -   Klikněte pravým tlačítkem myši **WeatherApp** projekt **Průzkumníku řešení** a vyberte **spravovat balíčky NuGet...** .
+    -   Klikněte pravým tlačítkem myši **WeatherApp** projekt **Průzkumníka řešení** a vyberte **spravovat balíčky NuGet...** .
 
          V okně NuGet vyberte **Procházet** kartu a vyhledejte **Newtonsoft**.
 

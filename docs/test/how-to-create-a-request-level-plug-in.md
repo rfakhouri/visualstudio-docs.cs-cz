@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5de1fb6890874a5aab57e357cc4488db96fb7c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178371"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382032"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>Postupy: Vytvoření modulu plugin na úrovni požadavků
+# <a name="how-to-create-a-request-level-plug-in"></a>Postupy: vytvoření modulu Plugin úrovni požadavků
 
 *Požadavky* jsou deklarativní příkazů, které tvoří testů výkonnosti webu. Webového výkonu test moduly plug-in umožňují izolovat a opakovaně používat kód mimo hlavní deklarativní příkazů v testu výkonnosti webu. Můžete vytvořit moduly plug-in a přidat je do jednotlivý požadavek a jde o test výkonnosti webu, který jej obsahuje. Přizpůsobené *modul požadavku* nabízí způsob, jak volat kód při spuštění konkrétního požadavku v testu výkonnosti webu.
 
@@ -30,7 +30,7 @@ Přizpůsobená webová výkonu testovací požadavek modulů plug-in můžete p
 
 ## <a name="to-create-a-request-level-plug-in"></a>K vytvoření modulu Plugin úrovni požadavků
 
-1.  V Průzkumníku řešení klikněte pravým tlačítkem řešení. Vyberte **přidat** a klikněte na tlačítko **nový projekt**.
+1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, vyberte **přidat** a klikněte na tlačítko **nový projekt**.
 
      **Přidat nový projekt** se zobrazí dialogové okno.
 
@@ -40,23 +40,23 @@ Přizpůsobená webová výkonu testovací požadavek modulů plug-in můžete p
 
 4.  V **název** textového pole zadejte název pro třídu a zvolit **OK**.
 
-     Nový projekt knihovny tříd bude přidán do Průzkumníku řešení a nová třída se objeví v Editoru kódu.
+     Nový projekt knihovny tříd je přidána do **Průzkumníka řešení** a nová třída se objeví v **Editor kódu**.
 
-5.  V Průzkumníku řešení klikněte pravým tlačítkem myši **odkazy** složku novou knihovnu tříd a vyberte **přidat odkaz**.
+5.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** složku novou knihovnu tříd a vyberte **přidat odkaz**.
 
      **Přidat odkaz** se zobrazí dialogové okno.
 
 6.  Zvolte **.NET** kartu, posuňte se dolů a vyberte **Microsoft.VisualStudio.QualityTools.WebTestFramework** a klikněte na tlačítko **OK**
 
-     Odkaz na **Microsoft.VisualStudio.QualityTools.WebTestFramework** se přidá do **odkaz** složku v Průzkumníku řešení.
+     Odkaz na **Microsoft.VisualStudio.QualityTools.WebTestFramework** se přidá do **odkaz** složky **Průzkumníka řešení**.
 
-7.  V Průzkumníku řešení klikněte pravým tlačítkem myši na nejvyšší uzel webový výkon a projekt zátěžového testu, který obsahuje zátěžový test, ke kterému chcete přidat test výkonu webu testovací požadavek modulu plug-in. Vyberte **přidat odkaz na**.
+7.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na nejvyšší uzel webového výkonu a zatížení testovacího projektu, který obsahuje zátěžový test, ke kterému chcete přidat test výkonu webu testovací požadavek modulu plug-in. Vyberte **přidat odkaz na**.
 
      **Zobrazí se dialogové okno Přidat odkaz**.
 
-8.  Zvolte **projekty** kartu, vyberte projekt knihovny tříd a pak zvolte **OK** .
+8.  Zvolte **projekty** kartu, vyberte **projekt knihovny tříd** a klikněte na tlačítko **OK** .
 
-9. V editoru kódu psát kód modul plug-in. Nejprve vytvořte novou veřejnou třídu, která je odvozena z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
+9. V **Editor kódu**, psát kód modul plug-in. Nejprve vytvořte novou veřejnou třídu, která je odvozena z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 
 10. Implementovat kód uvnitř jeden nebo oba <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> a <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> obslužných rutin událostí. V následujícím oddílu s příklady naleznete ukázku implementace.
 
@@ -91,7 +91,7 @@ Přizpůsobená webová výkonu testovací požadavek modulů plug-in můžete p
 
 ## <a name="example"></a>Příklad
 
-Následující kód slouží k vytvoření vlastní testu výkonnosti webu modulu plug-in, který zobrazí dvě dialogových oknech. V dialogovém okně zobrazí pole adresy URL, který je spojen s požadavkem, ke kterému připojíte – v požadavku. Druhý dialogu zobrazí název počítače pro agenta.
+Následující kód slouží k vytvoření vlastní testu výkonnosti webu modulu plug-in, který zobrazí dvě dialogových oknech. Zobrazí se dialogové jednu adresu URL, který je spojen s požadavkem, ke kterému připojíte – v požadavku. Druhý dialogu zobrazí název počítače pro agenta.
 
 > [!NOTE]
 > Následující kód vyžaduje přidání odkazu na System.Windows.Forms.
@@ -122,7 +122,7 @@ namespace RequestPluginNamespace
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [Vytvoření vlastního kódu a modulů Plugin pro zátěžové testy](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Kódování vlastního pravidla extrakce pro test výkonnosti webu](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
-- [Vytvoření vlastního ověřovacího pravidla pro test výkonnosti webu](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Postupy: vytvoření modulu Plugin pro zátěžový Test](../test/how-to-create-a-load-test-plug-in.md)
+- [Kód vlastního pravidla extrakce pro test výkonnosti webu](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
+- [Kód vlastního ověřovacího pravidla pro test výkonnosti webu](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
+- [Postupy: vytvoření modulu Plugin pro zátěžový test](../test/how-to-create-a-load-test-plug-in.md)
 - [Generování a spuštění programový test výkonnosti webu](../test/generate-and-run-a-coded-web-performance-test.md)

@@ -15,14 +15,14 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2618b8a27ceb4ed03c8b4bb2f3e910c60e61b6cc
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978152"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380860"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Návod: Vytvoření a spuštění testů jednotek pro spravovaný kód
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Návod: Vytváření a spouštění testů jednotek pro spravovaný kód
 
 Tento článek vás provede vytvořením, spuštěný, a přizpůsobením série jednotky testů pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód a Visual Studio **Průzkumníka testů**. Spustit u projektu C#, která je ve vývoji, vytvoříte testy, které testují jeho kód, spusťte testy a podívejte se na výsledky. Můžete změnit kód projektu a znovu spusťte testy.
 
@@ -84,7 +84,7 @@ public void Debit(double amount)
 
 1. Na **souboru** nabídce vyberte možnost **přidat** > **nový projekt**.
 
-2. V dialogovém okně Nový projekt rozbalte **nainstalováno**, rozbalte **Visual C#** a klikněte na tlačítko **Test**.
+2. V **nový projekt** dialogového okna rozbalte **nainstalováno**, rozbalte **Visual C#** a klikněte na tlačítko **Test**.
 
 3. V seznamu šablon vyberte **projekt testu jednotek**.
 
@@ -94,9 +94,9 @@ public void Debit(double amount)
 
 5. V **BankTests** projektu, přidejte odkaz na **Bank** projektu.
 
-   V Průzkumníku řešení vyberte **odkazy** v **BankTests** projektu a klikněte na tlačítko **přidat odkaz** v místní nabídce.
+   V **Průzkumníka řešení**vyberte **odkazy** v **BankTests** projektu a klikněte na tlačítko **přidat odkaz** v místní nabídce.
 
-6. V dialogovém okně Správce odkazů rozbalte **řešení** a potom zaškrtněte políčko **Bank** položky.
+6. V **správce odkazů** dialogového okna rozbalte **řešení** a potom zaškrtněte políčko **Bank** položky.
 
 ## <a name="create-the-test-class"></a>Vytvoření testovací třídy
 
@@ -230,7 +230,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Opětovné provedení testu
 
-V Průzkumníku testů zvolte **spustit všechny** na opětovné spuštění testu. Barva červeného/zeleného panel zbarví zeleně k označení, že test proběhl úspěšně a test je přesunut do **úspěšné testy** skupiny.
+V **Průzkumníka testů**, zvolte **spustit všechny** na opětovné spuštění testu. Barva červeného/zeleného panel zbarví zeleně k označení, že test proběhl úspěšně a test je přesunut do **úspěšné testy** skupiny.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Použití jednotkových testů ke zlepšení kódu
 
