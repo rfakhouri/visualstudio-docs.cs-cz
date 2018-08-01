@@ -1,6 +1,6 @@
 ---
 title: Kurz – další Django v sadě Visual Studio, krok 2
-description: Návod základní informace o rozhraní Django v kontextu projektů sady Visual Studio, konkrétně postup vytvoření aplikace a pomocí zobrazení a šablony.
+description: Názorný postup základy Django v rámci projektů sady Visual Studio, konkrétně postup vytvoření aplikace a používání zobrazení a šablony.
 ms.date: 04/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,55 +11,55 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e7e8989c9c122791fea840f30835be1c090a8972
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: cb19107cefc5638449f2acf7511cba46ef131a1d
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947484"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388251"
 ---
-# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Vytvoření aplikace Django s zobrazení a šablony stránky
+# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Vytvoření aplikace Django s zobrazení a šablony
 
-**Předchozí krok: [vytvoření projektu Visual Studia a řešení](learn-django-in-visual-studio-step-01-project-and-solution.md)**
+**Předchozí krok: [vytvářet řešení a projektu sady Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
-Co je nutné, pokud v projektu sady Visual Studio jsou pouze úrovni webu součástí Django *projektu*, který můžete spustit jeden nebo více rozhraní Django *aplikace*. Dalším krokem je vytvoření první aplikace obsahující pouze jednu stránku.
+Co budete mít, pokud v projektu sady Visual Studio jsou pouze součásti úrovni webu Django *projektu*, který můžete spustit jeden nebo více Django *aplikace*. Dalším krokem je vytvoření první aplikace pomocí jediné stránce.
 
-V tomto kroku teď zjistíte, jak:
+V tomto kroku se nyní dozvíte, jak:
 
 > [!div class="checklist"]
-> - Vytvoření aplikace Django s na jedné stránce (krok 2 - 1)
-> - Spusťte aplikaci z projektu Django (krok 2-2)
-> - Vykreslení zobrazení pomocí HTML (krok 2 – 3)
-> - Vykreslení zobrazení pomocí šablony stránky Django (krok 2 – 4)
+> - Vytvoření aplikace Django s jednu stránku (krok 2 - 1)
+> - Spuštění aplikace z projektu Django (krok 2-2)
+> - Vykreslení zobrazení v jazyce HTML (krok 2 – 3)
+> - Vykreslení zobrazení pomocí stránky šablony Django (krok 2 – 4)
 
-## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Krok 2 – 1: vytvoření aplikace pomocí výchozí struktury
+## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Krok 2-1: vytvoření aplikace pomocí výchozí struktury
 
-Aplikace Django je samostatný balíček Python, který obsahuje sadu související soubory pro konkrétní účel. Projekt Django může obsahovat libovolný počet aplikací, které odráží fakt, že webový hostitel může obsluhovat libovolný počet bodů samostatný záznam z jeden název domény. Projekt Django pro domény třeba contoso.com může například obsahovat jednu aplikaci pro www.contoso.com, aplikace pro support.contoso.com na druhý a třetí aplikace pro docs.contoso.com. V takovém případě projekt Django zpracovává směrování adres URL a nastavení lokality úrovni (v jeho `urls.py` a `settings.py` soubory), zatímco každá aplikace má svou vlastní odlišné stylů a chování prostřednictvím jeho interního směrování a zobrazení, modely, statické soubory a pro správu rozhraní.
+Aplikace Django je samostatný balíček Pythonu, který obsahuje nastavení sady souvisejících souborů pro konkrétní účel. Django projekt může obsahovat libovolný počet aplikací, která odráží fakt, že webového hostitele může obsluhovat libovolný počet samostatných vstupní body z jedné domény. Například projekt Django pro domény třeba contoso.com může obsahovat jednu aplikaci pro www.contoso.com, druhé aplikace pro support.contoso.com a třetí aplikaci pro docs.contoso.com. V takovém případě se stará o směrování adres URL a nastavení úrovni webu projektu Django (v jeho *urls.py* a *settings.py* soubory), zatímco každá aplikace má vlastní různých stylů a chování prostřednictvím jeho vnitřní směrování, zobrazení, modely, statické soubory a rozhraní pro správu.
 
-Aplikace Django obvykle začíná standardní sadu souborů. Visual Studio poskytuje šablony položek k chybě při inicializaci aplikace Django v rámci projektu Django, společně s pomocí integrované nabídky příkazu, který slouží ke stejnému účelu:
+Aplikace Django obvykle začíná standardní sadu souborů. Visual Studio obsahuje šablony položek k inicializaci aplikace Django v rámci projektu Django, spolu s integrované příkaz, který slouží ke stejnému účelu:
 
-- Šablony: V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a vyberte **přidat** > **novou položku**. V **přidat novou položku** zadejte název aplikace v dialogovém okně, vyberte možnost "Django 1.9 aplikace" šablony **název** pole a vyberte možnost **OK**.
+- Šablony: V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a vyberte **přidat** > **nová položka**. V **přidat novou položku** dialogového okna, vyberte **aplikace Django 1.9** šablony, zadejte název aplikace v **název** pole a vyberte **OK**.
 
-- Příkaz integrované: V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a vyberte **přidat** > **aplikace Django**. Tento příkaz vás vyzve k zadání názvu a vytvoří aplikaci Django 1.9.
+- Integrovaný příkaz: V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a vyberte **přidat** > **aplikace Django**. Tento příkaz vás vyzve k zadání názvu a vytvoří aplikaci Django 1.9.
 
-    ![Příkaz nabídky pro přidání aplikace Django](media/django/step02-add-django-app-command.png)
+    ![Příkaz pro přidání aplikace Django](media/django/step02-add-django-app-command.png)
 
-Pomocí těchto metod, vytvořte aplikaci s názvem "HelloDjangoApp". Výsledkem je do složky ve vašem projektu s tímto názvem, který obsahuje položky, jak je popsáno v následující tabulce.
+Pomocí některé z metod, vytvořte aplikaci s názvem "HelloDjangoApp". Výsledkem je do složky v projektu s tímto názvem, který obsahuje položky, jak je popsáno v následující tabulce.
 
 ![Soubory aplikace Django v Průzkumníku řešení](media/django/step02-django-app-in-solution-explorer.png)
 
 | Položka | Popis |
 | --- | --- |
-| `__init__.py` | Soubor, který identifikuje jako balíček aplikace. |
-| `migrations` | Složka, ve kterém Django ukládá skripty, které jsou zarovnané s změny modely má databáze aktualizovat. Nástroje pro migraci na rozhraní Django následně použít potřebné změny všechny předchozí verze databáze tak, aby odpovídala aktuální modelů. Pomocí migrace, zachovat fokus na modely a nechat Django zpracování základní schématu databáze. Migrace jsou popsané v kroku 6; Prozatím se jednoduše složka obsahuje `__init__.py` souboru (což znamená, že složka definuje vlastní balíček Python). |
-| `templates` | Složku pro Django stránky šablon, které obsahují jeden soubor `index.html`. Šablony jsou bloky HTML, do kterého zobrazení můžete přidat informace, které dynamicky vykreslení stránky. Například stránka šablony "proměnné," `{{ content }}` v `index.html`, jsou zástupné symboly pro dynamické hodnoty, jak je popsáno dále v tomto článku (krok 2). Obvykle aplikace Django vytvořit obor názvů pro jejich šablony tak, že je do podsložky, která odpovídá názvu aplikace. |
-| `admin.py` | Je soubor Python, ve kterém můžete rozšířit aplikace pro správu rozhraní (viz krok 6), který se používá ke zjištění a úpravy dat v databázi. Na začátku tento soubor obsahuje pouze příkaz `from django.contrib import admin`. Ve výchozím nastavení, rozhraní Django obsahuje standardní rozhraní pro správu prostřednictvím položky v projektu Django `settings.py` souboru, který můžete zapnout pomocí uncommenting existující položky v `urls.py`. |
-| `apps.py` | Soubor Python, která definuje třídu konfigurace pro aplikaci (viz níže za touto tabulkou). |
-| `models.py` | Modely jsou datové objekty, identifikuje funkce, pomocí kterých zobrazení interakci s základní databáze aplikace (viz krok 6). Django zajišťuje vrstvu připojení databáze, tak, aby aplikace nemusíte sami se týkají s těmito podrobnostmi. `models.py` Soubor je výchozí místo, ve kterém chcete-li vytvořit modely a nejprve obsahuje pouze příkaz `from django.db import models`. |
-| `tests.py` | Soubor Python, který obsahuje základní struktury sady testů jednotek. |
-| `views.py` | Zobrazení jsou, co si obvykle představit jako webových stránek, které trvat požadavku HTTP a vrátí odpověď HTTP. Zobrazení vykreslení obvykle ve formátu HTML, který webových prohlížečů vědět, jak zobrazit, ale zobrazení nemusí nutně být viditelné (jako jsou formuláře zprostředkující). Zobrazení je definována funkce Python jehož úkolem je k vykreslení HTML k odeslání do prohlížeče. `views.py` Soubor je výchozí místo, ve kterém můžete vytvořit zobrazení a nejprve obsahuje pouze příkaz `from django.shortcuts import render`. |
+| **\_\_init\_\_.py** | Soubor, který identifikuje aplikaci jako balíček. |
+| **Migrace** | Složka, ve které ukládá Django skripty, které aktualizace databáze pro zarovnání se změnami na modely. Nástroje pro migraci na Django následně použít potřebné změny jakékoli předchozí verze databáze tak, aby odpovídalo aktuální modely. Pomocí migrace, zachovat fokus na modely a nechat Django zpracování základní schéma databáze. Migrace jsou popsané v kroku 6. Prozatím jednoduše složka obsahuje  *\_ \_init\_\_.py* souboru (to znamená, že složka definuje vlastní balíček Pythonu). |
+| **Šablony** | Složka pro stránku šablon Django, které obsahují jeden soubor *index.html*. Šablony jsou bloky jazyka HTML, do kterého zobrazení můžete přidat informace, které dynamicky vykreslení stránky. Například stránka šablony "proměnné" `{{ content }}` v *index.html*, jsou zástupné symboly pro dynamické hodnoty, jak je popsáno dále v tomto článku (krok 2). Aplikace Django obvykle vytvoříte obor názvů pro své šablony tak, že je umístíte do podsložky, která odpovídá názvu aplikace. |
+| **Admin.PY** | Soubor Pythonu, ve kterém je rozšíření aplikace s vaší správy rozhraní (viz krok 6), která je využívána k zobrazení a úprava dat v databázi. Na začátku tento soubor obsahuje pouze příkaz `from django.contrib import admin`. Ve výchozím nastavení, Django obsahuje standardní rozhraní pro správu prostřednictvím položky v projektu Django *settings.py* soubor, který můžete zapnout tak odstraňuje se komentování existující položky v *urls.py*. |
+| **Apps.PY** | Soubor Pythonu, který definuje třídu konfigurace pro aplikaci (viz následující za touto tabulkou). |
+| **models.PY** | Modely jsou datové objekty identifikovaný funkce, pomocí kterých zobrazení interakci s databází základní aplikace (podívejte se na krok 6). Django poskytuje úroveň připojení databáze tak, aby aplikace nemusíte starat tyto podrobnosti. *Models.py* souboru je výchozí místo, ve kterém chcete vytvořit vlastní modely a zpočátku obsahuje pouze příkaz `from django.db import models`. |
+| **Tests.PY** | Soubor Pythonu, který obsahuje základní struktura testů jednotek. |
+| **Views.PY** | Zobrazení se, co si obvykle představit jako webových stránek, které používají požadavek HTTP a vrací odpověď HTTP. Zobrazení se obvykle vykreslit jako kód HTML, který webových prohlížečů vědět, jak zobrazit, ale zobrazení nemusí nutně být viditelné (jako je dočasný formulář). Zobrazení je definované funkce Pythonu, jehož úkolem je k vykreslení kódu HTML k odeslání do prohlížeče. *Views.py* souboru je výchozí místo, ve kterém chcete vytvořit zobrazení a zpočátku obsahuje pouze příkaz `from django.shortcuts import render`. |
 
-Obsah `app.py` při použití názvu "HelloDjangoApp" vypadat takto:
+Obsah *app.py* při použití názvu "HelloDjangoApp" vypadat takto:
 
 ```python
 from django.apps import AppConfig
@@ -68,15 +68,15 @@ class HelloDjangoAppConfig(AppConfig):
     name = 'HelloDjango'
 ```
 
-### <a name="question-is-creating-a-django-app-in-visual-studio-any-different-from-creating-an-app-on-the-command-line"></a>Otázka: Je vytváření aplikace Django v sadě Visual Studio všechny liší od vytvoření aplikace na příkazovém řádku?
+### <a name="question-is-creating-a-django-app-in-visual-studio-any-different-from-creating-an-app-on-the-command-line"></a>Otázka: Je vytváření aplikací Django v sadě Visual Studio nijak neliší od vytvoření aplikace příkazového řádku?
 
-Odpověď: Spuštění **přidat** > **aplikace Django** příkaz nebo pomocí **přidat** > **nová položka** s aplikace Django Šablona vytváří stejné soubory, které jako příkaz Django `manage.py startapp <app_name>`. Výhody vytváření aplikace v sadě Visual Studio je složce aplikace a všechny jeho soubory se automaticky integrují do projektu. Příkaz stejné sady Visual Studio můžete vytvořit libovolný počet aplikací ve vašem projektu.
+Odpověď: Spuštění **přidat** > **aplikace Django** příkaz nebo pomocí **přidat** > **nová položka** s využitím aplikace Django Šablona vytváří stejné soubory jako příkaz Django `manage.py startapp <app_name>`. Výhoda pro vytváření aplikace v sadě Visual Studio je, že složka aplikace a všechny jeho soubory jsou automaticky integrované do projektu. Ten samý příkaz sady Visual Studio můžete vytvořit libovolný počet aplikací ve vašem projektu.
 
 ## <a name="step-2-2-run-the-app-from-the-django-project"></a>Krok 2 – 2: spuštění aplikace z projektu Django
 
-V tomto bodu, pokud znovu spusťte projekt v sadě Visual Studio (pomocí tlačítka panelu nástrojů nebo **ladění** > **spustit ladění**), stále vidět výchozí stránky. Žádný obsah aplikace se zobrazí, protože je třeba definovat stránku konkrétní aplikace a přidat do projektu Django aplikaci:
+V tomto okamžiku, je-li znovu spustit projekt v sadě Visual Studio (pomocí tlačítka panelu nástrojů nebo **ladění** > **spustit ladění**), se stále zobrazuje výchozí stránky. Žádný obsah aplikace se zobrazuje, protože je potřeba definovat stránku konkrétní aplikace a přidejte ji do projektu Django:
 
-1. V `HelloDjangoApp` složku, upravit `views.py` tak, aby odpovídaly kód níže, který definuje zobrazení s názvem "index":
+1. V *HelloDjangoApp* složku, upravit *views.py* tak, aby odpovídaly níže uvedený kód, který definuje zobrazení s názvem "index":
 
     ```python
     from django.shortcuts import render
@@ -86,7 +86,7 @@ V tomto bodu, pokud znovu spusťte projekt v sadě Visual Studio (pomocí tlač�
         return HttpResponse("Hello, Django!")
     ```
 
-1. V `BasicProject` složky (vytvořený v kroku 1), upravte `urls.py` tak, aby odpovídaly alespoň následující kód (Pokud chcete je můžete zachovat významné komentáře):
+1. V *BasicProject* složky (vytvořené v kroku 1), upravte *urls.py* tak, aby odpovídaly alespoň následující kód (Pokud chcete, můžete je můžete zachovat významné komentáře):
 
     ```python
     from django.conf.urls import include, url
@@ -99,39 +99,39 @@ V tomto bodu, pokud znovu spusťte projekt v sadě Visual Studio (pomocí tlač�
     ]
     ```
 
-    Každý vzor adresy URL popisuje zobrazení, které Django směruje konkrétní adresy URL relativní webu (to znamená, část, která následuje "https://www.domain.com/"). V první položce v `urlPatterns` , které začíná regulární výraz `^$` je směrování pro kořenového webu, "/". Druhá položka `^home$` konkrétně tras "/ home". Může mít libovolný počet postupů do stejné zobrazení.
+    Každý vzor adresy URL popisuje zobrazení, do které Django směruje konkrétní relativní adresy URL (to znamená, který následuje část `https://www.domain.com/`). V první položce v `urlPatterns` , který začíná s regulárním výrazem `^$` je směrování pro kořenový server "/". Druhá položka `^home$` konkrétně směruje "/ home". Můžete mít libovolný počet postupů do stejného zobrazení.
 
-1. Spusťte projekt znovu zobrazíte zprávu "Hello, Django!" podle definice zobrazení. Po dokončení zastavení serveru.
+1. Spusťte projekt znovu, abyste viděli zprávy **Hello, Django!** podle definice zobrazení. Až to budete mít zastavení serveru.
 
-### <a name="commit-to-source-control"></a>Zapsat do správy zdrojového kódu
+### <a name="commit-to-source-control"></a>Potvrzení změn do správy zdrojového kódu
 
-Protože jste udělali změny kódu a jejich otestovali úspěšně, teď je nejvhodnější doba ke kontrole a uložte provedené změny do správy zdrojového kódu. Pozdější kroky v tomto kurzu vám připomene příslušná doba potvrzení znovu do správy zdrojového kódu a odkazovat zpět do této části.
+Protože jste provedli změny kódu a je otestovali úspěšně, teď je vhodná doba ke kontrole a potvrzení provedených změn do správy zdrojového kódu. Pozdější kroky v tomto kurzu vás upozorní na vhodných chvílích se znovu zapsat do správy zdrojového kódu a vrátit zpět do této části.
 
-1. Kliknutím na tlačítko změny ve spodní části Visual Studio (v kroužku níže), která přejde na **Team Explorer**.
+1. Vyberte tlačítko změn v dolní části sady Visual Studio (v kruhu níže), která přejde na **Team Exploreru**.
 
-    ![Tlačítko změny zdroj ovládacího prvku na stavovém řádku Visual Studio](media/django/step02-source-control-changes-button.png)
+    ![Tlačítka změny správy zdrojového kódu ve stavovém řádku sady Visual Studio](media/django/step02-source-control-changes-button.png)
 
-1. V **Team Explorer**, zadejte zprávu o potvrzení, jako jsou "Vytvořit počáteční aplikace Django" a vyberte **potvrzení všechny**. Po dokončení potvrzení se zobrazí zpráva "potvrzení <hash> vytvoří místně. Synchronizace sdílet vaše změny se serverem." Pokud chcete doručte změny do vzdáleného úložiště, vyberte **synchronizace**, pak vyberte **nabízené** pod **odchozí potvrzení**. Můžete také obdržíte více místní potvrzení před odesláním vzdálené.
+1. V **Team Exploreru**, zadejte zprávu potvrzení jako "Vytvoření počáteční aplikace Django" a vyberte **Potvrdit vše**. Po dokončení potvrzení změn, zobrazí se zpráva **potvrzení \<hash > vytvořeno místně. Synchronizace pro sdílení změn se serverem.** Pokud chcete zapsat změny do vzdáleného úložiště, vyberte **synchronizace**a pak vyberte **nabízených** pod **odchozí potvrzení změn**. Můžete také shromažďovat více místních potvrzení změn před doručením (push) Vzdálená.
 
-    ![Nabízená vzdálené v Team Exploreru potvrzení](media/django/step02-source-control-push-to-remote.png)
+    ![Vložit potvrzení změn do vzdáleného v Průzkumníku týmových projektů](media/django/step02-source-control-push-to-remote.png)
 
-### <a name="question-what-is-the-r-prefix-before-the-routing-strings-for"></a>Otázka: co je předpona "r" před směrování řetězce pro?
+### <a name="question-what-is-the-r-prefix-before-the-routing-strings-for"></a>Otázka: Co je předpona "r" před směrování řetězce pro?
 
-Odpověď: 'R' předponu na řetězec v Pythonu znamená "raw," která nastaví Python není řídicí znaky v rámci řetězce. Protože regulární výrazy použít mnoho speciální znaky, pomocí předpony 'r' usnadňuje tyto řetězce mnohem čtení než pokud obsaženy řadu '\' řídicí znaky.
+Odpověď: Předpona "r" v řetězci v jazyce Python znamená "neupravené", která nastaví Python nejsou řídicí znaky v řetězci. Protože regulárních výrazů používat mnoho speciální znaky, pomocí předpony "r" tyto řetězce velmi usnadňuje čtení než pokud obsaženy celou řadou "\\" řídicí znaky.
 
-### <a name="question-what-do-the--and--characters-mean-in-the-url-routing-entries"></a>Otázka: co dělat ^ a znaky $ znamenat v rámci adresy URL směrování položek?
+### <a name="question-what-do-the--and--characters-mean-in-the-url-routing-entries"></a>Otázka: Co dělat ^ a v položkách směrování URL znamenat znaky $?
 
-Odpověď: V regulárních výrazech, které definují vzorů adresy URL ^ znamená "začátek řádku" a znamená $ "-endu řádku, kde znovu adresy URL je relativní vůči kořenovému adresáři webu (část, která následuje `https://www.domain.com/`). Regulární výraz `^$` efektivně znamená "blank" a proto odpovídá úplnou adresu URL `https://www.domain.com/` (nic přidat do kořenovému adresáři webu). Vzor `^home$` přesně odpovídá `https://www.domain.com/home/`. (Django nepoužívá koncové / v porovnávání vzorů.)
+Odpověď: V regulárních výrazech, které definují vzory adres URL ^ znamená "začátek řádku" a znamená, že $ "konec" řádku, kde znovu adresy URL jsou kořeni webu (část, která následuje `https://www.domain.com/`). Regulární výraz `^$` efektivně znamená "blank" a proto odpovídá úplnou adresu URL `https://www.domain.com/` (nic přidat ke kořenovému adresáři webu). Vzor `^home$` přesně odpovídá `https://www.domain.com/home/`. (Django nepoužívá konci / in porovnávání vzorů.)
 
-Pokud nepoužijete koncovou v regulárním výrazu, stejně jako u `^home`, pak vzor adresy URL odpovídá *žádné* adresu URL, který začíná "home", například "home", "úkolu", "věci odvál čas" a "home192837".
+Pokud nepoužíváte koncové $ v regulárním výrazu, stejně jako u `^home`, pak odpovídající vzor adresy URL *jakékoli* adresu URL, která začíná řetězcem "home", jako je například "home", "úkolu", "věci odvál čas" a "home192837".
 
-A experimentovat s jiný regulární výrazy, zkuste nástroje online [regex101.com](https://regex101.com) v [pythex.org](http://www.pythex.org).
+Můžete experimentovat s různých regulárních výrazů, zkuste online nástrojů, jako [regex101.com](https://regex101.com) na [pythex.org](http://www.pythex.org).
 
-## <a name="step-2-3-render-a-view-using-html"></a>Krok 2 – 3: vykreslení zobrazení pomocí HTML
+## <a name="step-2-3-render-a-view-using-html"></a>Krok 2 – 3: vykreslení zobrazení v jazyce HTML
 
-`index` Funkce, která máte, pokud v `views.py` nic jiného než prostého textu odpovědi HTTP pro stránku generuje. Většina reálného webové stránky, samozřejmě odpovědět s bohatou stránky HTML, které často začlenit dynamická data. Hlavním důvodem k definování zobrazení pomocí funkce je ve skutečnosti, že obsah může být generována dynamicky.
+`index` Funkce, která jste dosud v *views.py* generuje nic jiného než prostého textu odpovědi HTTP pro stránky. Většina skutečných webové stránky, samozřejmě, odpoví bohaté stránky HTML, které často zahrnují živá data. Primární z důvodu definování zobrazení pomocí funkce je ve skutečnosti, tak můžete dynamicky generované tohoto obsahu.
 
-Protože argument `HttpResponse` je právě řetězec, můžete vytvořit až všechny HTML, který chcete v rámci řetězce. Jako jednoduchý příklad, nahraďte `index` funkce následujícím kódem (zachovat stávající `from` příkazy), který generuje odpovědi HTML pomocí dynamický obsah, který se aktualizuje pokaždé, když obnovíte stránku:
+Protože argument `HttpResponse` je pouze řetězce lze sestavit veškeré kódování HTML, jako jsou v rámci řetězce. Jako jednoduchý příklad, nahraďte `index` funkce s následujícím kódem (zachovat stávající `from` příkazy), který generuje odpověď jazyka HTML pomocí dynamický obsah, který se aktualizuje pokaždé, když se aktualizuje stránka:
 
 ```python
 from datetime import datetime
@@ -146,22 +146,22 @@ def index(request):
     return HttpResponse(html_content)
 ```
 
-Spusťte projekt znovu a zobrazí zpráva podobná "**Hello Django!** v pondělí, 16 duben, 2018 na 16:28:10 ". Aktualizujte stránku a aktualizujte čas a potvrďte, že obsah má být vygenerován spolu s každou žádostí. Po dokončení zastavení serveru.
+Spusťte projekt znovu tak, aby se zobrazit následující zpráva "**Django Hello!** Pondělí, 16. dubna 2018 v 16:28:10 ". Aktualizujte stránku, potvrďte, že obsah je právě generován spolu s každou žádostí a aktualizujte čas. Až to budete mít zastavení serveru.
 
 > [!Tip]
-> Zástupce zastavením a restartováním projektu se má používat **ladění** > **restartujte** příkaz nabídky (Ctrl + Shift + F5) nebo na tlačítko Restartovat na ladění nástrojů:
+> Zástupce k zastavení a spuštění projektu se má používat **ladění** > **restartovat** příkazu nabídky (**Ctrl**+**Shift**  + **F5**) nebo restartování tlačítka na panelu nástrojů ladění:
 >
-> ![Restartujte na ladění nástrojů v sadě Visual Studio](media/debugging-restart-toolbar-button.png)
+> ![Restartujte na panelu nástrojů ladění v sadě Visual Studio](media/debugging-restart-toolbar-button.png)
 
 ## <a name="step-2-4-render-a-view-using-a-page-template"></a>Krok 2 – 4: vykreslení zobrazení pomocí šablony stránky
 
-Generování HTML v kódu funguje bez problémů pro velmi malé stránky, ale jako stránky získat sofistikovanější obvykle chcete zachovat statické HTML částí stránek (spolu s odkazy na soubory šablon stylů CSS a JavaScript) jako "stránka šablony", do kterých je pak vložit dynamické, generovaný kód obsah. V předchozí části, datum a čas z `now.strftime` volání je dynamický, což znamená, že veškerý obsah mohou být umístěny v šabloně stránky.
+Generování HTML v kódu funguje pro velmi malé stránky, ale jako stránky důmyslnější obvykle chcete udržovat statické části HTML stránky (spolu s odkazy na soubory šablon stylů CSS a JavaScriptu) jako "stránka šablony" do kterých pak vložíte dynamické, kód generovaný obsah. V předchozí části, data a času `now.strftime` volání je dynamická, což znamená, že veškerý obsah je možné použít v šabloně stránky.
 
-Šablona stránky Django je blok HTML, která může obsahovat libovolný počet nahrazení tokeny nazývané "proměnné", které jsou vymezeny hranatými `{{` a `}}`jako v `{{ content }}`. Django je ukázka modulu pak nahradí proměnné dynamický obsah, který zadáte v kódu.
+Šablona Django stránky je blok kód HTML, který může obsahovat libovolný počet tokenů nahrazení nazývané "proměnné", které jsou vymezeny hranatými `{{` a `}}`, například `{{ content }}`. Modul šablon Django potom nahrazuje proměnné s dynamickým obsahem, který je zadat v kódu.
 
-Následující kroky ukazují použití šablon stránky:
+Následující kroky ukazují použití šablony:
 
-1. V části `BasicProject` složky, která obsahuje Django projektu, otevřete `settings.py` souboru a název aplikace, "HelloDjangoApp", přidejte do `INSTALLED_APPS` seznamu. Přidání aplikace do seznamu informuje projekt Django, že je složka s tímto názvem, který obsahuje aplikace:
+1. V části *BasicProject* otevřete složku, která obsahuje projekt Django, *settings.py* soubor a přidat název aplikace "HelloDjangoApp" `INSTALLED_APPS` seznamu. Přidání aplikace do seznamu říká projektu Django, že je složka s tímto názvem, který obsahuje aplikace:
 
     ```python
     INSTALLED_APPS = [
@@ -170,13 +170,13 @@ Následující kroky ukazují použití šablon stránky:
     ]
     ```
 
-1. Také v `settings.py`, zajistěte, aby `TEMPLATES` objekt obsahuje následující řádek (zahrnuté ve výchozím nastavení), která nastaví Django a hledat šablony v nainstalovanou aplikaci `templates` složky:
+1. Také v *settings.py*, ujistěte se, že `TEMPLATES` objekt obsahuje následující řádek (zahrnuté ve výchozím nastavení), která nastaví Django hledejte šablony v nainstalované aplikace *šablony* složky:
 
     ```json
     'APP_DIRS': True,
     ```
 
-1. V `HelloDjangoApp` složku, otevřete `templates/index.html` soubor šablony stránky, abyste viděli, že obsahuje jednu proměnnou `{{ content }}`:
+1. V *HelloDjangoApp* složku, otevřete *templates/index.html* stránky šablonu souboru, podívejte se, že obsahuje jednu proměnnou `{{ content }}`:
 
     ```html
     <html>
@@ -190,7 +190,7 @@ Následující kroky ukazují použití šablon stránky:
     </html>
     ```
 
-1. V `HelloDjangoApp` složku, otevřete `views.py` a nahraďte `index` funkce s následujícím kódem, který používá `django.shortcuts.render` pomocné funkce. `render` Pomocník poskytuje zjednodušené rozhraní pro práci se šablonami stránky. Ujistěte se, aby všechny existující `from` příkazy.
+1. V *HelloDjangoApp* složku, otevřete *views.py* a nahraďte `index` funkce s následujícím kódem, který používá `django.shortcuts.render` pomocnou funkci. `render` Pomocné rutiny poskytuje zjednodušené rozhraní pro práci se šablonami stránky. Ujistěte se, aby se všechny existující `from` příkazy.
 
     ```python
     from django.shortcuts import render   # Added for this step
@@ -207,11 +207,11 @@ Následující kroky ukazují použití šablon stránky:
         )
     ```
 
-    První argument `render`, jak můžete vidět, je objekt žádosti a relativní cesty k souboru šablony v rámci aplikace `templates` složky. Podle potřeby pro zobrazení, které podporuje, názvem souboru šablony. Třetí argument `render` je pak slovník proměnných, které odkazuje šablona. Může zahrnovat objekty ve slovníku, v takovém případě proměnné v šabloně, které mohou odkazovat na `{{ object.property }}`.
+    První argument `render`, jak je vidět, je objekt žádosti, za nímž následuje relativní cesta k souboru šablony v rámci aplikace *šablony* složky. Soubor šablony je název pro zobrazení, které podporuje, v případě potřeby. Třetí argument `render` je pak slovník proměnných, které odkazuje šablonu. Může obsahovat objekty ve slovníku, v takovém případě proměnné v šabloně mohou odkazovat na `{{ object.property }}`.
 
-1. Spusťte projekt a sledovat výstup. Měli byste vidět podobná zpráva k této zaznamenané kroku 2-2, což indikuje, že šablona funguje.
+1. Spusťte projekt a sledujte ve výstupu. Měli byste vidět zprávu podobné zobrazení kroku 2-2, která znamená, že šablona funguje.
 
-    Sledovat, ale, že HTML, můžete používat ve `content` vlastnost vykreslí pouze jako prostý text, protože `render` funkce automaticky řídicí sekvence této HTML. Automatické uvozovací znaky zabránit náhodnému ohrožení zabezpečení prostřednictvím injektáže: vývojáři často shromažďovat vstup z jedné stránky a použít jako hodnotu v jiném prostřednictvím zástupný text šablony. Uvozovací znaky slouží také jako připomenutí, že je znovu nejlepší mít HTML v šabloně stránky a mimo kód. Naštěstí je jednoduché, chcete-li vytvořit další proměnné tam, kde je potřeba. Můžete například změnit `templates/index.html` tak, aby odpovídala následující kód, který přidá název stránky a udržuje všechny formátování v šabloně stránky:
+    Sledovat, ale, že kód HTML, jste použili v `content` vlastnost vykreslí pouze jako prostý text, protože `render` funkce automaticky řídicí sekvence této HTML. Automatické uvození zabránit náhodnému ohrožení zabezpečení, útoky prostřednictvím injektáže: vývojáři často shromažďovat vstup z jedné stránky a použít jako hodnotu do jiné prostřednictvím šablony zástupný symbol. Uvozovací znaky slouží taky jako připomenutí, že je znovu nejlepší mít HTML v šabloně stránky a ven z kódu. Naštěstí je jednoduché vytvářet další proměnné místech. Například změnit *templates/index.html* tak, aby odpovídala následující kód, který přidá název stránky a zachovává veškeré formátování v šabloně stránky:
 
     ```html
     <html>
@@ -224,7 +224,7 @@ Následující kroky ukazují použití šablon stránky:
     </html>
     ```
 
-    Zapište `index` zobrazení funkce následujícím způsobem, zadejte hodnoty pro všechny proměnné v šabloně stránky:
+    Zapište `index` se můžete podívat na funkce následujícím způsobem zadejte hodnoty pro všechny proměnné v šabloně stránka:
 
     ```python
     def index(request):
@@ -241,40 +241,40 @@ Následující kroky ukazují použití šablon stránky:
         )
     ```
 
-1. Zastavení serveru a restartujte projektu a pozorovat, že stránka nyní vykreslí správně:
+1. Server zastavit a restartovat projektu a podívejte se, že stránka nyní vykreslí správně:
 
-    ![Spuštěné aplikaci pomocí šablony](media/django/step02-result.png)
+    ![Spuštěné aplikace pomocí šablony](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>V posledním kroku přesuňte vaše šablony do podsložky se stejným názvem jako aplikace, která vytvoří obor názvů a zabraňuje možným konfliktům s jinými aplikacemi, které přidáte do projektu. To znamená, vytvořit podsložky v `templates` s názvem `HelloDjangoApp`, přesunout `index.html` do této podsložky a upravovat `index` zobrazit funkce k odkazování na novou cestu šablony, `HelloDjangoApp/index.html`. Spusťte projekt, ověřte, že stránka vykreslí správně a zastavení serveru.
+1. <a name="template-namespacing"></a>V posledním kroku přesuňte své šablony do podsložky se stejným názvem jako aplikaci, která vytvoří obor názvů a vyhnout se možným konfliktům s jinými aplikacemi, které můžete přidat do projektu. To znamená, vytvořte podsložku v *šablony* s názvem *HelloDjangoApp*, přesuňte *index.html* do této podsložky a upravovat `index` zobrazit funkce k odkazování na šablony novou cestu, *HelloDjangoApp/index.html*. Spuštění projektu, ověřte, že stránka vykreslí správně a zastavení serveru.
 
-1. Potvrdit změny pro zdroj ovládacího prvku a aktualizujte vzdálené úložiště, v případě potřeby, jak je popsáno v části [krok 2-2](#commit-to-source-control).
+1. Potvrďte změny do správy zdrojového kódu a aktualizovat vaše vzdálené úložiště, v případě potřeby, jak je popsáno v části [krok 2-2](#commit-to-source-control).
 
-### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Otázka: stránky šablony musí být v samostatném souboru?
+### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Otázka: Šablony musí být v samostatném souboru?
 
-Odpověď: I když šablony jsou obvykle zachován v samostatné soubory HTML, můžete taky šablonu vložené. Použít samostatné soubory se doporučuje, ale k udržování čisté oddělení mezi značek a kódu.
+Odpověď: I když šablony jsou obvykle spravované do samostatných souborů HTML, můžete také vložené šablony. Použití samostatného souboru se doporučuje, ale udržovat čisté oddělení mezi značek a kódu.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Otázka: musí být šablony používat příponu souboru .html?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Otázka: Musíte šablony používají příponu souboru HTML?
 
-Odpověď: `.html` přípony souborů, šablona stránky je zcela volitelný, protože je vždy určit přesnou relativní cesta k souboru v druhý argument `render` funkce. Však Visual Studio (a dalšími editory) obvykle poskytují funkce, například kód dokončení a syntaxe zabarvení s `.html` soubory, které převáží skutečnost, že stránka šablony nejsou nezbytně HTML.
+Odpověď: *.html* rozšíření pro stránkovací soubory šablony je naprosto volitelné, protože vždy identifikovat přesné relativní cesta k souboru v druhý argument `render` funkce. Ale sady Visual Studio (a ostatní editory) obvykle poskytují funkce, jako je dokončení a syntaxe zabarvení kódu s *.html* soubory, které převažuje skutečnost, že stránka šablony nejsou nezbytně HTML.
 
-Ve skutečnosti při práci s projektem Django, Visual Studio automaticky rozpozná, pokud je ve skutečnosti šablonu Django soubor HTML, který upravujete a poskytuje určité funkce automatického dokončování. Například když začnete psát komentář šablony stránky Django, `{#`, Visual Studio automaticky vám dává ukončovací `#}` znaků. **Výběru jako komentáře** a **zrušte komentář u výběru** příkazy (na **upravit** > **Upřesnit** nabídky a na panelu nástrojů) komentáře k šabloně používají taky místo komentáře HTML.
+Ve skutečnosti když pracujete s projektem Django, Visual Studio automaticky rozpozná, pokud soubor HTML, který upravujete je ve skutečnosti šablona Django a poskytuje některé funkce automatického dokončování. Například když začnete psát komentář stránku šablony Django, `{#`, Visual Studio automaticky poskytuje uzavírací `#}` znaků. **Zakomentovat výběr** a **Odkomentovat výběr** příkazy (na **upravit** > **Upřesnit** nabídky a na panelu nástrojů) komentáře k šabloně používají taky místo komentáře HTML.
 
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Otázka: Při spuštění projektu, zobrazuje chybu, která šablona nebyla nalezena. Co je?
+### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Otázka: Při spuštění projektu zobrazí chybu, která šablona se nenašel. Co je?
 
-Odpověď: Pokud se zobrazí chyby, které nelze nalézt šablonu, ujistěte se, přidání aplikace do projektu Django `settings.py` v `INSTALLED_APPS` seznamu. Bez této položky Django Nepozná k prohledání aplikace `templates` složky.
+Odpověď: Pokud se zobrazí chyby, které nejde najít šablonu, ujistěte se, že přidání aplikace do projektu Django *settings.py* v `INSTALLED_APPS` seznamu. Bez této položky nebude vědět o Django podívejte se aplikace *šablony* složky.
 
-### <a name="question-why-is-template-namespacing-important"></a>Otázka: Proč se šablony namespacing důležité?
+### <a name="question-why-is-template-namespacing-important"></a>Otázka: Proč je šablona namespacing důležité?
 
-Odpověď: Když Django hledá šablonu podle `render` funkce, používá libovolnou souboru nejprve najde, která odpovídá relativní cestu. Pokud máte více aplikace Django ve stejném projektu, které používají stejné struktury složek pro šablony, je pravděpodobné, že jeden aplikace bude používat neúmyslně šablonu z jiné aplikace. Aby se zabránilo takové chyby, vždy vytvořit podsložku aplikace `templates` složky, která odpovídá názvu aplikace předejdete duplikace veškeré.
+Odpověď: Pokud Django hledá podle šablony `render` funkce, používá jakýkoli soubor najde první, která odpovídá relativní cestu. Pokud máte více aplikací Django ve stejném projektu, které používají stejné struktury složek pro šablony, je pravděpodobné, že jednu aplikaci neúmyslně použije šablonu z jiné aplikace. Aby se zabránilo podobné chyby, vždy vytvořte podsložku v rámci vaší aplikace *šablony* složku, která odpovídá názvu aplikace, aby se zabránilo duplicitě všechny.
 
 ## <a name="next-steps"></a>Další kroky
 
 > [!div class="nextstepaction"]
-> [Statické soubory, přidat stránky a používat šablonu dědičnosti](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
+> [Doručování statických souborů a přidejte stránky, použijte šablonu dědičnosti](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
 
-## <a name="go-deeper"></a>Přejděte hlubší
+## <a name="go-deeper"></a>Seznamte se blíž
 
-- [Zápis první aplikace Django, část 1 - zobrazení](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (docs.djangoproject.com)
-- Další možnosti Django šablony, například zahrnuje a dědičnosti, najdete v části [jazyk šablony Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
-- [Regulární výraz školení na inLearning](https://www.linkedin.com/learning/topics/regular-expressions) (LinkedIn)
-- Kurz zdrojového kódu na Githubu: [Microsoft nebo python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- [Zápis svoji první aplikaci Django, část 1 – zobrazení](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (docs.djangoproject.com)
+- Další možnosti Django šablony, jako například zahrnuje a dědičnosti, naleznete v tématu [jazyk šablony Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
+- [Regulární výraz školení inLearning](https://www.linkedin.com/learning/topics/regular-expressions) (LinkedIn)
+- Kurz zdrojového kódu na Githubu: [Microsoft/python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

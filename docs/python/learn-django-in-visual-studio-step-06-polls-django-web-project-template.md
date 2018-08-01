@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a0367f7dcf34e201a9087068dfb4ae30e514ba9e
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 7844b777b1a0baf841b1ae80ddcdd67363615c29
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251891"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388212"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6: Použijte šablony Polls – webový projekt Django
 
@@ -37,17 +37,17 @@ Projekt vytvořen pomocí této šablony je podobný získáte pomocí následuj
 
 ## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Krok 6 – 1: vytvoření projektu a inicializace databáze
 
-1. V sadě Visual Studio, přejděte na **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení "LearningDjango" dříve v tomto kurzu vytvořili a vyberte **přidat** > **nový projekt**. (Případně, pokud chcete použít nové řešení, vyberte **souboru** > **nový** > **projektu** místo.)
+1. V sadě Visual Studio, přejděte na **Průzkumníka řešení**, klikněte pravým tlačítkem myši **LearningDjango** řešení vytvořené dříve v tomto kurzu a vyberte **přidat**  >   **Nový projekt**. (Případně, pokud chcete použít nové řešení, vyberte **souboru** > **nový** > **projektu** místo.)
 
-1. V dialogovém okně Nový projekt, vyhledejte a vyberte šablonu "Dotazuje webového projektu Django", volání "DjangoPolls" projekt a vyberte **OK**.
+1. V dialogovém okně Nový projekt, vyhledejte a vyberte **Polls – webový projekt Django** šablony, volání "DjangoPolls" projekt a vyberte **OK**.
 
-1. Jako další šablony projektů v sadě Visual Studio "Dotazuje webového projektu Django" Šablona zahrnuje `requirements.txt` souboru výzev sady Visual Studio zobrazí dotaz, kde k instalaci těchto závislostí. Zvolte si možnost **nainstalovat do virtuálního prostředí**a **přidat virtuální prostředí** dialogové okno Vybrat **vytvořit** přijměte výchozí hodnoty.
+1. Jako další šablony projektů v sadě Visual Studio "Dotazuje webového projektu Django" Šablona zahrnuje *souboru requirements.txt* souboru výzev sady Visual Studio zobrazí dotaz, kde k instalaci těchto závislostí. Zvolte si možnost **nainstalovat do virtuálního prostředí**a **přidat virtuální prostředí** dialogové okno Vybrat **vytvořit** přijměte výchozí hodnoty.
 
-1. Po dokončení nastavení virtuální prostředí Python, postupujte podle pokynů zobrazených `readme.html` k inicializaci databáze a vytvořit Django superuživatel (to znamená, že správce). Postup se nejprve klikněte pravým tlačítkem myši na projekt "DjangoPolls" v **Průzkumníka řešení**, vyberte **Python** > **Django migrace** , pak příkaz znovu klikněte pravým tlačítkem na projekt, vyberte **Python** > **vytvořit Superživatele Django** příkaz a postupujte podle zobrazených výzev. (Pokud se pokusíte nejprve vytvořit jako superuživatele, zobrazí se vám chyba protože databáze nebyla inicializována.)
+1. Po dokončení nastavení virtuální prostředí Python, postupujte podle pokynů zobrazených *readme.html* k inicializaci databáze a vytvořit Django superuživatel (to znamená, že správce). Postup se nejprve klikněte pravým tlačítkem myši **DjangoPolls** projekt **Průzkumníka řešení**, vyberte **Python** > **Django migrace** příkaz a pak klikněte pravým tlačítkem na projekt znovu, vyberte **Python** > **vytvořit Superživatele Django** příkaz a postupujte podle zobrazených výzev. (Pokud se pokusíte nejprve vytvořit jako superuživatele, zobrazí se vám chyba protože databáze nebyla inicializována.)
 
-1. Nastavit jako výchozí pro řešení sady Visual Studio kliknutím pravým tlačítkem myši tohoto projektu v projektu "DjangoPolls" **Průzkumníka řešení** a vyberete **nastavit jako spouštěný projekt**. Projekt při spuštění, která je znázorněna v tučné písmo, se co je spuštěn při spuštění ladicího programu.
+1. Nastavte **DjangoPolls** projekt jako výchozí pro řešení sady Visual Studio kliknutím pravým tlačítkem myši v projektu **Průzkumníka řešení** a vyberete **nastavit jako spouštěný projekt**. Projekt při spuštění, která je znázorněna v tučné písmo, se co je spuštěn při spuštění ladicího programu.
 
-1. Vyberte **ladit > Spustit ladění** (F5) nebo použít **Webový Server** tlačítko na panelu nástrojů můžete spustit na serveru:
+1. Vyberte **ladění** > **spustit ladění** (**F5**) nebo použít **Webový Server** tlačítko na panelu nástrojů můžete spustit na serveru:
 
     ![Spustit webový server tlačítka panelu nástrojů v sadě Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -61,23 +61,23 @@ Projekt vytvořen pomocí této šablony je podobný získáte pomocí následuj
 
 1. Můžete nechat aplikaci spuštěnou pro následující části.
 
-    Pokud budete chtít aplikaci zastavit a [potvrzení změn do správy zdrojových kódů](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), nejdřív otevřete **změny** stránku **Průzkumník týmových projektů**, klikněte pravým tlačítkem na složku pro virtuální prostředí ( pravděpodobně `env`) a vyberte **ignorovat tyto místní položky**.
+    Pokud budete chtít aplikaci zastavit a [potvrzení změn do správy zdrojových kódů](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), nejdřív otevřete **změny** stránku **Průzkumník týmových projektů**, klikněte pravým tlačítkem na složku pro virtuální prostředí ( pravděpodobně **env**) a vyberte **ignorovat tyto místní položky**.
 
 ### <a name="examine-the-project-contents"></a>Zkontrolovat obsah projektu
 
 Poznamenali dříve. velká část Co je v projektu vytvořeného ze šablony "Dotazuje webového projektu Django" by měl být obeznámeni, pokud jste prozkoumali další šablony projektů v sadě Visual Studio. Další kroky v tomto článku shrnují významnější změny a dodatky, a to datové modely a další zobrazení.
 
-### <a name="question-what-does-the-django-migrate-command-do"></a>Otázka: co příkaz Django migrace?
+### <a name="question-what-does-the-django-migrate-command-do"></a>Otázka: Co příkaz Django migrace?
 
-Odpověď: **Django migrace** konkrétně spuštění příkazu `manage.py migrate` příkaz, který spustí všechny skripty ve `app/migrations` složku, která nejsou spuštěny dříve. V tomto případě se příkaz spustí `0001_initial.py` skript v této složce nastavit potřebné schématu databáze.
+Odpověď: **Django migrace** konkrétně spuštění příkazu `manage.py migrate` příkaz, který spustí všechny skripty ve *aplikace/migrations* složku, která nejsou spuštěny dříve. V tomto případě se příkaz spustí *0001_initial.py* skript v této složce nastavit potřebné schématu databáze.
 
-Samotný skript migrace vytvoří `manage.py makemigrations` příkaz, který vyhledá aplikace `models.py` souboru, porovná ho do aktuálního stavu databáze a poté vygeneruje nutných skriptů migraci schématu databáze tak, aby odpovídaly aktuálním modely. Tato funkce Django je velmi výkonné, jak je aktualizovat a upravovat vašich modelů v čase. Tím, že generování migrace, můžete zachovat modely a databázi synchronizované s minimálními obtížemi.
+Samotný skript migrace vytvoří `manage.py makemigrations` příkaz, který vyhledá aplikace *models.py* souboru, porovná ho do aktuálního stavu databáze a poté vygeneruje nutných skriptů pro migraci schématu databáze, aby Porovná aktuální modely. Tato funkce Django je velmi výkonné, jak je aktualizovat a upravovat vašich modelů v čase. Tím, že generování migrace, můžete zachovat modely a databázi synchronizované s minimálními obtížemi.
 
 Můžete pracovat se migrace v kroku 6-3 dále v tomto článku.
 
 ## <a name="step-6-2-understand-data-models"></a>Krok 6 – 2: pochopení datových modelů
 
-Modelů pro aplikaci s názvem dotazování a možnost výběru, jsou definovány v `app/models.py`. Každá je Python třídu, která je odvozena z `django.db.models.Model` a používá metody `models` třídy jako `CharField` a `IntegerField` k definování polí v modelu, který je mapovat na sloupce databáze.
+Modelů pro aplikaci s názvem dotazování a možnost výběru, jsou definovány v *app/models.py*. Každá je Python třídu, která je odvozena z `django.db.models.Model` a používá metody `models` třídy jako `CharField` a `IntegerField` k definování polí v modelu, který je mapovat na sloupce databáze.
 
 ```python
 from django.db import models
@@ -118,15 +118,15 @@ Možnost volby má vztah k dotazování prostřednictvím `poll` pole, obsahuje 
 
 Úplný seznam typů polí je `CharField` (omezeným text) `TextField` (neomezený počet text), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey`, a `ManyToMany`. Každé pole má některé atributy, jako je `max_length`. `blank=True` Atribut znamená, že pole je volitelné. `null=true` znamená, že hodnota je volitelná. K dispozici je také `choices` atribut, který omezuje hodnoty na hodnoty v poli data hodnotu/zobrazovat hodnota řazené kolekce členů. (Najdete v článku [Model referenční dokumentace polí](https://docs.djangoproject.com/en/2.0/ref/models/fields/) v dokumentaci k Django.)
 
-Můžete potvrdit přesně se ukládá v databázi prozkoumáním `db.sqlite3` soubor v projektu pomocí některého nástroje, například [SQLite prohlížeče](http://sqlitebrowser.org/). V databázi, uvidíte, že pole cizího klíče jako `poll` při výběru je model uložen jako `poll_id`; Django zpracovává mapování automaticky.
+Můžete potvrdit přesně se ukládá v databázi prozkoumáním *db.sqlite3* soubor v projektu pomocí některého nástroje, například [SQLite prohlížeče](http://sqlitebrowser.org/). V databázi, uvidíte, že pole cizího klíče jako `poll` při výběru je model uložen jako `poll_id`; Django zpracovává mapování automaticky.
 
 Obecně platí práci s databází v Django znamená, že funguje výhradně v rámci vašich modelů tak, aby Django můžete spravovat podkladové databázi vaším jménem.
 
 ### <a name="seed-the-database-from-samplesjson"></a>Přidání dat do databáze z samples.json
 
-Databáze obsahuje na začátku žádné hlasování. Můžete použít rozhraní pro správu na "/ admin" adresy URL přidáte dotazuje ručně, a můžete také navštívit stránku "/ osivo" na webu spuštěné přidat počáteční hodnoty databáze s hlasování definované v aplikace `samples.json` souboru.
+Databáze obsahuje na začátku žádné hlasování. Můžete použít rozhraní pro správu na "/ admin" adresy URL přidáte dotazuje ručně, a můžete také navštívit stránku "/ osivo" na webu spuštěné přidat počáteční hodnoty databáze s hlasování definované v aplikace *samples.json* souboru.
 
-V projektu Django `urls.py` má přidání vzor adresy URL, `url(r'^seed$', app.views.seed, name='seed'),`. `seed` Zobrazení v `app/views.py` načte `samples.json` souborů a vytváří objekty nezbytné modelu. Django automaticky vytvoří odpovídající záznamy v podkladové databázi.
+V projektu Django *urls.py* má přidání vzor adresy URL, `url(r'^seed$', app.views.seed, name='seed'),`. `seed` Zobrazení v *app/views.py* načte *samples.json* souborů a vytváří objekty nezbytné modelu. Django automaticky vytvoří odpovídající záznamy v podkladové databázi.
 
 Všimněte si, `@login_required` dekoratéru k označení úroveň autorizace pro zobrazení.
 
@@ -154,55 +154,55 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-A vidět její účinek, spusťte aplikaci, abyste mohli vidět, že žádné hlasování ještě neexistuje. Přejdete na adresu URL "/ osiva" a po návratu aplikace na domovské stránce byste měli vidět, že hlasování jsou k dispozici. Znovu, můžete bez obav prozkoumat nezpracovaná `db.sqlite3` soubor pomocí některého nástroje, například [SQLite prohlížeče](http://sqlitebrowser.org/).
+A vidět její účinek, spusťte aplikaci, abyste mohli vidět, že žádné hlasování ještě neexistuje. Přejdete na adresu URL "/ osiva" a po návratu aplikace na domovské stránce byste měli vidět, že hlasování jsou k dispozici. Znovu, můžete bez obav prozkoumat nezpracovaná *db.sqlite3* soubor pomocí některého nástroje, například [SQLite prohlížeče](http://sqlitebrowser.org/).
 
 ![Hlasovací aplikace webového projektu Django s dosazené databází](media/django/step06-app-with-seeded-database.png)
 
-### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Otázka: je možné inicializovat databázi pomocí nástroje pro správu Django?
+### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Otázka: Je možné inicializovat databázi pomocí nástroje pro správu Django?
 
 Odpověď: Ano, použít [správce django loaddata příkaz](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata) k provedení stejné úlohy jako osazení stránku v aplikaci. Při práci na úplné webové aplikace, můžete použít kombinaci těchto dvou metod: Inicializace databáze z příkazového řádku a pak převod stránky počáteční hodnoty tady do rozhraní API, které můžete odeslat další libovolný JSON spíše než předávající pevně zakódované souboru.
 
 ## <a name="step-6-3-use-migrations"></a>Krok 6 – 3: pomocí migrace
 
-Když jste spustili `manage.py makemigrations` příkazu (pomocí místní nabídky v sadě Visual Studio) po vytvoření projektu Django vytvořili soubor `app/migrations/0001_initial.py` souboru. Tento soubor obsahuje skript, který vytvoří počáteční databázových tabulek.
+Když jste spustili `manage.py makemigrations` příkazu (pomocí místní nabídky v sadě Visual Studio) po vytvoření projektu Django vytvořili soubor *app/migrations/0001_initial.py* souboru. Tento soubor obsahuje skript, který vytvoří počáteční databázových tabulek.
 
 Protože je nevyhnutelně provede změny vašich modelů v čase, Django umožňuje snadno udržovat základní schéma databáze v aktuálním stavu pomocí těchto modelech. Obecný postup je následující:
 
-1. Provádět změny modely ve vaší `models.py` souboru.
-1. Ve Visual Studiu klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **Python** > **Django migrace zkontrolujte** příkazu. Jak je popsáno výše, tento příkaz vygeneruje skriptů v `app/migrations` migrovat databázi v jejím aktuálním stavu do nového stavu.
+1. Provádět změny modely ve vaší *models.py* souboru.
+1. Ve Visual Studiu klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **Python** > **Django migrace zkontrolujte** příkazu. Jak je popsáno výše, tento příkaz vygeneruje skriptů v *aplikace/migrations* migrovat databázi v jejím aktuálním stavu do nového stavu.
 1. Použít skripty pro skutečné databáze, znovu klikněte pravým tlačítkem na projekt a vyberte **Python** > **Django migrace**.
 
 Django sleduje migrace, které se použily k jakékoli dané databázi tak, aby při spuštění příkazu migrate Django platí, ať migrace nejsou potřeba. Pokud jste vytvořili novou prázdnou databázi, například spuštění příkazu migrate ukončí na něm aktuální aktuální modelů s použitím každý skript migrace. Podobně pokud více změny modelu a generovat migrace na vývojovém počítači, lze následně použít kumulativní migrace do provozní databáze spuštěním příkazu migrate na provozním serveru. Django znovu použije pouze tyto skripty pro migraci, které byly vytvořeny od posledního migraci produkční databáze.
 
 Projevily změny modelu, vyzkoušejte následující kroky:
 
-1. Přidat pole author volitelný model dotazování v `app/models.py` tak, že přidáte následující řádek po `pub_date` pole, které chcete přidat volitelný `author` pole:
+1. Přidat pole author volitelný model dotazování v *app/models.py* tak, že přidáte následující řádek po `pub_date` pole, které chcete přidat volitelný `author` pole:
 
     ```python
     author = models.CharField(max_length=100, blank=True)
     ```
 
-1. Uložte soubor a pak klikněte pravým tlačítkem na projekt "DjangoPolls" v **Průzkumníka řešení** a vyberte **Python** > **Django migrace zkontrolujte** příkazu.
-1. Vyberte **projektu** > **zobrazit všechny soubory** zobrazit nově vygenerovaný skript v příkazu `migrations` složky, jejichž název začíná řetězcem `002_auto_`. Klikněte pravým tlačítkem na soubor a vyberte **zahrnout do projektu**. Pak můžete vybrat **projektu** > **zobrazit všechny soubory** znovu k obnovení původního zobrazení. (Viz druhou otázku níže podrobnosti o tomto kroku.)
+1. Uložte soubor a pak klikněte pravým tlačítkem na **DjangoPolls** projekt **Průzkumníku řešení** a vyberte **Python** > **migrace zkontrolujte Django**  příkazu.
+1. Vyberte **projektu** > **zobrazit všechny soubory** zobrazit nově vygenerovaný skript v příkazu **migrace** složky, jejichž název začíná řetězcem  **002_auto_**. Klikněte pravým tlačítkem na soubor a vyberte **zahrnout do projektu**. Pak můžete vybrat **projektu** > **zobrazit všechny soubory** znovu k obnovení původního zobrazení. (Viz druhou otázku níže podrobnosti o tomto kroku.)
 1. V případě potřeby otevřete tento soubor ke kontrole, jak Django skriptů změny z předchozí stav modelu nový stav.
 1. Znovu klikněte pravým tlačítkem na projekt aplikace Visual Studio a vyberte **Python** > **Django migrace** změny se projeví do databáze.
 1. V případě potřeby otevřete databázi v příslušné prohlížeč pro potvrzení změny.
 
 Celkově Django pro funkci migrace znamená, že potřebujete nikdy spravovat schématu databáze ručně. Stačí provést změny vašich modelů, generovat skripty pro migraci a aplikovat pomocí příkazu migrate.
 
-### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Otázka: co se stane, pokud zapomenu ke spuštění příkazu migrate po provedení změn na modely?
+### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Otázka: Co se stane, pokud zapomenu ke spuštění příkazu migrate po provedení změn na modely?
 
-Odpověď: Pokud modely neshodují, co je v databázi, Django se nezdaří za běhu pomocí příslušné výjimky. Například pokud zapomenete migrovat Změna modelu je znázorněno v předchozí části, se zobrazí chyba "žádný takový sloupec: app_poll.author":
+Odpověď: Pokud modely neshodují, co je v databázi, Django se nezdaří za běhu pomocí příslušné výjimky. Například pokud zapomenete migrovat Změna modelu je znázorněno v předchozí části, se zobrazí chyba **žádný takový sloupec: app_poll.author**:
 
 ![Chyba zobrazí, když nebyla migrována Změna modelu](media/django/step06-exception-when-forgetting-to-migrate.png).
 
 ### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Otázka: Proč se mi nezobrazuje zobrazit nově vygenerované skripty Průzkumník řešení po dokončení migrace zkontrolujte Django?
 
-Odpověď: I když nově vygenerované skripty existovat v `app/migrations` složky a použity při spuštění **Django migrace** příkazu se nezobrazí automaticky v **Průzkumníku řešení** protože není byli přidáni do projektu sady Visual Studio. Aby byly viditelné, vyberte nejdřív **projektu** > **zobrazit všechny soubory** příkaz nabídky nebo panelu nástrojů uvedených na následujícím obrázku. Tento příkaz způsobí, že **Průzkumníka řešení** chcete zobrazit všechny soubory ve složce projektu pomocí osnovy vychází tečkovaná ikony pro položky, které se nepřidaly do samotného projektu. Klikněte pravým tlačítkem na soubory, které chcete přidat a vyberte **zahrnout do projektu**, což je také zahrnuje ve správě zdrojového kódu pomocí svého příštího potvrzení.
+Odpověď: I když nově vygenerované skripty existovat v *aplikace/migrations* složky a použity při spuštění **Django migrace** příkazu se nezobrazí automaticky v **řešení Průzkumník** vzhledem k tomu, že není byli přidáni do projektu sady Visual Studio. Aby byly viditelné, vyberte nejdřív **projektu** > **zobrazit všechny soubory** příkaz nabídky nebo panelu nástrojů uvedených na následujícím obrázku. Tento příkaz způsobí, že **Průzkumníka řešení** chcete zobrazit všechny soubory ve složce projektu pomocí osnovy vychází tečkovaná ikony pro položky, které se nepřidaly do samotného projektu. Klikněte pravým tlačítkem na soubory, které chcete přidat a vyberte **zahrnout do projektu**, což je také zahrnuje ve správě zdrojového kódu pomocí svého příštího potvrzení.
 
 ![Zahrnout projekt v Průzkumníku řešení – příkaz](media/django/step06-include-migrations-script-in-project.png)
 
-### <a name="question-can-i-see-what-migrations-would-be-applied-before-running-the-migrate-command"></a>Otázka: lze zjistit, jaké migrace by bylo možné provést před spuštěním příkazu migrate?
+### <a name="question-can-i-see-what-migrations-would-be-applied-before-running-the-migrate-command"></a>Otázka: Lze zjistit, jaké migrace by bylo možné provést před spuštěním příkazu migrate?
 
 Odpověď: Ano, použít [správce django showmigrations příkaz](https://docs.djangoproject.com/en/2.0/ref/django-admin/#showmigrations).
 
@@ -210,7 +210,7 @@ Odpověď: Ano, použít [správce django showmigrations příkaz](https://docs.
 
 Většina vzhled zobrazení vygenerovaných sadou šablony "Dotazuje webového projektu Django", například zobrazení pro o a kontakt stránky, jsou velmi podobné zobrazením vytvořených šablonou "Webového projektu Django" pracoval s dříve v tomto kurzu. Co je nového ve hlasovací aplikace je, že jeho domovské stránky využívá modely, jako několik přidá stránky pro hlasování a zobrazení výsledků cyklického dotazování.
 
-Než začneme, první řádek v projektu Django `urlpatterns` obsahuje pole `urls.py` souboru je více než jen jednoduchý postup zobrazení aplikace. Místo toho stáhne v aplikaci prvku vlastní `urls.py` souboru:
+Než začneme, první řádek v projektu Django `urlpatterns` obsahuje pole *urls.py* souboru je více než jen jednoduchý postup zobrazení aplikace. Místo toho stáhne v aplikaci prvku vlastní *urls.py* souboru:
 
 ```python
 from django.conf.urls import url, include
@@ -222,7 +222,7 @@ urlpatterns = [
 ]
 ```
 
-`app/urls.py` Soubor pak obsahuje kód zajímavější směrování (vysvětlující přidanými komentáři):
+*App/urls.py* soubor pak obsahuje kód zajímavější směrování (vysvětlující přidanými komentáři):
 
 ```python
 urlpatterns = [
@@ -258,9 +258,9 @@ Pokud nejste obeznámeni s mnohem složitější regulární výrazy se tady pou
 
 V Django, syntaxe `?P<name>pattern` vytvoří skupinu `name`, který získá předány jako argumenty pro zobrazení v pořadí, jsou uvedeny. V kódu uvedeného výše `PollsDetailView` a `PollsResultsView` přijímat argument s názvem `pk` a `app.views.vote` přijímá argument s názvem `poll_id`.
 
-Uvidíte také, že většinu zobrazení nejsou pouze přímé odkazy na zobrazení funkcí v `app/views.py`. Místo toho většina odkazovat na třídy v daném stejného souboru, který je odvozen z `django.views.generic.ListView` nebo `django.views.generic.DetailView`. Poskytuje základní třídy `as_view` metody, které berou `template_name` argument vyberte šablonu. `ListView` Základní třídy, jak použít pro domovskou stránku, také očekává, že `queryset` vlastnost obsahující data a `context_object_name` vlastnost s názvem proměnné, podle kterého chcete odkazovat na data v šabloně, v tomto případě `latest_poll_list`.
+Uvidíte také, že většinu zobrazení nejsou pouze přímé odkazy na zobrazení funkcí v *app/views.py*. Místo toho většina odkazovat na třídy v daném stejného souboru, který je odvozen z `django.views.generic.ListView` nebo `django.views.generic.DetailView`. Poskytuje základní třídy `as_view` metody, které berou `template_name` argument vyberte šablonu. `ListView` Základní třídy, jak použít pro domovskou stránku, také očekává, že `queryset` vlastnost obsahující data a `context_object_name` vlastnost s názvem proměnné, podle kterého chcete odkazovat na data v šabloně, v tomto případě `latest_poll_list`.
 
-Nyní můžete prozkoumat `PollListView` pro domovskou stránku, která je definovaná následujícím způsobem v `app/views.py`:
+Nyní můžete prozkoumat `PollListView` pro domovskou stránku, která je definovaná následujícím způsobem v *app/views.py*:
 
 ```python
 class PollListView(ListView):
@@ -276,7 +276,7 @@ class PollListView(ListView):
 
 Vše, co je na jednom místě je identifikace model, který zobrazení spolupracuje s (dotazování) a přepíše `get_context_data` způsob, jak přidat `title` a `year` hodnoty do kontextu.
 
-Základní šablony (`templates/app/index.html`) je následující:
+Základní šablony (*templates/app/index.html*) je následující:
 
 ```html
 {% if latest_poll_list %}
@@ -296,9 +296,9 @@ Základní šablony (`templates/app/index.html`) je následující:
 {% endif %}
 ```
 
-Jednoduše řečeno, obdrží šablonu seznamu cyklického dotazování objektů v `latest_poll_list`a poté iteruje skrz tento seznam k vytvoření řádku tabulky, která obsahuje odkaz na každé dotazování pomocí dané dotazování `text` hodnotu. V `{% url %}` značky "app:detail" odkazuje na vzor adresy url v `app/urls.py` s názvem "podrobností" pomocí `poll.id` jako argument. Důsledkem tohoto je, že Django se vytvoří adresa URL pomocí odpovídající vzoru a, který používá pro propojení. Tento bit kontroly pravopisu budoucnost prostředky, které lze změnit tento vzor adresy URL v kdykoli a vygenerovaný odkazy automaticky aktualizovat tak, aby odpovídaly.
+Jednoduše řečeno, obdrží šablonu seznamu cyklického dotazování objektů v `latest_poll_list`a poté iteruje skrz tento seznam k vytvoření řádku tabulky, která obsahuje odkaz na každé dotazování pomocí dané dotazování `text` hodnotu. V `{% url %}` značky "app:detail" odkazuje na vzor adresy url v *app/urls.py* s názvem "podrobností" pomocí `poll.id` jako argument. Důsledkem tohoto je, že Django se vytvoří adresa URL pomocí odpovídající vzoru a, který používá pro propojení. Tento bit kontroly pravopisu budoucnost prostředky, které lze změnit tento vzor adresy URL v kdykoli a vygenerovaný odkazy automaticky aktualizovat tak, aby odpovídaly.
 
-`PollDetailView` a `PollResultsView` tříd v `app/views.py` (není tady zobrazené) vypadají stejně prakticky k `PollListView` s tím rozdílem, že jsou odvozeny z `DetailView` místo. Jejich odpovídajících šablon `app/templates/details.html` a `app/templates/results.html` umístěte do příslušných polí z modelů v rámci různých ovládacích prvků HTML. Jeden jedinečná v `details.html` je souhrnný možnosti pro dotazování HTML formuláře, která při odeslání nemá POST na adresu URL /vote. Jak je znázorněno výše, tento vzor adresy URL se směruje na `app.views.vote`, který je implementován takto (Poznámka: `poll_id` argument, který je znovu pojmenovanou skupinu v regulárním výrazu používané směrování pro toto zobrazení):
+`PollDetailView` a `PollResultsView` tříd v *app/views.py* (není tady zobrazené) vypadají stejně prakticky k `PollListView` s tím rozdílem, že jsou odvozeny z `DetailView` místo. Jejich odpovídajících šablon *app/templates/details.html* a *app/templates/results.html* umístěte do příslušných polí z modelů v rámci různých ovládacích prvků HTML. Jeden jedinečná v *details.html* je souhrnný možnosti pro dotazování HTML formuláře, která při odeslání nemá POST na adresu URL /vote. Jak je znázorněno výše, tento vzor adresy URL se směruje na `app.views.vote`, který je implementován takto (Poznámka: `poll_id` argument, který je znovu pojmenovanou skupinu v regulárním výrazu používané směrování pro toto zobrazení):
 
 ```python
 def vote(request, poll_id):
@@ -325,9 +325,9 @@ Zobrazení se tady nemusí vlastní odpovídající šablonu stejně jako jiné 
 
 Poslední šablony "Dotazuje webového projektu Django" jsou vlastní rozšíření pro výchozí rozhraní správce Django, jak je znázorněno výše v tomto článku v kroku 6-1. Výchozí rozhraní poskytuje pro uživatele a skupiny správy, ale nic víc. Šablona projektu hlasování přidá funkce, které vám pomohou se správou a hlasování.
 
-Za prvé, adresa URL vzory v projektu Django `urls.py` má `url(r'^admin/', include(admin.site.urls)),` zahrnuté ve výchozím nastavení; vzor "správce/doc" je také součástí označené jako komentář.
+Za prvé, adresa URL vzory v projektu Django *urls.py* má `url(r'^admin/', include(admin.site.urls)),` zahrnuté ve výchozím nastavení; vzor "správce/doc" je také zahrnuto ale označené jako komentář.
 
-Aplikace pak obsahuje soubor `admin.py`, která Django se spustí automaticky při návštěvě rozhraní pro správu díky zahrnutí `django.contrib.admin` v `INSTALLED_APPS` pole `settings.py`. Kód v tomto souboru, jak ji poskytuje šablony projektu, vypadá takto:
+Aplikace pak obsahuje soubor *admin.py*, která Django se spustí automaticky při návštěvě rozhraní pro správu díky zahrnutí `django.contrib.admin` v `INSTALLED_APPS` pole *settings.py*. Kód v tomto souboru, jak ji poskytuje šablony projektu, vypadá takto:
 
 ```python
 from django.contrib import admin
@@ -370,9 +370,9 @@ Spuštění webové aplikace ve svém vývojovém počítači je pouze jeden kro
 
 - Nasazení webové aplikace do produkčního prostředí serveru, jako je Azure App Service. Zobrazit [publikovat do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md), který obsahuje konkrétní změny nutný pro aplikace Django.
 
-- 404 – Stránka přizpůsobit tak, že vytvoříte šablonu s názvem `templates/404.html`. Pokud je přítomen, Django používá tuto šablonu místo jeho výchozí hodnotu. Další informace najdete v tématu [chyba zobrazení](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) v dokumentaci k Django.
+- 404 – Stránka přizpůsobit tak, že vytvoříte šablonu s názvem *templates/404.html*. Pokud je přítomen, Django používá tuto šablonu místo jeho výchozí hodnotu. Další informace najdete v tématu [chyba zobrazení](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) v dokumentaci k Django.
 
-- Zápis testů jednotek `tests.py`; šablony projektů Visual Studio poskytují výchozí bod pro tyto a další informace najdete na [vytváření vaší první aplikace Django, část 5 – testování](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) a [testování v Django](https://docs.djangoproject.com/en/2.0/topics/testing/) v dokumentaci k Django.
+- Zápis testů jednotek *tests.py*; šablony projektů Visual Studio poskytují výchozí bod pro tyto a další informace najdete na [vytváření vaší první aplikace Django, část 5 – testování](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) a [Testování v Django](https://docs.djangoproject.com/en/2.0/topics/testing/) v dokumentaci k Django.
 
 - Změňte aplikaci z SQLite na provozní úrovni dat úložiště, jako je PostgreSQL, MySQL a SQL Server (všechny z nich je možné hostovat na Azure). Jak je popsáno na [kdy použít SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite funguje s nízkou až středním provozem lokality s méně než 100 tisíc přístupů za den, ale nedoporučuje se používat pro větší svazky. Také je omezeno na jeden počítač, proto jej nelze použít ve všech scénářích více serverů, jako je Vyrovnávání zatížení a geografická replikace. Informace o podpoře společnosti Django pro ostatní databáze najdete v tématu [nastavení databáze](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Můžete také použít [sady Azure SDK for Python](azure-sdk-for-python.md) pro práci se službami Azure storage jako tabulek a objektů BLOB.
 

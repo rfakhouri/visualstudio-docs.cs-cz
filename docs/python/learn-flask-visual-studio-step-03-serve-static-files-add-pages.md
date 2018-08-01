@@ -1,6 +1,6 @@
 ---
 title: Kurz – další Flask v sadě Visual Studio, krok 3
-description: Návod, Flask základy v kontextu projektů sady Visual Studio, konkrétně který ukazuje, jak statické soubory, přidání stránky v aplikaci, a používat šablonu dědičnosti
+description: Názorný postup základy Flask v rámci projektů sady Visual Studio, konkrétně představením toho, jak doručování statických souborů, přidání stránky do aplikace a používat šablonu dědičnosti
 ms.date: 06/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,58 +11,58 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dbdcf2222aab4b70ba9817792b0d72d4dadf5802
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: fd919296bdae626b781748a14275947723db9f36
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089799"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388134"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsluhovat statické soubory, přidat stránky a použití šablony dědičnosti
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Doručování statických souborů, přidejte stránky a použijte šablonu dědičnosti
 
-**Předchozí krok: [vytvoření aplikace Flask s zobrazení a stránka šablony](learn-flask-visual-studio-step-02-create-app.md)**
+**Předchozí krok: [vytvoření aplikace Flask pomocí zobrazení a stránky šablony](learn-flask-visual-studio-step-02-create-app.md)**
 
-V předchozích krocích tohoto kurzu když jste se naučili vytvoření minimální aplikace Flask obsahující pouze jednu stránku HTML, úplný a samostatný. Moderní webové aplikace, ale se obvykle skládají mnoho stránek a ujistěte se, používání sdílených prostředků, jako jsou soubory šablon stylů CSS a JavaScript zajistit konzistentní stylů a chování.
+V předchozích krocích v tomto kurzu jste zjistili, jak k vytvoření minimální aplikace Flask pomocí jediné stránce samostatná HTML. Moderních webových aplikací, ale jsou obvykle skládá z mnoha stránkách a používání sdílených prostředků, jako jsou soubory CSS a JavaScript, k poskytování konzistentního stylů a chování.
 
-V tomto kroku, dozvíte, jak:
+V tomto kroku se dozvíte, jak:
 
 > [!div class="checklist"]
-> - Použití šablon položek v sadě Visual Studio k rychle nové soubory různých typů s pohodlný často používaný kód (krok 3 - 1)
-> - Poskytovat statické soubory z kódu (krok 3-2, volitelný)
-> - Přidání dalších stránek v aplikaci (krok 3-3)
-> - Použití dědičnosti šablony pro vytvoření záhlaví a nav panel, který se používá více stránek (krok 3-4)
+> - Pomocí šablony položky sady Visual Studio rychle nové soubory různé typy s pohodlný často používaný kód (krok 3 - 1)
+> - Doručování statických souborů z kódu (krok 3-2, nepovinné)
+> - Přidání další stránky do aplikace (krok 3 – 3)
+> - Vytvořit záhlaví a navigační panel, který se používá na stránkách (krok 3-4) pomocí šablony dědičnosti
 
-## <a name="step-3-1-become-familiar-with-item-templates"></a>Krok 3 – 1: seznámit se s šablony položek
+## <a name="step-3-1-become-familiar-with-item-templates"></a>Krok 3-1: Seznamte se s šablon položek
 
-Když budete vyvíjet aplikace Flask, přidáte obvykle mnoho souborů další Python, HTML, CSS a JavaScript. Pro každý typ souboru (stejně jako další soubory jako `web.config` potřebné pro nasazení), Visual Studio poskytuje pohodlné [šablon položek](python-item-templates.md) které vám pomůžou začít.
+Při vývoji aplikace Flask, obvykle přidáte mnoho souborů další Python, HTML, CSS a JavaScript. Pro každý typ souboru (také další soubory, jako jsou *web.config* , které můžete potřebovat k nasazení), Visual Studio poskytuje pohodlné [šablon položek](python-item-templates.md) vám pomůžou začít.
 
-Chcete-li zobrazit dostupné šablony, přejděte na **Průzkumníku řešení**, klikněte pravým tlačítkem na složku, ve kterém chcete vytvořit položku, vyberte **přidat** > **nová položka**:
+Pokud chcete zobrazit dostupné šablony, přejděte na **Průzkumníka řešení**, klikněte pravým tlačítkem na složku, ve kterém chcete vytvořit položku, vyberte **přidat** > **nová položka**:
 
-![Přidat dialogové okno Nový položku v sadě Visual Studio](media/flask/step03-add-new-item-dialog.png)
+![Přidání nové položky dialogového okna v sadě Visual Studio](media/flask/step03-add-new-item-dialog.png)
 
-Pro použití šablony, vyberte požadované šablony, zadejte název souboru a vyberte **OK**. Přidání položky tímto způsobem automaticky přidá soubor do projektu sady Visual Studio a označí změny zdrojového kódu.
+Použití šablony, vyberte požadovanou šablonu, zadejte název pro soubor a vyberte **OK**. Přidání položky tímto způsobem automaticky přidá soubor do projektu sady Visual Studio a označí změny pro správu zdrojového kódu.
 
-### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Otázka: jak Visual Studio vědět, které položky šablony na nabídku?
+### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Otázka: Jak Visual Studio vědět, které položky šablony, které nabízí?
 
-Odpověď: Souboru projektu Visual Studio (`.pyproj`) obsahuje identifikátor typ projektu, který označuje jako projekt Python. Visual Studio použije tento typ identifikátor zobrazit pouze položky šablony, která jsou vhodná pro typ projektu. Tímto způsobem, Visual Studio může poskytovat širokou škálu šablony položek, pro mnoho typů projektů bez zobrazení výzvy k přepínat mezi nimi pokaždé, když.
+Odpověď: Souboru projektu Visual Studio (*.pyproj*) obsahuje identifikátor typ projektu, který označuje jako projekt Python. Visual Studio používá tento identifikátor typu k zobrazení pouze tyto šablony položek, které jsou vhodné pro typ projektu. Tímto způsobem, Visual Studio může poskytovat bohatou sadu šablon položek, pro mnoho typů projektů bez zobrazení výzvy k řazení projde pokaždé, když.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>Krok 3 – 2: obsluhovat statické soubory z vaší aplikace.
+## <a name="step-3-2-serve-static-files-from-your-app"></a>Krok 3 – 2: doručování statických souborů z vaší aplikace
 
-Ve webové aplikaci vytvořené s nástroji Python (pomocí libovolnou architekturu) vaše soubory Python vždy spustit na serveru webového hostitele a se nikdy nepřenáší na počítači uživatele. Další soubory, ale například šablon stylů CSS a JavaScript, jsou používány výhradně prohlížeči, je jako server hostitele jednoduše dodá – je vždy, když jste požadovali. Tyto soubory jsou označovány jako "statická" soubory a Flask může poskytnout je automaticky bez nutnosti psaní jakéhokoli kódu. V rámci soubory HTML například lze odkazovat pouze na statické soubory pomocí relativní cesty v projektu. V první části v tomto kroku přidá soubor CSS do existující šablona stránky.
+Ve webové aplikaci vytvořené s využitím Pythonu (pomocí libovolné architektury) soubory Pythonu vždy spustit na serveru webového hostitele a se nikdy nepřenáší na počítači uživatele. Další soubory, ale například šablony stylů CSS a JavaScript používá jediná prohlížeče, tak server hostitele jednoduše poskytnout, je jako – je vždy, když jste žádali. Tyto soubory jsou označovány jako "statických" soubory a Flask může doručit automaticky aniž byste museli psát jakýkoli kód. V rámci soubory HTML například právě najdete statické soubory pomocí relativní cesty v projektu. První část v tomto kroku přidá soubor CSS do stávající šablony stránky.
 
-Když potřebujete poskytovat statický soubor z kódu, například prostřednictvím implementace koncový bod rozhraní API, Flask poskytuje pohodlnou metodu, která umožňuje odkazovat na soubory pomocí relativní cesty ve složce s názvem `static` (v kořenu projektu). Druhá část v tomto kroku ukazuje dané metody pomocí jednoduchého statických dat souboru.
+Když budete potřebovat k doručování statických souborů z kódu, jako například prostřednictvím implementace koncový bod rozhraní API Flask představuje pohodlný způsob, který umožňuje odkazovat na soubory pomocí relativní cesty ve složce s názvem *statické* (v kořenové složce projektu). Druhá část v tomto kroku ukazuje metody pomocí jednoduchého statický datový soubor.
 
-V obou případech můžete uspořádat soubory v `static` ale chcete.
+V obou případech můžete uspořádat soubory podle *statické* libovolně.
 
-### <a name="use-a-static-file-in-a-template"></a>Použití statických souborů v šabloně
+### <a name="use-a-static-file-in-a-template"></a>Použijte statického souboru do šablony
 
-1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na složku "HelloFlask" v projektu sady Visual Studio, vyberte **přidat** > **novou složku**a název složky `static`.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem myši **HelloFlask** složky v projektu sady Visual Studio, vyberte **přidat** > **novou složku**a pojmenujte složku `static`.
 
-1. Klikněte pravým tlačítkem myši `static` složky a vyberte **přidat** > **novou položku**. V dialogovém okně se zobrazí, vyberte šablonu, "Šablony stylů", zadejte název souboru `site.css`a vyberte **OK**. `site.css` Souboru se zobrazí v projektu a je otevřen v editoru. Struktury složky by měla vypadat podobně jako na následujícím obrázku:
+1. Klikněte pravým tlačítkem myši **statické** a pak zvolte položku **přidat** > **nová položka**. V dialogovém okně, které se zobrazí, vyberte **šablony stylů** šablony, názvem souboru `site.css`a vyberte **OK**. **Site.css** souboru se zobrazí v projektu a je otevřen v editoru. Vaše struktura složky by měl vypadat podobně jako na následujícím obrázku:
 
     ![Struktura statického souboru, jak je znázorněno v Průzkumníku řešení](media/flask/step03-static-file-structure.png)
 
-1. Nahraďte obsah `site.css` následujícím kódem a uložte soubor:
+1. Nahraďte obsah *site.css* následujícím kódem a soubor uložte:
 
     ```css
     .message {
@@ -71,7 +71,7 @@ V obou případech můžete uspořádat soubory v `static` ale chcete.
     }
     ```
 
-1. Nahraďte obsah aplikace `templates/index.html` soubor s následující kód, který nahrazuje `<strong>` element použitým v kroku 2 s `<span>` odkazující `message` styl třídy. Použití třídy styl tímto způsobem vám dává mnohem větší flexibilitu v styly prvku.
+1. Nahraďte obsah aplikace *templates/index.html* souboru následujícím kódem, který nahrazuje `<strong>` prvku použitého při kroku 2 `<span>` , která odkazuje na `message` styl třídy. Použití třídy stylu tímto způsobem nabízí mnohem větší flexibilitu v používání stylů pro element.
 
     ```html
     <html>
@@ -85,15 +85,15 @@ V obou případech můžete uspořádat soubory v `static` ale chcete.
     </html>
     ```
 
-1. Spusťte projekt pozorovat výsledky. Ukončete aplikaci po dokončení a potvrdit změny jako zdroj ovládacího prvku, pokud chcete (jak je popsáno v [krok 2](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)).
+1. Spusťte projekt tak, aby sledujte výsledky. Zastavit aplikaci, až budete hotovi a potvrďte změny do správy zdrojového kódu Pokud chcete (jak je vysvětleno v [kroku 2](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)).
 
-### <a name="serve-a-static-file-from-code"></a>Poskytovat statický soubor z kódu
+### <a name="serve-a-static-file-from-code"></a>Poskytování statických souborů z kódu
 
-Flask poskytuje funkci s názvem `serve_static_file` , kterou můžete volat z kódu odkazovat na všechny soubory v projektu `static` složky. Jednoduché koncový bod rozhraní API, která vrací soubor statických dat vytvoří následující proces).
+Flask poskytuje funkci s názvem `serve_static_file` , můžete volat z kódu k odkazování na jakýkoli soubor v rámci projektu *statické* složky. Následující postup vytvoří jednoduchý koncový bod rozhraní API, která vrací statický datový soubor).
 
-1. Pokud jste tak ještě neučinili, vytvořte `static` složky: v **Průzkumníku řešení**, klikněte pravým tlačítkem na složku "HelloFlask" v projektu sady Visual Studio, vyberte **přidat**  >  **Novou složku**a název složky `static`.
+1. Pokud jste tak ještě neučinili, vytvořte *statické* složky: v **Průzkumníka řešení**, klikněte pravým tlačítkem na **HelloFlask** složky v projektu sady Visual Studio, vyberte **Přidat** > **novou složku**a pojmenujte složku `static`.
 
-1. V `static` složku vytvořit statický soubor dat JSON s názvem `data.json` s tímto obsahem (které jsou smysl ukázková data):
+1. V *statické* složku, vytvořte statickou datový soubor JSON s názvem *data.json* s použitím následujícího obsahu (které jsou bezvýznamné ukázkových dat):
 
     ```json
     {
@@ -103,7 +103,7 @@ Flask poskytuje funkci s názvem `serve_static_file` , kterou můžete volat z k
     }
     ```
 
-1. V `views.py`, přidat funkci s trasy nebo rozhraní api nebo data, která vrátí statický datový soubor pomocí `send_static_file` metoda:
+1. V *views.py*, přidat funkci s/api/data trasy, která vrací statický datový soubor pomocí `send_static_file` metody:
 
     ```python
     @app.route('/api/data')
@@ -111,32 +111,32 @@ Flask poskytuje funkci s názvem `serve_static_file` , kterou můžete volat z k
       return app.send_static_file('data.json')
     ```
 
-1. Spusťte aplikaci a přejděte do koncového data bodu/api/zobrazíte, že se vrátí statických souborů. Zastavte aplikaci, když jste hotovi.
+1. Spusťte aplikaci a přejděte do/api/koncový bod datové zobrazíte, že se vrátí ke statickému souboru. Jakmile budete hotovi, zastavte aplikaci.
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Otázka: existují jakékoli konvence pro uspořádání statické soubory?
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Dotaz: Existují jakékoli konvence pro uspořádání statické soubory?
 
-Odpověď: Můžete přidat další soubory HTML, CSS a JavaScript v vaší `static` složky ale chcete. Typickým způsobem uspořádat statické soubory, je vytvořit podsložky s názvem `fonts`, `scripts`, a `content` (pro šablony stylů a všechny další soubory).
+Odpověď: Můžete přidat další soubory šablon stylů CSS, JavaScript a HTML v vaše *statické* složky libovolně. Typické způsob uspořádání statických souborů je vytvořit podsložky s názvem *písma*, *skripty*, a *obsah* (pro šablony stylů a všechny další soubory).
 
-### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Otázka: jak I zpracování adresy URL proměnné a parametry dotazu v rozhraní API?
+### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Otázka: Jak mám postupovat při URL proměnné a parametry dotazu v rozhraní API?
 
-Odpověď: Naleznete v odpovědi v kroku 1 – 4 [Otázka: jak Flask pracovat proměnné tras adresy URL a parametrů dotazu?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Odpověď: Viz odpovědí v kroku 1 – 4 pro [Otázka: jak Flask pracovat s proměnnou cesty adresy URL a parametrů dotazu?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
 
-## <a name="step-3-3-add-a-page-to-the-app"></a>Krok 3 – 3: Přidat stránku do aplikace
+## <a name="step-3-3-add-a-page-to-the-app"></a>Krok 3-3: Přidání stránky aplikace
 
-Přidání další stránky do aplikace znamená následující:
+Přidání další stránky do aplikace znamená, že následující:
 
-- Přidejte funkci Python, která definuje zobrazení.
-- Přidáte šablonu pro značek.
-- Přidat potřebné směrování na projekt Django `urls.py` souboru.
+- Přidání funkce Pythonu, který definuje zobrazení.
+- Přidejte šablonu pro na stránce značek.
+- Přidat nezbytné směrování do projektu Flask *urls.py* souboru.
 
-Následující postup přidání stránky "O" na "HelloFlask" projekt a odkazy na této stránce z domovské stránky:
+Následující postup přidání stránky "O" do "HelloFlask" projekt a odkazy na tuto stránku z domovské stránky:
 
-1. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši `templates` složky, vyberte **přidat** > **nová položka**, vyberte šablonu, položka "HTML stránka", zadejte název souboru `about.html`a vyberte **OK**.
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **šablony** složky, vyberte **přidat** > **nová položka**, vyberte **Stránku HTML** šablony položky, zadejte název souboru `about.html`a vyberte **OK**.
 
     > [!Tip]
-    > Pokud **nová položka** příkaz se nezobrazí na **přidat** nabídky, ujistěte se, že jste zastavená aplikace tak, aby Visual Studio ukončí režim ladění.
+    > Pokud **nová položka** nezobrazí příkaz na **přidat** nabídky, ujistěte se, že jste zastavení aplikace tak, aby Visual Studio se ukončí režim ladění.
 
-1. Nahraďte obsah `about.html` s následující kód (nahradíte explicitní odkaz na domovskou stránku s jednoduché navigačního panelu v kroku 3-4):
+1. Nahraďte obsah *about.html* následujícím kódem (nahradíte explicitní odkaz na domovskou stránku jednoduché navigační panel v kroku 3-4):
 
     ```html
     <html>
@@ -151,7 +151,7 @@ Následující postup přidání stránky "O" na "HelloFlask" projekt a odkazy n
     </html>
     ```
 
-1. Otevřete aplikaci `views.py` souboru a přidejte funkce s názvem `about` šablony, který používá:
+1. Otevřete aplikaci prvku *views.py* a přidejte funkce s názvem `about` , který používá šablonu:
 
     ```python
     @app.route('/about')
@@ -162,37 +162,37 @@ Následující postup přidání stránky "O" na "HelloFlask" projekt a odkazy n
             content = "Example app page for Flask.")
     ```
 
-1. Otevřete `templates/index.html` souboru a přidejte následující řádek hned v rámci `<body>` elementu, který chcete propojit stránku o (znovu, nahradíte tento odkaz s navigačního panelu v kroku 3-4):
+1. Otevřít *templates/index.html* soubor a přidejte následující řádek bezprostředně v rámci `<body>` elementu na stránku o (znovu, nahradíte tento odkaz navigačního panelu v kroku 3-4):
 
     ```html
     <div><a href="about">About</a></div>
     ```
 
-1. Uložte všechny soubory pomocí **soubor** > **Uložit vše** příkazu nabídky, nebo jenom stiskněte nebo Ctrl + Shift + S. (Technicky, tento krok není potřeba, protože spuštění projektu v sadě Visual Studio automaticky uloží soubory. Nicméně je dobré příkazu, který bude vědět o!)
+1. Uložte všechny soubory pomocí **souboru** > **Uložit vše** příkaz nabídky nebo stejně press **Ctrl**+**Shift** + **S**. (Technicky, tento krok není potřeba, protože spuštění projektu v sadě Visual Studio automaticky ukládá soubory. Nicméně je dobré příkaz vědět o!)
 
-1. Spusťte projekt chcete pozorovat výsledky a zkontrolovat, navigace mezi stránkami. Zastavte aplikaci po dokončení.
+1. Spusťte projekt sledujte výsledky a zkontrolovat navigace mezi stránkami. Zastavte aplikaci, až budete hotovi.
 
-### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Otázka: Název stránky funkce vás Flask?
+### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Otázka: Název funkce stránky důležité Flask?
 
-Odpověď: Ne, protože je `@app.route` dekoratéra, který určuje adresy URL, pro které Flask volá funkci ke generování odpovědi. Vývojáři obvykle odpovídal názvu funkce na trasu, ale tyto odpovídající není povinné.
+Odpověď: Ne, protože je `@app.route` dekoratér, který určuje adresy URL, pro které Flask volá funkci pro generování odpovědi. Vývojáři obvykle shodovat s názvem funkce trasy, ale takové párování není povinné.
 
-## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Krok 3 – 4: použití dědičnosti šablony pro vytvoření záhlaví a nav panelu
+## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Krok 3-4: použití dědičnosti šablony k vytvoření záhlaví a navigační panel
 
-Místo nutnosti explicitní navigační odkazy na každé stránce, použijte moderní webové aplikace obvykle hlavičku značky a navigační panel, který poskytuje nejdůležitější odkazů na stránky, místní nabídky a tak dále. Pokud chcete mít jistotu, že hlavičku a navigačního panelu jsou stejné na všech stránkách, ale nechcete zopakujte stejný kód v každé šabloně stránky. Místo toho můžete definovat společné části všech stránek na jednom místě.
+Namísto toho, aby explicitní navigačních odkazů na každé stránce, moderních webových aplikací obvykle používají značky záhlaví a navigační panel, který poskytuje nejdůležitější odkazů na stránky, kontextových nabídkách a tak dále. Pokud chcete mít jistotu, že záhlaví a navigačního panelu jsou stejné ve všech stránek, ale nechcete opakujte stejný kód v každé šabloně stránky. Chcete místo toho definujte společné části všech stránek na jednom místě.
 
-Ukázka systému na flask (Jinja ve výchozím nastavení) poskytuje dva prostředky pro opětovné použití konkrétní prvky napříč více šablon: zahrnuje a dědičnost.
+Flask na šablonování systému (šablonovacím systémem ve výchozím nastavení) poskytuje dva prostředky pro opětovné použití konkrétní prvky napříč více šablon: zahrnuje a dědičnosti.
 
-- *Zahrnuje* se další stránka šablony, které můžete vložit na určitém místě v šabloně odkazující pomocí syntaxe `{% include <template_path> %}`. Proměnnou můžete také použít, pokud chcete změnit cestu dynamicky v kódu. Zahrnuje jsou obvykle používány v těle stránky načítat v šabloně sdílené na určité místo na stránce.
+- *Zahrnuje* se další stránka šablony, které můžete vložit na určitém místě v šabloně odkazující pomocí syntaxe `{% include <template_path> %}`. Můžete také použít proměnné Pokud chcete změnit cestu dynamicky v kódu. Zahrnuje se obvykle používají v těle stránky, aby se načetla sdílené šablony v konkrétním umístění na stránce.
 
-- *Dědičnost* používá `{% extends <template_path> %}` na začátku stránky šablonu, která má zadejte sdílený základní šablonu, která odkazující šablony pak staví na. Dědičnost se běžně používá k definování sdílené rozložení, navigačního panelu a jiných struktur pro stránky aplikace tak, aby odkazující šablony potřebovat pouze přidávat nebo upravovat určité oblasti základní šablony názvem *bloky*.
+- *Dědičnost* používá `{% extends <template_path> %}` na začátku stránky šablonu k zadání sdíleného základní šablonu, která pak staví šablony odkazující na. Dědičnost se běžně používá k definování sdíleného rozložení, navigačního panelu a jiných struktur stránek vaší aplikace, tak, aby odkazující šablony potřebujete pouze přidat nebo změnit určité oblasti základní šablonu s názvem *bloky*.
 
-V obou případech `<template_path>` je relativní vzhledem ke aplikace `templates` složky (`../` nebo `./` povolené jsou i).
+V obou případech `<template_path>` je relativní vzhledem k aplikaci prvku *šablony* složky (`../` nebo `./` jsou také povoleny).
 
-Určí šablonu základní *bloky* pomocí `{% block <block_name> %}` a `{% endblock %}` značky. Pokud šablonu odkazující se stejným názvem bloku použije značky, přednost před jeho obsah bloku, základní šablony.
+Základní šablona kolem *bloky* pomocí `{% block <block_name> %}` a `{% endblock %}` značky. Pokud odkazující šablona pak pomocí značky se stejným názvem bloku, přednost před jeho blokovat obsah, který základní šablony.
 
 Následující kroky ukazují dědičnosti:
 
-1. V dané aplikaci `templates` složky, vytvořte nový soubor HTML (pomocí **přidat** > **nová položka** kontextové nabídky nebo **přidat**  >   **Stránky HTML**) názvem `layout.html`a nahraďte jeho obsah kód níže. Můžete zjistit, že tato šablona obsahuje blok s názvem "obsah", je všechno, co odkazující stránky potřeba nahradit:
+1. V aplikaci prvku *šablony* složku, vytvořte nový soubor HTML (pomocí **přidat** > **nová položka** místní nabídky nebo **přidat**  >  **Stránku HTML**) volá *layout.html*a jeho obsah nahraďte následující značky. Uvidíte, že tato šablona obsahuje blok s názvem "obsah", který je všechno, odkazující stránky potřeba nahradit:
 
     ```html
     <!DOCTYPE html>
@@ -222,7 +222,7 @@ Následující kroky ukazují dědičnosti:
     </html>
     ```
 
-1. Přidejte následující styly do aplikace `static/site.css` souboru (Tento postup není pokusu ukázka tady přizpůsobivý návrh; tyto styly jsou jednoduše generovat výsledek zajímavé):
+1. Přidat do aplikace následující styly *static/site.css* souboru (Tento návod nepokouší k předvedení přizpůsobivý návrh zde; tyto styly jsou jednoduše generovat zajímavé výsledky):
 
     ```css
     .navbar {
@@ -254,7 +254,7 @@ Následující kroky ukazují dědičnosti:
     }
     ```
 
-1. Upravit `templates/index.html` odkazovat na základní šablony a přepsat blok s obsahem. Můžete zjistit, že pomocí dědičnosti této šablony se změní na jednoduchý:
+1. Upravit *templates/index.html* do základní šablony a přepsat blok s obsahem. Uvidíte, že s použitím dědičnosti, tato šablona stane jednoduché:
 
     ```html
     {% extends "layout.html" %}
@@ -263,7 +263,7 @@ Následující kroky ukazují dědičnosti:
     {% endblock %}
     ```
 
-1. Upravit `templates/about.html` také odkazovat na základní šablony a přepsat blok s obsahem:
+1. Upravit *templates/about.html* také odkazovat na základní šablonu a přepsat blok s obsahem:
 
     ```html
     {% extends "layout.html" %}
@@ -272,20 +272,20 @@ Následující kroky ukazují dědičnosti:
     {% endblock %}
     ```
 
-1. Spusťte server, abyste mohli pozorovat výsledky. Server po dokončení zavřete.
+1. Spuštění serveru a sledujte výsledky. Zavřete serverem, až budete hotovi.
 
     ![Spuštěné aplikaci zobrazující navigačního panelu](media/flask/step03-nav-bar.png)
 
-1. Protože jste provedli významné změny aplikace, znovu je vhodná doba na [uložte provedené změny do správy zdrojového kódu](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control).
+1. Vzhledem k tomu, že jste provedli významné změny aplikace, znovu je vhodná doba [potvrďte změny do správy zdrojových kódů](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control).
 
 ## <a name="next-steps"></a>Další kroky
 
 > [!div class="nextstepaction"]
-> [Použít úplnou šablonu webový projekt Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)
+> [Použití úplné šablony webového projektu Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
-## <a name="go-deeper"></a>Přejděte hlubší
+## <a name="go-deeper"></a>Seznamte se blíž
 
-- [Nasazení webové aplikace do Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- Další možnosti Jinja šablon, jako je například tok řízení, najdete v části [dokumentace návrháře šablony Jinja](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
-- Podrobnosti o použití `url_for`, najdete v části [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) v dokumentaci k objektu aplikace Flask (flask.pocoo.org)
-- Kurz zdrojového kódu na Githubu: [Microsoft nebo python – ukázka vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- [Nasazení webové aplikace do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- Další možnosti šablon šablonovacím systémem, jako je například tok řízení, najdete v části [šablonovacím systémem šablona návrháře dokumentaci](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
+- Podrobnosti o použití `url_for`, naleznete v tématu [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) v dokumentaci k objektu aplikace Flask (flask.pocoo.org)
+- Kurz zdrojového kódu na Githubu: [Microsoft/python – ukázka vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

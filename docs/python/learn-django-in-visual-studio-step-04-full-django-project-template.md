@@ -1,6 +1,6 @@
 ---
 title: Kurz – další Django v sadě Visual Studio, krok 4
-description: Návod základní informace o rozhraní Django v kontextu projektů sady Visual Studio, konkrétně funkcí šablonou webový projekt Django.
+description: Názorný postup základy Django v rámci projektů sady Visual Studio, konkrétně funkcím, které poskytuje šablony webového projektu Django.
 ms.date: 04/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,83 +11,83 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: f7b62914a1a0d895aaf3e1322c4ef7a68a555e0c
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090046"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388173"
 ---
-# <a name="step-4-use-the-full-django-web-project-template"></a>Krok 4: Použití kompletní šablonou webový projekt Django
+# <a name="step-4-use-the-full-django-web-project-template"></a>Krok 4: Použití úplné šablony webového projektu Django
 
-**Předchozí krok: [obsluhovat statické soubory, přidat stránky a použití šablony dědičnosti](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
+**Předchozí krok: [doručování statických souborů a přidejte stránky, použijte šablonu dědičnosti](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
-Teď, když jste prozkoumali základní informace o rozhraní Django podle budovy aplikace na šabloně "Prázdný webový projekt Django" v sadě Visual Studio, můžete snadno pochopit úplnější aplikaci, která je produkovaný šabloně "Webový projekt Django".
+Teď, když jste prozkoumali základní informace o Django vytvořením aplikace na šablony "Prázdné Django webového projektu" v sadě Visual Studio, je možné snadno zjistit plnější aplikace, který je vytvořen pomocí šablony "Webového projektu Django".
 
 V tomto kroku můžete nyní:
 
 > [!div class="checklist"]
-> - Vytvoření úplnější webové aplikace Django pomocí šablony "Webový projekt Django" a zkontrolujte strukturu projektu (krok 4 - 1)
-> - Rady pro pochopení zobrazení a šablony stránek vytvořených šablonou projektu, které se skládají z tři stránky, které dědí ze šablony základní stránky a který využívá statické knihovny JavaScript jako jQuery a Bootstrap (krok 4-2)
-> - Pochopení směrování adres URL poskytuje šablony (krok 4-3)
+> - Vytvoření pomocí šablony "Webového projektu Django" plnější webové aplikace Django a zkontrolujte strukturu projektu (krok 4 - 1)
+> - Rady pro pochopení zobrazení a stránky šablony vytvořené šablony projektu, které tvoří tři stránky, které dědí ze základní stránky šablony a, který využívá statické knihovny JavaScriptu, jako je jQuery a Bootstrap (krok 4-2)
+> - Vysvětlení směrování adres URL poskytovanou šablonou (krok 4-3)
 
-Šablona taky poskytuje základní ověřování, které je popsané v kroku 5.
+Šablona také nabízí základní ověřování, který je popsaný v kroku 5.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>Krok 4-1: Vytvořte projekt ze šablony
+## <a name="step-4-1-create-a-project-from-the-template"></a>Krok 4-1: vytvoření projektu ze šablony
 
-1. V sadě Visual Studio, přejděte na **Průzkumníku řešení**, klikněte pravým tlačítkem na řešení "LearningDjango" v tomto kurzu vytvořili a vyberte **přidat** > **nový projekt**. (Případně, pokud chcete používat nové řešení, vyberte **soubor** > **nový** > **projektu** místo.)
+1. V sadě Visual Studio, přejděte na **Průzkumníka řešení**, klikněte pravým tlačítkem myši **LearningDjango** řešení vytvořené dříve v tomto kurzu a vyberte **přidat**  >   **Nový projekt**. (Případně, pokud chcete použít nové řešení, vyberte **souboru** > **nový** > **projektu** místo.)
 
-1. V dialogovém okně Nový projekt, vyhledejte a vyberte šablonu, "Webový projekt Django", volání "DjangoWeb" projekt a vyberte **OK**.
+1. V dialogovém okně Nový projekt, vyhledejte a vyberte **webového projektu Django** šablony, volání "DjangoWeb" projekt a vyberte **OK**.
 
-1. Protože znovu obsahuje šablony `requirements.txt` souboru, Visual Studio zobrazí dotaz, kam se má nainstalovat tyto závislosti. Zvolte možnost **nainstalovat do virtuálního prostředí**a v **Přidání virtuálního prostředí** dialogovém okně vyberte **vytvořit** přijměte výchozí hodnoty.
+1. Vzhledem k tomu šablonu znovu zahrnuje *souboru requirements.txt* souboru, Visual Studio vyzve vhodného místa pro instalaci těchto závislostí. Zvolte si možnost **nainstalovat do virtuálního prostředí**a **přidat virtuální prostředí** dialogové okno Vybrat **vytvořit** přijměte výchozí hodnoty.
 
-1. Po dokončení nastavení virtuálního prostředí sady Visual Studio, postupujte podle pokynů v zobrazené `readme.html` vytvoření superuživatele uživatele Django (který je správcem). Právě klikněte pravým tlačítkem na projekt Visual Studio a vyberte **Python** > **vytvoření superuživatele Django** příkaz a potom postupujte podle pokynů. Ujistěte se, že záznam uživatelského jména a hesla při používání při výkonu funkce ověřování aplikace.
+1. Po dokončení nastavení virtuálního prostředí sady Visual Studio, postupujte podle pokynů zobrazených *readme.html* vytvořit Django superuživatel (to znamená, že správce). Stačí pravým tlačítkem myši na projekt aplikace Visual Studio a vybrat **Python** > **vytvořit Superživatele Django** příkaz a pak postupujte podle zobrazených výzev. Ujistěte se, že záznam uživatelského jména a hesla použijte při výkonu funkce ověřování aplikace.
 
-1. Nastavte projekt "DjangoWeb", který má být výchozí nastavení pro řešení sady Visual Studio tak, že kliknete pravým tlačítkem na takový projekt v **Průzkumníku řešení** a výběrem **nastavit jako spouštěný projekt**. Spouštěný projekt, který se zobrazí v tučné písmo, je co běží při spuštění ladicího programu.
+1. Nastavte **DjangoWeb** projekt jako výchozí pro řešení sady Visual Studio kliknutím pravým tlačítkem myši v projektu **Průzkumníka řešení** a vyberete **nastavit jako spouštěný projekt** . Projekt při spuštění, která je znázorněna v tučné písmo, se co je spuštěn při spuštění ladicího programu.
 
     ![Průzkumník řešení zobrazující DjangoWeb projekt jako spouštěný projekt](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Vyberte **ladění** > **spustit ladění** (F5) nebo pomocí **Webový Server** tlačítka na panelu nástrojů ke spuštění serveru:
+1. Vyberte **ladění** > **spustit ladění** (**F5**) nebo použít **Webový Server** tlačítko na panelu nástrojů můžete spustit na serveru:
 
     ![Spustit webový server tlačítka panelu nástrojů v sadě Visual Studio](media/django/run-web-server-toolbar-button.png)
 
-1. Aplikace vytvořené pomocí šablony má tři stránky, domů, o a kontaktovat, což je přecházet mezi pomocí navigačního panelu. Trvat minutu nebo dvě prozkoumat různých částí aplikace. K ověřování pro aplikaci prostřednictvím **přihlásit** příkazu, použijte přihlašovací údaje superuživatel vytvořili dříve.
+1. Aplikace vytvořené pomocí šablony má tři stránky, Home, o programu a kontaktovat, který můžete procházet pomocí navigačního panelu. Trvat minutu nebo dvě prozkoumat různé části aplikace. K ověření aplikace prostřednictvím **přihlášení** příkazu, použijte přihlašovací údaje superuživatele vytvořili dříve.
 
-    ![Zobrazit v prohlížeči úplné aplikace webový projekt Django](media/django/step04-full-app-desktop-view.png)
+    ![Zobrazit v prohlížeči úplné aplikace webového projektu Django](media/django/step04-full-app-desktop-view.png)
 
-1. Aplikace vytvořené pomocí šablony "Webový projekt Django" využívá Bootstrap přizpůsobivé rozložení, která bude vyhovovat typy mobilních zařízení. Pokud chcete zobrazit tento odezvy velikosti prohlížeče úzké zobrazení tak, aby obsah vykreslí svisle a navigačního panelu se zobrazí ikona nabídky:
+1. Aplikace vytvořené pomocí šablony "Webového projektu Django" využívá Bootstrap responzivním rozložením, které se přizpůsobuje mobilních zařízení. Pokud chcete zobrazit tento rychlost odezvy, změna velikosti prohlížeči v úzkém zobrazení tak, aby obsah vykreslí svisle a na navigačním panelu se změní ikona nabídky:
 
-    ![Zobrazení (úzké) mobilní aplikace pro webový projekt Django](media/django/step04-full-app-mobile-view.png)
+    ![Zobrazení Mobile (úzké) s aplikací webového projektu Django](media/django/step04-full-app-mobile-view.png)
 
-1. Můžete nechat aplikaci spuštěnou pro oddíly, které následují.
+1. Můžete nechat aplikaci spuštěnou pro následující části.
 
-    Pokud budete chtít aplikaci zastavit a [potvrzení změn do správy zdrojového kódu](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), poprvé otevřete **změny** stránky v **Team Explorer**, klikněte pravým tlačítkem na složku (virtuálního prostředí pravděpodobně `env`) a vyberte **ignorovat tyto místní položky**.
+    Pokud budete chtít aplikaci zastavit a [potvrzení změn do správy zdrojových kódů](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), nejdřív otevřete **změny** stránku **Průzkumník týmových projektů**, klikněte pravým tlačítkem na složku pro virtuální prostředí ( pravděpodobně **env**) a vyberte **ignorovat tyto místní položky**.
 
-### <a name="examine-what-the-template-creates"></a>Zkontrolujte, vytvoří šablona
+### <a name="examine-what-the-template-creates"></a>Zkontrolujte, co šablona vytvoří
 
-Na úrovni nejširší vytvoří šablona "Webový projekt Django" následující strukturu:
+Na úrovni nejširší "Webového projektu Django" šablona vytvoří následující strukturu:
 
-- Soubory v kořenu projektu:
-  - `manage.py`, nástroj pro správu Django.
-  - `db.sqlite3`, výchozí databáze SQLite.
-  - `requirements.txt` obsahující závislost na Django 1.x.
-  - `readme.html`, soubor, který se zobrazí v sadě Visual Studio po vytvoření projektu. Jak je uvedeno v předchozí části, postupujte podle pokynů tady k vytvoření účtu superuživatele (správce) pro aplikaci.
-- `app` Složka obsahuje všechny soubory aplikace, včetně zobrazení, modely, testů, formulářů, šablony a statické soubory (viz krok 4-2). Obvykle přejmenujete tuto složku a použít více rozlišovací název aplikace.
-- `DjangoWeb` (Projekt Django) složka obsahuje typické soubory projekt Django: `__init__.py`, `settings.py`, `urls.py`, a `wsgi.py`. Pomocí šablony projektu, `settings.py` už je nakonfigurovaný pro aplikaci a databázový soubor, a `urls.py` už nakonfigurované trasy pro všechny aplikace stránky, včetně přihlašovací formulář.
+- Soubory v kořenové složce projektu:
+  - *souboru Manage.PY*, nástroj pro správu Django.
+  - *DB.sqlite3*, vytvoří i výchozí databáze SQLite.
+  - *soubor Requirements.txt* obsahuje závislost na Django 1.x.
+  - *Readme.HTML*, soubor, který se zobrazí v sadě Visual Studio po vytvoření projektu. Jak je uvedeno v předchozí části, postupujte podle zde uvedených pokynů k vytvoření účtu superuživatele (správce) pro aplikaci.
+- *Aplikace* složka obsahuje všechny soubory aplikace, včetně zobrazení, modely, testy, formulářů, šablon a statické soubory (viz krok 4-2). Obvykle přejmenovat tuto složku používat více odlišný název aplikace.
+- *DjangoWeb* složky (projektu Django) obsahuje typické soubory projektu Django:  *\_ \_init\_\_.py*,  *Settings.PY*, *urls.py*, a *wsgi.py*. Pomocí šablony projektu *settings.py* už je nakonfigurovaný pro aplikace a soubor databáze a *urls.py* už má nakonfigurovanou trasy pro všechny aplikace stránky, včetně přihlašovací formulář.
 
-### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Otázka: Je možné sdílet mezi projektů sady Visual Studio virtuálního prostředí?
+### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Otázka: Je možné sdílet mezi projekty aplikace Visual Studio do virtuálního prostředí?
 
-Odpověď: Ano, ale učinit povědomí o různé projekty, které mohou používat různé balíčky v čase, a proto sdílené virtuální prostředí musí obsahovat všechny balíčky pro všechny projekty, které ho používají.
+Odpověď: Ano, ale Uděláte to tak povědomí, že různé projekty, které mohou použít jiné balíčky v čase, a proto sdílené virtuální prostředí musí obsahovat všechny balíčky pro všechny projekty, které ji používají.
 
 Nicméně pokud chcete použít existující virtuální prostředí, postupujte takto:
 
-1. Po zobrazení výzvy k instalaci závislosti v sadě Visual Studio, vyberte **I je nainstaluje sám** možnost.
-1. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **prostředí Python** uzel a vyberte možnost **přidat existující virtuální prostředí**.
-1. Přejděte do a vyberte složku, která obsahuje virtuální prostředí a potom vyberte **OK**.
+1. Po zobrazení výzvy k instalaci závislostí v sadě Visual Studio, vyberte **nainstaluji je sám** možnost.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem myši **prostředí Pythonu** uzel a vyberte možnost **přidat existující virtuální prostředí**.
+1. Vyhledejte a vyberte složku, která obsahuje virtuální prostředí a pak vyberte **OK**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 4-2: pochopení zobrazení a stránka šablony vytvořené v šabloně projektů
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 4 – 2: pochopení zobrazení a stránky šablony vytvořené šablony projektu
 
-Jak zjistíte při spuštění projektu, aplikace obsahuje tři zobrazení: Domů, o a obraťte se na. Kód pro tato zobrazení je nalezena v `app/views` složky. Jednotlivé funkce zobrazení jednoduše volá `django.shortcuts.render` cestou k šablonu a objekt jednoduché slovníku. Například stránku o jsou zpracována `about` funkce:
+Jak zjistíte, když spustíte projekt, aplikace obsahuje tři zobrazení: Home, o programu a kontaktujte. Kód pro tato zobrazení je součástí *aplikace a zobrazení* složky. Každá funkce zobrazení jednoduše volá `django.shortcuts.render` cestou k šablonu a objekt jednoduchý slovník. Například se postará o stránku `about` funkce:
 
 ```python
 def about(request):
@@ -104,7 +104,7 @@ def about(request):
     )
 ```
 
-Šablony jsou umístěny v dané aplikaci `templates/app` složky (a obvykle budete chtít přejmenovat `app` k názvu skutečné aplikace). Základní šablony `layout.html`, je většina rozsáhlé. Ji označuje všechny potřebné statické soubory (JavaScript a CSS), definuje blok s názvem "obsah" jiných stránky přepsání a poskytuje další blok s názvem "skripty". Následující poznámky úryvky z `layout.html` zobrazit tyto konkrétní oblasti:
+Šablony jsou umístěny v aplikaci prvku *šablony nebo aplikaci* složku (a obvykle budete chtít přejmenovat *aplikace* na název vaší aplikace skutečný). Základní šablona *layout.html*, je nejvíc rozsáhlý. Odkazuje na všechny potřebné statické soubory (jazyk JavaScript a CSS), definuje blok s názvem "obsah" jiných stránek přepsání a poskytuje další blok s názvem "skripty". Následující anotována výňatky ze *layout.html* zobrazit tyto konkrétní oblasti:
 
 ```html
 <!DOCTYPE html>
@@ -144,7 +144,7 @@ def about(request):
 </html>
 ```
 
-Šablony jednotlivých stránek, `about.html`, `contact.html`, a `index.html`, každý rozšíření základní šablony `layout.html`. `about.html` je nejjednodušší a zobrazuje `{% extends %}` a `{% block content %}` značky:
+Šablony jednotlivou stránku *about.html*, *contact.html*, a *index.html*, každé rozšiřte základní šablonu *layout.html*. *About.HTML* je nejjednodušší a ukazuje, `{% extends %}` a `{% block content %}` značky:
 
 ```html
 {% extends "app/layout.html" %}
@@ -159,17 +159,17 @@ def about(request):
 {% endblock %}
 ```
 
-`index.html` a `contact.html` použít stejnou strukturu a zadejte delší obsahu v bloku "obsah".
+*index.HTML* a *contact.html* použít stejnou strukturu a poskytovat delší obsah v bloku "obsah".
 
-V `templates/app` složka je také čtvrté stránce `login.html`, spolu s `loginpartial.html` načtená do `layout.html` pomocí `{% include %}`. Tyto soubory šablony jsou popsané v kroku 5 na ověřování.
+V *šablony nebo aplikaci* složku je také čtvrtá stránka *login.html*, spolu s *loginpartial.html* přenese do *layout.html*pomocí `{% include %}`. Tyto soubory šablon jsou popsané v kroku 5 v ověřování.
 
-### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Otázka: může {% blokovat %} a {% endblock %} odsazeny v šabloně Django stránky?
+### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Otázka: Můžou {% blokovat %} a {% endblock %} odsazeny v šabloně Django stránky?
 
-Odpověď: Ano, rozhraní Django stránky šablony bez problémů fungují Pokud odsazovat bloku značky, případně je uvést do v rámci jejich příslušné nadřazené elementy. Nejsou určeny v šablonách stránky generované v šabloně projektů sady Visual Studio, aby jasně uvidíte, kde jsou umístěny.
+Odpověď: Ano, šablony Django fungovat správně Pokud odsazení bloku značky, třeba tak, aby zarovnání v rámci jejich odpovídající nadřazené prvky. Nejsou určeny v šablonách stránky vygenerovaná šablona projektu sady Visual Studio tak, aby jasně vidíte, kde jsou umístěny.
 
-## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Krok 4 – 3: pochopení vytvořených šablonou směrování adres URL
+## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Krok 4-3: vysvětlení směrování adres URL, které se vytvoří pomocí šablony
 
-Projekt Django `urls.py` soubor při vytváření šablony "Webový projekt Django" obsahuje následující kód:
+V projektu Django *urls.py* soubor při vytváření šablony "Webového projektu Django" obsahuje následující kód:
 
 ```python
 from datetime import datetime
@@ -204,19 +204,19 @@ urlpatterns = [
 ]
 ```
 
-První tři vzory adresy URL přímo na mapování `home`, `contact`, a `about` zobrazení v dané aplikaci `views.py` souboru. Vzory `^login/$` a `^logout$`, na dalším ruční, použít předdefinovaná zobrazení Django místo zobrazení definované aplikací. Volání `url` metoda také zahrnovat doplňujících dat. Chcete-li přizpůsobit zobrazení. Krok 5 prozkoumá těchto volání.
+První tři vzory adres URL mapují přímo `home`, `contact`, a `about` zobrazení v aplikaci prvku *views.py* souboru. Tyto vzory se dají `^login/$` a `^logout$`, na druhé straně, místo zobrazení definované aplikací použít předdefinovaná zobrazení Django. Volání `url` metoda obsahovat také další data, čímž přizpůsobíte zobrazení. Krok 5 zkoumá těchto volání.
 
-### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Otázka: v projektu vytvořený, proč "about" vzor adresy URL používá ' ^ o se místo ' ^ o$, jak je vidět tady?
+### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Otázka: V projektu jsem vytvořil, proč "about" vzor adresy URL používá "^ o ' místo ' ^ o$" jak je znázorněno zde?
 
-Odpověď: Chybí koncové "$" v regulárním výrazu byl jednoduché dohledu v mnoha verzí šablona projektu. Vzor adresy URL funguje bez jakýchkoli problémů pro stránku s názvem "o", ale bez koncové $ vzor adresy URL také odpovídající adresy URL jako "o = django", "about09876", "aboutoflaughter" a tak na. Koncové $ se zobrazí tady vytvořit vzor adresy URL, která odpovídá *pouze* "o".
+Odpověď: Chybějící koncové "$" v regulárním výrazu byl jednoduchý dohledu v mnoha verze šablony projektu. Vzor adresy URL dokonale dobře funguje pro stránku s názvem "about", ale bez koncové "$" vzor adresy URL také odpovídající adresy URL jako "přibližně = django", "about09876", "aboutoflaughter" a proto na. Koncové "$" je znázorněna zde vytvořit vzor adresy URL, která odpovídá *pouze* "o".
 
 ## <a name="next-steps"></a>Další kroky
 
 > [!div class="nextstepaction"]
 > [Ověřování uživatelů v Django](learn-django-in-visual-studio-step-05-django-authentication.md)
 
-## <a name="go-deeper"></a>Přejděte hlubší
+## <a name="go-deeper"></a>Seznamte se blíž
 
-- [Nasazení webové aplikace do Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- [Zápis první aplikace Django, část 4 - formulářů a obecného zobrazení](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
-- Kurz zdrojového kódu na Githubu: [Microsoft nebo python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- [Nasazení webové aplikace do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Zápis svoji první aplikaci Django, část 4 – formulářů a obecného zobrazení](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
+- Kurz zdrojového kódu na Githubu: [Microsoft/python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
