@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177864"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469064"
 ---
 # <a name="get-started-with-unit-testing"></a>Začínáme s testováním částí
 
@@ -109,9 +109,9 @@ Funkci pokrytí kódu sady Visual Studio lze použít ke zjištění toho, jaký
 
 ## <a name="use-a-different-unit-test-framework"></a>Používat různé testování částí
 
-Můžete spustit testy jednotek v sadě Visual Studio s použitím rozhraní testování třetích stran, jako jsou Boost, Google a nUnit. Používání tak, že Visual Studio test runner můžete pracovat s tímto rozhraním pro rozhraní modulu plug-in.
+Můžete spustit testy jednotek v sadě Visual Studio s použitím rozhraní testování třetích stran, jako jsou Boost, Google a NUnit. Používání tak, že Visual Studio test runner můžete pracovat s tímto rozhraním pro rozhraní modulu plug-in.
 
-Postup povolení rozhraní pro testování částí třetích jsou následující:
+Postup povolení rozhraní pro testování třetích stran jsou následující:
 
 1. Zvolte **nástroje** > **rozšíření a aktualizace** z řádku nabídek.
 

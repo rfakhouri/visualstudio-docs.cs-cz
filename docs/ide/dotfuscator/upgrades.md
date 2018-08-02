@@ -1,11 +1,11 @@
 ---
-title: Upgrade edice Community Dotfuscatoru (CE)
+title: Upgrade řešení Dotfuscator Community Edition (CE)
 ms.date: 02/08/2017
 ms.devlang: dotnet
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-keywords: Dotfuscatoru, Dotfuscatoru CE, preemptivní, preemptivní řešení preemptivní ochrana, ochrana, edice community, maskováním, .NET, volná, Visual Studio 2017, upgradu, příkazového řádku
+keywords: Nástroj Dotfuscator, řešení Dotfuscator CE, PreEmptive, společnosti PreEmptive Solutions PreEmptive ochrany, ochranu, community edition, obfuskace, .NET, bezplatný, upgradu, příkazový řádek sady Visual Studio 2017
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -20,64 +20,56 @@ helpviewer_keywords:
 - registering Dotfuscator
 - Dotfuscator command line
 - Dotfuscator Professional
-description: Naučte se upgradovat bezplatná edice Community Dotfuscatoru součástí Visual Studio 2017.
+description: Zjistěte, jak upgradovat bezplatný nástroj Dotfuscator Community Edition zahrnuty v sadě Visual Studio 2017.
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fcd5832b52c6cd9f72829c2bce8f7813b682cf4f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: f1158b0e5f438e49acafad79af1b33ec43690e9a
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704571"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468540"
 ---
-# <a name="upgrade-dotfuscator-community-edition-ce"></a>Upgrade edice Community Dotfuscatoru (CE)
+# <a name="upgrade-dotfuscator-community-edition-ce"></a>Upgrade řešení Dotfuscator Community Edition (CE)
 
-Dotfuscatoru Community Edition (Dotfuscatoru CE) nabízí mnoho Ochrana aplikace a funkce posílení zabezpečení okamžitě pro všechny vývojáře pomocí sady Microsoft Visual Studio.
-Však nejsou k dispozici pro uživatele, kteří upgrade jejich verzi Dotfuscatoru další funkce.
+Nástroj Dotfuscator Community Edition (řešení Dotfuscator CE) nabízí mnoho Ochrana aplikace a funkce pro posílení zabezpečení okamžitě pro všechny vývojáře, kteří používají Microsoft Visual Studio.
+Existují však další funkce dostupné pro uživatele, kteří upgrade řešení dotfuscator jejich verze.
 
-## <a name="registering-dotfuscator-ce"></a>Registrace Dotfuscatoru CE
+## <a name="registering-dotfuscator-ce"></a>Registrace Nástroje Dotfuscator CE
 
-Registrovaní uživatelé Dotfuscatoru CE získat přístup k dalším funkcím, jako například [podporu příkazového řádku][cli], což usnadňuje integraci Dotfuscatoru CE do procesu automatizované sestavení. Registrace také uděluje přístup k Lucidator, integrované nástroj používaný pro [dekódování trasování zásobníku zkomolené][decode-obfuscated].
+Registrovaných uživatelů řešení Dotfuscator CE získat přístup k dalším funkcím, jako například [podpory příkazového řádku][cli], což usnadňuje integraci řešení Dotfuscator CE do procesu automatizované sestavování. Registrace také uděluje přístup k Lucidator, integrované nástroj používaný pro [dekódování trasování zásobníku obfuskovaný][decode-obfuscated].
 
-Registrace je rychlá, jednoduchá a zdarma.
-Chcete-li zaregistrovat Dotfuscatoru CE, přečtěte si téma [části registrace CE Dotfuscatoru na stránce Začínáme v úplné uživatelské příručce CE Dotfuscatoru][register-ce].
+Registrace je rychlé, jednoduché a zadarmo.
+Registrace Nástroje Dotfuscator CE, naleznete v tématu [registrace Nástroje Dotfuscator CE části na stránce Začínáme úplné uživatelské příručce nástroje Dotfuscator CE][register-ce].
 
-## <a name="dotfuscator-professional"></a>Dotfuscatoru Professional
+## <a name="dotfuscator-professional"></a>Nástroje Dotfuscator Professional
 
-Zatímco Dotfuscatoru Community Edition poskytuje základní úroveň ochrany,  **_preemptivní ochrana – Dotfuscatoru_ Professional Edition** zahrnuje rozšířené maskováním transformací a ochrany Možnosti. Rozšířené transformací a možnosti patří:
+Nástroj Dotfuscator Community Edition poskytuje základní úroveň ochrany,  **_PreEmptive ochranu – řešení Dotfuscator_ Professional Edition** zahrnuje vylepšené obfuskace transformace a ochrana Možnosti. Vylepšené transformace a možnosti patří:
 
-* *Ochrany duševního vlastnictví*
-  * Další možnosti, včetně Enhanced Overload Induction™ a výběr náhodnou identifikátor přejmenování.
-  * Nástroje pro dekódování matoucí trasování zásobníku.
-  * Přístup k podnikové úrovni maskováním transformací, včetně [transformací zaměřený na narušen automatizované kód dekompilace][control-flow].
-  * Schopnost [skrývat citlivé řetězce][string-encryption], což znemožňuje jednoduché hledání decompiled kódu.
-  * Schopnost [diskrétní vlastnictví a distribuci řetězce vložení do vaší sestavení][watermarking], díky tomu můžete určit zdroj Neautorizováno nevracení softwaru.
-  * Schopnost [kombinovat více sestavení do jednoho][linking], znesnadňuje i pro útočníky určení rolí elementy kódu jako oddělené oblasti zájmu se odstranilo.
-  * Schopnost [automaticky odstranit nepoužívané kód z vaší aplikace][pruning], snižuje množství citlivé kód, který je součástí.
+* *Ochranu duševního vlastnictví*
+  * Další možnosti, včetně Enhanced Overload Induction™ a výběru náhodného identifikátor přejmenování.
+  * Nástroje pro dekódování obfuskovaný trasování zásobníku.
+  * Přístup k podnikové úrovni obfuskace transformací, včetně [transformace zaměřený na vytvoříte automatizované kód dekompilace][control-flow].
+  * Schopnost [skryl citlivé řetězce][string-encryption], provádění možné jednoduché hledání dekompilované kódu.
+  * Schopnost [diskrétní vlastnictví a distribuci řetězce vložení do sestavení][watermarking], umožňuje určit příčiny Neautorizováno nevracení softwaru.
+  * Schopnost [kombinovat více sestavení do jednoho][linking], znesnadňuje i pro útočníky k určení rolí prvků kódu, protože byly odstraněny oddělení oblastí zájmu.
+  * Schopnost [automaticky odebrat nepoužitý kód ze své aplikace][pruning], čímž snižuje velikost citlivé kód, který je dodáván.
 * *Ochrana Integrity aplikace*
-  * Další [chování aplikací obrany][check-actions].
-  * Schopnost poskytovat období upozornění před termínem aplikace ukončenou životností.
-  * Možnost oznámení kód aplikace během období upozornění ukončenou životností nebo po dosažení konečného termínu.
-  * Telemetrická data šifrování.
-* *Monitorování aplikací*
-  * Umožňuje shromáždit a uložit shromažďují informace během výpadků dočasné sítě.
-  * Schopnost shromažďovat identifikovatelné osobní údaje.
-  * Neomezená použití [funkce sledování][features].
-  * Možnost sledování výjimek zachycení a vyvolané kódu, navíc k neošetřených výjimek.
-  * Ke sledování výjimek v `.dll` sestavení.
-  * Telemetrická data šifrování.
+  * Další [chování aplikací defense][check-actions].
+  * Schopnost poskytnout určité upozornění před konečným termínem ukončenou životností aplikace.
+  * Možnost oznámit kód aplikace během období upozornění ukončenou životností nebo po konečném termínu.
 
-Professional Dotfuscatoru je oborový standard [.NET Obfuscator] [ net-obfuscator] a je vhodný pro vývojáře vyžadujících probíhající aktualizaci podpory, údržbu a produktu.
-Kromě toho Dotfuscatoru Professional nabízí užší integrace se sadou Visual Studio a má licenci pro komerční použití.
+Nástroje Dotfuscator Professional je standardní průmyslový [.NET Obfuskátor] [ net-obfuscator] a je vhodný pro podnikové vývojáře vyžadující probíhajících aktualizacích fungovat podporu, údržby a produktu.
+Kromě toho nástroje Dotfuscator Professional nabízí užší integraci s Visual Studio a má licenci pro obchodní použití.
 
-Další informace o funkcí pokročilé aplikací ochrany Dotfuscatoru Professional, navštivte preemptivní řešení [stránku přehled Dotfuscatoru] [ product-about] a [porovnat s Edice Community][product-compare].
-[Zkušební plně podporované verze jsou k dispozici na preemptive.com][eval].
+Další informace o funkcích pokročilé aplikace ochrany nástroje Dotfuscator Professional, najdete na webu společnosti PreEmptive Solutions [stránka s přehledem nástroje Dotfuscator] [ product-about] a [porovnat s Edice Community][product-compare].
+[Plně podporované zkušební verze najdete na adrese preemptive.com][eval].
 
 ## <a name="see-also"></a>Viz také
 
-[Tento článek v úplné Dotfuscatoru CE uživatelská příručka][full]
+[Tento článek v uživatelské příručce nástroje úplné řešení Dotfuscator CE][full]
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
@@ -88,7 +80,6 @@ Další informace o funkcí pokročilé aplikací ochrany Dotfuscatoru Professio
 [pruning]:  https://www.preemptive.com/products/dotfuscator/features#pruning
 
 [check-actions]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
-[features]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
 
 [net-obfuscator]:  https://www.preemptive.com/products/dotfuscator/overview
 [eval]:  https://www.preemptive.com/eval-request

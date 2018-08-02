@@ -2,7 +2,7 @@
 title: Další informace k ladění vícevláknových aplikací
 description: Ladění pomocí okna paralelní zásobníky a paralelní sledování v sadě Visual Studio
 ms.custom: H1HackMay2017
-ms.date: 06/02/2017
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a037ef99a7e1ea56f6535b99b533c1c723fd2d81
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204216"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468680"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Začínáme s laděním vícevláknových aplikací v sadě Visual Studio
 Visual Studio poskytuje několik nástrojů a prvky uživatelského rozhraní si můžete usnadnit ladění aplikací s více vlákny. Tento kurz ukazuje, jak používat značky vlákna **paralelní zásobníky** okně **paralelní sledování** oken, podmíněné zarážky a filtr zarážek. Tento kurz trvá jenom několik minut, ale jeho dokončení se můžete seznámit s funkcemi pro ladění aplikací s více vlákny.
@@ -47,9 +47,9 @@ Pokud chcete začít tento kurz, potřebujete projekt aplikace s více vlákny. 
   
      **Nový projekt** zobrazí se dialogové okno.  
   
-2.  V **typu projektu**s poli, klikněte na jazyk podle vašeho výběru: **Visual C#**, **Visual C++**, nebo **jazyka Visual Basic**.  
+2.  Klepněte na jazyk podle svého výběru: **Visual C#**, **Visual C++**, nebo **jazyka Visual Basic**.  
   
-3.  V **šablony** zvolte **konzolovou aplikaci**.  
+3.  V části **Windows Desktop**, zvolte **konzolovou aplikaci**.  
   
 4.  V **název** pole, zadejte název MyThreadWalkthroughApp.  
   

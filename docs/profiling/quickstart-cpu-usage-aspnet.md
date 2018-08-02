@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 13e8122649b1803e627576e4cf4d4bc83d1a286b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 8f71ca67fc74c7cb852914bd4f66f053e722c435
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204544"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468569"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Rychlý start: Analýza dat o využití procesoru v aplikaci Visual Studio (ASP.NET)
 
@@ -31,9 +31,6 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
 1. V sadě Visual Studio, zvolte **souboru** > **nový projekt**.
 
 1. V části **Visual C#**, zvolte **webové**a potom v prostředním podokně vyberte **webová aplikace ASP.NET (.NET Framework)**.
-
-    > [!NOTE]
-    > Nástroj využití CPU se aktuálně nepodporuje v ASP.NET Core.
 
 1. Zadejte název, například **MyProfilingApp_MVC** a klikněte na tlačítko **OK**.
 

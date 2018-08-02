@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf45b224edcab42b56ca18d558ecd4c8e42842f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9c8e82986d890f4d453190e1da6511c42dfe8866
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177302"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468787"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Návod: Ladění paralelní aplikace v sadě Visual Studio
 Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásobníky** ladění paralelní aplikace systému windows. Tato okna vám pomůžou pochopit a chování za běhu kódu, který se používá ověření [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) nebo [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime). Tento názorný postup obsahuje ukázkový kód, který má integrovanou zarážky. Poté, co kód přestane fungovat, návodu ukazuje způsob použití **paralelní úlohy** a **paralelní zásobníky** windows jej prozkoumat.  
@@ -65,9 +65,9 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
   
 1.  V sadě Visual Studio na **souboru** nabídky, přejděte k **nový** a potom klikněte na tlačítko **projektu**.  
   
-2.  V **nainstalované šablony** podokně, vyberte buď Visual C#, Visual Basic nebo Visual C++. Pro spravované jazyky, ujistěte se, že [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] se zobrazí v seznamu rozhraní.  
+2.  Vyberte buď **Visual C#**, **jazyka Visual Basic**, nebo **Visual C++**. Pro spravované jazyky, ujistěte se, že [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] se zobrazí v seznamu rozhraní.  
   
-3.  Vyberte **konzolovou aplikaci** a potom klikněte na tlačítko **OK**. Zůstat v konfiguraci ladění, což je výchozí hodnota.  
+3.  V části **Windows Desktop**, zvolte **konzolovou aplikaci** a potom klikněte na tlačítko **OK**. Zůstat v konfiguraci ladění, což je výchozí hodnota.  
   
 4.  Otevřete soubor kódu .cpp, .cs nebo .vb v projektu. Odstraňte její obsah, chcete-li vytvořit prázdný soubor kódu.  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Použití rozhraní API profileru | Microsoft Docs'
+title: 'Návod: Použití rozhraní API Profiler | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,36 +13,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a6c6d4a5fce3bbd3d050d3aaae4908b59d745596
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572975"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468207"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Návod: použití rozhraní API profileru
-Průvodce používá aplikace v jazyce C# k ukazují, jak používat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profilace rozhraní API nástroje. Chcete-li omezit množství dat, které jsou shromážděny během profilace instrumentace použijete rozhraní API profileru.  
+# <a name="walkthrough-using-profiler-apis"></a>Návod: Použití rozhraní API profileru
+
+Návod používá k ukazují, jak používat aplikace v jazyce C# [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profilování rozhraní API nástroje. Chcete-li omezit množství dat shromážděných během profilace instrumentace použijete rozhraní API profileru.  
   
- Kroky v tomto návodu se obecně používají na aplikace C/C++. Pro každý jazyk budete muset nakonfigurovat prostředí sestavení správně.  
+ Kroky v tomto názorném postupu se obecně používají pro aplikace v jazyce C/C++. Pro každý jazyk musíte správně nakonfigurovat prostředí sestavení.  
   
- Obvykle se spustí při analýze výkonu aplikací pomocí profilace ukázka. Pokud ukázka profilace neposkytuje informace, které zjišťuje problémové místo, profilace instrumentace nabízejí vyšší úroveň podrobností. Profilace instrumentace je velmi užitečná pro zkoumání interakce přístup z více vláken.  
+ Obvykle se začnou analýze výkonu aplikace pomocí profilace vzorku. Pokud profilace vzorku neposkytuje informace, které zjišťuje kritickým bodem, profilace instrumentace může poskytnout vyšší úroveň podrobností. Profilace instrumentace je velmi užitečný k prošetření interakce vlákna.  
   
- Vyšší úroveň podrobností však znamená, že další data jsou shromažďována. Je možné, že profilace instrumentace vytvoří velké datové soubory. Navíc instrumentace je pravděpodobnější mít dopad na výkon aplikace. Další informace najdete v tématu [pochopit hodnotám dat instrumentace](../profiling/understanding-instrumentation-data-values.md) a [pochopit hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)  
+ Vyšší úroveň podrobností znamená, že se shromažďují další data. Můžete zjistit, že profilace instrumentace vytvoří velkých datových souborů. Instrumentace je navíc pravděpodobnější dopad na výkon aplikace. Další informace najdete v tématu [pochopit hodnotám dat instrumentace](../profiling/understanding-instrumentation-data-values.md) a [pochopit hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)  
   
- Visual Studio profiler umožňuje omezit shromažďování dat. Tento názorný postup nabízí příklad omezení shromažďování dat pomocí rozhraní API profileru. Visual Studio profiler poskytuje rozhraní API pro řízení shromažďování dat z některé aplikace.  
+ Profiler sady Visual Studio umožňuje omezit shromažďování dat o. Tento návod poskytuje příklad toho, jak omezit shromažďování dat pomocí rozhraní API profileru. Profiler sady Visual Studio poskytuje rozhraní API pro řízení shromažďování dat z v rámci aplikace.  
   
- Pro nativní kód sadě Visual Studio profiler rozhraní API jsou v *VSPerf.dll*. Soubor hlaviček, *VSPerf.h*a knihovny importu *VSPerf.lib*, jsou umístěné v *nástrojů nástroje sady Microsoft Visual Studio 9\Team* adresáře.  
+ Pro nativní kód profileru sady Visual Studio rozhraní API jsou v *VSPerf.dll*. Soubor hlaviček *VSPerf.h*a knihovnu importu *VSPerf.lib*, jsou umístěny v *nástroje nástroje sady Microsoft Visual Studio 9\Team* adresáře.  
   
- Pro spravovaný kód profileru rozhraní API jsou v *Microsoft.VisualStudio.Profiler.dll*. Tuto knihovnu DLL se nachází v *nástrojů nástroje sady Microsoft Visual Studio 9\Team* adresáře. Další informace naleznete v tématu <xref:Microsoft.VisualStudio.Profiler>.  
+ Pro spravovaný kód, okna profilování rozhraní API jsou v *Microsoft.VisualStudio.Profiler.dll*. Tato knihovna DLL je součástí *nástroje nástroje sady Microsoft Visual Studio 9\Team* adresáře. Další informace naleznete v tématu <xref:Microsoft.VisualStudio.Profiler>.  
   
 ## <a name="prerequisites"></a>Požadavky  
- Tento návod předpokládá, že vaši volbu vývojového prostředí je nakonfigurován pro podporu ladění a vzorkování. Základní informace o těchto nezbytných podmínkách naleznete v následujících tématech:  
+ Tento názorný průvodce předpokládá, že vývojové prostředí podle vašeho výběru je nakonfigurována pro podporu ladění a vzorkování. Přehled o těchto nezbytných podmínkách naleznete v následujících tématech:  
   
  [Postupy: Výběr metod shromažďování](../profiling/how-to-choose-collection-methods.md)  
   
  [Postupy: Odkazování na informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md)  
   
- Ve výchozím nastavení když se spustí profileru profileru shromažďuje data na globální úrovni. Následující kód na začátku programu změní globální profilace vypnout.  
+ Ve výchozím nastavení při spuštění profilování, profiler shromáždí data na globální úrovni. Následující kód při spuštění programu se změní na globální profilace vypnout.  
   
 ```csharp  
 DataCollection.StopProfile(  
@@ -50,18 +51,18 @@ ProfileLevel.Global,
 DataCollection.CurrentId);  
 ```  
   
- Shromažďování dat na příkazovém řádku můžete vypnout bez použití volání rozhraní API. Následující postup předpokládá, prostředí sestavení příkazového řádku je nakonfigurovaná pro spuštění nástrojů pro profilaci a jako vývojové nástroje. To zahrnuje nastavení požadovaná pro vsinstr – a VSPerfCmd. V tématu profilování nástroje příkazového řádku.  
+ Bez použití volání rozhraní API můžete vypnout shromažďování dat na příkazovém řádku. Následující postup předpokládá, že vaše prostředí pro sestavení příkazového řádku je nakonfigurován na spuštění nástrojů pro profilaci a jako vývojové nástroje. To zahrnuje nastavení požadovaná pro nástroj VSInstr a VSPerfCmd. Zobrazit [příkazového řádku nástroje pro profilaci](../profiling/using-the-profiling-tools-from-the-command-line.md).  
   
-## <a name="limit-data-collection-using-profiler-apis"></a>Omezení shromažďování dat pomocí rozhraní API profileru  
+## <a name="limit-data-collection-using-profiler-apis"></a>Omezit shromažďování dat pomocí rozhraní API profileru  
   
-#### <a name="to-create-the-code-to-profile"></a>Chcete-li vytvořit kód do profilu  
+#### <a name="to-create-the-code-to-profile"></a>Chcete-li vytvořit kód pro profil  
   
-1.  Vytvořte nový projekt C# v sadě Visual Studio, nebo použití sestavení příkazového řádku, v závislosti na vaši volbu.  
+1.  Vytvořte nový projekt C# v sadě Visual Studio nebo pomocí příkazového řádku sestavení, v závislosti na vašich předvoleb.  
   
     > [!NOTE]
-    >  Buildu musí odkazovat *Microsoft.VisualStudio.Profiler.dll* knihovny, umístěný ve*nástrojů nástroje sady Microsoft Visual Studio 9\Team* adresáře.  
+    >  Sestavení musí odkazovat *Microsoft.VisualStudio.Profiler.dll* knihovny, umístěný ve *nástroje sady Microsoft Visual Studio 9\Team nástroje* adresáře.  
   
-2.  Zkopírujte a vložte následující kód do projektu:  
+2.  Zkopírujte a vložte následující kód do vašeho projektu:  
   
     ```csharp  
     using System;  
@@ -69,68 +70,72 @@ DataCollection.CurrentId);
     using System.Text;  
     using Microsoft.VisualStudio.Profiler;  
   
-    namespace ConsoleApplication2  
+    namespace ConsoleApplication1  
     {  
         class Program  
         {  
             public class A  
             {  
-             private int _x;  
+                private int _x;  
   
-             public A(int x)  
-             {  
-              _x = x;  
-             }  
+                public A(int x)  
+                {  
+                    _x = x;  
+                }  
   
-             public int DoNotProfileThis()  
-             {  
-              return _x * _x;  
-             }  
+                public int DoNotProfileThis()  
+                {  
+                    return _x * _x;  
+                }  
   
-             public int OnlyProfileThis()  
-             {  
-              return _x + _x;  
-             }  
+                public int OnlyProfileThis()  
+                {  
+                    return _x + _x;  
+                }  
   
-             public static void Main()  
-             {  
-            DataCollection.StopProfile(  
-            ProfileLevel.Global,  
-            DataCollection.CurrentId);  
-              A a;  
-              a = new A(2);  
-              int x;      
-              Console.WriteLine("2 square is {0}", a.DoNotProfileThis());  
-              DataCollection.StartProfile(  
-                  ProfileLevel.Global,  
-                  DataCollection.CurrentId);  
-              x = a.OnlyProfileThis();  
-              DataCollection.StopProfile(  
-                  ProfileLevel.Global,   
-                  DataCollection.CurrentId);  
-              Console.WriteLine("2 doubled is {0}", x);  
-             }  
+                public static void Main()  
+                {  
+                    DataCollection.StopProfile(  
+                    ProfileLevel.Global,  
+                    DataCollection.CurrentId); 
+
+                    A a = new A(2);  
+                    Console.WriteLine("2 square is {0}", a.DoNotProfileThis()); 
+
+                    DataCollection.StartProfile(  
+                    ProfileLevel.Global,  
+                    DataCollection.CurrentId);
+
+                    int x;  
+                    x = a.OnlyProfileThis();  
+
+                    DataCollection.StopProfile(  
+                    ProfileLevel.Global,   
+                    DataCollection.CurrentId);  
+
+                    Console.WriteLine("2 doubled is {0}", x);  
+                }  
             }  
   
         }  
     }  
     ```  
   
-#### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Můžete shromažďovat a zobrazovat data v prostředí Visual Studio IDE  
+#### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Můžete shromažďovat a zobrazovat data v integrovaném vývojovém prostředí sady Visual Studio  
   
-1.  Otevřete [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Na **analyzovat** nabídky, přejděte na příkaz **profileru**a potom vyberte **novou relaci výkonu**.  
+1.  Otevřít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrovaného vývojového prostředí. K **analyzovat** nabídky, přejděte k **Profiler**a pak vyberte **novou relaci výkonu**.  
   
-2.  Přidání vaší kompilované binárního souboru ke **cíle** v seznamu **prohlížeč výkonu** okno. Klikněte pravým tlačítkem na **cíle**a potom vyberte **přidat cíl binární**. Najít binární v **přidat cíl binární** dialogové okno a pak klikněte na tlačítko **otevřete**.  
+2.  Přidat kompilované binární soubor na **cíle** v seznamu **prohlížeč výkonu** okna. Klikněte pravým tlačítkem na **cíle**a pak vyberte **přidat cílový binární**. Vyhledejte příslušný binární soubor v **přidat cílový binární** dialogové okno a potom klikněte na **otevřít**.  
   
-3.  Vyberte **instrumentace** z **metoda** na seznamu **prohlížeč výkonu** panelu nástrojů.  
+3.  Vyberte **instrumentace** z **metoda** seznamu **prohlížeč výkonu** nástrojů.  
   
-4.  Klikněte na tlačítko **spouštění profilace**.  
+4.  Klikněte na tlačítko **spustit s nástrojem pro profilaci**.  
   
-     Profileru instrumentace a provést binárního souboru a vytvoření souboru sestavy výkonu. Soubor sestavy výkonu se zobrazí v **sestavy** uzlu **prohlížeč výkonu**.  
+     Profileru instrumentace a spustí binárního souboru a vytvoření souboru sestavy výkonu. Zobrazí se v souboru obsahujícímu sestavu výkonu **sestavy** uzlu **prohlížeč výkonu**.  
   
-5.  Otevřete soubor sestavy výsledný výkon.  
+5.  Otevřete výsledného souboru obsahujícímu sestavu výkonu.  
   
- Ve výchozím nastavení když se spustí profileru, bude profileru shromažďovat data na globální úrovni. Následující kód na začátku programu změní globální profilace vypnout.  
+ Ve výchozím nastavení při spuštění profileru, profiler shromáždí data na globální úrovni. Následující kód při spuštění programu se změní na globální profilace vypnout.  
   
 ```csharp  
 DataCollection.StopProfile(  
@@ -140,28 +145,28 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>Můžete shromažďovat a zobrazovat data na příkazovém řádku  
   
-1.  Zkompilujte ladicí verze, kterou jste vytvořili v postupu "Vytváření kódu do profilu" dříve v tomto návodu ukázkový kód.  
+1.  Zkompilujte ladicí verze ukázek kódu, který jste vytvořili v postupu "Vytvoření kódu pro profil" dříve v tomto návodu.  
   
-2.  Profilu spravované aplikace, zadejte následující příkaz pro nastavení příslušné proměnné prostředí:  
+2.  Chcete-li Profilovat spravované aplikace, zadejte následující příkaz nastavit příslušné proměnné prostředí:  
   
-     **VsPefCLREnv /traceon**  
+     **Vsperfclrenv – /traceon**  
   
-3.  Zadejte následující příkaz:**vsinstr – \<filename > .exe**  
+3.  Zadejte následující příkaz: **VSInstr \<název souboru > .exe**  
   
-4.  Zadejte následující příkaz:**VSPerfCmd /start:trace output:\<filename > .vsp**  
+4.  Zadejte následující příkaz: **/start:trace VSPerfCmd/output:\<název souboru > .vsp**  
   
-5.  Zadejte následující příkaz:**VSPerfCmd /globaloff**  
+5.  Zadejte následující příkaz: **VSPerfCmd /globaloff**  
   
-6.  Spusťte program.  
+6.  Spuštění programu.  
   
-7.  Zadejte následující příkaz:  **/VSPerfCmd Shutdown**  
+7.  Zadejte následující příkaz: **VSPerfCmd/Shutdown**  
   
-8.  Zadejte následující příkaz:**vsperfreport – /calltrace:\<filename > .vsp**  
+8.  Zadejte následující příkaz: **VSPerfReport/calltrace:\<název souboru > .vsp**  
   
-     A. *csv* soubor je vytvořen v aktuálním adresáři s Výsledná data výkonu.  
+     ODPOVĚĎ. *sdíleného svazku clusteru* vytvoří soubor v aktuálním adresáři s Výsledná data o výkonu.  
   
 ## <a name="see-also"></a>Viz také:  
  <xref:Microsoft.VisualStudio.Profiler>   
- [Visual Studio profiler referenční dokumentace rozhraní API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)   
+ [Visual Studio profiler API reference (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Začínáme](../profiling/getting-started-with-performance-tools.md)   
  [Profil z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)

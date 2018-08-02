@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380860"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469110"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Návod: Vytváření a spouštění testů jednotek pro spravovaný kód
 
@@ -210,7 +210,7 @@ Testovací metoda musí splňovat následující požadavky:
 
 ### <a name="analyze-the-test-results"></a>Analýza výsledků testování
 
-Výsledek testu obsahuje zprávu s popisem chyby. Pro `AreEquals` metoda, zpráva se zobrazí, co byl očekáván ( **očekávaná\<*hodnotu* >**  parametr) a co vlastně přijatých ( **Skutečné\<*hodnotu* >** parametr). Očekáván snížení zůstatku, ale místo toho ji skutečně zvýšit množství stažení.
+Výsledek testu obsahuje zprávu s popisem chyby. Pro `AreEqual` metoda, zpráva se zobrazí, co byl očekáván ( **očekávaná\<*hodnotu* >**  parametr) a co vlastně přijatých ( **Skutečné\<*hodnotu* >** parametr). Očekáván snížení zůstatku, ale místo toho zvětšit velikost o stažení.
 
 Testování částí vyplynul chybu: stažení je *přidali* k zůstatku, ale měla by být *odečtena*.
 

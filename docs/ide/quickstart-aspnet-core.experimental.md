@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1c137cbb8e739eaef5646e0d2ebbbe73ee85e4e9
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: 9978a7eb80a833eeb81796694b958a62a35cd347
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409765"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469136"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Rychlý start: Použití sady Visual Studio k vytvoření vaší první webové aplikace ASP.NET Core
 
@@ -79,17 +79,16 @@ V dalším kroku vytvoříte a spouštění vaší webové aplikace "Hello World
 
 1. Ověřte, že **o** stránka obsahuje aktualizovaný text.
 
+1. Zavřete webový prohlížeč.
+
 Blahopřejeme k dokončení tohoto rychlého startu! Doufáme, že jste se dozvěděli ještě něco o jazyce C#, ASP.NET Core a Visual Studio IDE (integrované vývojové prostředí).
 
 ## <a name="next-steps"></a>Další kroky
 
-Další informace, pokračujte v následujících kurzech:
+Další informace najdete dál v následujícím kurzu:
 
 > [!div class="nextstepaction"]
 > [Začínáme s C# a technologie ASP.NET v sadě Visual Studio](tutorial-csharp-aspnet-core.md)
->
-> [!div class="nextstepaction"]
-> [Začínáme s ASP.NET Core MVC a sady Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
 
 ## <a name="see-also"></a>Viz také:
 

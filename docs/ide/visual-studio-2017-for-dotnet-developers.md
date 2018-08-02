@@ -12,24 +12,25 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0f7ffbef8fade3e5723a84ac433ce95679c26c3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381091"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468270"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Průvodce produktivitou Visual Studio 2017 C#
 
 Zjistěte, jak [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) zajišťuje vývojářům vyšší produktivitu, než kdy dřív. Využijte výhod našich vylepšení výkonu a produktivity jako je navigace na dekompilované sestavení, název proměnné návrhy při psaní, hierarchické zobrazení v **Průzkumník testů**, přejít na všechno (**Ctrl** + **T**) přejděte k souboru/typu/členu/symbolu deklarace, inteligentní **pomocníka výjimky**, styl konfigurace a vynucení a mnoho refaktoring kódu a opravy kódu.
 
-##  <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Jsem zvyklý / zvyklá Moje klávesových zkratek z jiné rozšíření nebo editoru nebo prostředí IDE.
+## <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Jsem zvyklý / zvyklá Moje klávesových zkratek z jiné rozšíření nebo editoru nebo prostředí IDE
 
 **Novinka v sadě Visual Studio 2017 verze 15.8** Pokud přecházíte z jiného integrovaného vývojového prostředí nebo prostředí pro psaní kódu, můžete změnit na schéma klávesnice *Visual Studio Code* nebo *ReSharper (Visual Studio)*:
 
 ![Schémata klávesnice v sadě Visual Studio](../ide/media/VS2017Guide-Keyboard.png)
 
 Některá rozšíření nabízí také schémata klávesnice:
+
 - [Klávesové zkratky pro Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [Emulace (emacs)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
@@ -58,23 +59,29 @@ Tady jsou oblíbené klávesové zkratky sady Visual Studio:
 
 Další informace klávesové zkratky a příkazy v sadě Visual Studio [naši dokumentaci](..\ide\tips-and-tricks-for-visual-studio.md).
 
-## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Budu potřebovat způsob, jak rychle přejít na soubory nebo typy.
-Visual Studio 2017 obsahuje funkci s názvem **přejít na vše** (**Ctrl**+**T**). Přejít na všechno vám umožní rychle přejít na soubor, typ, člen nebo deklaraci symbolu.
-- Změnit umístění tohoto panelu hledání nebo vypnutí náhled živého navigace **ozubené kolečko** ikonu
+## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Budu potřebovat způsob, jak rychle přejít na soubory nebo typy
+
+Visual Studio 2017 obsahuje funkci s názvem **přejít na vše** (**Ctrl**+**T**). **Přejít na vše** umožňuje rychle přejít na soubor, typ, člen nebo deklaraci symbolu.
+
+- Změnit umístění tohoto panelu hledání nebo vypnutí náhled živého navigace **ozubené kolečko** ikonu.
 - Filtrování výsledků pomocí našich syntaxe dotazu (například "mytype t"). Můžete také omezit rozsah hledání pouze na aktuální dokument.
 - odpovídající camelCase je podporován!
 
 ![Přejít na vše v sadě Visual Studio](../ide/media/VS2017Guide-go-to-all.png)
 
-## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>Můj tým vynucuje pravidel stylu kódu na náš základ kódu.
+## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>Můj tým vynucuje pravidel stylu kódu na náš základ kódu
+
 Můžete použít *.editorconfig* souboru kodifikovat konvence kódování a mít je přenášet společně s vaším zdrojem.
-- Doporučujeme nejprve nainstalovat [služba jazyka EditorConfig rozšíření](https://aka.ms/editorconfig) pro přidávání a úprav *.editorconfig* souboru v sadě Visual Studio.
-- Podívejte se [dokumentaci](https://aka.ms/editorconfigDocs) pro všechny možnosti konvence psaní kódu .NET.
-- Zobrazit [tento gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) příklad *.editorconfig*.
+
+- Můžete nainstalovat [služba jazyka EditorConfig rozšíření](https://aka.ms/editorconfig), což usnadňuje přidávání a úprava *.editorconfig* souboru v sadě Visual Studio.
+- Vyzkoušejte si [IntelliCode rozšíření pro Visual Studio](/visualstudio/intellicode/intellicode-visual-studio). Tento experimentální rozšíření odvodí z něj styl kódu z existujícího kódu a pak vytvoří neprázdný *.editorconfig* soubor s předvolby stylu kódu již definována.
+- Podívejte se [možnosti konvence psaní kódu .NET](https://aka.ms/editorconfigDocs) dokumentaci.
+- Zobrazit [tento gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) příklad *.editorconfig* souboru.
 
 ![Vynucení stylu kódu v sadě Visual Studio](../ide/media/VSGuide_CodeStyle.png)
 
-## <a name="i-need-more-refactorings-and-code-fixes"></a>Potřebuji další opravy refaktoringů a kódu.
+## <a name="i-need-more-refactorings-and-code-fixes"></a>Potřebuji další opravy refaktoringů a kódu
+
 Visual Studio 2017 se dodává s velké množství refaktoringů, akcí generování kódu a opravy kódu. Chyby představují červenou vlnovkou, zelenou vlnovkou představují upozornění a tři šedé tečky představují návrhy kódu. Přístupový kód opravy můžete kliknutím na ikonu žárovky/šroubovák nebo stisknutím klávesy **Ctrl**+**.** nebo **Alt**+**zadejte**. Jednotlivé opravy se dodává s oknem Náhled, který ukazuje rozdíl živého kódu fungování opravy.
 
 - Oblíbené rychlých oprav a refaktoringy patří:
@@ -98,6 +105,7 @@ Visual Studio 2017 se dodává s velké množství refaktoringů, akcí generov�
 ![Refaktoring v sadě Visual Studio](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>Potřebuji najít použití, přejít k implementaci, přejděte na Dekompilované sestavení
+
 Visual Studio 2017 obsahuje mnoho funkcí pro usnadnění hledání a navigaci vašeho základu kódu. Přečtěte si více o funkcích [Navigace kódu](../ide/navigating-code.md)
 
 | Funkce | Zástupce | Podrobnosti a vylepšení |
@@ -111,16 +119,20 @@ Visual Studio 2017 obsahuje mnoho funkcí pro usnadnění hledání a navigaci v
 
 ![Přejít na vše a najít všechny odkazy](../ide/media/VSIDE_Productivity_Navigation.png)
 
-## <a name="i-want-to-run-and-see-my-unit-tests"></a>Chci spustit a Zobrazit Moje testy jednotek.
+## <a name="i-want-to-run-and-see-my-unit-tests"></a>Chci spustit a Zobrazit Moje testy jednotek
+
 V sadě Visual Studio 2017 jsme provedli spoustu vylepšení testování. Použijte některou z našich testování prostředí pomocí MSTest v1, MSTest v2, NUnit nebo XUnit rozhraních pro testování.
+
 - **Průzkumník testů** zjišťování testů je rychle ve verzi 15.6 (pro dosažení nejlepších výsledků, upgradujte na nejnovější verzi testovací adaptér).
 - Uspořádání testů v aplikaci Průzkumník testů díky nové *řazení hierarchických* ve verzi 15.6.
 - [Živé testování částí](../test/live-unit-testing.md) nepřetržitě spouští testy vliv změny kódu a aktualizuje vložené editor ikon s oznámením stav testů. Zahrnout nebo vyloučit určité testy nebo testování projektů z vaší *Live Test nastavit*.
 
 ![Hierarchické zobrazení pro Text Explorer v sadě Visual Studio](../ide/media/VSGuide_Testing.png)
 
-## <a name="i-want-to-debug-my-code"></a>Chci ladit můj kód.
-V sadě Visual Studio 2017 jsme přidali spoustu nových funkcí ladění.
+## <a name="i-want-to-debug-my-code"></a>Budu chtít ladit můj kód
+
+V sadě Visual Studio 2017 jsme přidali spoustu nových funkcí ladění:
+
 - *Běžet do kliknutí* umožňuje při najetí myší vedle řádku kódu, stiskněte zelená ikona "play", který se zobrazí, a spusťte svůj program, dokud nedosáhne tento řádek.
 - Nové **pomocníka výjimky** vloží nejdůležitější informace, jako jsou proměnné, která je null v NullReferenceException, na nejvyšší úrovni v dialogovém okně.
 - [Zastav](../debugger/how-to-use-intellitrace-step-back.md) ladění můžete přejít zpět k předchozím zarážkám nebo krokům a zobrazit stav aplikace, jako v minulosti.
@@ -128,14 +140,17 @@ V sadě Visual Studio 2017 jsme přidali spoustu nových funkcí ladění.
 
 ![Nového pomocníka výjimky v sadě Visual Studio 2017](../ide/media/VSGuide_Debugging.png)
 
-## <a name="i-want-to-use-version-control-with-my-projects"></a>Chci používat správu verzí s projekty.
+## <a name="i-want-to-use-version-control-with-my-projects"></a>Chci používat správu verzí s projekty
+
 Úložiště git nebo TFVC můžete použít k ukládání a aktualizujte svůj kód v sadě Visual Studio.
+
 - Uspořádání místní změny s **Team Exploreru** a sledovat probíhající potvrzení a změny pomocí stavového řádku.
 - Nastavte průběžnou integraci a doručování pro projekty v aplikaci Visual Studio s naší [nástrojů Continuous delivery tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) rozšíření a přijmout pracovní postup agile pro vývojáře.
 
 ![Správa zdrojového kódu v sadě Visual Studio](../ide/media/VSIDE_Productivity_SourceControl.png)
 
 ## <a name="what-other-features-do-i-need-to-know-about"></a>Jaké další funkce je třeba vědět o?
+
 Tady je seznam editoru a produktivitu funkcí pro zajištění efektivnějšího psaní kódu. Některé funkce možná muset povolit, protože jsou vypnutí výchozím (může indexování věci na svém počítači, jsou kontroverzním nebo jsou aktuálně experimentální).
 
 | Funkce | Podrobnosti | Jak povolit |
@@ -149,6 +164,8 @@ Tady je seznam editoru a produktivitu funkcí pro zajištění efektivnějšího
 | [Fragmenty kódu](../ide/visual-csharp-code-snippets.md) | Nápověda zástupných procedur na běžné často používaný text |  Zadejte název fragmentu kódu a stiskněte klávesu **kartu** dvakrát. |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Chybějící funkce, která vám umožňuje být produktivní nebo právě probíhá nízký výkon?
+
 Existuje několik způsobů, jak odeslat nám názor:
+
 - Žádosti o funkce .NET může zaznamenaná v našich [úložiště GitHub se vzorovými](https://github.com/dotnet/roslyn/issues).
 - Visual Studio žádosti o funkce, chyby a problémy s výkonem můžete podává pomocí **odeslat zpětnou vazbu** ikonu v pravém horním rohu okna sady Visual Studio.
