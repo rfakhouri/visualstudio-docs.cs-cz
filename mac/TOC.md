@@ -21,6 +21,7 @@
 ## [Správa odkazů v projektu](managing-references-in-a-project.md)
 ### [Návod: Zahrnutí balíčku NuGet do projektu](nuget-walkthrough.md)
 ## [Správa prostředků aplikace](managing-app-resources.md)
+## [Postupy: Otevření více řešení nebo instancí](open-multiple-solutions.md)
 
 # [Editor zdrojového kódu](source-editor.md)
 ## [Refactoring](refactoring.md)
