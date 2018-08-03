@@ -28,14 +28,14 @@
 #### [Power BI Pro](vs-pbi.md)
 #### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Průběžné platby za Azure](vs-azure-payg.md)
-### Profesionální vývoj
+### [Profesní rozvoj](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
 #### [Opsgility](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Školení na Xamarin University](vs-xamarin.md)
 #### [Předplatné MSDN Magazine](vs-msdn.md)
-### Výhody v oblasti podpory
+### [Výhody v oblasti podpory](technical-support.md)
 #### [Chat s poradcem pro Azure](vs-azure-advisory-chat.md)
 #### [Komunita Azure](vs-azure-community.md)
 #### [Technická podpora](vs-tech-support.md)
