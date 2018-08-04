@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de11159e513468a543229df5aab640142b006736
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251930"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498964"
 ---
 # <a name="debug-your-python-code"></a>Ladění kódu Pythonu
 
@@ -155,9 +155,7 @@ Ve výchozím nastavení spustí ladicí program programu pomocí standardní Sp
 | **Cesta k interpretu** | Přepíše cestu spojené s aktuálním prostředí. Hodnota může být užitečné při spouštění skriptu nestandardní překladač. |
 | **Proměnné prostředí** | V tomto poli víceřádkový text, přidat položky ve formuláři \<NAME > =\<hodnota >. Protože toto nastavení je použito jako poslední, v horní části všechny existující globálních proměnných prostředí a po `PYTHONPATH` nastavena podle nastavení cesty pro hledání, můžete použít k ruční přepsání něco z toho jiné proměnné. |
 
-<a name="the-debug-interactive-window"></a>
-
-## <a name="immediate-and-interactive-windows"></a>Okamžité a interaktivního okna
+## <a name="immediate-and-interactive-windows"></a>Okamžité a interaktivní okna
 
 Existují dva interaktivních oken, můžete použít během relace ladění: standardní sady Visual Studio **okamžité** okně a **interaktivní ladění Pythonu** okna.
 

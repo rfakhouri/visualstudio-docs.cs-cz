@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: použití značek Text | Microsoft Docs'
+title: 'Postupy: použití značek Text | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,50 +13,50 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f5267295875976ac5370d97f186307637a49b6d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fdb02ccb4e1b32904e9423a0f851b538144d6f29
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133382"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497651"
 ---
-# <a name="how-to-use-text-markers"></a>Postupy: použití značek textu
-Text značky lze použít pro upravit <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> objektu.  
+# <a name="how-to-use-text-markers"></a>Postupy: použití značek text
+Textu značky lze použít k úpravě <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> objektu.  
   
 ## <a name="procedures"></a>Procedury  
   
-#### <a name="to-apply-text-markers"></a>Chcete-li použít text značek  
+### <a name="to-apply-text-markers"></a>Chcete-li použít text značky  
   
-1.  Získat instanci <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> třídy.  
-  
-    > [!NOTE]
-    >  Značky standardního textového editoru základní automaticky platí pro všechny dokument, který je úpravy a neměl by být potřeba použít standardní text značek explicitně.  
-  
-2.  Získání ID typu značky značky zajímá voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> metoda s `GUID` text značky chcete pracovat.  
+1.  Získání instance <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> třídy.  
   
     > [!NOTE]
-    >  Nepoužívejte `GUID` VSPackage nebo služba, která poskytuje text značky.  
+    >  Základní editor automaticky aplikuje standardní text značky na všechny dokumenty, které je úpravy a neměl by být nutné explicitní použití standardního textu značky.  
   
-3.  Použití ID typu značky získá voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> metoda jako parametr pro volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metoda nebo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metodu chcete použít značku text pro příslušnou oblast textu.  
+2.  Získat Identifikátor značky typu značky jsou zajímá voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> metodu s `GUID` text značky chcete pracovat.  
   
-#### <a name="to-add-features-to-text-markers"></a>Pro přidání funkcí do textu značek  
+    > [!NOTE]
+    >  Nepoužívejte `GUID` sady VSPackage nebo služby, která obsahuje text značky.  
   
-1.  To může být žádoucí pro přidání dalších funkcí do textu značku, jako je například popisy, speciální kontextové nabídky nebo obslužná rutina pro zvláštní okolnosti. Postupujte následovně:  
+3.  Použití ID typu značky získán voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> metodu jako parametr pro volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metoda nebo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> způsob, jak použít značku textu pro danou oblast textu.  
+  
+### <a name="to-add-features-to-text-markers"></a>Přidávání funkcí do textu značky  
+  
+1.  Může být vhodné pro přidání dalších funkcí do textu značky, jako jsou popisy tlačítek, speciální místní nabídky nebo obslužná rutina pro zvláštní okolnosti. Postup:  
   
 2.  Vytvoření implementace objektu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> rozhraní.  
   
-3.  V případě potřeby další funkce implementovat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced> rozhraní pro stejný objekt, který implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> rozhraní.  
+3.  V případě potřeby je další funkce, implementovat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced> rozhraní na stejný objekt, který implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> rozhraní.  
   
-4.  Předat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> rozhraní, které vytvoříte, k volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metoda nebo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metoda používá k aplikování značky textu pro danou oblast textu.  
+4.  Předání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> rozhraní, které vytvoříte, volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metoda nebo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metoda používá k aplikování text značky pro danou oblast textu.  
   
-5.  Při přidávání kontextové nabídky podpory v oblasti textového značky je nutné vytvořit v nabídce.  
+5.  Při přidávání kontextové nabídky podpory do oblasti značky text je potřeba vytvořit v nabídce.  
   
-     Další informace o tom, jak vytvořit nabídky naleznete v kontextu [kontextové nabídky](../extensibility/context-menus.md).  
+     Další informace o tom, jak vytvořit kontextové nabídky, naleznete v tématu [kontextové nabídky](../extensibility/context-menus.md).  
   
-6.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Prostředí volá metody, zadaný rozhraní, jako <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A> metody nebo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> metoda podle potřeby.  
+6.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Prostředí volání metody zadané rozhraní, jako <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A> metodu, nebo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> metoda podle potřeby.  
   
 ## <a name="see-also"></a>Viz také  
  [Text značky pomocí starší verze rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Postupy: Přidání značek standardního textu](../extensibility/how-to-add-standard-text-markers.md)   
- [Postupy: vytvoření vlastní Text značek](../extensibility/how-to-create-custom-text-markers.md)   
- [Postupy: implementace chyba značky](../extensibility/how-to-implement-error-markers.md)
+ [Postupy: Přidání standardní text značky](../extensibility/how-to-add-standard-text-markers.md)   
+ [Postupy: vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)   
+ [Postupy: implementace označování chyb](../extensibility/how-to-implement-error-markers.md)

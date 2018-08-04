@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9539fdb1a349fe7fc7331e8d3f352506eac9d00b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081680"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499387"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Přidat příponu protokol jazyka serveru
 
@@ -111,26 +111,6 @@ Chcete-li vytvořit rozšíření služeb jazyka pomocí serveru jazyk na zákla
 Další tak, že přejdete na vytvoření nové prázdné VSIXProject **souboru** > **nový projekt** > **Visual C#**  >   **Rozšiřitelnost** > **projekt VSIX**:
 
 ![Vytvoření projektu vsix](media/lsp-vsix-project.png)
-
-Pro verzi preview, bude podpora VS pro LSP ve formě rozšíření VSIX ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)). Vývojáři rozšíření, kteří chtějí vytvořit rozšíření pomocí LSP jazyk serverů musí zavést závislost na tomto VSIX. Proto zákazníci chtějí nainstalovat rozšíření jazyka serveru **musíte nejdřív nainstalovat VSIX Language serveru protokolu klienta ve verzi Preview.**
-
-K definování závislostí VSIX, otevřete návrhář manifestů VSIX pro VSIX (dvojitým kliknutím *source.extension.vsixmanifest* soubor v projektu) a přejděte do **závislosti**:
-
-![Přidat odkaz na klientovi protokol jazyka serveru](media/lsp-reference-lsp-dependency.png)
-
-Vytvořte novou závislost vypadat asi takto:
-
-![Definovat jazyk serveru protokolu klienta závislostí](media/lsp-define-lsp-dependency.png)
-
-* **Zdroj**: definované ručně
-* **Název**: náhled klienta protokol jazyka serveru
-* **Identifier**: Microsoft.VisualStudio.LanguageServer.Client.Preview
-* **Rozsah verzí**: [1.0,2.0)
-* **Jak je vyřešit závislost**: nainstalovány uživatelem
-* **Adresa URL pro stažení**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
-
-> [!NOTE]
-> **Adresa URL pro stahování** musí být vyplněna, aby uživatelé, kteří instalují rozšíření věděli, jak nainstalovat požadované závislosti.
 
 ### <a name="language-server-and-runtime-installation"></a>Instalace jazyků serveru a modulu runtime
 

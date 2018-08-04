@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c90d3878713d59975998c42cf17bf0722423666
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3b060261bec61859f33d99ec3f666e1285413592
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152516"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498561"
 ---
 # <a name="add-search-to-a-tool-window"></a>Přidání vyhledávání do panelu nástrojů
 Při vytváření nebo aktualizace panelu nástrojů v rozšíření, můžete přidat stejný integraci vyhledávacích funkcí, které se zobrazí jinde v sadě Visual Studio. Tato funkce zahrnuje následující funkce:  
@@ -33,7 +33,7 @@ Při vytváření nebo aktualizace panelu nástrojů v rozšíření, můžete p
   
 -   Možnost filtrovat hledání podle konkrétních polí nebo aspektů hledání cíle.  
   
- Podle tohoto postupu se dozvíte, jak provádět následující úlohy:  
+Podle tohoto postupu se dozvíte, jak provádět následující úlohy:  
   
 1.  Vytvořte projekt VSPackage.  
   
