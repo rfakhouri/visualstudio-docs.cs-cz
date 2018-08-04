@@ -1,5 +1,5 @@
 ---
-title: Použití a konfiguraci analyzátory Roslyn v sadě Visual Studio
+title: Použití a konfiguraci analyzátory Roslyn
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204151"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512168"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Konfigurovat a používat pravidla analyzátoru Roslyn
 
@@ -141,6 +141,31 @@ Můžete potlačit diagnostiku pro jeden nebo více z **seznam chyb** výběrem 
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
 > ```
+
+## <a name="command-line-usage"></a>Použití příkazového řádku
+
+Při sestavování projektu na příkazovém řádku se porušení pravidel se zobrazí ve výstupu sestavení. Pokud jsou splněny následující podmínky:
+
+- Analyzátory jsou nainstalovány jako balíček Nuget a ne jako rozšíření VSIX.
+
+- Jeden nebo více pravidel se poruší, v projektu kódu.
+
+- [Závažnost](#rule-severity) porušená pravidla je nastaven na hodnotu **upozornění**, v takovém případě narušení nezpůsobí, aby sestavení selhalo, nebo **chyba**, v takovém případě narušení způsobit, že sestavení selže.
+
+Podrobnost výstupu sestavení nemá vliv, zda jsou zobrazeny porušení pravidel. I přes **quiet** podrobností, porušení pravidel se zobrazí ve výstupu sestavení.
+
+> [!TIP]
+> Pokud jste zvyklí na spuštění z příkazového řádku, buď pomocí statické analýzy kódu *FxCopCmd.exe* nebo prostřednictvím msbuild s parametrem / **RunCodeAnalysis** příznak, tady je postup, který s analyzátory Roslyn.
+
+Analyzátor narušení zobrazíte na příkazovém řádku při vytváření projektu pomocí nástroje msbuild, spusťte příkaz takto:
+
+```cmd
+msbuild myproject.csproj /target:rebuild /verbosity:minimal
+```
+
+Následující obrázek ukazuje sestavení z příkazového řádku výstup z operace sestavení projektu, který obsahuje porušení pravidla analyzátoru:
+
+![Výstup nástroje MSBuild s porušení pravidla](media/command-line-build-analyzers.png)
 
 ## <a name="see-also"></a>Viz také:
 

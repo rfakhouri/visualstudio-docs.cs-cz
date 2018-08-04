@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f2fefe4a85d75573d96c7f7584913310bb5d267e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: c0b28ab5310f1be97ecf7b7acbcaa3360b29c480
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409742"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513517"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalace podpory Pythonu v sadě Visual Studio
 
@@ -35,7 +35,7 @@ ms.locfileid: "39409742"
 
     ![Úloha vývoj v jazyce Python v instalačním programu sady Visual Studio](media/installation-python-workload.png)
 
-1. Rychle otestovat technickou podporu Pythonu, spuštění sady Visual Studio, stiskněte Alt + I otevřete interaktivní okno Pythonu a zadejte `2+2`. Pokud nevidíte výstup `4`, spusťte opětovnou kontrolu kroků.
+1. Rychle otestovat technickou podporu Pythonu, spuštění sady Visual Studio, stiskněte klávesu **Alt**+**můžu** otevřít **interaktivní Python** okna a zadejte `2+2`. Pokud nevidíte výstup **4**, spusťte opětovnou kontrolu kroků.
 
     ![Testování v prostředích s interaktivním okně Pythonu](media/installation-interactive-test.png)
 
@@ -46,6 +46,6 @@ ms.locfileid: "39409742"
 
 ## <a name="see-also"></a>Viz také:
 
-- [Ruční určení existující interpret Pythonu](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
-- [Instalace podpory Pythonu v sadě Visual Studio 2015 a starší](installing-python-support-in-visual-studio.md).
-- [Umístění instalace](installing-python-support-in-visual-studio.md#install-locations).
+- [Ručně identifikovat existující interpret Pythonu](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Instalace podpory Pythonu v sadě Visual Studio 2015 a starší](installing-python-support-in-visual-studio.md)
+- [Umístění instalace](installing-python-support-in-visual-studio.md#install-locations)

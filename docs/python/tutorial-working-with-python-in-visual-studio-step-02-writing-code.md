@@ -11,22 +11,22 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 563b1151994f04bcecf7bc64ac802b6cacbec73c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 2fbd9729c02eedbcacd0955a6766b5627156090e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174838"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513117"
 ---
 # <a name="step-2-write-and-run-code"></a>Krok 2: Zápis a spouštění kódu
 
 **Předchozí krok: [vytvoření nového projektu Pythonu](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
-Ačkoli Průzkumník řešení je, kde budete spravovat soubory projektu, *editor* okno je obvykle místo, kde můžete pracovat s *obsah* souborů, jako je zdrojový kód. Editor je kontextová typu souboru, který upravujete, včetně programovací jazyk (podle přípony souboru), a nabízí funkce vhodné pro daný jazyk, třeba barevné zvýrazňování syntaxe a automatické dokončování pomocí technologie IntelliSense.
+I když **Průzkumníku řešení** je, kde budete spravovat soubory projektu, *editor* okno je obvykle ve kterém můžete pracovat *obsah* souborů, jako je zdrojový kód. Editor je kontextová typu souboru, který upravujete, včetně programovací jazyk (podle přípony souboru), a nabízí funkce vhodné pro daný jazyk, třeba barevné zvýrazňování syntaxe a automatické dokončování pomocí technologie IntelliSense.
 
-1. Po vytvoření nového projektu "Aplikace v Pythonu" výchozí prázdný soubor s názvem `PythonApplication1.py` je otevřen v editoru sady Visual Studio.
+1. Po vytvoření nového projektu "Aplikace v Pythonu" výchozí prázdný soubor s názvem *PythonApplication1.py* je otevřen v editoru sady Visual Studio.
 
-1. V editoru, začněte psát `print("Hello, Visual Studio")` a Všimněte si, jak IntelliSense ve Visual Studio se zobrazí možnosti automatického dokončování na cestě. Obrysy možnost v rozevíracím seznamu je výchozí dokončení, který se používá při stisknutí klávesy Tab. Dokončování jsou nejužitečnější, když se podílejí delší příkazy nebo identifikátory.
+1. V editoru, začněte psát `print("Hello, Visual Studio")` a Všimněte si, jak IntelliSense ve Visual Studio se zobrazí možnosti automatického dokončování na cestě. Obrysy možnost v rozevíracím seznamu je výchozí dokončení, který se používá po stisknutí klávesy **kartu** klíč. Dokončování jsou nejužitečnější, když se podílejí delší příkazy nebo identifikátory.
 
     ![Automaticky otevírané okno automatického dokončování IntelliSense](media/vs-getting-started-python-04-IntelliSense1b.png)
 
@@ -45,11 +45,11 @@ Ačkoli Průzkumník řešení je, kde budete spravovat soubory projektu, *edito
     ![Barevné zvýrazňování syntaxe technologie IntelliSense a zvýrazňování chyb](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Protože jeden z vývojového prostředí je velmi osobní řádu, sada Visual Studio poskytuje úplnou kontrolu nad vzhled a chování aplikace Visual Studio. Vyberte **nástroje > Možnosti** nabídky příkazů a prozkoumejte nastavení v části **prostředí** a **textový Editor** karty. Ve výchozím nastavení se zobrazí pouze omezený počet možností. Pokud chcete zobrazit všechny dostupné možnosti pro každý programovací jazyk, vyberte **zobrazit všechna nastavení** v dolní části dialogového okna. 
+    > Protože jeden z vývojového prostředí je velmi osobní řádu, sada Visual Studio poskytuje úplnou kontrolu nad vzhled a chování aplikace Visual Studio. Vyberte **nástroje** > **možnosti** nabídky příkazů a prozkoumejte nastavení v části **prostředí** a **textový Editor** karty. Ve výchozím nastavení se zobrazí pouze omezený počet možností. Pokud chcete zobrazit všechny dostupné možnosti pro každý programovací jazyk, vyberte **zobrazit všechna nastavení** v dolní části dialogového okna. 
 
-1. Spustit kód, který jste zadali do této chvíle stisknutím kombinace kláves Ctrl + F5 nebo výběrem **ladit > Spustit bez ladění** položky nabídky. Visual Studio vás upozorní, pokud máte stále chyby v kódu.
+1. Spustit kód, který jste zadali do této chvíle stisknutím kombinace kláves **Ctrl**+**F5** nebo jeho výběru **ladění** > **spustit bez ladění**  položky nabídky. Visual Studio vás upozorní, pokud máte stále chyby v kódu.
 
-1. Při spuštění programu, zobrazí se okno konzoly při zobrazení výsledků, tak, jako kdyby byste spustili interpret Pythonu s `PythonApplication1.py` z příkazového řádku. Stisknutím jakékoli klávesy zavřete okno a vraťte se do editoru sady Visual Studio.
+1. Při spuštění programu, zobrazí se okno konzoly při zobrazení výsledků, tak, jako kdyby byste spustili interpret Pythonu s *PythonApplication1.py* z příkazového řádku. Stisknutím jakékoli klávesy zavřete okno a vraťte se do editoru sady Visual Studio.
 
     ![Výstup pro první spuštění programu](media/vs-getting-started-python-07-output.png)
 
@@ -75,7 +75,7 @@ Ačkoli Průzkumník řešení je, kde budete spravovat soubory projektu, *edito
     ```
 
     > [!Tip]
-    > Dokončování pracovat podřetězců hned při psaní, odpovídající části slov, písmena na začátku slova a dokonce přeskočeno znaků. Zobrazit [úpravy kódu - dokončování](editing-python-code-in-visual-studio.md#completions) podrobnosti.
+    > Dokončování pracovat podřetězců hned při psaní, odpovídající části slov, písmena na začátku slova a dokonce přeskočeno znaků. Zobrazit [upravit kód – dokončování](editing-python-code-in-visual-studio.md#completions) podrobnosti.
 
 1. Přidejte trochu další kód pro tisk hodnoty kosinus pro 360 stupňů:
 
@@ -84,12 +84,12 @@ Ačkoli Průzkumník řešení je, kde budete spravovat soubory projektu, *edito
         print(cos(radians(i)))
     ```
 
-1. Spusťte program znovu pomocí kombinace kláves Ctrl + F5 nebo **ladit > Spustit bez ladění**. Jakmile budete hotovi, zavřete okno výstup.
+1. Spusťte program znovu s **Ctrl**+**F5** nebo **ladění** > **spustit bez ladění**. Jakmile budete hotovi, zavřete okno výstup.
 
 ## <a name="next-step"></a>Další krok
 
 > [!div class="nextstepaction"]
-> [Pomocí interaktivního okna REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+> [Použití interaktivního okna REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
 ## <a name="go-deeper"></a>Seznamte se blíž
 

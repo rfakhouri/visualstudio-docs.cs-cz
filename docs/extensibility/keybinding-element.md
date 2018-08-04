@@ -1,5 +1,5 @@
 ---
-title: KeyBinding Element | Microsoft Docs
+title: Keybinding – Element | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 226a5913cbaa151689a886dc88986f7de8cc29f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a199a805493b0b9ac9ae6e75cec322c74a99987e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139166"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511571"
 ---
-# <a name="keybinding-element"></a>KeyBinding Element
-KeyBinding element určuje klávesové zkratky pro příkazy.  
+# <a name="keybinding-element"></a>KeyBinding – element
+Keybinding – element určuje klávesové zkratky pro příkazy.  
   
- Příkazy může mít jeden a duální vazeb klíče s nimi spojených. CTRL + S pro je například jednu vazbu klíče **Uložit** příkaz. Duální vazeb klíče vyžadují dvě po sobě jdoucích kombinace kláves pro spuštění příkazu. Příklad duální vazby klíče je CTRL + K, CTRL + K nastavení záložky.  
+ Příkazy může mít jeden a duální klávesové zkratky, které jsou k nim má přiřazené. Příkladem jednoho vazbu klíče je CTRL + S pro **Uložit** příkazu. Duální klávesové zkratky vyžadují dvě po sobě jdoucích kombinace kláves pro spuštění příkazu. Příklad duální vazba klíče je CTRL + K, CTRL + K, chcete-li nastavit záložky.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,15 +39,15 @@ KeyBinding element určuje klávesové zkratky pro příkazy.
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|Identifikátor GUID|Požadováno.|  
+|identifikátor GUID|Požadováno.|  
 |id|Požadováno.|  
-|editor|Požadováno. Editor GUID označuje kontext úpravy, pro kterou bude klávesová zkratka aktivní. Hodnota oboru globální vazba je "guidVSStd97".|  
-|key1|Požadováno. Platné hodnoty patří všechny typable alfanumerických znaků a také letopočty šestnáctkové hodnoty 0 x před sebou a [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
-|mod1|Volitelné. Libovolnou kombinaci kláves CTRL, ALT a SHIFT oddělte mezerou.|  
-|key2|Volitelné. Platné hodnoty patří všechny typable alfanumerických znaků a také letopočty šestnáctkové hodnoty 0 x před sebou a [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
-|mod2|Volitelné. Libovolnou kombinaci kláves CTRL, ALT a SHIFT oddělte mezerou.|  
-|emulátor|Volitelné.|  
-|Podmínka|Volitelné. V tématu [podmíněné atributy](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|editor|Požadováno. Identifikátor GUID editoru určuje kontext úprav, pro kterou bude klávesová zkratka aktivní. Hodnota oboru globální vazby je "guidVSStd97".|  
+|key1|Požadováno. Platné hodnoty jsou všechny typable alfanumerické znaky a dvěma číslicemi šestnáctkových hodnot předchází 0 x a [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
+|mod1|Volitelné. Libovolnou kombinaci CTRL, ALT a SHIFT odděleny mezerou.|  
+|key2|Volitelné. Platné hodnoty jsou všechny typable alfanumerické znaky a dvěma číslicemi šestnáctkových hodnot předchází 0 x a [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
+|mod2|Volitelné. Libovolnou kombinaci CTRL, ALT a SHIFT odděleny mezerou.|  
+|Emulátor|Volitelné.|  
+|Podmínka|Volitelné. Zobrazit [podmíněné atributy](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Podřízené elementy  
   
@@ -60,7 +60,7 @@ KeyBinding element určuje klávesové zkratky pro příkazy.
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[KeyBindings – element](../extensibility/keybindings-element.md)|Elementy KeyBinding skupin a dalších klíčových vazeb seskupení.|  
+|[KeyBindings – element](../extensibility/keybindings-element.md)|Seskupí elementy klávesové zkratky a další seskupení klávesové zkratky.|  
   
 ## <a name="example"></a>Příklad  
   
@@ -74,5 +74,5 @@ KeyBinding element určuje klávesové zkratky pro příkazy.
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Element klíčových vazeb](../extensibility/keybindings-element.md)   
+ [Keybindings – Element](../extensibility/keybindings-element.md)   
  [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

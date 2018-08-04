@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2031657091a2209d4e358998159581d2159a5443
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: b909c1df4aa776f0f92d72c679ecdacb42227c18
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251202"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510487"
 ---
 # <a name="register-an-expression-evaluator"></a>Registrace vyhodnocovače výrazů
 > [!IMPORTANT]
@@ -104,7 +104,7 @@ namespace EEMC
  EE knihovna DLL opakovaně implementuje `DllRegisterServer` funkce k registraci v prostředí modelu COM, stejně jako Visual Studio.  
   
 > [!NOTE]
->  Yoou kódu registru ukázkový kód MyCEE lze najít v souboru *dllentry.cpp*, který se nachází v programu VSIP instalace v části EnVSDK\MyCPkgs\MyCEE.  
+>  Kód MyCEE ukázkový kód registru najdete v souboru *dllentry.cpp*, který se nachází v programu VSIP instalace v části EnVSDK\MyCPkgs\MyCEE.  
   
 ### <a name="dll-server-process"></a>Proces serveru knihovny DLL  
  Při registraci EE, server knihovny DLL:  

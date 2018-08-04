@@ -14,19 +14,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23cc1db46870d77e6c137ab621c970e730b9cd0e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
-ms.translationtype: HT
+ms.openlocfilehash: ae7b34df55593f07adeaffe8d654b59629baaae5
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497138"
+ms.locfileid: "39510907"
 ---
 # <a name="expose-project-objects"></a>Vystavení objektů projektu
-Typy vlastních projektů může poskytovat objekty automatizace Pokud chcete povolit přístup k projektu pomocí rozhraní automatizace. Každý typ projektu se očekává poskytování standardní <xref:EnvDTE.Project> automatizační objekt, který přistupuje z <xref:EnvDTE.Solution>, které obsahuje kolekci všech projektů, které jsou otevřeny v integrovaném vývojovém prostředí. Každá položka v projektu má být vystavené <xref:EnvDTE.ProjectItem> objektu k němu přistupovat pomocí `Project.ProjectItems`. Kromě těchto objektů automatizace standardní projekty můžete nabídnout objekty automatizace specifické pro projekt.  
-  
- Můžete vytvořit vlastní automatizace na kořenové úrovni objekty, ke kterým může přistupovat s pozdní vazbou pomocí objektu DTE kořenové `DTE.<customeObjectName>` nebo `DTE.GetObject("<customObjectName>")`. Například Visual C++ vytvoří kolekce projektů specifické pro projekt jazyka C++ volá *umístěním* , který můžete přistupovat pomocí `DTE.VCProjects` nebo `DTE.GetObject("VCProjects")`. Můžete také vytvořit `Project.Object`, který je jedinečný pro typ projektu `Project.CodeModel`, což může být dotázán na jeho nejvíce odvozenému objektu a `ProjectItem`, která zveřejňuje `ProjectItem.Object` a `ProjectItem.FileCodeModel`.  
-  
- Je běžné konvence pro projekty vystavit do kolekce projektů vlastní, specifické pro projekt. Například [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] vytvoří kolekci C++ určitého projektu, který potom můžete přistupovat pomocí `DTE.VCProjects` nebo `DTE.GetObject("VCProjects")`. Můžete také vytvořit `Project.Object`, který je jedinečný pro typ projektu `Project.CodeModel`, což může být dotázán na jeho nejvíce odvozenému objektu `ProjectItem`, která zveřejňuje `ProjectItem.Object`a `ProjectItem.FileCodeModel`.  
+
+Typy vlastních projektů může poskytovat objekty automatizace Pokud chcete povolit přístup k projektu pomocí rozhraní automatizace. Každý typ projektu se očekává poskytování standardní <xref:EnvDTE.Project> automatizační objekt, který přistupuje z <xref:EnvDTE.Solution>, které obsahuje kolekci všech projektů, které jsou otevřeny v integrovaném vývojovém prostředí. Každá položka v projektu má být vystavené <xref:EnvDTE.ProjectItem> objektu k němu přistupovat pomocí `Project.ProjectItems`. Kromě těchto objektů automatizace standardní projekty můžete nabídnout objekty automatizace specifické pro projekt.
+
+Můžete vytvořit vlastní automatizace na kořenové úrovni objekty, ke kterým může přistupovat s pozdní vazbou pomocí objektu DTE kořenové `DTE.<customObjectName>` nebo `DTE.GetObject("<customObjectName>")`. Například Visual C++ vytvoří kolekce projektu specifické pro projekt jazyka C++ s názvem *umístěním* , který můžete přistupovat pomocí `DTE.VCProjects` nebo `DTE.GetObject("VCProjects")`. Můžete také vytvořit `Project.Object`, který je jedinečný pro typ projektu `Project.CodeModel`, což může být dotázán na jeho nejvíce odvozenému objektu a `ProjectItem`, která zveřejňuje `ProjectItem.Object` a `ProjectItem.FileCodeModel`.
+
+Je běžné konvence pro projekty vystavit do kolekce projektů vlastní, specifické pro projekt. Například [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] vytvoří kolekci C++ určitého projektu, který potom můžete přistupovat pomocí `DTE.VCProjects` nebo `DTE.GetObject("VCProjects")`. Můžete také vytvořit `Project.Object`, který je jedinečný pro typ projektu `Project.CodeModel`, což může být dotázán na jeho nejvíce odvozenému objektu `ProjectItem`, která zveřejňuje `ProjectItem.Object`a `ProjectItem.FileCodeModel`.  
   
 ## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Abyste mohli přispívat objekt VSPackage specifické pro projekt  
   
@@ -93,5 +94,6 @@ Typy vlastních projektů může poskytovat objekty automatizace Pokud chcete po
   
      Vlastní `Projects` objektu kolekce je vstupním bodem usnadnění práce pro zbývající část váš model automatizace projektu. Je také přístupné z vašeho projektu objekt <xref:EnvDTE.Solution> kolekci projektu. Po vytvoření odpovídající položky kódu a registru, které poskytují zákazníky prostřednictvím `Projects` kolekci objektů, implementace musí poskytovat zbývající standardní objekty modelu projektu. Další informace najdete v tématu [projektu modelování](../../extensibility/internals/project-modeling.md).  
   
-## <a name="see-also"></a>Viz také:  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>
+## <a name="see-also"></a>Viz také:
+
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d02482d6dcf0483fe40890039faff1e50fc3695
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: da9941ab179234b9afae95a63dcaaacd66daf7fa
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081423"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512145"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Vytváření aplikací ClickOnce pro ostatní uživatele nasazení
 Ne všichni vývojáři, kteří vytvářejí nasazení ClickOnce v plánu nasadit samotnými aplikacemi. Mnohé z nich stačí zabalit svoje aplikace s použitím technologie ClickOnce a poté soubory pro zákazníka, jako je například velké korporace. Zákazník bude ten, který je zodpovědný za hostování aplikací ve své síti. Toto téma popisuje některé potíže spočívající v takovýchto nasazeních ve verzích rozhraní .NET Framework starší než verze 3.5. Popisuje pak k dispozici v rozhraní .NET Framework 3.5 pomocí nové funkce "použít manifest pro vztah důvěryhodnosti" nové řešení. A konečně dojde k závěru, informace o doporučených strategiích pro vytváření ClickOnce – nasazení pro zákazníky, kteří stále používají starší verze rozhraní .NET Framework.  
@@ -54,7 +54,7 @@ Ne všichni vývojáři, kteří vytvářejí nasazení ClickOnce v plánu nasad
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>Vytvoření nasazení zákazníka pomocí manifest aplikace pro vztah důvěryhodnosti  
  ClickOnce v rozhraní .NET Framework 3.5 obsahuje novou funkci, která poskytuje vývojářům a zákazníkům nové řešení pro scénář toho, jak by měl být podepsané manifesty. ClickOnce – manifest aplikace podporuje nový prvek s názvem `<useManifestForTrust>` , která umožňuje vývojář, abyste mohli označit, že digitální podpis manifestu aplikace je to, co má být použito pro rozhodování o důvěryhodnosti. Vývojář používá nástroje pro balení ClickOnce – například *Mage.exe*, *MageUI.exe*a sady Visual Studio – zahrnout tohoto elementu v manifestu aplikace, jakož i pro vložení názvu vydavatele a název aplikace v manifestu.  
   
- Při použití `<useManifestForTrust>`, manifest nasazení nemusí podepisovat certifikátem Authenticode vydaný certifikační autoritou. Místo toho můžete být podepsány pomocí co se označuje jako certifikát podepsaný svým držitelem. Certifikát podepsaný svým držitelem vygeneruje zákazníka nebo vývojáři použít standardní nástroje rozhraní .NET Framework SDK a pak použije k manifestu nasazení pomocí nástroje pro standardní nasazení ClickOnce. Další informace najdete v tématu [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx).  
+ Při použití `<useManifestForTrust>`, manifest nasazení nemusí podepisovat certifikátem Authenticode vydaný certifikační autoritou. Místo toho můžete být podepsány pomocí co se označuje jako certifikát podepsaný svým držitelem. Certifikát podepsaný svým držitelem vygeneruje zákazníka nebo vývojáři použít standardní nástroje rozhraní .NET Framework SDK a pak použije k manifestu nasazení pomocí nástroje pro standardní nasazení ClickOnce. Další informace najdete v tématu [MakeCert](/windows/desktop/SecCrypto/makecert).  
   
  Použití certifikátu podepsaného svým držitelem pro manifest nasazení nabízí několik výhod. Odstraněním potřeby zákazníků získat nebo vytvořit vlastní certifikát Authenticode `<useManifestForTrust>` zjednodušuje nasazení pro zákazník, a zároveň umožní vývojářům udržovat svoji vlastní identitu značky v aplikaci. Výsledkem je sada podepsaných nasazení, které jsou bezpečnější a mají jedinečné identity aplikace. Tím se eliminují potenciální konflikt, který může být z nasazení stejné aplikace na více zákazníků.  
   

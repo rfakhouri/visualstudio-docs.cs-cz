@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89689df19e5002c4c757d5a84c9263f8c40a10e7
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 249ea0c20bc47f63999a08962ba6cf7d1effd2b1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388186"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513270"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Rychlý start: Nejdřív se podívejte na integrovaném vývojovém prostředí sady Visual Studio
 
@@ -104,12 +104,16 @@ By se vyskytnou potíže při použití sady Visual Studio, nebo pokud máte ná
 
 Jsme se zabývali jenom některé funkce sady Visual Studio k seznámit s uživatelským rozhraním. Chcete-li podrobněji:
 
-- Podrobnější prohlídku sady Visual Studio a dokonce i dabble v ladění, v [přehled integrovaném vývojovém prostředí sady Visual Studio](../ide/visual-studio-ide.md)
+> [!div class="nextstepaction"]
+> [Rychlý start: Přizpůsobení integrovaného vývojového prostředí](../ide/quickstart-personalize-the-ide.md)
 
-- Přejděte **prvky obecné uživatelského rozhraní** část dokumentace k VS, která přejde do větší hloubky týkající se oken, jako [seznam chyb](../ide/reference/error-list-window.md), [okno výstup](../ide/reference/output-window.md), [ Okno vlastností](../ide/reference/properties-window.md), a [dialogové okno Možnosti](../ide/reference/options-dialog-box-visual-studio.md)
+> [!div class="nextstepaction"]
+> [Rychlý start: Psaní kódu v editoru](../ide/quickstart-editor.md)
+
+> [!div class="nextstepaction"]
+> [Rychlý start: Projekty a řešení](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Viz také:
 
-- [Rychlý start: Přizpůsobení integrovaného vývojového prostředí](../ide/personalizing-the-visual-studio-ide.md)
-- [Rychlý start: Psaní kódu v editoru](../ide/quickstart-editor.md)
-- [Rychlý start: Projekty a řešení](../ide/quickstart-projects-solutions.md)
+- [Přehled prostředí IDE sady Visual Studio](../ide/visual-studio-ide.md)
+- [Funkce sady Visual Studio 2017](../ide/advanced-feature-overview.md)

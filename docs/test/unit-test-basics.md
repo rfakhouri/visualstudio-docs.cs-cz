@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f9f95b2e4aa6eda9b87c8f7b8d999d84b72c9a5
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: d9c49816fb412a7c52e3d9e63fd0e4ec5675e7c3
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468309"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511445"
 ---
 # <a name="unit-test-basics"></a>Základní informace o testování částí
 
@@ -24,7 +24,7 @@ Zkontrolujte, že je váš kód funguje podle očekávání tím vytváření a 
 
 Testování částí má největší vliv na kvalitu kódu, pokud je to nedílná součást pracovního postupu vývoje software. Jakmile napíšete funkce nebo další blok kódu aplikace, vytvořte testy jednotek, které ověří chování kódu v reakci na standard, hranice a správné případy vstupních dat a kontrolují žádné explicitní nebo implicitní předpoklady v kódu. S *vývoj řízený testy*, vytvořte jednotkové testy před napsáním kódu, proto použijete jako dokumentace k návrhu a funkční specifikace testů jednotek.
 
-Můžete rychle vytvořit projekty testů a testovací metody v kódu nebo ručně vytvořit testy podle potřeby. Když pomocí funkce IntelliTest dá prozkoumat kód .NET, můžete vygenerovat testovací data a sady testování částí. Pro každý příkaz v kódu se generuje zkušební vstup, který tento příkaz spustí. Zjistěte, jak [generování testů jednotek pro kód](http://msdn.microsoft.com/library/dn823749.aspx).
+Můžete rychle vytvořit projekty testů a testovací metody v kódu nebo ručně vytvořit testy podle potřeby. Když pomocí funkce IntelliTest dá prozkoumat kód .NET, můžete vygenerovat testovací data a sady testování částí. Pro každý příkaz v kódu se generuje zkušební vstup, který tento příkaz spustí. Zjistěte, jak [generování testů jednotek pro kód](generate-unit-tests-for-your-code-with-intellitest.md).
 
 Průzkumník testů také můžete spustit třetích stran a open source rozhraní pro testování částí, které mají implementované rozhraní doplněk Průzkumníka testů. Můžete přidat řadu tyto architektury prostřednictvím Správce rozšíření sady Visual Studio a v galerii sady Visual Studio. Zobrazit [nainstalovat rozhraní pro testování jednotky třetí strany](../test/install-third-party-unit-test-frameworks.md)
 

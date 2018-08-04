@@ -10,31 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f19cbb3a86a45d0c6732435e08ffae408631c57
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923946"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513090"
 ---
 # <a name="draw-shapes-and-paths"></a>Kreslení tvarů a cest
+
 V Návrháři XAML *tvar* je přesně to, co byste očekávali. Příklad: obdélník, kruh nebo elipsu. A *cesta* je flexibilnější verze tvaru. Můžete třeba je změnit tvar nebo kombinovat společně na formulář nové obrazce.
 
- Tvarů a cest používá vektorovou grafiku, takže jejich škálování i na displejích s vysokým rozlišením. Pokud chcete získat další informace o vektorové grafiky, naleznete v tématu [co jsou vektorové grafiky](https://www.youtube.com/watch?v=MoCSwF0n-io) nebo [vektorové grafiky](http://www.webopedia.com/TERM/V/vector_graphics.html).
-
- **V tomto tématu:**
-
--   [Nakreslit obrazec](#Shape)
-
--   [Nakreslení cesty](#Path)
-
--   [Převod tvaru na cestu](#Convert)
-
--   [Spojit cesty](#Combine)
-
--   [Vytvořit složenou cestu](#Compound)
-
--   [Vytvořit ořezovou cestu](#Clipping)
+Tvarů a cest používá vektorovou grafiku, takže jejich škálování i na displejích s vysokým rozlišením. Pokud chcete získat další informace o vektorové grafiky, naleznete v tématu [co jsou vektorové grafiky](https://www.youtube.com/watch?v=MoCSwF0n-io) nebo [vektorové grafiky](http://www.webopedia.com/TERM/V/vector_graphics.html).
 
 ##  <a name="Shape"></a> Nakreslit obrazec
  Tvary můžete najít **prostředky** panelu.

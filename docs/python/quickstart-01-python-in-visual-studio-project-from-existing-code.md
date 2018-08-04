@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67ec0f2744bceb4436c429efa62e13cce35ee2e8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8bd6bf071b66f3736ab5dc64920aad892fe1186b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781614"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511598"
 ---
-# <a name="quickstart-create-a-python-project-from-existing-code"></a>Rychlý start: vytvoření projektu Pythonu z existujícího kódu
+# <a name="quickstart-create-a-python-project-from-existing-code"></a>Rychlý start: Vytvoření projektu Pythonu z existujícího kódu
 
 Jakmile [nainstalována podpora Pythonu v sadě Visual Studio 2017](installing-python-support-in-visual-studio.md), snadno převést existující kód Python do projektu sady Visual Studio.
 
@@ -27,7 +27,7 @@ Jakmile [nainstalována podpora Pythonu v sadě Visual Studio 2017](installing-p
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-8. V případě potřeby spusťte program stisknutím kombinace kláves Ctrl + F5 nebo výběrem **ladit > Spustit bez ladění**.
+V případě potřeby spustit program stisknutím klávesy **Ctrl**+**F5** nebo jeho výběru **ladění** > **spustit bez ladění**.
 
 ## <a name="next-steps"></a>Další kroky
 
@@ -36,6 +36,6 @@ Jakmile [nainstalována podpora Pythonu v sadě Visual Studio 2017](installing-p
 
 ## <a name="see-also"></a>Viz také:
 
-- [Ruční určení existující interpret Pythonu](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
-- [Instalace podpory Pythonu v sadě Visual Studio 2015 a starší](installing-python-support-in-visual-studio.md).
-- [Umístění instalace](installing-python-support-in-visual-studio.md#install-locations).
+- [Ručně identifikovat existující interpret Pythonu](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Instalace podpory Pythonu v sadě Visual Studio 2015 a starší](installing-python-support-in-visual-studio.md)
+- [Umístění instalace](installing-python-support-in-visual-studio.md#install-locations)

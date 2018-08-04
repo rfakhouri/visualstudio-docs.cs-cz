@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80acb4dd08c9785d17187f6048d7133232b0bf6f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a16044657b197229253f93fc6aea6130a4522f64
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078439"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512181"
 ---
 # <a name="create-bootstrapper-packages"></a>Vytváření balíčků bootstrapperu
 Instalační program je obecný instalační program, který můžete konfigurovat k rozpoznání a instalování distribuovatelných součástí, jako je například Instalační služby systému Windows (*MSI*) soubory a programy. Instalační program se také nazývá zaváděcí nástroj. To je programován sadou XML manifestů, které mohou specifikovat metadata pro správu instalace součásti.  Každý distribuovatelnou komponentu, nebo požadovaných součástí, která se zobrazí v **požadavky** dialogové okno pro ClickOnce je balíček zaváděcího nástroje. Balíček zaváděcího nástroje je skupina adresářů a souborů, které obsahují soubory manifestu, které popisují, jak by měly být nainstalovány kontrolu požadovaných součástí. 
@@ -86,10 +86,10 @@ V následující tabulce jsou uvedeny vlastnosti, které jsou automaticky napln�
 |--------------|-----------------|  
 |ApplicationName|Název aplikace.|  
 |Vlastnost ProcessorArchitecture|Procesor a bits slova spustitelný soubor zaměřený platformy. Následující hodnoty:<br /><br /> -Intel<br />-IA64<br />– AMD64|  
-|[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Číslo verze pro operační systémy Microsoft Windows 95, Windows 98 nebo Windows ME. Syntaxe verze je Major.Minor.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Číslo verze pro operační systémy Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 nebo Windows 7. Syntaxe verze je Major.Minor.ServicePack.|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Verze sestavení Instalační služby systému Windows (msi.dll) ke spuštění během instalace.|  
-|[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Tato vlastnost nastavena, pokud má uživatel oprávnění správce. Hodnoty jsou true nebo false.|  
+|[Version9x](/windows/desktop/Msi/version9x)|Číslo verze pro operační systémy Microsoft Windows 95, Windows 98 nebo Windows ME. Syntaxe verze je Major.Minor.ServicePack.|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|Číslo verze pro operační systémy Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 nebo Windows 7. Syntaxe verze je Major.Minor.ServicePack.|  
+|[VersionMSI](/windows/desktop/Msi/versionmsi)|Verze sestavení Instalační služby systému Windows (msi.dll) ke spuštění během instalace.|  
+|[AdminUser](/windows/desktop/Msi/adminuser)|Tato vlastnost nastavena, pokud má uživatel oprávnění správce. Hodnoty jsou true nebo false.|  
 |InstallMode|Režim instalace označuje, odkud je nutné komponentu nainstalovat. Následující hodnoty:<br /><br /> -HomeSite – požadavky jsou nainstalovány z webu dodavatele.<br />-SpecificSite – požadavky jsou nainstalovány z umístění, které jste vybrali.<br />-SameSite – požadavky jsou nainstalovány ze stejného umístění jako aplikace.|  
   
 ## <a name="separate-redistributables-from-application-installations"></a>Samostatné redistribuovatelností z instalací aplikace  

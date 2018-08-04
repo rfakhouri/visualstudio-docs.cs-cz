@@ -15,31 +15,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4efd55fbe297e46fb448bbd2087f36df54a1d56c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2e1bc542665e69a3997b8633ca5e351875f06848
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927344"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513171"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Výchozí klávesové zkratky v sadě Visual Studio
 
-Další informace o usnadnění klávesnice najdete v tématu [Rady a tipy k usnadnění](../ide/reference/accessibility-tips-and-tricks.md) a [postupy: výhradní používání klávesnice](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Další informace o přístupnost přes klávesnici, naleznete v tématu [a tipy k přístupnosti](../ide/reference/accessibility-tips-and-tricks.md) a [postupy: výhradní používání klávesnice](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
-Výběrem příslušné klávesovou zkratku můžete zpřístupnit různé příkazů a oken v sadě Visual Studio. Toto téma uvádí výchozí zkratky pro obecné vývoj profil, který je možné vybrat při instalaci sady Visual Studio. Bez ohledu na to, které jste vybrali profil můžete identifikovat zástupce pro příkaz otevřením **možnosti** dialogové okno, rozšíření **prostředí** uzel a pak vyberete **klávesnice**. Klávesové zkratky můžete také upravit přiřazením různých zkratek jakémukoli příkazu.
+Řadu příkazů a oken v sadě Visual Studio můžete přistupovat výběrem příslušné klávesové zkratky. V tomto tématu jsou uvedeny výchozí klávesové zkratky pro obecný vývojový profil, který jste možná vybrali při instalaci sady Visual Studio. Bez ohledu na to, který profil vyberete, můžete identifikovat klávesovou zkratku pro příkaz tak, že otevřete **možnosti** dialogovém okně rozšíření **prostředí** uzel a poté volbou **klávesnice**. Klávesové zkratky můžete také upravit přiřazením různých zkratek jakémukoli příkazu.
 
-Seznam běžných klávesové zkratky a další produktivitu informace najdete v tématu [výchozí klávesové zkratky pro často používané příkazy v sadě Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [klávesové tipy](../ide/tips-and-tricks-for-visual-studio.md), a [ Tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md).
+Seznam běžných klávesových zkratek a další informace o zvýšení produktivity naleznete v tématu [výchozí klávesové zkratky pro často používané příkazy v sadě Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [klávesnice tipy](../ide/tips-and-tricks-for-visual-studio.md), a [ Tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md).
 
 Oddíly v následující tabulce obsahují příkazy, které jsou globální, takže jsou přístupné z libovolného místa v sadě Visual Studio pomocí klávesových zkratek:
 
 |||||
 |-|-|-|-|
 |[Analýza](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Upravit](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Projekt](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
-|[Architektura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Editor kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Projekt a řešení kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Průzkumníka testů](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
-|[Sestavení](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Soubor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refaktorovat](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Nástroje](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
-|[Třídy zobrazení kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Pomoc](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Průzkumník řešení](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Zobrazení](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
+|[Architektura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Kontextové nabídky editoru](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Kontextové nabídky řešení a projektu](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Průzkumník testů](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
+|[Sestavení](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Soubor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refaktoring](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Nástroje](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
+|[Zobrazení tříd – kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Pomoc](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Průzkumník řešení](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Zobrazení](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
 |[Ladění](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Zátěžový Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Tým](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Window](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
-|[Ladicí program kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Další kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
+|[Kontextové nabídky ladicího programu](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Ostatní kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Kontextové nabídky Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Centrum diagnostiky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
 ##  <a name="bkmk_global"></a> Globální
@@ -66,11 +66,11 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Build.Compile|**CTRL + F7**|
 |Build.RunCodeAnalysisonSolution|**ALT + F11**|
 
-###  <a name="bkmk_classview"></a> Třídy zobrazení kontextové nabídky
+###  <a name="bkmk_classview"></a> Zobrazení tříd – kontextové nabídky
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
-|ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**ALT + zadejte**|
+|ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**Alt + Enter**|
 
 ###  <a name="bkmk_debug"></a> Ladění
 
@@ -106,7 +106,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Debug.Memory4|**Ctrl + Alt + M, 4**|
 |Debug.Modules|**Ctrl + Alt + U**|
 |Debug.ParallelStacks|**Ctrl + Shift + D, S**|
-|Debug.ParallelWatch1|**Ctrl + Shift + D 1**|
+|Debug.ParallelWatch1|**Ctrl + Shift + D, 1**|
 |Debug.ParallelWatch2|**Ctrl + Shift + D, 2**|
 |Debug.ParallelWatch3|**Ctrl + Shift + D, 3**|
 |Debug.ParallelWatch4|**Ctrl + Shift + D, 4**|
@@ -131,7 +131,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Debug.StepOverCurrentProcess|**Ctrl + Alt + F10**|
 |Debug.StopDebugging|**SHIFT + F5**|
 |Debug.StopPerformanceAnalysis|**Shift + Alt + F2**|
-|Debug.Tasks|**Ctrl + Shift + D, KB**|
+|Debug.Tasks|**Ctrl + Shift + D, K**|
 |Debug.Threads|**Ctrl + Alt + H**|
 |Debug.ToggleBreakpoint|**F9**|
 |Debug.ToggleDisassembly|**CTRL + F11**|
@@ -140,7 +140,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Debug.Watch3|**Ctrl + Alt + W, 3**|
 |Debug.Watch4|**Ctrl + Alt + W, 4**|
 
-###  <a name="bkmk_debugger"></a> Ladicí program kontextové nabídky
+###  <a name="bkmk_debugger"></a> Kontextové nabídky ladicího programu
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -158,9 +158,9 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 
 |Příkazy|Klávesové zkratky|
 |--------------|-|
-|Edit.Copy|**CTRL + C**<br /><br /> or<br /><br /> **CTRL + Ins**|
+|Edit.Copy|**CTRL + C**<br /><br /> or<br /><br /> **CTRL + in**|
 |Edit.Cut|**CTRL + X**<br /><br /> or<br /><br /> **Shift + Delete**|
-|Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> or<br /><br /> **Ctrl + Shift + Ins**|
+|Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> or<br /><br /> **Ctrl + Shift + in**|
 |Edit.Delete|**Odstranit**|
 |Edit.Find|**CTRL + F**|
 |Edit.FindAllReferences|**Shift+F12**|
@@ -189,7 +189,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.NextBookmark|**CTRL + K, Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + N**|
 |Edit.OpenFile|**Ctrl + Shift + G**|
-|Edit.Paste|**CTRL + V**<br /><br /> or<br /><br /> **SHIFT + Ins**|
+|Edit.Paste|**CTRL + V**<br /><br /> or<br /><br /> **SHIFT + in**|
 |Edit.PreviousBookmark|**CTRL + K, Ctrl + P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + P**|
 |Edit.QuickFindSymbol|**Shift + Alt + F12**|
@@ -204,23 +204,23 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.SizeControlDown|**Ctrl + Shift + šipka dolů**|
 |Edit.SizeControlDownGrid|**Shift + šipka dolů**|
 |Edit.SizeControlLeft|**Ctrl + Shift + šipka doleva**|
-|Edit.SizeControlLeftGrid|**Shift + šipka vlevo**|
-|Edit.SizeControlRight|**Ctrl + Shift + šipka vpravo**|
-|Edit.SizeControlRightGrid|**Shift + šipka vpravo**|
+|Edit.SizeControlLeftGrid|**Shift + šipka doleva**|
+|Edit.SizeControlRight|**Ctrl + Shift + šipka doprava**|
+|Edit.SizeControlRightGrid|**Shift + šipka doprava**|
 |Edit.SizeControlUp|**Ctrl + Shift + šipka nahoru**|
 |Edit.SizeControlUpGrid|**Shift + šipka nahoru**|
 |Edit.StopSearch|**ALT + F3, S**|
 |Edit.SurroundWith|**CTRL + K, Ctrl + S**|
 |Edit.Undo|**CTRL + Z**<br /><br /> or<br /><br /> **Alt + Backspace**|
 
-###  <a name="bkmk_editorContext"></a> Editor kontextové nabídky
+###  <a name="bkmk_editorContext"></a> Kontextové nabídky editoru
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
 |EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels|**ALT + F9, L**|
 |EditorContextMenus.CodeWindow.CodeMap.ShowItem|**CTRL +.**|
 |EditorContextMenus.CodeWindow.Execute|**Ctrl + Alt + F5**|
-|EditorContextMenus.CodeWindow.GoToView|**CTRL + M, kombinaci kláves Ctrl + G**|
+|EditorContextMenus.CodeWindow.GoToView|**CTRL + M, Ctrl + G**|
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL + K, Ctrl + O**|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL + K, Ctrl + T**<br /><br /> or<br /><br /> **CTRL + K, T**|
 
@@ -253,13 +253,13 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
-|LoadTest.JumpToCounterPane|**CTRL + R, D:**|
+|LoadTest.JumpToCounterPane|**CTRL + R, Q**|
 
-###  <a name="bkmk_otherContext"></a> Další kontextové nabídky
+###  <a name="bkmk_otherContext"></a> Ostatní kontextové nabídky
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
-|OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Vložení**|
+|OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Vložit**|
 
 ###  <a name="bkmk_project"></a> Projekt
 
@@ -268,7 +268,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Project.AddExistingItem|**Shift + Alt + A**|
 |Project.AddNewItem|**Ctrl + Shift + A**|
 |Project.ClassWizard|**Ctrl + Shift + X**|
-|Project.Override|**Ctrl + Alt + Ins**|
+|Project.Override|**Ctrl + Alt + in**|
 |Project.Previewchanges|**ALT +; Alt + C**|
 |Project.Publishselectedfiles|**ALT +; Alt + P**|
 |Project.Replaceselectedfilesfromserver|**ALT +; Alt + R**|
@@ -280,14 +280,14 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |ProjectandSolutionContextMenus.Item.MoveDown|**ALT + Šipka dolů**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**ALT + Šipka nahoru**|
 
-###  <a name="bkmk_refactor"></a> Refaktorovat
+###  <a name="bkmk_refactor"></a> Refaktoring
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
 |Refactor.EncapsulateField|**CTRL + R, Ctrl + E**|
 |Refactor.ExtractInterface|**CTRL + R, Ctrl + I**|
 |Refactor.ExtractMethod|**CTRL + R, Ctrl + M**|
-|Refactor.RemoveParameters|**CTRL + R, kombinace kláves Ctrl + V**|
+|Refactor.RemoveParameters|**CTRL + R, Ctrl + V**|
 |Refactor.Rename|**CTRL + R, Ctrl + R**|
 |Refactor.ReorderParameters|**CTRL + R, Ctrl + O**|
 
@@ -304,11 +304,11 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
 |Team.Git.GoToGitBranches|**CTRL + 0, Ctrl + N**<br /><br /> or<br /><br /> **CTRL + 0, N**|
-|Team.Git.GoToGitChanges|**CTRL + 0, kombinaci kláves Ctrl + G**<br /><br /> or<br /><br /> **CTRL + 0, G**|
+|Team.Git.GoToGitChanges|**CTRL + 0, Ctrl + G**<br /><br /> or<br /><br /> **CTRL + 0, G**|
 |Team.Git.GoToGitCommits|**CTRL + 0, Ctrl + O**<br /><br /> or<br /><br /> **CTRL + 0, O**|
 |Team.TeamExplorerSearch|**CTRL +.**|
 
-###  <a name="bkmk_TFcontext"></a> Team Foundation kontextové nabídky
+###  <a name="bkmk_TFcontext"></a> Kontextové nabídky Team Foundation
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -321,7 +321,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |TeamFoundationContextMenus.Commands.GoToReports|**CTRL + 0, Ctrl + R**<br /><br /> or<br /><br /> **CTRL + 0, R**|
 |TeamFoundationContextMenus.Commands.GoToSettings|**CTRL + 0, Ctrl + S**<br /><br /> or<br /><br /> **CTRL + 0, S**|
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL + 0, Ctrl + A**<br /><br /> or<br /><br /> **CTRL + 0, A**|
-|TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL + 0, Ctrl + W**<br /><br /> or<br /><br /> **CTRL + W 0**|
+|TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL + 0, Ctrl + W**<br /><br /> or<br /><br /> **CTRL + 0, W**|
 
 ###  <a name="bkmk_test"></a> Test
 
@@ -385,7 +385,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |View.PropertyPages|**SHIFT + F4**|
 |View.ResourceView|**Ctrl + Shift + E**|
 |View.ServerExplorer|**Ctrl + Alt + S**|
-|View.ShowSmartTag|**Alt + Shift + F10**<br /><br /> or<br /><br /> **Ctrl+.**|
+|View.ShowSmartTag|**Shift + Alt + F10**<br /><br /> or<br /><br /> **Ctrl+.**|
 |View.SolutionExplorer|**Ctrl + Alt + L**|
 |View.SQLServerObjectExplorer|**CTRL +\\, Ctrl + S**|
 |View.TaskList|**CTRL +\\, T**<br /><br /> or<br /><br /> **CTRL +\\, Ctrl + T**|
@@ -419,15 +419,15 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Window.PreviousDocumentWindowNav|**Ctrl + Shift + Tab**|
 |Window.PreviousPane|**Shift + Alt + F6**|
 |Window.PreviousSplitPane|**SHIFT + F6**|
-|Window.PreviousTab|**Ctrl + Alt + PgUp**<br /><br /> or<br /><br /> **Ctrl + PgUp**|
-|Window.PreviousTabandAddtoSelection|**Ctrl + Shift + Alt + PgUp**|
+|Window.PreviousTab|**Ctrl + Alt + Page Up**<br /><br /> or<br /><br /> **CTRL + PAGE UP**|
+|Window.PreviousTabandAddtoSelection|**Ctrl + Shift + Alt + Page Up**|
 |Window.PreviousToolWindowNav|**Shift + Alt + F7**|
 |Window.QuickLaunch|**Ctrl+Q**|
 |Window.QuickLaunchPreviousCategory|**Ctrl+Shift+Q**|
 |Window.ShowDockMenu|**ALT +-**|
 |Window.ShowEzMDIFileList|**Ctrl + Alt + Šipka dolů**|
 |Window.SolutionExplorerSearch|**CTRL +;**|
-|Window.WindowSearch|**ALT +.**|
+|Window.WindowSearch|**ALT + "**|
 
 ###  <a name="bkmk_windowsazure"></a> Azure
 
@@ -445,17 +445,17 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom|**Alt + End**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToTop|**Alt + Home**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up|**ALT + Šipka nahoru**|
-|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up5|**ALT + PgUp**|
-|OtherContextMenus.MicrosoftDataEntityDesignContext.Refactor.Rename|**CTRL + R, R**|
+|OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up5|**ALT + PAGE UP**|
+|OtherContextMenus.MicrosoftDataEntityDesignContext.Refactor.Rename|**CTRL + R R**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.RemovefromDiagram|**Shift + Del**|
 |View.EntityDataModelBrowser|**CTRL + 1**|
 |View.EntityDataModelMappingDetails|**CTRL + 2**|
 
-##  <a name="class-diagram"></a>Diagram – třída
+##  <a name="class-diagram"></a>Diagram tříd
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
-|ClassDiagram.Collapse|**Poče-**|
+|ClassDiagram.Collapse|**NUM-**|
 |ClassDiagram.Expand|**NUM +**|
 |Edit.Delete|**Ctrl + Del**|
 |Edit.ExpandCollapseBaseTypeList|**Shift + Alt + B**|
@@ -478,7 +478,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
-|OtherContextMenus.ColumnContext.InsertColumn|**Vložení**|
+|OtherContextMenus.ColumnContext.InsertColumn|**Vložit**|
 |OtherContextMenus.DbTableContext.Add.Column|**CTRL + L**|
 
 ##  <a name="difference-viewer"></a>Prohlížeč rozdílů
@@ -515,7 +515,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**Vložení**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**Vložit**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
@@ -541,7 +541,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
-|OtherContextMenus.HTMLContext.GoToController|**CTRL + M, kombinaci kláves Ctrl + G**|
+|OtherContextMenus.HTMLContext.GoToController|**CTRL + M, Ctrl + G**|
 
 ##  <a name="html-editor-design-view"></a>Zobrazení návrhu editoru HTML
 
@@ -562,21 +562,21 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |View.ASP.NETNonvisualControls|**Ctrl + Shift + N**|
 |View.EditMaster|**CTRL + M, Ctrl + M**|
 |View.NextView|**CTRL + PAGE DOWN**|
-|View.ShowSmartTag|**Alt + Shift + F10**|
+|View.ShowSmartTag|**Shift + Alt + F10**|
 |View.ViewMarkup|**SHIFT + F7**|
-|Window.PreviousTab|**Ctrl + PgUp**|
+|Window.PreviousTab|**CTRL + PAGE UP**|
 
 ##  <a name="html-editor-source-view"></a>Zobrazení zdroje editoru HTML
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
-|OtherContextMenus.HTMLContext.GoToController|**CTRL + M, kombinaci kláves Ctrl + G**|
+|OtherContextMenus.HTMLContext.GoToController|**CTRL + M, Ctrl + G**|
 |View.NextView|**CTRL + PAGE DOWN**|
 |View.SynchronizeViews|**Ctrl + Shift + Y**|
 |View.ViewDesigner|**SHIFT + F7**|
-|Window.PreviousTab|**Ctrl + PgUp**|
+|Window.PreviousTab|**CTRL + PAGE UP**|
 
-##  <a name="layer-diagram"></a>Diagram vrstev
+##  <a name="layer-diagram"></a>Diagram vrstvy
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
@@ -597,7 +597,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Resources.Other|**CTRL + 6**|
 |Resources.Strings|**CTRL + 1**|
 
-##  <a name="merge-editor-window"></a>Sloučení okno editoru
+##  <a name="merge-editor-window"></a>Okno Editor slučování
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
@@ -622,9 +622,9 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |--------------|------------------------|
 |CommitAllEdits|**Shift + Alt + U**|
 |SQL.ExpandWildcards|**CTRL + R, E**<br /><br /> or<br /><br /> **CTRL + R, Ctrl + E**|
-|SQL.FullyqualifyNames|**CTRL + R, D:**<br /><br /> or<br /><br /> **CTRL + R, kombinace kláves Ctrl + Q**|
+|SQL.FullyqualifyNames|**CTRL + R, Q**<br /><br /> or<br /><br /> **CTRL + R, Ctrl + Q**|
 |SQL.MovetoSchema|**CTRL + R, M**<br /><br /> or<br /><br /> **CTRL + R, Ctrl + M**|
-|SQL.Rename|**F2**<br /><br /> or<br /><br /> **CTRL + R, R**<br /><br /> or<br /><br /> **CTRL + R, Ctrl + R**|
+|SQL.Rename|**F2**<br /><br /> or<br /><br /> **CTRL + R R**<br /><br /> or<br /><br /> **CTRL + R, Ctrl + R**|
 |ViewFileInScriptPanel|**Shift + Alt + PAGE DOWN**|
 
 ##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Datové nástroje Microsoft SQL Server, editor T-SQL
@@ -634,9 +634,9 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |CommitAllEdits|**Shift + Alt + U**|
 |SQL.ExecuteWithDebugger|**ALT + F5**|
 |SQL.ExpandWildcards|**CTRL + R, E**<br /><br /> or<br /><br /> **CTRL + R, Ctrl + E**|
-|SQL.FullyqualifyNames|**CTRL + R, D:**<br /><br /> or<br /><br /> **CTRL + R, kombinace kláves Ctrl + Q**|
+|SQL.FullyqualifyNames|**CTRL + R, Q**<br /><br /> or<br /><br /> **CTRL + R, Ctrl + Q**|
 |SQL.MovetoSchema|**CTRL + R, M**<br /><br /> or<br /><br /> **CTRL + R, Ctrl + M**|
-|SQL.Rename|**F2**<br /><br /> or<br /><br /> **CTRL + R, R**<br /><br /> or<br /><br /> **CTRL + R, Ctrl + R**|
+|SQL.Rename|**F2**<br /><br /> or<br /><br /> **CTRL + R R**<br /><br /> or<br /><br /> **CTRL + R, Ctrl + R**|
 |SQL.TSqlEditorCancelQuery|**ALT + Break**|
 |SQL.TSqlEditorExecuteQuery|**Ctrl + Shift + E**|
 |SQL.TSqlEditorResultsAsFile|**CTRL + D, F**|
@@ -696,9 +696,9 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |--------------|------------------------|
 |Edit.BreakLine|**Zadejte**|
 |Edit.CharLeft|**Šipka doleva**|
-|Edit.CharLeftExtend|**Shift + šipka vlevo**|
+|Edit.CharLeftExtend|**Shift + šipka doleva**|
 |Edit.CharRight|**Šipka doprava**|
-|Edit.CharRightExtend|**Shift + šipka vpravo**|
+|Edit.CharRightExtend|**Shift + šipka doprava**|
 |Edit.InsertTab|**Karta**|
 |Edit.LineDown|**Šipka dolů**|
 |Edit.LineDownExtend|**Shift + šipka dolů**|
@@ -711,7 +711,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.SelectionCancel|**ESC**|
 |Edit.SizeControlDown|**Ctrl + Shift + šipka dolů**|
 |Edit.SizeControlLeft|**Ctrl + Shift + šipka doleva**|
-|Edit.SizeControlRight|**Ctrl + Shift + šipka vpravo**|
+|Edit.SizeControlRight|**Ctrl + Shift + šipka doprava**|
 |Edit.SizeControlUp|**Ctrl + Shift + šipka nahoru**|
 |Edit.TabLeft|**Shift + Tab**|
 |View.ReportData|**Ctrl + Alt + D**|
@@ -781,17 +781,17 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |--------------|------------------------|
 |Edit.BreakLine|**Zadejte**<br /><br /> or<br /><br /> **Shift + Enter**|
 |Edit.CharLeft|**Šipka doleva**|
-|Edit.CharLeftExtend|**Shift + šipka vlevo**|
+|Edit.CharLeftExtend|**Shift + šipka doleva**|
 |Edit.CharLeftExtendColumn|**Shift + Alt + šipka doleva**|
 |Edit.CharRight|**Šipka doprava**|
-|Edit.CharRightExtend|**Shift + šipka vpravo**|
+|Edit.CharRightExtend|**Shift + šipka doprava**|
 |Edit.CharRightExtendColumn|**Shift + Alt + šipka vpravo**|
 |Edit.CharTranspose|**Ctrl+T**|
 |Edit.ClearBookmarks|**CTRL + K, Ctrl + L**|
 |Edit.CollapseAllOutlining|**CTRL + M, Ctrl + A**|
 |Edit.CollapseCurrentRegion|**CTRL + M, Ctrl + S**|
 |Edit.CollapseTag|**CTRL + M, Ctrl + T**|
-|Edit.CollapsetoDefinitions|**CTRL + M, Ctrl + O**|
+|Edit.CollapseToDefinitions|**CTRL + M, Ctrl + O**|
 |Edit.CommentSelection|**CTRL + K, Ctrl + C**|
 |Edit.CompleteWord|**CTRL + MEZERNÍK**<br /><br /> or<br /><br /> **ALT + Šipka vpravo**|
 |Edit.CopyParameterTip|**Ctrl + Shift + Alt + C**|
@@ -817,12 +817,12 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.LineDown|**Šipka dolů**|
 |Edit.LineDownExtend|**Shift + šipka dolů**|
 |Edit.LineDownExtendColumn|**Shift + Alt + Šipka dolů**|
-|Edit.LineEnd|**End**|
+|Edit.LineEnd|**ukončení**|
 |Edit.LineEndExtend|**Shift + End**|
 |Edit.LineEndExtendColumn|**Shift + Alt + End**|
 |Edit.LineOpenAbove|**Ctrl + Enter**|
 |Edit.LineOpenBelow|**Ctrl + Shift + Enter**|
-|Edit.LineStart|**domácí**|
+|Edit.LineStart|**Domovská stránka**|
 |Edit.LineStartExtend|**Shift + Home**|
 |Edit.LineStartExtendColumn|**Shift + Alt + Home**|
 |Edit.LineTranspose|**Shift + Alt + T**|
@@ -835,11 +835,11 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.MoveSelectedLinesDown|**ALT + Šipka dolů**|
 |Edit.MoveSelectedLinesUp|**ALT + Šipka nahoru**|
 |Edit.NextHighlightedReference|**Ctrl + Shift + šipka dolů**|
-|Edit.OvertypeMode|**Vložení**|
+|Edit.OvertypeMode|**Vložit**|
 |Edit.PageDown|**Page Down**|
 |Edit.PageDownExtend|**SHIFT + PAGE DOWN**|
 |Edit.PageUp|**Page Up**|
-|Edit.PageUpExtend|**SHIFT + PgUp**|
+|Edit.PageUpExtend|**SHIFT + PAGE UP**|
 |Edit.ParameterInfo|**Ctrl + Shift + mezerník**|
 |Edit.PasteParameterTip|**Ctrl + Shift + Alt + P**|
 |Edit.PeekBackward|**Ctrl + Alt +-**|
@@ -853,7 +853,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.SelectCurrentWord|**CTRL + W**|
 |Edit.SelectionCancel|**Řídicí**|
 |Edit.SelectToLastGoBack|**CTRL +=**|
-|Edit.ShowCodeLensMenu|**ALT +.**|
+|Edit.ShowCodeLensMenu|**ALT + "**|
 |Edit.StopHidingCurrent|**CTRL + M, Ctrl + U**|
 |Edit.StopOutlining|**CTRL + M, Ctrl + P**|
 |Edit.SwapAnchor|**CTRL + K, Ctrl + A**|
@@ -867,43 +867,43 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.UncommentSelection|**CTRL + K, Ctrl + U**|
 |Edit.ViewBottom|**CTRL + PAGE DOWN**|
 |Edit.ViewBottomExtend|**Ctrl + Shift + PAGE DOWN**|
-|Edit.ViewTop|**Ctrl + PgUp**|
-|Edit.ViewTopExtend|**Ctrl + Shift + PgUp**|
+|Edit.ViewTop|**CTRL + PAGE UP**|
+|Edit.ViewTopExtend|**Ctrl + Shift + Page Up**|
 |Edit.ViewWhiteSpace|**CTRL + R, Ctrl + W**|
 |Edit.WordDeleteToEnd|**CTRL + Delete**|
 |Edit.WordDeleteToStart|**Ctrl + Backspace**|
 |Edit.WordNext|**Ctrl + šipka vpravo**|
-|Edit.WordNextExtend|**Ctrl + Shift + šipka vpravo**|
+|Edit.WordNextExtend|**Ctrl + Shift + šipka doprava**|
 |Edit.WordNextExtendColumn|**Šipka Ctrl + Shift + Alt + šipka vpravo**|
 |Edit.WordPrevious|**Ctrl + šipka doleva**|
 |Edit.WordPreviousExtend|**Ctrl + Shift + šipka doleva**|
-|Edit.WordPreviousExtendColumn|**Šipka Ctrl + Shift + Alt + šipka vlevo**|
+|Edit.WordPreviousExtendColumn|**Ctrl + Shift + Alt + šipka vlevo šipku**|
 |Edit.WordTranspose|**Ctrl + Shift + T**|
-|EditorContextMenus.CodeWindow.ExecuteInInteractive|**ALT + zadejte**|
-|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|**ALT +.**|
+|EditorContextMenus.CodeWindow.ExecuteInInteractive|**Alt + Enter**|
+|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|**ALT + "**|
 |OtherContextMenus.HTMLContext.ViewinPageInspector|**CTRL + K, Ctrl + G**|
 |TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|**ALT + PAGE DOWN**|
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|**ALT + PgUp**|
+|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|**ALT + PAGE UP**|
 
-##  <a name="uml-activity-diagram"></a>Diagram činnosti UML
+##  <a name="uml-activity-diagram"></a>Diagram činností UML
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |Edit.Delete|**Shift + Del**|
 
-##  <a name="uml-class-diagram"></a>Diagramu tříd UML
+##  <a name="uml-class-diagram"></a>Diagram tříd UML
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|**Shift + Del**|
 
-##  <a name="uml-component-diagram"></a>Diagram komponent UML
+##  <a name="uml-component-diagram"></a>Diagram komponenty UML
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|**Shift + Del**|
 
-##  <a name="uml-use-case-diagram"></a>Diagram případů použití UML
+##  <a name="uml-use-case-diagram"></a>Diagram případu použití UML
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
@@ -913,7 +913,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
-|Edit.NewAccelerator|**Vložení**|
+|Edit.NewAccelerator|**Vložit**|
 |Edit.NextKeyTyped|**CTRL + W**|
 
 ##  <a name="vc-dialog-editor"></a>Editor dialogových oken VC
@@ -929,14 +929,14 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.ScrollLineDown|**Ctrl + šipka dolů**|
 |Edit.ScrollLineUp|**Ctrl + šipka nahoru**|
 |Edit.SizeControlDown|**Shift + šipka dolů**|
-|Edit.SizeControlLeft|**Shift + šipka vlevo**|
-|Edit.SizeControlRight|**Shift + šipka vpravo**|
+|Edit.SizeControlLeft|**Shift + šipka doleva**|
+|Edit.SizeControlRight|**Shift + šipka doprava**|
 |Edit.SizeControlUp|**Shift + šipka nahoru**|
 |Format.AlignBottoms|**Ctrl + Shift + šipka dolů**|
 |Format.AlignCenters|**SHIFT + F9**|
 |Format.AlignLefts|**Ctrl + Shift + šipka doleva**|
 |Format.AlignMiddles|**F9**|
-|Format.AlignRights|**Ctrl + Shift + šipka vpravo**|
+|Format.AlignRights|**Ctrl + Shift + šipka doprava**|
 |Format.AlignTops|**Ctrl + Shift + šipka nahoru**|
 |Format.ButtonBottom|**CTRL + B**|
 |Format.ButtonRight|**CTRL + R**|
@@ -970,9 +970,9 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Image.LineTool|**CTRL + L**|
 |Image.MagnificationTool|**CTRL + M**|
 |Image.Magnify|**Ctrl + Shift + M**|
-|Image.NewImageType|**Vložení**|
+|Image.NewImageType|**Vložit**|
 |Image.NextColor|**CTRL +]**<br /><br /> or<br /><br /> **Ctrl + šipka vpravo**|
-|Image.NextRightColor|**Ctrl + Shift +]**<br /><br /> or<br /><br /> **Ctrl + Shift + šipka vpravo**|
+|Image.NextRightColor|**Ctrl + Shift +]**<br /><br /> or<br /><br /> **Ctrl + Shift + šipka doprava**|
 |Image.OutlinedEllipseTool|**Shift + Alt + P**|
 |Image.OutlinedRectangleTool|**Shift + Alt + R**|
 |Image.OutlinedRoundedRectangleTool|**Shift + Alt + W**|
@@ -996,7 +996,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
-|Edit.NewString|**Vložení**|
+|Edit.NewString|**Vložit**|
 
 ##  <a name="view-designer"></a>Návrhář zobrazení
 
@@ -1023,12 +1023,12 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |--------------|------------------------|
 |Edit.BreakLine|**Zadejte**|
 |Edit.CharLeft|**Šipka doleva**|
-|Edit.CharLeftExtend|**Shift + šipka vlevo**|
+|Edit.CharLeftExtend|**Shift + šipka doleva**|
 |Edit.CharRight|**Šipka doprava**|
-|Edit.CharRightExtend|**Shift + šipka vpravo**|
-|Edit.DocumentEnd|**End**|
+|Edit.CharRightExtend|**Shift + šipka doprava**|
+|Edit.DocumentEnd|**ukončení**|
 |Edit.DocumentEndExtend|**Shift + End**|
-|Edit.DocumentStart|**domácí**|
+|Edit.DocumentStart|**Domovská stránka**|
 |Edit.DocumentStartExtend|**Shift + Home**|
 |Edit.InsertTab|**Karta**|
 |Edit.LineDown|**Šipka dolů**|
@@ -1042,7 +1042,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.SelectionCancel|**Řídicí**|
 |Edit.SizeControlDown|**Ctrl + Shift + šipka dolů**|
 |Edit.SizeControlLeft|**Ctrl + Shift + šipka doleva**|
-|Edit.SizeControlRight|**Ctrl + Shift + šipka vpravo**|
+|Edit.SizeControlRight|**Ctrl + Shift + šipka doprava**|
 |Edit.SizeControlUp|**Ctrl + Shift + šipka nahoru**|
 |Edit.TabLeft|**Shift + Tab**|
 
@@ -1087,7 +1087,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.IncreaseFilterLevel|**ALT +.**|
 |Edit.ListMembers|**CTRL + K, L**<br /><br /> or<br /><br /> **CTRL + K, Ctrl + L**<br /><br /> or<br /><br /> **CTRL + J**|
 |Edit.ParameterInfo|**CTRL + K, P**<br /><br /> or<br /><br /> **CTRL + K, Ctrl + P**<br /><br /> or<br /><br /> **Ctrl + Shift + mezerník**|
-|Edit.QuickInfo|**CTRL + K, I**<br /><br /> or<br /><br /> **CTRL + K, Ctrl + I**|
+|Edit.QuickInfo|**CTRL + K, můžu**<br /><br /> or<br /><br /> **CTRL + K, Ctrl + I**|
 |WorkflowDesigner.Collapse|**CTRL + E, Ctrl + C**<br /><br /> or<br /><br /> **CTRL + E, C**|
 |WorkflowDesigner.CollapseAll|or|
 |WorkflowDesigner.ConnectNodes|**CTRL + E, Ctrl + F**<br /><br /> or<br /><br /> **CTRL + E, F**|
@@ -1099,7 +1099,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |WorkflowDesigner.NavigateThroughDesigner|**Ctrl + Alt + F6**|
 |WorkflowDesigner.Restore|**CTRL + E, Ctrl + R**<br /><br /> or<br /><br /> **CTRL + E, R**|
 |WorkflowDesigner.ShowHideArgumentDesigner|**CTRL + E, Ctrl + A**<br /><br /> or<br /><br /> **CTRL + E, A**|
-|WorkflowDesigner.ShowHideImportsDesigner|**CTRL + E, Ctrl + I**<br /><br /> or<br /><br /> **CTRL + E, I**|
+|WorkflowDesigner.ShowHideImportsDesigner|**CTRL + E, Ctrl + I**<br /><br /> or<br /><br /> **CTRL + E, můžu**|
 |WorkflowDesigner.ShowHideOverviewMap|**CTRL + E, Ctrl + O**<br /><br /> or<br /><br /> **CTRL + E, O**|
 |WorkflowDesigner.ShowHideVariableDesigner|**CTRL + E, Ctrl + V**<br /><br /> or<br /><br /> **CTRL + E, V**|
 |WorkflowDesigner.ToggleSelection|**CTRL + E, Ctrl + S**<br /><br /> or<br /><br /> **CTRL + E, S**|
@@ -1114,14 +1114,14 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Design.ShowHandles|**F9**|
 |Design.ZoomIn|**Ctrl + Alt +=**|
 |Design.ZoomOut|**Ctrl + Alt +-**|
-|Návrhář možnosti|**Ctrl + Shift +;**|
+|Možnosti návrháře|**Ctrl + Shift +;**|
 |Format.EditText|**F2**|
 |Format.ResetLayout.All|**Ctrl + Shift + R**|
 |Spuštění kódu projektu|**CTRL + F9**|
-|Timeline.Hide (pouze Blend)|**CTRL + H**|
-|Timeline.Lock (pouze Blend)|**CTRL + L**|
-|Timeline.Show (pouze Blend)|**Ctrl + Shift + H**|
-|Timeline.Unlock (pouze Blend)|**Ctrl + Shift + L**|
+|Timeline.Hide (pouze v Blendu)|**CTRL + H**|
+|Timeline.Lock (pouze v Blendu)|**CTRL + L**|
+|Timeline.Show (pouze v Blendu)|**Ctrl + Shift + H**|
+|Timeline.Unlock (pouze v Blendu)|**Ctrl + Shift + L**|
 |View.EdgeLeftMoveLeft|**Ctrl + Shift +,**|
 |View.EdgeLeftMoveRight|**Ctrl + Shift +.**|
 |View.EdgeRightMoveLeft|**Ctrl + Shift + Alt +,**|
@@ -1148,7 +1148,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |XsdDesigner.ShowGraphView|**CTRL + 3**|
 |XsdDesigner.ShowStartView|**CTRL + 1**|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Editor obrázků pro ikony](/cpp/windows/image-editor-for-icons)
 - [Používání atributu IntelliSense](../ide/using-intellisense.md)

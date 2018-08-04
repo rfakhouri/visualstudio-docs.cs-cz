@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95203738486b7e1304bc2a26032a5d0193d1e2e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180269"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512301"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Rychlý start: Projekty a řešení
 
@@ -178,11 +178,17 @@ Pokud chcete zkontrolovat, že je funkční testování částí, zvolte **testo
 
 Blahopřejeme k dokončení tohoto rychlého startu! V dalším kroku můžete chtít prozkoumat některé další rychlé starty pro sadu Visual Studio, nebo si přečtěte Další informace o tom, jak [vytváření projektů a řešení](../ide/creating-solutions-and-projects.md).
 
+> [!div class="nextstepaction"]
+> [Rychlý start: Nejdřív se podívejte na integrovaném vývojovém prostředí sady Visual Studio](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Rychlý start: Přizpůsobení sady Visual Studio](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [Rychlý start: Psaní kódu v editoru](../ide/quickstart-editor.md)
+
 ## <a name="see-also"></a>Viz také:
 
-- [Rychlý start: Nejdřív se podívejte na integrovaném vývojovém prostředí sady Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Rychlý start: Přizpůsobení integrovaného vývojového prostředí Visual Studio a editor](../ide/quickstart-personalize-the-ide.md)
-- [Rychlý start: Psaní kódu v editoru](../ide/quickstart-editor.md)
 - [Správa vlastností projektu a řešení](../ide/managing-project-and-solution-properties.md)
 - [Správa odkazů v projektu](../ide/managing-references-in-a-project.md)
 - [Vývoj kódu v sadě Visual Studio bez projektů nebo řešení](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

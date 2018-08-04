@@ -15,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e04bb46d167478b85f4b6f8b4d6df903bd46e8b7
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: e809af75f0a4a47da6af30a3d93748401ca4609d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704613"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512002"
 ---
 # <a name="list-call-stack-command"></a>Listovat zásobník volání – příkaz
-Zobrazí aktuální zásobníku volání.
+Zobrazí aktuální zásobník volání.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,71 +36,71 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 ```
 
 ## <a name="arguments"></a>Arguments
- `index` Volitelný parametr. Nastaví aktuální rámec zásobníku a zobrazí žádný výstup.
+ `index` Volitelné. Nastaví aktuální rámec zásobníku a nezobrazí se žádný výstup.
 
 ## <a name="switches"></a>Přepínače
- Každý přepínač lze vyvolat pomocí jeho dokončení formuláře nebo zkrácené formě.
+ Každý přepínač je možné vyvolat pomocí jeho dokončení formuláře nebo krátký tvar.
 
- / Počet:`number` [nebo] / c:`number`
+ / Počet:`number` [nebo] sady`number`
 
- Volitelné. Maximální počet zásobníky volání k zobrazení. Výchozí hodnota neomezená.
+ Volitelné. Maximální počet zásobníky volání pro zobrazení. Výchozí hodnota neomezený.
 
- / ShowTypes:`yes` &#124; `no` [nebo] / t:`yes`&#124;`no`
+ / Showtypeszobrazittypy:`yes` &#124; `no` [nebo] t:`yes`&#124;`no`
 
- Volitelné. Určuje, jestli se má zobrazit typy parametrů. Výchozí hodnota je `yes`.
+ Volitelné. Určuje, zda chcete-li zobrazit typy parametrů. Výchozí hodnota je `yes`.
 
- / ShowNames:`yes` &#124; `no` [nebo] / n:`yes`&#124;`no`
+ / Shownameszobrazitnázvy:`yes` &#124; `no` [nebo] / n:`yes`&#124;`no`
 
- Volitelné. Určuje, jestli se má zobrazit názvy parametrů. Výchozí hodnota je `yes`.
+ Volitelné. Určuje, jestli se mají zobrazovat názvy parametrů. Výchozí hodnota je `yes`.
 
- / ShowValues:`yes` &#124; `no` [nebo] / v:`yes`&#124;`no`
+ / Showvalueszobrazithodnoty:`yes` &#124; `no` [nebo] / v:`yes`&#124;`no`
 
- Volitelné. Určuje, jestli se mají zobrazovat hodnoty parametrů. Výchozí hodnota je `yes`.
+ Volitelné. Určuje, zda chcete-li zobrazit hodnoty parametrů. Výchozí hodnota je `yes`.
 
- / ShowModule:`yes` &#124; `no` [nebo] / m:`yes`&#124;`no`
+ / Showmodulezobrazitmoduly:`yes` &#124; `no` [nebo] / m:`yes`&#124;`no`
 
- Volitelné. Určuje, jestli se má zobrazit na název modulu. Výchozí hodnota je `yes`.
+ Volitelné. Určuje, jestli se mají zobrazovat název modulu. Výchozí hodnota je `yes`.
 
- / ShowLineOffset:`yes` &#124; `no` [nebo] /#:`yes`&#124;`no`
+ / Showlineoffsetzobrazitodsazenířádku:`yes` &#124; `no` [nebo] které:`yes`&#124;`no`
 
- Volitelné. Určuje, jestli se má zobrazit posun řádku. Výchozí hodnota je `no`.
+ Volitelné. Určuje, jestli se mají zobrazovat posun řádku. Výchozí hodnota je `no`.
 
- / ShowByteOffset:`yes` &#124; `no` [nebo] / b:`yes`&#124;`no`
+ / Showbyteoffsetzobrazitodsazeníbajtu:`yes` &#124; `no` [nebo] / b:`yes`&#124;`no`
 
- Volitelné. Určuje, jestli se má zobrazit posun bajtů. Výchozí hodnota je `no`.
+ Volitelné. Určuje, jestli se má zobrazit bajtovým posunem. Výchozí hodnota je `no`.
 
- / ShowLanguage:`yes` &#124; `no` [nebo] l:`yes`&#124;`no`
+ / Showlanguagezobrazitjazyk:`yes` &#124; `no` [nebo] l:`yes`&#124;`no`
 
  Volitelné. Určuje, jestli se má zobrazit jazyk. Výchozí hodnota je `no`.
 
- / IncludeCallsAcrossThreads:`yes` &#124; `no` [nebo] / i:`yes`&#124;`no`
+ / Includecallsacrossthreadszahrnoutvolánínapříčvlákny:`yes` &#124; `no` [nebo] / i:`yes`&#124;`no`
 
- Volitelné. Určuje, jestli zahrnují volání do nebo z jiných vláken. Výchozí hodnota je `no`.
+ Volitelné. Určuje, jestli se mají zahrnout volání do nebo z jiných vláken. Výchozí hodnota je `no`.
 
- / ShowExternalCode:`yes`&#124;`no`
+ / Showexternalcodezobrazitexterníkód:`yes`&#124;`no`
 
- Volitelné. Určuje, jestli se má zobrazit pouze můj kód pro zásobník volání. Když pouze můj kód je vypnutý, zobrazí se všechny bez uživatelského kódu. Pokud pouze můj kód na, zobrazí se jiný uživatelský kód jako `[external]` ve výstupu zásobník volání.
+ Volitelné. Určuje, zda má být zobrazen pouze můj kód pro zásobník volání. Když funkce pouze můj kód je vypnuté, zobrazí se všechny neuživatelský kód. Po zapnutí funkce pouze můj kód neuživatelském kódu se zobrazí jako `[external]` ve výstupu zásobník volání.
 
- Přístup z více vláken:`n`
+ Vlákna:`n`
 
- Volitelné. Zobrazí zásobník volání pro přístup z více vláken `n`. Pokud není zadaný žádný přístup z více vláken, zobrazuje zásobník volání pro aktuální vlákno.
+ Volitelné. Zobrazí zásobník volání pro vlákno `n`. Pokud není zadána žádná vlákna, zobrazí se zásobník volání pro aktuální vlákno.
 
 ## <a name="remarks"></a>Poznámky
- Změny provedené v přepínači nebo argumenty platí pro budoucí volání tohoto příkazu. Pokud vydáte Debug.ListCallStackby sám sebe, zobrazí se celý zásobník volání. Pokud například zadáte index,
+ Změny provedené argumenty nebo přepínače platí pro budoucí volání tohoto příkazu. Pokud vydáte Debug.ListCallStackby samotného, zobrazí se celý zásobník volání. Pokud například zadáte indexu,
 
 ```cmd
 Debug.ListCallStack 2
 ```
 
- aktuální rámec zásobníku bude nastavena na tomto snímku (v tomto případě druhý snímek).
+ aktuální rámec zásobníku je nastaven na tomto snímku (v tomto případě druhý snímek).
 
- Je také možné zapsat tento příkaz pomocí jeho předem definovaný alias kb. Například můžete zadat
+ Tento příkaz pomocí jeho předem definovaný alias, můžete je zapsat také kb. Například můžete zadat
 
 ```cmd
 kb 2
 ```
 
- nastavit aktuální rámec zásobníku na druhý rámečku.
+ nastavit aktuální rámec zásobníku na druhý snímek.
 
 ## <a name="example"></a>Příklad
 

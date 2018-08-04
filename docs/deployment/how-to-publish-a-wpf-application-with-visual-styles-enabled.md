@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2620a008a90b988aa80df8d3c8563163ff92d997
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d9c97725f4d78923384d7a3ec9f327a7dd2aca7b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078375"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512955"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Postupy: publikování aplikace WPF s povolenými vizuálními styly
 Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závislosti na motiv uživatelem. Ve výchozím nastavení nejsou povoleny vizuální styly pro aplikace Windows Presentation Foundation (WPF), takže je potřeba povolit ručně. Povolení vizuálních stylů pro aplikace WPF a pak tuto aplikaci publikovat řešení způsobí chybu. Toto téma popisuje, jak vyřešit tuto chybu a proces pro publikování aplikace WPF s povolenými vizuálními styly. Další informace o vizuálních stylů, najdete v části [vizuální styly přehled](/windows/desktop/Controls/visual-styles-overview). Další informace o chybové zprávě naleznete v tématu [řešení konkrétních chyb v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -161,8 +161,9 @@ cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\App
   
  Po provedení těchto kroků můžete přesunout publikované soubory do umístění, ze kterého chcete, aby koncoví uživatelé k instalaci aplikace. Pokud máte v úmyslu často aktualizovat řešení, můžete přesunout tyto příkazy do skriptu a spusťte skript pokaždé, když že publikujete novou verzi.  
   
-## <a name="see-also"></a>Viz také:  
- [Řešení konkrétních chyb v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
- [Vizuální styly – přehled](/windows/desktop/Controls/visual-styles-overview)   
- [Povolení vizuálních stylů](https://msdn.microsoft.com/library/bb773175.aspx)   
- [Příkazové řádky](/dotnet/framework/tools/developer-command-prompt-for-vs)
+## <a name="see-also"></a>Viz také:
+
+-[Řešení konkrétních chyb v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [Vizuální styly – přehled](/windows/desktop/Controls/visual-styles-overview)
+- [Povolení vizuálních stylů](/windows/desktop/Controls/cookbook-overview)
+- [Příkazové řádky](/dotnet/framework/tools/developer-command-prompt-for-vs)

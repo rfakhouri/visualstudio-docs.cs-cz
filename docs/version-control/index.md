@@ -1,8 +1,8 @@
 ---
 layout: LandingPage
-title: Správa verzí v sadě Visual Studio | Služby VSTS & TFS
-description: Průvodce Začínáme se službou správy verzí v sadě Viual Studio
-keywords: Služby VSTS, sady TFS, Správa verzí
+title: Správa verzí v sadě Visual Studio | VSTS a TFS
+description: Průvodce Začínáme se správou verzí v sadě Viual Studio
+keywords: VSTS, TFS, Správa verzí
 author: steved0x
 ms.manager: douge
 ms.author: sdanie
@@ -12,19 +12,19 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: c06d612adc6f765b655f9fbe850b73ef5f7f8617
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4af331926cdcf1532f0672539b08426b433052bf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279905"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510819"
 ---
 # <a name="version-control-in-visual-studio"></a>Správa verzí v sadě Visual Studio
 
-Systémy kontroly verze můžete sledovat změny v kódu v čase. Při provádění změn systému správy verzí pořídí snímek vašich souborů. Systém správy verzí uloží tento snímek trvale, takže pokud to potřebujete ho můžete odvolat později. Visual Studio poskytuje [Git](/vsts/git/index) a [Team Foundation verze ovládacího prvku (TFVC)](/vsts/tfvc/index). Při rozhodování mezi těmito dvěma systémy, najdete v části [výběru ovládacího prvku správnou verzi pro váš projekt](/vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json).
+Systémy správy verzí můžete sledovat změny kódu v čase. Při provádění změn, systém správy verzí pořídí snímek vašich souborů. Systém správy verzí ukládá snímky trvale, takže pokud ho potřebujete ji můžete odvolat později. Visual Studio poskytuje [Git](/vsts/git/index) a [Team Foundation verze ovládacího prvku (TFVC)](/vsts/tfvc/index). Při rozhodování mezi těmito dvěma systémy, najdete v článku [výběr správné správy verzí pro projekt](/vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json).
 
 ## <a name="git"></a>Git
-Git je systém správy nejčastěji používaných verzí dnes a rychle stává standard pro správu verzí. Git je distribuovaný systém správy verzí, což znamená, že vaše místní kopii kódu je ovládací prvek úložiště úplnou verzi. Zkontrolujte tyto plně funkční místní úložiště, které je snadné práce offline nebo vzdáleně. Potvrdit práci místně a potom synchronizovat vaší kopie úložiště, ve kterém se bude pro kopii na serveru. Tato zlepší se liší od centralizované verzí, které klienti musí synchronizovat kód s serveru před vytvořením nové verze kódu.
+Git je systém správy verzí nejčastěji používané ještě dnes a se rychle mění na standard pro správu verzí. Git je distribuovaný systém správy verzí, což znamená, že vaše místní kopie kódu je úložiště úplnou verzi ovládacího prvku. Zkontrolujte tyto plně funkční místní úložiště, které usnadňují vzdálenou nebo offline práci. Potvrďte svou práci místně a pak sesynchronizujete své úložiště s kopií na serveru. Toto paradigma se liší od centralizované správy verzí ve kterém klienti musí provést synchronizaci kódu serveru před vytvořením nové verze kódu.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -56,7 +56,7 @@ Git je systém správy nejčastěji používaných verzí dnes a rychle stává 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Začínáme s Gitem pomocí sady Visual Studio</h3>
+                        <h3>Seznámení s Gitem s použitím sady Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@ Git je systém správy nejčastěji používaných verzí dnes a rychle stává 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Klonovat existující úložiště Git</h3>
+                        <h3>Naklonování existujícího úložiště Git</h3>
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@ Team Foundation – správa verzí (TFVC) je centralizovaný systém správy ver
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Další informace TFVC</h3>
+                        <h3>Přečtěte si TFVC</h3>
                     </div>
                 </div>
             </div>
@@ -135,7 +135,7 @@ Team Foundation – správa verzí (TFVC) je centralizovaný systém správy ver
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Zkontrolujte váš kód</h3>
+                        <h3>Kontrola kódu</h3>
                     </div>
                 </div>
             </div>
@@ -147,6 +147,6 @@ Team Foundation – správa verzí (TFVC) je centralizovaný systém správy ver
 
 ## <a name="resources"></a>Prostředky
 
-- [Pro adresáře Git](https://git-scm.com/book/en/v2)
-- [Plánování migrace na Git](https://docs.microsoft.com/azure/devops/git/centralized-to-git)
-- [Migrace z TFVC do Git](https://docs.microsoft.com/azure/devops/git/migrate-from-tfvc-to-git)
+- [Kniha pro Git](https://git-scm.com/book/en/v2)
+- [Naplánujte si migraci na Git](https://docs.microsoft.com/azure/devops/git/centralized-to-git)
+- [Migrace od TFVC ke Gitu](https://docs.microsoft.com/azure/devops/git/migrate-from-tfvc-to-git)

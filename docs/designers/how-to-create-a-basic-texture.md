@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: c97e26ef8a580078c371319881425a5c9f8ff297
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924457"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512626"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Postupy: vytvoření základní textury
 Tento dokument ukazuje, jak použít Editor obrázků pro vytvoření základní textury.
@@ -54,11 +54,11 @@ Tento dokument ukazuje, jak použít Editor obrázků pro vytvoření základní
 5.  Na panelu nástrojů editoru obrázků **vyplnit** nástroj a potom stiskněte a podržte **Shift** klíče a zvolit libovolný bod v bitové kopii. Použití **Shift** klíč způsobí, že alfa hodnota barvy výplně nahradit barvu v obrázku; v opačném případě se používá hodnotu alfa zapojil barvu výplně spolu s barvu v obrázku.
 
     > [!IMPORTANT]
-    >  Tento krok, společně s výběr barvy v předchozím kroku, zajistí, že základní bitová kopie je připravená pro cílovou texturu "terč", který se vykreslí. Když je na obrázku vyplněna průhledný černý –, a proto je černá ohraničení cíle – bude existovat žádné třepící artefakty kolem cíl.
+    > Tento krok, společně s výběr barvy v předchozím kroku, zajistí, že základní bitová kopie je připravená pro cílovou texturu "terč", který se vykreslí. Když je na obrázku vyplněna průhledný černý –, a proto je černá ohraničení cíle – bude existovat žádné třepící artefakty kolem cíl.
 
 6.  Na panelu nástrojů editoru obrázků **Elipsa** nástroj.
 
-7.  Nastavte barvu popředí zcela neprůhledný černý. Nastavte hodnoty **R**, **G**, a **B** vlastností `0` a hodnota **A** vlastnost `255`.
+7.  Neprůhledný černý nastavte barvu popředí. Nastavte hodnoty **R**, **G**, a **B** vlastností `0` a hodnota **A** vlastnost `255`.
 
 8.  Nastavte barvu pozadí na bílou úplně neprůhledné. V **vlastnosti** okno v **barvy** skupiny vlastností, vyberte **pozadí**. Nastavte hodnoty **R**, **G**, **B**, a **A** vlastností `255`.
 
@@ -69,13 +69,13 @@ Tento dokument ukazuje, jak použít Editor obrázků pro vytvoření základní
 11. Použití **Elipsa** nástroj, nakreslete kruh z pixel souřadnice `(3, 3)` pixel koordinovat `(508, 508)`. Chcete-li nakreslit kruh snadněji, můžete stisknutím a podržením **Shift** klíče při kreslení.
 
     > [!NOTE]
-    >  Pixel souřadnice aktuální pozici ukazatele myši se zobrazují na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] stavový řádek.
+    > Pixel souřadnice aktuální pozici ukazatele myši se zobrazují na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] stavový řádek.
 
 12. Změna barvy pozadí. Nastavte **R** k `44`, **G** k `165`, **B** k `211`, a **A** k `255`.
 
 13. Jiné kruh čerpat pixel souřadnice `(64, 64)` pixel koordinovat `(448, 448)`.
 
-14. Změna barvy pozadí zpět na bílou úplně neprůhledné. Nastavte **R**, **G**, **B**, a **A** k `255`.
+14. Změna barvy pozadí zpět na úplně neprůhledná bílou. Nastavte **R**, **G**, **B**, a **A** k `255`.
 
 15. Jiné kruh čerpat pixel souřadnice `(128, 128)` pixel koordinovat `(384, 384)`.
 

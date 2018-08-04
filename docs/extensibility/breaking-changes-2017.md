@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f7bdcf682e1baf928d3a36a828aeaafcb6d801
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231491"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512250"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Změny v rozšíření sady Visual Studio 2017
 
@@ -97,7 +97,8 @@ Většina základních sestavení sady Visual Studio jsou již nainstalovány do
   * **HKLM\Software\Microsoft\VisualStudio\{verze}**: klíče registru vytvořené pomocí Instalační služby MSI a rozšíření vázaná na počítač.
   * **HKCU\Software\Microsoft\VisualStudio\{verze}**: vytvořených pomocí Visual Studia ukládat uživatelská nastavení klíče registru.
   * **HKCU\Software\Microsoft\VisualStudio\{verze} _Config**: kopii výše uvedené klíče Visual Studio HKLM a klíče registru sloučením *.pkgdef* souborů podle přípony.
-* Pokud chcete snížit dopad na registru, Visual Studio nyní používá [RegLoadAppKey](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724886(v=vs.85).aspx) funkce pro ukládání klíčů registru v privátní binárního souboru v rámci *[VSAPPDATA]\privateregistry.bin*. Velmi malý počet Visual Studio zkratky specifické pro zůstat v systémovém registru.
+* Pokud chcete snížit dopad na registru, Visual Studio nyní používá [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) funkce pro ukládání klíčů registru v privátní binárního souboru v rámci *[VSAPPDATA]\privateregistry.bin*. Velmi malý počet Visual Studio zkratky specifické pro zůstat v systémovém registru.
+
 * Stávající kód spuštěný v procesu sady Visual Studio to neovlivní. Visual Studio přesměruje do privátního registru, všechny operace registru pod klíčem konkrétní HKCU Visual Studio. Čtení a zápis do jiných umístění registru bude nadále používat systémového registru.
 * Externí kód bude potřebovat k načtení a čtení z tohoto souboru pro položky registru sady Visual Studio.
 

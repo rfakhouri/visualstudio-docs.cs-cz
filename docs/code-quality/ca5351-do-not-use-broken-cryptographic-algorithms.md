@@ -1,5 +1,5 @@
 ---
-title: CA5351 Nepoužívejte porušený kryptografické algoritmy
+title: 'CA5351: Nepoužívejte poškozené kryptografické algoritmy'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -10,52 +10,52 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa720459fff6cc67080fd3368cda6ed3a82bfda
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6ab1900cf9eda3fccf7606a6a645ace986bcd21d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920415"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512826"
 ---
-# <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 Nepoužívejte porušený kryptografické algoritmy
+# <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: Nepoužívejte poškozené kryptografické algoritmy
 |||
 |-|-|
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|
 |CheckId|CA5351|
 |Kategorie|Microsoft.Cryptography|
-|Narušující změna|Bez ukončování řádků|
+|Narušující změna|Pevné|
 
 > [!NOTE]
 >  Toto upozornění byl naposledy aktualizován. listopadu 2015.
 
 ## <a name="cause"></a>příčina
- Funkce algoritmu hash, jako <xref:System.Security.Cryptography.MD5> a šifrovacích algoritmů, například <xref:System.Security.Cryptography.DES> a <xref:System.Security.Cryptography.RC2> můžou zpřístupnit významné riziko a může vést k úniku citlivých informací prostřednictvím trivial útoku techniky, jako jsou útoky hrubou silou a kolize hodnot hash.
+ Funkce, jako hashování <xref:System.Security.Cryptography.MD5> a šifrovacích algoritmů, jako <xref:System.Security.Cryptography.DES> a <xref:System.Security.Cryptography.RC2> můžete zveřejnit významné riziko a může vést k úniku citlivých informací pomocí technik triviální útoků, jako jsou například útoky hrubou silou a kolize hodnot hash.
 
- Níže uvedeného seznamu kryptografických algoritmů, které se vztahují známých kryptografických útoků. Algoritmus kryptografické hodnoty hash <xref:System.Security.Cryptography.MD5> terčem útoků kolizí hash.  V závislosti na využití kolizí hash může vést k zosobnění, zneužití nebo jiných druhů útoky na systémy, které jsou závislé na jedinečný kryptografických výstup funkce algoritmu hash. Algoritmy šifrování <xref:System.Security.Cryptography.DES> a <xref:System.Security.Cryptography.RC2> jsou předmětem kryptografických útoků, které může vést k neočekávaným zpřístupnění šifrovaná data.
+ Níže uvedeného seznamu kryptografických algoritmů, které se vztahují známé kryptografického útoku. Kryptografická hodnota hash algoritmu <xref:System.Security.Cryptography.MD5> terčem útoků kolize hodnot hash.  V závislosti na využití může vést ke kolizi hash k zosobnění, manipulaci nebo jiné typy útoků na systémech, které závisí na jedinečných kryptografických výstup hashovací funkce. Algoritmy šifrování <xref:System.Security.Cryptography.DES> a <xref:System.Security.Cryptography.RC2> jsou v souladu s kryptografického útoku, které může vést k neúmyslnému zveřejnění šifrovaná data.
 
 ## <a name="rule-description"></a>Popis pravidla
- Kryptografické algoritmy nejsou považované za bezpečné a jejich použití se nedoporučuje. Algoritmus hash MD5 je náchylný kolizí známé útoky, když se bude lišit v závislosti na kontextu použít konkrétní ohrožení zabezpečení.  Jsou obzvláště citlivé délkami algoritmů hash použít k zajištění integrity dat (např. podpis souboru nebo digitální certifikát).  V tomto kontextu by útočníci vytvořit dvě samostatné částí dat, tak, aby neškodné data se můžou nahradit s škodlivá data bez změnit hodnotu hash nebo zneplatnění přidružené digitální podpis.
+ Kryptografické algoritmy nejsou považované za bezpečné a jejich použití se nedoporučuje. Algoritmus hash MD5 je náchylný k kolizí známé útoky, když se liší v závislosti na kontextu použití konkrétní ohrožení zabezpečení.  Algoritmy hash používá k zajištění integrity dat (např. podpis souboru nebo digitální certifikát) jsou snadno napadnutelný.  V tomto kontextu může útočník generovat dva samostatné druhy dat, tak, aby neškodné data se můžou nahradit se zlými úmysly daty a bez změna hodnoty hash nebo zrušení platnosti přidružený digitální podpis.
 
  Pro šifrovací algoritmy:
 
--   <xref:System.Security.Cryptography.DES> šifrování obsahuje malá velikost klíče, které by mohly být hrubou silou za méně než jeden den.
+-   <xref:System.Security.Cryptography.DES> šifrování obsahuje malá velikost klíče, které by mohly být útokem hrubou silou za kratší dobu než den.
 
--   <xref:System.Security.Cryptography.RC2> šifrování je ohrožena útoky založenými na útok související s klíčem, zjistí-li útočník matematickém vztahy mezi všechny klíčové hodnoty.
+-   <xref:System.Security.Cryptography.RC2> šifrování je náchylný k útok související s klíčem, pokud útočník zjistí matematické vztahy mezi všechny klíčové hodnoty.
 
- Toto pravidlo spustí, když se některé z výše uvedených kryptografické funkce vyhledá ve zdrojovém kódu a vyvolá upozornění pro uživatele.
+ Toto pravidlo aktivuje, když najde některý z výše uvedených kryptografické funkce ve zdrojovém kódu a vyvolá upozornění pro uživatele.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Použijte kryptograficky silnější možnosti:
 
--   Pro MD5, použít hodnoty hash v [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) rodiny (například <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+-   MD5, použijte hodnoty hash v [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) řady (třeba <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
 
 -   DES a RC2 <xref:System.Security.Cryptography.Aes> šifrování.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Pokud ho revidován kryptografických expert není potlačení upozornění od tohoto pravidla.
+ Nepotlačujte upozornění tohoto pravidla, pokud je byly zkontrolovány podle kryptografického odborníka.
 
 ## <a name="pseudo-code-example"></a>Příklad pseudo kódu
- Následující ukázka kódu pseudo znázorňuje vzoru zjištěný toto pravidlo a možné náhradní řešení.
+ Následující ukázka pseudo kódu znázorňuje, zjistí toto pravidlo a je to možné alternativy.
 
 ### <a name="md5-hashing-violation"></a>MD5 Použití algoritmu hash porušení
 
@@ -95,7 +95,7 @@ using (AesManaged encAlg = new AesManaged())
 }
 ```
 
-### <a name="des-br-br-encryption-violation"></a>DES <br /><br />Porušení šifrování
+### <a name="des-br-br-encryption-violation"></a>DES <br /><br />Šifrování porušení
 
 ```
 using System.Security.Cryptography;

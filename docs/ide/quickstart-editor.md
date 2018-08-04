@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 265e0a4c596a78e53de6fe92d837796f2e52a703
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079145"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511232"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Rychlý start: Použití editoru kódu
 
@@ -157,14 +157,21 @@ Nikdo poprvé získá přímo a je jednou z věcí, které budete muset změnit 
 
 ## <a name="next-steps"></a>Další kroky
 
-Dokončili jste v tomto rychlém startu pro editor sady Visual Studio. V dalším kroku můžete vyzkoušet si některé další rychlé starty pro vývojové prostředí sady Visual Studio, jako [rychlý start: projekty a řešení](../ide/quickstart-projects-solutions.md) nebo [rychlý start: přizpůsobení sady Visual Studio](../ide/quickstart-personalize-the-ide.md), podívejte se na informace způsoby, jak [vyhledání kódu](../ide/navigating-code.md), nebo se podívejte na odkazy na další informace o funkcích, které jsme se podívali na. V opačném případě Šťastné kódování!
+Dokončili jste v tomto rychlém startu pro editor sady Visual Studio. Dále si může vyzkoušet některé další rychlé starty pro vývojové prostředí sady Visual Studio.
+
+> [!div class="nextstepaction"]
+> [Rychlý start: Nejdřív se podívejte na integrovaném vývojovém prostředí sady Visual Studio](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Rychlý start: Přizpůsobení sady Visual Studio](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [Rychlý start: Projekty a řešení](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Viz také:
 
-- [Rychlý start: Nejdřív se podívejte na integrovaném vývojovém prostředí sady Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Rychlý start: Přizpůsobení sady Visual Studio](../ide/quickstart-personalize-the-ide.md)
-- [Rychlý start: Projekty a řešení](../ide/quickstart-projects-solutions.md)
 - [Fragmenty kódu](../ide/code-snippets.md)
+- [Vyhledání kódu](../ide/navigating-code.md)
 - [Sbalení](../ide/outlining.md)
 - [Přejít k definici a Náhled definice](../ide/go-to-and-peek-definition.md)
 - [Refactoring](../ide/refactoring-in-visual-studio.md)

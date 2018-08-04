@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ab9a2e602bf1c92fb7dee7fe35b9d33f2d578fa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b4b70c800e9dff7852d2a7aaec3ee1125932dfc1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079077"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512041"
 ---
 # <a name="image-service-and-catalog"></a>Služba bitových kopií a katalog
 Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Visual Studio Image a Image katalog zavedena v sadě Visual Studio 2015.  
@@ -165,8 +165,9 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|Identifikátor URI|[Povinné] Identifikátor URI, který definuje, kde je možné načíst image z. Může být jeden z následujících akcí:<br /><br /> -A [identifikátory Pack URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) používání aplikace pro: / / / / / autority<br />Odkaz na prostředek – absolutní komponenty<br />– Cesta k souboru, který obsahuje nativní prostředky|  
+|Identifikátor URI|[Povinné] Identifikátor URI, který definuje, kde je možné načíst image z. Může být jeden z následujících akcí:<br /><br /> -A [identifikátory Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) používání aplikace pro: / / / / / autority<br />Odkaz na prostředek – absolutní komponenty<br />– Cesta k souboru, který obsahuje nativní prostředky|  
 |Pozadí|[Volitelné] Určuje, co na pozadí, který zdroj je určena pro použití typu.<br /><br /> Může být jeden z následujících akcí:<br /><br /> *Světle:* zdroj jde použít na světla na pozadí.<br /><br /> *Tmavý:* zdroj je možné v tmavém pozadí.<br /><br /> *Funkce Vysoký kontrast:* zdroj jde použít na jakékoli na pozadí v režimu vysokého kontrastu.<br /><br /> *HighContrastLight:* zdroj je možné na pozadí světla v režimu vysokého kontrastu.<br /><br /> *HighContrastDark:* zdroj je možné v tmavém pozadí v režimu vysokého kontrastu.<br /><br /> Pokud je atribut pozadí vynechán, zdroj je možné na jakékoli na pozadí.<br /><br /> Pokud je na pozadí *světla*, *tmavě*, *HighContrastLight*, nebo *HighContrastDark*, se nikdy převrátí zdroje na barvy. Pokud je vynechán nebo nastaven na pozadí *funkce Vysoký kontrast*, inverzi barev zdroji se řídí na obrázku **AllowColorInversion** atribut.|  
+
 |||  
   
  A \<zdroj > prvek může mít nastavený právě jeden z následující volitelné dílčí prvky:  
@@ -651,7 +652,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Aktualizujte kód Refaktorovat pro použití image služby k vyžádání monikery prostřednictvím aktualizované mapování. (To může znamenat aktualizace **CrispImages** pro spravovaného kódu, nebo si vyžádat HBITMAPs nebo HICONs od služba bitových kopií a prošly kolem pro nativní kód.)  
   
 ## <a name="testing-your-images"></a>Testování obrázků  
- Nástroj Prohlížeč knihovny obrázků můžete použít k testování vaše image manifesty, abyste měli jistotu, že všechno je správně nastavená oprávnění. Nástroj v [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Pro tento nástroj a další dokumentaci najdete [tady](http://aka.ms/VSImageThemeTools).  
+ Nástroj Prohlížeč knihovny obrázků můžete použít k testování vaše image manifesty, abyste měli jistotu, že všechno je správně nastavená oprávnění. Nástroj v [Visual Studio 2015 SDK](visual-studio-sdk.md). Pro tento nástroj a další dokumentaci najdete [tady](http://aka.ms/VSImageThemeTools).  
   
 ## <a name="additional-resources"></a>Další zdroje  
   

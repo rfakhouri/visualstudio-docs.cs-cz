@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef330d96306a6490cf59cde859817cdd4a46f8c4
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468343"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513397"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -41,7 +41,7 @@ Seznamu dokončení v jazyce C# je také dostatečně inteligentní, aby odfiltr
 
 ### <a name="code-snippets-in-completion-lists"></a>Fragmenty kódu do seznamů dokončení
 
-V jazyce C# obsahuje seznam pro doplňování fragmenty kódu můžete snadno vložit předdefinované obsahy kódu do vaší aplikace. Fragmenty kódu se zobrazí v seznamu pro doplňování jako fragment [textovou zkratku](../ide/code-snippets-schema-reference.md#shortcut). Další informace o fragmenty kódu, které jsou k dispozici v jazyce C# ve výchozím nastavení najdete v tématu [fragmenty kódu v C#](../ide/visual-csharp-code-snippets.md).
+V jazyce C# obsahuje seznam pro doplňování fragmenty kódu můžete snadno vložit předdefinované obsahy kódu do vaší aplikace. Fragmenty kódu se zobrazí v seznamu pro doplňování jako fragment [textovou zkratku](../ide/code-snippets-schema-reference.md#shortcut-element). Další informace o fragmenty kódu, které jsou k dispozici v jazyce C# ve výchozím nastavení najdete v tématu [fragmenty kódu v C#](../ide/visual-csharp-code-snippets.md).
 
 ### <a name="language-keywords-in-completion-lists"></a>Klíčová slova jazyka do seznamů dokončení
 

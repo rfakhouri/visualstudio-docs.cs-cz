@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529f4eb53c2da7af9115fab4b063100f6e5d0c6a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b23d7da819a0403366260b240fa095defd0f120a
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153810"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511406"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Návod: Ruční nasazení aplikace ClickOnce, jež nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli
 Když vytvoříte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a pak mu přidělte zákazníkovi k publikování a nasazení, zákazník tradičně museli aktualizovat manifest nasazení a znovu podepsat. Který je stále upřednostňuje ve většině případů, rozhraní .NET Framework 3.5 vám umožní vytvořit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, která je možné nasadit pomocí zákazníky bez nutnosti znovu vygenerovat nový manifest nasazení. Další informace najdete v tématu [ClickOnce – nasazení aplikace pro testování a produkční servery bez opětovného podepsání](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -159,4 +159,4 @@ Když vytvoříte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 ## <a name="see-also"></a>Viz také:  
  [Mage.exe (generování manifestu a nástroj pro úpravy)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe (Manifest Generation and Editing Tool, grafický klient)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
- [Použití nástroje MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx)
+ [Použití nástroje MakeCert](/windows/desktop/SecCrypto/makecert)

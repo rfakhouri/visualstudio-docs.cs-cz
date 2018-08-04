@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179993"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512288"
 ---
 # <a name="using-the-tasks-window"></a>Používání okna úloh
 
@@ -52,14 +52,14 @@ Sloupce v **úlohy** v okně zobrazí následující informace.
 |**příznaky**|Zobrazuje úlohy, které jsou označeny příznakem a umožňuje označit nebo zrušit označení příznakem úlohu.|
 |**Ikony**|Žlutá šipka označuje aktuální úlohu. Aktuální úkol je úkol úplně nahoře v aktuálním vláknu.<br /><br /> Bílé šipka označuje zásadní úloh, to znamená, ten, který byl aktuální v době byla vyvolána ladicí program.<br /><br /> Ikona pozastavení označuje úlohu, která byla zmrazené uživatelem. Můžete ukotvit a uvolnění úlohy kliknutím pravým tlačítkem myši v seznamu.|
 |**ID**|Číslo poskytnuté systémem pro úlohu. V nativním kódu jde o adresu úkolu.|
-|**Status**|Aktuální stav (naplánované, aktivní, zablokování, jeví jako zablokované, čeká na nebo dokončené) úlohy. Naplánované úlohy je ten, který dosud nebyla spuštěna a proto se ještě nemá zásobník volání, přiřazené vlákno nebo související informace.<br /><br /> Aktivní úlohy je ten, který se spouští kód před přerušení v ladicím programu.<br /><br /> Čeká se na nebo zablokování úlohy je ten, který je zablokovaná, protože se čeká na událost má být signalizován, uvolnění zámku nebo na dokončení jiné úlohy.<br /><br /> Jeví jako zablokované úkol je úkol čekání, jehož vlákna je zablokovaná s jiným vláknem.<br /><br /> Najeďte myší **stav** buňky pro jeví jako zablokované nebo čeká na úlohu zobrazíte další informace o bloku. **Upozornění:** **úlohy** okno hlásí zablokování pouze pro zablokování úkol, který používá synchronizační jednoduchého typu, který je podporovaný počkejte procházení řetězce (WCT). Například pro jeví jako zablokované <xref:System.Threading.Tasks.Task> objektu, který používá WCT, ladicí program hlásí **zablokována čeká na**. Jeví jako zablokované úkolu, který je spravovaný nástrojem modulu Runtime souběžnosti, který nepoužívá WCT, ladicí program hlásí **čekání**. Další informace o WCT najdete v tématu [počkejte procházení řetězu](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|
+|**Status**|Aktuální stav (naplánované, aktivní, zablokování, jeví jako zablokované, čeká na nebo dokončené) úlohy. Naplánované úlohy je ten, který dosud nebyla spuštěna a proto se ještě nemá zásobník volání, přiřazené vlákno nebo související informace.<br /><br /> Aktivní úlohy je ten, který se spouští kód před přerušení v ladicím programu.<br /><br /> Čeká se na nebo zablokování úlohy je ten, který je zablokovaná, protože se čeká na událost má být signalizován, uvolnění zámku nebo na dokončení jiné úlohy.<br /><br /> Jeví jako zablokované úkol je úkol čekání, jehož vlákna je zablokovaná s jiným vláknem.<br /><br /> Najeďte myší **stav** buňky pro jeví jako zablokované nebo čeká na úlohu zobrazíte další informace o bloku. **Upozornění:** **úlohy** okno hlásí zablokování pouze pro zablokování úkol, který používá synchronizační jednoduchého typu, který je podporovaný počkejte procházení řetězce (WCT). Například pro jeví jako zablokované <xref:System.Threading.Tasks.Task> objektu, který používá WCT, ladicí program hlásí **zablokována čeká na**. Jeví jako zablokované úkolu, který je spravovaný nástrojem modulu Runtime souběžnosti, který nepoužívá WCT, ladicí program hlásí **čekání**. Další informace o WCT najdete v tématu [počkejte procházení řetězu](/windows/desktop/Debug/wait-chain-traversal).|
 |**Čas spuštění**|Doba, jakou úloha začal být aktivní.|
 |**Doba trvání**|Počet sekund, po které byl aktivní úloha.|
 |**Čas dokončení**|Čas, kdy úloha dokončena.|
 |**Poloha**|Aktuální umístění v zásobníku volání úlohy. Najeďte myší tuto buňku, chcete-li zobrazit celý zásobník volání pro úlohu. Naplánované úlohy nemají hodnotu v tomto sloupci.|
 |**Úloha**|Metoda počáteční a všechny argumenty, které byly předány pro úkol při vytvoření rovnou uložil.|
 |**Stav AsyncState**|Pro spravovaný kód, stav úlohy. Ve výchozím nastavení je tento sloupec skrytý. Chcete-li zobrazit tento sloupec, otevřete kontextovou nabídku pro jednu z záhlaví sloupců. Zvolte **sloupce**, **AsyncState**.|
-|**nadřazené**|ID úkolu, který vytvořil tuto úlohu. Pokud je toto pole prázdné, úloha nemá žádný nadřazený objekt. To platí pouze pro spravované aplikace.|
+|**Nadřazené**|ID úkolu, který vytvořil tuto úlohu. Pokud je toto pole prázdné, úloha nemá žádný nadřazený objekt. To platí pouze pro spravované aplikace.|
 |**Přiřazení vlákna**|ID a název vlákna, na kterém je spuštěn úkol.|
 |**AppDomain**|Pro spravovaný kód domény aplikace, ve kterém je spuštěn úkol.|
 |**task_group**|Pro nativní kód, adresa [task_group –](/cpp/parallel/concrt/reference/task-group-class) objekt, který naplánované úlohy. Asynchronní agenti a jednoduché úlohy je tento sloupec nastavena na 0.|

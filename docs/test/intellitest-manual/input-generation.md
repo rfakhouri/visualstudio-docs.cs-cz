@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341880"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511649"
 ---
-# <a name="input-generatation-using-dynamic-symbolic-execution"></a>Vstupní generatation pomocí dynamické symbolické spuštění
+# <a name="input-generation-using-dynamic-symbolic-execution"></a>Vstupní generování pomocí dynamické symbolické spuštění
 
 IntelliTest generuje vstupy pro [parametrizované testy částí](test-generation.md#parameterized-unit-testing) díky analýze podmíněného vytváření větve v programu. Testovací vstupy jsou zvolili podle toho, jestli můžete aktivovat nové chování větvení programu. Analýza je přírůstkové proces. Zpřesnění predikát **Otázka: mohu -> {true, false}** přes formální vstupní parametry testu **můžu**. **q** představuje sadu chování, které již IntelliTest sledoval. Na začátku **q: = false**, protože nic ještě pozorováno.
 
@@ -59,7 +59,7 @@ IntelliTest používá [Z3](https://github.com/Z3Prover/z3/wiki) Řešitel omeze
 IntelliTest jako vedlejší efekt modulu runtime, monitorování, shromažďuje data o pokrytí kódu dynamické. Tento postup se nazývá *dynamické* protože IntelliTest ví pouze o kód, který byl proveden, proto ji nelze udělit absolutní hodnoty pro pokrytí stejným způsobem jako jiný nástroj pokrytí obvykle. 
 
 Například když IntelliTest hlásí dynamické pokrytí jako základní bloky 5/10, to znamená, že pět bloků mimo deset byly pokryty, kde celkový počet bloků v všechny metody, které jste zatím přejít pomocí analýzy (na rozdíl od všech metod, které existují v sestavení v rámci testu) je deset.
-Dále v analýzu, jako jsou dostupné další metody zjištění obou čítači (5 v tomto eaxmple) a může zvýšit jmenovatel (10).
+Dále v analýzu, jako jsou dostupné další metody zjištění obou čítači (5 v tomto příkladu) a může zvýšit jmenovatel (10).
 
 <a name="integers-and-floats"></a>
 ## <a name="integers-and-floats"></a>Celá čísla a float

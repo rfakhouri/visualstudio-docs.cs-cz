@@ -9,18 +9,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4017ffc67558f6056cb01bf62c5adf9e7569ad4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6b0479bf427930d19b12fa0de5728f26e7cdb10d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946907"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510175"
 ---
 # <a name="t4-import-directive"></a>T4 – direktiva Import
 
-V blocích kódu po [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] textové šablony T4 `import` – direktiva umožňuje odkazovat na elementy v jiném oboru názvů bez zadání plně kvalifikovaný název. Je ekvivalentem `using` v jazyce C# nebo `imports` v [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
+V blocích kódu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] textové šablony T4 `import` – direktiva umožňuje odkazovat na prvky v jiném oboru názvů bez zadání plně kvalifikovaného názvu. Je ekvivalentem `using` v jazyce C# nebo `imports` v [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
 
- Obecné přehled tvorbu textových šablon T4, najdete v tématu [zápis textové šablony T4](../modeling/writing-a-t4-text-template.md).
+Obecný přehled o psaní textových šablon T4 naleznete v tématu [vytvoření textové šablony T4](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-import-directive"></a>Použití direktivy importu
 
@@ -49,7 +49,7 @@ The file contains: <#=  fileContent #>
 
 -   `Microsoft.VisualStudio.Modeling`
 
--   Obor názvů vaší DSL
+-   Obor názvů vašeho kódu DSL
 
 ## <a name="see-also"></a>Viz také
 
