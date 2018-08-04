@@ -1,5 +1,5 @@
 ---
-title: Identifikátory GUID IDE | Microsoft Docs
+title: Identifikátory GUID integrovaného vývojového prostředí | Dokumentace Microsoftu
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10acb5be1caacbbe496ad98f48516206bc14b1cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbcf81c34cae9c2f2e4e76e995666b280092b29d
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130268"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498181"
 ---
-# <a name="ide-guids"></a>Identifikátory GUID IDE
+# <a name="ide-guids"></a>Identifikátory GUID integrovaného vývojového prostředí
 
-<xref:Microsoft.VisualStudio.VSConstants> Třída publikuje identifikátory GUID některé části integrované vývojové prostředí (IDE), jak je uvedeno v následující tabulce.
+<xref:Microsoft.VisualStudio.VSConstants> Třídy publikuje GUID některé části integrovaného vývojového prostředí (IDE), jak je uvedeno v následující tabulce.
 
-## <a name="core-systems"></a>Základní systémy
+## <a name="core-systems"></a>Základních systémů
 
 |Konstanta|GUID|
 |--------------|----------|
@@ -39,7 +39,7 @@ ms.locfileid: "31130268"
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_TextEditorFactory>|8B382828-6202-11d1-8870-0000F87579D2|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VsNewProjectPseudoFolder>|DCF2A94A-45B0-11d1-ADBF-00C04FB6BE4C|
 
-## <a name="broadly-visible-components"></a>Široce viditelné součásti
+## <a name="broadly-visible-components"></a>Veřejně viditelné komponenty
 
 |Konstanta|GUID|
 |--------------|----------|
@@ -49,7 +49,7 @@ ms.locfileid: "31130268"
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher>|e69cd190-1276-11d1-9f64-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane>|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Soubory, složky virtuálních a fyzických a dílčí projekty
+## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Soubory, virtuálními a fyzickými složky a dílčích projektů
 
 |Konstanta|GUID|
 |--------------|----------|
@@ -74,7 +74,7 @@ ms.locfileid: "31130268"
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11D1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>|adfc4e66-0397-11d1-9f4e-00a0c911004f|
 
-## <a name="output-pane"></a>V podokně výstupu
+## <a name="output-pane"></a>Podokno výstup
 
 |Konstanta|GUID|
 |--------------|----------|
@@ -98,7 +98,7 @@ ms.locfileid: "31130268"
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
 
-## <a name="task-list-guids"></a>Identifikátory GUID seznamu úkolů
+## <a name="task-list-guids"></a>Seznam úkolů identifikátory GUID
 
 |Konstanta|GUID|
 |--------------|----------|
@@ -114,7 +114,7 @@ ms.locfileid: "31130268"
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskList>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskListPackage>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>Identifikátory GUID stránka pro výběr součástí
+## <a name="component-selector-page-guids"></a>Stránka Výběr komponenty identifikátory GUID
 
 |Konstanty|GUID|
 |---------------|----------|
@@ -130,8 +130,8 @@ ms.locfileid: "31130268"
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsDocOutlinePackage>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider>|35222106-bb44-11d0-8c46-00c04fc2aae2|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Konstanty modelu COM ve spravovaném kódu](../extensibility/com-constants-in-managed-code.md)
 - [Konstanty integrovaného vývojového prostředí](../extensibility/ide-constants.md)
-- [Příkazy definované prostředím IDE pro rozšíření systémů projektů](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [Příkazy definované prostředím IDE pro rozšíření projektu s ystems](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

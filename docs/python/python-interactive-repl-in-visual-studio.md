@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: db564dfb019525d929b21d74cf521f7b82046445
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 2eeffea641fd6d571b8b682aebab7f7d0ff83a41
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468800"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499065"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Práce s interaktivní okno Pythonu
 
@@ -103,7 +103,6 @@ Zadání `dir()` v oboru zobrazí platné identifikátory v tomto oboru, včetn�
 
 ![Interaktivní okno v rámci importlib](media/interactive-importlib-scope.png)
 
-<a name="send-code-to-interactive-command"></a>
 ## <a name="send-to-interactive-command"></a>Odeslání do interaktivního příkazu
 
 Kromě práci v rámci **interaktivní** okno přímo, vyberte kód v editoru klikněte pravým tlačítkem a zvolte **zaslat do Interactive** nebo stiskněte klávesu **Ctrl** + **Zadejte**.

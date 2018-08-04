@@ -4,20 +4,20 @@ author: jasongroce
 ms.author: apexprodleads
 ms.technology: vs-ide-sdk
 ms.topic: landing-page
-title: Dokumentaci rozšíření sady Visual Studio | Microsoft Docs
-description: Další informace o rozšíření sady Visual Studio.
+title: Dokumentace k rozšiřitelnosti sady Visual Studio | Dokumentace Microsoftu
+description: Další informace o rozšiřitelnost sady Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 4467608e843a1a917b34937ab3bd16931e76eea3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
-ms.locfileid: "27246544"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500294"
 ---
-# <a name="visual-studio-extensibility-documentation"></a>Dokumentaci rozšíření sady Visual Studio
+# <a name="visual-studio-extensibility-documentation"></a>Dokumentace k rozšiřitelnosti sady Visual Studio
 
-Visual Studio poskytuje mnoho možností rozšíření. Visual Studio, samostatně, můžete rozšířit přidat analyzátorů zdrojového kódu pro kompilátor "Roslyn", nebo dokonce vytvářet vlastní sady SDK.
+Sada Visual Studio poskytuje mnoho možností rozšíření. Můžete rozšířit Visual Studio jako takové, přidejte zdrojový kód analyzátory pro kompilátor "Roslyn", nebo dokonce vytvářet vlastní sady SDK.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -49,7 +49,7 @@ Visual Studio poskytuje mnoho možností rozšíření. Visual Studio, samostatn
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Rozšiřitelnost rozhraní .NET kompilátoru platformy ("Roslyn")</h3>
+                        <h3>Rozšíření .NET Compiler Platform („Roslyn“)</h3>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ Visual Studio poskytuje mnoho možností rozšíření. Visual Studio, samostatn
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Vytváření Software Development Kit</h3>
+                        <h3>Vytvoření sady SDK (Software Development Kit)</h3>
                     </div>
                 </div>
             </div>
