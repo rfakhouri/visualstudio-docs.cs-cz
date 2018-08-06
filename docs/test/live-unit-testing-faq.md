@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bba5579fd47a9cf50d175777d704b0f12e8cb298
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 76cef03a8ceac47e06fb0ca13c667002895c6ac4
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382601"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567048"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – nejčastější dotazy
 
@@ -77,13 +77,13 @@ Ano. Live Unit Testing spolupracuje s .NET Core a .NET Framework. Nedávno byla 
 
 - Nejméně jeden projekt ve vašem řešení by měl mít odkaz na NuGet nebo přímý odkaz na xUnit, NUnit, nebo testovací rozhraní MSTest. Tento projekt by měly odkazovat také odpovídající balíček NuGet sady Visual Studio test adaptéry. Adaptér testu sady Visual Studio lze také odkazovat prostřednictvím *s příponou .runsettings* souboru. *s příponou .runsettings* souboru musí mít položku jako v následujícím příkladu:
 
-   ```xml
-    <RunSettings>
-       <RunConfiguration>
+```xml
+<RunSettings>
+    <RunConfiguration>
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
-       </RunConfiguration>
-    </RunSettings>
-   ```
+     </RunConfiguration>
+</RunSettings>
+```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>Proč Live Unit Testing zobrazuje nesprávný pokrytí po upgradu testovací adaptér, který je odkazováno v projektech Visual Studio na podporovanou verzi?
 

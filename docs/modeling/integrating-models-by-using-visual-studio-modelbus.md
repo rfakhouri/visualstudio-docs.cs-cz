@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 316abdc18973056619d47e50ae851f33d72bc32c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6357fbe512b9120872fc033dd93406a7ff8eb1d1
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382045"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567178"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrace modelů pomocí Visual Studio Modelbus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus poskytuje metodu pro vytvoření propojení mezi modely a z dalších nástrojů do modelů. Je třeba propojit modely jazyka specifického pro doménu (DSL) a modelech UML. Můžete vytvořit integrovaná sada DSL.
@@ -182,7 +182,7 @@ ms.locfileid: "39382045"
 
  V souboru kódu, kde se vytvoří odkazy budete obvykle muset importovat tyto obory názvů:
 
-```
+```csharp
 // The namespace of the DSL you want to reference:
 using Fabrikam.FamilyTree;  // Exposed DSL
 using Fabrikam.FamilyTree.ModelBusAdapters;
@@ -199,7 +199,7 @@ using System.Linq;
 > [!NOTE]
 >  Adaptér musí dispose po dokončení s ním. Je nejpohodlnější způsob, jak toho dosáhnout pomocí `using` příkazu. Toto dokládá následující příklad.
 
-```
+```csharp
 // The file path of a model instance of the FamilyTree DSL:
 string targetModelFile = "TudorFamilyTree.ftree";
 // Get the ModelBus service:
@@ -235,7 +235,7 @@ using (FamilyTreeAdapter adapter =
 
  Pokud chcete použít `modelReference` později, můžete ho uložit v doménová vlastnost, která má typ externího `ModelBusReference`:
 
-```
+```csharp
 using Transaction t = this.Store.TransactionManager
     .BeginTransaction("keep reference"))
 {
@@ -249,7 +249,7 @@ using Transaction t = this.Store.TransactionManager
 ### <a name="to-create-a-reference-to-an-element"></a>Chcete-li vytvořit odkaz na prvek
  Adaptér, který jste vytvořili pro model lze použít k vytvoření a vyřešit odkazy.
 
-```
+```csharp
 // person is an element in the FamilyTree model:
 ModelBusReference personReference =
   adapter.GetElementReference(person);
@@ -262,7 +262,7 @@ ModelBusReference personReference =
 
  Adaptér můžete vytvořit z MBR. Z adaptéru můžete získat kořenu modelu. Můžete také vyřešit MBRs, které odkazují na konkrétní prvky v rámci modelu.
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling.Integration; ...
 ModelBusReference elementReference = ...;
 
@@ -342,7 +342,7 @@ using (FamilyTreeAdapter adapter =
 ## <a name="serializing-a-modelbusreference"></a>Serializace ModelBusReference
  Pokud chcete uložit `ModelBusReference` (MBR) ve formě řetězce, můžete ho serializovat:
 
-```
+```csharp
 string serialized = modelBus.SerializeReference(elementReference);
 // Store it anywhere, then get it back again:
 ModelBusReference elementReferenceRestored =
@@ -356,7 +356,7 @@ ModelBusReference elementReferenceRestored =
 
  K serializaci relativní k cestě:
 
-```
+```csharp
 elementReference.ReferenceContext.Add(
    ModelBusReferencePropertySerializer.FilePathSaveContextKey,
    currentProjectFilePath);
@@ -365,7 +365,7 @@ string serialized = modelBus.SerializeReference(elementReference);
 
  K načtení odkazu z řetězce:
 
-```
+```csharp
 ReferenceContext context = new ReferenceContext();
 context.Add(ModelBusReferencePropertySerializer.FilePathLoadContextKey,
     currentProjectFilePath);
@@ -395,7 +395,7 @@ ModelBusReference elementReferenceRestored =
 
  V této ukázce se název cílového DSL stavový stroj StateMachine. Několik názvů jsou odvozeny z něj, jako je název třídy modelu a názvem objekt ModelBusAdapter.
 
-```
+```csharp
 using Fabrikam.StateMachine.ModelBusAdapters;
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
@@ -447,7 +447,7 @@ using (StateMachineAdapter adapter =
 ## <a name="validating-references"></a>Ověřuje se odkazy
  BrokenReferenceDetector testů všechny vlastnosti v Store, který může obsahovat ModelBusReferences. Volání akce, který poskytuje, ve kterých se nachází žádnou akci. To je užitečné hlavně pro metody ověřování. Následující metody ověření testy úložiště při pokusu o uložení modelu a hlásí poškozenými odkazy v okně chyb:
 
-```
+```csharp
 [ValidationMethod(ValidationCategories.Save)]
 public void ValidateModelBusReferences(ValidationContext context)
 {
@@ -489,7 +489,7 @@ private const string INVALID_REF_FORMAT =
 
 -   Několik atributů CLR se přidají do doménové vlastnosti. Můžete vidět v pole vlastních atributů v okně Vlastnosti. V **Dsl\GeneratedCode\DomainClasses.cs**, můžete zobrazit atributy v deklaraci vlastnosti:
 
-    ```
+    ```csharp
     [System.ComponentModel.TypeConverter(typeof(
     Microsoft.VisualStudio.Modeling.Integration.ModelBusReferenceTypeConverter))]
     [System.ComponentModel.Editor(typeof(

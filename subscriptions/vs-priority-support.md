@@ -1,232 +1,248 @@
 ---
-title: Výhodou podpora priority předplatné sady Visual Studio | Microsoft Docs
+title: 'Výhody podpory priority v předplatných: Visual Studio | Dokumentace Microsoftu'
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 05/07/2018
 ms.topic: Get-Started-Article
-description: Další informace o benefitech Priority nepodporují zahrnuté v sadě Visual Studio předplatných.
+description: Další informace o benefitech prioritní podpora součástí předplatných sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 776438935a2fdbc2e7f360d605cc2135ac02b9a0
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 286223c52a05e9dae709d7a07bde84f8e3c4d6b3
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280400"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567152"
 ---
-# <a name="priority-support-in-visual-studio-subscriptions"></a>Podpora priority v sadě Visual Studio předplatných
+# <a name="priority-support-in-visual-studio-subscriptions"></a>Prioritní podpora na předplatná sady Visual Studio
 
-Výhody podporují prioritu poskytuje přístup k různým podporu komunitní fóra, kde můžete vyhledat existující příspěvcích nebo požádá nové dotazy.  Pokud komunity neodpoví na svoji otázku do dvou dnů, tým podpory společnosti Microsoft vám poskytne odpověď.
+Výhoda prioritní podporu poskytuje přístup k různým podporu komunitní fóra, ve kterém můžete vyhledávat stávající příspěvky nebo dotázán na nový.  Pokud se v komunitě neobjeví odpověď na svoji otázku do dvou dnů, tým podpory společnosti Microsoft poskytne odpověď.
 
-Odběratelé s vybrané odběry Visual Studio jsou oprávněni přijímat priority nepodporují prostřednictvím velký počet fóra pokrývajících různá témata.
+Předplatitelé s vybraným předplatným sady Visual Studio mají nárok na prioritní podporu ve přes velký počet fóra, které pokrývají celou řadu témat.
 
 ## <a name="included-forums"></a>Zahrnuté fóra
 
 ### <a name="net-framework"></a>.NET Framework
-   - Instalace rozhraní .NET framework a údržba
+   - [Instalace rozhraní .NET framework a údržba](http://social.msdn.microsoft.com/Forums/en-US/netfxsetup/threads)
 
-   - Běžné Runtime Internals jazyka a architektura
+   - [Common Language Runtime interní informace a architektura](http://social.msdn.microsoft.com/Forums/en-US/clr/threads)
 
-   - Knihovny tříd rozhraní .NET framework
+   - [Knihovny tříd rozhraní .NET framework](http://social.msdn.microsoft.com/Forums/en-US/netfxbcl/threads)
 
-   - Windows Presentation Foundation (WPF)
+   - [Windows Presentation Foundation (WPF)](http://social.msdn.microsoft.com/Forums/en-US/wpf/threads)
 
-   - Windows Communication Foundation, serializace a sítě
+   - [Windows Communication Foundation, serializace a sítě](http://social.msdn.microsoft.com/Forums/en-US/wcf/threads)
 
-### <a name="windows-forms-development"></a>Vývoj pro Windows Forms
-   - Windows Forms – datová ovládací prvky a datové vazby
+### <a name="microsoft-azure"></a>Microsoft Azure
+   - [Cloud Services (webové a pracovní role)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)
+   
+   - [Azure SQL Database](https://social.msdn.microsoft.com/Forums/en-US/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)
 
-   - Windows Forms – obecné
+   - [Azure Storage](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
 
-   - ClickOnce a instalační program & projekty nasazení
+   - [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=hdinsight)
 
-   - Návrhář formulářů Windows
+   - [Azure Multi-Factor Authentication](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=windowsazureactiveauthentication)
 
-   - Ukázkové aplikace Windows Forms
+   - [Portál pro správu Azure](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/en-US/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)
+
+   - [Sítě (DNS, Traffic Manager, VPN, VNET) Azure](https://social.msdn.microsoft.com/Forums/en-US/home?forum=WAVirtualMachinesVirtualNetwork&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure Active Directory](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)
+
+   - [Azure API Management](https://social.msdn.microsoft.com/Forums/en-US/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)
+
+   - [Machine Learning](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=MachineLearning)
+
+   - [Visual Studio Online](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService)
+
+   - [Vzdálená aplikace RemoteApp Azure](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureRemoteApp)
+
+   - [Azure Websites](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)
+
+   - [Ceny a fakturace](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=windowsazurepurchasing)
+
+
+### <a name="windows-forms-development"></a>Windows Forms – vývoj
+   - [Windows Forms – datová ovládací prvky a datové vazby](http://social.msdn.microsoft.com/Forums/en-US/winformsdatacontrols/threads)
+
+   - [Windows Forms – obecné](http://social.msdn.microsoft.com/Forums/en-US/winforms/threads)
+
+   - [ClickOnce a instalační program a projekty nasazení](http://social.msdn.microsoft.com/Forums/en-US/winformssetup/threads)
+
+   - [Návrhář formulářů Windows](http://social.msdn.microsoft.com/Forums/en-US/winformsdesigner/threads)
+
+   - [Windows Forms – ukázkové aplikace](http://social.msdn.microsoft.com/Forums/en-US/winformsapplications/threads)
 
 
 ### <a name="windows-universal-apps"></a>Univerzální aplikace pro Windows
-   - Vývoj univerzálních aplikací pro Windows
+   - [Vývoj univerzálních aplikací pro Windows](https://social.msdn.microsoft.com/Forums/windowsapps/en-US/home?forum=wpdevelop)
 
 ### <a name="internet-of-things-iot"></a>Internet věcí (IoT)
-   - Windows 10 IoT
+   - [Windows 10 IoT](https://social.msdn.microsoft.com/Forums/en-US/home?forum=WindowsIoT&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="office-development"></a>Vývoj pro Office
-   - Aplikace Microsoft Office pro vývojáře
+   - [Aplikace Microsoft Office pro vývojáře](http://social.msdn.microsoft.com/Forums/en-US/category/officedev)
 
-   - Aplikace Excel pro vývojáře
+   - [Aplikace Excel pro vývojáře](http://social.msdn.microsoft.com/Forums/en-US/exceldev)
 
-   - Aplikace Word pro vývojáře
+   - [Word pro vývojáře](http://social.msdn.microsoft.com/Forums/en-US/worddev)
 
-   - Outlook pro vývojáře
+   - [Outlook pro vývojáře](http://social.msdn.microsoft.com/Forums/en-US/outlookdev)
 
-   - Přístup pro vývojáře
+   - [Přístup pro vývojáře](http://social.msdn.microsoft.com/Forums/en-US/accessdev)
 
-   - Visual Studio Tools for Office
+   - [Visual Studio Tools for Office](http://social.msdn.microsoft.com/Forums/en-US/vsto/threads)
 
-   - Formát Open XML SDK
+   - [Sada SDK pro formát Open XML](http://social.msdn.microsoft.com/Forums/en-US/oxmlsdk/threads)
 
-   - Jazyk Visual Basic for Applications
+   - [Visual Basic for Applications](http://social.msdn.microsoft.com/Forums/en-US/isvvba/threads)
 
-   - Vývoj pro Office obecné
+   - [Obecný vývoj pro Office](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=officegeneral&filter=alltypes&sort=lastpostdesc)
 
-   - Vývoj aplikací pro Office 2013
+   - [Vývoj aplikací pro Office 2013](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=appsforoffice&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="sql-server"></a>SQL Server
-   - Začínáme s SQL serverem
+   - [Začínáme s SQL serverem](http://social.msdn.microsoft.com/Forums/en-US/sqlgetstarted/threads)
 
-   - Přístup k datům SQL serveru
+   - [Přístup k datům SQL serveru](http://social.msdn.microsoft.com/Forums/en-US/sqldataaccess/threads)
 
-   - Databázový stroj systému SQL Server
+   - [Databázový stroj SQL serveru](http://social.msdn.microsoft.com/Forums/en-US/sqldatabaseengine/threads)
 
-   - SQL Server datového skladu
+   - [SQL Server datového skladu](http://social.msdn.microsoft.com/Forums/en-US/sqldatawarehousing/threads)
 
-   - SQL Server Integration Services
+   - [SQL Server Integration Services](http://social.msdn.microsoft.com/Forums/en-US/sqlintegrationservices/threads)
 
-   - SQL Server Analysis Services
+   - [SQL Server Analysis Services](http://social.msdn.microsoft.com/Forums/en-US/sqlanalysisservices/threads)
 
-   - Oznámení služby serveru SQL Server
+   - [Oznámení služby SQL Server](http://social.msdn.microsoft.com/Forums/en-US/sqlnotificationservices/threads)
 
-   - Služba SQL Server Reporting Services
+   - [SQL Server Reporting Services](http://social.msdn.microsoft.com/Forums/en-US/sqlreportingservices/threads)
 
-   - Transact-SQL
+   - [Příkaz Transact-SQL](http://social.msdn.microsoft.com/Forums/en-US/transactsql/threads)
 
-   - Replikace SQL serveru
+   - [Replikace systému SQL Server](http://social.msdn.microsoft.com/Forums/en-US/sqlreplication/threads)
 
-   - Zabezpečení SQL serveru
+   - [SQL Server – zabezpečení](http://social.msdn.microsoft.com/Forums/en-US/sqlsecurity/threads)
 
-   - Instalační program SQL serveru a Upgrade
+   - [Instalační program systému SQL Server a Upgrade](http://social.msdn.microsoft.com/Forums/en-US/sqlsetupandupgrade/threads)
 
-   - Nástroje systému SQL Server pro obecné
+   - [SQL Server Tools – obecné](http://social.msdn.microsoft.com/Forums/en-US/sqltools/threads)
 
-   - Služby SQL Service Broker
+   - [Služba SQL Service Broker](http://social.msdn.microsoft.com/Forums/en-US/sqlservicebroker/threads)
 
-   - SQL Server Compact
+   - [SQL Server Compact](http://social.msdn.microsoft.com/Forums/en-US/sqlce/threads)
 
-   - SQL Server Express
+   - [SQL Server Express](http://social.msdn.microsoft.com/Forums/en-US/sqlexpress/threads)
 
-   - Dolování dat
+   - [Dolování dat](http://social.msdn.microsoft.com/Forums/en-US/sqldatamining/threads)
 
-   - Rozhraní .NET framework v systému SQL Server
+   - [.NET framework v systému SQL Server](http://social.msdn.microsoft.com/Forums/en-US/sqlnetfx/threads)
 
 ### <a name="sharepoint"></a>SharePoint
-   - SharePoint 2013 – obecné diskuse a otázky
+   - [SharePoint 2013 – obecné diskuse a otázky](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointgeneral&filter=alltypes&sort=lastpostdesc)
 
-   - Vývoj aplikací pro SharePoint 2013
+   - [Vývoj aplikací pro SharePoint 2013](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=appsforsharepoint&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 – vývoj a programování
+   - [SharePoint 2013 – vývoj a programování](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointdevelopment&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 – instalace, upgradu, správu a operace
+   - [SharePoint 2013 – instalace, Upgrade, Správa a operace](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointadmin&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 – pomocí návrháře služby SharePoint, InfoPath a jiných úprav
+   - [SharePoint 2013 – používání produktu SharePoint Designer a InfoPath a další vlastní nastavení](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointcustomization&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2013 – hledání
+   - [SharePoint 2013 – vyhledávání](http://social.msdn.microsoft.com/Forums/en-US/home?forum=sharepointsearch&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 – vývoj a programování
+   - [SharePoint 2010 – vývoj a programování](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointdevelopmentprevious&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 – obecné diskuse a otázky
+   - [SharePoint 2010 – obecné diskuse a otázky](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointgeneralprevious&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 – instalace, upgradu, správu a operace
+   - [SharePoint 2010 – instalace, Upgrade, Správa a operace](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointadminprevious&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 – pomocí návrháře služby SharePoint, InfoPath a jiných úprav
+   - [SharePoint 2010 – používání produktu SharePoint Designer a InfoPath a další vlastní nastavení](http://social.msdn.microsoft.com/Forums/office/en-US/home?forum=sharepointcustomizationprevious&filter=alltypes&sort=lastpostdesc)
 
-   - SharePoint 2010 – hledání
+   - [SharePoint 2010 – vyhledávání](http://social.msdn.microsoft.com/Forums/en-US/home?forum=sharepointsearchprevious&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="visual-studio"></a>Visual Studio
-   - Visual Studio Obecné otázky
+   - [Visual Studio – Obecné otázky](http://social.msdn.microsoft.com/Forums/en-US/visualstudiogeneral/threads)
 
-   - Instalaci sady Visual Studio a instalaci
+   - [Nastavení a instalace Visual Studio](http://social.msdn.microsoft.com/Forums/en-US/vssetup/threads)
 
-   - Testovací nástroje v sadě Visual Studio 2010 a 2012
+   - [Test Tools v sadě Visual Studio 2010 a 2012](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vstest&filter=alltypes&sort=lastpostdesc)
 
-   - Testování pomocí Visual Studio Test Manager (MTM)
+   - [Testování s Visual Studio Test Manageru (MTM)](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsmantest&filter=alltypes&sort=lastpostdesc)
 
-   - Testování částí sady Visual Studio
+   - [Testování částí sady Visual Studio](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsunittest&filter=alltypes&sort=lastpostdesc)
 
 ### <a name="visual-studio-team-foundation-server"></a>Visual Studio Team Foundation Server
-   - Sady TFS – nastavení a Správa
+   - [TFS – nastavení a Správa](http://social.msdn.microsoft.com/Forums/en-US/tfsadmin/threads)
 
-   - Sady TFS – obecné
+   - [TFS – obecné](http://social.msdn.microsoft.com/Forums/en-US/tfsgeneral/threads)
 
-   - Sady TFS – zdroj a správa verzí
+   - [TFS – zdroj a správy verzí](http://social.msdn.microsoft.com/Forums/en-US/tfsversioncontrol/threads)
 
-   - Sady TFS – sestavení a správa verzí
+   - [TFS – vytváření a správa vydaných verzí](http://social.msdn.microsoft.com/Forums/en-US/tfsbuild/threads)
 
-   - Sady TFS – Reporting & skladu
+   - [TFS – vytváření sestav a sklad](http://social.msdn.microsoft.com/Forums/en-US/tfsreporting/threads)
 
-   - Sady TFS – Správa projektu & pracovní položky
+   - [TFS – řízení projektů a pracovní položky](http://social.msdn.microsoft.com/Forums/en-US/tfsworkitemtracking/threads)
 
-   - Sady TFS – šablony procesů
+   - [TFS – šablony procesů](http://social.msdn.microsoft.com/Forums/en-US/tfsprocess/threads)
 
-   - Sady TFS – migrace a integrace
+   - [TFS – migrace a integrace](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsintegration&filter=alltypes&sort=lastpostdesc)
 
-   - Visual Studio Online
+   - [Visual Studio Online](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=TFService&filter=alltypes&sort=lastpostdesc)
 
-### <a name="visual-studio-languages"></a>Jazyky Visual Studio
-   - Visual Basic
+### <a name="visual-studio-languages"></a>Jazyky sady Visual Studio
+   - [Visual Basic](http://social.msdn.microsoft.com/Forums/en-US/vbgeneral/threads)
 
-   - Visual C#
+   - [Visual C#](http://social.msdn.microsoft.com/Forums/en-US/csharpgeneral/threads)
 
-   - Visual C++
+   - [Visual C++](http://social.msdn.microsoft.com/Forums/en-US/vcgeneral/threads)
 
-   - Visual C++ standardů, rozšíření a zprostředkovatel komunikace s objekty
+   - [Visual C++ – standardy, rozšíření a interoperabilita](http://social.msdn.microsoft.com/Forums/en-US/vclanguage/threads)
 
 
 ### <a name="biztalk"></a>BizTalk
-   - BizTalk Server obecné
+   - [BizTalk Server – obecné](http://social.msdn.microsoft.com/Forums/en-US/biztalkgeneral/threads)
 
-   - BizTalk Server EDI a AS2
+   - [BizTalk Server EDI a AS2](http://social.msdn.microsoft.com/Forums/en-US/biztalkediandas2/threads)
 
 ### <a name="adospannet"></a>ADO<span>.NET
-   - ADO<span>zprostředkovatele dat .NET
+   - [ADO<span>zprostředkovatele dat .NET](http://social.msdn.microsoft.com/Forums/en-US/adodotnetdataproviders/threads)
 
-   - ADO<span>datovou sadu .NET
+   - [ADO<span>datovou sadu .NET](http://social.msdn.microsoft.com/Forums/en/adodotnetdataset/threads)
 
-   - Technologie LINQ to SQL
+   - [LINQ to SQL](http://social.msdn.microsoft.com/Forums/en/linqtosql/threads)
 
-   - ADO<span>.NET Entity Framework a technologii LINQ to Entities
+   - [ADO<span>.NET Entity Framework a LINQ to Entities](http://social.msdn.microsoft.com/Forums/en/adodotnetentityframework/threads)
 
-   - WCF (ADO<span>.NET) datové služby
+   - [WCF (ADO<span>.NET) datové služby](http://social.msdn.microsoft.com/Forums/en/adodotnetdataservices/threads)
 
 ### <a name="xml"></a>XML
-   - XML a rozhraní .NET Framework
+   - [XML a rozhraní .NET Framework](http://social.msdn.microsoft.com/Forums/en-US/xmlandnetfx/threads)
 
-   - Systému SQL Server XML
+   - [SQL Server – XML](http://social.msdn.microsoft.com/Forums/en-US/sqlxml/threads)
 
 
-## <a name="activation-steps"></a>Postup aktivace
-Získávání přístupu k předchozí podporu je velmi jednoduchý.
-1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-
-2. V části podpora vyhledejte dlaždici Priority nepodporují.  Klikněte na **nápovědu**.
-
-    ![Podpora dlaždice s prioritou](_img/vs-priority-support/vs-priority-support-tile.png)
-
-3. Procházet seznam diskusních fór a vyberte vaše požadované fórum.
-
-    ![Fóra podpory s prioritou](_img/vs-priority-support/vs-priority-support-forums.png)
-
-4. Přečtěte si poslední odpovědi, hledání předchozí příspěvcích nebo odeslat novou otázku.
-
-    ![Příklad podpora priority](_img/vs-priority-support/vs-priority-support-example.png)
-
-## <a name="eligibility"></a>Podmínky
-| Úrovni předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelných?    |
+## <a name="eligibility"></a>Způsobilost
+| Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní, roční cloud)   | VL, Azure, prodejní, vybrané NFR<sup>1</sup> | Zahrnuté       |  Ano          |
-| Visual Studio Professional (standardní, roční cloud) | VL, Azure, maloobchodní                                       | Zahrnuté                                                            |Ano |
-| Visual Studio Test Professional (standardní)                         | VL, prodejní                                              | Zahrnuté                                                            |Ano |
-| MSDN platformy (standardní)                                          | VL, prodejní                                              | Zahrnuté                                                            |Ano |
-| Visual Studio Dev Essentials | NÁ  | Zahrnuté                                                            |Ano |
-| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NÁ|
+| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | Zahrnuté       |  Ano          |
+| Visual Studio Professional (standardní a roční cloudové) | VL, Azure, maloobchodního prodeje                                       | Zahrnuté                                                            |Ano |
+| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Zahrnuté                                                            |Ano |
+| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Zahrnuté                                                            |Ano |
+| Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Zahrnuté                                                            |Ano |
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
 
-<sup>1</sup>*zahrnuje: Ne pro prodej (NFR), představte si FTE, Visual Studio Industry Partner (VSIP).  Vyloučí: Microsoft Partner Network (MPN), MCT softwaru & služby, MCT softwaru a služeb Developer, BizSpark, cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD).*
+<sup>1</sup>*zahrnuje: neprodejné (NFR), představte si FTE, Visual Studio Industry Partner (VSIP).    Vyloučí: Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & služby pro vývojáře, BizSpark, Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD).*
 
-Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných.
+Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
 
-## <a name="support-resources"></a>Podpora prostředky
--  Požádejte o pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné sady Visual Studio [odběry podporu](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+## <a name="support-resources"></a>Informační zdroje podpory
+-  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

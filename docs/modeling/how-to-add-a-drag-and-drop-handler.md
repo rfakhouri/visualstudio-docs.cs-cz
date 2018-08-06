@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 35b88e2c2c423803dda9ed85cfb820e8521ed138
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 74e4f806c6f2faeeddfc2cc13917a6b5275b1b48
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513504"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566626"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Postupy: Přidání obslužné rutiny operace přetažení myší
 
@@ -50,14 +50,13 @@ V novém souboru definujte částečnou třídu pro obrazec ani diagram třídy,
             e.Effect = System.Windows.Forms.DragDropEffects.Copy;
           }
         }
-
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> – Tato metoda je volána, pokud uživatel uvolní tlačítko myši při umístění ukazatele myši stisknuté tento tvar nebo diagram, pokud `OnDragOver(DiagramDragEventArgs e)` předtím nastavili `e.Effect` hodnotu jinou než `None`.
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
-        {
+    {
           if (!IsAcceptableDropItem(e))
           {
             base.OnDragDrop(e);
@@ -66,8 +65,7 @@ V novém souboru definujte částečnou třídu pro obrazec ani diagram třídy,
           { // Process the dragged item, for example merging a copy into the diagram
             ProcessDragDropItem(e); // To be defined
           }
-        }
-
+    }
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – Tato metoda je volána, když uživatel pokliká na tvar nebo diagram.
@@ -76,7 +74,7 @@ V novém souboru definujte částečnou třídu pro obrazec ani diagram třídy,
 
 Definování `IsAcceptableDropItem(e)` k určení, zda je přijatelné přetaženou položku a ProcessDragDropItem(e) aktualizovat váš model, když položka byla vynechána. Tyto metody musí nejprve extrahovat položky z argumentů událostí. Informace o tom, jak to udělat, najdete v části [jak získat odkaz na přetaženou položku](#extracting).
 
-## <a name="defining-gesture-handlers-by-using-mef"></a>Definování obslužné rutiny gesta pomocí MEF
+## <a name="define-gesture-handlers-by-using-mef"></a>Definování obslužné rutiny gesta pomocí MEF
 
 Tuto metodu použijte, pokud chcete, aby vývojáři třetích stran, abyste mohli definovat jejich vlastní obslužné rutiny do vašeho DSL. Uživatelé mohou nainstalovat rozšíření třetích stran po instalují vašeho DSL.
 
@@ -148,7 +146,6 @@ Ke zjištění formátů, v nichž je k dispozici vaše informace o zdroji přet
             == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.
      // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId
     }
-
     ```
 
      Tak, aby přijímal obrazce UML, určuje na základě experiment identifikátory GUID tvar tříd UML. Mějte na paměti, že je obvykle více než jeden typ prvku na jakýkoliv diagram. Nezapomeňte, že je objekt přetažen z diagramu DSL nebo UML obrazec není na prvek modelu.
@@ -163,7 +160,7 @@ Pokud přetaženou položku je prvek DSL, můžete otevřít zdrojový model a p
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Příprava sběrnice modelu projektu DSL
 
-1.  Zpřístupnění zdroje DSL pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sběrnice modelu:
+1.  Zpřístupnění zdroje DSL pomocí sběrnice modelu Visual Studio:
 
     1.  Stáhněte a nainstalujte rozšíření sběrnice modelu Visual Studio, pokud ještě není nainstalovaná. Další informace najdete v tématu [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 

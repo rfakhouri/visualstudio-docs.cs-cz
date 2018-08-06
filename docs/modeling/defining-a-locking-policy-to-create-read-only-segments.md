@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3c1f94637ab5e16954bdfcf209d4cf342c54deb7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177098"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566765"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definování zásady zamykání pro vytváření segmentů jen pro čtení
 Rozhraní API neměnnosti [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK umožňuje aplikaci zámek část nebo celý model jazyka specifického pro doménu (DSL) tak, aby ji lze číst, ale nebyl změněn. Tato možnost jen pro čtení může použít, třeba tak, aby uživatel požádat o vaši kolegové mohli opatřit poznámkami a zkontrolujte modelu DSL, ale můžete zakázat možnost měnit původní.
@@ -31,7 +31,7 @@ Rozhraní API neměnnosti [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
 ## <a name="setting-and-getting-locks"></a>Nastavení a získání uzamčení
  Zámky můžete nastavit v úložišti, v oddílu nebo na jednotlivý prvek. Tento příkaz například zabránit odstranění prvku modelu a zároveň zabrání jeho vlastnosti mění:
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling.Immutability; ...
 element.SetLocks(Locks.Delete | Locks.Property);
 ```
@@ -49,7 +49,7 @@ element.SetLocks(Locks.Delete | Locks.Property);
 ### <a name="locks-on-partitions-and-stores"></a>Zámky na oddíly a úložišť
  Zámky lze také použít na oddíly a úložišti. Zámek, který je nastaven na oddíl se vztahuje na všechny prvky v oddílu. Proto se například následující příkaz zabrání všechny prvky v oddílu odstraňuje, bez ohledu na stavy jejich vlastní zámky. Nicméně, druhý uzamkne, jako `Locks.Property` stále může být nastavena na jednotlivé prvky:
 
-```
+```csharp
 partition.SetLocks(Locks.Delete);
 ```
 
@@ -104,7 +104,7 @@ partition.SetLocks(Locks.Delete);
 ### <a name="to-define-a-locking-policy"></a>K definování zásady zamykání
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> obsahuje následující definice:
 
-```
+```csharp
 public interface ILockingPolicy
 {
   Locks RefineLocks(ModelElement element, Locks proposedLocks);
@@ -117,7 +117,7 @@ public interface ILockingPolicy
 
  Příklad:
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change
@@ -156,7 +156,7 @@ namespace Company.YourDsl.DslPackage // Change
 ### <a name="to-make-your-policy-available-as-a-service"></a>Aby vaše zásady dostupný jako služba
  Ve vaší `DslPackage` projektu, přidejte nový soubor, který obsahuje kód, který se podobá následujícímu příkladu:
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change

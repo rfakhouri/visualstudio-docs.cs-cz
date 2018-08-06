@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 88810c2e4958e96bd5487ce1a5b059897b725b45
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132007"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567139"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Kurz: Vytvoření aplikace Node.js a React v sadě Visual Studio
 
@@ -95,7 +95,7 @@ Tato aplikace vyžaduje ke správnému fungování řadu modulů npm.
 
     Soubor *package.json* tohoto projektu se aktualizuje informacemi o novém balíčku, včetně verze tohoto balíčku.
 
-1. Místo hledání a přidávání zbývajících balíčků po jednom pomocí uživatelského rozhraní vložte následující kód do souboru package.json. Nahraďte v něm oddíl `dependencies` tímto kódem:
+1. Místo hledání a přidávání zbývajících balíčků po jednom pomocí uživatelského rozhraní vložte následující kód do souboru package.json. Chcete-li to provést, nahraďte `dependencies` oddílu s tímto kódem:
 
     ```js
     "dependencies": {
@@ -110,9 +110,11 @@ Tato aplikace vyžaduje ke správnému fungování řadu modulů npm.
     }
     ```
 
+    Pokud není žádný `dependencies` oddílu ve vaší verzi prázdnou šablonou, je třeba přidat ji místo nahraďte stávající část.
+
 1. Klikněte pravým tlačítkem na **npm** uzlu ve vašem projektu a zvolte **aktualizovat balíčky npm**.
 
-    Vyberte **výstup** okna pro instalaci balíčků naleznete v průběhu. Instalace může trvat několik minut a nemusí ihned sledujte výsledky.
+    V dolním podokně, vyberte **výstup** okna pro instalaci balíčků naleznete v průběhu. Instalace může trvat několik minut a nemusí ihned sledujte výsledky. Příliš najdete ve výstupu, ujistěte se, že jste vybrali **Npm** v **zobrazit výstup z:** pole **výstup** okna.
 
     Tady jsou moduly npm, které se po instalaci zobrazí v Průzkumníku řešení.
 
@@ -144,7 +146,7 @@ Nové soubory projektu pro tuto jednoduchou aplikaci přidáte do kořenu projek
 
 ## <a name="add-app-code"></a>Přidání kódu aplikace
 
-1. Otevřete *server.js* a nahraďte kód následujícím kódem:
+1. Otevřít *server.js* a nahraďte existující kód následujícím kódem:
 
     ```javascript
     'use strict';
