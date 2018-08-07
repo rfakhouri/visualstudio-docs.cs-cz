@@ -1,5 +1,5 @@
 ---
-title: VSTemplate – Element (šablony sady Visual Studio) | Microsoft Docs
+title: Vstemplate – Element (šablony sady Visual Studio) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,19 +15,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6151dfd852a76caa1dccbae55241af89681fd81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb4275a8cf88ccedc93695422261624801fdcf33
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141399"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586749"
 ---
-# <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate – element (šablony sady Visual Studio)
-Obsahuje všechna metadata o šablona projektu, šablony položky nebo starter kit.  
+# <a name="vstemplate-element-visual-studio-templates"></a>Vstemplate – element (šablony sady Visual Studio)
+Obsahuje všechna metadata o šablony projektu, šablonu položky nebo starter kit.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```csharp  
 <VSTemplate Type="TemplateType" Version="x.x.x">  
     <TemplateData>    </TemplateData>  
     <TemplateContent>    </TemplateContent>  
@@ -42,28 +42,28 @@ Obsahuje všechna metadata o šablona projektu, šablony položky nebo starter k
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Type`|Slouží k identifikaci šablony jako šablona projektu nebo šablony položky. Tento atribut může mít hodnotu `Project` nebo `Item`.|  
-|`Version`|Určuje číslo verze pro šablonu. Šablony v [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] a [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] mít `Version` hodnotu atributu `3.0.0`.|  
+|`Type`|Identifikuje šablony, která jako šablona projektu nebo šablony položky. Tento atribut může mít hodnotu `Project` nebo `Item`.|  
+|`Version`|Určuje číslo verze šablony. Šablony v [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] a [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] mít `Version` hodnotu atributu `3.0.0`.|  
   
-### <a name="child-elements"></a>Podřízené elementy  
+### <a name="child-elements"></a>Podřízené prvky  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Určuje data, která rozděluje šablony a definuje, jak se zobrazuje v **nový projekt** nebo **přidat novou položku** dialogové okno.|  
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Určuje obsah šablony.|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Volitelný element.|  
+|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Určuje data, která rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateContent –](../extensibility/templatecontent-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Určuje obsah značek šablony.|  
+|[WizardExtension –](../extensibility/wizardextension-element-visual-studio-templates.md)|Volitelný element.|  
 |[WizardData –](../extensibility/wizarddata-element-visual-studio-templates.md)|Volitelný element.|  
   
-### <a name="parent-elements"></a>Nadřazené elementy  
+### <a name="parent-elements"></a>Nadřazené prvky  
  Žádné  
   
 ## <a name="remarks"></a>Poznámky  
- `VSTemplate` Element není kořenovým elementem .vstemplate souborů.  
+ `VSTemplate` Prvek je kořenovým elementem *.vstemplate* soubory.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje metadata pro šablona projektu pro [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikace.  
   
-```  
+```xml  
 <VSTemplate Type="Project" Version="3.0.0"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  
@@ -87,6 +87,6 @@ Obsahuje všechna metadata o šablona projektu, šablony položky nebo starter k
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Viz také  
- [Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+## <a name="see-also"></a>Viz také:  
+ [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)   
  [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)

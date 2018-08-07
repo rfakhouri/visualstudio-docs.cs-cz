@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: c8541fd3a6f48ca6c2a1276265b7908e3ae50634
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fcdb8a25f9f82f317a1fcf5de1dd50a90bf6c4a7
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382009"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586454"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing pomocí sady Visual Studio 2017
 
@@ -102,7 +102,7 @@ Kdykoli můžete dočasně pozastavit nebo úplně zastavit Live Unit Testing. M
 
 - **Možnosti**, otevře **možnosti** dialogového okna popsané v [konfigurace Live Unit Testing](#configure-live-unit-testing) oddílu.
 
-##  <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>Zobrazit pokrytí vizualizace v editoru během psaní
+## <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>Zobrazit pokrytí vizualizace v editoru během psaní
 
 Jednou povolená, Live Unit Testing aktualizací všech řádků kódu v editoru sady Visual Studio, chcete-li zobrazit, zda kód, který píšete je pokryta testy jednotek a zda úspěšných testů, které ho pokrývají.  Následující obrázek znázorňuje řádky kódu s jak úspěšným a neúspěšným testy, stejně jako řádky kódu, které nejsou pokryty všemi testy. Pouze předáním testy jsou pokryté řádky upravené pomocí zelený "✓", jeden nebo více selhávající testy jsou pokryté řádky upravené pomocí red "x" a řádky upravena podle modrý "➖" nejsou pokryty všemi jakýkoli test.
 
@@ -186,8 +186,8 @@ Také vám pomůže následující atributy z Live Unit Testing vyloučit jednot
 
 ## <a name="see-also"></a>Viz také:
 
-[Kód testovací nástroje](https://visualstudio.microsoft.com/vs/testing-tools/)
-[blogu Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
-[Live Unit Testing – nejčastější dotazy](live-unit-testing-faq.md)
-[videa Channel 9: v Live Unit Testing Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Kód testovací nástroje](https://visualstudio.microsoft.com/vs/testing-tools/)
+- [Blogu Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
+- [Nejčastější dotazy k funkci Live Unit Testing](live-unit-testing-faq.md)
+- [Video pro kanál 9: Live Unit Testing v sadě Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
 

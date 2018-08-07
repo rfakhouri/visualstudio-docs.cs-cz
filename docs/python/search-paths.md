@@ -1,6 +1,6 @@
 ---
-title: Jak se používají cesty pro hledání Python
-description: Přehled používání Python cesty hledání v prostředí a projektů v sadě Visual Studio.
+title: Použití Pythonu cesty pro hledání
+description: Přehled použití cesty hledání Pythonu v prostředí a projekty v sadě Visual Studio.
 ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,34 +11,34 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1d05670192630e0bc4903988770c52840a5e347
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 64958097b7a5fe86cda1d2b7dee62c69cd2fea63
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118236"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586414"
 ---
-# <a name="how-visual-studio-uses-python-search-paths"></a>Používání cesty pro hledání Python v sadě Visual Studio
+# <a name="how-visual-studio-uses-python-search-paths"></a>Jak sada Visual Studio používá Python cesty pro hledání
 
-S typickému využití Python `PYTHONPATH` proměnnou prostředí (nebo `IRONPYTHONPATH`atd) poskytuje výchozí cesta hledání pro soubory modulu. To znamená, když použijete `from <name> import...` nebo `import <name>` prohlášení, Python prohledává v pořadí pro odpovídajícím názvem následujících umístěních:
+S typickému využití Python `PYTHONPATH` proměnné prostředí (nebo `IRONPYTHONPATH`atd) poskytuje výchozí cesta pro vyhledávání souborů modulu. To znamená, když použijete `from <name> import...` nebo `import <name>` příkaz Python prohledává v pořadí pro odpovídající název následujících umístění:
 
-1. Integrované moduly jazyka Python.
-1. Složka obsahující kód Python, které používáte.
-1. "Modul vyhledávání cestu" jako definovanou proměnnou prostředí použít. (V tématu [Path hledání modulu](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) a [proměnné prostředí](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) v základní dokumentace Python.)
+1. Integrované moduly v Pythonu.
+1. Složka obsahuje kód Pythonu, který používáte.
+1. "Modul cesty pro hledání" jako určené proměnnou prostředí použít. (Naleznete v tématu [The cesty pro hledání modulu](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) a [proměnné prostředí](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) v samotném dokumentace pro Python.)
 
-Visual Studio ignoruje proměnné prostředí path hledání, ale i v případě, že proměnná je nastavená pro celý systém. Je ignorován ve skutečnosti, přesněji *protože* je nastavena pro celý systém a proto vyvolá určité otázek, které nelze automaticky zodpovězeny: odkazovaný moduly, které jsou určené výhradně pro Python 2.7 nebo Python 3.6? Budou se přepsat standardní knihovna moduly? Vývojář si je vědoma toto chování nebo je škodlivý zneužití pokus?
+Visual Studio ignoruje proměnné prostředí path v hledání, ale i v případě, že proměnná je nastavena pro celý systém. Je ignorována, ve skutečnosti, přesně *protože* nastavit pro celý systém a tedy vyvolává některé otázky, které nejde automaticky odpovědi: jsou určené pro Python 2.7 nebo Python 3.6 odkazované moduly? Budou se přepsat standardní knihovny moduly? Vývojář si je vědoma toto chování nebo je pokus o zneužití škodlivým?
 
-Visual Studio tak poskytuje i prostředky ke specifikaci cest hledání přímo v prostředí a projekty. Kód, který můžete spustit nebo ladění v sadě Visual Studio obdrží cesty hledání v hodnotě `PYTHONPATH` (a ostatní ekvivalentní proměnné). Přidáním cesty hledání Visual Studio zkontroluje knihovny v těchto umístěních a vytvoří databáze IntelliSense pro ně v případě potřeby (Visual Studio 2017 verze 15,5 a starší; vytváření databáze může chvíli trvat v závislosti na počtu knihovny).
+Visual Studio tak poskytuje prostředky ke specifikaci cesty pro hledání přímo v prostředí a projekty. Kód, který můžete spustit nebo ladit v sadě Visual Studio přijímá cesty pro hledání v hodnotě `PYTHONPATH` (a další ekvivalentní proměnné). Přidáním cesty pro hledání sady Visual Studio zkontroluje knihovny v těchto umístěních a sestavuje databáze IntelliSense pro ně v případě potřeby (Visual Studio 2017 verze 15.5 a starší; vytváření databáze může chvíli trvat v závislosti na počtu knihovny).
 
-Chcete-li přidat cestu vyhledávání, klikněte pravým tlačítkem na **cesty hledání** položky v Průzkumníku řešení, vyberte **přidat složku do cesty pro hledání...** a vyberte složku, kterou chcete zahrnout. Tato cesta je používána pro jakékoli prostředí přidružený k projektu. (Může se zobrazit chyby Pokud prostředí je založena na Python 3 a pokusíte se do přidat cestu vyhledávání modulů Python 2.7.)
+Přidání cesty pro hledání, klikněte pravým tlačítkem na **cesty pro hledání** položky v **Průzkumníka řešení**vyberte **přidat složku do cesty pro hledání**a vyberte složku, kterou chcete zahrnout. Tato cesta se používá pro všechny prostředí spojené s projektem. (Může se zobrazit chyby Pokud prostředí je založená na jazyce Python 3 a pokuste se přidat cesty pro hledání na moduly Pythonu 2.7.)
 
-Soubory s `.zip` nebo `.egg` rozšíření lze také přidat jako cesty hledání tak, že vyberete **přidat archivu Zip do cesty pro hledání...** . Stejně jako u složky, obsah tyto soubory jsou kontrolovány a k dispozici pro technologii IntelliSense.
+Soubory s *ZIP* nebo *.egg* rozšíření můžete také přidat jako cesty pro hledání tak, že vyberete **přidat archiv Zip do cesty pro hledání**. Stejně jako u složky, jsou obsah těchto souborů zkontrolovaných a k dispozici pro technologii IntelliSense.
 
-Pokud používáte pravidelně stejné cesty pro hledání a obsah se často nemění, může být efektivnější k její instalaci do vaší lokality balíčky složky. Cesta hledání se pak analyzují a uloženy v databázi IntelliSense, je vždycky být přidružen prostředí určený a nevyžaduje cesta hledání mají být přidány do každého projektu.
+Pokud jsou pravidelně pomocí stejné vyhledávací cesty a obsah se často nemění, může být efektivnější k její instalaci do složky balíčků webů. Cesty pro hledání se pak analyzuje a uloženy v databázi technologie IntelliSense, je vždy přidruženo zamýšleném prostředí a nevyžaduje, aby přidávané do každého projektu cesty pro hledání.
 
-## <a name="see-also"></a>Viz také:
+### <a name="see-also"></a>Viz také:
 
-- [Správa prostředí Python v sadě Visual Studio](managing-python-environments-in-visual-studio.md)
+- [Správa prostředí Pythonu v sadě Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Výběr interpretu pro projekt](selecting-a-python-environment-for-a-project.md)
 - [Používání souboru requirements.txt pro závislosti](managing-required-packages-with-requirements-txt.md)
-- [Odkaz na okno prostředí Python](python-environments-window-tab-reference.md)
+- [Odkaz na okno prostředí Pythonu](python-environments-window-tab-reference.md)

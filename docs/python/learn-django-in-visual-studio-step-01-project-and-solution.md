@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de64cd62ecffef2897e5be65b348eddbc9a52e46
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: bcd15202fa4641928dea8a7c2d0d1f9894426193
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388160"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586574"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Kurz: Začínáme s webového rozhraní Django v sadě Visual Studio
 
@@ -147,7 +147,7 @@ Teď, když nakonfigurujete pro svůj projekt správy zdrojového kódu, můžet
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Otázka: Proč mám chcete vytvořit virtuální prostředí?
 
-Odpověď: Virtuální prostředí je skvělý způsob, jak izolovat přesné závislostí aplikace. Tato izolace zabrání konfliktům v rámci globálního prostředí Pythonu a pomáhá testování a spolupráci. V průběhu času při vývoji aplikace, je vždy přenést v mnoha užitečné balíčky Pythonu. Udržováním balíčků ve virtuálním prostředí specifické pro projekt, můžete snadno aktualizovat projektu *souboru requirements.txt* soubor, který popisuje prostředí, který je zahrnut ve správě zdrojového kódu. Když projekt je zkopírován do jakékoli jiné počítače, včetně serverů sestavení, nasazení serverů a jiných vývojových počítačích je snadné vytvořit znovu prostředí pouze pomocí *souboru requirements.txt* (což je důvod, proč prostředí nemusí být ve správě zdrojového kódu). Další informace najdete v tématu [použít virtuální prostředí](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+Odpověď: Virtuální prostředí je skvělý způsob, jak izolovat přesné závislostí aplikace. Tato izolace zabrání konfliktům v rámci globálního prostředí Pythonu a pomáhá testování a spolupráci. V průběhu času při vývoji aplikace, je vždy přenést v mnoha užitečné balíčky Pythonu. Udržováním balíčků ve virtuálním prostředí specifické pro projekt, můžete snadno aktualizovat projektu *souboru requirements.txt* soubor, který popisuje prostředí, který je zahrnut ve správě zdrojového kódu. Když projekt je zkopírován do jakékoli jiné počítače, včetně serverů sestavení, nasazení serverů a jiných vývojových počítačích je snadné vytvořit znovu prostředí pouze pomocí *souboru requirements.txt* (což je důvod, proč prostředí nemusí být ve správě zdrojového kódu). Další informace najdete v tématu [použít virtuální prostředí](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Otázka: Jak odebrat virtuální prostředí, které už je potvrzená do správy zdrojových kódů?
 

@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 76cef03a8ceac47e06fb0ca13c667002895c6ac4
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 3fbe25acc776e6407a5f10bab78ff7affaef8d78
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567048"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586512"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – nejčastější dotazy
 
@@ -268,4 +268,4 @@ Máte několik možností, jak shromažďovat podrobné protokoly:
 
 ## <a name="see-also"></a>Viz také:
 
-[Živé testování částí](live-unit-testing.md)
+- [Živé testování částí](live-unit-testing.md)

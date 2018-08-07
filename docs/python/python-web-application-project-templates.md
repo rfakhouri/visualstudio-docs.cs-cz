@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5be4a7f23259a2754ca8454371cc64d8fc5419ce
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251800"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586544"
 ---
 # <a name="python-web-application-project-templates"></a>Šablony projektů webové aplikace Python
 
@@ -70,7 +70,7 @@ Všechny  **\<Framework > webový projekt** šablony vytvořit úvodní webovou 
 
 ## <a name="install-project-requirements"></a>Instalovat požadavky projektu
 
-Při vytváření projektu ze šablony pro konkrétní rozhraní, zobrazí se dialogové okno vám pomůžou nainstalovat potřebné balíčky pomocí nástroje pip. Doporučujeme také používat [virtuální prostředí](selecting-a-python-environment-for-a-project.md#using-virtual-environments) pro webové projekty tak, aby se správnými závislostmi jsou zahrnuty při publikování webu:
+Při vytváření projektu ze šablony pro konkrétní rozhraní, zobrazí se dialogové okno vám pomůžou nainstalovat potřebné balíčky pomocí nástroje pip. Doporučujeme také používat [virtuální prostředí](selecting-a-python-environment-for-a-project.md#use-virtual-environments) pro webové projekty tak, aby se správnými závislostmi jsou zahrnuty při publikování webu:
 
 ![Dialogové okno, které nainstaluje potřebné balíčky pro šablonu projektu](media/template-web-requirements-txt-wizard.png)
 
