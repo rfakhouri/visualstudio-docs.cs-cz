@@ -1,5 +1,0 @@
-# [Referenční dokumentace jazyka JavaScript](javascript-language-reference.md)
-# [Novinky v jazyce JavaScript](what-s-new-in-javascript.md)
-# [JavaScript v sadě Visual Studio 2017](javascript-in-vs-2017.md)
-# [JavaScript – referenční dokumentace](reference/TOC.md)
-## [Podmíněná kompilace](advanced/TOC.md)

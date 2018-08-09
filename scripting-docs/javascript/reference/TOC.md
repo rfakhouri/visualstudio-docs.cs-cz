@@ -1,5 +1,0 @@
-# [JavaScript – referenční dokumentace](javascript-reference.md)
-## [Informace o verzích](javascript-version-information.md)
-## [JavaScript – chyby](javascript-errors.md)
-### [JavaScript – chyby za běhu](javascript-run-time-errors.md)
-### [JavaScript – chyby syntaxe](javascript-syntax-errors.md)
