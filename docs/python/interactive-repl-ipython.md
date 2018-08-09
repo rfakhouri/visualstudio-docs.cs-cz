@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6bd98a8b937dc5a4ff2f8227684be4fbb9a948c4
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c4d9d7f03f8703bd549cf9e1098327a2fb59a497
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341504"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008213"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Použití Ipythonu v interaktivním okně
 
@@ -81,7 +81,7 @@ V tomto návodu, byste měli mít [Anaconda](https://www.continuum.io) prostřed
 
 IPython má mnoho dalších užitečných funkcí jako je například uvození prostředí systému a nahrazení proměnné zachytávání výstupu, např. Odkazovat [IPython dokumentaci](http://ipython.org/documentation.html) Další informace.
 
-## <a name="see-also"></a>Viz také:
+### <a name="see-also"></a>Viz také:
 
 - Chcete-li použít Jupyter snadno a bez instalace, zkuste bezplatnou [poznámkových bloků Azure hostovaná služba](https://notebooks.azure.com/) , který umožňuje zachovat a sdílení vašich poznámkových bloků s ostatními.
 

@@ -11,16 +11,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c86c2d92088a7e34699e5c2fd15aef5de3ef06a
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 83507060295c294747f279dd32f96fe8b0a358fa
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586469"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008418"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Začínáme s Live Unit Testing v sadě Visual Studio
 
-Když povolíte Live Unit Testing v řešení sady Visual Studio, Live Unit Testing znázorňuje vizuální stav testů a pokrytí testu. Pokaždé, když upravíte kódu testy, spustí se také dynamicky. Poskytuje okamžité odeslání oznámení, když změny mají poškozen kódu a uvádí oblasti, pro které jsou potřeba další testy.
+Když povolíte Live Unit Testing v řešení sady Visual Studio, Live Unit Testing znázorňuje vizuální stav testů a pokrytí testu. Také dynamicky provádí testy kdykoli upravit kód a okamžitě vás upozorní, když změny způsobit selhání testů.
 
 Live Unit Testing je možné pro testování řešení, které jsou cíleny rozhraní .NET Framework nebo .NET Core. V tomto kurzu se naučíte používat Live Unit Testing tak, že vytvoříte jednoduchou třídu knihovny, který cílí na .NET Standard a vytvoříte projekt MSTest, který cílí na .NET Core a otestovat ho.
 
@@ -152,7 +152,7 @@ Dalším krokem je vytvoření projektu testování částí pro testování `St
 
    ![Výběr kódování UTF-8](media/lut-start/utf8-encoding.png)
 
-1. Kompilace projektu testování částí pomocí **sestavení** > **znovu sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio.
+1. Zkompilujte projekt jednotkového testu výběrem **sestavení** > **znovu sestavit řešení** z nejvyšší úrovně nabídky sady Visual Studio.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
@@ -200,7 +200,7 @@ Pro něj jste vytvořili knihovnu tříd, jakož i některá testování část�
 
 Míry, i když jste napsali testy pro `StringLibrary` knihovny tříd, které neprovedly je. Live Unit Testing je spouští automaticky jakmile ho povolíte. Chcete-li to mohli udělat, postupujte takto:
 
-1. Volitelně vyberte okno kódu, který obsahuje kód pro `StringLibrary`. Je to *class1.cs* pro projekt C# nebo *Class1.vb* pro projekt jazyka Visual Basic. (Tento krok vám umožní vizuálně zkoumat výsledků testů a rozsah pokrytí kódu, jakmile povolíte Live Unit Testing.)
+1. Volitelně vyberte okno kódu, který obsahuje kód pro `StringLibrary`. Je to *Class1.cs* pro projekt C# nebo *Class1.vb* pro projekt jazyka Visual Basic. (Tento krok vám umožní vizuálně zkoumat výsledků testů a rozsah pokrytí kódu, jakmile povolíte Live Unit Testing.)
 
 1. Vyberte **testovací** > **Live Unit Testing** > **Start** z nejvyšší úrovně nabídky sady Visual Studio.
 
@@ -284,7 +284,7 @@ K rozšíření pokrytí kódu `StartsWithLower` metodu, postupujte takto:
 
 V některých případech úspěšných testů v **Průzkumník testů** může být šedě. Který označuje, že test právě probíhá, nebo, že test nebyl znovu spustit, protože byly změny žádný kód, který by ovlivnily test od poslední spuštění.
 
-Zatím jste úspěšné všech testech. V další části prozkoumáme, jak můžete zpracovávat selhání testu.
+Zatím všechny naše testy proběhly úspěšně. V další části prozkoumáme, jak můžete zpracovávat selhání testu.
 
 ## <a name="handle-a-test-failure"></a>Zpracování selhání testu
 
@@ -295,7 +295,9 @@ V této části budete prozkoumávat, jak vám pomůže Live Unit Testing identi
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
 
-1. Když je spuštěn test, Live Unit Testing znamená, že `TestHasEmbeddedSpaces` metody se nezdařila, jak ukazuje následující obrázek: ![reporting selhání testu Průzkumníku testů.](media/lut-start/test-failure.png)
+1. Když je spuštěn test, Live Unit Testing znamená, že `TestHasEmbeddedSpaces` metody se nezdařila, jak ukazuje následující obrázek:
+
+   ![Průzkumník testů reporting selhání testu.](media/lut-start/test-failure.png)
 
 1. Vyberte okno zobrazující kód knihovny. Všimněte si, že Live Unit Testing se rozšířila pokrytí kódu `HasEmbeddedSpaces` metody. Také oznámí selhání testu tak, že přidáte červený "🞩" na řádky, které jsou předmětem selhání testů.
 
@@ -336,7 +338,7 @@ V této části budete prozkoumávat, jak vám pomůže Live Unit Testing identi
 
    ![Live Unit Testing informace o selhání testu.](media/lut-start/test-failure-info-vb.png)
 
-1. Vyberte neúspěšný **TestHasEmbeddedSpaces** testování. Všimněte si, že zobrazuje Live Unit Testing poskytuje řadu možností, jako je spuštění všech testů, spuštění testů, vyberte možnost, všechny testy ladění a ladění vybrané testy, jako na následujícím obrázku:
+1. Vyberte neúspěšný **TestHasEmbeddedSpaces** testování. Všimněte si, že zobrazuje Live Unit Testing poskytuje řadu možností, jako je spuštění všech testů, spuštění vybraných testů, všechny testy ladění nebo ladění vybrané testy, jako na následujícím obrázku:
 
    ![Live Unit Testing možnosti pro selhání testu.](media/lut-start/test-failure-options.png)
 
@@ -356,7 +358,7 @@ V této části budete prozkoumávat, jak vám pomůže Live Unit Testing identi
 
 ---
 
-To poskytuje dostatek informací pro předběžné šetření chyby. Buď `TestHasEmbeddedSpaces`, rutina testu, provedli nesprávné předpokladů, nebo `HasEmbeddedSpaces` nerozpozná správně všechny vložené mezery. Diagnostikovat a opravit problém, začínat `StringLibrary.HasEmbeddedSpaces` metody:
+To poskytuje dostatek informací pro předběžné šetření chyby. Buď `TestHasEmbeddedSpaces` (rutina testu) provedené nesprávné předpokladů, nebo `HasEmbeddedSpaces` nerozpozná správně všechny vložené mezery. Diagnostikovat a opravit problém, začínat `StringLibrary.HasEmbeddedSpaces` metody:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 1. Podívejte se na porovnání v `HasEmbeddedSpaces` metody. Vložené místo jako U + 0020 vyhodnotí. Unicode Standard však zahrnuje celou řadou dalších znaky. To naznačuje, že kód knihovny obsahuje nesprávně testovány z hlediska prázdným znakem.

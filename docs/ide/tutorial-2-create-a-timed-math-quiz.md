@@ -11,44 +11,45 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c2a0d239cca67eda9454f522e5041af29c7fc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b28afd645351577073eb7525cf4bed321afb09c0
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747877"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008392"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutoriál 2: Vytvoření matematického kvízu
-V tomto kurzu vytvoříte kvízu, ve kterém příjemce kvízu s časovým limitem musí odpovědět na čtyři náhodné aritmetické úlohy v zadaném čase. Získáte informace o následujících postupech:
+
+V tomto kurzu vytvoříte kvíz, ve kterém hráč musí odpovědět na čtyři náhodné aritmetické úlohy v zadaném čase. Získáte informace o následujících postupech:
 
 -   Generovat náhodná čísla pomocí <xref:System.Random> třídy.
 
--   Aktivovat události dochází v určitém čase podle <xref:System.Windows.Forms.Timer> ovládacího prvku.
+-   Aktivovat události dojde v určitém čase pomocí k <xref:System.Windows.Forms.Timer> ovládacího prvku.
 
--   Řízení toku programu pomocí `if else` příkazy.
+-   Kontrolovat tok programu pomocí `if else` příkazy.
 
 -   Proveďte základní aritmetické operace v kódu.
 
- Po dokončení, vaše kvízu bude vypadat jako na následujícím obrázku, s výjimkou s různá čísla.
+Po dokončení, kvíz vypadat jako na následujícím obrázku, s výjimkou s různými počty:
 
- ![Matematického kvízu s čtyři problémy](../ide/media/express_finishedquiz.png) kvízu s časovým limitem, které vytvoříte v tomto kurzu
+![Matematický kvíz se čtyřmi úlohami](../ide/media/express_finishedquiz.png)
 
 ## <a name="tutorial-links"></a>Kurz odkazy
 
- Si můžete stáhnout dokončenou verzi kvízu [dokončení matematické kvízu s časovým limitem kurz ukázka](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+Chcete-li stáhnout úplnou verzi kvízu, přečtěte si téma [ukázkový kurz pro dokončení matematický kvíz](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 > [!NOTE]
->  Tento kurz popisuje, jak Visual C# a Visual Basic, takže zaměřit se na informace, které jsou specifické pro programovací jazyk, který používáte.
+> Tento kurz se zabývá Visual C# i Visual Basic, takže se zaměřte na informace, které jsou specifické pro programovací jazyk, který používáte.
 
 ## <a name="related-topics"></a>Související témata
 
 |Název|Popis|
 |-----------|-----------------|
-|[Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Začněte tím, že vytváření projektu, změna vlastností a přidání `Label` ovládací prvky.|
-|[Krok 2: Vytvořte náhodný problém s přidáním](../ide/step-2-create-a-random-addition-problem.md)|Vytvořit problém a použít `Random` k vygenerování náhodných čísel.|
-|[Krok 3: Přidejte časovač odpočítávání](../ide/step-3-add-a-countdown-timer.md)|Přidejte časovač odpočítávání, takže můžete kvízu vypršel časový limit.|
-|[Krok 4: Přidejte metodu CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md)|Přidejte metodu ke kontrole, jestli příjemce kvízu s časovým limitem zadali správnou odpověď pro problém.|
-|[Krok 5: Přidejte obslužné rutiny událostí Enter pro ovládací prvky NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)|Přidání obslužných rutin událostí, které usnadňují trvat vaší kvízu s časovým limitem.|
-|[Krok 6: Přidejte problém odečtení](../ide/step-6-add-a-subtraction-problem.md)|Přidejte problém odečtení, který generuje náhodná čísla, používá časovač a kontroluje správné odpovědi.|
-|[Krok 7: Přidejte problémy násobení a dělení](../ide/step-7-add-multiplication-and-division-problems.md)|Přidejte problémy násobení a dělení, které generovat náhodná čísla, použijte časovač a zkontrolujte správné odpovědi.|
-|[Krok 8: Přizpůsobení kvízu](../ide/step-8-customize-the-quiz.md)|Vyzkoušejte jiné funkce, jako je například změna barev a přidání nápovědy.|
+|[Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Začněte vytvořením projektu, změnou vlastností a přidáním `Label` ovládacích prvků.|
+|[Krok 2: Vytvořte náhodný problém s přidáním](../ide/step-2-create-a-random-addition-problem.md)|Vytvořte úlohu sčítání a použít `Random` třídu pro generování náhodných čísel.|
+|[Krok 3: Přidejte časovač odpočítávání](../ide/step-3-add-a-countdown-timer.md)|Přidejte časovač odpočítávání tak, aby kvíz mohou být vypršel časový limit.|
+|[Krok 4: Přidejte metodu CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md)|Přidejte metodu ke kontrole, zda Autor kvízu zadal správnou odpověď pro problém.|
+|[Krok 5: Přidejte obslužné rutiny událostí Enter pro ovládací prvky NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)|Přidání obslužných rutin událostí, které zjednodušují trvat kvíz.|
+|[Krok 6: Přidejte problém odečtení](../ide/step-6-add-a-subtraction-problem.md)|Přidáte úlohu odčítání, která generuje náhodná čísla, používá časovač a kontroluje správné odpovědi.|
+|[Krok 7: Přidejte problémy násobení a dělení](../ide/step-7-add-multiplication-and-division-problems.md)|Přidejte problémy násobení a dělení, které generují náhodná čísla, použijte časovač a zkontrolujte správné odpovědi.|
+|[Krok 8: Přizpůsobení kvízu](../ide/step-8-customize-the-quiz.md)|Vyzkoušejte další funkce, jako je například změna barev a přidání nápovědy.|

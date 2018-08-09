@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29e4be790aef7dcb16031df91f76fd92b840bdf6
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 1e3e70675901128ed6b8d118e54dc10ddee152a5
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341784"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008616"
 ---
 # <a name="remotely-debug-python-code-on-azure"></a>Vzdálené ladění kódu v Pythonu v Azure
 
@@ -48,7 +48,7 @@ Podle pokynů, vytvořit adresu URL, pomocí tajného klíče z *web.debug.confi
 
 ![Určuje se koncový bod ladicího programu ve službě Azure App Service](media/azure-remote-debugging-secret.png)
 
-Adresa URL je teď třeba ve formě `wss://<secret>@<site_name>.azurewebsites.net/ptvsd` nahradit &lt;tajný kód&gt;a &lt;název_webu&gt; v řetězci s určitými hodnotami.
+Adresa URL je teď třeba ve formě `wss://<secret>@<site_name>.azurewebsites.net/ptvsd` nahradit &lt;tajný kód&gt; a &lt;název_webu&gt; v řetězci s určitými hodnotami.
 
 Chcete-li připojit ladicí program, vyberte **ladění** > **připojit k procesu**vyberte **vzdálené ladění Pythonu** v **přenosu**rozevíracího seznamu, zadejte adresu URL do **textového pole kvalifikátor**a stiskněte klávesu **Enter**. Pokud Visual Studio můžete úspěšně připojit ke službě App Service, zobrazí jeden proces Pythonu v seznamu. Vyberte ho a pak **připojit** pro spuštění ladění:
 

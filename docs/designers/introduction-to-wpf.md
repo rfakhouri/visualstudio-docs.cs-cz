@@ -13,22 +13,22 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 121cd95e55b17ea8e93b6a9ad8beb1a9d9d3feca
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: db06323da8ccd3009c52be3ba9dd51478d1d722c
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978346"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008457"
 ---
-# <a name="introduction-to-wpf"></a>Úvod do WPF
+# <a name="wpf-overview"></a>Přehled WPF
 
 Windows Presentation Foundation (WPF) umožňuje vytvářet klasické pracovní plochy klienta aplikace pro Windows s vizuálně působivým uživatelským prostředím.
 
- ![Ukázka uživatelského rozhraní contoso zdravotní péče](../designers/media/wpfintrofigure24.png)
+![Ukázka uživatelského rozhraní contoso zdravotní péče](../designers/media/wpfintrofigure24.png)
 
- Základní WPF je nezávislé na řešení a vektorové vykreslování modul, který je sestaven využít moderní grafický hardware. WPF rozšiřuje základní s komplexní sadou funkcí vývoj aplikací, které zahrnují Extensible Application Markup Language (XAML), ovládací prvky, datové vazby, rozložení, 2D a 3D grafice, animace, styly, šablony, dokumenty, média, text, a Typografie. WPF je součástí rozhraní .NET Framework, takže můžete vytvářet aplikace, které zahrnují další prvky v knihovně tříd rozhraní .NET Framework.
+Základní WPF je nezávislé na řešení a vektorové vykreslování modul, který je sestaven využít moderní grafický hardware. WPF rozšiřuje základní s komplexní sadou funkcí vývoj aplikací, které zahrnují Extensible Application Markup Language (XAML), ovládací prvky, datové vazby, rozložení, 2D a 3D grafice, animace, styly, šablony, dokumenty, média, text, a Typografie. WPF je součástí rozhraní .NET Framework, takže můžete vytvářet aplikace, které zahrnují další prvky v knihovně tříd rozhraní .NET Framework.
 
- Tento přehled je určená pro nové uživatele a popisuje klíčové funkce a koncepty WPF.
+Tento přehled je určená pro nové uživatele a popisuje klíčové funkce a koncepty WPF.
 
 ## <a name="program-with-wpf"></a>Program s WPF
 
@@ -50,7 +50,7 @@ WPF umožňuje vyvíjet aplikace pomocí obou *značek* a *použití modelu code
 
 XAML je jazyk založený na formátu XML kód, který implementuje vzhled aplikace deklarativně. Obvykle použijete ji k vytvoření systému windows, dialogová okna, stránky a uživatelské ovládací prvky a tak, aby vyplnil s ovládacími prvky, tvary a grafické.
 
- Následující příklad používá k implementaci vzhled okno, které obsahuje jedno tlačítko XAML.
+Následující příklad používá k implementaci vzhled okno, které obsahuje jedno tlačítko XAML.
 
 ```xaml
 <Window
@@ -64,13 +64,13 @@ XAML je jazyk založený na formátu XML kód, který implementuje vzhled aplika
 </Window>
 ```
 
- Konkrétně tento XAML definuje tlačítka a okna s použitím `Window` a `Button` prvků, v uvedeném pořadí. Každý prvek má nakonfigurovanou atributy, jako například `Window` elementu `Title` atribut zadat text záhlaví okna. WPF v době běhu, převede prvky a atributy, které jsou definovány ve značkách pro instance tříd WPF. Například `Window` element je převeden na instanci <xref:System.Windows.Window> třídy, jejichž <xref:System.Windows.Window.Title%2A> vlastnost je hodnota `Title` atribut.
+Konkrétně tento XAML definuje tlačítka a okna s použitím `Window` a `Button` prvků, v uvedeném pořadí. Každý prvek má nakonfigurovanou atributy, jako například `Window` elementu `Title` atribut zadat text záhlaví okna. WPF v době běhu, převede prvky a atributy, které jsou definovány ve značkách pro instance tříd WPF. Například `Window` element je převeden na instanci <xref:System.Windows.Window> třídy, jejichž <xref:System.Windows.Window.Title%2A> vlastnost je hodnota `Title` atribut.
 
- Následující obrázek ukazuje uživatelské rozhraní (UI), který je definován pomocí XAML v předchozím příkladu.
+Následující obrázek ukazuje uživatelské rozhraní (UI), který je definován pomocí XAML v předchozím příkladu.
 
- ![Okno, které obsahuje tlačítko](../designers/media/wpfintrofigure10.png)
+![Okno, které obsahuje tlačítko](../designers/media/wpfintrofigure10.png)
 
- Protože XAML je založený na formátu XML, rozhraní, které vytváříte s ním je sestavena v hierarchii označované jako vnořené elementy [stromem prvků](/dotnet/framework/wpf/advanced/trees-in-wpf). Strom prvku poskytuje logické a intuitivní způsob, jak vytvářet a spravovat uživatelská rozhraní.
+Protože XAML je založený na formátu XML, rozhraní, které vytváříte s ním je sestavena v hierarchii označované jako vnořené elementy [stromem prvků](/dotnet/framework/wpf/advanced/trees-in-wpf). Strom prvku poskytuje logické a intuitivní způsob, jak vytvářet a spravovat uživatelská rozhraní.
 
 ### <a name="code-behind"></a>Použití modelu Code-behind
 
@@ -639,18 +639,18 @@ V tomto okamžiku však můžete využít výhod jeden ze tří modelů WPF k vy
 
 Následující příklad ukazuje vlastní číselné nahoru/dolů ovládací prvek, který je odvozen od <xref:System.Windows.Controls.UserControl>.
 
- [!code-xaml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]
+[!code-xaml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]
 
- [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
- [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]
+[!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
+[!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]
 
- Následující příklad znázorňuje XAML, který je potřeba začlenit uživatelského ovládacího prvku do <xref:System.Windows.Window>.
+Následující příklad znázorňuje XAML, který je potřeba začlenit uživatelského ovládacího prvku do <xref:System.Windows.Window>.
 
- [!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]
+[!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]
 
- Následující obrázek ukazuje `NumericUpDown` konání ovládacího prvku <xref:System.Windows.Window>.
+Následující obrázek ukazuje `NumericUpDown` konání ovládacího prvku <xref:System.Windows.Window>.
 
- ![Vlastní uživatelský ovládací prvek](../designers/media/wpfintrofigure3.png)
+![Vlastní uživatelský ovládací prvek](../designers/media/wpfintrofigure3.png)
 
 Další informace o vlastních ovládacích prvcích najdete v tématu [ovládací prvek vytvoření přehledu](/dotnet/framework/wpf/controls/control-authoring-overview).
 

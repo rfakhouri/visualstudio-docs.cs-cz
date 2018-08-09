@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: dc2b4893906e5f3f8902ab6cc08d17d61a45133f
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498964"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008278"
 ---
 # <a name="debug-your-python-code"></a>Ladění kódu Pythonu
 
@@ -80,7 +80,7 @@ Po zastavení na zarážce, budete mít různé způsoby, jak procházet kód ne
 | **Krokovat s Vystoupením** | **SHIFT**+**F11** | Spustí kód do konce aktuální funkci a pak kroky volání příkazu.  Tento příkaz je užitečné, když není nutné ladit zbytek aktuální funkce. |
 | **Spustit ke kurzoru** | **CTRL**+**F10** | Spustí kód do umístění blikající kurzor v editoru. Tento příkaz umožňuje snadno přeskočit část kódu, který není nutné k ladění. |
 | **Nastavení dalšího příkazu** | **CTRL**+**Shift**+**F10** | Změny aktuálního spuštění bodu do umístění blikajícího kurzoru v kódu. Tento příkaz umožňuje vynechat segment kódu na všech spuštění, jako když víte, kód je chybný nebo je výsledný nežádoucí vedlejší efekt. |
-| **Zobrazit další příkaz** | **ALT**+**Num**+**&#42;**| Vrátíte se do dalšího příkazu ke spuštění. Tento příkaz je užitečné, pokud jste hledání ve vašem kódu a nepamatujete, kde je zastavený ladicím programu. |
+| **Zobrazit další příkaz** | **ALT**+**Num****&#42;**| Vrátíte se do dalšího příkazu ke spuštění. Tento příkaz je užitečné, pokud jste hledání ve vašem kódu a nepamatujete, kde je zastavený ladicím programu. |
 
 ### <a name="inspect-and-modify-values"></a>Kontrola a změny hodnot
 
@@ -149,11 +149,11 @@ Ve výchozím nastavení spustí ladicí program programu pomocí standardní Sp
 
 | Možnost | Popis |
 | --- | --- |
-| **Cesty pro hledání** | Tyto hodnoty odpovídat, jak je zobrazeno v uzlu projektu cesty pro hledání v **Průzkumníka řešení**. Tuto hodnotu Tady můžete upravit, ale je snáze se použít **Průzkumníka řešení** , který vám umožňuje procházet složky a automaticky převede do formuláře relativní cesty. |
+| **Cesty pro hledání** | Tyto hodnoty odpovídat, jak je zobrazeno v projektu **cesty pro hledání** uzel v **Průzkumníka řešení**. Tuto hodnotu Tady můžete upravit, ale je snáze se použít **Průzkumníka řešení** , který vám umožňuje procházet složky a automaticky převede do formuláře relativní cesty. |
 | **Argumenty skriptu** | Tyto argumenty jsou přidány do příkaz použitý ke spuštění skriptu, vyskytující se po název souboru vašeho skriptu. První položka zde je k dispozici pro váš skript jako `sys.argv[1]`, druhý jako `sys.argv[2]`, a tak dále. |
 | **Argumenty pro interpret** | Tyto argumenty jsou přidány do příkazového řádku Spouštěč před název vašeho skriptu. Běžné argumenty tady `-W ...` řízení upozornění `-O` mírně optimalizovat váš program a `-u` používat vstupně-výstupní operace bez vyrovnávací paměti. IronPython uživatelé můžou toto pole použít k předání `-X` možnosti, jako například `-X:Frames` nebo `-X:MTA`. |
 | **Cesta k interpretu** | Přepíše cestu spojené s aktuálním prostředí. Hodnota může být užitečné při spouštění skriptu nestandardní překladač. |
-| **Proměnné prostředí** | V tomto poli víceřádkový text, přidat položky ve formuláři \<NAME > =\<hodnota >. Protože toto nastavení je použito jako poslední, v horní části všechny existující globálních proměnných prostředí a po `PYTHONPATH` nastavena podle nastavení cesty pro hledání, můžete použít k ruční přepsání něco z toho jiné proměnné. |
+| **Proměnné prostředí** | V tomto poli víceřádkový text, přidat položky ve formuláři \<NAME > =\<hodnota >. Protože toto nastavení je použito jako poslední, v horní části všechny existující globálních proměnných prostředí a po `PYTHONPATH` byla nastavena podle **cesty pro hledání** nastavení, to umožňuje ručně přepsat něco z toho jiné proměnné. |
 
 ## <a name="immediate-and-interactive-windows"></a>Okamžité a interaktivní okna
 

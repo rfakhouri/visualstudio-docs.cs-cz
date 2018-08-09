@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97ba2d50c88d9bc4b62e39f24eafea9bd0416eb6
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39277006"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008265"
 ---
 # <a name="outlook-object-model-overview"></a>Přehled modelu objektů aplikace Outlook
   Vývoj doplňků VSTO pro aplikaci Microsoft Office Outlook, můžete pracovat s objekty, které jsou k dispozici v modelu objektů aplikace Outlook. Model objektů aplikace Outlook obsahuje třídy a rozhraní, které představují položky v uživatelském rozhraní. Například <xref:Microsoft.Office.Interop.Outlook.Application> objekt představuje celé aplikace <xref:Microsoft.Office.Interop.Outlook.Folder> objekt představuje složku, která obsahuje e-mailové zprávy nebo jiné položky a <xref:Microsoft.Office.Interop.Outlook.MailItem> objekt představuje e-mailové zprávy.  
@@ -59,7 +59,7 @@ ms.locfileid: "39277006"
 ### <a name="application-object"></a>Objekt aplikace  
  <xref:Microsoft.Office.Interop.Outlook.Application> Objekt představuje aplikaci Outlook a je to objekt nejvyšší úrovně v modelu objektů aplikace Outlook. Některé z vašich nejdůležitějších členům tohoto objektu patří:  
   
--   [Createitem –](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece) metodu, která slouží k vytvoření nové položky, například e-mailové zprávy, úkolu nebo události.  
+-   [Createitem –](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) metodu, která slouží k vytvoření nové položky, například e-mailové zprávy, úkolu nebo události.  
   
 -   <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> Vlastnost, která vám umožní přístup k systému windows, které zobrazují obsah složky v uživatelském rozhraní (UI) aplikace Outlook.  
   
@@ -114,7 +114,7 @@ ms.locfileid: "39277006"
 ### <a name="taskitem-object"></a>Objekt TaskItem  
  <xref:Microsoft.Office.Interop.Outlook.TaskItem> Objekt představuje úlohy provádět v rámci zadaného časového rámce. <xref:Microsoft.Office.Interop.Outlook.TaskItem> objekty jsou umístěny v **úlohy** složky.  
   
- Chcete-li vytvořit úlohu, použijte [createitem –](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece) metodu <xref:Microsoft.Office.Interop.Outlook.Application> objektu a předejte hodnotu <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> parametru.  
+ Chcete-li vytvořit úlohu, použijte [createitem –](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) metodu <xref:Microsoft.Office.Interop.Outlook.Application> objektu a předejte hodnotu <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> parametru.  
   
 ### <a name="contactitem-object"></a>Objekt ContactItem  
  <xref:Microsoft.Office.Interop.Outlook.ContactItem>Objekt představuje kontakt v **kontakty** složky. <xref:Microsoft.Office.Interop.Outlook.ContactItem> objekty obsahují celou řadu kontaktní informace pro osoby, které představují, jako je například adresu, e-mailových adres a telefonních čísel.  

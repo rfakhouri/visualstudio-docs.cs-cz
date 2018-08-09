@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d36fefdaa92b488908a0de99878e341114253624
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341261"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008320"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definovat vlastní příkazy pro projekty v Pythonu
 
-Při práci s projekty v Pythonu, může být pro vás sami přepnutí na okno příkazového řádku spustit konkrétní skripty a moduly, spustit příkazy nástroje pip, nebo nějaký jiný libovolný nástroj. Cílem pracovního postupu můžete přidat vlastní příkazy **Python** podnabídce v kontextové nabídce projektu Pythonu. Tyto příkazy můžete spustit v okně konzoly nebo v okně výstupu sady Visual Studio. Regulární výrazy můžete použít také dáte pokyn, aby Visual Studio jak parsovat chyby a upozornění z výstupu příkazu.
+Při práci s projekty v Pythonu, může být pro vás sami přepnutí na okno příkazového řádku spustit konkrétní skripty a moduly, spustit příkazy nástroje pip, nebo nějaký jiný libovolný nástroj. Cílem pracovního postupu můžete přidat vlastní příkazy **Python** podnabídce v kontextové nabídce projektu Pythonu. Tyto příkazy můžete spustit v okně konzoly nebo v sadě Visual Studio **výstup** okna. Regulární výrazy můžete použít také dáte pokyn, aby Visual Studio jak parsovat chyby a upozornění z výstupu příkazu.
 
 Ve výchozím nastavení, této nabídky obsahuje pouze jeden **spustit Pylintu** příkaz:
 

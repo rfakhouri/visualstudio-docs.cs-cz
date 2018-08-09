@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 604a14a5f8d638c3d373e4ad7ea895b73a6ae0c1
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c8638f9398be823b05d2575157c1992e230674f9
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341594"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008665"
 ---
 # <a name="format-python-code"></a>Formátování kódu Pythonu
 
@@ -45,41 +45,41 @@ Příklady pro různé možnosti jsou k dispozici v následujících tabulkách:
 
 | Možnost definice třídy | Zaškrtnuto | Vymazat |
 | --- | --- | --- | 
-| Vložit mezeru mezi název třídy prohlášení a seznam základních tříd | `class X (object): pass` | `class X(object): pass` | 
-| Vložit mezeru mezi kulaté závorky seznamu základních tříd | `class X( object ): pass` | `class X(object): pass` |
-| Vložit mezeru mezi kulaté závorky seznamu prázdném | `class X( ): pass` | `class X(): pass` |
+| **Vložit mezeru mezi název třídy prohlášení a seznam základních tříd** | `class X (object): pass` | `class X(object): pass` | 
+| **Vložit mezeru mezi kulaté závorky seznamu základních tříd** | `class X( object ): pass` | `class X(object): pass` |
+| **Vložit mezeru mezi kulaté závorky seznamu prázdném** | `class X( ): pass` | `class X(): pass` |
 
 <br/>
 
 | Možnost definice funkce | Zaškrtnuto | Vymazat |
 | --- | --- | --- |
-| Vložit mezeru mezi název funkce deklarace a seznam parametrů | `def X (): pass` | `def X(): pass` | 
-| Vložit mezeru mezi kulaté závorky seznamu parametrů | `def X( a, b ): pass` | `def X(a, b): pass` |
-| Vložit mezeru mezi kulaté závorky seznamu prázdný parametr | `def X( ): pass` | `def X(): pass` |
-| Vložit mezery kolem '=' ve výchozích hodnotách parametrů | `includes X(a = 42): pass` | `includes X(a=42): pass` |
-| Vložit mezeru před a za návratové operátory poznámek | `includes X() -> 42: pass` | `includes X()->42: pass` |
+| **Vložit mezeru mezi název funkce deklarace a seznam parametrů** | `def X (): pass` | `def X(): pass` | 
+| **Vložit mezeru mezi kulaté závorky seznamu parametrů** | `def X( a, b ): pass` | `def X(a, b): pass` |
+| **Vložit mezeru mezi kulaté závorky seznamu prázdný parametr** | `def X( ): pass` | `def X(): pass` |
+| **Vložit mezery kolem '=' ve výchozích hodnotách parametrů** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **Vložit mezeru před a za návratové operátory poznámek** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>
 
 | Možnost operátory | Zaškrtnuto | Vymazat |
 | --- | --- | --- |
-| Vložit mezery kolem binárních operátorů | `a + b` | `a+b` |
-| Vložit mezery kolem přiřazení | `a = b` | `a=b` |
+| **Vložit mezery kolem binárních operátorů** | `a + b` | `a+b` |
+| **Vložit mezery kolem přiřazení** | `a = b` | `a=b` |
 
 <br/>
 
 | Možnost výraz řádkování | Zaškrtnuto | Vymazat |
 | --- | --- | --- |
-| Vložit mezeru mezi název funkce volání a seznam argumentů. | `X ()` | `X()` |
-| Vložit mezeru mezi kulaté závorky prázdného seznamu argumentů | `X( )` | `X()` |
-| Vložit mezeru mezi kulaté závorky seznamu argumentů | `X( a, b )` | `X(a, b)` |
-| Vložit mezeru mezi kulaté závorky výrazu | `( a )` | `(a)` |
-| Vložit mezeru mezi kulaté závorky prázdné řazené kolekci členů | `( )` | `()` |
-| Vložit mezeru mezi kulaté závorky řazené kolekce členů | `( a, b )` | `(a, b)` |
-| Vložit mezeru mezi kulaté prázdné hranaté závorky | `[ ]` | `[]` |
-| Vložit mezery mezi hranaté závorky seznamů | `[ a, b ]` | `[a, b]` |
-| Vložit mezeru před levou hranatou závorku | `x [i]` | `x[i]` |
-| Vložit mezeru mezi hranaté závorky | `x[ i ]` | `x[i]` |
+| **Vložit mezeru mezi název funkce volání a seznam argumentů.** | `X ()` | `X()` |
+| **Vložit mezeru mezi kulaté závorky prázdného seznamu argumentů** | `X( )` | `X()` |
+| **Vložit mezeru mezi kulaté závorky seznamu argumentů** | `X( a, b )` | `X(a, b)` |
+| **Vložit mezeru mezi kulaté závorky výrazu** | `( a )` | `(a)` |
+| **Vložit mezeru mezi kulaté závorky prázdné řazené kolekci členů** | `( )` | `()` |
+| **Vložit mezeru mezi kulaté závorky řazené kolekce členů** | `( a, b )` | `(a, b)` |
+| **Vložit mezeru mezi kulaté prázdné hranaté závorky** | `[ ]` | `[]` |
+| **Vložit mezery mezi hranaté závorky seznamů** | `[ a, b ]` | `[a, b]` |
+| **Vložit mezeru před levou hranatou závorku** | `x [i]` | `x[i]` |
+| **Vložit mezeru mezi hranaté závorky** | `x[ i ]` | `x[i]` |
 
 <br/>
 
@@ -89,9 +89,9 @@ Příklady pro různé možnosti jsou k dispozici v následujících tabulkách:
 
 | Možnost | Před formátováním | Po naformátování |
 | --- | --- | --- |
-| Umístit importované moduly na nový řádek | `import sys, pickle` | `import sys`<br/>`import pickle` |
-| Odebrat zbytečné středníky | `x = 42;` | `x = 42` |
-| Umístit více příkazů na nových řádcích | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
+| **Umístit importované moduly na nový řádek** | `import sys, pickle` | `import sys`<br/>`import pickle` |
+| **Odebrat zbytečné středníky** | `x = 42;` | `x = 42` |
+| **Umístit více příkazů na nových řádcích** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
 ## <a name="wrapping"></a>Zabalení
 

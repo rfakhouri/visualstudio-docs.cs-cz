@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 046706cf5e36b9e32d6b102e167a55070fcc4a31
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 9a670a432db352b6a99ca68fa5ce2892c686677b
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993938"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008470"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig nastavení konvence psaní kódu .NET
 
@@ -1287,7 +1287,7 @@ Toto pravidlo se týká, zda levou složenou závorku `{` by měly být umístě
 
 | Hodnota | Popis
 | ------------- |:-------------|
-| přístupové objekty, anonymous_methods, anonymous_types, control_blocks, události, indexery, výrazů lambda, local_functions, metody, object_collection, vlastnosti, typy.<br>(Pro více typů, oddělte ","). | Požadování složených na nový řádek pro zadaný kód elementy (označované také jako "Allman" styl) |
+| přístupové objekty, anonymous_methods, anonymous_types, control_blocks, události, indexery, výrazů lambda, local_functions, metody, object_collection_array_initializers, vlastnosti, typy.<br>(Pro více typů, oddělte ","). | Požadování složených na nový řádek pro zadaný kód elementy (označované také jako "Allman" styl) |
 | všechny | Požadování složených na nový řádek pro všechny výrazy ("Allman" styl) |
 | žádná | Požadování složených být na stejném řádku pro všechny výrazy ("K & R") |
 
