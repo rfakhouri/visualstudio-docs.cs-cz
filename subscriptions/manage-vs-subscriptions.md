@@ -9,12 +9,12 @@ description: Zjistěte, jak získat maximum z vašich předplatných sady Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: eb8bde8af30a411f988c19cae9eed6df623f6437
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 40fa40ed6606fb9e1cae35c0acccfe7dd46bf920
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380678"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637336"
 ---
 # <a name="managing-subscriptions"></a>Správa předplatných
 
@@ -59,14 +59,14 @@ Na portálu předplatných sady Visual Studio v sobě spojuje předplatná sady 
 
 ### <a name="which-subscription-am-i-using"></a>Které předplatné, které je použito
 Na stránce výhod používanému předplatnému zřetelně zobrazí se v modrý banner.  Také se zobrazí v pravém horním rohu stránky.
-
-   ![Aktivní předplatné](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> [!div class="mx-imgBorder"]
+> ![Aktivní předplatné](_img\manage-vs-subscriptions\current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Chcete-li přepnout mezi předplatnými, můžete:
 - Klikněte na rozevírací seznam v pravém horním rohu a vyberte předplatné, ze seznamu
 - Klikněte na kartu předplatná a pak klikněte na požadované předplatné
-
-   ![Přepnutí předplatného](_img\manage-vs-subscriptions\change-subscription-resized.png)
+> [!div class="mx-imgBorder"]
+> ![Přepnutí předplatného](_img\manage-vs-subscriptions\change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>Pokud vaše předplatné se nezobrazuje...
 - Může být vypršení platnosti.  Jenom aktivní odběry se zobrazují v portálu pro předplatitele.
@@ -102,7 +102,8 @@ Můžete snadno změnit kontaktní informace a předvolby ve vašem profilu.
 3.  Na **o** kartu, můžete změnit název, e-mailu, země/oblast, obrázku a kontaktní předvolby profilu.  Na **Předvolby** kartu, můžete vybrat preferovaný jazyk, data a času, časové pásmo a motiv uživatelského rozhraní.  
 4.  Když jste dokončili změny, klikněte na tlačítko **Uložit**. 
 5.  Klikněte na tlačítko v prohlížeči **zpět** tlačítko pro návrat stránku výhody. 
-    ![Úprava informací profilu](_img\manage-vs-subscriptions\edit-profile-resized.png)
+    > [!div class="mx-imgBorder"]    
+    > ![Úprava informací profilu](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Propojení předplatného Azure nebo předplatné na existující VSTS
@@ -115,7 +116,8 @@ Chcete-li přidat alternativní účet:
 2. Klikněte na **předplatná** kartu.
 3. V části **související odkazy**, zvolte **přidat alternativní účet**.
 4. Zadejte svou pracovní nebo školní účet e-mailovou adresu a klikněte na tlačítko **přidat**. 
-    ![Alternativní účet](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![Alternativní účet](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Po přidání alternativního účtu, můžete aktualizovat nebo odebrat kdykoli kliknutím **předplatná** kartu a vyberete příslušnou možnost v **související odkazy** oddílu.  
 

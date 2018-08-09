@@ -1,5 +1,5 @@
 ---
-title: Element klíčových vazeb | Microsoft Docs
+title: Keybindings – Element | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,19 +16,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91a5fd99216e712e567d4543f3f29dc2b6b21aa1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f99c761eb10a80fa8a32413b03b42840a752540
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141412"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636808"
 ---
-# <a name="keybindings-element"></a>Element klíčových vazeb
-Element klíčových vazeb skupiny KeyBinding elementy a další klíčových vazeb seskupení.  
+# <a name="keybindings-element"></a>Keybindings – element
+Keybindings – element seskupí prvky klávesové zkratky a další seskupení klávesové zkratky.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <KeyBindings>  
   <KeyBinding>... </KeyBinding>  
   <KeyBinding>... </KeyBinding>  
@@ -42,24 +42,24 @@ Element klíčových vazeb skupiny KeyBinding elementy a další klíčových va
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|Podmínka|Volitelné. V tématu [podmíněné atributy](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Podmínka|Volitelné. Zobrazit [podmíněné atributy](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### <a name="child-elements"></a>Podřízené elementy  
-  
-|Prvek|Popis|  
-|-------------|-----------------|  
-|[KeyBinding – element](../extensibility/keybinding-element.md)|Určuje klávesové zkratky pro příkazy.|  
-|[Klíčových vazeb](../extensibility/keybindings-element.md)|Elementy KeyBinding skupin a dalších klíčových vazeb seskupení.|  
-  
-### <a name="parent-elements"></a>Nadřazené elementy  
+### <a name="child-elements"></a>Podřízené prvky  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[CommandTable – element](../extensibility/commandtable-element.md)|Definuje všechny elementy, které představují příkazy.|  
+|[Keybinding – element](../extensibility/keybinding-element.md)|Určuje klávesové zkratky pro příkazy.|  
+|[Klávesové zkratky](../extensibility/keybindings-element.md)|Seskupí elementy klávesové zkratky a další seskupení klávesové zkratky.|  
+  
+### <a name="parent-elements"></a>Nadřazené prvky  
+  
+|Prvek|Popis|  
+|-------------|-----------------|  
+|[Commandtable – element](../extensibility/commandtable-element.md)|Definuje všechny prvky, které představují příkazy.|  
   
 ## <a name="example"></a>Příklad  
   
-```  
+```xml  
 <KeyBindings>  
   <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
     editor="guidWidgetEditor" key1="VK_F5"/>  
@@ -68,6 +68,6 @@ Element klíčových vazeb skupiny KeyBinding elementy a další klíčových va
 </KeyBindings>  
 ```  
   
-## <a name="see-also"></a>Viz také  
- [KeyBinding Element](../extensibility/keybinding-element.md)   
- [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Viz také:  
+ [Keybinding – element](../extensibility/keybinding-element.md)   
+ [Soubory tabulky (.vsct) příkaz pro Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -62,6 +62,7 @@
 ## [Vývoj her pro Unity](unity-tools.md)
 ### [Instalace a nastavení](setup-vsmac-tools-unity.md)
 ### [Používání nástrojů Unity](using-vsmac-tools-unity.md)
+### [Protokol Změn](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 
 # [Usnadnění](accessibility.md)
 

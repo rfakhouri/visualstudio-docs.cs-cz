@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e0a399297d3b89a0781c3693e6ffdf763d8ea31
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388290"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637614"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Použijte šablony Polls – webový projekt Flask
 
@@ -29,7 +29,7 @@ V tomto kroku se dozvíte, jak:
 > [!div class="checklist"]
 > - Vytvoření projektu ze šablony a inicializace databáze (krok 5 - 1)
 > - Principy datových modelů (krok 5 – 2)
-> - Principy zálohování úložišť dat a (krok 5 – 3)
+> - Principy zálohování úložišť dat (krok 5 – 3)
 > - Vysvětlení dotazování podrobností a výsledky zobrazení (krok 5 – 4)
 
 Visual Studio také poskytuje šablony "Hlasovací webový projekt Flask/Jade", která vytváří identickou aplikaci, ale používá pro modul šablon šablonovacím systémem Jade rozšíření. Podrobnosti najdete v tématu [krok 4 – šablony webový projekt Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
@@ -40,7 +40,7 @@ Visual Studio také poskytuje šablony "Hlasovací webový projekt Flask/Jade", 
 
 1. V dialogovém okně Nový projekt, vyhledejte a vyberte **Polls – webový projekt Flask** šablony, volání "FlaskPolls" projekt a vyberte **OK**.
 
-1. Jako další šablony projektů v sadě Visual Studio obsahuje šablony "Hlasovací webový projekt Flask" *souboru requirements.txt* souboru výzev sady Visual Studio zobrazí dotaz, kde k instalaci těchto závislostí. Zvolte si možnost **nainstalovat do virtuálního prostředí**a **přidat virtuální prostředí** dialogové okno Vybrat **vytvořit** přijměte výchozí hodnoty. (Tato šablona vyžaduje Flask, jakož i balíčky azure storage a pymongo; "Hlasování Flask/Jade webového projektu" také vyžaduje pyjade.)
+1. Jako další šablony projektů v sadě Visual Studio obsahuje šablony "Hlasovací webový projekt Flask" *souboru requirements.txt* souboru, Visual Studio vyzve vhodného místa pro instalaci těchto závislostí. Zvolte si možnost **nainstalovat do virtuálního prostředí**a **přidat virtuální prostředí** dialogové okno Vybrat **vytvořit** přijměte výchozí hodnoty. (Tato šablona vyžaduje Flask, jakož i balíčky azure storage a pymongo; "Hlasování Flask/Jade webový projekt" také vyžaduje pyjade.)
 
 1. Nastavte **FlaskPolls** projekt jako výchozí pro řešení sady Visual Studio kliknutím pravým tlačítkem myši v projektu **Průzkumníka řešení** a vyberete **nastavit jako spouštěný projekt**. Projekt při spuštění, která je znázorněna v tučné písmo, se co je spuštěn při spuštění ladicího programu.
 

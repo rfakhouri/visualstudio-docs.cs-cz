@@ -1,8 +1,8 @@
 ---
-title: Analyzovat data o využití procesoru (C++)
+title: Analýza dat o využití procesoru (C++)
 description: Měřit výkon aplikace v jazyce C++ pomocí diagnostického nástroje využití CPU
 ms.custom: ''
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 f1_keywords:
@@ -15,30 +15,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 674c7f30a325c8d615c76a784b3c4e80e306ead6
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 599ca672e0f11c5fa33564140b450d156ed9c390
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256234"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39640067"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Rychlý úvod: Analyzujte data o využití procesoru v aplikaci Visual Studio (C++)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Rychlý start: Analýza dat o využití procesoru v aplikaci Visual Studio (C++)
 
-Visual Studio poskytuje mnoho výkonné funkce, které vám pomůžou analyzovat problémy s výkonem v aplikaci. Toto téma poskytuje rychlý způsob, jak další některé základní funkce. Zde podíváme na nástroj, který identifikovat kritická místa výkonu z důvodu vysoké využití procesoru. Diagnostické nástroje jsou podporované pro vývoj rozhraní .NET v sadě Visual Studio, včetně ASP.NET, nativního vývoje a vývoje v jazyce C++.
+Visual Studio poskytuje mnoha výkonným funkcím, které vám pomůžou analyzovat problémy s výkonem v aplikaci. Toto téma poskytuje rychlý způsob, jak Seznamte se s některými základními funkcemi. Tady podíváme na nástroj, který identifikovat kritické body výkonu kvůli vysokému využití procesoru. Diagnostické nástroje jsou podporované pro vývoj rozhraní .NET v sadě Visual Studio, včetně ASP.NET, nativního vývoje a vývoje v jazyce C++.
 
-Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravovat diagnostické relace. Pokud **využití procesoru** nástroj zde popsané nezískáte data, která budete potřebovat, [jiných nástrojů pro profilaci](../profiling/profiling-feature-tour.md) poskytují různé druhy informace, které mohou být užitečné pro vás. V řadě případů může být kritickým bodem aplikace něco jiného než procesor, třeba paměť, vykreslování uživatelského rozhraní nebo dlouhá odezva síťového požadavku. Diagnostické centrum nabízí řadu dalších možností, jak data tohoto druhu zaznamenávat a analyzovat.
+Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravovat diagnostické relace. Pokud **využití procesoru** nástroj je zde popsáno, vám neuděluje data, která budete potřebovat, [jiných nástrojů pro profilaci](../profiling/profiling-feature-tour.md) poskytují různé druhy informací, které může být pro vás užitečné. V řadě případů může být kritickým bodem aplikace něco jiného než procesor, třeba paměť, vykreslování uživatelského rozhraní nebo dlouhá odezva síťového požadavku. Diagnostické centrum nabízí řadu dalších možností, jak data tohoto druhu zaznamenávat a analyzovat.
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
-1. V sadě Visual Studio, vyberte **soubor**>**nový projekt**.
+1. V sadě Visual Studio, zvolte **souboru** > **nový projekt**.
 
-2. V části **Visual C++**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **konzolové aplikace pro Windows**.
+2. V části **Visual C++**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace Windows**.
 
-3. Zadejte název jako **Diagnostics_Get_Started_Native** a klikněte na tlačítko **OK**.
+    Pokud se nezobrazí **Konzolová aplikace Windows** šablony projektu, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit**.
+
+3. Zadejte název, například **Diagnostics_Get_Started_Native** a klikněte na tlačítko **OK**.
 
     Visual Studio vytvoří projekt.
 
-4. V MyDbgApp.cpp nahraďte následujícím kódem
+4. V *MyDbgApp.cpp*, nahraďte následující kód
 
     ```c++
     int main()
@@ -111,34 +113,34 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
     }
     ```
   
-## <a name="step-1-collect-profiling-data"></a>Krok 1: Shromáždění data profilování 
+## <a name="step-1-collect-profiling-data"></a>Krok 1: Shromáždění profilačních dat 
   
-1.  Nejdřív nastavit zarážky ve vaší aplikaci tento řádek kódu `main` funkce:
+1.  Nejprve nastavte zarážku v aplikaci na tomto řádku kódu v `main` funkce:
 
     `for (int i = 0; i < 10; ++i) {`
 
-    Nastavte zarážky kliknutím v mřížky doleva řádek kódu.
+    Po kliknutí na ovládací prvek vlevo od řádku kódu, nastavte zarážku.
 
-2.  V dalším kroku nastavení druhý zarážky na pravé složené závorce na konci `main` funkce:
+2.  Dále nastavte zarážku druhý na pravou složenou závorku na konci `main` funkce:
 
-     ![Nastavte zarážky pro profilace](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "nastavit zarážky pro profilaci")
+     ![Nastavení zarážek pro profilování](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "nastavit zarážky pro profilaci")
 
     > [!TIP]
     > Nastavením dvou zarážek omezíte shromažďování dat jenom na analyzovanou část kódu.
   
-3.  **Diagnostické nástroje** okno již viditelné, pokud jste vypnuli ho. Zobrazte okno znovu, klikněte na tlačítko **ladění**>**Windows**>**zobrazit diagnostické nástroje**.
+3.  **Diagnostické nástroje** okno již viditelné, pokud jste ji vypnuli. Otevřete okno znovu, klikněte na tlačítko **ladění** > **Windows** > **zobrazit diagnostické nástroje**.
 
-4.  Klikněte na tlačítko **ladění**>**spustit ladění** (nebo **spustit** na panelu nástrojů nebo **F5**).
+4.  Klikněte na tlačítko **ladění** > **spustit ladění** (nebo **Start** na panelu nástrojů nebo **F5**).
 
-     Po dokončení načítání, aplikace **Souhrn** diagnostické nástroje se zobrazí.
+     Po dokončení načítání, aplikace **Souhrn** zobrazí diagnostické nástroje.
 
-5.  Při ladicího programu je pozastavena, povolení shromažďování těchto dat o využití procesoru výběrem **záznam procesoru profil**a pak otevřete **využití procesoru** kartě.
+5.  Když ladicí program je pozastavený, Povolit shromažďování dat o využití procesoru výběrem **profil CPU záznam**a pak otevřete **využití procesoru** kartu.
 
-     ![Diagnostické nástroje povolit profilace procesoru](../profiling/media/quickstart-cpu-usage-summary.png "diagnostické nástroje povolit procesoru profilace")
+     ![Diagnostické nástroje povolit profilaci procesoru](../profiling/media/quickstart-cpu-usage-summary.png "diagnostické nástroje povolit profilaci procesoru")
 
-     Pokud je povoleno shromažďování dat, zobrazí tlačítko záznam červeném kroužku.
+     Když je povolené shromažďování dat, tlačítko záznam zobrazí červený kruh.
 
-     Pokud vyberete **záznam procesoru profil**, Visual Studio bude nahráváním funkcí a jak dlouho budou chtít provést a také poskytuje časová osa grafu, můžete se zaměřit na konkrétní segmenty relace vzorkování. Tato shromážděná data můžete zobrazit, jenom když aplikace se zastavilo na zarážce.
+     Při výběru **profil CPU záznam**, Visual Studio bude nahráváním vašich funkcí a jak dlouho jim trvá spuštění a také obsahuje graf časové osy vám umožní zaměřit se na určité segmenty relace odběru vzorků. Tato shromážděná data můžete zobrazit pouze, když vaše aplikace je zastaven na zarážce.
 
 6.  Stiskněte klávesu F5, kterou spustíte aplikaci až ke druhé zarážce.
 
@@ -150,7 +152,7 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
 
      Teď můžete začít analyzovat data.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analyzovat data o využití procesoru
+## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analýza dat o využití procesoru
 
 Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kartě Využití procesoru. Zjistěte nejaktivnější funkce a pak se na každou z nich podívejte podrobněji.
 
@@ -161,28 +163,28 @@ Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kar
     > [!TIP]
     > Funkce jsou seřazené od nejvíce pracujících po nejméně pracující (nejsou seřazené podle pořadí, v jakém byly volány). Pomůže vám to rychle identifikovat funkce, které běží nejdéle.
 
-2. V seznamu funkce dvakrát klikněte `getNumber` funkce.
+2. V seznamu funkcí dvakrát klikněte `getNumber` funkce.
 
     Když dvakrát kliknete funkce **volající/volaný** zobrazení se otevře v levém podokně. 
 
     ![Zobrazení Volající/volaný v diagnostických nástrojích](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
 
-    V tomto zobrazení vybrané funkce se zobrazí v záhlaví a v **aktuální funkce** pole (`getNumber`, v tomto příkladu). Funkce, která volala aktuální funkci, se zobrazí vlevo v části **Volající funkce** a všechny funkce volané aktuální funkcí se zobrazí vpravo v poli **Volané funkce**. (Pokud chcete aktuální funkci změnit, vyberte libovolné pole.)
+    V tomto zobrazení vybrané funkce se zobrazí v záhlaví a **aktuální funkci** pole (`getNumber`, v tomto příkladu). Funkce, která volala aktuální funkci, se zobrazí vlevo v části **Volající funkce** a všechny funkce volané aktuální funkcí se zobrazí vpravo v poli **Volané funkce**. (Pokud chcete aktuální funkci změnit, vyberte libovolné pole.)
 
     V tomto zobrazení vidíte celkový čas (ms) a procento z celkové doby spuštění aplikace, kterou funkce potřebovala k dokončení.
 
-    **Tělo funkce** také zobrazuje celkovou dobu (a procento času) spotřebovanou tělem funkce, ale bez doby spotřebované volajícími a volanými funkcemi. (V tomto obrázku 119 mimo 43602 ms byly věnovaný tělo funkce a zbývající doba strávená v jiném kódu volat pomocí této funkce). Skutečné hodnoty bude velmi lišit v závislosti na vašem prostředí.
+    **Tělo funkce** také zobrazuje celkovou dobu (a procento času) spotřebovanou tělem funkce, ale bez doby spotřebované volajícími a volanými funkcemi. (Na tomto obrázku 119 z 43602 ms byly stráví v těle funkce a zbývající dobu se využilo na jiný kód volaných touto funkcí). Skutečné hodnoty budou velmi liší v závislosti na vašem prostředí.
 
     > [!TIP]
     > Vysoké hodnoty v **těle funkce** pravděpodobně znamenají kritické místo výkonu samotné funkce.
 
 ## <a name="next-steps"></a>Další kroky
 
-- [Analýza využití paměti](../profiling/memory-usage.md)identifikovat kritická místa výkonu.
-- [Analýza využití procesoru](../profiling/cpu-usage.md) podrobnější informace o nástroji využití procesoru.
-- Analýza využití procesoru bez připojit ladicí program nebo cílením spuštěné aplikaci - Další informace najdete v tématu [shromažďování dat profilaci bez ladění](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) v [spustit profilování nástroje s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+- [Analýza využití paměti](../profiling/memory-usage.md)identifikovat kritické body výkonu.
+- [Analýza využití procesoru](../profiling/cpu-usage.md) další podrobné informace o nástroj využití procesoru.
+- Analýza využití procesoru bez připojen jiný ladicí program, nebo cílení na spuštění aplikace – Další informace najdete v tématu [shromažďovat data profilování bez ladění](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) v [spustit s nebo bez ladicího programu nástroje pro profilaci](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 ## <a name="see-also"></a>Viz také:  
 
  [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)
+ [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)

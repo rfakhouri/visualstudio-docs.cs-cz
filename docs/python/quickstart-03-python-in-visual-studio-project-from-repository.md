@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ef9867d233d3aa8f5645793f8801f6f69f4e9be
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512813"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636821"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Rychlý start: Klonování úložiště kódu v Pythonu v sadě Visual Studio
 
@@ -37,7 +37,7 @@ Jakmile [nainstalována podpora Pythonu v sadě Visual Studio 2017](installing-p
 1. V části **místní úložiště Git**, vyberte **klonování** příkazu, a pak zadejte `https://github.com/gregmalcolm/python_koans` do pole Adresa URL zadejte složky pro klonované soubory a vyberte **klonování** tlačítko.
 
     > [!Tip]
-    > Složka, kterou zadáte v Průzkumníku týmových projektů je přesně složka přijímat klonované soubory. Na rozdíl od `git clone` příkazu, vytváření v Team Exploreru klonu neprovádí automatické vytváření podsložku s názvem úložiště.
+    > Vámi zadané v složky **Team Exploreru** je přesně složka pro příjem klonované soubory. Na rozdíl od `git clone` příkaz vytvoření klonu v **Team Exploreru** neprovádí automatické vytváření podsložku s názvem úložiště.
 
 1. Po dokončení klonování se zobrazí název úložiště v **místní úložiště Git** seznamu. Dvakrát klikněte na tento název se přejděte do řídicího panelu úložiště v **Team Exploreru**.
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2b3347deb612b6fab248b287ed22fe39a7798796
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9bf904b85b2fc0f4836e60e3a75df7ba528a2a7c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512080"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639429"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Kurz: Práce s využitím Pythonu v sadě Visual Studio
 
@@ -36,7 +36,7 @@ Visual Studio poskytuje prvotřídní podporu pro Python. Tento kurz vás proved
 
 ## <a name="step-1-create-a-new-python-project"></a>Krok 1: Vytvoření nového projektu Pythonu
 
-A *projektu* je způsob, jakým Visual Studio spravuje všechny soubory, které společně k vytvoření jedné aplikace, včetně zdrojového kódu, prostředky, konfigurace a tak dále. Projekt aplikaci umožňuje formalizovat a udržuje vztah mezi všechny projektu soubory i externí prostředky, které jsou sdíleny mezi více projekty. V důsledku toho projekt povolit aplikace k bez námahy rozšíření a mnohem jednodušší, než se jednoduše spravují pouze vztahy projektu v ad hoc složek, skripty, textové soubory a dokonce i vlastní paměti.
+A *projektu* je způsob, jakým Visual Studio spravuje všechny soubory, které společně k vytvoření jedné aplikace, včetně zdrojového kódu, prostředky, konfigurace a tak dále. Projekt aplikaci umožňuje formalizovat a udržuje vztah mezi všechny projektu soubory i externí prostředky, které jsou sdíleny mezi více projekty. V důsledku toho projekty povolit aplikace k bez námahy rozšíření a mnohem jednodušší, než se jednoduše spravují pouze vztahy projektu v ad hoc složek, skripty, textové soubory a dokonce i vlastní paměti.
 
 V tomto kurzu začnete s Jednoduchý projekt obsahující jeden prázdný soubor kódu.
 

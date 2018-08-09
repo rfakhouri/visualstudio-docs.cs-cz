@@ -1,5 +1,5 @@
 ---
-title: Enumerátor kód stavu adresáře | Microsoft Docs
+title: Enumerátor kódu stavu adresáře | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539dc4c2ea7b33ce88465f1d8f6651dc890c8e45
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea8abd11f3af8be510e88579651fb0a7f92e075b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126081"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638463"
 ---
-# <a name="directory-status-code-enumerator"></a>Enumerátor kód stavu adresáře
-`SccDirStatus` Enumerátor obsahuje pojmenované konstantní hodnoty, které určují stav adresáře v systému správy zdrojů. Tento výčet je používán [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). To byla zavedena ve verzi 1.2 rozhraní API ovládacího prvku Plug-in zdroje.  
+# <a name="directory-status-code-enumerator"></a>Enumerátor kódu stavu adresáře
+`SccDirStatus` Obsahuje čítače výčtu s názvem konstantní hodnoty, které určují stav adresáře v systému správy zdrojového kódu. Tento výčet je používán [sccdirqueryinfo –](../extensibility/sccdirqueryinfo-function.md). To byla zavedena ve verzi 1.2 rozhraní API modulu Plug-in zdroje ovládacího prvku.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,17 +37,17 @@ enum SccDirStatus {
   
 ## <a name="members"></a>Členové  
  SCC_DIRSTATUS_INVALID  
- Nepodařilo se získat stav; Nespoléhejte na něm.  
+ Nebylo možné získat stav; Nespoléhejte na to.  
   
  SCC_DIRSTATUS_NOTCONTROLLED  
- Adresář není ve správě zdrojového kódu.  
+ Adresář není pod správou zdrojových kódů.  
   
  SCC_DIRSTATUS_CONTROLLED  
- Adresář je ve správě zdrojového kódu.  
+ Adresář je pod správou zdrojových kódů.  
   
  SCC_DIRSTATUS_EMPTYPROJ  
  Projekt odpovídající tento adresář je prázdný.  
   
-## <a name="see-also"></a>Viz také  
- [Moduly plug-in programu zdroj ovládacího prvku](../extensibility/source-control-plug-ins.md)   
- [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)
+## <a name="see-also"></a>Viz také:  
+ [Ovládací prvek moduly plug-in zdrojového kódu](../extensibility/source-control-plug-ins.md)   
+ [Sccdirqueryinfo –](../extensibility/sccdirqueryinfo-function.md)

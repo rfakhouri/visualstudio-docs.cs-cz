@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586544"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638710"
 ---
 # <a name="python-web-application-project-templates"></a>Šablony projektů webové aplikace Python
 
@@ -88,7 +88,7 @@ Při spuštění ladění webového projektu, Visual Studio spustí místní web
 
 V **ladění** skupiny:
 
-- **Cesty hledání**, **argumenty skriptu**, **argumenty pro interpret**, a **cesta k interpretu**: tyto možnosti jsou stejné jako v případě [normální ladění](debugging-python-in-visual-studio.md)
+- **Cesty hledání**, **argumenty skriptu**, **argumenty pro interpret**, a **cesta k interpretu**: tyto možnosti jsou stejné jako v případě [normální ladění](debugging-python-in-visual-studio.md).
 - **Adresa URL pro spuštění**: Určuje adresu URL, která se otevře v prohlížeči. Použije se výchozí `localhost`.
 - **Číslo portu**: port, který se použijte, pokud v adrese URL (vybere sada Visual Studio ten automaticky ve výchozím nastavení) není zadaný žádný. Toto nastavení umožňuje potlačit výchozí hodnota `SERVER_PORT` proměnné prostředí, který používá tyto šablony nakonfigurovat server pro místní ladění naslouchá na portu.
 

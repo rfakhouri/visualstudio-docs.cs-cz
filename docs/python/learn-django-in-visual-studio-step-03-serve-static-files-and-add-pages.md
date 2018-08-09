@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e6d4f4d9ae7be2fc196b7dada79ba89b527dd209
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 4eb8603933046ba02af32c41d5b4a2552b6d5185
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388342"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639692"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Doručování statických souborů, přidejte stránky a použijte šablonu dědičnosti
 
@@ -27,7 +27,7 @@ V předchozích krocích v tomto kurzu jste zjistili, jak vytvoření minimáln�
 V tomto kroku se dozvíte, jak:
 
 > [!div class="checklist"]
-> - Pomocí šablony položky sady Visual Studio rychle nové soubory různé typy s pohodlný často používaný kód (krok 3 - 1)
+> - Použití šablon položek aplikace Visual Studio můžete rychle přidat nové soubory různé typy s pohodlný často používaný kód (krok 3 - 1)
 > - Konfigurace projektu Django pro obsluhu statických souborů (krok 3-2)
 > - Přidání další stránky do aplikace (krok 3 – 3)
 > - Vytvořit záhlaví a navigační panel, který se používá na stránkách (krok 3-4) pomocí šablony dědičnosti
@@ -186,7 +186,7 @@ Základní šablona kolem blocích pomocí `{% block <block_name> %}` a `{% endb
 
 Následující kroky ukazují dědičnosti:
 
-1. V aplikaci prvku *šablony/HelloDjangoApp* složku, vytvořte nový soubor HTML (pomocí **přidat** > **nová položka** místní nabídky nebo **přidat**  >  **Stránku HTML**) volá `layout.html`a jeho obsah nahraďte následující značky. Uvidíte, že tato šablona obsahuje blok s názvem "obsah", který je všechno, odkazující stránky potřeba nahradit:
+1. V aplikaci prvku *šablony/HelloDjangoApp* složku, vytvořte nový soubor HTML (pomocí **přidat** > **nová položka** místní nabídky nebo **přidat**  >  **Stránku HTML**) volá *layout.html*a jeho obsah nahraďte následující značky. Uvidíte, že tato šablona obsahuje blok s názvem "obsah", který je všechno, odkazující stránky potřeba nahradit:
 
     ```html
     <!DOCTYPE html>

@@ -2,7 +2,7 @@
 title: Analýza dat o využití procesoru (spravovaný kód)
 description: Měřit výkon aplikace v C# a Visual Basic pomocí diagnostického nástroje využití CPU
 ms.custom: mvc
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 886abf16e958afd2870399c7dfdef55cb27e108f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 88b9557c3713997e4c04aaa74078408437c03c43
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204547"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638935"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Rychlý start: Analýza dat o využití procesoru v aplikaci Visual Studio (spravovaný kód)
 
@@ -31,6 +31,8 @@ Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravov
 1. V sadě Visual Studio, zvolte **souboru** > **nový projekt**.
 
 2. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace (.NET Framework)**.
+
+    Pokud se nezobrazí **konzolovou aplikaci** šablony projektu, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Zvolte **.NET Desktop development** úloh, klikněte na tlačítko **změnit**.
 
 3. Zadejte název, například **MyProfilerApp** a klikněte na tlačítko **OK**.
 

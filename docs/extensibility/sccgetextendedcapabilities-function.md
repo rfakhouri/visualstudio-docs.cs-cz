@@ -1,5 +1,5 @@
 ---
-title: Funkce SccGetExtendedCapabilities | Microsoft Docs
+title: Sccgetextendedcapabilities – funkce | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46ae3e051028e8239be5949500ebb710d67eee17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7fd4a42b9c94cb2470f6e7dc7b4904aa890e8a6
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137213"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637783"
 ---
-# <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities – funkce
-Tato funkce vrátí další funkce, které podporuje modul plug-in zdrojového kódu.  
+# <a name="sccgetextendedcapabilities-function"></a>Sccgetextendedcapabilities – funkce
+Tato funkce vrací další funkce, podporuje modul plug-in správy zdrojového kódu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,18 +35,18 @@ SCCRTN SccGetExtendedCapabilities(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametry  
+### <a name="parameters"></a>Parametry  
  pContext  
- [v] Ukazatel modulu plug-in kontextu zdroj ovládacího prvku.  
+ [in] Ukazatel kontext modulu plug-in zdroje ovládacího prvku.  
   
  lSccExCaps  
- [v] Příznak určující rozšířené funkce, pro které chcete otestovat (najdete v tabulce rozšířené funkce kódu v [schopností příznaky](../extensibility/capability-flags.md) pro možné příznaky).  
+ [in] Příznak určující rozšířené možnosti pro kterou chcete otestovat (viz tabulka pro rozšířené funkce kódu [příznaky funkcí](../extensibility/capability-flags.md) příznaků je to možné).  
   
  pbSupported  
- [out] Vrátí nenulový (`TRUE`) Pokud je podporováno zadané schopnosti; jinak vrátí hodnotu 0 (`FALSE`).  
+ [out] Vrátí nenulovou (`TRUE`) Pokud zadaná funkce se podporuje; v opačném případě vrátí hodnotu 0 (`FALSE`).  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Očekává se, že modul plug-in implementace zdroje řízení této funkce vrátí jednu z následujících hodnot:  
+ Modul plug-in implementaci ovládacího prvku zdroje této funkce má vracet instanci jednoho z následujících hodnot:  
   
 |Hodnota|Popis|  
 |-----------|-----------------|  
@@ -54,9 +54,9 @@ SCCRTN SccGetExtendedCapabilities(
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Došlo k neznámé nebo neurčené chybě.|  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda je volána na vyžádání; To znamená, když funkce musí být testována, tato metoda je volána k určení, zda podporovanou schopnosti. Je zadán pouze jeden příznak najednou.  
+ Tato metoda je volána na vyžádání; To znamená, když funkce se musí otestovat, tato metoda je volána k určení, zda, která možnost je podporována. Je zadán pouze jeden příznak najednou.  
   
-## <a name="see-also"></a>Viz také  
- [Funkce modulu Plug-in rozhraní API ovládacího prvku zdroje](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Viz také:  
+ [Funkce modulu plug-in API zdrojového ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)   
  [Kódy chyb](../extensibility/error-codes.md)   
  [Příznaky funkcí](../extensibility/capability-flags.md)

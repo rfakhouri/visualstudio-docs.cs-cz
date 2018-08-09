@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Vymazat zásobníku vrácení zpět | Microsoft Docs'
+title: 'Postupy: vymazání zásobník vrácení zpátky | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2519d529da13366c706e940b78f57a6ad903de7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 59f8d57c0ba0e84107cd0d0290b950b335e5f2b0
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126500"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639468"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>Postupy: Vymazat zásobníku vrácení zpět
-Následující následující postup vysvětluje, jak vymazat zásobníku vrácení zpět.  
+# <a name="how-to-clear-the-undo-stack"></a>Postupy: vymazání zásobník vrácení zpátky
+Následující postup vysvětluje, jak vymazat zásobník akcí zpět.  
   
-### <a name="to-clear-the-undo-stack"></a>Zrušte operace vrácení zpět zásobníku  
+## <a name="to-clear-the-undo-stack"></a>Vymazat zásobník vrácení zpátky  
   
-1.  Zrušte zaškrtnutí políčka použít zásobníku vrácení zpět [IOleUndoManager::DiscardFrom](http://msdn.microsoft.com/library/windows/desktop/ms693799) metoda. Následuje příklad tohoto:  
+1.  Zrušte zaškrtnutí políčka použít zásobník akcí zpět [IOleUndoManager::DiscardFrom](http://msdn.microsoft.com/library/windows/desktop/ms693799) metody. Následuje příklad:  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  
@@ -45,5 +45,5 @@ Následující následující postup vysvětluje, jak vymazat zásobníku vráce
     }  
     ```  
   
-## <a name="see-also"></a>Viz také  
- [Postupy: Implementace správy vrácení zpět](../extensibility/how-to-implement-undo-management.md)
+## <a name="see-also"></a>Viz také:  
+ [Postupy: implementace řízení zpět](../extensibility/how-to-implement-undo-management.md)

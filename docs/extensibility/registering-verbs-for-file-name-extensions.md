@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8004176fb64244aecde276226683a53c013d3b31
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a47f45889744db51d68c0f8aeb51b11863823965
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513130"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639724"
 ---
-# <a name="registering-verbs-for-file-name-extensions"></a>Registrace operací pro přípony názvů souborů
+# <a name="register-verbs-for-file-name-extensions"></a>Registrace operací pro přípony názvů souborů
 Přidružení příponu názvu souboru pomocí aplikace je obecně upřednostňované akce, ke které dochází, když uživatel pokliká soubor. To upřednostňovaný akce je spojena se slovesem, například aplikaci, která odpovídá akci.  
   
- Můžete zaregistrovat příkazy, které jsou spojeny s programový identifikátor (ProgID) pro rozšíření s použitím prostředí klíče umístěné na HKEY_CLASSES_ROOT\\*progid*\shell. Další informace najdete v tématu [typy souborů](/windows/desktop/shell/fa-file-types).  
+ Můžete zaregistrovat příkazy, které jsou spojeny s programový identifikátor (ProgID) pro rozšíření s použitím prostředí klíče umístěné na **HKEY_CLASSES_ROOT\{progid} \shell**. Další informace najdete v tématu [typy souborů](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
   
-## <a name="registering-standard-verbs"></a>Registruje standardní příkazy  
+## <a name="register-standard-verbs"></a>Zaregistrovat standardní příkazy  
  Operační systém rozpozná standardní následující příkazy:  
   
 -   Otevřít  
@@ -38,7 +38,7 @@ Přidružení příponu názvu souboru pomocí aplikace je obecně upřednostňo
   
 -   Náhled  
   
- Kdykoli je to možné, zaregistrujte standardní příkaz. Nejběžnější je sloveso otevřít. Použijte příkaz upravit jenom v případě, že je vymazat rozdíl mezi otevřením souboru a úpravy souboru. Například otevřete soubor HTM jej zobrazí v prohlížeči, že úpravy něho soubor .htm spuštění editoru HTML. Standardní příkazy jsou lokalizovány s národním prostředím operačního systému.  
+ Kdykoli je to možné, zaregistrujte standardní příkaz. Nejběžnější je sloveso otevřít. Použijte příkaz upravit jenom v případě, že je vymazat rozdíl mezi otevřením souboru a úpravy souboru. Například otevření *.htm* souboru zobrazí v prohlížeči, že úpravy *.htm* začne editoru HTML soubor. Standardní příkazy jsou lokalizovány s národním prostředím operačního systému.  
   
 > [!NOTE]
 >  Při registraci standardní příkazy, nenastavujte výchozí hodnotu pro klíč otevřete. Výchozí hodnota obsahuje řetězec zobrazení v nabídce. Operační systém poskytuje tento řetězec pro standardní příkazy.  
@@ -74,7 +74,7 @@ Přidružení příponu názvu souboru pomocí aplikace je obecně upřednostňo
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""  
 ```  
   
- Pro otevření souboru v existující instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], zaregistrujte DDEEXEC klíč. Následující příklad ukazuje standardní příkaz registrace [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .cs souboru.  
+ Pro otevření souboru v existující instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], zaregistrujte DDEEXEC klíč. Následující příklad ukazuje standardní příkaz registrace [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] *.cs* souboru.  
   
 ```  
 [HKEY_CLASSES_ROOT\.cs]  
@@ -108,11 +108,11 @@ Přidružení příponu názvu souboru pomocí aplikace je obecně upřednostňo
 @="system"  
 ```  
   
-## <a name="setting-the-default-verb"></a>Nastavení výchozí příkaz  
- Je příkaz výchozí akci, která se spustí v případě, že uživatel dvakrát klikne soubor v Průzkumníku Windows. Výchozí příkaz je jako výchozí hodnota zadaná pro HKEY_CLASSES_ROOT operace\\*progid*\Shell klíč. Pokud není zadána žádná hodnota, výchozí příkaz je zadaná v HKEY_CLASSES_ROOT první operace\\*progid*\Shell seznam klíčů.  
+## <a name="set-the-default-verb"></a>Nastavit výchozí operaci  
+ Je příkaz výchozí akci, která se spustí v případě, že uživatel dvakrát klikne soubor v Průzkumníku Windows. Výchozí příkaz je zadaná jako výchozí hodnota pro operace **HKEY_CLASSES_ROOT\\*progid*\Shell** klíč. Pokud není zadána žádná hodnota, výchozí příkaz je zadaná v první operace **HKEY_CLASSES_ROOT\\*progid*\Shell** seznam klíčů.  
   
 > [!NOTE]
 >  Pokud chcete změnit výchozí příkaz rozšíření v nasazení vedle sebe, zvažte dopad na instalaci a odebrání. Během instalace se přepíše původní výchozí hodnotu.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Správa přidružení souborů vedle sebe](../extensibility/managing-side-by-side-file-associations.md)

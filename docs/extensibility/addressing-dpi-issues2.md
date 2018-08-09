@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97012b0d8b4214cdeafcaf12403948997436a212
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154327"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638662"
 ---
 # <a name="address-dpi-issues"></a>DPI řešit problémy
 Rostoucí počet zařízení, který se dodává s "ve vysokém rozlišení" obrazovky. Tyto obrazovky mají obvykle více než 200 pixely na palec (ICP). K práci s aplikací na těchto počítačích potřebovat obsah vertikálně navyšovat kapacitu pro potřeby zobrazení obsahu na dálku normálního zobrazení zařízení. Primární cíl s vysokou hustotou zobrazí je v době 2014, mobilní, výpočetních zařízeních (tablety, přenosné počítače design a telefony).  
@@ -78,7 +78,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
  Poraďte <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> dokumentaci na webu MSDN.  
   
- Následující tabulka uvádí příklady, jak by měl imagí škálovat na odpovídající DPI škálování faktorů. Obrázky v zelené označují naše osvědčený postup od Visual Studio 2013 (100 – 200 % DPI škálování):  
+ Následující tabulka uvádí příklady, jak by měl imagí škálovat na odpovídající DPI škálování faktorů. Obrázky uvedených oranžově označují naše osvědčený postup od Visual Studio 2013 (100 – 200 % DPI škálování):  
   
  ![Škálování problémů s nastavením DPI](../extensibility/media/dpi-issues-scaling.png "DPI problémů škálování")  
   

@@ -9,12 +9,12 @@ description: Zjistěte, jak exportovat seznam předplatitelů a podrobnosti o je
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4e1a20307eea40a1ed9ba9662bd9d25086489374
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9b2e03235391826c7a8cc486089a5a3e6384b09a
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379466"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635879"
 ---
 # <a name="exporting-subscription-information"></a>Export informace o předplatném
 
@@ -23,4 +23,5 @@ V předplatných sady Visual Studio [portálu správce](https://manage.visualstu
 Tato funkce je užitečná pro několik scénářů, jako je například sledování přiřazení a datum vypršení platnosti. Pokud například se převádějí ze pomocí zákaz na GUID ke sledování přiřazení předplatného, můžete s funkci SVYHLEDAT pro NAČTENÍ vzorec v aplikaci Microsoft Excel v této sestavě tak, aby odpovídaly předplatitele odpovídajícím způsobem.  
 
 Pokud chcete provést export, stačí vybrat **exportovat** kartu a soubor se stáhne do místního počítače. Soubor bude obsahovat název smlouvy, který obsahuje předplatné uživatele, jakož i data exportu.  
-![Export předplatitele](_img\exporting-subscriptions\exporting-subscriptions.png)
+> [!div class="mx-imgBorder"]
+> ![Export předplatitele](_img\exporting-subscriptions\exporting-subscriptions.png)

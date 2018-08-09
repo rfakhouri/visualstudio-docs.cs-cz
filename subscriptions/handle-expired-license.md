@@ -1,28 +1,29 @@
 ---
-title: Zpracování vypršela platnost licence | Microsoft Docs
+title: Zpracování vypršela platnost licence | Dokumentace Microsoftu
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-description: Zjistěte, jak správci zpracovávat neplatné odběry Visual Studio
+description: Zjistěte, jak správci můžou zpracovávat vypršela platnost předplatných sady Visual Studio
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 15d2b89d8a43f58302944d64dd9955a40c5c125e
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: ed407abbf4da1914f8a7faa03bbec5ae74b87049
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325122"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639393"
 ---
-# <a name="handling-expired-subscriptions"></a>Zpracování vypršela platnost předplatného
+# <a name="handling-expired-subscriptions"></a>Zpracování vypršela platnost předplatných
 
-Pokud vypršela platnost předplatného uživatele, je dána na portálu red panelu vedle jména v seznamu odběratelů. Pro tyto odběratele, kteří mají-li pokračovat v používání jejich výhody Visual Studio předplatné musíte obnovit své licence. 
-    ![Seznam vypršela platnost předplatného](_img\expired-subscriptions\expired-list.png)
+Pokud vypršela platnost předplatného uživatele, je toto označeno na portálu červený pruh vedle jejich názvu v seznamu odběratelů. Pro tyto předplatitele dál používat své výhody předplatného sady Visual Studio je potřeba obnovit své licence. 
+> [!div class="mx-imgBorder"]
+> ![Seznam předplatná po konci platnosti](_img\expired-subscriptions\expired-list.png)
 
 **Obnovit předplatné**
-1.  Obraťte se na svého prodejce multilicenční smlouvou nebo váš prodejce Microsoft. 
-2.  Zadejte pro ně číslo smlouvy a číslo účtu nákupu. 
+1.  Obraťte se na svého prodejce multilicenčního programu nebo váš prodejce Microsoftu. 
+2.  Jim poskytnout smlouvu číslo a číslo účtu nákupu. 
 
-Svého prodejce nebo prodejce Microsoft vás provede obnovení nebo zakoupení dalších odběry procesu. Po vystavení objednávky nebo byl obnoven kontrakt, budou k dispozici nová předplatná a může být [přiřazené vaší odběratelům](assign-license.md). 
+Prodejce nebo prodejce společnosti Microsoft vás provede obnovení nebo zakoupením procesu další předplatná. Jakmile se nachází pořadí nebo byl obnoven kontrakt, nových předplatných bude k dispozici a může být [přiřazené k vašim předplatitelům s](assign-license.md). 

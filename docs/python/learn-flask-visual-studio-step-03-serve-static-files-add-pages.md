@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fd919296bdae626b781748a14275947723db9f36
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 38050d9ecb5956c4e782ec61b5ae2dc6801ad224
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388134"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637640"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Doručování statických souborů, přidejte stránky a použijte šablonu dědičnosti
 
@@ -27,7 +27,7 @@ V předchozích krocích v tomto kurzu jste zjistili, jak k vytvoření minimál
 V tomto kroku se dozvíte, jak:
 
 > [!div class="checklist"]
-> - Pomocí šablony položky sady Visual Studio rychle nové soubory různé typy s pohodlný často používaný kód (krok 3 - 1)
+> - Použití šablon položek aplikace Visual Studio můžete rychle přidat nové soubory různé typy s pohodlný často používaný kód (krok 3 - 1)
 > - Doručování statických souborů z kódu (krok 3-2, nepovinné)
 > - Přidání další stránky do aplikace (krok 3 – 3)
 > - Vytvořit záhlaví a navigační panel, který se používá na stránkách (krok 3-4) pomocí šablony dědičnosti
@@ -89,7 +89,7 @@ V obou případech můžete uspořádat soubory podle *statické* libovolně.
 
 ### <a name="serve-a-static-file-from-code"></a>Poskytování statických souborů z kódu
 
-Flask poskytuje funkci s názvem `serve_static_file` , můžete volat z kódu k odkazování na jakýkoli soubor v rámci projektu *statické* složky. Následující postup vytvoří jednoduchý koncový bod rozhraní API, která vrací statický datový soubor).
+Flask poskytuje funkci s názvem `serve_static_file` , můžete volat z kódu k odkazování na jakýkoli soubor v rámci projektu *statické* složky. Následující postup vytvoří jednoduchou koncový bod rozhraní API, která vrací statický datový soubor.
 
 1. Pokud jste tak ještě neučinili, vytvořte *statické* složky: v **Průzkumníka řešení**, klikněte pravým tlačítkem na **HelloFlask** složky v projektu sady Visual Studio, vyberte **Přidat** > **novou složku**a pojmenujte složku `static`.
 
@@ -188,7 +188,7 @@ Flask na šablonování systému (šablonovacím systémem ve výchozím nastave
 
 V obou případech `<template_path>` je relativní vzhledem k aplikaci prvku *šablony* složky (`../` nebo `./` jsou také povoleny).
 
-Základní šablona kolem *bloky* pomocí `{% block <block_name> %}` a `{% endblock %}` značky. Pokud odkazující šablona pak pomocí značky se stejným názvem bloku, přednost před jeho blokovat obsah, který základní šablony.
+Základní šablona kolem *bloky* pomocí `{% block <block_name> %}` a `{% endblock %}` značky. Pokud šablonu odkazující pak používá značky se stejným názvem bloku, obsah bloku přepisuje základní šablonu.
 
 Následující kroky ukazují dědičnosti:
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb19107cefc5638449f2acf7511cba46ef131a1d
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: ae6c08942c3dccc735104c6e5221989290c6afd4
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388251"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637559"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Vytvoření aplikace Django s zobrazení a šablony
 
@@ -129,7 +129,7 @@ Můžete experimentovat s různých regulárních výrazů, zkuste online nástr
 
 ## <a name="step-2-3-render-a-view-using-html"></a>Krok 2 – 3: vykreslení zobrazení v jazyce HTML
 
-`index` Funkce, která jste dosud v *views.py* generuje nic jiného než prostého textu odpovědi HTTP pro stránky. Většina skutečných webové stránky, samozřejmě, odpoví bohaté stránky HTML, které často zahrnují živá data. Primární z důvodu definování zobrazení pomocí funkce je ve skutečnosti, tak můžete dynamicky generované tohoto obsahu.
+`index` Funkce, která jste dosud v *views.py* generuje nic jiného než prostého textu odpovědi HTTP pro stránky. Většina skutečných webové stránky, samozřejmě, odpoví bohaté stránky HTML, které často zahrnují živá data. Primární z důvodu definování zobrazení pomocí funkce je ve skutečnosti, tak můžete dynamicky generovat tohoto obsahu.
 
 Protože argument `HttpResponse` je pouze řetězce lze sestavit veškeré kódování HTML, jako jsou v rámci řetězce. Jako jednoduchý příklad, nahraďte `index` funkce s následujícím kódem (zachovat stávající `from` příkazy), který generuje odpověď jazyka HTML pomocí dynamický obsah, který se aktualizuje pokaždé, když se aktualizuje stránka:
 
@@ -149,7 +149,7 @@ def index(request):
 Spusťte projekt znovu tak, aby se zobrazit následující zpráva "**Django Hello!** Pondělí, 16. dubna 2018 v 16:28:10 ". Aktualizujte stránku, potvrďte, že obsah je právě generován spolu s každou žádostí a aktualizujte čas. Až to budete mít zastavení serveru.
 
 > [!Tip]
-> Zástupce k zastavení a spuštění projektu se má používat **ladění** > **restartovat** příkazu nabídky (**Ctrl**+**Shift**  + **F5**) nebo restartování tlačítka na panelu nástrojů ladění:
+> Zástupce k zastavení a spuštění projektu se má používat **ladění** > **restartovat** příkazu nabídky (**Ctrl**+**Shift**  + **F5**) nebo **restartovat** tlačítko na panelu nástrojů ladění:
 >
 > ![Restartujte na panelu nástrojů ladění v sadě Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -209,7 +209,7 @@ Následující kroky ukazují použití šablony:
 
     První argument `render`, jak je vidět, je objekt žádosti, za nímž následuje relativní cesta k souboru šablony v rámci aplikace *šablony* složky. Soubor šablony je název pro zobrazení, které podporuje, v případě potřeby. Třetí argument `render` je pak slovník proměnných, které odkazuje šablonu. Může obsahovat objekty ve slovníku, v takovém případě proměnné v šabloně mohou odkazovat na `{{ object.property }}`.
 
-1. Spusťte projekt a sledujte ve výstupu. Měli byste vidět zprávu podobné zobrazení kroku 2-2, která znamená, že šablona funguje.
+1. Spusťte projekt a sledujte ve výstupu. Byste měli vidět podobná zpráva, která viděli v kroku 2-2, která udává, že šablona funguje.
 
     Sledovat, ale, že kód HTML, jste použili v `content` vlastnost vykreslí pouze jako prostý text, protože `render` funkce automaticky řídicí sekvence této HTML. Automatické uvození zabránit náhodnému ohrožení zabezpečení, útoky prostřednictvím injektáže: vývojáři často shromažďovat vstup z jedné stránky a použít jako hodnotu do jiné prostřednictvím šablony zástupný symbol. Uvozovací znaky slouží taky jako připomenutí, že je znovu nejlepší mít HTML v šabloně stránky a ven z kódu. Naštěstí je jednoduché vytvářet další proměnné místech. Například změnit *templates/index.html* tak, aby odpovídala následující kód, který přidá název stránky a zachovává veškeré formátování v šabloně stránky:
 
