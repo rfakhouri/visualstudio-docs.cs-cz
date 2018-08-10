@@ -49,10 +49,10 @@
                   href: direct-selection-tool-modifier-keys-in-blend.md
             - name: "Produkty a\_služby pro usnadnění pro Blend"
               href: accessibility-products-and-services-blend.md
-    - name: Začínáme s WPF (Windows Presentation Foundation)
+    - name: Windows Presentation Foundation (WPF)
       href: getting-started-with-wpf.md
       items:
-        - name: Úvod do WPF
+        - name: Přehled grafického subsystému WPF (Windows Presentation Foundation)
           href: introduction-to-wpf.md
         - name: Datová vazba WPF s LINQ to XML
           href: wpf-data-binding-with-linq-to-xml-overview.md
@@ -80,18 +80,18 @@
                       href: value-xelement-dynamic-property.md
                     - name: Xml (dynamická vlastnost XElement)
                       href: xml-xelement-dynamic-property.md
-            - name: Příklad
-              href: wpf-data-binding-using-linq-to-xml-example.md
-              items:
-                - name: 'Postupy: Sestavení a spuštění příkladu LinqToXmlDataBinding'
-                  href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
-                - name: 'Návod: Datová vazba LINQ to XML'
-                  href: walkthrough-linqtoxmldatabinding-example.md
+                - name: Příklad
+                  href: wpf-data-binding-using-linq-to-xml-example.md
                   items:
-                    - name: Zdrojový kód L2DBForm.xaml
-                      href: l2dbform-xaml-source-code.md
-                    - name: Zdrojový kód L2DBForm.xaml.cs
-                      href: l2dbform-xaml-cs-source-code.md
+                    - name: 'Postupy: Sestavení a spuštění příkladu LinqToXmlDataBinding'
+                      href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
+                    - name: 'Návod: Datová vazba LINQ to XML'
+                      href: walkthrough-linqtoxmldatabinding-example.md
+                      items:
+                        - name: Zdrojový kód L2DBForm.xaml
+                          href: l2dbform-xaml-source-code.md
+                        - name: Zdrojový kód L2DBForm.xaml.cs
+                          href: l2dbform-xaml-cs-source-code.md
     - name: Práce s 3D prostředky pro hry a aplikace
       href: working-with-3-d-assets-for-games-and-apps.md
       items:

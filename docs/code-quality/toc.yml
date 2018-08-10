@@ -575,6 +575,8 @@
               href: ca3076-insecure-xslt-script-execution.md
             - name: 'CA3077: Nezabezpečené zpracování v návrhu rozhraní API, dokumentu XML a čtečce textu XML'
               href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
+            - name: 'CA3147: Označte obslužné rutiny příkazů značkou ValidateAntiForgeryToken'
+              href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
         - name: Upozornění využití
           href: usage-warnings.md
           items:
