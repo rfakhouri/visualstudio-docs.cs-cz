@@ -85,7 +85,7 @@ Teď, ale můžete předat `Version` metadat jako atribut, jako je například n
 
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Itemmetadata –](../msbuild/itemmetadata-element-msbuild.md)|Klíč metadat uživatelem definovanou položku katalogu, který obsahuje hodnotu metadat položky. Může být nula nebo více `ItemMetadata` prvky v položce.|  
+|[Itemmetadata](../msbuild/itemmetadata-element-msbuild.md)|Klíč metadat uživatelem definovanou položku katalogu, který obsahuje hodnotu metadat položky. Může být nula nebo více `ItemMetadata` prvky v položce.|  
 
 ### <a name="parent-elements"></a>Nadřazené prvky  
 
