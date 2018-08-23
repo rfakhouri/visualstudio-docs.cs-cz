@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 99b67f8ea89b4ea1308cf6db8ced359768861699
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: f47d5c013de34a64591100b8a459f6b18721e0b0
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251878"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635600"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Vývoj multiplatformních mobilních řešení v sadě Visual Studio
 
@@ -36,7 +36,7 @@ Pomocí Visual Studio Tools for Xamarin můžete cílit Android, iOS a Windows v
 |[Instalace sady Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Další informace o Xamarinu v sadě Visual Studio](http://visualstudio.microsoft.com/explore/xamarin-vs) (VisualStudio.com)|
 |[Dokumentace k vývoji pro mobilní aplikace Xamarin](/xamarin/) |
-|[Správa životního cyklu aplikací s aplikacemi Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
+|[DevOps s aplikacemi Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
 |[Přečtěte si o Universal Windows apps v sadě Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Další informace o podobnosti mezi Swift a C#](http://aka.ms/scposter) (download.microsoft.com)|
 
