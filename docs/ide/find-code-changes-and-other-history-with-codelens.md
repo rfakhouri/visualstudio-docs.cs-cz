@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f0c8dd142f9517dcaef3a40d613d43b8e650a3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9e709c6c2c995fc8065cc5aaec28b7c13229b623
+ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36238337"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42755698"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Nalezení změn kódu a další historie pomocí CodeLensu
 
@@ -190,23 +190,23 @@ Vyhledání propojených chyb tak, že vyberete **chyby** ukazatele nebo stisknu
 
 ![CodeLens - najít chyby spojené s sady změn](../ide/media/codelens-bugs-changesets.png)
 
-## <a name="contact-the-owner-of-an-item"></a>Otázka: Moje funkce CodeLens zobrazeny indikátory testu už v souboru při prvním otevření Moje řešení.
+## <a name="contact-the-owner-of-an-item"></a>Kontaktovat vlastníka položky
 
 Najděte autora položky výběrem indikátoru **autorů** nebo stisknutím klávesy **Alt**+**5**.
 
-![Otázka: Moje funkce CodeLens zobrazeny indikátory testu už v souboru při prvním otevření Moje řešení.](../ide/media/codelens-contact-item-owner.png)
+![Kontaktovat vlastníka položky](../ide/media/codelens-contact-item-owner.png)
 
-Odpověď: znovu sestavit projekt získat indikátory CodeLens testu načíst v souboru. Kvůli zvýšení výkonu se Visual Studio už načítá informace o zdroji pro indikátory testu, když jsou načteny soubory s kódem.
+Otevřete místní nabídku pro položku zobrazíte možností kontaktu. Pokud už máte, Lync nebo Skype pro firmy nainstalovaný, uvidíte tyto možnosti:
 
-![Indikátory testu jsou načteny po sestavení nebo přejděte na test na něj poklikejte na něj v Průzkumníka testů.](../ide/media/codelens-item-contact-menu.png)
+![Obraťte se na možnosti pro položku](../ide/media/codelens-item-contact-menu.png)
 
-## <a name="associated-unit-tests"></a>Funkce editoru kódu
+## <a name="associated-unit-tests"></a>Testy přidružených jednotek
 
 Může zjišťovat testy jednotek, které existují bez spuštění kódu jazyka C# nebo Visual Basic **Průzkumník testů**.
 
 1. Přejděte do aplikace kód, který je spojen [kód testu jednotek](../test/unit-test-your-code.md).
 
-2. Pokud nemáte, sestavení aplikace načíst indikátory CodeLens na test. Ujistěte se, že [zjišťování z vytvořených sestavení](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) zapnutý.
+2. Pokud nemáte, sestavení aplikace načíst indikátory CodeLens na test. Ujistěte se, že [zjišťování z vytvořených sestavení](../test/test-explorer-faq.md#assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) zapnutý.
 
 3. Zkontrolujte testy Code stisknutím kombinace kláves **Alt**+**3**.
 
@@ -327,7 +327,7 @@ Použití klávesnice:
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Otázka: Moje funkce CodeLens zobrazeny indikátory testu už v souboru při prvním otevření Moje řešení. Jak je můžete je načíst?
 
-**Odpověď:** znovu sestavit projekt získat indikátory CodeLens testu načíst v souboru. Ujistěte se, že [zjišťování z vytvořených sestavení](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) zapnutý. Kvůli zvýšení výkonu se Visual Studio už načítá informace o zdroji pro indikátory testu, když jsou načteny soubory s kódem. Indikátory testu jsou načteny po sestavení nebo přejděte na test na něj poklikejte na něj v **Průzkumníka testů**.
+**Odpověď:** znovu sestavit projekt získat indikátory CodeLens testu načíst v souboru. Ujistěte se, že [zjišťování z vytvořených sestavení](../test/test-explorer-faq.md#assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) zapnutý. Kvůli zvýšení výkonu se Visual Studio už načítá informace o zdroji pro indikátory testu, když jsou načteny soubory s kódem. Indikátory testu jsou načteny po sestavení nebo přejděte na test na něj poklikejte na něj v **Průzkumníka testů**.
 
 ## <a name="see-also"></a>Viz také:
 

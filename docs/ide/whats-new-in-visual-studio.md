@@ -2,7 +2,7 @@
 title: Co je nového v sadě Visual Studio 2017
 description: Informace o nových funkcích v sadě Visual Studio 2017.
 ms.custom: ''
-ms.date: 08/20/2018
+ms.date: 08/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 174a056f3701e68dfbd8e6377efcf316d90bfa53
-ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
-ms.translationtype: HT
+ms.openlocfilehash: 3154264938753cf9be41cdd5ef8964f49664d730
+ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42624364"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42755506"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s novou v sadě Visual Studio 2017
 
@@ -134,6 +134,12 @@ Další informace o automatických testů, najdete v článku [kanálu CI/CD pro
 A další informace o tom, co je nového [nástrojů Continuous delivery tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) rozšíření devlabs s názvem, najdete v článku [potvrzení s jistotou: potvrdit kvalitu kódu čas](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) blogový příspěvek.
 
 ### <a name="visual-studio-ide-enhancements"></a>Vylepšení Visual Studio IDE
+
+#### <a name="multi-caret-editing"></a>Blikající kurzor o víc úpravy
+
+**Novinka v 15.8**: úpravy více míst v souboru, současně, je teď snadné. Začněte vytvořením vložení body a výběr na víc místech v souboru. Potom použijte funkci úpravy více blikající kurzor o provádět stejné úpravy ve dvou nebo více míst ve stejnou dobu.
+
+Další informace najdete v tématu [více blikající kurzor o výběr](finding-and-replacing-text.md#multi-caret-selection) část z [najít a nahradit text](finding-and-replacing-text.md) stránky.
 
 #### <a name="keep-keybinding-profiles-consistent"></a>Zachování konzistence keybinding – profily
 
