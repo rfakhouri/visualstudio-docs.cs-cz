@@ -1,6 +1,6 @@
 ---
-title: Nainstalujte na malou šířkou pásma nebo nespolehlivé mezi sítě v prostředích | Microsoft Docs
-description: Další informace o použití instalačního programu sady Visual Studio nespolehlivé síti nebo máte malou šířkou pásma, a způsob používání příkazového řádku pro stažení a instalace souborů.
+title: Instalace v pomalé nebo nespolehlivé síti prostředí | Dokumentace Microsoftu
+description: Další informace o použití instalačního programu sady Visual Studio nespolehlivé síti nebo máte malou šířkou pásma, a způsob použití příkazového řádku se stáhnout instalační soubory.
 ms.date: 01/17/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -13,31 +13,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b60df36240b332e74e63aaef7fab75ff19c7d77
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ROBOTS: NOINDEX,NOFOLLOW
+ms.openlocfilehash: 4517984b5da3c6d8e650ec4148c085c2a42aa392
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296304"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634417"
 ---
-# <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Nainstalovat Visual Studio 2017 na malou šířkou pásma nebo nespolehlivé mezi sítě v prostředích
+# <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Instalace sady Visual Studio 2017 v pomalé nebo nespolehlivé síti prostředí
 
-Doporučujeme vám, že zkusíte webovou Instalační službu sady Visual Studio&mdash;myslíme si, naleznete je kvalitní většině situací.
+Doporučujeme vám, že zkusíte webovou Instalační službu sady Visual Studio&mdash;myslíme, že budete pro vás vhodné prostředí pro většinu situací.
 
  > [!div class="button"]
  > [Stažení sady Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
-Ale pokud vaše připojení k Internetu je k dispozici nebo nespolehlivé, můžete příkazového řádku k vytvoření místní mezipaměti souborů, které potřebujete k dokončení instalace v režimu offline. Tady je způsob.
+Pokud připojení k Internetu je nedostupné nebo nespolehlivé, můžete vytvořit místní mezipaměti soubory, které potřebujete k dokončení offline instalace můžete použít příkazový řádek. Tady je způsob.
 
 > [!NOTE]
-> Pokud jste správce organizace, který chce provést nasazení sady Visual Studio 2017 k síti klientské pracovní stanice, které jsou bránou firewall z Internetu, najdete v našich [vytvořit sítě instalaci sady Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) a [Instalaci certifikátů vyžadovaných pro instalaci sady Visual Studio offline](../install/install-certificates-for-visual-studio-offline.md) stránky.
+> Pokud jste správce organizace, který chce provést nasazení sady Visual Studio 2017 k síti klientských pracovních stanic, které jsou aplikována brána firewall z Internetu, najdete v našich [vytvoření síťové instalace sady Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) a [Instalaci certifikátů vyžadovaných pro offline instalace sady Visual Studio](../install/install-certificates-for-visual-studio-offline.md) stránky.
 
 ## <a name="step-1---download-the-visual-studio-bootstrapper"></a>Krok 1 – stažení zaváděcího nástroje Visual Studio
 
-Spusťte stažením zaváděcího nástroje Visual Studio pro vaši zvolenou edice sady Visual Studio.
+Začněte tím, že stažení zaváděcího nástroje Visual Studio pro vaši zvolenou edici sady Visual Studio.
 
-Instalační soubor&mdash;nebo být konkrétnější, soubor zaváděcího nástroje&mdash;bude odpovídat nebo podobný jednu z následujících.
+Váš soubor&mdash;nebo na konkrétnější, soubor zaváděcí nástroj&mdash;bude odpovídat nebo se podobně jako na jednu z následujících akcí.
 
 | Edice                    | Soubor                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
@@ -45,55 +46,55 @@ Instalační soubor&mdash;nebo být konkrétnější, soubor zaváděcího nást
 | Visual Studio Professional | [vs_professional.exe](https://aka.ms/vs/15/release/vs_professional.exe) |
 | Visual Studio Enterprise   | [vs_enterprise.exe](https://aka.ms/vs/15/release/vs_enterprise.exe)     |
 
-## <a name="step-2---create-a-local-install-cache"></a>Krok 2 – Vytvoření mezipaměti místní instalace
+## <a name="step-2---create-a-local-install-cache"></a>Krok 2: vytvoření mezipaměti místní instalace
 
-Musí mít připojení k Internetu k dokončení tohoto kroku. Pokud chcete vytvořit místní rozložení, otevřete příkazový řádek a použijte jednu z následujících příkladech příkazů. Příklady zde předpokládají, že používáte edice Community sady Visual Studio; Upravte příkaz podle potřeby vaší verze.
+Musíte mít internetové připojení k dokončení tohoto kroku. Chcete-li vytvořit místní rozložení, otevřete příkazový řádek a použijte jeden z příkazů z následujících příkladů. Příklady v tomto článku se předpokládá, že používáte komunitní edice sady Visual Studio; Upravte příkaz v závislosti na edici.
 
-- Webové rozhraní .NET a vývoj aplikací .NET spusťte:
+- Vývoj desktopových aplikací .NET a webové rozhraní .NET spusťte:
 
    ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US```
 
-- Pro stolní počítače rozhraní .NET a vývoj pro Office spusťte příkaz:
+- Vývoj pro Office a .NET desktop spusťte:
 
    ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US```
 
-- Vývoj aplikací C++ spusťte příkaz:
+- Vývoje desktopových aplikací C++ pro spuštění:
 
    ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US```
 
-- Chcete-li vytvořit úplný místní rozložení se všemi funkcemi (bude to trvat dlouhou dobu&mdash;máme _mnoha_ funkcí!) spusťte:
+- Vytvoření kompletní místní rozložení se všemi funkcemi (bude to trvat dlouho&mdash;máme _velké_ funkcí!), spusťte:
 
    ```vs_community.exe --layout c:\vs2017layout --lang en-US```
 
-Pokud chcete nainstalovat jiný jazyk než anglický, změňte `en-US` pro národní prostředí ze seznamu v dolní části této stránky. Použít [seznam součástí a úlohy zůstaly dostupné](workload-and-component-ids.md) k dalšímu přizpůsobení instalace mezipaměti podle potřeby.
+Pokud chcete nainstalovat jiný jazyk než angličtinu, změňte `en-US` národní prostředí v seznamu v dolní části této stránky. Použijte tento [seznamu komponent a úlohy, které jsou k dispozici](workload-and-component-ids.md) můžete dále přizpůsobit vaše mezipaměť instalace podle potřeby.
 
 > [!IMPORTANT]
-> Dokončení rozložení Visual Studio 2017 vyžaduje alespoň 35 GB místa na disku a může trvat nějakou dobu ke stažení. V tématu [používání parametrů příkazového řádku pro instalaci Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) informace o tom, jak vytvořit rozložení s pouze komponenty chcete nainstalovat.
+> Úplné rozložení sady Visual Studio 2017 vyžaduje minimálně 35 GB místa na disku a může trvat nějakou dobu ke stažení. Zobrazit [použitím parametrů příkazového řádku instalace sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) informace o tom, jak vytvořit rozložení s pouze ty součásti, kterou chcete nainstalovat.
 
 ## <a name="step-3---install-visual-studio-from-the-local-cache"></a>Krok 3: instalace sady Visual Studio z místní mezipaměti
 
 > [!TIP]
-> Když spustíte z mezipaměti místní instalace, instalační program používá místní verze každého z těchto souborů. Ale pokud vyberete součásti během instalace, které nejsou v mezipaměti, budeme pokoušet stáhnout z Internetu.
+> Při spuštění z mezipaměti místní instalace instalační program používal místní verze každý z těchto souborů. Ale pokud vyberete součásti během instalace, které nejsou v mezipaměti, jsme provést při stahování z Internetu.
 
-K zajištění instalovat pouze soubory, které jste stáhli, použijte stejné možnosti příkazového řádku, které jste použili k vytvoření mezipaměti rozložení. Například pokud jste vytvořili mezipaměti rozložení pomocí následujícího příkazu:
+Pokud chcete mít jistotu, že nainstalujete jenom soubory, které jste stáhli, použijte stejné možnosti příkazového řádku, které jste použili k vytvoření mezipaměti rozložení. Například, pokud jste vytvořili mezipaměť rozložení pomocí následujícího příkazu:
 
 ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US```
 
-Použijte tento příkaz ke spuštění instalace:
+Jak spustit instalaci, použijte tento příkaz:
 
 ```c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional```
 
 > [!NOTE]
-> Pokud dojde k chybě, že podpis je neplatný, je nutné nainstalovat aktualizované certifikáty. Otevřete složku Certifikáty v mezipaměti v režimu offline. Dvakrát klikněte na každý ze souborů certifikátu a potom klikněte pomocí Průvodce správce certifikátů. Pokud se zobrazí výzva k zadání hesla, ponechte prázdné.
+> Pokud dojde k chybě, podpis je neplatný, je nutné nainstalovat aktualizace certifikátů. Otevřete složku pro certifikáty v offline mezipaměti. Klikněte dvakrát na každém ze souborů certifikátu a klikněte na Průvodce správce certifikátů. Pokud budete vyzváni k zadání hesla, ponechte prázdné.
 
-## <a name="list-of-language-locales"></a>Seznam národní prostředí
+## <a name="list-of-language-locales"></a>Seznam národních prostředí jazyka
 
-| **Národní prostředí** | **Jazyk** |
+| **Jazyk národního prostředí** | **Jazyk** |
 | ----------------------- | --------------- |
 | cs-CZ | Čeština |
 | de-DE | Němčina |
 | en US | Angličtina |
-| ES-ES | Španělština |
+| es-ES | Španělština |
 | fr-FR | Francouzština |
 | IT-IT | Italština |
 | ja-JP | Japonština |
@@ -102,23 +103,23 @@ Použijte tento příkaz ke spuštění instalace:
 | pt-BR | Portugalština – Brazílie |
 | ru-RU | Ruština |
 | tr-TR | Turečtina |
-| zh-CN | -Čínština, zjednodušená čínština |
-| zh-TW | Tradiční čínština – |
+| zh-CN | Čínština (zjednodušená) |
+| zh-TW | Čínština (tradiční) |
 
 ## <a name="get-support"></a>Získat podporu
 
-V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
+V některých případech může něco selže. Pokud se nezdaří instalace aplikace Visual Studio, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud žádný z kroků pro řešení potíží, kontaktujte nás podle živý chat pro pomoc s instalací (jenom v angličtině). Podrobnosti najdete v tématu [stránku podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
-Tady je několik další možnosti podpory:
+Tady je několik dalších možností podpory:
 
-* Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
+* Může probíhat hlášení problémů s produktem nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu sady Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
+* Můžete sledovat problémů s produktem a najít odpovědi v [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com/).
+* Můžete také Spolupracujte s námi a jinými vývojáři Visual Studio prostřednictvím [konverzace sady Visual Studio v komunitě Gitteru](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účet.)
 
 ## <a name="see-also"></a>Viz také:
 
 * [Instalace sady Visual Studio](install-visual-studio.md)
-* [Příručka správce Visual Studio](visual-studio-administrator-guide.md)
+* [Příručka pro správce aplikace Visual Studio](visual-studio-administrator-guide.md)
 * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio 2017 pracovního vytížení a součást ID](workload-and-component-ids.md)
+* [ID pracovního vytížení a komponenta Visual Studio 2017](workload-and-component-ids.md)

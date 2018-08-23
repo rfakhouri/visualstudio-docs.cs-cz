@@ -1,5 +1,5 @@
 ---
-title: Zkontrolujte proměnné v automobily a místní hodnoty – Windows | Microsoft Docs
+title: Kontrolovat proměnné v oknech pro automatické hodnoty a místní hodnoty Windows | Dokumentace Microsoftu
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.technology: vs-ide-debug
@@ -16,27 +16,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 956b3afe1308ee748ee9efa6292834754f7e8124
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454635"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626467"
 ---
-# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Zkontrolovat proměnné v automobily a místní hodnoty – Windows v sadě Visual Studio
-**Automobily** okno (při ladění, **CTRL + ALT + V, A**, nebo **ladění > Windows > automobily**) a **místní hodnoty –** okno (při ladění **CTRL + ALT + V, L**, nebo **ladění > Windows > místní hodnoty –**) jsou velmi užitečné, pokud chcete zobrazit hodnoty proměnné při ladění. **Místní hodnoty –** okno zobrazí proměnné, které jsou definovány v místní obor, což je obecně funkce nebo metoda, která je aktuálně spouštěna. **Automobily** okno se zobrazí proměnné používá kolem aktuálního řádku (místo, kde je zastavena ladicího programu). Přesně které proměnné zobrazení v tomto okně se liší v různých jazycích. V tématu [proměnné, které se zobrazí v okně automobily?](#bkmk_whatvariables) níže.  
+# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Kontrolovat proměnné v automatické hodnoty a místní hodnoty Windows v sadě Visual Studio
+**Automatické hodnoty** okno (při ladění, **CTRL + ALT + V, A**, nebo **ladit > Windows > Automatické hodnoty**) a **lokální** okno (při ladění **CTRL + ALT + V, L**, nebo **ladit > Windows > lokální**) jsou velmi užitečné, pokud chcete zobrazit hodnoty proměnných během ladění. **Lokální** okně se zobrazí proměnné, které jsou definovány v místním rozsahem, což je obvykle funkce nebo metoda, která se právě zpracovává. **Automatické hodnoty** okně se zobrazí proměnné používané kolem aktuálního řádku (místo, kde je zastavený ladicím programu). Přesně které proměnné zobrazí v tomto okně se liší v různých jazycích. Zobrazit [proměnné, které se zobrazí v okně Automatické hodnoty?](#bkmk_whatvariables) níže.  
   
-Pokud potřebujete další informace o základní ladění, přečtěte si [Začínáme s ladicím programem](../debugger/getting-started-with-the-debugger.md).  
+Pokud potřebujete další informace o základní ladění, naleznete v tématu [Začínáme s ladicím programem](../debugger/getting-started-with-the-debugger.md).  
   
-## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Prohlížení objekty v systému windows automobily a lokální proměnné  
-Pole a objekty jsou zobrazeny v systému windows automobily a místní hodnoty jako ovládacích prvků strom. Klikněte na šipku nalevo od názvu proměnné rozbalte zobrazení zobrazit pole a vlastnosti. Tady je příklad [FileStream](/dotnet/api/system.io.filestream) objekt v **místní hodnoty –** okno:  
+## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Hledání v objektech v oknech pro automatické hodnoty a místní hodnoty  
+Pole a objekty jsou zobrazeny v okně Automatické hodnoty a místní hodnoty jako ovládacích prvků strom. Klikněte na šipku nalevo od názvu proměnné na Rozbalit zobrazení k zobrazení polí a vlastností. Tady je příklad <xref:System.IO.FileStream?displayProperty=fullName> objekt **místní hodnoty** okno:  
   
 ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
-## <a name="bkmk_whatvariables"></a> Jaké proměnné se zobrazí v okně Automatické hodnoty?  
- Můžete použít **automobily** okno v kódu jazyka C#, Visual Basic a C++. **Automobily** okno nepodporuje jazyk JavaScript a F #.  
+## <a name="bkmk_whatvariables"></a> Jaké proměnné zobrazí v okně Automatické hodnoty?  
+ Můžete použít **automatické hodnoty** okna v kódu jazyka C#, Visual Basic a C++. **Automatické hodnoty** okno nepodporuje jazyk JavaScript nebo F #.  
   
- V jazyce C# a Visual Basic **automobily** okně se zobrazí všechny proměnné použít na aktuální nebo předchozí řádek. Pokud například deklarovat čtyři proměnné a jejich nastavení následujícím způsobem:
+ V jazyce C# a Visual Basic **automatické hodnoty** v okně se zobrazí všechny proměnné použité v aktuální nebo předchozí řádku. Například pokud deklarace čtyři proměnné a jejich nastavení následujícím způsobem:
 
 ```csharp
     public static void Main()
@@ -49,13 +49,13 @@ Pole a objekty jsou zobrazeny v systému windows automobily a místní hodnoty j
     }
 ```
 
- Pokud nastavíte bod přerušení na řádku `c = 3`; a spusťte ladicí program, když se zastaví provádění **automobily** okno bude vypadat například takto:  
+ Pokud nastavíte zarážku na řádku `c = 3`; a spustit ladicí program, když se zastaví provádění **automatické hodnoty** bude okno vypadat například takto:  
 
  ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")  
 
- Všimněte si, že hodnota `c` je 0, protože řádek `c = 3` ještě nebyla spuštěna.  
+ Všimněte si, že hodnota `c` je 0, protože řádku `c = 3` ještě nebyla spuštěna.  
 
- V jazyce C++ **automobily** okně se zobrazí proměnné používané aspoň tři řádky před aktuálního řádku (na řádku, kdy je zastavena spuštění). Pokud je deklarovat šesti proměnné:
+ V jazyce C++ **automatické hodnoty** v okně se zobrazí proměnné používané alespoň tři řádky před aktuální řádek (řádku zastavením spuštění). Pokud deklarujete šest proměnné:
 
 ```C++
     void main() {
@@ -69,18 +69,18 @@ Pole a objekty jsou zobrazeny v systému windows automobily a místní hodnoty j
     }
 ```
 
- Pokud nastavíte bod přerušení na řádku `e = 5;` a spusťte ladicí program, když se zastaví provádění **automobily** okno bude vypadat například takto:  
+ Pokud nastavíte zarážku na řádku `e = 5;` a spustit ladicí program, když se zastaví provádění **automatické hodnoty** bude okno vypadat například takto:  
   
  ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
   
- Všimněte si, že proměnná e není inicializována, protože kód na řádku `e = 5;` ještě nebyla spuštěna.  
+ Všimněte si, že proměnná e není inicializovaná, protože kód na řádku `e = 5;` ještě nebyla spuštěna.  
   
- Zobrazí se také návratové hodnoty funkce a metody za určitých okolností. V tématu [zobrazení návratových hodnot volání metod](#bkmk_returnValue) níže.  
+ Můžete také zobrazit návratové hodnoty funkce a metody v některých případech. Zobrazit [zobrazení návratových hodnot volání metod](#bkmk_returnValue) níže.  
   
 ##  <a name="bkmk_returnValue"></a> Zobrazení návratových hodnot volání metod  
- V rozhraní .NET a C++ kódu můžete zkontrolovat návratové hodnoty, když krok přes nebo mimo volání metody. Tato funkce je užitečná, pokud výsledek volání metody není uložen v místní proměnné, třeba když metoda se používá jako parametr nebo jako návratová hodnota jinou metodu.  
+ V kódu rozhraní .NET a C++ může Kontrola návratových hodnot při kroku přes nebo mimo volání metody. Tato funkce je užitečná, když výsledek volání metody není uložen v místní proměnné, například při použití metody jako parametr nebo návratovou hodnotu metody jiné.  
   
- Následující kód C# přidá vrácené hodnoty dvě funkce:  
+ Následující kód jazyka C# přidává návratové hodnoty dvou funkcí:  
 
 ```csharp
 static void Main(string[] args)  
@@ -104,37 +104,37 @@ private static int subtractVars(int i, int j)
 }  
 ```
 
- Nastavit zarážky `int x = sumVars(a, b) + subtractVars(c, d);` řádku.  
+ Nastavit zarážku na `int x = sumVars(a, b) + subtractVars(c, d);` řádku.  
   
- Spuštění ladění a při provádění dělí na první zarážky, stiskněte klávesu **F10 (Krokovat s přeskočením)**. Měli byste vidět následující **automobily** okno:  
+ Spustit ladění a při provádění přeruší v k první zarážce, stiskněte klávesu **F10 (Krokovat s přeskočením)**. Měli byste vidět v následující **automatické hodnoty** okno:  
   
  ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
   
-## <a name="why-are-variable-values-sometimes-red-in-locals-and-autos-windows"></a>Proč jsou hodnoty proměnné někdy red v lokální a automobily windows?  
-Můžete si všimnout, že hodnota proměnné je někdy red v **místní hodnoty –** a **automobily** systému windows. Toto jsou hodnoty proměnné, které se změnily od posledního vyhodnocení. Tato změna může být z předchozí relace, ladění, nebo protože byla hodnota změněna v okně.  
+## <a name="why-are-variable-values-sometimes-red-in-locals-and-autos-windows"></a>Proč jsou hodnoty proměnných někdy červená barva v oknech místní hodnoty a automatické hodnoty?  
+Můžete si všimnout, že hodnota proměnné je někdy červeně v **lokální** a **automatické hodnoty** systému windows. Toto jsou hodnoty proměnných, které se změnily od posledního vyhodnocení. Tato změna může být z předchozí ladicí relace, nebo proto, že hodnota se změnila v okně.  
   
-## <a name="changing-the-numeric-format-of-a-variable-window"></a>Změna numerického formátu oken okně proměnná  
-Výchozí číselný formát je decimal, ale můžete ho změnit na hexadecimální. Klepněte pravým tlačítkem myši **místní hodnoty –** nebo **automobily** a vyberte **hexadecimální zobrazení**. Změna ovlivní všechny ladicího programu.  
+## <a name="changing-the-numeric-format-of-a-variable-window"></a>Změna číselného formátu okně proměnných  
+Je výchozí číselný formát desetinné číslo, ale můžete ho změnit na šestnáctkové. Klepněte pravým tlačítkem myši **lokální** nebo **automatické hodnoty** okna a vyberte **hexadecimální zobrazení**. Změna ovlivní všechna okna ladicího programu.  
   
-## <a name="editing-a-value-in-a-variable-window"></a>Úpravy hodnotu v okně proměnná  
-Můžete upravit hodnoty Většina proměnných, které se zobrazují v **automobily**, **místní hodnoty –**, **sledovat**, a **QuickWatch** systému windows. Informace o **sledovat** a **QuickWatch** windows, najdete v části [sledovat a QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md). Právě dvakrát klikněte na hodnotu, kterou chcete změnit a přidejte novou hodnotu.  
+## <a name="editing-a-value-in-a-variable-window"></a>Úprava hodnoty v okně proměnné  
+Můžete upravit hodnot většiny proměnných, které se zobrazují v **automatické hodnoty**, **lokální**, **Watch**, a **QuickWatch** systému windows. Informace o **Watch** a **QuickWatch** naleznete zde [kukátko a Rychlé kukátko Windows](../debugger/watch-and-quickwatch-windows.md). Poklepejte na hodnotu, kterou chcete změnit a přidejte novou hodnotu.  
   
-Výraz hodnoty, můžete zadat například `a + b`. Ladicí program přijme nejvíce platné výrazy jazyka.  
+Výraz hodnoty, můžete zadat například `a + b`. Ladicí program přijímá nejvíce platné jazykové výrazy.  
   
-V nativním kódu C++ může mít pro kvalifikaci kontextu název proměnné. Další informace najdete v tématu [kontextu – operátor (C++)](../debugger/context-operator-cpp.md).  
+V nativním kódu C++ může být potřeba kvalifikovat kontext názvu proměnné. Další informace najdete v tématu [kontextu – operátor (C++)](../debugger/context-operator-cpp.md).  
  
-Však postupujte opatrně při změně hodnoty. Mohlo dojít k některému z následujících problémů:  
+Však opatrně při změně hodnoty. Mohlo dojít k některému z následujících problémů:  
   
 -   Hodnocení některých výrazů může změnit hodnotu proměnné nebo jinak ovlivnit stav programu. Například vyhodnocení `var1 = ++var2` změní hodnotu `var1` a `var2`.  
   
-     Výrazy, které mění data jsou uvedená tak, aby měl [vedlejší účinky](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), což může vést k neočekávaným výsledkům Pokud nejste vědět z nich. Ujistěte se, že rozumíte následky takové změny před jeho provedením.  
+     Výrazy, které mění data mají často [vedlejší účinky](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), které mohou způsobit neočekávané výsledky, pokud si nejste vědomi. Ujistěte se, že chápete důsledky takové změny, před jeho provedením.  
   
 -   Úpravy hodnot s plovoucí desetinnou čárkou mohou díky převodu komponenty zlomku z desítkové do binární soustavy způsobit drobné nepřesnosti. I zdánlivě neškodné úpravy mohou v proměnné s plovoucí desetinnou čárkou způsobit změny některých nejméně významných bitů.  
   
 ## <a name="changing-the-window-context"></a>Změna kontextu okna  
-Můžete použít **ladění umístění** nástrojů vyberte požadované funkce, vlákno nebo proces, který mění kontext pro proměnné systému windows. Nastavte zarážky a spuštění ladění. (Pokud se tento panel nástrojů nezobrazí, můžete ji povolit kliknutím v prázdné místo oblasti panelu nástrojů. Zobrazí seznam panelů nástrojů; Vyberte **ladění umístění**). Pokud je průchodu zarážkou, provádění zastaví a zobrazit nástrojů ladění umístění, které je dolní řádek na následujícím obrázku.
+Můžete použít **umístění ladění** nástrojů a vyberte požadované funkce, vlákna nebo procesu, která změní kontext pro okna proměnných systému windows. Nastavte zarážku a spusťte ladění. (Pokud nevidíte tento panel nástrojů, můžete ji povolit kliknutím na prázdnou část oblasti panelu nástrojů. Zobrazí se seznam panely nástrojů; Vyberte **umístění ladění**). Při dosažení zarážky zastaví provádění zobrazíte panelu nástrojů umístění ladění, což je dolní řádek na následujícím obrázku.
   
 ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")   
   
 ## <a name="see-also"></a>Viz také  
- [Ladicího programu](../debugger/debugger-windows.md)
+ [Ladicí program Windows](../debugger/debugger-windows.md)
