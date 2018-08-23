@@ -1,0 +1,1 @@
+Novým výchozím místem pro dokumentaci k sadě Visual Studio je [dokumentace k sadě Visual Studio 2017](http://docs.microsoft.com/visualstudio) na webu docs.microsoft.com.
