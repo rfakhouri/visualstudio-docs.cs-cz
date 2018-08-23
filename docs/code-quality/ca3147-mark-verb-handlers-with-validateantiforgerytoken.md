@@ -1,5 +1,5 @@
 ---
-title: 'CA3147: Operaci obslužné rutiny s ValidateAntiForgeryToken označit'
+title: 'CA3147: Označte obslužné rutiny příkazů značkou ValidateAntiForgeryToken'
 ms.date: 08/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b4369cfd310be9322d17b8bdbfe79880f2aa579
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: da15a441a10f3ad3f3f84ee0cc76eeed8e4127e4
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40009048"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624384"
 ---
-# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: Operaci obslužné rutiny s ValidateAntiForgeryToken označit
+# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: Označte obslužné rutiny příkazů značkou ValidateAntiForgeryToken
 
 |||
 |-|-|
@@ -29,7 +29,7 @@ ms.locfileid: "40009048"
 
 ## <a name="cause"></a>příčina
 
-Metody akce kontroleru ASP.NET MVC není označen atributem <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute?displayProperty=fullName>, nebo atribut určení příkaz protokolu HTTP, jako například <xref:Microsoft.AspNetCore.Mvc.HttpGetAttribute?displayProperty=fullName> nebo <xref:Microsoft.AspNetCore.Mvc.AcceptVerbsAttribute?displayProperty=fullName>.
+Metody akce kontroleru ASP.NET MVC není označen atributem [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118)), nebo atribut určení příkaz protokolu HTTP, jako například [HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993(v%3dvs.118)) nebo [ AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29).
 
 ## <a name="rule-description"></a>Popis pravidla
 
@@ -37,17 +37,17 @@ Při navrhování kontroler ASP.NET MVC, dávejte útoků proti padělání žá
 
 Toto pravidlo kontroluje, že kontroler ASP.NET MVC metod akce buď:
 
-- Máte <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute> a určení povolených příkazů HTTP, bez zahrnutí HTTP GET.
+- Máte [ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108%28v%3dvs.118%29) a určení povolených příkazů HTTP, bez zahrnutí HTTP GET.
 
 - Zadejte GET protokolu HTTP jako povolených operací.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
-- Pro akce kontroleru ASP.NET MVC, které zpracovávají požadavky HTTP GET a nemají potenciálně škodlivé vedlejší účinky, přidejte <xref:Microsoft.AspNetCore.Mvc.HttpGetAttribute> metody.
+- Pro akce kontroleru ASP.NET MVC, které zpracovávají požadavky HTTP GET a nemají potenciálně škodlivé vedlejší účinky, přidejte [HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993%28v%3dvs.118%29) metody.
 
    Pokud máte ASP.NET MVC požaduje akce kontroleru, který zpracovává HTTP GET a má potenciálně škodlivé vedlejší účinky, jako je třeba změna citlivá data, aplikace je ohrožen útoky proti padělání žádosti více webů.  Bude potřeba změnit návrh aplikace tak, aby pouze žádosti HTTP POST, PUT a DELETE provádět citlivé operace.
 
-- Pro akce kontroleru ASP.NET MVC, které zpracovávají HTTP POST, PUT nebo požádá o odstranění, přidání <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute> a atributů určujících povolené příkazy HTTP (<xref:Microsoft.AspNetCore.Mvc.AcceptVerbsAttribute>, <xref:Microsoft.AspNetCore.Mvc.HttpPostAttribute>, <xref:Microsoft.AspNetCore.Mvc.HttpPutAttribute>, nebo <xref:Microsoft.AspNetCore.Mvc.HttpDeleteAttribute>). Kromě toho je třeba volat <xref:Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.AntiForgeryToken%2A?displayProperty=nameWithType> ze zobrazení MVC nebo Razor webové stránky. Příklad najdete v tématu [zkoumání metod edit a zobrazení upravit](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
+- Pro akce kontroleru ASP.NET MVC, které zpracovávají HTTP POST, PUT nebo požádá o odstranění, přidání [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118)) a atributů určujících povolené příkazy HTTP ([AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29) [HttpPostAttribute](/previous-versions/aspnet/web-frameworks/ee264023%28v%3dvs.118%29), [HttpPutAttribute](/previous-versions/aspnet/web-frameworks/ee470909%28v%3dvs.118%29), nebo [HttpDeleteAttribute](/previous-versions/aspnet/web-frameworks/ee470917%28v%3dvs.118%29)). Kromě toho je třeba volat [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/web-frameworks/dd504812%28v%3dvs.118%29) metoda ze zobrazení MVC nebo Razor webové stránky. Příklad najdete v tématu [zkoumání metod edit a zobrazení upravit](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 

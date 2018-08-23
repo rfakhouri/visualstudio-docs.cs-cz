@@ -1,25 +1,25 @@
 ---
 title: Projekty a řešení
-description: Tento dokument obsahuje přehled projekty a řešení v sadě Visual Studio for Mac.
-author: asb3993
-ms.author: amburns
+description: Tento dokument obsahuje přehled projekty a řešení v sadě Visual Studio pro Mac.
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 6e99103ee16b56712f8ec979fd8591a20c2feb3c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 3497be6571cc8686960977f83f379007cf15f18c
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453893"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624331"
 ---
 # <a name="projects-and-solutions"></a>Projekty a řešení
 
-Visual Studio pro Mac poskytuje _řešení Pad_ zobrazíte stromovou strukturu celé otevřete řešení, která umožňuje snadný přístup k zdrojového kódu, prostředky, uživatelská rozhraní a sestavení odkazuje na obsažené v jednotlivých projektů. Panelu řešení pro standardně otevře jedno řešení najednou. Každé řešení může obsahovat mnoho projekty a každý projekt, může obsahovat mnoho položek.
+Visual Studio for Mac obsahuje _oblasti řešení_ pro zobrazení stromového zobrazení celého otevřené řešení, která umožňuje snadný přístup ke zdrojovému kódu, prostředky, uživatelská rozhraní a sestavení odkazuje na obsažených v jednotlivých projektech. Oblasti řešení ve výchozím nastavení, otevře se jedním z řešení současně. Každé řešení může obsahovat mnoho projektů, a každý projekt může obsahovat mnoho položek.
 
-## <a name="using-projects-and-solutions"></a>Pomocí projekty a řešení
+## <a name="using-projects-and-solutions"></a>Používání projektů a řešení
 
-Pokud chcete vytvořit nový projekt nebo řešení, najdete [vytváření nové projekty a řešení](create-new-projects.md) článku.
+Chcete-li vytvořit nový projekt nebo řešení, přečtěte si [vytváření nových projektů a řešení](create-new-projects.md) článku.
 
-## <a name="project-and-solution-options"></a>Možnosti řešení a projektu
+## <a name="project-and-solution-options"></a>Projekt a možnosti řešení
 
-Vlastnosti projekty a řešení můžete spravovat buď dvojitým kliknutím na název projekt nebo řešení, nebo kliknutím pravým tlačítkem myši a přejděte na **možnosti**. Další informace o těchto možnostech najdete v [řešení pro správu a vlastnosti projektu](managing-solutions-and-project-properties.md) článku.
+Vlastnosti projekty a řešení můžete spravovat buď poklikáním na název projektu nebo řešení, nebo kliknutím pravým tlačítkem a přejdete na adresu **možnosti**. Další informace o těchto možnostech najdete v [vlastnosti projektu a řešení pro správu](managing-solutions-and-project-properties.md) článku.

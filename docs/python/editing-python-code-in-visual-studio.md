@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500118"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624309"
 ---
 # <a name="edit-python-code"></a>Úprava kódu v Pythonu
 
@@ -34,7 +34,7 @@ Můžete také použít Visual Studio **prohlížeče objektů** (**zobrazení**
 
 ## <a name="intellisense"></a>IntelliSense
 
-Poskytuje IntelliSense [dokončování](#completions), [signaturám](#signature-help), [rychlé informace](#quick-info), a [barevné zvýraznění kódu](#code-coloring). Visual Studio 2017 verze 15.7 nebo novější podporuje také [zadání pomocných parametrů](#type-hints).
+Poskytuje IntelliSense [dokončování](#completions), [signaturám](#signature-help), [rychlé informace](#quick-info), a [barevné zvýraznění kódu](#code-coloring). Visual Studio 2017 verze 15.7 nebo novější podporují také [zadání pomocných parametrů](#type-hints).
 
 Kvůli zvýšení výkonu, technologie IntelliSense v **Visual Studio 2017 verze 15.5** a dříve závisí na dokončení databáze, který je generován pro každé prostředí Pythonu ve vašem projektu. Databáze může být nutné aktualizovat, je-li přidat, odebrat nebo aktualizovat balíčky. Stav databáze je zobrazena ve **prostředí Pythonu** okno (na stejné úrovni **Průzkumníka řešení**) na **IntelliSense** kartu (naleznete v tématu [okno prostředí referenční dokumentace](python-environments-window-tab-reference.md#intellisense-tab)).
 

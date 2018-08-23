@@ -1,40 +1,40 @@
 ---
-title: Vytvoření nové projekty a řešení
-description: Tento článek popisuje, jak vytvářet projekty a řešení v sadě Visual Studio pro Mac
-author: asb3993
-ms.author: amburns
+title: Vytváří se nové projekty a řešení
+description: Tento článek popisuje, jak vytvořit projekty a řešení v sadě Visual Studio pro Mac
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 948d5d5bba49571d4b4a73d4ba47a77b377d8b11
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 1bd1687e545546780db4c76169bf2ca0affd47fe
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995826"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624248"
 ---
-# <a name="creating-new-projects-and-solutions"></a>Vytvoření nové projekty a řešení
+# <a name="creating-new-projects-and-solutions"></a>Vytváří se nové projekty a řešení
 
-## <a name="creating-new-projects-and-solutions-from-a-template"></a>Vytvoření nové projekty a řešení ze šablony
+## <a name="creating-new-projects-and-solutions-from-a-template"></a>Vytváření nových projektů a řešení ze šablony
 
-Řešení můžete kdykoli vytvořit pomocí předem určené šablony. Pokud chcete vytvořit řešení tímto způsobem, přejděte do **soubor > nové řešení**, vyberte požadované platformy a pak požadovanou šablonu:
+Pomocí předdefinované šablony se dají vytvářet řešení kdykoli. K vytvoření řešení tímto způsobem, přejděte do **soubor > nové řešení**, vyberte požadované platforem a potom požadovanou šablonu:
 
-![Vytváření nových řešení](media/projects-and-solutions-image0.png)
+![Vytvořit nové řešení](media/projects-and-solutions-image0.png)
 
-Tím se vytvoří řešení, která může obsahovat jednu nebo více projektů, v závislosti na typu šablonu vybrali.
+Tím se vytvoří řešení, které mohou obsahovat jeden nebo více projektů, v závislosti na typu zvolené šablony.
 
-Průzkumníku řešení lze procházet pomocí kontextu akce nebo panelu nabídek.
+V Průzkumníku řešení se dá Navigovat pomocí kontextu akce nebo nabídek.
 
-Chcete-li přidat nový projekt k řešení, klikněte pravým tlačítkem na název řešení a vyberte **Přidat > Přidat nový projekt** zobrazíte dialogové okno Nový projekt:
+Chcete-li přidat nový projekt do řešení, klikněte pravým tlačítkem na název řešení a vyberte **Přidat > Přidat nový projekt** zobrazíte dialogové okno Nový projekt:
 
  ![Přidat nový projekt](media/projects-and-solutions-image4.png)
 
-Tato metoda přidávání nových projektů lze využít možnosti sdílení kódu Xamarin. Přidání sdílené projektu nebo přenosné knihovny šablony do existujícího řešení poskytuje způsob, jak obsahovat veškeré logiky napříč platformami, který lze použít v rámci všechny projekty v řešení. Další informace o vytváření aplikací pro různé platformy najdete v části [relevantní průvodce](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/code-sharing/).
+Tato metoda přidávání nových projektů umožňuje využít možnosti sdílení kódu Xamarin. Přidání sdíleného projektu nebo přenosné knihovny šablony do existujícího řešení poskytuje způsob, jak všechny multiplatformní logiku, která se dá použít v jiné projekty v řešení. Další informace o vytváření multiplatformních aplikací, najdete [příslušném průvodci](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/code-sharing/).
 
 ## <a name="opening-recent-solutions"></a>Otevírání poslední řešení.
 
-Cílová stránka sady Visual Studio zobrazí seznam poslední projekty, které pracujete na:
+Cílová stránka aplikace Visual Studio zobrazí seznam posledních projektů, které pracujete na:
 
  ![Poslední část řešení na úvodní stránce](media/create-new-projects-recent.png)
 
-Můžete filtrovat tento seznam pomocí pole filtru nebo odebrat jednotlivé položky ze seznamu. 
+Můžete filtrovat tento seznam pomocí pole filtr nebo odebrání jednotlivých položek ze seznamu. 
  

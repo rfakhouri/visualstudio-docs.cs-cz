@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64958097b7a5fe86cda1d2b7dee62c69cd2fea63
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 2a02bf78d731764b0725c03cefb4959451a40b9c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586414"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624281"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Jak sada Visual Studio používá Python cesty pro hledání
 
@@ -26,7 +26,7 @@ S typickému využití Python `PYTHONPATH` proměnné prostředí (nebo `IRONPYT
 1. Složka obsahuje kód Pythonu, který používáte.
 1. "Modul cesty pro hledání" jako určené proměnnou prostředí použít. (Naleznete v tématu [The cesty pro hledání modulu](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) a [proměnné prostředí](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) v samotném dokumentace pro Python.)
 
-Visual Studio ignoruje proměnné prostředí path v hledání, ale i v případě, že proměnná je nastavena pro celý systém. Je ignorována, ve skutečnosti, přesně *protože* nastavit pro celý systém a tedy vyvolává některé otázky, které nejde automaticky odpovědi: jsou určené pro Python 2.7 nebo Python 3.6 odkazované moduly? Budou se přepsat standardní knihovny moduly? Vývojář si je vědoma toto chování nebo je pokus o zneužití škodlivým?
+Visual Studio ignoruje proměnné prostředí path v hledání, ale i v případě, že proměnná je nastavena pro celý systém. Je ignorována, ve skutečnosti, přesně *protože* nastavit pro celý systém a tedy vyvolává některé otázky, které nejde automaticky odpovědi: jsou odkazovaná moduly určená pro Python 2.7 nebo Python 3.6 +? Budou se přepsat standardní knihovny moduly? Vývojář si je vědoma toto chování nebo je pokus o zneužití škodlivým?
 
 Visual Studio tak poskytuje prostředky ke specifikaci cesty pro hledání přímo v prostředí a projekty. Kód, který můžete spustit nebo ladit v sadě Visual Studio přijímá cesty pro hledání v hodnotě `PYTHONPATH` (a další ekvivalentní proměnné). Přidáním cesty pro hledání sady Visual Studio zkontroluje knihovny v těchto umístěních a sestavuje databáze IntelliSense pro ně v případě potřeby (Visual Studio 2017 verze 15.5 a starší; vytváření databáze může chvíli trvat v závislosti na počtu knihovny).
 

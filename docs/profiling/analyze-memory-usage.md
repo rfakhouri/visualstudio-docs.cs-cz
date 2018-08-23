@@ -1,5 +1,5 @@
 ---
-title: Analýza využití paměti v sadě Visual Studio | Microsoft Docs
+title: Analýza využití paměti v aplikaci Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/02/2018
 ms.technology: vs-ide-debug
@@ -9,31 +9,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c483b40cf1cc45b730ea67bf01ea452c42af1e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 3cee40dd1dab8c3a9d9b57b84e6e299651bc5fc8
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624387"
 ---
 # <a name="analyze-memory-usage"></a>Analýza využití paměti
-Použít integrované ladicí program **využití paměti** diagnostický nástroj Najít nevracení paměti a využití neefektivní paměti. Umožňuje nástroj využití paměti, proveďte jeden nebo více *snímky* heap spravovaná a nativní paměti. Můžete shromažďovat snímky .NET, nativní nebo smíšený režim (.NET a nativní) aplikace.  
+Použijte integrovaný ladicí program **využití paměti** diagnostický nástroj k vyhledání nevrácené paměti a využití paměti neefektivní. Umožňuje nástroj využití paměti, můžete provést jeden nebo více *snímky* spravovaný a nativní paměti haldy. Můžete shromažďovat snímky technologie .NET, nativní nebo smíšený režim (.NET a nativní) aplikace.  
   
--   Jeden snímek, abyste pochopili relativní dopad typy objektů na využití paměti a k nalezení kód ve vaší aplikaci, která používá paměti neefektivnímu můžete analyzovat.  
+-   Jeden snímek pochopit jeho relativní dopad typů objektů na využití paměti a vyhledání kódu vaší aplikace, která používá paměť neefektivně, můžete analyzovat.  
   
--   Také můžete porovnat (rozdílové) dva snímky najít oblastí v kódu aplikace způsobující využití paměti časem zvětšuje.  
+-   Můžete také porovnat (rozdíl) dvěma snímky vyhledejte oblasti v kódu aplikace, které způsobují využití paměti časem zvětšuje.  
 
-Podrobné pokyny najdete v tématu [analýza využití paměti](../profiling/memory-usage.md) kurzu. Analýza využití paměti bez připojení ladicího programu, najdete v tématu [využití paměti bez ladicího programu](memory-usage-without-debugging2.md).
+Podrobné pokyny najdete v tématu [analýza využití paměti](../profiling/memory-usage.md) kurzu. Analýza využití paměti bez připojení ladicího programu, najdete v článku [využití paměti bez ladicího programu](memory-usage-without-debugging2.md).
+
+Můžete použít profilovací nástroje bez ladicího programu s Windows 7 a novější. Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s ladicím programem (**diagnostické nástroje** okno).
   
 ## <a name="blogs-and-videos"></a>Blogy a videa  
 
 |         |         |
 |---------|---------|
-|  ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video")  |    [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) o používání nástroje diagnostiky, které ukazuje, jak analyzovat využití paměti a využití procesoru v aplikaci Visual Studio 2017. |
+|  ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video")  |    [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) pomocí diagnostických nástrojů, které ukazuje, jak analyzovat využití paměti a využití procesoru v sadě Visual Studio 2017. |
 
- [Analýza využití procesoru a paměti při ladění](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
+ [Analýza využití procesoru a paměti během ladění](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   
  [Visual C++ blog: profilace paměti v aplikaci Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
  [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)
+ [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)

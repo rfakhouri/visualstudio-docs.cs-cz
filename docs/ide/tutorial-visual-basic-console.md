@@ -1,7 +1,8 @@
 ---
 title: Začínáme s jazykem Visual Basic v sadě Visual Studio
+description: Zjistěte, jak vytvořit konzolové aplikace jazyka Visual Basic v sadě Visual Studio, krok za krokem.
 ms.custom: ''
-ms.date: 12/08/2017
+ms.date: 08/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -13,82 +14,58 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1c40a7031145a13eb2eebf8adaee4eba51e9fc
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5b3288bc83e3cbeef9b46be2b3c6c7e17874d20f
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280335"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624354"
 ---
-# <a name="get-started-with-visual-basic-in-visual-studio"></a>Začínáme s jazykem Visual Basic v sadě Visual Studio
+# <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Kurz: Začínáme s jazykem Visual Basic v sadě Visual Studio
 
-V tomto kurzu pro Visual Basic (VB) budete používat Visual Studio k vytvoření a spuštění aplikace několik různých konzoly a prozkoumat některé funkce [Visual Studio integrované vývojové prostředí (IDE)](visual-studio-ide.md) při uděláte.
+V tomto kurzu pro Visual Basic (VB) budete používat k vytváření a spouštění aplikací pro několik různých konzoly a prozkoumat některé funkce služby Visual Studio [sady Visual Studio integrované vývojové prostředí (IDE)](visual-studio-ide.md) při uděláte.
 
-Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
+Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
-## <a name="before-you-begin"></a>Než začnete
+## <a name="create-a-project"></a>Vytvoření projektu
 
-Zde je rychlý nejčastější dotazy k vám představí některé klíčové koncepty.
-
-### <a name="what-is-visual-basic"></a>Novinky jazyka Visual Basic
-
-Visual Basic je bezpečnost typů programovací jazyk, který je navržená tak, aby se snadno Další. Je odvozen od BASIC, což znamená "Začátečníka všechny účely symbolický instrukce kódu".
-
-### <a name="what-is-visual-studio"></a>Co je Visual Studio?
-
-Visual Studio je sada integrované vývojové kancelářské nástroje pro vývojáře. Považujte ho za programu, které můžete použít k vytvoření programy a aplikace.
-
-### <a name="what-is-a-console-app"></a>Co je konzola aplikace?
-
-Konzolové aplikace přebírá vstup a také znám jako zobrazí výstup v okně příkazového řádku do konzoly.
-
-### <a name="what-is-net-core"></a>Co je .NET Core?
-
-.NET core je dalším krokem evolučním rozhraní .NET Framework. Kde rozhraní .NET Framework povoleno, abyste sdílet kódu v rámci programovací jazyky .NET Core přidá možnost sdílet kód napříč platformami. I lépe je open source. (Rozhraní .NET Framework a .NET Core zahrnují knihovny předkompilované funkce, jakož i modul common language runtime (CLR), která funguje jako virtuální počítač, ve kterém pro spouštění vašeho kódu.)
-
-## <a name="start-developing"></a>Začít vyvíjet
-
-Jste připravení začít vyvíjet? Jdeme!
-
-### <a name="create-a-project"></a>Vytvoření projektu
-
-Nejdříve vytvoříme projekt aplikace Visual Basic. Typ projektu se dodává s všechny soubory šablony, které budete potřebovat, než jste přidali i nic!
+Nejprve vytvoříme aplikaci projektu jazyka Visual Basic. Typ projektu obsahuje všechny soubory šablon, které potřebujete, než jste přidali ještě nic!
 
 1. Otevřete Visual Studio 2017.
 
 2. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
 
-3. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a potom zvolte **.NET Core**. V prostředním podokně vyberte **konzolové aplikace (.NET Core)**. Potom zadejte název souboru *HelloWorld*.
+3. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a klikněte na tlačítko **.NET Core**. V prostředním podokně vyberte **Konzolová aplikace (.NET Core)**. Potom zadejte název souboru *HelloWorld*.
 
-   ![Konzole šablony projektu aplikace (.NET Core) v dialogovém okně Nový projekt v prostředí Visual Studio IDE](../ide/media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
+   ![Konzole šablonu projektu aplikace (.NET Core) v dialogovém okně Nový projekt v integrovaném vývojovém prostředí sady Visual Studio](../ide/media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
-#### <a name="add-a-workgroup-optional"></a>Přidat pracovní skupiny (volitelné)
+### <a name="add-a-workgroup-optional"></a>Přidat do pracovní skupiny (nepovinné)
 
-Pokud nevidíte **konzolové aplikace (.NET Core)** šablony projektu, můžete ho získat tak, že přidáte **vývoj pro různé platformy .NET Core** zatížení. Můžete přidat tímto zatížením v jednom z následujících způsobů, v závislosti na tom, které instalují aktualizace Visual Studio 2017 na váš počítač.
+Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, můžete ho získat tak, že přidáte **vývoj pro různé platformy .NET Core** pracovního vytížení. Přidejte tuto úlohu v jednom z následujících způsobů, v závislosti na tom, které jsou na vašem počítači nainstalovaná aktualizace sady Visual Studio 2017.
 
-##### <a name="option-1-use-the-new-project-dialog-box"></a>Možnost 1: Pomocí dialogového okna Nový projekt
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Možnost 1: Pomocí dialogového okna Nový projekt
 
-1. Klikněte **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.
+1. Klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.
 
-  ![Klikněte na odkaz otevřete instalační program Visual Studio z dialogového okna Nový projekt](../ide/media/vs-open-visual-studio-installer-generic.png)
+   ![Klikněte na odkaz otevřít instalační program Visual Studio z dialogového okna Nový projekt](../ide/media/vs-open-visual-studio-installer-generic.png)
 
-2. Spustí se instalační program pro Visual Studio. Vyberte **vývoj pro různé platformy .NET Core** zatížení a potom zvolte **upravit**.
+1. Spustí se instalační program pro Visual Studio. Zvolte **vývoj pro různé platformy .NET Core** úlohy a klikněte na tlačítko **změnit**.
 
-   ![Vývoj pro různé platformy zatížení .NET core v instalačním programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
+   ![Úlohy pro vývoj pro různé platformy .NET core v instalačním programu sady Visual Studio](../ide/media/quickstart-aspnet-workload.png)
 
-##### <a name="option-2-use-the-tools-menu-bar"></a>Možnost 2: Pomocí nabídky panelu nástrojů
+#### <a name="option-2-use-the-tools-menu-bar"></a>Možnost 2: Použití nabídky panelu nástrojů
 
-1. Zrušit mimo **nový projekt** dialogové okno a z panelu horní nabídce zvolte **nástroje** > **funkcí a nástrojů pro získání**.
+1. Zrušit z celkového počtu **nový projekt** dialogového okna a v horní nabídce vyberte **nástroje** > **stažení nástrojů a funkcí**.
 
-2. Spustí se instalační program pro Visual Studio. Vyberte **vývoj pro různé platformy .NET Core** zatížení a potom zvolte **upravit**.
+1. Spustí se instalační program pro Visual Studio. Zvolte **vývoj pro různé platformy .NET Core** úlohy a klikněte na tlačítko **změnit**.
 
-## <a name="create-a-what-is-your-name-application"></a>Vytvořit aplikaci "Co je název vašeho"
+## <a name="create-a-what-is-your-name-application"></a>Vytvoření aplikace typu "Co je vaše jméno"
 
-Umožňuje vytvořit aplikaci, která vás vyzve k zadání vaše jméno a potom zobrazí společně s datum a čas. Tady je jak:
+Vytvoříme aplikaci, která vás vyzve k zadání vaše jméno a pak jej zobrazí datum a čas. Tady je způsob:
 
-1. Pokud již není otevřený, otevřete váš *WhatIsYourName* projektu.
+1. Pokud ho ještě není otevřený, otevřete vaši *WhatIsYourName* projektu.
 
-2. Zadejte následující kód jazyka Visual Basic ihned po levá hranatá závorka, která následuje `Sub Main(args As String())` řádku a před `End Sub` řádku:
+1. Zadejte následující kód jazyka Visual Basic ihned po levá hranatá závorka, která následuje `Sub Main(args As String())` řádku a před `End Sub` řádku:
 
      ```vb
      Console.WriteLine(vbCrLf + "What is your name? ")
@@ -99,23 +76,23 @@ Umožňuje vytvořit aplikaci, která vás vyzve k zadání vaše jméno a potom
      Console.ReadKey(True)
     ```
 
-    Tento kód nahradí existující <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, a <xref:System.Console.ReadKey%2A> příkazy.
+    Tento kód nahradí stávající <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, a <xref:System.Console.ReadKey%2A> příkazy.
 
- ![Okno kódu zobrazuje co je název vašeho kódu](../ide/media/vb-codewindow-what-name.png)
+   ![Co je vaše jméno kódem okno kódu](../ide/media/vb-codewindow-what-name.png)
 
-3. Když se otevře v okně konzoly, zadejte název. Vaše okna konzoly by měl vypadat podobně jako na následujícím snímku obrazovky:
+1. Když se v okně konzoly se otevře, zadejte své jméno. Okna konzoly by měla vypadat podobně jako na následujícím snímku obrazovky:
 
-   ![Zobrazuje, jaké je vaše jméno, datum a čas okně konzoly a stisknutím libovolné klávesy pokračujte zpráv](../ide/media/vb-console-what-name.png)
+   ![Konzole okno co je vaše jméno, času a data a stisknutím libovolné klávesy pokračovat zprávy](../ide/media/vb-console-what-name.png)
 
-5. Stisknutím libovolné klávesy zavřete okno konzoly.
+1. Stisknutím jakékoli klávesy zavřete okno konzoly.
 
 ## <a name="create-a-calculate-this-application"></a>Vytvořit aplikaci "Vypočítat to"
 
-1. Otevřete Visual Studio 2017 a potom vyberte z panelu horní nabídce **soubor** > **nový** > **projektu**.
+1. Otevřít Visual Studio 2017 a v horní nabídce vyberte příkaz **souboru** > **nový** > **projektu**.
 
-2. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a potom zvolte **.NET Core**. V prostředním podokně vyberte **konzolové aplikace (.NET Core)**. Potom zadejte název souboru *CalculateThis*.
+1. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a klikněte na tlačítko **.NET Core**. V prostředním podokně vyberte **Konzolová aplikace (.NET Core)**. Potom zadejte název souboru *CalculateThis*.
 
-3. Zadejte následující kód mezi `Module Program` řádku a `End Module` řádku:
+1. Zadejte následující kód mezi `Module Program` řádku a `End Module` řádku:
 
    ```vb
    Public num1 As Integer
@@ -132,20 +109,43 @@ Umožňuje vytvořit aplikaci, která vás vyzve k zadání vaše jméno a potom
    End Sub
    ```
 
-  Okno váš kód by měl vypadat jako na následujícím snímku obrazovky:
+   Okno váš kód by měl vypadat jako na následujícím snímku obrazovky:
 
-   ![Okno kódu zobrazuje Calculate tento kód](../ide/media/vb-codewindow-calculate-this.png)
+   ![Okno kódu znázorňující Calculate tento kód](../ide/media/vb-codewindow-calculate-this.png)
 
-4. Klikněte na tlačítko **CalculateThis** váš program spustit. Vaše okna konzoly by měl vypadat podobně jako na následujícím snímku obrazovky:
+1. Klikněte na tlačítko **CalculateThis** ke spuštění programu. Okna konzoly by měla vypadat podobně jako na následujícím snímku obrazovky:
 
-    ![Okno konzoly zobrazující CaluculateThis aplikaci, která zahrnuje dotazování na jaké akce lze provést.](../ide/media/vb-console-calculate-this.png)
+    ![Okna konzoly zobrazuje CaluculateThis aplikaci, která zahrnuje dotazování na akce, které se má provést.](../ide/media/vb-console-calculate-this.png)
+
+## <a name="quick-answers-faq"></a>Rychlé odpovědi – nejčastější dotazy
+
+Tady je rychlý – nejčastější dotazy ke zvýraznění některých klíčových koncepcí.
+
+### <a name="what-is-visual-basic"></a>Co je Visual Basic?
+
+Visual Basic je programovací jazyk zajišťující bezpečnost typů, která je navržena jako snadno učí. Je odvozen z BASIC, což znamená, že "Pro začátečníky univerzální symbolických instrukcí kód".
+
+### <a name="what-is-visual-studio"></a>Co je sada Visual Studio?
+
+Visual Studio je integrované vývojové sady nástrojů podporujících produktivitu pro vývojáře. Si ho představit jako program, který můžete použít k vytvoření aplikací a aplikací.
+
+### <a name="what-is-a-console-app"></a>Co je konzolová aplikace?
+
+Konzolová aplikace přijímá vstupní a zobrazí výstup v okně příkazového řádku, označovaný také jako do konzoly.
+
+### <a name="what-is-net-core"></a>Co je .NET Core?
+
+.NET core je dalším krokem evoluční rozhraní .NET Framework. Pokud rozhraní .NET Framework umožňují sdílení kódu napříč programovacími jazyky, .NET Core přidává možnost sdílení kódu napříč platformami. Ještě lepší je open source. (Rozhraní .NET Framework a .NET Core zahrnují knihovny předem připravených funkce, jakož i common language runtime (CLR), který se chová jako virtuální počítač, ve kterém se spustí váš kód.)
 
 ## <a name="next-steps"></a>Další kroky
 
-Blahopřejeme k dokončení tohoto kurzu! Další i informace o jazyka Visual Basic a Visual Studio IDE, najdete na následujících stránkách.
+Blahopřejeme k dokončení tohoto kurzu! Další ještě víc, najdete v následujícím kurzu.
 
-* [Příručka jazyka Visual Basic](/dotnet/visual-basic/index)
+> [!div class="nextstepaction"]
+> [Výukové video: základy jazyka Visual Basic pro naprosté začátečníky](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
+
+## <a name="see-also"></a>Viz také:
+
 * [Co je nového v jazyce Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
-* [IntelliSense pro soubory s kódem jazyka Visual Basic](visual-basic-specific-intellisense.md)
+* [Technologie IntelliSense pro soubory kódu jazyka Visual Basic](visual-basic-specific-intellisense.md)
 * [Referenční dokumentace jazyka Visual Basic](/dotnet/visual-basic/language-reference/index)
-* [Základy jazyka Visual Basic pro začátečníky absolutní](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507) video kurzu
