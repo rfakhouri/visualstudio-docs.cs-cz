@@ -1,34 +1,33 @@
 ---
 title: Editor obrázků
-ms.date: 11/04/2016
+ms.date: 08/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
-ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e57139c4b24ffc3b615a0794a26b8569339c003
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
-ms.translationtype: HT
+ms.openlocfilehash: bc8582981fc75dd0ce9c0bcb09cc7f865b0e9d43
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978460"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42623960"
 ---
 # <a name="image-editor"></a>editor obrázků
 
-Tento dokument popisuje, jak pracovat s editoru sady Visual Studio Image můžete zobrazit a upravit prostředky textury a obrazu.
+Tento článek popisuje, jak pracovat se sadou Visual Studio **Editor obrázků** můžete zobrazit a upravit prostředky textury a obrazu.
 
- Můžete použít Editor obrázků pro práci s typy bohaté textury a obrázkových formátů, které se používají při vývoji aplikace rozhraní DirectX – to zahrnuje podporu pro image oblíbené formáty souborů a barevné kódování, funkce, jako je alfa kanály a mapování MIP a počet formáty vysoce komprimovaný, hardwarově urychlené textury, které podporuje rozhraní DirectX.
+Můžete použít **Editor obrázků** pro práci s typy bohaté textury a obrázkových formátů, které se používají při vývoji aplikace rozhraní DirectX. To zahrnuje podporu pro image oblíbené formáty souborů a barevné kódování, funkce, jako je alfa kanály a mapování MIP a řadu textury silně komprimovaném, hardwarově urychlené formáty podporujících rozhraní DirectX.
 
 ## <a name="supported-formats"></a>Podporované formáty
 
-Editor obrázků podporuje tyto formáty bitové kopie:
+**Editor obrázků** podporuje následující formáty bitové kopie:
 
 |Název formátu|Přípona názvu souboru|
 |-----------------|-------------------------|
@@ -44,64 +43,83 @@ Editor obrázků podporuje tyto formáty bitové kopie:
 
 Tato část popisuje, jak přidat bitovou kopii do projektu sady Visual Studio a nakonfigurujte ho pro vaše požadavky.
 
-### <a name="to-add-an-image-to-your-project"></a>Chcete-li přidat bitovou kopii do svého projektu
+### <a name="add-an-image-to-your-project"></a>Přidat bitovou kopii do svého projektu
 
-1.  V **Průzkumníka řešení**, otevřete místní nabídku pro projekt, který chcete přidat obrázek a klikněte na tlačítko **přidat** > **nová položka**.
+1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt, který chcete přidat obrázek a klikněte na tlačítko **přidat** > **nová položka**.
 
-2.  V **přidat novou položku** dialogovém okně **nainstalováno**vyberte **grafiky**a pak vyberte příslušný formát pro bitovou kopii. Informace o tom, jak vybrat formát souboru na základě vašich požadavků najdete v následující části.
+2. V **přidat novou položku** dialogovém okně **nainstalováno**vyberte **grafiky**a pak vyberte příslušný formát pro bitovou kopii.
 
-3.  Zadejte **název** souboru obrázku a **umístění** místo se má vytvořit.
+   > [!NOTE]
+   > Pokud se nezobrazí **grafiky** kategorii **přidat novou položku** dialogového okna, je nutné nainstalovat **obrázků a 3D modelů editory** komponenty. Zavřete dialogové okno a potom vyberte **nástroje** > **stažení nástrojů a funkcí** z řádku nabídek otevřete **instalační program sady Visual Studio**. Vyberte **jednotlivé komponenty** kartu a potom vyberte **obrázků a 3D modelů editory** komponentu pod **hry a grafika** kategorie. Vyberte **upravit**.
+   >
+   > ![Obrázků a 3D modelů editory komponenty](media/image-3d-model-editors-component.png)
+   >
+   > Pokud máte **obrázků a 3D modelů editory** komponenty nainstalované a stále nevidíte **grafiky** kategorii šablon, Všimněte si, že tato kategorie se zobrazí jenom pro určité typy projektů, například konzole. aplikace.
 
-4.  Zvolte **přidat** tlačítko.
+   Informace o tom, jak vybrat formát souboru na základě vašich požadavků najdete v tématu [vyberte formát obrázku](#choose-the-image-format).
+
+3. Zadejte **název** souboru bitové kopie a **umístění** místo se má vytvořit.
+
+4. Zvolte **přidat** tlačítko.
 
 ### <a name="choose-the-image-format"></a>Zvolte formát obrázku
 
-V závislosti na tom, jak budete chtít použít bitovou kopii může být vhodnější než jiné určité formáty souborů. Například některé formáty nemusí podporovat funkce, která potřebujete – například průhlednost nebo konkrétní barvu formátu – nebo nemusí poskytnout vhodný komprese pro typ obsahu bitové kopie, které jste naplánovali.
+V závislosti na tom, jak budete chtít použít bitovou kopii může být vhodnější než jiné určité formáty souborů. Například některé formáty nemusí podporovat formátu určitá barva, průhlednost nebo funkce, které potřebujete, třeba. Některé formáty nemusí poskytnout vhodný komprese pro typ obsahu bitové kopie, které jste naplánovali.
 
- Tyto informace můžete zvolit formátu obrázku, který bude vyhovovat vašim potřebám.
+Následující informace můžou pomoct vybrat formátu obrázku, který bude vyhovovat vašim potřebám:
 
- **Rastrový obrázek (BMP)** image formát rastrového obrázku. Nekomprimovaný bitové kopie formátu, který podporuje 24 bitů barev. Průhlednost nepodporují formát rastrového obrázku.
+**Rastrový obrázek (BMP)**
 
- **Obrázek GIF (*.gif)** formát obrázku The formátu GIF (Graphics Interchange). Komprimované LZW, beze ztrát bitové kopie formátu, který podporuje až 256 barev. Nevhodné pro Image, které mají významné množství podrobností, barvy, ale poskytuje dobré Kompresní poměry pro bitové kopie nízká color, které mají vysoký stupeň barva koherence a fotografie.
+Formát obrázku rastrového obrázku. Nekomprimovaný bitové kopie formátu, který podporuje 24 bitů barev. Průhlednost nepodporují formát rastrového obrázku.
 
- **Obrázek JPG (JPG)** formát obrázku odborníky skupiny JPEG (Joint Photographic). Vysoce komprimovaný, míru ztrát bitové kopie formátu, který podporuje 24 bitů barev a je vhodný pro obecné účely komprese imagí, které mají vysoký stupeň koherence barvu.
+**Obrázek GIF (*.gif)**
 
- **Obrázek PNG (.png)** formát obrázku The Portable Network Graphics (PNG). Středně komprimovaný, beze ztrát bitové kopie formátu, který podporuje 24 bitů barev a alfa transparentnost. Je vhodný pro fyzické i umělé bitové kopie, ale neposkytuje Kompresní poměry tak dobré, jako míru ztrát formáty, jako je například JPG či GIF.
+Formát obrázku formátu GIF (Graphics Interchange). Komprimované LZW, beze ztrát bitové kopie formátu, který podporuje až 256 barev. Nevhodné pro Image, které mají významné množství podrobností, barvy, ale poskytuje dobré Kompresní poměry pro bitové kopie nízká color, které mají vysoký stupeň barva koherence a fotografie.
 
- **Obrázek TIFF (.tif)** formát obrázku The Tagged Image File Format (ve formátu TIFF nebo TIF). Flexibilní bitové kopie formátu, který podporuje několik komprese schémat.
+**Obrázek JPG (JPG)**
 
- **Textura DDS (.dds)** formátu textur The DirectDraw Surface (DDS). Vysoce komprimovaný, míru ztrát texturu formátu, který podporuje 24 bitů barev a alfa transparentnost. Jeho Kompresní poměry může být až 8:1. Je založen na komprese textur S3, která mohou na hardwarovou akceleraci dekomprimovat.
+Formát obrázku odborníků skupiny JPEG (Joint Photographic). Silně komprimovaném, míru ztrát bitové kopie formátu, který podporuje 24 bitů barev a je vhodný pro obecné účely komprese imagí, které mají vysoký stupeň koherence barvu.
 
- **Obrázek TGA (TGA)** adaptér grafiky Truevision (TGA) formát obrázku (označované také jako Targa). Obrázek komprimované RLE, beze ztrát formátu, který podporuje obě mapované na barvy (barevná paleta) nebo obrázky až 24 bitů barev a alfa transparentnosti přímo color. Nevhodné pro fotografie a bitové kopie, které mají významné množství podrobností, barvy, ale poskytuje dobré Kompresní poměry pro bitové kopie, které mají dlouhé rozsahy stejné barvy.
+**Obrázek PNG (.png)**
+
+Formát obrázku Portable Network Graphics (PNG). Středně komprimovaný, beze ztrát bitové kopie formátu, který podporuje 24 bitů barev a alfa transparentnost. Je vhodný pro fyzické i umělé bitové kopie, ale neposkytuje Kompresní poměry tak dobré, jako míru ztrát formáty, jako je například JPG či GIF.
+
+**Obrázek TIFF (.tif)**
+
+Formát obrázku Tagged Image File Format (ve formátu TIFF nebo TIF). Flexibilní bitové kopie formátu, který podporuje několik komprese schémat.
+
+**Textura DDS (.dds)**
+
+Formát textury DirectDraw Surface (DDS). Silně komprimovaném, míru ztrát texturu formátu, který podporuje 24 bitů barev a alfa transparentnost. Jeho Kompresní poměry může být až 8:1. Je založen na komprese textur S3, která mohou na hardwarovou akceleraci dekomprimovat.
+
+**Obrázek TGA (TGA)**
+
+Formát obrázku Truevision grafický adaptér (TGA) (označované také jako Targa). Obrázek komprimované RLE, beze ztrát formátu, který podporuje obě mapované na barvy (barevná paleta) nebo obrázky až 24 bitů barev a alfa transparentnosti přímo color. Nevhodné pro fotografie a bitové kopie, které mají významné množství podrobností, barvy, ale poskytuje dobré Kompresní poměry pro bitové kopie, které mají dlouhé rozsahy stejné barvy.
 
 ### <a name="configure-the-image"></a>Obrázek konfigurace
 
-Než začnete pracovat s bitovou kopii, kterou jste právě vytvořili, můžete změnit její výchozí konfiguraci. Například můžete změnit jeho rozměry nebo formát barev, které používá. Informace o konfiguraci těchto a dalších vlastností bitové kopie, naleznete v tématu [obrázku vlastnosti](#ImageProperties).
+Než začnete pracovat s bitovou kopii, kterou jste vytvořili, můžete změnit její výchozí konfiguraci. Například můžete změnit jeho rozměry nebo formát barev, které používá. Informace o konfiguraci těchto a dalších vlastností bitové kopie, naleznete v tématu [obrázku vlastnosti](#image-properties).
 
 > [!NOTE]
->  Před uložením svou práci, nezapomeňte nastavit **formát barev** vlastnosti, pokud chcete použít formát konkrétní barev. Pokud formát souboru podporuje kompresi, můžete upravit nastavení komprese při ukládání souboru poprvé nebo když zvolíte **uložit jako**.
+> Před uložením svou práci, nezapomeňte nastavit **formát barev** vlastnosti, pokud chcete použít formát konkrétní barev. Pokud formát souboru podporuje kompresi, můžete upravit nastavení komprese při ukládání souboru poprvé nebo když zvolíte **uložit jako**.
 
 ## <a name="work-with-the-image-editor"></a>Práce pomocí editoru obrázků
 
-Tato část popisuje způsob použití editoru obrázků k úpravě texturami a obrázky.
+Tato část popisuje způsob použití **Editor obrázků** upravit texturami a obrázky.
 
-### <a name="image-editor-toolbars"></a>Panely nástrojů editoru obrázků
+Příkazy, které mají vliv na stav **Editor obrázků** jsou umístěny na **režim editoru obrázků** nástrojů spolu s pokročilé příkazy. Panel nástrojů se nachází na okraji nejvyššího **Editor obrázků** návrhovou plochu. Kreslení nástrojů jsou umístěny na **Editor obrázků** nástrojů sledovat levému okraji **Editor obrázků** návrhovou plochu.
 
-Editoru obrázků, panely nástrojů obsahovat příkazy, které pomohou při práci s imagemi.
+### <a name="image-editor-mode-toolbar"></a>Režim editoru obrázků panelu nástrojů
 
- Příkazy, které ovlivňují stav editoru obrázků jsou umístěny na **režim editoru obrázků** nástrojů spolu s pokročilé příkazy. Panel nástrojů se nachází nejvyššího okraji plochy návrhu editoru obrázků. Kreslení nástrojů jsou umístěny na **Editor obrázků** nástrojů sledovat levému okraji plochy návrhu editoru obrázků.
+![Panel nástrojů režim editoru obrázků v sadě Visual Studio](../designers/media/digit-tre-modal-toolbar.png)
 
- Tady je **režim editoru obrázků** nástrojů:
-
- ![Modální okno nástrojů editoru obrázků.](../designers/media/digit-tre-modal-toolbar.png)
-
- Tato tabulka popisuje položky panelu **režim editoru obrázků** nástrojů, které jsou uvedeny v pořadí, ve kterém jsou uvedeny zleva doprava.
+Následující tabulka popisuje položky panelu **režim editoru obrázků** nástrojů, které jsou uvedeny v pořadí, ve kterém jsou uvedeny zleva doprava:
 
 |Položka na panelu nástrojů|Popis|
 |------------------|-----------------|
 |**Vyberte**|Umožňuje výběr obdélníkové bitovou kopii. Po výběru oblasti můžete vyjmout, kopírovat, přesunout, škálování, otočení, překlopit nebo ho odstranit. Když je aktivní výběr, nástrojů pro kreslení ovlivní pouze vybrané oblasti.|
 |**Volný výběr**|Umožňuje výběr nestandardní oblasti obrázku. Po výběru oblasti můžete vyjmout, kopírovat, přesunout, škálování, otočení, překlopit nebo ho odstranit. Když je aktivní výběr, nástrojů pro kreslení ovlivní pouze vybrané oblasti.|
-|**Výběr hůlka**|Umožňuje výběr podobně barevné oblasti obrázku. *Tolerance*– to znamená maximální rozdíl mezi sousedící barvy, ve kterém jsou považovány za podobné – dá použít menší nebo větší řadu podobné barvy. Po výběru oblasti můžete vyjmout, kopírovat, přesunout, škálování, otočení, překlopit nebo ho odstranit. Když je aktivní výběr, nástrojů pro kreslení ovlivní pouze vybrané oblasti.|
+|**Výběr hůlka**|Umožňuje výběr podobně barevný oblasti obrázku. *Tolerance*– to znamená maximální rozdíl mezi sousedící barvy, ve kterém jsou považovány za podobné – dá použít menší nebo větší řadu podobné barvy. Po výběru oblasti můžete vyjmout, kopírovat, přesunout, škálování, otočení, překlopit nebo ho odstranit. Když je aktivní výběr, nástrojů pro kreslení ovlivní pouze vybrané oblasti.|
 |**Posouvání**|Umožňuje pohyb image relativně k rámu okna. V **Pan** režimu, vyberte bod na obrázku a potom pohybovat.<br /><br /> Můžete dočasně aktivovat **Pan** režimu stisknutím a podržením **Ctrl** klíč.|
 |**Přiblížení**|Umožňuje zobrazení více či méně detailů image relativně k rámu okna. V **přiblížení** režimu, vyberte bod na obrázku a poté jej přesunutím vpravo dolů zvětšete nebo přesunutím vlevo či nahoru out.<br /><br /> Provést přiblížení nebo oddálení podle stisknutím a podržením **Ctrl** použít kolečko myši nebo klepněte na znaménko plus (**+**) nebo minus (**-**) .|
 |**Na skutečnou velikost**|Pomocí vztahu 1:1 mezi pixely obrázku a pixelů na obrazovce zobrazí obrázek.|
@@ -113,13 +131,13 @@ Editoru obrázků, panely nástrojů obsahovat příkazy, které pomohou při pr
 |**Červený kanál**<br /><br /> **Zelený kanál**<br /><br /> **Modrý kanál**<br /><br /> **Alfa kanál**|Povolí nebo zakáže určité barevného kanálu. **Poznámka:** systematicky povolením nebo zakázáním barevného kanálu, můžete izolovat problémy, které se vztahují na jeden nebo více z nich. Můžete například zjistit, průhlednost nesprávné alfa.|
 |**Na pozadí**|Povolí nebo zakáže zobrazení prostřednictvím transparentní části obrázku na pozadí. Můžete nakonfigurovat, jak se zobrazí na pozadí volbou z následujících možností:<br /><br /> **Šachovnice**<br /> Používá k zobrazení na pozadí jako vzor šachovnice zelenou barvu, která spolu s barvu pozadí zadané. Abyste se mohli lépe poznat transparentní části obrázku můžete použít tuto možnost.<br /><br /> Bílé pozadí<br /> Používá k zobrazení na pozadí bílou barvu.<br /><br /> Černé pozadí<br /> Černá barva se používá k zobrazení na pozadí.<br /><br /> Animovat pozadí<br /> Vzor šachovnice posouvá pomalu. Abyste se mohli lépe poznat transparentní části obrázku můžete použít tuto možnost.|
 |**Vlastnosti**|Střídavě otevře a ukončí **vlastnosti** okna.|
-|**Pokročilé**|Obsahuje další příkazy a možnosti.<br /><br /> **Filtry**<br /><br /> Poskytuje několik běžné filtry image: **černá a bílá**, **rozostření**, **Brighten**, **ztmavit**, **detekce hran**, **Stínovaný**, **Invertovat barvy**, **Ripple**, **sépiový tón**, a **zdokonalení**.<br /><br /> **Grafické moduly**<br /><br /> **Vykreslení s D3D11**<br /> Používá rozhraní Direct3D 11 k vykreslení plochy návrhu editoru obrázků.<br /><br /> **Vykreslení s D3D11WARP**<br /> Používá rozhraní Direct3D 11 Windows Advanced Rasterizační platformě WARP () k vykreslení plochy návrhu editoru obrázků.<br /><br /> **Nástroje**<br /><br /> **Převrátit vodorovně**<br /> Transponuje image kolem jeho horizontal nebo x, osy.<br /><br /> **Převrátit svisle**<br /> Transponuje image kolem své osy svislé nebo y.<br /><br /> **Generovat Mips**<br /> Generuje úrovní MIP pro bitovou kopii. Pokud úrovní MIP ještě neexistuje, jsou znovu vytvořena z nejvyšší úrovně MIP. Všechny změny, které byly provedeny na menší MIP úrovních se ztratí. K uložení úrovní MIP, které jste vygenerovali, je nutné použít *.dds* formátu chcete uložit obrázek.<br /><br /> **Zobrazení**<br /><br /> **Snímková frekvence**<br /> Pokud povolená, zobrazí frekvenci snímků v pravém horním rohu návrhové plochy. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu. **Tip:** můžete použít **Upřesnit** tlačítko poslední příkaz spustit znovu.|
+|**Pokročilé**|Obsahuje další příkazy a možnosti.<br /><br /> **Filtry**<br /><br /> Poskytuje několik běžné filtry image: **černá a bílá**, **rozostření**, **Brighten**, **ztmavit**, **detekce hran**, **Stínovaný**, **Invertovat barvy**, **Ripple**, **sépiový tón**, a **zdokonalení**.<br /><br /> **Grafické moduly**<br /><br /> **Vykreslení s D3D11**<br /> Používá rozhraní Direct3D 11 k vykreslení **Editor obrázků** návrhovou plochu.<br /><br /> **Vykreslení s D3D11WARP**<br /> Používá rozhraní Direct3D 11 Windows Advanced Rasterizační platformě WARP () k vykreslení **Editor obrázků** návrhovou plochu.<br /><br /> **Nástroje**<br /><br /> **Převrátit vodorovně**<br /> Transponuje image kolem jeho horizontal nebo x, osy.<br /><br /> **Převrátit svisle**<br /> Transponuje image kolem své osy svislé nebo y.<br /><br /> **Generovat Mips**<br /> Generuje úrovní MIP pro bitovou kopii. Pokud úrovní MIP ještě neexistuje, jsou znovu vytvořena z nejvyšší úrovně MIP. Všechny změny, které byly provedeny na menší MIP úrovních se ztratí. K uložení úrovní MIP, které jste vygenerovali, je nutné použít *.dds* formátu chcete uložit obrázek.<br /><br /> **Zobrazení**<br /><br /> **Snímková frekvence**<br /> Pokud povolená, zobrazí frekvenci snímků v pravém horním rohu návrhové plochy. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu. **Tip:** můžete použít **Upřesnit** tlačítko poslední příkaz spustit znovu.|
 
- Tady je **Editor obrázků** nástrojů.
+### <a name="image-editor-toolbar"></a>Panel nástrojů editoru obrázků
 
- ![Panel nástrojů editoru obrázků](../designers/media/digit-tre-toolbar.png)
+![Panel nástrojů editoru obrázků](../designers/media/digit-tre-toolbar.png)
 
- Následující tabulka popisuje položky panelu **Editor obrázků** nástrojů, které jsou uvedeny v pořadí, ve kterém jsou uvedeny shora dolů.
+Následující tabulka popisuje položky panelu **Editor obrázků** nástrojů, které jsou uvedeny v pořadí, ve kterém jsou uvedeny shora dolů:
 
 |Položka na panelu nástrojů|Popis|
 |------------------|-----------------|
@@ -136,22 +154,24 @@ Editoru obrázků, panely nástrojů obsahovat příkazy, které pomohou při pr
 
 ### <a name="work-with-mip-levels"></a>Práce s úrovní MIP
 
-Některé formáty obrázků – například DirectDraw Surface (*.dds*) – podpora úrovní MIP pro textury místa úrovně of-Detail lod (Level). Informace o tom, jak vytvořit a pracovat s úrovní MIP, naleznete v tématu [postupy: vytvoření a úprava úrovní MIP](../designers/how-to-create-and-modify-mip-levels.md)
+Některé bitové kopie například formáty DirectDraw Surface (*.dds*), podpory úrovně MIP pro textury místa úrovně of-Detail lod (Level). Informace o tom, jak vytvořit a pracovat s úrovní MIP, naleznete v tématu [postupy: vytvoření a úprava úrovní MIP](../designers/how-to-create-and-modify-mip-levels.md)
 
 ### <a name="work-with-transparency"></a>Práce s transparentnosti
 
-Některé formáty obrázků – například DirectDraw Surface (*.dds*) – podporují průhlednost. Existuje několik způsobů, jak můžete použít transparentnosti, v závislosti na nástroj, který používáte. Chcete-li určit úroveň průhlednosti pro výběr barev, v **vlastnosti** okno, nastavte **A** (alfa) součást výběr barvy. Tady je způsob různé druhy nástroje pro řízení použití průhlednosti:
+Některé bitové kopie například formáty DirectDraw Surface (*.dds*), podporují průhlednost. Existuje několik způsobů, jak můžete použít transparentnosti, v závislosti na nástroj, který používáte. Chcete-li určit úroveň průhlednosti pro výběr barev, v **vlastnosti** okno, nastavte **A** (alfa) součást výběr barvy.
+
+Následující tabulka popisuje, jak různé druhy nástroje pro řízení použití průhlednosti:
 
 |Nástroj|Popis|
 |----------|-----------------|
 |**Tužky**, **štětce**, **rozprašovač**, **řádku**, **obdélník**, **zaoblený obdélník** , **Elipsa**, **Text**|Pro výběr aktivního spolu s bitovou kopii, v blendu **vlastnosti** okna, rozbalte **kanály** skupiny vlastností a nastavte **nakreslit** zaškrtávací políčko na  **Systém Alpha** channel a následně nakreslete normálně.<br /><br /> Kreslení pomocí aktivního výběru a ponechte hodnotu alfa bitové kopie na místě, zrušte **nakreslit** zaškrtávací políčko z **alfa** channel a následně nakreslete normálně.|
 |**Výplň**|Přizpůsobte výběr aktivního spolu s bitovou kopii, prostě vyberte oblasti tak, aby vyplnil.<br /><br /> Chcete použít výběr aktivního – včetně hodnoty alfa kanál – přepsat bitovou kopii, stiskněte a podržte **Shift** a klikněte na tlačítko oblasti tak, aby vyplnil.|
 
-### Vlastnosti bitové kopie<a name="ImageProperties"></a>
+### <a name="image-properties"></a>Vlastnosti bitové kopie
 
 Můžete použít **vlastnosti** okno zadat různé vlastnosti bitové kopie. Například můžete nastavit vlastnosti šířku a výšku obrázku.
 
-Následující tabulka popisuje vlastnosti bitové kopie.
+Následující tabulka popisuje vlastnosti bitové kopie:
 
 |Vlastnost|Popis|
 |--------------|-----------------|
@@ -168,37 +188,35 @@ Následující tabulka popisuje vlastnosti bitové kopie.
 |Hloubka řezu|Aktuální hloubce řezu. Je možné zobrazit pouze první řez; všechny ostatní řezy budou ztraceny, při uložení image.|
 
 > [!NOTE]
->  Vzhledem k tomu, **otočit o** vlastnost se vztahuje na všechny nástroje a vybrané oblasti se vždy zobrazí v dolní části **vlastnosti** okno společně s další vlastnosti nástroje. **Otočit o** je vždy zobrazen, protože celého obrázku je implicitně vybrána, když není žádný výběr nebo aktivní nástroj. Další informace o **otočit o** vlastnost, naleznete v tématu [nástroj vlastnosti](#ToolProperties).
+> Vzhledem k tomu, **otočit o** vlastnost se vztahuje na všechny nástroje a vybrané oblasti se vždy zobrazí v dolní části **vlastnosti** okno společně s další vlastnosti nástroje. **Otočit o** je vždy zobrazen, protože celého obrázku je implicitně vybrána, když není žádný výběr nebo aktivní nástroj. Další informace o **otočit o** vlastnost, naleznete v tématu [nástroj vlastnosti](#tool -properties).
 
-#### <a name="resize-images"></a>Změna velikosti obrázků
+### <a name="resize-images"></a>Změna velikosti obrázků
 
-Tady jsou dva způsoby, jak změnit velikost obrázku. Editor obrázků v obou případech se používá bi lineární interpolace k Převzorkovat na obrázku.
+Existují dva způsoby, jak změnit velikost obrázku. V obou případech platí **Editor obrázků** pomocí interpolace varianty Převzorkovat na obrázku.
 
--   V **vlastnosti** okno, zadejte nové hodnoty **šířka** a **výška** vlastnosti.
+- V **vlastnosti** okno, zadejte nové hodnoty **šířka** a **výška** vlastnosti.
 
--   Vyberte celého obrázku a můžete změnit velikost obrázku ohraničení značky.
+- Vyberte celého obrázku a můžete změnit velikost obrázku ohraničení značky.
 
-### <a name="work-with-tools"></a>Práce s nástroji
+### <a name="selected-regions"></a>Vybrané oblasti
 
-#### <a name="selected-regions"></a>Vybrané oblasti
+Požadovaná nastavení **Editor obrázků** definování oblastí bitové kopie, které jsou aktivní. Aktivní oblasti jsou ovlivněny nástroje a transformace. Když je aktivní výběr, oblasti mimo vybrané oblasti nejsou ovlivněny většiny nástrojů a transformace. Pokud neexistuje aktivní výběr, celého obrázku je aktivní.
 
-Výběr v editoru obrázků definování oblastí bitové kopie, které jsou aktivní, to znamená, oblast ovlivňuje nástroje a transformace. Když je aktivní výběr, oblasti mimo vybrané oblasti nejsou ovlivněny většiny nástrojů a transformace. Pokud neexistuje aktivní výběr, celého obrázku je aktivní.
+Většina nástrojů (**tužky**, **štětce**, **rozprašovač**, **vyplnit**, **gumy**a 2D primitivy) a transformace (**otočit**, **Trim**, **Invertovat barvy**, **Převrátit vodorovně**, a **Převrátit svisle** ) jsou omezené nebo určené aktivního výběru. Nicméně některé nástroje (**kapátko** a **Text**) a transformace (**generovat Mips**) nejsou ovlivněny žádné aktivní výběr. Tyto nástroje vždy chovat, jako je aktivní výběr celého obrázku.
 
-Většina nástrojů –**tužky**, **štětce**, **rozprašovač**, **vyplnit**, **gumy**a 2D primitivy – a transformace –**otočit**, **Trim**, **Invertovat barvy**, **Převrátit vodorovně**, a **Převrátit svisle** – jsou omezené nebo určené aktivního výběru. Nicméně některé nástroje –**kapátko** a **Text**– a transformace –**generovat Mips**– nejsou ovlivněny žádné aktivní výběr; tyto nástroje vždy chovat jako celý bitová kopie je aktivní výběr.
+Když vybíráte oblasti, můžete stisknutím a podržením **Shift** na příslušnou úměrný (čtvereček). V opačném případě není omezen výběr.
 
-Když vyberete oblast, můžete stisknutím a podržením **Shift** na příslušnou úměrný (čtvereček); v opačném případě není omezen výběr.
+#### <a name="resize-selections"></a>Změnit velikost výběru
 
-##### <a name="resize-selections"></a>Změnit velikost výběru
+Po výběru oblasti, můžete změnit velikost nebo jeho obsahu obrázku tak, že změníte velikost značky výběru. Zatímco vybrané oblasti se změnou velikosti, můžete použít následující modifikační klávesy změnit chování vybrané oblasti při změně velikosti:
 
-Po výběru oblasti, můžete změnit velikost nebo jeho obsahu obrázku tak, že změníte velikost značky výběru. Když měníte vybrané oblasti, můžete použít následující modifikační klávesy do vybrané oblasti chování při změně velikosti jeho (stiskněte a podržte klávesu při změně velikosti).
+**CTRL** – zkopíruje obsah vybrané oblasti, než je velikost. To ale původní bitové kopie ponechá beze změny při změně velikosti kopie.
 
-CTRL&mdash;zkopíruje obsah vybrané oblasti, než je velikost. To ale původní bitové kopie ponechá beze změny při změně velikosti kopie.
+**SHIFT** – změní velikost vybrané oblasti výkonový zisk původní velikost.
 
-SHIFT&mdash;změní velikost vybrané oblasti výkonový zisk původní velikost.
+**ALT** – změní velikost výběru oblasti. Kvůli tomu image bez jakýchkoli úprav.
 
-ALT&mdash;změní velikost výběru oblasti. Kvůli tomu image bez jakýchkoli úprav.
-
-Zde se kombinace kláves Neplatný modifikátor:
+Následující tabulka popisuje kombinace kláves Neplatný modifikátor:
 
 |CTRL|SHIFT|ALT|Popis|
 |----------|-----------|---------|-----------------|
@@ -209,13 +227,13 @@ Zde se kombinace kláves Neplatný modifikátor:
 |**CTRL**|||Zkopíruje a pak změní velikost obsahu vybrané oblasti.|
 |**CTRL**|**SHIFT**||Zkopíruje a proporcionálně změní obsah vybrané oblasti.|
 
-#### Vlastnosti nástroje <a name="ToolProperties"></a> 
+### <a name="tool-properties"></a>Vlastnosti nástroje
 
 Nástroj je vybraná, ale můžete použít **vlastnosti** okno a zadejte podrobnosti o tom, jak ovlivňuje bitovou kopii. Například můžete nastavit tloušťku **tužky** nástroje nebo barvu **štětce** nástroj.
 
 Můžete nastavit barvu popředí a barvu pozadí. Obě podporují alfa kanálu poskytnout uživatelský neprůhlednosti. Bude nastavení platit pro všechny nástroje. Pokud používáte myš, levým tlačítkem myši odpovídá barvu popředí a odpovídá pravým tlačítkem myši na barvu pozadí.
 
-Následující tabulka popisuje vlastnosti nástroje.
+Následující tabulka popisuje vlastnosti nástroje:
 
 |Nástroj|Vlastnosti|
 |----------|----------------|

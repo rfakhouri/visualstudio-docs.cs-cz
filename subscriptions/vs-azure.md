@@ -9,12 +9,12 @@ description: Zjistěte, jak aktivovat výhody služeb Azure součástí vašeho 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2f9a0ed97cc0792387e61bfe15e6bb94cd5e1c57
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 20d8474189df34dda9eb2ed7ef2b0e158f06f3b5
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379733"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624277"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Použití Microsoft Azure v předplatných sady Visual Studio
 
@@ -53,21 +53,22 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 1.  Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Vyhledejte dlaždici Azure v části nástroje na výhody stránky a klikněte na tlačítko **aktivovat** odkaz v dolní části dlaždice výhodu.
-
-    ![Dlaždice Azure](_img\vs-azure\vs-azure-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Dlaždice Azure](_img\vs-azure\vs-azure-tile.png)
 
 3.  Vyplňte požadované informace pro vytvoření vašeho předplatného Azure, klikněte na zaškrtávací políčko a přijměte podmínky a ujednání, klikněte na tlačítko **zaregistrovat**:
-
-    ![Registrace Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Registrace Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
 4.  Pokud je váš účet připraven, budete mít možnost Vybrat plán podpory Azure (prodává samostatně) nebo začít pracovat s vaším předplatným Azure.
-
-    ![Probíhá příprava Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Probíhá příprava Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
 
 5.  Řídicí panel Azure načte a při prvním použití, budete mít možnost prohlídku.  Prohlídka se skládá z řady tipy, které se odkazují na více systémů jak provádět různé úlohy a vyhledat důležité informace.  Dokončení nebo zavírání prohlídku se zobrazí řídicí panel Azure.
 
 6.  Záložky [webu Azure Portal](https://portal.azure.com) pro usnadnění přístupu v budoucnu.
-![Řídicí panel Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Řídicí panel Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>Nejčastější dotazy
 

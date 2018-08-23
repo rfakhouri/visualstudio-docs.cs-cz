@@ -1,21 +1,20 @@
 ---
-title: Tipy k výkonu sady Visual Studio a triky
-ms.date: 08/31/2017
+title: Tipy pro zvýšení výkonu
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37433532"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624203"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipy k výkonu sady Visual Studio a triky
 
@@ -40,7 +39,13 @@ Visual Studio vás upozorní žlutě panelu při obnovení automatické dokument
 
 1. Na **projekty a řešení** > **Obecné** stránce, zrušte zaškrtnutí možnosti **dokumentů u načtení řešení znovu otevřít**.
 
-Pokud zakážete automatické obnovení, přejděte k souborům, který chcete spustit rychlý způsob je pomocí [přejít na](../ide/go-to.md). Vyberte **upravit** > **přejít na** > **přejít na vše**, nebo stiskněte klávesu **Ctrl**+**T** .
+Pokud zakážete automatické obnovení, přejděte k souborům, který chcete spustit rychlý způsob je pomocí jedné z [přejít na](../ide/go-to.md) příkazy:
+
+- Obecnou **přejít na** funkce, vyberte **upravit** > **přejít na** > **přejít na vše**, nebo stiskněte klávesu  **CTRL**+**T**.
+
+- V sadě Visual Studio 2017 verze 15,8 a novější, můžete přeskočit na poslední úpravy umístění v řešení pomocí **upravit** > **přejít na** > **přejít na poslední upravit umístění**, nebo stisknutím klávesy **Ctrl**+**Shift**+**Backspace**.
+
+- V sadě Visual Studio 2017 verze 15,8 a novější, použijte **přejít na poslední soubor** zobrazíte seznam naposledy navštívený souborů v řešení. Vyberte **upravit** > **přejít na** > **přejít na poslední soubor**, nebo stiskněte klávesu **Ctrl** + **1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Konfigurovat možnosti ladění
 

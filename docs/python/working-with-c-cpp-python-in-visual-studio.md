@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 289d22798b243a7276d74257b0d3b1f7213b3a32
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 4de603bd1daec4d50f3f57eaa28cdff2316e8e8c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586557"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624040"
 ---
 # <a name="create-a-c-extension-for-python"></a>Vytvoření rozšíření C++ pro Python
 
@@ -48,7 +48,7 @@ Další informace najdete v tématu [podpora instalace Pythonu pro Visual Studio
 
 1. Vytvoření nového projektu Pythonu v sadě Visual Studio tak, že vyberete **souboru** > **nový** > **projektu**. Vyhledejte "Python", vyberte **aplikace v Pythonu** šablony, nabízí vhodný název a umístění a vyberte **OK**.
 
-1. Práce s jazykem C++ vyžaduje, že používáte interpret Pythonu 32 bitů (doporučeno Python 3.6). V **Průzkumníka řešení** okno sady Visual Studio, rozbalte uzel projektu a potom rozbalte položku **prostředí Pythonu** uzlu. Pokud nevidíte 32-bit prostředí jako výchozí (tučné písmo nebo označené pomocí **globální výchozí nastavení**), postupujte podle pokynů [vyberte prostředí Pythonu pro projekt](selecting-a-python-environment-for-a-project.md). Pokud nemáte k dispozici 32-bit překladač nainstalovaný, přečtěte si téma [interpretů Pythonu nainstalujte](installing-python-interpreters.md).
+1. Práce s jazykem C++ vyžaduje, že používáte interpret Pythonu 32-bit (Python 3.6 nebo novější doporučené). V **Průzkumníka řešení** okno sady Visual Studio, rozbalte uzel projektu a potom rozbalte položku **prostředí Pythonu** uzlu. Pokud nevidíte 32-bit prostředí jako výchozí (tučné písmo nebo označené pomocí **globální výchozí nastavení**), postupujte podle pokynů [vyberte prostředí Pythonu pro projekt](selecting-a-python-environment-for-a-project.md). Pokud nemáte k dispozici 32-bit překladač nainstalovaný, přečtěte si téma [interpretů Pythonu nainstalujte](installing-python-interpreters.md).
 
 1. V projektu *.py* soubor, vložte následující kód, který benchmarks výpočtu hyperbolický tangens (implementováno bez použití matematické knihovny pro snazší porovnání). Můžete zadat kód ručně, aby se některé z prostředí [Python funkce úprav](editing-python-code-in-visual-studio.md).
 

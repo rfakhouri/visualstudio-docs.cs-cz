@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1629e98c6d0afa4d259b7b983d1efe0633321c13
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468725"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624037"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Kurz: Zjistěte, jak ladit pomocí sady Visual Studio
 
@@ -31,7 +31,7 @@ Tento článek obsahuje představení funkcí v ladicím programu sady Visual St
 |---------|---------|
 |  ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video")  |    [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) ladění, která zobrazuje podobný postup. |
 
-Přestože je ukázkovou aplikaci C# a C++, funkce platí pro Visual Basic, JavaScript a jinými jazyky podporovanými sady Visual Studio (Pokud není uvedeno jinak). Snímky obrazovky jsou v jazyce C#.
+Přestože je ukázkovou aplikaci C# a C++, funkce platí pro Visual Basic, JavaScript a jinými jazyky podporovanými sady Visual Studio (Pokud není uvedeno jinak). Snímky obrazovky jsou v jazyce C#. Chcete-li přepnout mezi C# a C++ ukázkový kód, pomocí filtru jazyk v pravém horním rohu stránky.
 
 V tomto kurzu se naučíte:
 
@@ -324,7 +324,7 @@ Většinou, klávesové zkratky tady používáme, protože je dobrým způsobem
 
 ## <a name="navigate-code-using-run-to-click"></a>Vyhledání kódu pomocí běžet do kliknutí
 
-5. V editoru kódu, přejděte dolů a najeďte myší `Console.WriteLine` – metoda (`std::cout` v jazyce C++) v `Triangle` třídy do zelené **běžet do kliknutí** tlačítko ![běžet do kliknutí] (../debugger/media/dbg-tour-run-to-click.png " RunToClick") se zobrazí na levé straně.
+5. V editoru kódu, přejděte dolů a najeďte myší `Console.WriteLine` – metoda (`std::cout` v jazyce C++) v `Triangle` třídy do zelené **běžet do kliknutí** tlačítko ![běžet do kliknutí](../debugger/media/dbg-tour-run-to-click.png " RunToClick") se zobrazí na levé straně.
 
      ![Použít Run to Click funkce](../debugger/media/get-started-run-to-click.png "běžet do kliknutí")
 

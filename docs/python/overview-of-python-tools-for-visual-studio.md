@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 368809792e05ad418fccf65640ae99470128f6aa
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 0176b596ecf432ab74a29c29d4af6848ee1d4820
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468774"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624062"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Práce s využitím Pythonu v sadě Visual Studio ve Windows
 
@@ -84,7 +84,7 @@ Visual Studio vám pomůže spravovat složitosti projektu roste v čase. Projek
 
 Šablony projektů a položek automatizaci procesu nastavení různé typy projektů a souborů, šetří cenný čas a homogenního vám od správy podrobnosti složité a náchylné k chybě. Visual Studio poskytuje šablony pro web, Azure, datové vědy, konzoly a jiné typy projektů, spolu s šablony pro soubory, jako třídy, testy jednotek, konfigurace Azure web, HTML a dokonce i aplikace Django Python.
 
-[![Šablony projektů a položek Python v sadě Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png)
+[![Šablony projektů a položek Python v sadě Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Další informace:
 
@@ -114,7 +114,7 @@ Další informace:
 
 Profilace zkoumá, jak je právě doba trvání v rámci vaší aplikace. Visual Studio podporuje profilace se na základě CPython interprety a nabízí možnost k porovnání výkonu mezi během různých spuštění profilování.
 
-[![Visual Studio profiler výsledy projektu Pythonu](media/profiling-results.png)](media/profiling-results.png)
+[![Visual Studio profiler výsledy projektu Pythonu](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Další informace:
 

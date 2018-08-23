@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: fcdb8a25f9f82f317a1fcf5de1dd50a90bf6c4a7
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6e0bd322b200fba3bf41f99c4119cbe287ce2967
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586454"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42624143"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing pomocí sady Visual Studio 2017
 
@@ -59,29 +59,42 @@ V některých případech budete muset explicitně obnovit balíčky NuGet odkaz
 
 ## <a name="configure-live-unit-testing"></a>Konfigurace Live Unit Testing
 
-Live Unit Testing můžete nakonfigurovat tak, že vyberete **nástroje** > **možnosti** z nejvyšší úrovně nabídky sady Visual Studio a pak vyberete **Live Unit Testing** v levém podokně **možnosti** dialogového okna. Následující obrázek znázorňuje Live Unit Testing možnosti konfigurace k dispozici v dialogovém okně.
+Live Unit Testing můžete nakonfigurovat tak, že vyberete **nástroje** > **možnosti** z nejvyšší úrovně řádku nabídek sady Visual Studio a pak vyberete **Live Unit Testing** v levém podokně **možnosti** dialogového okna.
+
+> [!TIP]
+> Jakmile povolíte službu Live Unit Testing (naleznete v části Další [spustit, pozastavit a zastavit Live Unit Testing](#start-pause-and-stop-live-unit-testing)), můžete také otevřít **možnosti** dialogové okno tak, že vyberete **testovací**  >  **Live Unit Testing** > **možnosti**.
+
+Následující obrázek znázorňuje Live Unit Testing možnosti konfigurace k dispozici v dialogovém okně:
 
   ![Image](./media/lut-options.png)
 
 Konfigurovatelných možností, které patří:
 
-- Určuje, zda Live Unit Testing pozastaví při řešení je sestavení a ladění
+- Určuje, zda Live Unit Testing pozastaví při řešení je sestavení a ladění.
 
 - Určuje, zda Live Unit Testing pozastaví při napájení z baterie systému klesne pod zadanou prahovou hodnotu.
+
 - Určuje, zda Live Unit Testing spustí automaticky při otevření řešení.
+
+- Jestli se má povolit ladění symbolů a generování komentáře dokumentace XML.
+
 - Adresáře, ve kterém k uložení trvalá data.
-   **Odstranit trvalá Data** tlačítko umožňuje odstranit všechny trvalá data. To je užitečné, když Live Unit Testing je chovat nepředvídatelnými nebo neočekávané způsobem, což naznačuje, že došlo k poškození trvalá data.
+
+- Možnost odstranit všechny trvalá data. To je užitečné, když Live Unit Testing je chovat nepředvídatelnými nebo neočekávané způsobem, což naznačuje, že došlo k poškození trvalá data.
+   
 - Interval, po jejímž uplynutí testovacího případu vyprší časový limit; Výchozí hodnota je 30 sekund.
+
 - Maximální počet testovacích procesů, které vytvoří Live Unit Testing.
+
 - Maximální množství paměti, které využívají Live Unit Testing procesy.
+
 - Úroveň informací, zapsán do Live Unit Testing **výstup** okna.
+
    Mezi možnosti patří žádné protokolování (**žádný**), chybové zprávy pouze (**chyba**), chybové zprávy a informační zprávy (**informace o**, výchozí hodnota), nebo všechny podrobnosti (**Verbose** ).
 
-Můžete také zobrazit podrobný výstup v Live Unit Testing **výstup** okna tak, že přiřadíte hodnotu "1" do proměnné prostředí na úrovni uživatele s názvem `VS_UTE_DIAGNOSTICS` a restartování sady Visual Studio.
+   Můžete také zobrazit podrobný výstup v Live Unit Testing **výstup** okna tak, že přiřadíte hodnotu "1" do proměnné prostředí na úrovni uživatele s názvem `VS_UTE_DIAGNOSTICS`a následného restartování sady Visual Studio.
 
-Chcete-li zachytit podrobné zprávy MSBuild protokolu z Live Unit Testing do souboru, nastavte `LiveUnitTesting_BuildLog` individuální prostředí proměnnou pro název souboru, který má obsahovat protokol.
-
-Jakmile povolíte službu Live Unit Testing (naleznete v části Další [spustit, pozastavit a zastavit Live Unit Testing](#start-pause-and-stop-live-unit-testing), můžete také otevřít **možnosti** dialogové okno tak, že vyberete **testovací**  >  **Live Unit Testing** > **možnosti**.
+   Chcete-li zachytit podrobné zprávy protokolu MSBuild z Live Unit Testing v souboru, nastavte `LiveUnitTesting_BuildLog` individuální prostředí proměnnou pro název souboru, který má obsahovat protokol.
 
 ## <a name="start-pause-and-stop-live-unit-testing"></a>Spuštění, pozastavení a zastavit Live Unit Testing
 

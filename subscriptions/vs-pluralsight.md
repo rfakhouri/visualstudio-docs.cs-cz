@@ -9,12 +9,12 @@ description: Další informace o předplatné školení Pluralsight, který je s
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4ae10da644f61d518370605322fee842d3a4e4a7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 5f1582023032dc3581090937d18feddf428033ca
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380789"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624308"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight – školení v předplatných sady Visual Studio
 
@@ -27,8 +27,8 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
 
 ## <a name="activation-steps"></a>Postup aktivace
 1. Pokud chcete předplatné aktivovat, připojte se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a klikněte na **získat kód** odkaz na dlaždici výhody Pluralsightu, umístěné v části vývoj Professional.
-
-    ![Výhody pro Pluralsight dlaždice](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Výhody pro Pluralsight dlaždice](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
 
     > [!IMPORTANT]
     > Po kliknutí na odkaz "Kopie kódu" na dlaždici výhody Pluralsightu, může se zobrazit následující zpráva:
@@ -36,40 +36,40 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
     > **"Poznámka: Pokud jste dříve aktivovali jinou nabídku od Pluralsightu prostřednictvím předplatného sady Visual Studio, tento kód vám neumožní vytvořit nový účet Pluralsight."**
 
 2. Obdržíte oznámení, že kód kupónu se úspěšně načetl.  Klikněte na tlačítko **aktivovat**.
-
-    ![Aktivovat výhody pro Pluralsight](_img\vs-pluralsight\vs-pluralsight-activate.png)
+    > [!div class="mx-imgBorder"]
+    > ![Aktivovat výhody pro Pluralsight](_img\vs-pluralsight\vs-pluralsight-activate.png)
 
 3.  Budete přesměrováni na stránku Pluralsight, která je zahrnutá ve prospěch s vaším předplatným sady Visual Studio.  V tomto příkladu aktivujeme výhoda, opatřeného členství v programu Visual Studio Dev Essentials. Klikněte na tlačítko **aktivaci vaší výhody**.
-
-    ![Cílová stránka Pluralsight VSDE](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
+    > [!div class="mx-imgBorder"]
+    > ![Cílová stránka Pluralsight VSDE](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
 
 4.  Na stránce aktivace:
     - Zadejte kontaktní údaje ve formuláři
     - Klikněte na zaškrtávací políčko pro přijetí podmínek použití a ochrana osobních údajů zásad
     - Klikněte na tlačítko **vyjadřuji souhlas výhodou, aktivujte**.
-
-    ![Aktivace výhody pro Pluralsight](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
-
-    ![Výhody pro Pluralsight podmínky](_img\vs-pluralsight\vs-pluralsight-terms.png)
+    > [!div class="mx-imgBorder"]
+    > ![Aktivace výhody pro Pluralsight](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
+    > [!div class="mx-imgBorder"]
+    > ![Výhody pro Pluralsight podmínky](_img\vs-pluralsight\vs-pluralsight-terms.png)
 
 5.  To může chvíli trvat, nastavení vašeho účtu.  Jakmile, která se dokončí, zobrazí na stránce potvrzení a dostanou e-mail s informacemi o přihlášení.  E-mailu bude odesílat na alias, že jste zadali při vytváření účtu.  Nezapomeňte si zkontrolovat vaše Nevyžádaná pošta nebo nevyžádané pošty složky e-mailu, pokud se vám nedaří najít zprávu.
-
-    ![Výhody pro Pluralsight potvrzení](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
+    > [!div class="mx-imgBorder"]
+    > ![Výhody pro Pluralsight potvrzení](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
 
     > [!NOTE]
     > Pokud váš účet nemá oprávnění využívat nové nabídky, se popisují e-mailu, který jste dostali, že nastal problém s vytvořením účtu, protože nemá oprávnění.  Bude také obsahovat informace, které umožňují obraťte se na tým podpory od Pluralsight, kdo může odpověděli na všechny otázky, které jste uzavřeli o vašem účtu.
 
 6.  Po úspěšném vytvoření účtu, který jste dostali e-mailu bude obsahovat vaše uživatelské jméno a vyzve k vytvoření hesla.  Zadejte heslo, zadejte ho znovu a potvrďte ho a klikněte na tlačítko **Přihlaste se k Pluralsight**.
-
-    ![Výhody pro Pluralsight Uvítacího e-mailu](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
+    > [!div class="mx-imgBorder"]
+    > ![Výhody pro Pluralsight Uvítacího e-mailu](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
 
 7.  Zadejte uživatelské jméno v uvítacím e-mailu a hesla, které jste právě vytvořili a klikněte na tlačítko **přihlášení**.
-
-    ![Výhody pro Pluralsight přihlášení](_img\vs-pluralsight\vs-pluralsight-login.png)
+    > [!div class="mx-imgBorder"]
+    > ![Výhody pro Pluralsight přihlášení](_img\vs-pluralsight\vs-pluralsight-login.png)
 
 8.  Je to!  Teď jste připravení začít s učení s tisíci kurzů Pluralsight!
-
-    ![Domovská stránka výhody Pluralsightu](_img\vs-pluralsight\vs-pluralsight-home.png)
+    > [!div class="mx-imgBorder"]
+    > ![Domovská stránka výhody Pluralsightu](_img\vs-pluralsight\vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>Způsobilost
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
@@ -81,9 +81,9 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | 3 měsíce |Ne|
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                  |NENÍ K DISPOZICI|
 | Visual Studio Enterprise (NFR<sup>1</sup> ) | Program                                       | Není k dispozici                                  |NENÍ K DISPOZICI|
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou partnera (MVP), ředitel pro oblast (RD), partnera společnosti Microsoft Network (MPN), FTE Imagine.* 
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou partnera (MVP), ředitel pro oblast (RD), partnera společnosti Microsoft Network (MPN), FTE Imagine.*
 
-<sup>2</sup>*výhody Pluralsight je jedno použití pouze vázané na uživatele.    Jakmile odběratele využívá výhody, ne obnovit. Viz nejčastější dotazy níže pro další podrobnosti.  Po vypršení platnosti předplatného Pluralsight mohou mít nárok na 12měsíční přístup k 50 vybraných kurzů Pluralsight v jednom ze tří oblastí studie.*
+<sup>2</sup>*výhody Pluralsight je jedno použití pouze vázané na uživatele.  Jakmile odběratele využívá výhody, ne obnovit. Viz nejčastější dotazy níže pro další podrobnosti.  Po vypršení platnosti předplatného Pluralsight mohou mít nárok na 12měsíční přístup k 50 vybraných kurzů Pluralsight v jednom ze tří oblastí studie.*
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

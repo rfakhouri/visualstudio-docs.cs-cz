@@ -9,12 +9,12 @@ description: Další informace o účtu pro vývojáře Windows, součástí va�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f134289fbc110fa68b4600841a15ec118bcb5223
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382448"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624018"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Účet pro vývojáře Windows v předplatných sady Visual Studio
 
@@ -29,12 +29,12 @@ Doporučujeme vytvořit okno prohlížeče "privátní" pro tento proces.  Třeb
 1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Vyhledejte dlaždici vývojářský účet pro Windows v části nástroje a klikněte na **získat kód** odkaz v dolní části dlaždice výhodu.  Zkopírujte kód do schránky a pak klikněte na **aktivovat**.
-
-    ![Dlaždice výhoda pro vývojáře Windows](_img\vs-windows-dev\vs-windows-dev-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Dlaždice výhoda pro vývojáře Windows](_img\vs-windows-dev\vs-windows-dev-tile.png)
 
 2. Na [ https://developer.microsoft.com ](https://developer.microsoft.com) lokality lze zahájit proces registrace.  Klikněte na tlačítko **zaregistrovat** pokračujte.
-
-    ![Registrační Benefit pro vývojáře Windows](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Registrační Benefit pro vývojáře Windows](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
 
 3. Přihlaste se ke svému předplatnému.  Pokud máte více účtů, vyberte si ten spojené s předplatným Enterprise.
 4. Na další stránce vyberte zemi nebo oblast, kde bydlíte nebo tam, kde se nachází vaše podnikání a potom klikněte na tlačítko **Další**.
@@ -43,8 +43,8 @@ Doporučujeme vytvořit okno prohlížeče "privátní" pro tento proces.  Třeb
 7. Zadejte své kontaktní informace a jazyk upřednostňované e-mailů a potom klikněte na **Další**.
 8. Můžete být vyzváni k ověření své heslo.  Zadejte ho a klikněte na tlačítko **přihlášení**.
 9. Registrace – stránka platba, vložte kód, který jste si zkopírovali do pole propagační kód.  Na stránce se aktualizuje a ukazují, že *je nutné žádné zaplatit*.  Klikněte na tlačítko **Další**.
-
-    ![Registrační Benefit pro vývojáře Windows](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Registrační Benefit pro vývojáře Windows](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
 
 10. Projděte si informace o vašem účtu, zkontrolujte smlouva k vývojářským aplikace a klikněte na zaškrtávací políčko označující svůj souhlas s podmínkami a ujednáními.  Pak klikněte na tlačítko **Dokončit**.
 11. Klikněte na tlačítko **přejít na řídicí panel** chcete začít používat váš účet vývojáře Windows!
@@ -59,7 +59,7 @@ Doporučujeme vytvořit okno prohlížeče "privátní" pro tento proces.  Třeb
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici                                            |  NENÍ K DISPOZICI|
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services pro vývojáře.   Vyloučí: Microsoft Partner Network (MPN), představte si vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD), MCT Software & Services.*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services pro vývojáře. Vyloučí: Microsoft Partner Network (MPN), představte si vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD), MCT Software & Services.*
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

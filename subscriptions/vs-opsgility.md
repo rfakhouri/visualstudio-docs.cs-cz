@@ -9,12 +9,12 @@ description: Přečtěte si Opsgility školení výhody, které jsou součástí
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f166fe0555bf7eea68927d8c93cdea9790561368
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380307"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42623893"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Na webu Opsgility výhoda v předplatných sady Visual Studio
 
@@ -26,17 +26,17 @@ Vybraná předplatná sady Visual Studio zahrnují jeden rok přístupu ke škol
 2.  Vyhledejte na webu Opsgility dlaždici v části nástroje na stránce výhod a klikněte na tlačítko **aktivovat** odkaz v dolní části dlaždice výhodu.
 
 3.  Vaše Opsgility výhodu využít, klikněte na **získat kód** odkaz v dolní části dlaždice výhodu.   Obdržíte oznámení, že kód kupónu se úspěšně načetl.  Klikněte na tlačítko **aktivovat** pokračovat.
-
-    ![Na webu Opsgility výhodu dlaždice](_img\vs-opsgility\vs-opsgility-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Na webu Opsgility výhodu dlaždice](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
 4.  Budete přesměrováni na [Online školení Opsgility pro Visual Studio Enterprise](https://www.opsgility.com/vse) cílovou stránkou.  (Vám může být nabídnuta možnost zahájit relaci konverzace se specialistou podpory.  Pokud ho nechcete spustit chat, můžete minimalizovat tohoto okna.)  Vyplňte požadované kontaktní informace a klikněte na tlačítko **zaregistrovat**.
-
-    ![Cílová stránka na webu Opsgility výhody](_img\vs-opsgility\vs-opsgility-registration.png)
+    > [!div class="mx-imgBorder"]
+    > ![Cílová stránka na webu Opsgility výhody](_img\vs-opsgility\vs-opsgility-registration.png)
 
 5.  To je všechno je to!  Jste připraveni začít s výukou.  Abyste mohli začít, je seznam stop navrhované učení k dispozici na levé straně stránky.  Užijte si!
-
-    ![Na webu Opsgility výhodu domovské stránky](_img\vs-opsgility\vs-opsgility-home-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Na webu Opsgility výhodu domovské stránky](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
 ## <a name="eligibility"></a>Způsobilost
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |

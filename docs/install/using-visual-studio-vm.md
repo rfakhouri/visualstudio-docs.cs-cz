@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f00291fded1f289d07aafd6124a96f38d3d99b78
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 2fa13718a27b2840ee027a20238702fccd2bc8f4
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276803"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42624156"
 ---
 # <a id="top"> </a> Visual Studio Image v Azure
 
@@ -34,11 +34,11 @@ Image pro aktuální hlavní verze, Visual Studio 2017 a Visual Studio 2015, naj
 
 | Prodejní verze                                              | Edice                     |     Verze produktu     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Sady Visual Studio 2017: Nejnovější verzi (verze 15.7)                    |    Organizace, Community     |      Verze 15.7.5     |
+| Sady Visual Studio 2017: Nejnovější verzi (verze 15.8)                    |    Organizace, Community     |      Verze 15.8.0     |
 | Visual Studio 2017: Nejnovější verze Preview (verze 15.8 ve verzi Preview 5) |    Organizace, Community     |      Verze 15.8.5     |
-|         Visual Studio 2017: RTW                              |    Organizace, Community     |      Verze 15.0.15    |
+|         Visual Studio 2017: RTW                              |    Organizace, Community     |      Verze 15.0.17    |
 |   Sady Visual Studio 2015: Nejnovější verzi (aktualizace 3)                      |    Organizace, Community     |  Verze 14.0.25431.01  |
-|         Visual Studio 2015: RTW                              |             Žádné             | (Platnost pro obsluhu) |
+|         Visual Studio 2015: RTW                              |             Žádná             | (Platnost pro obsluhu) |
 
 > [!NOTE]
 > V souladu s Microsoft zásady obsluhy původně vydaná verze (RTW) sady Visual Studio 2015 vypršela pro obsluhu. Visual Studio 2015 Update 3 je jediný zbývající verze nabízí pro produktovou řadu Visual Studio 2015.

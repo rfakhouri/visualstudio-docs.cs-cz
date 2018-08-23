@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92097e70b026a23062f7a67ff521d60312096d5c
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 72cb3872462d4e70cdab7510385a5e903af3f7f5
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341843"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42623906"
 ---
 # <a name="install-python-interpreters"></a>Instalace interpretů Pythonu
 
@@ -34,7 +34,7 @@ Sada Visual Studio zobrazí všechny známé prostředí v [ **prostředí Pytho
 
 | Interpret | Popis |
 | --- | --- |
-| [CPython](https://www.python.org/) | "Nativní" a nejčastěji používaná interpret, dostupné v 32bitové a 64bitové verze (32bitová verze doporučeno). Zahrnuje nejnovější funkce jazyků, maximální kompatibility balíček Pythonu, plná podpora ladění a zprostředkovatele komunikace s [IPython](http://ipython.org/). Viz také: [použít Python 2 nebo Python 3?](http://wiki.python.org/moin/Python2orPython3). Mějte na paměti, že Visual Studio 2015 a starší nepodporují Python 3.6 a může poskytnout chyba **nepodporované python verze 3.6**. Použití Pythonu 3.5 nebo starší místo. |
+| [CPython](https://www.python.org/) | "Nativní" a nejčastěji používaná interpret, dostupné v 32bitové a 64bitové verze (32bitová verze doporučeno). Zahrnuje nejnovější funkce jazyků, maximální kompatibility balíček Pythonu, plná podpora ladění a zprostředkovatele komunikace s [IPython](http://ipython.org/). Viz také: [použít Python 2 nebo Python 3?](http://wiki.python.org/moin/Python2orPython3). Mějte na paměti, že Visual Studio 2015 a starší nepodporují Python 3.6 + a může dojít k chybám jako **nepodporované python verze 3.6**. Použití Pythonu 3.5 nebo starší místo. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Implementace .NET jazyka Python, dostupné v 32bitové a 64bitové verze poskytuje C# /F # nebo Visual Basic zprostředkovatele komunikace s objekty, přístup k rozhraní API pro .NET, standardní ladění Pythonu (ale není C++ ladění v kombinovaném režimu) a smíšené IronPython / C# ladění. IronPython, ale nepodporuje virtuální prostředí. |
 | [Anaconda](https://www.continuum.io) | Platforma pro otevřete datovou vědu službu Python a obsahuje nejnovější verzi CPython a většina obtížné instalační balíčky. Doporučujeme, abyste ho rozhodnete nemůže jinak. |
 | [PyPy](http://www.pypy.org/) | Vysoce výkonné trasování JIT, provádění Python, který je vhodný pro dlouho běžící programy a situacích, kde identifikujete výkonu problémy, ale nemůžu najít další řešení. Funguje s Visual Studio, ale s omezenou podporu pro pokročilé funkce ladění. |

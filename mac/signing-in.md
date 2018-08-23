@@ -1,46 +1,46 @@
 ---
 title: Přihlášení k sadě Visual Studio pro Mac
 description: Jak se přihlásit k sadě Visual Studio pro Mac
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 066f91db52a60cd524df3c3d5328acd45b11443c
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a568ab0f49e3b6e0b92ecd97040ad8fe1d71ac7d
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995803"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42623983"
 ---
 # <a name="signing-in-to-visual-studio-for-mac"></a>Přihlášení k sadě Visual Studio pro Mac
 
-Při spuštění sady Visual Studio pro Mac poprvé, se zobrazí výzva k přihlášení pomocí účtu Microsoft. Použijte účet Microsoft, která je připojena k licenci, která chcete použít. Pokud nemáte účet Microsoft, přečtěte si téma [jak přihlásím účet](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account). 
+Při spuštění sady Visual Studio pro Mac poprvé, budete vyzváni k přihlášení pomocí účtu Microsoft. Pomocí účtu Microsoft, který je připojený k licenci, kterou chcete použít. Pokud nemáte účet Microsoft, přečtěte si téma [jak se přihlásím k účtu](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account). 
 
-Pokud se rozhodnete není okamžitou přihlášení, budete moci používat zkušební kopie po dobu 30 dnů. Po 30 dnech se musí přihlásit k pokračovat v používání vaší kopie Visual Studio pro Mac 
+Pokud se rozhodnete, aby nedošlo k protokolování přímo okamžitě, budete moct používat zkušební kopii po dobu 30 dnů. Po 30 dnech musíte být přihlášení k dál používat vaše kopie sady Visual Studio pro Mac 
 
 ## <a name="how-to-sign-in-to-visual-studio-for-mac"></a>Jak se přihlásit k sadě Visual Studio pro Mac
 
-Ujistěte se, že jste připojení k Internetu před přihlášením k sadě Visual Studio for Mac. Odběry lze aktivovat pouze v režimu online.
+Ujistěte se, že jste připojeni k Internetu před přihlášením k aplikaci Visual Studio pro Mac. Předplatná lze aktivovat pouze online.
  
-Chcete-li přihlásit se k sadě Visual Studio pro Mac, proveďte následující kroky:
+Přihlásit se k sadě Visual Studio pro Mac, proveďte následující kroky:
 
-1. Klikněte na přihlašovací odkaz na úvodní stránce k zobrazení dialogu účty a stiskněte klávesu **přihlásit** tlačítko:
+1. Klikněte na přihlašovací odkaz na úvodní stránce zobrazíte dialogové okno účty a stiskněte klávesu **Sign In** tlačítka:
 
     ![Dialogové okno účty v sadě Visual Studio pro Mac](media/signing-in-image12.png)
 
-2. Zadejte své přihlašovací údaje Microsoft:
+2. Zadejte svoje přihlašovací údaje Microsoft:
 
-    ![Dialogové okno přihlašovací údaje Microsoft](media/signing-in-image13.png)
+    ![Dialogové okno přihlašovacích údajů společnosti Microsoft](media/signing-in-image13.png)
 
-    Nelze použít pověření Xamarin pro přihlášení k sadě Visual Studio for Mac.
+    Xamarin pověření nelze použít k přihlášení do sady Visual Studio pro Mac.
 
-3.  Jakmile budete mít úspěšně přihlášen, zobrazí se váš typ licence. Z tohoto dialogového okna můžete přidat další účty Microsoft, které byste mohli, že používáte:
+3.  Po přihlášení úspěšně, zobrazí se váš typ licence. Z tohoto dialogového okna můžete přidat další účty Microsoft, které je vhodné použít:
 
     ![Úspěšné přihlášení.](media/signing-in-image14.png)
 
 ## <a name="adding-multiple-user-accounts"></a>Přidání víc uživatelských účtů
 
-Visual Studio pro Mac podporuje přidávání více účtů ke svému účtu individuální nastavení. Tyto další účty vám umožní přístup k prostředkům, jako je Azure, z libovolného přidání účtu. 
+Visual Studio for Mac podporuje přidání více účtů vaším účtem přizpůsobení. Tyto další účty vám umožní přístup k prostředkům, jako je Azure, z libovolného přidání účtu. 
 
-Pokud chcete přidat další uživatelské účty, postupujte podle kroků v [jak se přihlásit k sadě Visual Studio pro Mac](#how-to-sign-in-to-visual-studio-for-mac) části.
+Pokud chcete přidat další uživatelské účty, postupujte podle kroků v [postup přihlášení k sadě Visual Studio pro Mac](#how-to-sign-in-to-visual-studio-for-mac) oddílu.
 

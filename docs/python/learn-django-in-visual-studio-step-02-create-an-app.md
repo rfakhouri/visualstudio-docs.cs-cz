@@ -1,7 +1,7 @@
 ---
 title: Kurz – další Django v sadě Visual Studio, krok 2
 description: Názorný postup základy Django v rámci projektů sady Visual Studio, konkrétně postup vytvoření aplikace a používání zobrazení a šablony.
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ae6c08942c3dccc735104c6e5221989290c6afd4
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637559"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624173"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Vytvoření aplikace Django s zobrazení a šablony
 
@@ -52,7 +52,7 @@ Pomocí některé z metod, vytvořte aplikaci s názvem "HelloDjangoApp". Výsle
 | --- | --- |
 | **\_\_init\_\_.py** | Soubor, který identifikuje aplikaci jako balíček. |
 | **Migrace** | Složka, ve které ukládá Django skripty, které aktualizace databáze pro zarovnání se změnami na modely. Nástroje pro migraci na Django následně použít potřebné změny jakékoli předchozí verze databáze tak, aby odpovídalo aktuální modely. Pomocí migrace, zachovat fokus na modely a nechat Django zpracování základní schéma databáze. Migrace jsou popsané v kroku 6. Prozatím jednoduše složka obsahuje  *\_ \_init\_\_.py* souboru (to znamená, že složka definuje vlastní balíček Pythonu). |
-| **Šablony** | Složka pro stránku šablon Django, které obsahují jeden soubor *index.html*. Šablony jsou bloky jazyka HTML, do kterého zobrazení můžete přidat informace, které dynamicky vykreslení stránky. Například stránka šablony "proměnné" `{{ content }}` v *index.html*, jsou zástupné symboly pro dynamické hodnoty, jak je popsáno dále v tomto článku (krok 2). Aplikace Django obvykle vytvoříte obor názvů pro své šablony tak, že je umístíte do podsložky, která odpovídá názvu aplikace. |
+| **Šablony** | Složka pro stránku šablon Django, které obsahují jeden soubor *index.html* ve složce odpovídající název aplikace. (Ve verzi Visual Studio 2017 15.7 a dřívějších verzí souboru je obsažen přímo pod *šablony* a krok 2 – 4 dává pokyn k vytvoření podsložku.) Šablony jsou bloky jazyka HTML, do kterého zobrazení můžete přidat informace, které dynamicky vykreslení stránky. Například stránka šablony "proměnné" `{{ content }}` v *index.html*, jsou zástupné symboly pro dynamické hodnoty, jak je popsáno dále v tomto článku (krok 2). Aplikace Django obvykle vytvoříte obor názvů pro své šablony tak, že je umístíte do podsložky, která odpovídá názvu aplikace. |
 | **Admin.PY** | Soubor Pythonu, ve kterém je rozšíření aplikace s vaší správy rozhraní (viz krok 6), která je využívána k zobrazení a úprava dat v databázi. Na začátku tento soubor obsahuje pouze příkaz `from django.contrib import admin`. Ve výchozím nastavení, Django obsahuje standardní rozhraní pro správu prostřednictvím položky v projektu Django *settings.py* soubor, který můžete zapnout tak odstraňuje se komentování existující položky v *urls.py*. |
 | **Apps.PY** | Soubor Pythonu, který definuje třídu konfigurace pro aplikaci (viz následující za touto tabulkou). |
 | **models.PY** | Modely jsou datové objekty identifikovaný funkce, pomocí kterých zobrazení interakci s databází základní aplikace (podívejte se na krok 6). Django poskytuje úroveň připojení databáze tak, aby aplikace nemusíte starat tyto podrobnosti. *Models.py* souboru je výchozí místo, ve kterém chcete vytvořit vlastní modely a zpočátku obsahuje pouze příkaz `from django.db import models`. |
@@ -176,7 +176,7 @@ Následující kroky ukazují použití šablony:
     'APP_DIRS': True,
     ```
 
-1. V *HelloDjangoApp* složku, otevřete *templates/index.html* stránky šablonu souboru, podívejte se, že obsahuje jednu proměnnou `{{ content }}`:
+1. V *HelloDjangoApp* složku, otevřete *templates/HelloDjangoApp/index.html* stránkovací soubor šablony (nebo *templates/index.html* ve verzi VS 2017 15.7 a starší), možnosti Podívejte se, že obsahuje jednu proměnnou `{{ content }}`:
 
     ```html
     <html>
@@ -200,7 +200,8 @@ Následující kroky ukazují použití šablony:
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'content': "<strong>Hello Django!</strong> on " + now.strftime("%A, %d %B, %Y at %X")
             }
@@ -211,7 +212,7 @@ Následující kroky ukazují použití šablony:
 
 1. Spusťte projekt a sledujte ve výstupu. Byste měli vidět podobná zpráva, která viděli v kroku 2-2, která udává, že šablona funguje.
 
-    Sledovat, ale, že kód HTML, jste použili v `content` vlastnost vykreslí pouze jako prostý text, protože `render` funkce automaticky řídicí sekvence této HTML. Automatické uvození zabránit náhodnému ohrožení zabezpečení, útoky prostřednictvím injektáže: vývojáři často shromažďovat vstup z jedné stránky a použít jako hodnotu do jiné prostřednictvím šablony zástupný symbol. Uvozovací znaky slouží taky jako připomenutí, že je znovu nejlepší mít HTML v šabloně stránky a ven z kódu. Naštěstí je jednoduché vytvářet další proměnné místech. Například změnit *templates/index.html* tak, aby odpovídala následující kód, který přidá název stránky a zachovává veškeré formátování v šabloně stránky:
+    Sledovat, ale, že kód HTML, jste použili v `content` vlastnost vykreslí pouze jako prostý text, protože `render` funkce automaticky řídicí sekvence této HTML. Automatické uvození zabránit náhodnému ohrožení zabezpečení, útoky prostřednictvím injektáže: vývojáři často shromažďovat vstup z jedné stránky a použít jako hodnotu do jiné prostřednictvím šablony zástupný symbol. Uvozovací znaky slouží taky jako připomenutí, že je znovu nejlepší mít HTML v šabloně stránky a ven z kódu. Naštěstí je jednoduché vytvářet další proměnné místech. Například změnit *index.html* s *šablony* tak, aby odpovídala následující kód, který přidá název stránky a zachovává veškeré formátování v šabloně stránky:
 
     ```html
     <html>
@@ -232,7 +233,8 @@ Následující kroky ukazují použití šablony:
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'title' : "Hello Django",
                 'message' : "Hello Django!",
@@ -245,7 +247,7 @@ Následující kroky ukazují použití šablony:
 
     ![Spuštěné aplikace pomocí šablony](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>V posledním kroku přesuňte své šablony do podsložky se stejným názvem jako aplikaci, která vytvoří obor názvů a vyhnout se možným konfliktům s jinými aplikacemi, které můžete přidat do projektu. To znamená, vytvořte podsložku v *šablony* s názvem *HelloDjangoApp*, přesuňte *index.html* do této podsložky a upravovat `index` zobrazit funkce k odkazování na šablony novou cestu, *HelloDjangoApp/index.html*. Spuštění projektu, ověřte, že stránka vykreslí správně a zastavení serveru.
+1. <a name="template-namespacing"></a>Visual Studio 2017 verze 15.7 a starší: V posledním kroku, přesuňte své šablony do podsložky se stejným názvem jako aplikaci, která vytvoří obor názvů a vyhnout se možným konfliktům s jinými aplikacemi, které můžete přidat do projektu. (Šablony v sadě VS 2017 15.8 + to udělal za vás automaticky.) To znamená, vytvořte podsložku v *šablony* s názvem *HelloDjangoApp*, přesuňte *index.html* do této podsložky a upravovat `index` zobrazit funkce k odkazování na šablony novou cestu, *HelloDjangoApp/index.html*. Spuštění projektu, ověřte, že stránka vykreslí správně a zastavení serveru.
 
 1. Potvrďte změny do správy zdrojového kódu a aktualizovat vaše vzdálené úložiště, v případě potřeby, jak je popsáno v části [krok 2-2](#commit-to-source-control).
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469051"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624155"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Vytvoření nastavení přenosné vlastního editoru pomocí řešení EditorConfig
 
@@ -23,7 +23,7 @@ V sadě Visual Studio 2017, můžete přidat [EditorConfig](http://editorconfig.
 EditorConfig nastavení podporuje řadu editory kódu a prostředími IDE, jako je Visual Studio. Je přenosný komponentu, která se přenáší pomocí kódu a můžete vynutit kódování styly i mimo sadu Visual Studio.
 
 > [!NOTE]
-> Když přidáte soubor EditorConfig do projektu v sadě Visual Studio, formátování existující kód není změnit, dokud se formátovat dokument (**upravit** > **Upřesnit**  >  **Formátovat dokument** nebo **Ctrl**+**K**, **Ctrl**+**D**). Však žádné nové řádky kódu se formátují podle nastavení EditorConfig.
+> Když přidáte soubor EditorConfig do projektu v sadě Visual Studio, formátování existující kód není změnit, dokud se formátovat dokument (**upravit** > **Upřesnit**  >  **Formátovat dokument** nebo **Ctrl**+**K**, **Ctrl**+**D**ve výchozím profilu). Však žádné nové řádky kódu se formátují podle nastavení EditorConfig. EditorConfig nastavení, které chcete, můžete definovat **formátovat dokument** použít [ **formátování** stránka možností](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 ## <a name="coding-consistency"></a>Kódování konzistence
 

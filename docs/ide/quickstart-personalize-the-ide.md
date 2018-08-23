@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140fdf2089d44ba93b9617d2dd05b71556106fdb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512558"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42623931"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Rychlý start: Přizpůsobení integrovaného vývojového prostředí sady Visual Studio a Editor
 
-V tomto rychlém startu 5 až 10 minut přizpůsobíme barevný motiv sady Visual Studio a dvě barvy textu v textovém editoru.
+V tomto rychlém startu 5 až 10 minut přizpůsobíme barevný motiv sady Visual Studio tak, že vyberete tmavý motiv. Přizpůsobíme také barvy pro dva různé typy textu v textovém editoru.
 
 Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
@@ -97,19 +97,7 @@ Nyní přizpůsobíme některé barvy textového editoru. Nejprve vytvoříme no
 
 Prozkoumali jsme pár způsoby přizpůsobení barev v sadě Visual Studio. Doufáme, že vám ukážeme si některé další možnosti vlastního nastavení v **možnosti** dialogové okno, aby skutečně sada Visual Studio vlastní.
 
-## <a name="next-steps"></a>Další kroky
-
-> [!div class="nextstepaction"]
-> [Rychlý start: Nejdřív se podívejte na integrovaném vývojovém prostředí sady Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Rychlý start: Psaní kódu v editoru](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [Rychlý start: Projekty a řešení](../ide/quickstart-projects-solutions.md)
-
 ## <a name="see-also"></a>Viz také:
 
-- [Přizpůsobení prostředí IDE sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 - [Přizpůsobení editoru](../ide/customizing-the-editor.md)
 - [Integrované vývojové prostředí sady Visual Studio – přehled](../ide/visual-studio-ide.md)

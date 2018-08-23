@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a77fda6449e3302f6d77a04bb2985597b2781f1c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637468"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624201"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Rychlý start: Nejdřív se podívejte na integrovaném vývojovém prostředí sady Visual Studio
 
@@ -105,15 +105,13 @@ By se vyskytnou potíže při použití sady Visual Studio, nebo pokud máte ná
 Jsme se zabývali jenom některé funkce sady Visual Studio k seznámit s uživatelským rozhraním. Chcete-li podrobněji:
 
 > [!div class="nextstepaction"]
-> [Rychlý start: Přizpůsobení integrovaného vývojového prostředí](../ide/quickstart-personalize-the-ide.md)
+> [Další informace o editoru kódu](../ide/quickstart-editor.md)
 
 > [!div class="nextstepaction"]
-> [Rychlý start: Psaní kódu v editoru](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [Rychlý start: Projekty a řešení](../ide/quickstart-projects-solutions.md)
+> [Seznamte se s projekty a řešení](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Viz také:
 
 - [Přehled prostředí IDE sady Visual Studio](../ide/visual-studio-ide.md)
-- [Funkce sady Visual Studio 2017](../ide/advanced-feature-overview.md)
+- [Další funkce sady Visual Studio 2017](../ide/advanced-feature-overview.md)
+- [Změna barvy motivu a písma](../ide/quickstart-personalize-the-ide.md)

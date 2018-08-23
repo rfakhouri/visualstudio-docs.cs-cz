@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6cafcf7668cf4dba84ef6afc35f87d5bf93bf08
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978421"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624256"
 ---
 # <a name="model-editor"></a>Editor modelů
 
@@ -48,14 +48,14 @@ Tato část popisuje postup přidání 3D modelu do projektu sady Visual Studio 
 
    ![Přidat novou položku – dialogové okno s 3D scény vybrané](media/add-new-3d-scene.png)
 
-3. Zadejte **název** souboru modelu a pak vyberte **přidat**.
+   > [!NOTE]
+   > Pokud se nezobrazí **grafiky** kategorii **přidat novou položku** dialogového okna, je nutné nainstalovat **obrázků a 3D modelů editory** komponenty. Zavřete dialogové okno a potom vyberte **nástroje** > **stažení nástrojů a funkcí** z řádku nabídek otevřete **instalační program sady Visual Studio**. Vyberte **jednotlivé komponenty** kartu a potom vyberte **obrázků a 3D modelů editory** komponentu pod **hry a grafika** kategorie. Vyberte **upravit**.
+   >
+   > ![Obrázků a 3D modelů editory komponenty](media/image-3d-model-editors-component.png)
+   >
+   > Pokud máte **obrázků a 3D modelů editory** komponenty nainstalované a stále nevidíte **grafiky** kategorii šablon, Všimněte si, že tato kategorie se zobrazí jenom pro určité typy projektů, například konzole. aplikace.
 
-> [!NOTE]
-> Pokud se nezobrazí **grafiky** kategorii **přidat novou položku** dialogového okna, je nutné nainstalovat **obrázků a 3D modelů editory** komponenty. Zavřete dialogové okno a potom vyberte **nástroje** > **stažení nástrojů a funkcí** z řádku nabídek otevřete **instalační program sady Visual Studio**. Vyberte **jednotlivé komponenty** kartu a potom vyberte **obrázků a 3D modelů editory** komponentu pod **hry a grafika** kategorie. Vyberte **upravit**.
->
-> ![Obrázků a 3D modelů editory komponenty](media/image-3d-model-editors-component.png)
->
-> Pokud máte **obrázků a 3D modelů editory** komponenty nainstalované a stále nevidíte **grafiky** kategorii šablon, Všimněte si, že tato kategorie se zobrazí jenom pro určité typy projektů, například konzole. aplikace.
+3. Zadejte **název** souboru modelu a pak vyberte **přidat**.
 
 ### <a name="axis-orientation"></a>Orientace osy
 
@@ -93,7 +93,7 @@ Tato tabulka popisuje položky panelu **režim editoru modelů** nástrojů, kte
 |**Uzamknout osu Y**|Omezuje manipulaci s objekty na ose y. Platí pouze při použití prostřední části pomůcky manipulátoru.|
 |**Uzamknout osu Z**|Omezuje manipulaci s objekty na ose z. Platí pouze při použití prostřední části pomůcky manipulátoru.|
 |**Orámovat objekt**|Orámuje vybraný objekt, aby se nacházel ve středu zobrazení.|
-|**Zobrazení**|Nastaví orientaci zobrazení. Zde jsou dostupné orientace:<br /><br /> **Přední**<br /> Umístí zobrazení před scénu.<br /><br /> **Zpět**<br /> Umístí zobrazení za scénu.<br /><br /> **Doleva**<br /> Umístí zobrazení vlevo od scény.<br /><br /> **Doprava**<br /> Umístí zobrazení vpravo od scény.<br /><br /> **nahoru**<br /> Umístí zobrazení nad scénu.<br /><br /> **dolní**<br /> Umístí zobrazení pod scénu. **Poznámka:** Toto je jediný způsob, jak změnit směr zobrazení při **pravoúhle** projekce je povolená.|
+|**Zobrazení**|Nastaví orientaci zobrazení. Zde jsou dostupné orientace:<br /><br /> **Přední**<br /> Umístí zobrazení před scénu.<br /><br /> **Zpět**<br /> Umístí zobrazení za scénu.<br /><br /> **doleva**<br /> Umístí zobrazení vlevo od scény.<br /><br /> **doprava**<br /> Umístí zobrazení vpravo od scény.<br /><br /> **nahoru**<br /> Umístí zobrazení nad scénu.<br /><br /> **dolní**<br /> Umístí zobrazení pod scénu. **Poznámka:** Toto je jediný způsob, jak změnit směr zobrazení při **pravoúhle** projekce je povolená.|
 |**Projekce**|Nastaví druh projekce použitý pro vykreslení scény. Zde jsou dostupné projekce:<br /><br /> **Perspektivy**<br /> V perspektivní projekci se objekty více vzdálené od bodu pozorování zdají být menší a sbíhají se k jednomu vzdálenému bodu.<br /><br /> **Pravoúhlé**<br /> V pravoúhlé projekci se objekty jeví jako stejně velké bez ohledu na jejich vzdálenost od bodu pozorování. Není zobrazena žádná konvergence. Když **pravoúhle** projekce je povolená, nemůžete použít **obíhání** režim zobrazení.|
 |**Styl kreslení**|Nastaví, jak jsou objekty ve scéně vykresleny. Zde jsou dostupné styly:<br /><br /> **Drátový model**<br /> Je-li tato možnost povolena, objekty jsou vykresleny jako objekty wireframe.<br /><br /> **Overdraw**<br /> Pokud je tato možnost povolena, objekty jsou vykreslovány pomocí doplňkového prolnutí. Tuto možnost můžete použít k zobrazení rozsahu překreslování, ke kterému dochází na scéně.<br /><br /> **Plochý stín**<br /> Je-li tato možnost povolena, objekty jsou vykreslovány základním světelným modelem s plochým stínem. Tuto možnost můžete použít k jednoduššímu zobrazení ploch objektu.<br /><br /> Pokud žádná z těchto možností není povolena, každý objekt je vykreslen pomocí materiálu, který je na něj použit.|
 |**Režim vykreslování v reálném čase**|Pokud je povoleno vykreslení v reálném čase, Visual Studio překreslí plochu návrhu, i když je provedena žádná akce uživatele. Tento režim je užitečný při práci se shadery, které se mění v průběhu času.|

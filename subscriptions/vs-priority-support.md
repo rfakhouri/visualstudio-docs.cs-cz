@@ -9,18 +9,18 @@ description: Další informace o benefitech prioritní podpora součástí před
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 286223c52a05e9dae709d7a07bde84f8e3c4d6b3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 73665a2d423d5284f616354ccd341a8b5ce476f3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567152"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42623940"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Prioritní podpora na předplatná sady Visual Studio
 
 Výhoda prioritní podporu poskytuje přístup k různým podporu komunitní fóra, ve kterém můžete vyhledávat stávající příspěvky nebo dotázán na nový.  Pokud se v komunitě neobjeví odpověď na svoji otázku do dvou dnů, tým podpory společnosti Microsoft poskytne odpověď.
 
-Předplatitelé s vybraným předplatným sady Visual Studio mají nárok na prioritní podporu ve přes velký počet fóra, které pokrývají celou řadu témat.
+Předplatitelé s vybraným předplatným sady Visual Studio mají nárok na prioritní podporu ve přes velký počet fóra, které pokrývají celou řadu témat.  Kliknutím na odkazy níže přejdete přímo na fóra.  
 
 ## <a name="included-forums"></a>Zahrnuté fóra
 
@@ -238,7 +238,7 @@ Předplatitelé s vybraným předplatným sady Visual Studio mají nárok na pri
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Zahrnuté                                                            |Ano |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
 
-<sup>1</sup>*zahrnuje: neprodejné (NFR), představte si FTE, Visual Studio Industry Partner (VSIP).    Vyloučí: Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & služby pro vývojáře, BizSpark, Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD).*
+<sup>1</sup>*zahrnuje: neprodejné (NFR), představte si FTE, Visual Studio Industry Partner (VSIP).  Vyloučí: Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & služby pro vývojáře, BizSpark, Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD).*
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

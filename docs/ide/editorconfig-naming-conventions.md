@@ -1,5 +1,5 @@
 ---
-title: Rozhraní .NET pojmenování konvence pro EditorConfig soubory
+title: Soubory .NET pojmenování konvence pro EditorConfig
 ms.date: 11/20/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cedc3a66b3c6b73dd778011afd8e96b7e1e2d762
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926480"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624255"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Zásady vytváření názvů .NET pro EditorConfig
 
-Zásady vytváření názvů se týkají pojmenování elementy kódu, jako jsou třídy, vlastnosti a metody. Například můžete zadat, že veřejné členy nutné velkými písmeny nebo asynchronní metody musí končit "Asynchronní". Tato pravidla můžete vynutit zadáním je [.editorconfig soubor](../ide/create-portable-custom-editor-options.md). Pojmenování porušení pravidel zobrazit buď v **seznam chyb** nebo jako návrh pod názvem, v závislosti na závažnosti můžete zvolit pravidla. Není nutné pro sestavení projektu chcete-li zobrazit narušení.
+Konvence pojmenování se týkají názvy prvků kódu, jako jsou třídy, vlastnosti a metody. Můžete například určit, že musí velkými písmeny veřejné členy nebo, že musí asynchronních metod končí slovem "Async". Tato pravidla můžete vynutit tak, že zadáte je do [souboru .editorconfig](../ide/create-portable-custom-editor-options.md). Pojmenování porušení pravidel se zobrazí v **seznam chyb** nebo jako návrh pod názvem, v závislosti na závažnosti se rozhodnete pro pravidlo. Není nutné pro sestavení projektu, chcete-li zobrazit porušení.
 
-Zásady vytváření názvů by měla být seřazena z specifické pro většinu nejmenší na konkrétní v *.editorconfig* souboru. Je první pravidlo došlo k, který lze použít pouze pravidlo, které je použito.
+Zásady vytváření názvů by měl být seřazené od specifické pro většinu nejméně na konkrétní v *.editorconfig* souboru. Je první pravidlo došlo k, který lze použít pouze pravidlo, které se použije.
 
-Pro každé zásady vytváření názvů je nutné zadat symboly, které se vztahuje na, pojmenování styl a závažnost pro vynucení konvence, pomocí vlastností popsaných níže. Vlastnosti pořadí není důležité.
+Pro každé zásady vytváření názvů je nutné zadat symboly, které se vztahuje na, styl pojmenování a závažnost pro vynucení konvence, pomocí vlastností popsaných níže. Vlastnosti pořadí není důležité.
 
-Pokud chcete začít, vyberte název vaší pojmenování pravidlo, které budete používat v každé vlastnosti, které jsou potřebné k plně zadejte popis pravidla. Například `public_members_must_be_capitalized` je dobrý název zásady vytváření pravidla. Budeme označovat název, vyberte jako **< namingRuleTitle\>**  v následujících částech.
+Pokud chcete začít, vyberte záhlaví pravidla pojmenování, kterou budete používat ve všech vlastností, které jsou potřeba k plně popis pravidla. Například `public_members_must_be_capitalized` je dobré, popisný název pro pravidlo pro pojmenování. Budeme odkazovat na název, vyberte jako **< namingRuleTitle\>**  v následujících částech.
 
 ## <a name="symbols"></a>Symboly
 
-První Identifikujte skupinu symbolů pro pojmenování pravidlo použít. Tato vlastnost má následující formát:
+Nejprve určete skupinu symboly, které chcete použít pravidlo pro pojmenování pro. Tato vlastnost má následující formát:
 
 `dotnet_naming_rule.<namingRuleTitle>.symbols = <symbolTitle>`
 
-Zadejte název skupiny symbolů nahrazením **< symbolTitle\>**  hodnotu s popisný název, například `public_symbols`. Budete používat **< symbolTitle\>**  na (typy symbol, úrovní přístupu a modifikátory), je použita hodnota v názvech tři vlastnosti, které popisují, které symboly pravidlo.
+Zadejte název skupiny symbolů tak, že nahradíte **< symbolTitle\>**  hodnotu popisný název, třeba `public_symbols`. Budete používat **< symbolTitle\>**  v názvech tři vlastnosti, které popisují hodnotu, která symboly pravidlo platí pro (druhy symbolů, úrovní přístupu a modifikátory).
 
-### <a name="kinds-of-symbols"></a>Typy symbolů
+### <a name="kinds-of-symbols"></a>Druhy symbolů
 
-K popisu druh symboly pro pojmenování pravidlo použít, zadejte vlastnosti v následujícím formátu:
+K popisu druh symboly pro pojmenování pravidlo použít, zadejte vlastnost v následujícím formátu:
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_kinds = <values>`
 
-V následujícím seznamu jsou povolených hodnot, a zadáte více hodnot oddělených čárkami.
+Následující seznam obsahuje povolených hodnot, a můžete zadat více hodnot oddělených čárkami.
 
 - \* (Tato hodnota slouží k určení všechny symboly)
+- – obor názvů
 - třída
 - struct 
 - rozhraní
@@ -56,74 +57,78 @@ V následujícím seznamu jsou povolených hodnot, a zadáte více hodnot odděl
 - event
 - delegát
 - parametr
+- type_parameter
+- local
+- local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>Úrovně přístupnosti symbolů
 
-Popis úrovní přístupu symbolů má pojmenování pravidlo použít, zadejte název vlastnosti v následujícím formátu:
+K popisu úrovní přístupu symbolů má pravidlo pro pojmenování použít, zadejte název vlastnosti v následujícím formátu:
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_accessibilities = <values>`
 
-V následujícím seznamu jsou povolených hodnot, a zadáte více hodnot oddělených čárkami.
+Následující seznam obsahuje povolených hodnot, a můžete zadat více hodnot oddělených čárkami.
 
-- \* (tuto hodnotu použijte k určení všech úrovní přístupu)
+- \* (Tato hodnota slouží k určení všech úrovní přístupu)
 - public
-- interní nebo friend
+- interní nebo typu friend
 - private
 - protected
 - chráněné\_interní nebo protected_friend
+- local
 
 > [!NOTE]
-> Nezadávejte úroveň usnadnění přístupu v rámci zásady vytváření názvů, pokud není k dispozici na typ symbolu, které se zaměříte usnadnění. Například parametry nemají úrovní přístupu. Pokud zadáte úroveň usnadnění pro parametr zásady vytváření názvů, pojmenování pravidla nebude fungovat správně.
+> Nezadávejte úroveň dostupnosti jako součást svých zásad vytváření názvů, pokud usnadnění přístupu se nedá použít pro daný druh symbolu, který cílíte. Například parametry nemají úrovní přístupu. Pokud chcete zadat úroveň usnadnění pro zásady vytváření názvů parametrů, pravidlo pro pojmenování nebude fungovat správně.
 
-### <a name="symbol-modifiers"></a>Modifikátory – symbol
+### <a name="symbol-modifiers"></a>Modifikátory symbol
 
-K popisu modifikátory symbolů má pojmenování pravidlo použít, zadejte název vlastnosti v následujícím formátu:
+K popisu modifikátory symboly chcete pravidlo pro pojmenování použít, zadejte název vlastnosti v následujícím formátu:
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-V následujícím seznamu jsou povolených hodnot, a zadáte více hodnot oddělených čárkami.
+Následující seznam obsahuje povolených hodnot, a můžete zadat více hodnot oddělených čárkami.
 
 - abstraktní nebo must_inherit
 - async
 - const
 - readonly
-- statické nebo sdílené
+- statické nebo sdílený
 
-`required_modifiers` Vlastnost je volitelná. Pokud ji vynecháte, bude použita pojmenování pravidla pro všechny modifikátory.
+`required_modifiers` Vlastnost je volitelná. Pokud ji vynecháte, pravidlo pro pojmenování platit pro všechny modifikátory.
 
 ## <a name="style"></a>Styl
 
-Teď, když jste si myslíme skupiny symbolů pro pojmenování pravidlo použít, jsme musí popisovat pojmenování styl. Styl může být, že název má určitá předponu nebo příponu určité nebo jednotlivých slov v názvu jsou odděleny určité znak. Můžete také určit styl malá a velká písmena. Vlastnost stylu má následující formát:
+Teď, když jsme identifikovali symboly, které chcete použít pravidlo pro pojmenování pro skupiny, popisujeme musí styl pojmenování. Styl může být, že název obsahuje určité předponu nebo příponu určité nebo jednotlivých slov v názvu jsou odděleny určitých znaků. Můžete také určit styl malá a velká písmena. Vlastnost stylu má následující formát:
 
 `dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`
 
-Pojmenujte styl nahrazením **< styleTitle\>**  hodnotu s popisný název, například `first_word_upper_case_style`. Budete používat **< styleTitle\>**  hodnota v názvy vlastností, které popisují styl pojmenování (předponu, příponu, word oddělovací znak a velkých písmen). Popište svou pomocí jednoho nebo více z těchto vlastností.
+Zadejte styl název nahrazením **< styleTitle\>**  hodnotu popisný název, třeba `first_word_upper_case_style`. Budete používat **< styleTitle\>**  hodnotu názvy vlastností, které popisují pojmenování styl (předpona, příponu, word oddělovací znak a malá a velká písmena). Použití jednoho nebo více z těchto vlastností, které popisují vašemu stylu.
 
-### <a name="require-a-prefix"></a>Vyžadovat předpony
+### <a name="require-a-prefix"></a>Vyžadují předponu
 
-K určení, že symbol názvy musí začínat některé znaky, použijte tuto vlastnost:
+Chcete-li určit, že názvy symbolů musí začínat určitých znaků, použijte tuto vlastnost:
 
 `dotnet_naming_style.<styleTitle>.required_prefix = <prefix>`
 
 ### <a name="require-a-suffix"></a>Požadavek na zadání přípony
 
-Názvy symbolů musí končit některé znaky, pomocí této vlastnosti:
+Chcete-li určit, že názvy symbolů musí končit určitých znaků, použijte tuto vlastnost:
 
 `dotnet_naming_style.<styleTitle>.required_suffix = <suffix>`
 
-### <a name="require-a-certain-word-separator"></a>Vyžadovat určité slovo oddělovače
+### <a name="require-a-certain-word-separator"></a>Vyžadovat určité slovo oddělovač
 
-K určení, že jednotlivých slov v názvech symbol musí být odděleny s určitým znakem, použijte tuto vlastnost:
+Chcete-li určit, že jednotlivá slova v názvech symbol, musí se oddělit určité znakem, použijte tuto vlastnost:
 
 `dotnet_naming_style.<styleTitle>.word_separator = <separator character>`
 
-### <a name="require-a-capitalization-style"></a>Vyžadovat použití velkých písmen styl
+### <a name="require-a-capitalization-style"></a>Vyžadovat Styl malá a velká písmena
 
-Určit styl konkrétní použití velkých písmen pro názvy symbolů, použijte tuto vlastnost:
+Tuto vlastnost použijte k určení stylu konkrétní malá a velká písmena pro názvy symbolů:
 
 `dotnet_naming_style.<styleTitle>.capitalization = <value>`
 
-Povolené hodnoty pro tuto vlastnost jsou:
+Povolené hodnoty této vlastnosti jsou:
 
 - pascal_case
 - camel_case
@@ -132,29 +137,29 @@ Povolené hodnoty pro tuto vlastnost jsou:
 - all_lower
 
 > [!NOTE]
-> Musíte zadat styl psaní velkých písmen v rámci vašeho pojmenování stylu, jinak vaše pojmenování styl může ignorovány.
+> Styl malá a velká písmena musíte zadat jako součást vaší pojmenování styl, jinak může vašemu stylu pojmenování ignorovat.
 
 ## <a name="severity"></a>Závažnost
 
-K popisu závažnost porušení pojmenování pravidla, určete vlastnost v následujícím formátu:
+K popisu závažnost porušení pravidla pojmenování, určete vlastnost v následujícím formátu:
 
 `dotnet_naming_rule.<namingRuleTitle>.severity = <value>`
 
-Následující tabulka uvádí povolená závažnost hodnoty, a jejich významu:
+V následující tabulce jsou uvedeny hodnoty povolenou závažnosti a jejich význam:
 
 Závažnost | Efekt
 ------------ | -------------
-žádná nebo tichou | Když tento styl nedodržíte, nezobrazuje nic uživateli; automaticky generovaný kód však následuje tento styl.
-Návrh | Pokud se tento styl nedodržíte, zobrazit uživateli jako návrh, jako základní tečky na první dva znaky. V době kompilace nemá žádný vliv.
-upozornění | Při tomto stylu nedodržíte, zobrazovat upozornění kompilátoru v **seznam chyb**.
-Chyba | Když tento styl nedodržíte, zobrazit chyba kompilátoru v **seznam chyb**.
+žádné nebo tiché | Když se tento styl nedodrží, nezobrazují žádné uživatele. automaticky generovaný kód se však řídí tímto stylem.
+Návrh | Když se tento styl nedodrží, zobrazit uživateli jako návrh, jako základní tečky v prvních dvou znacích. V době kompilace nemá žádný vliv.
+upozornění | Když tento styl nedodrží, zobrazí upozornění kompilátoru v **seznam chyb**.
+Chyba | Když tento styl nedodrží, zobrazit chybu kompilátoru ve **seznam chyb**.
 
 > [!NOTE]
-> Nemáte k sestavení projektu chcete-li zobrazit názvy porušení pravidel. Zobrazují se jako kód upravíte, buď v **seznam chyb** nebo jako návrh.
+> Nemáte k sestavení projektu, chcete-li zobrazit názvy porušení pravidel. Se zobrazují jako kód je upravovat, buď **seznam chyb** nebo jako návrh.
 
 ## <a name="example"></a>Příklad
 
-Následující *.editorconfig* soubor obsahuje zásady vytváření názvů, který určuje, že veřejné vlastnosti, metody, pole, události a delegáti musí být velkými písmeny. Všimněte si, že tyto zásady vytváření názvů určuje více druhů symbol, který chcete použít pravidlo, pomocí oddělte hodnoty čárkami.
+Následující *.editorconfig* soubor obsahuje zásady vytváření názvů, který určuje, že veřejné vlastnosti, metody, pole, události a delegáti musí být velkými písmeny. Všimněte si, že tyto zásady vytváření názvů určuje více druhů symbol, který chcete použít pravidlo, pomocí čárky k oddělení hodnoty.
 
 ```EditorConfig
 # Public members must be capitalized (public_members_must_be_capitalized)
@@ -170,22 +175,22 @@ dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_uppe
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 
-Následující snímek obrazovky ukazuje účinku zásad vytváření názvů v editoru. Dvě veřejné proměnné, které byly pojmenovány bez použití velkých písmen v první písmeno. Jedna je `const`, a jedna je `readonly`. Vzhledem k tomu, že pojmenování pravidlo se vztahuje pouze na `readonly` symboly pouze `readonly` proměnná ukazuje pojmenování návrhu pravidlo.
+Následující snímek obrazovky ukazuje efekt tyto zásady vytváření názvů v editoru. Dvě veřejné proměnné, které byly pojmenovány bez malá a velká písmena první písmeno. Je `const`, a jeden je `readonly`. Vzhledem k tomu, že pravidlo pro pojmenování platí pouze pro `readonly` symboly, pouze `readonly` proměnná ukazuje návrh pravidlo pojmenování.
 
-![Pojmenování pravidlo návrhu](media/editorconfig-naming-rule-suggestion.png)
+![Návrh pravidla pojmenování](media/editorconfig-naming-rule-suggestion.png)
 
-Nyní změníme závažnost porušení na `warning`:
+Teď Změníme závažnost porušení na `warning`:
 
 ```EditorConfig
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Pokud zavřete a otevřete váš soubor kódu, místo zobrazení návrhu v části název porušení, zobrazí zelená vlnovkou a upozornění v **seznam chyb**:
+Pokud ho zavřete a znovu otevřít souboru s kódem, místo toho návrhů v části porušení názvu, abyste se zobrazí zelenou vlnovkou a upozornění v **seznam chyb**:
 
-![Pojmenování pravidlo upozornění](media/editorconfig-naming-rule-warning.png)
+![Pojmenování upozornění pravidla](media/editorconfig-naming-rule-warning.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Jazyk rozhraní .NET a formátování konvence](../ide/editorconfig-code-style-settings-reference.md)
-- [Vytvoření přenosné vlastního editoru možnosti](../ide/create-portable-custom-editor-options.md)
-- [Soubor .editorconfig platformy .NET kompilátoru](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [Jazyk a zásady formátování rozhraní .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Vytvoření přenosné vlastního editoru](../ide/create-portable-custom-editor-options.md)
+- [.NET compiler Platform .editorconfig file](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 9a670a432db352b6a99ca68fa5ce2892c686677b
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 04d8cd6f27f90d398d22b90f9c9bd432466fb3cd
+ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008470"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42624091"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig nastavení konvence psaní kódu .NET
 
@@ -57,7 +57,8 @@ Následující tabulka uvádí možné závažnost hodnoty a jejich důsledky:
 
 Závažnost | Efekt
 :------- | ------
-`none` Nebo `silent` | Nezobrazovat nic uživateli při porušení tohoto pravidla. Funkce generování kódu bude generovat kód v tomto stylu, ale. Pravidla s `none` závažnost nikdy objeví v *rychlé akce a Refaktoringy* nabídky. Ve většině případů to považován za "zakázáno" nebo "ignoruje".
+`none` | Nezobrazovat nic uživateli při porušení tohoto pravidla. Funkce generování kódu ale generování kódu v tomto stylu. Pravidla s `none` závažnost nikdy objeví v **rychlé akce a Refaktoringy** nabídky. Ve většině případů to považován za "zakázáno" nebo "ignoruje".
+`silent` (také `refactoring` v sadě Visual Studio 2017 verze 15.8) | Nezobrazovat nic uživateli při porušení tohoto pravidla. Funkce generování kódu ale generování kódu v tomto stylu. Pravidla s `silent` závažnost účastnit vyčištění stejně jako se zobrazí v **rychlé akce a Refaktoringy** nabídky.
 `suggestion` | Při porušení tohoto pravidla stylu, zobrazí se uživateli jako návrh. Návrhy jeví jako tři šedé tečky v prvních dvou znacích.
 `warning` | Při porušení tohoto pravidla stylu zobrazení upozornění kompilátoru.
 `error` | Při porušení tohoto pravidla stylu, zobrazit chybu kompilátoru.
@@ -78,6 +79,11 @@ Následující seznam uvádí jazyka povolená pravidla konvence:
         - csharp\_preferred\_modifier_order
         - visual\_basic\_preferred\_modifier_order
         - DotNet\_styl\_jen pro čtení\_pole
+    - [Předvolby závorky](#parentheses)
+        - DotNet\_styl\_závorky\_v\_aritmetické\_binární\_operátory
+        - DotNet\_styl\_závorky\_v\_jiných\_binární\_operátory
+        - DotNet\_styl\_závorky\_v\_jiných\_operátory
+        - DotNet\_styl\_závorky\_v\_relační\_binární\_operátory
     - [Předvolby výrazu úrovni](#expression_level)
         - DotNet\_styl\_object_initializer
         - DotNet\_styl\_collection_initializer
@@ -310,7 +316,7 @@ V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, použitelné
 
 | Název pravidla | ID pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 verze |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_ accessibility_modifiers | IDE0040 | C# a Visual Basic | for_non_interface_members:none | 15.5 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# a Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | veřejné, privátní, chráněné, interní, static a extern, nový, virtuální, abstraktní, zapečetěné, přepsání, jen pro čtení, nebezpečný, ale volatilních, asynchronní: žádné | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Částečné výchozí, privátní, chráněné veřejné, Friend, NotOverridable, Overridable, MustOverride, přetížení, přepsání, MustInherit, NotInheritable, statická, sdílí, Shadows, ReadOnly, jen pro zápis, dimenze, Const, WithEvents, rozšíření, zužující, vlastní, Asynchronní: žádné | 15.5 |
 | dotnet_style_readonly_field | IDE0044 | C# a Visual Basic | true: návrh | verzi 15.7 |
@@ -410,6 +416,122 @@ csharp_preferred_modifier_order = public,private,protected,internal,static,exter
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
+#### <a name="parentheses"></a>Předvolby závorky
+
+Pravidla stylu v této části se týkají předvolby závorky, včetně použití závorek pro aritmetické, relační a ostatní binární operátory.
+
+V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, použitelné programovací jazyky, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
+
+| Název pravidla | ID pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 verze |
+| --------- | ------- | -------------------- | ----------------------| ---- |
+| dotnet_style_parentheses_in_arithmetic_binary_operators | IDE0047 | C# a Visual Basic | always_for_clarity: žádné | 15.8 |
+| dotnet_style_parentheses_in_relational_binary_operators | IDE0047 | C# a Visual Basic | always_for_clarity: žádné | 15.8 |
+| dotnet_style_parentheses_in_other_binary_operators | IDE0047 | C# a Visual Basic | always_for_clarity: žádné | 15.8 |
+| dotnet_style_parentheses_in_other_operators | IDE0047 | C# a Visual Basic | never_if_unnecessary: žádné | 15.8 |
+
+**DotNet\_styl\_závorky\_v\_aritmetické\_binary_operators**
+
+- Pokud toto pravidlo je nastaven na **always_for_clarity**, dáváte přednost závorky pro upřesnění aritmetického operátoru (`*`, `/`, `%`, `+`, `-`, `<<`, `>>`, `&`, `^`, `|`) prioritu.
+- Pokud toto pravidlo je nastaven na **never_if_unnecessary**, nepřejete závorky, pokud aritmetického operátoru (`*`, `/`, `%`, `+`, `-`, `<<`, `>>`, `&`, `^`, `|`) priorita je zřejmý.
+
+Příklady kódu:
+
+```csharp
+// dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity
+var v = a + (b * c);
+
+// dotnet_style_parentheses_in_arithmetic_binary_operators = never_if_unnecessary
+var v = a + b * c;
+```
+
+```vb
+' dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity
+Dim v = a + (b * c)
+
+' dotnet_style_parentheses_in_arithmetic_binary_operators = never_if_unnecessary
+Dim v = a + b * c
+```
+
+**DotNet\_styl\_závorky\_v\_relační\_binary_operators**
+
+- Pokud toto pravidlo je nastaven na **always_for_clarity**, dáváte přednost závorky pro upřesnění relační operátor (`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`) prioritu.
+- Pokud toto pravidlo je nastaven na **never_if_unnecessary**, nepřejete závorky, pokud relační operátor (`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`) priorita je zřejmý.
+
+Příklady kódu:
+
+```csharp
+// dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity
+var v = (a < b) == (c > d);
+
+// dotnet_style_parentheses_in_relational_binary_operators = never_if_unnecessary
+var v = a < b == c > d;
+```
+
+```vb
+' dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity
+Dim v = (a < b) = (c > d)
+
+' dotnet_style_parentheses_in_relational_binary_operators = never_if_unnecessary
+Dim v = a < b = c > d
+```
+
+**DotNet\_styl\_závorky\_v\_jiných\_binary_operators**
+
+- Pokud toto pravidlo je nastaven na **always_for_clarity**, dáváte přednost závorky pro upřesnění ostatních binárních operátorů (`&&`, `||`, `??`) prioritu.
+- Pokud toto pravidlo je nastaven na **never_if_unnecessary**, nepřejete závorky po ostatních binárních operátorů (`&&`, `||`, `??`) priorita je zřejmý.
+
+Příklady kódu:
+
+```csharp
+// dotnet_style_parentheses_in_other_binary_operators = always_for_clarity
+var v = a || (b && c);
+
+// dotnet_style_parentheses_in_other_binary_operators = never_if_unnecessary
+var v = a || b && c;
+```
+
+```vb
+' dotnet_style_parentheses_in_other_binary_operators = always_for_clarity
+Dim v = a OrElse (b AndAlso c)
+
+' dotnet_style_parentheses_in_other_binary_operators = never_if_unnecessary
+Dim v = a OrElse b AndAlso c
+```
+
+**DotNet\_styl\_závorky\_v\_other_operators**
+
+- Pokud toto pravidlo je nastaven na **always_for_clarity**, dáváte přednost závorky pro upřesnění priorita operátorů.
+- Pokud toto pravidlo je nastaven na **never_if_unnecessary**, nepřejete závorky po zřejmé priorita operátorů.
+
+Příklady kódu:
+
+```csharp
+// dotnet_style_parentheses_in_other_operators = always_for_clarity
+var v = (a.b).Length;
+
+// dotnet_style_parentheses_in_other_operators = never_if_unnecessary
+var v = a.b.Length;
+```
+
+```vb
+' dotnet_style_parentheses_in_other_operators = always_for_clarity
+Dim v = (a.b).Length
+
+' dotnet_style_parentheses_in_other_operators = never_if_unnecessary
+Dim v = a.b.Length
+```
+
+Tato pravidla mohou být zobrazeny v *.editorconfig* to následujícím způsobem:
+
+```EditorConfig
+# CSharp and Visual Basic code style settings:
+[*.{cs,vb}]
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:none
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:none
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:none
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:none
+```
+
 #### <a name="expression_level"></a>Předvolby výrazu úrovni
 
 Styl pravidla v této části problém úrovni výrazu předvolby včetně využití čipu TPM inicializátory objektů, inicializátory kolekce, názvy explicitní nebo odvozený řazené kolekce členů a odvodit anonymních typů.
@@ -425,6 +547,8 @@ V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, použitelné
 | dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# a Visual Basic | true: návrh | verzi 15.6 |
 | dotnet_style_prefer_auto_properties | IDE0032 | C# a Visual Basic | true: žádné | verzi 15.7 |
 | dotnet_style_prefer_is_null_check_over_reference_equality_method | IDE0041 | C# a Visual Basic | true: návrh | verzi 15.7 |
+| dotnet_style_prefer_conditional_expression_over_assignment | IDE0045 | C# a Visual Basic | true: žádné | 15.8 |
+| dotnet_style_prefer_conditional_expression_over_return | IDE0046 | C# a Visual Basic | true: žádné | 15.8 |
 
 **DotNet\_styl\_object_initializer**
 
@@ -621,6 +745,78 @@ If Object.ReferenceEquals(value, Nothing)
 End If
 ```
 
+
+
+**DotNet\_styl\_raději\_podmíněného\_výraz\_over_assignment**
+
+- Pokud toto pravidlo je nastaven na **true**, dáváte přednost přiřazení s Ternární podmíněné přes if-else – příkaz.
+- Pokud toto pravidlo je nastaven na **false**, dáváte přednost přiřazení s if-else – příkaz přes Ternární podmíněné.
+
+Příklady kódu:
+
+```csharp
+// dotnet_style_prefer_conditional_expression_over_assignment = true
+string s = expr ? "hello" : "world";
+
+// dotnet_style_prefer_conditional_expression_over_assignment = false
+string s;
+if (expr)
+{
+    s = "hello";
+}
+else
+{
+    s = "world";
+}
+```
+
+```vb
+' dotnet_style_prefer_conditional_expression_over_assignment = true
+Dim s As String = If(expr, "hello", "world")
+
+' dotnet_style_prefer_conditional_expression_over_assignment = false
+Dim s As String
+If expr Then
+    s = "hello"
+Else
+    s = "world"
+End If
+```
+
+**DotNet\_styl\_raději\_podmíněného\_výraz\_over_return**
+
+- Pokud toto pravidlo je nastaven na **true**, raději příkazy na používání Ternární podmíněné přes if-else – příkaz return.
+- Pokud toto pravidlo je nastaven na **false**, dáváte přednost návratovými příkazy na používání přes Ternární podmínka if-else – příkaz.
+
+Příklady kódu:
+
+```csharp
+// dotnet_style_prefer_conditional_expression_over_return = true
+return expr ? "hello" : "world"
+
+// dotnet_style_prefer_conditional_expression_over_return = false
+if (expr)
+{
+    return "hello";
+}
+else
+{
+    return "world";
+}
+```
+
+```vb
+' dotnet_style_prefer_conditional_expression_over_return = true
+Return If(expr, "hello", "world")
+
+' dotnet_style_prefer_conditional_expression_over_return = false
+If expr Then
+    Return "hello"
+Else
+    Return "world"
+End If
+```
+
 Tato pravidla mohou být zobrazeny v *.editorconfig* to následujícím způsobem:
 
 ```EditorConfig
@@ -632,6 +828,8 @@ dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 dotnet_style_prefer_auto_properties = true:none
+dotnet_style_prefer_conditional_expression_over_assignment = true:suggestion
+dotnet_style_prefer_conditional_expression_over_return = true:suggestion
 ```
 
 #### <a name="null_checking"></a>Předvolby kontrol Null
@@ -1967,12 +2165,14 @@ csharp_preserve_single_line_blocks = true
 ```
 
 ## <a name="example-editorconfig-file"></a>Příklad souboru EditorConfig
+
 Abyste mohli začít pracovat, tady je příklad *.editorconfig* soubor s výchozími možnostmi:
 
 ```EditorConfig
 ###############################
 # Core EditorConfig Options   #
 ###############################
+
 root = true
 
 # All files
@@ -1988,6 +2188,7 @@ charset = utf-8-bom
 ###############################
 # .NET Coding Conventions     #
 ###############################
+
 [*.{cs,vb}]
 # Organize usings
 dotnet_sort_system_directives_first = true
@@ -2002,6 +2203,12 @@ dotnet_style_qualification_for_event = false:none
 dotnet_style_predefined_type_for_locals_parameters_members = true:none
 dotnet_style_predefined_type_for_member_access = true:none
 
+# Parentheses preferences
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
+
 # Modifier preferences
 dotnet_style_require_accessibility_modifiers = for_non_interface_members:none
 dotnet_style_readonly_field = true:suggestion
@@ -2012,10 +2219,12 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_null_propagation = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
-dotnet_style_prefer_is_null_check_over_reference_equality_method = true:none
-dotnet_style_prefer_inferred_tuple_names = true:suggestion
-dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
-dotnet_style_prefer_auto_properties = true:none
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
+dotnet_prefer_inferred_tuple_names = true:suggestion
+dotnet_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_auto_properties = true:silent
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent
+dotnet_style_prefer_conditional_expression_over_return = true:silent
 
 ###############################
 # Naming Conventions          #
@@ -2035,6 +2244,7 @@ dotnet_naming_symbols.constant_fields.required_modifiers          = const
 ###############################
 # C# Coding Conventions       #
 ###############################
+
 [*.cs]
 # var preferences
 csharp_style_var_for_built_in_types = true:none
@@ -2070,6 +2280,7 @@ csharp_style_inlined_variable_declaration = true:suggestion
 ###############################
 # C# Formatting Rules         #
 ###############################
+
 # New line preferences
 csharp_new_line_before_open_brace = all
 csharp_new_line_before_else = true
@@ -2104,12 +2315,11 @@ csharp_preserve_single_line_blocks = true
 ###############################
 # VB Coding Conventions       #
 ###############################
+
 [*.vb]
 # Modifier preferences
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
-
 ```
-
 
 ## <a name="see-also"></a>Viz také:
 

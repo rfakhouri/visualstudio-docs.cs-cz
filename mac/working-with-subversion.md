@@ -1,56 +1,56 @@
 ---
-title: Práce s Subversion
-description: Pomocí Subversion v sadě Visual Studio for Mac.
-author: asb3993
-ms.author: amburns
+title: Práce s úložištěm Subversion
+description: Pomocí dílčích verzí v sadě Visual Studio pro Mac.
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 9514db72dd72e616f45670ffdf8c0b468bfb81cc
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 81c33d426989f9bab3216802aa4e815228e1e82a
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454251"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42623930"
 ---
-# <a name="working-with-subversion"></a>Práce s Subversion
+# <a name="working-with-subversion"></a>Práce s úložištěm Subversion
 
-Subversion je systém správy centralizované verzí, která umožňuje podívejte se na jednu hlavní kopii centralizované data. Na rozdíl od Git se odhlašuje Subversion úložiště není klonovat úložiště v celé, pouze pořídí snímek v tomto bodě v čase.
+Subversion je centralizovaný systém správy verzí, která umožňuje podívejte se na jeden hlavní kopii centralizovaného data. Na rozdíl od Git a rezervaci úložiště Subversion není klonovat celé úložiště, jenom pořídí snímek v daném okamžiku v čase.
 
-Subversion používá model kopie upravit sloučení aby uživatelé mohli pracovat na stejného úložiště najednou. To znamená, že každý uživatel vytvoří kopii centralizované data, která pracují nezávisle na místní nebo funkční. Změny uživatelů, kteří pracují kopie jsou sloučeny chronologickém způsobem.
+Dílčí verze používá model kopírování upravit sloučení pro umožňují uživatelům pracovat současně na stejném úložišti. To znamená, že každý uživatel vytvoří kopii centralizovaného data, která pracují nezávisle na místní, nebo při práci. Změny uživatelů pracovní kopie jsou sloučeny chronologickém způsobem.
 
-Představte si například, že uživatel A a B uživatele projděte si kopii ze vzdáleného úložiště a každý upravit soubory. Uživatel A dokončení změny a je vzdáleně potvrdí. Předtím, než uživatel B provede práci, musí se změnami od vzdálených, Probíhá slučování v změny uživatele A aktualizovat jejich pracovní kopie.
+Představte si například, že uživatel A a B uživatele rezervovat kopírování ze vzdáleného úložiště a jejich jednotlivých souborů změnit. Uživatel A dokončí úpravy a potvrdí vzdáleně. Předtím, než uživatel B provádí svou práci, musí aktualizovat změny ze vzdáleného počítače, sloučení v změny uživatele A jejich pracovní kopie.
 
-V následujících částech prozkoumat Subversion použití pro správu verzí v sadě Visual Studio for Mac.
+Následující části prozkoumat, jak Subversion lze pro správu verzí v sadě Visual Studio pro Mac.
 
-Následující obrázek ukazuje možnosti poskytované Visual Studio pro Mac položku nabídky verzí:
+Následující obrázek ukazuje možnosti poskytovaný sadou Visual Studio for Mac pomocí položky nabídky správy verzí:
 
-![Položky nabídky verze ovládacího prvku](media/version-control-svnVersionControlMenu.png)
+![Položky nabídky ovládací prvek verze](media/version-control-svnVersionControlMenu.png)
 
-## <a name="checkout"></a>Najdete v článku věnovaném...
+## <a name="checkout"></a>Rezervace...
 
-Před zahájením používání vzdáleného úložiště Subversion, projděte si úložišti vytvořit kopii pracovní tento adresář na místním počítači.
+Před zahájením používání vzdáleného úložiště Subversion, projděte si úložiště k vytvoření pracovní kopii tohoto adresáře na místním počítači.
 
-Informace o použití **najdete v článku věnovaném** funkce v sadě Visual Studio pro Mac, postupujte podle kroků v [nastavení úložiště Subversion](set-up-subversion-repository.md) části.
+Najdete informace o použití **Checkout** funkcí v sadě Visual Studio pro Mac, postupujte podle kroků v [nastavení úložiště Subversion](set-up-subversion-repository.md) oddílu.
 
 ## <a name="update-solution"></a>Aktualizace řešení
 
-Při použití vzdáleného úložiště, je důležité si pamatovat, jiných uživatelů může být změny souborů, provedení pracovní kopii zastaralá. Očekávaly je v konfliktu se vždy doporučuje načítat všechny změny z úložiště do řešení před zahájením práce a před potvrzením. Vyžádání změny, vyberte **verzí > řešení aktualizací** položku nabídky.
+Při použití vzdáleného úložiště, je dobré si uvědomit, že ostatním uživatelům může být změny souborů, provádění vaše pracovní kopie zastaralé. Čekat na případná je v konfliktu vždy doporučujeme před zahájením práce a před potvrzením načítat všechny změny z úložiště do vašeho řešení. Chcete-li vložit změny, vyberte **verzí > řešení Update** položky nabídky.
 
-## <a name="review-solution-and-commit"></a>Zkontrolujte řešení a potvrzení
+## <a name="review-solution-and-commit"></a>Kontrola řešení a odeslat
 
-Ke zkontrolování změn v souborech, použijte změny, viny, protokol a slučování karty na každý dokument, jak je znázorněno na následujícím obrázku:
+Ke zkontrolování změn v souborech, použijte změny, viny, protokol a sloučit kartách na jednotlivých dokumentů, jak je znázorněno na následujícím obrázku:
 
-![Verze ovládací prvek karty](media/version-control-vcTabs.png)
+![Verze ovládacího prvku karty](media/version-control-vcTabs.png)
 
-Zkontrolujte všechny změny v projektu procházením **verzí > zkontrolujte řešení a potvrzení** položky nabídky:
+Zkontrolujte všechny změny v projektu tak, že přejdete **verzí > řešení zkontrolujte a potvrďte změny** položky nabídky:
 
-![Přečtěte si řešení](media/version-control-vcStatus.png)
+![Kontrola řešení](media/version-control-vcStatus.png)
 
-To umožňuje zobrazení všech změn do každého souboru projektu s možností vrátit, vytvořit oprava nebo potvrzení.
+To umožňuje zobrazení všech změn v každém souboru projektu s možností vrácení, vytvořit opravu, nebo potvrzení.
 
-Potvrdit souboru do vzdáleného úložiště, stiskněte klávesu potvrzení..., zadejte zprávu potvrzení a potvrďte pomocí tlačítka potvrzení:
+Zapsat do souboru do vzdáleného úložiště, stiskněte klávesu potvrzení..., zadejte zprávu potvrzení, a potvrďte tlačítkem potvrzení:
 
 
-![Potvrzení soubor](media/version-control-svnCommit.png)
+![Potvrzují se soubor](media/version-control-svnCommit.png)
 
-Tím se pošle změny do úložiště, kde se vytvořit novou revizi všechny změny.
+Tento tok odešle změny do úložiště, které vytvářejí Nová revize všechny provedené změny.

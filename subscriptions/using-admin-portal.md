@@ -9,12 +9,12 @@ description: Další informace o správě předplatných sady Visual Studio vaš
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 63f3cbc3b4eb108a17c85eaa46992989a6dac742
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380815"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42623905"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Pomocí portálu pro správce předplatných sady Visual Studio
 
@@ -68,9 +68,11 @@ Po přiřazení předplatného můžete na kartě předplatitele poskytuje podro
 - Volitelné pole pro jinou e-mailovou adresu použitou pro komunikaci než přihlášení. 
 
 Na levé straně této stránky lze zobrazit další informace o počtu licencí předplatné zakoupené, přiřazené a stále k dispozici ve vaší organizaci pro každou smlouvu.
-    ![Stránku předplatitele portál pro správu předplatných sady Visual Studio](_img/using-admin-portal/subscribers-page.png)
+> [!div class="mx-imgBorder"]
+> ![Stránku předplatitele portál pro správu předplatných sady Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Stránce s podrobnostmi o vysvětlení
 Další informace o smlouvě, že si prohlížíte vyberte na kartě s podrobnostmi. Zobrazuje stav smlouvy, nákupní účet, organizační údaje, primární kontakty (VLSC), supersprávci (Pokud je k dispozici) a další relevantní informace.
-    ![Stránka podrobností portál pro správu předplatných sady Visual Studio](_img/using-admin-portal/details-page.png)
+> [!div class="mx-imgBorder"]
+> ![Stránka podrobností portál pro správu předplatných sady Visual Studio](_img/using-admin-portal/details-page.png)
 

@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5647bbc6aa520fdf5427b61f53a54c28b9a0a48d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381169"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624421"
 ---
-# <a name="visual-studio-overview"></a>Visual Studio – přehled
+# <a name="welcome-to-the-visual-studio-ide"></a>Vítejte v prostředí IDE sady Visual Studio
 
 Visual Studio *integrovaného vývojového prostředí* je creative odrazový, můžete použít k úpravám, ladit a sestavovat kód a pak publikujete aplikaci. Integrované vývojové prostředí (IDE) je plně funkční program, který lze použít pro mnoho aspektů vývoje softwaru. Kromě standardní editor a ladicího programu, že většina integrovanými vývojovými prostředími poskytnout, Visual Studio obsahuje kompilátory, nástroje dokončování kódu, grafičtí návrháři pro a mnoho dalších funkcí, které usnadňují proces vývoje softwaru.
 
 Visual Studio je k dispozici pro Windows a Mac. [Visual Studio pro Mac](/visualstudio/mac/) má mnoho stejných funkcí jako Visual Studio 2017 a je optimalizovaná pro vývoj multiplatformní a mobilní aplikace.
 
-Tento článek se zaměřuje na Visual Studio 2017 pro Windows. To vás seznámí s základní funkce integrovaného vývojového prostředí. Provedeme některé kroky můžete provést pomocí sady Visual Studio, včetně vytváření Jednoduchý projekt pomocí [IntelliSense](using-intellisense.md) jako podpory kódování a ladění aplikace zobrazíte hodnotu proměnné během provádění programu. Provedeme také si na různá okna nástrojů.
+Tento přehled článek se zaměřuje na Visual Studio 2017 pro Windows. To vás seznámí s základní funkce integrovaného vývojového prostředí. Provedeme některé kroky můžete provést pomocí sady Visual Studio, včetně vytváření Jednoduchý projekt pomocí [IntelliSense](using-intellisense.md) jako podpory kódování a ladění aplikace zobrazíte hodnotu proměnné během provádění programu. Provedeme také si na různá okna nástrojů.
 
 ## <a name="install-the-visual-studio-ide"></a>Instalace sady Visual Studio IDE
 
@@ -64,7 +64,7 @@ Mezi oblíbené funkce v sadě Visual Studio, které vám umožní být produkti
 
 - [IntelliSense](../ide/using-intellisense.md)
 
-   Technologie IntelliSense je termín pro sadu funkcí, které se zobrazí informace o kódu přímo v editoru a v některých případech může zapisovat malé části kódu za vás. Je to jako mít základní dokumentaci vložené v editoru, což vám ušetří nebudou muset vyhledat informace o typu jinde. Funkce technologie IntelliSense se liší podle jazyka. Další informace najdete v tématu [jazyka C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [technologie IntelliSense jazyka JavaScript](../ide/javascript-intellisense.md), a [jazyka Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Následující obrázek znázorňuje, jak technologie IntelliSense zobrazí seznam členů pro typ:
+   Technologie IntelliSense je termín pro sadu funkcí, která zobrazí informace o kódu přímo v editoru a v některých případech může zapisovat malé části kódu za vás. Je to jako mít základní dokumentaci vložené v editoru, což vám ušetří nebudou muset vyhledat informace o typu jinde. Funkce technologie IntelliSense se liší podle jazyka. Další informace najdete v tématu [jazyka C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [technologie IntelliSense jazyka JavaScript](../ide/javascript-intellisense.md), a [jazyka Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Následující obrázek znázorňuje, jak technologie IntelliSense zobrazí seznam členů pro typ:
 
    ![Seznam členů sady Visual Studio](../ide/media/intellisense-list-members.png)
 
@@ -256,21 +256,32 @@ Uživatelské rozhraní sady Visual Studio, včetně změn si můžete přizpůs
 
    Barva motivu pro celý integrovaného vývojového prostředí se změní na **tmavě**.
 
-   ![VS v tmavém motivu](media/quickstart-personalize-dark-theme.png)
+   ![Visual Studio v tmavém motivu](media/quickstart-personalize-dark-theme.png)
 
 Další informace o dalších způsobech mohli přizpůsobit integrovaného vývojového prostředí, najdete v článku [přizpůsobení sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="learn-more"></a>Víc se uč
+## <a name="next-steps"></a>Další kroky
 
-Chcete vytvořit aplikaci pro Android nebo iOS phone? A co 3D hry nebo aplikace s podporou cloudu? Další informace o těchto a dalších funkcích sady Visual Studio najdete v tématu [funkce sady Visual Studio 2017](../ide/advanced-feature-overview.md).
+Prozkoumejte další Visual Studio na základě společně s některou z těchto úvodní články:
 
-Pokud chcete začít programovat, zvolte jednu z rychlý start témata z obsahu, jako například [vytvoření vaší první webové aplikace ASP.NET Core](quickstart-aspnet-core.md).
+- Seznamte se v editoru kódu v [zjistěte, jak pomocí editoru kódu](quickstart-editor.md)
 
-Můžete také zkontrolovat si bezplatné kurzy sady Visual Studio, k dispozici na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033).
+- Zjistěte, jak Visual Studio uspořádá kód v [přečtěte si víc o projekty a řešení](quickstart-projects-solutions.md)
+
+Pokud jste připraveni začít do další kód, jeden z následujících šablon rychlý start specifické pro jazyk je dobré další krok:
+
+- [Pomocí sady Visual Studio k vytvoření vaší první webové aplikace v Pythonu](quickstart-python.md)
+
+- [Vytvoření první aplikace webového jazyka C# pomocí sady Visual Studio](quickstart-aspnet-core.md)
+
+- [Vytvořte svoji první aplikaci Node.js pomocí sady Visual Studio](quickstart-nodejs.md)
+
+- [Začínáme s C++ v sadě Visual Studio](getting-started-with-cpp-in-visual-studio.md)
 
 ## <a name="see-also"></a>Viz také:
 
-* [Další funkce sady Visual Studio](../ide/advanced-feature-overview.md)
-* [VisualStudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-* [Blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- Zjistit [další funkce sady Visual Studio](../ide/advanced-feature-overview.md)
+- Navštivte [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
+- Čtení [blogu sady Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
+- Podívejte se na bezplatné kurzy sady Visual Studio na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)
+- Stáhněte si Visual Studio na [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)

@@ -1,7 +1,7 @@
 ---
 title: Kurz – další Django v sadě Visual Studio, krok 3
 description: Názorný postup základy Django v rámci projektů sady Visual Studio, konkrétně představením toho, jak doručování statických souborů, přidání stránky do aplikace a používat šablonu dědičnosti
-ms.date: 06/27/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4eb8603933046ba02af32c41d5b4a2552b6d5185
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1e58ff1e9685f9f3147fc3fa199fad12b98a0ed4
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639692"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624135"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Doručování statických souborů, přidejte stránky a použijte šablonu dědičnosti
 
@@ -78,7 +78,7 @@ Můžete uspořádat soubory pomocí libovolné struktury složek v rámci *stat
     }
     ```
 
-1. Nahraďte obsah aplikace *templates/HelloDjangoApp/index.html* souboru následujícím kódem, který nahrazuje `<strong>` prvku použitého při kroku 2 `<span>` , která odkazuje na `message` styl třídy. Použití třídy stylu tímto způsobem nabízí mnohem větší flexibilitu v používání stylů pro element. (Pokud jste ještě přesunuli *index.html* do podsložky v *šablony*, odkazovat na [šablony namespacing](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) v kroku 2.)
+1. Nahraďte obsah aplikace *templates/HelloDjangoApp/index.html* souboru následujícím kódem, který nahrazuje `<strong>` prvku použitého při kroku 2 `<span>` , která odkazuje na `message` styl třídy. Použití třídy stylu tímto způsobem nabízí mnohem větší flexibilitu v používání stylů pro element. (Pokud jste ještě přesunuli *index.html* do podsložky v *šablony* při použití VS 2017 15.7 a odkazovat dříve, [šablony namespacing](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) v kroku 2 – 4.)
 
     ```html
     <html>

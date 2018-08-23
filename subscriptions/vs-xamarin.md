@@ -1,91 +1,91 @@
 ---
-title: Výhodou Xamarin univerzity v sadě Visual Studio předplatných | Microsoft Docs
+title: Xamarin University výhoda v předplatných sady Visual Studio | Dokumentace Microsoftu
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 05/16/2018
 ms.topic: Get-Started-Article
-description: Další informace o předplatném Xamarin univerzity školení součástí vybrané předplatné sady Visual Studio.
+description: Další informace o předplatném školení na Xamarin University součástí vybraného předplatného sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ba8ec977c0a59e5ae5406cb6bb381c24338d333
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 631a8e692f494c672b8c0894ca7b8434f11525dd
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281141"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624234"
 ---
-# <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Výhodou školení Xamarin univerzity odběry Visual Studio
+# <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Xamarin University školení výhoda v předplatných sady Visual Studio
 
-Vytvořte nativní aplikace pro iOS a Android aplikace v jazyce C# s pokročilé školení odborníky pro vývoj mobilních řešení.
+Vytvářejte nativní aplikace pro iOS a Android v C# pomocí pokročilé školení pro odborníky na vývoj pro mobilní zařízení.
 
-Visual Studio Enterprise odběratele přijímat šest měsíců neomezený přístup ke katalogu úplné univerzity Xamarin.  Visual Studio Professional odběratele přijímat tři měsíce přístupu.
+Předplatitelé sady Visual Studio Enterprise přijímat neomezený přístup k plné katalogové Xamarin University za šest měsíců.  Předplatitelé sady Visual Studio Professional přijímat tří měsíců od přístupu.
 
-Visual Studio Dev Essentials členy se mohou vytvořit bezplatný účet, který zahrnuje přístup k vybrané volné kurzy, přednášek hosta, dvě třídy provozu, Lightning Přednáškový záznamů a další.
+Členové programu Visual Studio Dev Essentials mají nárok na vytvořte si bezplatný účet, který zahrnuje přístup k vybrané bezplatné kurzy, přednášek hostů, dvě třídy za provozu, záznamy bleskově přednášky a další.
 
 
 ## <a name="activation-steps"></a>Postup aktivace
 1.  Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2.  Najděte dlaždici Xamarin univerzity školení v části Professional vývoj a klikněte na **aktivovat** odkaz v levém dolním benefit dlaždice.
+2.  Vyhledejte školení na Xamarin University dlaždici v části vývoj Professional a klikněte na **aktivovat** odkaz v levé dolní části dlaždice výhodu.
+    > [!div class="mx-imgBorder"]
+    > ![Xamarin University školení výhodu dlaždice](_img/vs-xamarin/vs-xamarin-tile.png)
 
-    <img alt="Xamarin University Training Benefit Tile" src="_img/vs-xamarin/vs-xamarin-tile.png" style="border: 1px solid #CCCCCC" />
-
-3.  Budete přesměrováni na webovou stránku univerzity Xamarinu nárok "Xamarin univerzity Mobile školení pro Microsoft Visual Studio".  Klikněte na tlačítko **aktivovat odběr nyní**.
-
-    <img alt="Activate My Subscription Now" src="_img/vs-xamarin/vs-xamarin-activate.png" style="border: 1px solid #CCCCCC" />
-
-    > [!NOTE]
-    > V závislosti na vaší obrazovce překlad IP adres a přiblížení úrovni, budete muset posuňte se dolů a najdete **Activate Now Moje předplatné** tlačítko.
+3.  Budete přesměrováni na stránku webové aplikace na Xamarin University s názvem "Xamarin University Mobile školení pro Microsoft Visual Studio".  Klikněte na tlačítko **aktivovat mé předplatné nyní**.
+    > [!div class="mx-imgBorder"]
+    > ![Aktivovat mé předplatné](_img/vs-xamarin/vs-xamarin-activate.png)
 
     > [!NOTE]
-    > Pokud obdržíte chybu, která musí být přihlášeni jako osoba, která obdržela výhodou, postupujte takto:
-    > 1. Zavřete okno prohlížeče s univerzity Xamarin.
-    > 2. Na portálu my.visualstudio.com, klikněte na tlačítko **Odhlásit se**.
+    > V závislosti na vaší obrazovce překlad IP adres a přiblížení úrovně možná muset posunout dolů viz **Activate Now Moje předplatné** tlačítko.
+
+    > [!NOTE]
+    > Pokud se zobrazí chyba, že musíte být přihlášeni jako osoba, která obdržela výhody, postupujte podle těchto kroků:
+    > 1. Zavřete okno prohlížeče aplikace na Xamarin University.
+    > 2. Na portálu my.visualstudio.com, klikněte na tlačítko **Odhlásit**.
     > 3. Zavřete všechna okna prohlížeče.
     > 4. Otevřete nový prohlížeč a připojte se k [ https://my.visualstudio.com ](https://my.visualstudio.com).
-    > 5. Znovu aktivujte výhody Xamarin univerzity školení.
+    > 5. Znovu aktivujte výhody školení na Xamarin University.
 
-4.  Se zobrazí na přihlašovací stránku, s Všimněte si, že Xamarin v nedávné době přesouvána ověřování společnosti Microsoft.  Klikněte na tlačítko **připojení se společností Microsoft**.
+4.  Zobrazí se vám přihlašovací stránku, oznámení, která Xamarin nedávno přesunula ověřování Microsoft.  Klikněte na tlačítko **připojení s Microsoftem**.
+    > [!div class="mx-imgBorder"]
+    > ![Spojte se s Microsoft](_img/vs-xamarin/vs-xamarin-connect.png)
 
-    <img alt="Connect with Microsoft" src="_img/vs-xamarin/vs-xamarin-connect.png" style="border: 1px solid #CCCCCC" />
-
-5. Dále budete požádáni o udělení oprávnění pro Xamarin univerzity přihlášení a přístup k e-mailovou adresu a základní profil.  Klikněte na tlačítko **Ano** pokračujte. Pokud chcete, můžete aplikaci oprávnění později změnit.
-
-    <img alt="Approve access" src="_img/vs-xamarin/vs-xamarin-access.png" style="border: 1px solid #CCCCCC" />
+5. V dalším kroku budete vyzváni k udělení oprávnění pro Xamarin University přihlásíte a přístup k e-mailovou adresu a základního profilu.  Klikněte na tlačítko **Ano** pokračujte. Pokud chcete, můžete později změnit oprávnění aplikace.
+    > [!div class="mx-imgBorder"]
+    > ![Schválit přístup](_img/vs-xamarin/vs-xamarin-access.png)
 
     > [!NOTE]
-    > Vzhledem k tomu, že přihlášení je třeba použít benefit Xamarin univerzity, kliknutím na tlačítko **ne** se vrátíte na předchozí stránku a nebudete moci pokračovat školení.
+    > Vzhledem k tomu, že přihlášení je třeba použít výhodu Xamarin University, kliknutím na **ne** se vrátíte na předchozí stránku a nebudete moct dál na školení.
 
 
-6. Uvidíte uvítací zprávy o nový účet.  Klikněte na tlačítko **spustit Learning**.
+6. Zobrazí se vám zobrazení uvítací zprávy o nový účet.  Klikněte na tlačítko **začít s výukou**.
+    > [!div class="mx-imgBorder"]
+    > ![Zobrazení uvítací zprávy](_img/vs-xamarin/vs-xamarin-confirm.png)
 
-    <img alt="Welcome message" src="_img/vs-xamarin/vs-xamarin-confirm.png" style="border: 1px solid #CCCCCC" />
+7. Je to!  Zobrazí se vám na portálu Xamarin University a jste připraveni seznámíte se se základními.
+    > [!div class="mx-imgBorder"]
+    > ![Portál Xamarin University](_img/vs-xamarin/vs-xamarin-portal.png)
 
-7. Je to!  Se zobrazí na portálu univerzity Xamarin a jste připraveni začít učení.
-
-     <img alt="Xamarin University portal" src="_img/vs-xamarin/vs-xamarin-portal.png" style="border: 1px solid #CCCCCC" />
-
-## <a name="eligibility"></a>Podmínky
-| Úrovni předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelných?    |
+## <a name="eligibility"></a>Způsobilost
+| Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní, roční cloud)   | VL, Azure, prodejní, vybrané NFR<sup>1</sup> | 6 měsíců       |  Ano |
-| Visual Studio Professional (standardní, roční cloud) | VL, Azure, maloobchodní                                       | 3 měsíců       |  Ano |
-| Visual Studio Test Professional (standardní)                         | VL, prodejní                                              | Není k dispozici                                             |  NÁ        |
-| MSDN platformy (standardní)                                          | VL, prodejní                                              | Není k dispozici                                             |  NÁ        |
-| Visual Studio Dev Essentials | NÁ  | Plánu úrovně Free                                             |  Ano        |
-| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NÁ|
+| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | 6 měsíců       |  Ano |
+| Visual Studio Professional (standardní a roční cloudové) | VL, Azure, maloobchodního prodeje                                       | 3 měsíce       |  Ano |
+| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                             |  NENÍ K DISPOZICI        |
+| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                             |  NENÍ K DISPOZICI        |
+| Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Plán Free                                             |  Ano        |
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
 
-<sup>1</sup>*zahrnuje: Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP).  Microsoft Partner Network (MPN), FTE, MCT softwaru a služeb Developer, BizSpark, představte si, cenná partnera Microsoftu (MVP), oblast ředitel (RD).   Vyloučí: MCT softwaru a služeb.*
+<sup>1</sup>*zahrnuje: neprodejné (NFR), Visual Studio Industry Partner (VSIP).    Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD).   Vyloučí: MCT Software & Services.*
 
 
-Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných.
+Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
 ## <a name="frequently-asked-questions"></a>Nejčastější dotazy
-### <a name="q--what-happens-when-my-free-subscription-expires"></a>Otázka: co se stane, když vyprší platnost předplatného volné?
-Účet si Xamarin univerzity A: a průběh zůstanou beze změn, ale vaše předplatné přejde do bezplatný účet, který má omezený přístup k naší materiálů. Pokud chcete nadále ponechat všechny výhody předplatné, můžete [měsíční předplatné](https://aka.ms/buy-xamarin-university).
+### <a name="q--what-happens-when-my-free-subscription-expires"></a>Otázka: co se stane, když vyprší platnost mé bezplatné předplatné?
+Odpověď: vaše aplikace na Xamarin University účtu a průběh zůstane zachován beze změny, ale vaše předplatné přejde na bezplatný účet, který má omezený přístup k naše materiály. Pokud chcete zachovat všechny výhody předplatného i nadále, můžete si [koupit měsíční předplatné](https://aka.ms/buy-xamarin-university).
 
-## <a name="support-resources"></a>Podpora prostředky
--  Potřebujete pomoc s Xamarin vysoké školy?  Můžete najít celou řadu zdrojů na [ https://university.xamarin.com/support ](https://university.xamarin.com/support).
--  Požádejte o pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné sady Visual Studio [odběry podporu](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+## <a name="support-resources"></a>Informační zdroje podpory
+-  Potřebujete pomoc s Xamarin University?  Můžete najít širokou škálu zdrojů podpory na [ https://university.xamarin.com/support ](https://university.xamarin.com/support).
+-  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
+-  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

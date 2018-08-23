@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbe18bcfdc4b90960abeae9ae88dcee8817780b
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 533db5643359c245b2fc725e1eebcbb39487317b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388121"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624276"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Rychlý start: Nejdřív se podívejte na integrovaném vývojovém prostředí sady Visual Studio
 
@@ -104,12 +104,13 @@ By se vyskytnou potíže při použití sady Visual Studio, nebo pokud máte ná
 
 Jsme se zabývali jenom některé funkce sady Visual Studio k seznámit s uživatelským rozhraním. Chcete-li podrobněji:
 
-- Podrobnější prohlídku sady Visual Studio a dokonce i dabble v ladění, v [přehled integrovaném vývojovém prostředí sady Visual Studio](../ide/visual-studio-ide.md)
+> [!div class="nextstepaction"]
+> [Další informace o editoru kódu](../ide/quickstart-editor.md)
 
-- Přejděte **prvky obecné uživatelského rozhraní** část dokumentace k VS, která přejde do větší hloubky týkající se oken, jako [seznam chyb](../ide/reference/error-list-window.md), [okno výstup](../ide/reference/output-window.md), [ Okno vlastností](../ide/reference/properties-window.md), a [dialogové okno Možnosti](../ide/reference/options-dialog-box-visual-studio.md)
+> [!div class="nextstepaction"]
+> [Seznamte se s projekty a řešení](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Viz také:
 
-- [Rychlý start: Přizpůsobení integrovaného vývojového prostředí](../ide/personalizing-the-visual-studio-ide.md)
-- [Rychlý start: Psaní kódu v editoru](../ide/quickstart-editor.md)
-- [Rychlý start: Projekty a řešení](../ide/quickstart-projects-solutions.md)
+- [Přehled prostředí IDE sady Visual Studio](../ide/visual-studio-ide.md)
+- [Změna barvy motivu a písma](../ide/quickstart-personalize-the-ide.md)

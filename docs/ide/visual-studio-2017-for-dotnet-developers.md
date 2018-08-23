@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: ef9101a0dbad68dd75792f34526bac550a331286
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468270"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42624206"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Průvodce produktivitou Visual Studio 2017 C#
 
@@ -46,12 +46,12 @@ Tady jsou oblíbené klávesové zkratky sady Visual Studio:
 | **CTRL**+**.** (také **Alt**+**zadejte** v profil jazyka C#) | Rychlé akce a refaktoringy | Zobrazit, jaký kód opravy, jsou k dispozici na ukazatel pozice nebo kód výběr akce pro generování kódu, refaktoring nebo jiných rychlé akce |
 | **Ctrl**+**D** | Duplicitní řádek | Duplikuje řádku kódu, který se kurzor nachází (k dispozici v **Visual Studio 2017 verze 15.6** a novější) |
 | **SHIFT**+**Alt**+**+**/**-** | Rozbalit/Sbalit výběr | Rozbalíte nebo sbalíte aktuální výběr v editoru (k dispozici v **Visual Studio 2017 verze 15.5** a novější) |
-| **SHIFT** + **Alt** + **in** | Vložit další odpovídající blikajícího kurzoru | Přidá výběr a blikající kurzor na dalším místě, která odpovídá aktuální výběr (k dispozici v **Visual Studio 2017 verze 15.8** a novější) |
+| **CTRL** + **Alt** + **.** | Vložit další odpovídající blikajícího kurzoru | Přidá výběr a blikající kurzor na dalším místě, která odpovídá aktuální výběr (k dispozici v **Visual Studio 2017 verze 15.8** a novější) |
 | **Ctrl**+**Q** | Snadné spuštění | Hledat všechna nastavení sady Visual Studio |
 | **F5** | Spustit ladění | Spuštění ladění aplikace |
 | **Ctrl**+**F5** | Spustit bez ladění | Místní spuštění aplikace bez ladění |
-| **CTRL**+**K**,**D** (výchozí profil) nebo **Ctrl**+**E**,**D**  (Profil jazyka C#) | Formátovat dokument | Vyčistí formátování narušení v souboru na základě nového řádku, mezery a nastavení odsazení |
-| **CTRL**+**\\**,**E** (výchozí profil) nebo **Ctrl**+**W**, **Elektronické** (profil jazyka C#) | Zobrazení seznamu chyb | Zobrazit všechny chyby v dokumentu, projekt nebo řešení |
+| **CTRL**+**K**,**D** (výchozí profil) nebo **Ctrl**+**E**,**D**  (Profil jazyka C#) | [Formátovat dokument](code-styles-and-quick-actions.md#format-document-command) | Vyčistí formátování narušení v souboru na základě nového řádku, mezery a nastavení odsazení |
+| **CTRL**+**\\**,**Ctrl**+**E** (výchozí profil) nebo **Ctrl** + **W**,**E** (profil jazyka C#) | Zobrazení seznamu chyb | Zobrazit všechny chyby v dokumentu, projekt nebo řešení |
 | **ALT** + **Page Up nebo PAGE DOWN** | Přejít na další/předchozí problém | Přejít na předchozí nebo další chyba, upozornění, návrh v dokumentu (k dispozici v **Visual Studio 2017 verze 15.8** a novější) |
 
 > [!NOTE]

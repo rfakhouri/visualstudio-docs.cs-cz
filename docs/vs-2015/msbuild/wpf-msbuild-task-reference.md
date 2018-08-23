@@ -1,0 +1,74 @@
+---
+title: Referenční dokumentace WPF MSBuild – úloha | Dokumentace Microsoftu
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- WPF MSBuild task reference [WPF MSBuild], term/definition table
+- build tasks [WPF MSBuild], Microsoft build engine
+- build tasks using the Microsoft build engine [WPF MSBuild], compile markup and process resources
+- WPF MSBuild task reference [WPF MSBuild]
+ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
+caps.latest.revision: 7
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3423d08777cc19a29fcb145e4394866ce445aec4
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42629096"
+---
+# <a name="wpf-msbuild-task-reference"></a>WPF MSBuild – referenční dokumentace úlohy
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Nejnovější verzi tohoto tématu můžete najít v [WPF MSBuild – referenční dokumentace úlohy](https://docs.microsoft.com/visualstudio/msbuild/wpf-msbuild-task-reference).  
+  
+  
+Proces sestavení Windows Presentation Foundation (WPF) rozšiřuje další sadu úloh sestavení, včetně úloh ke kompilaci kódu a zdroje procesu Microsoft build engine (MSBuild).  
+  
+## <a name="in-this-section"></a>V tomto oddílu  
+ [FileClassifier](../msbuild/fileclassifier-task.md)  
+ Klasifikuje sadu prostředků zdroje jako ty, které budou vloženy do sestavení. Pokud prostředek není lokalizovatelné, je vložen do sestavení hlavní aplikace; v opačném případě se vloží do satelitního sestavení.  
+  
+ [Generatetemporarytargetassembly –](../msbuild/generatetemporarytargetassembly-task.md)  
+ Generuje sestavení, pokud se alespoň jeden [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] stránky v projektu odkazuje na typ, který je deklarován místně v daném projektu. Generované sestavení se odebere po dokončení procesu sestavení, nebo pokud proces sestavení se nezdaří.  
+  
+ [GetWinFXPath](../msbuild/getwinfxpath-task.md)  
+ Vrátí adresáře aktuálního [!INCLUDE[TLA#tla_winfx](../includes/tlasharptla-winfx-md.md)] modulu runtime.  
+  
+ [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md)  
+ Převede bez možnosti lokalizace [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] soubory do kompilovaného binárního formátu projektu.  
+  
+ [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)  
+ Provede kompilaci značek druhého průchodu na [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] soubory, které odkazují na typy ve stejném projektu.  
+  
+ [Mergelocalizationdirectives –](../msbuild/mergelocalizationdirectives-task.md)  
+ Sloučí atributy a komentáře lokalizace jednoho nebo víc [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] binárních souborů do jediného souboru pro celé sestavení.  
+  
+ [Resourcesgenerator –](../msbuild/resourcesgenerator-task.md)  
+ Vloží jednu nebo více prostředků (JPG, ICO, BMP, [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] v binárním formátu a ostatními typy rozšíření) do souboru .resources.  
+  
+ [Uidmanager –](../msbuild/uidmanager-task.md)  
+ Kontroluje, aktualizuje nebo odebere jedinečné identifikátory (UID), aby bylo možné lokalizovat všechny [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] prvky, které jsou zahrnuté ve zdroji [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] soubory.  
+  
+ [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)  
+ Přidá  **\<hostInBrowser / >** element do manifestu aplikace (*projectname*. exe.manifest) při [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] sestavení projektu.  
+  
+## <a name="see-also"></a>Viz také  
+ [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)
+
+
+

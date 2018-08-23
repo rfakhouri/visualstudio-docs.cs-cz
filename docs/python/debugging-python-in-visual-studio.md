@@ -1,7 +1,7 @@
 ---
 title: Ladění kódu v Pythonu
 description: Názorný postup funkce ladění v sadě Visual Studio speciálně pro kód Python, včetně nastavení zarážek, krokování, kontrolu hodnoty, prohlížení výjimek a ladění v interaktivním okně.
-ms.date: 07/13/2018
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc2b4893906e5f3f8902ab6cc08d17d61a45133f
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008278"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42623961"
 ---
 # <a name="debug-your-python-code"></a>Ladění kódu Pythonu
 
@@ -192,48 +192,44 @@ Všimněte si, že standardní okna ladicího programu, jako například **proce
 
 ![Interaktivní okno Možnosti ladění](media/debugging-interactive-options.png)
 
-## <a name="use-the-experimental-debugger"></a>Použít experimentální ladicí program
+<a name="use-the-experimental-debugger"></a>
 
-Od verze Visual Studio 2017 Preview 4.0, můžete přejít do aplikace pomocí "experimentální ladicí program", která je založená na verzi ptvsd verze 4.1 a vyšší. Chcete-li vyjádřit výslovný souhlas, vyberte **nástroje** > **možnosti** nabídce příkaz a pak přejděte na **Python** > **experimentální**dialogové okno Možnosti a vyberte **použít experimentální ladicí program**.
+## <a name="use-the-legacy-debugger"></a>Používání starší verze ladicího programu
 
-Experimentální ladicí program je kompatibilní s pouze omezené prostředí Pythonu, jak je popsáno v následující tabulce:
+Visual Studio 2017 verze 15,8 a novější použijte ladicí program založené na verzi ptvsd verze 4.1 a vyšší. Tuto verzi ptvsd je kompatibilní s Python 2.7 nebo Python 3.5 +. Pokud používáte Python 2.6, 3.1 3.4 nebo Ironpythonu, Visual Studio zobrazí chybu, **ladicí program nepodporuje toto prostředí Python**:
 
-| Verze Pythonu | Kompatibilní se v experimentálním ladicím programu |
-| --- | --- |
-| 2.6 | Ne |
-| 2.7 | Ano |
-| 3.1: 3.4 | Ne |
-| 3.5 a novější | Ano |
-| IronPython | Ne |
+![Ladicí program nepodporuje tuto chybu prostředí Pythonu při použití ladicího programu](media/debugging-experimental-incompatible-error.png)
 
-Pokud se pokusíte použít experimentální ladicí program s nekompatibilní prostředí, sada Visual Studio zobrazí chybu, **ladicího programu není kompatibilní s tímto prostředím**:
+V těchto případech je nutné použít starší ladicí program (což je výchozí hodnotou v sadě Visual Studio 2017 verze 15.7 a starší). Vyberte **nástroje** > **možnosti** nabídky příkazu, přejděte na **Python** > **ladění**a vyberte **pomocí starší verze ladicího programu** možnost.
 
-![Ladicí program není kompatibilní s touto chybou prostředí při použití v experimentálním ladicím programu](media/debugging-experimental-incompatible-error.png)
+Pokud si nainstalujete starší verzi ptvsd v aktuálním prostředí (například ze starší verze 4.0.x nebo 3.x verze požadovaná pro vzdálené ladění), Visual Studio může zobrazit chybu nebo upozornění.
 
-Vyberte **zakázat v experimentálním ladicím programu** příkaz, který vymaže **použít experimentální ladicí program** možnost.
+Chyba, **balíčků ladicího programu se nepovedlo načíst**, se zobrazí, když si nainstalujete ptvsd 3.x:
 
-> [!Note]
-> Upozornění se nezobrazí v současné době pro Python 3.3 a 3.4.
+![Ladicí program balíček nelze načíst chyby při používání ladicího programu](media/debugging-experimental-version-error.png)
 
-Pokud si nainstalujete starší verzi ptvsd v aktuálním prostředí (například starší verze 4.0.x 3.x verze požadovaná pro vzdálené ladění), sada Visual Studio zobrazí buď je chyba **balíčků ladicího programu se nepovedlo načíst**, nebo Toto upozornění **ladicí program balíček je zastaralý**:
+V tomto případě vyberte **pomocí starší verze ladicího programu** nastavit **pomocí starší verze ladicího programu** možnost a restartování ladicího programu.
 
-![Ladicí program balíček nelze načíst chyby při použití v experimentálním ladicím programu](media/debugging-experimental-version-error.png)
+Toto upozornění **ladicí program balíček je zastaralý**, se zobrazí, když jste nainstalovali dřívější verzi ptvsd 4.x:
 
-![Ladicí program balíček je zastaralý, upozornění při použití v experimentálním ladicím programu](media/debugging-experimental-version-warning.png)
-
-Ke správě vaší instalace ptvsd, použijte **balíčky** kartu **prostředí Pythonu** okna, nebo použijte následující příkazy z příkazového řádku:
-
-```powershell
-# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
-pip uninstall ptvsd
-
-# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
-# -pre is required to allow pre-release versions as currently required by the experimental debugger.
-pip install --upgrade ptvsd -pre
-```
+![Ladicí program balíček je zastaralý, upozornění, když pomocí ladicího programu](media/debugging-experimental-version-warning.png)
 
 > [!Important]
 > I když se můžete rozhodnout ignorovat upozornění pro některé verzi ptvsd, Visual Studio nemusí fungovat správně.
+
+Ke správě vaší instalace ptvsd:
+
+1. Přejděte **balíčky** kartu **prostředí Pythonu** okna.
+
+1. Do vyhledávacího pole zadejte "ptvsd" a zkontrolujte nainstalovanou verzi ptvsd:
+
+    ![Kontrola verzi ptvsd v okně prostředí Pythonu](media/debugging-experimental-check-ptvsd.png)
+
+1. Pokud je verze nižší než 4.1.1a9 (verze součástí sady Visual Studio), vyberte **X** napravo od balíček odinstalovat starší verzi. Visual Studio použije jeho jako součást balíčku verze. (Můžete odinstalovat i z Powershellu pomocí `pip uninstall ptvsd`.)
+
+1. Alternativně můžete aktualizovat balíček ptvsd jeho nejnovější verzi. Zadejte `ptvsd --upgrade -pre` do vyhledávacího pole, vyberte **spusťte příkaz: pip nainstalujte ptvsd--upgrade - pre**. (Můžete také použít stejný příkaz z Powershellu.)
+
+    ![Poskytuje příkaz pro upgrade v okně prostředí Pythonu](media/debugging-experimental-upgrade-ptvsd.png)
 
 ## <a name="see-also"></a>Viz také:
 

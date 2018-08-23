@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9dbc56994f741f48dd97c9eba365c7228585c2a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499900"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42623892"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalace podpory Pythonu v sadě Visual Studio ve Windows
 
@@ -26,7 +26,7 @@ Instalace podpory Pythonu pro Visual Studio (označované také jako Python Tool
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 a starší](#visual-studio-2013-and-earlier)
 
-Pro Visual Studio 2015 a starší budete také muset samostatně [nainstalujte interpret Pythonu](installing-python-interpreters.md) podle vašeho výběru (Python 3.5 a starší; 3.6 nepodporuje a generuje danou zprávu **nepodporované Python verze 3.6**). Stejná stránka také obsahuje pokyny k přidání existujícího interpret Pythonu pro Visual Studio 2017.
+Pro Visual Studio 2015 a starší budete také muset samostatně [nainstalujte interpret Pythonu](installing-python-interpreters.md) podle vašeho výběru (Python 3.5 a starší; 3.6 + se nepodporuje a vygeneruje se zpráva podobná **nepodporované Python verze 3.6**). Stejná stránka také obsahuje pokyny k přidání existujícího interpret Pythonu pro Visual Studio 2017.
 
 K rychlé otestování podpory Pythonu po provedení kroků instalace, otevřete **interaktivní Python** okno stisknutím kombinace kláves **Alt**+**můžu** a zadáním `2+2`. Pokud nevidíte výstup `4`, spusťte opětovnou kontrolu kroků.
 

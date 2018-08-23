@@ -1,5 +1,5 @@
 ---
-title: Úvod do projektů a řešení v sadě Visual Studio
+title: Úvod do projektů a řešení
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512301"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624383"
 ---
-# <a name="quickstart-projects-and-solutions"></a>Rychlý start: Projekty a řešení
+# <a name="learn-about-projects-and-solutions"></a>Seznamte se s projekty a řešení
 
-V tomto rychlém startu během 10 minut podíváme, co to znamená, že k vytvoření *řešení* a *projektu* v sadě Visual Studio. Řešení je kontejner, který se používá k uspořádání jeden nebo více projektů související kód, například knihovny tříd a odpovídající testovací projekt. Podíváme se na vlastnosti projektu a některé soubory, které může obsahovat. Také vytvoříme odkaz z jednoho projektu do druhého.
+V tomto článku úvodní podíváme, co to znamená, že k vytvoření *řešení* a *projektu* v sadě Visual Studio. Řešení je kontejner, který se používá k uspořádání jeden nebo více projektů související kód, například knihovny tříd a odpovídající testovací projekt. Podíváme se na vlastnosti projektu a některé soubory, které může obsahovat. Také vytvoříme odkaz z jednoho projektu do druhého.
 
 Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
@@ -176,19 +176,9 @@ Chceme použít testovací projekt nové jednotky k otestování v metodě **Qui
 
 Pokud chcete zkontrolovat, že je funkční testování částí, zvolte **testování** > **spustit** > **všechny testy** z řádku nabídek. Zobrazí se okno **Průzkumníka testů** otevře a měli byste vidět, který **TestGetCurrentDate** testovací průchody.
 
-Blahopřejeme k dokončení tohoto rychlého startu! V dalším kroku můžete chtít prozkoumat některé další rychlé starty pro sadu Visual Studio, nebo si přečtěte Další informace o tom, jak [vytváření projektů a řešení](../ide/creating-solutions-and-projects.md).
-
-> [!div class="nextstepaction"]
-> [Rychlý start: Nejdřív se podívejte na integrovaném vývojovém prostředí sady Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Rychlý start: Přizpůsobení sady Visual Studio](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [Rychlý start: Psaní kódu v editoru](../ide/quickstart-editor.md)
-
 ## <a name="see-also"></a>Viz také:
 
+- [Vytváření projektů a řešení](../ide/creating-solutions-and-projects.md)
 - [Správa vlastností projektu a řešení](../ide/managing-project-and-solution-properties.md)
 - [Správa odkazů v projektu](../ide/managing-references-in-a-project.md)
 - [Vývoj kódu v sadě Visual Studio bez projektů nebo řešení](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

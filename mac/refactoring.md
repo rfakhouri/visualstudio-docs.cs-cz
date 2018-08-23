@@ -1,16 +1,16 @@
 ---
 title: Refaktoring kódu
 description: Opětovné uspořádání kódu v sadě Visual Studio for Mac je jednodušší prostřednictvím analýzy zdroje.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: 20259d2565fd1dc32b38d5b2c8bba9c6fbf06db1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8652b73b9bd7e414a989a1b711238126a742290f
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176255"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42624008"
 ---
 # <a name="refactoring"></a>Refaktoring
 

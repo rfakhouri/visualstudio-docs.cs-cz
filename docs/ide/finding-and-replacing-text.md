@@ -1,6 +1,6 @@
 ---
-title: Najít a nahradit text
-ms.date: 05/07/2018
+title: Najít a nahradit text a výběr více blikajícího kurzoru
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -27,71 +27,106 @@ helpviewer_keywords:
 - find and replace
 - find text
 - replace text
-ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
+- multi-caret selection
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7051b90dde45965b76e8a9e08b33b5326ff2848c
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106749"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42624391"
 ---
-# <a name="find-and-replace-text"></a>Najít a nahradit text
+# <a name="find-and-replace-text"></a>Vyhledání a nahrazení textu
 
-Můžete najít a nahradit text v editoru Visual Studio pomocí [najít a nahradit](#find-and-replace-control) nebo [vyhledání a nahrazení v souborech](#find-in-files-and-replace-in-files).
-
-> [!TIP]
-> Pokud jste přejmenování kód symboly, například proměnné a metody, je lepší *[refactor](../ide/reference/rename.md)* je než chcete použijte hledání a nahrazování. Refaktoring je inteligentní a porozuměl jim oboru, zatímco hledání a nahrazování slepě nahradí všechny instance.
-
-Vyhledání a nahrazení funkce je k dispozici v editoru, v některých jiných založený na textu windows, jako **Najít výsledky** windows návrháře windows například návrháře XAML a Návrhář formulářů Windows a nástroj windows.
-
-Můžete určit obor vyhledávání aktuálním dokumentu, aktuální řešení nebo vlastní sadu složek. Můžete také zadat sadu přípon názvů souborů pro hledání několika souborů. Přizpůsobit syntaxe vyhledávání pomocí .NET [regulární výrazy](../ide/using-regular-expressions-in-visual-studio.md).
+Můžete najít a nahradit text v editoru sady Visual Studio s použitím [najít a nahradit](#find-and-replace-control) nebo [najít/nahradit v souborech](#find-replace-in-files). Nová funkce v sadě Visual Studio 2017 verze 15.8, můžete najít a nahradit *některé* instance modelu s použitím  *[více blikající kurzor o výběr](#multi-caret-selection)*.
 
 > [!TIP]
-> [Najít/příkaz](../ide/find-command-box.md) pole je k dispozici jako ovládacím prvku panel nástrojů, ale nejsou viditelná ve výchozím nastavení. Chcete-li zobrazit **najít/příkaz** vyberte **přidat nebo odebrat tlačítka** na **standardní** nástrojů a pak vyberte **najít**.
+> Pokud se přejmenování symboly kódu, jako jsou proměnné a metody, je lepší *[Refaktorujte](../ide/reference/rename.md)* je než můžete najít a nahradit. Refaktoring je inteligentní a rozumí oboru, zatímco najít a nahradit slepě nahradí všechny instance.
 
-## <a name="find-and-replace-control"></a>Najít a nahradit ovládací prvek
+Funkce Najít a nahradit je k dispozici v editoru, v některých jiných oknech založený na textu, jako **výsledky hledání** windows, v oknech návrháře, jako je například Návrhář XAML a Návrhář formulářů Windows a v oknech nástrojů.
 
-**Najít a nahradit** ovládací prvek se zobrazí v pravém horním rohu okna editoru kódu. **Najít a nahradit** řízení okamžitě označuje všechny výskyty řetězce zadaný hledaný řetězec v aktuálním dokumentu. Můžete přejít z výskytů do jiného tak, že zvolíte **najít další** tlačítko nebo **najít předchozí** tlačítko u ovládacího prvku vyhledávání.
+Můžete nastavit obor hledání na aktuální dokument, aktuální řešení nebo vlastní sadu složek. Můžete také zadat sadu přípon názvů souborů pro vyhledávání s více soubory. Přizpůsobení syntaxi vyhledávání s použitím rozhraní .NET [regulární výrazy](../ide/using-regular-expressions-in-visual-studio.md).
 
-![Najít a nahradit ovládací prvek](media/find-and-replace-box.png)
+> [!TIP]
+> [Najít/příkaz](../ide/find-command-box.md) pole je k dispozici jako ovládací prvek panelu nástrojů, ale není ve výchozím nastavení viditelný. Chcete-li zobrazit **najít/příkaz** vyberte **přidat nebo odebrat tlačítka** na **standardní** nástrojů a pak vyberte **najít**.
 
-Možnosti můžete nahrazení kliknutím na tlačítko Další na **najít** textové pole. Chcete-li jeden nahrazení najednou, vyberte **nahradit další** vedle položky **nahradit** textové pole. Pokud chcete nahradit všechny shody, vyberte **nahradit všechny** tlačítko.
+## <a name="find-and-replace-control"></a>Najít a nahradit řídící prvek
 
-Chcete-li změnit barvu zvýraznění pro shody, vyberte **nástroje** nabídce vyberte možnost **možnosti**a potom zvolte **prostředí**a vyberte **písma a barev** . V **zobrazit nastavení pro** seznamu, vyberte **textového editoru**a potom v **zobrazení položek** seznamu, vyberte **najít zvýrazněte (rozšíření)**.
+**Najít a nahradit** ovládací prvek se zobrazí v pravém horním rohu okna editoru kódu. **Najít a nahradit** ovládací prvek okamžitě zvýrazní všechny výskyty daného hledaného řetězce v aktuálním dokumentu. Můžete přecházet z jednoho výskytu na jiný výběrem **najít další** tlačítko nebo **najít předchozí** tlačítka na ovládacím prvku hledání.
 
-### <a name="search-tool-windows"></a>Okna nástrojů vyhledávání
+![Najít a nahradit v sadě Visual Studio](media/find-and-replace-box.png)
 
-Můžete použít **najít** řízení v kódu nebo text systému windows, jako například **výstup** windows a **Najít výsledky** windows tak, že vyberete **upravit**  >  **Najít a nahradit** nebo stiskněte **Ctrl + F**.
+Možnostem výměny můžete přejít kliknutím na tlačítko vedle **najít** textového pole. Chcete-li nahrazovat po jednom čas, zvolte **nahradit další** vedle **nahradit** textového pole. Chcete-li nahradit všechny shody, zvolte **Nahradit vše** tlačítko.
 
-Verzi **najít** ovládací prvek je k dispozici také v některé nástroje systému windows. Například můžete filtrovat seznam ovládacích prvků v **sada nástrojů** okna tak, že zadáte text do vyhledávacího pole. Zahrnout další okna nástrojů, které vám umožní vyhledat jejich obsah **Průzkumníku řešení**, **vlastnosti** okně a **Team Explorer**.
+Chcete-li změnit barvu zvýraznění shody, zvolte **nástroje** nabídce vyberte možnost **možnosti**a klikněte na tlačítko **prostředí**a vyberte **písma a barvy** . V **zobrazit nastavení pro** seznamu vyberte **textový Editor**a pak v **zobrazení položek** seznamu vyberte **najít zvýraznění (rozšíření)**.
+
+### <a name="search-tool-windows"></a>Hledání oken nástrojů
+
+Můžete použít **najít** v ovládacím prvku kódu nebo textových oknech, jako například **výstup** windows a **výsledky hledání** windows tak, že vyberete **upravit**  >  **Najít a nahradit** nebo stiskněte **Ctrl + F**.
+
+Verze **najít** ovládací prvek je k dispozici také v některých oknech nástrojů. Například můžete filtrovat seznam ovládacích prvků v **nástrojů** okna tak, že zadáte text do vyhledávacího pole. Zahrnout ostatním oknům nástrojů, které umožňují prohledávat jejich obsah **Průzkumníku řešení**, **vlastnosti** okně a **Team Exploreru**.
 
 ## <a name="find-in-files-and-replace-in-files"></a>Najít v souborech a nahradit v souborech
 
-**Vyhledání a nahrazení v souborech** funguje, jako **najít a nahradit** řídit, s tím rozdílem, že můžete definovat obor pro hledání. Nejen můžete hledat aktuální soubor otevřete v editoru, ale také všechny otevřít dokumenty, celé řešení, aktuální projekt a vybrané složky sad. Můžete také prohledat podle přípony názvu souboru. Pro přístup k **vyhledání a nahrazení v souborech** dialogové okno, vyberte **najít a nahradit** na **upravit** nabídky nebo klikněte na tlačítko **Ctrl + Shift + F**.
+**Najít/nahradit v souborech** funguje jako **najít a nahradit** řídit, s tím rozdílem, že můžete definovat rozsah hledání. Nejenže můžete vyhledávat v aktuálně otevřeném souboru v editoru, ale také všech otevřených dokumentech, celém řešení, aktuálního projektu a vybrané sadě složek. Můžete také vyhledat pomocí přípony názvu souboru. Přístup **najít/nahradit v souborech** dialogu **najít a nahradit** na **upravit** nabídky nebo stisknutím klávesy **Ctrl + Shift + F**.
 
-![Najít v souborech – dialogové okno](media/find-in-files-box.png)
+![Najít v souborech v sadě Visual Studio](media/find-in-files-box.png)
 
 ### <a name="find-results"></a>Výsledky hledání
 
-Pokud vyberete **najít všechny**, **Najít výsledky** se otevře okno a uvádí pro hledání shody. Výběr výsledek v seznamu zobrazí přidružený soubor a klade důraz na shodu. Pokud soubor již není otevřený pro úpravy, je otevřen v karta náhled na pravé straně karty dobře. Můžete použít **najít** řízení k hledání v **Najít výsledky** seznamu.
+Pokud zvolíte **najít všechny**, **výsledky hledání** okno se otevře a zobrazí seznam odpovídajících položek pro hledání. Výběr výsledku v seznamu zobrazí přidružený soubor a zvýrazní shodu. Pokud soubor ještě není otevřený pro úpravy, bude otevřen v kartě preview na pravé straně karty dobře. Můžete použít **najít** ovládací prvek prohledávat **výsledky hledání** seznamu.
 
-### <a name="create-custom-search-folder-sets"></a>Vytvoří vlastní vyhledávání složky sady
+### <a name="create-custom-search-folder-sets"></a>Vytvoření sad složek pro vlastní vyhledávání
 
-Obor vyhledávání můžete definovat výběrem **zvolte složky výsledků hledání** tlačítko (to vypadá **...** ) vedle položky **Hledat v** pole. V **zvolte složky výsledků hledání** dialogové okno, můžete určit sadu složek hledání a specifikace můžete uložit tak, aby jej můžete znovu použít později.
+Můžete definovat obor hledání výběrem **zvolit složky pro hledání** tlačítko (vypadá jako **...** ) vedle položky **Hledat v** pole. V **zvolit složky pro hledání** dialogové okno, můžete určit sadu složek pro hledání a specifikaci můžete uložit tak, aby jej můžete znovu použít později.
 
 > [!TIP]
-> Pokud jste změnili jednotce vzdáleného počítače do místního počítače, můžete zadat složky, které se mají hledat ve vzdáleném počítači.
+> Pokud jste změnili jednotky vzdáleném počítači do svého místního počítače, můžete určit složky pro hledání na vzdáleném počítači.
 
-### <a name="create-custom-component-sets"></a>Vytvoří vlastní součást sady
+### <a name="create-custom-component-sets"></a>Vytvoření vlastních sad součástí
 
-Součást sady můžete definovat jako obor hledání tak, že zvolíte **upravit sadu součást vlastní** vedle položky **Hledat v** pole. Můžete zadat nainstalované rozhraní .NET nebo COM součásti, projektů sady Visual Studio, které jsou součástí vašeho řešení, nebo všechny sestavení nebo typ knihovny (*.dll*, *.tlb*, *.olb*, *.exe*, nebo *.ocx*). Chcete-li vyhledávat odkazy, vyberte **vypadat v odkazech na** pole.
+Součást sady můžete definovat jako obor hledání výběrem **upravit sadu vlastních komponent** vedle **Hledat v** pole. Můžete určit nainstalované součásti .NET nebo COM, projekty aplikace Visual Studio, které jsou součástí vašeho řešení nebo libovolné sestavení nebo typ knihovny (*.dll*, *.tlb*, *.olb*, *.exe*, nebo *.ocx*). Chcete-li prohledat odkazy, vyberte **Hledat v odkazech** pole.
 
-## <a name="see-also"></a>Viz také
+## <a name="multi-caret-selection"></a>Výběr více blikajícího kurzoru
+
+**Novinka v sadě Visual Studio 2017 verze 15.8**
+
+Použití *více blikající kurzor o výběr* provádět stejné úpravy ve dvou nebo více míst ve stejnou dobu. Například můžete vložit stejný text nebo změnit stávající text v několika umístěních ve stejnou dobu.
+
+Na následujícím snímku obrazovky `-0000` je vybrána ve třech umístěních; Pokud uživatel stiskne **odstranit**, odstraní se všechny tři možnosti:
+
+![Výběr více blikající kurzor do souboru XML v sadě Visual Studio](media/multi-caret-selection.png)
+
+Pokud chcete vybrat více střížek, klikněte na nebo obvyklým způsobem provést první výběr textu a stiskněte klávesu **Alt** klikněte na tlačítko nebo vybrat text v každé další umístění. Můžete také automaticky přidat odpovídající text jako další výběry nebo vyberte pole text, který má upravit stejně jako na každém řádku.
+
+> [!TIP]
+> Pokud jste vybrali **Alt** jako modifikační klávesa pro kliknutí myší přejít k definici v **nástroje** > **možnosti**, více blikající kurzor o výběr je zakázaný.
+
+### <a name="commands"></a>Příkazy
+
+Použijte následující klíče a akcí pro výběr více blikající kurzor o chování:
+
+|Zástupce|Akce|
+|-|-|
+|**CTRL**+**Alt** + klikněte na|Přidat sekundární blikajícího kurzoru|
+|**CTRL**+**Alt** + dvakrát klikněte na panel|Přidat sekundární slovo výběr|
+|**CTRL**+**Alt** + klikněte na + přetažení|Přidat sekundární výběr|
+|**SHIFT**+**Alt**+**.**|Přidejte další odpovídající text jako výběr|
+|**CTRL**+**Shift**+**Alt**+**,**|Přidejte všechny odpovídající text jako výběry|
+|**SHIFT**+**Alt**+**,**|Odebrat posledního výskytu vybrané|
+|**CTRL**+**Shift**+**Alt**+**.**|Přeskočit další odpovídající výskyt|
+|**ALT** + klikněte na|Přidat pole výběru|
+|**ESC** nebo klikněte na tlačítko|Zrušte zaškrtnutí všech výběrů|
+
+Některé příkazy jsou také k dispozici na **upravit** nabídky v části **více Střížek**:
+
+![Více střížek rozevírací nabídce v sadě Visual Studio](media/edit-menu-multiple-carets.png)
+
+## <a name="see-also"></a>Viz také:
 
 - [Použití regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
-- [Refaktorovat kódu v sadě Visual Studio](../ide/refactoring-in-visual-studio.md)
+- [Refaktorování kódu v sadě Visual Studio](../ide/refactoring-in-visual-studio.md)

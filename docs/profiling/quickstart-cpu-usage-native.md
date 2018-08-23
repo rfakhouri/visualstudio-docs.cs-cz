@@ -15,18 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 599ca672e0f11c5fa33564140b450d156ed9c390
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c4cf51a4961d6b9139d4f8fdbfd6c5df2ab0052c
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39640067"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624085"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Rychlý start: Analýza dat o využití procesoru v aplikaci Visual Studio (C++)
 
 Visual Studio poskytuje mnoha výkonným funkcím, které vám pomůžou analyzovat problémy s výkonem v aplikaci. Toto téma poskytuje rychlý způsob, jak Seznamte se s některými základními funkcemi. Tady podíváme na nástroj, který identifikovat kritické body výkonu kvůli vysokému využití procesoru. Diagnostické nástroje jsou podporované pro vývoj rozhraní .NET v sadě Visual Studio, včetně ASP.NET, nativního vývoje a vývoje v jazyce C++.
 
 Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravovat diagnostické relace. Pokud **využití procesoru** nástroj je zde popsáno, vám neuděluje data, která budete potřebovat, [jiných nástrojů pro profilaci](../profiling/profiling-feature-tour.md) poskytují různé druhy informací, které může být pro vás užitečné. V řadě případů může být kritickým bodem aplikace něco jiného než procesor, třeba paměť, vykreslování uživatelského rozhraní nebo dlouhá odezva síťového požadavku. Diagnostické centrum nabízí řadu dalších možností, jak data tohoto druhu zaznamenávat a analyzovat.
+
+Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s ladicím programem (**diagnostické nástroje** okno). Ve Windows 7 a novější, můžete použít nástroj a dodatečně [Profiler výkonu](../profiling/profiling-feature-tour.md).
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 

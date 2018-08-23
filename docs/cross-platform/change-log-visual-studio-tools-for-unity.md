@@ -1,7 +1,7 @@
 ---
 title: Protokol změn (Visual Studio Tools for Unity, Windows) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,18 +10,91 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 65d78b5b37396572e73928a51f2f215b72dfa311
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6a8f2b866bd1bb2c4d13f3cb3c40c1f6fbc14683
+ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381052"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42624333"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Protokol změn (Visual Studio Tools for Unity, Windows)
 Protokol změn Visual Studio Tools for Unity.
 
+## <a name="3804"></a>3.8.0.4
+ Vydáno 14. srpna 2018
+ 
+### <a name="new-features"></a>Nové funkce
+
+-   **Vyhodnocení:**
+
+    -   Přidání podpory pro hodnoty ukazatele.
+    
+    -   Přidání podpory pro obecné metody.
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Integrace:**
+
+    -   Inteligentní načíst znovu s více projekty změnit.
+
+## <a name="3803"></a>3.8.0.3
+ Vydáno 24. července 2018
+ 
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Generování projektu:**
+
+    -   Alternativní řešení pro chybu Unity výkonu, která byla opravena Unity vrácena zpět.
+
+## <a name="3802"></a>3.8.0.2
+ Vydáno 7. července 2018
+ 
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Generování projektu:**
+
+    -   Přechodné alternativní řešení pro chyby výkonu Unity: při vytváření projektů do mezipaměti MonoIslands.
+    
+## <a name="3801"></a>3.8.0.1
+ Vydáno 26. června 2018
+ 
+### <a name="new-features"></a>Nové funkce
+
+-   **Ladění:**
+
+    -   Přidání podpory pro příkazy UserLog a UserBreak.
+    
+    -   Podpora přidání opožděné načtení typu (optimalizace síťová latence odezvy zatížení a ladicí program).
+       
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Vyhodnocení:**
+
+    -   Vylepšené vyhodnocení výrazu binární operátor a metoda vyhledávání.
+
+## <a name="3800"></a>3.8.0.0
+ Vydáno 30. května 2018
+ 
+### <a name="new-features"></a>Nové funkce
+
+-   **Ladění:**
+
+    -   Přidání podpory pro zobrazení proměnné v asynchronní konstrukce.
+    
+    -   Přidání podpory pro vnořené typy zpracování, při nastavení zarážek, aby se zabránilo upozornění s kompilátoru konstrukce.
+    
+-   **Integrace:**
+
+    -   Přidání podpory pro gramatik textmate shadery (úlohy pro C++ je už je nepotřebujete pro zabarvení kódu shaderu).
+    
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Generování projektu:**
+
+    -   Nelze převést souboru PDB typu portable mdb zobrazovat při používání nového modulu runtime Unity.
+
 ## <a name="3701"></a>3.7.0.1
- Vydáno 2018-05-07
+ Vydáno 7. května 2018
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -30,7 +103,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Oprava závislostí problém při používání experimentální sestavení.
 
 ## <a name="3700"></a>3.7.0.0
- Vydáno 2018-05-07
+ Vydáno 7. května 2018
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -59,7 +132,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Vyloučíte z generování balíčku správce kompilačních jednotek.
 
 ## <a name="3605"></a>3.6.0.5
- Vydáno 2018-03-13
+ Vydáno 13. března 2018
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -78,7 +151,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Oprava, nastavení dalšího příkazu.
 
 ## <a name="3604"></a>3.6.0.4
- Vydáno 2018-03-05
+ Vydané 5. března 2018
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -91,7 +164,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Oprava problémy načasování s 2018.1 a aktivace modulu plug-in.
 
 ## <a name="3603"></a>3.6.0.3
- Vydáno 2018-02-23
+ Vydáno 23. února 2018
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -110,7 +183,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Oprava přerušení při výjimkách, které jsou zahozeny mimo usercode.
 
 ## <a name="3602"></a>3.6.0.2
- Vydáno 2018-02-07
+ Vydáno 7. února 2018
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -125,7 +198,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Jenom znovu načte projekty na externí změně (omezení využití sítě).
 
 ## <a name="3601"></a>3.6.0.1
- Vydáno 2018-01-24
+ Vydáno 24. ledna 2018
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -136,7 +209,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Oprava nepřímé volání EditorPrefs.GetBool vliv na okně Inspektor. při pokusu o změnu velikosti pole.
 
 ## <a name="3600"></a>3.6.0.0
- Vydáno 2018-01-10
+ Vydáno 10. ledna 2018
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -171,7 +244,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Před vložením metoda aktualizujte roslyn kontextu.
 
 ## <a name="3503"></a>3.5.0.3
- Vydáno 2018-01-09
+ Vydáno 9. ledna 2018
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -180,7 +253,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Oprava automatické pdb do mdb ladicí symbol převodu.
 
 ## <a name="3502"></a>3.5.0.2
- Vydáno 2017-12-04
+ Vydáno 4. prosince 2017
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -213,7 +286,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Nesnažte se vynutit příznak AllowAttachedDebuggingOfEditor Unity jako výchozí hodnota je "true".
 
 ## <a name="3402"></a>3.4.0.2
- Vydáno 2017-09-19
+ Vydáno 19. září 2017
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -244,7 +317,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Pevný odkaz na Microsoft.CSharp obsahují třídy pro 4.6 úroveň rozhraní API.
 
 ## <a name="3302"></a>3.3.0.2
- Vydáno 2017-08-15
+ Vydáno: 15. srpna 2017
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -253,7 +326,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Opravili jsme generování řešení sady Visual Studio na Unity 5.5 a předchozích verzích.
 
 ## <a name="3300"></a>3.3.0.0
- Vydáno 2017-08-14
+ Vydáno 14. srpna 2017
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -282,7 +355,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Oprava definuje s úrovní rozhraní API.
 
 ## <a name="3200"></a>3.2.0.0
- Vydáno 2017-05-10
+ Vydáno 10. května 2017
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -299,7 +372,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Opravili jsme blikání s zprávy Unity.
 
 ## <a name="3100"></a>3.1.0.0
- Vydáno 2017-04-07
+ Vydáno 7. dubna 2017
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -328,12 +401,12 @@ Protokol změn Visual Studio Tools for Unity.
     -   Odebrané sestavení verze následné zpracování.
 
 ## <a name="3001"></a>3.0.0.1
- Vydáno 2017-03-07
+ Vydáno 7. března 2017
 
 ### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>Tato verze zahrnuje všechny nové funkce a opravy chyb nepředchází 2.8.x řady.
 
 ## <a name="2820---30-preview-3"></a>2.8.2.0 - 3.0 ve verzi preview 3
- Vydáno 2017-01-25
+ Vydáno 25. ledna 2017
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -342,7 +415,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Oprava regrese, kde moduly plug-in projekty tam, kde odkazováno dvakrát, nejprve jako binární knihovnu DLL jako projekt odkázat na.
 
 ## <a name="2810---30-preview-2"></a>2.8.1.0 - 3.0 ve verzi preview 2
- Vydáno 2017-01-23
+ Vydáno 23. ledna 2017
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -369,7 +442,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Přepnout na https cílit na vzdálené dokumentace k Unity.
 
 ## <a name="2800---30-preview"></a>2.8.0.0 - 3.0 ve verzi preview
- Vydáno 2016-11-17
+ Vydáno 17. listopadu 2016
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -436,7 +509,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Oprava chyby, který zabránil kompilace při kompilaci skriptu s webovým kódovaný název souboru.
 
 ## <a name="2300"></a>2.3.0.0
- Vydáno 2016-07-14
+ Vydáno 14. července 2016
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -471,7 +544,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Opravili jsme několik výrazů vyhodnocení problémů.
 
 ## <a name="2200"></a>2.2.0.0
- Vydáno 2016-02-04
+ Vydáno 4. února 2016
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -518,7 +591,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Opravené problémy odinstalaci VSTU při instalaci stejnou verzi VSTU pro několik různých verzí sady Visual Studio. Například když VSTU **2015** 2.1.0.0 a VSTU **2013** 2.1.0.0 oba nainstalovaly.
 
 ## <a name="2100"></a>2.1.0.0
- Vydáno 2015-09-08
+ Vydáno 8. září 2015
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -539,7 +612,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Pevný počet průchodů zarážky v sadě Visual Studio 2015.
 
 ## <a name="2000"></a>2.0.0.0
- Vydáno 2015-07-20
+ Vydáno 20. července 2015
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -574,7 +647,7 @@ Protokol změn Visual Studio Tools for Unity.
     -   Oprava kontroly prázdné pole.
 
 ## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 preview 2
- Vydáno 2015-04-02
+ Vydáno 2. dubna 2015
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -663,7 +736,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   **Uživatelské rozhraní:** motivů aplikace Visual Studio podporu pro místní nabídky a ikony.
 
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 preview
- Vydáno 2014-11-12
+ Vydáno 12. listopadu 2014
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -702,7 +775,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Pokud nemusíme neregistrujte zpětné volání protokolu.
 
 ## <a name="1920"></a>1.9.2.0
- Vydáno 2014-10-09
+ Vydáno 9. října 2014
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -725,7 +798,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Oprava chyby, kde všechny prostředky byly obsaženy v souborech projektu Pokud filtr přípon byla prázdná.
 
 ## <a name="1910"></a>1.9.1.0
- Vydáno 2014-09-22
+ Vydáno 22. září 2014
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -770,7 +843,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Oprava otevření skripty ve verzích 64 bitů v Unity s VSTU.
 
 ## <a name="1900"></a>1.9.0.0
- Vydáno 2014-07-29
+ Vydáno 29. července 2014
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -818,7 +891,7 @@ Protokol změn Visual Studio Tools for Unity.
 >  C# se převládající jazyk v ekosystému Unity – nové ukázkové prostředky jsou v jazyce C#, dokumentace k Unity budou ve výchozím nastavení jazyka C# – odebrali jsme naše základní podporu UnityScript a poč lépe zaměřit se na prostředí jazyka C#. V důsledku toho VSTU řešení jsou nyní C# pouze a je mnohem rychlejší načíst.
 
 ## <a name="1820"></a>1.8.2.0
- Vydáno 2014-01-07
+ Vydáno 7. ledna 2014
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -845,7 +918,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Bránící zhroucení v Unity, když konkrétní verze generovaného sestavení, pokud je synchronizovaný.
 
 ## <a name="1810"></a>1.8.1.0
- Vydáno 2013-11-21
+ Vydáno 21. listopadu 2013
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -878,7 +951,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Opravili jsme otevření skriptů z Unity nelze zaměňovat pořadí ALT + TAB pro Unity 4.2 a novější.
 
 ## <a name="1800"></a>1.8.0.0
- Vydáno 2013-09-24
+ Vydáno 24. září 2013
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -919,7 +992,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Oprava změny hodnot logických výrazů v místním okně.
 
 ## <a name="1220"></a>1.2.2.0
- Vydáno 2013-07-09
+ Vydáno 9. července 2013
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -942,7 +1015,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Oprava zpracování sestavení, beta verze 4.2 Unity.
 
 ## <a name="1210"></a>1.2.1.0
- Vydáno 2013-04-09
+ Vydáno 9. dubna 2013
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -955,7 +1028,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Pevné vazby zarážky v některé externí knihovny DLL.
 
 ## <a name="1200"></a>1.2.0.0
- Vydáno 2013-03-25
+ Vydáno 25. března 2013
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -1022,10 +1095,10 @@ Protokol změn Visual Studio Tools for Unity.
 -   Oprava chyby UVS-11: místní hodnoty v korutinách.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 – beta verze
- Vydáno 2014-10-09
+ Vydáno 9. března, 2013
 
 ## <a name="10130"></a>1.0.13.0
- Vydáno 2013-01-21
+ Vydáno 21. ledna 2013
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -1048,7 +1121,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Oprava zpracování dlouhé zprávy odeslané z Unity UnityVS. Před tímto dlouhých zpráv mohlo dojít k selhání naše zasílání zpráv součástí UnityVS. V důsledku toho někdy UnityVS nepůjde dokument otevřít soubor z Unity.
 
 ## <a name="10120"></a>1.0.12.0
- Vydáno 2013-01-03
+ Vydáno 3. lednu 2013
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -1067,7 +1140,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Opravili jsme poruchu rozhraní API, kde uživatelský kód nelze účastnit obslužná metoda zpětného volání protokolu.
 
 ## <a name="10110"></a>1.0.11.0
- Vydáno 2012-11-28
+ Vydáno 28. listopadu 2012
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -1098,7 +1171,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Oprava chyb, pokud jsme nedá se dosadit naše ikonu na stavovém řádku v sadě Visual Studio.
 
 ## <a name="10100"></a>1.0.10.0
- Vydáno 2012-10-09
+ Vydáno 9. října 2012
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -1111,7 +1184,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Opravili jsme, jak se načítají sestavení z Unity vyhnout zamykání souborů a obcházení proces sestavení Unity.
 
 ## <a name="1090"></a>1.0.9.0
- Vydáno 2012-10-03
+ Vydáno 3 říjen 2012
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -1130,7 +1203,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Oprava chyby UVS – 21: neplatný ukazatel při vyhodnocení volání metody matematické API Unity.
 
 ## <a name="1080"></a>1.0.8.0
- Vydáno 2012-09-26
+ Vydáno 26. září 2012
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -1141,7 +1214,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Opravili jsme, jak je UnityVS zaregistrovaná na Visual Studio 2010.
 
 ## <a name="1070"></a>1.0.7.0
- Vydáno 2012-09-14
+ Vydáno 14. září 2012
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -1157,10 +1230,10 @@ Protokol změn Visual Studio Tools for Unity.
 >  Z důvodu podpory Visual Studio 2012 museli jsme přejmenovat několik souborů a některých dalších pohybovat. UnityVS balíčku k importu Unity teď jmenuje UnityVS 2010 nebo UnityVS 2012, respektive Visual Studio 2010 a Visual Studio 2012. Tato verze také vyžaduje, že UnityVS soubory projektu jsou znovu vygenerovány.
 
 ## <a name="1060---internal-build"></a>1.0.6.0 – interní sestavení
- Vydáno 2012-09-12
+ Vydáno 12. září 2012
 
 ## <a name="1050"></a>1.0.5.0
- Vydáno 2012-09-10
+ Vydáno 10. září 2012
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -1169,7 +1242,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Oprava zjišťování instancí Unity Unity bylo připojení k serveru Asset. Aktivuje toto selhání k otevírání souborů z Unity a automatické připojení ladicího programu sady Visual Studio.
 
 ## <a name="1040"></a>1.0.4.0
- Vydáno 2012-09-05
+ Vydané 5. září 2012
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -1182,7 +1255,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Oprava chyb UnityVS během ladění způsobeno výjimky vyvolané z metody nebo vlastnosti v Unity.
 
 ## <a name="1030"></a>1.0.3.0
- Vydáno 2012-09-04
+ Vydáno 4. září 2012
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -1197,7 +1270,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Oprava náhodné VS případ chyby způsobené naše vlastní stavový řádek.
 
 ## <a name="1020"></a>1.0.2.0
- Vydáno 2012-08-30
+ Vydáno 30. srpna 2012
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -1208,7 +1281,7 @@ Protokol změn Visual Studio Tools for Unity.
 -   Oprava chyby v sestaveních jak skriptovací byly načteny z Unity s b7 Unity 4.
 
 ## <a name="1010"></a>1.0.1.0
- Vydáno 2012-08-28
+ Vydáno 28. srpna 2012
 
 ### <a name="new-features"></a>Nové funkce
 
@@ -1225,4 +1298,4 @@ Protokol změn Visual Studio Tools for Unity.
 -   Oprava dokončování pro knihovny dll ve složce Asset UnityScript a poč.
 
 ## <a name="1000---initial-release"></a>1.0.0.0 – počáteční verze
- Vydáno 2012-08-22
+ Vydáno 22. srpna 2012

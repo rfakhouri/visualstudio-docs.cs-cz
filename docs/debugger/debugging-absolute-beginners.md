@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: bb37faa194e3c370f92f9a82c7866373dd8f26d3
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131866"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42624069"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Ladění pro naprosté začátečníky
 
@@ -25,7 +25,7 @@ Bez selžou kód, který jsme napsali jako vývojáři softwaru vždy neumí, co
 
 Ladicí program se bohužel něco, co může kouzelného odhalit všechny problémy nebo "chyby" v našem kódu. *Ladění* způsob, jak spustit kód krok za krokem v ladicí nástroj, jako je Visual Studio vyhledat přesný okamžik, kde jste udělali programování. Potom pochopit, jaké opravy, budete muset udělat ve vašem kódu a ladicí nástroje často bylo možné provést dočasné změny, takže můžete pokračovat v provádění programu.
 
-Efektivně pomocí ladicího programu je také dovednost, která přebírá čas a cvičení se dozvíte, ale je nakonec základní úlohy pro každý softwarový vývojář. V tomto článku se potom jsme zavést základními principy ladění a poskytuje tipy vám pomůžou začít.
+Efektivní použití ladicího programu je také dovednost, která přebírá čas a cvičení se dozvíte, ale v konečném důsledku je základní úlohy pro každý softwarový vývojář. V tomto článku se potom jsme zavést základními principy ladění a poskytuje tipy vám pomůžou začít.
 
 ## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Zpřehlednit problém tím, že sami klást ty pravé otázky
 
@@ -35,7 +35,7 @@ Pomáhá vysvětlení problému, který jste narazili před pokusem o jeho řeš
 
 * Co se stalo místo?
 
-    Pokud narazili na chybu (výjimek) při spouštění vaší aplikace, která může být dobrá věc! Výjimkou je při spuštění kódu, obvykle chybu určitého druhu došlo k neočekávané události. Ladicí nástroj může trvat přesné místo v kódu, ve kterém k výjimce došlo a může vám pomůžou zjistit, je to možné opravy.
+    Pokud narazili na chybu (výjimek) při spouštění vaší aplikace, která může být dobrá věc! Výjimkou je při spuštění kódu, obvykle chybu určitého druhu došlo k neočekávané události. Ladicí nástroj může trvat přesné místo v kódu, ve kterém k výjimce došlo a můžete pomáhají s prošetřením možné opravy.
 
     Pokud se něco stalo, co je tento problém projevuje? Máte už podezření kde došlo k tomuto problému v kódu? Například pokud váš kód zobrazí text, ale text je nesprávná, víte, že vaše data jsou chybné nebo kód, který nastavení textu zobrazovaného má nějaký druh chyby. Krokování kódem v ladicí program, můžete zkontrolovat každého změn do proměnných ke zjištění přesně, kdy a jak jsou přiřazeny nesprávné hodnoty.
 
@@ -45,7 +45,7 @@ Předtím, než byste prozkoumat chybu nebo chybu, si můžete Představte před
 
 * Používáte správné rozhraní API (to znamená, správný objekt, funkce, metoda nebo vlastnost)? Rozhraní API, které používáte nebudete dělat, co si myslíte, že dělá. (Po kontrole volání rozhraní API v ladicím programu, její opravu může vyžadovat postoupí do dokumentace vám pomůže identifikovat správné rozhraní API.)
 
-* Používáte rozhraní API správně? Možná jste použít vpravo rozhraní API, ale nepoužili správným způsobem.
+* Používáte rozhraní API správně? Možná používá vpravo rozhraní API, ale neměli používat v správným způsobem.
 
 * Obsahuje kód jakékoli překlepy? Některé překlepy, jako jsou jednoduché jistá pravopisnou chybou názvu proměnné může být obtížné zjistit, zejména při práci s jazyky, které nevyžadují proměnné deklarovat před jejich použití.
 
@@ -228,7 +228,7 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
 
 1. Klikněte na tlačítko **restartovat** ![restartovat aplikaci](../debugger/media/dbg-tour-restart.png "RestartApp") tlačítko na panelu nástrojů ladění (**Ctrl** + **Shift**   +  **F5**).
 
-    Aplikace pozastavení na zarážce, kterou jste nastavili. Žlutý hightlighting označuje, kde je pozastavena ladicím programu (žlutá čára kód ještě neprovedlo).
+    Aplikace pozastavení na zarážce, kterou jste nastavili. Žluté zvýraznění označuje, kde je pozastavena ladicím programu (žlutá čára kód ještě neprovedlo).
 
 1. Najeďte myší `GalaxyType` rozbalit proměnnou na pravé straně a pak na levé straně na ikonu klíče `theGalaxy.GalaxyType`. Uvidíte, že `GalaxyType` obsahuje vlastnost `MyGType`, a hodnota vlastnosti je nastavená na `Spiral`.
 
@@ -303,7 +303,7 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
 
     Vyhledávání v kódu, uvidíte překlep v `case 'l'` příkazu. Měla by být `case 'I'`.
 
-1. Klikněte na tlačítko v kódu pro `case 'l'`a nahraďte ho hodnotou ' case "I".
+1. Klikněte na tlačítko v kódu pro `case 'l'` a nahraďte ho hodnotou `case 'I'`.
 
 1. Odebrat zarážku a poté klikněte na tlačítko **restartovat** tlačítko k restartování aplikace.
 

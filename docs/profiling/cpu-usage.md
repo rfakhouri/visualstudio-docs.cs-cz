@@ -10,19 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fd0652732e125f80affd9a94c5f29b286ab8bcb
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 1409431b0cdaec775ecd420fb9b6ea1ded0868de
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204138"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42624172"
 ---
 # <a name="analyze-cpu-usage"></a>Analýza využití procesoru
 Když budete potřebovat zjistit problémy s výkonem ve vaší aplikaci, je dobrým začátkem pochopení, jak využívá procesor. **Využití procesoru** nástroj ukazuje, kde procesor tráví čas spuštění Visual C++, Visual C# nebo Visual Basic a kód jazyka JavaScript. Od verze Visual Studio 2015 Update 1, můžete zobrazit rozpis využití procesoru jednotlivých funkcích aniž byste museli opustit ladicí program. Můžete profilaci procesoru při ladění a vypnout a zobrazit výsledky, když se zastaví spuštění, například v na zarážce.  
   
-Máte několik možností pro spouštění a správu diagnostickou relaci. Například můžete spustit **využití procesoru** nástroj na místních nebo vzdálených počítačích nebo na simulátoru nebo emulátoru. Můžete analyzovat výkon otevřít projekt v sadě Visual Studio, připojit k běžící aplikaci, nebo spusťte aplikaci, která se instaluje z Microsoft Store. Další informace najdete v tématu [spuštění nástroje pro profilaci s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Máte několik možností pro spouštění a správu diagnostickou relaci. Například můžete spustit **využití procesoru** nástroj na místních nebo vzdálených počítačích nebo na simulátoru nebo emulátoru. Můžete analyzovat výkon otevřít projekt v sadě Visual Studio, připojit k běžící aplikaci, nebo spusťte aplikaci, která se instaluje z Microsoft Store. Další informace najdete v tématu [spuštění nástroje pro profilaci s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md). 
 
-Tady jsme ukazují, jak shromažďovat a analyzovat využití procesoru u sestavení pro vydání. Analýza využití procesoru při ladění, naleznete v tématu [příručka začátečníka profilací výkonu](../profiling/beginners-guide-to-performance-profiling.md). 
+Tady jsme ukazují, jak shromažďovat a analyzovat využití procesoru u sestavení pro vydání. Analýza využití procesoru při ladění, naleznete v tématu [příručka začátečníka profilací výkonu](../profiling/beginners-guide-to-performance-profiling.md).
+
+Windows 7 nebo novější je nutné použít nástroje pro profilaci uvedené v tomto článku, který je [Profiler výkonu](../profiling/profiling-feature-tour.md).
   
 ##  <a name="collect-cpu-usage-data"></a>Shromažďovat data o využití procesoru  
   
