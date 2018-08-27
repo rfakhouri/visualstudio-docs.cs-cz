@@ -20,45 +20,46 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6ece2ead5931f17b27ecdf86672df37b932ddefb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e0ef53aa81d4e58463b4dd16e146fcbf65f47fe
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686714"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902276"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: Nastavte národního prostředí pro datové typy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [CA1306: nastavte národního prostředí pro datové typy](https://docs.microsoft.com/visualstudio/code-quality/ca1306-set-locale-for-data-types).  
-  
-TypeName | SetLocaleForDataTypes |  
-| ID kontroly | CA1306 |  
-| Kategorie | Microsoft.Globalization|  
-| Zásadní změna | Ukončování bez |  
-  
-## <a name="cause"></a>příčina  
- Metoda nebo konstruktor vytvoří jednu nebo více <xref:System.Data.DataTable?displayProperty=fullName> nebo <xref:System.Data.DataSet?displayProperty=fullName> instance a explicitně nenastavil vlastnost národního prostředí (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> nebo <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Národní prostředí určuje prvky prezentace specifické kultury pro data, například formátování použité pro číselné hodnoty, symboly měny a pořadí řazení. Když vytvoříte <xref:System.Data.DataTable> nebo <xref:System.Data.DataSet>, byste měli explicitně nastavit národní prostředí. Ve výchozím nastavení je národní prostředí pro tyto typy aktuální jazykové verze. Pro data, která je uložena v databázi nebo souboru a globálně sdíleny, musí být obvykle nastavena národní prostředí na invariantní jazykovou verzi (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Když data se sdílejí napříč jazykovými verzemi, použití výchozí národní prostředí může způsobit obsah <xref:System.Data.DataTable> nebo <xref:System.Data.DataSet> zobrazí, nebo se nesprávně interpretován.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Chcete-li opravit porušení tohoto pravidla, explicitně nastavit národní prostředí <xref:System.Data.DataTable> nebo <xref:System.Data.DataSet>.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Je bezpečné knihovny nebo aplikací je pro omezené místní cílovou skupinu, nesdílí data nebo ve výchozím nastavení provede požadované chování ve všech podporovaných scénářích potlačit upozornění tohoto pravidla.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad vytvoří dva <xref:System.Data.DataTable> instancí.  
-  
- [!code-csharp[FxCop.Globalization.DataTable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DataTable/cs/FxCop.Globalization.DataTable.cs#1)]  
-  
-## <a name="see-also"></a>Viz také  
- <xref:System.Data.DataTable?displayProperty=fullName>   
- <xref:System.Data.DataSet?displayProperty=fullName>   
- <xref:System.Globalization.CultureInfo?displayProperty=fullName>   
- <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>   
+Nejnovější verzi tohoto tématu můžete najít v [CA1306: nastavte národního prostředí pro datové typy](https://docs.microsoft.com/visualstudio/code-quality/ca1306-set-locale-for-data-types).
+
+|||
+|-|-|
+|TypeName|SetLocaleForDataTypes|
+|CheckId|CA1306|
+|Kategorie|Microsoft.Globalization|
+|Narušující změna|Nenarušující|
+
+## <a name="cause"></a>příčina
+ Metoda nebo konstruktor vytvoří jednu nebo více <xref:System.Data.DataTable?displayProperty=fullName> nebo <xref:System.Data.DataSet?displayProperty=fullName> instance a explicitně nenastavil vlastnost národního prostředí (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> nebo <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).
+
+## <a name="rule-description"></a>Popis pravidla
+ Národní prostředí určuje prvky prezentace specifické kultury pro data, například formátování použité pro číselné hodnoty, symboly měny a pořadí řazení. Když vytvoříte <xref:System.Data.DataTable> nebo <xref:System.Data.DataSet>, byste měli explicitně nastavit národní prostředí. Ve výchozím nastavení je národní prostředí pro tyto typy aktuální jazykové verze. Pro data, která je uložena v databázi nebo souboru a globálně sdíleny, musí být obvykle nastavena národní prostředí na invariantní jazykovou verzi (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Když data se sdílejí napříč jazykovými verzemi, použití výchozí národní prostředí může způsobit obsah <xref:System.Data.DataTable> nebo <xref:System.Data.DataSet> zobrazí, nebo se nesprávně interpretován.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Chcete-li opravit porušení tohoto pravidla, explicitně nastavit národní prostředí <xref:System.Data.DataTable> nebo <xref:System.Data.DataSet>.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Je bezpečné knihovny nebo aplikací je pro omezené místní cílovou skupinu, nesdílí data nebo ve výchozím nastavení provede požadované chování ve všech podporovaných scénářích potlačit upozornění tohoto pravidla.
+
+## <a name="example"></a>Příklad
+ Následující příklad vytvoří dva <xref:System.Data.DataTable> instancí.
+
+ [!code-csharp[FxCop.Globalization.DataTable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DataTable/cs/FxCop.Globalization.DataTable.cs#1)]
+
+## <a name="see-also"></a>Viz také
+ <xref:System.Data.DataTable?displayProperty=fullName><xref:System.Data.DataSet?displayProperty=fullName>
+ <xref:System.Globalization.CultureInfo?displayProperty=fullName>
+ <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>
  <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>
 
 

@@ -20,58 +20,59 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d15b541844ddb91c66143aef3b4740e066be7ec9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 906ee4c3e5300f04b5627c7b3aa19ba7950f3239
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629217"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900765"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Přepište metody srovnatelných typů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [CA1036: přepište metody srovnatelných typů](https://docs.microsoft.com/visualstudio/code-quality/ca1036-override-methods-on-comparable-types).  
-  
-TypeName | OverrideMethodsOnComparableTypes |  
-| ID kontroly | CA1036 |  
-| Kategorie | Microsoft.Design|  
-| Zásadní změna | Ukončování bez |  
-  
-## <a name="cause"></a>příčina  
- Veřejný nebo chráněný typ implementuje <xref:System.IComparable?displayProperty=fullName> rozhraní, nedojde k přepsání <xref:System.Object.Equals%2A?displayProperty=fullName> nebo nepřetěžuje specifické pro jazyk operátor rovnosti, nerovnosti, menší nebo větší. Pravidlo nevytváří sestavu porušení, pokud typ dědí pouze implementace rozhraní.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Typy, které definují vlastní řazení implementovat <xref:System.IComparable> rozhraní. <xref:System.IComparable.CompareTo%2A> Metoda vrací celočíselnou hodnotu, která určuje správné pořadí řazení pro dvě instance daného typu. Toto pravidlo určuje typy, které nastavení pořadí řazení. z toho vyplývá, že běžný význam rovnosti, nerovnosti, menší než a větší než se nedá použít. Když zadáte implementace <xref:System.IComparable>, je obvykle třeba také přepsat <xref:System.Object.Equals%2A> tak, že vrátí hodnoty, které jsou konzistentní s <xref:System.IComparable.CompareTo%2A>. Pokud přepíšete <xref:System.Object.Equals%2A> a psaní kódu v jazyce, který podporuje přetížení operátoru, měli byste také poskytnout operátory, které jsou konzistentní s <xref:System.Object.Equals%2A>.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Chcete-li opravit porušení tohoto pravidla, přepište <xref:System.Object.Equals%2A>. Pokud svůj oblíbený programovací jazyk podporuje přetížení operátoru, zadejte následující operátory:  
-  
--   op_Equality  
-  
--   op_inequality –  
-  
--   op_LessThan  
-  
--   op_GreaterThan  
-  
- V jazyce C#, tokeny, které se používají k vyjádření tyto operátory jsou následující: ==,! =, \<, a >.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Je bezpečné potlačit upozornění tohoto pravidla při porušení zásad je způsobeno chybějící operátory a svůj oblíbený programovací jazyk nepodporuje přetěžování, stejně jako v případě v jazyce Visual Basic .NET. Je také bezpečně potlačení upozornění pro toto pravidlo, když se aktivuje na operátory rovnosti jiné než op_Equality Pokud zjistíte, že implementace operátorů nemá smysl v kontextu vašich aplikací. Nicméně byste měli vždy přes op_Equality a == – operátor Pokud přepíšete metodu Object.Equals.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad obsahuje typ, který implementuje správně <xref:System.IComparable>. Kód poznámky určují metody, které splňují různá pravidla, které se týkají <xref:System.Object.Equals%2A> a <xref:System.IComparable> rozhraní.  
-  
- [!code-csharp[FxCop.Design.IComparable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IComparable/cs/FxCop.Design.IComparable.cs#1)]  
-  
-## <a name="example"></a>Příklad  
- Následující aplikace testuje chování <xref:System.IComparable> implementace, které se zobrazilo dříve.  
-  
- [!code-csharp[FxCop.Design.TestIComparable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestIComparable/cs/FxCop.Design.TestIComparable.cs#1)]  
-  
-## <a name="see-also"></a>Viz také  
- <xref:System.IComparable?displayProperty=fullName>   
- <xref:System.Object.Equals%2A?displayProperty=fullName>   
+Nejnovější verzi tohoto tématu můžete najít v [CA1036: přepište metody srovnatelných typů](https://docs.microsoft.com/visualstudio/code-quality/ca1036-override-methods-on-comparable-types).
+
+|||
+|-|-|
+|TypeName|OverrideMethodsOnComparableTypes|
+|CheckId|CA1036|
+|Kategorie|Microsoft.Design|
+|Narušující změna|Nenarušující|
+
+## <a name="cause"></a>příčina
+ Veřejný nebo chráněný typ implementuje <xref:System.IComparable?displayProperty=fullName> rozhraní, nedojde k přepsání <xref:System.Object.Equals%2A?displayProperty=fullName> nebo nepřetěžuje specifické pro jazyk operátor rovnosti, nerovnosti, menší nebo větší. Pravidlo nevytváří sestavu porušení, pokud typ dědí pouze implementace rozhraní.
+
+## <a name="rule-description"></a>Popis pravidla
+ Typy, které definují vlastní řazení implementovat <xref:System.IComparable> rozhraní. <xref:System.IComparable.CompareTo%2A> Metoda vrací celočíselnou hodnotu, která určuje správné pořadí řazení pro dvě instance daného typu. Toto pravidlo určuje typy, které nastavení pořadí řazení. z toho vyplývá, že běžný význam rovnosti, nerovnosti, menší než a větší než se nedá použít. Když zadáte implementace <xref:System.IComparable>, je obvykle třeba také přepsat <xref:System.Object.Equals%2A> tak, že vrátí hodnoty, které jsou konzistentní s <xref:System.IComparable.CompareTo%2A>. Pokud přepíšete <xref:System.Object.Equals%2A> a psaní kódu v jazyce, který podporuje přetížení operátoru, měli byste také poskytnout operátory, které jsou konzistentní s <xref:System.Object.Equals%2A>.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Chcete-li opravit porušení tohoto pravidla, přepište <xref:System.Object.Equals%2A>. Pokud svůj oblíbený programovací jazyk podporuje přetížení operátoru, zadejte následující operátory:
+
+-   op_Equality
+
+-   op_inequality –
+
+-   op_LessThan
+
+-   op_GreaterThan
+
+ V jazyce C#, tokeny, které se používají k vyjádření tyto operátory jsou následující: ==,! =, \<, a >.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Je bezpečné potlačit upozornění tohoto pravidla při porušení zásad je způsobeno chybějící operátory a svůj oblíbený programovací jazyk nepodporuje přetěžování, stejně jako v případě v jazyce Visual Basic .NET. Je také bezpečně potlačení upozornění pro toto pravidlo, když se aktivuje na operátory rovnosti jiné než op_Equality Pokud zjistíte, že implementace operátorů nemá smysl v kontextu vašich aplikací. Nicméně byste měli vždy přes op_Equality a == – operátor Pokud přepíšete metodu Object.Equals.
+
+## <a name="example"></a>Příklad
+ Následující příklad obsahuje typ, který implementuje správně <xref:System.IComparable>. Kód poznámky určují metody, které splňují různá pravidla, které se týkají <xref:System.Object.Equals%2A> a <xref:System.IComparable> rozhraní.
+
+ [!code-csharp[FxCop.Design.IComparable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IComparable/cs/FxCop.Design.IComparable.cs#1)]
+
+## <a name="example"></a>Příklad
+ Následující aplikace testuje chování <xref:System.IComparable> implementace, které se zobrazilo dříve.
+
+ [!code-csharp[FxCop.Design.TestIComparable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestIComparable/cs/FxCop.Design.TestIComparable.cs#1)]
+
+## <a name="see-also"></a>Viz také
+ <xref:System.IComparable?displayProperty=fullName><xref:System.Object.Equals%2A?displayProperty=fullName>
  [Operátory rovnosti](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
 
 

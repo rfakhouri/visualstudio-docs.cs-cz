@@ -20,53 +20,55 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eced3b2d802fa3b2d6dce08da5178afbd8c83090
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3a9e2bb8030fe5273e70da03e6df14bb9dd5607
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675416"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901787"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Typy, které vlastní nativní prostředky by měly být uvolnitelné
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [CA1049: typy, které vlastní nativní prostředky by měly být uvolnitelné](https://docs.microsoft.com/visualstudio/code-quality/ca1049-types-that-own-native-resources-should-be-disposable).  
-  
-TypeName | TypesThatOwnNativeResourcesShouldBeDisposable |  
-| ID kontroly | CA1049 |  
-| Kategorie | Microsoft.Design|  
-| Zásadní změna | Ukončování bez |  
-  
-## <a name="cause"></a>příčina  
- Odkazuje na typ <xref:System.IntPtr?displayProperty=fullName> pole, <xref:System.UIntPtr?displayProperty=fullName> pole, nebo <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> pole, ale neimplementuje <xref:System.IDisposable?displayProperty=fullName>.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Toto pravidlo předpokládá, že <xref:System.IntPtr>, <xref:System.UIntPtr>, a <xref:System.Runtime.InteropServices.HandleRef> ukládání pole ukazatelů na nespravované prostředky. Typy, které přidělují nespravované prostředky by měly implementovat <xref:System.IDisposable> umožníte volajícím uvolnit tyto prostředky na požádání a zkrátit životní cyklus objektů, které obsahují prostředky.  
-  
- Doporučený návrhový vzor pro vyčištění nespravovaných prostředků je poskytnout implicitní a explicitní znamená, že k uvolnění těchto prostředků s použitím <xref:System.Object.Finalize%2A?displayProperty=fullName> metoda a <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metoda, v uvedeném pořadí. Uvolňování paměti zavolá <xref:System.Object.Finalize%2A> metodu objektu v době, po objektu je určena být již nebude dostupná. Po <xref:System.Object.Finalize%2A> je volána, zobrazí se další uvolňování paměti se vyžaduje k uvolnění objektu. <xref:System.IDisposable.Dispose%2A> Metoda umožňuje volajícímu explicitně uvolnit prostředky na vyžádání, dříve, než prostředky by být uvolněny, pokud zleva systému uvolňování paměti. Poté, co ho vyčistí nespravované prostředky, <xref:System.IDisposable.Dispose%2A> by měly volat <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> metoda umožňuje systému uvolňování paměti vědět, že <xref:System.Object.Finalize%2A> není k dispozici k volání; tím se eliminuje potřeba další uvolnění paměti a tím Doba života objektu.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Chcete-li opravit porušení tohoto pravidla, implementovat <xref:System.IDisposable>.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Je bezpečné potlačit upozornění tohoto pravidla, pokud typ neobsahuje odkaz nespravovaný prostředek. V opačném případě nepotlačujte upozornění tohoto pravidla protože neschopnost implementace <xref:System.IDisposable> může způsobit, že budou k dispozici nebo využívané uvolnění nespravovaných prostředků.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje typ, který implementuje <xref:System.IDisposable> pro vyčištění nespravovaných prostředků.  
-  
+Nejnovější verzi tohoto tématu můžete najít v [CA1049: typy, které vlastní nativní prostředky by měly být uvolnitelné](https://docs.microsoft.com/visualstudio/code-quality/ca1049-types-that-own-native-resources-should-be-disposable).
+
+|||
+|-|-|
+|TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
+|CheckId|CA1049|
+|Kategorie|Microsoft.Design|
+|Narušující změna|Nenarušující|
+
+## <a name="cause"></a>příčina
+ Odkazuje na typ <xref:System.IntPtr?displayProperty=fullName> pole, <xref:System.UIntPtr?displayProperty=fullName> pole, nebo <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> pole, ale neimplementuje <xref:System.IDisposable?displayProperty=fullName>.
+
+## <a name="rule-description"></a>Popis pravidla
+ Toto pravidlo předpokládá, že <xref:System.IntPtr>, <xref:System.UIntPtr>, a <xref:System.Runtime.InteropServices.HandleRef> ukládání pole ukazatelů na nespravované prostředky. Typy, které přidělují nespravované prostředky by měly implementovat <xref:System.IDisposable> umožníte volajícím uvolnit tyto prostředky na požádání a zkrátit životní cyklus objektů, které obsahují prostředky.
+
+ Doporučený návrhový vzor pro vyčištění nespravovaných prostředků je poskytnout implicitní a explicitní znamená, že k uvolnění těchto prostředků s použitím <xref:System.Object.Finalize%2A?displayProperty=fullName> metoda a <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metoda, v uvedeném pořadí. Uvolňování paměti zavolá <xref:System.Object.Finalize%2A> metodu objektu v době, po objektu je určena být již nebude dostupná. Po <xref:System.Object.Finalize%2A> je volána, zobrazí se další uvolňování paměti se vyžaduje k uvolnění objektu. <xref:System.IDisposable.Dispose%2A> Metoda umožňuje volajícímu explicitně uvolnit prostředky na vyžádání, dříve, než prostředky by být uvolněny, pokud zleva systému uvolňování paměti. Poté, co ho vyčistí nespravované prostředky, <xref:System.IDisposable.Dispose%2A> by měly volat <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> metoda umožňuje systému uvolňování paměti vědět, že <xref:System.Object.Finalize%2A> není k dispozici k volání; tím se eliminuje potřeba další uvolnění paměti a tím Doba života objektu.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Chcete-li opravit porušení tohoto pravidla, implementovat <xref:System.IDisposable>.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Je bezpečné potlačit upozornění tohoto pravidla, pokud typ neobsahuje odkaz nespravovaný prostředek. V opačném případě nepotlačujte upozornění tohoto pravidla protože neschopnost implementace <xref:System.IDisposable> může způsobit, že budou k dispozici nebo využívané uvolnění nespravovaných prostředků.
+
+## <a name="example"></a>Příklad
+ Následující příklad ukazuje typ, který implementuje <xref:System.IDisposable> pro vyčištění nespravovaných prostředků.
+
  [!code-csharp[FxCop.Design.UnmanagedResources#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.UnmanagedResources/cs/FxCop.Design.UnmanagedResources.cs#1)]
- [!code-vb[FxCop.Design.UnmanagedResources#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.UnmanagedResources/vb/FxCop.Design.UnmanagedResources.vb#1)]  
-  
-## <a name="related-rules"></a>Související pravidla  
- [CA2115: Volejte GC.KeepAlive při použití nativních zdrojů](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
-  
- [CA1816: Volejte správně GC.SuppressFinalize](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
-  
- [CA2216: Uvolnitelné typy by měly deklarovat finalizační metodu](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
-  
- [CA1001: Typy vlastních uvolnitelných polí, které by měly být uvolnitelné](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  
-  
-## <a name="see-also"></a>Viz také  
+ [!code-vb[FxCop.Design.UnmanagedResources#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.UnmanagedResources/vb/FxCop.Design.UnmanagedResources.vb#1)]
+
+## <a name="related-rules"></a>Související pravidla
+ [CA2115: Volejte GC.KeepAlive při použití nativních zdrojů](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+
+ [CA1816: Volejte správně GC.SuppressFinalize](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+
+ [CA2216: Uvolnitelné typy by měly deklarovat finalizační metodu](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+
+ [CA1001: Typy vlastních uvolnitelných polí, které by měly být uvolnitelné](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+
+## <a name="see-also"></a>Viz také
   [Vzor pro metodu Dispose](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
 
 

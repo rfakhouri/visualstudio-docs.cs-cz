@@ -20,55 +20,56 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: dedab98010bbc0bd05121ad5e0dd08f73879208a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0bc23e78580329443c06cd419febd50e3d3db27
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672725"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900812"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Enumerátory by měly být silného typu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [CA1038: enumerátory by měly být silného typu](https://docs.microsoft.com/visualstudio/code-quality/ca1038-enumerators-should-be-strongly-typed).  
-  
-TypeName | EnumeratorsShouldBeStronglyTyped |  
-| ID kontroly | CA1038 |  
-| Kategorie | Microsoft.Design|  
-| Zásadní změna | Zásadní |  
-  
-## <a name="cause"></a>příčina  
- Veřejný nebo chráněný typ implementuje <xref:System.Collections.IEnumerator?displayProperty=fullName> neposkytuje verzi silného typu, ale <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> vlastnost. Z tohoto pravidla vyjmuty jsou typy, které jsou odvozeny z následujících typů:  
-  
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>  
-  
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>  
-  
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Toto pravidlo vyžaduje <xref:System.Collections.IEnumerator> implementace také poskytnout verzi silného typu <xref:System.Collections.IEnumerator.Current%2A> vlastnost tak, aby uživatelé nemusí při použití funkčnosti poskytované rozhraním přetypovávat návratovou hodnotu silného typu. Toto pravidlo předpokládá, že tento typ, který implementuje <xref:System.Collections.IEnumerator> obsahuje kolekci instancí typu silnějšího než <xref:System.Object>.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Chcete-li opravit porušení tohoto pravidla, implementovat rozhraní vlastnost explicitně (deklarujte ho jako `IEnumerator.Current`). Přidejte veřejnou verzi silného typu vlastnosti, které jsou deklarovány jako `Current`, a vrátí silně typovaných objektů.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Potlačit upozornění tohoto pravidla, Pokud implementujete enumerátor založenou na objektech pro použití s kolekcí založenou na objektech, jako je například binární strom. Typy, které rozšiřují nová kolekce bude definovat silného typu výčtu a zpřístupnit vlastnost silného typu.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje správný způsob implementace silného typu <xref:System.Collections.IEnumerator> typu.  
-  
- [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IEnumeratorStrongTypes/cs/FxCop.Design.IEnumeratorStrongTypes.cs#1)]  
-  
-## <a name="related-rules"></a>Související pravidla  
- [CA1035: Implementace ICollection mají členy silného typu](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)  
-  
- [CA1039: Seznamy jsou silného typu](../code-quality/ca1039-lists-are-strongly-typed.md)  
-  
-## <a name="see-also"></a>Viz také  
- <xref:System.Collections.IEnumerator?displayProperty=fullName>   
- <xref:System.Collections.CollectionBase?displayProperty=fullName>   
- <xref:System.Collections.DictionaryBase?displayProperty=fullName>   
+Nejnovější verzi tohoto tématu můžete najít v [CA1038: enumerátory by měly být silného typu](https://docs.microsoft.com/visualstudio/code-quality/ca1038-enumerators-should-be-strongly-typed).
+
+|||
+|-|-|
+|TypeName|EnumeratorsShouldBeStronglyTyped|
+|CheckId|CA1038|
+|Kategorie|Microsoft.Design|
+|Narušující změna|Narušující|
+
+## <a name="cause"></a>příčina
+ Veřejný nebo chráněný typ implementuje <xref:System.Collections.IEnumerator?displayProperty=fullName> neposkytuje verzi silného typu, ale <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> vlastnost. Z tohoto pravidla vyjmuty jsou typy, které jsou odvozeny z následujících typů:
+
+-   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+
+-   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+
+-   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+
+## <a name="rule-description"></a>Popis pravidla
+ Toto pravidlo vyžaduje <xref:System.Collections.IEnumerator> implementace také poskytnout verzi silného typu <xref:System.Collections.IEnumerator.Current%2A> vlastnost tak, aby uživatelé nemusí při použití funkčnosti poskytované rozhraním přetypovávat návratovou hodnotu silného typu. Toto pravidlo předpokládá, že tento typ, který implementuje <xref:System.Collections.IEnumerator> obsahuje kolekci instancí typu silnějšího než <xref:System.Object>.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Chcete-li opravit porušení tohoto pravidla, implementovat rozhraní vlastnost explicitně (deklarujte ho jako `IEnumerator.Current`). Přidejte veřejnou verzi silného typu vlastnosti, které jsou deklarovány jako `Current`, a vrátí silně typovaných objektů.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Potlačit upozornění tohoto pravidla, Pokud implementujete enumerátor založenou na objektech pro použití s kolekcí založenou na objektech, jako je například binární strom. Typy, které rozšiřují nová kolekce bude definovat silného typu výčtu a zpřístupnit vlastnost silného typu.
+
+## <a name="example"></a>Příklad
+ Následující příklad ukazuje správný způsob implementace silného typu <xref:System.Collections.IEnumerator> typu.
+
+ [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IEnumeratorStrongTypes/cs/FxCop.Design.IEnumeratorStrongTypes.cs#1)]
+
+## <a name="related-rules"></a>Související pravidla
+ [CA1035: Implementace ICollection mají členy silného typu](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+
+ [CA1039: Seznamy jsou silného typu](../code-quality/ca1039-lists-are-strongly-typed.md)
+
+## <a name="see-also"></a>Viz také
+ <xref:System.Collections.IEnumerator?displayProperty=fullName><xref:System.Collections.CollectionBase?displayProperty=fullName>
+ <xref:System.Collections.DictionaryBase?displayProperty=fullName>
  <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
 

@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aab8c9608ea6bd86742ac53008c11e8ae54a9e4f
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639123"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902816"
 ---
 # <a name="extend-projects"></a>Rozšíření projektů
 Projekty a řešení se způsoby, kterými Visual Studio slouží k uspořádání kódu a zdrojové soubory do jednotek pro kompilaci a nasazení. Můžete najít další informace o projektech v [projekty (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- Můžete vytvořit vlastní typy projektů pomocí Visual Studio SDK a rozhraní Managed Package Framework pro projekty, které si můžete stáhnout na [Managed Package Framework pro projekty](http://mpfproj12.codeplex.com/). Chcete-li pochopit způsob, jakým jsou implementovány vlastní projekty, naleznete v tématu [nová generace projektů: pod pokličkou, část 1](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) a [nová generace projektů: pod pokličkou, část 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Můžete vytvořit vlastní typy projektů pomocí Visual Studio SDK a rozhraní Managed Package Framework pro projekty, které si můžete stáhnout na [Managed Package Framework pro projekty](https://github.com/tunnelvisionlabs/MPFProj10). Chcete-li pochopit způsob, jakým jsou implementovány vlastní projekty, naleznete v tématu [nová generace projektů: pod pokličkou, část 1](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) a [nová generace projektů: pod pokličkou, část 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Témata v této části popisují, jak vytvořit vlastní projekty a ke správě různých typů řešení sady Visual Studio.  
   

@@ -20,36 +20,38 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e5dbd1ffc9a427994d923fda695a8dab0c37dda0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c41836e2a7e7e5530d83ff0eaf854b88de42f38f
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670681"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901738"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: Vyhněte se nadměrným místním hodnotám
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [CA1809: Vyhněte se nadměrným místním hodnotám](https://docs.microsoft.com/visualstudio/code-quality/ca1809-avoid-excessive-locals).  
-  
-TypeName | AvoidExcessiveLocals |  
-| ID kontroly | CA1809 |  
-| Kategorie | Microsoft.Performance|  
-| Zásadní změna | Ukončování bez |  
-  
-## <a name="cause"></a>příčina  
- Člen obsahuje více než 64 místních proměnných, z nichž některé mohou být vygenerovaný kompilátorem.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Běžnou optimalizací výkonu je uložení hodnoty v registru procesoru místo v paměti, což se označuje jako *enregistering* hodnotu. Modul common language runtime bere v úvahu pro enregistration až 64 místních proměnných. Proměnné, které nejsou uloženy v registrech procesoru jsou vloženy do zásobníku a musí přesunout do registru před manipulaci. Chcete-li možnost povolit, že všechny místní proměnné získat uloženy v registrech procesoru, omezte počet lokálních proměnných na 64.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Chcete-li opravit porušení tohoto pravidla, Refaktorujte implementace používat více než 64 místních proměnných.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Je bezpečné, můžete potlačit upozornění tohoto pravidla nebo zakážete pravidlo, pokud výkon není problém.  
-  
-## <a name="related-rules"></a>Související pravidla  
+Nejnovější verzi tohoto tématu můžete najít v [CA1809: Vyhněte se nadměrným místním hodnotám](https://docs.microsoft.com/visualstudio/code-quality/ca1809-avoid-excessive-locals).
+
+|||
+|-|-|
+|TypeName|AvoidExcessiveLocals|
+|CheckId|CA1809|
+|Kategorie|Microsoft.Performance|
+|Narušující změna|Nenarušující|
+
+## <a name="cause"></a>příčina
+ Člen obsahuje více než 64 místních proměnných, z nichž některé mohou být vygenerovaný kompilátorem.
+
+## <a name="rule-description"></a>Popis pravidla
+ Běžnou optimalizací výkonu je uložení hodnoty v registru procesoru místo v paměti, což se označuje jako *enregistering* hodnotu. Modul common language runtime bere v úvahu pro enregistration až 64 místních proměnných. Proměnné, které nejsou uloženy v registrech procesoru jsou vloženy do zásobníku a musí přesunout do registru před manipulaci. Chcete-li možnost povolit, že všechny místní proměnné získat uloženy v registrech procesoru, omezte počet lokálních proměnných na 64.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Chcete-li opravit porušení tohoto pravidla, Refaktorujte implementace používat více než 64 místních proměnných.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Je bezpečné, můžete potlačit upozornění tohoto pravidla nebo zakážete pravidlo, pokud výkon není problém.
+
+## <a name="related-rules"></a>Související pravidla
  [CA1804: Odeberte nepoužívané místní hodnoty](../code-quality/ca1804-remove-unused-locals.md)
 
 

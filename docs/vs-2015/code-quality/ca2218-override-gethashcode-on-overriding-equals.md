@@ -20,19 +20,24 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cf8fb22f5cfd6b5a9752077f11c47076b504b46c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b952252b5b035242e69806e81b95884e05f862c5
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672447"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900730"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Přepište GetHashCode při přepsání Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nejnovější verzi tohoto tématu můžete najít v [CA2218: přepište GetHashCode při přepsání Equals](https://docs.microsoft.com/visualstudio/code-quality/ca2218-override-gethashcode-on-overriding-equals).
 
-TypeName | OverrideGetHashCodeOnOverridingEquals | | ID kontroly | CA2218 | | Kategorie | Microsoft.Usage| | Zásadní změna | Bez zásadní |
+|||
+|-|-|
+|TypeName|OverrideGetHashCodeOnOverridingEquals|
+|CheckId|CA2218|
+|Kategorie|Microsoft.Usage|
+|Narušující změna|Pevné|
 
 ## <a name="cause"></a>příčina
  Veřejný typ přepisuje <xref:System.Object.Equals%2A?displayProperty=fullName> , ale nepřepisuje <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.

@@ -20,45 +20,47 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: dbb9393e8119afa2d6519864cc896f2e062d48da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d433208e9bb63d770feb00f7f659c9e469a0c4e9
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671269"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900743"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Označte sestavení pomocí atributu NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [CA1824: označte sestavení pomocí atributu NeutralResourcesLanguageAttribute](https://docs.microsoft.com/visualstudio/code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute).  
-  
-TypeName | MarkAssembliesWithNeutralResourcesLanguage |  
-| ID kontroly | CA1824 |  
-| Kategorie | Microsoft.Performance|  
-| Zásadní změna | Ukončování bez |  
-  
-## <a name="cause"></a>příčina  
- Obsahuje sestavení **ResX**– na základě zdrojů, ale nemá <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> použit.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- **NeutralResourcesLanguage** informuje atribut **ResourceManager** jazyka, který byl použit k zobrazení prostředků neutrální jazykové verze pro sestavení. Když vyhledá prostředky ve stejnou jazykovou verzi jako jazyk neutrální prostředky **ResourceManager** automaticky používá prostředky, které jsou umístěné v hlavním sestavení. Dělá to namísto vyhledávání satelitního sestavení, který má aktuální jazykovou verzi uživatelského rozhraní pro aktuální vlákno. To zlepšuje výkon vyhledávání při prvním získání prostředků a může zmenšit vaši pracovní sadu.  
-  
-## <a name="fixing-violations"></a>Oprava porušení  
- Chcete-li opravit porušení tohoto pravidla, přidejte atribut sestavení a určit jazyk prostředků neutrální jazykovou verzi.  
-  
-## <a name="specifying-the-language"></a>Určení jazyka  
-  
-#### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>Pokud chcete určit jazyk prostředků neutrální jazykovou verzi  
-  
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a potom klikněte na tlačítko **vlastnosti**.  
-  
-2.  V levém navigačním panelu vyberte **aplikace**a potom klikněte na tlačítko **informace o sestavení**.  
-  
-3.  V **informace o sestavení** dialogového okna, vyberte jazyk ze **neutrální jazyk** rozevíracího seznamu.  
-  
-4.  Klikněte na tlačítko **OK**.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
+Nejnovější verzi tohoto tématu můžete najít v [CA1824: označte sestavení pomocí atributu NeutralResourcesLanguageAttribute](https://docs.microsoft.com/visualstudio/code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute).
+
+|||
+|-|-|
+|TypeName|MarkAssembliesWithNeutralResourcesLanguage|
+|CheckId|CA1824|
+|Kategorie|Microsoft.Performance|
+|Narušující změna|Nenarušující|
+
+## <a name="cause"></a>příčina
+ Obsahuje sestavení **ResX**– na základě zdrojů, ale nemá <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> použit.
+
+## <a name="rule-description"></a>Popis pravidla
+ **NeutralResourcesLanguage** informuje atribut **ResourceManager** jazyka, který byl použit k zobrazení prostředků neutrální jazykové verze pro sestavení. Když vyhledá prostředky ve stejnou jazykovou verzi jako jazyk neutrální prostředky **ResourceManager** automaticky používá prostředky, které jsou umístěné v hlavním sestavení. Dělá to namísto vyhledávání satelitního sestavení, který má aktuální jazykovou verzi uživatelského rozhraní pro aktuální vlákno. To zlepšuje výkon vyhledávání při prvním získání prostředků a může zmenšit vaši pracovní sadu.
+
+## <a name="fixing-violations"></a>Oprava porušení
+ Chcete-li opravit porušení tohoto pravidla, přidejte atribut sestavení a určit jazyk prostředků neutrální jazykovou verzi.
+
+## <a name="specifying-the-language"></a>Určení jazyka
+
+#### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>Pokud chcete určit jazyk prostředků neutrální jazykovou verzi
+
+1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a potom klikněte na tlačítko **vlastnosti**.
+
+2.  V levém navigačním panelu vyberte **aplikace**a potom klikněte na tlačítko **informace o sestavení**.
+
+3.  V **informace o sestavení** dialogového okna, vyberte jazyk ze **neutrální jazyk** rozevíracího seznamu.
+
+4.  Klikněte na tlačítko **OK**.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Je přípustné potlačit upozornění tohoto pravidla. Však může snížit výkon při spuštění.
 
 

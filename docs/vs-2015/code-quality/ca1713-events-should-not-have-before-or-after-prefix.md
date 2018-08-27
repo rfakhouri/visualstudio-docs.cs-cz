@@ -20,35 +20,37 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee4255eb5f21c02e89c6e73e54f220863e0434c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 46ed0ad62d145b7c60c9f20e1a3770016098a236
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674652"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900470"
 ---
 # <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Události by neměly mít předponu před nebo po
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [CA1713: události by neměly mít předponu před nebo po](https://docs.microsoft.com/visualstudio/code-quality/ca1713-events-should-not-have-before-or-after-prefix).  
-  
-TypeName | EventsShouldNotHaveBeforeOrAfterPrefix |  
-| ID kontroly | CA1713 |  
-| Kategorie | Microsoft.Naming|  
-| Zásadní změna | Zásadní |  
-  
-## <a name="cause"></a>příčina  
- Název události začíná 'Before' a 'After'.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Názvy událostí, měl by popisovat akce, která vyvolává událost. Pro pojmenování souvisejících událostí vyvolaných v určitém pořadí je vhodné používat přítomný a minulý čas, který naznačí relativní pozici v pořadí akcí. Například při pojmenování dvojice událostí, který je vyvolána při zavření prostředek, můžete pojmenovat ho "Zavřít" a "Uzavřeno" místo "BeforeClose" a "AfterClose".  
-  
- Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. To snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Odebrání předpony názvu události a zvažte možnost změnit název, který má používat přítomný a minulý čas slovesa.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
+Nejnovější verzi tohoto tématu můžete najít v [CA1713: události by neměly mít předponu před nebo po](https://docs.microsoft.com/visualstudio/code-quality/ca1713-events-should-not-have-before-or-after-prefix).
+
+|||
+|-|-|
+|TypeName|EventsShouldNotHaveBeforeOrAfterPrefix|
+|CheckId|CA1713|
+|Kategorie|Microsoft.Naming|
+|Narušující změna|Narušující|
+
+## <a name="cause"></a>příčina
+ Název události začíná 'Before' a 'After'.
+
+## <a name="rule-description"></a>Popis pravidla
+ Názvy událostí, měl by popisovat akce, která vyvolává událost. Pro pojmenování souvisejících událostí vyvolaných v určitém pořadí je vhodné používat přítomný a minulý čas, který naznačí relativní pozici v pořadí akcí. Například při pojmenování dvojice událostí, který je vyvolána při zavření prostředek, můžete pojmenovat ho "Zavřít" a "Uzavřeno" místo "BeforeClose" a "AfterClose".
+
+ Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. To snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Odebrání předpony názvu události a zvažte možnost změnit název, který má používat přítomný a minulý čas slovesa.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Nepotlačujte upozornění na toto pravidlo.
 
 

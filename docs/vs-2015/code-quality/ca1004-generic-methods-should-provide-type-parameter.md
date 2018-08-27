@@ -20,58 +20,54 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 445de08cb0210c9ae83be714b7f133029ae96c4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb32ab837ce7431f90c6a7ccdc178aa62b8145cf
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672096"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901725"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: Obecné metody by měly poskytnout parametr typu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [CA1004: Obecné metody by měly poskytnout parametr typu](https://docs.microsoft.com/visualstudio/code-quality/ca1004-generic-methods-should-provide-type-parameter).  
-  
-TypeName | GenericMethodsShouldProvideTypeParameter |  
-| ID kontroly | CA1004 |  
-| Kategorie | Microsoft.Design|  
-| Zásadní změna | Zásadní |  
-  
-## <a name="cause"></a>příčina  
- Předpis parametrů Obecné externě viditelná metoda obsahuje typy, které odpovídají všechny parametry typu metody.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Argument typu obecné metody je z argumentu typu předávaného metodě odvozen namísto explicitního určení argumentu typu. Má-li být odvozování povoleno, musí předpis parametrů obecné metody zahrnovat parametr stejného typu jako parametr typu metody. V tomto případě nemusí být argument typu zadán. Při použití odvození pro všechny parametry typu, je syntaxe volání obecných a neobecných metod je stejný jako. To zjednodušuje použití obecných metod.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Chcete-li opravit porušení tohoto pravidla, změňte návrh tak, aby předpis parametrů obsahuje stejný typ pro každý parametr typu metody.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Nepotlačujte upozornění na toto pravidlo. Poskytuje obecné typy v syntaxi, která je snadno pochopitelný a snižuje čas, který je potřeba další informace a zvýší frekvence přijetí nové knihovny.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje syntaxi pro volání dvě obecné metody. Argument typu pro `InferredTypeArgument` odvozuje a argument typu pro `NotInferredTypeArgument` musí být explicitně určena.  
-  
+Nejnovější verzi tohoto tématu můžete najít v [CA1004: Obecné metody by měly poskytnout parametr typu](https://docs.microsoft.com/visualstudio/code-quality/ca1004-generic-methods-should-provide-type-parameter).
+
+|||
+|-|-|
+|TypeName|GenericMethodsShouldProvideTypeParameter|
+|CheckId|CA1004|
+|Kategorie|Microsoft.Design|
+|Narušující změna|Narušující|
+
+## <a name="cause"></a>příčina
+ Předpis parametrů Obecné externě viditelná metoda obsahuje typy, které odpovídají všechny parametry typu metody.
+
+## <a name="rule-description"></a>Popis pravidla
+ Argument typu obecné metody je z argumentu typu předávaného metodě odvozen namísto explicitního určení argumentu typu. Má-li být odvozování povoleno, musí předpis parametrů obecné metody zahrnovat parametr stejného typu jako parametr typu metody. V tomto případě nemusí být argument typu zadán. Při použití odvození pro všechny parametry typu, je syntaxe volání obecných a neobecných metod je stejný jako. To zjednodušuje použití obecných metod.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Chcete-li opravit porušení tohoto pravidla, změňte návrh tak, aby předpis parametrů obsahuje stejný typ pro každý parametr typu metody.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Nepotlačujte upozornění na toto pravidlo. Poskytuje obecné typy v syntaxi, která je snadno pochopitelný a snižuje čas, který je potřeba další informace a zvýší frekvence přijetí nové knihovny.
+
+## <a name="example"></a>Příklad
+ Následující příklad ukazuje syntaxi pro volání dvě obecné metody. Argument typu pro `InferredTypeArgument` odvozuje a argument typu pro `NotInferredTypeArgument` musí být explicitně určena.
+
  [!code-csharp[FxCop.Design.Inference#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.Inference/cs/FxCop.Design.Inference.cs#1)]
- [!code-vb[FxCop.Design.Inference#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.Inference/vb/FxCop.Design.Inference.vb#1)]  
-  
-## <a name="related-rules"></a>Související pravidla  
- [CA1005: Vyhněte se nadbytečným parametrům na obecných typech](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)  
-  
- [CA1010: Kolekce musí implementovat obecné rozhraní](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
-  
- [CA1000: Nedeklarujte statické členy v obecných typech](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
-  
- [CA1002: Nezveřejňujte obecné seznamy](../code-quality/ca1002-do-not-expose-generic-lists.md)  
-  
- [CA1006: Nevnořujte obecné typy v signaturách členu](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)  
-  
- [CA1003: Použijte instance obecných obslužných rutin události](../code-quality/ca1003-use-generic-event-handler-instances.md)  
-  
- [CA1007: Použijte obecné typy, kde je to vhodné](../code-quality/ca1007-use-generics-where-appropriate.md)  
-  
-## <a name="see-also"></a>Viz také  
- [Obecné typy](http://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)
+ [!code-vb[FxCop.Design.Inference#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.Inference/vb/FxCop.Design.Inference.vb#1)]
 
+## <a name="related-rules"></a>Související pravidla
+ [CA1005: Vyhněte se nadbytečným parametrům na obecných typech](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
+ [CA1010: Kolekce musí implementovat obecné rozhraní](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
+ [CA1000: Nedeklarujte statické členy v obecných typech](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+
+ [CA1002: Nezveřejňujte obecné seznamy](../code-quality/ca1002-do-not-expose-generic-lists.md)
+
+ [CA1006: Nevnořujte obecné typy v signaturách členu](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+
+ [CA1003: Použijte instance obecných obslužných rutin události](../code-quality/ca1003-use-generic-event-handler-instances.md)
+
+ [CA1007: Použijte obecné typy, kde je to vhodné](../code-quality/ca1007-use-generics-where-appropriate.md)

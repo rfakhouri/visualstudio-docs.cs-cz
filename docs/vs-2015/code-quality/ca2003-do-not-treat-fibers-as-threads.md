@@ -20,33 +20,35 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e510dc73d0e42830137a053522ed9911eef42987
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6563537df74d9e392bad8c4f6ce28c85b8441546
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674245"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902851"
 ---
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Rozlišujte vlákénka od vláken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [CA2003: rozlišujte vlákénka od vláken](https://docs.microsoft.com/visualstudio/code-quality/ca2003-do-not-treat-fibers-as-threads).  
-  
-TypeName | DoNotTreatFibersAsThreads |  
-| ID kontroly | CA2003 |  
-| Kategorie | Microsoft.Reliability|  
-| Zásadní změna | Ukončování bez |  
-  
-## <a name="cause"></a>příčina  
- Spravovaným vláknem se zachází jako vlákno Win32.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Nepředpokládejte, že se že spravovaným vláknem se vlákno Win32. Je vlákno. Common language runtime (CLR) se spustí spravovaná vlákna, jako jsou vlákna v kontextu reálného vlákna, které jsou vlastněny SQL. Tato vlákna mohou být sdíleny napříč objektů třídy AppDomains a dokonce i databází v procesu serveru SQL Server. Pomocí spravovaného vlákna, místní úložiště bude fungovat, ale nemusí používat místní úložiště nespravovaného vlákna nebo se předpokládá, že váš kód poběží v aktuálním vlákně operačního systému znovu. Neměňte nastavení, jako je národní prostředí vlákna. Nevolejte CreateCriticalSection nebo CreateMutex – prostřednictvím P/Invoke, protože vyžadují vlákna, která se zadá zámku musí také ukončení uzamčení. Vzhledem k tomu, že to nebude tak při použití vlákének, budou mít kritických oddílů Win32 a vzájemně vyloučené přístupy zbytečné v SQL. Většina stavu může bezpečně používat na spravovaný objekt System.Thread. Jedná se o místním úložišti spravované vlákno a aktuální uživatelské rozhraní (UI) jazykovou verzi vlákna. Ale pro programovací model důvody, nebudete moct změnit aktuální jazykovou verzi vlákna, při použití SQL; Tím se vynutí prostřednictvím nové oprávnění.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Zkontrolujte vaše použití vláken a odpovídajícím způsobem měnit kód.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
+Nejnovější verzi tohoto tématu můžete najít v [CA2003: rozlišujte vlákénka od vláken](https://docs.microsoft.com/visualstudio/code-quality/ca2003-do-not-treat-fibers-as-threads).
+
+|||
+|-|-|
+|TypeName|DoNotTreatFibersAsThreads|
+|CheckId|CA2003|
+|Kategorie|Microsoft.Reliability|
+|Narušující změna|Nenarušující|
+
+## <a name="cause"></a>příčina
+ Spravovaným vláknem se zachází jako vlákno Win32.
+
+## <a name="rule-description"></a>Popis pravidla
+ Nepředpokládejte, že se že spravovaným vláknem se vlákno Win32. Je vlákno. Common language runtime (CLR) se spustí spravovaná vlákna, jako jsou vlákna v kontextu reálného vlákna, které jsou vlastněny SQL. Tato vlákna mohou být sdíleny napříč objektů třídy AppDomains a dokonce i databází v procesu serveru SQL Server. Pomocí spravovaného vlákna, místní úložiště bude fungovat, ale nemusí používat místní úložiště nespravovaného vlákna nebo se předpokládá, že váš kód poběží v aktuálním vlákně operačního systému znovu. Neměňte nastavení, jako je národní prostředí vlákna. Nevolejte CreateCriticalSection nebo CreateMutex – prostřednictvím P/Invoke, protože vyžadují vlákna, která se zadá zámku musí také ukončení uzamčení. Vzhledem k tomu, že to nebude tak při použití vlákének, budou mít kritických oddílů Win32 a vzájemně vyloučené přístupy zbytečné v SQL. Většina stavu může bezpečně používat na spravovaný objekt System.Thread. Jedná se o místním úložišti spravované vlákno a aktuální uživatelské rozhraní (UI) jazykovou verzi vlákna. Ale pro programovací model důvody, nebudete moct změnit aktuální jazykovou verzi vlákna, při použití SQL; Tím se vynutí prostřednictvím nové oprávnění.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Zkontrolujte vaše použití vláken a odpovídajícím způsobem měnit kód.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Toto pravidlo by neměl potlačit.
 
 
