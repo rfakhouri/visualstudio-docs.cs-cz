@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97fee2a4480f3fe8e5439decfd4852a020a734ff
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 2343218da765ad8bb9a10d585001c5f3321a0137
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232254"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902396"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Vytvoření systému základního projektu, část 1
 Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k uspořádání souborů se zdrojovým kódem a dalších zdrojů. Projekty se zobrazují jako podřízené objekty daného řešení **Průzkumníka řešení**. Projekty umožňují organizovat, sestavovat, ladit a nasadit zdrojový kód a vytvořit odkazy na webové služby, databáze a další prostředky.  
@@ -61,7 +61,7 @@ Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k u
 ## <a name="prerequisites"></a>Požadavky  
  Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnut jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
- Musíte si také stáhnout zdrojový kód [Managed Package Framework pro projekty](http://mpfproj12.codeplex.com/). Extrahujte soubor do umístění, které je přístupné k řešení, které se chystáte vytvořit.  
+ Musíte si také stáhnout zdrojový kód [Managed Package Framework pro projekty](https://github.com/tunnelvisionlabs/MPFProj10). Extrahujte soubor do umístění, které je přístupné k řešení, které se chystáte vytvořit.  
   
 ## <a name="create-a-basic-project-type"></a>Vytvoření základního projektu typu  
  Vytvořte projekt VSIX C# s názvem **SimpleProject**. (**Souboru** > **nové** > **projektu** a potom **Visual C#**  >   **Rozšiřitelnost** > **projekt VSIX**). Přidat šablonu položky projektu balíček Visual Studio (na **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**, pak přejděte na **Rozšiřitelnost** > **balíčku sady Visual Studio**). Název souboru *SimpleProjectPackage*.  
