@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e709c6c2c995fc8065cc5aaec28b7c13229b623
-ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
+ms.openlocfilehash: 22d3a6ea380fdbfb8f6a41fce21d0ad283808d85
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42755698"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054475"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Nalezení změn kódu a další historie pomocí CodeLensu
 
@@ -206,7 +206,7 @@ Může zjišťovat testy jednotek, které existují bez spuštění kódu jazyka
 
 1. Přejděte do aplikace kód, který je spojen [kód testu jednotek](../test/unit-test-your-code.md).
 
-2. Pokud nemáte, sestavení aplikace načíst indikátory CodeLens na test. Ujistěte se, že [zjišťování z vytvořených sestavení](../test/test-explorer-faq.md#assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) zapnutý.
+2. Pokud nemáte, sestavení aplikace načíst indikátory CodeLens na test. Ujistěte se, že [zjišťování z vytvořených sestavení](../test/test-explorer-faq.md#assembly-based-discovery) zapnutý.
 
 3. Zkontrolujte testy Code stisknutím kombinace kláves **Alt**+**3**.
 
@@ -327,7 +327,8 @@ Použití klávesnice:
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Otázka: Moje funkce CodeLens zobrazeny indikátory testu už v souboru při prvním otevření Moje řešení. Jak je můžete je načíst?
 
-**Odpověď:** znovu sestavit projekt získat indikátory CodeLens testu načíst v souboru. Ujistěte se, že [zjišťování z vytvořených sestavení](../test/test-explorer-faq.md#assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) zapnutý. Kvůli zvýšení výkonu se Visual Studio už načítá informace o zdroji pro indikátory testu, když jsou načteny soubory s kódem. Indikátory testu jsou načteny po sestavení nebo přejděte na test na něj poklikejte na něj v **Průzkumníka testů**.
+**Odpověď:** znovu sestavit projekt získat indikátory CodeLens testu načíst v souboru. Ujistěte se, že [zjišťování z vytvořených sestavení](../test/test-explorer-faq.md#assembly-based-discovery
+) zapnutý. Kvůli zvýšení výkonu se Visual Studio už načítá informace o zdroji pro indikátory testu, když jsou načteny soubory s kódem. Indikátory testu jsou načteny po sestavení nebo přejděte na test na něj poklikejte na něj v **Průzkumníka testů**.
 
 ## <a name="see-also"></a>Viz také:
 

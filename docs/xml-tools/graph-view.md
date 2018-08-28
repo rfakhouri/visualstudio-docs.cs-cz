@@ -11,141 +11,141 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 08/27/2018
 ms.locfileid: "34751699"
 ---
 # <a name="graph-view"></a>Zobrazení grafu
 
-Zobrazení grafu poskytuje grafické reprezentace globální schématu uzly a vztahy mezi uzly. Všimněte si, že jste ke změně rozložení schéma nastavit na návrhovou plochu, která neumožňuje zobrazení grafu. Zobrazení grafu zahrnuje taky panelu nástrojů Návrhář schématu XML a navigačního panelu.
+Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a relací mezi uzly. Všimněte si, že zobrazení grafu neumožňuje změnit rozložení schéma, nastavte na návrhové ploše. Zobrazení grafu také obsahuje panel nástrojů Návrhář schémat XML a panelu navigace s popisem cesty.
 
- Následující obrázek znázorňuje zobrazení grafu se šesti globální uzly na jeho návrhové ploše.
+ Následující obrázek ukazuje zobrazení grafu se šesti globální uzly na jeho návrhové ploše.
 
  ![Zobrazení návrháře grafu schématu XML](../xml-tools/media/xsddesigner_graphview.gif)
 
-## <a name="design-surface"></a>Návrhové plochy
+## <a name="design-surface"></a>Návrhová plocha
 
- Na plochu návrháře zobrazení grafu zobrazí obsah [prostoru Návrhář schématu XML](../xml-tools/xml-schema-designer-workspace.md). Pokud pracovní prostor obsahuje všechny globální uzly ze sady schématu, uzly se zobrazí na návrhovou plochu zobrazení grafu a dvojice šipek, které se mají vykreslovat mezi uzly, které mají vztahy.
+ Na návrhovou plochu zobrazení grafu zobrazí obsah [pracovní prostor návrháře schémat XML](../xml-tools/xml-schema-designer-workspace.md). Pokud pracovní prostor obsahuje všechny globální uzly v sadě schémat, uzly se zobrazují na návrhové ploše zobrazení grafu a šipky se vykreslují mezi uzly, které mají relace.
 
- Dvakrát klikněte na uzel v zobrazení grafu se otevře se Editor XML.
+ Dvojitým kliknutím na uzel v zobrazení grafu otevřete tak Editor XML.
 
- Pokud chcete odstranit vybrané uzly z pracovního prostoru, použijte panelu nástrojů programu XSD Designer nebo **odstranit** klíč.
+ Pokud chcete odstranit vybrané uzly z pracovního prostoru, použijte panel nástrojů návrháře XSD nebo **odstranit** klíč.
 
- Pokud návrhovou plochu, která je prázdné, editoru XML **Explorer schématu XML**, a jsou zobrazeny vodoznak. *Vodoznak* seznam obsahuje odkazy na všechna zobrazení XSD Designer.
+ Pokud návrhové ploše je prázdné, editoru XML **Průzkumníka schémat XML**, a jsou uvedeny vodoznak. *Vodoznak* seznam obsahuje odkazy na všechna zobrazení návrháře XSD.
 
- ![Návrhář XSD; Zobrazení grafu](../xml-tools/media/xsdgraphviewwatermark.gif)
+ ![XSD návrháře; Zobrazení grafu](../xml-tools/media/xsdgraphviewwatermark.gif)
 
- Pokud sada schéma obsahuje chyby, zobrazí se následující text na konci seznamu: "K zobrazení a opravte chyby v sadě pomocí seznamu chyb."
+ Pokud sadě schémat obsahuje chyby, na konci seznamu se zobrazí následující text: "K zobrazení a opravte chyby v sadě pomocí seznamu chyb."
 
-## <a name="breadcrumb-bar"></a>Navigačního panelu
+## <a name="breadcrumb-bar"></a>Navigační panel
 
- Navigačního panelu v dolní části zobrazení grafu zobrazuje umístění vybraného uzlu v sadě schématu. Pokud je vybraných více položek, bude navigačního panelu prázdné.
+ Na panelu navigace s popisem cesty v dolní části zobrazení grafu zobrazuje umístění vybraného uzlu v sadě schémat. Pokud je vybráno více položek, panelu navigace s popisem cesty bude prázdné.
 
-## <a name="context-menu"></a>Kontextové nabídky
+## <a name="context-menu"></a>Místní nabídka
 
- Následující tabulka popisuje možnosti, které jsou k dispozici pro všechny uzly na návrhovou plochu zobrazení grafu.
-
-|Možnost|Popis|
-|------------|-----------------|
-|**Zobrazit v Průzkumníku schématu XML**|Vloží fokus na schéma Průzkumníka a zvýrazňuje uzlu sady schématu.|
-|**V zobrazení grafů**|Přepne do zobrazení grafu (šedě).|
-|**Generovat ukázkovém kódu XML**|K dispozici pouze pro globální elementy. Generuje a ukázkový soubor XML pro element globální.|
-|**Vymazat pracovního prostoru**|Vymaže pracovním prostoru a návrhovou plochu.|
-|**Odeberte z pracovního prostoru**|Odebere vybrané uzly z pracovního prostoru a návrhovou plochu.|
-|**Odeberte všechny kromě výběr z pracovního prostoru**|Odebere uzly, které nejsou vybrané z pracovního prostoru a návrhovou plochu.|
-|**Exportovat Diagram jako obrázek**|Uloží na návrhovou plochu do soubor ve formátu XPS.|
-|**Vybrat vše**|Vybere všechny uzly na návrhovou plochu.|
-|**Zobrazení kódu**|Otevře se soubor, který obsahuje vybraný uzel v editoru XML. Položky, který je vybraný v **Explorer schématu XML** , vybere se také v editoru XML.|
-|**Okno Vlastnosti**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|
-
- Kromě běžných nastavení popsané výše kontextové nabídky pro globální elementy taky obsahuje následující možnosti:
+ Následující tabulka popisuje možnosti, které jsou k dispozici pro všechny uzly na návrhové ploše zobrazení grafu.
 
 |Možnost|Popis|
 |------------|-----------------|
-|**Přidání definice typu**|Přidá základní typ diagramu.|
-|**Přidejte všechny odkazy na**|Přidá všechny uzly, které odkazují na element a nevykresluje šipky znázorňující vztahy mezi nimi.|
-|**Přidání členů do skupiny nahrazení**|Přidá všechny členy skupiny nahrazení. Tato možnost se zobrazí v zobrazení, pokud je element head nebo člen skupiny pro nahrazení.|
-|**Generovat ukázkovém kódu XML**|Generuje a ukázkový soubor XML pro element globální.|
+|**Zobrazit v Průzkumníkovi schémat XML**|Umístí fokus na Průzkumník schémat a zvýrazní schématu sady uzlu.|
+|**Zobrazit v zobrazení grafu**|Přepne do zobrazení grafu (šedě).|
+|**Generovat ukázkový soubor XML**|K dispozici pouze pro globální prvky. Generuje ukázkový soubor XML pro prvek globální.|
+|**Vymazat pracovní prostor**|Vymaže pracovní prostor a návrhovou plochu.|
+|**Odebrat z pracovního prostoru**|Odebere vybrané uzly z pracovního prostoru a návrhovou plochu.|
+|**Odeberte všechny kromě výběru z pracovního prostoru**|Odebere uzly, které nejsou vybrané z pracovního prostoru a návrhovou plochu.|
+|**Exportovat Diagram jako obrázek**|Uloží soubor ve formátu XPS návrhové ploše.|
+|**Vybrat vše**|Vybere všechny uzly na návrhové ploše.|
+|**Zobrazit kód**|Otevře soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v **Průzkumníka schémat XML** , vybere se také v editoru XML.|
+|**Okno Vlastnosti**|Otevře **vlastnosti** okna (pokud ještě není otevřený). Toto okno zobrazuje informace o uzlu.|
 
- Kromě běžných nastavení popsané výše kontextovou nabídku globální jednoduché a globální komplexní typy taky obsahuje následující možnosti:
-
-|Možnost|Popis|
-|------------|-----------------|
-|**Přidat základní typ**|Pokud je vybraný typ je odvozen od typu globální, přidá základní typ vybraného typu.|
-|**Přidejte všechny odkazy na**|Přidá všechny odkazy vybraného typu. To zahrnuje elementy a atributy vybraného typu, a typy odvozené z vybraného typu.|
-|**Přidejte všechny odvozené typy**|Přidá všechny typy, které jsou přímo a nepřímo odvozeny od vybraného typu.|
-|**Přidání všech nadřazených**|Přidá všechny typy (základní) nadřazené.|
-
- Kromě běžných nastavení popsané výše kontextovou nabídku globálních skupin a skupin atributů má také následující možnosti:
+ Kromě běžných nastavení je popsáno výše kontextovou nabídku pro globální prvky také obsahuje následující možnosti:
 
 |Možnost|Popis|
 |------------|-----------------|
-|**Přidejte všechny odkazy na**|Přidá všechny uzly, které odkazovat na tuto skupinu a nevykresluje šipky znázorňující vztahy mezi nimi.|
-|**Přidat všechny členy**|Přidá všechny členy skupiny a nevykresluje šipky znázorňující vztahy mezi nimi.|
+|**Přidat definici typu**|Přidá základní typ do diagramu.|
+|**Přidat všechny odkazy**|Přidá všechny uzly, které odkazovat na prvek a vykreslí šipky znázorňující vztahy mezi nimi.|
+|**Přidat členy skupiny nahrazení**|Přidá všechny členy skupiny nahrazení. Tato možnost se objeví v zobrazení, pokud je element head nebo členem substituční skupiny.|
+|**Generovat ukázkový soubor XML**|Generuje ukázkový soubor XML pro prvek globální.|
 
- V addtion běžné možnosti popsané výše kontextovou nabídku globálními atributy taky obsahuje následující možnosti:
+ Kromě běžných nastavení je popsáno výše kontextovou nabídku pro globální jednoduché a globální komplexní typy také obsahuje následující možnosti:
 
 |Možnost|Popis|
 |------------|-----------------|
-|**Přidejte všechny odkazy na**|Přidá všechny uzly, které odkazovat na tuto skupinu a nevykresluje šipky znázorňující vztahy mezi nimi.|
+|**Přidat základní typ**|Pokud vybraný typ je odvozen od typu globální, přidá základní typ vybraného typu.|
+|**Přidat všechny odkazy**|Přidá všechny odkazy vybraného typu. To zahrnuje elementy a atributy vybraného typu a typy odvozené od vybraného typu.|
+|**Přidat všechny odvozené typy**|Přidá všechny typy, které jsou přímo i nepřímo odvozeny z vybraného typu.|
+|**Přidat všechny nadřazené prvky**|Přidá všechny nadřazené (základní) typy.|
+
+ Kromě běžných nastavení je popsáno výše kontextovou nabídku pro globální skupiny a skupiny atributů obsahuje také následující možnosti:
+
+|Možnost|Popis|
+|------------|-----------------|
+|**Přidat všechny odkazy**|Přidá všechny uzly, které odkazují do skupiny a vykreslí šipky znázorňující vztahy mezi nimi.|
+|**Přidat všechny členy**|Přidá všechny členy skupiny a vykreslí šipky znázorňující vztahy mezi nimi.|
+
+ Kromě běžných nastavení je popsáno výše kontextovou nabídku pro globální atributy také obsahuje následující možnosti:
+
+|Možnost|Popis|
+|------------|-----------------|
+|**Přidat všechny odkazy**|Přidá všechny uzly, které odkazují do skupiny a vykreslí šipky znázorňující vztahy mezi nimi.|
 
 ## <a name="properties-window"></a>Vlastnosti – okno
 
- Pomocí místní nabídky původně otevřete **vlastnosti** okno. Ve výchozím nastavení **vlastnosti** okno se zobrazí v pravém dolním rohu Visual Studio. Při kliknutí na uzel, který se vykreslí v zobrazení obsahu modelu, vlastnosti tento uzel se zobrazí v **vlastnosti** okno.
+ Pomocí místní nabídky k prvním spuštění **vlastnosti** okna. Ve výchozím nastavení **vlastnosti** okno se zobrazí v pravém dolním rohu sady Visual Studio. Po kliknutí na uzel, který se vykreslí v zobrazení modelu obsahu, vlastnosti uzlu se zobrazí v **vlastnosti** okna.
 
-## <a name="xsd-toolbar"></a>XSD panelu nástrojů
+## <a name="xsd-toolbar"></a>Panel nástrojů XSD
 
- Tlačítka panelu nástrojů XSD následující jsou povolené, když je aktivní zobrazení grafu.
+ Při aktivním zobrazení grafu jsou povoleny následující tlačítka panelu nástrojů XSD.
 
- ![Nástrojů Návrhář schématu XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
+ ![Panel nástrojů návrháře schémat XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Možnost|Popis|
 |------------|-----------------|
-|**Nastaví počáteční zobrazení**|Přepne do [spuštění zobrazení](../xml-tools/start-view.md). Toto zobrazení je přístupná pomocí klávesové zkratky: **Ctrl**+**1**.|
-|**Nastaví zobrazení modelu obsahu**|Přepne do [modelu zobrazení obsahu](../xml-tools/content-model-view.md). Toto zobrazení je přístupná pomocí klávesové zkratky: **Ctrl**+**2**.|
-|**Zobrazit zobrazení grafu**|Přepne do [graf zobrazení](../xml-tools/graph-view.md). Toto zobrazení je přístupná pomocí klávesové zkratky: **Ctrl**+**3**.|
-|**Vymazat pracovního prostoru**|Vymaže pracovním prostoru a návrhovou plochu.|
-|**Odeberte z pracovního prostoru**|Odebere vybrané uzly z pracovního prostoru a návrhovou plochu.|
-|**Odeberte všechny kromě výběr z pracovního prostoru**|Odebere uzly, které nejsou vybrané z pracovního prostoru a návrhovou plochu. Tato možnost je povolená v zobrazení obsahu modelu a zobrazení grafu.|
-|**Zleva doprava**|Rozložení v zobrazení grafu se změní na znázornění zleva doprava hierarchické uzlů. Tato možnost je přístupná pomocí klávesové zkratky: **Alt**+**šipku vpravo**.|
-|**Zleva doprava.**|Rozložení v zobrazení grafu se změní na znázornění zprava doleva hierarchické uzlů. Tato možnost je přístupná pomocí klávesové zkratky: **Alt**+**šipku vlevo**.|
-|**Shora dolů**|Rozložení v zobrazení grafu se změní na znázornění shora dolů hierarchické uzlů. Tato možnost je přístupná pomocí klávesové zkratky: **Alt**+**šipka dolů**.|
-|**Zdola nahoru**|Rozložení v zobrazení grafu se změní na znázornění dolní horní hierarchické uzlů. Tato možnost je přístupná pomocí klávesové zkratky: **Alt**+**šipka nahoru**.|
+|**Ukázat počáteční zobrazení**|Přepne [počáteční zobrazení](../xml-tools/start-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**1**.|
+|**Ukázat zobrazení modelu obsahu**|Přepne [zobrazení modelu obsahu](../xml-tools/content-model-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**2**.|
+|**Ukázat zobrazení grafu**|Přepne [grafu zobrazení](../xml-tools/graph-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**3**.|
+|**Vymazat pracovní prostor**|Vymaže pracovní prostor a návrhovou plochu.|
+|**Odebrat z pracovního prostoru**|Odebere vybrané uzly z pracovního prostoru a návrhovou plochu.|
+|**Odeberte všechny kromě výběru z pracovního prostoru**|Odebere uzly, které nejsou vybrané z pracovního prostoru a návrhovou plochu. Tato možnost je povolená v zobrazení modelu obsahu a zobrazení grafu.|
+|**Zleva doprava**|Rozložení v zobrazení grafu se změní na uzly Hierarchická reprezentace zleva doprava. Tuto možnost lze přistupovat pomocí klávesové zkratky: **Alt**+**šipku vpravo**.|
+|**Zprava doleva**|Rozložení v zobrazení grafu se změní na uzly Hierarchická reprezentace zprava doleva. Tuto možnost lze přistupovat pomocí klávesové zkratky: **Alt**+**šipku vlevo**.|
+|**Shora dolů**|Rozložení v zobrazení grafu se změní na uzly Hierarchická reprezentace shora dolů. Tuto možnost lze přistupovat pomocí klávesové zkratky: **Alt**+**šipka dolů**.|
+|**Zdola nahoru**|Změní rozložení v zobrazení grafu do dolní části horní Hierarchická reprezentace uzly. Tuto možnost lze přistupovat pomocí klávesové zkratky: **Alt**+**šipka nahoru**.|
 
-## <a name="panscroll"></a>Pan/posuvníku
+## <a name="panscroll"></a>Posun/posuvníku
 
- Pomocí posuvníky nebo tím, že se můžete posunete zobrazení návrhovou plochu **Ctrl** klíče při klikněte a přetáhněte myší. Pokud provádíte posun na návrhovou plochu, klikněte na tlačítko a přetáhněte, kurzor se změní na čtyři křížového šipky směřující v čtyři směrech.
+ S použitím se posuvníky nezobrazovaly nebo tak, že se můžete pohybovat návrhovou plochu **Ctrl** klávesu klikněte a přetáhněte myší. Při posouvání návrhové plochy, klikněte na tlačítko a přetáhněte kurzoru se změní na čtyři překřížené šipky směřující do čtyř směrů.
 
-## <a name="undoredo"></a>Vrátit/opakovat
+## <a name="undoredo"></a>Zpět/znovu
 
- Možnost zpět/opakování je povolena v zobrazení graf pro následující akce:
+ Funkce Zpět/znovu je povolená v zobrazení grafu pro následující akce:
 
--   Přidávání do jednoho uzlu pomocí přetahování.
+-   Přidání jednoho uzlu pomocí přetahování.
 
--   Přidání více uzlů z výsledků hledání v Průzkumníku schématu nebo spuštění zobrazení dotazů.
+-   Přidání více uzlů z výsledků hledání v dotazech Průzkumník schémat nebo zobrazení Start.
 
--   Odstranění jednoho nebo více uzlů.
+-   Odstraňuje se jeden nebo více uzlů.
 
 ## <a name="zoom"></a>Lupa
 
  Přiblížení je k dispozici v pravém dolním rohu zobrazení grafu.
 
- Přiblížení se dá řídit následujícími způsoby:
+ Zvětšení lze řídit následujícími způsoby:
 
--   Tím, že se **Ctrl** klíč a otáčí myši kol při ukazatele myši na povrchu zobrazení grafu.
+-   Tím, že se **Ctrl** klíč a na otáčejících se ukazatel myši kol, když myš je přesunutá na plochu grafu.
 
 -   Pomocí posuvníku. Posuvník zobrazuje aktuální úroveň přiblížení.
 
-Posuvník přiblížení je plné krytí, pokud vyberte ho, při přechodu nebo používají **Ctrl** kolečka myši pro přiblížení; v jinou dobu je transparentní.
+Posuvník přiblížení je neprůhledný, když vyberte ho, najeďte myší nad ním nebo použijte **Ctrl** kolečkem myši pro přiblížení; v jinou dobu, je transparentní.
 
-## <a name="xml-editor-integration"></a>Integrace editor XML
+## <a name="xml-editor-integration"></a>Integrace editoru XML
 
- Můžete přepnout přepínat mezi zobrazení grafu a Editor souborů XML tak, že kliknete uzel pomocí místní nabídky zobrazení kódu.
+ Můžete přepínat vpřed a zpět mezi zobrazení grafu a Editor souborů XML tak, že kliknete na uzel a pomocí kontextové nabídky zobrazení kódu.
 
- Pokud provedete změny schématu nastavení v editoru XML, změny budou synchronizovány v zobrazení grafu. Další informace najdete v tématu [integrace s editoru XML](../xml-tools/integration-with-xml-editor.md).
+ Pokud provedete změny schématu, nastavte v editoru XML, změny budou synchronizovány v zobrazení grafu. Další informace najdete v tématu [integrace s editorem XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Viz také:
 
-- [Návrhové plochy](../xml-tools/xml-schema-designer-workspace.md)
+- [Návrhová plocha](../xml-tools/xml-schema-designer-workspace.md)
