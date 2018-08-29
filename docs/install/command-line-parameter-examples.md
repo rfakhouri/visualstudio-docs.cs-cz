@@ -1,6 +1,6 @@
 ---
-title: Příklady parametr příkazového řádku pro instalaci sady Visual Studio
-description: Přizpůsobte tyto příklady vytvořit vlastní instalace z příkazového řádku sady Visual Studio.
+title: Příklady parametrů příkazového řádku pro instalaci sady Visual Studio
+description: Přizpůsobení těchto příkladech, chcete-li vytvořit vlastní instalaci sady Visual Studio z příkazového řádku.
 ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -11,28 +11,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 829a7892b1d35df2fe5cd2a42dcc431f5ccbb7dc
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f5e0b81f1d21348a11ceff8d74d326b95e311303
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279947"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138003"
 ---
-# <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Příklady parametr příkazového řádku pro instalaci Visual Studio 2017
+# <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Příklady parametrů příkazového řádku pro instalaci sady Visual Studio 2017
 
-Pro ilustraci postup [používání parametrů příkazového řádku pro instalaci sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md), zde je několik příkladů, které můžete přizpůsobit tak, aby odpovídaly vašim potřebám.
+Pro ilustraci jak [použít parametry příkazového řádku instalace sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md), tady je několik příkladů, které můžete přizpůsobit tak, aby odpovídala vašim potřebám.
 
-V obou příkladech `vs_enterprise.exe`, `vs_professional.exe` a `vs_community.exe` představují odpovídající edice zaváděcího nástroje Visual Studio, což je soubor malá (přibližně 1 MB), který zahájí proces stahování. Pokud používáte jinou edici, nahraďte název příslušné zaváděcího nástroje.
+V obou příkladech `vs_enterprise.exe`, `vs_professional.exe` a `vs_community.exe` představují příslušné verzi zaváděcí nástroj Visual Studio, což je soubor malé (přibližně 1 MB), který zahájí proces stahování. Pokud používáte jinou verzi, nahraďte název odpovídající zaváděcího nástroje.
 
 > [!NOTE]
-> Všechny příkazy vyžadují zvýšení oprávnění pro správu a řízení uživatelských účtů, výzva se zobrazí, pokud proces neběží řádku se zvýšenými oprávněními.
+> Všechny příkazy vyžadovat zvýšení oprávnění pro správu a řízení uživatelských účtů, výzva se zobrazí, pokud proces není spuštěn řádku se zvýšenými oprávněními.
 >
 > [!NOTE]
->  Můžete použít `^` znak na konci příkazového řádku k řetězení více řádků do jednoho příkazu. Alternativně můžete jednoduše umístit tyto řádky společně na jednom řádku. V prostředí PowerShell, je ekvivalentem backtick (`` ` ``) znaků.
+>  Můžete použít `^` znak na konci příkazového řádku ke zřetězení více řádků do jediného příkazu. Alternativně můžete umístit společně na jediném řádku tyto řádky. V prostředí PowerShell, je ekvivalentní prvními (`` ` ``) znaků.
 
-## <a name="using---installpath"></a>Pomocí – installPath
+## <a name="using---installpath"></a>Pomocí--installPath
 
-* Nainstalujte minimální instanci sady Visual Studio, s žádný interaktivní výzvy, ale zobrazí průběh:
+* Nainstalujte minimální instanci sady Visual Studio, s žádné interaktivní výzvy, ale zobrazuje průběh:
 
  ```cmd
  vs_enterprise.exe --installPath C:\minVS ^
@@ -40,7 +40,7 @@ V obou příkladech `vs_enterprise.exe`, `vs_professional.exe` a `vs_community.e
    --passive --norestart
  ```
 
-* Aktualizace instance Visual Studio pomocí příkazového řádku s žádný interaktivní výzvy, ale zobrazí průběh:
+* Aktualizace instance sady Visual Studio pomocí příkazového řádku se žádné interaktivní výzvy, ale zobrazuje průběh:
 
  ```cmd
  vs_enterprise.exe --update --quiet --wait
@@ -48,9 +48,9 @@ V obou příkladech `vs_enterprise.exe`, `vs_professional.exe` a `vs_community.e
  ```
 
  > [!NOTE]
- > Oba příkazy jsou povinné. První příkaz aktualizuje instalační program Visual Studio. V druhém příkazu aktualizuje instanci sady Visual Studio. Abyste se vyhnuli dialogové okno Řízení uživatelských účtů, příkazový řádek spustíte jako správce.
+ > Oba příkazy jsou povinné. První příkaz aktualizuje instalační program sady Visual Studio. Druhý příkaz aktualizuje instanci sady Visual Studio. Aby se zabránilo dialogové okno Řízení uživatelských účtů, spusťte příkazový řádek jako správce.
 
-* Instalaci bezobslužně, plochy instance sady Visual Studio s Francouzská jazyková sada, vrácení jenom v případě, že je nainstalovaný produkt.
+* Klasické pracovní plochy instanci sady Visual Studio tichou instalaci, Francouzská jazyková sada, vrací pouze v případě, že je nainstalován produkt.
 
  ```cmd
  vs_enterprise.exe --installPath C:\desktopVS ^
@@ -60,11 +60,11 @@ V obou příkladech `vs_enterprise.exe`, `vs_professional.exe` a `vs_community.e
  ```
 
  > [!NOTE]
- > `--wait` Parametr je určen k použití v dávkovém souboru. V dávkovém souboru provádění dalšího příkazu nebude pokračovat až po dokončení instalace. `%ERRORLEVEL%` Proměnné prostředí bude obsahovat vrácenou hodnotu příkazu, jak je uvedeno v [používání parametrů příkazového řádku pro instalaci sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md) stránky.
+ > `--wait` Parametr je určený pro použití v dávkovém souboru. V dávkovém souboru nebude pokračovat provádění dalšího příkazu až do dokončení instalace. `%ERRORLEVEL%` Proměnné prostředí bude obsahovat vrácenou hodnotu příkazu, jak je uvedeno v [použít parametry příkazového řádku instalace sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md) stránky.
 
-## <a name="using---layout"></a>Pomocí--rozložení
+## <a name="using---layout"></a>Pomocí parametru--rozložení
 
-* Stáhněte si základní editoru Visual Studio (většina minimální konfigurace sady Visual Studio). Zahrnout pouze anglické jazykové sady:
+* Stáhněte si základní editor sady Visual Studio (nejvíce minimální konfigurace sady Visual Studio). Zahrnout pouze anglické jazykové sady:
 
  ```cmd
  vs_community.exe --layout C:\VS2017
@@ -72,7 +72,7 @@ V obou příkladech `vs_enterprise.exe`, `vs_professional.exe` a `vs_community.e
    --add Microsoft.VisualStudio.Workload.CoreEditor
  ```
 
-* Stáhněte .NET plochy a .NET webové úlohy spolu se všechny doporučené součásti a rozšíření Githubu. Zahrnout pouze anglické jazykové sady:
+* Stáhněte .NET desktop a webové úlohy .NET spolu s všechny doporučené součásti a rozšíření GitHub. Zahrnout pouze anglické jazykové sady:
 
  ```cmd
  vs_community.exe --layout C:\VS2017 ^
@@ -83,24 +83,24 @@ V obou příkladech `vs_enterprise.exe`, `vs_professional.exe` a `vs_community.e
    --includeRecommended
  ```
 
-## <a name="using---includerecommended"></a>Pomocí – includeRecommended
+## <a name="using---includerecommended"></a>Pomocí--includeRecommended
 
-* Spusťte interaktivní instalaci všech úloh a součásti, které jsou k dispozici v edici Visual Studio 2017 Enterprise:
+* Interaktivní instalací všechny úlohy a komponenty, které jsou k dispozici v edici Visual Studio 2017 Enterprise:
 
  ```cmd
  vs_enterprise.exe --all --includeRecommended --includeOptional
  ```
 
-* Instalaci druhé, s názvem instance Visual Studio 2017 Professional na počítači s již nainstalován ve – podpora vývoje Node.js pro edice Visual Studio 2017 Community:
+* Druhý, pojmenovanou instanci sady Visual Studio 2017 Professional můžete nainstalujte na počítač s Visual Studio 2017 Community edition už nainstalovaná s podporou pro vývoj v Node.js:
 
  ```cmd
  vs_professional.exe --installPath C:\VSforNode ^
    --add Microsoft.VisualStudio.Workload.Node --includeRecommended --nickname VSforNode
  ```
 
-## <a name="using---remove"></a>Pomocí – odebrat
+## <a name="using---remove"></a>Pomocí parametru--odebrat
 
-* Odeberte komponentu nástrojích pro profilaci z výchozí nainstalována instance Visual Studio:
+* Odebrat součást nástrojů pro profilaci z výchozího nainstalované instance sady Visual Studio:
 
  ```cmd
  vs_enterprise.exe modify ^
@@ -109,15 +109,15 @@ V obou příkladech `vs_enterprise.exe`, `vs_professional.exe` a `vs_community.e
    --passive
  ```
 
-## <a name="using---path"></a>Pomocí – cesty
+## <a name="using---path"></a>Pomocí parametru--cesty
 
-Tyto parametry příkazového řádku jsou **nové v 15.7**. Další informace o nich najdete v tématu [používání parametrů příkazového řádku pro instalaci sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md) stránky.
+Tyto parametry příkazového řádku jsou **nové ve verzi 15.7**. Další informace o nich najdete v tématu [použít parametry příkazového řádku instalace sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md) stránky.
 
-* Pomocí instalace, mezipaměti a sdílené cesty:
+* Pomocí instalace, mezipaměť a sdílené cesty:
 
  `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache" --path shared="C:\VS\shared"`
 
-* Používání jenom cesty instalace a mezipaměti:
+* Pomocí jenom cesty instalace a mezipaměti:
 
  `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache"`
 
@@ -125,23 +125,14 @@ Tyto parametry příkazového řádku jsou **nové v 15.7**. Další informace o
 
  `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path shared="C:\VS\shared"`
 
-* Pomocí instalační cestu:
+* Použití pouze instalační cesta:
 
  `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
 
-## <a name="get-support"></a>Získat podporu
-
-V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Tady je několik další možnosti podpory:
-
-* Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
-* Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Viz také:
 
 * [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
 * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
-* [Vytvoření offline instalace Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Vytvoření offline instalace sady Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)

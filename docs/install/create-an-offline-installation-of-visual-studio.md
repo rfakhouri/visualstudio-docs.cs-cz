@@ -1,6 +1,6 @@
 ---
 title: Vytvoření Offline instalace sady Visual Studio
-description: Zjistěte, jak k instalaci sady Visual Studio v režimu offline.
+description: Zjistěte, jak v režimu offline instalace sady Visual Studio.
 ms.custom: ''
 ms.date: 01/17/2018
 ms.technology: vs-acquisition
@@ -16,39 +16,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ef917b4e8aa5cde8d95c036523bb525799cc19e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: d19eabe10234ca2a1670ae04f99a45a85a6cac14
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279960"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138874"
 ---
-# <a name="create-an-offline-installation-of-visual-studio-2017"></a>Vytvoření offline instalace Visual Studio 2017
+# <a name="create-an-offline-installation-of-visual-studio-2017"></a>Vytvoření offline instalace sady Visual Studio 2017
 
-Jsme chtěli instalační program Visual Studio 2017 fungovat i v celé řadě podmínek, sítě a počítače.
+Jsme navrhovali instalačního programu sady Visual Studio 2017 dobře fungovaly v nejrůznějších podmínek sítě a počítače.
 
-- Nový model založené na pracovním vytížení znamená, že budete muset stáhnout úplně menší než u starších verzí sady Visual Studio: malé jako 300 MB nejmenší instalace;
-- Ve srovnání s obecný "ISO" nebo soubor zip, jsme stáhnout pouze balíčky, které potřebujete pro váš počítač. Například jsme nestahovat 64-bit soubory nepotřebujete je;
-- Během procesu instalace pokusíme tři různé stažení technologie (WebClient, BITS a WinInet) Chcete-li minimalizovat narušení s antivirový a proxy softwaru;
-- Soubory, budete muset nainstalovat Visual Studio se distribuují v síti globální doručování, takže jsme můžete získat pro vás z místního serveru.
+- Nový model založený na úlohách znamená, že budete muset stáhnout úplně menší než v předchozích verzích sady Visual Studio: pouhých 300 MB nejmenší instalace;
+- Ve srovnání s obecný "ISO" nebo soubor zip, se nám stáhnout pouze balíčky, které potřebujete pro svůj počítač. Například můžeme nestahovat 64-bit soubory Pokud nepotřebujete.
+- Během procesu instalace snažíme tři různé stahování technologie (WebClient, BITŮ a WinInet) bránila v softwaru antivirový program a proxy serveru.
+- Soubory je potřeba nainstalovat sadu Visual Studio se distribuují na síť pro doručování globální, abychom se mohli je pro vás z místního serveru.
 
-Doporučujeme vám, že zkusíte [instalačního programu sady Visual Studio webové](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)&mdash;myslíme si, naleznete je dobré prostředí.
+Doporučujeme vám vyzkoušet [webovou Instalační službu sady Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)&mdash;myslíme si, zjistíte to kvalitní prostředí.
 
  > [!div class="button"]
  > [Stažení sady Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
-Pokud chcete nainstalovat do offline režimu, protože připojení k Internetu je k dispozici nebo nespolehlivé, viz [nainstalovat Visual Studio 2017 na malou šířkou pásma nebo nespolehlivé mezi sítě v prostředích](../install/install-vs-inconsistent-quality-network.md). Příkazového řádku můžete použít k vytvoření místní mezipaměti souborů, které potřebujete k dokončení instalace v režimu offline. Tento proces nahradí soubory ISO k dispozici pro předchozí verze.
+Pokud chcete nainstalovat do offline režimu, protože připojení k Internetu je nedostupné nebo nespolehlivé, viz [instalace sady Visual Studio 2017 v pomalé nebo nespolehlivé síti prostředí](../install/install-vs-inconsistent-quality-network.md). Chcete-li vytvořit místní mezipaměti soubory, které potřebujete k dokončení offline instalace můžete použít příkazový řádek. Tento proces nahradí soubory ISO k dispozici pro předchozí verze.
 
 > [!NOTE]
-> Pokud jste správce organizace, který chce provést nasazení sady Visual Studio 2017 k síti klientské pracovní stanice, které jsou bránou firewall z Internetu, najdete v našich [vytvořit sítě instalaci sady Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) a [Instalaci certifikátů vyžadovaných pro instalaci sady Visual Studio offline](../install/install-certificates-for-visual-studio-offline.md) stránky.
+> Pokud jste správce organizace, který chce provést nasazení sady Visual Studio 2017 k síti klientských pracovních stanic, které jsou aplikována brána firewall z Internetu, najdete v našich [vytvoření síťové instalace sady Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) a [Instalaci certifikátů vyžadovaných pro offline instalace sady Visual Studio](../install/install-certificates-for-visual-studio-offline.md) stránky.
 
-## <a name="get-support"></a>Získat podporu
-
-V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Tady je několik další možnosti podpory:
-
-* Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
-* Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]

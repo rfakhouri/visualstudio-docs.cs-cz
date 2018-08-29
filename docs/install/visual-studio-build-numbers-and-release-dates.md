@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 513b97d650efbe983d2fbe075532ecd45c2fa966
-ms.sourcegitcommit: d96d2888ee2d4a2a33c508c3787e259478134bae
+ms.openlocfilehash: ef62980f3e6eca10732502fa97c453628e4e33b1
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42624336"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138464"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 čísla sestavení a data vydání
 
@@ -144,16 +144,7 @@ Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual S
 | 15.1 ve verzi preview 1 | Náhled | 7. března 2017 | 15.0.26304.0 |
 | 15.0.0 | Vydaná verze | 7. března 2017 | 15.0.26228.4 |
 
-## <a name="get-support"></a>Získat podporu
-
-V některých případech může něco selže. Pokud se nezdaří instalace aplikace Visual Studio, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud žádný z kroků pro řešení potíží, kontaktujte nás podle živý chat pro pomoc s instalací (jenom v angličtině). Podrobnosti najdete v tématu [stránku podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Tady je několik dalších možností podpory:
-
-* Může probíhat hlášení problémů s produktem nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu sady Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
-* Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémů s produktem a najít odpovědi v [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com/).
-* Můžete také Spolupracujte s námi a jinými vývojáři Visual Studio prostřednictvím [konverzace sady Visual Studio v komunitě Gitteru](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účet.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Viz také:
 

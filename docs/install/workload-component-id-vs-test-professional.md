@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dfd54aa8b476187d1f6ba0a4f7916515e87064f
-ms.sourcegitcommit: 2b1f8e5288582367af2bed20848ba556f146716e
+ms.openlocfilehash: 0558cc22b9b92a6d9d0e52d82194557110b6df7a
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624357"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43134999"
 ---
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Složka komponenty Visual Studio Test Professional 2017
 
@@ -60,16 +60,7 @@ ID součásti | Název | Version
 --- | --- | ---
 není k dispozici | není k dispozici | není k dispozici
 
-## <a name="get-support"></a>Získat podporu
-
-V některých případech může něco selže. Pokud se nezdaří instalace aplikace Visual Studio, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud žádný z kroků pro řešení potíží, kontaktujte nás podle živý chat pro pomoc s instalací (jenom v angličtině). Podrobnosti najdete v tématu [stránku podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Tady je několik dalších možností podpory:
-
-* Může probíhat hlášení problémů s produktem nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu sady Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
-* Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémů s produktem a najít odpovědi v [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com/).
-* Můžete také Spolupracujte s námi a jinými vývojáři Visual Studio prostřednictvím [konverzace sady Visual Studio v komunitě Gitteru](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účet.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Viz také:
 

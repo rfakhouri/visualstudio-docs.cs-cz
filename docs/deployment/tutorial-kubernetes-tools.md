@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 26aa451aa58017720b058266813ad465fbbc740e
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054569"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138940"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Začínáme s Kubernetes nástroje sady Visual Studio
 
-Visual Studio Kubernetes Tools zjednodušit vývoj kontejnerizovaných aplikací, které cílí na Kubernetes. Visual Studio může automaticky vytvořit konfigurace jako kódu soubory potřebné pro podporu nasazení Kubernetes, jako jsou soubory Dockerfile a Helm grafy. Kromě toho můžete publikovat přímo do clusteru Azure Kubernetes Service (AKS) ze sady Visual Studio.
+Visual Studio Kubernetes Tools zjednodušit vývoj kontejnerizovaných aplikací, které cílí na Kubernetes. Visual Studio může automaticky vytvořit konfigurace jako kódu soubory potřebné pro podporu nasazení Kubernetes, jako jsou soubory Dockerfile a Helm grafy. Ladění kódu v aktivní cluster Azure Kubernetes Service (AKS) pomocí Azure Dev mezery nebo publikovat přímo do clusteru AKS z v sadě Visual Studio.
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -28,7 +28,7 @@ Chcete-li využívají tato nová funkce, budete potřebovat:
 
 - [Kubernetes tools pro Visual Studio](https://aka.ms/get-vsk8stools), která je dostupná jako samostatný soubor ke stažení.
 
-- [Docker pro Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) nainstalované na pracovní stanici vývoje (to znamená, kde spouštíte Visual Studio)
+- [Docker pro Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) nainstalované na pracovní stanici vývoje (to znamená, pokud spustíte Visual Studio), pokud chcete sestavit Image Dockeru, ladit místně spuštěné kontejnery Dockeru nebo publikovat ve službě AKS.
 
 - Pokud chcete publikovat ze sady Visual Studio do AKS:
 
@@ -74,7 +74,7 @@ Přidání souborů jsou:
 
 - Helm chart a *grafy* složky. Tyto soubory yaml tvoří grafu Helm pro aplikace, které můžete použít k jejímu nasazení Kubernetes. Další informace o Helm, naleznete v tématu [ https://www.helm.sh ](https://www.helm.sh).
 
-- *azds.yaml*. Obsahuje nastavení pro Azure Dev mezery, novou službu, která poskytuje rychlý a iterativní ladění prostředí ve službě Azure Kubernetes Service. Tento soubor je aktuálně nepoužívané, ale je vyhrazen pro budoucí použití mezerami vývoj Azure.
+- *azds.yaml*. Obsahuje nastavení pro prostory vývoj Azure, který poskytuje rychlý a iterativní ladění prostředí ve službě Azure Kubernetes Service. Další informace, použijte odkaz [v dokumentaci k Azure Dev prostory](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces).
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Publikování do služby Azure Kubernetes Service (AKS)
 
