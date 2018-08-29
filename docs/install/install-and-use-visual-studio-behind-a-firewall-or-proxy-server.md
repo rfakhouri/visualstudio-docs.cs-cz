@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 911bedf391a37f64ba1f71179e2a3060be152842
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: d7e96da4ad8f55db251f816516c00502991053f7
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978434"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138419"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem
 
@@ -128,12 +128,14 @@ V některých případech může být spustíte chyby související s sítě neb
 
 ## <a name="get-support"></a>Získat podporu
 
-Tady je několik dalších možností podpory pro vás:
+Nabízíme [ **živý chat** ](https://visualstudio.microsoft.com/vs/support/#talktous) (jenom v angličtině) možnost podpory pro problémy související s instalací.
 
-* Může probíhat hlášení problémů s produktem nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu sady Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
-* Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémů s produktem a najít odpovědi v [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com/).
-* Můžete také Spolupracujte s námi a jinými vývojáři Visual Studio prostřednictvím [konverzace sady Visual Studio v komunitě Gitteru](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účet.)
+Tady je několik dalších možností podpory:
+
+* Hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu sady Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
+* Návrh produktu s námi sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Sledování problémů s produktem a najít odpovědi v [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com/).
+* Použití vaší [Githubu](https://github.com/) účet ke komunikaci s námi a dalších Visual Studio získávají vývojáři v [konverzace sady Visual Studio v komunitě Gitteru](https://gitter.im/Microsoft/VisualStudio).
 
 ## <a name="see-also"></a>Viz také:
 

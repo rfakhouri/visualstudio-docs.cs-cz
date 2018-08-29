@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b818a633f6d638562b64da2fd916a32252d881
-ms.sourcegitcommit: 2b1f8e5288582367af2bed20848ba556f146716e
+ms.openlocfilehash: c79682cf51a9b09ad6a772eade421d6b4f9e252f
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42623988"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138812"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Složka komponenty Visual Studio Enterprise 2017
 
@@ -1123,16 +1123,7 @@ Microsoft.VisualStudio.Component.VC.Tools.14.13 | VC ++ 2017 verze 15.6 v14.13 �
 Microsoft.VisualStudio.Component.VC.Tools.14.14 | Sada nástrojů VC ++ 2017 verze 15.7 v14.14 – | 15.0.27924.0
 Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Kompilátory jazyka Visual C++ a knihovny pro ARM64 | 15.6.27309.0
 
-## <a name="get-support"></a>Získat podporu
-
-V některých případech může něco selže. Pokud se nezdaří instalace aplikace Visual Studio, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud žádný z kroků pro řešení potíží, kontaktujte nás podle živý chat pro pomoc s instalací (jenom v angličtině). Podrobnosti najdete v tématu [stránku podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Tady je několik dalších možností podpory:
-
-* Může probíhat hlášení problémů s produktem nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu sady Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
-* Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémů s produktem a najít odpovědi v [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com/).
-* Můžete také Spolupracujte s námi a jinými vývojáři Visual Studio prostřednictvím [konverzace sady Visual Studio v komunitě Gitteru](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účet.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Viz také:
 

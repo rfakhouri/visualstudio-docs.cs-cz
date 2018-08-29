@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0569172a73ab4f4187a7202f24cb65f7ac33ed
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 2b85d7f209648831900b8f7b7e1bb1f45ffd8979
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586524"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139246"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Vytvoření síťové instalace sady Visual Studio 2017
 
@@ -148,18 +148,9 @@ Pokud je potřeba vytvořit rozložení pro starší verze sady Visual Studio 20
 
 Pokud dochází k potížím s offline instalací chcete vědět o něm. Nejlepší způsob, jak Řekněte nám, je použít [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj. Při použití tohoto nástroje můžete nám odeslat telemetrii a protokoly, musíme pomáhají diagnostikovat a opravit problém.
 
+Nabízíme také [ **živý chat** ](https://visualstudio.microsoft.com/vs/support/#talktous) (jenom v angličtině) možnost podpory pro problémy související s instalací.
+
 Další možnosti podpory dostupné, máme příliš. Seznam najdete v tématu naše [kontaktujte nás](../ide/how-to-report-a-problem-with-visual-studio-2017.md) stránky.
-
-## <a name="get-support"></a>Získat podporu
-
-V některých případech může něco selže. Pokud se nezdaří instalace aplikace Visual Studio, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud žádný z kroků pro řešení potíží, kontaktujte nás podle živý chat pro pomoc s instalací (jenom v angličtině). Podrobnosti najdete v tématu [stránku podpory sady Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Tady je několik dalších možností podpory:
-
-* Může probíhat hlášení problémů s produktem nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu sady Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
-* Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémů s produktem a najít odpovědi v [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com/).
-* Můžete také Spolupracujte s námi a jinými vývojáři Visual Studio prostřednictvím [konverzace sady Visual Studio v komunitě Gitteru](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účet.)
 
 ## <a name="see-also"></a>Viz také:
 
