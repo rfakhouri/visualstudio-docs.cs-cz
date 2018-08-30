@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d398d22944ae4c0e5be725169b9d7ceaadb0667d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7aab8c5796a111d90c29e7fa656749adcdf124bd
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945829"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43225123"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Sada pravidel Nativní doporučená pravidla
 
@@ -148,6 +148,9 @@ Nativní doporučená pravidla se soustředí na nejdůležitější a běžné 
 |[C26116](../code-quality/c26116.md)|Selhání získání nebo udržení zámku|
 |[C26117](../code-quality/c26117.md)|Uvolnění nepotřebného zámku|
 |[C26140](../code-quality/c26140.md)|Chyba anotace SAL souběžnosti|
+|[C26441](../code-quality/c26441.md)|NO_UNNAMED_GUARDS|
+|[C26444](../code-quality/c26444.md)|NO_UNNAMED_RAII_OBJECTS|
+|[C26498](../code-quality/c26498.md)|USE_CONSTEXPR_FOR_FUNCTIONCALL|
 |[C28020](../code-quality/c28020.md)|Výraz není PRAVDA na toto volání|
 |[C28021](../code-quality/c28021.md)|Anotovaný parametr musí být ukazatel|
 |[C28022](../code-quality/c28022.md)|Třídy funkce, které u této funkce neodpovídají třídám funkce v definici typu typedef použité pro jejich definování.|

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3bf425aefae47e15efa99d5b24ad5e42ed0664c
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 77438e8e98e5cc64564e8903babe3dd0817067ac
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624279"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43225081"
 ---
 # <a name="install-visual-studio-2017"></a>Instalace sady Visual Studio 2017
 
@@ -143,9 +143,8 @@ Další informace najdete v tématu [změnit umístění instalace v sadě Visua
 ## <a name="see-also"></a>Viz také:
 
 * [Update Visual Studio 2017](update-visual-studio.md)
-* [Úprava sady Visual Studio 2017](modify-visual-studio.md)
+* [Úpravy sady Visual Studio 2017](modify-visual-studio.md)
 * [Odinstalace sady Visual Studio 2017](uninstall-visual-studio.md)
 * [Vytvoření offline instalace sady Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Visual Studio 2017 Administrator Guide](visual-studio-administrator-guide.md)
-  * [Použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [Instalace Build Tools do kontejneru](build-tools-container.md)
+* [Použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Instalační program a instalace sady Visual Studio pro Mac](/visualstudio/mac/installation)

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 84079e15a15f86527c15b28a05ba905bfeccad31
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624385"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224959"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Rozšíření sady Visual Studio pro Mac
 
@@ -56,7 +56,7 @@ Mají také odpovídající `assembly:AddinDependency ` atributy přidané na č
 
 ## <a name="extensions-and-extension-points"></a>Rozšíření a Rozšiřovací body
 
-Rozšiřovacím bodem je zástupný symbol, který definuje strukturu dat (typ), zatímco rozšíření definuje data, která odpovídá struktuře určené konkrétní rozšiřovací bod. Rozšiřovací body určit, jaký typ rozšíření se může přijmout v jeho deklaraci. Rozšíření jsou deklarovány pomocí názvy typů nebo rozšíření cesty. Najdete v článku [rozšiřovací bod odkaz](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots) najdete podrobnější vysvětlení o tom, jak vytvořit rozšiřovací bod, který potřebujete.
+Rozšiřovacím bodem je zástupný symbol, který definuje strukturu dat (typ), zatímco rozšíření definuje data, která odpovídá struktuře určené konkrétní rozšiřovací bod. Rozšiřovací body určit, jaký typ rozšíření se může přijmout v jeho deklaraci. Rozšíření jsou deklarovány pomocí názvy typů nebo rozšíření cesty. Najdete v článku [rozšiřovací bod odkaz](https://github.com/mono/mono-addins/wiki/Extension-Points) najdete podrobnější vysvětlení o tom, jak vytvořit rozšiřovací bod, který potřebujete.
 
 Architektura rozšíření/rozšíření bodu udržuje vývoje sady Visual Studio pro Mac rychlou modulární. 
 
