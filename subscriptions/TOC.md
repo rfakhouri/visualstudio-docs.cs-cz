@@ -49,6 +49,7 @@
 ##### [Časté otázky k migraci správců VLSC](vlsc-admin-faq.md)
 ##### Onboarding v organizaci
 ###### [Onboarding po migraci](post-migration-onboarding.md)
+###### [Open, Open License – migrace](open-migration.md)
 ###### [E-mailová komunikace k onboardingu](volume-license-onboarding-email.md)
 ###### [Nalezení vašeho čísla PCN](find-pcn.md)
 ###### [Nalezení vašeho primárního kontaktu](find-primary-contact.md)

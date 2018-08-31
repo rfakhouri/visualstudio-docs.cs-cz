@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62859ad7abcab8f5599d205887feb73dc673112d
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 1d2a3b785f79d7b0b1fe038ec6c9280161ad909d
+ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139085"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43289277"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Aktualizace sady Visual Studio 2017 na nejnovější verzi
 
@@ -150,7 +150,6 @@ Pokud vyberete možnost Ignorovat upozornění, Visual Studio zastaví, abych ho
 
 ## <a name="see-also"></a>Viz také:
 
-* [Instalace sady Visual Studio 2017](install-visual-studio.md)
 * [Úpravy sady Visual Studio 2017](modify-visual-studio.md)
 * [Odinstalace sady Visual Studio 2017](uninstall-visual-studio.md)
-* [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
+* [Aktualizace sady Visual Studio pro Mac](/visualstudio/mac/update)
