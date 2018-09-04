@@ -12,21 +12,21 @@ ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
+ms.lasthandoff: 09/04/2018
 ms.locfileid: "34335704"
 ---
-# Nápověda F1
+# <a name="f1-help"></a>Nápověda F1
 
 Zdá se nám nepovedlo najít, co jste hledali a Omlouváme se. Prosím [Pomozte nám zlepšovat kvalitu](#help-us-improve-f1).
 
-## Pozice kurzoru
+## <a name="cursor-position"></a>Pozice kurzoru
 
 Pokud hledáte nápovědu F1 – klíčové slovo nebo název rozhraní API, měli byste se kurzor dovnitř nebo jenom k pravému okraji slovo před stisknutím klávesy **F1**. Pokud tento stále nefunguje, vyberte [užitečných odkazů](#useful-links) seznamu nebo provádět vyhledávání na https://docs.microsoft.com.
 
-## Užitečné odkazy
+## <a name="useful-links"></a>Užitečné odkazy
 
 - Obecné informace o sadě Visual Studio najdete v tématu [Visual Studio – přehled](../../ide/visual-studio-ide.md).
 - Nápovědu v textovém editoru sady Visual Studio najdete v tématu [použít editor kódu](../../ide/writing-code-in-the-code-and-text-editor.md).
@@ -36,6 +36,6 @@ Pokud hledáte nápovědu F1 – klíčové slovo nebo název rozhraní API, mě
 - Nápovědu Pythonu najdete v tématu [Python v sadě Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
 - C++ – Nápověda, naleznete v tématu [C++ v sadě Visual Studio](/cpp/visual-cpp-in-visual-studio).
 
-## Pomozte nám zlepšovat kvalitu F1
+## <a name="help-us-improve-f1"></a>Pomozte nám zlepšovat kvalitu F1
 
 Pomozte nám zlepšovat kvalitu prostředí nápovědy F1. Protokolovat problému s produktem nápovědy kliknutím **poskytnout názor na produkt** tlačítko níže. Zahrnout, co jste hledali nápovědu při stisknutí **F1**, například jaké symbol nebo se ukazatel myši na okno. Děkuju!
