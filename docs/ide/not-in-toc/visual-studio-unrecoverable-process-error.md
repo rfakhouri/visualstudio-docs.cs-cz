@@ -1,5 +1,5 @@
 ---
-title: Proces došlo k neodstranitelné chybě
+title: Procesu došlo k neopravitelné chybě
 ms.date: 06/22/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,25 +13,25 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: ebd530b9db139cb232f735f7d6401199cab2f6fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2018
+ms.lasthandoff: 09/05/2018
 ms.locfileid: "36325699"
 ---
-# Chyba neopravitelné procesu Visual Studio
+# <a name="visual-studio-unrecoverable-process-error"></a>Chyba neopravitelné procesu Visual Studio
 
-Visual Studio 2017 používá několik out-of-proc procesů ke spuštění úlohy na pozadí požadované, jako je například testování částí za provozu, code analyzátorů a další. Tyto procesy jsou spuštěny out-of-proc umožnit výhody výkonu sady Visual Studio, například povolení rychleji reagovat při spuštění, úlohách náročných sady Visual Studio. Navíc vzhledem k sadě Visual Studio je 32bitový proces, spuštění procesů out-of-proc dává náročné práce paměti větší paměťový prostor, ve kterém se bude pracovat.
+Visual Studio 2017 používá několik procesů v režimu out-of-proc pro spouštění úloh na pozadí povinné, jako je například živé testování částí, kód analyzátorů a dalších. Tyto procesy jsou spuštěny na více instancí proc poskytnout výhody výkonu sady Visual Studio, jako například povolení Visual Studio a rychleji reagovat při spuštění úlohy náročné na dlouho. Navíc vzhledem k tomu, že Visual Studio je 32bitový proces, spouštění procesy režimu out-of-proc poskytuje práce náročné na paměť větší paměťový prostor, ve kterém chcete pracovat.
 
-Pokud *ServiceHub.RoslynCodeAnalysisService.exe* nebo *ServiceHub.RoslynCodeAnalysisService32.exe* ukončení procesu z nějakého důvodu, se zobrazí automaticky otevírané okno informační panel s následující zprávou:
+Pokud *ServiceHub.RoslynCodeAnalysisService.exe* nebo *ServiceHub.RoslynCodeAnalysisService32.exe* ukončení procesu z nějakého důvodu se zobrazí automaticky otevírané informační panel s následující zprávou:
 
-**"Bohužel procesu, sada Visual Studio má došlo k neodstranitelné chybě. Doporučujeme, abyste ukládání práce a pak zavřením a spustit sadu Visual Studio."**
+**"Bohužel proces využívaný sadou Visual Studio došlo k neodstranitelné chybě. Doporučujeme uložit vaši práci a pak ukončit a znovu spustit sadu Visual Studio."**
 
-Pokud se zobrazí tato zpráva, měli uložit práci a pak zavřete a restartujte Visual Studio.
+Pokud se zobrazí tato zpráva, by měl uložte svou práci a pak zavřete a restartujte aplikaci Visual Studio.
 
-## Seznam procesů
+## <a name="list-of-processes"></a>Seznam procesů
 
-Následuje seznam out-of-proc procesy používané modulem Visual Studio. Tento seznam je včetně procesy, které budou spuštěny v určité pracovní postupy nebo scénářů, a proto ve většině případů všechny neběží ve stejnou dobu.
+Tady je seznam procesů režimu out-of-proc používá sada Visual Studio. Je tento seznam zahrnuje procesy, které budou spuštěny v určité pracovní postupy nebo scénáře, a to ve většině případů se nejsou všechny spuštěné ve stejnou dobu.
 
 - Microsoft.Alm.Shared.Remoting.RemoteContainer.dll
 - Microsoft.CodeAnalysis.LiveUnitTesting.EntryPoint
@@ -47,4 +47,4 @@ Následuje seznam out-of-proc procesy používané modulem Visual Studio. Tento 
 - WindowsAzureTelemetryService.exe
 - WaAppAgent.exe
 
-Pokud některé z těchto procesů neočekávaně ukončí, některé funkce v sadě Visual Studio přestane fungovat. U některých procesů může být zanedbatelný ztráty funkčnosti. Ostatní uživatelé má vliv stability sady Visual Studio a zobrazí se chybová zpráva.
+Pokud některý z těchto procesů neočekávaně ukončí, některé funkce v sadě Visual Studio přestane fungovat. Pro některé procesy může být neplatné ke ztrátě funkčnosti. Pro ostatní uživatele ovlivňuje stabilitu sady Visual Studio a zobrazí se chybová zpráva.
