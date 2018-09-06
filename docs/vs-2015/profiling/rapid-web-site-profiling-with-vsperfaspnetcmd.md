@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62fad7a98fb6ae61fed40936673bfab9981db656
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e213f6c009ff5fdd5caa48a326c18026f02ec5e6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670273"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775289"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Pohotová profilace webových stránek pomocí VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Nejnovější verzi tohoto tématu můžete najít v [rychlé webových profilů
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Shromažďování podrobných dat časování pomocí metody instrumentace  
  Použijte následující příkazový řádek ke shromažďování podrobných dat časování z dynamicky kompilovaných [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webové aplikace:  
   
- **příkaz vsperfaspnetcmd/trace***websiteUrl*   
+ **příkaz vsperfaspnetcmd/trace***websiteUrl*  
   
  Pokud chcete Profilovat soubory .dll staticky kompilované webové aplikace, musí instrumentovat soubory s použitím [VSInstr](../profiling/vsinstr.md) nástroj příkazového řádku. Příkaz vsperfaspnetcmd/trace bude obsahovat data z instrumentované souborů.  
   
@@ -87,14 +87,14 @@ Nejnovější verzi tohoto tématu můžete najít v [rychlé webových profilů
   
  Shromažďování dat interakce vrstev s dat paměti .NET:  
   
- **Memory vsperfaspnetcmd**[**: Životnost**] *  */tip *** websiteUrl*  
+ **Memory vsperfaspnetcmd**[**: Životnost**] **/tip**_websiteUrl_  
   
 ##  <a name="UsingNoWait"></a> Pomocí možnosti/nowait  
  Ve výchozím nastavení, nevrátí příkazový řádek po **vsperfaspnetcmd** příkazu. Následující syntaxe možnost můžete použít k vynucení příkazového řádku k vrácení. Pak můžete provádět další operace v okně příkazového řádku. Chcete-li ukončit profilace, použijte **/Shutdown** možnost v samostatném **vsperfaspnetcmd** příkazu.  
   
  Spuštění profilování:  
   
- **vsperfaspnetcmd** [*/Options*] **/nowait***websiteUrl*  
+ **příkaz vsperfaspnetcmd** [*/možnosti*] **/nowait**_websiteUrl_  
   
  Do konce profilace:  
   

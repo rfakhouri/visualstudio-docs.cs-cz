@@ -15,12 +15,12 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fcaca24d995c50e90f28b1faf161bee6fc2f8606
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686719"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774579"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definování a instalace rozšíření modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +91,9 @@ V sadě Visual Studio můžete definovat rozšíření pro modelování diagram�
   
 |Typ rozšíření|Téma|Jak je obvykle deklarované jednotlivé komponenty|  
 |--------------------|-----------|----------------------------------------------|  
-|Příkaz nabídky|[Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(ICommandExtension))]`<br /><br /> `public class MyCommand : ICommandExtension`<br /><br /> `{...`|  
-|Přetáhněte myší nebo dvakrát klikněte na|[Definování obslužné rutiny gest v diagramu modelování](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(IGestureExtension))]`<br /><br /> `public class MyGesture : IGestureExtension`<br /><br /> `{...`|  
-|Omezení ověření|[Definování omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md)|`[Export(typeof(     System.Action<ValidationContext, object>))]`<br /><br /> `[ValidationMethod(ValidationCategories.Save`<br /><br /> `&#124; ValidationCategories.Menu)]`<br /><br /> `public void ValidateSomething`<br /><br /> `(ValidationContext context, IClassifier elementToValidate)`<br /><br /> `{...}`|  
+|Příkaz nabídky|[Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(ICommandExtension))]`<br /><br /> `public class MyCommand : ICommandExtension`<br /><br /> `{...`|  
+|Přetáhněte myší nebo dvakrát klikněte na|[Definování obslužné rutiny gest v diagramu modelování](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(IGestureExtension))]`<br /><br /> `public class MyGesture : IGestureExtension`<br /><br /> `{...`|  
+|Omezení ověření|[Definování omezení ověřování pro modely UML](../modeling/define-validation-constraints-for-uml-models.md)|`[Export(typeof(     System.Action<ValidationContext, object>))]`<br /><br /> `[ValidationMethod(ValidationCategories.Save`<br /><br /> `&#124; ValidationCategories.Menu)]`<br /><br /> `public void ValidateSomething`<br /><br /> `(ValidationContext context, IClassifier elementToValidate)`<br /><br /> `{...}`|  
 |Obslužné rutiny propojení položky práce|[Definování obslužné rutiny odkazu pracovní položky](../modeling/define-a-work-item-link-handler.md)|`[Export(typeof(ILinkedWorkItemExtension))]`<br /><br /> `public class MyWorkItemEventHandler : ILinkedWorkItemExtension`<br /><br /> `{...`|  
 |Profilu UML|[Definování profilu pro rozšíření UML](../modeling/define-a-profile-to-extend-uml.md)|(Chcete-li definován)|  
 |Položku sady nástrojů|[Definování vlastní položky sady nástrojů pro modelování](../modeling/define-a-custom-modeling-toolbox-item.md)|(Chcete-li definován)|  
@@ -121,7 +121,7 @@ V sadě Visual Studio můžete definovat rozšíření pro modelování diagram�
   
     1.  V **Průzkumníka řešení**, v místní nabídce vašeho projektu a klikněte na tlačítko **otevřít složku v Průzkumníku Windows**.  
   
-    2.  Vyhledejte soubor **bin\\\*\\***YourProject***VSIX.**  
+    2.  Vyhledejte soubor **bin\\\*\\**_YourProject_**VSIX.**  
   
 2.  Kopírovat **VSIX** souboru k cílovému počítači, na kterém chcete nainstalovat rozšíření. To může být vlastní počítač nebo jiný.  
   
@@ -149,7 +149,7 @@ V sadě Visual Studio můžete definovat rozšíření pro modelování diagram�
  [Definování profilu pro rozšíření UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Definování vlastní položky sady nástrojů pro modelování](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [Definování omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md)   
- [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+ [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
 
 
 

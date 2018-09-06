@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e99d227f78cdf1a2a0edfdd59abb243a81b98722
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f512a330a1253f0db9b0f7e75de5f0a6ca52658d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671191"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775763"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Postupy: přidávání ověřování do tříd entit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "42671191"
 Nejnovější verzi tohoto tématu můžete najít v [postupy: přidávání ověřování do tříd entit](https://docs.microsoft.com/visualstudio/data-tools/how-to-add-validation-to-entity-classes).  
   
   
-Ověřuje se * tříd entit je proces ověření, že hodnoty zadané do datových objektů v souladu s omezeními ve schématu objektu a také pravidel stanovených pro aplikaci. Ověřování dat před odesláním aktualizace do podkladové databáze je dobrým zvykem, která snižuje chyby. Také snižuje potenciální počet výměn mezi aplikací a databáze.  
+*Ověřování* tříd entit je proces ověření, že hodnoty zadané do datových objektů v souladu s omezeními ve schématu objektu a také pravidel stanovených pro aplikaci. Ověřování dat před odesláním aktualizace do podkladové databáze je dobrým zvykem, která snižuje chyby. Také snižuje potenciální počet výměn mezi aplikací a databáze.  
   
  [LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje částečným metodám, které uživatelům umožňují rozšířit kód generovaný návrhářem, který spustí během vložení, aktualizace a odstranění kompletní entit a také během a po jednotlivých sloupců změny.  
   
@@ -51,7 +51,7 @@ Ověřuje se * tříd entit je proces ověření, že hodnoty zadané do datový
   
     1.  Rozbalte **název metody** seznamu.  
   
-    2.  Vyhledejte **na***NÁZEVSLOUPCE***změna** metodu pro sloupec, který chcete přidat k ověření.  
+    2.  Vyhledejte **na**_NÁZEVSLOUPCE_**změna** metodu pro sloupec, který chcete přidat k ověření.  
   
     3.  `On` *NÁZEVSLOUPCE* `Changing` metoda je přidána do částečné třídy.  
   
@@ -100,7 +100,7 @@ Ověřuje se * tříd entit je proces ověření, že hodnoty zadané do datový
   
     1.  Rozbalte **název metody** seznamu.  
   
-    2.  Klikněte na tlačítko **aktualizace *** ENTITYCLASSNAME*.  
+    2.  Klikněte na tlačítko **aktualizace**_ENTITYCLASSNAME_.  
   
     3.  `Update` *ENTITYCLASSNAME* metoda je přidána do částečné třídy.  
   

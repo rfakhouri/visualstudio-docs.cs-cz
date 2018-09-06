@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ffa0228bd4a15a8de94c4799d9549a35ef2da048
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d3be15009964272eb06118a0b9c01ec012164bc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669795"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775833"
 ---
 # <a name="customizing-deletion-behavior"></a>Přizpůsobení chování odstranění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Odstranění elementu obvykle způsobí, že související prvky také odstranit
 >  Přidat programový kód do definice DSL vytvořením samostatném souboru kódu v **Dsl** projektu a zapsat Částečná definice pro rozšíření třídy ve složce vygenerovaném kódu. Další informace najdete v tématu [psaní kódu pro úpravu jazyka specifického pro doménu specifického](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a> Definování uzavření Delete  
- Operace odstranění používá třídu *YourModel***DeleteClosure** k určení prvky, které chcete odstranit, zadaný počáteční výběr. Volá `ShouldVisitRelationship()` a `ShouldVisitRolePlayer()` opakovaně, procházení grafu relací. Můžete také přepsat tyto metody. ShouldVisitRolePlayer je součástí identity odkazu a element v jedné z rolí na odkaz. Měla by vrátit jednu z následujících hodnot:  
+ Operace odstranění používá třídu _YourModel_**DeleteClosure** určit prvky, které chcete odstranit, zadaný počáteční výběr. Volá `ShouldVisitRelationship()` a `ShouldVisitRolePlayer()` opakovaně, procházení grafu relací. Můžete také přepsat tyto metody. ShouldVisitRolePlayer je součástí identity odkazu a element v jedné z rolí na odkaz. Měla by vrátit jednu z následujících hodnot:  
   
 -   **VisitorFilterResult.Yes**– element by se měla odstranit a pokračovat walker vyzkoušet další odkazy na elementu.  
   

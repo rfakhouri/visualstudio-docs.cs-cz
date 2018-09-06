@@ -29,12 +29,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e958e19be0d3eb04cbc4786b7855f08c53f130f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c9b380c4a28beb50a2048eb00aa68f81bf27449
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666540"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775839"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Postupy: Použití úprav v režimu pozastavení pomocí operace Upravit a pokračovat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Můžete upravit a pokračovat pro úpravy kódu v režimu pozastavení a potom 
   
 -   Ladění optimalizovaného kódu.  
   
--   Ladění spravovaného kódu, pokud jsou cílem 64bitových aplikací. Pokud chcete k použití operace upravit a pokračovat, je nutné nastavit cíl na x86. (* Projektu ***vlastnosti**, **kompilaci** kartě **Advanced kompilátoru** nastavení.).  
+-   Ladění spravovaného kódu, pokud jsou cílem 64bitových aplikací. Pokud chcete k použití operace upravit a pokračovat, je nutné nastavit cíl na x86. (_Projektu_**vlastnosti**, **kompilaci** kartě **Advanced kompilátoru** nastavení.).  
   
 -   Ladění starou verzi kódu po nové verze se nepovedlo sestavit kvůli chybám sestavení.  
   

@@ -13,12 +13,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 89e7e817454b3c546d2b6df2256be72fbf1129c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ddb6c43892c3cef3f45edb9096c3fb36297c51a3
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667163"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774962"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Přizpůsobení analýzy pokrytí kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Ve výchozím nastavení analyzuje nástroj pokrytí kódu Visual Studio všechn
 ### <a name="regular-expressions"></a>Regulární výrazy  
  Pomocí regulárních výrazů můžete zahrnout a vyloučit uzly. Další informace najdete v tématu [pomocí regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Regulární výrazy nejsou stejné jako zástupné znaky. Zejména:  
   
-1.  **. \***  odpovídá řetězci libovolných znaků  
+1.  **\.\*** odpovídá řetězci libovolných znaků  
   
 2.  **\\.** odpovídá tečce ".")  
   

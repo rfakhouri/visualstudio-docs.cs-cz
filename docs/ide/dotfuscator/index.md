@@ -18,12 +18,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1ff4987c49aed76cc8770d21a5d32cdf3892ea28
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: d3f061e095575e8692fc733e3f77f7c9b23e37c1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468193"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775432"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -49,7 +49,7 @@ Další informace o jak řešení Dotfuscator zapadá do životního cyklu vývo
 
 ## <a name="about-dotfuscator-ce"></a>Informace o řešení Dotfuscator CE
 
-Vaše kopie sady Microsoft Visual Studio 2017 obsahuje kopii  ***PreEmptive ochranu – řešení Dotfuscator* Community Edition**, označovaný také jako řešení Dotfuscator CE, která je zdarma pro osobní použití.
+Vaše kopie sady Microsoft Visual Studio 2017 obsahuje kopii  **_PreEmptive ochranu – řešení Dotfuscator_ Community Edition**, označovaný také jako řešení Dotfuscator CE, která je zdarma pro osobní použití.
 Pokyny k instalaci verze řešení Dotfuscator CE je součástí sady Visual Studio 2017 najdete v tématu [stránky instalace][install].
 
 Řešení Dotfuscator CE nabízí celou řadu [ochrany před softwarem a posílení zabezpečení] [ software-protection] služby pro vývojáře, architekty a testery.

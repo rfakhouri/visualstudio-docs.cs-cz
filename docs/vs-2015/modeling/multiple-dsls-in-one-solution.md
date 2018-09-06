@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fe0d7877a68c34cd624d20834f553e9ec18d1df2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 341f5f40ff5c7274de9bbaf977464b15a56315a8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668557"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774827"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Vícesouborové DSL v jediném řešení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Jako součást jediného řešení můžete zabalit několik DSL, tak, že jsou 
   
 2.  Kombinovat manifestu VSIX DSL:  
   
-    1.  Open *YourVsixProject***\source.extension.manifest**.  
+    1.  Otevřít _YourVsixProject_**\source.extension.manifest**.  
   
     2.  Pro každý DSL, zvolte **přidat obsah** a přidejte:  
   
@@ -64,7 +64,7 @@ Jako součást jediného řešení můžete zabalit několik DSL, tak, že jsou 
   
 3.  Sestavte řešení.  
   
- Výsledný VSIX nainstaluje i DSL. Můžete otestovat pomocí klávesy F5 nebo nasazení * YourVsixProject ***\bin\Debug\\\*VSIX**.  
+ Výsledný VSIX nainstaluje i DSL. Můžete otestovat pomocí klávesy F5 nebo nasadit _YourVsixProject_**\bin\Debug\\\*VSIX**.  
   
 ## <a name="see-also"></a>Viz také  
  [Integrace modelů pomocí Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

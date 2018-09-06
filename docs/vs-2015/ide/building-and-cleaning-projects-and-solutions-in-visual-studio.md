@@ -28,12 +28,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 680d2550b7d3f3e88e7291fea128ec81b77197fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 610f0216ce2481894f088e0a3da1df5e29953b43
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673190"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775423"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Sestavování a čištění projektů a řešení v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +64,11 @@ Pomocí postupů v tomto tématu můžete vytvářet, znovu sestavit nebo vyčis
   
 1.  V **Průzkumníka řešení**, zvolte nebo otevřete projekt.  
   
-2.  V panelu nabídky zvolte **sestavení**a klikněte na tlačítko buď **sestavení *** ProjectName* nebo **znovu sestavit *** ProjectName*.  
+2.  V panelu nabídky zvolte **sestavení**a klikněte na tlačítko buď **sestavení**_ProjectName_ nebo **znovu sestavit**_ProjectName_.  
   
-    -   Zvolte **sestavení *** ProjectName* sestavit pouze ty součásti, které se změnily od posledního sestavení projektu.  
+    -   Zvolte **sestavení**_ProjectName_ sestavit pouze ty součásti, které se změnily od posledního sestavení projektu.  
   
-    -   Zvolte **znovu sestavit *** ProjectName* "clean" projekt a pak vytvářet soubory projektu a všechny součásti projektu.  
+    -   Zvolte **znovu sestavit**_ProjectName_ "clean" projekt a pak vytvářet soubory projektu a všechny součásti projektu.  
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Sestavit pouze projekt po spuštění a jeho závislosti  
   

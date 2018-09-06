@@ -27,12 +27,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66fb9c3d91f940da6d9a9236ac4055063d102b2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e10c5d6ed0e4b992f5b573cd46bd1248d8d24d90
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628075"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775260"
 ---
 # <a name="cl-task"></a>CL – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -761,7 +761,7 @@ Zabalí nástroj kompilátoru Visual C++, cl.exe. Kompilátor vytvoří spustite
   
     -   **EnableAllWarnings** -   **/Wall**  
   
-     Další informace najdete v tématu **/W***n* možnost [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, nebo jsme /wo, /Wv, wdn (úroveň upozornění)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+     Další informace najdete v tématu **/W**_n_ možnost [/w, /W0, /W1, /W2, w3, / W4, /w1, /w2, w3, / W4, / wall, WD, / we, Wo, WV, /WX (úroveň upozornění)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 -   **WholeProgramOptimization**  
   

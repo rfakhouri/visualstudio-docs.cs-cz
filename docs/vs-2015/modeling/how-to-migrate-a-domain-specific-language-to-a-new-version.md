@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 50fa92b37fb6ee9905d079fecb93b346556f5e1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d97e0204122e6dfcae89da7b04a0a303a0bd9a4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696410"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774698"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Postupy: Migrace jazyka specifického pro doménu na novou verzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,9 +68,9 @@ Můžete migrovat projekty, které definice a používání jazyka specifického
   
     1.  Klikněte na tlačítko **převést**.  
   
-         Před každý soubor projektu je převést, kopie *projektu *** .csproj** je uložen jako *projektu ***.vs2008.csproj**  
+         Před každý soubor projektu je převést, kopie _projektu_**.csproj** budou uloženy jako _projektu_**. vs2008.csproj**  
   
-         Kopírování jednotlivých *řešení *** .sln** je uložen jako *řešení ***.vs2008.sln**  
+         Kopírování jednotlivých _řešení_**.sln** budou uloženy jako _řešení_**. vs2008.sln**  
   
     2.  Prozkoumejte všechny neúspěšné převody, které jsou hlášeny.  
   

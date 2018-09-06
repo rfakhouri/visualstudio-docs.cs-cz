@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82a48337c96abe681999a69083a87656fe54cc6d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b2fc6fb0be13dbda001c23a4d51e11dc9f53853d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080509"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774704"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild cílová rozhraní framework a cílová platforma
 Projekt se dají spouštět na *Cílová architektura*, což je konkrétní verzi rozhraní .NET Framework a *cílovou platformu*, což je zejména softwarovou architekturu.  Například můžete zacílit aplikaci pro spuštění v rozhraní .NET Framework 2.0 na 32bitové platformě, která je kompatibilní s 802 x 86 procesorů ("x86"). Kombinace Cílová architektura a cílová platforma se označuje jako *cílový kontext*.  
@@ -45,7 +45,7 @@ Projekt se dají spouštět na *Cílová architektura*, což je konkrétní verz
 
 Verze rozhraní .NET Framework v seznamu sestavení, že každý zpřístupní odkazovat navzájem liší. Například nelze sestavit aplikace Windows Presentation Foundation (WPF), pokud váš projekt cílí na rozhraní .NET Framework verze 3.0 nebo vyšší.  
 
-Cílová architektura, která je zadána v `TargetFrameworkVersion` vlastnost v souboru projektu. Pomocí stránky vlastností projektu v sadě Visual Studio integrované vývojové prostředí (IDE) můžete změnit cílový rámec pro projekt. Další informace najdete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Dostupné hodnoty pro `TargetFrameworkVersion` jsou `v2.0`, `v3.0`, `v3.5`, `v4.5.2`, `v4.6`, `v.4.6.1`, `v4.6.2`, `4.7`, a `4.7.1`.  
+Cílová architektura, která je zadána v `TargetFrameworkVersion` vlastnost v souboru projektu. Pomocí stránky vlastností projektu v sadě Visual Studio integrované vývojové prostředí (IDE) můžete změnit cílový rámec pro projekt. Další informace najdete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Dostupné hodnoty pro `TargetFrameworkVersion` jsou `v2.0`, `v3.0`, `v3.5`, `v4.5.2`, `v4.6`, `v4.6.1`, `v4.6.2`, `v4.7`, a `v4.7.1`.  
   
 ```xml  
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  

@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f76dd78981eb7969fec9b62e0a2f3cfea24a4ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666356"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775609"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definování omezení ověřování pro modely UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -377,7 +377,7 @@ context.LogError(... , usecase);
   
     1.  V **Průzkumníka řešení**, v místní nabídce projektu VSIX zvolte **otevřít složku v Průzkumníku Windows**.  
   
-    2.  Vyhledejte soubor **bin\\\*\\***YourProject***VSIX.**  
+    2.  Vyhledejte soubor **bin\\\*\\**_YourProject_**VSIX.**  
   
 2.  Kopírovat **VSIX** souboru k cílovému počítači, na kterém chcete nainstalovat rozšíření. To může být vlastní počítač nebo jiný.  
   
@@ -480,7 +480,7 @@ private bool NoDependencyLoops(ValidationContext context,
   
 ## <a name="see-also"></a>Viz také  
  [Definování a instalace rozšíření modelování](../modeling/define-and-install-a-modeling-extension.md)   
- [Programování s rozhraním API UML](../modeling/programming-with-the-uml-api.md)
+ [Programování pomocí rozhraní API UML](../modeling/programming-with-the-uml-api.md)
 
 
 

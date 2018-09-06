@@ -1,7 +1,7 @@
 ---
 title: Šablony položek pro projekty v Pythonu
 description: Referenční seznam šablon položek pro projekt v Pythonu, které jsou k dispozici prostřednictvím Přidat > Nová položka dialogového okna v sadě Visual Studio.
-ms.date: 04/25/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 814af0de0074f41884550e9238b9dab0cb073e25
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008291"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776032"
 ---
 # <a name="python-item-templates"></a>Šablony položek Pythonu
 
@@ -52,7 +52,7 @@ Následující tabulka stručně popisuje efekt každé šablony položky v rám
 >
 > ![Změna konfigurace publikovat](media/template-web-publish-config.png)
 
-### <a name="see-also"></a>Viz také:
+## <a name="see-also"></a>Viz také:
 
 - [Správa projektů v Pythonu – šablony projektů](managing-python-projects-in-visual-studio.md#project-templates)
 - [Šablony webových projektů Python](python-web-application-project-templates.md)

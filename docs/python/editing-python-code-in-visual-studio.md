@@ -1,7 +1,7 @@
 ---
 title: Úpravy kódu v Pythonu
 description: Úpravy Python v sadě Visual Studio nabízí IntelliSense, fragmenty kódu a navigačním funkcím, formátování, linting, a refaktoring.
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 680f568ef6d44aa5194931bd585ba307f7b64b3d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624309"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774762"
 ---
 # <a name="edit-python-code"></a>Úprava kódu v Pythonu
 
-Vývojáři tráví většinu svého času v editoru kódu, proto [podpora Pythonu v sadě Visual Studio](installing-python-support-in-visual-studio.md) poskytuje funkce, aby vám pomohly zvýšit produktivitu práce. Funkce zahrnují IntelliSense zvýrazňování syntaxe, automatické dokončování, signaturám, přepsání metody, vyhledávání a navigace.
+Protože jste tráví mnoho času vývoje v editoru kódu [podpora Pythonu v sadě Visual Studio](installing-python-support-in-visual-studio.md) poskytuje funkce, aby vám pomohly zvýšit produktivitu práce. Funkce zahrnují IntelliSense zvýrazňování syntaxe, automatické dokončování, signaturám, přepsání metody, vyhledávání a navigace.
 
 Editor je integrovaná taky s **interaktivní** okna v sadě Visual Studio, což usnadňuje exchange kód mezi těmito dvěma. V tématu [kurzu krok 3: použití okna interaktivní okno REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) a [použití interaktivního okna - Odeslat do interaktivního příkazu](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) podrobnosti.
 

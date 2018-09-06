@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c6b6c859c18dd1a3cf2aa8f2bc7d86e1ae6f961b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b93ea96bfaa03dc11cccf137c04e7d0cf3ca50ac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671156"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775257"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Postupy: Publikování aplikace WPF s povolenými vizuálními styly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závi
   
     ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>Chcete-li otevřít soubor manifestu v projektu jazyka Visual Basic  
   
-    1.  V panelu nabídky zvolte **projektu**, * ProjectName ***vlastnosti**, kde *ProjectName* je název vašeho projektu WPF.  
+    1.  V panelu nabídky zvolte **projektu**, _ProjectName_**vlastnosti**, kde *ProjectName* je název vašeho projektu WPF.  
   
          Stránky vlastností pro váš projekt WPF se zobrazí.  
   
@@ -64,7 +64,7 @@ Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závi
   
     ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Chcete-li otevřít soubor manifestu v projektu v jazyce C#  
   
-    1.  V panelu nabídky zvolte **projektu**, * ProjectName ***vlastnosti**, kde *ProjectName* je název vašeho projektu WPF.  
+    1.  V panelu nabídky zvolte **projektu**, _ProjectName_**vlastnosti**, kde *ProjectName* je název vašeho projektu WPF.  
   
          Stránky vlastností pro váš projekt WPF se zobrazí.  
   

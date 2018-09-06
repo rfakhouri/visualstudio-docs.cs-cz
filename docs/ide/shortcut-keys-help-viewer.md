@@ -13,110 +13,110 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bebbc778c71c464a6e4eabaebfff15760b99478
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 78e83a69e21c1c6cd1aa10235d66f63fb1e5e27a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954256"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775216"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Klávesové zkratky (Help Viewer)
 
-Můžete přejít v **Prohlížeč nápovědy** pomocí klávesové zkratky v následující tabulce:
+Můžete procházet **Microsoft Help Viewer** pomocí klávesové zkratky v následující tabulce:
 
-|Oblast|Klávesová zkratka|Akce|
+|Oblast|Stisknutí kláves|Akce|
 |----------|---------------|------------|
-|Obecná aplikace|**Místo**|Použít místo **Enter** kdekoli kromě úpravy polí.|
-|Obecná aplikace|**F1**|Otevřete **pomoci** o aktuální element uživatelského rozhraní.|
-|Obecná aplikace|**F11**|Přepínání mezi zobrazení na celou obrazovku a běžného zobrazení.|
-|Panel nástrojů|**BACKSPACE**<br /><br /> -NEBO-<br /><br /> **ALT**+**šipka vlevo**|Zobrazte na předchozí stránku.|
-|Panel nástrojů|**ALT**+**šipka vpravo**|Zobrazí na další stránku.|
-|Panel nástrojů|**ALT**+**Domů**|Zobrazení **pomůže revidující** domovské stránky.|
-|Panel nástrojů|**CTRL**+**S**|Zvýrazněte v aktuálním tématu v obsahu (na **obsah** karta).|
-|Panel nástrojů|**CTRL**+**D**|Aktuální téma přidat **Oblíbené** kartě.|
-|Panel nástrojů|**CTRL**+**F**|Zobrazení **najít** panel v oblasti tématu, takže můžete hledat text v aktuálním tématu.|
-|Panel nástrojů|**CTRL**+**P**|Tisk aktuální stránky.|
-|Panel nástrojů|**CTRL**+**F2**|Zobrazení náhledu tisku aktuální stránky.|
+|Obecná aplikace|**místo**|Použít místo **Enter** kromě kdekoli v textových polí.|
+|Obecná aplikace|**F1**|Otevřít **pomáhají** o aktuální prvek uživatelského rozhraní.|
+|Obecná aplikace|**F11**|Přepnout zobrazení na celou obrazovku a pravidelné zobrazení.|
+|Panel nástrojů|**BACKSPACE**<br /><br /> -OR-<br /><br /> **ALT**+**šipka vlevo**|Zobrazte na předchozí stránku.|
+|Panel nástrojů|**ALT**+**šipka doprava**|Zobrazte další stránky.|
+|Panel nástrojů|**ALT**+**Domů**|Zobrazení **pomáhají kontrolor** domovské stránky.|
+|Panel nástrojů|**CTRL**+**S**|Zvýrazněte aktuálního téma v obsahu (na **obsah** kartu).|
+|Panel nástrojů|**Ctrl**+**D**|Přidat aktuální téma **Oblíbené** kartu.|
+|Panel nástrojů|**CTRL**+**F**|Zobrazení **najít** pruhu v oblasti téma tak, aby můžete hledat text v aktuálním tématu.|
+|Panel nástrojů|**CTRL**+**P**|Vytisknete aktuální stránku.|
+|Panel nástrojů|**CTRL**+**F2**|Zobrazení náhledu na aktuální stránce.|
 |Panel nástrojů|**CTRL**+**O**|Zobrazení **možnosti prohlížeče** dialogové okno.|
-|Panel nástrojů|**CTRL**+**Shift**+**M**|Zobrazení **spravovat obsah** kartě.|
-|Navigátory|**ALT**+**C**<br /><br /> -NEBO-<br /><br /> **CTRL**+**Shift**+**C**|Zobrazení **obsah** kartě.|
-|Navigátory|**ALT**+**I**<br /><br /> -NEBO-<br /><br /> **CTRL**+**Shift**+**I**|Zobrazení **Index** kartě.|
-|Navigátory|**ALT**+**F**<br /><br /> -NEBO-<br /><br /> **CTRL**+**Shift**+**F**|Zobrazení **Oblíbené** kartě.|
-|Navigátory|**ALT**+**S**<br /><br /> -NEBO-<br /><br /> **CTRL** + E<br /><br /> -NEBO-<br /><br /> **CTRL**+**Shift**+**S**|Zobrazení **vyhledávání** kartě.|
-|Navigátory|**ALT**+**M**<br /><br /> -NEBO-<br /><br /> **CTRL**+**Shift**+**M**|Zobrazení **spravovat obsah** kartě.|
-|Téma|**Místní nabídky** klíč<br /><br /> NEBO<br /><br /> **Posunutí**+**F10**|Zobrazení místní nabídky pro aktuální element uživatelského rozhraní.|
-|Téma|**Šipka nahoru**|Posun směrem k začátku dokumentu jeden řádek v čase.|
-|Téma|**Šipka dolů**|Přejděte na konec dokumentu jeden řádek v čase.|
+|Panel nástrojů|**CTRL**+**Shift**+**M**|Zobrazení **spravovat obsah** kartu.|
+|Navigátorů najednou|**ALT**+**C**<br /><br /> -OR-<br /><br /> **CTRL**+**Shift**+**C**|Zobrazení **obsah** kartu.|
+|Navigátorů najednou|**ALT**+**mi**<br /><br /> -OR-<br /><br /> **CTRL**+**Shift**+**mi**|Zobrazení **Index** kartu.|
+|Navigátorů najednou|**ALT**+**F**<br /><br /> -OR-<br /><br /> **CTRL**+**Shift**+**F**|Zobrazení **Oblíbené** kartu.|
+|Navigátorů najednou|**ALT**+**S**<br /><br /> -OR-<br /><br /> **CTRL** + E<br /><br /> -OR-<br /><br /> **CTRL**+**Shift**+**S**|Zobrazení **hledání** kartu.|
+|Navigátorů najednou|**ALT**+**M**<br /><br /> -OR-<br /><br /> **CTRL**+**Shift**+**M**|Zobrazení **spravovat obsah** kartu.|
+|Téma|**Místní nabídka** klíč<br /><br /> NEBO<br /><br /> **SHIFT**+**F10**|Zobrazte místní nabídku pro aktuální prvek uživatelského rozhraní.|
+|Téma|**Šipka nahoru**|Posun směrem k začátku dokument o jeden řádek v čase.|
+|Téma|**Šipka dolů**|Posune dokument o jeden řádek na konci najednou.|
 |Téma|**Page Up**|Posun směrem k začátku dokumentu jednu obrazovku najednou.|
-|Téma|**Page Down**|Přejděte na konec dokumentu jednu obrazovku najednou.|
-|Téma|**domácí**|Přesunout na začátek dokumentu.|
-|Téma|**End**|Přesunout na konec dokumentu.|
-|Téma|**CTRL**+**F**|Na této stránce najít hledaný text.|
+|Téma|**Page Down**|Posune dokument o jednu obrazovku na konci najednou.|
+|Téma|**Domovská stránka**|Přesunout na začátek dokumentu.|
+|Téma|**ukončení**|Přesunout na konec dokumentu.|
+|Téma|**CTRL**+**F**|Najdete text vyhledávání na této stránce.|
 |Téma|**F5**|Obnovte aktuální stránku.|
-|Téma|**CTRL**+**P**|Tisk aktuální stránky.|
-|Téma|**CTRL**+**F2**|Zobrazení náhledu tisku aktuální stránky.|
+|Téma|**CTRL**+**P**|Vytisknete aktuální stránku.|
+|Téma|**CTRL**+**F2**|Zobrazení náhledu na aktuální stránce.|
 |Téma|**F4**|Zobrazení **vlastnosti** dialogové okno pro aktuální stránku.|
-|Téma|**CTRL**+**T**|Otevřete kartu jiný obsah v popředí.|
-|Téma|**CTRL**+**klikněte na**|Otevřete odkaz na nové záložce v popředí.|
-|Téma|**CTRL**+**karta**|Přepínání mezi kartami zleva doprava.|
-|Téma|**CTRL**+**Shift**+**karta**|Přepínání mezi kartami zprava doleva.|
-|Téma|**CTRL**+**W**|Zavřete aktuální karta.|
-|Téma|**CTRL**+***číslo***|Přepnout na konkrétní kartě kde ***číslo*** je od 1 do 9 a určuje, které kartě v pořadí.|
+|Téma|**Ctrl**+**T**|Otevřete kartu jiný obsah v popředí.|
+|Téma|**CTRL**+**klikněte na**|Otevřete odkaz na nové kartě v popředí.|
+|Téma|**CTRL**+**kartu**|Přepnout mezi kartami zleva doprava.|
+|Téma|**CTRL**+**Shift**+**kartu**|Přepnout mezi kartami zprava doleva.|
+|Téma|**CTRL**+**W**|Aktuální kartu zavřete.|
+|Téma|**CTRL**+**_číslo_**|Přepnout na konkrétní kartu kde **_číslo_** je v rozmezí 1 až 9 a označuje, který tabulátoru v sekvenci.|
 |Téma|**CTRL**+**Alt**+**F4**|Zavřete ostatní obsahu karty.|
-|Téma|**CTRL**+**Shift**+**znaménko Plus**|Zvýšit přiblížení 10 %.|
-|Téma|**CTRL**+**znaménka Minus**|Zmenšení přiblížení 10 %.|
-|Téma|**CTRL**+**0** (nula).|Změňte zvětšení na 100 %.|
-|Index|**Karta**|Přesun zaměření z – klíčové slovo položka seznamu – klíčové slovo.|
-|Index|**CTRL**+**kB**|Přepínat mezi zobrazující položky, které obsahují – klíčové slovo, které zadáte a zadejte položky, které začínají klíčové slovo, které jste.|
+|Téma|**CTRL**+**Shift**+**znaménko Plus**|Zvětšete o 10 %.|
+|Téma|**CTRL**+**znaménko Minus**|Zmenšete o 10 %.|
+|Téma|**CTRL**+**0** (nula)|Změňte zvětšení na 100 %.|
+|Index|**Karta**|Přesunout fokus z položky – klíčové slovo do – klíčové slovo seznamu.|
+|Index|**CTRL**+**tis.**|Přepínání mezi zobrazením položky, které obsahují klíčové slovo, které zadáte, a zadejte položky, které začínají klíčové slovo, které jste.|
 |Oblíbené položky|**CTRL**+**Shift**+**Del**|Vymažte historii procházení.|
-|Oblíbené položky|**del**|Odstraňte zadané položky.|
+|Oblíbené položky|**Del**|Odstraňte určenou položku.|
 |Oblíbené položky|**CTRL**+**N**|Vytvořte složku v rámci **Oblíbené**.|
-|Oblíbené položky|**F2**|Zadaný oblíbenou položku nebo složku přejmenujte.|
-|Obsah & Index & hledání|**CTRL**+**D**|Přidat zadaný tématu, které chcete **Oblíbené** kartě.|
-|Obsah & Index & vyhledávání a Oblíbené položky|**CTRL**+**P**|Tisk tématu zadaný.|
-|Obsah & Index & vyhledávání a Oblíbené položky|**CTRL**+**F2**|Zobrazení náhledu tisku zadaný tématu.|
-|Obsah & Index & vyhledávání a Oblíbené položky|**CTRL**+**klikněte na**|Otevření tématu na nové kartě.|
-|Hledat|**ESC**|Zrušte textového pole pro vyhledávání.|
-|možnosti prohlížeče|**ALT**+**T**|Změnit zaměření **velikost textu** seznamu.|
-|možnosti prohlížeče|**ALT**+**S**|Změnit zaměření **maximální výsledky hledání** seznamu.|
-|možnosti prohlížeče|**ALT**+**H**|Změnit zaměření **uložené položky maximální historie** seznamu.|
-|možnosti prohlížeče|**ALT**+**E**|Vyberte nebo zrušte **zahrnují anglické obsahu do všech navigační karty a požadavky F1** zaškrtávací políčko, pokud je povoleno.|
-|možnosti prohlížeče|**ALT**+**O**|Vyberte nebo zrušte **přejděte do režimu online ke kontrole aktualizací obsahu** zaškrtávací políčko.|
-|Najít|**Zadejte**|Změna výběru na další položku.|
-|Najít|**Posunutí**+**zadejte**|Změňte fokus na předchozí položky.|
-|Najít|**ESC**|Skryje **najít** textové pole.|
-|Stavový řádek|**ALT**+**E**|Otevřete **chyba** dialogové okno Pokud na stavovém řádku vidíte, který chybu došlo k chybě.|
-|Stavový řádek|**ALT**+**U**|Stažení obsahu, pokud se na stavovém řádku vidíte, že jsou k dispozici aktualizace|
+|Oblíbené položky|**F2**|Přejmenujte na zadané oblíbenou položku nebo složku.|
+|Obsah & Index & hledání|**Ctrl**+**D**|Přidat do zadaného tématu **Oblíbené** kartu.|
+|Obsah & Index & hledání & Oblíbené položky|**CTRL**+**P**|Tisk zadaného tématu.|
+|Obsah & Index & hledání & Oblíbené položky|**CTRL**+**F2**|Zobrazte náhled zadaného tématu.|
+|Obsah & Index & hledání & Oblíbené položky|**CTRL**+**klikněte na**|Otevření tématu v nové záložce.|
+|Hledat|**ESC**|Vymazání textového pole hledání.|
+|možnosti prohlížeče|**ALT**+**T**|Změňte fokus **velikost textu** seznamu.|
+|možnosti prohlížeče|**ALT**+**S**|Změňte fokus **maximální počet výsledků hledání** seznamu.|
+|možnosti prohlížeče|**ALT**+**H**|Změňte fokus **uložených položek historie maximální** seznamu.|
+|možnosti prohlížeče|**ALT**+**E**|Zaškrtněte nebo zrušte zaškrtnutí **ve všech navigačních karet a žádostí F1 zahrnout anglický obsah** zaškrtávací políčko, pokud je povolené.|
+|možnosti prohlížeče|**ALT**+**O**|Zaškrtněte nebo zrušte zaškrtnutí **přejít online pro kontrolu aktualizací obsahu** zaškrtávací políčko.|
+|Najít|**Zadejte**|Změňte fokus na další položku.|
+|Najít|**SHIFT**+**zadejte**|Změňte fokus na předchozí položce.|
+|Najít|**ESC**|Skryje **najít** textového pole.|
+|Stavový řádek|**ALT**+**E**|Otevřít **chyba** dialogové okno když stavový řádek zobrazuje chybu došlo k chybě.|
+|Stavový řádek|**ALT**+**U**|Stáhnout obsah, pokud stavovém řádku vidíte, že jsou k dispozici aktualizace|
 
  **Správa oken**
 
 |||
 |-|-|
-|**Klávesová zkratka**|**Akce**|
-|**CTRL**+**L**|Obnovit **Help Viewer** rozložení pro výchozí rozložení a zavřete všechny karty tématu.|
-|**CTRL**+**karta**|První klávesu dává zaměření **Výběr karty** nabídky. Další klávesu provede aktivaci na položku horní nabídce a následné stisknutí kláves fokus se položek nabídky v pořadí od shora dolů. Pokud položku nabídky má právě fokus, **Enter** klíče díky, které položky aktivní karty.|
-|**CTRL**+**Shift**+**karta**|První klávesu dává zaměření **Výběr karty** nabídky. Další klávesu provede aktivaci na nejnižší položku nabídky a následné stisknutí kláves fokus se položek nabídky v pořadí odshora dolů. Pokud položku nabídky má právě fokus, **Enter** klíče díky, které položky aktivní karty.|
-|**ALT**+**I**, **Alt**+**S**, **Alt**+**C**, **Alt**+**F**, **Alt**+**M**|Při navigaci a správy obsahu karty jsou odpojenou klávesových zkratek nefungují.|
+|**Stisknutí kláves**|**Akce**|
+|**CTRL**+**L**|Obnovit **aplikace Help Viewer** rozložení do výchozího rozložení a zavřete všechny karet s tématy.|
+|**CTRL**+**kartu**|První stisknutí klávesy poskytuje fokus **Výběr karty** nabídky. Další stisk klávesy vybrán položky hlavní nabídky a následné stisknutí kláves fokusu na položky nabídky v pořadí od shora dolů. Když je položka nabídky fokus **Enter** klíče nastaví tuto položku na aktivní kartě.|
+|**CTRL**+**Shift**+**kartu**|První stisknutí klávesy poskytuje fokus **Výběr karty** nabídky. Další stisk klávesy vybrán k položce nabídky v dolní části a následné stisknutí kláves fokusu na položky nabídky v pořadí zdola nahoru. Když je položka nabídky fokus **Enter** klíče nastaví tuto položku na aktivní kartě.|
+|**ALT**+**můžu**, **Alt**+**S**, **Alt**+**C**, **Alt**+**F**, **Alt**+**M**|Tyto klávesové zkratky nefungují při navigaci a správa obsahu karty jsou uvolněna.|
 
  **Správa obsahu**
 
 |||
 |-|-|
-|**Klávesová zkratka**|**Akce**|
-|**ALT**+**D**|Změna zdroje instalace na disk.|
-|**ALT**+**O**|Změna zdroje instalace na online.|
-|**Karta**|Změnit zaměření **cestu v místním úložišti** textové pole.|
-|**Karta**|Změnit zaměření **přesunout** tlačítko.|
-|**ALT**+**V**|Otevřete **přesunout obsahu** dialogové okno.|
-|**CTRL**+**Alt**+**F**|Změnit zaměření **filtru dokumentaci** textové pole.|
-|**Karta**|Změna výběru do seznamu dokumentaci.|
-|**Šipka nahoru** a **šipku dolů**|Vyhledejte v dokumentaci k seznamu.|
-|**Místo**|Přidat položku, kterou chcete **změny čekající na zpracování** seznamu.|
-|**Karta**|Změnit zaměření **změny čekající na zpracování** seznamu.|
-|**Šipka nahoru** a **šipku dolů**|Posuňte **změny čekající na zpracování** seznamu.|
-|**Místo**|Odebrání položky z **změny čekající na zpracování** seznamu.|
-|**ALT**+**T**|Použijte všechny čekající změny.|
+|**Stisknutí kláves**|**Akce**|
+|**ALT**+**D**|Změna zdroje instalace na disku.|
+|**ALT**+**O**|Změna zdroje instalace do online.|
+|**Karta**|Změňte fokus **cesta k místnímu úložišti** textového pole.|
+|**Karta**|Změňte fokus **přesunout** tlačítko.|
+|**ALT**+**V**|Otevřít **přesunout obsah** dialogové okno.|
+|**CTRL**+**Alt**+**F**|Změňte fokus **filtr dokumentace** textového pole.|
+|**Karta**|Změňte fokus na seznamu dokumentaci.|
+|**Šipka nahoru** a **šipka dolů**|Projděte si dokumentaci k seznamu.|
+|**místo**|Přidat položku, která má **čekající změny** seznamu.|
+|**Karta**|Změňte fokus **čekající změny** seznamu.|
+|**Šipka nahoru** a **šipka dolů**|Posuňte se **čekající změny** seznamu.|
+|**místo**|Odebrat položku z **čekající změny** seznamu.|
+|**ALT**+**T**|Použijte všechny neuložené změny.|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Funkce usnadnění programu Help Viewer](../ide/accessibility-features-of-the-help-viewer.md)
+- [Funkce usnadnění v aplikaci Help Viewer](../ide/accessibility-features-of-the-help-viewer.md)

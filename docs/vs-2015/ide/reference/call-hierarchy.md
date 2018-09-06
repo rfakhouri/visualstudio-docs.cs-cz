@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ca264dde1a05de9b03868223b7886f85cdf542a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 212109c37e1c85d5ddbc55413ab5a972edbfa337
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666624"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775194"
 ---
 # <a name="call-hierarchy"></a>Hierarchie volání
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Hierarchie volání umožňuje procházet váš kód zobrazením všechna volán
 ## <a name="using-call-hierarchy"></a>Pomocí hierarchie volání  
  Chcete-li zobrazit **hierarchie volání** okna, klikněte pravým tlačítkem na název metody, vlastnosti nebo volání konstruktoru a potom klikněte na tlačítko **zobrazit hierarchii volání**.  
   
- Název člena se zobrazí v podokně se stromovým zobrazením v **hierarchie volání** okna. Pokud rozbalíte uzel člen **volání do *** název člena* a **volání z *** název člena* zobrazí podřízených uzlů. Následující obrázek znázorňuje tyto uzly v **hierarchie volání** okna.  
+ Název člena se zobrazí v podokně se stromovým zobrazením v **hierarchie volání** okna. Pokud rozbalíte uzel člen **volání do**_název člena_ a **volání z**_název člena_ zobrazí podřízených uzlů. Následující obrázek znázorňuje tyto uzly v **hierarchie volání** okna.  
   
  ![Hierarchie volání s jedním uzlem otevřené](../../ide/reference/media/onenode.png "OneNode")  
 Hierarchie volání – okno  

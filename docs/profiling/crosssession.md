@@ -1,5 +1,5 @@
 ---
-title: CrossSession | Microsoft Docs
+title: CrossSession | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0dc63350b3acf89b1b226e5ebae45fdf8868fb3
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 112983b543a602bca7105ad1b5b69c5995eadeb0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750087"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774614"
 ---
 # <a name="crosssession"></a>CrossSession
-*VSPerfCmd.exe* **CrossSession** možnost umožňuje profileru ke shromažďování dat z jakékoli relace konzoly. **CrossSession** možnost se musí použít s **spustit** možnost.  
+*VSPerfCmd.exe* **CrossSession** možnost umožňuje profileru začnete shromažďovat data z všechny relace konzoly. **CrossSession** možnost musí být použita s **Start** možnost.  
   
- Můžete použít zkratku **CS** místě **CrossSession**.  
+ Můžete použít zkratku **CS** místo **CrossSession**.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,17 +31,17 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 #### <a name="parameters"></a>Parametry  
  Žádné  
   
-## <a name="valid-options"></a>Platné možnosti.  
- Povolte profilování v jiné relaci, **CrossSession** s musí být Zadaná možnost **spustit** možnost. **CrossSession** musí být zadaná také v žádném následné **VSPerfCmd připojit** a **odpojení** příkazy.  
+## <a name="valid-options"></a>Platné možnosti  
+ Chcete-li povolit profilaci v jiné relaci **CrossSession** možnost musí být zadaný pomocí **Start** možnost. **CrossSession** musí být zadaná také v jakémkoli následné **připojit nástroj VSPerfCmd** a **odpojit** příkazy.  
   
  **Spusťte:** `Method`  
- **Spustit** možnost inicializuje profileru pro zadanou metodu profilování.  
+ **Start** možnost inicializuje profiler k zadané metodě profilování.  
   
- **Připojení:** *PID*[**, *** PID*]  
- Zahájí profilace zadaný procesy.  
+ **Připojit:** _PID_[**,**_PID_]  
+ Zahájení profilace konkrétních procesů.  
   
- **Odpojení**[**: *** PID*[,*PID*]]  
- Zastaví profilace zadaný procesy.  
+ **Odpojit**[**:**_PID_[,_PID_]]  
+ Zastaví profilaci konkrétních procesů.  
   
 ## <a name="example"></a>Příklad  
  V tomto příkladu **CrossSession** možnost se používá k připojení k aplikaci, která byla spuštěna v jiné relaci konzoly.  
@@ -52,7 +52,7 @@ VSPerfCmd.exe /Attach:12345 /CS
 ```  
   
 ## <a name="see-also"></a>Viz také:  
- [Vsperfcmd –](../profiling/vsperfcmd.md)   
- [Profil samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Nástroj VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Samostatné aplikace profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Profil služby](../profiling/command-line-profiling-of-services.md)

@@ -20,12 +20,12 @@ caps.latest.revision: 54
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c8511f988baace50a413176cc508c960f24f67a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 946d811792506cbe430aebba52ca2b7ca628253b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668091"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775143"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ VSPerfCmd [/U] [/options]
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|Zastaví sběr dat pro zadaný proces.|  
 |[ThreadOn a ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid.*|Obnoví profilace pro zadaný proces po profilace byla pozastavena voláním **VSPerfCmdThreadOff**. Použití **ThreadOn** jenom v případě, že profilace pomocí metody instrumentace.|  
 |[ThreadOn a ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid.*|Pozastaví profilace pro zadaný podproces. Použití **ThreadOff** jenom v případě, že profilace pomocí metody instrumentace.|  
-|[Označit](../profiling/mark.md) **:** *MarkNum*[**,***MarkText***]**|Vloží znak do souboru dat profilování, s volitelným textem.|  
+|[Označit](../profiling/mark.md) **:** _MarkNum_[**,**_MarkText_**]**|Vloží znak do souboru dat profilování, s volitelným textem.|  
   
 ## <a name="sampling-method-options"></a>Možnosti vzorkování – metoda  
  Tyto možnosti jsou k dispozici pouze při použití metoda profilování vzorkování.  
@@ -71,8 +71,8 @@ VSPerfCmd [/U] [/options]
 |[Spuštění](../profiling/launch.md) **:** *spustitelný soubor*|Zadaná aplikace spustí a začne profilace.|  
 |[Args](../profiling/args.md) **:** *argumenty*|Určuje argumenty příkazového řádku k předání do aplikace.|  
 |[Console](../profiling/console.md)|V novém okně Příkazový řádek spustí zadaný příkaz.|  
-|[Připojit](../profiling/attach.md) **:** *PID*[**, *** PID*]|Zahájení profilace konkrétních procesů. Procesy lze identifikovat podle id procesu nebo název procesu.|  
-|[Odpojit](../profiling/detach.md)[**: *** PID*[,*PID*]]|Zastaví profilaci konkrétních procesů. Procesy lze identifikovat podle id procesu nebo název procesu. Pokud není zadán žádný proces, profilace je zastaveno pro všechny procesy.|  
+|[Připojit](../profiling/attach.md) **:** *PID*[**,**_PID_]|Zahájení profilace konkrétních procesů. Procesy lze identifikovat podle id procesu nebo název procesu.|  
+|[Odpojit](../profiling/detach.md)[**:**_PID_[,_PID_]]|Zastaví profilaci konkrétních procesů. Procesy lze identifikovat podle id procesu nebo název procesu. Pokud není zadán žádný proces, profilace je zastaveno pro všechny procesy.|  
 |[Uvolňování paměti](../profiling/gc-vsperfcmd.md)[**:**{**přidělení**`&#124;`**životnost**}]|Shromažďuje data paměti .NET přidělení a objekt životnost. Použít pouze **VSPerfCmdLaunch** možnost.|  
   
 ### <a name="sampling-interval-options"></a>Možnosti intervalu vzorkování  
@@ -80,9 +80,9 @@ VSPerfCmd [/U] [/options]
   
 |Možnost|Popis|  
 |------------|-----------------|  
-|[PF](../profiling/pf.md)[**: *** n*]|Vzorkuje při každé n tém stránkování (výchozí = 10).|  
-|[Sys](../profiling/sys-vsperfcmd.md)[**: *** n*]|Ukázky při každém n tém systému volání (výchozí = 10).|  
-|[Časovač](../profiling/timer.md)[**: *** n*]|Cyklus vzorkuje při každém n tém procesoru (výchozí = 10000000).|  
+|[PF](../profiling/pf.md)[**:**_n_]|Vzorkuje při každé n tém stránkování (výchozí = 10).|  
+|[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|Ukázky při každém n tém systému volání (výchozí = 10).|  
+|[Časovač](../profiling/timer.md)[**:**_n_]|Cyklus vzorkuje při každém n tém procesoru (výchozí = 10000000).|  
   
 ## <a name="service-component-and-kernel-mode-device-options"></a>Součást služby a možnosti zařízení režimu jádra  
  Následující možnosti správy podporovat profilování součásti služby nebo ovladače zařízení režimu jádra. Možnosti Správce nastavení oprávnění profilace a řídit profilované služby nebo ovladače zařízení.  

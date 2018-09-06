@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6882547752098c4c1be3736a02bac7a8fa740dd2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93b971c80cdf0c13567364d507f72027d62faae9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671328"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775515"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Obslužné rutiny události šíří změny mimo model
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ V produktu Visualization and Modeling SDK, můžete definovat obslužné rutiny 
   
     -   `ElementDeleted` – aktivuje po prvku modelu, relace, obrazec nebo spojnici byl odstraněn. Budete k němu přístup hodnoty vlastností elementu, ale nebude mít žádné vztahy s ostatními prvky.  
   
-2.  Přidat definici částečné třídy pro *YourDsl *** DocData** v samostatném souboru kódu v **DslPackage** projektu.  
+2.  Přidat definici částečné třídy pro _YourDsl_**DocData** v samostatném souboru kódu v **DslPackage** projektu.  
   
 3.  Psaní kódu události jako metody, jako v následujícím příkladu. Může to být `static`, pokud chcete získat přístup k `DocData`.  
   

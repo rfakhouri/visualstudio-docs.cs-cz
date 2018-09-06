@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 826669924cc538a63d61ffe5051aa32152a6152d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 145dd426390e84ae8bf9be14ad3266c3006e22da
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511170"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774666"
 ---
 # <a name="source-server-security-alert"></a>Výstraha zabezpečení zdrojového serveru
 Při použití zdrojového serveru, používejte pouze soubory symbolů, které jsou ze známých a důvěryhodných umístění.  
   
- Toto upozornění se zobrazí, když povolíte podporu zdrojového serveru. Příkazy ze zdrojového serveru jsou vloženy do souborů symbolů ladění (***PDB** soubory). Ujistěte se, že budete vědět, odkud pochází vaše soubory PDB.  
+ Toto upozornění se zobrazí, když povolíte podporu zdrojového serveru. Příkazy ze zdrojového serveru jsou vloženy do souborů symbolů ladění (**\*PDB** soubory). Ujistěte se, že budete vědět, odkud pochází vaše soubory PDB.  
   
 > [!IMPORTANT]
 >  Následující potenciální ohrožení zabezpečení musí brát v úvahu při použití zdrojového serveru: libovolné příkazy lze vložit do souboru PDB aplikace, takže se ujistěte, že vložíte pouze ty, které potřebujete ke spuštění v souboru srcsrv.ini. Pokus o provedení příkazu mimo soubor srcsvr.ini způsobí zobrazení dialogového okna s potvrzením. Další informace najdete v tématu [upozornění zabezpečení: ladicí program musí spustit nedůvěryhodný příkaz](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Parametry příkazu nejsou ověřovány, proto buďte s důvěryhodnými příkazy opatrní. Například pokud důvěřujete souboru cmd.exe, uživateli se zlými úmysly může zadat parametry, které by z příkazu mohly udělat hrozbu.  

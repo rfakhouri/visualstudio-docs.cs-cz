@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bc2a839583f62f3efab18fdb55274ec559d5e6cf
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924964"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776090"
 ---
 # <a name="unit-testing-in-nodejs"></a>Testování jednotek v Node.js
 
@@ -137,7 +137,7 @@ Přidání podpory pro další testovacích architektur díky implementaci zjiš
 
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks`
 
-Tato složka musí obsahovat soubor jazyka JavaScript se stejným názvem, který exportuje 2 následující funkce:
+Tato složka musí obsahovat soubor jazyka JavaScript se stejným názvem, který exportuje tyto dvě funkce:
 
 * `find_tests`
 * `run_tests`
@@ -147,3 +147,24 @@ Pro dobré a příklad `find_tests` a `run_tests` implementace rozhraní v testo
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks\mocha\mocha.js`
 
 K dispozici testovacích architektur zjišťování dochází při spuštění sady Visual Studio. Pokud architektura se přidá, když běží Visual Studio, restartujte Visual Studio ke zjištění rozhraní framework. Ale není nutné restartovat při provádění změn pro implementaci.
+
+## <a name="unit-tests-in-other-project-types"></a>Testování částí v jiné typy projektů
+Nejste omezeni pouze do projektu Node.js zápis testů jednotek. Po přidání vlastností TestFramework a TestRoot C# nebo VB projektu, tyto testy se vytvořil výčet a ji můžete spustit pomocí okna Průzkumníka testů.
+
+Chcete-li povolit, klikněte pravým tlačítkem na uzel projektu v Průzkumníku řešení, zvolte **uvolnit projekt**a klikněte na tlačítko **upravit projekt**. Potom v souboru projektu přidejte následující dva elementy do vlastností skupiny.
+
+> [!NOTE]
+> Ujistěte se, že vlastnost skupinu, kterou přidáváte prvky, které mají nemá podmínka uvedená.
+> To může způsobit neočekávané chování.
+
+```xml
+<PropertyGroup>
+    <JavaScriptTestRoot>tests\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Tape</JavaScriptTestFramework>
+</PropertyGroup>
+```
+
+V dalším kroku přidat testy do kořenové složky test, který jste zadali, a budou k dispozici ke spuštění v okně Průzkumníka testů. Pokud se zpočátku nezobrazí, budete muset projekt znovu sestavte.
+
+> [!NOTE]
+> To aktuálně nebude fungovat pro projekty .NET Standard a .NET Core.

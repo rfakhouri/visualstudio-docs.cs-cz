@@ -31,12 +31,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1f2036ee8091377d96895aafec7e2996e3eb1dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dcdcece820af764e627aafc43ef405c627724b68
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671272"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775968"
 ---
 # <a name="lib-task"></a>LIB – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Zabalí nástroj Microsoft 32bitový Správce knihovny lib.exe. Správce knihovn
 |---------------|-----------------|  
 |**AdditionalDependencies**|Volitelné **String []** parametru.<br /><br /> Určuje další položky pro přidání do příkazového řádku.|  
 |**AdditionalLibraryDirectories**|Volitelné **String []** parametru.<br /><br /> Přepíše cestu ke knihovně prostředí. Zadejte název adresáře.<br /><br /> Další informace najdete v tématu [/Libpath (další proměnná Libpath)](http://msdn.microsoft.com/library/7240af0b-9a3d-4d53-8169-2a92cd6958ba).|  
-|**AdditionalOptions**|Volitelné **řetězec** parametru.<br /><br /> Seznam možností lib.exe uvedená na příkazovém řádku. Například **"***nebo možnost 1 /option2 /option#*". Tento parametr použijte k určení možností lib.exe, které nejsou reprezentovány jakýkoli jiný **LIB** parametr úlohy.<br /><br /> Další informace najdete v tématu [spuštění knihovny LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).|  
+|**AdditionalOptions**|Volitelné **řetězec** parametru.<br /><br /> Seznam možností lib.exe uvedená na příkazovém řádku. Například ** "_/option1 /option2 /option#_". Tento parametr použijte k určení možností lib.exe, které nejsou reprezentovány jakýkoli jiný **LIB** parametr úlohy.<br /><br /> Další informace najdete v tématu [spuštění knihovny LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).|  
 |**DisplayLibrary**|Volitelné **řetězec** parametru.<br /><br /> Zobrazí informace o výstupní knihovně. Zadejte název souboru pro přesměrování informace do souboru. Zadejte "CON" nebo nic přesměrovat informace do konzoly.<br /><br /> Tento parametr **/LIST** možností lib.exe.|  
 |**ErrorReporting**|Volitelné **řetězec** parametru.<br /><br /> Určuje, jak odeslat informace o interní chybě společnosti Microsoft, lib.exe selže v době běhu.<br /><br /> Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.<br /><br /> -   **NoErrorReport** -   **/errorreport: žádné**<br />-   **PromptImmediately** - **/ERRORREPORT:PROMPT**<br />-   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**<br />-   **SendErrorReport** -   **/errorreport: Send**<br /><br /> Další informace najdete v tématu **/errorreport** možnost příkazového řádku na [spuštění knihovny LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).|  
 |**ExportNamedFunctions**|Volitelné **String []** parametru.<br /><br /> Určuje jednu nebo více funkcí pro export.<br /><br /> Tento parametr **/EXPORT:** možností lib.exe.|  

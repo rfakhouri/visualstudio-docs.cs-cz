@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 4ac7aa7d9fbbf4e6f6ffbe5eafd82ff8f1e0bc44
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054553"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775101"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Průzkumník testů sady Visual Studio – nejčastější dotazy
 
@@ -30,7 +30,7 @@ ms.locfileid: "43054553"
 
   Sestavení projektu a ujistěte se, že je zapnuté zjišťování na základě sestavení **nástroje** > **možnosti** > **Test**.
 
-  [Zjišťování testů v reálném čase](https://go.microsoft.com/fwlink/?linkid=862824) je založen zdroj testu zjišťování. Ho nelze zjistit testy, které používají teorie, vlastní adaptéry, vlastní vlastnosti `#ifdef` příkazy, atd. protože jsou definovány v době běhu. Sestavení je vyžadován pro tyto testy mají být zjišťované, přesně. V 15.6 Preview spustí zjišťování na základě sestavení (tradiční prozkoumání) až po sestavení. Toto nastavení znamená, že zjišťování testů v reálném čase zjistí libovolný počet testů, jak lze při úpravách a zjišťování na základě sestavení umožňuje dynamicky definované testů se zobrazí po sestavení. Zjišťování testů v reálném čase zlepšuje odezvu, ale nepřesahuje umožňují získat úplných a přesných výsledků po sestavení.
+  [Zjišťování testů v reálném čase](https://go.microsoft.com/fwlink/?linkid=862824) je založen zdroj testu zjišťování. Ho nelze zjistit testy, které používají teorie, vlastní adaptéry, vlastní vlastnosti `#ifdef` příkazy, atd. protože jste definovali v době běhu. Sestavení je vyžadován pro tyto testy mají být zjišťované, přesně. V sadě Visual Studio 2017 verze 15.6 a novější se spustí zjišťování na základě sestavení (tradiční prozkoumání) až po sestavení. Toto nastavení znamená, že zjišťování testů v reálném čase zjistí libovolný počet testů, jak lze při úpravách a zjišťování na základě sestavení umožňuje dynamicky definované testů se zobrazí po sestavení. Zjišťování testů v reálném čase zlepšuje odezvu, ale nepřesahuje umožňují získat úplných a přesných výsledků po sestavení.
 
 ## <a name="test-explorer--plus-symbol"></a>Průzkumník testů "+" (plus) symbol
 **Co dělá "+" (plus) symbol, který se zobrazí v horní zobrazený řádek znamená Průzkumník testů?**
@@ -93,6 +93,31 @@ Všechny projekty testů musí obsahovat testovací adaptér jejich .NET NuGet o
 **Projekt testů {} neodkazuje na žádný adaptér NuGet pro rozhraní .NET. Pro tento projekt možná nebude fungovat zjišťování a spouštění testů. Doporučujeme odkaz NuGet adaptéry testu v každém projektu .NET testů v řešení.**
 
 Namísto použití rozšíření adaptérů testů, jsou nutné k použití balíčků adaptéru NuGet testovací projekty. To výrazně zvyšuje výkon a způsobí, že snižuje počet možných problémů s využitím průběžné integrace. Další informace o vyřazení rozšíření adaptér testu .NET v [poznámky k verzi](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension).
+
+> [!NOTE]
+> Pokud používáte NUnit 2 Test Adapter a jsou nelze provést migraci k NUnit 3 test adapter, můžete ji vypnout toto nové chování zjišťování v sadě Visual Studio verzi 15.8 v **nástroje** > **možnosti**  >  **Test**. 
+
+  ![Test Explorer adaptér chování v možnostech nástrojů](media/testex-adapterbehavior.png)
+
+## <a name="uwp-testcontainer-was-not-found"></a>UPW TestContainer nebyl nalezen
+**Mých testů UPW se už spouštějí v sadě Visual Studio 2017 verze 15.7 nebo novější.**
+
+Poslední projekty testů UPW zadejte vlastnosti sestavení testovací platformy, která umožňuje lepší výkon pro identifikaci testovací aplikace. Pokud máte, který byl inicializován před Visual Studio verze 15.7 může se zobrazit následující chyba v projektu testů UPW **výstup** > **testy**:
+
+**System.AggregateException: Došlo k jedné nebo více chybám. ---> System.InvalidOperationException: následující TestContainer nebyl nalezen {} na Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
+  
+Chcete-li opravit toto:
+- Aktualizujte vlastnost sestavení projektu testů takto:
+
+```XML
+<UnitTestPlatformVersion Condition="'$(UnitTestPlatformVersion)' == ''">$(VisualStudioVersion)</UnitTestPlatformVersion>
+```
+
+- Aktualizujte verzi sady TestPlatform SDK takto:
+
+```XML
+<SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
+```
 
 ## <a name="using-feature-flags"></a>Používání příznaků funkcí
 **Jak můžu zapnout příznaky funkcí pro vyzkoušení nové funkce pro testování?**

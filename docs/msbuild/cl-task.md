@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e7c2ce059e53c44d29463f0bb9aba3c2a24e1e4
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 5bd871508d4e77cd165626ab4ce3727abf9a2006
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152614"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775394"
 ---
 # <a name="cl-task"></a>CL – úloha
 Zabalí nástroj kompilátoru Visual C++ *cl.exe*. Kompilátor vytvoří spustitelný soubor (*.exe*) soubory, dynamická knihovna (*.dll*) soubory nebo modul s kódem (*.netmodule*) soubory. Další informace najdete v tématu [– možnosti kompilátoru](/cpp/build/reference/compiler-options).  
@@ -752,7 +752,7 @@ Zabalí nástroj kompilátoru Visual C++ *cl.exe*. Kompilátor vytvoří spustit
   
     -   **EnableAllWarnings** -   **/Wall**  
   
-     Další informace najdete v tématu **/W *** n* možnost [/w, /W0, /W1, /W2, w3, / W4, /w1, /w2, w3, / W4, / wall, WD, / we, Wo, WV, /WX (úroveň upozornění)](/cpp/build/reference/compiler-option-warning-level).  
+     Další informace najdete v tématu **/W**_n_ možnost [/w, /W0, /W1, /W2, w3, / W4, /w1, /w2, w3, / W4, / wall, WD, / we, Wo, WV, /WX (úroveň upozornění)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **WholeProgramOptimization**  
   

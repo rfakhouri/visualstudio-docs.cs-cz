@@ -32,12 +32,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bfacd5061cad5d737202748e2270281c81bef26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8674ee9c4141b9bfe8511e67c4cd6113f8f0fed5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675108"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775445"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Zadání symbolu (.pdb) a zdrojových souborů v ladicím programu sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ Souboru databáze (PDB) program, nazývaný také soubor symbolů, mapuje identi
   
 -   Chcete-li změnit cesty hledání, zvolte nevybranou cestu nebo vyberte **nový** a zadejte novou cestu. Zvolte **načíst** hledání cest a načtení souboru symbolů, pokud je nalezen.  
   
--   Zvolte **Procházet a vyhledat***název spustitelného souboru***...**  pro přepsání jakékoli volby symbolu a opakujte hledání cesty. Pokud je nalezen soubor symbolů, bude načten, nebo se zobrazí Průzkumník souborů, kde můžete soubor symbolu vybrat ručně.  
+-   Zvolte **Procházet a vyhledat**_název spustitelného souboru_**...**  pro přepsání jakékoli volby symbolu a opakujte hledání cesty. Pokud je nalezen soubor symbolů, bude načten, nebo se zobrazí Průzkumník souborů, kde můžete soubor symbolu vybrat ručně.  
   
 -   Zvolte **změnit nastavení symbolů...**  zobrazíte **ladění** / **symboly** stránky v dialogovém okně Možnosti VS.  
   

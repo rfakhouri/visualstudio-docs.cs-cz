@@ -19,12 +19,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3b7f736f370125a7e70316ddda04244ea62045d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f48bb0e1832ef92a4d03a775123a062090936090
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674468"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775722"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Přehled Analýzy kódu pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Analýza kódu pro spravovaný kód analyzuje spravovaná sestavení a hlásí i
   
  Chcete-li spustit analýzu kódu při každém sestavení projektu, je vybrat **povolit analýzu kódu na sestavení (definuje konstantu CODE_ANALYSIS)** na stránce vlastností projektu. Další informace najdete v tématu [postupy: povolení a zakázání automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
   
- Pro ruční spuštění analýzy kódu na projektu, na **analyzovat** nabídky, klikněte na tlačítko **spustit analýzu kódu na *** ProjectName*. Další informace najdete v tématu [postupy: povolení a zakázání automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
+ Pro ruční spuštění analýzy kódu na projektu, na **analyzovat** nabídky, klikněte na tlačítko **spustit analýzu kódu na**_ProjectName_. Další informace najdete v tématu [postupy: povolení a zakázání automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
   
 ## <a name="rule-sets"></a>Sady pravidel  
  Pravidla analýzy kódu pro spravovaný kód jsou seskupena do *sad pravidel*. Můžete použít jednu ze sad standardních pravidel společnosti Microsoft, nebo můžete vytvořit vlastní sadu pravidel, která za určitým účelem. Další informace najdete v tématu [pomocí sad pravidel k seskupování pravidel analýzy kódu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).  
@@ -76,7 +76,7 @@ Analýza kódu pro spravovaný kód analyzuje spravovaná sestavení a hlásí i
   
 ## <a name="see-also"></a>Viz také  
  [Použití sad pravidel k seskupování pravidel analýzy kódu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
- [Postupy: povolení a zákaz automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+ [Postupy: Povolení a zakázání automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
 
 
 

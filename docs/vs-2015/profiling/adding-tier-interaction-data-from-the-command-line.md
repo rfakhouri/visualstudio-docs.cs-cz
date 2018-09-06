@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 310d87a38e0b14ec0896c51f2765a64736ebff1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce7713b39acb7736e34f6ab6017b0cd32b1e1cfa
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678801"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776026"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Přidání dat interakce vrstev z příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Profilování interakce vrstev poskytuje další informace o spuštění s úsp�
   
  **Shromažďování dat TIP na vzdáleném počítači**  
   
- Ke shromažďování dat interakce vrstev ve vzdáleném počítači, je nutné zkopírovat **vs_profiler_***\<platformy >***_***\<jazyk >***.exe** souboru z *%VSInstallDir%***\Team nástroje Tools\Setups** složku sady Visual Studio počítače ke vzdálenému počítači a nainstalujte ho. Nelze použít v nástrojů pro profilaci [Visual Studio Remote Tools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) stažení balíčku.  
+ Ke shromažďování dat interakce vrstev ve vzdáleném počítači, je nutné zkopírovat **vs\_profiler\_**_\<platformy >_ **\_**  _\<Jazyk >_**.exe** soubor _VSInstallDir %_**\Team Tools\Performance Tools\Setups**složky sady Visual Studio počítače ke vzdálenému počítači a nainstalujte ho. Nelze použít v nástrojů pro profilaci [Visual Studio Remote Tools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) stažení balíčku.  
   
  **TIP sestavy**  
   

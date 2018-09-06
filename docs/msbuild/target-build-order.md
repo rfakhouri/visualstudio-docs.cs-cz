@@ -1,7 +1,7 @@
 ---
 title: Cílové pořadí sestavení | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/04/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178953"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774942"
 ---
 # <a name="target-build-order"></a>Pořadí sestavení cílů
 Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřazeny cíle. Tyto atributy můžete určit pořadí, ve kterém jsou spuštěny cíle:  
@@ -114,7 +114,7 @@ Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřaze
 
     Cíle, které uvádějí podmíněné cíl `BeforeTargets` nebo `AfterTargets` spustit v předepsané pořadí
   
-4.  Před provedením cíl jeho `DependsOnTargets` spuštění cíle.  
+4.  Předtím, než je cíl proveden nebo vynechán, pokud jeho `Condition` atribut chybí, nebo nevyhodnotil `false`, jeho `DependsOnTargets` spuštění cíle.  
   
 5.  Předtím, než je cíl proveden nebo vynechán, všechny cíl, který zobrazí ho v `BeforeTargets` atribut běží.  
   

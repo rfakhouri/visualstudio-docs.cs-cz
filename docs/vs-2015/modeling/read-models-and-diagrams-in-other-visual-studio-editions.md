@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a5f7085276e4aeb01b464570be3ee3fdafcfd52b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4642086639fad8a5b39e4a03d4509b349807a9b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696412"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775597"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Čtení modelů a diagramů v jiných edicích sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Při otevření modelu ve verzi sady Visual Studio, který nepodporuje vytvořen
 -   Dva soubory pro diagram, který si chcete přečíst, například diagramů **MyDiagram.classdiagram a MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Pro diagramy vrstev, také byste měli mít soubor s názvem * MyDiagram ***. layerdiagram.suppressions**.  
+    >  Pro diagramy vrstev, také byste měli mít soubor s názvem _MyDiagram_**. layerdiagram.suppressions**.  
   
 -   Soubor projektu modelování (**MyModel.modelproj**)  
   
@@ -64,12 +64,12 @@ Při otevření modelu ve verzi sady Visual Studio, který nepodporuje vytvořen
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Diagramy vrstev: referenční dokumentace](../modeling/layer-diagrams-reference.md)|Diagram vrstvy znázorňuje strukturu existující nebo navrhovaný architektury. Při zápisu kódu ho dala automaticky ověřit proti diagramu vrstev.|  
-|[Diagramy činnosti UML: referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)|Diagram činnosti ukazuje tok práce, v procesu podnikání nebo softwaru.|  
-|[Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)|Diagram tříd se zobrazí typy a relace se používá v mnoha kontextech, například kód, databázová schémata, komunikační protokoly nebo Glosář termínů použitých k popisu obchodní domény.|  
-|[Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)|Diagram komponent ukazuje oddělitelných částí v návrh softwaru a jejich rozhraní.|  
-|[Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)|Sekvenční diagram ukazuje interakce mezi prvky návrhu softwaru.|  
-|[Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)|Diagram případu použití zobrazuje uživatele systému a aktivity, které můžete provést k dosažení specifickým cílům.|  
+|[Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)|Diagram vrstvy znázorňuje strukturu existující nebo navrhovaný architektury. Při zápisu kódu ho dala automaticky ověřit proti diagramu vrstev.|  
+|[Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)|Diagram činnosti ukazuje tok práce, v procesu podnikání nebo softwaru.|  
+|[Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)|Diagram tříd se zobrazí typy a relace se používá v mnoha kontextech, například kód, databázová schémata, komunikační protokoly nebo Glosář termínů použitých k popisu obchodní domény.|  
+|[Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)|Diagram komponent ukazuje oddělitelných částí v návrh softwaru a jejich rozhraní.|  
+|[Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)|Sekvenční diagram ukazuje interakce mezi prvky návrhu softwaru.|  
+|[Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)|Diagram případu použití zobrazuje uživatele systému a aktivity, které můžete provést k dosažení specifickým cílům.|  
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)

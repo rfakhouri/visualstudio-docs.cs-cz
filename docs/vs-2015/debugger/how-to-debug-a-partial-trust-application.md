@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b5f041163f0cf544fe953c24433e34ff0ed9e3e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5880b375f15b189a2532ed750d87b95fea51f0df
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673199"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775111"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Postupy: Ladění aplikace s částečnou důvěryhodností
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Platí pro Windows a konzolových aplikací.
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Chcete-li zvolit zóny pro vaši aplikaci částečným vztahem důvěryhodnosti  
   
-1.  Z **projektu** nabídce zvolte * Projectname ***vlastnosti**.  
+1.  Z **projektu** nabídce zvolte _Projectname_**vlastnosti**.  
   
 2.  V *Projectname* stránky vlastností, klikněte **zabezpečení** stránky.  
   
@@ -80,7 +80,7 @@ Platí pro Windows a konzolových aplikací.
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>Chcete-li zobrazit další oprávnění přidat při ladění  
   
-1.  Z **projektu** nabídce zvolte * Projectname ***vlastnosti**.  
+1.  Z **projektu** nabídce zvolte _Projectname_**vlastnosti**.  
   
 2.  V *Projectname* stránky vlastností, klikněte **zabezpečení** stránky.  
   

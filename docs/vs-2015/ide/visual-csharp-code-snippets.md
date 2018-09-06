@@ -20,12 +20,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 36ee2612fbee3cb346fcf1e2e78ef49fce3ff630
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2afbadccfc894dd5ba5baba9c58ab43417f44ed5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673266"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775442"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmenty kódu v jazyce Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ Fragmenty kódu jsou předdefinované fragmenty kódu, které můžete rychle vk
 |mbox|Vytvoření volání <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Budete muset přidat odkaz na System.Windows.Forms.dll.|Uvnitř metoda, indexer, přistupující objekt vlastnosti nebo přístupový objekt události.|  
 |– obor názvů|Vytvoří [obor názvů](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f) deklarace.|V oboru názvů (včetně globálního oboru názvů).|  
 |Prop|Vytvoří [automaticky implementované vlastnosti](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7) deklarace.|Uvnitř třídy nebo struktury.|  
-ropfull|Vytvoří deklaraci vlastnosti get a přístupové objekty set.|Uvnitř třídy nebo struktury.|  
+|propfull|Vytvoří deklaraci vlastnosti get a přístupové objekty set.|Uvnitř třídy nebo struktury.|  
 |propg|Vytvoří jen pro čtení [automaticky implementované vlastnosti](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7) s privátní přístupový objekt "set".|Uvnitř třídy nebo struktury.|  
 |Správce bitových kopií|Vytvoří [statické](http://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)[int](http://msdn.microsoft.com/library/212447b4-5d2a-41aa-88ab-84fe710bdb52) deklarace metody Main.|Uvnitř třídy nebo struktury.|  
 |struct |Vytvoří [struktura](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c) deklarace.|Uvnitř oboru názvů (včetně globálního oboru názvů), třídy nebo struktury.|  
@@ -88,7 +88,7 @@ ropfull|Vytvoří deklaraci vlastnosti get a přístupové objekty set.|Uvnitř 
  [Postupy: vytvoření nové fragment kódu s náhradou](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Parametry šablony](../ide/template-parameters.md)   
  [Postupy: použití příkazu Obklopit s fragmenty kódu](../ide/how-to-use-surround-with-code-snippets.md)   
- [Postupy: obnovení fragmentů kódu refaktoringu jazyka C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [Postupy: Obnovení fragmentů kódu refaktoringu jazyka C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
 
 
 

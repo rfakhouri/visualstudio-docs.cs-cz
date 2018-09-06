@@ -28,19 +28,19 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0322f3ad37330e84cc152fcc2bcecbed89f2f9f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 467b87c1a0e72c5523523aae015f03b54273907c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628452"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775606"
 ---
 # <a name="how-to-debug-native-dlls"></a>Postupy: Ladění nativních knihoven DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nejnovější verzi tohoto tématu můžete najít v [postupy: ladění nativních knihoven DLL](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-native-dlls).  
   
-POZNÁMKA:]
+> [!NOTE]
 >  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Při ladění knihovny DLL ladění lze spustit z:  
@@ -67,7 +67,7 @@ POZNÁMKA:]
   
 5.  V **argumenty příkazu** zadejte všechny potřebné argumenty pro spustitelný soubor.  
   
- Pokud není zadán spustitelný soubor *projektu *** stránky vlastností** dialogovém okně [spustitelný soubor pro dialogové okno ladění relace](../debugger/executable-for-debugging-session-dialog-box.md) se zobrazí při spuštění ladění.  
+ Pokud není zadán spustitelný soubor _projektu_**stránky vlastností** dialogovém okně [spustitelný soubor pro dialogové okno ladění relace](../debugger/executable-for-debugging-session-dialog-box.md) se zobrazí při spuštění ladění.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   

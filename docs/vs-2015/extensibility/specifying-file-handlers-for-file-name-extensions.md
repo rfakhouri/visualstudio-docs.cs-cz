@@ -15,12 +15,12 @@ ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5fcf055a5f897b5391084e9caa2bf2debd364123
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 83bbc57098a68239a1ef26548e9cf05fd31322bb
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666912"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774601"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Určení popisovačů souborů pro přípony názvů souborů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |.Extension|ProductName. extension.versionMajor.versionMinor|  
   
- Zaregistrujete různé aplikace, které jsou možné otevřít specifickou příponu souboru tak, že přidáte systémovou správou verzí ProgID jako hodnoty klíč HKEY_CLASSES_ROOT\\*\<rozšíření >* \OpenWithProgids klíč. Tento klíč registru obsahuje seznam alternativních ProgID spojené s příponou souboru. Aplikace přidružené k uvedené ProgID zobrazeny **otevřít v *** název produktu* podnabídka. Pokud stejná aplikace je zadán v obou `OpenWithList` a `OpenWithProgids` duplicity slučuje klíče, operační systém.  
+ Zaregistrujete různé aplikace, které jsou možné otevřít specifickou příponu souboru tak, že přidáte systémovou správou verzí ProgID jako hodnoty klíč HKEY_CLASSES_ROOT\\*\<rozšíření >* \OpenWithProgids klíč. Tento klíč registru obsahuje seznam alternativních ProgID spojené s příponou souboru. Aplikace přidružené k uvedené ProgID zobrazeny **otevřít v**_název produktu_ podnabídka. Pokud stejná aplikace je zadán v obou `OpenWithList` a `OpenWithProgids` duplicity slučuje klíče, operační systém.  
   
 > [!NOTE]
 >  `OpenWithProgids` Klíč se podporuje jenom ve Windows XP. Protože jinými operačními systémy Ignorovat tento klíč, nepoužívejte ho jako pouze registrace pro obslužné rutiny souborů. Pomocí tohoto klíče poskytují lepší uživatelské prostředí ve Windows XP.  

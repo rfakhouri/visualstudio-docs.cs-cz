@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d56030b78abe57c80d816881991b9819ed6456b
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924949"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774598"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Vývoj kódu jazyka JavaScript a TypeScript v sadě Visual Studio bez řešení nebo projektů
 
@@ -58,3 +58,27 @@ Pokud je *tsconfig.json* souboru ve složce, klikněte pravým tlačítkem můž
 
 > [!NOTE]
 > Můžete získat další informace o *tsconfig.json* v [stránce TypeScript příručka tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+
+## <a name="unit-tests"></a>Testy jednotek
+Můžete povolit integraci testů jednotek v sadě Visual Studio tak, že zadáte kořenem testu ve vaší *package.json*:
+
+```json
+{
+    // ...
+    "vsTest":{
+        "testRoot": "./tests"
+    }
+    // ...
+}
+```
+
+Nástroj test runner zobrazí místně nainstalované balíčky, chcete-li určit, které testovací rozhraní používat.
+Pokud jsou rozpoznány žádné podporované architektury, nástroje test runner výchozí *ExportRunner*. Jsou podporované architektury:
+* Mocha ([mochajs.org](http://mochajs.org/))
+* Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
+* Pásky ([github.com/substack/tape](https://github.com/substack/tape))
+
+Po otevření Průzkumníka testů (zvolte **testovací** > **Windows** > **Průzkumník testů**), Visual Studio zjistí a zobrazí testy.
+
+> [!NOTE]
+> Nástroj test runner projde pouze soubory jazyka JavaScript v kořenovém adresáři test, pokud vaše aplikace je napsána v TypeScript, že které potřebujete k vytváření těchto první.

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: badee4bfb98ef34f8d730f35d29f456d783d7d43
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 103fcd8b47e423aaa8d66c3df96afe3598818de2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155094"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774804"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Postupy: Konfigurace chování výzvy důvěryhodnosti ClickOnce
 Vztahu důvěryhodnosti ClickOnce pro ovládací prvek můžete nakonfigurovat, jestli koncovým uživatelům se zobrazí možnost instalace aplikace ClickOnce, jako je například aplikace Windows Forms, aplikace Windows Presentation Foundation, konzolové aplikace a prohlížeč WPF – aplikace a řešení pro systém Office. Konfigurace potvrzení důvěryhodnosti nastavením klíčů registru v počítači koncového uživatele.  
@@ -59,11 +59,11 @@ Vztahu důvěryhodnosti ClickOnce pro ovládací prvek můžete nakonfigurovat, 
   
     1.  Klikněte na tlačítko **Start**a potom klikněte na tlačítko **spustit**.  
   
-    2.  V **otevřít** zadejte `regedit32`a potom klikněte na tlačítko **OK**.  
+    2.  V **otevřít** zadejte `regedit`a potom klikněte na tlačítko **OK**.  
   
 2.  Vyhledejte následující klíč registru:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
      Pokud klíč neexistuje, vytvořte ho.  
   
@@ -122,7 +122,7 @@ Vztahu důvěryhodnosti ClickOnce pro ovládací prvek můžete nakonfigurovat, 
   
 2.  Vyhledejte následující klíč registru:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel** 
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel** 
   
      Pokud klíč neexistuje, vytvořte ho.  
   

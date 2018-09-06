@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1084b1465de584289e8a14820ae21fb9662a7229
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ee8a3b5a5510ef5b8a104e3a55ace3af9ce7d318
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667191"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775531"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Přizpůsobení souborového úložiště a serializace XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro domén
   
 1.  Ujistěte se, že **je klíčem Monikeru** je `false` pro každou doménovou vlastnost ve třídě a její základní třídy.  
   
-    1.  V okně Průzkumník DSL, rozbalte **Data Behavior\Class serializace Xml\\***\<doménová třída >*** \Element Data**.  
+    1.  V okně Průzkumník DSL, rozbalte **Data Behavior\Class serializace Xml\\**_\<doménová třída >_**\Element Data**.  
   
     2.  Ověřte, že **je klíčem Monikeru** je `false` pro každou doménovou vlastnost.  
   
@@ -146,7 +146,7 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro domén
   
 -   Nastavte **je klíčem Monikeru** doménovou vlastnost existující doménové třídy. Typ vlastnosti musí být `string`.  
   
-    1.  V okně Průzkumník DSL, rozbalte **Data Behavior\Class serializace Xml\\***\<doménová třída >*** \Element Data**a potom vyberte vlastnost domain.  
+    1.  V okně Průzkumník DSL, rozbalte **Data Behavior\Class serializace Xml\\**_\<doménová třída >_**\Element Data**a pak vyberte doménová vlastnost.  
   
     2.  V okně Vlastnosti nastavte **je klíčem Monikeru** k `true`.  
   

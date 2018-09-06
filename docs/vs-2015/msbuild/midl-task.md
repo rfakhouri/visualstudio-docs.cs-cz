@@ -32,12 +32,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c70d04d31606f3874ddd9fb70395dc3702ec1cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d496bba38b9b0dbf1c5346bda928f491ce697edf
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666959"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775594"
 ---
 # <a name="midl-task"></a>MIDL – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), mi
   
      Volitelné **řetězec** parametru.  
   
-     Seznam možností příkazového řádku. Například **"***nebo možnost 1 /option2 /option#*". Tento parametr použijte k určení možnosti příkazového řádku, které nejsou reprezentovány všechny ostatní parametry MIDL – úloha.  
+     Seznam možností příkazového řádku. Například **"**_/option1 /option2 /option#_". Tento parametr použijte k určení možnosti příkazového řádku, které nejsou reprezentovány všechny ostatní parametry MIDL – úloha.  
   
      Další informace najdete v tématu "Reference k příkazovému řádku MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   

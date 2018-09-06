@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb5d77e79de766939b27e005e5c9dffddb2a8157
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a6ed7ba926869359db9c9602f316cb0fc3934d7
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670131"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775197"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>Shromažďování statistik výkonu pomocí vzorkování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ Ve výchozím nastavení [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] me
 -   Na **Obecné** stránky dialogovém okně Vlastnosti relace výkonu můžete kliknout na tlačítko **vzorkování**.  
   
 ## <a name="common-tasks"></a>Obecné úlohy  
- Můžete zadat další možnosti v *relace výkonu *** stránky vlastností** dialogovému oknu relace výkonu. Chcete-li otevřít toto dialogové okno:  
+ Můžete zadat další možnosti v _relace výkonu_**stránky vlastností** dialogovému oknu relace výkonu. Chcete-li otevřít toto dialogové okno:  
   
 -   V **prohlížeč výkonu**, klikněte pravým tlačítkem na název relace výkonu a potom klikněte na tlačítko **vlastnosti**.  
   
- Úkoly v následující tabulce popisují možnosti, které můžete určit *relace výkonu *** stránky vlastností** dialogové okno při profilování pomocí metody vzorkování.  
+ Úkoly v následující tabulce popisují možnosti, které můžete určit _relace výkonu_**stránky vlastností** dialogové okno při profilování pomocí metody vzorkování.  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  

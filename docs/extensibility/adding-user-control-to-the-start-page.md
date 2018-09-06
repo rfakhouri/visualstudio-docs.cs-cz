@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 095325fc8312747b61ff4312c5fe616ae79ce045
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8bcac83d23bae3d8c269a53a95fedb9507245e9f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152955"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775823"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Přidat uživatelský ovládací prvek na úvodní stránku
 Tento návod ukazuje, jak přidat knihovnu DLL odkaz na vlastní úvodní stránky. V příkladu přidá uživatelský ovládací prvek do řešení, vytvoří uživatelský ovládací prvek a potom odkazuje na sestavení z úvodní stránky *.xaml* souboru. Na nové kartě hostuje uživatelský ovládací prvek, který funguje jako základní webový prohlížeč.  
@@ -177,7 +177,7 @@ Tento návod ukazuje, jak přidat knihovnu DLL odkaz na vlastní úvodní strán
   
 1.  Zkopírujte soubor XAML a všechny podpůrné textové soubory nebo značky soubory do *%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\*  složky.  
   
-2.  Pokud úvodní stránky odkazuje na všechny ovládací prvky nebo typy v sestavení, které nejsou nainstalované Visual Studio, zkopírujte sestavení a vložte je do * instalační složky sady Visual Studio ***\Common7\IDE\PrivateAssemblies\\** .  
+2.  Pokud úvodní stránky odkazuje na všechny ovládací prvky nebo typy v sestavení, které nejsou nainstalované Visual Studio, zkopírujte sestavení a vložte je do _instalační složky sady Visual Studio_**\Common7\IDE\ PrivateAssemblies\\**.  
   
 3.  Na příkazovém řádku aplikace Visual Studio, zadejte **devenv /rootsuffix Exp** otevřete experimentální instanci sady Visual Studio.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 35f2209d970696fee775248d1a991bedf0284d2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e977ede02f355724f1a93f82f1c688de27e36fa6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633166"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774714"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Vlastnosti operací v diagramech tříd UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ V diagramu tříd UML lze přidat *operace* u tříd a rozhraní. Operace je met
 |Vlastnost|Výchozí|Popis|  
 |--------------|-------------|-----------------|  
 |**Jméno**|(nové jméno)|Musí být jedinečné v rámci nadřazeného typu.|  
-|**Parametry**|(žádné)|Seznam, který má tvar *název ***:*** typ ***** *název ***:*** typ ***,...** klikněte na tlačítko **[...]**  můžete upravit seznam.<br /><br /> Typy mohou být primitivní typy nebo typy, které jsou definovány v modelu. Pokud zadáte název pro nový typ této vlastnosti, typ se přidají do **nespecifikované typy** části Průzkumníku modelů UML.|  
+|**Parametry**|(žádné)|Seznam, který má tvar _název_**:**_typ_**,** _název_**:**  _Typ_**,...** Klikněte na tlačítko **[...]**  můžete upravit seznam.<br /><br /> Typy mohou být primitivní typy nebo typy, které jsou definovány v modelu. Pokud zadáte název pro nový typ této vlastnosti, typ se přidají do **nespecifikované typy** části Průzkumníku modelů UML.|  
 |**Návratový typ**|(žádné)|**(žádné)** , nebo primitivní typ nebo typ, který je definován v modelu. Pokud zadáte název pro nový typ této vlastnosti, typ se přidají do **nespecifikované typy** části Průzkumníku modelů UML.|  
 |**Vstupních**|(žádné)|Určení vztahu mezi stav systému před a po spuštění operace nepovinnou podmínku.|  
 |**Předběžné podmínky**|(žádné)|Nepovinnou podmínku určující předpoklady o stavu systému před provedením operace zahájí vykonávání.|  
@@ -79,7 +79,7 @@ V diagramu tříd UML lze přidat *operace* u tříd a rozhraní. Operace je met
  [Vlastnosti typů v diagramech tříd UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Vlastnosti atributů v diagramech tříd UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Vlastnosti přidružení v diagramech tříd UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
- [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)
+ [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)
 
 
 

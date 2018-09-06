@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0890b476fb83bc8b45ef44e2de3608683572ecb1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8138129c928a02ed5fb6684bc6ee06282435860e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696270"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776162"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,7 +143,7 @@ Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 po
   
  **Shromažďování dat TIP na vzdáleném počítači**  
   
- Ke shromažďování dat interakce vrstev ve vzdáleném počítači, je nutné zkopírovat **vs_profiler_***\<platformy >***_***\<jazyk >***.exe** souboru z *%VSInstallDir%***\Team nástroje Tools\Setups** složku sady Visual Studio počítače ke vzdálenému počítači a nainstalujte ho. Nelze použít v nástrojů pro profilaci [Visual Studio Remote Tools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) stažení balíčku.  
+ Ke shromažďování dat interakce vrstev ve vzdáleném počítači, je nutné zkopírovat **vs\_profiler\_**_\<platformy >_ **\_**  _\<Jazyk >_**.exe** soubor _VSInstallDir %_**\Team Tools\Performance Tools\Setups**složky sady Visual Studio počítače ke vzdálenému počítači a nainstalujte ho. Nelze použít v nástrojů pro profilaci [Visual Studio Remote Tools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) stažení balíčku.  
   
  Můžete použít [VSPerfCmd](../profiling/vsperfcmd.md) nebo [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) ke shromažďování dat profilování.  
   
@@ -154,7 +154,7 @@ Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 po
 ## <a name="see-also"></a>Viz také  
  [Prohlížeč výkonu](../profiling/performance-explorer.md)   
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   
- [Profilace z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Profilace prostřednictvím příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)
 
 
 

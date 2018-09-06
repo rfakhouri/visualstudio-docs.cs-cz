@@ -19,12 +19,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68f7d92abebb695ff230815795d34e48a8176ec3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfe8539d7b15af1faa22911b69686cf9243db418
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628820"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776065"
 ---
 # <a name="debug-page-project-designer"></a>Stránka Ladění, návrhář projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ ms.locfileid: "42628820"
 Nejnovější verzi tohoto tématu můžete najít v [stránka ladění, Návrhář projektu](https://docs.microsoft.com/visualstudio/ide/reference/debug-page-project-designer).  
   
   
-UPOZORNĚNÍ]
+> [!WARNING]
 >  Toto téma se nevztahuje na aplikace Windows Store. Zobrazit [spustíte relaci ladění (VB, C#, C++ a XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) Windows Dev Center.  
   
  Použití **ladění** stránku **Návrháře projektu** můžete nastavit vlastnosti pro ladění chování v projektu jazyka Visual Basic nebo C#.  
   
- Pro přístup **ladění** stránky, vyberte uzel projektu v **Průzkumníka řešení**. Na **projektu** nabídce zvolte *ProjectName* **vlastnosti**. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **ladění** kartu.  
+ Pro přístup **ladění** stránky, vyberte uzel projektu v **Průzkumníka řešení**. Na **projektu** nabídce zvolte _ProjectName_**vlastnosti**. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **ladění** kartu.  
   
 ## <a name="configuration-and-platform"></a>Konfigurace a platforma  
  Tyto možnosti umožňují vybrat konfigurace a platformy k zobrazení a úpravě.  

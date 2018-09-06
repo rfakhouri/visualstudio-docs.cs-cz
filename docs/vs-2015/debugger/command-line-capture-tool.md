@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f030980cab06e6d412f6e48db87d7ede74b8d72
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22f6a399630a675b7a44f5357faea50d1dc16d91
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666436"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775372"
 ---
 # <a name="command-line-capture-tool"></a>Nástroj příkazového řádku pro zachytávání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,7 +181,7 @@ DXCap.exe –e map
  **ID: AppexMaps**  
  **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: Ne**  
- ** AppSpec (ke spuštění): **DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** poslední řádek výstupu u každé Výčtový aplikace zobrazí příkaz vám umožní zachytit informace grafiky z něj.  
+ **AppSpec (ke spuštění): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** poslední řádek výstupu u každé Výčtový aplikace zobrazí příkaz vám umožní zachytit informace grafiky z něj.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Zaznamenávejte určité snímky nebo snímků mezi určitou dobu.  
  Použití `–frame` zadat počet snímků, které chcete zaznamenat pomocí čárky a rozsahy adres:  

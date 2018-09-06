@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90b42f40a151f9c0213e1cdc4a3882c9022d6b12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8555c07dc62237ba202487340ad77b5e04a77e4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677326"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775807"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Postupy: Potlačení upozornění kompilátoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Zadáním jednoho nebo více druhů upozornění kompilátoru, že nechcete, aby
   
 2.  V panelu nabídky zvolte **projektu**, **uvolnit projekt**.  
   
-3.  V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **upravit***ProjectName***.vbproj**.  
+3.  V **Průzkumníka řešení**, otevřete místní nabídku pro projekt a klikněte na tlačítko **upravit**_ProjectName_**.vbproj**.  
   
      Soubor projektu je otevřený v editoru kódu.  
   

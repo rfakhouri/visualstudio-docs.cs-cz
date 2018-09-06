@@ -15,12 +15,12 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b5b13faa7d557785ab6db88a8600a25f4d341ac0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8afc13a03fcff51eaad0507af753f3a434eac093
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633779"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774684"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definování obslužné rutiny gest v diagramu modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -362,7 +362,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
     1.  V **Průzkumníka řešení**, v místní nabídce projektu VSIX zvolte **otevřít složku v Průzkumníku Windows**.  
   
-    2.  Vyhledejte soubor **bin\\\*\\***YourProject***VSIX.**  
+    2.  Vyhledejte soubor **bin\\\*\\**_YourProject_**VSIX.**  
   
 2.  Kopírovat **VSIX** souboru k cílovému počítači, na kterém chcete nainstalovat rozšíření. To může být vlastní počítač nebo jiný.  
   
@@ -529,7 +529,7 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
  [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definování omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md)   
- [Programování s rozhraním API UML](../modeling/programming-with-the-uml-api.md)
+ [Programování pomocí rozhraní API UML](../modeling/programming-with-the-uml-api.md)
 
 
 

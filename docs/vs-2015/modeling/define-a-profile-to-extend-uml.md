@@ -19,12 +19,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 86f2e360c924dd557c17cfdf41a3dc2723114af3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b54babfc6bb4350ba1cc99d6ce34a05f70dab693
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669354"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775794"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definování profilu pro rozšíření UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -352,7 +352,7 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
   
 2.  Zajistěte, aby byl každý název Monikeru v/ProfileName/nodename formuláři. ProfileName je hodnota atributu name v kořenovém uzlu profilu. NodeName je hodnota atributu name metatřídy, externalType nebo enumerationType.  
   
-3.  Zkontrolujte syntaxi je podle postupu popsaného tady a jak je ukázáno v * jednotky ***: \Program Files\Microsoft sady Visual Studio [verze] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\**.  
+3.  Zkontrolujte syntaxi je podle postupu popsaného tady a jak je ukázáno v _jednotky_**: \Program Files\Microsoft sady Visual Studio [verze] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
   
 4.  Odinstalujte vadné rozšíření. Na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.  
   

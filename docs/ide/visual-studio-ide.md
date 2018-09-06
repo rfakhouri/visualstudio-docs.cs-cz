@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3ac7f54e2295764694372119faf03ea72cff42de
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624421"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775981"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Vítejte v prostředí IDE sady Visual Studio
 
@@ -273,6 +273,8 @@ Pokud jste připraveni začít do další kód, jeden z následujících šablon
 - [Pomocí sady Visual Studio k vytvoření vaší první webové aplikace v Pythonu](quickstart-python.md)
 
 - [Vytvoření první aplikace webového jazyka C# pomocí sady Visual Studio](quickstart-aspnet-core.md)
+
+- [Vytvoření první aplikace webové F # pomocí sady Visual Studio](quickstart-fsharp.md)
 
 - [Vytvořte svoji první aplikaci Node.js pomocí sady Visual Studio](quickstart-nodejs.md)
 

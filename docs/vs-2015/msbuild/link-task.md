@@ -36,12 +36,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 624ec4709ab913e3e26bec8099f1e83c2c628862
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0aaf4d5f6862e2b5ef40b88e8041aa9ccc5a317
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669400"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775603"
 ---
 # <a name="link-task"></a>Úloha odkazu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Zabalí nástroj linker Visual C++, link.exe. Nástroj linker k propojení objek
   
      Volitelné **řetězec** parametru.  
   
-     Seznam možností linkeru uvedená na příkazovém řádku. Například **"***nebo možnost 1 /option2 /option#*". Tento parametr použijte k určení možnosti linkeru, které nejsou reprezentovány jakýkoli jiný **odkaz** parametr úlohy.  
+     Seznam možností linkeru uvedená na příkazovém řádku. Například **"**_/option1 /option2 /option#_". Tento parametr použijte k určení možnosti linkeru, které nejsou reprezentovány jakýkoli jiný **odkaz** parametr úlohy.  
   
      Další informace najdete v tématu [možnosti Linkeru](http://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   

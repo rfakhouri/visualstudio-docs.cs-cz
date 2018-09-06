@@ -11,48 +11,48 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1963502f3940fd0d17c770f111e07de14207e687
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a237664a30dacf351edc048c82d8c9cdc304aa45
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948259"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775887"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Postupy: Změna oboru názvů jazyka specifického pro doménu
-Obor názvů jazyka specifické pro doménu, můžete změnit. Je nutné provést změny v **DSL Explorer**, ve vlastnostech balíčku Dsl projektu a v informací o sestavení.
+Můžete změnit obor názvů jazyka specifického pro doménu. Je nutné provést změny v **Průzkumník DSL**ve vlastnostech projektu balíček Dsl a v informacích o sestavení.
 
-### <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Chcete-li změnit obor názvů jazyka domény
+### <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Chcete-li změnit obor názvů jazyka specifického pro doménu
 
-1.  V **DSL Explorer**, klikněte **Dsl** uzlu.
+1.  V **Průzkumník DSL**, klikněte na tlačítko **Dsl** uzlu.
 
-2.  V **vlastnosti** změňte **Namespace** vlastnost.
+2.  V **vlastnosti** okno Změnit **Namespace** vlastnost.
 
-3.  Uložte řešení a transformace šablony.
+3.  Uložte řešení a transformaci šablon.
 
 4.  Na **projektu** nabídky, klikněte na tlačítko **Dsl vlastnosti**.
 
-     Zobrazit vlastnosti pro váš projekt.
+     Zobrazí vlastnosti pro váš projekt.
 
-5.  Klikněte **aplikace** kartě.
+5.  Klikněte na tlačítko **aplikace** kartu.
 
-6.  Změna **výchozí obor názvů** vlastnost na nový název oboru názvů.
+6.  Změnit **výchozí obor názvů** vlastnost na nový název oboru názvů.
 
-7.  Pokud chcete změnit název sestavení, změňte **vlastnost název sestavení.**
+7.  Pokud chcete změnit název sestavení, změňte **vlastnost názvu sestavení.**
 
 8.  Pokud jste změnili název sestavení, otevřete DslPackage\Package.tt a aktualizovat tento řádek:
 
      `string dslAssembly = "YourDSLassembly.Dsl.dll";`
 
-9. Pokud jste napsali libovolný vlastní kód, nezapomeňte změnit odkazy na obor názvů a třídy v souborech kódu.
+9. Pokud jste napsali žádný vlastní kód, ujistěte se, že chcete-li změnit odkazy na obor názvů a třídy v souboru kódu.
 
-10. Resetovat Visual Studio experimentální instanci.
+10. Resetujte Visual Studio experimentální instanci aplikace.
 
-    1.  Odstranit **\Users\\ ***{name}*** \AppData\Local\Microsoft\VisualStudio\\\*Exp**
+    1.  Odstranit **\Users\\**_{name}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**
 
-    2.  V systému Windows **spustit** nabídce zvolte **všechny programy**, **Microsoft Visual Studio 2010 SDK**, **nástroje**, **resetovat Experimentální instanci**.
+    2.  V Windows **Start** nabídce zvolte **všechny programy**, **Microsoft Visual Studio 2010 SDK**, **nástroje**, **resetovat Experimentální instanci**.
 
 11. Na **sestavení** nabídce zvolte **znovu sestavit řešení**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Glosář nástroje jazyka domény](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

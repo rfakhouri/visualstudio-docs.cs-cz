@@ -14,12 +14,12 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4f0f6c114b6b06f81046df13af64e5fe71dbff98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00cb466fc9859bc36734ee3c42a23190632f39a2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667125"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775178"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definování příkazu nabídky v diagramu modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -254,7 +254,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
   
     1.  V **Průzkumníka řešení**, v místní nabídce projektu VSIX zvolte **otevřít složku v Průzkumníku Windows**.  
   
-    2.  Vyhledejte soubor **bin\\\*\\***YourProject***VSIX.**  
+    2.  Vyhledejte soubor **bin\\\*\\**_YourProject_**VSIX.**  
   
 2.  Kopírovat **VSIX** souboru k cílovému počítači, na kterém chcete nainstalovat rozšíření. To může být vlastní počítač nebo jiný.  
   

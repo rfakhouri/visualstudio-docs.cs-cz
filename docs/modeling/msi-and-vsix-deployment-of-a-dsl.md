@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f25a5e18e78025811e26210de53413b668385539
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 5c8d06e7e06b66f119ad792d3c4fa970645aa886
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566535"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774775"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Nasazení DSL v MSI a VSIX
 Jazyka specifického pro doménu můžete nainstalovat na vlastním počítači nebo v jiných počítačích. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] musí být nainstalována na cílovém počítači.
@@ -36,7 +36,7 @@ Jazyka specifického pro doménu můžete nainstalovat na vlastním počítači 
 
     1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **DslPackage** projektu a pak klikněte na tlačítko **otevřít složku v Průzkumníku Windows**.
 
-    2.  Vyhledejte soubor **bin\\\*\\***YourProject***. DslPackage.vsix**
+    2.  Vyhledejte soubor **bin\\\*\\**_YourProject_**. DslPackage.vsix**
 
 2.  Kopírovat **VSIX** souboru k cílovému počítači, na kterém chcete nainstalovat DSL. To může být vlastní počítač nebo jiný.
 

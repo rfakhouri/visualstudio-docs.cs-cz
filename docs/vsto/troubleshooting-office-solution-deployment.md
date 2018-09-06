@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f125a2b8a62690cd31d53d145ea9d7b1e54a3ce
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40009049"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774650"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Řešení potíží s nasazením řešení pro systém Office
   Toto téma obsahuje informace o tom, jak řešit běžné problémy, které se mohou vyskytnout při nasazení řešení Office.  
@@ -72,7 +72,7 @@ ms.locfileid: "40009049"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Chcete-li stáhnout sestavení namísto načítání kopie v mezipaměti  
   
-1.  V panelu nabídky zvolte **projektu**, * ProjectName ***vlastnosti**.  
+1.  V panelu nabídky zvolte **projektu**, _ProjectName_**vlastnosti**.  
   
 2.  Na **aplikace** zvolte **informace o sestavení**.  
   

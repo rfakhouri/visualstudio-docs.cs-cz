@@ -13,12 +13,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 893d851286002c9682e969dcb989be30ed350d70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bf0581ac11e97bf5543c0d17e8f665091babbd7
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667382"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775172"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Používání atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Nejnovější verzi tohoto tématu můžete najít v [pomocí atributu Microsoft
   
 Toto téma obsahuje seznam veřejných členů náležících `Microsoft::VisualStudio::CppUnitTestFramework` oboru názvů.  
   
- Soubory hlaviček jsou umístěny v *VisualStudio2012 [x 86] InstallFolder *** \VC\UnitTest\include** složku.  
+ Soubory hlaviček jsou umístěny v _VisualStudio2012 [x 86] InstallFolder_**\VC\UnitTest\include** složky.  
   
- Lib – soubory jsou umístěny v *VisualStudio2012 [x 86] InstallFolder *** \VC\UnitTest\lib** složku.  
+ Lib – soubory jsou umístěny v _VisualStudio2012 [x 86] InstallFolder_**\VC\UnitTest\lib** složky.  
   
 ##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  

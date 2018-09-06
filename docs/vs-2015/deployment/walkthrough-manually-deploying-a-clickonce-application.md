@@ -26,12 +26,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: fabaa757c39ccea3de545b6dde9483b1fbc854de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8f93b6d7f55659cc614969dcc1c8b8dd93ccf73
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666020"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775534"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Návod: Ruční nasazení aplikace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,7 +181,7 @@ Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../
   
 17. Na **název** kartu, zadejte název a verzi číslo pro toto nasazení (**1.0.0.0** v tomto příkladu). Také určit, **procesoru** , která je sestavená vaše aplikace, jako je například x86.  
   
-18. Vyberte **popis** kartu a zadejte hodnoty pro **vydavatele** a **produkt *** t**. (**Produktu** je název zadaný pro vaše aplikace v nabídce Windows Start při instalaci aplikace na klientském počítači pro použití v offline režimu.)  
+18. Vyberte **popis** kartu a zadejte hodnoty pro **vydavatele** a **produktu**. (**Produktu** je název zadaný pro vaše aplikace v nabídce Windows Start při instalaci aplikace na klientském počítači pro použití v offline režimu.)  
   
 19. Vyberte **možnosti nasazení** kartu a v **počáteční umístění** textové pole, zadejte umístění manifestu aplikace na webovém serveru nebo sdílené složky. Například \\\myServer\myShare\AppToDeploy.application.  
   

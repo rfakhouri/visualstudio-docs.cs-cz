@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bda1db0b3c20cdbeeb35f8ce0af6478a2a4f62c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1407b0ca77ea6f19bc6f6f165d5524c305b69d0f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666362"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774719"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Postupy: Změna oboru názvů jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Můžete změnit obor názvů jazyka specifického pro doménu. Je nutné prové
   
 10. Resetujte Visual Studio experimentální instanci aplikace.  
   
-    1.  Odstranit **\Users\\ ***{name}*** \AppData\Local\Microsoft\VisualStudio\\\*Exp**  
+    1.  Odstranit **\Users\\**_{name}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
   
     2.  V Windows **Start** nabídce zvolte **všechny programy**, **Microsoft Visual Studio 2010 SDK**, **nástroje**, **resetovat Experimentální instanci**.  
   

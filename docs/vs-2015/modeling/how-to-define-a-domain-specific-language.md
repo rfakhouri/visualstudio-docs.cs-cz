@@ -21,12 +21,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 54741dedf1acd37b0ff577b426b6dbd2237ac9c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a6d8e38231de3877f4b9f4087b98fa6582f7c21
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673020"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775600"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +122,7 @@ Do definice jazyka specifického pro doménu (DSL), můžete vytvořit [!INCLUDE
   
 -   Kořenová třída se zobrazí v levém horním rohu diagramem definice DSL, v části **třídám a vztahům**. Přejmenujte ho na název liší od DSL. Například s názvem DSL **MusicLibrary** může mít kořenová třída s názvem **Hudba**.  
   
--   Diagram tříd se zobrazí v pravém dolním rohu diagramem definice DSL, v **elementů diagramu** sloupce. Budete muset posunout doprava a prohlédněte si ho. Je obvykle pojmenována * YourDsl ***Diagram**.  
+-   Diagram tříd se zobrazí v pravém dolním rohu diagramem definice DSL, v **elementů diagramu** sloupce. Budete muset posunout doprava a prohlédněte si ho. Je obvykle pojmenována _YourDsl_**Diagram**.  
   
 -   Pokud jste použili **tok úkolů** šablony a chcete vytvářet diagramy s plaveckých drah, udržovat a přejmenování objektu Actor doménovou třídu a obrazec ActorSwimlane.  
   
@@ -223,11 +223,11 @@ Do definice jazyka specifického pro doménu (DSL), můžete vytvořit [!INCLUDE
   
 2.  **Sestavte a spusťte DSL.** Stisknutím klávesy F5 nebo CTRL + F5, aby se spustil novou instanci třídy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] v experimentálním režimu. V experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otevření nebo vytvoření souboru, který má příponu názvu souboru tohoto kódu DSL.  
   
-3.  **Otevřete Průzkumníka.** Na straně diagramu je okno Průzkumníka jazyk, který se obvykle nazývá *YourLanguage* Explorer. Pokud se toto okno nezobrazí, může být na kartě pod Průzkumníku řešení. Pokud nemůžete najít to, na **zobrazení** nabídky, přejděte k **ostatní Windows**a potom klikněte na * YourLanguage ***Explorer**.  
+3.  **Otevřete Průzkumníka.** Na straně diagramu je okno Průzkumníka jazyk, který se obvykle nazývá *YourLanguage* Explorer. Pokud se toto okno nezobrazí, může být na kartě pod Průzkumníku řešení. Pokud nemůžete najít to, na **zobrazení** nabídky, přejděte k **ostatní Windows**a potom klikněte na tlačítko _YourLanguage_**Explorer**.  
   
      Aplikace explorer představuje stromové zobrazení modelu.  
   
-4.  **Vytvořte nové elementy.** Klikněte pravým tlačítkem na kořenový uzel v horní části a potom klikněte na **přidat nový *** YourClass*.  
+4.  **Vytvořte nové elementy.** Klikněte pravým tlačítkem na kořenový uzel v horní části a potom klikněte na tlačítko **přidat nový**_YourClass_.  
   
      Ve svém jazyce Průzkumníka se zobrazí novou instanci třídy.  
   
@@ -242,7 +242,7 @@ Do definice jazyka specifického pro doménu (DSL), můžete vytvořit [!INCLUDE
   
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Chcete-li definovat třídu prvků, které se zobrazí jako tvary v diagramu  
   
-1.  **Definování a otestovat doménovou třídu, jak je popsáno v**[definování doménovými třídami](#classes) **.**   
+1.  **Definování a otestovat doménovou třídu, jak je popsáno v**[definování doménovými třídami](#classes) **.**  
   
     -   Kořenová třída by měla být nadřazené třídu. To znamená by měl být vztah obsažení mezi kořenové třídy a nové domény.  
   
@@ -623,7 +623,7 @@ Do definice jazyka specifického pro doménu (DSL), můžete vytvořit [!INCLUDE
 |V Průzkumníku DSL nelze přidat do kolekce. Například když mám klikněte pravým tlačítkem na nástroje, neexistuje žádný příkaz "Přidat nástroj" v nabídce.<br /><br /> V Průzkumníku pro tento DSL nelze přidat element do seznamu.|Klikněte pravým tlačítkem na položku nad uzel, který se pokoušíte. Pokud chcete přidat do seznamu, je příkaz Přidat není v seznamu uzlu, ale jeho vlastník.|  
 |Jsem vytvořil doménovou třídou, ale nejde mi vytvořit instance v Průzkumníku jazyka.|Každá třída domény s výjimkou kořenové musí být cílem vztah obsažení.|  
 |V Průzkumníku pro tento DSL prvky jsou zobrazeny pouze s jejich názvů typů.|V definici DSL vyberte doménovou vlastnost třídy a ve vlastnostech okno, nastavte **je název elementu** na hodnotu true.|  
-|Moje DSL vždy otevře v editoru XML.|To může nastat z důvodu chyby při při čtení souboru. Ale i poté, co je opravit tuto chybu, je nutné explicitně obnovit editoru návrháře DSL.<br /><br /> Klikněte pravým tlačítkem na položku projektu, klikněte na tlačítko **otevřít v** a vyberte * YourLanguage ***návrháře (výchozí)**.|  
+|Moje DSL vždy otevře v editoru XML.|To může nastat z důvodu chyby při při čtení souboru. Ale i poté, co je opravit tuto chybu, je nutné explicitně obnovit editoru návrháře DSL.<br /><br /> Klikněte pravým tlačítkem na položku projektu, klikněte na tlačítko **otevřít v** a vyberte _YourLanguage_**návrháře (výchozí)**.|  
 |Panel nástrojů DSL, své nezobrazuje po změně názvy sestavení.|Zkontrolovat a aktualizovat **DslPackage\GeneratedCode\Package.tt** Další informace najdete v tématu [postupy: Změna Namespace jazyka specifického pro doménu](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
 |Nástrojů DSL, své nezobrazí, ale I nedošlo ke změně názvu sestavení.<br /><br /> Nebo se zobrazí okno se zprávou, vytváření sestav selhání při načítání rozšíření.|Resetovat experimentální instanci a znovu sestavte své řešení.<br /><br /> 1.  V Windows nabídky Start, v části **všechny programy**, rozbalte [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)], pak **nástroje**a potom klikněte na tlačítko **resetování Microsoft Visual Studio experimentální instanci aplikace**.<br />2.  Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.|  
   

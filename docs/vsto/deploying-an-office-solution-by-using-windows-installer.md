@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2549f8646d5289925a45737d8d5b2e7707ea301f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 58d41395a7abd05b5bce353655f9149b7a2fbd44
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382808"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775711"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Nasazení řešení Office s použitím Instalační služby systému Windows
 Zjistěte, jak vytvořit instalační program Windows pro řešení Office s použitím [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -141,7 +141,7 @@ Můžete nakonfigurovat **OfficeAddInSetup** projektu pro zahrnutí výstupu pro
   
 3. V dolní části **Pomocník projektu** zvolte **soubory aplikace** tlačítko, které ukazuje následující obrázek.  
   
-   ![Tlačítko soubory aplikace. ] (../vsto/media/installshield-applicationfiles.png "Tlačítko soubory aplikace.")  
+   ![Tlačítko soubory aplikace. ](../vsto/media/installshield-applicationfiles.png "Tlačítko soubory aplikace.")  
   
 4. V **soubory aplikace** zvolte **přidat výstupy projektu** tlačítko.  
   
@@ -161,7 +161,7 @@ Můžete nakonfigurovat **OfficeAddInSetup** projektu pro zahrnutí výstupu pro
   
    **Soubory aplikace** stránka nyní obsahuje výstupní soubor projektu, manifest nasazení a manifest aplikace, jako ukazuje následující obrázek.  
   
-   ![Výstupní soubory projektu instalace. ] (../vsto/media/installshield-outputfiles.png "Výstupních souborů projektu instalace.")  
+   ![Výstupní soubory projektu instalace. ](../vsto/media/installshield-outputfiles.png "Výstupních souborů projektu instalace.")  
   
   
 ## <a name="Configure"></a>Konfigurace závislých součástí jako předpokladů  
@@ -252,7 +252,7 @@ Váš instalační program musí obsahovat nejen následující součásti, ale 
   
 11. V **Redistributable** stránce projektu InstallShield klikněte na tlačítko **aktualizovat** tak aktualizujte seznam distribuovatelných součástí, jako je vidět na následujícím obrázku.  
   
-   ![Tlačítko Aktualizovat. ] (../vsto/media/installshield-refreshbutton.png "Tlačítko Aktualizovat.")  
+   ![Tlačítko Aktualizovat. ](../vsto/media/installshield-refreshbutton.png "Tlačítko Aktualizovat.")  
   
 12. V seznamu distribuovatelných součástí, vyberte **Visual Studio 2010 Tools for Office Runtime** zaškrtávací políčko.  
   
@@ -309,7 +309,7 @@ Uživatelské instalace vyžadují pouze jeden instalační program bez ohledu n
   
 2. V dolní části **Pomocník projektu** zvolte **registr aplikace** tlačítko, které ukazuje následující obrázek.  
   
-   ![Tlačítko aplikace registru. ] (../vsto/media/installshield-applicationregistry.gif "Tlačítko registru aplikace.")  
+   ![Tlačítko aplikace registru. ](../vsto/media/installshield-applicationregistry.gif "Tlačítko registru aplikace.")  
   
    **Registr aplikace** se zobrazí stránka.  
   
@@ -447,7 +447,7 @@ Chcete-li upravit vlastní vlastnosti, vytvořte program, který se odebere z do
   
 3. V dolní části **Pomocník projektu** zvolte **soubory aplikace** tlačítko, které ukazuje následující obrázek.  
   
-   ![Tlačítko soubory aplikace. ] (../vsto/media/installshield-applicationfiles.png "Tlačítko soubory aplikace.")  
+   ![Tlačítko soubory aplikace. ](../vsto/media/installshield-applicationfiles.png "Tlačítko soubory aplikace.")  
   
 4. V **soubory aplikace** zvolte **přidat výstupy projektu** tlačítko.  
   
@@ -526,7 +526,7 @@ Chcete-li upravit vlastní vlastnosti, vytvořte program, který se odebere z do
   
 9. V panelu nabídky zvolte **sestavení** > **sestavit OfficeAddInSetup**.  
   
-   Po dokončení sestavení můžete najít *setup.exe* soubor **OfficeAddInSetup** projektu v následujícím umístění: *OfficeAddInSetupProjectRoot *** \OfficeAddInSetup\ Express\SingleImage\DiskImages\DISK1\**  
+   Po dokončení sestavení můžete najít *setup.exe* soubor **OfficeAddInSetup** projektu v následujícím umístění: _OfficeAddInSetupProjectRoot_ * *\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
   
   
 ## <a name="see-also"></a>Viz také:  
