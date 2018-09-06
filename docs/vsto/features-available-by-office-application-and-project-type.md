@@ -1,5 +1,5 @@
 ---
-title: Zadejte dostupné funkce podle aplikace Office a projektu
+title: Zadejte dostupné funkce podle aplikace systému Office a projektu
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,54 +22,55 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4b0c4ea5ec07fec187c5fa377239cdec2ccceb5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 2bbb0aad4db91119c3754a27cc5410769b494e65
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675859"
 ---
-# <a name="features-available-by-office-application-and-project-type"></a>Zadejte dostupné funkce podle aplikace Office a projektu
+# <a name="features-available-by-office-application-and-project-type"></a>Zadejte dostupné funkce podle aplikace systému Office a projektu
   Visual Studio obsahuje několik typů šablon projektů, které podporují různé obchodní scénáře pro aplikace Microsoft Office, včetně následujících typů:  
   
--   Úpravy na úrovni dokumentů.  
+-   Přizpůsobení na úrovni dokumentu.  
   
--   Doplňků VSTO.  
+-   Doplňky VSTO.  
   
- Ne všechny aplikace mohou používat každý typ projektu. Například projekty na úrovni dokumentu jsou k dispozici pouze pro aplikace Microsoft Office Word a Microsoft Office Excel. Podobně některé funkce jsou dostupné pouze pro určité typy projektů nebo aplikace. Například v podokně Akce je dostupná jenom v projektech na úrovni dokumentu a jsou dostupná jenom pro některé aplikace pásu karet rozšíření. Další informace o typech jiný projekt, najdete v části [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ Ne všechny aplikace mohou používat každý typ projektu. Například projekty na úrovni dokumentu jsou k dispozici pouze pro aplikace Microsoft Office Word a Microsoft Office Excel. Podobně některé funkce jsou dostupné jenom pro některé typy projektů nebo aplikace. Například v podokně Akce je dostupná jenom v projektech na úrovni dokumentu a pásu karet rozšíření jsou k dispozici jenom pro některé aplikace. Další informace o typech jiný projekt, naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 > [!NOTE]  
->  Šablony projektů Office jsou k dispozici pouze v některých edicích [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
+>  Šablony projektů pro Office jsou k dispozici pouze v některých edicích [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
 ## <a name="project-types-available-for-different-microsoft-office-applications"></a>Typy projektů, které jsou k dispozici pro různé aplikace Microsoft Office  
- V následující tabulce jsou aplikace, které může používat pro každý typ projektu.  
+ V následující tabulce jsou uvedeny aplikace, které můžete použít s jednotlivými typu projektu.  
   
 |Typy projektů|Aplikace Microsoft Office|  
 |-------------------|----------------------------------|  
 |Přizpůsobení na úrovni dokumentu|Excel<br /><br /> Word|  
-|Doplňků VSTO|Excel<br /><br /> InfoPath (InfoPath 2013 a InfoPath 2010 pouze)<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Visio<br /><br /> Word<br /><br /> Excel|  
+|Doplňky VSTO|Excel<br /><br /> InfoPath (InfoPath 2013 a InfoPath 2010 jenom)<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Visio<br /><br /> Word<br /><br /> Excel|  
   
 ## <a name="features-available-in-different-project-types"></a>Funkce, které jsou k dispozici v různých typech projektů  
- Následující tabulka uvádí, které typy projektů zadejte každou funkci.  
+ Následující tabulka uvádí, které typy projektů poskytují jednotlivé funkce.  
   
 |Funkce|Typy projektů, které poskytují funkce|Další čtení|  
 |-------------|--------------------------------------------|---------------------|  
 |Podokna akcí.|Projekty na úrovni dokumentu.|[Přehled podokna akcí](../vsto/actions-pane-overview.md)|  
-|ClickOnce – nasazení.|Projekty na úrovni dokumentu a VS.|[Nasazení řešení Office](../vsto/deploying-an-office-solution.md)|  
-|Vlastní podokna úloh.|Add-in projekty doplňku VSTO v následujících aplikacích:<br /><br /> -Aplikace Excel<br />-InfoPath (InfoPath 2013 a InfoPath 2010 pouze)<br />-Outlook<br />-PowerPoint<br />-Word|[Vlastní podokna úloh](../vsto/custom-task-panes.md)|  
-|Vlastní části XML.|Projekty na úrovni dokumentu.<br /><br /> Aplikace úrovně projekty pro následující aplikace:<br /><br /> -Aplikace Excel<br />-PowerPoint<br />-Word|[Přehled vlastních částí XML](../vsto/custom-xml-parts-overview.md)|  
+|ClickOnce – nasazení.|VS a projekty na úrovni dokumentu.|[Nasazení řešení Office](../vsto/deploying-an-office-solution.md)|  
+|Vlastní podokna úloh.|Add-in projekty VSTO v následujících aplikacích:<br /><br /> – Excel<br />-InfoPath (InfoPath 2013 a InfoPath 2010 jenom)<br />-Aplikace outlook<br />-PowerPoint<br />-Aplikace Word|[Vlastní podokna úloh](../vsto/custom-task-panes.md)|  
+|Vlastní části XML.|Projekty na úrovni dokumentu.<br /><br /> Aplikace projekty na úrovni v následujících aplikacích:<br /><br /> – Excel<br />-PowerPoint<br />-Aplikace Word|[Přehled vlastních částí XML](../vsto/custom-xml-parts-overview.md)|  
 |Datové mezipaměti.|Projekty na úrovni dokumentu.|[Data uložená v mezipaměti v přizpůsobeních na úrovni dokumentu](../vsto/cached-data-in-document-level-customizations.md)|  
-|Vystavení objektu VSTO Add-in do jiných řešení pro Microsoft Office.|Add-in projekty VSTO.|[Volání kódu v doplňcích VSTO z jiných řešení pro systém Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
-|Následující hostitelské ovládací prvky:<br /><br /> -Grafu<br />-ListObject<br />-NamedRange<br />-Ovládací prvky obsahu<br />– Záložka|Projekty na úrovni dokumentu.<br /><br /> Add-in projekty VSTO pro Word a Excel.|[Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)|  
-|Následující hostitelské ovládací prvky:<br /><br /> – Xmlmappedrange –<br />– XmlNode –<br />– XmlNodes –|Projekty na úrovni dokumentu.|[Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)|  
-|Vícenásobného projektu nasazení.|Projekty na úrovni dokumentu.<br /><br /> Add-in projekty VSTO.|[Návod: Nasazení více řešení pro systém Office v jedné instalaci ClickOnce](http://msdn.microsoft.com/en-us/051223c0-4082-4799-b78b-a4763a9def55)|  
+|Vystavení objektu v doplňku VSTO pro ostatní řešení pro Microsoft Office.|Add-in projekty VSTO.|[Volání kódu v doplňcích VSTO z jiných řešení pro Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
+|Následující hostitelské ovládací prvky:<br /><br /> -Grafu<br />-ListObject<br />-NamedRange<br />– Ovládací prvky obsahu<br />– Záložky|Projekty na úrovni dokumentu.<br /><br /> Add-in projekty VSTO pro Word a Excel.|[Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)|  
+|Následující hostitelské ovládací prvky:<br /><br /> – Xmlmappedrange –<br />-XMLNode<br />– XmlNodes –|Projekty na úrovni dokumentu.|[Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)|  
+|Nasazení více projekty.|Projekty na úrovni dokumentu.<br /><br /> Add-in projekty VSTO.|[Návod: Nasazení více řešení pro systém Office v jeden instalační program ClickOnce](http://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Oblastí formulářů aplikace Outlook.|Add-in projekty VSTO pro Outlook.|[Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)|  
-|Akce po nasazení.|Projekty na úrovni dokumentu.<br /><br /> Add-in projekty VSTO.|[Návod: Zkopírujte dokumentu do počítače koncového uživatele po instalaci ClickOnce](http://msdn.microsoft.com/en-us/100090f7-bc63-4152-b3e1-19b48bc27466)|  
-|Přizpůsobení pásu karet.|Projekty na úrovni dokumentu.<br /><br /> Add-in projekty doplňku VSTO v následujících aplikacích:<br /><br /> -Aplikace Excel<br />-InfoPath (InfoPath 2013 a InfoPath 2010 pouze)<br />-Outlook<br />-PowerPoint<br />-Projektu<br />-Aplikace Visio<br />-Word|[Přehled pásu karet](../vsto/ribbon-overview.md)|  
-|Návrhář Visual dokumentu.|Projekty na úrovni dokumentu.|[Projekty Office v prostředí Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|  
+|Akce po nasazení.|Projekty na úrovni dokumentu.<br /><br /> Add-in projekty VSTO.|[Návod: Zkopírujte dokument do počítače koncového uživatele po dokončení instalace ClickOnce](http://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|Přizpůsobení pásu karet.|Projekty na úrovni dokumentu.<br /><br /> Add-in projekty VSTO v následujících aplikacích:<br /><br /> – Excel<br />-InfoPath (InfoPath 2013 a InfoPath 2010 jenom)<br />-Aplikace outlook<br />-PowerPoint<br />– Projekt<br />-Aplikace Visio<br />-Aplikace Word|[Přehled pásu karet](../vsto/ribbon-overview.md)|  
+|Návrhář Visual dokumentu.|Projekty na úrovni dokumentu.|[Projekty pro Office v prostředí Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Přehled podokna akcí](../vsto/actions-pane-overview.md)   
  [Přehled pásu karet](../vsto/ribbon-overview.md)   
  [Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)   

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: d1458fc07bf90257ae2cc6f404d5d0661df01c18
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624173"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995960"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Vytvoření aplikace Django s zobrazení a šablony
 
@@ -53,7 +53,7 @@ Pomocí některé z metod, vytvořte aplikaci s názvem "HelloDjangoApp". Výsle
 | **\_\_init\_\_.py** | Soubor, který identifikuje aplikaci jako balíček. |
 | **Migrace** | Složka, ve které ukládá Django skripty, které aktualizace databáze pro zarovnání se změnami na modely. Nástroje pro migraci na Django následně použít potřebné změny jakékoli předchozí verze databáze tak, aby odpovídalo aktuální modely. Pomocí migrace, zachovat fokus na modely a nechat Django zpracování základní schéma databáze. Migrace jsou popsané v kroku 6. Prozatím jednoduše složka obsahuje  *\_ \_init\_\_.py* souboru (to znamená, že složka definuje vlastní balíček Pythonu). |
 | **Šablony** | Složka pro stránku šablon Django, které obsahují jeden soubor *index.html* ve složce odpovídající název aplikace. (Ve verzi Visual Studio 2017 15.7 a dřívějších verzí souboru je obsažen přímo pod *šablony* a krok 2 – 4 dává pokyn k vytvoření podsložku.) Šablony jsou bloky jazyka HTML, do kterého zobrazení můžete přidat informace, které dynamicky vykreslení stránky. Například stránka šablony "proměnné" `{{ content }}` v *index.html*, jsou zástupné symboly pro dynamické hodnoty, jak je popsáno dále v tomto článku (krok 2). Aplikace Django obvykle vytvoříte obor názvů pro své šablony tak, že je umístíte do podsložky, která odpovídá názvu aplikace. |
-| **Admin.PY** | Soubor Pythonu, ve kterém je rozšíření aplikace s vaší správy rozhraní (viz krok 6), která je využívána k zobrazení a úprava dat v databázi. Na začátku tento soubor obsahuje pouze příkaz `from django.contrib import admin`. Ve výchozím nastavení, Django obsahuje standardní rozhraní pro správu prostřednictvím položky v projektu Django *settings.py* soubor, který můžete zapnout tak odstraňuje se komentování existující položky v *urls.py*. |
+| **Admin.PY** | Soubor Pythonu, ve kterém je rozšíření aplikace s vaší správy rozhraní (podívejte se na krok 6), který se používá k naplnit a upravovat data v databázi. Na začátku tento soubor obsahuje pouze příkaz `from django.contrib import admin`. Ve výchozím nastavení, Django obsahuje standardní rozhraní pro správu prostřednictvím položky v projektu Django *settings.py* soubor, který můžete zapnout tak odstraňuje se komentování existující položky v *urls.py*. |
 | **Apps.PY** | Soubor Pythonu, který definuje třídu konfigurace pro aplikaci (viz následující za touto tabulkou). |
 | **models.PY** | Modely jsou datové objekty identifikovaný funkce, pomocí kterých zobrazení interakci s databází základní aplikace (podívejte se na krok 6). Django poskytuje úroveň připojení databáze tak, aby aplikace nemusíte starat tyto podrobnosti. *Models.py* souboru je výchozí místo, ve kterém chcete vytvořit vlastní modely a zpočátku obsahuje pouze příkaz `from django.db import models`. |
 | **Tests.PY** | Soubor Pythonu, který obsahuje základní struktura testů jednotek. |

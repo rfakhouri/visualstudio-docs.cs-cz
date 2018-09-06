@@ -20,72 +20,72 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7436bbb7ce904f8c969652e3f4ff0a794116c9c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8f836662b9dfe4df8e45e24a7210664b8cecd49e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692704"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675702"
 ---
 # <a name="powerpoint-solutions"></a>Řešení pro aplikaci PowerPoint
-  Visual Studio poskytuje šablony projektů, které můžete použít k vytvoření doplňků VSTO pro Microsoft Office PowerPoint. Doplňků VSTO můžete automatizovat PowerPointu, rozšířit funkce aplikace nebo si přizpůsobit PowerPoint uživatelské rozhraní (UI).  
+  Visual Studio poskytuje šablony projektu, které slouží k vytváření doplňků VSTO pro Microsoft Office PowerPoint. Doplňky VSTO slouží k automatizaci aplikace PowerPoint, rozšířit funkce aplikace nebo přizpůsobení uživatelského rozhraní (UI) aplikace PowerPoint.  
   
- Další informace o doplňků VSTO najdete v tématu [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md) a [architektura VSTO doplňky](../vsto/architecture-of-vsto-add-ins.md). Pokud jste ještě programování s Microsoft Office, najdete v části [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
+ Další informace o doplňcích VSTO najdete v tématu [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md) a [doplňků VSTO architektura](../vsto/architecture-of-vsto-add-ins.md). Pokud začínáte programování v jazyce Microsoft Office, přečtěte si téma [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
   
 > [!NOTE]  
->  Máte zájem o vývoji řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na [Office Add in modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky Office mají malé nároky ve srovnání s doplňků VSTO a řešení a můžete je vytvořit pomocí téměř jakoukoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.  
+>  Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak vytvořit I:-in pro aplikaci Microsoft PowerPoint?](http://go.microsoft.com/fwlink/?LinkId=132767).  
+ ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak mohu: vytvořit doplněk pro aplikaci Microsoft PowerPoint?](http://go.microsoft.com/fwlink/?LinkId=132767).  
   
-## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>PowerPoint automatizovat pomocí objektového modelu PowerPoint  
- Objektový model PowerPoint zpřístupní mnoho typů, které můžete použít k automatizaci PowerPoint. Tyto typy umožňují napsat kód k provádění běžných úloh:  
+## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>Pomocí aplikace PowerPoint objektového modelu automatizace aplikace PowerPoint  
+ Objektový model aplikace PowerPoint poskytuje mnoho typů, které můžete použít k automatizaci aplikace PowerPoint. Tyto typy umožňují také napsat kód k provedení běžných úloh:  
   
--   Prostřednictvím kódu programu vytvořte a naformátujte prezentací.  
+-   Programově vytvářet a formátovat prezentace.  
   
--   Přidat nebo odebrat snímky z prezentací.  
+-   Přidat nebo odebrat snímky z prezentace.  
   
--   Přidat nebo změnit tvary na snímku.  
+-   Přidejte nebo změňte tvary na snímku.  
   
- Pro přístup k modelu objektu PowerPoint z doplňku VSTO, použijte `Application` pole z `ThisAddIn` třídy ve vašem projektu. `Application` Pole vrátí <xref:Microsoft.Office.Interop.PowerPoint.Application> objekt, který představuje aktuální instanci aplikace PowerPoint. Další informace najdete v tématu [Program VSTO doplňků](../vsto/programming-vsto-add-ins.md).  
+ Pro přístup k modelu objektů aplikace PowerPoint z doplňku VSTO, použijte `Application` pole `ThisAddIn` třídu ve vašem projektu. `Application` Pole vrátí <xref:Microsoft.Office.Interop.PowerPoint.Application> objekt, který představuje aktuální instanci aplikace PowerPoint. Další informace najdete v tématu [Program doplňků VSTO](../vsto/programming-vsto-add-ins.md).  
   
- Při volání do modelu objektu PowerPoint použijete typy, které jsou uvedeny v primární spolupracující sestavení pro PowerPoint. Primární spolupracující sestavení pracuje jako most mezi spravovaného kódu v doplňku VSTO a objektového modelu COM v aplikaci PowerPoint. Všechny typy v sestavení primární spolupráce PowerPoint jsou definovány v <xref:Microsoft.Office.Interop.PowerPoint> oboru názvů. Další informace o primární spolupracující sestavení najdete v tématu [přehled vývoje řešení pro systém Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) a [primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md).  
+ Při volání do objektového modelu aplikace PowerPoint, použijte typy, které jsou k dispozici ve primárního spolupracujícího sestavení pro aplikaci PowerPoint. Primární spolupracující sestavení funguje jako most mezi spravovaného kódu v doplňku VSTO a com – objektový model v PowerPointu. Všechny typy v primární spolupracující sestavení PowerPoint jsou definovány v <xref:Microsoft.Office.Interop.PowerPoint> oboru názvů. Další informace o primárních sestavení vzájemné spolupráce naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) a [primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md).  
   
-##  <a name="WordOMDocumentation"></a> Pomocí dokumentace PowerPoint objekt modelu  
- Úplné informace o objektu modelu PowerPoint najdete odkaz na aplikaci PowerPoint primární spolupracující sestavení (PIA) a reference VBA objektu modelu.  
+##  <a name="WordOMDocumentation"></a> Pomocí dokumentace modelu objektu aplikace PowerPoint  
+ Úplné informace o objektovém modelu aplikace PowerPoint mohou odkazovat na primární sestavení vzájemné spolupráce (PIA) odkaz na aplikaci PowerPoint a referenční dokumentace objektového modelu VBA.  
   
-### <a name="primary-interop-assembly-reference"></a>Odkaz sestavení primární spolupráce  
- PowerPoint PIA referenční dokumentaci k nástroji popisuje typy v sestavení primární spolupráce pro PowerPoint. Tato dokumentace je k dispozici z následujícího umístění: [referenční primární spolupracující sestavení PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+### <a name="primary-interop-assembly-reference"></a>Odkaz na primární spolupracující sestavení  
+ Referenční dokumentaci PowerPoint PIA popisují typy ve primárního spolupracujícího sestavení pro aplikaci PowerPoint. Tato dokumentace je k dispozici z následujícího umístění: [odkaz na primární spolupracující sestavení PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
- Další informace o návrhu PowerPoint PIA, jako jsou rozdíly mezi třídy a rozhraní v primární a jak jsou implementované události v primární, najdete v části [přehled třídy a rozhraní v primární spolupracující sestavení sady Office ](http://go.microsoft.com/fwlink/?LinkId=199885).  
+ Další informace o návrhu aplikace PowerPoint PIA, jako jsou rozdíly mezi třídami a rozhraní v PIA a jak jsou implementované událostí v PIA, naleznete v tématu [přehled třídy a rozhraní v primární spolupracující sestavení Office ](http://go.microsoft.com/fwlink/?LinkId=199885).  
   
-### <a name="vba-object-model-reference"></a>Odkaz na objekt modelu VBA  
- Reference objektu modelu VBA dokumenty PowerPoint objektový model, jako je zpřístupněné pro Visual Basic pro aplikace (VBA) kód. Další informace najdete v tématu [PowerPoint 2010 odkaz na objekt modelu](http://go.microsoft.com/fwlink/?LinkId=199770)  
+### <a name="vba-object-model-reference"></a>Referenční dokumentace objektového modelu VBA  
+ Referenční dokumentace objektového modelu VBA dokumenty objektový model aplikace PowerPoint, protože je vystavena do jazyka Visual Basic pro kód Applications (VBA). Další informace najdete v tématu [referenční dokumentace objektového modelu aplikace PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=199770)  
   
- Všechny objekty a členy ve model odkaz na VBA odpovídají typy a členy v primární spolupracující sestavení PowerPoint (PIA –). Například objekt prezentace v modelu odkaz na VBA odpovídá <xref:Microsoft.Office.Interop.PowerPoint.Presentation> typu v PowerPoint PIA. I když reference VBA objektu modelu poskytuje příklady kódu pro většinu vlastností, metod a událostí, pokud chcete používat v projektu doplňku VSTO v PowerPointu, který vytvoříte pomocí musí překládat VBA kód v této referenci na Visual Basic a Visual C# Visual Studio.  
+ Všechny objekty a členy v referenční dokumentace objektového modelu VBA odpovídají typy a členy v primární spolupracující sestavení PowerPoint (PIA). Například objekt prezentace v referenční dokumentace objektového modelu VBA odpovídá <xref:Microsoft.Office.Interop.PowerPoint.Presentation> typ v PowerPointu PIA. I když referenční dokumentace objektového modelu VBA poskytuje příklady kódu pro většinu vlastnosti, metody a události, pokud chcete použít v projektu doplňku VSTO pro PowerPoint, kterou vytvoříte pomocí musí překládat kód VBA v této referenční dokumentace jazyka Visual Basic nebo Visual C# Visual Studio.  
   
 ## <a name="customize-the-user-interface-of-powerpoint"></a>Přizpůsobení uživatelského rozhraní aplikace PowerPoint  
- PowerPoint uživatelského rozhraní můžete upravit následujícím způsobem.  
+ Uživatelské rozhraní PowerPointu můžete upravit následujícími způsoby.  
   
 |Úloha|Další informace|  
 |----------|--------------------------|  
 |Vytvoření vlastního podokna úloh.|[Vlastní podokna úloh](../vsto/custom-task-panes.md)|  
-|Přidáte vlastní karty na pásu karet.|[Přehled pásu karet](../vsto/ribbon-overview.md)|  
-|Přidáte vlastní skupiny do předdefinované karty na pásu karet.|[Postupy: Přizpůsobení předdefinované karty](../vsto/how-to-customize-a-built-in-tab.md)|  
+|Přidáte vlastní karty na pás karet.|[Přehled pásu karet](../vsto/ribbon-overview.md)|  
+|Přidejte vlastní skupiny do předdefinované karty na pásu karet.|[Postupy: Přizpůsobení předdefinované karty](../vsto/how-to-customize-a-built-in-tab.md)|  
   
- Další informace o přizpůsobení uživatelského rozhraní PowerPoint a další aplikace Microsoft Office, najdete v části [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).  
+ Další informace o přizpůsobení uživatelského rozhraní PowerPointu a další aplikace Microsoft Office, naleznete v tématu [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).  
   
 ## <a name="see-also"></a>Viz také:  
- [Návod: Vytvoření vaší první Add-in VSTO pro PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
+ [Návod: Vytvoření vašeho prvního doplňku VSTO pro PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
  [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Program doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Postupy: vytváření projektů pro systém Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
  [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)   
- [Primární spolupracující sestavení sady Office](../vsto/office-primary-interop-assemblies.md)   
- [Přizpůsobení uživatelského rozhraní sady Office](../vsto/office-ui-customization.md)   
- [PowerPoint 2010 v vývoj pro Office](http://go.microsoft.com/fwlink/?LinkId=199015)  
+ [Primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md)   
+ [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)   
+ [PowerPoint 2010 ve vývoji Office](http://go.microsoft.com/fwlink/?LinkId=199015)  
   
   

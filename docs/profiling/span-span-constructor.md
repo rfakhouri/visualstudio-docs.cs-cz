@@ -1,5 +1,5 @@
 ---
-title: span::span – konstruktor | Microsoft Docs
+title: span::span – konstruktor | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afd383dfd03a1e4e0a2ca9c377ce372d1586c738
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 9fe89b289601775fad8c102e696e799edce1c50c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676600"
 ---
 # <a name="spanspan-constructor"></a>span::span – konstruktor
 Inicializuje novou instanci třídy `span` třídy.  
@@ -54,21 +55,21 @@ span(
   
 #### <a name="parameters"></a>Parametry  
  `_Series`  
- Kontext řady platný značky.  
+ Platné značky řady kontextu.  
   
  `_Format`  
- Složený formátovací řetězec, který obsahuje text smíšeného s nula nebo více položek formátu, odpovídajících objektů v seznamu argumentů.  
+ Složený řetězec formátu, který obsahuje textu smíšeného s nula nebo více položek formátu, který odpovídá objektům v seznamu argumentů.  
   
  `_Importance`  
- Úroveň význam.  
+ Úroveň důležitosti.  
   
  `_Category`  
  Kategorie.  
   
 ## <a name="requirements"></a>Požadavky  
- **Záhlaví:** cvmarkersobj.h  
+ **Záhlaví:** *cvmarkersobj.h*  
   
  **Namespace:** Concurrency::Diagnostic –
  
- ## <a name="see-also"></a>Viz také
- [span – třída](../profiling/span-class.md)
+ ## <a name="see-also"></a>Viz také:
+ [span třídy](../profiling/span-class.md)

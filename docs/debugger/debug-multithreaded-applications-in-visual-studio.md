@@ -1,5 +1,5 @@
 ---
-title: Ladění vícevláknových aplikací v sadě Visual Studio | Microsoft Docs
+title: Ladění vícevláknových aplikací v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 09/05/2017
 ms.technology: vs-ide-debug
@@ -23,82 +23,83 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd789bf9b820e13a265cceffbf3c6000ab4f0331
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 46f165896947f541a7f7be2c48658b83dfd3d102
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676495"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Ladění vícevláknových aplikací v sadě Visual Studio
-Vlákno je posloupnost pokyny, které operační systém přiděluje času procesoru. Každý proces, který běží v operačním systému se skládá z nejméně jedno vlákno. Procesy, které mají více než jedno vlákno se nazývají s více vlákny.  
+Vlákno je řada pokynů, pro které operační systém přiděluje čas procesoru. Každý proces, na kterém běží v operačním systému se skládá z alespoň jednoho vlákna. Procesy, které mají více než jedno vlákno, se nazývají s více vlákny.  
   
-Počítače s více procesory, procesory nebo Hyper-threadingem procesy můžete současně spustit více vláken. Paralelní zpracování více vláken může výrazně zlepšit výkon programu, ale také může být ladění obtížnější protože zavádí nutné ke sledování více vláken.  
+Počítače s více procesory, vícejádrovými procesory nebo procesy využívající hyperthreading lze spustit více vláken současně. Paralelní zpracování více podprocesů může značně zlepšit výkon aplikace, ale to může také ztížit ladění protože zavádí potřebu sledovat více vláken.  
   
-Kromě toho multithreading zavádí několik nových typů potenciální chyby. Často například dvě nebo více podprocesů mít přístup k prostředku stejné, ale pouze jedno vlákno můžete bezpečně přístup k prostředku v čase. Určitou formu vzájemné vyloučení je nutné zajistit, že pouze jedno vlákno je přístup k prostředku v čase. Pokud vzájemné vyloučení provádí nesprávně, můžete vytvořit *zablokování* podmínky, které můžete provést žádný přístup z více vláken. Blokování může být obzvláště pevný problém k ladění.
+Kromě toho multithreading přináší některé nové typy možných chyb. Často například dvě nebo více vláken mít přístup ke stejnému prostředku, ale pouze jedno vlákno může bezpečně přistupovat k prostředku najednou. Některé forma vzájemného vyloučení je nezbytné, abyste měli jistotu, že pouze jedno vlákno k prostředku najednou. Pokud nesprávně provedeného vzájemného vyloučení můžete vytvořit *zablokování* podmínky, kdy žádné vlákno nelze spustit. Zablokování může být zásadním problémem při ladění.
 
-Visual Studio poskytuje různé nástroje pro použití v ladění vícevláknových aplikací.
+Visual Studio poskytuje různé nástroje pro použití při ladění aplikace s více vlákny.
 
-- Pro vlákna, jsou mezi primární nástroje k ladění vláken **vláken** okno, značek přístup z více vláken ve windows zdroj **paralelní zásobníky** okně **paralelního sledování** okně a **ladění umístění** panelu nástrojů. Další informace o **vláken** okno a **ladění umístění** nástrojů najdete v části [návod: ladění pomocí okna vláken](../debugger/how-to-use-the-threads-window.md). Další informace o použití **paralelní zásobníky** a **paralelního sledování** windows, najdete v části [Začínáme ladění vícevláknové aplikace](../debugger/get-started-debugging-multithreaded-apps.md). Obě témata ukazují, jak používat značky přístup z více vláken.
+- Vlákna, jsou primární nástroje pro ladění vláken **vlákna** okna, značky vlákna ve zdrojových oknech, **paralelní zásobníky** okně **paralelního sledování** okno, a **umístění ladění** nástrojů. Další informace o **vlákna** okno a **umístění ladění** nástrojů, naleznete v tématu [návod: ladění pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md). Další informace o použití **paralelní zásobníky** a **paralelní sledování** naleznete zde [Začínáme s laděním vícevláknových aplikacích](../debugger/get-started-debugging-multithreaded-apps.md). Obě témata ukazují, jak používat značky vlákna.
   
-- Pro kód, který používá [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) nebo [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime/), jsou mezi primární nástroje pro ladění **paralelní zásobníky** okno, **Paralelního sledování** okně a **úlohy** okno ( **úlohy** okno také podporuje JavaScript). Abyste mohli začít, najdete v části [návod: ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md) a [návod: ladění aplikace C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
+- Pro kód, který se používá [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) nebo [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime/), jsou základními nástroji pro ladění **paralelní zásobníky** okno, **Paralelní sledování** okně a **úlohy** okno ( **úlohy** okna také podporuje JavaScript). Abyste mohli začít, najdete v článku [návod: ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md) a [návod: ladění aplikace C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
 
-- K ladění vláken v GPU, primárním nástrojem jsou **vláken GPU** okno. V tématu [postupy: použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
+- Pro ladění vláken v GPU je primárním nástrojem **vlákna GPU** okna. Zobrazit [postupy: použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
 
-- U procesů, jsou mezi primární nástroje **připojit k procesu** dialogové okno, **procesy** okně a **ladění umístění** panelu nástrojů.  
+- Pro procesy, jsou primární nástroje **připojit k procesu** dialogovém okně **procesy** okně a **umístění ladění** nástrojů.  
   
-Visual Studio také poskytuje výkonné zarážky a tracepoints, může být velmi užitečná při ladění vícevláknových aplikací. Podmínky zarážek a filtry můžete použít k umístění zarážky na jednotlivých vláken. V tématu [použití zarážek](../debugger/using-breakpoints.md). 
+Visual Studio také poskytuje výkonné zarážky a trasování, což může být velmi užitečné při ladění aplikací s více vlákny. Podmínky zarážky a filtry můžete použít k umístění zarážek na jednotlivá vlákna. Zobrazit [pomocí zarážek](../debugger/using-breakpoints.md). 
   
-Ladění vícevláknové aplikace, která má uživatelské rozhraní může být obzvláště složité. V takovém případě můžete zvážit spouštět aplikace na druhý počítač a pomocí vzdálené ladění. Informace najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  
+Ladění aplikace s více vlákny s uživatelským rozhraním může být zvláště obtížné. V takovém případě zvažte spuštění aplikace na druhém počítači a použití vzdáleného ladění. Informace najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  
   
 ## <a name="in-this-section"></a>V tomto oddílu
- [Začínáme ladění vícevláknové aplikace](../debugger/get-started-debugging-multithreaded-apps.md).  
- Průvodce podprocesu ladění funkcí, s důrazem na funkce **paralelní zásobníky** okno a **paralelního sledování** okno.
+ [Začínáme s laděním vícevláknových aplikacích](../debugger/get-started-debugging-multithreaded-apps.md).  
+ Seznámení s funkcemi, s důrazem na funkce v ladění vlákna **paralelní zásobníky** okno a **paralelní sledování** okna.
 
  [Nástroje pro ladění vláken a procesů](../debugger/debug-threads-and-processes.md)  
  Obsahuje seznam funkcí nástroje pro ladění vláken a procesů.  
   
  [Ladění více procesů](../debugger/debug-multiple-processes.md)  
- Vysvětluje, jak k ladění více procesů.
+ Vysvětluje, jak ladění více procesů.
 
- [Návod: Ladění pomocí okna vláken](../debugger/how-to-use-the-threads-window.md).  
- Návod, který ukazuje způsob použití **vláken** okno a **ladění umístění** panelu nástrojů. 
+ [Návod: Ladění pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md).  
+ Návod, který ukazuje způsob použití **vlákna** okno a **umístění ladění** nástrojů. 
 
  [Návod: Ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Návod, který ukazuje způsob použití **paralelní zásobníky** a **úlohy** systému windows.  
   
- [Postupy: přepnutí na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
- Tři způsoby, jak přepnout kontext ladění na jiné vlákno.  
+ [Postupy: Přepnutí na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
+ Tři způsoby, jak přepnout kontext ladění na jiný podproces.  
   
- [Postupy: označení a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md)  
- Označit nebo příznak vláken, které chcete udělit zvláštní pozornost při ladění.    
+ [Postupy: Označení a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md)  
+ Opatřete značkou nebo příznakem vlákna, které chcete věnovat zvláštní pozornost při ladění.    
   
- [Postupy: ladění na clusteru s podporou High-Performance](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
- Techniky pro aplikaci, která běží na clusteru, vysoce výkonné ladění.  
+ [Postupy: Ladění na klastru s vysokým výkonem](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
+ Techniky ladění aplikace, která běží na vysoký výkon clusteru.  
 
  [Tipy k ladění vláken v nativním kódu](../debugger/tips-for-debugging-threads-in-native-code.md)  
- Jednoduché techniky, které mohou být užitečné k ladění nativního vláken. 
+ Jednoduché techniky, které mohou být užitečné při ladění nativních vláken. 
 
- [Postupy: nastavení názvu vlákna v nativním kódu](../debugger/how-to-set-a-thread-name-in-native-code.md)  
- Poskytnout název, který se zobrazí v vašeho vlákna **vláken** okno.  
+ [Postupy: Nastavení názvu vlákna v nativním kódu](../debugger/how-to-set-a-thread-name-in-native-code.md)  
+ Pojmenujte vašeho vlákna, která se zobrazí v **vlákna** okna.  
   
- [Postupy: nastavení názvu vlákna ve spravovaném kódu](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
- Poskytnout název, který se zobrazí v vašeho vlákna **vláken** okno. 
+ [Postupy: Nastavení názvu vlákna ve spravovaném kódu](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
+ Pojmenujte vašeho vlákna, která se zobrazí v **vlákna** okna. 
   
 ## <a name="related-sections"></a>Související oddíly  
  [Použití zarážek](../debugger/using-breakpoints.md)
 
- - Podmínky použití zarážek nebo filtry, pokud chcete ladit jednotlivých vlákno.  
+ - Použijte podmínky zarážky nebo filtry, pokud chcete ladit jednotlivá vlákna.  
   
- - Tracepoints umožňují k trasování provádění vašeho programu bez ukončování řádků. To může být užitečné pro studujete problémy, třeba zablokování.  
+ - Zarážky s trasováním umožňuje trasování spuštění programu bez přerušení. To může být užitečné pro studium problémů například zablokování.  
   
  [Dělení na vlákna](/dotnet/standard/threading/index)  
- Dělení na vlákna koncepty v [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] programování, včetně ukázkový kód.  
+ Práce s vlákny koncepty v [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] programování, včetně příkladu kódu.  
   
- [Více vláken v součásti](http://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
- Používání více vláken v [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] součásti.  
+ [Multithreading u komponent](http://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+ Jak používat multithreading u [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] komponenty.  
   
- [Podpora multithreadingu ve starším kódu (Visual C++)](/cpp/parallel/multithreading/multithreading-support-for-older-code-visual-cpp)  
- Dělení na vlákna koncepty a ukázkový kód pro programátory v jazyce C++ pomocí MFC.  
+ [Podpora multithreadingu ve starším kódu (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
+ Práce s vlákny koncepty a příklady kódu pro programátory C++ používající knihovnu MFC.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění vláken a procesů](../debugger/debug-threads-and-processes.md)   

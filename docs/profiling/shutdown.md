@@ -1,5 +1,5 @@
 ---
-title: Vypnutí | Microsoft Docs
+title: Vypnutí | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,18 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c835894d18ca1aea33f26f234a4df914114089c
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ceac340beb5b8b8f7c7115400c8c22e0d2657252
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676069"
 ---
 # <a name="shutdown"></a>Vypnutí
-**Vypnutí** možnost čeká pro všechny aktuálně profilovaným proces ukončit nebo odpojit, a poté vypne profileru a ukončení profilování datového souboru. **Vypnutí** možnost musí být poslední příkaz z profilace spustit.  
+**Vypnutí** možnost čeká všechny aktuálně profilovaný proces ukončit nebo odpojit, a pak profiler vypne a uzavře soubor dat profilování. **Vypnutí** možnost musí být poslední příkaz profilování.  
   
- Pokud není zadán parametr časového limitu, **vypnutí** možnost čeká neomezenou dobu zaseknout. Pokud je zadán parametr časový limit, vrátí se možnost po zadaném počtu sekund bez vypnutí profileru nebo zavírání datového souboru.  
+ Pokud není zadán parametr časového limitu, **vypnutí** možnost čekat po neomezenou dobu. Pokud je zadán parametr časového limitu, vrátí se možnost po zadaném počtu sekund bez vypnutí profileru a zavření souboru dat.  
   
- **Vypnutí** možnost musí být pouze možnost zadat na příkazovém řádku.  
+ **Vypnutí** možnost musí být zadán v příkazovém řádku jedinou možností.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,10 +32,10 @@ VSPerfCmd.exe /Shutdown[:Timeout]
   
 #### <a name="parameters"></a>Parametry  
  `Timeout`  
- -   (Volitelné) -Li zadána, vrátí se možnost po zadaném počtu sekund bez vypnutí profileru nebo zavírání datového souboru profilování.  
+ -   (Volitelné) Je-li zadán, vrátí možnost po zadaném počtu sekund bez vypnutí profileru a zavření souboru dat profilování.  
   
-## <a name="see-also"></a>Viz také  
- [Vsperfcmd –](../profiling/vsperfcmd.md)   
- [Profilace samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilace služeb](../profiling/command-line-profiling-of-services.md)
+## <a name="see-also"></a>Viz také:  
+ [Nástroj VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Samostatné aplikace profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profil služby](../profiling/command-line-profiling-of-services.md)

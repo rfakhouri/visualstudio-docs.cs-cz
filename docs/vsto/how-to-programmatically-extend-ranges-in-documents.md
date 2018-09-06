@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a4424fb5a4302f8152a896a857ea102bc3584df
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bd8eff41b0e76816114e9c634f5ad61b6db58baf
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256767"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675826"
 ---
-# <a name="how-to-programmatically-extend-ranges-in-documents"></a>Postupy: programové rozšířit rozsahy v dokumentech
-  Po definování <xref:Microsoft.Office.Interop.Word.Range> objekt v dokumentu aplikace Microsoft Office Word změnit jeho počáteční a koncové body pomocí <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> a <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metody. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> a <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metody přijímají stejné dva argumenty, *jednotky* a *počet*. *Počet* argument je počet jednotek, které chcete přesunout a *jednotky* argument může mít jednu z následujících <xref:Microsoft.Office.Interop.Word.WdUnits> hodnoty:  
+# <a name="how-to-programmatically-extend-ranges-in-documents"></a>Postupy: rozšiřování prostřednictvím kódu programu rozsahů adres v dokumentech
+  Po definování <xref:Microsoft.Office.Interop.Word.Range> objektu v dokumentu aplikace Microsoft Office Word změnit jeho počátečního a koncového bodu pomocí <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> a <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metody. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> a <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metody přijímají dva stejné argumenty *jednotky* a *počet*. *Počet* argument je počet jednotek, které chcete přesunout a *jednotky* argument může být jeden z následujících <xref:Microsoft.Office.Interop.Word.WdUnits> hodnoty:  
   
 -   <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
   
@@ -48,28 +48,28 @@ ms.locfileid: "35256767"
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- V následujícím příkladu definuje rozsah sedm znaků. Po původní počáteční pozice počáteční pozice rozsah sedm znaků, přesune se potom. Protože koncová pozice rozsahu byl také sedm znaků po počáteční pozice, výsledkem je, rozsah, který se skládá z nulový počet znaků. Kód pak se posouvá koncové znaky sedm pozice po aktuální koncová pozice.  
+ Následující příklad definuje rozsah sedm znaků. Po původní počáteční pozice počáteční pozici rozsah sedm znaků, přesune se potom. Protože koncová pozice rozsahu byl také 7 znaků po počáteční pozice, výsledkem je rozsah, který se skládá z žádného znaku. Kód převezme, změní koncové pozici sedm znaky za aktuální pozicí end.  
   
-## <a name="to-extend-a-range"></a>K rozšíření rozsahu  
+## <a name="to-extend-a-range"></a>Chcete-li rozšířit rozsah  
   
-1.  Definujte rozsah znaků. Další informace najdete v tématu [postupy: programové definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
+1.  Definujte rozsah znaků. Další informace najdete v tématu [postupy: Programová definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
   
-     Následující příklad kódu lze použít v přizpůsobení na úrovni dokumentu.  
+     Následující příklad kódu je možné v přizpůsobení na úrovni dokumentu.  
   
      [!code-vb[Trin_VstcoreWordAutomation#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#39)]
      [!code-csharp[Trin_VstcoreWordAutomation#39](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#39)]  
   
-     Následující příklad kódu lze v doplňku VSTO. Tento příklad používá aktivní dokument.  
+     Následující příklad kódu je možné v doplňku VSTO. Tento příklad používá aktivní dokument.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#39)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#39](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#39)]  
   
-2.  Použití <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> metodu <xref:Microsoft.Office.Interop.Word.Range> objekt, který chcete přesunout počáteční pozice rozsahu.  
+2.  Použití <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> metodu <xref:Microsoft.Office.Interop.Word.Range> objektu přesunout počáteční pozice v rozsahu.  
   
      [!code-vb[Trin_VstcoreWordAutomation#40](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#40)]
      [!code-csharp[Trin_VstcoreWordAutomation#40](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#40)]  
   
-3.  Použití <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metodu <xref:Microsoft.Office.Interop.Word.Range> objekt, který chcete přesunout koncová pozice rozsahu.  
+3.  Použití <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metodu <xref:Microsoft.Office.Interop.Word.Range> objektu přesunout koncová pozice rozsahu.  
   
      [!code-vb[Trin_VstcoreWordAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#41)]
      [!code-csharp[Trin_VstcoreWordAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#41)]  
@@ -78,24 +78,24 @@ ms.locfileid: "35256767"
   
 ### <a name="to-extend-a-range-in-a-document-level-customization"></a>Chcete-li rozšířit rozsah v přizpůsobení na úrovni dokumentu  
   
-1.  Následující příklad ukazuje kód dokončení pro přizpůsobení na úrovni dokumentu. Chcete-li použít tento kód, spusťte jej z `ThisDocument` třídy ve vašem projektu.  
+1.  Následující příklad ukazuje kompletní kód pro přizpůsobení na úrovni dokumentu. Chcete-li tento kód použít, spusťte z `ThisDocument` třídu ve vašem projektu.  
   
      [!code-vb[Trin_VstcoreWordAutomation#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#38)]
      [!code-csharp[Trin_VstcoreWordAutomation#38](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#38)]  
   
-## <a name="vsto-add-in-code"></a>Kódu doplňku VSTO  
+## <a name="vsto-add-in-code"></a>Kód doplňku VSTO  
   
 ### <a name="to-extend-a-range-in-an-application-level-vsto-add-in"></a>Chcete-li rozšířit rozsah v doplňku VSTO úrovni aplikace  
   
-1.  Následující příklad ukazuje kód dokončení pro doplňku VSTO. Chcete-li použít tento kód, spusťte jej z `ThisAddIn` třídy ve vašem projektu.  
+1.  Následující příklad ukazuje kompletní kód doplňku VSTO. Chcete-li tento kód použít, spusťte z `ThisAddIn` třídu ve vašem projektu.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#38)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#38](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#38)]  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: programové resetování oblastí v dokumentech aplikace Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Postupy: sbalení prostřednictvím kódu programu oblastí nebo výběrů v dokumentech](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [Postupy: programové definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Postupy: načítání počátečních a koncových znaků v oblastech prostřednictvím kódu programu](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Postupy: programové vyloučení značek odstavů při vytváření oblastí](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
+ [Postupy: Programová resetování oblastí v dokumentech aplikace Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Postupy: oblastí nebo výběrů v dokumentech prostřednictvím kódu programu sbalit](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Postupy: Programová definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Postupy: načítání počátečních a koncových znaků oblastí prostřednictvím kódu programu](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Postupy: Programová vyloučení značek odstavů při vytváření oblastí](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
   

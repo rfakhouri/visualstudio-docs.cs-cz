@@ -20,42 +20,43 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b85dfe077f73a26eadf173197de2ca514ff44679
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 01a85b214c44f3b48a91d82a5abd59bcf4c9ac5c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676455"
 ---
 # <a name="custom-document-properties-overview"></a>Přehled přizpůsobených vlastností dokumentu
 
-Při sestavování projektu úrovni dokumentu sady Visual Studio přidá dva vlastní vlastnosti dokumentu v projektu: \_AssemblyLocation a \_AssemblyName. Když uživatel otevře dokument, zkontroluje tyto vlastní vlastnosti dokumentu aplikace Microsoft Office. Pokud existují v dokumentu načte aplikaci [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], který spustí přizpůsobení. Další informace najdete v tématu [řešení architektura systému Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+Při vytváření projektu úrovni dokumentu aplikace Visual Studio přidá dvě vlastní vlastnosti dokumentu v projektu: \_AssemblyLocation a \_AssemblyName. Když uživatel otevře dokument, zkontroluje tyto přizpůsobených vlastností dokumentu aplikace Microsoft Office. Pokud existují v dokumentu, načtení aplikace [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], které spustí vlastní nastavení. Další informace najdete v tématu [řešení architektury systému Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 ## <a name="assemblyname"></a>\_AssemblyName
 
-Tato vlastnost obsahuje CLSID rozhraní v řešení Office zavaděč součást [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Hodnota CLSID je 4E3C66D5 - 58D 4-491E-A7D4-64AF99AF6E8B. Měli byste nikdy tuto hodnotu změnit.
+Tato vlastnost obsahuje identifikátor CLSID rozhraní v součásti zavaděče řešení Office z [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Identifikátor CLSID hodnotu 4E3C66D5 58D 4-491E-A7D4-64AF99AF6E8B. Tato hodnota by měla nikdy nezmění.
 
 ## <a name="assemblylocation"></a>\_AssemblyLocation
 
-Tato vlastnost obsahuje řetězec, který poskytuje podrobnosti o manifest nasazení pro přizpůsobení. Další informace o manifesty najdete v tématu [aplikace a nasazení manifesty v řešeních pro systém Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+Tato vlastnost obsahuje řetězec, který obsahuje podrobné informace o manifestu nasazení pro přizpůsobení. Další informace o manifestech najdete v tématu [aplikace a manifestů nasazení v řešeních pro systém Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
- Hodnota vlastnosti The_AssemblyLocation může mít různých formátech, v závislosti na tom, jak je řešení nasazeno:
+ Hodnota vlastnosti The_AssemblyLocation může mít různé formáty, v závislosti na tom, jak se řešení nasadí:
 
-- Pokud řešení je publikována, které budou instalovány z webu, cesta UNC nebo jednotku CD nebo USB, vlastnost _AssemblyLocation má formát *DeploymentManifestPath*|*SolutionID*. Následující řetězec je příklad:
+- Pokud toto řešení je publikována z webové stránky, cesta UNC nebo jednotka CD nebo USB, vlastnosti _AssemblyLocation má formát *DeploymentManifestPath*|*SolutionID*. Tento řetězec je příklad:
 
      file://deployserver/MyShare/ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9
 
-- Pokud jsou spuštěna nebo ladění řešení ze sady Visual Studio, vlastnost _AssemblyLocation má formát *DeploymentManifestName*|*SolutionID*| vstolocal. Následující řetězec je příklad:
+- Při spuštění nebo ladění řešení v sadě Visual Studio, vlastnosti _AssemblyLocation má formát *DeploymentManifestName*|*SolutionID*| vstolocal. Tento řetězec je příklad:
 
      ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
 
- *SolutionID* je identifikátor GUID, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] používá k identifikaci řešení. *SolutionID* se automaticky generuje při sestavování projektu. **Vstolocal** termín ukazuje [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] že ze stejné složky jako dokument by měl být načíst sestavení.
+ *SolutionID* je identifikátor GUID, který [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] používá k identifikaci řešení. *SolutionID* se automaticky vygeneruje při sestavení projektu. **Vstolocal** označuje termín [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , sestavení by měl být načteno ze stejné složky jako dokument.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Architektura řešení pro systém Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+- [Architektura řešení pro Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md)
 - [Manifesty aplikace a nasazení v řešeních pro systém Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Postupy: publikování řešení Office s použitím technologie ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Postupy: vytváření a změny přizpůsobených vlastností dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Postupy: publikování řešení Office s použitím technologie ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Postupy: vytvoření a změny přizpůsobených vlastností dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)

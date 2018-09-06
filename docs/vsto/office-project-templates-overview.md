@@ -1,5 +1,5 @@
 ---
-title: Přehled šablon projektů Microsoft Office
+title: Přehled šablon projektů Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -33,58 +33,58 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfd3db7a029497a0f9a5b5c2c6c89cde38524c23
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8e9295b71248650b078415d4539f72d2b94dc315
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692610"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675830"
 ---
-# <a name="office-project-templates-overview"></a>Přehled šablon projektů Microsoft Office
-  Sada Microsoft Office developer tools v sadě Visual Studio zahrnují šablony projektů pro vytvoření následující typy řešení pro systém Office:  
+# <a name="office-project-templates-overview"></a>Přehled šablon projektů Office
+  Nástroje Microsoft Office developer tools v sadě Visual Studio obsahují šablony projektů pro vytváření následujících typů řešení pro systém Office:  
   
--   [Úpravy na úrovni dokumentů](#DocLevel)  
+-   [Přizpůsobení na úrovni dokumentu](#DocLevel)  
   
--   [Doplňků VSTO](#AppLevel)  
+-   [Doplňky VSTO](#AppLevel)  
   
- Podrobné porovnání těchto typů řešení pro systém Office, najdete v části [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ Podrobné porovnání těchto typů řešení pro systém Office najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
- Šablony projektů Office jsou k dispozici v **nový projekt** dialogovém **Office** uzlu **Visual C#** a **jazyka Visual Basic**jazyk uzly. Každá šablona generuje projekt s odpovídající konfigurací pro cílovou aplikaci, včetně odkazů na sestavení a nastavení ladění.  
+ Šablony projektů pro Office jsou k dispozici v **nový projekt** dialogovém okně **Office** uzlu **Visual C#** a **jazyka Visual Basic**jazyky. Každá šablona generuje projekt s odpovídající konfigurací pro cílovou aplikaci, včetně odkazů na sestavení a nastavení ladění.  
   
- Každý projekt obsahuje soubory a kód umožňující začít pracovat na konkrétním typu řešení. Vygenerovaný kód pro každý projekt obsahuje obslužné rutiny událostí spuštění a ukončení. Do těchto obslužných rutin událostí můžete přidat kód pro inicializaci vašeho řešení při spuštění a pro vyčištění při jeho uvolnění z paměti. Další informace najdete v tématu [projektech pro systém Office v sadě Visual Studio prostředí](../vsto/office-projects-in-the-visual-studio-environment.md) a [události v projektech Office](../vsto/events-in-office-projects.md).  
+ Každý projekt obsahuje soubory a kód umožňující začít pracovat na konkrétním typu řešení. Vygenerovaný kód pro každý projekt obsahuje obslužné rutiny událostí spuštění a ukončení. Do těchto obslužných rutin událostí můžete přidat kód pro inicializaci vašeho řešení při spuštění a pro vyčištění při jeho uvolnění z paměti. Další informace najdete v tématu [projektech pro systém Office v prostředí sady Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md) a [události v projektech pro systém Office](../vsto/events-in-office-projects.md).  
   
 > [!NOTE]  
 >  Nástroje pro vývoj pro Office jsou součástí určitých edicí sady Visual Studio. Další informace najdete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
-##  <a name="DocLevel"></a> Úpravy na úrovni dokumentů  
- **Office** uzlu **nový projekt** dialogové okno obsahuje následující šablony projektů, které vám pomůžou zahájeno vytváření přizpůsobení na úrovni dokumentu pro Word a Excel:  
+##  <a name="DocLevel"></a> Přizpůsobení na úrovni dokumentu  
+ **Office** uzlu **nový projekt** dialogové okno obsahuje následující šablony projektů, které vám pomůžou začít vytvářet přizpůsobení na úrovni dokumentu pro Word a Excel:  
   
--   **Sešit Wordu 2013 a 2016 VSTO**  
+-   **Pro Word 2013 a 2016 VSTO dokumentu**  
   
--   **Sešit Wordu 2013 a 2016 VSTO šablony**  
+-   **Pro Word 2013 a 2016 VSTO šablony**  
   
--   **Excelu 2013 a 2016 VSTO sešitu**  
+-   **Excel 2013 a 2016 VSTO sešitu**  
   
--   **Excelu 2013 a 2016 VSTO šablony**  
+-   **Excel 2013 a 2016 VSTO šablony**  
   
 -   **Dokument aplikace Word 2010 VSTO**  
   
--   **Šablony aplikace Word 2010 VSTO**  
+-   **Šablona VSTO pro Word 2010**  
   
--   **Sešit aplikace Excel 2010 VSTO**  
+-   **Excelový sešit VSTO 2010**  
   
--   **Šablony aplikace Excel 2010 VSTO**  
+-   **Šablona VSTO pro Excel 2010**  
   
  Šablony projektů Dokument aplikace Word a Sešit aplikace Excel poskytují kód, pomocí něhož můžete začít vytvářet řešení založené na konkrétním dokumentu nebo sešitu. V těchto typech řešení je váš kód spuštěn, pouze když je přidružený dokument otevřen v aplikaci Word nebo Excel.  
   
  Šablony projektů Šablona aplikace Word a Šablona aplikace Excel se chovají stejně jako šablony projektů Dokument aplikace Word a Sešit aplikace Excel. Šablony projektů Šablona aplikace Word a Šablona aplikace Excel ale usnadňují uživatelům vytvoření nových místních kopií dokumentu nebo sešitu pomocí přizpůsobené šablony z vašeho řešení. Funkce vašeho řešení jsou k dispozici z nového dokumentu, který uživatel z šablony vytvoří.  
   
 > [!NOTE]  
->  Šablony aplikace Word, které odkazují na rozšíření spravovaného kódu nelze použít jako globální doplňků VSTO. Sestavení není voláno, pokud je šablona načtena z adresáře Po spuštění aplikace Word. Další informace najdete v tématu [omezení globální šablony a doplňky aplikace Excel (soubory XLA)](#Limitations)  
+>  Šablony aplikace Word, které odkazují na rozšíření spravovaného kódu nelze použít jako globální doplňky VSTO. Sestavení není voláno, pokud je šablona načtena z adresáře Po spuštění aplikace Word. Další informace najdete v tématu [omezení globálních šablon a doplňků aplikace Excel (souborů .xla)](#Limitations)  
   
  Informace, jak začít pracovat s těmito typy projektů, naleznete v následujících tématech:  
   
--   [Úpravy na úrovni dokumentů programu](../vsto/programming-document-level-customizations.md)  
+-   [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)  
   
 -   [Řešení aplikace Word](../vsto/word-solutions.md)  
   
@@ -94,18 +94,18 @@ ms.locfileid: "34692610"
   
 -   [Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
   
-##  <a name="AppLevel"></a> Doplňků VSTO  
- **Office/SharePoint** uzlu **nový projekt** dialogové okno obsahuje následující šablony projektů, které vám pomůžou zahájeno vytváření doplňků VSTO.  
+##  <a name="AppLevel"></a> Doplňky VSTO  
+ **Office/SharePoint** uzlu **nový projekt** dialogové okno obsahuje následující šablony projektů, které vám pomůžou začít vytvářet doplňky VSTO.  
   
--   **Doplněk Excelu 2013 a 2016 VSTO**  
+-   **Doplněk aplikace Excel 2013 a 2016 VSTO**  
   
--   **InfoPath 2013 doplňku VSTO**  
+-   **Doplněk aplikace InfoPath 2013 VSTO**  
   
 -   **Doplněk aplikace Outlook 2013 a 2016 VSTO**  
   
 -   **Doplněk aplikace PowerPoint 2013 a 2016**  
   
--   **Projekt 2013 a 2016 doplňku**  
+-   **Project 2013 a 2016 Add-in**  
   
 -   **Doplněk Visio 2013 a 2016**  
   
@@ -131,19 +131,19 @@ ms.locfileid: "34692610"
   
 -   [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
--   [Program doplňků VSTO](../vsto/programming-vsto-add-ins.md)  
+-   [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)  
   
--   [Návod: Vytvoření vaší první Add-in VSTO pro Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+-   [Návod: Vytvoření vašeho prvního doplňku VSTO pro Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [Návod: Vytvoření vaší první VSTO Add-in pro aplikaci Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+-   [Návod: Vytvoření vašeho prvního doplňku VSTO pro Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [Návod: Vytvoření vaší první Add-in VSTO pro PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+-   [Návod: Vytvoření vašeho prvního doplňku VSTO pro PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [Návod: Vytvoření vaší první VSTO Add-in pro projekt](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+-   [Návod: Vytvoření vašeho prvního doplňku VSTO pro Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [Návod: Vytvoření vaší první Add-in VSTO pro Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+-   [Návod: Vytvoření vašeho prvního doplňku VSTO pro Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
-## <a name="document-vs-template-solutions"></a>Oproti řešení šablony dokumentů  
+## <a name="document-vs-template-solutions"></a>Zdokumentujte vs. šablony řešení  
  Při návrhu řešení, které je založeno na dokumentu aplikace Word nebo sešitu aplikace Excel, se musíte rozhodnout, jak nejlépe zpřístupnit tento dokument uživateli.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -158,21 +158,21 @@ ms.locfileid: "34692610"
 |Dokumenty|Šablony|  
 |---------------|---------------|  
 |Uživatelé mohou dokument otevřít a upravit, pokud není nastaven jen pro čtení. Jakékoli uložené změny se uchovávají v originálu dokumentu.|Uživatelé mohou šablonu otevřít a vytvořit pomocí ní místní kopii jako nový dokument. Nemohou originál upravovat, pokud jim neudělíte speciální oprávnění.|  
-|Po otevření dokumentu vyvolá <xref:Microsoft.Office.Tools.Word.Document.Open> událostí.|Po otevření šablony vyvolá <xref:Microsoft.Office.Tools.Word.Document.New> událostí.|  
+|Po otevření vyvolá dokument <xref:Microsoft.Office.Tools.Word.Document.Open> událostí.|Po otevření vyvolá šablona <xref:Microsoft.Office.Tools.Word.Document.New> událostí.|  
   
-##  <a name="Limitations"></a> Omezení globální šablony a doplňky aplikace Excel (soubory XLA)  
- Dokumentům, sešitům a šablony nemusí fungovat správně jako globální šablony nebo doplňků VSTO pro Excel (soubory XLA).  
+##  <a name="Limitations"></a> Omezení globálních šablon a doplňků aplikace Excel (souborů .xla)  
+ Dokumenty, sešity a šablony nemusejí správně fungovat jako globální šablony nebo doplňky VSTO pro Excel (souborů .xla).  
   
 ## <a name="word-templates"></a>Šablony aplikace Word  
  Pokud má šablona aplikace Microsoft Office Word rozšíření se spravovaným kódem, není voláno sestavení projektu, pokud je šablona připojena jako globální šablona nebo načtena z adresáře Po spuštění aplikace Word. Dokument navíc nerozpozná formát šablony, která je součástí řešení pro Office.  
   
-## <a name="excel-add-ins-xla-files"></a>Doplňky aplikace Excel (soubory .xla)  
- Neexistuje žádný Office projekt pro vytvoření aplikace Excel VSTO doplněk (soubor XLA). Je možné uložit sešit jako soubor s příponou .xla, ale tato operace není podporována ani doporučena. Pokud uložíte sešit, který se má spravovat rozšíření kódu jako **Microsoft Office Excel Add-In (\*XLA)** souboru, můžete ji vybrat v **doplňky** dialogové okno pro použití jiného sešitu. V některých případech se spustí kód v sešitu cíl po doplňku VSTO se použije, ale není podporovaná takového použití řešení Office.  
+## <a name="excel-add-ins-xla-files"></a>Doplňky aplikace Excel (souborů .xla)  
+ Neexistuje žádný projekt Office pro vytvoření doplňku VSTO pro Excel (*.xla* souboru). Je možné uložit sešit jako soubor s příponou .xla, ale tato operace není podporována ani doporučena. Pokud uložíte sešit, který má rozšíření se spravovaným kódem jako **Microsoft Office Excel Add-In (\*.xla)** soubor, můžete ho vybrat v **Add-Ins** dialogové okno použít pro jiný sešit. V některých případech může váš kód poběží v cílovém sešitu po použití doplňku VSTO, ale takové použití řešení pro Office se nepodporuje.  
   
 ## <a name="see-also"></a>Viz také:  
  [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
  [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)   
- [Postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Postupy: vytváření projektů pro systém Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Začínáme s programováním přizpůsobení na úrovni dokumentu pro Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Začínáme s programováním přizpůsobení na úrovni dokumentu pro Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  

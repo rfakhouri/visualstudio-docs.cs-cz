@@ -13,20 +13,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8573576b40afabb5ec568a0c471e7b1d79560ba
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7e3e0fda420682e4f33c0d22a3e9c8caa920895b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676079"
 ---
 # <a name="getautoinsertextensions-method"></a>Getautoinsertextensions – metoda
   Získá informace o aplikacích pro Office, které se mají automaticky vložit během ladění.  
   
- Tato metoda je vyhrazena pro budoucí použití.  
+ Tato metoda je vyhrazená pro budoucí použití.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```c  
+```csharp
 HRESULT GetAutoInsertExtensions(  
     [out, retval] SAFEARRAY(BSTR)* psaExtensionNames  
 );  
@@ -39,9 +40,9 @@ HRESULT GetAutoInsertExtensions(
 |*psaExtensionNames*|Názvy rozšíření aplikace pro Office.|  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Hodnota HRESULT, která určuje, zda metoda byla úspěšně dokončena.  
+ Hodnota HRESULT, která označuje, zda metoda byla úspěšně dokončena.  
   
 ## <a name="remarks"></a>Poznámky  
- Každá aplikace pro Office má být vložen se vrátí jako název rozšíření aplikace Office, který odpovídá hodnotě pod **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. Hostitel musí vyhledat tyto hodnoty v registru a automaticky vložit rozšíření.  
+ Každá aplikace pro Office, které má být vložen se vrátí jako název rozšíření aplikace Office, která odpovídá hodnotě v části **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. Hostitel musí vyhledat tyto hodnoty v registru a automaticky vkládat rozšíření.  
   
   

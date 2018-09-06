@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fd8036ea2a437ffc9fb68a523d8f25db964b5f6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 4fc98e66cd16298839e79f25c95e256f10398c49
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676460"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt; – element (vývoj pro Office v sadě Visual Studio)
-  `formRegion` Element `vstov4` obor názvů identifikuje oblasti formuláře aplikace Microsoft Office Outlook, která souvisí s doplňku VSTO.  
+  `formRegion` Elementu `vstov4` obor názvů identifikuje oblasti formuláře aplikace Microsoft Office Outlook, který je přidružený k doplňku VSTO.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,11 +36,11 @@ ms.lasthandoff: 05/22/2018
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementy a atributy  
- `formRegion` Element `vstov4` obor názvů identifikuje oblasti formuláře, který je přidružen doplňku VSTO v Outlooku. Je vyžadována pouze pro aplikaci Outlook doplňků VSTO obsahující oblasti formulářů.  
+ `formRegion` Elementu `vstov4` obor názvů identifikuje oblasti formuláře, který je přidružený doplňku VSTO v Outlooku. Je vyžadován pouze pro aplikaci Outlook doplňků VSTO, které zahrnují oblasti formuláře.  
   
- Může být více `formRegion` elementy definované uvnitř `formRegions` element pro jeden Add-in VSTO.  
+ Může existovat více `formRegion` elementy definované uvnitř `formRegions` – element pro jednoho doplňku VSTO.  
   
- `formRegion` Element má následující atribut.  
+ `formRegion` Element má tento atribut.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
@@ -48,16 +49,16 @@ ms.lasthandoff: 05/22/2018
  `formRegion` Element má následující podřízené prvky.  
   
 ### <a name="messageclass"></a>Třída messageClass  
- `messageClass` Element identifikuje formuláře aplikace Outlook, který je přidružen oblasti formuláře.  
+ `messageClass` Element identifikuje formuláře aplikace Outlook, který je přidružený k oblasti formuláře.  
   
- `messageClass` Element má následující atribut.  
+ `messageClass` Element má tento atribut.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`name`|Požadováno. Identifikuje formulář, který je přidružen oblasti formuláře.|  
+|`name`|Požadováno. Identifikuje formulář, který je přidružený k oblasti formuláře.|  
   
 ## <a name="example"></a>Příklad  
- Následující příklad kódu ukazuje `formRegion` element v manifestu aplikace pro Outlook VSTO doplňku nasadit pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Existují tři zpráva třídy přidružené k této oblasti jednoho formuláře. Tento příklad kódu je součástí většího příkladu vztahujícího se v [manifesty aplikací pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
+ Následující příklad kódu ukazuje `formRegion` elementu v manifestu aplikace pro Outlook VSTO doplněk nasazeným v rámci [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Existují tři třídy zpráv, které jsou přidružené k této oblasti jeden formulář. Tento příklad kódu je součástí většího příkladu určeného v [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ```xml  
 <vstov4:formRegion  
@@ -68,10 +69,10 @@ ms.lasthandoff: 05/22/2018
 </vstov4:formRegion>  
 ```  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)   
  [Manifesty aplikace pro řešení pro systém Office](../vsto/application-manifests-for-office-solutions.md)   
- [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Manifesty nasazení pro řešení pro systém Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce – manifest aplikace](/visualstudio/deployment/clickonce-application-manifest)  
   
   

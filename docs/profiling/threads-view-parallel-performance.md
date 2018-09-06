@@ -1,5 +1,5 @@
 ---
-title: Vláken (paralelní výkon) zobrazení | Microsoft Docs
+title: Vlákna zobrazení (paralelní výkon) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,138 +15,138 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573164"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675863"
 ---
 # <a name="threads-view-parallel-performance"></a>Zobrazení vláken (paralelní výkon)
-**Zobrazení vláken** je nejvíce bohaté a podrobné zobrazení v Concurrency Visualizer (zvolte **analyzovat** > **vizualizér souběžnosti** spuštění Vizualizér souběžnosti). Pomocí tohoto zobrazení, můžete zjistit, jestli jsou vláken provádění nebo blokování z důvodu synchronizace, vstupně-výstupních operací nebo z jiného důvodu.  
+**Zobrazení vláken** je nejvíce podrobná a plně funkční zobrazení ve vizualizátoru souběžnosti (zvolte **analyzovat** > **Vizualizátor souběžnosti** spusťte Vizualizér souběžnosti). Pomocí tohoto zobrazení můžete identifikovat, jestli jsou vlákna provádění nebo blokování z důvodu synchronizace, vstupně-výstupních operací nebo z jiného důvodu.  
   
- Vizualizér souběžnosti během analýzy profil prověří všechny události přepnutí kontextu operačního systému pro každou aplikaci přístup z více vláken. Kontext přepínače může dojít z mnoha důvodů, například tyto:  
+ Vizualizátor souběžnosti během analýzy profilu, zkontroluje všechny události přepnutí kontextu operačního systému pro každé vlákno aplikace. Přepnutí kontextu může dojít z mnoha důvodů, jako je například tyto:  
   
--   Vlákno je na primitivní synchronizace zablokovaný.  
+-   Vlákno je blokována v primitiv synchronizace.  
   
--   Platnost vyprší quantum vlákna.  
+-   Vypršení platnosti quantum vlákna.  
   
--   Vlákno požádá blokování vstupně-výstupní operace.  
+-   Vlákno požádá blokování vstupně-výstupních operací.  
   
- Zobrazení vláken přiřadí kategorii každý přepínač kontext po zastavení provádění vlákna. Kategorie se zobrazí v legendě v levém dolním část zobrazení. Vizualizér souběžnosti řadí přepnutí kontextu události do kategorií vyhledáním zásobníku volání vlákna dobře známé blokování rozhraní API. Pokud neexistuje shoda zásobníku volání, z důvodu čekání, které poskytuje [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] se používá. Ale [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] kategorie může být založeno na podrobností implementace a nemusí odrážet záměr uživatele. Například [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] sestavy čekání důvod pro blokování zámku nativní tenký čtení a zápis jako vstupně-výstupních operací místo synchronizace. Ve většině případů můžete identifikovat hlavní příčinu blokování událostí tak, že prověří zásobníky volání, které odpovídají přepnutí kontextu události.  
+ Zobrazení vláken přiřadí kategorie každého přepnutí kontextu, když vlákno ukončila provádění. Kategorie jsou uvedeny v legendě v levé dolní části zobrazení. Vizualizátor souběžnosti kategorizuje přepněte kontext události tak, že dobře známé blokování rozhraní API zásobník volání vlákna. Pokud není nalezena žádná volání zásobníku shoda, Důvod čekání, která je poskytována [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] se používá. Ale [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] kategorie mohou být založeny na podrobnosti implementace a nemusí odrážet záměru uživatele. Například [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] sestavy čekání důvod pro blokování zámku nativní tenký čtení a zápis jako vstupně-výstupní operace namísto synchronizace. Ve většině případů můžete identifikovat původní příčinu možných blokujících událostí prozkoumáním zásobníky volání, které odpovídají přepněte kontext události.  
   
- Zobrazení vláken také ukazuje závislosti mezi vlákny. Například pokud identifikovat podproces, který je blokovaný na synchronizační objekt, můžete vyhledat vlákno, které ho odblokováno a aktivity v zásobníku volání pro toto vlákno v bodě můžete zkontrolovat, když ho odblokováno jiný.  
+ Zobrazení vláken také ukazuje závislosti mezi vlákny. Případě identifikujete vlákno, které je blokována v synchronizační objekt, můžete vyhledat vlákna, které ho odblokováno a aktivity v zásobníku volání pro toto vlákno v místě, můžete zkontrolovat při otevření druhou.  
   
- Při provádění jsou vláken, shromažďuje vizualizér souběžnosti ukázky. V zobrazení vláken můžete analyzovat, který kód spuštěný jeden nebo více podprocesů během segment provádění. Můžete také zkontrolovat blokování sestavy a sestavy, které profilu spuštění stromu zásobníku volání.  
+ Při provádění vlákna Vizualizátor souběžnosti shromažďuje ukázky. V zobrazení vláken můžete analyzovat, jaký kód provádí jeden nebo více vláken během provádění segmentu. Můžete také prozkoumat blokování sestavy a sestavy, které profilu zásobník volání stromu spuštění.  
   
 ## <a name="usage"></a>Použití  
- Zde jsou některé způsoby, které můžete zobrazení vláken:  
+ Tady jsou některé způsoby, které můžete zobrazení vláken:  
   
--   Identifikujte důvodů, proč je reagovat uživatelské rozhraní (UI) aplikace během určité fáze spouštění.  
+-   Určení důvodů, proč uživatelského rozhraní (UI) aplikace během určité fáze spuštění nereaguje.  
   
--   Určete množství času, který strávil blokování synchronizace, vstupně-výstupních operací, chyb stránek a dalších událostí.  
+-   Určete dobu, kterou má stráví blokování synchronizace, vstupně-výstupních operací, stránkování a dalších událostí.  
   
--   Určete míru narušení z další procesy, které jsou prováděny v systému.  
+-   Identifikujte stupeň před rušením z jiných procesů, které jsou spuštěny v systému.  
   
 -   Identifikujte problémy Vyrovnávání zatížení pro paralelní zpracování.  
   
--   Identifikujte důvody pro škálovatelnost, která je zhoršené nebo neexistující (například proto výkon paralelní aplikace se nezvyšuje, když jsou k dispozici více logických jader).  
+-   Určení důvodů škálovatelnost, která je neoptimální nebo neexistující (třeba Proč se výkon paralelní aplikace se nezvyšuje, když jsou k dispozici více logických jader).  
   
--   Pochopení stupeň souběžnosti v aplikaci, která vám pomůžou paralelizace.  
+-   Seznamte se s stupeň souběžnosti v aplikacích, které vám pomůžou paralelního zpracování.  
   
--   Pochopení závislosti mezi pracovních vláken a kritické cesty provádění.  
+-   Pochopení závislostí mezi pracovních vláken a kritické cesty spuštění.  
   
-## <a name="examine-specific-time-intervals-and-threads"></a>Zkontrolujte vláken a specifické časové intervaly  
- Zobrazení vláken zobrazuje časové osy. Můžete přiblížení a posouvání v rámci časovou osu pro zjištění určitých intervalech a vláken vaší aplikace. Na ose x je čas a na ose y jsou několik kanály:  
+## <a name="examine-specific-time-intervals-and-threads"></a>Prozkoumat konkrétní časové intervaly a vlákna  
+ Zobrazení vláken ukazuje časovou osu. Můžete přiblížení a posouvání v časové ose ke kontrole určitých intervalech a vlákna vaší aplikace. Na ose x čas a na ose y jsou několika kanálů:  
   
--   Pro každou jednotku disku na systém, jeden kanál pro čtení a jeden pro zápisy dva kanály vstupně-výstupní operace.  
+-   Dva kanály vstupně-výstupních operací pro každou jednotku disku na systém, jeden kanál pro čtení a jeden pro zápis.  
   
 -   Kanál pro každé vlákno v procesu.  
   
--   Kanály značky, pokud jsou značky události v trasování. Značky kanály původně vyskytovat v části přístup z více vláken kanály, které vygeneruje tyto události.  
+-   Kanály značky, pokud jsou značky událostí v trasování. Značky kanály zpočátku zobrazí v položce vláken kanály, které vygeneruje tyto události.  
   
--   Grafický procesor kanály.  
+-   Kanály GPU.  
   
  Tady je ilustraci zobrazení vláken:  
   
- ![Zobrazení vláken](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+ ![Zobrazit vlákna](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
 Zobrazení vláken  
   
- Na začátku posloupnosti jsou řazeny v pořadí, ve kterém jsou vytvořeny, tak, aby se první hlavní vlákno aplikace. Možnost řazení v levém horním rohu zobrazení můžete použít k seřazení vláken podle jiného kritéria (například ve většině provádění práce).  
+ Na začátku vlákna jsou seřazeny v pořadí, ve kterém jsou vytvořeny, tak, aby se první hlavního vlákna aplikace. Možnost řazení v levém horním rohu zobrazení můžete řadit vlákna podle jiného kritéria (například pomocí provádí většinu práce spuštění).  
   
- Můžete skrýt, vláken, které nejsou provede práci výběrem jejich názvy ve sloupci na levé straně a pak klepnutím **skrýt vybrané vláken** tlačítka na panelu nástrojů. Doporučujeme, abyste skrýt vláken, které jsou zcela zablokovány, protože jejich statistiky jsou důležité a můžete clog sestavy.  
+ Můžete skrýt vlákna, která se provede práci výběrem jejich názvy ve sloupci na levé straně a potom kliknete **skrýt vybraná vlákna** tlačítko na panelu nástrojů. Doporučujeme, abyste skrytí vláken, které jsou zcela blokována, protože jejich statistiky nejsou relevantní a můžete clog sestavy.  
   
- K identifikaci další vlákna ke skrytí v aktivní legenda, vyberte **souhrnu podle vláken** sestavy **Sestava profilu** kartě. Zobrazí se provádění rozpis grafu, který se zobrazuje stav vláken pro aktuálně vybrané časový interval. Na úrovních některé přiblížení nemusí být zobrazeny některé vláken. V takovém případě se zobrazí symbol tří teček vpravo.  
+ Chcete-li identifikovat další vlákna skrýt v aktivní legenda, zvolte **Souhrn podle vláken** sestavy **Sestava profilu** kartu. Zobrazí rozpis spuštění grafu, který ukazuje stav vláken pro aktuálně vybraný časový interval. Na některých úrovních přiblížení nemusí být zobrazeny některá vlákna. Když k tomu dojde, symbol tří teček se zobrazí na pravé straně.  
   
- Pokud jste vybrali intervalu dobu a některé vláken v něm, můžete začít analýzy výkonu.  
+ Po výběru intervalu a některá vlákna v ní můžete spustit analýzu výkonu.  
   
-## <a name="analysis-tools"></a>nástrojů pro analýzu  
- Tato část popisuje, sestavy a jiných nástrojů pro analýzu.  
+## <a name="analysis-tools"></a>Nástroje pro analýzu  
+ Tato část popisuje sestavy a další nástroje pro analýzu.  
   
-### <a name="thread-blocking-details"></a>Podrobnosti o blokování přístup z více vláken  
- Chcete-li získat informace o blokování událostí v určité oblasti na vlákno, ukazatele myši na danou oblast zobrazíte popisek. Pokud je obsahuje informace, například kategorie, čas spuštění oblast, blokování doba trvání a blokování rozhraní API. Pokud vyberete blokování oblasti, zobrazí se v dolním podokně, společně s stejné informace, které se zobrazí v popisu tlačítka zásobníku v tomto bodě v čase. Prověřením zásobníku volání, můžete určit základní důvod pro blokování vláken událost. Výběrem segmentu a zkoumání aktuální karta můžete najít další proces a informace o přístup z více vláken.  
+### <a name="thread-blocking-details"></a>Podrobnosti o blokování vlákna  
+ Pokud chcete získat informace o blokování události v konkrétní oblasti ve vlákně, ponechte ukazatel na tuto oblast zobrazení popisu tlačítka. Obsahuje informace, jako jsou kategorie, oblasti počáteční čas, blokování trvání a blokování rozhraní API, pokud existuje. Pokud vyberete blokování oblast, zobrazí se v dolním podokně, společně s stejné informace, které se zobrazí v popisu zásobníku v daném okamžiku v čase. Tím, že kontroluje zásobníku volání, můžete určit základní příčina toho události blokování vlákna. Výběrem segmentu a zkoumání aktuální záložku můžete najít další proces a informace o vláknech.  
   
- Cesta provádění může mít více blokování událostí. Můžete zkontrolovat tak, že blokování kategorie, aby mohli najít problémových oblastí rychleji. Právě v legendě na levé straně vyberte jednu z blokování kategorií.  
+ Cesta provádění může mít více blokujících událostí. Můžete prozkoumat tyto podle kategorie blokování, abyste rychle našli problémových oblastí. Právě zvolte jednu z blokující kategorií v legendě na levé straně.  
   
 ### <a name="dependencies-between-threads"></a>Závislosti mezi vlákny  
- Vizualizér souběžnosti můžete zobrazit závislosti mezi vlákny v procesu, aby mohla určit, co blokované vlákno pokusil provést a zjistěte, jaké jiné vlákno povoleno ji provést. Pokud chcete zjistit, které vlákno odblokováno jiné vlákno, vyberte příslušné blokování segmentu. Pokud vizualizér souběžnosti můžete určit odblokování vlákno, nakreslí čáru mezi odblokování vlákno a provádění segment, který následuje blokování segmentu. Kromě toho **Unblocking zásobníku** kartě se zobrazují v zásobníku volání relevantní.  
+ Vizualizátor souběžnosti můžete zobrazit závislosti mezi vlákny v procesu, tak, aby bylo možné určit, co se snažil blokovaná vlákna a zjistěte, jaké další vlákno povoleno ji ke spuštění. Pokud chcete zjistit, které vlákno odblokováno jiným vláknem, vyberte příslušné blokující segment. Pokud Vizualizátor souběžnosti lze určit odblokování vláken, nakreslí čáru mezi odblokování vláken a provádění segment, který následuje blokující segment. Kromě toho **Unblocking zásobníku** kartě se zobrazí zásobník volání relevantní.  
   
-### <a name="thread-execution-details"></a>Podrobnosti o vlákně provádění  
- V časová osa grafu vlákna zelená segmenty zobrazit, když ho provádění kódu. Můžete získat podrobnější informace o segment provádění.  
+### <a name="thread-execution-details"></a>Podrobnosti spuštění vlákna  
+ Časová osa grafu vlákna zobrazit zelená segmenty ji při provádění kódu. Můžete získat podrobnější informace o provádění segmentu.  
   
- Když vyberete bod v segment provádění, vizualizér souběžnosti hledá tento bod v čase v zásobníku volání relevantní a potom zobrazí černé šipka nahoru výše k vybranému bodu v segmentu provádění a zásobníku volání sám sebe na  **Aktuální zásobníku** kartě. Můžete vybrat více bodů v provádění segmentu.  
+ Když vyberete bod v segmentu spuštění, Vizualizátor souběžnosti hledá tento bod v čase v zásobníku volání relevantní a pak zobrazí černé blikajícího kurzoru nad vybraný bod v segmentu spuštění a zásobník volání, samotný na  **Aktuální zásobník** kartu. Můžete vybrat několik bodů na segment spuštění.  
   
 > [!NOTE]
->  Vizualizér souběžnosti nemusí být schopni vyřešit výběr v provádění segmentu. Obvykle k tomu dochází, pokud je doba trvání segmentu méně než jeden milisekundu.  
+>  Vizualizátor souběžnosti nemusí být schopni vyřešit výběr v segmentu spuštění. Obvykle to nastane, pokud doba trvání segmentu je menší než milisekunda.  
   
- Chcete-li získat profilem spuštění pro všechny povolené (zobrazí) vláken v aktuálně vybrané časové rozmezí, zvolte **provádění** tlačítka na aktivní Legenda.  
+ Chcete-li získat profil spuštění pro všechny povolené (zobrazí) vlákna v aktuálně vybraném časovém rozsahu, zvolte **provádění** tlačítko v legendě aktivní.  
   
 ### <a name="timeline-graph"></a>Časová osa grafu  
- Časová osa grafu zobrazí aktivitu všechna vlákna v procesu a všechna zařízení fyzického disku na hostitelském počítači. Zobrazí také GPU aktivity a značky události.  Chcete-li zobrazit více podrobností nebo mimo zobrazení delší časové období se můžete přiblížit. Můžete také vybrat body na graf pro získání podrobností o kategorie, časy zahájení, doby trvání a stavy zásobníku volání.  
+ Časová osa graf zobrazuje aktivity všechna vlákna v procesu a všechna zařízení fyzického disku na hostitelském počítači. Také zobrazuje události GPU aktivity a značky.  Můžete přiblížit a zobrazit více podrobností dolů, chcete-li zobrazit tak delší interval času. Můžete také vybrat body v graphu a získat podrobnosti o kategorie, časy zahájení, dob trvání a stavy zásobníku volání.  
   
- V tomto grafu časová osa barvu, která označuje stav vlákna v daném okamžiku. Například měla provádění zelená segmenty, red segmenty byly blokovaný pro synchronizaci, byly zrušené žlutý segmentů a fialové segmenty byly zapojený do zařízení vstupně-výstupní operace. Toto zobrazení můžete zkontrolovat zůstatek pracovní mezi vláken, které se podílejí v paralelní smyčky nebo souběžné úlohy. Pokud trvá delší dobu než jiné vlákno, může nevyváženou práci. Tyto informace slouží k distribuci pracovní více rovnoměrně mezi vláken vylepšit výkon vašeho programu.  
+ V grafu časové osy barvy označuje stav vlákna v daném okamžiku. Například prováděla zelené segmenty, červenou segmentů se zablokoval pro synchronizaci, žlutý segmenty bylo přerušeno a fialové segmentů se zabývají zařízení vstupně-výstupních operací. Toto zobrazení můžete použít k prozkoumání zůstatek práci mezi vlákna, které jsou zahrnuty v paralelních smyčkách nebo souběžných úloh. Pokud vlákno trvá déle, než ostatní, může nevyváženou práce. Tyto informace můžete použít ke zlepšení výkonu programu díky distribuci práce více rovnoměrně mezi vlákna.  
   
- Pokud pouze jedno vlákno je zelený (provádění) v bodě v čase, aplikace nemusí být plně využít souběžnost v systému. Časová osa grafu můžete zkontrolovat závislosti mezi vláken a dočasné vztahy mezi blokování a zablokuje vláken. Ke změně uspořádání vláken, vyberte vlákna a na panelu nástrojů vyberte nahoru nebo dolů tlačítko. Chcete-li skrýt vláken, vyberte je a potom vyberte **skrýt vláken** tlačítko.  
+ Pokud pouze jedno vlákno je zelenou (provedena) v bodě v čase, aplikace nemusí být plně využít souběžnost v systému. Časová osa grafu můžete použít k prozkoumání závislosti mezi vlákny a časové vztahy mezi blokování a zablokovat vlákna. Chcete-li uspořádat vlákna, vyberte vlákno a na panelu nástrojů zvolte nahoru nebo dolů. Chcete-li skrýt vlákna, vyberte je a klikněte na tlačítko **skrýt vlákna** tlačítko.  
   
 ### <a name="profile-reports"></a>Profilu, sestavy  
- Pod časovou osu grafu je profil časové osy a podokno, které jsou karty pro různé sestavy. Sestavy automaticky aktualizuje, když změníte zobrazení vláken. Pro velké trasování může být podokně sestav není k dispozici při jsou vypočítávány aktualizace. Každá sestava obsahuje dvě úpravy filtru: noise snížení a pouze můj kód. Pomocí snížení šumu vyfiltrovat položky stromu volání, kde je málo čas strávený. Výchozí hodnota filtru je % 2, ale můžete jej přizpůsobit v rozsahu 0 až 99 procent. Chcete-li zobrazit pouze stromu volání kódu, vyberte **pouze můj kód** zaškrtávací políčko. Chcete-li zobrazit všechny volání stromy, zrušte jeho zaškrtnutí.  
+ Graf níže na časové ose je profil časové osy a podokno, které obsahuje karty pro různé sestavy. Sestavy se automaticky aktualizují po provedení změny zobrazení vláken. U velkých trasování může být podokna sestav není k dispozici během aktualizace se počítají. Každá sestava obsahuje dvě úpravy filtru: noise snížení a pouze můj kód. Můžete vyfiltrovat položky stromu volání trvají delší dobu málo snížení šumu. Výchozí hodnota filtru je % 2, ale můžete jej přizpůsobit v rozsahu 0 až 99 procent. Chcete-li zobrazit pouze strom volání pro kód, vyberte **pouze můj kód** zaškrtávací políčko. Chcete-li zobrazit všechny stromy nákladného volání, vymažte ho.  
   
 #### <a name="profile-report"></a>Sestava profilu  
- Tato karta zobrazuje sestavy, které odpovídají položky v legendě active. Chcete-li zobrazit sestavu, zvolte jeden ze záznamů.  
+ Tato karta zobrazuje sestavy, které odpovídají položky v legendě aktivní. Pokud chcete zobrazit sestavy, zvolte jednu z položek.  
   
-#### <a name="current-stack"></a>Aktuální zásobníku  
- Na této kartě se zobrazuje zásobníku volání pro vybraný bod v segment přístup z více vláken v časová osa grafu. Zásobníky volání jsou oříznut zobrazíte pouze aktivity, která souvisí s vaším programem.  
+#### <a name="current-stack"></a>Aktuální zásobník  
+ Tato karta zobrazuje zásobník volání pro vybraný bod na segment vlákna v časové osy grafu. Chcete-li zobrazit pouze aktivity týkající se programu jsou oříznut zásobníky volání.  
   
 #### <a name="unblocking-stack"></a>Odblokování zásobníku  
- V tématu, které vlákno odblokováno vybrané vlákno, a v jaké řádek kódu, vyberte **Unblocking zásobníku** kartě.  
+ Vidět, které vlákno odblokováno zvoleném vlákně, a na jaké řádku kódu, zvolte **Unblocking zásobníku** kartu.  
   
 #### <a name="execution"></a>Spuštění  
- Provádění sestava ukazuje rozdělení času stráveného aplikace při provádění.  
+ Spuštění sestavy zobrazí rozpis čas strávený aplikace v provádění.  
   
- Najít řádek kódu, ve kterém je provádění čas strávený, rozbalte strom volání a zvolte na místní nabídku pro položku volání stromu, **zobrazit zdroj** nebo **zobrazení volání webů**. **Zobrazit zdroj** vyhledá spuštěného řádku kódu. **Zobrazení volání lokalit** vyhledá řádek kódu, který volá spuštěného řádku kódu. Pokud jenom jedna lokalita volání existuje, je označený jeho řádek kódu. Pokud existuje více lokalit volání, můžete si vybrat ten, který chcete v dialogu, který se zobrazí a potom zvolte **, přejděte na zdrojový** tlačítko zvýrazněte kód lokality volání. Často je velmi užitečné najít lokalitu volání, která obsahuje nejvíce instancí, nejvíce času nebo obojí. Další informace najdete v tématu [Sestava profilu spuštění](../profiling/execution-profile-report.md).  
+ Najít řádek kódu, ve kterém byl stráven čas spuštění, rozbalte stromovou strukturu volání a pak v místní nabídce pro položka stromu volání, zvolte **zobrazit zdroj** nebo **lokalit volání zobrazení**. **Zobrazení zdroje** vyhledá spuštěných řádků kódu. **Zobrazit lokality volání** vyhledává řádek kódu, který volal spuštěných řádků kódu. Pokud existuje jedna lokalita volání jenom jeho řádek kódu je zvýrazněn. Pokud existuje více lokalit volání, můžete vybrat ten, který chcete v dialogovém okně, které se zobrazí a klikněte na tlačítko **přejít ke zdroji** tlačítko, abyste měli na očích kód lokality volání. Často je zvláště užitečná k vyhledání lokalitu volání, která má nejvíce instance nebo nejvíce času. Další informace najdete v tématu [Sestava profilu spuštění](../profiling/execution-profile-report.md).  
   
 #### <a name="synchronization"></a>Synchronizace  
- Synchronizace sestava ukazuje volání, které jsou zodpovědní za synchronizaci bloky, společně s agregace blokování časy každý zásobníku volání. Další informace najdete v tématu [čas synchronizace](../profiling/synchronization-time.md).  
+ Synchronizace sestava ukazuje volání, které jsou zodpovědné za synchronizaci bloky, společně s agregace blokování časy každý zásobník volání. Další informace najdete v tématu [čas synchronizace](../profiling/synchronization-time.md).  
   
 #### <a name="io"></a>I/O  
- Sestava vstupně-výstupních operací obsahuje volání, které jsou zodpovědní za bloky vstupně-výstupních operací, společně s agregace blokování časy každý zásobníku volání. Další informace najdete v tématu [čas vstupně-výstupních operací (zobrazení vláken)](../profiling/i-o-time-threads-view.md).  
+ Vstupně-výstupních operací sestava ukazuje volání, které jsou zodpovědné za vstupně-výstupních operací bloky, společně s agregace blokování časy každý zásobník volání. Další informace najdete v tématu [čas I/O (zobrazení vláken)](../profiling/i-o-time-threads-view.md).  
   
 #### <a name="sleep"></a>Přejít do režimu spánku  
- Sestava režimu spánku zobrazí volání, které jsou zodpovědní za bloky režimu spánku, společně s agregace blokování časy každý zásobníku volání. Další informace najdete v tématu [doba spánku](../profiling/sleep-time.md).  
+ Sestava režimu spánku zobrazí volání, které jsou zodpovědné za z režimu spánku bloky, společně s agregace blokování časy každý zásobník volání. Další informace najdete v tématu [doba spánku](../profiling/sleep-time.md).  
   
 #### <a name="memory-management"></a>Správa paměti  
- Sestava správy paměti obsahuje volání, kde bloky správy paměti došlo k chybě, společně s agregace blokování časy každý zásobníku volání. Tyto informace můžete určit oblasti, které mají nadměrné stránkování nebo paměti kolekce problémy.  Další informace najdete v tématu [čas správy paměti](../profiling/memory-management-time.md).  
+ Sestavy správy paměti ukazuje volání, kde Správa bloky paměti došlo k chybě, společně s agregace blokování časy každý zásobník volání. Tyto informace můžete použít k identifikaci oblasti, které mají nadměrné stránkování nebo uvolňování paměti kolekce problémy.  Další informace najdete v tématu [čas správy paměti](../profiling/memory-management-time.md).  
   
-#### <a name="preemption"></a>Přerušování  
- Tato sestava přerušování zobrazuje instance, kde procesy v systému zrušené aktuálním procesem a jednotlivých vláken, která nahradí vláken v aktuálním procesu. Tyto informace můžete použít k identifikaci procesy a vláken, které nejvíce odpovídají za přerušení. Další informace najdete v tématu [čas přerušení](../profiling/preemption-time.md).  
+#### <a name="preemption"></a>Přerušení  
+ Sestava přerušení ukazuje instance, kde procesy v systému přepnuto aktuální proces a jednotlivá vlákna, které nahradí vlákna v aktuálním procesu. Tyto informace můžete použít k identifikaci procesy a vlákna, které nejvíce odpovídají za přerušení. Další informace najdete v tématu [čas přerušení](../profiling/preemption-time.md).  
   
 #### <a name="ui-processing"></a>Zpracování uživatelského rozhraní  
- Sestava zpracování uživatelského rozhraní obsahuje volání, které jsou zodpovědní za uživatelského rozhraní, zpracování bloky, společně s agregace blokování časy každý zásobníku volání. Další informace najdete v tématu [doba zpracování uživatelského rozhraní](../profiling/ui-processing-time.md).  
+ Sestava zpracování uživatelského rozhraní obsahuje volání, které jsou zodpovědné za uživatelské rozhraní, zpracování bloky, společně s agregace blokování časy každý zásobník volání. Další informace najdete v tématu [doba zpracování uživatelského rozhraní](../profiling/ui-processing-time.md).  
   
-#### <a name="per-thread-summary"></a>Na vlákno souhrn  
- Na této kartě zobrazuje zobrazení barevně sloupec celkový čas, každé vlákno věnovaný spustit, blokované, vstupně-výstupních operací a ostatní stavy. Sloupce, které jsou označené dole. Při změně úrovně přiblížení v časová osa grafu na této kartě se automaticky aktualizuje. Na úrovních některé přiblížení nemusí být zobrazeny některé vláken. V takovém případě se zobrazí symbol tří teček vpravo. Pokud vlákno, které chcete nezobrazí, můžete skrýt, jiná vlákna. Další informace najdete v tématu [sestava souhrnu podle vláken](../profiling/per-thread-summary-report.md).  
+#### <a name="per-thread-summary"></a>Na souhrnné vlákno  
+ Tato karta zobrazuje barevně sloupcové zobrazení celkového času, že každý podproces trvání běhu, zablokuje vstupně-výstupní operace a dalších státech. Sloupce jsou označeny v dolní části. Při úpravě úroveň zvětšení časové osy grafu se automaticky aktualizuje na této kartě. Na některých úrovních přiblížení nemusí být zobrazeny některá vlákna. Když k tomu dojde, symbol tří teček se zobrazí na pravé straně. Pokud vlákno, které chcete, aby se nezobrazí, můžete skrýt ostatní vlákna. Další informace najdete v tématu [sestava souhrnu podle vláken](../profiling/per-thread-summary-report.md).  
   
-#### <a name="disk-operations"></a>Diskových operací  
- Tato karta zobrazuje které procesy a vláken byly součástí diskové vstupně-výstupních operací jménem aktuální proces, které soubory se dotýkal (například knihovny DLL, které byly načteny), kolik bajtů byly čtení a další informace. Tato sestava slouží k vyhodnocení času stráveného v přístupu k souborům během provádění, zejména v případě, že je váš proces je pravděpodobně vázán vstupně-výstupní operace. Další informace najdete v tématu [disku sestava operací](../profiling/disk-operations-report-threads-view.md).  
+#### <a name="disk-operations"></a>Operace disků  
+ Tato karta zobrazuje, které procesy a vlákna byly zahrnuty v / v disku jménem aktuálního procesu, které soubory jsou některé (například knihovny DLL, které byly načteny), kolik bajtů načtených a další informace. Tato sestava slouží k vyhodnocení času, který byl stráven během provádění, přístup k souborům, zejména v případě, že váš proces zdá se, že se vstupně-výstupních operací, které jsou vázány. Další informace najdete v tématu [sestavu operací disku](../profiling/disk-operations-report-threads-view.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Vizualizér souběžnosti](../profiling/concurrency-visualizer.md)

@@ -15,19 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d513ce5d9439ffa55a32d5210669162c0a21e2e
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 72e9340a062b0b394b423d0403b46cbb2ecb8628
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255818"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676597"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;aplikace&gt; – element (vývoj pro Office v sadě Visual Studio)
-  `application` Element `vstav3` obor názvů zabalí popis řešení pro systém Office. Podřízené elementy se liší pro přizpůsobení na úrovni dokumentu a doplňků VSTO.  
+  `application` Elementu `vstav3` obor názvů zabalí popis řešení pro systém Office. Podřízené prvky se liší pro přizpůsobení na úrovni dokumentu a doplňky VSTO.  
   
-## <a name="syntax-for-document-level-customizations"></a>Syntaxe pro úpravy na úrovni dokumentů  
+## <a name="syntax-for-document-level-customizations"></a>Syntaxe pro přizpůsobení na úrovni dokumentu  
   
-```xml  
+```xml 
 <application>  
   <customization  
     id  
@@ -56,19 +56,19 @@ ms.locfileid: "35255818"
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementy a atributy  
- `application` Element `vstav3` obor názvů je uzlu, který zabalí všechny informace specifické pro přizpůsobení, které je součástí `vstov4` oboru názvů.  
+ `application` Elementu `vstav3` obor názvů je uzel, který zabalí všechny informace specifické pro přizpůsobení, která je součástí `vstov4` oboru názvů.  
   
- `application` Element nemá žádné atributy.  
+ `application` Prvek nemá žádné atributy.  
   
  `application` Element má následující element.  
   
-### <a name="customization"></a>Přizpůsobení  
- Role `customization` element v `vstov3` obor názvů je definován v [ &#60;přizpůsobení&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
+### <a name="customization"></a>Vlastní nastavení  
+ Role `customization` element v `vstov3` obor názvů je definovaný v [ &#60;přizpůsobení&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Příklad přizpůsobení na úrovni dokumentu  
   
 ### <a name="description"></a>Popis  
- Následující příklad kódu ukazuje `application` element v řešení úrovni dokumentu Office nasadit pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu vztahujícího se v [manifesty aplikací pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
+ Následující příklad kódu ukazuje `application` prvek v řešení pro Office úrovni dokumentu nasazeným v rámci [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu určeného v [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kód  
   
@@ -87,7 +87,7 @@ ms.locfileid: "35255818"
 ## <a name="vsto-add-in-example"></a>Příklad doplňku VSTO  
   
 ### <a name="description"></a>Popis  
- Následující příklad kódu ukazuje `application` element v řešení Office úrovni aplikace nasazené pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu vztahujícího se v [manifesty aplikací pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
+ Následující příklad kódu ukazuje `application` prvek v řešení pro Office úrovni aplikace nasazené pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu určeného v [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kód  
   
@@ -123,7 +123,7 @@ ms.locfileid: "35255818"
   
 ## <a name="see-also"></a>Viz také:  
  [Manifesty aplikace pro řešení pro systém Office](../vsto/application-manifests-for-office-solutions.md)   
- [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Manifesty nasazení pro řešení pro systém Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce – manifest aplikace](/visualstudio/deployment/clickonce-application-manifest)  
   
   

@@ -16,25 +16,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 153c9c3e32252f21dafd5b2d6bd6eb8ec1752161
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: e27b0a19005b7076629f2848f95c8cb5749c096f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257862"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676481"
 ---
 # <a name="how-to-programmatically-close-visio-documents"></a>Postupy: zavírání dokumentů aplikace Visio prostřednictvím kódu programu
-  Aktivní dokument aplikace Microsoft Office Visio můžete zavřít pomocí `Microsoft.Office.Interop.Visio.Document.Close` metoda.  
+  Můžete zavřít aktivní dokument aplikace Microsoft Office Visio pomocí `Microsoft.Office.Interop.Visio.Document.Close` metody.  
   
- Podrobnosti o této metodě najdete v tématu referenční dokumentaci VBA pro [Microsoft.Office.Interop.Visio.Document.Close](http://msdn.microsoft.com/library/office/ff767415.aspx) metoda.  
+ Podrobnosti o této metodě naleznete v referenční dokumentaci jazyka VBA pro [Microsoft.Office.Interop.Visio.Document.Close](http://msdn.microsoft.com/library/office/ff767415.aspx) metody.  
   
-## <a name="close-the-active-document"></a>Zavře aktivní dokument.  
+## <a name="close-the-active-document"></a>Zavřít aktivní dokument  
   
 ### <a name="to-close-the-active-document"></a>Zavření aktivního dokumentu  
   
--   Volání `Microsoft.Office.Interop.Visio.Document.Close` metodu zavře aktivní dokument.  
+-   Volání `Microsoft.Office.Interop.Visio.Document.Close` metoda zavřít aktivní dokument.  
   
-     Chcete-li použít následující příklad kódu, spusťte jej `ThisAddIn` – třída v projektu doplňku VSTO pro aplikaci Visio.  
+     Chcete-li použít následující příklad kódu, spusťte `ThisAddIn` třídy v projektu doplňku VSTO pro Visio.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#7)]  

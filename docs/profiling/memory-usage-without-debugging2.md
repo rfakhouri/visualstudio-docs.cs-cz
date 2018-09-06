@@ -1,5 +1,5 @@
 ---
-title: Analýza využití paměti bez ladicí program VS | Microsoft Docs
+title: Analýza využití paměti bez ladicího programu VS | Dokumentace Microsoftu
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,195 +14,195 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99e46e6e21eb08095aab0fe4f0baa9486ad3f721
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255925"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676085"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analýza využití paměti bez ladicího programu sady Visual Studio
-Můžete použít **využití paměti** nástroje bez ladění proveďte následující  
+Můžete použít **využití paměti** nástroje bez ladění můžete provádět následující  
   
--   Monitorování vaší aplikace paměti při vývoji scénáři použití vpravo v sadě Visual Studio.  
+-   Sledování vaší aplikace paměti při vývoji scénáři použít přímo v sadě Visual Studio.  
   
--   Vytvořte podrobná snímky stavu paměti vaší aplikace.  
+-   Vytvořte podrobný snímek stavu paměti aplikace.  
   
--   Porovnejte snímky najít hlavní příčinu problémů s pamětí.  
+-   Porovnejte snímky k nalezení původní příčiny problémů s pamětí.  
   
- Toto téma popisuje, jak použít nástroj využití paměti pro analýzu aplikace UWP XAML. Pokud chcete analýza využití paměti v aplikaci UWP, která používá JavaScript a HTML najdete v tématu [analýza využití paměti (JavaScript)](../profiling/javascript-memory.md).  
+ Toto téma popisuje, jak pomocí nástroje využití paměti pro analýzu aplikace UPW XAML. Pokud chcete analyzovat využití paměti v aplikaci pro UPW, která používá JavaScript a HTML naleznete v tématu [analýza využití paměti (JavaScript)](../profiling/javascript-memory.md).  
   
-## <a name="start-a-memory-usage-diagnostic-session"></a>Spustit diagnostické relaci využití paměti  
+## <a name="start-a-memory-usage-diagnostic-session"></a>Spuštění diagnostické relace využití paměti  
   
-1.  Otevřete projekt C# Universal Windows v sadě Visual Studio.  
+1.  Otevřete projekt Windows Universal C# v sadě Visual Studio.  
   
-2.  Na řádku nabídek zvolte **ladění**>**výkonu profileru**.  
+2.  V panelu nabídky zvolte **ladění** > **Profiler výkonu**.  
   
-3.  Vyberte **využití paměti** a potom zvolte **spustit** tlačítko v dolní části stránky.  
+3.  Vyberte **využití paměti** a klikněte na tlačítko **Start** tlačítko v dolní části stránky.  
   
-     ![Spustit diagnostické relaci využití paměti](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
+     ![Spuštění diagnostické relace využití paměti](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-## <a name="monitor-memory-use"></a>Monitorování využití paměti  
- Přestože je možné použít **využití paměti** nástroje generovat podrobné sestavy, které vám pomůže najít a opravit problémy, můžete ji použít i k účinky v reálném čase paměti scénáři aktivně vyvíjíte.  
+## <a name="monitor-memory-use"></a>Monitorovat využití paměti  
+ Přestože lze použít **využití paměti** nástroj pro generování podrobných sestav, které můžete najít a opravit problémy, také vám pomůže ho v reálném čase paměti účinky scénář aktivně vyvíjíte.  
   
- Při spuštění relace diagnostiky spuštění vaší aplikace a **diagnostické nástroje** okně se zobrazí graf časová osa využití paměti vaší aplikace.  
+ Při spuštění diagnostické relace spuštění vaší aplikace a **diagnostické nástroje** okna zobrazuje časové osy grafu využití paměti vaší aplikace.  
   
  ![Stránka s přehledem využití paměti](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
   
- Časová osa grafu ukazuje kolísání paměti vaše aplikace běží. Špičky v grafu obvykle znamenat, že nějaký kód je shromažďování nebo vytváření dat a pak zahození po dokončení zpracování. Extrémní označují oblasti, které je možné k optimalizaci. Další zájmu je zvýšení využití paměti, která nevrátí, protože může to znamenat využití neefektivní paměti nebo i nevrácenou pamětí.  
+ Časová osa graf ukazuje kolísání v paměti aplikace při jejím spuštění. Poraďte se špičkami grafu obvykle naznačují, že nějaký kód je shromažďování nebo vytváření dat a po dokončení zpracování se odstraní. Extrémní značit kritický bod, ke které je možné optimalizovat. Důležitější je nárůst využití paměti, která nevrátí, protože to může znamenat neefektivní využití paměti nebo dokonce nevracení paměti.  
   
-###  <a name="BKMK_Close_a_monitoring_session"></a> Zavřete relaci monitorování  
- ![Zastavit sběr](../profiling/media/memuse__stopcollection.png "MEMUSE__StopCollection")  
+###  <a name="BKMK_Close_a_monitoring_session"></a> Ukončit relaci sledování  
+ ![Zastavit shromažďování](../profiling/media/memuse__stopcollection.png "MEMUSE__StopCollection")  
   
- Chcete-li ukončit relaci sledování bez vytváření sestavy, právě zavřete okno diagnostiky. Chcete-li vygenerovat sestavu, pokud jste pořídili snímky paměti, zvolte **Zastavit**.  
+ Zastavit relaci sledování bez vytváření sestav, pouze zavřete okno diagnostiky. Chcete-li generovat sestavu, když jste pořídili snímky paměti, zvolte **Zastavit**.  
   
-## <a name="take-snapshots-of-the-memory-state-of-your-app"></a>Pořízení snímků je stav paměti aplikace  
- Pokud zjistíte paměti problém, který chcete prozkoumat, může trvat snímky během relace diagnostiky k zachycení objekty v paměti v konkrétní situacích. Protože se některá aplikace používá velký počet mnoho typů objektů, můžete chtít analýzy soustředit se jenom na jeden scénář. Je také vhodné k vytvoření standardních hodnot výpisu aplikace předtím, než se zobrazí chybu paměti, nový snímek po prvním výskytem problému a jeden nebo více další snímky Pokud scénáři, můžete opakovat.  
+## <a name="take-snapshots-of-the-memory-state-of-your-app"></a>Pořizovat snímky stavu paměti aplikace  
+ Pokud zjistíte chybu paměti, kterou chcete prozkoumat, můžete také pořizovat snímky během diagnostické relace zachycení objektů v paměti v určité chvíli. Vzhledem k tomu, že aplikace používá velké množství mnoha typů objektů, může být vhodné soustředit se na jeden scénář analýzy. Je také vhodné získat snímek směrného plánu aplikace, než se zobrazí paměť problém, jiný snímek po prvním výskytu tohoto problému a nejmíň jeden další snímky Pokud scénář, můžete opakovat.  
   
- Shromažďování snímků, zahájit novou relaci diagnostiky. Zvolte **trvat snímku** Pokud chcete zaznamenání dat o paměti. Chcete-li vygenerovat sestavu, zvolte **Zastavit**.  
+ Shromažďování snímků, spusťte novou relaci diagnostiky. Zvolte **snímku trvat** když potřebujete zachytit data paměti. Chcete-li generovat sestavy, zvolte **Zastavit**.  
   
 ##  <a name="memory-usage-overview-page"></a>Stránka s přehledem využití paměti  
- Poté, co zastavíte shromažďování dat, nástroj využití paměti ukončí aplikaci a zobrazí přehled sestavy.  
+ Poté, co zastavíte shromažďování dat, nástroj využití paměti aplikace ukončí a zobrazí přehled sestav.  
   
  ![Stránka s přehledem využití paměti](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
   
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Zobrazení snímku využití paměti  
- Otevřete podrobné sestavy v systému windows nové sady Visual Studio používáte zobrazení snímku. Existují dva typy snímků zobrazení:  
+ Pomocí zobrazení snímku v nových oknech sady Visual Studio otevřete podrobné sestavy. Existují dva druhy zobrazení snímku:  
   
--   A [snímku podrobnosti sestavy](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) zobrazuje typy a instance v jeden snímek.  
+-   A [snímku podrobnosti sestavy](#snapshot-reports) ukazuje typy a instance v jeden snímek.  
   
--   A [snímek sestavy rozdíl (rozdílové)](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) porovná typy a instance v dva snímky.  
+-   A [rozdíl (rozdíl) sestavy snímků](#snapshot-difference-diff-reports) porovnává typy a instance v dvěma snímky.  
   
- ![Pořízení snímku zobrazení odkazy](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
+ ![Zobrazit odkazy na pořízení snímku](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Číslované položky na obrázku snímku zobrazení jsou odkazy, které otevřete zobrazení sestav využití paměti.  
+ Číslované položky obrázku zobrazení snímku jsou odkazy, které otevřete zobrazení sestav využití paměti.  
   
 |||  
 |-|-|  
-|![1. krok](../profiling/media/procguid_1.png "ProcGuid_1")|Text odkazu zobrazuje celkový počet bajtů v paměti, když pořízení snímku.<br /><br /> Vyberte tento odkaz na Zobrazit sestavu Podrobnosti snímku seřazených podle celková velikost instance typu.|  
-|![2. krok](../profiling/media/procguid_2.png "ProcGuid_2")|Text odkazu zobrazuje celkový počet objektů v paměti, když pořízení snímku.<br /><br /> Vyberte tento odkaz na Zobrazit sestavu Podrobnosti snímku seřazených podle počtu instancí typy.|  
-|![3. krok](../profiling/media/procguid_3.png "ProcGuid_3")|Text odkazu ukazuje rozdíl mezi celková velikost objektů v paměti v tuto chvíli tento snímek a celková velikost předchozí snímek.<br /><br /> Text odkazu je kladné číslo, když tento snímek velikost paměti je větší než předchozí a na záporné číslo, když velikost je menší. Text odkazu **směrného plánu** označuje, že tento snímek je první v relace diagnostiky; **Žádný rozdíl** označuje, že rozdíl je nula.<br /><br /> Vyberte tento odkaz na Zobrazit sestavu rozdílové snímku seřazených podle rozdíl ve celková velikost instance typy.|  
-|![4. krok](../profiling/media/procguid_4.png "ProcGuid_4")|Text odkazu ukazuje rozdíl mezi celkový počet paměťových objektech v tento snímek a počet objektů v předchozí snímek.<br /><br /> Vyberte tento odkaz na Zobrazit sestavu rozdílové snímku seřazených podle rozdíl ve celkový počet instancí typy.|  
+|![1. krok](../profiling/media/procguid_1.png "ProcGuid_1")|Text odkazu zobrazuje celkový počet bajtů v paměti při pořízení snímku.<br /><br /> Vyberte tento odkaz zobrazíte podrobnosti sestavy snímku, který je seřazen podle celkové velikosti instance typu.|  
+|![2. krok](../profiling/media/procguid_2.png "ProcGuid_2")|Text odkazu zobrazuje celkový počet objektů v paměti při pořízení snímku.<br /><br /> Vyberte tento odkaz zobrazíte podrobnosti sestavy snímku, který je seřazen podle počtu instancí typů.|  
+|![3. krok](../profiling/media/procguid_3.png "ProcGuid_3")|Text odkazu zobrazuje rozdíl mezi celková velikost objektů v paměti v tuto chvíli tento snímek a celkovou velikost předchozí snímek.<br /><br /> Text odkazu je kladné číslo, pokud velikost paměti snímku je větší než předchozí a záporné číslo, pokud velikost je menší. Text odkazu **směrného plánu** označuje, že tento snímek je první v relaci diagnostiky. **Žádný rozdíl** označuje, že rozdíl je nula.<br /><br /> Vyberte tento odkaz zobrazíte sestavu snímku rozdíl, který je seřazen podle rozdíl celkové velikosti instance typů.|  
+|![4. krok](../profiling/media/procguid_4.png "ProcGuid_4")|Text odkazu zobrazuje rozdíl mezi celkový počet objektů v paměti v tomto snímku a počet objektů v předchozím snímkem.<br /><br /> Vyberte tento odkaz zobrazíte sestavu snímku rozdíl, který je seřazen podle rozdíl v celkovém počtu instancí typů.|  
   
-## <a name="snapshot-reports"></a>Snímku sestavy  
- ![Využití paměti snímek sestavy](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
+## <a name="snapshot-reports"></a>Sestavy snímků  
+ ![Sestavu snímku využití paměti](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
   
-###  <a name="BKMK_Snapshot_report_trees"></a> Stromy snímku sestavy  
+###  <a name="BKMK_Snapshot_report_trees"></a> Stromy sestavy snímku  
   
 ####  <a name="BKMK_Managed_Heap"></a> Spravovaná halda  
- Spravovaná halda stromu [stromu spravované haldy (snímku podrobnosti)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_details_) a [stromu spravované haldy (snímku rozdílové)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_diff_) zobrazit typy a instance v sestavě. Výběr typu nebo instance zobrazí **cest k kořenové** a **odkazuje objekty** stromy pro vybranou položku.  
+ Spravovaná halda stromu [stromu spravované haldy (podrobnosti o snímku)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_details_) a [stromu spravované haldy (rozdíl snímku)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_diff_) zobrazit typy a instance v sestavě. Výběr typu nebo instance zobrazí **cesty ke kořenu** a **odkazované objekty** stromů pro vybranou položku.  
   
-####  <a name="BKMK_Paths_to_Root"></a> Cesty, které se kořenový  
- [Cesty do stromu kořenové (snímku podrobnosti)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_details_) a [cesty do stromu kořenové (snímku rozdílové)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_diff_) zobrazit řetězu objektů, které odkazují na typ, nebo instance. Uvolňování paměti rozhraní .NET Framework vyčistí paměti pro objekt jenom v případě, že byly vydány všechny odkazy na ni.  
+####  <a name="BKMK_Paths_to_Root"></a> Cesty ke kořenu  
+ [Cesty ke kořenové stromu (podrobnosti o snímku)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_details_) a [cesty ke kořenové stromu (snímek diff)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_diff_) zobrazit řetězec objekty, které odkazují na tento typ nebo instance. Paměť pro objekt vyčistí systému uvolňování paměti rozhraní .NET Framework, pouze v případě, že všechny odkazy na něj byly vydány.  
   
 ####  <a name="BKMK_Referenced_Objects"></a> Odkazované objekty  
- [Stromu odkazuje objekty (snímku podrobnosti)](../profiling/memory-usage-without-debugging2.md#BKMK_Referenced_Objects_tree__Snapshot_details_) a [stromu odkazuje objekty (snímku rozdílové)](../profiling/memory-usage-without-debugging2.md#BKMK_Referenced_Objects_tree__Snapshot_diff_) zobrazit objekty, které odkazuje na vybraný typ nebo instance.  
+ [Stromu odkazované objekty (podrobnosti o snímku)](../profiling/memory-usage-without-debugging2.md#BKMK_Referenced_Objects_tree__Snapshot_details_) a [stromu odkazované objekty (rozdíl snímku)](../profiling/memory-usage-without-debugging2.md#BKMK_Referenced_Objects_tree__Snapshot_diff_) zobrazit objekty, které se odkazuje vybraný typ nebo instance.  
   
 ###  <a name="BKMK_Object_Type_and_Instance_fields"></a> Typ objektu a Instance pole  
- Když **typ objektu** položka má podřízené položky, můžete na ikonu šipky k jejich zobrazení. Pokud barva **typ objektu** text je modrá, můžete ho přejděte na objekt v jeho souboru se zdrojovým kódem. Zdrojový soubor se otevře v samostatném okně.  
+ Když **typ objektu** položka obsahuje podřízené položky, můžete vybrat ikonu šipky k jejich zobrazení. Pokud barvu **typ objektu** text je modrá, můžete ho chcete přejít na objekt v jeho souboru se zdrojovým kódem. Zdrojový soubor se otevře v samostatném okně.  
   
- Názvy instancí jsou jedinečná ID, které jsou generovány nástrojem pro využití paměti.  
+ Názvy instancí jsou jedinečné identifikátory, které jsou generovány pomocí nástroje využití paměti.  
   
- Pokud si všimnete typ, který nelze snadno identifikovat, nebo pokud nevíte, jak je zahrnuta ve vašem kódu, je pravděpodobně objekt z rozhraní .NET Framework, operační systém nebo kompilátoru, která nástroj využití paměti se zobrazí, protože je součástí vlastnictví řetězců vašich objektů.  
+ Pokud si všimnete typ, který nelze snadno identifikovat, nebo pokud si nejste jisti, jak je zahrnuta ve vašem kódu, je pravděpodobně objektu z rozhraní .NET Framework, operační systém nebo kompilátoru, která zobrazuje nástroj využití paměti, protože je součástí řetězce vlastnictví objekty.  
   
-###  <a name="BKMK_Report_tree_filters_"></a> Filtry sestavy stromu  
- Většina aplikací obsahovat překvapivě velký počet různých typů, většina z nich velmi zajímavé pro vývojáře aplikace. **Využití paměti** nástroj definuje dva filtry, které můžete použít ke skrytí většinu těchto typů v **spravovaná halda** a **cest k kořenové** stromy. Můžete také filtrovat stromu název typu.  
+###  <a name="BKMK_Report_tree_filters_"></a> Filtry sestav stromu  
+ Většina aplikací obsahuje překvapivě velký počet typů, z nichž většina nejsou velmi zajímavé pro vývojáře aplikace. **Využití paměti** nástroj definuje dva filtry, které můžete použít ke skrytí většina z těchto typů v **spravované haldy** a **cesty ke kořenu** stromové struktury. Větve můžete také filtrovat podle názvu typu.  
   
- ![Možnosti třídění a filtrování](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")  
+ ![Možnosti řazení a filtrování](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")  
   
 ####  <a name="BKMK_Filter"></a> Filtr  
- Zadejte řetězec ve **filtru** pole omezit stromu zobrazuje na typy, které obsahují zadaný text. Filtr není velká a malá písmena a rozpozná zadaný řetězec v žádné části názvy typů.  
+ Zadejte řetězec **filtr** políčka můžete omezit stromu se zobrazí na typy, které obsahují zadaný text. Filtr není velká a malá písmena a rozpozná zadaného řetězce v libovolné části názvu typu.  
   
-####  <a name="BKMK_Collapse_Small_Objects"></a> Sbalit malých objektů  
- Když tento filtr je použit, jehož typy **velikost (bajty)** je menší než 0,5 procent celkové velikosti paměti snímku se v skryté **spravovaná halda** seznamu.  
+####  <a name="BKMK_Collapse_Small_Objects"></a> Sbalit malé objekty  
+ Při použití tohoto filtru, typy, jejichž **velikost (bajty)** je menší než 0,5 procent celkové velikosti paměti snímku jsou skryté v **spravované haldy** seznamu.  
   
 ####  <a name="BKMK_Just_My_Code"></a> Pouze můj kód  
- **Pouze můj kód** filtru skryje většina instancí, které jsou generovány nástrojem externí kódu. Externí typy patří v operačním systému nebo součástí architektury, nebo jsou generované kompilátorem.  
+ **Pouze můj kód** filtr skryje největším množstvím instancí, které se vygenerovaly externí kód. Externí typy jsou vlastní operační systém nebo komponentami rozhraní nebo jsou generovány kompilátorem.  
   
-## <a name="snapshot-details-reports"></a>Podrobnosti snímku sestavy  
- Použijete snímek podrobnosti sestavy a zaměřit se na jeden snímek z relace diagnostiky. Otevřete sestavu podrobnosti, vyberte jednu z odkazů v zobrazení snímku, jak je znázorněno na následujícím obrázku. Obě odkaz otevře stejné sestavě; jediným rozdílem je výchozí pořadí řazení **spravovaná halda** stromu v sestavě. V obou případech můžete změnit pořadí řazení po sestava se otevře.  
+## <a name="snapshot-details-reports"></a>Podrobnosti sestavy snímku  
+ Sestava podrobnosti o snímku vám soustředit se na jeden snímek z diagnostické relace. Podrobnosti chcete sestavu otevřít, zvolte jeden z odkazů v zobrazení snímku, jak je znázorněno na následujícím obrázku. Oba odkazy otevřít stejné sestavy. jediným rozdílem je výchozí pořadí řazení **spravované haldy** stromu v sestavě. V obou případech můžete změnit pořadí řazení po sestava se otevře.  
   
- ![Odkazy na snímek sestavy v zobrazení snímku](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
+ ![Odkazy na sestavy snímku v zobrazení snímku](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
   
--   **MB** odkaz seřadí sestava podle **(včetně). velikost (bajty)** sloupce.  
+-   **MB** seřadí sestavy podle odkazu **celkové velikosti (bajty)** sloupce.  
   
--   **Objekty** odkaz seřadí sestava podle **počet** sloupce.  
+-   **Objekty** seřadí sestavy podle odkazu **počet** sloupce.  
   
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Spravovaná halda stromu (snímku podrobnosti)  
- **Spravovaná halda** stromu jsou uvedeny typy objektů, které jsou uložené v paměti. Můžete rozbalit název typu zobrazíte deset největší instance typu, seřazené podle velikosti. Výběr typu nebo instance zobrazí **cest k kořenové** a **odkazuje objekty** stromy pro vybranou položku.  
+###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Spravovaná halda stromu (podrobnosti o snímku)  
+ **Spravované haldy** stromu jsou uvedeny typy objektů, které jsou uložené v paměti. Můžete rozbalit název typu, chcete-li zobrazit deset největších instance daného typu, seřazené podle velikosti. Výběr typu nebo instance zobrazí **cesty ke kořenu** a **odkazované objekty** stromů pro vybranou položku.  
   
- ![Spravovaná halda stromu](../profiling/media/memuse__snapshotdetails_managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
-  
-|||  
-|-|-|  
-|**Typ objektu**|Název instance typu nebo objektu.|  
-|**Počet**|Počet instancí objektů typu. Číslo je vždy 1 pro instanci.|  
-|**Velikost (bajty)**|Pro typ, velikost všech instancí typu v paměti snímek, s výjimkou velikost objekty obsažené v instance.<br /><br /> Pro instance, typ, velikost objektu s výjimkou velikost objekty obsažené v instanci. instance.|  
-|**(Včetně). velikost (bajty)**|Velikost instance typu nebo velikosti jediné instance, včetně velikosti obsažené objekty.|  
-  
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Cesty do stromu kořenové (snímku podrobnosti)  
- **Cesty do stromu kořenové** ukazuje řetězec objektů, které odkazují na typ, nebo instance. Uvolňování paměti rozhraní .NET Framework vyčistí paměti pro objekt jenom v případě, že byly vydány všechny odkazy na ni.  
-  
- ![Cesty, které se kořenový stromu pro typy](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
-  
- Při prohlížení typu v **cest k kořenové** stromu, počet typů, které obsahují odkazy na tento typ objektů, které se zobrazí v **počet odkazů** sloupce. Při analýze instance nezobrazí sloupec.  
-  
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Odkazované objekty stromu (snímku podrobnosti)  
- **Odkazuje objekty** Strom zobrazuje objekty, které odkazuje na vybraný typ nebo instance.  
-  
- ![Odkazovaná Objjects stromu pro instance](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
+ ![Spravované haldy stromu](../profiling/media/memuse__snapshotdetails_managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
 |||  
 |-|-|  
-|**Typ objektu / Instance**|Název instance typu nebo objektu.|  
-|**Velikost (bajty)**|Pro typ, velikost všech instancích typu, s výjimkou velikost objekty obsažené v typu.<br /><br /> Pro instance, velikost objektu, s výjimkou velikost objekty obsažené v objektu.|  
-|**(Včetně). velikost (bajty)**|Celková velikost instance typu nebo velikost instance, včetně velikosti obsažené objekty.|  
+|**Typ objektu**|Název instance typu nebo objekt.|  
+|**Počet**|Počet instancí objektu typu. Číslo je vždy 1 pro instanci.|  
+|**Velikost (bajty)**|Pro typ, velikost všechny instance daného typu v snímek paměti, s výjimkou velikost objektů obsažených v instancích.<br /><br /> Pro instance, typ, velikost objektu s výjimkou velikost objekty obsažené v instanci. instance.|  
+|**Celková velikost (bajty)**|Velikost instance daného typu nebo velikosti jednu instanci, včetně velikosti obsažené objekty.|  
   
-## <a name="snapshot-difference-diff-reports"></a>Sestavy snímek rozdíl (rozdílové)  
- Snímek sestavy rozdíl (rozdílové) zobrazuje změny mezi primární snímku a jeho snímek, která byla provedena bezprostředně před. Otevřete sestavu rozdílů, vyberte jednu z odkazů v zobrazení snímku, jak je znázorněno na následujícím obrázku. Obě odkaz otevře stejné sestavě; jediným rozdílem je výchozí pořadí řazení **spravovaná halda** stromu v sestavě. Po sestava se otevře, můžete změnit pořadí řazení.  
+###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Cesty ke kořenové stromu (podrobnosti o snímku)  
+ **Cesty do stromové struktury kořenové** ukazuje řetězec objekty, které odkazují na tento typ nebo instance. Paměť pro objekt vyčistí systému uvolňování paměti rozhraní .NET Framework, pouze v případě, že všechny odkazy na něj byly vydány.  
   
- ![Odkazy na rozdíl sestavy v zobrazení snímku](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
+ ![Cesty ke kořenu stromu pro typy](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
   
--   **MB** odkaz seřadí sestava podle **(včetně). velikost (bajty)** sloupce.  
+ Při zobrazení typu v **cesty ke kořenu** stromu, počet objektů typy, které obsahují odkazy na tento typ se zobrazí v **počet odkazů** sloupce. Sloupec nezobrazí při analýze instance.  
   
--   **Objekty** odkaz seřadí sestava podle **počet** sloupce.  
+###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Odkazovaný stromové struktury objektů (podrobnosti o snímku)  
+ **Odkazované objekty** Strom zobrazuje objekty, které se odkazuje vybraný typ nebo instance.  
   
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Spravovaná halda stromu (snímku rozdílové)  
- **Spravovaná halda** stromu jsou uvedeny typy objektů, které jsou uložené v paměti. Můžete rozbalit název typu zobrazíte deset největší instance typu, seřazené podle velikosti. Výběr typu nebo instance zobrazí **cest k kořenové** a **odkazuje objekty** stromy pro vybranou položku.  
-  
- ![Spravovaná halda strom pro typu v sestavě rozdíl](../profiling/media/memuse_snapshotdiff_type_heap.png "MEMUSE_SnapshotDiff_Type_Heap")  
-  
- Všimněte si, že **počet**, **velikost (bajty)**, a **(včetně). velikost (bajty)** sloupce mají byla sbalené na obrázku.  
+ ![Odkazovaný stromové struktury Objjects pro instance](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
 |||  
 |-|-|  
-|**Typ objektu**|Název instance typu nebo objektu.|  
-|**Počet**|Počet instancí typu v primární snímku. **Počet** je vždy 1 pro instanci.|  
-|**Počet rozdílů**|Pro typ, počet instancí typu rozdíl mezi primární snímku a jeho předchozí snímek. Toto pole je prázdné, pokud instance.|  
-|**Velikost (bajty)**|Velikost objektů v primární snímek, s výjimkou velikost objekty obsažené v objektech. Pro typ **velikost (bajty)** a **(včetně). velikost (bajty)** jsou součty velikostí instancí typu.|  
-|**Diff celková velikost (bajty)**|Pro typ, celková velikost instance typu rozdíl mezi primární snímku a předchozího snímku, s výjimkou velikost objekty obsažené v instance. Toto pole je prázdné, pokud instance.|  
-|**(Včetně). velikost (bajty)**|Velikost objektů v primární snímek, včetně velikosti objekty obsažené v objektech.|  
-|**Diff (včetně). velikost (bajty)**|Pro typ, velikost všech instancí typu rozdíl mezi primární snímku a předchozího snímku, včetně velikosti objekty obsažené v objektech. Toto pole je prázdné, pokud instance.|  
+|**Typ objektu / Instance**|Název instance typu nebo objekt.|  
+|**Velikost (bajty)**|Pro typ, velikost všechny instance daného typu, s výjimkou velikost objektů obsažených v typu.<br /><br /> Pro instance, velikost objektu, s výjimkou velikost objektů obsažených v objektu.|  
+|**Celková velikost (bajty)**|Celková velikost instance daného typu nebo velikosti instance, včetně velikosti obsažené objekty.|  
   
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Cesty do stromu kořenové (snímku rozdílové)  
- **Cesty do stromu kořenové** ukazuje řetězec objektů, které odkazují na typ, nebo instance. Uvolňování paměti rozhraní .NET Framework vyčistí paměti pro objekt jenom v případě, že byly vydány všechny odkazy na ni.  
+## <a name="snapshot-difference-diff-reports"></a>Sestavy snímku rozdíl (rozdíl)  
+ Sestavy snímku rozdíl (rozdíl) ukazuje změny mezi primární snímek a snímek, který byla pořízen bezprostředně před. Otevřete sestavu změn, zvolte jeden z odkazů v zobrazení snímku, jak je znázorněno na následujícím obrázku. Oba odkazy otevřít stejné sestavy. jediným rozdílem je výchozí pořadí řazení **spravované haldy** stromu v sestavě. Po otevření sestavy můžete změnit pořadí řazení.  
   
- ![Cesty k kořenové strom pro instance v zobrazení rozdílů](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
+ ![Odkazy na rozdíl sestava v zobrazení snímku](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
   
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Odkazované objekty stromu (snímku rozdílové)  
- **Odkazuje objekty** Strom zobrazuje objekty, které odkazuje na typ primární, nebo instance.  
+-   **MB** seřadí sestavy podle odkazu **celkové velikosti (bajty)** sloupce.  
   
- ![Odkazovaná Objjects stromu pro instance](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
+-   **Objekty** seřadí sestavy podle odkazu **počet** sloupce.  
+  
+###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Spravovaná halda stromu (snímek diff)  
+ **Spravované haldy** stromu jsou uvedeny typy objektů, které jsou uložené v paměti. Můžete rozbalit název typu, chcete-li zobrazit deset největších instance daného typu, seřazené podle velikosti. Výběr typu nebo instance zobrazí **cesty ke kořenu** a **odkazované objekty** stromů pro vybranou položku.  
+  
+ ![Spravované haldy strom pro typ v sestavě rozdíl](../profiling/media/memuse_snapshotdiff_type_heap.png "MEMUSE_SnapshotDiff_Type_Heap")  
+  
+ Všimněte si, že **počet**, **velikost (bajty)**, a **celkové velikosti (bajty)** sloupce mají došlo ke sbalení na obrázku.  
   
 |||  
 |-|-|  
-|**Typ objektu / Instance**|Název instance typu nebo objektu.|  
-|**Velikost (bajty)**|Pro instance, velikost objektu v primární snímek, s výjimkou velikost objekty obsažené v instanci.<br /><br /> Pro typ, celková velikost instance typu v primární snímek, s výjimkou velikost objekty obsažené v instanci.|  
-|**(Včetně). velikost (bajty)**|Velikost objektů v primární snímek, včetně velikosti objekty obsažené v objektech.|  
+|**Typ objektu**|Název instance typu nebo objekt.|  
+|**Počet**|Počet instancí určitého typu ve primárního snímku. **Počet** je vždy 1 pro instanci.|  
+|**Počet změn**|Pro typ, rozdíl v počtu instancí typu mezi primární snímek a předchozí snímek. Je toto pole prázdné pro instanci.|  
+|**Velikost (bajty)**|Velikost objektů ve primárního snímku, s výjimkou velikost objekty obsažené v objektech. Pro typ **velikost (bajty)** a **celkové velikosti (bajty)** jsou celkový součet velikostí instancí typu.|  
+|**Rozdíl celkové velikosti (bajty)**|Pro typ, rozdíl celkové velikosti instance daného typu mezi primární snímek a předchozí snímek, s výjimkou velikost objektů obsažených v instancích. Je toto pole prázdné pro instanci.|  
+|**Celková velikost (bajty)**|Velikost objektů ve primárního snímku, včetně velikosti objekty obsažené v objektech.|  
+|**Rozdíl celkové velikosti (bajty)**|Pro typ, velikosti všechny instance daného typu rozdíl mezi primární snímek a předchozí snímek, včetně velikosti objekty obsažené v objektech. Je toto pole prázdné pro instanci.|  
+  
+###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Cesty ke kořenové stromu (snímek diff)  
+ **Cesty do stromové struktury kořenové** ukazuje řetězec objekty, které odkazují na tento typ nebo instance. Paměť pro objekt vyčistí systému uvolňování paměti rozhraní .NET Framework, pouze v případě, že všechny odkazy na něj byly vydány.  
+  
+ ![Cesty k kořenové strom pro instance v rozdílovém zobrazení](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
+  
+###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Odkazovaný stromové struktury objektů (snímek diff)  
+ **Odkazované objekty** Strom zobrazuje objekty, které odkazuje na primární typu nebo instance.  
+  
+ ![Odkazovaný stromové struktury objektů pro instance](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
+  
+|||  
+|-|-|  
+|**Typ objektu / Instance**|Název instance typu nebo objekt.|  
+|**Velikost (bajty)**|Pro instance, velikost objektu ve primárního snímku, s výjimkou velikost objekty obsažené v instanci.<br /><br /> Pro typ, celková velikost instance daného typu ve primárního snímku, s výjimkou velikost objekty obsažené v instanci.|  
+|**Celková velikost (bajty)**|Velikost objektů ve primárního snímku, včetně velikosti objekty obsažené v objektech.|  
   
 ## <a name="see-also"></a>Viz také:  
- [Paměť jazyka JavaScript](../profiling/javascript-memory.md)  
+ [Paměti jazyka JavaScript](../profiling/javascript-memory.md)  
  [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)  
- [Osvědčené postupy z hlediska výkonu pro aplikace UWP pomocí C++, C# a Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
- [Diagnostika problémů paměti pomocí nástroje nové využití paměti v sadě Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)
+ [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)  
+ [Osvědčené postupy z hlediska výkonu pro aplikace pro UPW pomocí jazyka C++, C# a Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Diagnostika problémů s pamětí pomocí nového nástroje využití paměti v aplikaci Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)

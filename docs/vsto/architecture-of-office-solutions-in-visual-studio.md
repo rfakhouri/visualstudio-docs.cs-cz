@@ -1,5 +1,5 @@
 ---
-title: Architektura řešení pro systém Office v sadě Visual Studio
+title: Architektura řešení pro Office v sadě Visual Studio
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,45 +17,46 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77990219d6b31d86a919ca1a33ab415a6a9ed86
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 86426e9741e38fb2cbd782659878562e395a2cf1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676628"
 ---
-# <a name="architecture-of-office-solutions-in-visual-studio"></a>Architektura řešení pro systém Office v sadě Visual Studio
-  Témata v této části poskytují informace o fungování řešení vytvořená pomocí doplňku Office developer tools v sadě Visual Studio.  
+# <a name="architecture-of-office-solutions-in-visual-studio"></a>Architektura řešení pro Office v sadě Visual Studio
+  Témata v této části poskytují informace o fungování řešení vytvořená pomocí nástroje Office developer tools v sadě Visual Studio.  
   
 > [!NOTE]  
->  Máte zájem o vývoji řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na [Office Add in modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky Office mají malé nároky ve srovnání s doplňků VSTO a řešení a můžete je vytvořit pomocí téměř jakoukoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.  
+>  Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md)  
- Popisuje, jak dokument úrovni přizpůsobení práci, a jak se se osoba jinak vývojář a koncový uživatel.  
+ Popisuje úpravách na úrovni dokumentu a jak jsou považována za jinak tak, že vývojář a koncový uživatel.  
   
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)  
- Popisuje součástí doplňků VSTO a jak jsou načteny aplikace.  
+ Popisuje součásti doplňků VSTO, a jak se načtou aplikacemi.  
   
  [Visual Studio Tools for Office Runtime – přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
- Popisuje různé verze modulu runtime, který se používá pro řešení pro systém Office.  
+ Popisuje různé verze modulu runtime, který se používá pro řešení Office.  
   
  [Položky registru pro doplňky VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
- Popisuje klíče registru, které se vyžadují v počítačích koncových uživatelů a zjišťovat a nahrajte doplňků VSTO.  
+ Popisuje klíče registru, které jsou požadovány v počítačích koncových uživatelů zjišťovat a načíst doplňky VSTO.  
   
  [Přehled přizpůsobených vlastností dokumentu](../vsto/custom-document-properties-overview.md)  
- Vysvětluje, jak se vlastností souboru fungují v přizpůsobeních na úrovni dokumentu.  
+ Vysvětluje, jak fungují vlastní vlastnosti dokumentu v přizpůsobeních na úrovni dokumentu.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
- Poskytuje úvod do používání aplikace Microsoft Office jako platformu pro vývoj řešení pro firmy.  
+ [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ Poskytuje úvod do používání aplikace Microsoft Office jako platformu pro vývoj obchodních řešení.  
   
  [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
- Obsahuje odkazy na informace o konfiguraci vývojovém počítači k vytvoření Office řešení, jak začít vytváření řešení a co se změnilo od předchozích verzí sady Office developer tools v sadě Visual Studio.  
+ Obsahuje odkazy na informace o konfiguraci vývojovém počítači vytvářet Office řešení, jak můžete začít vytvářet řešení a co se změnilo od předchozích verzí sady Office developer tools v sadě Visual Studio.  
   
  [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
  Obsahuje odkazy na informace o vytváření řešení pro systém Office.  
   
  [Obecné referenční informace &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
- Obsahuje odkazy na informace o uživateli prvky rozhraní v projektech pro systém Office, aplikace a manifesty nasazení pro rozhraní API v projektech pro systém Office a [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
+ Obsahuje odkazy na informace o uživateli prvky rozhraní v projektech pro systém Office, aplikace a manifestů nasazení pro rozhraní API v projektech pro systém Office a [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   
   

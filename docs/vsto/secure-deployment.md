@@ -18,38 +18,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47cecda571a6826c2d7e845945c05d0264971134
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f0ed351bf15ec257f79e226958b38e46ac769d0e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693328"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675666"
 ---
 # <a name="secure-deployment"></a>Bezpečné nasazení
-  Při vytváření řešení Office vývojovém počítači se aktualizuje automaticky povolit kód ve vašem projektu a spustit. Ale když nasadíte řešení, je nutné zadat důkaz, na které se mají základní rozhodnutí o vztahu důvěryhodnosti podepisování řešení s certifikátem, nebo pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] klíč výzvy důvěryhodnosti. Další informace najdete v tématu [udělit vztah důvěryhodnosti řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md).  
+  Při vytváření řešení pro Office se automaticky aktualizuje vývojovém počítači povolíte kód v projektu pro spuštění. Ale když nasadíte řešení, je nutné zadat důkazy, na kterém chcete založit rozhodnutí o důvěryhodnosti řešení s certifikátem podepisování, nebo pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] výzvy klíč vztah důvěryhodnosti. Další informace najdete v tématu [zajištění důvěryhodnosti řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Pro úpravy na úrovni dokumentů Pokud nasazujete dokument do umístění v síti, musíte taky přidat dokumentu umístění do seznamu důvěryhodných umístění v Centru zabezpečení aplikace Office. Další informace o tom, jak nastavit oprávnění dokumentu pro koncového uživatele počítačů najdete v tématu [udělit vztah důvěryhodnosti k dokumentům](../vsto/granting-trust-to-documents.md).  
+ Pro přizpůsobení na úrovni dokumentu Pokud provádíte nasazení dokument do umístění v síti, musíte také přidat umístění dokumentu do seznamu důvěryhodných umístění v Centru zabezpečení aplikace Office. Další informace o tom, jak nastavit oprávnění k dokumentu v počítačích koncových uživatelů najdete v tématu [udělit důvěryhodnost dokumenty](../vsto/granting-trust-to-documents.md).  
   
 ## <a name="prevent-office-solutions-from-running-code"></a>Zabránit spuštění kódu řešení pro systém Office  
- Správci můžou pomocí registru všechna řešení pro systém Office bránit ve spouštění v počítači. Při řešení Office, který se má spravovat rozšíření kódu je otevřené, Visual Studio Tools for Office runtime kontroly zda položka s názvem `Disabled` existuje pod jednou z následujících klíčů registru v počítači:  
+ Správcům umožňuje zabránit spuštěného na počítači všechna řešení pro Office v registru. Když řešení pro Office, který má rozšíření se spravovaným kódem se otevře, Visual Studio Tools for Office runtime kontroly, zda položka s názvem `Disabled` existuje pod jednou z následujících klíčů registru v počítači:  
   
 -   **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
   
--   **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**  
+-   **Nenachází**  
   
- Chcete-li zabránit spuštění kódu řešení pro systém Office, vytvořte `Disabled` položky v rámci jedna nebo obě tyto klíče registru a určete jednu z následujících datových typů a hodnot pro `Disabled`:  
+ Chcete-li zabránit spuštění kódu řešení pro systém Office, vytvořte `Disabled` položku jeden nebo oba z těchto klíčů registru a zadejte jednu z následujících datových typů a hodnot pro `Disabled`:  
   
--   REG_SZ nebo REG_EXPAND_SZ, který je nastavený na libovolný řetězec než "0" (nula).  
+-   REG_SZ nebo REG_EXPAND_SZ, který je nastaven na libovolný řetězec než "0" (nula).  
   
--   REG_DWORD, který je nastavený na jakoukoli jinou hodnotu než 0 (nula).  
+-   REG_DWORD, která je nastavena na jakoukoli jinou hodnotu než 0 (nula).  
   
- Pokud chcete povolit spuštění kódu řešení systému Office, nastavte oba `Disabled` položky na hodnotu 0 (nula), nebo odstranění položek registru.  
+ Pokud chcete povolit řešení Office spuštění kódu, nastavte oba `Disabled` položky na hodnotu 0 (nula), nebo odstraňte položky registru.  
   
 ## <a name="see-also"></a>Viz také:  
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
- [Příprava počítačů ke spuštění nebo hostitele řešení pro systém Office](http://msdn.microsoft.com/en-us/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
+ [Příprava počítačů spustit nebo hostovat řešení pro systém Office](http://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)  
   
   

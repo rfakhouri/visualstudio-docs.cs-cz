@@ -15,28 +15,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 283fd069e0de72af92f7999871190c6c8a0d345b
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: db805aa1e00d672b4a0579e546a6827e9135b909
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675690"
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
-  Volá se bezprostředně před spravované Add-in VSTO je odpojen.  
+  Volá se bezprostředně před spravované Add-in VSTO je uvolněna.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```c++
+```csharp
 HRESULT Unload();  
 ```  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Hodnota HRESULT, která určuje, zda metoda byla úspěšně dokončena.  
+ Hodnota HRESULT, která označuje, zda metoda byla úspěšně dokončena.  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda není volána aktuální verze systému Microsoft Office. Tato metoda je vyhrazena pro budoucí použití.  
+ Tato metoda není volána aktuální verze sady Microsoft Office. Tato metoda je vyhrazená pro budoucí použití.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Imanagedaddin – rozhraní](../vsto/imanagedaddin-interface.md)   
  [IManagedAddin::Load](../vsto/imanagedaddin-load.md)  
   

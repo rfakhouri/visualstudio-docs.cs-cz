@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 42131bc1a596cf14a219f674227dbbadeb26c370
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573177"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676083"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Průvodce vzorkováním procesoru pro začátečníky
 Nástroje pro profilaci v sadě Visual Studio můžete použít k analýze problémů s výkonem aplikace. Tento postup vám ukáže, jak používat data **Vzorkování**.
@@ -36,12 +36,12 @@ Nástroje pro profilaci v sadě Visual Studio můžete použít k analýze probl
  Pokud potřebná data nezískáte pomocí **vzorkování**, můžete v nástrojích pro profilaci použít jiné metody shromažďování, které poskytují různé druhy užitečných informací. Další informace o těchto metodách najdete v článku s [postupy při výběru metod shromažďování](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Pokud kód, který volá funkce systému Windows, profilu, měli byste si ověřit, že máte nejnovější. *pdb* soubory. Bez těchto souborů se v zobrazeních sestav zobrazí seznam funkcí Windows, jejichž názvy jsou nesrozumitelné a obtížně pochopitelné. Další informace o tom, jak zjistit, že máte potřebné soubory, najdete v článku věnovaném [referenčním informacím o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+>  Pokud profilujete kód, který volá funkce Windows, by měl Ujistěte se, že máte nejnovější. *pdb* soubory. Bez těchto souborů se v zobrazeních sestav zobrazí seznam funkcí Windows, jejichž názvy jsou nesrozumitelné a obtížně pochopitelné. Další informace o tom, jak zjistit, že máte potřebné soubory, najdete v článku věnovaném [referenčním informacím o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
-## <a name="create-and-run-a-performance-session"></a>Vytvoření a spuštění výkonnostní relace  
+## <a name="create-and-run-a-performance-session"></a>Vytvoření a spuštění relace výkonu  
  Abyste získali data potřebná k analýze, musíte nejprve vytvořit výkonnostní relaci a potom ji spustit. S oběma úlohami vám pomůže **Průvodce výkonu**.  
   
- Pokud neprofilujete desktopovou aplikaci pro Windows ani aplikaci pro ASP.NET, musíte použít některý z jiných nástrojů pro profilaci. V tématu [první pohled na nástroje pro profilaci](../profiling/profiling-tools.md).  
+ Pokud neprofilujete desktopovou aplikaci pro Windows ani aplikaci pro ASP.NET, musíte použít některý z jiných nástrojů pro profilaci. Zobrazit [nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md).  
   
 #### <a name="to-create-and-run-a-performance-session"></a>Vytvoření a spuštění výkonnostní relace  
   
@@ -93,13 +93,13 @@ Nástroje pro profilaci v sadě Visual Studio můžete použít k analýze probl
   
     -   Dolní podokno v okně **Podrobnosti funkce** zobrazuje samotný kód funkce. Pokud prohlížíte kód a narazíte na možnost optimalizace jeho výkonu, klikněte na název zdrojového souboru a otevřete ho v editoru sady Visual Studio.  
   
-3.  Chcete-li pokračovat analýzy, vraťte se k **Souhrn** zobrazení tak, že vyberete **Souhrn** z **zobrazení** rozevíracího seznamu. Potom si prohlédněte funkce v části **Funkce provádějící nejvíce individuální práce**. V seznamu se zobrazují funkce s nejvyšším počtem výhradních vzorků. Kód v těle těchto funkcí provedl významnou část práce a je možné, že ho budete moci optimalizovat. Pokud chcete určitou funkci dále analyzovat, klikněte na její název, aby se otevřela v zobrazení **Podrobnosti funkce**.  
+3.  Chcete-li pokračovat v analýze, vraťte se na **Souhrn** zobrazení tak, že vyberete **Souhrn** z **zobrazení** rozevíracího seznamu. Potom si prohlédněte funkce v části **Funkce provádějící nejvíce individuální práce**. V seznamu se zobrazují funkce s nejvyšším počtem výhradních vzorků. Kód v těle těchto funkcí provedl významnou část práce a je možné, že ho budete moci optimalizovat. Pokud chcete určitou funkci dále analyzovat, klikněte na její název, aby se otevřela v zobrazení **Podrobnosti funkce**.  
   
      ![Seznam funkcí, které provádějí nejvíce práce](../profiling/media/functions_mostwork.png "Functions_MostWork")  
   
      Pokud chcete běh profilace zkoumat dále, můžete znovu analyzovat segment dat profilace pomocí časové osy v zobrazení **Souhrn**. V tomto zobrazení si můžete prohlédnout **Kritickou cestu** a **Funkce provádějící nejvíce individuální práce** u vybraného segmentu. Když se například zaměříte na menší špičku na časové ose, můžete odhalit náročné stromy volání a funkce, které se nezobrazily v analýze celkového běhu profilace.  
   
-     Chcete-li opakovat analýzu segment, vyberte segment uvnitř **časová osa Souhrn** pole a pak klikněte na **filtrovat podle výběru**.  
+     Chcete-li opakovat analýzu segmentu, vyberte segment v **časová osa souhrnu** pole a potom klikněte na tlačítko **filtrovat podle výběru**.  
   
      ![Časová osa zobrazení souhrnných informací o výkonu](../profiling/media/performancesummary.png "PerformanceSummary")  
   
@@ -109,7 +109,7 @@ Nástroje pro profilaci v sadě Visual Studio můžete použít k analýze probl
   
     -   Podrobné informace o upozornění zobrazíte kliknutím pravého tlačítka myši na chybu a potom kliknutím na **Zobrazit nápovědu chyby**.  
   
-## <a name="step-3-revise-code-and-rerun-a-session"></a>Krok 3: Zkontrolovat kód a znovu spusťte relaci  
+## <a name="step-3-revise-code-and-rerun-a-session"></a>Krok 3: Kontrola kódu a opětovné spuštění relace  
  Po vyhledání a optimalizaci jedné nebo více funkcí můžete běh profilace zopakovat a porovnat data, abyste zjistili, jaký vliv měly změny na výkon aplikace.  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Revize kódu a opakované spuštění profileru  
@@ -129,4 +129,4 @@ Nástroje pro profilaci v sadě Visual Studio můžete použít k analýze probl
  [Začínáme](../profiling/getting-started-with-performance-tools.md)   
  [Přehledy](../profiling/overviews-performance-tools.md)  
  [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)
+ [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)

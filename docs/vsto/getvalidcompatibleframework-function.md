@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7df1e2d197147399fd6492222978dcf748a4bb2
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 18ef1d61d0e203744cc6436d884c37339a4a1ef0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675650"
 ---
 # <a name="getvalidcompatibleframework-function"></a>Getvalidcompatibleframework – funkce
-  Toto rozhraní API podporuje infrastrukturu rozhraní Office a není určena pro použití přímo z vašeho kódu.  
+  Toto rozhraní API podporuje infrastrukturu sady Office a není určena pro použití přímo v kódu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```c  
+```csharp 
 HRESULT WINAPI GetValidCompatibleFramework(  
     LPCWSTR lpwszCompatibleFrameworksXML,  
     BSTR* pbstrValidFrameworkTag  
@@ -38,6 +39,6 @@ HRESULT WINAPI GetValidCompatibleFramework(
 |*pbstrValidFrameworkTag*|Nepoužívejte.|  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Pokud funkci úspěšné, vrátí **S_OK**. Pokud se funkce nezdaří, vrátí kód chyby.  
+ Pokud funkce uspěje, vrátí **S_OK**. Pokud funkce selže, vrátí kód chyby.  
   
   

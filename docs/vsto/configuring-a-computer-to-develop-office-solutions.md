@@ -15,44 +15,45 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58458b51115834b5b94e858676ee8039d5894c70
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 2e25ac55a1198cf15b497b7b88522be44dfddb73
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675696"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Konfigurace počítače pro vývoj řešení pro systém Office
 
-Pokud chcete vytvořit doplňků VSTO a vlastní nastavení pro Microsoft Office, nainstalujte podporovanou verzi sady Visual Studio, rozhraní .NET Framework a aplikace Microsoft Office.
+K vytvoření doplňků VSTO a vlastní nastavení pro Microsoft Office, nainstalujte podporovanou verzi sady Visual Studio, .NET Framework a Microsoft Office.
 
 |Software|Podporované verze|
 |--------------|------------------------|
-|Visual Studio 2017| Všechny verze **vývoj pro Office/SharePoint** zatížení.|
+|Visual Studio 2017| Libovolná edice s **vývoj pro Office/SharePoint** pracovního vytížení.|
 |.NET Framework|-Rozhraní .NET Framework 4 nebo novější.|
-|Aplikace Microsoft Office|<ul><li>Všechny edice sady Office, včetně Office Professional Plus pro Office 365.</li><li>Některé z následujících samostatné aplikace:<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 a Office 2010 pouze)</li><li>Outlook</li><li>PowerPoint</li><li>Projekt</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) musí být nainstalován jako součást sady Office. **Důležité:** klikněte na tlačítko spustit verze aplikací Office 2010 nejsou podporovány.|
+|Aplikace Microsoft Office|<ul><li>Jakákoli edice sady Office, včetně Office Professional Plus pro Office 365.</li><li>Některé z následujících samostatných aplikací:<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 a Office 2010 pouze)</li><li>Outlook</li><li>PowerPoint</li><li>Projekt</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) musí být nainstalována jako součást sady Office. **Důležité:** klikněte na tlačítko spustit verze aplikace systému Office 2010 nejsou podporované.|
 
-Instalace podrobné pokyny najdete v tématu [postupy: Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
+Podrobný postup instalace najdete v části [postupy: Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 
-## <a name="if-project-templates-dont-appear-or-they-dont-work-in-visual-studio"></a>Pokud se nezobrazí šablon projektu nebo nemáte fungují v sadě Visual Studio
+## <a name="if-project-templates-dont-appear-or-they-dont-work-in-visual-studio"></a>Pokud šablony projektů nejsou zobrazeny nebo nefungují v sadě Visual Studio
 
-Pokud instalujete podporovanou verzi sady Visual Studio, rozhraní .NET Framework a aplikace Microsoft Office, ale šablony projektů Office buď nezobrazí v sadě Visual Studio **nový projekt** dialogové okno, nebo se zobrazí chybu při pokusu použít jednu, Zkontrolujte následující:
+Je-li nainstalovat podporovanou verzi sady Visual Studio, .NET Framework a Microsoft Office, ale šablony projektů pro Office buď nejsou zobrazeny v sadě Visual Studio **nový projekt** dialogové okno, nebo k chybě při pokusu o použití, Zkontrolujte následující:
 
-- Ujistěte se, že máte v počítači nainstalována sada Microsoft Office developer tools.
+- Ujistěte se, že máte v počítači nainstalována aplikace Microsoft Office developer tools.
 
-     Nástroje pro vývojáře Office jsou volitelná komponenta produktu Visual Studio, ale se obvykle instalují automaticky společně s Visual Studio. Pokud instalaci sady Visual Studio můžete přizpůsobit zadáním funkcí, které chcete nainstalovat, ujistěte se, že zvolíte **Microsoft Office Developer Tools** během instalace k instalaci nástroje.
+     Office developer tools jsou volitelnou součástí aplikace Visual Studio, ale jsou automaticky nainstalovány spolu s Visual Studio. Pokud přizpůsobíte instalaci sady Visual Studio určením funkcí, které chcete nainstalovat, ujistěte se, že zvolíte **Microsoft Office Developer Tools** během instalace k instalaci nástroje.
 
-     Abyste měli jistotu, že tyto nástroje jsou nainstalovány, spusťte instalační program sady Visual Studio a zvolte **upravit** tlačítko. Vyberte **Microsoft Office Developer Tools** zaškrtněte políčko a potom vyberte **aktualizace** tlačítko.
+     Pokud chcete mít jistotu, že tyto nástroje jsou nainstalovány, spusťte instalační program sady Visual Studio a zvolte **změnit** tlačítko. Vyberte **Microsoft Office Developer Tools** zaškrtněte políčko a klikněte na tlačítko **aktualizace** tlačítko.
 
-- Ujistěte se, že nejsou spuštěné verze systému Office, že se zasílá klikněte na tlačítko spustit. V tématu [postup: Ověřte, zda se aplikace Outlook klikněte na tlačítko spustit aplikaci na počítač](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
+- Ujistěte se, že nejsou spuštěné na verzi Office, která byla odeslaná klikněte na tlačítko spustit. Zobrazit [jak: Ověřte, zda je aplikace Outlook aplikace klikněte na tlačítko spustit na počítači](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
 
-- Ujistěte se, že používáte jenom jedna verze nástroje Microsoft Office.
+- Ujistěte se, že používáte pouze jednu verzi Microsoft Office.
 
-Pokud budete pokračovat, dochází k potížím, najdete v části [další podpora pro chyby v řešeních pro systém Office](../vsto/additional-support-for-errors-in-office-solutions.md).
+Pokud budete nadále docházet k potížím, přečtěte si téma [další podporu pro chyby v řešeních pro systém Office](../vsto/additional-support-for-errors-in-office-solutions.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
 [Postupy: Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-[Postupy: instalace sady Visual Studio Tools for Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[Postupy: Primární spolupracující sestavení Office instalace](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-[Zadejte dostupné funkce podle aplikace Office a projektu](../vsto/features-available-by-office-application-and-project-type.md)
+[Postupy: instalace aplikace Visual Studio Tools for Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
+[Postupy: instalace Office primárních sestavení vzájemné spolupráce](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+[Zadejte dostupné funkce podle aplikace systému Office a projektu](../vsto/features-available-by-office-application-and-project-type.md)
