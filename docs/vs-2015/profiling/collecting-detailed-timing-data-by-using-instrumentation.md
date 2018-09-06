@@ -17,12 +17,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 709bb9efc3d24fdceb23ac02140a2e0d0a1ac61f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae3d2335c73f68f790e9b3def8f2a1d4ced7c969
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675299"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774904"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Shromažďování podrobných dat časování pomocí instrumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Nejnovější verzi tohoto tématu můžete najít v [shromažďování podrobn�
 -   Na **Obecné** stránky dialogové okno Vlastnosti relace výkonu, vyberte **instrumentace**.  
   
 ## <a name="common-tasks"></a>Obecné úlohy  
- Můžete zadat další možnosti v *relace výkonu *** stránky vlastností** dialogovému oknu relace výkonu. Chcete-li otevřít toto dialogové okno:  
+ Můžete zadat další možnosti v _relace výkonu_**stránky vlastností** dialogovému oknu relace výkonu. Chcete-li otevřít toto dialogové okno:  
   
 -   V **prohlížeč výkonu**, klikněte pravým tlačítkem na název relace výkonu a potom klikněte na tlačítko **vlastnosti**.  
   
- Úkoly v následující tabulce popisují možnosti, které můžete určit *relace výkonu *** stránky vlastností** dialogové okno při profilování pomocí metody instrumentace.  
+ Úkoly v následující tabulce popisují možnosti, které můžete určit _relace výkonu_**stránky vlastností** dialogové okno při profilování pomocí metody instrumentace.  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  

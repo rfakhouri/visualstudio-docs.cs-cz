@@ -2,7 +2,7 @@
 title: Co je nového v sadě Visual Studio 2017
 description: Informace o nových funkcích v sadě Visual Studio 2017.
 ms.custom: ''
-ms.date: 08/21/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3154264938753cf9be41cdd5ef8964f49664d730
-ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
+ms.openlocfilehash: 4c6c09c8431cb2a50c0d76ebf476e67730192966
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42755506"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774984"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s novou v sadě Visual Studio 2017
 
@@ -32,14 +32,14 @@ Pokud chcete upgradovat z předchozí verze sady Visual Studio? Zde je, co Visua
 
 Tady je podrobný rekapitulace toho, změny provedené od předchozích verzí sady Visual Studio 2015:
 
-* **[Předefinovaná Základy](#redefined-fundamentals)**. Nové prostředí instalace znamená, že můžete nainstalovat rychleji a nainstalovat, co chcete, když je potřebujete. Jestli se má načíst projekty a řešení pro velké nebo pracovat na složky kódu nebo dokonce i na jeden soubor kódu sady Visual Studio spouští rychleji. A Visual Studio umožňuje soustředit se na širší kontext, zejména pro týmy používající DevOps.
-* **[Výkon a produktivitu](#performance-and-productivity)**. Jsme se zaměřili na nový a moderní mobilní, cloudové a funkcí vývoj desktopových aplikací. Také jsme zlepšili celkovou akvizice, výkon, a obecné developer nástrojové prostředí. Visual Studio spouští rychleji, je rychlejší reakce a používá méně paměti, než je před.
+* **[Předefinovaná Základy](#redefined-fundamentals)**. Nové prostředí instalace znamená, že můžete nainstalovat rychleji a nainstalovat, co chcete, když je potřebujete.
+* **[Výkon a produktivitu](#performance-and-productivity)**. Jsme se zaměřili na nový a moderní mobilní, cloudové a funkcí vývoj desktopových aplikací. A Visual Studio spouští rychleji, je rychlejší reakce a využívá méně paměti než dřív.
 * **[Vývoj aplikace s Azure v cloudu](#cloud-app-development-with-azure)**. Integrovaná sada nástrojů Azure, které umožňují snadno vytvářet cloudové aplikace s využitím Microsoft Azure. Visual Studio zjednodušuje konfiguraci, sestavení, ladění, zabalení a nasazení aplikací a služeb v Azure.
-* **[Vývoj aplikací pro Windows](#windows-app-development)**. Použití šablon UWP v sadě Visual Studio 2017 k vytvoření jednoho projektu pro všechna zařízení s Windows 10 &ndash; počítač, tablet, telefon, Xbox, HoloLens, Surface Hub a další. Potom vytváření balíčku aplikace a odeslat ji na Microsoft Store ze sady Visual Studio k aplikaci dostat k zákazníkům.
-* **[Vývoj mobilních aplikací](#mobile-app-development)**. V sadě Visual Studio 2017 můžete inovovat a získat výsledky rychle s využitím kódu Xamarin, což sjednocuje vaše multiplatformní mobilní požadavky pomocí jednoho jádra základu kódu a sady dovedností. Buďte mobilní s existující týmy, investic do technologií a kód jazyka C# k zajištění prostředí na úrovni příjemce plánem a za nízkou cenu. Zrychlete každý krok cyklu mobilních k poskytování špičkového prostředí nebo portfolio kancelářské aplikace k posílení produktivity zaměstnanců. (A **novinkou 15.8**: vývojáře mobilních aplikací, kteří používají technologii Hyper-V mají přístup k rychlý emulátor pro Android, která vždy podporuje nejnovější Android API pracuje s hned po spuštění služby Google Play a podporuje všechny funkce pro Android emulátor, včetně fotoaparát, informace o zeměpisné poloze a rychlé spuštění.)
-* **[Vývoj pro různé platformy](#cross-platform-development)**. Můžete bez potíží doručovat software na libovolnou cílovou platformu. Rozšiřte procesy DevOps na SQL Server pomocí nástroje Redgate Data Tools a bezpečně Automatizujte nasazování databází ze sady Visual Studio. Nebo můžete použít k tvorbě aplikací a knihoven, které poběží na Windows, Linuxu a macOS operačních systémů bez úprav .NET Core. (A **novinkou 15.3**: získat podporu vedle sebe pro .NET Core 2.0 SDK.)
-* **[Vývoj hry](#games-development)**. S Visual Studio Tools pro Unity (VSTU) můžete použít Visual Studio napsat hru a editor skriptů v jazyce C# a pak použijte jeho výkonný ladicí program najít a opravit chyby. Nejnovější verzí VSTU zahrnuje pro Unity a ShaderLab shader language, lepší vizualizace ladicího programu a generování kódu vylepšené pro Průvodce MonoBehavior barevné zvýrazňování syntaxe. VSTU také přináší soubory projektu Unity, zprávy konzoly a schopnost pustit do hry... do sady Visual Studio, takže můžete věnovat méně času přepnutí do a z Unity editoru při psaní kódu.
-* **[Vývoj AI](#ai-development)**. Pomocí Visual Studio Tools for AI (**nové ve verzi 15.5**), funkce produktivitu sady Visual Studio můžete použít k urychlení inovace AI. Vytvářet, testovat a nasazovat obsáhlý Learning / řešení AI, které bez problémů integrují s Azure Machine Learning pro funkce robustní služby experimentování ve službě, například odesílání přípravy dat a úlohy trénování modelu transparentně přesměrovalo různých cílových výpočetních prostředí. Visual Studio Tools pro AI poskytuje podporu pro vlastní metriky a sledování historie spuštění, což umožňuje datové vědy reprodukovatelnost a auditování.
+* **[Vývoj aplikací pro Windows](#windows-app-development)**. Použití šablon UWP v sadě Visual Studio 2017 k vytvoření jednoho projektu pro všechna zařízení s Windows 10 &ndash; počítač, tablet, telefon, Xbox, HoloLens, Surface Hub a další.
+* **[Vývoj mobilních aplikací](#mobile-app-development)**. Inovace a získání výsledků rychle s využitím kódu Xamarin, což sjednocuje vaše multiplatformní mobilní požadavky na jedno jádro základu kódu a sady dovedností.
+* **[Vývoj pro různé platformy](#cross-platform-development)**. Můžete bez potíží doručovat software na libovolnou cílovou platformu. Rozšiřte procesy DevOps na SQL Server pomocí nástroje Redgate Data Tools a bezpečně Automatizujte nasazování databází ze sady Visual Studio. Nebo můžete použít k tvorbě aplikací a knihoven, které poběží na Windows, Linuxu a macOS operačních systémů bez úprav .NET Core.
+* **[Vývoj hry](#games-development)**. S Visual Studio Tools pro Unity (VSTU) můžete použít Visual Studio napsat hru a editor skriptů v jazyce C# a pak použijte jeho výkonný ladicí program najít a opravit chyby. 
+* **[Vývoj AI](#ai-development)**. Pomocí Visual Studio Tools for AI můžete použít pro zvýšení produktivity sady Visual Studio k urychlení inovace AI. Vytvářet, testovat a nasazovat obsáhlý Learning / řešení AI, který se snadno integrují s Azure Machine Learning pro experimentování ve službě robustní možnosti.
 
 > [!NOTE]
 > Úplný seznam nových funkcí a funkcí v sadě Visual Studio 2017, najdete v článku [aktuální zpráva k vydání verze](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default). A náhled na budoucí verze nabídky, najdete v článku [poznámky k verzi Preview](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default).
@@ -106,11 +106,11 @@ Správce rozšíření pro Roaming sleduje všechna rozšíření, které nainst
 
 Při použití Správce rozšíření pro Roaming, existují tři typy ikon na seznamu:
 
-* ![Ikona s roamingem](../ide/media/vs2017ide-roamedicon.png) ***ikona s roamingem***: rozšíření, která je součástí tohoto seznamu roamingu, ale není nainstalované na vašem počítači.
+* ![Ikona s roamingem](../ide/media/vs2017ide-roamedicon.png)  **_ikona s roamingem_**: rozšíření, která je součástí tohoto seznamu roamingu, ale není nainstalované na vašem počítači.
   (Je můžete nainstalovat pomocí **Stáhnout** tlačítko.)
-* ![Ikona s roamingem a nainstalováno](../ide/media/vs2017ide-roamedinstalledicon.png) ***s roamingem a nainstalováno***: všechna rozšíření, které jsou součástí tohoto seznamu roamingu a jsou nainstalovaná ve vývojovém prostředí.
+* ![Ikona s roamingem a nainstalováno](../ide/media/vs2017ide-roamedinstalledicon.png)  **_s roamingem a nainstalováno_**: všechna rozšíření, které jsou součástí tohoto seznamu roamingu a jsou nainstalovaná ve vývojovém prostředí.
   (Pokud nechcete přesouvat, můžete je odebrat pomocí **zastavit Roaming** tlačítko.)
-* ![Ikona nainstalováno](../ide/media/vs2017ide-installedicon.png) ***nainstalováno***: všechna rozšíření, která jsou nainstalovaná v tomto prostředí, ale nejsou součástí vašeho seznamu roamingu.
+* ![Ikona nainstalováno](../ide/media/vs2017ide-installedicon.png)  **_nainstalováno_**: všechna rozšíření, která jsou nainstalovaná v tomto prostředí, ale nejsou součástí vašeho seznamu roamingu.
   (Rozšíření můžete přidat do seznamu roamingu pomocí **Start Roaming** tlačítko.)
 
 Všechna rozšíření, který stahujete, když se přihlásíte se přidá do seznamu jako **s roamingem a nainstalováno**. Rozšíření se pak stane součástí vašeho seznamu roamingu, která umožňuje přístup k němu z libovolného počítače.

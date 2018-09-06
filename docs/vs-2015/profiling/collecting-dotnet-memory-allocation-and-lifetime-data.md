@@ -17,12 +17,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: deb4d216445dbede8b002b273d39613b37fc1c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 057bdb7073b1518e20ec0bee461d19478033e3b1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628444"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774637"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Shromažďování dat o alokaci paměti a době platnosti objektů .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,16 +59,16 @@ Nejnovější verzi tohoto tématu můžete najít v [shromažďuje alokaci pam�
   
 1.  V **prohlížeč výkonu**, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
   
-2.  Na *relace výkonu *** stránky vlastností** dialogové okno, klikněte na tlačítko **Obecné** kartu a vyberte **.NET shromažďovat informace o přidělení objektu** zaškrtávací políčko.  
+2.  Na _relace výkonu_**stránky vlastností** dialogové okno, klikněte na tlačítko **Obecné** kartu a vyberte **.NET shromažďovat informace o přidělení paměti objektu** zaškrtávací políčko.  
   
 3.  Chcete-li shromažďovat data o životním cyklu objektu rozhraní .NET, vyberte **také shromažďovat informace o životnosti objektů .NET** zaškrtávací políčko.  
   
 ## <a name="common-tasks"></a>Obecné úlohy  
- Můžete zadat další možnosti v *relace výkonu *** stránky vlastností** dialogovému oknu relace výkonu. Chcete-li otevřít toto dialogové okno:  
+ Můžete zadat další možnosti v _relace výkonu_**stránky vlastností** dialogovému oknu relace výkonu. Chcete-li otevřít toto dialogové okno:  
   
 -   V **prohlížeč výkonu**, klikněte pravým tlačítkem na název relace výkonu a potom klikněte na tlačítko **vlastnosti**.  
   
- Úkoly v následující tabulce popisují možnosti, které můžete určit *relace výkonu *** stránky vlastností** dialogové okno při shromažďování dat paměti .NET.  
+ Úkoly v následující tabulce popisují možnosti, které můžete určit _relace výkonu_**stránky vlastností** dialogové okno při shromažďování dat paměti .NET.  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
