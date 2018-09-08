@@ -1,49 +1,49 @@
 ---
-title: Odebrat nedostupný kód refaktoring v sadě Visual Studio
+title: Odebrání nedosažitelného kódu, refaktoring v sadě Visual Studio
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
-author: kuhlenh
-ms.author: kaseyu
+author: gewarren
+ms.author: gewarren
 manager: douge
 dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 73b04dafc094e05c57c626333a1d614de3ba76a1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fcd402398e8669eb84d1ee23cd128e2d7eb04031
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945672"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124876"
 ---
-# <a name="remove-unreachable-code-refactoring"></a>Odebrat refaktoring nedostupný kódu
+# <a name="remove-unreachable-code-refactoring"></a>Odebrání nedosažitelného kódu refaktoringu
 
-Tato refaktoring platí pro:
+Tento refaktoring platí pro:
 
 - C#
 
-**Co:** odebere kód, který bude nikdy spuštěn.
+**Co:** odebere kód, který se nikdy proveden.
 
-**Kdy:** vašeho programu nemá žádnou cestu na fragment kódu, provedení nepotřebné tento fragment kódu.
+**Kdy:** program neobsahuje žádné cestu k fragmentu kódu, provádění zbytečné tento fragment kódu.
 
-**Důvod:** zlepšení čitelnosti a jeho udržovatelnost odebráním kód, který je nadbytečné a nebude nikdy provedena.
+**Důvod, proč:** zlepšit čitelnost a udržovatelnosti odebráním kód, který je nadbytečný a nikdy se spustí.
 
 ## <a name="how-to"></a>Postupy
 
-1. Umístěte ukazatel myši na libovolné místo v vybledlé se kód, který nedostupný:
+1. Umístíte kurzor kamkoliv v vyblednout si kód, který nedostupný:
 
-![Barevně nedostupný kódu](media/unreachablecode-faded-cs.png)
+![Vyblednout nedosažitelný kód](media/unreachablecode-faded-cs.png)
 
 1. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stiskněte klávesu **Ctrl**+**.** spuštění **rychlé akce a refaktoring** nabídku a vyberte **odebrat nedostupný kód** z okna náhledu – místní nabídka.
-   - **Myš**
-     - Klikněte pravým tlačítkem na kód, vyberte **rychlé akce a refaktoring** nabídku a vyberte **odebrat nedostupný kód** z okna náhledu – místní nabídka.
+     - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky a vybereme **odebrání nedosažitelného kódu** z automaticky otevíraného okna okno náhledu.
+   - **Myši**
+     - Klikněte pravým tlačítkem na kód, vyberte **rychlé akce a Refaktoringy** nabídky a vybereme **odebrání nedosažitelného kódu** z automaticky otevíraného okna okno náhledu.
 
-1. Když budete spokojeni se změnami, stiskněte **Enter** nebo klikněte na opravit v nabídce a změny budou potvrzeny.
+1. Až budete spokojení s změny, stiskněte klávesu **Enter** nebo klikněte na opravit v nabídce a změny budou potvrzeny.
 
 Příklad:
 
@@ -64,7 +64,7 @@ private void Method()
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Náhled změn](../../ide/preview-changes.md)

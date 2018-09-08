@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ff8d28a0fa6b8889dcc90632126f8b4dd75b70dc
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 2093f8a2f2d048661b7fb23f45c5317011f25076
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132006"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124915"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Kurz: Vytvoření Node.js a Express aplikace v sadě Visual Studio
 V tomto kurzu pro vývoj sady Visual Studio pomocí Node.js a Express vytvořit jednoduchou webovou aplikaci Node.js, přidejte kód, prozkoumat některé funkce integrovaného vývojového prostředí a spuštění aplikace. Pokud jste si sadu Visual Studio ještě nenainstalovali, nainstalujte si ji zdarma [odtud](http://visualstudio.microsoft.com).
@@ -85,7 +85,7 @@ V tomto kurzu začnete s Jednoduchý projekt obsahující kód pro Node.js a exp
 
     (3) npm uzlu se zobrazuje všechny balíčky npm nainstalované. Kliknete pravým tlačítkem na uzel npm, který se má vyhledat a nainstalovat balíčky npm pomocí dialogové okno nebo instalace a aktualizace balíčků pomocí nastavení v *package.json* a klikněte pravým tlačítkem na možnosti v uzlu npm.
 
-    (4) *package.json* je soubor používaný npm Spravovat závislosti balíčků a verze balíčku pro místně nainstalované balíčky.
+    (4) *package.json* je soubor používaný npm Spravovat závislosti balíčků a verze balíčku pro místně nainstalované balíčky. Další informace v tomto souboru najdete v tématu [konfigurační soubor package.json](../javascript/configure-packages-with-package-json.md)
 
     (5) soubory projektu, jako *app.js* zobrazí pod uzlem projektu. *app.js* je spouštěcí soubor projektu a, který je proč zobrazí v **tučné**. Můžete nastavit spouštěcí soubor tak, že kliknete pravým tlačítkem soubor v projektu a vyberete **nastavit jako spouštěcí soubor Node.js**.
 

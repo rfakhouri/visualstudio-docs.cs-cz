@@ -13,12 +13,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4888bc254f0b86332829db3d88e19095eafb35f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38281327c6a3d343418a74c85f61b9b1175b5d01
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633428"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124993"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Co&#39;nového ve Visual Studio 2015 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Nejnovější verzi tohoto tématu můžete najít v [co&#39;s nového v aplikac
 Visual Studio SDK obsahuje následující nové a aktualizované funkce pro Visual Studio 2015, Visual Studio 2015, aktualizovat a sady Visual Studio "15".  
   
 ## <a name="visual-studio-15-preview-2"></a>Visual Studio 15 Preview 2  
- Spouští se v sadě Visual Studio "15" Preview 4, vyhledávání vlastních projektů a šablon položek už se provede. Rozšíření místo toho musíte zadat soubory manifestu šablon, které popisují umístění instalace služby tyto šablony. Instalace Preview 2 můžete použít k aktualizaci rozšíření VSIX. Pokud provádíte nasazení vašeho rozšíření pomocí MSI, musíte soubory manifestu šablony vygenerovat ručně. Další informace najdete v tématu [upgrade vlastních šablon projektů a položek pro Visual Studio "15"](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-“15”.md). Schéma manifestu šablony je popsána v [Visual Studio Manifest odkaz na schéma šablon](../extensibility/visual-studio-template-manifest-schema-reference.md).  
+ Spouští se v sadě Visual Studio "15" Preview 4, vyhledávání vlastních projektů a šablon položek už se provede. Rozšíření místo toho musíte zadat soubory manifestu šablon, které popisují umístění instalace služby tyto šablony. Instalace Preview 2 můžete použít k aktualizaci rozšíření VSIX. Pokud provádíte nasazení vašeho rozšíření pomocí MSI, musíte soubory manifestu šablony vygenerovat ručně. Další informace najdete v tématu [upgrade vlastních šablon projektů a položek pro Visual Studio "15"](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Schéma manifestu šablony je popsána v [Visual Studio Manifest odkaz na schéma šablon](../extensibility/visual-studio-template-manifest-schema-reference.md).  
   
 ## <a name="vs-2015-sdk-update-1"></a>VS 2015 SDK Update 1  
  Aktualizace Update 1 zahrnuje nástroje, které pomáhají vaše rozšíření fungovat dobře s barevné motivy a image služby Visual Studio.  

@@ -13,12 +13,12 @@ ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8212b11a60697211f70cd608b6f08a3fade874e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd850cf73f9d7a9c443c374bd8a83e48c3470a31
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686695"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124870"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Vytváření vlastních šablon projektů a položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio SDK zahrnuje šablony projektu, které vytvořit vlastní šablonu
   
  Pro scénáře vytvoření základní šablony, byste měli použít **exportovat šablonu** průvodce, který uloží do komprimovaného souboru. Další informace o vytvoření základní šablony najdete v tématu [vytváření projektů a šablon položek](../ide/creating-project-and-item-templates.md).  
   
- Spouští se v sadě Visual Studio "15" Preview 4, vyhledávání vlastních projektů a šablon položek už se provede. Rozšíření místo toho musíte zadat soubory manifestu šablon, které popisují umístění instalace služby tyto šablony. Instalace Preview 2 můžete použít k aktualizaci rozšíření VSIX. Pokud provádíte nasazení vašeho rozšíření pomocí MSI, musíte soubory manifestu šablony vygenerovat ručně. Další informace najdete v tématu [upgrade vlastních šablon projektů a položek pro Visual Studio "15"](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-“15”.md). Schéma manifestu šablony je popsána v [Visual Studio Manifest odkaz na schéma šablon](../extensibility/visual-studio-template-manifest-schema-reference.md).  
+ Spouští se v sadě Visual Studio "15" Preview 4, vyhledávání vlastních projektů a šablon položek už se provede. Rozšíření místo toho musíte zadat soubory manifestu šablon, které popisují umístění instalace služby tyto šablony. Instalace Preview 2 můžete použít k aktualizaci rozšíření VSIX. Pokud provádíte nasazení vašeho rozšíření pomocí MSI, musíte soubory manifestu šablony vygenerovat ručně. Další informace najdete v tématu [upgrade vlastních šablon projektů a položek pro Visual Studio "15"](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Schéma manifestu šablony je popsána v [Visual Studio Manifest odkaz na schéma šablon](../extensibility/visual-studio-template-manifest-schema-reference.md).  
   
 ## <a name="creating-a-project-template"></a>Vytvoření šablony projektu  
   

@@ -2,7 +2,7 @@
 title: Vytvoření aplikace Node.js a React
 description: V tomto kurzu vytvoříte aplikaci pomocí nástrojů Node.js Tools for Visual Studio.
 ms.custom: mvc
-ms.date: 05/23/2018
+ms.date: 09/06/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0615f557d67c16698e0c737d97e45639be8a5eac
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567139"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124999"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Kurz: Vytvoření aplikace Node.js a React v sadě Visual Studio
 
@@ -31,6 +31,30 @@ V tomto kurzu se naučíte:
 > * Přidat do aplikace kód React
 > * Transpilovat JSX
 > * Připojit ladicí program
+
+## <a name="before-you-begin"></a>Než začnete
+
+Tady je rychlý – nejčastější dotazy vám představí některé klíčové koncepty.
+
+### <a name="what-is-nodejs"></a>Co je Node.js?
+
+Node.js je prostředí runtime jazyka JavaScript na straně serveru, který se spustí JavaScript na straně serveru.
+
+### <a name="what-is-npm"></a>Co je npm?
+
+npm je výchozí Správce balíčků pro na Node.js. Správce balíčků usnadňuje práci programátorům k publikování a sdílet zdrojový kód z knihoven Node.js a je navržené pro zjednodušení instalace, aktualizace nebo odinstalace knihoven.
+
+### <a name="what-is-react"></a>Co je React?
+
+React je front-endové rozhraní pro vytvoření uživatelského rozhraní.
+
+### <a name="what-is-jsx"></a>Co je JSX?
+
+JSX je rozšíření syntaxe jazyka JavaScript, obvykle používají k popisu prvky uživatelského rozhraní pomocí React. Kódu JSX musí být transpiled do prostého jazyka Javasript, než můžete spustit v prohlížeči.
+
+### <a name="what-is-webpack"></a>Co je webpacku?
+
+webpacku sady Javascriptové soubory, můžete spustit v prohlížeči. Můžete také transformovat nebo jiné prostředky a prostředky. Se často používá k určení kompilátor, jako je například Babel nebo TypeScript, transpiluje kódu JSX nebo TypeScript pro prostý jazyk JavaScript.
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -62,13 +86,15 @@ Nejprve vytvoříte projekt webové aplikace Node.js.
 
     ![Projekt Node.js v Průzkumníku řešení](../javascript/media/tutorial-nodejs-react-project-structure.png)
 
-    * Projekt je zvýrazněný tučným písmem a má název, který jste zadali v dialogovém okně **Nový projekt**. V systému souborů je tento projekt reprezentovaný souborem *.njsproj* ve složce projektu. Vlastnosti a proměnné prostředí přidružené k projektu můžete nastavit tak, že kliknete pravým tlačítkem na projekt a zvolíte **Vlastnosti**. Je možné provádět zpětné převody umožňující práci v jiných nástrojích pro vývoj, protože soubor projektu neprovádí vlastní změny ve zdroji projektu Node.js.
+    (1) zvýrazněno **tučné** je váš projekt, pomocí názvu, který jste zadali v **nový projekt** dialogové okno. V systému souborů je tento projekt reprezentovaný souborem *.njsproj* ve složce projektu. Vlastnosti a proměnné prostředí přidružené k projektu můžete nastavit tak, že kliknete pravým tlačítkem na projekt a zvolíte **Vlastnosti**. Verzemi s jinými nástroji pro vývoj, můžete provést, protože soubor projektu není provádět vlastní změny zdroje projektu Node.js.
 
-    * Na nejvyšší úrovni je řešení, které má ve výchozím nastavení stejný název jako příslušný projekt. Řešení, reprezentované na disku souborem *.sln*, je kontejner pro jeden nebo více souvisejících projektů.
+    (2) na nejvyšší úrovni je řešení, která ve výchozím nastavení má stejný název jako projekt. Řešení, reprezentované na disku souborem *.sln*, je kontejner pro jeden nebo více souvisejících projektů.
 
-    * Uzel npm zobrazuje všechny nainstalované balíčky npm. Po kliknutí pravým tlačítkem na uzel npm lze vyhledat a nainstalovat balíčky npm pomocí dialogového okna.
+    (3) npm uzlu se zobrazuje všechny balíčky npm nainstalované. Kliknete pravým tlačítkem na uzel npm, který se má vyhledat a nainstalovat balíčky npm pomocí dialogové okno nebo instalace a aktualizace balíčků pomocí nastavení v *package.json* a klikněte pravým tlačítkem na možnosti v uzlu npm.
 
-    * Soubory projektu, například *server.js*, se zobrazují pod uzlem projektu. *Server.js* je spouštěcí soubor projektu.
+    (4) *package.json* je soubor používaný npm Spravovat závislosti balíčků a verze balíčku pro místně nainstalované balíčky. Další informace v tomto souboru najdete v tématu [konfigurační soubor package.json](../javascript/configure-packages-with-package-json.md)
+
+    (5) soubory projektu, jako *server.js* zobrazí pod uzlem projektu. *Server.js* je spouštěcí soubor projektu a, který je proč zobrazí v **tučné**. Můžete nastavit spouštěcí soubor tak, že kliknete pravým tlačítkem soubor v projektu a vyberete **nastavit jako spouštěcí soubor Node.js**.
 
 ## <a name="add-npm-packages"></a>Přidání balíčků npm
 
@@ -95,26 +121,26 @@ Tato aplikace vyžaduje ke správnému fungování řadu modulů npm.
 
     Soubor *package.json* tohoto projektu se aktualizuje informacemi o novém balíčku, včetně verze tohoto balíčku.
 
-1. Místo hledání a přidávání zbývajících balíčků po jednom pomocí uživatelského rozhraní vložte následující kód do souboru package.json. Chcete-li to provést, nahraďte `dependencies` oddílu s tímto kódem:
+1. Místo hledání a přidávání zbývajících balíčků po jednom pomocí uživatelského rozhraní vložte následující kód do souboru package.json. Chcete-li to provést, přidejte `dependencies` oddílu s tímto kódem:
 
-    ```js
+    ```json
     "dependencies": {
-      "express": "4.16.2",
-      "path": "0.12.7",
-      "react": "16.4.0",
-      "react-dom": "16.4.0",
-      "ts-loader": "4.0.1",
-      "typescript": "2.7.2",
-      "webpack": "4.1.1",
-      "webpack-cli": "2.0.11"
+      "express": "~4.16.3",
+      "path": "~0.12.7",
+      "react": "~16.4.2",
+      "react-dom": "~16.4.2",
+      "ts-loader": "~4.5.0",
+      "typescript": "~2.9.2",
+      "webpack": "~4.17.1",
+      "webpack-cli": "~2.1.5"
     }
     ```
 
-    Pokud není žádný `dependencies` oddílu ve vaší verzi prázdnou šablonou, je třeba přidat ji místo nahraďte stávající část.
+    Pokud už existuje `dependencies` oddílu ve vaší verzi i prázdnou šablonu, stačí ji nahradit předchozí kód JSON. Další informace o použití tohoto souboru najdete v tématu [konfigurační soubor package.json](../javascript/configure-packages-with-package-json.md)
 
 1. Klikněte pravým tlačítkem na **npm** uzlu ve vašem projektu a zvolte **aktualizovat balíčky npm**.
 
-    V dolním podokně, vyberte **výstup** okna pro instalaci balíčků naleznete v průběhu. Instalace může trvat několik minut a nemusí ihned sledujte výsledky. Příliš najdete ve výstupu, ujistěte se, že jste vybrali **Npm** v **zobrazit výstup z:** pole **výstup** okna.
+    V dolním podokně, vyberte **výstup** okna pro instalaci balíčků naleznete v průběhu. Instalace může trvat několik minut a nemusí ihned sledujte výsledky. Pokud chcete zobrazit výstup, ujistěte se, že vyberete **Npm** v **zobrazit výstup z:** pole v **výstup** okno.
 
     Tady jsou moduly npm, které se po instalaci zobrazí v Průzkumníku řešení.
 
@@ -270,7 +296,7 @@ V předchozím postupu jste do projektu přidali *webpack-config.js*. Dále při
 
     ![Spuštění webpacku](../javascript/media/tutorial-nodejs-react-run-webpack.png)
 
-    Pokud se místo uvedeného výstupu zobrazují nějaké chyby, je potřeba je před použitím aplikace odstranit. Příčinou těchto chyb může být skutečnost, že se vaše verze balíčků npm liší od verzí používaných v tomto kurzu. Jednou možností, jak chyby odstranit, je použití přesně těch verzí, které jsou uvedené v dřívějším postupu. Pokud jsou některé z těchto verzí balíčků zastaralé a způsobují chyby, může být k odstranění chyb potřeba nainstalovat novější verze.
+    Pokud se místo uvedeného výstupu zobrazují nějaké chyby, je potřeba je před použitím aplikace odstranit. Příčinou těchto chyb může být skutečnost, že se vaše verze balíčků npm liší od verzí používaných v tomto kurzu. Jednou možností, jak chyby odstranit, je použití přesně těch verzí, které jsou uvedené v dřívějším postupu. Pokud jsou některé z těchto verzí balíčků zastaralé a způsobují chyby, může být k odstranění chyb potřeba nainstalovat novější verze. Informace o používání *package.json* řízení verze balíčku npm, naleznete v tématu [konfigurační soubor package.json](../javascript/configure-packages-with-package-json.md).
 
 1. V Průzkumníku řešení klikněte pravým tlačítkem myši na uzel projektu a zvolte **přidat** > **existující složku**, klikněte na tlačítko *dist* složky a vyberte  **Vyberte složku**.
 
