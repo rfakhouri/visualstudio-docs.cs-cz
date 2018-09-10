@@ -94,7 +94,7 @@
 ## [Rozšíření filtru Průzkumníka řešení](extending-the-solution-explorer-filter.md)
 ## [Správa načítání projektů v řešení](managing-project-loading-in-a-solution.md)
 # [Vytváření vlastních šablon projektů a položek](creating-custom-project-and-item-templates.md)
-## [Upgrade vlastních šablon projektů a položek pro Visual Studio 15](upgrading-custom-project-and-item-templates-for-visual-studio-“15”.md)
+## [Upgrade vlastních šablon projektů a položek pro Visual Studio 15](upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)
 ## [Postupy: Použití průvodců se šablonami projektů](how-to-use-wizards-with-project-templates.md)
 ## [Odkaz na schéma šablon sady Visual Studio](visual-studio-template-schema-reference.md)
 ### [AppliesTo – element (šablony sady Visual Studio)](appliesto-element-visual-studio-templates.md)
