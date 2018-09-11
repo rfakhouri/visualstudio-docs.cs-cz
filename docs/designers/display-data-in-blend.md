@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b632e4aa7ce26c9a64517cc3a02b17fc3f939b07
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: ae09c6921bc4f6e0b3bb2a91eb9c3972c997d566
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890354"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282167"
 ---
 # <a name="display-data-in-blend"></a>Zobrazení dat v Blendu
 
@@ -43,7 +43,7 @@ Pokud jste již vytvořili tříd, které popisují strukturu vašich dat, můž
 
 Chcete-li generovat ukázková data ze třídy, otevřete dokument XAML a potom v **Data** panelu, klikněte na tlačítko **vytvořit ukázková data** ![ikonu vytvořit ukázková data](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) tlačítko a pak klikněte na **Vytvořit ukázková Data ze třídy**.
 
-**Podívejte se na krátké video:** ![ikonu přehrávání](../designers/media/bldadminconsoleinitialconfigicon.PNG) [vytvořit ukázková data ze třídy](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg).
+**Podívejte se na krátké video:** ![ikonu přehrávání](../designers/media/bldadminconsoleinitialconfigicon.PNG) [vytvořit ukázková data ze třídy](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
 
 **Podívejte se na krátké video:** ![ikonu přehrávání](../designers/media/bldadminconsoleinitialconfigicon.PNG) [kombinovat si některé datové vazby pomocí programu Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
@@ -53,7 +53,7 @@ Chcete-li generovat ukázková data ze třídy, otevřete dokument XAML a potom 
 
 ## <a name="show-live-data-in-a-store-or-phone-app"></a>Zobrazit živá data v app storu nebo telefon
 
-Zobrazit [práce s daty a soubory (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).
+Zobrazit [práce s daty a soubory (XAML)](/previous-versions/windows/apps/br229562(v=win.10)).
 
 ## <a name="see-also"></a>Viz také:
 

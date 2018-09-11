@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85f146d567f429c8104017ef9441676f9cf3209b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 81c538897de64f6b7cc1f832cc07604991375872
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42624070"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283740"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Použití samostatného kolektoru IntelliTrace
 **Samostatného kolektoru IntelliTrace** umožňuje shromažďovat diagnostická data IntelliTrace pro vaše aplikace na provozních serverech nebo v jiných prostředích, bez nutnosti instalace sady Visual Studio na cílovém počítači a beze změny cílové prostředí systému. Samostatný kolektor IntelliTrace funguje pro aplikace z webu služby SharePoint, WPF a Windows Forms. Po dokončení shromažďování dat, stačí kolektor odstraňte a odinstalujte ho.
@@ -382,7 +382,7 @@ ms.locfileid: "42624070"
 
 -   V relaci v sadě Visual Studio Enterprise ladění IntelliTrace, zobrazit [funkce IntelliTrace](../debugger/intellitrace-features.md).
 
--   Z testovací relace v nástroji Microsoft Test Manager, najdete v článku [postupy: shromažďování dat technologie IntelliTrace pro pomáhají ladění složitých problémů](http://msdn.microsoft.com/Library/02b6716f-569e-4961-938a-e790a0c74b5c).
+-   Z testovací relace v nástroji Microsoft Test Manager, najdete v článku [postupy: shromažďování dat technologie IntelliTrace pro pomáhají ladění složitých problémů](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues).
 
 ## <a name="where-can-i-get-more-information"></a>Kde lze získat další informace?
  [Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)
