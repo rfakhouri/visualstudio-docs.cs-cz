@@ -33,16 +33,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624391"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384237"
 ---
 # <a name="find-and-replace-text"></a>Vyhledání a nahrazení textu
 
-Můžete najít a nahradit text v editoru sady Visual Studio s použitím [najít a nahradit](#find-and-replace-control) nebo [najít/nahradit v souborech](#find-replace-in-files). Nová funkce v sadě Visual Studio 2017 verze 15.8, můžete najít a nahradit *některé* instance modelu s použitím  *[více blikající kurzor o výběr](#multi-caret-selection)*.
+Můžete najít a nahradit text v editoru sady Visual Studio s použitím [najít a nahradit](#find-and-replace-control) nebo [najít/nahradit v souborech](#find-in-files-and-replace-in-files). Nová funkce v sadě Visual Studio 2017 verze 15.8, můžete najít a nahradit *některé* instance modelu s použitím  *[více blikající kurzor o výběr](#multi-caret-selection)*.
 
 > [!TIP]
 > Pokud se přejmenování symboly kódu, jako jsou proměnné a metody, je lepší *[Refaktorujte](../ide/reference/rename.md)* je než můžete najít a nahradit. Refaktoring je inteligentní a rozumí oboru, zatímco najít a nahradit slepě nahradí všechny instance.

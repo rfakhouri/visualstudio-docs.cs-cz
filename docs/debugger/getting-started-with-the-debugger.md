@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624037"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384224"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Kurz: Zjistěte, jak ladit pomocí sady Visual Studio
 
@@ -31,7 +31,7 @@ Tento článek obsahuje představení funkcí v ladicím programu sady Visual St
 |---------|---------|
 |  ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video")  |    [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) ladění, která zobrazuje podobný postup. |
 
-Přestože je ukázkovou aplikaci C# a C++, funkce platí pro Visual Basic, JavaScript a jinými jazyky podporovanými sady Visual Studio (Pokud není uvedeno jinak). Snímky obrazovky jsou v jazyce C#. Chcete-li přepnout mezi C# a C++ ukázkový kód, pomocí filtru jazyk v pravém horním rohu stránky.
+Přestože je ukázkovou aplikaci C# a C++, funkce platí pro Visual Basic, JavaScript a jinými jazyky podporovanými sady Visual Studio (Pokud není uvedeno jinak). Snímky obrazovky jsou v jazyce C#. Chcete-li přepnout mezi C# a C++ ukázkový kód v tomto článku pomocí filtru jazyk v pravém horním rohu této stránky.
 
 V tomto kurzu se naučíte:
 
@@ -286,9 +286,9 @@ V tomto kurzu se naučíte:
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Nastavte zarážku a spuštění ladicího programu
 
-1. V `foreach` smyčku z `Main` – funkce (`for` smyčky v jazyce C++ `main` funkce), nastavte zarážku kliknutím na levý okraj prvního řádku kódu.
+1. V `foreach` smyčku z `Main` – funkce (`for` smyčky v jazyce C++ `main` funkce), nastavte zarážku kliknutím na levém okraji následující řádek kódu:
 
-    ![Nastavit zarážku](../debugger/media/get-started-set-breakpoint.png "SetABreakPoint")
+    `shape.Draw()` (nebo `shape->Draw()` v jazyce C++)
 
     Se zobrazí červený kruh, kde nastavit zarážku.
 
@@ -296,7 +296,7 @@ V tomto kurzu se naučíte:
 
 6. Stisknutím klávesy **F5** nebo **spustit ladění** tlačítko, aplikace se spustí, a ladicí program běží na řádek kódu, kde nastavit zarážku.
 
-    ![Na zarážku,](../debugger/media/get-started-hit-breakpoint.png "HitABreakPoint")
+    ![Nastavte a použijte zarážku](../debugger/media/get-started-set-breakpoint.gif)
 
     Žlutá šipka označuje příkaz na které ladicí program pozastaví, což také pozastaví provádění aplikace na stejném místě (Tento příkaz nebyl dosud proveden).
 
@@ -308,9 +308,7 @@ V tomto kurzu se naučíte:
 
 Většinou, klávesové zkratky tady používáme, protože je dobrým způsobem, jak získat rychlé při spuštění aplikace v ladicím programu (ekvivalentní příkazy jako je například nabídka příkazy jsou uvedeny v závorkách).
 
-1. Stisknutím klávesy **F11** (nebo zvolte **ladění > Krokovat s vnořením**) jednou (několikrát v jazyce C#) dokud pozastavíte `shape.Draw` volání metody `Main` – metoda (`shape->Draw` v jazyce C++).
-
-1. Stisknutím klávesy **F11** ještě jednou k přechodu do kódu pro `Rectangle` třídy.
+1. Během pozastavení v `shape.Draw` volání metody `Main` – metoda (`shape->Draw` v jazyce C++), stiskněte klávesu **F11** (nebo zvolte **ladit > Krokovat s vnořením**) pro přechod do kódu pro `Rectangle` Třída.
 
      ![Můžete krokovat s vnořením kód F11](../debugger/media/get-started-f11.png "F11 Krokovat s vnořením")
 
@@ -364,19 +362,19 @@ Klikněte na tlačítko **restartovat** ![restartovat aplikaci](../debugger/medi
 
 Když stisknete klávesu **restartovat**, šetří čas a zastavuje se aplikace a restartování ladicího programu. Ladicí program pozastaví na první zarážce, kterou dosáhnete spuštěním kódu.
 
-Ladicí program se znovu zastaví na zarážce, které jste nastavili v `foreach` smyčky (`for` smyčky v jazyce C++).
+Ladicí program se znovu zastaví na zarážce, nastavíte na `shape.Draw()` – metoda (`shape->Draw()` v jazyce C++).
 
 ## <a name="inspect-variables-with-data-tips"></a>Kontrolovat proměnné s datových tipech
 
 Funkce, které umožňují kontrolovat proměnné jsou jedním z nejužitečnějších funkce ladicího programu, a to různými způsoby. Při pokusu o ladění chyby se často, pokoušíte zjistit, zda jsou proměnné ukládání hodnot, které očekáváte, že ho, aby v určitou dobu.
 
-1. Během pozastavení na `foreach` smyčky (`for` smyčky v jazyce C++), stiskněte klávesu **F11** po.
-
-1. Najeďte myší `shapes` objektu a zobrazit její hodnotu vlastnosti výchozí `Count` vlastnost.
+1. Během pozastavení na `shape.Draw()` – metoda (`shape->Draw()` v jazyce C++), najeďte myší `shapes` objektu a zobrazit její hodnotu vlastnosti výchozí `Count` vlastnost.
 
 1. Rozbalte `shapes` objektu zobrazíte všechny její vlastnosti, jako je například první index pole `[0]`, který má hodnotu `Rectangle` (C#) nebo adresu paměti (C++).
 
-     ![Zobrazení datového tipu](../debugger/media/get-started-data-tip.png "zobrazení popisu dat.")
+     ![Zobrazení datového tipu](../debugger/media/get-started-data-tip.gif "zobrazení popisu dat.")
+
+    Můžete dále rozšířit objekty zobrazení jejich vlastností, jako `Height` vlastnosti obdélníku.
 
     Často při ladění, chcete rychle zkontrolovat hodnoty vlastností pro objekty a datové tipy jsou dobrým způsobem, jak to udělat.
 

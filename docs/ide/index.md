@@ -1,5 +1,5 @@
 ---
-title: Dokumentace k sadě Visual Studio
+title: Dokumentace sady Visual Studio
 description: Zjistěte, jak Visual Studio umožňuje vyvíjet aplikace pomocí různých programovacích jazycích.
 ms.date: 01/01/2018
 layout: LandingPage
@@ -10,14 +10,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4e642f06777fd66a12ebffe5a7f9c9aedacc4e
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: a20e248ae13fa15442c753dfce85b56620505d7d
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131941"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384172"
 ---
-# <a name="visual-studio-documentation"></a>Dokumentace k sadě Visual Studio
+# <a name="visual-studio-documentation"></a>Dokumentace sady Visual Studio
 
 Zjistěte, jak Visual Studio umožňuje vyvíjet aplikace pomocí různých programovacích jazycích.
 Kurzy, videa a další dokumentace ukazují, jak vytvářet kód a aplikace pomocí sady Visual Studio.
@@ -79,7 +79,7 @@ Kurzy, videa a další dokumentace ukazují, jak vytvářet kód a aplikace pomo
     </li>
 </ul>
 
-<h2>Vyzkoušejte Visual Studio s zprovoznění"během 5 minut"</h2>
+## <a name="experience-visual-studio-with-5-minute-quickstarts"></a>Vyzkoušejte Visual Studio s zprovoznění"během 5 minut"
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -246,7 +246,7 @@ Kurzy, videa a další dokumentace ukazují, jak vytvářet kód a aplikace pomo
     </li>
 </ul>
 
-<h2>Seznamte se blíž s kurzy</h2>
+## <a name="go-deeper-with-tutorials"></a>Seznamte se blíž s kurzy
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">

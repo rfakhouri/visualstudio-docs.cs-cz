@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8565e6169167089ac425d7c6689c517f5ca61d
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8a5adc68df8b56d69389807e2e1502b2891c73a0
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567206"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384302"
 ---
 # <a name="code-snippets-schema-reference"></a>Referenční informace ke schématu fragmentů kódu
 
@@ -176,7 +176,7 @@ Skupiny [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-eleme
 
 |Podřízený element.|Popis|
 |-------------------|-----------------|
-|[CodeSnippet element](../ide/code-snippets-schema-reference.md#codesnippet)|Volitelný element. Nadřazený element pro všechna data fragmentu kódu. Může být nula nebo více `CodeSnippet` prvky `CodeSnippets` elementu.|
+|[CodeSnippet element](../ide/code-snippets-schema-reference.md#codesnippet-element)|Volitelný element. Nadřazený element pro všechna data fragmentu kódu. Může být nula nebo více `CodeSnippet` prvky `CodeSnippets` elementu.|
 
 ## <a name="declarations-element"></a>Declarations element
 
@@ -196,7 +196,7 @@ Určuje literály a objekty tvořící části fragmentu kódu, které lze upra
 
 |Nadřazený element|Popis|
 |--------------------|-----------------|
-|[Snippet element](../ide/code-snippets-schema-reference.md#snippet)|Obsahuje odkazy, direktivy import, deklarace a kód fragmentu kódu.|
+|[Snippet element](../ide/code-snippets-schema-reference.md#snippet-element)|Obsahuje odkazy, direktivy import, deklarace a kód fragmentu kódu.|
 
 ## <a name="default-element"></a>Default element
 
@@ -279,7 +279,7 @@ Určuje obecné informace o fragmentu kódu technologie IntelliSense.
 
 |Nadřazený element|Popis|
 |--------------------|-----------------|
-|[CodeSnippet element](../ide/code-snippets-schema-reference.md#codesnippet)|Nadřazený element pro všechna data fragmentu kódu.|
+|[CodeSnippet element](../ide/code-snippets-schema-reference.md#codesnippet-element)|Nadřazený element pro všechna data fragmentu kódu.|
 
 ## <a name="helpurl-element"></a>Helpurl – element
 
@@ -422,7 +422,7 @@ Literály a objekty nesmí obsahovat **ID** element s hodnotou selected nebo end
 
 |Nadřazený element|Popis|
 |--------------------|-----------------|
-|[Declarations element](../ide/code-snippets-schema-reference.md#declarations)|Obsahuje literály a objekty fragmentu kódu, které lze upravovat.|
+|[Declarations element](../ide/code-snippets-schema-reference.md#declarations-element)|Obsahuje literály a objekty fragmentu kódu, které lze upravovat.|
 
 ## <a name="namespace-element"></a>Namespace element
 
@@ -491,7 +491,7 @@ Určuje informace o odkazech na sestavení vyžadovaných fragmentem kódu.
 
 |Nadřazený element|Popis|
 |--------------------|-----------------|
-|[References – element](../ide/code-snippets-schema-reference.md#references)|Element pro seskupení `Reference` elementy.|
+|[References – element](../ide/code-snippets-schema-reference.md#references-element)|Element pro seskupení `Reference` elementy.|
 
 ## <a name="references-element"></a>References – element
 

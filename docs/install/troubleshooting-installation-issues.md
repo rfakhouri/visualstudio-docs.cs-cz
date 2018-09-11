@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a7ae2bff6d35c77dc54ce07207af375b76ee77
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: db85353830e1d86773a870a410797bfb5c60ccd7
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511688"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384120"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Řešení potíží s instalací sady Visual Studio 2017 a upgradovat problémy
 
@@ -56,7 +56,7 @@ Instalační program sady Visual Studio bootstrapper je minimální odlehčené 
 
 V některých situacích, jako je ta, která souvisí poškozené soubory možná muset problémy se podívali na případ od případu. Abychom pomohli nám umožňují, postupujte prosím takto:
 
-1. Shromážděte vaše protokoly instalace. Zobrazit [jak získat protokoly instalace sady Visual Studio](#how-to-get-the-visual-studio-installation-logs) podrobnosti.
+1. Shromážděte vaše protokoly instalace. Zobrazit [jak získat protokoly instalace sady Visual Studio](#how-to-get-visual-studio-installation-logs) podrobnosti.
 2. Otevřete instalační program sady Visual Studio a pak klikněte na tlačítko **nahlásit problém** otevřete Nástroje pro zpětnou vazbu Visual Studio.
 ![Vytvořit kartu k tlačítku poskytnout zpětnou vazbu a otevřete nástroj pro zpětnou vazbu](media/report-a-problem.png)
 3. Pojmenujte hlášení o problému a poskytuje relevantní podrobnosti. Klikněte na tlačítko **Další** přejdete **přílohy** části a připojte soubor protokolu vygenerovaný (obvykle je soubor na `%TEMP%\vslogs.zip`).

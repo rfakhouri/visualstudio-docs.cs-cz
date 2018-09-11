@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c84314cf025652dac2670c19763ae069ea6865
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279760"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384198"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Nalezení změn kódu a další historie pomocí CodeLensu
 
@@ -66,7 +66,7 @@ Potřebuješ:
 
 - Team Foundation Server 2013 nebo novější, Azure DevOps Services nebo Git
 
-- [Skype pro firmy](/skypeforbusiness/), nebo Lync 2010 nebo novější, ke kontaktování týmem z editoru kódu
+- [Skype pro firmy](/skypeforbusiness/) kontaktovat týmem z editoru kódu
 
 Pro kód jazyka C# nebo Visual Basic, který se uloží spolu s Team Foundation verze ovládacího prvku (TFVC) nebo Git, získání podrobností funkce CodeLens na úrovni třídy a metody (*úrovni element kódu* ukazatele). Pokud v TfGit je hostitelem vašeho úložiště Git, budete mít také odkazy na pracovní položky sady TFS.
 
@@ -80,7 +80,7 @@ Pro soubor typy jiné než *.cs* nebo *.vb*, získání podrobností funkce Code
 
 Kód indikátory na úrovni prvku vám umožní vidět, kdo ho změnil kód a jaké změny byly provedeny. Indikátory na úrovni prvku kódu jsou k dispozici pro kód jazyka C# a Visual Basic.
 
-Je to, co se zobrazí při použití Team Foundation verze ovládacího prvku (TFVC) v Team Foundation Server nebo ve službách Azure DevOps: 
+Je to, co se zobrazí při použití Team Foundation verze ovládacího prvku (TFVC) v Team Foundation Server nebo ve službách Azure DevOps:
 
 ![CodeLens: Získat historii změn pro svůj kód v TFVC](../ide/media/codelens-code-changes.png)
 
@@ -257,13 +257,13 @@ Indikátory CodeLens na úrovni souborů zapněte a vypnout pomocí ikony šipky
 
 - Pokud je váš kód uložen v sadě TFS, ujistěte se, jestli indexování kódu je zapnutá pomocí [codeindex – příkaz](../ide/codeindex-command.md) s [příkaz TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
 
-- Indikátory související s aplikací TFS se zobrazí pouze v případě, že jsou pracovní položky propojeny s kódem a máte oprávnění otevírat propojené pracovní položky. Potvrďte, že máte [oprávnění člena týmu](/vsts/work/scale/multiple-teams).
+- Indikátory související s DevOps aplikací zobrazí pouze v případě, že jsou pracovní položky propojeny s kódem a v případě, že máte oprávnění k otevření propojené pracovní položky. Potvrďte, že máte [oprávnění člena týmu](/azure/devops/organizations/security/view-permissions?view=vsts).
 
 - Pokud kód aplikace nemá testování částí, nejsou zobrazeny indikátory testu jednotek. Indikátory stavu testu se automaticky zobrazí v projektech testů. Pokud víte, že váš kód aplikace má testování částí, ale nejsou zobrazeny indikátory testu, zkuste sestavit řešení (**Ctrl**+**Shift**+**B**).
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Otázka: Proč nevidím podrobnosti pracovní položky pro potvrzení změn?
 
-**Odpověď:** příčinou může být funkce CodeLens nelze najít pracovní položky v TFS. Zkontrolujte, že jste připojeni k projektu, který má ty pracovní položky, a zda máte oprávnění k zobrazení ty pracovní položky. Podrobnosti o pracovní položce nemusí také nezobrazovat Pokud popis potvrzení obsahuje nesprávné informace o ID pracovních položek v sadě TFS.
+**Odpověď:** příčinou může být funkce CodeLens nelze najít pracovní položky v panely Azure nebo v sadě TFS. Zkontrolujte, že jste připojeni k projektu, který má ty pracovní položky, a zda máte oprávnění k zobrazení ty pracovní položky. Podrobnosti o pracovní položce nemusí také zobrazit, pokud popis potvrzení obsahuje nesprávné informace o ID v Azure tabulí nebo TFS pracovních položek.
 
 ### <a name="q-why-dont-i-see-the-skype-indicators"></a>Otázka: Proč nevidím indikátory Skype?
 
@@ -315,7 +315,7 @@ Použití klávesnice:
 
      ![Aktualizujte indikátory týmu funkce CodeLens položky nabídky](../ide/media/codelensrefreshindicatorsfromcode.png)
 
-- **Test**: [najít testy jednotek pro kód](#Find-unit-tests-for-your-code) aktualizovat **Test** indikátoru.
+- **Test**: [najít testy jednotek pro kód](#associated-unit-tests) aktualizovat **Test** indikátoru.
 
 ### <a name="q-whats-local-version"></a>Otázka: co je "Místní verze"?
 

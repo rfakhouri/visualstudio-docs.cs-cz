@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77438e8e98e5cc64564e8903babe3dd0817067ac
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225081"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384289"
 ---
 # <a name="install-visual-studio-2017"></a>Instalace sady Visual Studio 2017
 
@@ -69,7 +69,7 @@ Potom spusťte zaváděcího nástroje sloužící k instalaci instalačního pr
 
   Pokud se zobrazí oznámení o řízení uživatelských účtů, klikněte na tlačítko **Ano**.
 
-2. Požádáme vás potvrďte Microsoft [licenční podmínky](https://visualstudio.microsoft.com/license-terms/) a Microsoft [prohlášení o zásadách](https://go.microsoft.com/fwlink/?LinkID=824704). Klikněte na tlačítko **pokračovat**.
+2. Požádáme vás potvrďte Microsoft [licenční podmínky](https://visualstudio.microsoft.com/license-terms/) a Microsoft [prohlášení o zásadách](https://privacy.microsoft.com/privacystatement). Klikněte na tlačítko **pokračovat**.
 
    ![Licenční podmínky a prohlášení o zásadách](media/vs2017-privacy-and-license-terms.PNG "licenční podmínky společnosti Microsoft a prohlášení o ochraně osobních údajů")
 
@@ -138,7 +138,7 @@ Další informace najdete v tématu [změnit umístění instalace v sadě Visua
    Například [sestavení aplikace v jazyce C++](../ide/getting-started-with-cpp-in-visual-studio.md), klikněte na tlačítko **nainstalováno**, rozbalte **Visual C++** a pak vyberte typ projektu jazyka C++, který má být sestaveno. <br><br>
    K [sestavení aplikace s C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), klikněte na tlačítko **nainstalováno**, rozbalte **Visual C#** a pak vyberte typ projektu jazyka C#, který má být sestaveno.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]  
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
 
 ## <a name="see-also"></a>Viz také:
 

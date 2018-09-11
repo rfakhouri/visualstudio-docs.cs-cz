@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d57aa718216b796cf5e7f008186abedc709d108
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 90dfae7e891c805a785db8bba00d3c75d2a84bf3
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177003"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384159"
 ---
 # <a name="toolbox-html-tab"></a>Panel nástrojů, Karta HTML
 
@@ -117,7 +117,7 @@ Při přetažení **vstup (heslo)** na návrhovou plochu zobrazení, je značka 
 ```
 
 > [!IMPORTANT]
-> Pokud vaše aplikace odesílá uživatelská jména a hesla, měli byste nakonfigurovat svůj web pomocí vrstvy SSL (Secure Sockets) k šifrování přenosu. Další informace najdete v tématu "Zabezpečení připojení pomocí protokolu SSL" [provozní příručce služby IIS](http://go.microsoft.com/fwlink/?linkid=47856). Kromě toho se doporučuje, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověření vstupu uživatele ve webových stránek ASP.NET (Razor) lokality](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
+> Pokud vaše aplikace odesílá uživatelská jména a hesla, měli byste nakonfigurovat svůj web pomocí vrstvy SSL (Secure Sockets) k šifrování přenosu. Další informace najdete v tématu [zabezpečení připojení](/previous-versions/tn-archive/bb418917(v=technet.10)). Kromě toho se doporučuje, abyste ověřili všechny uživatelský vstup. Další informace najdete v tématu [ověření vstupu uživatele ve webových stránek ASP.NET (Razor) lokality](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
 
 **Vstup (zaškrtávací políčko)**
 

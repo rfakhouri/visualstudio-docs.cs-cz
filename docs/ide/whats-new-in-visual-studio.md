@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c6c09c8431cb2a50c0d76ebf476e67730192966
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 619d7b0f93985f59a46fbc67f289cae8fd7ac8a9
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774984"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384185"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s novou v sadě Visual Studio 2017
 
@@ -38,7 +38,7 @@ Tady je podrobný rekapitulace toho, změny provedené od předchozích verzí s
 * **[Vývoj aplikací pro Windows](#windows-app-development)**. Použití šablon UWP v sadě Visual Studio 2017 k vytvoření jednoho projektu pro všechna zařízení s Windows 10 &ndash; počítač, tablet, telefon, Xbox, HoloLens, Surface Hub a další.
 * **[Vývoj mobilních aplikací](#mobile-app-development)**. Inovace a získání výsledků rychle s využitím kódu Xamarin, což sjednocuje vaše multiplatformní mobilní požadavky na jedno jádro základu kódu a sady dovedností.
 * **[Vývoj pro různé platformy](#cross-platform-development)**. Můžete bez potíží doručovat software na libovolnou cílovou platformu. Rozšiřte procesy DevOps na SQL Server pomocí nástroje Redgate Data Tools a bezpečně Automatizujte nasazování databází ze sady Visual Studio. Nebo můžete použít k tvorbě aplikací a knihoven, které poběží na Windows, Linuxu a macOS operačních systémů bez úprav .NET Core.
-* **[Vývoj hry](#games-development)**. S Visual Studio Tools pro Unity (VSTU) můžete použít Visual Studio napsat hru a editor skriptů v jazyce C# a pak použijte jeho výkonný ladicí program najít a opravit chyby. 
+* **[Vývoj hry](#games-development)**. S Visual Studio Tools pro Unity (VSTU) můžete použít Visual Studio napsat hru a editor skriptů v jazyce C# a pak použijte jeho výkonný ladicí program najít a opravit chyby.
 * **[Vývoj AI](#ai-development)**. Pomocí Visual Studio Tools for AI můžete použít pro zvýšení produktivity sady Visual Studio k urychlení inovace AI. Vytvářet, testovat a nasazovat obsáhlý Learning / řešení AI, který se snadno integrují s Azure Machine Learning pro experimentování ve službě robustní možnosti.
 
 > [!NOTE]
@@ -303,7 +303,7 @@ Také **novinkou 15.8**: jsme výrazně vylepšili návrháře prostředí pro X
 
 ![Editor návrháře Xamarin.Adroid rozdělené zobrazení](../ide/media/android-designer-split-view.png)
 
-Další informace najdete v tématu [hardwarovou akceleraci emulátoru výkonu](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin#hyper-v-overview)
+Další informace najdete v tématu [hardwarovou akceleraci emulátoru výkonu](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin)
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
