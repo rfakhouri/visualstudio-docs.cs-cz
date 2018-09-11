@@ -9,16 +9,16 @@ description: Další informace o sadě ModernRequirements produktů, které jsou
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 20ba0a34c54bc0b9a54282bbc50bd1e9bd61c16b
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624202"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279021"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Výhoda MODERNRequirements4TFS v předplatných sady Visual Studio
 
-Vybraná předplatná sady Visual Studio zahrnují 6měsíční předplatné pro MODERNRequirements SmartOffice 4TFS a ModernRequirements4TFS.  MODERNRequirements SmartOffice4TFS rozšiřuje možnosti TFS nebo Visual Studio Team Services v Microsoft Wordu generování sestav a rychlé a formátovaného textu.  ModernRequirements4TFS umožňuje monitorování standardních hodnot pracovních položek a simulaci HTML5.
+Vybraná předplatná sady Visual Studio zahrnují 6měsíční předplatné pro MODERNRequirements SmartOffice 4TFS a ModernRequirements4TFS.  MODERNRequirements SmartOffice4TFS rozšiřuje možnosti TFS nebo služeb Azure DevOps v Microsoft Wordu generování sestav a rychlé a formátovaného textu.  ModernRequirements4TFS umožňuje monitorování standardních hodnot pracovních položek a simulaci HTML5.
 
 
 ## <a name="activation-steps"></a>Postup aktivace
@@ -94,11 +94,11 @@ Vybraná předplatná sady Visual Studio zahrnují 6měsíční předplatné pro
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  |Není k dispozici                                                          |NENÍ K DISPOZICI     |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (organizace), FTE.    Vyloučí: Microsoft Partner Network (Professional), MCT Software & Services pro vývojáře, BizSpark, Imagine, Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (organizace), FTE.  Vyloučí: Microsoft Partner Network (Professional), MCT Software & Services pro vývojáře, BizSpark, Imagine, Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc s produkty ModernRequirements?  Navštivte prosím https://www.modernrequirements.com/support-2/.
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+-  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bbafd92f34671564a91926066a2353a1e0421b63
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: edf1f279ef858b70eab82604cace9546fbc3cf5c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179239"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283207"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kód vlastního pravidla extrakce pro test výkonnosti webu
 
@@ -44,7 +44,7 @@ Můžete vytvořit vlastní pravidla pro extrakci, a to odvozením vlastních pr
 
 5.  (Volitelné) Vytvořte nový projekt knihovny tříd.
 
-6.  (Volitelné) V projektu testů přidejte odkaz na projekt knihovny tříd, který obsahuje vlastní pravidlo pro extrakci.
+6.  (Volitelné) V testovacím projektu přidejte odkaz na projekt knihovny tříd, který obsahuje vlastní pravidlo pro extrakci.
 
 7.  V projektu testů otevřete test výkonnosti webu v **editoru testu výkonnosti webu**.
 

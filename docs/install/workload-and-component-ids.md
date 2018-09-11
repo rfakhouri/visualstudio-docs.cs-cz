@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 4565a757eb7f0f7362ec9710ffb5ca6ab7ba5695
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: c46ce842bc9d95ffe783918b364a8cedaabf95c2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124928"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284052"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>ID pracovního vytížení a komponenta Visual Studio 2017
 
@@ -35,7 +35,7 @@ Klikněte na názvy edition v následující tabulce se zobrazí dostupné úloh
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md) | Microsoft.VisualStudio.Product.Enterprise | Řešení Microsoft DevOps pro zvýšení produktivity a zajištění koordinace napříč týmy všech velikostí |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | Profesionální vývojářské nástroje a služby pro malé týmy |
 | [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Bezplatné, plně vybavené integrované vývojové prostředí pro studenty, open source a individuální vývojáře |
-| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Interakce s Team Foundation Server a Visual Studio Team Services bez vývojových nástrojů Visual Studio |
+| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Interakce s Team Foundation Server a služby Azure DevOps bez vývojových nástrojů Visual Studio |
 | [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | Vytvářejte nativní a spravované aplikace jako WPF, WinForms a Win32 pomocí úprav kódu podle syntaxe, správy zdrojového kódu a správy pracovních položek. Zahrnuje podporu pro C#, Visual Basic a Visual C++. |
 | [Vizuální&nbsp;Studio sestavení&nbsp;nástroje&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools umožňuje sestavovat nativní a spravované aplikace založené na MSBuild bez potřeby Visual Studio IDE. Existují možnosti pro instalaci kompilátory jazyka Visual C++ a knihovny MFC, ATL a C + +/ CLI podpory. |
 | [Vizuální&nbsp;Studio testu&nbsp;agenta&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Podporuje vzdálené spouštění automatizovaných a zátěžových testů |

@@ -9,12 +9,12 @@ description: Přihlaste se k odběru předplatného MSDN Magazine součástí va
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ea89d30c9174cc0bd3080131363edad4ef66eb77
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: a988c6cd546aee767c0900f2319bc456a79da266
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624086"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283584"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Výhoda MSDN Magazine v předplatných sady Visual Studio
 
@@ -57,7 +57,7 @@ Digitální edice je k dispozici pro členy programu Visual Studio Dev Essential
 |Visual Studio Enterprise, Visual Studio Professional (měsíční cloud)   | Azure |Není k dispozici      |  NENÍ K DISPOZICI         |
 |Visual Studio Dev Essentials| NENÍ K DISPOZICI |Digitální vydání       |  Ano|
 
-<sup>1</sup>*vytištěná edition: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, Microsoft Partner Network (organizace), Imagine (Premium).* 
+<sup>1</sup>*vytištěná edition: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, Microsoft Partner Network (organizace), Imagine (Premium).*
 
 *Digitální vydání: MCT Software & Services, Vážíme si toho partnera společnosti Microsoft (Professional), ředitel pro oblast (RD).*
 
@@ -68,4 +68,4 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+-  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

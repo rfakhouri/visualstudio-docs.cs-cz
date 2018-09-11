@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9d2d6c30696636bc8fd2ca571940ac0165eabbcf
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379286"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321044"
 ---
 # <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Postupy: instalace vlastního adaptéru diagnostických dat
 
@@ -46,7 +46,7 @@ Pokud jste vytvořili vlastního adaptéru diagnostických dat nebo vám byl pos
     > [!NOTE]
     > Přestože adaptér diagnostických dat a konfigurační editor lze vytvořit ve stejném projektu a integrované do stejného sestavení, můžete použít samostatné projekty a vytvořit samostatné sestavení, který preferujete.
 
-     Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat v manuálních testů (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat v manuálních testů (testovací plány Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 2.  Pokud chcete vybrat adaptér diagnostických dat pro test, musíte nejprve vybrat existující nastavení testu nebo vytvořit nový štítek z Microsoft Test Manager nebo Visual Studio a vybrat adaptér diagnostických dat na **dat a diagnostiky** Karta vybraná nastavení testu.
 

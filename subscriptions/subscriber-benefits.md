@@ -9,12 +9,12 @@ description: Informace o výhodách, které jsou součástí vašeho předplatn�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a3fb7fd86a5a875c16072792d9d82737b5f19160
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381543"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282219"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Výhody, které jsou součástí vašeho předplatného sady Visual Studio
 
@@ -23,7 +23,7 @@ Předplatná sady Visual Studio nabízí nejkomplexnější sada prostředků m�
 Výhody jsou seskupené do tří kategorií:
 
 ## <a name="tools"></a>Nástroje
-Kategorie nástrojů poskytuje přístup k celou řadu výhod, včetně nejdůležitějšího výhody, jako [Visual Studio IDE](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md), a [Azure](vs-azure.md) .  V závislosti na vaší úrovni předplatného uvidíte také Windows a účty Office 365 pro vývojáře, Visual Studio App Center a výhody od partnerů, jako je například nástroj WhiteSource Bolt a ModernRequirements.
+Kategorie nástrojů poskytuje přístup k celou řadu výhod, včetně nejdůležitějšího výhody, jako [Visual Studio IDE](vs-ide-benefit.md), [Azure DevOps služby](vs-azure-devops.md), a [Azure](vs-azure.md).  V závislosti na vaší úrovni předplatného uvidíte také Windows a účty Office 365 pro vývojáře, Visual Studio App Center a výhody od partnerů, jako je například nástroj WhiteSource Bolt a ModernRequirements.
 
 ## <a name="professional-development"></a>Profesionální vývoj
 Můžete průběžně vylepšovat vaše dovednosti a držet krok s nejnovějšími technologiemi, poskytujeme přístup k některým z nejlepších dostupných online školení od předních specialistů z. Příklady skvělý obsah k dispozici:

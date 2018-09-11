@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c73a2257174199a574e3be7566eb0c2631310cd7
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 8a0a235062b24ab940057a020ce3f9e20ceaebaa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231129"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279580"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Chyba: Zdá se, že Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) na vzdáleném počítači neběží.
 Tato chybová zpráva znamená, že Visual Studio nemůže najít správné instanci Visual Studio Remote Debugging Monitor na vzdáleném počítači. Pro vzdálené ladění pro práci, musí být nainstalován Visual Studio Remote Debugging Monitor. Informace o stažení a nastavení vzdáleného ladicího programu, najdete v části [vzdálené ladění](../debugger/remote-debugging.md).  
@@ -30,7 +30,7 @@ Tato chybová zpráva znamená, že Visual Studio nemůže najít správné inst
 >  Pokud si myslíte, že tato zpráva zobrazila z důvodu chyby produktu, [Oznamte tento problém se sadou Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Pokud potřebujete další pomoc, přečtěte si téma [kontaktujte nás](../ide/talk-to-us.md) způsoby, jak kontaktovat Microsoft.  
   
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>Tato zpráva zobrazila, když mi bylo ladění v sadě Visual Studio 2010 nebo starší  
- Pokud je verze sady Visual Studio, kterou používáte Visual Studio 2010 nebo starší, může také tato chyba se zobrazí v případě, že sdílení souborů a tiskáren není povolená. Další informace o tomto problému najdete na verzi sady Visual Studio 2010 této dokumentace: [Chyba: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON. (EXE) zřejmě není spuštěn ve vzdáleném počítači. – Visual Studio 2010](https://msdn.microsoft.com/en-us/library/ms164726\(v=vs.100\).aspx)  
+ Pokud je verze sady Visual Studio, kterou používáte Visual Studio 2010 nebo starší, může také tato chyba se zobrazí v případě, že sdílení souborů a tiskáren není povolená. Další informace o tomto problému najdete na verzi sady Visual Studio 2010 této dokumentace: [Chyba: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON. (EXE) zřejmě není spuštěn ve vzdáleném počítači. – Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>Tato zpráva zobrazila, když mi bylo místním ladění  
  Pokud se tato zpráva se zobrazuje při ladění místně, může být na straně zmocnitele antivirový software nebo brány firewall třetích stran. Visual Studio je 32bitová aplikace, aby používalo 64bitovou verzi vzdáleného ladicího programu pro ladění 64bitových aplikací. Dva procesy komunikovat prostřednictvím místní sítě v místním počítači. Žádný provoz nechá počítač, ale je možné, že zabezpečovací software třetí strany může blokovat komunikaci.  

@@ -9,12 +9,12 @@ description: Další informace o účtu pro vývojáře Windows, součástí va�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f134289fbc110fa68b4600841a15ec118bcb5223
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: c9d7bc13013d3dd98f675a22b5fb01ac46b2b134
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624018"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279320"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Účet pro vývojáře Windows v předplatných sady Visual Studio
 
@@ -68,4 +68,4 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 * Potřebujete pomoc s používáním vašeho účtu vývojáře Windows?  Podívejte se [podporují](https://developer.microsoft.com/windows/support) prostředků [Windows Dev Center](https://developer.microsoft.com/windows).
 * [Vývoj pro Windows](/windows/)
 * Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
-* Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+* Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

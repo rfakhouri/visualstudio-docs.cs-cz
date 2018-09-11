@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c712114918f2e0feae2a0820ef9e90a6060e80ec
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8072c19a5ee5bdf8e8fe28e94334faf0cf7fd44a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780541"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281725"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Zadání symbolu (.pdb) a zdrojových souborů v ladicím programu sady Visual Studio
 Soubor databáze (PDB) programu, nazývaný také soubor symbolů, mapuje identifikátory, které vytvoříte ve zdrojovém kódu pro třídy, metody a jiný kód, na identifikátory, které se používají v kompilovaných spustitelných souborech projektu. Soubor PDB také mapuje příkazy ve zdrojovém kódu k provozním pokynům ve spustitelných souborech. Ladicí program používá tyto informace k určení dvou důležitých informací:
@@ -255,6 +255,6 @@ Chcete-li zjistit, jaké symboly jsou k dispozici v exportní tabulce knihovny D
      Všimněte si, že oba **povolit zdrojový server pro sestavení částečné důvěryhodnosti (pouze spravované)** a **vždy spouštět nedůvěryhodné příkazy ze zdrojového serveru bez zobrazení výzvy** mohou zvýšit možnost bezpečnostního rizika, které bylo uvedeno výše.  
   
 ## <a name="see-also"></a>Viz také  
-[Principy Symbol souborů a nastavení symbolů Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
+[Principy Symbol souborů a nastavení symbolů Visual Studio](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[.NET změny vzdáleného načítání symbolů v sadě Visual Studio 2012 a 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)
+[.NET změny vzdáleného načítání symbolů v sadě Visual Studio 2012 a 2013](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0eae43e894b521cc9633df3d6e0c84e8dbb0b20
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5f21528571a929fe31e8eb8cf891918a32fe2dce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511324"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278723"
 ---
 # <a name="step-6-work-with-git"></a>Krok 6: Práce s Gitem
 
 **Předchozí krok: [nainstalujte balíčky a správa prostředí Pythonu](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
-Visual Studio poskytuje přímou integraci se místní úložiště Git a Vzdálená úložiště na služby, jako je GitHub a Visual Studio Team Services. Integrace zahrnuje klonování úložiště, potvrzení změn a správa větví.
+Visual Studio poskytuje přímou integraci se místní úložiště Git a Vzdálená úložiště na služby, jako je GitHub a úložiště Azure. Integrace zahrnuje klonování úložiště, potvrzení změn a správa větví.
 
 Tento článek obsahuje základní přehled vytvořit místní úložiště Git pro existující projekt a seznámení se s některými funkcemi související s Git sady Visual Studio.
 
@@ -56,7 +56,7 @@ Tento článek obsahuje základní přehled vytvořit místní úložiště Git 
 
 Krátký návod k vytvoření projektu ze vzdáleného úložiště Git, naleznete v tématu [rychlý start: klonování úložiště kódu v Pythonu v sadě Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
-Mnohem komplexnější kurz, včetně zpracování konfliktů při sloučení, revize kódu s žádostmi o přijetí změn, probíhá přenesení změn a vybírání změny mezi větvemi, najdete v tématu [Začínáme s Git a VSTS](/vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio).
+Mnohem komplexnější kurz, včetně zpracování konfliktů při sloučení, revize kódu s žádostmi o přijetí změn, probíhá přenesení změn a vybírání změny mezi větvemi, najdete v tématu [Začínáme s Git a úložiště Azure](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio).
 
 ## <a name="tutorial-review"></a>Kurz revize
 

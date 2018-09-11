@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7368369b0c15f7ae159896f30ee59066a18728
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: cce175f487d24e528d7527c424a1f76fa2a82824
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078638"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280672"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Postupy: Opětovné podepisování manifestů aplikace a nasazení
 Když provedete změny vlastnosti nasazení v manifestu aplikace pro aplikace Windows Forms, aplikace Windows Presentation Foundation (xbap) nebo řešení pro systém Office, musíte znovu podepsat obě aplikace a manifesty nasazení se certifikát. Tento proces pomáhá zajistit, že zmanipulovanou soubory nejsou nainstalované v počítačích koncových uživatelů.  
@@ -33,7 +33,7 @@ Když provedete změny vlastnosti nasazení v manifestu aplikace pro aplikace Wi
  Jiný scénář, kde může být znovu podepište manifesty je, pokud zákazníci chtějí k podepsání aplikace a manifesty nasazení vlastním certifikátem.  
   
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Znovu podepište manifesty nasazení a aplikace  
- Tento postup předpokládá, že jste už provedli změny do souboru manifestu aplikace (*.manifest*). Další informace najdete v tématu [postupy: Změna vlastností nasazení](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Tento postup předpokládá, že jste už provedli změny do souboru manifestu aplikace (*.manifest*). Další informace najdete v tématu [postupy: Změna vlastností nasazení](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>K opětovnému podepsání aplikace a nasazení manifestů s Mage.exe  
   

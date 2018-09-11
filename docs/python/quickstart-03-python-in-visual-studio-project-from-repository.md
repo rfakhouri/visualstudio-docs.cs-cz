@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 18d967fd25dcaeb07ea0cc58babc0493c441a7bc
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996061"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281686"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Rychlý start: Klonování úložiště kódu v Pythonu v sadě Visual Studio
 
@@ -30,9 +30,9 @@ Jakmile [nainstalována podpora Pythonu v sadě Visual Studio 2017](installing-p
 
 1. Spusťte sadu Visual Studio.
 
-1. Vyberte **zobrazení** > **Průzkumník týmových projektů** otevřete **Průzkumník týmových projektů** okno, ve kterém můžete připojit se k GitHub nebo Visual Studio Team Services nebo naklonujte úložiště. (Pokud se nezobrazí **připojit** stránky zobrazené níže, vyberte ikonu moduly na horním panelu nástrojů, které vás přesměruje na tuto stránku.)
+1. Vyberte **zobrazení** > **Team Exploreru** otevřít **Team Exploreru** okno, ve kterém můžete připojit ke Githubu nebo úložiště Azure nebo klonování úložiště. (Pokud se nezobrazí **připojit** stránky zobrazené níže, vyberte ikonu moduly na horním panelu nástrojů, které vás přesměruje na tuto stránku.)
 
-    ![Team explorer okno zobrazující Visual Studio Team Services, GitHub a klonování úložiště](media/team-explorer.png)
+    ![Team explorer okno zobrazující úložišť Azure, Githubu a klonování úložiště](media/team-explorer.png)
 
 1. V části **místní úložiště Git**, vyberte **klonování** příkazu, a pak zadejte `https://github.com/gregmalcolm/python_koans` do pole Adresa URL zadejte složky pro klonované soubory a vyberte **klonování** tlačítko.
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2e561e7e5ba060258f88593cdfee0bcfb3ece5c7
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624259"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280165"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Kurz: Začínáme s webového rozhraní Django v sadě Visual Studio
 
@@ -100,7 +100,7 @@ Protože jste vybrali **vytvořit nové úložiště Git** v **nový projekt** d
 
     ![Okno Průzkumníka týmu při vkládání do existující vzdáleného úložiště](media/django/step01-push-to-github.png)
 
-    Pokud nemáte existující úložiště, **publikování ve službě GitHub** a **nasdílet do Visual Studio Team Services** možnosti umožňují vytvořit přímo z Visual Studia.
+    Pokud nemáte existující úložiště, **publikování ve službě GitHub** a **odeslat do Azure DevOps** možnosti umožňují vytvořit přímo z Visual Studia.
 
 1. Při práci kroky v tomto kurzu si zvyknout pravidelně používání ovládacích prvků v sadě Visual Studio k potvrzení a nasdílení změn změny. V tomto kurzu upozorňuje na vhodných míst.
 

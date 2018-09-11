@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8992886290b33027692476988f47454409eb0643
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e77085c840a7ef52bdf40d0c0491bfdfc9d384c3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078313"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280196"
 ---
 # <a name="work-with-shaders"></a>Práce se shadery
 
@@ -33,7 +33,7 @@ Návrháře shaderu slouží k vytvoření pixel shaderů interaktivně namísto
 
 Návrháře shaderu uloží shadery ve formátu orientovaného grafu Shader Language (DGSL), který je ve formátu XML, který je založen na orientovaného grafu jazyka přímého značení (DGML). Shader DGSL můžete použít přímo s 3D modely v editoru modelů. Ale ve vaší aplikaci mohli používat DGSL shader, je nutné ho exportovat do formátu srozumitelného DirectX – například HLSL.
 
-Protože DGSL je kompatibilní s DGML, můžete použít nástroje, které jsou určeny k analýze dokumentech DGML k analýze vaší DGSL shader. Informace o DGML, naleznete v tématu [Principy orientovaného grafu jazyka přímého značení (DGML)](http://msdn.microsoft.com/library/ee842619.aspx).
+Protože DGSL je kompatibilní s DGML, můžete použít nástroje, které jsou určeny k analýze dokumentech DGML k analýze vaší DGSL shader. Informace o DGML, naleznete v tématu [Principy orientovaného grafu jazyka přímého značení (DGML)](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
 ## <a name="related-topics"></a>Související témata
 

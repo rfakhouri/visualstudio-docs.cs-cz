@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 97063229e2ba72263975247b71686492ee8c64f6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078924"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279658"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Práce s elementy v Návrháři XAML
 Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší aplikace v XAML, v kódu nebo s použitím návrháře XAML. Toto téma popisuje, jak pracovat s elementy v Návrháři XAML v sadě Visual Studio nebo nástroje Blend for Visual Studio.
 
 ## <a name="adding-an-element-to-a-layout"></a>Přidat element do rozložení
- *Rozložení* je proces pro změnu velikosti a rozmístění prvků v uživatelském rozhraní. Pokud chcete umístit vizuálních prvků, je nutné umístit je v rozložení [Panel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). A `Panel` má vlastnost podřízené, což je kolekce z [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx) typy. Můžete použít různé `Panel` podřízené prvky, jako například [plátna](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx), a [mřížky](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), která bude sloužit jako kontejnery rozložení a do pozice a uspořádání prvků na stránce.
+ *Rozložení* je proces pro změnu velikosti a rozmístění prvků v uživatelském rozhraní. Pokud chcete umístit vizuálních prvků, je nutné umístit je v rozložení [Panel](/uwp/api/Windows.UI.Xaml.Controls.Panel). A `Panel` má vlastnost podřízené, což je kolekce z [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement) typy. Můžete použít různé `Panel` podřízené prvky, jako například [plátna](/uwp/api/Windows.UI.Xaml.Controls.Canvas), [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel), a [mřížky](/uwp/api/Windows.UI.Xaml.Controls.Grid), která bude sloužit jako kontejnery rozložení a do pozice a uspořádání prvků na stránce.
 
  Ve výchozím nastavení `Grid` panel slouží jako kontejner rozložení nejvyšší úrovně v rámci stránky nebo formuláře. Můžete přidat panely rozložení, ovládacích prvků nebo jiných prvků v rámci rozložení stránky nejvyšší úrovně.
 
@@ -33,7 +33,7 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
 
     -   Přetáhněte element z **nástrojů** na návrhovou plochu.
 
-    -   V **nástrojů**, vyberte jeden z kreslících nástrojů (například [Elipsa](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) nebo [obdélník](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) a následně nakreslete prvek v panelu aktivní.
+    -   V **nástrojů**, vyberte jeden z kreslících nástrojů (například [Elipsa](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) nebo [obdélník](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle)) a následně nakreslete prvek v panelu aktivní.
 
 ## <a name="changing-the-layering-order-of-elements"></a>Změna pořadí vrstev elementů
  Pokud existují dva prvky na návrhovou plochu v Návrháři XAML, jeden prvek se zobrazí před jiným v pořadí vrstev. V dolní části Seznam prvků, osnovy dokumentu okna je nejvíce vpředu prvek (s výjimkou, kdy **ZIndex** je nastavena vlastnost pro daný element). Při vkládání elementů do stránky, formuláře nebo kontejner rozložení, element automaticky umístěn před další prvky v elementu aktivní kontejner. Chcete-li změnit pořadí prvků, můžete použít **pořadí** příkazy nebo přetáhnout prvky v rámci stromů objektů v okně osnovy dokumentu.
@@ -122,4 +122,4 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
 
 ## <a name="see-also"></a>Viz také:
 
-- [Vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Vytvoření uživatelského rozhraní pomocí Návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

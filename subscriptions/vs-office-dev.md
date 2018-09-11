@@ -9,12 +9,12 @@ description: Další informace o benefitech Office 365 pro vývojáře, které j
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b38d4cf27807cf2df8e85515033b98e3132f89e2
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: a97f32bdb2e4a2639962cb3bfc1240f27473bfd6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995875"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283181"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Zvýhodněné předplatné Office 365 pro vývojáře v předplatných sady Visual Studio
 
@@ -78,4 +78,4 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc s vaším předplatným Office pro vývojáře? Podívejte se [podporují](https://developer.microsoft.com/office/support) prostředků [Office Dev Center](https://developer.microsoft.com/office).
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+-  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

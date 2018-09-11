@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ef39ee2a92d1608abbe8d3380d26093b6994ccd
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3f84a50de64b79e47b7165b1711315915d866f8b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511466"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283486"
 ---
 # <a name="graphics-event-list"></a>Seznam událostí grafiky
 Použijte seznam událostí grafiky v analyzátoru grafiky sady Visual Studio zkoumat události rozhraní Direct3D, které byly zaznamenány při vykreslování rámce hru nebo aplikaci.  
   
  Toto je seznam událostí:  
   
- ![Seznam událostí, které mají v názvu "Index". ] (media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")  
+ ![Seznam událostí, které mají v názvu "Index". ](media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")  
   
 ## <a name="using-the-event-list"></a>Pomocí seznamu událostí  
  Když vyberete událost v případě, že seznam, se projeví v informace, které se zobrazí v jiných nástrojích pro analýzu grafiky; Pomocí seznamu událostí ve vzájemné součinnosti pomocí těchto nástrojů můžete zkoumat podrobně zjistit jeho příčinu problému vykreslování. Další informace o tom, jak můžete vyřešit problémů s vykreslováním použitím seznamu událostí společně s další nástroje pro analýzu grafiky, naleznete v tématu [příklady](graphics-diagnostics-examples.md).  
@@ -84,7 +84,7 @@ Použijte seznam událostí grafiky v analyzátoru grafiky sady Visual Studio zk
   
 |Popis rozhraní API|[ID3D12CommandQueue](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandqueue)|[ID3D12GraphicsCommandList](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist)|  
 |---------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
-|Zkontrolovat dostupnost uživatelem definovanou událost|[PIXGetStatus](http://msdn.microsoft.com/en-us/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/en-us/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
+|Zkontrolovat dostupnost uživatelem definovanou událost|[PIXGetStatus](https://msdn.microsoft.com/library/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/en-us/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
 |Začít skupinu událostí|[PIXBeginEvent](http://msdn.microsoft.com/en-us/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/en-us/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
 |Ukončit skupinu událostí|[PIXEndEvent](http://msdn.microsoft.com/en-us/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](http://msdn.microsoft.com/en-us/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
 |Vytvoření značky události|[PIXSetMarker](http://msdn.microsoft.com/en-us/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](http://msdn.microsoft.com/en-us/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
@@ -113,7 +113,7 @@ Sloupec|Popis
 ---|---
 **Typ** | Zobrazí typ položky, obvykle *vytvořit*, *čtení* a *zápisu*.  
 **Zobrazení** | Zobrazí Miniatura prostředku v daném okamžiku v čase.  Dvakrát klikněte na miniaturu a otevřete zobrazení podrobností o prostředku v daném čase.  
-**Události**| Ukazuje volání metody, k níž došlo, který událost vyvolal.  Žádné další historie na jednotlivé položky lze zobrazit výběrem ikony watch ![ikona sledování](media/gfx_watch.png) na odpovídající řádek.  Navíc libovolnou položku, který je vykreslen v modrý text, například `m_commandList` na snímku obrazovky výše, lze vybrat pro další podrobnosti.
+**Event**| Ukazuje volání metody, k níž došlo, který událost vyvolal.  Žádné další historie na jednotlivé položky lze zobrazit výběrem ikony watch ![ikona sledování](media/gfx_watch.png) na odpovídající řádek.  Navíc libovolnou položku, který je vykreslen v modrý text, například `m_commandList` na snímku obrazovky výše, lze vybrat pro další podrobnosti.
 <!-- /VERSIONLESS -->
 
 ## <a name="see-also"></a>Viz také  

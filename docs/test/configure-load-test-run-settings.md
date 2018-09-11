@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382419"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283326"
 ---
 # <a name="configure-load-test-run-settings"></a>Konfigurace parametrů spuštění zátěžového testu
 
@@ -37,6 +37,6 @@ Počáteční parametr spuštění se vytvoří při vytvoření zátěžového 
 |**Určení počtu iterací testu v spuštění zátěžového testu:** můžete určit počet, kolikrát chcete spustit všechny webového výkonu a testy jednotek ve všech scénářích zátěžových testů pomocí konfigurace **testovací iterace** Vlastnost.|-   [Postupy: určení počtu testovacích iterací v nastavení spuštění](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**Určení vzorkovací frekvence pro spuštění zátěžového testu:** můžete určit, jak často chcete, aby zátěžový test shromažďoval data čítačů výkonu tím, že nakonfigurujete **vzorkovací frekvence** vlastnost.|-   [Postupy: určení vzorkovací frekvence](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**Zadejte možnosti úložiště podrobností časování:** můžete určit, jak chcete podrobnosti zátěžového testu uložen tím, že nakonfigurujete **úložiště podrobností časování** vlastnost.|-   [Postupy: určení vlastnosti úložiště podrobností časování](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
-|**Zadejte dobu uchování zdrojů testu:** urychlit test > Opravit > otestujeme cyklu zachováním testovací prostředky během zadaného období nastavením **doba uchování prostředků** vlastnost.|-   [Uchovávat prostředky pro urychlení zátěžové testování](/vsts/test/load-test/getting-started-with-performance-testing?view=vsts)|
+|**Zadejte dobu uchování zdrojů testu:** urychlit test > Opravit > otestujeme cyklu zachováním testovací prostředky během zadaného období nastavením **doba uchování prostředků** vlastnost.|-   [Uchovávat prostředky pro urychlení zátěžové testování](/azure/devops/test/load-test/getting-started-with-performance-testing?view=vsts)|
 |**Použití kontextových parametrů:** můžete použít kontextové parametry pro parametrizaci řetězce. Například pokud zátěžový test obsahuje test výkonnosti webu, který používá parametrizované webový server, můžete přidat kontextový parametr parametrů spuštění, které se mapují na jiný server.|-   [Postupy: Přidání kontextových parametrů k parametrům spuštění](../test/how-to-add-context-parameters-to-a-load-test-run-setting.md)|
 |**Konfigurace vlastností protokolování testu:** můžete nakonfigurovat, jak často se data zapisují do protokolu, který je spojen s parametry spuštění zátěžového testu. To může být důležité při spouštění rozsáhlých nebo složitých zátěžových testů, protože protokol by mohl mít velikost několik gigabajtů.<br /><br /> Lze také nakonfigurovat, aby se soubor protokolu automaticky uložil při selhání zátěžového testu, což pomůže při ladění a analýze aplikace.|-   [Úprava nastavení protokolování zátěžového testu](../test/modify-load-test-logging-settings.md)|

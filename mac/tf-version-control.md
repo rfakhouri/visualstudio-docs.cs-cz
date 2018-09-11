@@ -1,31 +1,31 @@
 ---
-title: Správa verzí TF
-description: Připojení k serveru Team Foundation Server nebo Visual Studio Team Services s Team Foundation – správa verzí.
+title: Team Foundation Version Control (TFVC)
+description: Připojení k serveru Team Foundation Server nebo služby Azure DevOps s Team Foundation Version Control (TFVC).
 author: conceptdev
 ms.author: crdun
-ms.date: 05/03/2018
+ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 101f002f6c311fe5aaefa78c246602fd45514603
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: b8d5f8f39b524bbde9e6988a924cf3b938fedb23
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624153"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279839"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Připojování k Team Foundation – správa verzí 
 
 > [!NOTE]
 > **Poznámka:**: podpora správy verzí Team Foundation je aktuálně ve verzi preview a některé funkce není dosud plně funkční. Jsme rádi, zpětnou vazbu od vás na všechny problémy na [komunity vývojářů](https://developercommunity.visualstudio.com/spaces/41/index.html). Další změny jsou stále chystá!
 
-Visual Studio Team Services (VSTS) a Team Foundation Server (TFS) poskytuje dva modely správy verzí: Git, který je distribuován správy verzí a Team Foundation verze ovládacího prvku (TFVC), což je centralizovaná správa verzí. Tento článek obsahuje přehled a výchozí bod pro Team Foundation – správa verzí pomocí sady Visual Studio pro Mac.
+Úložiště Azure poskytuje dva modely správy verzí: Git, který je distribuován správy verzí a Team Foundation verze ovládacího prvku (TFVC), což je centralizovaná správa verzí. Tento článek obsahuje přehled a výchozí bod pro TFVC pomocí sady Visual Studio pro Mac.
 
 ## <a name="requirements"></a>Požadavky
 
 * Visual Studio Community, Professional nebo Enterprise for Mac verze 7.5 nebo novější.
-* Visual Studio Team Services nebo Team Foundation Server 2013 a novější.
-* Projekt sady Visual Studio Team Services nebo Team Foundation Server nakonfigurován pro použití správy verzí Team Foundation.
+* Služby Azure DevOps, nebo Team Foundation Server 2013 a novější.
+* Projekt Azure DevOps Services nebo Team Foundation Server nakonfigurován pro použití správy verzí Team Foundation.
 
 ## <a name="installation"></a>Instalace
 
@@ -47,17 +47,19 @@ Informace o tom, co je nového v jednotlivých verzích, najdete v článku [poz
 
 ## <a name="using-the-add-in"></a>Pomocí doplňku
 
-Po instalaci rozšíření, vyberte **verzí > TFS/VSTS > Otevřít ze vzdáleného úložiště** položky nabídky. 
+Po instalaci rozšíření, vyberte **verzí > TFS/Azure DevOps > Otevřít ze vzdáleného úložiště** položky nabídky.
 
-Zvolte buď Visual Studio Team Services nebo Team Foundation Server a začít pracovat se stisknutím klávesy **pokračovat**:
+  ![Položka nabídky otevřít rozšíření](media/tfvc-source-control-explorer-devops.png)
 
-  ![Připojení k serveru](media/tfvc-choose-server-type.png)
+Zvolte buď VSTS nebo Team Foundation Server, a začít pracovat se stisknutím klávesy **pokračovat**:
 
-### <a name="vsts-authentication"></a>Ověřování VSTS
+  ![Připojení k serveru](media/tfvc-choose-server-type-devops.png)
 
-Když vyberete projekt, který je hostovaný ve službě VSTS, budete vyzváni k zadání podrobnosti o vašem účtu Microsoft:
+### <a name="azure-repos-authentication"></a>Ověřování Azure úložišť
 
-  ![Připojení k serveru VSTS](media/tfvc-vsts-login.png)
+Když vyberete projekt, který je hostitelem úložiště Azure, budete vyzváni k zadání podrobnosti o vašem účtu Microsoft:
+
+  ![Spojte se s Azure úložišť](media/tfvc-vsts-login.png)
 
 ### <a name="tfs-authentication"></a>Ověřování serveru TFS
 
@@ -73,10 +75,10 @@ Jakmile byli jste úspěšně ověřeni, zobrazí se seznam úložišť, které 
 
 Toto dialogové okno je uspořádaný s následující uzly:
 
-- Účet VSTS nebo kolekci – zobrazí všechny účty připojené k účtu Microsoft, který jste přihlášení
-- Týmové projekty – v rámci každé VSTS můžete mít několik týmových projektů. Týmový projekt, se hostuje zdrojový kód, pracovní položky a automatizované sestavování.
+- Azure DevOps služby organizace nebo kolekci – zobrazí se všechny organizace, které jsou připojené k účtu Microsoft, který jste přihlášení.
+- Projekty – v každé organizaci nebo kolekci, může mít celou řadou projektů. Projekt je, kde jsou hostované zdrojový kód, pracovní položky a automatizované sestavování.
 
-V tomto okamžiku můžete vyhledávat a filtrovat podle názvu projektu nebo účet.
+V tomto okamžiku můžete vyhledávat a filtrovat podle názvu projektu nebo organizace.
 
 ### <a name="adding-a-new-server"></a>Přidání nového serveru
 
@@ -86,7 +88,7 @@ Chcete-li přidat nový server do seznamu, stiskněte **přidat hostitele** tla�
 
 Vyberte poskytovatele ze seznamu a zadejte svoje přihlašovací údaje:
 
-![Dialogové okno zobrazující možnost pro poskytovatele správy zdrojového kódu](media/tfvc-add-new-creds.png)
+![Dialogové okno zobrazující možnost pro poskytovatele správy zdrojového kódu](media/tfvc-add-new-creds-devops.png)
 
 ## <a name="creating-a-new-workspace"></a>Vytváří se nový pracovní prostor
 
@@ -102,9 +104,7 @@ Nastavte název a místní cestu k novému pracovnímu prostoru a vyberte **vytv
 
 Po vytvoření pracovního prostoru a mapována do projektu, můžete začít pracovat s _Průzkumník zdrojového kódu_.
 
-Otevřít Průzkumníka zdrojového kódu, vyberte **verzí > TFS/VSTS > Průzkumník správy zdrojového kódu**:
-
-![Položka nabídky otevřete Průzkumníka zdrojového kódu](media/tfvc-source-control-explorer.png)
+Otevřít Průzkumníka zdrojového kódu, vyberte **verzí > TFS/Azure DevOps > Průzkumník správy zdrojového kódu** položky nabídky.
 
 Průzkumník zdrojového kódu umožňuje procházet z namapované projekty, jejich soubory a složky. Také umožňuje provádět všechny akce správy základní zdrojů, jako:
 
@@ -122,7 +122,7 @@ Mnohé z těchto akcí jsou k dispozici prostřednictvím kontextu akce na proje
 
 ## <a name="managing-workspaces"></a>Správa pracovních prostorů
 
-Pokud jste tak dosud neučinili vytvořit pracovní prostor, jak je popsáno v [vytvoření pracovního prostoru](#creating-a-new-workspace) oddílu, můžete si všimnout, že je prázdný Průzkumník zdrojového kódu:
+Pokud jste ještě nevytvořili pracovního prostoru, jak je popsáno v [vytvoření pracovního prostoru](#creating-a-new-workspace) oddílu, můžete si všimnout, že je prázdný Průzkumník zdrojového kódu:
 
 ![prázdný zdrojový kód explorer](media/tfvc-setup-empty-sce.png) 
 
@@ -134,11 +134,11 @@ Nastavení vzdáleného projekt pomocí místního pracovního prostoru, postupu
     
     ![Vytvořit nový pracovní prostor dialog s informací, výchozí možnosti](media/tfvc-workspace1.png) 
 
-1. Vyberte složky "$" do všech týmových projektů na serveru mapují na stejný pracovní prostor, nebo vyberte jednotlivé projekt a klikněte na tlačítko **OK**:
+1. Vyberte složky "$" do všech projektů na serveru mapují na stejný pracovní prostor, nebo vyberte jednotlivé projekt a klikněte na tlačítko **OK**:
     
     ![Procházet pro složku dialogové okno zobrazující všechny projekty](media/tfvc-workspace2.png) 
 
-1. Vyberte umístění na místním počítači, který chcete projekty do sady Management Pack a klikněte na tlačítko **vybrat složku**.
+1. Vyberte umístění na místním počítači, který chcete namapovat projekt(y) na tento a klikněte na tlačítko **vybrat složku**.
 1. Zkontrolujte podrobnosti o nový pracovní prostor stisknutím kombinace kláves **OK**
     
     ![Vytvořit dialogové okno Nový pracovní prostor se přidá pracovní složky](media/tfvc-workspace3.png) 
@@ -157,10 +157,10 @@ Tyto možnosti lze použít k ověření serveru:
 - Základní
 - NTLM
 
-Základní ověřování je nutná pro povolení **přihlašovací údaje pro alternativní ověření** ve VSTS, pomocí následujících kroků:
+Základní ověřování je nutná pro povolení **přihlašovací údaje pro alternativní ověření** ve službách Azure DevOps, pomocí následujících kroků:
 
-1. Přihlaste se jako vlastník účtu ke svému účtu VSTS (https://{youraccount}.visualstudio.com).
-2. Z panelu nástrojů účtu, vyberte ikonu ozubeného kola a vyberte **zásady**:
+1. Přihlaste se k vaší organizaci Azure DevOps služby jako vlastník (https://dev.azure.com/{organization}/{project}).
+2. Z panelu nástrojů organizace, vyberte ikonu ozubeného kola a vyberte **zásady**:
     
     ![Vybraná možnost nastavení zásad](media/tfvc-auth2.png) 
 
@@ -172,11 +172,11 @@ Základní ověřování je nutná pro povolení **přihlašovací údaje pro al
 
 Nastavit si Team Foundation verze ovládacího prvku (TFVC) ve vašem vývojovém počítači můžete **musí** vytvořit pracovní prostor, jak je popsáno v [Správa pracovních prostorů](#managing-workspaces) oddílu.
 
-V Průzkumníku správy zdrojového kódu, stiskněte **spravovat pracovní prostory** tlačítko. Postupujte podle kroků pro mapování týmového projektu do složky na svém vývojovém počítači.
+V Průzkumníku správy zdrojového kódu, stiskněte **spravovat pracovní prostory** tlačítko. Postupujte podle kroků pro mapování projektu do složky na svém vývojovém počítači.
 
 ### <a name="i-do-not-see-any--all-of-my-projects"></a>Nevidím žádné / all Moje projekty
 
-Po ověření, měli byste vidět seznam projektů. Ve výchozím nastavení jsou uvedeny pouze projekty TFS do. Pokud chcete zobrazit jiné typy projektů, zaškrtněte políčko "«Zobrazit všechny projekty".
+Po ověření, měli byste vidět seznam projektů. Ve výchozím nastavení jsou uvedeny pouze projekty TFS. Pokud chcete zobrazit jiné typy projektů, zaškrtněte políčko "«Zobrazit všechny projekty".
 
 Mějte na paměti, že projekty, které jsou na serveru se nezobrazí, pokud nemáte dostatečná oprávnění.
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 56b9e68767d4191aab016e3c0d976efb808aff01
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154382"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282609"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problémy s konfigurací serveru a klienta v nasazeních ClickOnce
 Pokud používáte Internetové informační služby (IIS) v systému Windows Server a vaše nasazení obsahuje typ souboru, který se nedokáže rozpoznat Windows, jako je například Microsoft Word soubor, služba IIS odmítne přenášet tento soubor a nasazení se nezdaří.  
@@ -41,7 +41,7 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
   
 -   *.deploy* 
   
- Ale můžete tuto možnost zakážete zrušením zaškrtnutí **použít příponu ".deploy"** možnost [dialogové okno publikování možnosti](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), v takovém případě musíte nakonfigurovat webový server k odblokování všechny přípony souborů použít v aplikaci.  
+ Ale můžete tuto možnost zakážete zrušením zaškrtnutí **použít příponu ".deploy"** možnost [dialogové okno publikování možnosti](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), v takovém případě musíte nakonfigurovat webový server k odblokování všechny přípony souborů použít v aplikaci.  
   
  Budete muset nakonfigurovat *.manifest*, *.application*, a *.deploy*, například, pokud používáte IIS, kde jste dosud nenainstalovali [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], nebo pokud jste pomocí jiného webového serveru (např. Apache).  
   

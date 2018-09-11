@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 043bd6e2c97ad3785ab783456fc911334d3d6cd0
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c5bd49d550cb03e8234c8740ea8c0f605ed721c2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153686"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283259"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Nastavení projektu pro konfiguraci ladění jazyka C#
 Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C# v **stránky vlastností** okna, jak je popsáno v [konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují, kde najít nastavení související s ladicí program v **stránky vlastností** okna.  
@@ -40,7 +40,7 @@ Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C# v **str�
 |**Nastavení**|**Popis**|  
 |-----------------|---------------------|  
 |**Konfigurace**|Nastaví režim pro kompilaci aplikace. Zvolte mezi **aktivní (ladění)**, **ladění**, **vydání**, **všechny konfigurace**.|  
-|**Spustit akci**|Tato skupina ovládacích prvků určuje akci, která bude vytvářena při výběru spuštění v nabídce ladění.<br /><br /> -   **Spustit projekt** je výchozí nastavení a spuštění projektu po spuštění pro ladění. Další informace najdete v tématu [výběr spouštěného projektu](http://msdn.microsoft.com/en-us/222e3f32-a6fe-4941-bf37-6b2a921129fd).<br />-   **Spustit externí program** umožňuje spuštění a připojení k programu, který není součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Další informace najdete v tématu [připojení ke spuštění programu](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).<br />-   **Spustit prohlížeč v adrese URL** umožňuje ladění webové aplikace.|  
+|**Spustit akci**|Tato skupina ovládacích prvků určuje akci, která bude vytvářena při výběru spuštění v nabídce ladění.<br /><br /> -   **Spustit projekt** je výchozí nastavení a spuštění projektu po spuštění pro ladění. Další informace najdete v tématu [výběr spouštěného projektu](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />-   **Spustit externí program** umožňuje spuštění a připojení k programu, který není součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Další informace najdete v tématu [připojení ke spuštění programu](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z(v=vs.100)).<br />-   **Spustit prohlížeč v adrese URL** umožňuje ladění webové aplikace.|  
 |**Argumenty příkazového řádku**|Určuje argumenty příkazového řádku pro program k ladění. Název příkazu je zadané ve spuštění programu externí název programu. Pokud se spouštěcí akce nastavená na Otevřít adresu URL, nelze zadat argumenty příkazového řádku.|  
 |**Pracovní adresář**|Určuje pracovní adresář laděného programu. V [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], pracovní adresář je adresář spuštění aplikace z \bin\debug ve výchozím nastavení.|  
 |**Použití vzdáleného počítače**|Název vzdáleného počítače kde bude aplikace spuštěna, pro účely ladění nebo [název serveru Msvsmon](../debugger/remote-debugging.md). Umístění souboru exe ve vzdáleném počítači, je určené vlastností výstupní cestu ve složce vlastnosti konfigurace sestavení kategorie. Umístění musí být sdíleném adresáři na vzdáleném počítači.|
@@ -59,4 +59,4 @@ Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C# v **str�
 > Další informace o najdete v možnostech ladění **Upřesnit** tlačítko, naleznete v tématu [dialogové okno Upřesnit nastavení sestavení (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md). Přenosný formát pro soubory symbolů (PDB) je nejnovější formát pro různé platformy pro .NET Core. 
   
 ## <a name="see-also"></a>Viz také  
- [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)
+ [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)

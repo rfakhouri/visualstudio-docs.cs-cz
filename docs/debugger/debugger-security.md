@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 640c127d9e82a78f629365141c5948d21eafcf3c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d7cc0e24255da8c9fdb8ab3e4e49f030d758d11
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175992"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279567"
 ---
 # <a name="debugger-security"></a>Zabezpečení ladicího programu
 Možnost ladit jiným procesem poskytuje velmi široký mocniny, ke kterým by jinak máte, zejména v případě vzdáleného ladění. Škodlivý ladicí program může způsobit poškození rozšířených na počítači, který se právě ladí.  
@@ -59,7 +59,7 @@ Možnost ladit jiným procesem poskytuje velmi široký mocniny, ke kterým by j
  Další informace najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  
   
 ### <a name="web-services-debugging-security"></a>Ladění zabezpečení webových služeb  
- Je bezpečnější, chcete-li ladit místně, ale od té doby budete pravděpodobně nemají [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nainstalovaný na webovém serveru, místní ladění nemusí být praktické. Obecně platí ladění webových služeb se prováděla vzdáleně, s výjimkou během vývoje, tak doporučení pro zabezpečení vzdálené ladění také použít k ladění webových služeb. Tady jsou některé další osvědčené postupy. Další informace najdete v tématu [ladění webových služeb XML](http://msdn.microsoft.com/en-us/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
+ Je bezpečnější, chcete-li ladit místně, ale od té doby budete pravděpodobně nemají [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nainstalovaný na webovém serveru, místní ladění nemusí být praktické. Obecně platí ladění webových služeb se prováděla vzdáleně, s výjimkou během vývoje, tak doporučení pro zabezpečení vzdálené ladění také použít k ladění webových služeb. Tady jsou některé další osvědčené postupy. Další informace najdete v tématu [ladění webových služeb XML](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
   
 -   Nepovolujte ladění na webovém serveru, který byl napaden.  
   

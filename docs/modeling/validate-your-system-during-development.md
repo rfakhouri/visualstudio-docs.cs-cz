@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e18ee3a48320c076659d54a7ae9d996a982162b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: b3c0c17da3bd5b83260556a7762733924cfe276c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623989"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283616"
 ---
 # <a name="validate-your-system-during-development"></a>Ověřování systému během vývoje
 Visual Studio vám může pomoci udržovat konzistentní s požadavky uživatelů a architektuře systému vašeho softwaru.
@@ -42,8 +42,8 @@ Visual Studio vám může pomoci udržovat konzistentní s požadavky uživatel�
 
 ## <a name="see-also"></a>Viz také:
 
-- [Testování aplikace](/vsts/test/overview?view=vsts)
+- [Testování aplikace](/azure/devops/test/overview?view=vsts)
 - [Modelování uživatelských požadavků](../modeling/model-user-requirements.md)
-- [Analýza a modelování vaší architektury](../modeling/analyze-and-model-your-architecture.md)
+- [Analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

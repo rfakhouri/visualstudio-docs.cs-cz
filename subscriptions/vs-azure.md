@@ -9,12 +9,12 @@ description: Zjistěte, jak aktivovat výhody služeb Azure součástí vašeho 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 20d8474189df34dda9eb2ed7ef2b0e158f06f3b5
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: b8f3542fce0d04e4e6efeba6e2558740c5f5d12f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624277"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282310"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Použití Microsoft Azure v předplatných sady Visual Studio
 
@@ -97,7 +97,7 @@ Pokud předplatné si můžete koupit přímo, proveďte jednu z následujícíc
 
 Porovnat všechny [předplatná a jejich výhody](https://visualstudio.microsoft.com/vs/pricing/).
 
-Pokud máte jiné aktivní předplatné sady Visual Studio na **stejné** předplatné úrovně pod účtem Microsoft, můžete ho propojíte tento Azure využívat tak, že přidáte [alternativní účet](manage-vs-subscriptions.md#linking-my-subscription-to-existing-vsts-or-azure-subscriptions) v sadě Visual Studio portál předplatného. Pokud to nepomůže, můžete také zkusit [přenosu výhody Azure](/azure/billing/billing-subscription-transfer/) na aktivní předplatné sady Visual Studio.
+Pokud máte jiné aktivní předplatné sady Visual Studio na **stejné** předplatné úrovně pod účtem Microsoft, můžete ho propojíte tento Azure využívat tak, že přidáte [alternativní účet](manage-vs-subscriptions.md#linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions) v sadě Visual Studio portál předplatného. Pokud to nepomůže, můžete také zkusit [přenosu výhody Azure](/azure/billing/billing-subscription-transfer/) na aktivní předplatné sady Visual Studio.
 
 Pokud máte jiné aktivní předplatné sady Visual Studio na **různých** předplatné úrovně a pod účtem Microsoft, obraťte se na [podpory Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) žádostí o pomoc.
 
@@ -113,4 +113,4 @@ Pokud si myslíte, že tento e-mail jste dostali omylem, obraťte se prosím [Az
     - Technické podpory: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Dokumentace ke službě Azure](/azure/)
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+-  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

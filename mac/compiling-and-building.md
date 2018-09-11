@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 8e742706117b318a5614484c97b9ecda0b2c3f51
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: a66cc250b0d019b3efa4873b89eef252af44b8a6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624382"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283701"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Kompilování a sestavování v sadě Visual Studio pro Mac
 
@@ -44,7 +44,7 @@ Můžete použít modul sestavení MSBuild pro vytváření aplikací pomocí p�
 
 Zobrazit [MSBuild](/visualstudio/msbuild/msbuild) obsahu pro další informace o použití nástroje MSBuild.
 
-## <a name="building-from-visual-studio-team-services"></a>Sestavení v sadě Visual Studio Team Services
+## <a name="building-from-azure-pipelines"></a>Vytváření z Azure kanály
 
 * [Sestavení aplikace pro Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
 * [Průběžná integrace se sadou Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)

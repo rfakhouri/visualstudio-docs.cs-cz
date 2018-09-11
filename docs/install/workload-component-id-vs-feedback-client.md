@@ -1,6 +1,6 @@
 ---
 title: ID pracovního vytížení a komponenta Visual Studio 2017 klienta zpětné vazby
-description: ID pracovního vytížení a komponenta Visual Studio můžete zaslat podrobnou zpětnou vazbu pro Visual Studio Team Services nebo Team Foundation Server
+description: ID pracovního vytížení a komponenta Visual Studio můžete zaslat podrobnou zpětnou vazbu pro Azure DevOps Services nebo Team Foundation Server
 keywords: ''
 author: TerryGLee
 ms.author: tglee
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: d56d68768be45fc3ab4eb8e30b777ae14abe4343
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 5037870cfbe1df0a4f997f16ef196d78de983aaa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138776"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281556"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Složka komponenty Visual Studio 2017 klienta zpětné vazby
 
@@ -43,7 +43,7 @@ Další informace o tom, jak pomocí těchto identifikátorů najdete v části 
 
 **ID:** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Popis:** Feedback client umožňuje účastníkům poskytovat bohatou zpětnou vazbu pro Visual Studio Team Services nebo Team Foundation Server.
+**Popis:** Feedback client umožňuje účastníkům poskytovat bohatou zpětnou vazbu pro Azure DevOps Services nebo Team Foundation Server.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 

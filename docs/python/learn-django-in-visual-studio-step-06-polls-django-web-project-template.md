@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8b8ec4495c12132b89561bcbbaaf8ebfdbe3483
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 10dc2effb90e754a91f6c9f008c6f8b1692bc252
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624310"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281062"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6: Použijte šablony Polls – webový projekt Django
 
@@ -376,8 +376,8 @@ Spuštění webové aplikace ve svém vývojovém počítači je pouze jeden kro
 
 - Změňte aplikaci z SQLite na provozní úrovni dat úložiště, jako je PostgreSQL, MySQL a SQL Server (všechny z nich je možné hostovat na Azure). Jak je popsáno na [kdy použít SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite funguje s nízkou až středním provozem lokality s méně než 100 tisíc přístupů za den, ale nedoporučuje se používat pro větší svazky. Také je omezeno na jeden počítač, proto jej nelze použít ve všech scénářích více serverů, jako je Vyrovnávání zatížení a geografická replikace. Informace o podpoře společnosti Django pro ostatní databáze najdete v tématu [nastavení databáze](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Můžete také použít [sady Azure SDK for Python](azure-sdk-for-python.md) pro práci se službami Azure storage jako tabulek a objektů BLOB.
 
-- Nastavení průběžné integrace a nasazení kanálu ve službě jako Visual Studio Team Services (VSTS). Kromě práce se správou zdrojového kódu (na VSTS, Githubu nebo jinde), může mít automaticky spouštět testy jednotek jako nezbytný předpoklad pro vydanou verzi a taky nakonfigurovat kanál pro nasazení do přípravného server pro další testování před nasazením do VSTS produkčního prostředí. VSTS, navíc se integruje s monitorováním řešení, jako jsou App Insights a zavře celý cyklus se nástroje pro agilní plánování. Další informace naleznete v tématu:
+- Nastavení průběžné integrace a nasazení kanálu ve službě, jako je Azure kanály. Kromě práce se správou zdrojového kódu (na úložiště Azure, Githubu nebo jinde), můžete mít Azure testovací plány automaticky spouštět testy jednotek jako nezbytný předpoklad pro vydanou verzi a taky nakonfigurovat kanál pro nasazení do přípravného server pro další testy před nasazení do produkčního prostředí. Služby Azure DevOps, navíc se integruje s monitorováním řešení, jako jsou App Insights a zavře celý cyklus se nástroje pro agilní plánování. Další informace naleznete v tématu:
 
-  - [Vytvoření kanálu CI/CD pro Python s Azure DevOps project](/azure/devops-project/azure-devops-project-python?view=vsts)
+  - [Vytvoření kanálu CI/CD pro Python s projekty Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [Vývoj v jazyce Python v Azure pomocí služby Visual Studio Team Services (video, 11 min 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
 

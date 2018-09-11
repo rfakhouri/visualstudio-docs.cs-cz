@@ -9,12 +9,12 @@ description: Přečtěte si Opsgility školení výhody, které jsou součástí
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cd0409eef71ebd97b98f93631b0229d5d8526362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42623893"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280893"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Na webu Opsgility výhoda v předplatných sady Visual Studio
 
@@ -55,4 +55,4 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc s Opsgility?  Vyplňte lístek podpory prostřednictvím [kontaktujte nás](https://www.opsgility.com/SupportTicket) stránky.
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+-  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

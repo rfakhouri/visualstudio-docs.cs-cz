@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6d22202e50c973c52bf2b47374b9eda583fb3fe8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512288"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280880"
 ---
 # <a name="using-the-tasks-window"></a>Používání okna úloh
 
-**Úlohy** okno vypadá podobně jako **vlákna** okna, s tím rozdílem, že se zobrazuje informace o <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle –](/cpp/parallel/concrt/reference/task-group-class), nebo [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) objekty namísto každé vlákno. Například vlákna úlohy představuje asynchronní operace, které můžou běžet souběžně; ale více úkolů může spustit ve stejném vlákně.
+**Úlohy** okno vypadá podobně jako **vlákna** okna, s tím rozdílem, že se zobrazuje informace o <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle –](/cpp/parallel/concrt/reference/task-group-class), nebo [WinJS.Promise ](/previous-versions/windows/apps/br211867(v=win.10)) objekty namísto každé vlákno. Například vlákna úlohy představuje asynchronní operace, které můžou běžet souběžně; ale více úkolů může spustit ve stejném vlákně.
 
 Ve spravovaném kódu, můžete použít **úlohy** okno při práci s <xref:System.Threading.Tasks.Task?displayProperty=fullName> objekty nebo se **await** a **asynchronní** klíčová slova (**Await** a **asynchronní** v VisualBasic). Další informace o úlohách ve spravovaném kódu najdete v tématu [paralelního programování](/dotnet/standard/parallel-programming/index).
 
 V nativním kódu, můžete použít **úlohy** okno při práci s [skupiny úloh](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [paralelní algoritmy](/cpp/parallel/concrt/parallel-algorithms), [asynchronních agentů](/cpp/parallel/concrt/asynchronous-agents), a [prostých úloh](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Další informace o úlohách v nativním kódu, naleznete v tématu [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime).
 
-V jazyce JavaScript, můžete použít okno úlohy při práci s promise `.then` kódu. Zobrazit [asynchronní programování v jazyce JavaScript (aplikace pro UPW)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) Další informace.
+V jazyce JavaScript, můžete použít okno úlohy při práci s promise `.then` kódu. Zobrazit [asynchronní programování v jazyce JavaScript (aplikace pro UPW)](/previous-versions/windows/apps/hh700330(v=win.10)) Další informace.
 
 Můžete použít **úlohy** okna pokaždé, když jste přerušení ladicího programu. Je k dispozici na **ladění** nabídky kliknutím **Windows** a pak levým na **úlohy**. Je vidět na následujícím obrázku **úlohy** okna v její výchozí režim.
 
@@ -100,5 +100,5 @@ Sloupce v **úlohy** v okně zobrazí následující informace.
 - [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)
 - [Paralelní programování](/dotnet/standard/parallel-programming/index)
 - [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime)
-- [Použití okna paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)
+- [Použití okna Paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)
 - [Návod: Ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md)

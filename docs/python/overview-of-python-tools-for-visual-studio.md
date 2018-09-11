@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fca73f1ad91baa1f38ac73f1266616e0db37b1b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 99d87f5b8a8a5ee0ad69b6f6d0da121799262c9f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776181"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320966"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Práce s využitím Pythonu v sadě Visual Studio ve Windows
 
@@ -38,6 +38,8 @@ Jak začít:
 Visual Studio **prostředí Pythonu** okno (viz následující obrázek v široké, rozšířené zobrazení) poskytuje jednotné místo, kde můžete spravovat všechny globální prostředí Pythonu, prostředí conda a virtuální prostředí. Visual Studio automaticky zjišťuje instalace Pythonu ve standardní umístění a umožňuje nakonfigurovat vlastní zařízení. Každé prostředí můžete snadno spravovat balíčky, otevřete interaktivní okno pro toto prostředí a přístup ke složkám na prostředí.
 
 ![Rozšířené zobrazení okno prostředí Pythonu](media/environments-expanded-view.png)
+
+Použití **otevřít interaktivní okno** příkaz interaktivní spuštění Pythonu v rámci sady Visual Studio. Použití **otevřít v PowerShell** příkaz pro otevření okna samostatný příkaz ve složce vybraného prostředí. Z tohoto okna Příkazový skript můžete spustit všechny python. 
 
 Další informace:
 
@@ -62,7 +64,7 @@ Další informace:
 
 ## <a name="interactive-window"></a>Interaktivní okno
 
-Pro všechna prostředí Pythonu, známé sady Visual Studio můžete jednoduše otevřít stejné interaktivního prostředí (REPL) pro interpret Pythonu přímo v rámci sady Visual Studio, spíš než samostatném příkazovém řádku. Můžete snadno přepínat mezi prostředími také.
+Pro všechna prostředí Pythonu, známé sady Visual Studio můžete jednoduše otevřít stejné interaktivního prostředí (REPL) pro interpret Pythonu přímo v rámci sady Visual Studio, spíš než samostatném příkazovém řádku. Můžete snadno přepínat mezi prostředími také. (Otevřete samostatném příkazovém řádku, vyberte požadované prostředí v **prostředí Pythonu** okna, vyberte **otevřít v PowerShell** příkaz, jak je vysvětleno výše v části [podpory u více interpretů](#support-for-multiple=interpreters).)
 
 ![Interaktivní okno Pythonu v sadě Visual Studio](media/interactive-window.png)
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b18a80e8279513db6084852b10568b2327700d5
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 515c5d4c1bd09d65ae23d3d1af2f3183607c6b53
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380494"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320953"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Rychlý start: Vytvoření projektu zátěžového testu
 
@@ -59,7 +59,7 @@ V této části vytvoříme C# projekt zátěžového testu. Můžete také vytv
 
    **Průvodce novým zátěžovým testem** otevře.
 
-1. Vyberte **On-premises zátěžový Test** možnost a klikněte na tlačítko **Další**. Další informace o cloudové zátěžové testování [tady](/vsts/load-test/get-started-simple-cloud-load-test).
+1. Vyberte **On-premises zátěžový Test** možnost a klikněte na tlačítko **Další**. Další informace o cloudové zátěžové testování [tady](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
 
    ![Průvodce novým zátěžovým testem – první stránka](media/load-test-wizard-page-1.png)
 

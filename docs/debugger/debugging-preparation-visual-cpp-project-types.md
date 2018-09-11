@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1157a4475b12a51f9833131b550e31ad1c218ad
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a1ff82ec2b86eeaf078576a437481ec2b7c39aa4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176912"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279481"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Příprava ladění: typy projektů jazyka Visual C++
 Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] šablony projektu.  
@@ -98,7 +98,7 @@ Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE
  [V tomto tématu](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplikace Windows Forms (.NET)  
- **Windows Forms aplikace (.NET)** šablona vytvoří [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplikace Windows Forms. Další informace najdete v tématu [postupy: vytvoření projektu aplikace Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+ **Windows Forms aplikace (.NET)** šablona vytvoří [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplikace Windows Forms. Další informace najdete v tématu [postupy: vytvoření projektu aplikace Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
   
  Ladění tohoto typu aplikace v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je podobná ve spravovaných aplikacích Windows Forms.  
   
@@ -115,4 +115,4 @@ Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE
  [Nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Připojení více programů nebo spuštění programu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Postupy: vytvoření projektu aplikace Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)
+ [Postupy: vytvoření projektu aplikace Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

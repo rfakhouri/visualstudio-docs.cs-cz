@@ -9,12 +9,12 @@ description: Další informace o předplatné Power BI Pro, které jsou součás
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c09035a14cf571523f7d5c757c9c41e807b0c86b
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 08e3fb3cc41ef7ada1acd984671150c1f61a0e05
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624089"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280464"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro v předplatných sady Visual Studio
 
@@ -79,7 +79,7 @@ Pokud chcete používat Power BI Pro, budete muset nastavit účet nebo se přih
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici |NENÍ K DISPOZICI|
 | Visual Studio Enterprise (měsíční cloud) | Azure                                       | Není k dispozici                                  |NENÍ K DISPOZICI|
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou partnera (MVP), ředitel pro oblast (RD).    Vyloučí: Microsoft Partner Network (MPN), FTE Imagine.*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou partnera (MVP), ředitel pro oblast (RD).  Vyloučí: Microsoft Partner Network (MPN), FTE Imagine.*
 
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
@@ -101,4 +101,4 @@ Odpověď: Ano.
     - Problémy s registrací?  Podívejte se na [registrace ke službě Power BI jako individuální uživatel](/power-bi/service-self-service-signup-for-power-bi)
     - Prozkoumejte nejčastější problémy, získejte pomoc od komunity nebo odeslat lístek podpory na [stránku podpory](https://powerbi.microsoft.com/support/).
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+-  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

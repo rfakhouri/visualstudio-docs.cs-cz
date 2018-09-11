@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5824876adc75430085ea0f69dc6f01be722526f5
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231223"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320550"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Rychlý start: Nejdřív se podívejte na nasazení v sadě Visual Studio
 
@@ -45,7 +45,7 @@ Nasazení do místní složky se obvykle používá pro testování, nebo začn�
 
     ![Tlačítko Publikovat](../deployment/media/quickstart-publish.png)
 
-- **Modul runtime Visual C++**: můžete nasadit modulu runtime Visual C++ pomocí místní nasazení nebo statického propojení. Další informace najdete v tématu [nasazování nativních desktopových aplikací (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **Modul runtime Visual C++**: můžete nasadit modulu runtime Visual C++ pomocí místní nasazení nebo statického propojení. Další informace najdete v tématu [nasazování nativních desktopových aplikací (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Publikování do Azure
 
@@ -76,7 +76,7 @@ Nasazení do místní složky se obvykle používá pro testování, nebo začn�
 
     Můžete také nasadit aplikace ASP.NET a služby v celou řadou způsobů. Další informace najdete v tématu [nasazení webových aplikací a služeb ASP.NET](http://www.asp.net/aspnet/overview/deployment).
 
-- **Modul runtime Visual C++**: můžete nasadit modulu runtime Visual C++ pomocí Centrální nasazení. Další informace najdete v tématu [nasazování nativních desktopových aplikací (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **Modul runtime Visual C++**: můžete nasadit modulu runtime Visual C++ pomocí Centrální nasazení. Další informace najdete v tématu [nasazování nativních desktopových aplikací (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 - **Windows desktop** můžete publikovat aplikace klasické pracovní plochy Windows na webový server nebo síťové sdílené pomocí nasazení ClickOnce. Uživatelé pak mohou aplikaci nainstalovat jediným kliknutím. Další informace najdete v tématu [nasazení stolní aplikace pomocí technologie ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) a [nasazení nativní aplikace pomocí technologie ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -114,7 +114,7 @@ Můžete povolit složitější vývoj a testování nasazení aplikací ve virt
 
 ## <a name="devops-deployment"></a>Nasazení DevOps
 
-Ve vývojovém týmu můžete použít Visual Studio Team Services (VSTS) povolit průběžné nasazování vašich aplikací. Další informace najdete v tématu [sestavení a vydání](/vsts/build-release/index) a [nasadit do Azure](/vsts/deploy-azure/index).
+Ve vývojovém týmu můžete použít kanály Azure umožnit průběžné nasazování vaší aplikace. Další informace najdete v tématu [kanály Azure](/azure/devops/pipelines/index?view=vsts) a [nasadit do Azure](/azure/devops/deploy-azure/index?view=vsts).
 
 ## <a name="deployment-for-other-app-types"></a>Nasazení pro další typy aplikací
 
@@ -122,7 +122,7 @@ Ve vývojovém týmu můžete použít Visual Studio Team Services (VSTS) povoli
 | --- | --- | --- |
 | **Aplikace Office** | Můžete publikovat doplněk pro Office v sadě Visual Studio. | [Nasazení a publikování vašeho doplňku Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Služby WCF nebo OData**  | Když nasadíte na webový server služby WCF RIA můžete používat další aplikace. | [Vývoj a nasazení služeb WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **Aplikace LightSwitch** | Aplikace LightSwitch je již nejsou podporovány v sadě Visual Studio 2017, ale je stále možné nasadit ze sady Visual Studio 2015 a starší. | [Nasazení aplikací LightSwitch](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+| **Aplikace LightSwitch** | Aplikace LightSwitch je již nejsou podporovány v sadě Visual Studio 2017, ale je stále možné nasadit ze sady Visual Studio 2015 a starší. | [Nasazení aplikací LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Další kroky
 

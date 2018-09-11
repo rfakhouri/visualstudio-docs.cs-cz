@@ -9,12 +9,12 @@ description: Další informace o předplatné školení Pluralsight, který je s
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5f1582023032dc3581090937d18feddf428033ca
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3b90ac75cf92ac9adfef5023b3677b8044d44350
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624308"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283142"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight – školení v předplatných sady Visual Studio
 
@@ -113,4 +113,4 @@ Odpověď: Ne.  Výhody pro Pluralsight je jedno použití pouze vázané na už
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  [Centrum pro nápovědu Pluralsight](https://help.pluralsight.com/help) poskytuje pomoc s kurzy Pluralsight trvá nebo na webu Pluralsight.
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+-  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

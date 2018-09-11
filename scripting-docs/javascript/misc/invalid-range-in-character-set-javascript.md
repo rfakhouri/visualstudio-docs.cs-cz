@@ -1,5 +1,5 @@
 ---
-title: Neplatný rozsah ve znakové nastavit (JavaScript) | Microsoft Docs
+title: Neplatný rozsah ve znakové nastavit (JavaScript) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14d0d5ddf282c6994c572668136e6d7283794f6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e4cc8feb9a33c2995e592f8031beb2e03605891d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788727"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282811"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Neplatný rozsah ve znakové sadě (JavaScript)
-Jste se pokusili vytvořit regulární výraz s rozsahem sadu neplatný znak. Znakových sad musí být v rozsahu od jedné znaky, jako je například a-z nebo 0-9; nesmí obsahovat znak třídy, jako je \w ve znakové sadě. První znak v rozsahu musí být zadán, před druhém znaku v rozsahu. Příklad:  
+Pokoušíte se o vytvoření regulárního výrazu s rozsahem sadě neplatný znak. Znakových sad musí být v rozsahu od jednotlivé znaky, jako je například a-z nebo 0-9; třídy znaků, jako je například \w nemůže obsahovat ve znakové sadě. První znak v rozsahu také musí být uvedena před druhým znakem v rozsahu. Příklad:  
   
 ```JavaScript  
 var good = /[a-z]/;     // A valid character range - a comes before z.  
@@ -37,8 +37,8 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Použijte pouze jeden znaky tvoří vaše regulární výraz znaková sada, a ujistěte se, že jsou ve správném pořadí.  
+-   Používejte pouze jednotlivé znaky pro vytváření sady znak regulárního výrazu a ujistěte se, že jsou ve správném pořadí.  
   
 ## <a name="see-also"></a>Viz také  
  [Objekt regulárního výrazu](../../javascript/reference/regular-expression-object-javascript.md)   
- [Syntaxi regulárního výrazu (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [Syntaxe regulárního výrazu (JavaScript)](https://msdn.microsoft.com/library/1400241x)

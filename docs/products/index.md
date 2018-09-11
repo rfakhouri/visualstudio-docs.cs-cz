@@ -1,16 +1,16 @@
 ---
 layout: HubPage
 hide_bc: true
-title: Dokumentace k sadě Visual Studio | Microsoft Docs
-description: Další informace o použití Visual Studio 2017 pro vývoj aplikací, služeb a nástrojů v jazyce, platformy a zařízení.
+title: Dokumentace k sadě Visual Studio | Dokumentace Microsoftu
+description: Další informace o použití sady Visual Studio 2017 na vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 728091071a7e9409ac523ee078800915cba84814
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
-ms.translationtype: MT
+ms.openlocfilehash: 6baee6be451ba1997f44e24d5a1690f7b451c3a2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690595"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280971"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -34,7 +34,7 @@ ms.locfileid: "34690595"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio – sada IDE</h3>
-                                                    <p>Sestavení aplikace a hry, pomocí systému Windows, k dosažení všech zařízení Android, iOS, Windows, web nebo cloud.</p>
+                                                    <p>Vytvářejte aplikace a hry, s Windows, pro libovolné zařízení s Android, iOS, Windows, web nebo cloud.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -42,7 +42,7 @@ ms.locfileid: "34690595"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/vsts" title="Visual Studio Team Services">
+                                <a href="/azure/devops/" title="Služby Azure DevOps">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -52,8 +52,8 @@ ms.locfileid: "34690595"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Visual Studio Team Services</h3>
-                                                    <p>Zvýšení produktivity týmu pomocí nástroje pro agilní projektů a sestavy. Vytvoření, testování a nasazení projektů od správy zdrojového kódu s moderního nástroji CI/CD.</p>
+                                                    <h3>Služby Azure DevOps</h3>
+                                                    <p>Zvyšte svou produktivitu týmu pomocí agilní nástroje a sestavy. Sestavení, testování a nasazení projektů ze správy zdrojového kódu pomocí moderních nástrojů CI/CD.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -61,7 +61,7 @@ ms.locfileid: "34690595"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/tfs" title="Team Foundation Server">
+                                <a href="/tfs/" title="Team Foundation Server">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -72,7 +72,7 @@ ms.locfileid: "34690595"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Team Foundation Server</h3>
-                                                    <p>Instalace, upgradu a spravovat místní nasazení.</p>
+                                                    <p>Instalovat, upgradovat a spravovat místní nasazení.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -91,7 +91,7 @@ ms.locfileid: "34690595"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio Code</h3>
-                                                    <p>Bohaté úprav a ladění ve velkém množství jazyků v systému MacOS, Linux a Windows</p>
+                                                    <p>Bohaté možnosti úprav a ladění na stovkách jazyků v systémech MacOS, Linux a Windows</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -110,7 +110,7 @@ ms.locfileid: "34690595"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio for Mac</h3>
-                                                    <p>Sestavení aplikace a hry, pomocí Mac se pro cloud, iOS, Android, systému macOS a wearables.</p>
+                                                    <p>Vytvářejte aplikace a hry pomocí Mac, pro cloud, iOS, Android, macOS a přenosná zařízení.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -118,7 +118,7 @@ ms.locfileid: "34690595"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/appcenter" title="Centrum aplikace Visual Studio">
+                                <a href="/appcenter/" title="Visual Studio App Center">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -128,8 +128,8 @@ ms.locfileid: "34690595"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Centrum aplikace Visual Studio</h3>
-                                                    <p>Průběžnou integraci, distribuci a learning pro aplikace Android, iOS, systému macOS a systému Windows. Dodávat 5 hvězdičkami, kvalitnější aplikace rychleji a s jistotou.</p>
+                                                    <h3>Visual Studio App Center</h3>
+                                                    <p>Průběžná integrace, doručování a učení pro aplikace pro Android, iOS, macOS a Windows. Dodávejte 5 hvězdiček, kvalitnější aplikace rychleji a s jistotou.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -137,7 +137,7 @@ ms.locfileid: "34690595"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://aka.ms/vs-subscriptions" title="Centrum aplikace Visual Studio">
+                                <a href="/subscriptions/" title="Předplatná sady Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -148,7 +148,7 @@ ms.locfileid: "34690595"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Předplatná sady Visual Studio</h3>
-                                                    <p>Nástroje pro vývojáře, cloudových služeb, školení a podpory na jednom místě.</p>
+                                                    <p>Nástroje pro vývojáře, cloudové služby, školení a podpora vše na jednom místě.</p>
                                                 </div>
                                             </div>
                                         </div>

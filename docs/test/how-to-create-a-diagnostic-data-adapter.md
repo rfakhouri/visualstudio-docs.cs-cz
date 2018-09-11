@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0973e110d7f321caa88bef0a3672191298f8fe8e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380889"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321187"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Postupy: vytvoření adaptéru diagnostických dat
 
@@ -257,7 +257,7 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvořte knihovnu třídy p
     >
     > Existují jiné příklady konfiguračních souborů v následující cestě podle instalačního adresáře: *Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
-     Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat v manuálních testů (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat v manuálních testů (testovací plány Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
      Další informace o instalaci konfiguračního souboru najdete v tématu [postupy: instalace vlastního adaptéru diagnostických dat](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
 
@@ -265,7 +265,7 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvořte knihovnu třídy p
 
 13. Informace o instalaci vlastního editoru naleznete v tématu [postupy: instalace vlastního adaptéru diagnostických dat](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
 
-14. Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat v manuálních testů (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+14. Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat v manuálních testů (testovací plány Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 15. Pokud chcete vybrat adaptér diagnostických dat, musíte nejprve vybrat existující nastavení testu nebo vytvořit nový štítek z Microsoft Test Manager nebo Visual Studio. Adaptér se zobrazí na **dat a diagnostiky** karty ve vašem nastavení testu s popisným názvem, který jste přiřadili do třídy.
 
@@ -285,6 +285,6 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvořte knihovnu třídy p
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
 - [Shromažďování diagnostických údajů pomocí nastavení testů](../test/collect-diagnostic-information-using-test-settings.md)
-- [Shromažďování diagnostických dat v manuálních testů (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
-- [Shromažďování diagnostických dat při testování (VSTS)](/vsts/manual-test/collect-diagnostic-data)
+- [Shromažďování diagnostických dat v manuálních testů (Azure testovací plány)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [Shromažďování diagnostických dat při testování (Azure testovací plány)](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [Postupy: vytvoření vlastního editoru dat pro adaptér diagnostických dat](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)

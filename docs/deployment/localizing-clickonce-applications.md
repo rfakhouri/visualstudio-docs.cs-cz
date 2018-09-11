@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8341568fdc272bcb45184d9d263bceae792036
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7897869e8cc010d54c1914cbfa8ca763dd3a3bfa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078963"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279339"
 ---
 # <a name="localize-clickonce-applications"></a>Lokalizace aplikací ClickOnce
 Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou verzi. Tento proces zahrnuje text uživatelského rozhraní (UI) pro jazyk specifický pro oblast, pomocí správné datum a formátování měny, nastavení velikosti ovládacích prvků ve formuláři, překlad a zrcadlení ovládací prvky zprava doleva v případě potřeby.  
@@ -53,7 +53,7 @@ Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou
  Výhodou tohoto přístupu je, že vytváří jedno nasazení a zjednodušuje váš příběh lokalizované nasazení. V době běhu příslušného satelitního sestavení se použije, v závislosti na výchozí jazykovou verzi operačního systému uživatele Windows. Nevýhod tohoto přístupu je, že stáhne všechny satelitní sestavení pokaždé, když se aplikace instalaci nebo aktualizaci na klientském počítači. Pokud vaše aplikace má velký počet řetězců nebo vaši zákazníci mají pomalé síťové připojení, tento proces může ovlivnit výkon při aktualizaci aplikace.  
   
 > [!NOTE]
->  Tento přístup předpokládá, že aplikace nastaví výšku, šířku a umístění ovládacích prvků automaticky tak, aby vyhovovaly velikosti řetězce jiným textovým v různé jazykové verze. Windows Forms obsahuje celou řadu ovládacích prvků a technologie, které vám umožní navrhnout vaše formuláře tak, aby ji snadno lokalizovatelný, včetně <xref:System.Windows.Forms.FlowLayoutPanel> a <xref:System.Windows.Forms.TableLayoutPanel> ovládací prvky také <xref:System.Windows.Forms.Control.AutoSize%2A> vlastnost.  Viz také [postupy: Podpora lokalizace ve formulářích Windows pomocí AutoSize a TableLayoutPanel – ovládací prvek](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+>  Tento přístup předpokládá, že aplikace nastaví výšku, šířku a umístění ovládacích prvků automaticky tak, aby vyhovovaly velikosti řetězce jiným textovým v různé jazykové verze. Windows Forms obsahuje celou řadu ovládacích prvků a technologie, které vám umožní navrhnout vaše formuláře tak, aby ji snadno lokalizovatelný, včetně <xref:System.Windows.Forms.FlowLayoutPanel> a <xref:System.Windows.Forms.TableLayoutPanel> ovládací prvky také <xref:System.Windows.Forms.Control.AutoSize%2A> vlastnost.  Viz také [postupy: Podpora lokalizace ve formulářích Windows pomocí AutoSize a TableLayoutPanel – ovládací prvek](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100)).  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>Generovat jedno nasazení pro každou jazykovou verzi  
  V této strategii nasazení můžete generovat více nasazení. Každé nasazení zahrnout pouze do satelitního sestavení potřebné pro konkrétní jazykovou verzi a označit nasazení jako specifické pro danou jazykovou verzi.  
@@ -69,7 +69,7 @@ Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou
   
  Stahování satelitních sestavení na vyžádání se mírně liší ve stahování dalších typů sestavení na vyžádání. Pro další informace a praktické příklady o tom, jak povolit tento scénář používání [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] nástroje pro sadu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], naleznete v tématu [návod: stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- Můžete také povolit tento scénář v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Viz také [návod: stahování satelitních sestavení na vyžádání pomocí technologie ClickOnce pomocí rozhraní API nasazení návrháře](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) nebo [návod: stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce Pomocí návrháře](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Můžete také povolit tento scénář v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Viz také [návod: stahování satelitních sestavení na vyžádání pomocí technologie ClickOnce pomocí rozhraní API nasazení návrháře](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) nebo [návod: stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce Pomocí návrháře](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>Testování před nasazením lokalizovaných aplikací ClickOnce  
  Satelitní sestavení se použije pro Windows Forms pouze pokud aplikaci <xref:System.Threading.Thread.CurrentUICulture%2A> pro hlavního vlákna aplikace je nastavena na jazykovou verzi satelitního sestavení. Zákazníci místního trzích, kde bude pravděpodobně už běží lokalizovanou verzi sady Windows s jejich jazyková verze nastavena na vhodné výchozí nastavení.  

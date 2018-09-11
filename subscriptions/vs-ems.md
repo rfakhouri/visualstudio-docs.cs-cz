@@ -9,12 +9,12 @@ description: Další informace o Enterprise Mobility + Security výhodu součás
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 52da738cc6e123c435e54523c240cd1b6d83dc8d
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 81d93a4a030fd4a588903073d065041a6dbd69e6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623891"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283285"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) v předplatných sady Visual Studio
 
@@ -61,7 +61,7 @@ Pokud chcete použít EMS, budete muset nastavit účet nebo se přihlaste pomoc
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 | Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark.    Vyloučí: Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD), MCT Software & Services, představte si, Microsoft Partner Network (Professional).*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark.  Vyloučí: Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD), MCT Software & Services, představte si, Microsoft Partner Network (Professional).*
 
 <sup>2</sup> *vyloučí programu Microsoft Partner Network (Professional)*
 
@@ -71,4 +71,4 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 -  Potřebujete pomoc s EMS?  Podívejte se na online [dokumentace k EMS](/enterprise-mobility-security/).
 -  Pro technickou podporu pro všechny součásti EMS, navštivte prosím https://support.microsoft.com/allproducts a vyberte produkt.
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+-  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

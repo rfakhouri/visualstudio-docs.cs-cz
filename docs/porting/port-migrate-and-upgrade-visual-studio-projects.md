@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 4bad722034657e3b58faaf665bfb0bc6ffcbe960
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: e83aec143d2b7fdb6ed7a338b6a726aa81147e7f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513543"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280723"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Migrace a upgrade odkaz na projekt pro Visual Studio 2017
 
@@ -58,7 +58,7 @@ Pokud nevidíte projekt nebo typ souboru zde uvedeny, který by měl být, najde
 | Instalační program MSI (vdproj) | Projekty InstallShield. |
 | Sada Office 2007 VSTO | Vyžaduje jednosměrnou aktualizaci pro Visual Studio 2017. |
 | Office 2010 VSTO | Pokud je projekt zaměřen na rozhraní .NET Framework 4, lze jej otevřít v aplikaci Visual Studio 2010 SP1 a novější. Všechny ostatní projekty vyžadují jednosměrnou aktualizaci. |
-| Service Fabric (sfproj) | Projekty aplikací Service Fabric můžete otevřít v sadě Visual Studio 2015 nebo Visual Studio 2017, pokud projekt aplikace Service Fabric odkazuje na projekt služby ASP.NET Core. Projekty Service Fabricu ze sady Visual Studio 2015, které jsou otevřeny v sadě Visual Studio 2017 jsou jednosměrné migrovat z formátu xproj na csproj. Viz "Projekty .NET Core (xproj)" dříve v této tabulce. |
+| Service Fabric (sfproj) | Aplikace Service Fabricu projektů lze otevřít v sadě Visual Studio 2015 nebo Visual Studio 2017, pokud projekt aplikace Service Fabric odkazuje na projekt služby ASP.NET Core. Projekty Service Fabricu ze sady Visual Studio 2015, které jsou otevřeny v sadě Visual Studio 2017 jsou jednosměrné migrovat z formátu xproj na csproj. Viz "Projekty .NET Core (xproj)" dříve v této tabulce. |
 | SharePoint 2010 | Při otevření projektu řešení služby SharePoint pomocí sady Visual Studio 2017, dojde k upgradu na službu SharePoint 2013 nebo SharePoint 2016. Úloha ".NET Desktop Development" musí být nainstalován v sadě Visual Studio 2017 pro upgrade.<br/><br/>Další informace o tom, jak upgradovat projekty služby SharePoint, naleznete v tématu [upgradovat na službu SharePoint 2013](https://technet.microsoft.com/library/cc303420.aspx), [pracovního postupu aktualizace v SharePoint serveru 2013](https://technet.microsoft.com/library/dn133867.aspx), a [Vytvoření farmy serverů SharePoint Server 2016 pro databázi připojte upgrade](https://technet.microsoft.com/library/cc263026(v=office.16).aspx). |
 | SharePoint 2016 | SharePoint Add-In projekty vytvořené v Office Developer Tools ve verzi Preview 2 nelze otevřít v sadě Visual Studio 2017. Pokud chcete toto omezení obejít, aktualizujte `MinimumVisualStudioVersion` k 12.0 a `MinimumOfficeToolsVersion` k 12.2 v souboru csproj vbproj. |
 | Silverlight | Projekty technologie Silverlight v sadě Visual Studio 2017 není podporován. Chcete-li udržovat aplikace Silverlight, používejte nadále Visual Studio 2015. |

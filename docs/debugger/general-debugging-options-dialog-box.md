@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 071f6782350a3786b1a3b61b1ef3292d76867531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e46301c84b1a9b27eed8cb6667b312ff73af2960
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626111"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280634"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Obecné, ladění, dialogové okno Možnosti
 **Nástroje > Možnosti > ladění > Obecné** stránce umožňuje nastavit možnosti uvedené v tomto článku.
@@ -72,7 +72,7 @@ V podmínce 2 a 3, výjimka někdy zachycena spravovaným kódem v `mscorlib` m�
   
 - **Volání funkce pro převod řetězce na objektech v oknech proměnné (C# a JavaScript pouze)** provede volání rozhraní řetězec implicitní převod při vyhodnocování objektů v oknech proměnných. Zobrazí se výsledek jako řetězec namísto názvu typu. Platí pouze při ladění v kódu jazyka C#. Toto nastavení lze přepsat pomocí atributu DebuggerDisplay (viz [pomocí atributu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
-**Povolit podporu zdrojového serveru** sdělí ladicímu programu sady Visual Studio, aby získal zdrojové soubory ze zdrojových serverů, které implementují SrcSrv (`srcsrv.dll`) protokolu. Team Foundation Server a ladění nástroje pro Windows jsou dva servery zdroje, které implementují protokol. Další informace o nastavení SrcSrv naleznete v tématu [zdrojový server](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) dokumentaci. Kromě toho najdete v článku [zadejte symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+**Povolit podporu zdrojového serveru** sdělí ladicímu programu sady Visual Studio, aby získal zdrojové soubory ze zdrojových serverů, které implementují SrcSrv (`srcsrv.dll`) protokolu. Team Foundation Server a ladění nástroje pro Windows jsou dva servery zdroje, které implementují protokol. Další informace o nastavení SrcSrv naleznete v tématu [zdrojový server](/windows-hardware/drivers/debugger/srcsrv) dokumentaci. Kromě toho najdete v článku [zadejte symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 > Protože čtení *PDB* souborů může spustit libovolný kód v souborech, ujistěte se, že serveru důvěřujete.  

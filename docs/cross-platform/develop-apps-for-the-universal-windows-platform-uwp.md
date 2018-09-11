@@ -11,12 +11,12 @@ ms.author: shoag
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: db88545393eeda280df898ee896f54123f4a1627
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: de4306b2fa56bf00fd51a741441395b90ed314e5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251534"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280802"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Vývoj aplikací pro Univerzální platformu Windows (UWP)
 Univerzální platformu Windows a naše jednoho jádra Windows můžete stejnou aplikaci spustit na jakékoli zařízení s Windows 10 z telefonů pro stolní počítače. Vytvořte tyto Universal Windows apps pomocí sady Visual Studio a nástroje pro vývoj univerzálních aplikací pro Windows.
@@ -47,7 +47,7 @@ Univerzální platforma Windows je jednoduše soubor smluv a verze. Tyto rutiny 
 Po instalaci tohoto softwaru, je potřeba povolit zařízení s Windows 10 pro vývoj. Zobrazit [aktivovat zařízení pro vývoj](/windows/uwp/get-started/enable-your-device-for-development). Už nepotřebujete licenci vývojáře pro každé zařízení s Windows 10.
 
 ## <a name="universal-windows-apps"></a>Univerzální aplikace pro Windows
-Zvolte si jazyk oblíbeným vývojovým z jazyka C#, Visual Basic, C++ nebo JavaScript k vytvoření aplikace pro univerzální platformu Windows pro zařízení s Windows 10. Čtení [vytvořit svoji první aplikaci](/windows/uwp/get-started/your-first-app) nebo si pusťte video [přehled nástrojů pro Windows 10](http://channel9.msdn.com/Series/ConnectOn-Demand/229) videa.
+Zvolte si jazyk oblíbeným vývojovým z jazyka C#, Visual Basic, C++ nebo JavaScript k vytvoření aplikace pro univerzální platformu Windows pro zařízení s Windows 10. Čtení [vytvořit svoji první aplikaci](/windows/uwp/get-started/your-first-app) nebo si pusťte video [přehled nástrojů pro Windows 10](https://channel9.msdn.com/Series/ConnectOn-Demand/229) videa.
 
 Pokud máte existující aplikace Windows Store 8.1, aplikace pro Windows Phone 8.1 nebo Universal Windows apps, které byly vytvořeny pomocí sady Visual Studio 2015, bude nutné přenést tyto aplikace, které používají nejnovější univerzální platformu Windows. Zobrazit [přesunout z modulu Windows Runtime 8.x na UPW](/windows/uwp/porting/w8x-to-uwp-root).
 

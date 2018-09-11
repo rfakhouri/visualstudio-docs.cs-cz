@@ -9,12 +9,12 @@ description: Další informace o benefitech Visual Studio App Center, které jso
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ec1938dca476dcc04c892d183cedbf7f057aef40
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 266ce307b8ee06eed427385d67c48d4258ae2a1c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624301"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283168"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center v předplatných sady Visual Studio
 
@@ -50,7 +50,7 @@ Začínáme se službou Visual Studio App Center je snadný.
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Zahrnuté                                                            |Ano |
 
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR) FTE, Visual Studio Industry Partner (VSIP), představte si, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software a služby pro vývojáře, BizSpark, Microsoft s hodnotou partnera (MVP ), Ředitel pro oblast (RD).* 
+<sup>1</sup>*zahrnuje: není pro prodej (NFR) FTE, Visual Studio Industry Partner (VSIP), představte si, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software a služby pro vývojáře, BizSpark, Microsoft s hodnotou partnera (MVP ), Ředitel pro oblast (RD).*
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
@@ -69,4 +69,4 @@ Teď by měl být mít přístup k portálu App Center a vytvořte si účet.
     - Získejte Rady a odpovědi od týmu App Center v [aplikace centrum nápovědy](https://intercom.help/appcenter/).
     - Podívejte se na dokončení [dokumentace k App Center](/appcenter/)
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+-  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

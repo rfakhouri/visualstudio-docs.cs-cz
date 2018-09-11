@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e90e8080f8f5afb7bd670d04e0f004f433420d68
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178384"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281530"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Návod: Vytvoření datové služby WCF s WPF a Entity Framework
 Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , která je hostována v [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci a pak k němu přístup z aplikace Windows Forms.
@@ -106,7 +106,7 @@ V dalším kroku vytvoříte [!INCLUDE[adonet_edm](../data-tools/includes/adonet
 7.  Na **zvolíte verzi** zvolte **Entity Framework 5.0** přepínač a klikněte na tlačítko **Další** tlačítko.
 
     > [!NOTE]
-    >  Pokud chcete používat nejnovější verzi Entity Framework 6 služby WCF, budete muset nainstalovat balíček zprostředkovatele NuGet pro rozhraní WCF Data Services Entity Framework. Zobrazit [pomocí WCF Data Services – 5.6.0 s Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).
+    >  Pokud chcete používat nejnovější verzi Entity Framework 6 služby WCF, budete muset nainstalovat balíček zprostředkovatele NuGet pro rozhraní WCF Data Services Entity Framework. Zobrazit [pomocí WCF Data Services – 5.6.0 s Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8.  Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** uzlu, vyberte **zákazníkům** zaškrtněte políčko a klikněte na tlačítko **Dokončit** tlačítko.
 

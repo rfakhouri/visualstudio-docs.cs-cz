@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381117"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279971"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Správa kontrolerů testů a testovacích agentů
 
@@ -104,7 +104,7 @@ Testovací agent musí být nastavena do stavu offline, než je možné odebrat.
 
 ### <a name="to-remove-a-test-agent-from-a-test-controller"></a>Chcete-li odebrat testovacího agenta z řadiče testů
 
-1. Pokud testovací kontrolér není zaregistrován s týmovým projektem, postupujte podle těchto kroků.
+1. Pokud testovací kontrolér není zaregistrován s projektem, postupujte podle těchto kroků.
 
     1. Ze sady Visual Studio otevřete soubor nastavení testu pro testovací projekt, zvolte **Role** a zvolte **spravovat řadič testu** z rozevíracího seznamu pro **řadič** pole.
 
@@ -117,7 +117,7 @@ Testovací agent musí být nastavena do stavu offline, než je možné odebrat.
         > [!NOTE]
         > Odstranění testovacího agenta pouze zruší přidružení z testovacího kontroléru. Chcete-li testovacího agenta zcela odinstalovat, použijte **programy a funkce** ovládacích panelech v počítači testovacího agenta.
 
-2. Pokud testovací kontrolér je zaregistrován s týmovým projektem, odeberte agenta pomocí nástroje Microsoft Test Manager.
+2. Pokud testovací kontrolér je zaregistrován s projektem, odeberte agenta pomocí nástroje Microsoft Test Manager.
 
 ## <a name="change-the-settings-for-a-test-agent"></a>Změnit nastavení pro testovacího agenta
 
@@ -135,7 +135,7 @@ Stav a další nastavení pro testovacího agenta pomocí následujících postu
 ### <a name="to-change-the-settings-of-a-test-agent"></a>Chcete-li změnit nastavení testovacího agenta
 
 > [!NOTE]
-> Pokud testovací agent registrován do testovacího kontroléru, který je zaregistrován s týmovým projektem, změňte nastavení v nástroji Microsoft Test Manager.
+> Pokud testovací agent registrován do testovacího kontroléru, který je zaregistrován s projektem, změňte nastavení v nástroji Microsoft Test Manager.
 
 1. Ke konfiguraci a sledování testovacího řadiče a všech registrovaných agentů pro zátěžový test, zvolte **zátěžový Test** nabídky v sadě Visual Studio a klikněte na tlačítko **spravovat řadič testu**. Pro všechny jiné testy, otevřete soubor nastavení testu pro testovací projekt v sadě Visual Studio, zvolte **Role** a zvolte **spravovat řadič testu** z rozevíracího seznamu pro **řadič**pole.
 
@@ -153,7 +153,7 @@ Stav a další nastavení pro testovacího agenta pomocí následujících postu
 |-------------------------|-----------------|
 |**Vážení**|Slouží k distribuci zatížení při použití testovacích agentů s různými úrovněmi výkonnosti. Například testovací agent s vážením 100 obdrží dvakrát zatížení než testovací Agent s vážením 50.|
 |**Přepínání IP**|Slouží ke konfiguraci přepínání IP. Přepínání protokolu IP umožňuje agentovi testu odesílání požadavků na server pomocí rozsahu IP adres. To simuluje volání, které pocházejí z různých klientských počítačů.<br /><br /> Přepínání IP je důležité, pokud vaše zkušební zatížení přistupuje k webové farmy. Většina Vyrovnávání zatížení vytvoří spřažení mezi klientem a konkrétní webový server s použitím IP adresy klienta. Pokud všechny požadavky zdá, že pocházejí z jednoho klienta, nebude nástroj pro vyrovnávání zatížení vyrovnávat zatížení. K dosažení dobré rovnováhy zatížení ve webové farmě, ujistěte se, že požadavky pocházejí z rozsahu IP adres. **Poznámka:** můžete určit síťový adaptér, nebo použijte **(všechny nepřiřazené)** automaticky vybrat jeden, který není aktuálně používán. <br /><br /> Pokud chcete použít funkci přepínání IP, musí být spuštěna služba Visual Studio Test Agent jako uživatel ve skupině Administrators pro daný počítač agenta. Tento uživatel je vybrán během instalace agenta, ale můžete změnit úpravou vlastností služby a restartováním.<br /><br /> Pokud chcete ověřit, že přepínání IP pracuje správně, povolit protokolování na webovém serveru služby IIS, ověřte, že požadavky pocházejí z IP adres, které jste nakonfigurovali pomocí funkce protokolování služby IIS.|
-|**Atributy**|Sada párů název/hodnota, které lze použít ve výběru agenta testu. Test může například vyžadovat konkrétní operační systém. Můžete přidat atributy na **role** kartu vašeho testovacího souboru s nastavením a slouží k výběru testovacího agenta, který má shodné atributy. Pokud chcete spustit test ve více počítačích, vytvořte atribut v roli nastavení testu, který je nakonfigurován ke spuštění testů a potom nakonfigurujte odpovídající atribut na každého testovacího agenta, který chcete použít v této roli... **Poznámka:** toto nastavení dostupná jenom pro testovací agenty, které jsou registrované pomocí testovacího kontroléru, který není zaregistrován do týmového projektu, protože tyto atributy se používají v nastavení testu pro sadu Visual Studio.|
+|**Atributy**|Sada párů název/hodnota, které lze použít ve výběru agenta testu. Test může například vyžadovat konkrétní operační systém. Můžete přidat atributy na **role** kartu vašeho testovacího souboru s nastavením a slouží k výběru testovacího agenta, který má shodné atributy. Pokud chcete spustit test ve více počítačích, vytvořte atribut v roli nastavení testu, který je nakonfigurován ke spuštění testů a potom nakonfigurujte odpovídající atribut na každého testovacího agenta, který chcete použít v této roli... **Poznámka:** toto nastavení dostupná jenom pro testovací agenty, které jsou registrované pomocí testovacího kontroléru, který není registrovaný k projektu, protože tyto atributy se používají v nastavení testu pro sadu Visual Studio.|
 
 Testovací agent hmotnosti a atributů testovacího agenta změny vejdou v platnost okamžitě, ale nemají vliv na zkoušky, které jsou spuštěny. Rozsah adres IP se projeví po restartování řadiče testu.
 
@@ -164,12 +164,12 @@ Testovací agent hmotnosti a atributů testovacího agenta změny vejdou v platn
 
 ## <a name="configure-a-test-controller"></a>Konfigurovat kontroler testů
 
-Ke konfiguraci testovacího kontroléru, je nutné použít **Team Test Controller Configuration Tool**. Při konfiguraci testovacího kontroléru, můžete registrovat testovací kontrolér s jiné kolekce týmových projektů nebo zrušit registraci testovacího kontroléru z kolekce týmového projektu.
+Ke konfiguraci testovacího kontroléru, je nutné použít **Team Test Controller Configuration Tool**. Při konfiguraci testovacího kontroléru, můžete registrovat testovací kontrolér s různých projektech kolekce nebo zrušit registraci testovacího kontroléru z kolekce projektu.
 
-Pokud chcete registrovat testovací kontrolér s vaší kolekcí projektu Team Foundation Server, účet, který používáte pro službu kontroleru testů musí být členem skupiny účtů služeb testu kolekce projektů pro kolekci týmového projektu, nebo účet, který používáte ke spuštění nástroje Konfigurace kontroleru testů musí být správcem kolekce projektu.
+Pokud chcete registrovat testovací kontrolér s vaší kolekcí projektu Team Foundation Server, účet, který používáte pro službu kontroleru testů musí být členem skupiny účtů služeb testu kolekce projektů pro kolekci projektu nebo účet můžete použít ke spuštění nástroje konfigurace testovacího kontroléru, musí být správcem kolekce projektu.
 
 > [!NOTE]
-> Pokud můžete zrušit registraci testovacího kontroléru z kolekce týmového projektu, který má stávající prostředí v kolekci týmového projektu, prostředí jsou stále zachována, pokud jste přesunuli tuto kolekci týmového projektu a znovu registrovat testovací kontrolér tohoto přesunutý týmu kolekce projektů.
+> Pokud můžete zrušit registraci testovacího kontroléru z kolekce projektu, který má stávající prostředí v kolekci projektu, prostředí jsou stále zachována, pokud jste přesunuli tuto kolekci projektu a znovu registrovat testovací kontrolér na tuto kolekci přesunutý projektu.
 
 ### <a name="to-configure-a-test-controller"></a>Chcete-li konfigurovat řadič testu
 
@@ -182,7 +182,7 @@ Pokud chcete registrovat testovací kontrolér s vaší kolekcí projektu Team F
     > [!NOTE]
     > Hesla s hodnotou Null nejsou pro uživatelské účty podporována.
 
-4. (Volitelné) Pokud nechcete použít řadič testu s testovacím prostředím, ale pouze ke spouštění testů ze sady Visual Studio, zrušte **zaregistrovat u kolekce týmových projektů**.
+4. (Volitelné) Pokud nechcete použít řadič testu s testovacím prostředím, ale pouze ke spouštění testů ze sady Visual Studio, zrušte **zaregistrovat u kolekce projektu**.
 
 5. (Volitelné) Chcete-li nakonfigurovat řadič testů pro zátěžové testování, vyberte **konfigurovat pro testování zatížení**. Zadejte instanci serveru SQL v **databázi vytvořit výsledky zátěžového testu následující instanci serveru SQL Server**.
 

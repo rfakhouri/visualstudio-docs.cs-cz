@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0f530dc6f1223bebeaada4f1225dd025474ceb1c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 011dc258281eccf7d1a1eca7acbc8cc71a53f00a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808638"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281140"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Vzdálené ladění projektu C# nebo Visual Basic v sadě Visual Studio
 Ladění aplikace Visual Studio, který byl nasazen na jiný počítač, nainstalovat a spustit nástroje remote tools v počítači, kam jste nasadili aplikaci, nakonfigurujte projekt tak, aby připojení ke vzdálenému počítači ze sady Visual Studio a spusťte aplikaci.
@@ -97,7 +97,7 @@ Ladicí program nemůže nasadit Visual C# nebo Visual Basic desktopové aplikac
 
      Měli byste vidět, že hlavní okno aplikace WPF je otevřít na vzdáleném počítači.
   
-14. V případě potřeby proveďte akce na zarážce. Měli byste vidět, že zarážka je aktivní. Pokud tomu tak není, ještě nebyly načteny symboly pro aplikaci. Zkuste to znovu a pokud to nepomůže, získejte informace o načítání symbolů a jak řešit je na [soubory symbolů principy a sady Visual Studio symbol nastavení](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/05/understanding-symbol-files-and-visual-studio-s-symbol-settings.aspx).
+14. V případě potřeby proveďte akce na zarážce. Měli byste vidět, že zarážka je aktivní. Pokud tomu tak není, ještě nebyly načteny symboly pro aplikaci. Zkuste to znovu a pokud to nepomůže, získejte informace o načítání symbolů a jak řešit je na [soubory symbolů principy a sady Visual Studio symbol nastavení](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
   
 15. Na počítač s Visual Studio měli byste vidět, že vykonávání se zastavilo na zarážku.
   
@@ -112,5 +112,5 @@ Ladicí program nemůže nasadit Visual C# nebo Visual Basic desktopové aplikac
  [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)   
  [Konfigurace brány Windows Firewall pro vzdálené ladění](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md)   
- [Vzdálené ladění ASP.NET na počítači vzdálené služby IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
- [Vzdálené ladění chyby a řešení potíží](../debugger/remote-debugging-errors-and-troubleshooting.md)
+ [Vzdálené ladění ASP.NET na vzdáleném počítači se službou IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
+ [Chyby při vzdáleném ladění a jejich řešení](../debugger/remote-debugging-errors-and-troubleshooting.md)

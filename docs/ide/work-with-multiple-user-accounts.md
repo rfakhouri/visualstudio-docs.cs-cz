@@ -9,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e51bd43d278eb681d08b785c2a7d0c9539ee23
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0eaba2b81467c60e900aa70b633e15b81175ffc7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179694"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283467"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Práce s několika uživatelskými účty
 
@@ -59,9 +59,9 @@ Azure AD umožňuje podporu pro koncového uživatele jednotné přihlašování
 
 Další informace o různých druzích ověřování v technologii ASP.NET, naleznete v tématu [webové projekty ASP.NET vytvořit v sadě Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (informace o ověřování je stále relevantní pro aktuální verze sady Visual Studio).
 
-### <a name="access-your-visual-studio-team-services-account"></a>Přístup k vašemu účtu Visual Studio Team Services
+### <a name="access-your-team-foundation-server-tfs-organization"></a>Přístup k vaší organizaci Team Foundation Server (TFS)
 
-V hlavní nabídce zvolte **týmu** > **připojit k Team Foundation Server** zobrazíte **Team Exploreru** okna. Klikněte na **vybrat týmové projekty**a potom v seznamu v části **vyberte sady Team Foundation Server**, měli byste vidět adresu URL pro váš účet Visual Studio Team Services. Když vyberete adresa URL bude být přihlášení bez nutnosti opakovaně zadávat svoje přihlašovací údaje.
+V hlavní nabídce zvolte **týmu** > **připojit k Team Foundation Server** zobrazíte **Team Exploreru** okna. Klikněte na **vyberte projekty**a potom v seznamu v části **vyberte sady Team Foundation Server**, měli byste vidět adresu URL pro vaši organizaci TFS. Když vyberete adresa URL bude být přihlášení bez nutnosti opakovaně zadávat svoje přihlašovací údaje.
 
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Přidejte druhý uživatelský účet do sady Visual Studio
 

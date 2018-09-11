@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512250"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280568"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Změny v rozšíření sady Visual Studio 2017
 
@@ -73,7 +73,7 @@ Většina základních sestavení sady Visual Studio jsou již nainstalovány do
     "culture"="neutral"
     "version"=15.0.0.0
     ```
-    Za běhu, sloučí subsystému pkgdef sady Visual Studio tyto položky do konfigurační soubor procesu Visual Studio modulu runtime (v části *[VSAPPDATA]\devenv.exe.config*) jako [ `<codeBase>` ](https://msdn.microsoft.com/en-us/library/efs781xb(v=vs.110).aspx) elementy. Toto je doporučeným způsobem, jak umožnit proces sady Visual Studio najít sestavení, protože se eliminuje prohledávat zjišťování cesty.
+    Za běhu, sloučí subsystému pkgdef sady Visual Studio tyto položky do konfigurační soubor procesu Visual Studio modulu runtime (v části *[VSAPPDATA]\devenv.exe.config*) jako [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) elementy. Toto je doporučeným způsobem, jak umožnit proces sady Visual Studio najít sestavení, protože se eliminuje prohledávat zjišťování cesty.
 
 ### <a name="reacting-to-this-breaking-change"></a>Reakce na tento zásadní změna
 
@@ -87,7 +87,7 @@ Většina základních sestavení sady Visual Studio jsou již nainstalovány do
 
 ### <a name="global-com-registration"></a>Globální registrace modelu COM
 
-* Dříve nainstalované sady Visual Studio do HKEY_CLASSES_ROOT a HKEY_LOCAL_MACHINE podregistry pro podporu nativních registrace modelu COM mnoho klíče registru. Chcete-li odstranit tento dopad, Visual Studio nyní používá [Bezregistrační aktivace komponent COM](https://msdn.microsoft.com/en-us/library/ms973913.aspx).
+* Dříve nainstalované sady Visual Studio do HKEY_CLASSES_ROOT a HKEY_LOCAL_MACHINE podregistry pro podporu nativních registrace modelu COM mnoho klíče registru. Chcete-li odstranit tento dopad, Visual Studio nyní používá [Bezregistrační aktivace komponent COM](https://msdn.microsoft.com/library/ms973913.aspx).
 * V důsledku toho většina vyrovnávací paměti TLB / OLB / knihovny DLL v části % ProgramFiles (x86) %\Common Files\Microsoft Shared\MSEnv nebudou nainstalované ve výchozím nastavení sada Visual Studio. Tyto soubory jsou teď nainstalované v [INSTALLDIR] s odpovídající manifesty COM bez registrace používá hostitelský proces sady Visual Studio.
 * V důsledku toho najdete externí kód, který využívá globální registrace modelu COM pro rozhraní Visual Studio COM už tyto registrace. Kód spuštěný v procesu sady Visual Studio se nezobrazí rozdíl.
 
@@ -106,5 +106,5 @@ Většina základních sestavení sady Visual Studio jsou již nainstalovány do
 
 * Pro účely Bezregistrační aktivace komponent COM také mají být převedeny externí kód.
 * Externí komponenty můžete vyhledat umístění sady Visual Studio [podle pokynů tady](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
-* Doporučujeme použít externí komponenty [externí prostřednictvím Správce nastavení](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx) místo čtení/zápis přímo na klíče registru sady Visual Studio.
+* Doporučujeme použít externí komponenty [externí prostřednictvím Správce nastavení](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) místo čtení/zápis přímo na klíče registru sady Visual Studio.
 * Zkontrolujte, jestli komponenty, které používá vaše rozšíření může implementovat další techniku pro registraci. Rozšíření ladicího programu může být například moct využívat nové [msvsmon registrace modelu COM soubor JSON](migrate-debugger-COM-registration.md).

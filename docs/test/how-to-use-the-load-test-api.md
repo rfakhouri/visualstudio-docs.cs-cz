@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7454b75054f06bb35237b344552a268eed3798e1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4dfb5c79f2423ba25f16edadd70ee879ca966356
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379273"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282741"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Postupy: použití rozhraní API zátěžového testu
 
@@ -30,7 +30,7 @@ Můžete také vytvořit moduly plug-in pro testy výkonnosti webu. Další info
 
 ## <a name="to-use-the-loadtesting-namespace"></a>Používání oboru názvů LoadTesting
 
-1.  Otevření webového výkonu a zatížení testovací projekt, který obsahuje zátěžový test.
+1.  Otevřete webový výkon a projekt zátěžového testu, který obsahuje zátěžový test.
 
 2.  Přidejte Visual C# nebo Visual Basic projekt knihovny tříd pro vaše řešení pro testování.
 

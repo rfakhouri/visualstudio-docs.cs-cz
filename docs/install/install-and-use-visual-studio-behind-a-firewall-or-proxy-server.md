@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e96da4ad8f55db251f816516c00502991053f7
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: b3a3b798b704111c8afdbaaaa3b219b876ebf6ff
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138419"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280581"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem
 
@@ -119,7 +119,7 @@ Pokud chcete mít jistotu, že máte přístup ke všemu, co potřebujete při p
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |protokol HTTPS|443 |Slouží k zobrazení, odeslání, spouštět a spravovat úlohy Azure Stream Analytics <br><br> Umožňuje procházet clusterů Hdinsight a odešlete, Diagnostika a ladění úloh HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | protokol HTTPS | 443 | Použít ke kompilaci, odeslat, zobrazení, Diagnostika a ladění úloh; Umožňuje procházet soubory ADLS; použít k nahrávání a stahování souborů |
 | Vytváření balíčků služby | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> DIST.nuget.org <br/> Nuget.org | protokol HTTPS | 443 | *. Npmjs.org, *. nuget.org, a *. nodejs.org jsou pouze vyžaduje pro určité scénáře úloh sestavení (například: Instalační program nástroje NuGet, instalační program nástroje uzlu) nebo pokud máte v úmyslu veřejné upstreams pomocí informačních kanálů. Tři domény jsou požadovány pro základní funkce služby balení. |
-| VSTS | *. vsassets.io <br/> static2.sharepointonline.com  |  |  | Používá pro připojení k VSTS |
+| Služby Azure DevOps | *. vsassets.io <br/> static2.sharepointonline.com  |  |  | Použít k připojení ke službám Azure DevOps |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Řešení potíží s chybami související se sítí

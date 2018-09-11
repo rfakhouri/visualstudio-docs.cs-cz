@@ -9,12 +9,12 @@ description: Dotazy k fakturaci cloudových předplatných.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 185b4ebcb374973fdbcc56c81a3474797161736f
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: c0b66b7a10c344d7d534e5618ca560bdae31f30e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623959"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283298"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio cloudovými předplatnými nejčastější dotazy k fakturaci
 
@@ -92,7 +92,7 @@ Před provedením nákupu, budete muset [odebrat limit útraty](https://azure.mi
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>D: Jaký je rozdíl mezi roční a měsíční Cloudová předplatná?
 
-Odpověď: měsíční Cloudová předplatná zahrnují Visual Studio a používání VSTS a TFS. Máte příliš roční Cloudová předplatná, ale také výhody pro předplatitele, včetně Windows a dalšího softwaru společnosti Microsoft k instalaci a spuštění pro vývoj a testování, měsíčního kreditu Azure pro účely experimentování se službami Azure a provádění vývoj a testování v cloudu, školení, podporu a spoustu dalších věcí.
+Odpověď: měsíční Cloudová předplatná zahrnují Visual Studio a použití služeb Azure DevOps a TFS. Máte příliš roční Cloudová předplatná, ale také výhody pro předplatitele, včetně Windows a dalšího softwaru společnosti Microsoft k instalaci a spuštění pro vývoj a testování, měsíčního kreditu Azure pro účely experimentování se službami Azure a provádění vývoj a testování v cloudu, školení, podporu a spoustu dalších věcí.
 [Porovnání výhod předplatného cloudu a cen](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>Otázka: získat nové verze sady Visual Studio, pokud si koupím cloudové předplatné sady Visual Studio?

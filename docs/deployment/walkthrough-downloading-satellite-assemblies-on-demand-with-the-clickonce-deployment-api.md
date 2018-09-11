@@ -23,25 +23,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b558ca0d5b8080e581dcddd07e2f89511d062cc4
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 5d7226726bc2eb9bbc53afa8920a26d342983af6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154408"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281218"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Návod: Stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce
 Aplikace Windows Forms lze nastavit pro více jazykových verzí pomocí satelitních sestavení. A *satelitní sestavení* je sestavení obsahující prostředky aplikací pro jazykovou verzi, než je výchozí jazykovou verzi aplikace.  
   
  Jak je popsáno v [aplikací ClickOnce lokalizovat](../deployment/localizing-clickonce-applications.md), může obsahovat více satelitní sestavení pro více jazykových verzí v rámci stejného [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení. Ve výchozím nastavení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] stáhne všechny satelitní sestavení ve vašem nasazení do klientského počítače, i když jednoho klienta, bude pravděpodobně vyžadovat jenom jeden satelitní sestavení.  
   
- Tento návod ukazuje, jak označit vaše satelitní sestavení jako volitelné a stáhnout pouze sestavení klientský počítač, musí mít nastavení aktuální jazykové verze. Následující postup používá nástroje, které jsou dostupné [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Můžete také provést tuto úlohu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Viz také [návod: stahování satelitních sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) nebo [návod: stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce Návrhář](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Tento návod ukazuje, jak označit vaše satelitní sestavení jako volitelné a stáhnout pouze sestavení klientský počítač, musí mít nastavení aktuální jazykové verze. Následující postup používá nástroje, které jsou dostupné [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Můžete také provést tuto úlohu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Viz také [návod: stahování satelitních sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) nebo [návod: stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce Návrhář](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).  
   
 > [!NOTE]
 >  Pro účely testování následující příklad kódu prostřednictvím kódu programu Nastaví jazykovou verzi na `ja-JP`. V části "Další kroky" dále v tomto tématu informace o tom, jak upravit tento kód pro produkční prostředí.  
   
 ## <a name="prerequisites"></a>Požadavky  
- Toto téma předpokládá, že víte, jak přidat lokalizované prostředky do vaší aplikace pomocí sady Visual Studio. Podrobné pokyny najdete v tématu [návod: lokalizace Windows forms](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx).  
+ Toto téma předpokládá, že víte, jak přidat lokalizované prostředky do vaší aplikace pomocí sady Visual Studio. Podrobné pokyny najdete v tématu [návod: lokalizace Windows forms](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100)).  
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>Chcete-li stáhnout satelitních sestavení na vyžádání  
   

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4752556fadead75bb29b6920d51ebbb54a5679aa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 26e96116ca03cad074639c5753a8cb076dc70adf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080796"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281972"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Postupy: publikování projektu s konkrétním národním
 Není, že aplikace obsahuje součásti, které mají různá národní prostředí. V tomto scénáři by vytvářet řešení, která se má několik projektů a potom publikovat samostatné projekty pro každé národní prostředí. Tento postup ukazuje, jak pomocí makra publikování první projekt v řešení s použitím národního prostředí "en". Pokud chcete vyzkoušet tuto proceduru s národním prostředí než "en", nezapomeňte nastavit `localeString` v makru tak, aby odpovídaly národní prostředí, který používáte (pro příklad, "de" nebo "de-DE").  
@@ -165,6 +165,6 @@ Není, že aplikace obsahuje součásti, které mají různá národní prostře
   
 ## <a name="see-also"></a>Viz také:  
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Makra vývojové prostředí](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [Okno Průzkumníka – makro](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Postupy: úpravy a vytváření makra prostřednictvím kódu programu](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [Makra vývojové prostředí](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))   
+ [Okno Průzkumníka – makro](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))   
+ [Postupy: úpravy a vytváření makra prostřednictvím kódu programu](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))

@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6cf63d830a90e7240ec0adb4d191b8b765ebb1d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1222f1aaa68c573a61bf10e3935e21330aa63260
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380355"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320901"
 ---
 # <a name="unit-test-your-code"></a>Testování částí kódu
 
@@ -49,8 +49,8 @@ V následujících tématech naleznete informace týkající se vytváření tes
 |**Testování částí kódu C++**|-   [Zápis testů jednotek pro C/C++ se sadou Microsoft Unit Testing Framework pro C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
 |**Izolující testování částí**|-   [Izolace testovaného kódu pomocí Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Použití pokrytí kódu k identifikaci, jaká část projektového kódu je testována:** přečtěte si víc o funkcích pokrytí kódu testovacích nástrojů sady Visual Studio.|-   [Použití pokrytí kódu k určení, kolik kódu je právě testováno.](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Provedení zátěžové a výkonnostní analýzy použitím zátěžových testů:** můžete vytvořit zátěžový test a testování částí přidejte do ní pro lepší izolaci výkonnostních a zátěžových problémů aplikace.|-   [Zátěžové testování (VSTS a TFS)](/vsts/load-test/)|
-|**Nastavení brány kvality:** můžete vytvořit brány kvality k vynucení spuštění testů předtím, než je kód vrácen se změnami, k zajištění kvality kódu.|-   [Zásady vrácení se změnami (VSTS)](/vsts/tfvc/add-check-policies)|
+|**Provedení zátěžové a výkonnostní analýzy použitím zátěžových testů:** můžete vytvořit zátěžový test a testování částí přidejte do ní pro lepší izolaci výkonnostních a zátěžových problémů aplikace.|-   [Zátěžové testování (Azure testovací plány a sady TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**Nastavení brány kvality:** můžete vytvořit brány kvality k vynucení spuštění testů předtím, než je kód se změnami nebo sloučit, k zajištění kvality kódu.|-   [Zásady vrácení se změnami (TFVC úložiště Azure)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
 |**Nastavení možností testování:** například můžete určit, kde jsou uloženy výsledky testů.|[Konfigurace testů částí s použitím souboru .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Referenční dokumentace rozhraní API

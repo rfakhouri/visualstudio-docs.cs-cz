@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b31a8631497b5c4f39b2c0e6ebffa469282da157
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138388"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281088"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Řešení potíží s chyby související se sítí při instalaci nebo používání sady Visual Studio
 
@@ -73,7 +73,7 @@ K této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu 
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Chyba: "základní připojení bylo ukončeno."
 
-Pokud používáte Visual Studio v privátní síti, která má bránu firewall, Visual Studio nemusí být schopný se připojit k některým síťovým prostředkům. Tyto prostředky mohou zahrnovat Visual Studio Team Services (VSTS) pro přihlašování a licencování NuGet a službami Azure. Pokud Visual Studio nepodaří připojit k jednomu z těchto prostředků, může se zobrazit následující chybová zpráva:
+Pokud používáte Visual Studio v privátní síti, která má bránu firewall, Visual Studio nemusí být schopný se připojit k některým síťovým prostředkům. Tyto prostředky mohou zahrnovat Azure DevOps služby pro přihlašování a licencování NuGet a službami Azure. Pokud Visual Studio nepodaří připojit k jednomu z těchto prostředků, může se zobrazit následující chybová zpráva:
 
   **Nadřízené připojení bylo uzavřeno: došlo k neočekávané chybě při odesílání**
 
@@ -103,7 +103,7 @@ Povolte připojení pro následující adresy URL:
 
 - CDN.vsassets.IO (síť pro doručování obsahu hostitele nebo CDN, obsah)
 
-- &#42;. gallerycdn.vsassets.io (rozšíření VSTS hostitelů)
+- &#42;. gallerycdn.vsassets.io (rozšíření hostitele služby Azure DevOps)
 
 - static2.sharepointonline.com (prostředky hostitele, které Visual Studio používá v uživatelském rozhraní Office Fabric kit, jako je například písma)
 

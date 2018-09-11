@@ -9,12 +9,12 @@ description: Další informace o benefitech prioritní podpora součástí před
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 73665a2d423d5284f616354ccd341a8b5ce476f3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 21448d75cbdbbff5468617ebb3ffc816f672ad3e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42623940"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282947"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Prioritní podpora na předplatná sady Visual Studio
 
@@ -245,4 +245,4 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+-  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

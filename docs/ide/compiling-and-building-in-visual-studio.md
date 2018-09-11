@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 472fcda584db4bf6cd16c386fec4b3e668f44a9f
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: d7ee37ddd9899b979d8440202c89d03284b26f48
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341673"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279073"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Kompilace a sestavení v sadě Visual Studio
 
@@ -28,7 +28,7 @@ Podle častým sestavováním kódu, můžete rychle identifikovat chyby kompila
 
 Úspěšné sestavení je v podstatě ověření, že zdrojový kód aplikace obsahuje správnou syntaxi a že byly vyřešeny všechny statické odkazy na knihovny, sestavení a další komponenty. Tímto se vytvoří spustitelný soubor aplikace, které můžete testovat pro správné fungování v obou [ladicí prostředí](../debugger/index.md) a s celou řadou ručních a automatizovaných testů, které [ověření kvality kódu](../test/improve-code-quality.md). Jakmile aplikace byly plně testovány, můžete pak kompilaci verze vydání k nasazení na vaše zákazníky. Úvod k tomuto procesu najdete v tématu [názorný postup: Tvorba aplikace](../ide/walkthrough-building-an-application.md).
 
-V rámci produktové řady Visual Studio, existují tři způsoby, které můžete použít k sestavení aplikace: integrované vývojové prostředí sady Visual Studio, nástroje příkazového řádku MSBuild a Team Foundation Build ve službě Visual Studio Team Services:
+Pro vytvoření aplikace můžete použít některý z následujících metod: Visual Studio IDE, MSBuild nástroje příkazového řádku, Team Foundation Build a služby Azure DevOps:
 
 | Metoda sestavení | Výhody |
 | --- |--- | --- |
@@ -36,7 +36,7 @@ V rámci produktové řady Visual Studio, existují tři způsoby, které může
 | Příkazového řádku MSBuild| -Projekty sestavit bez instalace sady Visual Studio.<br />-Spustit víceprocesorová sestavení pro všechny typy projektů.<br />-Přizpůsobte většinu oblastí systému sestavení.|
 | Sestavení Team Foundation | -Automatizujte proces sestavení jako součást kanálu průběžné integrace a doručování.<br />-Použijte automatizované testy s každým sestavením.<br />-Využívejte skoro neomezené cloudové prostředky pro procesy sestavení.<br />-Upravte pracovní postup sestavení a vytvořit aktivity sestavení, chcete-li provést hluboce přizpůsobené úkoly.|
 
-Dokumentace v této části platí další podrobnosti o procesu sestavení na základě integrovaného vývojového prostředí. Další informace o dalších metodách, naleznete v tématu [MSBuild](../msbuild/msbuild.md) a [průběžnou integraci a nasazování](/vsts/pipelines/index?view=vsts)v uvedeném pořadí.
+Dokumentace v této části platí další podrobnosti o procesu sestavení na základě integrovaného vývojového prostředí. Další informace o dalších metodách, naleznete v tématu [MSBuild](../msbuild/msbuild.md) a [kanály Azure](/azure/devops/pipelines/index?view=vsts)v uvedeném pořadí.
 
 ## <a name="overview-of-building-from-the-ide"></a>Přehled vytváření v prostředí IDE
 

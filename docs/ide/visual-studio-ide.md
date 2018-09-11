@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ac7f54e2295764694372119faf03ea72cff42de
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4465eff996664dca2fe1b5dcb31b5d7af049db53
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775981"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320784"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Vítejte v prostředí IDE sady Visual Studio
 
@@ -50,7 +50,7 @@ Získáte základní vizuální přehled o Visual Studio, následující obráze
 
 - [Okno výstup](../ide/reference/output-window.md) (dole uprostřed) je, kde sada Visual Studio odešle oznámení, jako jsou ladění a chybové zprávy, upozornění kompilátoru, publikování stavové zprávy a další. Každý zdroj zprávy má svůj vlastní kartu.
 
-- [Team Explorer](/vsts/user-guide/work-team-explorer) (vpravo dole) umožňuje sledování pracovních položek a sdílet s ostatními kód pomocí technologie pro řízení verze, například [Git](https://git-scm.com/) a [Team Foundation verze ovládacího prvku (TFVC)](/vsts/tfvc/overview).
+- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (vpravo dole) umožňuje sledování pracovních položek a sdílet s ostatními kód pomocí technologie pro řízení verze, například [Git](https://git-scm.com/) a [Team Foundation verze ovládacího prvku (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
 
 ### <a name="popular-productivity-features"></a>Oblíbené pro zvýšení produktivity
 

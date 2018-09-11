@@ -9,24 +9,24 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0b16232ed69ba5a3332bad2a22bca426f5f91bbe
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 41e27d2d7a3fc79695fa1d476a76e199348c5320
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775279"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320888"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps s aplikacemi Unity
 
 Vývoj aplikací pro moderní platformy zahrnuje mnoho aktivit více než jen psaní kódu. Tyto aktivity, označuje jako span kompletní životní cyklus aplikace DevOps (vývoj + operations) a zahrnují plánování a sledování práce, navrhování a implementace kódu, správu úložiště zdrojového kódu, běžících sestavení, Správa průběžné integrace nasazení, testování (včetně jednotkové testy a testy uživatelského rozhraní), spuštění různé formy diagnostiku ve vývojovém a produkčním prostředí a sledování výkonu a uživatel chování aplikací v reálném čase prostřednictvím telemetrie a analýz.
 
-Visual Studio, společně s Visual Studio Team Services a Team Foundation Server poskytuje širokou škálu možnosti DevOps. Mnohé z nich se vztahují na projekty napříč platformami, včetně hry a atraktivní grafické aplikace vytvořené pomocí Unity&mdash;zvláště při použití jazyka C# jako skriptovací jazyk. Ale protože Unity má svou vlastní vývojové prostředí a modulu runtime, mnoho funkcí DevOps nemůžete použít jako u jiných typů projektů vytvořených v sadě Visual Studio.
+Visual Studio, společně s Azure DevOps Services a Team Foundation Server poskytuje širokou škálu možnosti DevOps. Mnohé z nich se vztahují na projekty napříč platformami, včetně hry a atraktivní grafické aplikace vytvořené pomocí Unity&mdash;zvláště při použití jazyka C# jako skriptovací jazyk. Ale protože Unity má svou vlastní vývojové prostředí a modulu runtime, mnoho funkcí DevOps nemůžete použít jako u jiných typů projektů vytvořených v sadě Visual Studio.
 
 Následující tabulky Identifikujte jak DevOps funkce v sadě Visual Studio použít nebo nemůžete použít při práci s Unity. Naleznete v dokumentaci propojené informace o funkcích, sami.
 
 ## <a name="agile-tools"></a>Agilní nástroje
 
-Referenční odkaz: [o agilní nástroje a agilní řízení projektů](/vsts/work/backlogs/overview?view=vsts) (pomocí Visual Studio Team Services nebo TFS, včetně Team Explorer Everywhere)
+Referenční odkaz: [o agilní nástroje a agilní řízení projektů](/azure/devops/boards/backlogs/overview?view=vsts) (s použitím Azure tabulí nebo TFS, včetně Team Explorer Everywhere)
 
 Obecné komentáře: všechny plánování a sledování funkce jsou nezávislé na typu projektu a kódování jazyky.
 
@@ -59,8 +59,8 @@ Obecné komentáře: I když tyto funkce návrhu jsou buď bez ohledu na program
 
 |Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
-|[Použití správy verzí Team Foundation](/vsts/tfvc/overview?view=vsts) nebo Visual Studio Team Services|Ano|Projekty Unity jsou jednoduše kolekce souborů, které jde umístit do systémů správy verzí, stejně jako libovolný jiný projekt, ale existuje několik důležitých popsané za touto tabulkou.|
-|[Začínáme s úložištěm Git ve službě Team Services](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Ano|Pod tabulkou naleznete v poznámkách.|
+|[Použít Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) nebo úložiště Azure|Ano|Projekty Unity jsou jednoduše kolekce souborů, které jde umístit do systémů správy verzí, stejně jako libovolný jiný projekt, ale existuje několik důležitých popsané za touto tabulkou.|
+|[Začínáme s úložištěm Git v úložišti Azure](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Ano|Pod tabulkou naleznete v poznámkách.|
 |[Zlepšení kvality kódu](../test/improve-code-quality.md)|Ano||
 |[Nalezení změn kódu a další historie](../ide/find-code-changes-and-other-history-with-codelens.md)|Ano||
 |[Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)|Ano||
@@ -75,13 +75,13 @@ Zvláštní upozornění pro správu verzí pomocí Unity:
 
 ## <a name="build"></a>Sestavení
 
-Referenční odkaz:  **[Build and Release](/vsts/build-release/index)**
+Referenční odkaz:  **[kanály Azure](/azure/devops/pipelines/index?view=vsts)**
 
 |Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
-|Na místním serveru TFS|Je to možné|Projekty Unity jsou integrované prostřednictvím prostředí Unity a ne prostřednictvím sady Visual Studio sestavovacího systému (sestavení v rámci Visual Studio Tools pro Unity se zkompilovat skripty, ale výsledkem není spustitelný soubor). Je možné [sestavování projektů Unity z příkazového řádku](http://docs.unity3d.com/Manual/CommandLineArguments.html) (dokumentace k Unity), takže je možné nakonfigurovat procesu MSBuild na serveru TFS k provedení příslušné Unity příkazy, za předpokladu, že Unity samotného je nainstalovaný na Tento počítač.<br /><br /> Unity nabízí také [sestavení Unity cloudu](https://build.cloud.unity3d.com/landing/), který sleduje úložiště Git nebo SVN a spouští pravidelná sestavení. V současné době to nebude fungovat s verzí Team Foundation nebo Visual Studio Team Services.|
-|Místní server sestavení propojené s Visual Studio Team Services|Je to možné|Zadaný stejných podmínek jako výše je dál možné přímé sestavení vyvolané prostřednictvím Visual Studio Team Services v místním počítači TFS. Zobrazit [agenti sestavení a vydání](/vsts/build-release/concepts/agents/agents) pokyny.|
-|Hostovaný kontroler služby Visual Studio Team Services|Ne|Unity sestavení nejsou v současné době nepodporují.|
+|On-premises Team Foundation Server (TFS)|Je to možné|Projekty Unity jsou integrované prostřednictvím prostředí Unity a ne prostřednictvím sady Visual Studio sestavovacího systému (sestavení v rámci Visual Studio Tools pro Unity se zkompilovat skripty, ale výsledkem není spustitelný soubor). Je možné [sestavování projektů Unity z příkazového řádku](http://docs.unity3d.com/Manual/CommandLineArguments.html) (dokumentace k Unity), takže je možné nakonfigurovat procesu MSBuild na serveru TFS k provedení příslušné Unity příkazy, za předpokladu, že Unity samotného je nainstalovaný na Tento počítač.<br /><br /> Unity nabízí také [sestavení Unity cloudu](https://build.cloud.unity3d.com/landing/), který sleduje úložiště Git nebo SVN a spouští pravidelná sestavení. V současné době to nebude fungovat s TFVC nebo služby Azure DevOps.|
+|Místní server sestavení propojené ke službám Azure DevOps|Je to možné|Zadaný stejných podmínek jako výše je dál možné přímé sestavení vyvolané prostřednictvím služby Azure DevOps v místním počítači TFS. Zobrazit [agenti sestavení a vydání](/azure/devops/pipelines/agents/agents?view=vsts) pokyny.|
+|Služby hostované adaptéru služeb Azure DevOps|Ne|Unity sestavení nejsou v současné době nepodporují.|
 |Vytvoření definice s předběžné a pozálohovacích skriptů|Ano|Definice vlastního sestavení, která používá Unity příkazový řádek pro spuštění sestavení můžete také nakonfigurovat pro skripty před a po sestavení.|
 |Průběžná integrace, včetně hlídané vrácení se změnami se|Ano|Ověřované vrácení se změnami se pro TFVC pouze, jak Git funguje na modelu žádosti o přijetí změn spíše než vrácení se změnami.|
 
@@ -103,20 +103,20 @@ Referenční odkaz:  **[zlepšení kvality kódu](../test/improve-code-quality.m
 |Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
 |[Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
-|[Hledání duplicitního kódu pomocí zjišťování klonování kódu](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
+|[Hledání duplicitního kódu pomocí zjišťování klonování kódu](https://msdn.microsoft.com/library/hh205279.aspx)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
 |[Měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
 |[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ne|Použití [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (Unity webu).|
-|[Analýza problémů paměti rozhraní .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Ne|Nástroje sady Visual Studio nemusí háky do Mono framework (jako Unity) pro profilování. Použití [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (dokumentace k Unity).|
+|[Analýza problémů paměti rozhraní .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Ne|Nástroje sady Visual Studio nemusí háky do Mono framework (jako Unity) pro profilování. Použití [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (dokumentace k Unity).|
 
 ## <a name="release-management"></a>Správa vydaných verzí
 
-Referenční odkaz: [sestavení a vydání – přehled](/vsts/pipelines/overview?view=vsts)
+Referenční odkaz: [sestavování a vydávání v Azure kanály a TFS](/azure/devops/pipelines/overview?view=vsts)
 
 |Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
 |Správa procesů vydávání verzí|Ano||
 |Nasazení na servery pro zkušební načtení pomocí skriptů|Ano||
-|Nahrát do app storu|Částečné|Rozšíření jsou k dispozici, který tento proces pro některé obchody automatizovat. Zobrazit [rozšíření pro Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), například [rozšíření pro Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
+|Nahrát do app storu|Částečné|Rozšíření jsou k dispozici, který tento proces pro některé obchody automatizovat. Zobrazit [rozšíření pro Azure DevOps služby](https://marketplace.visualstudio.com/VSTS), například [rozšíření pro Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>Monitorování pomocí aplikace HockeyApp
 

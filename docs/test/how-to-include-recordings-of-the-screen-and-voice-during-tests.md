@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c213d7f7119b2c7310212f61c140177ef7c84c76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381967"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321070"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Postupy: patří nahrávání obrazovky a hlasu během testů pomocí nastavení testu
 
@@ -28,7 +28,7 @@ Obrazovku a hlasový záznamník lze použít s ruční nebo automatické testy.
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Konfigurace obrazovky a hlasového záznamu pro nastavení testu
 
-1.  Otevřete nastavení testu, které chcete konfigurovat pro nahrávání obrazovky a hlasu. Další informace najdete v tématu [shromažďování diagnostických dat při testování (VSTS)](/vsts/manual-test/collect-diagnostic-data) nebo [shromažďování diagnostických informací pomocí nastavení testu](../test/collect-diagnostic-information-using-test-settings.md).
+1.  Otevřete nastavení testu, které chcete konfigurovat pro nahrávání obrazovky a hlasu. Další informace najdete v tématu [shromažďování diagnostických dat při testování (testovací plány Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts) nebo [shromažďování diagnostických informací pomocí nastavení testu](../test/collect-diagnostic-information-using-test-settings.md).
 
 2.  V nastavení testu, vyberte **Role** chcete použít pro záznam obrazovky a hlasu.
 
@@ -63,7 +63,7 @@ Obrazovku a hlasový záznamník lze použít s ruční nebo automatické testy.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Shromažďování diagnostických dat při testování (VSTS)](/vsts/manual-test/collect-diagnostic-data)
-- [Shromažďování diagnostických dat v manuálních testů (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [Shromažďování diagnostických dat při testování (Azure testovací plány)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [Shromažďování diagnostických dat v manuálních testů (Azure testovací plány)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [Shromažďování diagnostických údajů pomocí nastavení testů](../test/collect-diagnostic-information-using-test-settings.md)
-- [Spouštění ručních testů (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [Spouštění ručních testů (Azure testovací plány)](/azure/devops/test/run-manual-tests?view=vsts)

@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 92a0cbb6aa4edcc3ca5e7a9a93923cfa96214638
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775413"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283331"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Používání Visual Studio Tools for Unity
 
@@ -188,7 +188,7 @@ Můžete ladit sestavení vývoj pro různé přehrávače Unity pomocí sady Vi
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Chcete-li ladit spravovaný projekt knihovny DLL použít ve vašem Unity projektu
 
-1. Přidáte do existujícího projektu knihovny DLL do řešení sady Visual Studio vygenerovaná aplikace Visual Studio Tools for Unity. Ne tak často může být spuštění nového spravovaného projektu knihovny DLL tak, aby obsahovala kód komponent ve vašem Unity projektu; Pokud je to tento případ, můžete přidat nový projekt spravované knihovny DLL do řešení sady Visual Studio místo. Další informace o přidání nového nebo existujícího projektu k řešení najdete v tématu [postupy: Přidání projektů do řešení](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).
+1. Přidáte do existujícího projektu knihovny DLL do řešení sady Visual Studio vygenerovaná aplikace Visual Studio Tools for Unity. Ne tak často může být spuštění nového spravovaného projektu knihovny DLL tak, aby obsahovala kód komponent ve vašem Unity projektu; Pokud je to tento případ, můžete přidat nový projekt spravované knihovny DLL do řešení sady Visual Studio místo. Další informace o přidání nového nebo existujícího projektu k řešení najdete v tématu [postupy: Přidání projektů do řešení](https://msdn.microsoft.com/library/ff460187.aspx).
 
      ![Přidáte do existujícího projektu knihovny DLL do řešení. ](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 

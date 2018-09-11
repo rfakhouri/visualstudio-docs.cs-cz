@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4cedcdc55d5c0103c7005289191928fa14ac7a3
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 8cd9884c950d7cf6adefe997cf13fdd78fa7203d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251542"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279398"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Požadavky na systém pro emulátor sady Visual Studio pro Android
 Emulátor Visual Studia pro Android běží jako virtuální počítač na Hyper-V, technologie virtualizace pro Windows 8 a novějších verzích. Pokud chcete spustit emulátor, musí počítač splňovat požadavky na spuštění technologie Hyper-V, jak je popsáno v tomto tématu.  
@@ -117,7 +117,7 @@ Emulátor Visual Studia pro Android běží jako virtuální počítač na Hyper
   
 |Požadavek|Zkontrolujte a povolte tento požadavek|  
 |-----------------|----------------------------------------------|  
-|Musí být nainstalována technologie Hyper-V|Použijte stejné pokyny jako pro [povolení technologie Hyper-V pro Windows Phone emulator](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx).<br /><br /> Zkontrolujte stav **Správa virtuálních počítačů Hyper-V** služby v modulu snap-in služby.|  
+|Musí být nainstalována technologie Hyper-V|Použijte stejné pokyny jako pro [povolení technologie Hyper-V pro Windows Phone emulator](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Zkontrolujte stav **Správa virtuálních počítačů Hyper-V** služby v modulu snap-in služby.|  
 |Technologie Hyper-V musí běžet.|Další informace o správě služby najdete v následujících tématech:<br /><br /> -   [Spustit, zastavit, pozastavit, obnovit nebo restartovat službu](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Konfigurace spuštění služby](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|  
   
  Musíte být členem místní skupiny Správci Hyper-V.  

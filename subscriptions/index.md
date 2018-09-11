@@ -10,21 +10,21 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: d55e21a7324143b5bbb60ed714b9c2dc070828ce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946923"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279242"
 ---
 # <a name="visual-studio-subscriptions"></a>Předplatná sady Visual Studio
 
-Visual Studio odběrů je komplexní sadu prostředků můžete vytvářet, nasazovat a spravovat kvalitních aplikací na upřednostňované platformy a zařízení, včetně systému Windows, iOS, Android a Linux.  Výhody odběry zahrnovat přístup do nástroje pro vývojáře, cloudových služeb a softwaru, cvičení a podporu pro vývoj a testování potřebám.
+Předplatná sady Visual Studio je komplexní sadu prostředků můžete vytvářet, nasazovat a spravovat skvělé aplikace pro vaše preferované platformy a zařízení, včetně Windows, iOS, Androidu a Linuxu.  Výhody předplatná zahrnují přístup k nástrojům pro vývojáře, cloudových služeb a softwaru, školení a podporu pro vývoj a testování.
 
 ## <a name="get-started"></a>Začínáme
 
-Správci přihlásit k [ https://manage.visualstudio.com ](https://manage.visualstudio.com) přiřadit předplatných pro váš tým.<br>
-Odběratelé Přihlaste se k [ https://my.visualstudio.com ](https://my.visualstudio.com) pro přístup k vaší výhody předplatného.
+Správci přihlásit k [ https://manage.visualstudio.com ](https://manage.visualstudio.com) přiřazení předplatných pro váš tým.<br>
+Předplatitelé Přihlaste se k [ https://my.visualstudio.com ](https://my.visualstudio.com) pro přístup k výhodám vašeho předplatného.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -64,7 +64,7 @@ Odběratelé Přihlaste se k [ https://my.visualstudio.com ](https://my.visualst
         </a>
     </li>
     <li>
-        <a href="/vsts/">
+        <a href="/azure/devops/">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -74,7 +74,7 @@ Odběratelé Přihlaste se k [ https://my.visualstudio.com ](https://my.visualst
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio Team Services</h3>
+                        <h3>Služby Azure DevOps</h3>
                     </div>
                 </div>
             </div>
@@ -128,20 +128,20 @@ Odběratelé Přihlaste se k [ https://my.visualstudio.com ](https://my.visualst
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Centrum aplikace Visual Studio</h3>
+                        <h3>Visual Studio App Center</h3>
                     </div>
                 </div>
             </div>
         </div>
         </a>
-    </li>   
+    </li>
 </ul>
 
 ---
 
 ## <a name="whats-new"></a>Co je nového
 
-Chcete-li vaše předplatné i užitečnější, jsme přidejte a často aktualizovat výhody předplatného. Další informace najdete v tématu [co je nového v předplatných](whats-new-in-subscriptions.md) stránky.
+Aby vaše předplatné ještě užitečnější, přidáme a často aktualizovat výhody předplatného. Další informace najdete v tématu [co je nového v předplatných](whats-new-in-subscriptions.md) stránky.
 
 ---
 
@@ -153,12 +153,12 @@ Chcete-li vaše předplatné i užitečnější, jsme přidejte a často aktuali
                 <div class="card">
                     <div class="cardText">
                         <h3>Nástroje pro vývojáře</h3>
-                        <p>Získat přístup k nejnovější verze sady Visual Studio, plně vybavený IDE pro Android, iOS, Windows, systému macOS, vývoj aplikací pro web a cloud a další napříč platformami tooling na PC nebo Mac.</p>
+                        <p>Získejte přístup k nejnovějším verzím sady Visual Studio, plně vybavené integrované vývojové prostředí pro Android, iOS, Windows, macOS, vývoj aplikací pro web a cloud a další nástroje pro různé platformy na PC nebo Mac.</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
-                            <li>Team Foundation Server a CAL sady TFS</li>
-                        </ul>                        
+                            <li>Team Foundation Server a licence TFS CAL</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -169,16 +169,16 @@ Chcete-li vaše předplatné i užitečnější, jsme přidejte a často aktuali
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Cloudové služby</h3>
-                        <p>V sadě Visual Studio předplatném se může zobrazit měsíčního kreditu Azure a volné přístup ke službám Azure, zvýhodněné sazby vývoj a testování a výhradní přístup k jen odběratele image g allery s předem konfigurovaných virtuálních počítačů. V závislosti na vaše předplatné může zahrnovat cloudové služby:</p>
+                        <h3>Cloud Services</h3>
+                        <p>S vaším předplatným sady Visual Studio můžete obdržet měsíční kredit Azure a bezplatný přístup ke službám Azure, zlevněné sazby pro vývoj a testování a exkluzivní přístup k imagi jenom pro předplatitele g alerie s předkonfigurovanými virtuálními počítači. V závislosti na vaše předplatné může zahrnovat cloudové služby:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-office-dev">Vývojářského předplatného Office 365</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Služby Azure DevOps</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-office-dev">Předplatné pro vývojáře pro Office 365</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Vývojářský účet pro Windows</a></li>
-                            <li>PowerBI Pro</li>
-                        </ul>                        
+                            <li>Power BI Pro</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -189,18 +189,18 @@ Chcete-li vaše předplatné i užitečnější, jsme přidejte a často aktuali
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Školení a podpory</h3>
-                        <p>Visual Studio předplatná zahrnují technické a odborníky v oblasti školení výhody prostřednictvím Microsoft společně s našimi partnery. Cvičení obsah zahrnuje nejnovější kurzy o tématech technologie a odborníky v oblasti výukových kurzů pro vaše trvalá kariérní. Získejte odborné nápovědu k řešení potíží a odpovědi na otázky. Vaše předplatné zahrnovat:</p>
+                        <h3>Školení a podpora</h3>
+                        <p>Předplatná sady Visual Studio zahrnují technickým a odborným školením výhod Microsoftu a partnerů. Poslední kurzy o tématech technologie a profesionální studijní materiály pro vaše další kariérní školení obsah obsahuje. Získejte odbornou pomoc s řešením problémů a otázek. Vaše předplatné může zahrnovat:</p>
                         <ul>
-                            <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (business, technická a creative)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (cloudu, návrh, mobilní aplikace a data)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (vědecké zpracování dat a AI)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Xamarin univerzity</a> (mobilní vývoj)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-opsgility">Školení Opsgility</a> (zaměřené na cloudu)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-tech-support">Technickou podporu společnosti Microsoft Professional incidenty</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (firmy, technické a tvorba)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (cloud, návrh, mobilní zařízení a data)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (datové vědy a AI)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Xamarin University</a> (vývoj pro mobilní zařízení)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-opsgility">Školení Opsgility</a> (zaměřeno na cloud)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-tech-support">Incidenty profesionální technické podpory Microsoftu</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Chat s poradcem pro Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Komunita Azure</a></li>
-                        </ul>                        
+                        </ul>
                     </div>
                 </div>
             </div>

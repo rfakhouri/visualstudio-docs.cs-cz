@@ -9,12 +9,12 @@ description: Zjistěte, jak chcete předplatné aktivovat, Test Professional Par
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ce10ed292644179f348b2599898b04ae2679c9d6
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 9636bd3a264cf3cdd364382ffdffb11c376f1598
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624154"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283155"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop v předplatných sady Visual Studio
 
@@ -82,7 +82,7 @@ Testujte dříve a častěji.  Simulujte a testujte chování není k dispozici 
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici|NENÍ K DISPOZICI |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
 
-<sup>1</sup>*zahrnuje: Microsoft Partner Network (Enterprise).    Vyloučí: Neprodejné (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
+<sup>1</sup>*zahrnuje: Microsoft Partner Network (Enterprise).  Vyloučí: Neprodejné (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
 
 
 
@@ -91,4 +91,4 @@ Testujte dříve a častěji.  Simulujte a testujte chování není k dispozici 
     - Technické podpory:  https://www.parasoft.com/support/
     - Parasoft Resource Center:  https://www.parasoft.com/resources/
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+-  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

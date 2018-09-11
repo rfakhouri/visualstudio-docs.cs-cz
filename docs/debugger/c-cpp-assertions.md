@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 325641a143df2fe14a02d96f1103f58ddf533cd8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 455dc578e99700e4d6f53efae5a1bb5747e28d02
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37438077"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280022"
 ---
 # <a name="cc-assertions"></a>Kontrolní výrazy jazyka C/C++
 Příkaz kontrolní výraz určuje podmínku, která očekáváte, že na hodnotu true na místě v aplikaci. Pokud tato podmínka není splněna, výraz se nezdaří, dojde k přerušení provádění programu a [chyba kontrolního výrazu dialogovému oknu](../debugger/assertion-failed-dialog-box.md) se zobrazí.  
@@ -159,7 +159,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
  [V tomto tématu](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_MFC_assertions"></a> Kontrolní výrazy s MFC  
- Definuje MFC [ASSERT](http://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) – makro kontroly kontrolní výraz. Definuje také `MFC ASSERT_VALID` a `CObject::AssertValid` metody kontroly vnitřní stav `CObject`-odvozenému objektu.  
+ Definuje MFC [ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) – makro kontroly kontrolní výraz. Definuje také `MFC ASSERT_VALID` a `CObject::AssertValid` metody kontroly vnitřní stav `CObject`-odvozenému objektu.  
   
  Pokud argument MFC `ASSERT` – makro vyhodnocen jako nula nebo hodnotu NEPRAVDA, makro zastaví provádění programu a zobrazí uživateli výstrahu; v opačném případě pokračuje.  
   

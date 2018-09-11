@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ad3344d688159ded35cd8f6c6aa757cc8a7a478
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 7bddba938360b56b0ed86d4aca35aa963cdd7a84
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42624213"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321016"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -35,7 +35,7 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
 
 - Zaznamenat konkrétní události
 
-     Prozkoumat související kód, data, která se zobrazí **lokální** okno během událostí ladicího programu a informace o voláních funkcí
+   Prozkoumat související kód, data, která se zobrazí **lokální** okno během událostí ladicího programu a informace o voláních funkcí
 
 - Ladit chyby, které je těžké reprodukovat nebo kterým dochází při nasazení
 
@@ -46,7 +46,7 @@ Můžete použít nástroj IntelliTrace v sadě Visual Studio Enterprise edition
 |||
 |-|-|
 |**Ladit aplikaci pomocí nástroje IntelliTrace:**<br /><br /> -Zobrazit minulé události.<br />-Zobrazit informace o s minulými událostmi volání.<br />-Uložte relaci nástroje IntelliTrace.<br />-Řízení dat, která nástroj IntelliTrace shromažďuje.|- [Návod: Použití IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkce IntelliTrace](../debugger/intellitrace-features.md)<br />- [Historické ladění](../debugger/historical-debugging.md)<br />- [Zobrazení snímků pomocí zpětného kroku IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)|
-|**Shromažďovat IntelliTrace data během testovací relace v nástroji Test Manager**|- [Shromažďování více diagnostických dat v manuálních testů](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**Shromažďovat IntelliTrace data během testovací relace v nástroji Test Manager**|- [Shromažďování více diagnostických dat v manuálních testů](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Shromažďovat IntelliTrace data z nasazené aplikace**|- [Použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Spuštění ladění ze souboru protokolu IntelliTrace (soubor .iTrace).**|- [Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
 
@@ -89,7 +89,7 @@ Můžete ukládat data IntelliTrace z těchto zdrojů:
 
 - Vaše aplikace dojde k chybě v testovacím počítači, ale funguje na vývojovém počítači.
 
-     Můžete shromáždit data IntelliTrace z nástroje Microsoft Test Manager, uložit tato data do souboru .iTrace a připojit tento soubor k pracovní položce serveru Team Foundation Server pro pozdější zkoumání. Zobrazit [shromažďování více diagnostických dat v manuálních testech](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) a [použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md).
+     Můžete shromáždit data IntelliTrace z nástroje Microsoft Test Manager, uložit tato data do souboru .iTrace a připojit tento soubor k pracovní položce serveru Team Foundation Server pro pozdější zkoumání. Zobrazit [shromažďování více diagnostických dat v manuálních testech](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) a [použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
 - K chybě nebo selhání dochází v nasazené aplikaci.
 
@@ -129,9 +129,7 @@ Ve výchozím nastavení nástroj IntelliTrace zaznamenává pouze události Int
 
 - **Události rozhraní .NET framework**
 
-     Standardně nástroj IntelliTrace zaznamenává nejběžnější události rozhraní .NET Framework. Příklad:
-
-    - V případě události Zaškrtnutí políčka shromažďuje nástroj IntelliTrace stav zaškrtávacího políčka a text.
+   Standardně nástroj IntelliTrace zaznamenává nejběžnější události rozhraní .NET Framework. Například zkoušeného případě události zaškrtnutí políčka, nástroj IntelliTrace shromažďuje stav zaškrtávacího políčka a text.
 
 - **Události aplikace SharePoint 2010 a SharePoint 2013**
 
@@ -180,8 +178,10 @@ Shromažďování informací o voláních může aplikaci výrazně zpomalit. M�
 ## <a name="in-this-section"></a>V tomto oddílu
 
 [Funkce IntelliTrace](../debugger/intellitrace-features.md)
+
 [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md)
-[použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)
+
+[Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)
 
 ### <a name="blogs"></a>Blogy
 

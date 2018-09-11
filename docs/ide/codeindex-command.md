@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ecd73fceda6916f547c67e599777a9cd139d3bb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176369"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283482"
 ---
 # <a name="codeindex-command"></a>Codeindex – příkaz
 
@@ -27,7 +27,7 @@ Použití **CodeIndex** příkaz pro správu indexování kódu na Team Foundati
 
 ## <a name="required-permissions"></a>Požadovaná oprávnění
 
-Použít **CodeIndex** příkaz, musíte být členem skupiny **správci serveru Team Foundation** skupiny zabezpečení. Zobrazit [oprávnění a skupiny definované pro Team Services a TFS](/vsts/organizations/security/permissions?view=vsts).
+Použít **CodeIndex** příkaz, musíte být členem skupiny **správci serveru Team Foundation** skupiny zabezpečení. Zobrazit [oprávnění a skupiny definované pro služby Azure DevOps a TFS](/azure/devops/organizations/security/permissions?view=vsts).
 
 > [!NOTE]
 > I když se přihlásíte s přihlašovacími údaji správce, musíte otevřít okno příkazového řádku se zvýšenými oprávněními ke spuštění tohoto příkazu. Tento příkaz musíte také spustit z aplikační vrstvy pro Team Foundation.
@@ -42,8 +42,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 |**Argument**|**Popis**|
 |------------------|---------------------|
-|`CollectionName`|Určuje název kolekce týmového projektu. Pokud název obsahuje mezery, uzavřete ho uvozovek, například "Fabrikam web".|
-|`CollectionId`|Určuje identifikační číslo kolekce týmového projektu.|
+|`CollectionName`|Určuje název kolekce projektů. Pokud název obsahuje mezery, uzavřete ho uvozovek, například "Fabrikam web".|
+|`CollectionId`|Určuje identifikační číslo kolekce projektu.|
 |`ServerPath`|Určuje cestu k souboru kódu.|
 
 |**Možnost**|**Popis**|
@@ -56,8 +56,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/destroyCodeIndex [/ noprompt]**|Smazat index kódu a odstranit všechna indexovaná data. Pokud používáte nevyžaduje potvrzení **/noprompt** možnost.|
 |**/temporaryDataSizeLimit**: [zobrazení &#124; <`SizeInGBs`> &#124; zakázat]|Určit, kolik dočasná data, která vytvoří CodeLens při zpracování sady změn. Výchozí omezení je 2 GB.<br /><br /> -   **zobrazení**: Zobrazit aktuální limit velikosti.<br />-   `SizeInGBs`: Změňte limit velikosti.<br />-   **Zakázat**: odebrání omezení velikosti.<br /><br /> Toto omezení je zaškrtnuto, než funkce CodeLens zpracuje novou sadu změn. Dočasná data, která překračuje tento limit, CodeLens pozastaví zpracování poslední sady změn, nikoli nové značky. CodeLens se restartuje po data se vyčistí a klesne pod tento limit zpracování. Čištění se spustí automaticky jednou denně. To znamená, že dočasná data, která může překročit tento limit, dokud se čištění se spustí.|
 |**/indexHistoryPeriod**: [zobrazení &#124; všechny &#124; <`NumberOfMonths`>]|Ovládací prvek, jak dlouho se má indexovat historii změn. To má vliv na tom, kolik historie CodeLens ukazuje. Výchozí limit je 12 měsíců. To znamená, že funkce CodeLens ukazuje historii změn z pouze za posledních 12 měsíců.<br /><br /> -   **zobrazení**: Zobrazit aktuální počet měsíců.<br />-   **všechny**: Index veškerá historie změn.<br />-   `NumberOfMonths`: Počet měsíců pro historii změn index změňte.|
-|**/collectionName:** `CollectionName`|Určuje název kolekce týmového projektu, ve kterém se spustí **CodeIndex** příkazu. Povinné, pokud nepoužíváte **/CollectionId**.|
-|**/collectionId:** `CollectionId`|Určuje identifikační číslo kolekce týmového projektu, ve kterém se spustí **CodeIndex** příkazu. Povinné, pokud nepoužíváte **/CollectionName**.|
+|**/collectionName:** `CollectionName`|Určuje název kolekce projektu, ve kterém se má spustit **CodeIndex** příkazu. Povinné, pokud nepoužíváte **/CollectionId**.|
+|**/collectionId:** `CollectionId`|Určuje identifikační číslo kolekce projektu, ve kterém se spustí **CodeIndex** příkazu. Povinné, pokud nepoužíváte **/CollectionName**.|
 
 ## <a name="examples"></a>Příklady
 

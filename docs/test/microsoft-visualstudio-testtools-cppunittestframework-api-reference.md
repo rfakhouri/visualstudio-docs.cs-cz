@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 0d5ee9379337f64b413b4d040f6ce5590baaeb41
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776194"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280919"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referenční dokumentace rozhraní API atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -24,7 +24,7 @@ Toto téma obsahuje seznam veřejných členů náležících `Microsoft::Visual
 
  Lib – soubory jsou umístěny v _VisualStudio2012 [x 86] InstallFolder_**\VC\UnitTest\lib** složky.
 
-Hlavičky a knihovny lib cesty se automaticky nakonfigurují v nativní projekt testu.
+Hlavičky a knihovny lib cesty se automaticky nakonfigurují v nativní testovacího projektu.
 
 ##  <a name="In_this_topic"></a> V tomto tématu
  [CppUnitTest.h](#cppUnitTest_h)

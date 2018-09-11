@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ae096096c77ee1584d1799c85bda3e0b7b6e5d13
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775927"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283415"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Kurz: Začínáme s architektury Flask webů v sadě Visual Studio
 
@@ -95,7 +95,7 @@ Protože jste vybrali **vytvořit nové úložiště Git** v **nový projekt** d
 
     ![Okno Průzkumníka týmu při vkládání do existující vzdáleného úložiště](media/flask/step01-push-to-github.png)
 
-    Pokud nemáte existující úložiště, **publikování ve službě GitHub** a **nasdílet do Visual Studio Team Services** možnosti umožňují vytvořit přímo z Visual Studia.
+    Pokud nemáte existující úložiště, **publikování ve službě GitHub** a **odeslat do Azure DevOps** možnosti umožňují vytvořit přímo z Visual Studia.
 
 1. Při práci kroky v tomto kurzu si zvyknout pravidelně používání ovládacích prvků v sadě Visual Studio k potvrzení a nasdílení změn změny. V tomto kurzu upozorňuje na vhodných míst.
 

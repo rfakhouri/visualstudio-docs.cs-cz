@@ -1,20 +1,20 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: f11a66fd06a2b0b3b23d35c3153c5dd26fab282e
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: b7c8de18ba0083d31287fe862ab0015cb210bce1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29709828"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279632"
 ---
-# <a name="view-recent-job-performance-and-details"></a>Zobrazit nejnovější úlohy výkon a podrobnosti
-Po odeslání úlohy se zobrazí se seznam úloh, které chcete zobrazit jejich stav, doba trvání a další.
+# <a name="view-recent-job-performance-and-details"></a>Zobrazit poslední výkon úlohy a podrobnosti
+Po odeslání úloh můžete zobrazit seznam úloh, které chcete zobrazit jejich stav, dobu trvání a další.
 
-1. V **Průzkumníka serveru** rozbalte konkrétní výpočetní kontextu
-1. Klikněte dvakrát na **úlohy**
-1. Zobrazí se seznam úlohy, odeslané do tohoto kontextu výpočty.
-1. Vyberte konkrétní **úlohy** v seznamu zobrazíte podrobnosti
+1. V **Průzkumníka serveru**, rozbalte konkrétní výpočetní kontext.
+1. Dvakrát klikněte na panel **úlohy**.
+1. Zobrazí se seznam odeslaných do daného kontextu výpočetních úloh.
+1. Vyberte konkrétní **úlohy** v seznamu zobrazíte podrobnosti.
 
-![Sledování úloh](media\job-details\monitor-jobs.png)
+![Monitorování úloh](media\job-details\monitor-jobs.png)
 
-> Historie úlohy, odeslané na virtuální počítače s Linuxem jsou uloženy na virtuální počítač v adresáři TMP. Proto vždy, když se po restartu je zrušeno historie úlohy. Pro trvalé záznam historii úlohy nakonfigurujte virtuální počítač jako kontext výpočty v Azure Machine learning, pak odeslat úlohu Azure Machine Learning (výběru virtuálního počítače jako kontext výpočetní)
+> Historie úlohy odeslané do virtuálních počítačů s Linuxem je uložen na virtuálním počítači v adresáři TMP. Proto pokaždé, když se bude vyžadovat restartování se vymaže historii úlohy. Trvalé záznamu historie úlohy nakonfigurujte prosím váš virtuální počítač jako výpočetní kontext v Azure Machine learning, pak odeslat úlohu do Azure Machine Learning (jako výpočetní kontext výběru virtuálního počítače).

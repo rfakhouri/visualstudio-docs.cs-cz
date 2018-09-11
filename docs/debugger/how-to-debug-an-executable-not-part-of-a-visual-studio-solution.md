@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: ladění spustitelné soubory, které není součástí řešení sady Visual Studio | Microsoft Docs'
+title: 'Postupy: ladění spustitelného souboru, který není součástí řešení sady Visual Studio | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -20,53 +20,53 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e16a938eda683a607dbf7d9418b2a7bd4455a0da
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ce84c4acdc2cf4324c76dbbf7fe0b39ca9715b3c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476244"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279092"
 ---
-# <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>Postupy: ladění spustitelné soubory, které není součástí řešení sady Visual Studio
-V některých případech můžete chtít ladění spustitelné soubory (soubor .exe), které není součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. To může být spustitelný soubor můžete vytvořit mimo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo jenom spustitelný soubor, který jste dostali od někoho jiného.  
+# <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>Postupy: ladění spustitelného souboru, který není součástí řešení sady Visual Studio
+V některých případech můžete chtít ladit spustitelný soubor (soubor .exe), který není součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. To může být spustitelný soubor vytvořený mimo sadu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo spustitelný soubor obdrželi od někoho jiného.  
   
-Obvyklé odpověď na tento problém je spustit spustitelný soubor mimo Visual Studio a připojte se pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ladicí program. Další informace najdete v tématu [přiřadit běžící procesy](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+Obvyklá odpověď na tento problém je spuštění spustitelného souboru mimo sadu Visual Studio a připojit se k němu pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ladicího programu. Další informace najdete v tématu [připojení k běžící procesy](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-Připojení k aplikaci vyžaduje některé ruční kroky, takže bude trvat několik sekund. Tato mírnému zpoždění znamená, že připojení nebude pomoci, pokud chcete ladit problém, který nastane při spuštění. Navíc pokud ladíte program, který nečeká na vstup uživatele a rychle dokončí, nemusí mít čas k němu připojí. Pokud máte [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] a [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] nainstalován, můžete vytvořit projekt EXE pro takového programu.
+Připojení k aplikaci vyžaduje určité ruční kroky, což trvá několik sekund. Toto mírné zpoždění znamená, že připojení nepomůže, pokud se pokoušíte ladit problém, ke které dojde během spouštění. Kromě toho Pokud ladíte program, který nečeká na vstup uživatele a rychle skončí, pravděpodobně nemáte čas připojit se k němu. Pokud máte [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] a [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] nainstalované, můžete vytvořit projekt EXE pro takový program.
 
 > [!NOTE]
->  Ne všechny programovací jazyky podporují EXE projekty.
+>  Ne všechny programovací jazyky podporují projekty EXE.
 
-Při ladění spustitelné soubory, které není součástí řešení sady Visual Studio, může být k dispozici funkce ladění omezená, zda připojení spuštění spustitelného souboru nebo přidejte spustitelný soubor [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení.
+Jestliže ladíte spustitelný soubor, který není součástí řešení sady Visual Studio, je dostupné funkce ladění může být omezená, ať už jste připojení ke spuštěnému spustitelnému souboru nebo přidat spustitelného souboru k [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení.
 
-- Pokud máte ve zdrojovém kódu, je nejlepším postupem je importovat do zdrojového kódu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a vytvořit sestavení ladicí verze spustitelného souboru v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
-- Pokud nemáte zdrojový kód, a pokud spustitelný soubor byl vytvořený bez [informace o ladění](../debugger/how-to-set-debug-and-release-configurations.md) kompatibilní formát, jsou k dispozici funkce ladění velmi omezená. 
+- Pokud máte zdrojový kód, nejlepším řešením je import zdrojového kódu do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a vytvoření ladicího sestavení spustitelného souboru v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+- Pokud nemáte zdrojového kódu, a pokud spustitelný soubor se sestavil bez [informace o ladění](../debugger/how-to-set-debug-and-release-configurations.md) v kompatibilním formátu, jsou k dispozici funkce ladění velmi omezená. 
   
-### <a name="to-create-an-exe-project-for-an-existing-executable"></a>K vytvoření projektu pro existující spustitelný soubor EXE  
+### <a name="to-create-an-exe-project-for-an-existing-executable"></a>Chcete-li vytvořit projekt EXE pro stávající spustitelný soubor  
   
-1.  Na **soubor** nabídky, klikněte na tlačítko **otevřete** a vyberte **projektu**.  
+1.  Na **souboru** nabídky, klikněte na tlačítko **otevřít** a vyberte **projektu**.  
   
-2.  V **otevřeného projektu** dialogové okno, klikněte na tlačítko rozevíracího seznamu vedle **název souboru** a vyberte **všechny soubory projektu**.  
+2.  V **otevřít projekt** dialogové okno, klikněte rozevírací seznam vedle **název_souboru** a vyberte **všechny soubory projektu**.  
   
 3.  Vyhledejte spustitelný soubor a klikněte na tlačítko **OK**.  
 
-    Tím se vytvoří dočasný řešení, které obsahuje spustitelný soubor.
+    Tím se vytvoří dočasné řešení, která obsahuje spustitelný soubor.
 
-5.  Spustit spustitelný soubor výběrem příkaz provádění **spustit**, z **ladění** nabídky.    
+5.  Spusťte spustitelný soubor výběrem příkazu ke spuštění, například **Start**, z **ladění** nabídky.    
   
-### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>K importu spustitelný soubor do řešení sady Visual Studio  
+### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>Import spustitelného souboru do řešení sady Visual Studio  
   
-1.  Na **soubor** nabídky, přejděte na příkaz **přidat projekt**a potom klikněte na **existující projekt**.  
+1.  Na **souboru** nabídky, přejděte k **přidat projekt**a potom klikněte na tlačítko **existující projekt**.  
   
-2.  V **přidat existující projekt** dialogové okno, klikněte na tlačítko rozevíracího seznamu vedle **název souboru** a vyberte **všechny soubory projektu**.  
+2.  V **přidat existující projekt** dialogové okno, klikněte rozevírací seznam vedle **název_souboru** a vyberte **všechny soubory projektu**.  
   
 3.  Vyhledejte a vyberte spustitelný soubor.  
   
-4.  Click **OK**.  
+4.  Klikněte na tlačítko **OK**.  
   
-5.  Spustit spustitelný soubor výběrem příkaz provádění **spustit**, z **ladění** nabídky.    
+5.  Spusťte spustitelný soubor výběrem příkazu ke spuštění, například **Start**, z **ladění** nabídky.    
   
 ## <a name="see-also"></a>Viz také  
  [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)   
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
- [Soubory DBG](http://msdn.microsoft.com/en-us/91e449e9-8b65-4123-960f-2107cd1f1cfd)
+ [Soubory DBG](/previous-versions/visualstudio/visual-studio-2010/da528y14(v=vs.100))

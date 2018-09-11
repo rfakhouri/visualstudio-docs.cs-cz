@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6895cc7a7b390f83f717158b78e65aa8336d8a98
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774817"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320979"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 *VSPerfCmd.exe* nástroj se používá ke spuštění a zastavení shromažďování dat o výkonu. Používá následující syntaxi:  
@@ -83,7 +83,7 @@ VSPerfCmd [/U] [/options]
   
 |Možnost|Popis|  
 |------------|-----------------|  
-|**Admin:Security** \< **povolit&#124;ODEPŘÍT**> *vpravo*[ *vpravo*] \< *uživatele*  &#124; *Skupiny*>|Povoluje nebo zakazuje zadaného uživatele nebo skupiny přístup k profilovací služby.<br /><br /> `Right` může být:<br /><br /> CrossSession – umožní uživateli přístup ke službě pro různé relace profilování.<br /><br /> SampleProfiling – umožní uživateli přístup k ovladači povolit profilaci vzorkování. Také umožňuje přístup k informacím o přechodu jádra během profilace trasování.<br /><br /> FullAccess – umožňuje uživateli CrossSession a SampleProfiling přístup.|  
+|**Admin:Security**, \< **povolit&#124;ODEPŘÍT**>, *vpravo*[ *vpravo*], \< *uživatele* &#124; *Skupiny*>|Povoluje nebo zakazuje zadaného uživatele nebo skupiny přístup k profilovací služby.<br /><br /> `Right` může být:<br /><br /> CrossSession – umožní uživateli přístup ke službě pro různé relace profilování.<br /><br /> SampleProfiling – umožní uživateli přístup k ovladači povolit profilaci vzorkování. Také umožňuje přístup k informacím o přechodu jádra během profilace trasování.<br /><br /> FullAccess – umožňuje uživateli CrossSession a SampleProfiling přístup.|  
 |**Admin:Security seznamu**|Zobrazí aktuální stav služeb profilace a zobrazí seznam oprávnění uživatele.|  
 |**Správce:** \< *služby*&#124;*ovladač*>\<**START**&#124;**zastavit**  &#124; **Nainstalovat**&#124;**odinstalace**>|Spustí, zastaví, nainstaluje nebo odinstaluje komponentu služeb profilace (service) nebo ovladač zařízení režimu jádra (driver).|  
 |**Správce:** \< *služby*&#124;*ovladač*>**AutoStart**\<**na** &#124; **Vypnuto**>|Povolí nebo zakáže automatické spuštění služby profilace (service) nebo ovladač zařízení režimu jádra (driver) po restartu.|  

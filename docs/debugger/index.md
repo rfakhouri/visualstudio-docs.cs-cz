@@ -1,22 +1,22 @@
 ---
 layout: LandingPage
-title: Ladění aplikace v sadě Visual Studio | Microsoft Docs
-description: Další informace o použití Visual Studio 2017 k ladění aplikací, služeb a nástrojů v jazyce, platformy a zařízení.
+title: Ladění aplikací v sadě Visual Studio | Dokumentace Microsoftu
+description: Zjistěte, jak používat Visual Studio 2017 k ladění aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: ba5cad803a49b97d193d156e46c6235d7c5f8312
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 1fd0777cdb30a5a458a0578129cf22607fd8c1e3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303293"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281205"
 ---
 # <a name="debugging-in-visual-studio"></a>Ladění v sadě Visual Studio
 
-Ladicí program Visual Studio vám pomůže sledovat běhového chování vašeho programu a najít problémy. Ladicí program funguje pro všechny programovací jazyky Visual Studio a jejich přidružené knihovny. Pomocí ladicího programu můžete rozdělit programu zkontrolujte v kódu, prozkoumat a upravit proměnné, zobrazit registrů, přečtěte si pokyny vytvořené z vašeho zdrojového kódu a zobrazení paměť, vaše aplikace.
+Ladicí program sady Visual Studio pomáhá sledovat chování běhu programu a najít problémy. Ladicí program pracuje s všechny programovací jazyky sady Visual Studio a jejich přidruženými knihovnami. Pomocí ladicího programu můžete přerušit běh programu a prozkoumat kód, prozkoumat a upravit proměnné, zobrazit registry, zobrazit pokyny vytvořené ze zdrojového kódu a zobrazit paměťový prostor používaný vaší aplikací.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -48,7 +48,7 @@ Ladicí program Visual Studio vám pomůže sledovat běhového chování vašeh
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Ladění pro absolutní začátečníka</h3>
+                        <h3>Ladění pro naprosté začátečníky</h3>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@ Ladicí program Visual Studio vám pomůže sledovat běhového chování vašeh
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Další informace o vzdálené ladění</h3>
+                        <h3>Další informace o vzdáleném ladění</h3>
                     </div>
                 </div>
             </div>
@@ -138,7 +138,7 @@ Ladicí program Visual Studio vám pomůže sledovat běhového chování vašeh
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Ladění aplikací pro živé Azure App Service</h3>
+                        <h3>Ladit živé aplikace Azure App Service</h3>
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@ Ladicí program Visual Studio vám pomůže sledovat běhového chování vašeh
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Zjistit, jaká&#39;s nové v ladicím programu</h3>
+                        <h3>Podívejte se, co&#39;nového v ladicím programu</h3>
                     </div>
                 </div>
             </div>
@@ -206,12 +206,12 @@ Ladicí program Visual Studio vám pomůže sledovat běhového chování vašeh
 
 <ul class="panelContent cardsW">
     <li>
-        <a href="https://msdn.microsoft.com/library/ee661590.aspx">
+        <a href="/visualstudio/debugger/api-reference-for-intellitrace-extensibility">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Odkaz na IntelliTrace</h3>
+                        <h3>Referenční dokumentace technologie IntelliTrace</h3>
                     </div>
                 </div>
             </div>

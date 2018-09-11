@@ -9,12 +9,12 @@ description: Další informace o předplatném školení Datacampu součástí v
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0220bf4a5a07fac2e9ecda8f8c638d9c5f0a6145
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: f0a6fe16edf12616dd93b394b118f40651ffb0ec
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624009"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282413"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Výhoda Datacampu školení v předplatných sady Visual Studio
 
@@ -93,4 +93,4 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
     - [Centrum pro nápovědu Datacampu](https://support.datacamp.com/hc), kde hledat témata podpory a dotazy žádost uživatele.
     - [Odeslat žádost o podporu](https://support.datacamp.com/hc/requests/new)
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+-  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

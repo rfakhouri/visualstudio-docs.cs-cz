@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0279ffaf8f1024b4c11fb0689eed03f577e25a6
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f5c60e0b812cd0557b266d3e34dae62cb22cc57d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152445"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281752"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie balíčku VSIX
 Je balíčku VSIX *VSIX* soubor, který obsahuje jeden nebo více rozšíření sady Visual Studio spolu s metadaty sady Visual Studio používá ke klasifikaci a nainstalovat rozšíření. Tato metadata jsou obsaženy v manifestu VSIX a *[Content_Types] .xml* souboru. Balíčku VSIX může obsahovat také jeden nebo více *Extension.vsixlangpack* soubory k poskytování lokalizované textu instalace a může obsahovat další balíčky VSIX nainstalovat závislosti.  
@@ -31,7 +31,7 @@ Je balíčku VSIX *VSIX* soubor, který obsahuje jeden nebo více rozšíření 
 >  Názvy souborů součástí balíčků VSIX nesmí obsahovat mezery ani znaky, které jsou vyhrazené v identifikátory URI (Uniform Resource), jako jsou definované v části [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>VSIX manifest  
- VSIX manifest obsahuje informace o rozšíření k instalaci a způsobem VSX schématu. Další informace najdete v tématu [referenční dokumentace schématu 1.0 rozšíření VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Manifest VSIX příklad naleznete v tématu [PackageManifest – element (kořenový element, schéma VSX)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+ VSIX manifest obsahuje informace o rozšíření k instalaci a způsobem VSX schématu. Další informace najdete v tématu [referenční dokumentace schématu 1.0 rozšíření VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Manifest VSIX příklad naleznete v tématu [PackageManifest – element (kořenový element, schéma VSX)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
  VSIX manifest musí mít název `extension.vsixmanifest` když je součástí ^ soubor .vsix *.  
   
@@ -46,7 +46,7 @@ Je balíčku VSIX *VSIX* soubor, který obsahuje jeden nebo více rozšíření 
   
  Pokud se uživatel pokusí nainstalovat rozšíření, která obsahuje závislosti, instalační služba zkontroluje, že požadovaná sestavení jsou nainstalovány v systému uživatele. Pokud nejsou požadované sestavení nalezeno, **rozšíření a aktualizace** zobrazí seznam chybějících sestavení.  
   
- Pokud manifest rozšíření obsahuje jeden nebo více [odkaz](http://msdn.microsoft.com/en-us/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) prvky, **rozšíření a aktualizace** porovná manifestu každý odkaz na rozšíření, které jsou nainstalované v systému a nainstaluje odkazované rozšíření, pokud ještě není nainstalovaná. Pokud je nainstalovaná starší verze odkazovaného rozšíření, nahradí jej na novější verzi.  
+ Pokud manifest rozšíření obsahuje jeden nebo více [odkaz](/previous-versions/visualstudio/visual-studio-2010/dd393687(v=vs.100)) prvky, **rozšíření a aktualizace** porovná manifestu každý odkaz na rozšíření, které jsou nainstalované v systému a nainstaluje odkazované rozšíření, pokud ještě není nainstalovaná. Pokud je nainstalovaná starší verze odkazovaného rozšíření, nahradí jej na novější verzi.  
   
  Pokud projekt ve víceprojektové řešení obsahuje odkaz na jiný projekt ve stejném řešení, balíčku VSIX obsahuje závislosti projektu. Toto chování můžete přepsat kliknutím na odkaz pro interní projekt a pak v **vlastnosti** okno nastavení **výstupní skupiny součástí VSIX** vlastnost `BuiltProjectOutputGroup`.  
   
@@ -55,7 +55,7 @@ Je balíčku VSIX *VSIX* soubor, který obsahuje jeden nebo více rozšíření 
 ## <a name="installation-location"></a>Umístění instalace  
  Během instalace **rozšíření a aktualizace** hledá obsah balíčku VSIX v rámci *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*.  
   
- Ve výchozím nastavení, instalaci platí pouze pro aktuálního uživatele, protože *% LocalAppData %* je adresář specifické pro uživatele. Ale pokud nastavíte [AllUsers](http://msdn.microsoft.com/en-us/ac817f50-3276-4ddb-b467-8bbb1432455b) elementu v manifestu do `True`, nainstaluje rozšíření v rámci *... \\* VisualStudioInstallationFolder*\Common7\IDE\Extensions* a bude k dispozici pro všechny uživatele počítače.  
+ Ve výchozím nastavení, instalaci platí pouze pro aktuálního uživatele, protože *% LocalAppData %* je adresář specifické pro uživatele. Ale pokud nastavíte [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) elementu v manifestu do `True`, nainstaluje rozšíření v rámci *... \\* VisualStudioInstallationFolder*\Common7\IDE\Extensions* a bude k dispozici pro všechny uživatele počítače.  
   
 ## <a name="contenttypesxml"></a>[Content_Types] .xml  
  *[Content_Types] .xml* souboru Určuje typy souborů v rozbalených *VSIX* souboru. Tento soubor používá při instalaci balíčku Visual Studio, ale není možné nainstalovat samotný soubor. Další informace o tomto souboru najdete v tématu [struktura souboru [Content_types] .xml](the-structure-of-the-content-types-dot-xml-file.md).  

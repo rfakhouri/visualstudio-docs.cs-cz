@@ -9,12 +9,12 @@ description: Další informace o benefitech specialistou součástí předplatn�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 395b05d3b3caa7a800cc28ca1f93c944e6320d1e
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 1163feb7b1a55a816eef3b4b5f106de01c34669a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624299"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282519"
 ---
 # <a name="concierge-chat"></a>Komunikace se specialistou
 
@@ -48,7 +48,7 @@ Získání nápovědy prostřednictvím specialistou služby jsou velmi snadné.
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici |Není k dispozici |
 
-<sup>1</sup>*zahrnuje: neprodejné (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.    Vyloučí: FTE, Microsoft s hodnotou partnera (MVP), ředitel pro oblast (RD), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup>*zahrnuje: neprodejné (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Vyloučí: FTE, Microsoft s hodnotou partnera (MVP), ředitel pro oblast (RD), Microsoft Partner Network (MPN), Imagine.*
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
@@ -59,7 +59,7 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+-  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
 
 
 

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396fde582c10640bae95261a696c0d752543fc8d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 491a70cd8ef35a1401bfe0cd8b6118709751d183
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381156"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321200"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Použití automatizace uživatelského rozhraní k testování kódu
 
@@ -35,7 +35,7 @@ Jak je znázorněno na následujícím obrázku, může být typické vývojové
 
 Vytvoření programového testu uživatelského rozhraní je jednoduché. Můžete jednoduše provést test ručně při **Tvůrce programového testu UI** běží na pozadí. Můžete také určit, jaké hodnoty by se zobrazit v konkrétních polích. **Tvůrce programového testu UI** zaznamená vaše akce a generuje kód z nich. Po vytvoření testu, můžete ho upravit v začínáte se speciálním editorem, který umožňuje upravit posloupnost akcí.
 
-Případně pokud máte testovací případ, která byla zaznamenána v nástroji Microsoft Test Manager, může generovat kód od. Další informace najdete v tématu [záznam a přehrávání zpět manuálních testů](/vsts/test/mtm/record-play-back-manual-tests).
+Případně pokud máte testovací případ, která byla zaznamenána v nástroji Microsoft Test Manager, může generovat kód od. Další informace najdete v tématu [záznam a přehrávání zpět manuálních testů](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts).
 
 Specializované **Tvůrce programového testu UI** a editor snadno vytvářet a upravovat kódované UI testy, i když jsou hlavní dovednosti koncentrované testování místo psaní kódu. Ale pokud jste vývojář a chcete rozšířit test pokročilejší způsobem, kód je strukturována tak, aby se snadno kopírovat a upravit. Například může zaznamenat test koupit na webu a pak upravte generovaný kód pro přidání smyčku, která koupí mnoho položek.
 
@@ -441,7 +441,7 @@ Programové testy uživatelského rozhraní pomocí protokolů z programových t
 
 - [Spouštění testování částí pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)
 
-- [Spuštění testů v procesu sestavení](/vsts/build-release/test/getting-started-with-continuous-testing)
+- [Spuštění testů v procesu sestavení](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
 - [Postupy: nastavení testovacího agenta pro spouštění testů komunikujících s plochou](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
@@ -451,7 +451,7 @@ Programové testy uživatelského rozhraní pomocí protokolů z programových t
 
 - [Rozšíření programových testů UI a záznamů akcí](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-Programové testy uživatelského rozhraní se často používají k automatizaci ručních testů. Další informace o ruční testy, naleznete v tématu [spuštění manuálních testů pomocí nástroje Microsoft Test Manager](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager). Další informace o automatických testů, naleznete v tématu [Test tools v sadě Visual Studio](../test/improve-code-quality.md).
+Programové testy uživatelského rozhraní se často používají k automatizaci ručních testů. Další informace o ruční testy, naleznete v tématu [spuštění manuálních testů pomocí nástroje Microsoft Test Manager](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts). Další informace o automatických testů, naleznete v tématu [Test tools v sadě Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Viz také:
 

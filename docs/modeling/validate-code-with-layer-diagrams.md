@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 85c7aad0ef5f9374c722a58ec35c001695e55013
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 22d51fff3dcfea81676e18c7b13d91bb5567dde8
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567191"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321122"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Ověřování kódu pomocí diagramů závislostí
 
@@ -218,7 +218,7 @@ V této verzi sady Visual Studio dojde k ověřování závislostí v reálném 
 
  Další informace o chybách ověřování najdete v části [pochopení a vyřešení chyb ověřování vrstev](#UnderstandingValidationErrors). Další informace o [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], naleznete v tématu:
 
--   [Sestavení a vydaná verze](/vsts/build-release/index)
+-   [Kanály Azure](/azure/devops/pipelines/index?view=vsts)
 
 -   [Použít výchozí šablonu pro proces sestavení](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
 

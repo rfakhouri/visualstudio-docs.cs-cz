@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e46b8af413f7f86592ed6c9362ca9f11e61c436f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 372cc01f1d7a0a21832ff099472e444d43d7a699
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380375"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320537"
 ---
 # <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Postupy: vytvoření vlastního editoru dat pro adaptér diagnostických dat
 
@@ -184,7 +184,7 @@ Kompletní příklad diagnostických dat adaptéru projektu, včetně vlastního
 
      K výsledkům testů je připojen datový soubor, který jste zadali v editoru.
 
- Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat při testování (VSTS)](/vsts/manual-test/collect-diagnostic-data) nebo [shromažďování diagnostických dat v manuálních testů (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+ Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat při testování (testovací plány Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts) nebo [shromažďování diagnostických dat v ruční testy () Plány testování v Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 ## <a name="see-also"></a>Viz také:
 

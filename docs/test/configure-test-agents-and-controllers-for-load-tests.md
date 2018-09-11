@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176466"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321109"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurace testovacích agentů a testovací kontrolery pro spouštění zátěžových testů
 
 Visual Studio může generovat simulované zatížení pro vaši aplikaci s využitím fyzických nebo virtuálních počítačů. Tyto počítače musíte nastavit jako jediný testovací kontrolér a jeden nebo více testovacích agentů. Testovací kontrolér a testovací agenty můžete použít k vygenerování větší zátěže, než jeden počítač můžete vygenerovat samostatně.
 
 > [!NOTE]
-> Cloudové zátěžové testování můžete použít také k poskytování virtuálních počítačů, které generují zatížení odpovídající mnoha uživatelům využívajícím web ve stejnou dobu. Další informace o cloudové zátěžové testování v [spuštění zátěžových testů pomocí VSTS](/vsts/load-test/get-started-simple-cloud-load-test).
+> Cloudové zátěžové testování můžete použít také k poskytování virtuálních počítačů, které generují zatížení odpovídající mnoha uživatelům využívajícím web ve stejnou dobu. Další informace o cloudové zátěžové testování v [spuštění zátěžových testů pomocí testovacích plánů Azure](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
 
 ## <a name="load-simulation-architecture"></a>Architektura simulace zátěže
 

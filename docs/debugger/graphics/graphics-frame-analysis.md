@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140d140b94446cf6e778caf33252d4c95bf2334b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512054"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280076"
 ---
 # <a name="graphics-frame-analysis"></a>Analýza grafických snímků
 Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijte k analýze a optimalizovat výkon vykreslování Direct3D hře nebo aplikaci.  
@@ -34,7 +34,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
   
  I když se analýza snímků je primárně určena pomoci dosáhnout vyšší výkon vykreslování, je stejně můžete dosáhnout lepší vizuální kvality pro danou výkonu cíl nebo snížení spotřeby energie GPU.  
   
- Pokud chcete zobrazit ukázku analýzy snímků přínosech pro vaši aplikaci, můžete se podívat [analýza grafických snímků Visual Studio](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) videa na webu Channel 9.  
+ Pokud chcete zobrazit ukázku analýzy snímků přínosech pro vaši aplikaci, můžete se podívat [analýza grafických snímků Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) videa na webu Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Pomocí analýza snímků  
  Než budete moct použít analýzu snímků, budete muset zachytit informace grafiky z aplikace za běhu, stejně jako když použijete některou z dalších analyzátoru grafiky sady nástrojů. Pak v okně dokumentu (.vsglog) protokol grafiky zvolte **analýza snímků** kartu.  
@@ -72,14 +72,14 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
 #### <a name="timeline"></a>Časová osa  
  Časová osa ukazuje základní informace o časování volání draw vzhledem k mezi sebou. Protože větší pruhy odpovídají delší dobu draw, můžete rychle najít v rámci nejdražší volání vykreslování. Po zobrazení zachyceného snímku obsahuje velký počet volání draw, nakreslit více kreslí volání jsou sloučeny do jednoho panelu jehož délka je součtem těchto volání.  
   
- ![Časová osa ukazuje draw&#45;volání náklady. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![Časová osa ukazuje draw&#45;volání náklady. ](media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  Přesuňte ukazatel na pruh zobrazíte která volání draw událost odpovídá panelu. Že vybereme pruh způsobí, že seznam událostí k synchronizaci na tuto událost.  
   
 #### <a name="table"></a>Tabulka  
  Všechna čísla pod na časové ose tabulce relativní výkon jednotlivých vykreslování variant pro každé volání draw s ohledem na vaše aplikace výchozí vykreslení. Každý sloupec zobrazuje hodnotu typu variant různých vykreslování a každý řádek představuje jinou draw volání, který je identifikován v sloupci nejvíce vlevo. Odsud můžete použít odkaz na událost v okně seznam událostí grafiky.  
   
- ![V souhrnu tabulce jsou uvedeny různé varianty. ] (media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
+ ![V souhrnu tabulce jsou uvedeny různé varianty. ](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
   
  Druhý sloupec v tabulce shrnutí nejvíce vlevo zobrazí čas vykreslování směrného plánu vaší aplikace – to znamená, dobu trvá, vaše aplikace výchozí vykreslení. k dokončení volání draw. Zbývající sloupce zobrazí relativní výkon jednotlivých vykreslování variant jako procento směrného plánu, takže je snazší zjistit, jestli se výkon. Procenta větší než 100 % trval déle, než standardních hodnot – to znamená výkonu byl vypnut – a menší než 100 % jeho obsahu trvalo méně času procenta – zvýšil výkon.  
   
@@ -88,7 +88,7 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
 #### <a name="hot-draw-calls"></a>"Horkou" volání kreslení  
  Aby pozornost k vykreslení volání, které využívají větší část celkové čas vykreslování nebo, který může být neobvykle pomalé z důvodů, které by se vyhnout, řádek, který obsahuje následující volání draw "horkými" je označeno šedou barvou red při vlastní směrný plán časování je více než jeden Směrodatná odchylka delší než střední načasování všechna volání příkazu pro vykreslení v rámci směrného plánu.  
   
- ![Toto volání DrawIndexed má horké a studené variant. ] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
+ ![Toto volání DrawIndexed má horké a studené variant. ](media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>Statistický význam  
  Analýza snímků vám pozornost k vykreslení varianty, které mají nejvyšší relevanci Určuje statistické význam jednotlivých vykreslování variant a zobrazí ta významné jako tučné písmo. Zobrazí ty, které zlepšují výkon zeleně a ty, které sníží výkon červeně. Zobrazí výsledky, které nejsou statisticky významná jako normální typu.  
@@ -103,12 +103,12 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Platformy, které nepodporují čítačů hardwaru  
  Většina platforem plně nepodporují čítačů hardwaru s GPU – patří mezi ně všechny procesory Intel, AMD a nVidia v současnosti nabízejí. Pokud neexistují žádné čítače hardwaru shromažďovat, se zobrazí pouze jedna tabulka podrobností a obsahuje střední absolutní časování všech variant.  
   
- ![Tabulka podrobností a některé varianty přehrávání. ] (media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
+ ![Tabulka podrobností a některé varianty přehrávání. ](media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>Platformy, které podporují čítačů hardwaru  
  Pro platformy, které podporují čítačů hardwaru s GPU – například nVidia T40 SOC a všechny Soc Qualcomm – několik tabulek podrobnosti jsou zobrazeny, jeden pro každý typ variant. Každý čítač dostupného hardwaru shromážděných pro každý typ variant vykreslování a zobrazit své vlastní tabulky Podrobnosti.  
   
- ![Pokud je podporovaná, zobrazí se čítačů hardwaru. ] (media/pix_frame.png "pix_frame")  
+ ![Pokud je podporovaná, zobrazí se čítačů hardwaru. ](media/pix_frame.png "pix_frame")  
   
  Informace z čítače hardwaru poskytuje velmi podrobné zobrazení chování specifické hardwarové platformy pro každé volání draw, která vám pomůže identifikovat příčiny problémových míst výkonu velmi přesně.  
   

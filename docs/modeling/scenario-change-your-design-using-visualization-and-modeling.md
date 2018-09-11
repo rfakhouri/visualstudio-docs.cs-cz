@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a4204394003f0b4ea6baf7691c9591d3a5b613
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42624394"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321161"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 
@@ -49,7 +49,7 @@ Tento názorný postup:
 
 Další informace o těchto nástrojích a scénářích, které podporují, najdete v tématu:
 
-- [Analýza a modelování vaší architektury](../modeling/analyze-and-model-your-architecture.md)
+- [Analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)
 
 - [Vizualizace kódu](../modeling/visualize-code.md)
 
@@ -216,9 +216,9 @@ Jak jejich práce postupuje, týmy aktualizují své pracovní položky tak, aby
 
 Další informace:
 
-- [Sledování práce pomocí Visual Studio Team Services nebo Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
+- [Informace o Agilních nástrojů a Agilního řízení projektů](/azure/devops/boards/backlogs/overview?view=vsts)
 
-- [Grafů, řídicích panelů a widgetů (VSTS)](/vsts/report/dashboards/overview?view=vsts)
+- [Grafů, řídicích panelů a widgetů (služby Azure DevOps)](/azure/devops/report/dashboards/overview?view=vsts)
 
 - [Vytvoření nevyřízených položek a úkolů pomocí aplikace Project](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
 
@@ -238,13 +238,13 @@ Pokud chcete mít jistotu, že kód odpovídá návrhu, konfigurují týmy svá 
 
 Další informace:
 
-- [Testování aplikace](/vsts/test/overview?view=vsts)
+- [Testování aplikace](/azure/devops/test/overview?view=vsts)
 
 - [Ověřování systému během vývoje](../modeling/validate-your-system-during-development.md)
 
 - [Správa verzí](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [Sestavení a vydaná verze](/vsts/build-release/index)
+- [Kanály Azure](/azure/devops/pipelines/index?view=vsts)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>Aktualizace systému pomocí vizualizace a modelování
 

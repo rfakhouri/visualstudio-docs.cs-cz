@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: zastavení změn kódu | Microsoft Docs'
+title: 'Postupy: zastavení změn kódu | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,27 +19,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1bf6b73c0df37d232c1ebd12ae00bbb4803ac13
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0445ad1cb92e2206a3e37e76a6f55c9a42ca1558
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481941"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282364"
 ---
 # <a name="how-to-stop-code-changes"></a>Postupy: Zastavení změn kódu
-Sice upravit a pokračovat v procesu zavádění změn kódu, můžete zastavit operaci.  
+Upravit a pokračovat je právě aplikování změn kódu, můžete zastavit operaci.  
   
 > [!CAUTION]
->  Zastavování změn kódu ve spravovaném kódu může vést k neočekávaným výsledkům. Zavádění změn do spravovaného kódu je obvykle rychlé proces, tak je málokdy potřeba zastavení změn kódu ve spravovaném kódu.  
+>  Zastavování změn kódu ve spravovaném kódu může vést k neočekávaným výsledkům. Provádění změn pro spravovaný kód je obvykle rychlé procesu, je málokdy potřeba zastavení změn kódu ve spravovaném kódu.  
   
-### <a name="to-stop-applying-code-changes"></a>Chcete-li zastavit zavádění změn kódu  
+### <a name="to-stop-applying-code-changes"></a>Zastavit provádění změn kódu  
   
 -   Zvolte **zastavit provádění změn kódu** z **ladění** nabídky.  
   
- Tato položka nabídky je viditelná jenom v případě, že jsou aplikovány změny kódu.  
+ Tato položka nabídky je viditelná pouze v případě, že se aplikují změny kódu.  
   
- Pokud zvolíte tuto možnost, žádná změn kódu, které není potvrzena.  
+ Pokud zvolíte tuto možnost, žádná ze změn kódu není potvrzena.  
   
 ## <a name="see-also"></a>Viz také  
  [Upravit a pokračovat](../debugger/edit-and-continue.md)   
- [Upravit a pokračovat, ladění, dialogové okno Možnosti](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Upravit a pokračovat, ladění, dialogové okno Možnosti](https://msdn.microsoft.com/library/bcew296c.aspx)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624134"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320836"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Rychlý start: Nejdřív se podívejte na nástroje pro profilaci
 
@@ -156,15 +156,15 @@ Tady je tabulka, která obsahuje seznam různých nástrojů, které nabízí Vi
 |Nástroje výkonu|Plocha Windows|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
 |[Využití paměti](../profiling/memory-usage.md)|Ano|Ano|Ano| 
-|[Využití procesoru](../profiling/cpu-usage.md)|Ano (viz poznámky)|Ano|Ano (viz poznámky)|
+|[Využití procesoru](../profiling/cpu-usage.md)|Ano|Ano|Ano|
 |[Využití GPU](../debugger/gpu-usage.md)|Ano|Ano|Ne| 
 |[Časová osa aplikace](../profiling/application-timeline.md)|Ano|Ano|Ne|
 |[Tipy pro výkon](../profiling/perftips.md)|Ano|Ano pro XAML, ne pro kód HTML|Ano|
 |[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ano|Ne|Ano|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET se sadou Visual Studio Enterprise pouze|.NET se sadou Visual Studio Enterprise pouze|.NET se sadou Visual Studio Enterprise pouze|
 |[Využití sítě](../profiling/network-usage.md)|Ne|Ano|Ne|
-|[Rychlost odezvy HTML UI](../profiling/html-ui-responsiveness.md)|Ne|Ano pro kód HTML, ne pro XAML|Ne| 
-|[Paměti jazyka JavaScript](../profiling/javascript-memory.md)|Ne|Ano pro kód HTML, ne pro XAML|Ne|
+|[Rychlost odezvy uživatelského rozhraní HTML](../profiling/html-ui-responsiveness.md)|Ne|Ano pro kód HTML, ne pro XAML|Ne| 
+|[Paměť JavaScriptu](../profiling/javascript-memory.md)|Ne|Ano pro kód HTML, ne pro XAML|Ne|
 
 ## <a name="see-also"></a>Viz také:  
  [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)

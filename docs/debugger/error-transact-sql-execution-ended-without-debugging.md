@@ -1,5 +1,5 @@
 ---
-title: 'Chyba: Spuštění Transact-SQL skončilo bez ladění. | Microsoft Docs'
+title: 'Chyba: Spuštění Transact-SQL skončilo bez ladění. | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,38 +17,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ccb86621295bb102738e5154f30bd45c6db358
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5e6ae81608ee476e3748fde6830dfaa11c119f7a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474008"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283129"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Chyba: Spuštění Transact-SQL skončilo bez ladění.
-K této chybě dojde, když se pokoušíte ladění jazyka Transact-SQL nebo SQLCLR postupu a ladicí program nepřijímá zprávy ladění z SQL serveru.  
+Tato chyba nastane, pokud se pokoušíte ladit příkazů jazyka Transact-SQL nebo proceduru SQLCLR a ladicí program nepřijímá zprávy ladění z SQL serveru.  
   
- Může to být kvůli problémům v síti nebo na problémy na serveru SQL Server, ale nejpravděpodobnější příčinou je problém oprávnění.  
+ Může to být kvůli potížím se sítí nebo na problémy na serveru SQL Server, ale nejpravděpodobnější příčinou je problém oprávnění.  
   
- Existují dva účty související se situací:  
+ Zahrnuté jsou dva účty:  
   
--   Účet aplikací je uživatelský účet, který [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] běží jako.  
+-   Uživatelský účet, který je účet aplikací [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] běží.  
   
--   Účet připojení je identita použitá k připojení k systému SQL Server. Nejedná se nutně stejné jako identity, která Visual Studio je spuštěna jako v případě, že připojení je pomocí ověřování SQL.  
+-   Účet připojení je identita používaná pro připojení k systému SQL Server. Toto není nutně stejné jako identita, která je spuštěná sada Visual Studio, jako kdyby je připojení pomocí ověřování SQL.  
   
- Ladění SQL vyžaduje, aby účet aplikací musí odpovídat účtu připojení nebo sysadmin.  
+ SQL ladění vyžaduje, aby účet aplikace musí odpovídat účtu připojení, nebo správce systému.  
   
- Pokud používáte přihlašovací jméno SQL jako sa, účet aplikace musí být instalační program systému SQL Server jako správce systému. Ve výchozím nastavení, správci systému SQL server počítač běží na jsou sysadmins systému SQL Server.  
+ Pokud používáte přihlašovací jméno SQL jako programu sa, účet aplikace musí být instalační program systému SQL Server jako správce systému. Ve výchozím nastavení, správci na počítači systému SQL server běží se na správce systému SQL Server.  
   
- Chcete-li tuto chybu můžete potřebovat k:  
+ Chcete-li opravit tuto chybu, potřebujete:  
   
--   Ověřte nastavení oprávnění. Další informace najdete v tématu [postupy: nastavení SQL serveru oprávnění pro ladění](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+-   Ověřte nastavení oprávnění. Další informace najdete v tématu [jak: nastavit SQL Server oprávnění pro ladění](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
--   Ujistěte se, že pokud ladění SQL správně nastavené.  
+-   Ujistěte se, že pokud ladění SQL zařídit správné nastavení.  
   
--   Podívejte se na správce sítě nebo databáze.  
+-   Poraďte se správcem vaší sítě nebo databáze.  
   
 ## <a name="see-also"></a>Viz také  
- [Nastavení SQL ladění](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
+ [Nastavení ladění SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))   
  [Postupy: nastavení oprávnění serveru SQL pro ladění](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)   
  [Vzdálené ladění](../debugger/remote-debugging.md)

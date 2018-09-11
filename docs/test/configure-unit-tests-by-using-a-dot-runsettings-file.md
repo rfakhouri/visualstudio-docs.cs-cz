@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e4c778e66a8fa9ca2008345675c6c3504786fcdf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901482"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280282"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek s použitím *s příponou .runsettings* souboru
 
@@ -24,7 +24,7 @@ Soubory parametrů běhu jsou volitelné. Pokud nevyžadují žádnou zvláštn�
 
 ## <a name="specify-a-run-settings-file"></a>Zadejte soubor parametrů běhu
 
-Soubory můžete použít ke konfiguraci testů, které jsou spouštěny z parametrů spuštění [příkazového řádku](vstest-console-options.md), v integrovaném vývojovém prostředí nebo v [sestavení pracovního postupu](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) pomocí Visual Studio Team Services (VSTS) nebo Team Foundation Server (TFS).
+Soubory můžete použít ke konfiguraci testů, které jsou spouštěny z parametrů spuštění [příkazového řádku](vstest-console-options.md), v integrovaném vývojovém prostředí nebo v [sestavení pracovního postupu](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) pomocí Azure testovací plány nebo Team Foundation Server (TFS).
 
 ### <a name="specify-a-run-settings-file-in-the-ide"></a>Zadejte soubor parametrů spuštění v integrovaném vývojovém prostředí
 
@@ -256,4 +256,4 @@ Tato nastavení jsou specifická pro testovací adaptér, který spouští testo
 ## <a name="see-also"></a>Viz také:
 
 - [Přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md)
-- [Testovací úloha Visual Studio (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Testovací úloha Visual Studia (testovací plány Azure)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

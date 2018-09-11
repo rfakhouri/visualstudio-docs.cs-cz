@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc42977953c70a9d17e1e26401a4d3c0576106e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4c06afd005d4d667d168429a922c32120987763
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175888"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278917"
 ---
 # <a name="code-analysis-policy-errors"></a>Chyby zásad Analýzy kódu
 Při splnění zásad analýzy kódu nejsou při vrácení se změnami dojít k následujícím chybám:
 
  **Nastavení analýzy kódu pro jeden nebo více projektů nejsou kompatibilní se zásadami analýzy kódu.**
 
- Požadavky na analýzu kódu vracet se změnami do správy verzí týmového projektu nebyl splněn pro jeden nebo více projektů kódu. Tuto chybu může způsobovat jeden nebo více z následujících podmínek:
+ Požadavky na analýzu kódu vracet se změnami do správy zdrojového kódu projektu nebyl splněn pro jeden nebo více projektů kódu. Tuto chybu může způsobovat jeden nebo více z následujících podmínek:
 
 1.  Analýza kódu není povolená na sestavení pro všechny projekty v řešení.
 
-2.  Místní pravidlo nastavené pro projekt v sadě Visual Studio obsahuje méně omezující **akce** nastavení než sady pravidel projektu týmu například pravidlo, které je nastavena na **akce**=**chyba**  na serveru má jeho **akce** nastavena na **upozornění** nebo **žádný** v pravidle nastavení, která běží v sadě Visual Studio).
+2.  Místní pravidlo nastavené pro projekt v sadě Visual Studio obsahuje méně omezující **akce** nastavení než sady pravidel projektu, například pravidlo, které je nastavena na **akce**=**chyba** na serveru má jeho **akce** nastavena na **upozornění** nebo **žádný** v pravidle nastavení, která běží v sadě Visual Studio).
 
-3.  Sada zadaná v sadě Visual Studio pravidel neobsahuje všechna pravidla, které jsou určené v pravidle nastavit podle zásad analýzy kódu vrácení se změnami pro týmový projekt.
+3.  Sada zadaná v sadě Visual Studio pravidel obsahuje všechna pravidla, které jsou určené v pravidle nastavit podle zásad analýzy kódu vrácení se změnami pro projekt.
 
  **Zásady analýzy kódu se nezdařilo. V projektu nejsou chyby {0} nebo sestavení není aktuální.**
 

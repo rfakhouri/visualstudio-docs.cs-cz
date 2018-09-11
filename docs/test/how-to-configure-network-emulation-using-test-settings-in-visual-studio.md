@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a4639e59b8c8847a4368a0f3841fa271a302e7ca
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2ce10d096ff646b462c7b0aff2cbcf33493aad0c
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380841"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320654"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Postupy: Konfigurace emulace sítě s využitím testovacích nastavení v sadě Visual Studio
 
@@ -85,4 +85,4 @@ Pro emulaci sítě musíte použít účet, který má oprávnění správce. Po
 ## <a name="see-also"></a>Viz také:
 
 - [Shromažďování diagnostických údajů pomocí nastavení testů](../test/collect-diagnostic-information-using-test-settings.md)
-- [Spouštění ručních testů (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [Spouštění ručních testů (Azure testovací plány)](/azure/devops/test/run-manual-tests?view=vsts)

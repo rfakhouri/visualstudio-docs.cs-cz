@@ -1,7 +1,7 @@
 ---
 title: Správa prostředí Pythonu a interprety
 description: Použijte okno prostředí Pythonu ke správě globální, virtuální a prostředí conda, instalace interpretů Pythonu a balíčky a přiřazení prostředí do projektů sady Visual Studio.
-ms.date: 07/23/2018
+ms.date: 09/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586573"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320823"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak vytvořit a spravovat prostředí Pythonu v sadě Visual Studio
 
@@ -38,7 +38,7 @@ Pokud chcete nainstalovat balíčky v prostředí, podívejte se na [balíčky k
 
 ### <a name="global-environments"></a>Globální prostředí
 
-Každé instalaci Pythonu (například, použije se Python 2.7, Python 3.6, Anaconda 4.4.0, atd., naleznete v tématu [interpretů Pythonu nainstalujte](installing-python-interpreters.md)) udržuje svůj vlastní globálního prostředí. Každé prostředí se skládá z konkrétní interpret Pythonu, jeho standardní knihovny a sadu předem nainstalované balíčky. Instalaci balíčku do globálního prostředí je k dispozici pro všechny projekty pomocí daného prostředí. Pokud se prostředí nachází v oblasti Ochrana systému souborů (v rámci *c:\program files*, například), pak instalace balíčků vyžaduje oprávnění správce.
+Každé instalaci Pythonu (například, použije se Python 2.7, Python 3.6, Python 3.7, Anaconda 4.4.0 atd., naleznete v tématu [interpretů Pythonu nainstalujte](installing-python-interpreters.md)) udržuje svůj vlastní globálního prostředí. Každé prostředí se skládá z konkrétní interpret Pythonu, jeho standardní knihovny a sadu předem nainstalované balíčky. Instalaci balíčku do globálního prostředí je k dispozici pro všechny projekty pomocí daného prostředí. Pokud se prostředí nachází v oblasti Ochrana systému souborů (v rámci *c:\program files*, například), pak instalace balíčků vyžaduje oprávnění správce.
 
 Globální prostředí jsou k dispozici pro všechny projekty v počítači. V sadě Visual Studio vyberte jednoho globálního prostředí jako výchozí, který se používá pro všechny projekty, pokud zvolíte jiný pro projekt. Další informace najdete v tématu [vyberte prostředí pro projekt](selecting-a-python-environment-for-a-project.md).
 
@@ -76,6 +76,9 @@ Pro Visual Studio 2017 verze 15.6 a starší, můžete použít prostředí cond
 Visual Studio 2017 verze 15.7 nebo novější prostředí conda automaticky zjistí a zobrazí je v **prostředí Pythonu** okna, jak je popsáno v další části.
 
 ## <a name="the-python-environments-window"></a>Okno prostředí Pythonu
+
+> [!Note]
+> Snímky obrazovky, uvedené v této části představují Visual Studio 15.8. Může se zobrazit mírně odlišné uživatelské rozhraní v závislosti na vaší verzi sady Visual Studio.
 
 V prostředí, která sadě Visual Studio ví o jsou zobrazeny v **prostředí Pythonu** okna. Otevřete okno, použijte jednu z následujících metod:
 

@@ -9,12 +9,12 @@ description: Naučte se, abyste mohli využívat výhody Azure Advisory Chat sou
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ed884066f53708f01bdedaa5b21f80d7e1e1da31
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 653611a2baa9211c74fa28ee90d2397c11c4bbe3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623985"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278891"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -45,7 +45,7 @@ Použití poradce Azure konverzace je jednoduché.
 | Visual Studio Test Professional (Standard)                         | Všechny                                              | Není k dispozici                                             |  Ne          |
 | Předplatné MSDN Platforms (Standard)                                          | Všechny                                              |Není k dispozici                                              |  Ne          |
 | Visual Studio Dev Essentials                                          | Není k dispozici                                              |Není k dispozici                                              |  Ne          |
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT* 
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
@@ -56,4 +56,4 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
--  Máte dotaz k Visual Studio IDE, Visual Studio Team Services nebo jiných produktů Visual Studio nebo služby?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+-  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).

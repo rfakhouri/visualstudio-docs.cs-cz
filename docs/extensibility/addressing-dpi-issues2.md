@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2187e0d930195a7e40464d431d51d788dd26a119
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638662"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281166"
 ---
 # <a name="address-dpi-issues"></a>DPI řešit problémy
 Rostoucí počet zařízení, který se dodává s "ve vysokém rozlišení" obrazovky. Tyto obrazovky mají obvykle více než 200 pixely na palec (ICP). K práci s aplikací na těchto počítačích potřebovat obsah vertikálně navyšovat kapacitu pro potřeby zobrazení obsahu na dálku normálního zobrazení zařízení. Primární cíl s vysokou hustotou zobrazí je v době 2014, mobilní, výpočetních zařízeních (tablety, přenosné počítače design a telefony).  
@@ -229,7 +229,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>Povolení podpory HDPI k WebOC  
  Ve výchozím nastavení WebOC ovládací prvky (například ovládací prvek WebBrowser v WPF nebo rozhraní rozhraní IWebBrowser2) nepovolí HDPI zjišťování a podporu. Výsledkem bude vloženému ovládacímu prvku s zobrazit obsah, který je příliš malá v zobrazení s vysokým rozlišením. Následující popisuje, jak povolit podporu vysokých hodnot DPI v instanci WebOC konkrétní web.  
   
- Implementovat rozhraní IDocHostUIHandler (na najdete v článku na webu MSDN [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) rozhraní):  
+ Implementovat rozhraní IDocHostUIHandler (na najdete v článku na webu MSDN [IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85)):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -308,7 +308,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- Implementujte rozhraní ICustomDoc (na najdete v článku na webu MSDN [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) rozhraní):  
+ Implementujte rozhraní ICustomDoc (na najdete v článku na webu MSDN [ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85)):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

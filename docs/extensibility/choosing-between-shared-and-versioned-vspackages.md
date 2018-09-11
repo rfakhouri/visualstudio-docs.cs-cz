@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d81aa731a12dedc1237d8af661c718930318f8cd
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 62033dc78e5595cefdf4f3ae39a95e68c64b9ee4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231492"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283220"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Výběr mezi sdíleným a verzovaným rozšířením VSPackages
 Různé verze sady Visual Studio můžou existovat společně na stejném počítači. Rozšíření VSPackages může podporovat všechny kombinace [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verze.  
@@ -38,7 +38,7 @@ Různé verze sady Visual Studio můžou existovat společně na stejném počí
   
     -   Program vašeho balíčku VSPackage umožní reagovat na verzi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve kterém je spuštěná. Pak v případě dotazů pro novější služby selžou, vašeho balíčku VSPackage můžou nabízet další služby, které jsou podporovány ve starších verzích [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
--   Zaregistrujte vašeho balíčku VSPackage odpovídajícím způsobem. Další informace najdete v tématu [registrace balíčku VSPackage](../extensibility/internals/vspackage-registration.md) a [registrace balíčku VSPackage spravované](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+-   Zaregistrujte vašeho balíčku VSPackage odpovídajícím způsobem. Další informace najdete v tématu [registrace balíčku VSPackage](../extensibility/internals/vspackage-registration.md) a [registrace balíčku VSPackage spravované](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
 -   Registrace přípon souborů odpovídajícím způsobem. Další informace najdete v tématu [registrace přípony názvů souborů pro nasazení vedle sebe](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   

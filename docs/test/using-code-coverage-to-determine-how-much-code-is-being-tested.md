@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a4164f9911ae9ca0eade08c1ef8c12fc6bc46300
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8dc6ff1e2813f1457e8a41328f759e8e27d9aa65
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381713"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279944"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Určení rozsahu testovaného kódu pomocí pokrytí kódu
 
@@ -249,9 +249,9 @@ Analýza pokrytí kódu je provedena pouze na sestavení, která jsou načtena a
 
 Je také možné získat větší kontrolu nad tím, které sestavení a prvky vybranými pro analýzu pokrytí kódu pomocí zápisu *s příponou .runsettings* souboru. Je tak například možné vyloučit určitá sestavení bez nutnosti přidávání atributů jejich třídám. Další informace najdete v tématu [přizpůsobení analýzy pokrytí kódu](../test/customizing-code-coverage-analysis.md).
 
-## <a name="analyze-code-coverage-in-the-build-service"></a>Analýza pokrytí kódu ve službě sestavení
+## <a name="analyze-code-coverage-in-azure-pipelines"></a>Analýza pokrytí kódu v kanálech Azure
 
-Při vrácení kódu se změnami jsou testy spuštěny na serveru sestavení společně se všemi dalšími testy ostatních členů týmu. (Pokud jste ještě nenastavili to, přečtěte si téma [spuštění testů v procesu sestavení](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Je užitečné analyzovat pokrytí kódu na službě sestavení, protože to poskytuje nejaktuálnější a nejsrozumitelnější obraz o pokrytí celého projektu. Bude také zahrnovat automatizované systémové testy a další kódované testy, které nejsou obvykle spouštěny na počítačích vývojářů.
+Při vrácení kódu se změnami jsou testy spuštěny na serveru sestavení společně se všemi dalšími testy ostatních členů týmu. (Pokud jste ještě nenastavili to, přečtěte si téma [spuštění testů v procesu sestavení](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Je užitečné analyzovat pokrytí kódu v kanálech Azure, protože to poskytuje nejaktuálnější a nejsrozumitelnější obraz o pokrytí celého projektu. Bude také zahrnovat automatizované systémové testy a další kódované testy, které nejsou obvykle spouštěny na počítačích vývojářů.
 
 1. V **Team Exploreru**, otevřete **sestavení**a poté přidejte nebo upravte definici sestavení.
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 251f175112a03bbe158c529b669b56378913f020
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 776ebca3b412b631634e45846ca15f00f31126f5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080425"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282449"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Postupy: načtení informací řetězce dotazu do online aplikace ClickOnce
 *Řetězec dotazu* je část adresy URL začínající otazník (?), který obsahuje libovolné informace ve formě *název = hodnota*. Předpokládejme, že máte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci s názvem `WindowsApp1` , která hostujete na `servername`, a vy chcete předávat hodnotu pro proměnnou `username` při spuštění aplikace. Vaše adresa URL může vypadat nějak takto:  
@@ -78,7 +78,7 @@ ms.locfileid: "39080425"
  Pokud vaše aplikace je online pouze, je vždy aktivovat prostřednictvím adresy URL. I v tomto případě však vaše aplikace musí být zapsané do fungovat správně, pokud jsou parametry řetězce dotazu chybí nebo je poškozený.  
   
 ## <a name="net-framework-security"></a>zabezpečení v rozhraní .NET Framework  
- Povolit předání parametrů adresy URL vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci pouze v případě, že máte v úmyslu čistí vstup všechny znaky škodlivý před jeho použitím. Řetězec vložených s uvozovky, lomítka nebo středníkem, třeba, můžou provádět operace s daty libovolného pokud použili nefiltrovaná v dotazu SQL na databázi. Další informace o zabezpečení řetězců dotazů, najdete v části [skript zneužije přehled](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+ Povolit předání parametrů adresy URL vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci pouze v případě, že máte v úmyslu čistí vstup všechny znaky škodlivý před jeho použitím. Řetězec vložených s uvozovky, lomítka nebo středníkem, třeba, můžou provádět operace s daty libovolného pokud použili nefiltrovaná v dotazu SQL na databázi. Další informace o zabezpečení řetězců dotazů, najdete v části [skript zneužije přehled](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 ## <a name="see-also"></a>Viz také:  
  [Zabezpečení aplikací ClickOnce](../deployment/securing-clickonce-applications.md)

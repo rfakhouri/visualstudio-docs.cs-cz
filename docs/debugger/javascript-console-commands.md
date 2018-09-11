@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: c14cce73da0c83fefc3461d61d16a062af365db7
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8642d59beb845bf2784d09133a590a4716897ed4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154369"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282206"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Příkazy konzoly jazyka JavaScript v sadě Visual Studio
   
- Příkazy můžete použít k odesílání zpráv a provádění dalších úloh v okně konzoly jazyka JavaScript sady Visual Studio. Příklady, které ukazují, jak pomocí tohoto okna najdete v tématu [rychlý start: ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md). Informace v tomto tématu se vztahují na aplikacích pro UWP a aplikací vytvořených pomocí Visual Studio Tools pro Apache Cordova. Informace o podporovaných konzole příkazy v aplikace Cordova, naleznete v tématu [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Informace o použití konzoly v nástrojích Internet Explorer F12 najdete v tématu [v tomto tématu](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Příkazy můžete použít k odesílání zpráv a provádění dalších úloh v okně konzoly jazyka JavaScript sady Visual Studio. Příklady, které ukazují, jak pomocí tohoto okna najdete v tématu [rychlý start: ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md). Informace v tomto tématu se vztahují na aplikacích pro UWP a aplikací vytvořených pomocí Visual Studio Tools pro Apache Cordova. Informace o podporovaných konzole příkazy v aplikace Cordova, naleznete v tématu [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Informace o použití konzoly v nástrojích Internet Explorer F12 najdete v tématu [v tomto tématu](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
   
  Pokud je zavření okna konzoly jazyka JavaScript, lze jej otevřít při ladění v sadě Visual Studio výběrem **ladění** > **Windows** > **jazyka JavaScript Konzola**.  
   

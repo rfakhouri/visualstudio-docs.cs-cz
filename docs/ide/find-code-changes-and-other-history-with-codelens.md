@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d3a6ea380fdbfb8f6a41fce21d0ad283808d85
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 86c84314cf025652dac2670c19763ae069ea6865
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054475"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279760"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Nalezení změn kódu a další historie pomocí CodeLensu
 
@@ -64,7 +64,7 @@ Potřebuješ:
 
 - Visual Studio Enterprise nebo Professional sady Visual Studio
 
-- Team Foundation Server 2013 nebo novější, Visual Studio Team Services nebo Git
+- Team Foundation Server 2013 nebo novější, Azure DevOps Services nebo Git
 
 - [Skype pro firmy](/skypeforbusiness/), nebo Lync 2010 nebo novější, ke kontaktování týmem z editoru kódu
 
@@ -80,7 +80,7 @@ Pro soubor typy jiné než *.cs* nebo *.vb*, získání podrobností funkce Code
 
 Kód indikátory na úrovni prvku vám umožní vidět, kdo ho změnil kód a jaké změny byly provedeny. Indikátory na úrovni prvku kódu jsou k dispozici pro kód jazyka C# a Visual Basic.
 
-Je to, co se zobrazí při použití Team Foundation verze ovládacího prvku (TFVC) v Team Foundation Server nebo Visual Studio Team Services:
+Je to, co se zobrazí při použití Team Foundation verze ovládacího prvku (TFVC) v Team Foundation Server nebo ve službách Azure DevOps: 
 
 ![CodeLens: Získat historii změn pro svůj kód v TFVC](../ide/media/codelens-code-changes.png)
 
@@ -263,7 +263,7 @@ Indikátory CodeLens na úrovni souborů zapněte a vypnout pomocí ikony šipky
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Otázka: Proč nevidím podrobnosti pracovní položky pro potvrzení změn?
 
-**Odpověď:** příčinou může být funkce CodeLens nelze najít pracovní položky v TFS. Zkontrolujte, že jste připojeni k týmovému projektu, který má ty pracovní položky, a zda máte oprávnění k zobrazení ty pracovní položky. Podrobnosti o pracovní položce nemusí také nezobrazovat Pokud popis potvrzení obsahuje nesprávné informace o ID pracovních položek v sadě TFS.
+**Odpověď:** příčinou může být funkce CodeLens nelze najít pracovní položky v TFS. Zkontrolujte, že jste připojeni k projektu, který má ty pracovní položky, a zda máte oprávnění k zobrazení ty pracovní položky. Podrobnosti o pracovní položce nemusí také nezobrazovat Pokud popis potvrzení obsahuje nesprávné informace o ID pracovních položek v sadě TFS.
 
 ### <a name="q-why-dont-i-see-the-skype-indicators"></a>Otázka: Proč nevidím indikátory Skype?
 
@@ -295,7 +295,7 @@ Použití klávesnice:
 
 4. Stisknutím klávesy **kartu** přejdete **zobrazit nastavení pro** seznamu a potom stiskněte klávesu **šipka dolů** vyberte **CodeLens**.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Otázka: Lze přesunout pohotové zobrazení funkce CodeLens?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Dotaz: lze přesunout funkce CodeLens `head`zobrazení s nahoru?
 
 **O:** Ano, zvolte ![Dock ikonu](../ide/media/codelensdockwindow.png) k dokování CodeLens jako okna.
 

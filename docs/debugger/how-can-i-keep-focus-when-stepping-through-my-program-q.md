@@ -1,5 +1,5 @@
 ---
-title: Jak mohu zachovat fokus při procházení programem? | Microsoft Docs
+title: Jak mohu zachovat fokus při procházení programem? | Dokumenty Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -22,21 +22,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2729f3d3cc0cd8a2411dcc9d999ba26100ba5aa2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 509e169c7ede0d96882fa2c97eaf7b2c6eb78afb
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473469"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280906"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>Jak mohu zachovat fokus při procházení programem?
 ## <a name="description"></a>Popis  
- Tento program má problém okna aktivace. Krokování programu s ladicím programem naruší to Moje schopnost problém reprodukovat, protože Moje program udržuje ztráty fokus. Existuje způsob, abyste tomu předešli?  
+ Program má problém Aktivace okna. Krokování pomocí programu v ladicím programu dochází ke kolizím s Moje schopnost reprodukujte problém, protože program spouštím ztrácí fokus. Existuje způsob, abyste tomu předešli?  
   
 ## <a name="solution"></a>Řešení  
- Pokud máte druhý počítač, použijte vzdálené ladění. Váš program na vzdáleném počítači může pracovat při spuštění ladicího programu na hostiteli. Další informace najdete v tématu [postup: Vyberte vzdálený počítač](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+ Pokud máte druhý počítač, použijte vzdálené ladění. Při spuštění ladicího programu na hostiteli můžete provozovat programu na vzdáleném počítači. Další informace najdete v tématu [postupy: výběr vzdáleného počítače](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100)).  
   
 ## <a name="see-also"></a>Viz také  
- [Nativní kód nejčastější dotazy k ladění](../debugger/debugging-native-code-faqs.md)   
+ [Ladění nativního kódu nejčastější dotazy](../debugger/debugging-native-code-faqs.md)   
  [Připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Ladění nativního kódu](../debugger/debugging-native-code.md)
