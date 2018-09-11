@@ -5,12 +5,12 @@ title: Dokumentace k sadě Visual Studio | Dokumentace Microsoftu
 description: Další informace o použití sady Visual Studio 2017 na vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 6baee6be451ba1997f44e24d5a1690f7b451c3a2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: HT
+ms.openlocfilehash: ee2f52f135412fb0847d3922d243383781220acb
+ms.sourcegitcommit: e942550df44f733a1349b85f0059318a28a1ac27
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280971"
+ms.locfileid: "44339668"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -137,7 +137,7 @@ ms.locfileid: "44280971"
                                 </a>
                             </li>
                             <li>
-                                <a href="/subscriptions/" title="Předplatná sady Visual Studio">
+                                <a href="/visualstudio/subscriptions/" title="Předplatná sady Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
