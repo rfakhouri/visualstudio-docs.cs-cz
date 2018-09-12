@@ -17,7 +17,7 @@
 ## Využití výhod pro předplatitele
 ### Nástroje
 #### [Integrované vývojové prostředí sady Visual Studio](vs-ide-benefit.md)
-#### [Visual Studio Team Services](vs-vsts.md)
+#### [Služby Azure DevOps](vs-azure-devops.md)
 #### [Kredit Azure](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft](vs-parasoft.md)
