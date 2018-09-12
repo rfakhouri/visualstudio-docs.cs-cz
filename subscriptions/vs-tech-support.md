@@ -9,12 +9,12 @@ description: Zjistěte, jak aktivovat výhody technické podpory součástí va�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624204"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701764"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivovat výhody technické podpory v předplatných sady Visual Studio
 
@@ -32,12 +32,13 @@ ms.locfileid: "42624204"
 3.  K dokončení procesu budete muset poskytnout zástupce pomocí:
     - E-mailovou adresu, kterou používáte k přihlášení k vašemu předplatnému
     - ID předplatného, který se nachází na [předplatná](https://my.visualstudio.com/subscriptions) kartu.
+
     > [!div class="mx-imgBorder"]
     > ![Výhody technické podpory najít ID předplatného](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
-    > [!NOTE]
-    > K aktivaci účtu podpory v jiném jazyce než angličtině, vyberte svou zemi z [tento seznam](https://support.microsoft.com/help/14084/activate-support-contract).   
+> [!NOTE]
+> K aktivaci účtu podpory v jiném jazyce než angličtině, vyberte svou zemi z [tento seznam](https://support.microsoft.com/help/14084/activate-support-contract).   
 
 
 ## <a name="how-to-submit-an-incident"></a>Jak odeslat incident

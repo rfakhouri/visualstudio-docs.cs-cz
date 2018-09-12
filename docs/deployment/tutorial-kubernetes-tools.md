@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138940"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701706"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Začínáme s Kubernetes nástroje sady Visual Studio
 
@@ -38,7 +38,7 @@ Chcete-li využívají tato nová funkce, budete potřebovat:
 
     1.  Helm CLI nainstalované na pracovní stanici vývoje. Další informace najdete v části [instalace Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
-    1.  Příkaz Helm nakonfigurované u vašeho clusteru AKS. Další informace o tom, jak to provést, najdete v části [konfigurace Helm](/azure/aks/kubernetes-helm#configure-helm).
+    1.  Konfigurovat u vašeho clusteru AKS pomocí Helm `helm init` příkazu. Další informace o tom, jak to provést, najdete v části [konfigurace Helm](/azure/aks/kubernetes-helm#configure-helm).
 
 ## <a name="create-a-new-kubernetes-project"></a>Vytvořte nový projekt Kubernetes
 
@@ -82,7 +82,7 @@ Všechny tyto soubory na místě můžete použít integrovaném vývojovém pro
 
 Jakmile budete mít kód fungovat způsobem, který chcete, můžete publikovat přímo ze sady Visual Studio do clusteru AKS.
 
-Chcete-li to provést, musíte nejprve nastavit profil publikování, který publikuje svou image kontejneru do služby Azure Container Registry (ACR). Potom AKS o přijetí změn svou image kontejneru ze služby ACR a nasaďte je do clusteru.
+Chcete-li to provést, musíte nejprve zkontrolujte, že všechno, co jste nainstalovali jak je popsáno v [požadavky](#prerequisities) v rámci části položky pro publikování do AKS a projít všechny kroky příkazového řádku zadané v odkazech. Potom nastavte profil publikování, který publikuje svou image kontejneru do služby Azure Container Registry (ACR). Potom AKS o přijetí změn svou image kontejneru ze služby ACR a nasaďte je do clusteru.
 
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na váš *projektu* a zvolte **publikovat**.
 

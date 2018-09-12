@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 09/06/2018
+ms.date: 09/11/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 85373579dfc4b626dcdf35b8ac2a29f654da4d4b
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 526c681dcc3bd6be0542ae01d40bc47598296d5d
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996087"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701777"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 čísla sestavení a data vydání
 
@@ -25,6 +25,8 @@ Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual S
 
 | **Verze**| **Kanál** | **Datum vydání** | **Verze buildu** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.0 ve verzi preview 2 | Náhled | 11. září 2018 | 15.9.28107.0 |
+| 15.8.4 | Vydaná verze | 11. září 2018 | 15.8.28010.2026 |
 | 15.8.3 | Vydaná verze | 6. září 2018 | 15.8.28010.2019 |
 | 15.8.2 | Vydaná verze | 28. srpna 2018 | 15.8.28010.2016 |
 | 15.0.18 | Vydaná verze | 28. srpna 2018 | 15.0.26228.52 |
