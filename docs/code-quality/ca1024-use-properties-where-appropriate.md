@@ -14,16 +14,20 @@ ms.assetid: 3a04f765-af7c-4872-87ad-9cc29e8e657f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f27aebba0bd8a126928e01f13c65bec3381742
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5677604505bf21b8f14a2f3ef6ca1341fc9ff191
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899069"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551672"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Použijte vlastnosti, kde je to vhodné
+
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
@@ -32,41 +36,46 @@ ms.locfileid: "31899069"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Metoda veřejných nebo chráněného má název, který začíná `Get`, nepřijímá žádné parametry a vrátí hodnotu, která není pole.
+
+Veřejná nebo chráněná metoda má název, který začíná `Get`, nepřijímá žádné parametry a vrátí hodnotu, která není pole.
 
 ## <a name="rule-description"></a>Popis pravidla
- Ve většině případů data představují vlastnosti a metody provádět akce. Vlastnosti jsou dostupné jako pole, které usnadňuje jejich použití. Metoda je vhodným kandidátem k vlastnost, pokud se nachází jedna z těchto podmínek:
 
--   Nezadávaly žádné argumenty a vrátí informace o stavu objektu.
+Ve většině případů vlastnosti představují data a provedení metody akce. Vlastnosti jsou dostupné jako pole, které usnadňují jejich použití. Metoda je vhodným kandidátem pro stala vlastností, pokud se nachází jedna z těchto podmínek:
 
--   Přijme jeden argument nastavit některé části stav objektu.
+- Nepřijímá žádné argumenty a vrátí informace o stavu objektu.
 
- Vlastnosti měl chovat, jako by šlo pole; Pokud metoda nelze, neměli byste ji měnit vlastnosti. Metody jsou lepší, než vlastnosti v následujících situacích:
+- Přijímá jeden argument nastavit některá část stav objektu.
 
--   Metoda provádí časově náročná operace. Metoda je perceivably nižší než čas, který je potřeba nastavit nebo získat hodnotu pole.
+Vlastnosti by měla chovat, jako by šlo polí. Pokud nelze metodu by neměla změnit na vlastnost. Metody jsou lepší než vlastnosti v následujících situacích:
 
--   Metoda provede převod. Přístup k poli nevrací převedený verzi data, která ukládá.
+- Metoda provádí časově náročná operace. Metoda je perceivably pomalejší než čas, který je potřeba nastavit nebo získat hodnotu pole.
 
--   Metoda Get má pozorovatelné vedlejším účinkem. Načítání hodnoty pole nevytváří žádné vedlejší účinky.
+- Metoda provádí převod. Přístup k poli nevrací převedená verze tohoto data, která ukládá.
 
--   Je důležité pořadí zpracování. Nastavení hodnoty pole není závislý na výskyt dalších operací.
+- Metoda Get má pozorovatelný vedlejší efekt. Načítání hodnoty pole nevytváří žádné vedlejší účinky.
 
--   Volání metody dvakrát za sebou vytvoří odlišné výsledky.
+- Je důležité pořadí provádění. Nastaví hodnotu pole není závislý na výskyt jiné operace.
 
--   Metoda je statická, ale vrátí objekt, který může změnit volající. Načítání hodnoty pole neumožňuje volajícího, aby změnit data, která je uložená podle pole.
+- Volání metody dvakrát za sebou vytvoří jiné výsledky.
 
--   Metoda vrátí pole.
+- Metoda je statická, ale vrátí objekt, který můžete změnit tak, volající. Načítání hodnoty pole neumožňuje volajícího, aby změna dat uložených v poli.
+
+- Metoda vrátí pole.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení toto pravidlo, změňte metodu na vlastnosti.
+
+Chcete-li opravit porušení tohoto pravidla, změňte metodu na vlastnost.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačíte upozornění na toto pravidlo, pokud metoda splňuje alespoň jedním z výše uvedených kritérií.
 
-## <a name="controlling-property-expansion-in-the-debugger"></a>Řízení vlastnost rozšíření v ladicím programu
- Jeden z důvodu programátory nepoužívejte vlastnost je vzhledem k tomu, že nechtějí ladicího programu auto-rozbalte ho. Například vlastnost mohou zahrnovat přidělování velkého objektu nebo volání P/Invoke, ale nemusí mít ve skutečnosti žádné pozorovatelné vedlejší účinky.
+Potlačit upozornění tohoto pravidla, pokud metoda splňuje splnit aspoň jednu z výše uvedených kritérií.
 
- Ladicí program můžete zabránit samorozbalovací vlastnosti použitím <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Následující příklad ukazuje tento atribut bylo použito pro vlastnost instance.
+## <a name="controlling-property-expansion-in-the-debugger"></a>Řízení vlastnosti rozšíření v ladicím programu
+
+Jedním z důvodů, programátoři Vyhněte se použití vlastnosti je vzhledem k tomu, že nechtějí ladicí program automaticky-rozbalte ho. Například vlastnost může zahrnovat přidělování velkého objektu nebo volání P/Invoke, ale nemusí mít ve skutečnosti všechny pozorovatelný vedlejší účinky.
+
+Ladicí program může zabránit automatické rozšiřování vlastnosti použitím <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Následující příklad ukazuje tento atribut použity pro vlastnost instance.
 
 ```vb
 Imports System
@@ -92,8 +101,7 @@ End Namespace
 ```
 
 ```csharp
-
-      using System;
+using System;
 using System.Diagnostics;
 
 namespace Microsoft.Samples
@@ -109,13 +117,14 @@ namespace Microsoft.Samples
             {
                 // Allocate large object
                 // [...]
-
+            }
         }
     }
 }
 ```
 
 ## <a name="example"></a>Příklad
- Následující příklad obsahuje několik metod, které mají být převedeny na vlastnosti a několik, který má není, protože není chovají jako pole.
 
- [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]
+Následující příklad obsahuje několik metod, které mají být převedeny do vlastností a několik, který by nebyl, protože není chovají jako pole.
+
+[!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

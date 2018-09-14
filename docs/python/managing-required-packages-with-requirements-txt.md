@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de337856299d8aa164f120a6bff78495925e4ac1
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468242"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548787"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Správa požadované balíčky pomocí souboru requirements.txt
 
-Pokud jste už sdílení projektu s ostatními, systém sestavení, nebo kteří plánují [její publikování do Microsoft Azure](python-azure-cloud-service-project-template.md), je třeba zadat externí balíčky, které projekt vyžaduje. Doporučuje se použít [soubor requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), který obsahuje seznam příkazů pro pip, který instaluje požadované verze závislé balíčky.
+Pokud jste už sdílení projektu s ostatními, systém sestavení, nebo kteří plánují [její publikování do Microsoft Azure](python-azure-cloud-service-project-template.md), je třeba zadat externí balíčky, které projekt vyžaduje. Doporučuje se použít [soubor requirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), který obsahuje seznam příkazů pro pip, který instaluje požadované verze závislé balíčky.
 
 Technicky vzato některý název souboru může sloužit ke sledování požadavků (s použitím `-r <full path to file>` při instalaci balíčku), ale Visual Studio poskytuje specifické podpoře pro *souboru requirements.txt*:
 
@@ -38,7 +38,7 @@ Technicky vzato některý název souboru může sloužit ke sledování požadav
 
 Protože *souboru requirements.txt* soubory jsou určeny k zablokování požadavky prostředí, všechny nainstalované balíčky jsou vytvářeny s použitím přesné verze. Pomocí přesné verze zajistí, že můžete snadno reprodukovat svoje prostředí na jiném počítači. Balíčky jsou zahrnuty i v případě, že byly nainstalovány s rozsah verzí, jako závislost jinému balíčku, nebo instalační program než pip.
 
-Pokud balíček nejde nainstalovat pomocí pip a zobrazí se v *souboru requirements.txt* celou instalaci souboru, se nezdaří. V takovém případě ruční úpravy souboru a vylučte tento balíček nebo pomocí [pip na možnosti](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) k odkazování na instalovatelnou verzi balíčku. Například můžete chtít použít [ `pip wheel` ](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) závislost zkompilujete a přidat `--find-links <path>` umožňuje vaší *souboru requirements.txt*:
+Pokud balíček nejde nainstalovat pomocí pip a zobrazí se v *souboru requirements.txt* celou instalaci souboru, se nezdaří. V takovém případě ruční úpravy souboru a vylučte tento balíček nebo pomocí [pip na možnosti](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) k odkazování na instalovatelnou verzi balíčku. Například můžete chtít použít [ `pip wheel` ](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) závislost zkompilujete a přidat `--find-links <path>` umožňuje vaší *souboru requirements.txt*:
 
 ```output
 C:\Project>pip wheel azure

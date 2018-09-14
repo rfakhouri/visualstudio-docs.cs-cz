@@ -14,16 +14,21 @@ ms.assetid: ae499879-97f6-434e-a61d-1fedd231d2fb
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3864cbef5a5ba6c013d05112af46d641aa3c1634
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 96b769aa8cc009f122d4cef4ca8d270c6b3fced5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31895975"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547695"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Indexery by neměly být multidimenzionální
+
 |||
 |-|-|
 |TypeName|IndexersShouldNotBeMultidimensional|
@@ -32,19 +37,19 @@ ms.locfileid: "31895975"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Typ veřejné nebo chráněného obsahuje veřejný nebo chráněného indexer, který používá více než jeden index.
+ Veřejný nebo chráněný typ obsahuje veřejná nebo chráněná indexer, který používá více než jeden index.
 
 ## <a name="rule-description"></a>Popis pravidla
- Indexery, který je indexované vlastnosti, měli používat jeden index. Multidimenzionální indexery může výrazně snížit použitelnost knihovny. Pokud návrh vyžaduje více indexů, znovu, jestli typ představuje logické datové úložiště. Pokud ne, použijte metodu.
+ Indexery, tj. indexované vlastnosti, by měly používat jediný index. Vícerozměrné indexery mohou výrazně snížit použitelnost knihovny. Pokud návrhu vyžaduje více indexů, zvažte, zda typ představuje logické datové úložiště. Pokud ne, použijte metodu.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo, změnit návrh používat jedinou celé číslo nebo řetězec index nebo používat metodu místo indexeru.
+ Chcete-li opravit porušení tohoto pravidla, změňte návrhu a použít jedinou celé číslo nebo řetězec indexu nebo použijte metodu místo indexeru.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačíte upozornění na toto pravidlo až po pečlivě vzhledem k tomu potřeba nestandardní indexeru.
+ Potlačit upozornění tohoto pravidla až po pečlivého zvážení potřebu nestandardní indexeru.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typu, `DayOfWeek03`, s vícerozměrných indexeru, která porušuje pravidlo. Indexer se dají považovat za typ převodu a proto je více správně viditelné jako metodu. Typ je nově navržený tak v `RedesignedDayOfWeek03` vyhovět pravidlo.
+ Následující příklad ukazuje typ, `DayOfWeek03`, pomocí multidimenzionální indexeru, který porušuje pravidla. Indexer se dají považovat za typ převodu a proto je více správně vystavena jako metoda. Typ je upraveno `RedesignedDayOfWeek03` splňovat pravidla.
 
  [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
  [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afcfe25a9ff4541331ddfc35ebe86bbf884ef02e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3af665f3a0f59cb1dd8c8c8ee581fc37f9da7e78
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918514"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550918"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: Členy nesmějí mít konfliktní poznámky transparentnosti
 |||
@@ -33,18 +33,18 @@ ms.locfileid: "31918514"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Toto pravidlo aktivuje se v případě, že je označené jako člena typu <xref:System.Security> zabezpečení atributu, který má jinou průhlednost než hodnota atributu zabezpečení kontejneru člena.
+ Toto pravidlo je vyvoláno, když typ člena je označena <xref:System.Security> atribut zabezpečení, který má jiný transparentnost než hodnota atributu zabezpečení kontejneru člena.
 
 ## <a name="rule-description"></a>Popis pravidla
- Atributy transparentnosti jsou použity z prvků kódu většího rozsahu na prvky menšího rozsahu. Atributy transparentnosti prvků kódu, které mají větší rozsah, mají přednost před atributy transparentnosti prvků kódu, které jsou obsaženy v prvním prvku. Například třídu, která je označena <xref:System.Security.SecurityCriticalAttribute> atributu nesmí obsahovat metodu, která je označena <xref:System.Security.SecuritySafeCriticalAttribute> atribut.
+ Atributy transparentnosti jsou použity z prvků kódu většího rozsahu na prvky menšího rozsahu. Atributy transparentnosti prvků kódu, které mají větší rozsah, mají přednost před atributy transparentnosti prvků kódu, které jsou obsaženy v prvním prvku. Například třída, která je označena <xref:System.Security.SecurityCriticalAttribute> atributu nesmí obsahovat metodu, která je označena <xref:System.Security.SecuritySafeCriticalAttribute> atribut.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li odstranit tento porušení, odeberte atribut zabezpečení z elementu kód, který má nižší rozsah nebo změnit jeho atribut, aby byla stejná jako obsahující element kódu.
+ Pokud chcete vyřešit toto porušení, odeberte atribut zabezpečení z elementu kódu, který má menší rozsah nebo změnit jeho atribut být stejné jako nadřazeného elementu kódu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Není potlačení upozornění od tohoto pravidla.
+ Nepotlačujte upozornění tohoto pravidla.
 
 ## <a name="example"></a>Příklad
- V následujícím příkladu je označené metodu <xref:System.Security.SecuritySafeCriticalAttribute> atribut a je členem skupiny třídu, která je označena <xref:System.Security.SecurityCriticalAttribute> atribut. Atribut bezpečné zabezpečení byste měli odebrat.
+ V následujícím příkladu je označené metodu <xref:System.Security.SecuritySafeCriticalAttribute> atribut a je členem třídy, která je označena <xref:System.Security.SecurityCriticalAttribute> atribut. Bezpečné atribut zabezpečení byste měli odebrat.
 
  [!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../code-quality/codesnippet/CSharp/ca2136-members-should-not-have-conflicting-transparency-annotations_1.cs)]

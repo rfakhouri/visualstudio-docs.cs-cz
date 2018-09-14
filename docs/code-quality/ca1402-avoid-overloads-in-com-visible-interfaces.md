@@ -14,16 +14,20 @@ ms.assetid: 2724c1f9-d5d3-4704-b124-21c4d398e5df
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ec1e0f13d3d26973dc2dc46c6a41a2dc962c91bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e4360ff6c6355827a77d165c9a4975ffa8bdc89a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897838"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549008"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Vyhněte se přetížení ve viditelných rozhraních modelu COM
+
 |||
 |-|-|
 |TypeName|AvoidOverloadsInComVisibleInterfaces|
@@ -32,35 +36,35 @@ ms.locfileid: "31897838"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Modelu COM (Component Object) viditelné rozhraní deklaruje přetížený metody.
+ Modelu COM (Component Object) viditelné rozhraní deklaruje přetížení metod.
 
 ## <a name="rule-description"></a>Popis pravidla
- Když jsou přetížené metody vystaveny klientům modulu COM, zachová svůj název pouze první přetížení metody. Následné přetížení jsou jedinečně přejmenovat připojením k názvu znak podtržítkem '_' a celé číslo, které odpovídá pracovního prohlášení o přetížení. Zvažte například následující metody.
+ Když jsou přetížené metody vystaveny klientům modulu COM, zachová svůj název pouze první přetížení metody. Následná přetížení jsou jednoznačně přejmenována přidáním názvu podtržítko znak "_" a celého čísla odpovídajícího pořadí deklarace tohoto přetížení. Představte si třeba následující metody:
 
-```
+```csharp
 void SomeMethod(int valueOne);
 void SomeMethod(int valueOne, int valueTwo, int valueThree);
 void SomeMethod(int valueOne, int valueTwo);
 ```
 
- Tyto metody jsou viditelné na COM klientů jako následující.
+Tyto metody jsou zveřejněné klientům modelu COM jako následující.
 
-```
+```csharp
 void SomeMethod(int valueOne);
 void SomeMethod_2(int valueOne, int valueTwo, int valueThree);
 void SomeMethod_3(int valueOne, int valueTwo);
 ```
 
- Klienti COM 6 Visual Basic nelze implementovat, metody rozhraní pomocí podtržítkem v názvu.
+Klienty modulu COM jazyka Visual Basic 6 nemohou implementovat metody rozhraní s použitím v názvu podtržítko.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení toto pravidlo, přejmenujte přetížené metody tak, aby byly jedinečné názvy. Můžete taky provést rozhraní neviditelná COM změnou usnadnění přístupu k `internal` (`Friend` v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) nebo použitím <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> atribut nastaven na `false`.
+ Chcete-li opravit porušení tohoto pravidla, přejmenujte přetížené metody tak, aby byly jedinečné názvy. Alternativně skrytí rozhraní modelu COM změnou usnadnění přístupu ke `internal` (`Friend` v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) nebo použitím <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> atribut nastaven na `false`.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje rozhraní, která porušuje pravidlo a rozhraní, které splňuje pravidlo.
+ Následující příklad ukazuje rozhraní, který porušuje pravidla a rozhraní, které splňuje pravidlo.
 
  [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/VisualBasic/ca1402-avoid-overloads-in-com-visible-interfaces_1.vb)]
  [!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]
@@ -72,5 +76,7 @@ void SomeMethod_3(int valueOne, int valueTwo);
 
  [CA1017: Označte sestavení pomocí atributu ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-## <a name="see-also"></a>Viz také
- [Spolupráce pomocí nespravovaného kódu](/dotnet/framework/interop/index) [Long – datový typ](/dotnet/visual-basic/language-reference/data-types/long-data-type)
+## <a name="see-also"></a>Viz také:
+
+- [Spolupráce s nespravovaným kódem](/dotnet/framework/interop/index)
+- [Datový typ Long](/dotnet/visual-basic/language-reference/data-types/long-data-type)

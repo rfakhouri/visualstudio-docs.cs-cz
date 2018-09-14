@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 883e5d842346a0821b54b2b4eacad3cbc92028b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5730acf02cf12dce6d98e7cbd1b6f38f7ece05e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917683"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550567"
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: Inicializujte vloženou hodnotu statických polí
 |||
@@ -29,18 +29,18 @@ ms.locfileid: "31917683"
 |TypeName|InitializeValueTypeStaticFieldsInline|
 |CheckId|CA2207|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Bez ukončování řádků|
+|Narušující změna|Pevné|
 
 ## <a name="cause"></a>příčina
- Typ hodnoty deklaruje explicitní statického konstruktoru.
+ Hodnotový typ deklaruje explicitní statický konstruktor.
 
 ## <a name="rule-description"></a>Popis pravidla
- Pokud je deklarovaný typ hodnoty, je zde nevyskytlo výchozí inicializace kde všechna pole typu hodnoty nastaveny na nulu a všechna pole typu odkazu jsou nastaveny na `null` (`Nothing` v jazyce Visual Basic). Explicitní statického konstruktoru pouze záruku, že se na spuštění před konstruktoru instance nebo se označuje jako statický člen daného typu. Proto pokud typ je vytvořen bez volání konstruktoru instance, statického konstruktoru není zaručena ke spuštění.
+ Při deklaraci value-type. při inicializaci výchozí, pokud všechna pole typu hodnoty jsou nastavené na hodnotu nula a všechna pole typu odkazu jsou nastaveny na `null` (`Nothing` v jazyce Visual Basic). Explicitní statický konstruktor je zaručeno, se spustí před konstruktor instance nebo volá statický člen typu. Proto pokud typ je vytvořen bez nutnosti volat konstruktor instance, statický konstruktor není zaručeno, že ke spuštění.
 
- Pokud všechny statických dat je inicializovaného vložené a je deklarovaná žádné explicitní statického konstruktoru, přidejte kompilátory jazyka C# a Visual Basic `beforefieldinit` příznak v definici třídy MSIL. Kompilátory také přidat privátní statické konstruktor, který obsahuje kód statické inicializace. Tento konstruktor privátní statické záruku, že spustit předtím, než jsou přístupné všechny statické pole typu.
+ Pokud všechna statická data je vložená inicializována a je deklarována bez explicitní statický konstruktor, kompilátory jazyků C# a Visual Basic přidejte `beforefieldinit` příznak do definice třídy jazyka MSIL. Kompilátory taky přidat privátní statický konstruktor, který obsahuje kód Statická inicializace. Tato privátní statický konstruktor se zaručeně spustí předtím, než jsou přístupné všechny statické pole typu.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo inicializovat všechny statických dat při je deklarovaná a odebrat statického konstruktoru.
+ Chcete-li vyřešit porušení tohoto pravidla inicializujte všechna statická data, když je deklarovaný a statický konstruktor odeberte.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Nepotlačujte upozornění na toto pravidlo.

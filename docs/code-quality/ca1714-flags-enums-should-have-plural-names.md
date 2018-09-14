@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e00c0e7eaf3b88588f0914d78a23db40082d63f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76b946e5fc5216d11eee98ceb8cc7eeb13ff186b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915728"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545645"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Výčty příznaků by neměly mít názvy v množném čísle
 |||
@@ -32,23 +32,25 @@ ms.locfileid: "31915728"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Veřejný výčet má <xref:System.FlagsAttribute?displayProperty=fullName> a jeho název nemá na konci v na '.
+ Veřejný výčet má <xref:System.FlagsAttribute?displayProperty=fullName> a jeho název nekončí v prvku ".
 
 ## <a name="rule-description"></a>Popis pravidla
- Typy, které jsou označené <xref:System.FlagsAttribute> mít názvy, které jsou v množném čísle, protože atribut uvádí, zda lze zadat více než jednu hodnotu. Například výčet, který definuje dny v týdnu, může být určena pro použití v aplikaci, kde můžete určit více dní. Tento výčet by měl mít <xref:System.FlagsAttribute> a může být volána 'dny. Podobně jako výčet, který umožňuje zadat pouze jeden den by mít atribut a může být volána "Den".
+ Typy, které jsou označené <xref:System.FlagsAttribute> mít názvy, které jsou v množném čísle, protože tento atribut označuje, že lze zadat více než jednu hodnotu. Například výčet, který definuje dny v týdnu může být určena pro použití v aplikaci ve kterém můžete zadat více dní. By měl mít tento výčet <xref:System.FlagsAttribute> a může mít název "dny. Podobně jako výčet, který umožňuje zadat pouze jeden den by obsahovat atribut a může být volána "Den".
 
- Zásady vytváření názvů zadejte obecný vzhled pro knihovny cílené modul common language runtime. Tím se snižuje křivky learning, který je vyžadován pro nové knihovny softwaru a zvyšuje sebejistotu zákazníka, knihovny byla vyvinuta uživatelem s odbornými znalostmi v vývoj spravovaného kódu.
+ Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. To snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Zkontrolujte název výčtu množném čísle slovo nebo odebrat <xref:System.FlagsAttribute> atribut Pokud více hodnot výčtu by neměl být určen současně.
+ Vytvořit název výčtu množném čísle slova nebo odebrat <xref:System.FlagsAttribute> atribut, pokud by neměla současně zadat více hodnot výčtu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit narušení, pokud název množném čísle word, ale nemá příponu na '. Například pokud výčet násobek dne, který je popsáno dříve byly s názvem 'DaysOfTheWeek', by porušení logice pravidla, ale ne jeho záměr. Takové porušení by měl být suppressd.
+ Je bezpečné potlačit narušení, je-li název množném čísle slovo ale nekončí na ". Například pokud několik dní výčtu, která byla popsána dříve byly s názvem "DaysOfTheWeek", to by mohla narušit logice pravidla, ale ne jeho záměr. Má být potlačeno těchto porušení.
 
 ## <a name="related-rules"></a>Související pravidla
  [CA1027: Označte výčty pomocí FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
  [CA2217: Neoznačujte výčty pomocí FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>Viz také
- <xref:System.FlagsAttribute?displayProperty=fullName> [Návrh výčtu](/dotnet/standard/design-guidelines/enum)
+## <a name="see-also"></a>Viz také:
+
+- <xref:System.FlagsAttribute?displayProperty=fullName>
+- [Návrh výčtu](/dotnet/standard/design-guidelines/enum)

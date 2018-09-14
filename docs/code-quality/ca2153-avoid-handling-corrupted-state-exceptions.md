@@ -1,5 +1,5 @@
 ---
-title: 'CA2153: Vyhněte se zpracování poškozená stavu výjimek'
+title: 'CA2153: Vyhněte se zpracování výjimek v poškozeném stavu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -9,53 +9,57 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca36093afa0915352c6c6d90995bde99fb655c8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5043c8cb9cefb8ffdb600083ba2dc4bb49d5e3f5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922851"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547516"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Vyhněte se zpracování poškozená stavu výjimek
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Vyhněte se zpracování výjimek v poškozeném stavu
 
 |||
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
 |Kategorie|Microsoft.Security|
-|Narušující změna|Bez ukončování řádků|
+|Narušující změna|Pevné|
 
 ## <a name="cause"></a>příčina
 
-[Poškozený stav výjimky (rozšíření na straně klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) znamenat, že paměť poškození existuje v procesu. Zachytávání tyto než umožní procesu havárií může vést k ohrožení zabezpečení, pokud útočník můžete umístit zneužití do oblasti poškozená paměti.
+[Poškozený stav výjimek (rozšíření na straně klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) znamenat, že paměť poškození existuje v procesu. Toto zachycení nepovolí selhání procesu může vést k ohrožení zabezpečení, pokud útočník lze umístit do oblasti paměti poškozená zneužití.
 
 ## <a name="rule-description"></a>Popis pravidla
- Rozšíření na straně klienta signalizuje, že stav procesu má byla poškozena a nebyla zachycena v systému. V poškozeném stavu scénáři obslužnou rutinu obecné pouze zachytí výjimky Pokud označíte metodu správné `HandleProcessCorruptedStateExceptions` atribut. Ve výchozím nastavení [Common Language Runtime (CLR)](/dotnet/standard/clr) nebude vyvolat catch obslužné rutiny pro rozšíření na straně klienta.
 
- Povolení, že proces havárií bez zachytávání tyto druhy výjimek je nejbezpečnější možnosti, jako i protokolování kód útočníkovi umožnit, aby před zneužitím chyb poškození paměti.
+Rozšíření na straně klienta Určuje, že stav procesu byl poškozený a není zachycena v systému. V poškozeném stavu scénáři obecné obslužné rutiny pouze zachytí výjimku Pokud označíte metodu správné `HandleProcessCorruptedStateExceptions` atribut. Ve výchozím nastavení [Common Language Runtime (CLR)](/dotnet/standard/clr) nebude volat obslužné rutiny catch pro rozšíření na straně klienta.
 
- Toto upozornění se aktivuje při zachycování rozšíření na straně klienta pomocí obecné obslužné rutiny, které zachytí všechny výjimky, jako je například catch(exception) nebo catch (bez specifikace výjimek).
+Povolení proces při selhání bez zachycování tyto druhy výjimek je nejbezpečnější možnosti, jako i protokolování kódu můžou útočníci zneužít ohrožená místa chyby poškození paměti.
+
+Toto upozornění se aktivuje při zachycování rozšíření na straně klienta pomocí obecné obslužné rutině, která zachytává všechny výjimky, jako je například catch(exception) nebo catch (bez specifikací výjimek).
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li vyřešit toto upozornění proveďte jednu z těchto možností:
 
- 1. Odeberte `HandleProcessCorruptedStateExceptions` atribut. To obnoví na výchozí chování za běhu, kde nejsou předán obslužné rutiny zachytávání rozšíření na straně klienta.
+Pokud chcete vyřešit toto upozornění, proveďte jednu z následujících akcí:
 
- 2. Odeberte obslužná rutina obecné catch in preference of obslužných rutin, které catch výjimky pro konkrétní typy.  To může zahrnovat rozšíření na straně klienta za předpokladu, že je může zpracovat bezpečně kód obslužné rutiny (velmi výjimečných).
+- Odeberte `HandleProcessCorruptedStateExceptions` atribut. To obnoví na výchozí chování za běhu, ve kterém nejsou předán obslužné rutiny zachytávání rozšíření na straně klienta.
 
- 3. Znovu vyvolejte rozšíření na straně klienta v catch obslužná rutina, která zajišťuje výjimka předaný volající a způsobí ukončení běžící proces.
+- Odeberte obslužnou rutinu obecný zachytávací in preference of obslužných rutin, které zachytit specifické výjimky typy. To může zahrnovat rozšíření na straně klienta za předpokladu, že kód obslužné rutiny můžete bezpečně jejich zpracování (vzácného).
+
+- V obslužné rutiny catch, který zajišťuje výjimky je předán do volajícího a bude mít za následek ukončení spuštěného procesu znovu vyvolejte rozšíření na straně klienta.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo.
+
+Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="pseudo-code-example"></a>Příklad pseudo kódu
 
 ### <a name="violation"></a>Porušení
- Následující kód pseudo ilustruje vzor zjistil tímto pravidlem.
 
-```
+Pseudo následující kód znázorňuje, zjistí toto pravidlo.
+
+```csharp
 [HandleProcessCorruptedStateExceptions]
-//method to handle and log CSE exceptions
+// Method to handle and log CSE exceptions.
 void TestMethod1()
 {
     try
@@ -64,15 +68,16 @@ void TestMethod1()
     }
     catch (Exception e)
     {
-        // Handle error
+        // Handle error.
     }
 }
 ```
 
 ### <a name="solution-1"></a>Řešení 1
- Odebráním atributu HandleProcessCorruptedExceptions zajistí, že výjimky nebudou zpracovány.
 
-```
+Odebrání atributu HandleProcessCorruptedExceptions zajistí, že k výjimkám nebude zpracován.
+
+```csharp
 void TestMethod1()
 {
     try
@@ -81,19 +86,20 @@ void TestMethod1()
     }
     catch (IOException e)
     {
-        // Handle error
+        // Handle error.
     }
     catch (UnauthorizedAccessException e)
     {
-        // Handle error
+        // Handle error.
     }
 }
 ```
 
 ### <a name="solution-2"></a>Řešení 2
- Catch – obecné obslužné rutiny odebírání a catch pouze typy konkrétních výjimek.
 
-```
+Odebrat obslužnou rutinu obecný zachytávací a zachytit pouze typy určité výjimky.
+
+```csharp
 void TestMethod1()
 {
     try
@@ -102,19 +108,20 @@ void TestMethod1()
     }
     catch (IOException e)
     {
-        // Handle error
+        // Handle error.
     }
     catch (UnauthorizedAccessException e)
     {
-        // Handle error
+        // Handle error.
     }
 }
 ```
 
 ### <a name="solution-3"></a>Řešení 3
- Znovu vyvolejte výjimku.
 
-```
+Znovu vyvolá výjimku.
+
+```csharp
 void TestMethod1()
 {
     try
@@ -123,7 +130,7 @@ void TestMethod1()
     }
     catch (Exception e)
     {
-        // Handle error
+        // Handle error.
         throw;
     }
 }

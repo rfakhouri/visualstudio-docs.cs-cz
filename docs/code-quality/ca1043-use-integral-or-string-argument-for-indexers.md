@@ -14,16 +14,21 @@ ms.assetid: d7f14b9e-2220-4f80-b6b8-48c655a05701
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ad1a25f33ce91fba7b2be8723b86067afe81632c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bb8781b205da07c1c075e2638716cfc139491d07
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900083"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550580"
 ---
 # <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Použijte celočíselný nebo řetězcový argument pro indexery
+
 |||
 |-|-|
 |TypeName|UseIntegralOrStringArgumentForIndexers|
@@ -32,19 +37,19 @@ ms.locfileid: "31900083"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Typ veřejné nebo chráněného obsahuje veřejný nebo chráněného indexer, jiné než používající typ indexu <xref:System.Int32?displayProperty=fullName>, <xref:System.Int64?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName>, nebo <xref:System.String?displayProperty=fullName>.
+ Veřejný nebo chráněný typ obsahuje veřejnou nebo chráněnou indexer, používající typ indexu jiné než <xref:System.Int32?displayProperty=fullName>, <xref:System.Int64?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName>, nebo <xref:System.String?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Popis pravidla
- Indexery, který je indexované vlastnosti, musí používat typy celé číslo nebo řetězec pro index. Tyto typy jsou obvykle používány pro indexování datové struktury a zvýšit použitelnost knihovny. Použití <xref:System.Object> typu by se měly omezit na tyto případy, kdy konkrétní typ celé číslo nebo řetězec nelze zadat v době návrhu. Pokud návrh vyžaduje další typy pro index, znovu, jestli typ představuje logické datové úložiště. Pokud ho nepředstavuje logické datové úložiště, použijte metodu.
+ Indexery, tj. indexované vlastnosti, by měly používat celočíselné typy nebo typy řetězců pro index. Tyto typy se obvykle používají pro indexování datových struktur a zlepšit tak použitelnost knihovny. Použití <xref:System.Object> typ by měl být omezeno na ty případy, ve kterém nejde zadat konkrétní typ celé číslo nebo řetězec v době návrhu. Pokud návrhu vyžaduje další typy pro index, zvažte, zda typ představuje logické datové úložiště. Pokud to nepředstavuje logické datové úložiště, použijte metodu.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo, změňte index na typ celé číslo nebo řetězec nebo používat metodu místo indexeru.
+ Chcete-li opravit porušení tohoto pravidla, změnit index typu celé číslo nebo řetězec nebo používat metodu místo indexeru.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačíte upozornění na toto pravidlo až po pečlivě vzhledem k tomu potřeba nestandardní indexeru.
+ Potlačit upozornění tohoto pravidla až po pečlivého zvážení potřebu nestandardní indexeru.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje indexer, který používá <xref:System.Int32> index.
+ Následující příklad ukazuje, indexer, který se používá <xref:System.Int32> indexu.
 
  [!code-csharp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CSharp/ca1043-use-integral-or-string-argument-for-indexers_1.cs)]
  [!code-cpp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CPP/ca1043-use-integral-or-string-argument-for-indexers_1.cpp)]

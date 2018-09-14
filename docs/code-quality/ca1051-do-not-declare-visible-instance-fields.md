@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc08d39e842afa8bee9baa89f4c788f291d90ea2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b0f4db8716db23561b002b7095384efd25628e68
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899095"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551035"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Nedeklarujte viditelná pole instance
 |||
@@ -32,26 +32,26 @@ ms.locfileid: "31899095"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Typ externě viditelné má poli externě viditelné instance.
+ Externě viditelný typ obsahuje pole instance externě viditelné.
 
 ## <a name="rule-description"></a>Popis pravidla
- Hlavní použití pole by mělo být jako podrobnost implementace. Pole by měla být `private` nebo `internal` a by měly být vystaveny pomocí vlastností. Je stejně snadná o přístup k vlastnosti, jako je přístup k poli a kód v přístupové objekty vlastnosti můžete změnit podle funkce typu rozbalte bez zavedení nejnovější změny. Vlastnosti, které právě vrátí hodnotu pole soukromý nebo interní jsou optimalizované pro provedení srovnatelné s přístup k poli. prostřednictvím vlastnosti je přidružen k použití externě viditelná pole výkonu zanedbatelné.
+ Hlavní použití pole by mělo být jako podrobnost implementace. Pole by měla být `private` nebo `internal` a měla by být vystavena s použitím vlastností. Je snadné přístup k vlastnosti, jako je přístup k poli a kód v přistupující objekty vlastnosti můžete změnit, protože funkce typu rozbalte bez vnášení rozbíjející změny. Vlastnosti, které právě vracejí hodnotu privátní nebo interní pole jsou optimalizována pro provedení ji přístup k poli. velmi malé zvýšení výkonu je spojené s použitím externě viditelné pole prostřednictvím vlastností.
 
- Externě viditelné odkazuje na `public`, `protected`, a `protected internal` (`Public`, `Protected`, a `Protected Friend` v jazyce Visual Basic) úrovní přístupu.
+ Externě viditelný odkazuje na `public`, `protected`, a `protected internal` (`Public`, `Protected`, a `Protected Friend` v jazyce Visual Basic) úrovní přístupu.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo, ujistěte se, pole `private` nebo `internal` a vystavit pomocí externě viditelné vlastnosti.
+ Chcete-li opravit porušení tohoto pravidla, ujistěte se, pole `private` nebo `internal` a zpřístupnit ji pomocí externě viditelné vlastnosti.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo. Externě viditelná pole neposkytují žádné výhody, které jsou k dispozici na vlastnosti. Kromě toho veřejná pole nemůže být chráněn [požadavky propojení](/dotnet/framework/misc/link-demands). V tématu [CA2112: zabezpečené typy by neměly vystavovat pole](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+ Nepotlačujte upozornění na toto pravidlo. Externě viditelné pole neposkytují žádné výhody, které nejsou k dispozici pro vlastnosti. Kromě toho veřejné polí se nedají chránit pomocí [požadavky propojení](/dotnet/framework/misc/link-demands). Zobrazit [CA2112: zabezpečené typy by neměly vystavovat pole](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typ (`BadPublicInstanceFields`) porušil toto pravidlo. `GoodPublicInstanceFields` Zobrazuje opravené kód.
+ Následující příklad ukazuje typ (`BadPublicInstanceFields`), který porušuje tato pravidla. `GoodPublicInstanceFields` zobrazuje opravený kód.
 
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
  [CA2112: Zabezpečené typy by neměly vystavovat pole](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
-## <a name="see-also"></a>Viz také
- [Požadavky na odkaz](/dotnet/framework/misc/link-demands)
+## <a name="see-also"></a>Viz také:
+ [Požadavky propojení](/dotnet/framework/misc/link-demands)

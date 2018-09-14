@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c872685445dddaf55efc8c5880b053c865ff2351
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04e8348dc77222fbc06887efebf44c735eb7c8f0
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898164"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550018"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Členové by neměli zveřejňovat určité konkrétní typy
 |||
@@ -32,24 +32,24 @@ ms.locfileid: "31898164"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Externě viditelné člen je určitý konkrétní typ nebo zpřístupní určité konkrétní typy prostřednictvím jednoho z jeho parametry nebo vrátit hodnotu. Toto pravidlo v současné době sestavy ohrožení následující konkrétní typy:
+ Externě viditelného členu je některé konkrétní typ nebo zpřístupňuje určité konkrétní typy prostřednictvím jednoho z jeho parametry nebo návratovou hodnotu. Toto pravidlo v současné době sestavy vystavení následující konkrétní typy:
 
--   Typ odvozený od <xref:System.Xml.XmlNode?displayProperty=fullName>.
+- Typ odvozený od <xref:System.Xml.XmlNode?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Popis pravidla
- Konkrétní typ je typ, který je zcela implementován, a lze tudíž vytvořit jeho instanci. Povolit podnikové sféře často používají člena, nahraďte konkrétní typ rozhraní navržené. To umožňuje člen přijmout žádný typ, který implementuje rozhraní nebo použije, kde je očekávána typ, který implementuje rozhraní.
+ Konkrétní typ je typ, který je zcela implementován, a lze tudíž vytvořit jeho instanci. Chcete-li umožnit široké využití členu, nahraďte konkrétní typ navrhovaného rozhraní. To umožňuje členu, který chcete přijmout libovolný typ, který implementuje rozhraní, nebo použít, kde se očekává typ, který implementuje rozhraní.
 
  Následující tabulka uvádí cílové konkrétní typy a jejich navrhované nahrazení.
 
 |Konkrétní typ|Nahrazení|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Pomocí rozhraní oddělí člena z konkrétní implementace zdroje dat XML.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Pomocí rozhraní odděluje obě části člena z konkrétní implementaci zdroj dat XML.|
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo, změňte konkrétní typ rozhraní navržené.
+ Chcete-li opravit porušení tohoto pravidla, změňte konkrétní typ na navrhovaného rozhraní.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné k potlačení zprávy z tohoto pravidla, pokud se vyžaduje konkrétní funkce poskytované službou konkrétní typ.
+ Je bezpečné k potlačení zprávy z tohoto pravidla, pokud konkrétní funkce poskytované službou konkrétní typ je povinný.
 
 ## <a name="related-rules"></a>Související pravidla
  [CA1011: Zvažte předání základních typů jako parametrů](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

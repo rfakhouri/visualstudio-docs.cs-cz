@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: cbe35dbe14f89efdde1878a42fc1803254e9eb06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08e059955a6552323453e08882bc2bcebd0fc586
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671389"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552049"
 ---
 # <a name="getting-started-with-python"></a>Začínáme s Pythonem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Jako programovací jazyk Python je:
 
 Další informace o jazyku, začněte s [Python pro začátečníky](https://www.python.org/about/gettingstarted/) na webu python.org.
 
-K instalaci Pythonu, sama, navštivte [ http://python.org/download/ ](http://python.org/download/).
+K instalaci Pythonu, sama, navštivte [ https://www.python.org/download/ ](https://www.python.org/download/).
  
   
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
@@ -83,26 +83,27 @@ Hlavní nabídky pro vytváření uživatelského rozhraní pomocí Pythonu, je 
 Sada Azure SDK pro Python, která podporuje Windows, Mac a Linux, usnadňuje používání a správu služeb Microsoft Azure. Podívejte se na následujících odkazech podrobnosti: 
 
 - Chcete-li nainstalovat sadu SDK, použijte [indexu balíčků Pythonu](https://pypi.python.org/pypi/azure) nebo postupujte podle [instalace Pythonu a sady SDK](https://azure.microsoft.com/documentation/articles/python-how-to-install/) v dokumentaci k Azure. 
-- [Azure SDK pro Centrum pro vývojáře Python](http://azure.microsoft.com/en-us/develop/python/) obsahuje velké množství nápovědy z instalace dokumentaci k kurzy.  Mezi nejdůležitější funkce následujícím:  
+- [Azure SDK pro Centrum pro vývojáře Python](https://azure.microsoft.com/develop/python/) obsahuje velké množství nápovědy z instalace dokumentaci k kurzy.  Mezi nejdůležitější funkce následujícím:  
 - Návody:
-  - [Úložiště objektů Blob](http://azure.microsoft.com/en-us/develop/python/how-to-guides/blob-service/)  
-  - [Fronta úložiště](http://azure.microsoft.com/en-us/develop/python/how-to-guides/queue-service/)  
-  - [Storage Table](http://azure.microsoft.com/en-us/develop/python/how-to-guides/table-service/)  
-  - [Fronty služby Service Bus](http://azure.microsoft.com/en-us/develop/python/how-to-guides/service-bus-queues/)   - [služby Service Bus tématy nebo předplatnými](http://azure.microsoft.com/en-us/develop/python/how-to-guides/service-bus-topics/) 
-  - [Správa služeb](http://azure.microsoft.com/en-us/develop/python/how-to-guides/service-management/)  
- 
-  
-  
-## <a name="scientific-computing"></a>Vědecké výpočty  
+  - [Úložiště objektů Blob](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
+  - [Fronta úložiště](https://azure.microsoft.com/develop/python/how-to-guides/queue-service/)  
+  - [Storage Table](https://azure.microsoft.com/develop/python/how-to-guides/table-service/)  
+  - [Fronty služby Service Bus](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-queues/)
+  - [Předplatná služby Service Bus](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-topics/) 
+  - [Správa služeb](https://azure.microsoft.com/develop/python/how-to-guides/service-management/)  
+
+## <a name="scientific-computing"></a>Vědecké výpočty
+
 Kromě všech mezi odborníky přes data knihoven Pythonu nástroje Pythonu pro Visual Studio podporují IPython a IPython notebook, které je možné hostovat v Azure.
 
 Doporučujeme, abyste získání IPython a vědecké výpočetní knihovny (matplotlib, scipy, numpy, atd.) z [University of California, Irvine](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
   
 ## <a name="see-also"></a>Viz také  
- [Začínáme s PTVS: nastavení Visual Studia](../python/getting-started-with-ptvs-setting-up-visual-studio.md)   
- [Začínáme s PTVS: Začínáme kódovat (projekty)](../python/getting-started-with-ptvs-start-coding-projects.md)   
- [Začínáme s PTVS: úpravy kódu](../python/getting-started-with-ptvs-editing-code.md)   
- [Začínáme s PTVS: ladění](../python/getting-started-with-ptvs-debugging.md)   
- [Začínáme s PTVS: interaktivní Python](../python/getting-started-with-ptvs-interactive-python.md)   
- [Začínáme s PTVS: vytváření webu v Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+
+[Začínáme s PTVS: nastavení Visual Studia](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[Začínáme s PTVS: začít kódovat (projekty)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[Začínáme s PTVS: úpravy kódu](../python/getting-started-with-ptvs-editing-code.md) 
+ [Začínáme s PTVS: ladění](../python/getting-started-with-ptvs-debugging.md)
+[Začínáme s PTVS: interaktivní Python](../python/getting-started-with-ptvs-interactive-python.md)
+[Začínáme Práce s PTVS: vytváření webu v Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
 

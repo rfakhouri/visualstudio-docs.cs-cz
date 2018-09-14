@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 498a3638a02891683aff1b343431418d1a82bab0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 09aa3a879fad84f511d3649e98e5be98e62f4038
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914982"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546795"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Označte členy jako statické
 |||
@@ -29,19 +29,19 @@ ms.locfileid: "31914982"
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|
 |Kategorie|Microsoft.Performance|
-|Narušující změna|Bez ukončování – Pokud člen není zobrazen mimo sestavení, bez ohledu na změnu provedete. Pevné – Pokud změníte člen jen na instanci členu s `this` – klíčové slovo.<br /><br /> Pozastavení – Pokud změníte člen členem instance na statický člen a je viditelný mimo sestavení.|
+|Narušující změna|Bez konce – Pokud člen není viditelný mimo sestavení, bez ohledu na změnu provedete. Pevné – Pokud stačí změnit na instanci členu s člena `this` – klíčové slovo.<br /><br /> Zásadní - li změnit člena z člena instance statického členu a je viditelný mimo sestavení.|
 
 ## <a name="cause"></a>příčina
- Člena, který není přístup k datům instance není označena jako statické (sdílené v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ Člen, který není přístup k datům instance není označen jako statické (sdílené v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="rule-description"></a>Popis pravidla
- Členové, které není přístup k instanci data nebo volání metody instance může být označen jako statické (sdílené v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Po označení metod jako statických bude kompilátor generovat těmto členům nevirtuální místa volání. Emitování nevirtuální volání lokality zabrání kontrolu v době běhu pro každé volání, které zajišťuje, že je aktuální objekt ukazatele nesmí být nulová. To můžete dosáhnout měřitelné výkonnější pro kód náročné na výkon. V některých případech představuje selhání pro přístup k aktuální instanci objektu správnost problém.
+ Členové, kteří nemají přístup k instanci dat nebo metodám instance volání může být označený jako statické (sdílené v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Po označení metod jako statických bude kompilátor generovat těmto členům nevirtuální místa volání. Generování nevirtuální místa volání zabrání kontrolu za běhu pro každé volání, která zajišťuje, že aktuální ukazatel objektu je jiná než null. To můžete dosáhnout dosáhnout měřitelného zisku výkonu pro výkonově citlivý kód. V některých případech představuje selhání pro přístup k aktuální instanci objektu správnost problému.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Označit jako statický člen (nebo sdílet v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) nebo použít 'this' / 'Mi' v metodě body, podle potřeby.
+ Označte člena jako statického (nebo poskytne [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) nebo použijte 'this' / 'Me' v metodě body, v případě potřeby.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné pro potlačení upozornění od tohoto pravidla pro dříve dodané kód, pro které by bylo opravu narušující změně.
+ Je bezpečné potlačit upozornění tohoto pravidla pro dříve dodané kód, pro kterou bude oprava rozbíjející změny.
 
 ## <a name="related-rules"></a>Související pravidla
  [CA1811: Vyhněte se nevolanému místnímu kódu](../code-quality/ca1811-avoid-uncalled-private-code.md)

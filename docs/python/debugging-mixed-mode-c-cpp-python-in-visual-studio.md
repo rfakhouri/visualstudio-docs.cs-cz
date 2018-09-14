@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 4d5ec15e6fea377e8ffc23cc5215a88081d0f9bd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008431"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552081"
 ---
 # <a name="debug-python-and-c-together"></a>Společně ladění Pythonu a C++
 
@@ -104,7 +104,7 @@ Dvojitým kliknutím jiné rámce volání stane aktivní a otevře příslušn�
 
 ### <a name="step-between-python-and-native-code"></a>Krok mezi Python a nativní kód
 
-Při použití **Krokovat s vnořením** (**F11**) nebo **Krokovat s Vystoupením** (**Shift**+**F11**) příkazy, ladění ve smíšeném režimu správně zpracovává změny mezi typy kódu. Například když Python volá metodu typu, která je implementována v jazyce C, krokování volání, že metoda zastaví na začátku nativní funkce implementace metody. Podobně když nativní kód volá některé funkce rozhraní API Python, který výsledky v kódu Pythonu vyvolání. Například krokování s vnořením `PyObject_CallObject` na hodnotu funkce, která byla původně definována v Pythonu zastaví na začátku funkce jazyka Python. Krokování Pythonu do nativní je také podporována pro nativní funkce vyvolána z Pythonu pomocí [ctypes](http://docs.python.org/3/library/ctypes.html).
+Při použití **Krokovat s vnořením** (**F11**) nebo **Krokovat s Vystoupením** (**Shift**+**F11**) příkazy, ladění ve smíšeném režimu správně zpracovává změny mezi typy kódu. Například když Python volá metodu typu, která je implementována v jazyce C, krokování volání, že metoda zastaví na začátku nativní funkce implementace metody. Podobně když nativní kód volá některé funkce rozhraní API Python, který výsledky v kódu Pythonu vyvolání. Například krokování s vnořením `PyObject_CallObject` na hodnotu funkce, která byla původně definována v Pythonu zastaví na začátku funkce jazyka Python. Krokování Pythonu do nativní je také podporována pro nativní funkce vyvolána z Pythonu pomocí [ctypes](https://docs.python.org/3/library/ctypes.html).
 
 ### <a name="pyobject-values-view-in-native-code"></a>PyObject zobrazení hodnoty v nativním kódu
 
@@ -137,7 +137,7 @@ C typy, které zobrazují **[zobrazení Pythonu]** uzly (je-li povoleno):
 
 Pro jazyk Python 2.x, ale jeho záhlaví pro každý typ objektu obvykle deklaruje jako kolekce vložených polí a neexistuje žádná souvislost mezi vlastní typy vytvořené a `PyObject` na úrovni systému typu v kódu C/C++. Povolit **[zobrazení Pythonu]** Upravit uzly pro vlastní typy, *PythonDkm.natvis* soubor [instalační adresář nástroje Python tools](installing-python-support-in-visual-studio.md#install-locations)a přidat jiný element v XML pro Struktura jazyka C nebo C++ třídy.
 
-Možnost alternativního (a vyšší), je splnění [období 3123](http://www.python.org/dev/peps/pep-3123/) a použít explicitní `PyObject ob_base;` pole spíše než `PyObject_HEAD`, ale které nemusí být vždy možné z důvodů zpětné kompatibility.
+Možnost alternativního (a vyšší), je splnění [období 3123](https://www.python.org/dev/peps/pep-3123/) a použít explicitní `PyObject ob_base;` pole spíše než `PyObject_HEAD`, ale které nemusí být vždy možné z důvodů zpětné kompatibility.
 
 ### <a name="native-values-view-in-python-code"></a>Zobrazit nativní hodnoty v kódu Pythonu
 

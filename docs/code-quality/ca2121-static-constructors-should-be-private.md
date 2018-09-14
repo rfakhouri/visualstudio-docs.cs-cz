@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f6eef1097565090fd1b9be572f9a33afed9afed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f4f0240b8a3cc1a08b29d0f7f21f3f7599ab3fe
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917909"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546669"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121: Statické konstruktory by měly být privátní
 |||
@@ -32,21 +32,21 @@ ms.locfileid: "31917909"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Typ obsahuje statický konstruktor, který není privátní.
+ Typ má statický konstruktor, který není privátní.
 
 ## <a name="rule-description"></a>Popis pravidla
- Statický konstruktor, také známé jako konstruktoru třídy, se používá k chybě při inicializaci typu. Systém volá statický konstruktor před vytvořením první instance typu nebo předtím, než jsou odkazovány jakékoli statické členy. Uživatel nemá žádnou kontrolu nad kdy se nazývá statického konstruktoru. Pokud statický konstruktor není soukromý, může být volán jiným kódem než kódem systému. V závislosti na operacích, které jsou provedeny v konstruktoru, to může způsobit neočekávané chování.
+ Statický konstruktor, označované také jako konstruktor třídy, slouží k inicializaci typu. Systém volá statický konstruktor před vytvořením první instance typu nebo předtím, než jsou odkazovány jakékoli statické členy. Uživatel nemá žádnou kontrolu nad tím, kdy je volána statický konstruktor. Pokud statický konstruktor není soukromý, může být volán jiným kódem než kódem systému. V závislosti na operacích, které jsou provedeny v konstruktoru, to může způsobit neočekávané chování.
 
- Toto pravidlo se vynucuje kompilátory jazyka C# a Visual Basic.
+ Toto pravidlo je vynuceno kompilátory C# a Visual Basic.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Porušení jsou obvykle způsobeno jedním z následujících akcí:
 
--   Statický konstruktor definovaný pro váš typ a nedostaly privátní.
+- Definice statického konstruktoru pro váš typ a nebyly provedeny je privátní.
 
--   Programovací jazyk kompilátoru přidat výchozí statický konstruktor pro typ vašeho a nedostaly privátní.
+- Kompilátor programovacího jazyka přidány výchozí statický konstruktor do typu a nebyly provedeny je privátní.
 
- Pokud chcete vyřešit první druh porušení, soukromá statického konstruktoru. Opravit druhý typ, přidejte do vašeho typu privátní statického konstruktoru.
+ Chcete-li vyřešit první druh porušení, soukromá statický konstruktor. Chcete-li vyřešit druhý typ, přidejte privátní statický konstruktor do typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Tato porušení nejsou potlačeny. Pokud váš návrh softwaru vyžaduje explicitní volání statického konstruktoru, je pravděpodobné, že návrh obsahuje závažné chyby a měli zkontrolovat.
+ Nepotlačujte těchto porušení. Pokud váš návrh softwaru vyžaduje explicitní volání konstruktoru statický konstruktor, je pravděpodobné, že návrh obsahuje závažné chyby a byste měli zkontrolovat.

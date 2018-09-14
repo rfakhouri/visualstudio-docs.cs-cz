@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 2c7706e635cc159b7ae85274d46c2be762926ccc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320823"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551258"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak vytvořit a spravovat prostředí Pythonu v sadě Visual Studio
 
@@ -78,7 +78,7 @@ Visual Studio 2017 verze 15.7 nebo novější prostředí conda automaticky zjis
 ## <a name="the-python-environments-window"></a>Okno prostředí Pythonu
 
 > [!Note]
-> Snímky obrazovky, uvedené v této části představují Visual Studio 15.8. Může se zobrazit mírně odlišné uživatelské rozhraní v závislosti na vaší verzi sady Visual Studio.
+> Snímky obrazovky, uvedené v této části představují Visual Studio 15.8. Může se zobrazit různé uživatelské rozhraní v závislosti na vaší verzi sady Visual Studio.
 
 V prostředí, která sadě Visual Studio ví o jsou zobrazeny v **prostředí Pythonu** okna. Otevřete okno, použijte jednu z následujících metod:
 

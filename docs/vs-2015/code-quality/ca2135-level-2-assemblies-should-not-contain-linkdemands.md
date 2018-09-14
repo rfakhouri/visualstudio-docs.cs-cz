@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 538e6bc84b5f8a35de30e94909e842061ad9a1a4
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 9df472598587e90ad56ecc77a1d58c4094b2e61c
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902810"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545639"
 ---
 # <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135: Sestavení úrovně 2 nesmějí obsahovat LinkDemands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Nejnovější verzi tohoto tématu můžete najít v [CA2135: sestavení úrovn�
 ## <a name="example"></a>Příklad
  V následujícím příkladu <xref:System.Security.Permissions.SecurityAction> by měly být odstraněny a metodě označené <xref:System.Security.SecurityCriticalAttribute> atribut.
 
- [!code-csharp[FxCop.Security.CA2135.SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2135.securityrulesetlevel2methodsshouldnotbeprotectedwithlinkdemands/cs/ca2135 - securityrulesetlevel2methodsshouldnotbeprotectedwithlinkdemands.cs#1)]
+ [!code-csharp[FxCop.Security.CA2135.SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2135.securityrulesetlevel2methodsshouldnotbeprotectedwithlinkdemands/cs/ca2135.cs#1)]
 
 
 

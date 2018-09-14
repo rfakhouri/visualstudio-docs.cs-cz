@@ -1,5 +1,5 @@
 ---
-title: 'CA1700: Nepojmenovávejte hodnoty výčtu &#39;vyhrazena&#39;'
+title: 'CA1700: Nepojmenovávejte hodnoty výčtu &#39;Reserved&#39;'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2e7b501019ed2891a30d1f0359aee6405c4444
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 485a1e18f1c1047b84fa186cfcae1fde4bebe1df
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918446"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549968"
 ---
-# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Nepojmenovávejte hodnoty výčtu &#39;vyhrazena&#39;
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Nepojmenovávejte hodnoty výčtu &#39;Reserved&#39;
 |||
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
@@ -32,26 +32,26 @@ ms.locfileid: "31918446"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Název člena výčtu obsahuje slovo "vyhrazené".
+ Název na člena výčtu obsahuje slovo "vyhrazených".
 
 ## <a name="rule-description"></a>Popis pravidla
- Toto pravidlo předpokládá, že člen výčtu, který má název obsahující výraz „reserved“, není aktuálně používán, ale je zástupným symbolem k přejmenování nebo odstranění v budoucí verzi. Přejmenování nebo odstranění členu je narušující změna. Není pravděpodobné, že uživatelům ignorovat členem právě, protože její název obsahuje "vyhrazené" ani můžete byste tedy spoléhat na uživatelé pro čtení nebo dodržováním dokumentaci. Navíc vzhledem vyhrazené členy se zobrazí v prohlížeči objektů a inteligentní integrované vývojové prostředí, se může způsobit nejasnosti o tom, které jsou členy ve skutečnosti používány.
+ Toto pravidlo předpokládá, že člen výčtu, který má název obsahující výraz „reserved“, není aktuálně používán, ale je zástupným symbolem k přejmenování nebo odstranění v budoucí verzi. Přejmenování nebo odstranění členu je narušující změna. Uživatelům ignorovat člen to, že název obsahuje "vyhrazených" ani můžete spolehnout na uživatelům číst a dodržováním dokumentaci, by neměli očekávat. Navíc protože vyhrazené členy se zobrazí v prohlížeči objektů a inteligentní Integrovaná vývojová prostředí, mohou způsobit zmatení, o tom, které jsou členy ve skutečnosti používá.
 
- Místo použití vyhrazené člena, přidejte nový člen výčtu v budoucí verzi. Ve většině případů není přidání nového člena narušující změně, tak dlouho, dokud nedojde k přidání hodnoty z původní členů a změnit.
+ Namísto použití vyhrazeným členem, přidání nového člena výčtu v budoucí verzi. Ve většině případů není přidání nového člena k zásadní změně, za předpokladu, přidání nezpůsobí hodnoty původní členů, chcete-li změnit.
 
- V některých případech je přidání člena narušující změně i v případě, že původní členy zachovat původní hodnoty. Především se stává, nejde vrátit nového člena z existující cesty kódu, aniž by vás volající, které používají `switch` (`Select` v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) příkaz na návratovou hodnotu seznamu celý člen, který zahrnuje a které způsobí výjimku výchozí případu. Sekundární problém je, že kód klienta, jako nemusí zpracovat změny v chování z metody reflexe <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. Podle toho, pokud nového člena musí být vrácená z existující metody nebo nekompatibilita známé aplikace k tomu dochází kvůli využití reflexe nízký, jenom pevných řešení je:
+ Pro omezený počet případů, je přidání člena k zásadní změně i v případě, že původní členy zachovat původní hodnoty. Především, nejde vrátit nového člena z existující cesty kódu bez narušení volajícím, které používají `switch` (`Select` v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) příkaz na návratovou hodnotu, která zahrnuje celou člena seznamu a, která vyvolají výjimku výchozí případ. Sekundární problém je, že kód klienta, jako nemusí zpracovávat změny v chování z metody reflexe <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. Podle toho, pokud má nový člen má být vrácena z existující metody nebo nekompatibilita známé aplikace nastává z důvodu špatného reflexe využití, pouze pevná řešení, je:
 
 1.  Přidáte nový výčet, který obsahuje původní a nové členy.
 
-2.  Označit původní výčet s <xref:System.ObsoleteAttribute?displayProperty=fullName> atribut.
+2.  Označte výčet pomocí původní <xref:System.ObsoleteAttribute?displayProperty=fullName> atribut.
 
- Postupujte stejným způsobem pro všechny externě viditelné typy a členy, které zveřejňují původní výčtu.
+ Postupujte stejným způsobem pro žádné externě viditelné typy nebo členy, které zveřejňují původní výčtu.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení toto pravidlo, odebrat nebo člen.
+ Chcete-li opravit porušení tohoto pravidla, odeberte nebo změňte jeho název.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné pro potlačení upozornění od tohoto pravidla pro člena, který je aktuálně používána nebo knihovny, které byly dříve součástí.
+ Je bezpečné potlačit upozornění tohoto pravidla pro člena, který je aktuálně používán nebo pro knihovny, které byly dříve součástí.
 
 ## <a name="related-rules"></a>Související pravidla
  [CA2217: Neoznačujte výčty pomocí FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)

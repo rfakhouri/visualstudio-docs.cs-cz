@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a33d6e0301894b23f4671e16b24ea0b34eac4904
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9bcc9e33974d2af824444aae586c4d429de1cdd4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918491"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549397"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Vyhněte se nepoužitým privátním polím
 |||
@@ -32,16 +32,16 @@ ms.locfileid: "31918491"
 |Narušující změna|Nenarušující|
 
 ## <a name="cause"></a>příčina
- Toto pravidlo je hlášené soukromé pole ve vašem kódu existuje, ale není používán všechny cesty kódu.
+ Toto pravidlo je oznamují soukromé pole ve vašem kódu existuje, ale nepoužívá všechny cesty kódu.
 
 ## <a name="rule-description"></a>Popis pravidla
  Byla zjištěna soukromá pole, která v rámci sestavení zjevně nejsou přístupná.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo, odeberte pole nebo přidejte kód, který používá je.
+ Chcete-li opravit porušení tohoto pravidla, odeberte pole nebo přidejte kód, který ji používá.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné upozornění toto pravidlo potlačit.
+ Je bezpečné potlačit upozornění tohoto pravidla.
 
 ## <a name="related-rules"></a>Související pravidla
  [CA1812: Vyhněte se nevytvořeným instancím vnitřních tříd](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 10dc2effb90e754a91f6c9f008c6f8b1692bc252
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281062"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548228"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6: Použijte šablony Polls – webový projekt Django
 
@@ -118,7 +118,7 @@ Možnost volby má vztah k dotazování prostřednictvím `poll` pole, obsahuje 
 
 Úplný seznam typů polí je `CharField` (omezeným text) `TextField` (neomezený počet text), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey`, a `ManyToMany`. Každé pole má některé atributy, jako je `max_length`. `blank=True` Atribut znamená, že pole je volitelné. `null=true` znamená, že hodnota je volitelná. K dispozici je také `choices` atribut, který omezuje hodnoty na hodnoty v poli data hodnotu/zobrazovat hodnota řazené kolekce členů. (Najdete v článku [Model referenční dokumentace polí](https://docs.djangoproject.com/en/2.0/ref/models/fields/) v dokumentaci k Django.)
 
-Můžete potvrdit přesně se ukládá v databázi prozkoumáním *db.sqlite3* soubor v projektu pomocí některého nástroje, například [SQLite prohlížeče](http://sqlitebrowser.org/). V databázi, uvidíte, že pole cizího klíče jako `poll` při výběru je model uložen jako `poll_id`; Django zpracovává mapování automaticky.
+Můžete potvrdit přesně se ukládá v databázi prozkoumáním *db.sqlite3* soubor v projektu pomocí některého nástroje, například [SQLite prohlížeče](https://sqlitebrowser.org/). V databázi, uvidíte, že pole cizího klíče jako `poll` při výběru je model uložen jako `poll_id`; Django zpracovává mapování automaticky.
 
 Obecně platí práci s databází v Django znamená, že funguje výhradně v rámci vašich modelů tak, aby Django můžete spravovat podkladové databázi vaším jménem.
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-A vidět její účinek, spusťte aplikaci, abyste mohli vidět, že žádné hlasování ještě neexistuje. Přejdete na adresu URL "/ osiva" a po návratu aplikace na domovské stránce byste měli vidět, že hlasování jsou k dispozici. Znovu, můžete bez obav prozkoumat nezpracovaná *db.sqlite3* soubor pomocí některého nástroje, například [SQLite prohlížeče](http://sqlitebrowser.org/).
+A vidět její účinek, spusťte aplikaci, abyste mohli vidět, že žádné hlasování ještě neexistuje. Přejdete na adresu URL "/ osiva" a po návratu aplikace na domovské stránce byste měli vidět, že hlasování jsou k dispozici. Znovu, můžete bez obav prozkoumat nezpracovaná *db.sqlite3* soubor pomocí některého nástroje, například [SQLite prohlížeče](https://sqlitebrowser.org/).
 
 ![Hlasovací aplikace webového projektu Django s dosazené databází](media/django/step06-app-with-seeded-database.png)
 

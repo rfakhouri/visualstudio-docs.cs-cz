@@ -14,16 +14,20 @@ ms.assetid: dfc867bc-f4af-45d7-b071-db04a248f9fc
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f6303cf96e3e8f6c4c0920336602cdbb76cc400a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5f7021de24ec9b0a6d7c31d53893528790f2cf2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901159"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548862"
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: Nevnořujte obecné typy v signaturách členu
+
 |||
 |-|-|
 |TypeName|DoNotNestGenericTypesInMemberSignatures|
@@ -32,19 +36,19 @@ ms.locfileid: "31901159"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Externě viditelné člen má podpis, který obsahuje vnořené typy argumentů.
+ Externě viditelného členu obsahuje podpis, který obsahuje vnořený argument typu.
 
 ## <a name="rule-description"></a>Popis pravidla
  Vnořený typ argumentu je typ argumentu, který je také obecným typem. Chce-li uživatel zavolat člen, jehož předpis obsahuje vnořený argument typu, musí nejprve vytvořit instanci jednoho obecného typu a předat tento typ konstruktoru druhého obecného typu. Potřebná procedura a syntaxe je složitá a je vhodné se jí vyhnout.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo, změňte návrh odebrat argument vnořené typu.
+ Chcete-li opravit porušení tohoto pravidla, změňte návrh odebrat vnořený typ argumentu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo. Poskytuje obecné typy v syntaxi, který se snadno pochopit a používat zkracuje čas, který je potřeba další a zvyšuje počet přijetí nové knihovny.
+ Nepotlačujte upozornění na toto pravidlo. Poskytuje obecné typy v syntaxi, která je snadno pochopitelný a snižuje čas, který je potřeba další informace a zvýší frekvence přijetí nové knihovny.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje metodu, která porušuje pravidlo a syntaxe, které je nutné volat metodu kterých.
+ Následující příklad ukazuje metodu, která porušuje pravidlo a syntaxi, která je potřeba volat metodu porušení.
 
  [!code-vb[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/VisualBasic/ca1006-do-not-nest-generic-types-in-member-signatures_1.vb)]
  [!code-csharp[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/CSharp/ca1006-do-not-nest-generic-types-in-member-signatures_1.cs)]
@@ -64,5 +68,5 @@ ms.locfileid: "31901159"
 
  [CA1007: Použijte obecné typy, kde je to vhodné](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
  [Obecné typy](/dotnet/csharp/programming-guide/generics/index)

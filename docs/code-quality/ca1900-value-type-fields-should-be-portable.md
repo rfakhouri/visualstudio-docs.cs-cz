@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9add21d932f7685a2dee214f396b2cbda089a5a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4608812c85764125e9cf33dba0e4b0d0b80bbaed
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917212"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550547"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Pole hodnot by měla být přenosná
 |||
@@ -29,16 +29,16 @@ ms.locfileid: "31917212"
 |TypeName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
 |Kategorie|Microsoft.Portability|
-|Narušující změna|Ukončování řádků - li pole si můžete prohlédnout mimo sestavení.<br /><br /> Non narušující – Pokud pole není viditelná mimo sestavení.|
+|Narušující změna|Zásadní – Pokud je pole viditelné mimo sestavení.<br /><br /> Bez konce – Pokud pole není viditelné mimo sestavení.|
 
 ## <a name="cause"></a>příčina
- Toto pravidlo zkontroluje, že struktury, které jsou deklarovány s explicitní rozložení zarovnané správně při zařazen do nespravovaného kódu v 64bitových operačních systémech. IA-64 neumožňuje přistupuje k nezarovnané paměti a proces bude selhat, pokud není tato porušení pevný.
+ Toto pravidlo zkontroluje, že budou při zařazení na nespravovaný kód v 64bitových operačních systémech správně zarovnány struktury, které jsou deklarovány pomocí explicitního rozložení. Nezarovnané přístupy a proces se chybově ukončit, pokud toto porušení nebyl vyřešen IA-64 není povolena.
 
 ## <a name="rule-description"></a>Popis pravidla
- Struktury, které mají explicitní rozložení, který obsahuje chybně zarovnaných pole příčina havárií na 64bitové operační systémy.
+ Struktury, které mají explicitní rozložení obsahující nezarovnané pole příčina selhání v 64bitových operačních systémech.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Všechna pole, které jsou menší než 8 bajtů musí mít posuny, které je násobkem jejich velikost a pole, které jsou 8 bajtů nebo více musí mít posuny, které je násobkem 8. Jiným řešením je použití `LayoutKind.Sequential` místo `LayoutKind.Explicit`, pokud je možné logicky.
+ Všechna pole, která jsou menší než 8 bajtů musí mít posuny, které jsou násobkem jejich velikost a pole, které mají 8 bajtů nebo více musí mít posuny, které jsou násobkem 8. Druhým řešením je použití `LayoutKind.Sequential` místo `LayoutKind.Explicit`, pokud přiměřené.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Toto upozornění má být potlačeno pouze v případě, že se vyskytuje v chybě.
+ Toto upozornění má výjimka potlačit pouze v případě, že dojde k chybě.

@@ -14,37 +14,41 @@ ms.assetid: 599ad877-3a15-426c-bf17-5de15427365f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 04a49671c4efc725a8796b050764dc4d9949f808
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ad4328c13403b1bea6a4358661b3347404592c02
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922253"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549716"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Označte všechna neserializovatelná pole
+
 |||
 |-|-|
 |TypeName|MarkAllNonSerializableFields|
 |CheckId|CA2235|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Bez ukončování řádků|
+|Narušující změna|Pevné|
 
 ## <a name="cause"></a>příčina
  Neserializovatelný typ pole instance je deklarován v serializovatelném typu.
 
 ## <a name="rule-description"></a>Popis pravidla
- Serializovatelné typ je ten, který je označené <xref:System.SerializableAttribute?displayProperty=fullName> atribut. Když je typ serializován, <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> je vyvolána výjimka, pokud typ obsahuje pole instance typu, který není serializovatelný.
+ Serializovatelný typ. je ten, který je označen <xref:System.SerializableAttribute?displayProperty=fullName> atribut. Když je typ serializován, <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> je vyvolána výjimka, pokud typ obsahuje pole instance typu, který není serializovatelný.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení toto pravidlo, použít <xref:System.NonSerializedAttribute?displayProperty=fullName> atribut pole, které není serializovatelný.
+ Chcete-li opravit porušení tohoto pravidla, použijte <xref:System.NonSerializedAttribute?displayProperty=fullName> atributu na pole, který není serializovatelný.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Pouze v případě potlačit upozornění na toto pravidlo <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> typ je deklarován umožňuje instancí pole, které chcete serializovat a deserializovat.
+ Pouze v případě potlačit upozornění tohoto pravidla <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> typ je deklarován, která umožňuje instance pole, které chcete serializovat a deserializovat.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typ, který porušuje pravidlo a typ, který splňuje pravidlo.
+ Následující příklad ukazuje typ, který porušuje pravidla a typ, který splňuje pravidlo.
 
  [!code-csharp[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/CSharp/ca2235-mark-all-non-serializable-fields_1.cs)]
  [!code-vb[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/VisualBasic/ca2235-mark-all-non-serializable-fields_1.vb)]

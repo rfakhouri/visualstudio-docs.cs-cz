@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 302ecdfaf4c621f0a9a34b0a5cba79ff652990a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8b13441c279254525c4ffd892e60ae2b018e39ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898035"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547686"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Vyhněte se nadbytečným parametrům na obecných typech
 |||
@@ -32,16 +32,16 @@ ms.locfileid: "31898035"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Externě viditelné obecného typu má více než dva parametry typu.
+ Externě viditelný obecný typ má více než dva parametry typu.
 
 ## <a name="rule-description"></a>Popis pravidla
- Čím více parametrů typu obecný typ obsahuje, tím obtížnější je vědět a zapamatovat si, co každý z parametrů typu představuje. Je obvykle zřejmé se jeden typ parametru, jako v `List<T>`a v některých případech se dva parametry typu, jako v `Dictionary<TKey, TValue>`. Pokud existuje víc než dva parametry typu, je obtížné stane příliš velký pro většinu uživatelů (například `TooManyTypeParameters<T, K, V>` v jazyce C# nebo `TooManyTypeParameters(Of T, K, V)` v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ Čím více parametrů typu obecný typ obsahuje, tím obtížnější je vědět a zapamatovat si, co každý z parametrů typu představuje. To je obvykle zřejmé s jedním parametrem typu, jako v `List<T>`a v některých případech se dvěma parametry typu, jako v `Dictionary<TKey, TValue>`. Pokud existuje více než dvěma parametry typu, je obtížné stane příliš velký pro většinu uživatelů (například `TooManyTypeParameters<T, K, V>` v jazyce C# nebo `TooManyTypeParameters(Of T, K, V)` v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo, změňte návrh používat více než dva parametry typu.
+ Chcete-li opravit porušení tohoto pravidla, změňte návrhu a použít více než dvěma parametry typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Pokud návrh absolutně vyžaduje více než dva parametry typu není potlačení upozornění od tohoto pravidla. Poskytuje obecné typy v syntaxi, který se snadno pochopit a používat zkracuje čas, který je potřeba další a zvyšuje počet přijetí nové knihovny.
+ Nepotlačujte upozornění tohoto pravidla, pokud návrh naprosto vyžaduje více než dvěma parametry typu. Poskytuje obecné typy v syntaxi, která je snadno pochopitelný a snižuje čas, který je potřeba další informace a zvýší frekvence přijetí nové knihovny.
 
 ## <a name="related-rules"></a>Související pravidla
  [CA1010: Kolekce musí implementovat obecné rozhraní](../code-quality/ca1010-collections-should-implement-generic-interface.md)
@@ -58,5 +58,5 @@ ms.locfileid: "31898035"
 
  [CA1007: Použijte obecné typy, kde je to vhodné](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
  [Obecné typy](/dotnet/csharp/programming-guide/generics/index)

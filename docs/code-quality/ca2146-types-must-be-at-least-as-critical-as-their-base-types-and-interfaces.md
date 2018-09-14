@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a609e765e5c5013ea0903683439f313f7de95017
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e829ae7f3546556ad80d0dd4c1d5d5b80eae9a4f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917538"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547419"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Typy nesmějí být kritické méně než jejich základní typy a rozhraní
 |||
@@ -28,13 +28,13 @@ ms.locfileid: "31917538"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Transparentní typ je odvozen od typu, který je označený s <xref:System.Security.SecuritySafeCriticalAttribute> nebo <xref:System.Security.SecurityCriticalAttribute>, nebo typu, který je označený s <xref:System.Security.SecuritySafeCriticalAttribute> atribut je odvozený od typu, který je označené <xref:System.Security.SecurityCriticalAttribute> atribut.
+ Transparentní typ je odvozen od typu, který je označen <xref:System.Security.SecuritySafeCriticalAttribute> nebo <xref:System.Security.SecurityCriticalAttribute>, nebo typ, který je označen <xref:System.Security.SecuritySafeCriticalAttribute> atribut je odvozen z typu, který je označen pomocí <xref:System.Security.SecurityCriticalAttribute> atribut.
 
 ## <a name="rule-description"></a>Popis pravidla
- Toto pravidlo je vyvoláno, když má odvozený typ atribut transparentnosti zabezpečení, který není tak kritický jako jeho základní typ nebo implementované rozhraní. Pouze kritické typy lze odvodit z kritických základních typů nebo mohou implementovat kritická rozhraní a pouze kritické typy nebo bezpečně kritické typy mohou být odvozeny ze základních bezpečně kritických typů nebo mohou implementovat bezpečně kritická rozhraní. Výsledkem porušení toto pravidlo v průhlednost úrovně 2 <xref:System.TypeLoadException> pro odvozený typ.
+ Toto pravidlo je vyvoláno, když má odvozený typ atribut transparentnosti zabezpečení, který není tak kritický jako jeho základní typ nebo implementované rozhraní. Pouze kritické typy lze odvodit z kritických základních typů nebo mohou implementovat kritická rozhraní a pouze kritické typy nebo bezpečně kritické typy mohou být odvozeny ze základních bezpečně kritických typů nebo mohou implementovat bezpečně kritická rozhraní. Za následek porušení tohoto pravidla v transparentnosti úrovně 2 <xref:System.TypeLoadException> pro odvozeného typu.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li odstranit tento porušení, označte odvozené nebo prováděcí typ s průhlednost atribut, který je důležité jako základní typ nebo rozhraní.
+ Pokud chcete vyřešit toto porušení, označte odvozené nebo implementující typ s atributem transparentnosti, která jsou kritická jako základní typ nebo rozhraní.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Nepotlačujte upozornění na toto pravidlo.

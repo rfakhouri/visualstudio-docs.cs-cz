@@ -15,14 +15,17 @@ ms.assetid: 114c0161-261a-40ad-8b2c-0932d6909d2a
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c312f237f6cd728b07833af6db94825c785b982e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b7965665ea59da6833a01885201a25f1e24b80ca
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919194"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547380"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Přetižte operátor equals při přepsání ValueType.Equals
 |||
@@ -30,15 +33,15 @@ ms.locfileid: "31919194"
 |TypeName|OverloadOperatorEqualsOnOverridingValueTypeEquals|
 |CheckId|CA2231|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Bez ukončování řádků|
+|Narušující změna|Pevné|
 
 ## <a name="cause"></a>příčina
- Typ hodnoty přepsání <xref:System.Object.Equals%2A?displayProperty=fullName> ale neimplementuje operátor rovnosti.
+ Hodnotový typ přepisuje <xref:System.Object.Equals%2A?displayProperty=fullName> , ale neimplementuje operátor rovnosti.
 
 ## <a name="rule-description"></a>Popis pravidla
- Ve většině programovacích jazycích neexistuje žádný výchozí implementaci třídy operátor rovnosti (==) u typů hodnot. Pokud si programovací jazyk podporuje přetížení operátoru, měli byste zvážit implementace operátor rovnosti. Své chování by měla být stejná jako ve <xref:System.Object.Equals%2A>.
+ Ve většině programovacích jazyků neexistuje žádný výchozí implementace operátoru rovnosti (==) pro typy hodnot. Pokud svůj oblíbený programovací jazyk podporuje přetížení operátoru, měli byste zvážit, implementoval operátor rovnosti. Musí být shodná s jeho chování <xref:System.Object.Equals%2A>.
 
- Operátor rovnosti výchozí nelze použít v přetížené implementace operátor rovnosti. To způsobí, že k přetečení zásobníku. Pokud chcete implementovat operátor rovnosti, použijte metodu Object.Equals v implementaci. Příklad:
+ V implementaci přetížení operátoru rovnosti nelze použít výchozí operátor rovnosti. To způsobí přetečení zásobníku. K implementaci operátor rovnosti, použijte metodu Object.Equals v implementaci. Příklad:
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -58,10 +61,10 @@ return left.Equals(right);
  Chcete-li opravit porušení tohoto pravidla, implementujte operátor rovnosti.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění na toto pravidlo; Doporučujeme ale, pokud je to možné poskytnout operátor rovnosti.
+ Je bezpečné potlačit upozornění tohoto pravidla; Doporučujeme však, že pokud je to možné zadat operátor rovnosti.
 
 ## <a name="example"></a>Příklad
- V následujícím příkladu definuje typ, který je v rozporu toto pravidlo.
+ Následující příklad definuje typ, který porušuje tato pravidla.
 
  [!code-csharp[FxCop.Usage.EqualsGetHashCode#1](../code-quality/codesnippet/CSharp/ca2231-overload-operator-equals-on-overriding-valuetype-equals_1.cs)]
 
@@ -76,5 +79,6 @@ return left.Equals(right);
 
  [CA2218: Přepište GetHashCode při přepsání Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
-## <a name="see-also"></a>Viz také
- <xref:System.Object.Equals%2A?displayProperty=fullName>
+## <a name="see-also"></a>Viz také:
+
+- <xref:System.Object.Equals%2A?displayProperty=fullName>

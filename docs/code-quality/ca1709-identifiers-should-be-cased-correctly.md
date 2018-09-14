@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 589ef84b5291b9e674d5d540b75edd5e7f8edbaf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0cf5b5bba2339b7b7fad84420e1ee148d6fee3b7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915639"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548774"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Malá a velká písmena identifikátorů by měla být použita správně
 |||
@@ -29,37 +29,37 @@ ms.locfileid: "31915639"
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
 |Kategorie|Microsoft.Naming|
-|Narušující změna|Ukončování řádků - při sestavení, obory názvů, typy, členů a parametry.<br /><br /> Non narušující - při vyvolání na parametry obecného typu.|
+|Narušující změna|Zásadní – při aktivaci pro sestavení, oborů názvů, typy, členy a parametry.<br /><br /> Bez konce – při vyvolání v parametrech obecného typu.|
 
 ## <a name="cause"></a>příčina
- Název identifikátoru není použita správně.
+ Název identifikátoru není správně formátováno.
 
  \- nebo –
 
- Název identifikátoru obsahuje zkratku dvoupísmenným a druhé písmeno je malá písmena.
+ Název identifikátoru obsahuje dvoupísmenné zkratky a druhý písmena jsou malá písmena.
 
  \- nebo –
 
  Název identifikátoru obsahuje zkratka tři nebo více velkých písmen.
 
 ## <a name="rule-description"></a>Popis pravidla
- Zásady vytváření názvů zadejte obecný vzhled pro knihovny cílené modul common language runtime. Tím se snižuje křivky learning, který je vyžadován pro nové knihovny softwaru a zvyšuje sebejistotu zákazníka, knihovny byla vyvinuta uživatelem s odbornými znalostmi v vývoj spravovaného kódu.
+ Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. Taková konzistence snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
 
- Podle konvence použijte názvy parametrů camelCase; obor názvů, typ a člen názvy použít Pascal velká a malá písmena. V názvu ve formátu camelCase první písmeno je malá písmena a je první písmeno všechny zbývající slova v názvu na velká písmena. Příklady ve formátu camelCase názvů jsou "packetSniffer", "ioFile" a "fatalErrorCode". V názvu použita Pascal je první písmeno velké a první písmeno všechny zbývající slova v názvu je na velká písmena. Příkladem použita Pascal názvy jsou "PacketSniffer", "IOFile" a "FatalErrorCode".
+ Podle konvence používají názvy parametrů ve formátu camelCase velká a malá písmena a obor názvů, typ a názvů členů pomocí Pascal velká a malá písmena. V názvu ve formátu camelCase první písmena jsou malá písmena a je velké písmeno první písmeno zbývající slov v názvu. Příklady názvů ve formátu camelCase `packetSniffer`, `ioFile`, a `fatalErrorCode`. Název stylu jazyka Pascal je velké písmeno první písmeno a je velké písmeno první písmeno zbývající slov v názvu. Příklady názvů jazyka Pascal `PacketSniffer`, `IOFile`, a `FatalErrorCode`.
 
- Toto pravidlo rozdělí název na slova založené na malá a velká písmena a kontroluje všechny dvoupísmenným slova proti seznam běžných dvoupísmenným slova, jako jsou "V" nebo "Moje". Pokud není nalezena shoda, předpokládá se jako zkratka slovo. Kromě toho toto pravidlo předpokládá, že nalezl zkratka, pokud název obsahuje buď čtyři velká písmena v řádku, nebo v řádku na konci názvu tři velká písmena.
+ Toto pravidlo rozdělí slova malých a velkých písmen podle názvu a kontroluje všechny slova dvoupísmenné seznamem běžná slova dvou písmen, jako je například "V" nebo "My". Pokud není nalezena shoda, slovo je považován za zkratka. Kromě toho toto pravidlo předpokládá, že našla zkratka, pokud název obsahuje buď čtyři velká písmena v řádku nebo v řádku na konec názvu tři velká písmena.
 
- Podle konvence, použijte dva znaky velkými písmeny a režim tři nebo více znaků pomocí Pascal velká a malá písmena. Následující příklady používají tyto zásady vytváření názvů: "DB", "Vy", "Cpa" a 'Ecma'. Následující příklady porušují konvence: "Io" ", 'XML' a 'DoD' a pro názvy nonparameter, 'xp' a 'panelu'.
+ Podle konvence dvoupísmenné zkratky používat všechna velká písmena a zkratky tři nebo více znaků používat Pascal velká a malá písmena. Následující příklady používají tyto zásady vytváření názvů: "DB", "Vy", "Cpa" a "Ecma". Následující příklady porušují Tato konvence: ' Vstup/výstup', 'XML' a "Amerického ministerstva obrany" a pro názvy bez parametrů, "xp" a "panelu".
 
- 'ID, je použita zvláštní způsobit narušení tohoto pravidla. 'Id' není zkratka, ale je zkratkou pro "Identifikace".
+ "ID" je speciální malými a velkými písmeny způsobit porušení tohoto pravidla. 'Id' není zkratka, ale je zkratkou pro "Identifikace".
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Změňte název tak, aby je použita správně.
+ Změňte název tak, že je správně formátováno.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit toto upozornění, pokud máte vlastní zásady vytváření názvů, nebo pokud identifikátor představuje názvu, třeba název společnosti nebo technologii.
+ Je bezpečné pro potlačení tohoto upozornění, pokud máte vlastní zásady vytváření názvů, nebo pokud tento identifikátor představuje název správný, například název společnosti nebo technologie.
 
- Můžete také přidat konkrétní podmínky, zkratky a zkratky to vlastní slovník analýzy kódu. Podmínky zadané ve slovníku vlastní nezpůsobí porušení toto pravidlo. Další informace najdete v tématu [postupy: přizpůsobení slovníku analýzy kódu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ Můžete také přidat konkrétní podmínky, zkratky a zkratky, které do vlastního slovníku analýzy kódu. Podmínky zadané ve slovníku nezpůsobí porušení tohoto pravidla. Další informace najdete v tématu [postupy: přizpůsobení slovníku analýzy kódu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 ## <a name="related-rules"></a>Související pravidla
  [CA1708: Identifikátory by se měly lišit více než použitím malých a velkých písmen](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

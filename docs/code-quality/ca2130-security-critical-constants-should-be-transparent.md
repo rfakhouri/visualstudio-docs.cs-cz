@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 999a4a15dd83db66365bc9ee3701fd3130cedeb1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 212bd1bc9f1f5b66fa8ddb485c5ec287ff39c754
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914351"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551347"
 ---
 # <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130: Konstanty kritické pro zabezpečení musejí být transparentní
 |||
@@ -28,18 +28,18 @@ ms.locfileid: "31914351"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Konstantní pole nebo člena výčtu je označené <xref:System.Security.SecurityCriticalAttribute>.
+ Konstanty pole nebo na člena výčtu je označeno <xref:System.Security.SecurityCriticalAttribute>.
 
 ## <a name="rule-description"></a>Popis pravidla
  Pro konstantní hodnoty není vynucována transparentnost, protože kompilátory vkládají konstantní hodnoty do kódu, aby za běhu programu nebylo zapotřebí žádné vyhledávání. Konstantní pole by měla být transparentní z pohledu zabezpečení, aby kontroloři kódu nepředpokládali, že transparentní kód nemůže ke konstantě přistoupit.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo, odeberte atribut SecurityCritical z pole nebo hodnoty.
+ Chcete-li opravit porušení tohoto pravidla, odeberte atribut SecurityCritical z pole nebo hodnoty.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- V následujících příkladech, hodnota výčtu `EnumWithCriticalValues.CriticalEnumValue` a konstantu `CriticalConstant` vyvolat toto upozornění. Chcete-li opravit problémy, odeberte [`SecurityCritical`] atribut, aby byly zabezpečení transparentní.
+ V následujících příkladech, hodnota výčtu `EnumWithCriticalValues.CriticalEnumValue` a konstanty `CriticalConstant` vyvolat toto upozornění. Chcete-li opravit problémy, odeberte [`SecurityCritical`] atribut, aby se daly zabezpečení transparentní.
 
  [!code-csharp[FxCop.Security.CA2130.ConstantsShouldBeTransparent#1](../code-quality/codesnippet/CSharp/ca2130-security-critical-constants-should-be-transparent_1.cs)]

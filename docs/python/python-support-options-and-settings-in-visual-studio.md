@@ -19,12 +19,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1de4f6a71394c38ef72224cfeacd23663b0bac7b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: b158955c9730898c3624c9a832f5cc75c62ba338
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468654"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549648"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Možnosti pro Python v sadě Visual Studio
 
@@ -46,7 +46,7 @@ Existují také další možnosti specifické pro Python na **textový Editor** 
 | **Při vytváření virtuálních prostředí zobrazit okno výstupu**| On | Vymazat, aby se zabránilo **výstup** okno nezobrazovalo. |
 | **Zobrazit okno výstupu při instalaci nebo odebrání balíčků** | On | Vymazat, aby se zabránilo **výstup** okno nezobrazovalo. |
 | **Vždy spustit jako správce pip** | Off | Vždy ukládá `pip install` operace pro všechna prostředí. Při instalaci balíčků sady Visual Studio vyzve k zadání oprávnění správce, pokud se prostředí nachází v chráněné části systému souborů, jako *c:\Program Files*. V této výzvy můžete vždy zvýšit `pip install` pro právě jeden prostředí. Zobrazit [balíčky kartu](python-environments-window-tab-reference.md#packages-tab). |
-| **Automatické generování databáze pro dokončování při prvním použití** | On | *Platí pro Visual Studio 2017 verze 15.5 a starší a novějších verzí při použití databáze IntelliSense.* Dokončení databáze pro knihovnu upřednostňuje při psaní kódu, která ji používá. Další informace najdete v tématu [odkaz na okno prostředí – karty Intellisense](python-environments-window-tab-reference.md). |
+| **Automatické generování databáze pro dokončování při prvním použití** | On | *Platí pro Visual Studio 2017 verze 15.5 a starší a novějších verzí při použití databáze IntelliSense.* Dokončení databáze pro knihovnu upřednostňuje při psaní kódu, která ji používá. Další informace najdete v tématu [kartu technologie Intellisense](python-environments-window-tab-reference.md#intellisense-tab). |
 | **Ignorovat systémové proměnné PYTHONPATH** | On | PYTHONPATH ve výchozím nastavení se ignoruje, protože Visual Studio poskytuje přímější prostředky ke specifikaci cesty pro hledání v prostředí a projekty. Zobrazit [cesty hledání](search-paths.md) podrobnosti. |
 | **Po přidání propojených souborů aktualizovat cesty pro hledání** | On | Při nastavení, přidávání [propojený soubor](managing-python-projects-in-visual-studio.md#linked-files) do projektu aktualizace [cesty hledání](search-paths.md) tak, aby IntelliSense můžete zahrnout obsah složky propojený soubor databáze pro dokončování. Zrušte zaškrtnutí tohoto políčka vyloučit takový obsah z databáze pro dokončování. |
 | **Upozornění při importování modulu se nenašel.** | On | Zrušte tuto možnost, chcete-li potlačit upozornění, když víte, importovaného modulu není v současné době k dispozici, ale jinak nemá vliv na kód operace. |
@@ -111,7 +111,7 @@ Existují také další možnosti specifické pro Python na **textový Editor** 
 
 | Možnost | Výchozí | Popis |
 | --- | --- | --- |
-| **Potvrzen zadáním následujících znaků** | **{}[]().,:, +-* / % &&#124;^ ~ = <> #@\\** | Tyto znaky obvykle podle identifikátor, který jeden můžou vybrat ze seznamu dokončení, proto je vhodné potvrdit dokončení jednoduše zadáním znaku. Můžete odebrat nebo přidat zvláštní znaky do seznamu podle potřeby.  |
+| **Potvrzen zadáním následujících znaků** | **{}\[\]().,:, +-* / % &&#124;^ ~ = <> #@\\** | Tyto znaky obvykle podle identifikátor, který jeden můžou vybrat ze seznamu dokončení, proto je vhodné potvrdit dokončení jednoduše zadáním znaku. Můžete odebrat nebo přidat zvláštní znaky do seznamu podle potřeby.  |
 | **Zadejte aktuální dokončení potvrzení změn** | On | Při nastavení **Enter** klíč vybere a použije aktuálně vybraného dokončení stejně jako u výše uvedených znaků (ale samozřejmě není znak pro **Enter** proto ji nelze přímo přejít do tohoto seznamu!). |
 | **Přidat nový řádek na konec plně napsaného slova** | Off | Ve výchozím nastavení, pokud zadáte celé slovo, které se zobrazí automaticky otevírané okno dokončení a stiskněte klávesu **Enter**, potvrdíte, že dokončení. Nastavením této možnosti můžete efektivně potvrdit dokončování napsání identifikátor, tak, aby **Enter** vloží nový řádek. |
 

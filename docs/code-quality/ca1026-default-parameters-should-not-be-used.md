@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf28c16bc5457309c2de42d79574dbb64739d9e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: faced51a807a69ecc2e11a04e9ed5e292f4d3a19
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901644"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547604"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Neměly by být použity výchozí parametry
 |||
@@ -32,15 +32,15 @@ ms.locfileid: "31901644"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Typ externě viditelné obsahuje metodu externě viditelné, která používá výchozí parametr.
+ Externě viditelný typ obsahuje externě viditelná metoda, která používá výchozí parametr.
 
 ## <a name="rule-description"></a>Popis pravidla
- Metody, které používají výchozí parametry jsou povoleny v části specifikace CLS (Common Language); specifikace CLS však umožňuje kompilátory Ignorovat hodnoty, které jsou přiřazeny k tyto parametry. Kód, který je napsán pro kompilátory, které ignorovat výchozí hodnoty parametrů nutné explicitně zadat argumenty pro každou výchozí parametr. Pokud chcete zachovat chování, které chcete napříč programovacích jazyků, měl by být nahrazen metody, které používají výchozí parametry přetížení metody, které poskytují výchozí parametry.
+ Metody používající výchozí parametry jsou povoleny v rámci specifikace CLS (Common Language); ale specifikace CLS umožňuje kompilátorům Ignorovat hodnoty přiřazené těmto parametrům. Kód, který je napsán pro kompilátory, které ignorovat výchozí hodnoty parametrů musíte explicitně zadat argumenty pro každý parametr výchozí. Chcete-li zachovat shodné chování napříč programovacími jazyky, by měl vyměnit metody používající výchozí parametry přetížením metody, která výchozí parametry poskytují.
 
- Kompilátor ignoruje hodnoty parametrů výchozí spravovaných rozšíření pro C++ při přístupu ke spravovaného kódu. Visual Basic – kompilátor podporuje metody, které mají výchozí parametry, které používají [volitelné](/dotnet/visual-basic/language-reference/modifiers/optional) – klíčové slovo.
+ Kompilátor ignoruje hodnoty výchozí parametry pro spravované rozšíření jazyka C++ při přístupu ke spravovaným kódem. Kompilátor jazyka Visual Basic podporuje metody, které mají výchozí parametry, které používají [volitelné](/dotnet/visual-basic/language-reference/modifiers/optional) – klíčové slovo.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li porušení toto pravidlo, nahraďte metodu, která používá výchozí parametry s přetížení metody, které poskytují výchozí parametry.
+ Chcete-li opravit porušení tohoto pravidla, nahraďte metody používající výchozí parametry přetížením metody, které poskytují výchozí parametry.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Nepotlačujte upozornění na toto pravidlo.
@@ -53,5 +53,5 @@ ms.locfileid: "31901644"
 ## <a name="related-rules"></a>Související pravidla
  [CA1025: Nahraďte opakované argumenty polem parametrů](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
  [Jazyková nezávislost a jazykově nezávislé komponenty](/dotnet/standard/language-independence-and-language-independent-components)

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5863f4d8ca4db47f7e537f0b1abc5eb280434c80
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ff16cdce4be04bd076c93763fb6a22d2721675f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916796"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551779"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106: Zabezpečte nepodmíněné výrazy
+
 |||
 |-|-|
 |TypeName|SecureAsserts|
@@ -32,16 +33,18 @@ ms.locfileid: "31916796"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Metoda uplatňuje oprávnění a na volajícím nejsou vykonány žádné kontroly zabezpečení.
+ Metoda uplatňuje oprávnění a provádí kontroly zabezpečení volajícího.
 
 ## <a name="rule-description"></a>Popis pravidla
- Uplatnění oprávnění zabezpečení bez provedení jakékoliv kontroly zabezpečení může zanechat ve vašem kódu zneužitelné slabé stránky zabezpečení. Procházení zásobníku zabezpečení zastaví, když je uplatněna oprávnění zabezpečení. Pokud uplatňujete oprávnění bez provedení jakýchkoli kontrol na volajícího, může volající nepřímo spouštění kódu pomocí oprávnění. Vyhodnotí bez kontroly zabezpečení jsou přípustné pouze pokud jste si jisti, že assert nelze použít škodlivé způsobem. Assert je neškodné, pokud je kód, který zavoláte neškodné nebo uživatelé nemůžou projít libovolné informace do kódu, které můžete volat.
+ Uplatnění oprávnění zabezpečení bez provedení jakékoliv kontroly zabezpečení může zanechat ve vašem kódu zneužitelné slabé stránky zabezpečení. Procházení zásobníku zabezpečení zastaví, když je uplatněna oprávnění zabezpečení. Pokud uplatňujete oprávnění bez provedení jakékoli kontroly volajícího, volající mohl nepřímo spustit kód pomocí oprávnění. Nepodmíněné výrazy bez kontroly zabezpečení jsou přípustné, pokud si nejste jisti, že že kontrolní výraz nelze použít škodlivých způsobem. Pokud kód, který voláte je neškodný, nebo pokud uživatelé nemůžou projít libovolné informace pro kód, který voláte je neškodný assert.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo, přidejte metodu nebo jeho deklarující typ požadavek zabezpečení.
+ Chcete-li opravit porušení tohoto pravidla, přidejte do metody nebo její deklarující typ požadavku zabezpečení.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačíte upozornění na toto pravidlo až po kontrolu pečlivě zabezpečení.
+ Potlačit upozornění tohoto pravidla až po přezkoumání pečlivé ověření zabezpečení.
 
-## <a name="see-also"></a>Viz také
- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [Pokyny pro zabezpečené kódování](/dotnet/standard/security/secure-coding-guidelines)
+## <a name="see-also"></a>Viz také:
+
+- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
+- [Pokyny pro zabezpečené kódování](/dotnet/standard/security/secure-coding-guidelines)

@@ -16,82 +16,91 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7fb5f55ee345fa47a4a4510fe8121b82d1c0ae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e087a7be95cfc6ba97d62720f2950672ca4bf199
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919635"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545588"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Sestavení by měly mít platné silné názvy
+
 |||
 |-|-|
 |TypeName|AssembliesShouldHaveValidStrongNames|
 |CheckId|CA2210|
 |Kategorie|Microsoft.Design|
-|Narušující změna|Bez ukončování řádků|
+|Narušující změna|Pevné|
 
 ## <a name="cause"></a>příčina
- Sestavení není podepsáno silným názvem, nebylo možné ověřit silný název nebo silným názvem nebude platný bez aktuální nastavení registru počítače.
+
+Sestavení není podepsáno silným názvem, silného názvu nelze ověřit nebo silný název autoritou nebude platný bez aktuální nastavení registru počítače.
 
 ## <a name="rule-description"></a>Popis pravidla
- Toto pravidlo načte a ověřuje silný název sestavení. Dojde k narušení, pokud platí některá z následujících akcí:
 
--   Sestavení nemá silný název.
+Toto pravidlo zjišťuje a ověří silný název sestavení. Porušení nastane, pokud je splněna některá z následujících akcí:
 
--   Po podepsání byla změněna sestavení.
+- Sestavení nemá silný název.
 
--   Sestavení je podepsaný zpoždění.
+- Sestavení byl změněn po podepsání.
 
--   Nesprávně podepsaná sestavení nebo podepisování se nezdařilo.
+- Sestavení se zpožděným podpisem.
 
--   Sestavení vyžaduje nastavení registru předat ověření. Například nástroj silného názvu (Sn.exe) byl použit pro přeskočení ověření pro sestavení.
+- Nesprávně podepsaná sestavení nebo podepisování selhalo.
 
- Silný název chrání klienty před neúmyslným načtením narušeného sestavení. Sestavení bez silných názvů by kromě velmi omezených scénářů neměla být nasazována. Pokud sdílíte nebo šíříte sestavení, která nejsou správně podepsána, může být sestavení záměrně poškozeno, modul CLR je nemusí načíst nebo uživatelé mohou být nuceni vypnout na svém počítači ověřování. Sestavení bez silným názvem má z následující nevýhody:
+- Sestavení vyžaduje nastavení registru úspěšně ověřen. Například nástroj Strong Name (Sn.exe) byla použita k přeskočení ověření pro sestavení.
 
--   Nelze ověřit jeho zdroje.
+Silný název chrání klienty před neúmyslným načtením narušeného sestavení. Sestavení bez silných názvů by kromě velmi omezených scénářů neměla být nasazována. Pokud sdílíte nebo šíříte sestavení, která nejsou správně podepsána, může být sestavení záměrně poškozeno, modul CLR je nemusí načíst nebo uživatelé mohou být nuceni vypnout na svém počítači ověřování. Sestavení bez silného názvu se z těchto nevýhod:
 
--   Modul CLR nelze upozornit uživatele, pokud obsah sestavení bylo změněno.
+- Nelze ověřit jeho původu.
 
--   Nebylo možné načíst do globální mezipaměti sestavení.
+- Modul common language runtime nemůže upozornit uživatele, pokud obsah sestavení byl změněn.
 
- Všimněte si, že se načíst a analyzovat sestavení se zpožděním podepsané, je nutné zakázat ověření pro sestavení.
+- Nelze načíst do globální mezipaměti sestavení.
+
+Všimněte si, že se načíst a analyzovat sestavení se zpožděným podpisem, je nutné zakázat ověřování pro sestavení.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- **Vytvořte soubor klíče**
 
- Použijte jednu z následujících postupů:
+### <a name="create-a-key-file"></a>Vytvořit soubor klíče
 
--   Použití nástroje Linker sestavení (Al.exe) poskytované [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK.
+Použijte jednu z následujících postupů:
 
--   Pro [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verze 1.0 nebo verze 1.1, použijte buď <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> nebo <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> atribut.
+- Použijte nástroj Assembly Linker (Al.exe) poskytuje [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK.
 
--   Pro [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], použijte buď `/keyfile` nebo `/keycontainer` – možnost kompilátoru [/keyfile (zadat klíč nebo pár klíč pro podepsání sestavení)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) nebo  [ /keycontainer (zadat kontejner klíče pro podepsání sestavení)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) v jazyce C++ – možnost linkeru).
+- Pro [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] v1.0 nebo v1.1, použijte buď <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> nebo <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> atribut.
 
- **Podepsat své sestavení se silným názvem v sadě Visual Studio**
+- Pro [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], použijte buď `/keyfile` nebo `/keycontainer` – možnost kompilátoru [/keyfile (zadat klíč nebo dvojici klíč k podepsání sestavení)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) nebo  [ /keycontainer (určení kontejneru klíčů pro podpis sestavení)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) – možnost linkeru v jazyce C++).
 
-1.  V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otevřete řešení.
+### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>Podepsání sestavení silným názvem v sadě Visual Studio
 
-2.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a pak klikněte na tlačítko **vlastnosti.**
+1. V sadě Visual Studio otevřete řešení.
 
-3.  Klikněte na tlačítko **podpisování** a vyberte **podepsání sestavení** zaškrtávací políčko.
+2. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a potom klikněte na tlačítko **vlastnosti.**
 
-4.  Z **vyberte soubor klíče se silným názvem**, vyberte **nový**.
+3. Klikněte na tlačítko **podepisování** kartu a vyberte **podepsat sestavení** zaškrtávací políčko.
 
-     **Vytvořit klíč se silným názvem** okně se zobrazí.
+4. Z **vyberte soubor klíče se silným názvem**vyberte **nový**.
 
-5.  V **název souboru klíče**, zadejte název složitý název klíče.
+   **Vytvořit klíč se silným názvem** okně se zobrazí.
 
-6.  Vyberte, jestli chcete chránit klíč s heslem a potom klikněte na **OK**.
+5. V **název souboru klíče**, zadejte název pro váš klíč se silným názvem.
 
-7.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a pak klikněte na tlačítko **sestavení**.
+6. Zvolte, jestli se k ochraně klíče s heslem a potom klikněte na **OK**.
 
- **Podepsat své sestavení se silným názvem mimo Visual Studio**
+7. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a potom klikněte na tlačítko **sestavení**.
 
--   Použijte nástroj pro silný název (Sn.exe), které poskytuje [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK. Další informace najdete v tématu [Sn.exe (nástroj silným názvem)](/dotnet/framework/tools/sn-exe-strong-name-tool).
+### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Podepsání sestavení silným názvem mimo sadu Visual Studio
+
+Použijte nástroj pro silný název (Sn.exe), který je poskytován [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK. Další informace najdete v tématu [Sn.exe (nástroj Strong Name)](/dotnet/framework/tools/sn-exe-strong-name-tool).
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Pouze potlačit upozornění na toto pravidlo, je-li sestavení slouží v prostředí, kde manipulaci s obsahem nehrají důležitou roli.
 
-## <a name="see-also"></a>Viz také
- <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> [Postupy: podepsání sestavení se silným názvem](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name) [Sn.exe (nástroj pro silný název)](/dotnet/framework/tools/sn-exe-strong-name-tool)
+Pouze potlačit upozornění tohoto pravidla, pokud sestavení se používá v prostředí, kde manipulaci s obsahem není žádný problém.
+
+## <a name="see-also"></a>Viz také:
+
+- <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>
+- <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
+- [Postupy: Podepsání sestavení silným názvem](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
+- [Sn.exe (nástroj pro silný název)](/dotnet/framework/tools/sn-exe-strong-name-tool)

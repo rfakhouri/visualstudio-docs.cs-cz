@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 669f0ffc2e61d67bd57e965a4030b17af1eb1bb2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 033c7a73c404a2bd5146a17a1a7b4f2fa8b9c540
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914585"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545710"
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Nepoužívejte časovače, které zabraňují změně stavu napájení
 |||
@@ -32,13 +32,13 @@ ms.locfileid: "31914585"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Časovač má intervalu nastavena na dojde k více než jednou za sekundu.
+ Časovač se interval je nastavená na dojít k více než jednou za sekundu.
 
 ## <a name="rule-description"></a>Popis pravidla
- Není dotazování častěji než jednou za sekundu, nebo použít časovačů, ke kterým dochází častěji, než jeden čas za sekundu. Vyšší frekvence periodické aktivity budou udržovat procesor zaneprázdněný a ovlivňovat časovače úspory energie nečinnosti, které vypnou zobrazení a pevné disky.
+ Nedotazuje častěji než jednou za sekundu nebo použití časovače, ke kterým dochází častěji, než jeden čas za sekundu. Vyšší frekvence periodické aktivity budou udržovat procesor zaneprázdněný a ovlivňovat časovače úspory energie nečinnosti, které vypnou zobrazení a pevné disky.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Nastavit intervaly časovače proběhnout menší než jednou za sekundu.
+ Nastavte časovač intervalech, dojde k nejméně jednou za sekundu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Toto pravidlo má být potlačeno pouze v případě, že ohlásí časovač více než jednou za sekundu je povinná a důležité informace o nastavení mobilních zařízení můžete bezpečně ignorovat.
+ Toto pravidlo má výjimka potlačit pouze v případě aktivaci časovače více než jednou za sekundu je povinný a důležité informace o nastavení mobilních zařízení můžete bezpečně ignorovat.

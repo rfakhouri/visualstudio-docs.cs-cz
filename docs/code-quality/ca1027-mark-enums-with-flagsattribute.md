@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b11b64ffbf6245357cccd04c0e67cf8791f6351f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f6e3da71d2849c4690b33dd0f479fdf62aa0d7d7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899919"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549336"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Označte výčty pomocí FlagsAttribute
 |||
@@ -32,26 +32,26 @@ ms.locfileid: "31899919"
 |Narušující změna|Nenarušující|
 
 ## <a name="cause"></a>příčina
- Hodnoty veřejný výčet jsou zajišťuje dva nebo kombinace jiné hodnoty, které jsou definovány ve výčtu, a <xref:System.FlagsAttribute?displayProperty=fullName> atribut není k dispozici. Toto pravidlo na snížil počet falešných poplachů, nehlásí porušení pro výčty, které mají souvislý hodnoty.
+ Veřejný výčet hodnoty mocniny dvou nebo kombinací jiné hodnoty, které jsou definovány ve výčtu, a <xref:System.FlagsAttribute?displayProperty=fullName> atribut není k dispozici. Pokud chcete snížit počet falešně pozitivních výsledků, toto pravidlo sestavu porušení pro výčty, které mají souvislých hodnot.
 
 ## <a name="rule-description"></a>Popis pravidla
- Výčet je typ hodnoty, který definuje množinu souvisejících pojmenovaných konstant. Použít <xref:System.FlagsAttribute> pro výčet může být jeho pojmenované konstanty srozumitelně kombinaci. Představte si třeba výčet dny v týdnu v aplikaci, která uchovává informace o který den prostředky jsou k dispozici. Pokud je dostupnost každého prostředku zakódován pomocí výčet, který má <xref:System.FlagsAttribute> může být reprezentován přítomen, libovolnou kombinaci dnů. Atribut ID může být reprezentován pouze jeden den v týdnu.
+ Výčet je typ hodnoty, který definuje množinu souvisejících pojmenovaných konstant. Použít <xref:System.FlagsAttribute> výčtu když mohou být pojmenované konstanty smysluplně kombinovány. Představte si třeba výčet dny v týdnu v aplikaci, která uchovává informace o den, které prostředky jsou k dispozici. Pokud je dostupnost každého prostředku zakódován pomocí výčtu, která má <xref:System.FlagsAttribute> můžou být vyjádřeny současné libovolnou kombinací těchto dnů. Bez atributu může být reprezentován jenom jeden den v týdnu.
 
- Pro pole, které ukládají combinable výčty jsou hodnoty jednotlivých výčtu považovány za skupin bitů v poli. Proto tato pole jsou někdy označovány jako *bit pole*. Chcete-li kombinace hodnot výčtu pro úložiště v poli bit, použijte Boolean podmíněné operátory. K otestování bitová pole, které chcete určit, zda je hodnota konkrétní výčtu existuje, použijte Boolean logické operátory. Každou hodnotu, která je definována ve výčtu bitové pole k ukládání a načítání hodnot výčtu kombinované správně, musí být násobek dvou. Pokud tomu tak je, logická hodnota logické operátory nebude možné extrahovat jednotlivé výčtové hodnoty, které jsou uložené v poli.
+ U polí, které ukládají combinable – výčty hodnot jednotlivých výčtu jsou považovány za skupin bitů v poli. Proto tato pole jsou někdy označovány jako *bitová pole*. Chcete-li kombinace hodnot výčtu pro úložiště v bitové pole, použijte logická podmíněných operátorů. K otestování bitové pole. k určení, zda hodnota konkrétní výčtu není k dispozici, použijte logické logické operátory. Jednotlivé hodnoty, které je definováno ve výčtu bitové pole k ukládání a načítání hodnot výčtu kombinované správně, musí být mocninou čísla 2. Pokud to není tak logické logické operátory nebude možné extrahovat hodnoty jednotlivých výčtu, které jsou uloženy v poli.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení toto pravidlo, přidejte <xref:System.FlagsAttribute> výčtu.
+ Chcete-li opravit porušení tohoto pravidla, přidejte <xref:System.FlagsAttribute> do výčtu.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačíte upozornění na toto pravidlo, pokud nechcete, aby hodnoty výčtu, které mají být combinable.
+ Potlačit upozornění tohoto pravidla, pokud nechcete, aby výčtu hodnoty, které mají být kombinovatelných.
 
 ## <a name="example"></a>Příklad
- V následujícím příkladu `DaysEnumNeedsFlags` je výčet, který splňuje požadavky pro používání <xref:System.FlagsAttribute>, ale nechcete ho. `ColorEnumShouldNotHaveFlag` Výčet nemá hodnoty, které jsou zajišťuje dva, ale nesprávně určuje <xref:System.FlagsAttribute>. To porušuje pravidlo [CA2217: neoznačujte výčty pomocí FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
+ V následujícím příkladu `DaysEnumNeedsFlags` je výčet, který splňuje požadavky na používání <xref:System.FlagsAttribute>, ale nejsou dostupné. `ColorEnumShouldNotHaveFlag` Výčet nemá žádné hodnoty, které jsou pro mocniny dvou ale nesprávně určuje <xref:System.FlagsAttribute>. To porušuje pravidlo [CA2217: neoznačujte výčty pomocí FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
 
  [!code-csharp[FxCop.Design.EnumFlags#1](../code-quality/codesnippet/CSharp/ca1027-mark-enums-with-flagsattribute_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
  [CA2217: Neoznačujte výčty pomocí FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
  <xref:System.FlagsAttribute?displayProperty=fullName>

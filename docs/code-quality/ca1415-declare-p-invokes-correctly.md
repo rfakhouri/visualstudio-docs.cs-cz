@@ -1,5 +1,5 @@
 ---
-title: 'CA1415: Deklarujte vyvolá P správně'
+title: 'CA1415: Deklarujte správně volání nespravovaných kódů'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a690baeb804d3722d442c30077cc07d260a8952
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 603ba2448e9716a77ec7610a32d016dfc124c72c
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915760"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548644"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Deklarujte správně volání nespravovaných kódů
 |||
@@ -29,24 +29,24 @@ ms.locfileid: "31915760"
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
 |Kategorie|Microsoft.Interoperability|
-|Narušující změna|Non narušující – Pokud P/Invoke, který deklaruje parametr je nemohou vidět mimo sestavení. Rozdělení - P/Invoke, který deklaruje parametr si můžete prohlédnout mimo sestavení.|
+|Narušující změna|Bez konce – Pokud P/Invoke, který deklaruje parametr je nemohou vidět mimo sestavení. Rozdělení - P/Invoke, který deklaruje parametr viditelné mimo sestavení.|
 
 ## <a name="cause"></a>příčina
- Platforma vyvolání metody je nesprávně deklarován.
+ Metoda vyvolání platformy je deklarován nesprávně.
 
 ## <a name="rule-description"></a>Popis pravidla
- Platforma volání nespravovaného kódu metoda přístupů a je definován pomocí `Declare` – klíčové slovo v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nebo <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. V současné době toto pravidlo vyhledá metoda deklarace, které cílí Win32 funkce, které mají ukazatel na strukturu parametru OVERLAPPED vyvolání platformy a odpovídající spravované parametr není ukazatel na <xref:System.Threading.NativeOverlapped?displayProperty=fullName> struktury.
+ Platforma vyvolat metodu přístupy do nespravovaného kódu a je definován pomocí `Declare` – klíčové slovo v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nebo <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. V současné době toto pravidlo hledá deklarace metod, které se zaměřují na funkce Win32, které mají ukazatel na parametr struktury OVERLAPPED vyvolání platformy a odpovídající spravovaný parametr není ukazatel <xref:System.Threading.NativeOverlapped?displayProperty=fullName> struktury.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo, správně deklarovat platformou vyvolat metodu.
+ Chcete-li opravit porušení tohoto pravidla, deklarujte správně platformu vyvolání metody.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje vyvolání metod, které porušují pravidlo a splňovat pravidla platformy.
+ Následující příklad ukazuje metody, které porušují pravidlo a splňovat pravidla vyvolání platformy.
 
  [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../code-quality/codesnippet/CSharp/ca1415-declare-p-invokes-correctly_1.cs)]
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
  [Spolupráce s nespravovaným kódem](/dotnet/framework/interop/index)

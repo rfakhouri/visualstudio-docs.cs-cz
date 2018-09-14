@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c17ca59959107d25b7752297ec209f647886362d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774686"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549308"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Vzdálené ladění kódu v Pythonu v Linuxu
 
@@ -99,7 +99,7 @@ V následujícím postupu jsme nastavení jednoduché zarážky zastavit vzdále
 1. V **cíl připojení** pole (**kvalifikátor** na starší verze), zadejte `tcp://<secret>@<ip_address>:5678` kde `<secret>` se předal řetězec `enable_attach` v kódu Pythonu `<ip_address>` je vzdáleného počítače (který může být explicitní adresa nebo název, jako je třeba myvm.cloudapp.net), a `:5678` je číslo portu vzdáleného ladění.
 
     > [!Warning]
-    > Pokud provádíte připojení přes veřejný internet, byste měli použít `tcps` místo a podle pokynů níže a [zabezpečené připojení ladicího programu s protokolem SSL](#securing-the-debugger-connection-with-ssl).
+    > Pokud provádíte připojení přes veřejný internet, byste měli použít `tcps` místo a podle pokynů níže a [zabezpečené připojení ladicího programu s protokolem SSL](#secure-the-debugger-connection-with-ssl).
 
 1. Stisknutím klávesy **Enter** k naplnění seznamu k dispozici ptvsd procesy v tomto počítači:
 
@@ -148,7 +148,7 @@ Ve výchozím nastavení je zabezpečená připojení k serveru vzdálené ladě
 
     Pokud budete vyzváni, použijte název hostitele nebo IP adresa (podle toho, co použijete k připojení) pro **běžný název** po zobrazení výzvy openssl.
 
-    (Viz [certifikáty podepsané svým držitelem](http://docs.python.org/3/library/ssl.html#self-signed-certificates) v Pythonu `ssl` modulu dokumentace pro další podrobnosti. Všimněte si, že příkaz v těchto dokumentace generuje pouze jeden soubor kombinované.)
+    (Viz [certifikáty podepsané svým držitelem](https://docs.python.org/3/library/ssl.html#self-signed-certificates) v Pythonu `ssl` modulu dokumentace pro další podrobnosti. Všimněte si, že příkaz v těchto dokumentace generuje pouze jeden soubor kombinované.)
 
 1. V kódu, upravte volání `enable_attach` zahrnout `certfile` a `keyfile` pomocí názvů souborů jako hodnoty argumentů (tyto argumenty mají stejný význam jako u standardní `ssl.wrap_socket` funkce Pythonu):
 

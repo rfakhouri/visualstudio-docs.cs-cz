@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 969c4f73148401f0a4f389f86b866023c316298c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 527086fa2b17de0330b394a7041232312f3b1719
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919341"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547213"
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: Transparentní kód nemůže být chráněn pomocí LinkDemands
 |||
@@ -31,16 +31,16 @@ ms.locfileid: "31919341"
  Transparentní metoda vyžaduje, <xref:System.Security.Permissions.SecurityAction> nebo další požadavek zabezpečení.
 
 ## <a name="rule-description"></a>Popis pravidla
- Toto pravidlo je vyvoláno na transparentních metodách, které vyžadují pro přístup k nim pravidla LinkDemand. Kód transparentní z hlediska zabezpečení by neměl být odpovědný za ověření zabezpečení operace, a proto by neměl požadovat oprávnění. Protože transparentní metody jsou by měl být neutrální zabezpečení, se nesmí při rozhodování žádné zabezpečení. Kromě toho by neměl být bezpečné kritické kód, který rozhodnutí zabezpečení, spoléhat na kód transparentní pro toto rozhodnutí provedli dříve.
+ Toto pravidlo je vyvoláno transparentními metodami, které vyžadují pravidla LinkDemand pro přístup k nim. Kód transparentní z hlediska zabezpečení by neměl být odpovědný za ověření zabezpečení operace, a proto by neměl požadovat oprávnění. Protože transparentní metody mají být zabezpečení neutrální, jejich by neměla provádět rozhodnutí o zabezpečení. Kromě toho by neměl být bezpečně kritický kód, který rozhodování zabezpečení, spoléhat na transparentnímu kódu dříve provedli tato rozhodnutí.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo, odeberte požadavek propojení na metodě transparentní nebo označit metodu s <xref:System.Security.SecuritySafeCriticalAttribute> kontroluje atribut v případě, že je její výkon na zabezpečení, jako je například požadavky na zabezpečení.
+ Chcete-li opravit porušení tohoto pravidla, odeberte požadavek propojení na transparentní metodu nebo označte metodu s <xref:System.Security.SecuritySafeCriticalAttribute> kontroly atribut, pokud se provádí zabezpečení, jako jsou požadavky na zabezpečení.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- V následujícím příkladu, pravidlo aktivuje na metodu, protože metoda je transparentní a je označené jako LinkDemand <xref:System.Security.PermissionSet> obsahující <xref:System.Security.Permissions.SecurityAction>.
+ V následujícím příkladu pravidlo je vyvoláno na metodě vzhledem k tomu, že metoda je transparentní a je označená pomocí LinkDemand <xref:System.Security.PermissionSet> , který obsahuje <xref:System.Security.Permissions.SecurityAction>.
 
  [!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2142-transparent-code-should-not-be-protected-with-linkdemands_1.cs)]
 

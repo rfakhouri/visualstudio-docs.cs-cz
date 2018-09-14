@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7708f5e968fed8765ca27bff99d479957927440b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ddeb32032f7fbd6ff088980c342405261e5b473
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916551"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548462"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Nepoužívejte zámky na objekty se slabou identitou
 
@@ -36,17 +36,17 @@ ms.locfileid: "31916551"
 
 ## <a name="cause"></a>příčina
 
-Vlákno se pokusí získat zámek na objekt, který má slabou identitou.
+Vlákno se pokouší získat zámek na objekt se slabou identitou.
 
 ## <a name="rule-description"></a>Popis pravidla
 
 Objekt má slabou identitu, pokud k němu lze přímo přistupovat přes hranice aplikační domény. Vlákno, které se pokouší získat zámek na objekt se slabou identitou, může být blokováno jiným vláknem v jiné aplikační doméně, které má zámek na stejný objekt.
 
-Následující typy mít slabou identitou a jsou označeny pravidlem:
+Následující typy mají slabou identitou a jsou označeny pomocí pravidla:
 
 - <xref:System.String>
 
-- Pole typů hodnot, včetně [integrální typy](/dotnet/csharp/language-reference/keywords/integral-types-table), [typy s plovoucí desetinnou čárkou](/dotnet/csharp/language-reference/keywords/floating-point-types-table), a <xref:System.Boolean>.
+- Pole typů hodnot, včetně [celočíselných typů](/dotnet/csharp/language-reference/keywords/integral-types-table), [typy s plovoucí desetinnou čárkou](/dotnet/csharp/language-reference/keywords/floating-point-types-table), a <xref:System.Boolean>.
 
 - <xref:System.MarshalByRefObject>
 
@@ -64,7 +64,7 @@ Následující typy mít slabou identitou a jsou označeny pravidlem:
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
-Chcete-li opravit porušení toto pravidlo, použijte objekt z typu, který se nenachází v seznamu v části Popis.
+Chcete-li opravit porušení tohoto pravidla, použijte objekt z typu, který není v seznamu v části Popis.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
@@ -76,14 +76,14 @@ Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
 
-Následující příklad ukazuje některé zámku objektu, která porušují pravidlo.
+Následující příklad ukazuje některé objekt zámky, které se pravidlo porušují.
 
 [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)]
 [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-<xref:System.Threading.Monitor>
-<xref:System.AppDomain>
-[Lock – příkaz (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
-[SyncLock – příkaz (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+- <xref:System.Threading.Monitor>
+- <xref:System.AppDomain>
+- [Lock – příkaz (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [SyncLock – příkaz (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

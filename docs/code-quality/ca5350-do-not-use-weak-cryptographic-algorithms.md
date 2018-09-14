@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f97de4818e6be66b4ee23d97d8995dfa30533985
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: ba5e70505db86b1497e625b216da955bba677245
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510501"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547851"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: Nepoužívejte slabé kryptografické algoritmy
+
 |||
 |-|-|
 |TypeName|DoNotUseWeakCryptographicAlgorithms|
@@ -26,70 +27,71 @@ ms.locfileid: "39510501"
 |Narušující změna|Pevné|
 
 > [!NOTE]
->  Toto upozornění byl naposledy aktualizován. listopadu 2015.
+> Toto upozornění byl naposledy aktualizován. listopadu 2015.
 
 ## <a name="cause"></a>příčina
- Algoritmy šifrování, jako <xref:System.Security.Cryptography.TripleDES> a algoritmy hash jako <xref:System.Security.Cryptography.SHA1> a <xref:System.Security.Cryptography.RIPEMD160> jsou považovány za slabé.
 
- Tyto kryptografické algoritmy se neposkytuje tolik zajištění zabezpečení jako Modernější protějšky. Kryptografické algoritmy hash <xref:System.Security.Cryptography.SHA1> a <xref:System.Security.Cryptography.RIPEMD160> zadejte méně kolizí odolnost než Modernější algoritmy hash. Šifrovací algoritmus <xref:System.Security.Cryptography.TripleDES> poskytuje méně bity zabezpečení než Modernější šifrovacích algoritmů.
+Algoritmy šifrování, jako <xref:System.Security.Cryptography.TripleDES> a algoritmy hash jako <xref:System.Security.Cryptography.SHA1> a <xref:System.Security.Cryptography.RIPEMD160> jsou považovány za slabé.
+
+Tyto kryptografické algoritmy se neposkytuje tolik zajištění zabezpečení jako Modernější protějšky. Kryptografické algoritmy hash <xref:System.Security.Cryptography.SHA1> a <xref:System.Security.Cryptography.RIPEMD160> zadejte méně kolizí odolnost než Modernější algoritmy hash. Šifrovací algoritmus <xref:System.Security.Cryptography.TripleDES> poskytuje méně bity zabezpečení než Modernější šifrovacích algoritmů.
 
 ## <a name="rule-description"></a>Popis pravidla
- Algoritmy slabé šifrování a hashovací funkce se dnes používají pro z několika důvodů, ale by neměly být použít k zajištění důvěrnosti údajů, které chrání.
 
- Toto pravidlo aktivuje, když zjistí, 3DES, SHA1 nebo RIPEMD160 algoritmy v editoru kódu a vyvolá upozornění pro uživatele.
+Algoritmy slabé šifrování a hashovací funkce se dnes používají pro z několika důvodů, ale by neměly být použít k zajištění důvěrnosti údajů, které chrání.
+
+Toto pravidlo aktivuje, když zjistí, 3DES, SHA1 nebo RIPEMD160 algoritmy v editoru kódu a vyvolá upozornění pro uživatele.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Použijte kryptograficky silnější možnosti:
 
--   Pro šifrování TripleDES, použijte <xref:System.Security.Cryptography.Aes> šifrování.
+Použijte kryptograficky silnější možnosti:
 
--   Pro funkce hash SHA1 nebo RIPEMD160, použijte těch, které jsou v [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) řady (třeba <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- Pro šifrování TripleDES, použijte <xref:System.Security.Cryptography.Aes> šifrování.
+
+- Pro funkce hash SHA1 nebo RIPEMD160, použijte těch, které jsou v [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) řady (třeba <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačit upozornění tohoto pravidla, když úroveň ochrany, třeba dat nevyžaduje záruky zabezpečení.
 
-## <a name="pseudo-code-example"></a>Příklad pseudo kódu
- V době době psaní tohoto textu znázorňuje následující ukázka kódu pseudo vzor, zjistí toto pravidlo.
+Potlačit upozornění tohoto pravidla, když úroveň ochrany, třeba dat nevyžaduje záruky zabezpečení.
+
+## <a name="pseudo-code-examples"></a>Příklady pseudo kódu
+
+V době době psaní tohoto textu znázorňuje následující ukázka kódu pseudo vzor, zjistí toto pravidlo.
 
 ### <a name="sha-1-hashing-violation"></a>Porušení hashovací algoritmus SHA-1
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 var hashAlg = SHA1.Create();
-
 ```
 
-### <a name="solution"></a>Řešení
+Řešení:
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 var hashAlg = SHA256.Create();
-
 ```
 
-### <a name="ripemd160-br-br-hashing-violation"></a>RIPEMD160 <br /><br />Hashování porušení
+### <a name="ripemd160-hashing-violation"></a>RIPEMD160 Hashování porušení
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 var hashAlg = RIPEMD160Managed.Create();
-
 ```
 
-### <a name="solution"></a>Řešení
+Řešení:
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 var hashAlg = SHA256.Create();
-
 ```
 
 ### <a name="tripledes-encryption-violation"></a>Porušení šifrování TripleDES
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 using (TripleDES encAlg = TripleDES.Create())
@@ -98,9 +100,9 @@ using (TripleDES encAlg = TripleDES.Create())
 }
 ```
 
-### <a name="solution"></a>Řešení
+Řešení:
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 using (AesManaged encAlg = new AesManaged())

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f24b0f4c6358da459525288a2812446c1c73f3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c67cd83f8487b67c580d544fd2d350612dfb48a8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915229"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549635"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821: Odstraňte prázdné finalizační metody
 |||
@@ -31,18 +31,18 @@ ms.locfileid: "31915229"
 |Narušující změna|Nenarušující|
 
 ## <a name="cause"></a>příčina
- Typ implementuje finalizační metodu, která je prázdný, volá pouze základní typ finalizační metodu nebo volá jen podmíněně vygenerované metody.
+ Typ implementuje finalizační metodu, která je prázdný, vyžaduje pouze základní typ finalizační metodu nebo volá pouze podmíněně vyslané metody.
 
 ## <a name="rule-description"></a>Popis pravidla
- Kdykoli je to možné, vyhněte se použití finalizačních metod kvůli dodatečným nárokům na výkon spojeným se sledováním životního cyklu objektu. Uvolňování paměti spustí finalizační metodu než shromáždí objektu. To znamená, že dvě kolekce se bude vyžadovat ke shromažďování objektu. Prázdné finalizační metodu způsobuje to přidán režie bez nějaké výhody.
+ Kdykoli je to možné, vyhněte se použití finalizačních metod kvůli dodatečným nárokům na výkon spojeným se sledováním životního cyklu objektu. Uvolňování paměti spustí finalizační metodu, předtím, než se shromáždí objektů. To znamená, že dvě kolekce se bude vyžadovat ke shromažďování objektu. Prázdná finalizační metoda zvyšuje touto přidanou režie bez žádnou výhodu.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Odstraňte prázdné finalizační metodu. Pokud finalizační metody se vyžaduje pro ladění, uzavřete celý finalizační metodu v `#if DEBUG / #endif` direktivy.
+ Odstraňte prázdné finalizační metody. Pokud se vyžaduje pro ladění finalizační metodu, uzavřete celý finalizační metodu v `#if DEBUG / #endif` direktivy.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Není potlačit zprávu od tohoto pravidla. Selhání potlačit finalizace snižuje výkon a poskytuje žádné výhody.
+ Nepotlačujte zprávy z tohoto pravidla. Selhání pro potlačení dokončení snižuje výkon a poskytuje žádné výhody.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje prázdné finalizační metodu, která má být odebrána, finalizační metodu, která by měla být uzavřená do `#if DEBUG / #endif` direktivy a finalizační metodu, která používá `#if DEBUG / #endif` direktivy správně.
+ Následující příklad ukazuje prázdná finalizační metoda, která by měla být odebrána, finalizační metodu, která by měl být uzavřen v `#if DEBUG / #endif` směrnicemi a finalizační metodu, která používá `#if DEBUG / #endif` direktivy správně.
 
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../code-quality/codesnippet/CSharp/ca1821-remove-empty-finalizers_1.cs)]

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 340b0e7deb12d4568a76d4871eabd49641926dcb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebb37743f9259390aba400a5d89d24b5f41a0d49
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920359"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546977"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Požadavky na přepsání odkazu musejí být identické s bází
+
 |||
 |-|-|
 |TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|
@@ -32,23 +33,25 @@ ms.locfileid: "31920359"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Metoda veřejných nebo chráněné v veřejného typu přepíše metodu nebo implementuje rozhraní a nemá stejný [požadavky propojení](/dotnet/framework/misc/link-demands) jako metodu rozhraní nebo virtuální.
+ Veřejná nebo chráněná metoda veřejného typu přepsání metody nebo implementuje rozhraní a nemá stejný [požadavky propojení](/dotnet/framework/misc/link-demands) jako rozhraní nebo virtuální metody.
 
 ## <a name="rule-description"></a>Popis pravidla
- Toto pravidlo přiřazuje metodu své základní metodě, kterou je buď rozhraní, nebo virtuální metoda jiného typu, a poté v obou metodách srovnává požadavky propojení. Narušení bude nahlášena, pokud metoda nebo základní metody je požadavek propojení a druhá není.
+ Toto pravidlo přiřazuje metodu své základní metodě, kterou je buď rozhraní, nebo virtuální metoda jiného typu, a poté v obou metodách srovnává požadavky propojení. Porušení bude nahlášena, pokud metodu nebo metodu základní má požadavku propojení a druhá ne.
 
- Pokud je toto pravidlo došlo k porušení, škodlivý volající obejít požadavek propojení jenom pomocí volání metody zabezpečená.
+ Pokud je toto pravidlo porušeno, volající obejít požadavek propojení pouhým voláním nezabezpečené metody.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo, platí stejné požadavek propojení pro toto metoda nebo implementace. Pokud to není možné označit metodu s úplný požadavek nebo úplně odeberte atribut.
+ Chcete-li opravit porušení tohoto pravidla, použijte stejný požadavek propojení přepsání metody nebo implementaci. Pokud to není možné, označte metodu se požadavek na úplné nebo úplně odeberte atribut.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje různé porušení toto pravidlo.
+ Následující příklad ukazuje různé porušení tohoto pravidla.
 
  [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
 
-## <a name="see-also"></a>Viz také
- [Pokyny pro zabezpečené kódování](/dotnet/standard/security/secure-coding-guidelines) [požadavky na propojení](/dotnet/framework/misc/link-demands)
+## <a name="see-also"></a>Viz také:
+
+- [Pokyny pro zabezpečené kódování](/dotnet/standard/security/secure-coding-guidelines)
+- [Požadavky propojení](/dotnet/framework/misc/link-demands)

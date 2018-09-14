@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b15295b0af35c927e56c37f56a48c86ac4c705af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 22cc84a0cdc8d4fdb86f6890ae0ebd25eb65beb8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898847"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545486"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Enumerátory by měly být silného typu
+
 |||
 |-|-|
 |TypeName|EnumeratorsShouldBeStronglyTyped|
@@ -32,22 +33,22 @@ ms.locfileid: "31898847"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Implementuje typu veřejný nebo chráněného <xref:System.Collections.IEnumerator?displayProperty=fullName> neposkytuje verzi silného typu, ale <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> vlastnost. Vyloučí z tohoto pravidla jsou typy, které jsou odvozené z následujících typů:
+ Veřejný nebo chráněný typ implementuje <xref:System.Collections.IEnumerator?displayProperty=fullName> neposkytuje verzi silného typu, ale <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> vlastnost. Z tohoto pravidla vyjmuty jsou typy, které jsou odvozeny z následujících typů:
 
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+- <xref:System.Collections.DictionaryBase?displayProperty=fullName>
 
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+- <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Popis pravidla
- Toto pravidlo vyžaduje <xref:System.Collections.IEnumerator> implementace také zadejte verzi silného typu <xref:System.Collections.IEnumerator.Current%2A> vlastnost tak, aby uživatelé nemusí při použití funkce, která je k dispozici rozhraní přetypovat návratovou hodnotu silného typu. Toto pravidlo se předpokládá, že typ, který implementuje <xref:System.Collections.IEnumerator> obsahuje kolekci instancí typu, který je vyšší než <xref:System.Object>.
+ Toto pravidlo vyžaduje <xref:System.Collections.IEnumerator> implementace také poskytnout verzi silného typu <xref:System.Collections.IEnumerator.Current%2A> vlastnost tak, aby uživatelé nemusí při použití funkčnosti poskytované rozhraním přetypovávat návratovou hodnotu silného typu. Toto pravidlo předpokládá, že tento typ, který implementuje <xref:System.Collections.IEnumerator> obsahuje kolekci instancí typu silnějšího než <xref:System.Object>.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo, implementovat rozhraní vlastnost explicitně (deklarujte ji jako `IEnumerator.Current`). Přidejte veřejnou verzi silného typu vlastnost deklarován jako `Current`, a mějte ho vrátí objekt silného typu.
+ Chcete-li opravit porušení tohoto pravidla, implementovat rozhraní vlastnost explicitně (deklarujte ho jako `IEnumerator.Current`). Přidejte veřejnou verzi silného typu vlastnosti, které jsou deklarovány jako `Current`, a vrátí silně typovaných objektů.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačíte upozornění na toto pravidlo při implementaci enumerátor na základě objektů pro použití s kolekci na základě objektů jako binárního stromu. Typy, které rozšiřují nová kolekce bude definovat silného typu enumerátor a vystavit vlastnost silného typu.
+ Potlačit upozornění tohoto pravidla, Pokud implementujete enumerátor založenou na objektech pro použití s kolekcí založenou na objektech, jako je například binární strom. Typy, které rozšiřují nová kolekce bude definovat silného typu výčtu a zpřístupnit vlastnost silného typu.
 
 ## <a name="example"></a>Příklad
  Následující příklad ukazuje správný způsob implementace silného typu <xref:System.Collections.IEnumerator> typu.
@@ -59,5 +60,9 @@ ms.locfileid: "31898847"
 
  [CA1039: Seznamy jsou silného typu](../code-quality/ca1039-lists-are-strongly-typed.md)
 
-## <a name="see-also"></a>Viz také
- <xref:System.Collections.IEnumerator?displayProperty=fullName> <xref:System.Collections.CollectionBase?displayProperty=fullName> <xref:System.Collections.DictionaryBase?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+## <a name="see-also"></a>Viz také:
+
+- <xref:System.Collections.IEnumerator?displayProperty=fullName>
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+- <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

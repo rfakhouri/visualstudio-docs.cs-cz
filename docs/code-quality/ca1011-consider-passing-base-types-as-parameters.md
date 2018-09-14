@@ -14,16 +14,21 @@ ms.assetid: ce1e1241-dcf4-419b-9363-1d5bc4989279
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eaa68b6046fd2d3cfb6370b18de2b478b16db9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5d44077dbe839fe6ce6b369f8d8b3b828bdb982a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898450"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549427"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Zvažte předání základních typů jako parametrů
+
 |||
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
@@ -32,27 +37,27 @@ ms.locfileid: "31898450"
 |Narušující změna|Narušující|
 
 ## <a name="cause"></a>příčina
- Deklarace metody obsahuje formální parametr, který je odvozený typ, a volá metodu pouze členové základní typ parametru.
+ Deklarace metody obsahuje formální parametr, který je odvozený typ a metodu volá pouze členy základního typu parametru.
 
 ## <a name="rule-description"></a>Popis pravidla
- Je-li v deklaraci metody zadán jako parametr základní typ, lze jako příslušný argument k metodě předat kterýkoliv typ odvozený z tohoto základního typu. Pokud se použije argument uvnitř těla metody, konkrétní metody, která se spustí, závisí na typu argumentu. Pokud není potřeba další funkce, které poskytuje odvozený typ, použijte základní typ umožňuje širší využití metody.
+ Je-li v deklaraci metody zadán jako parametr základní typ, lze jako příslušný argument k metodě předat kterýkoliv typ odvozený z tohoto základního typu. Pokud argument je použit uvnitř těla metody, konkrétní metody, která se spustí záviset na typu argumentu. Pokud je další funkce, která je poskytována odvozený typ není vyžadována, umožňuje použití základního typu širší využití metody.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Opravit porušení toto pravidlo, změňte typ parametru na jeho základní typ.
+ Chcete-li opravit porušení tohoto pravidla, změňte na jeho základní typ typu parametru.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění od tohoto pravidla
+ Je bezpečné potlačit upozornění tohoto pravidla
 
--   Pokud metoda vyžaduje, aby určitých funkcí, které poskytuje odvozený typ
+- Pokud metoda vyžaduje konkrétní funkce, která je poskytována odvozený typ
 
      \- nebo –
 
--   vynutit pouze odvozený typ, nebo více odvozený typ, je předaná metodě.
+- k vynucení pouze odvozený typ, nebo více odvozeného typu, je předán metodě.
 
- V těchto případech bude kód robustnější kvůli kontrola silné typ, který je poskytován kompilátoru a modulu runtime.
+ V takových případech bude kód robustnější kvůli silný typ kontroly, které poskytuje kompilátoru a modulu runtime.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje metodu, `ManipulateFileStream`, který lze použít pouze s <xref:System.IO.FileStream> objekt, který je v rozporu toto pravidlo. Druhá metoda `ManipulateAnyStream`, splňuje pravidlo nahrazením <xref:System.IO.FileStream> parametr pomocí <xref:System.IO.Stream>.
+ Následující příklad ukazuje metodu, `ManipulateFileStream`, který jde použít jenom s <xref:System.IO.FileStream> objektu, který porušuje tato pravidla. Druhá metoda `ManipulateAnyStream`, splňuje pravidlo tak, že nahradíte <xref:System.IO.FileStream> parametr pomocí <xref:System.IO.Stream>.
 
  [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]

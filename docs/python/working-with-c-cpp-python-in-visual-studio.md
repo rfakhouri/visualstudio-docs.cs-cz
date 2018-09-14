@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60f4081f205b160ad74dca52dec68a10d36e43fd
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: bbc5d194552952ccce4a30a7c15b917e7a7a32ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995973"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549466"
 ---
 # <a name="create-a-c-extension-for-python"></a>Vytvoření rozšíření C++ pro Python
 
@@ -100,6 +100,8 @@ Další informace najdete v tématu [podpora instalace Pythonu pro Visual Studio
 ## <a name="create-the-core-c-projects"></a>Vytvoření základní projektů jazyka C++
 
 Postupujte podle pokynů v této části vytvořit dva shodné projekty C++ s názvem "superfastcode" a "superfastcode2". Později budete používat jiné znamená, že v každém projektu k vystavení kódu C++ pro Python.
+
+1. Ujistěte se, že `PYTHONHOME` nastavit proměnnou prostředí k interpretu Pythonu, kterou chcete použít. Projekty C++ v sadě Visual Studio Spolehněte se na tuto proměnnou k vyhledání souborů, jako *python.h*, které se používají při vytváření rozšíření pro Python.
 
 1. Klikněte pravým tlačítkem na řešení v **Průzkumníka řešení** a vyberte **přidat** > **nový projekt**. Řešení sady Visual Studio může obsahovat Python a C++ projektů najednou (což je jednou z výhod pomocí sady Visual Studio pro jazyk Python).
 
@@ -263,9 +265,9 @@ Pokud jste dokončili kroky v předchozí části, jistě zaznamenali, použít 
 
 Modul C++ se nemusí podařit sestavit z následujících důvodů:
 
-- Nepovedlo se najít *Python.h* (**E1696: Nelze otevřít zdrojový soubor "Python.h"** a/nebo **C1083: nejde otevřít vložený soubor: "Python.h": žádný odpovídající soubor nebo adresář**): Ověřte, že Cesta v **C/C++** > **Obecné** > **další adresáře souborů k zahrnutí** v projektu vlastnosti odkazuje na jazyce Python instalace *zahrnují* složky. Přejděte ke kroku 6 v části [vytvoření projektu core C++](#create-the-core-c-project).
+- Nepovedlo se najít *Python.h* (**E1696: Nelze otevřít zdrojový soubor "Python.h"** a/nebo **C1083: nejde otevřít vložený soubor: "Python.h": žádný odpovídající soubor nebo adresář**): Ověřte, že Cesta v **C/C++** > **Obecné** > **další adresáře souborů k zahrnutí** v projektu vlastnosti odkazuje na jazyce Python instalace *zahrnují* složky. Přejděte ke kroku 6 v části [vytvoření projektu core C++](#create-the-core-c-projects).
 
-- Nepovedlo se najít knihovny jazyka Python: Ověřte, že ji v **Linkeru** > **Obecné** > **další adresáře knihoven** v projektu Vlastnosti body k instalaci Pythonu *libs* složky. Přejděte ke kroku 6 v části [vytvoření projektu core C++](#create-the-core-c-project).
+- Nepovedlo se najít knihovny jazyka Python: Ověřte, že ji v **Linkeru** > **Obecné** > **další adresáře knihoven** v projektu Vlastnosti body k instalaci Pythonu *libs* složky. Přejděte ke kroku 6 v části [vytvoření projektu core C++](#create-the-core-c-projects).
 
 - Chyby linkeru týkající se Cílová architektura: Změňte architekturu projektu C++ cíl odpovídat vaší instalaci Pythonu. Například pokud cílíte x64 s projektu jazyka C++, ale instalace Pythonu x86, změňte projekt C++ pro cílení x86.
 
@@ -406,7 +408,7 @@ Existuje široká škála způsob, jak vytvořit rozšíření Pythonu, jak je p
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Funguje s téměř každou kompilátorem jazyka C++. | Rozsáhlý a komplexní sadu knihoven; obsahuje mnoho řešení pro staré kompilátory. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Žádné kompilace širokou dostupnost. | Přístup k a mutace struktury C náročné a náchylné k chybám. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generovat vazby pro řadu jazyků najednou. | Pokud Python je jediný cíl nadměrnému zatížení. |
-| cffi | 2013 | [kryptografie](https://cryptography.io/en/latest/), [pypy](http://pypy.org/) | Snadné integraci, PyPy kompatibility. | Novější, méně až po zralé. |
+| cffi | 2013 | [kryptografie](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Snadné integraci, PyPy kompatibility. | Novější, méně až po zralé. |
 
 ## <a name="see-also"></a>Viz také:
 
