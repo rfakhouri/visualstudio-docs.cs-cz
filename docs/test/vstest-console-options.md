@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78491f9e811a6ee9e6166734e11077fad272370
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279684"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612659"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe – možnosti příkazového řádku
 
@@ -54,6 +54,10 @@ V následující tabulce jsou uvedeny všechny možnosti pro *VSTest.Console.exe
 |**/ Listsettingsproviders zobrazí**|Zobrazí seznam nainstalovaných poskytovatelů nastavení testu.|
 |**/ Příčiny**|Sleduje testy jako při spuštění a, pokud proces hostitele testu dojde k chybě, až vysílá názvy testů v jejich pořadí spuštění a včetně konkrétní test, který byl spuštěn v době selhání. Tímto výstupem je snazší izolovat problematický testu a dále je diagnostikovat. [Další informace o](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/ Diag: [*název_souboru*]**|Protokoly diagnostické trasování zapíše do zadaného souboru.|
+|**/ ResultsDirectory: [*cesta*]**|Adresář výsledků testu se vytvoří v zadané cestě, pokud neexistuje.<br />Příklad: `/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ ParentProcessId: [*parentProcessId*]**|Proces Id nadřazeného procesu, který je zodpovědný za spouštění aktuální proces.|
+|**/ Port: [*port*]**|Port pro připojení soketu a přijímání zpráv událostí.|
+|**/ Shromažďování: [*dataCollector friendlyName*]**|Povolí shromažďování dat pro testovací běh. [Další informace o](https://aka.ms/vstest-collect).|
 
 > [!TIP]
 > Možnosti a hodnoty nejsou malá a velká písmena.

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f39b2ce216ce909837f37fd09fb556a4733098ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a2873f691fdaa1251a5562e21e2bbd0467eb2e2
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627338"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612750"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Určete, zda chcete ladit jenom uživatelský kód, pomocí funkce pouze můj kód v sadě Visual Studio
 Můžete nakonfigurovat sady Visual Studio automaticky Krokovat přes systém, rozhraní a další neuživatelská volání a sbalí tato volání do okna zásobník volání. Volá funkci, která povolí nebo zakáže toto chování *pouze můj kód*. Toto téma popisuje, jak používat funkce pouze můj kód v projektech C#, Visual Basic, C++ a JavaScript.
@@ -37,6 +37,10 @@ Pro většinu programovacích jazyků ve výchozím nastavení zapnutá funkce p
   
 > [!NOTE]
 >  **Zobrazit externí kód** nastavení je uložit do aktuálního uživatele profileru. Použije se na všechny projekty ve všech jazycích, které jsou otevřeny uživatelem.
+
+##  <a name="identify-user-code-while-debugging"></a>Identifikujte uživatelského kódu během ladění 
+
+**Moduly** okno můžete zjistit, jaké moduly kódu, ladicí program se zpracuje jako uživatelský kód, nebo vlastní kód, společně s informacemi, jako je například načítání stavu pro modul symbolů. Další informace najdete v tématu [poznat více do hloubky pomocí jak ladicí program připojí k vaší aplikaci](../debugger/debugger-tips-and-tricks.md#modules_window).
   
 ##  <a name="BKMK__NET_Framework_Just_My_Code"></a> Rozhraní .NET framework pouze můj kód  
   

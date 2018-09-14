@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552094"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612737"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Zadání symbolu (.pdb) a zdrojových souborů v ladicím programu sady Visual Studio
 Soubor databáze (PDB) programu, nazývaný také soubor symbolů, mapuje identifikátory, které vytvoříte ve zdrojovém kódu pro třídy, metody a jiný kód, na identifikátory, které se používají v kompilovaných spustitelných souborech projektu. Soubor PDB také mapuje příkazy ve zdrojovém kódu k provozním pokynům ve spustitelných souborech. Ladicí program používá tyto informace k určení dvou důležitých informací:
@@ -45,7 +45,11 @@ Soubor databáze (PDB) programu, nazývaný také soubor symbolů, mapuje identi
 Soubor symbolů obsahuje také původní umístění zdrojových souborů, případně umístění zdrojového serveru, ze kterého lze načíst zdrojové soubory.
   
 > [!TIP]
-> Pokud chcete ladit kód mimo váš zdrojový kód projektu, jako je například Windows kód nebo kód třetí strany volání, je nutné zadat umístění pdb (a volitelně zdrojových souborů z externího kódu) a tyto soubory musí přesně odpovídat sestavení t má spustitelné soubory.  
+> Pokud chcete ladit kód mimo váš zdrojový kód projektu, jako je například Windows kód nebo kód třetí strany volání, je nutné zadat umístění pdb (a volitelně zdrojových souborů z externího kódu) a tyto soubory musí přesně odpovídat sestavení t má spustitelné soubory. 
+
+##  <a name="how-can-i-manage-symbol-files-while-debugging"></a>Jak můžu spravovat soubory symbolů při ladění? 
+
+**Moduly** okno můžete zjistit, jaké moduly kódu, ladicí program se zpracuje jako uživatelský kód, nebo vlastní kód a načítání stavu pro modul symbolů. Toto okno můžete také načíst symboly při ladění. Další informace najdete v tématu [poznat více do hloubky pomocí jak ladicí program připojí k vaší aplikaci](../debugger/debugger-tips-and-tricks.md#modules_window).
  
 ##  <a name="BKMK_Find_symbol___pdb__files"></a> Kde ladicí program hledat pro soubory symbolů? 
   
