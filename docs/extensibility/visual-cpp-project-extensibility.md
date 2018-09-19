@@ -11,16 +11,16 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: acef2728a79b8706b0af3dad4e272ed34b222a42
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552519"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135656"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ systému sada nástrojů a rozšíření integrace s Project
 
-*Systém projektu Visual C++* používá soubory VCXPROJ. Je založen na [Common Project System (CPS) ve Visual Studio](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) a poskytuje další, rozšíření specifické pro C++ body pro snadnou integraci nové sady nástrojů, sestavení architektury a cílové platformy. 
+*Systém projektu Visual C++* se používá pro soubory VCXPROJ. Je založen na [Common Project System (CPS) ve Visual Studio](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) a poskytuje další, rozšíření specifické pro C++ body pro snadnou integraci nové sady nástrojů, sestavení architektury a cílové platformy. 
 
 ## <a name="c-msbuild-targets-structure"></a>Struktura cíle nástroje MSBuild C++
 
@@ -227,13 +227,13 @@ Pokud se podíváte na cíli, jako například `_ClCompile`, zobrazí se vám ni
 </Target>
 ```
 
-`ClCompile` a další nástrojově specifické cíle sestavení jsou definované jako prázdný cílů v Microsoft.CppBuild.targets:
+`ClCompile` a jiných sestavení nástrojově specifické cíle jsou definované jako prázdný cílů v *Microsoft.CppBuild.targets*:
 
 ```xml
 <Target Name="ClCompile"/>
 ```
 
-Protože `ClCompile` cíl je definovaný jako prázdný cíl v *Microsoft.CppBuild.targets*, pokud je přepsán sadu nástrojů, neprovede se žádná akce skutečných sestavení. Sada nástrojů cíle, které můžete přepsat `ClCompile` cíl, tedy mohou obsahovat jiné `ClCompile` definice po importu *Microsoft.CppBuild.targets*: 
+Vzhledem k tomu, `ClCompile` cíl je prázdný, není-li, že je přepsána sadu nástrojů, neprovede se žádná akce skutečných sestavení. Sada nástrojů cíle, které můžete přepsat `ClCompile` cíl, tedy mohou obsahovat jiné `ClCompile` definice po importu *Microsoft.CppBuild.targets*: 
 
 ```xml
 <Target Name="ClCompile"
@@ -243,7 +243,7 @@ Protože `ClCompile` cíl je definovaný jako prázdný cíl v *Microsoft.CppBui
 </Target>
 ```
 
-Bez ohledu na název `ClCompile`, který byl vytvořen před provedením sady Visual Studio podporu pro různé platformy, `ClCompile` cíl nemá volat CL.exe. Pomocí příslušné úlohy nástroje MSBuild může také volat Clang, gcc nebo jinými kompilátory.
+Bez ohledu na jeho název, který byl vytvořen před provedením sady Visual Studio podporu pro různé platformy, `ClCompile` cíl nemá volat CL.exe. Pomocí příslušné úlohy nástroje MSBuild může také volat Clang, gcc nebo jinými kompilátory.
 
 `ClCompile` Cíl by neměl mít všechny závislosti, s výjimkou `SelectClCompile` cíl, který je vyžadován pro kompilaci jednoho souboru příkazu pracovat v integrovaném vývojovém prostředí.
 
@@ -289,7 +289,7 @@ Pokud je potřeba vytvořit nový úkol pro nástroj pro sestavení, můžete po
 
 1. Pokud má lepší výkon úloh nebo jenom potřebujete složitější funkce, použijte regulární MSBuild [úkolů zápisu](../msbuild/task-writing.md) procesu.
 
-   Pokud ne všechny vstupy a výstupy nástroje nejsou uvedeny na nástroj příkazového řádku, jako v `CL`, `MIDL`, a `RC` případech a pokud chcete automatické vstupní a výstupní soubor sledování a vytváření souborů .tlog, jsou odvozeny úlohy z `TrackedVCToolTask`.
+   Pokud ne všechny vstupy a výstupy nástroje nejsou uvedeny na nástroj příkazového řádku, jako v `CL`, `MIDL`, a `RC` případech a pokud chcete automatické vstupní a výstupní soubor sledování a vytváření souborů .tlog, odvozovat vaše úlohy `Microsoft.Build.CPPTasks.TrackedVCToolTask`třídy. V současné době sice dokumentaci pro základ [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) třídy, neexistují žádné příklady nebo dokumentaci pro podrobnosti `TrackedVCToolTask` třídy. Pokud by to být zajímavé především, přidejte vašeho hlasu, jak na žádost na [developercommunity.visualstudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html).
 
 ## <a name="incremental-builds-and-up-to-date-checks"></a>Přírůstková sestavení a aktuální kontroly
 
@@ -428,7 +428,7 @@ Použití `Task.HostObject` neuložené obsah zdrojové soubory získat, by měl
 @="{83046B3F-8984-444B-A5D2-8029DEE2DB70}"
 ```
 
-## <a name="project-extensibility-in-the-visual-studio-ide"></a>Rozšíření projektu v integrovaném vývojovém prostředí sady Visual Studio
+## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Rozšíření projektu Visual C++ v integrovaném vývojovém prostředí sady Visual Studio
 
 Systém projektu Visual C++ je založen na [systém projektu VS](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)a používá svůj body rozšiřitelnosti. Ale implementace hierarchie projektu je specifické pro Visual C++ a není založen na CPS, tak rozšíření hierarchie je omezená na položky projektu.
 
@@ -656,6 +656,6 @@ Informace o tom, jak vytvořit soubory VSIX, naleznete v tématu [přesouvání 
 
 Sestavovací systém Microsoft ([MSBuild](../msbuild/msbuild.md)) poskytuje modul sestavení a rozšiřitelné formát založený na formátu XML pro soubory projektu. Měli byste se seznámit s basic [koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md) a jak [MSBuild pro Visual C++](/cpp/build/msbuild-visual-cpp-overview) systém projektů funguje za účelem rozšíření Visual C++.
 
-Rozhraní Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) poskytuje rozšíření rozhraní API, které jsou používány CPS a systém projektu Visual C++. Přehled jak CPS používá rozhraní MEF, naleznete v tématu [MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
+Rozhraní Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) poskytuje rozšíření rozhraní API, které jsou používány CPS a systém projektu Visual C++. Přehled jak CPS používá rozhraní MEF, naleznete v tématu [CPS a MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) v [VSProjectSystem přehled MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
 Můžete přizpůsobit existující systém sestavení pro přidání kroků sestavení nebo nové typy souborů. Další informace najdete v tématu [přehled nástroje MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) a [práce s vlastnostmi projektu](/cpp/ide/working-with-project-properties).
