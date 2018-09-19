@@ -1,5 +1,5 @@
 ---
-title: Použít Build nebo Release Management pro automatizované testování v sadě Visual Studio
+title: Použití správy sestavení nebo vydaných verzí pro automatizované testování
 ms.date: 03/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cc8935db33f5c4b584cf825a46ae62f0d31d2351
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320615"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135599"
 ---
-# <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Použijte správu sestavení a verzí namísto správy testovacího prostředí pro automatizované testování
+# <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Pomocí testovacích plánů Azure namísto správy testovacího prostředí pro automatizované testování
 
 Pokud používáte Microsoft Test Manager (MTM) a správa testovacího prostředí pro automatizované testování nebo pro automatizaci sestavení nasazení testování, toto téma vysvětluje, jak lze dosáhnout pomocí stejné cíle [sestavení a vydání](/azure/devops/pipelines/index?view=vsts) funkcí v produktu Team Foundation Server (TFS) a plány testování v Azure.
 
@@ -64,7 +64,7 @@ Následující tabulka shrnuje typické aktivit, které provedete v centra testo
 | Připojení k počítačům. | Otevřete testovací prostředí v prohlížeči prostředí. | Přímo se připojit k virtuálním počítačům pomocí konzoly pro správu SCVMM. Alternativně otevřete relací vzdálené plochy pomocí IP adresy nebo názvy DNS virtuálních počítačů. |
 | Kontrolní bod prostředí nebo obnovit prostředí na vyčištění kontrolní bod. | Otevřete testovací prostředí v prohlížeči prostředí. Vyberte možnost k pořízení kontrolního bodu nebo obnovení na dřívější kontrolní bod. | Pomocí konzoly pro správu SCVMM přímo k provedení těchto operací na virtuálních počítačích. Nebo provádět tyto kroky jako součást větší automatizace zahrnout úkoly kontrolního bodu z [rozšíření SCVMM integrace](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) jako součást prostředí v definici vydané verze. |
 
-## <a name="creation-of-network-isolated-environments"></a>Vytvoření prostředí s izolací sítě
+## <a name="create-network-isolated-environments"></a>Vytvoření prostředí izolované sítě
 
 Síťovém prostředí izolované testovací prostředí je skupina virtuálních počítačů v SCVMM, které lze bezpečně klonovat, aniž by vznikly konflikty v síti. To bylo provedeno v MTM řada pokynů, které používá sadu síťových karet ke konfiguraci virtuálních počítačů v privátní síti a další sadu síťových karet ke konfiguraci virtuálních počítačů ve veřejné síti.
 

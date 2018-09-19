@@ -1,5 +1,5 @@
 ---
-title: Vytvoření Offline instalace sady Visual Studio
+title: Vytvoření offline instalace sady Visual Studio
 description: Zjistěte, jak v režimu offline instalace sady Visual Studio, když máte nespolehlivým připojení k Internetu nebo s malou šířkou pásma.
 ms.custom: ''
 ms.date: 08/28/2018
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b43fae1bb43fef7ca56e7967e6631920df6f0a
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
+ms.openlocfilehash: 987584be6d2d0a2ee794622e64e989de9ea80334
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43370948"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135575"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Vytvoření offline instalace sady Visual Studio 2017
 

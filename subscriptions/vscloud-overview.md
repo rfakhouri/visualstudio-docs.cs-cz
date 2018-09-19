@@ -1,5 +1,5 @@
 ---
-title: Jak koupit cloudové předplatné sady Visual Studio Enterprise a Visual Studio Professional
+title: Jak zakoupit Cloudová předplatná sady Visual Studio
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
@@ -9,12 +9,12 @@ description: Pronajmout sadu Visual Studio Professional nebo Visual Studio Enter
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e183b74e326efa65b810f7f46fd198e43aa796bf
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 51f349b28fa944cf1ca0691d45836dc74f9ecf68
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624332"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135562"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Nákup cloudových předplatných sady Visual Studio Professional a Visual Studio Enterprise
 
