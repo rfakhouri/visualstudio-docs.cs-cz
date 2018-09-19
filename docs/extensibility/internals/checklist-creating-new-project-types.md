@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69eaf52f9864b61cfc5045da9dbaf0ca6b4410b9
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511662"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370572"
 ---
 # <a name="checklist-create-new-project-types"></a>Kontrolní seznam: Vytvoření nových typů projektů
 Je třeba provést několik úloh, chcete-li vytvořit nový typ projektu. Následující kontrolní seznam obsahuje příručky s těmito úlohami:  
@@ -36,7 +36,7 @@ Je třeba provést několik úloh, chcete-li vytvořit nový typ projektu. Násl
   
     -   Objekt factory projektu, ke správě vytváření nových projektů a otevření stávajících projektů. Další informace najdete v tématu [vytvoření instancí projektu pomocí objektů pro vytváření projektů](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
-    -   Zpracování příkazu a hierarchie projektu. Další informace najdete v tématu [HierUtil7 použití projektu třídy k implementaci typu projektu (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346), [prvky modelu projektu](../../extensibility/internals/elements-of-a-project-model.md), [základní komponenty modelu projektu](../../extensibility/internals/project-model-core-components.md)a [ MenuCommands vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md).  
+    -   Zpracování příkazu a hierarchie projektu. Další informace najdete v tématu [HierUtil7 použití projektu třídy k implementaci typu projektu (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346), [prvky modelu projektu](../../extensibility/internals/elements-of-a-project-model.md), [základní komponenty modelu projektu](../../extensibility/internals/project-model-core-components.md)a [ MenuCommands vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md).  
   
     -   Správa položek projektů, včetně přidání projekt tak, aby **nový projekt** dialogové okno. Další informace najdete v tématu [přidat projekt a šablony položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md) a [registrace šablon projektů a položek](../../extensibility/internals/registering-project-and-item-templates.md).  
   

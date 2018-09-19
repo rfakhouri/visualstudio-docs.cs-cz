@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5b3b86736a5425640c1a87df6a3e2c6e6cec0c5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 629e7076335ee3cd9e2260d6242f586579bd8e0d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513345"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370693"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Osvědčené postupy pro zabezpečení v balíčcích VSPackage
 Chcete-li nainstalovat [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] na svém počítači musí běžet v kontextu s přihlašovacími údaji správce. Základní jednotka zabezpečení a nasazení [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aplikace je [VSPackage](../../extensibility/internals/vspackages.md). VSPackage musí být registrovány pomocí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], což také vyžaduje přihlašovací údaje pro správu.  
@@ -31,8 +31,8 @@ Chcete-li nainstalovat [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_m
   
  Uživatelé se ujistěte, že instalace rozšíření VSPackages pouze z důvěryhodných zdrojů. Společnosti vývoj rozšíření VSPackages by měla důrazně název a je podepište, aby bylo zaručeno, že manipulaci je zabráněno. Vývoj rozšíření VSPackages společnosti měli zkontrolovat jejich externí závislosti, jako jsou webové služby a vzdálenou instalaci, vyhodnocení a opravte všechny problémy se zabezpečením.  
   
- Další informace najdete v tématu [zabezpečené kódování zásady pro rozhraní .NET Framework](http://msdn.microsoft.com/library/d55zzx87.aspx).  
+ Další informace najdete v tématu [zabezpečené kódování zásady pro rozhraní .NET Framework](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90)).  
   
 ## <a name="see-also"></a>Viz také:  
- [Zabezpečení doplňku](http://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)   
- [DDEX zabezpečení](http://msdn.microsoft.com/en-us/44a52a70-5c98-450e-993d-4a3b32f69ba8)
+ [Zabezpečení doplňku](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)   
+ [DDEX zabezpečení](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)

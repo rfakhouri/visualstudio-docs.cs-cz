@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa2f858121e8486209518f348193e8a2bbee645a
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: b0be4a96854315bcf8b83db86692758e198980cd
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276465"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370923"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Rozšiřitelnost ladicího programu Visual Studio
 Visual Studio obsahuje ladicí program kód plně interaktivní zdroje, poskytuje efektivní a snadno použitelné nástroje pro sledování chyby v kódu ve svém programu. Ladicí program má úplnou podporu jazyka Visual Basic, C#, C/C++ a JavaScript. Nicméně s [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], která je k dispozici [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453), jiných programovacích jazycích může být podporovaný v ladicím programu pomocí stejné bohaté funkce.  
@@ -28,7 +28,7 @@ Visual Studio obsahuje ladicí program kód plně interaktivní zdroje, poskytuj
   
  [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Zahrnuje úplný odkaz na všechny [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prvky potřebný k vytvoření nové DE. Kromě toho existují ukázek a kurzů, které vám pomůžou vám pomůžou začít.  
   
- Úplnou ukázku systému projektu jazyka s podporu ladění, najdete v článku [IronPython ukázka](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
+ Úplnou ukázku systému projektu jazyka s podporu ladění, najdete v článku [IronPython ukázka](https://www.microsoft.com/download/details.aspx?id=55984).  
   
  Následující části popisují, jak rozšířit pomocí ladicího programu [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
   

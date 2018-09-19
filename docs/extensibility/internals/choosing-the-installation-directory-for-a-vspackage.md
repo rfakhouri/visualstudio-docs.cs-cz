@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18153e86c75f48b362fc09eddb54ea61263e09e1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 4e32f2581e4980feebbbecb3cc8e7aa98bfeb670
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511879"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370949"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Zvolte instalační adresář pro balíček VSPackage
 V systému souborů uživatele musí být VSPackage a jeho podpůrné soubory. Umístění závisí na, jestli sady VSPackage je spravovaná nebo nespravovaná, schéma vytváření verzí vedle sebe a výběru uživatelů.  
@@ -66,4 +66,4 @@ Pokud vaše knihovna DLL balíčku VSPackage obsahuje prostředky a **SatelliteD
 ## <a name="see-also"></a>Viz také:  
  [Výběr mezi sdíleným a verzovaným rozšířením VSPackages](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [Správa rozšíření VSPackages](../../extensibility/managing-vspackages.md)   
- [Spravovat registrace balíčku](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Spravovat registrace balíčku](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

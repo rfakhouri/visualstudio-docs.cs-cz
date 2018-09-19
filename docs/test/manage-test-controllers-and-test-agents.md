@@ -1,6 +1,6 @@
 ---
 title: Správa testovacích kontrolérů a testovacích agentů v sadě Visual Studio
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 5cd391cd922d32dc466a30e5ff1bf037cbd22a33
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279971"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371027"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Správa kontrolerů testů a testovacích agentů
 
@@ -41,17 +41,15 @@ Můžete chtít přidat testovacího agenta na jiný kontroler testů nebo bude 
     > [!NOTE]
     > Musíte mít testovacího agenta už nainstalovaná ho přidat do testovacího kontroléru. Další informace o tom, jak nainstalovat testovacího agenta, najdete v části [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).
 
-2. Pokud chcete změnit způsob, který je spuštěn testovací agent, zvolte **možnosti spuštění**.
+2. Máte na výběr dvě možnosti, jak spustit testovacího agenta:
 
-     Budou vám nabídnuty dvě možnosti pro jak testovací agent bude běžet:
+   - **Služba**: Pokud nemáte spuštěny automatické testy, které spolupracují s plochou, jako jsou kódované testy uživatelského rozhraní nebo pořizování záznamu, když test běží, v části videa **spustit testovacího agenta jako**vyberte **služby**. Testovací agent bude spuštěn jako služba. Zvolte **Další**.
 
-     **Služba**: Pokud nemáte spuštěny automatické testy, které spolupracují s plochou, jako jsou kódované testy uživatelského rozhraní nebo pořizování záznamu, když test běží, v části videa **spustit testovacího agenta jako**vyberte **služby**. Testovací agent bude spuštěn jako služba. Zvolte **Další**.
+      Nyní můžete zadat podrobnosti o uživateli, když se testovací agent spustí jako služba.
 
-     Nyní můžete zadat podrobnosti o uživateli, když se testovací agent spustí jako služba.
+      1. Zadejte název do **uživatelské jméno**.
 
-    1. Zadejte název do **uživatelské jméno**.
-
-    2. Zadejte heslo **heslo**.
+      2. Zadejte heslo **heslo**.
 
         |**Informace o důležitých uživatelském účtu**|
         |--------------------------------------------|
@@ -60,27 +58,20 @@ Můžete chtít přidat testovacího agenta na jiný kontroler testů nebo bude 
         |– Pokud je uživatelské jméno agenta není ve službě agenta, pokusí se ho přidat, což vyžaduje oprávnění testovacího kontroléru.|
         |-Uživatel, který se pokouší použít testovací kontrolér musí být účet uživatelé testovacího kontroléru nebo se nebude moci spouštět v kontroléru testy.|
 
-     **Interaktivní proces**: Pokud chcete spustit automatizované testy, které musí spolupracovat s plochou, jako jsou kódované testy uživatelského rozhraní nebo vytvoření záznamu videa, když test běží, vyberte **interaktivní proces**. Testovací agent bude spuštěn jako interaktivní proces místo jako služba.
+   - **Interaktivní proces**: Pokud chcete spustit automatizované testy, které musí spolupracovat s plochou, jako jsou kódované testy uživatelského rozhraní nebo vytvoření záznamu videa, když test běží, vyberte **interaktivní proces**. Testovací agent bude spuštěn jako interaktivní proces místo jako služba.
 
-     Na další stránce zadejte podrobnosti o uživateli, když testovací agent spustí jako proces a další možnosti.
+      Na další stránce zadejte podrobnosti o uživateli, když testovací agent spustí jako proces a další možnosti.
 
-    1. Zadejte název do **uživatelské jméno**.
+      1. Zadejte název do **uživatelské jméno**.
 
-    2. Zadejte heslo **heslo**.
+      2. Zadejte heslo **heslo**.
 
         > [!NOTE]
         > Při konfiguraci testovacího agenta ke spuštění jako interaktivní proces u jiného uživatele, který není aktuálně aktivních uživatelů, musíte restartovat počítač a přihlaste se jako tento jiný uživatel, abyste mohli spustit agenta. Kromě toho hesla s hodnotou null nejsou pro uživatelské účty podporována. Pokud chcete použít IntelliTrace collector nebo emulaci sítě, musí být uživatelský účet členem skupiny Administrators.
 
-        |**Informace o důležitých uživatelském účtu**|
-        |--------------------------------------------|
-        |-Null hesla nejsou pro uživatelské účty podporována.|
-        |– Pokud chcete použít IntelliTrace nebo data emulace sítě a diagnostický adaptér, musí být uživatelský účet členem skupiny Administrators. Pokud počítač, na kterém je spuštěn testovací agent má operační systém, který má nejméně privilegovaný uživatelský účet, musíte také spustit jako správce (se zvýšenými oprávněními).|
-        |– Pokud je uživatelské jméno agenta není ve službě agenta, pokusí se ho přidat, což vyžaduje oprávnění testovacího kontroléru.|
-        |-Uživatel, který se pokouší použít testovací kontrolér musí být účet uživatelé testovacího kontroléru nebo se nebude moci spouštět v kontroléru testy.|
+      3. Pokud chcete mít jistotu, že počítač, který s testovacím agentem můžete spouštět testy po restartování, můžete nastavit počítač pro automatické přihlášení jako testovací agent použití. Vyberte **automatické přihlášení**. Toto uloží uživatelské jméno a heslo v zašifrované podobě v registru.
 
-    3. Pokud chcete mít jistotu, že počítač, který s testovacím agentem můžete spouštět testy po restartování, můžete nastavit počítač pro automatické přihlášení jako testovací agent použití. Vyberte **automatické přihlášení**. Toto uloží uživatelské jméno a heslo v zašifrované podobě v registru.
-
-    4. Chcete-li mít jistotu, že spořič obrazovky je zakázán, protože to může narušit jakékoli automatizované testy, které musí spolupracovat s plochou, vyberte **Ujistěte se, že spořič obrazovky je zakázán**.
+      4. Chcete-li mít jistotu, že spořič obrazovky je zakázán, protože to může narušit jakékoli automatizované testy, které musí spolupracovat s plochou, vyberte **Ujistěte se, že spořič obrazovky je zakázán**.
 
         > [!WARNING]
         > Pokud automatické přihlášení nebo zakázání spořiče obrazovky, vznikají bezpečnostní rizika. Povolením automatického protokolování na můžete povolit ostatním uživatelům spustit tento počítač a použít účet, který se přihlásí automaticky. Pokud zakážete spořič obrazovky, počítač nemusí vyzvat uživatele k přihlášení k odemknutí počítače. Umožňuje všem uživatelům přístup k počítači, pokud mají fyzický přístup k počítači. Pokud povolíte tyto funkce v počítači, by měl Ujistěte se, že tyto počítače byly fyzicky zabezpečeny. Například tyto počítače jsou umístěny ve fyzicky zabezpečeném prostředí. (Pokud zrušíte výběr **Ujistěte se, že spořič obrazovky je zakázán**, nepovolíte spořič obrazovky.)
@@ -160,7 +151,7 @@ Testovací agent hmotnosti a atributů testovacího agenta změny vejdou v platn
 (Volitelné) Chcete-li změnit stav testovacího agenta, vyberte agenta v seznamu a pak vyberte akci z dostupných voleb na základě aktuálního stavu agenta.
 
 > [!NOTE]
-> Pokud testovací agent je spuštěn jako proces, můžete spravovat stav testovacího agenta z ikony na oznamovací oblasti, na kterém běží na počítači, kde je nainstalován testovací agent. To zobrazuje stav testovacího agenta. Můžete spustit, zastavit nebo restartovat agenta, pokud je spuštěn jako proces, který používá tento nástroj. Chcete-li spustit testovacího agenta jako proces, pokud není spuštěn, zvolte **Start** > **všechny programy** > **sady Microsoft Visual Studio**  >  **Microsoft Visual Studio Test Agent**. To přidá ikonu oznamovací oblasti.
+> Pokud testovací agent je spuštěn jako proces, můžete spravovat stav testovacího agenta z ikony na oznamovací oblasti, na kterém běží na počítači, kde je nainstalován testovací agent. To zobrazuje stav testovacího agenta. Můžete spustit, zastavit nebo restartovat agenta, pokud je spuštěn jako proces, který používá tento nástroj.
 
 ## <a name="configure-a-test-controller"></a>Konfigurovat kontroler testů
 
@@ -173,7 +164,7 @@ Pokud chcete registrovat testovací kontrolér s vaší kolekcí projektu Team F
 
 ### <a name="to-configure-a-test-controller"></a>Chcete-li konfigurovat řadič testu
 
-1. Chcete-li spustit nástroj, který kdykoli změnit konfiguraci řadiče testu, zvolte **Start** > **všechny programy** >  **sady Microsoft Visual Studio**  >  **Microsoft Visual Studio Test Controller Configuration Tool**.
+1. Chcete-li spustit nástroj, který kdykoli změnit konfiguraci řadiče testu, zvolte **Start** > **Test Controller Configuration Tool**.
 
      **Nakonfigurovat testovací Kontrolér** se zobrazí dialogové okno.
 
@@ -182,9 +173,9 @@ Pokud chcete registrovat testovací kontrolér s vaší kolekcí projektu Team F
     > [!NOTE]
     > Hesla s hodnotou Null nejsou pro uživatelské účty podporována.
 
-4. (Volitelné) Pokud nechcete použít řadič testu s testovacím prostředím, ale pouze ke spouštění testů ze sady Visual Studio, zrušte **zaregistrovat u kolekce projektu**.
+4. (Volitelné) Pokud nechcete použít řadič testu s testovacím prostředím, ale pouze ke spouštění testů ze sady Visual Studio, zrušte **zaregistrovat řadič testu u kolekce týmových projektů**.
 
-5. (Volitelné) Chcete-li nakonfigurovat řadič testů pro zátěžové testování, vyberte **konfigurovat pro testování zatížení**. Zadejte instanci serveru SQL v **databázi vytvořit výsledky zátěžového testu následující instanci serveru SQL Server**.
+5. (Volitelné) Chcete-li nakonfigurovat řadič testů pro zátěžové testování, vyberte **konfigurovat řadič testu pro testování zatížení**. Zadejte instanci systému SQL Server v části **databázi vytvořit výsledky zátěžového testu následující instanci serveru SQL Server**.
 
 > [!NOTE]
 > Další informace o řešení potíží řadiče testů, naleznete v tématu [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25fd72601618fc02c27f3f01e6673229e526d52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 920f81c432dfed2761bf2d0438b02ad76ce36e4d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498908"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370715"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Vytvoření instance projektu pomocí objektů pro vytváření projektů
 Typů projektů v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] použít *objekt pro vytváření projektu* pro vytvoření instancí objektů projektu. Objekt pro vytváření projektu je podobná objekt pro vytváření tříd standardní cocreatable objektů COM. Nicméně objekty projektu nejsou cocreatable; mohou být vytvořeny pouze pomocí objekt pro vytváření projektu.  
@@ -28,7 +28,7 @@ Typů projektů v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] p
   
  Můžete implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> rozhraní ve třídě ve vašem projektu. Obvykle se nachází v jeho vlastní modul.  
   
- Příklad implementace `IVsProjectFactory` rozhraní najdete v tématu *PrjFac.cpp*, který je součástí [základního projektu](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) ukázka adresáře.  
+ Příklad implementace `IVsProjectFactory` rozhraní najdete v tématu *PrjFac.cpp*, který je součástí [základního projektu](https://www.microsoft.com/download/details.aspx?id=55984) ukázka adresáře.  
   
  Projekty, které podporují agregaci vlastník musí zachovat klíčem vlastníka v jejich souboru projektu. Když <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> metoda je volána v projektu s klíčem vlastníka, vlastnictví projektu převede na objekt pro vytváření projektu GUID pak zavolá jeho vlastníka klíč `CreateProject` metody v této výrobě projektu provedete skutečné vytváření.  
   

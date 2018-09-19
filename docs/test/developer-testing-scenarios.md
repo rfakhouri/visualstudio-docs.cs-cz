@@ -1,26 +1,26 @@
 ---
-title: Testovací nástroje v sadě Visual Studio pro vývojáře
+title: Testovací nástroje pro vývojáře
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 83339ebabd3bb8a00f56b90ba9f162084bd43043
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a731f7a481280d5755d72a83a4532eb8e6998f97
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282845"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370637"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Testovací nástroje, scénáře a možnosti pro vývojáře
 
-Údržba stavu kódu pomocí testování částí. Visual Studio poskytuje širokou škálu výkonné nástroje a techniky pro vývojáře pro použití při testování aplikací:
+Údržba stavu kódu pomocí testování částí. Visual Studio poskytuje širokou škálu výkonné nástroje a techniky pro vývojáře pro použití při testování aplikací.
 
 ## <a name="avoid-regressions-and-achieve-code-coverage-with-intellitest"></a>Regresí a dosáhnout pokrytí kódu pomocí funkce IntelliTest
 
@@ -38,9 +38,7 @@ Lepší pokrytí a regresí s Intellitestem. IntelliTest dramaticky redukuje obj
 
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Uživatelské rozhraní testování pomocí uživatelského rozhraní a serverem Selenium
 
-Testování uživatelského rozhraní (UI) s využitím nejlepší emulátorem nebo community schválení testování uživatelského rozhraní.
-Programové testy UI poskytují způsob, jak vytvořit plně automatizované testy pro ověření chování vaší aplikace uživatelského rozhraní a funkcí.
-Můžete se automatizují toto testování v různých technologií, včetně aplikací pro UWP založené na XAML, prohlížečových aplikací a aplikací pro SharePoint.
+Testování uživatelského rozhraní (UI) s využitím nejlepší emulátorem nebo community schválení testování uživatelského rozhraní. Programové testy UI poskytují způsob, jak vytvořit plně automatizované testy pro ověření chování vaší aplikace uživatelského rozhraní a funkcí. Můžete se automatizují toto testování v různých technologií, včetně aplikací pro UWP založené na XAML, prohlížečových aplikací a aplikací pro SharePoint.
 
 Jestli si to nejlepší z vyvíjet programových testů uživatelského rozhraní nebo obecný webové rozhraní testování s Selenium, Visual Studio poskytuje všechny nástroje, které potřebujete.
 
@@ -60,26 +58,24 @@ Analýza pokrytí kódu lze použít pro spravovaný i nespravovaný (nativní) 
 
 Pokrytí kódu je jedna z možností při spouštění testovacích metod pomocí Průzkumníku testů. Tabulka výsledků zobrazuje procentuální podíl kódu, který byl spuštěn v každém sestavení, třídě a metodě. Editor zdrojového kódu navíc ukazuje samotný kód, který byl testován.
 
-![Testování pomocí Azure testovacích plánů a Team Foundation Server](media/devtest-codecoverage.png)
-
 * [Použití pokrytí kódu k určení, kolik kódu je právě testováno.](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [Testování částí, pokrytí kódu a analýza duplicit pomocí sady Visual Studio (prostředí) v kódu](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Přizpůsobení analýzy pokrytí kódu](customizing-code-coverage-analysis.md)
 
-## <a name="unit-testing-with-any-framework-using-the-high-performance-test-explorer"></a>Testování částí pomocí libovolné architektury pomocí vysoký výkon Průzkumníka testů
+## <a name="test-explorer"></a>Průzkumník testů
 
-Test Explorer pomoc vývojářům vytvářet, spravovat a získat maximální výhody z testování částí.
+**Průzkumník testů** pomáhá vývojářům vytvářet, spravovat a spouštět testy jednotek.
 
 ![Průzkumník testů sady Visual Studio](media/devtest-testexplorer.png)
 
 * [Začínáme s testováním částí](unit-test-your-code.md)
 * [Spouštění testování částí pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md)
-* [Zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md)
+* [Průzkumník testů – nejčastější dotazy](test-explorer-faq.md)
 * [Instalace systémů pro testování částí od třetích stran](install-third-party-unit-test-frameworks.md)
 
-Visual Studio je rozšiřitelné a otevře dveře pro adaptéry jako například NUnit a xUnit.net testování jednotky třetí strany. Kromě toho přejde funkce klonování kódu ručně spolupráce s doručování vysoce kvalitního softwaru díky tomu můžete identifikovat bloky sémanticky podobné kódu, který může být kandidáty pro běžné opravy chyb nebo refaktoring.
+Visual Studio je rozšiřitelné a otevře dveře pro adaptéry jako například NUnit a xUnit.net testování jednotky třetí strany. Kromě toho přejde funkce klonování kódu ručně spolupráce s doručování vysoce kvalitního softwaru díky tomu můžete identifikovat bloky sémanticky podobné kódu, který se může jednat o kandidáty na běžné opravy chyby nebo refaktoring.
 
-![Test integrace třetích stran](media/devtest-thirdparty.png)
+![Integrace testování třetích stran](media/devtest-thirdparty.png)
 
 ## <a name="see-also"></a>Viz také:
 
@@ -87,3 +83,4 @@ Visual Studio je rozšiřitelné a otevře dveře pro adaptéry jako například
 * [Zrychlení provádění testů jednotek v sadě Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
 * [Paralelní a kontext provádění testů jednotek citlivé](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [Testování částí, pokrytí kódu a analýza duplicit pomocí sady Visual Studio (prostředí) v kódu](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
+* [Zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md)

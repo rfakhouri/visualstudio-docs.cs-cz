@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321161"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371092"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 
@@ -182,7 +182,7 @@ Společnost dinner Now musí odhadnout náklady na splnění nového požadavku.
 
  **Diagram závislostí**
 
-Pokud chcete mít jistotu, že je v konfliktu s návrhem nedochází během vývoje kódu, týmy používají ověřování závislostí v sestavení, které běží na Team Foundation Build. Jsou také vytvořit vlastní úkol MSBuild pro vyžadování ověřování závislostí v jejich operacích vrácení se změnami. Používají zprávy sestavení ke shromažďování chyb ověřování.
+Pokud chcete mít jistotu, že je v konfliktu s návrhem nedochází během vývoje kódu, týmy používají ověřování závislostí v sestavení, které běží na Azure DevOps. Jsou také vytvořit vlastní úkol MSBuild pro vyžadování ověřování závislostí v jejich operacích vrácení se změnami. Používají zprávy sestavení ke shromažďování chyb ověřování.
 
 Další informace:
 
@@ -234,7 +234,7 @@ Jak týmy dokončují jednotlivé úkoly, vraťte jejich kód do správy verzí 
 
 Společnost dinner Now má velkou kolekci automatických testů, které společnost Lucerne můžete znovu použít, protože téměř všechny jsou stále platné. Společnost Lucerne může také stavět na těchto testech a přidat nové, aby pokryl nové funkce. Oba také využívají Visual Studio ke spuštění ručních testů.
 
-Pokud chcete mít jistotu, že kód odpovídá návrhu, konfigurují týmy svá sestavení v Team Foundation Build zahrnout ověřování závislostí. Pokud dojde k jakýmkoli konfliktům, generování sestavy s podrobnostmi.
+Pokud chcete mít jistotu, že kód odpovídá návrhu, konfigurují týmy svá sestavení v Azure DevOps zahrnout ověřování závislostí. Pokud dojde k jakýmkoli konfliktům, generování sestavy s podrobnostmi.
 
 Další informace:
 

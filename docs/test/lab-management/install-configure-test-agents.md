@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5716d5a548980b85108b6bbc15329a755bc2b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320628"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370962"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalace testovacích agentů a kontrolerů testů
 
@@ -36,7 +36,7 @@ V následující tabulce jsou uvedeny požadavky na systém pro instalaci testov
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Nainstalujte testovací kontrolér a testovací agenty
 
-Můžete si stáhnout agenty pro Visual Studio 2017 z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Přejděte do dolní části stránky a vyhledejte *Agents for Visual Studio 2017*. Vyberte buď *agenta* nebo *řadič*a klikněte na tlačítko *Stáhnout*. Spouštění staženého spustitelného souboru k instalaci testovacího agenta nebo kontroler.
+Můžete si stáhnout agenty pro Visual Studio 2017 z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Vyhledejte *Agents for Visual Studio 2017*, vyberte buď *agenta* nebo *řadič*a klikněte na tlačítko *Stáhnout*. Spouštění staženého spustitelného souboru k instalaci testovacího agenta nebo kontroler.
 
 Agenty si můžete stáhnout pro Visual Studio 2015 a Visual Studio 2013 z [starší soubory ke stažení](https://visualstudio.microsoft.com/vs/older-downloads/) stránky.
 
@@ -63,7 +63,7 @@ Doporučujeme použít produkt agents for Visual Studio ve všech nových scén�
 Následující tabulka uvádí scénáře podporované agenty pro Visual Studio 2013 a alternativ pro Team Foundation Server (TFS) 2015 a Azure testovacích plánů:
 
 | Agents for Visual Studio 2013 podporuje scénáře | Alternativní v TFS a plány testování v Azure |
-| --- | --- |
+| - | - |
 | Pracovní postup sestavení-nasazení-testování v sadě Visual Studio | Uživatelé můžou použít [kanálu pro sestavování](/azure/devops/pipelines/index?view=vsts) (ne sestavení XAML) pro sestavení, nasazení a testování scénářů v sadě TFS. |
 | Zátěžové testování (testování výkonu) pomocí místní vzdálené počítače | Použít testovací Kontrolér a testovací agenty 2013 Update 5 spustit zátěžové testy místně. |
 | Vzdálené spuštění automatizovaných testů z nástroje Microsoft Test Manager pomocí testovacího prostředí | Aktuálně neexistuje žádná alternativa pro tento scénář. Doporučujeme, abyste pomocí úlohy pro spuštění funkčních testů v buildu a definice verzí (ne v sestavení XAML) Chcete-li vzdáleně spustit testy. |

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1bc542665e69a3997b8633ca5e351875f06848
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: cd9f04b616ee7551f04a8c0b260eb69995943a8b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513171"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371157"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Výchozí klávesové zkratky v sadě Visual Studio
 
@@ -161,7 +161,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.Copy|**CTRL + C**<br /><br /> or<br /><br /> **CTRL + in**|
 |Edit.Cut|**CTRL + X**<br /><br /> or<br /><br /> **Shift + Delete**|
 |Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> or<br /><br /> **Ctrl + Shift + in**|
-|Edit.Delete|**Odstranit**|
+|Edit.Delete|**Delete**|
 |Edit.Find|**CTRL + F**|
 |Edit.FindAllReferences|**Shift+F12**|
 |Edit.FindinFiles|**Ctrl + Shift + F**|
@@ -460,7 +460,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.Delete|**Ctrl + Del**|
 |Edit.ExpandCollapseBaseTypeList|**Shift + Alt + B**|
 |Edit.NavigateToLollipop|**Shift + Alt + L**|
-|Edit.RemovefromDiagram|**Odstranit**|
+|Edit.RemovefromDiagram|**Delete**|
 |View.ViewCode|**Zadejte**|
 
 ##  <a name="coded-ui-test-editor"></a>Editor programového testu UI
@@ -520,7 +520,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl + Shift + K**<br /><br /> or<br /><br /> **CTRL + E, C**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Odstranit**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Delete**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
 ##  <a name="graphics-diagnostics"></a>Diagnostika grafiky
@@ -587,7 +587,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
 |Edit.EditCell|**F2**|
-|Edit.Remove|**Odstranit**|
+|Edit.Remove|**Delete**|
 |Edit.RemoveRow|**CTRL + Delete**|
 |Edit.SelectionCancel|**Řídicí**|
 |Resources.Audio|**CTRL + 4**|
@@ -742,7 +742,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 
 |Příkaz|Klávesová zkratka|
 |-------------|-----------------------|
-|Edit.Delete|**Odstranit**|
+|Edit.Delete|**Delete**|
 |File.Rename|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**Alt + Home**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**ALT + Šipka dolů**|
@@ -761,12 +761,6 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward|**ALT + Šipka vpravo**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageCreateCopyWI|**Shift + Alt + C**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Shift + Alt + L**|
-|View.Refresh|**F5**|
-
-##  <a name="team-foundation-build-detail-editor"></a>Editor podrobností Team Foundation Build
-
-|Příkaz|Klávesová zkratka|
-|-------------|-----------------------|
 |View.Refresh|**F5**|
 
 ##  <a name="test-explorer"></a>Průzkumník testů
@@ -1143,7 +1137,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |GraphView.LefttoRight|**ALT + Šipka vpravo**|
 |GraphView.RighttoLeft|**ALT + Šipka doleva**|
 |GraphView.ToptoBottom|**ALT + Šipka dolů**|
-|OtherContextMenus.GraphView.RemovefromWorkspace|**Odstranit**|
+|OtherContextMenus.GraphView.RemovefromWorkspace|**Delete**|
 |XsdDesigner.ShowContentModelView|**CTRL + 2**|
 |XsdDesigner.ShowGraphView|**CTRL + 3**|
 |XsdDesigner.ShowStartView|**CTRL + 1**|

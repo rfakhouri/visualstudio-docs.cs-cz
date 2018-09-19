@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49b1fbf18fb0dac23fcc55b7d9765dd4d1a88d32
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1b9d5aa4c3f649f7be44db2e18f67884acd23201
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499696"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370663"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Získání informací o písma a barvy pro barevné zvýraznění textu
 Proces, který vykreslí nebo barevně zvýrazněné text se zobrazí prvky uživatelského rozhraní (UI) závisí na typu projektu, technologie a developer předvolby. **Písma a barvy** stránku vlastností ukládá nastavení.
@@ -50,4 +50,4 @@ Poté co získané informace písma a barvy, analyzovat text, který má být zo
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>
 - [Použití písem a textu](/dotnet/framework/winforms/advanced/using-fonts-and-text)
 - [Práce s barvou](/cpp/windows/working-with-color-image-editor-for-icons)
-- [Rozhraní GDI (graphics zařízení rozhraní)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)
+- [Rozhraní GDI (graphics zařízení rozhraní)](https://msdn.microsoft.com/library/7e1d4540-bb2e-4257-8eee-eee376acba83)

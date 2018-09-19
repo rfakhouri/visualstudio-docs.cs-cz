@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512545"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370975"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Výchozí klávesové zkratky pro často používané příkazy v sadě Visual Studio
 
@@ -150,7 +150,7 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 |View.ObjectBrowser|**Ctrl + Alt + J** [Global]|
 |View.Output|**Ctrl + Alt + O** [Global]|
 |View.PropertiesWindow|**F4**|
-|View.Refresh|**F5** [Team Explorer, Team Foundation Build Editor podrobností]|
+|View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**Ctrl + Alt + S** [Global]|
 |View.ShowSmartTag|**Ctrl+.** [Global]<br /><br /> nebo **Shift + Alt + F10** [Global, HTML Editor Design View]|
 |View.SolutionExplorer|**Ctrl + Alt + L** [Global]|

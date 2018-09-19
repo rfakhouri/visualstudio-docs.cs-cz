@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4b70c800e9dff7852d2a7aaec3ee1125932dfc1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 64a22cb00a90d9d5475fe89ff8c7fc800f23d86a
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512041"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371144"
 ---
 # <a name="image-service-and-catalog"></a>Služba bitových kopií a katalog
 Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Visual Studio Image a Image katalog zavedena v sadě Visual Studio 2015.  
@@ -174,7 +174,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
   
 ||||  
 |-|-|-|  
-|**– Element**|**Atributy (všechny povinné)**|**Definice**|  
+|**Element**|**Atributy (všechny povinné)**|**Definice**|  
 |\<Velikost >|Hodnota|Zdroj se použije pro Image dané velikosti (v jednotkách zařízení). Image bude čtvereček.|  
 |\<SizeRange >|MinSize MaxSize|Zdroj se použije pro obrázky z MinSize pro parametr MaxSize (v jednotkách zařízení) (včetně). Image bude čtvereček.|  
 |\<Dimenze >|Šířka, výška|Zdroj se použije pro Image dané šířky a výšky (v jednotkách zařízení).|  
@@ -662,7 +662,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
  Zkontrolujte [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) nejnovější ukázek.  
   
 ### <a name="tooling"></a>Nástroje  
- Sada nástrojů podpory pro službu bitových kopií byl vytvořen pro vytváření nebo aktualizaci uživatelského rozhraní, která spolupracuje se službou bitové kopie. Další informace o jednotlivých nástrojích naleznete v dokumentaci nástroje. Nástroje jsou součástí [Visual Studio 2015 SDK.](http://msdn.microsoft.com/library/bb166441.aspx)  
+ Sada nástrojů podpory pro službu bitových kopií byl vytvořen pro vytváření nebo aktualizaci uživatelského rozhraní, která spolupracuje se službou bitové kopie. Další informace o jednotlivých nástrojích naleznete v dokumentaci nástroje. Nástroje jsou součástí [Visual Studio 2015 SDK](visual-studio-sdk.md).
   
  **ManifestFromResources**  
   

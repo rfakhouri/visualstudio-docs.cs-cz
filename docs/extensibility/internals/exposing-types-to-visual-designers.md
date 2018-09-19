@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ca4b0ae279cc58945c864167d3068dd3d9b3a51
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 9f1820b3df61dd8029ac9404eb7f4a09e44707ac
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497486"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370624"
 ---
 # <a name="expose-types-to-visual-designers"></a>Vystavení typů pro vizuální návrháře
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aby bylo možné zobrazit vizuálního návrháře musí mít přístup do definice třídy a typ v době návrhu. Tříd jsou načteny z předdefinovanou sadu sestavení, které zahrnují závislost kompletní sadu aktuální projekt (odkazy a jejich závislosti). Může být také nezbytné pro vizuální návrháře tříd pro přístup k a typy, které jsou definovány v souborech generovaných vlastních nástrojů.  
@@ -47,6 +47,6 @@ ms.locfileid: "39497486"
      Při kompilaci dočasné přenositelné Spustitelné pouze zdrojový soubor k dispozici pro kompilátor je výstup vlastního nástroje. Vlastní nástroj, který používá dočasné přenositelné Spustitelné proto musí vygenerovat výstupní soubory, které mohou být zkompilovány nezávisle na jiné soubory v projektu.  
   
 ## <a name="see-also"></a>Viz také:  
- [Představení objektu BuildManager](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [Představení objektu BuildManager](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [Implementace generátorů tvořených jedním souborem](../../extensibility/internals/implementing-single-file-generators.md)   
  [Registrace generátorů tvořených jedním souborem](../../extensibility/internals/registering-single-file-generators.md)

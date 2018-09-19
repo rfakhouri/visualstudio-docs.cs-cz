@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957673f9e6701cc2148f6b29cb8e39fcfb8579e1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 3faf3e42442db03bbb40bbc3e726b909956d4187
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251605"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370860"
 ---
 # <a name="sample-implementation-of-locals"></a>Ukázková implementace místních hodnot
 > [!IMPORTANT]
@@ -67,7 +67,7 @@ ms.locfileid: "39251605"
  [Kontext vyhodnocení](../../extensibility/debugger/evaluation-context.md)  
  Poskytuje argumenty předávané při volání DE vyhodnocovací filtr výrazů (EE).  
   
- [Ukázka MyCEE](http://msdn.microsoft.com/en-us/624a018b-9179-402f-9d48-3aec87b48f4f)  
+ [Ukázka MyCEE](https://msdn.microsoft.com/library/624a018b-9179-402f-9d48-3aec87b48f4f)  
  Ukazuje jedním ze způsobů implementace vyhodnocovače výrazů jazyka MyC vytvoření.  
   
 ## <a name="see-also"></a>Viz také:  

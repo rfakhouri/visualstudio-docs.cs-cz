@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 491a70cd8ef35a1401bfe0cd8b6118709751d183
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ec65f2a35f0e28a8e9424497bcdfb11b1a02c84f
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321200"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371079"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Použití automatizace uživatelského rozhraní k testování kódu
 
@@ -437,7 +437,7 @@ Programové testy uživatelského rozhraní pomocí protokolů z programových t
 
 ## <a name="whats-next"></a>Co se chystá?
 
-**Další možností pro spouštění programových testů UI:** spustit programové testy UI přímo ze sady Visual Studio, jak je popsáno výše v tomto tématu. Kromě toho můžete spustit automatizované testy uživatelského rozhraní nebo z nástroje Microsoft Test Manager z Team Foundation Build. Pokud jsou automatizované programové testy UI, mají komunikovat s plochou, když spustíte, je oproti jiným automatizovaným testům.
+**Další možností pro spouštění programových testů UI:** spustit programové testy UI přímo ze sady Visual Studio, jak je popsáno výše v tomto tématu. Kromě toho můžete spustit automatizované testy uživatelského rozhraní z nástroje Microsoft Test Manager nebo pomocí kanálů Azure. Pokud jsou automatizované programové testy UI, mají komunikovat s plochou, když spustíte, je oproti jiným automatizovaným testům.
 
 - [Spouštění testování částí pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)
 

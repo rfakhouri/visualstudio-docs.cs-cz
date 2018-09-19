@@ -1,6 +1,6 @@
 ---
-title: Pokrytí kódu v sadě Visual Studio
-ms.date: 11/04/2016
+title: Kód pokrytí testování
+ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 - VB
 - CPP
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 8dc6ff1e2813f1457e8a41328f759e8e27d9aa65
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: dc8b08b68bb6c48fa22abaa90ba8b0b9daa25e89
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279944"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370936"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Určení rozsahu testovaného kódu pomocí pokrytí kódu
 
@@ -32,19 +32,19 @@ Pokrytí kódu je jedna z možností při spouštění testovacích metod pomoc�
 
 ![Výsledky pokrytí kódu s barevné zvýrazňování](../test/media/codecoverage1.png)
 
- **Požadavky**
+## <a name="requirements"></a>Požadavky
 
--   Visual Studio Enterprise
+Funkci pokrytí kódu je k dispozici pouze v edici Visual Studio Enterprise.
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Analýza pokrytí kódu jednotkovými testy v Průzkumníku testů
 
-1.  Na **testovací** nabídce zvolte **analyzovat pokrytí kódu**.
+1. Na **testovací** nabídce zvolte **analyzovat pokrytí kódu**.
 
-2.  Chcete-li zobrazit řádky, které byly spuštěny, zvolte ![zobrazit barevné označení ikona pokrytí kódu](../test/media/codecoverage-showcoloringicon.png)**zobrazit barevné označení pokrytí kódu**.
+2. Chcete-li zobrazit řádky, které byly spuštěny, zvolte ![zobrazit barevné označení ikona pokrytí kódu](../test/media/codecoverage-showcoloringicon.png) **zobrazit barevné označení pokrytí kódu**.
 
-     Pro změnu barvy nebo použití tučného písma zvolte **nástroje** > **možnosti** > **prostředí** > **písma a Barvy** > **zobrazit nastavení pro: textový Editor**. V části **zobrazit položky**, nastavte položky pokrytí.
+   Pro změnu barvy nebo použití tučného písma zvolte **nástroje** > **možnosti** > **prostředí** > **písma a Barvy** > **zobrazit nastavení pro: textový Editor**. V části **zobrazit položky**, nastavte položky pokrytí.
 
-3.  Pokud výsledky zobrazují nízké pokrytí, prozkoumejte, které části kódu nejsou testovány, a vytvořte pro ně další testy. Vývojové týmy obvykle usilují o 80% pokrytí kódu. V některých situacích je přijatelné i nižší pokrytí. Nižší pokrytí je například přijatelné tehdy, pokud je část kódu generována ze standardní šablony.
+3. Pokud výsledky zobrazují nízké pokrytí, prozkoumejte, které části kódu nejsou testovány, a vytvořte pro ně další testy. Vývojové týmy obvykle usilují o 80% pokrytí kódu. V některých situacích je přijatelné i nižší pokrytí. Nižší pokrytí je například přijatelné tehdy, pokud je část kódu generována ze standardní šablony.
 
 > [!TIP]
 > - Ujistěte se, že tento optimalizace kompilátoru je vypnutý.
@@ -69,42 +69,44 @@ Okno pokrytí kódu lze také použít k zobrazení předchozích výsledků neb
 
 Je také možné sloučit výsledky několika běhů, pokud například používají jiná testovací data.
 
--   **Chcete-li zobrazit předchozí sady výsledků**, vyberte ho z rozevírací nabídky. Nabídka obsahuje dočasný seznam, který je po otevření nového řešení vyprázdněn.
+- **Chcete-li zobrazit předchozí sady výsledků**, vyberte ho z rozevírací nabídky. Nabídka obsahuje dočasný seznam, který je po otevření nového řešení vyprázdněn.
 
--   **Pro zobrazení výsledků z předchozí relace**, zvolte **importovat výsledky pokrytí kódu**, přejděte **TestResults** složky v řešení a import *.coverage* souboru.
+- **Pro zobrazení výsledků z předchozí relace**, zvolte **importovat výsledky pokrytí kódu**, přejděte **TestResults** složky v řešení a import *.coverage* souboru.
 
-    Vybarvení pokrytí může být nesprávné v případě, že byl zdrojový kód změněn od *.coverage* vygeneroval soubor.
+   Vybarvení pokrytí může být nesprávné v případě, že byl zdrojový kód změněn od *.coverage* vygeneroval soubor.
 
--   **Aby byly výsledky čitelné jako text**, zvolte **exportovat výsledky pokrytí kódu**. Tím se vygeneruje čitelné *.coveragexml* souboru, který může zpracovat v jiných nástrojích nebo jednoduše odeslat e-mailu.
+- **Aby byly výsledky čitelné jako text**, zvolte **exportovat výsledky pokrytí kódu**. Tím se vygeneruje čitelné *.coveragexml* soubor, který může zpracovat v jiných nástrojích nebo jednoduše odeslat e-mailu.
 
--   **Pro odeslání výsledků někomu jinému**, odeslat buď *.coverage* souboru nebo exportovaná *.coveragexml* souboru. Tento soubor je pak možné importovat. Pokud se navíc shodují verze zdrojového kódu, je možné zobrazit i vybarvení pokrytí.
+- **Pro odeslání výsledků někomu jinému**, odeslat buď *.coverage* souboru nebo exportovaná *.coveragexml* souboru. Tento soubor je pak možné importovat. Pokud se navíc shodují verze zdrojového kódu, je možné zobrazit i vybarvení pokrytí.
 
 ## <a name="merge-results-from-different-runs"></a>Sloučení výsledků různých běhů
 
 V některých situacích se na základě testovacích dat použijí různé bloky kódu. Může být tedy nutné sloučit výsledky různých testovacích běhů.
 
- Například při spuštění testu se vstupem „2“ je zjištěno 50% pokrytí určité funkce. Při druhém spuštění testu se vstupem „-2“ se v okně pokrytí zobrazí pokrytí zbylých 50 % funkce. Po sloučení výsledků těchto dvou testovacích běhů ukáže sestava i vybarvení 100% pokrytí funkce.
+Například při spuštění testu se vstupem „2“ je zjištěno 50% pokrytí určité funkce. Při spuštění testu podruhé se vstupem "-2" se zobrazí v okně pokrytí zobrazí pokrytí zbylých, že se věnujeme zbylých 50 % funkce. Po sloučení výsledků těchto dvou testovacích běhů ukáže sestava i vybarvení 100% pokrytí funkce.
 
- Použití ![ikony pro tlačítko sloučení v okně pokrytí kódu](../test/media/codecoverage-mergeicon.png)**sloučit výsledky pokrytí kódu** provedete to tak. Ke sloučení je možné použít libovolnou kombinaci předešlých běhů nebo importovaných výsledků. Pokud je potřeba sloučit exportované výsledky, je nejprve nutné je importovat.
+Použití ![ikony pro tlačítko sloučení v okně pokrytí kódu](../test/media/codecoverage-mergeicon.png) **sloučit výsledky pokrytí kódu** provedete to tak. Ke sloučení je možné použít libovolnou kombinaci předešlých běhů nebo importovaných výsledků. Pokud je potřeba sloučit exportované výsledky, je nejprve nutné je importovat.
 
- Použití **exportovat výsledky pokrytí kódu** k uložení výsledků operace sloučení.
+Použití **exportovat výsledky pokrytí kódu** k uložení výsledků operace sloučení.
 
 ### <a name="limitations-in-merging"></a>Omezení při slučování
 
--   Při sloučení dat pokrytí rozdílných verzí kódu jsou výsledky zobrazeny odděleně, ale nejsou sloučeny. Pro kompletní sloučení výsledků je potřeba použít stejné sestavení kódu pouze s odlišnými testovacími daty.
+- Při sloučení dat pokrytí rozdílných verzí kódu jsou výsledky zobrazeny odděleně, ale nejsou sloučeny. Pro kompletní sloučení výsledků je potřeba použít stejné sestavení kódu pouze s odlišnými testovacími daty.
 
--   Pokud dojde ke sloučení souboru výsledků, který byl exportován a poté importován, je možné zobrazit výsledky jen podle řádků, nikoli podle bloků. Použití **Přidat/odebrat sloupce** příkazu můžete zobrazit data řádku.
+- Pokud dojde ke sloučení souboru výsledků, který byl exportován a poté importován, je možné zobrazit výsledky jen podle řádků, nikoli podle bloků. Použití **Přidat/odebrat sloupce** příkazu můžete zobrazit data řádku.
 
--   Při sloučení výsledků testů projektu aplikace ASP.NET dojde k zobrazení výsledků samostatných testů, ale ne k jejich sloučení. To platí pouze pro samotné artefakty ASP.NET, výsledky pro jakákoli jiná sestavení budou sloučeny.
+- Při sloučení výsledků testů projektu aplikace ASP.NET dojde k zobrazení výsledků samostatných testů, ale ne k jejich sloučení. To platí pouze pro samotné artefakty ASP.NET, výsledky pro jakákoli jiná sestavení budou sloučeny.
 
 ## <a name="exclude-elements-from-the-code-coverage-results"></a>Vyloučení prvků z výsledků pokrytí kódu
 
-Je možné vyloučit určité prvky v kódu z výpočtů pokrytí, například proto, že je kód generován z textové šablony. Přidejte atribut `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` na některý z následujících prvků kódu: třídy, struktury, metoda, vlastnost, vlastnost setter nebo getter, události. Za povšimnutí stojí, že vyloučení třídy nevylučuje její odvozené třídy.
+Je možné vyloučit určité prvky v kódu z výpočtů pokrytí, například proto, že je kód generován z textové šablony. Přidat <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> atributu na některý z následujících prvků kódu: třídy, struktury, metoda, vlastnost, vlastnost setter nebo getter, události.
 
- Příklad:
+> [!TIP]
+> Vyloučení třídy nevylučuje její odvozené třídy.
+
+Příklad:
 
 ```csharp
-
 using System.Diagnostics.CodeAnalysis;
 ...
 public class ExampleClass1
@@ -132,7 +134,6 @@ public class ExampleClass1
 }
 [ExcludeFromCodeCoverage]
 class ExampleClass2 { ... }
-
 ```
 
 ```vb
@@ -222,23 +223,23 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 Použijte následující makra:
 
- `ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
+`ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
 
- `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *cestakezdrojovemusouboru* `");`
+`ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *cestakezdrojovemusouboru* `");`
 
--   *ExclusionName* je libovolný jedinečný název.
+- *ExclusionName* je libovolný jedinečný název.
 
--   *FunctionName* je funkce plně kvalifikovaného názvu. Může obsahovat zástupné znaky. Například pro vyloučení všech funkcí třídy, zápis `MyNamespace::MyClass::*`
+- *FunctionName* je funkce plně kvalifikovaného názvu. Může obsahovat zástupné znaky. Například pro vyloučení všech funkcí třídy, zápis `MyNamespace::MyClass::*`
 
--   *Cestakezdrojovemusouboru* je místní cesta nebo cesta UNC souboru s příponou .cpp. Může obsahovat zástupné znaky. Následující příklad vylučuje všechny soubory v určitém adresáři: `\\MyComputer\Source\UnitTests\*.cpp`
+- *Cestakezdrojovemusouboru* je místní cesta nebo cesta UNC souboru s příponou .cpp. Může obsahovat zástupné znaky. Následující příklad vylučuje všechny soubory v určitém adresáři: `\\MyComputer\Source\UnitTests\*.cpp`
 
--   `#include <CodeCoverage\CodeCoverage.h>`
+- `#include <CodeCoverage\CodeCoverage.h>`
 
--   Umístěte volání maker vyloučení do globálního oboru názvů a nikoli v rámci libovolného oboru názvů nebo třídy.
+- Umístěte volání maker vyloučení do globálního oboru názvů a nikoli v rámci libovolného oboru názvů nebo třídy.
 
--   Vyloučení se umisťuje buď do souboru kódu jednotkového testu, nebo do souboru kódu aplikace.
+- Vyloučení se umisťuje buď do souboru kódu jednotkového testu, nebo do souboru kódu aplikace.
 
--   Vyloučení musí být kompilována jako nespravovaný (nativní) kód buď nastavením možnosti kompilátoru, nebo pomocí `#pragma managed(off)`.
+- Vyloučení musí být kompilována jako nespravovaný (nativní) kód buď nastavením možnosti kompilátoru, nebo pomocí `#pragma managed(off)`.
 
 > [!NOTE]
 > Pro vyloučení funkcí v jazyce C + +/ CLI kódu, použijte atribut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` funkci. Toto je stejné použití jako v jazyce C#.
@@ -251,38 +252,27 @@ Je také možné získat větší kontrolu nad tím, které sestavení a prvky v
 
 ## <a name="analyze-code-coverage-in-azure-pipelines"></a>Analýza pokrytí kódu v kanálech Azure
 
-Při vrácení kódu se změnami jsou testy spuštěny na serveru sestavení společně se všemi dalšími testy ostatních členů týmu. (Pokud jste ještě nenastavili to, přečtěte si téma [spuštění testů v procesu sestavení](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Je užitečné analyzovat pokrytí kódu v kanálech Azure, protože to poskytuje nejaktuálnější a nejsrozumitelnější obraz o pokrytí celého projektu. Bude také zahrnovat automatizované systémové testy a další kódované testy, které nejsou obvykle spouštěny na počítačích vývojářů.
-
-1. V **Team Exploreru**, otevřete **sestavení**a poté přidejte nebo upravte definici sestavení.
-
-2. Na **procesu** stránce, rozbalte **automatizované testy**, **zdroj testu**, **parametrů běhu**. Nastavte **typ souboru parametrů běhu** k **povoleným pokrytím kódu**.
-
-   Pokud máte více než jednu definici Zdroje testu, opakujte tento krok pro každou z nich.
-
-   ![Nastavení definice sestavení pro pokrytí kódu](../test/media/codecoverage-plaincc.png)
-
-> [!TIP]
-> Pokud tam není žádné pole s názvem **typ souboru parametrů běhu**, změnit **nástroj Test Runner** vlastnost. V části **automatizované testy**vyberte **sestavení testu** a zvolte tlačítko se třemi tečkami **[...]**  na konci řádku. V **přidat/upravit testovací běh** dialogovém okně **nástroj Test Runner**, zvolte **Visual Studio Test Runner**.
-
-Když sestavení proběhne, jsou výsledků pokrytí kódu připojeny k testovacímu běhu a zobrazí se v přehledu sestavení.
+Při vrácení se změnami ve vašem kódu, testy spustit na serveru sestavení společně s testy ostatních členů týmu. To je užitečné analyzovat pokrytí kódu v kanálech Azure získat nejaktuálnější a nejsrozumitelnější obraz o pokrytí celého projektu. Zahrnuje také automatizované systémové testy a další kódované testy, které nejsou obvykle spouštěny na počítačích vývojářů. Další informace najdete v tématu [spouštění testů jednotek s buildy](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts).
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>Analýza pokrytí kódu z příkazového řádku
 
 Chcete-li spustit testy z příkazového řádku, použijte *vstest.console.exe*. Pokrytí kódu je jednou z možností *vstest.console.exe* nástroj.
 
-1.  Spusťte příkazový řádek pro vývojáře v sadě Visual Studio:
+1. Spusťte příkazový řádek pro vývojáře pro sadu Visual Studio:
 
-    V Windows **Start** nabídce zvolte **Visual Studio 2017** > **Developer Command Prompt for VS 2017**.
+   V Windows **Start** nabídce zvolte **Visual Studio 2017** > **Developer Command Prompt for VS 2017**.
 
-2.  Spusťte následující příkaz:
+2. Na příkazovém řádku spusťte následující příkaz:
 
-    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
+   ```shell
+   vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage
+   ```
 
 Další informace najdete v tématu [možnosti příkazového řádku VSTest.Console.exe](vstest-console-options.md).
 
 ## <a name="troubleshoot"></a>Řešení potíží
 
-Pokud se nezobrazí výsledky pokrytí kódu [Poradce při potížích s pokrytím kódu](../test/troubleshooting-code-coverage.md) tématu vám můžou pomoct.
+Pokud se nezobrazí výsledky pokrytí kódu [Poradce při potížích s pokrytím kódu](../test/troubleshooting-code-coverage.md) článku vám můžou pomoct.
 
 ## <a name="see-also"></a>Viz také:
 

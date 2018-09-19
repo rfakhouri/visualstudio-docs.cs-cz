@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 22d51fff3dcfea81676e18c7b13d91bb5567dde8
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 8046e5fe494839c051662bf313a17c49eea8746b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321122"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371059"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Ověřování kódu pomocí diagramů závislostí
 
@@ -52,16 +52,14 @@ Pokud chcete mít jistotu, že kód není v konfliktu s návrhem, ověřování 
 
 -   Visual Studio
 
--   Visual Studio na vašem serveru Team Foundation Build pro automatické ověřování kódu pomocí Team Foundation Build
-
 -   Řešení, které má projekt modelování s diagramem závislostí. Tento diagram závislostí musí být spojen s artefakty v projektech C# nebo Visual Basic, které chcete ověřit. Zobrazit [vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md).
 
- Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Můžete ověřit kód ručně z diagramu otevřete závislostí v sadě Visual Studio nebo z příkazového řádku. Kód lze rovněž automaticky ověřit při spuštění místních sestavení nebo procesu Team Foundation Build. Zobrazit [Video pro kanál 9: návrh a ověření architektury pomocí diagramů závislostí](http://go.microsoft.com/fwlink/?LinkID=252073).
+Můžete ověřit kód ručně z diagramu otevřete závislostí v sadě Visual Studio nebo z příkazového řádku. Rovněž je možné ověřit kód automaticky při spuštění místních sestavení nebo kanály Azure sestavení. Zobrazit [Video pro kanál 9: návrh a ověření architektury pomocí diagramů závislostí](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
->  Pokud chcete spustit ověření vrstvy pomocí procesu Team Foundation Build, je rovněž nutné nainstalovat stejnou verzi sady Visual Studio na svém serveru sestavení.
+> Pokud chcete spustit ověření vrstvy pomocí serveru Team Foundation Server, musíte také nainstalovat stejnou verzi sady Visual Studio na svém serveru sestavení.
 
 -   [Zobrazit, pokud položka podporuje validaci](#SupportsValidation)
 
@@ -182,51 +180,32 @@ V této verzi sady Visual Studio dojde k ověřování závislostí v reálném 
 |Skrytí všech potlačených chyb v **seznam chyb** okna|Klikněte pravým tlačítkem kamkoli **seznam chyb** okno, přejděte na příkaz **spravovat chyby ověřování**a potom klikněte na tlačítko **skrýt všechny Potlačené chyby**.|
 
 ##  <a name="ValidateAuto"></a> Ověřování kódu automaticky
- Ověřování vrstev lze provádět při každém spuštění místního sestavení. Pokud váš tým používá proces Team Foundation Build, můžete provést ověření vrstev s ověřenými vráceními se změnami, které lze určit vytvořením vlastní úlohy MSBuild, a použít sestavy sestavení pro sběr chyb ověřování. Vytvoření sestavení hlídaného vrácení se změnami naleznete v tématu [použít proces sestavení hlídaného vrácení se změnami pro ověření změn](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+
+Ověřování vrstev lze provádět při každém spuštění místního sestavení. Pokud váš tým používá Azure DevOps, můžete provést ověření vrstev s ověřenými vráceními se změnami, které lze určit vytvořením vlastní úlohy MSBuild a použít sestavy sestavení pro sběr chyb ověřování. Vytvoření sestavení hlídaného vrácení se změnami naleznete v tématu [použít proces sestavení hlídaného vrácení se změnami pro ověření změn](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Automatické ověřování kódu během místního sestavení
 
--   K otevření souboru projektu modelování (.modelproj) použijte textový editor a následně vložte následující vlastnost:
+K otevření souboru projektu modelování (.modelproj) použijte textový editor a následně vložte následující vlastnost:
 
 ```xml
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- nebo –
+\- nebo –
 
 1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt modelování obsahující diagram závislostí nebo diagramy a pak klikněte na **vlastnosti**.
 
 2.  V **vlastnosti** okno, nastavte projekt modelování **ověřit architekturu** vlastnost **True**.
 
-     To zahrne projekt modelování do ověřovacího procesu.
+    To zahrne projekt modelování do ověřovacího procesu.
 
 3.  V **Průzkumníka řešení**, klikněte na soubor diagramu (.layerdiagram) závislost, kterou chcete použít pro ověřování.
 
 4.  V **vlastnosti** okno, ujistěte se, že v diagramu **akce sestavení** je nastavena na **ověřit**.
 
-     To zahrnuje diagram závislostí do ověřovacího procesu.
+    To zahrnuje diagram závislostí do ověřovacího procesu.
 
- Ke správě chyb v okně Seznam chyb, naleznete v tématu [spravovat chyby ověřování](#ManageErrors).
-
-#### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Ověření kódu automaticky během sestavení Team Foundation Build
-
-1.  V **Team Exploreru**, klikněte dvakrát na definici sestavení a pak klikněte na tlačítko **procesu**.
-
-2.  V části **parametry procesu sestavení**, rozbalte **kompilace**a zadejte následující příkaz v **argumenty nástroje MSBuild** parametr:
-
-     `/p:ValidateArchitecture=true`
-
- Další informace o chybách ověřování najdete v části [pochopení a vyřešení chyb ověřování vrstev](#UnderstandingValidationErrors). Další informace o [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], naleznete v tématu:
-
--   [Kanály Azure](/azure/devops/pipelines/index?view=vsts)
-
--   [Použít výchozí šablonu pro proces sestavení](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
-
--   [Upravit starší verze sestavení, které jsou založeny na UpgradeTemplate.xaml](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
-
--   [Přizpůsobení šablony procesu sestavení](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
-
--   [Průběh můžete monitorovat spuštění sestavení](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+Ke správě chyb v okně Seznam chyb, naleznete v tématu [spravovat chyby ověřování](#ManageErrors).
 
 ##  <a name="TroubleshootingValidation"></a> Řešení potíží s problémy s ověřením vrstvy
  Následující tabulka popisuje problémy s ověřením vrstvy a jejich řešení. Tyto problémy se liší od chyb, které vzniknou z konfliktů mezi kódem a návrhem. Další informace o těchto chybách naleznete v tématu [pochopení a vyřešení chyb ověřování vrstev](#UnderstandingValidationErrors).
