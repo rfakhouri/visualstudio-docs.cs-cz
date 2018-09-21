@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94294078ccb1dd2620127fa85acf0ae4564080dd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 782cec69f5129aaa4bbea66d0adb52d2bd172032
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638027"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495450"
 ---
 # <a name="localize-menu-commands"></a>Lokalizace příkazů nabídky
 Lokalizovaný text příkazů nabídky a panelu nástrojů můžete zadat tak, že vytvoříte lokalizované *.vsct* soubory a lokalizované *RESX* soubory vašeho balíčku VSPackage a pak aktualizuje soubory projektu začlenit změny.  
@@ -37,7 +37,7 @@ Lokalizovaný text příkazů nabídky a panelu nástrojů můžete zadat tak, �
   
 2.  Vytvořte kopii *filename.en US.vsct* pro každý lokalizovaný jazyk.  
   
-     Název každé kopie *filename. { Národní prostředí} .vsct*, kde *{národní prostředí}* je název konkrétní jazykové verze. Seznam hodnot název jazykové verze, najdete v části [ID národních prostředí přiřazené společností Microsoft](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     Název každé kopie *filename. { Národní prostředí} .vsct*, kde *{národní prostředí}* je název konkrétní jazykové verze. Seznam hodnot název jazykové verze, najdete v části [ID národních prostředí přiřazené společností Microsoft](/windows/uwp/publish/supported-languages).  
   
      Tyto *název souboru. Locale.vsct* soubory bude obsahovat text lokalizované nabídky pro svůj balíček.  
   

@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c527604639d701c3cda5bddba9ee61c01e5c8dd
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 794d1bae562bf107d9986a132a44d4fa95aec20d
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586772"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495814"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK umožňuje rozšířit funkce aplikace Visual Studio nebo systém integrovat nové funkce do sady Visual Studio. Můžete distribuovat rozšíření ostatním uživatelům, tak na Visual Studio Marketplace. Tady jsou některé způsoby, ve kterém můžete rozšíření sady Visual Studio:  
@@ -68,7 +68,7 @@ Visual Studio SDK umožňuje rozšířit funkce aplikace Visual Studio nebo syst
 ## <a name="other-visual-studio-sdk-resources"></a>Další prostředky sady Visual Studio SDK  
  Pokud máte dotazy týkající VSSDK nebo chcete sdílet vaše prostředí pro vývoj rozšíření, můžete použít [Visual Studio Extensibility fórum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) nebo [ExtendVS Gitteru Chatroom](https://gitter.im/Microsoft/extendvs).  
   
- Můžete najít další informace najdete v [VSX Arcana blogu](http://blogs.msdn.com/b/vsx/) a počet blogy autorem MVPs společnosti Microsoft:  
+ Můžete najít další informace najdete v [VSX Arcana blogu](https://blogs.msdn.microsoft.com/vsx/) a počet blogy autorem MVPs společnosti Microsoft:  
   
 -   [Oblíbená rozšíření sady Visual Studio](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
   

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e763b8006dd2c01f8e2ee4beeffa7c78100b15b3
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 587a0193dea0f4a8d16ea0555cf5788cd1ead1d5
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586299"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495346"
 ---
 # <a name="vstextbuffer-object"></a>Vstextbuffer – objekt
 Objekt vyrovnávací paměti textu představuje datový proud text v kódu Unicode, který je obvykle přidružen soubor. A <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objekt lze použít mimo kontext základní editor, tj. průvodce.  
@@ -30,9 +30,9 @@ Objekt vyrovnávací paměti textu představuje datový proud text v kódu Unico
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Iolecommandtarget –](http://msdn.microsoft.com/library/windows/desktop/ms683797)|Standardní rozhraní OLE. Používá se pro zpracování ve vyrovnávací paměti zpět/znovu.|  
-|[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|Standardní rozhraní OLE.|  
-|[Rozhraní IPersistStream](http://msdn.microsoft.com/library/windows/desktop/ms690091)|Standardní rozhraní OLE.|  
+|[Iolecommandtarget –](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|Standardní rozhraní OLE. Používá se pro zpracování ve vyrovnávací paměti zpět/znovu.|  
+|[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|Standardní rozhraní OLE.|  
+|[Rozhraní IPersistStream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|Standardní rozhraní OLE.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Umožňuje vytvořit sloučeniny akce (to znamená, akce, které jsou seskupeny do jednoho zpět/znovu jednotka).|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Povolí trvalost dat dokumentu spravuje vyrovnávací paměti textu.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Poskytuje základní služby; používá mnoho klientů.|  
@@ -49,4 +49,4 @@ Objekt vyrovnávací paměti textu představuje datový proud text v kódu Unico
 ## <a name="see-also"></a>Viz také:  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [Úpravy obrázků](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [Úpravy obrázků](https://www.microsoft.com/download/details.aspx?id=55984)

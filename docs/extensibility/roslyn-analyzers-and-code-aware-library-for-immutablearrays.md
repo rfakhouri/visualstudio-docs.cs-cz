@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad8f58e1d576a738c17095b6306261964e448651
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637718"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495918"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyzátory Roslyn a knihovny pro řešení ImmutableArrays
 
@@ -307,13 +307,13 @@ Nyní můžete stisknout **F5** pro spuštění vašeho analyzátor ve druhé in
 
 ## <a name="talk-video-and-finish-code-project"></a>Mluví videa a dokončení projektu kódu
 
-Zobrazí se v tomto příkladu vyvinul a popsané dále v [předváděcí](http://channel9.msdn.com/events/Build/2015/3-725).  Posluchačů ukazuje analyzátor pracovní a provede vás jeho sestavení.
+Zobrazí se v tomto příkladu vyvinul a popsané dále v [předváděcí](https://channel9.msdn.com/events/Build/2015/3-725).  Posluchačů ukazuje analyzátor pracovní a provede vás jeho sestavení.
 
 Zobrazí všechny dokončené kód [tady](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers).  Dílčí složky *DoNotUseImmutableArrayCollectionInitializer* a *DoNotUseImmutableArrayCtor* mají soubor jazyka C# pro vyhledání problémů a soubor jazyka C#, která implementuje kód opravy, které zobrazují v Visual Studio žárovky uživatelského rozhraní.  Mějte na paměti, Dokončený kód je trochu více abstrakce, aby se zabránilo načítání ImmutableArray je\<T > pořád dokola typu object.  Používá vnořené registrované akce Uložit objekt typu, v kontextu, který je k dispozici pokaždé, když se akce sub (analýza vytvoření objektu a analyzovat inicializace kolekce) provést.
 
 ## <a name="see-also"></a>Viz také:
 
-* [\\Přednáška \Build 2015](http://channel9.msdn.com/events/Build/2015/3-725)
+* [\\Přednáška \Build 2015](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Dokončený kód na Githubu](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
 * [Několik příkladů na Githubu, seskupených do tři druhy analyzátory](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 * [Další dokumenty na webu GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)

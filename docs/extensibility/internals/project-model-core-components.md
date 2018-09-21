@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dd3bf8f3f31b914debc6dab4eb5c4f6e7b27086
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 863aef532e90d749f5c9c93a9d16cb2daf7f6c0b
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512220"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495983"
 ---
 # <a name="project-model-core-components"></a>Základní komponenty modelu projektu
 V následujících tabulkách doplňovat modelu projektu. Tabulky k dispozici stručné popisy rozhraní a služby určené v modelu, rozhraní a služeb přidružený k konkrétní objekty. Kromě toho v tabulkách jsou podrobně popsané jiného rozhraní, které jsou nepovinné v projektu vytváření a údržbu v závislosti na požadavcích vaší konkrétního typu projektu.  
@@ -105,6 +105,6 @@ V následujících tabulkách doplňovat modelu projektu. Tabulky k dispozici st
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Kontrolní seznam: Vytvoření nových typů projektů](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Není v sestavení: použití HierUtil7 projektu třídy k implementaci typu projektu (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Není v sestavení: použití HierUtil7 projektu třídy k implementaci typu projektu (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Podpůrné nástroje procházení symbolů](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Prvky modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)

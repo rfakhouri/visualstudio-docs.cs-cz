@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51c83a6048102ed3b314c3c862023004cb18bc4
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6a14079c4d936dcc6cd632e28d7b8628983cb990
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586805"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495684"
 ---
 # <a name="visual-studio-sdk-reference"></a>Referenční dokumentace jazyka Visual Studio SDK
 Tato část obsahuje informace o oborech názvů, související obory názvů a ostatní oblasti zájmu sady Visual Studio pro vývojáře, kteří používají Visual Studio SDK.  
@@ -223,7 +223,7 @@ Tato část obsahuje informace o oborech názvů, související obory názvů a 
  <xref:Microsoft.VisualStudio.Threading>  
  Používá se pro dělení na vlákna sady Visual Studio.  
   
- [Namespace Microsoft.VisualStudio.ConnectedServices](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx) používané pro Visual Studio připojené služby.  
+ [Namespace Microsoft.VisualStudio.ConnectedServices](/dotnet/api/microsoft.visualstudio.connectedservices) používané pro Visual Studio připojené služby.  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) výčet  
  Určuje příznaky hostitele technologie IntelliSense.  

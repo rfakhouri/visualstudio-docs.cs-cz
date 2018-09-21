@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 808cd12386e6bf0431c3786f7afd89ecd38af372
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513371"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495996"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 Tento článek obsahuje následující úkoly pro Visual Studio Help Viewer integrátorům:  
@@ -439,12 +439,12 @@ Poznámka: proměnné, které jsou označeny "{n}" mít závislostí kódu – o
 |-|-|  
 |Funkce:|**CollapsibleArea**|  
 |Použití:|Rozbalte text sbalí obsahu ovládacího prvku|  
-|**– Element**|**Hodnota**|  
+|**Element**|**Hodnota**|  
 |ExpandText|Rozbalte položku|  
 |CollapseText|Sbalit|  
 |Funkce:|**CodeSnippet**|  
 |Použití:|Text ovládacího prvku fragmentu kódu.  Poznámka: Obsah fragment kódu s prostorem "Non-zásadní" se změní na místo.|  
-|**– Element**|**Hodnota**|  
+|**Element**|**Hodnota**|  
 |CopyToClipboard|Kopírovat do schránky|  
 |ViewColorizedText|Zobrazit Obarvený text|  
 |CombinedVBTabDisplayLanguage|Visual Basic (ukázka)|  
@@ -452,7 +452,7 @@ Poznámka: proměnné, které jsou označeny "{n}" mít závislostí kódu – o
 |VBUsage|Použití|  
 |Funkce:|**Zpětná vazba, zápatí a Logo**|  
 |Použití:|Poskytnutí zpětné vazby ovládacího prvku pro zákazníka, které chcete poskytnout zpětnou vazbu na aktuální téma e-mailem.  O autorských právech text pro obsah.  Logo definice.|  
-|**– Element**|**Hodnota (tyto řetězce lze upravit podle potřeby obsahu adopter.)**|  
+|**Element**|**Hodnota (tyto řetězce lze upravit podle potřeby obsahu adopter.)**|  
 |CopyRight|© 2013 Microsoft Corporation. Všechna práva vyhrazena.|  
 |SendFeedback|\<href = "{0}" {1}> Odeslat názor\</a > k tomuto tématu společnosti Microsoft.|  
 |FeedbackLink||  
@@ -461,7 +461,7 @@ Poznámka: proměnné, které jsou označeny "{n}" mít závislostí kódu – o
 |LogoFileNameHC|vs_logo_wh.GIF|  
 |Funkce:|**Právní omezení**|  
 |Použití:|Obsah přeložený sadu právní omezení velikosti písmen specifické pro počítač.|  
-|**– Element**|**Hodnota**|  
+|**Element**|**Hodnota**|  
 |MT_Editable|Tento článek byl strojově přeložen. Pokud máte připojení k Internetu, vyberte možnost "Zobrazit toto téma online" pro zobrazení této stránky v upravitelném režimu spolu s původním anglickým obsahem ve stejnou dobu.|  
 |MT_NonEditable|Tento článek byl strojově přeložen. Pokud máte připojení k Internetu, vyberte možnost "Zobrazit toto téma online" pro zobrazení této stránky v upravitelném režimu spolu s původním anglickým obsahem ve stejnou dobu.|  
 |MT_QualityEditable|Tento článek byl přeložen ručně. Pokud máte připojení k Internetu, vyberte možnost "Zobrazit toto téma online" pro zobrazení této stránky v upravitelném režimu spolu s původním anglickým obsahem ve stejnou dobu.|  
@@ -470,14 +470,14 @@ Poznámka: proměnné, které jsou označeny "{n}" mít závislostí kódu – o
 |MT_BetaRecycledContents|Tento článek byl přeložen ručně pro předběžné vydání. Pokud máte připojení k Internetu, vyberte možnost "Zobrazit toto téma online" pro zobrazení této stránky v upravitelném režimu spolu s původním anglickým obsahem ve stejnou dobu.|  
 |Funkce:|**LinkTable**|  
 |Použití:|Podpora pro online téma obsahuje odkazy|  
-|**– Element**|**Hodnota**|  
+|**Element**|**Hodnota**|  
 |LinkTableTitle|Vazební tabulka|  
 |TopicEnuLinkText|Zobrazit anglickou verzi\</a > tohoto tématu, který je dostupný na vašem počítači.|  
 |TopicOnlineLinkText|Zobrazit toto téma \<href = "{0}" {1}> online\</a >|  
 |OnlineText|Online|  
 |Funkce:|**Ovládacího prvku video zvuku**|  
 |Použití:|Zobrazit elementy a text v případě video obsahu|  
-|**– Element**|**Hodnota**|  
+|**Element**|**Hodnota**|  
 |MultiMediaNotSupported|Aplikace Internet Explorer 9 nebo vyšší musí být nainstalována, aby podporovaly {0} obsah.|  
 |VideoText|zobrazení videa|  
 |AudioText|vysílání datového proudu zvuku|  
@@ -485,25 +485,25 @@ Poznámka: proměnné, které jsou označeny "{n}" mít závislostí kódu – o
 |OnlineAudioLinkText|\<p > poslech Audio nahrávky patřící k tomuto tématu klikněte na tlačítko {0} \<href = "{1}" >{2}tady\</a >.\< /p >|  
 |Funkce:|**Ovládací prvek obsahu není nainstalován**|  
 |Použití:|Textové prvky (řetězce) použita pro vykreslení contentnotinstalled.htm|  
-|**– Element**|**Hodnota**|  
+|**Element**|**Hodnota**|  
 |ContentNotInstalledTitle|V počítači nebyl nalezen žádný obsah.|  
 |ContentNotInstalledDownloadContentText|\<p > pro stažení obsahu do vašeho počítače, \<href = "{0}" {1}> klikněte na kartu spravovat\</a >.\< /p >|  
 |ContentNotInstalledText|\<p > ve vašem počítači není nainstalován žádný obsah. Instalace obsahu místní nápovědy kontaktujte vašeho administrátora. \</p >|  
 |Funkce:|**Téma nebyl nalezen ovládací prvek**|  
 |Použití:|Textové prvky (řetězce) použita pro vykreslení topicnotfound.htm|  
-|**– Element**|**Hodnota**|  
+|**Element**|**Hodnota**|  
 |TopicNotFoundTitle|Nelze najít požadované téma ve vašem počítači.|  
 |TopicNotFoundViewOnlineText|\<p > požadované téma nebyl nalezen v počítači, ale můžete \<href = "{0}" {1}> zobrazit téma online\</a >.\< /p >|  
 |TopicNotFoundDownloadContentText|\<p > v navigačním podokně se odkazy na podobná témata nebo \<href = "{0}" {1}> klikněte na kartu spravovat\</a > pro stažení obsahu do vašeho počítače.\< /p >|  
 |TopicNotFoundText|\<p > požadované téma nebyl nalezen v počítači. \</p >|  
 |Funkce:|**Téma poškozený ovládacího prvku**|  
 |Použití:|Textové prvky (řetězce) použita pro vykreslení topiccorrupted.htm|  
-|**– Element**|**Hodnota**|  
+|**Element**|**Hodnota**|  
 |TopicCorruptedTitle|Nelze zobrazit požadované téma.|  
 |TopicCorruptedViewOnlineText|\<p > aplikace Help Viewer nemůže zobrazit požadované téma. Pravděpodobně došlo k chybě v obsahu tématu nebo základní závislosti systému. \</p >|  
 |Funkce:|**Ovládací prvek domovské stránky**|  
 |Použití:|Text podporuje zobrazení obsahu aplikace Help Viewer uzel nejvyšší úrovně.|  
-|**– Element**|**Hodnota**|  
+|**Element**|**Hodnota**|  
 |HomePageTitle|Domovská stránka prohlížeč nápovědy|  
 |HomePageIntroduction|\<p > Vítá vás Microsoft Help Viewer, základní zdroj informací pro každého, kdo používá nástroje, produkty, technologie a služby společnosti Microsoft. Aplikace Help Viewer poskytuje přístup k postupy a referenční informace, ukázky kódu, technické články a další. Hledání obsahu, je nutné, procházet obsah, použít fulltextové vyhledávání nebo procházení obsahu pomocí indexu – klíčové slovo. \</p >|  
 |HomePageContentInstallText|\<p >\<br / > použití \<href = "{0}" {1}> Spravovat obsah\</a > karty můžete provádět následující:\<ul >\<li > přidávat obsah do počítače.\< /li >\<li > vyhledat aktualizace místního obsahu.\< /li >\<li > odebrat obsah z vašeho počítače.\< /li >\</ul >\</p >|  
@@ -822,13 +822,13 @@ Abyste to mohli otestovat jakoby nasazení:
 ### <a name="additional-resources"></a>Další prostředky  
 Rozhraní API modulu Runtime naleznete v tématu [rozhraní API pomáhají Windows](/previous-versions/windows/desktop/helpapi/helpapi-portal).  
   
-Další informace o tom, jak využít rozhraní API pomáhají najdete v tématu [pomáhají příklady kódu pro prohlížeč](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
+Další informace o tom, jak využít rozhraní API pomáhají najdete v tématu [pomáhají příklady kódu pro prohlížeč](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)  
   
 Chcete-li poskytnout zpětnou vazbu o těchto komponent, použijte [Microsoft Connect](http://connect.microsoft.com/).  
   
 Prosím posílat návrhy funkcí k [Microsoft User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
   
-Chcete-li získat další pomoc, zkuste [fóra MSDN dokumentaci pro vývojáře a systém nápovědy](http://social.msdn.microsoft.com/Forums/devdocs/threads)  
+Chcete-li získat další pomoc, zkuste [fóra MSDN dokumentaci pro vývojáře a systém nápovědy](https://social.msdn.microsoft.com/Forums)  
   
 Aktualizace na zásadní potíže, najdete [Readme Prohlížeč nápovědy](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
   

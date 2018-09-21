@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9dc5de54ee4c983fd422437af170c065ac72413c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283331"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496061"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Používání Visual Studio Tools for Unity
 
@@ -94,14 +94,6 @@ Vytvoření prázdné definice metod MonoBehavior pomocí Průvodce MonoBehavior
 - V hlavní nabídce sady Visual Studio, zvolte **zobrazení > Unity Project Exploreru**. Klávesová zkratka: **Alt**+**Shift**+**E**
 
      ![Zobrazte okno Průzkumníka projektů Unity. ](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
-
-## <a name="unity-error-list"></a>Seznam chyb Unity
-
- Zprávy v konzole Unity v sadě Visual Studio můžete zobrazit, při připojení k instanci Unity. To zahrnuje chyby a upozornění z Unity. Zprávy se zobrazují v sadě Visual Studio **seznam chyb** okno; chyba se zobrazí zprávy z Unity na **chyby** kartě upozornění na **upozornění** kartu, a další zprávy – například zprávy odeslané s použitím rozhraní API Unity Debug.Log – jsou zobrazeny v **zprávy** kartu.
-
- Chcete-li zobrazit zprávy Unity projektu musí být připojené k sadě Visual Studio jak je popsáno v [ladění Unity](#unity-debugging) oddílu.
-
- Pokud už nechcete zobrazit chyby, varování a zprávy z Unity v sadě Visual Studio **seznam chyb** okna, můžete je zakázat v nabídce konfigurace.
 
 ## <a name="unity-debugging"></a>Ladění Unity
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dfe3f3c135cb3ed16c7550fc62d334cc548cd1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510663"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495931"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scénáře instalace balíčku VSPackage
 
@@ -31,7 +31,7 @@ Scénáře popsané v tomto tématu nejsou vaší jedinou možností, ale jsou u
 
 ### <a name="make-your-components-independent"></a>Aby vaše komponenty nezávislý
 
-Po identifikaci a naplnit součásti, přiřadit `GUID`a nasadíte komponentu, nebudete moct změnit jeho složení. Pokud změníte složení komponenty výsledné komponenty musí být nové komponenty s novou `GUID`. Zadaný tyto skutečnosti, je tím, že každá komponenta nezávislá, běžných jednotka poskytnuté nejvyšší flexibilitu správy verzí. Další informace o pravidlech, kterými se řídí součásti najdete v tématu [Změna kódu komponent](/windows/desktop/Msi/changing-the-component-code) a [co se stane, když je součástí pravidla jsou rozdělená?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx).
+Po identifikaci a naplnit součásti, přiřadit `GUID`a nasadíte komponentu, nebudete moct změnit jeho složení. Pokud změníte složení komponenty výsledné komponenty musí být nové komponenty s novou `GUID`. Zadaný tyto skutečnosti, je tím, že každá komponenta nezávislá, běžných jednotka poskytnuté nejvyšší flexibilitu správy verzí. Další informace o pravidlech, kterými se řídí součásti najdete v tématu [Změna kódu komponent](/windows/desktop/Msi/changing-the-component-code) a [co se stane, když je součástí pravidla jsou rozdělená?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken).
 
 ### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>Nekombinujte sdílené a privátní zdroje v součásti
 
@@ -77,7 +77,7 @@ V tomto případě je sady VSPackage spravované VSPackage nainstalované v glob
 
 ![Instalační program vedle sebe VS balíčku aktualizace VS](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Další informace o nasazení sestavení vedle sebe, naleznete v tématu [zjednodušuje nasazení a řešení knihovny DLL a tím zlepšují s rozhraním .NET Framework](http://msdn.microsoft.com/library/ms973843.aspx).
+Další informace o nasazení sestavení vedle sebe, naleznete v tématu [zjednodušuje nasazení a řešení knihovny DLL a tím zlepšují s rozhraním .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
 
 ## <a name="see-also"></a>Viz také
 
