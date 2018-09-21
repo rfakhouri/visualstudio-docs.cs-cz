@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 59ff5fa898aa808c99dd5f52df1605336edd1694
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495723"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542465"
 ---
 # <a name="intellitrace-features"></a>Funkce IntelliTrace
 
@@ -50,7 +50,7 @@ Pokud ladíte, zastavte ladění. Přejděte na **nástroje > Možnosti > Nástr
 
 ## <a name="Snapshots"></a> Shromažďovat snímky
 
-Tato možnost není povolena ve výchozím nastavení, ale nástroj IntelliTrace můžete zachytit snímek vaší aplikace v každé události krok zarážky a ladicí program a tyto snímky můžete zobrazit v stará ladicí relace. Snímek poskytuje přehled stavu vaší celou aplikaci. Chcete-li povolit zachytávání snímků, přejděte na **nástroje > Možnosti > Nástroje IntelliTrace > Obecné**a vyberte **snímky IntelliTrace (spravovaný a nativní)**. Další informace najdete v tématu [zobrazení snímků pomocí zpětného kroku IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)
+Tato možnost není povolena ve výchozím nastavení, ale nástroj IntelliTrace můžete zachytit snímek vaší aplikace v každé události krok zarážky a ladicí program a tyto snímky můžete zobrazit v stará ladicí relace. Snímek poskytuje přehled stavu vaší celou aplikaci. Chcete-li povolit zachytávání snímků, přejděte na **nástroje > Možnosti > Nástroje IntelliTrace > Obecné**a vyberte **snímky IntelliTrace (spravovaný a nativní)**. Další informace najdete v tématu [kontrolovat předchozí nové aplikace pomocí nástroje IntelliTrace](../debugger/view-historical-application-state.md)
 
 Snímky jsou k dispozici v sadě Visual Studio Enterprise 2017 verze 15.5 nebo novější a vyžaduje aktualizaci Windows 10 Anniversary Update nebo novější.  Pro aplikace .NET Core a ASP.NET Core se vyžaduje Visual Studio Enterprise 2017 verze 15.7. Pro nativní aplikace určené pro Windows, Visual Studio Enterprise 2017 verzi 15.9 ve verzi Preview 2 je povinný.
 

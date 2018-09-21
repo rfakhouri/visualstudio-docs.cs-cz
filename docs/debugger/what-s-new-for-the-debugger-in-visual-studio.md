@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fac267dfaf27d9afccdb6236244dbd21e99b253b
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cdb56a12f2f9fb6838579165bbe374e4dfbdca47
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433451"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542429"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Co je nového v ladicím programu [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -46,7 +46,7 @@ Ladicí program obsahuje tyto nové funkce:
 
     ![Krokovat zpět a vpřed tlačítka](../debugger/media/intellitrace-step-back-icons-description.png  "krok zpět a vpřed tlačítka")
 
-    Další informace najdete v tématu [zobrazení snímků pomocí zpětného kroku IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md) stránky.
+    Další informace najdete v tématu [kontrolovat předchozí nové aplikace pomocí nástroje IntelliTrace](../debugger/view-historical-application-state.md) stránky.
 
 - **Pomocníka výjimky** nahrazuje Pomocníka pro výjimky a se zobrazí v nemodálním dialogovém kde došlo k chybě. **Pomocníka výjimky** poskytuje rychlejší přístup k žádné vnitřní výjimky, další analýzu, ladicí program (Pokud je k dispozici) a okamžitý přístup k **nastavení výjimek** pro výjimku. Pomocníka výjimky lze také přetáhnout do zobrazení s plovoucí desetinnou čárkou Pokud blokuje něco, co potřebujete zobrazit.
 

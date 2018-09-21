@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6d0354e7e7c5f59c070baa6e6913d85cf7c06d
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433545"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542413"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>První pohled na ladicí program sady Visual Studio
 
@@ -211,7 +211,7 @@ Můžete procházet a zobrazit snímky pomocí **krok zpět** a **krok vpřed** 
 
 ![Krokovat zpět a vpřed tlačítka](../debugger/media/intellitrace-step-back-icons-description.png  "krok zpět a vpřed tlačítka")
 
-Další informace najdete v tématu [zobrazení snímků pomocí zpětného kroku IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md) stránky.
+Další informace najdete v tématu [kontrolovat předchozí nové aplikace pomocí nástroje IntelliTrace](../debugger/view-historical-application-state.md) stránky.
 
 ## <a name="next-steps"></a>Další kroky
 

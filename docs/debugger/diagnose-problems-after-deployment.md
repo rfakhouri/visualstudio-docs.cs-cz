@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 886ad4b022f69034bae0e6188274676522488d8b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320732"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542504"
 ---
-# <a name="diagnose-problems-after-deployment"></a>Diagnostika problémů po nasazení
+# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnostika problémů po nasazení pomocí technologie IntelliTrace
 
 Diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použitím technologie IntelliTrace, přidejte informace sestavení s vaší verzí umožňuje sadě Visual Studio automaticky vyhledá správné zdrojové soubory a soubory symbolů, které jsou nutné k ladění protokolu IntelliTrace.
 
@@ -27,48 +27,27 @@ Diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použ
 
  **Budete potřebovat:**
 
--   Visual Studio 2017, Visual Studio 2015 nebo Team Foundation Server 2017, 2015, 2013, 2012 nebo 2010 nastavte vaše sestavení
+-   Visual Studio, Azure DevOps nebo Team Foundation Server 2017, 2015, 2013, 2012 nebo 2010 nastavte vaše sestavení
 
 -   Microsoft Monitoring Agent monitorování aplikací a záznam diagnostických dat
 
 -   Visual Studio Enterprise (ale ne edice Professional nebo Community) ke kontrole diagnostických dat a ladění kódu s použitím technologie IntelliTrace
 
 ##  <a name="SetUpBuild"></a> Krok 1: Zahrnují informace o vaší verze sestavení
- Nastavení procesu sestavení k vytvoření manifestu sestavení (soubor BuildInfo.config) pro webový projekt a zahrnují tento manifest s vaší verzí. Tento manifest obsahuje informace o projektu, správy zdrojového kódu a systém sestavení, které byly použity k vytvoření konkrétního sestavení. Tyto informace pomáhají aplikaci Visual Studio po otevření protokolu nástroje IntelliTrace zaznamenané události zkontrolujte vyhledání odpovídajícího zdroje a symbolů.
+ Nastavení procesu sestavení k vytvoření manifestu sestavení (*BuildInfo.config* souboru) pro vaše webového projektu a zahrnují tento manifest s vaší verzí. Tento manifest obsahuje informace o projektu, správy zdrojového kódu a systém sestavení, které byly použity k vytvoření konkrétního sestavení. Tyto informace pomáhají aplikaci Visual Studio po otevření protokolu nástroje IntelliTrace zaznamenané události zkontrolujte vyhledání odpovídajícího zdroje a symbolů.
 
 ###  <a name="AutomatedBuild"></a> Vytvoření manifestu sestavení pro automatické sestavení pomocí Team Foundation Server
 
  Ať už používáte správu verzí Team Foundation nebo Git, postupujte následovně.
 
- ####  <a name="TFS2017"></a> Team Foundation Server 2017
+####  <a name="TFS2017"></a> Azure DevOps a Team Foundation Server 2017
 
- Nastavení vašeho kanálu sestavení přidat umístění zdroje, sestavení a symboly do manifestu sestavení (soubor BuildInfo.config). Team Foundation Build automaticky vytvoří tento soubor a umístí jej do výstupní složky vašeho projektu.
+Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaralý a potom se odeberou. Ladění webových aplikací ASP.NET po nasazení, použijte jednu z následujících metod:
 
-1.  Pokud už máte sestavení kanálu pomocí šablony ASP.NET Core (.NET Framework), můžete buď [vašeho kanálu sestavení upravit nebo vytvořit nový kanál sestavení.](/azure/devops/pipelines/get-started-designer?view=vsts)
+* Pro nasazení do Azure, použijte [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
 
-     ![Zobrazit sestavení kanálu v TFS 2017](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+* Pokud budete muset použít nástroje IntelliTrace, otevřete projekt v sadě Visual Studio a načítání souborů symbolů z odpovídající sestavení. Můžete načíst soubory symbolů z **moduly** okno nebo tím, že nakonfigurujete symboly v **nástroje** > **možnosti** > **ladění**   >  **Symboly**.
 
-2.  Pokud vytvoříte novou šablonu, výběr šablony ASP.NET Core (.NET Framework).
-
-     ![Zvolte šablonu procesu sestavení &#45; TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
-
-3.  Zadejte, kam chcete uložit soubor symbolů (PDB), aby zdroj automaticky indexován.
-
-     Pokud používáte vlastní šablonu, ujistěte se, že šablona má aktivitu pro indexování zdroje. Později přidáte argument MSBuild zadat, kam chcete uložit soubory symbolů.
-
-     ![Nastavit cestu symbolů v kanálu sestavení TFS 2017](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
-
-     Další informace o symbolech naleznete v tématu [publikování dat symbolů](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
-
-4.  Přidejte tento argument MSBuild, čímž zahrnout vaše TFS a umístění symbolů do souboru manifestu sestavení:
-
-     **/p:IncludeServerNameInBuildInfo = true**
-
-     Kdokoli, kdo má přístup k webový server může zobrazit tato umístění v manifestu sestavení. Ujistěte se, že je zdrojový server zabezpečený.
-
-6.  Spusťte nové sestavení.
-
-    Přejděte na [krok 2: Vydávejte svoje aplikace](#DeployRelease)
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
  Nastavení vašeho kanálu sestavení přidat umístění zdroje, sestavení a symboly do manifestu sestavení (soubor BuildInfo.config). Team Foundation Build automaticky vytvoří tento soubor a umístí jej do výstupní složky vašeho projektu.

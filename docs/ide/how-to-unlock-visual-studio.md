@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c3f6bed7cc010f0aeaff22cd46eb7bcaaa4caf6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d0f77fb6bb22c82fb8f3bb0b3bf2a7a32a9be559
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280620"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542374"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Postupy: odemknout Visual Studio
 
@@ -27,14 +27,14 @@ Můžete si vyzkoušet Visual Studio zdarma až po dobu 30 dnů. Přihlašován�
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Odemknout prostřednictvím online předplatného sady Visual Studio
 
-Odemknout pomocí předplatného sady Visual Studio nebo přidružené k účtu Microsoft nebo pracovní nebo školní účet organizace služby Azure DevOps sady Visual Studio:
+K odemknutí sady Visual Studio pomocí předplatného sady Visual Studio nebo organizace Azure DevOps přidružené k účtu Microsoft nebo pracovní nebo školní účet:
 
 1. Klikněte na **přihlášení** tlačítko v pravém horním rohu integrovaného vývojového prostředí (nebo můžete přejít na **souboru** > **nastavení účtu** otevřít **nastavení účtu**  dialogové okno a klikněte na kartu **přihlášení** tlačítko).
 
-1. Zadejte přihlašovací údaje pro účet Microsoft nebo pracovní nebo školní účet. Visual Studio vyhledá předplatné sady Visual Studio nebo organizace DevOps služby Azure spojené s vaším účtem.
+1. Zadejte přihlašovací údaje pro účet Microsoft nebo pracovní nebo školní účet. Visual Studio vyhledá předplatné sady Visual Studio nebo spojené s vaším účtem organizace Azure DevOps.
 
 > [!IMPORTANT]
-> Visual Studio online přidružených předplatných automaticky vyhledá, při připojení k organizaci služeb Azure DevOps z **Team Exploreru** panelu nástrojů. Při připojení k organizaci služeb Azure DevOps se můžete přihlásit pomocí Microsoft a pracovní nebo školní účty. Pokud pro tento uživatelský účet existuje s online předplatným, sada Visual Studio automaticky odemknout rozhraní IDE za vás.
+> Visual Studio online přidružených předplatných automaticky vyhledá, při připojení k organizaci Azure DevOps z **Team Exploreru** panelu nástrojů. Při připojení k organizaci Azure DevOps se můžete přihlásit pomocí Microsoft a pracovní nebo školní účty. Pokud pro tento uživatelský účet existuje s online předplatným, sada Visual Studio automaticky odemknout rozhraní IDE za vás.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>K odemknutí sady Visual Studio s kódem product key
 

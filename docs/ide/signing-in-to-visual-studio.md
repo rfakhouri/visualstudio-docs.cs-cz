@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 681d687432cdfc6c3e5cf4d4d549b2148c2eeff3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284182"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542491"
 ---
 # <a name="sign-in-to-visual-studio"></a>Přihlášení k sadě Visual Studio
 
@@ -36,7 +36,7 @@ Tady je úplný seznam co můžou očekávat a co můžete dělat po přihláše
 
 - **Prodloužení zkušební doby sady Visual Studio** – můžete použít Visual Studio Professional nebo Visual Studio Enterprise pro dalších 90 dní, namísto na zkušební dobu 30 dnů.
 
-- **Odemknout Visual Studio, pokud používáte účet, který je spojen s předplatným Visual Studia nebo organizace služby Azure DevOps**. Zobrazit [jak odemknout Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Odemknout Visual Studio, pokud používáte účet, který je spojen s předplatným Visual Studia nebo organizace Azure DevOps**. Zobrazit [jak odemknout Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
 - **Automaticky se připojovat ke službám, jako jsou Azure a služby Azure DevOps** v integrovaném vývojovém prostředí bez zobrazení výzvy znovu pro přihlašovací údaje pro stejný účet.
 

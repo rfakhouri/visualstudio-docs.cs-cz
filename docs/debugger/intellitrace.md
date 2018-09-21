@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9f5f3ad855cdeb4f5c137ebaea04bca078cebb
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496009"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542452"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -45,7 +45,7 @@ Můžete použít nástroj IntelliTrace v sadě Visual Studio Enterprise edition
 
 |||
 |-|-|
-|**Ladit aplikaci pomocí nástroje IntelliTrace:**<br /><br /> -Zobrazit minulé události.<br />-Zobrazit informace o s minulými událostmi volání.<br />-Uložte relaci nástroje IntelliTrace.<br />-Řízení dat, která nástroj IntelliTrace shromažďuje.|- [Zobrazení snímků pomocí zpětného kroku IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)<br />- [Návod: Použití IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkce IntelliTrace](../debugger/intellitrace-features.md)<br />- [Historické ladění](../debugger/historical-debugging.md)|
+|**Ladit aplikaci pomocí nástroje IntelliTrace:**<br /><br /> -Zobrazit minulé události.<br />-Zobrazit informace o s minulými událostmi volání.<br />-Uložte relaci nástroje IntelliTrace.<br />-Řízení dat, která nástroj IntelliTrace shromažďuje.|- [Kontrola předchozí nové aplikace pomocí nástroje IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Návod: Použití IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkce IntelliTrace](../debugger/intellitrace-features.md)<br />- [Historické ladění](../debugger/historical-debugging.md)|
 |**Shromažďovat IntelliTrace data během testovací relace v nástroji Test Manager**|- [Shromažďování více diagnostických dat v manuálních testů](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Shromažďovat IntelliTrace data z nasazené aplikace**|- [Použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Spuštění ladění ze souboru protokolu IntelliTrace (soubor .iTrace).**|- [Použití uložených dat řešení IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
@@ -149,7 +149,7 @@ Ve výchozím nastavení nástroj IntelliTrace zaznamenává pouze události Int
 
 Můžete nakonfigurovat IntelliTrace k zachycení snímků na každé zarážce a kroku události ladicího programu. Nástroj IntelliTrace zaznamenává úplném stavu aplikace v jednotlivých snímků, které vám umožní zobrazit proměnné komplexní a vyhodnocujte výrazy.
 
-Zobrazit [zobrazení snímků pomocí zpětného kroku IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
+Zobrazit [kontrolovat předchozí nové aplikace pomocí nástroje IntelliTrace](../debugger/view-historical-application-state.md).
 
 **Shromažďovat informace o voláních funkcí**
 

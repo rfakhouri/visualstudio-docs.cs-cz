@@ -9,12 +9,12 @@ description: Zjistěte, jak chcete předplatné aktivovat, nástroj WhiteSource 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 765b96955b27b83acd0c0674eed6a40f8d153ee1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a7c384a8bc4b84aea4982bd195b0d92820c68ecb
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279164"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542348"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Nástroj WhiteSource Bolt v předplatných sady Visual Studio
 
@@ -45,7 +45,7 @@ Vyhledejte a opravte slabá místa opensourcového kódu a generovat komplexní 
     > [!div class="mx-imgBorder"]
     > ![WhiteSource výhody instalace rozšíření](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - V dalším kroku vyberte Azure DevOps služby organizaci chcete použít a klikněte na tlačítko **potvrdit**.  (Pokud ještě jste nenastavili DevOps služby Azure, přejděte [výhody](https://my.visualstudio.com/benefits) stránce a aktivaci vaší výhody služeb Azure DevOps.)
+    - V dalším kroku vyberte Azure DevOps organizace, kterou chcete použít a klikněte na tlačítko **potvrdit**.  (Pokud ještě jste nenastavili DevOps služby Azure, přejděte [výhody](https://my.visualstudio.com/benefits) stránce a aktivaci vaší výhody služeb Azure DevOps.)
 
     > [!div class="mx-imgBorder"]
     > ![WhiteSource výhodu potvrzení účtu](_img\vs-whitesource\vs-whitesource-confirm-account.png)
@@ -54,7 +54,7 @@ Vyhledejte a opravte slabá místa opensourcového kódu a generovat komplexní 
     > [!div class="mx-imgBorder"]
     > ![WhiteSource výhody instalace dokončena](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  Otevřete řídicí panel Projekt Azure DevOps služby, klikněte na **kanály Azure** nabídku a zvolte **nástroj WhiteSource Bolt**.
+5.  Otevřete řídicí panel Projekt Azure DevOps, klikněte na **kanály Azure** nabídku a zvolte **nástroj WhiteSource Bolt**.
     > [!div class="mx-imgBorder"]
     > ![WhiteSource výhodu přidat rozšíření](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 

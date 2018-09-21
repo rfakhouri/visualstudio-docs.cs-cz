@@ -7,14 +7,14 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: b8d5f8f39b524bbde9e6988a924cf3b938fedb23
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 5a1d7fb7519e9402e2fa780e978fc1176702b26d
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279839"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542430"
 ---
-# <a name="connecting-to-team-foundation-version-control"></a>Připojování k Team Foundation – správa verzí 
+# <a name="connecting-to-team-foundation-version-control"></a>Připojování k Team Foundation – správa verzí
 
 > [!NOTE]
 > **Poznámka:**: podpora správy verzí Team Foundation je aktuálně ve verzi preview a některé funkce není dosud plně funkční. Jsme rádi, zpětnou vazbu od vás na všechny problémy na [komunity vývojářů](https://developercommunity.visualstudio.com/spaces/41/index.html). Další změny jsou stále chystá!
@@ -31,7 +31,7 @@ ms.locfileid: "44279839"
 
 V sadě Visual Studio pro Mac, zvolte **sady Visual Studio > rozšíření...**  z nabídky. V **Galerie** kartu, vyberte možnost **verzí > správy verzí Team Foundation serveru TFS a VSTS** a klikněte na tlačítko **instalace...** :
 
-  ![Správce rozšíření](media/tfvc-install.png) 
+  ![Správce rozšíření](media/tfvc-install.png)
 
 Postupujte podle pokynů k instalaci rozšíření. Po instalaci ji restartujte integrované vývojové prostředí.
 
@@ -39,7 +39,7 @@ Postupujte podle pokynů k instalaci rozšíření. Po instalaci ji restartujte 
 
 Aktualizace rozšíření TFVC probíhají pravidelně. Přístup k aktualizace, zvolte **sady Visual Studio > rozšíření...**  z nabídky a vybereme **aktualizace** kartu. Vyberte požadované rozšíření v seznamu a stisknutím klávesy **aktualizace** tlačítka:
 
-  ![Aktualizace zobrazení Správce rozšíření](media/tfvc-update.png) 
+  ![Aktualizace zobrazení Správce rozšíření](media/tfvc-update.png)
 
 Stisknutím klávesy **nainstalovat** v dalším dialogovém okně starý balíček odinstalovat a nainstalovat nové.
 
@@ -63,7 +63,7 @@ Když vyberete projekt, který je hostitelem úložiště Azure, budete vyzváni
 
 ### <a name="tfs-authentication"></a>Ověřování serveru TFS
 
-Pro připojení k TFS, zadejte podrobnosti o serveru a přihlašovací údaje účtu. Zadejte doménu na použití ověřování NTLM, jinak nechejte pole prázdné, použije se základní ověřování. Vyberte **přidat Server**: 
+Pro připojení k TFS, zadejte podrobnosti o serveru a přihlašovací údaje účtu. Zadejte doménu na použití ověřování NTLM, jinak nechejte pole prázdné, použije se základní ověřování. Vyberte **přidat Server**:
 
 ![Přihlaste se k serveru TFS](media/tfvc-login.png)
 
@@ -75,7 +75,7 @@ Jakmile byli jste úspěšně ověřeni, zobrazí se seznam úložišť, které 
 
 Toto dialogové okno je uspořádaný s následující uzly:
 
-- Azure DevOps služby organizace nebo kolekci – zobrazí se všechny organizace, které jsou připojené k účtu Microsoft, který jste přihlášení.
+- Azure DevOps organizace nebo kolekci – zobrazí se všechny organizace, které jsou připojené k účtu Microsoft, který jste přihlášení.
 - Projekty – v každé organizaci nebo kolekci, může mít celou řadou projektů. Projekt je, kde jsou hostované zdrojový kód, pracovní položky a automatizované sestavování.
 
 V tomto okamžiku můžete vyhledávat a filtrovat podle názvu projektu nebo organizace.
@@ -124,24 +124,24 @@ Mnohé z těchto akcí jsou k dispozici prostřednictvím kontextu akce na proje
 
 Pokud jste ještě nevytvořili pracovního prostoru, jak je popsáno v [vytvoření pracovního prostoru](#creating-a-new-workspace) oddílu, můžete si všimnout, že je prázdný Průzkumník zdrojového kódu:
 
-![prázdný zdrojový kód explorer](media/tfvc-setup-empty-sce.png) 
+![prázdný zdrojový kód explorer](media/tfvc-setup-empty-sce.png)
 
 Nastavení vzdáleného projekt pomocí místního pracovního prostoru, postupujte následovně:
 
 1. Vyberte **Server** z pole se seznamem.
 1. Mějte na paměti, že neexistují "žádné pracovní prostory" a zda je místní cesta "Nenamapované". Vyberte **nenamapované** odkazu zobrazíte **vytvořit nový pracovní prostor** dialogového okna.
 1. Zadejte název pracovního prostoru a potom klikněte na tlačítko **pracovní složka** mapování projektu do místní složky v počítači:
-    
-    ![Vytvořit nový pracovní prostor dialog s informací, výchozí možnosti](media/tfvc-workspace1.png) 
+
+    ![Vytvořit nový pracovní prostor dialog s informací, výchozí možnosti](media/tfvc-workspace1.png)
 
 1. Vyberte složky "$" do všech projektů na serveru mapují na stejný pracovní prostor, nebo vyberte jednotlivé projekt a klikněte na tlačítko **OK**:
-    
-    ![Procházet pro složku dialogové okno zobrazující všechny projekty](media/tfvc-workspace2.png) 
+
+    ![Procházet pro složku dialogové okno zobrazující všechny projekty](media/tfvc-workspace2.png)
 
 1. Vyberte umístění na místním počítači, který chcete namapovat projekt(y) na tento a klikněte na tlačítko **vybrat složku**.
 1. Zkontrolujte podrobnosti o nový pracovní prostor stisknutím kombinace kláves **OK**
-    
-    ![Vytvořit dialogové okno Nový pracovní prostor se přidá pracovní složky](media/tfvc-workspace3.png) 
+
+    ![Vytvořit dialogové okno Nový pracovní prostor se přidá pracovní složky](media/tfvc-workspace3.png)
 
 Po nastavení pracovního prostoru lze změnit nebo odebrat po kliknutí **spravovat pracovní prostory** tlačítko v Průzkumníku zdrojového kódu.
 
@@ -159,14 +159,15 @@ Tyto možnosti lze použít k ověření serveru:
 
 Základní ověřování je nutná pro povolení **přihlašovací údaje pro alternativní ověření** ve službách Azure DevOps, pomocí následujících kroků:
 
-1. Přihlaste se k vaší organizaci Azure DevOps služby jako vlastník (https://dev.azure.com/{organization}/{project}).
+1. Přihlaste se k vaší organizaci Azure DevOps jako vlastník (https://dev.azure.com/{organization}/{project}).
+
 2. Z panelu nástrojů organizace, vyberte ikonu ozubeného kola a vyberte **zásady**:
-    
-    ![Vybraná možnost nastavení zásad](media/tfvc-auth2.png) 
+
+    ![Vybraná možnost nastavení zásad](media/tfvc-auth2.png)
 
 3. Zkontrolujte nastavení připojení k aplikaci. Změna těchto nastavení v závislosti na vašich zásadách zabezpečení:
-    
-    ![Vybraná možnost nastavení zásad](media/tfvc-auth.png)  
+
+    ![Vybraná možnost nastavení zásad](media/tfvc-auth.png)
 
 ### <a name="i-do-not-see-anything-in-tfvc"></a>Nevidím v TFVC nic
 
