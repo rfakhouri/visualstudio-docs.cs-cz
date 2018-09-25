@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638710"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029024"
 ---
 # <a name="python-web-application-project-templates"></a>Šablony projektů webové aplikace Python
 
@@ -44,7 +44,7 @@ Všechny **prázdné \<framework > webový projekt** šablony vytvořit projekt 
 | --- | --- |
 | **Bottle prázdný webový projekt** | Vygeneruje minimální aplikaci v *app.py* s Domovská stránka `/` a `/hello/<name>` stránky, která vypisuje `<name>` pomocí šablony velmi krátké vložené stránky. |
 | **Prázdné Django webového projektu** | Vytvoří projekt Django se struktura webu Django jádra, ale žádné aplikace Django. Další informace najdete v tématu [šablon Django](python-django-web-application-project-template.md) a [další krok 1 Django](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Webový projekt Flask prázdné** | Vygeneruje minimální aplikaci s jedné "Hello World!" stránka pro `/`. Tato aplikace je podobný výsledek podrobných pokynů v [rychlý start: použití aplikace Visual Studio k vytvoření vaší první webové aplikace Python](../ide/quickstart-python.md?context=visualstudio/python/default). Viz také [další krok 1 Flask](learn-flask-visual-studio-step-01-project-solution.md).
+| **Webový projekt Flask prázdné** | Vygeneruje minimální aplikaci s jedné "Hello World!" stránka pro `/`. Tato aplikace je podobný výsledek podrobných pokynů v [rychlý start: použití aplikace Visual Studio k vytvoření vaší první webové aplikace Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Viz také [další krok 1 Flask](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Skupina webových
 

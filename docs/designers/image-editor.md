@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8582981fc75dd0ce9c0bcb09cc7f865b0e9d43
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623960"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029118"
 ---
 # <a name="image-editor"></a>editor obrázků
 
@@ -53,8 +53,6 @@ Tato část popisuje, jak přidat bitovou kopii do projektu sady Visual Studio a
    > Pokud se nezobrazí **grafiky** kategorii **přidat novou položku** dialogového okna, je nutné nainstalovat **obrázků a 3D modelů editory** komponenty. Zavřete dialogové okno a potom vyberte **nástroje** > **stažení nástrojů a funkcí** z řádku nabídek otevřete **instalační program sady Visual Studio**. Vyberte **jednotlivé komponenty** kartu a potom vyberte **obrázků a 3D modelů editory** komponentu pod **hry a grafika** kategorie. Vyberte **upravit**.
    >
    > ![Obrázků a 3D modelů editory komponenty](media/image-3d-model-editors-component.png)
-   >
-   > Pokud máte **obrázků a 3D modelů editory** komponenty nainstalované a stále nevidíte **grafiky** kategorii šablon, Všimněte si, že tato kategorie se zobrazí jenom pro určité typy projektů, například konzole. aplikace.
 
    Informace o tom, jak vybrat formát souboru na základě vašich požadavků najdete v tématu [vyberte formát obrázku](#choose-the-image-format).
 
@@ -252,7 +250,7 @@ Následující tabulka popisuje vlastnosti nástroje:
 |Přepnout na **přiblížení** režimu|**Z**|
 |Přepnout na **Pan** režimu|**K**|
 |Vybrat vše|**CTRL**+**A**|
-|Odstranit aktuální výběr|**Odstranit**|
+|Odstranit aktuální výběr|**Delete**|
 |Zrušit aktuální výběr|**ESC** (ESC)|
 |Přiblížit|**CTRL**+**kolečko myši dopředu**<br /><br /> **CTRL**+**PageUp**<br /><br /> Znaménko plus (**+**)|
 |Oddálit|**CTRL**-**kolečko myši dozadu**<br /><br /> **CTRL**-**PageDown**<br /><br /> Znaménko minus (**-**)|

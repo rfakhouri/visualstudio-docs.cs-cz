@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283415"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029063"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Kurz: Začínáme s architektury Flask webů v sadě Visual Studio
 
@@ -36,7 +36,7 @@ V tomto kurzu se naučíte:
 V průběhu těchto kroků vytvořte jedno řešení sady Visual Studio, který obsahuje tři samostatné projekty. Vytvoření projektu pomocí jiné šablony projektu Flask, které jsou součástí sady Visual Studio. Udržováním projekty ve stejném řešení, lze snadno přepínat vpřed a zpět mezi různé soubory pro porovnání.
 
 > [!Note]
-> V tomto kurzu se liší od [rychlý start Flask](../ide/quickstart-python.md?context=visualstudio/python/default) v tom, že další informace o Flask i jak používat různé Flask šablony projektů, které poskytují rozsáhlejší počáteční bod pro svoje vlastní projekty. Například šablony projektu automaticky instalovat balíček Flask při vytváření projektu, ale můžete balíček nainstalovat ručně, jak je znázorněno v tomto rychlém startu.
+> V tomto kurzu se liší od [rychlý start Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) v tom, že další informace o Flask i jak používat různé Flask šablony projektů, které poskytují rozsáhlejší počáteční bod pro svoje vlastní projekty. Například šablony projektu automaticky instalovat balíček Flask při vytváření projektu, ale můžete balíček nainstalovat ručně, jak je znázorněno v tomto rychlém startu.
 
 ## <a name="prerequisites"></a>Požadavky
 

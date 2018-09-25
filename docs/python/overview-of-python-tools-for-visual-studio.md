@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef83d9caebbeea1496a627282ba2c30b47cc0e22
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: fe19c1239c2f08417b1b7ee76cb07ae150c891d1
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552107"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029144"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Práce s využitím Pythonu v sadě Visual Studio ve Windows
 
@@ -30,7 +30,7 @@ Jak začít:
 
 - Postupujte podle [pokyny k instalaci](installing-python-support-in-visual-studio.md) nastavit úlohou Pythonu.
 - Seznámíte se s funkcemi Python sady Visual Studio si části v tomto článku. Můžete také [sledovat série videí (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) s úvodem do Python v sadě Visual Studio (celkem 22 minut).
-- Projděte si jeden nebo více šablon rychlý start k vytvoření projektu. Pokud si nejste jisti, začněte tématem [vytvoření webové aplikace pomocí Flask](../ide/quickstart-python.md?context=visualstudio/python/default).
+- Projděte si jeden nebo více šablon rychlý start k vytvoření projektu. Pokud si nejste jisti, začněte tématem [vytvoření webové aplikace pomocí Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 - Postupujte podle [pracovat s využitím Pythonu v sadě Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) kurzu pro prostředí úplného začátku do konce.
 
 ## <a name="support-for-multiple-interpreters"></a>Podpora pro více interprety
@@ -45,7 +45,7 @@ Další informace:
 
 - Video (2 miliony 35s): [prostředí spravovat Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
 - Dokumentace: [prostředí spravovat Pythonu](managing-python-environments-in-visual-studio.md)
-- Dokumentace: [odkaz na okno prostředí Pythonu](python-environments-window-tab-reference.md)
+- Dokumentace: [odkazovat prostředí Pythonu](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Bohaté možnosti úpravy, technologii IntelliSense a porozumění kódu
 

@@ -13,22 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624256"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029131"
 ---
 # <a name="model-editor"></a>Editor modelů
 
-Tento dokument popisuje, jak pracovat s modelu Visual Studio editor zobrazení, vytvoření a změna 3D modelů.
+Tento dokument popisuje způsob práce se sadou Visual Studio **editoru modelů** Pokud chcete zobrazit, vytvořit a upravit 3D modelů.
 
-Editor modelů můžete použít k vytvoření základních 3D modelů od začátku, nebo k zobrazení a úpravě složitější 3D modelů, které byly vytvořeny pomocí nástroje pro modelování 3D plně funkční. Editor modelů podporuje několik formátů 3D modelů, které se používají při vývoji aplikace rozhraní DirectX.
+Můžete použít **editoru modelů** k vytvoření základních 3D modelů od začátku, nebo k zobrazení a úpravě složitější 3D modelů, které byly vytvořeny pomocí nástroje pro modelování 3D plně funkční.
 
 ## <a name="supported-formats"></a>Podporované formáty
 
-Editor modelů podporuje tyto formáty modelů:
+**Editoru modelů** podporuje několik formátů 3D modelů, které se používají při vývoji aplikace rozhraní DirectX:
 
 |Název formátu|Přípona souboru|Podporované operace (zobrazení, úpravy, vytváření)|
 |-----------------|--------------------|-------------------------------------------------|
@@ -38,24 +38,31 @@ Editor modelů podporuje tyto formáty modelů:
 
 ## <a name="get-started"></a>Začínáme
 
-Tato část popisuje postup přidání 3D modelu do projektu sady Visual Studio a poskytuje základní informace, které potřebujete, abyste mohli začít.
+Tato část popisuje postup přidání 3D modelu do projektu Visual Studio C++ a další základní informace, které vám pomůžou začít.
+
+> [!NOTE]
+> Automatické sestavení integrace grafiky různé věci, třeba 3D scény (.fbx souborů) je podporována pouze pro projekty C++.
 
 ### <a name="to-add-a-3d-model-to-your-project"></a>Přidání 3D modelu do projektu
 
-1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt, ke kterému chcete obrázek přidat a pak zvolte **přidat** > **nová položka**.
+1. Ujistěte se, že máte požadované sady Visual Studio nainstalována součást potřebné pro práci s grafikou. Komponenta nazývá **obrázků a 3D modelů editory**.
 
-2. V **přidat novou položku** dialogovém okně **grafiky** vyberte **3D Scéna (.fbx)**.
+   Ho Pokud chcete nainstalovat, spusťte instalační program sady Visual Studio tak, že vyberete **nástroje** > **stažení nástrojů a funkcí** z nabídky panelu a pak vyberte **jednotlivé komponenty**kartu. Vyberte **obrázků a 3D modelů editory** komponentu pod **hry a grafika** kategorie a pak vyberte **změnit**.
+
+   ![Obrázků a 3D modelů editory komponenty](media/image-3d-model-editors-component.png)
+
+   Součást zahájena instalace.
+
+2. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt C++, kterou chcete přidat obrázek a klikněte na tlačítko **přidat** > **nová položka**.
+
+3. V **přidat novou položku** dialogovém okně **grafiky** vyberte **3D Scéna (.fbx)**.
 
    ![Přidat novou položku – dialogové okno s 3D scény vybrané](media/add-new-3d-scene.png)
 
    > [!NOTE]
-   > Pokud se nezobrazí **grafiky** kategorii **přidat novou položku** dialogového okna, je nutné nainstalovat **obrázků a 3D modelů editory** komponenty. Zavřete dialogové okno a potom vyberte **nástroje** > **stažení nástrojů a funkcí** z řádku nabídek otevřete **instalační program sady Visual Studio**. Vyberte **jednotlivé komponenty** kartu a potom vyberte **obrázků a 3D modelů editory** komponentu pod **hry a grafika** kategorie. Vyberte **upravit**.
-   >
-   > ![Obrázků a 3D modelů editory komponenty](media/image-3d-model-editors-component.png)
-   >
-   > Pokud máte **obrázků a 3D modelů editory** komponenty nainstalované a stále nevidíte **grafiky** kategorii šablon, Všimněte si, že tato kategorie se zobrazí jenom pro určité typy projektů, například konzole. aplikace.
+   > Pokud se nezobrazí **grafiky** v kategorii **přidat novou položku** dialogových oken a budete mít **obrázků a 3D modelů editory** nainstalována součást grafické položky nejsou podporovány pro typ vašeho projektu.
 
-3. Zadejte **název** souboru modelu a pak vyberte **přidat**.
+4. Zadejte **název** souboru modelu a pak vyberte **přidat**.
 
 ### <a name="axis-orientation"></a>Orientace osy
 
@@ -159,7 +166,7 @@ Je možné *transformace* objekt změnou jeho **otočení**, **škálování**, 
 
 Objekt můžete transformovat pomocí nástrojů pro modelování nebo nastavením vlastností.
 
-#### <a name="to-transform-an-object-by-using-modeling-tools"></a>Transformace objektu pomocí nástrojů pro modelování
+#### <a name="transform-an-object-by-using-modeling-tools"></a>Transformace objektu pomocí nástrojů pro modelování
 
 1. V **vyberte** režimu, vyberte objekt, který chcete transformovat. Překrytí wireframe udává, že objekt je vybrán.
 
@@ -167,7 +174,7 @@ Objekt můžete transformovat pomocí nástrojů pro modelování nebo nastaven�
 
 3. K provedení transformace použijte manipulátor. Pro transformace otočení a změny velikosti je manipulátor indikátorem osy. Najednou můžete změnit jen jednu osu nebo všechny osy současně pomocí bílé krychle ve středu indikátoru. Pro otáčení je manipulátor koule tvořená kruhy s kódováním barev, které odpovídají osám x (červená), y (zelená) a z (modrá). K vytvoření požadovaného otočení je třeba změnit každou osu jednotlivě.
 
-#### <a name="to-transform-an-object-by-setting-its-properties"></a>Transformace objektu nastavením jeho vlastností
+#### <a name="transform-an-object-by-setting-its-properties"></a>Transformace objektu nastavením jeho vlastností
 
 1. V **vyberte** režimu, vyberte objekt, který chcete transformovat. Překrytí wireframe udává, že objekt je vybrán.
 
@@ -196,7 +203,7 @@ Posunutí a otočení lze provést buď v místním souřadnicovém systému (ne
 
 Tvar 3D objektu můžete změnit přesunutím nebo odstraněním jeho vrcholů, hran a tváří. Ve výchozím nastavení je Editor modelů v *režimu objektu*, takže můžete vybírat a transformovat celé objekty. Pokud chcete vybrat body, okraje nebo plochy, zvolte příslušný režim výběru. Na **režim editoru modelů** nástrojů, zvolte **režimy výběru**a pak zvolte režim, ve kterém chcete.
 
- Vyloučením nebo dělením můžete vytvořit další vrcholy. Vyloučení duplikuje vrcholy plochy (koplanární sadu vrcholů), které zůstávají spojeny duplikovanými vrcholy. Dělení přidá vrcholy pro vytvoření několika ploch tam, kde byla dříve jen jedna. Pro vytvoření nových ploch se přidají nové vrcholy – jeden uprostřed původní plochy a jeden uprostřed každé hrany – které jsou poté spojeny s původními vrcholy. Počet přidaných ploch se rovná počtu hran původní plochy. V obou případech můžete nové vrcholy posunout, otočit a změnit jejich velikost, čímž změníte geometrii celého objektu.
+Vyloučením nebo dělením můžete vytvořit další vrcholy. Vyloučení duplikuje vrcholy plochy (koplanární sadu vrcholů), které zůstávají spojeny duplikovanými vrcholy. Dělení přidá vrcholy pro vytvoření několika ploch tam, kde byla dříve jen jedna. Pro vytvoření nových ploch se přidají nové vrcholy – jeden uprostřed původní plochy a jeden uprostřed každé hrany – které jsou poté spojeny s původními vrcholy. Počet přidaných ploch se rovná počtu hran původní plochy. V obou případech můžete nové vrcholy posunout, otočit a změnit jejich velikost, čímž změníte geometrii celého objektu.
 
 #### <a name="to-extrude-a-face-from-an-object"></a>Vyloučení plochy z objektu
 
@@ -210,21 +217,21 @@ Tvar 3D objektu můžete změnit přesunutím nebo odstraněním jeho vrcholů, 
 
 2. Na **editoru modelů** nástrojů, zvolte **skripty** > **nástroje** > **rozdělit**.
 
- Můžete také triangulovat plochy, sloučit objekty a převést mnohoúhelníkové výběry do nových objektů. Triangulace vytvoří další hrany, takže jiné než trojúhelníkové plochy jsou převedeny na optimální počet trojúhelníků; neposkytuje však další podrobnosti o geometrii. Slučování kombinuje vybrané objekty do jednoho objektu. Nové objekty je možné vytvořit pomocí mnohoúhelníkového výběru.
+Můžete také triangulovat plochy, sloučit objekty a převést mnohoúhelníkové výběry do nových objektů. Triangulace vytvoří další hrany, takže jiné než trojúhelníkové plochy jsou převedeny na optimální počet trojúhelníků; neposkytuje však další podrobnosti o geometrii. Slučování kombinuje vybrané objekty do jednoho objektu. Nové objekty je možné vytvořit pomocí mnohoúhelníkového výběru.
 
-#### <a name="to-triangulate-a-face"></a>Postup triangulace plochy
+#### <a name="triangulate-a-face"></a>Triangulace plochy
 
 1. V režimu výběru plochy vyberte plochu, kterou chcete triangulovat.
 
 2. Na **editoru modelů** nástrojů, zvolte **skripty** > **nástroje** > **Triangulovat**.
 
-#### <a name="to-merge-objects"></a>Sloučení objektů
+#### <a name="merge-objects"></a>Sloučit objekty
 
 1. V režimu výběru objektů vyberte objekty, které chcete sloučit.
 
 2. Na **editoru modelů** nástrojů, zvolte **skripty** > **nástroje** > **sloučit objekty**.
 
-#### <a name="to-create-an-object-from-a-polygon-selection"></a>Vytvoření objektu z mnohoúhelníkového výběru
+#### <a name="create-an-object-from-a-polygon-selection"></a>Vytvoření objektu z mnohoúhelníkového výběru
 
 1. V režimu výběru plochy vyberte plochy, ze kterých chcete vytvořit nový objekt.
 
@@ -268,13 +275,13 @@ Můžete použít **Osnova dokumentu** okno k zobrazení hierarchie scény a vý
 
 Hierarchii objektů můžete vytvořit buď tím, že jeden z nich stanovíte nadřazený ostatním, nebo jejich seskupením společně jako uzly na stejné úrovni zástupného symbolu, které fungují jako nadřazené.
 
-#### <a name="to-create-a-hierarchy-that-has-a-parent-object"></a>Vytvoření hierarchie, která má nadřazený objekt
+#### <a name="create-a-hierarchy-that-has-a-parent-object"></a>Vytvoření hierarchie, která má nadřazený objekt
 
 1. V **vyberte** režimu, vyberte dvě nebo více objektů. První, který vyberete, bude nadřazený objekt.
 
 2. Na **editoru modelů** nástrojů, zvolte **skripty** > **Správa scén** > **připojit k nadřazenému**.
 
-#### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Vytvoření hierarchie objektů na stejné úrovni
+#### <a name="create-a-hierarchy-of-sibling-objects"></a>Vytvoření hierarchie na stejné úrovni objekty
 
 1. V **vyberte** režimu, vyberte dvě nebo více objektů. Vytvoří se zástupný objekt, který se stane jejich nadřazeným objektem.
 
@@ -292,7 +299,7 @@ Odebrat přidružení nadřazený podřízený mezi dvěma objekty, vyberte pod�
 |Přepnout na **přiblížení** režimu|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Přepnout na **Pan** režimu|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|
 |Vybrat vše|**CTRL**+**A**|
-|Odstranit aktuální výběr|**Odstranit**|
+|Odstranit aktuální výběr|**Delete**|
 |Zrušit aktuální výběr|**Řídicí** (**Esc**)|
 |Přiblížit|**Kolečko myši dopředu**<br /><br /> **CTRL**+**kolečko myši dopředu**<br /><br /> **SHIFT**+**kolečko myši dopředu**<br /><br /> **CTRL**+**PageUp**<br /><br /> Znaménko plus (**+**)|
 |Oddálit|**Kolečko myši dozadu**<br /><br /> **CTRL**+**kolečko myši dozadu**<br /><br /> **SHIFT**+**kolečko myši dozadu**<br /><br /> **CTRL**+**PageDown**<br /><br /> Znaménko minus (**-**)|

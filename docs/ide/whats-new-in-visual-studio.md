@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 619d7b0f93985f59a46fbc67f289cae8fd7ac8a9
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384185"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029105"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s novou v sadě Visual Studio 2017
 
-**Aktualizováno pro [15,8 vydání](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)**
+**Aktualizováno pro [15,8 vydání](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Pokud chcete upgradovat z předchozí verze sady Visual Studio? Zde je, co Visual Studio 2017 můžete nabídnout: Nebývalá produktivita pro všechny vývojáře, aplikace a jakoukoli platformu. Pomocí sady Visual Studio 2017 můžete vyvíjet aplikace pro Android, iOS, Windows, Linux, web a cloud. Svůj kód můžete rychle psát, snadno ladit a diagnostikovat, často testovat a bez obav vydávat. Navíc si můžete sadu Visual Studio rozšířit a přizpůsobit pomocí svých vlastních rozšíření. Používejte správu verzí, agilita a efektivní spolupráce v této vydané verzi!
 
@@ -42,7 +42,7 @@ Tady je podrobný rekapitulace toho, změny provedené od předchozích verzí s
 * **[Vývoj AI](#ai-development)**. Pomocí Visual Studio Tools for AI můžete použít pro zvýšení produktivity sady Visual Studio k urychlení inovace AI. Vytvářet, testovat a nasazovat obsáhlý Learning / řešení AI, který se snadno integrují s Azure Machine Learning pro experimentování ve službě robustní možnosti.
 
 > [!NOTE]
-> Úplný seznam nových funkcí a funkcí v sadě Visual Studio 2017, najdete v článku [aktuální zpráva k vydání verze](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default). A náhled na budoucí verze nabídky, najdete v článku [poznámky k verzi Preview](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default).
+> Úplný seznam nových funkcí a funkcí v sadě Visual Studio 2017, najdete v článku [aktuální zpráva k vydání verze](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017). A náhled na budoucí verze nabídky, najdete v článku [poznámky k verzi Preview](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017).
 
 Tady je podrobnější informace o některých nejvíce významná vylepšení a nových funkcí v sadě Visual Studio 2017.
 
@@ -50,7 +50,7 @@ Tady je podrobnější informace o některých nejvíce významná vylepšení a
 
 ### <a name="a-new-setup-experience"></a>Nové prostředí instalace
 
-[Stáhnout Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) nebo [Visual Studio Zkontrolujte požadavky na systém](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[Stáhnout Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) nebo [Visual Studio Zkontrolujte požadavky na systém](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017)
 
  Visual Studio umožňuje jednodušší a rychlejší instalace jen těch funkcí, které potřebujete, když je potřebujete. A odinstalace proběhne čistě, příliš.
 
@@ -381,7 +381,7 @@ Pokud chcete provést návrh, o jak jsme vylepšení sady Visual Studio, nebo Da
 
 ## <a name="see-also"></a>Viz také:
 
-* [Zpráva k vydání verze Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
+* [Zpráva k vydání verze Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
 * [Co je nového v jazyce Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Co je nového v jazyce C#](/dotnet/csharp/whats-new)
 * [Co je nového v Team Foundation Server](/tfs/server/whats-new?view=vsts)
