@@ -1,7 +1,7 @@
 ---
 title: Instalace podpory Pythonu
 description: Postup instalace nástroje Pythonu pro Visual Studio (PTVS) v sadě Visual Studio 2017, 2015, 2013, 2012 a 2010, včetně možnosti a umístění instalace.
-ms.date: 06/26/2018
+ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 1f6a11de4b273b55910e03e73be79f6e3473bac5
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42623892"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168367"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalace podpory Pythonu v sadě Visual Studio ve Windows
 
@@ -25,8 +25,6 @@ Instalace podpory Pythonu pro Visual Studio (označované také jako Python Tool
 - [Visual Studio 2017](#visual-studio-2017)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 a starší](#visual-studio-2013-and-earlier)
-
-Pro Visual Studio 2015 a starší budete také muset samostatně [nainstalujte interpret Pythonu](installing-python-interpreters.md) podle vašeho výběru (Python 3.5 a starší; 3.6 + se nepodporuje a vygeneruje se zpráva podobná **nepodporované Python verze 3.6**). Stejná stránka také obsahuje pokyny k přidání existujícího interpret Pythonu pro Visual Studio 2017.
 
 K rychlé otestování podpory Pythonu po provedení kroků instalace, otevřete **interaktivní Python** okno stisknutím kombinace kláves **Alt**+**můžu** a zadáním `2+2`. Pokud nevidíte výstup `4`, spusťte opětovnou kontrolu kroků.
 
@@ -96,7 +94,7 @@ Pokud narazíte na problémy s instalací nebo spustit jazyk Python v sadě Visu
 
     ![Možnost PTVS v instalačním programu sady Visual Studio 2015](media/installation-vs2015.png)
 
-1. Po dokončení instalace sady Visual Studio [nainstalujte interpret Pythonu podle vašeho výběru](installing-python-interpreters.md). Pokud již máte nainstalované překladač a sady Visual Studio nebude automaticky detekovat, naleznete v tématu [ručně identifikovat existující prostředí](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
+1. Po dokončení instalace sady Visual Studio [nainstalujte interpret Pythonu podle vašeho výběru](installing-python-interpreters.md). Visual Studio 2015 podporuje pouze Python 3.5 a starších; novější verze generovat zpráva podobná **nepodporované Python verze 3.6**). Pokud již máte nainstalované překladač a sady Visual Studio nebude automaticky detekovat, naleznete v tématu [ručně identifikovat existující prostředí](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 a starší
 

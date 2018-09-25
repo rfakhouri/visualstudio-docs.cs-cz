@@ -1,7 +1,7 @@
 ---
 title: Ladění pomocí ladicího programu za běhu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 07/06/17
+ms.date: 09/24/18
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa31d9d9b536a614cc1000f7c25ae6fbb5e4d510
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7a2e6cfbd6d26d575bab5d7592f320779ffd8888
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176438"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168393"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Ladění pomocí ladicího programu za běhu v sadě Visual Studio
 Ladění za běhu spustí sadu Visual Studio automaticky dojde k výjimce nebo selhání v aplikaci, která běží mimo sadu Visual Studio. To umožňuje testovat aplikaci, když není spuštěná sada Visual Studio a začít ladění pomocí sady Visual Studio, když dojde k potížím.
@@ -48,6 +48,8 @@ Můžete povolit nebo zakázat Just-In-Time ladění ze sady Visual Studio **ná
 4.  V **povolit ladění za běhu tyto typy kódu** pole, zaškrtněte nebo zrušte zaškrtnutí odpovídajících typů programů: **spravované**, **nativní**, nebo **skript**.
 
 5.  Klikněte na tlačítko **OK**.
+
+    Pokud povolíte Just-in-Time ladicího programu, ale nevidíte ji na selhání aplikace nebo výjimky, naleznete v tématu [Just-In-Time ladění chyb](#jit_errors).
 
 Ladění Just-In-Time může být stále povoleno i v případě, že ve vašem počítači je již nainstalované sady Visual Studio. Pokud není nainstalována sada Visual Studio, už se nedá vypnout Just-In-Time ladění ze sady Visual Studio **možnosti** dialogové okno. V takovém případě můžete zakázat Just-In-Time ladění pomocí úpravy registru Windows.
 
@@ -152,28 +154,33 @@ static void Main(string[] args)
 
  V tomto okamžiku ladění lze spustit. Pokud to aplikace skutečný, je třeba zjistit, proč kód způsobující výjimku.
 
-## <a name="just-in-time-debugging-errors"></a>Chyby ladění Just-In-Time
- Pokud dialogové okno se nezobrazí, pokud dojde k chybě programu, pravděpodobně z důvodu nastavení zasílání zpráv o chybách Windows ve vašem počítači. Další informace najdete v tématu [. Nastavení zasílání](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started).
+## <a name="jit_errors"></a> Chyby ladění Just-In-Time
+ Pokud se nezobrazí dialogové okno, když dojde k chybě programu a potřebovat k povolení této funkce, to může být z důvodu nastavení zasílání zpráv o chybách Windows ve vašem počítači. Ujistěte se, že chcete přidat **zakázané** hodnota, která se následující klíče registru a nastavte hodnotu na 1:
 
- Může se zobrazit následující chybové zprávy, které jsou spojeny s Just-In-Time ladění.
+* HKLM\Software\Microsoft\Windows\Windows zasílání zpráv o chybách
+* HKLM\Software\WOW6432Node\Microsoft\Windows\Windows zasílání zpráv o chybách
+ 
+Další informace o těchto nastaveních najdete v tématu [. Nastavení zasílání](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
 
--   **Nelze se připojit k havarujícímu procesu. Uvedený program není program Windows nebo MS-DOS.**
+Kromě toho může se zobrazit následující chybové zprávy, které jsou spojeny s Just-In-Time ladění.
 
-     K této chybě dochází, když se pokusíte připojit k procesu spuštěnému jako jiný uživatel.
+- **Nelze se připojit k havarujícímu procesu. Uvedený program není program Windows nebo MS-DOS.**
 
-     Chcete-li tento problém vyřešit, spusťte aplikaci Visual Studio, otevřete **připojit k procesu** dialogové **ladění** nabídky a najděte proces, který chcete ladit v **procesy k dispozici**seznamu. Pokud neznáte název procesu, podívejte se na **ladicí program za běhu sady Visual Studio** dialogové okno a poznamenejte si ID procesu. Vyberte proces v **procesy k dispozici** seznamu a klikněte na tlačítko **připojit**. V **ladicí program za běhu sady Visual Studio** dialogového okna, klikněte na tlačítko **ne** zavřete dialogové okno.
+    K této chybě dochází, když se pokusíte připojit k procesu spuštěnému jako jiný uživatel.
 
--   **Ladicí program nelze spustit, protože není přihlášen žádný uživatel.**
+    Chcete-li tento problém vyřešit, spusťte aplikaci Visual Studio, otevřete **připojit k procesu** dialogové **ladění** nabídky a najděte proces, který chcete ladit v **procesy k dispozici**seznamu. Pokud neznáte název procesu, podívejte se na **ladicí program za běhu sady Visual Studio** dialogové okno a poznamenejte si ID procesu. Vyberte proces v **procesy k dispozici** seznamu a klikněte na tlačítko **připojit**. V **ladicí program za běhu sady Visual Studio** dialogového okna, klikněte na tlačítko **ne** zavřete dialogové okno.
 
-     Tato chyba nastane, pokud Just-In-Time ladění pokusí o spuštění sady Visual Studio na počítači tam, kde neexistuje žádný uživatel přihlášený ke konzole. Protože je přihlášen žádný uživatel, neexistuje žádná uživatelská relace k zobrazení Just-In-Time ladění, dialogové okno.
+- **Ladicí program nelze spustit, protože není přihlášen žádný uživatel.**
 
-     Chcete-li tento problém vyřešit, přihlaste se do počítače.
+    Tato chyba nastane, pokud Just-In-Time ladění pokusí o spuštění sady Visual Studio na počítači tam, kde neexistuje žádný uživatel přihlášený ke konzole. Protože je přihlášen žádný uživatel, neexistuje žádná uživatelská relace k zobrazení Just-In-Time ladění, dialogové okno.
 
--   **Třída není zaregistrována.**
+    Chcete-li tento problém vyřešit, přihlaste se do počítače.
 
-     Tato chyba označuje, že ladicí program se pokusil vytvořit třídu COM, která není registrována, pravděpodobně z důvodu potíží při instalaci.
+- **Třída není zaregistrována.**
 
-     Chcete-li tento problém vyřešit, použijte instalační disk a přeinstalujte nebo opravte instalaci sady Visual Studio.
+    Tato chyba označuje, že ladicí program se pokusil vytvořit třídu COM, která není registrována, pravděpodobně z důvodu potíží při instalaci.
+
+    Chcete-li tento problém vyřešit, použijte instalační disk a přeinstalujte nebo opravte instalaci sady Visual Studio.
 
 ## <a name="see-also"></a>Viz také
  [Zabezpečení ladicího programu](../debugger/debugger-security.md) [základy ladicího programu](../debugger/getting-started-with-the-debugger.md) [Just-In-Time, ladění, dialogové okno Možnosti](../debugger/just-in-time-debugging-options-dialog-box.md) [upozornění zabezpečení: připojení k procesu vlastněnému nedůvěryhodným uživatelským může být nebezpečné. Pokud následující údaje vypadají podezřele nebo si nejste jistí, k tomuto procesu se nepřipojujte.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

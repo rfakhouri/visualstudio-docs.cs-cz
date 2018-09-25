@@ -2,7 +2,7 @@
 title: Vytvoření Node.js a Express aplikace
 description: V tomto kurzu vytvoříte aplikaci pomocí nástrojů Node.js Tools for Visual Studio.
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 619ea075394305d81d2ffddb8ea1047d2a306ccc
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8e7a1d04b83ffef2f7ec6efc786af6f5bc6e992e
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548215"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168341"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Kurz: Vytvoření Node.js a Express aplikace v sadě Visual Studio
 V tomto kurzu pro vývoj sady Visual Studio pomocí Node.js a Express vytvořit jednoduchou webovou aplikaci Node.js, přidejte kód, prozkoumat některé funkce integrovaného vývojového prostředí a spuštění aplikace. Pokud jste si sadu Visual Studio ještě nenainstalovali, nainstalujte si ji zdarma [odtud](http://visualstudio.microsoft.com).
@@ -192,11 +192,11 @@ Budete dále spusťte aplikaci v ladicím programu sady Visual Studio připojen�
 
 ## <a name="run-the-application"></a>Spuštění aplikace
 
-1. Vyberte cíl ladění na panelu nástrojů ladění.
+1. Vyberte cíl ladění na panelu nástrojů ladění, jako je například Microsoft Edge nebo Chrome.
 
     ![Vyberte cíl ladění](../javascript/media/tutorial-nodejs-deploy-target.png)
 
-    Chcete-li přidat cíl jiný prohlížeč, jako je Chrome, **procházet s**.
+    Pokud je k dispozici na svém počítači Chrome, ale nezobrazí jako možnost, zvolte **procházet s** z rozevíracího seznamu cíl ladění a jako cíl výchozí prohlížeč vybrat Chrome (zvolte **nastavit jako výchozí**).
 
 1. Stisknutím klávesy **F5** (**ladění** > **spustit ladění**) ke spuštění aplikace.
 

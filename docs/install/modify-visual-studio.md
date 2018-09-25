@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbc6cde1c897500190137ff48397a8c9cb3af059
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: d60603ae9a94e843920f00dc8c8fc2ebb40c8861
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138762"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168380"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Upravit přidáním nebo odebráním úlohy a komponenty Visual Studio 2017
 
-Nejenže jsme provedli je jednodušší, abyste mohli přizpůsobit Visual Studio tak, aby odpovídaly úlohy, kterou chcete provést, jsme také snadněji příliš přizpůsobení sady Visual Studio. Uděláte to tak, začněte nový instalační program sady Visual Studio a proveďte požadované změny.
+Nejenže jsme zjednodušili si můžete přizpůsobit Visual Studio tak, aby odpovídaly úkoly, které chcete dosáhnout, jsme také snadněji příliš přizpůsobení sady Visual Studio. Uděláte to tak, začněte nový instalační program sady Visual Studio a proveďte požadované změny.
 
 Tady je způsob.
 

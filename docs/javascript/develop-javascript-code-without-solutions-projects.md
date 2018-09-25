@@ -2,7 +2,7 @@
 title: Psaní kódu jazyka JavaScript v sadě Visual Studio bez řešení nebo projektu
 description: Visual Studio poskytuje podporu pro vytvoření kódu bez závislosti na soubor projektu nebo soubor řešení
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: db0685851113a5b85c506e250f6335e7ae83dcf4
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774598"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168328"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Vývoj kódu jazyka JavaScript a TypeScript v sadě Visual Studio bez řešení nebo projektů
 
@@ -28,7 +28,7 @@ Kromě těchto funkcí Node.js Tools for Visual Studio přidává podporu pro vy
 Abyste mohli začít, vyberte **otevřít složku** z úvodní stránky, která se zobrazí při spuštění sady Visual Studio, nebo můžete vybrat **souboru** > **otevřete**  >  **Složky** z panelu nástrojů. Průzkumník řešení zobrazí všechny soubory ve složce, a můžete otevřít libovolný soubory, které chcete zahájit úpravy. Na pozadí aplikace Visual Studio indexuje soubory, které chcete povolit npm, sestavení a ladění funkcí.
 
 > [!IMPORTANT]
-> Mnoho funkcí popsaných v tomto článku, včetně integrace npm vyžaduje Visual Studio 2017 verze 15.8 3 ve verzi Preview.
+> Mnoho funkcí popsaných v tomto článku, včetně integrace npm vyžaduje Visual Studio 2017 verze 15.8.
 
 ## <a name="npm-integration"></a>integrace npm
 
