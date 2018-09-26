@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 76d413e37ec7ebeabd8c76655b4c47758ffafc48
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 96c3ce9a8272493b66607ab9513ce1bb7f46817e
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468712"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228900"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Jak nastavit prostředí Pythonu ve službě Azure App Service
 
 > [!Important]
-> Společnost Microsoft plánuje přestat používat rozšíření Pythonu pro službu App Service, jak je popsáno v tomto článku ve prospěch přímé nasazení do služby App Service v Linuxu. Rozšíření se i nadále fungovat do té doby. Nasazení do služby App Service v Linuxu najdete v tématu [nasazení webové aplikace v Pythonu ve službě Web App for Containers](/azure/app-service/containers/quickstart-python).
+> Společnost Microsoft plánuje přestat používat rozšíření Pythonu pro službu App Service, jak je popsáno v tomto článku ve prospěch přímé nasazení do služby App Service v Linuxu. Rozšíření se i nadále fungovat do té doby. Nasazení do služby App Service v Linuxu najdete v tématu [vytvoření webové aplikace v Pythonu ve službě Azure App Service v Linuxu](/azure/app-service/containers/quickstart-python).
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) je jako nabídka platforma jako služba pro webové aplikace, ať už jsou weby přístupných prostřednictvím prohlížeče, rozhraní REST API, používat vlastní klienty nebo událost aktivuje zpracování. App Service podporuje použití Pythonu k implementaci aplikace.
 

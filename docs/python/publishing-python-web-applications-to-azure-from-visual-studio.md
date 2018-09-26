@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: c42e87d6dcf4767621cafdb246294b8a45d0e4a7
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: a1824b9ce04b8a45c011561b73654ac3ccd49f03
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468667"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228913"
 ---
 # <a name="publish-to-azure-app-service"></a>Publikování do Azure App Service
 
 > [!Important]
-> Nasazení aplikace v Pythonu do služby Azure App Service pro Linux se v současné době nepodporuje ze sady Visual Studio. Microsoft také plány přestat používat Python ve službě App Service ve Windows. V tomto článku, pokud je k dispozici budou aktualizace zveřejňovány. Do té doby můžete nasadit do služby App Service v Linuxu pomocí kontejnerů. Další informace najdete v tématu [nasazení webové aplikace v Pythonu ve službě Web App for Containers](/azure/app-service/containers/quickstart-python).
+> Nasazení aplikace v Pythonu do služby Azure App Service pro Linux se v současné době nepodporuje ze sady Visual Studio. Microsoft také plány přestat používat Python ve službě App Service ve Windows. V tomto článku, pokud je k dispozici budou aktualizace zveřejňovány. Do té doby můžete nasadit do služby App Service v Linuxu pomocí kontejnerů. Další informace najdete v tématu [vytvoření webové aplikace v Pythonu ve službě Azure App Service v Linuxu](/azure/app-service/containers/quickstart-python).
 
 Visual Studio poskytuje možnost publikovat přímo do služby Azure App Service webovou aplikaci v Pythonu. Publikování do služby Azure App Service znamená, že zkopírujete potřebné soubory na serveru a nastavení odpovídající *web.config* soubor, který se dá pokyn webového serveru, jak pro spuštění vaší aplikace.
 

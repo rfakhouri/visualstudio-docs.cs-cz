@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f154afe78d01fb7f139308c09f669528b645859
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280091"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228887"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Použijte šablony Polls – webový projekt Flask
 
@@ -359,4 +359,4 @@ Spuštění webové aplikace ve svém vývojovém počítači je pouze jeden kro
 - Nastavení průběžné integrace a nasazení kanálu ve službě, jako je Azure kanály. Kromě práce se správou zdrojového kódu (na úložiště Azure, Githubu nebo jinde), můžete mít Azure testovací plány automaticky spouštět testy jednotek jako nezbytný předpoklad pro vydanou verzi a taky nakonfigurovat kanál pro nasazení do přípravného server pro další testy před nasazení do produkčního prostředí. Služby Azure DevOps, navíc se integruje s monitorováním řešení, jako jsou App Insights a zavře celý cyklus se nástroje pro agilní plánování. Další informace naleznete v tématu:
 
   - [Vytvoření kanálu CI/CD pro Python s projekty Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [Vývoj v jazyce Python v Azure pomocí služby Visual Studio Team Services (video, 11 min 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
+  - [Vývoj v jazyce Python v Azure pomocí Azure DevOps (video, 11 min 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).

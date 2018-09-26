@@ -1,7 +1,7 @@
 ---
 title: Ladění kódu v Pythonu
 description: Názorný postup funkce ladění v sadě Visual Studio speciálně pro kód Python, včetně nastavení zarážek, krokování, kontrolu hodnoty, prohlížení výjimek a ladění v interaktivním okně.
-ms.date: 08/14/2018
+ms.date: 09/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: fa331093e6085179a20638b1314200f65deb6a61
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42623961"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228939"
 ---
 # <a name="debug-your-python-code"></a>Ladění kódu Pythonu
 
@@ -74,7 +74,7 @@ Po zastavení na zarážce, budete mít různé způsoby, jak procházet kód ne
 
 | Funkce | Stisknutí kláves | Popis |
 | --- | --- | --- |
-| **pokračovat** | **F5** | Spouští kód, dokud nebude dosaženo k další zarážce. |
+| **Continue** | **F5** | Spouští kód, dokud nebude dosaženo k další zarážce. |
 | **Krokovat s vnořením** | **F11** | Následující příkaz spustí a zastaví. Pokud je volání funkce další příkaz, ladicí program se zastaví na prvním řádku volané funkce. |
 | **Krok přes** | **F10** | Spustí další příkaz, včetně volání na funkci (s jeho kód) a použití jakékoli návratovou hodnotu. Krokování přes umožňuje snadno přeskočit funkce, které není potřeba ladění. |
 | **Krokovat s Vystoupením** | **SHIFT**+**F11** | Spustí kód do konce aktuální funkci a pak kroky volání příkazu.  Tento příkaz je užitečné, když není nutné ladit zbytek aktuální funkce. |
@@ -227,9 +227,45 @@ Ke správě vaší instalace ptvsd:
 
 1. Pokud je verze nižší než 4.1.1a9 (verze součástí sady Visual Studio), vyberte **X** napravo od balíček odinstalovat starší verzi. Visual Studio použije jeho jako součást balíčku verze. (Můžete odinstalovat i z Powershellu pomocí `pip uninstall ptvsd`.)
 
-1. Alternativně můžete aktualizovat balíček ptvsd jeho nejnovější verzi. Zadejte `ptvsd --upgrade -pre` do vyhledávacího pole, vyberte **spusťte příkaz: pip nainstalujte ptvsd--upgrade - pre**. (Můžete také použít stejný příkaz z Powershellu.)
+1. Alternativně můžete aktualizovat balíček ptvsd jeho nejnovější verzi podle pokynů v [Poradce při potížích s](#troubleshooting) oddílu.
 
-    ![Poskytuje příkaz pro upgrade v okně prostředí Pythonu](media/debugging-experimental-upgrade-ptvsd.png)
+## <a name="troubleshooting"></a>Poradce při potížích
+
+Pokud máte problémy s ladicím programem, nejprve následujícím způsobem upgradujte verzi ptvsd:
+
+1. Přejděte **balíčky** kartu **prostředí Pythonu** okna.
+
+1. Zadejte `ptvsd --upgrade` do vyhledávacího pole, vyberte **spusťte příkaz: pip nainstalujte ptvsd--upgrade**. (Můžete také použít stejný příkaz z Powershellu.)
+
+    ![Poskytuje příkaz pro upgrade ptvsd v okně prostředí Pythonu](media/debugging-experimental-upgrade-ptvsd.png)
+
+Pokud problémy přetrvávají, založte prosím problém na [úložiště PTVS GitHub](https://github.com/Microsoft/ptvs/issues).
+
+### <a name="enable-debugger-logging"></a>Povolit protokolování ladicího programu
+
+Při zkoumání problému s ladicího programu, Microsoft vás může požádat o povolení a shromažďovat protokoly ladicího programu, které pomáhají s diagnostikou.
+
+Následujícím postupem povolíte ladění v aktuální relaci aplikace Visual Studio:
+
+1. Otevřete okno příkazového řádku v sadě Visual Studio pomocí **zobrazení** > **ostatní Windows** > **příkazové okno** příkazu nabídky.
+
+1. Zadejte následující příkaz:
+
+    ```ps
+    DebugAdapterHost.Logging /On
+    ```
+
+1. Spustit ladění a projít jakýchkoli kroků je potřebné k reprodukci problému. Během této doby, protokoly ladění joinkind **výstup** okně v části **protokol hostitele adaptéru ladění**. Pak můžete zkopírovat protokoly z tohoto okna a vložte do problém Githubu, e-mail atd.
+
+    ![Ladicího programu uložit výstup protokolování v okně Výstup](media/debugger-logging-output.png)
+
+1. Pokud Visual Studio přestane reagovat nebo nejste jinak mít přístup **výstup** restartujte sadu Visual Studio, otevřete okno příkazového řádku a zadejte následující příkaz:
+
+    ```ps
+    DebugAdapterHost.Logging /On /OutputWindow
+    ```
+
+1. Spustit ladění a problém reprodukovat. znovu. Ladicí program protokoly pak najdete v `%temp%\DebugAdapterHostLog.txt`.
 
 ## <a name="see-also"></a>Viz také:
 

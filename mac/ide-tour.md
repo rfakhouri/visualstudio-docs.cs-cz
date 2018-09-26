@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 337badd0f32dad5c6bbf87dd981dc47de0cb87d3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624132"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228858"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac prohlídku
 
@@ -97,7 +97,7 @@ Visual Studio pro Mac se integruje s systémy správy zdrojového kódu Git a Su
 
 ![Název větve k označení projekt pod správou zdrojových kódů](media/ide-tour-image22.png)
 
-Soubory s nepotvrzené změnit mít anotaci na jejich ikonami v podokně řešení, jak je znázorněno na následujícím obrázku:
+Soubory s nepotvrzené změny mít anotaci na jejich ikonami v podokně řešení, jak je znázorněno na následujícím obrázku:
 
 ![Nepotvrzené soubory v oblasti řešení](media/ide-tour-image23.png)
 

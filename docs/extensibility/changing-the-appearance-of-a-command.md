@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa212ec1c01a19668cafd951ea5defe5383b17ed
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: d3c30b665a27f4e77d21744582a23555fdb899c9
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232241"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228770"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Změna vzhledu příkazu
 Změnou vzhledu příkazu můžete poskytnou zpětnou vazbu uživatelů. Například můžete příkazu, který bude vypadat jinak, pokud není k dispozici. Můžete provést příkazy k dispozici nebo není k dispozici, skrýt nebo zobrazit, nebo zaškrtněte nebo zrušte jejich zaškrtnutí v nabídce.  
@@ -58,7 +58,7 @@ Změnou vzhledu příkazu můžete poskytnou zpětnou vazbu uživatelů. Napří
     {  
         var command = sender as OleMenuCommand;  
         if (command.Text == "New Text")  
-            ChangeMyCommand(command.CommandID.ID, false);}  
+            ChangeMyCommand(command.CommandID.ID, false);
     }  
     ```  
   
@@ -77,7 +77,7 @@ Změnou vzhledu příkazu můžete poskytnou zpětnou vazbu uživatelů. Napří
             mc.Enabled = enableCmd;  
             cmdUpdated = true;  
         }  
-        return cmdUpdated;    }  
+        return cmdUpdated;
     }  
     ```  
   

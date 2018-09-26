@@ -1,7 +1,7 @@
 ---
 title: Azure SDK pro Python
 description: Sada Azure SDK pro Python usnadňuje používání služeb Microsoft Azure z aplikací Pythonu běží na libovolné platformě.
-ms.date: 06/26/2018
+ms.date: 09/56/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 6c7f38dbe58c5172c8480c88ae84c6e28f5d512b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0a68027e975357a404cd7b4f29c837767c60e015
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545551"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228809"
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK pro Python
 
@@ -37,17 +37,21 @@ Můžete také postupovat [instalace Pythonu a sady SDK](https://docs.microsoft.
 
 ## <a name="documentation"></a>Dokumentace
 
-Dokumentace ke službě můžete najít na [azure sdk pro python.readthedocs.org](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
+Úplnou dokumentaci se nachází na [Azure pro Centrum pro vývojáře Python](https://docs.microsoft.com/en-us/python/azure/?view=azure-python). Qucik prostředí, najdete v části [začít s vývojem pro cloud pomocí Pythonu](/python/azure/python-sdk-azure-get-started?view=azure-python).
 
-[Sady Azure SDK for středisko pro vývojáře Python](https://azure.microsoft.com/develop/python/) má také některé užitečné zdroje informací, včetně počtu kurzy:
+Také najdete v těchto kurzech pro ostatní služby Azure pomocí Pythonu:
 
-- Vytváření webových aplikací s [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app), [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app), a [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
-- [Úložiště objektů BLOB](/azure/storage/storage-python-how-to-use-blob-storage)
-- [Úložiště tabulek](/azure/storage/storage-python-how-to-use-table-storage)
-- [Fronta úložiště](/azure/storage/storage-python-how-to-use-queue-storage)
-- [Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
-- [Fronty služby Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
-- [Témata a odběry Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
+- Azure App Service:
+  - [Vytvoření webové aplikace](/azure/app-service/containers/quickstart-python)
+  - [Vytvoření webové aplikace Docker Python využívající databázi PostgreSQL v Azure](/azure/app-service/containers/tutorial-docker-python-postgresql-app)
+- Azure Storage:
+  - [Úložiště objektů BLOB](/azure/storage/blobs/storage-quickstart-blobs-python)
+  - [Table storage a Cosmos DB](/azure/cosmos-db/table-storage-how-to-use-python)
+  - [Fronta úložiště](/azure/storage/queues/storage-python-how-to-use-queue-storage)
+  - [Flask a Cosmos DB](/azure/cosmos-db/sql-api-python-application)
+- Service Bus
+  - [Fronty služby Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
+  - [Témata a odběry Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
 - [Správa služeb](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
 
 Pro veřejné rozhraní API bez dokumentaci, testování částí [úložiště SDK GitHub](https://github.com/Azure/azure-sdk-for-python) jsou dobré zdroje informací:
@@ -58,6 +62,6 @@ Pro veřejné rozhraní API bez dokumentaci, testování částí [úložiště 
 
 ## <a name="support"></a>Podpora
 
-Úložiště Git pro sadu SDK se nachází na [ https://github.com/Azure/azure-sdk-for-python ](https://github.com/Azure/azure-sdk-for-python).
+Úložiště GitHub pro sadu SDK se nachází na [ https://github.com/Azure/azure-sdk-for-python ](https://github.com/Azure/azure-sdk-for-python).
 
 [Soubor problémy v úložišti](https://github.com/Azure/azure-sdk-for-python/issues) najít jakékoli problémy nebo máte otázky týkající se použití sady SDK.

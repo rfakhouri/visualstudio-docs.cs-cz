@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 0d08a3fda756a1800b943cf02183187a2c180c20
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204125"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228874"
 ---
 # <a name="msbuild-items"></a>Položky nástroje MSBuild
 Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle představují soubory (soubory jsou určené v `Include` atributu). Položky jsou seskupeny do typů položek podle jejich názvy elementů. Seznam položek, které lze použít jako parametry pro úkoly jsou pojmenované typy položek. Úkoly pomocí hodnoty položek k provedení kroků procesu sestavení.  
@@ -35,7 +35,7 @@ Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle předsta
 </ItemGroup>  
 ```  
   
- Položka *file2.cs* nenahrazuje položky *file1.cs*; místo toho se připojí název souboru do seznamu hodnot `Compile` typ položky. Během fáze vyhodnocení sestavení nejde odebrat položku z typu položky.  
+ Položka *file2.cs* nenahrazuje položky *file1.cs*; místo toho se připojí název souboru do seznamu hodnot `Compile` typ položky.
   
  Následující XML kód vytvoří stejný typ položky deklarováním oba soubory v jednom `Include` atribut. Všimněte si, že názvy souborů jsou odděleny středníkem.  
   
@@ -180,7 +180,7 @@ Další informace o zástupných znacích naleznete v tématu [postupy: výběr 
  Od verze rozhraní .NET Framework 3.5 `Target` prvky mohou obsahovat [ItemGroup](../msbuild/itemgroup-element-msbuild.md) prvky, které mohou obsahovat položky elementy. Atributy v této části jsou platné, pokud jsou zadány pro položku v `ItemGroup` , který je ve `Target`.  
   
 ###  <a name="BKMK_RemoveAttribute"></a> Odebrat atribut  
- Položky `ItemGroup` cíle může obsahovat `Remove` atribut, který odebere konkrétní položky (soubory) z typu položky. Tento atribut byla zavedena v rozhraní .NET Framework 3.5.  
+ `Remove` Atribut odebere konkrétní položky (soubory) z typu položky. Tento atribut byla zavedena v rozhraní .NET Framework 3.5, ale byla podporována pouze v rámci cíle do 15.0 nástroje MSBuild.
   
  Následující příklad odebere každý *.config* souboru z typu položky kompilace.  
   

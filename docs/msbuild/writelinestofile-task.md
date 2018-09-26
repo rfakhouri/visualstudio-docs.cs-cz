@@ -1,7 +1,7 @@
 ---
 title: Writelinestofile – úloha | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/20/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8fa6ff5dbfcbbeb158f22256e18f6fb90bab348
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 909c35ca889295385cae98d51a81b22b4f7eb5d8
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341807"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228835"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile – úloha
 Zapíše cest zadaných položek do zadaného textového souboru.  
@@ -39,7 +39,8 @@ Zapíše cest zadaných položek do zadaného textového souboru.
 |`Lines`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Určuje položky, které chcete zapisovat do souboru.|  
 |`Overwrite`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, úloha přepíše veškerý existující obsah v souboru.|  
 |`Encoding`|Volitelné `String` parametru.<br /><br /> Vybere kódování, například "Unicode" znaků.  Viz také <xref:System.Text.Encoding>.|  
-  
+|`WriteOnlyWhenDifferent`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, cílový soubor, který je zadán, pokud existuje, bude číst nejprve k porovnání, co by vytvořilo úlohu. Pokud shodné, soubor není zapsán na disk a časové razítko zůstane zachovaná.|  
+
 ## <a name="remarks"></a>Poznámky  
  Pokud `Overwrite` je `true`, vytvoří nový soubor, zapsat obsah do souboru a pak se soubor zavře. Pokud cílový soubor už existuje, je přepsán. Pokud `Overwrite` je `false`, připojí obsah do souboru, vytváření cílový soubor, pokud ještě neexistuje.  
   
