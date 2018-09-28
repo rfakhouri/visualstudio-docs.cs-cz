@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b492f0dca9df9e5ef78cb261df325599e9e895
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 022eef30e7e067ca622650a2f5e702cd9a8168b9
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125051"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443490"
 ---
 # <a name="common-quick-actions"></a>Běžné rychlé akce
 
@@ -31,7 +31,7 @@ Rychlé akce v této části opravit chyby v kódu, která může způsobit selh
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Opravte chybně symbol nebo – klíčové slovo
 
-Pokud budete mít překlep omylem typ nebo klíčové slovo v sadě Visual Studio, této rychlé akce ho automaticky opraví za vás. Uvidíte tyto položky v nabídce žárovky jako **"Změna"*chybně napsaná slova*"do"*opravit slovo*"**.  Příklad:
+Pokud budete mít překlep omylem typ nebo klíčové slovo v sadě Visual Studio, této rychlé akce ho automaticky opraví za vás. Uvidíte tyto položky v nabídce žárovky jako **"Změna"*chybně napsaná slova*"do"*opravit slovo*"**. Příklad:
 
 ```csharp
 // Before
@@ -100,49 +100,11 @@ private void MyMethod()
 | ------- | -------------------- | ----------------  |
 | CS8300, BC37284  | C# a Visual Basic | Visual Studio 2017 verze 15.3 |
 
-### <a name="make-method-asynchronous"></a>Provést asynchronní metody
-
-Při použití `await` nebo `Await` – klíčové slovo v rámci metody, očekává se, že je metoda sama označené `async` nebo `Async` – klíčové slovo.  Ale pokud to není tento případ, rychlá akce se zobrazí, která provede asynchronní metodu. Použití **provést asynchronní metody/funkce** možnost z nabídky rychlé akce.
-
-```csharp
-// Before
-int MyAsyncMethod()
-{
-    return await Task.Run(...);
-}
-
-// Make method asynchronous
-
-// After
-async Task<int> MyAsyncMethod()
-{
-    return await Task.Run(...);
-}
-```
-
-```vb
-' Before
-Function MyAsyncMethod() as Integer
-    Return  Await Task.Run(...)
-End Function
-
-' Make method asynchronous
-
-' After
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return Await Task.Run(...)
-End Function
-```
-
-|  ID chyby | Použitelné jazyky |  Podporovaná verze |
-| ------- | -------------------- | ----------------  |
-| CS4032, BC37057 | C# a Visual Basic | Visual Studio 2017 |
-
 ## <a name="actions-that-remove-unnecessary-code"></a>Akce, které odeberte nepotřebný kód
 
 ### <a name="remove-unnecessary-usingsimports"></a>Odebrat nepotřebné direktivy using/importy
 
-**Odebrat nepotřebné direktivy using/importy** rychlé akce odebere jakýkoli nesplněný `using` a `Import` příkazy pro aktuální soubor.  Když vyberete tuto položku, se odeberou importů oboru názvu nevyužité.
+**Odebrat nepotřebné direktivy using/importy** rychlé akce odebere jakýkoli nesplněný `using` a `Import` příkazy pro aktuální soubor. Když vyberete tuto položku, se odeberou importů oboru názvu nevyužité.
 
 |  Použitelné jazyky |  Podporovaná verze |
 |  -------------------- | ----------------  |
@@ -150,7 +112,7 @@ End Function
 
 ### <a name="remove-unnecessary-cast"></a>Odebrat nepotřebné přetypování
 
-Pokud přetypování typu na jiný typ, který nevyžaduje, aby přetypování, **odebrat nepotřebné přetypování** položky rychlé akce odebere nepotřebného přetypování.
+Pokud přetypování typu na jiný typ, který nevyžaduje přetypování, **odebrat nepotřebné přetypování** položky rychlé akce odebere nepotřebného přetypování.
 
 ```csharp
 // before
@@ -496,7 +458,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>Převést na interpolovaný řetězec
 
-[Interpolované řetězce](/dotnet/csharp/language-reference/keywords/interpolated-strings) představují snadný způsob, jak vyjádřit řetězce pomocí vložených proměnných, podobně jako **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)** metody.  Tato rychlá akce rozpozná případech, kdy jsou řetězce zřetězených, nebo můžete použít **String.Format**a změní použití interpolovaného řetězce.
+[Interpolované řetězce](/dotnet/csharp/language-reference/keywords/interpolated-strings) představují snadný způsob, jak vyjádřit řetězce pomocí vložených proměnných, podobně jako **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)** metody. Tato rychlá akce rozpozná případech, kdy jsou řetězce zřetězených, nebo můžete použít **String.Format**a změní použití interpolovaného řetězce.
 
 ```csharp
 // Before
@@ -528,7 +490,7 @@ Dim s As String = $"My string with {num} in the middle"
 
 ### <a name="use-object-initializers"></a>Používejte inicializátory objektů
 
-Tato rychlá akce umožňuje používat [inicializátorech objektu](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers) namísto vyvolání tne konstruktor a s další řádky příkazů přiřazení.
+Tato rychlá akce umožňuje používat [inicializátorech objektu](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers) namísto vyvoláním konstruktoru a s další řádky příkazů přiřazení.
 
 ```csharp
 // Before
@@ -923,7 +885,7 @@ Console.WriteLine($"{x} {y}");
 
 ### <a name="make-method-synchronous"></a>Nastavit metodu jako synchronní
 
-Při použití `async` nebo `Async` – klíčové slovo pro metodu, očekává se, že, který v této metodě `await` nebo `Await` – klíčové slovo se také používá.  Ale pokud to není tento případ, rychlá akce se zobrazí, která provádí synchronní metody tak, že odeberete `async` nebo `Async` – klíčové slovo a změnu návratového typu. Použití **nastavit metodu jako synchronní** možnost z nabídky rychlé akce.
+Při použití `async` nebo `Async` – klíčové slovo pro metodu, očekává se, že, který v této metodě `await` nebo `Await` – klíčové slovo se také používá. Ale pokud to není tento případ, rychlá akce se zobrazí, která provádí synchronní metody tak, že odeberete `async` nebo `Async` – klíčové slovo a změnu návratového typu. Použití **nastavit metodu jako synchronní** možnost z nabídky rychlé akce.
 
 ```csharp
 // Before
@@ -958,6 +920,44 @@ End Function
 |  ID chyby | Použitelné jazyky |  Podporovaná verze |
 | ------- | -------------------- | ----------------  |
 | CS1998, BC42356 | C# a Visual Basic | Visual Studio 2015 Update 2 |
+
+### <a name="make-method-asynchronous"></a>Provést asynchronní metody
+
+Při použití `await` nebo `Await` – klíčové slovo v rámci metody, očekává se, že metoda je označena třídou `async` nebo `Async` – klíčové slovo. Ale pokud to není tento případ, rychlá akce se zobrazí, která provede asynchronní metodu. Použití **provést asynchronní metody/funkce** možnost z nabídky rychlé akce.
+
+```csharp
+// Before
+int MyAsyncMethod()
+{
+    return await Task.Run(...);
+}
+
+// Make method asynchronous
+
+// After
+async Task<int> MyAsyncMethod()
+{
+    return await Task.Run(...);
+}
+```
+
+```vb
+' Before
+Function MyAsyncMethod() as Integer
+    Return  Await Task.Run(...)
+End Function
+
+' Make method asynchronous
+
+' After
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return Await Task.Run(...)
+End Function
+```
+
+|  ID chyby | Použitelné jazyky |  Podporovaná verze |
+| ------- | -------------------- | ----------------  |
+| CS4032, BC37057 | C# a Visual Basic | Visual Studio 2017 |
 
 ## <a name="see-also"></a>Viz také:
 

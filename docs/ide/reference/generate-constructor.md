@@ -1,5 +1,5 @@
 ---
-title: Generovat konstruktor v sadě Visual Studio
+title: Generovat konstruktor rychlá akce
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c063d8abc3b00ce15726ebfe0e8733254718428
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 039e9a43e3ab6af5db399aa32722c698014256c9
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124980"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443555"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generovat konstruktor v sadě Visual Studio
 
@@ -153,6 +153,8 @@ Tato generace kód platí pro:
    Parametr se přidá do konstruktoru, s jeho typ odvozený z jeho využití.
 
    ![Generovat konstruktor výsledek](media/constructor4-result-cs.png)
+
+Můžete také přidat parametr do existující metodu. Další informace najdete v tématu [přidání parametru k metodě](add-parameter.md).
 
 ## <a id="create"></a> Vytváření a inicializace pole nebo vlastnost z parametru konstruktoru (C# jenom)
 

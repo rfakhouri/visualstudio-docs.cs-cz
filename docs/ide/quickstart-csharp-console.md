@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2766af365625890a0769f298d1801179da9c7e07
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ee40aadd3287018e52910ad6b4a4000db6bcce8a
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029239"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443412"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Rychlý start: Použití sady Visual Studio k vytvoření první aplikace konzoly C#
 
@@ -39,9 +39,9 @@ Nejprve vytvoříte aplikaci projektu jazyka C#. Typ projektu obsahuje všechny 
 
    ![Konzole šablonu projektu aplikace (.NET Core) v dialogovém okně Nový projekt v integrovaném vývojovém prostředí sady Visual Studio](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
 
-     Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.
+     Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, zvolte **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.
 
-   ![Klikněte na odkaz otevřít instalační program Visual Studio z dialogového okna Nový projekt](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
+   ![Zvolte odkaz otevřít instalační program Visual Studio z dialogového okna Nový projekt](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
 
      Spustí se instalační program pro Visual Studio. Zvolte **vývoj pro různé platformy .NET Core** úlohy a klikněte na tlačítko **změnit**.
 
@@ -75,9 +75,9 @@ Přidejme nějaký kód pozastavte aplikaci tak, aby v okně konzoly se nepodpor
 
 ## <a name="run-the-application"></a>Spuštění aplikace
 
-1. Klikněte na tlačítko **HelloWorld** tlačítko na panelu nástrojů ke spuštění aplikace v režimu ladění. (Nebo stisknutím klávesy **F5**.)
+1. Zvolte **HelloWorld** tlačítko na panelu nástrojů ke spuštění aplikace v režimu ladění. (Nebo stisknutím klávesy **F5**.)
 
-   ![Klikněte na tlačítko Hello World a má program spustit z panelu nástrojů](../ide/media/csharp-console-hello-world-button.png)
+   ![Klikněte na tlačítko Hello World a spusťte tak aplikaci z panelu nástrojů](../ide/media/csharp-console-hello-world-button.png)
 
 1. Zobrazení vaší aplikace v okně konzoly.
 
@@ -98,4 +98,4 @@ Přidejme nějaký kód pozastavte aplikaci tak, aby v okně konzoly se nepodpor
 Blahopřejeme k dokončení tohoto rychlého startu! Doufáme, že jste se dozvěděli ještě něco o jazyce C# a Visual Studio IDE. Další informace najdete v následujících kurzech pokračujte.
 
 > [!div class="nextstepaction"]
-> [Výukové programy jazyka C#](/dotnet/csharp/tutorials/)
+> [Začínáme s aplikaci konzoly C# v sadě Visual Studio](tutorial-csharp-console.md)

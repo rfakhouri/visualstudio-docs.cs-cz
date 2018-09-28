@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d08a3fda756a1800b943cf02183187a2c180c20
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228874"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443594"
 ---
 # <a name="msbuild-items"></a>Položky nástroje MSBuild
 Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle představují soubory (soubory jsou určené v `Include` atributu). Položky jsou seskupeny do typů položek podle jejich názvy elementů. Seznam položek, které lze použít jako parametry pro úkoly jsou pojmenované typy položek. Úkoly pomocí hodnoty položek k provedení kroků procesu sestavení.  
@@ -60,25 +60,26 @@ Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle předsta
  Ve výchozím nastavení jsou položky Typ položky oddělené středníkem (;) při je rozbalený. Pomocí syntaxe @(\<ItemType >, "\<oddělovač >') Chcete-li určit oddělovač jiné než výchozí. Další informace najdete v tématu [postupy: zobrazování seznamu položek oddělených čárkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="use-wildcards-to-specify-items"></a>Pomocí zástupných znaků můžete zadat položky  
- Můžete použít **, \*, a? zástupné znaky jako vstupy pro sestavení namísto vypisování každého souboru zvlášť zadat skupiny souborů.  
-  
--   Na? zástupný znak odpovídá jednomu znaku.  
-  
--   * Zástupný znak odpovídá nula nebo více znaků.  
-  
--   ** Sekvence znaků zástupný znak odpovídá část cesty.  
 
-Například můžete zadat všechny *.cs* soubory soubory v adresáři, který obsahuje projekt s použitím následující element v souboru projektu.  
+Můžete použít `**`, `*`, a `?` zástupné znaky jako vstupy pro sestavení namísto vypisování každého souboru zvlášť zadat skupiny souborů.
+  
+- `?` Zástupný znak odpovídá jednomu znaku.
+- `*` Zástupný znak odpovídá nula nebo více znaků.
+- `**` Sekvence znaků zástupný znak odpovídá část cesty.
+
+Například můžete zadat všechny `.cs` soubory soubory v adresáři, který obsahuje projekt s použitím následující element v souboru projektu.
 
 ```xml  
 <CSFile Include="*.cs"/>  
 ```  
 
-Následující element vybere všechny *.vb* soubory na *D:* jednotky:  
+Následující element vybere všechny `.vb` soubory na `D:` jednotky:
 
 ```xml  
 <VBFile Include="D:/**/*.vb"/>  
 ```  
+
+Pokud chcete zahrnout literálu `*` nebo `?` znaků položky bez rozšíření zástupného znaku, je nutné [řídicí zástupné znaky](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
 Další informace o zástupných znacích naleznete v tématu [postupy: výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md).  
 

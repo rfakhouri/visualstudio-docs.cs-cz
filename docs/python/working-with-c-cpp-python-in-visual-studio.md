@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bbc5d194552952ccce4a30a7c15b917e7a7a32ae
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 62c7b202f9cbdbd8610c2a94c1dccbef59b85481
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549466"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443646"
 ---
 # <a name="create-a-c-extension-for-python"></a>Vytvoření rozšíření C++ pro Python
 
@@ -409,6 +409,7 @@ Existuje široká škála způsob, jak vytvořit rozšíření Pythonu, jak je p
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Žádné kompilace širokou dostupnost. | Přístup k a mutace struktury C náročné a náchylné k chybám. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generovat vazby pro řadu jazyků najednou. | Pokud Python je jediný cíl nadměrnému zatížení. |
 | cffi | 2013 | [kryptografie](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Snadné integraci, PyPy kompatibility. | Novější, méně až po zralé. |
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Podobně jako cffi pomocí jazyka C++. | Novější, může mít některé problémy s VS 2017. |  
 
 ## <a name="see-also"></a>Viz také:
 

@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: df74252361e330ac992f8f3e852d9c33006d18e7
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624255"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443581"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Zásady vytváření názvů .NET pro EditorConfig
 
@@ -88,11 +88,14 @@ K popisu modifikátory symboly chcete pravidlo pro pojmenování použít, zadej
 
 Následující seznam obsahuje povolených hodnot, a můžete zadat více hodnot oddělených čárkami.
 
-- abstraktní nebo must_inherit
-- async
-- const
-- readonly
-- statické nebo sdílený
+- `abstract` Nebo `must_inherit`
+- `async`
+- `const`
+- `readonly`
+- `static` Nebo `shared`
+
+   > [!NOTE]
+   > Pokud máte pravidlo pro pojmenování pro `static` nebo `shared` symboly, budou také použity na `const` symboly, protože jsou implicitně statické. Pokud nechcete, aby `static` pravidlo pro pojmenování vyrovnat `const` symboly, vytvořte samostatné pravidlo pro pojmenování pro `const` symboly.
 
 `required_modifiers` Vlastnost je volitelná. Pokud ji vynecháte, pravidlo pro pojmenování platit pro všechny modifikátory.
 
