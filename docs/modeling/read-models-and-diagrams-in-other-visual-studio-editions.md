@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 420a17dbac9e0a3bf10b4c92baa108067ad44949
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cfd6188bc4d48f26e85ae8778d75d2fa99ef0f25
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775578"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859676"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Čtení modelů a diagramů v jiných edicích sady Visual Studio
 Při otevření modelu ve verzi sady Visual Studio, který nepodporuje vytvoření modelu, model otevře v režimu jen pro čtení. V tomto režimu můžete změnit rozložení diagramy, ale nemůže změnit model.
@@ -26,7 +26,7 @@ Při otevření modelu ve verzi sady Visual Studio, který nepodporuje vytvořen
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>Získání přístupu k modelu a diagramů
  Další diagram závislostí, musíte nejdřív pomocí sady Visual Studio otevřete projekt modelování a pak otevřete diagram v něm.
 
- Z tohoto důvodu Pokud si chcete přečíst diagram závislostí, musí máte také přístup k projektu modelování, ve kterém byla vytvořena. Uděláte to buď díky přístupu do projektu z [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)], nebo prostřednictvím provedeného kopírování souborů projektu.
+ Z tohoto důvodu Pokud si chcete přečíst diagram závislostí, musí máte také přístup k projektu modelování, ve kterém byla vytvořena. Můžete provést buď díky přístupu do projektu ze správy zdrojových kódů, nebo prostřednictvím provedeného kopírování souborů projektu.
 
 > [!NOTE]
 >  Tato akce není požadována kódu mapy a .NET třídy diagramy generované z kódu. Tyto diagramy lze zobrazit nezávisle na projektu modelování.
@@ -53,7 +53,7 @@ Při otevření modelu ve verzi sady Visual Studio, který nepodporuje vytvořen
 
  Je-li uložit tyto změny. Pokud chcete provádět změny viditelné pro ostatní uživatele, minimálně, odešlete aktualizovaný **.layout** soubory.
 
-##  <a name="RelatedTopics"></a> Související témata
+## <a name="RelatedTopics"></a> Související témata
 
 |Název|Popis|
 |-----------|-----------------|

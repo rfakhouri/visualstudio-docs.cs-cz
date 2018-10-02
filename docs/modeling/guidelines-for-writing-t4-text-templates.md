@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 08e18d654023dbf92f5c9e52fcd82f0c2ac3471c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 45bc88be425acf8532debc47a28ee3ea20c18c71
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178459"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859624"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Pokyny pro tvorbu textových šablon T4
-Tyto obecné pokyny mohou být užitečné, pokud jsou generování programového kódu nebo jiné prostředky aplikace ve službě [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Nejsou k nápravě pravidla.
+Tyto obecné pokyny mohou být užitečné, pokud jsou generování programového kódu nebo jiných prostředků aplikace v sadě Visual Studio. Nejsou k nápravě pravidla.
 
 ## <a name="guidelines-for-design-time-t4-templates"></a>Pokyny pro šablony T4 návrhu
- Návrhových šablonách T4 jsou šablony, které generují kód ve vašich [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] v době návrhu projektu. Další informace najdete v tématu [vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+ Šablony T4 návrhu jsou šablony, které generují kód v projektu sady Visual Studio v době návrhu. Další informace najdete v tématu [vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
  Generovat proměnnou aspektech vaší aplikace.
 Generování kódu je zvláště užitečná pro tyto aspekty aplikace, která může změnit během projektu, nebo se změní mezi různými verzemi aplikace. Tyto proměnné aspekty oddělte od více invariantní aspekty, tak, aby můžete snadněji určit, co se má vygenerovat. Například pokud vaše aplikace poskytuje web, samostatné standardní stránky obsluhující funkce od logiky, která definuje navigační cesty z jedné stránky na jiný.
 
  Kódování proměnné aspekty v jedné nebo více zdrojových modelů.
-Model je soubor nebo databáze, která přečte každou šablonu k získání konkrétní hodnoty pro proměnné části kódu, který se má vygenerovat. Modelů může být databáze a soubory XML návrh, diagramů nebo jazyky specifickými pro doménu. Obvykle se jeden model používá ke generování mnoha soubory v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Každý soubor je vygenerován ze samostatné šablony.
+Model je soubor nebo databáze, která přečte každou šablonu k získání konkrétní hodnoty pro proměnné části kódu, který se má vygenerovat. Modelů může být databáze a soubory XML návrh, diagramů nebo jazyky specifickými pro doménu. Obvykle jeden model se používá ke generování mnoha soubory v projektu sady Visual Studio. Každý soubor je vygenerován ze samostatné šablony.
 
  V projektu můžete použít více než jeden model. Můžete definovat model pro navigaci mezi stránkami web a samostatný model pro rozložení stránky.
 
@@ -122,7 +122,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ## <a name="guidelines-for-all-t4-templates"></a>Pokyny pro všechny šablony T4
  Samostatné shromažďování dat z generování textu, zkuste se vyhnout kombinování výpočetní výkon a textové bloky. V každé textové šablony, použijte první \<kód # block #> k nastavení proměnných a provádění složitých výpočtů. Z první blok textu na konec šablony nebo první \<funkci třídy #+ blokovat #>, vyhněte se dlouho výrazy a vyhnout se tak smyček a podmíněné výrazy pokud neobsahují textové bloky. Tento postup vytvoří šablonu čitelnější a udržovat.
 
- Nepoužívejte `.tt` pro zahrnout soubory používají jinou příponu, jako `.ttinclude` vložených souborů. Použití `.tt` pouze pro soubory, které mají být zpracovány jako za běhu nebo návrhových textových šablon. V některých případech [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozpozná `.tt` soubory a automaticky nastaví jeho vlastnosti pro zpracování.
+ Nepoužívejte `.tt` pro zahrnout soubory používají jinou příponu, jako `.ttinclude` vložených souborů. Použití `.tt` pouze pro soubory, které mají být zpracovány jako za běhu nebo návrhových textových šablon. V některých případech může sada Visual Studio rozpozná `.tt` soubory a automaticky nastaví jeho vlastnosti pro zpracování.
 
  Spuštění každou šablonu jako dlouhodobý prototyp.
 Zápis příklad kódu nebo textu, který chcete vygenerovat a ujistěte se, zda je správný. Potom změňte jeho příponu na .tt a postupně vkládat kód, který upraví obsah tak čtení modelu.

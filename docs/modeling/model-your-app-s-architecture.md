@@ -11,17 +11,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0d75627eac18fa20edad222d168c858b073cecae
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8a13d617ec523a3215e28668bca179aeace656f7
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178901"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859117"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelování aplikace&#39;s architektury
 K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potřebuje, si můžete vytvořit modelů v sadě Visual Studio jako součást vaší popis celkovou strukturu a chování softwarového systému nebo aplikace. Použití modelů, může také popisovat vzory, které se používají v návrhu. Tyto modely umožňují pochopit stávající architekturou, změny a jasně komunikovat vaše záměry.
 
- Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Chcete-li zjistit, jaké edice sady Visual Studio podporují tuto funkci, přečtěte si téma [podpora edice nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Účel modelu je, abyste snížili nejasnosti, ke kterým dochází v přirozeném jazyce popisy a vy i vaši kolegové vizualizovat návrhu a diskutovat o alternativní návrhy. Model je třeba použít společně s další dokumenty nebo diskusí. Model samostatně, nepředstavuje kompletní specifikaci architektury.
 
@@ -34,7 +34,7 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
 
 -   [Vzory návrhu](#Patterns) a pravidla týkající se používají v návrzích komponenty. Vzor popisuje konkrétní přístup k dosažení cíle programování. Pomocí stejné vzorce v celém návrh váš tým může snížit náklady na provedení změn a vývoji nového softwaru.
 
-##  <a name="Structure"></a> Návrh vysoké úrovně
+## <a name="Structure"></a> Návrh vysoké úrovně
  Návrh vysoké úrovně popisuje hlavní součásti systému a jejich vzájemné interakce mezi sebou k dosažení cíle návrhu. Aktivity v následujícím seznamu jsou součástí vývoje nejvyšší úrovni návrhu, i když nemusí nutně jít v určitém pořadí.
 
  Pokud aktualizujete existující kód, může začít popisuje hlavní součásti. Ujistěte se, že pochopit změny s požadavky uživatele a pak přidat nebo upravit interakce mezi komponentami. Pokud vyvíjíte na nový systém, začněte tím, že vysvětlení si hlavní funkce potřebám uživatelů. Můžete pak prozkoumejte sekvence interakcí pro případy použití hlavní a pak sloučit sekvence na návrh komponent.
@@ -47,7 +47,7 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
 
 -   Datový Model, komponent a rozhraní. Je-li nakreslit diagramy tříd k popisu informace, které se ukládají v součásti a předány mezi komponentami.
 
-##  <a name="Requirements"></a> Vysvětlení požadavků
+## <a name="Requirements"></a> Vysvětlení požadavků
  Hlavnímu návrhu dokončené aplikace je efektivní vyvinutý spolu s modelem požadavky nebo jiný popis potřebám uživatelů. Další informace o modelech požadavky najdete v části [modelování uživatelských požadavků](../modeling/model-user-requirements.md).
 
  Pokud systém, který vyvíjíte je součástí větší systému, může být část nebo všechny vaše požadavky shrnuta v programových rozhraní.
@@ -66,7 +66,7 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
 
  Množství podrobností, které byste měli umístit do požadavky nebo Architektonický model závisí na škálování projektu a velikost a rozmístění týmu. Malý tým na krátké projektu je možné dát další než zobrazení diagramu tříd obchodních konceptů a některé vzory návrhu; velký projekt distribuovat napříč více než jedné oblasti, bude nutné výrazně více podrobností.
 
-##  <a name="BigDecisions"></a> Vzorech architektury
+## <a name="BigDecisions"></a> Vzorech architektury
  V rané fázi vývoje budete muset zvolit hlavní technologie a prvky, na kterých závisí návrhu. Oblasti, ve kterých se musí provádět tyto možnosti patří:
 
 -   Základní technologické volby, jako je například výběr mezi databází a systém souborů a možností volby mezi aplikace v síti a webovému klientovi a tak dále.
@@ -79,7 +79,7 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
 
  Vámi provedeném výběru vliv na způsob používání a interpretace Architektonický model. Například v systému, která používá databázi, asociace v diagramu tříd může představovat vztahů nebo cizí klíče v databázi, že v systému, který je založen na soubory XML, přidružení může znamenat křížové odkazy, které používají XPath. V distribuovaném systému může představovat zprávy v sekvenčním diagramu zprávy v přenosové; samostatná aplikace může představovat volání funkce.
 
-##  <a name="Patterns"></a> Vzory návrhu
+## <a name="Patterns"></a> Vzory návrhu
  Vzor návrhu je přehled toho, jak navrhnout konkrétní aspekt software, hlavně jeden, který se opakuje v různých součástí systému. Přijetím jednotný přístup napříč projektu můžete snížit náklady na návrh, zajistit konzistenci v uživatelském rozhraní a snížit náklady na principy a změny kódu.
 
  Některé obecné návrhové vzory, třeba pozorovatel jsou dobře známé a široce použitelné. Kromě toho jsou vzorce, které se dají použít jenom pro váš projekt. Například v systému Prodejní web, bude existovat několik operací v kódu ve kterém se změny provedly pořadí na základě. Aby bylo zajištěno, že se v každé fázi přesně zobrazí stav objednávky, musí všechny tyto operace postupujte podle konkrétní protokol k aktualizaci databáze.

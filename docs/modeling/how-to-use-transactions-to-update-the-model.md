@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d826787a028aba4f5397ce5577acf60f67120973
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: b69015a58b4772a13c387f67f0dc9d6a2571e1b7
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567338"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859221"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Postupy: Používání transakcí k aktualizaci modelu
 Transakce, ujistěte se, že změny, které byly provedeny do úložiště jsou považovány za skupinu. Změny, které jsou seskupeny může být potvrzena nebo vrácena zpět jako jednu jednotku.
 
- Vždy, když váš program kód upraví, přidá nebo odstraní libovolný prvek v Store v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK, je nutné provést v transakci. Musí být aktivní instance <xref:Microsoft.VisualStudio.Modeling.Transaction> přidružené Store, když se stane, změny. To platí pro všechny prvky modelu, relace, tvary, diagramy a jejich vlastnosti.
+ Pokaždé, když se váš kód programu změní, přidá nebo odstraní libovolný prvek v Store v aplikaci Visual Studio Visualization and Modeling SDK, se musí provést v transakci. Musí být aktivní instance <xref:Microsoft.VisualStudio.Modeling.Transaction> přidružené Store, když se stane, změny. To platí pro všechny prvky modelu, relace, tvary, diagramy a jejich vlastnosti.
 
  Transakce mechanismus umožňuje vyhnout se nekonzistentní stavy. Pokud dojde k chybě během transakce, všechny změny se vrátí zpět. Pokud uživatel provede příkaz zpět, je považován za jeden krok každý posledních transakcí. Uživatel se nedá vrátit zpátky části ke změnám, pokud je explicitně umístíte v samostatných transakcích.
 

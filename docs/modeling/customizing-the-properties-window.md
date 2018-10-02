@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b9c1aec06469e5ea0845a8658d9dcb88563e1984
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7b20aed36dbde31b63956fa104c5c1a50e0088d1
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567165"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859299"
 ---
 # <a name="customizing-the-properties-window"></a>Přizpůsobení okna Vlastnosti
-Vzhled a chování okna vlastnosti můžete přizpůsobit v jazyka specifického pro doménu (DSL) v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. V definici DSL definovat vlastnosti domény na každou doménovou třídu. Ve výchozím nastavení, když vyberete instance třídy v diagramu nebo v Průzkumníku modelu každé domény je uvedena vlastnost v okně Vlastnosti. To vám umožní zobrazit a upravit hodnoty vlastnosti domény, i když ještě je mapována na pole obrazec v diagramu.
+Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete přizpůsobit vzhled a chování v okně Vlastnosti. V definici DSL definovat vlastnosti domény na každou doménovou třídu. Ve výchozím nastavení, když vyberete instance třídy v diagramu nebo v Průzkumníku modelu každé domény je uvedena vlastnost v okně Vlastnosti. To vám umožní zobrazit a upravit hodnoty vlastnosti domény, i když ještě je mapována na pole obrazec v diagramu.
 
 ## <a name="names-descriptions-and-categories"></a>Názvy, popisy a kategorie
  **Název a zobrazovaný název**. Zobrazovaný název vlastnosti v definici vlastnosti domény je název, který se zobrazí za běhu v okně Vlastnosti. Naopak název se používá při psaní kódu programu aktualizovat vlastnost. Název musí být správná alfanumerický název CLR, ale zobrazovaný název nemůže obsahovat mezery.

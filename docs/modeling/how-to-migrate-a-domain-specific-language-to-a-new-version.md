@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab671cfffdf43d9b69ecda7f06c27a0e8df6bf70
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a238eabbcba4f28b12f899de5b2d4eae30cfef9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775910"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858766"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Postupy: Migrace jazyka specifického pro doménu na novou verzi
 Můžete migrovat projekty, které definice a používání jazyka specifického pro doménu na [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] oproti verzi [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , který byl distribuován s [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
 
- Nástroj pro migraci se poskytuje jako součást [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. Tento nástroj převede [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekty a řešení, které používají nebo definovat nástroje DSL.
+ Nástroj pro migraci se poskytuje jako součást [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. Tento nástroj převede projektů sady Visual Studio a řešení, které používají nebo definovat nástroje DSL.
 
- Nástroj pro migraci musíte spustit explicitně: se nespustí automaticky při otevření řešení v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Nástroje a dokument obsahuje podrobné pokyny najdete v této cestě:
+ Nástroj pro migraci musíte spustit explicitně: se nespustí automaticky při otevření řešení v sadě Visual Studio. Nástroje a dokument obsahuje podrobné pokyny najdete v této cestě:
 
  **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Před migraci vašich projektů DSL
- Nástroj pro migraci změní [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] soubory projektu (**.csproj**) a soubory řešení (**.sln**).
+ Nástroj pro migraci upraví soubory projektu sady Visual Studio (**.csproj**) a soubory řešení (**.sln**).
 
 #### <a name="to-prepare-projects-for-migration"></a>Příprava migrace projektů.
 

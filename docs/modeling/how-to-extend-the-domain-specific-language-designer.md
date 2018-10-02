@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: da03087ae5f4b1e2e8044229ece5b8a6177c11ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6a2388619dea31696fe4416032cc12cd1fe5b372
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176073"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860365"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Postupy: Rozšíření návrháře jazyka specifického pro doménu
 
@@ -68,19 +68,19 @@ Nastavení, která obsahuje kód vaše rozšíření projektu a projekt VSIX, kt
 
 ## <a name="test-and-deployment"></a>Testování a nasazení
 
-Chcete-li testovat žádný rozšíření v tomto tématu, sestavte a spusťte řešení. Experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otevře. V tomto případě otevřete řešení DSL. DslDefinition diagram upravte. Můžete zobrazit chování rozšíření.
+Chcete-li testovat žádný rozšíření v tomto tématu, sestavte a spusťte řešení. Otevře se experimentální instanci sady Visual Studio. V tomto případě otevřete řešení DSL. DslDefinition diagram upravte. Můžete zobrazit chování rozšíření.
 
-Nasazení rozšíření do hlavní [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]a do jiných počítačů, postupujte podle těchto kroků:
+Pokud chcete nasadit rozšíření do hlavní sady Visual Studio a na jiné počítače, postupujte takto:
 
 1.  V projektu VSIX v přihrádce najít instalační soubor VSIX\\*\*\\\*.VSIX
 
 2.  Zkopírujte tento soubor do cílového počítače a v Průzkumníku Windows (nebo Průzkumníka souborů), poklepejte na něj.
 
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Otevře Správce rozšíření pro potvrzení, že je nainstalovaná rozšíření.
+     Správce rozšíření sady Visual Studio otevře potvrďte, že je nainstalovaná rozšíření.
 
 Toto rozšíření odinstalovat, postupujte podle těchto kroků:
 
-1.  v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.
+1.  V sadě Visual Studio na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.
 
 2.  Vyberte požadované rozšíření a odstranit ji.
 

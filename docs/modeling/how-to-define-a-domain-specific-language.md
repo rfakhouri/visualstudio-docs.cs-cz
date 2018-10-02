@@ -18,19 +18,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 314fe4fb88fedb1b287c41fddd9aef4a20bbd1af
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 56381b86b367d7ca93c43b2918d98eb0fdc092bb
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774929"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860482"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 Do definice jazyka specifického pro doménu (DSL), vytvoříte ze šablony řešení sady Visual Studio. Klíčovou součástí řešení je diagramem definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a tvary DSL. Po úpravě a přidáte k těmto prvkům můžete přidat kód programu k přizpůsobení DSL podrobněji.
 
 Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího prostředí nástroje DSL**, které můžete vyhledat v této lokalitě: [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-##  <a name="templates"></a> Výběr šablony řešení
+## <a name="templates"></a> Výběr šablony řešení
  Pokud chcete definovat DSL, musíte mít nainstalovaný následující komponenty:
 
 |||
@@ -122,7 +122,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 
  Odstranit nebo přejmenovat jiné třídy tak, aby vyhovoval vašim požadavkům.
 
-##  <a name="patterns"></a> Vzory pro definice DSL
+## <a name="patterns"></a> Vzory pro definice DSL
  Doporučujeme při vývoji DSL přidáním nebo upravit jednu nebo dvě funkce v čase. Přidat funkci, spustit DSL a otestovat ji a pak přidejte jednu nebo dvě další funkce. Typické funkce tohoto kódu DSL může být:
 
 -   Doménové třídy vkládání vztah, který se připojí prvek modelu, tvar vyžadována k zobrazení prvků této třídy na diagramu. proto nástroj elementu, který umožňuje uživatelům vytvářet prvky.
@@ -149,7 +149,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 > [!NOTE]
 >  "Model" odkazuje na instanci tohoto kódu DSL, která uživatelé vytvářet a obvykle se zobrazí jako diagram. Toto téma popisuje diagramem definice DSL a diagramech modelů, které se zobrazí při použití vašeho DSL.
 
-##  <a name="classes"></a> Definování doménové třídy
+## <a name="classes"></a> Definování doménové třídy
  Doménové třídy představoval pojmy tohoto kódu DSL. Instance jsou *elementům modelu*. Například v **MusicLibrary** DSL může mít doménové třídy s názvem **alba** a **skladby**.
 
  Chcete-li vytvořit doménovou třídou, lze přetáhnout z **doménovou třídu s názvem** nástrojů do diagramu a potom tuto třídu přejmenovat.
@@ -231,7 +231,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 
 7.  **Soubor uložte, zavřete ho a znovu ho otevřete**. Po rozbalení uzlů, by se zobrazovat v Průzkumníkovi, všechny instance, kterou jste vytvořili.
 
-##  <a name="shapes"></a> Definování obrazců v diagramu
+## <a name="shapes"></a> Definování obrazců v diagramu
  Třídy prvků, které se zobrazí v diagramu můžete definovat jako obdélníky, symbol tří teček nebo ikony.
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Chcete-li definovat třídu prvků, které se zobrazí jako tvary v diagramu
@@ -327,7 +327,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 
  Po otestování nejprve tvaru, můžete chtít upravit některé její vlastnosti a přidat některé pokročilejší funkce. Další informace najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-##  <a name="references"></a> Definování referenční stavy
+## <a name="references"></a> Definování referenční stavy
  Můžete definovat vztah odkazu mezi všechny zdrojové doménové třídy a všechny cílové doménové třídy. Referenční stavy se obvykle zobrazují v diagramu jako konektory, které jsou řádky mezi tvary.
 
  Například pokud hudebních alb a umělci se zobrazují jako tvarů v diagramu, můžete definovat relace s názvem ArtistsAppearedOnAlbums, která propojení umělci do alb, na kterých jste pracovali. Podívejte se na příklad na obrázku.
@@ -409,7 +409,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 
  Po otestování nejprve konektor, můžete chtít upravit některé její vlastnosti a přidat některé pokročilejší funkce. Další informace najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-##  <a name="compartments"></a> Definování tvary, které obsahují seznamy: obrazců oddílů
+## <a name="compartments"></a> Definování tvary, které obsahují seznamy: obrazců oddílů
  Obrazec oddílu obsahuje jeden nebo více seznamů položek. Například v Library DSL Hudba, můžete použít obrazců prostoru k reprezentaci Hudba alb. V každé Album je seznam skladeb.
 
  ![Obrazec oddílu](../modeling/media/compartmentshape.png)
@@ -537,7 +537,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 
 7.  Vyberte odkaz nebo položka v obrazce oddílu. Odkaz a položka by měla zmizet.
 
-##  <a name="ports"></a> Definování porty na hranici jiný tvar
+## <a name="ports"></a> Definování porty na hranici jiný tvar
  Port je tvar, který se nachází na hraniční části jiného obrazce.
 
  Porty lze také nabízí bod pevné připojení na jiný tvar, do kterého uživatel můžete nakreslit konektory. V takovém případě můžete nastavit obrazec portu transparentní.
@@ -560,7 +560,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 
  Další informace najdete v tématu [vlastnosti obrazců portů](../modeling/properties-of-port-shapes.md).
 
-##  <a name="swimlanes"></a> Definice DSL, která má plaveckých drah
+## <a name="swimlanes"></a> Definice DSL, která má plaveckých drah
  Plaveckých drah jsou vodorovné nebo svislé rozdělení diagramu. Každý plavecké dráhy odpovídá prvku modelu. Vaše definice DSL vyžaduje jednu doménovou třídu pro prvky plavecké dráhy.
 
  Nejlepší způsob, jak vytvořit DSL pomocí plaveckých drah je vytvořit nové řešení DSL a výběr šablony řešení tok úkolů. V definici DSL je třída Actor doménová třída namapované plavecké dráhy. Přejmenujte tento a jiné třídy tak, aby odpovídala váš projekt.
@@ -571,7 +571,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 
  Další informace najdete v tématu [vlastnosti plaveckých drah](../modeling/properties-of-swimlanes.md).
 
-##  <a name="addTypes"></a> Přidání typů vlastností
+## <a name="addTypes"></a> Přidání typů vlastností
 
 ### <a name="domain-enumerations-and-literals"></a>Výčty domény a literály
  Výčet domén je typ literálu hodnotami.
@@ -587,7 +587,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 
  Přidejte typ, klikněte pravým tlačítkem na kořen modelu v Průzkumník DSL a potom klikněte na tlačítko **přidat novou externí typ**. V okně Vlastnosti nastavte název na **barva** a oboru názvů **System.Drawing**. Tento typ se nyní zobrazí v Průzkumníku DSL v části **typy domén**. Můžete ho pokaždé, když nastavíte typ doménové vlastnosti.
 
-##  <a name="custom"></a> Přizpůsobení DSL
+## <a name="custom"></a> Přizpůsobení DSL
  Pomocí technik popsaných v tomto tématu, můžete rychle vytvořit DSL s graficky zápis, čitelné formě XML a základní nástroje, které jsou nutné ke generování kódu a další artefakty.
 
  Rozšíření definice DSL dvěma způsoby:
@@ -607,7 +607,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 
  Viz také [postupy: Změna Namespace jazyka specifického pro doménu](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-##  <a name="trouble"></a> Řešení potíží
+## <a name="trouble"></a> Řešení potíží
  Následující tabulka uvádí některé z nejběžnějších problémů, které se vyskytují při návrhu DSL, společně s návrhy pro jejich řešení. Další Rady, jak je k dispozici na [vizualizace nástroje Extensibililty fórum](http://go.microsoft.com/fwlink/?LinkId=186074).
 
 |Problém|Návrh|
@@ -619,7 +619,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 |V Průzkumníku pro tento DSL prvky jsou zobrazeny pouze s jejich názvů typů.|V definici DSL vyberte doménovou vlastnost třídy a ve vlastnostech okno, nastavte **je název elementu** na hodnotu true.|
 |Moje DSL vždy otevře v editoru XML.|To může nastat z důvodu chyby při při čtení souboru. Ale i poté, co je opravit tuto chybu, je nutné explicitně obnovit editoru návrháře DSL.<br /><br /> Klikněte pravým tlačítkem na položku projektu, klikněte na tlačítko **otevřít v** a vyberte _YourLanguage_**návrháře (výchozí)**.|
 |Panel nástrojů DSL, své nezobrazuje po změně názvy sestavení.|Zkontrolovat a aktualizovat **DslPackage\GeneratedCode\Package.tt** Další informace najdete v tématu [postupy: Změna Namespace jazyka specifického pro doménu](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|
-|Nástrojů DSL, své nezobrazí, ale I nedošlo ke změně názvu sestavení.<br /><br /> Nebo se zobrazí okno se zprávou, vytváření sestav selhání při načítání rozšíření.|Resetovat experimentální instanci a znovu sestavte své řešení.<br /><br /> 1.  V Windows nabídky Start, v části **všechny programy**, rozbalte [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], pak **nástroje**a potom klikněte na tlačítko **resetování Microsoft Visual Studio experimentální instanci aplikace**.<br />2.  V sadě Visual Studio**sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.|
+|Nástrojů DSL, své nezobrazí, ale I nedošlo ke změně názvu sestavení.<br /><br /> Nebo se zobrazí okno se zprávou, vytváření sestav selhání při načítání rozšíření.|Resetovat experimentální instanci a znovu sestavte své řešení.<br /><br /> 1.  V Windows nabídky Start, v části **všechny programy**, rozbalte [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], pak **nástroje**a potom klikněte na tlačítko **resetování Microsoft Visual Studio experimentální instanci aplikace**.<br />2.  Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.|
 
 ## <a name="see-also"></a>Viz také
 

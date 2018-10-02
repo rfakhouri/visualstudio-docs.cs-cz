@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1eb8492a1f4432eb54e7333eb59cd14eb06335b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b4ab0a7cf012d2230437bceb96da80c78a4b493a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176808"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858495"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generování a konfigurace aplikace z modelů
 Můžete vytvořit nebo nakonfigurovat částí aplikace z modelu.
@@ -22,7 +22,7 @@ Můžete vytvořit nebo nakonfigurovat částí aplikace z modelu.
  Model představuje požadavky přímo do kódu. Odvozením chování aplikace přímo z modelu můžete reagovat na změny požadavky mnohem rychleji a spolehlivěji než podle aktualizací kódu. I když některé počáteční pracovní je nutné nastavit odvození, tyto investice je vrácena, pokud očekáváte, že změny v požadavcích, nebo pokud plánujete udělat několik variant produktu.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generování kódu vaší aplikace z modelu
- Nejjednodušší způsob, jak generovat kód je pomocí textových šablon. Kód lze generovat ve stejném [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení, ve kterém můžete zachovat modelu. Další informace naleznete v tématu:
+ Nejjednodušší způsob, jak generovat kód je pomocí textových šablon. Generování kódu ve stejném řešení sady Visual Studio, ve kterém můžete zachovat modelu. Další informace naleznete v tématu:
 
 -   [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 

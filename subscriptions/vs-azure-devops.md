@@ -1,45 +1,45 @@
 ---
-title: Azure DevOps služby výhody pro předplatitele Visual Studia | Dokumentace Microsoftu
+title: Azure DevOps výhody pro předplatitele Visual Studia | Dokumentace Microsoftu
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/15/2018
 ms.topic: Get-Started-Article
-description: Zjistěte, jak můžete Azure DevOps služby jako předplatitel sady Visual Studio.
+description: Zjistěte, jak můžete Azure DevOps jako předplatitel sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9338eb584f16fac78d18991e5137b1ef8f3f56e0
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 34a6f601eb3ad78cb4c34af1807e66b7e7d6058e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44293473"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859962"
 ---
-# <a name="azure-devops-services-benefits-for-visual-studio-subscribers"></a>Azure DevOps služby výhody pro předplatitele sady Visual Studio
+# <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps výhody pro předplatitele sady Visual Studio
 
-Jako aktivní předplatitelé sady Visual Studio můžete použít celou řadu funkcí ve službě Azure DevOps Services, které jsou součástí vašeho předplatného jako výhoda. Budete moct používat tyto stejné funkce v každém účtu služby Azure DevOps, ve kterém jste členem, ať už jste vytvořili účet, nebo se přidal někdo jiný.
+Jako aktivní předplatitelé sady Visual Studio můžete použít celou řadu funkcí v Azure DevOps, které jsou součástí vašeho předplatného jako výhoda. Budete moct používat tyto stejné funkce v každé organizaci Azure DevOps, ve kterém jste členem, ať už jste vytvořili organizaci nebo se přidal někdo jiný.
 
-Při přihlášení ke službám Azure DevOps pomocí identity, který jste použili pro aktivaci předplatného sady Visual Studio nebo vaše [alternativní identity](vs-alternate-identity.md), to jsme automaticky rozpoznat.
+Při přihlášení k Azure DevOps pomocí identity, který jste použili pro aktivaci předplatného sady Visual Studio nebo vaše [alternativní identity](vs-alternate-identity.md), to jsme automaticky rozpoznat.
 
-[Zaregistrujte si bezplatný účet služby Azure DevOps](https://visualstudio.microsoft.com/team-services/)
+[Zaregistrujte si bezplatnou organizace Azure DevOps](https://visualstudio.microsoft.com/team-services/)
 
 ## <a name="eligibility"></a>Způsobilost
 
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové, měsíčních cloudových)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup>, FTE  | Úroveň Basic, nástroje Test Manager, Package Management, v místním prostředí CI/CD       |  Ano          |
-| Visual Studio Professional (standardní a roční cloudové, měsíčních cloudových) | VL, Azure, maloobchodní prodej                                        | Základní                                                            |  Ano          |
-| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Basic, nástroje Test Manager                                              |  Ano          |
-| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Basic, nástroje Test Manager                                              |  Ano          |
+| Visual Studio Enterprise (standardní a roční cloudové, měsíčních cloudových)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup>, FTE  | Azure panely & úložišť (Basic), kanály Azure testovací plány, artefaktů Azure, Azure (v místním prostředí)       |  Ano          |
+| Visual Studio Professional (standardní a roční cloudové, měsíčních cloudových) | VL, Azure, maloobchodní prodej                                        | Azure panely & úložišť (Basic)                                                            |  Ano          |
+| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Azure panely & úložišť (Basic), Azure testovacích plánů                                              |  Ano          |
+| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Azure panely & úložišť (Basic), Azure testovacích plánů                                              |  Ano          |
 
 <sup>1</sup>*zahrnuje: není pro prodej (NFR), Microsoft s hodnotou partnera (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & služby pro vývojáře.   Vyloučí: MCT Software & Services, Imagine.*
 
-Další informace o funkcích služby Azure DevOps:
+Další informace o funkcích Azure DevOps:
 
-- [Základy](https://visualstudio.microsoft.com/team-services/compare-features/)
-- [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-- [Správa balíčků](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+- [Azure panely & úložišť (Basic)](https://visualstudio.microsoft.com/team-services/compare-features/)
+- [Plány testování v Azure](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+- [Azure artefaktů](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, které jsou vám přiřazeny.
 Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.

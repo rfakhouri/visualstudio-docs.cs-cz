@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: bc9d9e65cc893780c6b64dfd281d8db51fb5cce9
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 09bfb2e1a17a4832f4afa4f432e4232ce6845323
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566580"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859793"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Návod: Vytvoření kódu pomocí textových šablon
 
@@ -30,7 +30,7 @@ Obor názvů System.Xml poskytuje k dispozici komplexní nástroje pro načítá
 V tomto příkladu projektu šablona načte ukázkový soubor XML a vygeneruje třídy, které odpovídají každého typu uzlu. V kódu ručně psanou můžete použít tyto třídy pro navigaci souboru XML. Aplikace můžete použít také u jiných souborů, které používají stejné typy uzlů. Účelem ukázkový soubor XML je poskytnout příklady, všechny typy uzlů, které chcete, aby se vaše aplikace.
 
 > [!NOTE]
-> Aplikace [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), který je součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], můžete ze souborů XML vygenerovat třídy silného typu. Jako příklad je k dispozici šablona je vidět tady.
+> Aplikace [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), který je součástí sady Visual Studio, můžete vygenerovat typově silných tříd ze souborů XML. Jako příklad je k dispozici šablona je vidět tady.
 
 Tady je ukázkový soubor:
 
@@ -142,7 +142,7 @@ Přidejte soubor textové šablony a nastavte výstup rozšíření na *.cs*.
 
 3.  V souboru v direktivě šablony změnit `hostspecific` atribut `true`.
 
-     Tato změna vám umožní kód šablony pro získání přístupu k [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] služby.
+     Tato změna vám umožní kód šablony, abyste získali přístup ke službám Visual Studio.
 
 4.  V direktivě output změňte atribut rozšíření "cs" tak, aby tato šablona vygeneruje soubor jazyka C#. V projektu jazyka Visual Basic by ho změňte na "VB".
 
@@ -272,7 +272,7 @@ Další podrobnosti, jako je například vlastnosti podřízené uzly, atributy 
 
 ### <a name="access-the-visual-studio-api"></a>Přístup k rozhraní API sady Visual Studio
 
-Nastavení `hostspecific` atribut `<#@template#>` – direktiva umožňuje získat přístup k šabloně [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozhraní API. Šablona může být využit k získání umístění souborů projektu, abyste se vyhnuli použití absolutní cestu k souboru v kódu šablony.
+Nastavení `hostspecific` atribut `<#@template#>` – direktiva umožňuje šablonu, kterou chcete získat přístup k rozhraní API sady Visual Studio. Šablona může být využit k získání umístění souborů projektu, abyste se vyhnuli použití absolutní cestu k souboru v kódu šablony.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>

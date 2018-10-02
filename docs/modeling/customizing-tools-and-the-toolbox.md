@@ -15,18 +15,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cbdbfa2ffe94bf6ad287caeb5cbadb42b64c0d10
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c7c526c9e5f850ea71a1e31ea0364fcb19a2bcb5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512467"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860436"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Přizpůsobení nástrojů a panelu nástrojů
 
 Je nutné definovat položky panelu nástrojů pro prvky, které chcete umožnit uživatelům, přidejte do své modely. Existují dva typy nástrojů: element nástroje a nástroje pro připojení. Uživatel ve vygenerovaném návrháři, můžete vybrat nástroj elementu přetáhněte do diagramu tvary a můžete vybrat nástroj pro připojení k vykreslení odkazů mezi tvary. Obecně platí nástrojů elementu umožňují uživatelům přidat instance třídy domény jejich modelů a nástroje pro připojení umožnit jim přidat instance vztahů domény.
 
-##  <a name="ToolboxDef"></a> Jak je definované sady nástrojů
+## <a name="ToolboxDef"></a> Jak je definované sady nástrojů
  V okně Průzkumník DSL rozbalte Editor uzlů a uzlů pod ním. Obvykle se zobrazí hierarchie, která vypadá takto:
 
 ```
@@ -77,11 +77,11 @@ V této části Průzkumník DSL můžete:
 
      **Pro nástroj konektor:** nastavit **Tvůrce připojení** vlastnost nástroje pro jednu z položek, které nabízí v rozevíracím seznamu. Tvůrci připojení se automaticky vytvoří při mapování spojnici na doménový vztah. Pokud jste nedávno vytvořili konektor, obvykle vyberete Tvůrce asociované připojení.
 
-5.  Chcete-li otestovat DSL, stiskněte klávesu F5 nebo CTRL + F5 a v experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otevřete ukázkový soubor modelu. Nový nástroj by se zobrazit na panelu nástrojů. Přetáhněte do diagramu, ověřte, že vytvoří nový prvek.
+5.  K otestování DSL, stiskněte klávesu F5 nebo CTRL + F5 a v experimentální instanci sady Visual Studio, otevřete ukázkový soubor modelu. Nový nástroj by se zobrazit na panelu nástrojů. Přetáhněte do diagramu, ověřte, že vytvoří nový prvek.
 
-     Pokud nástroj nezobrazí, ukončete experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. V Windows **Start** nabídky, spusťte **resetování Microsoft Visual Studio 2010 experimentální instanci**. Na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**. Potom znovu otestujte DSL.
+     Pokud nástroj nezobrazí, zastavte experimentální Visual Studio. V Windows **Start** nabídky, spusťte **resetování Microsoft Visual Studio 2010 experimentální instanci**. Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**. Potom znovu otestujte DSL.
 
-##  <a name="customizing"></a> Přizpůsobení nástrojů elementu
+## <a name="customizing"></a> Přizpůsobení nástrojů elementu
  Ve výchozím nastavení nástroj vytvoří jednu instanci dané třídy, ale to se může pohybovat dvěma způsoby:
 
 -   Definujte direktivy sloučení elementů pro jiné třídy, což jim tak, aby přijímal nové instance této třídy a umožnit jim vytvořit další odkazy, když se vytvoří nový prvek. Může například uživateli umožní vyřadit komentář na jiný element a tím vytvořit odkaz mezi těmito dvěma.
@@ -92,7 +92,7 @@ V této části Průzkumník DSL můžete:
 
 -   Zápis kódu pro úpravu nástroje, takže ho můžete vytvořit skupiny prvků. Nástroj je inicializován pomocí metody v ToolboxHelper.cs, které můžete přepsat. Další informace najdete v tématu [vytváření skupin z prvků z nástroje](#groups).
 
-##  <a name="groups"></a> Vytvoření skupiny prvků z nástroje
+## <a name="groups"></a> Vytvoření skupiny prvků z nástroje
  Nástroj pro každý prvek obsahuje prototyp prvky, které se má vytvořit. Ve výchozím nastavení nástroj pro každý element vytvoří jeden element, ale je také možné vytvořit pomocí jednoho nástroje skupiny souvisejících objektů. K tomuto účelu nástroj s inicializaci <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> , který obsahuje související položky.
 
  Následující příklad je převzat z DSL, ve kterém je typ tranzistorové. Každý tranzistorové má tři pojmenované terminály. Nástroj elementu pro tranzistory ukládá prototypem obsahující čtyři prvků modelu a tři vztah odkazy. Když uživatel přetáhne nástroj do diagramu, prototyp vytvořena a propojí s kořenem modelu.
@@ -142,7 +142,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ```
 
-##  <a name="connections"></a> Přizpůsobení nástrojů pro připojení
+## <a name="connections"></a> Přizpůsobení nástrojů pro připojení
  Obvykle vytvoříte nástroj pro element když vytvoříte novou třídu konektoru. Alternativně můžete použít přetížení jeden nástroj pro tím, že typy dva elementy end určit typ vztahu. Můžete například definovat jeden nástroj pro připojení, která může vytvářet vztahy osoba na osobu a vztahy osoba města.
 
  Připojení nástroje vyvolat tvůrci připojení. Tvůrci připojení použijte k určení, jak uživatele můžete propojit prvky ve vygenerovaném návrháři. Tvůrci připojení zadejte prvky, které lze propojit a typu odkazu, který je vytvořen mezi nimi.

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d700be4cec30bf27dc826b220a1e318cdcd14c99
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2b9378f64bce3c1da95120b6456767f12b34d379
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028946"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859562"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Vytvoření offline instalace sady Visual Studio 2017
 
@@ -60,6 +60,9 @@ Začněte tím, že stažení zaváděcího nástroje Visual Studio pro vaši zv
 ### <a name="step-2---create-a-local-install-cache"></a>Krok 2: vytvoření mezipaměti místní instalace
 
 Musíte mít internetové připojení k dokončení tohoto kroku.
+
+> [!IMPORTANT]
+> Pokud nainstalujete Visual Studio Community 2017, musíte ji aktivovat do 30 dní od instalace. To vyžaduje připojení k Internetu.
 
 Otevřete příkazový řádek a použijte jeden z příkazů z následujících příkladů. Příklady, které jsou zde uvedeny předpokládají, že používáte komunitní edice sady Visual Studio; Upravte příkaz v závislosti na edici.
 

@@ -9,16 +9,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 74e4f806c6f2faeeddfc2cc13917a6b5275b1b48
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 260a1fdb78f1a9acf72a9789f12d7024cafe0c93
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566626"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859195"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Postupy: Přidání obslužné rutiny operace přetažení myší
 
-DSL, můžete přidat obslužné rutiny události přetažení myší, tak, aby uživatelé můžete přetáhnout položky do diagramu z jiných diagramů nebo z jiných částí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Můžete také přidat obslužné rutiny pro události, jako poklikáním. Společně se nazývají přetahování myší a dvakrát klikněte na obslužné rutiny *obslužné rutiny gesta*.
+Přidáte obslužné rutiny pro přetažení myší události do vašeho DSL tak, aby uživatelé můžete přetáhnout položky do diagramu z jiných diagramů nebo z jiných částí sady Visual Studio. Můžete také přidat obslužné rutiny pro události, jako poklikáním. Společně se nazývají přetahování myší a dvakrát klikněte na obslužné rutiny *obslužné rutiny gesta*.
 
 Toto téma popisuje gesta přetažení myší, které pocházejí na jiných diagramů. Pro přesun a kopírování události v rámci jednoho diagramu, vezměte v úvahu alternativní definice podtřída `ElementOperations`. Další informace najdete v tématu [přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md). Také je možné přizpůsobit definici DSL.
 

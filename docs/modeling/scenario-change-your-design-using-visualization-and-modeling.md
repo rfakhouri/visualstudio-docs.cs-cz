@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: c7a79ddd1644103d3e60f42c909706f2a3d771e9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371092"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860508"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 
@@ -112,7 +112,7 @@ Oba týmy používají ověřování závislostí také aby se zajistilo, že k�
 - [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> Některé verze sady Visual Studio podporují ověřování závislostí a map kódu verze jen pro čtení pro vizualizaci a modelování. Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+> Některé verze sady Visual Studio podporují ověřování závislostí a map kódu verze jen pro čtení pro vizualizaci a modelování. Chcete-li zjistit, jaké edice sady Visual Studio podporují tuto funkci, přečtěte si téma [podpora edice nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="understand-and-communicate-information-about-the-system"></a>Pochopení a sdělování informací o systému
 
@@ -169,12 +169,12 @@ Společnost dinner Now musí odhadnout náklady na splnění nového požadavku.
 |------------------|-------------------|
 |*Diagram třídy založený na kódu*<br /><br /> Zobrazit [postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Existující třídy v kódu.|
 
-###  <a name="ValidatingCode"></a> Udržujte kód v souladu s návrhem
+### <a name="ValidatingCode"></a> Udržujte kód v souladu s návrhem
  Společnost dinner Now musí zajistit, že aktualizovaný kód zůstane konzistentní s návrhem. Vytvářejí diagramy závislostí, které popisují vrstvy funkčnosti v systému, určují povolené závislosti mezi nimi a přidružují řešení artefakty k těmto vrstvám.
 
 |**Diagram**|**Popisuje**|
 |-----------------|-------------------|
-|*Diagram závislostí*<br /><br /> Další informace:<br /><br /> - [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy závislostí: referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />- [Diagramy závislostí: pokyny](../modeling/layer-diagrams-guidelines.md)<br />- [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)|Logická architektura kódu.<br /><br /> Závislost diagram organizuje a mapuje artefakty v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení účelem abstrahování skupin nazvaných *vrstvy*. Tyto vrstvy určují role, úlohy nebo funkce, které tyto artefakty provádějí v systému.<br /><br /> Diagramy vrstev jsou užitečné pro popis zamýšleného návrhu systému a ověřování vyvíjeného kódu ve srovnání s tímto návrhem.<br /><br /> Chcete-li vytvořit vrstvy, přetáhněte položky z Průzkumníku řešení, map kódu, zobrazení tříd a prohlížeče objektů. Chcete-li nakreslit nové vrstvy, použijte panel nástrojů nebo kliknutím pravým tlačítkem na plochu diagramu.<br /><br /> Chcete-li zobrazit existující závislosti, klikněte pravým tlačítkem na plochu diagramu a potom klikněte na tlačítko **generovat závislosti**. K určení zamýšlených závislostí, nakreslete nové závislosti.|
+|*Diagram závislostí*<br /><br /> Další informace:<br /><br /> - [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy závislostí: referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />- [Diagramy závislostí: pokyny](../modeling/layer-diagrams-guidelines.md)<br />- [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)|Logická architektura kódu.<br /><br /> Závislost diagram organizuje a mapuje artefakty v řešení sady Visual Studio účelem abstrahování skupin nazvaných *vrstvy*. Tyto vrstvy určují role, úlohy nebo funkce, které tyto artefakty provádějí v systému.<br /><br /> Diagramy vrstev jsou užitečné pro popis zamýšleného návrhu systému a ověřování vyvíjeného kódu ve srovnání s tímto návrhem.<br /><br /> Chcete-li vytvořit vrstvy, přetáhněte položky z Průzkumníku řešení, map kódu, zobrazení tříd a prohlížeče objektů. Chcete-li nakreslit nové vrstvy, použijte panel nástrojů nebo kliknutím pravým tlačítkem na plochu diagramu.<br /><br /> Chcete-li zobrazit existující závislosti, klikněte pravým tlačítkem na plochu diagramu a potom klikněte na tlačítko **generovat závislosti**. K určení zamýšlených závislostí, nakreslete nové závislosti.|
 
  Například následující diagram závislostí popisuje závislosti mezi vrstvami a počet artefaktů, které jsou spojené s každou vrstvou:
 
@@ -224,7 +224,7 @@ Další informace:
 
 ### <a name="TestValidateCheckInCode"></a> Testování, ověřování a vrácení kódu se změnami
 
-Jak týmy dokončují jednotlivé úkoly, vraťte jejich kód do správy verzí Team Foundation a přijměte připomenutí z Team Foundation Server, v případě, že zapomenete. Předtím, než Team Foundation Server přijme jejich vrácení se změnami, týmy spustí jednotkové testy a ověřování závislostí k ověření kódu proti testovacím případům a návrhu. Používají Team Foundation Server pro sestavení, spouštět automatizované testy jednotky a pravidelně ověřování závislostí. To pomáhá se ujistit, že kód splňuje následující kritéria:
+Jak týmy dokončují jednotlivé úkoly, vraťte jejich kód do správy zdrojového kódu a přijměte připomenutí z Team Foundation Server, v případě, že zapomenete. Předtím, než Team Foundation Server přijme jejich vrácení se změnami, týmy spustí jednotkové testy a ověřování závislostí k ověření kódu proti testovacím případům a návrhu. Používají Team Foundation Server pro sestavení, spouštět automatizované testy jednotky a pravidelně ověřování závislostí. To pomáhá se ujistit, že kód splňuje následující kritéria:
 
 - To funguje.
 

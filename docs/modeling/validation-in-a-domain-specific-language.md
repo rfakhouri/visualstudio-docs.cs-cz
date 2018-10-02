@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5562ed74de4dd1c7068fabef4f67fdc421ee03d6
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 22290b9a65e512ba897641b076d74927aee712c0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381856"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860131"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Ověřování v jazyce specifickém pro doménu
 Jako autoři jazyka specifického pro doménu (DSL) můžete definovat omezení ověření můžete ověřit, že model vytvořený uživatelem smysluplné. Například pokud vaše DSL umožňuje uživatelům nakreslit řady strom osoby a jejich předchůdci, můžete napsat omezení, které zajišťuje, že mají podřízené položky data narození po jejich nadřazených objektů.
@@ -239,7 +239,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>Spuštění ověření v případě, že dojde ke změně
  Pokud chcete, aby se zajistilo, že uživatel je-li modelu stává neplatným okamžitě upozornění, můžete definovat událost úložiště, která spustí ověřování. Další informace o události v úložišti, najdete v části [obslužné rutiny rozšíření změny mimo the Model událostí](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Kromě kód pro ověření, přidejte soubor vlastní kód na vaši **DslPackage** projektu s obsahem, podobně jako v následujícím příkladu. Tento kód používá `ValidationController` , který je připojený k tomuto dokumentu. Tento řadič se zobrazí chyby ověření v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] seznamu chyb.
+ Kromě kód pro ověření, přidejte soubor vlastní kód na vaši **DslPackage** projektu s obsahem, podobně jako v následujícím příkladu. Tento kód používá `ValidationController` , který je připojený k tomuto dokumentu. Tento řadič se zobrazí chyby ověření v seznamu chyb sady Visual Studio.
 
 ```csharp
 using System;
@@ -302,7 +302,7 @@ namespace Company.FamilyTree
 
  Obslužné rutiny se také označují jako po vrácení zpět nebo opakování operace, které ovlivňují odkazy nebo elementy.
 
-##  <a name="custom"></a> Vlastní ověřovací kategorie
+## <a name="custom"></a> Vlastní ověřovací kategorie
  Kromě standardní ověřovací kategorie, jako je například nabídka a otevřít můžete definovat vlastní kategorie. Můžete vyvolat tyto kategorie z programového kódu. Uživatel nemůže je vyvolat přímo.
 
  Typické použití pro vlastní kategorie je definovat kategorie, která ověřuje, zda model splňuje předpoklady konkrétní nástroj.
@@ -330,7 +330,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");
 ```
 
-##  <a name="alternatives"></a> Alternativy k ověření
+## <a name="alternatives"></a> Alternativy k ověření
  Omezení ověření zprávy o chybách, ale neměňte modelu. Pokud místo toho chcete zabránit modelu stává neplatný, můžete použít jiné techniky.
 
  Tyto postupy se však nedoporučuje. Je obvykle vhodnější nechat uživatele rozhodnout, jak chybu opravit modelu je neplatný.

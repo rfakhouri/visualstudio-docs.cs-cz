@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d1b0bac434ad7a182dc56ac08173646068623bd
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 31eb949588353a6f2f11ddbbdf516d1a5da63488
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547542"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859729"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Použijte události, kde je to vhodné
 |||
@@ -45,10 +45,10 @@ ms.locfileid: "45547542"
 ## <a name="rule-description"></a>Popis pravidla
  Toto pravidlo zjišťuje metody, které mají názvy obvykle používané pro události. Události podle návrhový vzor pozorovatel nebo publikování a odběru; používají se při změně stavu do jednoho objektu musí sdělí další objekty. Pokud metoda volána jako odpověď jednoznačně definovanou změnu stavu, by měl vyvolat metodu obslužné rutiny události. Objekty volající tuto metodu by měly místo přímého volání metody vyvolat událost.
 
- Některé běžné příklady událostí, které se nacházejí v uživatelských rozhraní aplikací, kde způsobí, že akce uživatele, jako je kliknutí na tlačítko segment kódu k provedení. [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Model událostí není omezena pouze na uživatelské rozhraní, měla by se používat kdekoli musí komunikovat, stav se změní na jeden nebo více objektů.
+ Některé běžné příklady událostí, které se nacházejí v uživatelských rozhraní aplikací, kde způsobí, že akce uživatele, jako je kliknutí na tlačítko segment kódu k provedení. Model události rozhraní .NET Framework není omezena pouze na uživatelské rozhraní; ji by měl být použít všude, kde musí komunikovat, že se stav změní na jeden nebo více objektů.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Pokud metoda je volána při změně stavu objektu, měli byste zvážit změnu návrhu a použít [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] model událostí.
+ Pokud metoda je volána při změně stavu objektu, měli byste zvážit změnu návrhu a použít model události rozhraní .NET Framework.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Potlačit upozornění tohoto pravidla, pokud metoda nefunguje s [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] model událostí.
+ Potlačit upozornění tohoto pravidla, pokud metoda nefunguje s modelem události rozhraní .NET Framework.
