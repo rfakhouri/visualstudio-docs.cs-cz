@@ -198,9 +198,9 @@ Následující kroky postupu tok ověřování a popisují součástí projektu,
 
 1. Když jste hotovi, server zastavit a znovu potvrďte změny do správy zdrojového kódu.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Otázka: Co je účelem {% crsf_token %} značek, které se zobrazí v \<formuláře\> elementy?
+### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Otázka: Co je účelem {% csrf_token %} značek, které se zobrazí v \<formuláře\> elementy?
 
-Odpověď: `{% crsf_token %}` značka zahrnuje integrované v Django [webů ochranu proti padělání (crsf) žádost o](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs). Obvykle přidáte tuto značku na libovolný element, který zahrnuje POST, PUT nebo DELETE požadavek metody, jako je například formulář. Funkce šablony vykreslování (`render`) pak vloží nezbytné ochrany.
+Odpověď: `{% csrf_token %}` značka zahrnuje integrované v Django [webů ochranu proti padělání (csrf) žádost o](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs). Obvykle přidáte tuto značku na libovolný element, který zahrnuje POST, PUT nebo DELETE požadavek metody, jako je například formulář. Funkce šablony vykreslování (`render`) pak vloží nezbytné ochrany.
 
 ## <a name="next-steps"></a>Další kroky
 
