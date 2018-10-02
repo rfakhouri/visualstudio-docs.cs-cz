@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2e5e2ee79d72d398ac72d3d087156c296aa9e7b2
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 05339a2bdc176fd44c93c744162a299809762a2e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567210"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860288"
 ---
 # <a name="understanding-the-dsl-code"></a>Porozumění kódu DSL
-Řešení jazyka specifického pro doménu (DSL), vygeneruje rozhraní API, které můžete použít ke čtení a aktualizovat instance DSL v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Toto rozhraní API je definováno v kódu, který je generován z definici DSL. Toto téma popisuje generovaného rozhraní API.
+Řešení jazyka specifického pro doménu (DSL), vygeneruje rozhraní API, které můžete použít ke čtení a aktualizovat instance DSL v sadě Visual Studio. Toto rozhraní API je definováno v kódu, který je generován z definici DSL. Toto téma popisuje generovaného rozhraní API.
 
 ## <a name="the-example-solution-component-diagrams"></a>Ukázkové řešení: diagramy komponent
  Při vytváření řešení, které je zdrojem většina příkladů v tomto tématu Vytvoření DSL z **komponenty modely** šablonu řešení. Toto je jeden standardní šablony, které se zobrazí, když vytvoříte nové řešení DSL.
@@ -32,7 +32,7 @@ ms.locfileid: "39567210"
  ![Komponenty a propojených porty](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Struktura řešení DSL
- **Dsl** projekt definuje rozhraní API pro vašeho DSL. **DslPackage** projektu definuje, jak se integruje s [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Můžete také přidat svoje vlastní projekty, které mohou také obsahovat kód generovaný z modelu.
+ **Dsl** projekt definuje rozhraní API pro vašeho DSL. **DslPackage** projektu definuje, jak se integruje s Visual Studio. Můžete také přidat svoje vlastní projekty, které mohou také obsahovat kód generovaný z modelu.
 
 ### <a name="the-code-directories"></a>Adresáře kódu.
  Většinu kódu v každé z těchto projektů se generuje z **Dsl\DslDefinition.dsl**. Generovaný kód je v **kód generovaný** složky. Vygenerovaný soubor zobrazíte kliknutím **[+]** vedle generování **.tt** souboru.
@@ -53,7 +53,7 @@ ms.locfileid: "39567210"
 
      Pokud nastavíte například **má vlastní konstruktor** možnost doménové třídy a začnete vytvářet řešení, zobrazí se chybové zprávy. Když dvakrát kliknete na jednu z těchto chybových zpráv, zobrazí se poznámky v generovaném kódu, které popisují, co by měly poskytnout vlastní kód.
 
--   Zápis textové šablony pro generování kódu, které jsou specifické pro vaši aplikaci. Vám může zahrnovat použití souborů sdílet části šablony, které jsou společné pro mnoho projektů, a můžete vytvořit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] šablony nastavit projekty, které jsou inicializovány pomocí strukturu souboru projektu.
+-   Zápis textové šablony pro generování kódu, které jsou specifické pro vaši aplikaci. Vám může zahrnovat použití souborů sdílet části šablony, které jsou společné pro mnoho projektů, a můžete vytvořit šablony projektů Visual Studio k nastavení projektů, které jsou inicializovány pomocí strukturu souboru.
 
 ## <a name="generated-files-in-dsl"></a>Generované soubory v Dsl
  Tyto vygenerované soubory se zobrazí v **Dsl** projektu.
@@ -185,10 +185,10 @@ ms.locfileid: "39567210"
 
  Nastaví panelu nainstalováním prvek skupiny prototypy do nástrojů elementu. Kopie těchto prototypů jsou sloučeny s cílových elementů, když uživatel spustí nástroj.
 
- Může přepsat `CreateElementPrototype()` definovat položku sady nástrojů, který vytvoří skupiny několika objektů. Můžete například definovat položku k reprezentaci objektů, které mají dílčí komponenty. Po změně kódu, resetovat experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vymazat mezipaměť sady nástrojů.
+ Může přepsat `CreateElementPrototype()` definovat položku sady nástrojů, který vytvoří skupiny několika objektů. Můžete například definovat položku k reprezentaci objektů, které mají dílčí komponenty. Po změně kódu, resetujte experimentální instanci sady Visual Studio a vymažte mezipaměť sady nástrojů.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>Generované soubory v projektu DslPackage
- Páry DslPackage v odstupu modelu DSL, který má [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prostředí, Správa oken, nástrojů a nabídky příkazů. Většina tříd jsou double odvozena, tak, aby jejich metod můžete přepsat.
+ DslPackage páry v odstupu modelu DSL do prostředí nástroje Visual Studio, Správa oken, nástrojů a nabídky příkazů. Většina tříd jsou double odvozena, tak, aby jejich metod můžete přepsat.
 
  `CommandSet.cs`
 
@@ -279,7 +279,7 @@ namespace Company.EmbedInForm
 
  `EditorFactory.cs`
 
- Vytvoří instanci `DocData` a `DocView`. Splňuje standard rozhraní, která [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] používá k otevření editoru při spuštění balíčku DSL. Je odkazováno v `ProvideEditorFactory` atribut v Package.cs
+ Vytvoří instanci `DocData` a `DocView`. Vyřizuje standardní rozhraní, které Visual Studio používá k otevření editoru při spuštění balíčku DSL. Je odkazováno v `ProvideEditorFactory` atribut v Package.cs
 
  `GeneratedVSCT.vsct`
 
@@ -335,7 +335,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  `Package.cs`
 
- Tento soubor definuje, jak DSL integruje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Atributy ve třídě balíčku zaregistrujte DSL jako popisovač pro soubory, které vaše rozšíření souboru, definovat jeho nástrojů a definovat, jak otevřít nové okno. Je volána metoda Initialize() jednou při prvním DSL nahrán [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instance.
+ Tento soubor definuje, jak se integruje do sady Visual Studio DSL. Atributy ve třídě balíčku zaregistrujte DSL jako popisovač pro soubory, které vaše rozšíření souboru, definovat jeho nástrojů a definovat, jak otevřít nové okno. Metoda Initialize() se volá jednou při prvním DSL je načten do instance sady Visual Studio.
 
  `Source.extension.vsixmanifest`
 

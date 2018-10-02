@@ -12,18 +12,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: fd0930445ef409f27f87658a249f9c89aac22e91
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d26c66b6bcbab2eafe2ae8b01597ef09985dcfa8
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567061"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858649"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Ladění pomocí Prohlížeče ukládání
 Pomocí prohlížeče Store můžete zkontrolovat stav *ukládání* používané [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Prohlížeč Store zobrazí všechny elementy modelu domény, které jsou v konkrétní úložiště, společně s vlastností elementů a propojení mezi elementy.
 
 ## <a name="opening-store-viewer"></a>Store otevírací prohlížeče
- Pokud pracujete s [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] experimentální sestavení, zastavte kódu na zarážce, kde instance úložiště obsahuje informace o modelu. Potom otevřete prohlížeč Store tak, že zadáte následující příkaz v **okamžité** okno:
+ Pokud pracujete s experimentální sestavení sady Visual Studio, zastavte kódu na zarážce, kde instance úložiště obsahuje informace o modelu. Potom otevřete prohlížeč Store tak, že zadáte následující příkaz v **okamžité** okno:
 
 ```csharp
 Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);

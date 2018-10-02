@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 03d6d4550442c81325a8e67f8d96e52e7655dc09
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0bd6c2c2ebad1526a06cccdffef38936d201fc0b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566548"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860417"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Postupy: Otevření modelu ze souboru v kódu programu
 DSL modely můžete otevřít v libovolné aplikaci.
 
- Z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření, ModelBus můžete použít pro tento účel. ModelBus poskytuje standardní mechanismus pro odkazování na modelu nebo prvky v modelu a pro vyhledání modelu, pokud se přesunula. Další informace najdete v tématu [integrace modelů pomocí Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+ Z rozšíření sady Visual Studio můžete použít pro tento účel ModelBus. ModelBus poskytuje standardní mechanismus pro odkazování na modelu nebo prvky v modelu a pro vyhledání modelu, pokud se přesunula. Další informace najdete v tématu [integrace modelů pomocí Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
 ## <a name="target-framework"></a>Cílová architektura
  Nastavte **Cílová architektura** projektu aplikace pro **rozhraní .NET Framework 4**.
 
 #### <a name="to-set-the-target-framework"></a>Chcete-li nastavit cílové rozhraní
 
-1.  Otevřít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekt pro aplikaci, ve kterém chcete číst modelu DSL.
+1.  Otevřete projekt sady Visual Studio pro aplikace, ve kterém chcete číst modelu DSL.
 
 2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a potom klikněte na tlačítko **vlastnosti**.
 
@@ -36,7 +36,7 @@ DSL modely můžete otevřít v libovolné aplikaci.
 >  Můžete potřebovat k tomu i v případě, že jste vybrali **rozhraní .NET Framework 4** v dialogovém okně vytvoření projektu. Cílová architektura, která by neměla být **rozhraní .NET Framework 4 Client Profile**.
 
 ## <a name="references"></a>Odkazy
- Je nutné přidat tyto odkazy na vaše [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekt aplikace:
+ Je nutné přidat tyto odkazy do projektu aplikace Visual Studio:
 
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 

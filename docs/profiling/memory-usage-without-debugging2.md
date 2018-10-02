@@ -1,7 +1,7 @@
 ---
 title: Analýza využití paměti bez ladicího programu VS | Dokumentace Microsoftu
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1b19b0c8371cc4f3b496255e37f06f7b1cbc1fa9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676085"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859871"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analýza využití paměti bez ladicího programu sady Visual Studio
 Můžete použít **využití paměti** nástroje bez ladění můžete provádět následující  
@@ -30,7 +30,7 @@ Můžete použít **využití paměti** nástroje bez ladění můžete provád�
   
 -   Porovnejte snímky k nalezení původní příčiny problémů s pamětí.  
   
- Toto téma popisuje, jak pomocí nástroje využití paměti pro analýzu aplikace UPW XAML. Pokud chcete analyzovat využití paměti v aplikaci pro UPW, která používá JavaScript a HTML naleznete v tématu [analýza využití paměti (JavaScript)](../profiling/javascript-memory.md).  
+ V současné době k měření využití paměti pro aplikace .NET Core, musíte použít nástroj s připojeným ladícím nástrojem. Pro další spravované a nativní aplikace, můžete pomocí nástroje s nebo bez ladicí program připojený. Snímky obrazovky v tomto tématu ukazují aplikace UPW XAML. Pokud chcete analyzovat využití paměti v aplikaci pro UPW, která používá JavaScript a HTML naleznete v tématu [analýza využití paměti (JavaScript)](../profiling/javascript-memory.md).
   
 ## <a name="start-a-memory-usage-diagnostic-session"></a>Spuštění diagnostické relace využití paměti  
   

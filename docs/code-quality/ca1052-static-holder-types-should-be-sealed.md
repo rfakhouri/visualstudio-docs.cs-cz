@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bc264b9e47fe9169c0b1ad9d3257323c437620f7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2c5d22db6a973947faf228e2e3844d63a916e24e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550424"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859494"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Statický vlastník typů by měl být zapečetěný
 
@@ -43,7 +43,7 @@ ms.locfileid: "45550424"
  Toto pravidlo předpokládá, že typ, který obsahuje pouze statické členy nespouští zděděno, protože typ neposkytuje všechny funkce, která může být přepsána v odvozeném typu. Typ, který není určena k dědit by měly být označené `sealed` modifikátor zakázat jeho použití jako základního typu.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, označte typ jako `sealed`. Pokud cílíte [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 nebo novější, lepším řešením je označte typ jako `static`. Tímto způsobem se vyhnete nutnosti soukromý konstruktor zabránit vytváří třídu deklarovat.
+ Chcete-li opravit porušení tohoto pravidla, označte typ jako `sealed`. Pokud se zaměřujete na rozhraní .NET Framework 2.0 nebo novější, je lepším řešením pro označení typu jako `static`. Tímto způsobem se vyhnete nutnosti soukromý konstruktor zabránit vytváří třídu deklarovat.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Potlačit upozornění tohoto pravidla pouze v případě, že typ je navržen tak, aby se dědila. Chybí `sealed` modifikátor naznačuje, že je užitečné jako základní typ typu.

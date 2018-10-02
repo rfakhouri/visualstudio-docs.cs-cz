@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5ee844da2c04a1dd6eac6a7ca458957dd22a71
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a2c95219ea13e8d2e4d989a2ac9950c4d04e65bd
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550606"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858190"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Identifikátory by neměly odpovídat klíčovým slovům
 |||
@@ -51,4 +51,4 @@ ms.locfileid: "45550606"
  Vyberte název, který se nezobrazí v seznamu klíčových slov.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Pokud jste se přesvědčili, že identifikátor nesmí být pro uživatele matoucí rozhraní API a je použitelné ve všech jazycích k dispozici v knihovně můžete potlačit upozornění tohoto pravidla [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Pokud jste se přesvědčili, že identifikátor nesmí být pro uživatele matoucí rozhraní API a, že je možné použít ve všech jazycích k dispozici v rozhraní .NET Framework knihovnu můžete potlačit upozornění tohoto pravidla.

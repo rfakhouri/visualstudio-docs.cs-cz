@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 543763049a297a41d2c424da378d486f910f5e1a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 852ca3d81b2dc72e4f0cb518a002b746a77cf5e3
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552055"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860157"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Identifikátory by se měly lišit více než použitím malých a velkých písmen
 |||
@@ -43,7 +43,7 @@ ms.locfileid: "45552055"
  Vyberte název, který je jedinečný, je porovnání pro jiné identifikátory písmen.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Nepotlačujte upozornění na toto pravidlo. Nemusí být použitelná ve všech jazycích k dispozici v knihovně [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Nepotlačujte upozornění na toto pravidlo. Knihovny nemusí být použitelná ve všech jazycích k dispozici v rozhraní .NET Framework.
 
 ## <a name="example-of-a-violation"></a>Příkladem porušení
  Následující příklad ukazuje porušení tohoto pravidla.

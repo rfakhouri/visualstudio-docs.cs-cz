@@ -9,20 +9,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6357fbe512b9120872fc033dd93406a7ff8eb1d1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 64400b8844481f8b34d82c430322d240c8930cd0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567178"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859949"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrace modelů pomocí Visual Studio Modelbus
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus poskytuje metodu pro vytvoření propojení mezi modely a z dalších nástrojů do modelů. Je třeba propojit modely jazyka specifického pro doménu (DSL) a modelech UML. Můžete vytvořit integrovaná sada DSL.
+Visual Studio ModelBus poskytuje metodu pro vytvoření propojení mezi modely a z dalších nástrojů do modelů. Je třeba propojit modely jazyka specifického pro doménu (DSL) a modelech UML. Můžete vytvořit integrovaná sada DSL.
 
  ModelBus umožňuje vytvářet jedinečné odkazu na model nebo na konkrétní elementu v modelu. Tento odkaz mohou být uloženy mimo model, například do prvku v jiném modelu. Až na novější příležitosti, nástroj chce získat přístup k elementu, bude infrastruktury sběrnice modelu načíst příslušný model a vraťte se element. Pokud chcete, můžete zobrazit modelu pro uživatele. Pokud soubor není přístupný v jeho předchozí umístění, ModelBus požádá uživatele o nalezení ho. Pokud uživatel vyhledá soubor, ModelBus opraví všechny odkazy na daný soubor.
 
 > [!NOTE]
->  V aktuálním [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] provádění ModelBus propojené modely musí být položky ve stejném [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení.
+>  V aktuální implementaci sady Visual Studio ModelBus musí být propojené modely položky ve stejném řešení sady Visual Studio.
 
  Další informace a ukázky kódu najdete v tématu:
 
@@ -32,10 +32,10 @@ ms.locfileid: "39567178"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-##  <a name="provide"></a> Zajištění přístupu k DSL
- Před vytvořením ModelBus odkazy na model nebo jeho prvky, je nutné definovat objekt ModelBusAdapter pro DSL. Nejjednodušší způsob je použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření modelu Service Bus, které přidá příkazy do návrháře DSL.
+## <a name="provide"></a> Zajištění přístupu k DSL
+ Před vytvořením ModelBus odkazy na model nebo jeho prvky, je nutné definovat objekt ModelBusAdapter pro DSL. Nejjednodušší způsob, jak to provést, je použít Model Service Bus rozšíření sady Visual Studio, který přidá příkazy do návrháře DSL.
 
-###  <a name="expose"></a> K vystavení definice DSL sběrnici modelu
+### <a name="expose"></a> K vystavení definice DSL sběrnici modelu
 
 1.  Stáhněte a nainstalujte rozšíření sběrnice modelu Visual Studio, pokud jste ho už nainstalovali. Další informace najdete v tématu [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
@@ -66,7 +66,7 @@ ms.locfileid: "39567178"
  Složka `ModelBusAdapters\bin\*` obsahuje sestavení vytvořených `Dsl` projektu a `ModelBusAdapters` projektu. Pro tento DSL odkazovat z jiného DSL, měli byste importovat tato sestavení.
 
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Ujistěte se, že může být odkazováno elementy
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Adaptéry ModelBus pomocí identifikátoru guid elementu pro identifikaci, ve výchozím nastavení. Tyto identifikátory musí proto nastavit jako trvalý v souboru modelu.
+ Visual Studio ModelBus adaptéry použijte identifikátor guid elementu pro identifikaci, ve výchozím nastavení. Tyto identifikátory musí proto nastavit jako trvalý v souboru modelu.
 
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Chcete-li zajistit tento element jsou trvalé identifikátory
 
@@ -84,7 +84,7 @@ ms.locfileid: "39567178"
 
 -   Přepsat `ResolveElementReference` najít správný element z odkazu sběrnice modelu.
 
-##  <a name="editRef"></a> Přístup k DSL z jiného DSL
+## <a name="editRef"></a> Přístup k DSL z jiného DSL
  Doménová vlastnost, která v DSL můžete ukládat odkazy na model Service bus, a můžete napsat vlastní kód, který je využívá. Můžete také umožníte uživateli vytvářet referenční informace k Service bus modelu výběrem souboru modelu a element v rámci něj.
 
  K povolení DSL použití odkazů na jiné DSL, měli byste nejprve si ho *příjemce* odkazů modelu Service bus.
@@ -140,10 +140,10 @@ ms.locfileid: "39567178"
 
 2.  Spusťte některý z DSL v experimentálním režimu stisknutím klávesy F5 nebo CTRL + F5.
 
-3.  V ladění projektu v experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], přidejte soubory, které jsou instancemi každý DSL.
+3.  Ladění projektu v experimentální instanci sady Visual Studio přidejte soubory, které jsou instancemi každý DSL.
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus lze vyřešit pouze odkazy na modely, které jsou položky v rámci stejného [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení. Například nelze vytvořit odkaz na soubor modelu v jiné části systému souborů.
+    > Visual Studio ModelBus lze vyřešit pouze odkazy na modely, které jsou položky ve stejném řešení sady Visual Studio. Například nelze vytvořit odkaz na soubor modelu v jiné části systému souborů.
 
 4.  Vytvořte některé prvky a odkazy v instanci vystavené DSL a uložte ho.
 
@@ -158,12 +158,12 @@ ms.locfileid: "39567178"
 ## <a name="creating-references-in-program-code"></a>Vytváření odkazů v kódu programu
  Když chcete k uložení odkazu na model nebo jeho element v modelu, můžete vytvořit `ModelBusReference`. Existují dva typy z `ModelBusReference`: odkazy a odkazy na prvek modelu.
 
- Chcete-li vytvořit odkaz na model, je třeba AdapterManager DSL, z nichž je model instance a název souboru nebo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] položky projektu model.
+ Chcete-li vytvořit odkaz na model, je třeba AdapterManager DSL, z nichž je model instance a název souboru nebo položky projektu sady Visual Studio modelu.
 
  Chcete-li vytvořit odkaz na element, musíte pro soubor modelu a element, který chcete odkazovat na adaptér.
 
 > [!NOTE]
->  S [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus, můžete vytvořit odkazy pouze na položky v rámci stejného [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení.
+>  S Visual Studio ModelBus můžete vytvořit odkazy pouze na položky ve stejném řešení sady Visual Studio.
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>Importovat vystavené sestavení DSL
  Používání projektu přidejte odkazy na sestavení DSL a objekt ModelBusAdapter vystavené DSL.
@@ -349,7 +349,7 @@ ModelBusReference elementReferenceRestored =
     modelBus.DeserializeReference(serialized, null);
 ```
 
- Hlavní spouštěcí záznam, který serializuje tímto způsobem je nezávislé na kontextu. Pokud použijete jednoduchý adaptér souborové sběrnice modelu, hlavní spouštěcí záznam obsahuje absolutní cestu k souboru. Toto je dostatečná, pokud se nikdy nepřesouvají soubory instance modelu. Ale budou se soubory modelu obvykle položky v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Uživatelé se očekávají, že se moct přesunout celého projektu do různých částí systému souborů. Očekávají se také budete moci pokračovat v projektu pod správou zdrojových kódů a otevřete ho v různých počítačích. Názvy cest by měly být serializovány proto relativní k umístění projektu, který obsahuje soubory.
+ Hlavní spouštěcí záznam, který serializuje tímto způsobem je nezávislé na kontextu. Pokud použijete jednoduchý adaptér souborové sběrnice modelu, hlavní spouštěcí záznam obsahuje absolutní cestu k souboru. Toto je dostatečná, pokud se nikdy nepřesouvají soubory instance modelu. Nicméně soubory modelu bude obvykle položky v projektu sady Visual Studio. Uživatelé se očekávají, že se moct přesunout celého projektu do různých částí systému souborů. Očekávají se také budete moci pokračovat v projektu pod správou zdrojových kódů a otevřete ho v různých počítačích. Názvy cest by měly být serializovány proto relativní k umístění projektu, který obsahuje soubory.
 
 ### <a name="serializing-relative-to-a-specified-file-path"></a>Serializace relativní k cestě zadaného souboru
  A `ModelBusReference` obsahuje `ReferenceContext`, což je slovník, ve kterém můžete ukládat informace, jako je cesta k souboru relativně k by měly být serializovány.

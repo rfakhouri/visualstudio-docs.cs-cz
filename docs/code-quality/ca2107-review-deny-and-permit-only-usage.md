@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef4857b88c6e18b83cdc0e43bb1b8cf031221f4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 153077e7231aba485b6f8e08efcf5e6d5752b89a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550109"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859325"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Revize použití operací odepřít a povolit pouze
 |||
@@ -35,7 +35,7 @@ ms.locfileid: "45550109"
  Metoda obsahuje kontrolu zabezpečení, která určuje akce zabezpečení PermitOnly nebo odepřít.
 
 ## <a name="rule-description"></a>Popis pravidla
- <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Akce zabezpečení by měly být používány pouze těmi, kdo mají pokročilé znalosti o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zabezpečení. Kód používající tyto bezpečnostní akce by měl být podroben revizi zabezpečení.
+ <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Akce zabezpečení by měly být používány pouze těmi, kdo mají pokročilé znalosti o zabezpečení rozhraní .NET Framework. Kód používající tyto bezpečnostní akce by měl být podroben revizi zabezpečení.
 
  Odepřít mění výchozí chování procházení zásobníku, ke které dochází v reakci na požadavek zabezpečení. To vám umožní určit oprávnění, která nesmí být po dobu trvání metodu zamítnutí bez ohledu na skutečnou oprávnění volajících v zásobníku volání. Pokud procházení zásobníku zjistí metodu, která je zabezpečena pomocí Odepřít a pokud požadované oprávnění je součástí odepření oprávnění, procházení zásobníku selže. PermitOnly také mění výchozí chování procházení zásobníku. Je možné zadat pouze oprávnění, která lze udělit, bez ohledu na oprávnění volající kód. Pokud procházení zásobníku zjistí metodu, která je zabezpečena pomocí PermitOnly, a pokud oprávnění, která jsou určena podle PermitOnly není součástí požadované oprávnění, procházení zásobníku selže.
 

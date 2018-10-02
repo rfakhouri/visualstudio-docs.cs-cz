@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2823933e4792dd6127ffbd4b1bfe5dfe1b71a0c
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2ea3a470ab6b6d9cf3e7daeaf24cd82d0f7ac387
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547544"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858500"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Nedodávejte nevydané formáty prostředku
 |||
@@ -32,13 +32,13 @@ ms.locfileid: "45547544"
 |Narušující změna|Pevné|
 
 ## <a name="cause"></a>příčina
- Soubor prostředků bylo vytvořeno prostřednictvím verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , která se momentálně nepodporuje.
+ Soubor prostředků bylo vytvořeno pomocí verze rozhraní .NET Framework, která se momentálně nepodporuje.
 
 ## <a name="rule-description"></a>Popis pravidla
- Soubory prostředků, které byly vytvořeny pomocí předprodejní verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] nemusí být použitelné podporovanými verzemi rozhraní .NET Framework.
+ Soubory prostředků, které byly vytvořeny pomocí předprodejní verze rozhraní .NET Framework nemusí být použitelné podporovanými verzemi rozhraní .NET Framework.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, vytvoření prostředku, který používá podporovanou verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]tis.
+ Chcete-li opravit porušení tohoto pravidla, vytvoření prostředku, který používá podporovanou verzi .NET Frameworkk.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Nepotlačujte upozornění na toto pravidlo.
