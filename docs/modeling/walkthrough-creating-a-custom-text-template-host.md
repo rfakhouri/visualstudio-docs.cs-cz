@@ -15,21 +15,21 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c7a8d83b36e913467f6c4c62a8452d8d5f15fe6d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3b70cdb92a6b8c4cacfddbc8e4d978845210c6ba
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977199"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859130"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Návod: Vytvoření vlastního hostitele textových šablon
 
-A *textové šablony**hostitele* poskytuje prostředí, které umožňuje *text šablony transformační modul* ke spuštění. Tento hostitel se stará o interakce stroje se systémem souborů. Modul nebo *procesoru direktiv* potřebného soubor nebo sestavení může požádat o prostředku z hostitele. Hostitel pak může požadovaný prostředek najít prohledáním adresáře a globální mezipaměti sestavení (GAC). Další informace najdete v tématu [proces transformace textových šablon](../modeling/the-text-template-transformation-process.md).
+A *textové šablony**hostitele* poskytuje prostředí, které umožňuje *text šablony transformační modul* ke spuštění. Tento hostitel se stará o interakce stroje se systémem souborů. Modul nebo *procesor direktiv* , který potřebuje soubor nebo sestavení může od hostitele vyžádat prostředek. Hostitel pak může požadovaný prostředek najít prohledáním adresáře a globální mezipaměti sestavení (GAC). Další informace najdete v tématu [proces transformace textových šablon](../modeling/the-text-template-transformation-process.md).
 
-Můžete napsat vlastního hostitele. Pokud chcete použít *transformace textu šablony* funkce z mimo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo pokud chcete integrovat do vlastních nástrojů této funkce. Vytvoření vlastního hostitele, je nutné vytvořit třídu, která dědí z <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Dokumentaci jednotlivých metod najdete v tématu <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.
+Můžete napsat vlastního hostitele. Pokud chcete použít *transformace textové šablony* funkce mimo sadu Visual Studio nebo pokud chcete integrovat vlastní nástroje, které tuto funkci. Pokud chcete vytvořit vlastního hostitele, je nutné vytvořit třídu, která dědí z <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Dokumentaci jednotlivých metod najdete v tématu <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.
 
 > [!WARNING]
-> Pokud píšete [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření nebo balíček, zvažte použití služby textového ukázka místo vytvoření vlastního hostitele. Další informace najdete v tématu [volání transformací textu v rozšíření VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+> Pokud píšete rozšíření sady Visual Studio nebo balíčku, vezměte v úvahu místo vytváření vlastního hostitele použijete službu šablonování textu. Další informace najdete v tématu [volání transformací textu v rozšíření VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
 Tento návod znázorňuje následující úlohy:
 
@@ -716,9 +716,9 @@ V tomto návodu vytvoříte vlastního hostitele ve spustitelné aplikaci, kter
     End Namespace
     ```
 
-4.  Pro [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] pouze, otevřete **projektu** nabídky a klikněte na tlačítko **CustomHost vlastnosti**. V **spouštěcí objekt** seznamu, klikněte na tlačítko **CustomHost.Program**.
+4.  Pro [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] pouze, otevřete **projektu** nabídky a klikněte na tlačítko **vlastnosti CustomHost**. V **spouštěcí objekt** klikněte na možnost **CustomHost.Program**.
 
-5.  Na **soubor** nabídky, klikněte na tlačítko **Uložit vše**.
+5.  Na **souboru** nabídky, klikněte na tlačítko **Uložit vše**.
 
 6.  Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.
 
@@ -728,7 +728,7 @@ Při testování vlastního hostitele napíšete textovou šablonu, spustíte vl
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Vytvoření textové šablony pro testování vlastního hostitele
 
-1.  Vytvořte textový soubor s názvem `TestTemplate.tt`.
+1.  Vytvořte textový soubor a pojmenujte ho `TestTemplate.tt`.
 
      K vytvoření souboru lze použít libovolný textový editor (například Poznámkový blok).
 
@@ -788,7 +788,7 @@ Při testování vlastního hostitele napíšete textovou šablonu, spustíte vl
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > Místo zadáte adresu, můžete vyhledat soubor CustomHost.exe v **Průzkumníka Windows** a pak přetáhněte soubor do okna příkazového řádku.
+    > Místo zadání adresy můžete soubor CustomHost.exe přejděte v **Windows Explorer** a potom tento soubor přetáhnout do okna příkazového řádku.
 
 3.  Zadejte mezeru.
 
@@ -799,11 +799,11 @@ Při testování vlastního hostitele napíšete textovou šablonu, spustíte vl
      `C:\<YOUR PATH>TestTemplate.tt`
 
     > [!NOTE]
-    > Místo zadáte adresu, můžete vyhledat soubor TestTemplate.tt v **Průzkumníka Windows** a pak přetáhněte soubor do okna příkazového řádku.
+    > Místo zadání adresy můžete soubor testtemplate.TT vyhledat Procházet v **Windows Explorer** a potom tento soubor přetáhnout do okna příkazového řádku.
 
      Aplikace vlastního hostitele se spustí a dokončí proces transformace textové šablony.
 
-5.  V **Průzkumníka Windows**, přejděte do složky, která obsahuje soubor TestTemplate.tt.
+5.  V **Windows Explorer**, přejděte do složky obsahující soubor TestTemplate.tt.
 
      Tato složka obsahuje také soubor TestTemplate1.txt.
 
@@ -821,8 +821,8 @@ Při testování vlastního hostitele napíšete textovou šablonu, spustíte vl
 
 ## <a name="next-steps"></a>Další kroky
 
-V tomto návodu jste vytvořili hostitele transformace textových šablon, který podporuje základní funkce transformace. Tohoto hostitele můžete rozšířit tak, aby podporoval textové šablony, které volají vlastní nebo vygenerované procesory direktiv. Další informace najdete v tématu [návod: připojení hostitele k – direktiva procesor generované](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
+V tomto návodu jste vytvořili hostitele transformace textových šablon, který podporuje základní funkce transformace. Tohoto hostitele můžete rozšířit tak, aby podporoval textové šablony, které volají vlastní nebo vygenerované procesory direktiv. Další informace najdete v tématu [návod: připojení hostitele k procesoru direktiv generované](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>

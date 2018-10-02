@@ -9,59 +9,59 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5a48ba42982ea8f190fca2e13d714cb99cb01490
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5aa0a07af94514f5fff5758fad12bbabc7520ff
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949456"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857973"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Sdílení tříd mezi DSL pomocí knihovny DSL
-V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vizualizace a modelování SDK, můžete vytvořit nekompletní definice DSL, který můžete importovat do jiné DSL. Díky tomu můžete zohlednit běžné částí podobné modelů.
+V aplikaci Visual Studio Visualization and Modeling SDK můžete vytvořit nekompletní definice DSL, který můžete importovat do jiného DSL. Díky tomu můžete zvážit společné části podobné modelů.
 
-## <a name="creating-and-using-dsl-libraries"></a>Vytváření a používání knihovny DSL
+## <a name="creating-and-using-dsl-libraries"></a>Vytvoření a použití knihovny DSL
 
-#### <a name="to-create-a-dsl-library"></a>Chcete-li vytvořit knihovnu DSL
+#### <a name="to-create-a-dsl-library"></a>Chcete-li vytvořit knihovny DSL
 
-1.  Vytvoření nového projektu DSL a zvolte šablonu řešení DSL knihovny.
+1.  Vytvoření nového projektu DSL a výběr šablony řešení knihovny DSL.
 
-     Vytvoří se jeden projekt DSL s prázdný model.
+     Jednoho projektu DSL se vytvoří s prázdnou modelu.
 
-2.  Můžete přidat třídy domény, vztahy, tvarů a tak dále.
+2.  Přidáte doménovými třídami, relace, tvary a tak dále.
 
-     Elementy v knihovně nemají k vytvoření jediného vnoření stromu.
+     Není potřeba tvoří jeden strom vkládání prvků do knihovny.
 
-     Pokud chcete definovat vztah, který Importers k účetnictví můžete použít, vytvořte dvě třídy domény a vytvořit relaci mezi nimi.
+     Chcete-li definovat relace, které můžete použít importers, vytvořit dvěma doménovými třídami a vytvoření relace mezi nimi.
 
-     Zvažte nastavení **dědičnosti modifikátor** z domény třídy `Abstract`.
+     Zvažte nastavení **modifikátor dědičnosti** doménové třídy k `Abstract`.
 
-3.  Můžete přidat prvky, které definujete v Průzkumníku DSL, jako je připojení počítačů.
+3.  Můžete přidat prvky, které definujete v Průzkumník DSL, jako je například tvůrci připojení.
 
-4.  Můžete přidat vlastní nastavení, které vyžadují další kód, jako je například omezení ověřování.
+4.  Můžete přidat vlastní nastavení, které vyžadují další kód, jako je například omezení ověření.
 
-5.  Klikněte na tlačítko **proveďte transformaci všech šablon**.
+5.  Klikněte na tlačítko **Transformovat všechny šablony**.
 
 6.  Sestavte projekt.
 
-7.  Když distribuujete DSL pro ostatním používat, je nutné zadat kompilované sestavení (DLL) a soubor `DslDefinition.dsl`. Kompilované sestavení můžete najít ve složce v části `Dsl\bin\*`
+7.  Když distribuujete DSL pro používání jiným lidem, je nutné zadat zkompilovaného sestavení (knihovny DLL) a soubor `DslDefinition.dsl`. Můžete najít kompilované sestavení v rámci `Dsl\bin\*`
 
-#### <a name="to-import-a-dsl-library"></a>Chcete-li importovat knihovnu DSL
+#### <a name="to-import-a-dsl-library"></a>Postup importování knihovny DSL
 
-1.  V jiné definici DSL v **DSL Explorer**, klikněte pravým tlačítkem na třídu kořenové DSL a pak klikněte na tlačítko **přidat nové DslLibrary Import**.
+1.  V jiné definici DSL v **Průzkumník DSL**, klikněte pravým tlačítkem na kořenová třída DSL a potom klikněte na tlačítko **přidejte Import nového knihovny DSL**.
 
-2.  V okně vlastnosti nastavit **cesta k souboru** knihovny. Můžete buď relativní nebo absolutní cesta.
+2.  V okně Vlastnosti nastavte **cesta k souboru** knihovny. Můžete použít relativní nebo absolutní cesta.
 
-     Importované knihovny se zobrazí v Průzkumníku DSL v režimu jen pro čtení.
+     Importovanou knihovnu se zobrazí v Průzkumníku DSL v režimu jen pro čtení.
 
-3.  Importované třídy můžete použít jako základní třídy. Vytvořte třídu domény v import DSL a ve vlastnostech nastavte **základní třída** importované třídy.
+3.  Importované třídy lze použít jako základní třídy. Vytvoření doménové třídy v importu DSL a ve vlastnostech okno, nastavte **základní třída** importované třídy.
 
-4.  Klikněte na tlačítko proveďte transformaci všech šablon.
+4.  Klikněte na tlačítko Transformovat všechny šablony.
 
-5.  Přidejte do projektu DSL odkaz na sestavení (DLL), který byl vytvořený projekt DSL knihovny.
+5.  Přidáte do projektu DSL odkaz na sestavení (DLL), který byl vytvořen projekt knihovny DSL.
 
 6.  Sestavte řešení.
 
- Knihovna DSL můžete importovat další knihovny. Při importu do knihovny, jeho importy také automaticky zobrazí v Průzkumníku DSL.
+ Knihovna DSL, která můžete importovat další knihovny. Při importu knihovny jeho importů také automaticky zobrazí v Průzkumníku DSL.
 
 ## <a name="see-also"></a>Viz také
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e087a7be95cfc6ba97d62720f2950672ca4bf199
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bd22b0e28859ea153466b58f5f27ab458f5aa529
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545588"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858941"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Sestavení by měly mít platné silné názvy
 
@@ -66,9 +66,9 @@ Všimněte si, že se načíst a analyzovat sestavení se zpožděným podpisem,
 
 Použijte jednu z následujících postupů:
 
-- Použijte nástroj Assembly Linker (Al.exe) poskytuje [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK.
+- Použijte nástroj Assembly Linker (Al.exe) poskytované rozhraní .NET Framework SDK.
 
-- Pro [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] v1.0 nebo v1.1, použijte buď <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> nebo <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> atribut.
+- Pro rozhraní .NET Framework v1.0 nebo v1.1, použijte buď <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> nebo <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> atribut.
 
 - Pro [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], použijte buď `/keyfile` nebo `/keycontainer` – možnost kompilátoru [/keyfile (zadat klíč nebo dvojici klíč k podepsání sestavení)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) nebo  [ /keycontainer (určení kontejneru klíčů pro podpis sestavení)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) – možnost linkeru v jazyce C++).
 
@@ -92,7 +92,7 @@ Použijte jednu z následujících postupů:
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Podepsání sestavení silným názvem mimo sadu Visual Studio
 
-Použijte nástroj pro silný název (Sn.exe), který je poskytován [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK. Další informace najdete v tématu [Sn.exe (nástroj Strong Name)](/dotnet/framework/tools/sn-exe-strong-name-tool).
+Použijte nástroj strong name (Sn.exe), která je k dispozici prostřednictvím sady SDK rozhraní .NET Framework. Další informace najdete v tématu [Sn.exe (nástroj Strong Name)](/dotnet/framework/tools/sn-exe-strong-name-tool).
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 

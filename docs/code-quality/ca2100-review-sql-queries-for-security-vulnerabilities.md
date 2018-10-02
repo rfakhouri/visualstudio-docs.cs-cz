@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bbfafb78022e462c1f629019ddb40c711fcd581b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 69c8ba3b5cd30b71828a34c4b3dc8d7b4584b613
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551464"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859043"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Revize dotazů SQL pro chyby zabezpečení
 
@@ -50,7 +50,7 @@ Toto pravidlo předpokládá, že řetězcový argument obsahuje vstup uživatel
 
 - Ověření vstupu uživatele pro typ a obsah, před sestavením řetězec příkazu.
 
-Následující [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] typy implementovat <xref:System.Data.IDbCommand.CommandText%2A> vlastnost nebo zadejte konstruktory, které se nastavit vlastnost použitím argumentu řetězce.
+Implementujte následující typy rozhraní .NET Framework <xref:System.Data.IDbCommand.CommandText%2A> vlastnost nebo zadejte konstruktory, které se nastavit vlastnost použitím argumentu řetězce.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> a <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
