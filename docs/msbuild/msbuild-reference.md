@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80e76fd7677eab8c56827dcdbaeaf42ee72c5c28
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081781"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120380"
 ---
 # <a name="msbuild-reference"></a>Referenční dokumentace nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je systém sestavení pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Následující odkazy vás přesměrují na témata, která obsahují [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] referenční informace.  
@@ -71,25 +71,24 @@ ms.locfileid: "39081781"
  Seznam znaků, které může být nutné být "uvozeny řídicími znaky" správně interpretovat. Řídicí sekvence je posloupnost znaků, která označuje, že následuje alternativní výkladu.  
   
 ## <a name="see-also"></a>Viz také:  
- [Přehled nástroje MSBuild ](../msbuild/msbuild.md) Introduces [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a poskytuje odkazy na témata, která popisují, jak ho použít k sestavení projektů.  
+ [Přehled nástroje MSBuild](../msbuild/msbuild.md)     
+ Zavádí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a poskytuje odkazy na témata, která popisují, jak ho použít k sestavení projektů.  
   
- <xref:Microsoft.Build.Conversion>  
+ [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
  Obsahuje odkaz na obor názvů převodu.  
   
- <xref:Microsoft.Build.Evaluation>  
+ [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  Obsahuje odkaz na obor názvů hodnocení.  
   
- <xref:Microsoft.Build.Execution>  
+ [Microsoft.Build.Execution](https://docs.microsoft.com/dotnet/api/microsoft.build.execution)  
  Obsahuje odkaz na obor názvů spuštění.  
   
- <xref:Microsoft.Build.Framework>  
+ [Microsoft.Build.Framework](https://docs.microsoft.com/dotnet/api/microsoft.build.framework)  
  Obsahuje odkaz na obor názvů rozhraní.  
   
- <xref:Microsoft.Build.Logging>  
- Obsahuje odkaz na obor názvů protokolování.  
+ [Microsoft.Build.Logging](https://docs.microsoft.com/dotnet/api/microsoft.build.logging) obsahuje odkaz na obor názvů protokolování.  
   
- <xref:Microsoft.Build.Tasks>  
+ [Microsoft.Build.Task](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)  
  Obsahuje odkaz na obor názvů úlohy.  
   
- <xref:Microsoft.Build.Utilities>  
- Obsahuje odkaz na obor názvů nástroje.
+ [Microsoft.Build.Utilities](https://docs.microsoft.com/dotnet/api/microsoft.build.utilities) obsahuje odkaz na obor názvů nástroje.

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d780f8ab293a9503f3c2c8675e4de1e3584b28
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42624212"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859390"
 ---
 # <a name="use-models-in-your-development-process"></a>Použití modelů ve vývojových procesech
 
@@ -48,7 +48,7 @@ V obou případech vytváření modelu téměř vždy vede k výraznému sníže
 
 ## <a name="use-models-with-other-artifacts"></a>Použití modelů pomocí jiné artefakty
 
-Model se sám o sobě specifikace požadavky nebo architekturu. Je nástroj pro větší přehlednost vyjádření některé aspekty těchto věcí, ale ne všechny konceptech vyžadovaných při návrhu softwaru lze vyjádřit. Modely proto je nutné použít spolu s jiným způsobem komunikace, jako jsou stránky v OneNote nebo odstavce, dokumentů Microsoft Office, pracovní položky v [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)], nebo rychlé poznámky na zeď místnosti projektu. Kromě poslední položky všechny tyto typy objektů lze propojit k různým částem prvky modelu.
+Model se sám o sobě specifikace požadavky nebo architekturu. Je nástroj pro větší přehlednost vyjádření některé aspekty těchto věcí, ale ne všechny konceptech vyžadovaných při návrhu softwaru lze vyjádřit. Modely je proto třeba použít spolu s jiným způsobem komunikace, jako jsou aplikace OneNote stránky nebo odstavce, dokumentů Microsoft Office, pracovní položky v Team Foundation nebo rychlé poznámky na zeď místnosti projektu. Kromě poslední položky všechny tyto typy objektů lze propojit k různým částem prvky modelu.
 
 Další aspekty specifikace, které se běžně používají společně s modely patří. V závislosti na rozsahu a styl projektu můžete použít některé z těchto aspektů nebo není žádný vůbec používat:
 
@@ -88,7 +88,7 @@ Při každém blížícím se opakování pomocí modely definovat, co je doruč
 
 - Na konci každé iterace stiskněte a podržte požadavky na seminář k definování podrobně požadavky nebo uživatelskými scénáři, které budou vytvořeny v další iteraci. Pozvěte uživatele a zúčastněné obchodní strany, kteří se můžete rozhodnout, priority, jakož i vývojářům a testerům systému. Umožňují definovat požadavky pro iterace 2 týden tři hodiny.
 
-- Cílem tohoto pracoviště je pro každého souhlas, co všechno zvládneme na konci další iteraci. Abychom to osvětlili požadavky použijte modely jako jeden z nástrojů. Iterace backlogu je výstup seminář: to znamená, že seznam vývoj úkoly v [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] a testovací sady v [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
+- Cílem tohoto pracoviště je pro každého souhlas, co všechno zvládneme na konci další iteraci. Abychom to osvětlili požadavky použijte modely jako jeden z nástrojů. Iterace backlogu je výstup seminář: to znamená, seznam úkolů vývoje v Team Foundation a testovací sady v [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
 
 - Workshop požadavky diskutovat o návrhu, pouze pokud podle musíte určit odhady pro úlohy vývoje. Jinak použijte diskusi chování systému, který uživatelé budou moci využívat přímo. Zachovat model požadavků nezávisle na architektuře modelu.
 
@@ -96,7 +96,7 @@ Při každém blížícím se opakování pomocí modely definovat, co je doruč
 
 ### <a name="link-model-to-work-items"></a>Odkaz modelu s pracovními položkami
 
-Po seminář požadavky vypracování podrobností model požadavků a propojit úkoly vývoje modelu. Můžete to provést pomocí propojení pracovních položek v [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] na prvky v modelu.
+Po seminář požadavky vypracování podrobností model požadavků a propojit úkoly vývoje modelu. Můžete to provést pomocí propojení pracovních položek v produktu Team Foundation na prvky v modelu.
 
 Můžete propojit libovolný prvek s pracovními položkami, ale jsou nejužitečnější prvky následujícím způsobem:
 

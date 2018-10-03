@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 419c9f54d0c537d417034eb4375d6402951609bd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624258"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120352"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Krok 5: Ověření uživatelů v Django
 
@@ -198,7 +198,7 @@ Následující kroky postupu tok ověřování a popisují součástí projektu,
 
 1. Když jste hotovi, server zastavit a znovu potvrďte změny do správy zdrojového kódu.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Otázka: Co je účelem {% csrf_token %} značek, které se zobrazí v \<formuláře\> elementy?
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Otázka: Co je účelem {% csrf_token %} značek, které se zobrazí v \<formuláře\> elementy?
 
 Odpověď: `{% csrf_token %}` značka zahrnuje integrované v Django [webů ochranu proti padělání (csrf) žádost o](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs). Obvykle přidáte tuto značku na libovolný element, který zahrnuje POST, PUT nebo DELETE požadavek metody, jako je například formulář. Funkce šablony vykreslování (`render`) pak vloží nezbytné ochrany.
 

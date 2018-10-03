@@ -10,15 +10,24 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: abec2e0d2485b99d5cde020bffc5ad0b2dd473ac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775381"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120676"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Protokol změn (Visual Studio Tools for Unity, Windows)
 Protokol změn Visual Studio Tools for Unity.
+
+## <a name="3807"></a>3.8.0.7
+ Vydáno 20. září 2018
+ 
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Ladicí program:**
+
+    -   Oprava vzájemné zablokování v knihovně používaný ke komunikaci s modulem Unity a ladicí program, nastavení sady Visual Studio nebo Unity ukotvit, zejména v případě dosažení "Připojit k Unity" nebo restartování hry.
 
 ## <a name="3806"></a>3.8.0.6
  Vydáno 27. srpna 2018

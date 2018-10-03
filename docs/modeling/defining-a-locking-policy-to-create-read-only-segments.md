@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 6567be5a82d4b344b3850a1a66e0b5b23f1b8f9d
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566765"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859091"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definování zásady zamykání pro vytváření segmentů jen pro čtení
-Rozhraní API neměnnosti [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK umožňuje aplikaci zámek část nebo celý model jazyka specifického pro doménu (DSL) tak, aby ji lze číst, ale nebyl změněn. Tato možnost jen pro čtení může použít, třeba tak, aby uživatel požádat o vaši kolegové mohli opatřit poznámkami a zkontrolujte modelu DSL, ale můžete zakázat možnost měnit původní.
+Rozhraní API neměnnosti sady Visual Studio Visualization and Modeling SDK umožňuje aplikaci uzamknout část nebo celý model jazyka specifického pro doménu (DSL), aby ji lze číst, ale nebyl změněn. Tato možnost jen pro čtení může použít, třeba tak, aby uživatel požádat o vaši kolegové mohli opatřit poznámkami a zkontrolujte modelu DSL, ale můžete zakázat možnost měnit původní.
 
  Kromě toho, jak vytvořit DSL, můžete definovat *uzamčení zásad.* Zásady zamykání definuje zámky, které jsou povolené, nejsou povolené nebo povinné. Například při publikování DSL je vstupní kontroly mohou pobídnout vývojářům třetích stran ho rozšířit pomocí nových příkazů. Ale můžete také použít zásady zamykání a zabrání tak jejich změnu stavu jen pro čtení zadaného součásti modelu.
 

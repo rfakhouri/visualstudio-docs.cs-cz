@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: eb9fb268ec98d60dcea46a8802592261493e4b56
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776168"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859274"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Obslužné rutiny události šíří změny mimo model
 
-V produktu Visualization and Modeling SDK, můžete definovat obslužné rutiny událostí úložiště změny na prostředky mimo úložiště, jako jsou proměnné bez úložiště, soubory, modely v jiných úložištích nebo jiné [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření. Obslužné rutiny událostí Store jsou spouštěny na konci transakce, ve kterém se aktivační událost došlo. Také se provádějí v operaci vrácení zpět nebo znovu. Proto se na rozdíl od úložiště pravidla jsou zvláště užitečná pro aktualizaci hodnoty, které jsou mimo store události v úložišti. Na rozdíl od .NET události jsou registrovány obslužné rutiny událostí úložiště tak, aby naslouchala na třídu: nemáte samostatnou obslužnou rutinu pro každou instanci zaregistrovat. Další informace o tom, jak si vybrat mezi různými způsoby pro případ změn najdete v tématu [šířící změny a reakce na](../modeling/responding-to-and-propagating-changes.md).
+V produktu Visualization and Modeling SDK můžete definovat obslužné rutiny událostí úložiště změny na prostředky mimo úložiště, jako jsou proměnné bez úložiště, soubory, modely v jiných úložištích nebo jiné rozšíření sady Visual Studio. Obslužné rutiny událostí Store jsou spouštěny na konci transakce, ve kterém se aktivační událost došlo. Také se provádějí v operaci vrácení zpět nebo znovu. Proto se na rozdíl od úložiště pravidla jsou zvláště užitečná pro aktualizaci hodnoty, které jsou mimo store události v úložišti. Na rozdíl od .NET události jsou registrovány obslužné rutiny událostí úložiště tak, aby naslouchala na třídu: nemáte samostatnou obslužnou rutinu pro každou instanci zaregistrovat. Další informace o tom, jak si vybrat mezi různými způsoby pro případ změn najdete v tématu [šířící změny a reakce na](../modeling/responding-to-and-propagating-changes.md).
 
 Grafické plochu a jiných prvcích uživatelského rozhraní jsou příkladem externí prostředky, které mohou být zpracovány události v úložišti.
 
