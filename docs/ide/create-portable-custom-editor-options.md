@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 78f1c071469026b9e0e7d503483b7ddacc6d3cf1
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624155"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243988"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Vytvoření nastavení přenosné vlastního editoru pomocí řešení EditorConfig
 
@@ -22,8 +22,7 @@ V sadě Visual Studio 2017, můžete přidat [EditorConfig](http://editorconfig.
 
 EditorConfig nastavení podporuje řadu editory kódu a prostředími IDE, jako je Visual Studio. Je přenosný komponentu, která se přenáší pomocí kódu a můžete vynutit kódování styly i mimo sadu Visual Studio.
 
-> [!NOTE]
-> Když přidáte soubor EditorConfig do projektu v sadě Visual Studio, formátování existující kód není změnit, dokud se formátovat dokument (**upravit** > **Upřesnit**  >  **Formátovat dokument** nebo **Ctrl**+**K**, **Ctrl**+**D**ve výchozím profilu). Však žádné nové řádky kódu se formátují podle nastavení EditorConfig. EditorConfig nastavení, které chcete, můžete definovat **formátovat dokument** použít [ **formátování** stránka možností](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Když přidáte soubor EditorConfig do projektu v sadě Visual Studio, formátování existující kód není změnit, dokud se formátovat dokument (**upravit** > **Upřesnit**  >  **Formátovat dokument** nebo **Ctrl**+**K**, **Ctrl**+**D**ve výchozím profilu). Však žádné nové řádky kódu se formátují podle nastavení EditorConfig. EditorConfig nastavení, které chcete, můžete definovat **formátovat dokument** použít [ **formátování** stránka možností](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 ## <a name="coding-consistency"></a>Kódování konzistence
 
@@ -32,6 +31,9 @@ Nastavení v souborech EditorConfig umožňují udržovat konzistentní kódová
 Převody, které používáte na váš osobní projekty kódování mohou lišit od těch použít u týmových projektů. Například můžete dát přednost, pokud jste psaní kódu, se odsazení přidá znak tabulátoru. Váš tým ale dát přednost, že odsazení přidá čtyři znaky mezery namísto znak tabulátoru. EditorConfig soubory tento problém vyřešit tím, že povolíte konfiguraci pro každý scénář.
 
 Vzhledem k tomu, že nastavení jsou obsaženy v souboru v základu kódu, jejich přenosu spolu s tohoto základu kódu. Za předpokladu, otevřete soubor kódu v editoru EditorConfig nedodržují předpisy, jsou implementovány nastavení textového editoru. Další informace o souborech EditorConfig, najdete v článku [EditorConfig.org](http://editorconfig.org/) webu.
+
+> [!NOTE]
+> Vytváření názvů, které jsou nastaveny v souboru EditorConfig nelze aktuálně používá v kanálu CI/CD, jak vytvořit chyby nebo upozornění. Všechny odchylky styl se zobrazí pouze v editoru sady Visual Studio a **seznam chyb**.
 
 ## <a name="supported-settings"></a>Podporovaná nastavení
 
