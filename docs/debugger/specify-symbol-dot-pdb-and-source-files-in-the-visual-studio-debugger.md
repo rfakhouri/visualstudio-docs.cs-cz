@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 1b50bdf48e80e5ed259ba61f0e104e411e76a490
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612737"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788029"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Zadání symbolu (.pdb) a zdrojových souborů v ladicím programu sady Visual Studio
 Soubor databáze (PDB) programu, nazývaný také soubor symbolů, mapuje identifikátory, které vytvoříte ve zdrojovém kódu pro třídy, metody a jiný kód, na identifikátory, které se používají v kompilovaných spustitelných souborech projektu. Soubor PDB také mapuje příkazy ve zdrojovém kódu k provozním pokynům ve spustitelných souborech. Ladicí program používá tyto informace k určení dvou důležitých informací:
@@ -175,35 +175,35 @@ Chcete-li zjistit, jaké symboly jsou k dispozici v exportní tabulce knihovny D
 |**Vždy načítat automaticky**|Přidá soubor symbolů do seznamu souborů, které jsou automaticky načteny pomocí ladicího programu.|  
   
 ###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Nastavit možnosti kompilátoru pro soubory symbolů  
- Při sestavení projektu z rozhraní IDE VS a použití standardní **ladění** konfigurace sestavení, C++ a spravované kompilátory odpovídající soubory symbolů pro váš kód vytvořit. Můžete také nastavit možnosti kompilátoru na příkazovém řádku k vytvoření souborů symbolů.  
+Při sestavení projektu z rozhraní IDE VS a použití standardní **ladění** konfigurace sestavení, C++ a spravované kompilátory odpovídající soubory symbolů pro váš kód vytvořit. Můžete také nastavit možnosti kompilátoru na příkazovém řádku k vytvoření souborů symbolů.  
   
- **Možnosti jazyka C++**  
+**Možnosti jazyka C++**  
   
- Soubor databáze programu (PDB) uchovává informace o ladění a stavu projektu, které umožňují přírůstkové propojení konfigurace ladění programu. Soubor PDB je vytvořen při sestavení s [příznakem/zi nebo /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (pro C/C++).  
+Soubor databáze programu (PDB) uchovává informace o ladění a stavu projektu, které umožňují přírůstkové propojení konfigurace ladění programu. Soubor PDB je vytvořen při sestavení s [příznakem/zi nebo /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (pro C/C++).  
   
- V [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], [/Fd](/cpp/build/reference/fd-program-database-file-name) možnost pojmenuje soubor .pdb vytvořený kompilátorem. Při vytváření projektu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pomocí průvodců **/Fd** je možnost nastavená na vytvoření souboru .pdb s názvem *projektu*.pdb.  
+V [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], [/Fd](/cpp/build/reference/fd-program-database-file-name) možnost pojmenuje soubor .pdb vytvořený kompilátorem. Při vytváření projektu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pomocí průvodců **/Fd** je možnost nastavená na vytvoření souboru .pdb s názvem *projektu*.pdb.  
   
- Pokud vytváříte aplikaci C/C++ pomocí souboru pravidel a zadáte **/zi** nebo **/zi** bez **/Fd**, skončíte se dvěma soubory PDB:  
+Pokud vytváříte aplikaci C/C++ pomocí souboru pravidel a zadáte **/zi** nebo **/zi** bez **/Fd**, skončíte se dvěma soubory PDB:  
   
--   VC*x*.pdb, kde *x* představuje verzi jazyka Visual C++, například VC11.pdb. Tento soubor obsahuje všechny informace o ladění pro jednotlivé soubory OBJ a je umístěn ve stejném adresáři jako soubor pravidel projektu.  
+* VC*x*.pdb, kde *x* představuje verzi jazyka Visual C++, například VC11.pdb. Tento soubor obsahuje všechny informace o ladění pro jednotlivé soubory OBJ a je umístěn ve stejném adresáři jako soubor pravidel projektu.  
   
--   Project.pdb tento soubor uchovává všechny informace o ladění pro soubor the.exe. Pro jazyk C/C++ je umístěn v podadresáři \debug.  
+* Project.pdb tento soubor uchovává všechny informace o ladění pro soubor the.exe. Pro jazyk C/C++ je umístěn v podadresáři \debug.  
   
- Pokaždé, když se vytvoří soubor s příponou OBJ, kompilátor C/C++ sloučí informace o ladění do VC*x*.pdb. Vložené informace obsahují informace o typu, ale neobsahují informace o symbolu, jako jsou definice funkce. Ano, i když každý zdrojový soubor obsahuje společné soubory hlaviček, jako \<windows.h >, funkce typedefs z těchto záhlaví jsou uloženy pouze jednou, namísto do každého souboru OBJ.  
+Pokaždé, když se vytvoří soubor s příponou OBJ, kompilátor C/C++ sloučí informace o ladění do VC*x*.pdb. Vložené informace obsahují informace o typu, ale neobsahují informace o symbolu, jako jsou definice funkce. Ano, i když každý zdrojový soubor obsahuje společné soubory hlaviček, jako \<windows.h >, funkce typedefs z těchto záhlaví jsou uloženy pouze jednou, namísto do každého souboru OBJ.  
   
- Linker vytvoří project.pdb, který obsahuje informace o ladění souboru EXE v projektu. Soubor project.pdb obsahuje úplné informace o ladění, včetně funkčních prototypů, nejen informace o typu uvedené v VC*x*.pdb. Oba soubory PDB umožňují přírůstkové aktualizace. Linker také vloží cestu k souboru .pdb ve vytvořeném souboru .exe nebo .dll.  
+Linker vytvoří project.pdb, který obsahuje informace o ladění souboru EXE v projektu. Soubor project.pdb obsahuje úplné informace o ladění, včetně funkčních prototypů, nejen informace o typu uvedené v VC*x*.pdb. Oba soubory PDB umožňují přírůstkové aktualizace. Linker také vloží cestu k souboru .pdb ve vytvořeném souboru .exe nebo .dll.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ladicí program používá cestu k souboru .pdb v souboru EXE nebo DLL k vyhledání souboru project.pdb. Pokud ladicí program nemůže najít soubor PDB na tomto místě nebo je-li cesta neplatná (například, pokud byl projekt přesunut do jiného počítače), ladicí program hledá cestu, která obsahuje soubor EXE, cesty symbolů zadané v **možnosti** Dialogové okno (**ladění** složce **symboly** uzlu). Ladicí program nenačte soubor .pdb, který neodpovídá laděnému spustitelnému souboru. Pokud ladicí program nemůže najít soubor .pdb **najít symboly** se zobrazí dialogové okno, které umožňuje hledat symboly nebo přidat další umístění pro cestu hledání.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ladicí program používá cestu k souboru .pdb v souboru EXE nebo DLL k vyhledání souboru project.pdb. Pokud ladicí program nemůže najít soubor PDB na tomto místě nebo je-li cesta neplatná (například, pokud byl projekt přesunut do jiného počítače), ladicí program hledá cestu, která obsahuje soubor EXE, cesty symbolů zadané v **možnosti** Dialogové okno (**ladění** složce **symboly** uzlu). Ladicí program nenačte soubor .pdb, který neodpovídá laděnému spustitelnému souboru. Pokud ladicí program nemůže najít soubor .pdb **najít symboly** se zobrazí dialogové okno, které umožňuje hledat symboly nebo přidat další umístění pro cestu hledání.  
   
- **Možnosti rozhraní .NET framework**  
+**Možnosti rozhraní .NET framework**  
   
- Soubor databáze programu (PDB) uchovává informace o ladění a stavu projektu, které umožňují přírůstkové propojení konfigurace ladění programu. Soubor PDB je vytvořen při sestavení s **/debug**. Můžete vytvářet aplikace pomocí **/Debug: Full** nebo **/debug:pdbonly**. Sestavování s **/Debug: Full** generuje laditelný kód. Sestavování s **/debug:pdbonly** generuje soubory PDB ale negeneruje `DebuggableAttribute` , který instruuje kompilátor JIT, že je k dispozici informace o ladění. Použití **/debug:pdbonly** Pokud chcete generovat soubory .pdb pro sestavení pro vydání, které nemá být laditelná. Další informace najdete v tématu [/Debug (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) nebo [/Debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
+Soubor databáze programu (PDB) uchovává informace o ladění a stavu projektu, které umožňují přírůstkové propojení konfigurace ladění programu. Soubor PDB je vytvořen při sestavení s **/debug**. Můžete vytvářet aplikace pomocí **/Debug: Full** nebo **/debug:pdbonly**. Sestavování s **/Debug: Full** generuje laditelný kód. Sestavování s **/debug:pdbonly** generuje soubory PDB ale negeneruje `DebuggableAttribute` , který instruuje kompilátor JIT, že je k dispozici informace o ladění. Použití **/debug:pdbonly** Pokud chcete generovat soubory .pdb pro sestavení pro vydání, které nemá být laditelná. Další informace najdete v tématu [/Debug (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) nebo [/Debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ladicí program používá cestu k souboru .pdb v souboru EXE nebo DLL k vyhledání souboru project.pdb. Pokud ladicí program nemůže najít soubor PDB na tomto místě nebo je-li cesta neplatná, ladicí program hledá cestu, která obsahuje soubor EXE, a poté cesty symbolů zadané v **možnosti** dialogové okno. Tato cesta je obvykle **ladění** složky **symboly** uzlu. Ladicí program nenačte soubor .pdb, který neodpovídá laděnému spustitelnému souboru. Pokud ladicí program nemůže najít soubor .pdb **najít symboly** se zobrazí dialogové okno, které umožňuje hledat symboly nebo přidat další umístění pro cestu hledání.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ladicí program používá cestu k souboru .pdb v souboru EXE nebo DLL k vyhledání souboru project.pdb. Pokud ladicí program nemůže najít soubor PDB na tomto místě nebo je-li cesta neplatná, ladicí program hledá cestu, která obsahuje soubor EXE, a poté cesty symbolů zadané v **možnosti** dialogové okno. Tato cesta je obvykle **ladění** složky **symboly** uzlu. Ladicí program nenačte soubor .pdb, který neodpovídá laděnému spustitelnému souboru. Pokud ladicí program nemůže najít soubor .pdb **najít symboly** se zobrazí dialogové okno, které umožňuje hledat symboly nebo přidat další umístění pro cestu hledání.  
   
- **Webové aplikace**  
+**Webové aplikace**  
   
- Konfigurační soubor aplikace (Web.config) musí být nastaven na režim ladění. Režim ladění způsobí, že technologie ASP.NET generuje dynamicky generované soubory a umožňuje ladicímu program připojit k aplikaci technologie ASP.NET. Visual Studio nastaví automaticky při spuštění ladění, pokud jste vytvořili projekt ze šablony webových projektů.  
+Konfigurační soubor aplikace (Web.config) musí být nastaven na režim ladění. Režim ladění způsobí, že technologie ASP.NET generuje dynamicky generované soubory a umožňuje ladicímu program připojit k aplikaci technologie ASP.NET. Visual Studio nastaví automaticky při spuštění ladění, pokud jste vytvořili projekt ze šablony webových projektů.  
   
 ##  <a name="BKMK_Find_source_files"></a> Najít zdrojové soubory  
   

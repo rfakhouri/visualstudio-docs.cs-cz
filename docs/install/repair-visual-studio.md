@@ -11,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 825131bff8d6ed3466a6418bb1aac98787a2daea
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 7e3b9917a1d745edc50cdd4bc0dfb37ce7d4841c
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139052"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48787990"
 ---
 # <a name="repair-visual-studio-2017"></a>Opravte Visual Studio 2017
 
@@ -24,7 +24,7 @@ Někdy instalaci sady Visual Studio stává poškozené. Toto můžete opravit o
 
 1. Najdete instalační program sady Visual Studio v počítači.
 
-     Například v počítači se systémem Windows 10 Anniversary Update, vyberte **Start**a poté přejděte k označení **V**, kde je hodnota uvedena jako **instalační program sady Visual Studio**.
+     Například v počítači se systémem Windows 10 Anniversary Update nebo novější, vyberte **Start**a poté přejděte k označení **V**, kde je hodnota uvedena jako **instalační program sady Visual Studio**.
 
      >[!NOTE]
      V některých počítačích může instalační program sady Visual Studio uvedené pod písmenem **"M"** jako **instalační program Visual Studio**.<br/><br/> Alternativně můžete najít instalační program sady Visual Studio v následujícím umístění: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`

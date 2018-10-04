@@ -13,16 +13,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9757158f6711c33333959fe66ef881c6f69a67b0
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 343d8c35433fe7d6fb454de5183bcc6a914d2a5e
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008444"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788016"
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Návod: Vytvoření jednoduché aplikace s C# nebo Visual Basic
 
-V tomto návodu se seznámíte s mnoha nástrojů, dialogových oknech a návrhářích, které můžete použít při vývoji aplikací pomocí sady Visual Studio. Budete vytvořit jednoduchou aplikaci "Hello, World", návrh uživatelského rozhraní, přidat kód a ladit chyby, zatímco informace o práci v integrovaném vývojovém prostředí (IDE).
+V tomto návodu se seznámíte s mnoha nástrojů, dialogových oknech a návrhářích, které můžete použít při vývoji aplikací pomocí sady Visual Studio. Budete vytvářet aplikace "Hello, World", návrh uživatelského rozhraní, přidat kód a ladit chyby, zatímco informace o práci v integrovaném vývojovém prostředí ([IDE](visual-studio-ide.md)).
 
 ## <a name="configure-the-ide"></a>Nastavení integrovaného vývojového prostředí (IDE)
 
@@ -48,9 +48,12 @@ Při vytváření aplikace v systému Visual Studio je třeba nejprve vytvořit
 
 1. Vyberte **OK**.
 
-Visual Studio vytvoří projekt aplikace HelloWPFApp a řešení, a **Průzkumníka řešení** zobrazuje různé soubory. **Návrhář WPF** ukazuje návrhové a XAML zobrazení *souboru MainWindow.xaml* v rozděleném zobrazení. Můžete snímků rozdělovač, abyste viděli víc nebo míň buď zobrazení. Můžete zobrazit pouze vizuální zobrazení nebo pouze zobrazení XAML. Následující položky se zobrazí v **Průzkumníka řešení**:
+   Visual Studio vytvoří projekt aplikace HelloWPFApp a řešení, a **Průzkumníka řešení** zobrazuje různé soubory. **Návrhář WPF** ukazuje návrhové a XAML zobrazení *souboru MainWindow.xaml* v rozděleném zobrazení. Můžete snímků rozdělovač, abyste viděli víc nebo míň buď zobrazení. Můžete zobrazit pouze vizuální zobrazení nebo pouze zobrazení XAML. Následující položky se zobrazí v **Průzkumníka řešení**:
 
-![Průzkumník řešení se soubory HelloWPFApp načíst](../ide/media/exploreide-hellowpfappfiles.png)
+   ![Průzkumník řešení se soubory HelloWPFApp načíst](../ide/media/exploreide-hellowpfappfiles.png)
+
+   > [!NOTE]
+   > Další informace o XAML (eXtensible Application Markup Language), najdete v článku [přehled XAML pro WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf) stránky.
 
 Poté, co jste projekt vytvořili, jej můžete upravit. S použitím **vlastnosti** okna (v **zobrazení** nabídky), můžete zobrazit a změnit možnosti položek projektu, ovládacích prvků a dalších položek v aplikaci.
 
@@ -84,7 +87,7 @@ Okno aplikace by mělo vypadat jako na následujícím obrázku:
 
 ![TextBlock – ovládací prvek na formuláři Greetings](../ide/media/exploreide-greetingswithtextblockonly.png)
 
-Značka XAML by měla vypadat následovně:
+Značka XAML by měl vypadat přibližně jako v následujícím příkladu:
 
 ```xaml
 <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
@@ -98,7 +101,7 @@ Značka XAML by měla vypadat následovně:
    Text="Select a message option and then choose the Display button."
    ```
 
-2. TextBlock – v případě potřeby znovu center a uložte změny stisknutím klávesy **Ctrl**+**S** nebo pomocí **souboru** položky nabídky.
+2. Uložte změny stisknutím kombinace kláves a v případě potřeby znovu Center ovládacím prvku TextBlock **Ctrl**+**S** nebo pomocí **souboru** položky nabídky.
 
 V dalším kroku přidejte dva [RadioButton](/dotnet/framework/wpf/controls/radiobutton) ovládací prvky do formuláře.
 
