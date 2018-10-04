@@ -1,5 +1,5 @@
 ---
-title: Nastavení pro EditorConfig v sadě Visual Studio konvence psaní kódu .NET
+title: Nastavení pro EditorConfig konvence psaní kódu .NET
 ms.date: 06/14/2018
 ms.topic: reference
 dev_langs:
@@ -18,18 +18,20 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a9b1b03050081659cac08c1b2c92c49f2c72273d
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 1ce281a8abed11a2b7d64945d33f9a13136cad9f
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496048"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48244027"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig nastavení konvence psaní kódu .NET
 
 V sadě Visual Studio 2017 můžete definovat a udržovat konzistentní kódu styl v vašeho základu kódu s použitím [EditorConfig](../ide/create-portable-custom-editor-options.md) souboru. EditorConfig obsahuje několik vlastností formátování core, jako například `indent_style` a `indent_size`. V sadě Visual Studio nastavení konvence psaní kódu .NET můžete také konfigurovat pomocí souboru EditorConfig. EditorConfig soubory umožňují povolit nebo zakázat jednotlivé konvence kódování .NET a nakonfigurovat míru, do kterého má být konvence vynucuje prostřednictvím úroveň závažnosti. Další informace o tom, jak můžete vynutit konzistenci ve vašem základu kódu EditorConfig, [vytvoření přenosné vlastní editor možnosti](../ide/create-portable-custom-editor-options.md).
 
-Podívejte se konci tohoto dokumentu pro .editorconfig příklad.
+Najdete na konci tohoto článku [souboru .editorconfig příklad](#example-editorconfig-file).
+
+## <a name="convention-categories"></a>Vytváření kategorie
 
 Existují tři podporované .NET kódování konvence kategorie:
 
@@ -683,8 +685,8 @@ Dim anon = New With {.name = name, .age = age}
 
 **DotNet\_styl\_raději\_automaticky\_vlastnosti**
 
-- Pokud toto pravidlo je nastaven na **true**, preferovat automatické vlastnosti prostřednictvím vlastností s privátní pomocné pole.
-- Pokud toto pravidlo je nastaven na **false**, preferovat vlastnosti s poli privátní zálohování prostřednictvím automatických vlastností.
+- Pokud toto pravidlo je nastaven na **true**, dáváte přednost autoproperties prostřednictvím vlastností s privátní pomocné pole.
+- Pokud toto pravidlo je nastaven na **false**, přes autoproperties preferovat vlastnosti s privátní pomocné pole.
 
 Příklady kódu:
 
@@ -1590,7 +1592,7 @@ try {
 
 **csharp\_new\_line\_before\_members\_in\_object_initializers**
 
-- Pokud toto pravidlo je nastaven na **true**, vyžadují členy objektu intiializers na samostatných řádcích.
+- Pokud toto pravidlo je nastaven na **true**, vyžadují členy inicializátory objektů na samostatných řádcích.
 - Pokud toto pravidlo je nastaven na **false**, vyžadují členy inicializátory objektů na stejném řádku.
 
 Příklady kódu:

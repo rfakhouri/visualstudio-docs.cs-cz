@@ -8,12 +8,12 @@ ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: d16a7ced93364ea9143c326c93f448fec577e034
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 88589ee5f7ca0e814b1e45591f2f1d5741f392bc
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341759"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243962"
 ---
 # <a name="deployment-in-visual-studio"></a>Nasazení v sadě Visual Studio
 
@@ -118,6 +118,42 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
 
 <ul class="panelContent cardsFTitle">
     <li>
+        <a href="/aspnet/core/tutorials/publish-to-azure-webapp-using-vs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy ASP.NET to Azure">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Nasazení technologie ASP.NET do Azure</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="tutorial-import-publish-settings-iis.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to IIS">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Import nastavení publikování a nasazení technologie ASP.NET do služby IIS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
         <a href="/dotnet/core/deploying/deploy-with-vs">
         <div class="cardSize">
             <div class="cardPadding">
@@ -154,17 +190,17 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
         </a>
     </li>
     <li>
-        <a href="/aspnet/core/tutorials/publish-to-azure-webapp-using-vs">
+        <a href="tutorial-import-publish-settings-azure.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy ASP.NET to Azure">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Nasazení technologie ASP.NET do Azure</h3>
+                        <h3>Import nastavení publikování a nasazení do služby Azure App Service</h3>
                     </div>
                 </div>
             </div>
@@ -201,42 +237,6 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
                     </div>
                     <div class="cardText">
                         <h3>Nasazení Pythonu do Azure</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="tutorial-import-publish-settings-azure.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to Azure App Service">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Import nastavení publikování a nasazení do služby Azure App Service</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="tutorial-import-publish-settings-iis.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to IIS">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Import nastavení publikování a nasazení do služby IIS</h3>
                     </div>
                 </div>
             </div>

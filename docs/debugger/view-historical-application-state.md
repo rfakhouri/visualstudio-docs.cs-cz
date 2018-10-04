@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b49e5659787420c90fb708f21b2810bb56fea1
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542627"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243949"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Kontrola předchozí nové aplikace pomocí zpětného kroku IntelliTrace v sadě Visual Studio
 
@@ -106,6 +106,8 @@ Dopad na celkový výkon taktování závisí na vaší aplikace. Nároky na po�
 * Pokud používáte režim události a snímky IntelliTrace ve verzích Windows starších než Windows 10 Fall Creators Update (RS3), a pokud je ladicí Cílová platforma aplikace nastavená na x86, nepřijímá snímky IntelliTrace.
 
     Alternativní řešení:
+    * Pokud jste na Windows 10 Anniversary Update (RS1) a nižší než verze 10.0.14393.2273, [nainstalovat KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+    * Pokud jste ve Windows 10 Creators Update (RS2) a nižší než verze 10.0.15063.1112, [nainstalovat KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
     * Instalaci nebo upgradu na Windows 10 Fall Creators Update (RS3). 
     * Další možností: 
         1. Nainstalujte z instalačního programu Visual studio sadu nástrojů VC++ 2015.3 v140 pro desktop (x86, x64).

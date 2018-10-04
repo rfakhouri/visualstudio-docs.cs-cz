@@ -1,22 +1,22 @@
 ---
-title: Na webu Opsgility výhoda v předplatných sady Visual Studio | Dokumentace Microsoftu
+title: Dovednosti mě nahoru – používá technologii Opsgility výhoda v předplatných sady Visual Studio | Dokumentace Microsoftu
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 09/19/2018
+ms.author: lank
+manager: lank
+ms.date: 10/02/2018
 ms.topic: Get-Started-Article
-description: Další informace o benefitech školení Opsgility součástí vybraného předplatného sady Visual Studio.
+description: Další informace o dovedností mě nahoru – používá technologii výhodu školení Opsgility součástí vybraného předplatného sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: d27e3a10e60a22a026824fe5eae7f7f64bd07414
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+searchscope: VS Subscriptions
+ms.openlocfilehash: 1eb58fb8667e2eebea1108d0df2d654917ed2702
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495528"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243910"
 ---
-# <a name="the-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Výhoda školení Opsgility v předplatných sady Visual Studio
+# <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Dovednosti mě až – používá technologii výhoda školení Opsgility v předplatných sady Visual Studio
 
 Vybraná předplatná sady Visual Studio zahrnují přístup k odborné školení na vyžádání s přístupem k živé laboratorní prostředí a certifikace postupy výuky až šest měsíců.
 
@@ -28,22 +28,21 @@ Vybraná předplatná sady Visual Studio zahrnují přístup k odborné školen�
     > ![Na webu Opsgility výhodu dlaždice](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
-3.  Budete přesměrováni na [Online školení Opsgility pro Visual Studio Enterprise](https://www.opsgility.com/vse) cílovou stránkou.  (Vám může být nabídnuta možnost zahájit relaci konverzace se specialistou podpory.  Pokud ho nechcete spustit chat, můžete minimalizovat tohoto okna.)  Vyplňte požadované kontaktní informace a klikněte na tlačítko **zaregistrovat**.
+3.  Budete přesměrováni na odpovídající dovednosti mě nahoru úvodní stránka pro vaše předplatné.  (Vám může být nabídnuta možnost zahájit relaci konverzace se specialistou podpory.  Pokud ho nechcete spustit chat, můžete minimalizovat tohoto okna.)  Vyplňte požadované informace o kontaktu, zaškrtněte políčko přijímá podmínky a ujednání a potom klikněte na **zaregistrovat**.
     > [!div class="mx-imgBorder"]
-    > ![Cílová stránka na webu Opsgility výhody](_img\vs-opsgility\vs-opsgility-registration.png)
+    > ![Cílová stránka na webu Opsgility výhody](_img\vs-opsgility\vs-vse-landing-page.png)
 
-4.  To je všechno je to!  Jste připraveni začít s výukou.  Abyste mohli začít, je seznam stop navrhované učení k dispozici na levé straně stránky.  Užijte si!
-    > [!div class="mx-imgBorder"]
-    > ![Na webu Opsgility výhodu domovské stránky](_img\vs-opsgility\vs-opsgility-home-cropped.png)
+4.  To je všechno je to!  Jste připraveni začít s výukou!  
+
 
 ## <a name="eligibility"></a>Způsobilost
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchodního prodeje | 12 měsíců       |  Ne.  K dispozici pro nové předplatitele pouze          |
-| Visual Studio Professional (standardní a roční cloudové) | VL, Azure, maloobchodního prodeje                                       | 6 měsíců                                                            |Ne.  K dispozici pro nové předplatitele pouze         |
-| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | 6 měsíců                                             |  Ne.  K dispozici pro nové předplatitele pouze         |
-| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | 6 měsíců                                              | Ne.  K dispozici pro nové předplatitele pouze         |
-| Visual Studio Dev Essentials | NENÍ K DISPOZICI  | 3 měsíce | Ne.  K dispozici pro nové předplatitele pouze  |
+| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchodního prodeje | 6 měsíců       |  Ne.  K dispozici pro nové předplatitele pouze          |
+| Visual Studio Professional (standardní a roční cloudové) | VL, Azure, maloobchodního prodeje                                       | 3 měsíce                                                            |Ne.  K dispozici pro nové předplatitele pouze         |
+| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | 3 měsíce                                             |  Ne.  K dispozici pro nové předplatitele pouze         |
+| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | 3 měsíce                                              | Ne.  K dispozici pro nové předplatitele pouze         |
+| Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici | NENÍ K DISPOZICI  |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
 
 *Vyloučí: Microsoft Partner Network (MPN), Vážíme si toho partnera Microsoftu (MVP), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
