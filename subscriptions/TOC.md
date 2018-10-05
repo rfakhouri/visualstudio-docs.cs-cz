@@ -17,7 +17,7 @@
 ## Využití výhod pro předplatitele
 ### Nástroje
 #### [Integrované vývojové prostředí sady Visual Studio](vs-ide-benefit.md)
-#### [Služby Azure DevOps](vs-azure-devops.md)
+#### [Azure DevOps](vs-azure-devops.md)
 #### [Kredit Azure](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft](vs-parasoft.md)
@@ -31,7 +31,7 @@
 ### [Profesní rozvoj](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [Opsgility](vs-opsgility.md)
+#### [Skill Me Up](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Školení na Xamarin University](vs-xamarin.md)
 #### [Předplatné MSDN Magazine](vs-msdn.md)
