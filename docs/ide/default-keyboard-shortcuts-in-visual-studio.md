@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd9f04b616ee7551f04a8c0b260eb69995943a8b
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: d95f2981d5f003792af5e6ee1fb84971142bb051
+ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371157"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48817357"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Výchozí klávesové zkratky v sadě Visual Studio
 
@@ -221,7 +221,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |EditorContextMenus.CodeWindow.CodeMap.ShowItem|**CTRL +.**|
 |EditorContextMenus.CodeWindow.Execute|**Ctrl + Alt + F5**|
 |EditorContextMenus.CodeWindow.GoToView|**CTRL + M, Ctrl + G**|
-|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL + K, Ctrl + O**|
+|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL + K, Ctrl + O** (písmeno "jednoznakový)|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL + K, Ctrl + T**<br /><br /> or<br /><br /> **CTRL + K, T**|
 
 ###  <a name="bkmk_file"></a> Soubor
@@ -232,9 +232,9 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |File.NewFile|**CTRL + N**|
 |File.NewProject|**Ctrl + Shift + N**|
 |File.NewWebSite|**Shift + Alt + N**|
-|File.OpenFile|**CTRL + O**|
-|File.OpenProject|**Ctrl + Shift + O**|
-|File.OpenWebSite|**Shift + Alt + O**|
+|File.OpenFile|**CTRL + O** (písmeno "jednoznakový)|
+|File.OpenProject|**Ctrl + Shift + O** (písmeno "jednoznakový)|
+|File.OpenWebSite|**Shift + Alt + O** (písmeno "jednoznakový)|
 |File.Print|**CTRL + P**|
 |File.SaveAll|**Ctrl + Shift + S**|
 |File.SaveSelectedItems|**CTRL + S**|
@@ -269,9 +269,9 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Project.AddNewItem|**Ctrl + Shift + A**|
 |Project.ClassWizard|**Ctrl + Shift + X**|
 |Project.Override|**Ctrl + Alt + in**|
-|Project.Previewchanges|**ALT +; Alt + C**|
-|Project.Publishselectedfiles|**ALT +; Alt + P**|
-|Project.Replaceselectedfilesfromserver|**ALT +; Alt + R**|
+|Project.Previewchanges|**ALT +;**  pak **Alt + C**|
+|Project.Publishselectedfiles|**ALT +;**  pak **Alt + P**|
+|Project.Replaceselectedfilesfromserver|**ALT +;**  pak **Alt + R**|
 
 ###  <a name="bkmk_projectContext"></a> Kontextové nabídky projektu a řešení
 
@@ -289,39 +289,39 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Refactor.ExtractMethod|**CTRL + R, Ctrl + M**|
 |Refactor.RemoveParameters|**CTRL + R, Ctrl + V**|
 |Refactor.Rename|**CTRL + R, Ctrl + R**|
-|Refactor.ReorderParameters|**CTRL + R, Ctrl + O**|
+|Refactor.ReorderParameters|**CTRL + R, Ctrl + O** (písmeno "jednoznakový)|
 
 ###  <a name="bkmk_solutionexplorerGLOBAL"></a> Průzkumník řešení
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
-|SolutionExplorer.OpenFilesFilter|**CTRL + [, O**<br /><br /> or<br /><br /> **CTRL + [, Ctrl + O**|
-|SolutionExplorer.PendingChangesFilter|**CTRL + [, P**<br /><br /> or<br /><br /> **CTRL + [, Ctrl + P**|
-|SolutionExplorer.SyncWithActiveDocument|**CTRL + [, S**<br /><br /> or<br /><br /> **CTRL + [, Ctrl + S**|
+|SolutionExplorer.OpenFilesFilter|**CTRL + [**, **O** (písmeno "jednoznakový)<br /><br /> or<br /><br /> **CTRL + [**, **Ctrl + O** (písmeno "jednoznakový)|
+|SolutionExplorer.PendingChangesFilter|**CTRL + [**, **P**<br /><br /> or<br /><br /> **CTRL + [**, **Ctrl + P**|
+|SolutionExplorer.SyncWithActiveDocument|**CTRL + [**, **S**<br /><br /> or<br /><br /> **CTRL + [**, **Ctrl + S**|
 
 ###  <a name="bkmk_team"></a> Tým
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
-|Team.Git.GoToGitBranches|**CTRL + 0, Ctrl + N**<br /><br /> or<br /><br /> **CTRL + 0, N**|
-|Team.Git.GoToGitChanges|**CTRL + 0, Ctrl + G**<br /><br /> or<br /><br /> **CTRL + 0, G**|
-|Team.Git.GoToGitCommits|**CTRL + 0, Ctrl + O**<br /><br /> or<br /><br /> **CTRL + 0, O**|
+|Team.Git.GoToGitBranches|**CTRL + 0** (nula), **Ctrl + N**<br /><br /> or<br /><br /> **CTRL + 0, N**|
+|Team.Git.GoToGitChanges|**CTRL + 0** (nula), **Ctrl + G**<br /><br /> or<br /><br /> **CTRL + 0, G**|
+|Team.Git.GoToGitCommits|**CTRL + 0** (nula), **Ctrl + O** (písmeno "jednoznakový)<br /><br /> or<br /><br /> **CTRL + 0, O**|
 |Team.TeamExplorerSearch|**CTRL +.**|
 
 ###  <a name="bkmk_TFcontext"></a> Kontextové nabídky Team Foundation
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
-|TeamFoundationContextMenus.Commands.GoToBuilds|**CTRL + 0, Ctrl + B**<br /><br /> or<br /><br /> **CTRL + 0, B**|
-|TeamFoundationContextMenus.Commands.GoToConnect|**CTRL + 0, Ctrl + C**<br /><br /> or<br /><br /> **CTRL + 0, C**|
-|TeamFoundationContextMenus.Commands.GoToDocuments|**CTRL + 0, Ctrl + D**<br /><br /> or<br /><br /> **CTRL + 0, D**|
-|TeamFoundationContextMenus.Commands.GoToHome|**CTRL + 0, Ctrl + H**<br /><br /> or<br /><br /> **CTRL + 0, H**|
-|TeamFoundationContextMenus.Commands.GoToMyWork|**CTRL + 0, Ctrl + M**<br /><br /> or<br /><br /> **CTRL + 0, M**|
-|TeamFoundationContextMenus.Commands.GoToPendingChanges|**CTRL + 0, Ctrl + P**<br /><br /> or<br /><br /> **CTRL + 0, P**|
-|TeamFoundationContextMenus.Commands.GoToReports|**CTRL + 0, Ctrl + R**<br /><br /> or<br /><br /> **CTRL + 0, R**|
-|TeamFoundationContextMenus.Commands.GoToSettings|**CTRL + 0, Ctrl + S**<br /><br /> or<br /><br /> **CTRL + 0, S**|
-|TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL + 0, Ctrl + A**<br /><br /> or<br /><br /> **CTRL + 0, A**|
-|TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL + 0, Ctrl + W**<br /><br /> or<br /><br /> **CTRL + 0, W**|
+|TeamFoundationContextMenus.Commands.GoToBuilds|**CTRL + 0** (nula), **Ctrl + B**<br /><br /> or<br /><br /> **CTRL + 0, B**|
+|TeamFoundationContextMenus.Commands.GoToConnect|**CTRL + 0** (nula), **Ctrl + C**<br /><br /> or<br /><br /> **CTRL + 0, C**|
+|TeamFoundationContextMenus.Commands.GoToDocuments|**CTRL + 0** (nula), **Ctrl + D**<br /><br /> or<br /><br /> **CTRL + 0, D**|
+|TeamFoundationContextMenus.Commands.GoToHome|**CTRL + 0** (nula), **Ctrl + H**<br /><br /> or<br /><br /> **CTRL + 0, H**|
+|TeamFoundationContextMenus.Commands.GoToMyWork|**CTRL + 0** (nula), **Ctrl + M**<br /><br /> or<br /><br /> **CTRL + 0, M**|
+|TeamFoundationContextMenus.Commands.GoToPendingChanges|**CTRL + 0** (nula), **Ctrl + P**<br /><br /> or<br /><br /> **CTRL + 0, P**|
+|TeamFoundationContextMenus.Commands.GoToReports|**CTRL + 0** (nula), **Ctrl + R**<br /><br /> or<br /><br /> **CTRL + 0, R**|
+|TeamFoundationContextMenus.Commands.GoToSettings|**CTRL + 0** (nula), **Ctrl + S**<br /><br /> or<br /><br /> **CTRL + 0, S**|
+|TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL + 0** (nula), **Ctrl + A**<br /><br /> or<br /><br /> **CTRL + 0, A**|
+|TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL + 0** (nula), **Ctrl + W**<br /><br /> or<br /><br /> **CTRL + 0, W**|
 
 ###  <a name="bkmk_test"></a> Test
 
@@ -379,7 +379,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |View.Notifications|**CTRL + W, N**<br /><br /> or<br /><br /> **CTRL + W, Ctrl + N**|
 |View.ObjectBrowser|**Ctrl + Alt + J**|
 |View.ObjectBrowserGoToSearchCombo|**CTRL + K, Ctrl + R**|
-|View.Output|**Ctrl + Alt + O**|
+|View.Output|**Ctrl + Alt + O** (písmeno "jednoznakový)|
 |View.PopBrowseContex|**Ctrl + Shift + 8**|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**SHIFT + F4**|
@@ -532,7 +532,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Graphics.MovePixelSelectionLeft|**Shift + Alt + šipka doleva**|
 |Graphics.MovePixelSelectionRight|**Shift + Alt + šipka vpravo**|
 |Graphics.MovePixelSelectionUp|**Shift + Alt + šipka nahoru**|
-|Graphics.ZoomToActualSize|**Shift + Alt + 0**|
+|Graphics.ZoomToActualSize|**Shift + Alt + 0** (nula)|
 |Graphics.ZoomToFitInWindow|**Shift + Alt + 9**|
 |Graphics.ZoomIn|**Shift + Alt +=**|
 |Graphics.ZoomOut|**Shift + Alt +-**|
@@ -746,7 +746,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |File.Rename|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**Alt + Home**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**ALT + Šipka dolů**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**ALT + 0**|
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**ALT + 0** (nula)|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent|**ALT + Šipka nahoru**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection1Content|**ALT + 1**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection2Content|**ALT + 2**|
@@ -785,7 +785,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |Edit.CollapseAllOutlining|**CTRL + M, Ctrl + A**|
 |Edit.CollapseCurrentRegion|**CTRL + M, Ctrl + S**|
 |Edit.CollapseTag|**CTRL + M, Ctrl + T**|
-|Edit.CollapseToDefinitions|**CTRL + M, Ctrl + O**|
+|Edit.CollapseToDefinitions|**CTRL + M, Ctrl + O** (písmeno "jednoznakový)|
 |Edit.CommentSelection|**CTRL + K, Ctrl + C**|
 |Edit.CompleteWord|**CTRL + MEZERNÍK**<br /><br /> or<br /><br /> **ALT + Šipka vpravo**|
 |Edit.CopyParameterTip|**Ctrl + Shift + Alt + C**|
@@ -1094,7 +1094,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 |WorkflowDesigner.Restore|**CTRL + E, Ctrl + R**<br /><br /> or<br /><br /> **CTRL + E, R**|
 |WorkflowDesigner.ShowHideArgumentDesigner|**CTRL + E, Ctrl + A**<br /><br /> or<br /><br /> **CTRL + E, A**|
 |WorkflowDesigner.ShowHideImportsDesigner|**CTRL + E, Ctrl + I**<br /><br /> or<br /><br /> **CTRL + E, můžu**|
-|WorkflowDesigner.ShowHideOverviewMap|**CTRL + E, Ctrl + O**<br /><br /> or<br /><br /> **CTRL + E, O**|
+|WorkflowDesigner.ShowHideOverviewMap|**CTRL + E, Ctrl + O** (písmeno "jednoznakový)<br /><br /> or<br /><br /> **CTRL + E, O**|
 |WorkflowDesigner.ShowHideVariableDesigner|**CTRL + E, Ctrl + V**<br /><br /> or<br /><br /> **CTRL + E, V**|
 |WorkflowDesigner.ToggleSelection|**CTRL + E, Ctrl + S**<br /><br /> or<br /><br /> **CTRL + E, S**|
 |WorkflowDesigner.ZoomIn|**CTRL + Num +**|
@@ -1104,7 +1104,7 @@ Oddíly v následující tabulce obsahují příkazy, které jsou globální, ta
 
 |Příkazy|Klávesové zkratky|
 |--------------|------------------------|
-|Design.FitAll|**CTRL + 0**|
+|Design.FitAll|**CTRL + 0** (nula)|
 |Design.ShowHandles|**F9**|
 |Design.ZoomIn|**Ctrl + Alt +=**|
 |Design.ZoomOut|**Ctrl + Alt +-**|
