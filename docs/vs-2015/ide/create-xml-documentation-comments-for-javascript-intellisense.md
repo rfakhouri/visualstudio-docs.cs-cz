@@ -19,17 +19,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74302bb9aea552bfc4e8fedc93fd7aebc69fb4b2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3801fb58f09ac70c26e21304957e31f7b3ec4ddc
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673653"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881017"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Vytvoření komentářů k dokumentaci XML pro technologie IntelliSense jazyka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dokumentace k sadě Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+Nejnovější verzi tohoto tématu můžete najít v [dokumentace k sadě Visual Studio 2017](/visualstudio/).  
   
 *Dokumentační komentáře XML* jsou JavaScript komentáře, že přidáte do skriptu k poskytnutí informací o kódu prvky, jako jsou functions, polí a proměnné. V sadě Visual Studio tyto textové popisy jsou zobrazovány s technologií IntelliSense při odkazu funkce skriptu.  
   

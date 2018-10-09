@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbb444a8de184f47bc8c6915bbf0fafcaf6c7ca3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0a9787e7e0a203a77e456ec61ea8a80057ce92
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675102"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879977"
 ---
 # <a name="just-my-code"></a>Pouze můj kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -195,7 +195,7 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
 |-|-|  
 |**MyCode**|Uživatelský kód, který vlastníte a řídíte vy.|  
 |**LibraryCode**|Neuživatelský kód z knihovny, které používáte, pravidelně a vaše aplikace závisí na fungovat správně (třeba WinJS nebo knihovny jQuery).|  
-|**UnrelatedCode**|Neuživatelský kód, který mohl být spuštěn ve vaší aplikaci, ale nevlastníte a vaše aplikace nemusí spoléhat přímo na něm fungovala správně (například reklamní sady SDK, která zobrazuje služby Active Directory). V projektech pro Windows Store je jakýkoli kód, který je načten do vaší aplikace z HTTPS URI nebo HTTP také považován za UnrelatedCode.|  
+|**UnrelatedCode**|Neuživatelský kód, který mohl být spuštěn v aplikaci, ale není vlastníkem a vaše aplikace nemusí spoléhat přímo na něm fungovala správně (například reklamní sady SDK, která zobrazuje služby Active Directory). V projektech pro Windows Store je jakýkoli kód, který je načten do vaší aplikace z HTTPS URI nebo HTTP také považován za UnrelatedCode.|  
   
  Ladicí program jazyka JavaScript automaticky rozděluje tyto typy kódu:  
   

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10ff36702f4fba2ed5093e866ac57a099fbbc904
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1507a297c1baf7f410bde1c6d32e48b43a9cdc2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081807"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880225"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Postupy: zobrazování seznamu položek oddělených čárkami
 Při práci s položkou seznamů v [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), je někdy užitečné zobrazit obsah těchto položek seznamů tak, aby se snadno čitelný. Nebo můžete mít úlohu, která přebírá seznam položek oddělené speciální oddělovacího řetězce. V obou těchto případech můžete zadat řetězec oddělovače pro seznam položek.  
@@ -45,7 +45,7 @@ Při práci s položkou seznamů v [!INCLUDE[vstecmsbuildengine](../msbuild/incl
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Příklad  
- V tomto příkladu [Exec](../msbuild/exec-task.md) úkolů spustí nástroj findstr najít zadané textové řetězce v souboru *Phrases.txt*. V příkazu findstr jsou označeny literál řetězce **sady** přepnout, tak oddělovač položek `/c:` je vložen mezi položkami v `@(Phrase)` seznam položek.  
+ V tomto příkladu [Exec](../msbuild/exec-task.md) úkolů spustí nástroj findstr najít zadané textové řetězce v souboru *Phrases.txt*. V příkazu findstr jsou označeny literál řetězce **-c:** přepnout, tak oddělovač položek `-c:` je vložen mezi položkami v `@(Phrase)` seznam položek.  
   
  V tomto příkladu je ekvivalentní příkaz příkazového řádku:  
   

@@ -13,12 +13,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 469ce43d35d0fdf282a164596fa4cd48eb442534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8f6d371bea8927c272f97dccd1c8d033635616a
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685119"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880057"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Poradce při potížích s emulátorem sady Visual Studio pro Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,7 +142,7 @@ Toto téma obsahuje informace, které pomáhají při řešení problémů, kter
   
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_Man")  
   
-     Instalační program je nesprávný a používáte Windows 10, může pokusit se [přeinstalovat síťová zařízení pomocí příkazu – d netcfg](http://windows.microsoft.com/en-us/windows-10/fix-network-connection-issues) (část 6).  
+     Instalační program je nesprávný a používáte Windows 10, může pokusit se [přeinstalovat síťová zařízení pomocí příkazu – d netcfg](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (část 6).  
   
 -   Pokud těchto kroků problém nevyřeší, přečtěte si téma [emulátoru se nepodaří spustit (první použití)](#NoStart) o 3. stran software, který může být zasahovala do emulátoru.  
   

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 366e73473b442ee52ceac10e1398a7bb3e2b52f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 72a68b1e63df42a10851c292f73f9fe54aa7e3fb
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178210"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881056"
 ---
 # <a name="msbuild-task"></a>MSBuild – úloha
 Sestaví [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty z jiného [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.  
@@ -37,7 +37,7 @@ Sestaví [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
 |---------------|-----------------|  
 |`BuildInParallel`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, v zadaných projektů `Projects` parametru jsou vytvořeny paralelně, pokud je to možné. Výchozí hodnota je `false`.|  
 |`Projects`|Požadovaný parametr <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Určuje soubory projektu k sestavení.|  
-|`Properties`|Volitelné `String` parametru.<br /><br /> Seznam oddělený středníkem dvojice název/hodnota vlastnosti použít jako globální vlastnosti podřízený projekt. Pokud tento parametr zadán, je funkčně srovnatelný s nastavením vlastnosti, které mají **/property** přepnout při sestavení s [ *MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Příklad:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Při předání vlastnosti projektu prostřednictvím `Properties` parametr [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vytvoří novou instanci projektu i v případě, že už je načtený soubor projektu. Po vytvoření nové instance projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] považuje za jiný projekt, který má jiné globální vlastnosti a, který může být sestaven paralelně s jinými instancemi projektu. Například může vytvořit konfiguraci vydané verze ve stejnou dobu jako konfigurace ladění.|  
+|`Properties`|Volitelné `String` parametru.<br /><br /> Seznam oddělený středníkem dvojice název/hodnota vlastnosti použít jako globální vlastnosti podřízený projekt. Pokud tento parametr zadán, je funkčně srovnatelný s nastavením vlastnosti, které mají **– vlastnost** přepnout při sestavení s [ *MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Příklad:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Při předání vlastnosti projektu prostřednictvím `Properties` parametr [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vytvoří novou instanci projektu i v případě, že už je načtený soubor projektu. Po vytvoření nové instance projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] považuje za jiný projekt, který má jiné globální vlastnosti a, který může být sestaven paralelně s jinými instancemi projektu. Například může vytvořit konfiguraci vydané verze ve stejnou dobu jako konfigurace ladění.|  
 |`RebaseOutputs`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, relativní cesty cílové výstupní položky ze sestavených projektech mají jejich cesty, upraví se vzhledem k volání projektu. Výchozí hodnota je `false`.|  
 |`RemoveProperties`|Volitelné `String` parametru.<br /><br /> Určuje sadu globálních vlastností k odebrání.|  
 |`RunEachTargetSeparately`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] úloha vyvolá každý cíl v seznamu předán [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] postupně, místo ve stejnou dobu. Nastavení tohoto parametru na `true` zaručuje, že další cíle jsou vyvolány i v případě, že dříve vyvolaný cíle se nezdařilo. V opačném případě chybu sestavení zastaví vyvolání všechny následné cíle. Výchozí hodnota je `false`.|  

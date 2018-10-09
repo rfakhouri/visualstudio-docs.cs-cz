@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8aaf608c4a03816fb109e65c2b8d71d06a279799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679353"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880232"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analyzátor a skener služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>Analýza kódu pro párování závorek  
  Tento příklad ukazuje tok řízení pro odpovídající uzavírací závorkou, která uživatel zadal. V tomto procesu, který se používá pro barevné zvýraznění skener slouží také určit typ tokenu a určuje, zda token, který můžete aktivovat operace shody složenou závorku. Pokud trigger nenajde, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda je volána k nalezení odpovídající závorce. A konečně dva složené závorky jsou zvýrazněné.  
   
- I když složené závorky se používají v názvech aktivačních událostí a analyzovat z důvodů, tento proces není omezený na skutečné složené závorky. Jakýkoli pár znaků, které je nastaven na odpovídající spárovat se podporuje. Mezi příklady patří (a), \< a >, a [a].  
+ I když složené závorky se používají v názvech aktivačních událostí a analyzovat z důvodů, tento proces není omezený na skutečné složené závorky. Pár znaků, který je nastaven na odpovídající dvojice je podporována. Mezi příklady patří (a), \< a >, a [a].  
   
  Předpokládejme, že služba jazyka podporuje odpovídající složené závorky.  
   

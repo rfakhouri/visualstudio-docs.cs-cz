@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d524626187e95a02654f00ca7cf7921fd819e7c6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b68330e4cfb8e1d403caa1c48d26ad29aacc19f7
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081654"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880549"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Postupy: sestavení stejných zdrojových souborů s různými možnostmi
 Při sestavování projektů často kompilaci stejné komponenty s možnostmi jiné sestavení. Můžete například vytvořit sestavení pro ladění pomocí informací o symbolu nebo sestavení pro vydání se žádné informace o symbolech, ale s povolenými optimalizacemi. Nebo můžete vytvořit projektu pro spuštění na konkrétní platformě, jako je například x86 nebo [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. V těchto případech se většina možností sestavení zůstat stejná; řízení konfigurace sestavení se změní jenom pár možností. S [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], použijete k vytvoření konfigurace sestavení různé vlastnosti a podmínky.  
@@ -50,34 +50,34 @@ Při sestavování projektů často kompilaci stejné komponenty s možnostmi ji
     ```  
   
 ## <a name="specify-properties-on-the-command-line"></a>Zadat vlastnosti na příkazovém řádku  
- Jakmile váš soubor projektu je napsané tak, aby přijímal více konfigurací, musíte mít možnost změnit tyto konfigurace pokaždé, když se sestavení projektu. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Tato možnost nabízí a umožňuje zadat na příkazovém řádku pomocí vlastnosti **/property** nebo **/p** přepnout.  
+ Jakmile váš soubor projektu je napsané tak, aby přijímal více konfigurací, musíte mít možnost změnit tyto konfigurace pokaždé, když se sestavení projektu. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Tato možnost nabízí a umožňuje zadat na příkazovém řádku pomocí vlastnosti **– vlastnost** nebo **-p** přepnout.  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Nastavení vlastnosti projektu na příkazovém řádku  
   
--   Použití **/property** přepnout s vlastností a hodnota vlastnosti. Příklad:  
+-   Použití **– vlastnost** přepnout s vlastností a hodnota vlastnosti. Příklad:  
   
     ```cmd  
-    msbuild file.proj /property:Flavor=Debug  
+    msbuild file.proj -property:Flavor=Debug  
     ```  
   
     or  
   
     ```cmd  
-    Msbuild file.proj /p:Flavor=Debug  
+    Msbuild file.proj -p:Flavor=Debug  
     ```  
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Chcete-li zadat více než jednu vlastnost projektu na příkazovém řádku  
   
--   Použít **/property** nebo **/p** přepínač vícekrát s vlastností a hodnot vlastností, nebo použijte jednu **/property** nebo **/p** přepnutí a víc vlastností oddělujte středníkem (;). Příklad:  
+-   Použít **– vlastnost** nebo **-p** přepínač vícekrát s vlastností a hodnot vlastností, nebo použijte jednu **– vlastnost** nebo **-p** přepnutí a víc vlastností oddělujte středníkem (;). Příklad:  
   
     ```cmd  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
+    msbuild file.proj -p:Flavor=Debug;Platform=x86  
     ```  
   
     or
   
     ```cmd  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
+    msbuild file.proj -p:Flavor=Debug -p:Platform=x86  
     ```  
   
  Proměnné prostředí jsou také považovány za vlastnosti a jsou automaticky součástí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Další informace o použití proměnných prostředí najdete v tématu [postupy: použití proměnných prostředí v sestavení](../msbuild/how-to-use-environment-variables-in-a-build.md).  
@@ -92,13 +92,13 @@ Při sestavování projektů často kompilaci stejné komponenty s možnostmi ji
  Chcete-li sestavení verze ladění tohoto projektu, zadejte:  
   
 ```cmd  
-msbuild consolehwcs1.proj /p:flavor=debug  
+msbuild consolehwcs1.proj -p:flavor=debug  
 ```  
   
  Chcete-li sestavení prodejní verze tohoto projektu, zadejte:  
   
 ```cmd  
-msbuild consolehwcs1.proj /p:flavor=retail  
+msbuild consolehwcs1.proj -p:flavor=retail  
 ```  
   
 ```xml  
@@ -159,7 +159,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
  K sestavení projektu, zadejte následující příkaz:  
   
 ```cmd  
-msbuild colortest.proj /t:go /property:Color=Green  
+msbuild colortest.proj -t:go -property:Color=Green  
 ```  
   
 ```xml  

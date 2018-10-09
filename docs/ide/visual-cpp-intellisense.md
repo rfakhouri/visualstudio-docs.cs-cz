@@ -1,26 +1,34 @@
 ---
 title: IntelliSense pro C++
-ms.date: 09/06/2018
+ms.date: 10/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27b7912e624881e7dcd40ff2fdb9476d61d29e1c
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: ab520f7cdf512ebbfd07770d63d2ed50caee7a55
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124902"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879847"
 ---
 # <a name="visual-c-intellisense-features"></a>Funkce Visual C++ IntelliSense
 
 Technologie IntelliSense je název zadaný pro sadu funkcí, které usnadňují psaní kódu pohodlnější. Technologie IntelliSense jazyka C++ je k dispozici pro samostatné soubory stejně jako u souborů, které jsou součástí projektu jazyka C++. V projektech pro různé platformy, některé funkce technologie IntelliSense jsou k dispozici v *.cpp* a *.c* soubory v projektu sdíleného kódu, i když jsou v kontextu Android nebo iOS.
 
-Pro přístup k IntelliSense můžete použít položky nabídky a klávesové zkratky je znázorněno na následujícím obrázku:
+Tento článek obsahuje přehled technologie IntelliSense jazyka C++, funkce. Informace o tom, jak nakonfigurovat projekt tak, aby IntelliSense a řešení potíží, najdete v části [konfigurace projektu C++ IntelliSense](visual-cpp-intellisense-configuration.md).
+
+## <a name="intellisense-features-in-c"></a>Funkce technologie IntelliSense v jazyce C++
+
+Technologie IntelliSense je název zadaný pro sadu funkcí, které usnadňují psaní kódu pohodlnější. Protože různé myšlenky o tom, co je vhodné mají různí lidé, téměř všechny funkce technologie IntelliSense můžete povolit nebo zakázat v **možnosti** dialogovém okně **textový Editor**  >  **C/C++** > **Advanced**. **Možnosti** dialogové okno je k dispozici **nástroje** nabídky na řádku nabídek.
+
+![Nástroj pro dialogové okno Možnosti](../ide/media/sintellisensecpptoolsoptions.PNG)
+
+Pro přístup k IntelliSense můžete použít položky nabídky a klávesové zkratky je znázorněno na následujícím obrázku.
 
 ![Nabídky technologie IntelliSense](../ide/media/vs2015_cpp_intellisense_menu.png)
 
@@ -32,7 +40,7 @@ Seznam ikon a jejich vysvětlení najdete v tématu [ikony zobrazení třídy a 
 
 ![Visual C&#43; &#43; okno Dokončit slovo](../ide/media/vs2015_cpp_complete_word.png)
 
-Při prvním seznamu členů je vyvolána, pouze zobrazuje členy, které jsou k dispozici pro aktuální kontext. Pokud stisknete **Ctrl**+**J** , zobrazuje všechny členy, bez ohledu na přístupnost. Pokud jste ho vyvolat třetí čas, zobrazí se ještě širší seznam prvky programu. Můžete ji vypnout seznam členů v **možnosti** dialogovém okně **textový Editor** > **C/C++** > **Obecné**  >  **Automatický seznam členů**.
+Při prvním vyvolání seznamu členů, pouze zobrazuje členy, které jsou k dispozici pro aktuální kontext. Pokud stisknete **Ctrl**+**J** , zobrazuje všechny členy, bez ohledu na přístupnost. Pokud jste ho vyvolat třetí čas, zobrazí se ještě širší seznam prvky programu. Můžete ji vypnout seznam členů v **možnosti** dialogovém okně **textový Editor** > **C/C++** > **Obecné**  >  **Automatický seznam členů**.
 
 ![Visual C&#43; &#43; seznam členů](../ide/media/vs2015_cpp_list_members.png)
 
@@ -100,4 +108,5 @@ Protože různé myšlenky o tom, co je vhodné mají různí lidé, téměř v�
 
 ## <a name="see-also"></a>Viz také:
 
-- [Používání technologie IntelliSense](../ide/using-intellisense.md)
+- [Používání atributu IntelliSense](../ide/using-intellisense.md)
+- [Konfigurace projektu C++ IntelliSense](visual-cpp-intellisense-configuration.md)

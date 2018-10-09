@@ -16,12 +16,12 @@ ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34cf96f38d169994d85f758c9453b6ad15ad6390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99561ea9e1fe46f5e0f90bf994c8b9eaf4b11d32
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666921"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880518"
 ---
 # <a name="registering-an-expression-evaluator"></a>Registrace vyhodnocovače výrazů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Nejnovější verzi tohoto tématu můžete najít v [registrace vyhodnocovače 
 ## <a name="managed-code-expression-evaluator"></a>Chyba při vyhodnocování výrazu spravovaný kód  
  Spravovaný kód EE je implementován jako knihovna tříd, což je knihovnu DLL, která se zaregistruje ve službě prostředí modelu COM, obvykle spuštěna voláním do programu VSIP **regpkg.exe**. Skutečný proces vytváření klíčů registru pro prostředí modelu COM je automaticky zpracována.  
   
- Metoda hlavní třídy je označena <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, označující, že je tato metoda se volá, když se knihovna DLL je registrována pomocí modelu COM. Tento způsob registrace, často označované jako `RegisterClass`, provede úlohu registrace knihovny DLL pomocí sady Visual Studio. Odpovídající `UnregisterClass` (označené <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), následky `RegisterClass` při odinstalaci knihovny DLL.  
+ Metoda hlavní třídy je označena <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, označující, že je metoda se volá, když se knihovna DLL je registrována pomocí modelu COM. Tento způsob registrace, často označované jako `RegisterClass`, provede úlohu registrace knihovny DLL pomocí sady Visual Studio. Odpovídající `UnregisterClass` (označené <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), následky `RegisterClass` při odinstalaci knihovny DLL.  
   
  Jako u EE napsanou v nespravovaném kódu; jsou vytvořeny stejným položky registru jediným rozdílem je, že nemá žádné pomocná funkce, jako `SetEEMetric` proveďte práci za vás. Příklad tohoto procesu registrace nebo zrušení registrace vypadá takto:  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc6cbcb4bba7e808a72ca389ab8ad9157e80375c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670105"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880718"
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Můžete buď stáhnout nástroje remote tools přímo v zařízení nebo na ser
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Ke stažení a instalaci nástrojů remote tools
   
-1.  Na počítači zařízení nebo server, který chcete ladit (místo počítači sadu Visual Studio), získat správnou verzi nástroje remote tools.
+1.  Na zařízení nebo server počítač, který chcete ladit (nikoli na počítači sadu Visual Studio) získáte správná verze nástrojů remote tools.
 
     |Version|Odkaz|Poznámky|
     |-|-|-|
@@ -305,8 +305,8 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
  [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [Konfigurace brány Windows Firewall pro vzdálené ladění](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md)   
- [Vzdálené ladění ASP.NET na počítači vzdálené služby IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
- [Vzdálené ladění chyby a řešení potíží](../debugger/remote-debugging-errors-and-troubleshooting.md)
+ [Vzdálené ladění ASP.NET na vzdáleném počítači se službou IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
+ [Chyby při vzdáleném ladění a jejich řešení](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
 
 

@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 21ff2211632cba63dafe2a7abf1964e7a89e87c3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 6efc22f916973f292daa97bdd6b5129ac9311f04
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624250"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881069"
 ---
 # <a name="javascript-support"></a>Podpora jazyka JavaScript
 
@@ -34,7 +34,7 @@ V dialogovém okně Nový soubor, vyberte **Web > soubor JS sady prázdné** neb
 
 ## <a name="intellisense"></a>technologie IntelliSense
 
-Visual Studio pro Mac používá [jazyková služba JavaScriptu](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense) na poskytovat technologii Intellisense, díky kterým inteligentní doplňování kódu, informace o parametrech a seznamech členů při psaní kódu.
+Visual Studio pro Mac používá [jazyková služba JavaScriptu](/visualstudio/ide/javascript-intellisense) na poskytovat technologii Intellisense, díky kterým inteligentní doplňování kódu, informace o parametrech a seznamech členů při psaní kódu.
 
 Technologie intellisense jazyka JavaScript v sadě Visual Studio pro Mac může být založen na odvození typu proměnné, JSDoc nebo Typescript deklarace.
 

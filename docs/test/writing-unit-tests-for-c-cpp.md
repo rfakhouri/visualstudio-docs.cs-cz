@@ -1,20 +1,20 @@
 ---
 title: Zápis testů jednotek pro C/C++ v sadě Visual Studio
-ms.date: 11/04/2017
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7838d4435c71fa332711c0ef3794c8bed556827a
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341369"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879219"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zápis testů jednotek pro C/C++ v sadě Visual Studio
 
@@ -31,6 +31,10 @@ Visual Studio obsahuje tyto testovací rozhraní C++ se žádné další soubory
 - CTest
 
 Kromě rozhraní nainstalované můžete napsat vlastní testovací adaptér pro libovolné framework, které chcete použít v sadě Visual Studio. Testovací adaptér můžete integrovat testů jednotek s **Průzkumníka testů** okna. Několik adaptérů třetích stran jsou k dispozici na [Visual Studio Marketplace](https://marketplace.visualstudio.com). Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](install-third-party-unit-test-frameworks.md).
+
+**Visual Studio 2017 verze 15.7 (Professional a Enterprise)**
+
+Projekty testování částí C++ podporu [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
 **Visual Studio 2017 verze 15.5**
 
@@ -80,13 +84,14 @@ TEST_CLASS a TEST_METHOD jsou součástí [nativní testovací rozhraní Microso
 TEST_METHOD vrací hodnotu void. K vytvoření výsledku testu, použijte statické metody v `Assert` se třídou k testování skutečné výsledky oproti očekávání. V následujícím příkladu předpokládejme `MyClass` má konstruktor, který přijímá `std::string`. Abychom mohli otestovat, že konstruktor inicializuje třídu podle očekávání takto:
 
 ```cpp
-        TEST_METHOD(TestClassInit)
-        {
-            std::string name = "Bill";
-            MyClass mc(name);
-            Assert::AreEqual(name, mc.GetName());
-        }
+TEST_METHOD(TestClassInit)
+{
+    std::string name = "Bill";
+    MyClass mc(name);
+    Assert::AreEqual(name, mc.GetName());
+}
 ```
+
 V předchozím příkladu, výsledek `Assert::AreEqual` volání Určuje, zda testovací projde nebo selže. Třída kontrolní výraz obsahuje mnoho metod pro porovnávání, byl očekáván vs. skutečné výsledky.
 
 Můžete přidat *osobnostní rysy* s testovacími metodami určit vlastníky testu, priority a další informace. Tyto hodnoty pak můžete použít k řazení a seskupení testů v **Průzkumník testů**. Další informace najdete v tématu [spouštění testů jednotek pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md).
@@ -111,6 +116,22 @@ Zpráva pro neúspěšné testy, nabízí podrobnosti, které pomůžou určová
 Další informace o používání **Průzkumník testů**, naleznete v tématu [spouštění testů jednotek pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md).
 
 Osvědčené postupy související s testování částí, naleznete v tématu [základní informace o testování částí](unit-test-basics.md)
+
+## <a name="use-codelens"></a>Použití CodeLens
+
+**Visual Studio 2017 verze 15.7 pouze edice Enterprise a Professional**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) umožňuje rychle zobrazit stav jednotky testování bez opuštění editoru kódu. Inicializovat CodeLens pro projekt testování částí C++ v některém z těchto způsobů:
+
+- Upravit a vytvořit testovací projekt nebo řešení.
+- Znovu sestavte projekt nebo řešení.
+- Spustit testy z **Průzkumníka testů** okna.
+
+Po **CodeLens** je inicializována, zobrazí se test ikony stavu nad každý Jednotkový test.
+
+![Ikony C++ CodeLens](media/cpp-test-codelens-icons.png)
+
+ Klikněte na ikonu pro další informace nebo chcete spustit nebo ladit testování částí:
+
+![C++ CodeLens spouštění a ladění](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>Viz také:
 

@@ -18,12 +18,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 2f58a6b22aa2e7274c6fcf8d702d264a9a592c33
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 75c234b2a3b16d3bcbe05da9f0818c73be0412db
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280035"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880771"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript v sadě Visual Studio 2017
 
@@ -64,7 +64,7 @@ Požadovaná nastavení pro souboru tsconfig jsou následující:
  Umístění výstupu, jakož i mimo projekt složky jako `node_modules` nebo `temp`, by se měl přidat k tomuto nastavení.
  - `enableAutoDiscovery`: Toto nastavení umožňuje automatické zjišťování a stahování souborů definice, jak je uvedeno dříve.
  - `compileOnSave`: Toto nastavení instruuje kompilátor, pokud by měl znovu zkompilovat pokaždé, když zdrojový soubor je uložen v sadě Visual Studio.
- - `typeAcquisition`: Tato sada nastavení řídí chování získání automatické typu (dále vysvětlili v [v této části](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense#Auto))
+ - `typeAcquisition`: Tato sada nastavení řídí chování získání automatické typu (dále vysvětlili v [v této části](/visualstudio/ide/javascript-intellisense#Auto))
 
 Aby bylo možné převést soubory jazyka JavaScript na moduly CommonJS a umístit je do `./out` složky, můžete použít následující `tsconfig.json` souboru:
 

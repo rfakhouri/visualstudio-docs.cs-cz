@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46638f92165f48fc3de20494df226590fd9450eb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 74e087b06fde7862a34b8ecb606ff8bf85ad5231
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176899"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881004"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Nástroj MSBuild vyhrazené a dobře známé vlastnosti
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje sadu předdefinovaných vlastností, které ukládají informace o souboru projektu a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] binární soubory. Tyto vlastnosti jsou vyhodnocovány stejným způsobem jako ostatní [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vlastnosti. Chcete-li například použít `MSBuildProjectFile` vlastnost, typ `$(MSBuildProjectFile)`.  
@@ -39,7 +39,7 @@ ms.locfileid: "39176899"
 |`MSBuildExtensionsPath32`|Známé|Cesta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] podsložku *\Program Files* nebo *\Program Files (x86)* složky. Tato cesta vždy odkazuje na 32bitovou verzi *\Program Files* složky na 32bitovém počítači a *\Program Files (x86)* na 64bitovém počítači. Viz také `MSBuildExtensionsPath` a `MSBuildExtensionsPath64`.<br /><br /> Nezahrnují konečné zpětné lomítko pro tuto vlastnost.|  
 `MSBuildExtensionsPath64`|Známé|Cesta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] podsložku *\Program Files* složky. Pro 64bitový počítač tato cesta vždy odkazuje na *\Program Files* složky. Pro 32bitový počítač tato cesta je prázdná. Viz také `MSBuildExtensionsPath` a `MSBuildExtensionsPath32`.<br /><br /> Nezahrnují konečné zpětné lomítko pro tuto vlastnost.|  
 |`MSBuildLastTaskResult`|Rezervováno|`true` Pokud byl předchozí úkol dokončen bez chyb (i kdyby to byla upozornění), nebo `false` Pokud předchozí úloha obsahovala chyby. Obvykle když dojde k chybě v úloze, chyba je poslední věcí, ke které dochází v daném projektu. Hodnota této vlastnosti tedy nikdy `false`, s výjimkou v těchto scénářích:<br /><br /> – Když `ContinueOnError` atribut [Task – element (MSBuild)](../msbuild/task-element-msbuild.md) je nastavena na `WarnAndContinue` (nebo `true`) nebo `ErrorAndContinue`.<br /><br /> – Když `Target` má [onerror – element (MSBuild)](../msbuild/onerror-element-msbuild.md) jako podřízený prvek.|  
-|`MSBuildNodeCount`|Rezervováno|Maximální počet souběžných procesů, které se používají při sestavování. Jedná se o hodnotu, která jste zadali pro **/maxcpucount** na příkazovém řádku. Pokud jste zadali **/maxcpucount** bez zadání hodnoty, pak `MSBuildNodeCount` určuje počet procesorů v počítači. Další informace najdete v tématu [odkaz na příkazový řádek](../msbuild/msbuild-command-line-reference.md) a [sestavování více projektů současně](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).|  
+|`MSBuildNodeCount`|Rezervováno|Maximální počet souběžných procesů, které se používají při sestavování. Jedná se o hodnotu, která jste zadali pro **- maxcpucount** na příkazovém řádku. Pokud jste zadali **- maxcpucount** bez zadání hodnoty, pak `MSBuildNodeCount` určuje počet procesorů v počítači. Další informace najdete v tématu [odkaz na příkazový řádek](../msbuild/msbuild-command-line-reference.md) a [sestavování více projektů současně](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).|  
 |`MSBuildProgramFiles32`|Rezervováno|Umístění složky 32bitových programů; například *C:\Program Files (x86)*.<br /><br /> Nezahrnují konečné zpětné lomítko pro tuto vlastnost.|  
 |`MSBuildProjectDefaultTargets`|Rezervováno|Úplný seznam cílů, které jsou určené v `DefaultTargets` atribut `Project` elementu. Například následující `Project` element bude mít `MSBuildDefaultTargets` hodnotou vlastnosti `A;B;C`:<br /><br /> `<Project DefaultTargets="A;B;C" >`|  
 |`MSBuildProjectDirectory`|Rezervováno|Absolutní cesta adresáře, kde je soubor projektu umístěn, například *C:\MyCompany\MyProduct*.<br /><br /> Nezahrnují konečné zpětné lomítko pro tuto vlastnost.|  

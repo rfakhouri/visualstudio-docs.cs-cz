@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: db32eaaefd89bce9b3972853b7bb02a307b8df4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5f28f547d6d206cce7fe4face3b92d5fdf0ae4b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632286"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880122"
 ---
 # <a name="install-visual-studio-2015"></a>Nainstalovat sadu Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -201,9 +201,9 @@ Tato stránka obsahuje podrobné informace, které vám pomůžou s instalací *
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Vytvoření Offline instalace sady Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)|Popisuje postup instalace sady Visual Studio, když nejsou připojeni k Internetu.
-|[Instalace sady Visual Studio verze vedle sebe](../install/install-visual-studio-versions-side-by-side.md)|Obsahuje informace o instalaci více verzí sady Visual Studio v jednom počítači.|  
-|[Použití parametrů příkazového řádku instalace sady Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Obsahuje seznam parametrů příkazového řádku, které můžete použít při instalaci sady Visual Studio z příkazového řádku.|  
+|[Vytvoření offline instalace sady Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)|Popisuje postup instalace sady Visual Studio, když nejsou připojeni k Internetu.
+|[Souběžná instalace různých verzí sady Visual Studio](../install/install-visual-studio-versions-side-by-side.md)|Obsahuje informace o instalaci více verzí sady Visual Studio v jednom počítači.|  
+|[Instalace sady Visual Studio s použitím parametrů příkazového řádku](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Obsahuje seznam parametrů příkazového řádku, které můžete použít při instalaci sady Visual Studio z příkazového řádku.|  
 |[Odinstalace sady Visual Studio](../install/uninstall-visual-studio.md)|Popisuje postup odinstalace sady Visual Studio.|  
 |[Příručka správce sady Visual Studio](../install/visual-studio-administrator-guide.md)|Obsahuje informace o možnostech nasazení pro sadu Visual Studio.|  
 |[Knihovna obrázků sady Visual Studio](../designers/the-visual-studio-image-library.md)|Poskytuje informace o instalaci grafiky, kterou lze použít v aplikacích Visual Studio.|  

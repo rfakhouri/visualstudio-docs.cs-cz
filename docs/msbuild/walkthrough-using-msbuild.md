@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e862322995c7cda4a7080ee387c7a080437748
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178515"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880146"
 ---
 # <a name="walkthrough-use-msbuild"></a>Návod: Použití nástroje MSBuild
 Nástroj MSBuild je platforma sestavení pro společnost Microsoft a sady Visual Studio. Tento návod vás seznámí s stavební kameny nástroje MSBuild a ukazuje, jak psát, manipulaci a ladit projekty MSBuild. Kurzu se naučíte:
@@ -116,7 +116,7 @@ Nástroj MSBuild sleduje cíle sestavení a zaručuje, že každý cíl je vytvo
 Úloha zprávy přijímá řetězcovou hodnotu atributu Text jako vstup a zobrazí ho na výstupním zařízení. Cíl HelloWorld provede úkol zpráv dvakrát: nejprve k zobrazení "Hello" a potom zobrazíte "World".
 
 ## <a name="build-the-target"></a>Cíl sestavení
- Spustit nástroj MSBuild z **příkazový řádek sady Visual Studio** sestavit cíl HelloWorld výše. Použijte přepínač příkazového řádku/Target nebo /t vybrat cíl.
+ Spustit nástroj MSBuild z **příkazový řádek sady Visual Studio** sestavit cíl HelloWorld výše. Použití - cíl nebo -t přepínač příkazového řádku a vyberte cíl.
 
 > [!NOTE]
 >  Budeme **příkazový řádek sady Visual Studio** jako **příkazové okno** v následujících částech.
@@ -127,10 +127,10 @@ Nástroj MSBuild sleduje cíle sestavení a zaručuje, že každý cíl je vytvo
 
 2.  V příkazovém řádku přejděte do složky obsahující soubor projektu, v tomto případě *D:\BuildApp\BuildApp*.
 
-3.  Spusťte nástroj msbuild s /t:HelloWorld příkazu switch. To vybere a sestavuje cílový HelloWorld:
+3.  Spuštění nástroje msbuild pomocí příkazu Přepnout - t: HelloWorld. To vybere a sestavuje cílový HelloWorld:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Prohlédněte si výstup v **příkazové okno**. Měli byste vidět dva řádky "Hello" a "World":
@@ -200,7 +200,7 @@ $(PropertyName)
 3.  Z **příkazové okno**, zadejte a spusťte tento řádek:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Zkontrolujte výstup příkazu. Zobrazí se tyto dva řádky (.NET Framework verze se může lišit):
@@ -231,14 +231,14 @@ $(PropertyName)
  Proměnné prostředí v souborech projektu může odkazovat stejným způsobem, jak vlastnosti sestavení. Například použít proměnné prostředí PATH v souboru projektu, použijte příkaz $(Path). Obsahuje-li projekt definici vlastnosti, který má stejný název jako proměnné prostředí, přepíše vlastnost v projektu hodnotu proměnné prostředí. Další informace najdete v tématu [postupy: použití proměnných prostředí v sestavení](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Nastavit vlastnosti z příkazového řádku
- Vlastnosti mohou být definovány v příkazovém řádku pomocí přepínače příkazového řádku /property nebo /p. Vlastnost hodnoty přijatých z příkazového řádku přepisují hodnoty vlastností nastavené v proměnné prostředí a souboru projektu.
+ Vlastnosti mohou být definovány pomocí příkazového řádku / vlastnost nebo -p přepínač příkazového řádku. Vlastnost hodnoty přijatých z příkazového řádku přepisují hodnoty vlastností nastavené v proměnné prostředí a souboru projektu.
 
 #### <a name="to-set-a-property-value-from-the-command-line"></a>Chcete-li nastavit hodnotu vlastnosti z příkazového řádku
 
 1.  Z **příkazové okno**, zadejte a spusťte tento řádek:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
+    msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
 2.  Zkontrolujte výstup příkazu. Zobrazí se tento řádek:
@@ -267,7 +267,7 @@ Nástroj MSBuild vytvoří vlastnost konfigurace a dá jí hodnotu "Verze".
 3.  Z **příkazové okno**, zadejte a spusťte tento řádek:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Zkontrolujte výstup příkazu. Zobrazí se tento řádek:
@@ -329,7 +329,7 @@ Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).
 3.  Z **příkazové okno**, zadejte a spusťte tento řádek:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Zkontrolujte výstup příkazu. Měli byste vidět tento dlouhý řádek:
@@ -361,7 +361,7 @@ Chcete-li změnit oddělovač typ položky, použijte následující syntaxi, kd
 3.  Z **příkazové okno**, zadejte a spusťte tento řádek:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Zkontrolujte výstup příkazu. Měli byste vidět tyto řádky:
@@ -441,7 +441,7 @@ nebude vyjměte soubor *Form1.cs*, která byla přidána do předchozí prvek po
 4.  Z **příkazové okno**, zadejte a spusťte tento řádek:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 5.  Zkontrolujte výstup příkazu. Zobrazí se tento řádek:
@@ -482,7 +482,7 @@ nebude vyjměte soubor *Form1.cs*, která byla přidána do předchozí prvek po
 3.  Z **příkazové okno**, zadejte a spusťte tento řádek:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Zkontrolujte výstup příkazu. Měli byste vidět tyto řádky:
@@ -512,7 +512,7 @@ Všimněte si, jak frázi "Compile.DependentUpon" zobrazuje několikrát. Použ�
 3.  Z **příkazové okno**, zadejte a spusťte tento řádek:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Zkontrolujte výstup příkazu. Měli byste vidět tyto řádky:
@@ -550,7 +550,7 @@ Například je možné transformovat seznam položek zdrojových souborů do kol
 3.  Z **příkazové okno**, zadejte a spusťte tento řádek:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Zkontrolujte výstup příkazu. Zobrazí se tento řádek:

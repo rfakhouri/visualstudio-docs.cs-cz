@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061065b23aa8a2e7504b32358628ec4e0b3f4b47
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1c94ec84d322a8947af72dbc0a4c7aac2c79ae8b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153157"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880185"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Sada nástrojů MSBuild (atribut ToolsVersion)
 Nástroj MSBuild používá sada nástrojů pro úkoly, cíle a nástrojů k sestavení aplikace. Obvykle obsahuje sada nástrojů MSBuild *microsoft.common.tasks* souboru, *cílů microsoft.common.targets* souboru a kompilátory, jako *csc.exe* a  *Vbc.exe*. Většina nástrojů je možné pro kompilaci aplikací pro více než jednu verzi rozhraní .NET Framework a více než jednu platformu systému. Sada nástrojů MSBuild 2.0 je však možné cílit na rozhraní .NET Framework 2.0.  
@@ -40,7 +40,7 @@ Nástroj MSBuild používá sada nástrojů pro úkoly, cíle a nástrojů k ses
   
  Když `ToolsVersion` hodnota je definována v souboru projektu, MSBuild používá tuto hodnotu k určení hodnoty vlastnosti sady nástrojů, které jsou k dispozici do projektu. Jedna sada nástrojů vlastnost `$(MSBuildToolsPath)`, který určuje cestu k nástrojům rozhraní .NET Framework. Pouze vlastnosti sady nástrojů (nebo `$(MSBuildBinPath)`), je povinný.  
   
- Spouští se v sadě Visual Studio 2013, sada nástrojů MSBuild verze je stejná jako číslo verze sady Visual Studio. Výchozí hodnota nástroje MSBuild je touto sadou nástrojů v sadě Visual Studio a na příkazovém řádku, bez ohledu na verzi sady nástrojů zadané v souboru projektu.  Toto chování lze přepsat pomocí příznaku /ToolsVersion. Další informace najdete v tématu [nastavení parametru ToolsVersion přepsat](../msbuild/overriding-toolsversion-settings.md).  
+ Spouští se v sadě Visual Studio 2013, sada nástrojů MSBuild verze je stejná jako číslo verze sady Visual Studio. Výchozí hodnota nástroje MSBuild je touto sadou nástrojů v sadě Visual Studio a na příkazovém řádku, bez ohledu na verzi sady nástrojů zadané v souboru projektu.  Toto chování lze přepsat pomocí příznaku - ToolsVersion. Další informace najdete v tématu [nastavení parametru ToolsVersion přepsat](../msbuild/overriding-toolsversion-settings.md).  
   
  V následujícím příkladu, MSBuild najde *Microsoft.CSharp.targets* souboru s použitím `MSBuildToolsPath` rezervované vlastnosti.  
   

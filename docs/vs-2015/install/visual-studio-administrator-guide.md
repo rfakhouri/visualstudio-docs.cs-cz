@@ -18,17 +18,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e95970c19020e28c3b7592068b0ef1df7f1c56f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8f25b995079aeedca262dedd62b2f9c880efb52
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673182"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879198"
 ---
 # <a name="visual-studio-administrator-guide"></a>Příručka administrátora sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci pro sadu Visual Studio 2017, najdete v článku [příručce pro správce sady Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/install/visual-studio-administrator-guide).
+Nejnovější dokumentaci pro sadu Visual Studio 2017, najdete v článku [příručce pro správce sady Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
 Visual Studio 2015 můžete nasadit v síti, tak dlouho, dokud každý cílový počítač splňuje [minimální požadavky na instalaci](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Sdílené síťové složky můžete vytvořit spuštěním instalační soubor s přepínačem/Layout (jak je popsáno na [vytvoření v režimu Offline instalace sady Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) stránky) a následným kopírováním z místního počítače do sdílené síťové složky. Pokud použijete Image ISO, můžete připojit bitovou kopii ISO a sdílet ho nebo zkopírovat bitovou kopii ISO do sdílené síťové složky.  
   
@@ -73,8 +73,8 @@ Visual Studio 2015 můžete nasadit v síti, tak dlouho, dokud každý cílový 
   
 |Téma|Popis|  
 |-----------|-----------------|  
-|[Postupy: instalace konkrétní verze sady Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Popisuje postup instalace konkrétní konfigurace k aktuální verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Postupy: vytvoření a spuštění bezobslužné instalace sady Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Popisuje postup instalace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] v bezobslužném režimu.|  
-|[Postupy: automatické použití kódů product key při nasazení sady Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Popisuje způsob použití kódů product key při nasazení do více počítačů.|  
+|[Postupy: Instalace konkrétní verze sady Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Popisuje postup instalace konkrétní konfigurace k aktuální verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Postupy: Vytvoření a spuštění bezobslužné instalace sady Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Popisuje postup instalace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] v bezobslužném režimu.|  
+|[Postupy: Automatické použití kódů Product Key při nasazení sady Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Popisuje způsob použití kódů product key při nasazení do více počítačů.|  
 |[Příručka správce Help Vieweru](../ide/help-viewer-administrator-guide.md)|Poskytuje informace o tom, jak spravovat místní instalace nápovědy pro síťové prostředí, které mají nebo nemají přístup k Internetu.|  
 |[Instalace sady Visual Studio](../install/install-visual-studio-2015.md)|Poskytuje pokyny a odkazy na témata, která popisují, jak nainstalovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

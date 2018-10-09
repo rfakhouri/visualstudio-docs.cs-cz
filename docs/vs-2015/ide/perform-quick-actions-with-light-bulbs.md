@@ -14,17 +14,17 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9cd00bf08a48c1763ab72e6b30579e81e870c1a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd0c28f55be540207c7590e068c0b5f93a2abc39
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628302"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880809"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Rychlé akce pomocí žárovek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dokumentace k sadě Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+Nejnovější verzi tohoto tématu můžete najít v [dokumentace k sadě Visual Studio 2017](/visualstudio/).  
   
 Ikony žárovky jsou novou funkcí produktivitu v sadě Visual Studio 2015. Jsou ikony, který se zobrazí v editoru sady Visual Studio a který můžete kliknout a rychlé akce včetně refaktoringu opravování chyb. Ikony žárovky přenést opravě chyby a často refaktoring pomoc do jediného bodu ústředním, klikněte pravým tlačítkem myši na řádek, ve kterém píšete.  
   

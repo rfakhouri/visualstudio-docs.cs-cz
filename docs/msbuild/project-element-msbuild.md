@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea57256ab85694f69d970de476ada17ada1ee74
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4191ed9d34c48ab0aefd1198dd868a91c19ffabc
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152484"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879990"
 ---
 # <a name="project-element-msbuild"></a>Project – element (MSBuild)
 Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.  
@@ -62,7 +62,7 @@ Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/interna
 |`InitialTargets`|Nepovinný atribut.<br /><br /> Počáteční cíle nebo cílů se má spustit před cíle zadané v `DefaultTargets` atribut nebo na příkazovém řádku. Více cílů se středníkem (;) s oddělovači.|  
 |`Sdk`|Nepovinný atribut. <br /><br /> Název sady SDK a volitelné verze, kterou chcete použít k vytvoření implicitní Import příkazy, které jsou přidány do souboru souborů .proj. Pokud není zadaná žádná verze, nástroj MSBuild se pokusí přeložit výchozí verze.  Například `<Project Sdk="Microsoft.NET.Sdk" />` nebo `<Project Sdk="My.Custom.Sdk/1.0.0" />`.|  
 |`ToolsVersion`|Nepovinný atribut.<br /><br /> Verze sady nástrojů MSBuild používá k určení hodnoty $(MSBuildBinPath) a $(MSBuildToolsPath).|  
-|`TreatAsLocalProperty`|Nepovinný atribut.<br /><br /> Názvy vlastností, které se za globální. Tento atribut zabrání přepsání hodnoty vlastností, které jsou nastaveny v souboru projektu nebo cílů a všechny následné importy specifické vlastnosti příkazového řádku. Víc vlastností se středníkem (;) s oddělovači.<br /><br /> Za normálních okolností se globální vlastnosti přepisují hodnoty vlastností, které jsou nastaveny v souboru projektu nebo cílů. Pokud vlastnost je uvedená v `TreatAsLocalProperty` hodnota nepřepíše hodnota globální vlastnosti hodnoty vlastností, které jsou nastaveny v souboru a všechny následné importy. Další informace najdete v tématu [postupy: sestavení stejných zdrojových souborů s různými možnostmi](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Poznámka:** nastavení globálních vlastností příkazového řádku s použitím **/property** (nebo **/p**) přepnutí. Můžete také nastavit nebo upravit globální vlastnosti pro podřízené projekty v sestaveních s více projekty pomocí `Properties` atribut úlohy nástroje MSBuild. Další informace najdete v tématu [úlohy nástroje MSBuild](../msbuild/msbuild-task.md).|  
+|`TreatAsLocalProperty`|Nepovinný atribut.<br /><br /> Názvy vlastností, které se za globální. Tento atribut zabrání přepsání hodnoty vlastností, které jsou nastaveny v souboru projektu nebo cílů a všechny následné importy specifické vlastnosti příkazového řádku. Víc vlastností se středníkem (;) s oddělovači.<br /><br /> Za normálních okolností se globální vlastnosti přepisují hodnoty vlastností, které jsou nastaveny v souboru projektu nebo cílů. Pokud vlastnost je uvedená v `TreatAsLocalProperty` hodnota nepřepíše hodnota globální vlastnosti hodnoty vlastností, které jsou nastaveny v souboru a všechny následné importy. Další informace najdete v tématu [postupy: sestavení stejných zdrojových souborů s různými možnostmi](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Poznámka:** nastavení globálních vlastností příkazového řádku s použitím **– vlastnost** (nebo **-p**) přepnutí. Můžete také nastavit nebo upravit globální vlastnosti pro podřízené projekty v sestaveních s více projekty pomocí `Properties` atribut úlohy nástroje MSBuild. Další informace najdete v tématu [úlohy nástroje MSBuild](../msbuild/msbuild-task.md).|  
 |`Xmlns`|Nepovinný atribut.<br /><br /> -Li zadána, `xmlns` atribut musí mít hodnotu `http://schemas.microsoft.com/developer/msbuild/2003`.|  
 
 ### <a name="child-elements"></a>Podřízené prvky  

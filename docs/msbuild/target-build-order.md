@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7546c2da20c29f0140bd6b9572175ae0c2b019ad
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774942"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879359"
 ---
 # <a name="target-build-order"></a>Pořadí sestavení cílů
 Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřazeny cíle. Tyto atributy můžete určit pořadí, ve kterém jsou spuštěny cíle:  
@@ -56,9 +56,9 @@ Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřaze
 <Project DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- Výchozí cíle lze přepsat pomocí **/target** přepnout na příkazovém řádku. Následující příklad určuje, že `Build` cíl spuštění a pak `Report` cílit na spuštění. Když zadáte cíle tímto způsobem, jsou ignorovány všechny výchozí cíle.  
+ Výchozí cíle lze přepsat pomocí **-target** přepnout na příkazovém řádku. Následující příklad určuje, že `Build` cíl spuštění a pak `Report` cílit na spuštění. Když zadáte cíle tímto způsobem, jsou ignorovány všechny výchozí cíle.  
   
- `msbuild /target:Build;Report`  
+ `msbuild -target:Build;Report`  
   
  Pokud jsou zadané počáteční cíle a výchozí cíle, a pokud nejsou zadány žádné příkazového řádku cíle, MSBuild spustí počáteční cíle nejprve a pak spustí výchozí cíle.  
   
@@ -108,7 +108,7 @@ Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřaze
   
 1.  `InitialTargets` cíle jsou spuštěny.  
   
-2.  Cíle zadané na příkazovém řádku ve **/target** přepínače jsou spuštěny. Pokud zadáte žádné cíle na příkazovém řádku, pak bude `DefaultTargets` spuštění cíle. Pokud ani jedno je k dispozici, došlo k prvnímu cíli běží.  
+2.  Cíle zadané na příkazovém řádku ve **-target** přepínače jsou spuštěny. Pokud zadáte žádné cíle na příkazovém řádku, pak bude `DefaultTargets` spuštění cíle. Pokud ani jedno je k dispozici, došlo k prvnímu cíli běží.  
   
 3.  `Condition` Atribut cíle vyhodnocena. Pokud `Condition` atribut je k dispozici a je vyhodnocena jako `false`, cíl není spuštěn a nemá žádné další vliv na sestavení.
 

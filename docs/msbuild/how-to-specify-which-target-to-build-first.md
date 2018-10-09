@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e812be4927ee0232d1096fa272d8ff8e7358366
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a4077f53008691dd1fcf6ddd07f890616bc09018
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078797"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879041"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Postupy: Zadejte které se zaměřují na nejdřív sestavit
-Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definují, jak je sestaven projekt. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Modulu sestavení první ho najde a projektu všechny závislosti, pokud soubor projektu obsahuje `DefaultTargets` atribut, `InitialTargets` atribut nebo cíl je zadán v příkazovém řádku pomocí **/ Cíl** přepnout.  
+Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definují, jak je sestaven projekt. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Modulu sestavení první ho najde a projektu všechny závislosti, pokud soubor projektu obsahuje `DefaultTargets` atribut, `InitialTargets` atribut nebo cíl je zadán v příkazovém řádku pomocí **– Cíl** přepnout.  
   
 ## <a name="use-the-initialtargets-attribute"></a>Použijte atribut InitialTargets  
  `InitialTargets` Atribut `Project` prvek určuje cíl, který bude spuštěn jako první, i když cíle jsou zadány v příkazovém řádku nebo v `DefaultTargets` atribut.  
@@ -58,20 +58,21 @@ Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definuj
   
      `<Project DefaultTargets="Clean;Compile">`  
   
-## <a name="use-the-target-switch"></a>Použijte parametr/target přepínače  
- Pokud není definován výchozí cíl v souboru projektu, nebo pokud nechcete používat, které se zaměřují výchozí, můžete použít přepínač příkazového řádku **/target** určit jiný cíl. Cíl nebo cíle zadané s **/target** přepínače se spustí místo cíle, které jsou určené `DefaultTargets` atribut. Podle cílů `InitialTargets` atribut vždy spouští jako první.  
-  
+## <a name="use-the--target-switch"></a>Použijte přepínač - cíl  
+ Pokud není definován výchozí cíl v souboru projektu, nebo pokud nechcete používat, které se zaměřují výchozí, můžete použít přepínač příkazového řádku **-target** určit jiný cíl. Cíl nebo cíle zadané s **– cíl** přepínače se spustí místo cíle, které jsou určené `DefaultTargets` atribut. Podle cílů `InitialTargets` atribut vždy spouští jako první.  
+ 
+ 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Nejprve použít jiný cíl než výchozí cíl  
   
--   Zadejte cíl jako první použití cílové **/target** přepínač příkazového řádku. Příklad:  
+-   Zadejte cíl jako první použití cílové **-target** přepínač příkazového řádku. Příklad:  
   
-     `msbuild file.proj /target:Clean`  
+     `msbuild file.proj -target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Nejprve použít několik cílů jiné než výchozí cíle  
   
--   Seznam cílů, oddělené středníky nebo čárkami, pomocí **/target** přepínač příkazového řádku. Příklad:  
+-   Seznam cílů, oddělené středníky nebo čárkami, pomocí **-target** přepínač příkazového řádku. Příklad:  
   
-     `msbuild <file name>.proj /t:Clean;Compile`  
+     `msbuild <file name>.proj -t:Clean;Compile`  
   
 ## <a name="see-also"></a>Viz také:
   [MSBuild](../msbuild/msbuild.md)  

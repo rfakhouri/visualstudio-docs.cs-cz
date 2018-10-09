@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d18e84e6c3637fb5d40dfcef14e8dd6a06dc47ce
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6597bfcdcbfb5acddbbbf8804d198036c5b98c53
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179200"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880971"
 ---
 # <a name="create-forwarding-loggers"></a>Vytvořit předávající Protokolovací nástroje
 Předávající Protokolovací nástroje zvýšit efektivitu protokolování tím, že umožňuje zvolit události, které chcete monitorovat při sestavování projektů v systému s více procesory. Tím, že předávající Protokolovací nástroje, je možné zabránit nežádoucí události od zahlcení centrálním protokolovacím zpomalení doby sestavení a nebudou zbytečně zabírat protokol.  
@@ -35,7 +35,7 @@ Předávající Protokolovací nástroje zvýšit efektivitu protokolování tí
  V prostředí s více procesory které můžete chtít dostat mimo pořadí zprávy o událostech. Proto musí vyhodnotit události pomocí obslužné rutiny události v předávající protokolovací nástroj a program umožňuje určit, které události mají být předány přesměrovače za účelem předání do centrálního protokolovacího nástroje. K tomu můžete použít <xref:Microsoft.Build.Framework.BuildEventContext> třídy, který je připojen k všechny zprávy, vám pomůže identifikovat události, které chcete předat dál, a pak předejte název události, které mají <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> třídy (nebo jejich podtřída ho). Při použití této metody není žádné další konkrétní kódování požadované události.  
   
 ## <a name="specify-a-forwarding-logger"></a>Zadejte předávající protokolovací nástroj  
- Poté, co byl zkompilován předávající protokolovací nástroj do sestavení, je zapotřebí sdělit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] používat během sestavení. Chcete-li to provést, použijte `/FileLogger`, `/FileLoggerParameters`, a `/DistributedFileLogger` přepne spolu s *MSBuild.exe*. `/FileLogger` Přepínač říká *MSBuild.exe* , který je přímo připojený protokolovacího nástroje. `/DistributedFileLogger` Přepínač znamená, že je soubor protokolu na jeden uzel. Chcete-li nastavit parametry předávající protokolovací nástroj, použijte `/FileLoggerParameters` přepnout. Další informace o těchto a dalších *MSBuild.exe* přepínače, naleznete v tématu [odkaz na příkazový řádek](../msbuild/msbuild-command-line-reference.md).  
+ Poté, co byl zkompilován předávající protokolovací nástroj do sestavení, je zapotřebí sdělit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] používat během sestavení. Chcete-li to provést, použijte `-FileLogger`, `-FileLoggerParameters`, a `-DistributedFileLogger` přepne spolu s *MSBuild.exe*. `-FileLogger` Přepínač říká *MSBuild.exe* , který je přímo připojený protokolovacího nástroje. `-DistributedFileLogger` Přepínač znamená, že je soubor protokolu na jeden uzel. Chcete-li nastavit parametry předávající protokolovací nástroj, použijte `-FileLoggerParameters` přepnout. Další informace o těchto a dalších *MSBuild.exe* přepínače, naleznete v tématu [odkaz na příkazový řádek](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="multi-processor-aware-loggers"></a>Více procesorů protokolovacích  
  Při vytváření projektu v systému s více procesory zprávy každý procesor na sestavení nejsou automaticky prokládané jednotné postupně. Místo toho je potřeba vytvořit zprávu seskupení pomocí priority <xref:Microsoft.Build.Framework.BuildEventContext> třídu, která je připojena k všechny zprávy. Další informace o víceprocesorových sestavení naleznete v tématu [protokolování v prostředí s více procesory](../msbuild/logging-in-a-multi-processor-environment.md).  

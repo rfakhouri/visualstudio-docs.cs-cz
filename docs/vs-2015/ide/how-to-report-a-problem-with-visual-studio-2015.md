@@ -12,17 +12,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dbbd84fb72c2d25c30b3012d3dfcb381dcc35050
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80e8a8c69b0536891737741125f0313f953b421e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632597"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880627"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Postup ohlášení problému se sadou Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci pro sadu Visual Studio 2017 najdete v tématu [jak chcete nahlásit problém v sadě Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
+Nejnovější dokumentaci pro sadu Visual Studio 2017 najdete v tématu [jak chcete nahlásit problém v sadě Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
 
 Pokud dojde k potížím s Visual Studiem 2015, chceme znát, takže jsme diagnostikovat a opravit ho.  S použitím **nahlásit problém** nástroj, můžete shromažďovat podrobné informace o problému a odesílají je společnosti Microsoft s několika málo kliknutí na tlačítko.  
   

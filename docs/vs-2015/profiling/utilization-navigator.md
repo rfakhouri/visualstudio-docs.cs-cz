@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 503d48a470a8865f0d6a56e5872c3f1af2e60193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9458e57d210b9f0b7d822cbf56555776a6ddf29
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631369"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879726"
 ---
 # <a name="utilization-navigator"></a>Navigátor využití
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Navigátor využití a vybraný časový rámec
   
  Zde je, jak můžete Navigátor využití k manipulaci s zobrazený časový rozsah:  
   
--   Tak můžete posunout přetažením jezdce doleva nebo doprava. (Klávesnice: Přesunutí výběru na jezdce a potom stiskněte klávesu šipka vlevo nebo vpravo.)  
+-   Můžete posunout přetažením jezdce doleva nebo doprava. (Klávesnice: Přesunutí výběru na jezdce a potom stiskněte klávesu šipka vlevo nebo vpravo.)  
   
 -   Rozsah interval můžete změnit přetažením jednoho z úchytů. (Klávesnice: Přesunutí výběru na popisovač a pak stiskněte klávesu šipka vlevo nebo vpravo.)  
   

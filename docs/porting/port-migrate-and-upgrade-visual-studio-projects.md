@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e83aec143d2b7fdb6ed7a338b6a726aa81147e7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 95184d5f73e2ec4aaa7339da77096108abbc3bda
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280723"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880419"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Migrace a upgrade odkaz na projekt pro Visual Studio 2017
 
@@ -41,7 +41,7 @@ Tento článek k dispozici obsahuje podrobnosti pouze pro typy projektů, které
 
 Následující seznam popisuje podporu v sadě Visual Studio 2017 pro projekty, které byly vytvořeny v dřívějších verzích.
 
-Pokud nevidíte projekt nebo typ souboru zde uvedeny, který by měl být, najdete [Visual Studio 2015 verze tohoto článku](port-migrate-and-upgrade-visual-studio-projects.md) a pomocí možnosti "Poskytnout názor na dokumentaci" v dolní části této stránky můžete zadat podrobnosti vašeho projektu. (Pokud byste o ni odpověď, použijte názor na dokumentaci a ne anonymní "je tato stránka užitečná?" ovládací prvek.)
+Pokud nevidíte projekt nebo typ souboru zde uvedeny, který by měl být, najdete [Visual Studio 2015 verze tohoto článku](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) a pomocí možnosti "Poskytnout názor na dokumentaci" v dolní části této stránky můžete zadat podrobnosti vašeho projektu. (Pokud byste o ni odpověď, použijte názor na dokumentaci a ne anonymní "je tato stránka užitečná?" ovládací prvek.)
 
 | Typ projektu | Podpora |
 | --- | --- |

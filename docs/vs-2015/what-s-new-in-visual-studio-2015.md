@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb14269c933d8e8de191b8a8c52e9f41e63ca79d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d31863e3dfdf39481a6215a29f37186a2f528050
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671563"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880367"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;nového v sadě Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Vítá vás Visual Studio 2015, integrovaná sada nástrojů podporujících pro
  A – samozřejmě – podpora pro klasické desktopové aplikace je lepší než kdy dřív, s mnoha vylepšeními jazyků, knihoven a nástrojů.  
   
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>Multiplatformní mobilní aplikace v jazyce C# s využitím kódu Xamarin pro Visual Studio  
- Xamarin je mobilní Platforma, která umožňuje psát kód v C#, která se sváže nativně operační systém na iOS a Android API. Microsoft uzavřel partnerství úzce s využitím kódu Xamarin na jejich vydání Xamarin pro Visual Studio, rozšíření, která umožňuje vývoj pro Android, iOS a Windows Phone v jediném řešení se sdíleným kódem. S využitím kódu Xamarin budete používat jeden jazyk a kódové základny s minimálními rozdíly mezi platformami.  Xamarin pro Visual Studio je podporováno v sadě Visual Studio 2010 a novějším. Počáteční verzi Xamarin je zahrnutý v sadě Visual Studio 2015. Abyste mohli začít, najdete v článku [vytvářet aplikace s nativním uživatelským rozhraním pomocí Xamarinu v sadě Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).  
+ Xamarin je mobilní Platforma, která umožňuje psát kód v C#, která se sváže nativně operační systém na iOS a Android API. Microsoft uzavřel partnerství úzce s využitím kódu Xamarin na jejich vydání Xamarin pro Visual Studio, rozšíření, která umožňuje vývoj pro Android, iOS a Windows Phone v jediném řešení se sdíleným kódem. S využitím kódu Xamarin budete používat jeden jazyk a kódové základny s minimálními rozdíly mezi platformami.  Xamarin pro Visual Studio je podporováno v sadě Visual Studio 2010 a novějším. Počáteční verzi Xamarin je zahrnuta v sadě Visual Studio 2015. Abyste mohli začít, najdete v článku [vytvářet aplikace s nativním uživatelským rozhraním pomocí Xamarinu v sadě Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).  
   
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>Mobilní aplikace pro různé platformy v HTML/JavaScript s Apache Cordova  
  Visual Studio Tools for Apache Cordova je výsledkem úzké spolupráci mezi společnostmi Microsoft a open source Apache Cordova komunity. Povolit nástroje pro vývoj multiplatformních mobilních aplikací pomocí jazyka HTML, CSS a JavaScript (nebo Typescript). Můžete cílit na Android, iOS a Windows pomocí jediného základu kódu a bohatost Visual Studio IDE, včetně technologie IntelliSense jazyka JavaScript, Průzkumníka modelu DOM, konzoly jazyka JavaScript, zarážky, Watch, místní hodnoty, funkce pouze můj kód a dalších.  Visual Studio Tools for Apache Cordova, vaše aplikace mají přístup k nativním funkcím zařízení na všech platformách prostřednictvím modulů plug-in, které poskytují společného rozhraní JavaScript API. Abyste mohli začít, najdete v článku [Začínáme s Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).  
@@ -280,4 +280,4 @@ Vítá vás Visual Studio 2015, integrovaná sada nástrojů podporujících pro
 * [Vytvoření vlastního rozložení oken](./misc/create-custom-window-layouts.md)   
 * [Rychlé akce pomocí žárovek](./ide/perform-quick-actions-with-light-bulbs.md)   
 * [Novinky správy životního cyklu aplikací v sadě Visual Studio 2015](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)
-* [Co je nového v sadě Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+* [Co je nového v sadě Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

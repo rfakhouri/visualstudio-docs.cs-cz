@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d70460671bcea19f0a4e56de6ebdd3c7affdb670
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 1254a7c768521f4ec8b84cb0e345dbee8fb25d69
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179187"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879860"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Návod: Vytvoření souboru projektu MSBuild od začátku
 Programovací jazyky, které jsou cíleny rozhraní .NET Framework používají soubory projektu MSBuild k popisu a řízení procesu sestavení aplikace. Při použití sady Visual Studio k vytvoření souboru projektu MSBuild je odpovídající kód XML je automaticky přidán do souboru. Však může být pro vás užitečné porozumět uspořádání XML a jak můžete změnit, aby řídil sestavení.  
@@ -172,7 +172,7 @@ Váš soubor minimálního projektu by měl vypadat následovně:
   
 #### <a name="to-build-the-application"></a>K sestavení aplikace  
   
-1.  Na příkazovém řádku zadejte **msbuild helloworld.csproj /t:Build**.  
+1.  Na příkazovém řádku zadejte **msbuild helloworld.csproj - t: sestavení**.  
   
      To vytvoří cíl sestavení souboru projektu Helloworld vyvoláním kompilátoru Visual C# k vytvoření aplikace Helloworld.  
   
@@ -183,7 +183,7 @@ Váš soubor minimálního projektu by měl vypadat následovně:
 > [!NOTE]
 >  Zobrazte podrobnosti o sestavení zvýšením úrovně podrobností. Nastavit úroveň podrobností na "podrobné", zadejte na příkazovém řádku tento příkaz:  
 >   
->  **/ verbosity /t:Build helloworld.csproj MSBuild: podrobné**  
+>  **Nástroj MSBuild helloworld.csproj - t: sestavení - podrobností: podrobné**  
   
 ## <a name="add-build-properties"></a>Přidání vlastností sestavení  
  Můžete přidat vlastnosti sestavení do souboru projektu k dalšímu řízení sestavení. Nyní přidejte tyto vlastnosti:  
@@ -259,7 +259,7 @@ Váš soubor projektu by měl nyní vypadat následovně:
   
 #### <a name="to-test-the-build-properties"></a>Testování vlastností sestavení  
   
-1.  Na příkazovém řádku zadejte **msbuild helloworld.csproj /t:Build**.  
+1.  Na příkazovém řádku zadejte **msbuild helloworld.csproj - t: sestavení**.  
   
      Tím se vytvoří *\Bin\\*  složku a potom vyvolá kompilátor Visual C# k vytvoření *MSBuildSample* aplikace a umístí jej *\Bin\\* složky.  
   
@@ -334,9 +334,9 @@ Váš soubor projektu by měl nyní vypadat následovně:
   
 #### <a name="to-test-the-build-targets"></a>Testování cílů pro sestavení  
   
-1.  Na příkazovém řádku zadejte **msbuild helloworld.csproj /p:AssemblyName = Greetings**.  
+1.  Na příkazovém řádku zadejte **msbuild helloworld.csproj - p: AssemblyName = Greetings**.  
   
-     Vzhledem k tomu, že jste nepoužili **/t** přejděte k explicitnímu nastavení cíle, MSBuild spustí výchozí cíl sestavení. **/P** přepnout přepsání `AssemblyName` vlastnost a dává ji novou hodnotu `Greetings`. To způsobí, že nová aplikace *Greetings.exe*, bude vytvořena ve *\Bin\\*  složky.  
+     Vzhledem k tomu, že jste nepoužili **-t** přejděte k explicitnímu nastavení cíle, MSBuild spustí výchozí cíl sestavení. **-P** přepnout přepsání `AssemblyName` vlastnost a dává ji novou hodnotu `Greetings`. To způsobí, že nová aplikace *Greetings.exe*, bude vytvořena ve *\Bin\\*  složky.  
   
 2.  Pro ověření, že *\Bin\\*  složka obsahuje i *MSBuildSample* aplikace a nové *Greetings* aplikace, zadejte **adresář Bin** .  
   
@@ -344,11 +344,11 @@ Váš soubor projektu by měl nyní vypadat následovně:
   
      **Hello, world!** Zobrazí se zpráva.  
   
-4.  Odstraňte aplikaci msbuildsample zadáním **msbuild helloworld.csproj /t: vyčištění**.  
+4.  Odstraňte aplikaci msbuildsample zadáním **msbuild helloworld.csproj -t: vyčištění**.  
   
      To spustí úkolu Vyčisti pro odebrání aplikace, která má výchozí `AssemblyName` hodnota vlastnosti `MSBuildSample`.  
   
-5.  Odstraňte aplikaci Greetings zadáním **msbuild helloworld.csproj /t: Vyčištění /p:AssemblyName = Greetings**.  
+5.  Odstraňte aplikaci Greetings zadáním **msbuild helloworld.csproj -t: Vyčištění - p: AssemblyName = Greetings**.  
   
      To spustí úkolu Vyčisti pro odebrání aplikace, která má daném **AssemblyName** hodnota vlastnosti `Greetings`.  
   
@@ -382,11 +382,11 @@ Váš soubor projektu by měl nyní vypadat následovně:
     </Target>  
     ```  
   
-2.  Otestujte cíl sestavení zadáním **msbuild /v:d** příkazového řádku.  
+2.  Otestujte cíl sestavení zadáním **msbuild - v: d** příkazového řádku.  
   
      Nezapomeňte, že *helloworld.csproj* je výchozí soubor projektu a toto sestavení je výchozí cíl.  
   
-     **/V:d** přepínač určuje podrobný popis procesu sestavení.  
+     **- V: d** přepínač určuje podrobný popis procesu sestavení.  
   
      Tyto řádky by měly být zobrazeny:  
   

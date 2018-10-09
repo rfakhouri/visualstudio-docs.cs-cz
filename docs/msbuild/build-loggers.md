@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8fc3ce425f2eaf6052d1e301d23c00d3503daec
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0cbbcbc57d07eaf6273545f5520e461c7578977
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179980"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879081"
 ---
 # <a name="build-loggers"></a>Protokolovací nástroje sestavení
 Protokolovací nástroje poskytují způsob, jak můžete upravit výstupní sestavení a zobrazení zprávy, chyby nebo upozornění v reakci na události v konkrétním sestavení. Každý protokolovacího nástroje je implementován jako třída rozhraní .NET, která implementuje <xref:Microsoft.Build.Framework.ILogger> rozhraní, která je definována v *Microsoft.Build.Framework.dll* sestavení.  
@@ -43,25 +43,25 @@ Protokolovací nástroje poskytují způsob, jak můžete upravit výstupní ses
  [!code-csharp[msbuild_SimpleConsoleLogger#3](../msbuild/codesnippet/CSharp/build-loggers_2.cs)]  
   
 ## <a name="respond-to-logger-verbosity-values"></a>Reakce na hodnoty podrobnost protokolování  
- V některých případech můžete chtít pouze protokolování informací z události, pokud MSBuild.exe **/verbosity** přepínač obsahuje určitou hodnotu. V tomto příkladu <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> obslužné rutiny události pouze zaznamená zprávu, pokud <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> vlastnost, která se nastavuje přes **/verbosity** přepnout, je rovna <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed`.  
+ V některých případech můžete chtít pouze protokolování informací z události, pokud MSBuild.exe **-podrobností** přepínač obsahuje určitou hodnotu. V tomto příkladu <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> obslužné rutiny události pouze zaznamená zprávu, pokud <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> vlastnost, která se nastavuje přes **-podrobností** přepnout, je rovna <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed`.  
   
  [!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]  
   
 ## <a name="specify-a-logger"></a>Zadejte protokolovací nástroj  
- Jakmile protokolovacího nástroje je zkompilovat do sestavení, je třeba sdělit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] používat tento protokolovač během sestavení. To se provádí pomocí **/logger** přepínači s *MSBuild.exe*. Další informace o přepínačích, které jsou k dispozici pro *MSBuild.exe*, naleznete v tématu [odkaz na příkazový řádek](../msbuild/msbuild-command-line-reference.md).  
+ Jakmile protokolovacího nástroje je zkompilovat do sestavení, je třeba sdělit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] používat tento protokolovač během sestavení. To se provádí pomocí **-protokolovací nástroj** přepínači s *MSBuild.exe*. Další informace o přepínačích, které jsou k dispozici pro *MSBuild.exe*, naleznete v tématu [odkaz na příkazový řádek](../msbuild/msbuild-command-line-reference.md).  
   
- Následující příkaz sestaví projekt *MyProject.csproj* a používá třídu protokolovacího nástroje implementované v *SimpleLogger.dll*. **/Nologo** přepínač Zobrazovat nápis a zprávu o autorských právech a **/noconsolelogger** přepínač zakáže výchozí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] protokolovací nástroj konzoly.  
+ Následující příkaz sestaví projekt *MyProject.csproj* a používá třídu protokolovacího nástroje implementované v *SimpleLogger.dll*. **- Nologo** přepínač Zobrazovat nápis a zprávu o autorských právech a **- noconsolelogger** přepínač zakáže výchozí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] protokolovací nástroj konzoly.  
   
 ```cmd  
-MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll  
+MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll  
 ```  
   
  Následující příkaz sestaví projekt se stejným protokolovací nástroj, ale s `Verbosity` úroveň `Detailed`.  
   
 ```cmd  
-MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed  
+MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed  
 ```  
-  
+
 ## <a name="example"></a>Příklad  
   
 ### <a name="description"></a>Popis  

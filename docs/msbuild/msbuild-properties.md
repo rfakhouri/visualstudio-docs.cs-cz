@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 109d95202d5ce67b2bdda1aab61d1b725a3ac23c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080747"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879187"
 ---
 # <a name="msbuild-properties"></a>vlastnosti nástroje MSBuild
 Vlastnosti jsou páry název-hodnota, které lze použít ke konfiguraci sestavení. Vlastnosti jsou užitečné pro předávání hodnot úkolům, vyhodnocování podmínek a ukládání hodnot, na které bude odkazováno v celém souboru projektu.  
@@ -84,12 +84,12 @@ $(registry:Hive\MyKey\MySubKey)
 ```  
   
 ## <a name="global-properties"></a>Globální vlastnosti  
- Nástroj MSBuild umožňuje nastavit vlastnosti na příkazovém řádku s použitím **/property** (nebo **/p**) přepnutí. Tyto hodnoty globálních vlastností přepisují hodnoty vlastností, které jsou nastaveny v souboru projektu. To zahrnuje vlastnosti prostředí, ale nezahrnuje rezervované vlastnosti, které nelze změnit.  
+ Nástroj MSBuild umožňuje nastavit vlastnosti na příkazovém řádku s použitím **– vlastnost** (nebo **-p**) přepnutí. Tyto hodnoty globálních vlastností přepisují hodnoty vlastností, které jsou nastaveny v souboru projektu. To zahrnuje vlastnosti prostředí, ale nezahrnuje rezervované vlastnosti, které nelze změnit.  
   
  Následující příklad nastavuje globální vlastnost `Configuration` na `DEBUG`.  
   
 ```cmd  
-msbuild.exe MyProj.proj /p:Configuration=DEBUG  
+msbuild.exe MyProj.proj -p:Configuration=DEBUG  
 ```  
   
  Globální vlastnosti je také možné nastavit nebo upravit pro podřízené projekty v sestaveních s více projekty pomocí atributu `Properties` úkolu MSBuild. Globální vlastnosti se také předávají do podřízené projekty, není-li `RemoveProperties` atribut úlohy nástroje MSBuild slouží k určení seznam vlastností není přeposlat. Další informace najdete v tématu [úlohy nástroje MSBuild](../msbuild/msbuild-task.md).

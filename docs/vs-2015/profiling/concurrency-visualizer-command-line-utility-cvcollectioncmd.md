@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1925a240c011e4a9e7ede1a0aeb673b5d33c23bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dbc4f235d56554b37033703158126a003ddbca93
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627807"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880822"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Nástroj příkazového řádku Vizualizéru souběžnosti (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Nejnovější verzi tohoto tématu můžete najít v [Concurrency Visualizer ná
 Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (CVCollectionCmd.exe) ke shromažďování trasování z příkazového řádku, takže můžete je zobrazit v Concurrency Visualizer pro sadu Visual Studio. Ostupné fondy lze použít v počítačích, v nichž není nainstalována sada Visual Studio.  
   
 > [!NOTE]
->  Spouští se v sadě Visual Studio 2013, Vizualizátor souběžnosti je volitelné rozšíření. (Dříve to bylo byl součástí sady Visual Studio.) Můžete stáhnout [Concurrency Visualizer kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) ze služby Stažení softwaru.  
+>  Spouští se v sadě Visual Studio 2013, Vizualizátor souběžnosti je volitelné rozšíření. (Dříve to bylo byl součástí sady Visual Studio.) Můžete stáhnout [Concurrency Visualizer kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) ze služby Stažení softwaru.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Stáhněte si nástroj příkazového řádku Vizualizéru souběžnosti  
- Chcete-li stáhnout a nainstalovat nástroj příkazového řádku, přejděte na [Concurrency Visualizer kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) a postupujte podle pokynů. Ve výchozím nastavení, CVCollectionCmd.exe nachází v %ProgramFiles%\Microsoft Tools\ kolekce Vizualizéru souběžnosti (% ProgramFiles (x86) %\Microsoft Tools\ kolekce Vizualizátor souběžnosti na x64 počítače).  
+ Chcete-li stáhnout a nainstalovat nástroj příkazového řádku, přejděte na [Concurrency Visualizer kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) a postupujte podle pokynů. Ve výchozím nastavení, CVCollectionCmd.exe nachází v %ProgramFiles%\Microsoft Tools\ kolekce Vizualizéru souběžnosti (% ProgramFiles (x86) %\Microsoft Tools\ kolekce Vizualizátor souběžnosti na x64 počítače).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Shromažďovat trasování pomocí CVCollectionCmd  
  Spuštěním aplikace s CVCollectionCmd nebo připojením k němu můžete shromažďovat trasování. Podívejte se přehled příkazů níže pro vaše možnosti. Příklad  

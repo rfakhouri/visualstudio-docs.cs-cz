@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c102bba09901e55e9ec6196009965b912f8be967
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674711"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879769"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Hledání nevrácené paměti pomocí knihovny CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -194,7 +194,7 @@ Znamená to, že uniklé přidělení se týkalo na řádku 20 debug_new.cpp.
   
 2.  Když se aplikace zastaví u zarážky, **Watch** okna.  
   
-3.  V **Watch** okno, zadejte `_crtBreakAlloc` v v **název** sloupce.  
+3.  V **Watch** okno, zadejte `_crtBreakAlloc` v **název** sloupce.  
   
      Pokud používáte vícevláknovou DLL verzi knihovny CRT (možnost/MD), zahrňte operátor kontextu: `{,,ucrtbased.dll}_crtBreakAlloc`  
   

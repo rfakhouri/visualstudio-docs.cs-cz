@@ -15,12 +15,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c85bdfd08fb3d2ad06c9dfd17b46a31fe4ed74d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c0f068a40fc4cbac2cd261fe295e6e8b0fb53b2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670440"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878976"
 ---
 # <a name="talk-to-us"></a>Kontaktujte nás
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Nás zajímá nápadů pro zlepšení naší dokumentaci. Jsme nemůže odpověd
  Pokud používáte problémy s použitím sady Visual Studio jako jsou chyby, analýzou výkonu, neočekávané chování a tak dále, ohlaste prosím problém na nás kliknutím pravým tlačítkem na ikonu zpětné vazby vedle **rychlé spuštění**, nebo výběrem  **Nápověda &#124; odeslat zpětnou vazbu &#124; nahlásit problém** z hlavní nabídky. Další informace najdete v tématu [postup ohlášení problému se sadou Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).  
   
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Chci, aby námět funkcemi sady Visual Studio  
- Pokud je něco jsme můžete lépe dejte nám vědět! Zvolte **poslat návrh** navrhovat funkce nebo změňte na Visual Studio team. Váš návrh budou automaticky odeslány do [UserVoice](https://visualstudio.uservoice.com) kde ostatním můžete hlasovat pro pro něj.  
+ Pokud je něco jsme můžete lépe dejte nám vědět! Zvolte **poslat návrh** navrhovat funkce nebo změňte na Visual Studio team. Váš návrh budou automaticky odeslány do [UserVoice](https://visualstudio.uservoice.com) kde ostatní Hlasujte pro ni.  
   
 ## <a name="rate-this-product"></a>Ohodnoťte tento produkt  
  Předběžné verze sady Visual Studio mají **Ohodnoťte tento produkt** položku nabídky, která umožňuje odeslat zpětnou vazbu o kvalitě sestavení, kterou používáte. Se nezobrazí ve vydaných verzích produktu.  

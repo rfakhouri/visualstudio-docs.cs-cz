@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b735d1543c9af4fead999e3c530fad063672337e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fb1dc2885d64999ac9f4d12568fd7da29a783d8e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080579"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880653"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Postupy: sestavování specifických cílů v řešení pomocí MSBuild.exe
 Můžete použít *MSBuild.exe* k sestavování specifických cílů konkrétní projekty v řešení.  
@@ -28,13 +28,13 @@ Můžete použít *MSBuild.exe* k sestavování specifických cílů konkrétní
   
 1.  Na příkazovém řádku zadejte `MSBuild.exe <SolutionName>.sln`, kde `<SolutionName>` odpovídá názvu souboru řešení, která obsahuje cíl, který chcete spustit.  
   
-2. Zadejte cíl po `/target:` přepnout ve formátu \<ProjectName >:\<TargetName >. Pokud název projektu obsahuje některý ze znaků `%`, `$`, `@`, `;`, `.`, `(`, `)`, nebo `'`, nahraďte pomocí `_` v zadaném Název cíle.
+2. Zadejte cíl po `-target:` přepnout ve formátu \<ProjectName >:\<TargetName >. Pokud název projektu obsahuje některý ze znaků `%`, `$`, `@`, `;`, `.`, `(`, `)`, nebo `'`, nahraďte pomocí `_` v zadaném Název cíle.
   
 ## <a name="example"></a>Příklad  
  Následující příklad provede `Rebuild` cíl `NotInSlnFolder` projektu a potom provede `Clean` cíl `InSolutionFolder` projekt, který se nachází v *NewFolder* složku řešení.  
   
 ```cmd
-msbuild SlnFolders.sln /target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
+msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
 
 ## <a name="troubleshooting"></a>Poradce při potížích

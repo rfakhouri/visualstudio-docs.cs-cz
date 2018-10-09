@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a211048e287bd3ef3e45625022f7389e06358e32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 802627f59f54b9a4b1179ba5c643b4671f4f7ce0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671865"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878951"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Postupy: přiřazení uložených procedur za účelem aktualizace, vložení a odstranění (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Uložené procedury lze přidat do Návrháře relací objektů a spustit jako t
 >  [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] databáze vygenerovala popisovače hodnoty automaticky pro identitu (automatické zvyšování čísla), rowguidcol (GUID databáze vygenerovala) a sloupce časového razítka. Databáze vygenerovala hodnoty v jiných typech sloupců neočekávaně způsobí hodnotu null. Na návratové hodnoty generovaných databází, měli byste ručně nastavit <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> k `true` a <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> na jednu z následujících akcí: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, nebo <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="configuring-the-update-behavior-of-an-entity-class"></a>Konfigurace chování aktualizace třídy Entity  
- Ve výchozím nastavení, logika aktualizace databáze (vložení, aktualizace a odstranění) se změnami, které byly provedené v datech v [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] tříd entit poskytuje [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] modulu runtime. Modul runtime vytvoří výchozí příkaz Insert, Update, a příkazy Delete, které jsou založeny na schéma tabulky (sloupec a informacemi o primárním klíči). Pokud výchozí chování není žádoucí, můžete provádět konfiguraci chování aktualizace přiřazením konkrétní uložené procedury k provedení potřebné operace vložení, aktualizace, a odstraní požadované pro manipulaci s daty v tabulce. Můžete také provést generování výchozího chování není, například při mapování tříd entit na zobrazení. Nakonec můžete přepsat výchozí chování aktualizace databáze vyžaduje přístup k tabulce prostřednictvím uložené procedury.  
+ Ve výchozím nastavení, logika aktualizace databáze (vložení, aktualizace a odstranění) se změnami, které byly provedené v datech v [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] tříd entit poskytuje [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] modulu runtime. Modul runtime vytvoří výchozí příkazy Insert, Update a Delete, které jsou založeny na schéma tabulky (sloupec a informacemi o primárním klíči). Pokud výchozí chování není žádoucí, můžete provádět konfiguraci chování aktualizace přiřazením konkrétní uložené procedury k provedení potřebné operace vložení, aktualizace, a odstraní požadované pro manipulaci s daty v tabulce. Můžete také provést generování výchozího chování není, například při mapování tříd entit na zobrazení. Nakonec můžete přepsat výchozí chování aktualizace databáze vyžaduje přístup k tabulce prostřednictvím uložené procedury.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

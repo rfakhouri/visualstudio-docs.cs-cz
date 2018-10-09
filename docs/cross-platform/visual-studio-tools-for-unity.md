@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 14949313b0e44dd7e86480177c56819d3fdb22f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a4e3dc416a406976403dceb0568cea5b8cbfd56e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775088"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880525"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 
@@ -50,7 +50,7 @@ Visual Studio Tools for Unity podporuje robustní [ladění](using-visual-studio
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 
-Visual Studio for Mac podporuje také projektů Unity. Další informace najdete v tématu [Visual Studio for Mac Tools pro Unity dokumentaci](https://docs.microsoft.com/en-us/visualstudio/mac/unity-tools).
+Visual Studio for Mac podporuje také projektů Unity. Další informace najdete v tématu [Visual Studio for Mac Tools pro Unity dokumentaci](/visualstudio/mac/unity-tools).
 
 ## <a name="next-steps"></a>Další kroky
 

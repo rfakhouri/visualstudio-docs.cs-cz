@@ -17,17 +17,17 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bdb645bed570df019c4f4fe15b6865e1197bec67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a19732336cbbba16c0cebda75735a2a807240d6
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680745"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880764"
 ---
 # <a name="ltvaluegt-javascript"></a>&lt;Hodnota&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dokumentace k sadě Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+Nejnovější verzi tohoto tématu můžete najít v [dokumentace k sadě Visual Studio 2017](/visualstudio/).  
   
 Určuje informace o dokumentaci pro `get` a `set` funkce pro vlastnosti ECMAScript 3.  
   

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e6e8a76e9ec7fc68e739e48399d76b244d5afa
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9e6dc57f81ca2fb87541f81df6a939314ad5f004
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945816"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880497"
 ---
 # <a name="common-msbuild-project-properties"></a>Obecné vlastnosti projektu nástroje MSBuild
 V následující tabulce je často používané seznamy vlastností, které jsou definovány v souborech projektu sady Visual Studio nebo součástí *.targets* soubory, které poskytuje nástroj MSBuild.  
@@ -48,14 +48,14 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 |BaseOutputPath|Specifikuje základní cestu pro výstupní soubor. Pokud je nastavena, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] použije `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Příklad syntaxe: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>`|  
 |BaseIntermediateOutputPath|Složky nejvyšší úrovně, kde jsou vytvořeny všechny složky zprostředkujících výstupů specifické konfigurace. Výchozí hodnota je `obj\`. Následující kód je příklad: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>`|  
 |BuildInParallel|Logická hodnota, která označuje, zda odkazy na projekt jsou vytvořeny nebo vyčištěny paralelně při více procesů [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se používá. Výchozí hodnota je `true`, což znamená, že projekty budou vytvořeny paralelně, pokud systém obsahuje více jader nebo procesorů.|  
-|BuildProjectReferences|Logická hodnota, která určuje, zda jsou odkazy na projekt vytvořil [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Automaticky nastaví na `false` Pokud vytváříte projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE), `true` -li jinak. `/p:BuildProjectReferences=false` můžete zadat na příkazovém řádku, aby se zabránilo kontroluje se, že odkazované projekty jsou aktuální.|  
+|BuildProjectReferences|Logická hodnota, která určuje, zda jsou odkazy na projekt vytvořil [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Automaticky nastaví na `false` Pokud vytváříte projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE), `true` -li jinak. `-p:BuildProjectReferences=false` můžete zadat na příkazovém řádku, aby se zabránilo kontroluje se, že odkazované projekty jsou aktuální.|  
 |CleanFile|Název souboru, který se použije jako "čistá mezipaměť." Čistá mezipaměť je seznam vygenerovaných souborů mají být odstraněny během operace čištění. Soubor je umístěn v mezilehlé výstupní cestě procesem sestavení.<br /><br /> Tato vlastnost určuje pouze názvy souborů, které nemají informace o cestě.|  
 |Znaková stránka|Určuje znakovou stránku pro všechny soubory zdrojového kódu dané kompilace. Tato vlastnost je ekvivalentní `/codepage` přepínač kompilátoru.|  
 |CompilerResponseFile|Soubor volitelných odpovědí může být předán úkolům kompilátoru.|  
 |Konfigurace|Konfigurace, který vytváříte, buď "Ladění" nebo "Verze".|  
 |CscToolPath|Cesta k *csc.exe*, [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] kompilátoru.|  
 |CustomBeforeMicrosoftCommonTargets|Název souboru projektu nebo soubor cílů, které mají být importovány automaticky před importem společných cílů.|  
-|DebugSymbols|Logická hodnota, která určuje, zda jsou symboly generovány sestavením.<br /><br /> Nastavení **/p:DebugSymbols = false** na příkazovém řádku zakáže generování databázi programu (*PDB*) soubory symbolů.|  
+|DebugSymbols|Logická hodnota, která určuje, zda jsou symboly generovány sestavením.<br /><br /> Nastavení **- p: DebugSymbols = false** na příkazovém řádku zakáže generování databázi programu (*PDB*) soubory symbolů.|  
 |DefineConstants|Definuje podmíněné konstanty kompilátoru. Dvojice symbol/hodnota jsou odděleny středníkem a jsou zadány pomocí následující syntaxe:<br /><br /> *symbol1 = value1; symbol2 = hodnota2*<br /><br /> Vlastnost je ekvivalentní `/define` přepínač kompilátoru.|  
 |DefineDebug|Logická hodnota, která určuje, zda má být definována konstanta DEBUG.|  
 |DefineTrace|Logická hodnota, která určuje, zda má být definována konstanta TRACE.|  

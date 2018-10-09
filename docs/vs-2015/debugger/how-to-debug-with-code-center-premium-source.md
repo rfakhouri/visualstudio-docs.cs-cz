@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 418307fc1390b8a1518be621c3e903a18ef39c73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a453f7e926175b6ebf4825d015626e0f81688f35
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670476"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879379"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Postupy: Ladění se zdrojem webu Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ S [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ladicího programu,
   
 5.  Zrušte **povolit volbu pouze vlastní kód (pouze spravované)** zaškrtávací políčko.  
   
-6.  Vyberte **povolit podporu zdrojového serveru povolit**.  
+6.  Vyberte **povolit podporu zdrojového serveru**.  
   
 7.  Vymazat **vyžadovat, aby zdrojové soubory shodovaly původní verze**.  
   

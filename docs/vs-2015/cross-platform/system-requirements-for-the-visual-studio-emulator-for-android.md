@@ -13,12 +13,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c70cf8ae41652d0426f40d26dd5217ca4507aad8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2bf6251b8152224b521f60b0ec1694e03adeb9b1
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679327"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880466"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Systémové požadavky pro emulátor sady Visual Studio pro Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,12 +135,12 @@ Emulátor Visual Studia pro Android běží jako virtuální počítač na Hyper
  Při spuštění emulátoru, pokud si nejste již členem skupiny Správci Hyper-V, zobrazí se výzva k připojení ke skupině (dialogových oken odkazuje na emulátoru Windows Phone). Propojení skupiny vyžaduje oprávnění správce.  
   
 > [!IMPORTANT]
->  Po připojení k skupině odhlásit nebo restartovat, aby se změna projevila.  
+> Po připojení k skupině odhlásit nebo restartovat, aby se změna projevila.  
   
  ![Spojování Hyper&#45;skupiny zabezpečení Správci V](../cross-platform/media/android-emu-hyperv-admin.png "Android_Emu_HyperV_Admin")  
   
- Pokud chcete sami ručně přidat do skupiny, otevřete místní uživatelé a skupiny modul snap-in. Další informace najdete v tématu [přidat uživatelský účet do skupiny](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (V tomto tématu Windows 7 se také vztahuje na Windows 8).  
-  
+ Pokud chcete sami ručně přidat do skupiny, otevřete místní uživatelé a skupiny modul snap-in.
+ 
 ##  <a name="BootableVHD"></a> Spouštění v emulátoru ze spouštěcí virtuální pevný disk se nepodporuje.  
  Při pokusu o spuštění aplikace v emulátoru Visual Studia pro Android při spuštění Windows ze spouštěcí virtuální pevný disk, emulátor obvykle trvá několik minut nebo nepodaří spustit. Když emulátor nepodaří spustit, zobrazí se následující zpráva: nasazení aplikace se nezdařilo. Zkuste to prosím znovu.  
   

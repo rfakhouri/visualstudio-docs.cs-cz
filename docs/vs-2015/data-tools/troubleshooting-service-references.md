@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6d9510bf667b95dde4619f469b51041c07c0b4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 696c6f2a0e738d965b5992e3df52a77831ab27a0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674298"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880887"
 ---
 # <a name="troubleshooting-service-references"></a>Řešení potíží s odkazy na služby
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,9 +70,9 @@ Toto téma obsahuje seznam běžných problémů, které mohou nastat při prác
 ## <a name="error-debugging-service-code"></a>Chyba ladění kódu služby
  Při krokování s vnořením kód služby WCF v kódu klienta, můžete obdržet chybu související s chybějící symboly. Tato situace může nastat, když služba, která byla součástí vašeho řešení se přesunout nebo odebrán z řešení.
 
- Když je nejprve přidat odkaz na službu WCF, která je součástí aktuálního řešení, přidá se explicitní závislost sestavení mezi projekt služby a projekt služby klienta. To zaručuje, že klient vždy přistupuje k binární soubory aktuální služby, který je obzvláště důležité pro ladění scénářů, jako je například krokování kódu služby z klientského kódu.
+ Když je nejprve přidat odkaz na službu WCF, která je součástí aktuálního řešení, přidá se explicitní závislost sestavení mezi projekt služby a projekt služby klienta. Zaručí se tak, že klient vždy přistupuje k binární soubory aktuální služby, který je obzvláště důležité pro ladění scénářů, jako je například krokování kódu služby z klientského kódu.
 
- Pokud projekt služby je odebrán z řešení, tato závislost explicitní sestavení je neplatná. Visual Studio již nemůže zaručit, který je znovu sestavit projekt služby podle potřeby.
+ Pokud projekt služby je odebrán z řešení, tato závislost explicitní sestavení je neplatná. Visual Studio již nemůže zaručit, že je znovu sestavit projekt služby podle potřeby.
 
  Chcete-li tuto chybu vyřešit, budete muset ručně znovu sestavit projekt služby:
 

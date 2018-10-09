@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f6a11de4b273b55910e03e73be79f6e3473bac5
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: 3d8ff33247fa6497bcf39451628b5ee503100b6c
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168367"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879834"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalace podpory Pythonu v sadě Visual Studio ve Windows
 
@@ -59,7 +59,7 @@ K rychlé otestování podpory Pythonu po provedení kroků instalace, otevřete
 
     | Možnost | Popis |
     | --- | --- |
-    | Distribuce Pythonu | Zvolte libovolnou kombinaci 32bitové a 64bitové varianty Python 2, Python 3, Anaconda2 a Anaconda3 distribuce, které máte v úmyslu pracovat. Každá obsahuje překladač distribuce, modul runtime a knihovny. Anaconda, je konkrétně open platforma pro datovou vědu, který obsahuje řadu různých předem nainstalované balíčky. (Můžete vrátit do instalačního programu sady Visual Studio kdykoli přidat nebo odebrat distribucí.)  **Poznámka:**: Pokud jste nainstalovali distribuce mimo instalačního programu sady Visual Studio, není nutné ke kontrole ekvivalentní možnost. Visual Studio automaticky rozpozná existující instalace Pythonu. Zobrazit [prostředí Pythonu](managing-python-environments-in-visual-studio.md). |
+    | Distribuce Pythonu | Zvolte libovolnou kombinaci 32bitové a 64bitové varianty Python 2, Python 3, Anaconda2 a Anaconda3 distribuce, které máte v úmyslu pracovat. Každá obsahuje překladač distribuce, modul runtime a knihovny. Anaconda, je konkrétně open platforma pro datovou vědu, který obsahuje řadu různých předem nainstalované balíčky. (Můžete vrátit do instalačního programu sady Visual Studio kdykoli přidat nebo odebrat distribucí.)  **Poznámka:**: Pokud jste nainstalovali distribuce mimo instalačního programu sady Visual Studio, není nutné ke kontrole ekvivalentní možnost. Visual Studio automaticky rozpozná existující instalace Pythonu. Zobrazit [prostředí Pythonu](managing-python-environments-in-visual-studio.md). Navíc pokud novější verzi jazyka Python je k dispozici, než co se zobrazí v instalačním programu, tuto verzi můžete nainstalovat samostatně a Visual Studio zjistí. |
     | **Podpora šablon Cookiecutter** | Nainstaluje Cookiecutter grafického uživatelského rozhraní zjišťovat šablony, zadejte možnosti šablon a vytváření projektů a souborů. Zobrazit [pomocí rozšíření Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Podpora webů v Pythonu** | Nainstaluje nástroje pro vývoj webů, včetně HTML, CSS a JavaScriptu úpravy podporu spolu s šablony projektů s použitím rozhraní Bottle, Flask a Django. Zobrazit [webová šablony projektů v Pythonu](python-web-application-project-templates.md). |
     | **Podpory pro Python IoT** | Podporuje vývoj pro Windows IoT Core pomocí Pythonu. |

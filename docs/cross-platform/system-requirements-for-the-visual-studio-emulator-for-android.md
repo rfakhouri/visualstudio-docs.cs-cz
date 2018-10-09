@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cd9884c950d7cf6adefe997cf13fdd78fa7203d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d7316c6096be59ee7781e116fa26e87623ccec27
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279398"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881095"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Požadavky na systém pro emulátor sady Visual Studio pro Android
 Emulátor Visual Studia pro Android běží jako virtuální počítač na Hyper-V, technologie virtualizace pro Windows 8 a novějších verzích. Pokud chcete spustit emulátor, musí počítač splňovat požadavky na spuštění technologie Hyper-V, jak je popsáno v tomto tématu.  
@@ -127,11 +127,11 @@ Emulátor Visual Studia pro Android běží jako virtuální počítač na Hyper
  Při spuštění emulátoru, pokud si nejste již členem skupiny Správci Hyper-V, zobrazí se výzva k připojení ke skupině (dialogových oken odkazuje na emulátoru Windows Phone). Propojení skupiny vyžaduje oprávnění správce.  
   
 > [!IMPORTANT]
->  Po připojení k skupině odhlásit nebo restartovat, aby se změna projevila.  
+> Po připojení k skupině odhlásit nebo restartovat, aby se změna projevila.  
   
  ![Spojování Hyper&#45;skupiny zabezpečení Správci V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
   
- Pokud chcete sami ručně přidat do skupiny, otevřete místní uživatelé a skupiny modul snap-in. Další informace najdete v tématu [přidat uživatelský účet do skupiny](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (V tomto tématu Windows 7 se také vztahuje na Windows 8).  
+ Pokud chcete sami ručně přidat do skupiny, otevřete místní uživatelé a skupiny modul snap-in.  
   
 ##  <a name="BootableVHD"></a> Spouštění v emulátoru ze spouštěcí virtuální pevný disk se nepodporuje.  
  Při pokusu o spuštění aplikace v emulátoru Visual Studia pro Android při spuštění Windows ze spouštěcí virtuální pevný disk, emulátor obvykle trvá několik minut nebo nepodaří spustit. Když emulátor nepodaří spustit, zobrazí se následující zpráva: nasazení aplikace se nezdařilo. Zkuste to prosím znovu.  

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 125fb107bcb40510ad8196c26c9538ef505d2093
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f9d039d6f6f5593538063e751348148786667000
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079119"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879054"
 ---
 # <a name="how-to-clean-a-build"></a>Postupy: Vyčištění sestavení
 Při čištění sestavení se odstraní všechny pomocných a výstupních souborů, byste museli opustit jenom soubory projektu a součást. Ze souborů projektu a komponenty nových instancí přechodný a výstupních souborů může pak být sestavena. Knihovny běžných úloh, které je součástí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zahrnuje [Exec](../msbuild/exec-task.md) úkol, který můžete použít ke spuštění příkazů systému. Další informace o knihovně úkoly, naleznete v tématu [úkolů odkaz](../msbuild/msbuild-task-reference.md).  
@@ -53,13 +53,13 @@ Při čištění sestavení se odstraní všechny pomocných a výstupních soub
 ## <a name="example"></a>Příklad  
  V následujícím příkladu projektu obsahuje nový cíl kódu `Clean`, který používá `RemoveDir` úlohy můžete odstranit adresář a všechny soubory a adresáře, které obsahuje. Také v tomto příkladu `Compile` cílové vytvoří samostatný adresář pro výstupní položky, které jsou odstraněny při sestavení Probíhá čištění.  
   
- `Compile` je definován jako výchozí cíl a je proto použít automaticky, pokud zadáte jiný cíl nebo cíle. Použít přepínač příkazového řádku **/target** určit jiný cíl. Příklad:  
+ `Compile` je definován jako výchozí cíl a je proto použít automaticky, pokud zadáte jiný cíl nebo cíle. Použít přepínač příkazového řádku **-target** určit jiný cíl. Příklad:  
   
- `msbuild <file name>.proj /target:Clean`  
+ `msbuild <file name>.proj -target:Clean`  
   
- **/Target** přepínače můžete zkrátila na **/t** a můžete zadat více než jeden cíl. Například pro použití cíle `Clean` pak cíl `Compile`, typ:  
+ **-Target** přepínače můžete zkrátila na **-t** a můžete zadat více než jeden cíl. Například pro použití cíle `Clean` pak cíl `Compile`, typ:  
   
- `msbuild <file name>.proj /t:Clean;Compile`  
+ `msbuild <file name>.proj -t:Clean;Compile`  
   
 ```xml  
 <Project DefaultTargets = "Compile"  
