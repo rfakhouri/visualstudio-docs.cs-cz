@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8018f3f72fd774a1ac64cd1d6d968ad8be65b453
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512236"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863946"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Oznámení a postup pro Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Systémy oznámení  
@@ -213,7 +213,7 @@ ms.locfileid: "39512236"
  Číselník (označované také jako "okruhu průběh") je indikátorem neurčitého průběhu primárně používá ve vztahu k kontextové uživatelského rozhraní. V těsné blízkosti jeho související obsah, jako je například textové kategorie záhlaví, zasílání zpráv nebo ovládací prvek zobrazí číselník a požadavek.  
   
 ##### <a name="cursor-feedback"></a>Zpětná vazba kurzoru  
- Pro operace, které trvat přibližně 2 – 7 sekund poskytnout zpětnou vazbu kurzoru. Obvykle to znamená použití kurzor pro čekání v operačním systému k dispozici. Pokyny najdete v článku na webu MSDN [Cursors.Wait vlastnost](https://msdn.microsoft.com/en-us/library/system.windows.input.cursors.wait\(v=vs.110\).aspx).  
+ Pro operace, které trvat přibližně 2 – 7 sekund poskytnout zpětnou vazbu kurzoru. Obvykle to znamená použití kurzor pro čekání v operačním systému k dispozici. Pokyny najdete v článku na webu MSDN [Cursors.Wait vlastnost](/dotnet/api/system.windows.input.cursors.wait).  
   
 #### <a name="progress-indicator-locations"></a>Umístění indikátoru průběhu  
   

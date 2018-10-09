@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60b76efc5c1c476f69a11804c74cd3341139c9c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d5c10cdf2221f329e8e0ff748c2b4fe77479b205
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080311"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863852"
 ---
 # <a name="midl-task"></a>MIDL – úloha
 Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *midl.exe*. Další informace najdete v tématu [příkazového řádku MIDL odkazu](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
@@ -245,7 +245,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *mi
   
      Pokud `true`, vyžaduje formát vstupního souboru, aby byl kompatibilní s *mktyplib.exe* verze 2.03 nástroje MkTypLib.exe.  
   
-     Další informace najdete v tématu **/mktyplib203** možnost [příkazového řádku MIDL odkazu](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). Viz také [syntaxi souboru ODL](https://msdn.microsoft.com/library/windows/desktop/ms221683(v=vs.85).aspx) na webu MSDN.  
+     Další informace najdete v tématu **/mktyplib203** možnost [příkazového řádku MIDL odkazu](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). Viz také [syntaxi souboru ODL](/previous-versions/windows/desktop/automat/odl-file-syntax) na webu MSDN.  
   
 -   **OutputDirectory**  
   

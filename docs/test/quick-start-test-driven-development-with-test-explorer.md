@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1c05ca6cbcf1f365e6b8147cbaab6004035f633f
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382087"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863885"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Rychlý start: Testovací řízeného rozvoje pomocí Průzkumníka testů
 
@@ -39,7 +39,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
 
     1.  Vytvoření testovacího projektu.
 
-         V **nový projekt** dialogového okna rozbalte **jazyka Visual Basic** > **Visual C#** nebo **Visual C++** a klikněte na tlačítko **Testu**.
+         V **nový projekt** dialogového okna rozbalte **jazyka Visual Basic** nebo **Visual C#** nebo **Visual C++** a klikněte na tlačítko **Test**.
 
          Vyberte **projekt testu jednotek**.
 

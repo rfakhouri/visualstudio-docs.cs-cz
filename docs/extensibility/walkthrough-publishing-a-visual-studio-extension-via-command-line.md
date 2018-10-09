@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 497aa6a85bd47813aa20bd5c2e89ca26ddffbe5a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082156"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863887"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Návod: Publikování rozšíření sady Visual Studio pomocí příkazového řádku
 
-Tento návod ukazuje, jak publikování rozšíření sady Visual Studio na webu Visual Studio Marketplace pomocí příkazového řádku. Když přidáte rozšíření na webu Marketplace, vývojáři mohou použít **rozšíření a aktualizace** dialogové okno pro procházení obsahuje nové a aktualizované rozšíření.
+Tento návod ukazuje, jak publikování rozšíření sady Visual Studio na webu Visual Studio Marketplace pomocí příkazového řádku. Když přidáte rozšíření na webu Marketplace, vývojáři mohou použít [ **rozšíření a aktualizace** ](../ide/finding-and-using-visual-studio-extensions.md) dialogové okno pro procházení obsahuje nové a aktualizované rozšíření.
 
 VsixPublisher.exe je nástroj příkazového řádku pro publikování rozšíření sady Visual Studio na webu Marketplace. Je přístupný z ${VSInstallDir}\VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. Příkazy v tomto nástroji k dispozici jsou: **publikovat**, **createPublisher**, **deletePublisher**, **deleteExtension**,  **přihlášení**, **odhlášení**.
 

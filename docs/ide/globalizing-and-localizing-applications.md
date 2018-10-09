@@ -17,30 +17,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9abcb55d49b84a97ad7eae241547317d74cc6f71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73e638b2474342987963c02f442f5d7a98a6e44e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942465"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863593"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizace a lokalizace aplikací
 
-Pokud máte v plánu na distribuci aplikace mezinárodní cílovou skupinu, budete muset zachovat několik věcí, nezapomeňte během fáze návrhu a vývoj. I v případě, že nemáte k dispozici tyto plány, malé úsilí předem můžete usnadnily podstatně by se měl plánu změnit v budoucích verzích vaší aplikace. Služby, které jsou součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usnadňují vývoj jednu aplikaci, která se může přizpůsobit různá národní prostředí spravovaný vývoj pomocí sady Visual Studio.
+Pokud plánujete distribuce vaší aplikace pro mezinárodní cílovou skupinu, bude nutné zachovat pár věcí v úvahu během fáze návrhu a vývoje. I v případě, že nemáte k dispozici tyto plány, ještě před zahájením malé úsilí můžete usnadnili značně by měla vaše plány změnit v budoucích verzí aplikace. Součástí služby [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usnadňují vývoj jednu aplikaci, která se přizpůsobí různá národní prostředí spravovaný vývoj pomocí sady Visual Studio.
 
 ## <a name="resources"></a>Prostředky
 
- Visual Studio byla navržena od začátku tak, aby vývoji pro mezinárodní cílovou skupinu snadno provedením výhod služeb, které jsou součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. V následujících článcích pomůže vám představí internacionalizace funkce integrovaná v sadě Visual Studio.
+ Visual Studio byla navržena od samého začátku k usnadnění vývoje s využitím služeb do vytvořených pro mezinárodní snadno cílovou skupinu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Tyto články vám pomůže vám představíme funkce internacionalizace integrované do sady Visual Studio.
 
- [Představení mezinárodních aplikací založené na rozhraní .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) seznámíte se základními pojmy související s vývojem softwaru pro mezinárodní trh pomocí sady Visual Studio a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ [Představení mezinárodních aplikací založené na rozhraní .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) seznámíte se základními pojmy týkající se vývoje softwaru pro mezinárodní trh pomocí sady Visual Studio a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
 
- [Lokalizace aplikací](../ide/localizing-applications.md) obsahuje odkazy na stránky o přizpůsobení aplikace pro daný jazykovou verzi.
+ [Lokalizace aplikací](../ide/localizing-applications.md) obsahuje odkazy na stránky o přizpůsobení aplikace pro danou jazykovou verzi.
 
- [Globalizace aplikací](../ide/globalizing-applications.md) obsahuje odkazy na stránky o vytváření aplikací, které podporují více jazykových verzí.
+ [Globalizace aplikací](../ide/globalizing-applications.md) obsahuje odkazy na stránky o vytváření aplikací, které podporují více jazykových verzích.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Osvědčené postupy pro vývoj aplikací připravených](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) obsahuje základní informace o programování pro mezinárodní cílovou skupinu.
-- [Přehled knihovny tříd](/dotnet/standard/class-library-overview) představuje třídy, rozhraní a typy hodnot, které urychlit a optimalizovat proces vývoje a poskytují přístup k funkci systému.
-- <xref:System.Globalization> Bodů na třídy v tomto oboru názvů, které definují informace týkající se jazykové verze, včetně jazyka, země nebo oblast, kalendáře používá, a pořadí formátu vzory pro data, měny a čísla a řazení řetězců.
-- <xref:System.Resources> Body třídy a rozhraní v tomto oboru názvů, která umožňuje vývojářům vytvářet, ukládat a spravovat různé specifické pro jazykovou verzi prostředky používané v aplikaci.
+- [Osvědčené postupy pro vývoj globalizovaných aplikací](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) poskytuje základní informace o programování pro mezinárodní cílovou skupinu.
+- [Přehled knihovny tříd](/dotnet/standard/class-library-overview) zavádí tříd, rozhraní a typů hodnot, které urychlují a optimalizovat proces vývoje a poskytují přístup k funkčnosti systému.
+- <xref:System.Globalization> Body třídy v tomto oboru názvů, které definují informace týkající se jazykové verze, včetně jazyka, země nebo oblast, kalendáře v použití, pořadí vzory formátu data, měny a čísla a řazení řetězců.
+- <xref:System.Resources> Body třídy a rozhraní v tomto oboru názvů, který umožňuje vývojářům vytvářet, ukládat a spravovat různé prostředky specifické pro jazykovou verzi používané v aplikaci.

@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 022eef30e7e067ca622650a2f5e702cd9a8168b9
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 92ac0daf0f1326676e37dcddd0a493c06a19df96
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443490"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863670"
 ---
 # <a name="common-quick-actions"></a>Běžné rychlé akce
 
@@ -71,17 +71,10 @@ Tyto rychlé akce umožňují řešit konflikty sloučení git "přijímáním z
 // Before
 private void MyMethod()
 {
-<<<<<<< HEAD
-    if (true)
-    {
-
-    }
-=======
     if (false)
     {
 
     }
->>>>>>> upstream
 }
 
 // Take changes from 'HEAD'
@@ -458,7 +451,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>Převést na interpolovaný řetězec
 
-[Interpolované řetězce](/dotnet/csharp/language-reference/keywords/interpolated-strings) představují snadný způsob, jak vyjádřit řetězce pomocí vložených proměnných, podobně jako **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)** metody. Tato rychlá akce rozpozná případech, kdy jsou řetězce zřetězených, nebo můžete použít **String.Format**a změní použití interpolovaného řetězce.
+[Interpolované řetězce](/dotnet/csharp/language-reference/keywords/interpolated-strings) představují snadný způsob, jak vyjádřit řetězce pomocí vložených proměnných, podobně jako **[String.Format](/dotnet/api/system.string.format#overloads)** metody.  Tato rychlá akce rozpozná případech, kdy jsou řetězce zřetězených, nebo můžete použít **String.Format**a změní použití interpolovaného řetězce.
 
 ```csharp
 // Before
