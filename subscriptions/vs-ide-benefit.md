@@ -9,12 +9,12 @@ description: Zjistěte, jak stáhnout a nainstalovat Visual Studio IDE, které j
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f65deb92684f043597256d8e2f0664f18da9cfa1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 775ab55066c241eb4881e19a33a8557aeada2aa4
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624386"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073841"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Používání benefitu Visual Studio 2017
 
@@ -68,7 +68,7 @@ Chcete-li stáhnout integrovaném vývojovém prostředí:
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              |  Není k dispozici          |
 | Visual Studio Dev Essentials | Není k dispozici  | Visual Studio Community |Ano |
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft s hodnotou partnera (MVP), ředitel pro oblast (RD).    Vyloučí: MCT Software & Services.*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD) .    Vyloučí: MCT Software & Services.*
 
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.

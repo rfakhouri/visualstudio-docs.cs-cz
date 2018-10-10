@@ -9,12 +9,12 @@ description: Další informace o předplatném školení Datacampu součástí v
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f0a6fe16edf12616dd93b394b118f40651ffb0ec
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 81dea4c5da7b6fe6b6c6cfe000ae953f98e6e83f
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282413"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073815"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Výhoda Datacampu školení v předplatných sady Visual Studio
 
@@ -80,7 +80,7 @@ Můžete kdykoli zastavit a obnovit trénování v příští relaci.  Stačí n
 
 
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), FTE, Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), FTE, Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine* 
 
 
 

@@ -9,12 +9,12 @@ description: Další informace o benefitech prioritní podpora součástí před
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 21448d75cbdbbff5468617ebb3ffc816f672ad3e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9377302cdee771e282ab622df0b76ecf2ca3460b
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282947"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074036"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Prioritní podpora na předplatná sady Visual Studio
 
@@ -238,7 +238,7 @@ Předplatitelé s vybraným předplatným sady Visual Studio mají nárok na pri
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Zahrnuté                                                            |Ano |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
 
-<sup>1</sup>*zahrnuje: neprodejné (NFR), představte si FTE, Visual Studio Industry Partner (VSIP).  Vyloučí: Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & služby pro vývojáře, BizSpark, Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD).*
+<sup>1</sup>*zahrnuje: neprodejné (NFR), představte si FTE, Visual Studio Industry Partner (VSIP).  Vyloučí: Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & služby pro vývojáře, BizSpark, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).*
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

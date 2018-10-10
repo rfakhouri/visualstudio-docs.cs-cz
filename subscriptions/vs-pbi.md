@@ -9,12 +9,12 @@ description: Další informace o předplatné Power BI Pro, které jsou součás
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 08e3fb3cc41ef7ada1acd984671150c1f61a0e05
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6d8cebe49351da79b90e9a12721abe6848912f20
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280464"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074010"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro v předplatných sady Visual Studio
 
@@ -79,7 +79,7 @@ Pokud chcete používat Power BI Pro, budete muset nastavit účet nebo se přih
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici |NENÍ K DISPOZICI|
 | Visual Studio Enterprise (měsíční cloud) | Azure                                       | Není k dispozici                                  |NENÍ K DISPOZICI|
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou partnera (MVP), ředitel pro oblast (RD).  Vyloučí: Microsoft Partner Network (MPN), FTE Imagine.*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD).    Vyloučí: Microsoft Partner Network (MPN), FTE Imagine.*
 
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.

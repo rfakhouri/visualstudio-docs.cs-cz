@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c78db0a141d711a1a0ac3e46fa49255e754bf52d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 717bfaf8bc97c0f45a45bdc8ba686d4c1df12e49
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676610"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073438"
 ---
 # <a name="grant-trust-to-documents"></a>Zajistit jeho důvěryhodnost do dokumentů
   Úrovni dokumentu projekt má stejné požadavky na zabezpečení jako projekty na úrovni aplikace: podepisování manifestů s certifikátem nebo kliknutím na výzvu vztahu důvěryhodnosti. Kromě toho dokumentem nebo sešitem, musí být umístěn v adresáři, který je určený jako důvěryhodného umístění.  
@@ -33,7 +33,7 @@ ms.locfileid: "35676610"
 ## <a name="trusted-locations"></a>Důvěryhodná umístění  
  Aplikace v [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] a Office 2010 centra vztahu důvěryhodnosti, kde uživatelé můžou konfigurovat nastavení zabezpečení a ochrana osobních údajů, jako je například důvěryhodných umístění. Pro řešení Office místním počítači se považuje za důvěryhodného umístění. Kvůli vyššímu riziku, existují však určité adresáře, která se nesmí nikdy důvěryhodné, jako je například dočasných složek pro systém, pro každého uživatele a pro Internet Explorer.  
   
- Další informace o Centru zabezpečení najdete v tématu [zabezpečení a zásady a nastavení v aplikaci Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Další informace o tom, jak vytvořit, spravovat, odebrat a konfigurovat důvěryhodné složky, najdete v části [nakonfigurovat důvěryhodné umístění a nastavení důvěryhodných vydavatelů v systému Office 2007](http://go.microsoft.com/fwlink/?LinkId=89203) a [vytvořit, odebrat nebo změnit důvěryhodné umístění souborů](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+ Další informace o Centru zabezpečení najdete v tématu [zabezpečení a zásady a nastavení v aplikaci Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Další informace o tom, jak vytvořit, spravovat, odebrat a konfigurovat důvěryhodné složky, najdete v části [nakonfigurovat důvěryhodné umístění a nastavení důvěryhodných vydavatelů v systému Office 2007](http://go.microsoft.com/fwlink/?LinkId=89203) a [vytvořit, odebrat nebo změnit důvěryhodné umístění souborů](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ## <a name="security-considerations-for-office-solutions"></a>Informace o zabezpečení pro řešení pro systém Office  
  Existuje několik otázky zabezpečení při zvažování složky, které chcete přidat do seznamu důvěryhodných umístění:  

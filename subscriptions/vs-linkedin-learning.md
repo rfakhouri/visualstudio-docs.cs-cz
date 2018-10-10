@@ -9,12 +9,12 @@ description: Další informace o benefitech LinkedIn Learning zahrnutý jako sou
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a1007f8cafe162f6afa09690bfa500f359793962
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9b40d11112497a46982440f98820dba69179486c
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278802"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073919"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Výhoda Linkedinem v předplatných sady Visual Studio
 
@@ -101,7 +101,7 @@ Chcete-li aktivovat vaše předplatné LinkedIn Premium a LinkedIn Learning výh
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | 3 měsíce |Ne.  K dispozici pro nové předplatitele pouze |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
 
-<sup>1</sup>*zahrnuje: neprodejné (NFR), Visual Studio Industry Partner (VSIP).  Vyloučí: Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
+<sup>1</sup>*zahrnuje: neprodejné (NFR), Visual Studio Industry Partner (VSIP).  Vyloučí: Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
 
 
 

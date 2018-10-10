@@ -9,12 +9,12 @@ description: Další informace o Enterprise Mobility + Security výhodu součás
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 81d93a4a030fd4a588903073d065041a6dbd69e6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c85643a13adec8913477d7201a224a6689d3d46f
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283285"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073789"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) v předplatných sady Visual Studio
 
@@ -61,7 +61,7 @@ Pokud chcete použít EMS, budete muset nastavit účet nebo se přihlaste pomoc
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 | Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark.  Vyloučí: Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD), MCT Software & Services, představte si, Microsoft Partner Network (Professional).*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark.  Vyloučí: Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD), MCT Software & Services, představte si, Microsoft Partner Network (Professional).*
 
 <sup>2</sup> *vyloučí programu Microsoft Partner Network (Professional)*
 

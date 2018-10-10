@@ -9,12 +9,12 @@ description: Další informace o benefitech specialistou součástí předplatn�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1163feb7b1a55a816eef3b4b5f106de01c34669a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 73201570aae74645a0116c3a34aab344c07c7837
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282519"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073678"
 ---
 # <a name="concierge-chat"></a>Komunikace se specialistou
 
@@ -48,7 +48,7 @@ Získání nápovědy prostřednictvím specialistou služby jsou velmi snadné.
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici |Není k dispozici |
 
-<sup>1</sup>*zahrnuje: neprodejné (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Vyloučí: FTE, Microsoft s hodnotou partnera (MVP), ředitel pro oblast (RD), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup>*zahrnuje: neprodejné (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Vyloučí: FTE, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD), Microsoft Partner Network (MPN), Imagine.*
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

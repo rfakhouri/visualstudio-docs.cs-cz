@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f39e1a5c5271e806a8e90499e50cb9bd4705a5d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 725d902c181e6082c7f995ceec805aa05441bbaa
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676478"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074049"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Postupy: vytváření projektů pro systém Office v sadě Visual Studio
   Můžete použít [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vytvoření doplňku VSTO a na úrovni dokumentu přizpůsobení pro aplikace Microsoft Office. Další informace o těchto typech projektů naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -157,7 +157,7 @@ ms.locfileid: "35676478"
   
     -   Vytváření projektu šablony aplikace Word, který je založen na *DOTX* souboru. Složku projektu musíte přidat do seznamu důvěryhodných umístění tak, aby mohli spustit a ladit projekt.  
   
-     Další informace o přidání dokumentu do seznamu důvěryhodných umístění naleznete na webu Microsoft Office Online [vytvoření, odebrání nebo změna důvěryhodného umístění pro soubory](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+     Další informace o přidání dokumentu do seznamu důvěryhodných umístění naleznete na webu Microsoft Office Online [vytvoření, odebrání nebo změna důvěryhodného umístění pro soubory](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ## <a name="see-also"></a>Viz také:  
  [Přehled šablon projektů Office](../vsto/office-project-templates-overview.md)   

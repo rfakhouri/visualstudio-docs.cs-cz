@@ -9,12 +9,12 @@ description: Další informace o předplatné školení Pluralsight, který je s
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3b90ac75cf92ac9adfef5023b3677b8044d44350
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 515053c8266aa7cccb1afd651c2eac4da31e3e8d
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283142"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074023"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight – školení v předplatných sady Visual Studio
 
@@ -81,7 +81,7 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | 3 měsíce |Ne|
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                  |NENÍ K DISPOZICI|
 | Visual Studio Enterprise (NFR<sup>1</sup> ) | Program                                       | Není k dispozici                                  |NENÍ K DISPOZICI|
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou partnera (MVP), ředitel pro oblast (RD), partnera společnosti Microsoft Network (MPN), FTE Imagine.*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD), partnera společnosti Microsoft Network (MPN), FTE Imagine.* 
 
 <sup>2</sup>*výhody Pluralsight je jedno použití pouze vázané na uživatele.  Jakmile odběratele využívá výhody, ne obnovit. Viz nejčastější dotazy níže pro další podrobnosti.  Po vypršení platnosti předplatného Pluralsight mohou mít nárok na 12měsíční přístup k 50 vybraných kurzů Pluralsight v jednom ze tří oblastí studie.*
 

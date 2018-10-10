@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a0a235062b24ab940057a020ce3f9e20ceaebaa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ac8c8bb1b206461749b20660d8131f747fd637de
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279580"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074114"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Chyba: Zdá se, že Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) na vzdáleném počítači neběží.
 Tato chybová zpráva znamená, že Visual Studio nemůže najít správné instanci Visual Studio Remote Debugging Monitor na vzdáleném počítači. Pro vzdálené ladění pro práci, musí být nainstalován Visual Studio Remote Debugging Monitor. Informace o stažení a nastavení vzdáleného ladicího programu, najdete v části [vzdálené ladění](../debugger/remote-debugging.md).  
@@ -38,13 +38,13 @@ Tato chybová zpráva znamená, že Visual Studio nemůže najít správné inst
  Následující části uvádějí některé z jiných důvodů, proč jste možná jste získali tuto zprávu, a můžete provést k vyřešení problému.  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>Vzdálený počítač není dostupný  
- Zkuste [ping](https://technet.microsoft.com/en-us/library/ee624059\(v=ws.10\).aspx) vzdálený počítač. Pokud je odpověď na příkaz ping, nástroje pro vzdálenou nebude možné se připojit buď. Akci restartování vzdáleném počítači a v opačném případě se ujistěte, zda je správně nakonfigurován v síti.  
+ Zkuste [ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) vzdálený počítač. Pokud je odpověď na příkaz ping, nástroje pro vzdálenou nebude možné se připojit buď. Akci restartování vzdáleném počítači a v opačném případě se ujistěte, zda je správně nakonfigurován v síti.  
   
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>Verze vzdáleného ladicího programu neodpovídá verzi sady Visual Studio  
  Verze sady Visual Studio, které spouštíte místně musí odpovídat verzi sledování vzdáleného ladění, na kterém běží na vzdáleném počítači. Chcete-li to vyřešit, stáhněte a nainstalujte odpovídající verzi sledování vzdáleného ladění. Přejděte [Download Center](http://www.microsoft.com/en-us/download) najít správnou verzi vzdáleného ladicího programu.  
   
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Místní a vzdálené počítače mají různá ověřovací režimy  
- Místní a vzdálené počítače musí používat stejný režim ověřování. Problém odstranit, ujistěte se, že oba počítače používají stejný režim ověřování. Další informace o režimech ověřování najdete v tématu [Přehled ověřování Windows](https://technet.microsoft.com/en-us/library/hh831472.aspx).  
+ Místní a vzdálené počítače musí používat stejný režim ověřování. Problém odstranit, ujistěte se, že oba počítače používají stejný režim ověřování. Další informace o režimech ověřování najdete v tématu [Přehled ověřování Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).  
   
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>Vzdálený ladicí program je spuštěn pod účtem jiného uživatele  
  Tento problém můžete vyřešit jedním z následujících způsobů:  

@@ -9,12 +9,12 @@ description: Další informace o benefitech Office 365 pro vývojáře, které j
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a97f32bdb2e4a2639962cb3bfc1240f27473bfd6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9c77062873704f6e92d04aa4e949f1db3c1c71f7
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283181"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073971"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Zvýhodněné předplatné Office 365 pro vývojáře v předplatných sady Visual Studio
 
@@ -56,7 +56,12 @@ Předplatitelé s vybraným předplatným sady Visual Studio Enterprise získaj�
     > [!div class="mx-imgBorder"]
     > ![Ověření kódu vývojáře Office 365](_img\vs-office-dev\vs-office-dev-setup.png)
 
-Je to!  Zobrazí se stránka zobrazení informací podle vašich požadavků.  Pokud chcete získat přístup k vašeho vývojářského předplatného, přejděte na [office.com](https://www.office.com) a přihlaste se pomocí ID uživatele a heslo, které jste právě vytvořili.
+Je to!  Zobrazí se stránka zobrazení informací podle vašich požadavků.  
+
+## <a name="next-steps"></a>Další kroky
+Pokud chcete získat přístup k vašeho vývojářského předplatného, přejděte na [office.com](https://www.office.com) a přihlaste se pomocí ID uživatele a heslo, které jste právě vytvořili.
+
+Další informace o předplatné Office 365 pro vývojáře, podívejte se [k programu pro vývojáře pro Office 365](https://docs.microsoft.com/office/developer-program/office-365-developer-program-faq). 
 
 
 ## <a name="eligibility"></a>Způsobilost
@@ -69,7 +74,7 @@ Je to!  Zobrazí se stránka zobrazení informací podle vašich požadavků.  P
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici |NENÍ K DISPOZICI |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services pro vývojáře, MCT Software & Services.  Vyloučí: Microsoft Partner Network (MPN), představte si vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD).*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services pro vývojáře, MCT Software & Services.  Vyloučí: Microsoft Partner Network (MPN), představte si Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).*
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

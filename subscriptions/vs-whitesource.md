@@ -9,12 +9,12 @@ description: Zjistěte, jak chcete předplatné aktivovat, nástroj WhiteSource 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a7c384a8bc4b84aea4982bd195b0d92820c68ecb
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: fccd62c67258d2df24055ccb4fc725ec7b3b82a4
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542348"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074101"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Nástroj WhiteSource Bolt v předplatných sady Visual Studio
 
@@ -84,7 +84,7 @@ Vyhledejte a opravte slabá místa opensourcového kódu a generovat komplexní 
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici |NENÍ K DISPOZICI |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
 
-<sup>1</sup>*zahrnuje: Microsoft Partner Network (Enterprise).  Vyloučí: Jiné není pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD), MCT Software & Services, Microsoft Partner Network () Professional).*
+<sup>1</sup>*zahrnuje: Microsoft Partner Network (Enterprise).  Vyloučí: Jiné není pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), MCT Software & Services, Microsoft Partner Network () Professional).*
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

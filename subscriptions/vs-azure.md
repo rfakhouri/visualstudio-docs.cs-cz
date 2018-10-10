@@ -9,12 +9,12 @@ description: Zjistěte, jak aktivovat výhody služeb Azure součástí vašeho 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b8f3542fce0d04e4e6efeba6e2558740c5f5d12f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2a59953eb3af65430492d892e58f51f2d51f63e5
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282310"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073958"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Použití Microsoft Azure v předplatných sady Visual Studio
 
@@ -44,7 +44,7 @@ Jako předplatitel sady Visual Studio můžete použít Microsoft Azure bez dal�
 | Visual Studio Enterprise – BizSpark                          | měsíční kredit 150 USD         |   Ano                                                        |
 | Visual Studio Enterprise – MCT Software & Services           | měsíční kredit 100 USD         |   Ano                                                        |
 | Visual Studio Enterprise – MCT Software & Services pro vývojáře | měsíční kredit 150 USD         |   Ano                                                        |
-* Zahrnuje není pro prodej (NFR), Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP)
+* Zahrnuje není pro prodej (NFR), Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP)
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

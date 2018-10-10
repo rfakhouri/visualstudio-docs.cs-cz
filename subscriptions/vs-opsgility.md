@@ -9,12 +9,12 @@ description: Další informace o dovedností mě nahoru – používá technolog
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: 1eb58fb8667e2eebea1108d0df2d654917ed2702
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 8f62fdb14847048f212c055017b1461085e3529b
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243910"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073711"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Dovednosti mě až – používá technologii výhoda školení Opsgility v předplatných sady Visual Studio
 
@@ -45,7 +45,7 @@ Vybraná předplatná sady Visual Studio zahrnují přístup k odborné školen�
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici | NENÍ K DISPOZICI  |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
 
-*Vyloučí: Microsoft Partner Network (MPN), Vážíme si toho partnera Microsoftu (MVP), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
+*Vyloučí: Microsoft Partner Network (MPN), Microsoft Vážíme si toho Professional (MVP), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

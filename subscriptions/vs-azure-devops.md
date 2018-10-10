@@ -9,12 +9,12 @@ description: Zjistěte, jak můžete Azure DevOps jako předplatitel sady Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 34a6f601eb3ad78cb4c34af1807e66b7e7d6058e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1b536a303b2eba848c6b1cf41bcf73d6cf10975d
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859962"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073646"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps výhody pro předplatitele sady Visual Studio
 
@@ -33,7 +33,7 @@ Při přihlášení k Azure DevOps pomocí identity, který jste použili pro ak
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Azure panely & úložišť (Basic), Azure testovacích plánů                                              |  Ano          |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Azure panely & úložišť (Basic), Azure testovacích plánů                                              |  Ano          |
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Microsoft s hodnotou partnera (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & služby pro vývojáře.   Vyloučí: MCT Software & Services, Imagine.*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & služby pro vývojáře.   Vyloučí: MCT Software & Services, Imagine.*
 
 Další informace o funkcích Azure DevOps:
 

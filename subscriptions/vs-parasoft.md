@@ -9,12 +9,12 @@ description: Zjistěte, jak chcete předplatné aktivovat, Test Professional Par
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9636bd3a264cf3cdd364382ffdffb11c376f1598
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f0c63ea7dba4f79aee9541eafd57bfa9fa2440eb
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283155"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073763"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop v předplatných sady Visual Studio
 
@@ -82,7 +82,7 @@ Testujte dříve a častěji.  Simulujte a testujte chování není k dispozici 
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici|NENÍ K DISPOZICI |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
 
-<sup>1</sup>*zahrnuje: Microsoft Partner Network (Enterprise).  Vyloučí: Neprodejné (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Vážíme si toho partnera Microsoftu (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
+<sup>1</sup>*zahrnuje: Microsoft Partner Network (Enterprise).  Vyloučí: Neprodejné (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
 
 
 

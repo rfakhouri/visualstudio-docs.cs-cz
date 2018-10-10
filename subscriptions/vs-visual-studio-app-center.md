@@ -9,12 +9,12 @@ description: Další informace o benefitech Visual Studio App Center, které jso
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 266ce307b8ee06eed427385d67c48d4258ae2a1c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e6d8e53d01892dc22de8ce48f37f0df6a506ae3b
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283168"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073828"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center v předplatných sady Visual Studio
 
@@ -50,7 +50,7 @@ Začínáme se službou Visual Studio App Center je snadný.
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Zahrnuté                                                            |Ano |
 
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR) FTE, Visual Studio Industry Partner (VSIP), představte si, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software a služby pro vývojáře, BizSpark, Microsoft s hodnotou partnera (MVP ), Ředitel pro oblast (RD).*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR) FTE, Visual Studio Industry Partner (VSIP), představte si, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software a služby pro vývojáře, BizSpark, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD).* 
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

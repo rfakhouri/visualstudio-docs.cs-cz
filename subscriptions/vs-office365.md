@@ -9,12 +9,12 @@ description: Další informace o benefitech služeb Office 365 součástí někt
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f26bcc2b4e5313efcf6157d7be7cd01115594cf5
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 27be6e98bcaf030a74096a404383cbc54d64f44f
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48864005"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073906"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 v předplatných sady Visual Studio
 
@@ -53,7 +53,7 @@ Pokud máte v plánu pro vývoj aplikací pro Office, bude potřeba aktivovat v�
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 | Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Microsoft s hodnotou partnera (MVP), ředitel pro oblast (RD), MCT Software & Services, představte si, Microsoft Partner Network.* 
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Microsoft s hodnotou Professional (MVP), ředitel oblasti (RD), MCT Software a služby, představte si, Microsoft Partner Network.* 
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
