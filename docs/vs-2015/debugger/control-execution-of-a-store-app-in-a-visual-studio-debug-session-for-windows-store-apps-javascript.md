@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5725dc2be204ae3b657a857c5a358a29b8c3709
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629743"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881134"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Řízení spouštění aplikace pro Store v ladicí relaci sady Visual Studio pro aplikace Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -301,7 +301,7 @@ Tento rychlý start ukazuje, jak pro navigaci v ladicím programu sady Visual St
   
     -   **Anonymní funkce** ukazuje na řádku `module` funkce, kde je spuštění pozastaveno. Toto je začátek zásobníku volání.  
   
-4.  **Krokovat s vnořením funkce k dosažení example5_d funkce.** Zvolte **Krokovat s vnořením** na **ladění** nabídce (klávesnice: **F11**) k provádění volání v v cestě k volání, dokud se nedostanete vstupní bod funkce example5_d. Všimněte si, že pokaždé, když, že funkce volá funkci, číslo řádku volání funkce se uloží a volaná funkce je umístěn v horní části zásobníku. Číslo řádku volání funkce je bod, ve kterém byla pozastavena volání funkce spuštění. Žlutá šipka odkazuje na aktuálně prováděné funkci.  
+4.  **Krokovat s vnořením funkce k dosažení example5_d funkce.** Zvolte **Krokovat s vnořením** na **ladění** nabídce (klávesnice: **F11**) k provedení volání v cestě k volání, dokud se nedostanete vstupní bod funkce example5_d. Všimněte si, že pokaždé, když, že funkce volá funkci, číslo řádku volání funkce se uloží a volaná funkce je umístěn v horní části zásobníku. Číslo řádku volání funkce je bod, ve kterém byla pozastavena volání funkce spuštění. Žlutá šipka odkazuje na aktuálně prováděné funkci.  
   
      ![Okno zásobník volání](../debugger/media/dbg-jsnav-callstack-windows.png "DBG_JSNAV_CallStack_windows")  
   
