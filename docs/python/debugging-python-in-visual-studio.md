@@ -1,7 +1,7 @@
 ---
 title: Ladění kódu v Pythonu
 description: Názorný postup funkce ladění v sadě Visual Studio speciálně pro kód Python, včetně nastavení zarážek, krokování, kontrolu hodnoty, prohlížení výjimek a ladění v interaktivním okně.
-ms.date: 09/25/2018
+ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa331093e6085179a20638b1314200f65deb6a61
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228939"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101157"
 ---
 # <a name="debug-your-python-code"></a>Ladění kódu Pythonu
 
@@ -25,7 +25,6 @@ Visual Studio nabízí komplexní možnosti ladění pro Python, včetně připo
 Také naleznete v následujících článcích ladění specifické pro scénář:
 
 - [Vzdálené ladění pro Linux](debugging-python-code-on-remote-linux-machines.md)
-- [Vzdálené ladění Azure](debugging-remote-python-code-on-azure.md)
 - [Ladění ve smíšeném režimu Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Symboly pro ladění ve smíšeném režimu](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 

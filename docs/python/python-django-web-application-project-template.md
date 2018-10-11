@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e847322b1bbbefec5c7013d7e90475e08f42694b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4ea90a97067e92d39772bd4257dc3abbae58d1d8
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499540"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100962"
 ---
 # <a name="django-web-project-template"></a>Šablona webového projektu Django
 
@@ -56,7 +56,7 @@ Konzole pro správu Django se přistupuje přes různé příkazy na **projektu*
 
     ![Konzola](media/template-django-console-sync-db.png)
 
-- **Shromažďovat statické**: spustí `manage.py collectstatic --noinput` zkopírovat všechny statické soubory do cesta zadaná položkou `STATIC_ROOT` ve vašich *settings.py*. Když [publikování do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md), statické soubory se automaticky shromažďují, jako součást operace publikování.
+- **Shromažďovat statické**: spustí `manage.py collectstatic --noinput` zkopírovat všechny statické soubory do cesta zadaná položkou `STATIC_ROOT` ve vašich *settings.py*.
 
     ![Konzola](media/template-django-console-collect-static.png)
 

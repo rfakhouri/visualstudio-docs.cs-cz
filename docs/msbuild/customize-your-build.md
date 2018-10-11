@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c4fa433a3eb2318c36545a285cfd57386c169eb2
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175953"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101027"
 ---
 # <a name="customize-your-build"></a>Přizpůsobení sestavení
 
@@ -33,6 +33,11 @@ A *Directory.Build.rsp* souboru nebo nad zdrojový adresář se použijí pro se
 Před MSBuild verze 15 Pokud byste chtěli poskytnout nových, vlastních vlastností do projektů ve vašem řešení, museli jste ručně přidejte odkaz na tuto vlastnost pro každý soubor projektu v řešení. Nebo jste museli definovat vlastnost *.props* souboru a k následnému importování explicitně *.props* soubor ve všech projektech v řešení, mimo jiné.
 
 Ale nyní můžete přidat nové vlastnosti pro každý projekt v jednom kroku definováním v jednotlivých souborů volané *Directory.Build.props* v kořenové složce, která obsahuje váš zdroj. Při spuštění nástroje MSBuild *Microsoft.Common.props* vyhledá strukturu pro *Directory.Build.props* souboru (a *cílů Microsoft.Common.targets* hledá *Directory.Build.targets*). Pokud jeden najde, importuje vlastnost. *Directory.Build.props* je uživatelem definovaného souboru, který obsahuje vlastní nastavení pro projekty v adresáři.
+
+> [!NOTE]
+> Systémy založené na Linuxu souborů jsou malá a velká písmena. Ujistěte se, že použití malých a velkých Directory.Build.props název souboru odpovídá přesně nebo ho nerozpozná během procesu sestavení.
+>
+> Zobrazit [tento problém Githubu](https://github.com/dotnet/core/issues/1991#issue-368441031) Další informace.
 
 ### <a name="directorybuildprops-example"></a>Příklad Directory.Build.props
 

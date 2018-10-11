@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: cc889accc116fb2115ae56155a190ed6ea2d3fc0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 821da7c5d131acea62e944055ec6c450e4bc5154
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797849"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101105"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core ve službě IIS v Azure v sadě Visual Studio 2017
 
@@ -183,8 +183,6 @@ Pokud nepoužíváte nasazení webu, musíte publikovat a nasazení aplikace pom
 ### <a name="BKMK_msvsmon"></a> Stáhněte a nainstalujte nástroje remote tools v systému Windows Server
 
 V tomto kurzu se používá Visual Studio 2017.
-
-Pokud máte potíže při otevírání stránku ke stažení vzdáleného ladicího programu, přečtěte si téma [odblokovat stahování souborů](../debugger/remote-debugging.md#unblock_msvsmon) nápovědu.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   

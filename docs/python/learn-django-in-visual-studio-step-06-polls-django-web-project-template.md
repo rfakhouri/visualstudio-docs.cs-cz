@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3e3f170e93a4df6a5cc3dd0e918279f902952b1d
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 77cce33aa8dd5a0f265aadcfa1cd1a751a34aa3d
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228926"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101053"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6: Použijte šablony Polls – webový projekt Django
 
@@ -368,7 +368,7 @@ Nyní jste prozkoumali rozsahu "Prázdné Django webového projektu", "Webového
 
 Spuštění webové aplikace ve svém vývojovém počítači je pouze jeden krok při vytváření aplikace dostupné pro vaše zákazníky. Tyto úlohy mohou zahrnovat další kroky:
 
-- Nasazení webové aplikace do produkčního prostředí serveru, jako je Azure App Service. Zobrazit [publikovat do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md), který obsahuje konkrétní změny nutný pro aplikace Django.
+- Nasazení webové aplikace do produkčního prostředí serveru, jako je Azure App Service. Zobrazit [publikovat do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 - 404 – Stránka přizpůsobit tak, že vytvoříte šablonu s názvem *templates/404.html*. Pokud je přítomen, Django používá tuto šablonu místo jeho výchozí hodnotu. Další informace najdete v tématu [chyba zobrazení](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) v dokumentaci k Django.
 
@@ -376,7 +376,4 @@ Spuštění webové aplikace ve svém vývojovém počítači je pouze jeden kro
 
 - Změňte aplikaci z SQLite na provozní úrovni dat úložiště, jako je PostgreSQL, MySQL a SQL Server (všechny z nich je možné hostovat na Azure). Jak je popsáno na [kdy použít SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite funguje s nízkou až středním provozem lokality s méně než 100 tisíc přístupů za den, ale nedoporučuje se používat pro větší svazky. Také je omezeno na jeden počítač, proto jej nelze použít ve všech scénářích více serverů, jako je Vyrovnávání zatížení a geografická replikace. Informace o podpoře společnosti Django pro ostatní databáze najdete v tématu [nastavení databáze](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Můžete také použít [sady Azure SDK for Python](azure-sdk-for-python.md) pro práci se službami Azure storage jako tabulek a objektů BLOB.
 
-- Nastavení průběžné integrace a nasazení kanálu ve službě, jako je Azure kanály. Kromě práce se správou zdrojového kódu (na úložiště Azure, Githubu nebo jinde), můžete mít Azure testovací plány automaticky spouštět testy jednotek jako nezbytný předpoklad pro vydanou verzi a taky nakonfigurovat kanál pro nasazení do přípravného server pro další testy před nasazení do produkčního prostředí. Služby Azure DevOps, navíc se integruje s monitorováním řešení, jako jsou App Insights a zavře celý cyklus se nástroje pro agilní plánování. Další informace naleznete v tématu:
-
-  - [Vytvoření kanálu CI/CD pro Python s projekty Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [Vývoj v jazyce Python v Azure pomocí Azure DevOps (video, 11 min 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
+- Nastavení průběžné integrace a nasazení kanálu ve službě jako Visual Studio Team Services (VSTS). Kromě práce se správou zdrojového kódu (na VSTS, Githubu nebo jinde), může mít automaticky spouštět testy jednotek jako nezbytný předpoklad pro vydanou verzi a taky nakonfigurovat kanál pro nasazení do přípravného server pro další testování před nasazením do VSTS produkčního prostředí. VSTS, navíc se integruje s monitorováním řešení, jako jsou App Insights a zavře celý cyklus se nástroje pro agilní plánování. Další informace najdete v tématu [vytvoření kanálu CI/CD pro Python s Azure DevOps project](/azure/devops-project/azure-devops-project-python?view=vsts).

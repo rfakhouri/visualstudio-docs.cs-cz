@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46913c1bb671c1986c4f302a84d4183fe17f5878
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9edfae9eb2109a81208cd864dd992dee565f7958
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778291"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101084"
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 Můžete ladit aplikace Visual Studio, který byl nasazen na jiný počítač. K tomu použijete vzdálený ladicí program sady Visual Studio.
@@ -47,47 +47,6 @@ Pokud jenom chcete stáhnout a nainstalovat vzdáleného ladicího programu a ne
 ## <a name="download-and-install-the-remote-tools"></a>Stáhněte a nainstalujte nástroje remote tools
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-## <a name="unblock_msvsmon"></a> Odblokování stáhnout nástroje remote tools v systému Windows Server
-
-Výchozí nastavení zabezpečení v aplikaci Internet Explorer ve Windows serveru může být časově náročné ke stažení komponenty, například nástroje remote tools.
-
-* Je povoleno rozšířené nastavení zabezpečení v Internet Exploreru, což brání websites otevírání a zpřístupňování webových prostředků, pokud nejsou explicitně povolená na doménu obsahující zdroj (to znamená, důvěryhodná). I když můžete toto nastavení zakážete, nedoporučujeme, že je vzhledem k tomu, že to představuje bezpečnostní riziko.
-
-* V systému Windows Server 2016, výchozí nastavení **Možnosti Internetu** > **zabezpečení** > **Internet**  >   **Vlastní úroveň** > **stáhne** také zakáže stahování souborů. Pokud chcete stáhnout remote tools přímo v systému Windows Server, je nutné povolit stahování souborů.
-
-Pokud chcete stáhnout nástroje pro Windows Server, doporučujeme jednu z následujících akcí:
-
-* Stáhnout nástroje remote tools na jiném počítači, jako je například jeden spuštěné Visual Studio a zkopírujte *.exe* soubor do systému Windows Server.
-
-* Spustit vzdálený ladicí program [ze sdílené složky](#fileshare_msvsmon) na svém počítači Visual Studio.
-
-* Stáhnout nástroje pro vzdálenou přímo v systému Windows Server a přijímal výzvy k přidání důvěryhodných serverů. Moderních webů často zahrnují mnoho zdrojů třetí strany, takže to může způsobit velké množství výzev. Kromě toho přesměrovaného odkazy muset přidat ručně. Můžete nastavit některé z důvěryhodných lokalit přidat před zahájením stahování. Přejděte na **Možnosti Internetu > zabezpečení > Důvěryhodné servery > servery** a přidejte následující weby.
-
-  * VisualStudio.microsoft.com
-  * download.visualstudio.microsoft.com
-  * o: prázdné
-
-  Pro starší verze ladicího programu na my.visualstudio.com přidejte tyto další lokality, abyste měli jistotu, že je tento přihlášení úspěšné:
-
-  * microsoft.com
-  * go.microsoft.com
-  * download.microsoft.com
-  * My.VisualStudio.com
-  * login.microsoftonline.com
-  * Login.live.com
-  * secure.aadcdn.microsoftonline-p.com
-  * MSFT.STS.microsoft.com
-  * auth.gfx.MS
-  * app.vssps.visualstudio.com
-  * vlscppe.microsoft.com
-  * Query.prod.CMS.RT.microsoft.com
-
-    Pokud budete chtít přidat tyto domény při stahování nástroje remote tools a pak zvolte **přidat** po zobrazení výzvy.
-
-    ![Dialogové okno o blokovaném obsahu pole](../debugger/media/remotedbg-blocked-content.png)
-
-    Když si stáhnete software, získat některé další požadavky pro udělení oprávnění k načítání různých skriptů na webu a prostředky. Na my.visualstudio.com doporučujeme vám, že přidáte další domény, abyste měli jistotu, že je tento přihlášení úspěšné.
 
 ## <a name="requirements_msvsmon"></a> Požadavky
 
@@ -163,7 +122,7 @@ Pro ladění v technologii ASP.NET a jiné prostředí serveru, musíte buď spu
 ## <a name="see-also"></a>Viz také:
 
 - [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)
-- [Konfigurace brány Windows Firewall pro vzdálené ladění](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
+- [Konfigurace brány firewall ve Windows pro vzdálené ladění](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md)
 - [Vzdálené ladění ASP.NET Core na počítači vzdálené služby IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
-- [Vzdálené ladění chyby a řešení potíží](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Chyby při vzdáleném ladění a jejich řešení](../debugger/remote-debugging-errors-and-troubleshooting.md)

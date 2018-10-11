@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 813fdbccaf7bb685f0b4bf182f0bd0aede907f83
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551659"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101131"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Jak přiřadit prostředí Pythonu, ve kterém se používá pro projekt
 
@@ -50,7 +50,7 @@ Virtuální prostředí již není jedinečnou kombinaci konkrétní interpret P
 
 Výhoda použití virtuální prostředí je, že při vývoji projektu v čase, virtuální prostředí vždy odráží přesné závislosti projektu. (Sdílené globální prostředí, na druhé straně obsahuje libovolný počet knihoven, zda je použijete v projektu nebo ne). Potom můžete snadno vytvořit *souboru requirements.txt* souboru z virtuálního prostředí, které se pak použije k opětovné instalaci těchto závislostí na jiném počítači vývojové nebo produkční prostředí. Další informace najdete v tématu [spravovat vyžadované balíčky pomocí souboru requirements.txt](managing-required-packages-with-requirements-txt.md).
 
-Když otevřete projekt v sadě Visual Studio, který obsahuje *souboru requirements.txt* souboru, Visual Studio automaticky nabízí možnost znovu vytvořit virtuální prostředí. Na počítačích, kde není nainstalovaná sada Visual Studio, například Azure App Service, můžete použít `pip install -r requirements.txt` obnovení balíčků (Tento proces je popsaný na [Správa Pythonu ve službě Azure App Service](managing-python-on-azure-app-service.md)).
+Když otevřete projekt v sadě Visual Studio, který obsahuje *souboru requirements.txt* souboru, Visual Studio automaticky nabízí možnost znovu vytvořit virtuální prostředí. Na počítačích, kde není nainstalovaná sada Visual Studio, můžete použít `pip install -r requirements.txt` obnovení balíčků.
 
 Protože virtuální prostředí obsahuje pevně zakódované cesty k základní interpret, a proto můžete znovu vytvořit prostředí pomocí *souboru requirements.txt*, obvykle vynechat celé virtuální prostředí složky ze správy zdrojového kódu.
 

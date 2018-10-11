@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c282bdbfbfad589418c48d6caa65dedfdc7a53b2
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776032"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100936"
 ---
 # <a name="python-item-templates"></a>Šablony položek Pythonu
 
@@ -42,18 +42,13 @@ Následující tabulka stručně popisuje efekt každé šablony položky v rám
 | **Okno WPF v Ironpythonu** | Okno WPF obsahuje dva soubory vedle sebe: *.xaml* soubor, který definuje `<Window>` s prázdnou `<Grid>` elementu a přidružené *.py* soubor, který načte soubor XAML pomocí `wpf` knihovny. Obvykle se používá v rámci projektu vytvořeného pomocí jedné z šablon projektu Ironpythonu. Zobrazit [projektů v Pythonu spravovat – šablony projektů](managing-python-projects-in-visual-studio.md#project-templates). |
 | **Soubory podpory webové Role** | A *bin* složky v kořenové složce projektu (bez ohledu na vybrané složky v projektu). Složka obsahuje výchozí skript nasazení a *web.config* soubor pro webové role Azure Cloud Service. Také obsahuje šablony *readme.html* soubor, který vysvětluje podrobnosti. |
 | **Podpůrné soubory pro Role pracovního procesu** | A *bin* složky v kořenové složce projektu (bez ohledu na vybrané složky v projektu). Složka obsahuje výchozí skript nasazení a spuštění, spolu s *web.config* soubor rolí pracovních procesů cloudových služeb Azure. Také obsahuje šablony *readme.html* soubor, který vysvětluje podrobnosti. |
-| **Web.config pro Azure (FastCGI)** | A *web.config* soubor, který obsahuje položky pro aplikace s využitím [s rozhraním WSGI](https://wsgi.readthedocs.io/en/latest/) objekt pro zpracování příchozích připojení. Tento soubor je obvykle nasazeni do kořenového adresáře webový server se službou IIS, jako je Azure App Service. Další informace najdete v tématu [publikovat do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **Web.config pro Azure (HttpPlatformHandler)** | A *web.config* soubor, který obsahuje položky pro aplikace, které naslouchat na soket pro příchozí připojení. Tento soubor je obvykle nasazeni do kořenového adresáře webový server se službou IIS, jako je Azure App Service. Další informace najdete v tématu [publikovat do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **Web.config pro statické soubory Azure** | A *web.config* obvykle přidá do souboru *statické* složky (nebo jiné složky položky obsahující statickou) zakáže zpracování Pythonu pro tuto složku. Tento konfigurační soubor funguje ve spojení s jednou z FastCGI nebo HttpPlatformHandler konfigurační soubory výše. Další informace najdete v tématu [publikovat do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **Web.config pro Azure vzdáleného ladění** | A *web.config.debug* soubor, který umožňuje vzdálené ladění přes WebSockets, spolu s *Microsoft.PythonTools.WebRole.dll* a *ptvsd* složku obsahující moduly pro nasazení na server pro povolení vzdáleného ladění. Obvykle vytvoříte tuto položku na stejném místě jako vaše *web.config* souboru. Další informace najdete v tématu [vzdáleně ladit kód Pythonu v Azure](debugging-remote-python-code-on-azure.md). Také viz poznámka níže. |
-
-> [!Note]
-> Pokud chcete přidat ladění *web.config* šablon k projektu a plánujete používat vzdálené ladění Pythonu, je potřeba publikovat web v **ladění** konfigurace. Toto nastavení je oddělené od aktuální konfigurace aktivního řešení a vždy použije jako výchozí **vydání**. Chcete-li změnit, otevřete **nastavení** kartu a použít **konfigurace** – pole se seznamem v **publikovat** průvodce. (Viz [dokumentace ke službě Azure](https://azure.microsoft.com/develop/python/) pro další informace o vytváření a nasazování do Azure Web Apps.)
->
-> ![Změna konfigurace publikovat](media/template-web-publish-config.png)
+| **Web.config pro Azure (FastCGI)** | A *web.config* soubor, který obsahuje položky pro aplikace s využitím [s rozhraním WSGI](https://wsgi.readthedocs.io/en/latest/) objekt pro zpracování příchozích připojení. Tento soubor je obvykle nasazeni do kořenového adresáře webový server se službou IIS. Další informace najdete v tématu [konfigurace aplikace pro službu IIS](configure-web-apps-for-iis-windows.md). |
+| **Web.config pro Azure (HttpPlatformHandler)** | A *web.config* soubor, který obsahuje položky pro aplikace, které naslouchat na soket pro příchozí připojení. Tento soubor je obvykle nasazeni do kořenového adresáře webový server se službou IIS, jako je Azure App Service. Další informace najdete v tématu [konfigurace aplikace pro službu IIS](configure-web-apps-for-iis-windows.md). |
+| **Web.config pro statické soubory Azure** | A *web.config* obvykle přidá do souboru *statické* složky (nebo jiné složky položky obsahující statickou) zakáže zpracování Pythonu pro tuto složku. Tento konfigurační soubor funguje ve spojení s jednou z FastCGI nebo HttpPlatformHandler konfigurační soubory výše. Další informace najdete v tématu [konfigurace aplikace pro službu IIS](configure-web-apps-for-iis-windows.md). |
+| **Web.config pro Azure vzdáleného ladění** | Zastaralé (byl použit pro vzdálené ladění ve službě Azure App Service pro Windows, které již nejsou podporovány). |
 
 ## <a name="see-also"></a>Viz také:
 
 - [Správa projektů v Pythonu – šablony projektů](managing-python-projects-in-visual-studio.md#project-templates)
 - [Šablony webových projektů Python](python-web-application-project-templates.md)
-- [Publikování do služby Azure app service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Publikování do Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fe19c1239c2f08417b1b7ee76cb07ae150c891d1
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: c70d13237b1d6fb3bfac130e97d3516efd306569
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029144"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101170"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Práce s využitím Pythonu v sadě Visual Studio ve Windows
 
@@ -99,7 +99,7 @@ Další informace:
 
 ## <a name="full-featured-debugging"></a>Plně vybavené ladění
 
-Jednou z Visual Studio předností je jeho výkonný ladicí program. Pro jazyk Python, Visual Studio zahrnuje zejména ladění ve smíšeném režimu Python/C++, vzdálené ladění na Linuxu, vzdálené ladění v Azure, v rámci ladění **interaktivní** okno a ladění testů jednotek v Pythonu.
+Jednou z Visual Studio předností je jeho výkonný ladicí program. Pro jazyk Python, Visual Studio zahrnuje zejména Python/C++ ve smíšeném režimu ladění, vzdálené ladění na Linuxu, ladění v rámci **interaktivní** okno a ladění testů jednotek v Pythonu.
 
 ![Ladicí program sady Visual Studio pro Python k výjimce automaticky otevírané okno zobrazující](media/debugging-exception-popup.png)
 
@@ -109,7 +109,6 @@ Další informace:
 - Dokumentace: [ladění Pythonu](debugging-python-in-visual-studio.md)
 - Dokumentace: [ladění ve smíšeném režimu Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - Dokumentace: [vzdáleného ladění na Linuxu](debugging-python-code-on-remote-linux-machines.md)
-- Dokumentace: [vzdálené ladění v Azure](debugging-remote-python-code-on-azure.md)
 - Visual Studio – Obecné funkce dokumentace: [funkce tour ladicího programu sady Visual Studio](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Nástroje pro profilaci s komplexní vykazování
@@ -136,16 +135,11 @@ Další informace:
 - Dokumentace: [testování nástroje pro Python](unit-testing-python-in-visual-studio.md)
 - Visual Studio – Obecné funkce dokumentace: [testování částí kódu](../test/unit-test-your-code.md).
 
-## <a name="publish-to-azure-and-azure-sdk-for-python"></a>Publikování do Azure a Azure SDK pro Python
+## <a name="azure-sdk-for-python"></a>Azure SDK pro Python
 
-Visual Studio poskytuje integrovanou podporu pro publikování webových aplikací a cloudových služeb do Azure. Visual Studio obsahuje základní *web.config* položku šablony dynamického a statického obsahu. Úlohy Python také obsahuje sadu Azure SDK pro Python, která zjednodušuje využívání služeb Azure z Windows, Mac OS X a Linux aplikací.
+Úlohy Python obsahuje sadu Azure SDK pro Python, která zjednodušuje využívání služeb Azure z aplikace pro Windows, Mac OS X a Linux.
 
-![Publikování aplikace v Pythonu do Azure v sadě Visual Studio](media/azure-publish-dialog.png)
-
-Další informace:
-
-- Dokumentace: [publikovat do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- Dokumentace: [Azure SDK pro Python](azure-sdk-for-python.md)
+Další informace najdete v tématu [sady Azure SDK pro Python](azure-sdk-for-python.md)
 
 ## <a name="python-training-on-microsoft-virtual-academy"></a>Python školení na Microsoft Virtual Academy
 

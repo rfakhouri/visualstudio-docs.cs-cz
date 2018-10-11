@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ad905581252bd2af7307292d617669d00320c398
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029024"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101001"
 ---
 # <a name="python-web-application-project-templates"></a>Šablony projektů webové aplikace Python
 
@@ -34,7 +34,7 @@ Vytvoření projektu ze šablony pomocí **souboru** > **nový** > **projektu**.
 
 Obecné **webový projekt** šablonu, již bylo zmíněno dříve, poskytuje pouze prázdný projekt sady Visual Studio se žádný kód a žádné předpoklady, než se projektu Pythonu. Podrobnosti o **Azure Cloud Service** šablony, najdete v článku [projekty služeb cloudu Azure pro Python](python-azure-cloud-service-project-template.md).
 
-Všechny šablony jsou založené na webové architektury Bottle, Flask a Django a spadají do tří skupin Obecné, jak je popsáno v následujících částech. Aplikace vytvořené pomocí některé z těchto šablon obsahovat dostatečný kód ke spuštění a ladění aplikace místně. Každé z nich také poskytuje nezbytné [objekt aplikace s rozhraním WSGI](http://www.python.org/dev/peps/pep-3333/) (python.org) k [nasazení do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
+Všechny šablony jsou založené na webové architektury Bottle, Flask a Django a spadají do tří skupin Obecné, jak je popsáno v následujících částech. Aplikace vytvořené pomocí některé z těchto šablon obsahovat dostatečný kód ke spuštění a ladění aplikace místně. Každé z nich také poskytuje nezbytné [objekt aplikace s rozhraním WSGI](http://www.python.org/dev/peps/pep-3333/) (python.org) pro použití s produkční webové servery.
 
 ### <a name="blank-group"></a>Prázdná skupina
 

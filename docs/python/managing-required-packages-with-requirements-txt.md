@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: efefda9fb5eb863550684511a5c0834f5d43f7fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548787"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100910"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Správa požadované balíčky pomocí souboru requirements.txt
 
-Pokud jste už sdílení projektu s ostatními, systém sestavení, nebo kteří plánují [její publikování do Microsoft Azure](python-azure-cloud-service-project-template.md), je třeba zadat externí balíčky, které projekt vyžaduje. Doporučuje se použít [soubor requirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), který obsahuje seznam příkazů pro pip, který instaluje požadované verze závislé balíčky.
+Pokud sdílíte projekt s ostatními, použití sestavovacího systému nebo v plánu nasadit na jakékoli jiné umístění, které je potřeba obnovit prostředí, budete muset zadat externí balíčky, které projekt vyžaduje. Doporučuje se použít [soubor requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), který obsahuje seznam příkazů pro pip, který instaluje požadované verze závislé balíčky.
 
 Technicky vzato některý název souboru může sloužit ke sledování požadavků (s použitím `-r <full path to file>` při instalaci balíčku), ale Visual Studio poskytuje specifické podpoře pro *souboru requirements.txt*:
 

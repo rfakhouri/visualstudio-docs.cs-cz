@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4a08c957e03dd2df80d9b3b770e569ba1e64104f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d64850910d1a6a25514eb48e46f70168d245e168
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38780985"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101082"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Vzdálené ladění ASP.NET na počítači vzdálené služby IIS
 Chcete-li ladit aplikaci ASP.NET, která byla nasazena do služby IIS, nainstalovat a spustit nástroje remote tools v počítači, kam jste nasadili aplikaci a potom připojit k vaší běžící aplikaci v sadě Visual Studio.
@@ -166,12 +166,7 @@ Můžete také publikovat a nasazení aplikace pomocí systému souborů nebo ji
 
 V tomto kurzu se používá Visual Studio 2017.
 
-Pokud máte potíže při otevírání stránku ke stažení vzdáleného ladicího programu, přečtěte si téma [odblokovat stahování souborů](../debugger/remote-debugging.md#unblock_msvsmon) nápovědu.
-
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-> [!TIP]
-> V některých případech může být nejúčinnější pro spuštění vzdáleného ladicího programu ze sdílené složky. Další informace najdete v tématu [spuštění vzdáleného ladicího programu ze sdílené složky](../debugger/remote-debugging.md#fileshare_msvsmon).
   
 ## <a name="BKMK_setup"></a> Nastavení vzdáleného ladicího programu v systému Windows Server
 
