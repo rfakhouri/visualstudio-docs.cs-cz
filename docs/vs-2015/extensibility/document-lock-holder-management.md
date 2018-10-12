@@ -1,7 +1,7 @@
 ---
 title: Správa zámku vlastník dokumentu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cf3e532a7a20be746405a7c5f90bb2c345a36cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba494d38384263570289b3f84b90fc8b5b5931e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296722"
 ---
 # <a name="document-lock-holder-management"></a>Správa zámku dokumentu ze strany vlastníka
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Správa vlastník zámku dokumentu](https://docs.microsoft.com/visualstudio/extensibility/document-lock-holder-management).  
-  
 Spuštění dokumentu tabulky (rámcový) udržuje počet otevřených dokumentů a zámky jakékoli úpravy, které mají. Zámek upravit můžete umístit na dokumentu rámcový při programově úpravách na pozadí bez uživatele zobrazuje dokument otevřít v okně dokumentu. Tato funkce se často používá v návrháři, které mění více souborů přes grafické uživatelské rozhraní.  
   
 ## <a name="document-lock-holder-scenarios"></a>Scénáře vlastník zámku dokumentu  

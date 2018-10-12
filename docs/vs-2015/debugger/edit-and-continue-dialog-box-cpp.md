@@ -1,7 +1,7 @@
 ---
 title: Upravit a pokračovat – dialogové okno (C++) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 364538c4c4b3d485d136ddfbe4acf6de81228e4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4faa19868f3520a761b40419234ce7a77125a914
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633656"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280173"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Upravit a pokračovat – dialogové okno (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [upravit a pokračovat v dialogovém okně pole (C++)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-dialog-box-cpp).  
-  
 Upravit a pokračovat, nelze aplikovat změny, které jste provedli v nativním kódu. Může jít o přechodný stav. Někdy upravit a pokračovat nemůže ihned změny nativního kódu, ale můžete použít později během relace ladění (například po dokončení aktuálním volání procedury nyní provádění). Další informace najdete v tématu [upravit a pokračovat](../debugger/edit-and-continue.md).  
   
  Můžete upravit kód pro oprava chyby při stále ladění, zastavení ladění a oprava kódu, nebo chybu ignorovat a pokračovat v ladění. Pokud budete pokračovat bez opravy, se nepoužije okamžitě změny kódu.  

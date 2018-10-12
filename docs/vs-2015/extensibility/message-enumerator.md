@@ -1,7 +1,7 @@
 ---
 title: Enumerátor zpráv | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 374881ecfe7af76b4d5aed3c6ae56b64094406fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d03e4c56a5cee3964ae5a4ec2fd9ca328988cdab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632180"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285581"
 ---
 # <a name="message-enumerator"></a>Enumerátor zpráv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [enumerátor zpráv](https://docs.microsoft.com/visualstudio/extensibility/message-enumerator).  
-  
 Následující příznaky se používají pro `TEXTOUTPROC` funkce, což je funkce zpětného volání, která poskytuje integrované vývojové prostředí při volání [sccopenproject –](../extensibility/sccopenproject-function.md) (naleznete v tématu [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) podrobnosti o zpětné volání funkce).  
   
  Pokud integrovaného vývojového prostředí se zobrazí výzva, proces zrušení, může zobrazit jedna z zprávy Storno. V tomto případě používá modul plug-in ovládací prvek zdroje `SCC_MSG_STARTCANCEL` žádat rozhraní IDE zobrazíte **zrušit** tlačítko. Potom může být odeslán libovolnou sadu normální zprávy. Pokud některý z těchto vrátí `SCC_MSG_RTN_CANCEL`, modul plug-in operace se ukončí a vrátí. Modul plug-in také dotazuje `SCC_MSG_DOCANCEL` pravidelně k určení, pokud uživatel operaci zrušil. Když se provádějí všechny operace, nebo pokud uživatel zrušil, modul plug-in odešle `SCC_MSG_STOPCANCEL`. `SCC_MSG_INFO`, SCC_MSG_WARNING, a SCC_MSG_ERROR typy se používají pro zprávy, která se zobrazí v posuvný seznam zpráv. `SCC_MSG_STATUS` je speciální typ, který označuje, že text by se zobrazit na stavovém řádku nebo dočasné oblasti. Není trvale zůstanou v seznamu.  

@@ -1,7 +1,7 @@
 ---
 title: Funkce pro usnadnění přístupu sady Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c43e4044b1b5a5414865e2e4458d716a3aec579e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91daab49dae0489fa26b8c941b3983c191c59f0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628863"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276988"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkce pro usnadnění přístupu sady Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [usnadnění funkce sady Visual Studio](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-features-of-visual-studio).  
-  
   
 Kromě funkcí a nástrojů usnadnění v Windows následující funkce Ujistěte se, Visual Studio 2013 přístupnější pro osoby s postižením:  
   
@@ -55,7 +53,7 @@ Kromě funkcí a nástrojů usnadnění v Windows následující funkce Ujistět
   
 -   [Rady a tipy k usnadnění přístupu](../../ide/reference/accessibility-tips-and-tricks.md)  
   
--   [Postupy: Změna písma a barvy](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
+-   [Postupy: Změna písma a barev](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Produkty a služby pro usnadnění přístupu od Microsoftu](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

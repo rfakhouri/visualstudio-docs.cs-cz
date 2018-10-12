@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vytváření šablon položek s více soubory | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de6d2fd4decc4d71fce1fe4f417f429c837deb7f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cda39459d0ddc0920dbb5b47157d90160ad3d166
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667184"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286790"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Postupy: Tvorba šablon položek s více soubory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: vytváření šablon položek vícesouborové](https://docs.microsoft.com/visualstudio/ide/how-to-create-multi-file-item-templates).  
-  
 Šablony položek může zadat jenom jednu položku, ale někdy položky skládá z více souborů. Například šablonu položky formulářů Windows v jazyce Visual Basic vyžaduje následující tři soubory:  
   
 -   Soubor .vb, který obsahuje kód pro formulář.  

@@ -1,7 +1,7 @@
 ---
 title: Návrhář aktivity Receive | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: f285a2d900c4f286435e4e06c4db15967f1d7aab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2ccae6d53a44704aeb770fb60e5e2a0c9aecd3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675601"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287232"
 ---
 # <a name="receive-activity-designer"></a>Návrhář aktivity Receive
 **Receive** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.ServiceModel.Activities.Receive> aktivity. A <xref:System.ServiceModel.Activities.Receive> aktivitu, která bude přijímat zprávy, která může být buď vestavěný typ, jako je aktivita <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> nebo <xref:System.Xml.Linq.XElement>, nebo kontraktu dat definované aplikací, kontraktu zprávy nebo třída XML, který lze serializovat.  

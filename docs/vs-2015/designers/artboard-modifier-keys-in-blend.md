@@ -1,7 +1,7 @@
 ---
 title: Modifikační klávesy návrhové plochy v Blendu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cc6939a0c9630dfde3fa482606afc72f7d6bba12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a730ec3c50880087d9200d5c7003e7b3cb631bca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675654"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278184"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Modifikační klávesy návrhové plochy v Blendu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [modifikační klávesy návrhové plochy v Blendu](https://docs.microsoft.com/visualstudio/designers/artboard-modifier-keys-in-blend).  
-  
 Některé klávesové zkratky nejsou přidruženy položek nabídky, což znamená, že nemůžete použít [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] uživatelské rozhraní pro jejich zjišťování. V následující tabulce jsou uvedeny klávesové zkratky, které mění akce, jako je například změna velikosti objektu.  
   
 |Pro tuto akci|Postup|  
@@ -52,7 +50,7 @@ Některé klávesové zkratky nejsou přidruženy položek nabídky, což znamen
 ## <a name="see-also"></a>Viz také  
  [Klávesové zkratky](../designers/keyboard-shortcuts-in-blend.md)   
  [Modifikační klávesy nástroje pero](../designers/pen-tool-modifier-keys-in-blend.md)   
- [Modifikační klávesy nástroje přímý výběr](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+ [Modifikační klávesy nástroje Přímý výběr](../designers/direct-selection-tool-modifier-keys-in-blend.md)
 
 
 

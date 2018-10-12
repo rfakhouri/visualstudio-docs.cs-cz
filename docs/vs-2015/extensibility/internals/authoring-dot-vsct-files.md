@@ -1,7 +1,7 @@
 ---
 title: Vytváření obsahu. Soubory Vsct | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c2efb41474f9eeef29cc389529541ad460d9b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85a30c8987311ea8d6216312533dc70072c96f2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667855"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283670"
 ---
 # <a name="authoring-vsct-files"></a>Vytváření obsahu. Soubory Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytváření obsahu. Soubory Vsct](https://docs.microsoft.com/visualstudio/extensibility/internals/authoring-dot-vsct-files).  
-  
 Tento dokument ukazuje, jak vytvářet souboru .vsct přidání položek nabídky, panely nástrojů a jiných prvcích uživatelského rozhraní (UI) do integrovaného vývojového prostředí (IDE) sady Visual Studio. Když přidáte do Visual Studio balíček (balíček VSPackage správy kódu), který ještě nemá souboru .vsct prvky uživatelského rozhraní pomocí těchto kroků.  
   
  Pro nové projekty doporučujeme použít Visual Studio balíček šablony, protože generuje souboru .vsct, který v závislosti na výběrech, již obsahuje požadované elementy pro příkaz nabídky, okna nástroje nebo vlastní editor. Můžete upravit tento soubor .vsct podle požadavků vašeho balíčku VSPackage. Další informace o tom, jak upravit souboru .vsct, podívejte se na příklady v [rozšiřování nabídek a příkazů](../../extensibility/extending-menus-and-commands.md).  

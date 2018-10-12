@@ -1,7 +1,7 @@
 ---
 title: Integrace modelů UML s jinými modely a nástroji | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f2ebc4bc6a0ee1610079018ded21760e48336824
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b85ad2e150880042125782349120d271ff2b7d7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290287"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrace modelů UML s jinými modely a nástroji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [modely UML integrovat s jinými modely a nástroji](https://docs.microsoft.com/visualstudio/modeling/integrate-uml-models-with-other-models-and-tools).  
-  
 Modely UML je možné integrovat s jinými modely a jazyky specifickými pro doménu.  
   
  Napsáním kódu rozšíření provádět celou řadu funkcí můžete integrovat modely následujícími způsoby:  
@@ -82,7 +80,7 @@ Modely UML je možné integrovat s jinými modely a jazyky specifickými pro dom
   
  Tento vzorový kód ukazuje následujících postupů:  
   
--   [Připojení referenčních řetězců k prvkům modelu UML](../modeling/attach-reference-strings-to-uml-model-elements.md)  
+-   [Připojení referenčních řetězců k elementům modelu UML](../modeling/attach-reference-strings-to-uml-model-elements.md)  
   
      Vzorový kód ukládá cesty k souborům a element identifikátory GUID referenčních řetězců, které jsou spojeny s prvkem.  
   
@@ -94,9 +92,9 @@ Modely UML je možné integrovat s jinými modely a jazyky specifickými pro dom
   
      Vzorek ukazuje, jak definovat pravidlo, které jsou reaguje na nové obrazce v diagramu.  
   
--   [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
+-   [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
   
--   [Definování obslužné rutiny gest v diagramu modelování](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)  
+-   [Definování obslužné rutiny gest v diagramu modelování](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)  
   
      Vzorek ukazuje, jak zpracovávat položky přetažen z Průzkumníka Windows (nebo Průzkumníka souborů), Průzkumník řešení a další prvky UML.  
   

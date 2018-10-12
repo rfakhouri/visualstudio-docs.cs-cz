@@ -1,7 +1,7 @@
 ---
 title: T4 – Direktiva Parameter | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00403f562771498a86c24e8433769ab7a44ec890
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87e493667af1626cd97e575ddb614e7fd12c21d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677325"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294551"
 ---
 # <a name="t4-parameter-directive"></a>T4 – direktiva Parameter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [T4 – direktiva Parameter](https://docs.microsoft.com/visualstudio/modeling/t4-parameter-directive).  
-  
 V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] textové šablony `parameter` – direktiva deklaruje vlastnosti ve vašem kódu šablony, které jsou inicializovány z hodnoty předané z externí kontextu. Tyto hodnoty můžete nastavit, pokud píšete kód, který vyvolá transformace textu.  
   
 ## <a name="using-the-parameter-directive"></a>Pomocí – direktiva Parameter  

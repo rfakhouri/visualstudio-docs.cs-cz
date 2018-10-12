@@ -1,7 +1,7 @@
 ---
 title: Zadávání poznámek ke strukturám a třídám | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24ed559321bb63d5f9871193f312356466756429
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3d20769215058cca6e30955ae37ad2a78b6bc7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669250"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287453"
 ---
 # <a name="annotating-structs-and-classes"></a>Zadávání poznámek ke strukturám a třídám
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zadávání poznámek ke strukturám a třídám](https://docs.microsoft.com/visualstudio/code-quality/annotating-structs-and-classes).  
-  
 Členy struktury a třídy může opatřit poznámkami pomocí poznámek, které fungují jako výstupních podmínek, jsou považovány za na hodnotu true v jakékoli volání funkce nebo funkce zahájení/ukončení, která zahrnuje ohraničující struktuře jako parametr nebo je výsledná hodnota.  
   
 ## <a name="struct-and-class-annotations"></a>Struktury a třídy poznámky  
@@ -91,7 +89,7 @@ Nejnovější verzi tohoto tématu můžete najít v [zadávání poznámek ke s
  [Zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md)   
  [Určení, kdy a kde se má poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Vnitřní funkce](../code-quality/intrinsic-functions.md)   
- [Osvědčené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
+ [Doporučené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
 
 
 

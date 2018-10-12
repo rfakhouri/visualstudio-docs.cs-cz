@@ -1,7 +1,7 @@
 ---
 title: 'Příprava ladění: Webové aplikace ASP.NET | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20731f5036a89c3c19fbea0d825d67fc02c13cf9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9268cca555486e0c432e60947350bd69202c4fb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669747"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292887"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Příprava ladění: webové aplikace technologie ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Příprava ladění: webové aplikace ASP.NET](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-aspnet-web-applications).  
-  
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Webu šablona vytvoří aplikaci webového formuláře. Při vytváření webu pomocí této šablony [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vytvoří výchozí nastavení pro ladění. V **vlastnosti projektu** dialogovém okně můžete zadat, zda chcete webové stránky na úvodní stránku. Při spuštění ladění [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]webové stránky s těmito nastaveními výchozí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spustí aplikaci Internet Explorer a připojuje se ladicí program [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pracovního procesu (aspnet_wp.exe nebo w3wp.exe). Další informace najdete v tématu [požadavky na systém](../debugger/aspnet-debugging-system-requirements.md).  
   
 ### <a name="to-create-a-web-forms-application"></a>Vytvoření aplikace webových formulářů  

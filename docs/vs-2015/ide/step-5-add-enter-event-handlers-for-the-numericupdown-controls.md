@@ -1,7 +1,7 @@
 ---
 title: 'Krok 5: Přidejte obslužné rutiny událostí Enter pro ovládací prvky NumericUpDown | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 879ae4e11fb51b63ed1a154eadcdb67ce87b2435
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a87704f7d836da2309e711f3379df01b01c807c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675255"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294486"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Krok 5: Přidejte obslužné rutiny události pro ovládací prvky NumericUpDown
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [krok 5: přidejte zadejte obslužné rutiny událostí pro ovládací prvky NumericUpDown](https://docs.microsoft.com/visualstudio/ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls).  
-  
 V páté části tohoto tutoriálu přidáte obslužné rutiny událostí Enter pro trochu usnadnili zadávání odpovědí pro kvíz. Tento kód vybere a vymaže aktuální hodnotu v každém ovládacím prvku NumericUpDown, jakmile kvízu vybere a začne zadávat jinou hodnotu.  
   
 > [!NOTE]

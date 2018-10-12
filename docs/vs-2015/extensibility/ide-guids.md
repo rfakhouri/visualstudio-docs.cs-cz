@@ -1,7 +1,7 @@
 ---
 title: Identifikátory GUID integrovaného vývojového prostředí | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c97eef84daa97c965dc7e57a8eca3849470dfb83
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0abb157765126e1fa73f0ff5955622e7a680a1f3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667727"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286900"
 ---
 # <a name="ide-guids"></a>Identifikátory GUID integrovaného vývojového prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [identifikátory GUID integrovaného vývojového prostředí](https://docs.microsoft.com/visualstudio/extensibility/ide-guids).  
-  
 <xref:Microsoft.VisualStudio.VSConstants> Třídy publikuje GUID některé části integrovaného vývojového prostředí (IDE), jak je uvedeno v následující tabulce.  
   
 ## <a name="core-systems"></a>Základních systémů  

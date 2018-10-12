@@ -1,7 +1,7 @@
 ---
 title: 'Krok 6: Přidejte časovač | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02ec36c9dbb6f659e3cc5c59d7ee82abffcac34d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 577ef28c49d769bac8d979330f181c67b8d35687
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669164"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293372"
 ---
 # <a name="step-6-add-a-timer"></a>Krok 6: Přidejte časovač
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [krok 6: přidejte časovač](https://docs.microsoft.com/visualstudio/ide/step-6-add-a-timer).  
-  
 V dalším kroku přidejte **časovače** ovládacího prvku do porovnávací hry. Časovač čeká zadaný počet milisekund a potom vyvolá událost označovanou jako *značek*. To je užitečné při spuštění akce nebo opakování akce v pravidelných intervalech. V takovém případě můžete pomocí časovače povolit hráči zvolit dvě ikony a pokud se ikony neshodují, po krátké době tyto ikony opět skrýt.  
   
 ### <a name="to-add-a-timer"></a>Přidání časovače  

@@ -1,7 +1,7 @@
 ---
 title: Konfigurace výkonnostních relací | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e804e1638574d6918a1db4effbfbc1c20c80f63e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b858d7a521f53876e185d8d4deb2b3467833d02
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285334"
 ---
 # <a name="configuring-performance-sessions"></a>Konfigurace výkonnostních relací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [konfigurace relací výkonu](https://docs.microsoft.com/visualstudio/profiling/configuring-performance-sessions).  
-  
 S použitím [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástroje pro profilaci, můžete shromažďovat celou řadu údaje o výkonu pro mnoho typů aplikací. Tato část ukazuje, jak používat výkonu Wizardand vlastnosti relace výkonu a cílový binární soubor ke konfiguraci nástroje pro profilaci sady ke shromažďování dat, která vás zajímá. Vlastnosti konfigurace nástroje pro profilaci můžete použít také k řízení množství dat shromažďovaných během spuštění profilování. Další informace najdete v tématu [řízení shromažďování dat](../profiling/controlling-data-collection.md).  
   
 > [!NOTE]
@@ -45,7 +43,7 @@ S použitím [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástroje pro profilac
 |**Nastavit možnosti pokročilé konfigurace:** při profilování aplikace rozhraní .NET Framework, které načítají více verzí common language runtime (CLR), můžete určit, kterou verzi profilu. Pokud máte víc souborů .exe v relaci výkonu, můžete nastavit pořadí spouštění binárních souborů.|-   [Postupy: určení modulu Runtime rozhraní .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)<br />-   [Postupy: určení binárního souboru ke spuštění](../profiling/how-to-specify-the-binary-to-start.md)|  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Řízení sběru dat](../profiling/controlling-data-collection.md)  
+ [Řízení shromažďování dat](../profiling/controlling-data-collection.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Prohlížeč výkonu](../profiling/performance-explorer.md)

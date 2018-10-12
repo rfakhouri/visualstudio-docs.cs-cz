@@ -1,7 +1,7 @@
 ---
 title: Testování Windows UWP a aplikací pro Phone 8.1 pomocí programových testů uživatelského rozhraní | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c9472346212d68b3ee682450995d55eb0a5ddd9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 604ac82fbcda190c63a15e5ba0a1800022853b07
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674133"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285932"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testování aplikací pro UPW a aplikací pro Windows Phone 8.1 pomocí programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [testů UPW Windows a aplikací pro Phone 8.1 pomocí programových testů uživatelského rozhraní](https://docs.microsoft.com/visualstudio/test/test-windows-phone-8-1-apps-with-coded-ui-tests).  
-  
 Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhraní pro aplikace UWP, které běží na mobilním zařízení nebo emulátorů a aplikace založené na XAML Phone 8.1.   
   
 ## <a name="create-a-simple-windows-phone-app"></a>Vytvoření jednoduché aplikace pro Windows Phone  
@@ -384,7 +382,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |Cíl pro spouštění testů|Místním nebo vzdáleném počítači. Vzdálené počítače je možné zadat při spuštění testů pomocí automatizovaného testového případu. Zobrazit [automatizovaný testovací proces v nástroji Microsoft Test Manager](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Emulátor nebo zařízení. Zobrazit, [dotaz: lze testy spouštět v emulátoru pouze nebo můžu také použít fyzické zařízení?](#TestingPhoneAppsCodedUI_EmulatorDevice) v tomto tématu.|  
 |Spusťte z příkazového řádku|Není nutné určit cílový soubor s nastavením.|Chcete-li zadat cíl je vyžadován soubor Runsettings.|  
 |Specializované třídy pro ovládací prvky prostředí|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
-|Ovládací prvek WebView v aplikace v jazyce XAML|Podporováno, pokud použijete Html * specializované třídy pro interakci s prvky jazyka HTML. Zobrazit <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Není podporováno.|  
+|Ovládací prvek WebView v aplikace v jazyce XAML|Podporováno, pokud použijete Html * specializované třídy pro interakci s prvky jazyka HTML. Viz <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Není podporováno.|  
 |Spuštění automatizovaných testů z nástroje MTM|Podporované.|Není podporováno.|  
 |Testy řízené daty|Zobrazit [daty řízené testy](../test/creating-a-data-driven-coded-ui-test.md) informace o používání externí zdroje dat a zdroj dat atribut v testovací metodě.|Data jsou zadány jako vložené, pomocí atributu DataRow v testovací metodě. Zobrazit [řízené daty pomocí programových testů UI pro aplikace z Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) v tomto tématu.|  
   

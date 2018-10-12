@@ -1,7 +1,7 @@
 ---
 title: Datové vazby WPF pomocí LINQ to XML příklad | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 60a981b4ea2e2cbf6f71b9a845170ac67c218999
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c86dcc5e75474c6e0539b9d47f1b9ad11592de2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670744"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288038"
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>Datové vazby WPF pomocí LINQ to XML příklad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [WPF datové vazby pomocí LINQ to XML příklad](https://docs.microsoft.com/visualstudio/designers/wpf-data-binding-using-linq-to-xml-example).  
-  
 Tato část poskytuje příklad Windows Presentation Foundation (WPF), která se sváže součásti uživatelského rozhraní pro vložený zdroj dat XML. Název v tomto příkladu (a projekt aplikace Visual Studio, který ji obsahuje) je *LinqToXmlDataBinding*.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  

@@ -1,7 +1,7 @@
 ---
 title: Vnoření projektů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 70a454877a5cb7638edaff8263b6505de16ee9c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ec874d68b7a94811f0733f7045414cb48ddc880
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675581"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294252"
 ---
 # <a name="nesting-projects"></a>Vnoření projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vnoření projektů](https://docs.microsoft.com/visualstudio/extensibility/internals/nesting-projects).  
-  
 Vývojářům aplikací pro podniky, které používají váš balíček VS můžete pohodlně Seskupit podobné typy projektů společně v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pomocí *projektu vnoření*. Projekt šablony organizace například používá vnořené projekty do skupiny projektů do kategorií. Projekty Business průčelí, projekty webového uživatelského rozhraní a podobně jsou seskupeny dohromady v jedné kategorii.  
   
  V tomto scénáři neexistuje žádné omezení počtu projekty, které může vývojář vnořené do každý nadřazený projekt, i když vývojář můžete programově zadat omezení. Tento typ seskupení lze provést také rekurzivní, v takovém případě projekty stejného typu jako podřízený projekt mohou být vnořené pod podřízené se dílčí projekt podřízené, což je dílčí projekt nadřazeného prvku.  

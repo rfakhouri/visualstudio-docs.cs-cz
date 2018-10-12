@@ -1,7 +1,7 @@
 ---
 title: Vytvoření panelu nástrojů s více instancemi | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca70aa6024f083cfff7de1e2ef687371eca44c8a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb5e058924d62d4c6688c95974774579f8ae81f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669472"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286361"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Vytvoření panelu nástrojů s více instancemi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytvoření panelu nástrojů s více instancemi](https://docs.microsoft.com/visualstudio/extensibility/creating-a-multi-instance-tool-window).  
-  
 Panel nástrojů můžete naprogramovat tak, aby více instancí může být otevřeno současně. Ve výchozím nastavení nástroj windows může mít pouze jednu instanci otevřete.  
   
  Při použití panelu nástrojů s více instancemi můžete zobrazit několik souvisejících zdroje informací ve stejnou dobu. Můžete například umístit více řádky <xref:System.Windows.Forms.TextBox> ovládacího prvku panel nástrojů s více instancemi tak, že jsou během relace programovací současně k dispozici několik fragmentů kódu. Také například můžete umístit <xref:System.Windows.Forms.DataGrid> ovládacího prvku a rozevírací seznam pole v panelu nástrojů s více instancemi tak, aby několik zdrojů dat v reálném čase lze sledovat současně.  

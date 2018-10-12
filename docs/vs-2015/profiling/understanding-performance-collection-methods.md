@@ -1,7 +1,7 @@
 ---
 title: Principy metody kolekce výkonu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57be2cf704521f25b48495e6537d384633cfd85f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77ccabd5a75e2290f57d97af70d23d6e4e136fbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668397"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295721"
 ---
 # <a name="understanding-performance-collection-methods"></a>Principy metody kolekce výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [metody kolekce výkonu Principy](https://docs.microsoft.com/visualstudio/profiling/understanding-performance-collection-methods).  
-  
 Nástroje pro profilaci sady Visual Studio poskytují pět metod, které můžete použít pro shromažďování dat o výkonu. Toto téma popisuje různé metody a předkládá návrhy některých situací, ve kterých mohou být použity konkrétní metody shromažďování dat.  
   
 > [!NOTE]
@@ -62,7 +60,7 @@ Nástroje pro profilaci sady Visual Studio poskytují pět metod, které můžet
   
  [Porozumění hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)  
   
- [Zobrazení dat metod vzorkování](../profiling/profiler-sampling-method-data-views.md)  
+ [Zobrazení dat metody vzorkování](../profiling/profiler-sampling-method-data-views.md)  
   
 ##  <a name="instrumentation"></a> Instrumentace  
  Metoda profilace instrumentace shromažďuje podrobná časování pro volání funkcí v profilované aplikaci. Profilace instrumentace je užitečná pro následující případy:  
@@ -98,7 +96,7 @@ Nástroje pro profilaci sady Visual Studio poskytují pět metod, které můžet
   
  [Porozumění hodnotám dat kolizí prostředku](../profiling/understanding-resource-contention-data-values.md)  
   
- [Shromažďování dat souběžnosti proces a vlákna](../profiling/collecting-thread-and-process-concurrency-data.md)  
+ [Shromažďování dat o souběžnosti vláken a procesů](../profiling/collecting-thread-and-process-concurrency-data.md)  
   
  [Zobrazení dat kolizí prostředku](../profiling/resource-contention-data-views.md)  
   
@@ -119,9 +117,9 @@ Nástroje pro profilaci sady Visual Studio poskytují pět metod, které můžet
   
 -   Při spuštění profilování paměti .NET v režimu instrumentace budou podrobné informace o časování shromážděny společně s výhradními i zahrnutými hodnotami přidělení.  
   
- [Princip přidělování paměti a životnosti objektů hodnot](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
+ [Porozumění přidělování paměti a hodnotám dat životnosti objektů](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
   
- [Shromažďuje alokaci paměti .NET a Data o životním cyklu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
+ [Shromažďování dat o přidělení paměti a době platnosti objektů .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
  [Zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)  
   

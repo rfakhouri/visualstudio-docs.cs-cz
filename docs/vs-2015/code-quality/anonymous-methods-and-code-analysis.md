@@ -1,7 +1,7 @@
 ---
 title: Anonymní metody a analýza kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a65c80f3198fe4218c2f2a6c3543f2e1e299f22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 73ff8dfca29f1ed9896462725886baa87e729100
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669500"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280160"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Anonymní metody a analýza kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [anonymní metody a analýza kódu](https://docs.microsoft.com/visualstudio/code-quality/anonymous-methods-and-code-analysis).  
-  
 *Anonymní metoda* je metoda, která nemá žádný název. Anonymní metody se nejčastěji používají k předání bloku kódu jako parametr delegátu.  
   
  Toto téma vysvětluje, jak analýzy kódu zpracovává upozornění a metriky, které jsou spojeny s anonymními metodami.  

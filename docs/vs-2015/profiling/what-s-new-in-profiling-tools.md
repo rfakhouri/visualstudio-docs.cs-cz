@@ -1,7 +1,7 @@
 ---
 title: Co&#39;nového v nástrojích pro profilaci | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ab7fe2362bbf9779854bb1c79bfb4de9ffd1600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5cb1d89409b38fea4e3745de7a619e913c6122f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290157"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>Co&#39;nového v nástrojích pro profilaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [co je nového v profilace](https://docs.microsoft.com/visualstudio/profiling/what-s-new-in-profiling-tools).  
-  
 Informace o všechno, co je nového ve Visual Studio 2015 Update 1 ladění a Diagnostika, naleznete v tématu [Visual Studio 2015 Update 1 zpráva k vydání verze](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
   
  Informace o všechno, co je nového v sadě Visual Studio 2015, ladění a Diagnostika, naleznete v tématu [Visual Studio 2015 – poznámky k](https://www.visualstudio.com/news/vs2015-vs#Debug).  

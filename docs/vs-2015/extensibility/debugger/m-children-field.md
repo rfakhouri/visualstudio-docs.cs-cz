@@ -1,7 +1,7 @@
 ---
 title: m_children – pole | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 0a3b5653-7bc0-4a7a-8963-9020bc52b9cb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b72bd9563817c67e819485528e339410b9f87ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a681f3a58fddbb136383a1259aa5e4c0c3b96b69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670502"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289625"
 ---
 # <a name="mchildren-field"></a>m_children – pole
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [m_children – pole](https://docs.microsoft.com/visualstudio/extensibility/debugger/m-children-field).  
-  
 Seznam podřízených úloh, které jsou registrované s touto úlohou.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
@@ -47,5 +45,5 @@ Seznam podřízených úloh, které jsou registrované s touto úlohou.
  Pokud úkol je dokončen, ostatní vlákna mohou přistupovat k toto pole, pokud cokoli do ní přidat nebo odebrat cokoli z něj.  
   
 ## <a name="see-also"></a>Viz také  
- [Třída ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)
+ [ContingentProperties – třída](../../extensibility/debugger/contingentproperties-class-internal-members.md)
 

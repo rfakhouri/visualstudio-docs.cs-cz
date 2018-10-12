@@ -1,7 +1,7 @@
 ---
 title: 'Testovací oblast 2: Získání ze správy zdrojových kódů | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d30b4a246085fe3a1339e057e516a9a727af1cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3bb489c33a39e41ec286678f4670cfba2776ef97
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672283"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284177"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Testovací oblast 2: Načtení ze správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [testovací oblast 2: získání ze správy zdrojových kódů](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-2-get-from-source-control).  
-  
 Tento test oblast obsahuje informace o testovacích případů pro načítání položek ze úložiště verzí pomocí příkazu Get. Tyto testovací případy můžete použít pro oba místní a pro webové projekty.  
   
 ## <a name="command-menu-access"></a>Přístup do příkazu nabídky  

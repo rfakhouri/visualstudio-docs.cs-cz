@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: reakce na změny v modelu UML | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 3
 author: alancameronwills
 ms.author: awills
 manager: kamrani
-ms.openlocfilehash: 07af0a9ee8fb31839343e853ee7175b204b7fe09
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2352a6ba3c03df7c89b8888102fd5860a2c48810
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628248"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294356"
 ---
 # <a name="how-to-respond-to-changes-in-a-uml-model"></a>Postupy: Reakce na změny v modelu UML
 Je možné psát kód, který se spustí pokaždé, když dojde ke změně v modelu UML v sadě Visual Studio. Jak bude reagovat na změny, které jsou provedeny přímo uživatele a další rozšíření sady Visual Studio. Pokud chcete zobrazit, které verze sady Visual Studio podporují modelech UML, naleznete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

@@ -1,7 +1,7 @@
 ---
 title: AsyncTaskMethodBuilder&lt;TResult&gt;. Vlastnost ObjectIdForDebugger | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 060b857f-daf5-43ea-bb51-abf9368e1e91
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79d81aa6e05f17133130ff5b9c11a729bd998ada
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 906e5a3c4cf504a24b6e86d9c0be04c27662170d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672981"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285854"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtobjectidfordebugger-property"></a>AsyncTaskMethodBuilder&lt;TResult&gt;. Vlastnost ObjectIdForDebugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [AsyncTaskMethodBuilder&lt;TResult&gt;. Vlastnost ObjectIdForDebugger](https://docs.microsoft.com/visualstudio/extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property).  
-  
 Získá objekt, který slouží k jednoznačné identifikaci tohoto Tvůrce ladicímu programu.  
   
  **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  

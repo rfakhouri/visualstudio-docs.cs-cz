@@ -1,7 +1,7 @@
 ---
 title: 'CA3076: Spuštění nezabezpečeného skriptu XSLT | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d814c71e7ce1cbde850357feab9251ee58fd1358
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 7143b7a13c5200071ee18975c94944b6a60359a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902905"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279887"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Spuštění nezabezpečeného skriptu XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Nejnovější verzi tohoto tématu můžete najít v [CA3076: spuštění nezabezpečeného skriptu XSLT](https://docs.microsoft.com/visualstudio/code-quality/ca3076-insecure-xslt-script-execution).
-
 |||
 |-|-|
 |TypeName|InsecureXSLTScriptExecution|

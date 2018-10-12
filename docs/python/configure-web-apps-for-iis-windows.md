@@ -12,19 +12,19 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d70ef67902093cd25d9cc038e61d702e7b71e533
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: d333a6561e7fd891e4eaacf0ca1364dfec4a7b19
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101198"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293433"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Konfigurace webové aplikace v Pythonu pro službu IIS
 
 Při použití Internetové informační služby (IIS) jako webový server na počítači Windows (včetně [virtuální počítače s Windows v Azure](/azure/architecture/reference-architectures/n-tier/windows-vm), aplikace v Pythonu musí obsahovat konkrétní nastavení v jejich *web.config* soubory, zda služba IIS zpracovávat správně kódu Pythonu. Přímo počítač musí mít také nainstalována spolu s všechny balíčky, které vyžaduje webové aplikace Python.
 
 > [!Note]
-> Tento článek obsahoval dříve pokyny ke konfiguraci Pythonu ve službě Azure App Service ve Windows. Rozšíření Pythonu a hostitele Windows použité v tomto scénáři jsou zastaralé a místo toho použití služby Azure App Service v Linuxu. Další informace najdete v tématu [publikování aplikace v Pythonu do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+> Tento článek obsahoval dříve pokyny ke konfiguraci Pythonu ve službě Azure App Service ve Windows. Rozšíření Pythonu a hostitele Windows použité v tomto scénáři jsou zastaralé a místo toho použití služby Azure App Service v Linuxu. Další informace najdete v tématu [publikování aplikace v Pythonu do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). Pokud stále potřebujete informací, které byly dřív dostupné pro správu služby App Service ve Windows a rozšíření Pythonu, založte prosím problém v dolní části tohoto článku.
 
 ## <a name="install-python-on-windows"></a>Nainstalovat Python ve Windows
 

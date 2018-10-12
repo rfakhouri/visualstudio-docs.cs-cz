@@ -1,7 +1,7 @@
 ---
 title: Možnosti konfigurace – přehled | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85fa1b9d19beca6bd879d98bc7a24af0fd5756c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628864"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294291"
 ---
 # <a name="configuration-options-overview"></a>Přehled možností konfigurace
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přehled možností konfigurace](https://docs.microsoft.com/visualstudio/extensibility/internals/configuration-options-overview).  
-  
 Projekty v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] může podporovat více konfigurací, které je možné sestavit, ladění, běhu a/nebo nasazené. Konfigurace je popsané společně s pojmenovanou sadu vlastností, obvykle přepínače kompilátoru a umístění souborů typu sestavení. Ve výchozím nastavení nová řešení obsahovat dvě konfigurace Debug a Release. Tyto konfigurace lze použít pomocí jejich výchozí nastavení, nebo upravit tak, aby podle svých specifických požadavků řešení nebo projektu. Některé balíčky se dají dvěma způsoby: jako ActiveX editor nebo jako součást na místě. Projekty není nutné pro podporu více konfigurací, ale. Pokud není k dispozici pouze jedné konfigurace, tuto konfiguraci je namapována na všechny konfigurace řešení.  
   
  Konfigurace se obvykle skládají ze dvou částí – název konfigurace (například ladění a vydání) a nastavení platformy. Název platformy konfigurace identifikuje prostředí, které nastavení konfigurace cíle, jako je například rozhraní API nebo platformu operačního systému. Uživatelé [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nelze vytvořit platformu; musí zvolit ze výběr projektu umožňuje VSPackage. Když uživatel nainstaluje VSPackage platformu doručování vytvořené při vývoji v balíčku můžete surface libovolný název platformy desired podle jakékoli kritéria stanovená Tvůrce balíčku. Uživatel může vyberte ze seznamu platformy, které jsou k dispozici prostřednictvím sady VSPackage, když jsou vytvořeny na stránkách vlastností.  

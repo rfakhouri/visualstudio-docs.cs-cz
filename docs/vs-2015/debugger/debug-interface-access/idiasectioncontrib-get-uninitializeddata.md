@@ -1,7 +1,7 @@
 ---
 title: Idiasectioncontrib::get_uninitializeddata – | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: adb77aca3ae33c17492a41f5adc49108d03fcd27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64d7477c8c463b17e601d7aaef086146f1362a77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671609"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296527"
 ---
 # <a name="idiasectioncontribgetuninitializeddata"></a>IDiaSectionContrib::get_uninitializedData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [idiasectioncontrib::get_uninitializeddata –](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasectioncontrib-get-uninitializeddata).  
-  
 Získá příznak, který označuje, zda oddíl obsahuje neinicializovaná data.  
   
 ## <a name="syntax"></a>Syntaxe  

@@ -1,7 +1,7 @@
 ---
 title: Referenční dokumentace nástroje MSBuild | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33ec64d3eb1ec4faa1566bb2d8f90d23f14a0555
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b99a082355742ad81ee2ac2e7280a17cfd233a2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675406"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292296"
 ---
 # <a name="msbuild-reference"></a>Referenční dokumentace nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [MSBuild Reference](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reference).  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] je systém sestavení pro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Následující odkazy vás přesměrují na témata, která obsahují [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] referenční informace.  
   
@@ -46,7 +44,7 @@ Nejnovější verzi tohoto tématu můžete najít v [MSBuild Reference](https:/
  [Podmínky](../msbuild/msbuild-conditions.md)  
  Popisuje podmínky, které jsou k dispozici v [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] soubory.  
   
- [Podmíněné konstrukce](../msbuild/msbuild-conditional-constructs.md)  
+ [Podmíněné konstrukty](../msbuild/msbuild-conditional-constructs.md)  
  Popisuje způsob použití `Choose`, `When`, a `Otherwise` elementy.  
   
  [Vyhrazené a známé vlastnosti nástroje MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)  
@@ -61,13 +59,13 @@ Nejnovější verzi tohoto tématu můžete najít v [MSBuild Reference](https:/
  [Referenční dokumentace k příkazovému řádku](../msbuild/msbuild-command-line-reference.md)  
  Popisuje argumenty a přepínače, které lze použít s [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].exe.  
   
- [. Soubory cíle](../msbuild/msbuild-dot-targets-files.md)  
+ [Soubory .Targets](../msbuild/msbuild-dot-targets-files.md)  
  Popisuje. Soubor cílů, která je součástí [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  [Metadata známé položky](../msbuild/msbuild-well-known-item-metadata.md)  
  Zobrazí seznam metadat, který je vytvořen společně s každou položku.  
   
- [Soubory odpovědí](../msbuild/msbuild-response-files.md)  
+ [Soubory odezvy](../msbuild/msbuild-response-files.md)  
  Popisuje soubory .rsp, které obsahují přepínače příkazového řádku.  
   
  [Další prostředky](../msbuild/additional-resources-for-msbuild.md)  

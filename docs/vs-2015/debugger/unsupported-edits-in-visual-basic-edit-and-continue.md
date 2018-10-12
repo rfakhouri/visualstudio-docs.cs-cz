@@ -1,7 +1,7 @@
 ---
 title: Nepodporované úpravy v jazyce Visual Basic operaci upravit a pokračovat | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 44dea7dd67653a5dbde95f10a331932a9c8c14c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ffe536b21b5569ad3427dfe4e3b281887cc00b13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633577"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296319"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Nepodporované úpravy v operaci Upravit a pokračovat jazyka Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [nepodporované úpravy v jazyce Visual Basic upravit a pokračovat](https://docs.microsoft.com/visualstudio/debugger/unsupported-edits-in-visual-basic-edit-and-continue).  
-  
 Upravit a pokračovat les zastaví spuštění programu v režimu pozastavení, provést změny provádění kódu a pokračovat v provádění programu s nově zahrnutých změny. Úpravy deklarativního kódu, které ovlivňují Veřejná struktura třídy jsou obecně zakázáno, ale mnoho úpravy, které můžete provést metoda, vlastnost text nebo privátní deklarace v rámci třídy jsou povoleny.  
   
  Pokud je potřeba provést změnu, která není podporována, musíte Zastavit ladění, proveďte požadované změny a spuštění nové ladicí relace.  

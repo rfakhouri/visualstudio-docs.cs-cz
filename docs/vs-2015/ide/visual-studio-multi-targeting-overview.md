@@ -1,7 +1,7 @@
 ---
 title: Cílení na více verzí sady Visual Studio – přehled | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fcc7f1a1fb7b9f348ace817c800a5e353694e96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673150"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277066"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Přehled cílení na více verzí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Visual Studio přehled multiplatformního zacílení](https://docs.microsoft.com/visualstudio/ide/visual-studio-multi-targeting-overview).  
-  
 V této verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete určit verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , která je vyžadována pro vaši aplikaci. Proto pokud chcete používat tuto verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dalším vývoji projektu, který jste započali v dřívější verzi, není nutné změnit cílový rámec. Můžete také vytvořit řešení, které obsahuje projekty zaměřené na různé verze rozhraní Framework. Cílení rozhraní také pomáhá zajistit, že aplikace používá pouze funkce, které jsou k dispozici v zadané verzi rozhraní framework.  
   
 > [!TIP]

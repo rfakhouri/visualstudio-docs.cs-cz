@@ -1,7 +1,7 @@
 ---
 title: Spuštění tabulky dokumentů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b7f22fed31618c3f0e8b897992da0beb1c0cc80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 131fbf7d5587382b2e47002f52e374dad154d448
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628657"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293069"
 ---
 # <a name="running-document-table"></a>Spuštění tabulky dokumentů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [spuštěná tabulka dokumentů](https://docs.microsoft.com/visualstudio/extensibility/internals/running-document-table).  
-  
 Rozhraní IDE udržuje seznam všech aktuálně otevřených dokumentů v vnitřní struktury nazvané spuštěnou tabulku dokumentů (r...). Tento seznam obsahuje všechny otevřené dokumenty v paměti, bez ohledu na to, zda tyto dokumenty jsou právě upravována. Dokument je všechny položky, které se ukládají, včetně souborů v projektu nebo souboru hlavního projektu (například soubor .vcxproj).  
   
 ## <a name="elements-of-the-running-document-table"></a>Prvky spuštěná tabulka dokumentů  

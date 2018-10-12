@@ -1,7 +1,7 @@
 ---
 title: Přístup k vyrovnávací paměti textu s použitím rozhraní API pro starší verze | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e89b91dbacf60df034ac7ce3653c25c2cae7ab3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84843f40b6d07e937837914f07aecf10adad2bba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677727"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277209"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Přístup k vyrovnávací paměti textu s použitím rozhraní API pro starší verze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přístup k vyrovnávací paměti textu s použitím rozhraní API pro starší verze](https://docs.microsoft.com/visualstudio/extensibility/accessing-the-text-buffer-by-using-the-legacy-api).  
-  
 Text zodpovídá za správu textových datových proudů a trvalost souborů. I když vyrovnávací paměti může číst nebo zapisovat dalších formátů, všechny běžné komunikaci s vyrovnávací paměť je prováděno pomocí kódování Unicode. Ve starší verzi rozhraní API můžete textovou vyrovnávací paměť použít buď jeden – nebo dvojrozměrné souřadnicový systém k identifikaci umístění znaku ve vyrovnávací paměti.  
   
 ## <a name="one--and-two-dimension-coordinate-systems"></a>Jeden a dvě dimenze koordinovat systémy  
@@ -40,12 +38,12 @@ Objekt vyrovnávací paměť textu
  Trvalost souborů je text druhého odpovědnost přípravné vyrovnávací paměti. K tomuto účelu implementuje objekt vyrovnávací paměti textu <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> a funguje jako součást objektu data dokumentů pro položky projektu a další prostředí součásti účastnící se trvalosti. Další informace najdete v tématu [otevření a uložení položek projektu](../extensibility/internals/opening-and-saving-project-items.md).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Změna nastavení zobrazení pomocí starší verze rozhraní API](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
+ [Změna nastavení zobrazení pomocí zastaralého rozhraní API](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
  Vysvětluje, jak změnit nastavení zobrazení pomocí starší verze rozhraní API.  
   
- [Pomocí Správce Text monitorování globální nastavení](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
+ [Použití textového správce k monitorování globálního nastavení](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
  Vysvětluje, jak použít textový správce k monitorování globální nastavení...  
   
 ## <a name="see-also"></a>Viz také  
- [Uvnitř základní Editor](../extensibility/inside-the-core-editor.md)
+ [Práce v základní editoru](../extensibility/inside-the-core-editor.md)
 

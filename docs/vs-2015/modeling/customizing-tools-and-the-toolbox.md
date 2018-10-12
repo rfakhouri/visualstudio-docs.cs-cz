@@ -1,7 +1,7 @@
 ---
 title: Přizpůsobení nástrojů a panelu nástrojů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 97682059e90bac38b0b8b00492ff9fd50a36ffab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69ee365e3bc6902ffecd755d6f788b7f9e238c52
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628656"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290729"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Přizpůsobení nástrojů a panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přizpůsobení nástrojů a panelu nástrojů](https://docs.microsoft.com/visualstudio/modeling/customizing-tools-and-the-toolbox).  
-  
 Je nutné definovat položky panelu nástrojů pro prvky, které chcete umožnit uživatelům, přidejte do své modely. Existují dva typy nástrojů: element nástroje a nástroje pro připojení. Uživatel ve vygenerovaném návrháři, můžete vybrat nástroj elementu přetáhněte do diagramu tvary a můžete vybrat nástroj pro připojení k vykreslení odkazů mezi tvary. Obecně platí nástrojů elementu umožňují uživatelům přidat instance třídy domény jejich modelů a nástroje pro připojení umožnit jim přidat instance vztahů domény.  
   
  V tomto tématu:  

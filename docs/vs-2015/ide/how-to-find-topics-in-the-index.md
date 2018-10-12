@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: hledání témat v rejstříku | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46021283b922758a8b4c5eafad1adeda3d6be573
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6bdfb94a7164dc38bf636d12d8b99ea73aefad8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677869"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296800"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Postupy: Hledání témat v rejstříku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: hledání témat v rejstříku](https://docs.microsoft.com/visualstudio/ide/how-to-find-topics-in-the-index).  
-  
 Index obsahuje seznam klíčových slov, které jsou spojeny s tématy v nainstalovaném obsahu. Každé téma může mít více než jedno klíčové slovo s ním spojená, a každé klíčové slovo může být přidružen k více než jedno téma. Použijte tento index stejným způsobem jako v knize indexu.  
   
 ### <a name="to-find-a-topic-by-using-the-index"></a>Chcete-li najít téma pomocí rejstříku  
@@ -51,7 +49,7 @@ Index obsahuje seznam klíčových slov, které jsou spojeny s tématy v nainsta
      Pokud je přidruženo pouze jedno téma klíčové slovo, které zadáte, zobrazí se. V opačném případě se zobrazí seznam všech témat, které jsou spojeny s tímto klíčovým slovem.  
   
 ## <a name="see-also"></a>Viz také  
- [Tipy pro hledání indexu](../ide/index-search-tips.md)
+ [Tipy pro hledání v rejstříku](../ide/index-search-tips.md)
 
 
 

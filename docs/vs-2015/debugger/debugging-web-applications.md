@@ -1,7 +1,7 @@
 ---
 title: Ladění webových aplikací | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,22 +24,20 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 265b0cfef3bb8d3afa1607da397b7e46a4cc69b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d6cbc06376329a80d9bade6751df5333438ea2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667157"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294674"
 ---
 # <a name="debugging-web-applications"></a>Ladění webových aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ladění webových aplikací](https://docs.microsoft.com/visualstudio/debugger/debugging-web-applications).  
-  
 Tato část vysvětluje, jak ladit několika typy webových aplikací.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Postupy: ladění webových aplikací](../debugger/how-to-debug-web-applications.md)  
+ [Postupy: Ladění webových aplikací](../debugger/how-to-debug-web-applications.md)  
  Popisuje, jak ladit [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] stále ve vývoji projektu.  
   
  [Ladění nasazených webových aplikací](../debugger/debugging-deployed-web-applications.md)  
@@ -51,7 +49,7 @@ Tato část vysvětluje, jak ladit několika typy webových aplikací.
  [Návod: Ladění webového formuláře](../debugger/walkthrough-debugging-a-web-form.md)  
  Ukazuje, jak ladit [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci.  
   
- [Postupy: ladění výjimek ASP.NET](../debugger/how-to-debug-aspnet-exceptions.md)  
+ [Postupy: Ladění výjimek ASP.NET](../debugger/how-to-debug-aspnet-exceptions.md)  
  Vysvětluje, jak zacházet s výjimky, ke kterým dojde během ladění [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikací.  
   
 ## <a name="related-sections"></a>Související oddíly  

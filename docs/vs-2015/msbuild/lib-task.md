@@ -1,7 +1,7 @@
 ---
 title: Lib – úloha | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dcdcece820af764e627aafc43ef405c627724b68
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 75e15c0230526fc7647144cbde566c693be58cbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775968"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285503"
 ---
 # <a name="lib-task"></a>LIB – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [lib – úloha](https://docs.microsoft.com/visualstudio/msbuild/lib-task).  
-  
   
 Zabalí nástroj Microsoft 32bitový Správce knihovny lib.exe. Správce knihovny vytváří a spravuje knihovnu objektových souborů Common Object File Format (COFF). Správce knihovny můžete vytvořit soubory exportu a importu knihovny odkaz exportovat definice. Další informace najdete v tématu [LIB Reference](http://msdn.microsoft.com/library/ecc7f643-bbd4-47a3-8dc6-b360f880db91) a [spuštění knihovny LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).  
   

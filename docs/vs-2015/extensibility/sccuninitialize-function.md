@@ -1,7 +1,7 @@
 ---
 title: Sccuninitialize – funkce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 17cf5337-d251-4422-bc96-93fe7d48f2ae
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9cec726eaad2e69ea3adfc850df452c2a06f8059
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4682d5d92349db85969f7477a36628ec621ca1d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675878"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282916"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sccuninitialize – funkce](https://docs.microsoft.com/visualstudio/extensibility/sccuninitialize-function).  
-  
 Tato funkce vyčistí všechny přidělení nebo otevřená připojení vytvořili podle předchozího volání [sccinitialize –](../extensibility/sccinitialize-function.md) při přípravě na vypínání modulu plug-in správy zdrojového kódu.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -55,5 +53,5 @@ SCCRTN SccUninitialize (
   
 ## <a name="see-also"></a>Viz také  
  [Funkce rozhraní API modulu Plug-in zdroje ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)   
- [Sccinitialize –](../extensibility/sccinitialize-function.md)
+ [SccInitialize](../extensibility/sccinitialize-function.md)
 

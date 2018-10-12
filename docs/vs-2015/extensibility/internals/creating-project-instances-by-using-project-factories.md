@@ -1,7 +1,7 @@
 ---
 title: Vytváření instancí projektu pomocí objektů pro vytváření projektů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ae36269de9d9911092bedb87f18f9aff3ca76a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28ca37af638802e3b9efd160b00d1b245d3ae4a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671267"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288337"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Vytváření instancí projektu pomocí objektů pro vytváření projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytváření instancí podle pomocí projektu objekty pro vytváření projektů](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-project-instances-by-using-project-factories).  
-  
 Typů projektů v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] použít *objekt pro vytváření projektu* pro vytvoření instancí objektů projektu. Objekt pro vytváření projektu je podobná objekt pro vytváření tříd standardní cocreatable objektů COM. Nicméně objekty projektu nejsou cocreatable: je třeba pouze vytvořit pomocí objekt pro vytváření projektu.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Volá objekt pro vytváření projektů v vašeho balíčku VSPackage implementovat, pokud uživatel načte existující projekt nebo vytvoří nový projekt v integrovaném vývojovém prostředí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Nový objekt projektu poskytuje integrované vývojové prostředí s dostatek informací k naplnění Průzkumníku řešení. Nový objekt projektu také poskytuje požadovaná rozhraní pro podporu všechny příslušné akce uživatelského rozhraní inicializuje v integrovaném vývojovém prostředí.  

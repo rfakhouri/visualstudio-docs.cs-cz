@@ -1,7 +1,7 @@
 ---
 title: Ladění kódu GPU | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1eead3a8f706564f9f91a385086f39ca31dc706e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0bc862e114319642ee54f8ef16824fa24065e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279263"
 ---
 # <a name="debugging-gpu-code"></a>Ladění kódu GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ladění kódu GPU](https://docs.microsoft.com/visualstudio/debugger/debugging-gpu-code).  
-  
 Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). Podpora v sadě Visual Studio pro ladění GPU zahrnuje závodu detekce spouštění procesů a připojení, a integraci do ladění systému windows.  
   
 ## <a name="supported-platforms"></a>Podporované platformy  
@@ -59,15 +57,15 @@ Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). 
 ## <a name="debugging-windows"></a>Ladění Windows  
  S použitím určitých ladění systému windows, můžete zkoumat, příznak a zablokovat vlákna GPU. Další informace naleznete v tématu:  
   
--   [Použití okna paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)  
+-   [Použití okna Paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)  
   
--   [Používání okna úloh](../debugger/using-the-tasks-window.md)  
+-   [Použití okna úloh](../debugger/using-the-tasks-window.md)  
   
--   [Postupy: použití okna paralelního sledování](../debugger/how-to-use-the-parallel-watch-window.md)  
+-   [Postupy: Použití okna paralelního sledování](../debugger/how-to-use-the-parallel-watch-window.md)  
   
 -   [Ladění vláken a procesů](../debugger/debug-threads-and-processes.md) (panelu nástrojů umístění ladění)  
   
--   [Postupy: použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
+-   [Postupy: Použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Výjimky synchronizace dat  
  Ladicí program můžete identifikovat několik podmínek synchronizace dat během provádění. Když se zjistí podmínku, ladicí program přejde do stavu přerušení. Máte dvě možnosti –**přerušit** nebo **pokračovat**. S použitím **výjimky** dialogovém okně můžete nakonfigurovat, zda ladicí program zjistí tyto podmínky a také jakých podmínek se přeruší pro. Další informace najdete v tématu [Správa výjimek pomocí ladicího programu](../debugger/managing-exceptions-with-the-debugger.md). Můžete také použít **možnosti** dialogové okno k určení, že ladicí program by měl Ignorovat výjimky, pokud se data, která je napsána nemění hodnotu data. Další informace najdete v tématu [Obecné, ladění, dialogové okno Možnosti](../debugger/general-debugging-options-dialog-box.md).  

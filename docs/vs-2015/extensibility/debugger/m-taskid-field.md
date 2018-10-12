@@ -1,7 +1,7 @@
 ---
 title: m_taskid – pole | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9e4b827e-7c41-4fa3-b646-830aba2ec736
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 858c0a8b24af1812dab46da85b47cce311aac7d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f283d07df62786d3d86cfeaef9e9858c7248d5b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671476"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285529"
 ---
 # <a name="mtaskid-field"></a>m_taskId – pole
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [m_taskid – pole](https://docs.microsoft.com/visualstudio/extensibility/debugger/m-taskid-field).  
-  
 Pomocné pole <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> vlastnost.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
@@ -44,5 +42,5 @@ Pomocné pole <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> 
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="see-also"></a>Viz také  
- [Třída úlohy](../../extensibility/debugger/task-class-internal-members.md)
+ [Task – třída](../../extensibility/debugger/task-class-internal-members.md)
 

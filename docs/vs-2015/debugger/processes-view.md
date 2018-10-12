@@ -1,7 +1,7 @@
 ---
 title: Zobrazení procesů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c83b57ade3a78a4dcc926e34547ee566326e129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4af26930fc8c9f362d91656cec758c9d4a9c437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675582"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288987"
 ---
 # <a name="processes-view"></a>Zobrazení procesů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení procesy](https://docs.microsoft.com/visualstudio/debugger/processes-view).  
-  
 Zobrazí se v zobrazení zobrazí strom všech aktivních procesů ve vašem systému. Název modulu a ID procesu se zobrazí. Zobrazení procesů použijte, pokud chcete prozkoumat konkrétní systém procesu, která obvykle odpovídá prováděnému programu. Procesy jsou označeny názvů modulů, nebo jsou určené "systémové procesy."  
   
  Microsoft Windows podporuje víc procesů. Každý proces může mít jednu nebo více vláken a každé vlákno má jednu nebo více přidružených oknům nejvyšší úrovně. Každé okno nejvyšší úrovně může vlastnit řady windows. A + symbol označuje, zda je sbalen úroveň. Sbalené zobrazení se skládá z jednoho řádku proces. Klikněte + symbol rozšířit na úroveň.  
@@ -64,7 +62,7 @@ Zobrazení procesů nástroje Spy ++
  [Dialogové okno hledání procesů](../debugger/process-search-dialog-box.md)  
  Umožňuje najít uzel pro konkrétní proces v zobrazení procesů.  
   
- [Dialogové okno vlastností procesu](../debugger/process-properties-dialog-box.md)  
+ [Dialogové okno vlastností procesů](../debugger/process-properties-dialog-box.md)  
  Zobrazí vlastnosti procesu vybrána v zobrazení procesy.  
   
  [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  

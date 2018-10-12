@@ -1,7 +1,7 @@
 ---
 title: Idiaframedata::get_relativevirtualaddress – | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f12459b8da8e0063145d67595b7bf99f7ef2d55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f13c06cdd656e77ed0325740d502aeeabee0485f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633619"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288324"
 ---
 # <a name="idiaframedatagetrelativevirtualaddress"></a>IDiaFrameData::get_relativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [idiaframedata::get_relativevirtualaddress –](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress).  
-  
 Načte relativní virtuální adresu (RVA) kód rámečku.  
   
 ## <a name="syntax"></a>Syntaxe  

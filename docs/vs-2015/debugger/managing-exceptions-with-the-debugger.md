@@ -1,7 +1,7 @@
 ---
 title: Správa výjimek pomocí ladicího programu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8837a633c12277a1caac2f88af3eb85a4db2dafc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666649"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285919"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Správa výjimek pomocí ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Správa výjimek pomocí ladicího programu sady Visual Studio](https://docs.microsoft.com/visualstudio/debugger/managing-exceptions-with-the-debugger).  
-  
 Výjimkou je údaj o chybovém stavu, ke které dojde při spuštění programu. Můžete a měl by poskytovat obslužné rutiny, které reagují na nejdůležitější výjimky, ale je důležité vědět, jak nastavit ladicí program na přerušení pro výjimky, které chcete zobrazit.  
   
  Když dojde k výjimce, ladicí program zapíše zprávu o výjimce do okna výstup. To může přerušit provádění, v následujících případech:  

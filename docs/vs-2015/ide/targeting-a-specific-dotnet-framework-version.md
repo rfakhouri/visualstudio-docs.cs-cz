@@ -1,7 +1,7 @@
 ---
 title: Cílení na konkrétní rozhraní .NET Framework verze | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae41e7aea5bd4a1a355993a061829a190e1ef80b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc084c025e19e5466cd860611eeef91a3a7fedca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671857"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277924"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Cílení na konkrétní verzi rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [cílení na konkrétní verzi rozhraní .NET Framework](https://docs.microsoft.com/visualstudio/ide/targeting-a-specific-dotnet-framework-version).  
-  
 V sadě Visual Studio můžete zadat verzi nebo profil, který chcete svůj projekt cílit na rozhraní .NET Framework. Pro spuštění v jiném počítači, který musí být aplikace cílena kompatibilní s verzí rozhraní Framework, který je nainstalován v počítači verzi rozhraní Framework aplikace.  
   
  Tento oddíl obsahuje témata, která popisují, jak cílit na konkrétní verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ve vašich projektech.  

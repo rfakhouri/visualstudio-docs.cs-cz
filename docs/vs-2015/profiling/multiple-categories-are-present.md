@@ -1,7 +1,7 @@
 ---
 title: Je přítomno více kategorií | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 438dd5b3639f7783d24ef8f21a68da837be92452
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 471934642bba9e9fe31b8c1b010de83dc9d13a06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674653"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285490"
 ---
 # <a name="multiple-categories-are-present"></a>Je přítomno více kategorií
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [více kategorií jsou k dispozici](https://docs.microsoft.com/visualstudio/profiling/multiple-categories-are-present).  
-  
 Je vybraný oddíl, který obsahuje více než jeden typ aktivity pro danou časový rozsah. Všimněte si, že se zobrazují dvě barvy, jeden svisle nad sebou na druhé. Tyto barvy představují hlavní dvě nejčastěji se vyskytujících činnosti v daném časovém rozsahu. Frekvence obě aktivity se zobrazí relativně k navzájem jako třetiny nebo polovinami svislá čára. Pokud chcete zobrazit více podrobností, zkuste přiblížit v této části zobrazení vlákna.  
   
 ## <a name="see-also"></a>Viz také  

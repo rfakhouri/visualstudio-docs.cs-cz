@@ -1,7 +1,7 @@
 ---
 title: Refaktoring (C#) pro odebrání parametrů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 529950d72ac11ebfd443a85db597adfcbc89bba1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9559deda5c5cdc60adc10246196fb66646cfee5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672933"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284385"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Refaktoring pro odebrání parametrů (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

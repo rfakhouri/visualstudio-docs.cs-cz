@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: označení a odstranění označení vlákna | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81de0353311d11cf744487d581296500d62ecb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb6c6c3f9c333ef1613f2733a476e7843f7249b4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667388"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289130"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>Postupy: Označení a odstranění označení vlákna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [jak: nastavit příznak a odstranění označení vlákna](https://docs.microsoft.com/visualstudio/debugger/how-to-flag-and-unflag-threads).  
-  
 Můžete označit příznakem vlákna, které chcete věnovat zvláštní pozornost označením s ikonou v **vlákna**, **paralelní zásobníky**, **paralelní sledování**, a **GPU Vlákna** systému windows. Tato ikona vám může pomoct a ostatní vlákna s příznakem odlišili od ostatních vláken.  
   
  Vlákna s příznaky také přijímat zvláštní zacházení v **vlákna** seznamu **umístění ladění** nástrojů. Tento seznam můžete zobrazit všechna vlákna nebo pouze vlákna s příznakem. Když Označit vlákno, **vlákno** seznamu, automaticky se přepne na Zobrazit pouze vlákna s příznakem, ale můžete přepnout zpět na Zobrazit všechna vlákna podle potřeby.  

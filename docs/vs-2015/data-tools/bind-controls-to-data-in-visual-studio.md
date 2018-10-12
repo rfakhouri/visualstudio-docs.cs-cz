@@ -1,7 +1,7 @@
 ---
 title: Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 85bfcb03ea2f383d8f1517d17c866c2320891aaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a4143777e51a03867e94f1d4ebdd9c8182a5401
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672815"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291569"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/bind-controls-to-data-in-visual-studio).  
-  
   
 Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat k ovládacím prvkům. Můžete vytvořit tyto ovládací prvky vázané na data přetažením položek z **zdroje dat** okno na návrhovou plochu nebo ovládacích prvků na plochu v sadě Visual Studio.  
   
@@ -68,10 +66,10 @@ Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat k ovládac
 |Úloha|Další informace|  
 |----------|----------------------|  
 |Otevřít **zdroje dat** okna.|V editoru otevřít návrhovou plochu a zvolte **zobrazení** > **zdroje dat**.|  
-|Přidáte zdroj dat do vašeho projektu.|[Přidat nové zdroje dat](../data-tools/add-new-data-sources.md)|  
+|Přidáte zdroj dat do vašeho projektu.|[Přidání nových zdrojů dat](../data-tools/add-new-data-sources.md)|  
 |Nastavení ovládacího prvku, který je vytvořen při přetažení položky z **zdroje dat** do okna návrháře.|[Nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdrojů dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|  
 |Upravte seznam ovládacích prvků, které jsou spojeny s položkami v **zdroje dat** okna.|[Přidání vlastních ovládacích prvků do okna zdrojů dat](../data-tools/add-custom-controls-to-the-data-sources-window.md)|  
-|Vytvoření ovládacích prvků vázaných na data.|[Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)|  
+|Vytvoření ovládacích prvků vázaných na data.|[Vytvoření vazby ovládacích prvků modelu Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)|  
 |Vytvořit vazbu k objektu nebo kolekci.|[Vytvoření vazby objektů v sadě Visual Studio](../data-tools/bind-objects-in-visual-studio.md)|  
 |Filtrovat data, která se zobrazí v uživatelském rozhraní.|[Filtrování a řazení dat ve formulářové aplikaci Windows](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|  
 |Přizpůsobení popisků pro ovládací prvky.|[Úprava způsobu, kterým Visual Studio vytváří titulky pro ovládací prvky vázané daty](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|  

@@ -1,7 +1,7 @@
 ---
 title: Přizpůsobení analýzy pokrytí kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ddb6c43892c3cef3f45edb9096c3fb36297c51a3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9188cf2039249f5207685217719bc41d25abd0a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774962"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281746"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Přizpůsobení analýzy pokrytí kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přizpůsobení analýzy pokrytí kódu](https://docs.microsoft.com/visualstudio/test/customizing-code-coverage-analysis).  
-  
 Ve výchozím nastavení analyzuje nástroj pokrytí kódu Visual Studio všechna sestavení řešení (.exe/.dll), která jsou načtena během testování částí. Doporučujeme zachovat toto výchozí nastavení, protože ve většině případů funguje dobře. Další informace najdete v tématu [pomocí pokrytí kódu k určení jak mnohem kódu je právě testováno](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
  Před přizpůsobením chování pokrytí kódu je třeba zvážit některé alternativy:  

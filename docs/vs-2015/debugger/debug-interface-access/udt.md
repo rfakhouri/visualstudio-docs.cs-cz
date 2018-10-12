@@ -1,7 +1,7 @@
 ---
 title: UDT | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91b552dc16ea71da41322bbdaee242c9f950a022
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa3ed69315ebb2fa80d001fb60b16ed65cbcbbbb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673887"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280004"
 ---
 # <a name="udt"></a>UDT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [UDT](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/udt).  
-  
 Každé třídy, struktury a sjednocení je identifikován `SymTagUDT` symbol. Každý člen, funkce, data, nebo vnořeného typu a každou ze základních tříd, zobrazí se jako podřízený objekt třídy uživatelem definovaný typ (UDT).  
   
 ## <a name="properties"></a>Vlastnosti  

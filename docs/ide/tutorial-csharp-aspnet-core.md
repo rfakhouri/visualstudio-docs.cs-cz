@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d0e337ebb97b487adfd79be43ddc1301612ba090
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284047"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Kurz: Začínáme s C# a ASP.NET Core v sadě Visual Studio
 
@@ -131,7 +131,7 @@ Toto řešení následuje **stránky Razor** vzoru návrhu. Se liší od [Model-
 
 1. Nechte okno prohlížeče otevřít a vrátí do sady Visual Studio.
 
-1. V sadě Visual Studio, zvolte **About.cshtml**. Odstraňte slovo _změnit_ a místo něj přidat slova _souborů a adresářů_.
+1. V sadě Visual Studio, zvolte **About.cshtml**. Odstraňte slovo _Další_ a místo něj přidat slova _souborů a adresářů_.
 
     ![Změní celý text v souboru About.cshtml](../ide/media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
@@ -197,4 +197,4 @@ Blahopřejeme k dokončení tohoto kurzu! Doufáme, že jste se dozvěděli ješ
 
 ## <a name="see-also"></a>Viz také:
 
-[Publikování webové aplikace do služby Azure App Service pomocí sady Visual Studio](..//deployment/quickstart-deploy-to-azure.md)
+[Publikování webové aplikace do služby Azure App Service pomocí sady Visual Studio](../deployment/quickstart-deploy-to-azure.md)

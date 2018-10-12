@@ -1,7 +1,7 @@
 ---
 title: Definování obslužné rutiny odkazu pracovní položky | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 73a0a71e50360f7c70b7f4e466d6000333c3b89e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eae89672a6fcbf56dcd2426547e1fb528c270db2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675677"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290417"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definování obslužné rutiny odkazu pracovní položky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [definování obslužné rutiny odkazu pracovní položky](https://docs.microsoft.com/visualstudio/modeling/define-a-work-item-link-handler).  
-  
 Můžete vytvořit rozšíření integrace sady Visual Studio, který reaguje, když uživatel vytvoří nebo odstraní spojení mezi prvkem modelu UML a pracovní položky. Například když se uživatel rozhodne novou pracovní položku propojit prvek modelu, váš kód může inicializovat pole pracovní položky z hodnot v modelu.  
   
 ## <a name="set-up-a-uml-extension-solution"></a>Nastavte řešení rozšíření UML  
@@ -305,7 +303,7 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
  [Propojení prvků modelu a pracovních položek](../modeling/link-model-elements-and-work-items.md)   
  [Připojení referenčních řetězců k prvkům modelu UML](../modeling/attach-reference-strings-to-uml-model-elements.md)   
  [Definování a instalace rozšíření modelování](../modeling/define-and-install-a-modeling-extension.md)   
- [Programování s rozhraním API UML](../modeling/programming-with-the-uml-api.md)
+ [Programování pomocí rozhraní API UML](../modeling/programming-with-the-uml-api.md)
 
 
 

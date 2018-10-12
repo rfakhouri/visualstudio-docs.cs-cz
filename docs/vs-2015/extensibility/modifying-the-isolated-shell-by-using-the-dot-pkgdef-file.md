@@ -1,7 +1,7 @@
 ---
 title: Úprava izolovaného prostředí pomocí. Soubor Pkgdef | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f70036f91eb52d85054465e6eea9f82672d851f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3a9b56d946e5a337c5afeb6cdd399c3c7ba24bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669566"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291457"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Úprava izolovaného prostředí pomocí. Soubor Pkgdef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [úpravy izolované prostředí s použitím. Soubor Pkgdef](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file).  
-  
 Soubor .pkgdef podporuje nastavení, která vám umožní přizpůsobit aplikací izolovaného prostředí. Určuje hodnoty, které vytvářejí, když je na počítači nainstalovaná určitá aplikace a, který je odkazováno dle prostředí sady Visual Studio při spuštění aplikace. Nastavení jsou uspořádány do souboru na základě klíčů registru použít.  
   
 > [!WARNING]
@@ -136,5 +134,5 @@ Soubor .pkgdef podporuje nastavení, která vám umožní přizpůsobit aplikac�
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení izolovaného prostředí](../extensibility/customizing-the-isolated-shell.md)   
- [. Soubory Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)
+ [Soubory .Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)
 

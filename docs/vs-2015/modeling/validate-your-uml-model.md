@@ -1,7 +1,7 @@
 ---
 title: Ověření modelu UML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 42e0733668a1f96dc1881d4d4d58a575eeb9eb64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292692"
 ---
 # <a name="validate-your-uml-model"></a>Ověření modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ověření modelu UML](https://docs.microsoft.com/visualstudio/modeling/validate-your-uml-model).  
-  
 Některé z modelů UML, které nakreslíte v sadě Visual Studio může být považovány za neplatné ve vašem projektu. Například může vyžadovat, že případ použití musí být vždy spojeny do sekvenčního diagramu, který má životnosti představující actors případu použití. Můžete nainstalovat nebo můžete definovat *omezení* , které pomohou vašemu týmu v souladu s požadavky na takovou situaci. Omezení můžete použít, když uživatel uloží nebo otevře model a můžete vyvolat příkaz nabídky.  
   
  Bez omezení jsou součástí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], protože závisejí na tom, jak váš tým interpretuje a používá modelů UML. Ale můžete definovat vlastní omezení a nainstalovat omezení, které jsou definovány jinými uživateli. Zjistěte, jak definovat omezení a balíček pro distribuci, naleznete v tématu [definovat omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md).  

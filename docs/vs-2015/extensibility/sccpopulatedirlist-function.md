@@ -1,7 +1,7 @@
 ---
 title: Sccpopulatedirlist – funkce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 358512c94f46971cc91ef3ed065c83ba56e5ad16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 031735127fe648be72b221461ae9dbab15929446
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666292"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286973"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sccpopulatedirlist – funkce](https://docs.microsoft.com/visualstudio/extensibility/sccpopulatedirlist-function).  
-  
 Tato funkce určuje, které adresářů a (volitelně) souborů jsou uložené ve správě zdrojového kódu v daném seznamu adresáře ke kontrole.  
   
 ## <a name="syntax"></a>Syntaxe  

@@ -1,7 +1,7 @@
 ---
 title: Příklady vývoj mobilních řešení napříč platformami | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 5
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: ba7f3ed346222a7aa67ffb5212bbb851c5ffeea2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3e28af0acc9738aa85ac08315ed0bea4b7346fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696197"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277872"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Příklady vývoje multiplatformních mobilních řešení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Cross-Platform Mobile Development příklady](https://docs.microsoft.com/visualstudio/cross-platform/cross-platform-mobile-development-examples).  
-  
   
 Několik šablon nainstaloval Visual C++ pro vývoj mobilních řešení napříč platformami generovat kompletní příklady, které vám pomůže se zdrojem cenných informací. Kromě toho na webu Windows Dev Center má několik ukázkových aplikací, které si můžete stáhnout a vyzkoušet si v sadě Visual Studio.  
   

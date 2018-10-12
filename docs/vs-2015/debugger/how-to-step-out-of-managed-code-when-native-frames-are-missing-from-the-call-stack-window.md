@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vystoupení ze spravovaného kódu, pokud v okně zásobník volání chybějí nativní rámce | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 682d4f9c8973f8deee65efa0cd8c0d78061ee00a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2648d73887f79f9b71770164a620bb1a8d674622
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628270"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279432"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Postupy: Vystoupení ze spravovaného kódu, pokud v okně Zásobník volání chybějí nativní rámce.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: vystoupení ze spravovaného kódu, pokud v okně zásobník volání chybějí nativní rámce](https://docs.microsoft.com/visualstudio/debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window).  
-  
 Pokud má váš kód nativní rámce, které jsou viditelné ve **zásobník volání** okno krokování mimo spravovaný kód může vést k neočekávaným výsledkům. Jako alternativní řešení můžete použít zarážku místo **Krokovat s Vystoupením**.  
   
 > [!NOTE]
@@ -56,7 +54,7 @@ Pokud má váš kód nativní rámce, které jsou viditelné ve **zásobník vol
      Po dokončení spravovaných volání provádění zastaví na zarážce v nativním kódu.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: použití okna zásobník volání](../debugger/how-to-use-the-call-stack-window.md)
+ [Postupy: Použití okna Zásobník volání](../debugger/how-to-use-the-call-stack-window.md)
 
 
 

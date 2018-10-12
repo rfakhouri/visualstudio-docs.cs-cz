@@ -1,7 +1,7 @@
 ---
 title: Zabezpečení správy verzí, problémy a manifestem v nasazeních ClickOnce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1274a636dd49a2ade1f21941d24817a0d54d49c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77685b2eb6397d1edf9a342c25838fcefac2e619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677699"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289221"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problémy se zabezpečením, správou verzí a manifestem v nasazeních ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [problémy se zabezpečením, Správa verzí a Manifest v nasazeních ClickOnce](https://docs.microsoft.com/visualstudio/deployment/security-versioning-and-manifest-issues-in-clickonce-deployments).  
-  
 Existuje řada různých problémů s [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zabezpečení, správy verzí aplikací a manifestu syntaxi a sémantiku, která může způsobit, že [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] není na úspěšné nasazení.  
   
 ## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce a řízení uživatelských účtů Windows Vista  

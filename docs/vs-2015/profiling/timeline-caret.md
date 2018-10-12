@@ -1,7 +1,7 @@
 ---
 title: Vsuvka časové osy | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8a11cd7c6c4e6e32b5decdaf3027a6981420229
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3e6c450be0054cf5087c4fb6f74d8b578207ddad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673440"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277313"
 ---
 # <a name="timeline-caret"></a>Vsuvka časové osy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vsuvka časové osy](https://docs.microsoft.com/visualstudio/profiling/timeline-caret).  
-  
 Když vyberete bod na časové ose provádění segment vlákna, objeví se nad ní vsuvka časové osy. Zásobník volání, který se zobrazí na kartě aktuálního zásobníku je ten, který je nejblíže v čase, do které jste klepnuli na segment. Blikající kurzor slouží k přidružení zásobník volání, které se zobrazí v části **aktuální** karta se v okamžiku, kdy ho vzorkováno. Blikající kurzor ukazuje přesné umístění zásobníku volání, což je nejbližší zásobník volání do umístění, které uživatel vybral.  
   
 ## <a name="see-also"></a>Viz také  

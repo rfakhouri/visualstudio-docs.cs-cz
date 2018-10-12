@@ -1,7 +1,7 @@
 ---
 title: Sccbeginbatch – funkce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e62074fa30d68e4cd283fb431f0ae64cff957ed4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50fa6d14507a9af98d9ca303bc7bf9dbbf93ab6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669420"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283449"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sccbeginbatch – funkce](https://docs.microsoft.com/visualstudio/extensibility/sccbeginbatch-function).  
-  
 Tato funkce spustí batch posloupnost operací správy zdrojů. [Sccendbatch –](../extensibility/sccendbatch-function.md) bude volána k ukončení služby batch. Tyto dávek nemůže být vnořený.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -55,5 +53,5 @@ SCCRTN SccBeginBatch(void);
   
 ## <a name="see-also"></a>Viz také  
  [Funkce rozhraní API modulu Plug-in zdroje ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)   
- [Sccendbatch –](../extensibility/sccendbatch-function.md)
+ [SccEndBatch](../extensibility/sccendbatch-function.md)
 

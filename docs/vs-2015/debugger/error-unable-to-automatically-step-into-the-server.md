@@ -1,7 +1,7 @@
 ---
 title: 'Chyba: Automatické krokování s vnořením do serveru nelze | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d75ed4ddb42705b95a5ddd834596bc828e0f3ec2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 42f97ac229eedacf0bb26730127ae0f35dfd1346
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633564"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288081"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Chyba: Automatické krokování s vnořením do serveru se nezdařilo.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Chyba: nelze automaticky krok do the Server](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-automatically-step-into-the-server).  
-  
 Chyba čtení:  
   
  Nepovedlo se automatické krokování s vnořením do serveru. Ladicí program nebyl upozorněn, než se provedl vzdálené procedury  

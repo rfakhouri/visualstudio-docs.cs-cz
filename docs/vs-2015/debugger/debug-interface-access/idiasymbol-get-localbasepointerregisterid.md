@@ -1,7 +1,7 @@
 ---
 title: Idiasymbol::get_localbasepointerregisterid – | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b3fa367e832158100fced703b027721448e1500
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3052ac88d25d7846f6da0ada0538aae4cdf3911c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668743"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279718"
 ---
 # <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [idiasymbol::get_localbasepointerregisterid –](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-localbasepointerregisterid).  
-  
 Načte ID do registru, který obsahuje základní ukazatel na místní proměnné v zásobníku. Použít, když [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) je nastavena na `SymTagFunction`.  
   
 ## <a name="syntax"></a>Syntaxe  

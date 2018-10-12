@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: ladění spustitelného souboru není součástí řešení sady Visual Studio | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36acf39ce892afb2a2601b3149987aa8d7e9f4ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 241a1dbf3af5db726f344ab42d53de3fdd30db3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675062"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278783"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Postupy: Ladění spustitelného souboru, který není součástí řešení sady Visual Studio.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: ladění spustitelný soubor není součástí řešení sady Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution).  
-  
 V některých případech můžete chtít ladit spustitelný soubor, který není součástí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. To může být spustitelný soubor vytvořený mimo sadu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nebo spustitelný soubor obdrželi od někoho jiného.  
   
  Obvyklá odpověď na tento problém je spuštění spustitelného souboru mimo sadu Visual Studio a připojit se k němu pomocí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ladicího programu. Další informace najdete v tématu[připojení k běžící procesy](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  

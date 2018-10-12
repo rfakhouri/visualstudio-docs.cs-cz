@@ -1,7 +1,7 @@
 ---
 title: Visual Studio IDE | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,15 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98d0da464c5c156d959a05410326cebd4cd870f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292783"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio – sada IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Nejnovější verzi tohoto tématu můžete najít v [dokumentace k sadě Visual Studio IDE](https://docs.microsoft.com/visualstudio/ide/index).
-
 Microsoft Visual Studio 2015 je sada nástrojů pro vytváření softwaru, z fáze plánování prostřednictvím uživatelského rozhraní návrh, kódování, testování, ladění, analýza kvality kódu a výkonu, nasazení pro zákazníky a shromažďování telemetrických dat o využití. Tyto nástroje jsou navrženy pro jako možné a jsou všechny vystavené prostřednictvím Visual Studio integrované vývojové prostředí (IDE) bezproblémově fungovat.
 
 Visual Studio slouží k vytvoření mnoha typech aplikací, od jednoduchého úložiště aplikací a her pro mobilní klienty na velké a komplexní systémy, které podniky napájení a dat centra. Můžete vytvořit:
@@ -199,11 +196,11 @@ Výstup sestavení, včetně úspěch nebo chyba zprávy, se zobrazí v **výstu
 |||
 |-|-|
 |[Uživatelské účty a aktualizace](../ide/user-accounts-and-updates.md)|[Přizpůsobení integrovaného vývojového prostředí](../ide/personalizing-the-visual-studio-ide.md)|
-|[Postupy: pohyb v integrovaném vývojovém prostředí](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Začínáme s vývojem pomocí jazyka Visual C++](../ide/get-started-developing-with-visual-studio.md)|
+|[Návody: Pohyb v integrovaném vývojovém prostředí](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Začínáme s vývojem pomocí jazyka Visual C++](../ide/get-started-developing-with-visual-studio.md)|
 |[Hledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|[Řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md)|
 |[Psaní kódu](../ide/writing-code-in-the-code-and-text-editor.md)|[Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)|
 |[Nástroje pro profilaci](../profiling/profiling-tools.md)|[Zlepšení kvality kódu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
-|[Návrh uživatelského rozhraní](../designers/designing-user-interfaces.md)|[Analýza a modelování vaší architektury](../modeling/analyze-and-model-your-architecture.md)|
+|[Návrh uživatelského rozhraní](../designers/designing-user-interfaces.md)|[Analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)|
 |[Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)|[Nasazení aplikací, služeb a komponent](../deployment/deploying-applications-services-and-components.md)|
 |[Podpora pro 64bitové integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide-64-bit-support.md)|[Zabezpečení](../ide/security-in-visual-studio.md)|
 |[Ukázky sady Visual Studio](../ide/visual-studio-samples.md)|[Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)|
@@ -213,6 +210,6 @@ Výstup sestavení, včetně úspěch nebo chyba zprávy, se zobrazí v **výstu
 
 - [Instalaci sady Visual Studio 2015](../install/install-visual-studio-2015.md)
 - [Práce s kódem](https://www.visualstudio.com/features/ide-vs)
-- [Co je nového v sadě Visual Studio 2015](../what-s-new-in-visual-studio-2015.md)
+- [Novinky v sadě Visual Studio 2015](../what-s-new-in-visual-studio-2015.md)
 - [Přenosy, migrace a upgrade projektů sady Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 - [Kontaktujte nás](../ide/talk-to-us.md)

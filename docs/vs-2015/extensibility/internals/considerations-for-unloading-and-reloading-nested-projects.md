@@ -1,7 +1,7 @@
 ---
 title: Důležité informace pro uvolnění a opětovné načtení vnořených projektů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d932096d209d8e39b5d218ceb868453fa9a8a6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1712c05ab1bd6dbf32537d4306517ddf189b4084
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277554"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Důležité informace pro uvolnění a opětovné načtení vnořených projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [důležité informace o uvolňování a opětovné načtení vnořených projektů](https://docs.microsoft.com/visualstudio/extensibility/internals/considerations-for-unloading-and-reloading-nested-projects).  
-  
 Při implementaci typy vnořených projektů, je nutné provést další kroky při odebrat a znovu načíst projekty. Pokud chcete informovat správně naslouchacích procesů událostí řešení, musíte správně zvýšit `OnBeforeUnloadProject` a `OnAfterLoadProject` události.  
   
  Jedním z důvodů musí vyvolat tyto události tímto způsobem je, že nechcete, aby zdrojového kódu (SCC) k odstranění položek ze serveru a pak je přidat zpět jako něco nového, když je `Get` zamezil operacím SCC. V takovém případě nový soubor budou načteny z SCC a budete muset odebrat a znovu načíst všechny soubory v případě, že se liší. Volání SCC `ReloadItem`. Implementace tohoto volání je odstraňte projekt a znovu je vytvořte znovu implementací `IVsFireSolutionEvents` volat `OnBeforeUnloadProject` a `OnAfterLoadProject`. Při provádění této implementaci SCC je informován, že projekt dočasně odstranila a znovu přidat. Proto SCC nepracuje se projekt jakoby projektu ve skutečnosti odstranila ze serveru a pak znovu přidat.  
