@@ -1,7 +1,7 @@
 ---
 title: Vlastní nastavení editoru | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a74276e0b9ae70f94d87aa258eacf6168f20653
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0b9d01c6582d1bf67b0b33e5372d94700a62587
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673682"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259314"
 ---
 # <a name="customizing-the-editor"></a>Vlastní nastavení editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vlastní nastavení editoru](https://docs.microsoft.com/visualstudio/ide/customizing-the-editor).  
-  
 Formátování, karty, písma a barvy, technologie IntelliSense a mnoho dalších funkcí editoru obecně nebo konkrétní jazyk editoru můžete přizpůsobit tak, že změníte možnosti. Další informace o těchto možnostech najdete v tématu [dialogové okno Možnosti textového editoru](../ide/reference/text-editor-options-dialog-box.md) nebo typ `Editor` do **rychlé spuštění**. Můžete také změnit způsob zobrazení okna editoru.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
@@ -48,7 +46,7 @@ Formátování, karty, písma a barvy, technologie IntelliSense a mnoho dalšíc
  [Nastavení záložek v kódu](../ide/setting-bookmarks-in-code.md)   
  [Obecné, prostředí, dialogové okno Možnosti](../ide/reference/general-environment-options-dialog-box.md)   
  [Dokumenty, prostředí, dialogové okno Možnosti](../ide/reference/documents-environment-options-dialog-box.md)   
- [Písma a barvy, prostředí, dialogové okno Možnosti](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+ [Písma a barvy, Prostředí, dialogové okno Možnosti](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
 
 
 

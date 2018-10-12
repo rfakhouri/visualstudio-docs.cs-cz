@@ -1,7 +1,7 @@
 ---
 title: Příkazy konzoly jazyka JavaScript | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0bc4597c5be26e25f79edc0784bb1fddd9baa76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d9090732e44a3c94874b6effb130e4fc0c29580
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263416"
 ---
 # <a name="javascript-console-commands"></a>Příkazy konzoly jazyka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [příkazy konzoly jazyka JavaScript](https://docs.microsoft.com/visualstudio/debugger/javascript-console-commands).  
-  
 Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Příkazy můžete použít k odesílání zpráv a provádění dalších úloh v okně konzoly jazyka JavaScript sady Visual Studio. Příklady, které ukazují, jak pomocí tohoto okna najdete v tématu [rychlý start: ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md). Informace v tomto tématu se vztahují na aplikace Windows Store, Windows Phone Store, aplikací a aplikací vytvořených pomocí Visual Studio Tools pro Apache Cordova. Informace o podporovaných konzole příkazy v aplikace Cordova, naleznete v tématu [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Informace o použití konzoly v nástrojích Internet Explorer F12 najdete v tématu [v tomto tématu](http://msdn.microsoft.com/library/ie/dn255006.aspx).  

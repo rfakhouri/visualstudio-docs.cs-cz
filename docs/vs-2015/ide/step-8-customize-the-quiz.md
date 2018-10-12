@@ -1,7 +1,7 @@
 ---
 title: 'Krok 8: Přizpůsobení kvízu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 72e630a3d065e196d33919045316fad27c912750
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 559bd2a1b908ab5b1590a2ec2dd71225020db79a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676288"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260140"
 ---
 # <a name="step-8-customize-the-quiz"></a>Krok 8: Přizpůsobení kvízu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [krok 8: přizpůsobení kvízu](https://docs.microsoft.com/visualstudio/ide/step-8-customize-the-quiz).  
-  
 V poslední části tutoriálu prozkoumáte několik způsobů, jak kvíz přizpůsobit a rozšíříte si již nabyté znalosti. Například se zamyslíte nad tím, jak program vytvoří problém náhodného dělení, jehož odpovědí není nikdy zlomek. Další informace, zapněte `timeLabel` určit jinou barvu a dejte účastníkovi kvízu nápovědu.  
   
 ### <a name="to-customize-the-quiz"></a>Přizpůsobení kvízu  

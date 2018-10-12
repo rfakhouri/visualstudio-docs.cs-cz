@@ -1,7 +1,7 @@
 ---
 title: Možnosti, textový Editor, C#, IntelliSense | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 12379f84ad9807e1a94c38c60b13a580b1fde5dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31c9909e5ea9364e806fdd2d7a39903bf1468abb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696289"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262168"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Možnosti, textový editor, C#, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [možnosti, textový Editor, C#, IntelliSense](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-csharp-intellisense).  
-  
   
 Použití **IntelliSense** stránky vlastností k úpravě nastavení, která ovlivňují chování technologie IntelliSense pro jazyk Visual C#. Můžete přistupovat **IntelliSense** stránku vlastností kliknutím **možnosti** na **nástroje** nabídky, pak levým na **jazyka C#** v **Textový Editor** složku a pak levým na **technologie IntelliSense.**  
   

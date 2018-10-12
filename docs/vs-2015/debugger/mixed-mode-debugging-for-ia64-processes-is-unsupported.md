@@ -1,7 +1,7 @@
 ---
 title: Ladění ve smíšeném režimu není pro procesy IA64 podporováno. | Dokumenty Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3777ce079aea853400896408542380c5e2d16ef5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b1c35a2801c79b4775b1e58b8c8c3c74c194fd5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669403"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262675"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Ladění ve smíšeném režimu není pro procesy IA64 podporováno.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ladění ve smíšeném režimu pro procesy IA64 není podporován.](https://docs.microsoft.com/visualstudio/debugger/mixed-mode-debugging-for-ia64-processes-is-unsupported).  
-  
 Visual Studio nepodporuje ladění ve smíšeném režimu spravovaného a nativního kódu v procesech IA64. To znamená, že nelze krokovat ze spravovaného kódu do nativního kódu nebo z nativního kódu pro spravovaný kód při ladění.  
   
 ### <a name="workarounds"></a>Alternativní řešení  
@@ -60,7 +58,7 @@ Visual Studio nepodporuje ladění ve smíšeném režimu spravovaného a nativn
 2.  Na stránkách vlastností, klikněte na tlačítko **platformy** a seznamu platformy, vyberte Win32  
   
 ## <a name="see-also"></a>Viz také  
- [Ladění 64bitové aplikace](../debugger/debug-64-bit-applications.md)
+ [Ladění 64bitových aplikací](../debugger/debug-64-bit-applications.md)
 
 
 

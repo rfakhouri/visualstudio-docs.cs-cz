@@ -1,7 +1,7 @@
 ---
 title: Vytváření aplikací ClickOnce z příkazového řádku | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: beb799a75649b02a04dc4a0aae8672855b1094b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 070ab3c216cacfcaeaf73bdc4cc6bebdaf52233b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696447"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271023"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Vytváření aplikací ClickOnce z příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytváření aplikací ClickOnce z příkazového řádku](https://docs.microsoft.com/visualstudio/deployment/building-clickonce-applications-from-the-command-line).  
-  
 V [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], můžete sestavovat projekty z příkazového řádku, i když jsou vytvořeny v integrovaném vývojovém prostředí (IDE). Ve skutečnosti můžete znovu sestavit projekt vytvořený s [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] na jiném počítači, který má pouze [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] nainstalované. Díky tomu můžete pro reprodukci pomocí automatizovaného procesu sestavení, například v Centrální sestavení testovacího prostředí nebo pomocí pokročilé techniky nad rámec sestavení projektu, samotný skriptování.  
   
 ## <a name="using-msbuild-to-reproduce-clickonce-application-deployments"></a>Použití nástroje MSBuild pro reprodukci nasazení aplikací ClickOnce  

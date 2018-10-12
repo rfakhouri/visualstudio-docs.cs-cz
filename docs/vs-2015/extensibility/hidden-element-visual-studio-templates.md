@@ -1,7 +1,7 @@
 ---
 title: Skrytý Element (šablony sady Visual Studio) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee63ae5e1573e86bf3b53e4543cf1398f819f018
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be8ff4e506c03d587f788a1fb7dbefd4efc09365
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633331"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263364"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Skrytý element (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [skrytý Element (šablony sady Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/hidden-element-visual-studio-templates).  
-  
 Určuje, jestli se šablona zobrazuje v buď **nový projekt** nebo **přidat novou položku** dialogové okno.  
   
  \<Vstemplate – >  

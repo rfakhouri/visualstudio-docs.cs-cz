@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: zveřejnění seznamů symbolů poskytovaných knihovnou správci objektů | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0773e20a71516fab47f4bd0c72a1c3a50531532c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09a13b7fecb0d1e337def074b91eb92913a65b70
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676310"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263624"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Postupy: zveřejnění seznamů symbolů poskytovaných knihovnou správci objektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vystavit obsahuje symboly poskytnutých správci objektů](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager).  
-  
 Nástroje procházení symbolů **zobrazení tříd**, **prohlížeče objektů**, **volání prohlížeče** a **výsledky hledáni symbolu**, předat požadavky na nová data [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] object Manageru. Správci objektů najde odpovídající knihovny a vyžaduje nový seznam symbolů. Knihovny reakce díky na požadovaná data [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] object Manageru prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> rozhraní. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Object Manageru volá metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> rozhraní na získání dat a použije ho k naplnění nebo aktualizovat zobrazení nástroje procházení symbolů.  
   
  Knihovny může zobrazit žádostí o data, když je vyvolán nástroj, rozbalení uzlu nebo zobrazení. Při prvním vyvolání nástroje procházení symbolů, požádá o objekt Správce knihovny k poskytování seznamu nejvyšší úrovně. Když je uživatel rozbalí seznam uzlů, knihovna poskytuje seznam podřízené položky v tomto uzlu. Každý objekt správce dotaz obsahuje index položky, které vás zajímají. Zobrazíte nový seznam musí správce objekt zjistit, kolik položek jsou v seznamu Typ položky, jejich názvy, usnadnění přístupu a jiné vlastnosti.  

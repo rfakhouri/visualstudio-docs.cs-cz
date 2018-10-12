@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Vytvoření vlastního procesoru direktiv | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d84fd8f389db771c1cbabbc3c5b830837703808e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 6e9a46f5f686182fe78164499a8370e96ba87a76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880692"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274687"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Návod: Vytvoření vlastního procesoru direktiv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: vytvoření vlastního procesoru direktiv](https://docs.microsoft.com/visualstudio/modeling/walkthrough-creating-a-custom-directive-processor).  
-  
 Procesory direktiv * fungovat tak, že přidáte kód, který *vygenerované třídy transformace*. Při volání *směrnice* z *textové šablony*, zbytek kódu, který napíšete do textové šablony může záviset na funkčnosti, která poskytuje tato direktiva.  
   
  Můžete si vytvořit své vlastní procesory direktiv. To vám pak umožní textové šablony přizpůsobit. Vytvoření vlastního procesoru direktiv vytvoříte třídu, která dědí buď z <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> nebo <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  

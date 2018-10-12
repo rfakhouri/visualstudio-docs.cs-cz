@@ -1,7 +1,7 @@
 ---
 title: Připojování k datům v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,12 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: d96b6212492a0fde5d2b15e6dec551ddc1d67e74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd1e620fcf1365cfb02834b3aa24130d5966e2e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629662"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264989"
 ---
 # <a name="connecting-to-data-in-visual-studio"></a>Připojení k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "42629662"
  [Postupy: připojení k datům v databázi](../data-tools/how-to-connect-to-data-in-a-database.md)  
  Popisuje, jak vytvořit připojení mezi vaší aplikací a databáze pomocí **Průvodce konfigurací zdroje dat**.  
   
- [Postupy: připojení k datům ve službě](../data-tools/how-to-connect-to-data-in-a-service.md)  
+ [Postupy: Připojování k datům ve službě](../data-tools/how-to-connect-to-data-in-a-service.md)  
  Popisuje, jak vytvořit připojení mezi vaší aplikací a dat vrácených z webové služby pomocí **Průvodce konfigurací zdroje dat**.  
   
  [Postupy: připojení k datům v objektech](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)  

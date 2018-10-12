@@ -1,7 +1,7 @@
 ---
 title: Ověřování v jazyka specifického pro doménu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2ba087620d926c651be18c8993d992d3bc498952
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75df1e1f2bbc5bc5c3bdd56b8c16f0587f18751b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696376"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263637"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Ověřování v jazyce specifickém pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ověřování v jazyka specifického pro doménu](https://docs.microsoft.com/visualstudio/modeling/validation-in-a-domain-specific-language).  
-  
 Jako autoři jazyka specifického pro doménu (DSL) můžete definovat omezení ověření můžete ověřit, že model vytvořený uživatelem smysluplné. Například pokud vaše DSL umožňuje uživatelům nakreslit řady strom osoby a jejich předchůdci, můžete napsat omezení, které zajišťuje, že mají podřízené položky data narození po jejich nadřazených objektů.  
   
  Může mít omezení ověření, spustí při uložení modelu, když se otevře, a když uživatel spustí explicitně **ověřit** příkazu nabídky. Můžete také provést ověření v řízení programu. Například můžete třeba spustit ověření v reakci na změnu hodnoty vlastnosti nebo relace.  

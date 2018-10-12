@@ -1,7 +1,7 @@
 ---
 title: Inicializace návrháře a konfigurace metadat | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 550f4c00d669d22b8c4a887c2917d9afdc462278
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96124b0b1dcad9be58759624e30180414eff1439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260875"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicializace návrháře a konfigurace metadat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Inicializace návrháře a konfigurace metadat](https://docs.microsoft.com/visualstudio/extensibility/designer-initialization-and-metadata-configuration).  
-  
 Manipulace s metadata a filtrování atributů přiřazených pomocí návrháře nebo součástí návrháře poskytuje mechanismus pro aplikace definovat, jaké nástroje jsou používány konkrétní návrháře pro zpracování různých <xref:System.Type> objektů (například datové struktury třídy, nebo grafické entity), když je k dispozici návrháře a konfigurace integrovaném vývojovém prostředí sady Visual Studio pro podporu návrháře (pro instanci, která **nástrojů** kategorie nebo karta je k dispozici).  
   
  [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Poskytuje několik mechanismů, aby se usnadnilo řízení Inicializace návrháře nebo součástí návrháře a manipulaci s jeho metadata službou VSPackage.  

@@ -1,7 +1,7 @@
 ---
 title: '&lt;pole&gt; (JavaScript) | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 155d3e771362949288d31a20245c7fb45a022969
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 52f9c4ffef27b7b17bbcb75d734b4d0b7e41a3ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880966"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271645"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;pole&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dokumentace k sadě Visual Studio 2017](/visualstudio/).  
-  
 Určuje informace o dokumentaci, včetně popisu, pole nebo člena, který je definován na objekt.  
   
 ## <a name="syntax"></a>Syntaxe  

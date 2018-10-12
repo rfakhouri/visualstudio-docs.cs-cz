@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: nastavování atributů CLR v elementu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: afcbadd7c7b3a18c94228e7221eda32b7117a2ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b77e0f1f31c0f617e80a27de4e1d0ab1d0b3d2eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632186"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263997"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Postupy: Nastavování atributů CLR v elementu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: nastavení atributů CLR v elementu](https://docs.microsoft.com/visualstudio/modeling/how-to-set-clr-attributes-on-an-element).  
-  
 Vlastní atributy jsou speciální atributy, které lze přidat do domény prvky, tvary, konektory a diagramy. Můžete přidat všechny atributy, které dědí z `System.Attribute` třídy.  
   
 ### <a name="to-add-a-custom-attribute"></a>Chcete-li přidat vlastní atribut  

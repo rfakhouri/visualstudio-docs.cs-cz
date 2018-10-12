@@ -1,7 +1,7 @@
 ---
 title: Pouze můj kód | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e0a9787e7e0a203a77e456ec61ea8a80057ce92
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: c97810b69ef7256379b6d14bf29ba08a9e6e0040
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273933"
 ---
 # <a name="just-my-code"></a>Pouze můj kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pouze můj kód](https://docs.microsoft.com/visualstudio/debugger/just-my-code).  
-  
 Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni s jen můj kód, ladicí program funkce kroky systému a rozhraní framework a další neuživatelská volání, která sbalí ty volání v ovládacím prvku windows zásobníku volání. Funkce pouze můj kód rozšířilo a jazyce C++ a JavaScript. Toto téma popisuje, jaké jsou specifikace pomocí volbu pouze vlastní kód v rozhraní .NET Framework, nativní C++ a JavaScript projekty.  
   
 ##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Povolit nebo zakázat pouze můj kód  

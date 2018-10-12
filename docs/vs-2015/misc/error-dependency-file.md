@@ -1,7 +1,7 @@
 ---
 title: 'Chyba: závislost &#39;souboru&#39; v projektu &#39;projektu&#39; nelze zkopírovat do běhového adresáře, protože by vznikl konflikt se závislostí &#39;souboru&#39; | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 6f571ec21094a28077f63bf86d4afe97af5429dd
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 0a8d6fe7440a39fc207d8d9a1b56bea06547e273
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231151"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274297"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Chyba: závislost &#39;souboru&#39; v projektu &#39;projektu&#39; nelze zkopírovat do běhového adresáře, protože by vznikl konflikt se závislostí &#39;souboru&#39;
 Dojde ke konfliktu mezi; více různých závislostí se stejným názvem soubor je zkopírován do adresáře bin pro spuštění aplikace. Běhového adresáře nemůže konflikt vyřešit, protože žádný z závislosti primární odkazy.  

@@ -1,7 +1,7 @@
 ---
 title: Různé soubory | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae827a5dfcc017370061e40aca4e7a03be798f97
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb9c7fb46517ff2d6dffdeb0cedfc4982c1f3366
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696213"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258478"
 ---
 # <a name="miscellaneous-files"></a>Ostatní soubory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [různé soubory](https://docs.microsoft.com/visualstudio/ide/reference/miscellaneous-files).  
-  
   
 Můžete chtít použít [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editory pracovat nezávisle na soubory z projektu nebo řešení. Když máte řešení otevřené, můžete otevřít a upravit soubory bez jejich přidání do řešení nebo projektu. Soubory, které chcete pracovat s nezávisle na kontejnery se nazývají různé soubory. Různé soubory jsou externí vzhledem k řešení a projektů, nejsou zahrnuty v sestavení a nemůže být součástí řešení pod správou zdrojových kódů.  
   
@@ -60,7 +58,7 @@ Můžete chtít použít [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editory
   
 ## <a name="see-also"></a>Viz také  
  [Řešení a projekty](../../ide/solutions-and-projects-in-visual-studio.md)   
- [Dokumenty, prostředí, dialogové okno Možnosti](../../ide/reference/documents-environment-options-dialog-box.md)
+ [Dokumenty, Prostředí, dialogové okno Možnosti](../../ide/reference/documents-environment-options-dialog-box.md)
 
 
 

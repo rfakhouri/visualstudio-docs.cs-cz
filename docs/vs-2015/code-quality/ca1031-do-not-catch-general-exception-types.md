@@ -1,7 +1,7 @@
 ---
 title: 'CA1031: Nezachycujte výjimky obecného typu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fee08bdc2b93687a5415fdbd137c48f816f4acbb
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 630bd84f4b5ceaa3719aa0e19d7d64bb08423127
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901711"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258349"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Nezachycujte výjimky obecného typu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Nejnovější verzi tohoto tématu můžete najít v [CA1031: nezachycujte výjimky obecného typu](https://docs.microsoft.com/visualstudio/code-quality/ca1031-do-not-catch-general-exception-types).
-
 |||
 |-|-|
 |TypeName|DoNotCatchGeneralExceptionTypes|

@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: určení adresu URL podpory pro jednotlivé předpoklady v nasazení ClickOnce | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 99003812248a10ca8797a5727911caf4ba3a0a60
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6b7f9c9f718b0f76d2a2b0c313c951064c5dc6f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629423"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262259"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Postupy: Určení adresy URL webu s podporou pro jednotlivé předpoklady v nasazení ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: určení adresu URL podpory pro jednotlivé předpoklady v nasazení ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment).  
-  
 A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] otestovat nasazení pro celou řadou požadavky, které musí být k dispozici v klientském počítači pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] spuštění aplikace. Patří mezi ně požadovanou minimální verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], verzi operačního systému a všechna sestavení, které musí být předinstalován v globální mezipaměti sestavení (GAC). [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], však nemůže nainstalovat některý z těchto nezbytných podmínkách; Pokud není nalezen předpoklad, jednoduše zastaví instalaci a zobrazí dialogové okno s vysvětlením, proč se instalace nepovedla.  
   
  Existují dvě metody pro instalaci požadavků. Můžete nainstalovat pomocí aplikace zaváděcího nástroje. Alternativně můžete zadat adresu URL podpory pro jednotlivé předpoklady, které se zobrazí uživatelům na dialogové okno, pokud se nenajde kontrolu požadovaných součástí. Na stránce odkazuje tuto adresu URL může obsahovat odkazy na pokyny k instalaci požadované součásti. Pokud aplikace neuvádějí adresu URL podpory pro jednotlivé předpoklady [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zobrazí adresa URL podpory určená v manifestu nasazení pro aplikaci jako celek, pokud je definována.  

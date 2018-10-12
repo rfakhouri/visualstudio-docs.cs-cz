@@ -1,7 +1,7 @@
 ---
 title: Hledání a používání rozšíření sady Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e05d9cf092d3f6cca3d7ef674c3f2bf137a0896f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628049"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268167"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Hledání a používání rozšíření Visual Studia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [hledání a používání rozšíření sady Visual Studio](https://docs.microsoft.com/visualstudio/ide/finding-and-using-visual-studio-extensions).  
-  
 Rozšíření sady Visual Studio jsou balíčky kódu, které v prostředí Visual Studio a které poskytují nové nebo vylepšené funkce aplikace Visual Studio. Můžete najít další informace o rozšíření sady Visual Studio tady: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
  Můžete použít **rozšíření a aktualizace** dialogové okno instalace rozšíření sady Visual Studio a ukázky z webů a dalších míst a pak povolit, zakázat, aktualizovat nebo je odinstalovat. (**Nástrojů / rozšíření a aktualizace**, nebo typ **rozšíření** v **Snadné spuštění** okno). Dialogové okno zobrazuje také aktualizace nainstalovaných ukázek a rozšíření. Můžete také stáhnout rozšíření z webů nebo získat od jiných vývojářů.  

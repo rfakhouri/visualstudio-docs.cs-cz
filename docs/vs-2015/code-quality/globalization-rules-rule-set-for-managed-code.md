@@ -1,7 +1,7 @@
 ---
 title: Sada pravidel pravidla globalizace pro spravovaný kód | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8637f2bb60e7e3559b056124a7f1a1342466f4ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d56d80a88cb28318869f37b4fb33f8782a137e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677370"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268915"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Sada pravidel Pravidla globalizace pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sada pravidel pravidla globalizace pro spravovaný kód](https://docs.microsoft.com/visualstudio/code-quality/globalization-rules-rule-set-for-managed-code).  
-  
 Můžete použít sadu a zaměřte se na problémy, které by mohly bránit dat ve vaší aplikaci správně povolí, v různých jazycích, národních prostředích a jazykových verzích pravidel pravidla globalizace společnosti Microsoft. Měli byste zahrnout tuto pravidlo nastavte, pokud je vaše aplikace lokalizována, globalizována, nebo obojí.  
   
 |Pravidlo|Popis|  

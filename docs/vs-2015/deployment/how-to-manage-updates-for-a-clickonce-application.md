@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: Správa aktualizací pro aplikaci ClickOnce | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 32a221b994bba78f70d70c758ae6c7f58f0668bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: adf0a6df54c3e6bd758896ac8a836b6174e767b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683312"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272464"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Postupy: Správa aktualizací pro aplikaci ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: Správa aktualizací pro aplikaci ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-manage-updates-for-a-clickonce-application).  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace můžete vyhledat aktualizace automaticky, nebo prostřednictvím kódu programu. Jako vývojář máte velké množství flexibilitu při určení, kdy a jak jsou provedeny aktualizace kontroly, zda jsou povinné aktualizace a kde by měla aplikace vyhledávat aktualizace.  
   
  Můžete nakonfigurovat aplikace vyhledávat aktualizace automaticky před spuštěním aplikace nebo v nastavených intervalech po spuštění aplikace. Kromě toho můžete určit minimální požadovaná verze; Pokud uživatele verze je nižší než požadovaná verze je tedy instalována aktualizace.  

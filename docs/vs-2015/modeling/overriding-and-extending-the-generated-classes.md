@@ -1,7 +1,7 @@
 ---
 title: Přepisování a rozšiřování vygenerovaných tříd | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 31db7980738c8976fdcd318e87d8350a833f6252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674134"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268163"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Přepisování a rozšiřování vygenerovaných tříd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přepisování a rozšiřování třídy generované v](https://docs.microsoft.com/visualstudio/modeling/overriding-and-extending-the-generated-classes).  
-  
 Vaše definice DSL je platforma, na kterém můžete vytvářet výkonná sada nástrojů, které jsou založeny na jazyka specifického pro doménu. Mnoho rozšíření a přizpůsobení je možné provádět pomocí přepisování a rozšiřování třídy, které jsou generovány z definice DSL. Tyto třídy zahrnují nejen doménové třídy, které jste definovali explicitní v diagramem definice DSL, ale také další třídy, které definují sady nástrojů, Průzkumníka, serializace a tak dále.  
   
 ## <a name="extensibility-mechanisms"></a>Mechanismus rozšíření  

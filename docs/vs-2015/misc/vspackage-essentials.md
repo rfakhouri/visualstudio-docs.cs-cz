@@ -1,7 +1,7 @@
 ---
 title: VSPackage Essentials | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6c72a73c-5d2a-4052-a62f-89b5847c937c
 caps.latest.revision: 12
 manager: douge
-ms.openlocfilehash: 0d5f795713a447f12c54efc0dab207eda875c2f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc9bc58209fb176c20d7ad2a8a6fca565de6380e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628663"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260842"
 ---
 # <a name="vspackage-essentials"></a>Základy VSPackage
 Rozšíření VSPackages jsou softwarové moduly, které společně tvoří a rozšíření sady Visual Studio s prvky uživatelského rozhraní, služby, projekty, editory a návrháře. Rozšíření VSPackages jsou centrální architektury jednotky [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] samotné je zapsán většinou jako kolekce rozšíření VSPackages.  

@@ -1,7 +1,7 @@
 ---
 title: Upravit a pokračovat (Visual Basic) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 825eac4ab53e95904e85a794b665ce6f6b11f873
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61ce8f61092bdcc612ea535debfcface976ebff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42665884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265095"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Upravit a pokračovat (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [upravit a pokračovat (Visual Basic)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-basic).  
-  
 Upravit a pokračovat je funkce pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ladění, která umožňuje změnit kód, zatímco je spuštěn v režimu pozastavení. Po použití úprav kódu, můžete pokračovat v provádění kódu pomocí nové úpravy na místě a vidět její účinek.  
   
  Můžete použít upravit a pokračovat funkci pokaždé, když zadáte režim přerušení. V režimu přerušení, ukazatele na instrukci, žlutá šipka v okně zdroje odkazuje na řádek, který se má provést a umístí na spustitelný soubor výpisu v těle metody nebo vlastnosti. Spustitelné příkazy v režimu pozastavení můžete provést téměř jakýkoli druh změn, a tato změna se začlení do základního projektu. V režimu přerušení, ale obecně nelze změnit příkazy deklarace, jako jsou veřejné metody, veřejná pole nebo deklarace tříd.  
@@ -51,14 +49,14 @@ Upravit a pokračovat je funkce pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]
  Témata v této části poskytují další podrobnosti o tom, jak používat tuto funkci a jaké druhy změny nejsou povoleny.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Postupy: použití úprav v režimu pozastavení pomocí operace upravit a pokračovat](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [Postupy: Použití úprav v režimu pozastavení pomocí operace Upravit a pokračovat](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  Vysvětluje, jak použít kód úprav v režimu pozastavení.  
   
- [Nepodporované úpravy v jazyce Visual Basic operaci upravit a pokračovat](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  
+ [Nepodporované úpravy operace Upravit a pokračovat ve Visual Basicu](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  
  Popisuje, jaké typy úprav nelze provádět v [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)] upravit a pokračovat.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Upravit a pokračovat](../debugger/edit-and-continue.md)  
+ [Operace Upravit a pokračovat](../debugger/edit-and-continue.md)  
  Obsahuje seznam témat, upravit a pokračovat.
 
 

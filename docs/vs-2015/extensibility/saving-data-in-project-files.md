@@ -1,7 +1,7 @@
 ---
 title: Ukládání dat v souborech projektu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: adecbedc7f8a7ca90c88548b4b4ab6f7b826f2ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3b46bffab25420b89ddb16c5eccfa64784d66e82
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628050"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274440"
 ---
 # <a name="saving-data-in-project-files"></a>Ukládání dat v souborech projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ukládání dat v souborech projektu](https://docs.microsoft.com/visualstudio/extensibility/saving-data-in-project-files).  
-  
 Podtyp projektu můžete uložit a načíst data specifická pro podtyp v souboru projektu. Managed Package Framework (MPF) poskytuje dvě rozhraní k provedení této úlohy:  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> Rozhraní umožňuje přístup k hodnoty vlastností z **MSBuild** části souboru projektu. Metody, které poskytuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> lze volat žádný uživatel pokaždé, když se související data sestavení které uživatel potřebuje k načtení nebo uložení.  

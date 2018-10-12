@@ -1,7 +1,7 @@
 ---
 title: Rozšíření pro Editor a jazykových služeb | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8102b8fb4afc02ca0540d75b3c0d08ef75b964d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a7233a89dbda0ebd333979de752296df45bf712
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671478"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259191"
 ---
 # <a name="extending-the-editor-and-language-services"></a>Rozšíření pro editor a služby jazyka
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [rozšíření pro Editor a jazykových služeb](https://docs.microsoft.com/visualstudio/extensibility/extending-the-editor-and-language-services).  
-  
 Můžete přidat funkce služby jazyka (například technologie IntelliSense) na vlastní editor a rozšíření většinu funkcí editoru kódu sady Visual Studio.  Úplný seznam co můžete rozšířit, naleznete v tématu [služba jazyka a editoru Rozšiřovací body](../extensibility/language-service-and-editor-extension-points.md).  
   
  Většina funkcí editoru rozšířit pomocí Managed Extensibility Framework (MEF). Například pokud chcete rozšířit funkce editoru je barevné zvýrazňování syntaxe, můžete napsat MEF *součást* , který definuje klasifikace, pro které chcete různé barvy a způsob jejich zpracování. Editor podporuje také několik rozšíření stejné funkce.  
@@ -45,7 +43,7 @@ Můžete přidat funkce služby jazyka (například technologie IntelliSense) na
 |[Rozšiřovací body služeb jazyka a editoru](../extensibility/language-service-and-editor-extension-points.md)|Zobrazí seznam Rozšiřovací body editoru. Body rozšíření představují funkce editoru, které je možné rozšířit.|  
 |[Návod: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Provede a vysvětluje vytvoření grafického doplňku zobrazení, který vykreslí sloupec gudie řádky vám pomůže ochránit kód na určité šířky zobrazení.  Také ukazuje, čtení a zápis nastavení stejně jako deklarace a provádění příkazů, které můžete vyvolat z příkazového okna.|  
 |[Importy do editoru](../extensibility/editor-imports.md)|Seznam služeb, které můžete importovat rozšíření.|  
-|[Přizpůsobení starší verze kódu pro Editor](../extensibility/adapting-legacy-code-to-the-editor.md)|Popisuje různé způsoby, jak přizpůsobit staršího kódu (předem Visual Studio 2010), rozšíření editoru.|  
+|[Přizpůsobení zastaralého kódu editoru](../extensibility/adapting-legacy-code-to-the-editor.md)|Popisuje různé způsoby, jak přizpůsobit staršího kódu (předem Visual Studio 2010), rozšíření editoru.|  
 |[Migrace služby starší verze jazyka](../extensibility/internals/migrating-a-legacy-language-service.md)|Vysvětluje, jak migrovat službu jazyka na základě balíčku VSPackage.|  
 |[Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Ukazuje, jak propojit příponu názvu souboru typu obsahu.|  
 |[Návod: Vytvoření okrajového piktogramu](../extensibility/walkthrough-creating-a-margin-glyph.md)|Ukazuje, jak přidat ikonu na okraj.|  

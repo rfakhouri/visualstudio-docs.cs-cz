@@ -1,7 +1,7 @@
 ---
 title: Přístup k modelům z textových šablon | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5f23a080f33b668d185f4e7b1409da5b4ac97deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ad3d921de04c3fd612571a55d012588793b91db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671992"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257189"
 ---
 # <a name="accessing-models-from-text-templates"></a>Přístup k modelům z textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přístup k modelům z textových šablon](https://docs.microsoft.com/visualstudio/modeling/accessing-models-from-text-templates).  
-  
 Pomocí textových šablon, můžete vytvořit sestavy soubory, soubory se zdrojovým kódem a jiné textové soubory, které jsou založeny na modely jazyka specifického pro doménu. Základní informace o textových šablonách naleznete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md). Textové šablony budou fungovat v experimentálním režimu při ladění vašeho DSL a budou fungovat i v počítači, na které jste nasadili DSL.  
   
 > [!NOTE]

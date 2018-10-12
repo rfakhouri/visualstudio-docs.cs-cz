@@ -1,7 +1,7 @@
 ---
 title: 'Krok 5: Přidejte do svého formuláře ovládací prvky | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f22adb245bbe1926b353c4b5d72fa18d947d29ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7f7c65577a08b9aa9d6750b857e2c38939031f38
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667322"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257020"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Krok 5: Přidejte do svého formuláře ovládací prvky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [krok 5: Přidání ovládacích prvků na svůj formulář](https://docs.microsoft.com/visualstudio/ide/step-5-add-controls-to-your-form).  
-  
 V tomto kroku přidáte ovládací prvky, například `PictureBox` ovládacího prvku a `CheckBox` ovládací prvek do formuláře. Potom přidáte tlačítka do formuláře.  
   
  ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) nebo [kurz 1: vytvoření prohlížeče obrázků v jazyce C# – Video 2](http://go.microsoft.com/fwlink/?LinkId=205200). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  

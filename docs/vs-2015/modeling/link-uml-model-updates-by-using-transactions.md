@@ -1,7 +1,7 @@
 ---
 title: Propojení aktualizací modelu UML pomocí transakcí | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b05f0f1d178099337122cba2213b4bba22d2eead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63b7df949f87407735c994ffe5ca7aa65fcd29a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667264"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274258"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Propojení aktualizací modelu UML pomocí transakcí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [UML propojení aktualizací modelů pomocí transakcí](https://docs.microsoft.com/visualstudio/modeling/link-uml-model-updates-by-using-transactions).  
-  
 Při definování rozšíření do návrhářů UML v sadě Visual Studio, můžete seskupit několik změn do jediné transakce s názvem *propojená operace vrácení zpět kontext*. Pokud chcete zobrazit, které verze sady Visual Studio podporují modelech UML, naleznete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Ve výchozím nastavení mohou být všechny změny, které provede v kódu modelu samostatně anulovány uživatelem. Například pokud definujete příkaz nabídky, který zaměňuje názvy dvou tříd modelu UML, uživatel může vyvolat příkaz a poté provést jedno vrácení zpět. To by vrátilo zpět změnu jednoho názvu, ale nikoli u druhého, čímž zůstane váš model v nežádoucího stavu.  

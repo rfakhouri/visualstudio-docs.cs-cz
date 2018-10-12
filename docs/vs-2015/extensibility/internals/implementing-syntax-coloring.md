@@ -1,7 +1,7 @@
 ---
 title: Implementace barevného zvýrazňování syntaxe | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c86a782b3b100811d29b1f81bf2beb6c8cfae1a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4315b9e6b6fdb12a0fcb3e97f6b208d6b84acd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670499"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259246"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementace barevného zvýrazňování syntaxe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [implementace barevné zvýraznění syntaxe](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-syntax-coloring).  
-  
 Když služba jazyka nabízí barevné zvýrazňování syntaxe, analyzátor převede řádek textu do pole položek, které lze zabarvit a vrátí odpovídající tyto které lze zabarvit položky pro typy tokenů. Analyzátor by měl vrátit typy tokenů, které patří do seznamu položek, které lze zabarvit. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] které lze zabarvit položky se zobrazí v okně kódu podle atributů přiřazených objektem colorizer odpovídající typ tokenu.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] analyzátor rozhraní, neurčuje a implementaci analyzátoru je zcela na vás. Výchozí implementace analyzátor však je součástí projektu Visual Studio jazykový balíček. Pro spravovaný kód framework spravovaného balíčku (MPF) poskytuje úplnou podporu pro barevné zvýrazňování textu.  

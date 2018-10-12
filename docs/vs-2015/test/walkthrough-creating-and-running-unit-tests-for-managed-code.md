@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Vytváření a spouštění testů jednotek pro spravovaný kód | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8a0bc6ab5854d0db9fc5bae7c642b804bc5af27a
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e50cfc446bf13e93258e28877f9706a3ccd86ae7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881108"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270631"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Postupy: Vytváření a spouštění testů jednotek pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Walkthrough: Creating and Running testů jednotek pro spravovaný kód](https://docs.microsoft.com/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code).  
-  
 Tento návod vás postupně provede vytváření, spouštění a přizpůsobením série jednotkových testů pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód a Visual Studio Test Explorer. Spustit u projektu C#, která je ve vývoji, vytvoříte testy, které testují jeho kód, spusťte testy a podívejte se na výsledky. Můžete změnit kód projektu a znovu spusťte testy.  
   
  Toto téma obsahuje následující oddíly:  

@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: určení ClickOnce v režimu Offline nebo Online režimu instalace | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7f277966070e142ebc24d70acfcf4bf5502f419a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b243811f2c6c36266443cd34e0e37ddd01390f87
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667618"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266061"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Postupy: Určení offline nebo online režimu instalace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: určení ClickOnce v režimu Offline nebo Online režimu instalace](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-the-clickonce-offline-or-online-install-mode).  
-  
 `Install Mode` Pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace určuje, zda aplikace bude k dispozici online nebo offline. Pokud zvolíte **aplikace je dostupná pouze online**, uživatel musí mít přístup k [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] umístění (webové stránky nebo sdílené složky) Chcete-li spustit aplikaci pro publikování. Při výběru **aplikace je k dispozici také v režimu offline**, aplikace přidá položky do **Start** nabídky a **přidat nebo odebrat programy** dialogové okno; uživatel je možné aplikaci spustit, když nejsou připojeni.  
   
  `Install Mode` Lze nastavit na **publikovat** stránku **Návrháře projektu**.  

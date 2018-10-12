@@ -1,7 +1,7 @@
 ---
 title: Modelování aplikace&#39;architekturu s | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f07ac7b18564a14c3c71e6647f519ee47d40c9a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ca228edf7e05e48a733ba4f38bdc43560ef1552
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670213"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263702"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelování aplikace&#39;s architektury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [modelování aplikace&#39;architekturu s](https://docs.microsoft.com/visualstudio/modeling/model-your-app-s-architecture).  
-  
 K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potřebuje, si můžete vytvořit modelů v sadě Visual Studio jako součást vaší popis celkovou strukturu a chování softwarového systému nebo aplikace. Použití modelů, může také popisovat vzory, které se používají v návrhu. Tyto modely umožňují pochopit stávající architekturou, změny a jasně komunikovat vaše záměry.  
   
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

@@ -1,7 +1,7 @@
 ---
 title: Filtrování dialogového okna pro vnořené projekty | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5b3e352e-7f18-4f66-be16-b0ad55637ce5
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c007a2aa0895460f539acb50f49844f8ec158fa7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e331d070d72e06834403d35b5223257beeb27e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672471"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269656"
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>Filtrování dialogového okna Přidat položku pro vnořené projekty
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [filtrování AddItem dialogových oken pro vnořené projekty](https://docs.microsoft.com/visualstudio/extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects).  
-  
 Při zobrazení **AddItem** dialogové okno pro vnořený projekt nadřazený projekt můžete řídit, které položky se zobrazí v dialogovém okně.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> Rozhraní umožňuje filtrovat uzly, které bude mít **AddItem** dialogové okno. Pokud podřízený projekt zobrazí **AddItem** dialogovém okně můžete implementovat nadřazené `IVsFilterAddProjectItemDlg` rozhraní a filtrování položek, které by jinak zobrazeného v prvku projektu.  

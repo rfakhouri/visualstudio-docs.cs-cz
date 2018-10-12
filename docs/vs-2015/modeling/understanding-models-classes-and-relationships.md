@@ -1,7 +1,7 @@
 ---
 title: Porozumění modelům, třídám a vztahům | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8b954177573c70ccd30da422f2155d675a430e1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675481"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271788"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Porozumění modelům, třídám a vztahům
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [porozumění modelům, třídám a vztahům](https://docs.microsoft.com/visualstudio/modeling/understanding-models-classes-and-relationships).  
-  
 Jazyka specifického pro doménu (DSL) je definován v jeho souboru definice DSL, společně s jakýkoli vlastní program kód, který může zapisovat. Většina programového kódu v řešení DSL je generována z tohoto souboru.  
   
  Toto téma popisuje funkce centrální v definici DSL.  

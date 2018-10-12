@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: potlačení oznámení o změně souboru | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 312c34b143608cb6d829e2d79b6be2eae724a238
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed4995cabc71af9c7e2227495e93a21d423d0187
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667190"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257514"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Postupy: potlačení oznámení o změně souborů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: potlačení oznámení o změně souboru](https://docs.microsoft.com/visualstudio/extensibility/how-to-suppress-file-change-notifications).  
-  
 Při změně fyzického souboru představující textovou vyrovnávací paměť, dialogové okno zobrazí se zpráva **chcete uložit změny následujících položek?** To se označuje jako oznámení o změně souboru. Pokud mnoho změn se bude do souboru, ale toto dialogové okno zobrazení tytéž může být nepříjemné.  
   
  Toto dialogové okno pomocí následujícího postupu můžete potlačit prostřednictvím kódu programu. Tímto způsobem můžete znovu načíst soubor okamžitě bez nutnosti uživateli výzvu k uložení změn pokaždé, když.  

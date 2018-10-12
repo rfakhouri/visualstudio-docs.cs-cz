@@ -1,7 +1,7 @@
 ---
 title: Protokolování v nástroji MSBuild | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,23 +16,21 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9faaf98c552aa21ced360554706b17752ccd3f48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f2d7fe0e4fabe0a705c771d8f07e7ce349a43d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672969"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274375"
 ---
 # <a name="logging-in-msbuild"></a>Protokolování v nástroji MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [protokolování v nástroji MSBuild](https://docs.microsoft.com/visualstudio/msbuild/logging-in-msbuild).  
-  
   
 Protokolování poskytuje způsob, jak můžete monitorovat průběh sestavení. Zachycení protokolování sestavení, události, zprávy, upozornění a chyby v souboru protokolu.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Získávání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)  
+ [Získávání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)  
  Popisuje různé aspekty přihlášení [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  [Protokolovací nástroje sestavení](../msbuild/build-loggers.md)  
@@ -48,7 +46,7 @@ Protokolování poskytuje způsob, jak můžete monitorovat průběh sestavení.
  Ukazuje, jak vytvořit vlastní předávající Protokolovací nástroje.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Sestavování více projektů současně](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
+ [Paralelní sestavování více projektů současně](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
  Popisuje, jak rychlejší sestavení více projektů po spuštění paralelně.
 
 

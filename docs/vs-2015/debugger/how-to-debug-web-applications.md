@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: ladění webových aplikací | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3dce1129282dc7273631e261bb32d313f65ce381
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4e185b1b35a2462547ca8689dc1a4bfe80ff036
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668118"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260809"
 ---
 # <a name="how-to-debug-web-applications"></a>Postupy: Ladění webových aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: ladění webových aplikací](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-web-applications).  
-  
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] je primární technologie pro vývoj webových aplikací v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Ladicí program poskytuje výkonné nástroje pro ladění [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webové aplikace místně nebo na vzdáleném serveru. Toto téma popisuje, jak ladit [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] projektu během vývoje. Informace o tom, jak ladit [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webové aplikace, které už jsou nasazené na provozním serveru, najdete v článku [ladění nasazené webové aplikace](../debugger/debugging-deployed-web-applications.md).  
   
  Chcete-li ladit [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace:  
@@ -63,7 +61,7 @@ Nejnovější verzi tohoto tématu můžete najít v [postupy: ladění webovýc
 ## <a name="see-also"></a>Viz také  
  [Ladění webových aplikací a skriptu](../debugger/debugging-web-applications-and-script.md)   
  [Ladění aplikací ASP.NET a AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Postupy: povolení ladění pro aplikace ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+ [Postupy: Povolení ladění pro aplikace ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 
 
 

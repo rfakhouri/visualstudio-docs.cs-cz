@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess3 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab646482762d9175a682b55691d012b2facef5f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5392329892c564608ab9649e29f1ff2bd2b1044
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677560"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269706"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [IDebugProcess3](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess3).  
-  
 Toto rozhraní představuje spuštěného procesu a jeho programy. Toto rozhraní existuje jako náhrada do několika metod v [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) rozhraní. To umožňuje řídit všechny programy v procesu.  
   
 > [!NOTE]
@@ -53,9 +51,9 @@ IDebugProcess3 : IDebugProcess2
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[pokračovat](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Pokračuje v provádění nebo krokování procesem.|  
-|[Spuštění](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|Zahájí vykonávání procesu.|  
-|[Krok](../../../extensibility/debugger/reference/idebugprocess3-step.md)|Kroky dál jedna instrukce nebo příkaz v procesu.|  
+|[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|Pokračuje v provádění nebo krokování procesem.|  
+|[Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|Zahájí vykonávání procesu.|  
+|[Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)|Kroky dál jedna instrukce nebo příkaz v procesu.|  
 |[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)|Získá z důvodu, že proces byl spuštěn pro ladění.|  
 |[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)|Nastaví hostování jazyk tak, aby načíst vyhodnocovací filtr výrazů odpovídající ladicí stroj.|  
 |[GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)|Získá jazyk pro tento proces aktuálně nastavená.|  

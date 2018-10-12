@@ -1,7 +1,7 @@
 ---
 title: Zobrazení souborů pomocí příkazu Otevřít | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83160c6a55f73dc1dc81c602260ffa53830b3e1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60098a53b23641152bc90125608e839e0308931d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633448"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263247"
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>Zobrazení souborů pomocí příkazu Otevřít v aplikaci
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení souborů pomocí příkazu Otevřít s](https://docs.microsoft.com/visualstudio/extensibility/internals/displaying-files-by-using-the-open-with-command).  
-  
 Projekt můžete požádat o integrované vývojové prostředí pro zobrazení **otevřít v** dialogové okno. Tento požadavek se zobrazí výzva k otevření souboru, který má výběr standardních editorů. Následující kroky popisují tento proces.  
   
 1.  Volání projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, zadáte třeba hodnotu OSE_UseOpenWithDialog pro `OSEOpenDocEditor` parametru.  

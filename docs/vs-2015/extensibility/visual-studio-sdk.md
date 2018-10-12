@@ -1,7 +1,7 @@
 ---
 title: Visual Studio SDK | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7554bf39960a55a566b366abc328f54199bd4367
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 930eab1a9356cf16a8615015742af30aa338bd21
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260181"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-sdk).  
-  
 Visual Studio SDK umožňuje rozšířit funkce aplikace Visual Studio nebo systém integrovat nové funkce do sady Visual Studio. Rozšíření ostatním uživatelům, a také do Galerie Visual Studio můžete distribuovat. Tady jsou některé způsoby, ve kterém můžete rozšíření sady Visual Studio:  
   
 -   Přidání příkazů, tlačítek, nabídek a další prvky uživatelského rozhraní do integrovaného vývojového prostředí  

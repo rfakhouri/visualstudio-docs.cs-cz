@@ -1,7 +1,7 @@
 ---
 title: AutoRecover, prostředí, dialogové okno Možnosti | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1fc2eb7cb70fbbafc91880d33b01c87f84073dfa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4be9e975c850101874bd0ecef51478cc4c3067c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668213"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263982"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoRecover, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [AutoRecover, prostředí, dialogové okno Možnosti](https://docs.microsoft.com/visualstudio/ide/reference/autorecover-environment-options-dialog-box).  
-  
   
 Pomocí této stránky v dialogovém okně Možnosti k určení, zda se automaticky zálohují soubory. Na této stránce můžete také zadat též upravené soubory se obnoví při neočekávané vypnutí integrovaného vývojového prostředí (IDE). Můžete přístup k tomuto dialogovému oknu výběrem **nástroje** nabídku a zvolíte **možnosti**a pak vyberete **prostředí** složky a zvolíte  **Automatické obnovení** stránky. Pokud se tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  
   

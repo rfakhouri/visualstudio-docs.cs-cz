@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: Získávání informací z vybraného odkazu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: alancameronwills
 ms.author: awills
 manager: kamrani
-ms.openlocfilehash: aaeb9629880f249ddca0749f136bf5807755c22f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5a90f7b49934e5b7fd2eda37c8631ebe7dd601e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629424"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264006"
 ---
 # <a name="walkthrough-getting-information-from-a-selected-link"></a>Postupy: Získávání informací z vybraného odkazu
 Toto téma je zastaralé. Podrobnosti najdete na [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).

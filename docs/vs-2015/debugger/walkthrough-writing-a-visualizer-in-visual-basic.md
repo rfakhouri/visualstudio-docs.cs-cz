@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Zápis Vizualizéru v jazyce Visual Basic | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53c750a70df1845351b3c67e394c3f87af53a47d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aafc13f01d89177a144558126452d547a55f88d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672477"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266679"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Návod: Zápis vizualizéru v jazyce Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: zápis Vizualizéru v jazyce Visual Basic](https://docs.microsoft.com/visualstudio/debugger/walkthrough-writing-a-visualizer-in-visual-basic).  
-  
 Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Vizualizaci, kterou vytvoříte v tomto názorném postupu se zobrazí obsah řetězce pomocí Windows Forms okno se zprávou. Tento vizualizér jednoduchým řetězcem je základní příklad, který znázorňuje, jak můžete vytvořit vizualizéry pro ostatní typy dat pro více projektů.  
   
 > [!NOTE]
@@ -237,7 +235,7 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
 ## <a name="see-also"></a>Viz také  
  [Architektura vizualizéru](../debugger/visualizer-architecture.md)   
  [Postupy: instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md)   
- [Vytváření vlastních Vizualizérů](../debugger/create-custom-visualizers-of-data.md)
+ [Vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md)
 
 
 

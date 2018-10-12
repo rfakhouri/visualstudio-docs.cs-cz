@@ -1,7 +1,7 @@
 ---
 title: Přidávání stereotypů k elementům modelu UML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b570889c117f2fac037ddf40efe32abbd0b309c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48bc410c2f9f6a3dfb0e18b713a9b50dda499ea8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670073"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259711"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Přidávání stereotypů k elementům modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [elementům modelu UML Stereotypy přidat](https://docs.microsoft.com/visualstudio/modeling/add-stereotypes-to-uml-model-elements).  
-  
 Stereotyp můžete přidat na prvek modelu UML poznámku a zadat speciální vlastnostmi. Přidání stereotyp na prvek modelu, stereotyp musí být definován v profilu a profilu je třeba propojit na balíček nebo model, který obsahuje prvek modelu. Každý stereotyp lze přidat pouze pro některé typy prvku modelu, jako je například třídy UML, případy použití nebo komponenty.  
   
  Například pokud chcete definovat pomocí stereotyp «specifikace» třída UML, je musíte jej vytvořit v rámci balíčku nebo modelu, který je propojený s standardní L2 profilu.  

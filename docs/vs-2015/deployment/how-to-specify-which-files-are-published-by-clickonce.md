@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: určení souborů k publikování aplikací ClickOnce | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c56d378c8adee1801fb82fc4a2ed84e5b05c0aef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669346"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268317"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Postupy: Určení souborů k publikování aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: určení který souborů k publikování aplikací ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-which-files-are-published-by-clickonce).  
-  
 Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] spolu s aplikace jsou nasazené aplikace, všechny kód soubory v projektu. V některých případech se nemusí nebo potřebujete publikovat určité soubory nebo můžete chtít nainstalovat určité soubory na základě podmínek. Visual Studio umožňuje vyloučit soubory, soubory označit jako datové soubory nebo požadavky a vytvářet skupiny podmíněné instalačním souborům.  
   
  Soubory pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace se spravují v **soubory aplikace** dialogové okno, přístupné **publikovat** stránku **Návrháře projektu**.  

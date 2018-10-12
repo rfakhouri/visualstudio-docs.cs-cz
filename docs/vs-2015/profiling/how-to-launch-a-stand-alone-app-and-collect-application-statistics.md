@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: spuštění samostatné aplikace s Profiler a shromáždění statistik aplikace pomocí příkazového řádku | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 947d06bed7d645f7ad587382ed954a4f8ccd72f3
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4b30557dedfc2d8d979ecdb952875fbf74a2f9d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231260"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269535"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Postupy: Spuštění samostatné aplikace s profilerem a shromáždění statistik aplikace pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: spuštění samostatné aplikace s Profiler a shromažďování statistik aplikace pomocí příkazového řádku](https://docs.microsoft.com/visualstudio/profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line).  
-  
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] příkazového řádku nástrojů pro profilaci spuštění samostatné (klientské) aplikaci a shromáždit statistiky výkonu pomocí metody vzorkování.  
   
 > [!NOTE]

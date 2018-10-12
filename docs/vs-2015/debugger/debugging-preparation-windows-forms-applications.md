@@ -1,7 +1,7 @@
 ---
 title: 'Příprava ladění: Formulářová aplikace Windows | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7f362db7c0ba56db2b5b5f2362ea7755e3076a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9448b6116f59f22aed6dd0796a3409806021ba0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670631"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262155"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Příprava na ladění: Formulářová aplikace Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Příprava ladění: formulářové aplikace Windows](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-windows-forms-applications).  
-  
 Šablona projektu Windows Forms vytvoří aplikace modelu Windows Forms. Ladění tohoto typu aplikace v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je jednoduché. Další informace najdete v tématu [vytvoření projektu aplikace Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Při vytváření projektu Windows Forms pomocí šablony projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky vytvoří požadované nastavení konfigurace Debug a Release. V případě potřeby můžete tato nastavení změnit. Tato nastavení lze změnit v  **\<název projektu > stránky vlastností** dialogové okno (**Můj projekt** v jazyce Visual Basic).  

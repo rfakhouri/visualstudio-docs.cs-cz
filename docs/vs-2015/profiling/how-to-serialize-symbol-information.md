@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: serializace informací o symbolu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04bce9383142ee6916fa7ade50feda072019f530
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6c0e567131d36cbc7e805533f7d5acb9c5f3277
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673092"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256552"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Postupy: Serializace informací o symbolu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: serializace informací o symbolu](https://docs.microsoft.com/visualstudio/profiling/how-to-serialize-symbol-information).  
-  
 Může serializovat symboly, které potřebujete k analýze vaší aplikace. Serializace symbolu přidá symbolů do souboru .vsp. Přidáním informací o symbolech do souboru .vsp ostatní analyzovat sestavu výkonu bez nutnosti přístupu k původní symboly. Pokud nejsou serializován symboly, musíte mít původní instrumentované .exe a soubory PDB k analýze souboru .vsp.  
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Automaticky serializovat informace o symbolech  

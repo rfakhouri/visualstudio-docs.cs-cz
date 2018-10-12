@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Tools for Unity | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 21aa67a7908cd5d037a51f72d7b95017df44e074
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 18abe24c5c4323ce3e54239cf6ac0dd8de276711
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633424"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274362"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Visual Studio Tools for Unity](https://docs.microsoft.com/visualstudio/cross-platform/visual-studio-tools-for-unity).  
-  
   
 V této části se dozvíte o Visual Studio Tools for Unity, bezplatné rozšíření sady Visual Studio, díky sadě Visual Studio výkonné nástroje pro vývoj her pomocí Unity.  
   
@@ -51,7 +49,7 @@ V této části se dozvíte o Visual Studio Tools for Unity, bezplatné rozší�
  [Programování Visual Studio Tools for Unity](../cross-platform/programming-visual-studio-tools-for-unity.md)  
  V této části najdete příklady pro použití nástroje Visual Studio Tools pro Unity rozhraní API.  
   
- [Řešení potíží a známé problémy](../cross-platform/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md)  
+ [Odstraňování potíží a známé problémy](../cross-platform/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md)  
  V této části vám najít řešení běžných potíží s nástroji Visual Studio Tools for Unity, popis známých problémů a zjistěte, jak můžete pomoci zvýšit zpráv o chybách Visual Studio Tools for Unity.  
   
  [Protokol Změn](../cross-platform/change-log-visual-studio-tools-for-unity.md)  

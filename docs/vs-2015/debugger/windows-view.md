@@ -1,7 +1,7 @@
 ---
 title: Zobrazení Windows | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd40259af773e268a8786f370591d5d0a474b05e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4622e268aaaf76a2968a2bc6ef67ead7b0c45b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673681"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261700"
 ---
 # <a name="windows-view"></a>Zobrazení oken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení Windows](https://docs.microsoft.com/visualstudio/debugger/windows-view).  
-  
 Při prvním otevření nástroje Spy ++, Windows zobrazení stromu všechna okna a ovládací prvky v systému. Název okna popisovač a třídy jsou uvedeny. Aktuální okno klasické pracovní plochy je v horní části stromu. Všechny ostatní okna jsou podřízené plochy a jsou uvedeny podle hierarchie standardní okno. Zobrazení oken na stejné úrovni expansible seznamy odsazené pod svých nadřazených složek.  
   
  Následující obrázek ukazuje typické zobrazení nástroje Spy ++ Windows s uzlem rozbalený.  
@@ -42,7 +40,7 @@ Windows zobrazení nástroje Spy ++
  Když zobrazení Windows má fokus, můžete tažením nástroje hledání v [dialogové okno hledání](../debugger/window-search-dialog-box.md) k zobrazení informací z jakékoli okno otevřít v systému.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Postupy: používání vyhledávacího nástroje](../debugger/how-to-use-the-finder-tool.md)  
+ [Postupy: Používání vyhledávacího nástroje](../debugger/how-to-use-the-finder-tool.md)  
  Ukazuje, jak tento nástroj kontroluje windows pro vlastnosti nebo zprávy.  
   
  [Postupy: Hledání okna v zobrazení oken](../debugger/how-to-search-for-a-window-in-windows-view.md)  
@@ -61,10 +59,10 @@ Windows zobrazení nástroje Spy ++
  [Dialogové okno vyhledávacího okna](../debugger/find-window-dialog-box.md)  
  Umožňuje zobrazit vlastnosti nebo zprávy z konkrétní okno.  
   
- [Dialogové okno hledání](../debugger/window-search-dialog-box.md)  
+ [Dialogové okno hledání oken](../debugger/window-search-dialog-box.md)  
  Umožňuje najít uzel pro konkrétní okno v zobrazení pro Windows.  
   
- [Dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md)  
+ [Dialogové okno vlastností oken](../debugger/window-properties-dialog-box.md)  
  Slouží k zobrazení vlastností okna vybrána v zobrazení Windows.  
   
  [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  

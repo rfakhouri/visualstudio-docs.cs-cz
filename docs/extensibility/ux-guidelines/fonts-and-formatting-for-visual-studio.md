@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863995"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273088"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Písma a formátování pro Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Písmo prostředí
@@ -83,7 +83,7 @@ window.ShowModal()
   
  `ShowModal` Vrátí hodnotu? (s možnou hodnotou Null logická hodnota) se `DialogResult`, kterou lze použít v případě potřeby. Vrácená hodnota je hodnota true, pokud dialogové okno se zavřel s **OK**.  
   
- Pokud potřebujete zobrazit některé rozhraní WPF, která není kompatibilní se dialogové okno a je hostovaná v její vlastní `HwndSource`, jako je například automaticky otevíraném okně nebo podřízené okno WPF okna okno nadřazené Win32/WinForms, budete muset nastavit `FontFamily` a `FontSize` v kořenovém elementu WPF e lementovat. (Prostředí v hlavním okně nastaví vlastnosti, ale nebude možné zdědit minulé `HWND`). Prostředí obsahuje prostředky, ke kterým může být vázána vlastnosti, následujícím způsobem:  
+ Pokud chcete zobrazit některé rozhraní WPF, která není kompatibilní se dialogové okno a je hostovaná v její vlastní `HwndSource`, jako je například automaticky otevíraném okně nebo podřízené okno nadřazené okno Win32/WinForms WPF, budete muset nastavit `FontFamily` a `FontSize` v kořenovém elementu prvku WPF. (Prostředí v hlavním okně nastaví vlastnosti, ale nebude možné zdědit minulé `HWND`). Prostředí obsahuje prostředky, ke kterým může být vázána vlastnosti, následujícím způsobem:  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  

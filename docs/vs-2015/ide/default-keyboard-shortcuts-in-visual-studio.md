@@ -1,7 +1,7 @@
 ---
 title: Výchozí klávesové zkratky v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdd1c4b29a90d10af3593d50f2578f8dbf27bf66
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: afe7f71508de6dca3d29afeead23258eccbc667b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667029"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247179"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Výchozí klávesové zkratky v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [výchozí klávesové zkratky v sadě Visual Studio](https://docs.microsoft.com/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio).  
-  
 Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší přístup k různým příkazům a oknům. V tomto tématu jsou uvedeny výchozí klávesové zkratky pro obecný vývojový profil, který jste možná vybrali při instalaci sady Visual Studio. Bez ohledu na to, který profil vyberete, můžete identifikovat klávesovou zkratku pro příkaz tak, že otevřete **možnosti** dialogovém okně rozšíření **prostředí** uzel a poté volbou **klávesnice**. Klávesové zkratky můžete také upravit přiřazením různých zkratek jakémukoli příkazu.  
   
  Seznam běžných klávesových zkratek a další informace o zvýšení produktivity naleznete v tématu [tipy a triky](../ide/tips-and-tricks-for-visual-studio.md) a [tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md).  

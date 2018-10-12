@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugModules2 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4fe28074-a960-41ad-b74d-b57f04c0c0ad
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26ce00fd82c9d11dbea2aa5bf02be6454558e302
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8177463d1eabf222c34fefc09eb7115cd010e97f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668477"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266731"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [IEnumDebugModules2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugmodules2).  
-  
 Toto rozhraní se zobrazí seznam modulů.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -49,9 +47,9 @@ IEnumDebugModules2 : IUnknown
 |Metoda|Popis|  
 |------------|-----------------|  
 |[Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|Načte zadaný počet modulů v sekvenci výčtu.|  
-|[Přeskočit](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|Vynechá zadaný počet modulů v sekvenci výčtu.|  
-|[Resetovat](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|Návrat na začátek sekvence výčtu.|  
-|[Klonování](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|Vytvoří čítač, který obsahuje stejného stavu jako aktuální enumerátor výčtu.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|Vynechá zadaný počet modulů v sekvenci výčtu.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|Návrat na začátek sekvence výčtu.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|Vytvoří čítač, který obsahuje stejného stavu jako aktuální enumerátor výčtu.|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|Získá počet modulů.|  
   
 ## <a name="remarks"></a>Poznámky  
@@ -69,5 +67,5 @@ IEnumDebugModules2 : IUnknown
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [Enummodules –](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)
+ [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)
 

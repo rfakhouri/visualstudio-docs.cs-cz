@@ -1,7 +1,7 @@
 ---
 title: Výchozí hodnoty jazyka Visual Basic, projekty, dialogové okno Možnosti | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3370ecc8a80014f9d80152713140de7731bac058
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4c8a1b593333c8b560a828bb0edc5fa7f0628b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633771"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274856"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Výchozí možnosti jazyka Visual Basic, projekty, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [výchozí nastavení jazyka Visual Basic, projekty, Options Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box).  
-  
   
 Určuje výchozí nastavení pro možnosti projektu jazyka Visual Basic. Po vytvoření nového projektu je zadaná možnost příkazy se přidají do záhlaví projektu v editoru kódu. Platí pro všechny projekty jazyka Visual Basic.  
   

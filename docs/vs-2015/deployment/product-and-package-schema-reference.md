@@ -1,7 +1,7 @@
 ---
 title: Referenční schéma balíčku a produktu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7812354ee1de5341838029e2198912840da6f0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686677"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271027"
 ---
 # <a name="product-and-package-schema-reference"></a>Referenční schéma balíčku a produktu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [referenční schéma balíčku a produktu](https://docs.microsoft.com/visualstudio/deployment/product-and-package-schema-reference).  
-  
 A *souboru produktu* je souborů manifestu XML, který popisuje všechny externí závislosti vyžadované [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace. Příklady externích závislostí [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] a Microsoft Data Access Components (MDAC). Soubor balíčku se podobá souboru produktu, ale se používá k instalaci součásti závislých na jazykové verzi závislosti, jako je například lokalizované sestavení, licenční smlouvy a dokumentace.  
   
  Soubor produktů a balíčků se skládá buď na nejvyšší úrovni `Product` nebo `Package` prvku, z nichž každý obsahuje následující prvky.  

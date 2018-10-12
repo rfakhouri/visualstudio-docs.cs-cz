@@ -1,7 +1,7 @@
 ---
 title: CommentMarkAtProfile | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1c31f1e482425c7eec3a5758213f8e5e9094fd9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9a3f1c33deb1cae18b43d43af6ded9a8ea2c8ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668379"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268434"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [CommentMarkAtProfile](https://docs.microsoft.com/visualstudio/profiling/commentmarkatprofile).  
-  
 `CommentMarkAtProfile` Metoda vloží hodnoty časového razítka, číselné značku a řetězec komentáře do souboru .vsp. Hodnota časového razítka je možné synchronizovat vnější události. Značky a komentáře, které má být vložen profilování pro vlákna, které obsahuje funkci CommentMarkAtProfile musí být dále.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -125,7 +123,7 @@ void ExerciseCommentMarkAtProfile(void)
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Reference k rozhraní API sady Visual Studio Profiler (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Referenční dokumentace rozhraní Visual Studio Profiler API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)
 
 
 

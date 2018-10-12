@@ -1,7 +1,7 @@
 ---
 title: Editor modelů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d53d22baf0ff1e458a2dd1ee601f59cdfe081ffa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685083"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264032"
 ---
 # <a name="model-editor"></a>Editor modelů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [editoru modelů](https://docs.microsoft.com/visualstudio/designers/model-editor).  
-  
 Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editoru modelů pro zobrazení, vytváření a upravování 3D modelů.  
   
  Editor modelů můžete použít k vytvoření základních 3D modelů od začátku nebo k zobrazení a úpravám složitějších 3D modelů, které byly vytvořeny pomocí plnohodnotných nástrojů pro 3D modelování. Editor modelů podporuje několik formátů 3D modelů, které jsou používány při vývoji aplikace v rozhraní DirectX.  

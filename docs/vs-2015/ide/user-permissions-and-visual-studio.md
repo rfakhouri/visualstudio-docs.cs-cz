@@ -1,7 +1,7 @@
 ---
 title: Uživatelská oprávnění a sada Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a73ebaa7f720d149e35d23eec3655ab896c48844
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40d0fc07a5e305470ba38fdf897cfc951a138cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677359"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265730"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uživatelská oprávnění a sada Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [uživatelská oprávnění a sada Visual Studio](https://docs.microsoft.com/visualstudio/ide/user-permissions-and-visual-studio).  
-  
 Z důvodu bezpečnosti by měl být systém Visual Studio spuštěn s normálním uživatelským přístupem, kdykoli je to možné.  
   
 > [!WARNING]
@@ -49,7 +47,7 @@ Z důvodu bezpečnosti by měl být systém Visual Studio spuštěn s normáln
 |Doplňky|Instalace a používání doplňků, které byly vytvořeny pomocí klasického modelu COM v rozhraní IDE|[Vytváření doplňků a průvodců](http://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|  
 |Sestavování|Použití událostí po sestavení, které registrují komponentu|[Seznámení s kroky vlastního sestavení a s událostmi sestavení](http://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|  
 ||Zahrnutí registračního kroku do sestavování projektů v jazyce C++|[Seznámení s kroky vlastního sestavení a s událostmi sestavení](http://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|  
-|Ladění|Ladění aplikací spouštěných se zvýšenými oprávněními|[Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)|  
+|Ladění|Ladění aplikací spouštěných se zvýšenými oprávněními|[Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)|  
 ||Ladění aplikací, které běží pod jiným uživatelským účtem, jako jsou weby ASP.NET|[Ladění aplikací ASP.NET a AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|  
 ||Ladění v zóně pro aplikace prohlížeče XAML (XBAP)|[Hostitel WPF (PresentationHost.exe)](http://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|  
 ||Použití emulátoru k ladění projektů cloudových služeb pro Microsoft Azure.|[Ladění cloudové služby v sadě Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|  

@@ -1,7 +1,7 @@
 ---
 title: Rychlost odezvy HTML UI | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 52
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2c40052484cb8ee25cbb7d3ddbc353fd1dacc2c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfff3a7267d23e424214f49fed5b0577860c0a4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629482"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269097"
 ---
 # <a name="html-ui-responsiveness"></a>Rychlost odezvy HTML UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [analýza HTML rychlosti odezvy uživatelského rozhraní v aplikacích pro UWP](https://docs.microsoft.com/visualstudio/profiling/html-ui-responsiveness).  
-  
 Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pomocí Profiler odezvy uživatelského rozhraní, nástroj výkon, který je k dispozici pro aplikace Windows Universal.  
   
  Profiler odezvy uživatelského rozhraní, pomůže vám izolovat problémy, například problémy rychlosti odezvy uživatelského rozhraní nebo platformu vedlejší účinky, které obvykle mohou u těchto příznaků:  

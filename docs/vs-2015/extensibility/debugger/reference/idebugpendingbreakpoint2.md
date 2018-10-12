@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f979af5789d6e695c5ca33c8cc9acdc74cc66815
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85d73b3718a1afc2d9de7d9d5618749e2d85b13e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633570"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263598"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [IDebugPendingBreakpoint2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpendingbreakpoint2).  
-  
 Toto rozhraní představuje zarážku, která jsou připravená k vytvoření vazby na místa v kódu.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -49,16 +47,16 @@ IDebugPendingBreakpoint2 : IUnknown
 |Metoda|Popis|  
 |------------|-----------------|  
 |[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Určuje, zda tento čekající zarážka mohl vytvořit vazbu k umístění kódu.|  
-|[Vytvoření vazby](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Vytvoří vazbu zarážka čeká na jeden nebo více umístění kódu.|  
+|[Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Vytvoří vazbu zarážka čeká na jeden nebo více umístění kódu.|  
 |[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Získá stav tohoto čekajících zarážek.|  
 |[GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Získá požadavek zarážku, která byla použita k vytvoření této čekající zarážka.|  
-|[Virtualizovat](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)|Přepíná virtualizované stavu tohoto objektu čekajících zarážek.|  
-|[Povolit](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Přepíná povoleného stavu této čekající zarážka.|  
+|[Virtualize](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)|Přepíná virtualizované stavu tohoto objektu čekajících zarážek.|  
+|[Enable](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Přepíná povoleného stavu této čekající zarážka.|  
 |[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)|Nastavuje nebo mění podmínky spojené s tímto čekajících zarážek.|  
 |[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)|Nastavuje nebo mění pass počet, přidružený k tomuto čekajících zarážek.|  
 |[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Zobrazí všechny zarážky, které z této čekající zarážka vázána.|  
 |[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Zobrazí všechny zarážky chyb, které je výsledkem této čekající zarážka.|  
-|[Odstranit](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Odstraní tuto čekající zarážka a všechny zarážky, které jsou vázány z něj.|  
+|[Delete](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Odstraní tuto čekající zarážka a všechny zarážky, které jsou vázány z něj.|  
   
 ## <a name="remarks"></a>Poznámky  
  `IDebugPendingBreakpoint2` můžete představit jako poskytovatel všechny potřebné informace potřebné k vytvoření vazby zarážky na kód, který lze použít na jeden nebo více programů.  

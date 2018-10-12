@@ -1,7 +1,7 @@
 ---
 title: Rychlé kukátko – příkaz | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d340f88b83e5dce3054a264a2815fa96707a19f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: afe27d567601e43b10323f9dcc3417bcf15e9298
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669592"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269409"
 ---
 # <a name="quick-watch-command"></a>Rychlé kukátko – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Rychlé kukátko – příkaz](https://docs.microsoft.com/visualstudio/ide/reference/quick-watch-command).  
-  
   
 Zobrazí zadaný nebo vybraný text v poli výraz [dialogového okna rychlého kukátka](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867). Toto dialogové okno můžete použít k výpočtu aktuální hodnotu proměnné nebo výrazu rozpoznávaných ladicí program nebo obsah registru. Kromě toho můžete změnit hodnotu kterékoli proměnné nekonstantní nebo obsah jakékoli registru.  
   

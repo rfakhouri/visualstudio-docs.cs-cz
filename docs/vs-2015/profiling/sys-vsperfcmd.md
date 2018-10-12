@@ -1,7 +1,7 @@
 ---
 title: Sys (VSPerfCmd) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb87886e4b40643a23e661294c6fcf0a2a74332b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7a8a24960e3e0535453e537bd9f1ebfdc6990d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669828"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276371"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Sys (VSPerfCmd)](https://docs.microsoft.com/visualstudio/profiling/sys-vsperfcmd).  
-  
 VSPerfCmd.exe **Sys** možnost nastaví profilování události, ke které se definuje tak do systémových volání událostí (volání funkcí v profilované aplikace v operačním systému) a volitelně změny číslo systému volá v vzorkování Interval z výchozí hodnoty 10.  
   
  **Sys** jde použít jenom v příkazovém řádku, který také obsahuje **spuštění** nebo **připojit** možnost.  

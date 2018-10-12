@@ -1,7 +1,7 @@
 ---
 title: Microsoft Help Viewer SDK | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a3c89384c7c095160c5c77753b084540bed6339
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 19ef7da357cf4b920dc6aca563fcdf6d68f69077
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881147"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267615"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Microsoft Help Viewer SDK](https://docs.microsoft.com/visualstudio/extensibility/internals/microsoft-help-viewer-sdk).  
-  
 Tento článek obsahuje následující úkoly pro Visual Studio Help Viewer integrátorům:  
   
 -   Vytváří se téma (podpora F1)  

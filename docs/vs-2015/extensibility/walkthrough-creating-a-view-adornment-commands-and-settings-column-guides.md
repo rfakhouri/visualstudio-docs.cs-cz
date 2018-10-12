@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců) | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94ed4de4820aca9d88b9c589e2fe5a15a51842e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c4e0950010247387d8ddc1380589a6f684ab8ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667330"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265094"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Návod: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytvoření grafického doplňku zobrazení, příkazů a nastavení](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides).  
-  
 Můžete rozšířit editoru textu nebo kódu sady Visual Studio s příkazy a zobrazit důsledky.  V tomto tématu se dozvíte, jak začít pracovat s funkcí oblíbené rozšíření, vodítka sloupců.  Vodítka sloupců jsou vizuálně světla čáry dekorace pro zobrazení textového editoru vám pomohou při správě kód do určitého sloupce šířky.  Speciálně formátovaného kódu může být důležité pro ukázky zahrnout do dokumentů, blogy, nebo zpráv o chybách.  
   
  V tomto návodu provedete následující:  

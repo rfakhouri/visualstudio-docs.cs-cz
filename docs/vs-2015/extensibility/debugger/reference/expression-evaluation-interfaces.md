@@ -1,7 +1,7 @@
 ---
 title: Rozhraní pro vyhodnocení výrazu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d2a66807ab4fb7f95ceb7a3578ad83e7d6ee597
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2362f0000ece6377a3dc2022e73afcc2fd024000
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677697"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262285"
 ---
 # <a name="expression-evaluation-interfaces"></a>Rozhraní pro vyhodnocení výrazu
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [rozhraní pro vyhodnocení výrazu](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/expression-evaluation-interfaces).  
-  
 > [!IMPORTANT]
 >  V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   

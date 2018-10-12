@@ -1,7 +1,7 @@
 ---
 title: Žádný zdroj není k dispozici | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fd7643dd7334a220d1e5c78ef12bddf07af11f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f9213abc9dab5824422b0fadf3920ffb188ab14
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633635"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266081"
 ---
 # <a name="no-source-available"></a>Žádný zdroj není k dispozici.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [k dispozici žádný zdrojový](https://docs.microsoft.com/visualstudio/debugger/no-source-available).  
-  
 Váš projekt obsahuje zdrojový kód pro kód, který se pokoušíte zobrazit. Obvyklou příčinou je dvojitým kliknutím modul, který nemá ve zdrojovém kódu **okně zásobník volání** nebo **okno vláken**. Můžete pokračovat v ladění, ale můžete nastavovat zarážky a provádět jiné akce na tomto místě nelze použít v okně zdroje. Pokud je potřeba nastavit zarážku, použijte **okno zpětného překladu** místo.  
   
  Na stránkách vlastností řešení můžete změnit adresáře, ve kterém se ladicí program vyhledá zdrojové soubory a zjistit, aby ladicí program ignorovat vybrané zdrojové soubory. Zobrazit [ladit zdroj souborů, společná nastavení řešení vlastnost dialogového okna stránky](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).  

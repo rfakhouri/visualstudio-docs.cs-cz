@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: Změna počítače pro přehrávání diagnostiky grafiky | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e33d2acc46cbf92c9b2bbd699903ad3169661a54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 327dd9c14c4bbfe2b5c37cbe26823d8bd02c76ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668464"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274466"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Postupy: Změna počítače pro přehrávání diagnostiky grafiky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: Změna počítače pro přehrávání diagnostiky grafiky](https://docs.microsoft.com/visualstudio/debugger/graphics/how-to-change-the-graphics-diagnostics-playback-machine).  
-  
 Můžete přehrávat grafické informace pomocí místního počítače nebo vzdáleném počítači či zařízení.  
   
 ## <a name="choosing-a-playback-machine"></a>Volba počítače pro přehrávání  

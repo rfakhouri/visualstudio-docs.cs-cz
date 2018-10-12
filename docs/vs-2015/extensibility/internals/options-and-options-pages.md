@@ -1,7 +1,7 @@
 ---
 title: Možnosti a stránky Možnosti | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97bf59649d0f2099261bef7a3e425f2fe7fc553e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d61d2c89a163cf111a2d33701a463e018f8f1488
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667007"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261037"
 ---
 # <a name="options-and-options-pages"></a>Možnosti a stránky Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [možnosti a stránky možnosti](https://docs.microsoft.com/visualstudio/extensibility/internals/options-and-options-pages).  
-  
 Kliknutím na **možnosti** na **nástroje** se otevře nabídka **možnosti** dialogové okno. Možnosti v tomto dialogovém se souhrnně označují jako možnosti stránky. Ovládací prvek stromové struktury v navigačním podokně zahrnuje možnosti kategorií a každou kategorii má možnosti stránky. Když vyberete na stránce, jeho možnosti se zobrazí v pravém podokně. Tyto stránky umožňují změnit hodnoty možnosti, které určují stav VSPackage.  
   
 ## <a name="support-for-options-pages"></a>Podpora pro stránky Možnosti  

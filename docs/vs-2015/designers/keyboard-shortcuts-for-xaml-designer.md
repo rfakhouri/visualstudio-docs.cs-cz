@@ -1,7 +1,7 @@
 ---
 title: Klávesové zkratky pro Návrhář XAML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd5fb40534c2c1f55ae5f18c63fcf0ec7ab6b2bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53eef64f396b6c9362a42d351bd546d97f8d205a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667249"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271398"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>Klávesové zkratky pro Návrhář XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [klávesové zkratky pro Návrhář XAML](https://docs.microsoft.com/visualstudio/designers/keyboard-shortcuts-for-xaml-designer).  
-  
 Klávesové zkratky v Návrháři XAML může urychlit práci díky snížení akce, které by vyžadovaly více kliknutí tlačítkem myši na jednu klávesovou zkratku.  
   
 ## <a name="element-shortcuts"></a>Klávesové zkratky – element  
@@ -57,7 +55,7 @@ Klávesové zkratky v Návrháři XAML může urychlit práci díky snížení a
 |Odemknout objektů na návrhové ploše, když je fokus na okno osnovy dokumentu|SHIFT, CTRL + L|  
   
 ## <a name="see-also"></a>Viz také  
- [Vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+ [Vytvoření uživatelského rozhraní pomocí Návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 
 
 

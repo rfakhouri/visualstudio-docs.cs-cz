@@ -1,7 +1,7 @@
 ---
 title: Zobrazení modelu obsahu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f2e73749e76d4449acc2a3debbec6ba8de416dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 406c870f099d2dbb1e60b0088a68e5a5c252b907
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672167"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274401"
 ---
 # <a name="content-model-view"></a>Zobrazení modelu obsahu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení modelu obsahu](https://docs.microsoft.com/visualstudio/xml-tools/content-model-view).  
-  
   
 Zobrazení modelu obsahu poskytuje grafické znázornění schématu místní a globální uzlů a jejich komponent, včetně jednoduché a komplexní typy prvků, skupiny modelů, atributy a skupiny atributů. Komentáře XML a pokyny pro zpracování nelze zobrazit v zobrazení modelu obsahu. Zobrazení modelu obsahu obsahuje dva panely: **pracovní prostor** panel, který obsahuje seznam uzlů v [pracovní prostor návrháře schémat XML](../xml-tools/xml-schema-designer-workspace.md)a návrhovou plochu, ve kterém uvidíte modelu obsahu schématu uzly, které jsou vybrány v **pracovní prostor** panelu. Zobrazení modelu obsahu také obsahuje panel nástrojů Návrhář schémat XML a panelu navigace s popisem cesty.  
   

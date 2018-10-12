@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Propojení typu obsahu s příponu názvu souboru | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1742da19e2d99cbb22d930b7146b1f9859e19cef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45534f4a85cd289360c098083228ac5f28025a90
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673686"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261726"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Návod: Propojení typu obsahu s příponou názvu souboru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [názorný postup: propojení typu obsahu příponu názvu souboru](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension).  
-  
 Můžete definovat vlastní typ obsahu a odkaz na něj příponu názvu souboru s použitím rozšíření editoru Managed Extensibility Framework (MEF). V některých případech již byl definován příponu názvu souboru službou jazyka. Nicméně pomocí MEF je stále třeba propojit ho typu obsahu.  
   
 ## <a name="prerequisites"></a>Požadavky  

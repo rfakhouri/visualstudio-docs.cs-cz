@@ -1,7 +1,7 @@
 ---
 title: Analýza kvality spravovaného kódu pomocí nástroje Analýza kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3e0538c47dec2dd11b9488a80dd4f71baddc487f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e034db6fc7383ea5f944900713dffe1cc3e78473
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263885"
 ---
 # <a name="analyzing-managed-code-quality-by-using-code-analysis"></a>Analýza kvality spravovaného kódu pomocí nástroje Analýza kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [analýza spravované kvality kódu pomocí nástroje Analýza kódu](https://docs.microsoft.com/visualstudio/code-quality/analyzing-managed-code-quality-by-using-code-analysis).  
-  
 Chcete-li zjistit možná rizika v kódu, jako je například nezabezpečený přístup k datům, narušení ochrany použití a problémy návrhu, můžete použít nástroje pro analýzu kódu sady Visual Studio. Analýza kódu funguje v rozhraní .NET Framework, nativní (C a C++) a databázových aplikací. Pravidla analýzy kódu pro spravovaný kód slouží k uspořádání *sad pravidel* využívajících konkrétní chyby kódu.  
   
 ## <a name="common-tasks"></a>Obecné úlohy  

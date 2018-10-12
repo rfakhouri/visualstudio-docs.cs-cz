@@ -1,7 +1,7 @@
 ---
 title: Související závorky ve službě starší verze jazyka | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3a2267805681b092c7a48537e72e5f0ca0b3ecb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7742b54b69cea8d1f814a4ac4fd8cc190dfe2b99
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632232"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265054"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Související závorky ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [závorky ve službě starší verze jazyka](https://docs.microsoft.com/visualstudio/extensibility/internals/brace-matching-in-a-legacy-language-service).  
-  
 Párování závorek pomáhá vývojářům sledovat prvky jazyka, které se musí se provést současně, jako je například závorky a složené závorky. Když vývojář přejde do pravé složené závorky, je zvýrazněn levou složenou závorku.  
   
  Můžete porovnat dvě nebo tři společně se vyskytující prvky nazývané páry a trojic. Trojic jsou sady společně se vyskytující tři prvky. Například v jazyce C# `foreach` příkaz forms s trojitými: "`foreach()`","`{`", a "`}`". Po zadání pravé složené závorce, jsou zvýrazněny všechny tři prvky.  

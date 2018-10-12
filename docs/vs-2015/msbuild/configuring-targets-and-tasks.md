@@ -1,7 +1,7 @@
 ---
 title: Konfigurace cílů a úloh | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7756e649fe9bc5907c888ae6141bed45eae8ccae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bb82483b0adef6343423984e3b0d6fa21d0d678
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668642"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263508"
 ---
 # <a name="configuring-targets-and-tasks"></a>Konfigurace cílů a úloh
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [konfigurace cílů a úloh](https://docs.microsoft.com/visualstudio/msbuild/configuring-targets-and-tasks).  
-  
   
 Můžete nakonfigurovat cíle nástroje MSBuild a aby úlohy běžely na více instancí procesu pomocí nástroje MSBuild tak, že je možné cílit na kontextu, které se liší od spustíte v. Můžete například směrovat 32bitovou aplikaci rozhraní .NET Framework 2.0 v operačním systému 64bitová verze rozhraní .NET Framework 4.5 je spuštěn vývojovém počítači. Můžete také směrovat počítače se systémem pomocí rozhraní .NET Framework 4 nebo dřívější. Kombinace 32 nebo 64bitovou a konkrétní verzi rozhraní .NET Framework se označuje jako *cílový kontext*.  
   

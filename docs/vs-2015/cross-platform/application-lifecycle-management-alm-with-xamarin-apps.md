@@ -1,7 +1,7 @@
 ---
 title: Správa životního cyklu aplikací (ALM) s aplikacemi Xamarin | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b9433539d89f7b47c79461dbf0d488791ff348db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9361c60413192aa91a618ad0c6acc074f23264a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686663"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274635"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Správa životního cyklu aplikací s aplikacemi Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Application Lifecycle Management (ALM) s aplikacemi Xamarin](https://docs.microsoft.com/visualstudio/cross-platform/application-lifecycle-management-alm-with-xamarin-apps).  
-  
   
 Xamarin umožňuje vytvářet multiplatformní mobilní aplikace cílí na Android, iOS a Windows pomocí C#, .NET a Visual Studio. Xamarin umožňuje velkou část kódu sdílet mezi platformami s pouze malým procentem museli být specifické pro platformu. Další informace o Xamarinu, sama, naleznete v tématu [Visual Studio a Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
   

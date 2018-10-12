@@ -1,7 +1,7 @@
 ---
 title: Vytvoření formuláře Windows k vyhledávání dat | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a64377e2689ca4e5111f316c13808aee6cfb59be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c610ebecf48d8a21e8962a549d7114b8d13e3ad6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671259"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270614"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Vytvoření formuláře Windows k vyhledávání dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytvoření formuláře Windows k vyhledávání dat](https://docs.microsoft.com/visualstudio/data-tools/create-a-windows-form-to-search-data).  
-  
   
 Běžný scénář, kdy aplikace se má zobrazit vybraná data ve formuláři. Můžete například chtít zobrazujících objednávky pro konkrétního zákazníka nebo podrobnosti o určitém pořadí. V tomto scénáři uživatel zadá informace do formátu, a pak je dotaz proveden se vstupem uživatele jako parametr; To znamená data se určí parametrický dotaz. Dotaz vrátí pouze data, která splňuje kritéria zadaná uživatelem. Tento návod ukazuje, jak vytvořit dotaz, který vrátí zákazníky v konkrétním městě a upravte uživatelské rozhraní, aby uživatelé můžete zadat název města a kliknutím na tlačítko Spustit dotaz.  
   
@@ -159,5 +157,5 @@ Běžný scénář, kdy aplikace se má zobrazit vybraná data ve formuláři. M
 -   Úpravy datové sady pro přidání nebo odebrání databázové objekty. Další informace najdete v tématu [vytvoření a konfigurace datové sady](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+ [Vytvoření vazby ovládacích prvků modelu Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 

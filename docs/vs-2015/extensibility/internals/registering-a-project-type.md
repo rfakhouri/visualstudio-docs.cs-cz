@@ -1,7 +1,7 @@
 ---
 title: Registrace typu projektu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 336658e0a216f7fc24435715bf978ce5badefe5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686700"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271775"
 ---
 # <a name="registering-a-project-type"></a>Registrace typu projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [registrace typu projektu](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-project-type).  
-  
 Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, které umožňují [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nerozpozná a nenahraje a pracovat s vašeho typu projektu. Tyto položky registru obvykle vytvoříte pomocí souboru registru skript (.rgs).  
   
  V následujícím příkladu příkazy z registru poskytují výchozí cesty a data kde je to možné, za nímž následuje tabulku, která obsahuje položky z registru skriptu příkazu for each. Tabulky poskytují položkami skriptu a další informace o dotazech.  

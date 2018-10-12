@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: přírůstkové sestavování | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dca1950a2c9ef7ee69c3f26bca1d2fe4ddf010e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8fba24434b10a9606c800c1453d31d7d3b52b234
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669052"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275051"
 ---
 # <a name="how-to-build-incrementally"></a>Postupy: Přírůstkové sestavování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: přírůstkové sestavení](https://docs.microsoft.com/visualstudio/msbuild/how-to-build-incrementally).  
-  
   
 Při sestavování velkých projektů, je důležité nejsou, která dříve vytvořená součásti, které jsou stále aktuální znovu sestavit. Pokud všechny cíle jsou sestaveny pokaždé, když každého sestavení bude trvat dlouhou dobu pro dokončení. Chcete-li povolit přírůstkové buildy (sestavení, ve kterém jen pro tyto cíle, které nejsou sestavené před nebo, zaměřuje jsou zastaralé, jsou znovu sestavit), [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) můžete porovnat časová razítka vstupních souborů s časovými razítky výstupních souborů a zjistěte, jestli se má přeskočit, sestavení nebo částečně znovu sestavit cíl. Musí však být mapování 1: 1 mezi vstupy a výstupy. Použití transformací umožňující cíle k identifikaci této přímé mapování. Další informace o transformace, najdete v části [transformuje](../msbuild/msbuild-transforms.md).  
   

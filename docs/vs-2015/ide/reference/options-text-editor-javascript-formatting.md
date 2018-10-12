@@ -1,7 +1,7 @@
 ---
 title: Možnosti, textový Editor, JavaScript, formátování | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a5a69d556beb8ebf3d3f75720614f7258b1780
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ea54b743853bba445618ad3b6e08fd9a9a54027
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271047"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Možnosti, textový editor, JavaScript, formátování
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [možnosti, textový Editor, JavaScript, formátování](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-javascript-formatting).  
-  
   
 Použití **formátování** stránku **možnosti** dialogové okno Nastavení možností pro formátování kódu v editoru kódu. Pro přístup k této stránce, na panelu nabídek zvolte **nástroje**, **možnosti**a potom rozbalte **textový Editor**, **JavaScript**a **Formátování**.  
   
@@ -72,7 +70,7 @@ Použití **formátování** stránku **možnosti** dialogové okno Nastavení m
 |**Vložit mezeru za levou a před pravou závorku prázdné**|Pokud je vybraná tato možnost, editoru kódu přidá mezeru za levou (otevírací) a před pravou závorku. Pokud jsou k dispozici v rámci závorky prázdné znaky.|  
   
 ## <a name="see-also"></a>Viz také  
- [Obecné, prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)
+ [Obecné, Prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)
 
 
 

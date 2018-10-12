@@ -1,7 +1,7 @@
 ---
 title: LPTEXTOUTPROC | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e8fc709353e4a2e39059cade96aa49c30fedac4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5ef5d1c5e92282de6454ca3da8c2adbb8914248
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672308"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266941"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [LPTEXTOUTPROC](https://docs.microsoft.com/visualstudio/extensibility/lptextoutproc).  
-  
 Když uživatel provede operaci správy zdrojových kódů v rámci integrovaného vývojového prostředí (IDE), modul plug-in správy zdrojového kódu může být vhodné k předání chyba nebo stav zprávy týkající se operace. Modul plug-in zobrazíte jeho vlastní okna se zprávou pro tento účel. Ale pro další bezproblémovou integraci, modul plug-in můžete předat řetězce integrovaného vývojového prostředí, které zobrazí je v jeho nativní způsob zobrazení informací o stavu. Je mechanismus pro to, `LPTEXTOUTPROC` ukazatel na funkci. Rozhraní IDE implementuje tuto funkci (podrobněji popsaný níže) pro zobrazení stavů a chyb.  
   
  Rozhraní IDE předává do správy zdrojového kódu modulu plug-in ukazatele na funkci na tuto funkci, jako `lpTextOutProc` parametru při volání [sccopenproject –](../extensibility/sccopenproject-function.md). Během operace SCC, třeba uprostřed volání [sccget –](../extensibility/sccget-function.md) zahrnující mnoho souborů, modul plug-in můžete volat `LPTEXTOUTPROC` funkce pravidelně předávání řetězce k zobrazení. Rozhraní IDE se může zobrazit tyto řetězce na stavovém řádku v okně výstupu nebo v samostatném okně, podle potřeby. Volitelně může nebude moci zobrazit některé zprávy s integrovaného vývojového prostředí **zrušit** tlačítko. To umožňuje uživateli zrušit operaci a integrované vývojové prostředí nabízí možnost předávání zpátky do modulu plug-in tyto informace.  

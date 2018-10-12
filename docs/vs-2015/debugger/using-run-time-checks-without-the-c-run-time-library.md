@@ -1,7 +1,7 @@
 ---
 title: Použití za běhu bez běhové knihovny jazyka C kontroluje | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 864e21d2c2ec2a9922d70e6b69192d9268556737
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02d5128a3d80b7fabe3fd8cf774d5891a66fc20c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676273"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263058"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Použití kontrol za běhu bez běhové knihovny jazyka C
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [použití knihovny Run-Time kontroluje bez the C Run-Time](https://docs.microsoft.com/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library).  
-  
 Pokud jste programu bez knihovny run-time jazyka C, pomocí **: / NODEFAULTLIB**a chcete použít kontroly za běhu, je třeba propojit s RunTmChk.lib.  
   
  `_RTC_Initialize` Inicializuje programu pro kontroly za běhu. Pokud nepropojíte s knihovny run-time jazyka C, je nutné zkontrolovat pro zjištění, jestli je váš program kompilován s kontroly chyb za běhu před voláním `_RTC_Initialize`, následujícím způsobem:  
@@ -77,7 +75,7 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
  Po dokončení instalace výchozí zpráv o chybách funkce můžete nainstalovat další zpráv o chybách funkce s `_RTC_SetErrorFuncW`. Další informace najdete v tématu [_RTC_SetErrorFuncW](http://msdn.microsoft.com/library/b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a).  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: použití nativních kontrol za běhu](../debugger/how-to-use-native-run-time-checks.md)
+ [Postupy: Použití nativních kontrol za běhu](../debugger/how-to-use-native-run-time-checks.md)
 
 
 

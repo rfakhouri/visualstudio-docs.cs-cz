@@ -1,7 +1,7 @@
 ---
 title: Zřetězení grafiky | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eda25bb46a9920b8662e8af8b2e4c08da04c3781
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1669a13b047236044e5f7c65c2d27e187096b62b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267459"
 ---
 # <a name="graphics-pipeline-stages"></a>Fáze zřetězení grafiky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [fáze zřetězení grafiky](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-pipeline-stages).  
-  
 V okně fáze zřetězení grafiky pomáhá pochopit, jak je transformovat volání draw jednotlivé každá fáze zřetězení grafiky Direct3D.  
   
  Toto je v okně fáze zřetězení:  

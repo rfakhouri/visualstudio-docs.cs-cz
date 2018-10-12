@@ -1,7 +1,7 @@
 ---
 title: Text značky pomocí starší verze rozhraní API | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b276a678d4b5e97e3ef949bdf1fd74b37070f9d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f863571672c42f63912629844fd72d8c92ca8400
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632414"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263663"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Text značky pomocí starší verze rozhraní API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pomocí značky Text pomocí rozhraní API pro starší verze](https://docs.microsoft.com/visualstudio/extensibility/using-text-markers-with-the-legacy-api).  
-  
 Text značky je plovoucí rozsah textu ve vyrovnávací paměti, může mít vliv na zobrazení a chování oblast textu. Značky zahrnují zarážky, záložek, podtržení vlnovkou a oblastí jen pro čtení. Text značky jsou v podstatě totéž barevné zvýrazňování syntaxe. Barevné zvýrazňování syntaxe je rychlý způsob, jak komunikovat syntaxi jazyka, který je spojen s oblast textu. Barevné zvýrazňování syntaxe obecně vyžádá, když Windows překreslí obrazovky, když rychlost je důležité. Barevné zvýrazňování syntaxe změní barvu textu. Text značky můžete změnit mnoho dalších vlastností textu. Text značky můžete "float" a použít zvláštní chování a obarvení.  
   
  Kvůli výkonu režii spojenou s text značky nevytvářejte mnoho značek pro vaše vyrovnávací paměti textu. Každá značka se aktualizuje pokaždé, když se, že uživatel upraví obsah vyrovnávací paměti.  
@@ -38,11 +36,11 @@ Text značky je plovoucí rozsah textu ve vyrovnávací paměti, může mít vli
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Postupy: Přidání standardní Text značky](../extensibility/how-to-add-standard-text-markers.md)|Popisuje postup přidání standardní text značky typ poskytovaný modulem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základní editor k zobrazení textu.|  
-|[Postupy: implementace označování chyb](../extensibility/how-to-implement-error-markers.md)|Popisuje, jak implementovat instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] značky, který se používá k označení chyby pomocí červené podtržení vlnovkou.|  
-|[Postupy: vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)|Popisuje, jak vytvořit a přidat typ značky vlastní text k zobrazení textu.|  
-|[Postupy: použití značek Text](../extensibility/how-to-use-text-markers.md)|Vysvětluje, jak přidat text značky.|  
-|[Uvnitř základní Editor](../extensibility/inside-the-core-editor.md)|Popisuje funkce základní editor a poskytuje podrobné informace o tom, jak přizpůsobit základní editor.|  
+|[Postupy: Přidání standardních textových značek](../extensibility/how-to-add-standard-text-markers.md)|Popisuje postup přidání standardní text značky typ poskytovaný modulem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základní editor k zobrazení textu.|  
+|[Postupy: Implementace chybových značek](../extensibility/how-to-implement-error-markers.md)|Popisuje, jak implementovat instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] značky, který se používá k označení chyby pomocí červené podtržení vlnovkou.|  
+|[Postupy: Vytvoření vlastních textových značek](../extensibility/how-to-create-custom-text-markers.md)|Popisuje, jak vytvořit a přidat typ značky vlastní text k zobrazení textu.|  
+|[Postupy: Použití textových značek](../extensibility/how-to-use-text-markers.md)|Vysvětluje, jak přidat text značky.|  
+|[Práce v základní editoru](../extensibility/inside-the-core-editor.md)|Popisuje funkce základní editor a poskytuje podrobné informace o tom, jak přizpůsobit základní editor.|  
 |[Funkce editoru](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Popisuje funkce dostupné v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] základní editor.|  
   
 ## <a name="reference"></a>Odkaz  

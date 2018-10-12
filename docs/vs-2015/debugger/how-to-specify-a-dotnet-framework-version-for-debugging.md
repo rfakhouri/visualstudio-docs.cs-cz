@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: určení verze rozhraní .NET Framework pro ladění | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a07975591525f9109fecfbfb5aaa27642fc9562
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 914c4bfb58485bd1d423e58bbe8fc8ab7f1a898a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668782"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272958"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Postupy: Určení verze rozhraní .NET Framework pro ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: určení pro rozhraní .NET Framework verze pro ladění](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-a-dotnet-framework-version-for-debugging).  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] Ladicí program podporuje ladění starších verzích Microsoft [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] stejně jako aktuální verze. Pokud spouštíte aplikaci ze sady Visual Studio, ladicí program může vždy identifikovat správnou verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] pro aplikaci, kterou ladíte. Pokud už je aplikace spuštěna a použijete **připojit k**, ladicí program, nemusí být vždy schopen identifikovat starší verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Pokud k tomu dojde, zobrazí se chybová zpráva s upozorněním,  
   
  Ladicí program provedl nesprávné předpokladů o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verze vaší aplikace bude používat.  
@@ -71,7 +69,7 @@ Nejnovější verzi tohoto tématu můžete najít v [postupy: určení pro rozh
      Pokud se stále zobrazí chybová zpráva při zahájení ladění, ověřte, že zadáte číslo verze správně v registru. Dál ověřte, že používáte verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] podporovaného Visual Studiem. Ladicí program je kompatibilní s aktuální verze rozhraní .NET Framework a předchozími verzemi, ale možná není dopředně kompatibilní s budoucí verze.  
   
 ## <a name="see-also"></a>Viz také  
- [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)
+ [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)
 
 
 

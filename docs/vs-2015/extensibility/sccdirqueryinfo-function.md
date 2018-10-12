@@ -1,7 +1,7 @@
 ---
 title: Sccdirqueryinfo – funkce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d737f45a337f2b43243641ce898cc2ef1d3a82de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7fab60f595ce7f156df87b51306509929cc75a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261544"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sccdirqueryinfo – funkce](https://docs.microsoft.com/visualstudio/extensibility/sccdirqueryinfo-function).  
-  
 Tato funkce zkontroluje seznam plně kvalifikovaných adresářů pro jejich aktuální stav.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -75,5 +73,5 @@ LPLONG  lpStatus
   
 ## <a name="see-also"></a>Viz také  
  [Funkce rozhraní API modulu Plug-in zdroje ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)   
- [Adresář stavový kód](../extensibility/directory-status-code-enumerator.md)
+ [Kód stavu adresáře](../extensibility/directory-status-code-enumerator.md)
 

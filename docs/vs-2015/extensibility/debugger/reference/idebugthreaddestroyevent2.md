@@ -1,7 +1,7 @@
 ---
 title: IDebugThreadDestroyEvent2 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: fca3f603-9432-457b-9ddd-8b0ec17da046
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ac4f17e91631cead779143306a267532c4af0f69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7c256617d243ade03f501f113f76002ccf14d623
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667445"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257332"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [IDebugThreadDestroyEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugthreaddestroyevent2).  
-  
 Toto rozhraní je odesílat pomocí ladicího stroje (DE) Správce ladění relace (SDM) po dokončení spuštění vlákna.  
   
 ## <a name="syntax"></a>Syntaxe  

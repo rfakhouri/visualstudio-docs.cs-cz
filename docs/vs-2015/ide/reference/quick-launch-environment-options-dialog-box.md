@@ -1,7 +1,7 @@
 ---
 title: Snadné spuštění, prostředí, dialogové okno Možnosti | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bf2e22db54e064de6716d4ca1325a9e5435318f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e012e5ec4d9326cb1e6732ed78a8de8a60aeda8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633556"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269058"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Dialogové okno Snadné spuštění, Prostředí, Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dialogové okno Snadné spuštění, prostředí, možnosti](https://docs.microsoft.com/visualstudio/ide/reference/quick-launch-environment-options-dialog-box).  
-  
   
 Můžete použít **Snadné spuštění** chcete rychle najít a spustit akce pro prostředky IDE, jako jsou možnosti, šablony, nabídky. Nemůžete použít **Snadné spuštění** k vyhledání kódu a symbolům. **Snadné spuštění** vyhledávacího pole se nachází v pravém horním rohu řádku nabídek a je přístupný výběrem klávesy Ctrl + Q. Do pole zadejte hledaný řetězec. K vyhledání řetězce, které obsahují @, použijte ”@@”.   
   

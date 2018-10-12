@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Windows pracovního postupu (starší verze) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: bd54e54965a6a6b936b24e1ca13151e3754d9390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32e8b4cf8fcfbaddfa891ab881f25f89ca0285d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628289"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273166"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Okna pracovních postupů v sadě Visual Studio (starší verze)
 Starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] poskytované [!INCLUDE[vs2010](../includes/vs2010-md.md)] lze použít k cíli [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Starší verze návrháře je vizuálního návrháře, který slouží k vytvoření pracovního postupu. Můžete přetáhnout aktivity **nástrojů** návrhu plochu a potom je nakonfigurujte existuje. Jako [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okno editoru zabírá oblasti hlavního okna používají jiné [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna editoru. Název pracovního postupu se zobrazí v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] záhlaví okna.  

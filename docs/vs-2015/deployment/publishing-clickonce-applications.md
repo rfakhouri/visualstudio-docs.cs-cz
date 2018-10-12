@@ -1,7 +1,7 @@
 ---
 title: Publikování aplikací ClickOnce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: f1e15ed2a1b2c2224a5e51cd02cf7609e40d5d29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70cf261f2d235a8ed1b27550acad916cf5a355a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669157"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265639"
 ---
 # <a name="publishing-clickonce-applications"></a>Publikování aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [publikování aplikací ClickOnce](https://docs.microsoft.com/visualstudio/deployment/publishing-clickonce-applications).  
-  
 Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] vlastnosti publikování aplikace poprvé, můžete nastavit pomocí Průvodce publikováním. Pouze některé vlastnosti jsou k dispozici v Průvodci; všechny ostatní vlastnosti jsou nastavené na výchozí hodnoty.  
   
  Vlastnosti publikování následné změny probíhají v **publikovat** stránku **Návrháře projektu**.  
@@ -89,7 +87,7 @@ Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] vlastn
 |[Postupy: Určení obsahu pro technickou podporu](../deployment/how-to-specify-a-link-for-technical-support.md)|Popisuje, jak nastavit **adresu URL podpory** vlastnost, která identifikuje webové stránky nebo sdílené složky, kde mohou uživatelé získat informace o aplikaci.|  
 |[Postupy: Určení adresy URL webu s podporou pro jednotlivé předpoklady v nasazení ClickOnce](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|Jsme vám ukázali, jak ručně upravit manifest aplikace zahrnout jednotlivých adres URL podpory pro každý požadavek.|  
 |[Postupy: Určení stránky publikování pro aplikaci ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|Popisuje, jak vygeneruje a publikuje výchozí webovou stránku (publish.htm) spolu s aplikace|  
-|[Postupy: Úprava ClickOnce výchozí webové stránky](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Popisuje, jak přizpůsobit webovou stránku, která je automaticky generována a publikovat spolu s aplikace.|  
+|[Postupy: Přizpůsobení výchozí webové stránky ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Popisuje, jak přizpůsobit webovou stránku, která je automaticky generována a publikovat spolu s aplikace.|  
 |[Postupy: Povolení funkce AutoStart pro instalace z média CD](../deployment/how-to-enable-autostart-for-cd-installations.md)|Popisuje postup povolení funkce AutoStart tak, aby aplikace ClickOnce se automaticky spustí, když je médium je vloženo.|  
   
 ## <a name="related-topics"></a>Související témata  

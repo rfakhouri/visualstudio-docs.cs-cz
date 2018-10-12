@@ -1,7 +1,7 @@
 ---
 title: Ladění modelu COM serveru a kontejneru | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 531c485f50a4a775ca2933c40f5ff74ca9c43717
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1df02319e081abe882cef7031eba144ef22d7c4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263048"
 ---
 # <a name="com-server-and-container-debugging"></a>Ladění serveru a kontejneru modelu COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ladění modelu COM serveru a kontejneru](https://docs.microsoft.com/visualstudio/debugger/com-server-and-container-debugging).  
-  
 Aplikace modelu COM provést několik úloh mimo přímou kontrolu programátora. Komunikace mezi knihovny DLL, využití se počítá na objekty a operace se schránkou je uvedeno několik oblastí, kde může dojít k neočekávanému chování. Pokud k tomu dojde, prvním krokem je sledovat příčiny problému.  
   
  Ladicí program sady Visual Studio podporuje krokování přes a kontejnery a servery. To zahrnuje možnost Krokovat přes Vzdálená volání procedur (RPC).  
@@ -65,7 +63,7 @@ Aplikace modelu COM provést několik úloh mimo přímou kontrolu programátora
  Pro přístup *projektu* dialogové okno stránky vlastností, klikněte pravým tlačítkem na projekt v Průzkumníku řešení a v místní nabídce zvolte možnost Vlastnosti. Pokud chcete najít vlastnost argumenty příkazového řádku, rozbalte kategorii vlastnosti konfigurace a klikněte na stránce ladění.  
   
 ## <a name="see-also"></a>Viz také  
- [COM a ActiveX ladění](../debugger/com-and-activex-debugging.md)
+ [Ladění modelů COM a prvků ActiveX](../debugger/com-and-activex-debugging.md)
 
 
 

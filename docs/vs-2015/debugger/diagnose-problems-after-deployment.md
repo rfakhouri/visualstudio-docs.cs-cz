@@ -1,7 +1,7 @@
 ---
 title: Diagnostika problémů po nasazení | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 66
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7979cdde9ec6411db83753b0006a2f55c4afb4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26a852bdf955a17dd59ffe79d29e2601362e47d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627484"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270592"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnostika problémů po nasazení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Diagnostika problémů po nasazení](https://docs.microsoft.com/visualstudio/debugger/diagnose-problems-after-deployment).  
-  
 Diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použitím technologie IntelliTrace, přidejte informace sestavení s vaší verzí umožňuje sadě Visual Studio automaticky vyhledá správné zdrojové soubory a soubory symbolů, které jsou nutné k ladění protokolu IntelliTrace.  
   
  Pokud používáte agenta Microsoft Monitoring Agent do správy nástroje IntelliTrace, budete také muset nastavit nastavte application performance monitoring pro aplikace na webovém serveru. To zaznamenává diagnostické události, když vaše aplikace běží a uloží události do souboru protokolu IntelliTrace. Můžete pak podívejte se na události v sadě Visual Studio Enterprise (ale ne Professional nebo Community), přejděte do kódu, kde k události došlo, podívejte se na zaznamenané hodnoty v tomto okamžiku v čase a posunout dopředu nebo dozadu prostřednictvím kódu, který spustil. Po nalezení a vyřešení problému, opakujte cyklus sestavení, vydání a sledování vaší verze, abyste mohli vyřešit potenciální potíže v budoucnosti dříve a rychleji.  

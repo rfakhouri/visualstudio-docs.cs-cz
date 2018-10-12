@@ -1,7 +1,7 @@
 ---
 title: Synchronizace změn mezi XCode a sadou Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 10
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: a18d21dc20d6bb8a8346013130bea15f094b5fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0135aa1b2a23beb0ce9781fe07403a7ddc43acb7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670128"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268226"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>Synchronizace změn mezi XCode a sadou Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [synchronizace změn mezi XCode a sadou Visual Studio](https://docs.microsoft.com/visualstudio/cross-platform/sync-changes-between-xcode-and-visual-studio).  
-  
   
 Microsoft Visual C++ pro vývoj mobilních řešení pro komponentu zahrnuje vzdálené možnosti pro synchronizaci vaší práce mezi vaším Počítačem a vašeho macu. V kombinaci se počítače s Visual Studio nebo Mac, nové možnosti jsou k dispozici pro iOS projekty aplikací v sadě Visual Studio, můžete použít k otevření projektu v XCode, přesuňte váš kód mezi XCode a sadou Visual Studio a vyčistit dočasný adresář projektu XCode.  
   

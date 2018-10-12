@@ -1,7 +1,7 @@
 ---
 title: Ladění projektů knihovny DLL | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13e124c4c9c24ad298c2528f2901d5aa1d52d54c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669104"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267381"
 ---
 # <a name="debugging-dll-projects"></a>Ladění projektů knihovny DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ladění projektů knihovny DLL](https://docs.microsoft.com/visualstudio/debugger/debugging-dll-projects).  
-  
 Následující šablony vytvoří knihovny DLL:  
   
 -   (C++, C# a Visual Basic) Knihovna tříd  
@@ -60,9 +58,9 @@ Následující šablony vytvoří knihovny DLL:
   
  Tato část také obsahuje informace o následujících tématech:  
   
--   [Postupy: ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md)  
+-   [Postupy: Ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md)  
   
--   [Postupy: ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md)  
+-   [Postupy: Ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md)  
   
  Toto téma obsahuje následující oddíly, které poskytují důležité informace o přípravě k ladění knihoven tříd:  
   

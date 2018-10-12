@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: povolení funkce AutoStart pro instalace z disku CD | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7a0f7228e4340763104f38dc56e5e8603ed85408
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fde610731ca5ec315b94d2e46f58edb2a7b56fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273140"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Postupy: Povolení funkce AutoStart pro instalace z média CD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: povolení AutoStart pro instalace z disku CD](https://docs.microsoft.com/visualstudio/deployment/how-to-enable-autostart-for-cd-installations).  
-  
 Při nasazování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace pomocí vyměnitelného média jako je například disk CD-ROM nebo DVD-ROM, můžete povolit `AutoStart` tak, aby [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace se automaticky spustí, když je médium je vloženo.  
   
  `AutoStart` lze povolit **publikovat** stránku **Návrháře projektu**.  

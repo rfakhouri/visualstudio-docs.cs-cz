@@ -1,7 +1,7 @@
 ---
 title: Ověřování systému během vývoje | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8b0d65d99cf99c7f1468a0bf596eb687f931b5d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33d5de340455e5e0f6a39dd9ce470d2e96327216
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672360"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262181"
 ---
 # <a name="validate-your-system-during-development"></a>Ověřování systému během vývoje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ověřování systému během vývoje](https://docs.microsoft.com/visualstudio/modeling/validate-your-system-during-development).  
-  
 Visual Studio vám může pomoci udržovat konzistentní s požadavky uživatelů a architektuře systému vašeho softwaru.  
   
  Které verze sady Visual Studio podporovat každé z těchto funkcí najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -54,7 +52,7 @@ Visual Studio vám může pomoci udržovat konzistentní s požadavky uživatel�
  [Testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Modelování uživatelských požadavků](../modeling/model-user-requirements.md)   
- [Analýza a modelování vaší architektury](../modeling/analyze-and-model-your-architecture.md)
+ [Analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)
 
 
 

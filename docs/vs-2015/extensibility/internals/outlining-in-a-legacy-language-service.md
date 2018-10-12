@@ -1,7 +1,7 @@
 ---
 title: Osnova ve službě starší verze jazyka | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e450a41db4e56067424e89acf8bb4af048acfc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69ea15c814472303ffd3a0097e7e61777805d487
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674308"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263221"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Osnova ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [osnovy ve službě starší verze jazyka](https://docs.microsoft.com/visualstudio/extensibility/internals/outlining-in-a-legacy-language-service).  
-  
 Sbalování umožňuje sbalit složitý program do přehled nebo osnovy. Například v jazyce C# všechny metody lze sbalit do jednoho řádku zobrazující pouze podpis metody. Kromě toho třídy a struktury mohou být sbalena zobrazit pouze názvy třídy a struktury. Uvnitř jedinou metodu, mohou být sbalena komplexní logiku tak celkový tok zobrazením pouze první řádek příkazy `foreach`, `if`, a `while`.  
   
  Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace najdete v tématu [návod: sbalení](../../extensibility/walkthrough-outlining.md).  

@@ -1,7 +1,7 @@
 ---
 title: Rozšíření dalších částí sady Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b2cdcde6115f78eb9d2e43edaa6fe238b0963dc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c910fcd8a3025b6a12454ad7234502df99726768
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263514"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Rozšíření dalších částí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [rozšíření ostatní součásti sady Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/extending-other-parts-of-visual-studio).  
-  
 Existuje mnoho více částí rozhraní Visual Studia, které můžete rozšířit. Tady vám ukážeme, můžete jen některé.  
   
 ## <a name="creating-a-vspackage"></a>Vytváření VSPackage  

@@ -1,7 +1,7 @@
 ---
 title: Zpráva značky | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd2487466518622ebd1b2a52c4e4697be23a40d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9bc998a697dcf387df21b7e5576a8548d51d0e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667745"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269943"
 ---
 # <a name="message-markers"></a>Značky zpráv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [značky zpráv](https://docs.microsoft.com/visualstudio/profiling/message-markers).  
-  
 Zpráva značky představuje výstup protokolu. Zpráva je řetězec, který vystavila konkrétním vlákně v určitém čase. Zprávy můžete exportovat do textového souboru pro použití s dalšími nástroji. Přesuňte ukazatel na zprávu zobrazíte řetězec zprávy ve vizualizátoru souběžnosti. A můžete zobrazit všechny značky zpráv v [sestava značek](../profiling/markers-report.md).  Následující obrázek znázorňuje zprávu značky.  
   
 ## <a name="message-aggregation-markers"></a>Značky zpráv agregace  

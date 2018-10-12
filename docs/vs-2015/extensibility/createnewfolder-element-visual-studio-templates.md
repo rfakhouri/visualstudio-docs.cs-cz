@@ -1,7 +1,7 @@
 ---
 title: Createnewfolder – Element (šablony sady Visual Studio) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 42b01012a6a15dbf31782ccf4dd4502338ce4595
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed756b9b7a558f600ced6b9a91ca50b21dc40267
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632223"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264111"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder – element (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [createnewfolder – Element (šablony sady Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/createnewfolder-element-visual-studio-templates).  
-  
 Určuje, jestli se má zkontrolovat, že cílový adresář, ve kterém se má vytvořit projekt neexistuje. Pokud adresář neexistuje, lze vytvořit nový adresář pro projekt. Toto nastavení je obvykle přepsat `NewProjectRequiresNewFolder(VsTemplate)` příznak registru (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`), že všechny běžné typy projektů použít k určení, zda chcete vytvořit nový projekt v novém adresáři.  
   
  \<Vstemplate – >  

@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: použití příkazu Obklopit s fragmenty kódu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 05b69501f5b3400836209d23fb204113e0c611a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ea8f6cf3ddaae2d448cf3065b6de9b948adc847
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668442"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266913"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Postupy: Použití příkazu Obklopit s s fragmenty kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: použití příkazu Obklopit s fragmenty kódu](https://docs.microsoft.com/visualstudio/ide/how-to-use-surround-with-code-snippets).  
-  
 Následující postupy popisují způsob použití příkazu Obklopit s fragmenty kódu. Obklopit s fragmenty kódu jsou k dispozici tři způsoby: pomocí klávesové zkratky, prostřednictvím nabídky Úpravy a v místní nabídce.  
   
 ### <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>Použití příkazu Obklopit s fragmenty kódu pomocí klávesové zkratky  

@@ -1,7 +1,7 @@
 ---
 title: Popis toku řízení pomocí fragmentů v sekvenčních diagramech UML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 05cb3be018db16a2377132896a98f0d2b13bfa07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671199"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260218"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Popis toku řízení pomocí fragmentů v sekvenčních diagramech UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Describe toku řízení pomocí fragmentů v sekvenčních diagramech UML](https://docs.microsoft.com/visualstudio/modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams).  
-  
 V sekvenčním diagramu UML *kombinované fragmenty* umožňují zobrazit smyčky, větve a další možnosti.  
   
  Do kombinovaného fragmentu se skládá z jedné nebo více *interakce operandy*, a každá z těchto obklopuje jeden nebo více zpráv, interakcí nebo kombinované fragmenty.  

@@ -1,7 +1,7 @@
 ---
 title: Práce s kódem jazyka Visual C++ (návrhář tříd) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 329125ffd1c577bb767fb3661331eeadeacada92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3190aebd98270dee4bb5148868c04a4f5e430781
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676102"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269539"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Práce s kódem jazyka Visual C++ (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [práce s kódem jazyka Visual C++ (návrhář tříd)](https://docs.microsoft.com/visualstudio/ide/working-with-visual-cpp-code-class-designer).  
-  
 Vizuální návrhová plocha, volá se zobrazí návrhář tříd *diagram tříd* , který obsahuje vizuální reprezentaci prvků kódu ve vašem projektu. Diagramy tříd můžete navrhovat a zobrazovat třídami a ostatními typy v projektu.  
   
  Návrhář tříd podporuje následující prvky kódu jazyka C++:  

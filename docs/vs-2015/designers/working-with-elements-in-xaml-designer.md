@@ -1,7 +1,7 @@
 ---
 title: Práce s elementy v Návrháři XAML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 917d0b66f479789b3cb727aeb822c3f2aa164cff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: affdd3283d328fbc72b186904fdfb025bbe824e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629925"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266031"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Práce s elementy v Návrháři XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [práce s elementy v Návrháři XAML](https://docs.microsoft.com/visualstudio/designers/working-with-elements-in-xaml-designer).  
-  
 Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší aplikace v XAML, v kódu nebo s použitím návrháře XAML. Toto téma popisuje, jak pracovat s elementy v Návrháři XAML v sadě Visual Studio nebo nástroje Blend for Visual Studio.  
   
 ## <a name="adding-an-element-to-a-layout"></a>Přidat element do rozložení  
@@ -129,7 +127,7 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
 -   V okně Osnova dokumentu nebo návrhové ploše, klikněte pravým tlačítkem na elementu, zvolte **rozložení**, **resetování** *PropertyName*, kde *PropertyName*je vlastnost, kterou chcete obnovit (nebo zvolte **rozložení**, **Obnovit vše** resetovat všechny vlastnosti rozložení pro element).  
   
 ## <a name="see-also"></a>Viz také  
- [Vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+ [Vytvoření uživatelského rozhraní pomocí Návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 
 
 

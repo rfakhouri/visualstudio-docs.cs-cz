@@ -1,7 +1,7 @@
 ---
 title: Služba vyhledávání a katalog obrázků | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3079bada9b8d3e9a0b2644e4aaa3d9e3ee3bebe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 847ac3b7ed956daf61a04c5891871c9182594877
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265210"
 ---
 # <a name="image-service-and-catalog"></a>Služba vyhledávání a katalog obrázků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [služba bitových kopií a katalog](https://docs.microsoft.com/visualstudio/extensibility/image-service-and-catalog).  
-  
 Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Visual Studio Image a Image katalog zavedena v sadě Visual Studio 2015.  
   
  Služba bitových kopií zavedena v sadě Visual Studio 2015 umožňuje vývojářům získat nejlepší Image pro zařízení a uživatele zvolené motivu a zobrazte obrázek, včetně správné motivy pro daný kontext, ve kterém jsou zobrazeny. Zavádění bitové kopie služeb vám pomohou eliminovat hlavní slabiny týkající se údržby asset, HDPI škálování a motivů.  
@@ -178,7 +176,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
   
 ||||  
 |-|-|-|  
-|**– Element**|**Atributy (všechny povinné)**|**Definice**|  
+|**Element**|**Atributy (všechny povinné)**|**Definice**|  
 |\<Velikost >|Hodnota|Zdroj se použije pro Image dané velikosti (v jednotkách zařízení). Image bude čtvereček.|  
 |\<SizeRange >|MinSize MaxSize|Zdroj se použije pro obrázky z MinSize pro parametr MaxSize (v jednotkách zařízení) (včetně). Image bude čtvereček.|  
 |\<Dimenze >|Šířka, výška|Zdroj se použije pro Image dané šířky a výšky (v jednotkách zařízení).|  

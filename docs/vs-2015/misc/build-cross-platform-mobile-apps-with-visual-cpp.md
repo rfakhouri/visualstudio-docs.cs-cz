@@ -1,7 +1,7 @@
 ---
 title: Vytvářejte multiplatformní mobilní aplikace s jazykem Visual C++ | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: douge
-ms.openlocfilehash: dfb8924c40a33abe817f9546ae5ec87192b84836
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b7f30378f863e119c121b1805aa5f805fa60ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667532"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260169"
 ---
 # <a name="build-cross-platform-mobile-apps-with-visual-c"></a>Vytvářejte multiplatformní mobilní aplikace s jazykem Visual C++
 Kódu napříč platformami můžete vytvořit pro zařízení Windows, iOS a Android pomocí Visual C++ pro vývoj mobilních řešení napříč platformami. Toto je volitelná funkce k dispozici v sadě Visual Studio 2015, který umožňuje vývoj kódu pro iOS, Android a Windows pomocí jazyka Visual C++ pro různé platformy.  

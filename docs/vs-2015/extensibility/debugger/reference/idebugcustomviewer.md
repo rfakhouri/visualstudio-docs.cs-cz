@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomViewer | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67bea9c931cc702c2f79d1a94b3ae33511518e07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 814bf0b43d217f3309e50c54db70bef850e6ed50
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674710"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257579"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [IDebugCustomViewer](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcustomviewer).  
-  
 Toto rozhraní umožňuje vyhodnocovače výrazů (EE) k zobrazení hodnoty vlastnosti v libovolné formát je nezbytné.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -48,7 +46,7 @@ IDebugCustomViewer : IUknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Položky DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Provede cokoli, co je nutné zobrazit danou hodnotou.|  
+|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Provede cokoli, co je nutné zobrazit danou hodnotou.|  
   
 ## <a name="remarks"></a>Poznámky  
  Toto rozhraní se používá při hodnoty vlastnosti nelze zobrazit běžné způsoby – třeba index Mei tabulku dat nebo jiný typ komplexní vlastnost. Vlastní prohlížeč, jako je znázorněn `IDebugCustomViewer` rozhraní, se liší od typu vizualizéru, což je externí program pro zobrazení dat určitého typu bez ohledu na to, EE. EE implementuje vlastní prohlížeč, který je specifický pro tento EE. Uživatel vybere typu vizualizéru chcete použít, už to jsou vizualizér typů nebo vlastní prohlížeč. Zobrazit [Visualizing a zobrazení dat](../../../extensibility/debugger/visualizing-and-viewing-data.md) podrobnosti o tomto procesu.  

@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: použití AsyncPackage k načtení rozšíření VSPackages na pozadí | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -9,18 +9,16 @@ ms.topic: article
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
-ms.openlocfilehash: 5c37ba734da58b1681f2eb70c106bd9cdac7c89b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95a9efd6976f57b2466b82d9cbe4bec9e5bf2545
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672016"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262596"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Postupy: použití AsyncPackage k načtení rozšíření VSPackages na pozadí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: použití AsyncPackage k načtení rozšíření VSPackages na pozadí](https://docs.microsoft.com/visualstudio/extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background).  
-  
 V / v disku může způsobit načtením a inicializací balíček VS. V případě takových vstupně-výstupních operací na vlákno uživatelského rozhraní může vést k problémů s rychlostí odezvy. Z toho Visual Studio 2015 zavedené <xref:Microsoft.VisualStudio.Shell.AsyncPackage> třídu, která umožňuje načítání balíčku na vlákně na pozadí.  
   
 ## <a name="creating-an-asyncpackage"></a>Vytváření AsyncPackage  

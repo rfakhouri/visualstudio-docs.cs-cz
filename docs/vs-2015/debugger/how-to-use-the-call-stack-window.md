@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: použití okna zásobník volání | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75b617e9de62c20cc1e8a32cf993f5f03201f4fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0e79c491eeec373bd3753a5ea55777a079cc51ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774907"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271658"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Postupy: Použití okna Zásobník volání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazit zásobník volání v ladicím programu v sadě Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-call-stack-window).  
-  
 S použitím **zásobník volání** okně můžete zobrazit volání funkce nebo procedury, které jsou aktuálně na zásobníku.  
   
  **Zásobník volání** okně se zobrazí název jednotlivých funkcí a programovací jazyk, který je napsán. Název funkce nebo procedury mohou doprovázet volitelné informace, jako je například název modulu, číslo řádku a názvy parametrů, typy a hodnoty. Zobrazení této volitelné informace můžete zapnout nebo vypnout.  

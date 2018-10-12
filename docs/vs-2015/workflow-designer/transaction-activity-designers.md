@@ -1,7 +1,7 @@
 ---
 title: Návrháři aktivit transakcí | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 3bd211dbc2f9bf10eb00092dcd7501a20c724afc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85afc69eae7e2478be9d98ec714048509bac3236
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633617"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266147"
 ---
 # <a name="transaction-activity-designers"></a>Návrháři aktivit transakcí
 Aktivita transakce, návrháři se používají k vytvoření a konfigurace transakční aktivity, jako kompenzaci a potvrďte. V tématech obsažené v této části a uvedené v následující tabulce najdete pokyny, jak používat [!INCLUDE[wfd2](../includes/wfd2-md.md)] návrhářů aktivit a šablony.  
@@ -26,16 +26,16 @@ Aktivita transakce, návrháři se používají k vytvoření a konfigurace tran
  [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)  
  Umožňuje vytvořit a nakonfigurovat <xref:System.Activities.Statements.CancellationScope> aktivity.  
   
- [Aktivita CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)  
+ [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)  
  Umožňuje vytvořit a nakonfigurovat <xref:System.Activities.Statements.CompensableActivity> aktivity.  
   
- [Kompenzace](../workflow-designer/compensate-activity-designer.md)  
+ [Compensate](../workflow-designer/compensate-activity-designer.md)  
  Umožňuje vytvořit a nakonfigurovat <xref:System.Activities.Statements.Compensate> aktivity.  
   
- [potvrzení](../workflow-designer/confirm-activity-designer.md)  
+ [Confirm](../workflow-designer/confirm-activity-designer.md)  
  Umožňuje vytvořit a nakonfigurovat <xref:System.Activities.Statements.Confirm> aktivity.  
   
- [Objekt TransactionScope](../workflow-designer/transactionscope-activity-designer.md)  
+ [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)  
  Umožňuje vytvořit a nakonfigurovat <xref:System.Activities.Statements.TransactionScope> aktivity.  
   
 ## <a name="reference"></a>Odkaz  

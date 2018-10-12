@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: Přidání diagramů tříd do projektů (návrhář tříd) | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c0264aa4a514b8e508ef9d06ba75f212b629b99c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0246975fbe5d0537c8a2f0a792e6d1acb9852e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670556"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271385"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Postupy: Přidání diagramů tříd do projektů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: Přidání diagramů tříd do projektů (návrhář tříd)](https://docs.microsoft.com/visualstudio/ide/how-to-add-class-diagrams-to-projects-class-designer).  
-  
 Přidání diagramu tříd do projektu Visual C# .NET, Visual Basic .NET nebo C++ navrhnout, upravit a Refaktorovat třídy a jiné typy. Pokud chcete vizualizovat různé části kódu v projektu, přidáte více diagramů tříd do projektu.  
   
  Diagramy tříd nelze vytvořit z projektů, které sdílejí kód mezi více aplikacemi. Vytvoření diagramů tříd UML, najdete v tématu [vytvořit modelování projektů a diagramů UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  

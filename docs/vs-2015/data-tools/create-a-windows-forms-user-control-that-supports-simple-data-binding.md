@@ -1,7 +1,7 @@
 ---
 title: Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje jednoduchou datovou vazbu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a5cb2d1e9d1ea175122381c19fa93c9abc07b2a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f761f28ebbe069d3fe0b0d0c468194247a36dafa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260888"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje jednoduchou datovou vazbu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytvořit uživatelský ovládací prvek, který podporuje jednoduchou datovou vazbu](https://docs.microsoft.com/visualstudio/data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding).  
-  
   
 Při zobrazení dat ve formulářích v aplikacích Windows, můžete vybrat z existujících ovládacích prvků **nástrojů**, nebo můžete vytvořit vlastní ovládací prvky, pokud vaše aplikace vyžaduje funkce, které nejsou k dispozici ve standardní ovládací prvky. Tento návod ukazuje, jak vytvořit ovládací prvek, který implementuje <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Ovládací prvky, které implementují <xref:System.ComponentModel.DefaultBindingPropertyAttribute> může obsahovat jednu vlastnost, která může být vázaný na data. Tyto ovládací prvky jsou podobné <xref:System.Windows.Forms.TextBox> nebo <xref:System.Windows.Forms.CheckBox>.  
   

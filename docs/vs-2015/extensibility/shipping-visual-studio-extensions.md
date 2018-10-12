@@ -1,7 +1,7 @@
 ---
 title: Přesouvání rozšíření sady Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,18 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c419de36379b277a661442e2d863696db02c105
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ac367f2482a6b8bc5b5b25fca72e8ca05e1f58b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666099"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260174"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Odesílání rozšíření sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Poznámka:**: The Galerie sady Visual Studio teď nahrazuje Visual Studio Marketplace. Zobrazte nejnovější verzi tohoto tématu podrobnosti.
 
-Nejnovější verzi tohoto tématu můžete najít v [přesouvání rozšíření sady Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/shipping-visual-studio-extensions).  
   
 Po dokončení vývoje rozšíření, nainstalujte ho na jiné počítače, sdílet s přáteli nebo kolegy nebo ho publikovat v Galerii Visual Studio. V této části vám vysvětlíme, vše, co musíte udělat, aby bylo možné publikovat a spravovat vaše rozšíření: práce se soubory VSIX, publikování, lokalizace a aktualizace.  
   
@@ -64,7 +63,7 @@ Po dokončení vývoje rozšíření, nainstalujte ho na jiné počítače, sdí
 |[Anatomie balíčku VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Popisuje součásti balíčku VSIX.|  
 |[Šablona projektu VSIX](../extensibility/vsix-project-template.md)|Obsahuje podrobné pokyny o tom, jak zabalit a publikovat rozšíření.|  
 |[Lokalizace balíčků VSIX](../extensibility/localizing-vsix-packages.md)|Vysvětluje, jak zajistit lokalizovaný text pro proces instalace pomocí extension.vsixlangpack soubory.|  
-|[Postupy: aktualizace rozšíření](../extensibility/how-to-update-a-visual-studio-extension.md)|Popisuje postup aktualizace rozšíření ve vašem systému a jak nasadit aktualizace do existujícího rozšíření sady Visual Studio.|  
+|[Postupy: Aktualizace rozšíření](../extensibility/how-to-update-a-visual-studio-extension.md)|Popisuje postup aktualizace rozšíření ve vašem systému a jak nasadit aktualizace do existujícího rozšíření sady Visual Studio.|  
 |[Postupy: Přidání závislosti k balíčku VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Popisuje, jak přidat odkazy na balíčky VSIX pro nasazení.|  
 |[Příprava rozšíření pro nasazení Instalační služby systému Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Vysvětluje, jak nasazení vašeho rozšíření Instalační služby systému Windows.|  
 |[Podepisování balíčků VSIX](../extensibility/signing-vsix-packages.md)|Vysvětluje, jak k podepisování balíčků VSIX.|  

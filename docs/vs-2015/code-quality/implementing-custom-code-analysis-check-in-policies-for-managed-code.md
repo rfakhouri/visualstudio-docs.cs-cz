@@ -1,7 +1,7 @@
 ---
 title: Implementace vlastních zásad analýzy kódu vrácení se změnami pro spravovaný kód | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6f0fe69b8afd4a33a783126b6006cbbb5545ba3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268967"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementace vlastních zásad vrácení se změnami Analýzy kódu pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zásad vložení změn implementace vlastní analýza kódu pro spravovaný kód](https://docs.microsoft.com/visualstudio/code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code).  
-  
 Určuje sadu pravidel, které členy týmového projektu musí běžet na zdrojovém kódu před vrácením se změnami do správy verzí, zásady vrácení se změnami analýzy kódu. Společnost Microsoft poskytuje sadu standard *sad pravidel* pravidel analýzy kódu této skupiny do funkčních oblastí. *Vlastní zásady vrácení se změnami sady pravidel* zadat sadu pravidel analýzy kódu, které jsou specifické pro týmový projekt. Sada pravidel je uložené v souboru analýza.  
   
  Nastavit na úrovni týmového projektu a určeného umístění soubor .ruleset ve stromu ovládacích prvků verze zásad vrácení se změnami. Nejsou žádná omezení umístění ovládacího prvku verze sady team zásad vlastní pravidlo.  

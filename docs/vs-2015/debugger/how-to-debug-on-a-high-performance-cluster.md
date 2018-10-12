@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: ladění na vysoký výkon clusteru | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ce148ab317b14aad6cd1e2c48a6f9245c81df98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5d57e1ff9a4ab082698b1c5d31b09a668cdc1c5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262545"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Postupy: Ladění na klastru s vysokým výkonem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: ladění na vysoký výkon clusteru](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-on-a-high-performance-cluster).  
-  
 Ladění programu multiprocesingem na vysoký výkon clusteru je jako ladění program ve vzdáleném počítači. Existuje ale několik dalších důležitých informací. Obecné nastavení vzdálené požadavky najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  
   
  Při ladění na vysoký výkon clusteru můžete použít všechny [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ladění systému windows a techniky, které jsou k dispozici pro vzdálené ladění. Vzhledem k tomu, že ladíte vzdáleně, ale okno externí konzoly není k dispozici.  

@@ -1,7 +1,7 @@
 ---
 title: Příkazy definované prostředím IDE pro rozšíření systémů projektů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b00a83774185b4fe65ee2b7171e25492320b5bfb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ac4cb73c5875a37d25a1eb8f4fe8600657c4b2a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672417"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270765"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Příkazy definované prostředím IDE pro rozšíření systémů projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [IDE-Defined příkazy pro rozšíření systémů projektů](https://docs.microsoft.com/visualstudio/extensibility/internals/ide-defined-commands-for-extending-project-systems).  
-  
 Pokud chcete rozšíření systémů projektů, můžete použít příkazy a příkaz skupiny poskytované [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrovaného vývojového prostředí.  
   
  Příkaz položky, které jsou obzvláště užitečné pro rozšíření systémů projektů naleznete v následujících částech.  

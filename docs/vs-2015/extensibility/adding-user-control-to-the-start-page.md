@@ -1,7 +1,7 @@
 ---
 title: Přidání uživatelského ovládacího prvku na úvodní stránku | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3c2ccd76343cd340725751bf1ce2c332fe96c37
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774785"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259984"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Přidání uživatelského ovládacího prvku na úvodní stránku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přidání uživatelského ovládacího prvku na úvodní stránku](https://docs.microsoft.com/visualstudio/extensibility/adding-user-control-to-the-start-page).  
-  
 Tento návod ukazuje, jak přidat knihovnu DLL odkaz na vlastní úvodní stránky. Příklad přidá uživatelský ovládací prvek do řešení, vytvoří uživatelský ovládací prvek a potom odkazuje na sestavení ze souboru .xaml úvodní stránku. Na nové kartě hostuje uživatelský ovládací prvek, který funguje jako základní webový prohlížeč.  
   
  Stejný postup můžete přidat libovolné sestavení, kterou lze volat ze souboru .xaml.  

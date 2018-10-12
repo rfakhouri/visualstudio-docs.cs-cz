@@ -1,7 +1,7 @@
 ---
 title: Přizpůsobení textových a obrazových polí | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 125830eed33bd86be983fdc4b48a7c79cf84fa5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73f14e2b581ea5a9c0bd22f50c11ed205c0f804
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675661"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271125"
 ---
 # <a name="customizing-text-and-image-fields"></a>Přizpůsobení textových a obrazových polí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přizpůsobení textových a obrazových polí](https://docs.microsoft.com/visualstudio/modeling/customizing-text-and-image-fields).  
-  
 Při definování dekoratér text obrazce, je reprezentována TextField. Příklady inicializace TextFields a dalších ShapeFields zkontrolujte Dsl\GeneratedCode\Shapes.cs ve vašem řešení DSL.  
   
  Třídy TextField je objekt, který spravuje oblast uvnitř obrazce, jako je například místo přiřazené k popisku. Jedna instance třídy TextField jsou sdílena mezi mnoha tvary stejné třídy. Instance třídy TextField neukládá text popisku odděleně pro každou instanci: místo toho `GetDisplayText(ShapeElement)` metoda má tvar jako parametr a můžete vyhledat text závisí na aktuální stav tvaru a jeho element modelu.  

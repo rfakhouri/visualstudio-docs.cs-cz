@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: synchronizace sad pravidel projektu kódu pomocí zásady vracení se změnami projektu týmu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d7d20680fdba3affa5da4ee917fb12bf1b98457b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682060"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263117"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Postupy: Synchronizace sady pravidel projektu kódu se zásadou vrácení se změnami týmového projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: synchronizace sady pravidel projektu kódu pomocí zásad vracení se změnami týmového projektu](https://docs.microsoft.com/visualstudio/code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy).  
-  
 Synchronizovat nastavení analýzy kódu pro projekty kódu mají zásady vrácení se změnami pro týmový projekt tak, že zadáte sadu pravidel, která obsahuje aspoň pravidla, která jsou uvedená v pravidle nastavit zásady vrácení se změnami. Váš vedoucí vývojář může informovat o název a umístění sada pravidel pro zásadu vrácení se změnami. Jeden z následujících možností můžete zajistit, že analýzy kódu pro projekt používá správné sady pravidel:  
   
 -   Pokud zásady vrácení se změnami používá jedné sady předdefinovaných pravidel společnosti Microsoft, otevřete dialogové okno Vlastnosti projektu kódu, zobrazení stránky pro analýzu kódu a vyberte pravidlo, nastavte na stránce analýzy kódu v nastavení projektu kódu. Společnost Microsoft sad standardních pravidel jsou automaticky nainstalován se sadou Visual Studio jsou nastaveny na jen pro čtení a by neměla být upravována. Pokud se neupravují sady pravidel, pravidel zásad a nastaví místní pravidlo zaručeno tak, aby odpovídaly.  

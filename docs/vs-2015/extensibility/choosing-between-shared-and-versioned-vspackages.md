@@ -1,7 +1,7 @@
 ---
 title: Volba mezi sdíleným a Verzovaným rozšířením VSPackages | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 14b2ec1884fcbbebb28667e04d03e2c1424175dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d642c265104f490739613897e1fd5c177ac0d6f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263689"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Volba mezi sdíleným a verzovaným rozšířením VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [výběr mezi sdílené a vyvíjených balíčků VSPackage](https://docs.microsoft.com/visualstudio/extensibility/choosing-between-shared-and-versioned-vspackages).  
-  
 Různé verze sady Visual Studio můžou existovat společně na stejném počítači. Rozšíření VSPackages může podporovat všechny kombinace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verze.  
   
  Povolíte-souběžnými instalacemi balíčků VSPackage pomocí kteréhokoliv z dvou strategií, sdílené strategii nebo systémovou správou verzí strategie. Obě podle přítomnosti více verzí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a související verze [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  

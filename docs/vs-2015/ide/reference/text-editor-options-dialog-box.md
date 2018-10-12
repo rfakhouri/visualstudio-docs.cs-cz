@@ -1,7 +1,7 @@
 ---
 title: Dialogové okno textový Editor možnosti | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fef1fee7b91d43b543f9baaccce40686554604f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 939438c2506a95c98005144dde395028d18cc481
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674291"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260231"
 ---
 # <a name="text-editor-options-dialog-box"></a>Dialogové okno Možnosti textového editoru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dialogové okno Možnosti textového editoru](https://docs.microsoft.com/visualstudio/ide/reference/text-editor-options-dialog-box).  
-  
   
 Možnosti editoru **možnosti** dialogové okno poskytují způsoby, jak upravit vzhled a chování editoru.  
   
@@ -57,43 +55,43 @@ Možnosti editoru **možnosti** dialogové okno poskytují způsoby, jak upravit
  [Nastavení možností editoru pro konkrétní jazyk](../../ide/reference/setting-language-specific-editor-options.md)  
  Vysvětluje, jak nastavení možností editoru, které platí pouze pro jeden vývojový jazyk.  
   
- [Možnosti, textový Editor, obecné](../../ide/reference/options-text-editor-general.md)  
+ [Možnosti, Textový editor, Obecné](../../ide/reference/options-text-editor-general.md)  
  Vysvětluje možnosti obecného editoru.  
   
- [Možnosti, textový Editor, přípona souboru](../../ide/reference/options-text-editor-file-extension.md)  
+ [Možnosti, Textový editor, Přípona souboru](../../ide/reference/options-text-editor-file-extension.md)  
  Vysvětluje možnosti rozšíření souboru.  
   
- [Možnosti, textový Editor, všechny jazyky](../../ide/reference/options-text-editor-all-languages.md)  
+ [Možnosti, Textový editor, Všechny jazyky](../../ide/reference/options-text-editor-all-languages.md)  
  Vysvětluje možnosti dostupné pro všechny jazyky.  
   
- [Možnosti, textový Editor, všechny jazyky, karty](../../ide/reference/options-text-editor-all-languages-tabs.md)  
+ [Možnosti, Textový editor, Všechny jazyky, Tabulátory](../../ide/reference/options-text-editor-all-languages-tabs.md)  
  Vysvětluje možnosti tabulátoru, které jsou k dispozici pro všechny jazyky.  
   
- [Možnosti, textový Editor, Basic (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)  
+ [Možnosti, Textový editor, Basic (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)  
  Vysvětluje možnosti jazyka Visual Basic.  
   
- [Možnosti, textový Editor, C/C++, formátování](../../ide/reference/options-text-editor-c-cpp-formatting.md)  
+ [Možnosti, Textový editor, C/C++, Formátování](../../ide/reference/options-text-editor-c-cpp-formatting.md)  
  Vysvětluje možnosti formátování C/C++.  
   
- [Možnosti, textový Editor, C/C++, Upřesnit](../../ide/reference/options-text-editor-c-cpp-advanced.md)  
+ [Možnosti, Textový editor, C/C++, Upřesnit](../../ide/reference/options-text-editor-c-cpp-advanced.md)  
  Vysvětluje možnosti jazyka C/C++, Upřesnit.  
   
- [Možnosti, textový Editor, C#, formátování vzorků](../../ide/reference/options-text-editor-csharp-formatting.md)  
+ [Možnosti, Textový editor, C#, Formátování](../../ide/reference/options-text-editor-csharp-formatting.md)  
  Vysvětluje možnosti formátování C#.  
   
- [Možnosti, textový Editor, C#, Upřesnit](../../ide/reference/options-text-editor-csharp-advanced.md)  
+ [Možnosti, Textový editor, C#, Upřesnit](../../ide/reference/options-text-editor-csharp-advanced.md)  
  Popisuje možnosti pokročilé C#.  
   
- [Možnosti, textový Editor, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
+ [Možnosti, Textový editor, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
  Vysvětluje možnosti technologie IntelliSense jazyka C#.  
   
- [Možnosti, textový Editor, JavaScript, formátování](../../ide/reference/options-text-editor-javascript-formatting.md)  
+ [Možnosti, Textový editor, JavaScript, Formátování](../../ide/reference/options-text-editor-javascript-formatting.md)  
  Vysvětluje možnosti formátování jazyka JavaScript.  
   
- [Možnosti, textový Editor, JavaScript, IntelliSense](../../ide/reference/options-text-editor-javascript-intellisense.md)  
+ [Možnosti, Textový editor, JavaScript, IntelliSense](../../ide/reference/options-text-editor-javascript-intellisense.md)  
  Vysvětluje možnosti technologie IntelliSense jazyka JavaScript.  
   
- [Možnosti, textový Editor, XAML, formátování](../../ide/reference/options-text-editor-xaml-formatting.md)  
+ [Možnosti, Textový editor, XAML, Formátování](../../ide/reference/options-text-editor-xaml-formatting.md)  
  Vysvětluje možnosti formátování XAML.  
   
 ## <a name="related-sections"></a>Související oddíly  

@@ -1,7 +1,7 @@
 ---
 title: Lokalizace aplikací ClickOnce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 285c1273114fe7f59b2ee0bb6bc612d18cbaf32e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7c3b8527bf96ee783de6ac975117bd4c797d426
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261466"
 ---
 # <a name="localizing-clickonce-applications"></a>Lokalizace aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [lokalizace aplikací ClickOnce](https://docs.microsoft.com/visualstudio/deployment/localizing-clickonce-applications).  
-  
 Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou verzi. Tento proces zahrnuje text uživatelského rozhraní (UI) pro jazyk specifický pro oblast, pomocí správné datum a formátování měny, nastavení velikosti ovládacích prvků ve formuláři, překlad a zrcadlení ovládací prvky zprava doleva v případě potřeby.  
   
  Lokalizace aplikace výsledky při vytváření satelitních sestavení pro jeden nebo více. Každé sestavení obsahuje řetězce, obrázky a další prostředky, které jsou specifické pro danou jazykovou verzi uživatelského rozhraní. (Hlavní spustitelný soubor aplikace obsahuje řetězce pro výchozí jazykovou verzi pro vaši aplikaci.)  

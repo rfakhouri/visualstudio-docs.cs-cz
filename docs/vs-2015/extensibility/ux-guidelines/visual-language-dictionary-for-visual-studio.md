@@ -1,7 +1,7 @@
 ---
 title: Slovník vizuálního jazyka pro sadu Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9eee2e412024cdb9eae7669d65e2283fc24488d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667786"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267628"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Slovník vizuálního jazyka pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Visual slovník jazyka pro sadu Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio).  
-  
 Visual Studio používá společný jazyk visual k objasnění konceptů, které jsou stavební kameny nástroje jeho používá a dalších obrázcích. Při navrhování nových ikon, slouží k identifikaci konceptů, které mají být umístěny ve vlastní image tohoto slovníku.  
   
  **Obecné pokyny**  
@@ -58,7 +56,7 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 |**Akce** ikonu lze použít také jako poznámka k označení, že základní akce se provede pomocí automatické nastavení.|||  
 |**Aktivita**|![Ikona aktivity](../../extensibility/ux-guidelines/media/vld-c-activity.png "VLD_C_Activity")|![Ikona aktivity kód](../../extensibility/ux-guidelines/media/vld-c-activity-codeactivity.png "VLD_C_Activity_CodeActivity") aktivitě s kódem|  
 |**objekt actor**|![Ikona objektu actor](../../extensibility/ux-guidelines/media/vld-c-actor.png "VLD_C_Actor")||  
-|**Přidat**|![Přidat ikonu](../../extensibility/ux-guidelines/media/vld-c-add.png "VLD_C_Add")|![Přidat ikonu správy testů všechny ovladače](../../extensibility/ux-guidelines/media/vld-c-add-addalldrivertests.png "VLD_C_Add_AddAllDriverTests") přidat všechny testy ovladač![ikonu Přidat přílohu](../../extensibility/ux-guidelines/media/vld-c-add-addattachment.png "VLD_C_Add_AddAttachment") přidat přílohu ![Ikonu Přidat chování](../../extensibility/ux-guidelines/media/vld-c-add-addbehavior.png "VLD_C_Add_AddBehavior") přidat chování|  
+|**Add**|![Přidat ikonu](../../extensibility/ux-guidelines/media/vld-c-add.png "VLD_C_Add")|![Přidat ikonu správy testů všechny ovladače](../../extensibility/ux-guidelines/media/vld-c-add-addalldrivertests.png "VLD_C_Add_AddAllDriverTests") přidat všechny testy ovladač![ikonu Přidat přílohu](../../extensibility/ux-guidelines/media/vld-c-add-addattachment.png "VLD_C_Add_AddAttachment") přidat přílohu ![Ikonu Přidat chování](../../extensibility/ux-guidelines/media/vld-c-add-addbehavior.png "VLD_C_Add_AddBehavior") přidat chování|  
 |**Adresa**|![Ikona adresy](../../extensibility/ux-guidelines/media/vld-c-address.png "VLD_C_Address")||  
 |**Upozornění**|![Ikona upozornění](../../extensibility/ux-guidelines/media/vld-c-alert.png "VLD_C_Alert")||  
 |**Alfa kanál**|![Ikona alfa kanál](../../extensibility/ux-guidelines/media/vld-c-alphachannel.png "VLD_C_AlphaChannel")||  
@@ -66,7 +64,7 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 |**Aplikace** projektu|![Ikona aplikace](../../extensibility/ux-guidelines/media/vld-c-application.png "VLD_C_Application")|![Ikona chyby role aplikace](../../extensibility/ux-guidelines/media/vld-c-application-applicationroleerror.png "VLD_C_Application_ApplicationRoleError") Chyba role aplikace![C&#43; &#43; ikony projektu knihovny MFC](../../extensibility/ux-guidelines/media/vld-c-application-cppmfcproject.png "VLD_C_Application_ CPPMFCProject") projektu knihovny MFC C++|  
 |**Oblast**|![Ikona](../../extensibility/ux-guidelines/media/vld-c-area.png "VLD_C_Area")|![Křivkový ikony plošného grafu](../../extensibility/ux-guidelines/media/vld-c-area-splineareachart.png "VLD_C_Area_SplineAreaChart") Křivkový plošný graf![Skládaný ikona řady](../../extensibility/ux-guidelines/media/vld-c-area-stackedareaseries.png "VLD_C_Area_StackedAreaSeries") skládaný plošný řady|  
 |**Uspořádat**|![Uspořádat ikony](../../extensibility/ux-guidelines/media/vld-c-arrange.png "VLD_C_Arrange")|![Ikona obrazce uspořádat](../../extensibility/ux-guidelines/media/vld-c-arrange-arrangeshapes.png "VLD_C_Arrange_ArrangeShapes") uspořádat obrazce![automaticky&#45;uspořádat ikony tvary](../../extensibility/ux-guidelines/media/vld-c-arrange-autoarrangeshapes.png "VLD_C_Arrange_AutoArrangeShapes") Automaticky uspořádat tvary|  
-|**přiřazení**|![Přiřaďte ikony](../../extensibility/ux-guidelines/media/vld-c-assign.png "VLD_C_Assign")||  
+|**Assign**|![Přiřaďte ikony](../../extensibility/ux-guidelines/media/vld-c-assign.png "VLD_C_Assign")||  
 |**Přidružení**|![Ikona přidružení](../../extensibility/ux-guidelines/media/vld-c-association.png "VLD_C_Association")|![Přidat přidružení ikonu](../../extensibility/ux-guidelines/media/vld-c-association-addassociation.png "VLD_C_Association_AddAssociation") Přidat přidružení![přidružení ikonu](../../extensibility/ux-guidelines/media/vld-c-association-editassociation.png "VLD_C_Association_EditAssociation") upravit přidružení|  
 |**Asymetrické**|![Asymetrické ikonu](../../extensibility/ux-guidelines/media/vld-c-asymmetric.png "VLD_C_Asymmetric")||  
 |**Asymetrické** koncept je reprezentována srovnáním opačné trénováním (například Světlý/tmavý nebo doleva nebo doprava).|||  
@@ -115,7 +113,7 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 |**Sloupec**|![Sloupce ikonu](../../extensibility/ux-guidelines/media/vld-c-column.png "VLD_C_Column")|![AutoSize sloupce ikonu](../../extensibility/ux-guidelines/media/vld-c-column-autosizecolumn.png "VLD_C_Column_AutosizeColumn") Autosize sloupce![sloupce ikonu podrobností](../../extensibility/ux-guidelines/media/vld-c-column-columndetails.png "VLD_C_Column_ColumnDetails") podrobnosti sloupce![ Ikona chyby sloupce](../../extensibility/ux-guidelines/media/vld-c-column-columnerror.png "VLD_C_Column_ColumnError") chybu sloupce|  
 |**Komentář** zpětnou vazbu, poznámky|![Komentář &#40;bublinu&#41; ikonu](../../extensibility/ux-guidelines/media/vld-c-comment-bubble.png "VLD_C_Comment_bubble")|![Přidat ikonu komentáře](../../extensibility/ux-guidelines/media/vld-c-comment-bubble-addcomment.png "VLD_C_Comment_bubble_AddComment") přidat komentář![ikonu popisku](../../extensibility/ux-guidelines/media/vld-c-comment-bubble-callout.png "VLD_C_Comment_bubble_Callout") popisek|  
 |**Komentář (kód)**|![Komentář &#40;kód&#41;](../../extensibility/ux-guidelines/media/vld-c-comment-lines.png "VLD_C_Comment_lines")|![Zrušit komentář ikonu](../../extensibility/ux-guidelines/media/vld-c-comment-lines-uncomment.png "VLD_C_Comment_lines_Uncomment") zrušit komentář|  
-|**Porovnání**|![Porovnání ikonu](../../extensibility/ux-guidelines/media/vld-c-compare.png "VLD_C_Compare")|![Porovnání dat ikonu](../../extensibility/ux-guidelines/media/vld-c-compare-comparedata.png "VLD_C_Compare_CompareData") porovnání dat![porovnat složky](../../extensibility/ux-guidelines/media/vld-c-compare-comparefolders.png "VLD_C_Compare_CompareFolders") porovnat složky![ Ikona sestav porovnání výkonu](../../extensibility/ux-guidelines/media/vld-c-compare-compareperformancereports.png "VLD_C_Compare_ComparePerformanceReports") porovnat sestavy výkonu|  
+|**Compare**|![Porovnání ikonu](../../extensibility/ux-guidelines/media/vld-c-compare.png "VLD_C_Compare")|![Porovnání dat ikonu](../../extensibility/ux-guidelines/media/vld-c-compare-comparedata.png "VLD_C_Compare_CompareData") porovnání dat![porovnat složky](../../extensibility/ux-guidelines/media/vld-c-compare-comparefolders.png "VLD_C_Compare_CompareFolders") porovnat složky![ Ikona sestav porovnání výkonu](../../extensibility/ux-guidelines/media/vld-c-compare-compareperformancereports.png "VLD_C_Compare_ComparePerformanceReports") porovnat sestavy výkonu|  
 |**Komponenta**|![Ikona komponenty](../../extensibility/ux-guidelines/media/vld-c-component.png "VLD_C_Component")|![Ikona Přidat součást](../../extensibility/ux-guidelines/media/vld-c-component-addcomponent.png "VLD_C_Component_AddComponent") přidat součást![ikona diagramu součástí](../../extensibility/ux-guidelines/media/vld-c-component-componentdiagram.png "VLD_C_Component_ComponentDiagram") komponenty diagram![ikonu součásti Windows Phone RT](../../extensibility/ux-guidelines/media/vld-c-component-phonewindowsrtcomponent.png "VLD_C_Component_PhoneWindowsRTComponent") komponenty RT Windows Phone|  
 |**Připojení**|![Ikona připojení](../../extensibility/ux-guidelines/media/vld-c-connect.png "VLD_C_Connect")|![Ikona Přidat připojení](../../extensibility/ux-guidelines/media/vld-c-connect-addconnection.png "VLD_C_Connect_AddConnection") přidat připojení![ikonu připojení testovacího plánu](../../extensibility/ux-guidelines/media/vld-c-connect-connecttestplan.png "VLD_C_Connect_ConnectTestPlan") připojit testovacího plánu ![Připojit k prostředí ikonu](../../extensibility/ux-guidelines/media/vld-c-connect-connecttoenvironment.png "VLD_C_Connect_ConnectToEnvironment") připojit k prostředí|  
 |**Console**|![Ikona konzoly](../../extensibility/ux-guidelines/media/vld-c-console.png "VLD_C_Console")|![Ikona testu konzoly](../../extensibility/ux-guidelines/media/vld-c-console-consoletest.png "VLD_C_Console_ConsoleTest") testovací konzole|  
@@ -286,7 +284,7 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
 |Koncept|Hlavní ikona|Další příklady|  
 |-------------|---------------|--------------------|  
 |**Balíček**|![Ikona balíčku](../../extensibility/ux-guidelines/media/vld-c-package.png "VLD_C_Package")|![Ikona balíčku cloud](../../extensibility/ux-guidelines/media/vld-c-package-cloudpackage.png "VLD_C_Package_CloudPackage") balíček cloudové ![ikonu Vytvořit balíček](../../extensibility/ux-guidelines/media/vld-c-package-createpackage.png "VLD_C_Package_CreatePackage") vytvořit balíček ![ Ikona šablony balíček ovladačů](../../extensibility/ux-guidelines/media/vld-c-package-driverpackagetemplate.png "VLD_C_Package_DriverPackageTemplate") šablony balíčku ovladačů|  
-|**paralelní**|![Paralelní ikonu](../../extensibility/ux-guidelines/media/vld-c-parallel.png "VLD_C_Parallel")|![Paralelní pro jednotlivé ikony](../../extensibility/ux-guidelines/media/vld-c-parallel-parallelforeach.png "VLD_C_Parallel_ParallelForEach") paralelní pro každý|  
+|**Parallel**|![Paralelní ikonu](../../extensibility/ux-guidelines/media/vld-c-parallel.png "VLD_C_Parallel")|![Paralelní pro jednotlivé ikony](../../extensibility/ux-guidelines/media/vld-c-parallel-parallelforeach.png "VLD_C_Parallel_ParallelForEach") paralelní pro každý|  
 |**oddíl**|![Ikona oddílu](../../extensibility/ux-guidelines/media/vld-c-partition.png "VLD_C_Partition")|![Ikona schéma oddílu](../../extensibility/ux-guidelines/media/vld-c-partition-partitionscheme.png "VLD_C_Partition_PartitionScheme") schéma oddílu ![novou ikonu oddílu](../../extensibility/ux-guidelines/media/vld-c-partition-newpartition.png "VLD_C_Partition_NewPartition") nový oddíl ![Ikonu funkce oddílu](../../extensibility/ux-guidelines/media/vld-c-partition-partitionfunction.png "VLD_C_Partition_PartitionFunction") oddílu – funkce|  
 |**Části**|![Ikona částí](../../extensibility/ux-guidelines/media/vld-c-parts.png "VLD_C_Parts")|![Ikona části přiřazeno](../../extensibility/ux-guidelines/media/vld-c-parts-assignedpart.png "VLD_C_Parts_AssignedPart") přiřazené část ![ikonu části Misassigned](../../extensibility/ux-guidelines/media/vld-c-parts-misassignedpart.png "VLD_C_Parts_MisassignedPart") Misassigned část|  
 |**Výkon**|![Ikona výkonu](../../extensibility/ux-guidelines/media/vld-c-performance.png "VLD_C_Performance")||  

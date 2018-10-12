@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Vytvoření vícevrstvé datové aplikace | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cac58d29870cd1ec7e4a6477c5ac3dba4e48cc1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bbe14f4eec069b7a7a65beb8c5ff2e2085b17e11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670365"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274609"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Návod: Vytvoření víceúrovňové datové aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: vytvoření vícevrstvé datové aplikace](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-creating-an-n-tier-data-application).  
-  
   
 N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou rozdělené do několika logické vrstvy, nebo *úrovně*. Rozdělení komponent aplikace do samostatných vrstev zvyšuje udržovatelnost a škálovatelnost aplikace. Dělá to tak, že umožněno snadnější přijímání nových technologií, které lze použít u jedné vrstvě, aniž by bylo potřeba změnit návrh celého řešení. N-vrstvá architektura obsahuje prezentační vrstvu, střední vrstvy, a datové vrstvy. Střední vrstva obvykle zahrnuje vrstvy přístupu k datům, vrstvy obchodní logiky a sdílené komponenty, jako je například ověřování a ověřování. Datová vrstva obsahuje relační databáze. N-vrstvá aplikace obvykle ukládá citlivé informace do vrstvy přístupu k datům z střední vrstvy, aby se zachovala izolace koncovým uživatelům, kteří přistupují k prezentační vrstvy. Další informace najdete v tématu [přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md).  
   
