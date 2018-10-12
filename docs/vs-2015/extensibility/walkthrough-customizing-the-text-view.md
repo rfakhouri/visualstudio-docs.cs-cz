@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Přizpůsobení zobrazení textu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39dca1309adeef8270ae7bb716c4274874451b91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 661c812625856551f2f6c8194fa97e5df21efbaf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631683"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199040"
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>Návod: Přizpůsobení zobrazení textu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: přizpůsobení zobrazení textu](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-customizing-the-text-view).  
-  
 Zobrazení textu lze přizpůsobit úpravou některý z následujících vlastností v jeho editor formátu mapy:  
   
 -   Okraj indikátoru  

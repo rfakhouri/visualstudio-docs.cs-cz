@@ -1,7 +1,7 @@
 ---
 title: JIT optimalizace a ladění | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb73c434c978f7a8b1847976c73fe2bff47e3b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e798d44371f04b955db9019c741100ce9e5e5ef6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672540"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201977"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimalizace a ladění JIT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [optimalizaci JIT a ladění](https://docs.microsoft.com/visualstudio/debugger/jit-optimization-and-debugging).  
-  
 Při ladění spravované aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] potlačuje optimalizaci kódu just-in-time (JIT) ve výchozím nastavení. Potlačení optimalizace JIT znamená, že ladíte neoptimalizovaný kód. Kód spustí o něco pomaleji, protože není optimalizován, ale využití ladění je mnohem důkladnější. Ladění optimalizovaného kódu je těžší a doporučuje se pouze, pokud narazíte na chybu, která vyskytuje v optimalizovaném kódu, ale nelze ji reprodukovat v neoptimalizované verzi.  
   
  Optimalizace JIT je ovládáno [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podle **potlačení optimalizace JIT při načtení modulu** možnost. Tuto možnost můžete najít na **Obecné** stránce v části **ladění** uzlu **možnosti** dialogové okno.  

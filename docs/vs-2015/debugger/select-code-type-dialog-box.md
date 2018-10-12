@@ -1,7 +1,7 @@
 ---
 title: Kód typu dialogové okno Vybrat | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87949e312607fd3461e370481aed344c392a02ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e25ff3a0c21288744306455735324d4d72547cb3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200899"
 ---
 # <a name="select-code-type-dialog-box"></a>Dialogové okno Vybrat typ kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vyberte typ dialogové okno kód](https://docs.microsoft.com/visualstudio/debugger/select-code-type-dialog-box).  
-  
 Chcete-li otevřít toto dialogové okno, otevřete **připojit k procesu** dialogové okno a pak klikněte na tlačítko **vyberte** tlačítko.  
   
  **Automaticky určit typ kódu k ladění**  

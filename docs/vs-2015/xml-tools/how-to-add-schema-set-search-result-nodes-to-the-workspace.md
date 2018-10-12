@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: přidání uzlů výsledků hledání v sadě schémat do pracovního prostoru | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19157704019a949a4b2590ff277bcabd3bb320f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75f254a8f64c3750a3c89e10016a0520d3760847
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674648"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210363"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Postupy: přidání uzlů výsledků hledání v sadě schémat do pracovního prostoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: přidání nastavení uzlů výsledků hledání schémat do pracovního prostoru](https://docs.microsoft.com/visualstudio/xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace).  
-  
   
 Toto téma vysvětluje, jak přidat uzly, kteří jsou zvýrazněni v Průzkumník schémat XML jako výsledek hledání klíčového slova v pracovním prostoru.  
   

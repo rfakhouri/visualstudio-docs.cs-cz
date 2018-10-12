@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Konfigurace a používání vlastní sady pravidel | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b17767f6bb0f8b72b9c06e2870146f6b037a7ca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5410127cd94bc8e43de4fec82597686d4c11805
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629305"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221634"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Návod: Konfigurace a používání vlastní sady pravidel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [názorný postup: Konfigurace a používání vlastní sady pravidel](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-configuring-and-using-a-custom-rule-set).  
-  
 Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které jsou nakonfigurované na použití vlastní *sada pravidel, která* na knihovny tříd. Můžete vybrat sadu pravidel, která má vztah k typu projektu, který jste zadali pro vaše řešení, nebo můžete vybrat alternativní pravidlo sady ke splnění se specifickými požadavky, jako je skenování starší verzi kódu pro problémy, které lze napravit pevná způsobem. V obou případech sady pravidel se taky dají upravit a vyladit je požadavky projektu.  
   
  V tomto podrobném návodu přesune se krokování přes tyto procesy:  

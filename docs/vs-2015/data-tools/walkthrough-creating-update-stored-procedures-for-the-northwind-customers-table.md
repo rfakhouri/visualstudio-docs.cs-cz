@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Vytvoření uložené procedury aktualizace pro tabulku zákazníků Northwind | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: bbcd68b7604f7a80546168406146f326e1bac224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4972c1341490f78bba03bdd390ac13903c55be84
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627800"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204045"
 ---
 # <a name="walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table"></a>Návod: Vytvoření uložené procedury aktualizace pro tabulku zákazníků Northwind
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -169,11 +169,11 @@ Témata nápovědy v [!INCLUDE[vs_current_short](../includes/vs-current-short-md
 ## <a name="next-steps"></a>Další kroky  
  Teď, když jste vytvořili, uložené procedury, zkuste následující návody, které ukazují, jak pracovat s nimi:  
   
- [Postupy: přiřazení uložených procedur za účelem aktualizace, vložení a odstranění (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
+ [Postupy: Přiřazení uložených procedur za účelem aktualizací, vkládání a odstraňování (Návrhář relací objektů)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
   
  [Návod: Vytvoření třídy LINQ to SQL (Návrhář O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)  
   
- [Návod: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)  
+ [Návod: Přizpůsobení chování tříd entit při vložení, aktualizaci a odstranění](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

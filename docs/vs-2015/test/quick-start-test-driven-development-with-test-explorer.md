@@ -1,7 +1,7 @@
 ---
 title: 'Rychlý Start: Testovací vývoj řízený testy s použitím Průzkumníka testů | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c2d55dde85bd5a1b18d4424515ef58e7c4c3273f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 335219920a10816535f19e7fc21d856b1eb1cd06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666591"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212339"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Rychlý začátek: Vývoj řízený testy s použitím Průzkumníka testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [rychlý Start: vývoj řízených testů pomocí Průzkumníka testů](https://docs.microsoft.com/visualstudio/test/quick-start-test-driven-development-with-test-explorer).  
-  
 Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně funguje napříč mnoha inkrementálními kroky vývoje. Existuje několik architektur, které můžete použít pro psaní jednotkových testů, včetně některých vyvinutých třetími stranami. Některá testovací rozhraní jsou zaměřena na testování v jiných jazycích či platformách. Průzkumník testů poskytuje tak jednotné rozhraní pro testování částí v některém z těchto rozhraní. Adaptéry jsou k dispozici pro nejčastěji používaná rozhraní a můžete napsat vlastní adaptér pro jiná rozhraní.  
   
  Průzkumník testů nahrazuje okna jednotkových testů starších vydání sady Visual Studio. Mezi její výhody patří:  

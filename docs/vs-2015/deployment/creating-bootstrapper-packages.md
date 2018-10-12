@@ -1,7 +1,7 @@
 ---
 title: Vytváření balíčků Bootstrapperu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ee6badf48d0d196001c948495f9b658114c66ff6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9224314dbcb5fcb424708c7dad4ca674af661604
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208900"
 ---
 # <a name="creating-bootstrapper-packages"></a>Vytváření balíčků zaváděcího nástroje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytváření balíčků Bootstrapperu](https://docs.microsoft.com/visualstudio/deployment/creating-bootstrapper-packages).  
-  
 Instalační program je obecný instalační program, který můžete konfigurovat k rozpoznání a instalování distribuovatelných součástí, jako jsou soubory Instalační služby systému Windows (.msi) a spustitelných programů. Instalační program se také nazývá zaváděcí nástroj. To je programován sadou XML manifestů, které mohou specifikovat metadata pro správu instalace součásti.  
   
  Zaváděcí nástroj nejprve zjistí, zda některé z požadavků jsou již nainstalovány. Pokud požadavky nejsou nainstalovány, nejprve zaváděcí nástroj zobrazí licenční podmínky. Za druhé po koncový uživatel přijetí licenčních smluv, začne instalace požadavků. Jinak pokud jsou zjištěny všechny požadavky, zaváděcí nástroj pouze spustí instalační program aplikace.  

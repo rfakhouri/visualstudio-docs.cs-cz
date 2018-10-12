@@ -1,7 +1,7 @@
 ---
 title: Rozšiřitelnost ladicího programu sady Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4c3a9644e7150ea31cca2aba927bbdbacb8b0eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca40964befc940bd0cf28457755f5f338ea36579
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670501"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212612"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Rozšiřitelnost programu Visual Studio Debugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [rozšiřitelnosti ladicího programu sady Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/debugger/visual-studio-debugger-extensibility).  
-  
 Visual Studio obsahuje ladicí program kód plně interaktivní zdroje, poskytuje efektivní a snadno použitelné nástroje pro sledování chyby v kódu ve svém programu. Ladicí program má úplnou podporu jazyka Visual Basic, C#, C/C++ a JavaScript. Nicméně s [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], která je k dispozici [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453),, jiných programovacích jazycích může být podporovaný v ladicím programu pomocí stejné bohaté funkce.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Ladicí program pro ladění součásti, které se následně specifické pro jazyk, který se právě ladí běžné front-endu (to znamená, uživatelského rozhraní). Pro nové jazyky, všechny, které je nezbytné pro podporu podle [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ladicí program je vytvoření potřebné komponenty back-end, jako je například ladicí stroj (DE). Tady [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] je k dispozici ve.  
@@ -45,7 +43,7 @@ Visual Studio obsahuje ladicí program kód plně interaktivní zdroje, poskytuj
  [Vytvoření vlastního ladicího stroje](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
  Vlastní proces DE od přípravy programu pro Německo do odpojení DE dokumenty.  
   
- [Zápis vyhodnocovací filtr výrazů modulu CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
+ [Zápis pro vyhodnocovač výrazů modulu CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
  Vysvětluje, zda je nutné napsat vyhodnocovače výrazů.  
   
  [Výběr strategie implementace ladicího stroje](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)  

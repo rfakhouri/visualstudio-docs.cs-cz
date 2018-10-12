@@ -1,7 +1,7 @@
 ---
 title: Typ Vizualizéru a vlastní prohlížeč | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d347e7b18722aa8f8901abac3966150b3dca97cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d71aeac0c3cde321df4f77874a2d679162cf1d54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666489"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201887"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Vizualizér typů a vlastní prohlížeč
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vizualizér typů a vlastní prohlížeč](https://docs.microsoft.com/visualstudio/extensibility/debugger/type-visualizer-and-custom-viewer).  
-  
 Typ vizualizéru je komponenta, která zobrazuje část dat ve velmi specifickém formátu. Tento formát je zcela v kompetenci implementátora vizualizéru, už to jsou koncového uživatele nebo jiného dodavatele vizualizéry.  
   
  Vlastní prohlížeč je součástí Chyba při vyhodnocování vlastní výraz, který zobrazuje část dat ve velmi specifickém formátu. Tento formát je zcela v kompetenci implementátora vlastní prohlížeč, což znamená, že formát až implementátora vyhodnocovací filtr výrazů (EE).  

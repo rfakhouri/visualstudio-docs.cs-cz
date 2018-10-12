@@ -1,7 +1,7 @@
 ---
 title: Příklady editoru obrázků | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f97ea4e992a3243da2a86d85d130cf14fdca54a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f6a00dfb0ce15280bb028fb38eb116754c43db1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629276"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206749"
 ---
 # <a name="image-editor-examples"></a>Příklady editoru obrázků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [příklady editoru obrázků](https://docs.microsoft.com/visualstudio/designers/image-editor-examples).  
-  
 Články v této části dokumentace obsahují příklady, které ukazují, jak můžete použít Editor obrázků.  
   
 ## <a name="related-topics"></a>Související témata  

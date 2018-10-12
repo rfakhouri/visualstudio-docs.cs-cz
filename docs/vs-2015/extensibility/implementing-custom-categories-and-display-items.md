@@ -1,7 +1,7 @@
 ---
 title: Implementace vlastních kategorií a zobrazovat položky | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c47bc8bc4cae609ad378dabaf64f239b7aa47c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4a9f18330060888527466c29f911a37ce29ce46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628295"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218670"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementace vlastní kategorie a zobrazit položky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [implementace vlastní kategorie a zobrazit položky](https://docs.microsoft.com/visualstudio/extensibility/implementing-custom-categories-and-display-items).  
-  
 VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrované vývojové prostředí (IDE) prostřednictvím vlastní kategorie a zobrazit položky.  
   
  Vlastní kategorie a zobrazení položek **písma a barvy** stránku vlastností. Chcete-li otevřít **písma a barvy** vlastnost na stránce **nástroje** nabídky, klikněte na tlačítko **možnosti**. Rozbalte **prostředí** a potom klikněte na tlačítko **písma a barvy**.  
@@ -141,5 +139,5 @@ VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUD
  [Písma a barvy informace pro barevné zvýraznění textu](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [Přístup k uložené písma a barev](../extensibility/accessing-stored-font-and-color-settings.md)   
  [Postupy: přístup k vestavěné písma a barvy schéma](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
- [Písma a barvy – přehled](../extensibility/font-and-color-overview.md)
+ [Přehled písem a barev](../extensibility/font-and-color-overview.md)
 

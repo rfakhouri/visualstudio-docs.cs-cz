@@ -1,7 +1,7 @@
 ---
 title: Aktivity starších verzí pracovních postupů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 7f661254b06174c12b4d7dece194e345ac0056bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ff21a431e380a281ce1261215367b89c4ecf1a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666124"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205396"
 ---
 # <a name="legacy-workflow-activities"></a>Aktivity starších verzí pracovních postupů
 [!INCLUDE[wf](../includes/wf-md.md)] obsahuje výchozí sadu aktivit, které poskytují funkce pro tok řízení, podmínky, zpracování událostí, správu stavu a komunikaci s aplikacemi a službami. Při návrhu pracovních postupů, můžete použít aktivity poskytnuté systémem, které jsou poskytovány [!INCLUDE[wfd1](../includes/wfd1-md.md)], nebo můžete vytvořit vlastní vlastní aktivity.  
@@ -83,10 +83,10 @@ ms.locfileid: "42666124"
  [Postupy: Vytvoření sady pravidel aktivit zásad (starší verze)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
  Ukazuje postup vytvoření sady pravidel aktivit zásad.  
   
- [Postupy: implementace operace kontraktu WCF (starší verze)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  
+ [Postupy: Implementace operace kontraktu technologie WCF (starší verze)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  
  Zobrazuje kroky k implementaci [!INCLUDE[indigo2](../includes/indigo2-md.md)] smlouvy operace.  
   
- [Postupy: vyvolání operace kontraktu WCF (starší verze)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
+ [Postupy: Vyvolání operace kontraktu technologie WCF (starší verze)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
  Ukazuje postup vyvolání [!INCLUDE[indigo2](../includes/indigo2-md.md)] smlouvy operace.  
   
 ## <a name="see-also"></a>Viz také  

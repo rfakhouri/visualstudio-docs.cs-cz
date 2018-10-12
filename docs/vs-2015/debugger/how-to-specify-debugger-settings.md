@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: určení nastavení ladicího programu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cbfe565c66650b310c674ef22ecee74ea31a498
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7251c2cf2c2b8d6879a85dfdc4427dc456fbf8f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685075"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215550"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Postupy: Určení nastavení ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: určení nastavení ladicího programu](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-debugger-settings).  
-  
 V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete zadat různá nastavení pro chování ladicího programu, včetně zobrazení proměnné, určuje, zda jsou uvedeny některé upozornění, jak nastavit zarážky a jak zásadní ovlivňuje spuštěné programy. Určení nastavení ladicího programu v **možnosti** dialogové okno.  
   
 ### <a name="to-set-debugger-options"></a>Chcete-li nastavit možnosti ladicího programu  

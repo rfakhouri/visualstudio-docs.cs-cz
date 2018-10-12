@@ -1,7 +1,7 @@
 ---
 title: Smíšený kód a chybějící informace v okně zásobník volání | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c91b2e49dc94057ab7929380ad1b819cd01731d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03277af5f1cca5c3ded7b43a82ca6bbe74c5e756
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675417"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212209"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Smíšený kód a chybějící informace v okně Zásobník volání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [smíšený kód a chybějící informace v okně zásobník volání](https://docs.microsoft.com/visualstudio/debugger/mixed-code-and-missing-information-in-the-call-stack-window).  
-  
 Kvůli rozdílům mezi zásobníky volání pro spravovaný a nativní kód nelze ladicí program vždy zobrazit úplný zásobník volání, když kód kombinace. Když nativní kód volá spravovaný kód, můžete si všimnout následující rozdíly v **zásobník volání** okno:  
   
 -   Nativní rámce přímo nad spravovaného kódu můžou chybět **zásobník volání** okna. Další informace najdete v tématu [postupy: vystoupení ze spravovaného kódu, pokud v okně zásobník volání chybějí nativní rámce](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
@@ -53,7 +51,7 @@ Kvůli rozdílům mezi zásobníky volání pro spravovaný a nativní kód nelz
  Obě jsou velmi malý. Zásobníky volání v nejvíce nativní volání spravovaného kódu, zobrazovat správně.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: použití okna zásobník volání](../debugger/how-to-use-the-call-stack-window.md)
+ [Postupy: Použití okna Zásobník volání](../debugger/how-to-use-the-call-stack-window.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: T4 Výstup – direktiva | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0eaa2d8e3fc257e14e04bad3cac706b8a3bc92a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e2d30c5d1dee578da14608a4e272fea09184a76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667845"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198520"
 ---
 # <a name="t4-output-directive"></a>T4 – direktiva Output
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [T4 – direktiva Output](https://docs.microsoft.com/visualstudio/modeling/t4-output-directive).  
-  
 V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] textových šablon, `output` – direktiva se používá k definování příponu názvu souboru a kódování transformovaný soubor.  
   
  Například pokud vaše [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekt obsahuje soubor šablony s názvem **MyTemplate.tt** obsahující následující direktivy:  

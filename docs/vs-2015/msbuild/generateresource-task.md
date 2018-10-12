@@ -1,7 +1,7 @@
 ---
 title: Generateresource – úloha | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b60160cf2d22756904dab4b3b0317bd67c84f4ae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6686e34ade66a3d4f2ec8ef23c9649bb5d7a1c47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672297"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212495"
 ---
 # <a name="generateresource-task"></a>GenerateResource – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [generateresource – úloha](https://docs.microsoft.com/visualstudio/msbuild/generateresource-task).  
-  
   
 Převede mezi txt a souborů .resx (formát založený na formátu XML prostředků) a common language runtime binárních souborů .resources, které může být vložen do binárního spustitelného souboru modulu nebo zkompilovány do satelitních sestavení. Tato úloha je obvykle používána pro převod souborů .txt nebo .resx na soubory Resource. `GenerateResource` Úkolu je funkčně podobný [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
   

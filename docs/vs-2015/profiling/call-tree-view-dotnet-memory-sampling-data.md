@@ -1,7 +1,7 @@
 ---
 title: Zobrazení stromu volání – Data vzorkování paměti .NET | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c24cec082e7935275d776832d96a63e910c7997a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc2f0354a01bc2f706e2ddec6c21b1513f8d5778
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681955"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212872"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Zobrazení stromu volání – data vzorkování paměti .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení stromu volání – Data vzorkování paměti .NET](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-dotnet-memory-sampling-data).  
-  
 Zobrazení stromu volání zobrazí cesty spuštění funkce, které byly Procházet v profilované aplikaci. Kořen stromu je vstupním bodem do aplikace nebo komponenty. Každý uzel funkce jsou uvedené všechny funkce, které ji volaly a data o přidělování paměti .NET o volání těchto funkcí.  
   
  Hodnoty v zobrazení stromu volání jsou pro instance funkce, které byly volány nadřazené funkce ve stromu volání. Procentní hodnoty se počítá srovnáním hodnota instance funkce celkového počtu nebo velikosti přidělení při spuštění profilace.  

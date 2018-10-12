@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: přizpůsobení sloupců zobrazení sestavy | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14e6e751f826d0ee52db5f00712a225f2171ecc9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5bc7b18e4df3baac4f6acb65d39c9ab66bcafa5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671984"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202809"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Postupy: Přizpůsobení sloupců zobrazení sestavy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: přizpůsobení sloupců zobrazení sestavy](https://docs.microsoft.com/visualstudio/profiling/how-to-customize-report-view-columns).  
-  
 Nástroje pro sledování výkonu v aplikaci Visual Studio Team System Development Edition jsou plně integrované do integrovaného vývojového prostředí (IDE) pro zajištění integrované uživatelské prostředí. V následujícím seznamu je zástupce zobrazení, které je možné přizpůsobit pomocí přidání, odebrání a změna uspořádání sloupců:  
   
 -   [Zobrazení modulů](../profiling/modules-view.md)  
@@ -41,11 +39,11 @@ Nástroje pro sledování výkonu v aplikaci Visual Studio Team System Developme
   
 -   [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view.md)  
   
--   [Zobrazení volající/volaný](../profiling/caller-callee-view.md)  
+-   [Zobrazení Volající/Volaný](../profiling/caller-callee-view.md)  
   
 -   [Zobrazení stromu volání](../profiling/call-tree-view.md)  
   
--   [Přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md)  
+-   [Zobrazení přidělení](../profiling/dotnet-memory-allocations-view.md)  
   
 -   [Zobrazení doby života objektu](../profiling/object-lifetime-view.md)  
   

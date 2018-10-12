@@ -1,7 +1,7 @@
 ---
 title: Příkaz Nahradit v souborech | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8df474b7ca65983d7bf7203e2d3e2146fbede6f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eba6dfcf95c006fb05d4faaa0c370c9dba56e4e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682051"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197662"
 ---
 # <a name="replace-in-files-command"></a>Nahradit v souborech – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [nahradit v souborech – příkaz](https://docs.microsoft.com/visualstudio/ide/reference/replace-in-files-command).  
-  
   
 Nahradí text v souborech pomocí některé podsady z možností, které jsou k dispozici na **nahradit v souborech** karty **najít a nahradit** okna.  
   

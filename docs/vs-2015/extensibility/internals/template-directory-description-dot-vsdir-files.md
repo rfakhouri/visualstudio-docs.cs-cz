@@ -1,7 +1,7 @@
 ---
 title: Popis šablony adresáře (. Soubory VSDIR) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0d4281201c0aa7d699deb5c1d2d9ae1b183fd76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 733f59b4498ccec80b1223c87e32de0fab2ded69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201971"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Soubory popisu adresáře šablon (.Vsdir)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [popisu adresáře šablon (. Soubory VSDIR)](https://docs.microsoft.com/visualstudio/extensibility/internals/template-directory-description-dot-vsdir-files).  
-  
 Soubor popisu adresáře šablon (.vsdir) je textový soubor, který umožňuje integrované vývojové prostředí (IDE) pro zobrazení složek, souborů průvodce .vsz a souborů šablon, které jsou spojené s projektem v dialogových oknech. Obsah zahrnuje jeden záznam na souboru nebo složky. Všechny soubory .vsdir v odkazované umístění jsou sloučeny, i když jediný projektový soubor je obvykle zadáváno popisující více složek, průvodců nebo soubory šablon.  
   
  Složky (v podadresářích), soubory, které jsou odkazovány v souboru .vsdir a samotný soubor .vsdir jsou umístěny ve stejném adresáři. Když integrovaného vývojového prostředí spustí průvodce, nebo zobrazuje složky nebo souboru v **nový projekt** nebo **přidat novou položku** dialogových oknech, rozhraní IDE prozkoumá adresáře, který obsahuje prováděnou soubory, které chcete zjistit, zda je soubor .vsdir k dispozici. Pokud je nalezen soubor .vsdir, rozhraní IDE načte ji k určení, zda obsahuje položku pro spuštěný nebo zobrazené složky nebo souboru. Pokud se položka nenajde, integrovaném vývojovém prostředí používá spuštění průvodce nebo zobrazení obsahu.  

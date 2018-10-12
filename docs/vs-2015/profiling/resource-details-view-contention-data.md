@@ -1,7 +1,7 @@
 ---
 title: Zobrazení – Data kolizí podrobností prostředků | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 760240544971062da3a5161eab7d203ba6d097c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a99cce1d78c91ce2300e30127d0e5375d2cc1b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627645"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203720"
 ---
 # <a name="resource-details-view---contention-data"></a>Zobrazení podrobností o prostředku – data kolizí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení podrobností o prostředku – Data kolizí](https://docs.microsoft.com/visualstudio/profiling/resource-details-view-contention-data).  
-  
 Zobrazení podrobností prostředků zobrazí graf časové osy blokujících událostí, které byly způsobeny kolizí nad vybraný prostředek. Blokování události dojde, když vlákno je nucen k pozastavení provádění, protože jiné vlákno má uzamčený přístup k prostředku.  
   
  Toto zobrazení představuje na časové ose spuštění každého vlákna jako vodorovný pruh a představuje všechny blokující události jako svislá čára na ose vlákna. V případě potřeby můžete zvětšit části časové osy a zobrazte jednotlivé události. Chcete-li zobrazit cesta provedení (zásobník volání) funkcí, které vedly k události, klikněte na panel události. Funkce se zobrazí v **zásobník volání** okna. Pokud zdrojový kód funkce je k dispozici, můžete kliknout na upravit zdrojový soubor v rozhraní pro název funkce [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

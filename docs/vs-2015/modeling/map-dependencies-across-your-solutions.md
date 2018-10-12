@@ -1,12 +1,12 @@
 ---
 title: Mapování závislostí napříč vaším řešením | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
 - vs.progression.standardgraphsdialog
@@ -32,18 +32,16 @@ caps.latest.revision: 245
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 06dc2d18ab6641847e2f0edb0d34cb671bca28a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae5e9491b8a02293a48a3ccc3e5e21a87fa5e878
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633228"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200769"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapování závislostí napříč vaším řešením
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [mapování závislostí napříč vaším řešením](https://docs.microsoft.com/visualstudio/modeling/map-dependencies-across-your-solutions).  
-  
 Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořením map kódu. Díky tomu můžete zjistit, jak zapadá kód společně bez přečtení soubory a řádky kódu.  
   
  ![Zobrazení závislostí napříč vaším řešením](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
@@ -384,7 +382,7 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
   
 -   [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)  
   
--   [Mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)  
+-   [Mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)  
   
 -   [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   

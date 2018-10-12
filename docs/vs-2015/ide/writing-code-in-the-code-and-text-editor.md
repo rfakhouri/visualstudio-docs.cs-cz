@@ -1,7 +1,7 @@
 ---
 title: Psaní kódu v editoru kódu a textový Editor | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -65,18 +65,15 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb879efdc3370578d57b529194a9a8790c9136dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632498"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220529"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Psaní kódu v editoru kódu a textovém editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Nejnovější verzi tohoto tématu můžete najít v [psaní kódu v editoru kódu a textovém editoru](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
-
 Editor sady Visual Studio poskytuje mnoho funkcí, které usnadňují zápis a správu kódu. Můžete rozbalit nebo sbalit různé bloky kódu pomocí osnovy. Další informace o kódu, který používáte pomocí technologie IntelliSense, **prohlížeče objektů**a hierarchii volání. Můžete přejít dovnitř kódu pomocí funkcí **přejít na**, **přejít k definici**, a **najít všechny odkazy**. Můžete vložit bloky kódu pomocí fragmentů kódu a může generovat kód pomocí funkcí **Generovat z využití**. Pokud jste nikdy nepoužívali před editoru sady Visual Studio 2015, přečtěte si téma [úpravy kódu](https://www.visualstudio.com/features/ide-vs) a získejte rychlý přehled.  
 
  Zobrazí se váš kód v několika různými způsoby. Zobrazení tříd řešení zobrazíte můžete otevřít **zobrazení tříd** okno nebo rozbalte uzly v **Průzkumníka řešení** v části soubory tříd.  
@@ -201,7 +198,7 @@ Tato funkce je zvláště užitečné, pokud váš kód obsahuje dlouhé názvy.
 
 -   [Použití vývojového prostředí sady Visual Studio pro jazyk C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Možnosti, textový Editor, JavaScript, formátování](../ide/reference/options-text-editor-javascript-formatting.md)  
+-   [Možnosti, Textový editor, JavaScript, Formátování](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>V tomto oddílu  
 

@@ -1,7 +1,7 @@
 ---
 title: Sada pravidel nativní minimální pravidla | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2b1c2f599a3f700bb9e04d3f423690b46059b385
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8163e3f95dcf6230e2ef286950edb43cdd22cbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668562"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210155"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Sada pravidel Nativní minimální pravidla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sada pravidel nativní minimální pravidla](https://docs.microsoft.com/visualstudio/code-quality/native-minimum-rules-rule-set).  
-  
 Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůležitější problémy v nativním kódu, včetně možných bezpečnostních děr a selhání aplikace. Měli byste zahrnout tuto sadu pravidel v jakékoli vlastní sadě pravidel, že kterou vytvoříte pro vaše nativní projekty.  
   
 |Pravidlo|Popis|  

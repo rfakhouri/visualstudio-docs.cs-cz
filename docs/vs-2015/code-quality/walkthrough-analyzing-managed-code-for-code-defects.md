@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Analýza spravovaného kódu na výskyt závad kódu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9137e7319cd8cddfb54ab4b6a6929567b24bb6e5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c8bf9d1f293895c762348752b64c7be8cf6d510
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672348"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217476"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Návod: Analýza spravovaného kódu na výskyt závad v kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: Analýza spravovaného kódu pro defekty kódu](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-analyzing-managed-code-for-code-defects).  
-  
 V tomto podrobném návodu analyzovat spravovaný projekt závad v kódu pomocí nástroje Analýza kódu.  
   
  Tento návod vás postupně provede procesem pomocí analýzy kódu pro analýzu sestavení .NET spravovat kód pro soulad s pokyny návrhu rozhraní Microsoft .NET Framework.  

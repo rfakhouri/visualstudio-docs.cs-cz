@@ -1,7 +1,7 @@
 ---
 title: Zápis funkce háku ladění | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,31 +28,29 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5761b0a32e7739a5611f2d3d07183f0c529fc60c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4439b3c308a3c76172b0de4aa5c8a95f92092c5b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676141"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218982"
 ---
 # <a name="debug-hook-function-writing"></a>Zápis funkce háku ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zápis funkce háku ladění](https://docs.microsoft.com/visualstudio/debugger/debug-hook-function-writing).  
-  
 Tato část popisuje některé funkce háku ladění vlastní, můžete napsat a, které umožňují vložit kód do některé předdefinované body v normálním zpracování ladicího programu.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Funkce háku bloku klienta](../debugger/client-block-hook-functions.md)  
+ [Funkce volání bloku klienta](../debugger/client-block-hook-functions.md)  
  Poskytuje pokyny a vzor pro psaní funkcí, které sestavy dat uložených v blocích po _CLIENT_BLOCK obsah nebo ověření.  
   
- [Funkce háku přidělení](../debugger/allocation-hook-functions.md)  
+ [Funkce volání přidělení](../debugger/allocation-hook-functions.md)  
  Definuje funkci háku přidělení, zkoumá různé používá, body omezení a poskytuje prototypu.  
   
  [Háky přidělení a přidělení paměti CRT](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)  
  Popisuje omezení pro funkce háku přidělení explicitně ignorování `_CRT_BLOCK` zablokuje, pokud volání funkcí knihovny run-time jazyka C, které přidělit vnitřní paměti. Toto téma rovněž uvádí důsledky, pokud vaše háku přidělení neignoruje `_CRT_BLOCK` bloky (příklady) a jak změnit výchozí přidělení funkci, připojení **CrtDefaultAllocHook**.  
   
- [Funkce háku sestavy](../debugger/report-hook-functions.md)  
+ [Funkce volání sestavy](../debugger/report-hook-functions.md)  
  Tento článek popisuje `_CrtSetReportHook`, které můžete použít k filtrování sestavy a zaměřte se na konkrétní typy přidělení. Toto téma obsahuje také prototypu.  
   
 ## <a name="related-sections"></a>Související oddíly  

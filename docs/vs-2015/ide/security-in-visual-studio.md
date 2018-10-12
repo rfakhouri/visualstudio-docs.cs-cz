@@ -1,7 +1,7 @@
 ---
 title: Zabezpečení v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5952b42426f09a0f6e3bcdb6faf318774165f587
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 17f34f3bdef587b679789d4ebb34a4b15bd4cf63
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198169"
 ---
 # <a name="security-in-visual-studio"></a>Zabezpečení v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zabezpečení v sadě Visual Studio](https://docs.microsoft.com/visualstudio/ide/security-in-visual-studio).  
-  
 Zabezpečení byste měli věnovat pozornost ve všech aspektech vývoje aplikace od návrhu až po nasazení. Začněte tím, co spustíte Visual Studio. Zobrazit [uživatelská oprávnění](../ide/user-permissions-and-visual-studio.md).  
   
  Abyste mohli efektivně vyvíjet bezpečné aplikace, měli byste znát základní principy konceptů zabezpečení a funkce zabezpečení platforem, pro které vyvíjíte. Také je třeba porozumět bezpečným technikám kódování.  

@@ -1,7 +1,7 @@
 ---
 title: Prostředí sady Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d96d4204e105324a9c209f74f9aee160c3eddde
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f0ef1e207fffc4d44963b968caad392b9d976c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633247"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222401"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [prostředí sady Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/internals/visual-studio-shell).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Prostředí je primární agenta integrace v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Prostředí obsahuje potřebné funkce, které umožňují rozšíření VSPackages sdílení společných služeb. Protože architektury cílem [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] je vzor průmyslovému primární funkce v balíčcích VSPackage, prostředí je rámec, který poskytuje základní funkce a podporují různé komunikaci mezi komponenty rozšíření VSPackages.  
   
 ## <a name="shell-responsibilities"></a>Odpovědnosti prostředí  

@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: určení umístění souboru se symboly z příkazového řádku | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f482c839ffe98c7be8147bbed45fa9fda69b4c85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1661788c010d55586413060d1e79b3630fa2d89e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672185"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220061"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Postupy: Určení umístění souboru se symboly z příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: určení umístění souboru se symboly z příkazového řádku](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-symbol-file-locations-from-the-command-line).  
-  
 Vsperfreport – nástroj příkazového řádku k zobrazení informací o symbolu, jako jsou názvy funkcí a čísla řádků, vyžaduje přístup k soubory symbolů (PDB) PROFILOVANÉHO komponent a souborů systému Windows. Soubory symbolů se vytvoří při kompilaci komponentu. Další informace najdete v tématu [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport automaticky vyhledá soubory symbolů v následujících umístěních:  
   
 -   Cesty zadané **/symbolpath** možnost nebo v **_NT_SYMBOL_PATH** proměnné prostředí.  
@@ -69,7 +67,7 @@ Vsperfreport – nástroj příkazového řádku k zobrazení informací o symbo
   
  Následující příkaz VSPerfReport přidá C:\Projects\Symbols adresář do cesty pro hledání pomocí **/symbolpath** možnost.  
   
- **VSPerfReport***MyApp* **Summary /SymbolPath:C:\Projects\Symbols .exe** 
+ **VSPerfReport***MyApp* **Summary /SymbolPath:C:\Projects\Symbols .exe**
 
 
 

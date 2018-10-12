@@ -1,7 +1,7 @@
 ---
 title: Nastavení pravidel rozšířená pravidla pokynů návrhu pro spravovaný kód | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb9b8544d2d4f902bf5bd64afc937f505990b736
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b486156a2b2fb9161b20441cfb8e62c2a9b4bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628931"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207815"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Sada pravidel Rozšířená pravidla pokynů návrhu pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sada pravidel rozšířená pravidla pokynů návrhu pro spravovaný kód](https://docs.microsoft.com/visualstudio/code-quality/extended-design-guidelines-rules-rule-set-for-managed-code).  
-  
 Sada pravidel pravidla obecných zásad rozšířené návrhu Microsoft rozšiřuje možnosti návrhu základní pravidla obecných zásad pro maximalizaci problémů použitelnosti a udržovatelnosti, které jsou hlášeny. Je kladen zvláštní důraz na pokyny pro pojmenování. Zvažte zahrnutí této sady, pokud váš projekt zahrnuje kód knihovny nebo pokud chcete zajistit nejvyšší standardy pro psaní kódu, který se snadnou údržbou pravidel.  
   
  Rozšířená pravidla obecných zásad návrhu zahrnují všechna pravidla pro základní obecných zásad návrhu společnosti Microsoft. Základní pravidla obecných zásad návrhu zahrnují všechny Microsoftu Minimální doporučená pravidla. Další informace najdete v tématu [sada pravidel základní pravidla obecných zásad návrhu pro spravovaný kód](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) a [sada pravidel spravovaná doporučená pravidla pro spravovaný kód](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

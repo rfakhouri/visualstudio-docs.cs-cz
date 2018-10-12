@@ -1,7 +1,7 @@
 ---
 title: Vytvoření komentářů k dokumentaci XML pro technologie IntelliSense jazyka JavaScript | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3801fb58f09ac70c26e21304957e31f7b3ec4ddc
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: d15144a2cee70e5f6bdc496bf2c09eb8fb95c85d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881017"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220555"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Vytvoření komentářů k dokumentaci XML pro technologie IntelliSense jazyka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dokumentace k sadě Visual Studio 2017](/visualstudio/).  
-  
 *Dokumentační komentáře XML* jsou JavaScript komentáře, že přidáte do skriptu k poskytnutí informací o kódu prvky, jako jsou functions, polí a proměnné. V sadě Visual Studio tyto textové popisy jsou zobrazovány s technologií IntelliSense při odkazu funkce skriptu.  
   
  Toto téma obsahuje základní kurz o používání dokumentační komentáře XML. Další informace o použití další prvky, jako například [ \<var >](../ide/var-javascript.md) a [ \<hodnota >](../ide/value-javascript.md)a další příklady naleznete v tématu [dokumentační komentáře XML ](../ide/xml-documentation-comments-javascript.md). Informace o získání informací technologie IntelliSense pro asynchronní zpětné volání, jako `Promise`, naleznete v tématu [ \<vrátí >](../ide/returns-javascript.md).  

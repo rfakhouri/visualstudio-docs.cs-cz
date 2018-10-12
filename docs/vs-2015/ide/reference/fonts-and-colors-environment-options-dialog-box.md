@@ -1,7 +1,7 @@
 ---
 title: Písma a barvy, prostředí, dialogové okno Možnosti | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8831cfdbf22d80cce39fbae81fffa46b8944e92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d080945edc13d0f4542fdd9c981037af108325c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675592"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220703"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Písma a barvy, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [písma a barvy, prostředí, dialogové okno Možnosti](https://docs.microsoft.com/visualstudio/ide/reference/fonts-and-colors-environment-options-dialog-box).  
-  
   
 **Písma a barvy** stránku **možnosti** dialogové okno umožňuje vytvořit vlastní písma a barvy režim pro různé prvky uživatelského rozhraní v integrovaném vývojovém prostředí (IDE). Toto dialogové okno se zpřístupní po kliknutí **Nástroje / možnosti**a pak vyberete **prostředí / písma a barvy**. Pokud se tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  
   
@@ -243,7 +241,7 @@ Nejnovější verzi tohoto tématu můžete najít v [písma a barvy, prostřed�
 ## <a name="see-also"></a>Viz také  
  [Dialogové okno Možnosti prostředí](../../ide/reference/environment-options-dialog-box.md)   
  [Dialogové okno Možnosti](../../ide/reference/options-dialog-box-visual-studio.md)   
- [Postupy: Změna písma a barvy](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Postupy: Změna písma a barev](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 
 

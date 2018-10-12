@@ -1,7 +1,7 @@
 ---
 title: Referenční dokumentace rozhraní API vizualizéru | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ab8b56cb8eea3424d03292d761816c7b7ac9fb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 849b8d93722f7ca70ba161b297449dc33cfd1acc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206346"
 ---
 # <a name="visualizer-api-reference"></a>Referenční dokumentace rozhraní API vizualizéru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Reference k rozhraní API Vizualizéru](https://docs.microsoft.com/visualstudio/debugger/visualizer-api-reference).  
-  
 Rozhraní API Vizualizéru jsou k dispozici pro uživatele, kteří chtějí zápis vizualizéru v ladicím programu sady Visual Studio. Vizualizéru je malá aplikace, která rozšiřuje uživatelské rozhraní funkce ladicího programu sady Visual Studio. Vizualizéru můžete zobrazit (a volitelně můžete upravit) objekt dat určitého typu, pro který je určen vizualizér.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
@@ -52,7 +50,7 @@ Rozhraní API Vizualizéru jsou k dispozici pro uživatele, kteří chtějí zá
 ## <a name="see-also"></a>Viz také  
  [Návod: Zápis Vizualizéru v jazyce C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [Postupy: zápis Vizualizéru](../debugger/how-to-write-a-visualizer.md)   
- [Vytváření vlastních Vizualizérů](../debugger/create-custom-visualizers-of-data.md)
+ [Vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Přepínače příkazového řádku nástroje devenv | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 459ab16b30882feb3d167d7668ffd660e6490cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ee1596cf59fb4ba9b21772cdabc0c875ef8779a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674851"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215031"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv – přepínače příkazového řádku
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přepínače příkazového řádku nástroje Devenv](https://docs.microsoft.com/visualstudio/ide/reference/devenv-command-line-switches).  
-  
   
 DEVENV umožňuje nastavit různé možnosti pro integrované vývojové prostředí (IDE) a také vytváření, ladění a nasazení projektů z příkazového řádku. Spuštění rozhraní IDE ze skriptu nebo soubor .bat, například noční sestavení skript, nebo spuštění integrovaného vývojového prostředí v konkrétní konfiguraci, použijte tyto přepínače.  
   
@@ -99,7 +97,7 @@ DEVENV umožňuje nastavit různé možnosti pro integrované vývojové prostř
 |[/ Sestavení (devenv.exe)](../../ide/reference/build-devenv-exe.md)|Sestaví zadané řešení nebo projekt podle konfigurace zadané řešení.<br /><br /> **/ Build myproj.csproj nástroje devenv**|  
 |[/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)|Odstraní všechny soubory vytvořené příkazem k sestavení, aniž by to ovlivnilo zdrojové soubory.<br /><br /> **DEVENV myproj.csproj / clean**|  
 |[/ Nasazení (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)|Sestaví řešení a spolu se soubory, které jsou nezbytné pro nasazení podle konfigurace řešení.<br /><br /> **DEVENV myproj.csproj / deploy**|  
-|[/ Diff](../../ide/reference/diff.md)|Porovná dva soubory.  Přebírá čtyři parametry: Zdrojovýsoubor, Cílovýsoubor, SourceDisplayName(optional),TargetDisplayName(optional).|  
+|[/Diff](../../ide/reference/diff.md)|Porovná dva soubory.  Přebírá čtyři parametry: Zdrojovýsoubor, Cílovýsoubor, SourceDisplayName(optional),TargetDisplayName(optional).|  
 |[/ InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md)|Registruje projekt nebo šablony položek, které se nacházejí v  *\<VisualStudioInstallDir >* \Common7\IDE\ProjectTemplates nebo  *\<VisualStudioInstallDir >* \Common7 \IDE\ItemTemplates tak, aby k nim může přistupovat prostřednictvím **nový projekt** a **přidat novou položku** dialogových oknech.<br /><br /> **/ Installvstemplates nástroje devenv**|  
 |[/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)|Umožňuje zadat soubor, který chcete zobrazovat chyby při sestavování.<br /><br /> **/ Build myproj.csproj DEVENV/out log.txt**|  
 |[/ Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)|Projekt k sestavení, vyčištění nebo nasazení. Tento přepínač můžete použít pouze v případě, že jste zadali také/Build, / rebuild, / clean nebo / deploy – přepínač.|  
@@ -110,7 +108,7 @@ DEVENV umožňuje nastavit různé možnosti pro integrované vývojové prostř
 |[/ Upgrade (devenv.exe)](../../ide/reference/upgrade-devenv-exe.md)|Upgrady na aktuální verzi v zadaném souboru řešení a všechny jeho soubory projektu nebo zadaný soubor projektu, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] formáty pro tyto soubory.|  
   
 ## <a name="see-also"></a>Viz také  
- [Obecné, prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)
+ [Obecné, Prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)
 
 
 

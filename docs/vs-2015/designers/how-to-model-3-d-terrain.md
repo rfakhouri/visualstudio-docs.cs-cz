@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: modelování 3D terénu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93bce3336a4ccb8731730616d36191fdf83c5241
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 217dcf8e4080727a3e0c76032e0796b380433e99
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676280"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202225"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Postupy: Modelování 3D terénu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: modelování 3D terénu](https://docs.microsoft.com/visualstudio/designers/how-to-model-3-d-terrain).  
-  
 Tento dokument popisuje způsob použití Editoru modelů a vytvořte model 3D terénu.  
   
  Tento dokument vysvětluje tyto činnosti:  

@@ -1,7 +1,7 @@
 ---
 title: Ukládání dat pomocí TableAdapter dbdirect – metody | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 69839a8f54b35bd932296b0dbd0126af3ac58ba2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6bb326f1cad6ea019c5d057ca24d198c28dca2a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669589"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220808"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Ukládání dat pomocí metod TableAdapter DBDirect
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ukládání dat pomocí TableAdapter dbdirect – metody](https://docs.microsoft.com/visualstudio/data-tools/save-data-with-the-tableadapter-dbdirect-methods).  
-  
   
 Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL přímo proti databázi s použitím dbdirect – metody třídy TableAdapter. Dbdirect – metody třídy TableAdapter poskytovat jemné úroveň kontroly nad aktualizace databáze. Můžete je použít ke spuštění konkrétních příkazů jazyka SQL a uložených procedur voláním jednotlivých `Insert`, `Update`, a `Delete` metody podle potřeb vaší aplikace (na rozdíl od přetížené `Update` metodu, která provádí aktualizace Příkazů INSERT a DELETE vše v jednom volání).  
   
@@ -115,7 +113,7 @@ Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL 
     |----------|----------|  
     |`InsertButton`|**Vložit**|  
     |`UpdateButton`|**Aktualizace**|  
-    |`DeleteButton`|**Odstranit**|  
+    |`DeleteButton`|**Delete**|  
   
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Přidat kód pro vkládání nových záznamů do databáze  
   

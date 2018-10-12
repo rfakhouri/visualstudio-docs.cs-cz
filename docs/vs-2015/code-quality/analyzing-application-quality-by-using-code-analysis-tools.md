@@ -1,7 +1,7 @@
 ---
 title: Analýza kvality aplikace pomocí nástrojů pro analýzu kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1b62ac482d18bc8844045d90d32f4d48416daeca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2dd66668efcba5264cc3a3646b627ec9be99e63
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667255"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216685"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analýza kvality aplikace pomocí nástrojů pro analýzu kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [analýza kvality aplikace pomocí nástrojů pro analýzu kódu](https://docs.microsoft.com/visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools).  
-  
 V tomto oddílu  
  [Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  
  Visual Studio analýzy kódu pro spravovaný kód poskytuje informace o spravovaných sestaveních, například porušení programování a návrhu pravidel stanovených v pokyny pro návrh rozhraní Microsoft .NET. Upozornění identifikují jakékoli relevantní problémy programování a návrhu a kdy je možné, poskytují informace o tom, jak tento problém vyřešit.  

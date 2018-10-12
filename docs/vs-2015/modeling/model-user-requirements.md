@@ -1,7 +1,7 @@
 ---
 title: Modelování uživatelských požadavků | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 30
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e7628db84a8f7515dfdf3ba9110ce1183751d8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ac55e2ec1d07c32c154b69cd467dfc534da6ae3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696367"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215823"
 ---
 # <a name="model-user-requirements"></a>Modelování uživatelských požadavků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [modelování uživatelských požadavků](https://docs.microsoft.com/visualstudio/modeling/model-user-requirements).  
-  
 Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživatelů ve vytvoření diagramů o svých aktivit a části systému hraje v usnadňuje dosáhli svých cílů. Model požadavků je sada tyto diagramy, z nichž každý se zaměřuje na různé aspekty potřebám uživatelů. Video ukázku naleznete v tématu: [modelování obchodní domény](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
   
  Které verze sady Visual Studio podporovat každý typ modelu najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -94,8 +92,8 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
   
 |Další informace o|Číst|  
 |--------------------|----------|  
-|Podrobnější informace o tom, jak vytvářet případy použití|[Diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|Prvků v diagramu případu použití|[Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)|  
+|Podrobnější informace o tom, jak vytvářet případy použití|[Diagramy případů použití UML: Pokyny](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Prvků v diagramu případu použití|[Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)|  
 |Postupy při vývoji kódu z případy použití|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="RequirementsClasses"></a> Definuje termíny používané k popisu požadavků  
@@ -139,8 +137,8 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
   
 |Další informace o|Číst|  
 |--------------------|----------|  
-|Podrobnější informace o vyhledání požadavky na třídy|[Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)|  
-|Elementy diagramu koncepční tříd|[Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)|  
+|Podrobnější informace o vyhledání požadavky na třídy|[Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)|  
+|Elementy diagramu koncepční tříd|[Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)|  
 |Postupy při vývoji kódu z koncepční tříd|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
  V diagramu tříd koncepční není obvykle vhodné umístit šipky na přidružení relevantní. Je to proto diagramu nepředstavuje implementace. Asociace reprezentují vztahy mezi objekty reálného světa. Následující [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření nastavit jiné směrové šipky jako výchozí: [vzorku: modelování UML domény funkce](http://go.microsoft.com/fwlink/?LinkId=213849).  
@@ -162,8 +160,8 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
   
 |Další informace o|Číst|  
 |--------------------|----------|  
-|Podrobnější informace o hledání a záznam statický obchodní pravidla|[Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)|  
-|Elementy diagramu koncepční tříd|[Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)|  
+|Podrobnější informace o hledání a záznam statický obchodní pravidla|[Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)|  
+|Elementy diagramu koncepční tříd|[Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)|  
 |Postupy při vývoji kódu, který splňuje obchodní pravidla|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="QoSRequirements"></a> Popisující kvality požadavků na služby  
@@ -188,7 +186,7 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
 |Další informace o|Číst|  
 |--------------------|----------|  
 |Podrobnější informace o nahrávání kvality požadavků na služby|[Pokyny pro definování kvality požadavků na služby](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
-|Připojení dalších dokumentů s případy použití|[Propojení případu použití s dokumenty a diagramy](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
+|Připojení dalších dokumentů s případy použití|[Propojení případu použití s dokumenty a diagramy](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Postupy při vývoji kódu, který dodržuje kvality požadavků na služby|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="Workflow"></a> Zobrazuje pracovní postup mezi uživateli a systému  
@@ -208,8 +206,8 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
   
 |Další informace o|Číst|  
 |--------------------|----------|  
-|Další informace o tom, jak definovat obchodní pracovní postupy|[Diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md)|  
-|Prvků v diagramu činnosti|[Diagramy činnosti UML: referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)|  
+|Další informace o tom, jak definovat obchodní pracovní postupy|[Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Prvků v diagramu činnosti|[Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)|  
 |Postupy při vývoji kódu z diagramů aktivit|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="Sequences"></a> Zobrazení interakce mezi uživateli a systému  
@@ -225,8 +223,8 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
   
 |Další informace o|Číst|  
 |--------------------|----------|  
-|Další informace o tom, jak definovat interakce|[Sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|Prvky v sekvenční diagram|[Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)|  
+|Další informace o tom, jak definovat interakce|[Sekvenční diagramy UML: Pokyny](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Prvky v sekvenční diagram|[Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)|  
 |Postupy při vývoji kódu v sekvenčních diagramů|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="using-a-model-to-reduce-inconsistencies"></a>Používání modelu ke snížení nekonzistence  

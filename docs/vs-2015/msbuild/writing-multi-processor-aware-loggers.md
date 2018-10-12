@@ -1,7 +1,7 @@
 ---
 title: Zápis více procesorů protokolovacích | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 628b1ef037e472f4295f2b82684a46a0bc5ba402
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 486c8e32b577b6c794a03c080a909023b40eafde
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668649"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219957"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Zápis protokolovacích nástrojů pro více procesorů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zápis více procesorů protokolovacích](https://docs.microsoft.com/visualstudio/msbuild/writing-multi-processor-aware-loggers).  
-  
   
 Schopnost [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] výhod více procesorů může zkrátit čas sestavení projektu, ale také zvyšuje složitost vytváření protokolování událostí. V prostředí s jedním procesorem události, zprávy, upozornění a chyby do protokolovacího nástroje předvídatelným, sekvenčním způsobem. V prostředí s více procesory mohou však události z různých zdrojů dorazí, ve stejnou dobu nebo mimo pořadí. K poskytování v takovém případě [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] poskytuje více-procesorů s ohledem na protokolovací nástroj a nový model protokolování a umožňuje vám vytvořit vlastní "předávající Protokolovací nástroje".  
   

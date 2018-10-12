@@ -1,7 +1,7 @@
 ---
 title: Použití poznámek SAL k omezení defektů kódu C / C++ | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 29
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdeb2c4d03d172d3bd2051077b3099515faf7b67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca7e8a406b02aa5d3b09d9ad588546ae3d965b89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42665999"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207009"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Použití poznámek SAL k snížení míry výskytu závad kódu C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [použití anotací SAL k omezení defektů kódu C/C++](https://docs.microsoft.com/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).  
-  
 Poznámky SAL je poznámka jazyk Microsoft zdrojového kódu. S použitím kódu poznámek ke zdroji, můžete provést záměr za kódu explicitní. Tyto poznámky také povolit automatické statické analýzy nástroje pro analýzu kódu přesněji, se výrazně menší počet falešně pozitivních výsledků a falešně negativní.  
   
  Články v této části dokumentace popisují aspekty SAL zadejte referenční SAL syntaxi a poskytnout příklady jeho použití.  
@@ -62,7 +60,7 @@ Poznámky SAL je poznámka jazyk Microsoft zdrojového kódu. S použitím kódu
   
      Obsahuje seznam vnitřních poznámky SAL.  
   
--   [Osvědčené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)  
+-   [Doporučené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)  
   
      Poskytuje příklady, které ukazují, jak použití anotací SAL. Také popisuje běžné nástrahy.  
   

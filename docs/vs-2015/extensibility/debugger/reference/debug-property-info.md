@@ -1,7 +1,7 @@
 ---
 title: DEBUG_PROPERTY_INFO | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41755b695cec2558b09a4b41224e974e526de424
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 803583f97465cbd7b6e73c4f9a50f3f56d3617b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670766"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202199"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [DEBUG_PROPERTY_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/debug-property-info).  
-  
 Obsahuje informace o vlastnosti ladění.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -99,5 +97,5 @@ public struct DEBUG_PROPERTY_INFO {
  [GetPropertyInfo –](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)   
  [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)   
  [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)   
- [Enumproperties –](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
+ [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Odstranění ~ SAK souborů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a11ed0972c403c4c3ea2a8b3f607135f12e9e315
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7dda375cb4657bc6fcc2089341600611b370e52b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667665"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216096"
 ---
 # <a name="elimination-of-sak-files"></a>Odstranění souborů ~SAK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [úplného Oproštění od ~ SAK soubory](https://docs.microsoft.com/visualstudio/extensibility/internals/elimination-of-tilde-sak-files).  
-  
 Zdrojový ovládací prvek modulu Plug-in API 1.2 ~ SAK soubory byly nahrazeny příznaky funkcí a nových funkcí, které zjišťují, jestli podporuje MSSCCPRJ souborové služby a sdílenými registracemi plug-in správy zdrojových kódů.  
   
 ## <a name="sak-files"></a>~ Souborů SAK  
@@ -46,9 +44,9 @@ Zdrojový ovládací prvek modulu Plug-in API 1.2 ~ SAK soubory byly nahrazeny p
  `SCC_CAP_MULTICHECKOUT`  
   
 ## <a name="new-functions"></a>Nové funkce  
- [Sccwillcreatesccfile –](../../extensibility/sccwillcreatesccfile-function.md)  
+ [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)  
   
- [Sccismulticheckoutenabled –](../../extensibility/sccismulticheckoutenabled-function.md)  
+ [SccIsMultiCheckoutEnabled](../../extensibility/sccismulticheckoutenabled-function.md)  
   
  Pokud více rezervace (sdílené) podporuje modul plug-in správy zdrojového kódu, pak deklaruje `SCC_CAP_MULTICHECKOUT` funkce a implementuje `SccIsMultiCheckOutEnabled` funkce. Tato funkce je volána pokaždé, když probíhá operace rezervace na kterýkoli z projektů se spravovanými zdroji.  
   

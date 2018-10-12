@@ -1,7 +1,7 @@
 ---
 title: Refaktoring tříd a typů (návrhář tříd) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8704977447a7f7aa45b7991ae4451818dc4bfb58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 215030b511ecbddbda23073df464035887f8ef95
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674155"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207958"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refaktoring tříd a typů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [refaktoring tříd a typů (návrhář tříd)](https://docs.microsoft.com/visualstudio/ide/refactoring-classes-and-types-class-designer).  
-  
 Když refaktorujete kód, můžete bylo snazší porozumět, udržovat a efektivnější tak, že změníte její interní strukturu a způsobu jeho objektů navržena, není externí chování. Ke snížení práci, kterou musíte udělat a riziko zavlečení chyby při refaktorování kódu jazyka Visual C# .NET, Visual Basic .NET nebo C++ v projektu sady Visual Studio pomocí návrháře tříd a okně podrobností třídy.  
   
 > [!NOTE]

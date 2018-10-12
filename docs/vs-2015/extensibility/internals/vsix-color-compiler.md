@@ -1,7 +1,7 @@
 ---
 title: Kompilátor barev VSIX | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08358c8d4b77834bf0dfefe626891de44b2b754c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3594d587f9d4968127b6e81a5c5e3b5549a9df89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666004"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207321"
 ---
 # <a name="vsix-color-compiler"></a>Kompilátor barev VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [kompilátor barev VSIX](https://docs.microsoft.com/visualstudio/extensibility/internals/vsix-color-compiler).  
-  
 Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, která přebírá soubor XML představující barvy pro existující motivů aplikace Visual Studio a převede jej .pkgdef souboru tak, aby tyto barvy, je možné v sadě Visual Studio. Protože jde snadno porovnat rozdíly mezi soubory .xml, tento nástroj je užitečný pro správu vlastních barev ve správě zdrojového kódu. Je také může využívat do prostředí sestavení tak, aby výstupy sestavení soubor .pkgdef platný.  
   
  **Schéma XML motivu**  
@@ -148,10 +146,10 @@ Je nástroj kompilátoru barva rozšíření Visual Studio konzolovou aplikaci, 
 |-|-|-|  
 |**Název přepínače**|**Poznámky**|**Požadované nebo volitelné**|  
 |Nepojmenované (soubor XML)|Toto je první nepojmenovaný parametr a cesta k souboru XML pro převod.|Požadováno|  
-|Nepojmenované (soubor .pkgdef)|Toto je druhá nepojmenovaný parametr a výstupní cesta k souboru generovaného .pkgdef.<br /><br /> Výchozí hodnota: \<název souboru XML > .pkgdef|Nepovinné|  
-|/ nologo|Informace o produktu a autorská práva tisk nastavení tohoto příznaku se zastaví.|Nepovinné|  
-|/?|Vytiskne informace nápovědy.|Nepovinné|  
-|/help|Vytiskne informace nápovědy.|Nepovinné|  
+|Nepojmenované (soubor .pkgdef)|Toto je druhá nepojmenovaný parametr a výstupní cesta k souboru generovaného .pkgdef.<br /><br /> Výchozí hodnota: \<název souboru XML > .pkgdef|volitelná,|  
+|/ nologo|Informace o produktu a autorská práva tisk nastavení tohoto příznaku se zastaví.|volitelná,|  
+|/?|Vytiskne informace nápovědy.|volitelná,|  
+|/help|Vytiskne informace nápovědy.|volitelná,|  
   
  **Příklady**  
   

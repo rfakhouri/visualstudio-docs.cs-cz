@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Vytvoření datové služby WCF s WPF a Entity Framework | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43acbe17b826947dacd2d8c60b4cb28e5550ed40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6aeb16bb805bc6dda1328b424acbe48b6371437e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671844"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197948"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Návod: Vytvoření datové služby WCF s WPF a Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: vytvoření datové služby WCF s WPF a Entity Framework](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework).  
-  
   
 Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , která je hostována v [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci a pak k němu přístup z aplikace Windows Forms.  
   
@@ -283,5 +281,5 @@ Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../in
   
 ## <a name="see-also"></a>Viz také  
  [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
- [Postupy: Přidání, aktualizace nebo odebrání odkazu na datovou službu WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+ [Postupy: Přidání, aktualizace nebo odebrání odkazu na službu WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 

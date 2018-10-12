@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: kopírování elementů diagramu tříd do dokumentu Microsoft Office (návrhář tříd) | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dc5b39a425052d710945be07aebd78d2cf96f4e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e14da45b7c4f6064685cc4dbd88cd26aca3b0ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672002"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198377"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Postupy: Kopírování elementů diagramu tříd do dokumentu sady Microsoft Office (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: kopírování elementů diagramu tříd do dokumentu Microsoft Office (návrhář tříd)](https://docs.microsoft.com/visualstudio/ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer).  
-  
 Tvary můžete zkopírovat z diagramu tříd .NET (s příponou .cd) do jiné dokumenty. Buď získáte kopii tvar nebo jeho základního kódu v závislosti na charakteru dokumentu sem vkládáte. Zkopírovat obrazce z diagramů tříd UML v projektu modelování, najdete v článku [exportování diagramů jako obrázků](../modeling/export-diagrams-as-images.md).  
   
 ### <a name="to-copy-a-single-element"></a>Zkopírujte jeden element  

@@ -1,7 +1,7 @@
 ---
 title: Panel nástrojů, karta součásti | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b253e170adc8510aebd9c96a468169058d2a87fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 405c7db0ca437aa5462068e2be3cfcc2d76c1cae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669856"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203122"
 ---
 # <a name="toolbox-components-tab"></a>Sada nástrojů, karta Součásti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sady nástrojů, karta součásti](https://docs.microsoft.com/visualstudio/ide/reference/toolbox-components-tab).  
-  
   
 Zobrazí součásti můžete přidat do [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] a [!INCLUDE[csprcs](../../includes/csprcs-md.md)] návrháře. Kromě [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] součásti, které jsou součástí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], například <xref:System.Messaging.MessageQueue> a <xref:System.Diagnostics.EventLog> součásti, můžete přidat vaše třetích stran nebo vlastních komponent na této kartě. Další informace najdete v tématu [postupy: manipulace s karty panelu nástrojů](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
   

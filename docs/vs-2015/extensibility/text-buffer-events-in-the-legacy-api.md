@@ -1,7 +1,7 @@
 ---
 title: Události vyrovnávací paměti textu v rozhraní API pro starší verze | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799443f4674c48201a161dbbd02d525afdb3218c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c3db7d7a4b2c52e4b831078f789dea75c73b337
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672936"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218722"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Události vyrovnávací paměti textu v rozhraní API pro starší verze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [události vyrovnávací paměti textu v rozhraní API pro starší verze](https://docs.microsoft.com/visualstudio/extensibility/text-buffer-events-in-the-legacy-api).  
-  
 Objekt vyrovnávací paměti textu vysílá několik různých událostí, které umožní reagovat na různé situace.  
   
  Pokud používáte starší verzi rozhraní API, měli byste implementovat následující rozhraní za účelem přijímání oznámení změn do vyrovnávací paměti textu. Zveřejňují rozhraní vyrovnávací paměti na text pomocí `IConnectionPointContainer` rozhraní na textovou vyrovnávací paměť pro příjem oznámení o řádek se změní z vyrovnávací paměti. Další informace najdete v tématu [postupy: registrace pro textové vyrovnávací paměti události s rozhraním API starší verze](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). V případě třídy `IVsTextStreamEvents` nebo `IVsTextLinesEvents` rozhraní, změny se vrátí v buď jeden nebo two trojrozměrným souřadnice, v uvedeném pořadí.  
@@ -60,5 +58,5 @@ Objekt vyrovnávací paměti textu vysílá několik různých událostí, kter�
   
 ## <a name="see-also"></a>Viz také  
  [Přístup k vyrovnávací paměti textu s použitím rozhraní API pro starší verze](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [Postupy: registrace pro textové vyrovnávací paměti události s rozhraním API starší verze](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+ [Postupy: Registrace událostí vyrovnávací paměti textu pomocí zastaralého rozhraní API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Používání Managed Package Framework pro implementaci typu projektu (C#) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72d2ce8d817ab0d01a1a54f5e001165cd943c478
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: faedd7d5630205679c851ab5f9d6b46bbe25e3ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628001"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213730"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Použití rozhraní MPF (Managed Package Framework) k implementaci typu projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pomocí Managed Package Framework pro typ projektu (C#)](https://docs.microsoft.com/visualstudio/extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp).  
-  
 Managed Package Framework (MPF) poskytuje třídy jazyka C# můžete použít nebo dědí implementovat vlastní typy projektů. MPF mnoho rozhraní sady Visual Studio očekává, že typ projektu chcete poskytnout, implementuje, poskytne vám zdarma soustředit na implementaci údaje vašeho typu projektu.  
   
 ## <a name="using-the-mpf-project-source-code"></a>Pomocí MPF projektů zdrojového kódu.  

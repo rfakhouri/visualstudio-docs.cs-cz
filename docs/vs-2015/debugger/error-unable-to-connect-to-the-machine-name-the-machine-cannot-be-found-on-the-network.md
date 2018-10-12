@@ -1,7 +1,7 @@
 ---
 title: 'Chyba: Nelze se připojit k počítači &lt;název&gt;. Počítač se v síti nepodařilo najít. | Dokumenty Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fbd5299c8bd14581a9228b7aa0491af6455b1fda
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4e2c60723827466942ea02b8881f234e38fa438
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666607"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223069"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Chyba: Nelze se připojit k počítači &lt;název&gt;. Počítač se v síti nepodařilo najít.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Chyba: Nelze se připojit k počítači &lt;název&gt;. Počítač nebyl nalezen v síti. ](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network).  
-  
 K tomuto chování dochází, pokud platí jedna z následujících podmínek:  
   
 -   Připojení ke vzdálenému počítači bylo přerušeno.  
@@ -57,7 +55,7 @@ K tomuto chování dochází, pokud platí jedna z následujících podmínek:
   
 ## <a name="see-also"></a>Viz také  
  [Nastavení nástroje Remote Tools na zařízení](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)   
- [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)
+ [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)
 
 
 

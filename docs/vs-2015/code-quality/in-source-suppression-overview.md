@@ -1,7 +1,7 @@
 ---
 title: Přehled potlačování ve zdroji | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7f02a57be8d267126deb6736c9e0a690b1ac3e2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670371"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209037"
 ---
 # <a name="in-source-suppression-overview"></a>Přehled potlačování ve zdroji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přehled potlačování ve zdrojové](https://docs.microsoft.com/visualstudio/code-quality/in-source-suppression-overview).  
-  
 Potlačení v zdroje je možnost potlačit nebo ignorovat porušení zásad analýzy kódu ve spravovaném kódu tak, že přidáte **SuppressMessage** atribut segmentů kódu, které způsobují porušení zásad. **SuppressMessage** atribut je podmíněný atribut, který je součástí metadata IL sestavení spravovaného kódu jenom v případě, že je definován symbol kompilace CODE_ANALYSIS v době kompilace.  
   
  V jazyce C + +/ CLI, použijte makra CA_SUPPRESS_MESSAGE nebo CA_GLOBAL_SUPPRESS_MESSAGE v souboru hlaviček, chcete-li přidat atribut.  

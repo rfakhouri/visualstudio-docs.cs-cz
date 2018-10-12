@@ -1,7 +1,7 @@
 ---
 title: 'Diagramy komponent UML: Referenční | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f628ebfa84246c6d991543352f4de36a51cc7fbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b99188aa069a830d17e31733ad20b0ae727d63f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673193"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206736"
 ---
 # <a name="uml-component-diagrams-reference"></a>Diagramy komponent UML: Referenční dokumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [diagramy komponent UML: referenční](https://docs.microsoft.com/visualstudio/modeling/uml-component-diagrams-reference).  
-  
 V sadě Visual Studio *diagram komponent* ukazuje části návrhu pro softwarový systém. Pomáhá diagram součásti vizualizovat strukturu vysoké úrovně systému a chování služby, který tyto části poskytují a spotřebovávají prostřednictvím rozhraní. Chcete-li vytvořit diagram komponent UML, na **architektura** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**.  
   
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -50,7 +48,7 @@ V sadě Visual Studio *diagram komponent* ukazuje části návrhu pro softwarov�
   
  ![Elementy použité v diagramech komponent](../modeling/media/uml-compovreading.png "UML_CompOvReading")  
   
-|**Obrazec**|**– Element**|**Popis a hlavní vlastnosti**|  
+|**Obrazec**|**Element**|**Popis a hlavní vlastnosti**|  
 |---------------|-----------------|-----------------------------------------|  
 |1|**Komponenta**|Opakovaně použitelné část funkčnosti systému. Součást poskytuje a využívá chování prostřednictvím rozhraní a můžete použít další komponenty.<br /><br /> Můžete skrýt nebo zobrazit vnitřních částí komponenty pomocí ovládacího prvku Rozbalit/sbalit (9).<br /><br /> Komponenta je druhem třídy.<br /><br /> -   **Instance je vytvořena nepřímo**. Při hodnotě true (výchozí), komponenta existuje pouze jako artefakt návrhu. V době běhu existují jen jeho části.|  
 |2|**Zadaný Port rozhraní**|Představuje skupinu zpráv nebo volání, že komponenta implementuje a jiných komponent nebo externích systémů můžete použít. Port je vlastnost komponenty, která má jako typ rozhraní.|  
@@ -70,7 +68,7 @@ V sadě Visual Studio *diagram komponent* ukazuje části návrhu pro softwarov�
  [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
  [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
  [Diagramy činnosti UML: referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)   
- [Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)
+ [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Chyba: Prostředí ASP.NET není nainstalováno | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0617f5200a69809afc86fe9405dc3ea9bd8fcda0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 35268c6867c5438f2f3d0c4c4f9e649451a21991
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671394"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220971"
 ---
 # <a name="error-aspnet-not-installed"></a>Chyba: Prostředí ASP.NET není nainstalováno.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Chyba: technologie ASP.NET není nainstalována](https://docs.microsoft.com/visualstudio/debugger/error-aspnet-not-installed).  
-  
 K této chybě dochází při [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] není správně nainstalován v počítači, který se pokoušíte ladit. To může znamenat, že [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] nebyl nikdy nainstalován nebo které [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] byla nainstalovaná jako první a služby IIS byl nainstalován později.  
   
 ### <a name="to-reinstall-aspnet"></a>K opětovné instalaci technologie ASP.NET  

@@ -1,7 +1,7 @@
 ---
 title: Idiaframedata::get_functionstart – | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce2a2e6cc6107f74d09ace0c154577d10944814c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 984311db0b3cd1ddbef1a2a181b7ff2f2c8d1b8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632638"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208634"
 ---
 # <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [idiaframedata::get_functionstart –](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaframedata-get-functionstart).  
-  
 Získá příznak, který určuje, zda blok obsahuje vstupního bodu funkce.  
   
 ## <a name="syntax"></a>Syntaxe  

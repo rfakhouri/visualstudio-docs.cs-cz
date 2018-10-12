@@ -1,7 +1,7 @@
 ---
 title: Měření složitosti a udržovatelnosti spravovaného kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 062ac6f8c9610c8b8e877c3d975fb1f4b6eef4e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b83ab0627685d599d0866d789c18bee8d08659a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631486"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214217"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Měření složitosti a udržovatelnosti spravovaného kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [měření složitosti a udržovatelnosti spravovaného kódu](https://docs.microsoft.com/visualstudio/code-quality/measuring-complexity-and-maintainability-of-managed-code).  
-  
 Zvýšení složitosti moderních aplikací také zvyšuje obtížnost zobecnění kódu, spolehlivé a udržovatelný. V posledních letech, velký počet měr softwaru, označované jako metriky kódu byly vyvinuty, který pomáhá vývojářům, aby pochopili, kdy jejich kód potřebuje přepracování nebo vyšší testování.  
   
  Vývojáři mohou použít [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] k vygenerování dat metrik kódu, který měření složitosti a udržovatelnosti spravovaného kódu. Daty metrik kódu je vygenerovat pro celé řešení nebo jednoho projektu.  

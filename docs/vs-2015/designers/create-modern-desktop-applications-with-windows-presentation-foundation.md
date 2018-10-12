@@ -1,7 +1,7 @@
 ---
 title: Vytvoření moderních desktopových aplikací pomocí Windows Presentation Foundation | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,23 +14,21 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b33b1c5c6e4af4eaaf01d0315b3df42be4d499d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfc64665c16426725795af2f71d1b98f1810b53e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200697"
 ---
 # <a name="create-modern-desktop-applications-with-windows-presentation-foundation"></a>Vytvoření moderních desktopových aplikací pomocí Windows Presentation Foundation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytvoření moderních desktopových aplikací pomocí Windows Presentation Foundation](https://docs.microsoft.com/visualstudio/designers/create-modern-desktop-applications-with-windows-presentation-foundation).  
-  
 Windows Presentation Foundation (WPF) v sadě Visual Studio 2015 poskytuje vývojářům jednotný programovací model pro vytváření moderních obchodních desktopových aplikací na Windows.  
   
  [Začínáme s WPF](../designers/getting-started-with-wpf.md)  
   
- [Návrh XAML v sadě Visual Studio a nástroje Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)  
+ [Návrh XAML v sadě Visual Studio a Blend pro Visual Studio](../designers/designing-xaml-in-visual-studio.md)  
   
  Použití rozhraní WPF v nejnovějších verzích rozhraní .NET Framework v podstatě nemění z verze 4.0. Dokumentace pro verzi 4.0 platí také pro aktuální verze:  
   

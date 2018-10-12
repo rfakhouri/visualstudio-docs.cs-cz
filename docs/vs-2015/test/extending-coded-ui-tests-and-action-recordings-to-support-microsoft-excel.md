@@ -1,7 +1,7 @@
 ---
 title: Rozšiřování programových testů UI a záznamů akcí k podpoře Microsoft Excel | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c48f68c6e3c712f5cf728ae7769108f8e35e9aec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 304b01564f067206a8995662a4f3711cf041116b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672305"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202888"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozšiřování programových testů UI a záznamů akcí k podpoře Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [rozšiřování programových testů uživatelského rozhraní a zaznamenávání akcí k podpoře Microsoft Excel](https://docs.microsoft.com/visualstudio/test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel).  
-  
 Testovací rozhraní pro programové testy uživatelského rozhraní a zaznamenávání akcí nepodporuje každé uživatelské rozhraní. To nemusí podporovat konkrétní uživatelské rozhraní, které chcete testovat. Například nelze vytvořit okamžitě programový test uživatelského rozhraní nebo pro záznam akce [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] tabulky. Můžete však vytvořit vlastní rozšíření programového uživatelského rozhraní pro testování, která bude podporovat vaše konkrétní uživatelské rozhraní s využitím rozšíření programových testů uživatelského rozhraní. V následujícím tématu poskytuje příklad toho, jak rozšířit rozhraní podporuje vytváření programových testů UI a záznamů akcí pro [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Další informace o platformy, které jsou podporovány, naleznete v tématu [podporované konfigurace a platformy pro kódované testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
   
  **Požadavky**  

@@ -1,7 +1,7 @@
 ---
 title: Data dokumentu a dokument zobrazit ve vlastních editorech | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6df543f832fa85ea6d74fc2846355fbf9deab912
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 258718a99e774b7098ff29dd66efc51a57062475
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627686"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206905"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Data dokumentu a zobrazení dokumentu ve vlastních editorech
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dat dokumentů a zobrazení dokumentu ve vlastních editorech](https://docs.microsoft.com/visualstudio/extensibility/document-data-and-document-view-in-custom-editors).  
-  
 Vlastní editor se skládá ze dvou částí: datový objekt dokumentu a objekt zobrazení dokumentu. Jak naznačují názvy, datový objekt dokumentu představuje textových dat, který se má zobrazit, a objekt zobrazení dokumentů (nebo "Zobrazit") představuje jedno nebo více oken, ve kterém chcete zobrazit datový objekt dokumentu.  
   
 ## <a name="document-data-object"></a>Datový objekt dokumentu  

@@ -1,7 +1,7 @@
 ---
 title: Ladění starších verzí pracovních postupů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: f47c3731c4a240198a5bd08adaeebc32d98e631d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e35b16d10bf59b4ae8c91de2a5281d540c0e67c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681984"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210597"
 ---
 # <a name="debugging-legacy-workflows"></a>Ladění starších verzí pracovních postupů
 Pokud používáte starší [!INCLUDE[wfd1](../includes/wfd1-md.md)] v [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] sestavit [!INCLUDE[wf](../includes/wf-md.md)] aplikace, že target.NET rozhraní Framework 3.0 nebo 3.5, můžete ladit vaše pracovní postupy, jako ostatní programy nastavením zarážek, připojení k procesům a kontrole vláken a Zásobník volání. Máte také možnost vzdáleného ladění.  

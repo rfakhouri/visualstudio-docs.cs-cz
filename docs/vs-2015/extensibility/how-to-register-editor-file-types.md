@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: registrace typů souborů Editor | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ab70770bfc764bba01aba3a40918fdf77ae490d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eadb14a7de675e6a1b7839b4101b8d0d6756a11f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670424"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198312"
 ---
 # <a name="how-to-register-editor-file-types"></a>Postupy: registrace Editor typů souborů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: registrace typů souborů Editor](https://docs.microsoft.com/visualstudio/extensibility/how-to-register-editor-file-types).  
-  
 Nejjednodušší způsob, jak zaregistrovat editor typů souborů se s použitím atributů registrace k dispozici jako součást [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] managed package framework (MPF) třídy. Při implementaci vašeho balíčku v nativním [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], můžete také napsat skript registru, která se registruje editor a související rozšíření.  
   
 ## <a name="registration-using-mpf-classes"></a>Registrace pomocí třídy MPF  

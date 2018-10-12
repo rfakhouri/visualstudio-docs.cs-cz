@@ -1,7 +1,7 @@
 ---
 title: Základy ladicího programu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,22 +23,19 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69197e3eca71398872343eff3e5d36e9649ead6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c54038d662acb772e5437cdc6ab9443634d33b37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628405"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208166"
 ---
 # <a name="debugger-basics"></a>Základy ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Nejnovější verzi tohoto tématu můžete najít v [základy ladicího programu](https://docs.microsoft.com/visualstudio/debugger/debugger-basics). 
-
 Ladicí program sady Visual Studio umožňuje sledovat chování běhu programu a vyhledávat logické chyby. Ladicí program pracuje s všechny programovací jazyky sady Visual Studio a jejich přidruženými knihovnami. Pomocí ladicího programu můžete přerušit běh krokovat kód a vyhodnocovat proměnné ve vaší aplikaci.
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Začínáme s ladicím programem](../debugger/getting-started-with-the-debugger.md)  
+ [Začínáme s ladicím programem](../debugger/getting-started-with-the-debugger.md)  
  Vysvětluje, jak použít ladicí program k řízení provádění vaší aplikace.  
   
  [Procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md)  
@@ -47,7 +44,7 @@ Ladicí program sady Visual Studio umožňuje sledovat chování běhu programu 
  [Použití zarážek](../debugger/using-breakpoints.md)  
  Popisuje, co jsou to zarážky a způsob jejich použití.  
   
- [Ladicí program Windows](../debugger/debugger-windows.md)  
+ [Okna ladicího programu](../debugger/debugger-windows.md)  
  Obsahuje seznam různých ladicí program systému windows.  
   
  [Pouze můj kód](../debugger/just-my-code.md)  
@@ -59,10 +56,10 @@ Ladicí program sady Visual Studio umožňuje sledovat chování běhu programu 
  [Připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
  Vysvětluje, jak se připojit k procesu, který je již spuštěna.  
   
- [Zadání symbolu (.pdb) a zdrojové soubory](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+ [Zadání symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  Vysvětluje, jak určit symboly a zdrojové soubory pro ladění.  
   
- [Ladění 64bitové aplikace](../debugger/debug-64-bit-applications.md)  
+ [Ladění 64bitových aplikací](../debugger/debug-64-bit-applications.md)  
  Vysvětluje, jak ladění 64bitové aplikace a řešení potíží.  
   
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)  

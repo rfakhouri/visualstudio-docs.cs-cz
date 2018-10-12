@@ -1,7 +1,7 @@
 ---
 title: Lokalizace příkazů nabídky | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce3cbbf101e357f761ffaf256d0b130a0c005fdb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9b2486df22db8ebcbf8a9dd40a0bd374b6d8abfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668414"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197701"
 ---
 # <a name="localizing-menu-commands"></a>Lokalizace příkazů nabídky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [lokalizace příkazů nabídky](https://docs.microsoft.com/visualstudio/extensibility/localizing-menu-commands).  
-  
 Můžete zadat lokalizovaný text nabídky a panelu nástrojů příkazy ve vytváření souborů .vsct lokalizované a lokalizované soubory .resx pro váš balíček VSPackage správy kódu a následně aktualizovat soubory projektu změny.  
   
  Informace o tom, jak lokalizovat prostředí instalace najdete v tématu [lokalizace balíčků VSIX](../extensibility/localizing-vsix-packages.md).  

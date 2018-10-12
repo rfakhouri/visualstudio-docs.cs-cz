@@ -1,7 +1,7 @@
 ---
 title: IDebugMemoryBytes2::GetSize | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: dae64c5f-5b54-40c3-b32f-ec3b16c093f7
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7b5ad9b734de92f6c3b615acb8480f324ed5f5f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1671434c1f78b71647ca96106f32c95e8a1cb48
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210636"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [IDebugMemoryBytes2::GetSize](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmemorybytes2-getsize).  
-  
 Získá velikost v bajtech paměti představovaného tímto rozhraním [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objektu.  
   
 ## <a name="syntax"></a>Syntaxe  

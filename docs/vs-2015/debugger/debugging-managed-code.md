@@ -1,7 +1,7 @@
 ---
 title: Ladění spravovaného kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efa999fabc0d27900900c6d1512cca3fde76043d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ba07591cf4682ef40579f58b290f6b26bb4c111
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673656"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211585"
 ---
 # <a name="debugging-managed-code"></a>Ladění spravovaného kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ladění spravovaného kódu](https://docs.microsoft.com/visualstudio/debugger/debugging-managed-code).  
-  
 Tato část popisuje běžné problémy ladění a techniky pro spravované aplikace nebo aplikace napsané v jazycích, které se zaměřují modul common language runtime, jako je například Visual Basic, C# a C++. Technik popsaných tady jsou základní techniky. Další informace najdete v tématu [pomocí ladicího programu](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
@@ -62,7 +60,7 @@ Tato část popisuje běžné problémy ladění a techniky pro spravované apli
  [Chyba: Ladění není možné, protože v systému je povolen ladicí program protokolu Kernel.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  Popisuje chybová zpráva, která nastane, pokud se pokusíte ladit spravovaný kód na [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)], [!INCLUDE[winxp](../includes/winxp-md.md)], [!INCLUDE[Win2kFamily](../includes/win2kfamily-md.md)], nebo systém Windows NT, který se spustil v režimu ladění.  
   
- [Optimalizace a ladění JIT](../debugger/jit-optimization-and-debugging.md)  
+ [Optimalizace a ladění za běhu](../debugger/jit-optimization-and-debugging.md)  
  Popisuje účinky optimalizace JIT pro ladění.  
   
  [Ladění LINQ a DLINQ](../debugger/debugging-linq.md)  
@@ -90,7 +88,7 @@ Tato část popisuje běžné problémy ladění a techniky pro spravované apli
  [Ladění skriptů a webových aplikací](../debugger/debugging-web-applications-and-script.md)  
  Popisuje běžné problémy ladění a postupy, které se můžete setkat při ladění skriptu a webové aplikace.  
   
- [Co je nového v ladicím programu sady Visual Studio 2015](../debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)  
+ [Novinky v ladicím programu sady Visual Studio 2015](../debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)  
  Popis nových funkcí ladění přidán v této verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Ladění domovské stránky](../debugger/debugging-in-visual-studio.md)  

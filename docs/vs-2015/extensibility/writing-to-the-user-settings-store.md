@@ -1,7 +1,7 @@
 ---
 title: Zápis do Store nastavení uživatele | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7fc5f38f8831dec53b907d83571574742f3d491d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 90d34ebf751ee62fd7779a92214f42779cf84b59
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668376"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202043"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Zápis do úložiště uživatelských nastavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zápisu do Store nastavení uživatele](https://docs.microsoft.com/visualstudio/extensibility/writing-to-the-user-settings-store).  
-  
 Uživatelská nastavení jsou zapisovatelné nastavení, jako je v **Nástroje / možnosti** dialogového okna, okna vlastností a některých dalších dialogových oknech. Rozšíření sady Visual Studio může použít k ukládání malé množství dat. Tento návod ukazuje, jak přidat program Poznámkový blok se sadou Visual Studio jako externího nástroje ve čtení a zápisu do úložiště uživatelských nastavení.  
   
 ### <a name="backing-up-your-user-settings"></a>Zálohování nastavení uživatele  

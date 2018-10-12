@@ -1,7 +1,7 @@
 ---
 title: Přizpůsobení vytvoření a přesunutí elementu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 589c8c9be01477a2319943b47b329d09a80dc16f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00e2bd91acd4240685411acbb00dcd478fff9aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629271"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203525"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Přizpůsobení vytvoření a přesunutí elementu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přizpůsobení vytvoření a přesunutí elementu](https://docs.microsoft.com/visualstudio/modeling/customizing-element-creation-and-movement).  
-  
 Můžete povolit element, který má přetahovat do jiného, z panelu nástrojů nebo v vložením nebo operace přesunutí. Můžete mít přesunutých prvků propojené s cílových elementů pomocí vztahy, které zadáte.  
   
  Direktiva sloučení elementů (EMD) určuje, co se stane, když jeden prvek modelu *sloučené* na jiný prvek modelu. To se stane, když:  

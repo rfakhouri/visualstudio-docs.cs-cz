@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: ruční vytvoření webových šablon | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4d84a71d54f178574e7aba719f4189b35312ec03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4496c42bfcc0baecd69770ff529c189d85da026
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670230"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220867"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Postupy: Ruční vytvoření webových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: ruční vytvoření webových šablon](https://docs.microsoft.com/visualstudio/ide/how-to-manually-create-web-templates).  
-  
 Vytvoření šablony webu se liší od vytvoření jiných typů šablon. Protože joinkind šablony webových projektů **přidat nový web** dialogové okno a webové položky projektu jsou zařazené do kategorií podle programovacího jazyka, soubor .vstemplate musí určit, která šablona jako šablonu a identifikovat programování jazyk.  
   
 > [!NOTE]

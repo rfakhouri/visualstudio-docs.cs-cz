@@ -1,7 +1,7 @@
 ---
 title: Řízené reference jazyka přímého značení grafů (DGML) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a8059d30a5fddf29e7e20f3cb0e87d6da35e72ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3188d3421a9962aa7d238d90fcc6d1ce3f1b762
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669752"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214666"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referenční dokumentace jazyka přímého značení grafů (DGML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [orientovaného grafu jazyka přímého značení (DGML) odkaz](https://docs.microsoft.com/visualstudio/modeling/directed-graph-markup-language-dgml-reference).  
-  
 Orientovaný jazyka přímého značení grafů (DGML) popisuje informace, které slouží k vizualizaci a provádět analýzu složitosti a je ve formátu použité k uchování map kódu v sadě Visual Studio. Ji používá jednoduché značky XML pro popis acyklických a cyklických orientované grafy. Orientovaný graf je sada uzlů, které jsou propojeny pomocí propojení neboli hran. Uzly a propojení mohou být použity pro reprezentaci síťových struktur, jako jsou například prvky v softwarovém projektu.  
   
  Všimněte si, že některých verzích sady Visual Studio podporují pouze podmnožinu funkcí jazyka DGML, naleznete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

@@ -1,7 +1,7 @@
 ---
 title: Upgrade vlastních projektů a šablon položek pro Visual Studio "15" | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02c7b14051a41616ed1b98812d1f1b7762f7165e
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221153"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>Upgrade vlastních šablon projektů a položek pro Visual Studio "15"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [upgrade vlastních šablon projektů a položek pro Visual Studio ](https://docs.microsoft.com/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017).  
-  
 Spouští se v sadě Visual Studio "15" Preview 4 sady Visual Studio mění způsob zjistí šablony projektů a položek, které byly nainstalovány VSIX nebo byl soubor MSI. Pokud používáte rozšíření, které používají vlastní projekt nebo šablony položek, musíte aktualizovat vaše rozšíření. Toto téma vysvětluje, co musíte udělat.  
   
  Tato změna ovlivní pouze aplikace Visual Studio "15". To nemá vliv na předchozích verzích sady Visual Studio.  

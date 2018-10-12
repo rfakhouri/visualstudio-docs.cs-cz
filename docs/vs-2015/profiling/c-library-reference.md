@@ -1,7 +1,7 @@
 ---
 title: Referenční dokumentace knihoven jazyka C | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0222ae64c4a2d5f52dbbb2dd132e5c0dcad30d00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d991f804347976315fec090c684656b68c640865
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677476"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220114"
 ---
 # <a name="c-library-reference"></a>Referenční dokumentace knihoven jazyka C
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [referenční dokumentace knihoven jazyka C](https://docs.microsoft.com/visualstudio/profiling/c-library-reference).  
-  
 Tato část obsahuje referenční informace k sadě SDK Vizualizéru souběžnosti.  
   
 > [!NOTE]

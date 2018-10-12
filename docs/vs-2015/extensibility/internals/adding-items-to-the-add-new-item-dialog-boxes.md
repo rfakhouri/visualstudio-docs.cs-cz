@@ -1,7 +1,7 @@
 ---
 title: Přidávání položek do přidání nové položky v dialogových oknech | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 641c593a0c8f957982801824bd4f81bd62b904d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d45431d2d6757169c225136620124d94a6e75dd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673659"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223089"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Přidávání položek do dialogových oken Přidat novou položku
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přidání položky, které chcete přidat novou položku dialogových oknech](https://docs.microsoft.com/visualstudio/extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes).  
-  
 Proces přidávání položek do **přidat novou položku** spustí dialogové okno s klíči registru. Jak je znázorněno v následující položky registru, obsahuje cestu a název adresáře, ve které položky k dispozici v části AddItemTemplates **přidat novou položku** jsou umístěny dialogové okno.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Zabezpečení přístupu ke kódu pro aplikace ClickOnce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 71b9344e552cb03d65b0093b1d5e0707689ec6af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5cfc8ad2be56965f691b2c114d3908172f0edfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629469"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197974"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Zabezpečení přístupu ke kódu pro aplikace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Code Access Security for ClickOnce Applications](https://docs.microsoft.com/visualstudio/deployment/code-access-security-for-clickonce-applications).  
-  
 Aplikace ClickOnce jsou založeny na rozhraní .NET Framework a jsou v souladu s omezením zabezpečení přístupu kódu. Z tohoto důvodu je důležité, že rozumíte důsledkům kód přistupovat k zabezpečení a zapisovat vaše aplikace ClickOnce odpovídajícím způsobem.  
   
  Zabezpečení přístupu kódu je mechanismus v rozhraní .NET Framework, která pomáhá omezit přístup, který má kód k chráněným prostředkům a operacím. Měli byste nakonfigurovat oprávnění zabezpečení přístupu kódu pro aplikace ClickOnce použije oblasti, které jsou vhodné pro umístění instalačním programem aplikace. Ve většině případů můžete použít **Internet** zónu pro omezenou sadu oprávnění nebo **místní Intranet** zónu pro větší sadu oprávnění.  

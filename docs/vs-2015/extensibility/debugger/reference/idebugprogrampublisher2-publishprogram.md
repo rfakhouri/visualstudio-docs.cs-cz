@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramPublisher2::PublishProgram | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b38c371cdfd6b6d37ac90f57981b429f2ef2a1dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7db0496d7282b759c3b0d6b4d39284fc87cd29f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673475"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197987"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [IDebugProgramPublisher2::PublishProgram](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogrampublisher2-publishprogram).  
-  
 Tato metoda provádí program, který je k dispozici pro ladicí stroj (DEs) a správce ladění relace.  
   
 ## <a name="syntax"></a>Syntaxe  

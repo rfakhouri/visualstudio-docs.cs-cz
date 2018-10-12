@@ -1,7 +1,7 @@
 ---
 title: Položka Functions | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58344d897630244f5f2c1e987f5f41971bfc720c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 687d740a379bd3b04bd47d0d2e3111bb71e7934d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629865"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207919"
 ---
 # <a name="item-functions"></a>Funkce položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [funkce položek](https://docs.microsoft.com/visualstudio/msbuild/item-functions).  
-  
   
 Od verze MSBuild 4.0, kód v úlohy a cíle může volat funkce položek, chcete-li získat informace o položkách v projektu. Tyto funkce zjednodušují získávání Distinct() položek a jsou rychlejší než položky ve smyčce.  
   

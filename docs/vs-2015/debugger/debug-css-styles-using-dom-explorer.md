@@ -1,7 +1,7 @@
 ---
 title: Ladění stylů CSS pomocí Průzkumníka modelu DOM | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 889626b5d80afebfd701a7bc347466da97ba707b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a30ac9669c7093c7eb3b656076c606cbf5a9fdc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671316"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220717"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Ladění stylů CSS pomocí průzkumníka modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [styly ladění šablon stylů CSS pomocí Průzkumníka modelu DOM](https://docs.microsoft.com/visualstudio/debugger/debug-css-styles-using-dom-explorer).  
-  
 Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Při ladění aplikace Windows Store, Windows Phone Store, aplikací a aplikací vytvořených pomocí Visual Studio Tools pro Apache Cordova, můžete zobrazit a změnit pravidla šablon stylů CSS pro vybrané elementy modelu DOM a jejich podřízené prvky.  

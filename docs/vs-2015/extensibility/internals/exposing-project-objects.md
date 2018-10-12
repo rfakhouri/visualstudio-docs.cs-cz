@@ -1,7 +1,7 @@
 ---
 title: Zveřejňování objektů projektu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5514589660df1850dc2f5d9fce3079f6769ec06e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3cc9f3ffc7869506dc5ac46a715c9bd7b042a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632387"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210793"
 ---
 # <a name="exposing-project-objects"></a>Zveřejňování objektů projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zveřejnění objekty projektu](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-project-objects).  
-  
 Typy vlastních projektů může poskytovat objekty automatizace Pokud chcete povolit přístup k projektu pomocí rozhraní automatizace. Každý typ projektu se očekává poskytování standardní <xref:EnvDTE.Project> automatizační objekt, který přistupuje z <xref:EnvDTE.Solution>, které obsahuje kolekci všech projektů, které jsou otevřeny v integrovaném vývojovém prostředí. Každá položka v projektu má být vystavené <xref:EnvDTE.ProjectItem> objektu k němu přistupovat pomocí <xref:EnvDTE.Project.ProjectItems>. Kromě těchto objektů automatizace standardní projekty můžete nabídnout objekty automatizace specifické pro projekt.  
   
  Můžete vytvořit vlastní automatizace na kořenové úrovni objekty, ke kterým může přistupovat s pozdní vazbou pomocí objektu DTE kořenové `DTE.<customeObjectName>` nebo `DTE.GetObject(“<customObjectName>”)`. Visual C++ například vytvoří kolekci projektu specifické pro projekt C++ s názvem "Umístěním", který můžete přistupovat pomocí DTE. DTE nebo umístěním. GetObject("VCProjects"). Můžete také vytvořit Project.Object, který je jedinečný pro typ projektu, Project.CodeModel, který může být dotázán pro jeho nejvíce odvozenému objektu, ProjectItem, která zpřístupňuje ProjectItem.Object a ProjectItem.FileCodeModel.  

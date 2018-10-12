@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: identifikace symbolů v knihovně | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f10cc65d30f8d9b2d58fa02822494ae7e6a6940
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1aaeb8046ae83b6a53dc40e411a907f7dcf7a1a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674835"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205917"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Postupy: identifikace symbolů v knihovně
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: identifikace symbolů v knihovně](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-identify-symbols-in-a-library).  
-  
 Nástroje procházení symbolů hierarchické zobrazení symbolů. Symboly představují obory názvů, objektů, tříd, členy třídy a další prvky jazyka.  
   
  Každý symbol v hierarchii lze identifikovat podle navigace informace předávány knihovně symbol [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] object Manageru prostřednictvím následujících rozhraní:  

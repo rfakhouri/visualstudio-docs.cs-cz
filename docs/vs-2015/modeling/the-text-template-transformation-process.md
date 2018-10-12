@@ -1,7 +1,7 @@
 ---
 title: Proces transformace textových šablon | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c7b39517e5e4c88bbefe6bf378e1dffd3c233872
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670275"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203772"
 ---
 # <a name="the-text-template-transformation-process"></a>Proces transformace textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [proces transformace textových šablon](https://docs.microsoft.com/visualstudio/modeling/the-text-template-transformation-process).  
-  
 Proces transformace textových šablon přijímá jako vstupní soubor textové šablony a vygeneruje nový textový soubor jako výstup. Například textové šablony můžete použít ke generování kódu jazyka Visual Basic nebo C#, nebo můžete vygenerovat zprávu ve formátu HTML.  
   
  Tři komponenty účasti v tomto procesu: modul, hostitele a procesory direktiv. Modul řídí procesu. komunikuje se službou hostitele a procesor direktiv pro vytvoření výstupního souboru. Hostitel poskytuje všechny interakce s prostředím, jako je hledání souborů a sestavení. Procesor direktiv přidá funkce, jako je například čtení dat ze souboru XML nebo databáze.  

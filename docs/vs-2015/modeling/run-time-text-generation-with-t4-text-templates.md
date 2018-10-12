@@ -1,7 +1,7 @@
 ---
 title: Generování textu za běhu pomocí textových šablon T4 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c56b0b91301defaf08fb81c87e9eb070a9e5458
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685107"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214744"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generování textu za běhu pomocí textových šablon T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [generování textu za běhu pomocí textových šablon T4](https://docs.microsoft.com/visualstudio/modeling/run-time-text-generation-with-t4-text-templates).  
-  
 Můžete generovat textové řetězce ve vaší aplikaci za běhu pomocí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] textové šablony běhu. Není nutné mít v počítači, kde se aplikace spustí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Modul runtime šablony jsou někdy označovány jako "předzpracovaných textových šablon" vzhledem k tomu, že v době kompilace, tato šablona vygeneruje kód, který je proveden za běhu.  
   
  Každá šablona je kombinaci textu, jak se bude zobrazovat v vygenerovaný řetězec a fragmenty kódu programu. Fragmenty programu zadejte hodnoty pro proměnné části řetězce a také řídí podmíněné a opakované části.  

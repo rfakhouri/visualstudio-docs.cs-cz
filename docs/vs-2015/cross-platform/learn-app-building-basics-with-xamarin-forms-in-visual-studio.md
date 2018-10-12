@@ -1,7 +1,7 @@
 ---
 title: Základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 56e76bc74470ccc5efda4482435f73344f85224a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03b8892eb78184aab237f926e20bfef59418e532
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670644"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213613"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio](https://docs.microsoft.com/visualstudio/cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio).  
-  
   
 Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and-install.md) a [ověření prostředí Xamarinu](../cross-platform/verify-your-xamarin-environment.md), tento návod ukazuje, jak vytvořit základní aplikaci (viz dole) s Xamarin.Forms. Pomocí Xamarin.Forms napíšete všech kódů uživatelského rozhraní jednou v knihovně přenosných tříd (PCL). Xamarin se pak automaticky generují nativní ovládací prvky uživatelského rozhraní pro iOS, Android a Windows platformy. Doporučujeme tento přístup, protože PCL možnost nejlépe podporuje používání pouze rozhraní .NET API, které jsou podporovány v rámci všechny cílové platformy a vzhledem k tomu, že Xamarin.Forms umožňuje sdílet uživatelské rozhraní kódu napříč platformami.  
   

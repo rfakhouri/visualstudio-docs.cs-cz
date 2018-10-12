@@ -1,7 +1,7 @@
 ---
 title: Třída TaskScheduler – vnitřní členy | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 80aa2cf0278a9d0ee6197126f6517d40d265b8ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e384b9c7734c2197dd79c0b9fb6b415329ae0f05
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667851"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203785"
 ---
 # <a name="taskscheduler-class---internal-members"></a>Třída TaskScheduler – vnitřní členy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [třída TaskScheduler – vnitřní členy](https://docs.microsoft.com/visualstudio/extensibility/debugger/taskscheduler-class-internal-members).  
-  
 Toto téma popisuje interní členy <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> třída, která vám pomůže implementovat vlastní ladicího programu. Obecné informace o této třídy, najdete v článku <xref:System.Threading.Tasks.TaskScheduler> téma referenčních informací.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  

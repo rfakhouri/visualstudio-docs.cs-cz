@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: Výběr schémat XML pro použití | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25e972b7c9850018aeda01401a8893805d3d18d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5300623e3bbd1eeec584b30015e122539a6c7203
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628817"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210454"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Postupy: Výběr schémat XML pro použití
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: Výběr schémat XML pro použití](https://docs.microsoft.com/visualstudio/xml-tools/how-to-select-the-xml-schemas-to-use).  
-  
   
 XML Editor obsahuje schéma mezipaměti umístěné v adresáři %InstallDir%\Xml\Schemas. Mezipaměti schématu obsahuje dobře známými schématy XML, které slouží k ověření dokumentu technologie IntelliSense a XML.  
   

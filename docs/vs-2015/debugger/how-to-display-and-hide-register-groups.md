@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: zobrazení a skrytí nabídky registrovat skupiny | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3060a21d9ffbaf079696eef83f01b7f0787ed59a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ff44cb0977103d7169ac0b3f14a8bf0fb8f6c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669462"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206489"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>Postupy: Zobrazení a skrytí nabídky Registrovat skupiny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: zobrazení a skrytí registrovat skupiny](https://docs.microsoft.com/visualstudio/debugger/how-to-display-and-hide-register-groups).  
-  
 **Zaregistruje** není k dispozici pouze v případě, že je povoleno ladění úrovni adres v interval **možnosti** dialogovém okně **ladění** uzlu **Obecné**kategorie.  
   
  Pro přehlednost, **zaregistruje** okno uspořádá registry do skupiny. Pokud kliknete pravým tlačítkem **zaregistruje** okně se zobrazí místní nabídku, která obsahuje tyto skupiny, které můžete zobrazit nebo skrýt podle svých potřeb následující níže uvedeného postupu.  
@@ -56,7 +54,7 @@ Nejnovější verzi tohoto tématu můžete najít v [postupy: zobrazení a skry
      Registrovat skupiny, které nejsou podporované, kterou ladíte na hardware jsou zakázané v místní nabídce, nelze vybrat.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: použití okna registry](../debugger/how-to-use-the-registers-window.md)
+ [Postupy: Použití okna Registry](../debugger/how-to-use-the-registers-window.md)
 
 
 

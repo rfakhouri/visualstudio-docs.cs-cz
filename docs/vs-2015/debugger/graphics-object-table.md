@@ -1,7 +1,7 @@
 ---
 title: Objekt grafiky tabulky | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64c2cf7af6c7133182d915c62aa763b2d8718c90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09ddad36cf6d9ae70c21a0e1f9505e257b253ca3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219517"
 ---
 # <a name="graphics-object-table"></a>Tabulka grafických objektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Graphics Object Table](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-object-table).  
-  
 Tabulka grafických objektů v grafické analýzy Visual Studia vám pomůže pochopit objekty Direct3D, které podporují rámec hře nebo aplikaci.  
   
  Toto je tabulka objektu:  

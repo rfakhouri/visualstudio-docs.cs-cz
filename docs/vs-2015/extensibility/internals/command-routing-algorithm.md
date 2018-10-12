@@ -1,7 +1,7 @@
 ---
 title: Algoritmus směrování příkazů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2136bbff40a24b1b376d5d737367630256230c35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23975d0ae73edd3bb411334e034672a6b5f0e477
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675734"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209310"
 ---
 # <a name="command-routing-algorithm"></a>Algoritmus směrování příkazů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [algoritmus směrování příkazu](https://docs.microsoft.com/visualstudio/extensibility/internals/command-routing-algorithm).  
-  
 Příkazy v sadě Visual Studio jsou zpracovávány celou řadou různých komponent. Příkazy jsou směrovány od nejvnitřnější kontext, který vychází z aktuálního výběru vnějšího (označované také jako globální) v kontextu. Další informace najdete v tématu [dostupnosti](../../extensibility/internals/command-availability.md).  
   
 ## <a name="order-of-command-resolution"></a>Pořadí řešení příkaz  

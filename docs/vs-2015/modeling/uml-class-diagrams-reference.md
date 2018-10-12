@@ -1,7 +1,7 @@
 ---
 title: 'Diagramy tříd UML: Referenční | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 239b5427c4e19b15e44d683def0e2d6c82dccdfe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 890c69a4cde928e645dd2ede9fbbb27f66a44794
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671403"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220122"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagramy tříd UML: Referenční dokumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [diagramů tříd UML: referenční](https://docs.microsoft.com/visualstudio/modeling/uml-class-diagrams-reference).  
-  
 Diagram tříd UML popisuje objektu a informace o strukturách používané aplikace, interně i v komunikaci se svým uživatelům. Popisuje informace, bez ohledu na žádnou konkrétní implementaci. Jeho tříd a vztahů je možné implementovat mnoha způsoby, například databázové tabulky, z uzlů XML nebo sestavení objektů softwaru.  
   
 > [!NOTE]
@@ -51,17 +49,17 @@ Diagram tříd UML popisuje objektu a informace o strukturách používané apli
 ## <a name="reading-class-diagrams"></a>Čtení diagramů tříd  
  Tabulky v této části popisuje prvky, které se zobrazí v diagramu tříd UML. Informace o vlastnostech těchto prvků naleznete v následujících tématech:  
   
--   [Vlastnosti typů v diagramech tříd UML](../modeling/properties-of-types-on-uml-class-diagrams.md)  
+-   [Vlastnosti typů v diagramech tříd UML](../modeling/properties-of-types-on-uml-class-diagrams.md)  
   
--   [Vlastnosti atributů v diagramech tříd UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+-   [Vlastnosti atributů v diagramech tříd UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Vlastnosti operací v diagramech tříd UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+-   [Vlastnosti operací v diagramech tříd UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [Vlastnosti přidružení v diagramech tříd UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+-   [Vlastnosti přidružení v diagramech tříd UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
  ![Tři třídy znázorňující vztahy a vlastnosti](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
   
-|**Obrazec**|**– Element**|**Popis**|  
+|**Obrazec**|**Element**|**Popis**|  
 |---------------|-----------------|---------------------|  
 |1|**Třída**|Definice objektů, které sdílejí daný strukturální nebo behaviorální charakteristiky. Další informace najdete v tématu [diagramech tříd vlastnosti typů v UML](../modeling/properties-of-types-on-uml-class-diagrams.md).|  
 |1|Třídění|Obecný název třídy, rozhraní nebo výčet. Komponenty, případy použití a actors jsou také Klasifikátory.|  
@@ -88,7 +86,7 @@ Diagram tříd UML popisuje objektu a informace o strukturách používané apli
   
  ![Realizace znázorněná s konektorem a lollipop](../modeling/media/uml-classovrealize.png "UML_ClassOvRealize")  
   
-|Obrazec|**– Element**|Popis|  
+|Obrazec|**Element**|Popis|  
 |-----------|-----------------|-----------------|  
 |15|**realizace**|Třída implementuje operace a atributy definované v rozhraní.<br /><br /> Použití **dědičnosti** nástroj k vytváření realizace mezi třídou a rozhraní.|  
 |16|**realizace**|Alternativní prezentaci stejné relace. Popisek na lollipop symbol určuje rozhraní.<br /><br /> K vytvoření této prezentace, vyberte existujícího vztahu realizace. Přidružení se zobrazí značka akce. Klikněte na značku akce a potom klikněte na tlačítko **zobrazit jako typ Lupa**.|  
@@ -99,7 +97,7 @@ Diagram tříd UML popisuje objektu a informace o strukturách používané apli
  [Vlastnosti typů v diagramech tříd UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Vlastnosti atributů v diagramech tříd UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Vlastnosti operací v diagramech tříd UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [Vlastnosti přidružení v diagramech tříd UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)
+ [Vlastnosti přidružení v diagramech tříd UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)
 
 
 

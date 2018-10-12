@@ -1,7 +1,7 @@
 ---
 title: Generování kódu z diagramů tříd UML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 53
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8874e5aa1c2dcf440c7cfed1cc2ce42c4187bdc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e13ad8f658fafa2a20556e95123c5cd5965934e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631586"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222830"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generování kódu z diagramů tříd UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [generování kódu z diagramů tříd UML](https://docs.microsoft.com/visualstudio/modeling/generate-code-from-uml-class-diagrams).  
-  
 Chcete-li generovat Visual C# .NET kódu z diagramů tříd UML v sadě Visual Studio, použijte **generovat kód** příkazu. Ve výchozím nastavení tento příkaz vygeneruje typ jazyka C# pro každý vybraný typ modelu UML. Toto chování lze upravit a rozšířit úpravou nebo zkopírováním textových šablon, které generují kód. Lze určit různá chování pro typy, které jsou obsaženy v různých balíčcích modelu.  
   
  **Generovat kód** příkaz je velmi vhodné pro generování kódu z výběru uživatele prvků a pro generování jednoho souboru pro každou třídu modelu UML nebo jiný prvek. Například, tento snímek obrazovky ukazuje dva soubory jazyka C#, které byly vytvořeny ze dvou tříd modelu UML.  
@@ -41,9 +39,9 @@ Chcete-li generovat Visual C# .NET kódu z diagramů tříd UML v sadě Visual S
   
  Další informace o diagramech tříd UML v sadě Visual Studio naleznete v následujících tématech:  
   
--   [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)  
+-   [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)  
   
--   [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)  
+-   [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)  
   
  Pokud chcete zobrazit, které verze sady Visual Studio podporují diagramů tříd UML, naleznete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -173,9 +171,9 @@ Chcete-li generovat Visual C# .NET kódu z diagramů tříd UML v sadě Visual S
     |------------------|---------------------|  
     |Název|Název této vazby. Chcete-li přepsat vazby zděděné od nadřazeného balíčku nebo modelu, použijte stejný název, jako je název vazby, kterou chcete přepsat.|  
     |Přepsat|Pokud je hodnota true, je existující kód přepsán.|  
-    |Cílový název|Název souboru, který je generován.<br /><br /> Výrazy můžete vložit do tohoto řetězce, jako `{Name}` nebo `{Owner.Name}`. Můžete například napsat: `{Owner.Name}_{Name}`. Tento výraz je vyhodnocen pro prvek modelu. Mohou být použity vlastnosti prvků, ale nikoli metody. Pokud chcete zjistit, jaké vlastnosti lze použít, podívejte se na vlastnosti typů v **Microsoft.VisualStudio.Uml.\*** . **Důležité:** `{Name}` nebo `{Owner.Name}` lze použít pouze ve **název cílového** vlastnost.   Chcete-li změnit název vygenerované třídy, musíte změnit šablonu. Další informace najdete v tématu [Writing a Text Template](#writing).|  
+    |Cílový název|Název souboru, který je generován.<br /><br /> Výrazy můžete vložit do tohoto řetězce, jako `{Name}` nebo `{Owner.Name}`. Můžete například napsat: `{Owner.Name}_{Name}`. Tento výraz je vyhodnocen pro prvek modelu. Mohou být použity vlastnosti prvků, ale nikoli metody. Pokud chcete zjistit, jaké vlastnosti lze použít, podívejte se na vlastnosti typů v **Microsoft.VisualStudio.Uml.\*** . **Důležité:** `{Name}` nebo `{Owner.Name}` lze použít pouze ve **název cílového** vlastnost. Chcete-li změnit název vygenerované třídy, musíte změnit šablonu. Další informace najdete v tématu [Writing a Text Template](#writing).|  
     |Cesta k projektu|Určuje cestu k [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] výstupní soubory projektu, který bude obsahovat transformace. Zadávané hodnoty slouží k vytvoření nového projektu. Zvolte tlačítko se třemi tečkami (**[...]** ) vyberte existující projekt.<br /><br /> Pokud nový projekt neexistuje, bude vytvořen. Bude to projekt knihovny tříd jazyka C#.<br /><br /> Chcete-li to provést, je nutné projekt zadat přímo. Lze použít makra proměnných prostředí, například %ProgramFiles% nebo %LocalAppData%.|  
-    |Cílový adresář|Složka, do které je cílový soubor generován. Tato cesta je relativní ke složce projektu.<br /><br /> Můžete použít `{PackageStructure}` výraz lze vložit cestu, která odpovídá názvům obsažených balíčků. Výchozí hodnota je `\GeneratedCode\{PackageStructure}`. Lze také použít proměnné prostředí, například %TEMP% nebo %HomePath%. **Důležité:** `{PackageStructure}` lze použít pouze ve **cílový adresář** vlastnost.  |  
+    |Cílový adresář|Složka, do které je cílový soubor generován. Tato cesta je relativní ke složce projektu.<br /><br /> Můžete použít `{PackageStructure}` výraz lze vložit cestu, která odpovídá názvům obsažených balíčků. Výchozí hodnota je `\GeneratedCode\{PackageStructure}`. Lze také použít proměnné prostředí, například %TEMP% nebo %HomePath%. **Důležité:** `{PackageStructure}` lze použít pouze ve **cílový adresář** vlastnost.|  
     |Cesta k souboru šablony|Šablona, která bude provádět transformaci.<br /><br /> Lze použít buď dodané šablony, nebo vytvořit vlastní. Dodané šablony naleznete v následujícím umístění:<br /><br /> ...\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\|  
   
 5.  K prvku lze připojit libovolný počet vazeb.  
@@ -242,7 +240,7 @@ Chcete-li generovat Visual C# .NET kódu z diagramů tříd UML v sadě Visual S
 ## <a name="see-also"></a>Viz také  
  [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
  [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)   
- [Generování souborů z modelu UML](../modeling/generate-files-from-a-uml-model.md)
+ [Generování souborů z modelu UML](../modeling/generate-files-from-a-uml-model.md)
 
 
 

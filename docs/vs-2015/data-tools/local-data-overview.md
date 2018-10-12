@@ -1,7 +1,7 @@
 ---
 title: Přehled lokálních dat | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,12 +30,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: b2bd594ba017a07ad3886a9aeb4b59d6f479a708
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 312dbee46f13bf1f8f5d0666dcba18adc1116cdf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667747"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210480"
 ---
 # <a name="local-data-overview"></a>Přehled lokálních dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Při vývoji datových aplikací, je obvykle vhodné použít místní kopii dat
 |-----------|-----------------|  
 |[Vytvoření databáze SQL pomocí návrháře](../data-tools/create-a-sql-database-by-using-a-designer.md)|Poskytuje podrobné pokyny pro vytvoření místního databázového souboru, který slouží k testování funkcí dat a vytvářet aplikace.|  
 |[Návod: Připojování k datům v lokálního databázového souboru (Windows Forms)](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)|Poskytuje podrobné pokyny pro připojení k databázi SQL Server Express LocalDB při vytvoření jednoduché aplikace Windows.|  
-|[Připojení k datům v databázi aplikace Access (Windows Forms)](../data-tools/connect-to-data-in-an-access-database-windows-forms.md)|Obsahuje podrobné pokyny pro připojení k databázi aplikace Microsoft Access.|  
+|[Připojení k datům v databázi Accessu (model Windows Forms)](../data-tools/connect-to-data-in-an-access-database-windows-forms.md)|Obsahuje podrobné pokyny pro připojení k databázi aplikace Microsoft Access.|  
 |[Postupy: připojení k databázi Northwind](../data-tools/how-to-connect-to-the-northwind-database.md)|Obsahuje informace o připojení k ukázkové databázi Northwind v [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)], SQL Server Compact, SQL Server Express a přístupu.|  
   
 ## <a name="use-the-connection-string"></a>Použijte připojovací řetězec  
@@ -115,4 +115,4 @@ Při vývoji datových aplikací, je obvykle vhodné použít místní kopii dat
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Připojování k datům v lokálního databázového souboru (Windows Forms)](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)   
- [Připojení k datům v databázi aplikace Access (Windows Forms)](../data-tools/connect-to-data-in-an-access-database-windows-forms.md)
+ [Připojení k datům v databázi Accessu (model Windows Forms)](../data-tools/connect-to-data-in-an-access-database-windows-forms.md)

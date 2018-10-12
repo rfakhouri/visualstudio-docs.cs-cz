@@ -1,7 +1,7 @@
 ---
 title: Přizpůsobení chování odstranění | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9d3be15009964272eb06118a0b9c01ec012164bc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 69774b098e76bb14ed11be092ae7ebedb71c218a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775833"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202758"
 ---
 # <a name="customizing-deletion-behavior"></a>Přizpůsobení chování odstranění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přizpůsobení chování odstranění](https://docs.microsoft.com/visualstudio/modeling/customizing-deletion-behavior).  
-  
 Odstranění elementu obvykle způsobí, že související prvky také odstranit. Všechny vztahy, jsou k němu připojená, a odstraní se všechny podřízené prvky. Toto chování je s názvem *odstranit šíření*. Můžete přizpůsobit šíření operace delete, třeba zajistit, že další související prvky jsou odstraněny. Napsáním kódu programu, můžete provést odstranění šíření závisí na stavu modelu. Další změny v reakci na odstranění může také způsobit.  
   
  Toto téma obsahuje následující oddíly:  

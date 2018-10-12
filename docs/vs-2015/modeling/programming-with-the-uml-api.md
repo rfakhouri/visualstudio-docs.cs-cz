@@ -1,7 +1,7 @@
 ---
 title: Programování s rozhraním API UML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aff07c444b6dac85144b06c0430ad1d9a2a497c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7e7fe3a58b1e21b116b3afcfff022cf19ba9af1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667448"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206295"
 ---
 # <a name="programming-with-the-uml-api"></a>Programování s rozhraním API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [programování s rozhraním API UML](https://docs.microsoft.com/visualstudio/modeling/programming-with-the-uml-api).  
-  
 UML rozhraní API sady Visual Studio umožňuje napsat kód k vytvoření, čtení a aktualizaci modelů a diagramů UML. Pokud chcete zobrazit, které verze sady Visual Studio podporují modelech UML, naleznete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Kromě rozhraní API referenčních stránkách následující témata popisují rozhraní API.  
@@ -35,12 +33,12 @@ UML rozhraní API sady Visual Studio umožňuje napsat kód k vytvoření, čten
 |-----------|-----------------------------------------|------------------------|  
 |[Procházení vztahů pomocí rozhraní API UML](../modeling/navigate-relationships-with-the-uml-api.md)|Prvky UML a jejich vlastnosti a asociace. Například IElement a jeho potomci, včetně: IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|V sadě Visual Studio, modely UML odpovídají specifikaci verze 2.1.2, kterou lze získat [stránky prostředků UML](http://go.microsoft.com/fwlink/?LinkId=160796). Každý typ je rozhraní, který má stejný název jako typ UML, s předponou "I".|  
 |[Vytváření elementů a vztahů v modelech UML](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|Každý typ elementu má metody pro vytváření podřízených.|  
-|[Zobrazení modelu UML v diagramech](../modeling/display-a-uml-model-on-diagrams.md)|IShape IDiagram<br /><br /> IShape.Move()|Každý prvek v modelu může být reprezentován jako tvar v diagramu. V některých případech můžete vytvořit nové obrazce pro každý objekt. Můžete přesunout, změnit velikost, barvu a sbalit nebo rozbalit tyto obrazce.|  
+|[Zobrazení modelu UML v diagramech](../modeling/display-a-uml-model-on-diagrams.md)|IShape IDiagram<br /><br /> IShape.Move()|Každý prvek v modelu může být reprezentován jako tvar v diagramu. V některých případech můžete vytvořit nové obrazce pro každý objekt. Můžete přesunout, změnit velikost, barvu a sbalit nebo rozbalit tyto obrazce.|  
 |[Procházení modelu UML](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|Store Model uložen model.<br /><br /> Kontext diagramu umožňuje přístup k aktuálnímu diagramu a úložišti.|  
 |[Propojení aktualizací modelu UML pomocí transakcí](../modeling/link-uml-model-updates-by-using-transactions.md)|ILinkedUndoContext|Je možné propojit řadu změn do jedné transakce.|  
-|[Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|IMenuCommand<br /><br /> IGestureExtension<br /><br /> ICommandExtension|Funkci diagramu můžete rozšířit definováním příkazů vyvolaných poklepáním a přetažením do diagramu.|  
-|[Definování omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md)|Parametr ValidationContext|Můžete definovat pravidla, která vám pomohou Ujistěte se, že model odpovídá zadaným omezením ověření.|  
-|[Získávání elementů modelu UML z objektu IDataObject](../modeling/get-uml-model-elements-from-idataobject.md)|IElement IShape|Když je prvek přetažen z Průzkumníka modelů UML nebo diagramu UML do jiného diagramu nebo aplikace, je serializován jako objekt IDataObject.|  
+|[Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|IMenuCommand<br /><br /> IGestureExtension<br /><br /> ICommandExtension|Funkci diagramu můžete rozšířit definováním příkazů vyvolaných poklepáním a přetažením do diagramu.|  
+|[Definování omezení ověřování pro modely UML](../modeling/define-validation-constraints-for-uml-models.md)|Parametr ValidationContext|Můžete definovat pravidla, která vám pomohou Ujistěte se, že model odpovídá zadaným omezením ověření.|  
+|[Získávání elementů modelu UML z objektu IDataObject](../modeling/get-uml-model-elements-from-idataobject.md)|IElement IShape|Když je prvek přetažen z Průzkumníka modelů UML nebo diagramu UML do jiného diagramu nebo aplikace, je serializován jako objekt IDataObject.|  
 |[Úpravy sekvenčních diagramů UML pomocí rozhraní API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)|IInteraction, ILifeline, IMessage|Vytváření a aktualizace diagramu interakce se mírně liší od práce s jinými typy diagramů.|  
 |[Rozšíření diagramů vrstev](../modeling/extend-layer-diagrams.md)|ILayer ILayerDiagram|Můžete napsat kód pro vytváření a úpravy diagramů vrstev a také ověřit kód programu proti nim.|  
   
@@ -75,7 +73,7 @@ UML rozhraní API sady Visual Studio umožňuje napsat kód k vytvoření, čten
   
 ## <a name="see-also"></a>Viz také  
  [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)   
- [Reference k rozhraní API pro rozšíření modelování UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
+ [Referenční dokumentace k rozhraní API pro rozšíření modelování UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
 
 
 

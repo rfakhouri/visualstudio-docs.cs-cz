@@ -1,7 +1,7 @@
 ---
 title: ClickOnce – Přehled mezipaměti | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5fb0bcd8c589f8ade12f8da0c4151e1f2894dd1d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5e976877a045b6efc7ca3d9fb103b9d1a8e88df7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632617"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217292"
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce – přehled mezipaměti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ClickOnce – Přehled mezipaměti](https://docs.microsoft.com/visualstudio/deployment/clickonce-cache-overview).  
-  
 Všechny [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikací, ať už jsou nainstalované místně nebo online, se ukládají v klientském počítači v [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]aplikace *mezipaměti*. A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] mezipaměť je řada skrytých složek v místní nastavení adresáři Documents and Settings složky aktuálního uživatele. Tato mezipaměť obsahuje soubory všechny aplikace, včetně sestavení, konfigurační soubory, aplikace a uživatelských nastavení a data adresáře. Mezipaměť je také zodpovědnost za migraci dat adresáře aplikace na nejnovější verzi. Další informace o migraci dat najdete v tématu [Accessing Local and Remote Data in ClickOnce Applications](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
   
  Tím, že poskytuje jedno umístění pro uložení aplikace [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] převezme úlohy správy fyzické instalace aplikace od uživatele. Mezipaměť také pomáhá izolovat aplikace podle sestavení a datové soubory pro všechny aplikace a jejich různé verze oddělit od sebe. Například při upgradu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace, že verze a její datové prostředky se dodávají s jejich vlastní adresáře v mezipaměti.  

@@ -1,7 +1,7 @@
 ---
 title: Ukázky nasazení ClickOnce a podrobné návody | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7d83d296ff0d5a8578f75487e6bb1863eb33e993
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc16747838347810e12e293d718b355f492a158e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669606"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207217"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Ukázky nasazení ClickOnce a podrobné návody
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ukázky nasazení ClickOnce a podrobné návody](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-samples-and-walkthroughs).  
-  
 Tato část obsahuje ukázkové aplikace, ukázkový kód a podrobné návody, které ukazují syntaxi, struktury a techniky, které jsou používány k nasazení Windows Forms, WPF a konzolové aplikace.  
   
  Ukázkový kód je určený pro vzdělávací účely a nesmí být použita v nasazeném řešení bez úprav. Zejména zabezpečení musí brát větší.  

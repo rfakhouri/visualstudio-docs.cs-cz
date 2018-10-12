@@ -1,7 +1,7 @@
 ---
 title: 'Diagramy případů použití UML: Pokyny | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c907dc4f1fe2a9d393fb5e92ca64490f7eeb54d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4abd008584732955bdac982dbaa0a629bd9ef90e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666435"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214237"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramy případů použití UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [diagramy případů použití UML: pokyny](https://docs.microsoft.com/visualstudio/modeling/uml-use-case-diagrams-guidelines).  
-  
 V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouží ke shrnutí, kdo používá vaše aplikace nebo systému, a co mohou provádět s ním. Chcete-li vytvořit diagram případu použití UML, na **architektury** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**.  
   
  Video ukázku naleznete v tématu [do případy použití funkce uspořádání](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/).  

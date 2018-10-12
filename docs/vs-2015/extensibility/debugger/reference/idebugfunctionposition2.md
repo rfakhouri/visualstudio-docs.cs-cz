@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionPosition2 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 65726f1f2f05a459c07687e2a77f9db0dcb0b45a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60c343b4f87e208ac3ebf19af0901a3319517223
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668427"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222336"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [IDebugFunctionPosition2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfunctionposition2).  
-  
 Toto rozhraní představuje abstraktní pozice funkce ve zdrojovém dokumentu.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -49,7 +47,7 @@ IDebugFunctionPosition2 : IUnknown
 |Metoda|Popis|  
 |------------|-----------------|  
 |[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Získá název funkce, která je vzhledem k této pozice.|  
-|[Getoffset –](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Získá posun od začátku této funkce.|  
+|[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Získá posun od začátku této funkce.|  
   
 ## <a name="remarks"></a>Poznámky  
  Pozice reprezentovaný tímto rozhraním je založený na textu, konkrétně [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struktury.  

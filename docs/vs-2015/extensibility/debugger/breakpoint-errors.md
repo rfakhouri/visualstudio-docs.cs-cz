@@ -1,7 +1,7 @@
 ---
 title: Chyby zarážky | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 79221c6b-a924-4c8e-a778-e312e4e0c0c8
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 656f96a344e3d527407cd5a91b0a5910e1e6005c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 136b371b6d024a93e2a4cb4cadd792928db49800
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667372"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197961"
 ---
 # <a name="breakpoint-errors"></a>Chyby zarážky
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [chyby zarážky](https://docs.microsoft.com/visualstudio/extensibility/debugger/breakpoint-errors).  
-  
 Následující popisuje proces, když se pokusí vytvořit vazbu na kód zarážku ale selže:  
   
 ## <a name="troubleshooting-a-breakpoint-error"></a>Řešení potíží s chybou zarážku  

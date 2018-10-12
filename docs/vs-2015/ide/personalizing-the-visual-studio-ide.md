@@ -1,7 +1,7 @@
 ---
 title: Přizpůsobení sady Visual Studio IDE | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24def685632c995f173ad1c0b50910ef36d484e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8729b9d2e532909a89e6293d48aefb21922fb4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668132"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219989"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Přizpůsobení integrovaného vývojového prostředí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](https://docs.microsoft.com/visualstudio/ide/personalizing-the-visual-studio-ide).  
-  
 Tato část popisuje, jak přizpůsobit Visual Studio v různé způsoby, jak nejlépe podporují vlastní stylu vývoje a požadavky. Můžete definovat a uložit několik rozložení oken a mezi nimi přepínat. Můžete například definovat rozložení pro psaní kódu a jeden pro ladění. Můžete přizpůsobit barvy, písma a formátování v editoru kódu pro jednotlivé jazyky. Můžete si vybrat mezi barevné motivy prostředí modrá, tmavé nebo světlý, nebo můžete vytvořit vlastní motivy stažením a instalací sady Visual Studio editor motivů sady z Galerie sady Visual Studio Code. Další možnosti, které se zobrazují také prostřednictvím [dialogové okno Možnosti prostředí](../ide/reference/environment-options-dialog-box.md).  
   
  Mnoho nastavení se zpřístupní instancích sady Visual Studio. Zobrazit [synchronizovaná nastavení](../ide/synchronized-settings-in-visual-studio.md) Další informace.  

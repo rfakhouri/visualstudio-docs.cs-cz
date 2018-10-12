@@ -1,7 +1,7 @@
 ---
 title: Řízení viditelnosti ikony nebo Dekorátoru | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9cc74f7ba8c71c2b8828ad19c4d6af80d6e8b8e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 299abef4d60b6bdc6fdf07cb8257034a6ee22d10
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207854"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Řízení viditelnosti ikony či dekorátoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [řízení viditelnosti ikony nebo Dekorátoru](https://docs.microsoft.com/visualstudio/modeling/controlling-the-visibility-of-an-icon-or-decorator).  
-  
 A *dekoratér* je ikona nebo řádek textu, který se zobrazí na tvar z jazyka specifického pro doménu (DSL). Můžete provést dekoratéru zobrazují a zmizí v závislosti na stavu vlastnosti v modelu. Například pro obrazec představující osoby, může mít jiné ikony, které se zobrazí v závislosti na osoby pohlaví, počet podřízených a tak dále.  
   
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Řízení viditelnosti ikony nebo dekorátoru  

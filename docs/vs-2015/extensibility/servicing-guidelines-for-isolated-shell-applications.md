@@ -1,7 +1,7 @@
 ---
 title: Pokyny pro obsluhu izolovaných aplikací prostředí | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dff7d9349e5081fa0e8ab64bfd32c90b83f19de3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70d59500c49c6e6939d85a35d9c1ff9393f5708e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671663"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208387"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Pokyny pro údržbu aplikací izolovaného prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pokyny údržbu aplikací izolovaného prostředí](https://docs.microsoft.com/visualstudio/extensibility/servicing-guidelines-for-isolated-shell-applications).  
-  
 Při distribuci aplikace Visual Studio izolované prostředí musí být schopný poskytnout aktualizace softwaru pro vaši aplikaci, poté, co je nainstalována. Chcete-li to provést, musíte nainstalovat aplikace pomocí souboru Microsoft Installer (MSI). Tento typ instalace umožňuje aktualizace softwaru od Microsoftu znovu distribuovat pomocí webových stáhnout a používat vaši zákazníci bez zásahu vlastní.  
   
 ## <a name="servicing-requirements"></a>Požadavky na údržbu.  

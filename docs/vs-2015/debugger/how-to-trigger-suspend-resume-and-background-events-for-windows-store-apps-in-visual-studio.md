@@ -1,7 +1,7 @@
 ---
 title: Jak aktivovat pozastavení, obnovení a událostí na pozadí pro aplikace Windows Store v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0466441d83d3d0203167f86e6f1afa8c85acb32d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696392"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214757"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Jak aktivovat události pozastavení a obnovení a události na pozadí pro aplikace pro Windows Store v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [jak aktivovat pozastavení, obnovení a událostí na pozadí pro aplikace Windows Store v sadě Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio).  
-  
 Pokud jste nejsou ladění, Windows **proces správy životního cyklu** (PLM) řídí stav spuštění aplikace – spuštění, pozastavení, pokračování a ukončení aplikace v reakci na akce uživatelů a stav zařízení. Při ladění, zakáže Windows tyto aktivační události. Toto téma popisuje, jak vyvolat tyto události v ladicím programu.  
   
  Toto téma také popisuje, jak ladit **úloh na pozadí**. Úlohy na pozadí umožňují provádět určité operace v procesech na pozadí, i když je aplikace neběží. Ladicí program můžete umístit vaše aplikace v režimu ladění a pak – bez spuštění uživatelského rozhraní – spuštění a ladění úloh na pozadí.  

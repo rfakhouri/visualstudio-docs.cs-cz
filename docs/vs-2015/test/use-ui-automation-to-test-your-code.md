@@ -1,7 +1,7 @@
 ---
 title: Použití automatizace uživatelského rozhraní k testování kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 92668aad54a032ccdbda2242ffcd132b356ea331
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f98a3b2883f4b0e6e3ade0c0ca8f39f4d7efdf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675626"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221725"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Použití automatizace uživatelského rozhraní k testování kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pomocí uživatelského rozhraní automatizace k testu kódu](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code).  
-  
 Automatizované testy, které ovládají aplikaci prostřednictvím jejího uživatelského rozhraní (UI) jsou označovány jako *programové testy UI* (CUITs). Tyto testy zahrnují funkční testování ovládacích prvků uživatelského rozhraní. Umožňují ověřit, že celá aplikace včetně uživatelského rozhraní, funguje správně. Programové testy uživatelského rozhraní jsou obzvláště užitečná, pokud je ověření nebo jiná logika v uživatelském rozhraní, například na webové stránce. Používají se také často k automatizaci existujícího manuálního testu.  
   
  Jak je znázorněno na následujícím obrázku, může být typické vývojové prostředí, kde na začátku můžete jednoduše svou aplikaci (F5) a klikněte na tlačítko prostřednictvím ovládacích prvků uživatelského rozhraní k ověření, že všechno správně funguje. Můžete pak se rozhodnout vytvořit programový test, takže není nutné a pokračujte v testování aplikace ručně. V závislosti na konkrétní funkce testování ve vaší aplikaci můžete napsat kód pro funkční testování nebo pro test integrace, který může nebo nemusí obsahovat testování na úrovni uživatelského rozhraní. Pokud chcete jednoduše přímý přístup k spustí nějakou obchodní logiku, může kód testu jednotek. Ale za určitých okolností může být vhodné zahrnout testování různých ovládacích prvků uživatelského rozhraní v aplikaci. Programový test uživatelského rozhraní můžete automatizovat počáteční (F5) scénář, ověření, že změny v kódu neovlivní funkčnost aplikace.  

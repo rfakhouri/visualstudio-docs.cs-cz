@@ -1,7 +1,7 @@
 ---
 title: Využití procesoru | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a8bd6cb34bf125ada7a880ca2802802fbcc579d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a25c50eaf3f0f5e31e6a3085967f0b6bd5f1055c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666146"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208688"
 ---
 # <a name="cpu-usage"></a>Využití procesoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Analyz využití procesoru v aplikaci Visual Studio](https://docs.microsoft.com/visualstudio/profiling/cpu-usage).  
-  
 Když budete potřebovat zjistit problémy s výkonem ve vaší aplikaci, je dobrým začátkem pochopení, jak využívá procesor. **Využití procesoru** nástroj ukazuje, kde procesor tráví čas spuštění Visual C++, Visual C# nebo Visual Basic a kód jazyka JavaScript.  
   
  Od verze Visual Studio 2015 Update 1, můžete zobrazit rozpis využití procesoru jednotlivých funkcích aniž byste museli opustit ladicí program. Můžete profilaci procesoru při ladění a vypnout a zobrazit výsledky, když se zastaví spuštění, například v na zarážce. Další informace najdete v tématu [profil procesoru v ladicím programu v sadě Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx).  

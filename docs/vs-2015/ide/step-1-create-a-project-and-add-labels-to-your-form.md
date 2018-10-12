@@ -1,7 +1,7 @@
 ---
 title: 'Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aab6de915d6bb26b123b931fe10b7e0116688357
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 6332659307f10b5cf7f4f224c8a99456de03d81a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880913"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206996"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [krok 1: Vytvořte projekt a přidat popisky na svůj formulář](https://docs.microsoft.com/visualstudio/ide/step-1-create-a-project-and-add-labels-to-your-form).  
-  
 Jako první kroky ve vývoji tohoto kvízu vytvoříte projekt a přidat popisky, tlačítka a další ovládací prvky do formuláře. Můžete také nastavit vlastnosti pro každý ovládací prvek, který přidáte. Projekt bude obsahovat formulář, ovládací prvky a (později v tomto návodu) kód. Tlačítko spustí kvíz, popisky zobrazí problémy kvízu a další ovládací prvky zobrazí odpovědi kvízu a čas, který zbývá do dokončení kvízu.  
   
 > [!NOTE]

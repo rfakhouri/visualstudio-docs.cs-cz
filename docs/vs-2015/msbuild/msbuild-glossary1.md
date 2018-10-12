@@ -1,7 +1,7 @@
 ---
 title: Nástroj MSBuild Glossary1 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7cb29382e832136def16456dd1df83ab63e0fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8142f5cf6afdc252a3a00ca94983ffe94be1fb67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696559"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199989"
 ---
 # <a name="msbuild-glossary1"></a>MSBuild Glossary1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Slovníček nástroje MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-glossary).  
-  
   
 Tyto podmínky se používají k popisu Microsoft Build Engine (MSBuild) a jeho součástí.  
   

@@ -1,7 +1,7 @@
 ---
 title: Vyhodnocení výrazů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c51cc08da8c71a2ac1f25d02461ea9c24797ebc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0aae7193c6840d389f7990f155fecb0149edc7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669583"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213678"
 ---
 # <a name="evaluating-expressions"></a>Vyhodnocování výrazů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vyhodnocování výrazů](https://docs.microsoft.com/visualstudio/extensibility/debugger/evaluating-expressions).  
-  
 Výrazy jsou vytvořeny z řetězce předáván z automatické hodnoty, kukátko, QuickWatch nebo příkazovém podokně. Při vyhodnocování výrazu generuje tisknutelný řetězec, který obsahuje název a typ proměnné nebo argumentu a jeho hodnotu. Tento řetězec se zobrazí v okně odpovídající integrovaného vývojového prostředí.  
   
 ## <a name="implementation"></a>Implementace  

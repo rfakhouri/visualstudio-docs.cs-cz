@@ -1,7 +1,7 @@
 ---
 title: Ladění ve smíšeném režimu aplikací | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a2fc5fde5d026fd6fbc7e49153fba5cb95a7a0d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00b448f84e0103d5cf98ae27c519e247ad3d0c25
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669611"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202173"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Ladění aplikací ve smíšeném režimu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ladění v kombinovaném režimu aplikace](https://docs.microsoft.com/visualstudio/debugger/debugging-mixed-mode-applications).  
-  
 Aplikace pracující v kombinovaném režimu je libovolná aplikace, která kombinuje nativní kód (jazyk C++) se spravovaným kódem (například jazyk Visual Basic, Visual C# nebo C++, který běží na modulu CLR). Ladění aplikací ve smíšeném režimu je z velké části transparentní [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]; není příliš odlišné od ladění režimu jedné aplikace. Existuje však několik důležitých informací.  
   
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>Povolení příkazů Edit a Continue jazyka C++ v kombinovaném režimu ladění  

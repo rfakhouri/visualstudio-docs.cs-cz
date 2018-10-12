@@ -1,7 +1,7 @@
 ---
 title: Uspořádání objektů do kontejnerů rozložení v Návrháři XAML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 329e41454431c0d19adda5175b455449d4f48e7b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c92af4e78715c608fdee860690fd58561b8bb2d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674085"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219554"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Uspořádání objektů do kontejnerů rozložení v Návrháři XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [uspořádání objektů do kontejnerů rozložení v Návrháři XAML](https://docs.microsoft.com/visualstudio/designers/organize-objects-into-layout-containers-in-xaml-designer).  
-  
 Představte si, kam chcete objektů se zobrazí na stránce. objekty, jako jsou obrázky, tlačítka a videa. Možná budete chtít zobrazit řádky a sloupce, na jednom řádku svisle nebo vodorovně nebo v pevné umístění.  
   
  Poté, co jste využili příležitost dobře se rozmyslete si, jak může zobrazit na stránce, zvolte panely rozložení. Všechny stránky spustit s jednou, protože potřebujete něco, co můžete přidat objekty do. Ve výchozím nastavení je **mřížky** ale můžete výběr změnit.  
@@ -141,7 +139,7 @@ Představte si, kam chcete objektů se zobrazí na stránce. objekty, jako jsou 
   
 ## <a name="see-also"></a>Viz také  
  [Práce s elementy v Návrháři XAML](../designers/working-with-elements-in-xaml-designer.md)   
- [Vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+ [Vytvoření uživatelského rozhraní pomocí Návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 
 
 

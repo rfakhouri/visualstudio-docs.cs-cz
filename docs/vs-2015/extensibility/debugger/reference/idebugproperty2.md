@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c728c2e4955d35e2954fbda0a4a4432c550666d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63b39e45d73be47538263b7e7cd5ce1e12769f95
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696463"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215641"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [IDebugProperty2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty2).  
-  
 Toto rozhraní představuje vlastnost rámce zásobníku, vlastnost dokumentu program nebo některé jiné vlastnosti. Vlastnost je obvykle výsledkem vyhodnocení výrazu.  
   
 > [!NOTE]
@@ -63,12 +61,12 @@ IDebugProperty2 : IUnknown
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)|Nastaví hodnotu vlastnosti z řetězce.|  
 |[SetValueAsReference](../../../extensibility/debugger/reference/idebugproperty2-setvalueasreference.md)|Nastaví hodnotu vlastnosti z hodnoty daného odkazu.|  
 |[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)|Vytvoří výčet podřízené vlastnosti.|  
-|[Getparent –](../../../extensibility/debugger/reference/idebugproperty2-getparent.md)|Vrací nadřazeného člena vlastnost.|  
+|[GetParent](../../../extensibility/debugger/reference/idebugproperty2-getparent.md)|Vrací nadřazeného člena vlastnost.|  
 |[GetDerivedMostProperty](../../../extensibility/debugger/reference/idebugproperty2-getderivedmostproperty.md)|Vrátí vlastnosti, která popisuje vlastnosti nejvíce odvozenému vlastnosti.|  
 |[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)|Vrátí počet bajtů paměti, které tvoří hodnotu vlastnosti.|  
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)|Vrátí kontext paměti pro hodnotu vlastnosti.|  
 |[GetSize](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|Vrátí velikost v bajtech, hodnota vlastnosti.|  
-|[Getreference –](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|Vrátí odkaz na hodnotu této vlastnosti.|  
+|[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|Vrátí odkaz na hodnotu této vlastnosti.|  
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|Vrátí rozšířené informace o vlastnosti.|  
   
 ## <a name="remarks"></a>Poznámky  

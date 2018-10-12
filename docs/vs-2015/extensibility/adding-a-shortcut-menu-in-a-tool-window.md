@@ -1,7 +1,7 @@
 ---
 title: Přidání místní nabídky v okně nástroje | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a09e288771702ec6c5abde1838d8139e151504d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5326d604c36299d9cc1a553a61a8e4e1fabdc066
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42665954"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217981"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Přidání místní nabídky do panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Přidání místní nabídky v okně nástroje](https://docs.microsoft.com/visualstudio/extensibility/adding-a-shortcut-menu-in-a-tool-window).  
-  
 Tento názorný postup vloží nabídku v panelu nástrojů. Místní nabídka je nabídka, která se zobrazí, když uživatel klepne pravým tlačítkem na tlačítko, textového pole nebo pozadí okna. Příkazy v místní nabídce se chová stejně jako příkazy na jiné nabídky nebo panely nástrojů. Pro podporu místní nabídky, zadejte ho do souboru .vsct a zobrazit je v reakci na klikněte pravým tlačítkem myši.  
   
  Panel nástrojů se skládá z uživatelský ovládací prvek WPF v, která dědí z třídy okna vlastního nástroje <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>.  

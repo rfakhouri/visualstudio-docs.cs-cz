@@ -1,7 +1,7 @@
 ---
 title: Zdrojový kód L2DBForm.XAML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e845250839ef2bdd23585cadd64588afd77eed43
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 291f7ece2c53d168125da32a11e50ca42e19f3fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633560"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207685"
 ---
 # <a name="l2dbformxaml-source-code"></a>Zdrojový kód L2DBForm.XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zdrojový kód L2DBForm.xaml](https://docs.microsoft.com/visualstudio/designers/l2dbform-xaml-source-code).  
-  
 Toto téma obsahuje a popisuje zdrojového souboru XAML [WPF datové vazby pomocí LINQ to XML příklad](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.  
   
 ## <a name="overall-ui-structure"></a>Celková struktura uživatelského rozhraní  

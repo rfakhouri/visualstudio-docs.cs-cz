@@ -1,7 +1,7 @@
 ---
 title: Visual C++ Intellisense | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f4e4d59b57c61dea2c42b2b99714b8bf0bdf154
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 104c85f7b23af8bfb412423ad1eeb27190a235c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633429"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212931"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Visual C++ Intellisense](https://docs.microsoft.com/visualstudio/ide/visual-cpp-intellisense).  
-  
 V sadě Visual Studio 2015 je k dispozici pro jeden kód soubory stejně jako soubory v projektech technologie IntelliSense. V projektech pro různé platformy některé funkce technologie IntelliSense jsou k dispozici v souborech .cpp a .c v projektu sdíleného kódu i v případě, že jsou v kontextu Android nebo iOS.  
   
 ## <a name="intellisense-features-in-c"></a>Funkce technologie IntelliSense v jazyce C++  

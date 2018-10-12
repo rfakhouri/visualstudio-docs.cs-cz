@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vizualizace asociace kolekce (návrhář tříd) | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 42cf379e9cfb2d8a84412a534eb13702febc945a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8e997cf30e4fe8508dd8e1fa8049bdc83e93d53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672763"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197688"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>Postupy: Vizualizace asociace kolekce (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: vizualizace asociace kolekce (návrhář tříd)](https://docs.microsoft.com/visualstudio/ide/how-to-visualize-a-collection-association-class-designer).  
-  
 Vlastnosti a pole, které jsou kolekce jiných typů lze zobrazit v diagramu tříd jako přidružení kolekce. Na rozdíl od pravidelných přidružení, které zobrazí pole nebo vlastnost jako řádku propojení vlastnící třídy typu pole, zobrazí se jako řádku propojení vlastnící třídy na shromážděný typ asociace kolekce.  
   
 ### <a name="to-create-a-collection-association"></a>Vytvoření přidružení kolekce  

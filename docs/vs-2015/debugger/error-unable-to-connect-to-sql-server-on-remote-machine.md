@@ -1,7 +1,7 @@
 ---
 title: 'Chyba: Nelze se připojit k serveru SQL Server na vzdáleném počítači | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a30d9747d954ef70b0400af4a412d6e8d58ee77a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64f10867668b44c91268a6a27d61ddb1edfb3145
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672462"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221764"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Chyba: Nepodařilo se připojit k serveru SQL Server na vzdáleném počítači.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Chyba: Nelze se připojit k serveru SQL Server na vzdáleném počítači](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-connect-to-sql-server-on-remote-machine).  
-  
 Nelze se připojit k serveru SQL Server na vzdáleném počítači *název*. Přístup byl odepřen. Ověřte, že máte nainstalovanou vzdáleného ladícího programu na vzdáleném počítači. Pokud vzdálený počítač není připojen k doméně, nebo pokud Visual Studio běží jako místní účet, vzdálený počítač musí mít účet se stejným uživatelským jménem a heslem jako místní účet.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  

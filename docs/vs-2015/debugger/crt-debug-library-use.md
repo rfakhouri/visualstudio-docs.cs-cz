@@ -1,7 +1,7 @@
 ---
 title: Použití knihovny ladění CRT | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87b0923153d5e4d0a3c5e4eb33a97e31fd3b2802
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd9eb706627600b9c32b4cda7c020174777d1a2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199511"
 ---
 # <a name="crt-debug-library-use"></a>Použití knihovny ladění CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [použití knihovny ladění CRT](https://docs.microsoft.com/visualstudio/debugger/crt-debug-library-use).  
-  
 Knihovny run-time jazyka C poskytuje rozsáhlou podporu ladění. Chcete-li použít jeden z knihovny ladění CRT, je nutné propojit s [/DEBUG](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103) a proveďte kompilaci s **/MDd**, **/MTD**, nebo **/LDd**.  
   
 ## <a name="remarks"></a>Poznámky  

@@ -1,7 +1,7 @@
 ---
 title: Analýza kvality kódu aplikací pro Store pomocí sady Visual Studio statickou analýzu kódu C++ | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d7f85b85ed82478b99d80d6d82c169069a9ec72d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e3b077165cde14f02563d406c0461ef2fc0ab5f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674483"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215095"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analýza kvality kódu aplikací pro Store pomocí sady Visual Studio statickou analýzu kódu C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [C++ analýza kvality kódu aplikací pro Store pomocí sady Visual Studio statické analýzy kódu](https://docs.microsoft.com/visualstudio/test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis).  
-  
 Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Nástroj pro analýzu kódu v edicích express sady Visual Studio prozkoumá váš kód pro sadu běžné problémy a porušování programovacím vhodné. Upozornění analýzy kódu se liší od kompilátoru chyby a upozornění, protože analýza kódu hledá vzory v konkrétním kódu, které jsou platné, ale přesto vytvořit problémy pro vy nebo ostatní uživatelé, kteří používají váš kód. Analýzy kódu můžete také vyhledat chyby v kódu, které je obtížné vyhledat pomocí testování. Spuštění nástroje Analýza kódu v pravidelných intervalech během procesu vývoje můžete zvýšit tak kvalitu dokončené aplikace.  

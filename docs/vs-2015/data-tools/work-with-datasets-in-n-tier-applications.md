@@ -1,7 +1,7 @@
 ---
 title: Práce s datovými sadami ve vícevrstvých aplikacích | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 61f3686488a460ef4c7091521c2165f575e76fa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d05204edfd7c3cd5daecad3a1cb21ba5ba7e60d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672478"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205969"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Práce s datovými sadami ve vícevrstvých aplikacích
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [práce s datovými sadami ve vícevrstvých aplikacích](https://docs.microsoft.com/visualstudio/data-tools/work-with-datasets-in-n-tier-applications).  
-  
   
 Vícevrstvé datové aplikace * jsou datově orientovaných aplikací, které jsou rozdělené do několika logické vrstvy (nebo *úrovně*). Jinými slovy vícevrstvé datové aplikace je aplikace, která je rozdělena do několika projektů s vrstvě přístupu k datům, vrstvu obchodní logiky a prezentační vrstvou každý ve svém vlastním projektu. Další informace najdete v tématu [přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md).  
   
@@ -76,7 +74,7 @@ Vícevrstvé datové aplikace * jsou datově orientovaných aplikací, které js
   
  [Hierarchická aktualizace](../data-tools/hierarchical-update.md)  
   
- [Nástroje datové sady v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
+ [Nástroje datových sad v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
   
  [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)  
   

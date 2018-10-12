@@ -1,7 +1,7 @@
 ---
 title: Pravidla šířící změny v modelu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c2e0b710d96d5da7b31ac2fce7542b0c981fe1b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab05923a02176f4c0d8aa30ac9d26b0e41868396
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628639"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222713"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Pravidla šířící změny v modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pravidla šíření změn v rámci the Model](https://docs.microsoft.com/visualstudio/modeling/rules-propagate-changes-within-the-model).  
-  
 Můžete vytvořit pravidlo úložiště, které rozšíří změnu z jednoho elementu do druhého v produktu Visualization and Modeling SDK (vmsdk následující položky). Když dojde ke změně k libovolnému prvku v Store, jsou naplánovány pravidla má být spuštěna, většinou když nejkrajnější transakce se potvrzeny. Existují různé typy pravidel pro různé druhy událostí, jako je například přidání elementu nebo jejím odstranění. Pravidla můžete připojit na konkrétní typy prvků, tvary nebo diagramů. Mnoho integrovaných funkcí, které jsou definovány pomocí pravidel: například pravidla ujistěte se, že diagramu se aktualizuje při změně modelu. Doménově specifického jazyka můžete přizpůsobit tak, že přidáte vlastní pravidla.  
   
  Pravidla Store jsou vhodné pro šíření změn v úložišti – to znamená, že se změní na prvky modelu, relace, tvary nebo konektory a jejich domény vlastnosti. Pravidla nelze spustit, když uživatel spustí příkaz zpět nebo znovu. Místo toho správce transakcí zajišťuje, že obsah úložiště jsou obnovena do správného stavu. Pokud chcete změny na prostředky mimo úložiště, použijte Store události. Další informace najdete v tématu [obslužné rutiny rozšíření změny mimo the Model událostí](../modeling/event-handlers-propagate-changes-outside-the-model.md).  

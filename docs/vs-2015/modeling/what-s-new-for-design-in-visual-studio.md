@@ -1,7 +1,7 @@
 ---
 title: Co&#39;s nový návrh v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,15 @@ caps.latest.revision: 34
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d710d17caaf60cea7b11a1ebd81d91796fdb46d6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3d6ab30934750f2c825029c1433ea7ca68447dcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859104"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204279"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novinky pro programátory ve Visual Studiu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Nejnovější verzi tohoto tématu můžete najít v [co&#39;nový návrh v sadě Visual Studio s](https://docs.microsoft.com/visualstudio/modeling/what-s-new-for-design-in-visual-studio).
-
 Tato verze sady Visual Studio zahrnuje následující vylepšení vám pomůže lépe pochopit a návrhu kódu.
 
  **Mapy kódu a grafy závislostí**

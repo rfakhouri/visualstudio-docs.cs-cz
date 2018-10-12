@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01d80ae623be1e808164f71a922353f7556b69ec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cca25e55c43a94859588aca56f432e5c86dd5f94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629448"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213431"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [IDebugProgram2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2).  
-  
 Toto rozhraní představuje program, který běží v procesu.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -48,24 +46,24 @@ IDebugProgram2 : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Enumthreads –](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|Vytvoří výčet vlákna, které jsou spuštěny v rámci tohoto programu.|  
-|[GetName –](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|Získá název programu.|  
-|[Getprocess –](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|Získá, na kterém tento program běží v procesu.|  
-|[ukončit](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|Tento program se ukončí.|  
+|[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|Vytvoří výčet vlákna, které jsou spuštěny v rámci tohoto programu.|  
+|[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|Získá název programu.|  
+|[GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|Získá, na kterém tento program běží v procesu.|  
+|[Terminate](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|Tento program se ukončí.|  
 |[Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|Připojí se k tomuto programu.|  
 |[CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)|Určuje, pokud ladicí stroj (DE) můžete odpojit od programu.|  
 |[Detach](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|Odpojí ladicí program z tohoto programu.|  
 |[GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)|Získá globálně jedinečný identifikátor pro tento program.|  
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md)|Získá programu vlastnosti.|  
-|[Spuštění](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Dál spuštěním tohoto programu v zastaveném stavu. Všechny předchozí stav spuštění je zrušeno.|  
-|[pokračovat](../../../extensibility/debugger/reference/idebugprogram2-continue.md)|Dál spuštěním tohoto programu v zastaveném stavu. Všechny předchozí stav spuštění se zachová.|  
-|[Krok](../../../extensibility/debugger/reference/idebugprogram2-step.md)|Provádí se krok.|  
+|[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Dál spuštěním tohoto programu v zastaveném stavu. Všechny předchozí stav spuštění je zrušeno.|  
+|[Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)|Dál spuštěním tohoto programu v zastaveném stavu. Všechny předchozí stav spuštění se zachová.|  
+|[Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)|Provádí se krok.|  
 |[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)|Požadavky, že tento program zastavit provádění na další čas, po jednu z jeho kód spuštění vlákna.|  
 |[GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)|Získá název a identifikátor ladicího stroje (DE) spuštění tohoto programu.|  
 |[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)|Vytvoří výčet kontexty kód pro danou pozici ve zdrojovém souboru.|  
 |[GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)|Získá počet bajtů paměti pro tento program.|  
 |[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)|Získá datový proud zpětný překlad pro tento program nebo součástí tohoto programu.|  
-|[Enummodules –](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)|Vytvoří výčet moduly, které tento program načetl a provádí.|  
+|[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)|Vytvoří výčet moduly, které tento program načetl a provádí.|  
 |[GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)|Získá aktualizace upravit a pokračovat (ENC) pro tento program.<br /><br /> Tuto metodu není možné implementovat pomocí vlastního ladicího stroje (vždy by měl vrátit `E_NOTIMPL`).|  
 |[EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)|Vytvoří výčet cest kódu tohoto programu.|  
 |[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)|Výpis zapíše do souboru.|  

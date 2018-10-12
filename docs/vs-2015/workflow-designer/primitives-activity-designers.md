@@ -1,7 +1,7 @@
 ---
 title: Návrháři aktivit primitiv | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,21 +12,21 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4d2397cf97b57008d92f8ec8086161df03d0714b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8fe81e57ed9eff699cf70f2e4fa613b0a0683f2f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669480"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197714"
 ---
 # <a name="primitives-activity-designers"></a>Návrháři aktivit primitiv
 Návrháři aktivit primitiv slouží k vytvoření a konfigurace různých činností v <xref:System.Activities> obor názvů, jako je například přiřazení a zpoždění. V tématech obsažené v této části najdete pokyny, jak používat [!INCLUDE[wfd2](../includes/wfd2-md.md)] návrhářů aktivit a šablony.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [přiřazení](../workflow-designer/assign-activity-designer.md)  
+ [Assign](../workflow-designer/assign-activity-designer.md)  
  Používá k vytvoření a konfigurace <xref:System.Activities.Statements.Assign> aktivity.  
   
- [zpoždění](../workflow-designer/delay-activity-designer.md)  
+ [Delay](../workflow-designer/delay-activity-designer.md)  
  Umožňuje vytvořit a nakonfigurovat <xref:System.Activities.Statements.Delay> aktivity.  
   
  [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)  
@@ -42,7 +42,7 @@ Návrháři aktivit primitiv slouží k vytvoření a konfigurace různých čin
   
  [Vývojový diagram](../workflow-designer/flowchart-activity-designers.md)  
   
- [Zasílání zpráv](../workflow-designer/messaging-activity-designers.md)  
+ [Messaging](../workflow-designer/messaging-activity-designers.md)  
   
  [Modul runtime](../workflow-designer/runtime-activity-designers.md)  
   

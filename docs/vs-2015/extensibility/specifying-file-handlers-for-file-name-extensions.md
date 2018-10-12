@@ -1,7 +1,7 @@
 ---
 title: Určení popisovačů souborů pro přípony názvů souborů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83bbc57098a68239a1ef26548e9cf05fd31322bb
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7805cd0f146289e6993971805107faca5cf42920
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774601"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198429"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Určení popisovačů souborů pro přípony názvů souborů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [určení popisovačů souborů pro přípony názvů souborů](https://docs.microsoft.com/visualstudio/extensibility/specifying-file-handlers-for-file-name-extensions).  
-  
 Existuje mnoho způsobů, jak zjistit, která zpracovává soubor, který má příponu souboru aplikace. Příkazy OpenWithList a OpenWithProgids jsou dva způsoby určení popisovačů souborů pod položkou registru pro příponu souboru.  
   
 ## <a name="openwithlist-verb"></a>Příkaz OpenWithList  

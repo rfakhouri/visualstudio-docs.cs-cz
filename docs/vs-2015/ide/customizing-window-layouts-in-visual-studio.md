@@ -1,7 +1,7 @@
 ---
 title: Přizpůsobení rozložení oken v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7f581c920a0f42105c1409e320b941a12dbc5f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673611"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218813"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Přizpůsobení rozložení oken v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přizpůsobení rozložení oken v sadě Visual Studio](https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio).  
-  
 V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systému windows vytvořit rozložení oken, které nejlépe vyhovují různých vývojových pracovních postupů. Při přizpůsobování rozložení prostředí IDE pamatuje ho. Například, pokud změníte umístění ukotvení **Průzkumníka řešení** a pak zavřete sadu Visual Studio, při příštím spuštění, i v případě, že pracujete v jiném počítači, **Průzkumníka řešení** bude ukotven na stejném místě. Můžete také pojmenujte vlastní rozložení a uložte ho a potom přepínejte mezi rozložení pomocí jediného příkazu. Například můžete vytvořit zobrazení pro úpravy a druhý pro ladění a přepínat mezi nimi technologií **okno &#124; použít rozložení oken** příkazu nabídky.  
   
 ## <a name="kinds-of-windows"></a>Druhy oken  
@@ -188,7 +186,7 @@ V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systé
 |-----------|-----------------|  
 |[Druhy Windows](../misc/kinds-of-windows.md)|Tento článek popisuje rozdíly mezi okny nástrojů a okny dokumentů v prostředí IDE.|  
 |[Postupy: rozvržení a dokování Windows](../misc/how-to-arrange-and-dock-windows.md)|Popisuje, jak lze okna ukotvit, automatický skrývat a zobrazit vedle sebe a také jak rozložení oken obnovit.|  
-|[Postupy: pohyb v integrovaném vývojovém prostředí](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Popisuje, jak lze cyklicky přepínat mezi otevřenými okny v integrovaném vývojovém prostředí (IDE) v pořadí podle používání. Také popisuje, jak můžete přejít na konkrétní dokumenty.|  
+|[Návody: Pohyb v integrovaném vývojovém prostředí](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Popisuje, jak lze cyklicky přepínat mezi otevřenými okny v integrovaném vývojovém prostředí (IDE) v pořadí podle používání. Také popisuje, jak můžete přejít na konkrétní dokumenty.|  
 |[Přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Obsahuje informace o kombinacích nastavení a o tom, jaký vliv mají nastavení na rozložení oken, klávesové zkratky a další prvky v prostředí IDE.|
 
 

@@ -1,7 +1,7 @@
 ---
 title: Použití sad pravidel k seskupování pravidel analýzy kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ae7374ae6b713fe7fa1911cdcce3effa600482b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8af8cbc27a61369640a80dbccb4d99dd2466f3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680795"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220581"
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>Použití sad pravidel k seskupování pravidel analýzy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pomocí sad pravidel k seskupování pravidel analýzy kódu](https://docs.microsoft.com/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules).  
-  
 Při konfiguraci analýzy kódu v [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], nebo [!INCLUDE[vsPro](../includes/vspro-md.md)], můžete vybrat ze seznamu Microsoft integrovanou *sad pravidel*. Sada pravidel je logické seskupení pravidel analýzy kódu, která vyhledávají cílené problémy a zvláštní podmínky. Například můžete použít sadu pravidel, která slouží k vyhledání kódu veřejně dostupných rozhraní API, nebo můžete použít sadu pravidel, která obsahuje pouze minimální doporučená pravidla. Můžete také použít sadu pravidel, která zahrnuje všechna pravidla.  
   
  Můžete přizpůsobit sadu přidáním nebo odstraněním pravidel nebo změnou pravidel se zobrazí v pravidel **seznam chyb** okno jako upozornění nebo chyby. Sada vlastních pravidel může splnit potřebu konkrétního vývojového prostředí. Při přizpůsobování sady vlastních pravidel poskytuje stránka sady pravidel nástroje pro vyhledávání a filtrování, které vám s tím pomohou.  

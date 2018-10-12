@@ -1,7 +1,7 @@
 ---
 title: Zobrazení funkcí | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4bc15c21400b720bd5dde9c18111d7cc68afc34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88ae3a5053c6e1cdd5f3e8ab36c80823fdb13b41
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666992"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205605"
 ---
 # <a name="functions-view"></a>Zobrazení funkcí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení funkcí](https://docs.microsoft.com/visualstudio/profiling/functions-view).  
-  
 Zobrazení funkcí jsou uvedeny funkce, které jsou volány během profilování.  
   
  Ve výchozím nastavení jsou uvedené funkce podle názvu. Chcete-li zobrazit funkce v modulu, klikněte pravým tlačítkem na zobrazení funkcí okna a pak vyberte **zobrazit v zobrazení modulu**. Zobrazí se modul zobrazení.  
@@ -45,7 +43,7 @@ Zobrazení funkcí jsou uvedeny funkce, které jsou volány během profilování
  [Zobrazení funkcí](../profiling/functions-view-sampling-data.md)   
  [Zobrazení funkcí](../profiling/functions-view-instrumentation-data.md)   
  [Zobrazení funkcí – instrumentace](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Zobrazení funkcí – vzorkování](../profiling/functions-view-dotnet-memory-sampling-data.md)
+ [Zobrazení funkcí – Vzorkování](../profiling/functions-view-dotnet-memory-sampling-data.md)
 
 
 

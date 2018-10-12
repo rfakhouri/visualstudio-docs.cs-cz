@@ -1,7 +1,7 @@
 ---
 title: Možnosti, textový Editor, přípona souboru | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99f6d7b90b86b4a5ffefadd98f30ef2f3326fa61
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 953417bf6d3c89df452878a3070937f29112c67c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674698"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204123"
 ---
 # <a name="options-text-editor-file-extension"></a>Možnosti, textový editor, přípona souboru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [možnosti, textový Editor, přípona souboru](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-file-extension).  
-  
   
 Dialogové okno umožňuje zadat, jak všechny soubory s určité přípony souborů této možnosti bude zpracován adresou integrovaného vývojového prostředí (IDE) sady Visual Studio. Pro každou **rozšíření** , že zadáte, můžete vybrat prostředí pro úpravy. To umožňuje zvolit integrovaného vývojového prostředí editoru nebo návrháře, ve kterém se otevře dokumenty určitého typu. Chcete-li zobrazit tyto možnosti, zvolte **možnosti** z **nástroje** nabídky, rozbalte **textový Editor** uzel a vyberte možnost **přípona souboru**.  
   
@@ -48,7 +46,7 @@ Dialogové okno umožňuje zadat, jak všechny soubory s určité přípony soub
  **Editor**  
  Vyberte integrované vývojové prostředí editoru nebo návrháře v dokumenty, které se tento soubor se otevře rozšíření. Když vyberete možnost "s kódováním", zobrazí se při každém otevření těchto dokumentu, který vám umožní vybrat kódování schéma dialogové okno.  
   
- **Přidat**  
+ **Add**  
  Přidá položku, která obsahuje zadaný **rozšíření** a **prostředí pro úpravy** do seznamu přípon.  
   
  **odebrat**  

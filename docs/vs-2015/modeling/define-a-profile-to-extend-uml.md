@@ -1,7 +1,7 @@
 ---
 title: Definování profilu pro rozšíření UML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b54babfc6bb4350ba1cc99d6ce34a05f70dab693
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775794"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221257"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definování profilu pro rozšíření UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [definování profilu pro rozšíření UML](https://docs.microsoft.com/visualstudio/modeling/define-a-profile-to-extend-uml).  
-  
 Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu pro konkrétní účely. Profil definuje jeden nebo více *stereotypů UML*. Stereotyp lze použít k označení typu jako určitého druhu objektu. Stereotyp můžete také rozšířit prvku seznamu vlastností.  
   
  Několik profilů se nainstaluje pomocí podporované edice sady Visual Studio. Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport). Další informace o těchto profilech a o tom, jak použít Stereotypy, viz [přizpůsobení modelu pomocí profilů a stereotypů](../modeling/customize-your-model-with-profiles-and-stereotypes.md).  

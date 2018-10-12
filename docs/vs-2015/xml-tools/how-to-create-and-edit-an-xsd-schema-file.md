@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vytvoření a úprava souboru schématu XSD | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a8d8fd2506dbd0e9bd01debdb94ac5ae29f35421
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d843f9bf40b0cfee0d643a28a6757d9a491f0e8c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629216"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210402"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Postupy: vytvoření a úprava souboru schématu XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: vytvoření a úprava souboru schématu XSD](https://docs.microsoft.com/visualstudio/xml-tools/how-to-create-and-edit-an-xsd-schema-file).  
-  
   
 Toto téma popisuje, jak vytvořit nový soubor schématu XML (XSD) a pak přidejte obsah do souboru XSD.  
   

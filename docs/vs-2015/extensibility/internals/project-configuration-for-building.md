@@ -1,7 +1,7 @@
 ---
 title: Konfigurace pro sestavení projektu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799330ffa4fbedc5d1fee1ff4cb2f0dfdb3049f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bcac8acced823f294c4e6dd33302e3eea30b0439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221114"
 ---
 # <a name="project-configuration-for-building"></a>Konfigurace projektu pro sestavení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [konfigurace projektu pro sestavení](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-building).  
-  
 Seznam konfigurací řešení pro dané řešení se spravuje přes dialogové okno konfigurace řešení.  
   
  Uživatel může vytvořit konfigurace další řešení, každý s vlastním jedinečným názvem. Když uživatel vytvoří nová konfigurace řešení, rozhraní IDE použije výchozí k názvu odpovídající konfigurace v projektech nebo ladění, pokud neexistuje žádný odpovídající název. Uživatel může změnit výběr podle specifických požadavků v případě potřeby. Jedinou výjimkou z tohoto chování je, když projekt podporuje konfigurace, která odpovídá názvu nová konfigurace řešení. Předpokládejme například, že řešení obsahuje Project1 a "project2". Project1 má konfigurace projektu, ladění, maloobchodní prodej a MyConfig1. "Project2" má konfigurace projektu, ladění, maloobchodní prodej a MyConfig2.  

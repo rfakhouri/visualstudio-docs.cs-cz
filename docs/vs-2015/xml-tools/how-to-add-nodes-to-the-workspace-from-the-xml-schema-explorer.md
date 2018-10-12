@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: přidání uzlů do pracovního prostoru z Průzkumníka schémat XML | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 58bad7de0b907881b4fe6f21fd5c7957e692d33a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6ef4e4e019406d9c317ccd90eabcb89e25a6f36
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627837"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220100"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Postupy: přidání uzlů do pracovního prostoru z Průzkumníka schémat XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: přidání uzlů do pracovního prostoru z Průzkumníka schémat XML](https://docs.microsoft.com/visualstudio/xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer).  
-  
   
 Toto téma vysvětluje, jak přidat uzly do [pracovní prostor návrháře schémat XML](../xml-tools/xml-schema-designer-workspace.md) z Průzkumníka schémat XML. Toho lze dosáhnout pomocí přetahování uzlů z Průzkumníka schémat XML do zobrazení o návrháři XSD nebo pomocí místní nabídky Průzkumníka schémat XML. Můžete také přidat uzly, kteří jsou zvýrazněni v důsledku vyhledávání prováděné Průzkumníka schémat XML. Další informace najdete v tématu [postupy: přidání nastavení uzlů výsledků hledání schémat do pracovního prostoru](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  
   

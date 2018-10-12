@@ -1,7 +1,7 @@
 ---
 title: SDK Vizualizéru souběžnosti | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bce206e362b64bfd27f90e7f6be11fec0d0de3e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78d848f5d075ed0d5cd835f4af3daf964603c371
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674514"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207932"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK Vizualizéru souběžnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sada Vizualizátor souběžnosti SDK](https://docs.microsoft.com/visualstudio/profiling/concurrency-visualizer-sdk).  
-  
 Můžete použít zdrojový kód pomocí sada Vizualizátor souběžnosti SDK k zobrazení dalších informací ve vizualizátoru souběžnosti. Doplňující data můžete přidružit fází a události ve vašem kódu. Tyto další vizualizace, jsou označovány jako *značky*.  Úvodní prohlídka, naleznete v tématu [Představujeme sada Vizualizátor souběžnosti SDK](http://go.microsoft.com/fwlink/?LinkId=235405).  
   
 ## <a name="properties"></a>Vlastnosti  

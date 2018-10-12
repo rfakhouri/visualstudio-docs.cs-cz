@@ -1,7 +1,7 @@
 ---
 title: 'Krok 4: Rozvrhněte svůj formulář pomocí ovládacího prvku TableLayoutPanel | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 770d66d0cc3a765e505e4ce48be6f62307c7e178
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4a08359c11fa45c87c787a5a3a414eb8515e7473
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628523"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210092"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Krok 4: Rozvrhněte svůj formulář pomocí ovládacího prvku TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [krok 4: rozložení na svůj formulář pomocí ovládacího prvku TableLayoutPanel](https://docs.microsoft.com/visualstudio/ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control).  
-  
 V tomto kroku přidáte `TableLayoutPanel` ovládací prvek do formuláře. TableLayoutPanel pomáhá správně Zarovnat ovládací prvky ve formuláři, který přidáte později.  
   
  ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) nebo [kurz 1: vytvoření prohlížeče obrázků v jazyce C# – Video 2](http://go.microsoft.com/fwlink/?LinkId=205200). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  

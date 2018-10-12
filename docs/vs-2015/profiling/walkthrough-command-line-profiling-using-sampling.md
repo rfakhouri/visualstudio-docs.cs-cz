@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Profilace z příkazového řádku pomocí vzorkování | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 703faf6ca5cd50fc340ecf81dec1c7c619d3bfa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cec9ac0038c84e267d046d35e5d65cc83d9c35c3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628808"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203213"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Návod: Profilace z příkazového řádku s použitím vzorkování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [názorný postup: příkazového řádku pro profilaci vzorkování pomocí](https://docs.microsoft.com/visualstudio/profiling/walkthrough-command-line-profiling-using-sampling).  
-  
 Tento návod ukazuje, jak chcete-li Profilovat aplikaci pomocí nástroje příkazového řádku a vzorkování identifikovat problémy s výkonem.  
   
  V tomto názorném postupu projít procesem profilaci spravované aplikace pomocí nástrojů příkazového řádku a pomocí vzorkování izolovat a identifikovat problémy s výkonem v aplikaci.  

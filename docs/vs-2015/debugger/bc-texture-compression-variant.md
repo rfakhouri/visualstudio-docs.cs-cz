@@ -1,7 +1,7 @@
 ---
 title: Varianta komprese textur BC | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a33bef6c94d738a51ef5f9cbc93a14d2f4648011
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da5df0faa57a63f44892fa86785bccf4716f38f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677685"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203304"
 ---
 # <a name="bc-texture-compression-variant"></a>Varianta komprese textur BC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [BC textury komprese Variant](https://docs.microsoft.com/visualstudio/debugger/graphics/bc-texture-compression-variant).  
-  
 Umožňuje zablokovat kompresi na textury, které mají žádnému pixelovému formátu, který je varianta B8G8R8X8, B8G8R8A8 nebo R8G8B8A8.  
   
 ## <a name="interpretation"></a>interpretace  
@@ -71,7 +69,7 @@ Umožňuje zablokovat kompresi na textury, které mají žádnému pixelovému f
  Tato varianta bloku komprimovat textury v době běhu, před voláním `CreateTexture2D`. Nedoporučujeme tento přístup pro produkční kód, protože nekomprimované textury využívat více místa na disku a další krok může významně zvýšit dobu načítání v aplikaci, protože založené na blocích komprese vyžaduje důležité výpočetní prostředky ke kódování. Namísto toho doporučujeme komprimovat vaše textury offline pomocí editoru obrázků nebo obrázků procesor, který je součástí vašeho kanálu sestavení. Tyto přístupy snížit požadavky na místo na disku, odstranění nároky ve vaší aplikaci za běhu a dovolit více času na zpracování, takže můžete zachovat nejlepší kvalitu obrazu.  
   
 ## <a name="see-also"></a>Viz také  
- [Varianta dimenze polovině/textury](../debugger/half-quarter-texture-dimensions-variant.md)
+ [Varianta polovičních/čtvrtinových dimenzí textury](../debugger/half-quarter-texture-dimensions-variant.md)
 
 
 

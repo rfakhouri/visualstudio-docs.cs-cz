@@ -1,7 +1,7 @@
 ---
 title: 'CA2211: Nekonstantní pole by nemělo být viditelné | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5d6ad55a49d335f5f776ba7b75f8006559e0eb38
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 4fa3fbba8aa59e8a72711de153d54406500c86f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902296"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218021"
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Nekonstantní pole by nemělo být viditelné
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Nejnovější verzi tohoto tématu můžete najít v [CA2211: nekonstantní pole by nemělo být viditelné](https://docs.microsoft.com/visualstudio/code-quality/ca2211-non-constant-fields-should-not-be-visible).
-
 |||
 |-|-|
 |TypeName|NonConstantFieldsShouldNotBeVisible|

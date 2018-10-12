@@ -1,7 +1,7 @@
 ---
 title: Přidání panelu nástrojů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ebfd86a05be72b5a0c35664dee0dc0fcd4189be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e3aa697ab6ac25c1fe273f4229cff462f097a35e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672934"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222908"
 ---
 # <a name="adding-a-toolbar"></a>Přidání panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přidání panelu nástrojů](https://docs.microsoft.com/visualstudio/extensibility/adding-a-toolbar).  
-  
 Tento návod ukazuje, jak přidat panel nástrojů Visual Studio IDE.  
   
  Panel nástrojů je vodorovný nebo svislý pruh, který obsahuje tlačítka, které jsou vázány na příkazy. V závislosti na jeho implementace panelu nástrojů v rozhraní IDE může být přemístí, ukotven na žádné straně hlavního okna IDE nebo se zůstat před ostatní okna.  

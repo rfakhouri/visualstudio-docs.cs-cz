@@ -1,7 +1,7 @@
 ---
 title: MIDL – úloha | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d496bba38b9b0dbf1c5346bda928f491ce697edf
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 345cd480cd5e34a6fe4650c9321d3ad9f90db01e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775594"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215784"
 ---
 # <a name="midl-task"></a>MIDL – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [MIDL – úloha](https://docs.microsoft.com/visualstudio/msbuild/midl-task).  
-  
   
 Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL), midl.exe. Další informace najdete v tématu "Reference k příkazovému řádku MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   

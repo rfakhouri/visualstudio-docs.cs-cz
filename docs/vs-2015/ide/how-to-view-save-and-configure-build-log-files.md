@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: zobrazování, ukládání a konfigurace souborů protokolu sestavení | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d30e2b571e0a46afa10c8100085e6c23513159e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26ece0c0d46e5c747ac05bae8c2d4fc793c34601
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676880"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207399"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Postupy: Zobrazování, ukládání a konfigurace souborů protokolu sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: zobrazení, ukládání a konfigurace souborů protokolu sestavení](https://docs.microsoft.com/visualstudio/ide/how-to-view-save-and-configure-build-log-files).  
-  
 Po sestavení projektu v integrovaném vývojovém prostředí sady Visual Studio můžete zobrazit informace o daném sestavení ve **výstup** okna. Pomocí těchto informací je možné, třeba řešit selhání sestavení. Pro projekty C++ můžete také zobrazit tyto informace v souboru .txt, který má vytvořili a uložili automaticky. Pro projekty spravovaného kódu, můžete kopírovat a vkládat informace z **výstup** okno TXT soubor a uložte ho sami. Můžete také integrovaného vývojového prostředí k určení, jaké typy informací, které chcete zobrazit informace o každém sestavení.  
   
  Pokud vytváříte jakýkoli druh projektu pomocí nástroje MSBuild, můžete vytvořit soubor .txt, chcete-li uložit informace o sestavení. Další informace najdete v tématu [získávání protokolů sestavení](../msbuild/obtaining-build-logs-with-msbuild.md).  

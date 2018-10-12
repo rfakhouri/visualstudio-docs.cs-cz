@@ -1,7 +1,7 @@
 ---
 title: 'CA1003: Použijte instance obecných události obslužná rutina | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4e6a2a3f3d2684c4de49d02dfb19c4654a76eda9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: f5e059698b997ee6df53d93910c56d317bb674dd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201132"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Použijte instance obecných obslužných rutin události
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Nejnovější verzi tohoto tématu můžete najít v [CA1003: použijte instance obecných události obslužná rutina](https://docs.microsoft.com/visualstudio/code-quality/ca1003-use-generic-event-handler-instances).
-
 |||
 |-|-|
 |TypeName|UseGenericEventHandlerInstances|

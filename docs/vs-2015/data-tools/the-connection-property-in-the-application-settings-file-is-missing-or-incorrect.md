@@ -1,7 +1,7 @@
 ---
 title: Vlastnost připojení v souboru nastavení aplikace je chybějící nebo nesprávné | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f49731e554c737a8dd0a26dab22f5ccaad99cc4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b01ae69a63014f4f413e89942a3b9b3c6a74db61
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683331"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216215"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>V souboru nastavení aplikace chybí vlastnost připojení nebo je nesprávná.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [je vlastnost připojení v souboru nastavení aplikace chybí nebo není správný](https://docs.microsoft.com/visualstudio/data-tools/the-connection-property-in-the-application-settings-file-is-missing-or-incorrect).  
-  
   
 Vlastnost připojení v souboru nastavení aplikace je chybí nebo není správný. Jejím místě se použil připojovací řetězec ze souboru .dbml.  
   

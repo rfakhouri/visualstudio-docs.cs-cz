@@ -1,7 +1,7 @@
 ---
 title: Řešení a projekty v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -55,18 +55,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7223acc3612d12fc5589e46b06b9fa76b5ecf002
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e5996d07a3186c1881e4fc44b3b1622a9ab221f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211143"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Řešení a projekty v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [řešení a projekty v sadě Visual Studio](https://docs.microsoft.com/visualstudio/ide/solutions-and-projects-in-visual-studio).  
-  
 Při vytváření aplikace, aplikace, webu, webové aplikace, script, modulu plug-in a tak podobně v sadě Visual Studio začínáte *projektu*. Z logického pohledu projekt obsahuje všechny soubory zdrojového kódu, ikony, obrázků, datové soubory a cokoliv jiného, co se zkompiluje do spustitelný program nebo webu, jinak je potřeba, aby bylo možné provést kompilace.  Projekt obsahuje také všechna nastavení kompilátoru a další konfigurační soubory, které mohou být potřebné různé služby nebo komponenty, které váš program bude komunikovat s.  
   
  V literálu smysl projektu je soubor XML (*.vbproj, \*.csproj, \*.vcxproj), který definuje virtuální složka hierarchii společně s cesty pro všechny položky "obsahuje" a všechna nastavení sestavení. V sadě Visual Studio je soubor projektu používáno Průzkumníkem řešení zobrazíte obsah projektu a nastavení. Při kompilaci projektu využívá stroji MSBuild engine souboru projektu k vytvoření spustitelného souboru. Projekty do produktu můžete také upravit další druhy výstup.  

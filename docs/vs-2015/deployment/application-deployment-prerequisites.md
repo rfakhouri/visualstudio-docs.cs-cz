@@ -1,7 +1,7 @@
 ---
 title: Požadavky na nasazení aplikací | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3a866105a2b9d4549fd3684dc4726f165d43a7af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628869"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217929"
 ---
 # <a name="application-deployment-prerequisites"></a>Nezbytné součásti nasazení aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [nezbytné součásti nasazení aplikace](https://docs.microsoft.com/visualstudio/deployment/application-deployment-prerequisites).  
-  
 K zajištění, že vaše aplikace se nainstaluje a úspěšně spuštěn, je nutné nejdříve zkontrolovat, že jsou na cílovém počítači již nainstalovány všechny součásti, na kterých vaše aplikace je závislá. Například většina aplikace vytvořené s použitím [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jsou závislé [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]; správnou verzi modulu common language runtime musí existovat v cílovém počítači před instalací aplikace.  
   
  Můžete vybrat tyto požadavky **dialogové okno požadavky** a nainstalovat rozhraní .NET Framework a další distribuovatelné součásti jako součást instalace. Tento postup se označuje jako *spuštění*. Dále [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vygeneruje spustitelný program Windows s názvem Setup.exe, označované také jako *zaváděcí nástroj*. Zaváděcí nástroj je odpovědný za instalaci těchto nezbytných podmínkách před spuštěním vaší aplikace. Další informace o výběru těchto nezbytných podmínkách naleznete v tématu [dialogové okno požadavky](../ide/reference/prerequisites-dialog-box.md).  

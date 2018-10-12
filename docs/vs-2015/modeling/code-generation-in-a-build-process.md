@@ -1,7 +1,7 @@
 ---
 title: Generování v procesu sestavení kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,15 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ce072f85873530d419589f0d1830dc76688afa5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669945"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208647"
 ---
 # <a name="code-generation-in-a-build-process"></a>Vytvoření kódu v procesu sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Nejnovější verzi tohoto tématu můžete najít v [generování kódu v procesu sestavení](https://docs.microsoft.com/visualstudio/modeling/code-generation-in-a-build-process).
-
 Transformaci textu lze vyvolat jako součást procesu sestavení řešení sady Visual Studio. Některé úlohy sestavení se specializují na transformaci textu. Úlohy sestavení T4 spouštějí textové šablony návrhu a rovněž kompilují textové šablony běhu (předzpracované).
 
 V závislosti na tom, který stroj sestavení používáte, jsou určité rozdíly v tom, co úlohy sestavení mohou provádět. Při sestavování řešení v sadě Visual Studio textové šablony můžete přístup k rozhraní API Visual Studio (EnvDTE) Pokud [hostspecific = "true"](../modeling/t4-template-directive.md) atribut je nastaven. To ale neplatí při sestavování řešení z příkazového řádku nebo při inicializaci sestavení na serveru prostřednictvím sady Visual Studio. V těchto případech provádí sestavení nástroj MSBuild a používá se jiný hostitel T4.

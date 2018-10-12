@@ -1,7 +1,7 @@
 ---
 title: Podpora pro uživatelská nastavení | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12200fcee084a58520047ca4731dbcc1ed1b4ed4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 74f96a6177409057d2c24aca6103de29d97e19fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674696"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215654"
 ---
 # <a name="support-for-user-settings"></a>Podpora pro uživatelská nastavení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [podpora pro uživatelská nastavení](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-user-settings).  
-  
 VSPackage může definovat jeden nebo více kategorií nastavení, které jsou skupiny proměnných stavu, které se zachovávají po kliknutí **Importovat/exportovat nastavení** příkaz **nástroje** nabídky. Pokud chcete povolit tento trvalost, použijte nastavení rozhraní API v [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
  Položky registru, který se označuje jako bod vlastní nastavení a identifikátor GUID definuje kategorie nastavení na VSPackage. VSPackage může podporovat více kategorie nastavení, každý definovaný pomocí vlastního nastavení bodu.  

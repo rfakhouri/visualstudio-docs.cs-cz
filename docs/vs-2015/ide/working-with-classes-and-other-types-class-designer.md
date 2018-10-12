@@ -1,7 +1,7 @@
 ---
 title: Práce s třídami a ostatními typy (návrhář tříd) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7690c24e8691858dbc0c027ea765b92f54144b85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5282b37fca3e35e23e6ca343538aad12854b7bba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683373"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198299"
 ---
 # <a name="working-with-classes-and-other-types-class-designer"></a>Práce s třídami a ostatními typy (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [práce s třídami a jiné typy (návrhář tříd)](https://docs.microsoft.com/visualstudio/ide/working-with-classes-and-other-types-class-designer).  
-  
 Snadněji zaměřit na třídy a typy, které vás zajímají nejvíce, když budete vytvářet a upravovat pomocí návrháře tříd v sadě Visual Studio. Použijte diagramy tříd k více vizuálně pracovat s kódem Visual C# .NET, Visual Basic .NET nebo C++.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
