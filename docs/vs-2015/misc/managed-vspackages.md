@@ -1,7 +1,7 @@
 ---
 title: Spravovaná rozšíření VSPackages | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a4f17068-c563-45a8-bbbf-4203ea99e9d2
 caps.latest.revision: 34
 manager: douge
-ms.openlocfilehash: f221cf99234a2e3128e29636368e5fa78169425d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44507112ceb3e7bed452ef4ced7633001224ad82
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671469"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227081"
 ---
 # <a name="managed-vspackages"></a>Spravovaná rozšíření VSPackages
 Následující témata popisují, jak vytvořit VSPackage. VSPackage je softwarový modul, který rozšiřuje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrované vývojové prostředí (IDE) tím, že poskytuje prvky uživatelského rozhraní (UI), služby, projekty, editory a návrháře. Další informace najdete v tématu [rozšíření VSPackages](../extensibility/internals/vspackages.md).  

@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: shromažďování dat čítačů Windows | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f0ace1d920cdd4f2c503c608a1695b04c1251f2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7dfaed19949dac532949e1d4a10bb744ec464580
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227328"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Postupy: Shromažďování dat čítačů Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: shromažďování dat čítačů Windows](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-windows-counter-data).  
-  
 Čítače Windows jsou systémové čítače výkonu, které mohou být shromážděných během profilace v nastavených intervalech. V zobrazení sestav nástrojů pro profilaci sady značek je označen řádek **AutoMark** pro každý interval shromažďování. Tento řádek obsahuje sloupce, které popisují hodnoty čítače výkonu v tomto intervalu. Chcete-li omezit analýzu na určitou dobu mezi dvěma konkrétními značkami, vyberte značky, klikněte pravým tlačítkem a pak vyberte **filtrovat podle** ->  **značky** z místní nabídky.  
   
  **Požadavky**  
@@ -63,7 +61,7 @@ Nejnovější verzi tohoto tématu můžete najít v [postupy: shromažďování
 ## <a name="see-also"></a>Viz také  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   
  [Vlastnosti výkonnostní relace](../profiling/performance-session-properties.md)   
- [Využití procesoru a čítače Windows](../profiling/cpu-and-windows-counters.md)
+ [Čítače procesoru a systému Windows](../profiling/cpu-and-windows-counters.md)
 
 
 

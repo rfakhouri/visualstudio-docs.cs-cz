@@ -1,7 +1,7 @@
 ---
 title: Používání 3D prostředků ve hře nebo aplikaci | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab73f8ecdb9507459c7214de37b2349c01062f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629224"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226303"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Používání 3D prostředků ve hře nebo aplikaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [používání 3D prostředků ve vaše hry nebo aplikace](https://docs.microsoft.com/visualstudio/designers/using-3-d-assets-in-your-game-or-app).  
-  
 Tento článek popisuje, jak můžete [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ke zpracování 3D prostředků a zahrnout je do sestavení.  
   
  Po použití nástrojů v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] k vytvoření 3D aktiv, je dalším krokem jejich použití ve vaší aplikaci. Ale předtím, než je můžete využít, vaše prostředky nutné transformovat do formátu, který umožní pochopit rozhraní DirectX. Chcete pomoci transformovat prostředky, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poskytuje upravitelné sestavení pro každý druh prostředku, který může vytvořit. Pokud chcete zahrnout prostředky v sestavení, vše, co musíte udělat, je nakonfigurujte projekt tak, aby používali úpravy v sestavení, přidávat je do vašeho projektu a konfigurovat prostředky k používání správného vlastního sestavení. Poté můžete načíst aktiva do vaší aplikace a použít je vytvořením a vyplněním prostředků DirectX, stejně jako v jiných aplikacích DirectX.  

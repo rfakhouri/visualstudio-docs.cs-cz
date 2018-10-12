@@ -1,7 +1,7 @@
 ---
 title: Shromažďování podrobných dat časování pro samostatnou aplikaci pomocí příkazového řádku Profiler | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 100c7396e5532d09a8035ca1260be26e0e2e8636
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50eb6705cb1aef0bb1cca3de5716656c77191c3d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666255"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227421"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Shromažďování podrobných dat časování pro samostatnou aplikaci pomocí příkazového řádku profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [shromažďování podrobných dat časování pro samostatné aplikace pomocí příkazového řádku Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line).  
-  
 Tato část popisuje postupy a možnosti k shromažďování údajů o výkonu podrobné údaje pro klienta (samostatné) součásti pomocí metody instrumentace z příkazového řádku.  
   
 ## <a name="common-tasks"></a>Obecné úlohy  
@@ -60,7 +58,7 @@ Tato část popisuje postupy a možnosti k shromažďování údajů o výkonu p
  [Zobrazení dat metody instrumentace](../profiling/instrumentation-method-data-views.md)  
   
 ## <a name="reference"></a>Odkaz  
- [Profilování nástroje pro příkazový řádek](../profiling/command-line-profiling-tools-reference.md)
+ [Referenční dokumentace nástrojů příkazového řádku pro profilaci](../profiling/command-line-profiling-tools-reference.md)
 
 
 

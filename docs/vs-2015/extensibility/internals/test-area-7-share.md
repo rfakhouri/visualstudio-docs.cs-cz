@@ -1,7 +1,7 @@
 ---
 title: 'Testovací oblast 7: Sdílení | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 31ef127e53a43cf018da5b78ed79a6b2145815da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54bfa75703e88b08d87daff5d460b868afca3c9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228121"
 ---
 # <a name="test-area-7-share"></a>Testovací oblast 7: Sdílení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [testovací oblast 7: sdílení](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-7-share).  
-  
 Tento test oblast obsahuje informace o sdílení položek mezi umístěními prostřednictvím **sdílené složky** příkazu.  
   
  Operace hhare je zřejmý duplicitní soubory a složky položky mezi dva nebo více umístění v rámci zdrojové hierarchie soubor ovládacího prvku. Duplikace nedojde ve skutečnosti na serveru, ale uživatel zobrazit stejný soubor ve dvou nebo více zadaných umístění. Pokaždé, když dojde ke změně některou ze sdílené položky, se tyto změny ve všech jiných sdílené umístění.  

@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: přizpůsobení slovníku analýzy kódu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345a46631e9f69c89af0e1d283c484ad71023821
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f46da0c36dfdf73fc550d57e733637ec7ab1e3fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629130"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227908"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Postupy: Přizpůsobení slovníku Analýzy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: přizpůsobení slovníku analýzy kódu](https://docs.microsoft.com/visualstudio/code-quality/how-to-customize-the-code-analysis-dictionary).  
-  
 Analýza kódu používá integrované slovník ke kontrole identifikátory v kódu chyby pravopisu, gramatické případ a dalších konvencí [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] pokyny. Můžete vytvořit soubor Xml s vlastního slovníku na Přidat, odebrat nebo změnit podmínky, zkratky a zkratky integrované slovníku.  
   
  Předpokládejme například, že váš kód obsažen třídu s názvem **DoorKnokker**. Analýza kódu určí název jako složený ze dvou slov: **dveře** a **knokker**. Ho pak může vygenerovat upozornění, která **knokker** nebyl zadán správně. Vynutit analýzu kódu pro rozpoznávání pravopisu, můžete přidat výraz **knokker** do vlastního slovníku.  

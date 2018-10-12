@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: ladění ve smíšeném režimu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ce056b60a3e080490a2ad60f4aee5a7b5c8dd63
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c13babd3e54d11c7a32e83f645dc2ab9d12b4f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633370"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226138"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Postupy: Ladění ve smíšeném režimu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: ladění ve smíšeném režimu](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-in-mixed-mode).  
-  
 Následující postupy popisují, jak ladit spravované i nativní kód, označované také jako ladění ve smíšeném režimu. Existují dva scénáře to udělat, v závislosti na tom, zda je knihovna DLL nebo aplikace napsány v nativním kódu:  
   
 -   Volající aplikace, která volá vaši knihovnu DLL je napsány v nativním kódu. V tomto případě spravuje vaše knihovna DLL a spravované i nativní ladicí programy musí být povoleno ladění i. Můžete to zkontrolovat  **\<Projekt > stránky vlastností** dialogové okno. Postup závisí na tom, zda spustíte ladění z projektu knihovny DLL nebo projekt volající aplikace.  
@@ -56,7 +54,7 @@ Následující postupy popisují, jak ladit spravované i nativní kód, označo
 4.  Nastavte **typ ladicího programu** k **smíšené** nebo **automaticky**.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md)
+ [Postupy: Ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md)
 
 
 

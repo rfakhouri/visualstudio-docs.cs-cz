@@ -1,7 +1,7 @@
 ---
 title: Zadání symbolu (.pdb) a zdrojové soubory v ladicím programu sady Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8674ee9c4141b9bfe8511e67c4cd6113f8f0fed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6b988a2e3defa1a434cc825ad78e7c92dd30c382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775445"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226977"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Zadání symbolu (.pdb) a zdrojových souborů v ladicím programu sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zadání symbolu (.pdb) a zdrojových souborů v ladicím programu](https://docs.microsoft.com/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).  
-  
 Souboru databáze (PDB) program, nazývaný také soubor symbolů, mapuje identifikátory, které vytvoříte ve zdrojových souborech pro třídy, metody a jiný kód, na identifikátory, které jsou použity v kompilovaných spustitelných souborech projektu. Soubor PDB také mapuje příkazy ve zdrojovém kódu k provozním pokynům ve spustitelných souborech. Ladicí program používá tyto informace k určení dvou důležitých informací: zdrojový soubor a číslo řádku, které jsou zobrazeny v prostředí IDE sady Visual Studio a v umístění ve spustitelném souboru, kde je třeba se zastavit při nastavení zarážky. Soubor symbolů obsahuje také původní umístění zdrojových souborů, případně umístění zdrojového serveru, ze kterého lze načíst zdrojové soubory.  
   
  Při ladění projektu v integrovaném vývojovém prostředí sady Visual Studio ví ladicí program výchozí umístění pro soubory .pdb a zdrojové pro váš kód. Pokud chcete ladit kód mimo váš zdrojový kód projektu, jako je volání systému Windows nebo kódu třetí strany, musíte určit umístění souboru PDB (a volitelně zdrojových souborů z externího kódu) a tyto soubory musí přesně odpovídat spustitelným souborům sestavení.  

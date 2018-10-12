@@ -1,7 +1,7 @@
 ---
 title: 'Krok 10: Zapište kód pro přídavná tlačítka a zaškrtávací políčko | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 254c01b6553c8abc647ab9041fdd6fdf5da63a70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51063d0c0ae7dc47653786107e691bed74fed699
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228043"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Krok 10: Zapište kód pro přídavná tlačítka a zaškrtávací pole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [krok 10: napsat kód pro přídavná tlačítka a zaškrtávací políčko](https://docs.microsoft.com/visualstudio/ide/step-10-write-code-for-additional-buttons-and-a-check-box).  
-  
 Nyní jste připraveni provést další čtyři metody. Mohli byste zkopírovat a vložit tento kód, ale pokud chcete získat maximum z tohoto kurzu zadejte kód a používat technologii IntelliSense.  
   
  Tento kód přidá funkce pro tlačítka, který jste přidali dříve. Bez tohoto kódu tlačítka nic nedělají. Tlačítka používají kód v jejich `Click` události (a zaškrtávací políčko používá `CheckChanged` událostí) k provádění různých akcí, když aktivujete ovládací prvky. Například `clearButton_Click` událost, která se aktivuje při výběru **Vymazat obrázek** tlačítko, vymaže aktuální obrázek nastavením jeho `Image` vlastnost `null` (nebo `nothing`). Každá událost v kódu obsahuje poznámky, které popisují, co kód dělá.  

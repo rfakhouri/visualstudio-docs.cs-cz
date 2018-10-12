@@ -1,7 +1,7 @@
 ---
 title: Přenos, migrace a Upgrade projektů sady Visual Studio v sadě Visual Studio &quot;15&quot; RC | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -21,12 +21,12 @@ caps.latest.revision: 6
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 641f5f296c4670c1a0806ee3340b38a81eedbabb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9a57cacc8d8d37c13e7380f5b68c800c5c31075
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666509"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226184"
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-quot15quot-rc"></a>Přenos, migrace a Upgrade projektů sady Visual Studio v sadě Visual Studio &quot;15&quot; RC
 Když přesunete na novější verzi sady Visual Studio, budete chtít vědět, pokud je nutné upravit některé z řešení, projektů, souborů a další prostředky, které jste vytvořili v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], nebo [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] před spuštěním buď [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] nebo [!INCLUDE[vs_dev15_md](../includes/vs-dev15-md.md)]. Tato stránka vám může pomoct s ním. 
@@ -44,7 +44,7 @@ Když přesunete na novější verzi sady Visual Studio, budete chtít vědět, 
 |Typ projektu|Kompatibilita|  
 |---------------------|-------------------|  
 |Universal Windows Platform apps|Instalace nástrojů Universal Windows apps, v instalačním programu sady Visual Studio, vyberte **vlastní** nebo **změnit**a pak vyberte **univerzální nástroje pro vývoj aplikací Windows**.<br /><br /> Univerzální platforma Windows (UPW) vývoj aplikací pro Windows 10 je podporován pouze v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ve Windows 10 nebo [!INCLUDE[win81](../includes/win81-md.md)].|  
-|Aplikace pro Windows Store|Vývoj aplikací pro Windows Store, včetně univerzálních aplikací pro Windows 8.1 a Windows Phone 8.1, je podporována v [!INCLUDE[win81](../includes/win81-md.md)] a Windows 10. Existující [!INCLUDE[win8](../includes/win8-md.md)] projektů mohou být nadále servisovány, ale nové [!INCLUDE[win8](../includes/win8-md.md)] projekty nelze vytvořit. [!INCLUDE[win81](../includes/win81-md.md)] projekty mohou záviset pouze na určitých typech referencí. Další informace najdete v tématu [Správa odkazů v projektu](../ide/managing-references-in-a-project.md). **Poznámka:** [!INCLUDE[win81](../includes/win81-md.md)] projekty, které vytvoříte pomocí [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] nebo [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] nemůže být otevřen v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].   Důvodem je, že [!INCLUDE[win81](../includes/win81-md.md)] projekty vytvořené pomocí [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] a [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] cíli těchto verzí a [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] podporuje pouze [!INCLUDE[win8](../includes/win8-md.md)] projekty, které cílí [!INCLUDE[win8](../includes/win8-md.md)].|  
+|Aplikace pro Windows Store|Vývoj aplikací pro Windows Store, včetně univerzálních aplikací pro Windows 8.1 a Windows Phone 8.1, je podporována v [!INCLUDE[win81](../includes/win81-md.md)] a Windows 10. Existující [!INCLUDE[win8](../includes/win8-md.md)] projektů mohou být nadále servisovány, ale nové [!INCLUDE[win8](../includes/win8-md.md)] projekty nelze vytvořit. [!INCLUDE[win81](../includes/win81-md.md)] projekty mohou záviset pouze na určitých typech referencí. Další informace najdete v tématu [Správa odkazů v projektu](../ide/managing-references-in-a-project.md). **Poznámka:** [!INCLUDE[win81](../includes/win81-md.md)] projekty, které vytvoříte pomocí [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] nebo [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] nemůže být otevřen v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Důvodem je, že [!INCLUDE[win81](../includes/win81-md.md)] projekty vytvořené pomocí [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] a [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] cíli těchto verzí a [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] podporuje pouze [!INCLUDE[win8](../includes/win8-md.md)] projekty, které cílí [!INCLUDE[win8](../includes/win8-md.md)].|  
 |[!INCLUDE[net_v451](../includes/net-v451-md.md)]|Můžete vytvořit a použít tyto projekty v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] a [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] po instalaci příslušného balíčku cílení na více platforem. Tyto projekty nejsou podporovány v aplikaci Visual Studio 2010 SP1.|  
 |[!INCLUDE[net_v45](../includes/net-v45-md.md)]|Můžete vytvořit a otevřít v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] a [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], ale ne v aplikaci Visual Studio 2010 SP1. Další informace najdete v tématu [Průvodce migrací](http://msdn.microsoft.com/library/02d55147-9b3a-4557-a45f-fa936fadae3b)|  
 |BizTalk|Projekty serveru BizTalk nejsou kompatibilní s [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] nebo [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|  
