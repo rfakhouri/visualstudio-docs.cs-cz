@@ -1,7 +1,7 @@
 ---
 title: Vlákna zobrazení (paralelní výkon) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 644308065518afa9caf6fb0db088c2ffc556a8e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c49b68e0ee595041ec6b14c9f105937bf723afa6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300245"
 ---
 # <a name="threads-view-parallel-performance"></a>Zobrazení vláken (paralelní výkon)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení vláken (paralelní výkon)](https://docs.microsoft.com/visualstudio/profiling/threads-view-parallel-performance).  
-  
 Zobrazení vláken je nejvíce podrobná a plně funkční zobrazení ve vizualizátoru souběžnosti. Pomocí tohoto zobrazení můžete identifikovat, jestli jsou vlákna provádění nebo blokování z důvodu synchronizace, vstupně-výstupních operací nebo z jiného důvodu.  
   
  Vizualizátor souběžnosti během analýzy profilu, zkontroluje všechny události přepnutí kontextu operačního systému pro každé vlákno aplikace. Přepnutí kontextu může dojít z mnoha důvodů, jako je například tyto:  

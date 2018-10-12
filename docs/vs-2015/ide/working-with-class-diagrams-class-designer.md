@@ -1,7 +1,7 @@
 ---
 title: Práce s diagramy tříd (návrhář tříd) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf7812d7d0047b71bac846e03ec15e7b3c92869f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bf855566c24e91137d7aaeadeb2c65843eca9e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675357"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306706"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Práce s diagramy tříd (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [práce s diagramy tříd (návrhář tříd)](https://docs.microsoft.com/visualstudio/ide/working-with-class-diagrams-class-designer).  
-  
 Třída diagramy vám pomůžou pochopit, struktura třídy projektů jiné kódování napsaná (nebo, který jste napsali před delší dobu). Můžete využít k přizpůsobení, sdílet a prezentovat informace o projektu s ostatními.  
   
  Prvním krokem při zobrazení informací o projektu je vytvoření diagramu tříd, který se zobrazí, co chcete zobrazit. Další informace najdete v tématu [zobrazování typů a vztahů (návrhář tříd)](../ide/viewing-types-and-relationships-class-designer.md). Můžete vytvořit více diagramů tříd v projektu, který slouží k zobrazení různých zobrazení projektu, zvolená podmnožinu typů v projektu nebo podmnožinu vybrané členy typů.  

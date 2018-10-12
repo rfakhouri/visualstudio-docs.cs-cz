@@ -1,7 +1,7 @@
 ---
 title: Rozšířené možnosti, textový Editor, C# | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64e01a00fbb4fcbd637652a161982bd86b645f20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93ddc0af7daecaeb64586d84e210180d7025ad81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629134"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301389"
 ---
 # <a name="options-text-editor-c-advanced"></a>Možnosti, textový editor, C#, upřesnit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [možnosti, textový Editor, C#, Upřesnit](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-csharp-advanced).  
-  
   
 Použijte toto dialogové okno Upravit nastavení editoru formátování, refaktoring kódu a dokumentační komentáře XML pro jazyk Visual C#. Toto dialogové okno, klikněte na tlačítko **možnosti** na **nástroje** nabídky, rozbalte **textový Editor** složky, rozbalte **jazyka C#** a potom klikněte na tlačítko  **Pokročilé**.  
   

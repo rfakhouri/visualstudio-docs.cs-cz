@@ -1,7 +1,7 @@
 ---
 title: Windows čítače procesoru a | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a50dc0669b649a68a34402ed93ddc858e179cb57
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2683f9dc520603004e71778e8498f5b2493b1895
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633559"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301818"
 ---
 # <a name="cpu-and-windows-counters"></a>Čítače procesoru a systému Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Windows čítače procesoru a](https://docs.microsoft.com/visualstudio/profiling/cpu-and-windows-counters).  
-  
 Visual Studio Profiler umožňuje shromažďovat data o výkonu, který byl vygenerován v operačním systému (Windows čítače) a data výkonu, která byla vygenerována procesor (čítače CPU).  
   
  **Požadavky**  

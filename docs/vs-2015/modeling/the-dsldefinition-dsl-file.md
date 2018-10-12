@@ -1,7 +1,7 @@
 ---
 title: Soubor DslDefinition.dsl | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8d6df6e4957eec471e4d0f1212493c088e19703b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bf56b06771b905ec4982f7de7f91648c2e6b3a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675432"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306119"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Soubor DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [soubor DslDefinition.dsl](https://docs.microsoft.com/visualstudio/modeling/the-dsldefinition-dsl-file).  
-  
 Toto téma popisuje strukturu soubor DslDefinition.dsl v projektu Dsl [!INCLUDE[dsl](../includes/dsl-md.md)] řešení, která definuje *jazyka specifického pro doménu*. Soubor DslDefinition.dsl popisuje třídy a vztahy z jazyka specifického pro doménu, společně s diagramu, tvary, konektory, formát serializace a **nástrojů** jazyka specifického pro doménu a jeho Nástroje pro úpravy. V řešení jazyka specifického pro doménu podle informací v souboru DslDefinition.dsl vygenerování kódu, který definuje těchto nástrojů.  
   
  Obecně platí, je použít *návrháře jazyka specifického pro doménu* upravit soubor DslDefinition.dsl. Ale nezpracované podobě je XML a soubor DslDefinition.dsl můžete otevřít v editoru XML. Jste možná pro vás bude užitečné, abyste pochopili, jaké informace tento soubor obsahuje a jakým způsobem je organizována pro účely ladění a rozšíření.  

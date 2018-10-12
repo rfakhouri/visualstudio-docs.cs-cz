@@ -1,7 +1,7 @@
 ---
 title: Ukázka rozšíření programového testu UI pro Excel | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 451e4d14-7fac-42f9-af56-2bdc8414c6c7
 caps.latest.revision: 15
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b4da574b77d8dd2b1b14ccb0b04e449799338620
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ccc315b62ffa2e7c70f992a560e55c80eb86dc8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675078"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306615"
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Ukázka rozšíření programového testu UI pro Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ukázka programového uživatelského rozhraní testu rozšíření pro aplikaci Excel](https://docs.microsoft.com/visualstudio/test/sample-coded-ui-test-extension-for-excel).  
-  
 Komponenta rozšíření ukázky spuštěna v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] procesu programový Test uživatelského rozhraní a pomocí nich do jisté míry hierarchická `ExtensionPackage` základní třídy. `TechnologyManager`, `ActionFilter`, A `PropertyProvider` třídy se na další úrovni, ovládací prvky na nejvyšší úrovni.  
   
  ![Architektura přípony testu aplikace Excel](../test/media/excel-extarch.png "Excel_ExtArch")  
@@ -59,7 +57,7 @@ Architektura přípony aplikace Excel
  [Třída TechnologyManager](../test/sample-excel-extension-technologymanager-class.md)   
  [Třída ActionFilter](../test/sample-excel-extension-actionfilter-class.md)   
  [Třídy element](../test/sample-excel-extension-element-classes.md)   
- [Třída PropertyProvider](../test/sample-excel-extension-propertyprovider-class.md)
+ [PropertyProvider – třída](../test/sample-excel-extension-propertyprovider-class.md)
 
 
 

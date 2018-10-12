@@ -1,7 +1,7 @@
 ---
 title: Návrháři runtime aktivit | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,18 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: b25db3bc67ca05cd123c0e4d4b0a15c43a568d2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4385a692167fcfa0c39cb5c5f2bc18c7695733e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672780"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306862"
 ---
 # <a name="runtime-activity-designers"></a>Návrháři runtime aktivit
 Návrháři runtime aktivit se používají k uchování a ukončení aktivity pracovního postupu. V tématech obsažené v této části najdete pokyny, jak používat [!INCLUDE[wfd2](../includes/wfd2-md.md)] návrháři aktivit.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Zachovat](../workflow-designer/persist-activity-designer.md)  
+ [Persist](../workflow-designer/persist-activity-designer.md)  
  Umožňuje vytvořit a nakonfigurovat <xref:System.Activities.Statements.Persist> aktivity.  
   
  [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)  
@@ -36,7 +36,7 @@ Návrháři runtime aktivit se používají k uchování a ukončení aktivity p
   
  [Vývojový diagram](../workflow-designer/flowchart-activity-designers.md)  
   
- [Zasílání zpráv](../workflow-designer/messaging-activity-designers.md)  
+ [Messaging](../workflow-designer/messaging-activity-designers.md)  
   
  [Primitiva](../workflow-designer/primitives-activity-designers.md)  
   

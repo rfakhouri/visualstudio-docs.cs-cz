@@ -1,7 +1,7 @@
 ---
 title: Chybové zprávy v Návrháři pracovních postupů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 8f7125a69ef322e98107db7d8a90a3e0cc17463d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 942cd4846b091e31bc74ab3d45860e2782767079
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672805"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305055"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Chybové zprávy v návrháři postupu provádění
 Toto téma popisuje typy chybové zprávy, které mohou nastat při práci s [!INCLUDE[wfd1](../includes/wfd1-md.md)].  

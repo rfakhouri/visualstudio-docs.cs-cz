@@ -1,7 +1,7 @@
 ---
 title: Porovnání datových souborů výkonu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd1c93942282c8a5cb3baf9fdf007a0ba55e3ebe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65543b917a35ec50c3feadbfa4c8db917f4aeb78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683352"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306160"
 ---
 # <a name="comparing-performance-data-files"></a>Porovnání datových souborů výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [porovnávání datových souborů výkonu](https://docs.microsoft.com/visualstudio/profiling/comparing-performance-data-files).  
-  
 Profilace funkci porovnání souborů dat nástroje vám umožní vybrat dva soubory sestav (. VSP nebo. VSPS) soubory a generovat sestavy, která ukazuje rozdíly, regrese výkonu a vylepšení, ke kterým došlo v jedné relaci profilace na druhý.  
   
  Sestava porovnání datových souborů z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro profilaci sady porovnává výsledky analýzy v jeden soubor dat profilování pro výsledky analýzy standardních hodnot v jiném datovém souboru služby. Oba soubory dat musí být vygenerováno stejným způsobem, profilace. Zprávy analyzované porovnání je uložen jako soubor .vsps.  
@@ -42,7 +40,7 @@ Profilace funkci porovnání souborů dat nástroje vám umožní vybrat dva sou
  Prahovou hodnotu můžete nastavit ke snížení šumu a vyfiltrovat všechna data v zobrazení tabulky porovnání řádků, které nebyly změněny o určenou hodnotu.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Postupy: porovnání datových souborů výkonu](../profiling/how-to-compare-performance-data-files.md)
+ [Postupy: Porovnání souborů s údaji o výkonu](../profiling/how-to-compare-performance-data-files.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Přizpůsobení Windows kód pomocí starší verze rozhraní API | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7738ef02b7f26e78197ca974fdc03b60c157799f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c698f9661866ad6d2900bb7feb0f0f4a17d21589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299985"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Přizpůsobení Windows kód pomocí starší verze rozhraní API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přizpůsobení kódu Windows s použitím rozhraní API starší verze](https://docs.microsoft.com/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api).  
-  
 Okno kódu je objekt okna dokumentu, který podporuje jedno nebo více zobrazení textu. Přesné funkce okno kódu závisí na službě přiřazená jazyková. V režimu rozhraní více dokumentů (MDI) okno kódu je podřízený rámec MDI.  
   
  Kód windows jsou řízeny pomocí služby jazyka a každá služba jazyka může zajistit Správce oken svůj vlastní kód. To umožňuje službě jazyka a přidat své vlastní vylepšení do okna kódu, jako je například podtržení vlnovkou, zabarvení a další. Další informace o tom, jak vytvořit základní okno, naleznete v tématu [vytvoření instance Core pomocí editoru pomocí starší verze rozhraní API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  
@@ -42,10 +40,10 @@ Okno kódu
  `Customizing Code Windows by Using the Legacy API`  
  Vysvětluje způsob přizpůsobení pomocí starší verze rozhraní API windows kódu.  
   
- [Postupy: hostování editoru v jiném editoru](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Postupy: Hostování editoru v jiném editoru](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Vysvětluje, jak hostovat druhý editor uvnitř okno editoru.  
   
- [Postupy: vyvolání události při editoru ztratí fokus.](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Postupy: Aktivace událostí, když editor ztratí fokus](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Vysvětluje, jak připojit zobrazení dokumentu na datový objekt dokumentu.  
   
 ## <a name="see-also"></a>Viz také  
@@ -54,5 +52,5 @@ Okno kódu
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
  [Vytvoření instance základní Editor pomocí starší verze rozhraní API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
- [Přístup k text zobrazení pomocí starší verze rozhraní API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+ [Přístup k textovému zobrazení pomocí zastaralého rozhraní API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
 

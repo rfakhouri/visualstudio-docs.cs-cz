@@ -1,7 +1,7 @@
 ---
 title: Uživatel (VSPerfCmd) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b306637cfaa4c58222700f3a1a9b1aaa96b03df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b390852c94477a6b02d43b0dbc7678384c622ced
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301997"
 ---
 # <a name="user-vsperfcmd"></a>Uživatel (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [uživatel (VSPerfCmd)](https://docs.microsoft.com/visualstudio/profiling/user-vsperfcmd).  
-  
 **Uživatele** Určuje doménu a uživatelské jméno účtu vlastnícího profilovaný proces. Tato možnost je vyžadována, pouze pokud je proces spuštěn pod jiným než přihlášeným uživatelem. Vlastník procesu je uvedena ve sloupci uživatelské jméno na záložce procesy ve Správci úloh Windows.  
   
  **Uživatele** možnost lze zadat pouze na příkazovém řádku, který také obsahuje **Start** možnost možnost.  

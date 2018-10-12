@@ -1,7 +1,7 @@
 ---
 title: Řešení potíží s fragmenty kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a6cc8cde833d9580e3fae03df2df11e87eed8cf2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fff2767c962cf6899840e54bff798bae1f9e202
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304808"
 ---
 # <a name="troubleshooting-snippets"></a>Řešení potíží s fragmenty kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [řešení potíží s fragmenty](https://docs.microsoft.com/visualstudio/ide/troubleshooting-snippets).  
-  
 Problémy s fragmenty kódu technologie IntelliSense jsou obvykle způsobené dva problémy: soubor výstřižku poškozený nebo chybný obsah v souboru fragmentu kódu.  
   
 ## <a name="common-problems"></a>Běžné problémy  

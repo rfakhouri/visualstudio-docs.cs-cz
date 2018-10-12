@@ -1,7 +1,7 @@
 ---
 title: Dynamické přidávání položek nabídky | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: edd3a97eea69843bcd09a9483a7cea196d3a4c5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb0cd49d8ce9f1851bd54bb3362932de775eb2c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675280"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300194"
 ---
 # <a name="dynamically-adding-menu-items"></a>Dynamické přidávání položek nabídky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dynamické přidávání položek nabídky](https://docs.microsoft.com/visualstudio/extensibility/dynamically-adding-menu-items).  
-  
 Můžete přidat položky nabídky v době běhu tak, že zadáte `DynamicItemStart` příkazu příznak na definici tlačítko zástupný symbol v souboru sady Visual Studio (.vsct) tabulky příkazů, a definování (v kódu) číslo nabídky položky k zobrazení a zpracování příkazy. Při načítání sady VSPackage zástupný text nahrazen dynamickou nabídku položky.  
   
  Visual Studio používá dynamické seznamy **naposledy použitých** seznam (MRU), který zobrazuje názvy dokumentů, které byly naposledy otevřeny, a **Windows** seznam, který zobrazuje názvy systému windows které jsou aktuálně otevřené.   `DynamicItemStart` Definice příkazu příznak určuje, že příkaz je zástupný symbol, dokud je otevřen sady VSPackage. Při otevření sady VSPackage zástupný text nahrazen 0 nebo více příkazů, které jsou vytvořeny v době běhu a přidat do seznamu dynamického. Nebude moct zobrazit na pozici v nabídce, kde se zobrazí v seznamu dynamického, dokud je otevřen sady VSPackage.  K naplnění seznamu dynamického Visual Studio se vás zeptá VSPackage k vyhledání příkazu s ID jehož první znaky jsou stejné jako ID zástupný symbol. Když Visual Studio vyhledá odpovídajícího příkazu, přidá název příkazu dynamického seznamu. Zvýší hodnotu ID a vyhledá další odpovídající příkaz pro přidání do seznamu dynamického až nebudou existovat žádné další dynamické příkazy.  

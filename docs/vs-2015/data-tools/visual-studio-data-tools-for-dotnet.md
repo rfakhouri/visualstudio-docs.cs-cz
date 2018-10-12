@@ -1,7 +1,7 @@
 ---
 title: Visual Studio data tools pro rozhraní .NET | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 759aaa1f6860d6b8e95aeaae786532ff406acbb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30c1a0add4dcb10b5b202b43b791c27a7c14640c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667352"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305341"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools for .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,13 +47,13 @@ Visual Studio a rozhraní .NET Framework společně poskytují rozsáhlé rozhra
   
 -   [Vytvoření jednoduché datové aplikace pomocí ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
   
--   [Přidat nové připojení](../data-tools/add-new-connections.md)  
+-   [Přidání nových připojení](../data-tools/add-new-connections.md)  
   
--   [Přidat nové zdroje dat](../data-tools/add-new-data-sources.md)  
+-   [Přidání nových zdrojů dat](../data-tools/add-new-data-sources.md)  
   
--   [Nástroje modelu dat entity v sadě Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)  
+-   [Nástroje modelu EDM (Entity Data Model) v sadě Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)  
   
--   [Nástroje datové sady v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
+-   [Nástroje datových sad v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
   
 -   [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
@@ -63,7 +63,7 @@ Visual Studio a rozhraní .NET Framework společně poskytují rozsáhlé rozhra
   
 -   [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
   
--   [Vytváření a Správa databází a aplikací datové vrstvy v sadě Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
+-   [Vytváření a správa databází a aplikací datové vrstvy v sadě Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
   
 -   [Další prostředky pro odstraňování chyb přístupu k datům](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   

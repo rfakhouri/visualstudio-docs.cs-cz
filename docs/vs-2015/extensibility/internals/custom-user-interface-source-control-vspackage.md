@@ -1,7 +1,7 @@
 ---
 title: Vlastní uživatelské rozhraní (řízení zdrojového balíčku VSPackage) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e544408f4cea3e9ec4e388ab76f4224abd7aa69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629934"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303943"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Vlastní uživatelské rozhraní (balíček VSPackage správy zdrojového kódu)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vlastní uživatelské rozhraní (řízení zdrojového balíčku VSPackage)](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-user-interface-source-control-vspackage).  
-  
 VSPackage deklaruje jeho položky nabídky a příslušné stavy výchozí soubor tabulky příkazů aplikace Visual Studio (.vsct). [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Integrované vývojové prostředí (IDE) zobrazí položky nabídky v jejich výchozí stavy, dokud načtení sady VSPackage. Následně <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metoda je volána k povolení nebo zakázání položky nabídky.  
   
  VSPackage můžete nastavit klíč registru, takže sady VSPackage mohou být načteny automaticky v závislosti na kontextu příkaz uživatelské rozhraní (UI), i když obvykle správy zdrojových kódů VSPackage by se měly načíst na požádání namísto pouze přepnutí na konkrétním kontextu uživatelského rozhraní. Další informace o tomto klíči registru AutoLoadPackages najdete v tématu [Správa balíčky VSPackages](../../extensibility/managing-vspackages.md).  

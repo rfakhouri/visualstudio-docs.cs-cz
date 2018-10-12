@@ -1,7 +1,7 @@
 ---
 title: Dia2dump – ukázka | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 410d4e8cf2a63c7d01058e501391f02543b1eee7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d2f2dab085476a3800308c5214053c8919e84d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671457"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300817"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump – ukázka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dia2dump – ukázka](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/dia2dump-sample).  
-  
 Dia2dump – ukázka je součástí sady Visual Studio a obsahuje dia2dump.cpp – zdrojový soubor. Kompilovaný spustitelný soubor spustí z příkazového řádku a zobrazí obsah souboru databáze (PDB) celého programu.  
   
 ### <a name="to-install-the-sample"></a>Ukázku nainstalujete  
@@ -59,7 +57,7 @@ Dia2dump – ukázka je součástí sady Visual Studio a obsahuje dia2dump.cpp �
   
 ## <a name="see-also"></a>Viz také  
  [Dia2dump.cpp – zdrojový soubor](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
- [Postupy: řešení potíží s upgrady projektu úspěšné sady Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)
+ [Postupy: Řešení potíží spojených s neúspěšným upgradem projektu sady Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)
 
 
 

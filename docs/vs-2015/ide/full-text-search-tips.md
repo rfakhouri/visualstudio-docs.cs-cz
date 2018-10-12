@@ -1,7 +1,7 @@
 ---
 title: Tipy pro fulltextové vyhledávání | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f5fe5e4d4e1f5e1c071bd4da89588022bde9831
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e05c7aa16d689dd037546fe9a199f43a80b0401
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672152"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303430"
 ---
 # <a name="full-text-search-tips"></a>Tipy pro fulltextové vyhledávání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [tipy pro fulltextové vyhledávání](https://docs.microsoft.com/visualstudio/ide/full-text-search-tips).  
-  
 Jedním ze užitečnější metody v nápovědě k vyhledání informací o je provádění fulltextové vyhledávání. Upravit a přizpůsobit si výsledky, je třeba pochopit, jak ovlivňuje syntaxi dotazu. Toto téma obsahuje tipy, postupy a informace o syntaxi podrobné abychom vám lépe zručné vaše dotazy.  
   
 ## <a name="full-text-search-tips"></a>Tipy pro fulltextové vyhledávání  

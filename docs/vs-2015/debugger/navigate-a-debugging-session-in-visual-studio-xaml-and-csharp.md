@@ -1,7 +1,7 @@
 ---
 title: Přechod na relaci ladění v sadě Visual Studio (Xaml a C#) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c9aed98b7f2649aa5c62e930e1833b80d58b7ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670400"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306303"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Přechod na relaci ladění ve Visual Studiu (Xaml a C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přechod na relaci ladění v sadě Visual Studio (Xaml a C#)](https://docs.microsoft.com/visualstudio/debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp).  
-  
 Tento rychlý start ukazuje, jak se zorientovat relacemi ladění sady Visual Studio a jak zobrazit a změnit stav programu v relaci.  
   
  Tento rychlý start je pro vývojáře, kteří jsou nové pro ladění v sadě Visual Studio a pro vývojáře, kteří chtějí získat další informace o navigaci v sadě Visual Studio relace ladění. To se nezabývá techniky ladění samotný. Metody ve vzorovém kódu slouží pouze k předvedení ladění postupů popsaných v tomto tématu. Metody nepoužívají osvědčených postupů návrhu aplikace nebo funkce. Ve skutečnosti rychle zjistíte, že metody a vlastní aplikaci a není vhodné použít co nejvíce všeho vůbec.  

@@ -1,7 +1,7 @@
 ---
 title: Shromažďování statistik aplikace pro samostatné aplikace pomocí příkazového řádku Profiler | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b07f38d3051e6912e6496d082d20219b308b8c2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e93a7042917daaabdd789c6990c5530b25e66fcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683367"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305835"
 ---
 # <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Shromažďování statistik aplikace pro samostatné aplikace pomocí příkazového řádku profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [shromažďování statistik aplikace pro samostatné aplikace pomocí příkazového řádku Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line).  
-  
 Tato část popisuje postupy a možnosti pro shromažďování statistik výkonu pro klientskou aplikaci (samostatný) pomocí metody vzorkování z příkazového řádku.  
   
 > [!NOTE]
@@ -61,7 +59,7 @@ Tato část popisuje postupy a možnosti pro shromažďování statistik výkonu
 |**Profil služby**|-   [Shromažďování statistik aplikace pomocí vzorkování](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md). Popisuje, jak shromáždit statistiky výkonu ze služby Windows s použitím metody vzorkování.|  
   
 ### <a name="analyzing-sampling-data-views-and-reports"></a>Analýza dat vzorkování zobrazeních a sestavách  
- [Zobrazení dat metod vzorkování](../profiling/profiler-sampling-method-data-views.md)
+ [Zobrazení dat metody vzorkování](../profiling/profiler-sampling-method-data-views.md)
 
 
 

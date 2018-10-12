@@ -1,14 +1,14 @@
 ---
 title: 'Scénář: Změna návrhu pomocí vizualizace a modelování | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
 - modeling software [Visual Studio ALM]
@@ -22,18 +22,16 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 67fd284bca4e81c36cd6e7e185b9c4712f07e6b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 220666e6fe12e6a5ab3bbaf1238c19d761427cea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670416"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303040"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [scénář: Změna návrhu pomocí vizualizace a modelování](https://docs.microsoft.com/visualstudio/modeling/scenario-change-your-design-using-visualization-and-modeling).  
-  
 Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vizualizace a modelování nástroje v sadě Visual Studio. Pomocí nástrojů, jako jsou diagramy jazyka UML (Unified Modeling), map kódu, diagramů vrstev a diagramů tříd do:  
   
  Které verze sady Visual Studio podporují jednotlivých nástrojích najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -56,7 +54,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace o těchto nástrojích a scénářích, které podporují, najdete v tématu:  
   
--   [Analýza a modelování vaší architektury](../modeling/analyze-and-model-your-architecture.md)  
+-   [Analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)  
   
 -   [Vizualizace kódu](../modeling/visualize-code.md)  
   
@@ -104,9 +102,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Vytvoření modelování projektů a diagramů UML](../modeling/create-uml-modeling-projects-and-diagrams.md)  
+-   [Vytváření projektů a diagramů pomocí modelování UML](../modeling/create-uml-modeling-projects-and-diagrams.md)  
   
--   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)  
   
 -   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)  
   
@@ -345,7 +343,7 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
 -   [Sledování práce pomocí Visual Studio Team Services nebo Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
--   [Propojení prvků modelu a pracovních položek](../modeling/link-model-elements-and-work-items.md)  
+-   [Propojení prvků modelu a pracovních položek](../modeling/link-model-elements-and-work-items.md)  
   
 -   [Grafy, řídicí panely a sestavy pro Visual Studio ALM](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
@@ -426,9 +424,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)  
+-   [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)  
   
--   [Diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md)  
+-   [Diagramy případů použití UML: Pokyny](../modeling/uml-use-case-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-use-case-diagram"></a>Náčrt diagramu případu použití  
  Diagram případu použití má následující hlavní funkce:  
@@ -447,9 +445,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)  
+-   [Diagramy případů použití UML: Referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)  
   
--   [Diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md)  
+-   [Diagramy případů použití UML: Pokyny](../modeling/uml-use-case-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-use-case-diagrams"></a>Shrnutí: Silné stránky diagramů případů použití  
  Použijte diagramy případu pro lepší vizualizaci:  
@@ -487,9 +485,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Diagramy činnosti UML: referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)  
+-   [Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)  
   
--   [Diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md)  
+-   [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="drawing-an-activity-diagram"></a>Náčrt diagramu aktivit  
  Diagram aktivity má následující hlavní funkce:  
@@ -512,9 +510,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Diagramy činnosti UML: referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)  
+-   [Diagramy činnosti UML: Referenční dokumentace](../modeling/uml-activity-diagrams-reference.md)  
   
--   [Diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md)  
+-   [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-activity-diagrams"></a>Shrnutí: Silné stránky diagramů činností  
  Diagramy aktivit pomáhají vizualizovat a popisovat tok řízení a informací mezi akcemi firmy, systému nebo programu. Toto je jednoduchý a užitečný způsob popisu pracovního postupu při komunikaci s jinými uživateli.  
@@ -561,9 +559,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)  
+-   [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)  
   
--   [Diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md)  
+-   [Diagramy komponent UML: Pokyny](../modeling/uml-component-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-component-diagram"></a>Náčrt diagramu součástí  
  Diagram komponenty má následující hlavní funkce:  
@@ -582,9 +580,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)  
+-   [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)  
   
--   [Diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md)  
+-   [Diagramy komponent UML: Pokyny](../modeling/uml-component-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-component-diagrams"></a>Shrnutí: Silné stránky diagramů komponent  
  Diagramy součástí umožňují vizualizaci:  
@@ -689,9 +687,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)  
+-   [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)  
   
--   [Sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md)  
+-   [Sekvenční diagramy UML: Pokyny](../modeling/uml-sequence-diagrams-guidelines.md)  
   
 -   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)  
   
@@ -710,9 +708,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)  
+-   [Sekvenční diagramy UML: Referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)  
   
--   [Sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md)  
+-   [Sekvenční diagramy UML: Pokyny](../modeling/uml-sequence-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-sequence-diagrams"></a>Shrnutí: Silné stránky sekvenčních diagramů  
  Sekvenční diagramy umožňují vizualizaci:  
@@ -748,9 +746,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)  
+-   [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)  
   
--   [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)  
+-   [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-class-diagram"></a>Náčrt diagramu třídy  
  Diagram třídy má následující hlavní funkce:  
@@ -787,9 +785,9 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)  
+-   [Diagramy tříd UML: Referenční dokumentace](../modeling/uml-class-diagrams-reference.md)  
   
--   [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)  
+-   [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)  
   
 -   [Postupy: Přidání diagramů tříd do projektů (Návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
@@ -863,11 +861,11 @@ Ujistěte se, že softwarový systém vyhovuje potřebám uživatelů pomocí vi
   
  Další informace:  
   
--   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Diagramy vrstev: referenční dokumentace](../modeling/layer-diagrams-reference.md)  
+-   [Diagramy vrstev: Referenční dokumentace](../modeling/layer-diagrams-reference.md)  
   
--   [Diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md)  
+-   [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)  
   
 -   [Ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md)  
   

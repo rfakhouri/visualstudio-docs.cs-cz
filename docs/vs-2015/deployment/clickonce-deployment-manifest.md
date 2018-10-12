@@ -1,7 +1,7 @@
 ---
 title: ClickOnce – Manifest nasazení | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 458b7f6dac29dba16a121ed6dead9d6b62fdc1cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96ce7d873c20b8c29e5586a54c577a5d744b0caa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628913"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306784"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce – manifest nasazení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Manifest nasazení ClickOnce](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-manifest).  
-  
 Manifest nasazení je soubor XML, který popisuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení, včetně identifikace aktuální [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] verze aplikace pro nasazení.  
   
  Manifesty nasazení mají následující prvky a atributy.  
@@ -46,7 +44,7 @@ Manifest nasazení je soubor XML, který popisuje [!INCLUDE[ndptecclick](../incl
 |[\<compatibleFrameworks > – Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)|Požadováno. Určuje verzi rozhraní .NET Framework, ve kterém můžete tuto aplikaci nainstalovat a spustit.|`SupportUrl`|  
 |[\<závislost > – Element](../deployment/dependency-element-clickonce-deployment.md)|Požadováno. Určuje verzi aplikace k instalaci pro nasazení a umístění manifestu aplikace.|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
 |[\<publisherIdentity – > – Element](../deployment/publisheridentity-element-clickonce-deployment.md)|Vyžaduje se pro podepsané manifesty. Obsahuje informace o vydavateli, který podepsal manifestu nasazení.|`Name`<br /><br /> `issuerKeyHash`|  
-|[\<Podpis > – Element](../deployment/signature-element-clickonce-deployment.md)|Volitelné. Obsahuje informace potřebné k digitálnímu podpisu manifestu nasazení.|Žádná|  
+|[\<Podpis > – Element](../deployment/signature-element-clickonce-deployment.md)|Volitelné. Obsahuje informace potřebné k digitálnímu podpisu manifestu nasazení.|Žádné|  
 |[\<customErrorReporting > – Element](../deployment/customerrorreporting-element-clickonce-deployment.md)|Volitelné. Určuje identifikátor URI, chcete-li zobrazit, když dojde k chybě.|Identifikátor URI|  
   
 ## <a name="remarks"></a>Poznámky  

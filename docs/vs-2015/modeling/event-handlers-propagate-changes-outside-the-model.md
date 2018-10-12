@@ -1,7 +1,7 @@
 ---
 title: Obslužné rutiny události šířící změny mimo Model | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93b971c80cdf0c13567364d507f72027d62faae9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775515"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303196"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Obslužné rutiny události šíří změny mimo model
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [obslužné rutiny rozšíření změny mimo the Model událostí](https://docs.microsoft.com/visualstudio/modeling/event-handlers-propagate-changes-outside-the-model).  
-  
 V produktu Visualization and Modeling SDK, můžete definovat obslužné rutiny událostí úložiště změny na prostředky mimo úložiště, jako jsou proměnné bez úložiště, soubory, modely v jiných úložištích nebo jiné [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření. Obslužné rutiny událostí Store jsou spouštěny na konci transakce, ve kterém se aktivační událost došlo. Také se provádějí v operaci vrácení zpět nebo znovu. Proto se na rozdíl od úložiště pravidla jsou zvláště užitečná pro aktualizaci hodnoty, které jsou mimo store události v úložišti. Na rozdíl od .NET události jsou registrovány obslužné rutiny událostí úložiště tak, aby naslouchala na třídu: nemáte samostatnou obslužnou rutinu pro každou instanci zaregistrovat. Další informace o tom, jak si vybrat mezi různými způsoby pro případ změn najdete v tématu [šířící změny a reakce na](../modeling/responding-to-and-propagating-changes.md).  
   
  Grafické plochu a jiných prvcích uživatelského rozhraní jsou příkladem externí prostředky, které mohou být zpracovány události v úložišti.  

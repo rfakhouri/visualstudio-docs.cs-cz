@@ -1,7 +1,7 @@
 ---
 title: Návrháři aktivit toku řízení | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 58ddd15d37e36494fef9488638727c7bc2142aa3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e852bfa5b392c6ffa758678fa83dabd8a8c97f54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675641"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303612"
 ---
 # <a name="control-flow-activity-designers"></a>Návrháři aktivit toku řízení
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] obsahuje několik poskytované systémem aktivit, které můžete použít při vytváření pracovního postupu. Tato část obsahuje poskytované systémem aktivit používaných pro řízení toku v rámci pracovního postupu. Následující témata obsahují jejich popis a pokyny, jak je používat.  
@@ -32,25 +32,25 @@ ms.locfileid: "42675641"
  [If](../workflow-designer/if-activity-designer.md)  
  Vyhodnocuje podmínku a provede aktivitu v závislosti na výsledcích hodnocení.  
   
- [paralelní](../workflow-designer/parallel-activity-designer.md)  
+ [Parallel](../workflow-designer/parallel-activity-designer.md)  
  Souběžně spustí sadu podřízených aktivit.  
   
  [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)  
  Vytvoří výčet prvků kolekce a spustí vloženým příkazem pro každý prvek kolekce paralelně  
   
- [Výběr](../workflow-designer/pick-activity-designer.md)  
+ [Pick](../workflow-designer/pick-activity-designer.md)  
  Spustí jednu s několika větvemi v reakci na nějakou událost, která poskytuje řízení toku založeného na událostech.  
   
- [Operace PickBranch](../workflow-designer/pickbranch-activity-designer.md)  
+ [PickBranch](../workflow-designer/pickbranch-activity-designer.md)  
  Poskytuje potenciální cesta provádění v rámci <xref:System.Activities.Statements.Pick> aktivity.  
   
- [Pořadí](../workflow-designer/sequence-activity-designer.md)  
+ [Sequence](../workflow-designer/sequence-activity-designer.md)  
  Obsahuje uspořádanou kolekci podřízené aktivity, které se provede v pořadí.  
   
  [Přepínač\<T >](http://msdn.microsoft.com/en-us/ce1aa634-c4db-4475-a1c8-a88478a57212)  
  Vyhodnotí zadaný výraz a spustí aktivity z kolekce aktivit, jejichž přidružené klíč odpovídá hodnotě získané z hodnocení.  
   
- [Při](../workflow-designer/while-activity-designer.md)  
+ [While](../workflow-designer/while-activity-designer.md)  
  Spustí aktivitu obsažené v těle, když je zadaná podmínka vyhodnocena jako **true**.  
   
 ## <a name="reference"></a>Odkaz  
@@ -83,7 +83,7 @@ ms.locfileid: "42675641"
   
  [Vývojový diagram](../workflow-designer/flowchart-activity-designers.md)  
   
- [Zasílání zpráv](../workflow-designer/messaging-activity-designers.md)  
+ [Messaging](../workflow-designer/messaging-activity-designers.md)  
   
  [Modul runtime](../workflow-designer/runtime-activity-designers.md)  
   

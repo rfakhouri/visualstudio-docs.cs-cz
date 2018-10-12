@@ -1,7 +1,7 @@
 ---
 title: Vlastnosti výkonnostní relace | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cc3832c0e5a1c4aed99de070b15b0b83ae1254f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306147"
 ---
 # <a name="performance-session-properties"></a>Vlastnosti výkonnostní relace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vlastnosti relace výkonu](https://docs.microsoft.com/visualstudio/profiling/performance-session-properties).  
-  
 A **relace výkonu** vám umožní nakonfigurovat nastavení, která určují, jak je aplikace profilována. Také ukládá sestavy, které jsou generovány pro relaci profilování.  
   
  **Požadavky**  
@@ -47,11 +45,11 @@ A **relace výkonu** vám umožní nakonfigurovat nastavení, která určují, j
   
  Další informace naleznete v tématu:  
   
- [Postupy: výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md)  
+ [Postupy: Výběr metod shromažďování](../profiling/how-to-choose-collection-methods.md)  
   
- [Shromažďuje alokaci paměti .NET a Data o životním cyklu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
+ [Shromažďování dat o přidělení paměti a době platnosti objektů .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
- [Postupy: nastavení možností názvu datového souboru výkonu](../profiling/how-to-set-performance-data-file-name-options.md)  
+ [Postupy: Nastavení možností názvu souboru s údaji o výkonu](../profiling/how-to-set-performance-data-file-name-options.md)  
   
 ## <a name="launch"></a>Spuštění  
  Tato nastavení umožňují vybrat ze seznamu binárních souborů a určete pořadí spouštění binárních souborů.  
@@ -86,9 +84,9 @@ A **relace výkonu** vám umožní nakonfigurovat nastavení, která určují, j
   
  Další informace naleznete v tématu:  
   
- [Postupy: profilování kódu JavaScript ve webových stránkách](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
+ [Postupy: Profilace kódu JavaScript ve webových stránkách](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
- [Postupy: určení příkazů k provedení před instrumentací a po instrumentaci](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
+ [Postupy: Určení příkazů k provedení před instrumentací a po instrumentaci](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
   
 ## <a name="cpu-counters"></a>Čítače CPU  
  Tato nastavení umožňují shromažďovat data o čítačích výkonu procesoru, při použití metoda profilace instrumentace. Přenosné čítače výkonu jsou k dispozici bez ohledu na využití procesoru návrhu nebo výrobce. Události platformy jsou specifické pro procesor návrhu a výrobce. Další informace o čítačích výkonu na čipu naleznete v dokumentaci pro konkrétní procesor.  
@@ -100,7 +98,7 @@ A **relace výkonu** vám umožní nakonfigurovat nastavení, která určují, j
   
  Další informace naleznete v tématu:  
   
- [Postupy: shromažďování trasování událostí pro Windows (ETW) dat.](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
+ [Postupy: Shromažďování dat Trasování událostí pro Windows](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
   
  [VSPerfReport](../profiling/vsperfreport.md).  
   
@@ -114,14 +112,14 @@ A **relace výkonu** vám umožní nakonfigurovat nastavení, která určují, j
   
  Další informace naleznete v tématu:  
   
- [Postupy: určení modulu Runtime rozhraní .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
+ [Postupy: Určení modulu runtime .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
- [Postupy: určení dalších možností instrumentace](../profiling/how-to-specify-additional-instrumentation-options.md)  
+ [Postupy: Určení dalších možností instrumentace](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Přehledy](../profiling/overviews-performance-tools.md)   
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   
- [Řízení sběru dat](../profiling/controlling-data-collection.md)
+ [Řízení shromažďování dat](../profiling/controlling-data-collection.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Matematické uzly | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 154f79ab5a90821ee08b7a9e802f1481baae55dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bab77bbed9f14ccc81429c37ad367d7d51709871
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675934"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305770"
 ---
 # <a name="math-nodes"></a>Matematické uzly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [matematické uzly](https://docs.microsoft.com/visualstudio/designers/math-nodes).  
-  
 V Návrháři shaderu provést matematické uzly algebraických, logiku, trigonometrických a jiných matematických operací.  
   
 > [!NOTE]
@@ -36,7 +34,7 @@ V Návrháři shaderu provést matematické uzly algebraických, logiku, trigono
 |Uzel|Podrobnosti|Vlastnosti|  
 |----------|-------------|----------------|  
 |**Abs**|Vypočítá absolutní hodnotu zadaný vstup na komponentu.<br /><br /> Pro každou komponentu vstupu `X`, záporné hodnoty jsou kladnou, tak, aby všechny komponenty jsou ve výsledku kladnou hodnotu.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Hodnoty, pro kterou chcete určit absolutní hodnotu.<br /><br /> `Output:`<br /><br /> `Output`: stejné jako vstup `X`<br /> Absolutní hodnota na komponentu.|Žádné|  
-|**Přidat**|Vypočítá součet zadané vstupy za součást podle komponent.<br /><br /> Pro každou komponentu výsledku platí, že odpovídající komponenty vstupu `X` a vstupní `Y` jsou navzájem sečteny.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Jedna z hodnot pro sečtení.<br /><br /> `Y`: stejné jako vstup `X`<br /> Jedna z hodnot pro sečtení.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Součet za součást.|Žádné|  
+|**Add**|Vypočítá součet zadané vstupy za součást podle komponent.<br /><br /> Pro každou komponentu výsledku platí, že odpovídající komponenty vstupu `X` a vstupní `Y` jsou navzájem sečteny.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Jedna z hodnot pro sečtení.<br /><br /> `Y`: stejné jako vstup `X`<br /> Jedna z hodnot pro sečtení.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Součet za součást.|Žádné|  
 |**Ceil –**|Vypočítá horní mez zadaný vstup na komponentu.<br /><br /> Horní mez hodnoty je nejmenší celé číslo, které je větší než nebo rovna této hodnotě.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Hodnoty, pro kterou chcete vypočítat horní mez.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Horní mez, jednotlivé komponenty.|Žádné|  
 |**Stažení**|Omezí hodnotu jednotlivých komponent zadaný vstup do předdefinovaného rozsahu.<br /><br /> Pro každou komponentu výsledku platí hodnoty, které jsou pod definovanou jsou nastaveny na minimální hodnotu v rozsahu, hodnoty, které jsou nad definovanou jsou nastaveny na maximální hodnotu v rozsahu a hodnoty, které jsou v rozsahu se nezmění.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Hodnoty k Uchytit.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Přichycená hodnota za součást.|**Max**<br /> Největší možné číslo v rozsahu.<br /><br /> **min**<br /> Nejnižší možná hodnota v rozsahu.|  
 |**Cos**|Vypočítá kosinus vstupu zadaný v radiánech na komponentu.<br /><br /> Pro každou komponentu výsledku platí se vypočítá kosinus odpovídající komponenty, která je v radiánech. Výsledek obsahuje komponenty, jejichž hodnoty jsou v rozsahu [-1, 1].<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Hodnoty pro výpočet kosinus v radiánech.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Kosinus za součást.|Žádné|  
@@ -58,7 +56,7 @@ V Návrháři shaderu provést matematické uzly algebraických, logiku, trigono
 |**Saturate**|Omezí hodnotu jednotlivých komponent zadaný vstup na rozsah [0, 1].<br /><br /> Tento rozsah můžete použít pro vyjádření procent a ostatních relativních mír ve výpočtech. Pro každou komponentu výsledku platí, že hodnoty odpovídajících komponent vstupu, které jsou menší než 0 jsou nastaveny na 0, hodnoty, které jsou větší než 1 jsou nastaveny na hodnotu 1 a hodnoty, které jsou v rozsahu se nezmění.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Hodnoty k saturate.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Sytou hodnota, na komponentu.|Žádné|  
 |**Sin**|Vypočítá sinus vstupu zadaný v radiánech na komponentu.<br /><br /> Pro každou komponentu výsledku platí se vypočítá sinus odpovídající komponenty, která je v radiánech. Výsledek obsahuje komponenty, jejichž hodnoty jsou v rozsahu [-1, 1].<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Hodnoty pro výpočet sinus v radiánech.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Sinus za součást.|Žádné|  
 |**Sqrt**|Vypočítá druhou odmocninu zadaný vstup na komponentu.<br /><br /> Pro každou komponentu výsledku platí se počítá odmocnina odpovídající komponenty.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Hodnoty, pro kterou chcete vypočítat druhou odmocninu.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Druhou odmocninu za součást.|Žádné|  
-|**Odečíst**|Vypočítá rozdíl podle komponent zadané vstupy.<br /><br /> Pro každou komponentu výsledku platí, odpovídající komponenta vstupu `Y` je odečtena od odpovídající komponenty vstupu `X`. Může být využit k výpočtu vektor, který se táhne od prvního vstupu po druhý.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Hodnoty, které mají být odečtena od.<br /><br /> `Y`: stejné jako vstup `X`<br /> Hodnoty, které se má odečíst od vstup `X`.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Rozdíl jednotlivé komponenty.|Žádné|  
+|**Subtract**|Vypočítá rozdíl podle komponent zadané vstupy.<br /><br /> Pro každou komponentu výsledku platí, odpovídající komponenta vstupu `Y` je odečtena od odpovídající komponenty vstupu `X`. Může být využit k výpočtu vektor, který se táhne od prvního vstupu po druhý.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Hodnoty, které mají být odečtena od.<br /><br /> `Y`: stejné jako vstup `X`<br /> Hodnoty, které se má odečíst od vstup `X`.<br /><br /> **Výstup:**<br /><br /> `Output`: stejné jako vstup `X`<br /> Rozdíl jednotlivé komponenty.|Žádné|  
 |**Vektor 3D transformace**|Transformuje Zadaný vektor 3D na jiné místo.<br /><br /> To můžete zpřístupnit body nebo vektorů do společného prostoru tak, aby je mohli používat pro smysluplné výpočty.<br /><br /> **Vstup:**<br /><br /> `Vector`: `float3`<br /> Vektor, který umožňuje transformovat.<br /><br /> **Výstup:**<br /><br /> `Output`: `float3`<br /> Transformovaný vektoru.|**Ze systému**<br /> Nativní prostor vektoru.<br /><br /> **Do systému**<br /> Prostor, který má transformovat vektor transformován.|
 
 

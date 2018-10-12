@@ -1,14 +1,14 @@
 ---
 title: Použití zarážek | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -46,18 +46,15 @@ caps.latest.revision: 63
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c111b2704401ff6f98025026fc51d19b434503f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5fcc6803144359af25d70e68a25ffe90cf7bcca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679337"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304886"
 ---
 # <a name="using-breakpoints"></a>Použití zarážek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Nejnovější verzi tohoto tématu můžete najít v [pomocí zarážek](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints). 
-
 Můžete nastavit zarážky, pokud chcete zastavit spuštění ladicího programu, třeba tak, aby stavu kódu proměnné naleznete v tématu nebo si prohlédnout zásobníku volání. Jsou jedním z nejdůležitějších technik ladění mezi nástroji pro vývojáře sady nástrojů.
   
 ##  <a name="BKMK_Overview"></a> Nastavení zarážky funkce ve zdrojovém kódu  

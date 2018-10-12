@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: zobrazení existujících typů (návrhář tříd) | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a65ef57bfe044a1856a81e054f058bb89946a84
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9759425659d4a7e77672442ee37fd7649e7a6751
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669102"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305282"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Postupy: Zobrazení existujících typů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: zobrazení existujících typů (návrhář tříd)](https://docs.microsoft.com/visualstudio/ide/how-to-view-existing-types-class-designer).  
-  
 Chcete-li zobrazit existující typ a její členy, přidáte jeho tvar do diagramu tříd.  
   
  Můžete vidět místní a odkazované typy. V aktuálně otevřeném projektu existuje místní typ a je pro čtení i zápis. Odkazovaný typ existuje v jiném projektu nebo v odkazovaném sestavení a je jen pro čtení.  

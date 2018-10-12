@@ -1,7 +1,7 @@
 ---
 title: Určení, kdy a kde se má poznámka použít | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 9
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ca11e9339534c1053a62442f4eb2e4a65ca2a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4772dc980743db131002dbde80346836e9dc4c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303352"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Určení, kdy a kde se má poznámka použít
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zadání při a kde Poznámka použít](https://docs.microsoft.com/visualstudio/code-quality/specifying-when-and-where-an-annotation-applies).  
-  
 Po podmíněné Poznámka se může vyžadovat další poznámky a určit, že analyzátor.  Například pokud je funkce, které mohou být synchronní nebo asynchronní proměnné, funkce se chová takto: V případě synchronní je vždy nakonec úspěšná, ale v případě asynchronní oznámí chybu Pokud nemůže být okamžitě úspěšná. Když je zavolána funkce synchronně, kontrolou hodnoty výsledku poskytuje převáděná hodnota analyzátor kódu, protože nebude mít vrátil.  Když je tato funkce volána asynchronně a výsledek funkce není povolená, může dojít k závažné chybě. Tento příklad ukazuje situaci, ve kterém můžete použít `_When_` anotace – je popsáno dále v tomto článku – Povolení kontroly.  
   
 ## <a name="structural-annotations"></a>Strukturální poznámky  
@@ -51,7 +49,7 @@ Po podmíněné Poznámka se může vyžadovat další poznámky a určit, že a
  [Zadávání poznámek ke strukturám a třídám](../code-quality/annotating-structs-and-classes.md)   
  [Zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md)   
  [Vnitřní funkce](../code-quality/intrinsic-functions.md)   
- [Osvědčené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
+ [Doporučené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
 
 
 

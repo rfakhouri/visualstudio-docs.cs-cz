@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: přidání aktivit do panelu nástrojů | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 66595a4aac8ae32c10223b30e6901decc630b10f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7fc523cd032863498cdefac1e12f0653a57ab7cc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669357"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299853"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Postupy: přidání aktivit do panelu nástrojů
 Aktivity mohou být přidány do **nástrojů** ve vašem řešení v několika různými způsoby. Můžete přidat z v rámci aktuálního projektu, odkazovat z jiného projektu nebo na ně odkazovat z jiného sestavení.  

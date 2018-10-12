@@ -1,7 +1,7 @@
 ---
 title: Procházení modelu UML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6c5190e1ec273ac0e0b20855c1d0764b58dda65b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 827a0f7b79f3973b98710de0fb13565145ffb1e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668833"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300258"
 ---
 # <a name="navigate-the-uml-model"></a>Procházení modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [procházení modelu UML](https://docs.microsoft.com/visualstudio/modeling/navigate-the-uml-model).  
-  
 Toto téma uvádí hlavní typy modelu UML.  
   
 ## <a name="the-model-elements-model-and-model-store"></a>Prvky modelu, Model a Model Store  
@@ -79,7 +77,7 @@ Toto téma uvádí hlavní typy modelu UML.
   
 |Typ atributu|Získáte přístup k|Další informace|  
 |--------------------|----------------------------------|----------------------|  
-|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> . IDiagramContext<br /><br /> (v Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Aktuální diagram výběru.|[Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
+|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> . IDiagramContext<br /><br /> (v Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Aktuální diagram výběru.|[Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
 |Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> . ILinkedUndoContext<br /><br /> (v Microsoft.VisualStudio.Modeling.Sdk. [version] .dll)|Umožňuje seskupení změn do transakce.|[Propojení aktualizací modelu UML pomocí transakcí](../modeling/link-uml-model-updates-by-using-transactions.md)|  
 |Microsoft.VisualStudio.Shell. SVsServiceProvider<br /><br /> (v Microsoft.VisualStudio.Shell.Immutable. [version] .dll)|Hostitel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Odtud můžete přístup k souborům, projektům a další aspekty.|[Otevření modelu UML pomocí rozhraní API sady Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|  
   
@@ -135,7 +133,7 @@ foreach (IShape<IInterface> in
   
 ## <a name="see-also"></a>Viz také  
  [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)   
- [Programování s rozhraním API UML](../modeling/programming-with-the-uml-api.md)
+ [Programování pomocí rozhraní API UML](../modeling/programming-with-the-uml-api.md)
 
 
 

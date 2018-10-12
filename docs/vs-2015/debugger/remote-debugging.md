@@ -1,14 +1,14 @@
 ---
 title: Vzdálené ladění | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
 dev_langs:
@@ -24,18 +24,16 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 58df8dd3c95d5962b5966660599c65951d659ac2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880718"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306524"
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vzdálené ladění](https://docs.microsoft.com/visualstudio/debugger/remote-debugging).  
-  
 Můžete ladit aplikace Visual Studio, který byl nasazen na jiný počítač.  K tomu použijete vzdálený ladicí program sady Visual Studio.  
   
  Zde uvedené informace platí pro aplikace klasické pracovní plochy Windows a aplikací ASP.NET.  Informace o vzdáleném ladění aplikací Windows Store a aplikace Azure najdete v tématu [vzdálené ladění pro aplikace z Windows Store a Azure](#bkmk_winstoreAzure).  
