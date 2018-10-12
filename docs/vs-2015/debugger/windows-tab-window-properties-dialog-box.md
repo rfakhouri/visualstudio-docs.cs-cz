@@ -1,7 +1,7 @@
 ---
 title: Karta Windows, dialogové okno Vlastnosti okna | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 925727710ac36e40f2eed1a648418df745417c27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9546be8fd50daea8369b00ae9bbc1eab2427c9c9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631482"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297216"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Karta Okna, dialogové okno vlastnosti okna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [karta Windows, dialogové okno Vlastnosti okna](https://docs.microsoft.com/visualstudio/debugger/windows-tab-window-properties-dialog-box).  
-  
 Použití **Windows** kartu zobrazíte informace o windows související s vybrané okno. Zobrazíte [dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md), přesuňte fokus [zobrazení Windows](../debugger/windows-view.md) okna. Vyberte jakékoli okno uzel ve stromu a pak zvolte **vlastnosti** z **zobrazení** nabídky.  
   
  Následující nastavení jsou k dispozici na **Windows** kartu:  

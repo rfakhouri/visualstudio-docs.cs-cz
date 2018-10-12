@@ -1,7 +1,7 @@
 ---
 title: Provozní režimy | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b23ba695b02a0332ad40a2c51047336903255a13
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdadec54c5b28ae77d4905d2884bbee2d1f2a2ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672783"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298828"
 ---
 # <a name="operational-modes"></a>Provozní režimy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [provozní režimy](https://docs.microsoft.com/visualstudio/extensibility/debugger/operational-modes).  
-  
 Existují tři režimy, ve kterých integrovaného vývojového prostředí můžete pracovat, následujícím způsobem:  
   
 -   [Režim návrhu](#vsconoperationalmodesanchor1)  
@@ -52,11 +50,11 @@ Existují tři režimy, ve kterých integrovaného vývojového prostředí mů�
   
  Ukončení události pocházejí voláním jedné z následujících metod, které ladicí program v režimu přerušení nebo spusťte režim přechodu:  
   
--   [Spuštění](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
+-   [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
   
--   [Krok](../../extensibility/debugger/reference/idebugprocess3-step.md)  
+-   [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)  
   
--   [pokračovat](../../extensibility/debugger/reference/idebugprocess3-continue.md)  
+-   [Continue](../../extensibility/debugger/reference/idebugprocess3-continue.md)  
   
 ###  <a name="vsconoperationalmodesanchor4"></a> Krok režimu  
  Krok režimu nastane, pokud program kroky na další řádek kódu, nebo do, přes nebo mimo funkci. Provádí se krok voláním metody [krok](../../extensibility/debugger/reference/idebugprocess3-step.md). Tato metoda vyžaduje `DWORD`s, zadáte [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) a [STEPKIND](../../extensibility/debugger/reference/stepkind.md) výčty jako vstupní parametry.  

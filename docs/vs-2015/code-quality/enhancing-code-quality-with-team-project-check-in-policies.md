@@ -1,7 +1,7 @@
 ---
 title: Zlepšení kvality kódu pomocí zásady vracení se změnami projektu týmu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b76793a2be80e194f9056280614a9e9646c462d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c48a4e9cb68997903eed017637c9f00db88261a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629038"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299023"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Zvýšení kvality kódu použitím zásad vracení se změnami týmového projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zlepšení kvality kódu pomocí zásady vrácení se změnami týmového projektu](https://docs.microsoft.com/visualstudio/code-quality/enhancing-code-quality-with-team-project-check-in-policies).  
-  
 Při použití Team Foundation verze ovládacího prvku (TFVC), můžete vytvořit zásady vrácení se změnami pro týmové projekty. k vynucení postupů, které vedou k efektivnější vývoj skupiny a lepší kód. Zásady vrácení se změnami jsou pravidla, která jsou nastavena na úrovni týmového projektu a vynucena na vývojových prostředích před kódu může být vráceny se změnami.  
   
  Můžete zadat tyto týmového projektu vrácení se změnami zásady:  

@@ -1,7 +1,7 @@
 ---
 title: Zadávání poznámek k parametrům funkcí a vrácené hodnoty | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -131,18 +131,16 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c3a0cad60dc7867b31238669a612cdb0dac4097
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679452"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297164"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Zadávání poznámek k parametrům funkcí a návratovým hodnotám
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zadávání poznámek k parametrům funkcí a vracet hodnoty](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-parameters-and-return-values).  
-  
 Tento článek popisuje typické použití poznámek pro jednoduchou funkci parametry – skaláry a ukazatele na třídy a struktury – a většinou druhů vyrovnávací paměti.  Tento článek také popisuje běžné vzory využití pro poznámky. Další poznámky, které se vztahují na funkce, najdete v části [zadávání poznámek k chování funkcí](../code-quality/annotating-function-behavior.md)  
   
 ## <a name="pointer-parameters"></a>Parametry ukazatele  
@@ -510,7 +508,7 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
  [Zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md)   
  [Určení, kdy a kde se má poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Vnitřní funkce](../code-quality/intrinsic-functions.md)   
- [Osvědčené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
+ [Doporučené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
 
 
 

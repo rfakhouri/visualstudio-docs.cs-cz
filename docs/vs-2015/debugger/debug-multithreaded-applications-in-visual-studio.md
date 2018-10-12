@@ -1,7 +1,7 @@
 ---
 title: Ladění vícevláknových aplikací v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff0030baec409ae54dc5ebb219f5419e583a0efd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2364fa5ed202f9821ab276fb5cfbb9346a4b258c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677866"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298139"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Ladění vícevláknových aplikací v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ladění vícevláknových aplikací v sadě Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debug-multithreaded-applications-in-visual-studio).  
-  
 Vlákno je řada pokynů, pro které operační systém přiděluje čas procesoru. Každý proces, na kterém běží v operačním systému se skládá z alespoň jednoho vlákna. Procesy, které mají více než jedno vlákno, se nazývají s více vlákny.  
   
  Počítače s více procesory, vícejádrovými procesory nebo procesy využívající hyperthreading lze spustit více vláken současně. Paralelní zpracování více podprocesů může značně zlepšit výkon aplikace, ale to může také ztížit ladění protože zavádí potřebu sledovat více vláken.  
@@ -58,43 +56,43 @@ Vlákno je řada pokynů, pro které operační systém přiděluje čas proceso
  [Ladění více procesů](../debugger/debug-multiple-processes.md)  
  Vysvětluje, jak ladění více procesů.  
   
- [Postupy: použití okna vláken](../debugger/how-to-use-the-threads-window.md)  
+ [Postupy: Použití okna vláken](../debugger/how-to-use-the-threads-window.md)  
  Vhodné procedury pro ladění vláken s **vlákna** okna.  
   
- [Postupy: přepnutí na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
+ [Postupy: Přepnutí na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
  Tři způsoby, jak přepnout kontext ladění na jiný podproces.  
   
- [Postupy: označení a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md)  
+ [Postupy: Označení a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md)  
  Opatřete značkou nebo příznakem vlákna, které chcete věnovat zvláštní pozornost při ladění.  
   
- [Postupy: nastavení názvu vlákna v nativním kódu](../debugger/how-to-set-a-thread-name-in-native-code.md)  
+ [Postupy: Nastavení názvu vlákna v nativním kódu](../debugger/how-to-set-a-thread-name-in-native-code.md)  
  Pojmenujte vašeho vlákna, která se zobrazí v **vlákna** okna.  
   
- [Postupy: nastavení názvu vlákna ve spravovaném kódu](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
+ [Postupy: Nastavení názvu vlákna ve spravovaném kódu](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
  Pojmenujte vašeho vlákna, která se zobrazí v **vlákna** okna.  
   
  [Návod: Ladění vícevláknové aplikace](../debugger/walkthrough-debugging-a-multithreaded-application.md).  
  Seznámení s funkcemi, s důrazem na funkce jak ladění vlákna do [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].  
   
- [Postupy: ladění na vysoký výkon clusteru](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
+ [Postupy: Ladění na klastru s vysokým výkonem](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
  Techniky ladění aplikace, která běží na vysoký výkon clusteru.  
   
  [Tipy k ladění vláken v nativním kódu](../debugger/tips-for-debugging-threads-in-native-code.md)  
  Jednoduché techniky, které mohou být užitečné při ladění nativních vláken.  
   
- [Používání okna úloh](../debugger/using-the-tasks-window.md)  
+ [Použití okna úloh](../debugger/using-the-tasks-window.md)  
  Zobrazuje seznam všech objektů spravované nebo nativní úloh, včetně jejich stavu a dalších užitečných informací.  
   
- [Použití okna paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)  
+ [Použití okna Paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)  
  Ukazuje volání zásobníků s více vlákny (nebo úlohami) v jednom zobrazení a také coalesces zásobníku segmentů, které jsou společné mezi vlákny (nebo úlohami).  
   
  [Návod: Ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Návod, který ukazuje, jak použít paralelní úkoly a Paralelní zásobníky systému windows.  
   
- [Postupy: použití okna paralelního sledování](../debugger/how-to-use-the-parallel-watch-window.md)  
+ [Postupy: Použití okna paralelního sledování](../debugger/how-to-use-the-parallel-watch-window.md)  
  Zkontrolujte hodnoty a výrazy napříč více vlákny.  
   
- [Postupy: použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
+ [Postupy: Použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
  Prozkoumejte a pracujte s vlákny, která běží na GPU během ladění.  
   
 ## <a name="related-sections"></a>Související oddíly  

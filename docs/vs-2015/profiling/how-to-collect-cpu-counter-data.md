@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: shromažďování dat čítačů procesoru | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f7c9f88dbbc3d7d2022736528f2b35fa3a325b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4cf2f6e95a9a0614c578957cabeedf91f1c90ed1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674313"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299868"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Postupy: Shromažďování dat čítačů procesoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: shromažďování dat čítačů procesoru](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-cpu-counter-data).  
-  
 Čítače procesoru událostí se používá ke shromažďování dat výkonu hardwaru. Toto téma ukazuje, jak shromažďovat data událostí, použijete-li metoda profilace instrumentace.  
   
  **Požadavky**  
@@ -76,7 +74,7 @@ Nejnovější verzi tohoto tématu můžete najít v [postupy: shromažďování
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   
  [Vlastnosti výkonnostní relace](../profiling/performance-session-properties.md)   
  [Využití procesoru a čítače Windows](../profiling/cpu-and-windows-counters.md)   
- [Postupy: výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md)
+ [Postupy: Výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md)
 
 
 

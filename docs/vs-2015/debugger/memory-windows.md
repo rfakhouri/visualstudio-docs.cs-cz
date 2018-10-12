@@ -1,7 +1,7 @@
 ---
 title: Paměť Windows | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 180abd9aed356613456790a328fb45d1c3ffcf69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675490"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297190"
 ---
 # <a name="memory-windows"></a>Okna paměti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení paměti pro proměnné v ladicím programu](https://docs.microsoft.com/visualstudio/debugger/memory-windows).  
-  
 **Paměti** okno poskytuje přehled o místo v paměti, který používá vaše aplikace. **Watch** okně **QuickWatch** dialogovém okně **automatické hodnoty** okně a **místní hodnoty** v okně zobrazí obsah proměnné, které jsou uložené na konkrétní umístění v paměti. Ale **paměti** v okně se zobrazí obrázek ve velkém měřítku. Tento náhled může být vhodné pro zkoumání velkých časti dat (vyrovnávací paměti nebo velké řetězce, například), který není zobrazit i v jiných oknech. Ale **paměti** okno není omezena pouze na zobrazení dat. Zobrazí se všechno, co v místo v paměti, zda obsah se data, kód nebo náhodného bits uvolňování paměti v nepřiřazené paměti.  
   
  **Paměti** není k dispozici pouze v případě, že je povoleno ladění úrovni adres v interval **možnosti**dialogovém okně**ladění** uzlu. **Paměti** okno není k dispozici pro skript nebo SQL, které jsou jazyky, které nedokáže rozpoznat koncept paměti.  

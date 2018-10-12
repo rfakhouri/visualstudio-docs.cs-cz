@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: Export textury obsahující mipmapy | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a876676eed593bfa06c3e89521522d9901c58ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10a8a918de6f4228e34660b1699b3b9204e5218d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672678"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299660"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Postupy: Export textury obsahující mipmapy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: Export textury tohoto obsahuje mipmapy](https://docs.microsoft.com/visualstudio/designers/how-to-export-a-texture-that-contains-mipmaps).  
-  
 Kanál s obsahem obrazu může generovat mipmapy ze zdrojového obrazu jako část fáze se sestavením projektu. Když není potřeba ručně zadat obsah bitové kopie každé úrovně MIP, můžete využít k dosažení určitého efektu, generování mipmaps v okamžiku sestavení zajistí, že obsah mipmap nikdy stát--sync a eliminuje náklady na generování Mipmap v době běhu.  
   
  Tento dokument vysvětluje tyto činnosti:  

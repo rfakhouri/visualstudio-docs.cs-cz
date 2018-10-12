@@ -1,7 +1,7 @@
 ---
 title: Fragmenty kódu jazyka Visual C# | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2afbadccfc894dd5ba5baba9c58ab43417f44ed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775442"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297411"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmenty kódu v jazyce Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [fragmenty kódu Visual C#](https://docs.microsoft.com/visualstudio/ide/visual-csharp-code-snippets).  
-  
 Fragmenty kódu jsou předdefinované fragmenty kódu, které můžete rychle vkládat do kódu. Například `for` fragment kódu vytvoří prázdnou `for` smyčky. Některé fragmenty kódu jsou příkazu Obklopit s fragmenty kódu, které vám umožní vybrat řádky kódu a klikněte na tlačítko fragment kódu, která zahrnuje vybrané řádky kódu. Například, když vyberete řádků kódu a poté aktivovat `for` fragment kódu vytvoří `for` smyčky s tyto řádky kódu uvnitř smyčka bloku. Fragmenty kódu můžete provést program psaní kódu rychlejší, jednodušší a spolehlivější.  
   
  Můžete vložit fragment kódu do umístění kurzoru nebo vložit obklopit fragmentem kódu kolem vybrané kódu. Vkládací modul fragmentu kódu je vyvolána prostřednictvím **Vložit fragment kódu** nebo **obklopit fragmentem** příkazy na **IntelliSense** nabídce nebo pomocí klávesové zkratky CTRL + K a pak X nebo CTRL + K a potom S v uvedeném pořadí.  

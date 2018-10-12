@@ -1,7 +1,7 @@
 ---
 title: Zobrazení grafu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92192e36cc0acd33734974a2ddf723df7dfbc55a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca48fecf68ad9ecd1db6dc61acbf168a0a1c0f14
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631576"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298529"
 ---
 # <a name="graph-view"></a>Zobrazení grafu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení grafu](https://docs.microsoft.com/visualstudio/xml-tools/graph-view).  
-  
   
 Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a relací mezi uzly. Všimněte si, že zobrazení grafu neumožňuje změnit rozložení schéma, nastavte na návrhové ploše. Zobrazení grafu také obsahuje panel nástrojů Návrhář schémat XML a panelu navigace s popisem cesty.  
   

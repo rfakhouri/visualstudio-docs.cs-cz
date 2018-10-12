@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: určení událostí sestavení (C#) | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bda99acace01e068c58bae78e20b44b28313722
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4f0a5198f1f8c402fda54f448f3c9b520baabfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679486"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297289"
 ---
 # <a name="how-to-specify-build-events-c"></a>Postupy: Specifikace událostí sestavení (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [jak: Specify Build Events (C#)](https://docs.microsoft.com/visualstudio/ide/how-to-specify-build-events-csharp).  
-  
 Použití událostí sestavení zadat příkazy, na kterých běží před začátkem sestavení nebo po dokončení sestavení. Události sestavení jsou spouštěny pouze v případě, že se sestavení úspěšně dosáhne těchto bodů v procesu sestavení.  
   
  Při vytváření projektu, události před sestavením jsou přidány do souboru s názvem PreBuildEvent.bat a události po sestavení jsou přidány do souboru s názvem PostBuildEvent.bat. Pokud chcete zajistit kontrolu chyb, přidejte vlastní příkazy kontroly chyb do kroků sestavení.  

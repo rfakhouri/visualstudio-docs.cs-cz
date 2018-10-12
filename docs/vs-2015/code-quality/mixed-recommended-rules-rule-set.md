@@ -1,7 +1,7 @@
 ---
 title: Sada pravidel smíšená doporučená pravidla | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ccf58c04c266741350e834cedbfdeebf237c9f71
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf0fa74c80a570271e6fb5e92dbb2d3fc46f1551
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629054"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299400"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Sada pravidel Smíšená doporučená pravidla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sada pravidel smíšená doporučená pravidla](https://docs.microsoft.com/visualstudio/code-quality/mixed-recommended-rules-rule-set).  
-  
 Microsoft smíšená doporučená pravidla se soustředí na nejběžnějších a kritické problémy v projektech C++, které podporují modul Common Language Runtime, včetně možných bezpečnostních děr, selhání aplikace a jiných důležitých chyb logiky a návrhu. Měli byste zahrnout tuto sadu pravidel v jakékoli vlastní sadě pravidel, že kterou vytvoříte pro vaše projekty C++, které podporují modul Common Language Runtime. Tato sada pravidel je navržena ke konfiguraci s edicí sady Visual Studio Professional a vyšší.  
   
 |Pravidlo|Popis|  

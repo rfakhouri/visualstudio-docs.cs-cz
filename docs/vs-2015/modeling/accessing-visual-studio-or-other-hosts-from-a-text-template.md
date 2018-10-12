@@ -1,7 +1,7 @@
 ---
 title: Přístup k sadě Visual Studio nebo k jiným hostitelům z textové šablony | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5bcd1811db000b39f7c9897f1329434af9fe5258
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3eb61ab5d372d02581c68391d125c7def23a402a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675593"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298477"
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Přístup k prostředí Visual Studio nebo k jiným hostitelům z textové šablony
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přístup k sadě Visual Studio nebo k jiným hostitelům z textové šablony](https://docs.microsoft.com/visualstudio/modeling/accessing-visual-studio-or-other-hosts-from-a-text-template).  
-  
 V textové šabloně, můžete použít metody a vlastnosti hostitele, který se spustí šablony, jako například [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  To platí pro pravidelné textových šablon, ne Předzpracované textové šablony.  

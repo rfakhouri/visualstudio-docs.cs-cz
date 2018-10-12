@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: určení událostí sestavení (Visual Basic) | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fc4c0efad510c511cde5d6803807a1fb1f8efd67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7c9c6c937d0426170854ef3a9de04348005fc0cd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298893"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Postupy: Určení událostí sestavení (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [jak: Specify Build Events (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/how-to-specify-build-events-visual-basic).  
-  
 Událostí sestavení v jazyce Visual Basic můžete použít ke spouštění skriptů, maker nebo jiných akcí jako součást procesu kompilace. Před kompilací; dojde k události před sestavením Po kompilaci dojde k události po sestavení.  
   
  Sestavení události jsou uvedeny v **události sestavení** dialogovém okně k dispozici **kompilaci** stránku **Návrháře projektu**.  

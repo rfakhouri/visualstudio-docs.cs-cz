@@ -1,7 +1,7 @@
 ---
 title: Pomocí profilace z příkazového řádku nástroje | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b827f7cca775e544049a23bcc8b0a431d11b332
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c9f056bb95458ef8bbe9c221fdfbbfaa322e9e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633626"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298386"
 ---
 # <a name="using-the-profiling-tools-from-the-command-line"></a>Použití nástrojů pro profilaci z příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Profiling Tools z příkazového řádku pomocí](https://docs.microsoft.com/visualstudio/profiling/using-the-profiling-tools-from-the-command-line).  
-  
 Můžete použít nástroje příkazového řádku [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástroje pro profilaci sady do profilu aplikace příkazového řádku a k automatizaci profilace pomocí dávkových souborech a skriptování. Můžete také vygenerovat soubory sestav z příkazového řádku. Zjednodušené samostatného profileru můžete použít ke shromažďování dat na počítačích, které nemají [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nainstalované.  
   
 > [!NOTE]
@@ -47,7 +45,7 @@ Můžete použít nástroje příkazového řádku [!INCLUDE[vsprvs](../includes
 |**Profilovat kód v počítačích bez sady Visual Studio:** samostatný profiler nástrojů pro profilaci sady můžete použít ke shromažďování dat pro aplikace na počítače, které nemají [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nainstalované.|-   [Postupy: Instalace samostatného Profiler](../profiling/how-to-install-the-stand-alone-profiler.md)|  
   
 ## <a name="reference"></a>Odkaz  
- [Profilování nástroje pro příkazový řádek](../profiling/command-line-profiling-tools-reference.md)  
+ [Referenční dokumentace nástrojů příkazového řádku pro profilaci](../profiling/command-line-profiling-tools-reference.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Prohlížeč výkonu](../profiling/performance-explorer.md)

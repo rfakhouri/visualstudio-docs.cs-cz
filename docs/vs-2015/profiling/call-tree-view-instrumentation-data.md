@@ -1,7 +1,7 @@
 ---
 title: Zobrazení stromu volání – Data instrumentace | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54360ded2c3e758658969484515e06e50b86b45e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fde596d095a07ce609b0a357f16f17fabfa4258
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667245"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297268"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Zobrazení stromu volání – data instrumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení stromu volání – Data instrumentace](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-instrumentation-data).  
-  
 Hodnoty pro funkci ve stromu volání označuje datum a čas pro instance funkce, které byly volány nadřazené funkce ve stromu volání. Procentní hodnoty se počítá srovnáním hodnoty jsou funkce instance celkový uplynulý celkový čas všech funkcí během spuštění profilování.  
   
 ## <a name="general"></a>Obecné  
@@ -96,7 +94,7 @@ Hodnoty pro funkci ve stromu volání označuje datum a čas pro instance funkce
  [Postupy: přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
  [Zobrazení stromu volání](../profiling/call-tree-view-sampling-data.md)   
  [Zobrazení stromu volání – instrumentace](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [Zobrazení stromu volání – vzorkování](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+ [Zobrazení stromu volání – Vzorkování](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 
 
 

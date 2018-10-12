@@ -1,7 +1,7 @@
 ---
 title: Ladění textové šablony T4 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d04fe451a752c5132a376fd63091aeb6b1ee1f49
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628818"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298906"
 ---
 # <a name="debugging-a-t4-text-template"></a>Ladění textové šablony T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ladění textové šablony T4](https://docs.microsoft.com/visualstudio/modeling/debugging-a-t4-text-template).  
-  
 Můžete nastavit zarážky v textových šablonách. Chcete-li ladit návrhové textové šablony, uložte soubor textové šablony a pak zvolte **ladit šablonu T4** v místní nabídce souboru v Průzkumníku řešení. Ladění za běhu textové šablony, jednoduše ladit aplikaci, do které patří.  
   
  Ladění textové šablony, měli byste porozumět kroky transformace procesu šablony. Různé druhy chyb může dojít v rámci každého kroku. Kroky jsou následující.  
