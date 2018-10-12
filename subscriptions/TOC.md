@@ -25,6 +25,7 @@
 #### [Enterprise Mobility + Security](vs-ems.md)
 #### [Vývojářský účet pro Windows](vs-windows-dev.md)
 #### [Předplatné pro vývojáře pro Office 365](vs-office-dev.md)
+#### [Předplatné Office 365](vs-office365.md)
 #### [Power BI Pro](vs-pbi.md)
 #### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Průběžné platby za Azure](vs-azure-payg.md)
