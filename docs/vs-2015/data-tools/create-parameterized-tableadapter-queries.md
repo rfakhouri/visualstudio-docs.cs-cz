@@ -1,7 +1,7 @@
 ---
 title: Vytvoření parametrizovaných dotazů TableAdapter | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 35a2f0c498d6f4239568d4719b2581fdc2f321ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 522a9035bc272d643ae3277e5471f0d67baedcde
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633798"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225251"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Vytvoření parametrizovaných dotazů TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytvoření parametrizovaných dotazů TableAdapter](https://docs.microsoft.com/visualstudio/data-tools/create-parameterized-tableadapter-queries).  
-  
   
 Parametrický dotaz vrací data, která splňuje podmínky klauzuli WHERE v dotazu. Například můžete parametrizovat seznam zákazníků na Zobrazit pouze zákazníkům v určitých město přidáním `WHERE City = @City` na konec příkazu SQL, který vrátí seznam zákazníků.  
   
@@ -112,5 +110,5 @@ Parametrický dotaz vrací data, která splňuje podmínky klauzuli WHERE v dota
 3.  Vyberte parametr, který povoluje hodnoty null a nastavte **AllowDbNull** vlastnost `true`.  
   
 ## <a name="see-also"></a>Viz také  
- [Vyplnění datové sady s použitím objektů TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
+ [Vyplnění datových sad pomocí objektů TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 

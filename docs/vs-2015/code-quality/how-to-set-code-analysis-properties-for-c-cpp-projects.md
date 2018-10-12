@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: nastavení vlastností analýzy kódu pro projekty C / C++ | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c0b396394e003f97c60a65ee37b94810e692e28
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5be7d600da2f1f402de3f6d083851edb11bf8dda
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668270"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224819"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Postupy: Nastavení vlastností analýzy kódu pro projekty C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: nastavení vlastností analýzy kódu pro projekty C/C++](https://docs.microsoft.com/visualstudio/code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects).  
-  
 Můžete nakonfigurovat pravidla, která používá nástroj pro analýzu kódu pro analýzu kódu v každé konfiguraci projektu. Kromě toho může směrovat analýzy kódu pro potlačení varování z kódu, které se generují a přidávají do svého projektu pomocí nástroje třetích stran.  
   
 ## <a name="code-analysis-property-page"></a>Stránka vlastností analýzy kódu  

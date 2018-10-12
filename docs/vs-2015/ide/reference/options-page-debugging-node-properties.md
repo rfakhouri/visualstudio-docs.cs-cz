@@ -1,7 +1,7 @@
 ---
 title: Stránka Možnosti, vlastnosti uzlu ladění | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 128e4719775a4ce9d06214547936110ed88b7a14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bcc4637ebb933c2d6cc8a06d15ad70c1fbb76c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628628"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223846"
 ---
 # <a name="options-page-debugging-node-properties"></a>Stránka Možnosti, vlastnosti uzlu ladění
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [stránka Možnosti, vlastnosti uzlu ladění](https://docs.microsoft.com/visualstudio/ide/reference/options-page-debugging-node-properties).  
-  
   
 Následující tabulky popisují stránky (nebo kolekce vlastností), které jsou přidruženy **ladění** kategorie, `DTE.Properties("Debugging", <Property Page>)` z **možnosti** dialogové okno.  
   
@@ -95,7 +93,7 @@ Následující tabulky popisují stránky (nebo kolekce vlastností), které jso
  [Stránka Možnosti, vlastnosti uzlu textového editoru](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Obecné, ladění, dialogové okno Možnosti](../../debugger/general-debugging-options-dialog-box.md)   
  [Upravit a pokračovat, ladění, dialogové okno Možnosti](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
- [Just-In-Time, ladění, dialogové okno Možnosti](../../debugger/just-in-time-debugging-options-dialog-box.md)
+ [Za běhu, Ladění, dialogové okno Možnosti](../../debugger/just-in-time-debugging-options-dialog-box.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Element VSIXLanguagePack (VSIX Language Pack Schema) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf8e55e38ecf16577482955c30ea95c5a5980087
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8cc63f24f50f8ed0fecb9640ae4b2a5d2ec669be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668080"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224741"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>Element VSIXLanguagePack (VSIX Language Pack Schema)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [VSIXLanguagePack Element (VSIX Language Pack Schema)](https://docs.microsoft.com/visualstudio/extensibility/vsixlanguagepack-element-vsix-language-pack-schema).  
-  
 Požadováno. Obsahuje kořenový prvek pro jazykové sady VSIX. Jazykové sady VSIX obsahuje informace lokalizovaného instalačního balíčku VSIX.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -57,10 +55,10 @@ Požadováno. Obsahuje kořenový prvek pro jazykové sady VSIX. Jazykové sady 
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[LocalizedName – Element](../extensibility/localizedname-element-vsix-language-pack-schema.md)|Požadováno. Lokalizovaný název rozšíření k instalaci.|  
-|[LocalizedDescription – Element](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)|Požadováno. Lokalizovaný popis rozšíření k instalaci.|  
-|[MoreInfoURL – Element](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)|Volitelné. Odkaz na lokalizované informace o rozšíření.|  
-|[Licence – Element](../extensibility/license-element-vsix-language-pack-schema.md)|Volitelné. Cesta lokalizovanou verzi souboru s licencí pro rozšíření.|  
+|[LocalizedName – element](../extensibility/localizedname-element-vsix-language-pack-schema.md)|Požadováno. Lokalizovaný název rozšíření k instalaci.|  
+|[LocalizedDescription – element](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)|Požadováno. Lokalizovaný popis rozšíření k instalaci.|  
+|[MoreInfoURL – element](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)|Volitelné. Odkaz na lokalizované informace o rozšíření.|  
+|[License – element](../extensibility/license-element-vsix-language-pack-schema.md)|Volitelné. Cesta lokalizovanou verzi souboru s licencí pro rozšíření.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   

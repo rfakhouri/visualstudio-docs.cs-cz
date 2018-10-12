@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: použití okna moduly | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f7a5c71a95c0e4c366b7001a3adf86d5bacc9c8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fcd1b19557cf07901b5834539095847e7e1395ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666345"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225170"
 ---
 # <a name="how-to-use-the-modules-window"></a>Postupy: Použití okna Moduly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [moduly zobrazení, knihovny DLL a spustitelné soubory v ladicím programu](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-modules-window).  
-  
 POZNÁMKA:]
 >  Tato funkce není k dispozici pro SQL nebo ladění skriptů.  
   
@@ -87,7 +85,7 @@ POZNÁMKA:]
 ## <a name="see-also"></a>Viz také  
  [Pozastavení provádění](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
  [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)   
- [Zadání symbolu (.pdb) a zdrojové soubory](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Zadání symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
 
 

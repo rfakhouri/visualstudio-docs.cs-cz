@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vytváření šablon projektu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7e8efd905667c235d80d64e1c7ca7660281a9ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb68a9902fc3adf9f2643b52e069cf182d9ca75a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666818"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225506"
 ---
 # <a name="how-to-create-project-templates"></a>Postupy: Vytváření šablon projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: vytváření šablon projektu](https://docs.microsoft.com/visualstudio/ide/how-to-create-project-templates).  
-  
 Tento postup umožňuje vytvořit pomocí šablony **exportovat šablonu** průvodce, který zabalí vaše šablony v souboru .zip. Můžete také vytvořit šablony ve formátu souboru VSIX pro vylepšené nasazení s použitím Průvodce exportem šablony rozšíření nebo pomocí šablon, které jsou součástí [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], nebo můžete vytvořit šablony ručně.  
   
 ### <a name="to-create-a-custom-project-template-with-the-standard-export-template-wizard"></a>Chcete-li vytvořit vlastní šablonu projektu pomocí standardního Průvodce exportovat šablonu  

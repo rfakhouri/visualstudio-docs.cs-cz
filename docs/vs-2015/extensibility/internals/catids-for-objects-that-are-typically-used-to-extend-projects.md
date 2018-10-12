@@ -1,7 +1,7 @@
 ---
 title: Identifikátory CatID pro objekty, které se obvykle používají k rozšíření projektů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0c7fdb66-ed96-4b36-89f6-021bca573572
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e2ad075ac384dc8bc4f83d16034715515fde5b04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f9daee3e188aeb098961aa6631f7901efad2aa8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667126"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224052"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>Identifikátory CATID pro objekty používané obvykle k rozšíření projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [identifikátory CatID pro objekty, že se obvykle používají k rozšíření projektů](https://docs.microsoft.com/visualstudio/extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects).  
-  
 Následující tabulka uvádí identifikátory CatID, které se používají k rozšíření `Project` a `ProjectItem` objekty automatizace pro [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], a [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projekty. Tyto identifikátory CatID jsou definovány v VSLangProj.olb.  
   
 ## <a name="listing-of-catids"></a>Seznam identifikátory CatID  

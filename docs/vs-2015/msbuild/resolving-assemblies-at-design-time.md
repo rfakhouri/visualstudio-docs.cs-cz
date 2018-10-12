@@ -1,7 +1,7 @@
 ---
 title: Překlad sestavení v době návrhu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b54d2c3dc69e33ba732f8b31b36d896c90e8b774
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc10169ac07efdeded41a9bb2990bdc206a17435
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632218"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224650"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Překlad sestavení v době návrhu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [překlad sestavení v době návrhu](https://docs.microsoft.com/visualstudio/msbuild/resolving-assemblies-at-design-time).  
-  
   
 Po přidání odkazu na sestavení pomocí karty .NET dialogového okna Přidat odkaz bude odkaz ukazovat na zprostředkující referenční sestavení, což je sestavení, které obsahuje veškeré informace o typech a podpisech, ale nezbytně nemusí obsahovat žádný kód. Karta .NET obsahuje referenční sestavení, která odpovídají sestavením modulu runtime v rozhraní .NET Framework. Kromě toho obsahují referenční sestavení, jež odpovídají sestavením modulu runtime v registrovaných složkách AssemblyFoldersEx, které jsou používány třetími stranami.  
   

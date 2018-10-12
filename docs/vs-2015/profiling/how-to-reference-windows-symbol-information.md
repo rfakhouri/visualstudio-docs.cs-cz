@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: referenční informace o symbolech Windows | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 385b9e4511c44c02a358eb88471cd8369971ed1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d327847d20574f6b52886fe8895037d28fd209ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675910"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225417"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Postupy: Referenční informace o symbolech Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: odkaz na informace o symbolech Windows](https://docs.microsoft.com/visualstudio/profiling/how-to-reference-windows-symbol-information).  
-  
 Visual Studio Tools pro profilaci symbolické názvy, například názvy funkcí v binárních souborech programu použít soubory symbolů (PDB). Provedením tohoto postupu automaticky stáhnout a aktualizovat soubory s příponou .pdb správná verze Windows na místním počítači.  
   
 > [!NOTE]
@@ -58,7 +56,7 @@ Visual Studio Tools pro profilaci symbolické názvy, například názvy funkcí
   
 ## <a name="see-also"></a>Viz také  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   
- [Postupy: serializace informací o symbolu](../profiling/how-to-serialize-symbol-information.md)
+ [Postupy: Serializace informací o symbolu](../profiling/how-to-serialize-symbol-information.md)
 
 
 

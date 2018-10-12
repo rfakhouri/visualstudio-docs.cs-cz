@@ -1,7 +1,7 @@
 ---
 title: Fullclassname – Element (rozšíření Průvodce pro šablony sady Visual Studio) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25f291d787a6efe03c6b8cf8dff27157f48d1596
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e0b34f992c711b09736055a3ec303703055a8d74
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680774"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224247"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName – element (rozšíření průvodce pro šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [fullclassname – Element (Visual Studio rozšíření Průvodce pro šablony)](https://docs.microsoft.com/visualstudio/extensibility/fullclassname-element-visual-studio-template-wizard-extension).  
-  
 Plně kvalifikovaný název třídy, která implementuje `IWizard` rozhraní.  
   
  \<Vstemplate – >  

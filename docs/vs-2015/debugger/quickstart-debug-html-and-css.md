@@ -1,7 +1,7 @@
 ---
 title: 'Rychlý start: Ladění kódu HTML a CSS | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b331ccf0cf180364738f5ac9084b0bd2ff6b716b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676931"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225482"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Rychlý start: Ladění kódu HTML a CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [rychlý start: ladění kódu HTML a CSS](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-html-and-css).  
-  
 Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Pro aplikace JavaScript Visual Studio poskytuje komplexní možnosti ladění, který obsahuje funkce, které jsou pro vývojáře v aplikaci Internet Explorer a Visual Studio srozumitelná. Tyto funkce jsou podporovány pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], aplikace pro Windows Phone Store a pro aplikace vytvořené pomocí nástrojů Visual Studio pro Apache Cordova  
@@ -52,9 +50,9 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
  Další informace o použití Průzkumníka modelu DOM naleznete v následujících tématech:  
   
--   [Ladění stylů CSS pomocí Průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md)  
+-   [Ladění stylů CSS pomocí průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md)  
   
--   [Ladění rozložení pomocí Průzkumníka modelu DOM](../debugger/debug-layout-using-dom-explorer.md)  
+-   [Ladění rozložení pomocí průzkumníka modelu DOM](../debugger/debug-layout-using-dom-explorer.md)  
   
 -   [Zobrazení naslouchacích procesů událostí DOM](../debugger/view-dom-event-listeners.md)  
   

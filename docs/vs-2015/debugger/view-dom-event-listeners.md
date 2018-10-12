@@ -1,7 +1,7 @@
 ---
 title: Zobrazení naslouchacích procesů událostí DOM | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eeca4964df8e89511b1a077cace83484c35f44d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9d6f5c913cb2868df1af25470eb69f84575ffab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627835"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223298"
 ---
 # <a name="view-dom-event-listeners"></a>Zobrazení naslouchacích procesů událostí DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [naslouchacích procesů událostí DOM zobrazení](https://docs.microsoft.com/visualstudio/debugger/view-dom-event-listeners).  
-  
 Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  **Události** karty Průzkumníku modelu DOM zobrazí události, které jsou spojeny s prvek modelu DOM. Každá hlavní uzel v **události** karta představuje událost, která má aktivní předplatitele. Hlavní uzel obsahuje podřízené uzly, které představují naslouchacích procesů registrované události pro konkrétní události. Kromě zobrazení naslouchacích procesů událostí, můžete použít na této kartě přejděte do umístění naslouchací proces událostí v kódu jazyka JavaScript. Informace v tomto tématu se vztahují na aplikace pro Store pomocí HTML a JavaScript.  
@@ -118,7 +116,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 ## <a name="see-also"></a>Viz také  
  [Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Ladění stylů CSS pomocí Průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
- [Ladění rozložení pomocí Průzkumníka modelu DOM](../debugger/debug-layout-using-dom-explorer.md)
+ [Ladění rozložení pomocí průzkumníka modelu DOM](../debugger/debug-layout-using-dom-explorer.md)
 
 
 

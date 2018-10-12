@@ -1,7 +1,7 @@
 ---
 title: ClickOnce – nasazení v systému Windows Vista | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8057cc9c27d99058d5f16052864082e288591457
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6340d34e6f974cf8e7ea6f2dd7fea38b5ef94a57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674423"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224507"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Implementace ClickOnce v systému Windows Vista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [nasazení ClickOnce v systému Windows Vista](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-on-windows-vista).  
-  
 Vytváření aplikací v sadě Visual Studio pro řízení uživatelských účtů (UAC) v systému Windows Vista obvykle generuje vloženého manifestu kódovaný jako binární data XML do spustitelného souboru aplikace. Vzhledem k tomu, že aplikace ClickOnce a modelu COM bez registrace vyžadují externím manifestem, Visual Studio generuje soubor pro tyto typy projektů, které obsahují data nástroje Řízení uživatelských účtů namísto vloženého manifestu. Ve výchozím nastavení Visual Studio používá informace ze souboru s názvem app.manifest Generovat externí informace o manifestu nástroje Řízení uživatelských účtů (pro nasazení ClickOnce a modelu COM bez registrace) nebo ji vložit do spustitelného souboru aplikace (pro všechny ostatní případy). Visual Studio poskytuje následující možnosti pro generování manifestu:  
   
 -   Použití vloženého manifestu. Vložit data nástroje Řízení uživatelských účtů ve spustitelném souboru aplikace a spustit jako běžný uživatel.  

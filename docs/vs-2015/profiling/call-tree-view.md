@@ -1,7 +1,7 @@
 ---
 title: Zobrazení stromu volání | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b672670dc621b66e51228678af025db8d7f449b3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1df170176397bd8b74c169e8331baaffa9f6b744
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225443"
 ---
 # <a name="call-tree-view"></a>Zobrazení stromu volání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení stromu volání](https://docs.microsoft.com/visualstudio/profiling/call-tree-view).  
-  
 Zobrazení stromu volání zobrazí cesty spuštění funkce, které byly Procházet v profilované aplikaci. Kořen stromu je vstupním bodem do aplikace nebo komponenty. Každý uzel funkce obsahuje všechny funkce, které se nazývá a údaje o výkonu o volání těchto funkcí.  
   
  Zobrazení stromu volání můžete také rozšířit a zvýrazňovat cesta provedení funkce, která nejvíce času spotřebovaného nebo vzorkováno nejčastěji. Zobrazení výkonu nejdražší cesty, klikněte pravým tlačítkem na funkci a pak klikněte na **rozbalit kritickou cestu**.  
@@ -54,7 +52,7 @@ Zobrazení stromu volání zobrazí cesty spuštění funkce, které byly Proch�
   
  [Zobrazení stromu volání](../profiling/call-tree-view-instrumentation-data.md)  
   
- [Zobrazení stromu volání – vzorkování](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
+ [Zobrazení stromu volání – Vzorkování](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
   
  [Zobrazení stromu volání](../profiling/call-tree-view-contention-data.md)  
   

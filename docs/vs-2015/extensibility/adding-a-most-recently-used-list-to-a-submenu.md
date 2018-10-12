@@ -1,7 +1,7 @@
 ---
 title: Přidání naposledy použité do podnabídky seznamu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa2a5f0177243c178890673986b0c04b4627505e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666379"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223729"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Přidání seznamu Naposledy použité do podnabídky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přidání nejvíce nedávno používá seznam do podnabídky](https://docs.microsoft.com/visualstudio/extensibility/adding-a-most-recently-used-list-to-a-submenu).  
-  
 Tento návod vychází z ukázky v [přidání podnabídky do nabídky](../extensibility/adding-a-submenu-to-a-menu.md)a ukazuje, jak přidat dynamický seznam do podnabídky. V seznamu dynamického tento balíček je základem pro vytvoření seznamu naposledy (použitých).  
   
  Dynamická nabídka seznamu začíná zástupný symbol v nabídce. Pokaždé, když se zobrazí v nabídce, integrovaného vývojového prostředí (IDE) sady Visual Studio vyzve sady VSPackage pro všechny příkazy, které se mají zobrazit na zástupný symbol. Dynamický seznam se může nacházet kdekoli v nabídce. Dynamické seznamy jsou však obvykle ukládají a zobrazí samy o sobě z podnabídky nebo na dolním okraji nabídek. Když použijete tyto způsoby návrhu, povolíte dynamické seznam příkazů, tím rozbalíte a smlouvy, aniž by to ovlivnilo pozice dalších příkazů v nabídce. V tomto podrobném návodu zobrazí se v dolní části existující podnabídky, oddělené od zbytku podnabídky řádku dynamického seznamu naposledy použitých.  

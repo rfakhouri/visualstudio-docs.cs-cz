@@ -1,7 +1,7 @@
 ---
 title: Přepnout zarážku – příkaz | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7dd3bd7a4d42b8135aed034464223af53091f87
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f993d9a0377531b155301bed235c00bf8e6667c4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633550"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223155"
 ---
 # <a name="toggle-breakpoint-command"></a>Přepnout zarážku – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Přepnout zarážku – příkaz](https://docs.microsoft.com/visualstudio/ide/reference/toggle-breakpoint-command).  
-  
   
 V závislosti na jejím aktuálním stavu na aktuální pozici v souboru se změní na zarážku, zapnout nebo vypnout.  
   

@@ -1,7 +1,7 @@
 ---
 title: Dokumentační komentáře XML (JavaScript) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a5accfb63d33a028048c9715cfe9cdf728a5db2d
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 26d690948378998f83d4fe6c8f909ffca1d3df8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48878834"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225625"
 ---
 # <a name="xml-documentation-comments-javascript"></a>Dokumentační komentáře XML (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dokumentace k sadě Visual Studio 2017](/visualstudio/).  
-  
 V jazyce JavaScript můžete vytvořit dokumentaci pro kód včetně značek XML ve zvláštních polích komentářů ve zdrojovém kódu. Tyto tagy XML jsou používány IntelliSense k poskytnutí informací o objektech JavaScript.  
   
  Umístění komentářů kódu závisí na konkrétní značce.  
