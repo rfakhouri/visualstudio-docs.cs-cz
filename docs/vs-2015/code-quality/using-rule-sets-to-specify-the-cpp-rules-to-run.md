@@ -1,7 +1,7 @@
 ---
 title: Použití sad pravidel k určování pravidel C++ pro spuštění | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9466bf421ca5844d3d7083528fb1a27e3c488937
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631630"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230872"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Použití sad pravidel k určování pravidel C++ pro spuštění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pomocí sad pravidel k určování pravidel C++ pro spuštění](https://docs.microsoft.com/visualstudio/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).  
-  
 V [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] a [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], můžete vytvářet a upravovat vlastní *sada pravidel, která* podle potřeb konkrétního projektu související s analýzou kódu. Chcete-li vytvořit vlastní pravidlo C++ nastavte, projekt C/C++ musí být otevřeny v integrovaném vývojovém prostředí sady Visual Studio. Potom otevřete sadu standardních pravidel v editoru sad pravidel a pak přidat nebo odebrat konkrétní pravidla a volitelně změnit akce, která nastane, pokud analýza kódu určuje, že pravidlo bylo narušeno.  
   
  Chcete-li vytvořit nové vlastní pravidlo nastavte, uložte ho pomocí nového názvu souboru. Sada vlastních pravidel se automaticky přiřadí do projektu.  

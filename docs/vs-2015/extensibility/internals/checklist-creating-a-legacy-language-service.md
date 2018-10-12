@@ -1,7 +1,7 @@
 ---
 title: 'Kontrolní seznam: Vytvoření služby starší verze jazyka | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d04e163e45c9a5932375ffec0f0e75ef8254cfc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1eaf68ccc9a40e0ead91ab6d46cde0ec2cf5cbce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672014"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242785"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Kontrolní seznam: Vytvoření služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [kontrolní seznam: vytvoření služby starší verze jazyka](https://docs.microsoft.com/visualstudio/extensibility/internals/checklist-creating-a-legacy-language-service).  
-  
 Následující kontrolní seznam obsahuje souhrn základní kroky nezbytné k vytvoření služby pro jazyk [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] základní editor. K integraci služby jazyka do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], je nutné vytvořit vyhodnocovací filtr výrazů ladění. Další informace najdete v tématu [zápis vyhodnocovací filtr výrazů CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) v [rozšiřitelnosti ladicího programu sady Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
   
 ## <a name="steps-for-creating-a-language-service"></a>Kroky pro vytvoření služby jazyka  
@@ -134,5 +132,5 @@ Následující kontrolní seznam obsahuje souhrn základní kroky nezbytné k vy
   
 ## <a name="see-also"></a>Viz také  
  [Vývoj služby starší verze jazyka](../../extensibility/internals/developing-a-legacy-language-service.md)   
- [Zápis vyhodnocovací filtr výrazů modulu CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+ [Zápis pro vyhodnocovač výrazů modulu CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 

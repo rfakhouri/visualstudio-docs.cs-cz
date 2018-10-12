@@ -1,7 +1,7 @@
 ---
 title: Funkce usnadnění programu Help Viewer | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 623e2c6514f8eddfd587848aff5fc68c29640885
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d6dee81d823c52986922d59a4e41f402db4fbd5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683285"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242128"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funkce usnadnění programu Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [funkce pro usnadnění přístupu aplikace Help Viewer](https://docs.microsoft.com/visualstudio/ide/accessibility-features-of-the-help-viewer).  
-  
 Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní použití. Toto téma obsahuje informace o funkcích, produktech a službách, které pomáhají zpřístupnit Microsoft 2.2 Prohlížeč nápovědy pro osoby s různými schopnostmi.  
   
 ## <a name="keyboard-access"></a>Použití klávesnice  

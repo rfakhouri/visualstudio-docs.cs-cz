@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Podpora včasného testování s funkcí generování před využitím | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a290eebec2c3847d41f36568196ec35935e332a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2b45b75b689279a19dc1423a0cbf2b62d14a5c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677809"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232840"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Návod: Podpora včasného testování s funkcí Generování před využitím
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: podpora včasného testování s funkcí generování z využití](https://docs.microsoft.com/visualstudio/ide/walkthrough-test-first-support-with-the-generate-from-usage-feature).  
-  
 Toto téma popisuje způsob použití [Generovat z využití](../misc/generate-from-usage.md) funkci, která podporuje vývoj s včasným testu.  
   
  *Nejprve otestovat vývoj* je přístup k softwaru návrhu, ve kterém nejprve zápis testů jednotek, které jsou založeny na specifikacích produktu a potom napsat zdrojový kód, který je potřeba provést testy úspěšné. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podporuje včasného testování vývoj vygenerováním nové typy a členy ve zdrojovém kódu při prvním odkazu je v testovacích případů, předtím, než jsou definovány.  

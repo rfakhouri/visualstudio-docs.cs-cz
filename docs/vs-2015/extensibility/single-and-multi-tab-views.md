@@ -1,7 +1,7 @@
 ---
 title: Zobrazení jedné a více karet | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84893d8465316d35098efbc99eb7ba988fcbe8d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e429add1b4b18cff84a2933601c56c7b026db15
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696377"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235999"
 ---
 # <a name="single-and-multi-tab-views"></a>Zobrazení jedné a více karet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [jeden a více karet zobrazení](https://docs.microsoft.com/visualstudio/extensibility/single-and-multi-tab-views).  
-  
 Editor lze vytvořit různé typy zobrazení. Jedním z příkladů je okno editoru kódu, další je Návrhář formulářů.  
   
  Zobrazení s kartami s více je zobrazení, které obsahuje několik karet. Například HTML editor obsahuje dvě karty v dolní části: **návrhu** a **zdroj**, každé logické zobrazení. Návrhové zobrazení se zobrazí vykreslení webové stránky, druhý zobrazuje kód HTML, který se skládá z webové stránky.  

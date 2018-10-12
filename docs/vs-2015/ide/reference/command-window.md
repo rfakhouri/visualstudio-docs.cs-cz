@@ -1,7 +1,7 @@
 ---
 title: Příkaz okno | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2f3c89e0bb6539cb4fb37293fe556451042127b4
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 0f2149c1645639111e9e050b88632ed911d1157b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248570"
 ---
 # <a name="command-window"></a>Příkazové okno
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [příkazové okno](https://docs.microsoft.com/visualstudio/ide/reference/command-window).  
-  
   
 **Příkaz** okno se používá ke spuštění příkazů nebo přímo v aliasy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrované vývojové prostředí (IDE). Můžete spustit příkazy nabídek a příkazů, které nejsou zobrazeny na jakékoliv nabídky. Pro zobrazení **příkaz** okně zvolte **ostatní Windows** z **zobrazení** nabídky a vybereme **příkazové okno**.  
   

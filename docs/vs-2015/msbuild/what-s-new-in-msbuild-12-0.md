@@ -1,7 +1,7 @@
 ---
 title: Co&#39;nového v MSBuild 12.0 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91ec9044461cf57bba8bb36a0d2e029635155c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f10fa5496795947c041482d5ae5dc7b6112da67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674914"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247393"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>Co&#39;nového v MSBuild 12.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dokumentace k sadě Visual Studio 2017](https://docs.microsoft.com/visualstudio/).  
-  
 Nástroj MSBuild je nyní nainstalován jako součást sady Visual Studio, nikoli jako součást rozhraní .NET Framework. Aktuální číslo verze nástroje MSBuild je 12.0. Pokud chcete nainstalovat nástroj MSBuild samostatně, stáhněte si instalační balíček z [MSBuild Stáhnout](http://go.microsoft.com/fwlink/?LinkId=309745).  
   
 ## <a name="changed-path"></a>Změněné cesta  

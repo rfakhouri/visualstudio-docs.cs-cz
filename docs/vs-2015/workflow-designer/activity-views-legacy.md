@@ -1,7 +1,7 @@
 ---
 title: Zobrazení aktivit (starší verze) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ef7aaa042ea358ecdf3d45b6ee75dd14cf117a01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5fb8368228118b210865b1a351d12b1b5da4b27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229307"
 ---
 # <a name="activity-views-legacy"></a>Zobrazení aktivit (starší verze)
 Řada aktivit poskytované [!INCLUDE[wf](../includes/wf-md.md)], ze které pracovní postupy se skládají, mají několik zobrazení návrhu k dispozici ve starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Při přetažení Návrhář aktivity z **nástrojů** na návrhovou plochu a po tomto datu pokaždé, když vyberete aktivitu, můžete přepínat mezi zobrazeními návrhů pomocí **pracovního postupu**nabídek nebo kliknutím pravým tlačítkem myši vybranou aktivitou. Navíc při přesunutí ukazatele myši název vybrané aktivity rozevírací seznam karet se zobrazí sada můžete přepínat mezi různá zobrazení.  

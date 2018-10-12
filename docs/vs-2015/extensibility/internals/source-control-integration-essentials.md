@@ -1,7 +1,7 @@
 ---
 title: Zdroje Essentials integrace ovládacího prvku | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 37508599b01f2639df416c56181f1c9b8672cd5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ecd87dfc4c2993023d0c882ce581280204f99d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674169"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232351"
 ---
 # <a name="source-control-integration-essentials"></a>Základy integrace správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [základy integrace správy zdrojového](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-integration-essentials).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] podporuje dva typy integrace správy zdrojového kódu: správy zdrojového kódu modulu plug-in, který poskytuje základní funkce a je vytvořená pomocí rozhraní API modulu Plug-in zdroje ovládacího prvku (dříve označované jako rozhraní API MSSCCI) a řešení pro integraci na základě balíčku VSPackage zdrojového ovládacího prvku, který poskytuje robustnější funkce.  
   
 ## <a name="source-control-plug-in"></a>Modul Plug-in správy zdrojového kódu  

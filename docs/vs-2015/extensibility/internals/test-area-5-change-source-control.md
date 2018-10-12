@@ -1,7 +1,7 @@
 ---
 title: 'Testovací oblast 5: Změna správy zdrojového kódu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5aab46b6a87f6178219075ac64951be3b76fd7a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669940"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229252"
 ---
 # <a name="test-area-5-change-source-control"></a>Testovací oblast 5: Změna správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [testovací oblast 5: změnit správu zdrojových kódů](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-5-change-source-control).  
-  
 Tento modul plug-in testu oblast správy zdrojového kódu obsahuje informace o změnou správy zdrojových kódů prostřednictvím **změnit správu zdrojových kódů** příkazu.  
   
  **Změna správy zdrojového kódu** příkaz poskytuje čtyři základní funkce pro uživatele:  

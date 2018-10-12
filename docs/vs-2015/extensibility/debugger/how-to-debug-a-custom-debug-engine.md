@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: Ladění vlastního ladicího stroje | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b7ef3385d48e07e4c5fcd9619515b650ca193d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e1bd7e2c3f05fd54829d042ec15fd59b783d238
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669696"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247231"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Postupy: Ladění vlastního ladicího stroje
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: ladění vlastních Debug Engine](https://docs.microsoft.com/visualstudio/extensibility/debugger/how-to-debug-a-custom-debug-engine).  
-  
 Typ projektu spustí ladicí stroj (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metody. To znamená, že je DE spuštění pod kontrolou instance [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] řízení typ projektu. Ale tuto instanci [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nelze ladit DE. Následují kroky, aby bylo možné ladit vaše vlastní DE.  
   
 > [!NOTE]

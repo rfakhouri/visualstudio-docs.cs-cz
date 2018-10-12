@@ -1,7 +1,7 @@
 ---
 title: Návrhář postupu provádění starší verze stavu počítače | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -21,12 +21,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: aafe537adf0a48ea38cdeb84a3461fef30cb13e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668810"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231683"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Používání starší verze návrháře postupu provádění stavového stroje
 Při vytváření nového projektu pracovního postupu stavu počítače v [!INCLUDE[vs2010](../includes/vs2010-md.md)] , zaměřuje na buď [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], můžete použít buď **Konzolová aplikace pracovního postupu stavu počítače** nebo  **Stav počítače pracovního postupu knihovny** šablony starší verzi projektu. Pokud zvolíte některou z těchto šablon projektů stavu počítače, zobrazí se jako starší verzi pracovního postupu návrháře uživatelské rozhraní návrháře stav počítače. Informace o šablonách projektů starší verze stavu počítače najdete v tématu [postupy: vytvoření stavu počítače konzolových aplikací pracovních postupů (starší verze)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) a [postupy: vytvoření knihovny stavu počítače pracovního postupu (starší verze)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  

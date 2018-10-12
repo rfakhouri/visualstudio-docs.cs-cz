@@ -1,7 +1,7 @@
 ---
 title: Vytváření a používání zásad vrácení se změnami analýzy kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2719e9ec021a1fa2c40d7afb56a4ac459542a7b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b2eb5059d5ec027654b1e4de7098c732e897088
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628494"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238352"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Vytváření a používání zásad vrácení se změnami Analýzy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytváření a používání vrácení se změnami zásad analýzy kódu](https://docs.microsoft.com/visualstudio/code-quality/creating-and-using-code-analysis-check-in-policies).  
-  
 Při použití Team Foundation verze ovládacího prvku (TFVC), můžete vytvořit zásady analýzy kódu vrácení se změnami pro rozhraní .NET Framework a nativní (C/C++) projekty kódu v týmovém projektu. Zásady analýzy kódu vrácení se změnami můžete použít k řízení a zvýšení kvality kódu, který je vrácen do báze kódu.  
   
  Zásada je aplikována úspěšně, pokud je místní sestavení aktuální a na většině nedávných zdrojových souborech byla provedena analýza kódu. Minimálně musí pravidla analýzy kódu, které jsou povoleny v projektu kódu obsahovat stejná pravidla jako ty, které jsou definovány v zásadách vrácení se změnami týmového projektu. Pravidla, která je určená jako chyby v nastavení týmového projektu musí být také zadána jako chyby v projektu kódu  

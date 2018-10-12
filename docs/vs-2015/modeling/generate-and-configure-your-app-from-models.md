@@ -1,7 +1,7 @@
 ---
 title: Generování a konfigurace aplikace z modelů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d972e56ebd434f9e302d48ce325c66320f50be74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c236a0b0896c135035d4d20eecfe5379b62522a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240640"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generování a konfigurace aplikace z modelů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vygenerovat a nakonfigurovat aplikace z modelů](https://docs.microsoft.com/visualstudio/modeling/generate-and-configure-your-app-from-models).  
-  
 Můžete vytvořit nebo nakonfigurovat částí aplikace z modelu. Model může být v UML nebo DSL.  
   
  Model představuje požadavky přímo do kódu. Odvozením chování aplikace přímo z modelu můžete reagovat na změny požadavky mnohem rychleji a spolehlivěji než podle aktualizací kódu. I když některé počáteční pracovní je nutné nastavit odvození, tyto investice je vrácena, pokud očekáváte, že změny v požadavcích, nebo pokud plánujete udělat několik variant produktu.  
@@ -33,7 +31,7 @@ Můžete vytvořit nebo nakonfigurovat částí aplikace z modelu. Model může 
   
 -   [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
--   [Generování souborů z modelu UML](../modeling/generate-files-from-a-uml-model.md)  
+-   [Generování souborů z modelu UML](../modeling/generate-files-from-a-uml-model.md)  
   
 -   [Vytváření kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md)  
   
@@ -48,7 +46,7 @@ Můžete vytvořit nebo nakonfigurovat částí aplikace z modelu. Model může 
 ## <a name="configuring-your-application-from-a-model"></a>Konfigurace vaší aplikace z modelu  
  Pokud chcete definovat různé chování vaší aplikace v době běhu, nemůžete použít generování kódu, který generuje zdrojový kód, předtím, než bude uložena zkompilovaná aplikace. Místo toho můžete navrhnout vaše aplikace se má načíst model UML nebo DSL a odpovídajícím způsobem měnit své chování. Další informace naleznete v tématu:  
   
--   [Čtení modelu UML v programovém kódu](../modeling/read-a-uml-model-in-program-code.md)  
+-   [Čtení modelu UML v programovém kódu](../modeling/read-a-uml-model-in-program-code.md)  
   
 -   [Postupy: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   

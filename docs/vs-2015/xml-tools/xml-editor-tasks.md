@@ -1,7 +1,7 @@
 ---
 title: Úlohy v editoru XML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9a6053732a067aa76b5b632c7a9197e5f4f75957
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e60a3c478da3e9c54dc0a43643305719c69d2fe0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674314"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241186"
 ---
 # <a name="xml-editor-tasks"></a>Úlohy v editoru XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [úlohy v editoru XML](https://docs.microsoft.com/visualstudio/xml-tools/xml-editor-tasks).  
-  
   
 Tato část popisuje běžné úkoly pomocí editoru XML.  
   

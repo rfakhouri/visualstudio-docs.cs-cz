@@ -1,7 +1,7 @@
 ---
 title: Vytváření projektů a řešení | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee777b8b1d2664fbaa284033f21624238d5cf456
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631481"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248531"
 ---
 # <a name="creating-solutions-and-projects"></a>Vytváření řešení a projektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytvářet řešení a projekty](https://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects).  
-  
 Projekty jsou logické kontejnery pro všechno, co potřebujete k sestavení aplikace. Při vytváření projektu výběrem **souboru &#124; nový &#124; projektu** v hlavní nabídce [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vytvoří řešení, které ho obsahuje. Potom přidáte další nové nebo existující projekty do řešení v případě potřeby. Můžete vytvářet projekty z existujících souborů kódu a můžete vytvořit dočasné projekty (pouze .NET), který bude odstraněn, až budete hotovi s nimi.  
   
 > [!NOTE]

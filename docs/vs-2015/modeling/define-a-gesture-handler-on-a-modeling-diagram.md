@@ -1,7 +1,7 @@
 ---
 title: Definování obslužné rutiny gest v diagramu modelování | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8afc13a03fcff51eaad0507af753f3a434eac093
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248073"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definování obslužné rutiny gest v diagramu modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [definování obslužné rutiny gest v diagramu modelování](https://docs.microsoft.com/visualstudio/modeling/define-a-gesture-handler-on-a-modeling-diagram).  
-  
 V sadě Visual Studio můžete definovat příkazy, které jsou prováděny, když uživatel dvakrát klikne nebo přetáhne položky do diagramu UML. Tato rozšíření můžete zabalit do rozšíření integrace Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) a distribuovat ho ostatním uživatelům aplikace Visual Studio.  
   
  Pokud je již vestavěné chování pro typ diagramu a typ prvku, který chcete přetáhnout, možná budete moci přidat nebo přepsat toto chování.  

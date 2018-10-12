@@ -1,7 +1,7 @@
 ---
 title: Pracovní prostor návrháře schémat XML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22515ffe0e195006f1080738fc5b0686e647d5ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae20cd6a2eb8a4e3d8c1869cc4a0c707ccdf6de2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627668"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240952"
 ---
 # <a name="xml-schema-designer-workspace"></a>Pracovní prostor Návrháře schémat XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pracovní prostor návrháře schémat XML](https://docs.microsoft.com/visualstudio/xml-tools/xml-schema-designer-workspace).  
-  
   
 Návrhář schématu XML (XSD Designer) je grafický nástroj, který umožňuje zkoumat vaše schémat XML. Kromě [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md), která umožňuje procházet a procházet stromu XML schéma a provádět vyhledávání, Návrhář XSD poskytuje tři zobrazení, které vám umožní prozkoumat podrobněji schéma XSD. Počáteční zobrazení je výchozím bodem pro návrháře XSD; ze zobrazení spuštění můžete přejít na další zobrazení návrháře XSD a prohlédněte si podrobnosti o sadě schémat. Zobrazení grafu umožňuje vidíte Přehled schématu nastavení a vztahy mezi uzly schématu. Zobrazení modelu obsahu poskytuje grafické znázornění podrobnosti uzlů místní a globální schémat, včetně jednoduché a komplexní typy prvků, skupiny, atributy a skupiny atributů.  
   

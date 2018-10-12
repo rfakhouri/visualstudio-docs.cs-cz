@@ -1,7 +1,7 @@
 ---
 title: Určení, které Editor otevře soubor v projektu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b144b9d380e652857b08733e48d43b5b7609ffd6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba2241a8c8572b46dab0d4df1776f65ab8f10d67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670698"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241030"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Určení editoru, který otevře soubor v projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [určující, které Editor otevře soubor v projektu](https://docs.microsoft.com/visualstudio/extensibility/internals/determining-which-editor-opens-a-file-in-a-project).  
-  
 Když uživatel otevře soubor v projektu, prostředí prochází proces dotazování, nakonec otevřete příslušné editoru nebo návrháře pro tento soubor. Počáteční postup náhradník prostředí je stejný pro standardních a vlastních editorů. Prostředí používá celou řadu kritéria při dotazování které editor k použití pro otevření souboru a sady VSPackage se muset domluvit se prostředí během tohoto procesu.  
   
  Když uživatel například vybere **otevřít** příkaz **souboru** nabídky a následně klikne `filename`RTF (nebo jakýkoli jiný soubor s příponou .rtf) volání prostředí <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> implementace pro každý projekt, nakonec procházením všechny instance projektu v řešení. Projekty vrátit sadu příznaků, které identifikují deklarací identity v dokumentu podle priority. Pomocí nejvyšší prioritou, prostředí volá odpovídající <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> metody. Další informace o procesu dotazování [přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md).  

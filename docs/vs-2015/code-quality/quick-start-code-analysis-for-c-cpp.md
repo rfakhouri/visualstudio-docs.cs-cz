@@ -1,7 +1,7 @@
 ---
 title: 'Rychlý Start: Analýza kódu pro C / C++ | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97e3aa842a2ebb19492370836058ec2236a44564
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667258"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241771"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Rychlé zahájení: Analýza kódu pro C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [rychlý Start: Code Analysis for C/C++](https://docs.microsoft.com/visualstudio/code-quality/quick-start-code-analysis-for-c-cpp).  
-  
 Zlepšit kvalitu vaší aplikace při spuštění analýzy kódu pravidelně na kód jazyka C nebo C++. To může pomoct najít běžné problémy, porušování programovacím vhodné nebo chyb, které je obtížné vyhledat pomocí testování. Upozornění analýzy kódu se liší od kompilátoru chyby a upozornění, protože analýza kódu hledá vzory v konkrétním kódu, které jsou platné, ale přesto vytvořit problémy pro vy nebo ostatní uživatelé, kteří používají váš kód.  
   
 ## <a name="in-this-topic"></a>V tomto tématu  

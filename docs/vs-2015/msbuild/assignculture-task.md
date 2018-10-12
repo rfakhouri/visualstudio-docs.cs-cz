@@ -1,7 +1,7 @@
 ---
 title: Assignculture – úloha | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ee44937f48101454a00128405fb03ce4260de4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c35d949f2d3cf3924a63ce6db0e596af1fccddbd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627680"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235648"
 ---
 # <a name="assignculture-task"></a>AssignCulture – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [assignculture – úloha](https://docs.microsoft.com/visualstudio/msbuild/assignculture-task).  
-  
   
 Tento úkol přijímá seznam položek, které mohou obsahovat platný řetězec identifikátor jazykové verze .NET jako součást názvu souboru a vytvoří položky, které mají metadat s názvem `Culture` obsahuje odpovídající jazykovou verzi identifikátor. Například má název souboru Form1.fr-fr.resx vložený jazykovou verzi identifikátor "fr-fr", takže tento úkol vytvoří položka, která má stejný název souboru s metadaty `Culture` rovna `fr-fr`. Úloha také vytvoří seznam názvů souborů pomocí jazykové verze odebrána z názvu souboru.  
   

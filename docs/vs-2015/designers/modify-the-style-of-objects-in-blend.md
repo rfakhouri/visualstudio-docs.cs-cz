@@ -1,7 +1,7 @@
 ---
 title: Úpravy stylu objektů v Blendu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e6205eea283bec68a3fbbf5c95a5bac36fdbaee9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675589"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240147"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Úpravy stylu objektů v Blendu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [úpravy stylu objektů v Blendu](https://docs.microsoft.com/visualstudio/designers/modify-the-style-of-objects-in-blend).  
-  
 Nejjednodušší způsob, jak přizpůsobit objektu je můžete nastavit vlastnosti **vlastnosti** podokně.  
   
  Pokud chcete znovu použít nastavení nebo skupiny nastavení, vytvoření opakovaně použitelné prostředku. Může se jednat *styl*, *šablony*, nebo je příčina prostá, jako jsou vlastní barvy. Můžete provést také ovládací prvek zobrazí odlišně v závislosti na jeho stavu. Například tlačítko se změní na zelenou když na něj uživatel klikne.  

@@ -1,7 +1,7 @@
 ---
 title: Platformy sestavení Principy | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7470e082fa7f3877464081c01e7969f786f0b219
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a25dd219a7fc2f99a75ad7b8a6a1e94cd82e2ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667144"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246829"
 ---
 # <a name="understanding-build-platforms"></a>Principy platforem sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Principy platforem sestavení](https://docs.microsoft.com/visualstudio/ide/understanding-build-platforms).  
-  
 Můžete ukládat různé verze řešení a projektu vlastnosti, které se vztahují na jiné cílové platformy. Můžete třeba vytvořit konfiguraci ladění, který se zaměřuje x86 platformu a konfiguraci ladění, který se zaměřuje x64 platformy. Můžete rychle změnit aktivní platformu, takže budete moci snadno vytvořit více konfigurací.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  

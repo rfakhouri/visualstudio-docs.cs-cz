@@ -1,7 +1,7 @@
 ---
 title: Přehled výkonnostní relace | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da90a5ae4e35f36306e8537ca2cd743e98ffd33f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668702"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242811"
 ---
 # <a name="performance-session-overview"></a>Přehled výkonnostní relace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přehled výkonnostní relace](https://docs.microsoft.com/visualstudio/profiling/performance-session-overview).  
-  
 Tento přehled popisuje základní informace o vytváření profilů. Vývojáři, kteří teprve začínáte pracovní výkonu se zobrazí jak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jim být tak produktivní rychle a zvýšit výkon jejich kód mohou pomoci nástroje pro profilaci. Vývojáři, kteří mají zkušenosti s profilace můžete získat přehled o konkrétních nástrojů pro profilaci sady funkcí a procesy.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profilace nástroje vám pomůžou identifikovat problémy s výkonem ve zdrojovém kódu a porovnat výkon jednotlivých řešení. Profilace průvodcích nástroje a nastavení výchozí vám může poskytnout okamžitý přehled o mnoho problémů s výkonem. Funkce a možnosti nástrojů pro profilaci poskytují přesnou kontrolu nad procesu profilace. Tento ovládací prvek obsahuje přesné cílení na části kódu, shromažďování informací o časování blokových a zahrnutí další data o výkonu procesoru a systému ve vašich datech.  

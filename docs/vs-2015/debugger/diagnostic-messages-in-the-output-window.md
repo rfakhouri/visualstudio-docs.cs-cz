@@ -1,7 +1,7 @@
 ---
 title: Diagnostické zprávy v okně výstupu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0a9e0bb4fa34133937e39b310cb05360e66a443
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72d9da2ea3ab6cb9807fc7e0a668155d37110c3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677488"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246782"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>Diagnostické zprávy v okně Výstup
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [diagnostické zprávy v okně výstupu](https://docs.microsoft.com/visualstudio/debugger/diagnostic-messages-in-the-output-window).  
-  
 Můžete napsat zpráv za běhu do okna výstup pomocí třídy ladění a trasování, které jsou součástí <xref:System.Diagnostics> knihovny tříd. Pokud pouze výstup v ladicí verzi programu používejte třídu ladění. Použijte trasovací třídu, pokud chcete výstup v ladění i vydání verze.  
   
 ## <a name="output-methods"></a>Výstup metody  

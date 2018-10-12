@@ -1,7 +1,7 @@
 ---
 title: 'Diagramy vrstev: Referenční | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85024000e0cb4be7f9828052c6bc9194d498ab30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668565"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248310"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramy vrstev: Referenční dokumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [diagramy závislostí: referenční](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-reference).  
-  
 V sadě Visual Studio, můžete použít *diagram vrstev* můžete vizualizovat vysoké úrovně, logickou architekturu systému. Diagram vrstev slouží k uspořádání fyzické artefaktů ve vašem systému do logických, abstraktních skupin nazvaných *vrstvy*. Tyto vrstvy popsat hlavní úlohy, které tyto artefakty provádějí nebo hlavní součásti systému. Každá vrstva může také obsahovat vnořené vrstvy, které popisují podrobnější úlohy.  
   
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -60,7 +58,7 @@ V sadě Visual Studio, můžete použít *diagram vrstev* můžete vizualizovat 
   
  Následující tabulka popisuje prvky, které můžete použít na diagramu vrstvy.  
   
-|**Obrazec**|**– Element**|**Popis**|  
+|**Obrazec**|**Element**|**Popis**|  
 |---------------|-----------------|---------------------|  
 |1|**Vrstvy**|Logické skupiny fyzické artefaktů ve vašem systému. Tyto artefakty mohou být obory názvů, projekty, třídy, metody a tak dále.<br /><br /> Chcete-li zobrazit artefakty, které jsou propojeny s vrstvou, otevřete místní nabídku vrstvy a klikněte na tlačítko **zobrazit odkazy** otevřete **Průzkumník vrstev**.<br /><br /> Další informace najdete v tématu [Průzkumník vrstev](#Explorer).<br /><br /> -   **Je zakázané závislosti Namespace** – Určuje, že artefakty přidružené k této vrstvě nemůže záviset na zadaných oborů názvů trasy.<br />-   **Je zakázané obory názvů** – Určuje, že artefakty přidružené k této vrstvě nesměly patřit zadanému oboru názvů.<br />-   **Požadované obory názvů** – Určuje, že artefakty přidružené k této vrstvě musí patřit do jedné ze zadaných oborů názvů trasy.|  
 |2|**Závislost**|Označuje, že jedna vrstva může použít funkci v jiné vrstvě, ale ne naopak.<br /><br /> -   **Směr** -Určuje směr závislost.|  
@@ -79,9 +77,9 @@ V sadě Visual Studio, můžete použít *diagram vrstev* můžete vizualizovat 
   
  Další informace o propojení vrstvami a artefakty naleznete v tématu:  
   
--   [Diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md)  
+-   [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)  
   
--   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)  
   
 #### <a name="to-examine-the-linked-artifacts"></a>Prozkoumat propojených artefaktů  
   

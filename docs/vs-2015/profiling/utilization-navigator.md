@@ -1,7 +1,7 @@
 ---
 title: Navigátor využití | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9458e57d210b9f0b7d822cbf56555776a6ddf29
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 55a5c6eada52cead60abb830a5a873cc71cac194
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879726"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238586"
 ---
 # <a name="utilization-navigator"></a>Navigátor využití
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Navigátor využití](https://docs.microsoft.com/visualstudio/profiling/utilization-navigator).  
-  
 Navigátor využití ve vizualizátoru souběžnosti můžete použít k výběru časový interval v trasování. Vizualizátor souběžnosti zobrazí využití jader procesoru cílového procesu v průběhu času. To usnadňuje prozkoumat vzory využití procesoru a také umožňuje srovnání využití dat a dat v ostatních zobrazeních. Navigátor využití se zobrazí v horní části každé zobrazení ve vizualizátoru souběžnosti. Následující obrázek znázorňuje Navigátor využití.  
   
  ![Navigátor využití zobrazuje vybraný časový rámec](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  

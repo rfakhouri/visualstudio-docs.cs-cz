@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vytvoření. Vsct soubor z existující. Soubor technologický ředitel | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 847717c9-477d-4ac9-8b2c-2da878912478
 caps.latest.revision: 11
 manager: douge
-ms.openlocfilehash: e77ebf34cd56cee80040009cff3ebb2fee9befac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 82cf711d33b3b3ca5150378e7111a2a21c8c03cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774679"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235739"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Postupy: vytvoření. Vsct soubor z existující. Soubor technický ředitel
 Můžete vytvořit souboru .vsct založený na formátu XML z existujícího .cto binárního souboru. To umožňuje využít výhod nového příkazu formát tabulky kompilátoru. Tento proces funguje i v případě, že soubor .cto byl zkompilován ze souboru .ctc. Můžete upravovat a kompilovat souboru .vsct do jiného souboru .cto.  

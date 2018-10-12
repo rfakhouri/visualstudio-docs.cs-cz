@@ -1,7 +1,7 @@
 ---
 title: Aplikace spustit Store ze sady Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 697ee8f4a3c9b796e5270e2a48a9786b657b3636
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f16b0d6dc3d1f4f37119826d841aaef1cd8871b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627912"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249520"
 ---
 # <a name="run-store-apps-from-visual-studio"></a>Spouštění aplikací pro Store ze sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [aplikace spustit Store ze sady Visual Studio](https://docs.microsoft.com/visualstudio/debugger/run-store-apps-from-visual-studio).  
-  
 Store aplikace běží na široké škále zařízení a sady Visual Studio nabízí několik způsobů, jak spustit a pracovat s těmito aplikacemi. Prostředí "F5" je rozšířený o usnadňují ladění, profilování a testování aplikací během vývoje.  
   
  ![Spusťte degugging a vyberte cíl](../debugger/media/vsrun-dropdownlist.png "VSRUN_DropDownList")  

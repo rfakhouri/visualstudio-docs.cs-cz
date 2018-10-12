@@ -1,7 +1,7 @@
 ---
 title: Procházení vztahů pomocí rozhraní API UML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ae6da2980c55df6eb58686fcdb2c364b9147779
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2d4365cefc33b81f8df3891b860e254c7dc6b8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666530"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242499"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Procházení vztahů pomocí rozhraní API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [procházení vztahů pomocí rozhraní API UML](https://docs.microsoft.com/visualstudio/modeling/navigate-relationships-with-the-uml-api).  
-  
 Model se skládá z prvků, které jsou spojeny různé druhy vztahů. Toto téma popisuje, jak procházení modelu v programovém kódu.  
   
 ## <a name="traversing-relationships"></a>Překračování vztahů  

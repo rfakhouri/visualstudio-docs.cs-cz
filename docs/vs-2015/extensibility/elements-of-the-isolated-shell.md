@@ -1,7 +1,7 @@
 ---
 title: Prvky izolovaného prostředí | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9edba9d02b0c02321cd468cdc75630be92d53fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672559"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246048"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Prvky izolovaného prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [prvky izolovaného prostředí](https://docs.microsoft.com/visualstudio/extensibility/elements-of-the-isolated-shell).  
-  
 Můžete upravit nastavení registru, nastavení za běhu a vstupní bod aplikace izolovaného prostředí aplikace a jeho .vsct, .pkgdef, and.pkgundef soubory.  
   
 ## <a name="registry-settings"></a>Nastavení registru  

@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: zahájení a ukončení shromažďování dat o výkonu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7c7848f8bb45ae9c97dacdd75c42e8345646e5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e6d98a8a72c28bc3e70a3b6b0f0d55ce74522cb7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669909"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229694"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>Postupy: zahájení a ukončení shromažďování dat výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: spuštění a ukončení shromažďování dat výkonu](https://docs.microsoft.com/visualstudio/profiling/how-to-start-and-end-performance-data-collection).  
-  
 Je nutné přidat cílový binární soubor, který chcete Profilovat, do relace výkonu, před zahájením profilování. Chcete-li přidat cíl, klikněte pravým tlačítkem na **cíle** v **prohlížeč výkonu**a potom klikněte na tlačítko **přidat cílový binární**. V **přidat cílový binární** dialogové okno, vyberte název souboru a pak klikněte na tlačítko **otevřít**. Přidání nové binární soubor.  
   
 ### <a name="to-start-profiling"></a>Chcete-li spustit profilování  
@@ -49,7 +47,7 @@ Je nutné přidat cílový binární soubor, který chcete Profilovat, do relace
   
 ## <a name="see-also"></a>Viz také  
  [Řízení sběru dat](../profiling/controlling-data-collection.md)   
- [Postupy: pozastavení a pokračování shromažďování dat výkonu](../profiling/how-to-pause-and-resume-performance-data-collection.md)
+ [Postupy: Pozastavení a opětovné spuštění shromažďování údajů o výkonu](../profiling/how-to-pause-and-resume-performance-data-collection.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Karta výstup, dialogové okno možností zpráv | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48e2e8d33df976944259f431430bb3e491a1acf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f4604754dcbb0d250fb14188a2fa3cc889a03f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629648"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247978"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Karta Výstup, dialogové okno možností zpráv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [karta výstup, dialogové okno možností zpráv](https://docs.microsoft.com/visualstudio/debugger/output-tab-message-options-dialog-box).  
-  
 Použití **výstup** kartu a určit, jaká data z každé zprávy do seznamu v [zobrazení zpráv](../debugger/messages-view.md). Chcete-li zobrazit [dialogové okno možností zpráv](../debugger/message-options-dialog-box.md), zvolte **zprávy protokolu** z **Spy** nabídky.  
   
  Následující nastavení jsou k dispozici na **výstup** kartu:  

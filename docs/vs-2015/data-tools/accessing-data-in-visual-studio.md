@@ -1,7 +1,7 @@
 ---
 title: Přístup k datům v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 452e7dbc1f151bc39791e04d708eaf1cf870b4cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eacf075a0ba8689ff0cb5ca822d5cc8ca2f7ad1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667375"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233899"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přístup k datům v sadě Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio).  
-  
   
 V sadě Visual Studio můžete vytvářet aplikace, které se připojují k datům v téměř jakoukoli databázový produkt nebo službu, v libovolném formátu, kdekoli – v místním počítači, v místní síti, nebo veřejné, privátní nebo hybridní cloud.  
   
@@ -125,7 +123,7 @@ V sadě Visual Studio můžete vytvářet aplikace, které se připojují k dat�
  Nainstalujte [Python Tools for Visual Studio](http://microsoft.github.io/PTVS/) spolu s vaší oblíbené platformě Python k vytvoření aplikací CPython, IronPython (.NET).  Nástroje Pythonu pro Visual Studio web má několik kurzy o připojení k datům, včetně [Django a SQL Database v Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django a MySQL v Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) a [Bottle a MongoDB v Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Instalace systémů databází, nástroje a ukázky](../data-tools/installing-database-systems-tools-and-samples.md)  
+ [Instalace databázových systémů, nástrojů a ukázek](../data-tools/installing-database-systems-tools-and-samples.md)  
  Tento článek popisuje, jak získat databáze produkty a rozšíření sady Visual Studio nebo ovladače, které je podporují a kde najít ukázkové databáze pro služby experimentování ve službě a výukové účely.  
   
  [Visual Studio Data Tools for .NET](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1)  

@@ -1,7 +1,7 @@
 ---
 title: Typy prvků modelu UML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5b8cb26c6e3d6cd51d087454d0b0c0700c1793db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 782485523cd5c80e61032eafc575c111592895b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677360"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252379"
 ---
 # <a name="uml-model-element-types"></a>Typy prvků modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [typy prvků modelu UML](https://docs.microsoft.com/visualstudio/modeling/uml-model-element-types).  
-  
 Může číst a pracovat s modelu UML pomocí programovacího rozhraní. Toto téma shrnuje hierarchie typů prvků. Hierarchie je stejný jako definovaných ve specifikaci UML.  
   
  Podrobnosti o jednotlivých typů jsou k dispozici v [Reference k rozhraní API pro rozšíření modelování UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
@@ -202,7 +200,7 @@ Classes.IElement
 ## <a name="see-also"></a>Viz také  
  [Definování profilu pro rozšíření UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Definování omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md)   
- [Reference k rozhraní API pro rozšíření modelování UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
+ [Referenční dokumentace k rozhraní API pro rozšíření modelování UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
 
 
 

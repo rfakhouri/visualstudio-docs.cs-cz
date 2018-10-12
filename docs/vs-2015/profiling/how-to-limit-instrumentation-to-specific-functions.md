@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: omezení instrumentace na konkrétní funkce | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab089bd02fafc4dc711fa01c49a9690bbd9f6a65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0432a3e07d10db9daa03395f182836726bdf753
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672063"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249181"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Postupy: Omezení instrumentace na konkrétní funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: omezení instrumentace na konkrétní funkce](https://docs.microsoft.com/visualstudio/profiling/how-to-limit-instrumentation-to-specific-functions).  
-  
 Instrumentace a shromažďování dat na jeden nebo více funkcí můžete omezit tím, že nastavíte možnosti **Upřesnit** stránku **relace výkonu** nebo cílové stránky binárních vlastností:  
   
 -   Pokud zadáte na stránce vlastností relace výkonu funkce, jsou podporovány pouze funkce, v instrumentovaných binárních souborů relace.  
@@ -78,7 +76,7 @@ Instrumentace a shromažďování dat na jeden nebo více funkcí můžete omezi
 ## <a name="see-also"></a>Viz také  
  [Řízení sběru dat](../profiling/controlling-data-collection.md)   
  [Postupy: omezení instrumentace na konkrétní knihovny DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
- [Postupy: určení dalších možností instrumentace](../profiling/how-to-specify-additional-instrumentation-options.md)
+ [Postupy: Určení dalších možností instrumentace](../profiling/how-to-specify-additional-instrumentation-options.md)
 
 
 

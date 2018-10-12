@@ -1,7 +1,7 @@
 ---
 title: MSSCCPRJ. Soubor SCC | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a3387d5563cee60149c8d59a0d7f7179c211a10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a220dbbf80320603b997f03ca16db58dd2865be0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671405"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246022"
 ---
 # <a name="mssccprjscc-file"></a>Soubor MSSCCPRJ.SCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [MSSCCPRJ. Soubor SCC](https://docs.microsoft.com/visualstudio/extensibility/mssccprj-scc-file).  
-  
 Visual Studio řešení nebo projektu při umístění pod správou zdrojového kódu pomocí rozhraní IDE, rozhraní IDE obdrží dvou důležitých informací ze správy zdrojového kódu ve formě řetězce modulu plug-in. Tyto řetězce "AuxPath" a "Název_projektu", jsou neprůhledné rozhraní IDE, ale používají se modul plug-in provede najít řešení nebo projektu ve správě verzí. Rozhraní IDE obvykle získá tyto řetězce při prvním voláním [sccgetprojpath –](../extensibility/sccgetprojpath-function.md), a pak ukládá je do souboru řešení nebo projektu pro budoucí volání [sccopenproject –](../extensibility/sccopenproject-function.md). Když je vložená v soubory řešení a projektu, řetězce "AuxPath" a "Název_projektu" se neaktualizují automaticky, když uživatel větve, větve, nebo zkopíruje soubory řešení a projektu, které jsou ve správě verzí. Pokud chcete mít jistotu, že soubory řešení a projektu, přejděte na jejich správné umístění ve správě verzí, musí uživatelé ručně aktualizujte řetězce. Vzhledem k tomu, že řetězce mají být neprůhledný, nemusí být vždy jasné jak by měly být aktualizovány.  
   
  Plug-in správy zdrojových kódů se ukládání řetězců "AuxPath" a "Název_projektu" ve speciální soubor s názvem MSSCCPRJ vyhnout tomuto problému. SCC souboru. Je na straně klienta, místní soubor, který vlastní a spravuje pomocí modulu plug-in. Tento soubor je nikdy umístěn pod správou zdrojových kódů, ale generuje modul plug-in pro každý adresář, který obsahuje soubory se spravovanými zdroji. Pokud chcete zjistit, které soubory jsou soubory řešení a projektu sady Visual Studio, modul plug-in správy zdrojového kódu můžete porovnat standardní nebo uživatelem zadaný seznam přípon souborů. Jakmile IDE zjistí, že podporuje modul plug-in MSSCCPRJ. Soubor SCC přestane vložit "AuxPath" a "Název_projektu" řetězců do řešení a soubory projektu a jeho načteme MSSCCPRJ těchto řetězců. SCC souboru místo toho.  

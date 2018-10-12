@@ -1,7 +1,7 @@
 ---
 title: Vytvoření vazby objektů v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b01d2b539de19a8b04075bb83c7ee71ca17a644d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da31c33288489c3dbaef8a51b5c3fe2fe96d818b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669765"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241498"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Vytvoření vazby objektů v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [svázat objekty v sadě Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/bind-objects-in-visual-studio).  
-  
   
 Visual Studio poskytuje nástroje návrhu pro práci s vlastní objekty jako zdroj dat ve vaší aplikaci. Pokud chcete ukládat data z databáze v objektu, který svázat ovládací prvky uživatelského rozhraní, doporučený postup je mohli použít ke generování třídy nebo třídy rozhraní Entity Framework. Entity Frameworkautogenerates všechny často používaný text sledování změn kódu, což znamená, že jakékoli změny místní objekty jsou automaticky ukládají do databáze při volání metoda AcceptChanges DbSet objektu.    Další informace najdete v tématu [dokumentace Entity Framework](https://ef.readthedocs.org/en/latest/).  
   

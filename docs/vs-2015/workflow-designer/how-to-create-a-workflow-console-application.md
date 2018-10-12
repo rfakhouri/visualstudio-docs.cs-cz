@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vytvoření konzolové aplikace pracovního postupu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 8a6b38f6026e7a9bba1e668f47a37b32feaa2b7f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad509e0e57f2c8996c13ffbe1d8f8890d2954dec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251664"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Postupy: vytvoření konzolové aplikace pracovního postupu
 [!INCLUDE[wf](../includes/wf-md.md)] umožňuje vytvářet pracovní postupy pro spouštění systému nebo lidské procesy. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Poskytuje na návrhovou plochu pro vytváření těchto pracovních postupů. [!INCLUDE[wfd2](../includes/wfd2-md.md)] Slouží k vytváření pracovních postupů v rámci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nebo je možné integrovat do jiných aplikací, které změna hostitele návrháře.  

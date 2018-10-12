@@ -1,7 +1,7 @@
 ---
 title: Idiastackwalkframe::get_registervalue – | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f8ff950d5a798494bdf051a8b6ccd6b7be8df18
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2eebf923223f71a630e442b5eccf7c73a7f65ad8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241368"
 ---
 # <a name="idiastackwalkframegetregistervalue"></a>IDiaStackWalkFrame::get_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [idiastackwalkframe::get_registervalue –](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalkframe-get-registervalue).  
-  
 Načte hodnotu registru.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -53,7 +51,7 @@ HRESULT get_registerValue (
   
 ## <a name="see-also"></a>Viz také  
  [Idiastackwalkframe –](../../debugger/debug-interface-access/idiastackwalkframe.md)   
- [Cv_hreg_e – výčet](../../debugger/debug-interface-access/cv-hreg-e.md)
+ [CV_HREG_e – výčet](../../debugger/debug-interface-access/cv-hreg-e.md)
 
 
 

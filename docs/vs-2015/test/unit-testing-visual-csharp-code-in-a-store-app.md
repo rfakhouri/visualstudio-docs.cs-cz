@@ -1,7 +1,7 @@
 ---
 title: Testování jednotek kódu jazyka Visual C# v aplikaci Store | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: e85326210049b96b37868f2e0cc78b6c71e91cc2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 593ef51a9c9462253c77a9ca91d3d5460cd65f5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696500"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245437"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Testování jednotek kódu jazyka Visual C# v Store app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [testování jednotek kódu jazyka Visual C# v aplikaci Store](https://docs.microsoft.com/visualstudio/test/unit-testing-visual-csharp-code-in-a-store-app).  
-  
 Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro třídy Visual C# v aplikaci Windows Store. Třída Rooter ukazuje vágní paměti limit teorie z calculus implementací funkce, která vypočítá odhad odmocninu daného čísla. Matematické výrazy aplikace pak pomocí této funkce můžete zobrazit uživateli zábavných věcí, které lze provést s matematickým výrazem.  
   
  Toto téma ukazuje, jak používat jako první krok při vývoji testování částí. V takovém případě napíšete testovací metoda, která ověřuje konkrétní chování v systému, který testujete a potom napíšete kód, který projde testem. Tím, že změny v pořadí podle následujících postupů lze zrušit tuto strategii první zapisovat kód, který chcete otestovat a teprve pak píšete jednotkové testy.  

@@ -1,7 +1,7 @@
 ---
 title: BscMake – úloha | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c3ae418c8448fc2ebe4f5b2af0a8c713458988fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 92f346bdab454e04f7df16ea39e42668da33d451
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673208"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243214"
 ---
 # <a name="bscmake-task"></a>BscMake – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [BscMake – úloha](https://docs.microsoft.com/visualstudio/msbuild/bscmake-task).  
-  
   
 [DŮLEŽITÉ]
 >  BscMake – se již nepoužívá v integrovaném vývojovém prostředí sady Visual Studio. Od verze Visual Studio 2008 je automaticky uložené informace o procházení v souboru .sdf ve složce řešení.  

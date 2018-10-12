@@ -1,7 +1,7 @@
 ---
 title: Porozumění SAL | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae6b16cc7f69aaf365188c488416d35402de9ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7551b507a90ffb5bba6a969029e4c53092f3db1c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633358"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253250"
 ---
 # <a name="understanding-sal"></a>Porozumění SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [porozumění SAL](https://docs.microsoft.com/visualstudio/code-quality/understanding-sal).  
-  
 Poznámka jazyk zdrojového kódu Microsoft (SAL) poskytuje sadu poznámky, které můžete použít k popisu, jak funkce používá parametry, předpokladů, které usnadňuje jejich a záruky, které provede po dokončení. Poznámky jsou definována v hlavičkovém souboru `<sal.h>`. Visual Studio analýzy kódu pro jazyk C++ využívá anotací SAL k úpravě jeho analýzy funkce. Další informace o SAL 2.0 k vývoji ovladačů Windows najdete v tématu [poznámky SAL 2.0 pro Windows ovladače](http://go.microsoft.com/fwlink/?LinkId=250979).  
   
  Pouze omezené možnosti pro vývojáře konzistentně vyjádřit záměr a invariance poskytují nativně, C a C++. S použitím poznámky SAL, můžete popsat funkce podrobněji tak, aby vývojáři, kteří jsou jejich používáním můžete lépe pochopit, jak je používat.  
@@ -425,7 +423,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [Zadávání poznámek ke strukturám a třídám](../code-quality/annotating-structs-and-classes.md)   
  [Zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md)   
  [Určení, kdy a kde se má poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [Osvědčené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
+ [Doporučené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
 
 
 

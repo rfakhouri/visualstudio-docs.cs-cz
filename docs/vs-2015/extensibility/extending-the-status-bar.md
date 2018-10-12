@@ -1,7 +1,7 @@
 ---
 title: Rozšíření stavového řádku | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc9a691b3ee8955f7fad33c84d7d0d40652e6a8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8ea7854bb90564f68a7f178ceda7b561b123dce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670393"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244735"
 ---
 # <a name="extending-the-status-bar"></a>Rozšíření stavového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [rozšíření stavového řádku](https://docs.microsoft.com/visualstudio/extensibility/extending-the-status-bar).  
-  
 Stavový řádek sady Visual Studio můžete v dolní části rozhraní IDE zobrazíte informace.  
   
  Když rozšíříte stavového řádku, můžete zobrazit informace a uživatelské rozhraní ve čtyřech oblastech: oblast zpětnou vazbu, indikátor průběhu, animace oblasti a oblasti návrháře. Oblast zpětné vazby umožňuje zobrazit text a zvýraznit zobrazovaného textu. Indikátor průběhu vám ukáže přírůstkového pokroku krátce běžící operací, jako je například ukládání souboru. Animace oblasti zobrazí animace průběžně opakuje pro dlouho běžící operace nebo operace neurčeném délky, jako je například sestavování více projektů v řešení. A návrháře oblasti zobrazuje spojnicový a sloupcový počet umístění kurzoru.  

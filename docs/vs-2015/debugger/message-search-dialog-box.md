@@ -1,7 +1,7 @@
 ---
 title: Dialogové okno hledání zpráv | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ca8eed2caa106b1c528da80ea4c5e2eb4497cc0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2466efee1232f244a01215db5e8495936de2868a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668936"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237039"
 ---
 # <a name="message-search-dialog-box"></a>Dialogové okno hledání zpráv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dialogové okno hledání zpráv](https://docs.microsoft.com/visualstudio/debugger/message-search-dialog-box).  
-  
 Pomocí tohoto dialogového najděte a vyberte uzel pro konkrétní zprávu v [zobrazení zpráv](../debugger/messages-view.md). Chcete-li zobrazit toto dialogové okno, přesunutí výběru na okno pro zobrazení zprávy. Klikněte na tlačítko **najít zprávu** z **hledání** nabídky.  
   
  K dispozici jsou následující nastavení:  

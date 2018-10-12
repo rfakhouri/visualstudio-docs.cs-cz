@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Ruční nasazení aplikace ClickOnce, která nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 85453b899501d83191016bde0edd40b4e2a96d94
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 2d6531a94a99e2a1c24d80e9f326d23fcc6c4ec3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231178"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252990"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Návod: Ruční nasazení aplikace ClickOnce, jež nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: Ruční nasazení aplikace ClickOnce, která nevyžaduje opětovné podepsání a zachová značky informací](https://docs.microsoft.com/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information).  
-  
 Když vytvoříte [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace a pak mu přidělte zákazníkovi k publikování a nasazení, zákazník tradičně museli aktualizovat manifest nasazení a znovu podepsat. Který je stále upřednostňuje ve většině případů, rozhraní .NET Framework 3.5 vám umožní vytvořit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení, která je možné nasadit pomocí zákazníky bez nutnosti znovu vygenerovat nový manifest nasazení. Další informace najdete v tématu [nasazení ClickOnce aplikace pro testování a produkční servery bez Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
   
  Když vytvoříte [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace a pak mu přidělte zákazníkovi k publikování a nasazení, aplikace můžete použít značky zákazníka nebo můžete zachovat brandingu. Pokud aplikace je jednou vlastní aplikací, můžete chtít zachovat brandingu. Pokud aplikace je velmi upravili pro každého zákazníka, můžete chtít použít značky zákazníka. Rozhraní .NET Framework 3.5 umožňuje zachovat branding, informace o vydavateli a podpis zabezpečení při nasazení aplikace organizace. Další informace najdete v tématu [vytváření aplikací ClickOnce k jiné nasazení](../deployment/creating-clickonce-applications-for-others-to-deploy.md).  

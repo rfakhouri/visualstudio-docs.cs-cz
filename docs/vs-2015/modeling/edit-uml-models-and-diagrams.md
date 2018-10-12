@@ -1,7 +1,7 @@
 ---
 title: Úpravy modelů a diagramů UML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 86
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0620f0a1212d7abd864a9428492d95067098ef16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52d83911da0f8c1a54618a389db3cff6bbcbab1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667217"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245815"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Úpravy modelů a diagramů UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [modelů a diagramů UML upravit](https://docs.microsoft.com/visualstudio/modeling/edit-uml-models-and-diagrams).  
-  
 Můžete vytvořit a upravit model UML prostřednictvím zobrazení poskytuje několik různých typů diagramu. Zadáním různých perspektiv ve vašem systému tyto diagramy vám pomůže pochopit a probrat různé aspekty návrhu a požadavků. Visual Studio poskytuje šablony pro pět nejčastěji používané typy diagramu UML.  
   
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

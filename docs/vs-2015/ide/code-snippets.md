@@ -1,7 +1,7 @@
 ---
 title: Fragmenty kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29087da38fe7c89936e3823b43e591116396e432
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 317471f73c9e7507768b9b600ce995a35b000c23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628809"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242166"
 ---
 # <a name="code-snippets"></a>Fragmenty kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [fragmenty kódu](https://docs.microsoft.com/visualstudio/ide/code-snippets).  
-  
 Fragmenty kódu jsou malé bloky opakovaně použitelný kód, který může být vložen do souboru kódu pomocí příkazu kontextové nabídky nebo kombinace klávesových zkratek. Obvykle obsahují kód běžně používaných bloků, například try-finally nebo if-else bloky, ale slouží k vložení celého třídy nebo metody.  
   
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>Rozšíření fragmentů a příkazu Obklopit s fragmenty kódu  

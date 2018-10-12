@@ -1,7 +1,7 @@
 ---
 title: Zabezpečování aplikací ClickOnce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 247ebd5a68f4bb3936d9b67779f7d67d0a1ccf85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae5bd70a675798d971cb184038a7e036d04fc95a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674695"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247218"
 ---
 # <a name="securing-clickonce-applications"></a>Zabezpečování aplikací ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zabezpečení aplikací ClickOnce](https://docs.microsoft.com/visualstudio/deployment/securing-clickonce-applications).  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace jsou v souladu s omezením zabezpečení přístupu kódu v rozhraní .NET Framework pomáhají omezit přístupu k chráněným prostředkům a operacím. Z tohoto důvodu je důležité, že chápete důsledky zabezpečení přístupu kódu k zápisu vaše [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace odpovídajícím způsobem. K omezení přístupu mohou vaše aplikace používat plnou důvěryhodnost nebo částečné zóny, jako jsou zóny pro Internet a Intranet.  
   
  Dále lze použít technologii ClickOnce využívající certifikáty k ověření pravosti vydavatele a podepisování manifestů aplikace a nasazení, která ověřuje, zda se soubory nebylo manipulováno. Podepisování je volitelný krok, který usnadňuje změnu souborů aplikace po vytvoření manifestů. Bez podepsaných manifestů je však obtížné zajistit, aby nebylo s instalačním programem manipulováno při bezpečnostních útocích prostředníkem. Chcete-li aplikaci zabezpečit, doporučujeme vám, abyste podepsali manifesty aplikace a nasazení.  

@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vytváření Startovních | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab9bafe28889bf652b3c66f04e9489a3042a1621
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0fb7e9593ee49df3e766fbc52c578e635e2d72d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673194"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243383"
 ---
 # <a name="how-to-create-starter-kits"></a>Postupy: Vytváření startovních sad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: vytváření Startovních sad](https://docs.microsoft.com/visualstudio/ide/how-to-create-starter-kits).  
-  
 Startovní sada obsahuje kód hotové aplikace a dokumentace o tom, jak upravit nebo rozšířit aplikace. Vytvoření Starter Kit je v podstatě stejné jako vytvoření šablony běžného projektu, jediným rozdílem, že se Startovní sada obsahuje soubory dokumentace, které jsou nastaveny se otevře, když projekt založený na Starter Kit je vytvořen.  
   
 ## <a name="designing-and-developing-a-starter-kit"></a>Návrh a vývoj Starter Kit  

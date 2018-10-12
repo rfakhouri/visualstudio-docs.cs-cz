@@ -1,7 +1,7 @@
 ---
 title: Nástroj CreateExpInstance | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9b08ba5ac68a09f6c44937634375add3065e5e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e5b47a329e9ff1c9a8c34fa8476ae1b2fb909c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666757"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234962"
 ---
 # <a name="createexpinstance-utility"></a>Nástroj CreateExpInstance
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [nástroj CreateExpInstance](https://docs.microsoft.com/visualstudio/extensibility/internals/createexpinstance-utility).  
-  
 Použijte nástroj CreateExpInstance k vytvoření, obnovení, nebo odstranit experimentální instanci sady Visual Studio. Experimentální instanci slouží k ladění a testování rozšíření sady Visual Studio beze změny základní produkt.  
   
 ## <a name="syntax"></a>Syntaxe  

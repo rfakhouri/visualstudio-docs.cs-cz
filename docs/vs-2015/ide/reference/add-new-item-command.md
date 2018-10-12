@@ -1,7 +1,7 @@
 ---
 title: Přidat novou položku příkaz | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f380a11440ed413871d2c80603148aa7cc77390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 866a77e148fe59d6a5d66b900982716630dd2faa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669631"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240224"
 ---
 # <a name="add-new-item-command"></a>Přidat novou položku – příkaz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přidat novou položku – příkaz](https://docs.microsoft.com/visualstudio/ide/reference/add-new-item-command).  
-  
   
 Přidá novou položku řešení, jako je například htm, CSS, txt nebo sada rámců do aktuálního řešení a otevře jej.  
   

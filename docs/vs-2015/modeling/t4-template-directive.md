@@ -1,7 +1,7 @@
 ---
 title: T4 – Direktiva Template | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 01369002b5deaa5456d09d6a93e774ad36f85c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dcd11416bc067acaab8855b51969c7e1068e2c97
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668595"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248219"
 ---
 # <a name="t4-template-directive"></a>T4 – direktiva Template
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [T4 – direktiva Template](https://docs.microsoft.com/visualstudio/modeling/t4-template-directive).  
-  
 A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] textové šablony T4 obvykle začíná `template` – direktiva, která určuje, jak by se měly zpracovat šablonu. V textové šabloně a v žádném souboru, který zahrnuje, by neměla existovat více než jedna direktiva šablony.  
   
  Obecný přehled o psaní textových šablon, naleznete v tématu [vytvoření textové šablony T4](../modeling/writing-a-t4-text-template.md).  

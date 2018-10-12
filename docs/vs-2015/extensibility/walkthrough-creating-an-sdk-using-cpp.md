@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Vytvoření sady SDK pomocí jazyka C++ | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57c6e8996ebf670fbe0c3b64de25a25aef1dc131
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc1d47030cf8c71b681e7f6f2ff3c6df5dfa58eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677305"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243708"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Návod: Vytvoření sady SDK pomocí jazyka C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: vytvoření sady SDK pomocí jazyka C++](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-an-sdk-using-cpp).  
-  
 Tento návod ukazuje, jak vytvořit nativní C++ matematické knihovny sady SDK, balíčku sady SDK jako Visual Studio Extension (VSIX) a použijte ji k vytvoření aplikace. Návod je rozdělen na tyto kroky:  
   
 -   [Chcete-li vytvořit nativní a prostředí Windows Runtime knihovny](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)  

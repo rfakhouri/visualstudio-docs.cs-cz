@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: použití fragmentů XML | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0025ef0033aba0b04c43b2e1a44c3790322dfd5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4da9c5cd5d4aaf3a99fd891a814b1f8ccef04ac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629948"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245853"
 ---
 # <a name="how-to-use-xml-snippets"></a>Postupy: použití fragmentů XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: použití fragmentů XML](https://docs.microsoft.com/visualstudio/xml-tools/how-to-use-xml-snippets).  
-  
   
 Fragmenty XML lze vyvolat pomocí následujících dvou příkazů v místní nabídce editoru XML. **Vložit fragment** příkaz vloží fragment kódu XML na pozici kurzoru. **Obklopit fragmentem** příkaz zabalí fragment kódu XML okolo vybraného textu. Každý fragment kódu XML určil typy fragment kódu. Typy fragment určují, zda fragment kódu je k dispozici **Vložit fragment** příkazu **obklopit fragmentem** příkazu, nebo obojí.  
   

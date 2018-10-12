@@ -1,7 +1,7 @@
 ---
 title: Doplňování výrazů pro identifikátory | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 630d0f55792b06cd1c99f9c1947a5ae73bce2683
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f0f990526bc142b9951ab095e4bbf26636c94e30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241259"
 ---
 # <a name="statement-completion-for-identifiers"></a>Doplňování výrazů pro identifikátory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dokumentace k sadě Visual Studio 2017](/visualstudio/).  
-  
 JavaScript neumožňuje explicitní zadání pro deklarace proměnných. V důsledku toho IntelliSense nemůže vždy poskytnout seznamy dokončení pro objekty. Tato situace může nastat v různých situacích. Následuje několik ty běžné.  
   
 -   Parametr je deklarovaný, ale to se nevolala jinde v aktivním dokumentu, jak je znázorněno v následujícím příkladu.  

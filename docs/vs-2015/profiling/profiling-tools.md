@@ -1,7 +1,7 @@
 ---
 title: Nástroje pro profilaci | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8672dd6d05b3a111ad5a1460a57a47b58d1d426a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: feeab1d1f00a681ee3af40436b395d0149cc3334
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666764"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244034"
 ---
 # <a name="profiling-tools"></a>Nástroje pro profilaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [profilace v sadě Visual Studio](https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour).  
-  
 Profilace a Diagnostika nástroje pomáhají diagnostikovat paměť a využití procesoru a dalších problémů na úrovni aplikací. Pomocí těchto nástrojů můžete shromažďování dat (třeba hodnoty proměnných, volání funkce a událostí) za čas, kdy spustíte svou aplikaci v ladicím programu. Můžete zobrazit stav vaší aplikace v různých fázích během provádění kódu.  
   
  Podívejte se na souhrn v dolní části můžete zobrazit, jaké nástroje jsou k dispozici pro váš typ projektu (například plocha, UPW, technologie ASP.NET).  
@@ -100,8 +98,8 @@ Profilace a Diagnostika nástroje pomáhají diagnostikovat paměť a využití 
 |[Tipy pro výkon](../profiling/perftips.md)|Ano|Ano pro XAML, ne pro kód HTML|Ne|  
 |[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ano|Ne|Ano|  
 |[IntelliTrace](../debugger/intellitrace.md)|Pouze .NET Enterprise|Pouze .NET Enterprise|Pouze .NET Enterprise|  
-|[Rychlost odezvy HTML UI](../profiling/html-ui-responsiveness.md)|Ne|Ano pro kód HTML, ne pro XAML|Ne|  
-|[Paměti jazyka JavaScript](../profiling/javascript-memory.md)|Ne|Ano pro kód HTML, ne pro XAML|Ne|  
+|[Rychlost odezvy uživatelského rozhraní HTML](../profiling/html-ui-responsiveness.md)|Ne|Ano pro kód HTML, ne pro XAML|Ne|  
+|[Paměť JavaScriptu](../profiling/javascript-memory.md)|Ne|Ano pro kód HTML, ne pro XAML|Ne|  
   
 ## <a name="see-also"></a>Viz také  
  [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)

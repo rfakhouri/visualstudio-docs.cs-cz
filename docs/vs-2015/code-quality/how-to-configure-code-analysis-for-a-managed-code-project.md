@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: Konfigurace analýzy kódu pro spravovaný projekt kódu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 34c3088aee4089c69669eaa3af5a08a657553363
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98f3d14b73b0219d0fcec4312648bf613f37378e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676116"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239184"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Postupy: Konfigurace Analýzy kódu pro spravovaný projekt kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: Konfigurace analýzy kódu pro projekt spravovaného kódu](https://docs.microsoft.com/visualstudio/code-quality/how-to-configure-code-analysis-for-a-managed-code-project).  
-  
 V [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] a [!INCLUDE[vsPro](../includes/vspro-md.md)], můžete vybrat ze seznamu analýzy kódu *sad pravidel* má použít pro spravovaný projekt kódu. Výchozí sada pravidel je Microsoft Minimální doporučená pravidla. Můžete použít jiné pravidlo nastavit do projektu nebo do všech projektů v řešení.  
   
 > [!NOTE]

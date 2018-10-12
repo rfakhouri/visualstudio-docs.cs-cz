@@ -1,7 +1,7 @@
 ---
 title: Návrhář aktivity TransactionScope | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ccd5aaeda7a162c88c0c82de882dfaab950595cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ea9f0860bf1794ff8c5a4824a60b28aefd4c54d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682042"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238482"
 ---
 # <a name="transactionscope-activity-designer"></a>Návrhář aktivity TransactionScope
 **TransactionScope** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.TransactionScope> aktivity.  
@@ -48,4 +48,4 @@ ms.locfileid: "42682042"
  [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)   
  [Aktivita CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)   
  [Kompenzace](../workflow-designer/compensate-activity-designer.md)   
- [potvrzení](../workflow-designer/confirm-activity-designer.md)
+ [Confirm](../workflow-designer/confirm-activity-designer.md)

@@ -1,7 +1,7 @@
 ---
 title: Spuštění programu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af5987f793e6f0164654f280f8417494066e3e5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27b7daadd3642a4eb35d993e37b6ade3bd829972
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670004"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242543"
 ---
 # <a name="launching-a-program"></a>Spuštění programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [spuštění programu](https://docs.microsoft.com/visualstudio/extensibility/debugger/launching-a-program).  
-  
 Uživatelé, kteří chtějí ladění programu, můžete stisknutím klávesy F5 spusťte ladicí program v prostředí IDE. Tím se zahájí řadu událostí, takže v konečném důsledku vzniklé v rozhraní IDE propojíte ladicího stroje (DE), který je zase připojení nebo připojení k programu následujícím způsobem:  
   
 1.  Rozhraní IDE nejprve volá balíček projektu zobrazíte nastavení pro ladění aktivní projekt řešení. Nastavení zahrnují spouštěcí adresář, proměnné prostředí, port, ve kterém se spustí program a DE použít k vytvoření programu, pokud zadaný. Tato nastavení jsou předány do balíčku pro ladění.  

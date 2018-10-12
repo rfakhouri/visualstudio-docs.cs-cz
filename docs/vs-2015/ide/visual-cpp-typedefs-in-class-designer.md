@@ -1,7 +1,7 @@
 ---
 title: Definice Typedefs jazyka Visual C++ v Návrháři tříd | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba8987abf608d7f8d83a77c2e946f34941c1bec6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ba65af46589e01aa5473b5757124ed184da2197
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673271"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230227"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definice Typedefs jazyka Visual C++ v návrháři tříd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [definice Typedefs jazyka Visual C++ v Návrháři tříd](https://docs.microsoft.com/visualstudio/ide/visual-cpp-typedefs-in-class-designer).  
-  
 TypeDef – příkazy vytvořit jednu nebo více vrstev indirekce mezi názvem a jeho nadřízeného typu. Návrhář tříd podporuje C++ typedef typy, které jsou deklarovány pomocí klíčového slova `typedef`, například:  
   
 ```  

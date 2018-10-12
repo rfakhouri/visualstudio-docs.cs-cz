@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: rozdělení třídy na částečné třídy (návrhář tříd) | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bbf355caf4a67e54a53f7447f813bf5870b9086
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ae389e3bfe32e2e040da5bef3f41a51ff69555d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627828"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245476"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Postupy: Rozdělení třídy na částečné třídy (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: rozdělení třídy na částečné třídy (návrhář tříd)](https://docs.microsoft.com/visualstudio/ide/how-to-split-a-class-into-partial-classes-class-designer).  
-  
 Deklarace třídy nebo struktury mezi několik deklarací můžete rozdělit pomocí `Partial` – klíčové slovo v jazyce Visual Basic nebo `partial` – klíčové slovo v jazyce Visual C#. Můžete použít tolik částečné deklarace chcete v tolika jiných zdrojových souborů, nebo v jednom zdrojovém souboru. Všechny deklarace však musí být ve stejném sestavení a stejný obor názvů.  
   
  Částečné třídy jsou užitečné v několika situacích. Například při práci na velkých projektech oddělení třídu do více než jeden soubor umožňuje více než jeden programátorovi, aby na něm pracovat ve stejnou dobu. Při práci s kódem, který generuje sada Visual Studio, můžete změnit třídu bez nutnosti znovu vytvářet zdrojový soubor. (Příklady kódu, který generuje sada Visual Studio zahrnují kód obálku Windows Forms a webové služby.) Můžete tedy vytvořit kód, který používá automaticky generovaný třídy, aniž byste museli upravovat soubor, který sada Visual Studio vytvoří.  

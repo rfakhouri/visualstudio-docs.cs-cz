@@ -1,7 +1,7 @@
 ---
 title: Ladění nativního kódu nejčastější dotazy | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,23 +27,21 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bd53cece94724059f9e7f90daae766d261134ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e93ca53eb8e04241274e8b262be29cf651dd488a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674212"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228537"
 ---
 # <a name="debugging-native-code-faqs"></a>Nejčastější dotazy k ladění nativního kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ladění nativního kódu nejčastějších dotazech týkajících se](https://docs.microsoft.com/visualstudio/debugger/debugging-native-code-faqs).  
-  
 Následující témata obsahují odpovědi na některé nejčastější dotazy:  
   
 -   [Jak mohu ladit narušení přístupu při spuštění můj samostatný Program?](../debugger/how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger-q.md)  
   
--   [Jak mohu ladit narušení přístupu?](../debugger/how-can-i-debug-an-access-violation-q.md)  
+-   [Jak můžu ladit narušení přístupu?](../debugger/how-can-i-debug-an-access-violation-q.md)  
   
 -   [Jak lze zjistit, pokud jsou moje ukazatele poškozující adresu paměti?](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)  
   
@@ -53,9 +51,9 @@ Následující témata obsahují odpovědi na některé nejčastější dotazy:
   
 -   [Kde najdu kódy chyb systému Win32?](../debugger/where-can-i-look-up-win32-error-codes-q.md)  
   
--   [Jak můžete zachovat fokus při procházení programem?](../debugger/how-can-i-keep-focus-when-stepping-through-my-program-q.md)  
+-   [Jak zachovám fokus při procházení programu?](../debugger/how-can-i-keep-focus-when-stepping-through-my-program-q.md)  
   
--   [Jak můžete použít Windows ladicího programu během ladění programu na popředí?](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)  
+-   [Jak můžu používat okna ladicího programu během ladění programu na popředí?](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)  
   
 -   [Při zastavení v knihovně MFC, jak získat zpět na funkci, která volala MFC?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   

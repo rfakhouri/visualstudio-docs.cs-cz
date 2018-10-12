@@ -1,7 +1,7 @@
 ---
 title: Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje vazbu vyhledávacích dat | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d8bdf410875bcc37766d4ce9bca27bec6564ce01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e1779ab1d39a28e750cab757c94717d496b98ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231652"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje vazbu vyhledávacích dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pomocí vyhledávacích tabulek v datové vazbě – ovládací prvky Windows Forms | Dokumentace Microsoft](https://docs.microsoft.com/visualstudio/data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding).  
-  
   
 Při zobrazování dat ve Windows Forms, můžete vybrat z existujících ovládacích prvků **nástrojů**, nebo můžete vytvořit vlastní ovládací prvky, pokud vaše aplikace vyžaduje funkce není k dispozici ve standardní ovládací prvky. Tento návod ukazuje, jak vytvořit ovládací prvek, který implementuje <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Ovládací prvky, které implementují <xref:System.ComponentModel.LookupBindingPropertiesAttribute> může obsahovat tři vlastnosti, které může být vázaný na data. Tyto ovládací prvky jsou podobné <xref:System.Windows.Forms.ComboBox>.  
   
@@ -185,5 +183,5 @@ Při zobrazování dat ve Windows Forms, můžete vybrat z existujících ovlád
 -   Procházet některé záznamy a ověřte, že `CompanyName` se zobrazí v `LookupBox` ovládacího prvku.  
   
 ## <a name="see-also"></a>Viz také  
- [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+ [Vytvoření vazby ovládacích prvků modelu Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 

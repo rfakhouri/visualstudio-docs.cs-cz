@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Zobrazení vyhrazené nápovědy | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24c3eea821209485b5d57335c0c948cae92b4a20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0642b798668e24e7ba1e6595ab3c8ea6dba6885e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668390"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247920"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Návod: Zobrazení vyhrazené nápovědy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: zobrazení pomoc při podpisu](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-signature-help).  
-  
 Signaturám (označované také jako *informace o parametru*) zobrazí v popisku podpis metody, když uživatel zadá znak start seznamu parametrů (obvykle Levá závorka). Jako parametr a oddělovač parametr (obvykle čárku) jsou zadány, popisek se aktualizuje a zobrazí další parametr tučným písmem. Pomoc při podpisu můžete definovat v rámci služby jazyka, nebo můžete definovat vlastní název souboru příponu a obsah zadejte a zobrazit nápovědu k podpisu pro právě tento typ, nebo můžete zobrazit pomoc při podpisu pro existující typ obsahu (například "text"). Tento návod ukazuje, jak zobrazit nápovědu k podpisu pro typ obsahu "text".  
   
  Nápověda k podpisu se obvykle aktivuje zadáním konkrétní znak, například "(" (levá závorka) a zrušit tak, že zadáte další znak, například ")" (ukončovací závorka). Funkce technologie IntelliSense, které jsou aktivovány psaní znak může být implementována pomocí obslužná rutina příkazu stisknutí kláves ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní) a zprostředkovatele obslužná rutina, která implementuje <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> rozhraní. Chcete-li vytvořit zdroj pomoc při podpisu, který je uvedený seznam podpisy, které jsou součástí pomoc při podpisu, implementovat <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> rozhraní a poskytovatele zdroj, který implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> rozhraní. Poskytovatelé jsou součástí Managed Extensibility Framework (MEF) a jsou zodpovědné za třídy zdroje a kontroler exportu a importu služby a zprostředkovatelů, například <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, která umožňuje navigaci ve vyrovnávací paměti textu a <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>, která spustí relaci pomoc při podpisu.  

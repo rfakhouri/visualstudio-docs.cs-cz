@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: aktualizace existujících šablon | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c5d091e58904cae058c5a2a5ade1b8ceec4c738
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa7c6f534756298006e07d287b118edfd4944717
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242278"
 ---
 # <a name="how-to-update-existing-templates"></a>Postupy: Aktualizace existujících šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: aktualizace existujících šablon](https://docs.microsoft.com/visualstudio/ide/how-to-update-existing-templates).  
-  
 Po vytvoření šablony a soubory zkomprimujte do souboru .zip, můžete upravit šablonu. Můžete to provést ručně změnou soubory v šabloně, nebo tak, že vyexportujete novou šablonu z projektu, který je založen na šabloně.  
   
 ## <a name="using-the-export-template-wizard-to-update-an-existing-template"></a>Pomocí Průvodce exportem šablony, a aktualizovat existující šablony  

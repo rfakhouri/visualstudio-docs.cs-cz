@@ -1,7 +1,7 @@
 ---
 title: Příznaky funkcí | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 638d8975bc3bd5216fe60e0444cf864d8cf896de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 954993a5733012b4e27ebd6f012fabcf1e3eda00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696300"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241459"
 ---
 # <a name="capability-flags"></a>Příznaky funkcí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [příznaky funkcí](https://docs.microsoft.com/visualstudio/extensibility/capability-flags).  
-  
 SCC_CAP_*xxx* příznaky jsou bitové příznaky, které slouží k označení funkce modulu plug-in správy zdrojového kódu. SCC_EXCAP_*xxx* příznaky jsou přírůstkové příznaky, které označují rozšířené možnosti a vyřešit celočíselné hodnoty.  
   
 |Kód funkce|Hodnota|Popis|  

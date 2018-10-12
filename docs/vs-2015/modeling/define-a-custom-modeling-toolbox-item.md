@@ -1,7 +1,7 @@
 ---
 title: Definování vlastní položky sady nástrojů pro modelování | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd2d7ff2b31e8975574cb6b2780a352faa1cd663
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252366"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definování vlastní položky sady nástrojů pro modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [definování vlastní položky sady nástrojů pro modelování](https://docs.microsoft.com/visualstudio/modeling/define-a-custom-modeling-toolbox-item).  
-  
 K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který často používáte, můžete přidat nové nástroje do panelu nástrojů modelování diagramů v sadě Visual Studio. Tyto položky panelu nástrojů ostatním uživatelům aplikace Visual Studio můžete distribuovat.  
   
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -242,7 +240,7 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
  [Rozšíření modelů a diagramů UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Definování profilu pro rozšíření UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
- [Definování omezení ověření pro modely UML](../modeling/define-validation-constraints-for-uml-models.md)
+ [Definování omezení ověřování pro modely UML](../modeling/define-validation-constraints-for-uml-models.md)
 
 
 

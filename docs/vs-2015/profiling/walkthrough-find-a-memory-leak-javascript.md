@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Vyhledání nevrácené paměti (JavaScript) | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 242dd78d7110a36e0c8baf4d1ea1e1a7f323a1c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7feaa8629078be9e5e7a915fe3c09a9599a8f292
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668616"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234192"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Návod: Vyhledání nevrácené paměti (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: Vyhledání nevrácené paměti (JavaScript)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-find-a-memory-leak-javascript).  
-  
 Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Tento názorný postup vás provede procesem identifikace a opravy problému s jednoduchou paměti pomocí analyzátoru paměti JavaScriptu. Analyzátor paměti jazyka JavaScript je k dispozici v aplikacích Visual Studio pro Windows Store vytvořená pro Windows pomocí jazyka JavaScript. V tomto scénáři vytvoříte aplikaci, která uchovává nesprávně elementů modelu DOM v paměti namísto disposing elementů v stejný kurz, ve kterém jsou vytvořeny.  
@@ -294,7 +292,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
      ![Snímky zobrazující nevracení paměti dlouhodobého](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
 ## <a name="see-also"></a>Viz také  
- [Paměti jazyka JavaScript](../profiling/javascript-memory.md)
+ [Paměť JavaScriptu](../profiling/javascript-memory.md)
 
 
 

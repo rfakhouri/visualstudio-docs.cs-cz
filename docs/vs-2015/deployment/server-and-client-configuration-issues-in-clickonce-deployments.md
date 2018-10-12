@@ -1,7 +1,7 @@
 ---
 title: Problémy s konfigurací klienta v nasazeních ClickOnce a server | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 17ab417649818e9f56dbd1065929a6240a23d417
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628497"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231521"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problémy s konfigurací serveru a klienta v nasazeních ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [serveru a problémy s konfigurací klienta v nasazeních ClickOnce](https://docs.microsoft.com/visualstudio/deployment/server-and-client-configuration-issues-in-clickonce-deployments).  
-  
 Pokud používáte Internetové informační služby (IIS) v systému Windows Server a vaše nasazení obsahuje typ souboru, který se nedokáže rozpoznat Windows, jako je například Microsoft Word soubor, služba IIS odmítne přenášet tento soubor a nasazení se nezdaří.  
   
  Kromě toho některé webové servery a software webových aplikací, jako například [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], obsahují seznam souborů a typy souborů, které nejde stáhnout. Například [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] zamezí se tím stahování všech souborů Web.config. Tyto soubory mohou obsahovat citlivé informace, jako jsou uživatelská jména a hesla.  

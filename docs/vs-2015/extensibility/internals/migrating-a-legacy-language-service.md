@@ -1,7 +1,7 @@
 ---
 title: Migrace služby starší verze jazyka | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a9cd6edb18f33a87f81d36feea55a26c0ed1e78
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 39f2cc0932e875a33621241d6cba0cb0b692ff6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669406"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247299"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrace služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [migrace služby starší verze jazyka](https://docs.microsoft.com/visualstudio/extensibility/internals/migrating-a-legacy-language-service).  
-  
 Služby starší verze jazyka můžete migrovat na novější verzi sady Visual Studio aktualizuje se projekt a soubor source.extension.vsixmanifest přidáním do projektu. Samotnou službu jazyka se budou nadále fungovat stejně jako předtím, protože editoru sady Visual Studio přizpůsobí ho.  
   
  Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace o nový způsob implementace služby jazyka najdete v tématu [Editor a rozšíření služeb jazyka](../../extensibility/editor-and-language-service-extensions.md).  

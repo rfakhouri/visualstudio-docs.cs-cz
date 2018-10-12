@@ -1,7 +1,7 @@
 ---
 title: Analýza kódu pro C / C++ upozornění | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 43
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0b5a3a50a8cc70910c884248fad6c30f875c6d06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ab2da3cf1abcd830f1a47de8b079bb59d67229f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679404"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245866"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Upozornění Analýzy kódu pro C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [analýzy kódu pro C/C++ upozornění](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-c-cpp-warnings).  
-  
 Tato část obsahuje seznam upozornění analýzy kódu v jazyce C/C++. Informace o analýze kódu naleznete v tématu [/ analyze (Analýza kódu)](http://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08) a [rychlý Start: Code Analysis for C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
   
 ## <a name="see-also"></a>Viz také  

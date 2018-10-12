@@ -1,7 +1,7 @@
 ---
 title: Přizpůsobení okna Vlastnosti | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a5ae14866780be08633f5a7cf07f70c5b94bcca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa690b88b5ab2d7aac3f8aea9967419dcbd43df1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241732"
 ---
 # <a name="customizing-the-properties-window"></a>Přizpůsobení okna Vlastnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přizpůsobení okna vlastnosti](https://docs.microsoft.com/visualstudio/modeling/customizing-the-properties-window).  
-  
 Vzhled a chování okna vlastnosti můžete přizpůsobit v jazyka specifického pro doménu (DSL) v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. V definici DSL definovat vlastnosti domény na každou doménovou třídu. Ve výchozím nastavení, když vyberete instance třídy v diagramu nebo v Průzkumníku modelu každé domény je uvedena vlastnost v okně Vlastnosti. To vám umožní zobrazit a upravit hodnoty vlastnosti domény, i když ještě je mapována na pole obrazec v diagramu.  
   
 ## <a name="names-descriptions-and-categories"></a>Názvy, popisy a kategorie  

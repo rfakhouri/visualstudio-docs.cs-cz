@@ -1,7 +1,7 @@
 ---
 title: Nahradit v souborech | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e693e1166a1612ae8ca82f5d1e8c0e742539da0a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 92029377d5e7d4faf4c6b7f38deda1eecdeaa395
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671751"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228823"
 ---
 # <a name="replace-in-files"></a>Nahradit v souborech
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [nahradit v souborech](https://docs.microsoft.com/visualstudio/ide/replace-in-files).  
-  
 Nahradit v souborech ** umožňuje vyhledávání kódu zadané sady souborů pro řetězec nebo výraz a změnit některé nebo všechny nalezených shod. Nalezených shod a akcí provedených jsou uvedeny v **výsledky hledání** vybraný v interval **způsobit možnosti**.  
   
 > [!NOTE]

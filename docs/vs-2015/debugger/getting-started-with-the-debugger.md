@@ -1,14 +1,14 @@
 ---
 title: Začínáme s ladicím programem | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,18 +19,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2269ceae72f620677f51af960f7fe164f7982412
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4642fa76a9891d07e927fa37650976180568f7a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672013"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249948"
 ---
 # <a name="getting-started-with-the-debugger"></a>Začínáme s ladicím programem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [prohlídka funkcí ladicího programu](https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour).  
-  
 Ladicí program sady Visual Studio je snadno použitelné v jakémkoli jazyce. Tady vám ukážeme, jak ladit jednoduchý program C#, ale stejný postup můžete použít ke kódu v jiných jazycích, jako je například C++ a JavaScript.  
   
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a> Ladění projektu základního jazyka C#  

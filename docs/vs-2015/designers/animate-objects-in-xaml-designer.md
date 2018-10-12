@@ -1,7 +1,7 @@
 ---
 title: Animace objektů v Návrháři XAML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 481ba0f156f6ea6cc43d9df19eedcb84ab864cbe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0495397ccce63b93e524c2b3898b4f18ac981ff6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632258"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230077"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animace objektů v Návrháři XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [animace objektů v Návrháři XAML](https://docs.microsoft.com/visualstudio/designers/animate-objects-in-xaml-designer).  
-  
 Můžete vytvořit krátké animace, které přesunout objekty nebo má dovnitř a ven vyblednout.  
   
  Pokud chcete začít, vytvořte *scénáře*. Scénář obsahuje jeden nebo více *časové osy*. Nastavte *klíčové snímky* na časové ose k označení změny vlastností. Poté při spuštění animace Blendu argument interpolaci změny vlastností za určené časové období. Výsledkem je hladký přechod. Může jakákoli vlastnost, která patří do objektu animace, v případě nevizuální vlastnosti.  

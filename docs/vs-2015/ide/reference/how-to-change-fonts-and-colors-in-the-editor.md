@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: Změna písma a barev v editoru | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b150e7b7d8271a8be8037dbd98732518f95fe1df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7fb415c68884b2486d0bd45559530f1a36c90bfc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633844"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229309"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Postupy: Změna písma a barev v editoru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: Změna písma a barev v editoru](https://docs.microsoft.com/visualstudio/ide/reference/how-to-change-fonts-and-colors-in-the-editor).  
-  
   
 Můžete změnit výchozí řez písma, nastavit velikost písma a změnit barvy popředí a pozadí pro různé textové **zobrazení položek** v editoru kódu. Když měnit nastavení písma mějte na paměti následující informace:  
   
@@ -65,7 +63,7 @@ Můžete změnit výchozí řez písma, nastavit velikost písma a změnit barvy
  [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)   
  [Dialogové okno Možnosti textového editoru pole](../../ide/reference/text-editor-options-dialog-box.md)   
  [Psaní kódu](../../ide/writing-code-in-the-code-and-text-editor.md)   
- [Postupy: Změna písma a barvy](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Postupy: Změna písma a barev](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 
 

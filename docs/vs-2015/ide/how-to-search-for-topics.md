@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vyhledávání témat | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c094e255a6e87c1b2d6d8036bf033874399e000
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef0cbdff47423fe1ed580f3f51ba1e6039ee3e01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632703"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248285"
 ---
 # <a name="how-to-search-for-topics"></a>Postupy: Vyhledávání témat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: vyhledávání témat](https://docs.microsoft.com/visualstudio/ide/how-to-search-for-topics).  
-  
 Funkce fulltextového vyhledávání můžete použít k vyhledání všech témat, které obsahují konkrétní slovo. Můžete také upravit a přizpůsobit vyhledávání pomocí zástupných znaků výrazy, logické operátory a operátory rozšířeného vyhledávání.  
   
 ### <a name="to-open-the-search-tab"></a>Chcete-li otevřít na této kartě  
@@ -53,7 +51,7 @@ Funkce fulltextového vyhledávání můžete použít k vyhledání všech tém
  [Tipy pro fulltextové vyhledávání](../ide/full-text-search-tips.md)   
  [Logické operátory ve vyhledávacích výrazech](../ide/logical-operators-in-search-expressions.md)   
  [Operátory rozšířeného vyhledávání ve vyhledávacích výrazech](../ide/advanced-search-operators-in-search-expressions.md)   
- [Postupy: přizpůsobení výsledků vyhledávání](../ide/how-to-customize-search-results.md)
+ [Postupy: Přizpůsobení výsledků vyhledávání](../ide/how-to-customize-search-results.md)
 
 
 

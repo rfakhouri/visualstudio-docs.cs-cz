@@ -1,7 +1,7 @@
 ---
 title: Porozumění kódu DSL | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7d92a14466b7ca915b70bd0cad096266160e5994
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78ef4b1a0e6622b077039797df2adcb02a355df0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696150"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251157"
 ---
 # <a name="understanding-the-dsl-code"></a>Porozumění kódu DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [porozumění kódu DSL](https://docs.microsoft.com/visualstudio/modeling/understanding-the-dsl-code).  
-  
 Řešení jazyka specifického pro doménu (DSL), vygeneruje rozhraní API, které můžete použít ke čtení a aktualizovat instance DSL v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Toto rozhraní API je definováno v kódu, který je generován z definici DSL. Toto téma popisuje generovaného rozhraní API.  
   
 ## <a name="the-example-solution-component-diagrams"></a>Ukázkové řešení: diagramy komponent  

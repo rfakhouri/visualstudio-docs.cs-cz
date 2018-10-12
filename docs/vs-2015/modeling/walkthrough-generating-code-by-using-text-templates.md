@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Vytvoření kódu pomocí textových šablon | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79454acf09a0f3b09e87af1ac91aa72c23ef86fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37fe948838a5263eca2107e2e868e2dc49cdf2a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676068"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229369"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Návod: Vytvoření kódu pomocí textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: generování kódu pomocí textových šablon](https://docs.microsoft.com/visualstudio/modeling/walkthrough-generating-code-by-using-text-templates).  
-  
 Generování kódu umožňuje vytvářet programový kód, který je silně typované a ještě můžete snadno změnit při změně modelu zdroje. Tento rozdíl oproti alternativní postup psaní naprosto obecné program, který přijímá konfigurační soubor, který je flexibilnější, ale výsledky v kódu, který není ani tak snadno přečíst a změnit, ani tyto dobrého výkonu. Tento návod ukazuje tuto výhodu.  
   
 ## <a name="typed-code-for-reading-xml"></a>Zadaný kód XML pro čtení  

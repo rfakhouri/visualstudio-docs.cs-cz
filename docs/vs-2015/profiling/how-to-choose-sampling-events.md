@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: výběr událostí vzorkování | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2e00dcc15633e9b62f5db02e321950e4f91814f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0be5c96b1ca131bee9062d4049fbea49a9aec182
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679405"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228411"
 ---
 # <a name="how-to-choose-sampling-events"></a>Postupy: Výběr událostí vzorkování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [jak: Zvolte událostí vzorkování](https://docs.microsoft.com/visualstudio/profiling/how-to-choose-sampling-events).  
-  
 Ve výchozím nastavení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro profilaci sady shromažďuje údaje o výkonu v intervalu, který je zadán jako počet cyklů procesoru, které jsou používány profilovaný proces. Výchozí počet cyklů v intervalu je 10 000 000, což je na 1 počítači gv přibližně na 0,01 sekund. Počet cyklů v intervalu můžete změnit, a můžete změnit událost vzorku. Následující ukázkové události jsou k dispozici:  
   
 -   Hodinových cyklů - problémů vázané na procesor.  
@@ -73,7 +71,7 @@ Ve výchozím nastavení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů
  [Postupy: výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md)   
  [Využití procesoru a čítače Windows](../profiling/cpu-and-windows-counters.md)   
  [Porozumění hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)   
- [Profilace z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Profilace prostřednictvím příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)
 
 
 

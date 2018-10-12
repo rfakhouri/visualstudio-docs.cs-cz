@@ -1,7 +1,7 @@
 ---
 title: Příkaz návrhu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6fe22e67d97af7dc7b8c900dd10c301d02d8c5a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d46bbe3c9898fae2974b482e1ead607ea486fef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673870"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252459"
 ---
 # <a name="command-design"></a>Návrh příkazu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návrh příkazu](https://docs.microsoft.com/visualstudio/extensibility/internals/command-design).  
-  
 Při přidání příkazu do VSPackage, musíte zadat, kam se má zobrazit, když je k dispozici a jak je zpracovat.  
   
 ## <a name="defining-commands"></a>Definování příkazy  

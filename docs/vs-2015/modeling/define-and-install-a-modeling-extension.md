@@ -1,7 +1,7 @@
 ---
 title: Definování a instalace rozšíření modelování | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774579"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234400"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definování a instalace rozšíření modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [definování a instalace rozšíření modelování](https://docs.microsoft.com/visualstudio/modeling/define-and-install-a-modeling-extension).  
-  
 V sadě Visual Studio můžete definovat rozšíření pro modelování diagramů. Tímto způsobem můžete přizpůsobit diagramy a modely pro vaše konkrétní potřeby. Například můžete definovat příkazy nabídek, profilů UML, omezení ověření a položky panelu nástrojů. Můžete definovat několik komponent v jedné rozšíření. Můžete také distribuovat ostatním uživatelům aplikace Visual Studio ve formě tato rozšíření [rozšíření integrace Visual Studio (VSIX)](http://go.microsoft.com/fwlink/?LinkId=160780). Můžete vytvořit rozšíření VSIX použití projektu VSIX v sadě Visual Studio.  
   
 ## <a name="requirements"></a>Požadavky  

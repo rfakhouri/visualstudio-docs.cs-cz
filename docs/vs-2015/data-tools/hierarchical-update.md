@@ -1,7 +1,7 @@
 ---
 title: Hierarchická aktualizace | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ddef56f8ec38d73524db661b89e83c456bc50ce0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633829"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239379"
 ---
 # <a name="hierarchical-update"></a>Hierarchická aktualizace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [hierarchické aktualizace](https://docs.microsoft.com/visualstudio/data-tools/hierarchical-update).  
-  
   
 Hierarchická aktualizace * se vztahuje k procesu ukládání aktualizovaná data (z datové sady s dvěma nebo více souvisejícími tabulkami) do databáze při zachování pravidla referenční integrity. *Referenční integritu* odkazuje na pravidla konzistence poskytované omezení v databázi, která řídí chování vkládání, aktualizaci a odstraňování souvisejících záznamů. Například je referenční integritu, který vynutí vytvoření záznam zákazníka předtím, než pro zákazníka objednávky, který se má vytvořit.  Další informace o relacích v datových sadách najdete v tématu [vztahy v datových sadách](../data-tools/relationships-in-datasets.md)  
   

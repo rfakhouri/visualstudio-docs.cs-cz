@@ -1,7 +1,7 @@
 ---
 title: T4 – Direktiva Include | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 32af7c25070f4e93c40d01da0cc0ba09e80c2193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627636"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233984"
 ---
 # <a name="t4-include-directive"></a>T4 – direktiva Include
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [T4 – direktiva zahrnují](https://docs.microsoft.com/visualstudio/modeling/t4-include-directive).  
-  
 V textové šabloně v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete vložit text z jiného souboru pomocí `<#@include#>` směrnice. Můžete umístit `include` direktivy kamkoli do šablony textu před blok funkcí první třídy `<#+ ... #>`. Zahrnuté soubory mohou také obsahovat `include` direktivy a jiné direktivy. Díky tomu můžete kód šablony a často používaný text sdílet mezi šablonami.  
   
 ## <a name="using-include-directives"></a>Použití direktiv include  

@@ -1,7 +1,7 @@
 ---
 title: Panel nástrojů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90860609f10948ab7f1cd2dd887ea06dcd48c7d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c12fe819d46eae073367d10c50deec9ee7b4c26
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668378"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241472"
 ---
 # <a name="toolbox"></a>Sada nástrojů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [nástrojů](https://docs.microsoft.com/visualstudio/ide/reference/toolbox).  
-  
   
 **Nástrojů** zobrazuje ikony pro ovládací prvky a další položky, které můžete přidat do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projekty. Otevřete **nástrojů**, klikněte na tlačítko **nástrojů** na **zobrazení** nabídky. Můžete ukotvit **nástrojů**, a můžete připnout ho otevřený nebo ji nastavte na **automaticky skrýt**.  
   

@@ -1,7 +1,7 @@
 ---
 title: Zadávání poznámek k chování funkcí | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c05fca9a23f213f14aaecffda87478819291e1f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1be20fed5e7fd98860a4a62c3d59fc458bed04ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669944"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234387"
 ---
 # <a name="annotating-function-behavior"></a>Zadávání poznámek k chování funkcí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zadávání poznámek k chování funkcí](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-behavior).  
-  
 Kromě zadávání poznámek k [funkci parametry a návratové hodnoty](../code-quality/annotating-function-parameters-and-return-values.md), přidávat poznámky k vlastnosti celé funkce.  
   
 ## <a name="function-annotations"></a>Poznámky – funkce  
@@ -71,7 +69,7 @@ Kromě zadávání poznámek k [funkci parametry a návratové hodnoty](../code-
  [Zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md)   
  [Určení, kdy a kde se má poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Vnitřní funkce](../code-quality/intrinsic-functions.md)   
- [Osvědčené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
+ [Doporučené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
 
 
 

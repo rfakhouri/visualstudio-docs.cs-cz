@@ -1,7 +1,7 @@
 ---
 title: Stránka Možnosti, vlastnosti uzlu prostředí | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: acc91b6588e7e999f0390a3bc7d7108b4e6af2b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8deae718faceb1613f73e9be732706c7d5441c8f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628829"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239639"
 ---
 # <a name="options-page-environment-node-properties"></a>Stránka Možnosti, vlastnosti uzlu prostředí
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [stránka Možnosti, vlastnosti uzlu prostředí](https://docs.microsoft.com/visualstudio/ide/reference/options-page-environment-node-properties).  
-  
   
 Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidruženy **prostředí** kategorie, `DTE.Properties("Environment", <Property Page>)`, nástroje **možnosti** dialogové okno. Název každého pododdílu je volání, které slouží k přístupu k vlastnosti kolekce a v tabulce v každém pododdílu jsou uvedeny vlastnosti v kolekci.  
   
@@ -138,7 +136,7 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 |DefaultBehaviorForStartupProjects|Získá nebo nastaví (String)||  
 |MSBuildOutputVerbosity|Získá nebo nastaví (String)|Určuje úroveň podrobností pro výstup sestavení.|  
   
-## <a name="startup"></a>Po spuštění  
+## <a name="startup"></a>Třída pro spuštění  
  `DTE.Properties("Environment", "Startup")`  
   
 |Název položky vlastnosti|Hodnota|Popis|  

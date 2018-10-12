@@ -1,7 +1,7 @@
 ---
 title: Vytváření vlastních projektů s ohledem na verzi | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 164a56973ac35220a0efd7e85da2f0a074b88b3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ae06a36155ed7270ce01178fa49e40dff06aed8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632411"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236324"
 ---
 # <a name="making-custom-projects-version-aware"></a>Vytváření vlastních projektů s ohledem na verzi
 Ve vaší vlastní projektový systém můžete povolit projektech tohoto typu se načíst ve více verzích sady Visual Studio. Můžete také zabránit projektech tohoto typu načítání v dřívější verzi sady Visual Studio. Můžete také povolit tento projekt v případě, že projekt vyžaduje opravu, převod nebo vyřazení identifikovat na novější verzi.  

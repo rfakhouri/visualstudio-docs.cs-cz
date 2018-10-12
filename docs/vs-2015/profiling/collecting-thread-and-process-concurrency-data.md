@@ -1,7 +1,7 @@
 ---
 title: Shromažďování dat souběžnosti procesu a vlákně | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd63966dba73d57d12d68552e57828b9d17ee84e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2cb7c842d6fdcc024b4146981ece251fb5189652
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775375"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234426"
 ---
 # <a name="collecting-thread-and-process-concurrency-data"></a>Shromažďování dat o souběžnosti vláken a procesů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [shromažďování vlákna a dat o souběžnosti procesu](https://docs.microsoft.com/visualstudio/profiling/collecting-thread-and-process-concurrency-data).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Metoda profilace souběžného zpracování nástrojů pro profilaci sady umožňuje shromažďovat data kolize prostředků, který obsahuje informace o každé synchronizaci událost, která způsobí, že funkce v profilované aplikace čekání na přístup k prostředku.  
   
  **Požadavky**  

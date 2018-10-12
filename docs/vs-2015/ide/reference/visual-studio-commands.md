@@ -1,7 +1,7 @@
 ---
 title: Příkazy sady Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 28d7bcbb9f25667ba3e03cbad8935e8eef203036
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b1c3756075bb4a5892b9d57c0e6ba497eea3d06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671561"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228134"
 ---
 # <a name="visual-studio-commands"></a>Příkazy sady Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [příkazy sady Visual Studio](https://docs.microsoft.com/visualstudio/ide/reference/visual-studio-commands).  
-  
   
 Příkazy sady Visual Studio umožňují spuštění příkazu z **příkaz** okně **okamžité** okna, nebo **najít/příkaz** pole. V obou případech znak větší (`>`) se používá k označení, že je má následovat příkaz a ne operace hledání nebo ladění.  
   

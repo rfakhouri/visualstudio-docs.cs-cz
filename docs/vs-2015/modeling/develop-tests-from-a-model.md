@@ -1,7 +1,7 @@
 ---
 title: Vývoj testů z modelu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d64356c9b5fe4e70c928303633a35d6cb4cc045b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc773f9b4945a16bac0a9726e0a06f94726fad96
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669210"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236753"
 ---
 # <a name="develop-tests-from-a-model"></a>Vývoj testů z modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vývoj testů z modelu](https://docs.microsoft.com/visualstudio/modeling/develop-tests-from-a-model).  
-  
 Požadavky a architektury modely můžete pomoci vám organizovat testy systému a jeho součástí. Tento postup pomáhá zajistit, že testování požadavků, které jsou důležité pro uživatele a další zainteresované uživatele, a pomůže vám rychle aktualizovat testů při změně požadavků. Pokud používáte [!INCLUDE[TCMext](../includes/tcmext-md.md)], můžete také zachovat propojení mezi modely a testy.  
   
  Které verze sady Visual Studio podporují tyto funkce najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -183,7 +181,7 @@ Assert (countAfter == countBefore = 1);
  [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)   
  [Modelování uživatelských požadavků](../modeling/model-user-requirements.md)   
  [Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)   
- [Analýza a modelování vaší architektury](../modeling/analyze-and-model-your-architecture.md)
+ [Analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)
 
 
 

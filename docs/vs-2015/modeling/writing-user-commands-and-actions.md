@@ -1,7 +1,7 @@
 ---
 title: Zápis uživatelských příkazů a akcí | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3aa86a1b08f121c8ddc95cca5029e75e7a103a1d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb1b38dada5b36bf6d02fd7d7dc175761d2147ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230409"
 ---
 # <a name="writing-user-commands-and-actions"></a>Zápis uživatelských příkazů a akcí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zápis uživatelských příkazů a akcí](https://docs.microsoft.com/visualstudio/modeling/writing-user-commands-and-actions).  
-  
 Jazyka specifického pro doménu můžete přizpůsobit přidáním příkazy do diagramu a reakcí na gesta, jako například přetažení myší, klikněte na tlačítko a dvakrát klikněte na události.  
   
 ## <a name="user-actions"></a>Akce uživatele  

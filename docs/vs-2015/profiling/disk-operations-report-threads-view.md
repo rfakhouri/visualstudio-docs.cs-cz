@@ -1,7 +1,7 @@
 ---
 title: Sestava operací (zobrazení vláken) na disku | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe16116131c1ed6d0233abbd2e0480946b5a5423
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f121b8939ff55c9274cd04560ae7d507e22fde5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666715"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245151"
 ---
 # <a name="disk-operations-report-threads-view"></a>Sestava diskových operací (Zobrazení vláken)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sestava diskových operací (zobrazení vláken)](https://docs.microsoft.com/visualstudio/profiling/disk-operations-report-threads-view).  
-  
 Sestava diskových operací ukazuje vstupně-výstupních operací disku v kanálech disku.  
   
  Pro každý přístup na disk, který se nachází jménem proces, který je právě profilována v současném viditelném časovém okně se použije v hlášení tyto informace:  

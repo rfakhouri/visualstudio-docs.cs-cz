@@ -1,7 +1,7 @@
 ---
 title: Seznam dostupných služeb | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b09e58ee64eeb27940ea30f9a03429706b720cf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 658a4406b16c3f79f3c485e62e6de8027bb35167
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666021"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248037"
 ---
 # <a name="list-of-available-services"></a>Seznam dostupných služeb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [seznamu dostupných služeb](https://docs.microsoft.com/visualstudio/extensibility/internals/list-of-available-services).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] a Visual Studio SDK podporují tyto služby. Některé balíčky nabízí vlastní služby, které zde nejsou uvedeny – například jazykových služeb nemají jedinou službou identifikátor GUID. Název jazyka, musíte použít k vyhledání identifikátoru GUID služby jazyka v registru.  
   
  Použijte identifikátory GUID služby uvedené nebo získané z nějakého jiného zdroje (například jazykových služeb) k získání primární rozhraní nebo rozhraní zobrazené u jednotlivých služeb.  

@@ -1,7 +1,7 @@
 ---
 title: Kompilování a sestavování v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec3a74d911a32d7e7f869ee099c70914cafe9a08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65fbe40a3609b0729bdc376196940f2adb670a2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673285"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229226"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Kompilování a sestavování v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [kompilaci a vytváření ve Visual Studiu](https://docs.microsoft.com/visualstudio/ide/compiling-and-building-in-visual-studio).  
-  
 Systém Visual Studio lze použít k vytváření aplikací a k vytváření sestavení a spustitelných programů v pravidelných intervalech v průběhu vývoje. Častým sestavováním kódu lze dříve identifikovat chyby kompilace, jako je nesprávná syntaxe, překlepy v klíčových slovech a neshody typů. Častým sestavováním a spouštěním ladicí verze kódu lze také zjistit a opravit chyby za běhu, jako jsou logické a sémantické chyby.  
   
  Pokud jste projekt nebo řešení plně vyvinuli a dostatečně odladili, lze jeho komponenty zkompilovat do sestavení určeného pro vydání. Ve výchozím nastavení je sestavení pro vydání optimalizováno a navrženo tak, aby bylo menší a rychlejší než ladicí verze. Další informace najdete v tématu [názorný postup: Tvorba aplikace](../ide/walkthrough-building-an-application.md).  

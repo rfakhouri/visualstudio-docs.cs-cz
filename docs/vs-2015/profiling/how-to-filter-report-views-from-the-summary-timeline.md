@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: filtrování zobrazení sestav ze souhrnné časové osy | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95e9ad24bc5ecf41274b08c83d6f1170bf225ec3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bdf402f8de9f5ce952d2abe4f4b015545a02b1b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676332"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231774"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Postupy: filtrování zobrazení sestav ze souhrnné časové osy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: filtrování zobrazení sestav ze časová osa souhrnu](https://docs.microsoft.com/visualstudio/profiling/how-to-filter-report-views-from-the-summary-timeline).  
-  
 Můžete filtrovat data, která se zobrazí v sestavách výkonu tak, že zadáte čas segment v časové osy grafu souhrnné zobrazení. Při filtrování sestavy se mají zahrnout jenom časového úseku, který jste zadali reanalyzed soubor dat profilování.  
   
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>Chcete-li filtrovat sestavy pro profilaci ze souhrnné časové osy grafu  

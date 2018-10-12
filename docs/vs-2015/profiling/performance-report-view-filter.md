@@ -1,7 +1,7 @@
 ---
 title: Filtr zobrazení sestav výkonu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1568ec12a635014239a1533bf00df09a1e63ac14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63855aeb4b4e2d48db045354b0134056684dedf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668004"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228166"
 ---
 # <a name="performance-report-view-filter"></a>Filtr zobrazení sestav výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [filtr zobrazení sestav výkonu](https://docs.microsoft.com/visualstudio/profiling/performance-report-view-filter).  
-  
 V okně filtru zobrazení sestavy Profiler se nachází v horní části okna sestavy výkonu. Pokud ho nevidíte, klikněte na tlačítko **zobrazit filtr** tlačítko.  
   
  Můžete upravit každou klauzuli filtru pro upřesnění výsledků. Tyto sloupce jsou k dispozici v Tvůrce filtru.  

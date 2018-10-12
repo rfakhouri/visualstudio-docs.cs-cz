@@ -1,7 +1,7 @@
 ---
 title: Použití písem a barev | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,36 +19,34 @@ ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6db4f030a3367a5fd2fb449b3515643fe6cd6033
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6ed3c7a67ca8463c2afef38fc39e28e3d81fd58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628251"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245970"
 ---
 # <a name="using-fonts-and-colors"></a>Použití písem a barev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pomocí písma a barvy](https://docs.microsoft.com/visualstudio/extensibility/using-fonts-and-colors).  
-  
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Poskytuje podporu pro použití písem a barev k zobrazení textu.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Písma a barvy – přehled](../extensibility/font-and-color-overview.md)  
+ [Přehled písem a barev](../extensibility/font-and-color-overview.md)  
  Tento článek popisuje nastavení písem a barev textu v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrované vývojové prostředí (IDE). Také seznámíte se základními pojmy kategorií a zobrazit položky a popisuje, jak pomocí rozšíření VSPackages a základní editor atributů textu.  
   
- [Písma a barvy informace pro barevné zvýraznění textu](../extensibility/getting-font-and-color-information-for-text-colorization.md)  
+ [Získání informací o písmu a barvě pro obarvení textu](../extensibility/getting-font-and-color-information-for-text-colorization.md)  
  Poskytuje pokyny pro implementaci zabarvení textu v balíčcích VSPackage, která spravovat **kategorie** jiné než **textový Editor**.  
   
- [Přístup k uložené písma a barev](../extensibility/accessing-stored-font-and-color-settings.md)  
+ [Přístup k uloženým nastavením písem a barev](../extensibility/accessing-stored-font-and-color-settings.md)  
  Vysvětluje, jak aktuální písmo a barvu nastavení lze ukládat, načíst a použít.  
   
- [Implementace vlastní kategorie a zobrazit položky](../extensibility/implementing-custom-categories-and-display-items.md)  
+ [Implementace vlastních kategorií a položek zobrazení](../extensibility/implementing-custom-categories-and-display-items.md)  
  Popisuje základní kroky, podle kterých můžete vytvářet a používat svůj vlastní z okna **zobrazit položky** a **kategorie** pro podporu zobrazení textu.  
   
  Tento přístup vyžaduje VSPackage k implementaci <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> rozhraní a související rozhraní.  
   
- [Postupy: přístup k vestavěné písma a barvy schéma](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [Postupy: Přístup k předdefinovaným písmům a barevnému schématu](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  Popisuje, jak definovat a registrovat kategorie pomocí integrované písmo a barvy a zahájení používání nástroje poskytované systémem písma a barvy.  
   
 ## <a name="reference"></a>Odkaz  

@@ -1,7 +1,7 @@
 ---
 title: Zveřejnění typů pro vizuální návrhářské nástroje | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e09161d7ea2e27fbc1f4c7bd68cc7da952d3f1d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 401ba1744ad03260140ca29d706f24d699863246
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667160"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242005"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Zveřejnění typů pro vizuální návrháře
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zveřejnění typů pro vizuální návrháře](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-types-to-visual-designers).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] aby bylo možné zobrazit vizuálního návrháře musí mít přístup do definice třídy a typ v době návrhu. Tříd jsou načteny z předdefinovanou sadu sestavení, které zahrnují závislost kompletní sadu aktuální projekt (odkazy a jejich závislosti). Může být také nezbytné pro vizuální návrháře tříd pro přístup k a typy, které jsou definovány v souborech generovaných vlastních nástrojů.  
   
  [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] a [!INCLUDE[csprcs](../../includes/csprcs-md.md)] systémů projektů poskytují podporu pro přístup k generovaných tříd a typů přes dočasné přenosné spustitelné soubory (dočasný odkaz PEs). Všechny soubory generované vlastní nástroj mohou být zkompilovány do dočasného sestavení tak, aby typy mohou být načtena z těchto sestavení a vystavit návrháře. Výstup každé vlastního nástroje se zkompiluje do samostatných dočasné přenositelné Spustitelné a úspěch nebo neúspěch Tato dočasná kompilace závisí jenom na, zda je či není vygenerovaný soubor může být zkompilován. I v případě, že projekt nemusí být sestaven jako celek, mohou jednotlivé dočasný odkaz PEs stále k dispozici do návrháře.  

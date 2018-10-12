@@ -1,7 +1,7 @@
 ---
 title: Generování kódu a textové šablony T4 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e57349e8c6f969986333eb8b12a9a3cf70ba3ce6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628622"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229817"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Vytvoření kódu a textové šablony T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [generování kódu a textové šablony T4](https://docs.microsoft.com/visualstudio/modeling/code-generation-and-t4-text-templates).  
-  
 V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], *textové šablony T4* je kombinací textové bloky a logiky ovládacího prvku, který může vytvořit textový soubor. Ovládací prvek logiky je zapsán jako fragmenty kódu programu v [!INCLUDE[csprcs](../includes/csprcs-md.md)] nebo [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. V aplikaci Visual Studio 2015 Update 2 nebo novější můžete použít funkce verze 6.0 C# ve směrnicích šablony T4. Vygenerovaný soubor může být text jakéhokoli druhu, například webovou stránku nebo soubor prostředků nebo zdrojový kód aplikace v jakémkoli jazyce.  
   
  Existují dva typy textových šablon T4:  

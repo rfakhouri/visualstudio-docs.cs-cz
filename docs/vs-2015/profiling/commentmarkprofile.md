@@ -1,7 +1,7 @@
 ---
 title: CommentMarkProfile | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c5d22de9eb9ad8294a77424cc98b5d3cf35735ee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a64b4a1510e92fee6fe881580681bd5c7c5200c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627703"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245918"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [CommentMarkProfile](https://docs.microsoft.com/visualstudio/profiling/commentmarkprofile).  
-  
 `CommentMarkProfile` Funkce vloží značku číselné a textové řetězce do souboru .vsp. Pro značky a komentáře, které má být vložen, profilování pro vlákna, které obsahuje `CommentMarkProfile` funkce musí být dále.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -120,7 +118,7 @@ void ExerciseCommentMarkProfile()
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Reference k rozhraní API sady Visual Studio Profiler (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Referenční dokumentace rozhraní Visual Studio Profiler API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)
 
 
 

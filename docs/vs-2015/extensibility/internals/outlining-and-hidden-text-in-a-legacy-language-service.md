@@ -1,7 +1,7 @@
 ---
 title: Osnova a skrytý Text ve službě starší verze jazyka | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 586c5d818c54894eea89149cab04b2481aaa9ce0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5de1a4cdf7d3b8ecd2cc1421e1647580ecb99c9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673166"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232515"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Osnova a skrytý text ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [osnova a skrytý Text ve službě starší verze jazyka](https://docs.microsoft.com/visualstudio/extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service).  
-  
 Sbalování umožňuje sbalit posloupnost řádky textu do jednoho řádku. Například v jazyce C++ mohou být sbalena všechny metody do jednoho řádku zobrazující pouze podpis metody. Skrytý text je posloupnost řádky textu, které může být zobrazený nebo skrytý.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  

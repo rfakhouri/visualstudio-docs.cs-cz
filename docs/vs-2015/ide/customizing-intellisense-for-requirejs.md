@@ -1,7 +1,7 @@
 ---
 title: Přizpůsobení IntelliSense pro RequireJS | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04cffba0f7bd03cbb4fb2fe228174377871c35f8
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 7b1c32d0096742c2364e5ac3b8afe59b39152b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246711"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>Přizpůsobení IntelliSense pro RequireJS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dokumentace k sadě Visual Studio 2017](/visualstudio/).  
-  
 Od verze Visual Studio 2013 Update 4, podpora pro oblíbené soubor RequireJS JavaScript a modulární zavaděč je podporována. RequireJS usnadňuje k definování závislostí mezi moduly kódu a dynamicky načíst moduly jenom v případě potřeby. Při psaní kódu jazyka JavaScript, který používá RequireJS, návrhy IntelliSense bude poskytována pro moduly, že jste na něj odkazovat z vaší definice modulu nebo odkazovat pomocí volání do `require()` z vašeho kódu.  
   
  Ve výchozím nastavení, Visual Studio podporuje velmi základní konfiguraci pro podporu RequireJS, ale je obvyklé nastavit nastavení vlastní konfigurace (to znamená, chcete-li definovat aliasy pro knihovny). Toto téma popisuje různé způsoby, které můžete přizpůsobit Visual Studio pro práci s nastavením vašeho projektu jedinečný.  

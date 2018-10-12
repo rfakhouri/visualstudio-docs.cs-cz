@@ -1,7 +1,7 @@
 ---
 title: Vytvoření textové šablony T4 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3cfa97bb4b46ddf84916d92ce8437eb80556b80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0f7a3da89f98d469dde60b98ad68de0574d10db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667720"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231631"
 ---
 # <a name="writing-a-t4-text-template"></a>Tvorba textové šablony T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytvoření textové šablony T4](https://docs.microsoft.com/visualstudio/modeling/writing-a-t4-text-template).  
-  
 Textová šablona obsahuje text, který z ní bude vygenerován. Například šablonu, která vytvoří webovou stránku bude obsahovat "\<html >..." a všechny ostatní standardní části stránky HTML. Do šablony jsou *řídicí bloky*, což jsou fragmenty kódu programu. Řídicí bloky poskytují různé hodnoty a umožňují, aby části textu byly podmíněné a opakované.  
   
  Tato struktura usnadňuje vývoj šablon, protože lze začít s prototypem generovaného souboru a postupně vkládat řídicí bloky, které změní výsledek.  

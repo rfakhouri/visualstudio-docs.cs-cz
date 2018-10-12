@@ -1,7 +1,7 @@
 ---
 title: Časovač | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a17f756a293ba8909054043713a14340ff9bf39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acca8f8bf77c465873bae25a61de18230a038234
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672000"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247678"
 ---
 # <a name="timer"></a>Časovač
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [časovače](https://docs.microsoft.com/visualstudio/profiling/timer).  
-  
 VSPerfCmd.exe **časovače** parametr nastaví události profilování, který se definuje tak, aby hodinových cyklů procesoru a volitelně změní počet cyklů v intervalu vzorkování z výchozí hodnoty 10 000 000. 10 000 000 hodinových cyklů procesoru s frekvencí 1 GHz (jeden GHz), je přibližně 100 vzorků za sekundu. Minimální počet cyklů, které je možné zadat je 50 000.  
   
  **Časovač** jde použít jenom při použití metoda profilování vzorkování a lze použít pouze v příkazovém řádku, který také obsahuje **spuštění** nebo **připojit** možnost.  

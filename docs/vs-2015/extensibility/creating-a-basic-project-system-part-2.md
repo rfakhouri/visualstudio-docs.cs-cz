@@ -1,7 +1,7 @@
 ---
 title: Vytvoření systému základního projektu, část 2 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea16f64d07450eabebb0ff49f8c8ea26a0214ffa
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 1e5661b7bd11891f43427749a158f33f07444e43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880198"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236636"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Vytvoření systému základního projektu, část 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytvoření základního systému projektu, část 2](https://docs.microsoft.com/visualstudio/extensibility/creating-a-basic-project-system-part-2).  
-  
 První názorný postup v této sérii [vytvoření základního systému projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md), ukazuje postup vytvoření systému základního projektu. Tento návod vychází systému základního projektu tak, že přidáte šablony sady Visual Studio, stránky vlastností a další funkce. Prvního průvodce musíte dokončit před zahájením tohoto objektu.  
   
  Tento názorný postup učí, jak vytvořit typ projektu, který má .myproj příponu názvu souboru projektu. Chcete-li dokončit tohoto průvodce, není nutné vytvořit vlastní jazyk, protože návodu vypůjčí z existující systém projektu Visual C#.  

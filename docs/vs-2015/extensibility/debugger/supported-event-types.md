@@ -1,7 +1,7 @@
 ---
 title: Podporované typy událostí | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33e6d8a8cdd0c5ee490ffb43fff69754a93549ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 846a889a22188249a1a42e8d66f0b3730a19dfc2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42665965"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228758"
 ---
 # <a name="supported-event-types"></a>Podporované typy událostí
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [podporované typy událostí](https://docs.microsoft.com/visualstudio/extensibility/debugger/supported-event-types).  
-  
 Ladění aplikace Visual Studio nyní podporuje následující typy událostí:  
   
 -   Asynchronní události  
@@ -43,11 +41,11 @@ Ladění aplikace Visual Studio nyní podporuje následující typy událostí:
   
      Upozornění SDM a rozhraní IDE, že právě laděné aplikace ukončila provádění kódu. Při odesílání událostí ukončení pomocí metody [události](../../extensibility/debugger/reference/idebugeventcallback2-event.md), [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) parametr je povinný. Ukončení události pocházejí voláním jedné z následujících metod:  
   
-    -   [Spuštění](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
+    -   [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
   
-    -   [Krok](../../extensibility/debugger/reference/idebugprogram2-step.md)  
+    -   [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
   
-    -   [pokračovat](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
+    -   [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
   
      Rozhraní [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) a [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) patří události zastavení.  
   

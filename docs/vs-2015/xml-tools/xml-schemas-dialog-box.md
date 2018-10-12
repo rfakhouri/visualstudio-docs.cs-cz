@@ -1,7 +1,7 @@
 ---
 title: Dialogové okno schémata XML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d388dc928b2f15c084034831a4b05f9d6420a65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e229919a625241f270090eb59be4aa8cd478c18c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674057"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251688"
 ---
 # <a name="xml-schemas-dialog-box"></a>Dialogové okno Schémata XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dialogové okno schémata XML](https://docs.microsoft.com/visualstudio/xml-tools/xml-schemas-dialog-box).  
-  
   
 **Schémat XML** se používá dialogové okno pro výběr které schématu definice jazyk (XSD) schématu XML pro přidružení k dokumentu XML. Můžete vybrat schéma z mezipaměti schémat nebo zadejte schéma, které se nenachází v mezipaměti. Vybrané schémata jsou považovány za součást této sadě schémat. Sadě schémat se používá technologie IntelliSense a také ověření dokumentu XML.  
   
@@ -47,7 +45,7 @@ Nejnovější verzi tohoto tématu můžete najít v [dialogové okno schémata 
  **Název souboru**  
  Zobrazuje název souboru schématu XML.  
   
- **Přidat**  
+ **Add**  
  Otevře **otevřít schéma XSD** dialogové okno, které vám umožní vybrat další schémata pro přidání do sady schémat. Při přidávání schématu do schématu nastavit **použití** nastavena na hodnotu sloupce **použít tohle schéma**.  
   
  **odebrat**  

@@ -1,7 +1,7 @@
 ---
 title: Scénáře instalace balíčku VSPackage | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b88dcef6eebe552c23268cb307248956db5486b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 819f6b9a1da5979e3e9647d6a0773d741f13e945
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253055"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scénáře instalace balíčku VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [scénáře instalace balíčku VSPackage](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-setup-scenarios).  
-  
 Je důležité při návrhu balíčku VSPackage instalační program pro flexibilitu. Například možná budete muset v budoucnu vydání opravy zabezpečení, nebo můžete změnit strategii, která vyžaduje podpora důkladné verzí vedle sebe.  
   
  V [podporuje více verzí sady Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md), si můžete přečíst o, jaké výhody a problémy podpory – souběžnými instalacemi sady [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] s sdílené nebo vedle sebe instalací vašeho balíčku VSPackage. Stručně řečeno, rozšíření VSPackages vedle sebe získáte největší flexibilitu pro podporu nových funkcí služby [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  

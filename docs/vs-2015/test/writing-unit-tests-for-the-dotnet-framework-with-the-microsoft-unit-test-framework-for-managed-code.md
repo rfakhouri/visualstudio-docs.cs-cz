@@ -1,7 +1,7 @@
 ---
 title: Zápis testů částí pro rozhraní .NET Framework s použitím rozhraní Microsoft Unit Test Framework pro spravovaný kód | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: fbeba971-c468-4429-8017-0f12ab55638c
 caps.latest.revision: 7
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ff3534a90e7d5924c2b11b6c9194b56ca76d451e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c90fc60e0eb040572d84bfe86bd46f56e7f3491f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671380"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247894"
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>Zápis testů částí pro rozhraní .NET Framework s infrastrukturou testů jednotek Microsoft Unit Test Framework pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zápis testů částí pro rozhraní .NET Framework k rozhraní testování částí Microsoft pro spravovaný kód](https://docs.microsoft.com/visualstudio/test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code).  
-  
 V tomto oddílu  
  [Návod: Vytváření a spouštění testů částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
@@ -38,7 +36,7 @@ V tomto oddílu
   
  [Testování částí pro obecné metody](../test/unit-tests-for-generic-methods.md)  
   
- [Postupy: cílení na dřívější verzi rozhraní .NET](../test/how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md)  
+ [Postupy: Cílení na dřívější verzi rozhraní .NET](../test/how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md)  
   
  [Ukázkový projekt testování částí](../test/sample-project-for-creating-unit-tests.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Rozhraní služby starší verze jazyka | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e68b9b5273d78d35086369f00106b1ebbde4a8ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 654a0d7de3ad75c541d14a38a2a897adb731ea7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633789"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249207"
 ---
 # <a name="legacy-language-service-interfaces"></a>Rozhraní služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [rozhraní služby starší verze jazyka](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-interfaces).  
-  
 Pro konkrétní programovací jazyk může být pouze jedna instance služby jazyka v čase. Jeden jazyk služby ale může sloužit více než jeden editoru.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Služba jazyka nepřidruží k žádné konkrétní editoru. Proto pokud požádáte o operaci služby jazyka, je nutné určit vhodného editoru jako parametr.  

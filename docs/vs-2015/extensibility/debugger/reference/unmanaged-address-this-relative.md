@@ -1,7 +1,7 @@
 ---
 title: UNMANAGED_ADDRESS_THIS_RELATIVE | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3792d56b1987e54b15e961a191ecee5d7a60e4fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eed6ea34bd61521eb8f4eb1764668c4db93dc166
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670396"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242018"
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [UNMANAGED_ADDRESS_THIS_RELATIVE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/unmanaged-address-this-relative).  
-  
 Tato struktura představuje adresu, která je vzhledem k `this` ukazatel (`Me` v jazyce Visual Basic).  
   
 ## <a name="syntax"></a>Syntaxe  

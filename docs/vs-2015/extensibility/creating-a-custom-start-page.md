@@ -1,7 +1,7 @@
 ---
 title: Vytvoření vlastní úvodní stránku | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b217c098f34240ddc4505821ae8446e4244605da
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 052f05c3485e9ecdfbfe74b6a142c44c7b0699ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775251"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239782"
 ---
 # <a name="creating-a-custom-start-page"></a>Vytvoření vlastní úvodní stránky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytvoření vlastní úvodní stránku](https://docs.microsoft.com/visualstudio/extensibility/creating-a-custom-start-page).  
-  
 Pokud nelze vytvořit vlastní úvodní stránky pomocí šablony projektu úvodní stránku, jak je popsáno v [úvodní stránky](../misc/creating-your-own-start-page.md), můžete vytvořit ručně pomocí následujících kroků v tomto dokumentu.  
   
 ## <a name="creating-a-blank-start-page"></a>Vytvoření prázdné úvodní stránky  

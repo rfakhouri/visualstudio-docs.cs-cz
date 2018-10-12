@@ -1,7 +1,7 @@
 ---
 title: Analýza výkonu nástroje Data | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 46
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb70fa86ac54c14d8105a0481b3a09b5aa777f39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ca00f13a6b15d934e6be9eb1a379de04ea5fc0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666551"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229135"
 ---
 # <a name="analyzing-performance-tools-data"></a>Analýza výkonu nástrojů pro Data
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [analýza dat nástrojů pro výkon](https://docs.microsoft.com/visualstudio/profiling/analyzing-performance-tools-data).  
-  
 Výkon sestavy z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro profilaci sady umožňují zobrazit a analyzovat problémy s výkonem aplikací. Tato část obsahuje přehled o výkonu sestav a zobrazení, která umožňuje zkoumat data o výkonu.  
   
 ## <a name="common-tasks"></a>Obecné úlohy  
@@ -45,9 +43,9 @@ Výkon sestavy z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro pro
 |**Konfigurace, řazení a filtrování zobrazení sestav:** můžete zadat a pořadí sloupců dat k zobrazení v sestavě, seřadit řádky sestavy a filtrovat data, která mají zahrnout jenom čas segment, který zadáte.|-   [Zobrazení sestav nástrojů pro přizpůsobení výkonu](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Porovnání datových souborů výkonu](../profiling/comparing-performance-data-files.md)  
+ [Porovnání souborů s údaji o výkonu](../profiling/comparing-performance-data-files.md)  
   
- [Ukládání a export výkonu nástrojů pro Data](../profiling/saving-and-exporting-performance-tools-data.md)  
+ [Uložení a export dat nástrojů pro měření výkonu](../profiling/saving-and-exporting-performance-tools-data.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Prohlížeč výkonu](../profiling/performance-explorer.md)

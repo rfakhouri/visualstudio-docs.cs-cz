@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Zobrazení odpovídající složené závorky | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11021dc98acfd80f1e91443cc834eb4ae0126455
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0568060ec19fc24731850b20dc70dfa7a48231d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632400"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247829"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Návod: Zobrazení párových složených závorek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: zobrazení odpovídající složené závorky](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-matching-braces).  
-  
 Budete moct implementovat založený na jazyce funkce, jako je například závorky definováním složené závorky, kterou chcete porovnat, a následným přidáním značky text značky do odpovídající složené závorky po blikající kurzor na jednom z složené závorky. Složené závorky můžete definovat v rámci jazyka, nebo můžete definovat vlastní název souboru příponu a obsah zadejte a použít značky jenom typu nebo můžete použít značky k existujícímu typu obsahu (jako je například "text"). Následující návod ukazuje, jak použít závorky značky "text" typu obsahu.  
   
 ## <a name="prerequisites"></a>Požadavky  

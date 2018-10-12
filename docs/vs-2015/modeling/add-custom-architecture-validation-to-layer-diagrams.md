@@ -1,7 +1,7 @@
 ---
 title: Přidání ověřování vlastní architektury do diagramů vrstev | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ef9831dd5268c545373433d728df7e36d31cf83
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2012ff0729853d365ed9bb32a9420f5b41bf47fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632200"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231091"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Přidání ověřování vlastní architektury do diagramů vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přidání ověřování vlastní architektury do diagramů závislostí](https://docs.microsoft.com/visualstudio/modeling/add-custom-architecture-validation-to-layer-diagrams).  
-  
 V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti vrstvě modelu, tak, aby mohli ověřit, že zdrojový kód odpovídá závislostem na diagramu vrstvy. Existuje standardní ověřovací algoritmus, ale můžete definovat vlastní rozšíření ověřování.  
   
  Když uživatel vybere **ověřit architekturu** příkaz na diagramu vrstvy, je vyvolána metoda standardního ověření, následovaný všemi rozšířeními ověření, které byly nainstalovány.  

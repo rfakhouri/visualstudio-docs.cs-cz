@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: omezení instrumentace na konkrétní knihovny DLL | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b99a67921739f620c908f1551f0f8a29a5aac73a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d61879e967e2e75f0edcd2d91bd7e31fd4d9382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629255"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234517"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Postupy: Omezení instrumentace na konkrétní knihovny DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: omezení instrumentace na konkrétní knihovny DLL](https://docs.microsoft.com/visualstudio/profiling/how-to-limit-instrumentation-to-specific-dlls).  
-  
 Pomocí metody profilace instrumentace můžete omezit shromažďování dat profilování na jeden nebo více knihovny DLL v aplikaci. Chcete-li Profilovat jeden nebo více knihoven DLL v aplikaci, vytvoříte relace výkonu, který obsahuje soubory .dll jako cíle. Můžete určit knihovny DLL, které chcete Profilovat jako projekty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení nebo jako nezávislé binární soubory.  
   
 ### <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>K omezení instrumentace na konkrétní knihovny DLL v řešení sady Visual Studio  
@@ -79,7 +77,7 @@ Pomocí metody profilace instrumentace můžete omezit shromažďování dat pro
   
 ## <a name="see-also"></a>Viz také  
  [Řízení sběru dat](../profiling/controlling-data-collection.md)   
- [Postupy: omezení instrumentace na konkrétní funkce](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+ [Postupy: Omezení instrumentace na konkrétní funkce](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
 
 
 

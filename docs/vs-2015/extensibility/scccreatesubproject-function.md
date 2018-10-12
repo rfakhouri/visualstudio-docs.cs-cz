@@ -1,7 +1,7 @@
 ---
 title: Scccreatesubproject – funkce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d940dc4ae8a4b36e37ef521c3c0dca1491fedf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e62e1567559898b198866fe3e67e9b5b53096273
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666789"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232086"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [funkcí scccreatesubproject –](https://docs.microsoft.com/visualstudio/extensibility/scccreatesubproject-function).  
-  
 Tato funkce vytvoří dílčí projekt s daným názvem. v rámci existující projekt nadřazené určené `lpParentProjPath` argument.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -103,5 +101,5 @@ SCCRTN SccCreateSubProject(
 ## <a name="see-also"></a>Viz také  
  [Funkce rozhraní API modulu Plug-in zdroje ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)   
  [Sccgetparentprojectpath –](../extensibility/sccgetparentprojectpath-function.md)   
- [Sccgetprojpath –](../extensibility/sccgetprojpath-function.md)
+ [SccGetProjPath](../extensibility/sccgetprojpath-function.md)
 

@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d10dc52dfdf628caed5439a969ba5ce3d2377ceb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad4fdd53c992e618114d88f78bff105074c71172
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674658"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237104"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [IDebugComPlusSymbolProvider](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcomplussymbolprovider).  
-  
 Představuje zprostředkovatele symbol modelu COM + s metodami, které jsou specifické pro spravovaný kód.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -47,14 +45,14 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 |[CreateTypeFromPrimitive](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-createtypefromprimitive.md)|Vytvoří typ z určeného primitivního typu.|  
 |[GetAddressesInModuleFromPosition](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getaddressesinmodulefromposition.md)|Pozice dokumentu v zadaném modulu se mapuje na pole adresy ladění.|  
 |[GetArrayTypeFromAddress](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getarraytypefromaddress.md)|Načte zadejte informace o zadané pole na základě daných jeho adresa pro ladění.|  
-|[Getassemblyname –](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getassemblyname.md)|Načte název sestavení zadané jeho modulu a aplikační domény.|  
+|[GetAssemblyName](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getassemblyname.md)|Načte název sestavení zadané jeho modulu a aplikační domény.|  
 |[GetAttributedClassesForLanguage](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getattributedclassesforlanguage.md)|Načte tříd, které jsou implementovány v daném programovací jazyk pomocí zadaného atributu.|  
 |[GetAttributedClassesinModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getattributedclassesinmodule.md)|Načte třídy pomocí zadaného atributu v zadaném modulu.|  
 |[GetEntryPoint](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getentrypoint.md)|Načte vstupní bod aplikace.|  
 |[GetFunctionLineOffset](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getfunctionlineoffset.md)|Načte adresu v rámci funkce, která představuje posun daném řádku.|  
 |[GetLocalVariablelayout](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getlocalvariablelayout.md)|Načte rozložení lokální proměnné pro sadu metod.|  
-|[Getnamefromtoken –](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getnamefromtoken.md)|Vrátí název přidružený k zadaný token zadaný objekt jeho metadat.|  
-|[Getsymattribute –](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getsymattribute.md)|Načte symboly ladění s atributem daná nadřazená pro zadaný modul.|  
+|[GetNameFromToken](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getnamefromtoken.md)|Vrátí název přidružený k zadaný token zadaný objekt jeho metadat.|  
+|[GetSymAttribute](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getsymattribute.md)|Načte symboly ladění s atributem daná nadřazená pro zadaný modul.|  
 |[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getsymunmanagedreader.md)|Načte modul pro načítání symbolů pro nespravovaný kód.|  
 |[GetTypeFromAddress](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-gettypefromaddress.md)|Načte do typ symbolu zadané adresy ladění.|  
 |[IsFunctionDeleted](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-isfunctiondeleted.md)|Určuje, pokud je funkce na adrese zadaný ladění odstranila.|  

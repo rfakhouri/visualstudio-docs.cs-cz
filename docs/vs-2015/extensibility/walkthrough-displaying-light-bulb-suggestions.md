@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Zobrazení návrhů | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c36dad27a4d4a5bff5381b99041f7221447645e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252496"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Návod: Zobrazení návrhů v podobě žárovky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: zobrazení návrhů](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-light-bulb-suggestions).  
-  
 Ikony žárovky jsou ikony používané v editoru sady Visual Studio, které rozbalí a zobrazí sadu akcí, například opravy problémů, které jsou identifikované analyzátorů integrované kódu a refaktoring kódu.  
   
  V editoru Visual C# a Visual Basic také můžete platformě kompilátoru .NET ("Roslyn") pro zápis a balíček vlastních analyzátorů kódu s akcemi, které se automaticky zobrazí návrhy. Další informace naleznete v tématu:  

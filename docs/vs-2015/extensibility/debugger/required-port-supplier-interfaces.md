@@ -1,7 +1,7 @@
 ---
 title: Požadovaná rozhraní dodavatele portu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 960cd5668fe49ba50e79f036848948ec8e0bbfc2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 251b5c9d96ac7d0e82705c81b1b568e2d85b88f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667550"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248181"
 ---
 # <a name="required-port-supplier-interfaces"></a>Požadovaná rozhraní dodavatele portu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [požadované rozhraní dodavatele portu](https://docs.microsoft.com/visualstudio/extensibility/debugger/required-port-supplier-interfaces).  
-  
 Musí implementovat dodavatele portu [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) rozhraní.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
   
  Protože dodavatele portu poskytuje porty, musí je také implementovat. Proto musí implementovat rozhraní následující:  
@@ -61,7 +59,7 @@ Musí implementovat dodavatele portu [IDebugPortSupplier2](../../extensibility/d
   
     -   [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
   
-    -   [GetName –](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
+    -   [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
   
     -   [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
   
@@ -79,9 +77,9 @@ Musí implementovat dodavatele portu [IDebugPortSupplier2](../../extensibility/d
   
      Popisuje logické programu. Minimálně musí implementovat následující metody:  
   
-    -   [GetName –](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
+    -   [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
   
-    -   [Getprocess –](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
+    -   [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
   
     -   [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)  
   

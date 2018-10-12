@@ -1,7 +1,7 @@
 ---
 title: Vlastnosti přidružení v UML diagramech tříd | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 96dc1d942a06e4030992889970fd3946d2e4d9d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8274cd45142886dd71e0c8ce8e1950c0fee9609
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629641"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252063"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>Vlastnosti přidružení v diagramech tříd UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vlastnosti přidružení v UML diagramech tříd](https://docs.microsoft.com/visualstudio/modeling/properties-of-associations-on-uml-class-diagrams).  
-  
 V diagramu tříd UML lze nakreslit *přidružení* mezi nějaká dvojice typy. Typ je třída, rozhraní nebo výčet.  
   
  Přidružení označuje, že systém, který vyvíjíte ukládá odkazů mezi instancemi přidružené typy určitého druhu. Obecně platí neznamená to nic o implementaci odkazy. Například se může být, že ukazatele, řádky v tabulce, křížové odkazy. názvy ve formátu XML a tak dále.  
@@ -74,7 +72,7 @@ V diagramu tříd UML lze nakreslit *přidružení* mezi nějaká dvojice typy. 
  [Vlastnosti typů v diagramech tříd UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Vlastnosti atributů v diagramech tříd UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Vlastnosti operací v diagramech tříd UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)
+ [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)
 
 
 

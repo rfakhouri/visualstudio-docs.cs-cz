@@ -1,7 +1,7 @@
 ---
 title: Správa zabezpečení | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c2093e33b2a6b3424b39c8377f8168afd1e90939
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 793ec2b6f5ccfad1ded9f8a4cc2d4e6c4b994f0f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673477"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230794"
 ---
 # <a name="maintaining-security"></a>Správa zabezpečení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zachování zabezpečení](https://docs.microsoft.com/visualstudio/ide/maintaining-security).  
-  
 Často se říká, že cenou zabezpečení je neustálá bdělost. Navzdory maximální pozornosti věnované zabezpečení během navrhování a vývoje vaší aplikace byste měli předpokládat, že se po nasazení objeví určité problémy se zabezpečením. Auditováním aplikace a analýzou protokolů událostí můžete objevit některé dříve skryté závady.  
   
  Musíte být nejen ostražití ve vztahu ke své aplikaci, ale musíte mít také přehled o aktuálních bezpečnostních hrozbách a nedostatcích v případě platformy, na které aplikace běží, a v případě ostatních produktů, na kterých vaše aplikace závisí.  

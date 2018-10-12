@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: Správa režimů editoru | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e679c751f5d4e8aa23bb843f812476f2f9e9f5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d38812007e042d014cb0090f1334bee2cce0858
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674515"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229213"
 ---
 # <a name="how-to-manage-editor-modes"></a>Postupy: Správa režimů editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: Správa režimů editoru](https://docs.microsoft.com/visualstudio/ide/how-to-manage-editor-modes).  
-  
 Editoru kódu sady Visual Studio můžete zobrazit v různých režimech zobrazení.  
   
 > [!NOTE]
@@ -75,7 +73,7 @@ Editoru kódu sady Visual Studio můžete zobrazit v různých režimech zobraze
 ## <a name="see-also"></a>Viz také  
  [Vlastní nastavení editoru](../ide/customizing-the-editor.md)   
  [Postupy: rozvržení a dokování Windows](../misc/how-to-arrange-and-dock-windows.md)   
- [Písma a barvy, prostředí, dialogové okno Možnosti](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+ [Písma a barvy, Prostředí, dialogové okno Možnosti](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Přidání vlastních vlastností do diagramů vrstev | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1fc9c3e67cbb10484c814acb0eedbfbae2729eb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b43f7ab5a3247bbff4954616732aa0861726cc2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632293"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235154"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Přidání vlastních vlastností do diagramů vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přidání vlastních vlastností do diagramů závislostí](https://docs.microsoft.com/visualstudio/modeling/add-custom-properties-to-layer-diagrams).  
-  
 Při psaní kódu rozšíření pro diagramy vrstev můžete ukládat hodnoty libovolným prvkem na diagram vrstev. Hodnoty přetrvají i po uložení a opětovném otevření diagramu. Je také možné tyto vlastnosti zobrazit v **vlastnosti** okna tak, aby uživatelé mohou zobrazit a upravovat. Například můžete umožnit uživatelům určit regulární výraz pro každou vrstvu a psát ověřovací kód pro ověření, že názvy tříd v každé vrstvě odpovídají vzoru určenému uživatelem.  
   
 ## <a name="properties-not-visible-to-the-user"></a>Vlastnosti nejsou viditelné uživateli  

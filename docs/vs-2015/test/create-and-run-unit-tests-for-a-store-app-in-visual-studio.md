@@ -1,7 +1,7 @@
 ---
 title: Vytváření a spouštění testů jednotek aplikace pro Store v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 76a73232cf4c522baf261d50910d188234e8a4c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea2cf8293a0969a152e38304b469e0b4042073c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667979"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249504"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Vytváření a spouštění testů jednotek aplikace pro Store v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytvořit a spustit jednotkové testy pro app Store v sadě Visual Studio](https://docs.microsoft.com/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio).  
-  
 Nástroje testování částí Visual Studio 2012 Express pro Windows 8 jsou navrženy pro podporu vývojářů a týmů, které začlenily testování jednotek v svých praktik vývoje. Testování částí poskytuje vývojářům a testerům, efektivní a udržovatelný způsob vyhledávání logických chyb v rámci metod tříd v projektech Visual C#, Visual Basic a Visual C++.  
   
 > [!NOTE]
@@ -40,11 +38,11 @@ Nástroje testování částí Visual Studio 2012 Express pro Windows 8 jsou nav
 >  Další informace najdete v tématu [svůj kód testu jednotek](../test/unit-test-your-code.md) v knihovně MSDN.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Testování částí kódu jazyka C#](../test/unit-testing-visual-csharp-code-in-a-store-app.md)  
+ [Test jednotek kódu C#](../test/unit-testing-visual-csharp-code-in-a-store-app.md)  
   
- [Testování knihovny DLL v C++](../test/unit-testing-a-visual-cpp-dll-for-store-apps.md)  
+ [Testování jednotek knihovny DLL jazyka C++](../test/unit-testing-a-visual-cpp-dll-for-store-apps.md)  
   
- [Spouštění testování částí v Průzkumníku testů](../test/run-unit-tests-for-store-apps-in-visual-studio.md)
+ [Spouštění testů jednotek v Průzkumníku testů](../test/run-unit-tests-for-store-apps-in-visual-studio.md)
 
 
 

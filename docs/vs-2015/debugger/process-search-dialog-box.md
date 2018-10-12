@@ -1,7 +1,7 @@
 ---
 title: Dialogové okno hledání procesů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 455921678267ae918175445bdd06fe4391f84fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43f856e849974375e9360dac1844e634c9915000
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672162"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244644"
 ---
 # <a name="process-search-dialog-box"></a>Dialogové okno hledání procesů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dialogové okno hledání procesů](https://docs.microsoft.com/visualstudio/debugger/process-search-dialog-box).  
-  
 Pomocí tohoto dialogového najděte a vyberte uzel pro konkrétní proces v [zobrazení procesy](../debugger/processes-view.md). Zobrazíte dialogovému oknu přesunout fokus **procesy** zobrazení okna. Klikněte na tlačítko **najít proces** z **hledání** nabídky.  
   
  K dispozici jsou následující nastavení:  
@@ -54,7 +52,7 @@ Pomocí tohoto dialogového najděte a vyberte uzel pro konkrétní proces v [zo
  [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
  Seznámíte se nástroje Spy ++, jak je možné.  
   
- [Dialogové okno vlastností procesu](../debugger/process-properties-dialog-box.md)  
+ [Dialogové okno vlastností procesů](../debugger/process-properties-dialog-box.md)  
  Slouží k zobrazení vlastností procesu vybrána v zobrazení procesy.  
   
  [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  

@@ -1,7 +1,7 @@
 ---
 title: Parametry šablony | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eb91c5137ff405562115cbe318d6a723d369d95
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676092"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238898"
 ---
 # <a name="template-parameters"></a>Parametry šablony
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [parametry šablony](https://docs.microsoft.com/visualstudio/ide/template-parameters).  
-  
 Pomocí parametrů v šablonách lze při vytváření instance šablony nahradit hodnoty nejdůležitějších částí šablony, jako jsou názvy tříd a obory názvů. Tyto parametry jsou nahrazené Průvodce šablonou, která běží na pozadí, když uživatel klikne **OK** v **nový projekt** nebo **přidat novou položku** dialogových oknech.  
   
 ## <a name="declaring-and-enabling-template-parameters"></a>Deklarace a povolení parametry šablony  

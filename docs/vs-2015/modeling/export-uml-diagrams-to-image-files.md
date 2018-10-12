@@ -1,7 +1,7 @@
 ---
 title: Export diagramů UML do souborů obrázků | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 72df20d9d696d6a7febc7931e7a1e342a07632a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93972dfda37b47c3d8b7ae25cfdf8e69578af1ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670260"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228355"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Export diagramů UML do souborů obrázků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [diagramy UML exportovat do souborů obrázků](https://docs.microsoft.com/visualstudio/modeling/export-uml-diagrams-to-image-files).  
-  
 Můžete to taky dokumentu UML z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pro bitovou kopii, která je v rámci řízení programu. Například můžete chtít provést jako součást generování automatických dokumentu.  
   
  Pokud chcete exportovat dokumentu do bitové kopie ručně, je zkopírujte a vložte tvary v diagramu do jiných aplikací, jako je Word. Můžete také vytisknout dokumenty do formátu XPS. Další informace najdete v tématu [exportování diagramů jako obrázků](../modeling/export-diagrams-as-images.md).  
@@ -148,7 +146,7 @@ namespace SaveToImage
   
 ## <a name="see-also"></a>Viz také  
  [Exportování diagramů jako obrázků](../modeling/export-diagrams-as-images.md)   
- [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+ [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
 
 
 
