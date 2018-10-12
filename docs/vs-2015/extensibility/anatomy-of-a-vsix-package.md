@@ -1,7 +1,7 @@
 ---
 title: Anatomie balíčku VSIX | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 645d9bff0b1f1bd3ac3afe3f5c815d9b9cd208d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 207abbda08134c2a1e065cf73050fc2451d4eaab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181455"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie balíčku VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [anatomie balíčku VSIX](https://docs.microsoft.com/visualstudio/extensibility/anatomy-of-a-vsix-package).  
-  
 Balíček VSIX je souboru .vsix, který obsahuje jeden nebo více rozšíření sady Visual Studio spolu s metadaty, který sada Visual Studio používá ke klasifikaci a nainstalovat rozšíření. Tato metadata jsou obsaženy v manifestu VSIX a souboru [Content_Types] .xml. Balíčku VSIX může obsahovat také jeden nebo více souborů Extension.vsixlangpack poskytnout textu lokalizované instalace a může obsahovat další balíčky VSIX nainstalovat závislosti.  
   
  Formát balíčku VSIX dodržuje standardní konvence Open Packaging (OPC). Balíček obsahuje binární soubory a podpůrné soubory, společně s souboru [Content_Types] .xml a .vsix soubor manifestu. Jeden VSIX balíček může obsahovat výstupu více projektů nebo dokonce více balíčků, které mají své vlastní manifest.  

@@ -1,7 +1,7 @@
 ---
 title: Referenční dokumentace schématu fragmentů kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9dfcb6e7bc29fe29f33b919545a6781a731b7734
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19a14972d36bcb7070e0604b47caab55f41d0126
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188105"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kódu – odkaz schématu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [fragmenty kódu – odkaz schématu](https://docs.microsoft.com/visualstudio/ide/code-snippets-schema-reference).  
-  
 Fragmenty kódu technologie IntelliSense jsou předem vytvořené části kódu, které jsou připraveny k vložení do vaší aplikace pomocí [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Svou produktivitu můžete zvýšit tak, že vytvoříte fragmenty kódu, které snižují množství času stráveného zadáváním opakujícího se kódu nebo hledáním ukázek. Schématu XML fragmentu kódu technologie IntelliSense můžete použít k vytvoření své vlastní fragmenty kódu a přidat k fragmentům kódu, který [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] již obsahuje.  
   
 ## <a name="intellisense-code-snippets-schema-elements"></a>Elementy schématu fragmentů kódu technologie IntelliSense  

@@ -1,7 +1,7 @@
 ---
 title: Instalace a Správa místního obsahu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 298448421430491cba3c367dc1976cf755f2b601
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685080"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193833"
 ---
 # <a name="install-and-manage-local-content"></a>Instalace a správa místního obsahu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [nainstalovat a spravovat místní obsah](https://docs.microsoft.com/visualstudio/ide/install-and-manage-local-content).  
-  
 Pomocí Microsoft Help Viewer můžete přidat, odebrat, aktualizovat a přesunout obsah nápovědy, který je nainstalován v počítači podle vašich potřeb vývoje softwaru.  
   
  Pokud chcete spravovat obsah v místním počítači, musí se přihlásit pomocí účtu, který má oprávnění správce. Kromě toho nemusí být schopné spravovat místní obsah, pokud pracujete v podnikovém prostředí, protože správci systému mohou tyto rozhodování pro vaši organizaci. Další informace najdete v tématu [pomáhají Příručka pro správce prohlížeč](../ide/help-viewer-administrator-guide.md).  

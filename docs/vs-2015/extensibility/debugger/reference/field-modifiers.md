@@ -1,7 +1,7 @@
 ---
 title: FIELD_MODIFIERS | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 223a1c0ddf66cc7e309792656f4debd4d1221756
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d66aa2646c4110933c8143fd0f716d39257587f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677296"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174821"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [FIELD_MODIFIERS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/field-modifiers).  
-  
 Určuje modifikátory pro typ pole.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -204,5 +202,5 @@ public enum enum_FIELD_MODIFIERS {
 ## <a name="see-also"></a>Viz také  
  [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)   
- [Enumfields –](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)
+ [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)
 

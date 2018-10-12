@@ -1,7 +1,7 @@
 ---
 title: 'Diagramy tříd UML: Pokyny | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 56
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 073fb32fae3d02e7edaa8adb8347901e797d047f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9c7b5f5a88e8563930615c883c6911956932d17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674272"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181776"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramy tříd UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [diagramů tříd UML: pokyny](https://docs.microsoft.com/visualstudio/modeling/uml-class-diagrams-guidelines).  
-  
 V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datových typů a jejich vztahů nezávisle na jejich implementaci. Díky diagramu se lze místo jejich implementace zaměřit na logické aspekty tříd.  
   
  Chcete-li vytvořit diagram tříd UML, na **architektura** nabídce zvolte **nového diagramu UML nebo diagramu vrstev**.  
@@ -172,9 +170,9 @@ V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datovýc
   
  Podrobné informace o všech vlastnostech, které lze nastavit, lze nalézt v tématech:  
   
--   [Vlastnosti atributů v diagramech tříd UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+-   [Vlastnosti atributů v diagramech tříd UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Vlastnosti operací v diagramech tříd UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+-   [Vlastnosti operací v diagramech tříd UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
 ### <a name="types-of-attributes-and-operations"></a>Typy atributů a operací  
  Každý *typ* atributu nebo operace a každý typ parametru může být jedna z následujících akcí:  
@@ -484,7 +482,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
  [Sekvenční diagramy UML: referenční dokumentace](../modeling/uml-sequence-diagrams-reference.md)   
  [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)
+ [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)
 
 
 

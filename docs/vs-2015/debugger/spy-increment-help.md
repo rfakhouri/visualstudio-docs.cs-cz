@@ -1,7 +1,7 @@
 ---
 title: Nápověda nástroje Spy ++ | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 383322fb5b79820cdd05208b807071e5fd125377
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a61446ef9f0cff37a2d07fc2e6111321dbef32d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674236"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196940"
 ---
 # <a name="spy-help"></a>Nápověda nástroje Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Nápověda nástroje Spy ++](https://docs.microsoft.com/visualstudio/debugger/spy-increment-help).  
-  
 Dokumentace k nástroji Spy ++ zahrnuje dvě skupiny obecná témata na použití nástroje Spy ++ a v zobrazení nástroje Spy ++. Tyto jsou následována nástroje Spy ++ odkaz, který obsahuje další podrobné informace o každé pole dialogové okno a příkaz nabídky k dispozici.  
   
 ## <a name="using-spy"></a>Použití nástroje Spy++  
@@ -44,10 +42,10 @@ Dokumentace k nástroji Spy ++ zahrnuje dvě skupiny obecná témata na použit�
  [Dialogové okno písem](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
  Slouží ke konfiguraci znak písmo použité v okně zobrazení nástroje Spy ++.  
   
- [Vyhledávací nástroje pro zobrazení nástroje Spy ++](../debugger/search-tools-for-spy-increment-views.md)  
+ [Vyhledávací nástroje pro zobrazení nástroje Spy++](../debugger/search-tools-for-spy-increment-views.md)  
  Dialogová okna použit k vyhledání specifické uzlu v okně zobrazení nástroje Spy ++.  
   
- [Dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md)  
+ [Dialogové okno vlastností oken](../debugger/window-properties-dialog-box.md)  
  Slouží k zobrazení vlastností okna vybrána v zobrazení Windows.  
   
  [Dialogové okno možností zpráv](../debugger/message-options-dialog-box.md)  
@@ -56,7 +54,7 @@ Dokumentace k nástroji Spy ++ zahrnuje dvě skupiny obecná témata na použit�
  [Dialogové okno vlastností zpráv](../debugger/message-properties-dialog-box.md)  
  Slouží k zobrazení vlastnosti zprávy vybrána v zobrazení zpráv.  
   
- [Dialogové okno vlastností procesu](../debugger/process-properties-dialog-box.md)  
+ [Dialogové okno vlastností procesů](../debugger/process-properties-dialog-box.md)  
  Slouží k zobrazení vlastností procesu vybrána v zobrazení procesy.  
   
  [Dialogové okno vlastností vláken](../debugger/thread-properties-dialog-box.md)  

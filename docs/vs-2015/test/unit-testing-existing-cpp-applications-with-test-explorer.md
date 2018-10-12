@@ -1,7 +1,7 @@
 ---
 title: Testování částí stávajících aplikací C++ pomocí Průzkumníka testů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 040e3f0a236067a96d107f64f4c9aca06d0706e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63761dc543b327c1c8639203c80afb92d4700c8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629266"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172455"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Testování částí stávajících aplikací C++ pomocí Průzkumníka testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [testování částí stávajících aplikací C++ pomocí Průzkumníka testů](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer).  
-  
 Doporučujeme, před změnou existující aplikace, zkontrolujte, že na něm dobrým pokrytá jednotkovými testy. To vám dává jistotu, že vaše změny nebyly zavedeny chyby. Pokud aplikace neobsahuje jednotkové testy, můžete je přidat pomocí technik naznačených v tomto tématu. Toto téma popisuje, jak přidat jednotkové testy pro existující kód jazyka Visual C++, počínaje rozhodnutí o způsobu testování kódu a vytváření a psaní a nakonec, spouštění testů.  
   
 ## <a name="deciding-how-to-test-your-code"></a>Rozhodnutí o způsobu testování kódu  

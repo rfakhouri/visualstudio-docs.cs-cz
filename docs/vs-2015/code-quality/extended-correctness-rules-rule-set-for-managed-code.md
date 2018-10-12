@@ -1,7 +1,7 @@
 ---
 title: Nastavení pravidel rozšířená pravidla správnosti pro spravovaný kód | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aa22234c797a47fba945ba65343532df3565aefc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cebb3f492bb3aec873f503c2efcacb7220ec9739
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671291"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187421"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Sada pravidel Rozšířená pravidla správnosti pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sada pravidel rozšířená pravidla správnosti pro spravovaný kód](https://docs.microsoft.com/visualstudio/code-quality/extended-correctness-rules-rule-set-for-managed-code).  
-  
 Sada pravidel Microsoftu rozšířená pravidla správnosti maximalizuje logiku a framework chyby využití, které jsou hlášeny sadou analýzy kódu. Je kladen zvláštní důraz na konkrétní scénáře, jako je například interoperabilita modelů COM a mobilní aplikace. Měli byste zvážit, včetně toto pravidlo nastavte, pokud jeden z těchto scénářů vztahuje k vašemu projektu nebo pro nalezení dalších problémů ve vašem projektu.  
   
  Sada pravidel Microsoftu rozšířená pravidla správnosti obsahuje pravidla, která jsou v pravidel základní pravidla správnosti společnosti Microsoft nastavit. Základní pravidla správnosti obsahovat pravidla, která jsou v pravidle Microsoft Minimální doporučená pravidla nastavena. Další informace najdete v části [sada pravidel základní pravidla správnosti pro spravovaný kód](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) a [sada pravidel spravovaná doporučená pravidla pro spravovaný kód](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

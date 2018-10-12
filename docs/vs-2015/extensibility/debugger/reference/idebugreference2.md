@@ -1,7 +1,7 @@
 ---
 title: IDebugReference2 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8dcb8734057e3308f28cce471670bde8aed8a748
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d78a77d45183272994d05c85fe79ad84759ecb23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677566"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187457"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [IDebugReference2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugreference2).  
-  
 Toto rozhraní představuje odkaz na vlastnost rámce zásobníku nebo některé jiné vlastnosti.  
   
 > [!NOTE]
@@ -55,13 +53,13 @@ IDebugReference2 : IUnknown
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|Nastaví hodnotu tohoto odkazu z řetězce.|  
 |[SetValueAsReference](../../../extensibility/debugger/reference/idebugreference2-setvalueasreference.md)|Nastaví hodnotu tohoto odkazu z jiného odkazu.|  
 |[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)|Vytvoří výčet podřízených prvků tohoto odkazu.|  
-|[Getparent –](../../../extensibility/debugger/reference/idebugreference2-getparent.md)|Získá nadřazený tento odkaz.|  
+|[GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md)|Získá nadřazený tento odkaz.|  
 |[GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md)|Získá nejvíce odvozenému odkaz na tento odkaz.|  
 |[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)|Získá počet bajtů paměti, na které odkazuje tento odkaz.|  
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)|Získá kontext paměti pro tento odkaz.|  
 |[GetSize](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Získá velikost v bajtech, tento odkaz.|  
 |[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Nastaví tento typ odkazu.|  
-|[Porovnání](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Porovná tento odkaz s jiným.|  
+|[Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Porovná tento odkaz s jiným.|  
   
 ## <a name="remarks"></a>Poznámky  
   
@@ -85,5 +83,5 @@ IDebugReference2 : IUnknown
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [Getreference –](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)
+ [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)
 

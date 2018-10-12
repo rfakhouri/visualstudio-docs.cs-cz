@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vytvoření vlastního textu značky | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0467c2516e0d4aab94c36245fd6c24d871ac03cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05c8e43d90837ec73f4d6674e35581eecc5d2e3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668487"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181620"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Postupy: vytvoření vlastního textu značky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: vytvoření vlastní Text značky](https://docs.microsoft.com/visualstudio/extensibility/how-to-create-custom-text-markers).  
-  
 Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu, je nutné provést následující kroky:  
   
 -   Zaregistrujte nový text značky, tak, aby k němu mají přístup jiných nástrojů  
@@ -100,5 +98,5 @@ Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu
  [Text značky pomocí starší verze rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Postupy: Přidání standardní Text značky](../extensibility/how-to-add-standard-text-markers.md)   
  [Postupy: implementace označování chyb](../extensibility/how-to-implement-error-markers.md)   
- [Postupy: použití značek Text](../extensibility/how-to-use-text-markers.md)
+ [Postupy: Použití textových značek](../extensibility/how-to-use-text-markers.md)
 

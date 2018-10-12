@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Sbalení | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6737d9fffa1f0f38fab57edd4031647d0cc1510e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d86dd811339122415a4511b7b7cf28f239be752
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669794"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181971"
 ---
 # <a name="walkthrough-outlining"></a>Návod: Sbalení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: sbalení](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-outlining).  
-  
 Budete moct implementovat založený na jazyce funkce, jako je například sbalování tak, že definujete druhy textu oblastí, které chcete rozbalit nebo sbalit. Můžete definovat oblastí v rámci služby jazyka, nebo můžete definovat vlastní název souboru příponu a obsah zadejte a použít definici oblasti s pouze tímto typem nebo oblasti definice můžete použít k existujícímu typu obsahu (jako je například "text"). Tento návod ukazuje, jak definovat a zobrazení sbalování oblastí.  
   
 ## <a name="prerequisites"></a>Požadavky  

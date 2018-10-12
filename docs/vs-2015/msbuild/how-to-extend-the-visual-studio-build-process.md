@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: rozšíření procesu sestavení sady Visual Studio | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa46b55745fcd07ddbc8e66804f5df4125c244e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f318f6092c24c58399b40c7a20c967a89ca5219
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191629"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Postupy: Rozšíření procesu sestavení sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: rozšíření procesu sestavení Visual Studio](https://docs.microsoft.com/visualstudio/msbuild/how-to-extend-the-visual-studio-build-process).  
-  
   
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Procesu sestavení je definován pomocí posloupnosti [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] – soubory .targets, které jsou importovány do souboru projektu. Některý z těchto importovaných souborů webu Microsoft.Common.targets je možné rozšířit, aby bylo možné spouštět vlastní úlohy na několika místech v procesu sestavení. Toto téma vysvětluje, dvě metody, které vám umožní rozšířit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] procesu sestavení:  
   
@@ -136,7 +134,7 @@ Nejnovější verzi tohoto tématu můžete najít v [postupy: rozšíření pro
 ## <a name="see-also"></a>Viz také  
  [Integrace se sadou Visual Studio](../msbuild/visual-studio-integration-msbuild.md)   
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
- [. Soubory cíle](../msbuild/msbuild-dot-targets-files.md)
+ [Soubory .Targets](../msbuild/msbuild-dot-targets-files.md)
 
 
 

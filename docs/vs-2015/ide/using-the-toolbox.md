@@ -1,7 +1,7 @@
 ---
 title: Používání sady nástrojů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 140387efef05d7f03812a2d5147aa3cdfc111ed1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28f142a011f86afe70bfe83fd2cec274548c7b50
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632591"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173144"
 ---
 # <a name="using-the-toolbox"></a>Používání sady nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [používání sady nástrojů](https://docs.microsoft.com/visualstudio/ide/using-the-toolbox).  
-  
 Panelu nástrojů můžete použít k přidání ovládacích prvků a dalších položek do projektu. Můžete přetáhnout a vyřadit různé ovládací prvky na povrch návrháře používáte a změnit velikost a umístění ovládacích prvků.  
   
  Ve spojení s návrháře zobrazení, například jako zobrazení návrháře XAML souboru se zobrazí panelu nástrojů. Panelu nástrojů zobrazí pouze tyto ovládací prvky, které lze použít v Návrháři aktuální.  

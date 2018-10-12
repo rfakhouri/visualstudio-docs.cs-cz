@@ -1,7 +1,7 @@
 ---
 title: Ladění vláken a procesů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bda70d9f99b4b97623d5d9f03ca440721f9a728
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 711aaeaa76edbb4ea9d070254213f9a7207e12f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629637"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191487"
 ---
 # <a name="debug-threads-and-processes"></a>Ladění vláken a procesů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ladění vláken a procesů](https://docs.microsoft.com/visualstudio/debugger/debug-threads-and-processes).  
-  
 Vlákna * a *procesy* jsou v informatice související koncepty. Obě představují sekvence pokynů, které musí být provedeny v určitém pořadí. Pokyny v oddělených vláknech či procesy lze však spustit paralelně.  
   
  Procesy v operačním systému existují a odpovídají co uživatelé vidí jako programy nebo aplikace. Vlákno, na druhé straně existuje v rámci procesu. Z tohoto důvodu vlákna jsou někdy označovány jako *procesy LWP*. Každý proces se skládá z jednoho nebo více vláken.  

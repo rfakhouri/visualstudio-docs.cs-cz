@@ -1,14 +1,14 @@
 ---
 title: Mapování metod v zásobníku volání při ladění v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
 dev_langs:
@@ -35,18 +35,16 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 3920253cfda19325ebfb6121da2b09d1a9fab691
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0841670c1dfe65f1ad542f931267c310d0ef711a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675509"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194870"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapování metod v zásobníku volání při ladění v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [mapování metod v zásobníku volání při ladění v sadě Visual Studio](https://docs.microsoft.com/visualstudio/debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio).  
-  
 Vytvořte mapu kódu pro vizuální sledování zásobníku volání během ladění. Můžete si dělat poznámky na mapě ke sledování kódu činnosti tak, abyste se mohli zaměřit na hledání chyb.  
   
  ![Ladění se zásobníky volání na mapách kódu](../debugger/media/debuggermap-overview.png "DebuggerMap_Overview")  

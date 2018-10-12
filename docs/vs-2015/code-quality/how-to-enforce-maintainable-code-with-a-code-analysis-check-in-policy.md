@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vynucování Udržovatelného kódu pomocí zásady vracení se změnami kód analýzy | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 97b321fe5a72c6f3ace680476340eca48f7ed309
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ef282bf1b19cb2d72075619539921cdb88d08f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174848"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Postupy: Vynucování udržovatelného kódu pomocí zásady vracení se změnami Analýzy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: vynucování Udržovatelného kódu pomocí zásad vracení se změnami analýzy kódu](https://docs.microsoft.com/visualstudio/code-quality/how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy).  
-  
 Vývojářům nástroj metriky kódu slouží k měření složitosti a udržovatelnosti kódu, ale metriky kódu jsou nejde vyvolat jako součást zásady vrácení se změnami. Tým ale můžete povolit pravidel analýzy kódu, které ověřit jejich kód dodržování standardů metrik kódu a vynucení pravidel prostřednictvím zásad vrácení se změnami. Další informace o metriky kódu, najdete v článku [hodnoty metrik kódu](../code-quality/code-metrics-values.md).  
   
  Vývojáři mohou povolit hloubku dědičnosti, párování tříd, Index udržovatelnosti a složitosti pravidla k vynucení udržovatelného kódu pomocí zásady vracení se změnami analýzy kódu. Všechny čtyři tato pravidla se nacházejí v kategorii "Pravidla udržovatelnosti" v editoru zásad analýzy kódu.  

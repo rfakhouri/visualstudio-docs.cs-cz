@@ -1,7 +1,7 @@
 ---
 title: Shromažďování dat paměti .NET Framework pro samostatné aplikace pomocí příkazového řádku Profiler | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fb43237b030cb5c8d4dea040b5f9fc480bc7fe9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 069d930a4670cac87e31720a38afc6c857769909
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683347"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193075"
 ---
 # <a name="collecting-net-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Shromažďování dat o paměti rozhraní .NET Framework pro samostatné aplikace pomocí příkazového řádku profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [shromažďování dat paměti .NET Framework pro samostatné aplikace pomocí příkazového řádku Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line).  
-  
 Tato část popisuje postupy a možnosti k shromažďování údajů o přidělování paměti a životnosti objektů pro aplikace .NET klienta (samostatný) pomocí metody vzorkování z příkazového řádku.  
   
 ## <a name="common-tasks"></a>Obecné úlohy  
@@ -58,7 +56,7 @@ Tato část popisuje postupy a možnosti k shromažďování údajů o přidělo
  [Zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)  
   
 ## <a name="reference"></a>Odkaz  
- [Profilování nástroje pro příkazový řádek](../profiling/command-line-profiling-tools-reference.md)
+ [Referenční dokumentace nástrojů příkazového řádku pro profilaci](../profiling/command-line-profiling-tools-reference.md)
 
 
 

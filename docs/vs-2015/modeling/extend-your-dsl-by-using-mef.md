@@ -1,7 +1,7 @@
 ---
 title: Rozšíření vašeho DSL pomocí MEF | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 378aab6aaac3c45dc0a912dc62f5ebf55fffd46c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4b3eea594bbfca0701fc8e719af0cf481fa434c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666299"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194122"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozšíření vašeho DSL pomocí MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [rozšíření vašeho DSL pomocí MEF](https://docs.microsoft.com/visualstudio/modeling/extend-your-dsl-by-using-mef).  
-  
 Můžete rozšíření jazyka specifického pro doménu (DSL) pomocí Managed Extensibility Framework (MEF). Vy nebo jiní vývojáři budou moct psát rozšíření pro DSL beze změny v definici DSL a kódu programu. Taková rozšíření zahrnují příkazy nabídek, přetahování myší obslužné rutiny a ověření. Uživatelé budou moct nainstalovat vašeho DSL a volitelně nainstalovat rozšíření pro něj.  
   
  Kromě toho když povolíte MEF v vašeho DSL, může být jednodušší psaní, některé funkce tohoto kódu DSL, i v případě, že všechna sestavení společně s DSL.  

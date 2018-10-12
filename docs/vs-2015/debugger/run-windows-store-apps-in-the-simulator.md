@@ -1,7 +1,7 @@
 ---
 title: Aplikace Windows Store spustit v simulátoru | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3007d0e6ea7a835cd9147f5f5ff94c91f9f7bda4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670580"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190720"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Spouštění v simulátoru Windows Store apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [aplikace spustit Windows Store v simulátoru](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-in-the-simulator).  
-  
 Simulátor aplikace Visual Studio pro aplikace Windows Store je aplikace klasické pracovní plochy, který simuluje aplikace Windows Store. Můžete spouštět aplikace a simulace událostí otočení a běžné touch na vašem vývojovém počítači. Můžete také velikost fyzické obrazovky a rozlišení, které chcete emulovat a simulovat vlastnosti připojení k síti.  
   
  Simulátor poskytuje prostředí, ve kterém můžete návrh, vývoj, ladění a testování aplikací pro Windows Store. Ale předtím, než můžete publikovat aplikaci pro Windows Store, měli byste otestovat aplikace skutečný zařízení.  
@@ -161,7 +159,7 @@ Simulátor aplikace Visual Studio pro aplikace Windows Store je aplikace klasick
  Simulátor můžete ukončit stisknutím kombinace kláves **CTRL + ALT + F4**.  
   
 ## <a name="see-also"></a>Viz také  
- [Spouštění aplikací v sadě Visual Studio](../debugger/run-store-apps-from-visual-studio.md)
+ [Spouštění aplikací ze sady Visual Studio](../debugger/run-store-apps-from-visual-studio.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Další informace o chybách návrháře tříd | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e343ed5453a5751bcbd491bc7e94a8491c1f88c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a957630de193d805b1a516d45c72bd1483f0278
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632285"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188523"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Další informace o chybách návrháře tříd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Další informace o třídě návrháře chyby](https://docs.microsoft.com/visualstudio/ide/additional-information-about-class-designer-errors).  
-  
 Návrhář tříd nesleduje umístění zdrojových souborů, takže úpravy struktuře projektu nebo přesunutí zdrojové soubory v projektu může způsobit návrhář tříd ke ztrátě informací o typu (zejména zdrojového typu definice typu základní třídy a přidružení typů). K chybě může dojít například **je návrhář tříd nemůže zobrazit tento typ**. Pokud tak učiníte, přetáhněte do diagramu tříd znovu a znovu zobrazit přemístění nebo upravila zdrojový kód.  
   
  Pomoc s další chyby a upozornění najdete v následujících zdrojích:  

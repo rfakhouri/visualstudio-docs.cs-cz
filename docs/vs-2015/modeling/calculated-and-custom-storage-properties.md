@@ -1,7 +1,7 @@
 ---
 title: Vypočtené a vlastní vlastnosti úložiště | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e11ae9833d61e2ff48341b577d6aa1cdbc54afc6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c1203b962627071d757dc1876a534977c574a813
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629055"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179488"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Vypočtené a vlastní vlastnosti úložiště
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vypočtené a vlastní vlastnosti úložiště](https://docs.microsoft.com/visualstudio/modeling/calculated-and-custom-storage-properties).  
-  
 Všechny vlastnosti domény v jazyka specifického pro doménu (DSL) je možné zobrazit v diagramu a v Průzkumníku jazyk uživatele a je přístupný pomocí kódu programu. Vlastnosti se však liší v tak, že jejich hodnoty jsou uloženy.  
   
 ## <a name="kinds-of-domain-properties"></a>Typy vlastností domény  

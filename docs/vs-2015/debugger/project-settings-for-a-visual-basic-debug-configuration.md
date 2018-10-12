@@ -1,7 +1,7 @@
 ---
 title: Nastavení pro konfiguraci ladění jazyka Visual Basic projektu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af9d9976c6aa6743cfda4c69d3b2f8d958ab03bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3bcc3b6090efb16d74485bf8e7747d7cc8ee7b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666782"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188666"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Nastavení projektu pro konfiguraci ladění jazyka Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [nastavení projektu pro konfiguraci ladění jazyka Visual Basic](https://docs.microsoft.com/visualstudio/debugger/project-settings-for-a-visual-basic-debug-configuration).  
-  
 Můžete změnit nastavení projektu [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] konfiguraci ladění v **stránky vlastností** okna, jak je popsáno v [konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují, kde najít nastavení související s ladicí program v **stránky vlastností** okna.  
   
 > [!WARNING]
@@ -67,7 +65,7 @@ Můžete změnit nastavení projektu [!INCLUDE[vbprvb](../includes/vbprvb-md.md)
 |**Definovat konstantu TRACE**|Definování tento symbol umožňuje podmíněné kompilace výstup funkcí z [Trasovací třída](https://msdn.microsoft.com/library/system.diagnostics.trace.aspx). Tento symbol definovaný, metody třídy trasování generovat výstup do [okno výstup](../ide/reference/output-window.md). Bez tento symbol nejsou zkompilovány metody třídy trasování a nebude vygenerován žádný výstup trasování. Tento symbol je definované ve výchozím nastavení pro ladění a vydání verze.|  
   
 ## <a name="see-also"></a>Viz také  
- [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)
+ [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)
 
 
 

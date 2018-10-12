@@ -1,7 +1,7 @@
 ---
 title: Práce s několika uživatelskými účty | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3559e6df1f675489d15b2cfd53ef80737e003cb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677823"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176264"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Práce s několika uživatelskými účty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [práce s několika uživatelskými účty](https://docs.microsoft.com/visualstudio/ide/work-with-multiple-user-accounts).  
-  
 Pokud máte více účtů Microsoft a/nebo pracovní nebo školní účty, můžete ho přidat vše do sady Visual Studio, takže mají přístup k prostředkům z libovolného účtu bez nutnosti přihlásit se k němu samostatně. K datu Visual Studio 2015 RTM podporu služeb Azure, služby Application Insights, Team Foundation Server a Office 365 zjednodušené přihlašování. Další služby může být k dispozici odehrává.  
   
  Po přidání více účtů na jednom počítači tuto sadu účtů zpřístupní se, pokud se přihlásíte k sadě Visual Studio na jiném počítači. Je důležité si uvědomit, že i když přesouvat názvy účtů, není to přihlašovací údaje. Proto se výzva k zadání přihlašovacích údajů pro tyto účty poprvé pokusí použít svoje prostředky na nový počítač.  

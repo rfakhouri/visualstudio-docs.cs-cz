@@ -1,7 +1,7 @@
 ---
 title: Pomocí sady Visual Studio sestavení vzájemné spolupráce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 942db931178cedba21468f42e7412ba3e93a1aa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38d33733c9ab2c9b3a1b0eb44fad30b46ae3c029
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670293"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195622"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Používání definičních sestavení sady Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pomocí Visual Studio spolupracující sestavení](https://docs.microsoft.com/visualstudio/extensibility/internals/using-visual-studio-interop-assemblies).  
-  
 Sestavení vzájemné spolupráce pro Visual Studio povolit spravovaným aplikacím přístup k rozhraní modelu COM, které zajistí možnosti rozšíření sady Visual Studio. Existuje několik rozdílů mezi přímo rozhraní COM a jejich vzájemné spolupráce verze. HRESULT – jsou obecně reprezentovány ve formě hodnoty int a je nutné zacházet stejným způsobem jako výjimky a parametry (zejména výstupní parametry) jsou zpracovávat odděleně.  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Zpracování výsledky HRESULTs vracené z modelu COM pro spravovaný kód  

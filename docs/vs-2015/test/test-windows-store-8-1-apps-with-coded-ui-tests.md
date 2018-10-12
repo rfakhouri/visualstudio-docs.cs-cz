@@ -1,7 +1,7 @@
 ---
 title: Testování aplikace 8.1 Store a Windows UWP pomocí programových testů uživatelského rozhraní | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e61c03b8f991fe462c0170db8a72d52056ea2906
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d177fc191eab84d864ad57bf5ad301dcb0b310e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674509"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175783"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Testování aplikace 8.1 Store a Windows UWP pomocí programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [testů UPW Windows a 8.1 aplikací pro Store pomocí programových testů uživatelského rozhraní](https://docs.microsoft.com/visualstudio/test/test-windows-store-8-1-apps-with-coded-ui-tests).  
-  
 Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhraní pro aplikace UWP a aplikací založených na XAML Store 8.1.
   
 ## <a name="create-a-simple-windows-store-app"></a>Vytvoření jednoduché aplikace pro Windows Store  
@@ -330,7 +328,7 @@ Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhran�
   
 ## <a name="see-also"></a>Viz také  
  [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
- [Nastavení jedinečné vlastnosti automatizace pro ovládací prvky Windows Store pro účely testování](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
+ [Nastavení jedinečné vlastnosti automatizace pro ovládací prvky pro Windows Store za účelem testování](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Co je nového v ladicím programu sady Visual Studio 2015 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 86
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b7a854e872a7739054379b1f6d01794f142f448
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 743875ef4ab7582bd4c1a254c82f168b96ba8208
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188614"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2015"></a>Novinky v ladicím programu sady Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [co je nového v ladicím programu](https://docs.microsoft.com/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio).  
-  
 Informace o všechno, co je nového ve Visual Studio 2015 Update 1 ladění a Diagnostika, naleznete v tématu [Visual Studio 2015 Update 1 zpráva k vydání verze](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
   
  Informace o všechno, co je nového ve Visual Studio 2015 RTM ladění a Diagnostika, naleznete v tématu [Visual Studio 2015 – poznámky k](https://www.visualstudio.com/news/vs2015-vs#debug).  

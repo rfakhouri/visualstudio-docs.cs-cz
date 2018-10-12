@@ -1,7 +1,7 @@
 ---
 title: Dialogové okno selhání kontrolního výrazu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37ddbc77cbeeb96344383b7cec0011f0ca3187b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: edb218b98b5eb07faaa222acfba33fd64877313c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672397"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181373"
 ---
 # <a name="assertion-failed-dialog-box"></a>Dialogové okno Kontrolní výraz je neplatný
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [kontrolního výrazu se nezdařilo dialogovému oknu](https://docs.microsoft.com/visualstudio/debugger/assertion-failed-dialog-box).  
-  
 Příkaz kontrolní výraz určuje podmínku, která očekávat k uložení true v určitém okamžiku konkrétní aplikace. Pokud tuto podmínku neobsahuje hodnotu true, výraz se nezdaří, dojde k přerušení provádění programu a se zobrazí toto dialogové okno.  
   
 |Klikněte na...|Chcete-li|  

@@ -1,7 +1,7 @@
 ---
 title: Navrhování a zobrazování tříd a typů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e2a882f5da56884c86d042d2c562796ae6111dc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 559702f41f2694a6042e26b2760251e775c9cad3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670148"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191617"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Navrhování a zobrazování tříd a typů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [navrhování a zobrazování tříd a typů](https://docs.microsoft.com/visualstudio/ide/designing-and-viewing-classes-and-types).  
-  
 Návrh, vizualizovat a Refaktorovat třídy a další typy v kódu pomocí návrháře tříd v sadě Visual Studio. Vytvořit a upravit třídy v projektu Visual C# .NET, Visual Basic .NET nebo C++, pochopit strukturu projektu lepší nebo reorganizovat kódu použijte diagramy tříd.  
   
  Tady jsou další informace o tom, co můžete učinit s diagramy tříd:  

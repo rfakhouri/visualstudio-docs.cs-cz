@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: hledání knihovny DLL které Program selhal v | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8dc06d433739b4c0706374a691474207a45c5766
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 469d4a3f42fc749a0a7a05f4a034bde28332dc57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666390"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183167"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>Postupy: Hledání knihovny DLL, ve které program selhal.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [jak: najít které knihovny DLL váš Program došlo k chybě v](https://docs.microsoft.com/visualstudio/debugger/how-to-find-which-dll-your-program-crashed-in).  
-  
 POZNÁMKA:]
 >  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
@@ -64,7 +62,7 @@ POZNÁMKA:]
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: ladění nativních knihoven DLL](../debugger/how-to-debug-native-dlls.md)   
- [Postupy: použití okna moduly](../debugger/how-to-use-the-modules-window.md)
+ [Postupy: Použití okna Moduly](../debugger/how-to-use-the-modules-window.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Ladění XAML v programu Blend | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1fe1c312c747e25fc1b1e93a51e26d6e67c4a9b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0c2e135c788ce4fc632efa617323e7ac6fc1f3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678713"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179878"
 ---
 # <a name="debug-xaml-in-blend"></a>Ladění kódu XAML v programu Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ladění XAML v Blendu](https://docs.microsoft.com/visualstudio/debugger/debug-xaml-in-blend).  
-  
 Můžete použít nástroje v [!INCLUDE[blend_first](../includes/blend-first-md.md)] pro ladění XAML ve vaší aplikaci. Při vytváření projektu se zobrazí nějaké chyby v **výsledky** panelu. Klikněte dvakrát na chybu najděte značku týkající se chyby. Pokud potřebujete více místa k práci, můžete skrýt **výsledky** panel stisknutím klávesy F12.  
   
 ## <a name="syntax-errors"></a>Chyby syntaxe  

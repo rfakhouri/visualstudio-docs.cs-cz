@@ -1,7 +1,7 @@
 ---
 title: Upozornění zabezpečení | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e906143b384a36dd34a5f487f6785705bdc2ab33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3015e1d01407120aef30b25aea4dbc8e0c6c7fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682002"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187599"
 ---
 # <a name="security-warnings"></a>Upozornění zabezpečení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [upozornění zabezpečení](https://docs.microsoft.com/visualstudio/code-quality/security-warnings).  
-  
 Upozornění zabezpečení podporují bezpečnější knihovny a aplikace. Tato upozornění pomáhají zabránit chybám zabezpečení v programu. Pokud některá z těchto upozornění zakážete, měli byste v kódu jasně označit důvod a také informovat bezpečnostního úředníka vývoje projektu.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
@@ -87,7 +85,7 @@ Upozornění zabezpečení podporují bezpečnější knihovny a aplikace. Tato 
 |[CA2147: Transparentní metody nemusejí podporovat použití nepodmíněných výrazů zabezpečení](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|U kódu označeného atributem SecurityTransparentAttribute není uděleno dostatečné oprávnění k vyhodnocení.|  
 |[CA2149: Transparentní metody nesmějí provádět volání do nativního kódu](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Toto pravidlo je vyvoláno na jakékoli transparentní metodě, která přímo volá nativní kód, například prostřednictvím P/Invoke. Porušení tohoto pravidla vede k vyvolání výjimky MethodAccessException v modelu transparentnosti úrovně 2 a k úplnému požadavku na nespravovaný kód v modelu transparentnosti úrovně 1.|  
 |[CA2151: Pole s kritickými typy by měla být kritická pro zabezpečení](../code-quality/ca2151-fields-with-critical-types-should-be-security-critical.md)|Chcete-li používat typy kritické z hlediska zabezpečení, musí být kód, který odkazuje na typ, buď kritický z hlediska zabezpečení, nebo bezpečně kritický z hlediska zabezpečení. To platí i v případě, že je odkaz nepřímý. Proto je existence transparentního pole kritického z hlediska zabezpečení nebo transparentního pole bezpečně kritického z hlediska zabezpečení zavádějící, jelikož transparentní kód nebude mít k poli přístup.|  
-|[CA5122 deklarace volání nespravovaného kódu by neměly být bezpečně kritická](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|Metody jsou při provádění operace citlivé na zabezpečení označeny jako SecuritySafeCritical, ale lze je také bezpečně použít transparentním kódem. Transparentní kód nesmí nikdy přímo volat nativní kód prostřednictvím P/Invoke. Proto označení P/Invoke jako bezpečně kritické z hlediska zabezpečení neumožní transparentnímu kódu vyvolat je a je zavádějící pro analýzu zabezpečení.|  
+|[CA5122: Deklarace volání nespravovaného kódu nesmí být kritické pro zabezpečení](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|Metody jsou při provádění operace citlivé na zabezpečení označeny jako SecuritySafeCritical, ale lze je také bezpečně použít transparentním kódem. Transparentní kód nesmí nikdy přímo volat nativní kód prostřednictvím P/Invoke. Proto označení P/Invoke jako bezpečně kritické z hlediska zabezpečení neumožní transparentnímu kódu vyvolat je a je zavádějící pro analýzu zabezpečení.|  
 |[CA2153: Vyhněte se zpracování výjimek v poškozeném stavu](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Poškozený stav výjimek (rozšíření na straně klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) znamenat, že paměť poškození existuje v procesu. Toto zachycení nepovolí selhání procesu může vést k ohrožení zabezpečení, pokud útočník lze umístit do oblasti paměti poškozená zneužití.|  
 |[CA3075: Zpracování nezabezpečené specifikace DTD](../code-quality/ca3075-insecure-dtd-processing.md)|Pokud používáte nezabezpečené DTDProcessing instance nebo odkazovat na externí entitu zdrojů, analyzátor může přijmout nedůvěryhodný vstup a zpřístupnit citlivé informace, které útočníci.|  
 |[CA3076: Spuštění nezabezpečeného skriptu XSLT](../code-quality/ca3076-insecure-xslt-script-execution.md)|Pokud spuštění šablony stylů transformace XSLT (Extensible Language) v aplikacích .NET nezabezpečeným způsobem, procesor může vyřešit nedůvěryhodné identifikátor URI odkazy, které může odhalit citlivé informace, které útočníci, což vede k Denial of Service a webů útoky.|  

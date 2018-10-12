@@ -1,7 +1,7 @@
 ---
 title: Assigntargetpath – úloha | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63836579d43ed9415d85f987b04b440eb387e95c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 667725da8006e99e8eba4d4d4cd18e101ae1dd4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666096"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189460"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath – úloha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [assigntargetpath – úloha](https://docs.microsoft.com/visualstudio/msbuild/assigntargetpath-task).  
-  
   
 Tento úkol přijímá seznam souborů a přidává `<TargetPath>` atributy, pokud již nejsou určeny.  
   
@@ -41,7 +39,7 @@ Tento úkol přijímá seznam souborů a přidává `<TargetPath>` atributy, pok
 |---------------|-----------------|  
 |`RootFolder`|Volitelné `string` vstupního parametru.<br /><br /> Obsahuje cestu ke složce obsahující cílové odkazy.|  
 |`Files`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` vstupního parametru.<br /><br /> Obsahuje seznam příchozích souborů.|  
-|`AssignedFiles`|Nepovinné<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem> `[]` Výstupní parametr.<br /><br /> Obsahuje výsledný seznam souborů.|  
+|`AssignedFiles`|volitelná,<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem> `[]` Výstupní parametr.<br /><br /> Obsahuje výsledný seznam souborů.|  
   
 ## <a name="remarks"></a>Poznámky  
  Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.TaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  

@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: použití editoru výrazů | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 892e65265938c94767bd63b528040ce4a81fba72
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c41de63b4163f1fd259ffa4adcef63cad92e351
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669413"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181712"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Postupy: použití editoru výrazů
 Je Editor výrazů [!INCLUDE[wfd1](../includes/wfd1-md.md)] ovládací prvek, který se používá v mnoha aktivit pracovního postupu jako způsob zadávání a vyhodnocování těchto výrazů. Editor výrazů nabízí plnohodnotný IDE editační rozhraní, včetně IntelliSense, zabarvení, ParamInfo podtržení vlnovkou u chyb, kromě jiných funkcí. Kompilátor ověří výraz poté, co je zadána. Pokud výraz není platný, zobrazí se ikona chyby. V editoru můžete otevřít také jako **Editor výrazů** dialogové okno.  

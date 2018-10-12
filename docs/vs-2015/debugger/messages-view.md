@@ -1,7 +1,7 @@
 ---
 title: Zobrazení zpráv | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d603ad157786df756f130c3bf203961b48a610f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76d033cdbe0949cfe861f44be8f390d72c316af8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672980"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182088"
 ---
 # <a name="messages-view"></a>Zobrazení zpráv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení zpráv](https://docs.microsoft.com/visualstudio/debugger/messages-view).  
-  
 Každé okno má datové proudy přidružené zpráv. Zobrazí okno pro zobrazení zprávy tohoto datového proudu zpráv. Popisovač okna, kód zprávy a zpráva se zobrazí. Můžete vytvořit zobrazení zprávy pro vlákna nebo procesu stejně. To umožňuje zobrazit zprávy, pošle se všem oknům vlastní konkrétní proces nebo vlákno, které je zvláště užitečné pro zaznamenání inicializace zprávy okna.  
   
  Typické okno zobrazení zpráv se zobrazí pod. Mějte na paměti, že první sloupec obsahuje popisovač okna a druhý sloupec obsahuje kód zprávy (podrobně [kódy zpráv](../debugger/message-codes.md)). Dekódovaná zpráva parametry a návratové hodnoty se na pravé straně.  
@@ -83,7 +81,7 @@ Zobrazení zpráv Spy ++
  [Dialogové okno možností zpráv](../debugger/message-options-dialog-box.md)  
  Slouží k výběru zprávy, které jsou uvedené v zobrazení aktivního zprávy.  
   
- [Dialogové okno hledání zpráv](../debugger/message-search-dialog-box.md)  
+ [Dialogové okno pro vyhledávání zpráv](../debugger/message-search-dialog-box.md)  
  Umožňuje najít uzel pro konkrétní zprávu v zobrazení zpráv.  
   
  [Dialogové okno vlastností zpráv](../debugger/message-properties-dialog-box.md)  

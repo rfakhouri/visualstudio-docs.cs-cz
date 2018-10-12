@@ -1,7 +1,7 @@
 ---
 title: Zapnutí nebo vypnutí režimu měření | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb0d4b13cf14430a276cae4052a2cbca6db910b3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2752f8843962548fb450e113f1f41014630bc1ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672385"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182595"
 ---
 # <a name="measure-mode-onoff"></a>Zapnutí nebo vypnutí režimu míry
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [míru režimu On-Off](https://docs.microsoft.com/visualstudio/profiling/measure-mode-on-off).  
-  
 Pomocí tohoto nástroje můžete přesně změřit dobu na časové ose. Pokud chcete povolit režim míry, klikněte na tlačítko měr, (který má ikonu pravítka) a potom přetáhněte na časové ose. Při přetahování, Všimněte si, že oblast pod ukazatelem je zvýrazněn žlutě a měření času se zobrazí na panelu nástrojů na pravé straně tlačítka. Tato hodnota se vypočítá dynamicky při přetahování tak, aby umožňují okamžitě zjistit, jak dlouho trvá konkrétní události. Když uvolníte tlačítko myši, časová hodnota zůstává viditelná.  
   
  Měření procesu můžete opakovat, ale je zobrazena pouze nejnovější měření. Klikněte na tlačítko míru znovu k vypnutí režimu míry.  

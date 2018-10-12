@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: použití kontextu uživatelského rozhraní založeného na pravidlo pro rozšíření sady Visual Studio | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -9,18 +9,16 @@ ms.topic: article
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: dfe3e1645bd23c859a36f4de222472b8460fd305
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9a0f740232493d24cf1bdcd6decba338036e6c9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667826"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194698"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Postupy: použití kontextu uživatelského rozhraní založeného na pravidlo pro rozšíření sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: použití pravidla na základě kontextu uživatelského rozhraní pro rozšíření sady Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions).  
-  
 Visual Studio umožňuje načítání rozšíření VSPackages při některých dobře známé <xref:Microsoft.VisualStudio.Shell.UIContext>s aktivují. Ale kontexty uživatelského rozhraní nejsou velmi dobře grained, byste museli opustit autoři rozšíření žádná volba, ale k výběru dostupná kontextu uživatelského rozhraní, který se aktivuje před bodem VSPackage načíst opravdu chtěli. Seznam dobře známé uživatelské rozhraní kontextech najdete v tématu <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
  Načítají se balíčky může mít dopad na výkon a jejich načtení dříve, než se v případě potřeby zapíná není nejlepším postupem. Visual Studio 2015 představil nový koncept kontexty uživatelského rozhraní založeného na pravidlech, mechanismus, který umožňuje autorům rozšíření určit přesné podmínky, za kterých se aktivuje kontextu uživatelského rozhraní a načíst přidružené balíčky VSPackages.  

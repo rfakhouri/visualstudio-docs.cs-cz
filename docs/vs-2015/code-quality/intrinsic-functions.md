@@ -1,7 +1,7 @@
 ---
 title: Vnitřní funkce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 9
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a391bc1f5208b47ffb1aca51dbbd40b5b15fb04d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b50742c0176b8c880d3ed0b58b7b8ef76355777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675857"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174483"
 ---
 # <a name="intrinsic-functions"></a>Vnitřní funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vnitřní funkce](https://docs.microsoft.com/visualstudio/code-quality/intrinsic-functions).  
-  
 Výraz v SAL může být výraz jazyka C/C++, za předpokladu, že je výraz, který nemá žádné vedlejší účinky, například ++,--a všechny vedlejší účinky mají v tomto kontextu volání funkce.  Poznámky SAL však poskytuje některé funkce jako objekty a některé rezervované symboly, které můžete použít ve výrazech SAL. Tyto jsou označovány jako *vnitřní funkce*.  
   
 ## <a name="general-purpose"></a>Obecné účely  
@@ -44,7 +42,7 @@ Výraz v SAL může být výraz jazyka C/C++, za předpokladu, že je výraz, kt
 |`_Inexpressible_(expr)`|Vyjadřuje situaci, kde velikost vyrovnávací paměti je příliš složité pomocí výrazu anotace – například když je vypočítán prohledáním vstupní datové sady a potom počítání Vybraní členové.|  
 |`_Nullterm_length_(param)`|`param` je počet elementů ve vyrovnávací paměti až, ale nezahrnuje ukončovací znak null. Lze ji použít na všechny vyrovnávací paměti typu neagregované, jiný než void.|  
 |`_Old_(expr)`|Když je vyhodnocen v předběžné podmínce, `_Old_` vrátí vstupní hodnoty `expr`.  Když je vyhodnocen v po podmínka, vrátí hodnotu `expr` jako jeho by se vyhodnotily v předběžné podmínce.|  
-|`_Param_(n)`|`n`Th parametr funkce, počítáno od 1 do `n`, a `n` je literál integrální konstanta. Pokud je parametr pojmenovaný, tato poznámka se shoduje s přístupem k parametru podle názvu. **Poznámka:** `n` mohou odkazovat na poziční parametry, které jsou definovány pomocí tři teček nebo mohou být použity v prototypech funkcí nejsou-li použity názvy.  |  
+|`_Param_(n)`|`n`Th parametr funkce, počítáno od 1 do `n`, a `n` je literál integrální konstanta. Pokud je parametr pojmenovaný, tato poznámka se shoduje s přístupem k parametru podle názvu. **Poznámka:** `n` mohou odkazovat na poziční parametry, které jsou definovány pomocí tři teček nebo mohou být použity v prototypech funkcí nejsou-li použity názvy.|  
 |`return`|Vyhrazené klíčové slovo jazyka C/C++ `return` lze použít ve výrazu poznámky SAL k označení návratovou hodnotu funkce.  Hodnota je k dispozici pouze ve stavu příspěvku; Jedná se chybu syntaxe jeho použití v předem stavu.|  
   
 ## <a name="string-specific"></a>Konkrétní řetězec  
@@ -64,7 +62,7 @@ Výraz v SAL může být výraz jazyka C/C++, za předpokladu, že je výraz, kt
  [Zadávání poznámek ke strukturám a třídám](../code-quality/annotating-structs-and-classes.md)   
  [Zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md)   
  [Určení, kdy a kde se má poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [Osvědčené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
+ [Doporučené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
 
 
 

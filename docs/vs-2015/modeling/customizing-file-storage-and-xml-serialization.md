@@ -1,7 +1,7 @@
 ---
 title: Přizpůsobení souborového úložiště a serializace XML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee8a3b5a5510ef5b8a104e3a55ace3af9ce7d318
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775531"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183014"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Přizpůsobení souborového úložiště a serializace XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přizpůsobení souborového úložiště a serializace XML](https://docs.microsoft.com/visualstudio/modeling/customizing-file-storage-and-xml-serialization).  
-  
 Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro doménu (DSL) v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], se vytvoří nebo aktualizuje soubor XML. Soubor je možné znovu zavést, znovu vytvořte model v Store.  
   
  Schéma serializace můžete přizpůsobit úpravou nastavení v části **chování serializace Xml** v Průzkumník DSL. Je uzel v rámci **chování serializace Xml** pro každou doménovou třídou, vlastnost a relace. Relace se nachází v jejich zdrojových tříd. Existují také uzly odpovídající tvar, konektor a diagram tříd.  

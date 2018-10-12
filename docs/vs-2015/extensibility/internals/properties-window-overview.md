@@ -1,7 +1,7 @@
 ---
 title: Přehled okna Vlastnosti | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1bd869cd9d5fd10a31383d93671bf820887087a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: de60ed84abf4d4d2e01838140301919e13468239
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669275"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188705"
 ---
 # <a name="properties-window-overview"></a>Přehled okna Vlastnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přehled okna vlastnosti](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-overview).  
-  
 **Vlastnosti** okno se používá k zobrazení vlastností objektů vybraných v dva hlavní typy dostupné v systému windows [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrované vývojové prostředí (IDE). Jsou tyto dva typy systému windows:  
   
 -   Okna nástrojů, jako je například Průzkumník řešení, zobrazení tříd a objektů prohlížeče  

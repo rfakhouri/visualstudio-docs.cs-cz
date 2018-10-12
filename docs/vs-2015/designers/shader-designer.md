@@ -1,7 +1,7 @@
 ---
 title: Návrhář shaderů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a8a6e0bb39ee501f72c96b55575859af0ce1e26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682028"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182791"
 ---
 # <a name="shader-designer"></a>Návrhář shaderů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návrháře shaderu](https://docs.microsoft.com/visualstudio/designers/shader-designer).  
-  
 Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] návrháře shaderu k vytváření, úpravě a exportovat vlastní vizuální efekty, které jsou označovány jako *shadery*.  
   
  Návrháře shaderu můžete použít k vytvoření vlastní vizuálních efektů pro vaše hry nebo aplikace, i pokud si nejste jisti HLSL programování. V Návrháři shaderu vytvořit shader, stačí rozložení si to jako graf; To znamená, přidat na návrhovou plochu *uzly* , která představují data a operace a pak proveďte připojení mezi nimi k definování, jak operace zpracovat data. V každém uzlu operace je k dispozici ve verzi preview efekt až k danému bodu tak, aby můžete vizualizovat jeho výsledek. Data prochází uzly směrem k poslední uzel, který představuje výstup shaderu.  

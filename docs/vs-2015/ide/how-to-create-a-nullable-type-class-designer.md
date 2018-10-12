@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vytvoření typu s možnou hodnotou Null (návrhář tříd) | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f93d5a18b71a054a147b396afd293c6bdce36c64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696552"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179423"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Postupy: Vytváření typů s povolenou hodnotou Null (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: vytvoření typu s možnou hodnotou Null (návrhář tříd)](https://docs.microsoft.com/visualstudio/ide/how-to-create-a-nullable-type-class-designer).  
-  
 Některé typy hodnot ne vždy mají (nebo potřebujete) definovanou hodnotu. To je běžný postup v databázích, ve kterém některá pole nemůže být přiřazen žádnou hodnotu. Můžete například přiřadit hodnotu null do pole databáze místo, že ho nebyl dosud byla přiřazena hodnota.  
   
  A *typ připouštějící hodnotu Null* je hodnotový typ, který jste rozšířit tak, aby trvá Typická rozsah hodnot pro daný typ a také hodnotu null. Například s povolenou hodnotou NULL z `Int32`, také označeny jako s možnou hodnotou Null\<Int32 >, je možné přiřadit libovolnou hodnotu od -2147483648 do 2147483647 nebo je možné přiřadit hodnotu null. Nullable\<bool > je možné přiřadit hodnoty `True`, `False`, nebo hodnota null (žádná hodnota vůbec).  

@@ -1,7 +1,7 @@
 ---
 title: Čtení modelu UML v programovém kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 25
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f55126366fc80830edd92b16d64c51991c13e731
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 014f7d7c76577cd9a749807eb994785d45f56e68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628515"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182481"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Čtení modelu UML v programovém kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [čtení modelu UML v programovém kódu](https://docs.microsoft.com/visualstudio/modeling/read-a-uml-model-in-program-code).  
-  
 Můžete načíst UML model a jeho diagramy pomocí rozhraní API UML.  
   
 ##  <a name="Reading"></a> Čtení modelu v programovém kódu  

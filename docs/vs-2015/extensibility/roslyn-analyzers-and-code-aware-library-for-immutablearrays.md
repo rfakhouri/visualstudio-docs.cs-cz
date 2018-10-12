@@ -1,7 +1,7 @@
 ---
 title: Analyzátory Roslyn a knihovny pro řešení ImmutableArrays | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3353596474525a381a495288f5f5b951b7e5efac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94dbfbc39260e0cfcab374c2db12ab103f310b28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666849"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173352"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyzátory Roslyn a knihovny rozlišující kódy pro řešení ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [analyzátory Roslyn a knihovny pro řešení ImmutableArrays](https://docs.microsoft.com/visualstudio/extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays).  
-  
 [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") vám pomůže sestavit s ohledem na kód knihovny.  S ohledem na kód knihovny poskytuje funkce, které můžete použít nástroje (analyzátory Roslyn), které vám pomohou při použití knihovny nejlepším způsobem, nebo aby nedocházelo k chybám.  V tomto tématu se dozvíte, jak vytvářet analyzátoru Roslyn reálného světa zachytit běžných chyb při použití [NIB: neměnné kolekce](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) balíček NuGet.  Tento příklad také ukazuje, jak zajistit opravu kódu pro kód problém najít analyzátor.  Uživatelé uvidí opravy kódu v sadě Visual Studio žárovky uživatelského rozhraní a provést opravu kódu automaticky.  
   
 ## <a name="getting-started"></a>Začínáme  

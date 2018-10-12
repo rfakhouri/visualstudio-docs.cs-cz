@@ -1,7 +1,7 @@
 ---
 title: Ladění pomocí prohlížeče Store | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0955cae279ece70498ce05584d6b17d6e254f89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78a7cad2db2efa8057f2b95d117f93c59cc328cb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675345"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189072"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Ladění pomocí Prohlížeče ukládání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ladění pomocí prohlížeče Store](https://docs.microsoft.com/visualstudio/modeling/debugging-by-using-the-store-viewer).  
-  
 Pomocí prohlížeče Store můžete zkontrolovat stav *ukládání* používané [!INCLUDE[dsl](../includes/dsl-md.md)]. Prohlížeč Store zobrazí všechny elementy modelu domény, které jsou v konkrétní úložiště, společně s vlastností elementů a propojení mezi elementy.  
   
 ## <a name="opening-store-viewer"></a>Store otevírací prohlížeče  

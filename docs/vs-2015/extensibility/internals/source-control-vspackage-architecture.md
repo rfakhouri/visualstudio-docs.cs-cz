@@ -1,7 +1,7 @@
 ---
 title: Zdrojová architektura balíčku VSPackage ovládacího prvku | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d2a76a877581085b6bdffd8522bfcea24ea9e24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69cbcd1f8ab1f04f02d89839eed1e0cd67aa2fd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633427"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190460"
 ---
 # <a name="source-control-vspackage-architecture"></a>Architektura balíčku VSPackage správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Architektura balíčku VSPackage správy zdrojového ovládacího prvku](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-vspackage-architecture).  
-  
 Balíček správy zdrojového kódu je VSPackage, která používá služby, které [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] poskytuje integrované vývojové prostředí. Balíček správy zdrojového kódu na oplátku poskytuje jeho funkce jako službu správy zdrojových kódů. Kromě toho balíček správy zdrojového kódu je větší variabilitu alternativní než plug-in pro integraci správy zdrojového kódu do správy zdrojových kódů [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
  Plug-in, který implementuje rozhraní API zdrojový ovládací prvek modulu Plug-in správy zdrojových kódů dodržuje přísné kontraktu. Například modul plug-in nejde nahradit výchozí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] uživatelského rozhraní (UI). Kromě toho rozhraní API modulu Plug-in zdroje ovládacího prvku nepovolíte modul plug-in implementovat vlastní model správy zdrojového kódu. Balíček správy zdrojového kódu, ale překonává oba z těchto omezení. Balíček správy zdrojového kódu má plnou kontrolu nad možností ovládacího prvku zdroje [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] uživatele. Kromě toho balíček správy zdrojového kódu můžete použít svůj vlastní model správy zdrojového kódu a logiku a může definovat všechny související ovládací prvek uživatelská rozhraní zdroje.  

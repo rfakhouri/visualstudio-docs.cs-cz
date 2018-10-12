@@ -1,7 +1,7 @@
 ---
 title: Data třídy dědičnosti (O R Designer) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c361d35a4c5d6c4418a803b6bbba403e5571e1e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae36d6aac3ea9a4ff4de73dea57207b6f03abc72
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633758"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180515"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Dědičnost datových tříd (Návrhář O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Data třídy dědičnosti (O R Designer)](https://docs.microsoft.com/visualstudio/data-tools/data-class-inheritance-o-r-designer).  
-  
   
 Jiné objekty, jako jsou [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] dědičnost lze použít třídy a být odvozen od jiných tříd. V kódu můžete zadat dědičnosti relací mezi objekty deklarací, že jedna třída dědí z jiné. V databázi vztahy dědičnosti vytvoří několika způsoby. [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) Podporují koncept dědičnosti jedné tabulky, jak často je implementován v relačních systémech.  
   
@@ -46,7 +44,7 @@ Jiné objekty, jako jsou [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] d�
 |Téma|Popis|  
 |-----------|-----------------|  
 |[Postupy: Konfigurace dědičnosti pomocí Návrháře relací objektů](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|Popisuje postup konfigurace tříd entit, které používají jedné tabulky dědičnosti pomocí [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|  
-|[Návod: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Obsahuje podrobné pokyny o tom, jak nakonfigurovat tříd entit, které používají jedné tabulky dědičnosti pomocí [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|  
+|[Návod: Vytvoření tříd LINQ to SQL pomocí dědičnosti jedné tabulky (Návrhář relací objektů)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Obsahuje podrobné pokyny o tom, jak nakonfigurovat tříd entit, které používají jedné tabulky dědičnosti pomocí [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|  
   
 ## <a name="see-also"></a>Viz také  
  [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

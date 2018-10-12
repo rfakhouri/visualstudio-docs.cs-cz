@@ -1,7 +1,7 @@
 ---
 title: Upgrade projektů vlastní | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 262ada44-7689-44d8-bacb-9c6d33834d4e
 caps.latest.revision: 11
 manager: douge
-ms.openlocfilehash: 5c3fd31cfc7cfbf3f7dd687d38483f5bb62703ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1eceaee51778e9eafa6d81f819a17a25377b2841
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670138"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173586"
 ---
 # <a name="upgrading-custom-projects"></a>Upgrade vlastních projektů
 Pokud změníte informací uchovávaných v souboru projektu mezi různými verzemi sady Visual Studio, produktu, je nutné pro podporu upgradu váš soubor projektu ze staré na novou verzi. Pro podporu upgradu, která umožňuje vás k účasti **Průvodce převodu Visual Studio**, implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> rozhraní. Toto rozhraní obsahuje pouze mechanismus k dispozici pro upgrade kopírování. Upgrade projektu se stane, jako součást řešení otevře. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Rozhraní je implementováno objekt pro vytváření projektu, nebo by měl být dosažitelný alespoň z objekt pro vytváření projektu.  

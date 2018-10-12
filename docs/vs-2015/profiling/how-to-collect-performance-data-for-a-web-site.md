@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: shromažďování dat o výkonu pro web | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6d854345ca32500b379e68249e516f9e1efcd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185896"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Postupy: shromažďování dat výkonu pro webovou stránku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: shromažďování dat výkonu pro webový server](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-performance-data-for-a-web-site).  
-  
 Můžete použít **Průvodce výkonem** ke shromažďování dat výkonu pro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci. Můžete profilovat webové aplikace, která je otevřen v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo můžete Profilovat [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] web, který je umístěn v místním počítači a ne otevřít v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrovaného vývojového prostředí.  
   
 > [!NOTE]

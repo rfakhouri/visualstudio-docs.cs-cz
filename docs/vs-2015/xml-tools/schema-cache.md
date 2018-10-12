@@ -1,7 +1,7 @@
 ---
 title: Mezipaměť | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 429dae6fdcd57da4d1d4db85df15966c20cc2aa5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0a60d73463acd094ac92839f15110a7ce9811e39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669957"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195166"
 ---
 # <a name="schema-cache"></a>Mezipaměť schémat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [mezipaměti schématu](https://docs.microsoft.com/visualstudio/xml-tools/schema-cache).  
-  
   
 XML Editor obsahuje schéma mezipaměti umístěné v adresáři %InstallRoot%\Xml\Schemas. Mezipaměti schématu je pro všechny uživatele ve vašem počítači globální a obsahuje standardní schémat XML, které se používají k ověření dokumentu technologie IntelliSense a XML.  
   

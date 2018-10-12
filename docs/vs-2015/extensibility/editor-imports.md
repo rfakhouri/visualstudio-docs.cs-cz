@@ -1,7 +1,7 @@
 ---
 title: Importy do editoru | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7017d4a99bbfd58a854ba1cd33230f11928024cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b7bb4ccf7c599b66d8e4e50c01270d5fede1f3b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675698"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171872"
 ---
 # <a name="editor-imports"></a>Importy do editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [importy do editoru](https://docs.microsoft.com/visualstudio/extensibility/editor-imports).  
-  
 Můžete naimportovat celou řadou služeb editoru, objekty pro vytváření a zprostředkovatelů, které poskytují rozšíření s různými druhy přístup k základní editor. Například můžete importovat <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> abyste měli <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> pro daný typ obsahu. (Tento Navigátor umožňuje provádět různé druhy hledání na textovou vyrovnávací paměť).  
   
  Použití editoru importu, importujete ho jako pole nebo vlastnosti třídy, která se exportuje součást Managed Extensibility Framework.  

@@ -1,7 +1,7 @@
 ---
 title: Vytvoření vazby ovládacích prvků k obrázkům z databáze | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab997b01c0155b48cb9dd3033e5bbfd4724d7ba6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fbaca836cb5b620c596b72bc991e91c1cfc2312c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671483"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189498"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Vytvoření vazby ovládacích prvků k obrázkům z databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytvoření vazby ovládacích prvků k obrázkům z databáze](https://docs.microsoft.com/visualstudio/data-tools/bind-controls-to-pictures-from-a-database).  
-  
   
 Můžete použít **zdroje dat** okno vytvořit vazbu bitovou kopii do databáze na ovládací prvek ve vaší aplikaci. Například můžete vytvořit vazbu obrázku, který má <xref:System.Windows.Controls.Image> ovládací prvek v aplikaci WPF nebo na <xref:System.Windows.Forms.PictureBox> ovládacího prvku v aplikaci Windows Forms.  
   

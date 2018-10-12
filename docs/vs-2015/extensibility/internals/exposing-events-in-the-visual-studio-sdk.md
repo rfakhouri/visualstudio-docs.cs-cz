@@ -1,7 +1,7 @@
 ---
 title: Zveřejňování událostí v sadě Visual Studio SDK | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af5b68428d419b3608781ee9525ae107a7239b53
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c7e001d71ca413cb5b984fabf203eaa6f748b98
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679338"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195569"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Zveřejňování událostí v sadě Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vystavení události v sadě Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-events-in-the-visual-studio-sdk).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Umožňuje zdroje událostí pomocí služby automation. Doporučujeme vám, že zdroj události pro projekty a položky projektu.  
   
  Události jsou načteny spotřebiteli automatizace z <xref:EnvDTE.DTEClass.Events%2A> objektu nebo <xref:EnvDTE.DTEClass.GetObject%2A> ("EventObjectName"). Prostředí volá `IDispatch::Invoke` pomocí `DISPATCH_METHOD` nebo `DISPATCH_PROPERTYGET` příznaky vrátit událost.  

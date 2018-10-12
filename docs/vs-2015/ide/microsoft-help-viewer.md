@@ -1,7 +1,7 @@
 ---
 title: Microsoft Help Viewer | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0ea278b49ba47c81f691d2a20f5ae9f7fa87e579
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a51372b48eb01f0ff424c6919b572646235039f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668163"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194830"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Microsoft Help Viewer](https://docs.microsoft.com/visualstudio/ide/microsoft-help-viewer).  
-  
 Můžete nainstalovat a zobrazit obsah pro různé produkty a technologie v místním počítači pomocí aplikace Microsoft Help Viewer.  
   
 > [!WARNING]
@@ -85,7 +83,7 @@ Můžete nainstalovat a zobrazit obsah pro různé produkty a technologie v mís
  [Příručka správce Help Vieweru](../ide/help-viewer-administrator-guide.md)   
  [Instalace a Správa místního obsahu](../ide/install-and-manage-local-content.md)   
  [Vyhledejte informace](../ide/locate-information.md)   
- [Řešení potíží s programu Help Viewer](../ide/troubleshooting-the-help-viewer.md)
+ [Řešení potíží s programem Help Viewer](../ide/troubleshooting-the-help-viewer.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Testovací oblast 3: Rezervace a zrušení rezervace | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea99ec9b182f63beced94885533c650e7a79671a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fd293abc674059f7c0046e076e4166b7dffa631
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673091"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178591"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Testovací oblast 3: Přečtěte si / zrušit rezervaci
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [testovací oblast 3: Kontrola Checkout Out-Undo](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-3-check-out-undo-checkout).  
-  
 Tato oblast testovací modul plug-in správy zdrojového kódu pokrývá úprav a vrací položky z úložiště verzí prostřednictvím **rezervovat** a **vrátit zpět rezervaci** příkazy.  
   
  **Rezervovat**: značky položky v úložišti verzí jako rezervované, upraví místní kopii pro čtení a zápisu.  

@@ -1,7 +1,7 @@
 ---
 title: Rozšíření modelů a diagramů UML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d15da471e077e737bb7ba82d19d68f24f15db687
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fa0196000e2349f5f323d28138186b59ae07cfd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628620"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179124"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Rozšíření modelů a diagramů UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [modelů a diagramů UML rozšířit](https://docs.microsoft.com/visualstudio/modeling/extend-uml-models-and-diagrams).  
-  
 Toto téma shrnuje různé způsoby, ve kterém můžete rozšířit nástroje, které jsou součástí sady Visual Studio pomocí modelování UML. Které verze sady Visual Studio podporují každého typu modelu a nástroj, najdete v sekci [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  V následujícím ukázkovém scénáři Fabrikam navrhuje a nainstaluje letiště sobě systémy zpracování. Z projektu jedno letiště na další jsou v základní vybavení a software, který ovládacích prvků, je mnoho podobností. Existují však také několika různými faktory, které se liší běžně, jako např. konfigurace dopravní pásy, portál vrácení se změnami, přihrádky úložiště a dalších kontejner objektů a dat zpracování zařízení.  
@@ -127,7 +125,7 @@ Toto téma shrnuje různé způsoby, ve kterém můžete rozšířit nástroje, 
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md)   
- [Reference k rozhraní API pro rozšíření modelování UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
+ [Referenční dokumentace k rozhraní API pro rozšíření modelování UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
 
 
 

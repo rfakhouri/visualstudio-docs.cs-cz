@@ -1,7 +1,7 @@
 ---
 title: Operátory rozšířeného vyhledávání ve vyhledávacích výrazech | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24bf027f2fa480f95c0f223f8a319e7977615454
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 706d6d89d46a1e5db4f94c2e7d5e35ace73e1bac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670023"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177983"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Operátory rozšířeného vyhledávání ve vyhledávacích výrazech
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Pokročilí operátoři vyhledávání ve vyhledávacích výrazech](https://docs.microsoft.com/visualstudio/ide/advanced-search-operators-in-search-expressions).  
-  
 Pomocí operátory rozšířeného vyhledávání můžete upřesnit vyhledávání pro obsah tak, že vytvoříte složitější hledaných výrazů od těch jednodušší. Jak ukazuje následující tabulka tyto operátory omezení kontext, ve kterém se spouští dotaz.  
   
 > [!WARNING]

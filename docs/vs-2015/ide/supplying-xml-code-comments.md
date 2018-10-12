@@ -1,7 +1,7 @@
 ---
 title: Zadávání komentářů ke kódu XML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 82a76cdc9da6a9d289ca325caf36f6ff2c159770
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 77c0eab37d23a9324d10c89b435f771dba28e634
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880432"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185455"
 ---
 # <a name="supplying-xml-code-comments"></a>Zadávání komentářů ke kódu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zadávání komentářů ke kódu XML](https://docs.microsoft.com/visualstudio/ide/supplying-xml-code-comments).  
-  
 Můžete zpřístupnit komentáře v souborech zdrojového kódu jako IntelliSense. Když přidáte přepínač/doc jazyka Visual Basic, C#, nebo příkazový řádek kompilátoru jazyka C++, je generována soubor XML, která slouží jako základ pro dokumentaci technologie IntelliSense.  
   
  Další informace o dokumentace kódu v jazyce Visual Basic najdete v tématu [postupy: vytvoření dokumentace XML](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  

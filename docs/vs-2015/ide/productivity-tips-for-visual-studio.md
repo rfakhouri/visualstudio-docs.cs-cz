@@ -1,7 +1,7 @@
 ---
 title: Tipy pro vyšší produktivitu sady Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 05bac3fe7d5272674b141b15459d2d21c521cc0f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ced1b47c0e5b9d50fb8752dc79ab516ca682bd0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632690"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173326"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Productivity Tips for Visual Studio](https://docs.microsoft.com/visualstudio/ide/productivity-tips-for-visual-studio).  
-  
 Pomocí těchto tipů můžete rychleji a efektivněji psaní, navigace a ladění kódu v sadě Visual Studio. Další informace o běžných klávesových zkratkách naleznete v tématu [tipy a triky](../ide/tips-and-tricks-for-visual-studio.md). Úplný seznam najdete v tématu [určení a přizpůsobení klávesových zkratek](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) a [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
   
  Toto téma obsahuje následující oddíly:  

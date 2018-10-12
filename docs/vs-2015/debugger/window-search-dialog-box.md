@@ -1,7 +1,7 @@
 ---
 title: Dialogové okno hledání | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd352f1943d4576f848f5bd8d1a51b9196d72d03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9ec54fb45a84ade7d0f87cb2c7a7c5d953b9df4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683300"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179969"
 ---
 # <a name="window-search-dialog-box"></a>Dialogové okno hledání oken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dialogové okno hledání](https://docs.microsoft.com/visualstudio/debugger/window-search-dialog-box).  
-  
 Pomocí tohoto dialogového najděte a vyberte uzel pro konkrétní okno v [zobrazení Windows](../debugger/windows-view.md). Chcete-li zobrazit toto dialogové okno, přesunutí výběru na okno zobrazení Windows. Klikněte na tlačítko **najít okno** z **hledání** nabídky.  
   
  Můžete použít **tažením nástroje hledání** vyberte časové období, nebo můžete zadat popisovač okna, nebo identifikovat okno popisek a třídy.  
@@ -68,7 +66,7 @@ Pomocí tohoto dialogového najděte a vyberte uzel pro konkrétní okno v [zobr
  [Dialogové okno vyhledávacího okna](../debugger/find-window-dialog-box.md)  
  Umožňuje zobrazit vlastnosti nebo zprávy z konkrétní okno.  
   
- [Dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md)  
+ [Dialogové okno vlastností oken](../debugger/window-properties-dialog-box.md)  
  Slouží k zobrazení vlastností okna vybrána v zobrazení Windows.  
   
  [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  

@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Ladění vícevláknové aplikace | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a13fa717cc7f3952e44fe0dffecf735e7b53345a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673094"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186196"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Návod: Ladění vícevláknové aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ladění aplikace s více podprocesy pomocí okna vlákna](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window).  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] poskytuje zdokonalené **vlákna** okno a jinými uživateli rozhraní vylepšení usnadňují ladění vícevláknových aplikací. Tento názorný postup trvá jenom několik minut, ale jeho dokončení se můžete seznámit s novými funkcemi rozhraní pro ladění aplikací s více vlákny.  
   
  Pokud chcete začít tento návod, potřebujete projekt aplikace s více vlákny. Postupujte podle kroků uvedených zde k vytvoření tohoto projektu.  
@@ -265,7 +263,7 @@ Thread::Sleep(3000);
   
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Postupy: přepnutí na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Postupy: Přepnutí na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 
 
 

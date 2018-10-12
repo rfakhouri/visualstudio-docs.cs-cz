@@ -1,7 +1,7 @@
 ---
 title: Kukátko a Rychlé kukátko Windows | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e15167169b8940d65eeca66aaf3871997300cd04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669007"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173625"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Kukátko a Rychlé kukátko Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [nastavení sledování u proměnných v sadě Visual Studio](https://docs.microsoft.com/visualstudio/debugger/watch-and-quickwatch-windows).  
-  
 Můžete použít **Watch** (**ladění / Windows / sledovat / sledovat (1, 2, 3, 4)**) a **QuickWatch** (klikněte pravým tlačítkem na proměnnou / **ladění / QuickWatch**) systému windows ke sledování proměnných a výrazů během relace ladění.  Rozdíl je, že **Watch** okno může zobrazit několik proměnných, zatímco **QuickWatch** okně zobrazí najednou jednu proměnnou.  
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Sledování do jedné proměnné s QuickWatch  
@@ -247,7 +245,7 @@ public class Program
  **Dynamického zobrazení** také rozšiřuje možnosti ladění pro objekty COM. Pokud ladicí program nalezne objekt modelu COM, který je obalen **System.__ComObject**, přidá **dynamického zobrazení** uzlu pro objekt.  
   
 ## <a name="see-also"></a>Viz také  
- [Ladicí program Windows](../debugger/debugger-windows.md)
+ [Okna ladicího programu](../debugger/debugger-windows.md)
 
 
 

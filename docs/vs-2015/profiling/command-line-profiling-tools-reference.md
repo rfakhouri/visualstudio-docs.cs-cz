@@ -1,7 +1,7 @@
 ---
 title: Profilace z příkazového řádku nástroje odkaz | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c27c0fddcf77fcbdf3e71c30be2d50a6a43d760
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 01d37fe9dad323aa1ea78e6464e8f4b10fe65ed3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631676"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194009"
 ---
 # <a name="command-line-profiling-tools-reference"></a>Referenční dokumentace nástrojů příkazového řádku pro profilaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [informace o nástrojích pro profilaci příkazového řádku](https://docs.microsoft.com/visualstudio/profiling/command-line-profiling-tools-reference).  
-  
 Nástroje příkazového řádku výkonu umožňují programátorům Profilovat jejich aplikace na příkazovém řádku. Následující nástroje příkazového řádku profilování umožňují profil kódu na příkazovém řádku.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  

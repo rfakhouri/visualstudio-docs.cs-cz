@@ -1,7 +1,7 @@
 ---
-title: 'Postupy: ladění ve smíšeném režimu | Microsoft Docs'
+title: 'Postupy: ladění ve smíšeném režimu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 06/19/2017
+ms.date: 06/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,46 +19,48 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 834288c063a4bc0d830f121dcb8589b509c61bcf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8a08cf3cf95073d06c1dfa350f2de86bf72837c5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256159"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182673"
 ---
-# <a name="how-to-debug-in-mixed-mode"></a>Postupy: Ladění ve smíšeném režimu
-Následující postupy popisují postup ladění spravovaná a nativní kód, také známé jako ladění ve smíšeném režimu. Existují dva scénáře pro to, v závislosti na tom, zda knihovnu DLL nebo aplikace napsané v nativním kódu:  
+# <a name="how-to-debug-in-mixed-mode"></a>Postupy: ladění ve smíšeném režimu
+Následující postupy popisují, jak povolit ladění spravovaného a nativního kódu společně, označované také jako pracující v kombinovaném režimu ladění. Existují dva scénáře ladění ve smíšeném režimu:  
   
--   Volající aplikace, který volá vaše knihovna DLL je napsán v nativním kódu. V takovém případě je spravovat vaše knihovna DLL a spravovaná a nativní ladicí programy musí být povoleno ladění obě. To můžete zkontrolovat  **\<Projekt > stránky vlastností** dialogové okno. Tento postup závisí na tom, jestli spuštění ladění z projektu knihovny DLL nebo volání projekt aplikace.  
+- Aplikace, který volá knihovnu DLL je napsaná v nativním kódu a spravované knihovny DLL. 
   
--   Volající aplikace, který volá vaše knihovna DLL je zapsané ve spravovaném kódu a vaše knihovna DLL je zapsán v nativním kódu. Kurz vás provede tyto kroky v tématu [ladění spravovaná a nativní kód](../debugger/how-to-debug-managed-and-native-code.md).
-  
+- Aplikace, který volá knihovnu DLL je zapsána ve spravovaném kódu a knihovny DLL je v nativním kódu. Kurz vás provede tento scénář podrobněji, najdete v tématu [ladění spravovaného a nativního kódu](../debugger/how-to-debug-managed-and-native-code.md).
+   
+Můžete povolit spravované i nativní ladicí programy ve volání aplikace projektu **vlastnost** stránky. Nastavení se liší mezi nativními a spravovanými aplikacemi. 
+
+Pokud nemáte přístup k projektu volání aplikace, můžete ladit knihovnu DLL z projektu knihovny DLL. Kombinovaný režim ladění projektu knihovny DLL nepotřebujete. Další informace najdete v tématu [postupy: ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md). 
+
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Dialogová okna a příkazy, které vidíte mohou lišit od těch v tomto článku, v závislosti na edici nebo nastavení sady Visual Studio. Chcete-li změnit nastavení, zvolte **nástroje** > **nastavení importu a exportu**. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-Pokud nemáte přístup k projektu pro volání aplikace, můžete ladit, knihovny DLL z projektu knihovny DLL. Další informace najdete v tématu [postupy: ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md). Nemusíte používat ve smíšeném k ladění právě projektu knihovny DLL.
+## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>Povolit ladění ve smíšeném režimu pro nativní volající aplikace  
   
-### <a name="to-enable-mixed-mode-debugging-c-calling-app"></a>Pokud chcete povolit ladění ve smíšeném režimu (volání aplikace C++)  
-  
-1.  V **Průzkumníku**, vyberte nativnímu projektu.
-  
-2.  Na **zobrazení** nabídky, klikněte na tlačítko **stránky vlastností**.
-  
-3.  V  **\<Projekt > stránky vlastností** dialogové okno, rozbalte seznam **vlastnosti konfigurace** uzel a potom vyberte **ladění**.  
-  
-4.  Nastavit **ladicího programu typ** k **smíšený** nebo **automaticky**.
+1. Vyberte projekt C++ v **Průzkumníka řešení** a klikněte na tlačítko **vlastnosti** ikonu, stiskněte klávesu **Alt**+**Enter**, nebo Klikněte pravým tlačítkem a zvolte **vlastnosti**.
+   
+1. V  **\<Projekt > stránky vlastností** dialogového okna rozbalte **vlastnosti konfigurace**a pak vyberte **ladění**.  
+   
+1. Nastavte **typ ladicího programu** k **smíšené** nebo **automaticky**.
+   
+1. Vyberte **OK**.
+   
+   ![Povolit ladění ve smíšeném režimu](../debugger/media/dbg-mixed-mode-from-native.png "povolit ladění ve smíšeném režimu")
 
-    ![Povolit ladění ve smíšeném režimu](../debugger/media/dbg-mixed-mode-from-native.png "povolit ladění ve smíšeném režimu")
+## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>Povolit ladění ve smíšeném režimu pro spravovanou aplikaci volání  
+  
+1. Vyberte projekt C# nebo Visual Basic v **Průzkumníka řešení** a vyberte **vlastnosti** ikonu, stiskněte klávesu **Alt**+**Enter**, nebo klikněte pravým tlačítkem a zvolte **vlastnosti**.
+   
+1. Vyberte **ladění** kartu a potom vyberte **povolit ladění nativního kódu**.
+   
+1. Použití **souboru** > **uložit vybrané položky** nebo **Ctrl + S** uložte změny.
 
-### <a name="to-enable-mixed-mode-debugging-c-or-vb-calling-app"></a>Pokud chcete povolit ladění ve smíšeném režimu (C# nebo VB volání aplikace)  
+   ![Povolit ladění nativního kódu](../debugger/media/dbg-mixed-mode-from-csharp.png "povolit ladění nativního kódu")
   
-1.  V **Průzkumníku**, vyberte spravovaný projekt.  
-  
-2.  Na **zobrazení** nabídky, klikněte na tlačítko **stránky vlastností**.  
-  
-3.  V  **\<Projekt > stránky vlastností** dialogové okno, vyberte **ladění** a pak vyberte **povolit ladění nativního kódu**
-
-    ![Povolit ladění nativního kódu](../debugger/media/dbg-mixed-mode-from-csharp.png "povolit ladění nativního kódu")
-  
-## <a name="see-also"></a>Viz také  
- [Postupy: ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md)
+## <a name="see-also"></a>Viz také:  
+ [Postupy: Ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md)

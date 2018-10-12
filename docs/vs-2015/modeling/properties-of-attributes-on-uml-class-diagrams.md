@@ -1,7 +1,7 @@
 ---
 title: Vlastnosti atributů v UML diagramech tříd | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a9cd12bb002efbf28443b8052382c29ed87036b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b3f1379aa692cae06c38ac6bf55c6efba4d5c94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669258"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173067"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Vlastnosti atributů v diagramech tříd UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [diagramech tříd vlastnosti atributů v UML](https://docs.microsoft.com/visualstudio/modeling/properties-of-attributes-on-uml-class-diagrams).  
-  
 V diagramu tříd UML lze přidat *atributy* u tříd a rozhraní. Atribut definuje hodnoty, které lze připojit k instancím typu třídy nebo rozhraní.  
   
  Chcete-li přidat atribut, klikněte pravým tlačítkem na třídu nebo rozhraní, přejděte na **přidat**a potom klikněte na tlačítko **atribut**.  
@@ -77,7 +75,7 @@ V diagramu tříd UML lze přidat *atributy* u tříd a rozhraní. Atribut defin
  [Vlastnosti typů v diagramech tříd UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Vlastnosti operací v diagramech tříd UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)   
- [Diagramy tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md)
+ [Diagramy tříd UML: Pokyny](../modeling/uml-class-diagrams-guidelines.md)
 
 
 

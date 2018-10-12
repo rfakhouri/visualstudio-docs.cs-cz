@@ -1,7 +1,7 @@
 ---
 title: Dialogové okno vlastností procesů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23df984e13f2f8d022a4731926d0747450c7faaf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0c58dfd492886a5e4a222ba758c0652f73c014
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669475"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180938"
 ---
 # <a name="process-properties-dialog-box"></a>Dialogové okno vlastností procesů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dialogové okno vlastností procesu](https://docs.microsoft.com/visualstudio/debugger/process-properties-dialog-box).  
-  
 Použijte toto dialogové okno a zjistěte další informace o konkrétní proces. Zobrazíte dialogovému oknu přesunout fokus [zobrazení procesy](../debugger/processes-view.md) okna. Vyberte libovolný uzel procesu ve stromové struktuře a pak zvolte **vlastnosti** z **zobrazení** nabídky.  
   
  Windows 98 a Windows 95 operačních systémech, pouze upravenou verzi **Obecné** kartě se zobrazí.  
@@ -37,13 +35,13 @@ Použijte toto dialogové okno a zjistěte další informace o konkrétní proce
  [Karta Obecné, dialogové okno vlastností procesu](../debugger/general-tab-thread-properties-dialog-box.md)  
  Pomocí tohoto dialogového okna pole Najít další informace o vybraných procesů.  
   
- [Karta paměť, dialogové okno vlastností procesu](../debugger/memory-tab-process-properties-dialog-box.md)  
+ [Karta Paměť, dialogové okno vlastností procesu](../debugger/memory-tab-process-properties-dialog-box.md)  
  Tato karta umožňuje zobrazit, jak na proces používá paměti.  
   
- [Karta soubor stránky, dialogové okno vlastností procesu](../debugger/page-file-tab-process-properties-dialog-box.md)  
+ [Karta Stránkovací soubor, dialogové okno vlastností procesu](../debugger/page-file-tab-process-properties-dialog-box.md)  
  Tato karta slouží k prozkoumání stránkovacího souboru procesu.  
   
- [Karta prostor, dialogové okno vlastností procesu](../debugger/space-tab-process-properties-dialog-box.md)  
+ [Karta Prostor, dialogové okno vlastností procesu](../debugger/space-tab-process-properties-dialog-box.md)  
  Tato karta slouží k prozkoumání adresního prostoru procesu.  
   
 ## <a name="related-sections"></a>Související oddíly  

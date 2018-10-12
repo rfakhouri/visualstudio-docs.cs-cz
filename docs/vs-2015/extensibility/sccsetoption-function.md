@@ -1,7 +1,7 @@
 ---
 title: Sccsetoption – funkce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc125e6393f1ffd988b33a25a92372946392e897
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 282b30ff4877e76ff7e789bded57010b2ea165db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676882"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183921"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption – funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sccsetoption – funkce](https://docs.microsoft.com/visualstudio/extensibility/sccsetoption-function).  
-  
 Tato funkce nastaví možnosti, které řídí chování modulu plug-in správy zdrojového kódu.  
   
 ## <a name="syntax"></a>Syntaxe  

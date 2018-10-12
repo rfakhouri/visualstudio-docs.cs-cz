@@ -1,7 +1,7 @@
 ---
 title: m_action – pole | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 201838c2-260d-4071-b6c3-f526874e19c9
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68d526fe4266f9c8f7c0d3dc4790c8b5893f72ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02a8f6ffcacf2c96905dc60dea753ce4737fe7b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696194"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192501"
 ---
 # <a name="maction-field"></a>m_action – pole
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [m_action – pole](https://docs.microsoft.com/visualstudio/extensibility/debugger/m-action-field).  
-  
 Delegát, který představuje kód pro spuštění v <xref:System.Threading.Tasks.Task> objektu.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
@@ -45,5 +43,5 @@ Delegát, který představuje kód pro spuštění v <xref:System.Threading.Task
  Toto je `action` parametr <xref:System.Threading.Tasks.Task.%23ctor%2A> konstruktoru.  
   
 ## <a name="see-also"></a>Viz také  
- [Třída úlohy](../../extensibility/debugger/task-class-internal-members.md)
+ [Task – třída](../../extensibility/debugger/task-class-internal-members.md)
 

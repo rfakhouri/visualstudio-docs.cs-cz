@@ -1,7 +1,7 @@
 ---
 title: Příkazy, nabídky a panely nástrojů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e99669e5790d30cf9d290e7d0411b6caff047265
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d5105686e4b29568cb551cf617a851a595fb197
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628449"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173794"
 ---
 # <a name="commands-menus-and-toolbars"></a>Příkazy, nabídky a panely nástrojů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [příkazy, nabídky a panely nástrojů](https://docs.microsoft.com/visualstudio/extensibility/internals/commands-menus-and-toolbars).  
-  
 Nabídky a panely nástrojů jsou způsob, jak uživatelům přístup k příkazům v vašeho balíčku VSPackage. Příkazy jsou funkce, které provádět úlohy, jako je například tisk dokumentu, aktualizuje zobrazení nebo vytvoření nového souboru. Nabídky a panely nástrojů jsou vhodné grafické způsoby, jak uživatelům k dispozici vaše příkazy. Související příkazy jsou obvykle Clusterované společně na stejném nabídky nebo panelu nástrojů.  
   
 -   Nabídky se obvykle zobrazují jako jednoslovným řetězce v řádku v horní části integrovaného vývojového prostředí (IDE) nebo panelu nástrojů v clusteru. Nabídky také mohou být zobrazeny v důsledku události kliknutí pravým tlačítkem myši a jsou označovány jako místní nabídky v tomto kontextu. Po kliknutí na nabídky rozbalte seznam jednoho nebo více příkazů. Příkazy, při kliknutí můžete provádět úlohy, nebo spusťte dílčích nabídek, které obsahují další příkazy. Některé názvy dobře známé nabídek se soubor, upravit, zobrazení a okno. Další informace najdete v tématu [rozšiřování nabídek a příkazů](../../extensibility/extending-menus-and-commands.md).  

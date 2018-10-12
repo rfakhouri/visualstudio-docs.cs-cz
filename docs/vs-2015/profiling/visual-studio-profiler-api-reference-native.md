@@ -1,7 +1,7 @@
 ---
 title: Reference k rozhraní API sady Visual Studio Profiler (nativní) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74a66580cf7fb0b5fb998442fe59a3cb601da437
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 780556a3c36880bdf24db03a626ba06c95fb4cba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666488"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185936"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Referenční dokumentace rozhraní API produktu Visual Studio Profiler (nativní)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Visual Studio Profiler API Reference (nativní)](https://docs.microsoft.com/visualstudio/profiling/visual-studio-profiler-api-reference-native).  
-  
 Rozhraní API pro Visual Studio Profiler můžete použít k programovému řízení objemu shromážděných dat a vkládání značek časovým razítkem a profil během profilace. Pokud chcete používat nativní rozhraní API, zahrnout soubor hlaviček VSPerf.h a přidejte VSPerf.lib ve vašem projektu.  
   
 > [!NOTE]
@@ -55,7 +53,7 @@ Rozhraní API pro Visual Studio Profiler můžete použít k programovému říz
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní API nástrojů pro profilaci](../profiling/profiling-tools-apis.md)   
- [Návod: Použití rozhraní API Profiler](../profiling/walkthrough-using-profiler-apis.md)
+ [Návod: Použití rozhraní API profileru](../profiling/walkthrough-using-profiler-apis.md)
 
 
 

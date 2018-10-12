@@ -1,7 +1,7 @@
 ---
 title: Automatické pozastavení funkce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,15 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 281a4cbfb7bb1564af698cf4e745d56207f3e58e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8aee8f4ef46d3621bf569b260d943180abd7ad5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674031"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178175"
 ---
 # <a name="automatic-feature-suspension"></a>Automatické pozastavení funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Nejnovější verzi tohoto tématu můžete najít v [funkce automatického pozastavení](https://docs.microsoft.com/visualstudio/code-quality/automatic-feature-suspension).
-
 Pokud dostupné systémové paměti klesne na 200MB nebo méně, Visual Studio zobrazí následující zpráva v editoru kódu.
 
  ![Pozastavení úplné analýzy řešení textu výstrahy](../code-quality/media/fsa-alert.png "FSA_Alert")
@@ -68,6 +65,6 @@ Kromě toho jsou vymazány mezipamětí použít pro interní operace sady Visua
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: povolení a zákaz úplné analýzy řešení](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
+- [Postupy: Povolení a zakázání úplné analýzy řešení](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Základy kolekce paměti](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Faktory ovlivňující výkon u velkých řešení](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

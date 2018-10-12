@@ -1,7 +1,7 @@
 ---
 title: Pomocí seznamu úkolů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f58dd84be73541a3a830c16ff629424830dce488
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5662aebeb0e7b8da36c52c0c9fd727c860a4221
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172026"
 ---
 # <a name="using-the-task-list"></a>Používání seznamu úloh
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pomocí seznamu úkolů](https://docs.microsoft.com/visualstudio/ide/using-the-task-list).  
-  
 Použít **seznamu úkolů** ke sledování komentářů kódu, které používají tokeny jako `TODO` a `HACK`, nebo vlastní tokeny a ke správě klávesových zkratek, které se dostanete přímo do předdefinovaného místa v kódu. Klikněte na položku v seznamu a přejděte do umístění ve zdrojovém kódu.  
   
  V tomto tématu:  
@@ -134,7 +132,7 @@ Použít **seznamu úkolů** ke sledování komentářů kódu, které používa
      Procházet zástupce v kódu, zvolit zástupce v seznamu a klikněte na tlačítko **dalším úkolem** nebo **předchozího úkolu** z místní nabídky.  
   
 ## <a name="see-also"></a>Viz také  
- [Dialogové okno úloh seznamu prostředí, možnosti](../ide/reference/task-list-environment-options-dialog-box.md)
+ [Seznam úkolů, Prostředí, dialogové okno Možnosti](../ide/reference/task-list-environment-options-dialog-box.md)
 
 
 

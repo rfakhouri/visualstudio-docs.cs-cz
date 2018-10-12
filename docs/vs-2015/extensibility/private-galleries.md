@@ -1,7 +1,7 @@
 ---
 title: Privátní Galerie | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0875ffc87e7b1161f08a0fdec77de52250f209a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 820b0e992b79af28ca1b7f65f6a2f6221396da9e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675479"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192597"
 ---
 # <a name="private-galleries"></a>Privátní galerie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [privátní Galerie](https://docs.microsoft.com/visualstudio/extensibility/private-galleries).  
-  
 Můžete sdílet ovládací prvky, šablony a nástroje, které vyvíjíte jejich zveřejněním *privátní Galerie* v síti intranet pro vaši organizaci, a to následujícím způsobem:  
   
 -   Vytvořte kanál Atom (RSS) do centrálního umístění vhodně nakonfigurovaná (úložiště) na vašem intranetu. Další informace najdete v tématu [postupy: vytvoření informačního kanálu Atom pro privátní galerii](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  

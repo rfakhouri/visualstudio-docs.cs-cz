@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: nastavení názvu vlákna v nativním kódu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b369aaef3134c64ddabbc03d8f7391bcdea3647
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c040677dfe88c4fdd5db2f7077cfcea9e81099c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671882"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191682"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Postupy: Nastavení názvu vlákna v nativním kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: nastavení názvu vlákna v nativním kódu](https://docs.microsoft.com/visualstudio/debugger/how-to-set-a-thread-name-in-native-code).  
-  
 Chcete-li nastavení názvu vlákna ve svém programu, použijte `SetThreadName` fungovat, jak je znázorněno v následujícím příkladu kódu. Všimněte si, že název vlákna je zkopírován do vlákna tak, aby paměti pro `threadName` parametr mohlo být uvolněno.  
   
 ## <a name="example"></a>Příklad  
@@ -77,7 +75,7 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)   
- [Postupy: nastavení názvu vlákna ve spravovaném kódu](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+ [Postupy: Nastavení názvu vlákna ve spravovaném kódu](../debugger/how-to-set-a-thread-name-in-managed-code.md)
 
 
 

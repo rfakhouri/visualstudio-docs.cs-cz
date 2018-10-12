@@ -1,7 +1,7 @@
 ---
 title: Kreslení tvarů a cest | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 79a48b91c7d467e66be8311692a85dc1b4de25dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f59ecbdf9e69093d5c445cdb6d4780eb3b6f86e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188185"
 ---
 # <a name="draw-shapes-and-paths"></a>Kreslení tvarů a cest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [kreslení tvarů a cest](https://docs.microsoft.com/visualstudio/designers/draw-shapes-and-paths).  
-  
 V Návrháři XAML *tvar* je přesně to, co byste očekávali. Příklad: obdélník, kruh nebo elipsu. A *cesta* je flexibilnější verze tvaru. Můžete třeba je změnit tvar nebo kombinovat společně na formulář nové obrazce.  
   
  Tvarů a cest používá vektorovou grafiku, takže jejich škálování i na displejích s vysokým rozlišením. Pokud chcete získat další informace o vektorové grafiky, naleznete v tématu [co jsou vektorové grafiky](https://www.youtube.com/watch?v=MoCSwF0n-io) nebo [vektorové grafiky](http://www.webopedia.com/TERM/V/vector_graphics.html).  

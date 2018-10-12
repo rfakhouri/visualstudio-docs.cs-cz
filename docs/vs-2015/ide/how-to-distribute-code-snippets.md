@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: distribuce fragmentů kódu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bda2aa5e7639b951b0df6bb83ff2d50fd4331e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627709"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185702"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Postupy: Distribuce fragmentů kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: distribuce fragmentů kódu](https://docs.microsoft.com/visualstudio/ide/how-to-distribute-code-snippets).  
-  
 Můžete jednoduše poskytnout fragmenty svého kódu přátelům a nechat nainstalovat pomocí Správce fragmentů kódů ve svých počítačích. Pokud máte chcete distribuovat více fragmentů nebo chcete distribuovat více široce, je však zahrnout souboru fragmentu v rozšíření sady Visual Studio, které uživatelům aplikace Visual Studio můžete nainstalovat.  
   
  Chcete-li vytvořit rozšíření sady Visual Studio je nutné nainstalovat sadu Visual Studio SDK. Najít verzi nástroje VSSDK, který odpovídá vaší instalaci sady Visual Studio na [Visual Studio 2015 ke stažení](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).  

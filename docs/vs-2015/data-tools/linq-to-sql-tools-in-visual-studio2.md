@@ -1,7 +1,7 @@
 ---
 title: Nástroje LINQ to SQL v Visual Studio2 | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19d9bccad36a186c93aeb8aef8e93b63320a00d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ff09fea0f534343fcc5e896e082f550e6bcdcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628866"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195374"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Nástroje LINQ to SQL v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [LINQ to SQL nástroje ve Visual Studio2](https://docs.microsoft.com/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
-  
   
 Technologie LINQ to SQL byl první objektově relační mapování technologie vydané společností Microsoft. Dobře funguje v základní scénáře a jsou nadále podporované v sadě Visual Studio, ale už se aktivně vyvíjí. Použití LINQ to SQL při zachování starší verze aplikací, který je již používán, nebo jednoduché aplikace, které používají SQL Server a nevyžadují žádná mapování více tabulek. Obecně platí nové aplikace by měly používat Entity Framework, pokud je nutné použít vrstvu objektově relační Mapovač.  
   
@@ -74,43 +72,43 @@ Technologie LINQ to SQL byl první objektově relační mapování technologie v
  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Poskytuje **kontextu Namespace** a **Entity Namespace** vlastnosti <xref:System.Data.Linq.DataContext>. Tyto vlastnosti určují, jaký obor názvů <xref:System.Data.Linq.DataContext> a generování kódu entity třídy do. Ve výchozím nastavení, tyto vlastnosti jsou prázdné a <xref:System.Data.Linq.DataContext> a tříd entit, které jsou vygenerovány do oboru názvů aplikace. Ke generování kódu do oboru názvů, než je obor názvů aplikace, zadejte hodnotu do **kontextu Namespace** a/nebo **Entity Namespace** vlastnosti.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)  
+ [Metody DataContext (Návrhář relací objektů)](../data-tools/datacontext-methods-o-r-designer.md)  
  Vysvětluje, co <xref:System.Data.Linq.DataContext> metody jsou a postupy jejich vytvoření.  
   
- [Dědičnost datových tříd (Návrhář O/R)](../data-tools/data-class-inheritance-o-r-designer.md)  
+ [Dědičnost datových tříd (Návrhář relací objektů)](../data-tools/data-class-inheritance-o-r-designer.md)  
  Popisuje koncept dědičnosti jedné tabulky a jak je implementován v [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
- [Postupy: vytvoření LINQ na třídy SQL namapovaných na tabulky a zobrazení (O/R Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)  
+ [Postupy: Vytvoření tříd LINQ to SQL namapovaných na tabulky a zobrazení (Návrhář relací objektů)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)  
  Popisuje postup vytvoření tříd entit, které jsou mapovány na tabulky a zobrazení v databázi.  
   
- [Postupy: vytvoření přidružení (vztah) mezi třídy LINQ to SQL (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)  
+ [Postupy: Vytvoření přidružení (relace) mezi třídami LINQ to SQL (Návrhář relací objektů)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)  
  Popisuje, jak vytvořit relaci mezi [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] tříd entit.  
   
- [Postupy: Vytvoření metod DataContext namapovaných na uložené procedury a funkce (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)  
+ [Postupy: Vytvoření metod DataContext namapovaných na uložené procedury a funkce (Návrhář relací objektů)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)  
  Popisuje, jak vytvořit <xref:System.Data.Linq.DataContext> metody, které běží uloženými procedurami nebo funkcemi, pokud jsou volány.  
   
- [Postupy: přiřazení uložených procedur za účelem aktualizace, vložení a odstranění (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
+ [Postupy: Přiřazení uložených procedur za účelem aktualizací, vkládání a odstraňování (Návrhář relací objektů)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
  Popisuje postup konfigurace <xref:System.Data.Linq.DataContext> při ukládání dat z entity pouze pomocí uložených procedur třídy zpět do databáze.  
   
- [Postupy: Změna návratového typu metody DataContext (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)  
+ [Postupy: Změna návratového typu metody DataContext (Návrhář relací objektů)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)  
  Popisuje, jak nastavit návratový typ <xref:System.Data.Linq.DataContext> metoda typu třídu entity nebo automaticky generovaný typ, který vytvořil Návrháře relací objektů.  
   
- [Postupy: přidávání ověřování do tříd entit](../data-tools/how-to-add-validation-to-entity-classes.md)  
+ [Postupy: Přidání ověřování do tříd entit](../data-tools/how-to-add-validation-to-entity-classes.md)  
  Popisuje, jak generovat částečné metody, které umožňují přidání kódu během změny vlastností a aktualizace entity třídy.  
   
- [Postupy: vypnutí pluralizace a zapnutí (O/R Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)  
+ [Postupy: Zapnutí a vypnutí pluralizace (Návrhář relací objektů)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)  
  Popisuje, jak zapnout a vypnout automatické přejmenování tříd, které jsou přidány do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
  [Postupy: Konfigurace dědičnosti pomocí Návrháře relací objektů](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)  
  Popisuje postup konfigurace dědičnosti jedné tabulky s použitím tříd entit [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
- [Postupy: rozšíření kódu vygenerovaného návrhářem relací objektů](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)  
+ [Postupy: Rozšíření kódu vygenerovaného Návrhářem relací objektů](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)  
  Popisuje, jak a kde přidat kód, který se přepíše při změny objektů na O/R Designer znovu vygenerovat kód.  
   
- [Návod: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)  
+ [Návod: Vytvoření tříd LINQ to SQL pomocí dědičnosti jedné tabulky (Návrhář relací objektů)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)  
  Poskytuje podrobné pokyny ke konfiguraci dědičnosti jedné tabulky s použitím tříd entit [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
- [Návod: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)  
+ [Návod: Přizpůsobení chování tříd entit při vložení, aktualizaci a odstranění](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)  
  Poskytuje podrobné pokyny ke konfiguraci <xref:System.Data.Linq.DataContext> při ukládání dat z entity pouze pomocí uložených procedur třídy zpět do databáze.  
   
 ## <a name="reference-content"></a>Odkazování na obsah  

@@ -1,7 +1,7 @@
 ---
 title: Aplikace Windows Store spustit na místním počítači | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d69e4224627d78d4fdd9482097ef248e69f6571f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b460d1eecfe96cddce27926ee8e31aae258d8dcf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672438"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188380"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Spusťte Windows Store apps na místním počítači
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [aplikace Windows Store spustit na místním počítači](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-the-local-machine).  
-  
 Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_content")  
   
  Chcete-li ladit, testovat nebo spouštět analýzu výkonu v aplikaci Windows Store, můžete spustit aplikaci na stejném počítači, který je hostitelem aplikace Visual Studio. Je-li zobrazovat na zařízení dotykově ovládaný, můžete také vyzkoušet všechny funkce aplikace. v opačném případě bude omezená na gesta myš a klávesnici.  

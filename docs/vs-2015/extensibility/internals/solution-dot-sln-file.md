@@ -1,7 +1,7 @@
 ---
 title: Řešení (. Soubor SLN) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 737186560f6e1cde0fc35d16dab35fb146685fbb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b6248bf97650212324fe9ca0791ccbd981d92ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671661"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173677"
 ---
 # <a name="solution-sln-file"></a>Soubor řešení (.Sln)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [řešení (. SLN) soubor](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-dot-sln-file).  
-  
 Řešení je struktura pro organizování projektů v sadě Visual Studio. Řešení udržuje informace o stavu pro projekty v .sln (založený na textu, sdílené) a soubory .suo (Možnosti binární, uživatelská řešení). Další informace o soubory .suo, naleznete v tématu [uživatelské možnosti řešení (. Soubor suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
  Pokud je vaše VSPackage načten v důsledku, na kterou se odkazuje v souboru .sln, prostředí volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> ke čtení v souboru .sln.  

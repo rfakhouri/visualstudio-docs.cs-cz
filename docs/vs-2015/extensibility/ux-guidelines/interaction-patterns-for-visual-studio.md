@@ -1,7 +1,7 @@
 ---
 title: Vzory interakcí pro sadu Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf21a8aa3c2a2813c71907d1d79bdcd4f7cde323
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ac6dde1b09e0488f3ae07b3a6ea02409d69892e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668468"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192059"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Vzory interakcí pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vzory interakcí pro sadu Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/interaction-patterns-for-visual-studio).  
-  
 ## <a name="overview"></a>Přehled  
  Návrhový vzor, obecně je základní návrh, který lze použít v určitých situacích k řešení problémů s podobnými sadami omezení. Funkce a systémové návrháři používají tyto způsoby návrhu jako výchozí body, které mohou být upraveny tak, aby jejich konkrétní situaci.  
   
@@ -43,9 +41,9 @@ Nejnovější verzi tohoto tématu můžete najít v [vzory interakcí pro sadu 
   
  Existují vzory základní informace o využití pro jednotlivé body klíčové integrace v uživatelském rozhraní IDE:  
   
--   [Nabídek a příkazů pro sadu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)  
+-   [Nabídky a příkazy pro Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)  
   
--   [Modely aplikací pro sadu Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)  
+-   [Vzory aplikací pro Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)  
   
     -   [Okno interakce](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)  
   
@@ -62,7 +60,7 @@ Nejnovější verzi tohoto tématu můžete najít v [vzory interakcí pro sadu 
   
  Většina běžných ovládacích prvků v sadě Visual Studio by měl postupovat podle pokynů Windows Desktop. Naše pokyny zahrnují jenom oblasti, ve kterých potřebujeme k posílení běžné konvence s Visual Studio konkrétní interakce nebo místa, ve kterých jsme mají přednost před pokyny zcela k přizpůsobení sady Visual Studio pro potřeby naše zkušené uživatele.  
   
--   [Vzory běžných ovládacích prvků pro sadu Visual Studio](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)  
+-   [Vzory běžných ovládacích prvků pro Visual Studio](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)  
   
     -   [Běžné ovládací prvky](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CommonControls)  
   
@@ -75,7 +73,7 @@ Nejnovější verzi tohoto tématu můžete najít v [vzory interakcí pro sadu 
   
  I když existují mnoho složené vzory v sadě Visual Studio, některé z vašich nejdůležitějších s ohledem na konzistenci jsou:  
   
--   [Složené vzory pro sadu Visual Studio](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md)  
+-   [Složené vzory pro Visual Studio](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md)  
   
     -   [Na objekt uživatelského rozhraní a prohlížení](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)  
   

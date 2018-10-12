@@ -1,7 +1,7 @@
 ---
 title: Pole najít / příkaz | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22ced396f8a18cf2a665ed7a1ba1016b16e44c8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e818df222e9b7343facc989c1b61be30c098b64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42665893"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172565"
 ---
 # <a name="findcommand-box"></a>Pole Najít/příkaz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pole najít / příkaz](https://docs.microsoft.com/visualstudio/ide/find-command-box).  
-  
 Můžete hledat text a spustit příkazy sady Visual Studio z **najít/příkaz** pole. **Najít/příkaz** pole je stále k dispozici jako ovládací prvek panelu nástrojů, ale už není ve výchozím nastavení viditelný. Můžete zobrazit **najít/příkaz** pole výběrem **přidat nebo odebrat tlačítka** na **standardní** nástrojů a následným výběrem možnosti **najít**.  
   
  Ke spuštění [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] příkaz, musí se znaménkem větší než (>).  

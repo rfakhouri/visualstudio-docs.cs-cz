@@ -1,7 +1,7 @@
 ---
 title: Použití paralelních zásobníků okno | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01dd627143c072fea6dec99ea47ee4d6919dd62e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633249"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182167"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Použití okna Paralelní zásobníky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [použití okna paralelní zásobníky](https://docs.microsoft.com/visualstudio/debugger/using-the-parallel-stacks-window).  
-  
 **Paralelní zásobníky** okna je užitečné při ladění aplikací s více vlákny. Jeho **zobrazení vláken** ukazuje informace v zásobníku volání pro všechna vlákna ve vaší aplikaci. Umožňuje procházet mezi vlákny a rámce zásobníku na tato vlákna. Ve spravovaném kódu **zobrazení úkolů** ukazuje volání zásobníků s <xref:System.Threading.Tasks.Task?displayProperty=fullName> objekty. V nativním kódu **zobrazení úkolů** ukazuje volání zásobníků s [skupiny úloh](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [paralelní algoritmy](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [asynchronních agentů](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)a [prostých úloh](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
   
 ## <a name="threads-view"></a>Zobrazení vláken  
@@ -131,7 +129,7 @@ Nejnovější verzi tohoto tématu můžete najít v [použití okna paralelní 
  [Paralelní programování](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [Používání okna úloh](../debugger/using-the-tasks-window.md)   
  [Návod: Ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Třída úlohy](../extensibility/debugger/task-class-internal-members.md)
+ [Task – třída](../extensibility/debugger/task-class-internal-members.md)
 
 
 

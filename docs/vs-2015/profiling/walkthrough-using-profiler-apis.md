@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Použití rozhraní API Profiler | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7eb2d4c3acfc8f2a98de1364b1f98aa451abaed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad4b22be98396fe58734f9c785da201450bdafcc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627840"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172533"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Návod: Použití rozhraní API profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: použití rozhraní API Profiler](https://docs.microsoft.com/visualstudio/profiling/walkthrough-using-profiler-apis).  
-  
 Návod používá k ukazují, jak používat aplikace v jazyce C# [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profilování rozhraní API nástroje. Chcete-li omezit množství dat shromážděných během profilace instrumentace použijete rozhraní API profileru.  
   
  Kroky v tomto názorném postupu se obecně používají pro aplikace v jazyce C/C++. Pro každý jazyk musíte správně nakonfigurovat prostředí sestavení.  
@@ -46,9 +44,9 @@ Návod používá k ukazují, jak používat aplikace v jazyce C# [!INCLUDE[vspr
 ## <a name="prerequisites"></a>Požadavky  
  Tento názorný průvodce předpokládá, že vývojové prostředí podle vašeho výběru je nakonfigurována pro podporu ladění a vzorkování. Přehled o těchto nezbytných podmínkách naleznete v následujících tématech:  
   
- [Postupy: výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md)  
+ [Postupy: Výběr metod shromažďování](../profiling/how-to-choose-collection-methods.md)  
   
- [Postupy: referenční informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Postupy: Odkazování na informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md)  
   
  Ve výchozím nastavení při spuštění profilování, profiler shromáždí data na globální úrovni. Následující kód při spuštění programu se změní na globální profilace vypnout.  
   
@@ -172,7 +170,7 @@ DataCollection.CurrentId);
  <xref:Microsoft.VisualStudio.Profiler>   
  [Reference k rozhraní API sady Visual Studio Profiler (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Začínáme se službou](../profiling/getting-started-with-performance-tools.md)   
- [Profilace z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Profilace prostřednictvím příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)
 
 
 

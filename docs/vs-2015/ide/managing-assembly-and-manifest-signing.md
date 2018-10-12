@@ -1,7 +1,7 @@
 ---
 title: Správa sestavení a podepsání manifestu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76ab4cc115f8c9f052f48c6e0dccd06693ddb970
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696279"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172741"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Správa sestavení a podepsání manifestu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Správa sestavení a podepsání manifestu](https://docs.microsoft.com/visualstudio/ide/managing-assembly-and-manifest-signing).  
-  
 Podepisování silným názvem poskytuje softwarová součást globálně jedinečné identity. Silné názvy se používají k zajištění, že s falešnou identitou sestavení někým jiným a zajistit závislostí součástí a konfigurace příkazy, které se mapují správné komponenty a verze komponenty.  
   
  Silný název se skládá z identity sestavení (jednoduchý textový název, číslo verze a informace o jazykové verzi), plus token veřejného klíče a digitální podpis.  

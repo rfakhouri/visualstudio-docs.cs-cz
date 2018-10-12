@@ -1,7 +1,7 @@
 ---
 title: 'Diagramy činnosti UML: Referenční | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bfe4eaad401ce61534e5785ed82b9e33fa2f6610
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fe8a0d33b0e9be8eecdc55ac68d23138f6506d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628077"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177837"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagramy činnosti UML: referenční dokumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [diagramy činnosti UML: referenční](https://docs.microsoft.com/visualstudio/modeling/uml-activity-diagrams-reference).  
-  
 *Diagram činnosti* ukazuje obchodní proces nebo proces softwaru jako tok práci prostřednictvím obnáší sérii akcí. Lidé, softwarové součásti nebo počítače mohou provádět tyto akce.  
   
  Diagram činnosti můžete použít k popisu procesy z několika typů, jako jsou následující příklady:  
@@ -63,7 +61,7 @@ Nejnovější verzi tohoto tématu můžete najít v [diagramy činnosti UML: re
   
 ||||  
 |-|-|-|  
-|**Obrazec**|**– Element**|**Popis a hlavní vlastnosti**|  
+|**Obrazec**|**Element**|**Popis a hlavní vlastnosti**|  
 |1|**Akce**|Krok v aktivitě, ve kterém software nebo uživatelé provádět určité operace.<br /><br /> Akci můžete spustit, když token dorazila na všech příchozích toků. Při jeho ukončení, tokeny jsou odeslány na všechny odchozí toky.<br /><br /> -   **Tělo** -Určuje akci, která podrobně.<br />-   **Jazyk** – jazyk výrazů v těle.<br />-   **Místní vstupních** – omezení, která musí být splněny, při ukončení provádění. Cílem dosáhnout akce.<br />-   **Místní předpoklady** – omezení, která musí být splněny, než začne provádění.|  
 |2|**Tok řízení**|Konektor, který zobrazuje tok řízení mezi akcemi. Interpretace diagramu, představte si, že token toky z jednu akci na další.<br /><br /> Pokud chcete vytvořit tok řízení, použijte **konektor** nástroj.|  
 |3|**Počáteční uzel**|Označuje první akci nebo akce v rámci aktivity. Při spuštění aktivity toků token od počátečního uzlu.|  
@@ -84,7 +82,7 @@ Nejnovější verzi tohoto tématu můžete najít v [diagramy činnosti UML: re
   
 ||||  
 |-|-|-|  
-|**Obrazec**|**– Element**|**Popis**|  
+|**Obrazec**|**Element**|**Popis**|  
 |11|**Uzly rozvětvení**|Dělí jeden tok do souběžných toků. Každý příchozí token vytvoří token pro každou odchozí konektor.|  
 |12|**Připojte se k uzlu**|Kombinuje souběžných toků do jediného toku. Token čekání po každé příchozí tok je token vytvořen na výstupu.|  
 |13|**Odesílat signál akce**|Akce, která odesílá zprávy nebo signál pro jinou aktivitu nebo souběžných vláken do stejné aktivity. Typ a obsah zprávy je implicitní podle názvu akce nebo zadaný v další komentáře.<br /><br /> Tato akce může odesílat data v signál, který může být předán akcí v toku objektu nebo vstupní kód pin (16).|  
@@ -97,7 +95,7 @@ Nejnovější verzi tohoto tématu můžete najít v [diagramy činnosti UML: re
   
 ||||  
 |-|-|-|  
-|**Obrazec**|**– Element**|**Popis**|  
+|**Obrazec**|**Element**|**Popis**|  
 |15|**Uzel objektu**|Představuje data, která předá toku.<br /><br /> -   **Řazení** – způsob, jakým se ukládají více tokenů.<br />-   **Výběr** – spustí proces, který může být definován do jiného diagramu, který filtruje data.<br />-   **Horní mez** -0 znamená, že přímo máte tok; musí předat data \* označuje, že data mohou být uložena v toku.<br />-   **Typ** – typ objektu, uložených a odesílané informace.|  
 |16|**Vstupní kód Pin**|Představuje data, která akci, dostanou při provádění.<br /><br /> -   **Typ** – typ objektů přenášených.|  
 |17|**Výstupní spojky**|Představuje data, která vytváří akci při provádění.<br /><br /> -   **Typ** – typ objektů přenášených.|  
@@ -106,7 +104,7 @@ Nejnovější verzi tohoto tématu můžete najít v [diagramy činnosti UML: re
   
 ## <a name="see-also"></a>Viz také  
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md)
+ [Diagramy činnosti UML: Pokyny](../modeling/uml-activity-diagrams-guidelines.md)
 
 
 

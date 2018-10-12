@@ -1,7 +1,7 @@
 ---
 title: Izolace testů jednotek aplikací pro Sharepoint 2010 pomocí emulátorů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85e3236e83d29e16c4501091cebf644605bfa82c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d45ea88fea9f30bf02c24e927694c81d8639559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670151"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178305"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Izolace testů jednotek aplikací pro SharePoint 2010 s použitím emulátorů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [izolace testů jednotek aplikací pro Sharepoint 2010 pomocí emulátorů](https://docs.microsoft.com/visualstudio/test/using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications).  
-  
 Balíček Microsoft.SharePoint.Emulators obsahuje sadu knihoven, které vám pomohou vytvořit samostatné testy jednotky pro aplikace Microsoft SharePoint 2010. Emulátory používají [překrytí](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) z [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) izolačního k vytvoření jednoduché objektů v paměti, které napodobují nejčastěji používané objekty a metody rozhraní API služby SharePoint. Pokud metoda služby SharePoint není emulována nebo pokud chcete změnit výchozí chování emulátoru, můžete vytvořit falešné ovladače překrytí k poskytnutí požadovaných výsledků.  
   
  Stávající testovací metody a třídy lze snadno převést na spouštění v kontextu emulátoru. Tato funkce umožňuje vytvářet testy dvojího užití. Test dvojího užití může přepínat mezi zkouškami integrace oproti skutečnému rozhraní API služby SharePoint a izolovanými jednotkami testování, které používají emulátory.  

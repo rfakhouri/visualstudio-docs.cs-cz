@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vytvoření knihovny sekvenčního pracovního postupu (starší verze) | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 87ed4a11cf989e6b0b7804bcab728993b4a49050
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a2f1801392c1edecec2fa26ec35c9d1728bc1c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194581"
 ---
 # <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Postupy: vytvoření knihovny sekvenčního pracovního postupu (starší verze)
 Postupujte podle těchto kroků a vytvořte projekt knihovny sekvenčních pracovních postupů pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] poskytované [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

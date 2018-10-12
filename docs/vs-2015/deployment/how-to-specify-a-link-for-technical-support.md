@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: určení obsahu pro technickou podporu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 333e9729012c24f93c6b3cefef3903e47af45ae6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a2a772122851bb48e5cb5f0cf388110df8e5b371
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673160"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196141"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Postupy: Určení obsahu pro technickou podporu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: určení obsahu pro technickou podporu](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-link-for-technical-support).  
-  
 Při publikování [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace, **adresu URL podpory** vlastnost identifikuje webové stránky nebo sdílené složky, kde mohou uživatelé získat informace o aplikaci. Tato vlastnost je volitelná. Pokud je zadán, adresa URL se zobrazí v vstupní aplikace **přidat nebo odebrat programy** dialogové okno.  
   
  **Adresu URL podpory** vlastnost lze nastavit na **publikovat** stránku **Návrháře projektu**.  

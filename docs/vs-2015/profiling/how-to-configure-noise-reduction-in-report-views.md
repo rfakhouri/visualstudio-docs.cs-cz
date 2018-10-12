@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: Konfigurace snížení šumu v zobrazeních sestav | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee848f506a81b156309fa7e0d86891418251d0e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af3a994dbad1ce15830145dc01acd0f47003681d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675941"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176017"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Postupy: Konfigurace snížení šumu v zobrazeních sestav
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: Konfigurace snížení šumu v zobrazeních sestav](https://docs.microsoft.com/visualstudio/profiling/how-to-configure-noise-reduction-in-report-views).  
-  
 Sestavy o výkonu lze nakonfigurovat pro snížení šumu tím, že omezíte množství dat, která jsou zobrazena v zobrazení stromu volání a přidělení. Pomocí snížení šumu jsou nejvážnějších problémy s výkonem. To je užitečné při analýze sestavy o výkonu.  
   
  Možnosti konfigurace snížení šumu zahrnují následující nastavení:  
@@ -90,7 +88,7 @@ Sestavy o výkonu lze nakonfigurovat pro snížení šumu tím, že omezíte mno
  [Zobrazení sestav nástrojů pro přizpůsobení výkonu](../profiling/customizing-performance-tools-report-views.md)   
  [Postupy: vyloučení nebo zahrnutí krátkých funkcí z instrumentace](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [Zobrazení stromu volání](../profiling/call-tree-view.md)   
- [Přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md)
+ [Zobrazení přidělení](../profiling/dotnet-memory-allocations-view.md)
 
 
 

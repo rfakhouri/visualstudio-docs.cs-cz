@@ -1,7 +1,7 @@
 ---
 title: Hierarchie a výběr | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6bac5e0635b97c191a2261c25143aaf2fd2b4d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 236ac170967800320afcddb6a4d837356bc8f16a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676899"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172767"
 ---
 # <a name="hierarchies-and-selection"></a>Hierarchie a výběr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [hierarchie a výběr](https://docs.microsoft.com/visualstudio/extensibility/internals/hierarchies-and-selection).  
-  
 Pokud přizpůsobíte [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], měli byste porozumět jak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zpracovává hierarchie, jako jsou projekty a jak ji používá kontext výběru k určení, co se zobrazí uživateli. Tato část popisuje koncepty [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hierarchie a výběr.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  

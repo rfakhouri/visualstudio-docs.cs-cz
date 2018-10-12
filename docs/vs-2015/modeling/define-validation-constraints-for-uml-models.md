@@ -1,7 +1,7 @@
 ---
 title: Definování omezení ověření pro modely UML | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775609"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176537"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definování omezení ověřování pro modely UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [definovat omezení ověření pro modely UML](https://docs.microsoft.com/visualstudio/modeling/define-validation-constraints-for-uml-models).  
-  
 Můžete definovat omezení ověření, které testují, zda model splňuje podmínku, kterou zadáte. Můžete například definovat omezení a ujistit se, že uživatel nevytvoří smyčku vztahů dědičnosti. Omezení je vyvoláno, když se uživatel pokusí otevřít nebo uložit model a může být vyvoláno také ručně. Pokud omezení selže, chybová zpráva, která definujete se přidá do okna chyby. Můžete zabalit tato omezení do rozšíření integrace Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) a distribuovat ho ostatním uživatelům aplikace Visual Studio.  
   
  Můžete také definovat omezení, která ověřují model proti externím prostředkům, jako jsou databáze. Pokud chcete ověřit kód programu proti diagramu vrstev, přečtěte si téma [přidání ověřování vlastní architektury do diagramů vrstev](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
