@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: ladění z projektu knihovny DLL | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a3ab401c4631da22f2afc84d2e1ec763258fc42
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 965a68194241c5e93e1da5bc6a9ba3f46db17213
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671158"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254784"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Postupy: Ladění z projektu knihovny DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: ladění z projektu knihovny DLL](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-from-a-dll-project).  
-  
 Chcete-li spustit ladění projektu knihovny DLL, musíte zadat volající aplikace ve vlastnostech projektu. Stránky vlastností C++ se liší v rozložení a obsah z jazyka C# a Visual Basic – stránky vlastností.  
   
  Pokud je spravovaná knihovna DLL volána pomocí nativního kódu a chcete obojí ladit, můžete toto určíte ve vlastnostech projektu. Další informace najdete v tématu [postupy: ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md).  

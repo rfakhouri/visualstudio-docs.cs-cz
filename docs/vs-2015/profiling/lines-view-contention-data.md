@@ -1,7 +1,7 @@
 ---
 title: Zobrazení řádků – Data kolizí | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09149f44e80155a13986d42d2b3279e5c39c8884
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c53db386ee9eb0815ebb27f82794118035d6cba6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669529"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254732"
 ---
 # <a name="lines-view---contention-data"></a>Zobrazení řádků – data kolizí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení řádků – Data kolizí](https://docs.microsoft.com/visualstudio/profiling/lines-view-contention-data).  
-  
 Zobrazení řádků dat kolizí obsahuje údaje o výkonu pro příkazy, které se spouští při ukázky byly shromážděny během spuštění profilování. Ve zdrojovém souboru příkaz se týkají více než jeden řádek ve zdrojovém souboru a jeden řádek může obsahovat více než jeden výraz.  
   
  Příkaz je identifikován následující data:  

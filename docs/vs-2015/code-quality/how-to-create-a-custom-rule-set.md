@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vytvoření vlastní sady pravidel | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee21452912fa87b63b49db609828ef44cac7c4c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668967"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255499"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Postupy: Vytvoření vlastní sady pravidel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: vytvoření vlastní sady pravidel](https://docs.microsoft.com/visualstudio/code-quality/how-to-create-a-custom-rule-set).  
-  
 V [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], a [!INCLUDE[vsPro](../includes/vspro-md.md)], můžete vytvářet a upravovat vlastní *sada pravidel, která* podle potřeb konkrétního projektu související s analýzou kódu. Chcete-li vytvořit vlastní pravidlo nastavte, otevřete jednu nebo více standardních pravidel nastaví v editoru sad pravidel. Potom můžete přidat nebo odebrat konkrétní pravidla a změníte akci, která nastane, pokud analýza kódu určuje, že pravidlo bylo narušeno.  
   
  Chcete-li vytvořit nové vlastní pravidlo nastavte, uložte ho pomocí nového názvu souboru. Sada vlastních pravidel se automaticky přiřadí do projektu.  

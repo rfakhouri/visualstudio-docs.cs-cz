@@ -1,7 +1,7 @@
 ---
 title: Obecná zobrazení dat | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,25 +17,23 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1253d6ca6a2dc80c1d8875e729f532944038b1b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4bcd83f3be97400b3b6f52646732d7a82ddd2849
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633848"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255876"
 ---
 # <a name="common-data-views"></a>Obecná zobrazení dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [obecná zobrazení dat](https://docs.microsoft.com/visualstudio/profiling/common-data-views).  
-  
 Tato část obsahuje referenční informace o zobrazeních a sestavách souborů dat profileru, které jsou společné pro všechny metody profilování.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Souhrnné zobrazení](../profiling/summary-view.md)  
  Popisuje souhrnné zobrazení a sestavu. Datové sloupce závisí na metodě profilování.  
   
- [Zobrazení volající/volaný](../profiling/caller-callee-view.md)  
+ [Zobrazení Volající/Volaný](../profiling/caller-callee-view.md)  
  Popisuje zobrazení stromu volání a sestavy. Datové sloupce závisí na metodě profilování.  
   
  [Zobrazení stromu volání](../profiling/call-tree-view.md)  
@@ -60,7 +58,7 @@ Tato část obsahuje referenční informace o zobrazeních a sestavách souborů
  Obsahuje seznam trasování událostí pro Windows a vzorkování událostí, které byly vloženy do souboru dat profilování.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Zobrazení dat metod vzorkování](../profiling/profiler-sampling-method-data-views.md)  
+ [Zobrazení dat metody vzorkování](../profiling/profiler-sampling-method-data-views.md)  
  Referenční informace o zobrazeních a sestavách souborů dat profileru, které byly generovány použitím metody vzorkování.  
   
  [Zobrazení dat metody instrumentace](../profiling/instrumentation-method-data-views.md)  

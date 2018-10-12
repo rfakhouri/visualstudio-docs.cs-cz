@@ -1,7 +1,7 @@
 ---
 title: Přidání příkazu do panelu nástrojů Průzkumník řešení | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0dfc2aeb0b0e73e48fd0dcf64b5b7c09fcbea9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686658"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254375"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Přidání příkazu do panelu nástrojů Průzkumník řešení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přidání příkazu do panelu nástrojů Průzkumník řešení](https://docs.microsoft.com/visualstudio/extensibility/adding-a-command-to-the-solution-explorer-toolbar).  
-  
 Tento návod ukazuje, jak přidat tlačítko **Průzkumníka řešení** nástrojů.  
   
  Jakýkoli příkaz na panelu nástrojů nebo nabídky se nazývá tlačítko v sadě Visual Studio. Po kliknutí na tlačítko je proveden kód v obslužné rutině příkazu. Související příkazy jsou obvykle seskupené dohromady a vytvoří jednu skupinu. Nabídky a panely nástrojů fungují jako kontejnery pro skupiny. Priorita určuje pořadí, ve kterém jednotlivé příkazy ve skupině zobrazí v nabídce nebo na panelu nástrojů. Tlačítko můžete zabránit zobrazené na panelu nástrojů nebo nabídce řízení viditelnost. Příkaz, který je uveden v `<VisibilityConstraints>` část souboru .vsct se zobrazí pouze v kontextu přidružené. Viditelnost nejde použít u skupiny.  

@@ -1,7 +1,7 @@
 ---
 title: Stránka odkazy projektu návrháře (Visual Basic) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a5e89b77749b331665869393b2b3cf7e520d3371
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db774bdfb02d762c2370ab342cc67c1a9b792bed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672586"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254706"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Stránka Odkazy, návrhář projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [odkazy na stránky, Návrhář projektu (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/references-page-project-designer-visual-basic).  
-  
   
 Použití **odkazy** stránku **Návrháře projektu** ke správě odkazy, webové odkazy a importovaných oborů názvů ve vašem projektu. Projekty mohou obsahovat odkazy na komponenty modelu COM, webové služby XML, knihovny tříd rozhraní .NET Framework nebo sestavení nebo další knihovny tříd. Další informace o použití odkazů naleznete v tématu [Správa odkazů v projektu](../../ide/managing-references-in-a-project.md).  
   
@@ -61,7 +59,7 @@ Použití **odkazy** stránku **Návrháře projektu** ke správě odkazy, webov
  **Odkazy**  
  Tento seznam obsahuje všechny odkazy v projektu použít nebo se nepoužívá.  
   
- **Přidat**  
+ **Add**  
  Kliknutím na Přidat odkaz nebo webový odkaz na toto tlačítko **odkazy** seznamu.  
   
  Zvolte **odkaz** přidání odkazu do projektu pomocí dialogového okna Přidat odkaz.  

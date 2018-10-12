@@ -1,7 +1,7 @@
 ---
 title: ProcessOn a ProcessOff | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd2d33a6d0e333600c31e540f03d6140853e796d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 377031abf3ebcada283df8447cd1c695e1f797e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672209"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255074"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn a ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ProcessOn a ProcessOff](https://docs.microsoft.com/visualstudio/profiling/processon-and-processoff).  
-  
 VSPerfCmd.exe **ProcessOff** a **ProcessOn** dílčí příkazy pozastavit a pokračovat v Profilování pro zadaný proces v relaci příkazového řádku profilování. **ProcessOff** zastaví profilování procesu a **ProcessOn** spustí profilaci procesu.  
   
  Ve většině případů je zadat **ProcessOn** nebo **ProcessOff** jako jedinou možností v VSPerfCmd.exe příkazového řádku, ale můžete také kombinovat s **GlobalOn**, **GlobalOff**, **ThreadOn**, a **ThreadOff** dílčí příkazy.  
@@ -52,7 +50,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  Celé číslo identifikátor procesu spuštění nebo zastavení. ID procesu jsou uvedeny na kartě procesy ve Správci úloh Windows.  
   
 ## <a name="required-subcommands"></a>Požadovaný dílčí příkazy  
- Žádná  
+ Žádné  
   
 ## <a name="valid-subcommands"></a>Neplatný dílčí příkazy  
  **ProcessOn** a **ProcessOff** se dá nastavit na příkazové řádky, které také obsahují následující dílčí příkazy.  

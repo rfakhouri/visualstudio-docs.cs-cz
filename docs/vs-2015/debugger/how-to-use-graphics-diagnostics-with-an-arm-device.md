@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: použití diagnostiky grafiky se zařízením ARM | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24067412f875001185a0709c41f930ce3cdc8f3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b5b2430f0fe3ca5100fdec072fdf9e21eb221b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42669976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255826"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Postupy: použití diagnostiky grafiky se zařízením ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: použití diagnostiky grafiky se zařízením ARM](https://docs.microsoft.com/visualstudio/debugger/graphics/how-to-use-graphics-diagnostics-with-an-arm-device).  
-  
 Diagnostika grafiky podporuje vzdálené ladění aplikací rozhraní Direct3D na založené na ARM zařízení se systémem Windows RT 8.1 nebo Windows Phone 8.1. Můžete zachytit informace grafiky z aplikace Direct3D při spuštění na zařízení nebo zařízení použít jako stroj přehrávání pro dříve zachycené informace grafiky.  
   
 ## <a name="using-graphics-diagnostics-with-an-arm-based-device"></a>Použití diagnostiky grafiky se zařízením založené na ARM  

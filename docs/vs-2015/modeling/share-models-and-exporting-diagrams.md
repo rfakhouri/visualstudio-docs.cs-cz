@@ -1,7 +1,7 @@
 ---
 title: Sdílení modelů a export diagramů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 16
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e450216d25c4e7991bd0bc27fcc64feb81a2919a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4f25931b1374042a09fd130731c83f8813353a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632626"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254369"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Sdílení modelů a export diagramů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sdílení modelů a export diagramů](https://docs.microsoft.com/visualstudio/modeling/share-models-and-exporting-diagrams).  
-  
 V sadě Visual Studio můžete sdílet s kolegy v několika ohledech modelů a diagramů.  
   
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -62,7 +60,7 @@ V sadě Visual Studio můžete sdílet s kolegy v několika ohledech modelů a d
 |[Strukturování řešení modelování](../modeling/structure-your-modeling-solution.md)|Sdílení modely ve velkém nebo středním projektu.|  
 |[Čtení modelů a diagramů v jiných edicích sady Visual Studio](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)|Uživatelé některých verzích sady Visual Studio, který nelze vytvářet modely mohou přečíst modelů a diagramů.|  
 |[Exportování diagramů jako obrázků](../modeling/export-diagrams-as-images.md)|Můžete kopírovat části diagramů do aplikací, jako jsou PowerPoint a Word nebo vytisknout diagram pro soubor ve formátu XPS.|  
-|[Analýza a modelování vaší architektury](../modeling/analyze-and-model-your-architecture.md)|Přehled modelů a diagramů.|  
+|[Analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)|Přehled modelů a diagramů.|  
 |[Přizpůsobení modelu pomocí profilů a stereotypů](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|Pokud používáte profilu UML v modelu a pak poslat modelu někdo jiný, musí mít nainstalovány stejný profil.|  
   
 ## <a name="see-also"></a>Viz také  

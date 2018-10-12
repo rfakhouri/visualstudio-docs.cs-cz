@@ -1,7 +1,7 @@
 ---
 title: 'Chyba: Vyhodnocování funkce &#39;funkce&#39; vypršel časový limit a nutné ho přerušit nebezpečným způsobem | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,18 +13,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b78d4b8f433c925521a978ab5c3a5076f329c407
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5505597c156302f0799667a45239935914fa2fa8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679335"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255280"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Chyba: Vyhodnocování funkce &#39;funkce&#39; vypršel časový limit a nutné ho přerušit nebezpečným způsobem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Chyba: vyhodnocování funkce &#39;funkce&#39; vypršel časový limit a nutné ho přerušit nebezpečným způsobem](https://docs.microsoft.com/visualstudio/debugger/error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way).  
-  
 Úplný text zprávy: vyhodnocování funkce 'function' vypršel časový limit a je nutné ho přerušit nebezpečným způsobem. To může dojít k poškození cílového procesu. 
 
 Aby bylo snazší kontrolovat stav objektů .NET, ladicí program automaticky vynutí laděného procesu ke spuštění dalšího kódu (obvykle metody getter vlastnosti a funkce ToString). Ve většině scénářů všechny tyto funkce rychlé dokončení a být ladění mnohem snazší. Nicméně ladicí program se nespustí aplikace v izolovaném prostoru. V důsledku toho metoda getter vlastnosti nebo metody ToString, která volá do nativní funkce, která existuje v může vést k dlouhé časové limity, která nemusí být obnovitelné. Pokud dojde k této chybě to došlo k chybě.

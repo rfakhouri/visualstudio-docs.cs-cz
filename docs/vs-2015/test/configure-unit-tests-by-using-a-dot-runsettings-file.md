@@ -1,7 +1,7 @@
 ---
 title: Konfigurace testů jednotek s použitím souboru .runsettings | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e071364a6aaf7e83c554200548574c52b9b49ce5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255616"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek s použitím souboru .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [konfigurace testů jednotek s použitím souboru .runsettings](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).  
-  
 Testování částí v sadě Visual Studio můžete konfigurovat pomocí souboru *.runsettings. (Název souboru není důležité, pokud použijete rozšíření "s příponou .runsettings.") Můžete například změnit rozhraní .NET Framework, na kterém se spustí testy, adresář, kde jsou doručeny výsledky testů, a spusťte data shromážděná během testu.  
   
  Pokud nechcete provést žádnou zvláštní konfiguraci, není nutné *.runsettings souboru. Nejčastěji se vyskytujících slouží k přizpůsobení [pokrytí kódu](../test/customizing-code-coverage-analysis.md).  

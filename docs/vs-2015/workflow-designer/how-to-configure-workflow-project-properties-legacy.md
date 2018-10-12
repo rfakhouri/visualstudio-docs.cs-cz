@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: Konfigurace vlastností projektu pracovního postupu (starší verze) | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6b57525d81ee26c1a90882ab8686d9df7af6e6a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d369763b30bbfe66e9ec7480a6465ebc7f42e471
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671345"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254062"
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>Postupy: Konfigurace vlastností projektu pracovního postupu (starší verze)
 Postupujte podle těchto kroků lze zobrazit nebo upravit vlastnosti, které jsou spojeny s projekty pracovního postupu.  
