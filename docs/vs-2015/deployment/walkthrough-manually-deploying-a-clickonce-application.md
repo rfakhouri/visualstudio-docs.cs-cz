@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Ruční nasazení aplikace ClickOnce | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: d8f93b6d7f55659cc614969dcc1c8b8dd93ccf73
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4e8874324c5e5cbfb5bc42e5c6c23666b5e14b67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775534"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236168"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Návod: Ruční nasazení aplikace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: Ruční nasazení aplikace ClickOnce](https://docs.microsoft.com/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application).  
-  
 Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace, nebo potřebujete používat funkce pokročilého nasazení, jako je například nasazení důvěryhodné aplikace by měla použít nástroj příkazového řádku Mage.exe k vytvoření vašeho [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesty. Tento návod popisuje, jak vytvořit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení pomocí rozhraní příkazového řádku verze (Mage.exe) nebo grafický verze (MageUI.exe) Manifest Generation and Editing Tool.  
   
 ## <a name="prerequisites"></a>Požadavky  

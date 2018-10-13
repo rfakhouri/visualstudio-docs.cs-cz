@@ -1,7 +1,7 @@
 ---
 title: Uvolňování paměti (VSPerfCmd) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7e7323d679ac0cde2a1227c1c9ce4b7e3a380fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d13193ea49a2d96bb1bd6d4058457e48a58e5ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672168"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213028"
 ---
 # <a name="gc-vsperfcmd"></a>Uvolňování paměti (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [uvolňování paměti (VSPerfCmd)](https://docs.microsoft.com/visualstudio/profiling/gc-vsperfcmd).  
-  
 **GC** možnost povoluje shromažďování dat rozhraní .NET Framework paměť přidělení a objekt životnost. **Uvolňování paměti** možnost jde použít jenom s metoda profilování vzorkování a jenom **spuštění** možnost.  
   
  Při použití **GC** možnost, VSPerfClrEnv **/sampleon** příkazu se nevyžaduje.  

@@ -1,7 +1,7 @@
 ---
 title: Přizpůsobení a rozšíření jazyka specifického pro doménu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 158bebd18e62ac23560a09fcfacb2125e1988477
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d5b55a9b9a55d00cbfb7928295699c254f72639
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674477"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180684"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Přizpůsobení a rozšíření jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přizpůsobení a rozšíření jazyka specifického pro doménu](https://docs.microsoft.com/visualstudio/modeling/customizing-and-extending-a-domain-specific-language).  
-  
 Visual Studio modelování a vmsdk následující (sada SDK vizualizace položky) nabízí několik úrovní, ve kterém můžete definovat nástrojů pro modelování:  
   
 1.  Definice jazyka specifického pro doménu (DSL) pomocí diagramem definice DSL. Můžete rychle vytvořit DSL s graficky zápis, čitelné formě XML a základní nástroje, které jsou nutné ke generování kódu a další artefakty.  

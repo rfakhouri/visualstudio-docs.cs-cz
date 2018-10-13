@@ -1,7 +1,7 @@
 ---
 title: Dialogové okno informace o načítání symbolů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1a8b644bf56210a0484957a444ef32de23dc3d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8caded198e3eeaa324d439d4d8756c20f054b022
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676958"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218761"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Dialogové okno Informace o načtení symbolů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [dialogové okno informace o načítání symbolů](https://docs.microsoft.com/visualstudio/debugger/symbol-load-information-dialog-box).  
-  
 **Informace o načítání symbolů** dialogové okno otevře, když kliknete pravým tlačítkem na **moduly** okno a zvolte **informace o načítání symbolů**.  
   
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
@@ -43,7 +41,7 @@ Nejnovější verzi tohoto tématu můžete najít v [dialogové okno informace 
  Kliknutím na toto tlačítko, chcete-li změnit nastavení symbolu v **možnosti** dialogové okno (**ladění** kategorie, **symboly** stránky). Na této stránce můžete přidat nebo odebrat umístění symbolů, zadejte umístění místní mezipaměti, pokud používáte symbolový server a řídit, kdy jsou prohledávány umístění symbolů.  
   
 ## <a name="see-also"></a>Viz také  
- [Zadání symbolu (.pdb) a zdrojové soubory](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Zadání symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
 
 

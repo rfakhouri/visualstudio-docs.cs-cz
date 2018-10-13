@@ -1,7 +1,7 @@
 ---
 title: Implementace a registrace dodavatele portu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe8e5cac0b1737d7c3dbd7e9301e0ca25d778db4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86490e3d7df07008f23b9a12f1167b2004972a1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671133"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205215"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Implementace a registrace dodavatele portu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [implementace a registrace dodavatele portu](https://docs.microsoft.com/visualstudio/extensibility/debugger/implementing-and-registering-a-port-supplier).  
-  
 Role dodavatele portu je ke sledování a dodávky porty, které pak spravujte procesy. V době, kdy je potřeba vytvořit port dodavatele portu je vytvořena instance pomocí CoCreate s identifikátorem GUID dodavatele portu (Správce ladění relace [SDM] používat dodavatele portu vybraný uživatel nebo dodavatele portu určené systém projektu). Pak zavolá SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) zobrazíte mohou být přidány žádné porty. Pokud port lze přidat, je nový port požadované voláním [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) a předáním [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) port, který popisuje. `AddPort` vrátí nový port reprezentována [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) rozhraní.  
   
 ## <a name="discussion"></a>Diskuse  

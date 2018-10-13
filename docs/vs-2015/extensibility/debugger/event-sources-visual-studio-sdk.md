@@ -1,7 +1,7 @@
 ---
 title: Zdroje událostí (Visual Studio SDK) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1fbbe86b12a1833eb61fb2d67a5646cf7c93604c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e6895afb7c35337ecbbffb0d1fad15e7a9df29f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42665899"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191058"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Zdroje událostí (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zdroje událostí (Visual Studio SDK)](https://docs.microsoft.com/visualstudio/extensibility/debugger/event-sources-visual-studio-sdk).  
-  
 Existují dva zdroje událostí: ladicí stroj (DE) a relace ladění správci. Události odeslané z Zavedenými mají modul s NENULOVOU událostí odeslaných z SDM mají modul s hodnotou NULL.  
   
 ## <a name="example"></a>Příklad  

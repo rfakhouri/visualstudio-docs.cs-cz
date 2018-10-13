@@ -1,7 +1,7 @@
 ---
 title: Definování zásady zamykání pro vytváření segmentů jen pro čtení | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8af4722d76b9d68f4e880175bccdb1730b6e163b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9a332916d1f680f403992c35a1fb5a47a6be093
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670649"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231410"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definování zásady zamykání pro vytváření segmentů jen pro čtení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [definování zásady zamykání pro vytváření segmentů jen pro čtení](https://docs.microsoft.com/visualstudio/modeling/defining-a-locking-policy-to-create-read-only-segments).  
-  
 Rozhraní API neměnnosti [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK umožňuje aplikaci zámek část nebo celý model jazyka specifického pro doménu (DSL) tak, aby ji lze číst, ale nebyl změněn. Tato možnost jen pro čtení může použít, třeba tak, aby uživatel požádat o vaši kolegové mohli opatřit poznámkami a zkontrolujte modelu DSL, ale můžete zakázat možnost měnit původní.  
   
  Kromě toho, jak vytvořit DSL, můžete definovat *uzamčení zásad.* Zásady zamykání definuje zámky, které jsou povolené, nejsou povolené nebo povinné. Například při publikování DSL je vstupní kontroly mohou pobídnout vývojářům třetích stran ho rozšířit pomocí nových příkazů. Ale můžete také použít zásady zamykání a zabrání tak jejich změnu stavu jen pro čtení zadaného součásti modelu.  

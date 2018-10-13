@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: ladění výjimek ASP.NET | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d37a67fd0b25de79ceb764e9e80884b97310a307
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a08e382ed9d97aa659012934d3edef45151e10ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42668362"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178526"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Postupy: Ladění výjimek ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: ladění výjimek ASP.NET](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-aspnet-exceptions).  
-  
 Výjimky ladění jsou důležitou součástí vývoje robustní [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace. Obecné informace o tom, jak ladit výjimky je v [Správa výjimek pomocí ladicího programu](../debugger/managing-exceptions-with-the-debugger.md).  
   
  Chcete-li ladit neošetřené [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] výjimky, ujistěte se, že nich ladicí program zastavuje. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Runtime obsahuje obslužnou rutinu výjimky nejvyšší úrovně. Proto se ladicí program nikdy nezastaví na neošetřené výjimce ve výchozím nastavení. Pokud chcete přerušit do ladicího programu, pokud je vyvolána výjimka, musíte vybrat **přerušit, když výjimka je: vyvolána** nastavení pro tuto specifickou výjimku v **výjimky** dialogové okno.  

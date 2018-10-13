@@ -1,7 +1,7 @@
 ---
 title: Zobrazení hodnot dat v datových tipech v editoru kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1a7e755fd81bb66d822f7232e903fea9c53087c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2da6004598d04ca91cea6e29e07ae9fcc1fb28e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629259"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273920"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Zobrazení hodnot dat v datových tipech v editoru kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zobrazení hodnot dat v datových tipech v editoru kódu](https://docs.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor).  
-  
 DataTips poskytují pohodlný způsob, jak zobrazit informace o proměnných ve svém programu během ladění. DataTips fungovat pouze v režimu pozastavení a pouze s proměnnými, které jsou v aktuálním oboru spuštění.  
   
  V [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], může být DataTips připojené do určitého umístění ve zdrojovém souboru nebo mohou být plovoucí nad všechny [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] systému windows.  

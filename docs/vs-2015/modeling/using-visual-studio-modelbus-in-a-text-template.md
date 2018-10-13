@@ -1,7 +1,7 @@
 ---
 title: Pomocí sady Visual Studio ModelBus v textové šabloně | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3c6c3d9e35f14a03f8130982c562ba812ac11d6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6defdf3613f9ac8f270a8e0140115cdca2328e0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685070"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189394"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Použití prvku Visual Studio ModelBus v textové šabloně
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [pomocí Visual Studio ModelBus v textové šabloně](https://docs.microsoft.com/visualstudio/modeling/using-visual-studio-modelbus-in-a-text-template).  
-  
 Pokud píšete textových šablon, které čtou modelu, který obsahuje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus odkazuje, můžete k vyřešení odkazů pro přístup k modelů cíl. V takovém případě budete muset přizpůsobit textových šablon a odkazované jazyky specifickými pro doménu (DSL):  
   
 -   DSL, která je cílem dané odkazy musí být ModelBus adaptér, který je nakonfigurovaný pro přístup z textové šablony. Pokud můžete také získat přístup k DSL od jiného kódu, se vyžaduje kromě standardní adaptér ModelBus překonfigurovaná adaptér.  

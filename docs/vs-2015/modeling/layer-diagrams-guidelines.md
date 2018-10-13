@@ -1,7 +1,7 @@
 ---
 title: 'Diagramy vrstev: Pokyny | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd0115021ba00d8e727f67260f5bcdb00464dd2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631611"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202576"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramy vrstev: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [diagramy závislostí: pokyny](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-guidelines).  
-  
 Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy vrstev* v sadě Visual Studio. Ujistěte se, že váš kód zůstane konzistentní s tímto návrhem tím, že ověří kód proti diagramu vrstev. Můžete také zahrnout ověřování vrstvy v procesu sestavení. Zobrazit [Video pro kanál 9: návrh a ověření architektury pomocí diagramů vrstev](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -80,7 +78,7 @@ Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy v
   
  Další informace:  
   
--   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)  
   
 -   [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)  
   
@@ -169,7 +167,7 @@ Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy v
   
 ## <a name="see-also"></a>Viz také  
  [Diagramy vrstev: referenční dokumentace](../modeling/layer-diagrams-reference.md)   
- [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)
+ [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)
 
 
 

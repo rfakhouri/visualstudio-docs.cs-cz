@@ -1,7 +1,7 @@
 ---
 title: 'Sekvenční diagramy UML: Referenční | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94ae423e74e0d78389a196adf1185ebdfa062069
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ebadcc72e346aac26b227ff069e20ffd81a601e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195127"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>Sekvenční diagramy UML: Referenční dokumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [sekvenční diagramy UML: referenční](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-reference).  
-  
 V sadě Visual Studio *sekvenční diagram* ukazuje interakce, která představuje pořadí zpráv mezi instance tříd, komponenty, subsystémy nebo objekty actor. Čas toky dolů diagramu a zobrazuje tok řízení z jeden účastník do jiného. Pomocí sekvenčních diagramů můžete vizualizovat instancí a událostech namísto třídy a metody. Více než jednu instanci stejného typu může zobrazit v diagramu. Více než jeden výskytu stejná zpráva se může zobrazit i.  
   
  Sekvenční diagramy UML jsou součástí modelu UML a existují jenom v rámci projektů pomocí modelování UML. K vytvoření sekvenčního diagramu UML na **architektura** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**. Další informace o tom, jak vytvořit a nakreslete [sekvenčních diagramech UML](../modeling/uml-sequence-diagrams-guidelines.md) nebo [diagramů pomocí modelování UML](../modeling/edit-uml-models-and-diagrams.md) obecně.  
@@ -45,7 +43,7 @@ V sadě Visual Studio *sekvenční diagram* ukazuje interakce, která představu
   
  ![Části sekvenčního diagramu](../modeling/media/uml-sequence.png "UML_Sequence")  
   
-|**Obrazec**|**– Element**|**Popis**|  
+|**Obrazec**|**Element**|**Popis**|  
 |---------------|-----------------|---------------------|  
 |1|**Životnost**|Svislá čára, která představuje posloupnost událostí, ke kterým dochází v účastníka během interakce, při postupuje čas řádek dolů. Tímto účastníkem může být instance třídy, komponenty nebo aktéra.|  
 |2|**objekt actor**|Člena, který je externím systému, které vyvíjíte.<br /><br /> Můžete vytvořit objekt actor symbol, který se zobrazí v horní části stránky životnosti nastavením jeho **objektu Actor** vlastnost.|  
@@ -71,7 +69,7 @@ V sadě Visual Studio *sekvenční diagram* ukazuje interakce, která představu
  [Diagramy případů použití UML: referenční dokumentace](../modeling/uml-use-case-diagrams-reference.md)   
  [Diagramy tříd UML: referenční dokumentace](../modeling/uml-class-diagrams-reference.md)   
  [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy komponent UML: referenční dokumentace](../modeling/uml-component-diagrams-reference.md)
+ [Diagramy komponent UML: Referenční dokumentace](../modeling/uml-component-diagrams-reference.md)
 
 
 

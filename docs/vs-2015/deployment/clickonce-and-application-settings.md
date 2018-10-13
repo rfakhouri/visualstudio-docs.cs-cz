@@ -1,7 +1,7 @@
 ---
 title: ClickOnce a nastavení aplikací | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2aa565721bc934fb78a7b183b0e4b4b637bafaf8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29f51960ad953318c8d9de749f28f684128e52ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176975"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce a nastavení aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ClickOnce a nastavení aplikace](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-application-settings).  
-  
 Nastavení aplikace pro Windows Forms umožňuje snadno vytvářet, ukládat a udržovat vlastní aplikace a preference uživatelů v klientském počítači. Následující dokument popisuje, jak fungují soubory nastavení aplikace do aplikace ClickOnce, a jak ClickOnce migruje nastavení při upgradu na novou verzi.  
   
  Tyto informace se vztahují pouze k poskytovateli výchozí aplikaci nastavení <xref:System.Configuration.LocalFileSettingsProvider> třídy. Pokud zadáte vlastní poskytovatele, poskytovatel určí způsob, jakým ukládá svoje data a jak upgradu mezi verzemi jeho nastavení. Další informace o poskytovatelích nastavení aplikace najdete v tématu [architektura nastavení aplikace](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  

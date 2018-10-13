@@ -1,7 +1,7 @@
 ---
 title: ThreadOn a ThreadOff | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a6b327905fd844679263eabf0fffb832ee81c73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29bb94664fce8d7adf282a50e94eba39b232a0e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249103"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn a ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [ThreadOn a ThreadOff](https://docs.microsoft.com/visualstudio/profiling/threadon-and-threadoff).  
-  
 VSPerfCmd.exe **ThreadOff** a **ThreadOn** dílčí příkazy jsou dostupné jenom v příkazového řádku relace profilování, které používají metodu instrumentace. **ThreadOff** a **ThreadOn** pozastavit a obnovit profilace pro zadaný podproces. **ThreadOff** zastaví profilování vlákna a **ThreadOn** spuštění profilace vlákna.  
   
  Ve většině případů je zadat **ThreadOn** nebo **ThreadOff** jako jedinou možností v VSPerfCmd.exe příkazového řádku, ale můžete také kombinovat s **GlobalOn**, **GlobalOff**, **ProcessOn**, a **ProcessOff** dílčí příkazy.  

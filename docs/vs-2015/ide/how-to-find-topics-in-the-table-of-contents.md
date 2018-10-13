@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: hledání témat v obsahu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 77c6221dc8362fb8a6bea6a272ca1e39d7fcd9af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7805113a1d35b352c048711f7ce4aa634ad4cb5e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292744"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Postupy: Hledání témat v obsahu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: hledání témat v obsahu](https://docs.microsoft.com/visualstudio/ide/how-to-find-topics-in-the-table-of-contents).  
-  
 V **obsah** kartu, můžete použít obsah (TOC) k nalezení informací o. Obsah je rozšiřitelný seznam, který obsahuje všechna témata v nainstalovaných knihách. Usnadnění informace o tom, jak procházení obsahu naleznete v tématu [klávesové zkratky (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
   
 > [!IMPORTANT]

@@ -1,7 +1,7 @@
 ---
 title: Přehled sestav výkonu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d80fa4902ac598440f03630cb8b0906bc13808ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8449abf6fe178225f84aa65caa4d027df5021d4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667209"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290430"
 ---
 # <a name="performance-report-overview"></a>Přehled sestav výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [přehled sestav výkonu](https://docs.microsoft.com/visualstudio/profiling/performance-report-overview).  
-  
 Můžete zobrazit data profilování relace výkonu v **sestavu výkonu** okno integrovaného vývojového prostředí (IDE) Visual Studio Team System Development Edition. Data profilace se uloží do souborů .vsp a .vsps. Zobrazení sestav systému windows umožňují zobrazit a analyzovat problémy s výkonem aplikací.  
   
 > [!CAUTION]

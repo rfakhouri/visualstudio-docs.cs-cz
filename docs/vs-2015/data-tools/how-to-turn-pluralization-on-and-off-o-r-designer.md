@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: vypnutí pluralizace a zapnutí (O R Designer) | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02fa8b50b28f967a0835f68e85d146ca1eea514b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f4491f25a861b8556ae5018e526349d6a17187a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682062"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279107"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Postupy: vypnutí pluralizace a zapnutí (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postup: zapnutí a vypnutí (O R Designer) pluralizace](https://docs.microsoft.com/visualstudio/data-tools/how-to-turn-pluralization-on-and-off-o-r-designer).  
-  
   
 Ve výchozím nastavení se při přetažení databázových objektů, které mají jména končící na s nebo dokumentu z **Průzkumníka serveru**/**Průzkumník databáze** na [LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), názvy generovaných tříd entit se změnil z množném čísle k jednotném čísle. To slouží k reprezentaci přesněji skutečnost, že třída vytvořenou instanci entity se mapuje na jeden záznam dat. Příkladem je přidání tabulky Zákazníci [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] výsledky v třídu entity s názvem zákazníka, protože třída bude obsahovat data pro jediného zákazníka.  
   

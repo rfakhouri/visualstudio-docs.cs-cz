@@ -1,7 +1,7 @@
 ---
 title: Rozšíření projektů | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 007e92833d8bf0ee3b1ae81e2e13fed2b08e903c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d16cf3886fb8b60cf642a3b669b22ac07838a3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672270"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175159"
 ---
 # <a name="extending-projects"></a>Rozšíření projektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [rozšíření projektů](https://docs.microsoft.com/visualstudio/extensibility/extending-projects).  
-  
 Projekty a řešení se způsoby, kterými Visual Studio slouží k uspořádání kódu a zdrojové soubory do jednotek pro kompilaci a nasazení. Můžete najít další informace o projektech v [projekty (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
  Můžete vytvořit vlastní typy projektů pomocí Visual Studio SDK a rozhraní Managed Package Framework pro projekty, které si můžete stáhnout na [Managed Package Framework pro projekty](http://mpfproj12.codeplex.com/). Chcete-li pochopit způsob, jakým jsou implementovány vlastní projekty, naleznete v tématu [nová generace projektů: pod pokličkou, část jednoho](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) a [nová generace projektů: pod pokličkou, část dvě](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  

@@ -1,7 +1,7 @@
 ---
 title: 'Návod: Vytvoření vlastního hostitele textových šablon | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2edd9d355fb9372ea954e2ec25c92164319297c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1cc8f2b2efc6c538af84d54cb487a8e35dbba6f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676312"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304223"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Návod: Vytvoření vlastního hostitele textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [návod: vytvoření vlastního hostitele textových šablon](https://docs.microsoft.com/visualstudio/modeling/walkthrough-creating-a-custom-text-template-host).  
-  
 A *textové šablony**hostitele* poskytuje prostředí, které umožňuje *text šablony transformační modul* ke spuštění. Tento hostitel se stará o interakce stroje se systémem souborů. Modul nebo *procesor direktiv* , který potřebuje soubor nebo sestavení může od hostitele vyžádat prostředek. Hostitel pak může požadovaný prostředek najít prohledáním adresáře a globální mezipaměti sestavení (GAC). Další informace najdete v tématu [proces transformace textových šablon](../modeling/the-text-template-transformation-process.md).  
   
  Můžete napsat vlastního hostitele. Pokud chcete použít *transformace textové šablony* mimo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nebo pokud chcete integrovat vlastní nástroje, které tuto funkci. Pokud chcete vytvořit vlastního hostitele, je nutné vytvořit třídu, která dědí z <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Dokumentaci jednotlivých metod najdete v tématu <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  

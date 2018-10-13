@@ -1,7 +1,7 @@
 ---
 title: IDebugPort2::GetPortRequest | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 14abf847-0675-4fa8-872e-971e00c84224
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9570f1b7e1e77483d0cff001ce09a4b583416e1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51cba438b328a4f6a1b96a160c44b98b5d7a004a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671533"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186079"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [IDebugPort2::GetPortRequest](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugport2-getportrequest).  
-  
 Získá Popis portu, který byl předtím použit k vytvoření portu (Pokud je k dispozici).  
   
 ## <a name="syntax"></a>Syntaxe  

@@ -1,7 +1,7 @@
 ---
 title: Nasazování komponent COM s ClickOnce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2ddf7e14d3a9e1ceb2e1432e70942dd455621058
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8a544f954ed80e9adb41e0730960c4947f6357a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246841"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Nasazování komponent COM s ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [nasazování komponent COM s ClickOnce](https://docs.microsoft.com/visualstudio/deployment/deploying-com-components-with-clickonce).  
-  
 Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Součásti musí být globálně zaregistrovaní a proto může způsobit nežádoucí vedlejší účinky mezi aplikacemi se překrývají. Tato situace není obecně problém v aplikacích .NET Framework protože komponenty jsou naprosto izolované k aplikaci nebo jsou kompatibilní se vedle sebe. Visual Studio umožňuje nasadit izolované komponenty modelu COM na Windows XP nebo novější operační systém.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] poskytuje snadné a bezpečné mechanismus pro nasazení aplikací .NET. Nicméně pokud vaše aplikace používá starší verzi komponenty modelu COM, je potřeba provést další kroky pro jejich nasazení. Toto téma popisuje, jak nasadit izolované součásti COM a odkazovat na nativní součásti (například z jazyka Visual Basic 6.0 nebo Visual C++).  
