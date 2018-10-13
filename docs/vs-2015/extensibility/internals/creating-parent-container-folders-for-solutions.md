@@ -1,7 +1,7 @@
 ---
 title: Vytváření složek nadřazený kontejnerů pro řešení | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a172598ebe54007c6b0a7b2c6843d04b49a2b72a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672921"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307713"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Vytváření složek nadřazených kontejnerů pro řešení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytváření složek nadřazený kontejnerů pro řešení](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-parent-container-folders-for-solutions).  
-  
 Do zdrojového ovládacího prvku modulu Plug-in verze rozhraní API 1.2 můžete uživatele zadejte cílovou složku jeden kořenový zdrojového ovládacího prvku pro všechny webové projekty v řešení. Tento jeden kořenový se nazývá Super Unified Root (SUR).  
   
  V rozhraní zdrojového ovládacího prvku modulu Plug-in API verze 1.1 Pokud uživatel přidán multiprojektová řešení do správy zdrojového kódu se uživatel vyzván a zadejte jednu cílovou složku zdrojového ovládacího prvku pro každý webový projekt.  
@@ -38,9 +36,9 @@ Do zdrojového ovládacího prvku modulu Plug-in verze rozhraní API 1.2 můžet
  `SCC_CAP_GETPARENTPROJECT`  
   
 ## <a name="new-functions"></a>Nové funkce  
- [Scccreatesubproject –](../../extensibility/scccreatesubproject-function.md)  
+ [SccCreateSubProject](../../extensibility/scccreatesubproject-function.md)  
   
- [Sccgetparentprojectpath –](../../extensibility/sccgetparentprojectpath-function.md)  
+ [SccGetParentProjectPath](../../extensibility/sccgetparentprojectpath-function.md)  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE vytvoří složku SUR téměř vždy, když přidání řešení do správy zdrojového kódu. Konkrétně provádí se v následujících případech:  
   
