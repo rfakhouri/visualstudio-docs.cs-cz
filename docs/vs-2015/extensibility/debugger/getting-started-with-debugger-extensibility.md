@@ -1,7 +1,7 @@
 ---
 title: Začínáme s rozšiřitelností ladicího programu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f8f056ed8fff53eb166b37f2adba9daa17f12916
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 321c4790decb81d91ef57afe6bedffcd89a179e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672432"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304966"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Začínáme s rozšiřitelností ladicího programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [Začínáme s rozšiřitelností ladicího programu](https://docs.microsoft.com/visualstudio/extensibility/debugger/getting-started-with-debugger-extensibility).  
-  
 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Poskytuje informace, které potřebujete k vytváření a přizpůsobování umožňuje ladit programy v rámci komponenty ladicího programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prostředí.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ladění bylo přidáno vylepšení se odvozené z rozsáhlé použitelnost testů na předchozí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ladicí programy. Můžete použít [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ladění krokovat vícejazyčné aplikace, nebo můžete implementovat na průběžné úpravy proměnných při ladění aplikací a řešení pro více jazyků.  

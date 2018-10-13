@@ -1,7 +1,7 @@
 ---
 title: Testovací Příručka pro ovládací prvek moduly plug-in zdrojového kódu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 350e84da54ef554e625dcf1db6df52016e38fa27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1620de29372d1d8e397ad879e3c9f413c41b1286
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628498"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219580"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Testovací příručka pro moduly plug-in správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [testovací Příručka pro moduly plug-in správy zdrojových kódů](https://docs.microsoft.com/visualstudio/extensibility/internals/test-guide-for-source-control-plug-ins).  
-  
 Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových kódů s [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Je k dispozici rozsáhlý přehled nejběžnějších oblastí testování, jakož i některé komplikovanější oblastí, které může být problematické. Tento přehled není určena k tudíž nepředstavuje kompletní seznam testovacích případů.  
   
 > [!NOTE]
@@ -64,7 +62,7 @@ Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových 
   
 ## <a name="test-areas-covered-in-this-section"></a>Oblasti testů, které jsou popsané v této části  
   
--   [Testovací oblast 1: Přidání / otevřít ze správy zdrojového kódu](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+-   [Testovací oblast 1: Přidání nebo otevření ze správy zdrojového kódu](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
     -   Malá a velká 1a: Přidat řešení do správy zdrojového kódu  
   
@@ -74,7 +72,7 @@ Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových 
   
 -   [Testovací oblast 2: Načtení ze správy zdrojového kódu](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Testovací oblast 3: Přečtěte si / zrušit rezervaci](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+-   [Testovací oblast 3: Rezervace a zrušení rezervace](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
     -   Případ 3: Přečtěte si / zrušit rezervaci  
   
