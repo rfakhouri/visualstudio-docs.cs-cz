@@ -1,7 +1,7 @@
 ---
 title: Uložit data zpět do databáze | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93af342cca97d1e116b122a1e5387be1c182a42a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d085fd350c3757af4a24d659fe8b6ee30165e7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670657"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215160"
 ---
 # <a name="save-data-back-to-the-database"></a>Ukládání dat zpět do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [uložit data zpět do databáze](https://docs.microsoft.com/visualstudio/data-tools/save-data-back-to-the-database).  
-  
   
 Datová sada je kopie v paměti data. Pokud upravíte, tato data, je vhodné tyto změny uložit zpět do databáze. Můžete to udělat jedním ze tří způsobů:  
   
@@ -61,7 +59,7 @@ Datová sada je kopie v paměti data. Pokud upravíte, tato data, je vhodné tyt
 |[Hierarchická aktualizace](../data-tools/hierarchical-update.md)|Provádění aktualizací v prvku dataset pomocí dvou nebo více souvisejících tabulek|  
 |[Zpracování výjimky souběžnosti](../data-tools/handle-a-concurrency-exception.md)|Způsob zpracování výjimek, když dva uživatelé pokoušejí změnit na stejná data v databázi ve stejnou dobu|  
 |[Ukládání dat pomocí transakce](../data-tools/save-data-by-using-a-transaction.md)|Jak uložit data v transakci pomocí System.Transactions – obor názvů a objekt TransactionScope|  
-|[Ukládání dat do transakce](../data-tools/save-data-in-a-transaction.md)|Jak uložit data v transakci pomocí System.Transactions – obor názvů|  
+|[Uložení dat do transakce](../data-tools/save-data-in-a-transaction.md)|Jak uložit data v transakci pomocí System.Transactions – obor názvů|  
 |[Uložení dat do databáze (více tabulek)](../data-tools/save-data-to-a-database-multiple-tables.md)|Postup úpravy záznamů a uložit změny do několika tabulek zpět do databáze|  
 |[Uložení dat z objektu do databáze](../data-tools/save-data-from-an-object-to-a-database.md)|Jak předávat data z objektu, který není v datové sadě k databázi pomocí TableAdapter dbdirect – metody|  
 |[Ukládání dat pomocí metod TableAdapter DBDirect](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Jak odesílat dotazy SQL přímo k databázi pomocí TableAdapter|  

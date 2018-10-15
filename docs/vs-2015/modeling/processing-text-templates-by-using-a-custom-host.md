@@ -1,7 +1,7 @@
 ---
 title: Zpracování textových šablon pomocí vlastního hostitele | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 62fd774744c9bb9184d3dcc25eb7827f93feb223
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5fa54f6b7ea57b6374e8fef291c64f0e5369ffea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666415"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303456"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Zpracování textových šablon pomocí vlastního hostitele
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [zpracování textových šablon pomocí vlastního hostitele](https://docs.microsoft.com/visualstudio/modeling/processing-text-templates-by-using-a-custom-host).  
-  
 *Transformace textové šablony* proces trvá *textové šablony* soubor jako vstup a vytvoří textový soubor jako výstup. Můžete volat z stroj pro transformaci textu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, nebo ze samostatné aplikace spuštěné v počítači, ve kterém [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je nainstalována. Nicméně je nutné zadat *hostitele šablonování textu*. Tato třída připojuje šablonu k prostředí, vyhledává prostředky, jako jsou sestavení a vkládané soubory, a zpracovává výstup a chybové zprávy.  
   
 > [!TIP]

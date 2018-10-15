@@ -1,7 +1,7 @@
 ---
 title: Vytvářet projekty modelování UML a diagramy | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3cf34434bb600131bdd3a5aeeee9d2d3be98c96f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681989"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250481"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Vytváření projektů a diagramů pomocí modelování UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vytvořit modelování projektů a diagramů UML](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams).  
-  
 Modely UML pomůžou pochopit, popisují a návrh softwarové systémy. Visual Studio poskytuje šablony pro pět nejčastěji používané diagramy UML: aktivita, třídy, komponenty, pořadí a případ použití. Kromě toho můžete vytvořit diagramy vrstev, které vám pomůžou definovat strukturu systému.  
   
  Diagramy modelování UML a diagramy vrstev může existovat pouze v projektu modelování. Každý projekt modelování obsahuje sdílené modelu UML a několika diagramů UML. Každý diagram je částečné zobrazení modelu. UML model obsahuje všechny prvky v diagramech UML a lze je zobrazit pomocí Průzkumníka modelů UML. Informace o modelech a jejich vztah k diagramů naleznete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md). Informace o modelování projektů do správy verzí, naleznete v tématu [Správa modelů a diagramů pomocí správy verzí](../modeling/manage-models-and-diagrams-under-version-control.md) a [strukturování řešení modelování](../modeling/structure-your-modeling-solution.md)  

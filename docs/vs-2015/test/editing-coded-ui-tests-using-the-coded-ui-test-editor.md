@@ -1,7 +1,7 @@
 ---
 title: Úpravy programových testů UI pomocí editoru testů kódované UI | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2d43cef0a6603b1085306a64bb385a520f2b5637
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa426175155f45feb480b8185b5902049101f577
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42665971"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242720"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Úpravy programových testů uživatelského rozhraní pomocí Editoru programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [testů uživatelského rozhraní programového úpravy pomocí editoru programového testu UI](https://docs.microsoft.com/visualstudio/test/editing-coded-ui-tests-using-the-coded-ui-test-editor).  
-  
 Editor programového testu uživatelského rozhraní umožňuje snadno upravovat programové testy uživatelského rozhraní. Použití editoru programového testu UI, můžete vyhledat, zobrazit a upravit vlastnosti testovací metody a akce uživatelského rozhraní. Kromě toho můžete použít v mapování ovládacího prvku uživatelského rozhraní k zobrazení a jejich odpovídající ovládacích prvcích pro úpravy.  
   
  **Požadavky**  
@@ -82,7 +80,7 @@ Editor programového testu uživatelského rozhraní umožňuje snadno upravovat
   
  Úpravy vlastností akce uživatelského rozhraní v **akce uživatelského rozhraní** podokně rozbalte položku testovací metoda, která obsahuje akce uživatelského rozhraní, který chcete upravit vlastnosti pro vybrané akce uživatelského rozhraní a potom upravte vlastnosti pomocí okna Vlastnosti.  
   
- Například pokud server není k dispozici a máte akce uživatelského rozhraní související s webovým prohlížečem, který uvádí **přejít na webovou stránku "http://Contoso1/default.aspx"**, můžete změnit adresu URL `‘http://Contoso2/default.aspx’`.  
+ Například pokud server není k dispozici a máte akce uživatelského rozhraní související s webovým prohlížečem, který uvádí **přejít na webovou stránku "http://Contoso1/default.aspx"**, můžete změnit adresu URL `‘ http://Contoso2/default.aspx’`.  
   
  ![Vlastnosti ovládacího prvku](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Úpravy vlastností ovládacích prvků  

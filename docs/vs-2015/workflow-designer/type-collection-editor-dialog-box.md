@@ -1,7 +1,7 @@
 ---
 title: Dialogové okno Editor typu kolekce | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 34b8129b5a0b1fe27a7e4e6c178ddace638e5ffc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c33049c264041495041798ab98c4223ebe0ed6f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298562"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Dialogové okno Editor typu kolekce
 **Editor typu kolekce** dialogové okno umožňuje přidat známé typy, které **odeslat** a **Receive** aktivity. Toto dialogové okno se také používá k přidání argumentů obecného typu **InvokeMethod** aktivity. Když se použije pro **odeslat** a **Receive** aktivity přidat známé typy, **Editor typu kolekce** dialogovému oknu vyžaduje přidání typ být jedinečný. Pokud se přidá duplicitní typ a kliknutím se potvrzené změny **OK**, vrátí chybovou zprávu. Když se použije pro **InvokeMethod** aktivity přidáte argumenty obecného typu, **Editor typu kolekce** dialogové okno umožňuje přidání duplicitní typy.  
   
 > [!NOTE]
->  [!INCLUDE[crabout](../includes/crabout-md.md)] známé typy, najdete v článku [známé typy kontraktů dat](http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337).  
+>  [!INCLUDE[crabout](../includes/crabout-md.md)] známé typy, najdete v článku [známé typy kontraktů dat.](http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337).  
   
  Následující tabulka popisuje prvky uživatelského rozhraní (UI) **kolekci typů** dialogové okno.  
   

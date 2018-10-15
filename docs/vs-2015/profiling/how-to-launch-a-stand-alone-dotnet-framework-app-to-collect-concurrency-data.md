@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: spuštění samostatné rozhraní .NET Framework aplikace s Profiler ke shromažďování dat souběžnosti pomocí příkazového řádku | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b79933d9d59d21b5f41926dd4b8ef5afa64950ba
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: d200425ea8b948c4353574c1d6d6d4ee8c48b1ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304379"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Postupy: Spuštění samostatné aplikace rozhraní .NET Framework s profilerem za účelem shromáždění dat souběžnosti pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: spuštění samostatné aplikace rozhraní .NET Framework s Profiler k shromažďování dat souběžnosti pomocí příkazového řádku](https://docs.microsoft.com/visualstudio/profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line).  
-  
 Toto téma popisuje způsob používání nástrojů příkazového řádku balíku nástrojů pro profilaci sady [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ke spuštění samostatné (klientské) aplikace rozhraní .NET Framework a shromažďování dat procesu a souběžnosti vláken.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: instrumentace dynamicky kompilované webové technologie ASP.NET aplikaci a shromažďování dat paměti pomocí příkazového řádku Profiler | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4693b7e1b0b274c9166bfa4f8d25531433a566bb
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: b8bd0d26f8feff5c1db7bea5fd6c4f05d4f3e90e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879294"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228472"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Postupy: Instrumentace dynamicky kompilované webové aplikace ASP.NET a shromažďování dat paměti pomocí příkazového řádku profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: instrumentace dynamicky zkompilován webové aplikace ASP.NET a shromažďování dat paměti pomocí příkazového řádku Profiler](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line).  
-  
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] příkazového řádku nástrojů pro profilaci shromažďovat podrobná data paměti .NET přidělení a objekt doba života pro dynamicky kompilovaných [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci s použitím metoda profilace instrumentace.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Použití samostatného kolektoru IntelliTrace | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 111
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74c17850ebbbd8a7031bc1380bc4e651d0f9dda0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b35b6b42126bb0a1b159e3bf90e67aee15dd540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42667657"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267472"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Použití samostatného kolektoru IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [použití samostatného kolektoru IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).  
-  
 **Samostatného kolektoru IntelliTrace** umožňuje shromažďovat diagnostická data IntelliTrace pro vaše aplikace na provozních serverech nebo v jiných prostředích, bez nutnosti instalace sady Visual Studio na cílovém počítači a beze změny cílové prostředí systému. Samostatný kolektor IntelliTrace funguje pro aplikace z webu služby SharePoint, WPF a Windows Forms. Po dokončení shromažďování dat, stačí kolektor odstraňte a odinstalujte ho.  
   
  Sledujte nástroj IntelliTrace v akci: [shromažďování a analýza dat IntelliTrace v produkčním prostředí pro ladění (video Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)  

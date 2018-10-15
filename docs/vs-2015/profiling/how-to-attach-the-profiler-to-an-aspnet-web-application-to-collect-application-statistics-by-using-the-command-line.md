@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: připojení Profiler k webové aplikaci ASP.NET ke shromažďování statistik aplikace pomocí příkazového řádku | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a54ba9e03443b2bf1d17c2b92292129ec657dca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a61872f9f2aa207920bca6e52b44f64944613076
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42666971"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303690"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Postupy: Připojení profileru k webové aplikaci ASP.NET ke shromažďování statistik aplikace pomocí příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [postupy: připojení Profiler k webové aplikaci ASP.NET ke shromažďování statistik aplikace pomocí příkazového řádku](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line).  
-  
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] příkazového řádku nástrojů pro profilaci k připojení profileru k webové aplikaci ASP.NET a shromáždit statistiky výkonu pomocí metody vzorkování.  
   
 > [!NOTE]
@@ -134,7 +132,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 ## <a name="see-also"></a>Viz také  
  [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Zobrazení dat metod vzorkování](../profiling/profiler-sampling-method-data-views.md)
+ [Zobrazení dat metody vzorkování](../profiling/profiler-sampling-method-data-views.md)
 
 
 

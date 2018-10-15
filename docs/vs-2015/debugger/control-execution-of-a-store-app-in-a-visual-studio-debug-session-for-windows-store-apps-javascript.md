@@ -1,7 +1,7 @@
 ---
 title: Řízení spouštění aplikace pro Store v ladicí relaci sady Visual Studio pro Windows Store apps (JavaScript) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881134"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275519"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Řízení spouštění aplikace pro Store v ladicí relaci sady Visual Studio pro aplikace Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [řízení spouštění aplikace pro Store v ladicí relaci sady Visual Studio pro Windows Store apps (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript).  
-  
 Tento rychlý start ukazuje, jak pro navigaci v ladicím programu sady Visual Studio a jak zobrazit stav programu v relaci.  
   
  Tento rychlý start je pro vývojáře, kteří jsou nové pro ladění v sadě Visual Studio a pro vývojáře, kteří chtějí získat další informace o navigaci v sadě Visual Studio relace ladění. To se nezabývá techniky ladění samotný. Funkce ve vzorovém kódu slouží pouze k předvedení ladění postupů popsaných v tomto tématu. Funkce není dodržovat doporučené postupy návrhu aplikace nebo funkce. Ve skutečnosti rychle zjistíte, že funkce a aplikace, není vhodné použít co nejvíce všeho vůbec.  

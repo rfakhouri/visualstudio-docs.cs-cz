@@ -1,7 +1,7 @@
 ---
 title: Shromažďování podrobných dat časování pomocí instrumentace | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae3d2335c73f68f790e9b3def8f2a1d4ced7c969
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8355911a54e6682b763d7f3aecbf29812fa4a1e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186261"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Shromažďování podrobných dat časování pomocí instrumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [shromažďování podrobných dat časování pomocí instrumentace](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-by-using-instrumentation).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Metody nástroje pro profilaci instrumentace vkládá kód profilování do kopie modulu. Kód zaznamenává každou položku, ukončení a volání funkce funkce v modulu během profilování. Metody instrumentace je užitečná pro shromažďování podrobných informací o časování o části kódu a k pochopení dopadu vstupních a výstupních operací na výkon aplikace.  
   
  Metoda instrumentace můžete zadat pomocí jedné z následujících postupů:  

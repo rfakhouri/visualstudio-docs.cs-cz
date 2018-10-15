@@ -1,7 +1,7 @@
 ---
 title: Vyplnění datové sady s použitím objektů TableAdapter | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c25bbba01d89935044e82a67b3ce40f99d1bf9a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 118b8165b4c5ad972aacf9a3d91cff78c1b776e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675099"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251846"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Vyplnění datové sady s použitím objektů TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější verzi tohoto tématu můžete najít v [vyplnění datové sady s použitím objektů TableAdapter](https://docs.microsoft.com/visualstudio/data-tools/fill-datasets-by-using-tableadapters).  
-  
   
 Komponenty TableAdapter vyplní datovou sadu s daty z databáze, na základě jednoho nebo více dotazů nebo uložených procedur, které zadáte. Objekty TableAdapter lze provést také přidání, aktualizace a odstranění v databázi, a zachovat změny provedené do datové sady. Také můžete použít globální příkazy, které nesouvisí s jakoukoli konkrétní tabulku.  
   
@@ -118,5 +116,5 @@ Komponenty TableAdapter vyplní datovou sadu s daty z databáze, na základě je
  Při použití dat příkazech `CommandType` vlastnost nastavena na <xref:System.Data.CommandType>, pečlivě zkontrolujte informace, které se odesílají z klienta před předáním k vaší databázi. Uživatelé se zlými úmysly může pokusu o odeslání (Vložit) změněné nebo další příkazy SQL ve snaze o získání neoprávněného přístupu nebo poškození databáze. Před přenosem vstupu uživatele na databázi vždy ověřte, že informace platné. Osvědčeným postupem je vždycky potřeba použít parametrizovaných dotazů nebo uložených procedur, pokud je to možné.  
   
 ## <a name="see-also"></a>Viz také  
- [Nástroje datové sady v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+ [Nástroje datových sad v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 

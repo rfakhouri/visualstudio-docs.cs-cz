@@ -1,7 +1,7 @@
 ---
 title: Přehled datových aplikacích v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,12 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: fae912d438be42e874dd539ea78853c9039ebc90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6473608bb781ed9a9ca2e11b473e15e596be1db5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628493"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232794"
 ---
 # <a name="overview-of-data-applications-in-visual-studio"></a>Přehled datových aplikacích v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Tato část obsahuje informace a přípravné pokyny pro práci s daty v aplikac
  [Návod: Vytvoření jednoduché datové aplikace](http://msdn.microsoft.com/library/c5d0968c-d86f-4ae9-a2e1-871f208a3bb3)  
  Obsahuje podrobné pokyny pro vytvoření aplikace, která zobrazí data z databáze.  
   
- [Přidat nové zdroje dat](../data-tools/add-new-data-sources.md)  
+ [Přidání nových zdrojů dat](../data-tools/add-new-data-sources.md)  
  Popisuje pojem zdrojů dat v sadě Visual Studio.  
   
  [Přehled lokálních dat](../data-tools/local-data-overview.md)  
@@ -54,7 +54,7 @@ Tato část obsahuje informace a přípravné pokyny pro práci s daty v aplikac
  [Další prostředky pro odstraňování chyb přístupu k datům](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
  Obsahuje odkazy na fóra vztahující se k práci s daty v sadě Visual Studio.  
   
- [Instalace systémů databází, nástroje a ukázky](../data-tools/installing-database-systems-tools-and-samples.md)  
+ [Instalace databázových systémů, nástrojů a ukázek](../data-tools/installing-database-systems-tools-and-samples.md)  
  Obsahuje odkazy pro stažení ukázkových databází a seznam témat souvisejících s konfigurací ukázkových databází pro použití v datových návodech.  
   
  [Ukázky a návody](../data-tools/data-applications-samples-and-walkthroughs.md)  
