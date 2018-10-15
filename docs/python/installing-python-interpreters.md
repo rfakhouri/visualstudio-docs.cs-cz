@@ -1,7 +1,7 @@
 ---
 title: Výběru a instalace interpretů Pythonu
 description: Úplný seznam interpretů Pythonu, které jsou podporovány v sadě Visual Studio s stručné pokyny, ve kterém můžete najít jejich instalační programy.
-ms.date: 09/04/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1d8b9016b0ec5f8334ba94f94b89f5e18bf9fe71
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243884"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324974"
 ---
 # <a name="install-python-interpreters"></a>Instalace interpretů Pythonu
 
 Ve výchozím nastavení při instalaci úlohy vývoj pro Python v sadě Visual Studio 2017 také nainstaluje Python 3 (64 bitů). Volitelně můžete nainstalovat 32bitové a 64bitové verze Python 2, Python 3, Anaconda 2 a 3 programu Anaconda, jak je popsáno v [instalace](installing-python-support-in-visual-studio.md).
 
-Můžete nainstalovat také ručně žádné interprety uvedené v následující tabulce mimo instalačního programu sady Visual Studio. Například pokud jste nainstalovali Anaconda 3 před instalací sady Visual Studio, není nutné znovu nainstalovat pomocí instalačního programu sady Visual Studio.
+Můžete nainstalovat také ručně žádné interprety uvedené v následující tabulce mimo instalačního programu sady Visual Studio. Například pokud jste nainstalovali Anaconda 3 před instalací sady Visual Studio, není nutné znovu nainstalovat pomocí instalačního programu sady Visual Studio. Můžete také nainstalovat interpretu ručně pokud, třeba novější verzi k dispozici, který ještě se nezobrazí v instalačním programu sady Visual Studio.
 
 Pro **sady Visual Studio 2015 a starší**, musíte ručně nainstalovat jeden interprety.
 
@@ -34,7 +34,7 @@ Sada Visual Studio zobrazí všechny známé prostředí v [ **prostředí Pytho
 
 | Interpret | Popis |
 | --- | --- |
-| [CPython](https://www.python.org/) | "Nativní" a nejčastěji používaná interpret, dostupné v 32bitové a 64bitové verze (32bitová verze doporučeno). Zahrnuje nejnovější funkce jazyků, maximální kompatibility balíček Pythonu, plná podpora ladění a zprostředkovatele komunikace s [IPython](http://ipython.org/). Viz také: [použít Python 2 nebo Python 3?](https://wiki.python.org/moin/Python2orPython3). Mějte na paměti, že Visual Studio 2015 a starší nepodporují Python 3.6 + a může dojít k chybám jako **nepodporované python verze 3.6**. Použití Pythonu 3.5 nebo starší místo. |
+| [CPython](https://www.python.org/) | "Nativní" a nejčastěji používaná interpret, dostupné v 32bitové a 64bitové verze (32bitová verze doporučeno). Zahrnuje nejnovější funkce jazyků, maximální kompatibility balíček Pythonu, plná podpora ladění a zprostředkovatele komunikace s [IPython](http://ipython.org/). Viz také: [použít Python 2 nebo Python 3?](https://wiki,python.org/moin/Python2orPython3). Mějte na paměti, že Visual Studio 2015 a starší nepodporují Python 3.6 + a může dojít k chybám jako **nepodporované python verze 3.6**. Použití Pythonu 3.5 nebo starší místo. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Implementace .NET jazyka Python, dostupné v 32bitové a 64bitové verze poskytuje C# /F # nebo Visual Basic zprostředkovatele komunikace s objekty, přístup k rozhraní API pro .NET, standardní ladění Pythonu (ale není C++ ladění v kombinovaném režimu) a smíšené IronPython / C# ladění. IronPython, ale nepodporuje virtuální prostředí. |
 | [Anaconda](https://www.continuum.io) | Platforma pro otevřete datovou vědu službu Python a obsahuje nejnovější verzi CPython a většina obtížné instalační balíčky. Doporučujeme, abyste ho rozhodnete nemůže jinak. |
 | [PyPy](https://www.pypy.org/) | Vysoce výkonné trasování JIT, provádění Python, který je vhodný pro dlouho běžící programy a situacích, kde identifikujete výkonu problémy, ale nemůžu najít další řešení. Funguje s Visual Studio, ale s omezenou podporu pro pokročilé funkce ladění. |

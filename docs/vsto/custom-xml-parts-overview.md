@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4c32f3a9b0f0c09b7e7b58aa4c424630326d122
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b31ce44c458f7f376d98fac83670595b8a163d65
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675668"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49325000"
 ---
 # <a name="custom-xml-parts-overview"></a>Přehled vlastních částí XML
   Vložit XML data do dokumentů pro některé aplikace Microsoft Office. Při vložení dat XML v dokumentu s názvem data *vlastní část XML*.  
@@ -76,7 +76,7 @@ ms.locfileid: "35675668"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Úprava částí XML bez spuštění aplikace sady Office  
  Můžete přidat nebo upravit vlastní část XML bez spuštění aplikace Excel, PowerPoint nebo Word. To je užitečné, pokud budete chtít pracovat s daty XML v dokumentu na počítači, na kterém není nainstalovaný, například server aplikace Microsoft Office.  
   
- Chcete-li přidat vlastní část XML bez spuštění aplikace Microsoft Office, použijte třídy v sadě SDK Open XML. Tyto třídy jsou navržené pro poskytování přístupu k obsahu Open XML, který je specifický pro dokumenty Office. Například, chcete-li přidat vlastní část XML k Excelovému sešitu, použijete [AddNewPart\<T >](http://msdn.microsoft.com/47c348c0-77ab-a504-5097-bcd6a213921a) metodu [WorkbookPart](http://msdn.microsoft.com/d011e6f4-77dd-d02d-66ef-dc4a9e7b26f2) objektu. Další informace najdete v tématu [Open XML SDK 2.0](http://msdn.microsoft.com/f6a9ae68-7989-4208-97f5-3c945137a0ab).  
+ Chcete-li přidat vlastní část XML bez spuštění aplikace Microsoft Office, použijte třídy v sadě SDK Open XML. Tyto třídy jsou navržené pro poskytování přístupu k obsahu Open XML, který je specifický pro dokumenty Office. Například, chcete-li přidat vlastní část XML k Excelovému sešitu, použijete [AddNewPart\<T >](https://msdn.microsoft.com/library/office/cc562657.aspx) metodu [WorkbookPart](https://msdn.microsoft.com/library/office/documentformat.openxml.packaging.workbookpart.aspx) objektu. Další informace najdete v tématu [Open XML SDK](/office/open-xml/open-xml-sdk).  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Vlastní části XML svázat ovládací prvky obsahu aplikace Word  
  K elementům ve vlastní část XML lze svázat ovládací prvky obsahu v řešení aplikace Word. Když je vytvořena vazba ovládacího prvku obsahu na vlastní část XML, data ve vlastní část XML se zobrazí v uživatelském rozhraní (UI) obsahu ovládacího prvku. Pokud uživatel upravuje text v ovládacím prvku, se automaticky aktualizuje odpovídající element XML. Podobně pokud se změní hodnot prvků objektu vlastní části XML, ovládací prvky obsahu, které jsou vázány na prvky XML zobrazit nová data. Další informace najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md).  
