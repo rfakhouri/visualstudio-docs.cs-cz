@@ -9,16 +9,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0d5ab3c86c454a547ea80307c5440441424b1c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499562"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356753"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Vytvořit své první rozšíření: Hello World
 
-V tomto příkladu Hello World vás provede vytvořením své první rozšíření pro Visual Studio. Tomto kurzu se dozvíte, jak přidat nový příkaz do sady Visual Studio.
+V tomto příkladu Hello World vás provede vytvořením své první rozšíření pro Visual Studio. V tomto kurzu se dozvíte, jak přidat nový příkaz do sady Visual Studio.
 
 V procesu, se dozvíte, jak:
 
@@ -35,11 +35,12 @@ V tomto příkladu použijete Visual C# můžete přidat že vlastní tlačítko
 
 Než začnete, ujistěte se, že jste nainstalovali **vývoj rozšíření sady Visual Studio** úlohu, která zahrnuje VSIX šablony budete potřebovat a ukázkový kód.
 
-Poznámka: Můžete použít libovolné verzi sady Visual Studio (Community, Professional nebo Enterprise) vytvořit projekt rozšiřitelnosti sady Visual Studio.
+> [!NOTE]
+> Můžete použít všechny edice sady Visual Studio (Community, Professional nebo Enterprise) Chcete-li vytvořit projekt rozšíření sady Visual Studio.
 
 ## <a name="create-an-extensibility-project"></a>Vytvořit projekt rozšíření
 
-Krok 1. Z **souboru** nabídky, klikněte na tlačítko **nový projekt**. V dolní části obrazovky můžete zadat název projektu.
+Krok 1. Z **souboru** nabídky, klikněte na tlačítko **nový projekt**. V dolní části obrazovky zadejte název vašeho projektu.
 
 Krok 2. Z **šablony** nabídky, klikněte na tlačítko **Visual C#**, klikněte na tlačítko **rozšiřitelnost**a potom klikněte na tlačítko **projekt VSIX**.
 
@@ -53,15 +54,15 @@ Pokud potřebujete ponechat v tomto kurzu, vraťte se do něj, můžete najít v
 
 Krok 1. Pokud vyberete manifest, uvidíte, jaké možnosti jsou uvažovat instance, metadat, popis a verze.
 
-Krok 2. Klikněte pravým tlačítkem na projekt (nikoli řešení). V místní nabídce klikněte na tlačítko **přidat**a potom klikněte na tlačítko **uživatelský ovládací prvek**.
+Krok 2. Klikněte pravým tlačítkem na projekt (nikoli řešení). V místní nabídce klikněte na tlačítko **přidat**a potom klikněte na tlačítko **nová položka**.
 
-Krok 3. Přejděte zpět **rozšiřitelnost** části a potom klikněte na **vlastního příkazu**.
+Krok 3. Vyberte **rozšiřitelnost** části a potom klikněte na tlačítko **vlastního příkazu**.
 
 Krok 4. V **název** pole v dolní části, pojmenujte ho, například *Command.cs*.
 
 ![vlastní příkaz.](media/hello-world-custom-command.png)
 
-Zobrazí se nový příkaz v **Průzkumníku řešení** v části **prostředky** větve. Toto je také kde najdete další soubory související s příkazu, jako jsou soubory PNG a ICO, pokud chcete změnit bitovou kopii.
+Nový příkaz je uveden v **Průzkumníka řešení** pod **prostředky** větve. Toto je také kde najdete další soubory související s příkazu, jako jsou soubory PNG a ICO, pokud chcete změnit bitovou kopii.
 
 ## <a name="modify-the-source-code"></a>Změnit zdrojový kód
 
@@ -116,7 +117,7 @@ Nezapomeňte si uložit změny do každého souboru.
 
 Nyní můžete spustit zdrojový kód v experimentální instanci aplikace Visual Studio.
 
-Krok 1. Klikněte na tlačítko **Start** na panelu nástrojů. Tím projekt sestavit a spustit ladicí program spouští novou instanci sady Visual Studio, volá se, **experimentální instanci**.
+Krok 1. Klikněte na tlačítko **Start** na panelu nástrojů. Toto sestavení vašeho projektu a spustí ladicí program spouští novou instanci sady Visual Studio, volá se, **experimentální instanci**.
 
 Zobrazí se slova **experimentální instanci** v záhlaví programu sady Visual Studio.
 

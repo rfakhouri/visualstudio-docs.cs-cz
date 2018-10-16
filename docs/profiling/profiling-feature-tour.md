@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907aa9eb69bbbbe23f147472995cc7a4accd3679
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860432"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356792"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Rychlý start: Nejdřív se podívejte na nástroje pro profilaci
 
@@ -34,7 +34,8 @@ Při ladění, můžete použít **diagnostické nástroje** okna k analýze pro
 
 **Diagnostické nástroje** okno je často preferovaný způsob, jak profil aplikace, ale pro buildy vydaných verzí. můžete také provést a dodatečně analyzovat aplikace místo. Pokud chcete další informace o různých přístupů, přečtěte si téma [spustit s nebo bez ladicího programu nástroje pro profilaci](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Profilace nástroj pro podporu různých typů aplikací najdete v tématu [který nástroj mám použít?](#which-tool-should-i-use).
 
-> ! [POZNÁMKA] Můžete použít nástroje a dodatečně s Windows 7 a novější. Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s ladicím programem (**diagnostické nástroje** okno).
+> [!NOTE]
+> Můžete použít nástroje a dodatečně s Windows 7 a novější. Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s ladicím programem (**diagnostické nástroje** okno).
 
 ## <a name="analyze-cpu-usage"></a>Analýza využití procesoru
 

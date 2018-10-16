@@ -9,16 +9,18 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
-ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
+ms.openlocfilehash: 079ae6affd5c495136d97a00eae2ddccfa2c9066
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44701706"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356779"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Začínáme s Kubernetes nástroje sady Visual Studio
 
 Visual Studio Kubernetes Tools zjednodušit vývoj kontejnerizovaných aplikací, které cílí na Kubernetes. Visual Studio může automaticky vytvořit konfigurace jako kódu soubory potřebné pro podporu nasazení Kubernetes, jako jsou soubory Dockerfile a Helm grafy. Ladění kódu v aktivní cluster Azure Kubernetes Service (AKS) pomocí Azure Dev mezery nebo publikovat přímo do clusteru AKS z v sadě Visual Studio.
+
+Tento kurz se zabývá použitím sady Visual Studio, přidejte do projektu podpora pro Kubernetes a publikuje do AKS. Pokud vás zajímají hlavně pomocí [Azure Dev prostory](http://aka.ms/get-azds) pro ladění a testování projektu spuštěná ve službě AKS, můžete přejít na [Azure Dev prostory kurzu](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) místo toho.
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -28,9 +30,9 @@ Chcete-li využívají tato nová funkce, budete potřebovat:
 
 - [Kubernetes tools pro Visual Studio](https://aka.ms/get-vsk8stools), která je dostupná jako samostatný soubor ke stažení.
 
-- [Docker pro Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) nainstalované na pracovní stanici vývoje (to znamená, pokud spustíte Visual Studio), pokud chcete sestavit Image Dockeru, ladit místně spuštěné kontejnery Dockeru nebo publikovat ve službě AKS.
+- [Docker pro Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) nainstalované na pracovní stanici vývoje (to znamená, pokud spustíte Visual Studio), pokud chcete sestavit Image Dockeru, ladit místně spuštěné kontejnery Dockeru nebo publikovat ve službě AKS. (Docker je *není* vyžadované pro sestavování a ladění kontejnerů Dockeru ve službě AKS pomocí Azure Dev prostory.)
 
-- Pokud chcete publikovat ze sady Visual Studio do AKS:
+- Pokud chcete publikovat ze sady Visual Studio do AKS (*není* požadovaná pro ladění ve službě AKS pomocí Azure Dev mezery):
 
     1.  [AKS nástroje pro publikování](https://aka.ms/get-vsk8spublish), která je dostupná jako samostatný soubor ke stažení.
 
@@ -78,11 +80,11 @@ Přidání souborů jsou:
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Publikování do služby Azure Kubernetes Service (AKS)
 
-Všechny tyto soubory na místě můžete použít integrovaném vývojovém prostředí sady Visual Studio k psaní a ladění kódu aplikace stejně, jako je navíc vždy nutné.
+Všechny tyto soubory na místě můžete použít integrovaném vývojovém prostředí sady Visual Studio k psaní a ladění kódu aplikace stejně, jako je navíc vždy nutné. Můžete také použít [Azure Dev prostory](http://aka.ms/get-azds) rychlé spuštění a ladění kódu živě běžet v clusteru AKS. Další informace najdete [kurzu prostory vývoj Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 Jakmile budete mít kód fungovat způsobem, který chcete, můžete publikovat přímo ze sady Visual Studio do clusteru AKS.
 
-Chcete-li to provést, musíte nejprve zkontrolujte, že všechno, co jste nainstalovali jak je popsáno v [požadavky](#prerequisities) v rámci části položky pro publikování do AKS a projít všechny kroky příkazového řádku zadané v odkazech. Potom nastavte profil publikování, který publikuje svou image kontejneru do služby Azure Container Registry (ACR). Potom AKS o přijetí změn svou image kontejneru ze služby ACR a nasaďte je do clusteru.
+Chcete-li to provést, musíte nejprve zkontrolujte, že všechno, co jste nainstalovali jak je popsáno v [požadavky](#prerequisites) v rámci části položky pro publikování do AKS a projít všechny kroky příkazového řádku zadané v odkazech. Potom nastavte profil publikování, který publikuje svou image kontejneru do služby Azure Container Registry (ACR). Potom AKS o přijetí změn svou image kontejneru ze služby ACR a nasaďte je do clusteru.
 
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na váš *projektu* a zvolte **publikovat**.
 
@@ -119,3 +121,5 @@ Blahopřejeme! Teď můžete výkon sady Visual Studio pro všechny vývoje apli
 ## <a name="next-steps"></a>Další kroky
 
 Další informace o vývoji Kubernetes v Azure najdete [dokumentaci ke službě AKS](/azure/aks).
+
+Další informace o Azure Dev prostory načtením [dokumentace ke službě Azure Dev mezery](http://aka.ms/get-azds)
