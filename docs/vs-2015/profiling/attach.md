@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c102b00fa8ab66d5f86111a8749fcbbc23c75d6b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc3db6b677e23e0752612f688055befd366e34d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845534"
 ---
 # <a name="attach"></a>Připojit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>Možnosti intervalu  
  Jeden z následujících možností interval vzorkování se dá nastavit na příkazovém řádku připojit. Výchozí interval vzorkování je 10 000 000 hodinových cyklů procesoru.  
   
- **Časovač**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:** Události]**čítač**[**:**`Name`,`Reload`,`FriendlyName`]  
+ **Časovač**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong> Události]**čítač**[**:**`Name`,`Reload`,`FriendlyName`]  
  Určuje počet a typ použitého intervalu vzorkování.  
   
 -   **Časovač** – ukázky každý `Cycles` hodinových cyklů procesoru. Pokud `Cycles` není zadán, 10 000 000 cykly se používají.  

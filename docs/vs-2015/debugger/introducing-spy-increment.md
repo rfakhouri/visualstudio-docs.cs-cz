@@ -16,33 +16,33 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60ad2462d5b5331401384f528c7baf93d91851df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276260"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844617"
 ---
 # <a name="introducing-spy"></a>Představení nástroje Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Spy ++ umožňuje provádět následující úlohy:  
   
--   Zobrazte grafické strom vztahů mezi objekty systému. Patří mezi ně [procesy](../debugger/processes-view.md), [vlákna](../debugger/threads-view.md), a [windows](../debugger/windows-view.md).  
+- Zobrazte grafické strom vztahů mezi objekty systému. Patří mezi ně [procesy](../debugger/processes-view.md), [vlákna](../debugger/threads-view.md), a [windows](../debugger/windows-view.md).  
   
--   Hledání pro zadané [windows](../debugger/how-to-search-for-a-window-in-windows-view.md), [vlákna](../debugger/how-to-search-for-a-thread-in-threads-view.md), [procesy](../debugger/how-to-search-for-a-process-in-processes-view.md), nebo [zprávy](../debugger/how-to-search-for-a-message-in-messages-view.md).  
+- Hledání pro zadané [windows](../debugger/how-to-search-for-a-window-in-windows-view.md), [vlákna](../debugger/how-to-search-for-a-thread-in-threads-view.md), [procesy](../debugger/how-to-search-for-a-process-in-processes-view.md), nebo [zprávy](../debugger/how-to-search-for-a-message-in-messages-view.md).  
   
--   Zobrazit vlastnosti vybrané [windows](../debugger/how-to-display-window-properties.md), [vlákna](../debugger/how-to-display-thread-properties.md), [procesy](../debugger/how-to-display-process-properties.md), nebo [zprávy](../debugger/how-to-display-message-properties.md).  
+- Zobrazit vlastnosti vybrané [windows](../debugger/how-to-display-window-properties.md), [vlákna](../debugger/how-to-display-thread-properties.md), [procesy](../debugger/how-to-display-process-properties.md), nebo [zprávy](../debugger/how-to-display-message-properties.md).  
   
--   Vyberte okno, vlákno, proces nebo zprávy přímo v zobrazení.  
+- Vyberte okno, vlákno, proces nebo zprávy přímo v zobrazení.  
   
--   Použití [tažením nástroje hledání](../debugger/how-to-use-the-finder-tool.md) vyberte okno umístěním ukazatele myši.  
+- Použití [tažením nástroje hledání](../debugger/how-to-use-the-finder-tool.md) vyberte okno umístěním ukazatele myši.  
   
--   Nastavte **zprávy možnosti** s využitím komplexních zprávy protokolu výběr parametrů.  
+- Nastavte **zprávy možnosti** s využitím komplexních zprávy protokolu výběr parametrů.  
   
- Spy ++ má panel nástrojů a hypertextové odkazy vám pomohou při práci rychleji. Poskytuje také **aktualizovat** příkaz k aktualizaci zobrazení aktivní **nástroj pro hledání oken** aby bylo sledování snazší a **písmo** dialogové okno pro přizpůsobení zobrazení systému windows. Kromě toho nástroje Spy ++ umožňuje uložení a obnovení uživatelských předvoleb.  
+  Spy ++ má panel nástrojů a hypertextové odkazy vám pomohou při práci rychleji. Poskytuje také **aktualizovat** příkaz k aktualizaci zobrazení aktivní **nástroj pro hledání oken** aby bylo sledování snazší a **písmo** dialogové okno pro přizpůsobení zobrazení systému windows. Kromě toho nástroje Spy ++ umožňuje uložení a obnovení uživatelských předvoleb.  
   
- V různých nástroje Spy ++ windows kliknete pravým tlačítkem na Zobrazit místní nabídku s často používanými příkazy. Příkazy, které jsou zobrazeny, závisí na místě, kde je ukazatel. Například pokud kliknete pravým tlačítkem na položku v zobrazení okna a je vybrané okno viditelné, pak levým na **zvýrazněte** na zástupce v nabídce způsobí, že hranice vybrané okno pro flash, takže může být umístěn snadněji.  
+  V různých nástroje Spy ++ windows kliknete pravým tlačítkem na Zobrazit místní nabídku s často používanými příkazy. Příkazy, které jsou zobrazeny, závisí na místě, kde je ukazatel. Například pokud kliknete pravým tlačítkem na položku v zobrazení okna a je vybrané okno viditelné, pak levým na **zvýrazněte** na zástupce v nabídce způsobí, že hranice vybrané okno pro flash, takže může být umístěn snadněji.  
   
 > [!NOTE]
 >  Existují dva nástroje, které se podobají nástroje Spy ++: PView, která zobrazuje podrobnosti o procesech a vláknech a DDESPY. Exe souboru, který vám umožní monitorovat dynamické výměny dat (DDE) zprávy.  

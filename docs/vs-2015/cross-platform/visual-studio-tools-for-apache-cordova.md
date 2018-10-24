@@ -11,31 +11,31 @@ caps.latest.revision: 7
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 33dd9ece0e7c2574aceec9fc2f6fe0c8ebf29d7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 77613d3e8303a02031da713ec149602a40ef9acb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846030"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Visual Studio Tools pro Apache Cordova
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vytvářejte aplikace, které běží na iOS, Android a Windows zařízení a sdílet téměř 100 % kódu. Sestavení s vaší oblíbené webové technologie. Apache Cordova vám nativní přístup k funkcím zařízení, jako je fotoaparát na telefonu a nejlepší na tom, je zdarma. Visual Studio přidá tyto funkce verze pro to bylo ještě jednodušší k sestavení aplikace:  
   
--   Snadná instalace a nastavení.  
+- Snadná instalace a nastavení.  
   
--   Pokročilý ladicí program můžete najít a opravit problémy.  
+- Pokročilý ladicí program můžete najít a opravit problémy.  
   
--   Snadný přístup k emulátorů zařízení.  
+- Snadný přístup k emulátorů zařízení.  
   
--   Návrhář ke správě vašeho zařízení moduly plug-in.  
+- Návrhář ke správě vašeho zařízení moduly plug-in.  
   
--   Projekt, který je plně kompatibilní s rozhraním příkazového řádku.  
+- Projekt, který je plně kompatibilní s rozhraním příkazového řádku.  
   
- Pokud zvažujete těchto nástrojů, ale nejste připravení si je vyzkoušet ještě, navštivte naši [funkce](https://www.visualstudio.com/explore/cordova-vs) stránky a budeme vás informovat informace o nich.  
+  Pokud zvažujete těchto nástrojů, ale nejste připravení si je vyzkoušet ještě, navštivte naši [funkce](https://www.visualstudio.com/explore/cordova-vs) stránky a budeme vás informovat informace o nich.  
   
- Pokud jste připravení začít, navštivte naši [webu](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/).
+  Pokud jste připravení začít, navštivte naši [webu](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/).
 
 
 

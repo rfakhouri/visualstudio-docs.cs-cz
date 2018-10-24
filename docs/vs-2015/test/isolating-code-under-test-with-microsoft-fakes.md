@@ -13,12 +13,12 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a918b8077693ea199c20e776eaddc57c79b3975a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c77243f69cedbd340ee91354ef49651e31605e04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228004"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845359"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Izolace testovaného kódu pomocí zástupného rozhraní Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Microsoft Fakes může pomoci izolovat testovaný nahrazením ostatních část�
   
  Jsou dva typy napodobenin:  
   
--   A [se zakázaným inzerováním](#stubs) nahradí třídu malou náhradou, která implementuje stejné rozhraní.  Pro použití zástupných procedur je nutné navrhnout aplikaci tak, aby jednotlivé součásti závisely pouze na rozhraních a nikoli na ostatních součástech. („Součást“ představuje třídu nebo skupinu tříd, které jsou navrženy a aktualizovány společně a obvykle obsaženy v sestavení.)  
+- A [se zakázaným inzerováním](#stubs) nahradí třídu malou náhradou, která implementuje stejné rozhraní.  Pro použití zástupných procedur je nutné navrhnout aplikaci tak, aby jednotlivé součásti závisely pouze na rozhraních a nikoli na ostatních součástech. („Součást“ představuje třídu nebo skupinu tříd, které jsou navrženy a aktualizovány společně a obvykle obsaženy v sestavení.)  
   
--   A [překrytí](#shims) upravuje zkompilovaný kód aplikace v době běhu, takže místo volání určené metody spustí kód překrytí, vaším testem. Překrytí lze použít pro nahrazení volání do sestavení, která nelze upravit (např. sestavení .NET).  
+- A [překrytí](#shims) upravuje zkompilovaný kód aplikace v době běhu, takže místo volání určené metody spustí kód překrytí, vaším testem. Překrytí lze použít pro nahrazení volání do sestavení, která nelze upravit (např. sestavení .NET).  
   
- ![Napodobeniny nahradit další součásti](../test/media/fakes-2.png "Fakes-2")  
+  ![Napodobeniny nahradit další součásti](../test/media/fakes-2.png "Fakes-2")  
   
- **Požadavky**  
+  **Požadavky**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="choosing-between-stub-and-shim-types"></a>Volba mezi zástupnou procedurou a překrytím  
  Obvykle byste měli považovat projekt sady Visual Studio za součást, protože vytváříte a aktualizujete tyto třídy současně. Měli byste zvážit použití zástupných procedur a překrytí pro volání, která projekt provádí do jiných projektů v rámci vašeho řešení nebo do jiných sestavení, na která projekt odkazuje.  
@@ -168,76 +168,76 @@ Microsoft Fakes může pomoci izolovat testovaný nahrazením ostatních část�
   
  Chcete-li použít překrytí, není nutné upravovat kód aplikace nebo jej zapsat určitým způsobem.  
   
-1.  **Přidání napodobenin sestavení**  
+1. **Přidání napodobenin sestavení**  
   
-     V Průzkumníku řešení otevřete odkazy projektu testování částí a vyberte odkaz na sestavení, které obsahuje metodu, kterou chcete simulovat. V tomto příkladu `DateTime` třída je v **System.dll**.  Chcete-li zobrazit odkazy v projektu jazyka Visual Basic, zvolte **zobrazit všechny soubory**.  
+    V Průzkumníku řešení otevřete odkazy projektu testování částí a vyberte odkaz na sestavení, které obsahuje metodu, kterou chcete simulovat. V tomto příkladu `DateTime` třída je v **System.dll**.  Chcete-li zobrazit odkazy v projektu jazyka Visual Basic, zvolte **zobrazit všechny soubory**.  
   
-     Zvolte **přidat napodobeniny sestavení**.  
+    Zvolte **přidat napodobeniny sestavení**.  
   
-2.  **Vložení překrytí do ShimsContext**  
+2. **Vložení překrytí do ShimsContext**  
   
-    ```csharp  
-    [TestClass]  
-    public class TestClass1  
-    {   
-            [TestMethod]  
-            public void TestCurrentYear()  
-            {  
-                int fixedYear = 2000;  
+   ```csharp  
+   [TestClass]  
+   public class TestClass1  
+   {   
+           [TestMethod]  
+           public void TestCurrentYear()  
+           {  
+               int fixedYear = 2000;  
   
-                // Shims can be used only in a ShimsContext:  
-                using (ShimsContext.Create())  
-                {  
-                  // Arrange:  
-                    // Shim DateTime.Now to return a fixed date:  
-                    System.Fakes.ShimDateTime.NowGet =   
-                    () =>  
-                    { return new DateTime(fixedYear, 1, 1); };  
+               // Shims can be used only in a ShimsContext:  
+               using (ShimsContext.Create())  
+               {  
+                 // Arrange:  
+                   // Shim DateTime.Now to return a fixed date:  
+                   System.Fakes.ShimDateTime.NowGet =   
+                   () =>  
+                   { return new DateTime(fixedYear, 1, 1); };  
   
-                    // Instantiate the component under test:  
-                    var componentUnderTest = new MyComponent();  
+                   // Instantiate the component under test:  
+                   var componentUnderTest = new MyComponent();  
   
-                  // Act:  
-                    int year = componentUnderTest.GetTheCurrentYear();  
+                 // Act:  
+                   int year = componentUnderTest.GetTheCurrentYear();  
   
-                  // Assert:   
-                    // This will always be true if the component is working:  
-                    Assert.AreEqual(fixedYear, year);  
-                }  
-            }  
-    }  
+                 // Assert:   
+                   // This will always be true if the component is working:  
+                   Assert.AreEqual(fixedYear, year);  
+               }  
+           }  
+   }  
   
-    ```  
+   ```  
   
-    ```vb  
-    <TestClass()> _  
-    Public Class TestClass1  
-        <TestMethod()> _  
-        Public Sub TestCurrentYear()  
-            Using s = Microsoft.QualityTools.Testing.Fakes.ShimsContext.Create()  
-                Dim fixedYear As Integer = 2000  
-                ' Arrange:  
-                ' Detour DateTime.Now to return a fixed date:  
-                System.Fakes.ShimDateTime.NowGet = _  
-                    Function() As DateTime  
-                        Return New DateTime(fixedYear, 1, 1)  
-                    End Function  
+   ```vb  
+   <TestClass()> _  
+   Public Class TestClass1  
+       <TestMethod()> _  
+       Public Sub TestCurrentYear()  
+           Using s = Microsoft.QualityTools.Testing.Fakes.ShimsContext.Create()  
+               Dim fixedYear As Integer = 2000  
+               ' Arrange:  
+               ' Detour DateTime.Now to return a fixed date:  
+               System.Fakes.ShimDateTime.NowGet = _  
+                   Function() As DateTime  
+                       Return New DateTime(fixedYear, 1, 1)  
+                   End Function  
   
-                ' Instantiate the component under test:  
-                Dim componentUnderTest = New MyComponent()  
-                ' Act:  
-                Dim year As Integer = componentUnderTest.GetTheCurrentYear  
-                ' Assert:   
-                ' This will always be true if the component is working:  
-                Assert.AreEqual(fixedYear, year)  
-            End Using  
-        End Sub  
-    End Class  
-    ```  
+               ' Instantiate the component under test:  
+               Dim componentUnderTest = New MyComponent()  
+               ' Act:  
+               Dim year As Integer = componentUnderTest.GetTheCurrentYear  
+               ' Assert:   
+               ' This will always be true if the component is working:  
+               Assert.AreEqual(fixedYear, year)  
+           End Using  
+       End Sub  
+   End Class  
+   ```  
   
-     Názvy tříd překrytí jsou tvořeny vložením prefixu `Fakes.Shim` k původnímu názvu typu. Názvy parametrů jsou připojeny k názvu metody. (Není nutné přidat odkaz na System.Fakes žádné sestavení.)  
+    Názvy tříd překrytí jsou tvořeny vložením prefixu `Fakes.Shim` k původnímu názvu typu. Názvy parametrů jsou připojeny k názvu metody. (Není nutné přidat odkaz na System.Fakes žádné sestavení.)  
   
- Předchozí příklad používá překrytí pro statickou metodu. Chcete-li použít překrytí pro metodu instance, napište `AllInstances` mezi název typu a název metody:  
+   Předchozí příklad používá překrytí pro statickou metodu. Chcete-li použít překrytí pro metodu instance, napište `AllInstances` mezi název typu a název metody:  
   
 ```  
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...  

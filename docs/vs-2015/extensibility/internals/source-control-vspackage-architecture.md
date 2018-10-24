@@ -15,12 +15,12 @@ ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 69cbcd1f8ab1f04f02d89839eed1e0cd67aa2fd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07da336ad46cf873501e21f95bdf41ed6124e289
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190460"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846405"
 ---
 # <a name="source-control-vspackage-architecture"></a>Architektura balíčku VSPackage správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,25 +34,25 @@ Balíček správy zdrojového kódu je VSPackage, která používá služby, kte
   
  Zdrojový ovládací prvek se zakázaným inzerováním provádí následující úlohy.  
   
--   Poskytuje společné uživatelské rozhraní, která je požadována pro registraci balíčku správy zdrojového kódu.  
+- Poskytuje společné uživatelské rozhraní, která je požadována pro registraci balíčku správy zdrojového kódu.  
   
--   Načte balíček správy zdrojového kódu.  
+- Načte balíček správy zdrojového kódu.  
   
--   Nastaví balíček správy zdrojového kódu jako aktivní nebo neaktivní.  
+- Nastaví balíček správy zdrojového kódu jako aktivní nebo neaktivní.  
   
- Zdrojový ovládací prvek se zakázaným inzerováním vypadat ve službě active pro balíček správy zdrojového kódu a směrovat všechny příchozí volání služby z integrovaného vývojového prostředí pro tento balíček.  
+  Zdrojový ovládací prvek se zakázaným inzerováním vypadat ve službě active pro balíček správy zdrojového kódu a směrovat všechny příchozí volání služby z integrovaného vývojového prostředí pro tento balíček.  
   
- Zdrojový ovládací prvek adaptér balíček je speciální zdrojového balíčku, který [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] poskytuje. Tento balíček je centrální součásti pro podporu zdroj moduly plug-in správy založené na rozhraní API modulu Plug-in zdroje ovládacího prvku. Když plug-in správy zdrojových kódů je aktivní modul plug-in, odešle se zakázaným inzerováním ovládací prvek zdroje jeho události zdrojový ovládací prvek adaptér balíček. Zdrojový ovládací prvek adaptér balíček pak komunikuje se modul plug-in správy zdrojového kódu pomocí rozhraní API modulu Plug-in zdroje ovládacího prvku a také poskytuje výchozí uživatelské rozhraní, které jsou společné pro všechny zdroje moduly plug-in správy.  
+  Zdrojový ovládací prvek adaptér balíček je speciální zdrojového balíčku, který [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] poskytuje. Tento balíček je centrální součásti pro podporu zdroj moduly plug-in správy založené na rozhraní API modulu Plug-in zdroje ovládacího prvku. Když plug-in správy zdrojových kódů je aktivní modul plug-in, odešle se zakázaným inzerováním ovládací prvek zdroje jeho události zdrojový ovládací prvek adaptér balíček. Zdrojový ovládací prvek adaptér balíček pak komunikuje se modul plug-in správy zdrojového kódu pomocí rozhraní API modulu Plug-in zdroje ovládacího prvku a také poskytuje výchozí uživatelské rozhraní, které jsou společné pro všechny zdroje moduly plug-in správy.  
   
- Když balíček správy zdrojového kódu je aktivní balíček, na druhé straně zástupné procedury zdrojového ovládacího prvku přímo komunikuje se balíček pomocí [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] rozhraní zdrojového balíčku. Balíček správy zdrojového kódu je zodpovědná za hostování vlastní zdrojového ovládacího prvku uživatelského rozhraní.  
+  Když balíček správy zdrojového kódu je aktivní balíček, na druhé straně zástupné procedury zdrojového ovládacího prvku přímo komunikuje se balíček pomocí [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] rozhraní zdrojového balíčku. Balíček správy zdrojového kódu je zodpovědná za hostování vlastní zdrojového ovládacího prvku uživatelského rozhraní.  
   
- ![Obrázek architektury ovládací prvek zdroje](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
+  ![Obrázek architektury ovládací prvek zdroje](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
   
- Pro balíčky správy zdrojového kódu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] neposkytuje zdrojového kódu řízení nebo rozhraní API pro integraci. Tento rozdíl oproti naznačené v [vytváření modulu Plug-in zdrojového ovládacího prvku](../../extensibility/internals/creating-a-source-control-plug-in.md) kde má modul plug-in správy zdrojového kódu pro implementaci přísné sadu funkcí a zpětná volání.  
+  Pro balíčky správy zdrojového kódu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] neposkytuje zdrojového kódu řízení nebo rozhraní API pro integraci. Tento rozdíl oproti naznačené v [vytváření modulu Plug-in zdrojového ovládacího prvku](../../extensibility/internals/creating-a-source-control-plug-in.md) kde má modul plug-in správy zdrojového kódu pro implementaci přísné sadu funkcí a zpětná volání.  
   
- Stejně jako jakékoli balíčku VSPackage správy zdrojového kódu balíček je objekt modelu COM, který lze vytvořit pomocí `CoCreateInstance`. Samotné sady VSPackage dává k dispozici [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Při vytvoření instance VSPackage přijímá ukazatel lokality a <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> rozhraní, které poskytuje přístup k balíčku VSPackage dostupné služby a rozhraní v integrovaném vývojovém prostředí.  
+  Stejně jako jakékoli balíčku VSPackage správy zdrojového kódu balíček je objekt modelu COM, který lze vytvořit pomocí `CoCreateInstance`. Samotné sady VSPackage dává k dispozici [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Při vytvoření instance VSPackage přijímá ukazatel lokality a <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> rozhraní, které poskytuje přístup k balíčku VSPackage dostupné služby a rozhraní v integrovaném vývojovém prostředí.  
   
- Zápis na základě balíčku VSPackage správy zdrojového balíčku vyžaduje pokročilejší znalosti programování než zápis na rozhraní API modulu Plug-in zdroje ovládacího prvku modulu plug-in.  
+  Zápis na základě balíčku VSPackage správy zdrojového balíčku vyžaduje pokročilejší znalosti programování než zápis na rozhraní API modulu Plug-in zdroje ovládacího prvku modulu plug-in.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   
