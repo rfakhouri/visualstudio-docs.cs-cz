@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05faacee77496f8d25ca926e4a1d441819cd9d9d
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816675"
 ---
 # <a name="layout-for-visual-studio"></a>Rozložení pro sadu Visual Studio
 Většina dialogová okna Visual Studio je [rozložení dialogového okna nástroje](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), které jsou unthemed dialogů tento standard postupujte [Principy rozložení dialogového okna Windows Desktop](/windows/desktop/uxguide/win-dialog-box). Visual Studio přesune na aktualizovat jeho uživatelské rozhraní, některé z nejvážnějších dialogová okna mít nový návrh, který vytváří je jako produkt definování prostředí. Tyto [rozložení dialogového okna s motivem](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) s motivem vzhled.  
@@ -56,19 +56,19 @@ Většina dialogová okna Visual Studio je [rozložení dialogového okna nástr
   
 #### <a name="command-buttons"></a>Příkazová tlačítka  
   
--   Příkazová tlačítka pracovat v rámci dialogového okna, ne na obsah. Jsou třeba umístit na dolní pravé a musí mít dostatek variabilní mezerou výše uvedených nastavení odděleně samostatné tlačítka.  
+- Příkazová tlačítka pracovat v rámci dialogového okna, ne na obsah. Jsou třeba umístit na dolní pravé a musí mít dostatek variabilní mezerou výše uvedených nastavení odděleně samostatné tlačítka.  
   
--   Pokud existují vodorovná tlačítka, který provoz v rámci dialogového okna, konfigurace tlačítko alternativní příkaz je svislý zásobník v pravém horním rohu. Zobrazit [vnitřní příkazová tlačítka](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) níže.  
+- Pokud existují vodorovná tlačítka, který provoz v rámci dialogového okna, konfigurace tlačítko alternativní příkaz je svislý zásobník v pravém horním rohu. Zobrazit [vnitřní příkazová tlačítka](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) níže.  
   
--   Místo nalevo od příkazová tlačítka (nižší vlevo/na střed dialogového okna) je považováno za součást "vzdálené" operace ovládací prvky dialogového okna. Jediné, co by měl pronikat na toto místo je odkaz nápovědy, které se týkají jedné úlohy nebo dialogového okna.  
+- Místo nalevo od příkazová tlačítka (nižší vlevo/na střed dialogového okna) je považováno za součást "vzdálené" operace ovládací prvky dialogového okna. Jediné, co by měl pronikat na toto místo je odkaz nápovědy, které se týkají jedné úlohy nebo dialogového okna.  
   
--   Příkazová tlačítka by měla být 75 × 23 pixelů.  
+- Příkazová tlačítka by měla být 75 × 23 pixelů.  
   
--   Příkazová tlačítka by měla být 6 pixelů od sebe.  
+- Příkazová tlačítka by měla být 6 pixelů od sebe.  
   
- ![Tlačítko základní zarovnání](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
+  ![Tlačítko základní zarovnání](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
   
- **Obrázek 08.01-c: Tlačítko základní zarovnání**  
+  **Obrázek 08.01-c: Tlačítko základní zarovnání**  
   
 #### <a name="labels"></a>Popisky  
   
@@ -106,19 +106,19 @@ Většina dialogová okna Visual Studio je [rozložení dialogového okna nástr
 ####  <a name="BKMK_InteriorCommandButtons"></a> Vnitřní příkazová tlačítka  
  V dialogových oknech složitější vnitřní ovládací prvek může mít svůj vlastní související tlačítka, což může ovlivnit, kde se nachází tlačítka dialogového okna potvrzení.  
   
--   Svislé zarovnání (sloupec) vnitřní tlačítka při použití **OK**/**zrušit** jsou orientovaný vodorovně v pravém dolním rohu.  
+- Svislé zarovnání (sloupec) vnitřní tlačítka při použití **OK**/**zrušit** jsou orientovaný vodorovně v pravém dolním rohu.  
   
--   Vodorovné zarovnání (řádků) vnitřní tlačítka při použití **OK**/**zrušit** jsou orientovány svisle v pravém horním rohu. Tato situace je méně častý.  
+- Vodorovné zarovnání (řádků) vnitřní tlačítka při použití **OK**/**zrušit** jsou orientovány svisle v pravém horním rohu. Tato situace je méně častý.  
   
--   Velikost vnitřní tlačítka zaměřit standardní tlačítko velikost 75 × 23 pixelech odpovídající velikost **OK**/**zrušit** tlačítka, pokud je to možné. Pokud popisek tlačítka tlačítko přesáhla velikost standardní tlačítko, by mělo odpovídat tato velikost rozšířit další tlačítka v dané sadě.  
+- Velikost vnitřní tlačítka zaměřit standardní tlačítko velikost 75 × 23 pixelech odpovídající velikost **OK**/**zrušit** tlačítka, pokud je to možné. Pokud popisek tlačítka tlačítko přesáhla velikost standardní tlačítko, by mělo odpovídat tato velikost rozšířit další tlačítka v dané sadě.  
   
- ![Tlačítka OK vodorovné a zrušit](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
+  ![Tlačítka OK vodorovné a zrušit](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
- **Obrázek 08.01-f: Svislé vnitřní tlačítka s vodorovné OK/zrušit**  
+  **Obrázek 08.01-f: Svislé vnitřní tlačítka s vodorovné OK/zrušit**  
   
- ![Tlačítka OK svislé a zrušit](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
+  ![Tlačítka OK svislé a zrušit](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
- **Obrázek 08.01-g: Vodorovné vnitřní tlačítka s svislé OK/zrušit**  
+  **Obrázek 08.01-g: Vodorovné vnitřní tlačítka s svislé OK/zrušit**  
   
 #### <a name="browse-button"></a>[Procházet...] tlačítko  
  **[Procházet...]**  tlačítka, které následují textové pole by si "Procházet..." pravopisu v plném rozsahu, včetně na tři tečky. Pokud je na úzkou místa nebo je více **[Procházet...]**  tlačítka na obrazovce, na tlačítko můžete omezit na právě na tři tečky.  

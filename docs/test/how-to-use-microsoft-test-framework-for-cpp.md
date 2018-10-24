@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6087b864ba497d3754adfa01dc0168da5317aa5e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 53243502e0368d3cb988950edf266cc56adbaa22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379550"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812449"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Použít Microsoft rozhraní testování části pro C++ v sadě Visual Studio
 
@@ -28,20 +28,22 @@ Obvykle spustíte testovací kód ve svém vlastním projektu ve stejném řeše
 
 V některých případech, například při testování Neexportované funkce v knihovně DLL budete možná muset vytvořit testy ve stejném projektu jako program, který testujete. Pro psaní jednotkových testů do stejného projektu:
 
-1.  Upravte vlastnosti projektu, aby zahrnovaly hlavičkové soubory a soubory knihoven, které jsou požadovány pro testování částí.
+1. Upravte vlastnosti projektu, aby zahrnovaly hlavičkové soubory a soubory knihoven, které jsou požadovány pro testování částí.
 
-    1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu pro testování programu a pak zvolte **vlastnosti** > **vlastnosti konfigurace**  >  **Adresáře VC ++**.
+   1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu pro testování programu a pak zvolte **vlastnosti** > **vlastnosti konfigurace**  >  **Adresáře VC ++**.
 
-    3.  Klikněte na šipku dolů v následujících řádcích a zvolte **<Edit>** :
+   2. Klikněte na šipku dolů v následujících řádcích a zvolte **<Edit>** :
 
-        |Adresář|Vlastnost|
-        |-|-|
-        |**Adresáře souborů k zahrnutí**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-        |**Adresáře knihoven**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
-2.  Přidáte soubor testu jednotek C++:
+      | Adresář | Vlastnost |
+      |-| - |
+      | **Adresáře souborů k zahrnutí** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
+      | **Adresáře knihoven** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-    -   Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a zvolte **přidat** > **nová položka** > **Jednotkový Test C++**.
+
+2. Přidáte soubor testu jednotek C++:
+
+   -   Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a zvolte **přidat** > **nová položka** > **Jednotkový Test C++**.
 
 ## <a name="write-the-tests"></a>Zápis testů
 
@@ -53,13 +55,13 @@ Používají statické metody v [Assert](microsoft-visualstudio-testtools-cppuni
 
 ## <a name="run-the-tests"></a>Spustit testy
 
-1.  Na **testovací** nabídce zvolte **Windows** > **Průzkumník testů**.
+1. Na **testovací** nabídce zvolte **Windows** > **Průzkumník testů**.
 2. Pokud všechny testy nejsou zobrazeny v okně, vytvoření testovacího projektu kliknutím pravým tlačítkem myši v jeho uzel **Průzkumníka řešení** a zvolíte **sestavení** nebo **znovu sestavit**.
 
-2.  V **Průzkumník testů**, zvolte **spustit všechny**, nebo vyberte konkrétní testy, které chcete spustit. Klikněte pravým tlačítkem myši na test pro další možnosti, včetně spuštění v režimu ladění se zarážkami povolené.
-3. V **okno výstup** zvolte **testy** v rozevíracího seznamu ji můžete zapsat pomocí zobrazení zpráv `Logger` třídy:
+3. V **Průzkumník testů**, zvolte **spustit všechny**, nebo vyberte konkrétní testy, které chcete spustit. Klikněte pravým tlačítkem myši na test pro další možnosti, včetně spuštění v režimu ladění se zarážkami povolené.
+4. V **okno výstup** zvolte **testy** v rozevíracího seznamu ji můžete zapsat pomocí zobrazení zpráv `Logger` třídy:
 
-  ![Okno výstup C++ zkušební zprávy](media/cpp-test-output-window.png)
+   ![Okno výstup C++ zkušební zprávy](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Definovat vlastnosti, které chcete povolit seskupování
 
@@ -90,7 +92,7 @@ TEST_METHOD(Method1)
 Následující předdefinované vlastnosti se nacházejí v `CppUnitTest.h`. Další informace najdete v tématu [Microsoft Unit Testing Framework pro reference k rozhraní API C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
 |– Makro|Popis|
-|-----------|-----------------|
+|-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Chcete-li definovat vlastnost, použijte makro TEST_METHOD_ATTRIBUTE.|
 |`TEST_OWNER(ownerAlias)`|Použijte předdefinovanou vlastnost Owner k zadání vlastníka testovací metody.|
 |`TEST_PRIORITY(priority)`|Pomocí předdefinované vlastnosti Priority přiřaďte relativní priority testovacím metodám.|

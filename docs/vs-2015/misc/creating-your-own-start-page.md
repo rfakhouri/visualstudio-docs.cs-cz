@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: douge
-ms.openlocfilehash: dc3c19d7a2756e3716e76846ac468433d00cc1d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232073"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815036"
 ---
 # <a name="creating-your-own-start-page"></a>Vytvoření vlastní úvodní stránky
 Pomocí šablony projektu stránka Start nebo tak, že vytvoříte prázdnou stránku spuštění můžete vytvořit vlastní úvodní stránky.  
@@ -57,52 +57,52 @@ Pomocí šablony projektu stránka Start nebo tak, že vytvoříte prázdnou str
   
 #### <a name="to-create-a-blank-start-page-by-using-the-start-page-project-template"></a>Chcete-li vytvořit prázdnou stránku spuštění pomocí šablony projektu úvodní stránka  
   
-1.  Vytvořte projekt úvodní stránky pomocí šablony projektu úvodní stránku, jak je popsáno v předchozím postupu.  
+1. Vytvořte projekt úvodní stránky pomocí šablony projektu úvodní stránku, jak je popsáno v předchozím postupu.  
   
-2.  Otevřete StartPage.xaml.  
+2. Otevřete StartPage.xaml.  
   
-3.  Odebere veškerý obsah stránky, byste museli opustit jenom vnější xml elementů a obsahující mřížky <xref:System.Windows.Controls.Grid> elementu, tak, aby váš soubor .xaml vypadá podobně jako v následujícím příkladu.  
+3. Odebere veškerý obsah stránky, byste museli opustit jenom vnější xml elementů a obsahující mřížky <xref:System.Windows.Controls.Grid> elementu, tak, aby váš soubor .xaml vypadá podobně jako v následujícím příkladu.  
   
-    ```xaml
-       <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-                 xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
-                 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
-                 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
-             mc:Ignorable="d" 
-                 d:DesignHeight="600" d:DesignWidth="800">
-        <Grid>
-            <!--Add content here.-->
-        </Grid>
-    </Grid>
-    ```
+   ```xaml
+      <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
+                xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
+                xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
+            mc:Ignorable="d" 
+                d:DesignHeight="600" d:DesignWidth="800">
+       <Grid>
+           <!--Add content here.-->
+       </Grid>
+   </Grid>
+   ```
       
-4.  Odeberte všechny podpůrné soubory, které nezamýšlíte používat.  
+4. Odeberte všechny podpůrné soubory, které nezamýšlíte používat.  
   
-     Byste měli mít soubor .vsix a .pkgdef pro účely nasazení.  
+    Byste měli mít soubor .vsix a .pkgdef pro účely nasazení.  
   
- Alternativně můžete vytvořit prázdnou stránku začít vytvořením souboru XAML se strukturou správná značka podle sady Visual Studio. Poté můžete přidat značky a modelu code-behind získat požadovaný vzhled a funkce. Další informace najdete v tématu [vytvoření vlastní úvodní stránku](../extensibility/creating-a-custom-start-page.md).  
+   Alternativně můžete vytvořit prázdnou stránku začít vytvořením souboru XAML se strukturou správná značka podle sady Visual Studio. Poté můžete přidat značky a modelu code-behind získat požadovaný vzhled a funkce. Další informace najdete v tématu [vytvoření vlastní úvodní stránku](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>Testování a použití vlastní úvodní stránku  
  Nenastavujte primární instance spuštěné vlastní úvodní stránku, dokud můžete ověřit, že ho nehavaruje. Při testování vaší vlastní úvodní stránky, můžete jej použít do vašeho systému opakováním poslední tři kroky tohoto postupu v primární instance sady Visual Studio.  
   
 #### <a name="to-test-a-custom-start-page"></a>Chcete-li otestovat vlastní úvodní stránky  
   
-1.  Stiskněte klávesu F5.  
+1. Stiskněte klávesu F5.  
   
-     Experimentální instanci sady Visual Studio otevře se nová úvodní stránka nainstalované, ale nejsou vybrány.  
+    Experimentální instanci sady Visual Studio otevře se nová úvodní stránka nainstalované, ale nejsou vybrány.  
   
-2.  V experimentální instanci sady Visual Studio na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+2. V experimentální instanci sady Visual Studio na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
-3.  V **možnosti** dialogovém okně **prostředí**vyberte **spuštění**. Potom na **přizpůsobit úvodní stránku** seznamu, vyberte soubor .xaml a klikněte na tlačítko **OK**.  
+3. V **možnosti** dialogovém okně **prostředí**vyberte **spuštění**. Potom na **přizpůsobit úvodní stránku** seznamu, vyberte soubor .xaml a klikněte na tlačítko **OK**.  
   
-4.  Na **zobrazení** nabídky, klikněte na tlačítko **úvodní stránka**.  
+4. Na **zobrazení** nabídky, klikněte na tlačítko **úvodní stránka**.  
   
-     Zobrazí se pracovní úvodní stránku. Musí Ukončete experimentální instanci, znovu zkopírujte všechny změněné soubory a poté znovu otevřete experimentální instanci zobrazíte nové změny.  
+    Zobrazí se pracovní úvodní stránku. Musí Ukončete experimentální instanci, znovu zkopírujte všechny změněné soubory a poté znovu otevřete experimentální instanci zobrazíte nové změny.  
   
- Můžete sdílet vaše vlastní úvodní stránky tak, že nahrajete soubor VSIX do adresáře bin\debug [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webový server nebo do jiného webu nebo intranetu sdílet. Další informace najdete v tématu [nasazení vlastní úvodní stránky](../extensibility/deploying-custom-start-pages.md).  
+   Můžete sdílet vaše vlastní úvodní stránky tak, že nahrajete soubor VSIX do adresáře bin\debug [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webový server nebo do jiného webu nebo intranetu sdílet. Další informace najdete v tématu [nasazení vlastní úvodní stránky](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení úvodní stránky](../ide/customizing-the-start-page-for-visual-studio.md)   

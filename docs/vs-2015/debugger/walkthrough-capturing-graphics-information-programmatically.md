@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cdd1e740861765958c9115b8112dacd4b338b2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812904"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Návod: Zaznamenání grafických informací prostřednictvím kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,18 +73,18 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostiky grafi
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>Chcete-li definovat IDXGraphicsAnalysis rozhraní  
   
--   Definujte rozhraní IDXGraphicsAnalysis ve stejném souboru, ve kterém jste zahrnuli soubory hlaviček.  
+- Definujte rozhraní IDXGraphicsAnalysis ve stejném souboru, ve kterém jste zahrnuli soubory hlaviček.  
   
-    ```  
-    interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
-    IDXGraphicsAnalysis : public IUnknown  
-    {  
-        STDMETHOD_(void, BeginCapture)() PURE;  
-        STDMETHOD_(void, EndCapture)() PURE;  
-    };  
-    ```  
+  ```  
+  interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
+  IDXGraphicsAnalysis : public IUnknown  
+  {  
+      STDMETHOD_(void, BeginCapture)() PURE;  
+      STDMETHOD_(void, EndCapture)() PURE;  
+  };  
+  ```  
   
- Pro usnadnění práce můžete proveďte tyto kroky v novém souboru záhlaví a pak ji kde je třeba zahrnout do vaší aplikace.  
+  Pro usnadnění práce můžete proveďte tyto kroky v novém souboru záhlaví a pak ji kde je třeba zahrnout do vaší aplikace.  
   
 ### <a name="getting-the-idxgraphicsanalysis-interface"></a>Získávání rozhraní IDXGraphicsAnalysis  
  Než budete moct zachytit informace grafiky z rozhraní DirectX 11.2, budete muset získat rozhraní DXGI ladění.  
@@ -171,23 +171,23 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostiky grafi
   
 ##### <a name="to-configure-the-name-and-location-of-the-graphics-log-file"></a>Konfigurovat název a umístění souboru protokolu grafiky  
   
--   Protokol grafiky zabránit před zápisem do dočasného adresáře `#include <vsgcapture.h>` řádek, přidejte následující:  
+- Protokol grafiky zabránit před zápisem do dočasného adresáře `#include <vsgcapture.h>` řádek, přidejte následující:  
   
-    ```  
-    #define DONT_SAVE_VSGLOG_TO_TEMP  
-    ```  
+  ```  
+  #define DONT_SAVE_VSGLOG_TO_TEMP  
+  ```  
   
-     Můžete definovat tuto hodnotu pro zápis v protokolu grafiky do umístění, která je relativní vzhledem k pracovní adresář nebo na absolutní cestu, pokud definice `VSG_DEFAULT_RUN_FILENAME` je absolutní cesta.  
+   Můžete definovat tuto hodnotu pro zápis v protokolu grafiky do umístění, která je relativní vzhledem k pracovní adresář nebo na absolutní cestu, pokud definice `VSG_DEFAULT_RUN_FILENAME` je absolutní cesta.  
   
--   Chcete uložit protokol grafiky do jiného umístění nebo jí jiný název souboru, než `#include <vsgcapture.h>` řádek, přidejte následující:  
+- Chcete uložit protokol grafiky do jiného umístění nebo jí jiný název souboru, než `#include <vsgcapture.h>` řádek, přidejte následující:  
   
-    ```  
-    #define VSG_DEFAULT_RUN_FILENAME <filename>  
-    ```  
+  ```  
+  #define VSG_DEFAULT_RUN_FILENAME <filename>  
+  ```  
   
-     Pokud není tento krok proveďte, název souboru je default.vsglog. Pokud definujete neměli `DONT_SAVE_VSGLOG_TO_TEMP`, pak umístění souboru je relativní vzhledem k adresáři temp; v opačném případě je relativní vzhledem k pracovní adresář nebo v jiném umístění případného absolutního názvu souboru.  
+   Pokud není tento krok proveďte, název souboru je default.vsglog. Pokud definujete neměli `DONT_SAVE_VSGLOG_TO_TEMP`, pak umístění souboru je relativní vzhledem k adresáři temp; v opačném případě je relativní vzhledem k pracovní adresář nebo v jiném umístění případného absolutního názvu souboru.  
   
- Pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace, umístění dočasného adresáře je specifická pro každého uživatele a aplikace a se obvykle nachází v umístění, jako je například C:\users\\*uživatelské jméno*\AppData\Local\Packages\\ *pfn*\TempState\\. Pro aplikace klasické pracovní plochy, umístění dočasného adresáře je specifická pro jednotlivé uživatele a obvykle nachází v umístění, jako je například C:\Users\\*uživatelské jméno*\AppData\Local\Temp\\.  
+  Pro [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace, umístění dočasného adresáře je specifická pro každého uživatele a aplikace a se obvykle nachází v umístění, jako je například C:\users\\*uživatelské jméno*\AppData\Local\Packages\\ *pfn*\TempState\\. Pro aplikace klasické pracovní plochy, umístění dočasného adresáře je specifická pro jednotlivé uživatele a obvykle nachází v umístění, jako je například C:\Users\\*uživatelské jméno*\AppData\Local\Temp\\.  
   
 > [!NOTE]
 >  Zapsat do určitého umístění, musíte mít oprávnění k zápisu do tohoto umístění. v opačném případě dojde k chybě. Mějte na paměti, která [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace jsou omezeny více než aplikace klasické pracovní plochy o kde umožňuje zápis dat a můžou vyžadovat další konfiguraci k zápisu do určitých umístění.  

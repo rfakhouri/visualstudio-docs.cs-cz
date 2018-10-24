@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfc32400f926bd62c77431bcc448e4b78dedd026
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3c190606c860a2a9d9711f0636420c34a38c8d52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301480"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813593"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Spuštění nástroje pro profilaci s nebo bez ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,60 +46,60 @@ Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (nap
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Shromažďování dat profilace během ladění  
  Následující část se zabývá místním ladění. Můžete získat informace o ladění na zařízení nebo vzdálené ladění, v dalších částech.  
   
-1.  Otevřete projekt, který chcete ladit, pak klikněte na **ladění / spuštění ladění** (nebo **Start** na panelu nástrojů nebo **F5**).  
+1. Otevřete projekt, který chcete ladit, pak klikněte na **ladění / spuštění ladění** (nebo **Start** na panelu nástrojů nebo **F5**).  
   
-2.  Okno **Diagnostické nástroje** se zobrazí automaticky (pokud jste ho nevypnuli). Pokud ho chcete znovu zobrazit, klikněte na **Ladit / Okna / Zobrazit diagnostické nástroje**.  
+2. Okno **Diagnostické nástroje** se zobrazí automaticky (pokud jste ho nevypnuli). Pokud ho chcete znovu zobrazit, klikněte na **Ladit / Okna / Zobrazit diagnostické nástroje**.  
   
-3.  Scénáře, pro které chcete shromažďovat data pro spuštění.  
+3. Scénáře, pro které chcete shromažďovat data pro spuštění.  
   
-     Při spuštění relace, zobrazí se informace o události, proces, využití paměti a procesoru.  
+    Při spuštění relace, zobrazí se informace o události, proces, využití paměti a procesoru.  
   
-     Následující grafické ukazuje **diagnostické nástroje** okna v aplikaci Visual Studio 2015 Update 1:  
+    Následující grafické ukazuje **diagnostické nástroje** okna v aplikaci Visual Studio 2015 Update 1:  
   
-     ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  Můžete zvolit, zda chcete zobrazit **využití paměti** nebo **využití procesoru** (nebo obojí) se **vyberte nástroje** nastavení na panelu nástrojů. Pokud používáte Visual Studio Enterprise, můžete povolit nebo zakázat nástroje IntelliTrace v **nástroje / Možnosti / IntelliTrace**.  
+4. Můžete zvolit, zda chcete zobrazit **využití paměti** nebo **využití procesoru** (nebo obojí) se **vyberte nástroje** nastavení na panelu nástrojů. Pokud používáte Visual Studio Enterprise, můžete povolit nebo zakázat nástroje IntelliTrace v **nástroje / Možnosti / IntelliTrace**.  
   
-5.  Diagnostické relace končí, když zastavíte ladění.  
+5. Diagnostické relace končí, když zastavíte ladění.  
   
- Visual Studio 2015 Update 1 **diagnostické nástroje** okno usnadňuje pro soustředit na události, které vás zajímají.   Názvy událostí se teď zobrazují s předponami kategorie (**gesta**, **výstup programu**, **zarážku**, **souboru** atd.) tak, aby se rychle Vyhledejte v seznamu pro danou kategorii nebo přeskočit kategorie, které vám nezáleží.  
+   Visual Studio 2015 Update 1 **diagnostické nástroje** okno usnadňuje pro soustředit na události, které vás zajímají.   Názvy událostí se teď zobrazují s předponami kategorie (**gesta**, **výstup programu**, **zarážku**, **souboru** atd.) tak, aby se rychle Vyhledejte v seznamu pro danou kategorii nebo přeskočit kategorie, které vám nezáleží.  
   
- V okně nyní obsahuje pole pro hledání, abyste našli konkrétní řetězec kdekoli v seznamu událostí. Například následující obrázek znázorňuje výsledky hledání řetězce "instalaci", který odpovídá čtyři události:  
+   V okně nyní obsahuje pole pro hledání, abyste našli konkrétní řetězec kdekoli v seznamu událostí. Například následující obrázek znázorňuje výsledky hledání řetězce "instalaci", který odpovídá čtyři události:  
   
- ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
- Můžete také filtrovat události a zobrazení v okně. V **filtr** rozevírací seznam, dokáže kontrolovat nebo zrušte zaškrtnutí políčka konkrétní kategorie události:. Názvy kategorií jsou stejné jako názvy předponu.  
+   Můžete také filtrovat události a zobrazení v okně. V **filtr** rozevírací seznam, dokáže kontrolovat nebo zrušte zaškrtnutí políčka konkrétní kategorie události:. Názvy kategorií jsou stejné jako názvy předponu.  
   
- ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
- Další informace najdete v tématu [vyhledávání a filtrování na kartě události okna diagnostické nástroje](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Další informace najdete v tématu [vyhledávání a filtrování na kartě události okna diagnostické nástroje](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Shromažďování dat profilace bez ladění  
  Některé nástroje pro profilaci vyžadují oprávnění správce pro spuštění. Visual Studio můžete spustit jako správce, nebo můžete spustit nástroje jako správce, když spustíte diagnostické relace.  
   
-1.  Otevřete projekt v sadě Visual Studio.  
+1. Otevřete projekt v sadě Visual Studio.  
   
-2.  Na **ladění** nabídce zvolte **Profiler výkonu...** (Klávesová zkratka: Alt + F2).  
+2. Na **ladění** nabídce zvolte **Profiler výkonu...** (Klávesová zkratka: Alt + F2).  
   
-3.  Na stránce diagnostiky spuštění zvolte jeden nebo víc nástrojů ke spuštění v relaci. Zobrazí se pouze nástroje, které platí pro typ projektu, operační systém a programovací jazyk. Pokud si zvolíte diagnostický nástroj, jsou zakázané výběry pro nástroje, které nemůže běžet ve stejné relaci diagnostiky. Zde je, jak může vypadat vaše volby jazyka C# Windows univerzální aplikace:  
+3. Na stránce diagnostiky spuštění zvolte jeden nebo víc nástrojů ke spuštění v relaci. Zobrazí se pouze nástroje, které platí pro typ projektu, operační systém a programovací jazyk. Pokud si zvolíte diagnostický nástroj, jsou zakázané výběry pro nástroje, které nemůže běžet ve stejné relaci diagnostiky. Zde je, jak může vypadat vaše volby jazyka C# Windows univerzální aplikace:  
   
-     ![Vyberte diagnostické nástroje](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
+    ![Vyberte diagnostické nástroje](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
   
-4.  Chcete-li spustit diagnostické relace, klikněte na tlačítko **Start**.  
+4. Chcete-li spustit diagnostické relace, klikněte na tlačítko **Start**.  
   
-5.  Spuštění scénářů, pro které chcete shromažďovat data.  
+5. Spuštění scénářů, pro které chcete shromažďovat data.  
   
-     Při spuštění relace, některé nástroje grafy dat v reálném čase zobrazit na stránce spustit diagnostické nástroje.  
+    Při spuštění relace, některé nástroje grafy dat v reálném čase zobrazit na stránce spustit diagnostické nástroje.  
   
-     ![Shromažďovat data o výkonu a Diagnostika Úvo](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Shromažďovat data o výkonu a Diagnostika Úvo](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
-6.  Chcete-li ukončit relaci diagnostiky, klikněte na tlačítko **zastavit shromažďování**.  
+6. Chcete-li ukončit relaci diagnostiky, klikněte na tlačítko **zastavit shromažďování**.  
   
- Když zastavíte shromažďování dat v relaci diagnostiky, data se analyzují a sestavy se zobrazí na stránce diagnostiky.  
+   Když zastavíte shromažďování dat v relaci diagnostiky, data se analyzují a sestavy se zobrazí na stránce diagnostiky.  
   
- Můžete také otevřít relaci .diagnostic uložené soubory ze seznamu posledních otevřených na diagnostických nástrojů úvodní stránka.  
+   Můžete také otevřít relaci .diagnostic uložené soubory ze seznamu posledních otevřených na diagnostických nástrojů úvodní stránka.  
   
- ![Otevřete soubor uloženou diagnostiku relace](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Otevřete soubor uloženou diagnostiku relace](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Sestava profilace  
  ![Diagnostické nástroje sestavy](../profiling/media/diag-report.png "DIAG_Report")  

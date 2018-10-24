@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 3ebfd95431948e4444cd6b7ed551c0b99e457fec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 050b98f663a1db6bde6d32342b094fe454046283
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277241"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459657"
 ---
 # <a name="publish-to-azure-app-service"></a>Publikování do Azure App Service
 
@@ -26,7 +26,7 @@ V současné době je podporován Python ve službě Azure App Service pro Linux
 > [!Note]
 > Podpora Pythonu ve službě Azure App Service pro Windows je oficiálně zastaralá. V důsledku toho **publikovat** příkaz v sadě Visual Studio se oficiálně podporuje jenom pro [cílové služby IIS](#publish-to-iis), a vzdálené ladění ve službě Azure App Service je již nejsou oficiálně podporované.
 >
-> Ale dál fungovat prozatím, jako rozšíření Pythonu pro službu App Service na Windows nadále k dispozici tyto funkce, ale nebude údržba nebo aktualizovat.
+> Nicméně [publikování ve službě App Service v systému Windows](publish-to-app-service-windows.md) funkce prozatím stále funguje, zůstanou přípony Python aplikace služby v systému Windows k dispozici, ale nebude opraveno nebo aktualizovány.
 
 ## <a name="publish-to-app-service-on-linux-using-git-deploy"></a>Publikování pomocí Gitu nasaďte do služby App Service v Linuxu
 

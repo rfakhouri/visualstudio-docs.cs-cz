@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fbb8fa5e4881c76aae08759b2feb159b764231f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 84451a90e316a98a9998e1a64e68a72668bd4781
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813762"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; – element (zaváděcí nástroj)
 `PackageFiles` Obsahuje element `PackageFile` prvky, které definují instalační balíčky provést kvůli `Command` elementu.  
-  
+
 ## <a name="syntax"></a>Syntaxe  
-  
+
 ```xml  
 <PackageFiles  
     CopyAllPackageFiles  
@@ -42,30 +42,31 @@ ms.locfileid: "39078140"
     />  
 </PackageFiles>  
 ```  
-  
+
 ## <a name="elements-and-attributes"></a>Elementy a atributy  
  `PackageFiles` Element má tento atribut.  
-  
+
 |Atribut|Popis|  
 |---------------|-----------------|  
 |`CopyAllPackageFiles`|Volitelné. Pokud nastavena na `false`, instalační program stáhne pouze soubory, které odkazuje `Command` elementu. Pokud hodnotu `true`, všechny soubory se stáhnou.<br /><br /> Pokud nastavena na `IfNotHomesite`, instalační program se chová stejně jako `False` Pokud `ComponentsLocation` je nastavena na `HomeSite`a v opačném případě se chová stejně jako by `True`. Toto nastavení může být užitečné umožnit bootstrapperů k provedení vlastní chování v případě HomeSite balíčky, které představují samy o sobě.<br /><br /> Výchozí hodnota je `true`.|  
-  
+
 ## <a name="packagefile"></a>PackageFile  
  `PackageFile` Element je podřízeným prvkem `PackageFiles` elementu. A `PackageFiles` element musí mít aspoň jeden `PackageFile` elementu.  
-  
+
  `PackageFile` má následující atributy.  
-  
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`Name`|Požadováno. Název souboru balíčku. Jedná se o název, který `Command` element bude odkazovat při definuje podmínky, za kterých se balíček nainstaluje. Tato hodnota se také používá jako klíč do `Strings` tabulka, která má načíst lokalizovaný název, který nástroje jako [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bude používat pro popis balíčku.|  
-|`HomeSite`|Volitelné. Umístění balíčku na vzdáleném serveru, pokud není součástí instalačního programu.|  
-|`CopyOnBuild`|Volitelné. Určuje, zda zaváděcí nástroj byste ho zkopírovat balíček na disku v okamžiku sestavení. Výchozí hodnota je true.|  
-|`PublicKey`|Šifrované veřejný klíč certifikátu podpisu balíčku. Požadováno pokud `HomeSite` používané jinak volitelné.|  
-|`Hash`|Volitelné. Hodnota hash SHA1 souboru balíčku. Slouží k ověření integrity souboru chvíli instalace. Shodná hodnota hash nelze vypočítat ze souboru balíčku, balíčku nenainstalují.|  
-  
+
+
+| Atribut | Popis |
+|---------------| - |
+| `Name` | Požadováno. Název souboru balíčku. Jedná se o název, který `Command` element bude odkazovat při definuje podmínky, za kterých se balíček nainstaluje. Tato hodnota se také používá jako klíč do `Strings` tabulka, která má načíst lokalizovaný název, který nástroje jako [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bude používat pro popis balíčku. |
+| `HomeSite` | Volitelné. Umístění balíčku na vzdáleném serveru, pokud není součástí instalačního programu. |
+| `CopyOnBuild` | Volitelné. Určuje, zda zaváděcí nástroj byste ho zkopírovat balíček na disku v okamžiku sestavení. Výchozí hodnota je true. |
+| `PublicKey` | Šifrované veřejný klíč certifikátu podpisu balíčku. Požadováno pokud `HomeSite` používané jinak volitelné. |
+| `Hash` | Volitelné. Hodnota hash SHA1 souboru balíčku. Slouží k ověření integrity souboru chvíli instalace. Shodná hodnota hash nelze vypočítat ze souboru balíčku, balíčku nenainstalují. |
+
 ## <a name="example"></a>Příklad  
  Následující příklad kódu definuje balíčky pro [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Distribuovatelný balíček a jeho závislosti, jako je například Instalační služby systému Windows.  
-  
+
 ```xml  
 <PackageFiles>  
     <PackageFile Name="instmsia.exe" HomeSite="InstMsiAExe" PublicKey="3082010A0282010100AA99BD39A81827F42B3D0B4C3F7C772EA7CBB5D18C0DC23A74D793B5E0A04B3F595ECE454F9A7929F149CC1A47EE55C2083E1220F855F2EE5FD3E0CA96BC30DEFE58C82732D08554E8F09110BBF32BBE19E5039B0B861DF3B0398CB8FD0B1D3C7326AC572BCA29A215908215E277A34052038B9DC270BA1FE934F6F335924E5583F8DA30B620DE5706B55A4206DE59CBF2DFA6BD154771192523D2CB6F9B1979DF6A5BF176057929FCC356CA8F440885558ACBC80F464B55CB8C96774A87E8A94106C7FF0DE968576372C36957B443CF323A30DC1BE9D543262A79FE95DB226724C92FD034E3E6FB514986B83CD0255FD6EC9E036187A96840C7F8E203E6CF050203010001"/>  
@@ -74,7 +75,7 @@ ms.locfileid: "39078140"
     <PackageFile Name="dotnetchk.exe"/>  
 </PackageFiles>  
 ```  
-  
+
 ## <a name="see-also"></a>Viz také:  
  [\<Produkt > – element](../deployment/product-element-bootstrapper.md)   
  [\<Balíček > – element](../deployment/package-element-bootstrapper.md)   

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 61a7b36892e5cec36a4641c154227df8621c6602
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812618"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Krok 2: Vytvoření aplikace Flask pomocí zobrazení a šablony
 
@@ -36,7 +36,7 @@ V kód vytvořený pomocí šablony "Prázdné Flask webového projektu", máte 
 
 1. Ve složce projektu, vytvořte složku aplikace s názvem `HelloFlask` (klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **přidat** > **novou složku** .)
 
-1. V *HelloFlask* složce vytvořte soubor s názvem  *\_ \_init\_\_.py* s použitím následujícího obsahu, které vytvoří `Flask` instance a načte zobrazení aplikace (vytvořený v dalším kroku):
+2. V *HelloFlask* složce vytvořte soubor s názvem  *\_ \_init\_\_.py* s použitím následujícího obsahu, které vytvoří `Flask` instance a načte zobrazení aplikace (vytvořený v dalším kroku):
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ V kód vytvořený pomocí šablony "Prázdné Flask webového projektu", máte 
     import HelloFlask.views
     ```
 
-1. V *HelloFlask* složce vytvořte soubor s názvem *views.py* s následujícím obsahem. Název *views.py* je důležité, protože jste použili `import HelloFlask.views` v rámci  *\_ \_init\_\_.py*; zobrazí se vám Chyba za běhu Pokud názvy se neshodují.
+3. V *HelloFlask* složce vytvořte soubor s názvem *views.py* s následujícím obsahem. Název *views.py* je důležité, protože jste použili `import HelloFlask.views` v rámci  *\_ \_init\_\_.py*; zobrazí se vám Chyba za běhu Pokud názvy se neshodují.
 
     ```python
     from flask import Flask
@@ -59,9 +59,9 @@ V kód vytvořený pomocí šablony "Prázdné Flask webového projektu", máte 
 
     Kromě přejmenování funkce a tras do `home`, tento kód obsahuje kód pro vykreslování stránky z *app.py* a importuje `app` objekt, který je deklarován v  *\_ \_init\_\_.py*.
 
-1. Vytvořte podsložku v *HelloFlask* s názvem *šablony*, které zůstávají prázdné i nyní.
+4. Vytvořte podsložku v *HelloFlask* s názvem *šablony*, které zůstávají prázdné i nyní.
 
-1. V kořenové složce projektu, přejmenujte *app.py* k *runserver.py*a ujistěte se, obsah následujícím kódem:
+5. V kořenové složce projektu, přejmenujte *app.py* k *runserver.py*a ujistěte se, obsah následujícím kódem:
 
     ```python
     import os
@@ -77,17 +77,17 @@ V kód vytvořený pomocí šablony "Prázdné Flask webového projektu", máte 
 
         app.run(HOST, PORT)
     ```
-1. Strukturu projektu by měl vypadat jako na následujícím obrázku:
+6. Strukturu projektu by měl vypadat jako na následujícím obrázku:
 
     ![Struktura projektu po refaktorování kódu](media/flask/step02-project-structure.png)
 
-1. Vyberte **ladění** > **spustit ladění** (**F5**) nebo použít **Webový Server** tlačítko na panelu nástrojů (prohlížeči najdete v květnu Spusťte aplikaci a otevřít prohlížeč lišit). Zkuste oba / a/home tras adresy URL.
+7. Vyberte **ladění** > **spustit ladění** (**F5**) nebo použít **Webový Server** tlačítko na panelu nástrojů (prohlížeči najdete v květnu Spusťte aplikaci a otevřít prohlížeč lišit). Zkuste oba / a/home tras adresy URL.
 
-1. Můžete také nastavit zarážky na různé části kódu a restartujte aplikaci rozhodování o pořadí spouštění. Například nastavte zarážku na první řádky *runserver.py* a *HelloFlask\__init__.py*a na `return "Hello Flask!"` řádku v *views.py*. Restartujte aplikaci (**ladění** > **restartovat**, **Ctrl**+**F5**, nebo tlačítko panelu nástrojů je uvedeno níže) a Projděte skrze (**F10**) kód nebo spustit z každého zarážky pomocí **F5**.
+8. Můžete také nastavit zarážky na různé části kódu a restartujte aplikaci rozhodování o pořadí spouštění. Například nastavte zarážku na první řádky *runserver.py* a *HelloFlask\_* init_*.py*a na `return "Hello Flask!"` řádku v *views.py*. Restartujte aplikaci (**ladění** > **restartovat**, **Ctrl**+**F5**, nebo tlačítko panelu nástrojů je uvedeno níže) a Projděte skrze (**F10**) kód nebo spustit z každého zarážky pomocí **F5**.
 
     ![Restartujte na panelu nástrojů ladění v sadě Visual Studio](media/debugging-restart-toolbar-button.png)
 
-1. Jakmile budete hotovi, zastavte aplikaci.
+9. Jakmile budete hotovi, zastavte aplikaci.
 
 ### <a name="commit-to-source-control"></a>Potvrzení změn do správy zdrojového kódu
 

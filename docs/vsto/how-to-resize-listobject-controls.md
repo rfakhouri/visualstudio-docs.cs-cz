@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e55a214d2b35e26dcc1a3b381f74a7ccd021c864
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3608399613063a0fa572fe4de12b77187f8b4b41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811500"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Postupy: Změna velikosti ovládacích prvků ListObject
   Nastavte velikost <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek, když ho přidáte do sešitu aplikace Microsoft Office Excel; však můžete chtít změnit jeho velikost později. Například můžete chtít změnit seznam dvěma sloupci na tři sloupce.  
@@ -32,15 +32,15 @@ ms.locfileid: "35676031"
   
  Toto téma popisuje následující úkoly:  
   
--   [Změna velikosti ovládacích prvků ListObject v době návrhu](#designtime)  
+- [Změna velikosti ovládacích prvků ListObject v době návrhu](#designtime)  
   
--   [Změna velikosti ovládacích prvků ListObject za běhu v projektu úrovni dokumentu](#runtimedoclevel)  
+- [Změna velikosti ovládacích prvků ListObject za běhu v projektu úrovni dokumentu](#runtimedoclevel)  
   
--   [Změna velikosti ovládacích prvků ListObject za běhu v projektu doplňku VSTO](#runtimeaddin)  
+- [Změna velikosti ovládacích prvků ListObject za běhu v projektu doplňku VSTO](#runtimeaddin)  
   
- Další informace o <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacích prvků, naleznete v tématu [ListObject – ovládací prvek](../vsto/listobject-control.md).  
+  Další informace o <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacích prvků, naleznete v tématu [ListObject – ovládací prvek](../vsto/listobject-control.md).  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak mohu: Přidat sloupce vázané na data seznamu objektů za běhu?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak mohu: Přidat sloupce vázané na data seznamu objektů za běhu?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> Změna velikosti ovládacího prvku ListObject v době návrhu  
  Pokud chcete změnit velikost seznamu, můžete kliknout a přetáhněte jeden z úchytů pro změnu velikosti, nebo můžete změnit jeho velikost v **změnit velikost seznamu** dialogové okno.  

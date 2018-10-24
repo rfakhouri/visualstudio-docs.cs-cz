@@ -30,12 +30,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00b448f84e0103d5cf98ae27c519e247ad3d0c25
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3bd033a9341975b6b785076188a53daf3e91a5a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817338"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Ladění aplikací ve smíšeném režimu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,13 +54,13 @@ Aplikace pracující v kombinovaném režimu je libovolná aplikace, která komb
   
 #### <a name="to-turn-off-property-evaluation"></a>Chcete-li vypnout vyhodnocení vlastností  
   
-1.  Na **nástroje** nabídce zvolte **možnosti**.  
+1. Na **nástroje** nabídce zvolte **možnosti**.  
   
-2.  V **možnosti** dialogovém okně Otevřít **ladění** a pak zvolte položku **Obecné** kategorie.  
+2. V **možnosti** dialogovém okně Otevřít **ladění** a pak zvolte položku **Obecné** kategorie.  
   
-3.  Zrušte **povolit vyhodnocování vlastností a jiných implicitních volání funkcí** zaškrtávací políčko.  
+3. Zrušte **povolit vyhodnocování vlastností a jiných implicitních volání funkcí** zaškrtávací políčko.  
   
- Vzhledem k tomu, že se nativní a spravované zásobníky volání liší, ladicí program nemůže vždy pro smíšený kód stanovit úplný zásobník volání. Když nativní kód volá spravovaný kód, lze zaznamenat některé nesrovnalosti. Další informace najdete v tématu [smíšený kód a chybějící informace v okně zásobník volání](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
+   Vzhledem k tomu, že se nativní a spravované zásobníky volání liší, ladicí program nemůže vždy pro smíšený kód stanovit úplný zásobník volání. Když nativní kód volá spravovaný kód, lze zaznamenat některé nesrovnalosti. Další informace najdete v tématu [smíšený kód a chybějící informace v okně zásobník volání](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)

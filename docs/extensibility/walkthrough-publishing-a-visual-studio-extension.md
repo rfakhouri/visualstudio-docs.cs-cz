@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80bf0d3885f9dc4e4360b8516bd13a62cfbea952
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566801"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815738"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Návod: Publikování rozšíření sady Visual Studio
 
@@ -39,7 +39,7 @@ Tento článek používá výchozí rozšíření VSPackage, ale postup je platn
 
 1. Aktualizovat rozšíření *.vsixmanifest* se správnými informacemi o názvu produktu, autora a verzi.
 
-  ![aktualizace rozšíření vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![aktualizace rozšíření vsixmanifest](media/update-extension-vsixmanifest.png)
 
 2. Vytváření rozšíření **vydání** režimu. Rozšíření je teď součástí jako rozšíření VSIX ve složce \bin\Release.
 
@@ -67,7 +67,7 @@ Tento článek používá výchozí rozšíření VSPackage, ale postup je platn
 
 5. Klikněte na tlačítko **publikování rozšíření**.  Tato možnost slouží k přejde na stránku spravovat vaše rozšíření. Pokud nemáte vydavatelského účtu, zobrazí se výzva k jeho vytvoření v tuto chvíli.
 
-  ![Nahrát na web Marketplace](media/upload-to-marketplace.png)
+   ![Nahrát na web Marketplace](media/upload-to-marketplace.png)
 
 6. Vyberte vydavatele, který chcete použít k nahrání rozšíření. Vydavatelé můžete změnit po kliknutí na názvy vydavatelů, které jsou uvedené na levé straně. Klikněte na **nové rozšíření** a vyberte **sady Visual Studio**.
 
@@ -85,29 +85,29 @@ Tento článek používá výchozí rozšíření VSPackage, ale postup je platn
     
    * **Logo** , který se používá pro rozšíření. Toto logo se vyplní automaticky z *source.extension.vsixmanifest* souboru, pokud je k dispozici.
     
-    * **Krátký popis** toho, co dělá rozšíření. Tento popis se vyplní automaticky z *source.extension.vsixmanifest* souboru.
+     * **Krátký popis** toho, co dělá rozšíření. Tento popis se vyplní automaticky z *source.extension.vsixmanifest* souboru.
     
-    * **Přehled** je vhodné místo zahrnout snímky obrazovky a podrobné informace o co dělá rozšíření.
+     * **Přehled** je vhodné místo zahrnout snímky obrazovky a podrobné informace o co dělá rozšíření.
     
-    * **Podporované verze sady Visual Studio** umožní vybrat, které verze sady Visual Studio rozšíření bude fungovat na. Rozšíření je nainstalované jenom do těchto verzí.
+     * **Podporované verze sady Visual Studio** umožní vybrat, které verze sady Visual Studio rozšíření bude fungovat na. Rozšíření je nainstalované jenom do těchto verzí.
     
-    * ** Podporované edice umožňuje zvolit, jaké edice sady Visual Studio bude vaše rozšíření fungovat v sadě Visual Studio. Rozšíření je nainstalované jenom na tyto edice.
+     * ** Podporované edice umožňuje zvolit, jaké edice sady Visual Studio bude vaše rozšíření fungovat v sadě Visual Studio. Rozšíření je nainstalované jenom na tyto edice.
     
-    * **Typ**. Jsou nejběžnějším typem rozšíření **nástroje**.
+     * **Typ**. Jsou nejběžnějším typem rozšíření **nástroje**.
     
-    * **Kategorie**. Můžete si vyberte až tři, které jsou nejvhodnější pro vaše rozšíření.
+     * **Kategorie**. Můžete si vyberte až tři, které jsou nejvhodnější pro vaše rozšíření.
     
-    * **Značky** jsou klíčová slova, které pomáhají uživatelům najít rozšíření. Značky pomáhají zvýšit relevanci vyhledávání rozšíření na webu Marketplace.
+     * **Značky** jsou klíčová slova, které pomáhají uživatelům najít rozšíření. Značky pomáhají zvýšit relevanci vyhledávání rozšíření na webu Marketplace.
     
-    * **Cenové kategorie** jsou náklady na vaše rozšíření.
+     * **Cenové kategorie** jsou náklady na vaše rozšíření.
     
-    * **Úložiště zdrojového kódu** vám umožní sdílet odkaz na váš zdrojový kód s komunitou.
+     * **Úložiště zdrojového kódu** vám umožní sdílet odkaz na váš zdrojový kód s komunitou.
     
-    * **Povolit Q & A pro své rozšíření** umožňuje uživatelům ponechte dotazy na stránce rozšíření položky.
+     * **Povolit Q & A pro své rozšíření** umožňuje uživatelům ponechte dotazy na stránce rozšíření položky.
 
 9. Klikněte na tlačítko **uložit a nahrajte**. Tato možnost má zpět do vašeho vydavatele spravovat stránky. Rozšíření ještě nebyla publikována. Publikování rozšíření, klikněte pravým tlačítkem na rozšíření a vyberte **zveřejnit**. Můžete zobrazit, jak se vaše rozšíření bude vypadat na webu Marketplace výběrem **rozšíření zobrazení**. Získání čísel, klikněte na **sestavy**. Pokud chcete provést změny rozšíření, klikněte na **upravit**.
 
-  ![Rozšíření položky nabídky](media/extension-entry-menu.png)
+   ![Rozšíření položky nabídky](media/extension-entry-menu.png)
 
 10. Po kliknutí na tlačítko **zveřejnit**, vaše rozšíření je teď veřejné. Hledat na Visual Studio Marketplace pro rozšíření.
 
@@ -119,17 +119,17 @@ Web Marketplace podporuje uděluje uživatelům oprávnění pro přístup a spr
 
 2. Vyberte **členy** a klikněte na **přidat**.
 
-  ![Přidat další uživatele](media/add-users.png)
+   ![Přidat další uživatele](media/add-users.png)
 
 3. Potom můžete zadat e-mailovou adresu uživatele, který chcete přidat a udělit správnou úroveň přístupu v rámci **vybrat roli**.  Můžete použít jednu z následujících možností:
 
-  * **Tvůrce**: uživatel mohl publikování rozšíření, ale nelze zobrazit nebo spravovat rozšíření publikovaných jinými uživateli.
+   * **Tvůrce**: uživatel mohl publikování rozšíření, ale nelze zobrazit nebo spravovat rozšíření publikovaných jinými uživateli.
   
-  * **Čtečka**: uživatel mohl zobrazit rozšíření, ale nelze publikovat nebo spravovat rozšíření.
+   * **Čtečka**: uživatel mohl zobrazit rozšíření, ale nelze publikovat nebo spravovat rozšíření.
   
-  * **Přispěvatel**: uživatel mohl publikovat a spravovat rozšíření, ale nelze upravit nastavení vydavatele nebo spravovat přístup.
+   * **Přispěvatel**: uživatel mohl publikovat a spravovat rozšíření, ale nelze upravit nastavení vydavatele nebo spravovat přístup.
   
-  * **Vlastník**: uživatel můžete publikovat a spravovat rozšíření, upravit nastavení vydavatele a spravovat přístup.
+   * **Vlastník**: uživatel můžete publikovat a spravovat rozšíření, upravit nastavení vydavatele a spravovat přístup.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Nainstalovat rozšíření z Visual Studio Marketplace
 

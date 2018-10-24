@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8157e10ccc79df3caea8257d46753f2993501e5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198078"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812281"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Hledání nevrácené paměti pomocí knihovny CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,21 +112,21 @@ Object dump complete.
   
  Ať už definujete `_CRTDBG_MAP_ALLOC` nebo Ne, nevrácená paměť sestavy se zobrazí následující informace:  
   
--   Číslo přidělení paměti, což je `18` v tomto příkladu  
+- Číslo přidělení paměti, což je `18` v tomto příkladu  
   
--   [Typ bloku](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), což je `normal` v tomto příkladu.  
+- [Typ bloku](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), což je `normal` v tomto příkladu.  
   
--   Umístění paměti v šestnáctkové soustavě, což je `0x00780E80` v tomto příkladu.  
+- Umístění paměti v šestnáctkové soustavě, což je `0x00780E80` v tomto příkladu.  
   
--   Velikost bloku, `64 bytes` v tomto příkladu.  
+- Velikost bloku, `64 bytes` v tomto příkladu.  
   
--   Prvních 16 bajtů dat v bloku, v šestnáctkovém formátu.  
+- Prvních 16 bajtů dat v bloku, v šestnáctkovém formátu.  
   
- Sestava nevracení paměti určuje blok paměti jako normální, klient nebo CRT. A *Normální blok* je běžné přidělené programem paměti. A *klientský blok* je speciální typ bloku paměti používaný programy MFC pro objekty, které vyžadují destruktor. MFC `new` operátor vytvoří normální blok nebo blok klienta, v závislosti na vytvářený objekt. A *blok CRT* je přidělen knihovnou CRT pro její vlastní použití. Knihovna CRT zpracovává navracení zpět pro tyto bloky. Je tedy nepravděpodobné, že uvidíte tyto sestavy nevracení paměti Pokud není něco výrazně špatně, například Knihovna CRT je poškozena.  
+  Sestava nevracení paměti určuje blok paměti jako normální, klient nebo CRT. A *Normální blok* je běžné přidělené programem paměti. A *klientský blok* je speciální typ bloku paměti používaný programy MFC pro objekty, které vyžadují destruktor. MFC `new` operátor vytvoří normální blok nebo blok klienta, v závislosti na vytvářený objekt. A *blok CRT* je přidělen knihovnou CRT pro její vlastní použití. Knihovna CRT zpracovává navracení zpět pro tyto bloky. Je tedy nepravděpodobné, že uvidíte tyto sestavy nevracení paměti Pokud není něco výrazně špatně, například Knihovna CRT je poškozena.  
   
- Existují dva další typy paměťových bloků, které se nikdy objeví v sestavách nevracení paměti. A *volný blok* je paměť, která byla uvolněna. To znamená, že není úniku podle definice. *Blok ignore* je paměť, která byla explicitně označena pro vyloučení ze sestavy nevracení paměti.  
+  Existují dva další typy paměťových bloků, které se nikdy objeví v sestavách nevracení paměti. A *volný blok* je paměť, která byla uvolněna. To znamená, že není úniku podle definice. *Blok ignore* je paměť, která byla explicitně označena pro vyloučení ze sestavy nevracení paměti.  
   
- Tyto techniky fungují pro paměť přidělenou pomocí standardní CRT `malloc` funkce. Pokud váš program přiděluje paměť pomocí jazyka C++ `new` operátoru, ale uvidíte pouze souboru a číslo řádku kde provádění globální `operator new` volání `_malloc_dbg` v sestavě nevracení paměti. Protože toto chování není velmi užitečné, můžete změnit tak, na řádku, který provedl přidělení pomocí makra, který vypadá takto: 
+  Tyto techniky fungují pro paměť přidělenou pomocí standardní CRT `malloc` funkce. Pokud váš program přiděluje paměť pomocí jazyka C++ `new` operátoru, ale uvidíte pouze souboru a číslo řádku kde provádění globální `operator new` volání `_malloc_dbg` v sestavě nevracení paměti. Protože toto chování není velmi užitečné, můžete změnit tak, na řádku, který provedl přidělení pomocí makra, který vypadá takto: 
  
 ```cpp  
 #ifdef _DEBUG
@@ -188,25 +188,25 @@ Znamená to, že uniklé přidělení se týkalo na řádku 20 debug_new.cpp.
   
 #### <a name="to-set-a-memory-allocation-breakpoint-using-the-watch-window"></a>Chcete-li nastavit zarážku přidělení paměti používání okna kukátka  
   
-1.  Nastavit zarážku v okolí spuštění aplikace a spusťte aplikaci.  
+1. Nastavit zarážku v okolí spuštění aplikace a spusťte aplikaci.  
   
-2.  Když se aplikace zastaví u zarážky, **Watch** okna.  
+2. Když se aplikace zastaví u zarážky, **Watch** okna.  
   
-3.  V **Watch** okno, zadejte `_crtBreakAlloc` v **název** sloupce.  
+3. V **Watch** okno, zadejte `_crtBreakAlloc` v **název** sloupce.  
   
-     Pokud používáte vícevláknovou DLL verzi knihovny CRT (možnost/MD), zahrňte operátor kontextu: `{,,ucrtbased.dll}_crtBreakAlloc`  
+    Pokud používáte vícevláknovou DLL verzi knihovny CRT (možnost/MD), zahrňte operátor kontextu: `{,,ucrtbased.dll}_crtBreakAlloc`  
   
-4.  Stisknutím klávesy **vrátit**.  
+4. Stisknutím klávesy **vrátit**.  
   
-     Ladicí program vyhodnotí volání a výsledek umístí do **hodnotu** sloupce. Pokud jste nenastavili žádné zarážky na přidělení paměti, bude tato hodnota – 1.  
+    Ladicí program vyhodnotí volání a výsledek umístí do **hodnotu** sloupce. Pokud jste nenastavili žádné zarážky na přidělení paměti, bude tato hodnota – 1.  
   
-5.  V **hodnotu** sloupce, nahraďte hodnotu číslem přidělení pro přidělení paměti ukazuje, kde chcete provést přerušení.  
+5. V **hodnotu** sloupce, nahraďte hodnotu číslem přidělení pro přidělení paměti ukazuje, kde chcete provést přerušení.  
   
- Po nastavení zarážky na číslo přidělení paměti, můžete pokračovat k ladění. Buďte opatrní při spouštění programu za stejných podmínek jako při předchozím spuštění, aby se nezměnilo pořadí přidělení paměti. Když se program zasekne při přidělení zadané paměti, můžete použít **zásobník volání** okno a dalších oknech ladicího programu k určení podmínek, za kterých byla přidělena paměť. Potom můžete pokračovat v provádění a sledovat, co se stane objektu a zjistit, proč není dealokován správně.  
+   Po nastavení zarážky na číslo přidělení paměti, můžete pokračovat k ladění. Buďte opatrní při spouštění programu za stejných podmínek jako při předchozím spuštění, aby se nezměnilo pořadí přidělení paměti. Když se program zasekne při přidělení zadané paměti, můžete použít **zásobník volání** okno a dalších oknech ladicího programu k určení podmínek, za kterých byla přidělena paměť. Potom můžete pokračovat v provádění a sledovat, co se stane objektu a zjistit, proč není dealokován správně.  
   
- Nastavením zarážky data objektu může být také užitečné. Další informace najdete v tématu [pomocí zarážek](../debugger/using-breakpoints.md).  
+   Nastavením zarážky data objektu může být také užitečné. Další informace najdete v tématu [pomocí zarážek](../debugger/using-breakpoints.md).  
   
- Můžete také nastavit zarážky přidělení paměti v kódu. Toto lze provést dvěma způsoby:  
+   Můžete také nastavit zarážky přidělení paměti v kódu. Toto lze provést dvěma způsoby:  
   
 ```  
 _crtBreakAlloc = 18;  

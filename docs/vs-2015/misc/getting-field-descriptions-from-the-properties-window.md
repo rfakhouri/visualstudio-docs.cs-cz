@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: f152572198116a200f91672691b6a4787538063e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fc5d2c8553ccdb6c554f9a8364e9fd21eaa324d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814789"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>Získávání popisy pole z okna Vlastnosti
 V dolní části **vlastnosti** okně oblasti popisu zobrazí informace související s vybranou vlastnost pole. Tato funkce je ve výchozím nastavení zapnutá. Pokud chcete skrýt pole Popis, klikněte pravým tlačítkem myši **vlastnosti** okno a klikněte na tlačítko **popis**. Tím také odstraněn znak zaškrtnutí vedle položky **popis** title v nabídce okno. Pole lze zobrazit znovu pomocí stejných kroků, chcete-li přepnout **popis** zpět na.  
@@ -28,18 +28,18 @@ V dolní části **vlastnosti** okně oblasti popisu zobrazí informace souvisej
   
 ### <a name="to-specify-localized-help-strings"></a>Chcete-li zadat řetězce lokalizované nápovědy  
   
-1.  Přidat `helpstringdll` atribut příkaz library v knihovně typů (`typelib`).  
+1. Přidat `helpstringdll` atribut příkaz library v knihovně typů (`typelib`).  
   
-    > [!NOTE]
-    >  Tento krok je volitelný, pokud knihovna typů nachází v objektový soubor knihovny (.olb).  
+   > [!NOTE]
+   >  Tento krok je volitelný, pokud knihovna typů nachází v objektový soubor knihovny (.olb).  
   
-2.  Zadejte `helpstringcontext` atributy pro řetězce. Můžete také určit `helpstring` atributy.  
+2. Zadejte `helpstringcontext` atributy pro řetězce. Můžete také určit `helpstring` atributy.  
   
-     Tyto atributy se liší od `helpfile` a `helpcontext` atributy, které jsou obsaženy ve skutečné chm témata nápovědy souboru.  
+    Tyto atributy se liší od `helpfile` a `helpcontext` atributy, které jsou obsaženy ve skutečné chm témata nápovědy souboru.  
   
- Načíst informace o popisu, který se má zobrazit jako název zvýrazněný vlastnost **vlastnosti** volání okno <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> pro vlastnost, která je vybrána, zadáte požadované `lcid` atribut pro výstupní řetězec. Interně <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> Vyhledá zadaný v souboru .dll `helpstringdll` atribut a volání `DLLGetDocumentation` na tento soubor .dll pomocí zadaného kontextu a `lcid` atribut.  
+   Načíst informace o popisu, který se má zobrazit jako název zvýrazněný vlastnost **vlastnosti** volání okno <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> pro vlastnost, která je vybrána, zadáte požadované `lcid` atribut pro výstupní řetězec. Interně <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> Vyhledá zadaný v souboru .dll `helpstringdll` atribut a volání `DLLGetDocumentation` na tento soubor .dll pomocí zadaného kontextu a `lcid` atribut.  
   
- Signatura a implementace `DLLGetDocumentation` jsou:  
+   Signatura a implementace `DLLGetDocumentation` jsou:  
   
 ```  
 STDAPI DLLGetDocumentation  

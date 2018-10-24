@@ -29,12 +29,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: e5cfc8ad2be56965f691b2c114d3908172f0edfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ea1f91a50180dce6edec17afead5649ecd3e1f50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197974"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816063"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Zabezpečení přístupu ke kódu pro aplikace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +46,14 @@ Aplikace ClickOnce jsou založeny na rozhraní .NET Framework a jsou v souladu s
 ## <a name="default-clickonce-code-access-security"></a>Zabezpečení přístupu kódu ClickOnce výchozí  
  Ve výchozím nastavení aplikace ClickOnce obdrží oprávnění plné důvěryhodnosti při instalaci nebo spuštění na klientském počítači.  
   
--   Aplikace, který má oprávnění plné důvěryhodnosti má neomezený přístup k prostředkům, jako je například systém souborů a registru. To umožňuje potenciálně aplikaci (a koncový uživatel systému) zneužití škodlivým kódem.  
+- Aplikace, který má oprávnění plné důvěryhodnosti má neomezený přístup k prostředkům, jako je například systém souborů a registru. To umožňuje potenciálně aplikaci (a koncový uživatel systému) zneužití škodlivým kódem.  
   
--   Pokud aplikace vyžaduje oprávnění plné důvěryhodnosti, koncový uživatel může zobrazit výzva k udělení oprávnění k aplikaci. To znamená, že aplikace neposkytuje skutečně ClickOnce prostředí a na řádku může být potenciálně matoucí pro méně zkušených uživatelů.  
+- Pokud aplikace vyžaduje oprávnění plné důvěryhodnosti, koncový uživatel může zobrazit výzva k udělení oprávnění k aplikaci. To znamená, že aplikace neposkytuje skutečně ClickOnce prostředí a na řádku může být potenciálně matoucí pro méně zkušených uživatelů.  
   
-    > [!NOTE]
-    >  Při instalaci aplikace z vyměnitelných médií, jako je například disk CD-ROM, uživatel není vyzván. Kromě toho správce sítě můžete nakonfigurovat zásady sítě tak, aby se uživatelům nebude výzva při instalaci aplikace z důvěryhodného zdroje. Další informace najdete v tématu [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+  > [!NOTE]
+  >  Při instalaci aplikace z vyměnitelných médií, jako je například disk CD-ROM, uživatel není vyzván. Kromě toho správce sítě můžete nakonfigurovat zásady sítě tak, aby se uživatelům nebude výzva při instalaci aplikace z důvěryhodného zdroje. Další informace najdete v tématu [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
- Pokud chcete omezit oprávnění pro aplikaci ClickOnce, můžete upravit oprávnění zabezpečení přístupu kódu pro vaši aplikaci na vyžádání, která nejlíp odpovídá oprávnění, která vaše aplikace vyžaduje zóny. Ve většině případů vyberete zónu, ze kterého je aplikace nasazena. Například pokud vaše aplikace je podniková aplikace, můžete použít **místní Intranet** zóny. Pokud je vaše aplikace internetovou aplikaci, můžete použít **Internet** zóny.  
+  Pokud chcete omezit oprávnění pro aplikaci ClickOnce, můžete upravit oprávnění zabezpečení přístupu kódu pro vaši aplikaci na vyžádání, která nejlíp odpovídá oprávnění, která vaše aplikace vyžaduje zóny. Ve většině případů vyberete zónu, ze kterého je aplikace nasazena. Například pokud vaše aplikace je podniková aplikace, můžete použít **místní Intranet** zóny. Pokud je vaše aplikace internetovou aplikaci, můžete použít **Internet** zóny.  
   
 ## <a name="configuring-security-permissions"></a>Konfigurace oprávnění zabezpečení  
  Vždy byste měli konfigurovat vaše aplikace ClickOnce k vyžádání příslušnou zónu omezit oprávnění zabezpečení přístupu kódu. Můžete nakonfigurovat oprávnění zabezpečení na **zabezpečení** stránku **Návrháře projektu**.  
@@ -80,23 +80,23 @@ Aplikace ClickOnce jsou založeny na rozhraní .NET Framework a jsou v souladu s
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Oprávnění zabezpečení pro aplikace hostované prohlížečem  
  Visual Studio poskytuje následující typy projektů pro aplikace Windows Presentation Foundation (WPF):  
   
--   Aplikace WPF Windows  
+- Aplikace WPF Windows  
   
--   Aplikace WPF webového prohlížeče  
+- Aplikace WPF webového prohlížeče  
   
--   Knihovna vlastních ovládacích prvků WPF  
+- Knihovna vlastních ovládacích prvků WPF  
   
--   Knihovna služby WPF  
+- Knihovna služby WPF  
   
- Tyto typy projektů pouze aplikace WPF webového prohlížeče jsou hostované ve webovém prohlížeči a proto vyžaduje speciální nasazení a nastavení zabezpečení. Výchozí nastavení zabezpečení pro tyto aplikace jsou následující:  
+  Tyto typy projektů pouze aplikace WPF webového prohlížeče jsou hostované ve webovém prohlížeči a proto vyžaduje speciální nasazení a nastavení zabezpečení. Výchozí nastavení zabezpečení pro tyto aplikace jsou následující:  
   
--   **Povolení nastavení zabezpečení ClickOnce**  
+- **Povolení nastavení zabezpečení ClickOnce**  
   
--   **Toto je aplikace s částečnou důvěryhodností**  
+- **Toto je aplikace s částečnou důvěryhodností**  
   
--   **Zóna Internetu** (s výchozí sady oprávnění pro aplikace WPF webového prohlížeče vybrané)  
+- **Zóna Internetu** (s výchozí sady oprávnění pro aplikace WPF webového prohlížeče vybrané)  
   
- V **Upřesnit nastavení zabezpečení** dialogové okno, **Ladit tuto aplikaci s vybranou sadou oprávnění** zaškrtávací políčko je vybraná a zakázaná. Je to proto nejde ji vypnout ladění v zóně pro aplikace hostované prohlížečem.  
+  V **Upřesnit nastavení zabezpečení** dialogové okno, **Ladit tuto aplikaci s vybranou sadou oprávnění** zaškrtávací políčko je vybraná a zakázaná. Je to proto nejde ji vypnout ladění v zóně pro aplikace hostované prohlížečem.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečování aplikací ClickOnce](../deployment/securing-clickonce-applications.md)   

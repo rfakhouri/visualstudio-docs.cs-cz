@@ -19,29 +19,29 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 980f676a0197e84523d4fa6a080e72abc02ccb4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c60ca5c0e073aa3643d6f77fa1350aaa4cdce837
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812267"
 ---
 # <a name="function-details-view"></a>Zobrazení podrobností funkce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Zobrazení podrobností funkce** okně zobrazí následující informace:  
   
--   **Distribuce nákladů** vztahy mezi funkce, která jste vybrali a volání funkcí, které provedeny vybrané funkce a mezi vybranou funkci a funkce, které byly volány představuje pruhový graf ho.  
+- **Distribuce nákladů** vztahy mezi funkce, která jste vybrali a volání funkcí, které provedeny vybrané funkce a mezi vybranou funkci a funkce, které byly volány představuje pruhový graf ho.  
   
--   **Podrobnosti o výkonu funkci** tabulky, který zobrazuje souhrnná data profilování pro funkci, která zadáte.  
+- **Podrobnosti o výkonu funkci** tabulky, který zobrazuje souhrnná data profilování pro funkci, která zadáte.  
   
--   **Zobrazení kódu funkce** okna, která zobrazuje kód funkce, pokud kód je k dispozici.  
+- **Zobrazení kódu funkce** okna, která zobrazuje kód funkce, pokud kód je k dispozici.  
   
- **Zobrazení kódu funkce** okno je na samostatném stavového řádku. Ve výchozím nastavení, jsou dvě podokna Rozdělit horizontálně a **zobrazení kódu funkce** okna je umístěn v dolní části rámce.  
+  **Zobrazení kódu funkce** okno je na samostatném stavového řádku. Ve výchozím nastavení, jsou dvě podokna Rozdělit horizontálně a **zobrazení kódu funkce** okna je umístěn v dolní části rámce.  
   
--   Dvě podokna Rozdělit svisle, klikněte na tlačítko **rozdělit svisle obrazovky** na panelu nástrojů.  
+- Dvě podokna Rozdělit svisle, klikněte na tlačítko **rozdělit svisle obrazovky** na panelu nástrojů.  
   
--   Chcete-li změnit relativní velikosti podoken, klikněte na tlačítko šedé ohraničení mezi snímky a přetažením ohraničení do jiného umístění.  
+- Chcete-li změnit relativní velikosti podoken, klikněte na tlačítko šedé ohraničení mezi snímky a přetažením ohraničení do jiného umístění.  
   
 ## <a name="cost-distribution-bar-chart"></a>Náklady na distribuci pruhový graf  
   
@@ -55,25 +55,25 @@ ms.locfileid: "49181896"
   
  Můžete kliknout na název volající funkce pro zvolení vybrané funkce v zobrazení.  
   
--   Pokud existuje příliš mnoho volání funkce do seznamu, funkce s nejmenší příspěvky jsou shromážděny v **jiných** bloku. Klikněte na tlačítko **jiných** zobrazíte všechny volající a volané funkce z vybrané funkce v **zobrazení volající/volaný** okna. Další informace najdete v tématu [zobrazení volající/volaný](../profiling/caller-callee-view.md).  
+- Pokud existuje příliš mnoho volání funkce do seznamu, funkce s nejmenší příspěvky jsou shromážděny v **jiných** bloku. Klikněte na tlačítko **jiných** zobrazíte všechny volající a volané funkce z vybrané funkce v **zobrazení volající/volaný** okna. Další informace najdete v tématu [zobrazení volající/volaný](../profiling/caller-callee-view.md).  
   
--   Pokud neexistují žádné volání funkce, nebo pokud je funkce funkci vstupního vlákna nebo procesu, **horní části zásobníku** bloku se zobrazí.  
+- Pokud neexistují žádné volání funkce, nebo pokud je funkce funkci vstupního vlákna nebo procesu, **horní části zásobníku** bloku se zobrazí.  
   
- **Vybrané funkce**  
+  **Vybrané funkce**  
   
- Na panelu vybranou funkci zobrazí příspěvky volané funkce a kódu ve funkci vybrané metriky celkového výkonu z vybrané funkce. Velikost bloku, který obsahuje volané funkce nebo tělo funkce je poměr svého příspěvku k celkové hodnotě metrika výkonu pro vybrané funkce.  
+  Na panelu vybranou funkci zobrazí příspěvky volané funkce a kódu ve funkci vybrané metriky celkového výkonu z vybrané funkce. Velikost bloku, který obsahuje volané funkce nebo tělo funkce je poměr svého příspěvku k celkové hodnotě metrika výkonu pro vybrané funkce.  
   
- Můžete kliknout na název volané funkce pro zvolení vybrané funkce v zobrazení.  
+  Můžete kliknout na název volané funkce pro zvolení vybrané funkce v zobrazení.  
   
--   **Celkový** hodnota je metrika výkonu pro vybrané funkce.  
+- **Celkový** hodnota je metrika výkonu pro vybrané funkce.  
   
--   **Tělo funkce** bloku představuje velikost celkové hodnoty metriky výkonu, ke které došlo v přímé provádění kódu v těle funkce.  
+- **Tělo funkce** bloku představuje velikost celkové hodnoty metriky výkonu, ke které došlo v přímé provádění kódu v těle funkce.  
   
--   Funkce, které jsou volány vybranou funkcí jsou uvedeny v blocích. Velikost bloku vybrané funkce představují množství celkový výkon metriky pro vybrané funkce, ke které došlo ve volané funkci.  
+- Funkce, které jsou volány vybranou funkcí jsou uvedeny v blocích. Velikost bloku vybrané funkce představují množství celkový výkon metriky pro vybrané funkce, ke které došlo ve volané funkci.  
   
--   Pokud existuje příliš mnoho volání funkce do seznamu, funkce s nejmenší příspěvky jsou shromážděny v **jiných** bloku. Klikněte na tlačítko **jiných** zobrazíte všechny volající a volané funkce z vybrané funkce v **zobrazení volající/volaný** okna. Další informace najdete v tématu [zobrazení volající/volaný](../profiling/caller-callee-view.md).  
+- Pokud existuje příliš mnoho volání funkce do seznamu, funkce s nejmenší příspěvky jsou shromážděny v **jiných** bloku. Klikněte na tlačítko **jiných** zobrazíte všechny volající a volané funkce z vybrané funkce v **zobrazení volající/volaný** okna. Další informace najdete v tématu [zobrazení volající/volaný](../profiling/caller-callee-view.md).  
   
--   Pokud neexistují žádné volané funkce **dolní části zásobníku** bloku se zobrazí.  
+- Pokud neexistují žádné volané funkce **dolní části zásobníku** bloku se zobrazí.  
   
 ## <a name="function-performance-details"></a>Podrobnosti výkonu – funkce  
  Detaily výkonu funkce tabulce souhrnná data pro metriku výkonu vybrané funkce. Zobrazí se hodnota a procenta. Zadejte zadejte v tabulku dat profilování, které se zobrazí v grafu a podrobnosti **metrika výkonu** seznamu.  

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813851"
 ---
 # <a name="configure-load-test-run-settings"></a>Konfigurace parametrů spuštění zátěžového testu
 
@@ -30,7 +30,7 @@ Počáteční parametr spuštění se vytvoří při vytvoření zátěžového 
 ## <a name="tasks"></a>Úlohy
 
 |Úlohy|Související témata|
-|-----------|-----------------------|
+|-|-|
 |**Přidání dalších parametrů spuštění do zátěžového testu:** kromě nastavení spuštění, který je vytvořen při spuštění **nového Průvodce zátěžovým testem**, přidáním dalších parametrů spuštění do zátěžového testu tak, aby můžete spustit test v rámci různých podmínky.|-   [Postupy: přidání dalších parametrů běhu k zátěžovému testu](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Určení aktivního parametru spuštění pro zátěžový test:** vyberete parametr spuštění, který chcete používat se zátěžovým testem pomocí editoru zátěžového testu. Aktivní parametr spuštění lze rozpoznat pomocí přípony „[Active]“.|-   [Postupy: výběr aktivního parametru spuštění pro zátěžový test](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
 |**Úprava vlastností parametrů spuštění:** spuštění můžete upravit nastavení vlastností pro takové věci jako možnosti protokolování (Další informace naleznete níže), určení délky testu, dobu zahřívání, maximální počet chyb podrobnosti o ohlášených, vzorkovací frekvenci připojení Model (pouze testy webového výkonu), typ úložiště výsledků, úroveň validace a SQL trasování. Parametry spuštění by měly odrážet cíle zátěžového testu.|-   [Vlastnosti nastavení běhu zátěžového testu](../test/load-test-run-settings-properties.md)<br />-   [Změna vlastností nastavení spuštění](../test/load-test-run-settings-properties.md#change-run-setting-properties)|

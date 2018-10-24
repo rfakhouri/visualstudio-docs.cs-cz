@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af41e9e66c22e514961dc888a42153c078667cf
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 28b42e5178808a86faff33dbb887500b8979123b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811918"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Sada Modeling SDK pro sadu Visual Studio – jazyky domény
 Pomocí sady SDK modelování pro sadu Visual Studio můžete vytvořit výkonné založené na modelu vývojářské nástroje, které můžete integrovat do sady Visual Studio. Stejným způsobem můžete vytvořit jednu nebo několik definic modelu a integrovat je do sady nástrojů.
@@ -26,17 +26,17 @@ Pomocí sady SDK modelování pro sadu Visual Studio můžete vytvořit výkonn�
 
  MSDK umožňuje rychlý vývoj modelu ve formě jazyka specifického pro doménu (DSL). Začínáte se speciálním editorem, kterým definujete schéma nebo abstraktní syntaxi a grafickou notaci. Z této definice vygeneruje VMSDK následující položky:
 
--   Model implementace s rozhraním API silného typu, který je spuštěn v obchodě založeném na transakcích.
+- Model implementace s rozhraním API silného typu, který je spuštěn v obchodě založeném na transakcích.
 
--   Průzkumník založený na stromové architektuře.
+- Průzkumník založený na stromové architektuře.
 
--   Grafický editor, ve kterém uživatelé mohou zobrazit model nebo jeho části, které definujete.
+- Grafický editor, ve kterém uživatelé mohou zobrazit model nebo jeho části, které definujete.
 
--   Metody serializace, které uloží modely ve formátu XML pro čtení.
+- Metody serializace, které uloží modely ve formátu XML pro čtení.
 
--   Zařízení pro generování programového kódu a jiných artefaktů pomocí šablonování textu.
+- Zařízení pro generování programového kódu a jiných artefaktů pomocí šablonování textu.
 
- Můžete přizpůsobit a rozšířit všechny tyto funkce. Vaše rozšíření jsou integrována tak, že můžete i nadále aktualizovat definici DSL a znovu generovat funkce bez ztráty rozšíření.
+  Můžete přizpůsobit a rozšířit všechny tyto funkce. Vaše rozšíření jsou integrována tak, že můžete i nadále aktualizovat definici DSL a znovu generovat funkce bez ztráty rozšíření.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

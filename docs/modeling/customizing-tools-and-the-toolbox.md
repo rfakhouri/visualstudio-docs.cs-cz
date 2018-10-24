@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c7c526c9e5f850ea71a1e31ea0364fcb19a2bcb5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: c840ed268e8e5aaa70dcc83eb9a0eeff3a2eb33f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815569"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Přizpůsobení nástrojů a panelu nástrojů
 
@@ -139,7 +139,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
         {
             return base.CreateElementToolPrototype(store, domainClassId);
 }  }    }
-
 ```
 
 ## <a name="connections"></a> Přizpůsobení nástrojů pro připojení
@@ -167,15 +166,15 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="custom-code-for-connection-builders"></a>Vlastní kód pro tvůrci připojení
  Existují čtyři políček v uživatelském rozhraní, které definují různé druhy přizpůsobení tvůrci připojení:
 
--   **vlastní přijetí** zaškrtávací políčko na direktivu zdrojová nebo cílová role
+- **vlastní přijetí** zaškrtávací políčko na direktivu zdrojová nebo cílová role
 
--   **připojit vlastní** zaškrtávací políčko na direktivu zdrojová nebo cílová role
+- **připojit vlastní** zaškrtávací políčko na direktivu zdrojová nebo cílová role
 
--   **používá vlastní připojit** zaškrtávací políčko pro direktivu connect
+- **používá vlastní připojit** zaškrtávací políčko pro direktivu connect
 
--   **je vlastní** vlastnosti Tvůrce připojení
+- **je vlastní** vlastnosti Tvůrce připojení
 
- Je nutné zadat nějaký kód programu k provedení těchto úprav. Chcete-li zjistit, jaký kód je nutné zadat, jeden z těchto polí a transformovat všechny šablony potom sestavte řešení. Zpráva o chybě dojde. Klikněte dvakrát na zprávy o chybě zobrazíte komentář, který vysvětluje, jaký kód že je nutné přidat.
+  Je nutné zadat nějaký kód programu k provedení těchto úprav. Chcete-li zjistit, jaký kód je nutné zadat, jeden z těchto polí a transformovat všechny šablony potom sestavte řešení. Zpráva o chybě dojde. Klikněte dvakrát na zprávy o chybě zobrazíte komentář, který vysvětluje, jaký kód že je nutné přidat.
 
 > [!NOTE]
 >  Chcete-li přidat vlastní kód, vytvořte definici částečné třídy v souboru kódu odděleně od kódu souborů ve složkách GeneratedCode. Abyste se vyhnuli ztrátě práce, byste neměli upravovat soubory generovaného kódu. Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).

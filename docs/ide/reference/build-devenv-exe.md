@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 777347ba36cf3443a509d1d6c8c44c23a86901e0
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: cdd510e523aaabc468c1f01626593e51d0ad1558
+ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764966"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410959"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
-Sestavení řešení pomocí konfiguračního souboru zadaného řešení.
+Sestavení řešení je používán konfigurační soubor zadaného řešení.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,26 +37,26 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 
 |||
 |-|-|
-|*Název řešení SolutionName*|Požadováno. Úplná cesta a název souboru, řešení.|
-|*SolnConfigName*|Požadováno. Název konfigurace řešení, který se použije k vytvoření řešení s názvem v *název řešení SolutionName*. Pokud jsou k dispozici více platforem řešení, musíte zadat také platformu, například **"ladění\|Win32"**.|
-|/ project *ProjName*|Volitelné. Cesta a název souboru projektu v rámci řešení. Můžete zadat relativní cestu z *název řešení SolutionName* složku pro soubor projektu nebo projektu zobrazovaný název, nebo úplnou cestu a název souboru projektu.|
-|/ projectconfig – *ProjConfigName*|Volitelné. Název projektu vytváření konfigurace má být použit při sestavení s názvem projektu. Pokud jsou k dispozici více platforem projekt, musíte zadat také platformu, například **"ladění\|Win32"**.|
+|*Název řešení*|Požadováno. Úplná cesta a název souboru řešení.|
+|*SolnConfigName*|Požadováno. Název konfigurace řešení, která se použije k vytvoření řešení s názvem v *SolutionName*. Pokud jsou k dispozici více platformy řešení, musíte zadat také platformu, například **"ladění\|Win32"**.|
+|/ project *název_projektu*|Volitelné. Cesta a název souboru projektu v rámci řešení. Můžete zadat relativní cestu z *SolutionName* složku do souboru projektu nebo zobrazované jméno projektu, nebo úplnou cestu a název souboru projektu.|
+|/ projectconfig *ProjConfigName*|Volitelné. Název projektu sestavení konfigurace má být použit při sestavení s názvem projektu. Pokud jsou k dispozici více platforem v projektu, musíte zadat také platformu, například **"ladění\|Win32"**.|
 
 ## <a name="remarks"></a>Poznámky
 
-- **/Build** přepínač provádí stejnou funkci jako **sestavit řešení** příkazu nabídky v rámci integrované vývojové prostředí (IDE).
+- **/Build** přepínač provádí stejnou funkci jako **sestavit řešení** příkazu nabídky v rámci integrovaného vývojového prostředí (IDE).
 
-- Uzavřete řetězců, které obsahují mezery v uvozovkách.
+- Uzavření řetězců, které obsahují mezery v dvojitých uvozovkách.
 
-- Souhrnné informace o sestavení, včetně chyb, lze zobrazit v příkazovém okně nebo v jakékoli souboru protokolu zadaný **/out** přepínače.
+- Souhrnné informace o sestavení, včetně chyb, lze zobrazit, v příkazovém okně nebo do jakéhokoli souboru protokolu zadaný **/out** přepnout.
 
-- **/Build** přepínač pouze sestavení projektů, které se změnily od poslední sestavení. Chcete-li vytvořit všechny projekty v řešení, použijte [/rebuild](../../ide/reference/rebuild-devenv-exe.md) místo.
+- **/Build** přepínač sestavuje pouze projekty, které se změnily od posledního sestavení. Chcete-li sestavit všechny projekty v řešení, použijte [/rebuild](../../ide/reference/rebuild-devenv-exe.md) místo.
 
-- Pokud se zobrazí chybová zpráva, která uvádí, že **konfigurací neplatný projektu**, ujistěte se, že jste určili platforma řešení nebo platformy projektu, například **"ladění\|Win32"**.
+- Pokud se zobrazí chybová zpráva s upozorněním **neplatná konfigurace projektu**, ujistěte se, že jste zadali platforma řešení nebo projektu platformy, například **"ladění\|Win32"**.
 
 ## <a name="example"></a>Příklad
 
-Následující příkaz vytvoří projekt "CSharpConsoleApp" pomocí konfigurace sestavení projektu "Debug" v "Ladění" konfigurace řešení "MySolution".
+Následující příkaz sestaví projekt "CSharpConsoleApp" pomocí konfigurace sestavení projektu "Ladění" v rámci konfigurace "Debug" řešení "MySolution".
 
 ```cmd
 devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
@@ -65,7 +65,7 @@ devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /proje
 ## <a name="see-also"></a>Viz také:
 
 - [Sestavení a vyčištění projektů a řešení](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Wwitches příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)
-- [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)
+- [/ Sestavení (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
 - [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

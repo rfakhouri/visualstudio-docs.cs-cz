@@ -16,12 +16,12 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db82d0ccfbd4a82686e2b8069a26d3cdadffb73b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 87d724f7df641169fde7445f6433687f67ccb8e7
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232060"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459800"
 ---
 # <a name="visual-studio-sdk-reference"></a>Referenční dokumentace sady Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -234,7 +234,7 @@ Tato část obsahuje informace o oborech názvů, související obory názvů a 
  <xref:Microsoft.VisualStudio.Threading>  
  Používá se pro dělení na vlákna sady Visual Studio.  
   
- <xref:Microsoft.VisualStudio.Connected Services?qualifyHint=False&autoUpgrade=True> Používá pro Visual Studio připojené služby.  
+ <xref:Microsoft.VisualStudio.ConnectedServices?qualifyHint=False&autoUpgrade=True> Používá pro Visual Studio připojené služby.  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) výčet  
  Určuje příznaky hostitele technologie IntelliSense.  

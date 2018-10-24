@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a84c87ecc3c5ca0ab1d2fe52e1ff56265c9365d
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816680"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Používání zarážek v ladicím programu sady Visual Studio
 Zarážky jsou jedním z nejdůležitějších technik ladění mezi nástroji pro vývojáře sady nástrojů. Můžete nastavit zarážky, bez ohledu na to chcete provést pozastavení spuštění ladicího programu. Můžete například zobrazit stav proměnných kódu se také podívat na zásobník volání na určité zarážce.  
@@ -203,15 +203,15 @@ Popisky můžete použít k řazení a filtrováni seznamu zarážek v **zaráž
 
 **Chcete-li nastavit podmínku zarážky:**
 
-1.  Klikněte pravým tlačítkem na symbol zarážky a vyberte **podmínky**. Nebo podržte ukazatel myši nad symbol zarážky, vyberte **nastavení** ikonu a pak vyberte **podmínky** v **nastavení zarážek** okna.  
+1. Klikněte pravým tlačítkem na symbol zarážky a vyberte **podmínky**. Nebo podržte ukazatel myši nad symbol zarážky, vyberte **nastavení** ikonu a pak vyberte **podmínky** v **nastavení zarážek** okna.  
 
-    Můžete také nastavit podmínky **zarážky** okna tak, že kliknete pravým tlačítkem na zarážku a vyberete **nastavení**a pak vyberete **podmínky**. 
+   Můžete také nastavit podmínky **zarážky** okna tak, že kliknete pravým tlačítkem na zarážku a vyberete **nastavení**a pak vyberete **podmínky**. 
   
-  ![Nastavení zarážek](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+   ![Nastavení zarážek](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
-1. V rozevíracím seznamu vyberte **podmíněný výraz**, **počet volání**, nebo **filtr**a odpovídajícím způsobem nastavit hodnotu. 
+2. V rozevíracím seznamu vyberte **podmíněný výraz**, **počet volání**, nebo **filtr**a odpovídajícím způsobem nastavit hodnotu. 
   
-1. Vyberte **zavřete** nebo stiskněte klávesu **Ctrl**+**Enter** zavřete **nastavení zarážek** okna. Nebo z **zarážky** okně **OK** zavřete dialogové okno. 
+3. Vyberte **zavřete** nebo stiskněte klávesu **Ctrl**+**Enter** zavřete **nastavení zarážek** okna. Nebo z **zarážky** okně **OK** zavřete dialogové okno. 
 
 Zarážek s stanovené podmínky, zobrazí se **+** symbol ve zdrojovém kódu a **zarážky** systému windows. 
 

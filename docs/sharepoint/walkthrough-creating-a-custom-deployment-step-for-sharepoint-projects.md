@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e5c5856217951d15042f07edb97a918e09ba777
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f42433b4ec79138e60b11e6380a6b709e74bacd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812840"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Návod: Vytvoření vlastního kroku nasazení pro projekty SharePoint
   Při nasazení projektu služby SharePoint, aplikace Visual Studio provede série kroků nasazení v určitém pořadí. Visual Studio obsahuje mnoho vestavěné kroky nasazení, ale můžete také vytvořit svoje vlastní.  
@@ -45,28 +45,28 @@ ms.locfileid: "42635023"
 ## <a name="prerequisites"></a>Požadavky  
  Budete potřebovat následující komponenty na vývojovém počítači k dokončení tohoto návodu:  
   
--   Podporované edice systému Windows, SharePoint a Visual Studio.
+- Podporované edice systému Windows, SharePoint a Visual Studio.
   
--   Visual Studio SDK. Tento návod používá **projekt VSIX** šablony v sadě SDK k vytvoření balíčku VSIX k nasazení rozšíření. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Visual Studio SDK. Tento návod používá **projekt VSIX** šablony v sadě SDK k vytvoření balíčku VSIX k nasazení rozšíření. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Znalost následujících konceptů je užitečná, ale není požadována k dokončení návodu:  
+  Znalost následujících konceptů je užitečná, ale není požadována k dokončení návodu:  
   
--   Použití objektového modelu serveru pro službu SharePoint. Další informace najdete v tématu [pomocí objektového modelu SharePoint Foundation na straně serveru](http://go.microsoft.com/fwlink/?LinkId=177796).  
+- Použití objektového modelu serveru pro službu SharePoint. Další informace najdete v tématu [pomocí objektového modelu SharePoint Foundation na straně serveru](http://go.microsoft.com/fwlink/?LinkId=177796).  
   
--   Řešení služby SharePoint. Další informace najdete v tématu [přehled řešení](http://go.microsoft.com/fwlink/?LinkId=169422).  
+- Řešení služby SharePoint. Další informace najdete v tématu [přehled řešení](http://go.microsoft.com/fwlink/?LinkId=169422).  
   
--   Upgrade řešení služby SharePoint. Další informace najdete v tématu [upgradování řešení](http://go.microsoft.com/fwlink/?LinkId=177802).  
+- Upgrade řešení služby SharePoint. Další informace najdete v tématu [upgradování řešení](http://go.microsoft.com/fwlink/?LinkId=177802).  
   
 ## <a name="create-the-projects"></a>Vytváření projektů
  K dokončení tohoto návodu, je nutné vytvořit tři projekty:  
   
--   Projekt VSIX k vytvoření balíčku VSIX k nasazení rozšíření.  
+- Projekt VSIX k vytvoření balíčku VSIX k nasazení rozšíření.  
   
--   Projekt knihovny tříd, který implementuje rozšíření. Tento projekt musí cílit na rozhraní .NET Framework 4.5.  
+- Projekt knihovny tříd, který implementuje rozšíření. Tento projekt musí cílit na rozhraní .NET Framework 4.5.  
   
--   Projekt knihovny tříd, který definuje vlastní příkazy služby SharePoint. Tento projekt musí cílit na rozhraní .NET Framework 3.5.  
+- Projekt knihovny tříd, který definuje vlastní příkazy služby SharePoint. Tento projekt musí cílit na rozhraní .NET Framework 3.5.  
   
- Začněte postup vytvořením projektů.  
+  Začněte postup vytvořením projektů.  
   
 #### <a name="to-create-the-vsix-project"></a>Vytvoření projektu VSIX  
   
@@ -250,28 +250,28 @@ ms.locfileid: "42635023"
   
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>Vytvoření projektu služby SharePoint s definicí seznamu a instance seznamu  
   
-1.  V experimentální instanci sady Visual Studio na panelu nabídek zvolte **souboru** > **nový** > **projektu**.  
+1. V experimentální instanci sady Visual Studio na panelu nabídek zvolte **souboru** > **nový** > **projektu**.  
   
-2.  V **nový projekt** dialogového okna rozbalte **Visual C#** uzlu nebo **jazyka Visual Basic** uzlu, rozbalte **SharePoint** uzel a klikněte na tlačítko **2010** uzlu.  
+2. V **nový projekt** dialogového okna rozbalte **Visual C#** uzlu nebo **jazyka Visual Basic** uzlu, rozbalte **SharePoint** uzel a klikněte na tlačítko **2010** uzlu.  
   
-3.  V horní části dialogového okna, ujistěte se, že **rozhraní .NET Framework 3.5** se zobrazí v seznamu verzí rozhraní .NET Framework.  
+3. V horní části dialogového okna, ujistěte se, že **rozhraní .NET Framework 3.5** se zobrazí v seznamu verzí rozhraní .NET Framework.  
   
-     Projekty pro [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] a [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] vyžadují tuto verzí rozhraní .NET Framework.  
+    Projekty pro [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] a [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] vyžadují tuto verzí rozhraní .NET Framework.  
   
-4.  V seznamu šablon projektu vyberte **projektu služby SharePoint 2010**, pojmenujte projekt **EmployeesListDefinition**a klikněte na tlačítko **OK** tlačítko.  
+4. V seznamu šablon projektu vyberte **projektu služby SharePoint 2010**, pojmenujte projekt **EmployeesListDefinition**a klikněte na tlačítko **OK** tlačítko.  
   
-5.  V **Průvodce přizpůsobením SharePoint**, zadejte adresu URL webu, který chcete použít pro ladění.  
+5. V **Průvodce přizpůsobením SharePoint**, zadejte adresu URL webu, který chcete použít pro ladění.  
   
-6.  V části **co je úroveň důvěryhodnosti pro toto řešení SharePoint**, zvolte **nasadit jako řešení farmy** přepínač.  
+6. V části **co je úroveň důvěryhodnosti pro toto řešení SharePoint**, zvolte **nasadit jako řešení farmy** přepínač.  
   
-    > [!NOTE]  
-    >  Krok nasazení upgradu nepodporuje řešení v izolovaném prostoru.  
+   > [!NOTE]  
+   >  Krok nasazení upgradu nepodporuje řešení v izolovaném prostoru.  
   
-7.  Zvolte **Dokončit** tlačítko.  
+7. Zvolte **Dokončit** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Vytvoří projekt EmployeesListDefinition.  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Vytvoří projekt EmployeesListDefinition.  
   
-8.  Otevřete místní nabídku pro projekt EmployeesListDefinition, zvolte **přidat**a klikněte na tlačítko **nová položka**.  
+8. Otevřete místní nabídku pro projekt EmployeesListDefinition, zvolte **přidat**a klikněte na tlačítko **nová položka**.  
   
 9. V **přidat novou položku - EmployeesListDefinition** dialogového okna rozbalte **SharePoint** uzel a klikněte na tlačítko **2010** uzlu.  
   
@@ -281,13 +281,13 @@ ms.locfileid: "42635023"
   
 11. Na **zvolit nastavení seznamu** stránce, ověřte následující nastavení a klikněte na tlačítko **Dokončit** tlačítka:  
   
-    1.  **Zaměstnanci seznamu** se zobrazí v **zadejte název chcete pro seznam zobrazit?** pole.  
+    1. **Zaměstnanci seznamu** se zobrazí v **zadejte název chcete pro seznam zobrazit?** pole.  
   
-    2.  **Vytvořit seznam přizpůsobitelné podle:** je přepínač vybrán.  
+    2. **Vytvořit seznam přizpůsobitelné podle:** je přepínač vybrán.  
   
-    3.  **Výchozí (prázdné)** je vybrán v **vytvořit seznam přizpůsobitelné podle:** seznamu.  
+    3. **Výchozí (prázdné)** je vybrán v **vytvořit seznam přizpůsobitelné podle:** seznamu.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří položku seznamu zaměstnanci se sloupec názvu a jedné prázdnou instanci a otevře se Návrhář seznamu.  
+       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří položku seznamu zaměstnanci se sloupec názvu a jedné prázdnou instanci a otevře se Návrhář seznamu.  
   
 12. V Návrháři List na **sloupce** , vyberte **zadejte název nového nebo existujícího sloupce** řádku a potom přidejte následující sloupce v **zobrazovaný název sloupce** seznamu:  
   
@@ -419,29 +419,29 @@ ms.locfileid: "42635023"
   
 #### <a name="to-test-the-upgrade-deployment-step"></a>K otestování krok nasazení upgradu  
   
-1.  V experimentální instanci sady Visual Studio v **Průzkumníka řešení**, otevřete místní nabídku **EmployeesListDefinition** uzel projektu a klikněte na tlačítko **vlastnosti**.  
+1. V experimentální instanci sady Visual Studio v **Průzkumníka řešení**, otevřete místní nabídku **EmployeesListDefinition** uzel projektu a klikněte na tlačítko **vlastnosti**.  
   
-     Otevře se Návrhář/Editor vlastnosti.  
+    Otevře se Návrhář/Editor vlastnosti.  
   
-2.  Na **SharePoint** kartu, nastavte **aktivní konfiguraci nasazení** vlastnost **upgradovat**.  
+2. Na **SharePoint** kartu, nastavte **aktivní konfiguraci nasazení** vlastnost **upgradovat**.  
   
-     Konfigurace vlastního nasazení obsahuje nový krok upgradu nasazení.  
+    Konfigurace vlastního nasazení obsahuje nový krok upgradu nasazení.  
   
-3.  Otevřete místní nabídku **zaměstnanci seznamu** položky projektu a klikněte na tlačítko **vlastnosti** nebo **otevřít**.  
+3. Otevřete místní nabídku **zaměstnanci seznamu** položky projektu a klikněte na tlačítko **vlastnosti** nebo **otevřít**.  
   
-     Otevře se Návrhář/Editor vlastnosti.  
+    Otevře se Návrhář/Editor vlastnosti.  
   
-4.  Na **zobrazení** , vyberte **e-mailu** sloupce a klikněte na tlačítko **<** klíč přesune tento sloupec z **vybrané sloupce**do seznamu **dostupných sloupců** seznamu.  
+4. Na **zobrazení** , vyberte **e-mailu** sloupce a klikněte na tlačítko **<** klíč přesune tento sloupec z **vybrané sloupce**do seznamu **dostupných sloupců** seznamu.  
   
-     Tato akce odebere z výchozího zobrazení těchto polí **zaměstnanci** seznam na Sharepointovém webu.  
+    Tato akce odebere z výchozího zobrazení těchto polí **zaměstnanci** seznam na Sharepointovém webu.  
   
-5.  Spuštění ladění zvolením **F5** klíče nebo na panelu nabídek, výběrem **ladění** > **spustit ladění**.  
+5. Spuštění ladění zvolením **F5** klíče nebo na panelu nabídek, výběrem **ladění** > **spustit ladění**.  
   
-6.  Ověřte, že kód ve druhé instanci aplikace Visual Studio zastaví na zarážce, kterou jste nastavili dříve v `CanExecute` metody.  
+6. Ověřte, že kód ve druhé instanci aplikace Visual Studio zastaví na zarážce, kterou jste nastavili dříve v `CanExecute` metody.  
   
-7.  Zvolte **F5** klíč znovu, nebo na panelu nabídek zvolte **ladění** > **pokračovat**.  
+7. Zvolte **F5** klíč znovu, nebo na panelu nabídek zvolte **ladění** > **pokračovat**.  
   
-8.  Ověřte, že kód zastaví na zarážce, kterou jste nastavili dříve v `Execute` metody.  
+8. Ověřte, že kód zastaví na zarážce, kterou jste nastavili dříve v `Execute` metody.  
   
 9. Zvolte **F5** klíče, nebo na panelu nabídek zvolte **ladění** > **pokračovat** koncového času.  
   
@@ -449,11 +449,11 @@ ms.locfileid: "42635023"
   
 10. V **uvádí** části oblasti Snadné spuštění zvolte **zaměstnanci** seznamu a potom ověřte následující podrobnosti:  
   
-    -   Položka, kterou jste ručně přidali dříve (k Andy, Správce zařízení) je stále v seznamu.  
+    - Položka, kterou jste ručně přidali dříve (k Andy, Správce zařízení) je stále v seznamu.  
   
-    -   **Telefon do zaměstnání** a **e-mailovou adresu** sloupce nejsou zobrazeny v tomto zobrazení seznamu.  
+    - **Telefon do zaměstnání** a **e-mailovou adresu** sloupce nejsou zobrazeny v tomto zobrazení seznamu.  
   
-     **Upgradovat** konfigurace nasazení upraví stávající **zaměstnanci** instance seznamu na webu služby SharePoint. Pokud jste použili **výchozí** konfigurace nasazení místo **upgradovat** konfiguraci by dojít ke konfliktu nasazení. Visual Studio by konflikt vyřešit tak, že nahradíte **zaměstnanci** seznamu a položkou Andy, Správce zařízení se odstraní.  
+      **Upgradovat** konfigurace nasazení upraví stávající **zaměstnanci** instance seznamu na webu služby SharePoint. Pokud jste použili **výchozí** konfigurace nasazení místo **upgradovat** konfiguraci by dojít ke konfliktu nasazení. Visual Studio by konflikt vyřešit tak, že nahradíte **zaměstnanci** seznamu a položkou Andy, Správce zařízení se odstraní.  
   
 ## <a name="clean-up-the-development-computer"></a>Vyčištění vývojovém počítači
  Po dokončení testování nasazení upgradu krok odebrat instanci seznamu a seznam definice z webu služby SharePoint a odeberte rozšíření krok nasazení z Visual Studio.  

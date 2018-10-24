@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77a262edcbf55f7c1f14c36d35a8618f5b788dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: edc922b2d96776d38de1b55ab2226be0d2c10f85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815725"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Zobrazení řádků – data vzorkování paměti .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Zobrazení řádků pro .NET profilování data o přidělování paměti, kter�
   
  Příkaz je identifikován následující:  
   
--   Zdrojový soubor, který obsahuje Function – příkaz  
+- Zdrojový soubor, který obsahuje Function – příkaz  
   
--   Funkce, která obsahuje příkaz.  
+- Funkce, která obsahuje příkaz.  
   
--   Zdrojový řádek, ve kterém se spustí příkaz.  
+- Zdrojový řádek, ve kterém se spustí příkaz.  
   
--   Znak ve zdrojovém řádku, ve kterém se spustí příkaz.  
+- Znak ve zdrojovém řádku, ve kterém se spustí příkaz.  
   
--   Řádku zdroje, u které končí příkaz.  
+- Řádku zdroje, u které končí příkaz.  
   
--   Znak ve zdrojovém řádku, kdy příkaz skončí.  
+- Znak ve zdrojovém řádku, kdy příkaz skončí.  
   
- Sloupec název řádek obsahuje seřaditelné zřetězení těchto dat identifikátor.  
+  Sloupec název řádek obsahuje seřaditelné zřetězení těchto dat identifikátor.  
   
- Podle definice příkazu nevolá dalších funkcí. Proto jsou uvedeny pouze výhradní hodnoty.  
+  Podle definice příkazu nevolá dalších funkcí. Proto jsou uvedeny pouze výhradní hodnoty.  
   
 |Sloupec|Popis|  
 |------------|-----------------|  

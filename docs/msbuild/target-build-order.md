@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7546c2da20c29f0140bd6b9572175ae0c2b019ad
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 13405d197fc5ab64d4c7b7040580f073e36f98c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812657"
 ---
 # <a name="target-build-order"></a>Pořadí sestavení cílů
 Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřazeny cíle. Tyto atributy můžete určit pořadí, ve kterém jsou spuštěny cíle:  
   
--   `InitialTargets`. To `Project` atribut určuje cíle, které bude spuštěn jako první, a to i v případě, že cíle jsou zadány v příkazovém řádku nebo v `DefaultTargets` atribut.  
+- `InitialTargets`. To `Project` atribut určuje cíle, které bude spuštěn jako první, a to i v případě, že cíle jsou zadány v příkazovém řádku nebo v `DefaultTargets` atribut.  
   
--   `DefaultTargets`. To `Project` atribut určuje cíle, které jsou spuštěny. Pokud cíl není explicitně zadána na příkazovém řádku.  
+- `DefaultTargets`. To `Project` atribut určuje cíle, které jsou spuštěny. Pokud cíl není explicitně zadána na příkazovém řádku.  
   
--   `DependsOnTargets`. To `Target` atribut určuje cíle, které musí spustit před spuštěním tohoto cíle.  
+- `DependsOnTargets`. To `Target` atribut určuje cíle, které musí spustit před spuštěním tohoto cíle.  
   
--   `BeforeTargets` a `AfterTargets`. Tyto `Target` atributy určují, že tento cíl by měl spustit před nebo po zadaného cíle (MSBuild 4.0).  
+- `BeforeTargets` a `AfterTargets`. Tyto `Target` atributy určují, že tento cíl by měl spustit před nebo po zadaného cíle (MSBuild 4.0).  
   
- Cíl je nespouštět dvakrát během sestavení, i v případě, že na něm závisí následující cíl v sestavení. Po spuštění cíle svůj příspěvek k sestavení je dokončena.  
+  Cíl je nespouštět dvakrát během sestavení, i v případě, že na něm závisí následující cíl v sestavení. Po spuštění cíle svůj příspěvek k sestavení je dokončena.  
   
- Cíle může mít `Condition` atribut. Pokud se zadaná podmínka vyhodnotí jako `false`, cíl není spuštěn a nemá žádný vliv na sestavení. Další informace o podmínkách najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).  
+  Cíle může mít `Condition` atribut. Pokud se zadaná podmínka vyhodnotí jako `false`, cíl není spuštěn a nemá žádný vliv na sestavení. Další informace o podmínkách najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).  
   
 ## <a name="initial-targets"></a>Počáteční cíle  
  `InitialTargets` Atribut [projektu](../msbuild/project-element-msbuild.md) prvek určuje cíle, které bude spuštěn jako první, i v případě, že cíle jsou zadány v příkazovém řádku nebo v `DefaultTargets` atribut. Počáteční cíle se obvykle používají pro kontrolu chyb.  

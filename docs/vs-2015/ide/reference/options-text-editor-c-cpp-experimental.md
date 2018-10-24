@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b07bdc7ab114619629ab4ef360ded3bf6655e6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aae8681bf9db0998c1d86ad00112d3228a76081d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285113"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814412"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Možnosti, textový Editor, C/C++, experimentální
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,15 +59,15 @@ Změnou tyto možnosti můžete změnit chování související se technologie I
   
  Funkce editoru textu v Galerii Visual Studio, najdete v seznamu [tady](http://go.microsoft.com/fwlink/?LinkId=692016). Příkladem je [C++ rychlých oprav](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), která podporuje následující:  
   
--   **Přidat chybějící #include** -navrhuje relevantní #include pro neznámý symboly ve vašem kódu  
+- **Přidat chybějící #include** -navrhuje relevantní #include pro neznámý symboly ve vašem kódu  
   
--   **Přidat direktivu using obor názvů/plnému symbol** – podobně jako předchozí položce, ale pro obory názvů  
+- **Přidat direktivu using obor názvů/plnému symbol** – podobně jako předchozí položce, ale pro obory názvů  
   
--   **Přidat chybějící středníkem**  
+- **Přidat chybějící středníkem**  
   
--   **Nápověda MSDN** -prohledat knihovnu MSDN pro chybové zprávy  
+- **Nápověda MSDN** -prohledat knihovnu MSDN pro chybové zprávy  
   
- Můžete buď při najetí myší nad vlnovku pro získání žárovky, nebo použijte výchozí klávesovou zkratku Ctrl + tečka (Ctrl +.). Všimněte si, že pro klávesové zkratky, vaše blikající kurzor o nemusí být umístěna na konkrétní chyba nebo token může být jednoduše na stejném řádku jako chyba, která se má vyvolat návrhy pro všechno, co je na daném řádku.  
+  Můžete buď při najetí myší nad vlnovku pro získání žárovky, nebo použijte výchozí klávesovou zkratku Ctrl + tečka (Ctrl +.). Všimněte si, že pro klávesové zkratky, vaše blikající kurzor o nemusí být umístěna na konkrétní chyba nebo token může být jednoduše na stejném řádku jako chyba, která se má vyvolat návrhy pro všechno, co je na daném řádku.  
   
 ## <a name="see-also"></a>Viz také  
  [Nastavení možností editoru pro konkrétní jazyk](../../ide/reference/setting-language-specific-editor-options.md)   

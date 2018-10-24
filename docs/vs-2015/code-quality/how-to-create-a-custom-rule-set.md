@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255499"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812462"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Postupy: Vytvoření vlastní sady pravidel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ V [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](..
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Chcete-li vytvořit vlastní pravidlo z jednoho stávající sadu pravidel  
   
-1.  V Průzkumníku řešení klikněte pravým tlačítkem myši na projekt a pak vyberte **vlastnosti**.  
+1. V Průzkumníku řešení klikněte pravým tlačítkem myši na projekt a pak vyberte **vlastnosti**.  
   
-2.  Na **vlastnosti** klikněte na tlačítko **analýzy kódu**.  
+2. Na **vlastnosti** klikněte na tlačítko **analýzy kódu**.  
   
-3.  V **sady pravidel** rozevíracího seznamu, proveďte jednu z následujících akcí:  
+3. V **sady pravidel** rozevíracího seznamu, proveďte jednu z následujících akcí:  
   
-    -   Vyberte sadu pravidel, který chcete přizpůsobit.  
+   - Vyberte sadu pravidel, který chcete přizpůsobit.  
   
      \- nebo –  
   
-    -   Vyberte  **\<Procházet... >** zadat sadu existujících pravidel, která se nenachází v seznamu.  
+   - Vyberte  **\<Procházet... >** zadat sadu existujících pravidel, která se nenachází v seznamu.  
   
-4.  Klikněte na tlačítko **otevřít** zobrazíte pravidla v editoru sad pravidel.  
+4. Klikněte na tlačítko **otevřít** zobrazíte pravidla v editoru sad pravidel.  
   
 #### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Chcete-li vytvořit vlastní pravidlo nastavit z více existující sady pravidel  
   

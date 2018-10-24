@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bd572cfff52537eab58e06ddf8f7a34bb087513c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb3cb13484d427bb5389a0ec89573231376efdf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811138"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Označte sestavení pomocí atributu AssemblyVersionAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MarkAssembliesWithAssemblyVersion|
@@ -42,15 +43,15 @@ ms.locfileid: "49305374"
 ## <a name="rule-description"></a>Popis pravidla
  Identita sestavení se skládá z následujících informací:
 
--   Název sestavení
+- Název sestavení
 
--   Číslo verze
+- Číslo verze
 
--   Jazyková verze
+- Jazyková verze
 
--   Veřejný klíč (pro sestavení se silným názvem).
+- Veřejný klíč (pro sestavení se silným názvem).
 
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Používá číslo verze k jednoznačné identifikaci sestavení a pro svázání s typy v sestaveních se silným názvem. Číslo verze je používáno spolu se zásadou verze a vydavatele. Ve výchozím nastavení mohou být aplikace spuštěny pouze ve verzi sestavení, v níž byly sestaveny.
+  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Používá číslo verze k jednoznačné identifikaci sestavení a pro svázání s typy v sestaveních se silným názvem. Číslo verze je používáno spolu se zásadou verze a vydavatele. Ve výchozím nastavení mohou být aplikace spuštěny pouze ve verzi sestavení, v níž byly sestaveny.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, přidejte číslo verze na sestavení s použitím <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> atribut. Podívejte se na téma v následujícím příkladu.

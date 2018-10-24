@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 05339a2bdc176fd44c93c744162a299809762a2e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860288"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813315"
 ---
 # <a name="understanding-the-dsl-code"></a>Porozumění kódu DSL
 Řešení jazyka specifického pro doménu (DSL), vygeneruje rozhraní API, které můžete použít ke čtení a aktualizovat instance DSL v sadě Visual Studio. Toto rozhraní API je definováno v kódu, který je generován z definici DSL. Toto téma popisuje generovaného rozhraní API.
@@ -110,25 +110,25 @@ ms.locfileid: "47860288"
 
  Každá doménová třída obsahuje:
 
--   Definice vlastnosti a třída vnořené obslužné rutiny pro každou vlastnost domény. Můžete přepsat OnValueChanging() a OnValueChanged(). Další informace najdete v tématu [obslužné rutiny změny hodnoty vlastnosti domény](../modeling/domain-property-value-change-handlers.md).
+- Definice vlastnosti a třída vnořené obslužné rutiny pro každou vlastnost domény. Můžete přepsat OnValueChanging() a OnValueChanged(). Další informace najdete v tématu [obslužné rutiny změny hodnoty vlastnosti domény](../modeling/domain-property-value-change-handlers.md).
 
-     V příkladu DSL `Comment` třída obsahuje vlastnosti `Text` a třídu obslužné rutiny `TextPropertyHandler`.
+   V příkladu DSL `Comment` třída obsahuje vlastnosti `Text` a třídu obslužné rutiny `TextPropertyHandler`.
 
--   Přistupující objekt vlastnosti relace, ve kterých se účastní této doménové třídě. (Neexistuje žádné vnořené třídy pro vlastnosti role.)
+- Přistupující objekt vlastnosti relace, ve kterých se účastní této doménové třídě. (Neexistuje žádné vnořené třídy pro vlastnosti role.)
 
-     V příkladu DSL `Comment` třída nemá přistupující objekty, které přistupují k její nadřazené modelu prostřednictvím vztah obsažení `ComponentModelHasComments`.
+   V příkladu DSL `Comment` třída nemá přistupující objekty, které přistupují k její nadřazené modelu prostřednictvím vztah obsažení `ComponentModelHasComments`.
 
--   Konstruktory. Pokud chcete tyto přepsat, nastavte **má vlastní konstruktor** na doménové třídy.
+- Konstruktory. Pokud chcete tyto přepsat, nastavte **má vlastní konstruktor** na doménové třídy.
 
--   Element metody obslužné rutiny skupiny prototypu (EGP). To je nezbytné, pokud uživatel může *sloučení* (Přidat) jiný element do instance této třídy. Obvykle uživatel to dělá přetažením z nástroj element nebo jiný tvar nebo vložením.
+- Element metody obslužné rutiny skupiny prototypu (EGP). To je nezbytné, pokud uživatel může *sloučení* (Přidat) jiný element do instance této třídy. Obvykle uživatel to dělá přetažením z nástroj element nebo jiný tvar nebo vložením.
 
-     V příkladu DSL, Port vstupní nebo výstupní Port sloučit do komponenty. Navíc komponenty a komentáře lze sloučit do modelu. Rozhraní
+   V příkladu DSL, Port vstupní nebo výstupní Port sloučit do komponenty. Navíc komponenty a komentáře lze sloučit do modelu. Rozhraní
 
-     Metody obslužné rutiny EGP ve třídě součást povolit komponentu tak, aby přijímal porty, ale ne komentáře. Obslužná rutina EGP ve třídě kořenové model přijímá komentáře a komponenty, ale ne porty.
+   Metody obslužné rutiny EGP ve třídě součást povolit komponentu tak, aby přijímal porty, ale ne komentáře. Obslužná rutina EGP ve třídě kořenové model přijímá komentáře a komponenty, ale ne porty.
 
- `DomainModel.cs`
+  `DomainModel.cs`
 
- Třída, která představuje model domény. Je odvozen z <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
+  Třída, která představuje model domény. Je odvozen z <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
 
 > [!NOTE]
 >  To však není stejný jako kořenová třída modelu.
@@ -161,31 +161,31 @@ ms.locfileid: "47860288"
 
  `SerializationHelper.cs`
 
--   Metoda ověření k zajištění, že žádné dva prvky je odkazováno dle stejného moniker. Další informace najdete v tématu [přizpůsobení souborového úložiště a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+- Metoda ověření k zajištění, že žádné dva prvky je odkazováno dle stejného moniker. Další informace najdete v tématu [přizpůsobení souborového úložiště a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
--   Třída SerializationHelper, která poskytuje funkce, které se používají v běžných třídami serializace.
+- Třída SerializationHelper, která poskytuje funkce, které se používají v běžných třídami serializace.
 
- `Serializer.cs`
+  `Serializer.cs`
 
- Třída serializátoru pro každou doménovou třídu, relace, tvar, konektor, diagramu a modelu.
+  Třída serializátoru pro každou doménovou třídu, relace, tvar, konektor, diagramu a modelu.
 
- Řadu funkcí, které z těchto tříd mohou být řízena nastavení v Průzkumník DSL pod **chování serializace Xml**.
+  Řadu funkcí, které z těchto tříd mohou být řízena nastavení v Průzkumník DSL pod **chování serializace Xml**.
 
- `Shapes.cs`
+  `Shapes.cs`
 
- Třídy pro každou třídu tvar v definici DSL. Tvary jsou odvozeny z <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>. Další informace najdete v tématu [přizpůsobení souborového úložiště a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+  Třídy pro každou třídu tvar v definici DSL. Tvary jsou odvozeny z <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>. Další informace najdete v tématu [přizpůsobení souborového úložiště a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
- Chcete-li přepsat metody generované vašimi vlastními metodami v dílčí třídě, nastavte **Generates Double Derived** pro konektor v definici DSL. Chcete-li nahradit konstruktor s vlastním kódem, nastavte **má vlastní konstruktor**.
+  Chcete-li přepsat metody generované vašimi vlastními metodami v dílčí třídě, nastavte **Generates Double Derived** pro konektor v definici DSL. Chcete-li nahradit konstruktor s vlastním kódem, nastavte **má vlastní konstruktor**.
 
- Chcete-li barvu a některé jiné proměnné stylu funkce v době běhu, klikněte pravým tlačítkem na třídu v diagramem definice DSL a přejděte na **přidat vystavený**.
+  Chcete-li barvu a některé jiné proměnné stylu funkce v době běhu, klikněte pravým tlačítkem na třídu v diagramem definice DSL a přejděte na **přidat vystavený**.
 
- Chcete-li proměnná další šablony funkce v době běhu, viz například <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> a <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>
+  Chcete-li proměnná další šablony funkce v době běhu, viz například <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> a <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>
 
- `ToolboxHelper.cs`
+  `ToolboxHelper.cs`
 
- Nastaví panelu nainstalováním prvek skupiny prototypy do nástrojů elementu. Kopie těchto prototypů jsou sloučeny s cílových elementů, když uživatel spustí nástroj.
+  Nastaví panelu nainstalováním prvek skupiny prototypy do nástrojů elementu. Kopie těchto prototypů jsou sloučeny s cílových elementů, když uživatel spustí nástroj.
 
- Může přepsat `CreateElementPrototype()` definovat položku sady nástrojů, který vytvoří skupiny několika objektů. Můžete například definovat položku k reprezentaci objektů, které mají dílčí komponenty. Po změně kódu, resetujte experimentální instanci sady Visual Studio a vymažte mezipaměť sady nástrojů.
+  Může přepsat `CreateElementPrototype()` definovat položku sady nástrojů, který vytvoří skupiny několika objektů. Můžete například definovat položku k reprezentaci objektů, které mají dílčí komponenty. Po změně kódu, resetujte experimentální instanci sady Visual Studio a vymažte mezipaměť sady nástrojů.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>Generované soubory v projektu DslPackage
  DslPackage páry v odstupu modelu DSL do prostředí nástroje Visual Studio, Správa oken, nástrojů a nabídky příkazů. Většina tříd jsou double odvozena, tak, aby jejich metod můžete přepsat.
@@ -274,7 +274,6 @@ namespace Company.EmbedInForm
   }
 
 }
-
 ```
 
  `EditorFactory.cs`
@@ -326,7 +325,6 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 }
 }
 }
-
 ```
 
  `ModelExplorerToolWindow.cs`

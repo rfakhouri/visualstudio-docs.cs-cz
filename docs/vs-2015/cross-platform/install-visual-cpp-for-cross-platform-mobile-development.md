@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: d0732cc08c679bd3eab973632164d366efe87b3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 13db7f4e4f1676f46a8b0170ffeadd5cd9eb31b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817441"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalace komponenty Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,18 +37,18 @@ Visual C++ pro vývoj mobilních řešení napříč platformami] (http://go.mic
   
 ##  <a name="Requirements"></a> Požadavky  
   
--   Požadavky na instalaci, naleznete v tématu [systémové požadavky sady Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
+- Požadavky na instalaci, naleznete v tématu [systémové požadavky sady Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
-    > [!IMPORTANT]
-    >  Pokud používáte Windows 7 nebo Windows Server 2008 R2, můžete vyvíjet kód pro aplikace klasické Windows, aplikace Android Native Activity a knihovny a aplikací a knihoven kódu pro iOS, ale ne aplikace Windows Store nebo Windows Universal.  
+  > [!IMPORTANT]
+  >  Pokud používáte Windows 7 nebo Windows Server 2008 R2, můžete vyvíjet kód pro aplikace klasické Windows, aplikace Android Native Activity a knihovny a aplikací a knihoven kódu pro iOS, ale ne aplikace Windows Store nebo Windows Universal.  
   
- K vytváření aplikací pro specifické platformy zařízení, existují některé další požadavky:  
+  K vytváření aplikací pro specifické platformy zařízení, existují některé další požadavky:  
   
--   Emulátory Windows Phone a Microsoft Visual Studio Emulator for Android vyžadují počítač, který můžete spustit Hyper-V. Aby bylo možné nainstalovat a spustit emulátory, musí být povolena funkce technologie Hyper-V ve Windows. Další informace najdete v tématu o emulátor [požadavky na systém](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf).  
+- Emulátory Windows Phone a Microsoft Visual Studio Emulator for Android vyžadují počítač, který můžete spustit Hyper-V. Aby bylo možné nainstalovat a spustit emulátory, musí být povolena funkce technologie Hyper-V ve Windows. Další informace najdete v tématu o emulátor [požadavky na systém](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf).  
   
--   X86 emulátorů Androidu, které jsou součástí sady Android SDK fungují nejlépe na počítačích se systémem ovladače Intel HAXM. Tento ovladač vyžaduje procesor Intel x64 VT-x a spustit Bit zakázat podporu. Další informace najdete v tématu [pokyny k instalaci pro Intel Hardware Accelerated spuštění Správce® – Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
+- X86 emulátorů Androidu, které jsou součástí sady Android SDK fungují nejlépe na počítačích se systémem ovladače Intel HAXM. Tento ovladač vyžaduje procesor Intel x64 VT-x a spustit Bit zakázat podporu. Další informace najdete v tématu [pokyny k instalaci pro Intel Hardware Accelerated spuštění Správce® – Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
   
--   Vytvoření kódu pro iOS vyžaduje Apple ID, účet programu pro vývojáře s Iosem a počítače Mac, který může spouštět [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) nebo později na OS X Mavericks nebo vyšší verze. Jednoduché instalační pokyny najdete v tématu [instalace nástrojů pro iOS](#InstallForiOS).  
+- Vytvoření kódu pro iOS vyžaduje Apple ID, účet programu pro vývojáře s Iosem a počítače Mac, který může spouštět [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) nebo později na OS X Mavericks nebo vyšší verze. Jednoduché instalační pokyny najdete v tématu [instalace nástrojů pro iOS](#InstallForiOS).  
   
 ##  <a name="GetTheTools"></a> Získání nástrojů  
  Visual C++ pro vývoj mobilních řešení pro různé platformy je instalovatelných komponent zahrnutých v edicích Visual Studio Community, Professional a Enterprise. Chcete-li získat Visual Studio, přejděte na [Visual Studio 2015 ke stažení](http://go.microsoft.com/fwlink/p/?linkid=517106) stránce a stáhněte si Visual Studio 2015 s aktualizací Update 2 nebo novější.  
@@ -101,31 +101,31 @@ Visual C++ pro vývoj mobilních řešení napříč platformami] (http://go.mic
   
  Přečtěte si následující informace a tyto odkazy použít ruční instalace závislostí.  
   
--   [Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
+- [Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
   
-     Instalační program ve výchozím nastavení, umístí C:\Program Files (x86) \Java nástroje Java.  
+   Instalační program ve výchozím nastavení, umístí C:\Program Files (x86) \Java nástroje Java.  
   
--   [Android SDK](https://developer.android.com/sdk/index.html#Other)  
+- [Android SDK](https://developer.android.com/sdk/index.html#Other)  
   
-     Během instalace aktualizace rozhraní API podle doporučení. Ujistěte se, že minimálně je nainstalovaná sada SDK pro Android 5.0 Lollipop (úroveň rozhraní API 21). Ve výchozím nastavení vloží instalační program sady Android SDK do C:\Program Files (x86) \Android\android-sdk.  
+   Během instalace aktualizace rozhraní API podle doporučení. Ujistěte se, že minimálně je nainstalovaná sada SDK pro Android 5.0 Lollipop (úroveň rozhraní API 21). Ve výchozím nastavení vloží instalační program sady Android SDK do C:\Program Files (x86) \Android\android-sdk.  
   
-     Aplikace správce sady SDK můžete spustit v adresáři sady Android SDK znovu, chcete-li aktualizovat sadu SDK a nainstalovat volitelné nástroje a další úrovně rozhraní API. Aktualizace může selhat instalace, pokud nechcete použít **spustit jako správce** ke spuštění aplikace správce sady SDK. Pokud máte potíže, vytvářet aplikace pro Android, podívejte se na správce sady SDK k dispozici aktualizace nainstalovaných sad SDK.  
+   Aplikace správce sady SDK můžete spustit v adresáři sady Android SDK znovu, chcete-li aktualizovat sadu SDK a nainstalovat volitelné nástroje a další úrovně rozhraní API. Aktualizace může selhat instalace, pokud nechcete použít **spustit jako správce** ke spuštění aplikace správce sady SDK. Pokud máte potíže, vytvářet aplikace pro Android, podívejte se na správce sady SDK k dispozici aktualizace nainstalovaných sad SDK.  
   
-     Pokud chcete používat některé z emulátorů Androidu, které jsou součástí sady Android SDK, musíte nainstalovat volitelné ovladače Intel HAXM. Budete muset odebrat funkce technologie Hyper-V z Windows úspěšně instalace ovladače Intel HAXM. Je nutné obnovit funkci Hyper-V použít emulátory Windows Phone a Microsoft Visual Studio Emulator for Android.  
+   Pokud chcete používat některé z emulátorů Androidu, které jsou součástí sady Android SDK, musíte nainstalovat volitelné ovladače Intel HAXM. Budete muset odebrat funkce technologie Hyper-V z Windows úspěšně instalace ovladače Intel HAXM. Je nutné obnovit funkci Hyper-V použít emulátory Windows Phone a Microsoft Visual Studio Emulator for Android.  
   
--   [Sada Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
+- [Sada Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
   
-     Instalační program ve výchozím nastavení, umístí C:\ProgramData\Microsoft\AndroidNDK sady Android NDK. Můžete stáhnout a nainstalovat sadu Android NDK znovu a aktualizujte instalační sada NDK.  
+   Instalační program ve výchozím nastavení, umístí C:\ProgramData\Microsoft\AndroidNDK sady Android NDK. Můžete stáhnout a nainstalovat sadu Android NDK znovu a aktualizujte instalační sada NDK.  
   
--   [Apache Ant](http://ant.apache.org/bindownload.cgi)  
+- [Apache Ant](http://ant.apache.org/bindownload.cgi)  
   
-     Ve výchozím nastavení instalační program umístí Apache Ant C:\Program Files (x86) \Microsoft 14.0\Apps sady Visual Studio.  
+   Ve výchozím nastavení instalační program umístí Apache Ant C:\Program Files (x86) \Microsoft 14.0\Apps sady Visual Studio.  
   
--   [Microsoft Visual Studio Emulator for Android](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
+- [Microsoft Visual Studio Emulator for Android](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
   
-     Můžete nainstalovat a aktualizovat Microsoft Visual Studio Emulator for Android z Galerie sady Visual Studio.  
+   Můžete nainstalovat a aktualizovat Microsoft Visual Studio Emulator for Android z Galerie sady Visual Studio.  
   
- Ve většině případů sady Visual Studio může zjistit konfiguraci softwaru třetích stran, které jste nainstalovali a udržuje cesty instalace v interní proměnné. Můžete přepsat výchozí cesty těchto nástrojů pro vývoj pro různé platformy v integrovaném vývojovém prostředí sady Visual Studio.  
+  Ve většině případů sady Visual Studio může zjistit konfiguraci softwaru třetích stran, které jste nainstalovali a udržuje cesty instalace v interní proměnné. Můžete přepsat výchozí cesty těchto nástrojů pro vývoj pro různé platformy v integrovaném vývojovém prostředí sady Visual Studio.  
   
 #### <a name="to-set-the-paths-for-third-party-tools"></a>Chcete-li nastavit cesty pro nástroje třetích stran  
   

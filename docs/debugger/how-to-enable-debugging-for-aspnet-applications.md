@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 28dbf874ab5f7f80d7f67f789e8122bcff1a2fa6
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813417"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Ladění aplikací ASP.NET nebo ASP.NET Core v sadě Visual Studio
 
@@ -121,29 +121,29 @@ Projekty ASP.NET mají *web.config* soubory ve výchozím nastavení, které obs
   
 3. Ujistěte se, že `debug` atribut `compilation` prvek je nastaven na `true`. (Pokud `compilation` neobsahuje element `debug` atribut, přidejte ho a nastavte ho na `true`.) 
   
-  Pokud používáte místní služby IIS místo výchozí server služby IIS Express, ujistěte se, že `targetFramework` hodnotu v atributu `compilation` neshodují elementy rozhraní na serveru služby IIS.
+   Pokud používáte místní služby IIS místo výchozí server služby IIS Express, ujistěte se, že `targetFramework` hodnotu v atributu `compilation` neshodují elementy rozhraní na serveru služby IIS.
   
-  `compilation` Elementu *web.config* soubor by měl vypadat jako v následujícím příkladu:
+   `compilation` Elementu *web.config* soubor by měl vypadat jako v následujícím příkladu:
 
-  > [!NOTE]
-  > V tomto příkladu je částečné *web.config* souboru. Jsou obvykle další části XML `configuration` a `system.web` elementy a `compilation` element může také obsahovat jiné atributy a elementy.
+   > [!NOTE]
+   > V tomto příkladu je částečné *web.config* souboru. Jsou obvykle další části XML `configuration` a `system.web` elementy a `compilation` element může také obsahovat jiné atributy a elementy.
   
-  ```xml
-  <configuration>  
+   ```xml
+   <configuration>  
       ...  
       <system.web>  
           <compilation  debug="true"  targetFramework="4.6.1" ... > 
              ...  
           </compilation>  
       </system.web>  
-  </configuration>  
-  ```
+   </configuration>  
+   ```
 
 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] automaticky detekuje jakékoli změny *web.config* soubory a aplikuje nové nastavení konfigurace. Není nutné restartovat počítač nebo server služby IIS se změny projevily.  
   
 Web může obsahovat několik virtuálních adresářů a podadresářů, *web.config* soubory v každém z nich. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace dědit nastavení z *web.config* soubory na vyšších úrovních v cestě adresy URL. Hierarchických *web.config* soubor nastavení platí pro všechny [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace pod nimi v hierarchii. Nastavení jiné konfiguraci *web.config* souboru níže v hierarchii, přepíše nastavení v souboru vyšší.  
   
-Pokud zadáte například `debug="true"` v *www.microsoft.com/aaa/web.config*, libovolnou aplikaci v *aaa* složce nebo v libovolné podsložce *aaa* zdědí toto nastavení s výjimkou Pokud některou z těchto aplikací přepíše nastavení vlastní *web.config* souboru.  
+Pokud zadáte například `debug="true"` v <em>www.microsoft.com/aaa/web.config</em>, libovolnou aplikaci v *aaa* složce nebo v libovolné podsložce *aaa* zdědí toto nastavení s výjimkou Pokud některou z těchto aplikací přepíše nastavení vlastní *web.config* souboru.  
   
 ## <a name="publish-in-debug-mode-using-the-file-system"></a>Publikování v režimu ladění pomocí systému souborů
 

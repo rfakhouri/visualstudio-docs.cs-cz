@@ -16,15 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3ce3aee4a7a498600da4eb0c99210c9c20d00f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 57d6c8c7821df8bd22723900ebd011c110a1857f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703416"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815179"
 ---
 # <a name="list-memory-command"></a>Listovat paměť – příkaz
-Zobrazí obsah zadaný rozsah paměti.
+Zobrazí obsah určeného rozsahu paměti.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,33 +36,33 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="arguments"></a>Arguments
  `expression`
 
- Volitelné. Adresa paměti, od kterého má začít zobrazení paměti.
+ Volitelné. Adresa paměti, ze kterého se má zahájit zobrazování paměti.
 
 ## <a name="switches"></a>Přepínače
  / ANSI&#124;kódování Unicode
 
- Volitelné. Paměť se zobrazí jako znaků odpovídající počet bajtů paměti, ANSI nebo Unicode.
+ Volitelné. Zobrazení paměti jako odpovídající počet bajtů paměti, ANSI nebo Unicode znaky.
 
  / Počet:`number`
 
- Volitelné. Určuje počet bajtů paměti, která se zobrazí, počínaje `expression`.
+ Volitelné. Určuje počet bajtů paměti k zobrazení, počínaje `expression`.
 
  / Formát:`formattype`
 
- Volitelné. Typ formátu pro zobrazení informací o paměti v **paměti** okno; může být OneByte, TwoBytes, FourBytes, EightBytes, Float (32bitová verze), nebo dvakrát (64 bitů). Pokud se používá OneByte `/Unicode` není k dispozici.
+ Volitelné. Formát typu pro zobrazení informací o paměti v **paměti** okno; je pravděpodobně být OneByte TwoBytes, FourBytes, EightBytes, Float (32bitová verze) nebo dvakrát (64 bitů). Pokud použijete OneByte `/Unicode` není k dispozici.
 
- / Šestnáctkových&#124;podepsané&#124;bez znaménka
+ / Hex&#124;podepsané&#124;bez znaménka
 
- Volitelné. Určuje formát pro zobrazení čísla: jako podepsaný držitelem, bez znaménka nebo hexadecimální.
+ Volitelné. Určuje formát zobrazení čísel: jako podepsaný držitelem, bez znaménka nebo šestnáctkové.
 
 ## <a name="remarks"></a>Poznámky
- Místo psaní se úplná **Debug.listmemory –** příkaz s všech přepínačů, můžete vyvolat příkaz pomocí předdefinované aliasy určité přepínače přednastavení na zadané hodnoty. Například místo zadávání:
+ Místo psaní si kompletní **Debug.listmemory –** příkazu se všechny přepínače, můžete vyvolat příkaz předdefinované aliasy using s určitým přepínači přednastaveny tak, aby zadané hodnoty. Například místo zadávání:
 
 ```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
- Můžete napsat:
+ můžete psát:
 
 ```cmd
 >df /Count:30 /Unicode
@@ -71,15 +71,15 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  Tady je seznam dostupné aliasy pro **Debug.listmemory –** příkaz:
 
 |Alias|Příkaz a přepínače|
-|-----------|--------------------------|
+|-----------| - |
 |**d**|Debug.listmemory –|
 |**da**|Debug.listmemory – /Ansi|
 |**DB**|Debug.listmemory – /Format:OneByte|
 |**řadič domény**|Debug.listmemory – /Format:FourBytes /Ansi|
 |**dd**|Debug.listmemory – /Format:FourBytes|
-|**DF –**|Debug.listmemory – /Format:Float|
-|**dq –**|Debug.listmemory – /Format:EightBytes|
-|**du**|Debug.listmemory – / Unicode|
+|**DF**|Debug.listmemory – /Format:Float|
+|**dq**|Debug.listmemory – /Format:EightBytes|
+|**rozlišované sjednocení typu**|Debug.listmemory – Unicode|
 
 ## <a name="example"></a>Příklad
 
@@ -93,5 +93,5 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 - [Příkaz Listovat vlákna](../../ide/reference/list-threads-command.md)
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
-- [Pole najít/příkaz](../../ide/find-command-box.md)
+- [Pole Najít/příkaz](../../ide/find-command-box.md)
 - [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

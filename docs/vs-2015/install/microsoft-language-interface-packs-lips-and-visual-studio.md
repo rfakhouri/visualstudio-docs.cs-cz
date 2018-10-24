@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f72b67216ef0403af2e1f97208a7e33daa09b9b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72c71ae80dfd44752e03f1d4fd7fd384adc13dfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179280"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812878"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Sady LIP (Microsoft Language Interface Pack) a Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,15 +97,15 @@ S použitím Windows Language Interface Pack (LIP), můžete nainstalovat jazyko
   
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Chcete-li nastavit jazyk, ve kterém se používá pro text uživatelského rozhraní v sadě Visual Studio  
   
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
-2.  V **možnosti** dialogového okna rozbalte **prostředí** a potom klikněte na tlačítko **mezinárodní nastavení**.  
+2. V **možnosti** dialogového okna rozbalte **prostředí** a potom klikněte na tlačítko **mezinárodní nastavení**.  
   
-3.  V **jazyk** seznamu, zvolte jazyk, ve kterém by se měla zobrazit text uživatelského rozhraní ve vývojovém prostředí.  
+3. V **jazyk** seznamu, zvolte jazyk, ve kterém by se měla zobrazit text uživatelského rozhraní ve vývojovém prostředí.  
   
-     Chcete-li mít text uživatelského rozhraní IDE shoda zobrazovaný jazyk operačního systému, nastavení, vyberte **totéž jako Windows Microsoft**.  
+    Chcete-li mít text uživatelského rozhraní IDE shoda zobrazovaný jazyk operačního systému, nastavení, vyberte **totéž jako Windows Microsoft**.  
   
- Příkazu devenv můžete také nastavit jazyk, který se používá pro uživatelské rozhraní. Další informace najdete v tématu [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).  
+   Příkazu devenv můžete také nastavit jazyk, který se používá pro uživatelské rozhraní. Další informace najdete v tématu [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Mezinárodní nastavení, Prostředí, dialogové okno Možnosti](../ide/reference/international-settings-environment-options-dialog-box.md)

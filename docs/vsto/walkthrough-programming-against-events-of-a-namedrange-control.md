@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab9810ba5086d3de8f5d3ad91bc2c62e0d30d349
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f8b55cda9576a0203857b3fdaeccbb205b42168
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812515"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Návod: Program ošetření událostí ovládacího prvku NamedRange
   Tento návod ukazuje, jak přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku na list aplikace Microsoft Office Excel a program před jeho událostmi s využitím vývojových nástrojů Office v sadě Visual Studio.  
@@ -87,15 +87,15 @@ ms.locfileid: "35676536"
   
 ### <a name="to-add-text-to-your-worksheet"></a>Chcete-li přidat text do listu  
   
-1.  V buňce **A1**, zadejte následující text:  
+1. V buňce **A1**, zadejte následující text:  
   
-     **Toto je příklad namedrange – ovládací prvek.**  
+    **Toto je příklad namedrange – ovládací prvek.**  
   
-2.  V buňce **A3** (nalevo od `namedRange2`), zadejte následující text:  
+2. V buňce **A3** (nalevo od `namedRange2`), zadejte následující text:  
   
-     **Události:**  
+    **Události:**  
   
- V následujících částech můžete psát kód, který vloží text do `namedRange2` a upraví vlastnosti `namedRange2` ovládacího prvku v reakci <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>, a <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> události `namedRange1`.  
+   V následujících částech můžete psát kód, který vloží text do `namedRange2` a upraví vlastnosti `namedRange2` ovládacího prvku v reakci <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>, a <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> události `namedRange1`.  
   
 ## <a name="add-code-to-respond-to-the-beforedoubleclick-event"></a>Přidejte kód pro reakce na událost BeforeDoubleClick  
   
@@ -128,7 +128,7 @@ ms.locfileid: "35676536"
   
 ### <a name="to-insert-text-into-namedrange2-based-on-the-selectionchange-event"></a>Pro vložení textu na namedRange2 podle SelectionChange – událost  
   
-1.  Přidejte kód proto **NamedRange1_SelectionChange** obslužná rutina události vypadat takhle:  
+1.  Přidejte kód, tak na **NamedRange1_SelectionChange** obslužnou rutinu události vypadá následovně:  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]  
