@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b74279373a11a13fd7e2e3fc47b2eb57e35d981
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a89832fe70e2e19085e8006646de5370b6019cbc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848615"
 ---
 # <a name="application-properties"></a>Vlastnosti aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,31 +32,31 @@ Obecné vlastnosti aplikace pro Visual Basic, C# a F # aplikací, jako je např�
   
  Můžete provést následující úlohy **aplikace** podokna:  
   
--   Zadejte informace o sestavení  
+- Zadejte informace o sestavení  
   
--   Zadejte úvodní obrazovky pro aplikaci  
+- Zadejte úvodní obrazovky pro aplikaci  
   
--   Určení událostí na úrovni aplikace  
+- Určení událostí na úrovni aplikace  
   
--   Změnit název sestavení  
+- Změnit název sestavení  
   
--   Změna oboru názvů pro aplikaci  
+- Změna oboru názvů pro aplikaci  
   
--   Změna typu aplikace  
+- Změna typu aplikace  
   
--   Změňte spouštěcí objekt pro aplikaci  
+- Změňte spouštěcí objekt pro aplikaci  
   
--   Určení ikony aplikace  
+- Určení ikony aplikace  
   
--   Povolení vizuálních stylů Windows XP  
+- Povolení vizuálních stylů Windows XP  
   
--   Zadejte chování aplikace při vytvoření instance  
+- Zadejte chování aplikace při vytvoření instance  
   
--   Povolit ověřování vlastní uživatelů  
+- Povolit ověřování vlastní uživatelů  
   
--   Zadejte chování při vypnutí pro aplikaci  
+- Zadejte chování při vypnutí pro aplikaci  
   
- Úlohy dostupné pro vaše aplikace závisí na vývojovém jazyce, který je používán.  
+  Úlohy dostupné pro vaše aplikace závisí na vývojovém jazyce, který je používán.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Postupy: Určení ikony aplikace (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  

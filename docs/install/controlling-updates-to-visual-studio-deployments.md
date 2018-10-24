@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e4f3843b7f3f8f19f0f375d6880d5d8be10bbd2
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 9cfc35698ce87027192031ef453a4c42ecc3c199
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139311"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830428"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Řízení aktualizací nasazení sady Visual Studio založené na síti
 
@@ -31,40 +31,40 @@ Ve výchozím nastavení Visual Studio nadále hledat online aktualizace, i v p�
 
 Pokud chcete přímou kontrolu nad kde sady Visual Studio vyhledá aktualizace, můžete upravit místo, kde bude vypadat. Můžete také řídit verze, kterou vaši uživatelé jsou aktualizovány. Chcete-li to provést, postupujte takto:
 
- 1. Vytvořte offline rozložení:
-    ```cmd
-    vs_enterprise.exe --layout C:\vs2017offline --lang en-US
-    ```
- 2. Zkopírujte ho do sdílené složky, ve kterém chcete hostovat ho:
-    ```cmd
-    xcopy /e C:\vs2017offline \\server\share\VS2017
-    ```
- 3. Upravte soubor response.json v rozložení a změna `channelUri` hodnotu tak, aby odkazoval na kopii channelManifest.json, které řídí správce.
+1. Vytvořte offline rozložení:
+   ```cmd
+   vs_enterprise.exe --layout C:\vs2017offline --lang en-US
+   ```
+2. Zkopírujte ho do sdílené složky, ve kterém chcete hostovat ho:
+   ```cmd
+   xcopy /e C:\vs2017offline \\server\share\VS2017
+   ```
+3. Upravte soubor response.json v rozložení a změna `channelUri` hodnotu tak, aby odkazoval na kopii channelManifest.json, které řídí správce.
 
-  Ujistěte se, že řídicí zpětná lomítka v hodnotě, jako v následujícím příkladu:
+   Ujistěte se, že řídicí zpětná lomítka v hodnotě, jako v následujícím příkladu:
 
-  ```json
-    "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
-  ```
+   ```json
+   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   ```
 
- Koncoví uživatelé teď spustit instalaci z této sdílené složce instalace sady Visual Studio.
-    ```cmd
-    \\server\share\VS2017\vs_enterprise.exe
-    ```
+   Koncoví uživatelé teď spustit instalaci z této sdílené složce instalace sady Visual Studio.
+   ```cmd
+   \\server\share\VS2017\vs_enterprise.exe
+   ```
 
 Když správce podnikové sítě zjistí, je čas pro jejich uživatelům aktualizovat na novější verzi sady Visual Studio, mohou [aktualizovat umístění rozložení](update-a-network-installation-of-visual-studio.md) začlenit aktualizované soubory, následujícím způsobem.
 
- 1. Použijte příkaz, který se podobá následující příkaz:
-    ```cmd
-    vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
-    ```
- 2. Ujistěte se, soubor response.json v aktualizované rozložení stále obsahuje úpravy, konkrétně změny parametr channelUri následujícím způsobem:
-    ```json
-    "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
-    ```
- Existující sady Visual Studio a instaluje se z rozložení vyhledání aktualizací na `\\server\share\VS2017\ChannelManifest.json`. Pokud channelManifest.json je novější než co uživatel nainstaloval, Visual Studio upozorní uživatele, že je k dispozici aktualizace.
+1. Použijte příkaz, který se podobá následující příkaz:
+   ```cmd
+   vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
+   ```
+2. Ujistěte se, soubor response.json v aktualizované rozložení stále obsahuje úpravy, konkrétně změny parametr channelUri následujícím způsobem:
+   ```json
+   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   ```
+   Existující sady Visual Studio a instaluje se z rozložení vyhledání aktualizací na `\\server\share\VS2017\ChannelManifest.json`. Pokud channelManifest.json je novější než co uživatel nainstaloval, Visual Studio upozorní uživatele, že je k dispozici aktualizace.
 
- Nové instalace automaticky nainstalují aktualizovaná verze sady Visual Studio přímo z rozložení.
+   Nové instalace automaticky nainstalují aktualizovaná verze sady Visual Studio přímo z rozložení.
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Řízení oznámení v integrovaném vývojovém prostředí sady Visual Studio
 

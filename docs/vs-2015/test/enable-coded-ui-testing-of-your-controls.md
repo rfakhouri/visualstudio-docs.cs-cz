@@ -13,12 +13,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9883b266e74db115c57f0a7cc245889ed59a599d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5ab2ca3e0f7d8f7006177f89c6850ce9882681a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848537"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Povolení programového testování uživatelského rozhraní pro vaše ovládací prvky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Ovládací prvek lze snadněji testovat, pokud se rozhodnete implementovat podpo
   
  **V tomto tématu:**  
   
-1.  [Podpora záznam a přehrávání a ověření vlastností implementací usnadnění přístupu](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
+1. [Podpora záznam a přehrávání a ověření vlastností implementací usnadnění přístupu](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
   
-2.  [Implementace vlastnosti zprostředkovatele podpory vlastní vlastnosti ověření](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
+2. [Implementace vlastnosti zprostředkovatele podpory vlastní vlastnosti ověření](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
   
-3.  [Nepodporuje generování kódu díky implementaci třídy pro přístup k vlastní vlastnosti](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
+3. [Nepodporuje generování kódu díky implementaci třídy pro přístup k vlastní vlastnosti](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
   
-4.  [Podpora akce podporující záměr implementací filtru akce](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
+4. [Podpora akce podporující záměr implementací filtru akce](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
   
- ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
+   ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a> Podpora záznam a přehrávání a ověření vlastností implementací usnadnění přístupu  
  Tvůrce programového testu uživatelského rozhraní shromažďuje informace o ovládacích prvcích, že během nahrávání dojde a potom generuje kód do přehrát tuto relaci. Pokud váš ovládací prvek nepodporuje přístupnost, Tvůrce programového testu uživatelského rozhraní zaznamená akce (jako je kliknutí myší) pomocí souřadnice obrazovky. Při přehrávání testu vygenerovaný kód bude vydávat těchto kliknutí myší v stejné souřadnice obrazovky. Pokud váš ovládací prvek se zobrazí na jiném místě na obrazovce při přehrávání testu, se nezdaří generovaného kódu k provedení této akce ovládacího prvku. To může způsobit selhání Pokud test přehrávání na jinou obrazovku konfigurace, v různých prostředích, nebo po byly provedeny změny rozložení uživatelského rozhraní.  

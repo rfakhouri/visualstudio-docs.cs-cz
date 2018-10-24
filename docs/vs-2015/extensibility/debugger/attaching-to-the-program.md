@@ -15,12 +15,12 @@ ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eb4709c0f6e158919b67a53d374bbefee8d152f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9beb92c67e196f76d8a59559825a844f0e0c8a7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275155"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849018"
 ---
 # <a name="attaching-to-the-program"></a>Připojení k programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,25 +30,25 @@ Po registraci svých programů s příslušný port je nutné připojit ladicí 
 ## <a name="choosing-how-to-attach"></a>Volba způsobu, jakým se připojit  
  Existují tři způsoby, ve kterých pokusí připojit k laděnému programu Správce ladění relace (SDM).  
   
-1.  Pro programy, které se spustí modul ladění [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) získá SDM – metoda (Typická interpretovaný jazyků, například), [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) rozhraní z [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) objekt přidružený k přímého připojení k programu. Pokud SDM můžete získat `IDebugProgramNodeAttach2` rozhraní, SDM pak zavolá [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) metody. `IDebugProgramNodeAttach2::OnAttach` Vrátí metoda `S_OK` označíte nepřipojili k programu a další pokusy lze připojit k programu.  
+1. Pro programy, které se spustí modul ladění [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) získá SDM – metoda (Typická interpretovaný jazyků, například), [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) rozhraní z [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) objekt přidružený k přímého připojení k programu. Pokud SDM můžete získat `IDebugProgramNodeAttach2` rozhraní, SDM pak zavolá [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) metody. `IDebugProgramNodeAttach2::OnAttach` Vrátí metoda `S_OK` označíte nepřipojili k programu a další pokusy lze připojit k programu.  
   
-2.  Pokud SDM můžete získat [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) rozhraní z programu připojovaný ke SDM volání [připojit](../../extensibility/debugger/reference/idebugprogramex2-attach.md) metody. Tento přístup je typické pro programy, které byly spuštěny vzdáleně dodavatele portu.  
+2. Pokud SDM můžete získat [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) rozhraní z programu připojovaný ke SDM volání [připojit](../../extensibility/debugger/reference/idebugprogramex2-attach.md) metody. Tento přístup je typické pro programy, které byly spuštěny vzdáleně dodavatele portu.  
   
-3.  Pokud program nelze připojit prostřednictvím `IDebugProgramNodeAttach2::OnAttach` nebo `IDebugProgramEx2::Attach` metody SDM načte ladicího stroje (pokud ještě není načtena) pomocí volání `CoCreateInstance` funkce a pak zavolá [připojit](../../extensibility/debugger/reference/idebugengine2-attach.md) metody. Tento přístup je typické pro programy spustí místně dodavatele portu.  
+3. Pokud program nelze připojit prostřednictvím `IDebugProgramNodeAttach2::OnAttach` nebo `IDebugProgramEx2::Attach` metody SDM načte ladicího stroje (pokud ještě není načtena) pomocí volání `CoCreateInstance` funkce a pak zavolá [připojit](../../extensibility/debugger/reference/idebugengine2-attach.md) metody. Tento přístup je typické pro programy spustí místně dodavatele portu.  
   
-     Je také možné pro dodavatele port. Tento vlastní port pro volání `IDebugEngine2::Attach` metoda implementace dodavatele port. Tento vlastní port `IDebugProgramEx2::Attach` metody. Obvykle v tomto případě dodavatele port. Tento vlastní port spustí modul ladění na vzdáleném počítači.  
+    Je také možné pro dodavatele port. Tento vlastní port pro volání `IDebugEngine2::Attach` metoda implementace dodavatele port. Tento vlastní port `IDebugProgramEx2::Attach` metody. Obvykle v tomto případě dodavatele port. Tento vlastní port spustí modul ladění na vzdáleném počítači.  
   
- Přílohy se dosáhne, když správce ladění relace (SDM) volá [připojit](../../extensibility/debugger/reference/idebugengine2-attach.md) metody.  
+   Přílohy se dosáhne, když správce ladění relace (SDM) volá [připojit](../../extensibility/debugger/reference/idebugengine2-attach.md) metody.  
   
- Pokud spuštění vašeho DE ve stejném procesu jako aplikace k ladění, pak musíte implementovat tyto metody [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
+   Pokud spuštění vašeho DE ve stejném procesu jako aplikace k ladění, pak musíte implementovat tyto metody [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
   
--   [Gethostname –](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md),  
+- [Gethostname –](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md),  
   
--   [GetHostPid](../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)  
+- [GetHostPid](../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)  
   
--   [GetProgramName](../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)  
+- [GetProgramName](../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)  
   
- Po `IDebugEngine2::Attach` metoda je volána, postupujte podle těchto kroků ve vaší implementaci `IDebugEngine2::Attach` metody:  
+  Po `IDebugEngine2::Attach` metoda je volána, postupujte podle těchto kroků ve vaší implementaci `IDebugEngine2::Attach` metody:  
   
 1.  Odeslání [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) objekt SDM události. Další informace najdete v tématu [odesílání událostí](../../extensibility/debugger/sending-events.md).  
   

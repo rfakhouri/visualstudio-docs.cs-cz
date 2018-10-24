@@ -13,12 +13,12 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbe8dd5ba0687471478d87606db45aa506991c12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d52a6e8eb5be9fb6516bcbc7788cf3115e2debdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848693"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modely aplikací pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,19 +67,19 @@ ms.locfileid: "49192534"
 #### <a name="tool-window-states"></a>Stavy okno nástroje  
  Okna nástrojů Visual Studio mají různé stavy, z nichž některé jsou uživatel aktivoval (jako je funkce automatického skrytí). Ostatní stavy, jako například automatické viditelné, povolit okna nástrojů ve správném kontextu se zobrazí a skryje, když nejsou potřeba. Celkem existuje pět stavů okno nástroje.  
   
--   **Ukotvit/připnuté** okna nástrojů lze připojit k libovolné čtyřech stranách oblasti dokumentu. Ikoně připínáčku se zobrazí v záhlaví okna nástrojů. Okno nástroje lze ukotvit vodorovně nebo svisle podél hrany oblasti prostředí a jiné nástroje systému windows a může také být propojeno pomocí karet.  
+- **Ukotvit/připnuté** okna nástrojů lze připojit k libovolné čtyřech stranách oblasti dokumentu. Ikoně připínáčku se zobrazí v záhlaví okna nástrojů. Okno nástroje lze ukotvit vodorovně nebo svisle podél hrany oblasti prostředí a jiné nástroje systému windows a může také být propojeno pomocí karet.  
   
--   **Automaticky skrývaná** nepřipnuté okna nástrojů. V okně můžete snímků z pohledu na okraji oblasti dokumentu byste museli opustit na kartě (s názvem panelu nástrojů a jeho ikonu). Panel nástrojů snímky když uživatel najede myší na kartu.  
+- **Automaticky skrývaná** nepřipnuté okna nástrojů. V okně můžete snímků z pohledu na okraji oblasti dokumentu byste museli opustit na kartě (s názvem panelu nástrojů a jeho ikonu). Panel nástrojů snímky když uživatel najede myší na kartu.  
   
--   **Automaticky viditelná** okna nástrojů automaticky zobrazí při spuštění další část uživatelského rozhraní, jako je například editor, nebo získá fokus.  
+- **Automaticky viditelná** okna nástrojů automaticky zobrazí při spuštění další část uživatelského rozhraní, jako je například editor, nebo získá fokus.  
   
--   **Číslo s plovoucí čárkou** mimo rozhraní IDE při najetí myší okna nástrojů. To je užitečné pro konfigurace více monitorů.  
+- **Číslo s plovoucí čárkou** mimo rozhraní IDE při najetí myší okna nástrojů. To je užitečné pro konfigurace více monitorů.  
   
--   **Dokument s kartami** panely nástrojů lze ukotvit v rámci dokumentu kontejneru. To je užitečné pro velké panel nástrojů, jako je například prohlížeč objektů, potřebujete více prostoru než ukotvení na okraji rámečku umožňuje.  
+- **Dokument s kartami** panely nástrojů lze ukotvit v rámci dokumentu kontejneru. To je užitečné pro velké panel nástrojů, jako je například prohlížeč objektů, potřebujete více prostoru než ukotvení na okraji rámečku umožňuje.  
   
- ![Nástroj pro stavy okna v sadě Visual Studio](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702 01_ToolWindowStates")  
+  ![Nástroj pro stavy okna v sadě Visual Studio](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702 01_ToolWindowStates")  
   
- **Stavy okno nástroje v sadě Visual Studio**  
+  **Stavy okno nástroje v sadě Visual Studio**  
   
 #### <a name="single-instance-and-multi-instance"></a>Jednou instancí a s více instancemi  
  Okna nástrojů jsou jednou instancí nebo s více instancemi. Některá okna nástrojů jednou instancí může být přidružen k aktivního okna dokumentu, zatímco okna nástrojů s více instancemi nemusí. Okna nástrojů s více instancemi reagovat na okno okno/Nový příkaz tak, že vytvoříte novou instanci třídy okna. Následující obrázek ukazuje okno nástroje povolení příkazu nové okno při aktivním instanci okna:  
@@ -164,19 +164,19 @@ ms.locfileid: "49192534"
 ### <a name="user-expectations-for-specific-document-types"></a>Očekávání uživatele pro určité typy dokumentů  
  Existuje několik různých typů základní editory dokumentu a každý má sadu interakcí, které jsou konzistentní s ostatními stejného typu.  
   
--   **Textový editor:** editor kódu, souborů protokolu  
+- **Textový editor:** editor kódu, souborů protokolu  
   
--   **Návrhová plocha:** WPF forms designer, Windows forms  
+- **Návrhová plocha:** WPF forms designer, Windows forms  
   
--   **Editor dialogového okna style:** Manifest Designer Vlastnosti projektu  
+- **Editor dialogového okna style:** Manifest Designer Vlastnosti projektu  
   
--   **Návrhář modelů:** návrháře postupu provádění, codemap, diagram architektury, průběh  
+- **Návrhář modelů:** návrháře postupu provádění, codemap, diagram architektury, průběh  
   
- Existují také několik typů bez editoru, které používají dobře dokumentu. Při jejich neupravujte samotných dokumentech, musí dodržovat standardní interakce pro okna dokumentu.  
+  Existují také několik typů bez editoru, které používají dobře dokumentu. Při jejich neupravujte samotných dokumentech, musí dodržovat standardní interakce pro okna dokumentu.  
   
--   **Sestavy:** sestavy IntelliTrace, technologie Hyper-V sestavě sestavy profileru  
+- **Sestavy:** sestavy IntelliTrace, technologie Hyper-V sestavě sestavy profileru  
   
--   **Řídicí panel:** centrum diagnostiky  
+- **Řídicí panel:** centrum diagnostiky  
   
 #### <a name="text-based-editors"></a>Textové editory  
   
@@ -251,13 +251,13 @@ ms.locfileid: "49192534"
   
  Pokud jste určili, že potřebujete dialogové okno, máte tři možnosti, v pořadí podle priority:  
   
-1.  Integrate funkce do jedné sdílené dialogových oken v sadě Visual Studio.  
+1. Integrate funkce do jedné sdílené dialogových oken v sadě Visual Studio.  
   
-2.  Vytvořte vlastní dialogového okna pomocí vzoru v existující podobné dialogové okno.  
+2. Vytvořte vlastní dialogového okna pomocí vzoru v existující podobné dialogové okno.  
   
-3.  Vytvořte nové dialogové okno, následující interakce a pokyny pro rozložení.  
+3. Vytvořte nové dialogové okno, následující interakce a pokyny pro rozložení.  
   
- Toto téma popisuje, jak zvolit správný dialogové okno vzoru v rámci pracovních postupů sady Visual Studio a běžné konvence pro dialogové okno návrh.  
+   Toto téma popisuje, jak zvolit správný dialogové okno vzoru v rámci pracovních postupů sady Visual Studio a běžné konvence pro dialogové okno návrh.  
   
 ### <a name="themes"></a>Motivy  
  Dialogová okna v sadě Visual Studio proveďte jeden z dva základní styly:  
@@ -268,15 +268,15 @@ ms.locfileid: "49192534"
 #### <a name="themed"></a>S motivem  
  Dialogová okna "podpis" specializace může použít motiv. Dialogová okna s motivem mají odlišné vzhled, který také obsahuje některé speciální interakce vzory související se stylem. Motiv dialogového okna pouze v případě, že splňuje tyto požadavky:  
   
--   Dialogové okno je běžné možnosti, které budou vidí a můžou používat často nebo mnoha uživateli (třeba **nový projekt** dialogového okna.  
+- Dialogové okno je běžné možnosti, které budou vidí a můžou používat často nebo mnoha uživateli (třeba **nový projekt** dialogového okna.  
   
--   Dialogové okno obsahuje prvky značky viditelného produktu (například **nastavení účtu** dialogového okna).  
+- Dialogové okno obsahuje prvky značky viditelného produktu (například **nastavení účtu** dialogového okna).  
   
--   Dialogové okno se zobrazí jako nedílnou součástí větší tok, který obsahuje další motivy dialogových oken (například **přidat připojenou službu** dialogového okna).  
+- Dialogové okno se zobrazí jako nedílnou součástí větší tok, který obsahuje další motivy dialogových oken (například **přidat připojenou službu** dialogového okna).  
   
--   Dialogové okno je důležitou součástí prostředí, které hrají roli strategické zvýšení úrovně nebo odlišení těchto verzí produktu.  
+- Dialogové okno je důležitou součástí prostředí, které hrají roli strategické zvýšení úrovně nebo odlišení těchto verzí produktu.  
   
- Při vytváření s motivem dialog, použití barev příslušné prostředí a postupujte podle správné rozložení a vzory interakcí. (Viz [rozložení pro sadu Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
+  Při vytváření s motivem dialog, použití barev příslušné prostředí a postupujte podle správné rozložení a vzory interakcí. (Viz [rozložení pro sadu Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
   
 ### <a name="dialog-design"></a>Dialogové okno návrhu  
  Dobře navržené dialogová okna vzít v úvahu následující prvky:  
@@ -360,17 +360,17 @@ ms.locfileid: "49192534"
   
 #### <a name="title-bars"></a>Záhlaví  
   
--   Text v záhlaví musí odpovídat názvu příkazu, který je spouští.  
+- Text v záhlaví musí odpovídat názvu příkazu, který je spouští.  
   
--   Žádná ikona by měla sloužit v záhlaví dialogového okna. V případech, kdy systém vyžaduje, aby jeden logo sady Visual Studio můžete použijte.  
+- Žádná ikona by měla sloužit v záhlaví dialogového okna. V případech, kdy systém vyžaduje, aby jeden logo sady Visual Studio můžete použijte.  
   
--   Dialogová okna by neměl mít minimalizovat nebo maximalizovat tlačítka.  
+- Dialogová okna by neměl mít minimalizovat nebo maximalizovat tlačítka.  
   
--   Tlačítka nápovědy v záhlaví se již nepoužívají. Nepřidávejte je do nového dialogová okna. Pokud existují, by se zobrazit téma nápovědy, koncepčně relevantní pro úlohu.  
+- Tlačítka nápovědy v záhlaví se již nepoužívají. Nepřidávejte je do nového dialogová okna. Pokud existují, by se zobrazit téma nápovědy, koncepčně relevantní pro úlohu.  
   
- ![Záhlaví specifikace pro sadu Visual Studio](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "0704 03_TitleBarSpecs")  
+  ![Záhlaví specifikace pro sadu Visual Studio](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "0704 03_TitleBarSpecs")  
   
- **Specifikace obecných zásad pro záhlaví v dialogových oknech sady Visual Studio.**  
+  **Specifikace obecných zásad pro záhlaví v dialogových oknech sady Visual Studio.**  
   
 #### <a name="control-buttons"></a>Ovládací prvek tlačítka  
  Obecně platí **OK**/**zrušit**/**pomáhají** tlačítka by měla být uspořádány vodorovně v pravém dolním rohu dialogového okna. Alternativní svislý zásobník je povolený, pokud dialogové okno má několik tlačítek v dolní části dialogového okna, která bude představovat visual záměně se ovládací prvek tlačítka.  
@@ -381,11 +381,11 @@ ms.locfileid: "49192534"
   
  Dialogové okno musí obsahovat výchozí ovládací prvek tlačítko. Pokud chcete určit nejlepší příkaz, který použije jako výchozí, vyberte z následujících možností (uvedené v pořadí podle priority):  
   
--   Zvolte příkaz nejbezpečnější a nejbezpečnější jako výchozí. To znamená, že zvolíte příkaz nejpravděpodobnější zabraňují úniku dat a vyhnout se přístup k nezamýšleným systému.  
+- Zvolte příkaz nejbezpečnější a nejbezpečnější jako výchozí. To znamená, že zvolíte příkaz nejpravděpodobnější zabraňují úniku dat a vyhnout se přístup k nezamýšleným systému.  
   
--   Pokud ke ztrátě dat a zabezpečení nejsou faktory, vyberte výchozí příkaz podle pohodlí. Včetně nejpravděpodobnější příkaz jako výchozí zlepší pracovního postupu uživatele, když dialogové okno podporuje často i opakované úlohy.  
+- Pokud ke ztrátě dat a zabezpečení nejsou faktory, vyberte výchozí příkaz podle pohodlí. Včetně nejpravděpodobnější příkaz jako výchozí zlepší pracovního postupu uživatele, když dialogové okno podporuje často i opakované úlohy.  
   
- Nepoužívejte trvale destruktivní akce pro výchozí příkaz. Pokud takový příkaz je k dispozici, zvolte příkaz bezpečnější místo jako výchozí.  
+  Nepoužívejte trvale destruktivní akce pro výchozí příkaz. Pokud takový příkaz je k dispozici, zvolte příkaz bezpečnější místo jako výchozí.  
   
 #### <a name="access-keys"></a>Přístupové klíče  
  Nepoužívejte přístupových klíčů pro **OK**/**zrušit**/**pomáhají** tlačítka. Tato tlačítka jsou namapovány na klávesových zkratek ve výchozím nastavení:  
@@ -437,54 +437,54 @@ ms.locfileid: "49192534"
   
  Projekty by vždy měli:  
   
--   Kvůli podpoře možnosti Přidat projekt složek a uspořádávat obsah projektu  
+- Kvůli podpoře možnosti Přidat projekt složek a uspořádávat obsah projektu  
   
--   Udržovat konzistentní model pro trvalost projektu  
+- Udržovat konzistentní model pro trvalost projektu  
   
- Projekty musí také udržovat konzistentní interakce modely pro:  
+  Projekty musí také udržovat konzistentní interakce modely pro:  
   
--   Odebírání projektových položek  
+- Odebírání projektových položek  
   
--   Ukládání dokumentů  
+- Ukládání dokumentů  
   
--   Úpravy vlastností projektu  
+- Úpravy vlastností projektu  
   
--   Úprava projektu v alternativní zobrazení  
+- Úprava projektu v alternativní zobrazení  
   
--   Operace přetažení myší  
+- Operace přetažení myší  
   
 ### <a name="drag-and-drop-interaction-model"></a>Model interakce a přetažení  
  Projekty obvykle klasifikovat sami jako odkaz na základě (schopni zachovat pouze odkazy na položky projektu ve službě storage), adresářového (schopni zachovat pouze položky projektu fyzicky uložené v rámci hierarchie projektu), nebo smíšené (schopni zachovat odkazy nebo fyzické položky). Rozhraní IDE obsáhne všechny tři typy projektů současně v rámci **Průzkumníka řešení**.  
   
  Z pohledu přetažení myší, by se měly používat následující vlastnosti pro každý typ projektu v rámci **Průzkumníka řešení**:  
   
--   **Na základě odkazu projekt:** klíčovým bodem tedy je, že projekt přetahuje kolem odkaz na položku v úložišti. Když projekt založený na odkaz funguje jako zdroj pro operace přesunutí, odstraňte pouze odkaz na položku z projektu. Položka nesmí ve skutečnosti odstraněna z pevného disku. Když projekt založený na odkaz funguje jako cíl pro operaci přesunutí (nebo kopírování), přidala odkaz na původní zdroj položky přitom si soukromou kopii položky.  
+- **Na základě odkazu projekt:** klíčovým bodem tedy je, že projekt přetahuje kolem odkaz na položku v úložišti. Když projekt založený na odkaz funguje jako zdroj pro operace přesunutí, odstraňte pouze odkaz na položku z projektu. Položka nesmí ve skutečnosti odstraněna z pevného disku. Když projekt založený na odkaz funguje jako cíl pro operaci přesunutí (nebo kopírování), přidala odkaz na původní zdroj položky přitom si soukromou kopii položky.  
   
--   **Na základě adresář projektu:** z přetažení myší hlediska, projekt přetahuje kolem fyzické položky, místo odkazu. Když projekt založený na directory funguje jako zdroj pro operace přesunutí, by měla končit nahoru odstranění fyzické položky z pevného disku a také odebere ji z projektu. Když projekt založený na directory funguje jako cíl pro operaci přesunutí (nebo kopírování), třeba kopii položky zdroje do cílového umístění.  
+- **Na základě adresář projektu:** z přetažení myší hlediska, projekt přetahuje kolem fyzické položky, místo odkazu. Když projekt založený na directory funguje jako zdroj pro operace přesunutí, by měla končit nahoru odstranění fyzické položky z pevného disku a také odebere ji z projektu. Když projekt založený na directory funguje jako cíl pro operaci přesunutí (nebo kopírování), třeba kopii položky zdroje do cílového umístění.  
   
--   **Smíšené cílový projekt:** z přetažení myší hlediska, chování tento typ projektu podle povahy položky jsou kvůli usnadnění použití vypsány buď (odkaz na položku ve službě storage) nebo přímo s příslušnou položkou. Správné chování pro odkazy a fyzického zboží jsou popsané výše.  
+- **Smíšené cílový projekt:** z přetažení myší hlediska, chování tento typ projektu podle povahy položky jsou kvůli usnadnění použití vypsány buď (odkaz na položku ve službě storage) nebo přímo s příslušnou položkou. Správné chování pro odkazy a fyzického zboží jsou popsané výše.  
   
- Kdyby existovalo pouze jednoho typu projektu v **Průzkumníka řešení**, pak by byly jednoduché operace přetažení myší. Protože každý systém projektu má možnost definovat vlastní chování přetažení myší, některé pokyny (založené na chování Průzkumníka Windows přetáhněte myší) byste měli dodržet, aby předvídatelné uživatelské prostředí:  
+  Kdyby existovalo pouze jednoho typu projektu v **Průzkumníka řešení**, pak by byly jednoduché operace přetažení myší. Protože každý systém projektu má možnost definovat vlastní chování přetažení myší, některé pokyny (založené na chování Průzkumníka Windows přetáhněte myší) byste měli dodržet, aby předvídatelné uživatelské prostředí:  
   
--   Verzí bez úprav přetáhnout v operaci **Průzkumníka řešení** (když Ctrl ani posunutí klíče jsou uložené) by mělo vrátit operace přesunu.  
+- Verzí bez úprav přetáhnout v operaci **Průzkumníka řešení** (když Ctrl ani posunutí klíče jsou uložené) by mělo vrátit operace přesunu.  
   
--   Operaci přetažení SHIFT vrátit také operace přesunu.  
+- Operaci přetažení SHIFT vrátit také operace přesunu.  
   
--   Operaci přetažení CTRL by měl mít za následek operace kopírování.  
+- Operaci přetažení CTRL by měl mít za následek operace kopírování.  
   
--   Projekt na základě odkazu a smíšené systémů podporuje pojem přidává odkaz (nebo odkaz) k položce zdroje. Pokud tyto projekty se cíl operace přetažení myší (při **Ctrl + Shift** se nachází mimo provoz), mělo by být výsledkem odkaz na položku přidávanou do projektu  
+- Projekt na základě odkazu a smíšené systémů podporuje pojem přidává odkaz (nebo odkaz) k položce zdroje. Pokud tyto projekty se cíl operace přetažení myší (při **Ctrl + Shift** se nachází mimo provoz), mělo by být výsledkem odkaz na položku přidávanou do projektu  
   
- Ne všechny operace přetažení myší jsou rozumné kombinací odkaz založen na základě directory projekty a smíšené. Zejména je problematické předstírají, že umožňuje operace přesunu mezi zdrojovým adresář projektu a odkaz na základě cílový projekt, protože zdrojový projekt na základě directory bude muset odstranit položky zdroje po dokončení přesunutí. Cílový odkaz na základě projekt pak skončili byste s odkazem na odstraněnou položku.  
+  Ne všechny operace přetažení myší jsou rozumné kombinací odkaz založen na základě directory projekty a smíšené. Zejména je problematické předstírají, že umožňuje operace přesunu mezi zdrojovým adresář projektu a odkaz na základě cílový projekt, protože zdrojový projekt na základě directory bude muset odstranit položky zdroje po dokončení přesunutí. Cílový odkaz na základě projekt pak skončili byste s odkazem na odstraněnou položku.  
   
- Také je zavádějící předstírají, že operace kopírování mezi těmito typy projektů povolit, protože cílový projekt na základě reference by neměla provést nezávislé kopie položky zdroje. Podobně Ctrl + Shift přetažením na základě directory cílový projekt by neměl být povolená, protože nelze trvale uložit odkazů projektu založeného na adresář. V případech, kdy se nepodporuje operace přetažení myší integrovaném vývojovém prostředí by měl zakázat rozevírací nabídku a uživateli se bez kurzoru (viz následující tabulka ukazatele).  
+  Také je zavádějící předstírají, že operace kopírování mezi těmito typy projektů povolit, protože cílový projekt na základě reference by neměla provést nezávislé kopie položky zdroje. Podobně Ctrl + Shift přetažením na základě directory cílový projekt by neměl být povolená, protože nelze trvale uložit odkazů projektu založeného na adresář. V případech, kdy se nepodporuje operace přetažení myší integrovaném vývojovém prostředí by měl zakázat rozevírací nabídku a uživateli se bez kurzoru (viz následující tabulka ukazatele).  
   
- Přetáhněte myší chování správně implementovat, zdrojový projekt přetahování potřebuje ke komunikaci jejich povaze (například je odkaz nebo adresářového?) na cílový projekt. Tyto informace je indikován formátu schránky se nabízí ve zdroji. Jako zdroj přetažení (nebo operace kopírování schránky) by měl nabídnout projektu buď **CF_VSREFPROJECTITEM**S nebo **CF_VSSTGPROJECTITEMS** v uvedeném pořadí, v závislosti na tom, jestli je projekt na základě odkazu nebo na základě directory. Obě tyto formáty mají stejný datový obsah, který je podobný Windows **CF_HDROP** naformátovat s tím rozdílem, že jsou seznamy řetězců názvů souborů, namísto double -**NULL** ukončena seznam  **Projref** řetězce (vrácená **IVsSolution::GetProjrefOfItem** nebo **:: GetProjrefOfProject** podle potřeby).  
+  Přetáhněte myší chování správně implementovat, zdrojový projekt přetahování potřebuje ke komunikaci jejich povaze (například je odkaz nebo adresářového?) na cílový projekt. Tyto informace je indikován formátu schránky se nabízí ve zdroji. Jako zdroj přetažení (nebo operace kopírování schránky) by měl nabídnout projektu buď **CF_VSREFPROJECTITEM**S nebo **CF_VSSTGPROJECTITEMS** v uvedeném pořadí, v závislosti na tom, jestli je projekt na základě odkazu nebo na základě directory. Obě tyto formáty mají stejný datový obsah, který je podobný Windows **CF_HDROP** naformátovat s tím rozdílem, že jsou seznamy řetězců názvů souborů, namísto double -**NULL** ukončena seznam  **Projref** řetězce (vrácená **IVsSolution::GetProjrefOfItem** nebo **:: GetProjrefOfProject** podle potřeby).  
   
- Jako cíl přetažení (nebo operaci schránky vložit) projektu by měl přijmout **CF_VSREFPROJECTITEMS** a **CF_VSSTGPROJECTITEMS**, když se liší přesné zpracování operace přetažení myší v závislosti na povaze cílový projekt a projekt zdroje. Zdrojový projekt deklaruje jejich povaze tak, zda nabízí **CF_VSREFPROJECTITEMS** nebo **CF_VSSTGPROJECTITEMS**. Cíl rozevírací rozumí vlastní povahy a proto má dostatek informací pro rozhodování, zda přesunutí, kopírování nebo odkaz je třeba provést. Uživatel také upraví, kterou operaci přetažení myší by měl provádět klávesy Ctrl, Shift, nebo jak kláves Ctrl a Shift. Je důležité pro cíl přetažení správně označující, jaké operace se provede předem v jeho **DragEnter** a **DragOver** metody. **Průzkumníka řešení** automaticky určí, zda zdrojového i cílového projektu jsou stejném projektu.  
+  Jako cíl přetažení (nebo operaci schránky vložit) projektu by měl přijmout **CF_VSREFPROJECTITEMS** a **CF_VSSTGPROJECTITEMS**, když se liší přesné zpracování operace přetažení myší v závislosti na povaze cílový projekt a projekt zdroje. Zdrojový projekt deklaruje jejich povaze tak, zda nabízí **CF_VSREFPROJECTITEMS** nebo **CF_VSSTGPROJECTITEMS**. Cíl rozevírací rozumí vlastní povahy a proto má dostatek informací pro rozhodování, zda přesunutí, kopírování nebo odkaz je třeba provést. Uživatel také upraví, kterou operaci přetažení myší by měl provádět klávesy Ctrl, Shift, nebo jak kláves Ctrl a Shift. Je důležité pro cíl přetažení správně označující, jaké operace se provede předem v jeho **DragEnter** a **DragOver** metody. **Průzkumníka řešení** automaticky určí, zda zdrojového i cílového projektu jsou stejném projektu.  
   
- Přetažení položek projektu napříč instancemi sady Visual Studio (například z jedné instance devenv.exe do jiného) konkrétně není podporován. **Průzkumníka řešení** také přímo to zakáže.  
+  Přetažení položek projektu napříč instancemi sady Visual Studio (například z jedné instance devenv.exe do jiného) konkrétně není podporován. **Průzkumníka řešení** také přímo to zakáže.  
   
- Uživatel by měl vždy být schopní určit efekt operace přetažení myší výběru nějaké položky, přetažením do cílového umístění a sledování, které z následujících ukazatele myši se nachází před vyřadit položku:  
+  Uživatel by měl vždy být schopní určit efekt operace přetažení myší výběru nějaké položky, přetažením do cílového umístění a sledování, které z následujících ukazatele myši se nachází před vyřadit položku:  
   
 |Ukazatele myši|Příkaz|Popis|  
 |-------------------|-------------|-----------------|  
@@ -583,33 +583,33 @@ ms.locfileid: "49192534"
   
  Tyto podrobnosti brát v úvahu při implementaci přetahování **Průzkumníka řešení**:  
   
--   Návrh pro více scénářů výběr.  
+- Návrh pro více scénářů výběr.  
   
--   Názvy souborů (úplná cesta) musí být jedinečný mezi cílový projekt nebo by se nemělo povolit rozevírací nabídku.  
+- Názvy souborů (úplná cesta) musí být jedinečný mezi cílový projekt nebo by se nemělo povolit rozevírací nabídku.  
   
--   Názvy složek musí být jedinečné (malá a velká písmena) na úrovni, se vyřazuje.  
+- Názvy složek musí být jedinečné (malá a velká písmena) na úrovni, se vyřazuje.  
   
--   Existují rozdíly v chování mezi soubory, které jsou v době (není uvedeno ve výše uvedené scénáře) přetáhněte otevřeno nebo Uzavřeno.  
+- Existují rozdíly v chování mezi soubory, které jsou v době (není uvedeno ve výše uvedené scénáře) přetáhněte otevřeno nebo Uzavřeno.  
   
--   Soubory nejvyšší úrovně se chovají trochu jinak než soubory ve složkách.  
+- Soubory nejvyšší úrovně se chovají trochu jinak než soubory ve složkách.  
   
- Dalším problémem je potřeba vědět je způsob zpracování operací přesunu u položek, které se mají otevřít návrháři nebo editoru. Chování je očekávané následujícím způsobem (to platí pro všechny typy projektů):  
+  Dalším problémem je potřeba vědět je způsob zpracování operací přesunu u položek, které se mají otevřít návrháři nebo editoru. Chování je očekávané následujícím způsobem (to platí pro všechny typy projektů):  
   
-1.  Je-li otevřít Návrhář/editor nemá žádné neuložené změny, pak v okně editoru nebo návrháře je třeba tiše zavřít.  
+1. Je-li otevřít Návrhář/editor nemá žádné neuložené změny, pak v okně editoru nebo návrháře je třeba tiše zavřít.  
   
-2.  Je-li otevřít Návrhář/editor má neuložené změny, zdroj přetažení by měla počkejte seznamu a poté požádat uživatele, aby uložit nepotvrzené změny v otevřených dokumentech před zavřením okna s výzvou podobný následujícímu :  
+2. Je-li otevřít Návrhář/editor má neuložené změny, zdroj přetažení by měla počkejte seznamu a poté požádat uživatele, aby uložit nepotvrzené změny v otevřených dokumentech před zavřením okna s výzvou podobný následujícímu :  
   
-    ```  
-    ==========================================================   
-         One or more open documents have unsaved changes.  
-    Do you want to save uncommitted changes before proceeding?   
-                      [Yes]  [No]  [Cancel]   
-    ==========================================================  
-    ```  
+   ```  
+   ==========================================================   
+        One or more open documents have unsaved changes.  
+   Do you want to save uncommitted changes before proceeding?   
+                     [Yes]  [No]  [Cancel]   
+   ==========================================================  
+   ```  
   
- To umožňuje uživateli příležitost k uložení probíhající práci, než cílový vytváří jeho kopie. Nová metoda **IVsHierarchyDropDataSource2::OnBeforeDropNotify** se přidala pro povolení tohoto zpracování.  
+   To umožňuje uživateli příležitost k uložení probíhající práci, než cílový vytváří jeho kopie. Nová metoda **IVsHierarchyDropDataSource2::OnBeforeDropNotify** se přidala pro povolení tohoto zpracování.  
   
- Cíl pak zkopíruje stav položky je ve službě storage (bez zahrnutí neuložené změny v editoru, pokud uživatel vybral **ne**). Po dokončení jeho kopírování cílem (v **IVsHierarchyDropDataSource::Drop**), zdroj je příležitost k dokončení odstranění část přesunutím (v **IVsHierarchyDropDataSource::O nDropNotify**).  
+   Cíl pak zkopíruje stav položky je ve službě storage (bez zahrnutí neuložené změny v editoru, pokud uživatel vybral **ne**). Po dokončení jeho kopírování cílem (v **IVsHierarchyDropDataSource::Drop**), zdroj je příležitost k dokončení odstranění část přesunutím (v **IVsHierarchyDropDataSource::O nDropNotify**).  
   
- Žádné editoru s neuloženými změnami by měl být ponechány otevřené. Pro tyto dokumenty s neuloženými změnami to znamená, že se provede kopírování část v provádění operace přesunutí, ale část delete se přeruší. Ve více výběru scénáře, když uživatel vybere **ne**, by neměly být uzavřeny nebo odebrat tyto dokumenty s neuloženými změnami, ale bez neuložené změny by měla zavřít a odebrat.
+   Žádné editoru s neuloženými změnami by měl být ponechány otevřené. Pro tyto dokumenty s neuloženými změnami to znamená, že se provede kopírování část v provádění operace přesunutí, ale část delete se přeruší. Ve více výběru scénáře, když uživatel vybere **ne**, by neměly být uzavřeny nebo odebrat tyto dokumenty s neuloženými změnami, ale bez neuložené změny by měla zavřít a odebrat.
 

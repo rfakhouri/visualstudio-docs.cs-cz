@@ -19,12 +19,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 15d8d4cfb1f3a9067d3fc18933a508ecf60794e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849044"
 ---
 # <a name="visual-studio-isolated-shell"></a>Izolované prostředí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ Visual Studio izolované prostředí umožňuje vytvářet samostatné aplikace,
 ## <a name="working-with-the-isolated-shell"></a>Práce s izolovaného prostředí  
  Aplikace Visual Studio izolované prostředí má úplný přístup ke službám Visual Studio a podporuje speciální přizpůsobení a značky. Existuje několik způsobů, jak můžete přizpůsobit aplikací izolovaného prostředí:  
   
--   Součástí rozšíření VSPackages a Managed Extensibility Framework (MEF) můžete použít k rozšíření aplikací izolovaného prostředí, stejně jako můžete využít v jakékoli jiné rozšíření sady Visual Studio. Další informace najdete v tématu [rozšíření izolovaného prostředí](../extensibility/extending-the-isolated-shell.md).  
+- Součástí rozšíření VSPackages a Managed Extensibility Framework (MEF) můžete použít k rozšíření aplikací izolovaného prostředí, stejně jako můžete využít v jakékoli jiné rozšíření sady Visual Studio. Další informace najdete v tématu [rozšíření izolovaného prostředí](../extensibility/extending-the-isolated-shell.md).  
   
--   Chcete-li funkce aplikace Visual Studio a pro skupinu příkazů nabídky k dispozici nebo není k dispozici, aktualizujte soubor .vsct v projektu uživatelské rozhraní (UI) aplikace.  
+- Chcete-li funkce aplikace Visual Studio a pro skupinu příkazů nabídky k dispozici nebo není k dispozici, aktualizujte soubor .vsct v projektu uživatelské rozhraní (UI) aplikace.  
   
--   Chcete-li odebrat **možnosti** stránky ani jiné součásti sady Visual Studio shell z aplikace, aktualizace souboru .pkgundef aplikace.  
+- Chcete-li odebrat **možnosti** stránky ani jiné součásti sady Visual Studio shell z aplikace, aktualizace souboru .pkgundef aplikace.  
   
--   Pokud chcete upravit další aspekty vzhledu a chování prostředí, aktualizujte soubor .pkgdef aplikace.  
+- Pokud chcete upravit další aspekty vzhledu a chování prostředí, aktualizujte soubor .pkgdef aplikace.  
   
--   Některé aspekty prostředí je taky možné specifikovat při spuštění aplikace. Provedete to tak, aktualizujte parametry v volání Start vstupní bod appenvstub.dll.  
+- Některé aspekty prostředí je taky možné specifikovat při spuštění aplikace. Provedete to tak, aktualizujte parametry v volání Start vstupní bod appenvstub.dll.  
   
- Další informace o různých prvků, které můžete přizpůsobit, najdete v části [prvky izolovaného prostředí](../extensibility/elements-of-the-isolated-shell.md).  
+  Další informace o různých prvků, které můžete přizpůsobit, najdete v části [prvky izolovaného prostředí](../extensibility/elements-of-the-isolated-shell.md).  
   
 ## <a name="standard-features-of-the-isolated-shell"></a>Standardní funkce izolovaného prostředí  
  Následující funkce jsou standardní pro všechny edice sady Visual Studio.  

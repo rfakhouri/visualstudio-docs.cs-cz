@@ -14,27 +14,27 @@ caps.latest.revision: 19
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: a23cdd24ad696795127a4469c447f12e9d191930
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d59ccac2ef8f91fae9bede5951ff42ec5a43be0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848550"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrace aplikací do Univerzální platformy Windows (UWP)
 Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pro Windows Store 8.1, aplikace pro Windows Phone 8.1 nebo Windows Universal aplikací vytvořených pomocí sady Visual Studio 2015 RC, tak, aby bylo možné s Visual Studio 2015 RTM. (Pokud máte projekt aplikace pro Windows i Windows Phone projektu univerzální aplikace Windows 8.1, musíte provést kroky k migraci každého projektu.)  
   
  Pomocí univerzální platformy Windows teď cílit své aplikace na jeden nebo více rodin zařízení. Pokud chcete získat další informace o funkci Universal Windows apps, podívejte se na to [Průvodce platformou](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
   
--   [Migrujte vaše stávající C# /VB Windows Store 8.1 nebo Windows Phone 8.1 aplikace](#MigrateCSharp) použití univerzální platformu Windows.  
+- [Migrujte vaše stávající C# /VB Windows Store 8.1 nebo Windows Phone 8.1 aplikace](#MigrateCSharp) použití univerzální platformu Windows.  
   
--   [Migrace stávajících aplikací C++ Windows Store 8.1 nebo Windows Phone 8.1](#MigrateCPlusPlus) použití univerzální platformu Windows.  
+- [Migrace stávajících aplikací C++ Windows Store 8.1 nebo Windows Phone 8.1](#MigrateCPlusPlus) použití univerzální platformu Windows.  
   
--   [Jsou vyžadovány pro existující aplikace Universal Windows vytvořené pomocí sady Visual Studio 2015 RC změny](#PreviousVersions).  
+- [Jsou vyžadovány pro existující aplikace Universal Windows vytvořené pomocí sady Visual Studio 2015 RC změny](#PreviousVersions).  
   
--   [Jsou vyžadovány pro existující projekty testů jednotek pro aplikace Windows Universal vytvořené pomocí sady Visual Studio 2015 RC změny](#MigrateUnitTest).  
+- [Jsou vyžadovány pro existující projekty testů jednotek pro aplikace Windows Universal vytvořené pomocí sady Visual Studio 2015 RC změny](#MigrateUnitTest).  
   
- Pokud nechcete tyto změny udělat, zjistěte, jak [přenášet vaše stávající aplikace](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) do nového projektu Windows Universal.  
+  Pokud nechcete tyto změny udělat, zjistěte, jak [přenášet vaše stávající aplikace](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) do nového projektu Windows Universal.  
   
 ##  <a name="MigrateCSharp"></a> Migrujte vaše C# /VB Windows Store 8.1 nebo Windows Phone 8.1 aplikace, které používají univerzální platformu Windows  
   
@@ -333,121 +333,121 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
 #### <a name="update-your-package-manifest-file"></a>Aktualizujte si soubor manifestu balíčku  
   
-1.  Otevřete soubor Package.appxmanifest ve vašem projektu. Je potřeba upravit soubor Package.AppxManifest pro jednotlivé projekty Windows Store a Windows Phone.  
+1. Otevřete soubor Package.appxmanifest ve vašem projektu. Je potřeba upravit soubor Package.AppxManifest pro jednotlivé projekty Windows Store a Windows Phone.  
   
-2.  Je potřeba aktualizovat \<balíčku > element s nová schémata podle vaší existující typ projektu. Nejprve odeberte následující schémata závislosti na tom, jestli máte projekt Windows Store nebo Windows Phone.  
+2. Je potřeba aktualizovat \<balíčku > element s nová schémata podle vaší existující typ projektu. Nejprve odeberte následující schémata závislosti na tom, jestli máte projekt Windows Store nebo Windows Phone.  
   
-     **STARÉ pro projekt Windows Store:** vaše \<balíčku > element bude vypadat podobně jako tento.  
+    **STARÉ pro projekt Windows Store:** vaše \<balíčku > element bude vypadat podobně jako tento.  
   
-    ```xml  
-    <Package  
-        xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
-        xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">  
+   ```xml  
+   <Package  
+       xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
+       xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">  
   
-    ```  
+   ```  
   
-     **STARÉ pro projekt Windows Phone:** vaše \<balíčku > element bude vypadat podobně jako tento.  
+    **STARÉ pro projekt Windows Phone:** vaše \<balíčku > element bude vypadat podobně jako tento.  
   
-    ```xml  
-    <Package  
-        xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
-    xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest"  
-    xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest"  
-    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
-    ```  
+   ```xml  
+   <Package  
+       xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
+   xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest"  
+   xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest"  
+   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
+   ```  
   
-     **NOVÉ pro univerzální platformu Windows:** přidat schémata níže na vaše \<balíčku > element. Odeberte všechny přidružené obor názvů předpony identifikátoru z elementů schémat, které jste právě odebrali. Umožňuje aktualizovat vlastnost IgnorableNamespaces k: uap sady Management Pack. Vaše nová \<balíčku > prvek by měl vypadat podobně jako tento.  
+    **NOVÉ pro univerzální platformu Windows:** přidat schémata níže na vaše \<balíčku > element. Odeberte všechny přidružené obor názvů předpony identifikátoru z elementů schémat, které jste právě odebrali. Umožňuje aktualizovat vlastnost IgnorableNamespaces k: uap sady Management Pack. Vaše nová \<balíčku > prvek by měl vypadat podobně jako tento.  
   
-    ```xml  
-    <Package  
-        xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"  
-        xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"  
-        xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"  
-       IgnorableNamespaces= "uap mp">  
+   ```xml  
+   <Package  
+       xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"  
+       xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"  
+       xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"  
+      IgnorableNamespaces= "uap mp">  
   
-    ```  
+   ```  
   
-3.  Přidat \<závislosti > podřízený element pro \<balíčku > element. Pak přidejte \<TargetDeviceFamily > podřízený element tohoto \<závislosti > element s názvem, MinVersion a MaxVersionTested atributy. Zadejte název atributu hodnota: závislosti Windows.Universal. Poskytněte MinVersion a MaxVersionTested hodnota verze univerzální platformu Windows, který jste si nainstalovali. Tento prvek by měl vypadat nějak takto:  
+3. Přidat \<závislosti > podřízený element pro \<balíčku > element. Pak přidejte \<TargetDeviceFamily > podřízený element tohoto \<závislosti > element s názvem, MinVersion a MaxVersionTested atributy. Zadejte název atributu hodnota: závislosti Windows.Universal. Poskytněte MinVersion a MaxVersionTested hodnota verze univerzální platformu Windows, který jste si nainstalovali. Tento prvek by měl vypadat nějak takto:  
   
-    ```xml  
-    <Dependencies>  
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />  
-    </Dependencies>  
-    ```  
+   ```xml  
+   <Dependencies>  
+   <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />  
+   </Dependencies>  
+   ```  
   
-4.  **Pro Windows Store pouze:** je třeba přidat \<mp:PhoneIdentity > podřízený element pro \<balíčku > element. Přidáte atribut PhoneProductId a PhonePublisherId atribut. Nastavte PhoneProductId mít stejnou hodnotu jako atribut Name \<Identity > element. Nastavte na hodnotu PhonePublishedId: 00000000-0000-0000-0000-000000000000. Nějak tak:  
+4. **Pro Windows Store pouze:** je třeba přidat \<mp:PhoneIdentity > podřízený element pro \<balíčku > element. Přidáte atribut PhoneProductId a PhonePublisherId atribut. Nastavte PhoneProductId mít stejnou hodnotu jako atribut Name \<Identity > element. Nastavte na hodnotu PhonePublishedId: 00000000-0000-0000-0000-000000000000. Nějak tak:  
   
-    ```xml  
-    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
-    <mp:PhoneIdentity PhoneProductId="aa3815a1-2d97-4c71-8c99-578135b28cd8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>  
-    ```  
+   ```xml  
+   <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
+   <mp:PhoneIdentity PhoneProductId="aa3815a1-2d97-4c71-8c99-578135b28cd8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>  
+   ```  
   
-5.  Najít \<požadavky > element a odstranit tento element a všechny podřízené prvky, které obsahuje.  
+5. Najít \<požadavky > element a odstranit tento element a všechny podřízené prvky, které obsahuje.  
   
-6.  Přidat **uap** obor názvů následující \<prostředků > elementy: škálování, DXFeatureLevel. Příklad:  
+6. Přidat **uap** obor názvů následující \<prostředků > elementy: škálování, DXFeatureLevel. Příklad:  
   
-    ```xml  
-    <Resources>  
-      <Resource Language="en-us"/>  
-     <Resource uap:Scale="180"/>  
-     <Resource uap:DXFeatureLevel="dx11"/>  
-    </Resources>  
+   ```xml  
+   <Resources>  
+     <Resource Language="en-us"/>  
+    <Resource uap:Scale="180"/>  
+    <Resource uap:DXFeatureLevel="dx11"/>  
+   </Resources>  
   
-    ```  
+   ```  
   
-7.  Přidat **uap** obor názvů následující \<funkce > elementy: documentsLibrary picturesLibrary, videosLibrary, musicLibrary, enterpriseAuthentication, sharedUserCertificates removableStorage, události a kontakty. Příklad:  
+7. Přidat **uap** obor názvů následující \<funkce > elementy: documentsLibrary picturesLibrary, videosLibrary, musicLibrary, enterpriseAuthentication, sharedUserCertificates removableStorage, události a kontakty. Příklad:  
   
-    ```xml  
-    <Capabilities>  
-      <uap:Capability Name="documentsLibrary"/>  
-      <uap:Capability Name="removableStorage"/>  
-    </Capabilities>  
+   ```xml  
+   <Capabilities>  
+     <uap:Capability Name="documentsLibrary"/>  
+     <uap:Capability Name="removableStorage"/>  
+   </Capabilities>  
   
-    ```  
+   ```  
   
-8.  Přidat **uap** obor názvů, aby \<VisualElements > element a všechny jeho podřízené prvky. Příklad:  
+8. Přidat **uap** obor názvů, aby \<VisualElements > element a všechny jeho podřízené prvky. Příklad:  
   
-    ```xml  
-    <uap:VisualElements  
-        DisplayName="My WWA App"  
-        Square150x150Logo="images/150x150.png"  
-        Square44x44Logo="images/44x44.png"  
-        Description="My WWA App"  
-        BackgroundColor="#777777">  
-      <uap:SplashScreen Image="images/splash.png"/>  
-    </uap:VisualElements>  
+   ```xml  
+   <uap:VisualElements  
+       DisplayName="My WWA App"  
+       Square150x150Logo="images/150x150.png"  
+       Square44x44Logo="images/44x44.png"  
+       Description="My WWA App"  
+       BackgroundColor="#777777">  
+     <uap:SplashScreen Image="images/splash.png"/>  
+   </uap:VisualElements>  
   
-    ```  
+   ```  
   
-     **Platí jenom pro Windows Store:** názvy velikost dlaždice změnily. Změna atributů \<VisualElements > element tak, aby odrážela nové konvergované velikosti dlaždic. 70 × 70 stane 71 × 71, a 30 × 30 stane 44 × 44.  
+    **Platí jenom pro Windows Store:** názvy velikost dlaždice změnily. Změna atributů \<VisualElements > element tak, aby odrážela nové konvergované velikosti dlaždic. 70 × 70 stane 71 × 71, a 30 × 30 stane 44 × 44.  
   
-     **STARÝ:** dlaždici velikost názvy  
+    **STARÝ:** dlaždici velikost názvy  
   
-    ```xml  
-    <m2:VisualElements  
-        …  
-        Square30x30Logo="Assets\SmallLogo.png"  
-        …>  
-     <m2:DefaultTile  
-          …  
-          Square70x70Logo="images/70x70.png">  
-    </m2:VisualElements>  
+   ```xml  
+   <m2:VisualElements  
+       …  
+       Square30x30Logo="Assets\SmallLogo.png"  
+       …>  
+    <m2:DefaultTile  
+         …  
+         Square70x70Logo="images/70x70.png">  
+   </m2:VisualElements>  
   
-    ```  
+   ```  
   
-     **NOVÉ:** dlaždici velikost názvy  
+    **NOVÉ:** dlaždici velikost názvy  
   
-    ```xml  
-    <uap:VisualElements  
-        …  
-        Square44x44Logo="Assets\SmallLogo.png"  
-        …>  
-     <uap:DefaultTile  
-          …  
-          Square71x71Logo="images/70x70.png">  
-    </uap:VisualElements>  
+   ```xml  
+   <uap:VisualElements  
+       …  
+       Square44x44Logo="Assets\SmallLogo.png"  
+       …>  
+    <uap:DefaultTile  
+         …  
+         Square71x71Logo="images/70x70.png">  
+   </uap:VisualElements>  
   
-    ```  
+   ```  
   
 9. Přidat **uap** obor názvů, aby \<ApplicationContentUriRules > a všechny jeho podřízené prvky. Příklad:  
   
@@ -563,28 +563,28 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
 15. Odeberte všechny nepoužívané prvky.  
   
-    1.  Tyto atributy pro \<VisualElements > jsou zastaralé a měly by se odebrat:  
+    1. Tyto atributy pro \<VisualElements > jsou zastaralé a měly by se odebrat:  
   
-        -   \<VisualElements > atributy: ForegroundText, ToastCapable  
+       - \<VisualElements > atributy: ForegroundText, ToastCapable  
   
-        -   \<DefaultTile > atribut DefaultSize  
+       - \<DefaultTile > atribut DefaultSize  
   
-        -   \<ApplicationView > – element  
+       - \<ApplicationView > – element  
   
          Příklad:  
   
-        ```xml  
-        <m2:VisualElements  
-            …  
-            ForegroundText="dark"  
-            ToastCapable="true">  
-        <m2:DefaultTile DefaultSize="square150x150Logo"/>  
-          <m2:ApplicationView MinWidth="width320"/>  
-        </m2:VisualElements>  
+       ```xml  
+       <m2:VisualElements  
+           …  
+           ForegroundText="dark"  
+           ToastCapable="true">  
+       <m2:DefaultTile DefaultSize="square150x150Logo"/>  
+         <m2:ApplicationView MinWidth="width320"/>  
+       </m2:VisualElements>  
   
-        ```  
+       ```  
   
-    2.  Odeberte Windows.contact a windows.contactPicker rozšíření a všechny prvky v rámci těchto rozšíření.  
+    2. Odeberte Windows.contact a windows.contactPicker rozšíření a všechny prvky v rámci těchto rozšíření.  
   
 16. Uložte soubor Package.appxmanifest. Zavřete Visual Studio.  
   
@@ -618,113 +618,113 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
 ##### <a name="update-your-cvb-projects-to-use-the-latest-universal-windows-platform"></a>Aktualizace projektů C# /VB používat nejnovější univerzální platformu Windows  
   
-1.  K vyhledání které univerzální platformu Windows, který jste si nainstalovali tuto složku otevřete: **\Program soubory (x86) \Windows Kits\10\Platforms\UAP**. Obsahuje seznam složek pro jednotlivé univerzální platformy Windows, který je nainstalován. Název složky je univerzální platformu Windows verze, kterou jste nainstalovali. Například má toto zařízení s Windows 10 verze 10.0.10240.0 univerzální platformy Windows.  
+1. K vyhledání které univerzální platformu Windows, který jste si nainstalovali tuto složku otevřete: **\Program soubory (x86) \Windows Kits\10\Platforms\UAP**. Obsahuje seznam složek pro jednotlivé univerzální platformy Windows, který je nainstalován. Název složky je univerzální platformu Windows verze, kterou jste nainstalovali. Například má toto zařízení s Windows 10 verze 10.0.10240.0 univerzální platformy Windows.  
   
-     ![Otevřete složku, chcete-li zobrazit nainstalované verze](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
+    ![Otevřete složku, chcete-li zobrazit nainstalované verze](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
-     Můžete nainstalovat více než jednu verzi univerzální platformu Windows. Doporučujeme používat nejnovější verzi pro vaši aplikaci.  
+    Můžete nainstalovat více než jednu verzi univerzální platformu Windows. Doporučujeme používat nejnovější verzi pro vaši aplikaci.  
   
-2.  Pomocí Průzkumníka souborů, přejděte do složky, kde je uložen váš projekt UPW. Odstranit soubor packages.config a vytvořte nový soubor .json v této složce. Název souboru: project.json a potom do tohoto souboru přidejte následující obsah:  
+2. Pomocí Průzkumníka souborů, přejděte do složky, kde je uložen váš projekt UPW. Odstranit soubor packages.config a vytvořte nový soubor .json v této složce. Název souboru: project.json a potom do tohoto souboru přidejte následující obsah:  
   
-    ```json  
+   ```json  
   
-    {  
-      "dependencies": {  
-        "Microsoft.ApplicationInsights": "1.0.0",  
-        "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",  
-        "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",  
-        "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"  
-      },  
-      "frameworks": {  
-        "uap10.0": {}  
-      },  
-      "runtimes": {  
-        "win10-arm": {},  
-        "win10-arm-aot": {},  
-        "win10-x86": {},  
-        "win10-x86-aot": {},  
-        "win10-x64": {},  
-        "win10-x64-aot": {}  
-      }  
-    }  
+   {  
+     "dependencies": {  
+       "Microsoft.ApplicationInsights": "1.0.0",  
+       "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",  
+       "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",  
+       "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"  
+     },  
+     "frameworks": {  
+       "uap10.0": {}  
+     },  
+     "runtimes": {  
+       "win10-arm": {},  
+       "win10-arm-aot": {},  
+       "win10-x86": {},  
+       "win10-x86-aot": {},  
+       "win10-x64": {},  
+       "win10-x64-aot": {}  
+     }  
+   }  
   
-    ```  
+   ```  
   
-3.  Pomocí sady Visual Studio otevřete řešení, která obsahuje aplikaci C# /VB Universal Windows. Uvidíte, že je potřeba aktualizovat váš soubor projektu (soubor .csproj nebo .vbproj). Klikněte pravým tlačítkem na soubor projektu a zvolte pro úpravy tohoto souboru.  
+3. Pomocí sady Visual Studio otevřete řešení, která obsahuje aplikaci C# /VB Universal Windows. Uvidíte, že je potřeba aktualizovat váš soubor projektu (soubor .csproj nebo .vbproj). Klikněte pravým tlačítkem na soubor projektu a zvolte pro úpravy tohoto souboru.  
   
-     ![Klikněte pravým tlačítkem na projekt a klikněte na položku upravit](../misc/media/uap-editproject.png "UAP_EditProject")  
+    ![Klikněte pravým tlačítkem na projekt a klikněte na položku upravit](../misc/media/uap-editproject.png "UAP_EditProject")  
   
-4.  Najít \<PropertyGroup > element, který obsahuje \<TargetPlatformVersion > a \<prvkem TargetPlatformMinVersion > elementy. Přepište stávající hodnotu vlastnosti \<TargetPlatformVersion > a \<prvkem TargetPlatformMinVersion > prvků, které mají být stejná verze nástroje univerzální platformy Windows, který jste nainstalovali.  
+4. Najít \<PropertyGroup > element, který obsahuje \<TargetPlatformVersion > a \<prvkem TargetPlatformMinVersion > elementy. Přepište stávající hodnotu vlastnosti \<TargetPlatformVersion > a \<prvkem TargetPlatformMinVersion > prvků, které mají být stejná verze nástroje univerzální platformy Windows, který jste nainstalovali.  
   
-     Výchozí asset škálování pro Universal Windows apps je 200. Projekty vytvořené pomocí Visual Studio 2015 RC zahrnuté prostředky škálování na 100, budete muset přidat \<UapDefaultAssetScale > element s hodnotou od 100 do této PropertyGroup. Další informace o [prostředky a škálování](http://msdn.microsoft.com/library/jj679352.aspx).  
+    Výchozí asset škálování pro Universal Windows apps je 200. Projekty vytvořené pomocí Visual Studio 2015 RC zahrnuté prostředky škálování na 100, budete muset přidat \<UapDefaultAssetScale > element s hodnotou od 100 do této PropertyGroup. Další informace o [prostředky a škálování](http://msdn.microsoft.com/library/jj679352.aspx).  
   
-5.  Pokud jste přidali všechny odkazy na UPW rozšíření sady SDK (například: Mobile SDK pro Windows), budete muset aktualizovat verzi sady SDK. Například to \<sdkreference – > element:  
+5. Pokud jste přidali všechny odkazy na UPW rozšíření sady SDK (například: Mobile SDK pro Windows), budete muset aktualizovat verzi sady SDK. Například to \<sdkreference – > element:  
   
-    ```xml  
-    <SDKReference Include="WindowsMobile, Version=10.0.0.1">  
-          <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
-    </SDKReference>  
+   ```xml  
+   <SDKReference Include="WindowsMobile, Version=10.0.0.1">  
+         <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
+   </SDKReference>  
   
-    ```  
+   ```  
   
-     By měl být změněn na toto:  
+    By měl být změněn na toto:  
   
-    ```xml  
-    <SDKReference Include="WindowsMobile, Version=10.0.10240.0">  
-          <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
-    </SDKReference>  
+   ```xml  
+   <SDKReference Include="WindowsMobile, Version=10.0.10240.0">  
+         <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
+   </SDKReference>  
   
-    ```  
+   ```  
   
-6.  Najít \<cíl > element s názvem atribut, který má hodnotu: EnsureNuGetPackageBuildImports. Odstraňte tento element a všechny jeho podřízené objekty.  
+6. Najít \<cíl > element s názvem atribut, který má hodnotu: EnsureNuGetPackageBuildImports. Odstraňte tento element a všechny jeho podřízené objekty.  
   
-    ```xml  
-    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  
-        <PropertyGroup>  
-          <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>  
-        </PropertyGroup>  
-        <Error Condition="!Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets'))" />  
-        <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets'))" />  
-    </Target>  
-    ```  
+   ```xml  
+   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  
+       <PropertyGroup>  
+         <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>  
+       </PropertyGroup>  
+       <Error Condition="!Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets'))" />  
+       <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets'))" />  
+   </Target>  
+   ```  
   
-7.  Vyhledat a odstranit \<Import > prvků s atributy projektu a podmínky, které odkazují na Microsoft.Diagnostics.Tracing.EventSource a Microsoft.ApplicationInsights, tímto způsobem:  
+7. Vyhledat a odstranit \<Import > prvků s atributy projektu a podmínky, které odkazují na Microsoft.Diagnostics.Tracing.EventSource a Microsoft.ApplicationInsights, tímto způsobem:  
   
-    ```xml  
-    <Import Project="..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" />  
-    <Import Project="..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" />  
+   ```xml  
+   <Import Project="..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" />  
+   <Import Project="..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" />  
   
-    ```  
+   ```  
   
-8.  Najít \<ItemGroup >, který má \<odkaz > podřízených prvků, které se balíčky NuGet. Poznamenejte si balíčky NuGet, na které odkazují, protože tyto informace budete potřebovat pro další krok. Jednou z největších rozdílů mezi formát projektu Windows 10 mezi Visual Studio 2015 RC a Visual Studio 2015 RTM je, že formát RTM používá [NuGet](http://docs.nuget.org/) verze 3.  
+8. Najít \<ItemGroup >, který má \<odkaz > podřízených prvků, které se balíčky NuGet. Poznamenejte si balíčky NuGet, na které odkazují, protože tyto informace budete potřebovat pro další krok. Jednou z největších rozdílů mezi formát projektu Windows 10 mezi Visual Studio 2015 RC a Visual Studio 2015 RTM je, že formát RTM používá [NuGet](http://docs.nuget.org/) verze 3.  
   
-     Odeberte \<ItemGroup > a všechny jeho podřízené položky. Například projekt UPW vytvořené pomocí sady Visual Studio RC bude mít následující balíčky NuGet, které je potřeba odebrat:  
+    Odeberte \<ItemGroup > a všechny jeho podřízené položky. Například projekt UPW vytvořené pomocí sady Visual Studio RC bude mít následující balíčky NuGet, které je potřeba odebrat:  
   
-    ```xml  
-    <ItemGroup>  
-        <Reference Include="Microsoft.ApplicationInsights, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
-          <HintPath>..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="Microsoft.ApplicationInsights.Extensibility.Windows, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
-          <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsApps.0.14.3-build00177\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="Microsoft.ApplicationInsights.PersistenceChannel, Version=0.14.3.186, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
-          <HintPath>..\packages\Microsoft.ApplicationInsights.PersistenceChannel.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.PersistenceChannel.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
-          <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="System.Numerics.Vectors.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
-          <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.WindowsRuntime.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-      </ItemGroup>  
+   ```xml  
+   <ItemGroup>  
+       <Reference Include="Microsoft.ApplicationInsights, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
+         <HintPath>..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="Microsoft.ApplicationInsights.Extensibility.Windows, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
+         <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsApps.0.14.3-build00177\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="Microsoft.ApplicationInsights.PersistenceChannel, Version=0.14.3.186, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
+         <HintPath>..\packages\Microsoft.ApplicationInsights.PersistenceChannel.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.PersistenceChannel.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
+         <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="System.Numerics.Vectors.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
+         <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.WindowsRuntime.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+     </ItemGroup>  
   
-    ```  
+   ```  
   
 9. Najít \<ItemGroup > element, který obsahuje \<AppxManifest > element. Dojde-li \<žádný > element s atributem zahrnout nastaveným na: souboru packages.config, odstraňte ho. Přidejte také \<žádný > element s zahrnutí atribut a nastavte jej na hodnotu: project.json.  
   
@@ -746,9 +746,9 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
 14. Pomocí Správce NuGet přidejte balíčky, které jste odstranili v dřívějším kroku. Jednou z největších rozdílů mezi formát projektu Windows 10 mezi Visual Studio 2015 RC a Visual Studio 2015 RTM je, že formát RTM používá [NuGet](http://docs.nuget.org/) verze 3.  
   
- Teď můžete kód, vytvářet a ladit vaši aplikaci.  
+    Teď můžete kód, vytvářet a ladit vaši aplikaci.  
   
- Pokud máte projektů testů jednotek pro aplikace pro Universal Windows, je třeba také dodržet [tyto kroky](#MigrateUnitTest).  
+    Pokud máte projektů testů jednotek pro aplikace pro Universal Windows, je třeba také dodržet [tyto kroky](#MigrateUnitTest).  
   
 ###  <a name="RCUpdate10CPlusPlus"></a> Aktualizujte vaše projekty C++ používaly nejnovější univerzální platformu Windows  
   
@@ -826,176 +826,176 @@ Proveďte nutné ruční změny stávajících souborů projektu pro aplikace pr
   
 ###  <a name="UnitTestRCUpdate10CSharp"></a> Aktualizace projektů testů jednotek vaší C# /VB  
   
-1.  Pomocí sady Visual Studio otevřete řešení, která obsahuje projektu C# /VB jednotkového testu. Změňte hodnotu \<OuttputType > element: AppContainerExe.  
+1. Pomocí sady Visual Studio otevřete řešení, která obsahuje projektu C# /VB jednotkového testu. Změňte hodnotu \<OuttputType > element: AppContainerExe.  
   
-    ```xml  
+   ```xml  
   
-    <OutputType>AppContainerExe</OutputType>  
+   <OutputType>AppContainerExe</OutputType>  
   
-    ```  
+   ```  
   
-2.  Nahraďte tento prvek \<EnableCoreRuntime > false\</EnableCoreRuntime > s následující element:  
+2. Nahraďte tento prvek \<EnableCoreRuntime > false\</EnableCoreRuntime > s následující element:  
   
-    ```xml  
+   ```xml  
   
-    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>  
+   <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>  
   
-    ```  
+   ```  
   
-3.  Odeberte tyto řádky:  
+3. Odeberte tyto řádky:  
   
-    ```xml  
+   ```xml  
   
-    <PropertyGroup>  
-        <AppXPackage>True</AppXPackage>  
-        <AppxPackageIncludePrivateSymbols>true</AppxPackageIncludePrivateSymbols>  
-     </PropertyGroup>  
-     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">  
-     <PlatformTarget>AnyCPU</PlatformTarget>  
-     <DebugSymbols>true</DebugSymbols>  
-     <DebugType>full</DebugType>  
-     <Optimize>false</Optimize>  
-     <OutputPath>bin\Debug\</OutputPath>  
-     <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
-     <ErrorReport>prompt</ErrorReport>  
-     <WarningLevel>4</WarningLevel>  
-     </PropertyGroup>  
-     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">  
-        <PlatformTarget>AnyCPU</PlatformTarget>  
-        <DebugType>pdbonly</DebugType>  
-        <Optimize>true</Optimize>  
-        <OutputPath>bin\Release\</OutputPath>  
-        <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
-        <ErrorReport>prompt</ErrorReport>  
-        <WarningLevel>4</WarningLevel>  
-     </PropertyGroup>  
+   <PropertyGroup>  
+       <AppXPackage>True</AppXPackage>  
+       <AppxPackageIncludePrivateSymbols>true</AppxPackageIncludePrivateSymbols>  
+    </PropertyGroup>  
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">  
+    <PlatformTarget>AnyCPU</PlatformTarget>  
+    <DebugSymbols>true</DebugSymbols>  
+    <DebugType>full</DebugType>  
+    <Optimize>false</Optimize>  
+    <OutputPath>bin\Debug\</OutputPath>  
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
+    <ErrorReport>prompt</ErrorReport>  
+    <WarningLevel>4</WarningLevel>  
+    </PropertyGroup>  
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">  
+       <PlatformTarget>AnyCPU</PlatformTarget>  
+       <DebugType>pdbonly</DebugType>  
+       <Optimize>true</Optimize>  
+       <OutputPath>bin\Release\</OutputPath>  
+       <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
+       <ErrorReport>prompt</ErrorReport>  
+       <WarningLevel>4</WarningLevel>  
+    </PropertyGroup>  
   
-    ```  
+   ```  
   
-4.  Přidejte tento element \<UseDotNetNativeToolchain > true\</UseDotNetNativeToolchain > jako podřízený prvek do těchto skupin vlastnost:  
+4. Přidejte tento element \<UseDotNetNativeToolchain > true\</UseDotNetNativeToolchain > jako podřízený prvek do těchto skupin vlastnost:  
   
-    ```xml  
+   ```xml  
   
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">  
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X86'">  
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X64'">  
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">  
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X86'">  
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X64'">  
   
-    ```  
+   ```  
   
-5.  Odstranit následující \<ItemGroup > prvky:  
+5. Odstranit následující \<ItemGroup > prvky:  
   
-    ```xml  
+   ```xml  
   
-    <ItemGroup>  
-       <Compile Include="Properties\AssemblyInfo.cs" />  
-       <Compile Include="UnitTest.cs" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <AppxManifest Include="Package.appxmanifest">  
-          <SubType>Designer</SubType>  
-       </AppxManifest>  
-       <None Include="packages.config" />  
-       <None Include="UnitTestProject1_TemporaryKey.pfx" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <Content Include="Properties\Default.rd.xml" />  
-       <Content Include="Assets\Logo.scale-240.png" />  
-       <Content Include="Assets\SmallLogo.scale-240.png" />  
-       <Content Include="Assets\SplashScreen.scale-240.png" />  
-       <Content Include="Assets\Square71x71Logo.scale-240.png" />  
-       <Content Include="Assets\StoreLogo.scale-240.png" />  
-       <Content Include="Assets\WideLogo.scale-240.png" />  
-    </ItemGroup>  
+   <ItemGroup>  
+      <Compile Include="Properties\AssemblyInfo.cs" />  
+      <Compile Include="UnitTest.cs" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <AppxManifest Include="Package.appxmanifest">  
+         <SubType>Designer</SubType>  
+      </AppxManifest>  
+      <None Include="packages.config" />  
+      <None Include="UnitTestProject1_TemporaryKey.pfx" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <Content Include="Properties\Default.rd.xml" />  
+      <Content Include="Assets\Logo.scale-240.png" />  
+      <Content Include="Assets\SmallLogo.scale-240.png" />  
+      <Content Include="Assets\SplashScreen.scale-240.png" />  
+      <Content Include="Assets\Square71x71Logo.scale-240.png" />  
+      <Content Include="Assets\StoreLogo.scale-240.png" />  
+      <Content Include="Assets\WideLogo.scale-240.png" />  
+   </ItemGroup>  
   
-    ```  
+   ```  
   
-     Nahraďte je tyto prvky:  
+    Nahraďte je tyto prvky:  
   
-    ```xml  
+   ```xml  
   
-    <ItemGroup>  
-       <Compile Include="Properties\AssemblyInfo.cs" />  
-       <Compile Include="UnitTestApp.xaml.cs">  
-          <DependentUpon>UnitTestApp.xaml</DependentUpon>  
-       </Compile>  
-       <Compile Include="UnitTest.cs" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <ApplicationDefinition Include="UnitTestApp.xaml">  
-          <Generator>MSBuild:Compile</Generator>  
-          <SubType>Designer</SubType>  
-       </ApplicationDefinition>  
-    </ItemGroup>  
-    <ItemGroup>  
-       <AppxManifest Include="Package.appxmanifest">  
-          <SubType>Designer</SubType>  
-       </AppxManifest>  
-       <None Include="UnitTestProject1_TemporaryKey.pfx" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <Content Include="Properties\UnitTestApp.rd.xml" />  
-       <Content Include="Assets\LockScreenLogo.scale-200.png" />  
-       <Content Include="Assets\SplashScreen.scale-200.png" />  
-       <Content Include="Assets\Square150x150Logo.scale-200.png" />  
-       <Content Include="Assets\Square44x44Logo.scale-200.png" />  
-       <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />  
-       <Content Include="Assets\StoreLogo.png" />  
-       <Content Include="Assets\Wide310x150Logo.scale-200.png" />  
-    </ItemGroup>  
-    ```  
+   <ItemGroup>  
+      <Compile Include="Properties\AssemblyInfo.cs" />  
+      <Compile Include="UnitTestApp.xaml.cs">  
+         <DependentUpon>UnitTestApp.xaml</DependentUpon>  
+      </Compile>  
+      <Compile Include="UnitTest.cs" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <ApplicationDefinition Include="UnitTestApp.xaml">  
+         <Generator>MSBuild:Compile</Generator>  
+         <SubType>Designer</SubType>  
+      </ApplicationDefinition>  
+   </ItemGroup>  
+   <ItemGroup>  
+      <AppxManifest Include="Package.appxmanifest">  
+         <SubType>Designer</SubType>  
+      </AppxManifest>  
+      <None Include="UnitTestProject1_TemporaryKey.pfx" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <Content Include="Properties\UnitTestApp.rd.xml" />  
+      <Content Include="Assets\LockScreenLogo.scale-200.png" />  
+      <Content Include="Assets\SplashScreen.scale-200.png" />  
+      <Content Include="Assets\Square150x150Logo.scale-200.png" />  
+      <Content Include="Assets\Square44x44Logo.scale-200.png" />  
+      <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />  
+      <Content Include="Assets\StoreLogo.png" />  
+      <Content Include="Assets\Wide310x150Logo.scale-200.png" />  
+   </ItemGroup>  
+   ```  
   
-6.  Vytvořte nový projekt testování částí a zkopírujte soubory UnitTestApp.xaml a UnitTestApp.xaml.cs z tohoto nového projektu do existujícího projektu jednotkového testu, který se aktualizuje.  
+6. Vytvořte nový projekt testování částí a zkopírujte soubory UnitTestApp.xaml a UnitTestApp.xaml.cs z tohoto nového projektu do existujícího projektu jednotkového testu, který se aktualizuje.  
   
-7.  Zkopírujte soubor UnitTestApp.rd.xml z vlastnosti složky nového projektu testování částí do složky vlastnosti existujícího projektu jednotkového testu, který se aktualizuje.  
+7. Zkopírujte soubor UnitTestApp.rd.xml z vlastnosti složky nového projektu testování částí do složky vlastnosti existujícího projektu jednotkového testu, který se aktualizuje.  
   
-8.  Otevřete soubor Package.appxmanifest ve vašem projektu. Z něj odstraňte tyto prvky:  
+8. Otevřete soubor Package.appxmanifest ve vašem projektu. Z něj odstraňte tyto prvky:  
   
-    ```xml  
+   ```xml  
   
-    <Applications>  
-       <Application Id="vstest.executionengine.universal.App"  
-             Executable="vstest.executionengine.appcontainer.uap.exe"  
-             EntryPoint="Microsoft.VisualStudio.TestPlatform.TestExecutor.AppContainer.App">  
-          <uap:VisualElements  
-             DisplayName="UnitTestProject1"  
-             Square150x150Logo="Assets\Logo.png"  
-             Square44x44Logo="Assets\SmallLogo.png"  
-             Description="UnitTestProject1"  
-             BackgroundColor="#464646">  
-             <uap:SplashScreen Image="Assets\SplashScreen.png" />  
-          </uap:VisualElements>  
-       </Application>  
-    </Applications>  
-    <Capabilities>  
-       <Capability Name="internetClientServer" />  
-    </Capabilities>  
-    ```  
+   <Applications>  
+      <Application Id="vstest.executionengine.universal.App"  
+            Executable="vstest.executionengine.appcontainer.uap.exe"  
+            EntryPoint="Microsoft.VisualStudio.TestPlatform.TestExecutor.AppContainer.App">  
+         <uap:VisualElements  
+            DisplayName="UnitTestProject1"  
+            Square150x150Logo="Assets\Logo.png"  
+            Square44x44Logo="Assets\SmallLogo.png"  
+            Description="UnitTestProject1"  
+            BackgroundColor="#464646">  
+            <uap:SplashScreen Image="Assets\SplashScreen.png" />  
+         </uap:VisualElements>  
+      </Application>  
+   </Applications>  
+   <Capabilities>  
+      <Capability Name="internetClientServer" />  
+   </Capabilities>  
+   ```  
   
-     Nahraďte následující prvky tyto odstraněné prvky. Použijte příslušné hodnoty pro název projektu na základě názvu projektu, namísto UnitTestProject1 v následující prvky:  
+    Nahraďte následující prvky tyto odstraněné prvky. Použijte příslušné hodnoty pro název projektu na základě názvu projektu, namísto UnitTestProject1 v následující prvky:  
   
-    ```xml  
+   ```xml  
   
-    <Applications>  
-       <Application Id="vstest.executionengine.universal.App"   
-             Executable="$targetnametoken$.exe"  
-             EntryPoint="UnitTestProject1.App">  
-          <uap:VisualElements  
-                DisplayName="UnitTestProject1"  
-                Square150x150Logo="Assets\Square150x150Logo.png"  
-                Square44x44Logo="Assets\Square44x44Logo.png"  
-                Description="UnitTestProject1"  
-                BackgroundColor="transparent">  
-             <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>  
-             <uap:SplashScreen Image="Assets\SplashScreen.png" />  
-          </uap:VisualElements>  
-       </Application>  
-    </Applications>  
-    <Capabilities>  
-       <Capability Name="internetClient" />  
-    </Capabilities>  
-    ```  
+   <Applications>  
+      <Application Id="vstest.executionengine.universal.App"   
+            Executable="$targetnametoken$.exe"  
+            EntryPoint="UnitTestProject1.App">  
+         <uap:VisualElements  
+               DisplayName="UnitTestProject1"  
+               Square150x150Logo="Assets\Square150x150Logo.png"  
+               Square44x44Logo="Assets\Square44x44Logo.png"  
+               Description="UnitTestProject1"  
+               BackgroundColor="transparent">  
+            <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>  
+            <uap:SplashScreen Image="Assets\SplashScreen.png" />  
+         </uap:VisualElements>  
+      </Application>  
+   </Applications>  
+   <Capabilities>  
+      <Capability Name="internetClient" />  
+   </Capabilities>  
+   ```  
   
- Nyní můžete spustit testování částí.  
+   Nyní můžete spustit testování částí.  
   
 ###  <a name="UnitTestRCUpdate10CPlusPlus"></a> Aktualizujte vaše projekty C++ používaly nejnovější univerzální platformu Windows  
   

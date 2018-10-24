@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a63dd4eae31b99646af04ceabe76e4edb946027
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849031"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel
   Tento úvodní názorný postup ukazuje, jak k vytvoření přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Excel. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pouze při otevření konkrétní sešitu. Nelze použít přizpůsobení úrovni dokumentu provést změny celou aplikaci, například zobrazení novou kartu pásu karet při otevření libovolné sešitu.  
@@ -31,17 +31,17 @@ ms.locfileid: "38800929"
   
  Tento návod znázorňuje následující úlohy:  
   
--   Vytvoření projektu sešitu aplikace Excel.  
+- Vytvoření projektu sešitu aplikace Excel.  
   
--   Přidání textu do listu, která je hostována v návrháři aplikace Visual Studio.  
+- Přidání textu do listu, která je hostována v návrháři aplikace Visual Studio.  
   
--   Psaní kódu, který se používá k přidání text do přizpůsobené listu, při otevření modelu objektů aplikace Excel.  
+- Psaní kódu, který se používá k přidání text do přizpůsobené listu, při otevření modelu objektů aplikace Excel.  
   
--   Vytváření a spouštění projektů a otestovat ho.  
+- Vytváření a spouštění projektů a otestovat ho.  
   
--   Čištění dokončený projekt k odstranění nepotřebných sestavení souborů a nastavení zabezpečení z vývojového počítače.  
+- Čištění dokončený projekt k odstranění nepotřebných sestavení souborů a nastavení zabezpečení z vývojového počítače.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  
@@ -54,35 +54,35 @@ ms.locfileid: "38800929"
   
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Chcete-li vytvořit nový projekt sešitu aplikace Excel v sadě Visual Studio  
   
-1.  Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1. Spustit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
+2. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
   
-3.  V podokně šablony rozbalte **Visual C#** nebo **jazyka Visual Basic**a potom rozbalte **Office/SharePoint**.  
+3. V podokně šablony rozbalte **Visual C#** nebo **jazyka Visual Basic**a potom rozbalte **Office/SharePoint**.  
   
-4.  V rozbalených **Office/SharePoint** uzlu, vyberte **Office Add-ins** uzlu.  
+4. V rozbalených **Office/SharePoint** uzlu, vyberte **Office Add-ins** uzlu.  
   
-5.  V seznamu šablon projektu vyberte projekt doplňku VSTO pro Excel.  
+5. V seznamu šablon projektu vyberte projekt doplňku VSTO pro Excel.  
   
-6.  V **název** zadejte **FirstWorkbookCustomization**.  
+6. V **název** zadejte **FirstWorkbookCustomization**.  
   
-7.  Klikněte na tlačítko **OK**.  
+7. Klikněte na tlačítko **OK**.  
   
-     **Visual Studio Tools for Office Project Wizard** otevře.  
+    **Visual Studio Tools for Office Project Wizard** otevře.  
   
-8.  Vyberte **vytvoříte nový textový dokument**a klikněte na tlačítko **OK**.  
+8. Vyberte **vytvoříte nový textový dokument**a klikněte na tlačítko **OK**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstWorkbookCustomization** projektu a přidá následující soubory do projektu.  
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstWorkbookCustomization** projektu a přidá následující soubory do projektu.  
   
-    -   *FirstWorkbookCustomization*.xlsx – představuje Excelový sešit v projektu. Obsahuje všechny listy a grafy.  
+   - *FirstWorkbookCustomization*.xlsx – představuje Excelový sešit v projektu. Obsahuje všechny listy a grafy.  
   
-    -   List1 (*.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#)-list, který poskytuje návrhová plocha a kód pro první listu v sešitu. Další informace najdete v tématu [hostitelská položka Worksheet](../vsto/worksheet-host-item.md).  
+   - List1 (*.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#)-list, který poskytuje návrhová plocha a kód pro první listu v sešitu. Další informace najdete v tématu [hostitelská položka Worksheet](../vsto/worksheet-host-item.md).  
   
-    -   List2 (*.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#)-list, který poskytuje návrhová plocha a kód pro druhý listu v sešitu.  
+   - List2 (*.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#)-list, který poskytuje návrhová plocha a kód pro druhý listu v sešitu.  
   
-    -   Sheet3 – (*.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#)-list, který poskytuje návrhová plocha a kód pro třetí listu v sešitu.  
+   - Sheet3 – (*.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#)-list, který poskytuje návrhová plocha a kód pro třetí listu v sešitu.  
   
-    -   ThisWorkbook (*.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#) – obsahuje návrhová plocha a kód pro přizpůsobení na úrovni sešitu. Další informace najdete v tématu [hostitelská položka Workbook](../vsto/workbook-host-item.md).  
+   - ThisWorkbook (*.vb* soubor v jazyce Visual Basic nebo *.cs* souboru pro jazyk Visual C#) – obsahuje návrhová plocha a kód pro přizpůsobení na úrovni sešitu. Další informace najdete v tématu [hostitelská položka Workbook](../vsto/workbook-host-item.md).  
   
      Soubor kódu List1 je automaticky otevřít v návrháři.  
   

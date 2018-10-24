@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 377031abf3ebcada283df8447cd1c695e1f797e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7595d48d0f08fc16bed00385094167b1d65efc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849396"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn a ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ VSPerfCmd.exe **ProcessOff** a **ProcessOn** dílčí příkazy pozastavit a pok
   
  **ProcessOff** a **ProcessOn** dílčí příkazy také ovlivnit počet spuštění/zastavení procesu, který je zpracováván pomocí funkcí profilování rozhraní API.  
   
--   **ProcessOff** okamžitě nastaví počet operací spustit/zastavit proces na hodnotu 0 a proto pozastaví profilace.  
+- **ProcessOff** okamžitě nastaví počet operací spustit/zastavit proces na hodnotu 0 a proto pozastaví profilace.  
   
--   **ProcessOn** okamžitě nastaví počet operací spustit/zastavit proces na 1 a proto obnoví profilace.  
+- **ProcessOn** okamžitě nastaví počet operací spustit/zastavit proces na 1 a proto obnoví profilace.  
   
- Další informace najdete v tématu [profilování rozhraní API nástroje](../profiling/profiling-tools-apis.md).  
+  Další informace najdete v tématu [profilování rozhraní API nástroje](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   

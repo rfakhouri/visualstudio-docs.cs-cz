@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 081a3dfd809cc936f11d436e593d2be258452f85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676450"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847575"
 ---
 # <a name="build-office-solutions"></a>Vytváření řešení pro systém Office
   Obecně platí sestavování a ladění projektů Office je stejná jako sestavování a ladění ostatních typů projektů v sadě Visual Studio, jako jsou Windows Forms. Témata v této části popisují, které existují rozdíly. Obecné informace o tom, jak vytvářet aplikace, najdete v části [kompilace a sestavení v sadě Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -64,23 +64,23 @@ ms.locfileid: "35676450"
 ### <a name="application-level-projects"></a>Projekty na úrovni aplikace  
  Při vytváření projektu doplňku VSTO ve výstupu projektu zahrnuje následující položky:  
   
--   Sestavení projektu se všemi odkazovanými sestaveními, které mají jejich **Kopírovat místně** vlastnost nastavena na hodnotu **true**.  
+- Sestavení projektu se všemi odkazovanými sestaveními, které mají jejich **Kopírovat místně** vlastnost nastavena na hodnotu **true**.  
   
--   Manifest aplikace, který má příponu názvu souboru *.manifest*. Další informace najdete v tématu [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
+- Manifest aplikace, který má příponu názvu souboru *.manifest*. Další informace najdete v tématu [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
   
--   Manifest nasazení, který má příponu názvu souboru *.vsto*. Další informace najdete v tématu [manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md).  
+- Manifest nasazení, který má příponu názvu souboru *.vsto*. Další informace najdete v tématu [manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md).  
   
--   Databáze programu (*PDB*) soubor pro sestavení projektu.  
+- Databáze programu (*PDB*) soubor pro sestavení projektu.  
   
- Proces sestavení pro projekty doplňků VSTO také vytvoří sadu položky registru na vývojovém počítači, které jsou nutné k načtení doplňku VSTO. Další informace najdete v tématu [položky registru pro doplňky VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
+  Proces sestavení pro projekty doplňků VSTO také vytvoří sadu položky registru na vývojovém počítači, které jsou nutné k načtení doplňku VSTO. Další informace najdete v tématu [položky registru pro doplňky VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
   
- Pokud vytvoříte projekt doplňku VSTO pro Outlook, který obsahuje oblasti formuláře, proces sestavení přidá do registru následující doplňkové informace:  
+  Pokud vytvoříte projekt doplňku VSTO pro Outlook, který obsahuje oblasti formuláře, proces sestavení přidá do registru následující doplňkové informace:  
   
--   Klíč pro každou třídu zpráv, který je přidružený jeden nebo více oblastí formulářů.  
+- Klíč pro každou třídu zpráv, který je přidružený jeden nebo více oblastí formulářů.  
   
--   Záznam pro každou oblast formuláře a přidruženou hodnotu, která představuje název doplňku VSTO v Outlooku.  
+- Záznam pro každou oblast formuláře a přidruženou hodnotu, která představuje název doplňku VSTO v Outlooku.  
   
- Outlook musí tyto informace načíst oblasti formuláře.  
+  Outlook musí tyto informace načíst oblasti formuláře.  
   
 ## <a name="referenced-assemblies"></a>Odkazovaná sestavení  
  Z projektu sestavování řešení pro Office můžete odkazovat na sestavení (včetně projekty knihovny tříd). Všechna odkazovaná sestavení má vlastnost s názvem **Kopírovat místně**. **Kopírovat místní** označuje, zda sestavení je zkopírován do výstupního adresáře. Ve výchozím nastavení nastavena na **true**. Všechna odkazovaná sestavení, který má **Kopírovat místně** nastavena na **true** je zkopírován do výstupního adresáře.  
