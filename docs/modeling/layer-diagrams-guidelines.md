@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 262dfd7860c5bd16c210e7305599eeb1003372fe
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860066"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863331"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy závislostí: pokyny
 
@@ -105,7 +105,7 @@ Obvykle se zobrazí nějaké závislosti, které by neměly existovat. Tyto záv
 K popisu změn, které máte v plánu provést vašeho systému nebo v požadované architektuře, postupujte následovně Chcete-li upravit diagram závislostí. Můžete také zvážit provádíme některé změny refaktoringu pro zlepšení strukturu kódu před jeho rozšíření. Zobrazit [zlepšení strukturu kódu](#Improving).
 
 |**k**|**Proveďte tyto kroky**|
-|------------|-----------------------------|
+|-|-|
 |Odstranit závislost, která by neměla existovat|Klepněte na závislost a stiskněte klávesu **odstranit**.|
 |Změna nebo omezení směru závislosti|Nastavte jeho **směr** vlastnost.|
 |Vytvoření nových závislostí|Použití **závislost** a **obousměrná závislost** nástroje.<br /><br /> Chcete-li nakreslit více závislostí, klikněte na nástroj dvakrát. Až budete hotovi, klikněte na tlačítko **ukazatel** nástrojů nebo stisknete klávesu **ESC** klíč.|

@@ -20,15 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8dda659a746f98bfa8038156d38316729f43016c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282500"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862332"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Identifikátory by neměly obsahovat názvy typů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
@@ -48,89 +49,89 @@ ms.locfileid: "49282500"
 
  Každý samostatný token název parametru nebo člen je porovnávána s následující názvy typů dat pro konkrétní jazyk, v podobě velká a malá písmena:
 
--   BOOL
+- BOOL
 
--   WChar
+- WChar
 
--   Int8
+- Int8
 
--   UInt8
+- UInt8
 
--   krátké
+- krátké
 
--   UShort
+- UShort
 
--   int
+- int
 
--   UInt
+- UInt
 
--   Integer
+- Integer
 
--   Uinteger –
+- Uinteger –
 
--   Long
+- Long
 
--   ULong
+- ULong
 
--   bez znaménka
+- bez znaménka
 
--   podepsané
+- podepsané
 
--   plovoucí desetinnou čárkou
+- plovoucí desetinnou čárkou
 
--   float32
+- float32
 
--   float64
+- float64
 
- Kromě toho názvy parametru jsou zkontrolovány také proti následující názvy typů dat nezávislým na jazyku písmen:
+  Kromě toho názvy parametru jsou zkontrolovány také proti následující názvy typů dat nezávislým na jazyku písmen:
 
--   Objekt
+- Objekt
 
--   obj
+- obj
 
--   Boolean
+- Boolean
 
--   Char
+- Char
 
--   String
+- String
 
--   SByte
+- SByte
 
--   Byte
+- Byte
 
--   UByte
+- UByte
 
--   Int16
+- Int16
 
--   UInt16
+- UInt16
 
--   Int32
+- Int32
 
--   UInt32
+- UInt32
 
--   Int64
+- Int64
 
--   UInt64
+- UInt64
 
--   IntPtr
+- IntPtr
 
--   PTR
+- PTR
 
--   Ukazatel
+- Ukazatel
 
--   UInptr
+- UInptr
 
--   UPtr
+- UPtr
 
--   UPointer
+- UPointer
 
--   Single
+- Single
 
--   Double
+- Double
 
--   Desetinné číslo
+- Desetinné číslo
 
--   identifikátor GUID
+- identifikátor GUID
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  **Pokud je aktivována před parametr:**

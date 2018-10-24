@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 575f847758bd18c5e13298b1fddd3e34ddb98545
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862187"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Návod: Vložení textu do dokumentu z podokna akcí
   Tento návod ukazuje, jak vytvořit podokna akcí v dokumentu aplikace Microsoft Office Word. V podokně Akce obsahuje dva ovládací prvky, shromažďovat vstup a odešlete textu do dokumentu.  
@@ -60,17 +60,17 @@ ms.locfileid: "35675716"
   
 ### <a name="to-add-text-to-your-document"></a>Přidání textu do dokumentu  
   
-1.  Zadejte následující text do dokumentu aplikace Word:  
+1. Zadejte následující text do dokumentu aplikace Word:  
   
-     **21. března 2008**  
+    **21. března 2008**  
   
-     **Jméno**  
+    **Jméno**  
   
-     **Adresa**  
+    **Adresa**  
   
-     **Toto je příklad základní akce podokna ve Wordu.**  
+    **Toto je příklad základní akce podokna ve Wordu.**  
   
- Můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku do dokumentu z jeho přetažením **nástrojů** v sadě Visual Studio nebo pomocí **záložku** dialogové okno v aplikaci Word.  
+   Můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku do dokumentu z jeho přetažením **nástrojů** v sadě Visual Studio nebo pomocí **záložku** dialogové okno v aplikaci Word.  
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Chcete-li přidat ovládací prvek Bookmark do dokumentu  
   

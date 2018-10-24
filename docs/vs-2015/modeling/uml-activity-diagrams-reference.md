@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3fe8a0d33b0e9be8eecdc55ac68d23138f6506d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eed16e010c4fc070b9cc8be57731c97c2f03b2ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862278"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagramy činnosti UML: referenční dokumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "49177837"
   
  Diagram činnosti můžete použít k popisu procesy z několika typů, jako jsou následující příklady:  
   
--   Obchodních procesů nebo toku práce mezi uživateli a systému. Další informace najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
+- Obchodních procesů nebo toku práce mezi uživateli a systému. Další informace najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
   
--   Provést kroky v případu použití. Další informace najdete v tématu [diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Provést kroky v případu použití. Další informace najdete v tématu [diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   Protokol software, tedy povolených sekvence interakcí mezi komponentami.  
+- Protokol software, tedy povolených sekvence interakcí mezi komponentami.  
   
--   Algoritmus softwaru.  
+- Algoritmus softwaru.  
   
- Toto téma popisuje elementy, které můžete použít v diagramech aktivit. Podrobnější informace o vykreslování aktivit najdete v článku diagramy [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md). Chcete-li vytvořit diagram činností UML, na **architektura** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**. Další informace o tom, jak nakreslit diagramy modelování obecně naleznete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
+  Toto téma popisuje elementy, které můžete použít v diagramech aktivit. Podrobnější informace o vykreslování aktivit najdete v článku diagramy [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md). Chcete-li vytvořit diagram činností UML, na **architektura** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**. Další informace o tom, jak nakreslit diagramy modelování obecně naleznete v tématu [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-activity-diagrams"></a>Čtení diagramy činnosti  
  Tabulky v následujících částech popisují prvky, které můžete použít v diagramu činnosti a jejich hlavní vlastnosti. Úplný seznam vlastnosti prvků, naleznete v tématu [vlastnosti elementů v diagramech činnosti UML](../modeling/properties-of-elements-on-uml-activity-diagrams.md).  

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 338aade9ddef3c4ef571ea2a5bffc67064c81869
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862460"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Postupy: vytvoření vlastního protokolu HTTP text editoru pro Editor testu výkonnosti webu
 
@@ -33,31 +33,31 @@ Tato rozhraní jsou obsažena v <xref:Microsoft.VisualStudio.TestTools.WebTestin
 
 ### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Vytvořte uživatelský ovládací prvek pomocí projektu knihovny ovládacích prvků Windows
 
-1.  V sadě Visual Studio na **souboru** nabídce zvolte **nový** a pak vyberte **projektu**.
+1. V sadě Visual Studio na **souboru** nabídce zvolte **nový** a pak vyberte **projektu**.
 
-     **Nový projekt** se zobrazí dialogové okno.
+    **Nový projekt** se zobrazí dialogové okno.
 
-2.  V části **nainstalované šablony**, vyberte buď **jazyka Visual Basic** nebo **Visual C#** v závislosti na vašich preferencích programování a pak vyberte **Windows**.
+2. V části **nainstalované šablony**, vyberte buď **jazyka Visual Basic** nebo **Visual C#** v závislosti na vašich preferencích programování a pak vyberte **Windows**.
 
-    > [!NOTE]
-    > Tato ukázka používá Visual C#.
+   > [!NOTE]
+   > Tato ukázka používá Visual C#.
 
-3.  V seznamu šablon vyberte **Knihovna ovládacích prvků Windows Forms**.
+3. V seznamu šablon vyberte **Knihovna ovládacích prvků Windows Forms**.
 
-4.  V **název** textového pole zadejte název, například `MessageEditors`a zvolte **OK**.
+4. V **název** textového pole zadejte název, například `MessageEditors`a zvolte **OK**.
 
-    > [!NOTE]
-    > Tato ukázka používá MessageEditors.
+   > [!NOTE]
+   > Tato ukázka používá MessageEditors.
 
-     Projekt je přidán do nového řešení a <xref:System.Windows.Forms.UserControl> s názvem *UserControl1.cs* je předložen v návrháři.
+    Projekt je přidán do nového řešení a <xref:System.Windows.Forms.UserControl> s názvem *UserControl1.cs* je předložen v návrháři.
 
-5.  Z **nástrojů**v části **běžné ovládací prvky** kategorie, přetáhněte <xref:System.Windows.Forms.RichTextBox> na povrch UserControl1.
+5. Z **nástrojů**v části **běžné ovládací prvky** kategorie, přetáhněte <xref:System.Windows.Forms.RichTextBox> na povrch UserControl1.
 
-6.  Zvolte piktogram akce (![piktogram inteligentní](../test/media/vs_winformsmttagglyph.gif)) v pravém horním rohu <xref:System.Windows.Forms.RichTextBox> ovládací prvek a potom vyberte a **ukotvit v nadřazeném kontejneru**.
+6. Zvolte piktogram akce (![piktogram inteligentní](../test/media/vs_winformsmttagglyph.gif)) v pravém horním rohu <xref:System.Windows.Forms.RichTextBox> ovládací prvek a potom vyberte a **ukotvit v nadřazeném kontejneru**.
 
-7.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt Windows Forms Library a vyberte **vlastnosti**.
+7. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt Windows Forms Library a vyberte **vlastnosti**.
 
-8.  V **vlastnosti**, vyberte **aplikace** kartu.
+8. V **vlastnosti**, vyberte **aplikace** kartu.
 
 9. V **Cílová architektura** rozevíracího seznamu vyberte **rozhraní .NET Framework 4**.
 
@@ -95,9 +95,9 @@ Tato rozhraní jsou obsažena v <xref:Microsoft.VisualStudio.TestTools.WebTestin
 
 18. Přidejte následující vlastnosti umožňující získání a nastavení textu v RichTextBox1. <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> Rozhraní bude používat EditString a <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> bude používat EditByteArray:
 
-   ```csharp
-   public String EditString
-   {
+    ```csharp
+    public String EditString
+    {
        get
        {
            return this.richTextBox1.Text;
@@ -106,10 +106,10 @@ Tato rozhraní jsou obsažena v <xref:Microsoft.VisualStudio.TestTools.WebTestin
        {
            this.richTextBox1.Text = value;
        }
-   }
+    }
 
-   public byte[] EditByteArray
-   {
+    public byte[] EditByteArray
+    {
        get
        {
            return System.Convert.FromBase64String(richTextBox1.Text);
@@ -118,8 +118,8 @@ Tato rozhraní jsou obsažena v <xref:Microsoft.VisualStudio.TestTools.WebTestin
        {
            richTextBox1.Text = System.Convert.ToBase64String(value, 0, value.Length);
        }
-   }
-   ```
+    }
+    ```
 
 ## <a name="add-a-class-to-the-windows-control-library-project"></a>Přidání třídy do projektu knihovny ovládací prvků Windows
 

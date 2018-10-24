@@ -21,12 +21,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 588f93a89713d42efaba61a34b0dabe5eb2af523
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862161"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Postupy: Výhradní používání klávesnice
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49238519"
   
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Přidání ovládacích prvků z panelu nástrojů návrháře z klávesnice  
   
-1.  V panelu nabídky zvolte **zobrazení**, **nástrojů**.  
+1. V panelu nabídky zvolte **zobrazení**, **nástrojů**.  
   
-2.  Zvolte Ctrl + šipka nahoru nebo Ctrl + dolů šipkami k přesunutí mezi oddíly v aktuální sadě nástrojů tabulátor.  
+2. Zvolte Ctrl + šipka nahoru nebo Ctrl + dolů šipkami k přesunutí mezi oddíly v aktuální sadě nástrojů tabulátor.  
   
-3.  Klikněte na šipku nahoru nebo **šipka dolů** klíče pro přesun mezi ovládacími prvky.  
+3. Klikněte na šipku nahoru nebo **šipka dolů** klíče pro přesun mezi ovládacími prvky.  
   
-4.  Po výběru ovládacího prvku, stiskněte klávesu Enter.  
+4. Po výběru ovládacího prvku, stiskněte klávesu Enter.  
   
- Ovládací prvek je přidán do formuláře nebo návrháře.  
+   Ovládací prvek je přidán do formuláře nebo návrháře.  
   
 ## <a name="dialog-box-options"></a>Možnosti dialogového okna  
  Můžete přesunout z možností v dialogovém okně a změnit nastavení možností pomocí klávesnice.  

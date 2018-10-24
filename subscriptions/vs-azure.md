@@ -9,12 +9,12 @@ description: Zjistěte, jak aktivovat výhody služeb Azure součástí vašeho 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2a59953eb3af65430492d892e58f51f2d51f63e5
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: a97dbd638c4840266f22c46610f78ec5b2d527d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862336"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Použití Microsoft Azure v předplatných sady Visual Studio
 
@@ -24,51 +24,52 @@ Jako předplatitel sady Visual Studio můžete použít Microsoft Azure bez dal�
 
 ## <a name="eligibility"></a>Způsobilost
 
-| Úroveň předplatného / Program                                 | Výhody                     | Obnovitelné?                                                   |
-|--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | měsíční kredit 150 USD         |   Ano                                                        |
-| Visual Studio Enterprise roční                              | měsíční kredit 150 USD         |   Ano                                                        |
-| Visual Studio Enterprise měsíční                             | Není k dispozici               |                                                              |
-| Visual Studio Professional Standard                          | měsíční kredit ve výši 50 USD          |   Ano                                                        |
-| Visual Studio Professional roční                            | měsíční kredit ve výši 50 USD          |   Ano                                                        |
-| Visual Studio Professional měsíčně                           | Není k dispozici               |                                                              |
-| Visual Studio Test Pro                                       | měsíční kredit ve výši 50 USD          |   Ano                                                        |
-| Předplatné MSDN Platforms                                               | měsíční kredit 100 USD         |   Ano                                                        |
-| Visual Studio Dev Essentials                                 | Bezplatné služby a kreditem 200 USD | Bezplatné služby jsou trvalé.  pouze je jednorázový kreditem 200 USD.  |
-| Visual Studio Enterprise - NFR*                              | měsíční kredit 150 USD         |   Ano                                                        |
-| Visual Studio Enterprise – FTE                               | měsíční kredit 150 USD         |   Ano                                                        |
-| Visual Studio Enterprise – Microsoft Partner Network         | měsíční kredit 150 USD         |   Ano                                                        |
-| Visual Studio Professional – Microsoft Partner Network       | Není k dispozici               |                                                              |
-| Visual Studio Enterprise – Imagine (Standard)                | Není k dispozici               |                                                              |
-| Visual Studio Enterprise – Imagine (Premium)                 | Není k dispozici               |                                                              |
-| Visual Studio Enterprise – BizSpark                          | měsíční kredit 150 USD         |   Ano                                                        |
-| Visual Studio Enterprise – MCT Software & Services           | měsíční kredit 100 USD         |   Ano                                                        |
-| Visual Studio Enterprise – MCT Software & Services pro vývojáře | měsíční kredit 150 USD         |   Ano                                                        |
+|                 Úroveň předplatného / Program                 |           Výhody           |                         Obnovitelné?                          |
+|--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
+|              Visual Studio Enterprise Standard               |     měsíční kredit 150 USD     |                             Ano                             |
+|               Visual Studio Enterprise roční                |     měsíční kredit 150 USD     |                             Ano                             |
+|               Visual Studio Enterprise měsíční               |        Není k dispozici        |                                                             |
+|             Visual Studio Professional Standard              |     měsíční kredit ve výši 50 USD      |                             Ano                             |
+|              Visual Studio Professional roční               |     měsíční kredit ve výši 50 USD      |                             Ano                             |
+|              Visual Studio Professional měsíčně              |        Není k dispozici        |                                                             |
+|                    Visual Studio Test Pro                    |     měsíční kredit ve výši 50 USD      |                             Ano                             |
+|                        Předplatné MSDN Platforms                        |     měsíční kredit 100 USD     |                             Ano                             |
+|                 Visual Studio Dev Essentials                 | Bezplatné služby a kreditem 200 USD | Bezplatné služby jsou trvalé.  pouze je jednorázový kreditem 200 USD. |
+|               Visual Studio Enterprise – NFR\*               |     měsíční kredit 150 USD     |                             Ano                             |
+|                Visual Studio Enterprise – FTE                |     měsíční kredit 150 USD     |                             Ano                             |
+|     Visual Studio Enterprise – Microsoft Partner Network     |     měsíční kredit 150 USD     |                             Ano                             |
+|    Visual Studio Professional – Microsoft Partner Network    |        Není k dispozici        |                                                             |
+|        Visual Studio Enterprise – Imagine (Standard)         |        Není k dispozici        |                                                             |
+|         Visual Studio Enterprise – Imagine (Premium)         |        Není k dispozici        |                                                             |
+|             Visual Studio Enterprise – BizSpark              |     měsíční kredit 150 USD     |                             Ano                             |
+|      Visual Studio Enterprise – MCT Software & Services      |     měsíční kredit 100 USD     |                             Ano                             |
+| Visual Studio Enterprise – MCT Software & Services pro vývojáře |     měsíční kredit 150 USD     |                             Ano                             |
+
 * Zahrnuje není pro prodej (NFR), Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP)
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
 ## <a name="activation-steps"></a>Postup aktivace
 
-1.  Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Vyhledejte dlaždici Azure v části nástroje na výhody stránky a klikněte na tlačítko **aktivovat** odkaz v dolní části dlaždice výhodu.
-    > [!div class="mx-imgBorder"]
-    > ![Dlaždice Azure](_img\vs-azure\vs-azure-tile.png)
+2. Vyhledejte dlaždici Azure v části nástroje na výhody stránky a klikněte na tlačítko **aktivovat** odkaz v dolní části dlaždice výhodu.
+   > [!div class="mx-imgBorder"]
+   > ![Dlaždice Azure](_img/vs-azure/vs-azure-tile.png)
 
-3.  Vyplňte požadované informace pro vytvoření vašeho předplatného Azure, klikněte na zaškrtávací políčko a přijměte podmínky a ujednání, klikněte na tlačítko **zaregistrovat**:
-    > [!div class="mx-imgBorder"]
-    > ![Registrace Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
+3. Vyplňte požadované informace pro vytvoření vašeho předplatného Azure, klikněte na zaškrtávací políčko a přijměte podmínky a ujednání, klikněte na tlačítko **zaregistrovat**:
+   > [!div class="mx-imgBorder"]
+   > ![Registrace Azure](_img/vs-azure/vs-azure-sign-up-cropped.png)
 
-4.  Pokud je váš účet připraven, budete mít možnost Vybrat plán podpory Azure (prodává samostatně) nebo začít pracovat s vaším předplatným Azure.
-    > [!div class="mx-imgBorder"]
-    > ![Probíhá příprava Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+4. Pokud je váš účet připraven, budete mít možnost Vybrat plán podpory Azure (prodává samostatně) nebo začít pracovat s vaším předplatným Azure.
+   > [!div class="mx-imgBorder"]
+   > ![Probíhá příprava Azure](_img/vs-azure/vs-azure-getting-ready-cropped.png)
 
-5.  Řídicí panel Azure načte a při prvním použití, budete mít možnost prohlídku.  Prohlídka se skládá z řady tipy, které se odkazují na více systémů jak provádět různé úlohy a vyhledat důležité informace.  Dokončení nebo zavírání prohlídku se zobrazí řídicí panel Azure.
+5. Řídicí panel Azure načte a při prvním použití, budete mít možnost prohlídku.  Prohlídka se skládá z řady tipy, které se odkazují na více systémů jak provádět různé úlohy a vyhledat důležité informace.  Dokončení nebo zavírání prohlídku se zobrazí řídicí panel Azure.
 
-6.  Záložky [webu Azure Portal](https://portal.azure.com) pro usnadnění přístupu v budoucnu.
-    > [!div class="mx-imgBorder"]
-    > ![Řídicí panel Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
+6. Záložky [webu Azure Portal](https://portal.azure.com) pro usnadnění přístupu v budoucnu.
+   > [!div class="mx-imgBorder"]
+   > ![Řídicí panel Azure](_img/vs-azure/vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>Nejčastější dotazy
 
