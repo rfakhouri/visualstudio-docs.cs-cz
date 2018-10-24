@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0fb7e9593ee49df3e766fbc52c578e635e2d72d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 163fcc07318ae02ff88fda13d4ea6300d513806e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857403"
 ---
 # <a name="how-to-create-starter-kits"></a>Postupy: Vytváření startovních sad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ Startovní sada obsahuje kód hotové aplikace a dokumentace o tom, jak upravit 
   
  Pokud vytváříte ukázku aplikace nebo modulu plug-in:  
   
--   Vytvořte projekt, který sestaví bez chyb.  
+- Vytvořte projekt, který sestaví bez chyb.  
   
--   Přidejte kód šablony k provedení dalších úloh (nepovinné).  
+- Přidejte kód šablony k provedení dalších úloh (nepovinné).  
   
--   Příprava v dokumentaci.  
+- Příprava v dokumentaci.  
   
- Pokud vytváříte nástroj učení:  
+  Pokud vytváříte nástroj učení:  
   
--   Vytvořte projekt, který sestaví bez chyb.  
+- Vytvořte projekt, který sestaví bez chyb.  
   
--   Uspořádání prostředků, jako jsou fragmenty kódu a šablon položek.  
+- Uspořádání prostředků, jako jsou fragmenty kódu a šablon položek.  
   
--   Příprava v dokumentaci.  
+- Příprava v dokumentaci.  
   
 ## <a name="creating-a-template"></a>Vytvoření šablony  
  Po dokončení projektu a dokumentace, budete chtít vytvořit šablonu projektu pro Starter Kit. Tento proces je přesně stejné jako vytvoření šablony projektu.  

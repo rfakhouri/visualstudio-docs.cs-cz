@@ -13,54 +13,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f85e7c6e4ba62842986db8e6090415d2e33f1c1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 18587516298fa58e8a5e783ffb1f7c37d5a6b497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859678"
 ---
 # <a name="inside-the-editor"></a>V editoru
 Editoru se skládá z několika různé subsystémy, které mají zachovat editoru samostatného modelu text ze zobrazení textu a uživatelské rozhraní.  
   
  Tyto části popisují různé aspekty editoru:  
   
--   [Přehled subsystémů](../extensibility/inside-the-editor.md#overview-of-the-subsystems)  
+- [Přehled subsystémů](../extensibility/inside-the-editor.md#overview-of-the-subsystems)  
   
--   [Textový model](../extensibility/inside-the-editor.md#the-text-model)  
+- [Textový model](../extensibility/inside-the-editor.md#the-text-model)  
   
--   [Zobrazení textu](../extensibility/inside-the-editor.md#the-text-view)  
+- [Zobrazení textu](../extensibility/inside-the-editor.md#the-text-view)  
   
- Tyto části popisují funkce editoru:  
+  Tyto části popisují funkce editoru:  
   
--   [Značky a třídění](../extensibility/inside-the-editor.md#tags-and-classifiers)  
+- [Značky a třídění](../extensibility/inside-the-editor.md#tags-and-classifiers)  
   
--   [Vylepšení](../extensibility/inside-the-editor.md#adornments)  
+- [Vylepšení](../extensibility/inside-the-editor.md#adornments)  
   
--   [Projekce](../extensibility/inside-the-editor.md#projection)  
+- [Projekce](../extensibility/inside-the-editor.md#projection)  
   
--   [Sbalení](../extensibility/inside-the-editor.md#outlining)  
+- [Sbalení](../extensibility/inside-the-editor.md#outlining)  
   
--   [Vazby myši](../extensibility/inside-the-editor.md#mousebindings)  
+- [Vazby myši](../extensibility/inside-the-editor.md#mousebindings)  
   
--   [Editor operace](../extensibility/inside-the-editor.md#editoroperations)  
+- [Editor operace](../extensibility/inside-the-editor.md#editoroperations)  
   
--   [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
+- [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
 ## <a name="overview-of-the-subsystems"></a>Přehled subsystémů  
   
 ### <a name="text-model-subsystem"></a>Subsystém modelu text  
  Subsystém modelu text zodpovídá za představující text a povolení její zpracování. Obsahuje podsystém modelu text <xref:Microsoft.VisualStudio.Text.ITextBuffer> rozhraní, které popisuje posloupnost znaků, které se mají zobrazit, můžete v editoru. Tento text můžete upravit, sledovány a jinak pracovat mnoha způsoby. Textový model také poskytuje typy pro následující aspekty:  
   
--   Služba, která přidruží textové soubory a spravuje čtení a zápis v systému souborů.  
+- Služba, která přidruží textové soubory a spravuje čtení a zápis v systému souborů.  
   
--   Rozdílové služba, která najde minimální rozdíly mezi dvěma sekvencemi objektů.  
+- Rozdílové služba, která najde minimální rozdíly mezi dvěma sekvencemi objektů.  
   
--   Systém pro popis textu ve vyrovnávací paměti z hlediska podmnožiny textu v jiné vyrovnávací paměti.  
+- Systém pro popis textu ve vyrovnávací paměti z hlediska podmnožiny textu v jiné vyrovnávací paměti.  
   
- Subsystém modelu text je zdarma koncepty uživatelské rozhraní (UI). Například není zodpovědná za rozložení textu nebo formátování textu a nemá žádné znalosti jazyka visual vylepšení, které může být spojen s textem.  
+  Subsystém modelu text je zdarma koncepty uživatelské rozhraní (UI). Například není zodpovědná za rozložení textu nebo formátování textu a nemá žádné znalosti jazyka visual vylepšení, které může být spojen s textem.  
   
- Veřejné typy podsystém text modelu jsou obsaženy v *Microsoft.VisualStudio.Text.Data.dll* a *Microsoft.VisualStudio.CoreUtility.dll*, který záviset pouze na základní rozhraní .NET Framework Knihovna tříd a Managed Extensibility Framework (MEF).  
+  Veřejné typy podsystém text modelu jsou obsaženy v *Microsoft.VisualStudio.Text.Data.dll* a *Microsoft.VisualStudio.CoreUtility.dll*, který záviset pouze na základní rozhraní .NET Framework Knihovna tříd a Managed Extensibility Framework (MEF).  
   
 ### <a name="text-view-subsystem"></a>Subsystém zobrazení textu  
  Subsystém zobrazení textu je zodpovědná za formátování a zobrazení textu. Typy v tomto subsystému dělí do dvou vrstev, v závislosti na tom, zda typy Spolehněte se na Windows Presentation Foundation (WPF). Nejdůležitější typy <xref:Microsoft.VisualStudio.Text.Editor.ITextView> a <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, které řídí sadu řádků textu, které mají být zobrazeny a také blikajícího kurzoru, výběru a zařízení pro adorning text za použití prvků uživatelského rozhraní WPF. Tato subsystému také poskytuje okraje kolem textu umožňuje zobrazit oblast. Těchto okrajů je možné rozšířit a může obsahovat různé druhy obsahu a vizuální efekty. Okraje příklady číslo pruhy zobrazí a přejděte na řádku.  

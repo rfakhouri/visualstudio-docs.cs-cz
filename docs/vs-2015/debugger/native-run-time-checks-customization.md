@@ -31,31 +31,31 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 906aca3071c9abc6bd06ac1f0dc4d75bd1920a61
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 396778e87732d73462a7ecc2a420ea22a00936b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856597"
 ---
 # <a name="native-run-time-checks-customization"></a>Přizpůsobení nativních kontrol za běhu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pokud kompilujete s **/RTC** (kontroly za běhu) nebo použít `runtime_checks` – Direktiva pragma, knihovny run-time jazyka C poskytuje nativní kontroly za běhu. V některých případech můžete chtít přizpůsobit kontrolu za běhu:  
   
--   Můžete směrovat zprávy kontrola běhu soubor nebo cíl jiné než výchozí.  
+- Můžete směrovat zprávy kontrola běhu soubor nebo cíl jiné než výchozí.  
   
--   K určení výstupní cíl pro za běhu kontrolovat zprávy v ladicím programu třetích stran.  
+- K určení výstupní cíl pro za běhu kontrolovat zprávy v ladicím programu třetích stran.  
   
--   K hlášení kontroly za běhu z programu kompilovaného s verzi knihovny run-time C. Verze knihovny nepoužívejte `_CrtDbgReportW` pro hlášení chyb za běhu. Zobrazí se místo toho **Assert** dialogové okno u každé chyby za běhu.  
+- K hlášení kontroly za běhu z programu kompilovaného s verzi knihovny run-time C. Verze knihovny nepoužívejte `_CrtDbgReportW` pro hlášení chyb za běhu. Zobrazí se místo toho **Assert** dialogové okno u každé chyby za běhu.  
   
- Chcete-li přizpůsobit, kontrola chyb za běhu, můžete:  
+  Chcete-li přizpůsobit, kontrola chyb za běhu, můžete:  
   
--   Zápis chyb za běhu funkce vytváření sestav. Další informace najdete v tématu [postupy: zápis funkce generování sestav chyb za běhu](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
+- Zápis chyb za běhu funkce vytváření sestav. Další informace najdete v tématu [postupy: zápis funkce generování sestav chyb za běhu](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
   
--   Upravte cíl chybové zprávy.  
+- Upravte cíl chybové zprávy.  
   
--   Dotaz na informace o běhu najdete v chybách.  
+- Dotaz na informace o běhu najdete v chybách.  
   
 ## <a name="customize-the-error-message-destination"></a>Upravit cíl chybové zprávy  
  Pokud používáte `_CrtDbgReportW` pro hlášení chyb, můžete použít `_CrtSetReportMode` k určení cíle chybové zprávy.  

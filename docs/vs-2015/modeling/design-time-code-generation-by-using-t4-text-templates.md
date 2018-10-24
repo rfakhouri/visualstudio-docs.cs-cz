@@ -20,12 +20,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859275"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Vytvoření kódu v době návrhu pomocí textových šablon T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,66 +82,66 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 ### <a name="regenerating-the-code"></a>Opětovné generování kódu  
  Šablonu se spustí, generování pomocný soubor v některém z následujících případech:  
   
--   Šablonu upravit a potom změňte fokus na jiný [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna.  
+- Šablonu upravit a potom změňte fokus na jiný [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna.  
   
--   Uložte šablonu.  
+- Uložte šablonu.  
   
--   Klikněte na tlačítko **Transformovat všechny šablony** v **sestavení** nabídky. To se transformovat všechny šablony v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení.  
+- Klikněte na tlačítko **Transformovat všechny šablony** v **sestavení** nabídky. To se transformovat všechny šablony v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení.  
   
--   V **Průzkumníka řešení**, v místní nabídce libovolného souboru, zvolte **spustit vlastní nástroj**. Tuto metodu použijte k transformaci podmnožinu vybrané šablony.  
+- V **Průzkumníka řešení**, v místní nabídce libovolného souboru, zvolte **spustit vlastní nástroj**. Tuto metodu použijte k transformaci podmnožinu vybrané šablony.  
   
- Můžete také nastavit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekt tak, aby tyto šablony jsou spouštěny, když datové soubory, které čtou změnily. Další informace najdete v tématu [kód znovu se generuje automaticky](#Regenerating).  
+  Můžete také nastavit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekt tak, aby tyto šablony jsou spouštěny, když datové soubory, které čtou změnily. Další informace najdete v tématu [kód znovu se generuje automaticky](#Regenerating).  
   
 ## <a name="generating-variable-text"></a>Generování textu proměnlivé  
  Textové šablony umožňují odlišit obsah generovaný soubor pomocí kódu programu.  
   
 #### <a name="to-generate-text-by-using-program-code"></a>Vygenerování textu pomocí kódu programu  
   
-1.  Změnit obsah `.tt` souboru:  
+1. Změnit obsah `.tt` souboru:  
   
-    ```csharp  
-    <#@ template hostspecific="false" language="C#" #>  
-    <#@ output extension=".txt" #>  
-    <#int top = 10;  
+   ```csharp  
+   <#@ template hostspecific="false" language="C#" #>  
+   <#@ output extension=".txt" #>  
+   <#int top = 10;  
   
-    for (int i = 0; i<=top; i++)   
-    { #>  
+   for (int i = 0; i<=top; i++)   
+   { #>  
+      The square of <#= i #> is <#= i*i #>  
+   <# } #>  
+   ```  
+  
+   ```vb  
+   <#@ template hostspecific="false" language="VB" #>  
+   <#@ output extension=".txt" #>  
+   <#Dim top As Integer = 10  
+  
+   For i As Integer = 0 To top  
+   #>  
        The square of <#= i #> is <#= i*i #>  
-    <# } #>  
-    ```  
+   <#  
+   Next  
+   #>  
   
-    ```vb  
-    <#@ template hostspecific="false" language="VB" #>  
-    <#@ output extension=".txt" #>  
-    <#Dim top As Integer = 10  
+   ```  
   
-    For i As Integer = 0 To top  
-    #>  
-        The square of <#= i #> is <#= i*i #>  
-    <#  
-    Next  
-    #>  
+2. Uložte soubor .tt a zkontrolujte soubor .txt generované znovu. Vypíše druhých mocnin čísla od 0 do 10.  
   
-    ```  
+   Všimněte si, že příkazy jsou uzavřený do složených závorek `<#...#>`a jedním umístěním pro výrazy `<#=...#>`. Další informace najdete v tématu [vytvoření textové šablony T4](../modeling/writing-a-t4-text-template.md).  
   
-2.  Uložte soubor .tt a zkontrolujte soubor .txt generované znovu. Vypíše druhých mocnin čísla od 0 do 10.  
-  
- Všimněte si, že příkazy jsou uzavřený do složených závorek `<#...#>`a jedním umístěním pro výrazy `<#=...#>`. Další informace najdete v tématu [vytvoření textové šablony T4](../modeling/writing-a-t4-text-template.md).  
-  
- Pokud píšete generování kódu [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], `template` by měl obsahovat směrnice `language="VB"`. `"C#"` je výchozí nastavení.  
+   Pokud píšete generování kódu [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], `template` by měl obsahovat směrnice `language="VB"`. `"C#"` je výchozí nastavení.  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>Ladění textové šablony T4 návrhu  
  Ladění textové šablony:  
   
--   Vložit `debug="true"` do `template` směrnice. Příklad:  
+- Vložit `debug="true"` do `template` směrnice. Příklad:  
   
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`  
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`  
   
--   Nastavte zarážky v šabloně v stejně, jako byste to udělali pro běžné kód.  
+- Nastavte zarážky v šabloně v stejně, jako byste to udělali pro běžné kód.  
   
--   Zvolte **ladit šablonu T4** z místní nabídky souboru textové šablony v Průzkumníku řešení.  
+- Zvolte **ladit šablonu T4** z místní nabídky souboru textové šablony v Průzkumníku řešení.  
   
- Šablona se spustí a zastaví na zarážce. Můžete prozkoumat proměnné a krokovat kód obvyklým způsobem.  
+  Šablona se spustí a zastaví na zarážce. Můžete prozkoumat proměnné a krokovat kód obvyklým způsobem.  
   
 > [!TIP]
 >  `debug="true"` Díky generovaný kód přesněji namapovat na textové šablony, vložením další řádek číslování direktivy do vygenerovaného kódu. Ponecháte-li vyzkoušet, zarážky může přestat běžet v chybném stavu.  
@@ -208,13 +208,13 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 ### <a name="structuring-text-templates"></a>Strukturování textových šablon  
  Jak dobrým zvykem často Představujeme oddělují kód šablony do dvou částí:  
   
--   Konfigurace nebo část shromažďování dat, která nastavuje hodnoty v proměnné, ale nemůže obsahovat textové bloky. V předchozím příkladu, tato část je inicializace `properties`.  
+- Konfigurace nebo část shromažďování dat, která nastavuje hodnoty v proměnné, ale nemůže obsahovat textové bloky. V předchozím příkladu, tato část je inicializace `properties`.  
   
-     V části "modelu" to se někdy nazývá protože sestaví model v obchodě a obvykle přečte soubor modelu.  
+   V části "modelu" to se někdy nazývá protože sestaví model v obchodě a obvykle přečte soubor modelu.  
   
--   Generování textu část (`foreach(...){...}` v příkladu), který používá hodnoty proměnné.  
+- Generování textu část (`foreach(...){...}` v příkladu), který používá hodnoty proměnné.  
   
- To není nezbytné oddělení, ale je styl, což usnadňuje čtení šablony díky snížení složitosti části, který obsahuje text.  
+  To není nezbytné oddělení, ale je styl, což usnadňuje čtení šablony díky snížení složitosti části, který obsahuje text.  
   
 ## <a name="reading-files-or-other-sources"></a>Čtení souborů nebo jiných zdrojů  
  Pro přístup k souboru modelu nebo databáze, můžete použít kód šablony sestavení, jako je například System.XML. Pokud chcete získat přístup na tato sestavení, je třeba vložit direktivy takovéto:  

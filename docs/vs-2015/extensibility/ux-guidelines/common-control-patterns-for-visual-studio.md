@@ -13,12 +13,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb915f7d17070d78e5749834c325bfee4e8a6879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56f1afba0db8ba213a601835ca7a8df39d56f171
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224039"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860757"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Vzory běžných ovládacích prvků pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -218,23 +218,23 @@ ms.locfileid: "49224039"
   
 ##### <a name="visual-style"></a>Vizuální styl  
   
--   Vodoznaky by měl být zarovnaný na střed vodorovně v okně.  
+- Vodoznaky by měl být zarovnaný na střed vodorovně v okně.  
   
--   Vodoznaky by měl být zarovnaný na System center nejsou zarovnané vlevo.  
+- Vodoznaky by měl být zarovnaný na System center nejsou zarovnané vlevo.  
   
--   Vodoznaky může svisle na střed nebo umístěny v horní části oblasti. Pokud je umístěný v horní části oblasti, musí být dostatek místa na výše uvedené tak, aby se odlišuje vodoznak.  
+- Vodoznaky může svisle na střed nebo umístěny v horní části oblasti. Pokud je umístěný v horní části oblasti, musí být dostatek místa na výše uvedené tak, aby se odlišuje vodoznak.  
   
--   Použití `Environment.GrayText` barvu písma token a standardní prostředí. Hypertextové odkazy by měl použít standardního hypertextového odkazu sdílet tokeny: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, a `Environment.PanelHyperlinkDisabled`.  
+- Použití `Environment.GrayText` barvu písma token a standardní prostředí. Hypertextové odkazy by měl použít standardního hypertextového odkazu sdílet tokeny: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, a `Environment.PanelHyperlinkDisabled`.  
   
--   Vodoznaky nelze vybrat na pozadí  
+- Vodoznaky nelze vybrat na pozadí  
   
--   Pokud je to možné zahrnout odkazy vodoznak umožňující uživateli začít pracovat.  
+- Pokud je to možné zahrnout odkazy vodoznak umožňující uživateli začít pracovat.  
   
- ![Vodoznak textu v okně návrháře](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
+  ![Vodoznak textu v okně návrháře](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
   
- ![Vodoznak textu v panelu nástrojů](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
+  ![Vodoznak textu v panelu nástrojů](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
   
- **Příklady vodoznakového textu v sadě Visual Studio**  
+  **Příklady vodoznakového textu v sadě Visual Studio**  
   
 ##  <a name="BKMK_ButtonsAndHyperlinks"></a> Tlačítka a hypertextových odkazů  
   
@@ -246,25 +246,25 @@ ms.locfileid: "49224039"
   
  Kdy použít příkazová tlačítka:  
   
--   Primární příkazy  
+- Primární příkazy  
   
--   Zobrazení okna použitá ke shromažďování vstupu nebo rozhodování, a to i v případě, že jsou sekundární příkazy  
+- Zobrazení okna použitá ke shromažďování vstupu nebo rozhodování, a to i v případě, že jsou sekundární příkazy  
   
--   Destruktivní nebo nevratná akce  
+- Destruktivní nebo nevratná akce  
   
--   Tlačítka závazku v rámci průvodců a toků  
+- Tlačítka závazku v rámci průvodců a toků  
   
- Vyhněte se příkazových tlačítek v oknech nástrojů, nebo pokud potřebujete více než dvě slova pro popisek. Odkazy můžou mít delší popisky.  
+  Vyhněte se příkazových tlačítek v oknech nástrojů, nebo pokud potřebujete více než dvě slova pro popisek. Odkazy můžou mít delší popisky.  
   
- Kdy použít odkazy:  
+  Kdy použít odkazy:  
   
--   Navigace k jinému oknu, dokumentu nebo webové stránky  
+- Navigace k jinému oknu, dokumentu nebo webové stránky  
   
--   Situace, které vyžadují delší popisek nebo krátká věta popisující cílem akce  
+- Situace, které vyžadují delší popisek nebo krátká věta popisující cílem akce  
   
--   Úzkou prostory, ve kterém by tlačítko zahlcovat uživatelského rozhraní, za předpokladu, že akce není destruktivní nebo nevratné  
+- Úzkou prostory, ve kterém by tlačítko zahlcovat uživatelského rozhraní, za předpokladu, že akce není destruktivní nebo nevratné  
   
--   Deaktivace zdroje, výrazná sekundární příkazy v situacích, kdy existuje mnoho příkazů  
+- Deaktivace zdroje, výrazná sekundární příkazy v situacích, kdy existuje mnoho příkazů  
   
 #### <a name="examples"></a>Příklady  
  ![Informační panel odkazy příkaz následující za zprávou stav](../../extensibility/ux-guidelines/media/070703-01-commandlinkinfobar.png "070703 01_CommandLinkInfobar")  
@@ -307,19 +307,19 @@ ms.locfileid: "49224039"
   
  Kdy použít jen pro tlačítko se třemi tečkami krátký tlačítko:  
   
--   Pokud existuje více než jeden dlouhý **[Procházet...]**  tlačítko v dialogovém okně, například pokud několik polí Povolit pro procházení. Používat krátké **[...]**  tlačítko pro každý z nich matoucí přístupové klíče vytvořené v této situaci vyhnout (**& Procházet** a **B & rocházet** v dialogovém okně stejné).  
+- Pokud existuje více než jeden dlouhý **[Procházet...]**  tlačítko v dialogovém okně, například pokud několik polí Povolit pro procházení. Používat krátké **[...]**  tlačítko pro každý z nich matoucí přístupové klíče vytvořené v této situaci vyhnout (**& Procházet** a **B & rocházet** v dialogovém okně stejné).  
   
--   V dialogovém okně úzkou nebo neexistuje žádný přiměřené umísťovat dlouhé tlačítko.  
+- V dialogovém okně úzkou nebo neexistuje žádný přiměřené umísťovat dlouhé tlačítko.  
   
--   Je-li na tlačítko se zobrazí v ovládacím prvku grid.  
+- Je-li na tlačítko se zobrazí v ovládacím prvku grid.  
   
- Pokyny, pomocí tlačítka:  
+  Pokyny, pomocí tlačítka:  
   
--   Nepoužívejte přístupový klíč. Pro přístup k ní pomocí klávesnice, musí uživatel karty sousedící ovládacího prvku. Ujistěte se, že je pořadí tak, aby žádné tlačítko pro procházení spadá ihned po pole bude vyplněn. Nikdy nepoužívejte podtržítka pod první období.  
+- Nepoužívejte přístupový klíč. Pro přístup k ní pomocí klávesnice, musí uživatel karty sousedící ovládacího prvku. Ujistěte se, že je pořadí tak, aby žádné tlačítko pro procházení spadá ihned po pole bude vyplněn. Nikdy nepoužívejte podtržítka pod první období.  
   
--   Nastavení Microsoft Active Accessibility (MSAA) **název** vlastnost **Procházet...**  (včetně na tři tečky), který obrazovky čtenáři budou číst ho jako "Procházet" a "tečka – tečka – tečka" nebo "období období období." Pro spravované ovládací prvky, to znamená, že nastavení **AccessibleName** vlastnost.  
+- Nastavení Microsoft Active Accessibility (MSAA) **název** vlastnost **Procházet...**  (včetně na tři tečky), který obrazovky čtenáři budou číst ho jako "Procházet" a "tečka – tečka – tečka" nebo "období období období." Pro spravované ovládací prvky, to znamená, že nastavení **AccessibleName** vlastnost.  
   
--   Nikdy nepoužívejte trojtečka **[...]**  tlačítko pro všechno, co s výjimkou procházení akce. Například, pokud potřebujete **[nový …]**  tlačítko, ale nemají dostatek volného místa pro text, pak dialogového okna musí být přepracován.  
+- Nikdy nepoužívejte trojtečka **[...]**  tlačítko pro všechno, co s výjimkou procházení akce. Například, pokud potřebujete **[nový …]**  tlačítko, ale nemají dostatek volného místa pro text, pak dialogového okna musí být přepracován.  
   
 ##### <a name="sizing-and-spacing"></a>Dimenzování a mezery  
  ![Změna velikosti &#91;Procházet... &#93; tlačítka](../../extensibility/ux-guidelines/media/070703-06-browsesizing.png "070703 06_BrowseSizing")  
@@ -442,13 +442,13 @@ ms.locfileid: "49224039"
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (stromové zobrazení a zobrazení mřížky)  
  Trid ovládacího prvku je komplexní ovládací prvek obsahující stromové zobrazení v mřížce. Rozšíření, sbalování a procházení stromu by měly dodržovat stejné klávesových příkazů jako stromové zobrazení, s těmito přídavky:  
   
--   **Šipka doprava:** rozbalte uzel. Po rozbalení uzlu pokračováním, že přejdete na nejbližší sloupec na pravé straně. Na konci řádku, který by se měla zastavit navigace.  
+- **Šipka doprava:** rozbalte uzel. Po rozbalení uzlu pokračováním, že přejdete na nejbližší sloupec na pravé straně. Na konci řádku, který by se měla zastavit navigace.  
   
--   **Karta:** Navigates na nejbližší buňku na pravé straně.  Na konci řádku navigace pokračuje na další řádek.  
+- **Karta:** Navigates na nejbližší buňku na pravé straně.  Na konci řádku navigace pokračuje na další řádek.  
   
--   **Shift + Tab:** Navigates na nejbližší buňku na levé straně.  Na začátku řádku, bude nadále navigace buňku vpravo na předchozím řádku.  
+- **Shift + Tab:** Navigates na nejbližší buňku na levé straně.  Na začátku řádku, bude nadále navigace buňku vpravo na předchozím řádku.  
   
- ![Trid ovládací prvek v sadě Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
+  ![Trid ovládací prvek v sadě Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
   
- **Trid ovládací prvek v sadě Visual Studio**
+  **Trid ovládací prvek v sadě Visual Studio**
 
