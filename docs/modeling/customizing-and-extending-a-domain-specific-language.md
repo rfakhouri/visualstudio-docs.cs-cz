@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ba8c37e4fd5e62a0f8d05d735fb991c86937698d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859988"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816695"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Přizpůsobení a rozšíření jazyka specifického pro doménu
 Visual Studio modelování a vmsdk následující (sada SDK vizualizace položky) nabízí několik úrovní, ve kterém můžete definovat nástrojů pro modelování:
@@ -35,7 +35,7 @@ Visual Studio modelování a vmsdk následující (sada SDK vizualizace položky
 ## <a name="customShapes"></a> V této části
 
 |Tohoto efektu dosáhnete tak|Přečtěte si toto téma|
-|----------------------------|-------------------------|
+|-|-|
 |Umožní uživateli nastavit vlastnosti barvu a styl v tvaru.|Pravým tlačítkem myši na obrazec nebo spojnici třídy, přejděte na **přidat vystavený**a klikněte na položku.<br /><br /> Zobrazit [přizpůsobení prezentace v diagramu](../modeling/customizing-presentation-on-the-diagram.md).|
 |Různé třídy prvku modelu vypadat podobně jako v diagramu, vlastnosti, jako je počáteční výška a šířka, barvy, popisky pro sdílení obsahu.|Použití dědičnosti mezi tvarů nebo konektor třídy. Mapování mezi odvozené tvary a odvozené doménové třídy dědit podrobnosti mapování z rodičů.<br /><br /> Nebo mapování jinou doménu tříd na stejnou třídu tvaru.|
 |Třída elementu, model se zobrazí při různých tvarů kontexty.|Map – třída více než jeden tvar do stejné doménové třídy. Při sestavování řešení postupujte podle zprávy o chybách a zadejte požadovaný kód se rozhodnout, jaký tvar, který má použít.|

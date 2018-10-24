@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bf1427e71c21fecb0cd3822469b143b9d42df5
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 08026b744cc6b71e31179666c5f85102a4093843
+ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138648"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49411011"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalace Build Tools do kontejneru
 
@@ -57,7 +57,7 @@ Visual Studio Build Tools - a ve větší míře, Visual Studio – vyžadují v
 
 **Ve Windows 10**:
 
-1. [Rick kliknutím na ikonu Dockeru pro Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na hlavním panelu a klikněte na **nastavení...** .
+1. [Klikněte pravým tlačítkem na ikonu Dockeru pro Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na hlavním panelu a klikněte na **nastavení**.
 2. [Klikněte na proces démon](https://docs.docker.com/docker-for-windows/#docker-daemon) oddílu.
 3. [Přepnout **základní** ](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) tlačítko **Upřesnit**.
 4. Přidejte následující pole vlastnost JSON zvětšete místo na disku na 120 GB (víc než dost pro Build Tools se místo pro růst).

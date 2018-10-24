@@ -3,7 +3,7 @@
 ## [Instalace sady Visual Studio 2015](install/install-visual-studio-2015.md)
 ## [Přenosy, migrace a upgrade projektů sady Visual Studio](porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 ## [Integrované vývojové prostředí sady Visual Studio](ide/visual-studio-ide.md)
-## [Rozšíření](extensibility/extensibility-in-visual-studio.md)
+## [Rozšíření](extensibility/visual-studio-sdk.md)
 ## [Přístup k datům](data-tools/accessing-data-in-visual-studio.md)
 ## [Vývoj mobilních řešení napříč platformami](cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 ## [Visual Basic](/dotnet/visual-basic)
