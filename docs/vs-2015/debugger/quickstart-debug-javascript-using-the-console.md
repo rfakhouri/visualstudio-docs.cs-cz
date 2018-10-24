@@ -25,12 +25,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8ece4edf9ee91446565f2790392bd6d478fd3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818325"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Rychlý úvod: Ladění JavaScriptu pomocí konzoly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
  Okno konzoly JavaScriptu umožňuje:  
   
--   Odesílání objektů, hodnoty a zprávy z vaší aplikace v okně konzoly.  
+- Odesílání objektů, hodnoty a zprávy z vaší aplikace v okně konzoly.  
   
--   Zobrazit a upravit hodnoty místní a globální proměnné ve spuštěné aplikaci.  
+- Zobrazit a upravit hodnoty místní a globální proměnné ve spuštěné aplikaci.  
   
--   Zobrazení objektu vizualizéry.  
+- Zobrazení objektu vizualizéry.  
   
--   Spuštění kódu jazyka JavaScript, který se spustí v rámci aktuální skriptovací kontext.  
+- Spuštění kódu jazyka JavaScript, který se spustí v rámci aktuální skriptovací kontext.  
   
--   Zobrazení jazyka JavaScript chyby a výjimky, kromě výjimky Document Object Model (DOM) a prostředí Windows Runtime.  
+- Zobrazení jazyka JavaScript chyby a výjimky, kromě výjimky Document Object Model (DOM) a prostředí Windows Runtime.  
   
--   Proveďte další úlohy, jako je vymazání obrazovky. Zobrazit [příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md) pro úplný seznam příkazů.  
+- Proveďte další úlohy, jako je vymazání obrazovky. Zobrazit [příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md) pro úplný seznam příkazů.  
   
- V tomto tématu:  
+  V tomto tématu:  
   
--   [Ladění pomocí okna konzoly jazyka JavaScript](#InteractiveConsole)  
+- [Ladění pomocí okna konzoly jazyka JavaScript](#InteractiveConsole)  
   
--   [Interaktivní režim ladění a přerušení](#InteractiveDebuggingBreakMode)  
+- [Interaktivní režim ladění a přerušení](#InteractiveDebuggingBreakMode)  
   
--   [Jednořádkový režim a víceřádkový režim v okně konzoly jazyka JavaScript](#SinglelineMultilineMode)  
+- [Jednořádkový režim a víceřádkový režim v okně konzoly jazyka JavaScript](#SinglelineMultilineMode)  
   
--   [Přepínání kontextu spuštění skriptu](#Switching)  
+- [Přepínání kontextu spuštění skriptu](#Switching)  
   
 > [!TIP]
 >  Pokud je zavření okna konzoly jazyka JavaScript, zvolte **ladění**>**Windows** > **konzoly jazyka JavaScript** znovu otevřít. V okně se zobrazí jenom při relaci ladění skriptu.  
