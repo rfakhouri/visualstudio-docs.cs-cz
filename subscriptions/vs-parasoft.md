@@ -9,12 +9,12 @@ description: Zjistěte, jak chcete předplatné aktivovat, Test Professional Par
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f0c63ea7dba4f79aee9541eafd57bfa9fa2440eb
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: f9e9c617ba64ca0502e50619c107f000b4f6ad5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830182"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop v předplatných sady Visual Studio
 
@@ -23,56 +23,57 @@ Testujte dříve a častěji.  Simulujte a testujte chování není k dispozici 
 
 ## <a name="activation-steps"></a>Postup aktivace
 
-1.  Na vaše Parasoft Virtualize/SOAtest Professional Desktop výhodu využít, přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Na vaše Parasoft Virtualize/SOAtest Professional Desktop výhodu využít, přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Vyhledejte dlaždici Parasoft v části nástroje a klikněte na **získat kód** odkaz v dolní části dlaždice výhodu.   Obdržíte oznámení, že kód se úspěšně načetla.  Klikněte na tlačítko **aktivovat**.
+2. Vyhledejte dlaždici Parasoft v části nástroje a klikněte na **získat kód** odkaz v dolní části dlaždice výhodu.   Obdržíte oznámení, že kód se úspěšně načetla.  Klikněte na tlačítko **aktivovat**.
+   > [!div class="mx-imgBorder"]
+   > ![Parasoft výhodu dlaždice](_img/vs-parasoft/vs-parasoft-tile.png)
+
+3. Budete přesměrováni na web Parasoft, kde vytvoříte účet.  Stačí zadat kontaktní informace a klikněte na tlačítko **odeslat**.
+   > [!div class="mx-imgBorder"]
+   > ![Parasoft výhody vytvoření účtu](_img/vs-parasoft/vs-parasoft-account-cropped.png)
+
+
+4. Po vytvoření účtu, zobrazí se oznámení, že jste poslal e-mail s pokyny ke stažení.  (Nezapomeňte zkontrolovat spamech nebo nevyžádané poště, pokud se e-mailu v doručené poště).
+
+5. Otevřete e-mailu a zkopírujte **aktivační kód** do schránky.
+
+6. Klikněte na odkaz, který odpovídá operačního systému.
+   > [!div class="mx-imgBorder"]
+   > ![Parasoft výhodu Uvítacího e-mailu](_img/vs-parasoft/vs-parasoft-email.png)
+
+7. V závislosti na prohlížeče, které používáte může se zobrazit jiným dialogům vám poskytnou příležitost spusťte instalační program.  V aplikaci Internet Explorer například uvidíte seznam nedávno stažené soubory s parasoft_soavirt_9.10.2_win32_x86_64.exe uvedených v horní části. Klikněte na tlačítko **spustit** spuštění Instalační služby.
+
+8. Když se otevře dialogové okno Řízení uživatelských účtů, klikněte na tlačítko **Ano**.
+
+9. Zvolte požadovaný jazyk a klikněte na tlačítko **OK**.
+
+10. Parasoft SOAtest & Virtualizovat Průvodce instalací se spustí.  Klikněte na tlačítko **Další**.
     > [!div class="mx-imgBorder"]
-    > ![Parasoft výhodu dlaždice](_img\vs-parasoft\vs-parasoft-tile.png)
+    > ![Počáteční výhoda Parasoft instalace](_img/vs-parasoft/vs-parasoft-start-install.png)
 
-2.  Budete přesměrováni na web Parasoft, kde vytvoříte účet.  Stačí zadat kontaktní informace a klikněte na tlačítko **odeslat**.
+11. Klikněte na tlačítko **přijímám smlouvu**, pak klikněte na tlačítko **Další**.
+
+12. Zvolte, kam chcete nainstalovat soubory a klikněte na tlačítko **Další**.
+
+13. V dalším kroku můžete zvolit, které součásti k instalaci, nebo nainstalovat všechny (výchozí).  Proveďte požadovaná nastavení a klikněte na tlačítko **Další**.
+
+14. Zadejte, kde jako zástupce pro nainstalovaná aplikace a klikněte na tlačítko **Další**.
+
+15. SOAtest webové kořenová certifikační autorita certifikát je vyžadován pro některé funkční testy na weby HTTPS.  Vyberte, jestli chcete nainstalovat certifikát kořenové certifikační Autority a klikněte na tlačítko **Další**.
     > [!div class="mx-imgBorder"]
-    > ![Parasoft výhody vytvoření účtu](_img\vs-parasoft\vs-parasoft-account-cropped.png)
+    > ![Parasoft výhodu kořenový certifikát certifikační Autority](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
 
+16. Vyberte, zda má ikony desktopových a rychlé spuštění vytvoří během instalace a klikněte na tlačítko **Další**.
 
-3.  Po vytvoření účtu, zobrazí se oznámení, že jste poslal e-mail s pokyny ke stažení.  (Nezapomeňte zkontrolovat spamech nebo nevyžádané poště, pokud se e-mailu v doručené poště).
-
-4.  Otevřete e-mailu a zkopírujte **aktivační kód** do schránky.
-
-5.  Klikněte na odkaz, který odpovídá operačního systému.
+17. Potvrďte možnosti jste vybrali a klikněte na tlačítko **nainstalovat** zahájit instalaci softwaru.
     > [!div class="mx-imgBorder"]
-    > ![Parasoft výhodu Uvítacího e-mailu](_img\vs-parasoft\vs-parasoft-email.png)
+    > ![Parasoft výhodu připraveno k instalaci](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
-6.  V závislosti na prohlížeče, které používáte může se zobrazit jiným dialogům vám poskytnou příležitost spusťte instalační program.  V aplikaci Internet Explorer například uvidíte seznam nedávno stažené soubory s parasoft_soavirt_9.10.2_win32_x86_64.exe uvedených v horní části. Klikněte na tlačítko **spustit** spuštění Instalační služby.
-
-7.  Když se otevře dialogové okno Řízení uživatelských účtů, klikněte na tlačítko **Ano**.
-
-8.  Zvolte požadovaný jazyk a klikněte na tlačítko **OK**.
-
-9.  Parasoft SOAtest & Virtualizovat Průvodce instalací se spustí.  Klikněte na tlačítko **Další**.
-    > [!div class="mx-imgBorder"]
-    >![Počáteční výhoda Parasoft instalace](_img\vs-parasoft\vs-parasoft-start-install.png)
-
-10. Klikněte na tlačítko **přijímám smlouvu**, pak klikněte na tlačítko **Další**.
-
-11. Zvolte, kam chcete nainstalovat soubory a klikněte na tlačítko **Další**.
-
-12. V dalším kroku můžete zvolit, které součásti k instalaci, nebo nainstalovat všechny (výchozí).  Proveďte požadovaná nastavení a klikněte na tlačítko **Další**.
-
-13. Zadejte, kde jako zástupce pro nainstalovaná aplikace a klikněte na tlačítko **Další**.
-
-14. SOAtest webové kořenová certifikační autorita certifikát je vyžadován pro některé funkční testy na weby HTTPS.  Vyberte, jestli chcete nainstalovat certifikát kořenové certifikační Autority a klikněte na tlačítko **Další**.
-    > [!div class="mx-imgBorder"]
-    > ![Parasoft výhodu kořenový certifikát certifikační Autority](_img\vs-parasoft\vs-parasoft-install-root-ca.png)
-
-15. Vyberte, zda má ikony desktopových a rychlé spuštění vytvoří během instalace a klikněte na tlačítko **Další**.
-
-16. Potvrďte možnosti jste vybrali a klikněte na tlačítko **nainstalovat** zahájit instalaci softwaru.
-    > [!div class="mx-imgBorder"]
-    > ![Parasoft výhodu připraveno k instalaci](_img\vs-parasoft\vs-parasoft-ready-to-install.png)
-
-17. Po dokončení instalace klikněte na tlačítko **Dokončit**. Teď jste připravení začít používat váš prospěch Parasoft Virtualize/SOAtest Professional Desktop!
+18. Po dokončení instalace klikněte na tlačítko **Dokončit**. Teď jste připravení začít používat váš prospěch Parasoft Virtualize/SOAtest Professional Desktop!
 
 ## <a name="eligibility"></a>Způsobilost
+
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | 6 měsíců       |  Ano       |

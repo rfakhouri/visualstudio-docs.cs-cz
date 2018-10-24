@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 8642d59beb845bf2784d09133a590a4716897ed4
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823746"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Příkazy konzoly jazyka JavaScript v sadě Visual Studio
   
@@ -104,16 +104,16 @@ console.log(user.first, user.last);
   
  Podporují se následující vzory pro nahrazení:  
   
--   %s - string  
-     %i – celé číslo  
-     %d – celé číslo  
-     %f - plovoucí desetinnou čárkou  
-     %o – objekt  
-     %b - binární  
-     %x - šestnáctkové  
-     %e - exponentu  
+- %s - string  
+   %i – celé číslo  
+   %d – celé číslo  
+   %f - plovoucí desetinnou čárkou  
+   %o – objekt  
+   %b - binární  
+   %x - šestnáctkové  
+   %e - exponentu  
   
- Tady je několik příkladů použití vzorů pro nahrazení v `console.log`:  
+  Tady je několik příkladů použití vzorů pro nahrazení v `console.log`:  
   
 ```javascript  
 var user = new Object();  

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635229"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831808"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Návod: Vytvoření webové části pro službu SharePoint pomocí návrháře
 
@@ -98,9 +98,9 @@ Přidejte kód, který umožňuje uživateli přidávat kalendáře do zobrazen�
 
 1. Proveďte jednu z následujících sad kroků:
 
-    - V Návrháři dvakrát klikněte **aktualizace** tlačítko.
+   - V Návrháři dvakrát klikněte **aktualizace** tlačítko.
 
-    - V **vlastnosti** okně **aktualizace** tlačítko, zvolte **události** tlačítko. V **klikněte na tlačítko** vlastnost, zadejte **Button1_Click**a potom stiskněte klávesu Enter.
+   - V **vlastnosti** okně **aktualizace** tlačítko, zvolte **události** tlačítko. V **klepněte na** vlastnost, zadejte **Button1_Click**a pak zvolte klávesu Enter.
 
      Soubor kódu uživatelského ovládacího prvku se otevře v editoru kódu a `Button1_Click` obslužná rutina události se zobrazí. Později přidáte kód pro tuto obslužnou rutinu události.
 
@@ -116,11 +116,11 @@ Přidejte kód, který umožňuje uživateli přidávat kalendáře do zobrazen�
 
 4. Nahradit `Page_Load` metodu `VisualWebPart1` třídy následujícím kódem. Tento kód provede následující:
 
-    - Přidá měsíční zobrazení kalendáře do uživatelského ovládacího prvku.
+   - Přidá měsíční zobrazení kalendáře do uživatelského ovládacího prvku.
 
-    - Přidá zaškrtávací políčko pro každý seznam kalendáře na webu.
+   - Přidá zaškrtávací políčko pro každý seznam kalendáře na webu.
 
-    - Určuje šablonu, která pro každý typ položky, které se zobrazí v zobrazení Kalendář.
+   - Určuje šablonu, která pro každý typ položky, které se zobrazí v zobrazení Kalendář.
 
      [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
      [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]

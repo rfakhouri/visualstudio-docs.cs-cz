@@ -16,33 +16,33 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: a604ce47b6a96182d7e362d5d1dbcb00f052cf85
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0503f6ca9a209c62f842c9428cf1af9fe2a07ccc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838540"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Dialogové okno Editor podmínek pravidla (starší verze)
 Toto téma popisuje, jak používat **Editor podmínek pravidla** dialogové okno v starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Vytvoření a úprava podmínky deklarativního pravidla pomocí **Editor podmínek pravidla** dialogové okno. Tyto podmínky pravidla jsou vystaveny jako vlastnosti na těchto aktivitách out-of-box Windows Workflow Foundation:  
   
--   [Skupina ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [Skupina ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [Aktivitou typu ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [Aktivitou typu ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [Aktivita typu WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [Aktivita typu WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
- Přístup **Editor podmínek pravidla** dialogové okno s použitím [vyberte podmínku dialogové okno (starší verze)](../workflow-designer/select-condition-dialog-box-legacy.md).  
+  Přístup **Editor podmínek pravidla** dialogové okno s použitím [vyberte podmínku dialogové okno (starší verze)](../workflow-designer/select-condition-dialog-box-legacy.md).  
   
- Následující tabulka popisuje prvky uživatelského rozhraní (UI) **Editor podmínek pravidla** dialogové okno.  
+  Následující tabulka popisuje prvky uživatelského rozhraní (UI) **Editor podmínek pravidla** dialogové okno.  
   
 |Prvek uživatelského rozhraní (UI)|Popis|  
 |----------------|-----------------|  
@@ -56,33 +56,33 @@ Toto téma popisuje, jak používat **Editor podmínek pravidla** dialogové okn
   
  Editor podmínek pravidla podporuje následující operátory:  
   
--   Relační operátory: ==, =,! =  
+- Relační operátory: ==, =,! =  
   
--   Relační operátory: <, \<=, >, > =  
+- Relační operátory: <, \<=, >, > =  
   
--   Aritmetické operátory: +, -, *, /, MOD  
+- Aritmetické operátory: +, -, *, /, MOD  
   
--   Logické operátory: A, & &, OR, &#124; &#124;, ne,!  
+- Logické operátory: A, & &, OR, &#124; &#124;, ne,!  
   
--   Bitové operátory: &&#124;  
+- Bitové operátory: &&#124;  
   
- Priorita operátorů výraz následuje pravidla priorit operátor C#.  
+  Priorita operátorů výraz následuje pravidla priorit operátor C#.  
   
- Editor podmínek pravidla podporuje následující numerických výrazů:  
+  Editor podmínek pravidla podporuje následující numerických výrazů:  
   
- this.i == 1D (vyřešené 1.0)  
+  this.i == 1D (vyřešené 1.0)  
   
- this.i == 1E1 (překládá na 10.0)  
+  this.i == 1E1 (překládá na 10.0)  
   
- this.i == 1L (vyřešené jako typu long)  
+  this.i == 1L (vyřešené jako typu long)  
   
- this.i == 1 milion (vyřešené jako desítkové číslo)  
+  this.i == 1 milion (vyřešené jako desítkové číslo)  
   
- this.i == 1F (přeloží jako jeden)  
+  this.i == 1F (přeloží jako jeden)  
   
- this.i == 1U (přeloží jako celé číslo bez znaménka)  
+  this.i == 1U (přeloží jako celé číslo bez znaménka)  
   
- Další informace o podmínkách najdete v tématu [podmínky použití v pracovních postupech](http://go.microsoft.com/fwlink?LinkID=65009).  
+  Další informace o podmínkách najdete v tématu [podmínky použití v pracovních postupech](http://go.microsoft.com/fwlink?LinkID=65009).  
   
 ## <a name="see-also"></a>Viz také  
  [Aktivita typu IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)   

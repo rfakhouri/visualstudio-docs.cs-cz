@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5d28ca688bbad0054f7522034bfe309dcb1fe698
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250104"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830584"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Neignorujte výsledky metody
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "49250104"
 ## <a name="cause"></a>příčina  
  Existuje několik možných důvodů pro toto upozornění:  
   
--   Nový objekt je vytvořen, ale nepoužilo.  
+- Nový objekt je vytvořen, ale nepoužilo.  
   
--   Volá metodu, která vytvoří a vrátí nový řetězec a nový řetězec se nikdy nepoužívá.  
+- Volá metodu, která vytvoří a vrátí nový řetězec a nový řetězec se nikdy nepoužívá.  
   
--   COM nebo P/Invoke metoda, která vrátí HRESULT nebo kód chyby, který se nikdy nepoužívá. Popis pravidla  
+- COM nebo P/Invoke metoda, která vrátí HRESULT nebo kód chyby, který se nikdy nepoužívá. Popis pravidla  
   
- Vytváření zbytečné objektů a související uvolňování nepoužívané objektu dojít ke snížení výkonu.  
+  Vytváření zbytečné objektů a související uvolňování nepoužívané objektu dojít ke snížení výkonu.  
   
- Řetězce jsou neměnné a metod, jako je například String.ToUpper vrací novou instanci řetězce místo úpravy instanci řetězce ve volání metody.  
+  Řetězce jsou neměnné a metod, jako je například String.ToUpper vrací novou instanci řetězce místo úpravy instanci řetězce ve volání metody.  
   
- Ignorování HRESULT nebo kód chyby může vést k neočekávanému chování chybových podmínek a ujednání nedostatku prostředků.  
+  Ignorování HRESULT nebo kód chyby může vést k neočekávanému chování chybových podmínek a ujednání nedostatku prostředků.  
   
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
  Pokud metoda A vytvoří novou instanci objektu B, který se nikdy nepoužívá, předejte instanci jako argument jiné metodě, nebo přiřaďte instanci proměnné. Pokud vytvoření objektu je zbytečné, odeberte něm- nebo -  

@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6248b61b2332694151d84bd9f5969ff18587c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6ac13d8998972ddf60576537f8b0af55d832d820
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180599"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817532"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Zdrojový kód L2DBForm.XAML.cs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,19 +51,19 @@ Toto téma obsahuje obsah a popis zdrojový kód C# v souboru L2DBForm.xaml.cs. 
   
  Základní práce odebrání položky vybrané knihy však provádí pouze dva příkazy:  
   
--   Nejprve je načten prvek knihy, které jsou spojené s aktuálně vybranou položku v seznamu:  
+- Nejprve je načten prvek knihy, které jsou spojené s aktuálně vybranou položku v seznamu:  
   
-    ```  
-    XElement selBook = (XElement)lbBooks.SelectedItem;   
-    ```  
+  ```  
+  XElement selBook = (XElement)lbBooks.SelectedItem;   
+  ```  
   
--   Potom tento prvek je odstraněn z poskytovatele dat:  
+- Potom tento prvek je odstraněn z poskytovatele dat:  
   
-    ```  
-    selBook.Remove();  
-    ```  
+  ```  
+  selBook.Remove();  
+  ```  
   
- Vázání dat dynamického znovu, zajišťuje programu uživatelského rozhraní se automaticky aktualizuje.  
+  Vázání dat dynamického znovu, zajišťuje programu uživatelského rozhraní se automaticky aktualizuje.  
   
 ## <a name="example"></a>Příklad  
   

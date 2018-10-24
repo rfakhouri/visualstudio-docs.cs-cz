@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31d5c57408765b74ec736b8ec5c6dd8edc9d8a01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 59d07bd9b4f069773593359e396b63df6407b1ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823070"
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>Postupy: Zobrazení dědičnosti mezi typy (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,23 +34,23 @@ Pokud existuje mezi základního typu a jeho odvozeným typům v diagramu tříd
   
 ### <a name="to-find-the-base-type"></a>Najít základní typ  
   
-1.  V diagramu tříd klikněte na typ, pro kterou chcete zobrazit základní třídu nebo rozhraní.  
+1. V diagramu tříd klikněte na typ, pro kterou chcete zobrazit základní třídu nebo rozhraní.  
   
-2.  Na **Diagram tříd** nabídce zvolte **zobrazit základní třídu** nebo **zobrazit základní rozhraní**.  
+2. Na **Diagram tříd** nabídce zvolte **zobrazit základní třídu** nebo **zobrazit základní rozhraní**.  
   
-     Základní třídu nebo rozhraní tohoto typu zobrazovat jako vybraný v diagramu. Všechny skryté Asociační čáry teď budou zobrazovat mezi dvěma tvary.  
+    Základní třídu nebo rozhraní tohoto typu zobrazovat jako vybraný v diagramu. Všechny skryté Asociační čáry teď budou zobrazovat mezi dvěma tvary.  
   
- Můžete také kliknout pravým tlačítkem typ, jehož základní typ, který chcete zobrazit a zvolte **zobrazit základní třídu** nebo **zobrazit základní rozhraní**.  
+   Můžete také kliknout pravým tlačítkem typ, jehož základní typ, který chcete zobrazit a zvolte **zobrazit základní třídu** nebo **zobrazit základní rozhraní**.  
   
 ### <a name="to-find-the-derived-types"></a>Najít odvozené typy  
   
-1.  V diagramu tříd klikněte na typ, pro kterou chcete zobrazit odvozené třídy nebo rozhraní.  
+1. V diagramu tříd klikněte na typ, pro kterou chcete zobrazit odvozené třídy nebo rozhraní.  
   
-2.  Na **Diagram tříd** nabídce zvolte **Zobrazit odvozené třídy** nebo **Zobrazit odvozené rozhraní**.  
+2. Na **Diagram tříd** nabídce zvolte **Zobrazit odvozené třídy** nebo **Zobrazit odvozené rozhraní**.  
   
-     Typu odvozené třídy nebo rozhraní se zobrazí v diagramu. Všechny skryté Asociační čáry teď budou zobrazovat mezi tvary.  
+    Typu odvozené třídy nebo rozhraní se zobrazí v diagramu. Všechny skryté Asociační čáry teď budou zobrazovat mezi tvary.  
   
- Můžete také kliknout pravým tlačítkem na typ, pro kterou chcete zobrazit jeho odvozených typů a zvolte **Zobrazit odvozené třídy** nebo **Zobrazit odvozené rozhraní**.  
+   Můžete také kliknout pravým tlačítkem na typ, pro kterou chcete zobrazit jeho odvozených typů a zvolte **Zobrazit odvozené třídy** nebo **Zobrazit odvozené rozhraní**.  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: vytvoření asociací mezi typy (návrhář tříd)](../ide/how-to-create-associations-between-types-class-designer.md)   

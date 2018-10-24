@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 3227b2f17932936e54c244f385a648c583677923
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586349"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831923"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX extension schema 2.0 – referenční informace
 Soubor manifestu VSIX nasazení popisuje obsah balíčku VSIX. Formát souboru se řídí schéma. Verze 2.0 tato schématu podporuje přidávání vlastních typů a atributů.  Je možné rozšířit schéma manifestu. Manifestu zaváděcího programu ignoruje XML elementů a atributů, které ho nerozumí.  
@@ -162,33 +162,33 @@ Soubor manifestu VSIX nasazení popisuje obsah balíčku VSIX. Formát souboru s
 ### <a name="assets-element"></a>Element prostředky  
  Tento prvek obsahuje seznam `<Asset>` prezentované značky pro každý prvek rozšíření nebo obsahu, kterou tento balíček.  
   
--   `<Asset>` – Tento prvek obsahuje následující atributy a elementy:  
+- `<Asset>` – Tento prvek obsahuje následující atributy a elementy:  
   
-    -   `Type` -Typ rozšíření nebo obsah reprezentovaný tímto prvkem. Každý `<Asset>` element musí mít jeden `Type`, ale více `<Asset>` elementy může mít stejný `Type`. Tento atribut by měl být reprezentován jako plně kvalifikovaný název, podle konvence oboru názvů. Známé typy jsou:  
+  - `Type` -Typ rozšíření nebo obsah reprezentovaný tímto prvkem. Každý `<Asset>` element musí mít jeden `Type`, ale více `<Asset>` elementy může mít stejný `Type`. Tento atribut by měl být reprezentován jako plně kvalifikovaný název, podle konvence oboru názvů. Známé typy jsou:  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Můžete vytvořit vlastní typy a poskytnout je jedinečné názvy. Za běhu v sadě Visual Studio můžete kód výčet a tyto vlastní typy přístup prostřednictvím Správce rozšíření pro rozhraní API.  
+       Můžete vytvořit vlastní typy a poskytnout je jedinečné názvy. Za běhu v sadě Visual Studio můžete kód výčet a tyto vlastní typy přístup prostřednictvím Správce rozšíření pro rozhraní API.  
   
-    -   `Path` -relativní cesta k souboru nebo složky v rámci balíčku, který obsahuje prostředek.  
+  - `Path` -relativní cesta k souboru nebo složky v rámci balíčku, který obsahuje prostředek.  
     
-    -   `TargetVersion` -rozsah verzí, ke kterému se vztahuje daného prostředku. Používá se pro přesouvání více verzí prostředků pro různé verze nástroje Visual Studio. Vyžaduje Visual Studio 2017.3 nebo novější, nemá vliv.
+  - `TargetVersion` -rozsah verzí, ke kterému se vztahuje daného prostředku. Používá se pro přesouvání více verzí prostředků pro různé verze nástroje Visual Studio. Vyžaduje Visual Studio 2017.3 nebo novější, nemá vliv.
   
-    -   `AnyAttribute*` -Neuzavřenou množinu atributů, která je vystavena za běhu jako slovník dvojice název hodnota.  
+  - `AnyAttribute*` -Neuzavřenou množinu atributů, která je vystavena za běhu jako slovník dvojice název hodnota.  
   
-         `<AnyElement>*` – Libovolná Strukturovaný obsah je povolen mezi `<Asset>` začínají i končí značky. Všechny prvky jsou vystaveny jako seznam objektů XmlElement. Rozšíření VSIX, můžete definovat strukturovaných metadata specifická pro typ v souboru manifestu a výčet za běhu.  
+     `<AnyElement>*` – Libovolná Strukturovaný obsah je povolen mezi `<Asset>` začínají i končí značky. Všechny prvky jsou vystaveny jako seznam objektů XmlElement. Rozšíření VSIX, můžete definovat strukturovaných metadata specifická pro typ v souboru manifestu a výčet za běhu.  
   
 ### <a name="sample-manifest"></a>Ukázka manifestu  
   

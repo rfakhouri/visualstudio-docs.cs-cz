@@ -23,30 +23,30 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f14358307c2c95e1b796695a0253a520ea00e3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8354c850d1f55d229ce3f1205ca0bf0fe5f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837071"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Postupy: Použití okna paralelního sledování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V okně paralelního sledování můžete najednou zobrazit hodnoty, které obsahuje jeden výraz ve více vláknech. Každý řádek představuje vlákno, na kterém běží v aplikaci však vlákno může být reprezentován více řádků. Přesněji řečeno každý řádek představuje volání funkce, jejíž podpis funkce odpovídá funkci na aktuální rámec zásobníku. Můžete řadit, změnit pořadí, odebrat a seskupit položky, které jsou ve sloupcích. Můžete označit příznakem, odznačit, ukotvit (Pozastavit) a uvolnit vlákna (pokračovat). Tyto sloupce se zobrazí v **paralelní sledování** okno:  
   
--   Sloupec příznaku, ve kterém můžete označit vlákno, kterému chcete věnovat zvláštní pozornost.  
+- Sloupec příznaku, ve kterém můžete označit vlákno, kterému chcete věnovat zvláštní pozornost.  
   
--   Sloupec rámce, ve kterém šipka označuje vybraný rámec.  
+- Sloupec rámce, ve kterém šipka označuje vybraný rámec.  
   
--   Konfigurovatelný sloupec, který může zobrazit počítač, proces, dlaždici, úloh a vlákna.  
+- Konfigurovatelný sloupec, který může zobrazit počítač, proces, dlaždici, úloh a vlákna.  
   
-    > [!TIP]
-    >  Je nutné otevřít **paralelních úkolů** okno, aby obsahovalo informace o úkolu v **paralelní sledování** okna.  
+  > [!TIP]
+  >  Je nutné otevřít **paralelních úkolů** okno, aby obsahovalo informace o úkolu v **paralelní sledování** okna.  
   
--   **\<Přidat kukátko >** sloupec, ve kterém můžete zadat výrazy, které chcete sledovat.  
+- **\<Přidat kukátko >** sloupec, ve kterém můžete zadat výrazy, které chcete sledovat.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>Chcete-li zobrazit okno paralelního sledování  
   

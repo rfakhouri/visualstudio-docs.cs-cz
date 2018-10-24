@@ -49,69 +49,69 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a3296ec07194f1815b819f69cf97224be50368f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830662"
 ---
 # <a name="options-text-editor-general"></a>Možnosti, textový editor, obecné
 
-Toto dialogové okno umožňuje měnit globální nastavení pro Visual Studio editoru kódu a text. K zobrazení tohoto dialogového okna, vyberte **možnosti** na **nástroje** nabídky, rozbalte **textového editoru** složku a potom vyberte **Obecné**.
+Toto dialogové okno umožňuje měnit globální nastavení pro kód a text editoru sady Visual Studio. Chcete-li zobrazit toto dialogové okno, vyberte **možnosti** na **nástroje** nabídky, rozbalte **textový Editor** složku a pak vyberte **Obecné**.
 
 > [!NOTE]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="settings"></a>Nastavení
 
 ### <a name="drag-and-drop-text-editing"></a>Přetáhnout myší úpravy textu
 
-Pokud vybraná, umožňuje přesunout text tak, že ho vyberete a jeho přetažením pomocí myši do jiného umístění v aktuálním dokumentu nebo jiného dokumentu otevřít.
+Při výběru, umožňuje přesunout text jeho výběrem a přetažením myší do jiného umístění v rámci aktuálního dokumentu nebo libovolného otevřeného dokumentu.
 
-### <a name="automatic-delimiter-highlighting"></a>Zvýraznění automatické oddělovač
+### <a name="automatic-delimiter-highlighting"></a>Automatické zvýrazňování oddělovače
 
-Při výběru zvýraznění oddělovač znaků, které oddělují parametry nebo párů hodnot položky, jakož i odpovídající složené závorky.
+Pokud je vybráno, jsou zvýrazněny znaky oddělovače, které oddělují parametry nebo párů hodnot položky, jakož i odpovídající složené závorky.
 
 ### <a name="track-changes"></a>Sledování změn
 
-Pokud je vybraná editoru kódu, se zobrazí žlutý svislice v výběr okraje označit kódu, které se změnily od naposledy uložení. Při ukládání změny stát zelená svislé čáry.
+Pokud je vybrána editoru kódu, se zobrazí v okraj výběru označit kód, který se změnil, protože soubor byl uložen jako poslední svislé Žlutá čára. Při ukládání změn budou zelené svislé čáry.
 
-### <a name="auto-detect-utf-8-encoding-without-signature"></a>Automaticky rozpoznat bez podpisu kódování UTF-8
+### <a name="auto-detect-utf-8-encoding-without-signature"></a>Automatické rozpoznání kódování UTF-8 bez podpisu
 
-Ve výchozím nastavení zjistí editoru kódování vyhledáním značky pořadí bajtů nebo charset značky. Pokud ani jeden z nich je nalezena v aktuálním dokumentu, pokusí se editoru kódu automatické rozpoznání naskenováním pořadí bajtů kódování UTF-8. Chcete-li zakázat automatické zjišťování kódování, zrušte tuto možnost.
+Ve výchozím nastavení zjistí editoru kódování tak, že značky pořadí bajtů nebo znaková sada značky. Pokud ani nenajde v aktuálním dokumentu, editoru kódu se pokusí automaticky rozpoznat kódování UTF-8 naskenováním pořadí bajtů. Chcete-li zakázat automatické zjišťování kódování, zrušte zaškrtnutí tohoto políčka.
 
 ## <a name="display"></a>Displej
 
-### <a name="selection-margin"></a>Výběr okraje
+### <a name="selection-margin"></a>Okraj výběru
 
-Když vyberete, zobrazí svislý okraj podél levého okraje editoru textová oblast. Můžete kliknout na toto rozpětí celý řádek textu, vyberte nebo klikněte na tlačítko a přetáhněte ji vybrat po sobě jdoucích řádků textu.
+Pokud je vybráno, zobrazí svislý okraj podél levého okraje editoru textová oblast. Můžete kliknout na tento okraj označit celý řádek textu, nebo klikněte a tažením vyberte po sobě jdoucích řádků textu.
 
-|Výběr okraje na|Výběr okraje vypnuto|
-|-------------------------|--------------------------|
-|![HTMLpageSelectionMarginOn – snímek obrazovky](../../ide/reference/media/vxselmaron.gif)|![HTMLpageSelectionMarginOff – snímek obrazovky](../../ide/reference/media/vxselmaroff.gif)|
+|Okraj výběru|Okraj výběru vypnuto|
+| - | - |
+|![Snímek obrazovky HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif)|![Snímek obrazovky HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>Okraj indikátoru
 
-Když vyberete, zobrazí svislý okraj mimo podle levé hrany editoru textová oblast. Po kliknutí na toto rozpětí, zobrazí ikonu a popis tlačítka, která se vztahují na text. Například bod přerušení nebo úloh zástupce seznamu zobrazit v indikátoru okraj. Indikátor okraj informace ne k tisku.
+Pokud je vybráno, zobrazí svislý okraj mimo levého okraje editoru textová oblast. Po kliknutí na toto rozpětí, zobrazí ikonu a popis, který se vztahují na text. Zarážky nebo úloha klávesové zkratky seznamu se zobrazí v okraj indikátoru. Informace o okraj indikátoru nevytiskne.
 
-### <a name="vertical-scroll-bar"></a>Svislý posuvník
+### <a name="vertical-scroll-bar"></a>Svislý posuvník.
 
-Když vyberete, zobrazí svislý posuvník, které umožňuje nahoru a dolů přejděte do zobrazení prvků, které spadají mimo oblast zobrazení editoru. Pokud svislé posuvníky nejsou k dispozici, můžete Page Up Page Down a klíče kurzoru přejděte.
+Pokud je vybráno, zobrazí svislý posuvník, který umožňuje nahoru a dolů k zobrazení elementy, které spadají mimo oblast zobrazení editoru. Pokud svislé posuvníky nejsou k dispozici, můžete Page Up, Page Down a klíče kurzor posouvat.
 
-### <a name="horizontal-scroll-bar"></a>Vodorovného posuvníku
+### <a name="horizontal-scroll-bar"></a>Vodorovný posuvník
 
-Když vyberete, zobrazí vodorovný posuvník, které umožňuje ze strany na stranu přejděte do zobrazení prvků, které spadají mimo oblast zobrazení editoru. Pokud vodorovné posuvníky jsou k dispozici, můžete posuňte ukazatel klíče.
+Pokud je vybráno, zobrazí vodorovný posuvník, který umožňuje ze strany na stranu přejděte do zobrazení elementy, které spadají mimo oblast zobrazení editoru. Pokud vodorovné posuvníky nedostupné, můžete přejít kurzor klíče.
 
-### <a name="highlight-current-line"></a>Zvýraznění aktuálního řádku
+### <a name="highlight-current-line"></a>Zvýraznit aktuální řádek
 
-Když vyberete, zobrazí šedé pole kolem řádek kódu, ve kterém se nachází kurzor.
+Pokud je vybráno, zobrazí šedé okolo řádek kódu, ve kterém se nachází kurzor.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Možnosti, textový Editor, všechny jazyky](../../ide/reference/options-text-editor-all-languages.md)
-- [Možnosti, textový Editor, všechny jazyky, karty](../../ide/reference/options-text-editor-all-languages-tabs.md)
-- [Možnosti, textový Editor, přípona souboru](../../ide/reference/options-text-editor-file-extension.md)
+- [Možnosti, Textový editor, Všechny jazyky](../../ide/reference/options-text-editor-all-languages.md)
+- [Možnosti, Textový editor, Všechny jazyky, Tabulátory](../../ide/reference/options-text-editor-all-languages-tabs.md)
+- [Možnosti, Textový editor, Přípona souboru](../../ide/reference/options-text-editor-file-extension.md)
 - [Identifikování a přizpůsobení klávesových zkratek](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)
 - [Používání atributu IntelliSense](../../ide/using-intellisense.md)

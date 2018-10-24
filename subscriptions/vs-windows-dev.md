@@ -9,12 +9,12 @@ description: Další informace o účtu pro vývojáře Windows, součástí va�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 73a0d9b9cfb8056f78c03387754807e7ffe81552
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: be7a740e22201a230658dec0803a8523f7716462
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832404"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Účet pro vývojáře Windows v předplatných sady Visual Studio
 
@@ -29,27 +29,28 @@ Doporučujeme vytvořit okno prohlížeče "privátní" pro tento proces.  Třeb
 1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Vyhledejte dlaždici vývojářský účet pro Windows v části nástroje a klikněte na **získat kód** odkaz v dolní části dlaždice výhodu.  Zkopírujte kód do schránky a pak klikněte na **aktivovat**.
-    > [!div class="mx-imgBorder"]
-    > ![Dlaždice výhoda pro vývojáře Windows](_img\vs-windows-dev\vs-windows-dev-tile.png)
+   > [!div class="mx-imgBorder"]
+   > ![Dlaždice výhoda pro vývojáře Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
 
-2. Na [ https://developer.microsoft.com ](https://developer.microsoft.com) lokality lze zahájit proces registrace.  Klikněte na tlačítko **zaregistrovat** pokračujte.
-    > [!div class="mx-imgBorder"]
-    > ![Registrační Benefit pro vývojáře Windows](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+3. Na [ https://developer.microsoft.com ](https://developer.microsoft.com) lokality lze zahájit proces registrace.  Klikněte na tlačítko **zaregistrovat** pokračujte.
+   > [!div class="mx-imgBorder"]
+   > ![Registrační Benefit pro vývojáře Windows](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 
-3. Přihlaste se ke svému předplatnému.  Pokud máte více účtů, vyberte si ten spojené s předplatným Enterprise.
-4. Na další stránce vyberte zemi nebo oblast, kde bydlíte nebo tam, kde se nachází vaše podnikání a potom klikněte na tlačítko **Další**.
-5. Vyberte **jednotlivé** jako typ účtu.
-6. Vytvoření zobrazovaný název vydavatele.  Bude jím jedinečný název, který budou vaši zákazníci uvidí související s aplikacemi, doplňky a služby.
-7. Zadejte své kontaktní informace a jazyk upřednostňované e-mailů a potom klikněte na **Další**.
-8. Můžete být vyzváni k ověření své heslo.  Zadejte ho a klikněte na tlačítko **přihlášení**.
-9. Registrace – stránka platba, vložte kód, který jste si zkopírovali do pole propagační kód.  Na stránce se aktualizuje a ukazují, že *je nutné žádné zaplatit*.  Klikněte na tlačítko **Další**.
+4. Přihlaste se ke svému předplatnému.  Pokud máte více účtů, vyberte si ten spojené s předplatným Enterprise.
+5. Na další stránce vyberte zemi nebo oblast, kde bydlíte nebo tam, kde se nachází vaše podnikání a potom klikněte na tlačítko **Další**.
+6. Vyberte **jednotlivé** jako typ účtu.
+7. Vytvoření zobrazovaný název vydavatele.  Bude jím jedinečný název, který budou vaši zákazníci uvidí související s aplikacemi, doplňky a služby.
+8. Zadejte své kontaktní informace a jazyk upřednostňované e-mailů a potom klikněte na **Další**.
+9. Můžete být vyzváni k ověření své heslo.  Zadejte ho a klikněte na tlačítko **přihlášení**.
+10. Registrace – stránka platba, vložte kód, který jste si zkopírovali do pole propagační kód.  Na stránce se aktualizuje a ukazují, že *je nutné žádné zaplatit*.  Klikněte na tlačítko **Další**.
     > [!div class="mx-imgBorder"]
-    > ![Registrační Benefit pro vývojáře Windows](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    > ![Registrační Benefit pro vývojáře Windows](_img/vs-windows-dev/vs-windows-dev-promo-cropped.png)
 
-10. Projděte si informace o vašem účtu, zkontrolujte smlouva k vývojářským aplikace a klikněte na zaškrtávací políčko označující svůj souhlas s podmínkami a ujednáními.  Pak klikněte na tlačítko **Dokončit**.
-11. Klikněte na tlačítko **přejít na řídicí panel** chcete začít používat váš účet vývojáře Windows!
+11. Projděte si informace o vašem účtu, zkontrolujte smlouva k vývojářským aplikace a klikněte na zaškrtávací políčko označující svůj souhlas s podmínkami a ujednáními.  Pak klikněte na tlačítko **Dokončit**.
+12. Klikněte na tlačítko **přejít na řídicí panel** chcete začít používat váš účet vývojáře Windows!
 
 ## <a name="eligibility"></a>Způsobilost
+
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | Zahrnuté       |  Ano|

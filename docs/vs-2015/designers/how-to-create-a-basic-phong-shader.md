@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3ad96b9ed53b7600417f3c3e8a283c7a4a372842
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ddb8f32cbf23184da140c3426e88c1f622dea1b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286491"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832677"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Postupy: Vytvoření základního Phongova shaderu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,19 +43,19 @@ Tento dokument popisuje způsob použití návrháře shaderu a orientovaného g
   
 #### <a name="to-create-a-phong-shader"></a>Chcete-li vytvořit Phongova shaderu  
   
-1.  Vytvoření Lambertova shaderu, jak je popsáno v [postupy: vytvoření základního Lambertova shaderu](../designers/how-to-create-a-basic-lambert-shader.md).  
+1. Vytvoření Lambertova shaderu, jak je popsáno v [postupy: vytvoření základního Lambertova shaderu](../designers/how-to-create-a-basic-lambert-shader.md).  
   
-2.  Odpojte **Lambertova** uzlu z **konečnou barvu** uzlu. Zvolte **RGB** z terminálu **Lambertova** uzel a klikněte na tlačítko **přerušit odkazy**. Díky tomu místo pro uzel, který je přidán v dalším kroku.  
+2. Odpojte **Lambertova** uzlu z **konečnou barvu** uzlu. Zvolte **RGB** z terminálu **Lambertova** uzel a klikněte na tlačítko **přerušit odkazy**. Díky tomu místo pro uzel, který je přidán v dalším kroku.  
   
-3.  Přidat **přidat** uzel do grafu. V **nástrojů**v části **matematické**vyberte **přidat** a přesuňte jej na návrhovou plochu.  
+3. Přidat **přidat** uzel do grafu. V **nástrojů**v části **matematické**vyberte **přidat** a přesuňte jej na návrhovou plochu.  
   
-4.  Přidat **Specular** uzel do grafu. V **nástrojů**v části **nástroj**vyberte **Specular** a přesuňte jej na návrhovou plochu.  
+4. Přidat **Specular** uzel do grafu. V **nástrojů**v části **nástroj**vyberte **Specular** a přesuňte jej na návrhovou plochu.  
   
-5.  Přidáte příspěvek lesku. Přesunout **výstup** z terminálu **Specular** uzlu **X** z terminálu **přidat** uzel a potom ho přesuňte **výstup**  z terminálu **Lambertova** uzlu **Y** z terminálu **přidat** uzlu. Tato připojení kombinovat příspěvky celkový barvy rozptýlení a množství odrazů pro obrazový bod.  
+5. Přidáte příspěvek lesku. Přesunout **výstup** z terminálu **Specular** uzlu **X** z terminálu **přidat** uzel a potom ho přesuňte **výstup**  z terminálu **Lambertova** uzlu **Y** z terminálu **přidat** uzlu. Tato připojení kombinovat příspěvky celkový barvy rozptýlení a množství odrazů pro obrazový bod.  
   
-6.  Hodnota počítaného barvy se připojte k konečnou barvu. Přesunout **výstup** z terminálu **přidat** uzlu **RGB** z terminálu **konečnou barvu** uzlu.  
+6. Hodnota počítaného barvy se připojte k konečnou barvu. Přesunout **výstup** z terminálu **přidat** uzlu **RGB** z terminálu **konečnou barvu** uzlu.  
   
- Následující obrázek znázorňuje dokončené shader graf a náhled shaderu použité pro model čajové konvice.  
+   Následující obrázek znázorňuje dokončené shader graf a náhled shaderu použité pro model čajové konvice.  
   
 > [!NOTE]
 >  K předvedení lépe efekt shaderu na tomto obrázku, byl zadán oranžové barvy s použitím **MaterialDiffuse** byl zadán parametr shaderu a dokončení se kovové hledání s použitím **MaterialSpecular** a **MaterialSpecularPower** parametry. Informace o parametrech materiálu, naleznete v části Náhled shadery v [návrháře shaderu](../designers/shader-designer.md).  

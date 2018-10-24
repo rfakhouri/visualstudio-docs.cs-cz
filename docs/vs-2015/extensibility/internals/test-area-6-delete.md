@@ -16,12 +16,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3e03ea9985840d20c812f56d7a0f9cae66420cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff386c2f333d3558aa6631dd2e4c13f8bfd595c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838748"
 ---
 # <a name="test-area-6-delete"></a>Testovací oblast 6: Odstranění
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Tato oblast testovací modul plug-in správy zdrojového kódu zahrnuje akce ods
   
  Tady je seznam položek, které je možné odstranit:  
   
--   Soubory  
+- Soubory  
   
--   Složky  
+- Složky  
   
--   Projekt  
+- Projekt  
   
- V závislosti na typu projektu, může mít možnost **odebrat** projektu (ponechá soubory na disku) nebo **odstranit** projektu (odebere soubory na disku). Obě akce odebere projekt nebo položku z **Průzkumníka řešení**.  
+  V závislosti na typu projektu, může mít možnost **odebrat** projektu (ponechá soubory na disku) nebo **odstranit** projektu (odebere soubory na disku). Obě akce odebere projekt nebo položku z **Průzkumníka řešení**.  
   
 ## <a name="expected-behavior"></a>Očekávané chování  
  Očekávané chování u testovací případy v testovací oblast odstranění je:  

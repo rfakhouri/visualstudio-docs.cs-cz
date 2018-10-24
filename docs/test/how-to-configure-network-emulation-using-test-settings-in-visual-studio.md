@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ce10d096ff646b462c7b0aff2cbcf33493aad0c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ce49eb2e6892528d95e40bc1c40e36f355495c65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320654"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829284"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Postupy: Konfigurace emulace sítě s využitím testovacích nastavení v sadě Visual Studio
 
@@ -38,21 +38,21 @@ Pro emulaci sítě musíte použít účet, který má oprávnění správce. Po
 
  Visual Studio používá pro všechny typy testu skutečnou síťovou softwarovou emulaci. Patří sem zátěžové testy. Skutečná emulace sítě simuluje stavy sítě prostřednictvím přímé manipulace se síťovými pakety. Emulátor skutečné sítě může emulovat chování drátové i bezdrátové sítě pomocí spolehlivého fyzického propojení, jako je Ethernet. Následující atributy sítě jsou začleněny do emulace sítě:
 
--   Časem přenosu v síti (čekací doba)
+- Časem přenosu v síti (čekací doba)
 
--   Množství dostupné šířky pásma
+- Množství dostupné šířky pásma
 
--   Chování řízení front
+- Chování řízení front
 
--   Ztráta paketů
+- Ztráta paketů
 
--   Změna pořadí paketů
+- Změna pořadí paketů
 
--   Šíření chyb.
+- Šíření chyb.
 
- Skutečná emulace sítě také poskytuje flexibilitu při filtrování síťových paketů na základě IP adresy nebo protokoly, například TCP, UDP a ICMP.
+  Skutečná emulace sítě také poskytuje flexibilitu při filtrování síťových paketů na základě IP adresy nebo protokoly, například TCP, UDP a ICMP.
 
- Skutečná emulace sítě umožňuje založené na síti vývojářům a testerům emulovat požadované zkušební prostředí, hodnotit výkon, odhadnout účinky změn nebo rozhodovat o optimalizaci technologie. Srovnání s vrstvami testovacího hardwaru je skutečná emulace sítě mnohem levnější a pružnější řešení.
+  Skutečná emulace sítě umožňuje založené na síti vývojářům a testerům emulovat požadované zkušební prostředí, hodnotit výkon, odhadnout účinky změn nebo rozhodovat o optimalizaci technologie. Srovnání s vrstvami testovacího hardwaru je skutečná emulace sítě mnohem levnější a pružnější řešení.
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>Konfigurace emulace sítě pro nastavení testu
  Před provedením kroků v tomto postupu je nutné otevřít nastavení testů ze sady Visual Studio a vyberte **dat a diagnostiky** stránky.

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8684f85c7e5ccb8b4ca93ccc51a24c17ac40f633
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 339b0e9a3637ef375ee3ceee8c5fb84c2670c34f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838241"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Postupy: Vytváření řešení jazyka specifického pro doménu
 Jazyka specifického pro doménu (DSL) se vytvoří s použitím specializovaná řešení sady Visual Studio.
@@ -28,12 +28,12 @@ Jazyka specifického pro doménu (DSL) se vytvoří s použitím specializovaná
 ## <a name="prerequisites"></a>Požadavky
  Před zahájením tohoto postupu, je třeba nejprve nainstalovat tyto komponenty:
 
-|||
-|-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|Visual Studio Visualization and Modeling SDK||
 
+| | |
+|-|-|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| Visual Studio Visualization and Modeling SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -42,43 +42,43 @@ Jazyka specifického pro doménu (DSL) se vytvoří s použitím specializovaná
 
 #### <a name="to-create-a-domain-specific-language-solution"></a>K vytváření řešení jazyka specifického pro doménu
 
-1.  Spusťte průvodce nástroje DSL.
+1. Spusťte průvodce nástroje DSL.
 
-    1.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
+   1. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
 
-    2.  **Nový projekt** zobrazí se dialogové okno.
+   2. **Nový projekt** zobrazí se dialogové okno.
 
-    3.  V části **typy projektů**, rozbalte **ostatní typy projektů** uzel a klikněte na tlačítko **rozšiřitelnost**.
+   3. V části **typy projektů**, rozbalte **ostatní typy projektů** uzel a klikněte na tlačítko **rozšiřitelnost**.
 
-    4.  Klikněte na tlačítko **návrháře jazyka specifického pro doménu**.
+   4. Klikněte na tlačítko **návrháře jazyka specifického pro doménu**.
 
-    5.  V **název** zadejte název řešení. Klikněte na tlačítko **OK**.
+   5. V **název** zadejte název řešení. Klikněte na tlačítko **OK**.
 
-         **Průvodce návrháře jazyka specifického pro doménu** se zobrazí.
+       **Průvodce návrháře jazyka specifického pro doménu** se zobrazí.
 
-        > [!NOTE]
-        >  Název, který zadáte nejlépe, by měl být platný Visual C# identifikátor, protože může být použit pro generování kódu.
+      > [!NOTE]
+      >  Název, který zadáte nejlépe, by měl být platný Visual C# identifikátor, protože může být použit pro generování kódu.
 
-     ![Vytvoření dialogového okna DSL](../modeling/media/create_dsldialog.png)
+      ![Vytvoření dialogového okna DSL](../modeling/media/create_dsldialog.png)
 
-2.  Zvolte šablonu DSL.
+2. Zvolte šablonu DSL.
 
-     Na **vybrat možnosti jazyka specifického pro doménu** stránky, vyberte jednu z šablon řešení, jako **minimální jazykový**. Zvolte šablonu, která se podobá DSL, který chcete vytvořit.
+    Na **vybrat možnosti jazyka specifického pro doménu** stránky, vyberte jednu z šablon řešení, jako **minimální jazykový**. Zvolte šablonu, která se podobá DSL, který chcete vytvořit.
 
-     Další informace o šablonách řešení, najdete v části [výběr šablony řešení jazyka specifického pro doménu](../modeling/choosing-a-domain-specific-language-solution-template.md).
+    Další informace o šablonách řešení, najdete v části [výběr šablony řešení jazyka specifického pro doménu](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
-3.  Zadejte příponu názvu souboru na **přípona souboru** stránky. By měl být jedinečný ve vašem počítači a ve všech počítačích, na kterém chcete nainstalovat DSL. Zobrazí se zpráva **žádné aplikace ani editory sady Visual Studio toto rozšíření využít**.
+3. Zadejte příponu názvu souboru na **přípona souboru** stránky. By měl být jedinečný ve vašem počítači a ve všech počítačích, na kterém chcete nainstalovat DSL. Zobrazí se zpráva **žádné aplikace ani editory sady Visual Studio toto rozšíření využít**.
 
-    -   Pokud přípona názvu souboru jste použili v předchozí experimentální DSL, která plně nenainstalovali, můžete vymazat jejich odhlašování pomocí **resetovat experimentální instanci** nástroj, který se nachází v nabídce sady Visual Studio SDK.
+   -   Pokud přípona názvu souboru jste použili v předchozí experimentální DSL, která plně nenainstalovali, můžete vymazat jejich odhlašování pomocí **resetovat experimentální instanci** nástroj, který se nachází v nabídce sady Visual Studio SDK.
 
-    -   Pokud jiné rozšíření sady Visual Studio, který používá tuto příponu souboru byl plně nainstalován v počítači, vezměte v úvahu odinstalujete ji. Na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.
+   -   Pokud jiné rozšíření sady Visual Studio, který používá tuto příponu souboru byl plně nainstalován v počítači, vezměte v úvahu odinstalujete ji. Na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.
 
-4.  Zkontrolujte a v případě potřeby upravit, pole na zbývajících stránkách průvodce. Pokud jste s nastavením spokojeni, klikněte na tlačítko **Dokončit**. Další informace o nastaveních, která najdete v tématu [stránky průvodce Návrhář DSL](#settings).
+4. Zkontrolujte a v případě potřeby upravit, pole na zbývajících stránkách průvodce. Pokud jste s nastavením spokojeni, klikněte na tlačítko **Dokončit**. Další informace o nastaveních, která najdete v tématu [stránky průvodce Návrhář DSL](#settings).
 
-     Průvodce vytvoří řešení, která má dva projekty, které jsou pojmenovány **Dsl** a **DslPackage**.
+    Průvodce vytvoří řešení, která má dva projekty, které jsou pojmenovány **Dsl** a **DslPackage**.
 
-    > [!NOTE]
-    >  Pokud se zobrazí zpráva, která vás upozorní, není ke spuštění textové šablony z nedůvěryhodných zdrojů, klikněte na tlačítko **OK**. Můžete nastavit tato zpráva se zobrazí znovu.
+   > [!NOTE]
+   >  Pokud se zobrazí zpráva, která vás upozorní, není ke spuštění textové šablony z nedůvěryhodných zdrojů, klikněte na tlačítko **OK**. Můžete nastavit tato zpráva se zobrazí znovu.
 
 ## <a name="settings"></a> Na stránkách průvodce návrhářem DSL
  Můžete nechat několik polí nezmění z výchozí hodnoty. Nicméně Ujistěte se, že pole přípona souboru je nastavit.

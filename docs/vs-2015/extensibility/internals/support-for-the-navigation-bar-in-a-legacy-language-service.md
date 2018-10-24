@@ -16,12 +16,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7105299956a338d0dd4a637b404f9ccad2447662
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839138"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Podpora navigačního panelu ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,11 +69,11 @@ namespace TestLanguagePackage
   
  Jak se změní výběr v rozevíracím seznamu typů, seznam členů musí být aktualizovány tak, aby odrážely nový typ. Co se zobrazí v seznamu členů může být buď:  
   
--   Seznam členů pro aktuální typ.  
+- Seznam členů pro aktuální typ.  
   
--   Všechny členy k dispozici ve zdrojovém souboru, ale se všemi členy není v aktuálním typem zobrazí šedě text. Uživatel může vybrat stále členy šedě, proto mohou být použity pro rychlou navigaci, ale barva znamená, že nejsou součástí aktuálně vybraného typu.  
+- Všechny členy k dispozici ve zdrojovém souboru, ale se všemi členy není v aktuálním typem zobrazí šedě text. Uživatel může vybrat stále členy šedě, proto mohou být použity pro rychlou navigaci, ale barva znamená, že nejsou součástí aktuálně vybraného typu.  
   
- Implementace <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metoda obvykle provádí následující kroky:  
+  Implementace <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metoda obvykle provádí následující kroky:  
   
 1.  Získání seznamu sad aktuální deklarace pro zdrojový soubor.  
   

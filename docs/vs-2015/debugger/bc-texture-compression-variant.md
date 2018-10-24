@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da5df0faa57a63f44892fa86785bccf4716f38f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67876c6b9191c8b551eb70906272751bc55ef481
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837968"
 ---
 # <a name="bc-texture-compression-variant"></a>Varianta komprese textur BC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Umožňuje zablokovat kompresi na textury, které mají žádnému pixelovému f
 ## <a name="remarks"></a>Poznámky  
  Komprimovat textury s použitím komprese Blokový formát pro každé volání do `ID3DDevice::CreateTexture2D` , který vytváří zdrojovou texturu. Konkrétně jsou komprimovány textury při:  
   
--   `D3D11_TEXTURE2D_DESC` Objekt předaný v `pDesc` popisuje neměnné prostředek shaderu; který je:  
+- `D3D11_TEXTURE2D_DESC` Objekt předaný v `pDesc` popisuje neměnné prostředek shaderu; který je:  
   
-    -   Člen BindFlags má pouze D3D11_BIND_SHADER_RESOURCE příznak nastaven.  
+  -   Člen BindFlags má pouze D3D11_BIND_SHADER_RESOURCE příznak nastaven.  
   
-    -   Využití člen je nastavený na D3D11_USAGE_DEFAULT nebo D3D11_USAGE_IMMUTABLE.  
+  -   Využití člen je nastavený na D3D11_USAGE_DEFAULT nebo D3D11_USAGE_IMMUTABLE.  
   
-    -   Člen CPUAccessFlags je nastavený na hodnotu 0 (žádný přístup procesoru).  
+  -   Člen CPUAccessFlags je nastavený na hodnotu 0 (žádný přístup procesoru).  
   
-    -   Člen SamplerDesc má jeho Count – člen nastavena na hodnotu 1 (žádné více ukázka Anti-Aliasing (MSAA)).  
+  -   Člen SamplerDesc má jeho Count – člen nastavena na hodnotu 1 (žádné více ukázka Anti-Aliasing (MSAA)).  
   
--   Nejsou k dispozici počáteční data volání `CreateTexture2D`.  
+- Nejsou k dispozici počáteční data volání `CreateTexture2D`.  
   
- Tady jsou formáty podporované zdrojové a jejich komprimovanými formátů.  
+  Tady jsou formáty podporované zdrojové a jejich komprimovanými formátů.  
   
 |Původním formátu (od)|Komprimované formátu (do)|  
 |------------------------------|------------------------------|  

@@ -13,12 +13,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 806c19b7132a4541ff97c253700a5e5e980ef556
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255616"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817974"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek s použitím souboru .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Testování částí v sadě Visual Studio můžete konfigurovat pomocí souboru
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Přizpůsobení testů pomocí souboru .runsettings  
   
-1.  Přidání souboru XML do řešení sady Visual Studio a přejmenujte jej na test.runsettings. (Název souboru není důležité, ale rozšíření musí být s příponou .runsettings.)  
+1. Přidání souboru XML do řešení sady Visual Studio a přejmenujte jej na test.runsettings. (Název souboru není důležité, ale rozšíření musí být s příponou .runsettings.)  
   
-2.  Nahraďte obsah souboru [příklad](#example).  
+2. Nahraďte obsah souboru [příklad](#example).  
   
-     Upravte jej podle svých potřeb.  
+    Upravte jej podle svých potřeb.  
   
-3.  Na **testovací** nabídce zvolte **nastavení testu**, **vybrat soubor nastavení testu**.  
+3. Na **testovací** nabídce zvolte **nastavení testu**, **vybrat soubor nastavení testu**.  
   
- Můžete vytvořit více než jeden \*s příponou .runsettings souborů ve vašem řešení a povolit nebo zakázat v různých časech pomocí **nastavení testu** nabídky.  
+   Můžete vytvořit více než jeden \*s příponou .runsettings souborů ve vašem řešení a povolit nebo zakázat v různých časech pomocí **nastavení testu** nabídky.  
   
- ![Povolení souboru parametrů běhu](../test/media/runsettings-1.png "RunSettings-1")  
+   ![Povolení souboru parametrů běhu](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a> Zkopírování tohoto ukázkového souboru .runsettings  
  Zde je typický *.runsettings soubor. Každý prvek souboru je volitelný, protože každá hodnota má výchozí nastavení.  

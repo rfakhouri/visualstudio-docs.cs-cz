@@ -65,12 +65,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838683"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Psaní kódu v editoru kódu a textovém editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,19 +146,19 @@ Editor sady Visual Studio poskytuje mnoho funkcí, které usnadňují zápis a s
 
  Chcete-li skrýt navigační panel, změňte **navigační panel** možnost v nastavení textového editoru všechny jazyky (**nástroje/Možnosti/textový editor/všechny jazyky**, nebo můžete změnit nastavení pro jednotlivce jazyky). Můžete procházet pole rozevíracího seznamu následujícím způsobem:  
 
--   Chcete-li přesunout fokus z okna kódu na navigační panel, stiskněte kombinaci kláves CTRL + F2.  
+- Chcete-li přesunout fokus z okna kódu na navigační panel, stiskněte kombinaci kláves CTRL + F2.  
 
--   Chcete-li vrátit fokus z navigačního panelu do okna kódu, stiskněte klávesu ESC.  
+- Chcete-li vrátit fokus z navigačního panelu do okna kódu, stiskněte klávesu ESC.  
 
--   Chcete-li přesunout fokus z položek na navigačním panelu stiskněte klávesu Tabulátor.  
+- Chcete-li přesunout fokus z položek na navigačním panelu stiskněte klávesu Tabulátor.  
 
--   Chcete-li vybrat položku navigačního panelu, který má právě fokus a vrátit se do IDE, stiskněte klávesu ENTER  
+- Chcete-li vybrat položku navigačního panelu, který má právě fokus a vrátit se do IDE, stiskněte klávesu ENTER  
 
--   Přejděte do třídy nebo typu, klikněte na jeho název v rozevíracím seznamu vlevo.  
+- Přejděte do třídy nebo typu, klikněte na jeho název v rozevíracím seznamu vlevo.  
 
--   Pokud chcete přejít přímo k postupu ve třídě, klikněte na postup v rozevíracím seznamu vpravo.  
+- Pokud chcete přejít přímo k postupu ve třídě, klikněte na postup v rozevíracím seznamu vpravo.  
 
- V dílčí třídě mohou být členy definovány mimo aktuální soubor kódu šedě.  
+  V dílčí třídě mohou být členy definovány mimo aktuální soubor kódu šedě.  
 
 ## <a name="find-code-using-navigate-to"></a>Vyhledávání kódu pomocí přejít na
 Příkaz "Přejít na" Visual Studio nepodporuje cílené hledání kódu vám pomůžou rychle najít zadané elementy v kódu soubory, cesty k souborům a kód symboly. Na rozdíl od jiných text hledání například najít nebo najít v souborech omezuje přejít na hledání do oblastí, kde skutečný kód kdekoli, jako jsou soubory, formuláře a modulů kódu. Například Pokud dáte vyhledat řetězec do webové aplikace ASP.NET pomocí najít nebo najít v souborech v celé řešení, může se zobrazit několik přístupů, včetně instancí řetězce v kódu poznámky. Pomocí přejít na však může být pouze získáte jednu funkci, ignoruje všechny instance řetězce v kódu poznámky.

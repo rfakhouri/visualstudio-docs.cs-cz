@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7897869e8cc010d54c1914cbfa8ca763dd3a3bfa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2a4234d8f6ee9fa946f2accfd50a587e6dbd8068
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822102"
 ---
 # <a name="localize-clickonce-applications"></a>Lokalizace aplikací ClickOnce
 Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou verzi. Tento proces zahrnuje text uživatelského rozhraní (UI) pro jazyk specifický pro oblast, pomocí správné datum a formátování měny, nastavení velikosti ovládacích prvků ve formuláři, překlad a zrcadlení ovládací prvky zprava doleva v případě potřeby.  
@@ -76,9 +76,9 @@ Lokalizace je proces zpřístupnění aplikace vhodné pro konkrétní jazykovou
   
  Existují tři možnosti pro testování předtím, než je vaše aplikace je možné zákazníkům zpřístupnit lokalizovaných nasazení:  
   
--   Můžete spustit váš [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace na příslušný lokalizovaných verzích Windows.  
+- Můžete spustit váš [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace na příslušný lokalizovaných verzích Windows.  
   
--   Můžete nastavit <xref:System.Threading.Thread.CurrentUICulture%2A> vlastnost prostřednictvím kódu programu ve vaší aplikaci. (Tato vlastnost musí být nastavena dříve než zavoláte <xref:System.Windows.Forms.Application.Run%2A> metoda.)  
+- Můžete nastavit <xref:System.Threading.Thread.CurrentUICulture%2A> vlastnost prostřednictvím kódu programu ve vaší aplikaci. (Tato vlastnost musí být nastavena dříve než zavoláte <xref:System.Windows.Forms.Application.Run%2A> metoda.)  
   
 ## <a name="see-also"></a>Viz také:  
  [\<Vlastnost assemblyIdentity > – element](../deployment/assemblyidentity-element-clickonce-deployment.md)   

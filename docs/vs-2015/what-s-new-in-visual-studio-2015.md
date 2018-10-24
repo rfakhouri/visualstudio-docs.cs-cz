@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f97369709390d6a3e98ff8d995000d6edc574b13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93cee87a7a68083955d8c09562a318b602427efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828738"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;nového v sadě Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -108,17 +108,17 @@ Vítá vás Visual Studio 2015, integrovaná sada nástrojů podporujících pro
 ## <a name="connect-to-services"></a>Připojení ke službám  
  Visual Studio 2015 proto je snadnější než kdy dřív připojit vaši aplikaci ke službám.  Nový průvodce přidat připojenou službu váš projekt nakonfiguruje, přidává podporu potřebné ověřovací a stáhne potřebné balíčky NuGet, které vám pomůžou začít rychle a bezproblémově kódovat vaši službu. Průvodce přidat připojenou službu se také integruje s nový účet správce snadno pracovat s více uživatelských účtů a předplatných. V sadě Visual Studio 2015 podporu pro tyto služby je poskytována úprav (za předpokladu, že máte účet):  
   
-1.  Azure Mobile Services  
+1. Azure Mobile Services  
   
-2.  Azure Storage  
+2. Azure Storage  
   
-3.  Office 365 (pošta, kontakty, kalendáře, soubory, uživatelé a skupiny)  
+3. Office 365 (pošta, kontakty, kalendáře, soubory, uživatelé a skupiny)  
   
-4.  Salesforce  
+4. Salesforce  
   
- Bude průběžně přidávat nové služby a je možné vyhledat podle odkaz "najít nové služby" v průvodci.  
+   Bude průběžně přidávat nové služby a je možné vyhledat podle odkaz "najít nové služby" v průvodci.  
   
- ![Přidání dialogového okna připojené služby](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
+   ![Přidání dialogového okna připojené služby](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
   
 ## <a name="design-your-ui"></a>Návrh uživatelského rozhraní  
  Prostředí Blend pro návrh uživatelského rozhraní XAML je výrazně Vylepšená. Blend byl zcela přepracován a poskytují mnohem intuitivnější uživatelského rozhraní, výkonnější možnosti úpravy XAML, které včetně technologie IntelliSense a lepší integraci s Visual Studio. Další informace najdete v tématu [návrh XAML v sadě Visual Studio a nástroje Blend for Visual Studio](./designers/designing-xaml-in-visual-studio.md).  
@@ -188,19 +188,19 @@ Vítá vás Visual Studio 2015, integrovaná sada nástrojů podporujících pro
   
  V sadě Visual Studio Enterprise a Visual Studio Professional teď můžete:  
   
--   Zobrazit historii pro soubor celý kód v editoru sady Visual Studio.  
+- Zobrazit historii pro soubor celý kód v editoru sady Visual Studio.  
   
-     ![CodeLens: Získat kód podrobnosti o souborech](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
+   ![CodeLens: Získat kód podrobnosti o souborech](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
   
--   Podívejte se graf, který ukazuje, kdo změnil kód. To může pomoct najít vzory ve změnách vašeho týmu a posoudit jejich dopad.  
+- Podívejte se graf, který ukazuje, kdo změnil kód. To může pomoct najít vzory ve změnách vašeho týmu a posoudit jejich dopad.  
   
-     ![CodeLens: Změn kódu najdete v historii jako graf](./ide/media/codelens.png "CodeLens")  
+   ![CodeLens: Změn kódu najdete v historii jako graf](./ide/media/codelens.png "CodeLens")  
   
--   Snadno zobrazit poslední změny kódu.  
+- Snadno zobrazit poslední změny kódu.  
   
--   Najdete změny v další větve, které ovlivňují váš kód.  
+- Najdete změny v další větve, které ovlivňují váš kód.  
   
- Zobrazit [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md).  
+  Zobrazit [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md).  
   
 ### <a name="design-and-modeling-tools-enterprise-edition-only"></a>Návrh a modelování nástroje (pouze edice Enterprise)  
  **Mapy kódu a grafy závislostí**  
@@ -213,35 +213,35 @@ Vítá vás Visual Studio 2015, integrovaná sada nástrojů podporujících pro
   
  Mezi další vylepšení patří:  
   
--   **Vylepšené vertikální diagramy**. Pro střední až velká řešení sady Visual Studio můžete nyní použít zjednodušenou nabídku architektura získáte užitečnější kód mapy pro vaše řešení. Sestavení vašeho řešení se seskupují podle složek řešení, takže můžete vidět v kontextu a využít úsilí, které jste vložili do struktury řešení. Okamžitě uvidíte projekt a odkazy na sestavení a pak se zobrazí typy propojení. Kromě toho sestavení externí do vašeho řešení se seskupují kompaktnějším způsobem.  
+- **Vylepšené vertikální diagramy**. Pro střední až velká řešení sady Visual Studio můžete nyní použít zjednodušenou nabídku architektura získáte užitečnější kód mapy pro vaše řešení. Sestavení vašeho řešení se seskupují podle složek řešení, takže můžete vidět v kontextu a využít úsilí, které jste vložili do struktury řešení. Okamžitě uvidíte projekt a odkazy na sestavení a pak se zobrazí typy propojení. Kromě toho sestavení externí do vašeho řešení se seskupují kompaktnějším způsobem.  
   
--   **Projekty testů mají jiný styl a dají se filtrovat**. Teď můžete snadno a rychle identifikovat projekty testů na mapě protože mají jiný styl. Můžete se taky odfiltrovat, aby se mohli soustředit na funkční kód aplikace.  
+- **Projekty testů mají jiný styl a dají se filtrovat**. Teď můžete snadno a rychle identifikovat projekty testů na mapě protože mají jiný styl. Můžete se taky odfiltrovat, aby se mohli soustředit na funkční kód aplikace.  
   
--   **Zjednodušené odkazy externích závislostí**. Odkazy závislostí už nepředstavují dědičnost z System.Object, System.ValueType, System.Enum a System.Delegate. Díky tomu snadněji rozpoznáte externí závislosti ve vaší mapě kódu.  
+- **Zjednodušené odkazy externích závislostí**. Odkazy závislostí už nepředstavují dědičnost z System.Object, System.ValueType, System.Enum a System.Delegate. Díky tomu snadněji rozpoznáte externí závislosti ve vaší mapě kódu.  
   
--   **"Procházení – na odkazy závislostí" zohledňuje filtry**. Užitečný a jasný diagram získáte, když ho rozbalíte, abyste pochopili příspěvky k odkazu závislostí. Diagram není moc zaplněný a zohledňuje možnosti, které jste vybrali filtrování propojení.  
+- **"Procházení – na odkazy závislostí" zohledňuje filtry**. Užitečný a jasný diagram získáte, když ho rozbalíte, abyste pochopili příspěvky k odkazu závislostí. Diagram není moc zaplněný a zohledňuje možnosti, které jste vybrali filtrování propojení.  
   
--   **Prvky kódu se přidávají do mapy kódu s jejich kontextem**. Protože teď diagramy zobrazují se svým kontextem (až po sestavení řešení a složky, která můžete filtrovat podle potřeby), můžete získat užitečnější diagramy při přetažení prvků kódu z Průzkumníka řešení, zobrazení tříd, prohlížeče objektů nebo když vyberete prvky v Průzkumníku řešení a zvolíte zobrazení na mapě kódu.  
+- **Prvky kódu se přidávají do mapy kódu s jejich kontextem**. Protože teď diagramy zobrazují se svým kontextem (až po sestavení řešení a složky, která můžete filtrovat podle potřeby), můžete získat užitečnější diagramy při přetažení prvků kódu z Průzkumníka řešení, zobrazení tříd, prohlížeče objektů nebo když vyberete prvky v Průzkumníku řešení a zvolíte zobrazení na mapě kódu.  
   
--   **Rychlejší získání reaktivních map kódu**. Operací přetažení výsledek se dostaví okamžitě a vazby mezi uzly se vytvoří mnohem rychleji, aniž by ovlivnily následné uživatelem iniciované operace, třeba rozbalení uzlu nebo požadavek na víc uzlů. Při vytváření map kódu bez sestavování řešení, všechny krajní případy, takové kdy třeba sestavení nejsou vytvořená – se teď zpracují.  
+- **Rychlejší získání reaktivních map kódu**. Operací přetažení výsledek se dostaví okamžitě a vazby mezi uzly se vytvoří mnohem rychleji, aniž by ovlivnily následné uživatelem iniciované operace, třeba rozbalení uzlu nebo požadavek na víc uzlů. Při vytváření map kódu bez sestavování řešení, všechny krajní případy, takové kdy třeba sestavení nejsou vytvořená – se teď zpracují.  
   
--   **Přeskočit opětovné sestavování svého řešení.** Poskytuje lepší výkon při vytváření a úpravách diagramů.  
+- **Přeskočit opětovné sestavování svého řešení.** Poskytuje lepší výkon při vytváření a úpravách diagramů.  
   
--   **Filtrování skupin a uzlů prvků kódu**. Můžete rychle zpřehlednit tím vaše mapy zobrazení nebo skrytí prvky kódu na základě jejich kategorie a prvky kódu seskupíte podle složek řešení, sestavení, oborů názvů, složek projektu a typů.  
+- **Filtrování skupin a uzlů prvků kódu**. Můžete rychle zpřehlednit tím vaše mapy zobrazení nebo skrytí prvky kódu na základě jejich kategorie a prvky kódu seskupíte podle složek řešení, sestavení, oborů názvů, složek projektu a typů.  
   
--   **Filtrování vztahů v zájmu usnadnění diagramy**. Filtrování vazeb se teď týká i propojení mezi skupinami, takže práce s oknem filtru je teď míň obtěžující než v předchozích verzích.  
+- **Filtrování vztahů v zájmu usnadnění diagramy**. Filtrování vazeb se teď týká i propojení mezi skupinami, takže práce s oknem filtru je teď míň obtěžující než v předchozích verzích.  
   
--   **Vytváření diagramů ze zobrazení tříd a prohlížeče objektů**. Přetáhněte a umístěte soubory a sestavení do nové nebo existující mapy z oken zobrazení tříd a prohlížeče objektů.  
+- **Vytváření diagramů ze zobrazení tříd a prohlížeče objektů**. Přetáhněte a umístěte soubory a sestavení do nové nebo existující mapy z oken zobrazení tříd a prohlížeče objektů.  
   
- Zobrazit [mapování závislostí napříč vaším řešením](./modeling/map-dependencies-across-your-solutions.md).  
+  Zobrazit [mapování závislostí napříč vaším řešením](./modeling/map-dependencies-across-your-solutions.md).  
   
- **Další změny návrhu a modelování v této verzi:**  
+  **Další změny návrhu a modelování v této verzi:**  
   
--   **Diagramy vrstev**. Zobrazení tříd a prohlížeče objektů tyto diagramy můžete aktualizujte. Abyste splnili požadavky na návrh softwaru, použijte diagramy vrstev k popsání požadovaných závislostí pro váš software. Udržujte kód v souladu s tímto návrhem najděte kód, který nevyhovuje těmto omezením a ověřujte budoucí kód podle tohoto směrného plánu.  
+- **Diagramy vrstev**. Zobrazení tříd a prohlížeče objektů tyto diagramy můžete aktualizujte. Abyste splnili požadavky na návrh softwaru, použijte diagramy vrstev k popsání požadovaných závislostí pro váš software. Udržujte kód v souladu s tímto návrhem najděte kód, který nevyhovuje těmto omezením a ověřujte budoucí kód podle tohoto směrného plánu.  
   
--   **Diagramy UML**. Můžete už vytvoření diagramů tříd UML a sekvenční diagramy z kódu. Ale můžete pořád vytvářet pomocí nových elementů UML.  
+- **Diagramy UML**. Můžete už vytvoření diagramů tříd UML a sekvenční diagramy z kódu. Ale můžete pořád vytvářet pomocí nových elementů UML.  
   
--   **Průzkumník architektury**. Průzkumník architektury již slouží k vytváření diagramů. Ale můžete pořád použít Průzkumník řešení.  
+- **Průzkumník architektury**. Průzkumník architektury již slouží k vytváření diagramů. Ale můžete pořád použít Průzkumník řešení.  
   
 ## <a name="visual-studio-extensibility-tools"></a>Visual Studio Extensibility Tools  
  Nikdy nebylo jednodušší instalaci Visual Studio Extensibility Tools (VS SDK a šablony), protože teď jsou zahrnuté jako volitelná součást během instalace.  Extensibility Tools umožňují vývojářům umožňuje psát rozšíření pro přizpůsobení a přidávání funkcí do sady Visual Studio. Další informace o rozšiřitelnost sady Visual Studio najdete v tématu [Visual Studio SDK](./extensibility/visual-studio-sdk.md)  

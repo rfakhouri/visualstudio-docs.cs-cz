@@ -29,21 +29,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 219ffa4a7a9c7d32348a262ea49c6f66d20e1c7f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b169242b9828f47f1ecfb87ebf02a9f86234699f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836993"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office runtime – přehled
   Spouštění řešení, které jsou vytvořeny pomocí nástroje Microsoft Office developer tools v sadě Visual Studio, Visual Studio 2010 Tools for Office runtime musí nainstalovat na počítačích koncových uživatelů. Další informace najdete v tématu [postupy: instalace aplikace Visual Studio Tools for Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools for Office runtime obsahuje dvě hlavní součásti:  
   
--   Rozšíření Office pro rozhraní .NET Framework. Tyto součásti jsou spravovaná sestavení, která poskytují komunikační vrstvu mezi vaším řešením a aplikací Microsoft Office. Další informace najdete v tématu [vysvětlení rozšíření Office pro rozhraní .NET Framework](#officeextensions).  
+- Rozšíření Office pro rozhraní .NET Framework. Tyto součásti jsou spravovaná sestavení, která poskytují komunikační vrstvu mezi vaším řešením a aplikací Microsoft Office. Další informace najdete v tématu [vysvětlení rozšíření Office pro rozhraní .NET Framework](#officeextensions).  
   
--   Zavaděč řešení pro Office. Tato součást je sada nespravovaných knihoven DLL, pomocí nichž aplikace Office zavádějí modul runtime a vaše řešení. Další informace najdete v tématu [pochopit zavaděče řešení Office](#UnmanagedLoader).  
+- Zavaděč řešení pro Office. Tato součást je sada nespravovaných knihoven DLL, pomocí nichž aplikace Office zavádějí modul runtime a vaše řešení. Další informace najdete v tématu [pochopit zavaděče řešení Office](#UnmanagedLoader).  
   
- K dispozici je několik různých možností, jak nainstalovat modul runtime. V závislosti na konfiguraci počítače jsou při instalaci modulu runtime nainstalovány jeho různé součásti. Další informace najdete v tématu [Visual Studio Tools for Office runtime instalace scénáře](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
+  K dispozici je několik různých možností, jak nainstalovat modul runtime. V závislosti na konfiguraci počítače jsou při instalaci modulu runtime nainstalovány jeho různé součásti. Další informace najdete v tématu [Visual Studio Tools for Office runtime instalace scénáře](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
 ##  <a name="officeextensions"></a> Vysvětlení rozšíření Office pro rozhraní .NET Framework  
  Visual Studio 2010 Tools for Office runtime obsahuje rozšíření Office pro rozhraní .NET Framework 3.5 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] a novější. Řešení, která cílí na jednotlivé verze rozhraní .NET Framework, používají příslušné rozšíření pro danou verzi.  
@@ -65,17 +65,17 @@ ms.locfileid: "35676049"
   
  Ve výchozím nastavení, není povolena funkce typu ekvivalence při vytváření projektu aplikace Office, který cílí [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější. Pokud chcete tuto funkci povolit, nastavte **Embed Interop Types** vlastnost některého z následujících odkazů na sestavení v projektu na **True**:  
   
--   Microsoft.Office.Tools.dll  
+- Microsoft.Office.Tools.dll  
   
--   Microsoft.Office.Tools.Common.dll  
+- Microsoft.Office.Tools.Common.dll  
   
--   Microsoft.Office.Tools.Excel.dll  
+- Microsoft.Office.Tools.Excel.dll  
   
--   Microsoft.Office.Tools.Outlook.dll  
+- Microsoft.Office.Tools.Outlook.dll  
   
--   Microsoft.Office.Tools.Word.dll  
+- Microsoft.Office.Tools.Word.dll  
   
- Když projekt po provedení této změny sestavíte, budou informace o typech pro všechny typy modulu runtime používané projektem vloženy do sestavení řešení. Tyto informace vložený typ, nikoli informací o typech v odkazovaných sestaveních jsou používány řešení za běhu.  
+  Když projekt po provedení této změny sestavíte, budou informace o typech pro všechny typy modulu runtime používané projektem vloženy do sestavení řešení. Tyto informace vložený typ, nikoli informací o typech v odkazovaných sestaveních jsou používány řešení za běhu.  
   
 ##  <a name="UnmanagedLoader"></a> Vysvětlení zavaděče řešení Office  
  Visual Studio Tools for Office runtime obsahuje několik nespravovaných knihoven DLL, které aplikacím Office se načíst modul runtime a řešení pro systém Office. I když by nikdy nemělo být nutné pracovat s těmito knihovnami DLL přímo, znalost účelu těchto knihoven DLL vám může pomoci lépe porozumět architektuře řešení pro Office.  
@@ -90,17 +90,17 @@ ms.locfileid: "35676049"
 ### <a name="vstoloaderdll"></a>VSTOLoader.dll  
  Po *VSTOEE.dll* načte příslušnou verzi [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], *knihovna VSTOLoader.dll* provede většinu práce, která je zapotřebí pro zavedení sestavení řešení. *Knihovna VSTOLoader.dll* provádí několik operací:  
   
--   Vytvoří doménu aplikace pro každé sestavení řešení.  
+- Vytvoří doménu aplikace pro každé sestavení řešení.  
   
--   Pomocí kontrol zabezpečení ověří, zda má sestavení řešení oprávnění ke spuštění.  
+- Pomocí kontrol zabezpečení ověří, zda má sestavení řešení oprávnění ke spuštění.  
   
--   Načte verzi rozšíření Office pro rozhraní .NET Framework, které je požadováno řešením.  
+- Načte verzi rozšíření Office pro rozhraní .NET Framework, které je požadováno řešením.  
   
- *Knihovna VSTOLoader.dll* také provádí několik operací, které jsou specifické pro doplňky VSTO:  
+  *Knihovna VSTOLoader.dll* také provádí několik operací, které jsou specifické pro doplňky VSTO:  
   
--   Implementuje <xref:Extensibility.IDTExtensibility2> rozhraní. <xref:Extensibility.IDTExtensibility2> je rozhraní modelu COM, který musí implementovat všechny doplňků VSTO pro aplikace Microsoft Office. Toto rozhraní definuje metody, které aplikace volá při komunikaci s doplňku VSTO.  
+- Implementuje <xref:Extensibility.IDTExtensibility2> rozhraní. <xref:Extensibility.IDTExtensibility2> je rozhraní modelu COM, který musí implementovat všechny doplňků VSTO pro aplikace Microsoft Office. Toto rozhraní definuje metody, které aplikace volá při komunikaci s doplňku VSTO.  
   
--   Imanagedaddin – rozhraní implementuje. Toto rozhraní se používá aplikace Office zavádějí doplňků VSTO. Další informace najdete v tématu [imanagedaddin – rozhraní](../vsto/imanagedaddin-interface.md).  
+- Imanagedaddin – rozhraní implementuje. Toto rozhraní se používá aplikace Office zavádějí doplňků VSTO. Další informace najdete v tématu [imanagedaddin – rozhraní](../vsto/imanagedaddin-interface.md).  
   
 ## <a name="understand-the-32-bit-and-64-bit-versions-of-the-runtime"></a>Vysvětlení 32bitové a 64bitové verze modulu runtime  
  Existují samostatné 64bitové a 32bitové verze sady Visual Studio 2010 Tools for Office runtime. Tyto verze modulu runtime se používají ke spouštění řešení v 64bitových a 32bitových edicích Office. Následující tabulka uvádí, která verze modulu runtime je vyžadována pro příslušnou kombinaci systému Windows a Office.  

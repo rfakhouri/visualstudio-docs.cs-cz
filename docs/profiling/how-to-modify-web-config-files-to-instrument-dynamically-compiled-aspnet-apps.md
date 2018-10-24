@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET | Microsoft Docs'
+title: 'Postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,72 +10,76 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ceee8ee3781a367f351f20ca92b83f4db000b42b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 521da3263d3ea893613bf3b5211763230d07c67f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830987"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Postupy: Úprava souborů web.config za účelem instrumentace a profil dynamicky kompilované webové aplikace ASP.NET
-Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody instrumentace nástrojích pro profilaci ke shromažďování podrobných dat časování, data přidělení paměti .NET a životnosti objektů .NET z dynamicky kompilovat [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace.  
-  
- Toto téma popisuje postup úpravy *web.config* konfigurační soubor umožňující instrumentace a profilování z [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace.  
-  
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Postupy: Úprava souborů web.config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET
+Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojů pro profilaci sady metody instrumentace ke shromažďování podrobných dat časování, data o přidělování paměti .NET a životnosti objektů .NET z dynamicky zkompilován [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace.  
+
+ Toto téma popisuje postup úpravy *web.config* konfigurační soubor instrumentace a profilování [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace.  
+
 > [!NOTE]
->  Není nutné změnit *web.config* souborů při použití metoda profilování se vzorkováním, nebo když chcete instrumentace předem kompilovaném [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] modulu.  
-  
- Kořenové *web.config* soubor je **konfigurace** elementu. Instrumentace a profilu dynamicky kompilované [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci, musíte přidat nebo upravit následující prvky:  
-  
--   A **konfigurace/runtime nebo assemblybinding – / dependentAssembly** element, který identifikuje Microsoft.VisualStudio.Enterprise.ASPNetHelper sestavení, které řídí profilace. **DependentAssembly** element obsahuje dva podřízené elementy: **assemblyIdentity** a **základu kódu**.  
-  
--   A **configuration/system.web/compilation** element, který identifikuje profileru po zpracování kompilační krok pro cíl sestavení.  
-  
--   Dva **přidat** prvky, které identifikují umístění profilace nástrojům jsou přidány do **konfigurace/appSettings** části.  
-  
- Doporučujeme vytvořit kopii původního *web.config* soubor, který můžete použít k obnovení konfigurace aplikace.  
-  
-### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Chcete-li přidat sestavení ASPNetHelper jako konfigurace/runtime nebo assemblybinding – / dependentAssembly – element  
-  
-1.  V případě potřeby přidejte **runtime** prvku jako podřízeného prvku **konfigurace** element; jinak, přejděte k dalšímu kroku.  
-  
-     **Runtime** element nemá žádné atributy. **Konfigurace** element může mít jen jeden **runtime** podřízený element.  
-  
-2.  V případě potřeby přidejte **assemblybinding –** prvku jako podřízeného prvku **runtime** element; jinak, přejděte k dalšímu kroku.  
-  
-     **Runtime** element může mít jen jeden **assemblybinding –** elementu.  
-  
-3.  Přidejte následující atribut název a hodnotu **assemblybinding –** element:  
-  
-    |Název atributu|Hodnota atributu|  
-    |--------------------|---------------------|  
-    |**atribut xmlns**|**název urn: schémata-microsoft-com:asm.v1**|  
-  
-4.  Přidat **dependentAssembly** prvku jako podřízeného prvku **assemblybinding –** elementu.  
-  
-     **DependentAssembly** element nemá žádné atributy.  
-  
-5.  Přidat **assemblyIdentity** jako podřízený element **dependentAssembly** elementu.  
-  
-6.  Přidejte následující atribut názvy a hodnoty, které mají **assemblyIdentity** element:  
-  
-    |Název atributu|Hodnota atributu|  
-    |--------------------|---------------------|  
-    |**Jméno**|**Microsoft.VisualStudio.Enterprise.ASPNetHelper**|  
-    |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
-    |**Jazyková verze**|**Neutrální**|  
-  
-7.  Přidat **základu kódu** jako podřízený element **dependentAssembly** elementu.  
-  
-8.  Přidejte následující atribut názvy a hodnoty, které mají **základu kódu** element:  
-  
-    |Název atributu|Hodnota atributu|  
-    |--------------------|---------------------|  
-    |**Verze**|**10.0.0.0**|  
-    |**href**|`PathToASPNetHelperDll`|  
-  
-     `PathToASPNetHelperDll` je adresa URL souboru Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Pokud [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalována ve výchozím umístění, **href** hodnota by měla být `C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL`  
-  
+>  Není nutné upravovat *web.config* souborů při použití metoda profilování vzorkování nebo instrumentaci předkompilované [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] modulu.  
+
+ Kořenovém adresáři *web.config* soubor je **konfigurace** elementu. Účelem instrumentace a profilování dynamicky kompilovaných [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci, musíte přidat nebo upravit následující prvky:  
+
+- A **konfigurace/runtime/assemblyBinding/dependentAssembly** element, který identifikuje Microsoft.VisualStudio.Enterprise.ASPNetHelper sestavení, které ovládací prvky, profilování. **DependentAssembly** prvek obsahuje dva podřízené prvky: **assemblyIdentity** a **codeBase**.  
+
+- A **configuration/system.web/compilation** element, který identifikuje krok následného zpracování kompilace profileru pro cílové sestavení.  
+
+- Dvě **přidat** prvky, které určují umístění nástroje pro profilaci sady nástrojů se přidávají do **konfigurace/appSettings** oddílu.  
+
+  Doporučujeme vytvořit kopii původní *web.config* soubor, který můžete použít k obnovení nastavení aplikace.  
+
+### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Chcete-li přidat ASPNetHelper sestavení jako konfigurace/runtime/assemblyBinding/dependentAssembly – element  
+
+1. V případě potřeby přidat **runtime** prvek jako podřízený prvek **konfigurace** prvek; v opačném případě přejděte k dalšímu kroku.  
+
+    **Runtime** prvek nemá žádné atributy. **Konfigurace** prvek může mít pouze jeden **runtime** podřízený element.  
+
+2. V případě potřeby přidat **assemblyBinding** prvek jako podřízený prvek **runtime** prvek; v opačném případě přejděte k dalšímu kroku.  
+
+    **Runtime** prvek může mít pouze jeden **assemblyBinding** elementu.  
+
+3. Přidejte následující atribut název a hodnota, která se **assemblyBinding** element:  
+
+
+   | Název atributu | Hodnota atributu |
+   |----------------|--------------------------------------|
+   | **xmlns.** | **název urn: schémata-microsoft-com:asm.v1** |
+
+
+4. Přidat **dependentAssembly** prvek jako podřízený prvek **assemblyBinding** elementu.  
+
+    **DependentAssembly** prvek nemá žádné atributy.  
+
+5. Přidat **assemblyIdentity** element jako podřízený objekt **dependentAssembly** elementu.  
+
+6. Přidejte následující atribut názvy a hodnoty, které mají **assemblyIdentity** element:  
+
+
+   | Název atributu | Hodnota atributu |
+   |--------------------| - |
+   | **Jméno** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
+   | **PublicKeyToken** | **b03f5f7f11d50a3a** |
+   | **Jazyková verze** | **Neutrální** |
+
+
+7. Přidat **základu kódu** element jako podřízený objekt **dependentAssembly** elementu.  
+
+8. Přidejte následující atribut názvy a hodnoty, které mají **codeBase** element:  
+
+   |Název atributu|Hodnota atributu|  
+   |--------------------|---------------------|  
+   |**version**|**10.0.0.0**|  
+   |**href**|`PathToASPNetHelperDll`|  
+
+    `PathToASPNetHelperDll` je adresa URL souboru Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Pokud [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalován do výchozího umístění **href** hodnota by měla být `C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL`  
+
 ```xml  
     <configuration>  
         <runtime>  
@@ -95,23 +99,23 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
             </assemblyBinding>  
         </runtime>  
 ```  
-  
-### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Chcete přidat krok po zpracování profileru do elementu configuration/system.web/compilation  
-  
-1.  V případě potřeby přidejte **system.web** prvku jako podřízeného prvku **konfigurace** element; jinak, přejděte k dalšímu kroku.  
-  
-     **System.web** element nemá žádné atributy. **Konfigurace** element může mít jen jeden **system.web** podřízený element.  
-  
-2.  V případě potřeby přidejte **kompilace** prvku jako podřízeného prvku **system.web** element; jinak, přejděte k dalšímu kroku.  
-  
-     **System.web** element může mít jen jeden **kompilace** podřízený element.  
-  
-3.  Odeberte všechny existující atributy z **kompilace** elementu a přidejte následující atribut název a hodnotu:  
-  
+
+### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Můžete přidat krok následného zpracování profiler configuration/system.web/compilation element  
+
+1.  V případě potřeby přidat **system.web** prvek jako podřízený prvek **konfigurace** prvek; v opačném případě přejděte k dalšímu kroku.  
+
+     **System.web** prvek nemá žádné atributy. **Konfigurace** prvek může mít pouze jeden **system.web** podřízený element.  
+
+2.  V případě potřeby přidat **kompilace** prvek jako podřízený prvek **system.web** prvek; v opačném případě přejděte k dalšímu kroku.  
+
+     **System.web** prvek může mít pouze jeden **kompilace** podřízený element.  
+
+3.  Odeberte všechny existující atributy z **kompilace** prvek a přidejte následující atribut název a hodnotu:  
+
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
-    |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter, Microsoft.VisualStudio.Enterprise.ASPNetHelper, verze = 10.0.0.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a**|  
-  
+    |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter Microsoft.VisualStudio.Enterprise.ASPNetHelper, verze = 10.0.0.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a**|  
+
 ```xml  
     <configuration>  
         <runtime>  
@@ -127,33 +131,35 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
         </system.web>  
     <configuration>  
 ```  
-  
-### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>Chcete-li přidat nastavení umístění profileru do konfigurace/appSettings elementu  
-  
-1.  V případě potřeby přidejte **appSettings** prvku jako podřízeného prvku **konfigurace** element; jinak, přejděte k dalšímu kroku.  
-  
-     **AppSettings** element nemá žádné atributy. **Konfigurace** element může mít jen jeden **appSettings** podřízený element.  
-  
-2.  Přidat **přidat** jako podřízený element **appSettings** elementu.  
-  
-3.  Přidejte následující atribut názvy a hodnoty, které mají **přidat** element:  
-  
-    |Název atributu|Hodnota atributu|  
-    |--------------------|---------------------|  
-    |**Klíč**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**value**|`PerformanceToolsFolder` **\VSInstr.exe**|  
-  
-4.  Přidejte další **přidat** jako podřízený element **appSettings** elementu.  
-  
-5.  Přidejte následující atribut názvy a hodnoty k tomuto **přidat** element:  
-  
-    |Název atributu|Hodnota atributu|  
-    |--------------------|---------------------|  
-    |**Klíč**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-    |**value**|`PerformanceToolsFolder`|  
-  
-     `PerformanceToolsFolder` je cesta profileru spustitelné soubory. Pokud [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalována ve výchozím umístění, bude hodnota **10.0\Team C:\Program Files\Microsoft Visual Studio Tools nástroje**  
-  
+
+### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>Chcete-li přidat nastavení umístění profiler element konfigurace/appSettings  
+
+1. V případě potřeby přidat **appSettings** prvek jako podřízený prvek **konfigurace** prvek; v opačném případě přejděte k dalšímu kroku.  
+
+    **AppSettings** prvek nemá žádné atributy. **Konfigurace** prvek může mít pouze jeden **appSettings** podřízený element.  
+
+2. Přidat **přidat** element jako podřízený objekt **appSettings** elementu.  
+
+3. Přidejte následující atribut názvy a hodnoty, které mají **přidat** element:  
+
+
+   | Název atributu | Hodnota atributu |
+   |----------------| - |
+   | **Klíč** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
+   | **value** | `PerformanceToolsFolder` **\VSInstr.exe** |
+
+
+4. Přidejte další **přidat** element jako podřízený objekt **appSettings** elementu.  
+
+5. Přidejte následující atribut názvy a hodnoty tohoto **přidat** element:  
+
+   |Název atributu|Hodnota atributu|  
+   |--------------------|---------------------|  
+   |**Klíč**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
+   |**value**|`PerformanceToolsFolder`|  
+
+    `PerformanceToolsFolder` je cesta profileru spustitelné soubory. Pokud [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalovaný ve výchozím umístění, bude hodnota **10.0\Team C:\Program Files\Microsoft Visual Studio Tools nástroje**  
+
 ```xml  
     <configuration>  
         <runtime>  
@@ -174,10 +180,10 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
         </appSettings>  
     </configuration>  
 ```  
-  
+
 ## <a name="example"></a>Příklad  
- Toto je úplná *web.config* soubor, který umožňuje instrumentace a profilování z dynamicky kompilovat [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace. Tento příklad předpokládá, že neexistují žádné další nastavení v souboru před úpravou.  
-  
+ Tady je úplný *web.config* soubor, který umožňuje instrumentace a profilování dynamicky zkompilován [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace. Tento příklad předpokládá, že neexistují žádná ostatní nastavení v souboru před provedením změny.  
+
 ```xml  
 <?xml version="1.0"?>  
     <configuration>  
@@ -218,9 +224,9 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
             />  
         </appSettings>  
     </configuration>  
-  
+
 ```  
-  
+
 ## <a name="see-also"></a>Viz také:  
  [Postupy: instrumentace dynamicky kompilované aplikace ASP.NET a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)   
  [Postupy: instrumentace dynamicky kompilované aplikace ASP.NET a shromažďování dat paměti](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

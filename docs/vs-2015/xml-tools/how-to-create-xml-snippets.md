@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fbcb7254ad1cd417b8cdb90c3ea257868ab5a84
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38bec6de97a0b9d38891046a1a6b57f4d31541bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818156"
 ---
 # <a name="how-to-create-xml-snippets"></a>Postupy: vytváření fragmentů XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ XML Editor lze použít k vytvoření nových fragmentů kódu XML. Editor obsah
   
  `Code` Element obsahuje tři proměnné.  
   
--   $name$ je uživatelem definované proměnné. Vytvoří `name` element, který se má upravit hodnotu, která výchozí hodnota je "name". Uživatelem definované proměnné jsou definovány pomocí `Literal` elementu.  
+- $name$ je uživatelem definované proměnné. Vytvoří `name` element, který se má upravit hodnotu, která výchozí hodnota je "name". Uživatelem definované proměnné jsou definovány pomocí `Literal` elementu.  
   
--   Vybraná $$ je předdefinovaná proměnná. Představuje text, který byl vybrán v editoru XML před vyvoláním fragmentu kódu. Umístění tato proměnná Určuje, kde se zobrazí vybraný text ve fragmentu kódu obklopující výběr.  
+- Vybraná $$ je předdefinovaná proměnná. Představuje text, který byl vybrán v editoru XML před vyvoláním fragmentu kódu. Umístění tato proměnná Určuje, kde se zobrazí vybraný text ve fragmentu kódu obklopující výběr.  
   
--   $end$ je předdefinovaná proměnná. Když uživatel stiskne klávesu ENTER k ukončení úprav pole fragmentu kódu, tato proměnná Určuje, kde znak stříšky (^) je přesunuta do.  
+- $end$ je předdefinovaná proměnná. Když uživatel stiskne klávesu ENTER k ukončení úprav pole fragmentu kódu, tato proměnná Určuje, kde znak stříšky (^) je přesunuta do.  
   
- Výše uvedené `Code` element vloží následující text XML:  
+  Výše uvedené `Code` element vloží následující text XML:  
   
 ```  
 <test>  
