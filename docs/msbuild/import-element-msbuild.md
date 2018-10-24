@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7dd5b0aa6f0ed56aaa3315c03aeef6ed1b77ad62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077487"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839606"
 ---
 # <a name="import-element-msbuild"></a>Import – element (MSBuild)
 Importuje obsah jednoho souboru projektu do jiného souboru projektu.  
@@ -55,10 +55,10 @@ Importuje obsah jednoho souboru projektu do jiného souboru projektu.
 
 ### <a name="parent-elements"></a>Nadřazené prvky  
 
-|Prvek|Popis|  
-|-------------|-----------------|  
-|[Projekt](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
-|[Importgroup –](../msbuild/importgroup-element.md)|Obsahuje kolekci `Import` prvky seskupené pod nadpisem nepovinnou podmínku.|  
+| Prvek | Popis |
+| - | - |
+| [Projekt](../msbuild/project-element-msbuild.md) | Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu. |
+| [Importgroup –](../msbuild/importgroup-element.md) | Obsahuje kolekci `Import` prvky seskupené pod nadpisem nepovinnou podmínku. |
 
 ## <a name="remarks"></a>Poznámky  
  S použitím `Import` element, můžete znovu použít kód, který je společná pro mnoho souborů projektu. Díky tomu je snazší údržbu kódu, protože všechny aktualizace, které provedete sdílený kód získat rozšíří do všech projektů, které naimportujete.  
@@ -75,7 +75,7 @@ Importuje obsah jednoho souboru projektu do jiného souboru projektu.
 
 > [!NOTE]
 >  Do příkazového řádku MSBuilds práci import podmíněné příkazy, nefungují, pomocí nástroje MSBuild v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Podmíněné importy vyhodnocují se pomocí hodnoty konfigurace a platformy, které jsou nastaveny při načtení projektu. Pokud následně změn, které vyžadují přehodnocení podmíněné příkazy v souboru projektu, například změna platformu, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] přehodnotí podmínky vlastností a položek, ale ne importy. Protože podmíněné import již není znovu, import se přeskočí.  
->   
+> 
 >  Chcete-li tento problém obejít, umístěte podmíněné importy *.targets* soubory nebo vložení kód s podmínkou blokovat, jako [zvolit – element (MSBuild)](../msbuild/choose-element-msbuild.md) bloku.  
 
 ## <a name="wildcards"></a>Zástupné znaky  

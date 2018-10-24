@@ -24,12 +24,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f265bf63890cfe2dcc9ecb9ef845803ef1c858cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840646"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Postupy: shromažďování dat výkonu pro webovou stránku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ Můžete použít **Průvodce výkonem** ke shromažďování dat výkonu pro [!
   
  V závislosti na nastavení oprávnění uživatelského přístupu, které správce má k dispozici jednotlivý uživatel může nebo nemusí mít oprávnění k vytvoření relace profileru v počítači, který je hostitelem procesu ASP.NET. Následující příklady znázorňují možné rozdíly mezi uživateli:  
   
--   Někteří uživatelé mohou přístup k rozšířeným funkcím profilace, pokud správce nastavil ovladač a spouštění služby.  
+- Někteří uživatelé mohou přístup k rozšířeným funkcím profilace, pokud správce nastavil ovladač a spouštění služby.  
   
--   Uživatelé domény mohou přistupovat k pouze profilace vzorku.  
+- Uživatelé domény mohou přistupovat k pouze profilace vzorku.  
   
--   Někteří uživatelé Moje odepřít přístup k profilaci a všem ostatním uživatelům.  
+- Někteří uživatelé Moje odepřít přístup k profilaci a všem ostatním uživatelům.  
   
- Další informace najdete v tématu [profilace a zabezpečení Windows Vista](../profiling/profiling-and-windows-vista-security.md) a možností správy v [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Další informace najdete v tématu [profilace a zabezpečení Windows Vista](../profiling/profiling-and-windows-vista-security.md) a možností správy v [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-profile-a-web-site-project"></a>Chcete-li Profilovat webového projektu  
   
@@ -75,33 +75,33 @@ Můžete použít **Průvodce výkonem** ke shromažďování dat výkonu pro [!
   
 ### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Chcete-li profilovat webové stránky bez otevření projektu v sadě Visual Studio  
   
-1.  Otevřít [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] nebo [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
+1. Otevřít [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] nebo [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
   
-2.  Na **analyzovat** nabídky, klikněte na tlačítko **spustit Průvodce výkonem**.  
+2. Na **analyzovat** nabídky, klikněte na tlačítko **spustit Průvodce výkonem**.  
   
-3.  Na první stránce průvodce vyberte metodu profilace a potom klikněte na tlačítko **Další**. Další informace najdete v tématu [metody kolekce výkonu Principy](../profiling/understanding-performance-collection-methods.md).  
+3. Na první stránce průvodce vyberte metodu profilace a potom klikněte na tlačítko **Další**. Další informace najdete v tématu [metody kolekce výkonu Principy](../profiling/understanding-performance-collection-methods.md).  
   
-4.  Na druhé stránce průvodce, vyberte **Profilovat aplikaci ASP.NET nebo JavaScript** možnost a potom klikněte na tlačítko **Další**.  
+4. Na druhé stránce průvodce, vyberte **Profilovat aplikaci ASP.NET nebo JavaScript** možnost a potom klikněte na tlačítko **Další**.  
   
-5.  V **jaká adresa URL nebo cesta se spustí webovou aplikaci** na třetí stránce průvodce zadejte adresu URL na domovskou stránku aplikace a potom klikněte na tlačítko **Další**.  
+5. V **jaká adresa URL nebo cesta se spustí webovou aplikaci** na třetí stránce průvodce zadejte adresu URL na domovskou stránku aplikace a potom klikněte na tlačítko **Další**.  
   
-    -   Pro server (IIS) na základě webové stránky, zadejte adresu URL jako **http://localhost/MySite/default.aspx**. To způsobí, že [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace v místním počítači v kořenovém adresáři aplikace MySite určených k profilaci a stránku default.aspx dané lokality ke spuštění v aplikaci Internet Explorer spustit relaci.  
+   - Pro server (IIS) na základě webové stránky, zadejte adresu URL jako **http://localhost/MySite/default.aspx**. To způsobí, že [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace v místním počítači v kořenovém adresáři aplikace MySite určených k profilaci a stránku default.aspx dané lokality ke spuštění v aplikaci Internet Explorer spustit relaci.  
   
-    -   Pro soubor založené na webu, zadejte umístění, například soubor / / / / /**c:\WebSites\MySite\default.aspx**. To způsobí, že [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace umístěné v c:\webSites\MySite určených k profilaci a na stránce http://localhost:nnnn/MySite/default.aspx ke spuštění v aplikaci Internet Explorer spustit relaci.  
+   - Pro soubor založené na webu, zadejte umístění, například soubor / / / / /**c:\WebSites\MySite\default.aspx**. To způsobí, že [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace umístěné v c:\webSites\MySite určených k profilaci a na stránce http://localhost:nnnn/MySite/default.aspx ke spuštění v aplikaci Internet Explorer spustit relaci.  
   
-    -   Pro externí servery, které chcete sbírat dat jazyka JavaScript, zadejte adresu URL, třeba http://www.contoso.com.  
+   - Pro externí servery, které chcete sbírat dat jazyka JavaScript, zadejte adresu URL, třeba http://www.contoso.com.  
   
      Další informace o zobrazení stránky vlastností [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] cílový binární soubor.  
   
-6.  Na třetí stránce průvodce můžete k přidání dat interakce vrstev profilování (TIP), data z JavaScript spuštěný ve webové stránky, nebo obojí.  
+6. Na třetí stránce průvodce můžete k přidání dat interakce vrstev profilování (TIP), data z JavaScript spuštěný ve webové stránky, nebo obojí.  
   
-    -   Chcete-li shromažďovat interakce vrstev, vyberte **povolit profilaci interakce vrstev** zaškrtávací políčko.  
+   -   Chcete-li shromažďovat interakce vrstev, vyberte **povolit profilaci interakce vrstev** zaškrtávací políčko.  
   
-    -   Chcete-li shromažďovat data z JavaScript spuštěný ve webové stránky, vyberte **Profilovat jazyk JavaScript** zaškrtávací políčko.  
+   -   Chcete-li shromažďovat data z JavaScript spuštěný ve webové stránky, vyberte **Profilovat jazyk JavaScript** zaškrtávací políčko.  
   
-7.  Klikněte na tlačítko **Další**.  
+7. Klikněte na tlačítko **Další**.  
   
-8.  Na čtvrté stránce průvodce, klikněte na tlačítko **Dokončit**.  
+8. Na čtvrté stránce průvodce, klikněte na tlačítko **Dokončit**.  
   
 9. Relace výkonu se vytvoří pro aplikace ASP.NET a webový server je spuštěn v prohlížeči. Vykonává funkce, které chcete profil a potom ukončete prohlížeč.  
   

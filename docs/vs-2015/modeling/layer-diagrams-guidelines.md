@@ -17,12 +17,12 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: faa6c3a39b7aa8a0ca7b2788cd9946421cfe6b7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202576"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844156"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramy vrstev: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +92,9 @@ Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy v
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Provádět zpětnou analýzu existujících závislostí mezi vrstvami  
   
--   Vyberte vrstvu jeden nebo více vrstev, klikněte pravým tlačítkem na vybrané vrstvy a klikněte na **generovat závislosti**.  
+- Vyberte vrstvu jeden nebo více vrstev, klikněte pravým tlačítkem na vybrané vrstvy a klikněte na **generovat závislosti**.  
   
- Obvykle se zobrazí nějaké závislosti, které by neměly existovat. Tyto závislosti lze upravit, aby odpovídaly zamýšlenému návrhu.  
+  Obvykle se zobrazí nějaké závislosti, které by neměly existovat. Tyto závislosti lze upravit, aby odpovídaly zamýšlenému návrhu.  
   
 ##  <a name="EditArchitecture"></a> Úprava vrstev a závislostí za účelem zobrazení zamýšleného návrhu  
  K popisu změn, které máte v plánu provést vašeho systému nebo v požadované architektuře, postupujte následovně Chcete-li upravit diagram vrstev. Můžete také zvážit provádíme některé změny refaktoringu pro zlepšení strukturu kódu před jeho rozšíření. Zobrazit [zlepšení strukturu kódu](#Improving).  
@@ -151,11 +151,11 @@ Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramy v
 ##  <a name="UpdateCode"></a> Aktualizace kódu tak, aby odpovídal na nové architektuře  
  Obvykle chyby se objeví při prvním ověřování kódu proti diagramu vrstvy aktualizované. K těmto chybám může mít několik příčin:  
   
--   Artefakt je přiřazen nesprávné vrstvě. V tomto případě přesuňte artefakt.  
+- Artefakt je přiřazen nesprávné vrstvě. V tomto případě přesuňte artefakt.  
   
--   Artefakt, jako je například třída, používá jiné třídy způsobem, který je v konfliktu s architekturou. V tomto případě refaktorujte kód a odeberte závislost.  
+- Artefakt, jako je například třída, používá jiné třídy způsobem, který je v konfliktu s architekturou. V tomto případě refaktorujte kód a odeberte závislost.  
   
- Chcete-li tyto chyby odstranit, aktualizujte kód, dokud se během ověřování neobjeví žádné chyby. To je obvykle iterativní proces. Další informace o těchto chybách naleznete v tématu [ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md).  
+  Chcete-li tyto chyby odstranit, aktualizujte kód, dokud se během ověřování neobjeví žádné chyby. To je obvykle iterativní proces. Další informace o těchto chybách naleznete v tématu [ověřování kódu pomocí diagramů vrstev](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
 >  Při vývoji a Refaktorovat kód, můžete mít nový artefakty k propojení do diagramu vrstev. Nicméně to nemusí být nezbytné, například když máte vrstvy, které představují stávající obory názvů a nový kód pouze přidá další materiály obory názvů.  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1409431b0cdaec775ecd420fb9b6ea1ded0868de
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 1f63e4f43db3f8c4b24b43bda02cf00b52befc94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624172"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842180"
 ---
 # <a name="analyze-cpu-usage"></a>Analýza využití procesoru
 Když budete potřebovat zjistit problémy s výkonem ve vaší aplikaci, je dobrým začátkem pochopení, jak využívá procesor. **Využití procesoru** nástroj ukazuje, kde procesor tráví čas spuštění Visual C++, Visual C# nebo Visual Basic a kód jazyka JavaScript. Od verze Visual Studio 2015 Update 1, můžete zobrazit rozpis využití procesoru jednotlivých funkcích aniž byste museli opustit ladicí program. Můžete profilaci procesoru při ladění a vypnout a zobrazit výsledky, když se zastaví spuštění, například v na zarážce.  
@@ -28,33 +28,33 @@ Windows 7 nebo novější je nutné použít nástroje pro profilaci uvedené v 
   
 ##  <a name="collect-cpu-usage-data"></a>Shromažďovat data o využití procesoru  
   
-1.  V sadě Visual Studio, nastavte konfigurace řešení na **vydání** a zvolte cíl nasazení.  
+1. V sadě Visual Studio, nastavte konfigurace řešení na **vydání** a zvolte cíl nasazení.  
   
-     ![Vyberte verzi a místní počítač](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![Vyberte verzi a místní počítač](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   Spuštění aplikace **vydání** režim poskytuje lepší přehled aplikace skutečný výkon vaší aplikace.  
+   -   Spuštění aplikace **vydání** režim poskytuje lepší přehled aplikace skutečný výkon vaší aplikace.  
   
-    -   Spuštění aplikace v místním počítači nejlépe replikuje provádění nainstalované aplikace.  
+   -   Spuštění aplikace v místním počítači nejlépe replikuje provádění nainstalované aplikace.  
   
-    -   Pokud shromažďujete data ze vzdáleného zařízení, spusťte aplikaci přímo v zařízení a ne pomocí připojení ke vzdálené ploše.  
+   -   Pokud shromažďujete data ze vzdáleného zařízení, spusťte aplikaci přímo v zařízení a ne pomocí připojení ke vzdálené ploše.  
   
-    -   Pro aplikace Windows Phone, shromažďovat data přímo z **zařízení** poskytuje nejaktuálnější data.  
+   -   Pro aplikace Windows Phone, shromažďovat data přímo z **zařízení** poskytuje nejaktuálnější data.  
   
-2.  Na **ladění** nabídce zvolte **Profiler výkonu**.  
+2. Na **ladění** nabídce zvolte **Profiler výkonu**.  
   
-3.  Zvolte **využití procesoru** a klikněte na tlačítko **Start**.  
+3. Zvolte **využití procesoru** a klikněte na tlačítko **Start**.  
   
-     ![Zvolte využití procesoru](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![Zvolte využití procesoru](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  Při spuštění aplikace, klikněte na tlačítko **získat maximální počet**. Počkejte asi sekundy po výstupu se zobrazí, a pak zvolte **získat maximální číslo asynchronní**. Čekání mezi kliknutí na tlačítko vytvoří je jednodušší oddělit tlačítko klikněte rutiny v diagnostickou sestavu.  
+4. Při spuštění aplikace, klikněte na tlačítko **získat maximální počet**. Počkejte asi sekundy po výstupu se zobrazí, a pak zvolte **získat maximální číslo asynchronní**. Čekání mezi kliknutí na tlačítko vytvoří je jednodušší oddělit tlačítko klikněte rutiny v diagnostickou sestavu.  
   
-5.  Až na druhém řádku výstupu se zobrazí, zvolte **zastavit shromažďování** v Centru pro výkon a Diagnostika.  
+5. Až na druhém řádku výstupu se zobrazí, zvolte **zastavit shromažďování** v Centru pro výkon a Diagnostika.  
   
- ![Zastavit shromažďování dat CpuUsage](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Zastavit shromažďování dat CpuUsage](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
   
- Nástroj využití CPU analyzuje data a zobrazí sestavu.  
+   Nástroj využití CPU analyzuje data a zobrazí sestavu.  
   
- ![Sestava CpuUsage](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
+   ![Sestava CpuUsage](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analýza sestavy využití procesoru  
   

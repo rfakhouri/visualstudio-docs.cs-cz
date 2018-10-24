@@ -9,20 +9,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3ec82822b2004cabb91f8c7677409acce69c199
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7c846b01634c1af9ba14e5c7ff460c279bf385a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676475"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844117"
 ---
 # <a name="overview-of-profiling-in-visual-studio"></a>Přehled profilace v sadě Visual Studio
 
 Profilace a Diagnostika nástroje pomáhají diagnostikovat paměť a využití procesoru a dalších problémů na úrovni aplikací. Pomocí těchto nástrojů shromažďování dat (třeba hodnoty proměnných, volání funkce a událostí) za určitou dobu, jako je čas, který spustíte svou aplikaci. Můžete zobrazit stav aplikace v různých fázích během provádění kódu nebo provedení a dodatečně analyzovat výkon vaší aplikace.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video")  |    [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) o používání diagnostických nástrojů, kde se naučíte analyzovat využití procesoru a paměti. |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) o používání diagnostických nástrojů, kde se naučíte analyzovat využití procesoru a paměti. |
 
 ## <a name="next-steps"></a>Další kroky
 

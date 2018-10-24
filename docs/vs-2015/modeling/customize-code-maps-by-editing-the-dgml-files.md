@@ -25,12 +25,12 @@ caps.latest.revision: 93
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 866ca64818f0426f0dcb0955a050de6a18660951
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc6ef0463f98b5aec938ff7748a64b34b32c3934
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843831"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Přizpůsobení map kódu úpravou souborů DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,43 +45,43 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
 ##  <a name="OrganizeNodes"></a> Seskupit elementy kódu  
  Můžete přidat nové skupiny nebo převést existující uzly do skupiny.  
   
-1.  V textovém editoru nebo editoru XML otevřete soubor .dgml.  
+1. V textovém editoru nebo editoru XML otevřete soubor .dgml.  
   
-2.  Chcete-li převést prvek kódu do skupiny, vyhledejte `<Node/>` – element pro daný element kódu.  
+2. Chcete-li převést prvek kódu do skupiny, vyhledejte `<Node/>` – element pro daný element kódu.  
   
-     \- nebo –  
+    \- nebo –  
   
-     Chcete-li přidat novou skupinu, vyhledejte `<Nodes>` oddílu. Přidat nový `<Node/>` elementu.  
+    Chcete-li přidat novou skupinu, vyhledejte `<Nodes>` oddílu. Přidat nový `<Node/>` elementu.  
   
-3.  V `<Node/>` elementu, přidejte `Group` atribut k určení, zda daná skupina zobrazovat rozbalená nebo sbalená. Příklad:  
+3. V `<Node/>` elementu, přidejte `Group` atribut k určení, zda daná skupina zobrazovat rozbalená nebo sbalená. Příklad:  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyFirstGroup" Group="Expanded" />  
-       <Node Id="MySecondGroup" Group="Collapsed" />  
-    </Nodes>  
-    ```  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyFirstGroup" Group="Expanded" />  
+      <Node Id="MySecondGroup" Group="Collapsed" />  
+   </Nodes>  
+   ```  
   
-4.  V `<Links>` části, ujistěte se, že `<Link/>` element, který má následující atributy existují pro každý vztah mezi prvek skupiny kódu a jeho podřízené prvky kódu:  
+4. V `<Links>` části, ujistěte se, že `<Link/>` element, který má následující atributy existují pro každý vztah mezi prvek skupiny kódu a jeho podřízené prvky kódu:  
   
-    -   A `Source` atribut, který určuje prvek skupiny kódu  
+   - A `Source` atribut, který určuje prvek skupiny kódu  
   
-    -   A `Target` atribut, který určuje podřízený element kódu  
+   - A `Target` atribut, který určuje podřízený element kódu  
   
-    -   A `Category` atribut, který určuje `Contains` vztah mezi prvek skupiny kódu a jeho podřízený element kódu  
+   - A `Category` atribut, který určuje `Contains` vztah mezi prvek skupiny kódu a jeho podřízený element kódu  
   
      Příklad:  
   
-    ```xml  
-    <Links>  
-       <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />  
-       <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />  
-       <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />  
-       <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />  
-    </Links>  
-    ```  
+   ```xml  
+   <Links>  
+      <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />  
+      <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />  
+      <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />  
+      <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />  
+   </Links>  
+   ```  
   
-     Další informace o `Category` atributu naleznete v tématu [přiřadit kategorie pro prvky kódu a odkazy](#AssignCategories).  
+    Další informace o `Category` atributu naleznete v tématu [přiřadit kategorie pro prvky kódu a odkazy](#AssignCategories).  
   
 ##  <a name="ChangeGraphStyle"></a> Změnit styl mapy  
  Úpravou souboru .dgml na mapě můžete změnit barvu pozadí a barvy ohraničení mapy. Chcete-li změnit styl prvky kódu a odkazy, [změnit styl prvky kódu a odkazy](#Highlight).  
@@ -252,81 +252,81 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
   
 ##### <a name="to-apply-custom-styles-to-a-group-of-code-elements-or-links"></a>Použití vlastních stylů na skupinu prvky kódu nebo odkazy  
   
-1.  V textovém editoru nebo editoru XML otevřete soubor .dgml.  
+1. V textovém editoru nebo editoru XML otevřete soubor .dgml.  
   
-2.  Pokud `<Styles></Styles>` element neexistuje, přidejte jej pod `<DirectedGraph></DirectedGraph>` elementu po `<Links></Links>` elementu.  
+2. Pokud `<Styles></Styles>` element neexistuje, přidejte jej pod `<DirectedGraph></DirectedGraph>` elementu po `<Links></Links>` elementu.  
   
-3.  V `<Styles></Styles>` element v části `<Style/>` elementu a zadat následující atributy:  
+3. V `<Styles></Styles>` element v části `<Style/>` elementu a zadat následující atributy:  
   
-    -   `TargetType="Node` &#124; `Link | Graph"`  
+   - `TargetType="Node` &#124; `Link | Graph"`  
   
-    -   `GroupLabel="` *NameInLegendBox* `"`  
+   - `GroupLabel="` *NameInLegendBox* `"`  
   
-    -   `ValueLabel="` *NameInStylePickerBox* `"`  
+   - `ValueLabel="` *NameInStylePickerBox* `"`  
   
      Pro použití vlastního stylu na všechny cílové typy nepoužívejte podmínku.  
   
 ##### <a name="to-apply-a-conditional-style-to-groups-of-code-elements-or-links"></a>Pro použití podmíněného stylu na skupiny kódu elementy nebo propojení  
   
-1.  V textovém editoru nebo editoru XML otevřete soubor .dgml.  
+1. V textovém editoru nebo editoru XML otevřete soubor .dgml.  
   
-2.  V `<Style/>` elementu, přidejte `<Condition/>` element, který obsahuje `Expression` atribut zadat výraz, který vrací logickou hodnotu.  
+2. V `<Style/>` elementu, přidejte `<Condition/>` element, který obsahuje `Expression` atribut zadat výraz, který vrací logickou hodnotu.  
   
-     Příklad:  
+    Příklad:  
   
-    ```xml  
-    <Condition Expression="MyCategory"/>  
-    ```  
+   ```xml  
+   <Condition Expression="MyCategory"/>  
+   ```  
   
-     - nebo –  
+    - nebo –  
   
-    ```xml  
-    <Condition Expression="MyCategory > 100"/>  
-    ```  
+   ```xml  
+   <Condition Expression="MyCategory > 100"/>  
+   ```  
   
-     - nebo –  
+    - nebo –  
   
-    ```xml  
-    <Condition Expression="HasCategory('MyCategory')"/>  
-    ```  
+   ```xml  
+   <Condition Expression="HasCategory('MyCategory')"/>  
+   ```  
   
-     Tento výraz používá následující syntaxi BNF (Backus-Naur Form):  
+    Tento výraz používá následující syntaxi BNF (Backus-Naur Form):  
   
-     <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
+    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
   
-     <BinaryExpression> ::= <Expression> <Operator> <Expression>  
+    <BinaryExpression> ::= <Expression> <Operator> <Expression>  
   
-     <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
+    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
   
-     <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "nebo" &#124; "a" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
+    <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "nebo" &#124; "a" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
-     <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
+    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
   
-     <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
+    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
   
-     <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
+    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
   
-     <PropertyGet> :: = Identifikátor  
+    <PropertyGet> :: = Identifikátor  
   
-     <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
+    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
   
-     <Identifier> ::= [^. ]*  
+    <Identifier> ::= [^. ]*  
   
-     <Literal> :: = jedné nebo dvojitými uvozovkami řetězcový literál  
+    <Literal> :: = jedné nebo dvojitými uvozovkami řetězcový literál  
   
-     <Number> :: = řetězec číslic s volitelnou desetinnou čárkou  
+    <Number> :: = řetězec číslic s volitelnou desetinnou čárkou  
   
-     Lze zadat více `<Condition/>` elementy, které musí být pravda, pokud chcete použít styl.  
+    Lze zadat více `<Condition/>` elementy, které musí být pravda, pokud chcete použít styl.  
   
-3.  Na dalším řádku za `<Condition/>` element, přidejte jeden nebo více `<Setter/>` prvky k určení `Property` atribut a pevnou `Value` atribut nebo počítaný `Expression` atributu použít pro mapy, prvky kódu nebo odkazy, které splňují Podmínka.  
+3. Na dalším řádku za `<Condition/>` element, přidejte jeden nebo více `<Setter/>` prvky k určení `Property` atribut a pevnou `Value` atribut nebo počítaný `Expression` atributu použít pro mapy, prvky kódu nebo odkazy, které splňují Podmínka.  
   
-     Příklad:  
+    Příklad:  
   
-    ```xml  
-    <Setter Property="BackGround" Value="Green"/>  
-    ```  
+   ```xml  
+   <Setter Property="BackGround" Value="Green"/>  
+   ```  
   
- Jako jednoduchý Úplný příklad, následující podmínka určuje to, že prvek kódu zobrazí zeleně nebo červeně podle toho, jestli jeho `Passed` kategorie je nastavena na `True` nebo `False`:  
+   Jako jednoduchý Úplný příklad, následující podmínka určuje to, že prvek kódu zobrazí zeleně nebo červeně podle toho, jestli jeho `Passed` kategorie je nastavena na `True` nebo `False`:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -575,74 +575,74 @@ Přizpůsobení map kódu, můžete upravit soubor Directed Graph Markup Languag
   
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>Odkaz na prvek kódu dokumentu nebo adresy URL  
   
-1.  V textovém editoru nebo editoru XML otevřete soubor .dgml.  
+1. V textovém editoru nebo editoru XML otevřete soubor .dgml.  
   
-2.  Najít `<Node/>` – element pro element kódu, který chcete.  
+2. Najít `<Node/>` – element pro element kódu, který chcete.  
   
-3.  Proveďte jednu z úloh z následující tabulky:  
+3. Proveďte jednu z úloh z následující tabulky:  
   
-     Jediného prvku kódu  
+    Jediného prvku kódu  
   
-    -   V `<Node/>` nebo `<Link/>` elementu, přidejte `Reference` atribut k určení umístění prvku kódu.  
+   - V `<Node/>` nebo `<Link/>` elementu, přidejte `Reference` atribut k určení umístění prvku kódu.  
   
-        > [!NOTE]
-        >  Může mít pouze jeden `Reference` atribut na prvek.  
-  
-     Příklad:  
-  
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" Reference="MyDocument.txt" />  
-    </Nodes>  
-    <Properties>  
-       <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />  
-    </Properties>  
-    ```  
-  
-     Několik prvků kódu  
-  
-    1.  V `<Node/>` nebo `<Link/>` elementu, přidáte nový atribut k určení umístění každého odkazu.  
-  
-    2.  V `<Properties>` části:  
-  
-        1.  Přidat `<Property/>` – element pro každý nový typ odkazu.  
-  
-        2.  Nastavte `Id` atribut pro název nového atributu odkazu.  
-  
-        3.  Přidat `IsReference` atribut a nastavte ho na `True` odkazovat na prvek kódu zobrazí **přejděte na odkaz** nabídku.  
-  
-        4.  Použití `Label` atributu pro určení zobrazovaného textu na prvek kódu **přejděte na odkaz** nabídku.  
+     > [!NOTE]
+     >  Může mít pouze jeden `Reference` atribut na prvek.  
   
      Příklad:  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>  
-    </Nodes>  
-    <Properties>  
-       <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />  
-       <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />  
-    </Properties>  
-    ```  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" Reference="MyDocument.txt" />  
+   </Nodes>  
+   <Properties>  
+      <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />  
+   </Properties>  
+   ```  
   
-     Na mapě zobrazí podtržený název prvku kódu. Když otevřete místní nabídku pro prvek kódu nebo odkaz, zobrazí se **přejděte na odkaz** místní nabídka, která obsahuje elementy propojeného kódu můžete zvolit.  
+    Několik prvků kódu  
   
-4.  Použití `ReferenceTemplate` atributu pro zadání běžného řetězce, jako je například adresu URL, která je použita více odkazy místo tohoto řetězce v referenci.  
+   1. V `<Node/>` nebo `<Link/>` elementu, přidáte nový atribut k určení umístění každého odkazu.  
   
-     `ReferenceTemplate` Atribut určuje zástupný symbol pro hodnotu odkazu. V následujícím příkladu `{0}` zástupný symbol v `ReferenceTemplate` atribut se nahradí hodnoty `MyFirstReference` a `MySecondReference` atributy v `<Node/>` element vznikne úplná cesta:  
+   2. V `<Properties>` části:  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>  
-       <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>  
-    </Nodes>  
-    <Properties>  
-       <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>  
-       <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>  
-    </Properties>  
-    ```  
+      1.  Přidat `<Property/>` – element pro každý nový typ odkazu.  
   
-5.  Chcete-li zobrazit prvku odkazovaného kódu nebo prvky kódu z mapy, otevřete místní nabídku pro prvek kódu nebo odkaz. Zvolte **přejděte na odkaz** a pak na prvek kódu.  
+      2.  Nastavte `Id` atribut pro název nového atributu odkazu.  
+  
+      3.  Přidat `IsReference` atribut a nastavte ho na `True` odkazovat na prvek kódu zobrazí **přejděte na odkaz** nabídku.  
+  
+      4.  Použití `Label` atributu pro určení zobrazovaného textu na prvek kódu **přejděte na odkaz** nabídku.  
+  
+      Příklad:  
+  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>  
+   </Nodes>  
+   <Properties>  
+      <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />  
+      <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />  
+   </Properties>  
+   ```  
+  
+    Na mapě zobrazí podtržený název prvku kódu. Když otevřete místní nabídku pro prvek kódu nebo odkaz, zobrazí se **přejděte na odkaz** místní nabídka, která obsahuje elementy propojeného kódu můžete zvolit.  
+  
+4. Použití `ReferenceTemplate` atributu pro zadání běžného řetězce, jako je například adresu URL, která je použita více odkazy místo tohoto řetězce v referenci.  
+  
+    `ReferenceTemplate` Atribut určuje zástupný symbol pro hodnotu odkazu. V následujícím příkladu `{0}` zástupný symbol v `ReferenceTemplate` atribut se nahradí hodnoty `MyFirstReference` a `MySecondReference` atributy v `<Node/>` element vznikne úplná cesta:  
+  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>  
+      <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>  
+   </Nodes>  
+   <Properties>  
+      <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>  
+      <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>  
+   </Properties>  
+   ```  
+  
+5. Chcete-li zobrazit prvku odkazovaného kódu nebo prvky kódu z mapy, otevřete místní nabídku pro prvek kódu nebo odkaz. Zvolte **přejděte na odkaz** a pak na prvek kódu.  
   
 ## <a name="see-also"></a>Viz také  
  [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)   

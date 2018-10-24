@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7e0acee43c05332dd3f9f10eecb7ea55b02671f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306303"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842636"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Přechod na relaci ladění ve Visual Studiu (Xaml a C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,29 +93,29 @@ Tento rychlý start ukazuje, jak se zorientovat relacemi ladění sady Visual St
   
  Když vejdete do jediného řádku kódu provede ladicí program jednu z následujících akcí:  
   
--   Pokud další příkaz není voláním funkce ve vašem řešení, ladicí program provede příkaz, přesune na další příkaz a následně pozastaví provádění kódu.  
+- Pokud další příkaz není voláním funkce ve vašem řešení, ladicí program provede příkaz, přesune na další příkaz a následně pozastaví provádění kódu.  
   
--   Pokud je příkaz voláním funkce ve vašem řešení, ladicí program se přesune na vstupní bod volané funkce a následně pozastaví provádění kódu.  
+- Pokud je příkaz voláním funkce ve vašem řešení, ladicí program se přesune na vstupní bod volané funkce a následně pozastaví provádění kódu.  
   
- Přejděte ke kroku na příkazy test1, dokud nedosáhnete výstupním bodě. Ladicí program zvýrazní uzavírací složenou závorku metody.  
+  Přejděte ke kroku na příkazy test1, dokud nedosáhnete výstupním bodě. Ladicí program zvýrazní uzavírací složenou závorku metody.  
   
- **Zkontrolujte hodnoty proměnných v datových tipech.** Když myší najedete myší název proměnné, zobrazí se název, hodnotu a typ proměnné v popisu dat.  
+  **Zkontrolujte hodnoty proměnných v datových tipech.** Když myší najedete myší název proměnné, zobrazí se název, hodnotu a typ proměnné v popisu dat.  
   
- ![Ladicí program datového tipu](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
+  ![Ladicí program datového tipu](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
   
- Najeďte myší proměnnou `a`. Poznámka: Zadejte název, hodnotu a data. Najeďte myší proměnnou `methodTrack`. Zadejte název, hodnotu a data znovu, mějte na paměti.  
+  Najeďte myší proměnnou `a`. Poznámka: Zadejte název, hodnotu a data. Najeďte myší proměnnou `methodTrack`. Zadejte název, hodnotu a data znovu, mějte na paměti.  
   
- **Zkontrolujte hodnoty proměnné v okně místních hodnot.** Na **ladění** nabídky, přejděte k **Windows**a klikněte na tlačítko **lokální**. (Klávesnice: Alt + 4).  
+  **Zkontrolujte hodnoty proměnné v okně místních hodnot.** Na **ladění** nabídky, přejděte k **Windows**a klikněte na tlačítko **lokální**. (Klávesnice: Alt + 4).  
   
- ![Okno místních hodnot](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
+  ![Okno místních hodnot](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
   
- Lokální windows je stromové zobrazení parametry a proměnné, funkce. Vlastnosti proměnné objektu jsou podřízené uzly samotného objektu. `this` Proměnná je skrytý parametr v každé metody objektu, který představuje samotného objektu. V tomto případě představuje třídu MainPage. Protože `methodTrack` je členem typu třídy, jeho hodnota a data MainPage jsou uvedeny v řádku pod `this`. Rozbalte `this` uzlu zobrazíte `methodTrack` informace.  
+  Lokální windows je stromové zobrazení parametry a proměnné, funkce. Vlastnosti proměnné objektu jsou podřízené uzly samotného objektu. `this` Proměnná je skrytý parametr v každé metody objektu, který představuje samotného objektu. V tomto případě představuje třídu MainPage. Protože `methodTrack` je členem typu třídy, jeho hodnota a data MainPage jsou uvedeny v řádku pod `this`. Rozbalte `this` uzlu zobrazíte `methodTrack` informace.  
   
- **Přidáte kukátko methodTrack proměnné.** `methodWatch` v rámci tohoto rychlého startu k zobrazení metod volá se v příkladech se používá proměnná. Aby bylo snazší zobrazit hodnotu proměnné, přidejte ho do okna kukátka. Klikněte pravým tlačítkem na název proměnné v okně místních hodnot a klikněte na tlačítko **Přidat kukátko**.  
+  **Přidáte kukátko methodTrack proměnné.** `methodWatch` v rámci tohoto rychlého startu k zobrazení metod volá se v příkladech se používá proměnná. Aby bylo snazší zobrazit hodnotu proměnné, přidejte ho do okna kukátka. Klikněte pravým tlačítkem na název proměnné v okně místních hodnot a klikněte na tlačítko **Přidat kukátko**.  
   
- ![Okno kukátka](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
+  ![Okno kukátka](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
   
- Podívejte se na více proměnných v okně kukátko. Hodnoty proměnných sledovaných, jako jsou hodnoty v oknech místní hodnoty a datový tip windows, se aktualizují pokaždé, když je spuštění pozastaveno. K oknu kukátka můžete také přidat proměnné z editoru kódu. Vyberte proměnnou ke sledování, klikněte pravým tlačítkem a pak zvolte **Přidat kukátko**.  
+  Podívejte se na více proměnných v okně kukátko. Hodnoty proměnných sledovaných, jako jsou hodnoty v oknech místní hodnoty a datový tip windows, se aktualizují pokaždé, když je spuštění pozastaveno. K oknu kukátka můžete také přidat proměnné z editoru kódu. Vyberte proměnnou ke sledování, klikněte pravým tlačítkem a pak zvolte **Přidat kukátko**.  
   
 ##  <a name="BKMK_StepIntoOverOut"></a> Krokovat do, nad a z metody  
  Na rozdíl od krokování s vnořením do metody volané nadřazené metody, krokování přes metody spustí metodu podřízené a následně pozastaví provádění kódu ve volání metody jako nadřazený obnoví. Pokud jste obeznámeni s způsob, jak metoda funguje a si jisti, že jeho spuštění nebude mít vliv na problém, který se objeví prošetřovaná může Krokovat přes metodu.  

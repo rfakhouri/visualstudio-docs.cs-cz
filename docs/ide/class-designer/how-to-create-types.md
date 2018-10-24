@@ -19,24 +19,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c41f7c5a9fb9540661440a19462ee12b1aadd9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842258"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Postupy: vytváření typů pomocí návrháře tříd
 
-Návrh nové typy pro C# a Visual Basic, projekty, vytvořte je v diagramu tříd. Existující typy najdete v sekci [postupy: zobrazení existujících typů](how-to-view-existing-types.md).
+K navrhování nových typů pro C# a projekty Visual Basic, vytvořte je v diagramu tříd. Existující typy najdete v tématu [postupy: zobrazení existujících typů](how-to-view-existing-types.md).
 
-##  <a name="CreateType"></a> Vytvoření nového typu
+##  <a name="CreateType"></a> Vytvořte nový typ
 
-1.  V **sada nástrojů**v části **návrhář tříd**, přetáhněte jednu z těchto na diagramu tříd:
+1.  V **nástrojů**v části **návrhář tříd**, přetáhněte jeden z nich do diagramu tříd:
 
     -   **Třída** nebo **abstraktní třídy**
 
-    -   **výčet**
+    -   **Výčet**
 
     -   **Rozhraní**
 
@@ -44,7 +44,7 @@ Návrh nové typy pro C# a Visual Basic, projekty, vytvořte je v diagramu tří
 
     -   **Delegát**
 
-    -   **Modul** (pouze pro jazyka Visual Basic)
+    -   **Modul** (pouze VB)
 
 2.  Pojmenujte typ. Poté vyberte jeho úroveň přístupu.
 
@@ -52,47 +52,47 @@ Návrh nové typy pro C# a Visual Basic, projekty, vytvořte je v diagramu tří
 
     -   Chcete-li vytvořit nový soubor a přidat jej do aktuálního projektu, vyberte **vytvořit nový soubor** a název souboru.
 
-    -   Chcete-li přidat kód do existující soubor, vyberte **přidat k existujícímu souboru**.
+    -   Přidání kódu do existujícího souboru, vyberte **přidat do existujícího souboru**.
 
-         Pokud má vaše řešení projekt, který sdílí kód mezi více aplikacemi, přidáte nový typ diagramu tříd v projektu aplikace, ale pouze pokud odpovídající soubor třída je ve stejné projektu aplikace nebo je ve sdílené projektu.
+         Pokud má vaše řešení projekt, které sdílejí kód mezi více aplikacemi, můžete přidat nový typ do diagramu tříd v projektu aplikace, ale pouze pokud odpovídající soubor třídy je ve stejném projektu aplikace nebo je ve sdíleném projektu.
 
 4.  Nyní přidejte další položky pro definování typu:
 
     |||
     |-|-|
-    |**Pro**|**Přidat**|
+    |**pro**|**Add**|
     |Třídy, abstraktní třídy nebo struktury|Metody, vlastnosti, pole, události, konstruktory (metoda), destruktory (metoda) a konstanty, které určují typ|
     |Výčty|Hodnoty polí, které tvoří výčet|
     |Rozhraní|Metody, vlastnosti a události, které tvoří rozhraní|
     |Delegát|Parametry, které definují delegáta|
     |Modul|Metody, vlastnosti, pole, události, konstruktory (metoda) a konstanty, které určují modul|
 
-     V tématu [vytváření členů](creating-and-configuring-type-members.md#create-members).
+     Zobrazit [vytváření členů](creating-and-configuring-type-members.md#create-members).
 
-##  <a name="CustAttributeType"></a> Použít vlastní atribut typu
+##  <a name="CustAttributeType"></a> Použít vlastní atribut na typ
 
-1.  Klikněte na tvar typu v diagramu tříd.
+1. Klikněte na tvar typu v diagramu tříd.
 
-2.  V **vlastnosti**vedle možnosti **vlastní atributy** vlastnosti pro tento typ, klikněte na tlačítko se třemi tečkami (...).
+2. V **vlastnosti**vedle možnosti **vlastní atributy** pro daný typ klikněte na tlačítko se třemi tečkami (...).
 
-3.  Přidejte jeden nebo více uživatelských atributů, vždy jeden na řádek. Nevkládejte je do závorek.
-
-   Vlastní atributy jsou použity k typu.
-
-##  <a name="CustAttributeMember"></a> Použít vlastní atribut u člena typu
-
-1.  Klikněte na název člena ve tvaru jeho typu v diagramu tříd nebo na jeho řádku v okně Detaily třídy.
-
-2.  V **vlastnosti**, najít člena **vlastní atributy** vlastnost.
-
-3.  Přidejte jeden nebo více uživatelských atributů, vždy jeden na řádek. Nevkládejte je do závorek.
+3. Přidejte jeden nebo více uživatelských atributů, vždy jeden na řádek. Nevkládejte je do závorek.
 
    Vlastní atributy jsou použity k typu.
 
-## <a name="see-also"></a>Viz také
+##  <a name="CustAttributeMember"></a> Použít vlastní atribut na člen typu
+
+1. Klikněte na název člena ve tvaru jeho typu v diagramu tříd nebo na jeho řádku v okně Detaily třídy.
+
+2. V **vlastnosti**, najít členský **vlastní atributy** vlastnost.
+
+3. Přidejte jeden nebo více uživatelských atributů, vždy jeden na řádek. Nevkládejte je do závorek.
+
+   Vlastní atributy jsou použity k typu.
+
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: vytvoření dědičnosti mezi typy](how-to-create-inheritance-between-types.md)
-- [Postupy: vytvoření přidružení mezi typy](how-to-create-associations-between-types.md)
+- [Postupy: vytvoření asociací mezi typy](how-to-create-associations-between-types.md)
 - [Vytváření a konfigurace členů typů](creating-and-configuring-type-members.md)
 - [Práce s diagramy tříd](working-with-class-diagrams.md)
 - [Navrhování tříd a typů](designing-and-viewing-classes-and-types.md)

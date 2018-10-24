@@ -15,12 +15,12 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ceb59310597cd0481007ec9c08f5312a8d75090
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f26f37a945ce9ec665e924662d117f43e49ab77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839333"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Návod: Zobrazení dokončování příkazů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,48 +152,48 @@ Doplňování výrazů založený na jazyce lze implementovat definováním iden
   
 #### <a name="to-implement-the-completion-command-handler"></a>K implementaci obslužné rutiny dokončení příkazu  
   
-1.  Přidejte třídu pojmenovanou `TestCompletionCommandHandler` , který implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. Přidejte třídu pojmenovanou `TestCompletionCommandHandler` , který implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
-     [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
+    [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
+    [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
   
-2.  Přidat soukromé pole pro další obslužná rutina příkazu (pro který předáte příkazu), zobrazení textu, poskytovateli obslužná rutina příkazu (která umožňuje přístup k různým službám) a ukončení relace:  
+2. Přidat soukromé pole pro další obslužná rutina příkazu (pro který předáte příkazu), zobrazení textu, poskytovateli obslužná rutina příkazu (která umožňuje přístup k různým službám) a ukončení relace:  
   
-     [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
-     [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
+    [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
+    [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
   
-3.  Přidejte konstruktor, který nastaví zobrazení textu a pole zprostředkovatele a přidá příkazu do příkazového řetězce:  
+3. Přidejte konstruktor, který nastaví zobrazení textu a pole zprostředkovatele a přidá příkazu do příkazového řetězce:  
   
-     [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
-     [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
+    [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
+    [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
   
-4.  Implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodu předáním příkaz podél:  
+4. Implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodu předáním příkaz podél:  
   
-     [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
-     [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
+    [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
+    [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
   
-5.  Implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody. Když tato metoda obdrží jedním stisknutím tlačítka, musíte udělat jednu z těchto věcí:  
+5. Implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody. Když tato metoda obdrží jedním stisknutím tlačítka, musíte udělat jednu z těchto věcí:  
   
-    -   Povolte znak, který má být zapsána do vyrovnávací paměti a potom aktivovat nebo filtrování dokončení. (Tisk znaků to provést.)  
+   - Povolte znak, který má být zapsána do vyrovnávací paměti a potom aktivovat nebo filtrování dokončení. (Tisk znaků to provést.)  
   
-    -   Potvrdit dokončení, ale neumožňují znak, který má být zapsána do vyrovnávací paměti. (Prázdné znaky, karty a Enter provést při ukončení relace se zobrazí.)  
+   - Potvrdit dokončení, ale neumožňují znak, který má být zapsána do vyrovnávací paměti. (Prázdné znaky, karty a Enter provést při ukončení relace se zobrazí.)  
   
-    -   Povolte příkaz, které se mají předat další obslužné rutiny. (Všechny ostatní příkazy.)  
+   - Povolte příkaz, které se mají předat další obslužné rutiny. (Všechny ostatní příkazy.)  
   
      Protože tato metoda může zobrazit uživatelské rozhraní, zavolejte <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> abyste měli jistotu, že není volána v kontextu služby automation:  
   
      [!code-csharp[VSSDKCompletionTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#19)]
      [!code-vb[VSSDKCompletionTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#19)]  
   
-6.  Tento kód je privátní metodu, která aktivuje relace dokončení:  
+6. Tento kód je privátní metodu, která aktivuje relace dokončení:  
   
-     [!code-csharp[VSSDKCompletionTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#20)]
-     [!code-vb[VSSDKCompletionTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#20)]  
+    [!code-csharp[VSSDKCompletionTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#20)]
+    [!code-vb[VSSDKCompletionTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#20)]  
   
-7.  Následující příklad je privátní metodu, která odhlásí <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> události:  
+7. Následující příklad je privátní metodu, která odhlásí <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> události:  
   
-     [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
-     [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
+    [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
+    [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
   
 ## <a name="building-and-testing-the-code"></a>Vytváření a testování kódu  
  K otestování tohoto kódu sestavte řešení CompletionTest a spusťte v experimentální instanci.  

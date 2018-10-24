@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5a45466b441fc8964b0b3a715acbd95b920e3392
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa08a132c752b5bdde7ba2b497a6bd206e8f2972
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843844"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramy komponent UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
  Kreslení diagramů komponent má několik výhod:  
   
--   Pokud budou vaše vývojové týmy přemýšlet o návrhu z hlediska hlavních bloků, lépe pochopí existující návrh a snáze vytvoří nový.  
+- Pokud budou vaše vývojové týmy přemýšlet o návrhu z hlediska hlavních bloků, lépe pochopí existující návrh a snáze vytvoří nový.  
   
--   Pokud budete o svém systému přemýšlet jako o kolekci komponent s dobře definovanými poskytovanými a požadovanými rozhraními, můžete zlepšit rozdělení jednotlivých komponent. Díky tomu lze snáze pochopit návrh a jednodušeji jej změnit v případě, ze dojde ke změně požadavků.  
+- Pokud budete o svém systému přemýšlet jako o kolekci komponent s dobře definovanými poskytovanými a požadovanými rozhraními, můžete zlepšit rozdělení jednotlivých komponent. Díky tomu lze snáze pochopit návrh a jednodušeji jej změnit v případě, ze dojde ke změně požadavků.  
   
- Diagram komponent lze využít k reprezentaci návrhu bez ohledu na to, jaký jazyk nebo platformu používá nebo bude používat.  
+  Diagram komponent lze využít k reprezentaci návrhu bez ohledu na to, jaký jazyk nebo platformu používá nebo bude používat.  
   
 ##  <a name="OtherDiagrams"></a> Vztah k jiným diagramům  
  Diagram komponent lze použít společně s jinými diagramy.  
@@ -118,32 +118,32 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
 ##### <a name="to-add-ports-to-a-component"></a>Přidání portů do komponenty  
   
-1.  Na panelu nástrojů klikněte na tlačítko **poskytované rozhraní** nebo **požadované rozhraní**.  
+1. Na panelu nástrojů klikněte na tlačítko **poskytované rozhraní** nebo **požadované rozhraní**.  
   
-2.  Klikněte na část, k níž ho chcete přidat.  
+2. Klikněte na část, k níž ho chcete přidat.  
   
-     Port se zobrazí na hranici komponenty.  
+    Port se zobrazí na hranici komponenty.  
   
-     Nové rozhraní je vytvořeno jako typ portu. Toto rozhraní se zobrazí v **Průzkumníku modelů UML**.  
+    Nové rozhraní je vytvořeno jako typ portu. Toto rozhraní se zobrazí v **Průzkumníku modelů UML**.  
   
-3.  Přetáhněte port kolem hranice komponenty a umístěte jej na požadovanou pozici.  
+3. Přetáhněte port kolem hranice komponenty a umístěte jej na požadovanou pozici.  
   
-4.  Pozici popisku daného portu upravte rovněž přetažením.  
+4. Pozici popisku daného portu upravte rovněž přetažením.  
   
-5.  Po kliknutí na popisek jej můžete změnit. Popisek zobrazuje název rozhraní. Pokud jej změníte, změníte název rozhraní.  
+5. Po kliknutí na popisek jej můžete změnit. Popisek zobrazuje název rozhraní. Pokud jej změníte, změníte název rozhraní.  
   
- Pokud chcete zobrazit seznam atributů a operací rozhraní, stačí je přidat do rozhraní v Průzkumníku modelů UML. Případně můžete přetáhnout rozhraní z Průzkumníku modelů UML na diagram tříd a přidat operace a atributy tam.  
+   Pokud chcete zobrazit seznam atributů a operací rozhraní, stačí je přidat do rozhraní v Průzkumníku modelů UML. Případně můžete přetáhnout rozhraní z Průzkumníku modelů UML na diagram tříd a přidat operace a atributy tam.  
   
 ### <a name="linking-between-components"></a>Propojení mezi komponentami  
  Pomocí závislosti (4) lze zobrazit, že jednomu požadavku komponenty lze vyhovět pomocí operací nebo služeb poskytovaných jinou komponentou.  
   
 ##### <a name="to-show-that-a-provided-interface-can-satisfy-a-required-interface"></a>Zobrazení, že poskytované rozhraní dokáže uspokojit požadavky požadovaného rozhraní  
   
-1.  Na panelu nástrojů klikněte na tlačítko **závislost**.  
+1. Na panelu nástrojů klikněte na tlačítko **závislost**.  
   
-2.  Klikněte na port s požadovaným rozhraním na jedné komponentě a poté klikněte na port s poskytovaným rozhraním v jiné komponentě.  
+2. Klikněte na port s požadovaným rozhraním na jedné komponentě a poté klikněte na port s poskytovaným rozhraním v jiné komponentě.  
   
- Snažte se vyhnout navrhování závislostních smyček, v nichž všechny komponenty ve skupině závisí na všech ostatních komponentách.  
+   Snažte se vyhnout navrhování závislostních smyček, v nichž všechny komponenty ve skupině závisí na všech ostatních komponentách.  
   
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>Přidání portu pro existující rozhraní do komponenty  
   
@@ -269,11 +269,11 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
  Pomocí sekvenčních diagramů lze posoudit, jak je práce systému rozložena mezi různé komponenty.  
   
--   Pokud příliš velká část práce leží na jediné části, pravděpodobně bude obtížnější aplikaci aktualizovat, než když bude práce rovnoměrně rozložena.  
+- Pokud příliš velká část práce leží na jediné části, pravděpodobně bude obtížnější aplikaci aktualizovat, než když bude práce rovnoměrně rozložena.  
   
--   Pokud bude práce rozvržena příliš slabě a bude docházet k mnoha interakcím, výkon systému může poklesnout a systém může být obtížněji pochopitelný.  
+- Pokud bude práce rozvržena příliš slabě a bude docházet k mnoha interakcím, výkon systému může poklesnout a systém může být obtížněji pochopitelný.  
   
- ![Diagram znázorňující spolupráce částí pořadí](../modeling/media/uml-compdescparts.png "UML_CompDescParts")  
+  ![Diagram znázorňující spolupráce částí pořadí](../modeling/media/uml-compdescparts.png "UML_CompDescParts")  
   
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Nakreslení sekvenčního diagramu, který zobrazuje spolupráci mezi částmi  
   
@@ -327,13 +327,13 @@ V sadě Visual Studio, můžete nakreslit *diagram komponent* na zobrazit pomoc�
   
  Mezi typické druhy závislostí patří:  
   
--   Jedna komponenta volá kód v rámci druhé.  
+- Jedna komponenta volá kód v rámci druhé.  
   
--   Jedna komponenta vytvoří instanci třídy, která je definována v jiné třídě.  
+- Jedna komponenta vytvoří instanci třídy, která je definována v jiné třídě.  
   
--   Jedna komponenta využívá informace vytvořené jinou komponentou.  
+- Jedna komponenta využívá informace vytvořené jinou komponentou.  
   
- Název šipky závislostí lze použít k označení určitého druhu použití. Pokud chcete nastavit název, klikněte pravým tlačítkem myši na šipku a potom klikněte na **vlastnosti**a nastavte **název** pole v okně Vlastnosti.  
+  Název šipky závislostí lze použít k označení určitého druhu použití. Pokud chcete nastavit název, klikněte pravým tlačítkem myši na šipku a potom klikněte na **vlastnosti**a nastavte **název** pole v okně Vlastnosti.  
   
 ## <a name="see-also"></a>Viz také  
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   

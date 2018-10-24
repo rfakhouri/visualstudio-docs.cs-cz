@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240147"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843638"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Úpravy stylu objektů v Blendu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,15 +80,15 @@ Nejjednodušší způsob, jak přizpůsobit objektu je můžete nastavit vlastno
   
  Chcete-li vytvořit styl, vyberte objekt a potom v **objekt** nabídce zvolte **upravit styl**a klikněte na tlačítko **upravit kopii** nebo **vytvořit prázdnou**.  
   
--   Zvolte **upravit kopii** začínat výchozí styl nebo šablonu ovládacího prvku.  
+- Zvolte **upravit kopii** začínat výchozí styl nebo šablonu ovládacího prvku.  
   
--   Zvolte **vytvořit prázdnou** od záčátku.  
+- Zvolte **vytvořit prázdnou** od záčátku.  
   
- **Upravit aktuální** možnost bude nabídnuta jen v případě, že upravit styl nebo šablonu, kterou jste vytvořili. Nebude se zobrazovat pro ovládací prvek, který je stále používá výchozí šablonu systému.  
+  **Upravit aktuální** možnost bude nabídnuta jen v případě, že upravit styl nebo šablonu, kterou jste vytvořili. Nebude se zobrazovat pro ovládací prvek, který je stále používá výchozí šablonu systému.  
   
- V **vytvořit prostředek stylu** dialogové okno, můžete buď pojmenovat stylu nebo šablony tak, aby ji mohli použít později, nebo použít styl nebo šablonu pro všechny ovládací prvky tohoto typu.  
+  V **vytvořit prostředek stylu** dialogové okno, můžete buď pojmenovat stylu nebo šablony tak, aby ji mohli použít později, nebo použít styl nebo šablonu pro všechny ovládací prvky tohoto typu.  
   
- ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
+  ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
 >  Nelze vytvořit styly a šablony pro každý typ ovládacího prvku. Pokud je nepodporuje ovládací prvek, tlačítko s popisem cesty nezobrazí výše na návrhovou plochu.  

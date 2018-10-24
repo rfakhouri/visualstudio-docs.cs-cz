@@ -16,12 +16,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 99520828ff4a6ac44ca4512b2104cb3019a9785a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 39ce7fa1baee3f28a86cf92fd2a063646de33778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841270"
 ---
 # <a name="deploying-custom-start-pages"></a>Nasazení vlastních úvodních stránek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ Vlastní úvodní stránky můžete nasadit pomocí nasazení VSIX nebo kopírov
 ## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>Nasazení souboru VSIX pomocí šablony projektu stránka Start  
  Při vytváření úvodní stránku pomocí šablony projektu úvodní stránky a následné sestavení projektu, Visual Studio vytvoří soubor VSIX, které můžete distribuovat. Balení úvodní stránka v souboru .vsix poskytuje následující možnosti pro nasazení, v závislosti na vaše cílová skupina:  
   
--   Soubor .vsix lze umístit do sdílené síťové složky nebo na veřejný web. Když uživatel otevře soubor, je automaticky nainstalován úvodní stránky.  
+- Soubor .vsix lze umístit do sdílené síťové složky nebo na veřejný web. Když uživatel otevře soubor, je automaticky nainstalován úvodní stránky.  
   
--   Můžete nahrát soubor .vsix, který má [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webu tak, aby uživatelé mohou nainstalovat s použitím **Správce rozšíření**.  
+- Můžete nahrát soubor .vsix, který má [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webu tak, aby uživatelé mohou nainstalovat s použitím **Správce rozšíření**.  
   
- Úvodní stránka šablony projektu vytvoří kopii výchozí úvodní stránku aplikace Visual Studio tak, aby mohli upravit kopii a zachovat původní.  
+  Úvodní stránka šablony projektu vytvoří kopii výchozí úvodní stránku aplikace Visual Studio tak, aby mohli upravit kopii a zachovat původní.  
   
- Šablona projektu úvodní stránku lze získat pomocí **Správce rozšíření** nebo stažením z webu.  
+  Šablona projektu úvodní stránku lze získat pomocí **Správce rozšíření** nebo stažením z webu.  
   
 ## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>VSIX nasazení bez použití šablony úvodní stránka projektu  
  Úspěšné nasazení VSIX vyžaduje rozšíření má být nainstalován do složky, které jsou rozpoznány procesem registrace VSIX a tím **Správce rozšíření**. Vzhledem k tomu, že šablona projektu úvodní stránka již Určuje správné složky, doporučujeme použít ho pokaždé, když chcete balíček rozšíření VSIX nasazení. Nicméně pokud máte případ, ve kterém nelze použít šablonu, můžete vytvořit nasazení VSIX bez jeho použití.  
   
  K vytvoření VSIX nasazení bez použití šablony projektu úvodní stránku, nejprve vytvořte soubor VSIX pro úvodní stránku v některém z těchto způsobů:  
   
--   Přidáním vlastní úvodní stránku soubory do prázdný projekt VSIX. Další informace najdete v tématu [šablonou projektu VSIX](../extensibility/vsix-project-template.md).  
+- Přidáním vlastní úvodní stránku soubory do prázdný projekt VSIX. Další informace najdete v tématu [šablonou projektu VSIX](../extensibility/vsix-project-template.md).  
   
--   Tím, že ručně vytvoříte soubor VSIX. Další informace najdete v tématu [postupy: ruční balíček rozšíření (nasazení VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- Tím, že ručně vytvoříte soubor VSIX. Další informace najdete v tématu [postupy: ruční balíček rozšíření (nasazení VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
- Pro Visual Studio k rozpoznání úvodní stránku `Content Element` musí obsahovat manifestu VSIX `CustomExtension Element` , který má `Type` atribut nastaven na `"StartPage"`. Úvodní stránka rozšíření, nainstalované prostřednictvím VSIX nasazení se zobrazí v **přizpůsobit úvodní stránku** seznamu **spuštění** možnosti stránce jako **[nainstalované rozšíření]** *Název rozšíření*.  
+  Pro Visual Studio k rozpoznání úvodní stránku `Content Element` musí obsahovat manifestu VSIX `CustomExtension Element` , který má `Type` atribut nastaven na `"StartPage"`. Úvodní stránka rozšíření, nainstalované prostřednictvím VSIX nasazení se zobrazí v **přizpůsobit úvodní stránku** seznamu **spuštění** možnosti stránce jako **[nainstalované rozšíření]** *Název rozšíření*.  
   
- Pokud váš balíček úvodní stránka obsahuje sestavení, je nutné přidat vazbu cesta k registraci tak, aby při spuštění sady Visual Studio jsou k dispozici. Provedete to tak, ujistěte se, že váš balíček obsahuje soubor .pkgdef, který obsahuje následující informace.  
+  Pokud váš balíček úvodní stránka obsahuje sestavení, je nutné přidat vazbu cesta k registraci tak, aby při spuštění sady Visual Studio jsou k dispozici. Provedete to tak, ujistěte se, že váš balíček obsahuje soubor .pkgdef, který obsahuje následující informace.  
   
 ```  
 [$RootKey$\BindingPaths\{Insert a new GUID here}]  

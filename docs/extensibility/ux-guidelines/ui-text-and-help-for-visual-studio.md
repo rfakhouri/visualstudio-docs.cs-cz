@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 202ba0f384fb658efd45ec446b27a385c98c37d4
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842232"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Text uživatelského rozhraní a nápovědu k sadě Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a> Text uživatelského rozhraní a terminologie  
@@ -315,15 +315,15 @@ ms.locfileid: "39511780"
   
  Toto řešení umožňuje čtyři předpoklady, které by mohly způsobit chyby:  
   
--   Tlačítko Nápověda v dialogovém okně je **IDHELP** (9).  
+- Tlačítko Nápověda v dialogovém okně je **IDHELP** (9).  
   
--   Dialogové okno vypadá správně, když je skrytý na tlačítko Nápověda.  
+- Dialogové okno vypadá správně, když je skrytý na tlačítko Nápověda.  
   
--   Dialogové okno nenahrazuje jeho návrat winproc.  
+- Dialogové okno nenahrazuje jeho návrat winproc.  
   
--   Dialogové okno není vložené uvnitř jiného dialogového okna.  
+- Dialogové okno není vložené uvnitř jiného dialogového okna.  
   
- Pokud dialogové okno se nachází v rámci msenv a nepoužívá **VBDialogBoxParam**, prozkoumat využití **VBDialogBoxParam** před implementací vlastní obslužné rutiny.  
+  Pokud dialogové okno se nachází v rámci msenv a nepoužívá **VBDialogBoxParam**, prozkoumat využití **VBDialogBoxParam** před implementací vlastní obslužné rutiny.  
   
 ##### <a name="dialogs-created-through-other-packages"></a>Dialogová okna, které jsou vytvořené pomocí jiných balíčků  
  Můžete implementovat svoje vlastní řešení pro dialogová okna, které se nacházejí mimo msenv. Pro třídy sdílené dialogového okna v vašeho balíčku VSPackage zvažte přechod na tlačítko na záhlaví okna nebo implementace obslužné rutiny pro každý dialogového okna. Následující kód představuje kostru implementace k vám pomůžou začít:  
@@ -430,4 +430,4 @@ public class HelpForm : Form
 ## <a name="see-also"></a>Viz také  
  [Písma a formátování pro Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)   
  [Rozložení pro sadu Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)   
- [Oznámení a postup pro Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
+ [Oznámení a průběh pro Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)

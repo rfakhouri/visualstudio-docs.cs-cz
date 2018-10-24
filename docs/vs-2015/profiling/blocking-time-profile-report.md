@@ -18,23 +18,23 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cf06fc37a10f6bf028d3f4ef7174e73574b604b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5be0649cd9d3fb7aa5f4e3f52496ec43658a41ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180801"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842869"
 ---
 # <a name="blocking-time-profile-report"></a>Sestava profilu času blokace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Profil sestavy poskytují data agregace času blokování pro zásobníky volání, které jsou specifické pro každou blokování kategorii (například "Vstupně-výstupní operace" nebo "Synchronizace"). Přerušení sestava obsahuje seznam procesů, které ke zrušení přidělením aktuální proces a počtem instancí přerušení. Pokud chcete sestavit blokování Sestava profilu, nástroj shromáždí blokování volání rozhraní API a shromáždí do stromu zásobníky volání. Data zobrazená v těchto sestavách se liší podle aktuální časový rozsah, skryté vláken a následující dva filtry, které mohou být použity:  
   
--   Pokud je vybrána pouze můj kód, jsou uvedeny pouze bloky zásobníku, které mají kód uživatele a jednu úroveň níže uvedeného kódu uživatele.  
+- Pokud je vybrána pouze můj kód, jsou uvedeny pouze bloky zásobníku, které mají kód uživatele a jednu úroveň níže uvedeného kódu uživatele.  
   
--   Pokud je nastavena hodnota snížení šumu, porovnávány zásobníky, kterých je nižší než zadané frekvence se přeskočí.  
+- Pokud je nastavena hodnota snížení šumu, porovnávány zásobníky, kterých je nižší než zadané frekvence se přeskočí.  
   
- Rozbalte všechny položky strom volání najít řádek kódu, ve kterém byl stráven času blokování. Vyhledejte řádek zdroje pro položku, na místní nabídku, vyberte **zobrazit zdroj**. Chcete-li vyhledejte řádek kódu, který volal to předchozí, v místní nabídce zvolte **lokalit volání zobrazení**. Pokud pouze jedna lokalita volání je k dispozici, příkaz se připojí k zvýrazněný řádek kódu pro web volání. Pokud jsou k dispozici více lokalit volání, příkaz se otevře dialogové okno, ve kterém můžete vybrat položku a klikněte na tlačítko **přejít ke zdroji** vyhledejte zvýrazněné volání webu. Často je nejužitečnější, chcete-li zobrazit zdrojový kód pro lokalitu volání, která má nejvíce instance nebo nejvíce času.  
+  Rozbalte všechny položky strom volání najít řádek kódu, ve kterém byl stráven času blokování. Vyhledejte řádek zdroje pro položku, na místní nabídku, vyberte **zobrazit zdroj**. Chcete-li vyhledejte řádek kódu, který volal to předchozí, v místní nabídce zvolte **lokalit volání zobrazení**. Pokud pouze jedna lokalita volání je k dispozici, příkaz se připojí k zvýrazněný řádek kódu pro web volání. Pokud jsou k dispozici více lokalit volání, příkaz se otevře dialogové okno, ve kterém můžete vybrat položku a klikněte na tlačítko **přejít ke zdroji** vyhledejte zvýrazněné volání webu. Často je nejužitečnější, chcete-li zobrazit zdrojový kód pro lokalitu volání, která má nejvíce instance nebo nejvíce času.  
   
 ## <a name="blocking-time-report-columns"></a>Blokování času sloupce sestavy  
  V následující tabulce jsou uvedeny sloupce pro každou sestavu blokování času.  

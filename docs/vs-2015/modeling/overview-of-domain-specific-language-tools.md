@@ -14,12 +14,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0c8730d2a73b5e6dd2c48138c1633e24234db29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c01116ee4a4b0edc43a6277db7725e8d962bd607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839320"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Přehled Jazykových nástrojů specifických pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ Nástroje jazyka specifického pro doménu (DSL Tools), které jsou hostované v
 ## <a name="the-dsl-tools-solution"></a>Řešení nástrojů DSL  
  Průvodce Designer specifického pro doménu poskytuje následující šablony řešení:  
   
--   Tok úkolů  
+- Tok úkolů  
   
--   Diagramy tříd  
+- Diagramy tříd  
   
--   Minimální jazykový  
+- Minimální jazykový  
   
--   Komponenta modelů  
+- Komponenta modelů  
   
--   Minimální WPF  
+- Minimální WPF  
   
--   Minimální Windows.Forms  
+- Minimální Windows.Forms  
   
--   Knihovna DSL, která  
+- Knihovna DSL, která  
   
- Další informace najdete v tématu [výběr šablony řešení jazyka specifického pro doménu](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+  Další informace najdete v tématu [výběr šablony řešení jazyka specifického pro doménu](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
- Průvodce vytvoří [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, které má následující projekty:  
+  Průvodce vytvoří [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, které má následující projekty:  
   
--   DSL  
+- DSL  
   
-     Projektu Dsl definuje jazyka specifického pro doménu a jeho nástrojů úprav a zpracování.  
+   Projektu Dsl definuje jazyka specifického pro doménu a jeho nástrojů úprav a zpracování.  
   
--   **DslPackage**  
+- **DslPackage**  
   
-     DslPackage projektu určuje, jak integrovat nástroje jazyka [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+   DslPackage projektu určuje, jak integrovat nástroje jazyka [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="the-dsl-tools-graphical-interface"></a>Grafické rozhraní nástrojů DSL  
  Přidání elementů a vztahů do jazyka specifického pro doménu, můžete použít grafické rozhraní nástrojů DSL. Po přidání prvků, můžete definovat jejich vzhled mapování na obrazce, přizpůsobení barev a přidáním dekorátory. Můžete také přidat prvky do panelu nástrojů.  
