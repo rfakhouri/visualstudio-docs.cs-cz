@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: fd0aa403e702a591a0b09d0891116063a3ed9ff2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f8d1ae730947a70cac253866d0257aa4e0216626
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882766"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Spouštění aplikací pro UPW na simulátoru
 Simulátor aplikace Visual Studio pro aplikace pro UPW je desktopová aplikace, která simuluje aplikace pro UPW. Obvykle můžete ladit na místním počítači, připojeného zařízení nebo vzdálený počítač. Ale v některých případech můžete chtít použít simulátor aplikace Visual Studio k emulaci různých fyzických obrazovku a řešení. Můžete také simulovat běžné touch a otočení události a simulovat vlastnosti připojení k síti.
@@ -115,35 +115,35 @@ Simulátor aplikace Visual Studio pro aplikace pro UPW je desktopová aplikace, 
   
  Pro simulaci sítě-vlastnosti:  
   
-1.  Na panelu nástrojů themeroller simulátor **změnit vlastnosti sítě** tlačítko.  
+1. Na panelu nástrojů themeroller simulátor **změnit vlastnosti sítě** tlačítko.  
   
-2.  Na **nastavit vlastnosti sítě** dialogu **použití simulované sítě-vlastnosti**.  
+2. Na **nastavit vlastnosti sítě** dialogu **použití simulované sítě-vlastnosti**.  
   
-     Zrušte zaškrtnutí políčka odebrat simulace a vraťte se do vlastností síťového rozhraní aktuálně připojené.  
+    Zrušte zaškrtnutí políčka odebrat simulace a vraťte se do vlastností síťového rozhraní aktuálně připojené.  
   
-3.  Zadejte **název profilu** pro simulované síti. Doporučujeme použít jedinečný název, který můžete použít k identifikaci simulace v [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) vlastnost [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) objektu.  
+3. Zadejte **název profilu** pro simulované síti. Doporučujeme použít jedinečný název, který můžete použít k identifikaci simulace v [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) vlastnost [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) objektu.  
   
-4.  Vyberte [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) hodnotu z profilu **typ náklady na síť** seznamu.  
+4. Vyberte [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) hodnotu z profilu **typ náklady na síť** seznamu.  
   
-5.  Z **příznak stavu limitu dat** seznamu, můžete nastavit [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) vlastnost nebo [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) vlastnost na hodnotu true, nebo můžete zvolit  **V části omezení dat** nastavení obě hodnoty na hodnotu false.  
+5. Z **příznak stavu limitu dat** seznamu, můžete nastavit [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) vlastnost nebo [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) vlastnost na hodnotu true, nebo můžete zvolit  **V části omezení dat** nastavení obě hodnoty na hodnotu false.  
   
-6.  Z **Roaming stavu** seznam, nastavte [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) vlastnost.  
+6. Z **Roaming stavu** seznam, nastavte [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) vlastnost.  
   
-7.  Zvolte **nastavit vlastnosti** simulovat vlastnosti sítě aktivací popředí [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) událostí a na pozadí [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) typu  **NetworkStateChange**.  
+7. Zvolte **nastavit vlastnosti** simulovat vlastnosti sítě aktivací popředí [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) událostí a na pozadí [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) typu  **NetworkStateChange**.  
   
- **Další informace o správě připojení k síti**  
+   **Další informace o správě připojení k síti**  
   
- [Rychlý start: Správa měří omezení náklady na síť](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Rychlý start: Správa měří omezení náklady na síť](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Ukázka informace o síti](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Ukázka informace o síti](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Analýza spotřeby energie](../profiling/analyze-energy-use-in-store-apps.md)  
+   [Analýza spotřeby energie](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
+   [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   
- [Jak reagovat na události systému s úlohami na pozadí](/previous-versions/windows/apps/hh977058(v=win.10))  
+   [Jak reagovat na události systému s úlohami na pozadí](/previous-versions/windows/apps/hh977058(v=win.10))  
   
- [Jak aktivovat pozastavení, obnovení a události na pozadí v aplikacích pro UWP](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
+   [Jak aktivovat pozastavení, obnovení a události na pozadí v aplikacích pro UWP](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Přejděte simulátoru pomocí klávesnice  
  Simulátor nástrojů můžete přejít stisknutím klávesy **CTRL + ALT + Šipka nahoru** k přepnutí okno simulátoru na panel nástrojů simulátoru. Použití **šipka nahoru** a **šipka dolů** přesouvat mezi tlačítka na panelu nástrojů.  

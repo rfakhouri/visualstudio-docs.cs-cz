@@ -17,12 +17,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 40d508a11807fe90981104e0cc7e6557577da103
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259984"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855596"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Přidání uživatelského ovládacího prvku na úvodní stránku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -141,41 +141,41 @@ Tento návod ukazuje, jak přidat knihovnu DLL odkaz na vlastní úvodní strán
 ## <a name="adding-the-user-control-to-the-start-page"></a>Přidání uživatelského ovládacího prvku na úvodní stránku  
  Do tohoto ovládacího prvku zpřístupnit na úvodní stránce projektu v souboru projektu úvodní stránku, přidejte odkaz na nové knihovny ovládacích prvků. Potom můžete přidat ovládací prvek kód spuštění stránky XAML.  
   
-1.  V **Průzkumníka řešení**, v úvodní stránce projektu klikněte pravým tlačítkem na **odkazy** a potom klikněte na tlačítko **přidat odkaz**.  
+1. V **Průzkumníka řešení**, v úvodní stránce projektu klikněte pravým tlačítkem na **odkazy** a potom klikněte na tlačítko **přidat odkaz**.  
   
-2.  Na **projekty** kartu, vyberte možnost **WebUserControl** a potom klikněte na tlačítko **OK**.  
+2. Na **projekty** kartu, vyberte možnost **WebUserControl** a potom klikněte na tlačítko **OK**.  
   
-3.  Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
+3. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
   
-     Sestavování řešení zpřístupní uživatelského ovládacího prvku IntelliSense pro další soubory v řešení.  
+    Sestavování řešení zpřístupní uživatelského ovládacího prvku IntelliSense pro další soubory v řešení.  
   
- Přidání ovládacího prvku kód spuštění stránky XAML, přidejte obor názvů odkaz na sestavení a pak umístit ovládací prvek na stránce.  
+   Přidání ovládacího prvku kód spuštění stránky XAML, přidejte obor názvů odkaz na sestavení a pak umístit ovládací prvek na stránce.  
   
 #### <a name="to-add-the-control-to-the-markup"></a>Chcete-li přidat ovládací prvek značky  
   
-1.  V **Průzkumníka řešení**, otevřete soubor .xaml úvodní stránku.  
+1. V **Průzkumníka řešení**, otevřete soubor .xaml úvodní stránku.  
   
-2.  V **XAML** podokno, přidejte následující deklarace oboru názvů na nejvyšší úrovni <xref:System.Windows.Controls.Grid> elementu.  
+2. V **XAML** podokno, přidejte následující deklarace oboru názvů na nejvyšší úrovni <xref:System.Windows.Controls.Grid> elementu.  
   
-    ```xml  
-    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
-    ```  
+   ```xml  
+   xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
+   ```  
   
-3.  V **XAML** podokno, posuňte se \<mřížky > oddílu.  
+3. V **XAML** podokno, posuňte se \<mřížky > oddílu.  
   
-     Oddíl obsahuje <xref:System.Windows.Controls.TabControl> prvek <xref:System.Windows.Controls.Grid> elementu.  
+    Oddíl obsahuje <xref:System.Windows.Controls.TabControl> prvek <xref:System.Windows.Controls.Grid> elementu.  
   
-4.  Přidat \<TabControl > element obsahující \<TabItem >, která obsahuje odkaz na uživatelský ovládací prvek.  
+4. Přidat \<TabControl > element obsahující \<TabItem >, která obsahuje odkaz na uživatelský ovládací prvek.  
   
-    ```xml  
+   ```xml  
   
-    <TabItem Header="Web" Height="Auto">  
-        <vsc:UserControl1 />  
-    </TabItem>  
+   <TabItem Header="Web" Height="Auto">  
+       <vsc:UserControl1 />  
+   </TabItem>  
   
-    ```  
+   ```  
   
- Nyní můžete otestovat ovládacího prvku.  
+   Nyní můžete otestovat ovládacího prvku.  
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Testování ručně vytvořené vlastní úvodní stránky  
   

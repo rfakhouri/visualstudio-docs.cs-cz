@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ac55e2ec1d07c32c154b69cd467dfc534da6ae3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bc0620c06b6fa5b4018b6e027e30a18216454b29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863955"
 ---
 # <a name="model-user-requirements"></a>Modelování uživatelských požadavků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
   
  Požadavky na modelu vám pomůže:  
   
--   Zaměřte se na chování systému externí, odděleně od jeho vnitřní strukturou.  
+- Zaměřte se na chování systému externí, odděleně od jeho vnitřní strukturou.  
   
--   Popište uživatelů a zúčastněných stran pomocí musí mít mnohem méně nejednoznačnost, než v přirozeném jazyce.  
+- Popište uživatelů a zúčastněných stran pomocí musí mít mnohem méně nejednoznačnost, než v přirozeném jazyce.  
   
--   Definujte konzistentní Glosář termínů, které je možné uživatele, vývojáři a testeři.  
+- Definujte konzistentní Glosář termínů, které je možné uživatele, vývojáři a testeři.  
   
--   Snížit prostoje a nekonzistence v požadavcích.  
+- Snížit prostoje a nekonzistence v požadavcích.  
   
--   Omezení práce potřebné reakce na změny požadavků.  
+- Omezení práce potřebné reakce na změny požadavků.  
   
--   Naplánujte pořadí, ve kterém se funkce vyvinuté.  
+- Naplánujte pořadí, ve kterém se funkce vyvinuté.  
   
--   Pomocí modelu jako základ pro testy systému, což jasný vztah mezi testy a požadavky. Při změně požadavků, tato relace vám pomůže aktualizovat testy správně. Tím je zajištěno, že systém splňuje nové požadavky.  
+- Pomocí modelu jako základ pro testy systému, což jasný vztah mezi testy a požadavky. Při změně požadavků, tato relace vám pomůže aktualizovat testy správně. Tím je zajištěno, že systém splňuje nové požadavky.  
   
- Požadavky na model poskytuje největší výhody, pokud jej používat k aktivní diskuze s uživateli nebo svých zástupci a opakování na začátku každé iterace. Není nutné pro dokončení podrobně před psaním kódu. Částečně funkční aplikaci, i v případě velmi výrazně zjednodušené, obecně tento balíček je základem nejvíce podporovat diskuzi o požadavky s uživateli. Model je účinný způsob, jak vytvořit souhrn výsledků tyto diskuse. Další informace najdete v tématu [použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md).  
+  Požadavky na model poskytuje největší výhody, pokud jej používat k aktivní diskuze s uživateli nebo svých zástupci a opakování na začátku každé iterace. Není nutné pro dokončení podrobně před psaním kódu. Částečně funkční aplikaci, i v případě velmi výrazně zjednodušené, obecně tento balíček je základem nejvíce podporovat diskuzi o požadavky s uživateli. Model je účinný způsob, jak vytvořit souhrn výsledků tyto diskuse. Další informace najdete v tématu [použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md).  
   
 > [!NOTE]
 >  V těchto tématech "systém" znamená, že systém nebo aplikace, kterou vyvíjíte. Rozsáhlá kolekce řadu softwarových a hardwarových součástí; může být nebo si jednu aplikaci; nebo softwarová součást uvnitř větší systému. V každém případě model požadavků popisuje chování, které je viditelné z vnějšku systému prostřednictvím uživatelského rozhraní nebo rozhraní API.  
@@ -84,11 +84,11 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
   
  Náčrt diagramu případu použití pomáhá vašemu týmu:  
   
--   Zaměřte se na co očekávat uživatelé dělat s systému, aniž by se odváděna podle podrobnosti implementace.  
+- Zaměřte se na co očekávat uživatelé dělat s systému, aniž by se odváděna podle podrobnosti implementace.  
   
--   Zjistěte rozsah vašeho systému nebo konkrétní verzí systému.  
+- Zjistěte rozsah vašeho systému nebo konkrétní verzí systému.  
   
- Další informace naleznete v následujících tématech:  
+  Další informace naleznete v následujících tématech:  
   
 |Další informace o|Číst|  
 |--------------------|----------|  
@@ -99,41 +99,41 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
 ##  <a name="RequirementsClasses"></a> Definuje termíny používané k popisu požadavků  
  Můžete použít diagramy tříd UML a pomohou vám vytvořit konzistentní slovník business koncepty použité k těmto účelům:  
   
--   Uživatelé sami fattica firmy, ve kterém systém funguje.  
+- Uživatelé sami fattica firmy, ve kterém systém funguje.  
   
--   K popisu potřebám uživatelů, třeba v popisech případy použití, obchodní pravidla a uživatelskými scénáři.  
+- K popisu potřebám uživatelů, třeba v popisech případy použití, obchodní pravidla a uživatelskými scénáři.  
   
--   Typy informací si vyměňují v rozhraní API systému nebo prostřednictvím uživatelského rozhraní.  
+- Typy informací si vyměňují v rozhraní API systému nebo prostřednictvím uživatelského rozhraní.  
   
--   Popis systému nebo akceptační testy.  
+- Popis systému nebo akceptační testy.  
   
- Při použití pro tento účel, obsah, diagram tříd UML je volána diagramu koncepční tříd. (Je také označován jako *doménový model* nebo *analýzy třídy modelu*.)  
+  Při použití pro tento účel, obsah, diagram tříd UML je volána diagramu koncepční tříd. (Je také označován jako *doménový model* nebo *analýzy třídy modelu*.)  
   
- V diagramu tříd koncepční zobrazit pouze tyto třídy potřebné v popisech požadavků, aniž by se zobrazil všech podrobností interního návrhu systému. Diagram nezobrazuje žádné podrobnosti interního návrhu systému. Můžete neukazuje obvykle operace nebo rozhraní na koncepční třídy.  
+  V diagramu tříd koncepční zobrazit pouze tyto třídy potřebné v popisech požadavků, aniž by se zobrazil všech podrobností interního návrhu systému. Diagram nezobrazuje žádné podrobnosti interního návrhu systému. Můžete neukazuje obvykle operace nebo rozhraní na koncepční třídy.  
   
- Například lze nakreslit tyto koncepční třídy pro systém Dinner Now:  
+  Například lze nakreslit tyto koncepční třídy pro systém Dinner Now:  
   
- ![Třídy nabídka, objednávka, položka nabídky položka objednávky. ](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")  
+  ![Třídy nabídka, objednávka, položka nabídky položka objednávky. ](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")  
   
- Koncepční třídy diagram představuje slovník podmínky, které budete používat v celé model požadavků. Například v podrobný popis použití případu objednávka pokrmu, můžete například napsat:  
+  Koncepční třídy diagram představuje slovník podmínky, které budete používat v celé model požadavků. Například v podrobný popis použití případu objednávka pokrmu, můžete například napsat:  
   
- Zákazník vybere *nabídky* ze kterého se má vytvořit *pořadí*a potom vytvoří *pořadí položek* v *pořadí* tak, že vyberete  *Položky nabídky* z *nabídky*.  
+  Zákazník vybere *nabídky* ze kterého se má vytvořit *pořadí*a potom vytvoří *pořadí položek* v *pořadí* tak, že vyberete  *Položky nabídky* z *nabídky*.  
   
- Všimněte si, jak termíny používané v tomto popisu jsou názvy tříd v modelu. Diagram zruší nejednoznačnosti vztahy mezi těmito třídami. Například to, ukazují, že jednotlivé objednávky souvisí s právě jednu nabídku.  
+  Všimněte si, jak termíny používané v tomto popisu jsou názvy tříd v modelu. Diagram zruší nejednoznačnosti vztahy mezi těmito třídami. Například to, ukazují, že jednotlivé objednávky souvisí s právě jednu nabídku.  
   
- Nedorozuměním o požadavcích uživatelů můžete sledovat často k nedorozuměním o podrobné význam slova. Například většina restaurace budou mít sdílené znalost podmínky nabídky a pořadí, ale je méně jasné rozdíl mezi položky v objednávce a položky v nabídce. Pokud požadavky byly diskutovány s zúčastněné obchodní strany, je důležité ke zveřejnění těchto rozdílů. Diagram tříd je užitečným nástrojem při vysvětlení podmínky a jejich vztahy.  
+  Nedorozuměním o požadavcích uživatelů můžete sledovat často k nedorozuměním o podrobné význam slova. Například většina restaurace budou mít sdílené znalost podmínky nabídky a pořadí, ale je méně jasné rozdíl mezi položky v objednávce a položky v nabídce. Pokud požadavky byly diskutovány s zúčastněné obchodní strany, je důležité ke zveřejnění těchto rozdílů. Diagram tříd je užitečným nástrojem při vysvětlení podmínky a jejich vztahy.  
   
- Třída Koncepční model mohl vytvořit základní slovník, pomocí kterého lze popsat váš systém obchodní logiku. Ale třídy v softwaru obvykle bude mnohem složitější než konceptuální model, protože implementace nutné vzít v úvahu problémy, jako je výkon, distribuce, flexibility a dalších faktorů. Několik různých implementací koncepční třídy se často nacházejí v jednom systému.  
+  Třída Koncepční model mohl vytvořit základní slovník, pomocí kterého lze popsat váš systém obchodní logiku. Ale třídy v softwaru obvykle bude mnohem složitější než konceptuální model, protože implementace nutné vzít v úvahu problémy, jako je výkon, distribuce, flexibility a dalších faktorů. Několik různých implementací koncepční třídy se často nacházejí v jednom systému.  
   
- Například můžou být reprezentované objednávky v XML, SQL, HTML a C# v různých částí systému a na různých rozhraní mezi částmi. Přidružení mezi objednávkou a nabídky můžou být reprezentované mnoha různými způsoby, například odkazy v kódu jazyka C#, vztahy v databázi, nebo křížové odkazy. ID ve formátu XML. Ale i přes tyto odchylky Koncepční model poskytuje důležité informace, které platí ve všech součástí softwaru. Diagram tříd v příkladu nás informuje, že v každé implementace bude pouze jeden nabídky spojené s každou pořadí.  
+  Například můžou být reprezentované objednávky v XML, SQL, HTML a C# v různých částí systému a na různých rozhraní mezi částmi. Přidružení mezi objednávkou a nabídky můžou být reprezentované mnoha různými způsoby, například odkazy v kódu jazyka C#, vztahy v databázi, nebo křížové odkazy. ID ve formátu XML. Ale i přes tyto odchylky Koncepční model poskytuje důležité informace, které platí ve všech součástí softwaru. Diagram tříd v příkladu nás informuje, že v každé implementace bude pouze jeden nabídky spojené s každou pořadí.  
   
- Náčrt diagramu třídy požadavky pomáhá vašemu týmu:  
+  Náčrt diagramu třídy požadavky pomáhá vašemu týmu:  
   
--   Definovat a standardizovat základní termínů používaných v diskuzích k žádostem o potřebám uživatelů.  
+- Definovat a standardizovat základní termínů používaných v diskuzích k žádostem o potřebám uživatelů.  
   
--   Vysvětlení vztahy mezi těmito podmínkami.  
+- Vysvětlení vztahy mezi těmito podmínkami.  
   
- Další informace naleznete v následujících tématech:  
+  Další informace naleznete v následujících tématech:  
   
 |Další informace o|Číst|  
 |--------------------|----------|  
@@ -146,7 +146,7 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
 ##  <a name="BusinessRules"></a> Zobrazení obchodních pravidel  
  Obchodní pravidlo je požadavek, který není spojen s případem použití konkrétní a by měl v celém systému.  
   
- Mnoho obchodní pravidla jsou omezení na vztahy mezi koncepční třídy. Můžete napsat tyto *statické ** obchodní pravidla* jako komentáře přidružené k příslušné třídy v diagramu tříd koncepční. Příklad:  
+ Mnoho obchodní pravidla jsou omezení na vztahy mezi koncepční třídy. Můžete napsat tyto *statické obchodní pravidla* jako komentáře přidružené k příslušné třídy v diagramu tříd koncepční. Příklad:  
   
  ![Pravidlo v komentář připojený na třídu pořadí. ](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")  
   
@@ -167,21 +167,21 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
 ##  <a name="QoSRequirements"></a> Popisující kvality požadavků na služby  
  Existuje několik kategorií kvality služby. Jsou to tyto země:  
   
--   Výkon  
+- Výkon  
   
--   Zabezpečení  
+- Zabezpečení  
   
--   Použitelnosti  
+- Použitelnosti  
   
--   Spolehlivost  
+- Spolehlivost  
   
--   Robustnost  
+- Robustnost  
   
- Může obsahovat některé z těchto požadavků v popisech zvláštní případy. Další požadavky nejsou specifická pro případy použití a efektivní zapsány v samostatných dokumentu. Pokud je to možné, je vhodné dodržovat slovník určené model požadavků. V následujícím příkladu Všimněte si, že hlavní slova používaná požadavek na názvy objektů actor, případy použití a třídy v vidět na předchozím obrázku:  
+  Může obsahovat některé z těchto požadavků v popisech zvláštní případy. Další požadavky nejsou specifická pro případy použití a efektivní zapsány v samostatných dokumentu. Pokud je to možné, je vhodné dodržovat slovník určené model požadavků. V následujícím příkladu Všimněte si, že hlavní slova používaná požadavek na názvy objektů actor, případy použití a třídy v vidět na předchozím obrázku:  
   
- Pokud restaurace odstraní položku nabídky, zatímco zákazník je pokrmu, jakoukoli objednávky položku, který odkazuje na danou položku nabídky se zobrazí červeně.  
+  Pokud restaurace odstraní položku nabídky, zatímco zákazník je pokrmu, jakoukoli objednávky položku, který odkazuje na danou položku nabídky se zobrazí červeně.  
   
- Další informace naleznete v následujících tématech:  
+  Další informace naleznete v následujících tématech:  
   
 |Další informace o|Číst|  
 |--------------------|----------|  
@@ -232,15 +232,15 @@ Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživate
   
  Zjistíte, že mnoho dotazy týkající se obchodní domény vzniknou přirozeně při vytváření modelu. Vložením tyto otázky, které vaši uživatelé budou omezení potřeby změny v pozdější fázi v projektu. Tady jsou některé konkrétní otázky, můžete nejprve položte si otázku a Vyzvěte zúčastněné obchodní strany, pokud je odpověď nejasné:  
   
--   Pro každou třídu v modelu požadavky na dotaz "co případ použití vytváří instance této třídy?" Například v objednání jídla služby online, můžete pokládat, "co případ použití vytvoří instance třídy nabídka?" To vedlo k diskusi o tom, jak nové restaurace je zaregistrovaný do služby a přispívá nabídku. Podobné dotazy můžete požádat o co vytvoří nebo změní atributy a asociace.  
+- Pro každou třídu v modelu požadavky na dotaz "co případ použití vytváří instance této třídy?" Například v objednání jídla služby online, můžete pokládat, "co případ použití vytvoří instance třídy nabídka?" To vedlo k diskusi o tom, jak nové restaurace je zaregistrovaný do služby a přispívá nabídku. Podobné dotazy můžete požádat o co vytvoří nebo změní atributy a asociace.  
   
--   Pro každý případ použití v modelu požadavky pokuste popsat, výsledek nebo neplatná následná z každý případ použití v slova poskytované diagramy tříd. Je často užitečné zobrazit vliv případu použití podle navrhování instance tříd, před a po výskytu případu použití. Například když je ve stavu "položka nabídky je přidána do objednávky zákazníka" Neplatná následná pro případ použití, náčrt instance tříd objednávka a položka nabídky. Zobrazte účinky případ použití, jako je například nový odkaz či nový objekt jinou barvou, nebo nový výkres. To často vede k diskuse o tom, jaké informace je nutné v modelu. I když se požadavky na třídy nejsou přímo starosti s implementací, popisují informace, které váš systém potřebovat k ukládání a vysílání.  
+- Pro každý případ použití v modelu požadavky pokuste popsat, výsledek nebo neplatná následná z každý případ použití v slova poskytované diagramy tříd. Je často užitečné zobrazit vliv případu použití podle navrhování instance tříd, před a po výskytu případu použití. Například když je ve stavu "položka nabídky je přidána do objednávky zákazníka" Neplatná následná pro případ použití, náčrt instance tříd objednávka a položka nabídky. Zobrazte účinky případ použití, jako je například nový odkaz či nový objekt jinou barvou, nebo nový výkres. To často vede k diskuse o tom, jaké informace je nutné v modelu. I když se požadavky na třídy nejsou přímo starosti s implementací, popisují informace, které váš systém potřebovat k ukládání a vysílání.  
   
--   Požádejte o omezení pro atributy a asociace, zejména omezení zahrnující více než jeden atribut nebo přidružení.  
+- Požádejte o omezení pro atributy a asociace, zejména omezení zahrnující více než jeden atribut nebo přidružení.  
   
--   Požádejte o platné a neplatné pořadí případy použití, vykreslování diagramů pořadí nebo aktivity pro ilustraci je.  
+- Požádejte o platné a neplatné pořadí případy použití, vykreslování diagramů pořadí nebo aktivity pro ilustraci je.  
   
- Prozkoumáním vztahy mezi zobrazení, která poskytují různé diagramy vy tak rychle porozumíte hlavní koncepty, které vaši uživatelé pracovat, a pomohly jim pochopit, co potřebují ze systému. Také dosáhnout lepší představu, jaké požadavky jsou zúčastněné strany některých nejméně o. Můžete naplánovat pro vývoj tyto funkce alespoň ve zjednodušené podobě, v rané fázi projektu, aby uživatelé mohli experimentovat s nimi.  
+  Prozkoumáním vztahy mezi zobrazení, která poskytují různé diagramy vy tak rychle porozumíte hlavní koncepty, které vaši uživatelé pracovat, a pomohly jim pochopit, co potřebují ze systému. Také dosáhnout lepší představu, jaké požadavky jsou zúčastněné strany některých nejméně o. Můžete naplánovat pro vývoj tyto funkce alespoň ve zjednodušené podobě, v rané fázi projektu, aby uživatelé mohli experimentovat s nimi.  
   
 ## <a name="see-also"></a>Viz také  
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   

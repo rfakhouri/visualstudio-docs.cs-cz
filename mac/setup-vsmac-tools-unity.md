@@ -1,84 +1,84 @@
 ---
-title: Instalační program sady Visual Studio pro Mac Tools for Unity
-description: Nastavení a instalaci nástrojů pro Unity pro použití v sadě Visual Studio pro Mac
+title: Instalační program sady Visual Studio for Mac Tools for Unity
+description: Nastavení a instalaci nástrojů Unity pro použití v sadě Visual Studio pro Mac
 author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 6e5e6b90350aa16d4e0ffee04673a1aa1063cded
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 3409bca77605bd55d0de15b38eb4812743af813e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836343"
 ---
-# <a name="setup-visual-studio-for-mac-tools-for-unity"></a>Instalační program sady Visual Studio pro Mac Tools for Unity
+# <a name="setup-visual-studio-for-mac-tools-for-unity"></a>Instalační program sady Visual Studio for Mac Tools for Unity
 
-Tato část vysvětluje, jak začít pracovat, pomocí sady Visual Studio pro Mac Tools for Unity.
+Tato část vysvětluje, jak začít používat Visual Studio for Mac Tools pro Unity.
 
-## <a name="install-visual-studio-for-mac"></a>Instalaci sady Visual Studio pro Mac
+## <a name="install-visual-studio-for-mac"></a>Instalace sady Visual Studio pro Mac
 
-### <a name="unity-bundled-installation"></a>Unity dodávat instalace
+### <a name="unity-bundled-installation"></a>Instalace balíčků Unity
 
-Počínaje Unity 2018.1, Visual Studio pro Mac je výchozí nastavení IDE C# pro Unity a je součástí Pomocníka pro stažení Unity, stejně jako nástroj pro instalaci Unity rozbočovače. Stáhnout Unity z [store.unity.com](https://store.unity.com/).
+Počínaje Unity 2018.1, Visual Studio for Mac je výchozí C# integrované vývojové prostředí pro Unity a je součástí Pomocníka pro stáhnout Unity a také nástroj pro instalaci Unity rozbočovače. Stáhněte si Unity [store.unity.com](https://store.unity.com/).
 
-Během instalace Ujistěte se, že je v seznamu součástí k instalaci pomocí Unity zaškrtnuté Visual Studio pro Mac:
+Během instalace Ujistěte se, že Visual Studio pro Mac se změnami seznam součástí k instalaci pomocí Unity:
 
-#### <a name="unity-hub"></a>Unity rozbočovače
+#### <a name="unity-hub"></a>Centrum Unity
 
-![instalace rozbočovače Unity](media/setup-vsmac-tools-unity-image7.png)
+![Centrum instalace Unity](media/setup-vsmac-tools-unity-image7.png)
 
-#### <a name="unity-download-assistant"></a>Pomocník pro stažení Unity
+#### <a name="unity-download-assistant"></a>Unity stáhnout Pomocníka s nastavením
 
-![Instalace Pomocníka stažení Unity](media/setup-vsmac-tools-unity-image8.png)
+![Instalace Pomocníka s nastavením stáhnout Unity](media/setup-vsmac-tools-unity-image8.png)
 
-#### <a name="check-for-updates-to-visual-studio-for-mac"></a>Vyhledávat aktualizace pro Visual Studio pro Mac
+#### <a name="check-for-updates-to-visual-studio-for-mac"></a>Vyhledat aktualizace sady Visual Studio pro Mac
 
-Verze sady Visual Studio pro Mac součástí Unity instalace nemusí být nejnovější. Doporučujeme zkontrolovat aktualizace Ujistěte se, že máte přístup k nejnovější nástroje a funkce.
+Verze sady Visual Studio pro Mac součástí instalace Unity nemusí být na nejnovější verzi. Doporučujeme zkontrolovat aktualizace Ujistěte se, že máte přístup k nejnovější nástroje a funkce.
 
 * [Aktualizace sady Visual Studio pro Mac](update.md)
 
 ### <a name="manual-installation"></a>Ruční instalace
 
-Pokud již máte Unity 5.6.1 nebo vyšší, ale nemáte Visual Studio pro Mac, Visual Studio pro Mac můžete nainstalovat ručně. Všechny edice sady Visual Studio pro Mac jsou seskupeny pomocí sady Visual Studio pro Mac Tools for Unity, včetně bezplatná edice Community:
+Pokud už máte Unity 5.6.1 nebo vyšší, ale nemáte Visual Studio pro Mac, Visual Studio for Mac můžete nainstalovat ručně. Všechny edice sady Visual Studio for Mac jsou spojeny pomocí sady Visual Studio for Mac Tools for Unity, včetně bezplatné Community edition:
 
-* Stažení sady Visual Studio pro Mac od [visualstudio.microsoft.com](https://visualstudio.microsoft.com/).
-* Visual Studio pro Mac Tools for Unity instalují automaticky během procesu instalace.
-* Postupujte podle kroků v [Průvodce instalací](installation.md) nápovědu k další instalaci.
+* Stáhněte si Visual Studio for Mac z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/).
+* Visual Studio for Mac Tools for Unity, se během procesu instalace automaticky nainstalují.
+* Postupujte podle pokynů [Průvodce instalací](installation.md) nápovědu k další instalaci.
 
 > [!NOTE]
-> Visual Studio pro Mac Tools for Unity vyžaduje Unity verze 5.6.1 nebo vyšší. Pokud chcete ověřit, že Visual Studio Tools for Unity jsou povoleny ve vaší verzi Unity, vyberte **o Unity** z nabídky Unity a podívejte se na text "sady Microsoft Visual Studio nástroje pro Unity povoleno" v levém dolním dialogového okna.
+> Visual Studio for Mac Tools for Unity vyžaduje Unity verze 5.6.1 nebo vyšší. Chcete-li ověřit, že Visual Studio Tools for Unity jsou povoleny ve vaší verzi Unity, vyberte **o Unity** v nabídce Unity a hledejte text "Microsoft Visual Studio Tools for Unity povoleno" v levé dolní části dialogového okna.
 >
-> ![O Unity](media/setup-vsmac-tools-unity-image3.png)
+> ![o Unity](media/setup-vsmac-tools-unity-image3.png)
 
-## <a name="confirm-that-the-visual-studio-for-mac-tools-for-unity-extension-is-enabled"></a>Zkontrolujte, zda je povoleno sady Visual Studio pro Mac Tools for Unity rozšíření
+## <a name="confirm-that-the-visual-studio-for-mac-tools-for-unity-extension-is-enabled"></a>Potvrďte, že je povoleno sady Visual Studio pro Mac rozšíření Tools for Unity
 
-Při sady Visual Studio pro Mac Tools for Unity rozšíření by měl být ve výchozím nastavení povolené, můžete to ověřit a zkontrolujte číslo nainstalovaná verze:
+Visual Studio for Mac Tools pro Unity rozšíření by měl být povolen ve výchozím nastavení, můžete to ověřit a zkontrolovat číslo nainstalované verze:
 
 1. V nabídce sady Visual Studio vyberte **rozšíření...** .
 
-  ![Vyberte rozšíření](media/setup-vsmac-tools-unity-image1.png)
+   ![Vyberte rozšíření](media/setup-vsmac-tools-unity-image1.png)
 
-1. Rozbalte část herní vývoj a potvrďte sady Visual Studio pro Mac nástroje pro položku Unity.
+2. Rozbalte část vývoj her a potvrďte sady Visual Studio for Mac Tools pro Unity položka.
 
-  ![Položka Unity zobrazení](media/setup-vsmac-tools-unity-image2.png)
+   ![Položka zobrazení Unity](media/setup-vsmac-tools-unity-image2.png)
 
-## <a name="configure-unity-for-use-with-visual-studio-for-mac"></a>Konfigurace Unity pro použití se sadou Visual Studio pro Mac
+## <a name="configure-unity-for-use-with-visual-studio-for-mac"></a>Konfigurace Unity pomocí sady Visual Studio pro Mac
 
-Počínaje Unity 2018.1, Visual Studio by měl být výchozí editor externího skriptu aplikace Unity. Můžete to ověřit nebo změnit editoru externího skriptu pro Visual Studio:
+Počínaje Unity 2018.1, Visual Studio by měl být výchozího externí skript editoru Unity. Můžete to ověřit nebo změnit externí skript editoru sady Visual Studio:
 
 1. Vyberte **předvolby...**  z nabídky Unity.
 
-  ![Vyberte předvolby](media/setup-vsmac-tools-unity-image4.png)
+   ![Vyberte předvolby](media/setup-vsmac-tools-unity-image4.png)
 
-1. V dialogovém okně Předvolby vyberte **externích nástrojů** kartě.
+2. V dialogovém okně předvoleb vyberte **externích nástrojů** kartu.
 
-1. Z externího skriptu Editor rozevíracího seznamu vyberte **Visual Studio** Pokud je hodnota uvedena, v opačném případě vyberte **Procházet...** .
+3. V editoru skriptů externí rozevíracího seznamu zvolte **sady Visual Studio** Pokud je hodnota uvedena, v opačném případě vyberte **Procházet...** .
 
-  ![Vyberte sady Visual Studio](media/setup-vsmac-tools-unity-image5.png)
+   ![Vyberte Visual Studio](media/setup-vsmac-tools-unity-image5.png)
 
-1. Pokud **Procházet...**  byla vybrána, přejděte do adresáře aplikace a vyberte sady Visual Studio a pak klikněte na tlačítko **otevřete**.
+4. Pokud **Procházet...**  byla vybrána, přejděte do adresáře aplikace a vyberte Visual Studio a klikněte na **otevřít**.
 
-  ![Vyberte Otevřít](media/setup-vsmac-tools-unity-image6.png)
+   ![Vyberte Otevřít](media/setup-vsmac-tools-unity-image6.png)
 
-1. Po výběru v sadě Visual Studio **Editor skriptů externí** seznamu, zavřete dialogové okno Předvolby pro dokončení procesu konfigurace.
+5. Po výběru v sadě Visual Studio **externí Editor skriptů** seznamu, zavřete dialogové okno Předvolby pro dokončení procesu konfigurace.

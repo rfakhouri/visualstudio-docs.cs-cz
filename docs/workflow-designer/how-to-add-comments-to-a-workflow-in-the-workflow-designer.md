@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0555968f67d804060437df272927aa3ee89c730c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 43b17390f077238a6874784f186eb8add3819f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883294"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Postupy: Přidání komentářů do pracovního postupu v Návrháři postupu provádění
 
@@ -49,13 +49,13 @@ Pro usnadnění vytváření rozsáhlejších, složitějších pracovních post
 
 ## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Zobrazení Poznámka v Návrháři aktivity
 
-1.  Návrhář aktivity, který má anotaci zobrazení se mimo aktivitu, klikněte **Pin** ikonu pro úpravy poznámky.
+1. Návrhář aktivity, který má anotaci zobrazení se mimo aktivitu, klikněte **Pin** ikonu pro úpravy poznámky.
 
    Poznámka se zobrazí v Návrháři aktivity. Na snímku obrazovky níže zobrazí se v Návrháři aktivity poznámky "Spuštění aktivity v pracovním postupu".
 
    ![Poznámky se zobrazí v Návrháři aktivit](../workflow-designer/media/annotationindesigner.png)
 
-1. Zobrazit poznámky mimo Návrhář aktivity, při najetí myší nad oblastí poznámky v Návrháři aktivity a klikněte na tlačítko **Odepnout** ikonu
+2. Zobrazit poznámky mimo Návrhář aktivity, při najetí myší nad oblastí poznámky v Návrháři aktivity a klikněte na tlačítko **Odepnout** ikonu
 
    ![Poznámka zobrazena mimo návrháře aktivity](../workflow-designer/media/annotationoutsidedesigner.png)
 

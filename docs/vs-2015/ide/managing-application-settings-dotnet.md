@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac4f670b813970d027925b681a2e3211e1898e1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289507"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866126"
 ---
 # <a name="managing-application-settings-net"></a>Správa nastavení aplikace (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Nastavení aplikace umožňují uložení informací aplikace dynamicky. Nastave
   
  Existují dva typy nastavení aplikace založené na rozsahu:  
   
--   Nastavení oboru aplikace lze použít pro informace, jako je adresa URL pro webovou službu nebo připojovací řetězec databáze. Tyto hodnoty jsou spojeny s aplikací. Proto je uživatelé nemohou změnit za běhu.  
+- Nastavení oboru aplikace lze použít pro informace, jako je adresa URL pro webovou službu nebo připojovací řetězec databáze. Tyto hodnoty jsou spojeny s aplikací. Proto je uživatelé nemohou změnit za běhu.  
   
--   Nastavení s rozsahem uživatele lze použít pro informace, jako jsou například uchování poslední pozice formuláře nebo předvoleb písma. Uživatelé mohou změnit tyto hodnoty v době běhu.  
+- Nastavení s rozsahem uživatele lze použít pro informace, jako jsou například uchování poslední pozice formuláře nebo předvoleb písma. Uživatelé mohou změnit tyto hodnoty v době běhu.  
   
- Typ nastavení můžete změnit pomocí **oboru** vlastnost.  
+  Typ nastavení můžete změnit pomocí **oboru** vlastnost.  
   
- Systém projektu ukládá nastavení aplikace ve dvou souborech XML: app.config soubor, který je vytvořen v době návrhu, když vytvoříte první nastavení aplikace; a user.config soubor, který je vytvořen v době běhu, když uživatel, který spouští aplikaci změní hodnotu nastavení některého uživatele. Všimněte si, že změny v nastavení uživatele nejsou zapsány na disk, pokud aplikace konkrétně nevolá metodu, chcete-li to provést.  
+  Systém projektu ukládá nastavení aplikace ve dvou souborech XML: app.config soubor, který je vytvořen v době návrhu, když vytvoříte první nastavení aplikace; a user.config soubor, který je vytvořen v době běhu, když uživatel, který spouští aplikaci změní hodnotu nastavení některého uživatele. Všimněte si, že změny v nastavení uživatele nejsou zapsány na disk, pokud aplikace konkrétně nevolá metodu, chcete-li to provést.  
   
 ## <a name="creating-application-settings-at-design-time"></a>Vytvoření nastavení aplikace v době návrhu  
  V době návrhu, můžete vytvořit nastavení aplikace dvěma způsoby: pomocí **nastavení** stránku **Návrháře projektu**, nebo pomocí **vlastnosti** okna pro formulář nebo ovládací prvek, který umožňuje svázat nastavení vlastnosti.  

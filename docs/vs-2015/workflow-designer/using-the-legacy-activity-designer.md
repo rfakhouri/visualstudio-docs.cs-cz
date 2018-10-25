@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4c71fa8d901653babd8c3558da7eff8ff16058c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6c8aafe9eac26080bfbf57d06c7d512d1e1e62d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296826"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843428"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Používání starší verze návrháře aktivit
 Toto téma popisuje způsob použití návrháře aktivit v starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použít starší verzi návrháře při cílení [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -34,17 +34,17 @@ Toto téma popisuje způsob použití návrháře aktivit v starší [!INCLUDE[w
 ## <a name="creating-a-custom-activity"></a>Vytvoření vlastní aktivity  
  Postupujte podle těchto kroků můžete vytvořit vlastní aktivitu pomocí návrháře aktivit:  
   
-1.  Na **projektu** nabídky, klikněte na tlačítko **přidat aktivitu**.  
+1. Na **projektu** nabídky, klikněte na tlačítko **přidat aktivitu**.  
   
-2.  Vyberte **aktivity** nebo **aktivita (s rozdělením kódu)** šablony.  
+2. Vyberte **aktivity** nebo **aktivita (s rozdělením kódu)** šablony.  
   
-    1.  Použití **aktivity** šablony k vytvoření aktivity se definici aktivity a kódem uživatele ve stejném souboru kódu.  
+   1.  Použití **aktivity** šablony k vytvoření aktivity se definici aktivity a kódem uživatele ve stejném souboru kódu.  
   
-    2.  Použití **aktivita (s rozdělením kódu)** šablony k vytvoření aktivity s aktivity definicí vyjádřenou jako značka pracovního postupu a kód uživatele v samostatném souboru kódu.  
+   2.  Použití **aktivita (s rozdělením kódu)** šablony k vytvoření aktivity s aktivity definicí vyjádřenou jako značka pracovního postupu a kód uživatele v samostatném souboru kódu.  
   
-3.  Zadejte název aktivity nebo Ponecháme výchozí název a potom klikněte na tlačítko **přidat**.  
+3. Zadejte název aktivity nebo Ponecháme výchozí název a potom klikněte na tlačítko **přidat**.  
   
- Sadu vlastních aktivit můžete vytvořit také tak, že vytvoříte nový projekt typu **knihovny aktivit pracovních postupů**. Další informace o tomto typu projektu naleznete v tématu [postupy: vytvoření knihovny aktivit pracovních postupů (starší verze)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
+   Sadu vlastních aktivit můžete vytvořit také tak, že vytvoříte nový projekt typu **knihovny aktivit pracovních postupů**. Další informace o tomto typu projektu naleznete v tématu [postupy: vytvoření knihovny aktivit pracovních postupů (starší verze)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
   
 ## <a name="configuring-an-activity"></a>Konfigurace aktivity  
  Návrhář aktivity je aktivní, můžete použít prohlížeč vlastností ke konfiguraci vlastností uvedených v následující tabulce.  

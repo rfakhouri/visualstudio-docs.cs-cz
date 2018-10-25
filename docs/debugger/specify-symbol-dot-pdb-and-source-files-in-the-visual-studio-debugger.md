@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f7710a84b05743c738bd694be0e5bcc117ab19
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 23286c6b042b7064c5ebfdf758a6b82e1b97f961
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850233"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Zadání symbolu (.pdb) a zdrojových souborů v ladicím programu sady Visual Studio
 
@@ -67,24 +67,24 @@ Ladicí program vyhledává také soubory se symboly v následujících umístě
    
    Ve výchozím nastavení Pokud máte vytvořenou knihovnu DLL nebo s *.exe* souboru na počítači, linker umístí úplnou cestu a název souboru přidruženého *PDB* soubor v knihovně DLL nebo *.exe* souboru. Ladicí program zjistí, pokud existuje soubor se symboly v dané oblasti.  
    
-1. Stejné složce jako knihovna DLL nebo *.exe* souboru.
+2. Stejné složce jako knihovna DLL nebo *.exe* souboru.
    
-1. Žádná umístění zadaná v možnostech ladicího programu pro soubory symbolů. Přidat a povolit umístění symbolů, přečtěte si téma [konfigurovat umístění symbolu a načítání](#BKMK_Specify_symbol_locations_and_loading_behavior). 
+3. Žádná umístění zadaná v možnostech ladicího programu pro soubory symbolů. Přidat a povolit umístění symbolů, přečtěte si téma [konfigurovat umístění symbolu a načítání](#BKMK_Specify_symbol_locations_and_loading_behavior). 
    
-    - Všechny složky mezipaměti místního symbolu.  
+   - Všechny složky mezipaměti místního symbolu.  
   
-    - Zadaný síťový, internet, nebo místní symbolové servery a umístění, jako je například Microsoft Symbol Servers vybrali. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] může stáhnout soubory symbolu ladění ze serverů symbolů, které implementují `symsrv` protokolu. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) a [ladění nástroje pro Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) jsou dva nástroje, které můžete použít servery symbolů. 
+   - Zadaný síťový, internet, nebo místní symbolové servery a umístění, jako je například Microsoft Symbol Servers vybrali. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] může stáhnout soubory symbolu ladění ze serverů symbolů, které implementují `symsrv` protokolu. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) a [ladění nástroje pro Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) jsou dva nástroje, které můžete použít servery symbolů. 
       
-      Servery symbolů, které můžete použít, patří:  
+     Servery symbolů, které můžete použít, patří:  
       
-      **Veřejné servery symbolů společnosti Microsoft**: K ladění selhání, ke kterému dojde během volání systémové knihovny DLL nebo knihovny třetí strany, budete často potřebovat systémové *PDB* soubory. Systém *PDB* soubory obsahují symboly pro knihovny DLL pro Windows, *.exe* soubory a ovladače zařízení. Můžete získat symboly pro operační systémy Windows, MDAC, IIS, ISA a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] z veřejné symbolové servery společnosti Microsoft. 
+     **Veřejné servery symbolů společnosti Microsoft**: K ladění selhání, ke kterému dojde během volání systémové knihovny DLL nebo knihovny třetí strany, budete často potřebovat systémové *PDB* soubory. Systém *PDB* soubory obsahují symboly pro knihovny DLL pro Windows, *.exe* soubory a ovladače zařízení. Můžete získat symboly pro operační systémy Windows, MDAC, IIS, ISA a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] z veřejné symbolové servery společnosti Microsoft. 
       
-      **Servery v interní síti nebo na místním počítači symbolů**: váš tým nebo společnost může vytvořit servery symbolů pro vaše vlastní produkty a jako mezipaměť pro symboly z externích zdrojů. Symbolový server můžete mít na vlastním počítači. 
+     **Servery v interní síti nebo na místním počítači symbolů**: váš tým nebo společnost může vytvořit servery symbolů pro vaše vlastní produkty a jako mezipaměť pro symboly z externích zdrojů. Symbolový server můžete mít na vlastním počítači. 
       
-      **Servery symbolů jiných výrobců**: externích poskytovatelů aplikací Windows a knihovny může poskytnout přístup k symbolovému serveru na Internetu. 
+     **Servery symbolů jiných výrobců**: externích poskytovatelů aplikací Windows a knihovny může poskytnout přístup k symbolovému serveru na Internetu. 
     
-    > [!WARNING]
-    > Pokud používáte symbolový server jiný než veřejné symbolové servery společnosti Microsoft, ujistěte se, že symbol server a jeho cesty jsou důvěryhodné. Protože soubory symbolů může obsahovat libovolný spustitelný kód, můžete zveřejnit na ohrožení zabezpečení.  
+     > [!WARNING]
+     > Pokud používáte symbolový server jiný než veřejné symbolové servery společnosti Microsoft, ujistěte se, že symbol server a jeho cesty jsou důvěryhodné. Protože soubory symbolů může obsahovat libovolný spustitelný kód, můžete zveřejnit na ohrožení zabezpečení.  
 
 <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>
 ### <a name="configure-symbol-locations-and-loading-options"></a>Nakonfigurujte umístění symbolu a možnosti načítání
@@ -101,7 +101,7 @@ Na **nástroje** > **možnosti** > **ladění** > **symboly** stránky, můžete
    
    ![Nástroje &#45; možnosti &#45; ladění &#45; symboly stránky](media/dbg-options-symbols.png "nástroje &#45; možnosti &#45; ladění &#45; symboly stránky")  
    
-1. V části **Symbol umístění souborů (.pdb)**,
+2. V části **Symbol umístění souborů (.pdb)**,
    - Použít **Microsoft Symbol Servers**, zaškrtněte políčko.  
    
    - Chcete-li přidat nové umístění serveru symbolů
@@ -119,21 +119,21 @@ Na **nástroje** > **možnosti** > **ladění** > **symboly** stránky, můžete
    - Upravit adresu URL nebo cestu, poklepejte na položku, nebo ho vyberte a stiskněte klávesu **F2**.  
    - Odebrat položku, vyberte ho a pak vyberte **-** ikonu.
   
-1.  (Volitelné) Kvůli zvýšení výkonu načítání symbolů, v části **mezipaměti symbolů v tomto adresáři**, zadejte cestu k místní složce, která může kopírovat symbolové servery symbolů k.  
+3. (Volitelné) Kvůli zvýšení výkonu načítání symbolů, v části **mezipaměti symbolů v tomto adresáři**, zadejte cestu k místní složce, která může kopírovat symbolové servery symbolů k.  
   
-    > [!NOTE]
-    > Neumísťujte mezipaměti místního symbolu do chráněné složky, například C:\Windows nebo na podsložku. Místo toho použijte složku pro čtení i zápis.  
+   > [!NOTE]
+   > Neumísťujte mezipaměti místního symbolu do chráněné složky, například C:\Windows nebo na podsložku. Místo toho použijte složku pro čtení i zápis.  
   
-    > [!NOTE]
-    > Pro projekty C++, pokud máte `_NT_SYMBOL_PATH` nastavení proměnné prostředí, přepíše hodnoty nastavené v rámci **mezipaměti symbolů v tomto adresáři**.
+   > [!NOTE]
+   > Pro projekty C++, pokud máte `_NT_SYMBOL_PATH` nastavení proměnné prostředí, přepíše hodnoty nastavené v rámci **mezipaměti symbolů v tomto adresáři**.
   
-1. Zadejte moduly, které má ladicí program k načtení z **Symbol umístění souborů (.pdb)** při spuštění.  
+4. Zadejte moduly, které má ladicí program k načtení z **Symbol umístění souborů (.pdb)** při spuštění.  
   
-  -  Vyberte **načíst všechny moduly, kromě vyloučených** (výchozí) pro načtení všech symbolů pro všechny moduly v umístění souboru se symboly, s výjimkou výslovně vyloučit moduly. Chcete-li vyloučit některé moduly, vyberte **zadat vyloučené moduly**, vyberte **+** ikonu, zadejte názvy modulů, které chcete vyloučit a vyberte **OK**.  
+   -  Vyberte **načíst všechny moduly, kromě vyloučených** (výchozí) pro načtení všech symbolů pro všechny moduly v umístění souboru se symboly, s výjimkou výslovně vyloučit moduly. Chcete-li vyloučit některé moduly, vyberte **zadat vyloučené moduly**, vyberte **+** ikonu, zadejte názvy modulů, které chcete vyloučit a vyberte **OK**.  
   
-  -  Chcete-li načíst pouze moduly, které zadáte z umístění souborů se symboly, vyberte **zatížení pouze určité moduly**. Vyberte **zadat zahrnuté moduly**, vyberte **+** ikonu, zadejte názvy modulů, které chcete zahrnout a pak vyberte **OK**. Soubory symbolů pro ostatní moduly nejsou načtené.  
+   -  Chcete-li načíst pouze moduly, které zadáte z umístění souborů se symboly, vyberte **zatížení pouze určité moduly**. Vyberte **zadat zahrnuté moduly**, vyberte **+** ikonu, zadejte názvy modulů, které chcete zahrnout a pak vyberte **OK**. Soubory symbolů pro ostatní moduly nejsou načtené.  
   
-1.  Vyberte **OK**.
+5. Vyberte **OK**.
 
 ## <a name="other-symbol-options-for-debugging"></a>Další možnosti symbolů pro ladění
   

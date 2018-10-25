@@ -14,43 +14,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c56fd1c82c02428f9f6b67c1d715f1c61588858
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 4ab4432eed95fd042bd35d34b6a42d3cd036fcf2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858365"
 ---
 # <a name="launch-a-program"></a>Spuštění programu
 Uživatelé, kteří chtějí ladění programu, můžete stisknout **F5** spustit ladicí program v prostředí IDE. Tím se zahájí řadu událostí, takže v konečném důsledku vzniklé v rozhraní IDE propojíte ladicího stroje (DE), který je zase připojení nebo připojení k programu následujícím způsobem:  
   
-1.  Rozhraní IDE nejprve volá balíček projektu zobrazíte nastavení pro ladění aktivní projekt řešení. Nastavení zahrnují spouštěcí adresář, proměnné prostředí, port, ve kterém se spustí program a DE použít k vytvoření programu, pokud zadaný. Tato nastavení jsou předány do balíčku pro ladění.  
+1. Rozhraní IDE nejprve volá balíček projektu zobrazíte nastavení pro ladění aktivní projekt řešení. Nastavení zahrnují spouštěcí adresář, proměnné prostředí, port, ve kterém se spustí program a DE použít k vytvoření programu, pokud zadaný. Tato nastavení jsou předány do balíčku pro ladění.  
   
-2.  Pokud není zadána Německo, DE volá operačního systému spustit program. V důsledku spuštění programu, načte prostředí za běhu programu. Například pokud je program napsán v jazyce MSIL, modul common language runtime bude vyvoláno pro spuštění programu.  
+2. Pokud není zadána Německo, DE volá operačního systému spustit program. V důsledku spuštění programu, načte prostředí za běhu programu. Například pokud je program napsán v jazyce MSIL, modul common language runtime bude vyvoláno pro spuštění programu.  
   
-     -nebo-  
+    -nebo-  
   
-     Pokud není zadán Zavedenými, port, který volá operačního systému spustit program, což způsobí, že prostředí za běhu programu pro načtení.  
+    Pokud není zadán Zavedenými, port, který volá operačního systému spustit program, což způsobí, že prostředí za běhu programu pro načtení.  
   
-    > [!NOTE]
-    >  Pokud se Zavedenými používá ke spuštění programu, je pravděpodobné, že stejné DE bude připojen k programu.  
+   > [!NOTE]
+   >  Pokud se Zavedenými používá ke spuštění programu, je pravděpodobné, že stejné DE bude připojen k programu.  
   
-3.  V závislosti na tom, zda je DE nebo port, který spustil program DE nebo běhové prostředí potom vytvoří popis programu, nebo uzel a upozorní port, který je spuštěn program.  
+3. V závislosti na tom, zda je DE nebo port, který spustil program DE nebo běhové prostředí potom vytvoří popis programu, nebo uzel a upozorní port, který je spuštěn program.  
   
-    > [!NOTE]
-    >  Doporučuje, běhové prostředí vytvořit uzel program, protože uzel programu je zjednodušené reprezentace program, který lze ladit. Není nutné načíst si celé DE jenom k vytvoření a registrace uzlu programu. Pokud je DE je navržená ke spuštění procesu prostředí IDE, ale bez integrovaného vývojového prostředí je ve skutečnosti spuštěn, musí být součást, která můžete přidat uzel, program na port.  
+   > [!NOTE]
+   >  Doporučuje, běhové prostředí vytvořit uzel program, protože uzel programu je zjednodušené reprezentace program, který lze ladit. Není nutné načíst si celé DE jenom k vytvoření a registrace uzlu programu. Pokud je DE je navržená ke spuštění procesu prostředí IDE, ale bez integrovaného vývojového prostředí je ve skutečnosti spuštěn, musí být součást, která můžete přidat uzel, program na port.  
   
- Nově vytvořený program, společně s další programy, související nebo nesouvisející, spuštění nebo připojené k ze stejného prostředí IDE, vytvořte relaci ladění.  
+   Nově vytvořený program, společně s další programy, související nebo nesouvisející, spuštění nebo připojené k ze stejného prostředí IDE, vytvořte relaci ladění.  
   
- Prostřednictvím kódu programu, když uživatel nejprve stiskne **F5**, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]společnosti ladit balíček volá balíček projektu (které je spojeno s typem spuštění programu) prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metodu, která zase vyplní <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> strukturu pomocí nastavení pro ladění aktivní projekt řešení. Tato struktura je předán zpět do balíčku pro ladění přímo pomocí volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> metody. Ladění balíčku poté vytvoří instanci správce ladění relace (SDM), který spouští program právě laděny a všechny přidružené ladicí stroj.  
+   Prostřednictvím kódu programu, když uživatel nejprve stiskne **F5**, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]společnosti ladit balíček volá balíček projektu (které je spojeno s typem spuštění programu) prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metodu, která zase vyplní <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> strukturu pomocí nastavení pro ladění aktivní projekt řešení. Tato struktura je předán zpět do balíčku pro ladění přímo pomocí volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> metody. Ladění balíčku poté vytvoří instanci správce ladění relace (SDM), který spouští program právě laděny a všechny přidružené ladicí stroj.  
   
- Jeden z argumentů předaných SDM je identifikátor GUID DE, který se má použít ke spuštění programu.  
+   Jeden z argumentů předaných SDM je identifikátor GUID DE, který se má použít ke spuštění programu.  
   
- Pokud je identifikátor GUID DE `GUID_NULL`, SDM společně vytvoří DE a pak zavolá jeho [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metodu spustit program. Pokud je program napsán v nativním kódu, například `IDebugEngineLaunch2::LaunchSuspended` pravděpodobně zavolá `CreateProcess` a `ResumeThread` (funkce Win32) ke spuštění programu.  
+   Pokud je identifikátor GUID DE `GUID_NULL`, SDM společně vytvoří DE a pak zavolá jeho [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metodu spustit program. Pokud je program napsán v nativním kódu, například `IDebugEngineLaunch2::LaunchSuspended` pravděpodobně zavolá `CreateProcess` a `ResumeThread` (funkce Win32) ke spuštění programu.  
   
- V důsledku spuštění programu, je načtení prostředí za běhu programu. DE nebo běhové prostředí vytvoří [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) rozhraní pro popis programu a předává tohoto rozhraní [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) sdělit port, který je program spuštění.  
+   V důsledku spuštění programu, je načtení prostředí za běhu programu. DE nebo běhové prostředí vytvoří [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) rozhraní pro popis programu a předává tohoto rozhraní [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) sdělit port, který je program spuštění.  
   
- Pokud `GUID_NULL` je předán, a port, který spouští program. Po spuštění programu vytvoří prostředí za běhu `IDebugProgramNode2` rozhraní pro popis programu a předává jej do `IDebugPortNotify2::AddProgramNode`. To upozorní port, který program je spuštěn. Potom SDM připojí ke spuštěnému programu ladicí stroj.  
+   Pokud `GUID_NULL` je předán, a port, který spouští program. Po spuštění programu vytvoří prostředí za běhu `IDebugProgramNode2` rozhraní pro popis programu a předává jej do `IDebugPortNotify2::AddProgramNode`. To upozorní port, který program je spuštěn. Potom SDM připojí ke spuštěnému programu ladicí stroj.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Upozornění portu](../../extensibility/debugger/notifying-the-port.md)  

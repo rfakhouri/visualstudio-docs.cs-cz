@@ -16,12 +16,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e1956130203498d32d1ee39d67121f7797dd41fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d92d895b0986a8a6df888d4bea258f9dab067e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187470"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880556"
 ---
 # <a name="detecting-system-requirements"></a>Zjištění požadavků na systém
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ VSPackage nemůže fungovat, pokud je nainstalována aplikace Visual Studio. Kdy
 ## <a name="detecting-visual-studio-editions"></a>Zjišťování edice sady Visual Studio  
  Pokud chcete zjistit, jestli je nainstalovaná edice sady Visual Studio, ověřte, že jako hodnotu klíče registru instalace (REG_DWORD) 1 v příslušné složce, jak je uvedeno v následující tabulce. Všimněte si, že hierarchii edice sady Visual Studio:  
   
-1.  Enterprise  
+1. Enterprise  
   
-2.  Professional  
+2. Professional  
   
-3.  Komunita  
+3. Komunita  
   
- Pokud je nainstalovaná "vyšší" edici, se přidají klíče registru pro tuto verzi stejně jako u "nižší" edice. To znamená pokud je nainstalovaná edice Enterprise, nainstalujte klíč je nastavená na 1 pro organizace, a také pro edice Professional a Community. Proto je potřeba zkontrolovat jenom pro edici "nejvyšší", které potřebujete.  
+   Pokud je nainstalovaná "vyšší" edici, se přidají klíče registru pro tuto verzi stejně jako u "nižší" edice. To znamená pokud je nainstalovaná edice Enterprise, nainstalujte klíč je nastavená na 1 pro organizace, a také pro edice Professional a Community. Proto je potřeba zkontrolovat jenom pro edici "nejvyšší", které potřebujete.  
   
 > [!NOTE]
 >  V 64bitové verzi systému editor registru, 32bitová verze klíče se zobrazí v části HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\. Klíče aplikace Visual Studio jsou v rámci HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\.  

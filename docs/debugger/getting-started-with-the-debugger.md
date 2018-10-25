@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: d9cb4e6b69f88f0c3e61d17211ffe5ff464f1b17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101040"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827555"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Kurz: Zjistěte, jak ladit pomocí sady Visual Studio
 
 Tento článek obsahuje představení funkcí v ladicím programu sady Visual Studio podrobného návodu. Pokud potřebujete vyšší úroveň zobrazení funkcí ladicího programu, [prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md). Pokud jste *ladění aplikace*, obvykle to znamená, že spustíte aplikaci s připojeným ladícím nástrojem. Když toto provedete, ladicí program poskytuje mnoho způsobů, jak zjistit, co kód dělá, při spuštění. Můžete procházet kódem a podívejte se na hodnoty uložené v proměnné, můžete nastavit hodinky na proměnné zobrazíte, když se změní hodnoty, můžete prozkoumat cesta provedení kódu naleznete v tématu, jestli větev kódu je spuštěná, a tak dále. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video")  |    [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) ladění, která zobrazuje podobný postup. |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) ladění, která zobrazuje podobný postup. |
 
 Přestože je ukázkovou aplikaci C# a C++, funkce platí pro Visual Basic, JavaScript a jinými jazyky podporovanými sady Visual Studio (Pokud není uvedeno jinak). Snímky obrazovky jsou v jazyce C#.
 
@@ -329,8 +329,8 @@ Většinou, klávesové zkratky tady používáme, protože je dobrým způsobem
 
      ![Použít Run to Click funkce](../debugger/media/get-started-run-to-click.png "běžet do kliknutí")
 
-    >  [!NOTE]
-    > **Běžet do kliknutí** je novinkou systémů tlačítko [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Pokud nevidíte tlačítko zelenou šipku, použijte **F11** v tomto příkladu místo toho k přechodu na správném místě ladicí program.
+   > [!NOTE]
+   > **Běžet do kliknutí** je novinkou systémů tlačítko [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Pokud nevidíte tlačítko zelenou šipku, použijte **F11** v tomto příkladu místo toho k přechodu na správném místě ladicí program.
 
 6. Klikněte na tlačítko **běžet do kliknutí** tlačítko ![běžet do kliknutí](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
@@ -408,14 +408,14 @@ Funkce, které umožňují kontrolovat proměnné jsou jedním z nejužitečněj
 
 1. Během pozastavení v `foreach` smyčky (`for` smyčky v jazyce C++), klikněte na tlačítko **zásobník volání** okna, která je ve výchozím nastavení, otevřete v pravém dolním podokně.
 
-1. Klikněte na tlačítko **F11** několikrát, dokud se nezobrazí pozastavení v ladicím programu `Circle.Draw` metody v editoru kódu. Podívejte se na **zásobník volání** okna.
+2. Klikněte na tlačítko **F11** několikrát, dokud se nezobrazí pozastavení v ladicím programu `Circle.Draw` metody v editoru kódu. Podívejte se na **zásobník volání** okna.
 
     ![Prozkoumat zásobník volání](../debugger/media/get-started-call-stack.png "ExamineCallStack")
 
     **Zásobník volání** okno zobrazuje pořadí, ve kterém jsou získávání volány metody a funkce. Na horní zobrazený řádek zobrazuje aktuální funkci ( `Circle.Draw` nebo `Circle::Draw` metody v této aplikaci). Druhý řádek ukazuje, že `Circle.Draw` byla volána `Main` – metoda (`main` v jazyce C++), a tak dále.
 
-    >  [!NOTE]
-    > **Zásobník volání** okno je podobné ladění perspektivy v některých prostředí IDE, jako je Eclipse.
+   > [!NOTE]
+   > **Zásobník volání** okno je podobné ladění perspektivy v některých prostředí IDE, jako je Eclipse.
 
     Zásobník volání je dobrým způsobem, jak zkoumat a pochopit provádění toku aplikace.
 

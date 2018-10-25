@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27cec31b775ba5f8d201c81cbd65f5b161353986
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: be9081bc2b6778d2f115ebe61078956aeace85e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252294"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842791"
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Odeslat diagnostické zprávy v okně výstupu
 Můžete napsat zpráv za běhu **výstup** pomocí okna <xref:System.Diagnostics.Debug> třídy nebo <xref:System.Diagnostics.Trace> třídy, které jsou součástí z <xref:System.Diagnostics> knihovny tříd. Použití <xref:System.Diagnostics.Debug> třídy Pokud pouze výstup v *ladění* verzi aplikace. Použití <xref:System.Diagnostics.Trace> třídy, pokud chcete výstup v obou *ladění* a *vydání* verze.  
@@ -41,21 +41,21 @@ Můžete napsat zpráv za běhu **výstup** pomocí okna <xref:System.Diagnostic
 ## <a name="output-methods"></a>Výstup metody  
  <xref:System.Diagnostics.Trace> a <xref:System.Diagnostics.Debug> třídy poskytují metody pro následující výstup:  
   
--   Různé `Write` metody, které výstup s informacemi bez narušení provádění. Nahraďte tyto metody `Debug.Print` metodu použitou v předchozích verzích jazyka Visual Basic.  
+- Různé `Write` metody, které výstup s informacemi bez narušení provádění. Nahraďte tyto metody `Debug.Print` metodu použitou v předchozích verzích jazyka Visual Basic.  
   
--   <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> a <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> metody, které přeruší informace o provádění a výstupy, pokud je zadaná podmínka se nezdaří. Ve výchozím nastavení `Assert` metoda zobrazí informace v dialogovém okně. Další informace najdete v tématu [kontrolní výrazy ve spravovaného kódu](../debugger/assertions-in-managed-code.md).  
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> a <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> metody, které přeruší informace o provádění a výstupy, pokud je zadaná podmínka se nezdaří. Ve výchozím nastavení `Assert` metoda zobrazí informace v dialogovém okně. Další informace najdete v tématu [kontrolní výrazy ve spravovaného kódu](../debugger/assertions-in-managed-code.md).  
   
--   <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> a <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> metody, které vždy přeruší a vypíše informace. Ve výchozím nastavení `Fail` metody zobrazení informací v dialogovém okně.  
+- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> a <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> metody, které vždy přeruší a vypíše informace. Ve výchozím nastavení `Fail` metody zobrazení informací v dialogovém okně.  
   
- Kromě programu si z vaší aplikace **výstup** okna můžete zobrazit informace o:  
+  Kromě programu si z vaší aplikace **výstup** okna můžete zobrazit informace o:  
   
--   Moduly ladicí program má načten nebo byla uvolněna.  
+- Moduly ladicí program má načten nebo byla uvolněna.  
   
--   Výjimky, které jsou vyvolány.  
+- Výjimky, které jsou vyvolány.  
   
--   Procesy, které ukončíte.  
+- Procesy, které ukončíte.  
   
--   Vlákna, která ukončíte.  
+- Vlákna, která ukončíte.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   

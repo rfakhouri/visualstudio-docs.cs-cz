@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fa0e7899e2f6e52536e2296519a1697e27a3643
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855986"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem – element (šablony sady Visual Studio položky)
 Určuje soubor, který je součástí šablony položky.  
@@ -51,13 +51,13 @@ Určuje soubor, který je součástí šablony položky.
   
 ### <a name="attributes"></a>Atributy  
   
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`SubType`|Nepovinný atribut.<br /><br /> Určuje podtyp položky v šabloně položek s více soubory. Tato hodnota se používá k určení editoru, který [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] použije k otevření položky.|  
-|`CustomTool`|Nepovinný atribut.<br /><br /> Nastaví CustomTool pro položku v souboru projektu.|  
-|`ItemType`|Nepovinný atribut.<br /><br /> Nastaví typ položky pro položky v souboru projektu.|  
-|`ReplaceParameters`|Nepovinný atribut.<br /><br /> Logická hodnota určující, zda položka má hodnoty parametrů, které musí být nahrazen, když je projekt vytvořen z šablony. Výchozí hodnota je `false`.|  
-|`TargetFileName`|Nepovinný atribut.<br /><br /> Určuje název položky, který je vytvořen z šablony. Tento atribut je užitečné pro vytváření název položky pomocí nahrazení parametru.|  
+| Atribut | Popis |
+|---------------------| - |
+| `SubType` | Nepovinný atribut.<br /><br /> Určuje podtyp položky v šabloně položek s více soubory. Tato hodnota se používá k určení editoru, který [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] použije k otevření položky. |
+| `CustomTool` | Nepovinný atribut.<br /><br /> Nastaví CustomTool pro položku v souboru projektu. |
+| `ItemType` | Nepovinný atribut.<br /><br /> Nastaví typ položky pro položky v souboru projektu. |
+| `ReplaceParameters` | Nepovinný atribut.<br /><br /> Logická hodnota určující, zda položka má hodnoty parametrů, které musí být nahrazen, když je projekt vytvořen z šablony. Výchozí hodnota je `false`. |
+| `TargetFileName` | Nepovinný atribut.<br /><br /> Určuje název položky, který je vytvořen z šablony. Tento atribut je užitečné pro vytváření název položky pomocí nahrazení parametru. |
   
 ### <a name="child-elements"></a>Podřízené prvky  
  Žádné  

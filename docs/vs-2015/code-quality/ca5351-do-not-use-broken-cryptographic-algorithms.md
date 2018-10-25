@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ba7e632d4d91eeaaba886f7a438414c7e428746e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889812"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: Nepoužívejte poškozené kryptografické algoritmy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "49233737"
   
  Pro šifrovací algoritmy:  
   
--   <xref:System.Security.Cryptography.DES> šifrování obsahuje malá velikost klíče, které by mohly být útokem hrubou silou za kratší dobu než den.  
+- <xref:System.Security.Cryptography.DES> šifrování obsahuje malá velikost klíče, které by mohly být útokem hrubou silou za kratší dobu než den.  
   
--   <xref:System.Security.Cryptography.RC2> šifrování je náchylný k útok související s klíčem, pokud útočník zjistí matematické vztahy mezi všechny klíčové hodnoty.  
+- <xref:System.Security.Cryptography.RC2> šifrování je náchylný k útok související s klíčem, pokud útočník zjistí matematické vztahy mezi všechny klíčové hodnoty.  
   
- Toto pravidlo aktivuje, když najde některý z výše uvedených kryptografické funkce ve zdrojovém kódu a vyvolá upozornění pro uživatele.  
+  Toto pravidlo aktivuje, když najde některý z výše uvedených kryptografické funkce ve zdrojovém kódu a vyvolá upozornění pro uživatele.  
   
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
  Použijte kryptograficky silnější možnosti:  

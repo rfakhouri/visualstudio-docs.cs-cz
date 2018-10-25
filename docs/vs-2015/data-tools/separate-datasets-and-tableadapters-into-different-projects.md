@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cca40c194db476558ff14b5c92a6919c15d204a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e94c76254b14bdf82e4e7a219cbb0f35cb532f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824319"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Rozdělování datových sad a objektů TableAdapter do různých projektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,29 +42,29 @@ Vylepšili jsme typové datové sady, aby [objekty TableAdapter](http://msdn.mic
   
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>Chcete rozdělit datovou sadu do jiného projektu  
   
-1.  Otevřete řešení, které obsahuje sadu dat (soubor XSD).  
+1. Otevřete řešení, které obsahuje sadu dat (soubor XSD).  
   
-    > [!NOTE]
-    >  Pokud řešení obsahuje projekt, do kterého chcete rozdělení kódu datovou sadu, vytvořte projekt nebo přidat existující projekt do řešení.  
+   > [!NOTE]
+   >  Pokud řešení obsahuje projekt, do kterého chcete rozdělení kódu datovou sadu, vytvořte projekt nebo přidat existující projekt do řešení.  
   
-2.  Poklikejte na soubor (soubor XSD) typové datové sady v **Průzkumníka řešení** otevření datové sady v **Návrhář Dataset**.  
+2. Poklikejte na soubor (soubor XSD) typové datové sady v **Průzkumníka řešení** otevření datové sady v **Návrhář Dataset**.  
   
-3.  Vyberte prázdnou oblast **Návrhář Dataset**.  
+3. Vyberte prázdnou oblast **Návrhář Dataset**.  
   
-4.  V **vlastnosti** okna, vyhledejte **projektu DataSet** uzlu.  
+4. V **vlastnosti** okna, vyhledejte **projektu DataSet** uzlu.  
   
-5.  V **projektu DataSet** vyberte název projektu, do které chcete generovat kód datové sady.  
+5. V **projektu DataSet** vyberte název projektu, do které chcete generovat kód datové sady.  
   
-     Jakmile vyberete projekt, do které chcete generovat kód datovou sadu **soubor datové sady** vlastnost se vyplní výchozí název souboru. Tento název lze změnit v případě potřeby. Kromě toho pokud chcete generovat kód datovou sadu do konkrétního adresáře, můžete nastavit **složky projektu** nastavte na název složky.  
+    Jakmile vyberete projekt, do které chcete generovat kód datovou sadu **soubor datové sady** vlastnost se vyplní výchozí název souboru. Tento název lze změnit v případě potřeby. Kromě toho pokud chcete generovat kód datovou sadu do konkrétního adresáře, můžete nastavit **složky projektu** nastavte na název složky.  
   
-    > [!NOTE]
-    >  Když oddělíte datové sady a objekty TableAdapter (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy datové sady je nutné ručně přesunout do projektu datové sady.  
+   > [!NOTE]
+   >  Když oddělíte datové sady a objekty TableAdapter (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy datové sady je nutné ručně přesunout do projektu datové sady.  
   
-6.  Uložte datovou sadu.  
+6. Uložte datovou sadu.  
   
-     Generování kódu datovou sadu do vybraného projektu v **projektu DataSet** vlastnost a **TableAdapter** do aktuálního projektu bude vygenerován kód.  
+    Generování kódu datovou sadu do vybraného projektu v **projektu DataSet** vlastnost a **TableAdapter** do aktuálního projektu bude vygenerován kód.  
   
- Ve výchozím nastavení po oddělíte datové sady a `TableAdapter` kód, výsledek je soubor samostatné třídy v každém projektu. Původní projekt obsahuje soubor s názvem DatasetName.Designer.vb (nebo DatasetName.Designer.cs), který obsahuje `TableAdapter` kódu. Projekt, který je zadaný ve **projektu Dataset** vlastnost obsahuje soubor s názvem DatasetName.DataSet.Designer.vb (nebo DatasetName.DataSet.Designer.cs), která obsahuje kód datové sady.  
+   Ve výchozím nastavení po oddělíte datové sady a `TableAdapter` kód, výsledek je soubor samostatné třídy v každém projektu. Původní projekt obsahuje soubor s názvem DatasetName.Designer.vb (nebo DatasetName.Designer.cs), který obsahuje `TableAdapter` kódu. Projekt, který je zadaný ve **projektu Dataset** vlastnost obsahuje soubor s názvem DatasetName.DataSet.Designer.vb (nebo DatasetName.DataSet.Designer.cs), která obsahuje kód datové sady.  
   
 > [!NOTE]
 >  Chcete-li zobrazit soubor generované třídy, vyberte datovou sadu nebo `TableAdapter` projektu. Potom v **Průzkumníka řešení**vyberte **zobrazit všechny soubory** .  

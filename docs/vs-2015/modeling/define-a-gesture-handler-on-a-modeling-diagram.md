@@ -15,12 +15,12 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26a60151d89ffaa89338601c4992f9c2f41b099a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248073"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812969"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definování obslužné rutiny gest v diagramu modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,167 +43,167 @@ V sadě Visual Studio můžete definovat příkazy, které jsou prováděny, kdy
   
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Chcete-li vytvořit obslužnou rutinu gesta ve vlastním souboru VSIX  
   
-1.  V **nový projekt** dialogovém okně **projekty modelování**vyberte **rozšíření gesta**.  
+1. V **nový projekt** dialogovém okně **projekty modelování**vyberte **rozšíření gesta**.  
   
-2.  Otevřít **.cs** souboru v novém projektu a upravit `GestureExtension` třídu pro implementaci obslužné rutiny gesta.  
+2. Otevřít **.cs** souboru v novém projektu a upravit `GestureExtension` třídu pro implementaci obslužné rutiny gesta.  
   
-     Další informace najdete v tématu [implementace obslužné rutiny gesta](#Implementing).  
+    Další informace najdete v tématu [implementace obslužné rutiny gesta](#Implementing).  
   
-3.  Otestujte obslužnou rutinu gesta stisknutím klávesy F5. Další informace najdete v tématu [provádění obslužné rutiny gest](#Executing).  
+3. Otestujte obslužnou rutinu gesta stisknutím klávesy F5. Další informace najdete v tématu [provádění obslužné rutiny gest](#Executing).  
   
-4.  Nainstalujte obslužnou rutinu gesta v jiném počítači zkopírováním souboru **bin\\\*\\\*VSIX** , který je sestaven projektem. Další informace najdete v tématu [instalace a odinstalace rozšíření](#Installing).  
+4. Nainstalujte obslužnou rutinu gesta v jiném počítači zkopírováním souboru **bin\\\*\\\*VSIX** , který je sestaven projektem. Další informace najdete v tématu [instalace a odinstalace rozšíření](#Installing).  
   
- Tady je alternativní postup:  
+   Tady je alternativní postup:  
   
 #### <a name="to-create-a-separate-class-library-dll-project-for-the-gesture-handler"></a>Chcete-li vytvořit projekt samostatné třídy knihovny (DLL) pro obslužnou rutinu gesta  
   
-1.  Vytvořte projekt knihovny tříd v novém [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, nebo v existujícím řešení.  
+1. Vytvořte projekt knihovny tříd v novém [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, nebo v existujícím řešení.  
   
-    1.  Na **souboru** nabídce zvolte **nový**, **projektu**.  
+   1.  Na **souboru** nabídce zvolte **nový**, **projektu**.  
   
-    2.  V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**, potom v prostředním sloupci zvolte možnost **knihovny tříd**.  
+   2.  V části **nainstalované šablony**, rozbalte **Visual C#** nebo **jazyka Visual Basic**, potom v prostředním sloupci zvolte možnost **knihovny tříd**.  
   
-2.  Přidejte následující odkazy do projektu.  
+2. Přidejte následující odkazy do projektu.  
   
-     `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
+    `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
-     `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]`  
+    `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility`  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility`  
   
-     `Microsoft.VisualStudio.Uml.Interfaces`  
+    `Microsoft.VisualStudio.Uml.Interfaces`  
   
-     `System.ComponentModel.Composition`  
+    `System.ComponentModel.Composition`  
   
-     `System.Windows.Forms`  
+    `System.Windows.Forms`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – Toto budete potřebovat pouze tehdy, pokud rozšiřujete diagramy vrstev. Další informace najdete v tématu [rozšíření diagramů vrstev](../modeling/extend-layer-diagrams.md).  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – Toto budete potřebovat pouze tehdy, pokud rozšiřujete diagramy vrstev. Další informace najdete v tématu [rozšíření diagramů vrstev](../modeling/extend-layer-diagrams.md).  
   
-3.  Přidejte soubor třídy do projektu a nastavte jeho obsah následujícím kódem.  
+3. Přidejte soubor třídy do projektu a nastavte jeho obsah následujícím kódem.  
   
-    > [!NOTE]
-    >  Změňte název oboru názvů a třídy podle vašich potřeb.  
+   > [!NOTE]
+   >  Změňte název oboru názvů a třídy podle vašich potřeb.  
   
-    ```  
-    using System.ComponentModel.Composition;  
-    using System.Linq;  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Modeling.Diagrams;  
-    using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;  
-    using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
-    using Microsoft.VisualStudio.Uml.AuxiliaryConstructs;  
-    using Microsoft.VisualStudio.Modeling;  
-    using Microsoft.VisualStudio.Uml.Classes;  
-    // ADD other UML namespaces if required  
+   ```  
+   using System.ComponentModel.Composition;  
+   using System.Linq;  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Modeling.Diagrams;  
+   using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;  
+   using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
+   using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
+   using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
+   using Microsoft.VisualStudio.Uml.AuxiliaryConstructs;  
+   using Microsoft.VisualStudio.Modeling;  
+   using Microsoft.VisualStudio.Uml.Classes;  
+   // ADD other UML namespaces if required  
   
-    namespace MyGestureHandler // CHANGE  
-    {  
-      // DELETE any of these attributes if the handler  
-      // should not work with some types of diagram.  
-      [ClassDesignerExtension]  
-      [ActivityDesignerExtension]  
-      [ComponentDesignerExtension]  
-      [SequenceDesignerExtension]  
-      [UseCaseDesignerExtension]  
-      // [LayerDesignerExtension]  
+   namespace MyGestureHandler // CHANGE  
+   {  
+     // DELETE any of these attributes if the handler  
+     // should not work with some types of diagram.  
+     [ClassDesignerExtension]  
+     [ActivityDesignerExtension]  
+     [ComponentDesignerExtension]  
+     [SequenceDesignerExtension]  
+     [UseCaseDesignerExtension]  
+     // [LayerDesignerExtension]  
   
-      // Gesture handlers must export IGestureExtension:  
-      [Export(typeof(IGestureExtension))]  
-      // CHANGE class name  
-      public class MyGesture1 : IGestureExtension  
-      {  
-        [Import]  
-        public IDiagramContext DiagramContext { get; set; }  
+     // Gesture handlers must export IGestureExtension:  
+     [Export(typeof(IGestureExtension))]  
+     // CHANGE class name  
+     public class MyGesture1 : IGestureExtension  
+     {  
+       [Import]  
+       public IDiagramContext DiagramContext { get; set; }  
   
-        /// <summary>  
-        /// Called when the user double-clicks on the diagram  
-        /// </summary>  
-        /// <param name="targetElement"></param>  
-        /// <param name="diagramPointEventArgs"></param>  
-        public void OnDoubleClick(ShapeElement targetElement, DiagramPointEventArgs diagramPointEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       /// <summary>  
+       /// Called when the user double-clicks on the diagram  
+       /// </summary>  
+       /// <param name="targetElement"></param>  
+       /// <param name="diagramPointEventArgs"></param>  
+       public void OnDoubleClick(ShapeElement targetElement, DiagramPointEventArgs diagramPointEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
   
-          // Get the target shape, if any. Null if the target is the diagram.  
-          IShape targetIShape = targetElement.CreateIShape();  
+         // Get the target shape, if any. Null if the target is the diagram.  
+         IShape targetIShape = targetElement.CreateIShape();  
   
-          // Do something...  
-        }  
+         // Do something...  
+       }  
   
-        /// <summary>  
-        /// Called repeatedly when the user drags from anywhere on the screen.  
-        /// Return value should indicate whether a drop here is allowed.  
-        /// </summary>  
-        /// <param name="targetMergeElement">References the element to be dropped on.</param>  
-        /// <param name="diagramDragEventArgs">References the element to be dropped.</param>  
-        /// <returns></returns>  
-        public bool CanDragDrop(ShapeElement targetMergeElement, DiagramDragEventArgs diagramDragEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       /// <summary>  
+       /// Called repeatedly when the user drags from anywhere on the screen.  
+       /// Return value should indicate whether a drop here is allowed.  
+       /// </summary>  
+       /// <param name="targetMergeElement">References the element to be dropped on.</param>  
+       /// <param name="diagramDragEventArgs">References the element to be dropped.</param>  
+       /// <returns></returns>  
+       public bool CanDragDrop(ShapeElement targetMergeElement, DiagramDragEventArgs diagramDragEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
   
-          // Get the target element, if any. Null if the target is the diagram.  
-          IShape targetIShape = targetMergeElement.CreateIShape();  
+         // Get the target element, if any. Null if the target is the diagram.  
+         IShape targetIShape = targetMergeElement.CreateIShape();  
   
-          // This example allows drag of any UML elements.  
-          return GetModelElementsFromDragEvent(diagramDragEventArgs).Count() > 0;  
-        }  
+         // This example allows drag of any UML elements.  
+         return GetModelElementsFromDragEvent(diagramDragEventArgs).Count() > 0;  
+       }  
   
-        /// <summary>  
-        /// Execute the action to be performed on the drop.  
-        /// </summary>  
-        /// <param name="targetDropElement"></param>  
-        /// <param name="diagramDragEventArgs"></param>  
-        public void OnDragDrop(ShapeElement targetDropElement, DiagramDragEventArgs diagramDragEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
-        }  
+       /// <summary>  
+       /// Execute the action to be performed on the drop.  
+       /// </summary>  
+       /// <param name="targetDropElement"></param>  
+       /// <param name="diagramDragEventArgs"></param>  
+       public void OnDragDrop(ShapeElement targetDropElement, DiagramDragEventArgs diagramDragEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       }  
   
-        /// <summary>  
-        /// Retrieves UML IElements from drag arguments.  
-        /// Works for drags from UML diagrams.  
-        /// </summary>  
-        private IEnumerable<IElement> GetModelElementsFromDragEvent  
-                (DiagramDragEventArgs dragEvent)  
-        {  
-          //ElementGroupPrototype is the container for  
-          //dragged and copied elements and toolbox items.  
-          ElementGroupPrototype prototype =  
-             dragEvent.Data.  
-             GetData(typeof(ElementGroupPrototype))  
-                  as ElementGroupPrototype;  
-          // Locate the originals in the implementation store.  
-          IElementDirectory implementationDirectory =  
-             dragEvent.DiagramClientView.Diagram.Store.ElementDirectory;  
+       /// <summary>  
+       /// Retrieves UML IElements from drag arguments.  
+       /// Works for drags from UML diagrams.  
+       /// </summary>  
+       private IEnumerable<IElement> GetModelElementsFromDragEvent  
+               (DiagramDragEventArgs dragEvent)  
+       {  
+         //ElementGroupPrototype is the container for  
+         //dragged and copied elements and toolbox items.  
+         ElementGroupPrototype prototype =  
+            dragEvent.Data.  
+            GetData(typeof(ElementGroupPrototype))  
+                 as ElementGroupPrototype;  
+         // Locate the originals in the implementation store.  
+         IElementDirectory implementationDirectory =  
+            dragEvent.DiagramClientView.Diagram.Store.ElementDirectory;  
   
-          return prototype.ProtoElements.Select(  
-            prototypeElement =>  
-            {  
-              ModelElement element = implementationDirectory  
-                .FindElement(prototypeElement.ElementId);  
-              ShapeElement shapeElement = element as ShapeElement;  
-              if (shapeElement != null)  
-              {  
-                // Dragged from a diagram.  
-                return shapeElement.ModelElement as IElement;  
-              }  
-              else  
-              {  
-                // Dragged from UML Model Explorer.  
-                return element as IElement;  
-              }  
-            });  
-        }  
+         return prototype.ProtoElements.Select(  
+           prototypeElement =>  
+           {  
+             ModelElement element = implementationDirectory  
+               .FindElement(prototypeElement.ElementId);  
+             ShapeElement shapeElement = element as ShapeElement;  
+             if (shapeElement != null)  
+             {  
+               // Dragged from a diagram.  
+               return shapeElement.ModelElement as IElement;  
+             }  
+             else  
+             {  
+               // Dragged from UML Model Explorer.  
+               return element as IElement;  
+             }  
+           });  
+       }  
   
-      }  
-    }  
+     }  
+   }  
   
-    ```  
+   ```  
   
-     Další informace o tom, co vložit do metod najdete v tématu [implementace obslužné rutiny gesta](#Implementing).  
+    Další informace o tom, co vložit do metod najdete v tématu [implementace obslužné rutiny gesta](#Implementing).  
   
- Příkaz nabídky je nutné přidat do projektu VSIX, který se chová jako kontejner pro instalaci příkazu. Pokud chcete, můžete zahrnout další součásti do stejného VSIX.  
+   Příkaz nabídky je nutné přidat do projektu VSIX, který se chová jako kontejner pro instalaci příkazu. Pokud chcete, můžete zahrnout další součásti do stejného VSIX.  
   
 #### <a name="to-add-a-separate-gesture-handler-to-a-vsix-project"></a>Přidání zvláštní obslužné rutiny gesta do projektu VSIX  
   
@@ -238,25 +238,25 @@ V sadě Visual Studio můžete definovat příkazy, které jsou prováděny, kdy
   
 #### <a name="to-test-the-gesture-handler"></a>Testování obslužné rutiny gesta  
   
-1.  Stisknutím klávesy **F5**, nebo **ladění** nabídky, klikněte na tlačítko **spustit ladění**.  
+1. Stisknutím klávesy **F5**, nebo **ladění** nabídky, klikněte na tlačítko **spustit ladění**.  
   
-     Experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spustí.  
+    Experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spustí.  
   
-     **Řešení potíží s**: Pokud se nová [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nespustí:  
+    **Řešení potíží s**: Pokud se nová [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nespustí:  
   
-    -   Pokud máte více než jeden projekt, ujistěte se, že projekt VSIX je nastaven jako projekt po spuštění řešení.  
+   -   Pokud máte více než jeden projekt, ujistěte se, že projekt VSIX je nastaven jako projekt po spuštění řešení.  
   
-    -   V Průzkumníku řešení v místní nabídce startupu nebo projektu, zvolte Vlastnosti. V editoru vlastností projektu, zvolte **ladění** kartu. Ujistěte se, že řetězec v **externí program Start** pole je úplný název cesty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], obvykle:  
+   -   V Průzkumníku řešení v místní nabídce startupu nebo projektu, zvolte Vlastnosti. V editoru vlastností projektu, zvolte **ladění** kartu. Ujistěte se, že řetězec v **externí program Start** pole je úplný název cesty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], obvykle:  
   
-         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
+        `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  V experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]otevřete nebo vytvořte projekt modelování a otevřete nebo vytvořte diagram modelování. Použijte diagram, který patří k jednomu z typů uvedených v atributech vaší třídy obslužné rutiny gesta.  
+2. V experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]otevřete nebo vytvořte projekt modelování a otevřete nebo vytvořte diagram modelování. Použijte diagram, který patří k jednomu z typů uvedených v atributech vaší třídy obslužné rutiny gesta.  
   
-3.  Poklepejte na libovolné místo v diagramu. Vaše obslužná rutina poklepání by měla být volána.  
+3. Poklepejte na libovolné místo v diagramu. Vaše obslužná rutina poklepání by měla být volána.  
   
-4.  Přetáhněte element z Průzkumníka UML do diagramu. Vaše obslužná rutina přetažení by měla být volána.  
+4. Přetáhněte element z Průzkumníka UML do diagramu. Vaše obslužná rutina přetažení by měla být volána.  
   
- **Řešení potíží s**: Pokud obslužná rutina gesta nefunguje, ujistěte se, že:  
+   **Řešení potíží s**: Pokud obslužná rutina gesta nefunguje, ujistěte se, že:  
   
 -   Projekt obslužné rutiny gest je uveden jako Komponenta MEF na **prostředky** kartu **source.extensions.manifest** v projektu VSIX.  
   
@@ -374,15 +374,15 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
 #### <a name="to-uninstall-an-extension"></a>Odinstalace rozšíření  
   
-1.  Na **nástroje** nabídce zvolte **rozšíření a aktualizace**.  
+1. Na **nástroje** nabídce zvolte **rozšíření a aktualizace**.  
   
-2.  Rozbalte **nainstalovaná rozšíření**.  
+2. Rozbalte **nainstalovaná rozšíření**.  
   
-3.  Vyberte požadované rozšíření a klikněte na tlačítko **odinstalovat**.  
+3. Vyberte požadované rozšíření a klikněte na tlačítko **odinstalovat**.  
   
- Jen zřídka se chybné rozšíření se nepodaří načíst a vytvoří sestavu v okně chyb, ale nezobrazí ve Správci rozšíření. V takovém případě můžete odebrat rozšíření odstraněním souboru z:  
+   Jen zřídka se chybné rozšíření se nepodaří načíst a vytvoří sestavu v okně chyb, ale nezobrazí ve Správci rozšíření. V takovém případě můžete odebrat rozšíření odstraněním souboru z:  
   
- *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [verze]**  
+   *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [verze]**  
   
 ##  <a name="DragExample"></a> Příklad  
  Následující příklad ukazuje, jak vytvořit životnosti v sekvenčním diagramu podle částí a portů komponentu přetažených z diagramu komponent.  

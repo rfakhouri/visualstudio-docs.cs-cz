@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7551b507a90ffb5bba6a969029e4c53092f3db1c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be3d54921f7bc3a74c858340f28b68b03497939a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874277"
 ---
 # <a name="understanding-sal"></a>Porozumění SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,11 +51,11 @@ void * memcpy(
   
  Dokumentace obsahuje několik bitů informace, které naznačují, že váš kód musí udržovat určité vlastnosti zajistit správnost programu:  
   
--   `memcpy` kopie `count` bajtů ze zdrojové vyrovnávací paměti pro cílové vyrovnávací paměti.  
+- `memcpy` kopie `count` bajtů ze zdrojové vyrovnávací paměti pro cílové vyrovnávací paměti.  
   
--   Cílová vyrovnávací paměť musí být přinejmenším stejně velká jako zdrojové vyrovnávací paměti.  
+- Cílová vyrovnávací paměť musí být přinejmenším stejně velká jako zdrojové vyrovnávací paměti.  
   
- Kompilátor nemůže však přečíst dokumentaci nebo neformální poznámky. Nebude vědět, že existuje vztah mezi dvěma vyrovnávací paměti a `count`, a to také nelze uhodnout efektivně o relaci. Poznámky SAL může přehlednějším týkající se vlastností a provádění funkce, jak je znázorněno zde:  
+  Kompilátor nemůže však přečíst dokumentaci nebo neformální poznámky. Nebude vědět, že existuje vztah mezi dvěma vyrovnávací paměti a `count`, a to také nelze uhodnout efektivně o relaci. Poznámky SAL může přehlednějším týkající se vlastností a provádění funkce, jak je znázorněno zde:  
   
 ```cpp  
   
@@ -117,16 +117,16 @@ wchar_t * wmemcpy(
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Použití nástrojů pro analýzu kódu sady Visual Studio a SAL  
   
-1.  V sadě Visual Studio otevřete projekt C++ obsahující poznámky SAL.  
+1. V sadě Visual Studio otevřete projekt C++ obsahující poznámky SAL.  
   
-2.  V panelu nabídky zvolte **sestavení**, **spustit analýzu kódu na řešení**.  
+2. V panelu nabídky zvolte **sestavení**, **spustit analýzu kódu na řešení**.  
   
-     Vezměte v úvahu _Ne\_ příklad v této části. Je-li spustit analýzu kódu na ni, toto upozornění se zobrazí:  
+    Vezměte v úvahu \_v\_ příklad v této části. Je-li spustit analýzu kódu na ni, toto upozornění se zobrazí:  
   
-    > **C6387 Neplatná hodnota parametru**   
-    > 'pinta' může být '0': to nedrží se specifikací pro funkci "InCallee".  
+   > **C6387 Neplatná hodnota parametru**   
+   > 'pinta' může být '0': to nedrží se specifikací pro funkci "InCallee".  
   
-### <a name="example-the-in-annotation"></a>Příklad: _Ne\_ poznámky  
+### <a name="example-the-in-annotation"></a>Příklad: \_v\_ poznámky  
  `_In_` Anotace označuje, že:  
   
 -   Parametr musí být platná a se nezmění.  
@@ -164,7 +164,7 @@ void BadInCaller()
   
  Pokud používáte analýzy kódu sady Visual Studio v tomto příkladu, ověří, že volající předat inicializované vyrovnávací paměti pro nenulový ukazatel `pInt`. V takovém případě `pInt` ukazatele nesmí mít hodnotu NULL.  
   
-### <a name="example-the-inopt-annotation"></a>Příklad: _In_opt\_ poznámky  
+### <a name="example-the-inopt-annotation"></a>Příklad: \_In_opt\_ poznámky  
  `_In_opt_` je stejný jako `_In_`, s tím rozdílem, že vstupní parametr může mít hodnotu NULL, a proto se funkce by měla vyhledávat to.  
   
 ```cpp  
@@ -192,7 +192,7 @@ void InOptCaller()
   
  Analýzy kódu sady Visual Studio ověří, že funkce zjišťuje NULL dříve, než přistupuje k vyrovnávací paměti.  
   
-### <a name="example-the-out-annotation"></a>Příklad: _více systémů\_ poznámky  
+### <a name="example-the-out-annotation"></a>Příklad: \_si\_ poznámky  
  `_Out_` podporuje běžný scénář, ve kterém je předáno NENULOVÝ ukazatel, který odkazuje na vyrovnávací paměť elementu a funkce inicializuje přidělenou elementu. Volající nemá inicializace vyrovnávací paměti před voláním; Volaná funkce, že inicializovat ji ještě před jeho vrácením.  
   
 ```cpp  
@@ -219,7 +219,7 @@ void OutCaller()
   
  Visual Studio nástroj pro analýzu kódu ověřuje, že volající předá NENULOVÝ ukazatel do vyrovnávací paměti pro `pInt` a že vyrovnávací paměť je inicializován pomocí funkce ještě před jeho vrácením.  
   
-### <a name="example-the-outopt-annotation"></a>Příklad: _Out_opt\_ poznámky  
+### <a name="example-the-outopt-annotation"></a>Příklad: \_Out_opt\_ poznámky  
  `_Out_opt_` je stejný jako `_Out_`, s tím rozdílem, že tento parametr může mít hodnotu NULL, a proto se funkce by měla vyhledávat to.  
   
 ```cpp  
@@ -247,7 +247,7 @@ void OutOptCaller()
   
  Analýzy kódu sady Visual Studio ověří, že tato funkce zkontroluje NULL před `pInt` se přistoupit přes ukazatel a pokud `pInt` nemá hodnotu NULL, že vyrovnávací paměť je inicializován pomocí funkce ještě před jeho vrácením.  
   
-### <a name="example-the-inout-annotation"></a>Příklad: _inout –\_ poznámky  
+### <a name="example-the-inout-annotation"></a>Příklad: \_vstup\_ poznámky  
  `_Inout_` je používaná k anotaci ukazatel parametrem, který může změnit funkci. Ukazatel musí odkazovat na platný inicializovaná data před voláním, a i v případě, že se změní, musí mít platnou hodnotu stále při návratu. Poznámka Určuje, že funkce mohou volně číst a zapisovat do vyrovnávací paměti na jeden element. Volající musí poskytnout vyrovnávací paměti a inicializujte ji.  
   
 > [!NOTE]
@@ -279,7 +279,7 @@ void BadInOutCaller()
   
  Analýzy kódu sady Visual Studio ověří, že volající předat inicializované vyrovnávací paměti pro NENULOVÝ ukazatel `pInt`a zda před vrácení, `pInt` stále nemá hodnotu NULL a vyrovnávací paměť je inicializován.  
   
-### <a name="example-the-inoutopt-annotation"></a>Příklad: _Inout_opt\_ poznámky  
+### <a name="example-the-inoutopt-annotation"></a>Příklad: \_Inout_opt\_ poznámky  
  `_Inout_opt_` je stejný jako `_Inout_`, s tím rozdílem, že vstupní parametr může mít hodnotu NULL, a proto se funkce by měla vyhledávat to.  
   
 ```cpp  
@@ -309,7 +309,7 @@ void InOutOptCaller()
   
  Analýzy kódu sady Visual Studio ověří, že tato funkce zkontroluje NULL před přístupem ke vyrovnávací paměť a pokud `pInt` nemá hodnotu NULL, že vyrovnávací paměť je inicializován pomocí funkce ještě před jeho vrácením.  
   
-### <a name="example-the-outptr-annotation"></a>Příklad: _Outptr\_ poznámky  
+### <a name="example-the-outptr-annotation"></a>Příklad: \_Outptr\_ poznámky  
  `_Outptr_` slouží k přidání poznámek ke parametr, který se má vrátit ukazatel.  Parametr samotný nemůže být NULL a volané funkce vrací jinou hodnotu než NULL ukazatel v něm a tento ukazatel odkazuje na inicializovaná data.  
   
 ```cpp  
@@ -340,7 +340,7 @@ void OutPtrCaller()
   
  Analýzy kódu sady Visual Studio ověří, že volající předá bez NULOVÉHO ukazatele `*pInt`, a že vyrovnávací paměť je inicializován pomocí funkce ještě před jeho vrácením.  
   
-### <a name="example-the-outptropt-annotation"></a>Příklad: _Outptr_opt\_ poznámky  
+### <a name="example-the-outptropt-annotation"></a>Příklad: \_Outptr_opt\_ poznámky  
  `_Outptr_opt_` je stejný jako `_Outptr_`, s tím rozdílem, že se jedná o volitelný parametr – volající může předat ukazatel s hodnotou NULL pro parametr.  
   
 ```cpp  
@@ -373,7 +373,7 @@ void OutPtrOptCaller()
   
  Analýzy kódu sady Visual Studio ověří, že tato funkce zkontroluje NULL před `*pInt` se přistoupit přes ukazatel, a že vyrovnávací paměť je inicializován pomocí funkce ještě před jeho vrácením.  
   
-### <a name="example-the-success-annotation-in-combination-with-out"></a>Příklad: _Success\_ v kombinaci s _out – Poznámka\_  
+### <a name="example-the-success-annotation-in-combination-with-out"></a>Příklad: \_úspěch\_ poznámky v kombinaci s \_navýšení kapacity\_  
  Poznámky můžete použít pro většinu objektů.  Zejména může opatřit poznámkami celé funkce.  Jednou z vlastnosti Nejobvyklejšími funkce je, že ho úspěch nebo neúspěch. Ale stejně jako přidružení mezi vyrovnávací paměť a velikost, nelze C/C++ express funkce úspěch nebo neúspěch. S použitím `_Success_` poznámky, můžete napsat, jaké úspěch pro funkci bude vypadat takto.  Parametr `_Success_` poznámky je právě výraz, že pokud je hodnota true označuje, že funkce byla úspěšná. Výraz může být cokoli, co dokáže zpracovat analyzátor poznámky. Účinky poznámky po vrácení funkce se vztahují jenom když funkce úspěšná. Tento příklad ukazuje, jak `_Success_` komunikuje s `_Out_` udělat správné věci. Můžete použít klíčové slovo `return` představující vrácenou hodnotu.  
   
 ```cpp  
@@ -403,15 +403,15 @@ bool GetValue(_Out_ int *pInt, bool flag)
 ### <a name="when-do-i-annotate"></a>Když poznámky?  
  Tady jsou některé pokyny:  
   
--   Označí všechny parametry ukazatele.  
+- Označí všechny parametry ukazatele.  
   
--   Přidání poznámek ke poznámky rozsah hodnot, tak, aby analýza kódu můžete zajistit bezpečnost vyrovnávací paměti a ukazatele.  
+- Přidání poznámek ke poznámky rozsah hodnot, tak, aby analýza kódu můžete zajistit bezpečnost vyrovnávací paměti a ukazatele.  
   
--   Přidat poznámku zamykání pravidla a zamykání vedlejší účinky. Další informace najdete v tématu [zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md).  
+- Přidat poznámku zamykání pravidla a zamykání vedlejší účinky. Další informace najdete v tématu [zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md).  
   
--   Přidat poznámku vlastnosti ovladače a další vlastnosti specifické pro doménu.  
+- Přidat poznámku vlastnosti ovladače a další vlastnosti specifické pro doménu.  
   
- Nebo můžete opatřit poznámkami všechny parametry, aby vaše záměru vymazat v průběhu a usnadňují zkontrolujte, že jsme udělali poznámky.  
+  Nebo můžete opatřit poznámkami všechny parametry, aby vaše záměru vymazat v průběhu a usnadňují zkontrolujte, že jsme udělali poznámky.  
   
 ## <a name="related-resources"></a>Související prostředky  
  [Blog týmu analýzy kódu](http://go.microsoft.com/fwlink/p/?LinkId=251197)  

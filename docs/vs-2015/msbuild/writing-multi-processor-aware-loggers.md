@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 486c8e32b577b6c794a03c080a909023b40eafde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b05c0f1782382f437a5e1d90bf19c724a05ca6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219957"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826371"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Zápis protokolovacích nástrojů pro více procesorů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,13 +71,13 @@ public interface INodeLogger: ILogger
   
  Existují dva způsoby, jak pomocí distribuované protokolování, následujícím způsobem:  
   
--   Přizpůsobení předem kovodělných předávající protokolovací nástroj s názvem <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
+- Přizpůsobení předem kovodělných předávající protokolovací nástroj s názvem <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
   
--   Napište vlastní vlastního předávajícího protokolovacího nástroje.  
+- Napište vlastní vlastního předávajícího protokolovacího nástroje.  
   
- Můžete upravit ConfigurableForwardingLogger tak, aby vyhovoval vašim požadavkům. K tomuto účelu volání protokolovací nástroj pomocí MSBuild.exe na příkazovém řádku a vypsat události sestavení, které chcete předat do centrálního uzlu protokolovacího nástroje.  
+  Můžete upravit ConfigurableForwardingLogger tak, aby vyhovoval vašim požadavkům. K tomuto účelu volání protokolovací nástroj pomocí MSBuild.exe na příkazovém řádku a vypsat události sestavení, které chcete předat do centrálního uzlu protokolovacího nástroje.  
   
- Jako alternativu můžete vytvořit vlastního předávajícího protokolovacího nástroje. Vytvořením vlastního předávajícího protokolovacího nástroje můžete doladit tak chování protokolovacího nástroje. Vytvoření vlastního předávajícího protokolovacího nástroje je však mnohem složitější než pouze přizpůsobení ConfigurableForwardingLogger. Další informace najdete v tématu [vytváření předávání protokolovacích nástrojů](../msbuild/creating-forwarding-loggers.md).  
+  Jako alternativu můžete vytvořit vlastního předávajícího protokolovacího nástroje. Vytvořením vlastního předávajícího protokolovacího nástroje můžete doladit tak chování protokolovacího nástroje. Vytvoření vlastního předávajícího protokolovacího nástroje je však mnohem složitější než pouze přizpůsobení ConfigurableForwardingLogger. Další informace najdete v tématu [vytváření předávání protokolovacích nástrojů](../msbuild/creating-forwarding-loggers.md).  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Použití ConfigurableForwardingLogger pro jednoduché distribuované protokolování  
  K připojení ConfigurableForwardingLogger nebo vlastního předávajícího protokolovacího nástroje, použijte `/distributedlogger` přepnout (`/dl` zkráceně) v sestavení z příkazového řádku MSBuild.exe. Formát pro zadávání názvů typů protokolovacího nástroje a třídy je stejný jako u `/logger` přepnout, s tím rozdílem, že distribuovaného protokolovacího nástroje vždy se dvěma třídami protokolování místo jednoho předávající protokolovací nástroj a centrální protokolovací nástroj. Následuje příklad toho, jak se připojit s názvem XMLForwardingLogger vlastního předávajícího protokolovacího nástroje.  

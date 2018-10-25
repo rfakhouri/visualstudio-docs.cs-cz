@@ -15,12 +15,12 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a16a0ece140f205f8276f0b3ec7db6b2402d3537
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836765"
 ---
 # <a name="source-control-integration-overview"></a>Přehled integrace správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Tato část porovná dva způsoby, jak integrovat do správy zdrojového kódu s
   
  K implementaci modulu plug-in pomocí rozhraní API pro zdrojový ovládací prvek modulu Plug-in správy zdrojového kódu, postupujte podle těchto kroků:  
   
-1.  Vytvořit knihovnu DLL, která implementuje funkcí zadaných v [moduly plug-in správy zdrojových kódů](../../extensibility/source-control-plug-ins.md).  
+1. Vytvořit knihovnu DLL, která implementuje funkcí zadaných v [moduly plug-in správy zdrojových kódů](../../extensibility/source-control-plug-ins.md).  
   
-2.  Zaregistruje knihovnu DLL tak, že položky odpovídající registru (popsané v [postupy: Instalace modulu Plug-in zdrojového ovládacího prvku](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Zaregistruje knihovnu DLL tak, že položky odpovídající registru (popsané v [postupy: Instalace modulu Plug-in zdrojového ovládacího prvku](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
-3.  Vytvořte pomocné rutiny uživatelského rozhraní a zobrazení po zobrazení výzvy zdrojový ovládací prvek adaptér balíček (součást sady Visual Studio, která zajišťuje funkce správy zdrojového kódu pomocí ovládacího prvku moduly plug-in zdrojového kódu)  
+3. Vytvořte pomocné rutiny uživatelského rozhraní a zobrazení po zobrazení výzvy zdrojový ovládací prvek adaptér balíček (součást sady Visual Studio, která zajišťuje funkce správy zdrojového kódu pomocí ovládacího prvku moduly plug-in zdrojového kódu)  
   
- V reakci na příkaz řízení zdroje integrovaném vývojovém prostředí sady Visual Studio nabízí standardní uživatelské rozhraní pro základní operace a potom předává informace do správy zdrojového kódu modulu plug-in prostřednictvím funkce definované v rozhraní API modulu Plug-in zdroje ovládacího prvku. Pro pokročilé možnosti modulu plug-in správy zdrojového kódu může být volána na prezentovat své vlastní uživatelské rozhraní, například procházení projektu se spravovanými zdroji. To znamená, že uživatel může se vám dva by mohly mít odlišné styly uživatelského rozhraní při práci se správou zdrojového kódu: rozhraní, které nabízí Visual Studio a rozhraní, které představuje modul plug-in správy zdrojového kódu. Toto je nejvíce patrné s operací správy zdrojů pokročilé.  
+   V reakci na příkaz řízení zdroje integrovaném vývojovém prostředí sady Visual Studio nabízí standardní uživatelské rozhraní pro základní operace a potom předává informace do správy zdrojového kódu modulu plug-in prostřednictvím funkce definované v rozhraní API modulu Plug-in zdroje ovládacího prvku. Pro pokročilé možnosti modulu plug-in správy zdrojového kódu může být volána na prezentovat své vlastní uživatelské rozhraní, například procházení projektu se spravovanými zdroji. To znamená, že uživatel může se vám dva by mohly mít odlišné styly uživatelského rozhraní při práci se správou zdrojového kódu: rozhraní, které nabízí Visual Studio a rozhraní, které představuje modul plug-in správy zdrojového kódu. Toto je nejvíce patrné s operací správy zdrojů pokročilé.  
   
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Nevýhody prováděcí modul Plug-in správy zdrojového kódu  
   

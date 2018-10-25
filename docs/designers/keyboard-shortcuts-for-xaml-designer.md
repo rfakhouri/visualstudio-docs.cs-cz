@@ -10,21 +10,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6eda8e27f5fbb6132027eeca87a0e6872be2415f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 86c7eea623401edbce5638c9385dc3a5d082548f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978151"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855440"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Klávesové zkratky pro Návrhář XAML
+
 Klávesové zkratky v Návrháři XAML může urychlit práci díky snížení akce, které by vyžadovaly více kliknutí tlačítkem myši na jednu klávesovou zkratku.
 
 ## <a name="element-shortcuts"></a>Klávesové zkratky – element
- Tato tabulka uvádí klávesové zkratky, které jsou k dispozici pro práci s elementy na návrhové ploše.
+
+Tato tabulka uvádí klávesové zkratky, které jsou k dispozici pro práci s elementy na návrhové ploše.
 
 |**K provedení této akce**|**To udělat**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Vytvořit element|Stisknutím klávesy **Ctrl**+**N**|
 |Duplicitní element|Podržte stisknutou klávesu **Alt** a stiskněte klávesu se šipkou.|
 |Úprava textu v ovládacím prvku|Stisknutím klávesy **F2** (stiskněte **Esc** ukončíte)|
@@ -39,10 +41,11 @@ Klávesové zkratky v Návrháři XAML může urychlit práci díky snížení a
 |Vyberte vlastnost pro daný element|Vybraný prvek a fokusu v okně Vlastnosti, stiskněte klávesu **kartu**. (Použití **Ctrl**+**kartu** změnit fokus do okna Vlastnosti.) Vyberte hodnoty vlastností z rozevíracích seznamech můžete použít klávesy se šipkami.|
 
 ## <a name="document-outline-window-shortcuts"></a>Zkratky používané v okně osnovy dokumentu
- Následující tabulka uvádí klávesové zkratky, která je k dispozici při práci s elementy v okně osnovy dokumentu.
+
+Následující tabulka uvádí klávesové zkratky, která je k dispozici při práci s elementy v okně osnovy dokumentu.
 
 |**K provedení této akce**|**To udělat**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Skrýt objektů na návrhové ploše, když je fokus na okno osnovy dokumentu|**CTRL**+**H**|
 |Zobrazit objekty na návrhové ploše, když je fokus na okno osnovy dokumentu|**SHIFT**+**Ctrl**+**H**|
 |Zamknout objekty na návrhové ploše, když je fokus na okno osnovy dokumentu|**CTRL**+**L**|
@@ -50,4 +53,4 @@ Klávesové zkratky v Návrháři XAML může urychlit práci díky snížení a
 
 ## <a name="see-also"></a>Viz také:
 
-- [Vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Vytvoření uživatelského rozhraní pomocí Návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3d704be00294f1b7b52e5a9bd4a01d0692bc5ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07eeee3fa69407c17c20f55b7b8c0974bd4751b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829505"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analyzátor a skener služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>Typy analyzátory  
  Služba analyzátor jazyka není stejný jako analyzátor používá jako součást kompilátoru. Tento druh analyzátor však musí používat skeneru a analyzátor, stejně jako analyzátor kompilátoru.  
   
--   Skener slouží k identifikaci typy tokenů. Tyto informace slouží pro zvýraznění syntaxe a umožňuje rychle identifikovat pro typy tokenů, které můžete aktivovat další operace, například související závorky. Je reprezentován Tento skener <xref:Microsoft.VisualStudio.Package.IScanner> rozhraní.  
+- Skener slouží k identifikaci typy tokenů. Tyto informace slouží pro zvýraznění syntaxe a umožňuje rychle identifikovat pro typy tokenů, které můžete aktivovat další operace, například související závorky. Je reprezentován Tento skener <xref:Microsoft.VisualStudio.Package.IScanner> rozhraní.  
   
--   Analyzátor se používá k popisu funkce a oboru tokenů. Tyto informace slouží v operacích IntelliSense k identifikaci prvků jazyka, jako jsou metody, proměnné, parametry a deklarace a poskytnout seznam členů a podpisy metod na základě kontextu. Tento analyzátor je také používaná k nalezení odpovídající dvojice elementu jazyka, například složené závorky a závorky. Tento analyzátor je přístupný prostřednictvím <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodu <xref:Microsoft.VisualStudio.Package.LanguageService> třídy.  
+- Analyzátor se používá k popisu funkce a oboru tokenů. Tyto informace slouží v operacích IntelliSense k identifikaci prvků jazyka, jako jsou metody, proměnné, parametry a deklarace a poskytnout seznam členů a podpisy metod na základě kontextu. Tento analyzátor je také používaná k nalezení odpovídající dvojice elementu jazyka, například složené závorky a závorky. Tento analyzátor je přístupný prostřednictvím <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodu <xref:Microsoft.VisualStudio.Package.LanguageService> třídy.  
   
- Jak implementovat analyzátor a skener služby jazyka je na vás. Jsou k dispozici několik prostředků, které popisují, jak fungují analyzátory a tom, jak psát vlastní analyzátor. Kromě toho jsou k dispozici několik produktů bezplatná a komerční, které pomáhají při vytváření analyzátor.  
+  Jak implementovat analyzátor a skener služby jazyka je na vás. Jsou k dispozici několik prostředků, které popisují, jak fungují analyzátory a tom, jak psát vlastní analyzátor. Kromě toho jsou k dispozici několik produktů bezplatná a komerční, které pomáhají při vytváření analyzátor.  
   
 ### <a name="the-parsesource-parser"></a>Analyzátor ParseSource  
  Na rozdíl od analyzátor, který se používá jako součást kompilátor (kde tokeny jsou převedeny na nějakou formu spustitelného kódu) lze volat analyzátoru služby jazyka pro mnoho různých důvodů, proč a v mnoha různých kontextech. Implementace tohoto přístupu v <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodu <xref:Microsoft.VisualStudio.Package.LanguageService> třída je jenom na vás. Je důležité mít na paměti, která <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda může být volána na vlákně na pozadí.  

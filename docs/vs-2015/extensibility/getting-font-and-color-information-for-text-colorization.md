@@ -16,12 +16,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7916e954079d627340a1ca41faeeadf7555acfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 49a787dd67691c581383713a7c98a80816762599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274245"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832716"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Písma a barvy informace pro barevné zvýraznění textu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Proces, který vykreslí nebo barevně zvýrazněné text se zobrazí prvky uži
   
  Barevně zvýrazňovat, musíte získat VSPackage aktuální **písma a barvy** nastavení. VSPackage můžete to udělat následujícími způsoby v závislosti na svých potřeb:  
   
--   Pomocí mechanismu trvalosti písma a barvy uložené nebo aktuální stav. Další informace najdete v tématu [přístup k uložené písmo a barvy nastavení](../extensibility/accessing-stored-font-and-color-settings.md).  
+- Pomocí mechanismu trvalosti písma a barvy uložené nebo aktuální stav. Další informace najdete v tématu [přístup k uložené písmo a barvy nastavení](../extensibility/accessing-stored-font-and-color-settings.md).  
   
--   Použití <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> rozhraní službu poskytující data písma a barvy, abyste získali instance <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, nejsou-li sady VSPackage také poskytovatele písmo a barvu.  
+- Použití <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> rozhraní službu poskytující data písma a barvy, abyste získali instance <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, nejsou-li sady VSPackage také poskytovatele písmo a barvu.  
   
--   Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> rozhraní.  
+- Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> rozhraní.  
   
- Chcete-li zajistit, aby získala při dotazování na výsledky jsou aktuální, může být vhodné použít <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> rozhraní k určení, zda aktualizace je nutné před voláním metody načítání <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní.  
+  Chcete-li zajistit, aby získala při dotazování na výsledky jsou aktuální, může být vhodné použít <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> rozhraní k určení, zda aktualizace je nutné před voláním metody načítání <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> rozhraní.  
   
- Poté co získané informace písma a barvy, analyzovat text, který má být zobrazen za účelem identifikování prvky vyžaduje zabarvování a text pak můžete zobrazit v okně pomocí odpovídající písma a barvy.  
+  Poté co získané informace písma a barvy, analyzovat text, který má být zobrazen za účelem identifikování prvky vyžaduje zabarvování a text pak můžete zobrazit v okně pomocí odpovídající písma a barvy.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   

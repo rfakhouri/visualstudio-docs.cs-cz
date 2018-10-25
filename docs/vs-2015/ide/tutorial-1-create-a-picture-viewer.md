@@ -14,40 +14,40 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8e881b4d8faef7ced037c8752f099af0e5e8bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cdc926121212a8082fac126e4ab91b753df7dee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214318"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884963"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutoriál 1: Vytvoření prohlížeče obrázků
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V tomto kurzu vytvoříte program, který načte obrázek ze souboru a zobrazí jej v okně. Naučíte se přetáhnout prvky jako tlačítka a pole obrázků ve formuláři, nastavit jejich vlastnosti a plynule změnit velikost formuláře pomocí kontejnerů. Můžete také začít psát kód. Získáte informace o následujících postupech:  
   
--   Vytvořte nový projekt.  
+- Vytvořte nový projekt.  
   
--   Otestujte (vylaďte) aplikaci.  
+- Otestujte (vylaďte) aplikaci.  
   
--   Přidejte základní ovládací prvky jako zaškrtávací políčka a tlačítka do formuláře.  
+- Přidejte základní ovládací prvky jako zaškrtávací políčka a tlačítka do formuláře.  
   
--   Umístit ovládací prvky na formulář pomocí rozložení.  
+- Umístit ovládací prvky na formulář pomocí rozložení.  
   
--   Přidat **otevřít soubor** a **barva** dialogová okna do formuláře.  
+- Přidat **otevřít soubor** a **barva** dialogová okna do formuláře.  
   
--   Pište kód pomocí technologie IntelliSense a fragmentů kódu.  
+- Pište kód pomocí technologie IntelliSense a fragmentů kódu.  
   
--   Zápis obslužné rutiny události.  
+- Zápis obslužné rutiny události.  
   
- Jakmile skončíte, program bude vypadat jako na následujícím obrázku.  
+  Jakmile skončíte, program bude vypadat jako na následujícím obrázku.  
   
- ![Obrázek, který vytvoříte v tomto kurzu](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
-Obrázek, který vytvoříte v tomto kurzu  
+  ![Obrázek, který vytvoříte v tomto kurzu](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
+  Obrázek, který vytvoříte v tomto kurzu  
   
- Chcete-li stáhnout úplnou verzi vzorku, přečtěte si téma [ukázkový kurz pro dokončení prohlížeče obrázků](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
+  Chcete-li stáhnout úplnou verzi vzorku, přečtěte si téma [ukázkový kurz pro dokončení prohlížeče obrázků](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
   
- ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v tématu [jak mohu: vytvořit prohlížeče obrázků v jazyce Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) nebo [jak mohu: vytvořit prohlížeče obrázků v jazyce C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
+  ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v tématu [jak mohu: vytvořit prohlížeče obrázků v jazyce Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) nebo [jak mohu: vytvořit prohlížeče obrázků v jazyce C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
   
 > [!NOTE]
 >  Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio. Visual C# a Visual Basic jsou obě popsané v tomto kurzu, takže se zaměřte na informace, které jsou specifické pro programovací jazyk, který používáte.  

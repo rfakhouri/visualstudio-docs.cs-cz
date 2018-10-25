@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69774b098e76bb14ed11be092ae7ebedb71c218a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837554"
 ---
 # <a name="customizing-deletion-behavior"></a>Přizpůsobení chování odstranění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ Odstranění elementu obvykle způsobí, že související prvky také odstranit
   
 #### <a name="to-set-delete-propagation"></a>Chcete-li nastavit šíření delete  
   
-1.  V definici DSL diagramu, vyberte *role* na který chcete odstranit šíření. Role je reprezentován řádku nalevo nebo napravo od pole vztah domény.  
+1. V definici DSL diagramu, vyberte *role* na který chcete odstranit šíření. Role je reprezentován řádku nalevo nebo napravo od pole vztah domény.  
   
-     Například pokud chcete určit, že pokaždé, když se odstraní alba, související umělci se také odstraní a potom vyberte role připojen k doménové třídy interpreta.  
+    Například pokud chcete určit, že pokaždé, když se odstraní alba, související umělci se také odstraní a potom vyberte role připojen k doménové třídy interpreta.  
   
-2.  V okně Vlastnosti nastavte **šíří odstranit** vlastnost.  
+2. V okně Vlastnosti nastavte **šíří odstranit** vlastnost.  
   
-3.  Stiskněte klávesu F5 a ověřte, že:  
+3. Stiskněte klávesu F5 a ověřte, že:  
   
-    -   Při odstranění instance tohoto vztahu se budou odstraněny také element na vybranou roli.  
+   -   Při odstranění instance tohoto vztahu se budou odstraněny také element na vybranou roli.  
   
-    -   Když se odstraní prvek na opačné role, výskyty tento vztah se odstraní a související prvky na této role budou odstraněny.  
+   -   Když se odstraní prvek na opačné role, výskyty tento vztah se odstraní a související prvky na této role budou odstraněny.  
   
- Můžete zobrazit také **šíří odstranit** možnost **podrobnosti DSL** okna. Vyberte doménové třídy a v okně podrobností DSL, otevřete **chování odstranění** stránku kliknutím na tlačítko na okraji okna. **Rozšířit** opačné role každé relaci se zobrazí možnost. **Odstranit styl** sloupec označuje, zda **rozšířit** na jeho výchozí nastavení je možnost, ale nemá žádný účinek samostatné.  
+   Můžete zobrazit také **šíří odstranit** možnost **podrobnosti DSL** okna. Vyberte doménové třídy a v okně podrobností DSL, otevřete **chování odstranění** stránku kliknutím na tlačítko na okraji okna. **Rozšířit** opačné role každé relaci se zobrazí možnost. **Odstranit styl** sloupec označuje, zda **rozšířit** na jeho výchozí nastavení je možnost, ale nemá žádný účinek samostatné.  
   
 ## <a name="delete-propagation-by-using-program-code"></a>Odstranit šíření pomocí kódu programu  
  Možnosti v souboru definic DSL pouze si můžete zvolit, jestli odstranění šíří do sousedního okamžitě. K implementaci složitější schéma šíření odstranit, můžete napsat kód programu.  
@@ -138,17 +138,17 @@ partial class MusicLibDeleteClosure
 ##  <a name="ondeleting"></a> Pomocí OnDeleting a OnDeleted  
  Můžete přepsat `OnDeleting()` nebo `OnDeleted()` buď v doménové třídy, nebo doménového vztahu.  
   
-1.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> je volána element blížící se neodstraní, ale před jeho vztahy byl odpojen. Je stále navigaci do a z dalších prvků a je pořád ještě v `store.ElementDirectory`.  
+1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> je volána element blížící se neodstraní, ale před jeho vztahy byl odpojen. Je stále navigaci do a z dalších prvků a je pořád ještě v `store.ElementDirectory`.  
   
-     Pokud několik prvků jsou odstraněny ve stejnou dobu, se nazývá OnDeleting pro každou z nich před provedením odstranění.  
+    Pokud několik prvků jsou odstraněny ve stejnou dobu, se nazývá OnDeleting pro každou z nich před provedením odstranění.  
   
-     `IsDeleting` má hodnotu true.  
+    `IsDeleting` má hodnotu true.  
   
-2.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> je volána, když se odstranil elementu. Zůstane v haldě modulu CLR, aby vrácení zpět lze provést, pokud je to nutné, ale je byl odpojen od jiných prvků a odebrána z `store.ElementDirectory`. U relací role stále odkazují na staré aktérů role.`IsDeleted` má hodnotu true.  
+2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> je volána, když se odstranil elementu. Zůstane v haldě modulu CLR, aby vrácení zpět lze provést, pokud je to nutné, ale je byl odpojen od jiných prvků a odebrána z `store.ElementDirectory`. U relací role stále odkazují na staré aktérů role.`IsDeleted` má hodnotu true.  
   
-3.  Když uživatel vyvolá zpět po vytvoření elementu a starší odstranění se opakuje v znovu, se nazývají OnDeleting a OnDeleted. Použití `this.Store.InUndoRedoOrRollback` , aby aktualizace úložiště prvky v těchto případech. Další informace najdete v tématu [postupy: používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).  
+3. Když uživatel vyvolá zpět po vytvoření elementu a starší odstranění se opakuje v znovu, se nazývají OnDeleting a OnDeleted. Použití `this.Store.InUndoRedoOrRollback` , aby aktualizace úložiště prvky v těchto případech. Další informace najdete v tématu [postupy: používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
- Následující kód například odstraní při odstranění jeho posledního podřízeného skladby alba:  
+   Následující kód například odstraní při odstranění jeho posledního podřízeného skladby alba:  
   
 ```  
   

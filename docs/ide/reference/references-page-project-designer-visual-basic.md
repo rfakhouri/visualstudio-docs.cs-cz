@@ -18,45 +18,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 788df6c5d7084398f5c1df1fffdf51e501cce4c6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 719f58ff7a8fe333f43e13ddef298ba9938ad4e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180474"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815192"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Stránka Odkazy, návrhář projektu (Visual Basic)
+
 Použití **odkazy** stránku **Návrháře projektu** ke správě odkazy, webové odkazy a importovaných oborů názvů ve vašem projektu. Projekty mohou obsahovat odkazy na komponenty modelu COM, webové služby XML, knihovny tříd rozhraní .NET Framework nebo sestavení nebo další knihovny tříd. Další informace o použití odkazů naleznete v tématu [Správa odkazů v projektu](../../ide/managing-references-in-a-project.md).
 
- Pro přístup k **odkazy** zvolte uzel projektu (ne **řešení** uzlu) v **Průzkumníku řešení**. Klikněte na tlačítko **projektu**, **vlastnosti** na řádku nabídek. Jakmile se zobrazí Návrhář projektu, klikněte na tlačítko **odkazy** kartu.
+Pro přístup k **odkazy** zvolte uzel projektu (ne **řešení** uzlu) v **Průzkumníku řešení**. Klikněte na tlačítko **projektu**, **vlastnosti** na řádku nabídek. Jakmile se zobrazí Návrhář projektu, klikněte na tlačítko **odkazy** kartu.
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
- Tyto možnosti umožňují vybrat nebo odebrání odkazů a importovaných oborů názvů ve vašem projektu.
 
- **Nepoužité odkazy**
+Tyto možnosti umožňují vybrat nebo odebrání odkazů a importovaných oborů názvů ve vašem projektu.
 
- Kliknutím na toto tlačítko přístup **nepoužité odkazy** dialogové okno.
+**Nepoužité odkazy**
 
- **Nepoužité odkazy** dialogové okno umožňuje odebrat odkazy, které jsou zahrnuté ve vašem projektu, ale nejsou ve skutečnosti používá v kódu. Obsahuje tabulku, ve které jsou uvedeny **referenční název**, **cesta**a další informace o odkazech na obor názvů nepoužívané ve vašem projektu. V mřížce, vyberte odkazy na obor názvů, které chcete odebrat z projektu a klikněte na tlačítko **odebrat**.
+Kliknutím na toto tlačítko přístup **nepoužité odkazy** dialogové okno.
 
- **Cesty odkazů**
+**Nepoužité odkazy** dialogové okno umožňuje odebrat odkazy, které jsou zahrnuté ve vašem projektu, ale nejsou ve skutečnosti používá v kódu. Obsahuje tabulku, ve které jsou uvedeny **referenční název**, **cesta**a další informace o odkazech na obor názvů nepoužívané ve vašem projektu. V mřížce, vyberte odkazy na obor názvů, které chcete odebrat z projektu a klikněte na tlačítko **odebrat**.
 
- Kliknutím na toto tlačítko přístup **cesty odkazů** dialogové okno.
+**Cesty odkazů**
+
+Kliknutím na toto tlačítko přístup **cesty odkazů** dialogové okno.
 
 > [!NOTE]
 > Při systém projektu nalezení odkaz na sestavení, systém vyřeší odkaz vyhledáváním v následujících umístěních, v uvedeném pořadí:
-
 >
->  1.  Složky projektu. Soubory složky projektu se zobrazí v **Průzkumníka řešení** při **zobrazit všechny soubory** není v platnosti.
-> 2.  Složky, které jsou určené v **cesty odkazů** dialogové okno.
-> 3.  Složky, které zobrazí soubory v **přidat odkaz** dialogové okno.
-> 4.  Složku obj projektu. (Když přidáte do svého projektu odkaz modelu COM, jeden nebo více sestavení mohou být přidány do projektu složku obj.)
+> 1. Složky projektu. Soubory složky projektu se zobrazí v **Průzkumníka řešení** při **zobrazit všechny soubory** není v platnosti.
+> 2. Složky, které jsou určené v **cesty odkazů** dialogové okno.
+> 3. Složky, které zobrazí soubory v **přidat odkaz** dialogové okno.
+> 4. Složku obj projektu. (Když přidáte do svého projektu odkaz modelu COM, jeden nebo více sestavení mohou být přidány do projektu složku obj.)
 
  **Odkazy**
 
  Tento seznam obsahuje všechny odkazy v projektu použít nebo se nepoužívá.
 
- **Přidat**
+ **Add**
 
  Kliknutím na Přidat odkaz nebo webový odkaz na toto tlačítko **odkazy** seznamu.
 

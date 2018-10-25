@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8ef8f2ae6ed1f198fc5f7661b79764d0a790bd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: da23fa30b3266d9ce8eaae1356a92a583d7b940f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876916"
 ---
 # <a name="publish-clickonce-applications"></a>Publikování aplikací ClickOnce
 Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vlastnosti publikování aplikace poprvé, můžete nastavit pomocí Průvodce publikováním. Pouze některé vlastnosti jsou k dispozici v Průvodci; všechny ostatní vlastnosti jsou nastavené na výchozí hodnoty.  
@@ -37,15 +37,15 @@ Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
 ## <a name="publish-wizard"></a>Průvodce publikováním  
  Základní nastavení pro publikování aplikace, můžete použít Průvodce publikováním. To zahrnuje následující vlastnosti publikování:  
   
--   Umístění složky pro publikování – kde aplikace Visual Studio zkopíruje soubory (místní počítač, sdíleného síťového umístění, FTP server nebo webové stránky)  
+- Umístění složky pro publikování – kde aplikace Visual Studio zkopíruje soubory (místní počítač, sdíleného síťového umístění, FTP server nebo webové stránky)  
   
--   Umístění složky instalace – koncoví uživatelé z něhož mohou instalovat (sdíleného síťového umístění, FTP server, webové stránky, disk CD/DVD)  
+- Umístění složky instalace – koncoví uživatelé z něhož mohou instalovat (sdíleného síťového umístění, FTP server, webové stránky, disk CD/DVD)  
   
--   Online nebo Offline dostupnost – Pokud se koncoví uživatelé můžou získat přístup k aplikaci s nebo bez připojení k síti  
+- Online nebo Offline dostupnost – Pokud se koncoví uživatelé můžou získat přístup k aplikaci s nebo bez připojení k síti  
   
--   Aktualizace frekvence – jak často bude aplikace ověřovat nové aktualizace.  
+- Aktualizace frekvence – jak často bude aplikace ověřovat nové aktualizace.  
   
- Další informace najdete v tématu [postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+  Další informace najdete v tématu [postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ## <a name="publish-page"></a>Stránka publikovat  
  **Publikovat** stránku **Návrháře projektu** slouží ke konfiguraci vlastností pro nasazení ClickOnce. V následující tabulce jsou uvedeny témata.  

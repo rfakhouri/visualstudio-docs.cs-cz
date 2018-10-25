@@ -11,33 +11,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717e8f721b57ec3d7bde04deed167fa2d6461517
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 16b9d56daab6eda1ef1cd9c31d8cc4d720f9a08e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500511"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875889"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Návod: Zobrazení návrhů
 Ikony žárovky jsou ikony v editoru sady Visual Studio, které se rozbalí a zobrazí sadu akcí, například opravy problémů, které jsou identifikované analyzátorů integrované kódu a refaktoring kódu.  
   
  V editoru Visual C# a Visual Basic také můžete platformě kompilátoru .NET ("Roslyn") pro zápis a balíček vlastních analyzátorů kódu s akcemi, které se automaticky zobrazí návrhy. Další informace naleznete v tématu:  
   
--   [Postupy: Zápis jazyka C# diagnostiky a oprava kódu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Postupy: Zápis jazyka C# diagnostiky a oprava kódu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Postupy: Zápis Visual Basic diagnostiku a opravy kódu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Postupy: Zápis Visual Basic diagnostiku a opravy kódu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Dalších jazycích, například C++ také poskytují návrhy pro některé rychlé akce, jako jsou návrh na vytvoření zástupné procedury implementace této funkce.  
+  Dalších jazycích, například C++ také poskytují návrhy pro některé rychlé akce, jako jsou návrh na vytvoření zástupné procedury implementace této funkce.  
   
- Zde je, jak vypadá žárovky. V projektu jazyka Visual Basic nebo Visual C# zobrazí červená vlnovka za název proměnné, když je neplatný. Pokud myší neplatný identifikátor žárovky se zobrazí kurzor.  
+  Zde je, jak vypadá žárovky. V projektu jazyka Visual Basic nebo Visual C# zobrazí červená vlnovka za název proměnné, když je neplatný. Pokud myší neplatný identifikátor žárovky se zobrazí kurzor.  
   
- ![žárovka](../extensibility/media/lightbulb.png "žárovky")  
+  ![žárovka](../extensibility/media/lightbulb.png "žárovky")  
   
- Pokud kliknete na šipku dolů ve žárovky, doporučené akce se zobrazí sada, spolu s náhled vybrané akce. V tomto případě zobrazuje změny provedené do kódu, pokud se provede akci.  
+  Pokud kliknete na šipku dolů ve žárovky, doporučené akce se zobrazí sada, spolu s náhled vybrané akce. V tomto případě zobrazuje změny provedené do kódu, pokud se provede akci.  
   
- ![Náhled návrhů](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![Náhled návrhů](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- Ikony žárovky můžete zadat vlastní doporučené akce. Například je možné zadat akce, které chcete přesunout otevření složené závorky na nový řádek nebo je přesunout na konec objektu na každém řádku. Následující návod ukazuje, jak vytvořit žárovky, který se zobrazí na aktuální slovo a má dvě navrhovaných akcí: **převést na velká písmena** a **převést na malá písmena**.  
+  Ikony žárovky můžete zadat vlastní doporučené akce. Například je možné zadat akce, které chcete přesunout otevření složené závorky na nový řádek nebo je přesunout na konec objektu na každém řádku. Následující návod ukazuje, jak vytvořit žárovky, který se zobrazí na aktuální slovo a má dvě navrhovaných akcí: **převést na velká písmena** a **převést na malá písmena**.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnutý jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

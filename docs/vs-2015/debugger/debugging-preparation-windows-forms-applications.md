@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9448b6116f59f22aed6dd0796a3409806021ba0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5877bcf4501125968e2fb14f56c41c1ccbc9e561
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262155"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885132"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Příprava na ladění: Formulářová aplikace Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,23 +56,23 @@ ms.locfileid: "49262155"
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Chcete-li ladit aplikace C#, F # nebo Visual Basic Windows Forms  
   
-1.  Otevřete projekt v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Otevřete projekt v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Podle potřeby vytvořte zarážky.  
+2. Podle potřeby vytvořte zarážky.  
   
-     Protože aplikace Windows Forms jsou založené na událostech, vaše zarážky přejde do kódu obslužné rutiny události nebo do metody volané kódem obslužné rutiny události. Typické události, ve které chcete umístit zarážky zahrnují:  
+    Protože aplikace Windows Forms jsou založené na událostech, vaše zarážky přejde do kódu obslužné rutiny události nebo do metody volané kódem obslužné rutiny události. Typické události, ve které chcete umístit zarážky zahrnují:  
   
-    1.  Události související s ovládacím prvkem, jako je například klikněte na Enter, atd.  
+   1. Události související s ovládacím prvkem, jako je například klikněte na Enter, atd.  
   
-    2.  Události související s aplikací při spuštění a vypnutí, jako je zatížení, aktivováno atd.  
+   2. Události související s aplikací při spuštění a vypnutí, jako je zatížení, aktivováno atd.  
   
-    3.  Fokus a události ověřování.  
+   3. Fokus a události ověřování.  
   
-     Další informace najdete v tématu [vytváření obslužných rutin událostí ve Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
+      Další informace najdete v tématu [vytváření obslužných rutin událostí ve Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
   
-3.  Na **ladění** nabídky, klikněte na tlačítko **Start**.  
+3. Na **ladění** nabídky, klikněte na tlačítko **Start**.  
   
-4.  Ladění pomocí technik popsaných v [základy ladicího programu](../debugger/debugger-basics.md).  
+4. Ladění pomocí technik popsaných v [základy ladicího programu](../debugger/debugger-basics.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   

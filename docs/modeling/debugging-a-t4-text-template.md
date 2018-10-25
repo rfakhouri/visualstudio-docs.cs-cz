@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f9a150760636fd5717c427324688c564b80aca30
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: aa8f773ba6f9d0722eb4e07e9c795d0d43860ebb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869979"
 ---
 # <a name="debugging-a-t4-text-template"></a>Ladění textové šablony T4
 Můžete nastavit zarážky v textových šablonách. Chcete-li ladit návrhové textové šablony, uložte soubor textové šablony a pak zvolte **ladit šablonu T4** v místní nabídce souboru v Průzkumníku řešení. Ladění za běhu textové šablony, jednoduše ladit aplikaci, do které patří.
@@ -25,7 +25,7 @@ Můžete nastavit zarážky v textových šablonách. Chcete-li ladit návrhové
  Ladění textové šablony, měli byste porozumět kroky transformace procesu šablony. Různé druhy chyb může dojít v rámci každého kroku. Kroky jsou následující.
 
 |Krok|Šablonu návrhu: když se stane|Šablona běhu: když se stane|
-|----------|--------------------------------------------|-----------------------------------------|
+|-|-|-|
 |Kód je generován z textové šablony.<br /><br /> Chyby v direktivách, Neshoda nebo disordered `<#...#>` značky.|Když uložíte šablonu nebo volání transformací textu.|Když uložíte šablonu nebo volání transformací textu.|
 |Kompilace generovaného kódu.<br /><br /> Chyby kompilace v kódu šablony.|Ihned po předchozím kroku.|Spolu s kódu aplikace.|
 |Kód se spustí.<br /><br /> Běhové chyby v kódu šablony.|Ihned po předchozím kroku.|Když vaše aplikace se spustí a volá kód šablony.|
@@ -38,7 +38,7 @@ Můžete nastavit zarážky v textových šablonách. Chcete-li ladit návrhové
  Následující tabulka uvádí nejběžnější chyby a jejich opravy.
 
 |Chybová zpráva|Popis|Řešení|
-|-------------------|-----------------|--------------|
+|-|-|-|
 |Nepovedlo se načíst základní třídu{0}"ze které transformace třída dědí.|Nastane, pokud nemůžete najít základní třída zadaná v `inherits` parametr v direktivě šablony. Zpráva obsahuje číslo řádku – direktiva šablony.|Ujistěte se, že dané třídy existuje a zda sestavení, který existuje ve službě je zadán v direktivě sestavení.|
 |Nepovedlo se přeložit text zahrnutí pro soubor:{0}|Nastane, pokud nemůžete najít zahrnuty šablony. Zpráva obsahuje název požadované zahrnutého souboru.|Ujistěte se, že cesta k souboru je relativní vzhledem k původní šablony cesty, nebo, že se soubor nachází v umístění, který je zaregistrován u hostitele nebo, že je úplná cesta k souboru.|
 |Při inicializaci objektu transformace byly vygenerovány chyby. Transformace se nespustí.|Nastane, pokud "Initialize()" třídy transformace se nezdařila nebo vrátí hodnotu false.|Kód ve funkci Initialize() pochází z transformace základní třída zadaná v \<#@template#> a z procesorů pro direktivy. Chyba, která způsobila inicializace pravděpodobně selhání je v seznamu chyb. Zjistěte, proč byl neúspěšný. Můžete vyhledat na skutečné generovaný kód Initialize() pomocí následujících postupů, chcete-li ladit šablonu.|
@@ -52,7 +52,7 @@ Můžete nastavit zarážky v textových šablonách. Chcete-li ladit návrhové
  Následující tabulka uvádí nejběžnější upozornění spolu s opravami, pokud je k dispozici.
 
 |Zpráva upozornění|Popis|Řešení|
-|---------------------|-----------------|--------------|
+|-|-|-|
 |Načítání souboru zahrnutí "{0}' vrátil hodnotu null nebo prázdný řetězec.|Nastane, pokud je prázdný soubor šablony textu. Zpráva obsahuje název souboru souboru.|Odebrat direktivy include nebo Ujistěte se, že soubor má nějaký obsah.|
 |Kompilování transformace:|Připojí na začátek tohoto řetězce pro všechny chyby nebo upozornění pocházející z kompilátoru při kompilaci transformace. Tento řetězec znamená, že kompilátor došlo k chybě nebo upozornění.|Pokud máte potíže najít knihovnu DLL, budete muset zadat úplnou cestu nebo silný plně kvalifikovaný název, pokud knihovna DLL v mezipaměti GAC.|
 |Parametr "{0}' již v direktivě existuje. Duplicitní parametr bude ignorován.|Nastane, pokud parametr je zadán více než jednou v direktivě. Zpráva obsahuje název parametru a číslo řádku direktivy.|Odeberte duplicitní parametr.|

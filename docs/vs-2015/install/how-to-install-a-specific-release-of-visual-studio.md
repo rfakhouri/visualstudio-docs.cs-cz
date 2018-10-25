@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 25939a2ab8c98830c00c19b3e7c76c686a2a28ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50075d46edcf6ffc73ccdcdedb0daf42c8ff6e2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827594"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Postupy: instalace konkrétní verze sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,20 +49,20 @@ ms.locfileid: "49289916"
   
 > [!IMPORTANT]
 >  V závislosti na jazyku, který chcete použít nahraďte "CSY" (pro angličtinu) s jedním z následujících hodnot:  
->   
->  -   Kontextová nápověda (pro čínštinu (zjednodušenou))  
-> -   Sada CHT (pro čínština (tradiční))  
-> -   Sada CSY (pro čeština)  
-> -   DEU (pro němčinu)  
-> -   Sada ESN (pro španělštinu)  
-> -   FRA (pro francouzština)  
-> -   Sada ITA (pro italština)  
-> -   jpa (pro japonština)  
-> -   Sada kor (pro korejština)  
-> -   PLK (pro polština)  
-> -   PTB (pro portugalština)  
-> -   RU (pro ruština)  
-> -   REV (pro turečtina)  
+> 
+> - Kontextová nápověda (pro čínštinu (zjednodušenou))  
+>   -   Sada CHT (pro čínština (tradiční))  
+>   -   Sada CSY (pro čeština)  
+>   -   DEU (pro němčinu)  
+>   -   Sada ESN (pro španělštinu)  
+>   -   FRA (pro francouzština)  
+>   -   Sada ITA (pro italština)  
+>   -   jpa (pro japonština)  
+>   -   Sada kor (pro korejština)  
+>   -   PLK (pro polština)  
+>   -   PTB (pro portugalština)  
+>   -   RU (pro ruština)  
+>   -   REV (pro turečtina)  
   
 ## <a name="see-also"></a>Viz také  
  [Příručka správce sady Visual Studio](../install/visual-studio-administrator-guide.md)

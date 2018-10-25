@@ -25,12 +25,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93ddc0af7daecaeb64586d84e210180d7025ad81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51707a1df9c9f7144dc9a3af021262ca818f03b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850513"
 ---
 # <a name="options-text-editor-c-advanced"></a>Možnosti, textový editor, C#, upřesnit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ Použijte toto dialogové okno Upravit nastavení editoru formátování, refakt
  Underline chyby v editoru  
  Identifikuje chyby sestavení v kódu. Pokud je vybraná tato možnost, zobrazí se podtržení vlnovkou barvy, které mají zvláštní význam:  
   
--   Chyby analýzy jsou červené.  
+- Chyby analýzy jsou červené.  
   
--   Chyby sestavení jsou modrá.  
+- Chyby sestavení jsou modrá.  
   
--   Upozornění sestavení jsou zelená.  
+- Upozornění sestavení jsou zelená.  
   
--   Neplatný [upravit a pokračovat](../../debugger/edit-and-continue.md) úpravy jsou fialový.  
+- Neplatný [upravit a pokračovat](../../debugger/edit-and-continue.md) úpravy jsou fialový.  
   
- Přesuňte ukazatel nad segmentu podtržené kódu zobrazíte popisek s informacemi o chybě.  
+  Přesuňte ukazatel nad segmentu podtržené kódu zobrazíte popisek s informacemi o chybě.  
   
- Zobrazit živé sémantické chyby  
- Identifikuje určité chyby při kompilaci bez explicitní kompilace, například, deklarace a používání neznámého typu nebo odkazuje na neznámou vlastnost.  
+  Zobrazit živé sémantické chyby  
+  Identifikuje určité chyby při kompilaci bez explicitní kompilace, například, deklarace a používání neznámého typu nebo odkazuje na neznámou vlastnost.  
   
- Zvýrazňovat odkazy na _symbol pod kurzorem  
- Když se kurzor uvnitř symbol, nebo když kliknete na symbol, jsou zvýrazněny všechny instance tohoto symbolu v souboru kódu.  
+  Zvýrazňovat odkazy na _symbol pod kurzorem  
+  Když se kurzor uvnitř symbol, nebo když kliknete na symbol, jsou zvýrazněny všechny instance tohoto symbolu v souboru kódu.  
   
 ## <a name="refactoring"></a>Refaktoring  
  Zkontrolujte výsledky refaktoring  

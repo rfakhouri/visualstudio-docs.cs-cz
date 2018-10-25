@@ -27,12 +27,12 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 890c69a4cde928e645dd2ede9fbbb27f66a44794
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cad1f9d5e0e4cefe6e0fba6ec4e919e78f00dd4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855851"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagramy tříd UML: Referenční dokumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,30 +49,30 @@ Diagram tříd UML popisuje objektu a informace o strukturách používané apli
 ## <a name="reading-class-diagrams"></a>Čtení diagramů tříd  
  Tabulky v této části popisuje prvky, které se zobrazí v diagramu tříd UML. Informace o vlastnostech těchto prvků naleznete v následujících tématech:  
   
--   [Vlastnosti typů v diagramech tříd UML](../modeling/properties-of-types-on-uml-class-diagrams.md)  
+- [Vlastnosti typů v diagramech tříd UML](../modeling/properties-of-types-on-uml-class-diagrams.md)  
   
--   [Vlastnosti atributů v diagramech tříd UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [Vlastnosti atributů v diagramech tříd UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Vlastnosti operací v diagramech tříd UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [Vlastnosti operací v diagramech tříd UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [Vlastnosti přidružení v diagramech tříd UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [Vlastnosti přidružení v diagramech tříd UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
- ![Tři třídy znázorňující vztahy a vlastnosti](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
+  ![Tři třídy znázorňující vztahy a vlastnosti](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
   
-|**Obrazec**|**Element**|**Popis**|  
-|---------------|-----------------|---------------------|  
-|1|**Třída**|Definice objektů, které sdílejí daný strukturální nebo behaviorální charakteristiky. Další informace najdete v tématu [diagramech tříd vlastnosti typů v UML](../modeling/properties-of-types-on-uml-class-diagrams.md).|  
-|1|Třídění|Obecný název třídy, rozhraní nebo výčet. Komponenty, případy použití a actors jsou také Klasifikátory.|  
-|2|Sbalit nebo rozbalit ovládací prvek|Pokud nelze zobrazit podrobnosti o třídění, klikněte na rozšíření v levém horním třídění. Budete také muset klikněte na tlačítko [+] v každém segmentu.|  
-|3|**Atribut**|Zadaná hodnota připojeným ke každé instanci třídění.<br /><br /> Chcete-li přidat atribut, klikněte na tlačítko **atributy** části a potom stiskněte klávesu **ENTER**. Typ podpisu atributu. Další informace najdete v tématu [diagramech tříd vlastnosti atributů v UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md).|  
-|4|**Operace**|Metoda nebo funkce, které instance klasifikátoru mohou provádět. Chcete-li přidat operaci, klikněte na tlačítko **operace** části a potom stiskněte klávesu **ENTER**. Typ podpisu operace. Další informace najdete v tématu [vlastnosti operací v UML diagramech tříd](../modeling/properties-of-operations-on-uml-class-diagrams.md).|  
-|5|**Přidružení**|Vztah mezi dvěma Klasifikátory jako objekty její členové. Další informace najdete v tématu [vlastnosti přidružení v UML diagramech tříd](../modeling/properties-of-associations-on-uml-class-diagrams.md).|  
-|5a|**Agregace**|Přidružení reprezentující relaci sdílené vlastnictví. **Agregace** role vlastník je nastavena na **Shared**.|  
-|5b|**Složení**|Přidružení představující vztah část celek. **Agregace** role vlastník je nastavena na **složené**.|  
-|6|**Název přidružení**|Název přidružení. Název může být prázdný.|  
-|7|**Název role**|Název role, to znamená, že jeden konec asociace. Slouží k odkazování na související objekt. Na předchozím obrázku pro všechny objednávky `O`, `O.ChosenMenu` je jeho přidružené nabídky.<br /><br /> Každá role má své vlastní vlastnosti uvedené pod vlastností asociace.|  
-|8|**Násobnost**|Určuje, kolik objektů v této ukončení nesmí být propojení každého objektu na druhém. V tomto příkladu je potřeba propojit každý pořadí přesně jednu nabídku.<br /><br /> **\*** znamená to, že neexistuje žádná horní limit počtu odkazů, které lze provést.|  
-|9|**Generalizace**|*Konkrétní* třídění dědí část definice z *Obecné* třídění. Obecného třídění je na konci šipku konektoru. Operace, přiřazení a atributy jsou zvláštní třídění dědí.<br /><br /> Použití **dědičnosti** nástroj k vytváření generalizace mezi dvěma Klasifikátory.|  
+| **Obrazec** |       **Element**        |                                                                                                                                                             **Popis**                                                                                                                                                              |
+|-----------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     1     |        **Třída**         |                                                           Definice objektů, které sdílejí daný strukturální nebo behaviorální charakteristiky. Další informace najdete v tématu [diagramech tříd vlastnosti typů v UML](../modeling/properties-of-types-on-uml-class-diagrams.md).                                                            |
+|     1     |        Třídění        |                                                                                                             Obecný název třídy, rozhraní nebo výčet. Komponenty, případy použití a actors jsou také Klasifikátory.                                                                                                             |
+|     2     | Sbalit nebo rozbalit ovládací prvek |                                                                                         Pokud nelze zobrazit podrobnosti o třídění, klikněte na rozšíření v levém horním třídění. Budete také muset klikněte na tlačítko [+] v každém segmentu.                                                                                         |
+|     3     |      **Atribut**       |   Zadaná hodnota připojeným ke každé instanci třídění.<br /><br /> Chcete-li přidat atribut, klikněte na tlačítko **atributy** části a potom stiskněte klávesu **ENTER**. Typ podpisu atributu. Další informace najdete v tématu [diagramech tříd vlastnosti atributů v UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md).   |
+|     4     |      **Operace**       | Metoda nebo funkce, které instance klasifikátoru mohou provádět. Chcete-li přidat operaci, klikněte na tlačítko **operace** části a potom stiskněte klávesu **ENTER**. Typ podpisu operace. Další informace najdete v tématu [vlastnosti operací v UML diagramech tříd](../modeling/properties-of-operations-on-uml-class-diagrams.md). |
+|     5     |     **Přidružení**      |                                                                  Vztah mezi dvěma Klasifikátory jako objekty její členové. Další informace najdete v tématu [vlastnosti přidružení v UML diagramech tříd](../modeling/properties-of-associations-on-uml-class-diagrams.md).                                                                   |
+|    5a     |     **Agregace**      |                                                                                                    Přidružení reprezentující relaci sdílené vlastnictví. **Agregace** role vlastník je nastavena na **Shared**.                                                                                                     |
+|    5b     |     **Složení**      |                                                                                                      Přidružení představující vztah část celek. **Agregace** role vlastník je nastavena na **složené**.                                                                                                      |
+|     6     |   **Název přidružení**   |                                                                                                                                         Název přidružení. Název může být prázdný.                                                                                                                                          |
+|     7     |      **Název role**       |                       Název role, to znamená, že jeden konec asociace. Slouží k odkazování na související objekt. Na předchozím obrázku pro všechny objednávky `O`, `O.ChosenMenu` je jeho přidružené nabídky.<br /><br /> Každá role má své vlastní vlastnosti uvedené pod vlastností asociace.                       |
+|     8     |     **Násobnost**     |                                         Určuje, kolik objektů v této ukončení nesmí být propojení každého objektu na druhém. V tomto příkladu je potřeba propojit každý pořadí přesně jednu nabídku.<br /><br /> **\\**\* znamená to, že neexistuje žádná horní limit počtu odkazů, které lze provést.                                         |
+|     9     |    **Generalizace**    |  *Konkrétní* třídění dědí část definice z *Obecné* třídění. Obecného třídění je na konci šipku konektoru. Operace, přiřazení a atributy jsou zvláštní třídění dědí.<br /><br /> Použití **dědičnosti** nástroj k vytváření generalizace mezi dvěma Klasifikátory.   |
   
  ![Balíček, který obsahuje rozhraní a výčet](../modeling/media/uml-classovpackage.png "UML_ClassOvPackage")  
   

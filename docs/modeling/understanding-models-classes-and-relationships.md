@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 12363adb78c4fca7d5ef3416a2642a68a7c3eab7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1101a3e21fa75a180ec2421cdce37aa40bc9656
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861277"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Porozumění modelům, třídám a vztahům
 Jazyka specifického pro doménu (DSL) je definován v jeho souboru definice DSL, společně s jakýkoli vlastní program kód, který může zapisovat. Většina programového kódu v řešení DSL je generována z tohoto souboru.
@@ -135,7 +135,7 @@ Jazyka specifického pro doménu (DSL) je definován v jeho souboru definice DSL
  Konfigurace násobnosti atributu role elementu tak, že zadáte v diagramu nebo úpravou `Multiplicity` vlastnost **vlastnosti** okno. Následující tabulka popisuje nastavení pro tuto vlastnost.
 
 |Násobnost typu|Popis|
-|-----------------------|-----------------|
+|-|-|
 |0.. * (nula n)|Každá instance třídy domény může mít více instancí relace nebo žádné instance vztahu.|
 |0..1 (nula do jednoho)|Každá instance třídy domény může obsahovat více než jednu instanci relace nebo žádné instance vztahu.|
 |1..1 (jeden)|Každá instance doménová třída může mít jednu instanci relace. Nelze vytvořit více než jednu instanci této relace z libovolné instance třídy role. Pokud je povoleno ověření, se zobrazí chyba ověření při jakékoli instance třídy role nemá žádná instance vztahu.|

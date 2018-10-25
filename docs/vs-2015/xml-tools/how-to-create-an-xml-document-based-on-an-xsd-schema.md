@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54d7ead9f759e990b741ac9c5219af693d10a412
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884222"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Postupy: vytvoření dokumentu XML na základě schématu XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "49287296"
   
  Tuto možnost můžete použít v následujících scénářích:  
   
--   Abyste pochopili použití různých konstrukcí ve schématu.  
+- Abyste pochopili použití různých konstrukcí ve schématu.  
   
--   Potvrďte, že schéma co dělá jeho účelem je provádět.  
+- Potvrďte, že schéma co dělá jeho účelem je provádět.  
   
- **Generovat ukázkové XML** funkce je dostupná pouze na globální prvky a vyžaduje platnou sadu schémat XML.  
+  **Generovat ukázkové XML** funkce je dostupná pouze na globální prvky a vyžaduje platnou sadu schémat XML.  
   
- Tato funkce generuje obvykle platný dokumentů XML. Nicméně pokud schéma obsahuje jeden nebo více z následujících akcí, ukázka nemusí být platné:  
+  Tato funkce generuje obvykle platný dokumentů XML. Nicméně pokud schéma obsahuje jeden nebo více z následujících akcí, ukázka nemusí být platné:  
   
--   `xs:key`, `xs:keyref`, A `xs:unique` omezení identity.  
+- `xs:key`, `xs:keyref`, A `xs:unique` omezení identity.  
   
--   `xs:pattern` omezující vlastnosti.  
+- `xs:pattern` omezující vlastnosti.  
   
--   Výčty `xs:QName` typu.  
+- Výčty `xs:QName` typu.  
   
--   `xs:ENTITY`, `xs:ENTITIES`, a `xs:NOTATION` typy.  
+- `xs:ENTITY`, `xs:ENTITIES`, a `xs:NOTATION` typy.  
   
- Všimněte si také, že `xs:base64Binary` obsah se bude generovat jenom v případě, že dojde k vyčíslení ve schématu pro daný typ.  
+  Všimněte si také, že `xs:base64Binary` obsah se bude generovat jenom v případě, že dojde k vyčíslení ve schématu pro daný typ.  
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Generovat dokument XML instance na základě souboru XSD  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 338e8e82e8b8f904c6f7f1e9e5f079e3de788bd3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3eff05df37dd1d15774fb059396f3f94b0fff2a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883455"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Rychlé akce pomocí žárovek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Ikony žárovky jsou novou funkcí produktivitu v sadě Visual Studio 2015. Jsou
   
 ## <a name="to-see-a-light-bulb"></a>Chcete-li zobrazit žárovky  
   
-1.  V mnoha případech se zobrazí návrhy samovolně při najetí myši v místě chybu nebo do levého okraje editoru při přesunutí blikající kurzor na řádek, který v něm došlo k chybě. Když se zobrazí červená vlnovka, myši a zobrazit žárovky. Může také způsobit žárovky má zobrazit, pokud používáte myš či klávesnice k přechodu na libovolné místo na řádku kde k problému dochází.  
+1. V mnoha případech se zobrazí návrhy samovolně při najetí myši v místě chybu nebo do levého okraje editoru při přesunutí blikající kurzor na řádek, který v něm došlo k chybě. Když se zobrazí červená vlnovka, myši a zobrazit žárovky. Může také způsobit žárovky má zobrazit, pokud používáte myš či klávesnice k přechodu na libovolné místo na řádku kde k problému dochází.  
   
-2.  Stisknutím klávesy **Ctrl +.** kdekoli v řádku pro vyvolání žárovky a přejít přímo na seznam potenciálních oprav.  
+2. Stisknutím klávesy **Ctrl +.** kdekoli v řádku pro vyvolání žárovky a přejít přímo na seznam potenciálních oprav.  
   
- ![Žárovka s najedete myší](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")  
+   ![Žárovka s najedete myší](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")  
   
 ## <a name="to-see-potential-fixes"></a>Chcete-li zobrazit možné opravy  
  Klikněte na šipku dolů nebo zobrazit potenciál opravy odkaz zobrazíte seznam rychlé akce, které pro vás může trvat žárovky.  

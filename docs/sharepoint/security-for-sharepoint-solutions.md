@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3febd2a9a3d2450740b08cac4ad8d3c891386c9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878762"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Zabezpečení pro řešení služby SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zahrnuje následující funkce, které pomáhají zvýšit zabezpečení aplikací služby SharePoint.
@@ -34,7 +34,7 @@ ms.locfileid: "42626130"
 ## <a name="allowpartiallytrustedcallers-attribute"></a>Atribut AllowPartiallyTrustedCallers
  Ve výchozím nastavení můžete přístup pouze aplikace, které jsou plně důvěryhodný pro security (CAS) systémem přístup kódu modulu runtime sestavení sdílené spravovaného kódu. Označení plně důvěryhodná sestavení pomocí atributu AllowPartiallyTrustedCallers umožňuje částečně důvěryhodné sestavení k němu přistupovat.
 
- Atribut AllowPartiallyTrustedCallers je přidán do jakékoli řešení služby SharePoint, který není nasazený do systému globální mezipaměti sestavení ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). To zahrnuje řešení v izolovaném prostoru nebo nasazení řešení do adresáře Bin aplikace služby SharePoint. Další informace najdete v tématu [změny zabezpečení verze 1 pro rozhraní Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) a [nasazení webové části SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
+ Atribut AllowPartiallyTrustedCallers je přidán do jakékoli řešení služby SharePoint, který není nasazený do systému globální mezipaměti sestavení ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). To zahrnuje řešení v izolovaném prostoru nebo nasazení řešení do adresáře Bin aplikace služby SharePoint. Další informace najdete v tématu [změny zabezpečení verze 1 pro rozhraní Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) a [nasazení webové části SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
 
 ## <a name="safe-against-script-property"></a>Zabezpečeno proti vlastnosti skriptu
  *Skriptu* je vložení potenciálně škodlivý kód do ovládacích prvků nebo webové stránky. Přispěvatelé pomáhá chránit weby Sharepointu 2010 proti injektáži skriptu, nelze zobrazit nebo upravit webové části nebo jejich vlastnosti ve výchozím nastavení. Toto chování se řídí tím SafeControl – atribut SafeAgainstScript. V [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], nastavte tento atribut v položce projektu **položky bezpečných ovládacích prvků** podvlastností **bezpečné skriptu proti**. Další informace najdete v tématu [poskytují informace o nasazení balíčků a v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) a [postupy: označení ovládacích prvků jako bezpečných](../sharepoint/how-to-mark-controls-as-safe-controls.md).

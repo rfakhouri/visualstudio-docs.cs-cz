@@ -16,12 +16,12 @@ ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc981ffd7f2e4c9ece1e559dd6b588d29edb59dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25ba131512c8c57e9ddda21526ef76177d4ca4a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839684"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Pomocí Správce Text monitorování globální nastavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ Pokud se rozhodnete implementovat základní editor, je třeba sledovat změny, 
 ## <a name="text-manager-functions"></a>Funkce text Manageru  
  Textový správce vyvolává události pro celou řadu nastavení, včetně následujících:  
   
--   Určuje, zda vyrovnávací paměti je pod správou zdrojového kódu  
+- Určuje, zda vyrovnávací paměti je pod správou zdrojového kódu  
   
--   Postup registrace pro oznámení o změně souboru  
+- Postup registrace pro oznámení o změně souboru  
   
--   Tom, jak udržovat přehled o zobrazení, které jsou spojeny s určitým vyrovnávací paměti  
+- Tom, jak udržovat přehled o zobrazení, které jsou spojeny s určitým vyrovnávací paměti  
   
--   Předvolby zabarvení textu  
+- Předvolby zabarvení textu  
   
--   Karta oproti předvolby místa  
+- Karta oproti předvolby místa  
   
- Předvolby, které jsou jedinečné pro daný jazyk nespravuje textový správce. Tato nastavení se musí spravovat přes každá služba jazyka.  
+  Předvolby, které jsou jedinečné pro daný jazyk nespravuje textový správce. Tato nastavení se musí spravovat přes každá služba jazyka.  
   
- Oznámení události pro textový správce poskytuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> rozhraní. Toto rozhraní implementují u svého klienta vyvolá objekt zpracování událostí textový správce. Tyto události můžete zaregistrovat pomocí <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> rozhraní na textový správce.  
+  Oznámení události pro textový správce poskytuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> rozhraní. Toto rozhraní implementují u svého klienta vyvolá objekt zpracování událostí textový správce. Tyto události můžete zaregistrovat pomocí <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> rozhraní na textový správce.  
   
 ## <a name="see-also"></a>Viz také  
  [Uvnitř základní Editor](../extensibility/inside-the-core-editor.md)   

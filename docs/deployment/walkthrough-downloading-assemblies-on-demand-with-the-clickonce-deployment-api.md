@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de6698f6e635a151a0f78eecbb90f4d7bd525969
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d6338044dff5aa5b0555b15b689c04ddd406c50f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151272"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887654"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Návod: Stahování sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce
 Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se stáhne při prvním spuštění aplikace. Může však mít částí aplikace, které jsou používány malého počtu uživatelů. V takovém případě budete chtít stáhnout sestavení pouze v případě, že můžete vytvořit jeden z jeho typy. Následující návod ukazuje, jak označit určité sestavení v aplikaci jako "volitelné", a jak si je stáhnout pomocí tříd v <xref:System.Deployment.Application> obor názvů, když je modul CLR (CLR) požaduje.  
@@ -42,40 +42,40 @@ Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick]
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly"></a>Chcete-li vytvořit projekt, který používá sestavení na vyžádání  
   
-1.  Vytvořte adresář ClickOnceOnDemand.  
+1. Vytvořte adresář ClickOnceOnDemand.  
   
-2.  Otevřete příkazový řádek Windows SDK nebo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku.  
+2. Otevřete příkazový řádek Windows SDK nebo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku.  
   
-3.  Přejděte do adresáře, ClickOnceOnDemand.  
+3. Přejděte do adresáře, ClickOnceOnDemand.  
   
-4.  Vygenerujte pár veřejného a privátního klíče pomocí následujícího příkazu:  
+4. Vygenerujte pár veřejného a privátního klíče pomocí následujícího příkazu:  
   
-    ```cmd  
-    sn -k TestKey.snk  
-    ```  
+   ```cmd  
+   sn -k TestKey.snk  
+   ```  
   
-5.  Pomocí poznámkového bloku nebo jiného textového editoru, definujte třídu s názvem `DynamicClass` s jedinou vlastnost s názvem `Message`.  
+5. Pomocí poznámkového bloku nebo jiného textového editoru, definujte třídu s názvem `DynamicClass` s jedinou vlastnost s názvem `Message`.  
   
-     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
-     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]  
+    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
+    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]  
   
-6.  Uložte text jako soubor s názvem *ClickOnceLibrary.cs* nebo *ClickOnceLibrary.vb*, v závislosti na jazyku, se používá *ClickOnceOnDemand* adresáře.  
+6. Uložte text jako soubor s názvem *ClickOnceLibrary.cs* nebo *ClickOnceLibrary.vb*, v závislosti na jazyku, se používá *ClickOnceOnDemand* adresáře.  
   
-7.  Kompilaci do sestavení.  
+7. Kompilaci do sestavení.  
   
-    ```csharp  
-    csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
-    ```  
+   ```csharp  
+   csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
+   ```  
   
-    ```vb  
-    vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb  
-    ```  
+   ```vb  
+   vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb  
+   ```  
   
-8.  K získání tokenu veřejného klíče pro sestavení, použijte následující příkaz:  
+8. K získání tokenu veřejného klíče pro sestavení, použijte následující příkaz:  
   
-    ```cmd  
-    sn -T ClickOnceLibrary.dll  
-    ```  
+   ```cmd  
+   sn -T ClickOnceLibrary.dll  
+   ```  
   
 9. Vytvořte nový soubor pomocí textového editoru a zadejte následující kód. Tento kód vytvoří aplikaci Windows Forms, který stahuje ClickOnceLibrary sestavení, pokud je to požadováno.  
   
@@ -118,15 +118,15 @@ Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick]
   
 #### <a name="to-test-your-on-demand-assembly"></a>K otestování vašeho sestavení na vyžádání  
   
-1.  Nahrajte vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení na webový server.  
+1. Nahrajte vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení na webový server.  
   
-2.  Spusťte aplikaci nasazenou pomocí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] z webového prohlížeče zadáním adresy URL do manifestu nasazení. Při volání vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace `ClickOnceOnDemand`a nahrajte ho do kořenového adresáře adatum.com, adresa URL bude vypadat takto:  
+2. Spusťte aplikaci nasazenou pomocí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] z webového prohlížeče zadáním adresy URL do manifestu nasazení. Při volání vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace `ClickOnceOnDemand`a nahrajte ho do kořenového adresáře adatum.com, adresa URL bude vypadat takto:  
   
-    ```  
-    http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
-    ```  
+   ```  
+   http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
+   ```  
   
-3.  Jakmile se zobrazí váš hlavní formulář, stiskněte <xref:System.Windows.Forms.Button>. Měli byste vidět řetězec v okně zprávy pole, která čte "Hello, World!".  
+3. Jakmile se zobrazí váš hlavní formulář, stiskněte <xref:System.Windows.Forms.Button>. Měli byste vidět řetězec v okně zprávy pole, která čte "Hello, World!".  
   
 ## <a name="see-also"></a>Viz také:  
  <xref:System.Deployment.Application.ApplicationDeployment>

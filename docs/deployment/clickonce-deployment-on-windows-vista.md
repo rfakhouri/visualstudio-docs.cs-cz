@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 815186959d4a8cd1daea46c69bda976eb4483c1f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0389665349ae9c39a0f820bc047af6cc4db2b683
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282583"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867530"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>ClickOnce – nasazení v systému Windows Vista
 
@@ -32,25 +32,25 @@ Vytváření aplikací v sadě Visual Studio pro řízení uživatelských účt
 
 Visual Studio poskytuje následující možnosti pro generování manifestu:  
   
--   Použití vloženého manifestu. Vložit data nástroje Řízení uživatelských účtů ve spustitelném souboru aplikace a spusťte v režimu normálního uživatele.  
+- Použití vloženého manifestu. Vložit data nástroje Řízení uživatelských účtů ve spustitelném souboru aplikace a spusťte v režimu normálního uživatele.  
   
-     Toto je výchozí nastavení (Pokud nechcete použít ClickOnce). Toto nastavení podporuje obvyklým způsobem, ve kterém aplikace Visual Studio pracuje v systému Windows Vista, s generování interní a externí manifest pomocí `AsInvoker`.  
+   Toto je výchozí nastavení (Pokud nechcete použít ClickOnce). Toto nastavení podporuje obvyklým způsobem, ve kterém aplikace Visual Studio pracuje v systému Windows Vista, s generování interní a externí manifest pomocí `AsInvoker`.  
   
--   Použijte externí manifest. Generovat manifest externí pomocí *app.manifest*.  
+- Použijte externí manifest. Generovat manifest externí pomocí *app.manifest*.  
   
-     Tím se vygeneruje pouze externím manifestem podle informací uvedených v *app.manifest*. Při publikování aplikace pomocí technologie ClickOnce nebo COM bez registrace, sada Visual Studio přidá *app.manifest* do projektu a pak přidá tuto možnost.  
+   Tím se vygeneruje pouze externím manifestem podle informací uvedených v *app.manifest*. Při publikování aplikace pomocí technologie ClickOnce nebo COM bez registrace, sada Visual Studio přidá *app.manifest* do projektu a pak přidá tuto možnost.  
   
--   Použít žádný manifest. Vytvořte aplikaci bez manifestu.  
+- Použít žádný manifest. Vytvořte aplikaci bez manifestu.  
   
-     Tento přístup se také označuje jako *virtualizace*. Tuto možnost použijte, pokud z důvodu kompatibility se stávajícími aplikacemi z předchozích verzí sady Visual Studio.  
+   Tento přístup se také označuje jako *virtualizace*. Tuto možnost použijte, pokud z důvodu kompatibility se stávajícími aplikacemi z předchozích verzí sady Visual Studio.  
   
- Nové vlastnosti jsou k dispozici na **aplikace** stránky Návrháře projektu (Visual C# pouze pro projekty) a ve formátu souboru projektu MSBuild.  
+  Nové vlastnosti jsou k dispozici na **aplikace** stránky Návrháře projektu (Visual C# pouze pro projekty) a ve formátu souboru projektu MSBuild.  
   
- Metoda konfigurace generování manifestu nástroje Řízení uživatelských účtů v integrovaném vývojovém prostředí sady Visual Studio se liší v závislosti na typu projektu (Visual C# nebo Visual Basic).  
+  Metoda konfigurace generování manifestu nástroje Řízení uživatelských účtů v integrovaném vývojovém prostředí sady Visual Studio se liší v závislosti na typu projektu (Visual C# nebo Visual Basic).  
   
-   * Informace o konfiguraci nástroje pro generování manifestu projekty Visual C# najdete v tématu [stránka aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md).  
+  * Informace o konfiguraci nástroje pro generování manifestu projekty Visual C# najdete v tématu [stránka aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md).  
   
-   * Informace o konfiguraci projektů jazyka Visual Basic pro generování manifestu naleznete v tématu [stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+  * Informace o konfiguraci projektů jazyka Visual Basic pro generování manifestu naleznete v tématu [stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)   

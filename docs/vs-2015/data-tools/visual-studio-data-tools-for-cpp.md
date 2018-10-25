@@ -12,12 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: a059cb5c0f295bc7f14ff8a0ce30ed21e4e70145
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 030e142911078aec36b01335c8fb3aaa4d82ac78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849642"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio data tools pro C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,44 +31,44 @@ Nativní kód C++ často poskytují nejrychlejší výkon při přístupu k zdro
   
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Pro připojení na instanci localDB prostřednictvím rozhraní ODBC a jazyku SQL Native Client z aplikace v jazyce C++  
   
-1.  Nainstalujte SQL Server Data Tools.  
+1. Nainstalujte SQL Server Data Tools.  
   
-2.  Pokud budete potřebovat pro připojení k ukázkové databáze SQL, stáhněte si databázi Northwind a rozbalte ho do nového umístění.  
+2. Pokud budete potřebovat pro připojení k ukázkové databáze SQL, stáhněte si databázi Northwind a rozbalte ho do nového umístění.  
   
-3.  Slouží k připojení souboru rozzipovaný Northwind.mdf na instanci localDB systému SQL Server Management Studio. Při spuštění systému SQL Server Management Studio, připojte se k (localdb) \MSSQLLocalDB.  
+3. Slouží k připojení souboru rozzipovaný Northwind.mdf na instanci localDB systému SQL Server Management Studio. Při spuštění systému SQL Server Management Studio, připojte se k (localdb) \MSSQLLocalDB.  
   
-     ![Dialogové okno připojení přes SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS připojit dialogového okna")  
+    ![Dialogové okno připojení přes SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS připojit dialogového okna")  
   
-     Klikněte pravým tlačítkem na uzel localdb v levém podokně a zvolte **připojit**.  
+    Klikněte pravým tlačítkem na uzel localdb v levém podokně a zvolte **připojit**.  
   
-     ![SSMS připojit databáze](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS připojit databáze")  
+    ![SSMS připojit databáze](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS připojit databáze")  
   
-4.  Stáhněte si ukázku Windows SDK rozhraní ODBC a rozbalte ho do nového umístění. Tento příklad ukazuje základní příkazy rozhraní ODBC, které se používají pro připojení k databázi a problém dotazy a příkazy. Další informace o těchto funkcích v [Microsoft připojení ODBC (Open Database)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). Při prvním načtení řešení (je ve složce C++), Visual Studio nabídne upgrade řešení na aktuální verzi sady Visual Studio. Klikněte na tlačítko **Ano**.  
+4. Stáhněte si ukázku Windows SDK rozhraní ODBC a rozbalte ho do nového umístění. Tento příklad ukazuje základní příkazy rozhraní ODBC, které se používají pro připojení k databázi a problém dotazy a příkazy. Další informace o těchto funkcích v [Microsoft připojení ODBC (Open Database)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). Při prvním načtení řešení (je ve složce C++), Visual Studio nabídne upgrade řešení na aktuální verzi sady Visual Studio. Klikněte na tlačítko **Ano**.  
   
-5.  Použití nativního klienta, budete potřebovat jeho hlavičkový soubor a soubor lib. Tyto soubory obsahují funkce a definice specifické pro SQL Server, nad rámec funkcí ODBC definované v sql.h. V **projektu** > **vlastnosti** > **adresáře VC ++**, přidejte adresář include následující:  
+5. Použití nativního klienta, budete potřebovat jeho hlavičkový soubor a soubor lib. Tyto soubory obsahují funkce a definice specifické pro SQL Server, nad rámec funkcí ODBC definované v sql.h. V **projektu** > **vlastnosti** > **adresáře VC ++**, přidejte adresář include následující:  
   
- **\<systémová jednotka >: \Program Files\Microsoft SQL Server\110\SDK\Include** a tento adresář knihovny:  
+   **\<systémová jednotka >: \Program Files\Microsoft SQL Server\110\SDK\Include** a tento adresář knihovny:  
   
- **c:\Program Files\Microsoft SQL Server\110\SDK\Lib**  
+   **c:\Program Files\Microsoft SQL Server\110\SDK\Lib**  
   
-6.  Přidejte tyto řádky odbcsql.cpp. #Define brání relevantní technologie OLE DB definice z kompilován.  
+6. Přidejte tyto řádky odbcsql.cpp. #Define brání relevantní technologie OLE DB definice z kompilován.  
   
-    ```  
-    #define _SQLNCLI_ODBC_  
-    #include <sqlncli.h>  
-    ```  
+   ```  
+   #define _SQLNCLI_ODBC_  
+   #include <sqlncli.h>  
+   ```  
   
-     Všimněte si, že ukázky nepoužívá ve skutečnosti některé funkce nativního klienta, takže předchozí kroky nejsou nutné, aby se zkompilovat a spustit. Ale projekt je nyní nakonfigurován pro použití této funkce. Další informace najdete v tématu [SQL Server nativního klienta programování](https://msdn.microsoft.com/library/ms130892\(v=sql.130\).aspx).  
+    Všimněte si, že ukázky nepoužívá ve skutečnosti některé funkce nativního klienta, takže předchozí kroky nejsou nutné, aby se zkompilovat a spustit. Ale projekt je nyní nakonfigurován pro použití této funkce. Další informace najdete v tématu [SQL Server nativního klienta programování](https://msdn.microsoft.com/library/ms130892\(v=sql.130\).aspx).  
   
-7.  Určete, který ovladač pro použití v subsystém rozhraní ODBC. Ukázka předá atribut ovladač připojovacího řetězce v jako argument příkazového řádku. V **projektu** > **vlastnosti** > **ladění**, přidejte tento argument příkazu:  
+7. Určete, který ovladač pro použití v subsystém rozhraní ODBC. Ukázka předá atribut ovladač připojovacího řetězce v jako argument příkazového řádku. V **projektu** > **vlastnosti** > **ladění**, přidejte tento argument příkazu:  
   
-    ```  
-    DRIVER="SQL Server Native Client 11.0"  
-    ```  
+   ```  
+   DRIVER="SQL Server Native Client 11.0"  
+   ```  
   
-8.  Stisknutím klávesy F5 sestavte a spusťte aplikaci. Zobrazí se dialogové okno z ovladače, který vás vyzve k zadání databáze. Zadejte `(localdb)\MSSQLLocalDB`a zkontrolujte **použít důvěryhodné připojení**. Stisknutím klávesy **OK**. Měli byste vidět konzoly s zprávy, které označují úspěšné připojení. Měli byste vidět také příkazového řádku můžete zadat v příkazu SQL. Následující obrazovka ukazuje příklad dotazu a výsledky:  
+8. Stisknutím klávesy F5 sestavte a spusťte aplikaci. Zobrazí se dialogové okno z ovladače, který vás vyzve k zadání databáze. Zadejte `(localdb)\MSSQLLocalDB`a zkontrolujte **použít důvěryhodné připojení**. Stisknutím klávesy **OK**. Měli byste vidět konzoly s zprávy, které označují úspěšné připojení. Měli byste vidět také příkazového řádku můžete zadat v příkazu SQL. Následující obrazovka ukazuje příklad dotazu a výsledky:  
   
-     ![ODBC ukázkový výstup dotazu](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC ukázkový dotaz výstup")  
+    ![ODBC ukázkový výstup dotazu](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC ukázkový dotaz výstup")  
   
 ## <a name="see-also"></a>Viz také  
  [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

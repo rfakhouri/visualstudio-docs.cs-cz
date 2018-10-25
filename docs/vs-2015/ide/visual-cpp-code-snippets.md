@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed64d9dde53b31cfe5f52ce708e4ee96d91fe8ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861357"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmenty kódu v jazyce Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Fragmenty kódu v sadě Visual Studio slouží k přidání běžně používá 
 ## <a name="inserting-a-code-snippet"></a>Vložení fragmentu kódu  
  Vložit fragment kódu, otevřete soubor kódu jazyka C++ (.cpp a .h), klikněte někam do souboru a proveďte jednu z následujících akcí:  
   
--   Klikněte pravým tlačítkem a získat kontextovou nabídku a vyberte **Vložit fragment**  
+- Klikněte pravým tlačítkem a získat kontextovou nabídku a vyberte **Vložit fragment**  
   
--   V **upravit / IntelliSense** příkaz **Vložit fragment**  
+- V **upravit / IntelliSense** příkaz **Vložit fragment**  
   
--   Použití klávesových zkratek: **CTRL + K, X**  
+- Použití klávesových zkratek: **CTRL + K, X**  
   
- Zobrazí se seznam možností počínaje **#if**. Když vyberete **#if**, byste měli vidět následující kód do souboru přidán:  
+  Zobrazí se seznam možností počínaje **#if**. Když vyberete **#if**, byste měli vidět následující kód do souboru přidán:  
   
 ```cpp  
 #if 0  
@@ -50,13 +50,13 @@ Fragmenty kódu v sadě Visual Studio slouží k přidání běžně používá 
 ## <a name="using-a-code-snippet-to-surround-selected-code"></a>Fragment kódu pomocí ohraničit vybraný kód  
  Použití kódu před a za vybraný kód, vyberte řádek (nebo více řádků) a proveďte jednu z následujících akcí:  
   
-1.  Klikněte pravým tlačítkem a získat kontextovou nabídku a vyberte **obklopit fragmentem**  
+1. Klikněte pravým tlačítkem a získat kontextovou nabídku a vyberte **obklopit fragmentem**  
   
-2.  V **upravit / IntelliSense** příkaz **obklopit fragmentem**  
+2. V **upravit / IntelliSense** příkaz **obklopit fragmentem**  
   
-3.  Použití klávesových zkratek: **K, CTRL + S**  
+3. Použití klávesových zkratek: **K, CTRL + S**  
   
- Vyberte **#if**. By měl vypadat přibližně takto:  
+   Vyberte **#if**. By měl vypadat přibližně takto:  
   
 ```cpp  
 #if 0  

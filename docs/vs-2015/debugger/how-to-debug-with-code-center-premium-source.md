@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fa890e15a27a3d54c420520a71119f794fd124c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac76a294c8f6b536da93f06afe6e423ca593b84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824162"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Postupy: Ladění se zdrojem webu Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ S [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ladicího programu,
   
 ### <a name="to-prepare-for-debugging-with-code-center-premium"></a>Příprava ladění s Code Center Premium  
   
-1.  Připojte čtečky čipových karet a vložte kartu, kterou jste získali z Shared Source Initiative.  
+1. Připojte čtečky čipových karet a vložte kartu, kterou jste získali z Shared Source Initiative.  
   
-2.  Spusťte sadu Visual Studio.  
+2. Spusťte sadu Visual Studio.  
   
-3.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+3. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
-4.  V **možnosti** dialogovém okně Otevřít **ladění** uzel a klikněte na tlačítko **Obecné**.  
+4. V **možnosti** dialogovém okně Otevřít **ladění** uzel a klikněte na tlačítko **Obecné**.  
   
-5.  Zrušte **povolit volbu pouze vlastní kód (pouze spravované)** zaškrtávací políčko.  
+5. Zrušte **povolit volbu pouze vlastní kód (pouze spravované)** zaškrtávací políčko.  
   
-6.  Vyberte **povolit podporu zdrojového serveru**.  
+6. Vyberte **povolit podporu zdrojového serveru**.  
   
-7.  Vymazat **vyžadovat, aby zdrojové soubory shodovaly původní verze**.  
+7. Vymazat **vyžadovat, aby zdrojové soubory shodovaly původní verze**.  
   
-8.  V části **ladění** uzel, klikněte na tlačítko **symboly**.  
+8. V části **ladění** uzel, klikněte na tlačítko **symboly**.  
   
 9. V **soubor symbolů (PDB) umístění** políčka, zrušte **serveru symbolů Microsoft** zaškrtněte políčko a přidáním následujících umístění:  
   
@@ -60,18 +60,18 @@ S [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ladicího programu,
   
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
-    > [!NOTE]
-    >  Nezapomeňte zahrnout do adresy koncové lomítko**/** na konci cesty.  
+   > [!NOTE]
+   >  Nezapomeňte zahrnout do adresy koncové lomítko<strong>/</strong> na konci cesty.  
   
      Přesuňte tato místa k hornímu okraji seznam a ověřit, že tyto symboly jsou načten jako první.  
   
-    > [!NOTE]
-    >  Tato umístění Code Center Premium musí být uvedena nejprve tak, aby byly první umístění, které jsou načteny. V sadě Visual Studio 2010, nelze přesunout všechny výše uvedené servery **Microsoft Symbol Servers** položku, která je důvod, proč je nutné zrušit zaškrtnutí políčka.  
-    >   
-    >  Chcete-li načíst symboly z symbolů Microsoft během relace ladění, postupujte takto:  
-    >   
-    >  1.  Na **ladění** nabídce zvolte **Windows** a klikněte na tlačítko **moduly**.  
-    > 2.  Vyberte modul, který chcete symboly pro a pak otevřete místní nabídku. Zvolte **načíst symboly z** a klikněte na tlačítko **Microsoft Symbol Servers**.  
+   > [!NOTE]
+   >  Tato umístění Code Center Premium musí být uvedena nejprve tak, aby byly první umístění, které jsou načteny. V sadě Visual Studio 2010, nelze přesunout všechny výše uvedené servery **Microsoft Symbol Servers** položku, která je důvod, proč je nutné zrušit zaškrtnutí políčka.  
+   > 
+   >  Chcete-li načíst symboly z symbolů Microsoft během relace ladění, postupujte takto:  
+   > 
+   > 1. Na **ladění** nabídce zvolte **Windows** a klikněte na tlačítko **moduly**.  
+   >    2.  Vyberte modul, který chcete symboly pro a pak otevřete místní nabídku. Zvolte **načíst symboly z** a klikněte na tlačítko **Microsoft Symbol Servers**.  
   
 10. V **mezipaměti symbolů ze serverů symbolů v tomto adresáři** zadejte umístění, jako `C:\symbols` kde Code Center Premium můžete ukládat do mezipaměti symbolů. Ukládání do mezipaměti symbolů může výrazně zlepšit výkon během ladění.  
   
@@ -109,22 +109,22 @@ S [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ladicího programu,
   
 ### <a name="to-debug-source-code-from-an-existing-solution"></a>Chcete-li ladit zdrojový kód z existujícího řešení  
   
-1.  V **Průzkumníka řešení**, otevřete místní nabídku řešení a klikněte na tlačítko **vlastnosti**.  
+1. V **Průzkumníka řešení**, otevřete místní nabídku řešení a klikněte na tlačítko **vlastnosti**.  
   
-2.  V dialogovém okně stránky vlastností řešení vyberte **zdrojové soubory ladění** v **společné vlastnosti** uzlu.  
+2. V dialogovém okně stránky vlastností řešení vyberte **zdrojové soubory ladění** v **společné vlastnosti** uzlu.  
   
-3.  Přidat do následujícího umístění **adresáře, který obsahuje zdrojové soubory** seznamu:  
+3. Přidat do následujícího umístění **adresáře, který obsahuje zdrojové soubory** seznamu:  
   
-     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
+    `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
-    > [!NOTE]
-    >  Nezapomeňte zahrnout do adresy koncové lomítko**/** na konci cesty.  
+   > [!NOTE]
+   >  Nezapomeňte zahrnout do adresy koncové lomítko<strong>/</strong> na konci cesty.  
   
-4.  Pro každý spravovaný projekt ve vašem řešení proveďte následující  
+4. Pro každý spravovaný projekt ve vašem řešení proveďte následující  
   
-    1.  V Průzkumníku řešení otevřete místní nabídku pro projekt a klikněte na tlačítko **vlastnosti**.  
+   1.  V Průzkumníku řešení otevřete místní nabídku pro projekt a klikněte na tlačítko **vlastnosti**.  
   
-    2.  Vyberte **ladění** a klikněte na tlačítko **povolit ladění kódu unmanged**.  
+   2.  Vyberte **ladění** a klikněte na tlačítko **povolit ladění kódu unmanged**.  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Chcete-li ladit vaše řešení se zdrojem webu Code Center Premium  
   

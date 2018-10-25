@@ -20,12 +20,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867068"
 ---
 # <a name="extending-javascript-intellisense"></a>Rozšíření JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,13 +84,13 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Do kódu rozšíření, můžete vytvořit pomocí obslužné rutiny pro následující typy událostí `addEventListener`:  
   
--   `statementcompletion`, který přidá obslužnou rutinu pro událost dokončení příkazu. Dokončování příkazů obsahuje seznam členů pro konkrétní typ, který se zobrazí po zadání speciální znak, jako je tečka (.) nebo seznam identifikátorů, které se zobrazí při psaní nebo když stisknete kombinaci kláves CTRL + J. Obslužná rutina přijímá události objektu typu `CompletionEvent`, která podporuje následující členy: [položky vlastnost](#Items), [vlastnost cíle](#Target), [vlastnost targetName](#TargetName), a [oboru vlastnost](#Scope).  
+- `statementcompletion`, který přidá obslužnou rutinu pro událost dokončení příkazu. Dokončování příkazů obsahuje seznam členů pro konkrétní typ, který se zobrazí po zadání speciální znak, jako je tečka (.) nebo seznam identifikátorů, které se zobrazí při psaní nebo když stisknete kombinaci kláves CTRL + J. Obslužná rutina přijímá události objektu typu `CompletionEvent`, která podporuje následující členy: [položky vlastnost](#Items), [vlastnost cíle](#Target), [vlastnost targetName](#TargetName), a [oboru vlastnost](#Scope).  
   
--   `signaturehelp`, který přidá obslužnou rutinu pro informace o parametru technologie IntelliSense. Informace o parametrech poskytuje informace o číslo, názvech a typech parametrů vyžadovaných funkcí. Obslužná rutina přijímá události objektu typu `SignatureHelpEvent`, která podporuje následující členy: [vlastnost cíle](#Target), [parentObject vlastnost](#ParentObject), [functionComments vlastnost](#FunctionComments), [functionHelp vlastnost](#FunctionHelp).  
+- `signaturehelp`, který přidá obslužnou rutinu pro informace o parametru technologie IntelliSense. Informace o parametrech poskytuje informace o číslo, názvech a typech parametrů vyžadovaných funkcí. Obslužná rutina přijímá události objektu typu `SignatureHelpEvent`, která podporuje následující členy: [vlastnost cíle](#Target), [parentObject vlastnost](#ParentObject), [functionComments vlastnost](#FunctionComments), [functionHelp vlastnost](#FunctionHelp).  
   
--   `statementcompletionhint`, který přidá obslužnou rutinu pro rychlé informace technologie IntelliSense. Místní pole Rychlé informace zobrazí úplnou deklaraci pro identifikátory v kódu. Obslužná rutina přijímá události objektu typu `CompletionHintEvent`, která podporuje následující členy: [completionItem vlastnost](#CompletionItem), a [symbolHelp vlastnost](#SymbolHelp).  
+- `statementcompletionhint`, který přidá obslužnou rutinu pro rychlé informace technologie IntelliSense. Místní pole Rychlé informace zobrazí úplnou deklaraci pro identifikátory v kódu. Obslužná rutina přijímá události objektu typu `CompletionHintEvent`, která podporuje následující členy: [completionItem vlastnost](#CompletionItem), a [symbolHelp vlastnost](#SymbolHelp).  
   
- Příklady, které ukazují funkce technologie IntelliSense, jako je doplňování výrazů a informace o parametrech, rychlé informace najdete v tématu [pomocí technologie IntelliSense](../ide/using-intellisense.md).  
+  Příklady, které ukazují funkce technologie IntelliSense, jako je doplňování výrazů a informace o parametrech, rychlé informace najdete v tématu [pomocí technologie IntelliSense](../ide/using-intellisense.md).  
   
 > [!NOTE]
 >  V jazyce JavaScript rychlé informace odkazuje na místním okně, které se zobrazí napravo od seznamu dokončení. Rychlé informace nelze vyvolat ručně.  

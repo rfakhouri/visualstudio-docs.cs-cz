@@ -24,12 +24,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: a8a544f954ed80e9adb41e0730960c4947f6357a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f4412c067ffd43a14a62cc722cf60ca1a883d9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820288"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Nasazování komponent COM s ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,46 +91,46 @@ Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Souč�
   
 ##### <a name="to-create-a-windows-based-application-using-a-com-component"></a>Vytvoření aplikace založené na Windows pomocí komponenty modelu COM  
   
-1.  Pomocí jazyka Visual Basic z **souboru** nabídky, klikněte na tlačítko **nový**, pak **projektu**.  
+1. Pomocí jazyka Visual Basic z **souboru** nabídky, klikněte na tlačítko **nový**, pak **projektu**.  
   
-2.  V **nový projekt** dialogové okno, vyberte **jazyka Visual Basic** uzel a vyberte možnost **aplikace Windows**. V **název** zadejte `RegFreeComDemo`.  
+2. V **nový projekt** dialogové okno, vyberte **jazyka Visual Basic** uzel a vyberte možnost **aplikace Windows**. V **název** zadejte `RegFreeComDemo`.  
   
-3.  V **Průzkumníka řešení**, klikněte na tlačítko **zobrazit všechny soubory** tlačítko Zobrazit odkazy projektu.  
+3. V **Průzkumníka řešení**, klikněte na tlačítko **zobrazit všechny soubory** tlačítko Zobrazit odkazy projektu.  
   
-4.  Klikněte pravým tlačítkem myši **odkazy** uzel a vyberte možnost **přidat odkaz** v místní nabídce.  
+4. Klikněte pravým tlačítkem myši **odkazy** uzel a vyberte možnost **přidat odkaz** v místní nabídce.  
   
-5.  V **přidat odkaz** dialogové okno, klikněte na tlačítko **Procházet** kartu, přejděte na VB6Ahoj.dll a pak ho vyberte.  
+5. V **přidat odkaz** dialogové okno, klikněte na tlačítko **Procházet** kartu, přejděte na VB6Ahoj.dll a pak ho vyberte.  
   
-     A **VB6Ahoj** odkazu se zobrazí v seznamu odkazů.  
+    A **VB6Ahoj** odkazu se zobrazí v seznamu odkazů.  
   
-6.  Přejděte **nástrojů**, vyberte **tlačítko** ovládací prvek a přetáhněte ho na **Form1** formuláře.  
+6. Přejděte **nástrojů**, vyberte **tlačítko** ovládací prvek a přetáhněte ho na **Form1** formuláře.  
   
-7.  V **vlastnosti** tlačítka nastavte okně **Text** vlastnost **Hello**.  
+7. V **vlastnosti** tlačítka nastavte okně **Text** vlastnost **Hello**.  
   
-8.  Dvakrát klikněte na tlačítko Přidat kód obslužné rutiny a v souboru kódu přidejte kód tak, aby obslužná rutina načte následujícím způsobem:  
+8. Dvakrát klikněte na tlačítko Přidat kód obslužné rutiny a v souboru kódu přidejte kód tak, aby obslužná rutina načte následujícím způsobem:  
   
-    ```  
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
-        Dim VbObj As New VB6Hello.Class1  
-        VbObj.SayHello()  
-    End Sub  
-    ```  
+   ```  
+   Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
+       Dim VbObj As New VB6Hello.Class1  
+       VbObj.SayHello()  
+   End Sub  
+   ```  
   
 9. Spusťte aplikaci. Z **ladění** nabídky, klikněte na tlačítko **spustit ladění**.  
   
- Dále je třeba izolovat ovládacího prvku. Každé komponenty modelu COM, který používá vaše aplikace je v projektu reprezentována jako odkaz modelu COM. Tyto odkazy jsou zobrazeny v části **odkazy** uzlu **Průzkumníku řešení** okno. (Všimněte si, že přidáte odkazuje, buď přímo pomocí **přidat odkaz** příkaz **projektu** nabídky, nebo nepřímo přetažením ovládacího prvku ActiveX do formuláře.)  
+   Dále je třeba izolovat ovládacího prvku. Každé komponenty modelu COM, který používá vaše aplikace je v projektu reprezentována jako odkaz modelu COM. Tyto odkazy jsou zobrazeny v části **odkazy** uzlu **Průzkumníku řešení** okno. (Všimněte si, že přidáte odkazuje, buď přímo pomocí **přidat odkaz** příkaz **projektu** nabídky, nebo nepřímo přetažením ovládacího prvku ActiveX do formuláře.)  
   
- Následující kroky ukazují, jak izolovat komponenty modelu COM a publikování aktualizované aplikace obsahující izolované ovládacího prvku:  
+   Následující kroky ukazují, jak izolovat komponenty modelu COM a publikování aktualizované aplikace obsahující izolované ovládacího prvku:  
   
 ##### <a name="to-isolate-a-com-component"></a>Chcete-li izolovat komponenty modelu COM  
   
-1.  V **Průzkumníka řešení**v **odkazy** uzlu, vyberte **VB6Ahoj** odkaz.  
+1. V **Průzkumníka řešení**v **odkazy** uzlu, vyberte **VB6Ahoj** odkaz.  
   
-2.  V **vlastnosti** okno, změňte hodnotu **izolované** vlastnost z **False** k **True**.  
+2. V **vlastnosti** okno, změňte hodnotu **izolované** vlastnost z **False** k **True**.  
   
-3.  Z **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
+3. Z **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
   
- Teď, když stisknete klávesu F5, že aplikace funguje podle očekávání, ale je nyní spuštěna v rámci modelu COM bez registrace Aby bylo možné prokázat, zkuste součásti VB6Ahoj.dll a spustit RegFreeComDemo1.exe mimo rozhraní IDE sady Visual Studio. Tentokrát při klepnutí na tlačítko, stále funguje. Pokud přejmenujete dočasně manifestu aplikace, se znovu nezdaří.  
+   Teď, když stisknete klávesu F5, že aplikace funguje podle očekávání, ale je nyní spuštěna v rámci modelu COM bez registrace Aby bylo možné prokázat, zkuste součásti VB6Ahoj.dll a spustit RegFreeComDemo1.exe mimo rozhraní IDE sady Visual Studio. Tentokrát při klepnutí na tlačítko, stále funguje. Pokud přejmenujete dočasně manifestu aplikace, se znovu nezdaří.  
   
 > [!NOTE]
 >  Chybí komponenty modelu COM můžete simulovat dočasně zrušení registrace. Otevřete příkazový řádek, přejděte do složky systému tak, že zadáte `cd /d %windir%\system32`, poté zrušte registraci součásti tak, že zadáte `regsvr32 /u VB6Hello.dll`. Můžete ho zaregistrovat znovu tak, že zadáte `regsvr32 VB6Hello.dll`.  
@@ -139,15 +139,15 @@ Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Souč�
   
 ##### <a name="to-publish-an-application-update-with-an-isolated-com-component"></a>Chcete-li publikovat aktualizace aplikace s izolované komponenty modelu COM  
   
-1.  Z **sestavení** nabídky, klikněte na tlačítko **publikování RegFreeComDemo**.  
+1. Z **sestavení** nabídky, klikněte na tlačítko **publikování RegFreeComDemo**.  
   
-     Zobrazí se Průvodce publikováním.  
+    Zobrazí se Průvodce publikováním.  
   
-2.  V Průvodci publikováním zadejte umístění na disku v místním počítači, kde lze získat přístup a zkontrolujte publikované soubory.  
+2. V Průvodci publikováním zadejte umístění na disku v místním počítači, kde lze získat přístup a zkontrolujte publikované soubory.  
   
-3.  Klikněte na tlačítko **Dokončit** publikování aplikace.  
+3. Klikněte na tlačítko **Dokončit** publikování aplikace.  
   
- Když si zblízka publikované soubory, Všimněte si, že je soubor sysmon.ocx zahrnuté. Ovládací prvek je zcela izolován na tuto aplikaci, což znamená, že pokud má počítač koncového uživatele v jiné verzi ovládacího prvku jiná aplikace, ji nelze v konfliktu s touto aplikací.  
+   Když si zblízka publikované soubory, Všimněte si, že je soubor sysmon.ocx zahrnuté. Ovládací prvek je zcela izolován na tuto aplikaci, což znamená, že pokud má počítač koncového uživatele v jiné verzi ovládacího prvku jiná aplikace, ji nelze v konfliktu s touto aplikací.  
   
 ## <a name="referencing-native-assemblies"></a>Odkazování na nativní sestavení  
  Visual Studio podporuje odkazy na nativní jazyka Visual Basic 6.0 nebo sestavení C++; Tyto odkazy se nazývají nativní odkazy. Můžete zjistit, zda odkaz je nativní tak, že ověříte, že jeho **typ souboru** je nastavena na **nativní** nebo **ActiveX**.  
@@ -161,23 +161,23 @@ Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Souč�
   
  Ne každá komponenta je vhodným kandidátem pro modelu COM bez registrace Součást není vhodný, pokud je splněna některá z následujících akcí:  
   
--   Součást je out-of-process server. EXE servery nejsou podporovány. jsou podporovány pouze knihovny DLL.  
+- Součást je out-of-process server. EXE servery nejsou podporovány. jsou podporovány pouze knihovny DLL.  
   
--   Komponenta je součástí operačního systému, nebo je součástí systému, jako jsou XML, Internet Explorer nebo Microsoft Data Access Components (MDAC). Měli byste postupovat podle zásad automatické distribuce signatur autora součásti; Obraťte se na dodavatele.  
+- Komponenta je součástí operačního systému, nebo je součástí systému, jako jsou XML, Internet Explorer nebo Microsoft Data Access Components (MDAC). Měli byste postupovat podle zásad automatické distribuce signatur autora součásti; Obraťte se na dodavatele.  
   
--   Komponenta je součástí aplikace, jako je například Microsoft Office. Například by se neměly pokoušet izolovat objektový Model Microsoft Excel. To je součástí sady Office a jde použít jenom na počítači s plné verze produktu Office nainstalována.  
+- Komponenta je součástí aplikace, jako je například Microsoft Office. Například by se neměly pokoušet izolovat objektový Model Microsoft Excel. To je součástí sady Office a jde použít jenom na počítači s plné verze produktu Office nainstalována.  
   
--   Součást je určena pro použití jako doplněk nebo modul snap-in, například Office add-in nebo ovládací prvek ve webovém prohlížeči. Tyto součásti obvykle vyžadují nějaký druh schéma registrace určené hostitelské prostředí, který je mimo rozsah samotného manifestu.  
+- Součást je určena pro použití jako doplněk nebo modul snap-in, například Office add-in nebo ovládací prvek ve webovém prohlížeči. Tyto součásti obvykle vyžadují nějaký druh schéma registrace určené hostitelské prostředí, který je mimo rozsah samotného manifestu.  
   
--   Komponenta slouží ke správě fyzických nebo virtuálních zařízení pro systém, například ovladače zařízení pro zařazování tisku.  
+- Komponenta slouží ke správě fyzických nebo virtuálních zařízení pro systém, například ovladače zařízení pro zařazování tisku.  
   
--   Součást je Data Access redistributable. Data aplikace obvykle vyžadují samostatné datové distribuovatelné součásti k instalaci, než budou moci spustit. By se neměly pokoušet izolovat komponenty, například ovládací prvek dat rozhraní ADO Microsoft, Microsoft OLE DB nebo Microsoft Data Access Components (MDAC). Místo toho pokud vaše aplikace používá MDAC nebo SQL Server Express, měli byste nastavit je jako požadavky; Zobrazit [postupy: instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- Součást je Data Access redistributable. Data aplikace obvykle vyžadují samostatné datové distribuovatelné součásti k instalaci, než budou moci spustit. By se neměly pokoušet izolovat komponenty, například ovládací prvek dat rozhraní ADO Microsoft, Microsoft OLE DB nebo Microsoft Data Access Components (MDAC). Místo toho pokud vaše aplikace používá MDAC nebo SQL Server Express, měli byste nastavit je jako požadavky; Zobrazit [postupy: instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
- V některých případech může být možné vývojář komponenty přepracovat pro modelu COM bez registrace Pokud to není možné, můžete pořád vytvářet a publikovat aplikace, které jsou na nich závislé prostřednictvím schématu standardní registrace pomocí zaváděcí nástroj. Další informace najdete v tématu [vytváření balíčků Bootstrapperu](../deployment/creating-bootstrapper-packages.md).  
+  V některých případech může být možné vývojář komponenty přepracovat pro modelu COM bez registrace Pokud to není možné, můžete pořád vytvářet a publikovat aplikace, které jsou na nich závislé prostřednictvím schématu standardní registrace pomocí zaváděcí nástroj. Další informace najdete v tématu [vytváření balíčků Bootstrapperu](../deployment/creating-bootstrapper-packages.md).  
   
- Komponenty modelu COM může být pouze jednou izolovaný na aplikaci. Například nelze izolovat pod stejnou komponentou modelu COM ze dvou různých **knihovny tříd** projekty, které jsou součástí stejné aplikace. To způsobí upozornění sestavení a aplikace se nepodaří načíst v době běhu. Pokud se chcete vyhnout tomuto problému, společnost Microsoft doporučuje zapouzdřit komponenty modelu COM v jediné knihovny tříd.  
+  Komponenty modelu COM může být pouze jednou izolovaný na aplikaci. Například nelze izolovat pod stejnou komponentou modelu COM ze dvou různých **knihovny tříd** projekty, které jsou součástí stejné aplikace. To způsobí upozornění sestavení a aplikace se nepodaří načíst v době běhu. Pokud se chcete vyhnout tomuto problému, společnost Microsoft doporučuje zapouzdřit komponenty modelu COM v jediné knihovny tříd.  
   
- Existuje několik scénářů, ve které modelu COM, je nutná registrace na počítači pro vývojáře, i když nasazení aplikace nepotřebuje registraci. `Isolated` Vlastnost vyžaduje zaregistrovat komponenty modelu COM na počítači pro vývojáře k automatické generování manifestu během sestavení. Neexistují žádné funkce zachytávání registrace, které vyvolají Automatická registrace během sestavování. Navíc všechny třídy, které nejsou explicitně definovány v knihovně typů se neprojeví v manifestu. Při použití komponenty modelu COM s již existující manifest, jako je například nativní referenci součást nemusí být registrováno v době vývoje. Registrace je však vyžaduje, pokud je součást ovládacího prvku ActiveX a chcete ho v **nástrojů** a Návrhář formulářů Windows.  
+  Existuje několik scénářů, ve které modelu COM, je nutná registrace na počítači pro vývojáře, i když nasazení aplikace nepotřebuje registraci. `Isolated` Vlastnost vyžaduje zaregistrovat komponenty modelu COM na počítači pro vývojáře k automatické generování manifestu během sestavení. Neexistují žádné funkce zachytávání registrace, které vyvolají Automatická registrace během sestavování. Navíc všechny třídy, které nejsou explicitně definovány v knihovně typů se neprojeví v manifestu. Při použití komponenty modelu COM s již existující manifest, jako je například nativní referenci součást nemusí být registrováno v době vývoje. Registrace je však vyžaduje, pokud je součást ovládacího prvku ActiveX a chcete ho v **nástrojů** a Návrhář formulářů Windows.  
   
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)

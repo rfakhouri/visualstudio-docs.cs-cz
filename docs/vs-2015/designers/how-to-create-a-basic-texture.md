@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 143bf4f094a603c20e12b52adb452b193fb57a33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2312b82fbcb6f4cd4ed00b288cb87283538cb372
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855830"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Postupy: Vytvoření základní textury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ Tento dokument ukazuje, jak použít Editor obrázků pro vytvoření základní
   
 #### <a name="to-create-a-bullseye-target-texture"></a>Vytvoření textury cíl "terč"  
   
-1.  Vytvořte textur pro práci s. Informace o tom, jak přidat do projektu texturu naleznete v části Začínáme v [Editor obrázků](../designers/image-editor.md).  
+1. Vytvořte textur pro práci s. Informace o tom, jak přidat do projektu texturu naleznete v části Začínáme v [Editor obrázků](../designers/image-editor.md).  
   
-2.  Nastavte velikost obrázku na 512 x 512 pixelů. V **vlastnosti** okno, nastavte hodnoty **šířka** a **výška** vlastností `512`.  
+2. Nastavte velikost obrázku na 512 x 512 pixelů. V **vlastnosti** okno, nastavte hodnoty **šířka** a **výška** vlastností `512`.  
   
-3.  Na panelu nástrojů editoru obrázků **vyplnit** nástroj. **Vlastnosti** okno nyní zobrazuje vlastnosti **vyplnit** spolu s vlastností bitové kopie.  
+3. Na panelu nástrojů editoru obrázků **vyplnit** nástroj. **Vlastnosti** okno nyní zobrazuje vlastnosti **vyplnit** spolu s vlastností bitové kopie.  
   
-4.  Nastavte barvu popředí na zcela průhledný černý. V **vlastnosti** okno v **barvy** skupiny vlastností, vyberte **popředí**. Nastavte hodnoty **R**, **G**, **B**, a **A** vlastnosti vedle výběr barvy tento výběr `0`.  
+4. Nastavte barvu popředí na zcela průhledný černý. V **vlastnosti** okno v **barvy** skupiny vlastností, vyberte **popředí**. Nastavte hodnoty **R**, **G**, **B**, a **A** vlastnosti vedle výběr barvy tento výběr `0`.  
   
-5.  Na panelu nástrojů editoru obrázků **vyplnit** nástroj a potom stiskněte a podržte klávesu Shift a vyberte libovolný bod v bitové kopii. Pomocí klávesy Shift způsobí, že alfa hodnota barvy výplně nahradit barvu v obrázku; v opačném případě hodnotu alfa slouží k blend barvu výplně spolu s barvu v obrázku.  
+5. Na panelu nástrojů editoru obrázků **vyplnit** nástroj a potom stiskněte a podržte klávesu Shift a vyberte libovolný bod v bitové kopii. Pomocí klávesy Shift způsobí, že alfa hodnota barvy výplně nahradit barvu v obrázku; v opačném případě hodnotu alfa slouží k blend barvu výplně spolu s barvu v obrázku.  
   
-    > [!IMPORTANT]
-    >  Tento krok, společně s výběr barvy v předchozím kroku, zajistí, že základní bitová kopie je připravená pro cílovou texturu "terč", který se vykreslí. Když je na obrázku vyplněna průhledný černý –, a proto je černá ohraničení cíle – bude existovat žádné třepící artefakty kolem cíl.  
+   > [!IMPORTANT]
+   >  Tento krok, společně s výběr barvy v předchozím kroku, zajistí, že základní bitová kopie je připravená pro cílovou texturu "terč", který se vykreslí. Když je na obrázku vyplněna průhledný černý –, a proto je černá ohraničení cíle – bude existovat žádné třepící artefakty kolem cíl.  
   
-6.  Na panelu nástrojů editoru obrázků **Elipsa** nástroj.  
+6. Na panelu nástrojů editoru obrázků **Elipsa** nástroj.  
   
-7.  Nastavte barvu popředí zcela neprůhledný černý. Nastavte hodnoty **R**, **G**, a **B** vlastností `0` a hodnota **A** vlastnost `255`.  
+7. Nastavte barvu popředí zcela neprůhledný černý. Nastavte hodnoty **R**, **G**, a **B** vlastností `0` a hodnota **A** vlastnost `255`.  
   
-8.  Nastavte barvu pozadí na bílou úplně neprůhledné. V **vlastnosti** okno v **barvy** skupiny vlastností, vyberte **pozadí**. Nastavte hodnoty **R**, **G**, **B**, a **A** vlastností `255`.  
+8. Nastavte barvu pozadí na bílou úplně neprůhledné. V **vlastnosti** okno v **barvy** skupiny vlastností, vyberte **pozadí**. Nastavte hodnoty **R**, **G**, **B**, a **A** vlastností `255`.  
   
 9. Nastavte šířku obrysu elipsy. V **vlastnosti** okno v **vzhled** skupiny vlastnost, nastavte hodnotu **šířka** vlastnost `8`.  
   
@@ -89,11 +89,11 @@ Tento dokument ukazuje, jak použít Editor obrázků pro vytvoření základní
   
 17. Jiné kruh čerpat pixel souřadnice `(192, 192)` pixel koordinovat `(320, 320)`.  
   
- Cílové textury "terč" byla dokončena. Tady je posledním obrázku, s průhlednost.  
+    Cílové textury "terč" byla dokončena. Tady je posledním obrázku, s průhlednost.  
   
- ![Kompletní "terč" cílové textury](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
+    ![Kompletní "terč" cílové textury](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
- V dalším kroku můžete vygenerovat úrovně MIP této textury. Informace najdete v tématu [jak: vytvořit a upravit MIP úrovních](../designers/how-to-create-and-modify-mip-levels.md).  
+    V dalším kroku můžete vygenerovat úrovně MIP této textury. Informace najdete v tématu [jak: vytvořit a upravit MIP úrovních](../designers/how-to-create-and-modify-mip-levels.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Editor obrázků](../designers/image-editor.md)

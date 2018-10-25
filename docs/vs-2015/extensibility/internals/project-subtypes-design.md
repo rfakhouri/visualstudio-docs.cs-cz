@@ -15,12 +15,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d167559a442e351c6256d07943092825deef288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839424"
 ---
 # <a name="project-subtypes-design"></a>Návrh podtypů projektů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Podtypy projektů umožní rozšířením VSPackages rozšířit projekty založ
 ## <a name="project-subtype-design"></a>Návrh podtyp projektu  
  Inicializace podtyp projektu je dosáhnout sečtením hlavní <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> objekty. Tato agregace umožňuje podtyp projektu k přepsání nebo rozšíření většinu funkcí základního projektu. Podtypy projektů získat první příležitosti ke zpracování pomocí vlastnosti <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, příkazy pomocí <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>a pomocí správy položky projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Můžete také rozšířit podtypů projektů:  
   
--   Objekty konfigurace projektu.  
+- Objekty konfigurace projektu.  
   
--   Konfigurace závislé objekty.  
+- Konfigurace závislé objekty.  
   
--   Nezávislé na konfiguraci procházet objekty.  
+- Nezávislé na konfiguraci procházet objekty.  
   
--   Objekty automatizace projektu.  
+- Objekty automatizace projektu.  
   
--   Automatizace vlastnost kolekce projektů.  
+- Automatizace vlastnost kolekce projektů.  
   
- Další informace o rozšíření prostřednictvím podtypů projektů, naleznete v tématu [vlastnosti a metody rozšířené prostřednictvím podtypů projektů](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
+  Další informace o rozšíření prostřednictvím podtypů projektů, naleznete v tématu [vlastnosti a metody rozšířené prostřednictvím podtypů projektů](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
   
 ##### <a name="policy-files"></a>Zásady souborů  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Prostředí poskytuje příklad rozšíření systému základního projektu s podtyp projektu v rámci příslušné implementace zásad souborů. Soubor zásad umožňuje tvarování z [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prostředí tím, že spravuje funkcí, které zahrnují v Průzkumníku řešení **přidat projekt** dialogovém okně **přidat novou položku** dialogové okno a  **Vlastnosti** dialogové okno. Podtyp zásady přepíše a rozšiřuje tyto funkce prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>, `IOleCommandTarget` a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> implementace.  

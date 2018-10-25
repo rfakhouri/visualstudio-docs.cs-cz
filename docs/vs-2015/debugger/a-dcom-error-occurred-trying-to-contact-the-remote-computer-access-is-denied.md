@@ -26,35 +26,35 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95c9abfbba2eb1e5c3e107440f0988b1002c1386
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6fa7aca2b86e8cc7c8d9cea4eba27b850d26bc13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215797"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825651"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Při pokusu o spojení se vzdáleným počítačem došlo k chybě modelu DCOM. Přístup byl zamítnut.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vzdálené ladění používá model DCOM ke komunikaci mezi místními a vzdálenými počítači v následujících situacích:  
   
--   Ladicí program je nastavena na **nativní režim kompatibility** nebo **spravovaný režim kompatibility** se změnami **nástroje / Možnosti / ladění** stránky  
+- Ladicí program je nastavena na **nativní režim kompatibility** nebo **spravovaný režim kompatibility** se změnami **nástroje / Možnosti / ladění** stránky  
   
--   Ladění spravovaného C++ (C + +/ CLI) kód.  
+- Ladění spravovaného C++ (C + +/ CLI) kód.  
   
--   V sadě Visual Studio 2013 když **povolení nativní funkce upravit a pokračovat** se změnami **nástroje / Možnosti / ladění** stránky  
+- V sadě Visual Studio 2013 když **povolení nativní funkce upravit a pokračovat** se změnami **nástroje / Možnosti / ladění** stránky  
   
--   Některé třetích stran ladění scénářů  
+- Některé třetích stran ladění scénářů  
   
- Tato chyba nastane, pokud proces sady Visual Studio se nemůže ověřit samotného (nebo zadané přihlašovací údaje byly za nedostatečné) k procesu vzdálený ladicí program přes model DCOM. Tento problém může vyřešit nejméně jednu z následujících náhradních postupů:  
+  Tato chyba nastane, pokud proces sady Visual Studio se nemůže ověřit samotného (nebo zadané přihlašovací údaje byly za nedostatečné) k procesu vzdálený ladicí program přes model DCOM. Tento problém může vyřešit nejméně jednu z následujících náhradních postupů:  
   
--   Vypnout **nativní režim kompatibility** a **spravovaný režim kompatibility**.  
+- Vypnout **nativní režim kompatibility** a **spravovaný režim kompatibility**.  
   
--   V sadě Visual Studio 2013 vypnout **povolení nativní funkce upravit a pokračovat**.  
+- V sadě Visual Studio 2013 vypnout **povolení nativní funkce upravit a pokračovat**.  
   
--   Oba počítače restartujte.  
+- Oba počítače restartujte.  
   
--   Pokud vzdálené ladění vyžaduje zadání přihlašovacích údajů, zaškrtněte možnost pro uložení přihlašovacích údajů.  
+- Pokud vzdálené ladění vyžaduje zadání přihlašovacích údajů, zaškrtněte možnost pro uložení přihlašovacích údajů.  
   
 ## <a name="see-also"></a>Viz také  
  [Vzdálené ladění chyby a řešení potíží](../debugger/remote-debugging-errors-and-troubleshooting.md)   

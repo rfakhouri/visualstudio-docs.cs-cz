@@ -13,12 +13,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9188cf2039249f5207685217719bc41d25abd0a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890163"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Přizpůsobení analýzy pokrytí kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,40 +27,40 @@ Ve výchozím nastavení analyzuje nástroj pokrytí kódu Visual Studio všechn
   
  Před přizpůsobením chování pokrytí kódu je třeba zvážit některé alternativy:  
   
--   *Chci vyloučit testovací kód z výsledků pokrytí kódu a obsahovat pouze kód aplikace.*  
+- *Chci vyloučit testovací kód z výsledků pokrytí kódu a obsahovat pouze kód aplikace.*  
   
-     Přidat `ExcludeFromCodeCoverage Attribute` do vaší testovací třídy.  
+   Přidat `ExcludeFromCodeCoverage Attribute` do vaší testovací třídy.  
   
--   *Chci zahrnout sestavení, které nejsou součástí skupiny Moje řešení.*  
+- *Chci zahrnout sestavení, které nejsou součástí skupiny Moje řešení.*  
   
-     Získejte soubory s příponou .pdb pro tato sestavení a zkopírujte je do stejné složky jako soubory sestavení s příponou .dll.  
+   Získejte soubory s příponou .pdb pro tato sestavení a zkopírujte je do stejné složky jako soubory sestavení s příponou .dll.  
   
- Chcete-li přizpůsobit chování pokrytí kódu, zkopírujte [ukázku na konci tohoto tématu](#sample) a přidejte ji do vašeho řešení pomocí souboru s příponou .runsettings. Upravit pro vaše konkrétní potřeby a potom na **testovací** nabídce zvolte **nastavení testu**, **vyberte nastavení testu** souboru. Zbývající část tohoto tématu popisuje tento postup podrobněji.  
+  Chcete-li přizpůsobit chování pokrytí kódu, zkopírujte [ukázku na konci tohoto tématu](#sample) a přidejte ji do vašeho řešení pomocí souboru s příponou .runsettings. Upravit pro vaše konkrétní potřeby a potom na **testovací** nabídce zvolte **nastavení testu**, **vyberte nastavení testu** souboru. Zbývající část tohoto tématu popisuje tento postup podrobněji.  
   
 ## <a name="the-runsettings-file"></a>Soubor s příponou .runsettings  
  V souboru s příponou .runsettings jsou uvedena upřesňující nastavení pokrytí kódu. Jedná se o konfigurační soubor používaný nástroji pro testování částí. Doporučujeme vám zkopírovat [ukázku na konci tohoto tématu](#sample) a upravte jej podle svých potřeb.  
   
--   *Co se stalo s soubor .testsettings, který jsem používal v sadě Visual Studio 2010?*  
+- *Co se stalo s soubor .testsettings, který jsem používal v sadě Visual Studio 2010?*  
   
-     V sadě Visual Studio 2010 se soubor s příponou .testsettings používá pouze při testování částí založeném na rozhraní MSTest. V sadě Visual Studio 2012 se testovací nástroje používají nejen u rozhraní MSTest, ale také u jiných rozhraní, jako například NUnit a xUnit.net. Soubor s příponou .testsettings nebude s těmito rozhraními fungovat. Soubor s příponou .runsettings je určen k provádění úprav testovacích nástrojů takovým způsobem, který je kompatibilní se všemi testovacími rozhraními.  
+   V sadě Visual Studio 2010 se soubor s příponou .testsettings používá pouze při testování částí založeném na rozhraní MSTest. V sadě Visual Studio 2012 se testovací nástroje používají nejen u rozhraní MSTest, ale také u jiných rozhraní, jako například NUnit a xUnit.net. Soubor s příponou .testsettings nebude s těmito rozhraními fungovat. Soubor s příponou .runsettings je určen k provádění úprav testovacích nástrojů takovým způsobem, který je kompatibilní se všemi testovacími rozhraními.  
   
- Chcete-li přizpůsobit pokrytí kódu, je nutné přidat soubor s příponou .runsettings do vašeho řešení:  
+  Chcete-li přizpůsobit pokrytí kódu, je nutné přidat soubor s příponou .runsettings do vašeho řešení:  
   
-1.  Přidání souboru .xml jako položku řešení s příponou `.runsettings`:  
+1. Přidání souboru .xml jako položku řešení s příponou `.runsettings`:  
   
-     V Průzkumníku řešení zvolte v místní nabídce vašeho řešení a **přidat**, **nová položka**a vyberte **soubor XML**. Uložte soubor s názvem, jako například `CodeCoverage.runsettings`  
+    V Průzkumníku řešení zvolte v místní nabídce vašeho řešení a **přidat**, **nová položka**a vyberte **soubor XML**. Uložte soubor s názvem, jako například `CodeCoverage.runsettings`  
   
-2.  Přidejte obsah uvedený v ukázce kódu na konci tohoto tématu a potom jej přizpůsobte svým potřebám tak, jak je popsáno v následujících částech.  
+2. Přidejte obsah uvedený v ukázce kódu na konci tohoto tématu a potom jej přizpůsobte svým potřebám tak, jak je popsáno v následujících částech.  
   
-3.  Na **testovací** nabídce zvolte **nastavení testu**, **vybrat soubor nastavení testu** a vyberte soubor.  
+3. Na **testovací** nabídce zvolte **nastavení testu**, **vybrat soubor nastavení testu** a vyberte soubor.  
   
-4.  Pokud nyní spustíte **analyzovat pokrytí kódu**tento `.runsettings` souboru bude kontrolovat své chování. Nezapomeňte, že musíte spustit pokrytí kódu znovu: předchozí výsledky pokrytí a barevné zvýraznění kódu nejsou při spuštění testů nebo aktualizaci kódu automaticky skryty.  
+4. Pokud nyní spustíte **analyzovat pokrytí kódu**tento `.runsettings` souboru bude kontrolovat své chování. Nezapomeňte, že musíte spustit pokrytí kódu znovu: předchozí výsledky pokrytí a barevné zvýraznění kódu nejsou při spuštění testů nebo aktualizaci kódu automaticky skryty.  
   
-5.  Vlastní nastavení vypnutí a zapnutí, zrušte výběr nebo vyberte soubor v **testovací**, **nastavení testu** nabídky.  
+5. Vlastní nastavení vypnutí a zapnutí, zrušte výběr nebo vyberte soubor v **testovací**, **nastavení testu** nabídky.  
   
- ![Nabídka nastavení testu se soubor s vlastním nastavením](../test/media/codecoverage-settingsfile.png "Soubor_nastavení CodeCoverage")  
+   ![Nabídka nastavení testu se soubor s vlastním nastavením](../test/media/codecoverage-settingsfile.png "Soubor_nastavení CodeCoverage")  
   
- Další aspekty testování částí lze nakonfigurovat ve stejném souboru s příponou .runsettings. Další informace najdete v tématu [svůj kód testu jednotek](../test/unit-test-your-code.md).  
+   Další aspekty testování částí lze nakonfigurovat ve stejném souboru s příponou .runsettings. Další informace najdete v tématu [svůj kód testu jednotek](../test/unit-test-your-code.md).  
   
 ### <a name="specifying-symbol-search-paths"></a>Určení cest pro hledání symbolů  
  Pokrytí kódu vyžaduje, aby byly pro sestavení k dispozici symboly (soubory s příponou .pdb). V případě sestavení vytvořených vaším řešením jsou soubory symbolů obvykle k dispozici spolu s binárními soubory a pokrytí kódu pracuje automaticky. Ale v některých případech můžete chtít zahrnout odkazovaná sestavení do analýzy pokrytí kódu. V takových případech se nemusí soubory s příponou .pdb nacházet u binárních souborů, ale můžete zadat cestu pro hledání symbolů v souboru s příponou .runsettings.  
@@ -106,21 +106,21 @@ Ve výchozím nastavení analyzuje nástroj pokrytí kódu Visual Studio všechn
 ### <a name="regular-expressions"></a>Regulární výrazy  
  Pomocí regulárních výrazů můžete zahrnout a vyloučit uzly. Další informace najdete v tématu [pomocí regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Regulární výrazy nejsou stejné jako zástupné znaky. Zejména:  
   
-1.  **\.\*** odpovídá řetězci libovolných znaků  
+1. **\.\\*** odpovídá řetězci libovolných znaků  
   
-2.  **\\.** odpovídá tečce ".")  
+2. **\\.** odpovídá tečce ".")  
   
-3.  **\\( \\)** odpovídá závorkám ""  
+3. **\\( \\)** odpovídá závorkám ""  
   
-4.  **\\\\** odpovídá oddělovači cesty k souboru "\\"  
+4. **\\\\** odpovídá oddělovači cesty k souboru "\\"  
   
-5.  **^** odpovídá začátku řetězce  
+5. **^** odpovídá začátku řetězce  
   
-6.  **$** odpovídá konci řetězce  
+6. **$** odpovídá konci řetězce  
   
- Ve shodách se nerozlišují velká a malá písmena.  
+   Ve shodách se nerozlišují velká a malá písmena.  
   
- Příklad:  
+   Příklad:  
   
 ```xml  
 <ModulePaths>  
@@ -144,25 +144,25 @@ Ve výchozím nastavení analyzuje nástroj pokrytí kódu Visual Studio všechn
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Další způsoby zahrnutí nebo vyloučení prvků  
  Zobrazit [ukázku na konci tohoto tématu](#sample) příklady.  
   
--   `ModulePath` – Sestavení určená cestou k souboru sestavení.  
+- `ModulePath` – Sestavení určená cestou k souboru sestavení.  
   
--   `CompanyName` – Porovná sestavení podle atributu společnost.  
+- `CompanyName` – Porovná sestavení podle atributu společnost.  
   
--   `PublicKeyToken` – Porovná podepsaná sestavení podle tokenu veřejného klíče. Například porovnat všechny součásti sady Visual Studio a rozšíření, použijte `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`.  
+- `PublicKeyToken` – Porovná podepsaná sestavení podle tokenu veřejného klíče. Například porovnat všechny součásti sady Visual Studio a rozšíření, použijte `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`.  
   
--   `Source` – Porovná prvky podle názvu cesty zdrojového souboru, ve kterém jsou definovány.  
+- `Source` – Porovná prvky podle názvu cesty zdrojového souboru, ve kterém jsou definovány.  
   
--   `Attribute` – Porovná prvky, ke kterým je připojen určitý atribut. Zadejte úplný název atributu včetně výrazu „Atribut“ na konci názvu.  
+- `Attribute` – Porovná prvky, ke kterým je připojen určitý atribut. Zadejte úplný název atributu včetně výrazu „Atribut“ na konci názvu.  
   
--   `Function` – Porovná procedury, funkce nebo metody podle plně kvalifikovaného názvu.  
+- `Function` – Porovná procedury, funkce nebo metody podle plně kvalifikovaného názvu.  
   
- **Porovnání názvu funkce**  
+  **Porovnání názvu funkce**  
   
- Regulární výraz musí odpovídat plně kvalifikovanému názvu funkce včetně oboru názvů, názvu třídy, názvu metody a seznamu parametrů. Například  
+  Regulární výraz musí odpovídat plně kvalifikovanému názvu funkce včetně oboru názvů, názvu třídy, názvu metody a seznamu parametrů. Například  
   
--   C# nebo Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
+- C# nebo Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
--   JAZYK C++:  `Fabrikam::Math::LocalMath::SquareRoot(double)`  
+- JAZYK C++:  `Fabrikam::Math::LocalMath::SquareRoot(double)`  
   
 ```xml  
 <Functions>  
@@ -201,17 +201,17 @@ Ve výchozím nastavení analyzuje nástroj pokrytí kódu Visual Studio všechn
   
  ![Určení runsettings v definici sestavení](../test/media/codecoverage-buildrunsettings.png "CodeCoverage buildRunsettings")  
   
-1.  Zkontrolujte, zda byl soubor s příponou .runsettings vrácen se změnami.  
+1. Zkontrolujte, zda byl soubor s příponou .runsettings vrácen se změnami.  
   
-2.  V Průzkumníku týmových projektů otevřete **sestavení**a poté přidejte nebo upravte definici sestavení.  
+2. V Průzkumníku týmových projektů otevřete **sestavení**a poté přidejte nebo upravte definici sestavení.  
   
-3.  Na **procesu** stránce, rozbalte **automatizované testy**, **zdroj testu**, **parametrů běhu**. Vyberte vaše **s příponou .runsettings** souboru.  
+3. Na **procesu** stránce, rozbalte **automatizované testy**, **zdroj testu**, **parametrů běhu**. Vyberte vaše **s příponou .runsettings** souboru.  
   
-    -   *Ale **sestavení testu** se zobrazí místo **zdroj testu**. Při pokusu o nastavení **parametrů běhu** pole, lze vybrat pouze soubory .testsettings.*  
+   - <em>Ale **sestavení testu</em>* se zobrazí místo **zdroj testu**. Při pokusu o nastavení **parametrů běhu** pole, lze vybrat pouze soubory .testsettings.*  
   
-         V části **automatizované testy**vyberte **sestavení testu**a zvolte **[...]**  na konci řádku. V **přidat/upravit testovací běh** dialogové okno, nastavte **nástroj Test Runner** k **Visual Studio Test Runner**.  
+      V části **automatizované testy**vyberte **sestavení testu**a zvolte **[...]**  na konci řádku. V **přidat/upravit testovací běh** dialogové okno, nastavte **nástroj Test Runner** k **Visual Studio Test Runner**.  
   
- Výsledky jsou zobrazeny v souhrnné části zprávy o sestavení.  
+   Výsledky jsou zobrazeny v souhrnné části zprávy o sestavení.  
   
 ##  <a name="sample"></a> Ukázkový soubor s příponou .runsettings  
  Zkopírujte tento kód a upravte jej podle svých potřeb. Toto je výchozí soubor s příponou .runsettings.  

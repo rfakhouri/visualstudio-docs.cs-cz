@@ -19,12 +19,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0001ff15bd6f74ea0b993c73a9c458d5724a28a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01a16f7711b35d8c1062117d486fdf00ab998566
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835985"
 ---
 # <a name="shell-isolated-or-integrated"></a>Prostředí (izolované nebo integrované)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Vytvoření sady Visual Studio na základě aplikace v režimu integrované nebo
   
 > [!IMPORTANT]
 >  [Licenční smlouvy koncovým uživatelem (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552) pro Visual Studio integrované a izolované prostředí obsahuje oddíl na shromažďování dat (**části 3. Data**).  Popisuje zákaznická data využití, které může společnost Microsoft shromažďovat od uživatelů buď integrované nebo izolované prostředí softwaru, který jste vytvořili do vaší aplikace. Další informace najdete v tématu [prohlášení společnosti Microsoft Visual Studio Product řady](https://www.visualstudio.com/en-us/dn948229).  
->   
+> 
 >  Budete-li shromažďovat data o využití samostatné od svých zákazníků prostřednictvím vaší aplikace, musíte zadat příslušné oznámení pro uživatele vaší aplikace můžete shromažďovat.  Při distribuci softwaru izolované nebo integrované prostředí v rámci vaší aplikace, podle této licence Visual Studio Software Development Kit, musí obsahovat jednu z následujících akcí:  
->   
->  -   Licenční smlouva koncového uživatele jako součást vaší licence aplikace  
-> -   vaše vlastní smlouva EULA, který vyžaduje, aby vaši zákazníci souhlas s podmínkami, které chrání aplikace Visual Studio integrované nebo izolované prostředí alespoň tolik jako koncový uživatel licenční podmínky společnosti Microsoft pro software prostředí  
+> 
+> - Licenční smlouva koncového uživatele jako součást vaší licence aplikace  
+>   -   vaše vlastní smlouva EULA, který vyžaduje, aby vaši zákazníci souhlas s podmínkami, které chrání aplikace Visual Studio integrované nebo izolované prostředí alespoň tolik jako koncový uživatel licenční podmínky společnosti Microsoft pro software prostředí  
   
 ## <a name="additional-resources"></a>Další prostředky  
  Další informace o distribuovatelných balíčků naleznete v tématu [stahování rozšíření sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=119298) webu.  

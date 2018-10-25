@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93d5e45bc4e8efd146391c5dff78bcb11fcf067f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1422a126f88e72d0eca662aaa5348a6af500b8bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292078"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820691"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Postup: Vytvoření prostředí pro sestavení s použitím více počítačů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,39 +37,39 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
   
  Tento návod byl ověřen pro následující operační systémy vykonáním příkazu MSBuild v příkazovém řádku a pomocí Team Foundation Build.  
   
--   Windows 8 (x86 a x64)  
+- Windows 8 (x86 a x64)  
   
--   Windows 7 Ultimate  
+- Windows 7 Ultimate  
   
--   Windows Server 2008 R2 Standard  
+- Windows Server 2008 R2 Standard  
   
- Po dokončení kroků v tomto podrobném návodu, můžete použít prostředí více počítačů k vytváření těchto druhů aplikací:  
+  Po dokončení kroků v tomto podrobném návodu, můžete použít prostředí více počítačů k vytváření těchto druhů aplikací:  
   
--   Aplikace klasické pracovní plochy jazyka C++, které používají sadu SDK Windows 8  
+- Aplikace klasické pracovní plochy jazyka C++, které používají sadu SDK Windows 8  
   
--   Visual Basic nebo C# aplikace klasické pracovní plochy, které se zaměřují na rozhraní .NET Framework 4.5  
+- Visual Basic nebo C# aplikace klasické pracovní plochy, které se zaměřují na rozhraní .NET Framework 4.5  
   
- Prostředí s více počítači nelze použít k vytvoření těchto typů aplikací:  
+  Prostředí s více počítači nelze použít k vytvoření těchto typů aplikací:  
   
--   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace. K vytvoření [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace, musíte nainstalovat Visual Studio v počítači sestavení.  
+- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace. K vytvoření [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace, musíte nainstalovat Visual Studio v počítači sestavení.  
   
--   Desktopové aplikace, které jsou cíleny rozhraní .NET Framework 4 nebo dřívější. K vytvoření těchto typů aplikací, musíte nainstalovat Visual Studio nebo odkaz na sestavení rozhraní .NET a nástroje (ze sady Windows SDK 7.1) v počítači sestavení.  
+- Desktopové aplikace, které jsou cíleny rozhraní .NET Framework 4 nebo dřívější. K vytvoření těchto typů aplikací, musíte nainstalovat Visual Studio nebo odkaz na sestavení rozhraní .NET a nástroje (ze sady Windows SDK 7.1) v počítači sestavení.  
   
- Tento návod je rozdělen na tyto části:  
+  Tento návod je rozdělen na tyto části:  
   
--   [Instalace softwaru v počítačích](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingSoftware)  
+- [Instalace softwaru v počítačích](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingSoftware)  
   
--   [Kopírování souborů z hostitelského počítače na počítač sestavení](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)  
+- [Kopírování souborů z hostitelského počítače na počítač sestavení](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)  
   
--   [Vytvořením nastavení registru](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)  
+- [Vytvořením nastavení registru](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)  
   
--   [Nastavení proměnných prostředí v počítači sestavení](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)  
+- [Nastavení proměnných prostředí v počítači sestavení](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)  
   
--   [Instalace sestavení nástroje MSBuild k globální mezipaměti sestavení (GAC) v počítači sestavení](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)  
+- [Instalace sestavení nástroje MSBuild k globální mezipaměti sestavení (GAC) v počítači sestavení](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)  
   
--   [Vytváření projektů](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)  
+- [Vytváření projektů](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)  
   
--   [Vytváření sestavení prostředí tak, aby mohla být zařazena do správy zdrojového kódu](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)  
+- [Vytváření sestavení prostředí tak, aby mohla být zařazena do správy zdrojového kódu](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)  
   
 ## <a name="prerequisites"></a>Požadavky  
   
@@ -91,196 +91,196 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
 ##  <a name="CopyingFiles"></a> Kopírování souborů z hostitelského počítače na počítač sestavení  
  Tato část zahrnuje kopírování určitých souborů, kompilátory, nástroje pro vytváření, aktiva MSBuild a nastavení registru z hostitelského počítače do počítače sestavení. Tyto pokyny předpokládají, že jste nainstalovali aplikaci Visual Studio ve výchozím umístění v hostitelském počítači. Pokud jste nainstalovali do jiného umístění, postup odpovídajícím způsobem upravte.  
   
--   Na x x86 počítače, výchozím umístěním je C:\Program Files\Microsoft Visual Studio 11. 0\  
+- Na x x86 počítače, výchozím umístěním je C:\Program Files\Microsoft Visual Studio 11. 0\  
   
--   X x64 počítače, výchozím umístěním je C:\Program Files (x86) \Microsoft Visual Studio 11. 0\  
+- X x64 počítače, výchozím umístěním je C:\Program Files (x86) \Microsoft Visual Studio 11. 0\  
   
- Všimněte si, že název složky Program Files závisí na operačním systému, který je nainstalován. Na x x86 počítače, je název \Program Files\\; x x64 počítače, je název \Program Files (x86)\\. Bez ohledu na architekturu systému tento návod odkazuje na složku Program Files jako % ProgramFiles %.  
+  Všimněte si, že název složky Program Files závisí na operačním systému, který je nainstalován. Na x x86 počítače, je název \Program Files\\; x x64 počítače, je název \Program Files (x86)\\. Bez ohledu na architekturu systému tento návod odkazuje na složku Program Files jako % ProgramFiles %.  
   
 > [!NOTE]
 >  V počítači sestavení všechny relevantní soubory musí být na stejné jednotce; písmeno jednotky pro tuto jednotku však může být jiné než písmeno jednotky pro jednotku, kde je nainstalovaný Visual Studio v hostitelském počítači. V každém případě musíte vzít v úvahu umístění souborů při vytváření položky registru, jak je popsáno dále v tomto dokumentu.  
   
 #### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>Kopírování souborů Windows SDK do počítače sestavení  
   
-1.  Pokud máte pouze Windows SDK pro Windows 8 nainstalované, zkopírujte tyto složky rekurzivně z hostitelského počítače do počítače sestavení:  
+1. Pokud máte pouze Windows SDK pro Windows 8 nainstalované, zkopírujte tyto složky rekurzivně z hostitelského počítače do počítače sestavení:  
   
-    -   %ProgramFiles%\Windows Kits\8.0\bin\  
+   - %ProgramFiles%\Windows Kits\8.0\bin\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\Catalogs\  
+   - %ProgramFiles%\Windows Kits\8.0\Catalogs\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\DesignTime\  
+   - %ProgramFiles%\Windows Kits\8.0\DesignTime\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\include\  
+   - %ProgramFiles%\Windows Kits\8.0\include\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\Lib\  
+   - %ProgramFiles%\Windows Kits\8.0\Lib\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\Redist\  
+   - %ProgramFiles%\Windows Kits\8.0\Redist\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\References\  
+   - %ProgramFiles%\Windows Kits\8.0\References\  
   
      Pokud máte také tyto jiné sady Windows 8...  
   
-    -   Microsoft Windows Assessment and Deployment Kit  
+   - Microsoft Windows Assessment and Deployment Kit  
   
-    -   Microsoft Windows Driver Kit  
+   - Microsoft Windows Driver Kit  
   
-    -   Microsoft Windows Hardware Certification Kit  
+   - Microsoft Windows Hardware Certification Kit  
   
      .. .mohou mít nainstalovány soubory do složek %ProgramFiles%\Windows Kits\8.0\, které jsou uvedeny v předchozím kroku, a jejich licenční podmínky neumožňují práva sestavení serveru pro tyto soubory. Zkontrolujte licenční podmínky pro každý nainstalovanou sadu SDK Windows k ověření, zda mohou být soubory zkopírovány do počítače sestavení. Pokud licenční podmínky neumožňují práva sestavení serveru, odeberte soubory z počítače sestavení.  
   
-2.  Zkopírujte následující složky rekurzivně z hostitelského počítače do počítače sestavení:  
+2. Zkopírujte následující složky rekurzivně z hostitelského počítače do počítače sestavení:  
   
-    -   %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\  
+   -   %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\  
   
-    -   %ProgramFiles%\Common Files\Common Files\Merge Modules\  
+   -   %ProgramFiles%\Common Files\Common Files\Merge Modules\  
   
-    -   11.0\VC\ %ProgramFiles%\Microsoft visual Studio  
+   -   11.0\VC\ %ProgramFiles%\Microsoft visual Studio  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\  
   
-    -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\  
+   -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\  
   
-    -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETCore\v4.5\  
+   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETCore\v4.5\  
   
-    -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETFramework\v4.5\  
+   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETFramework\v4.5\  
   
-3.  Zkopírujte tyto soubory z hostitelského počítače do počítače sestavení:  
+3. Zkopírujte tyto soubory z hostitelského počítače do počítače sestavení:  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat  
   
-4.  Následující knihovny runtime Visual C++ se vyžadují jenom v případě, že spustíte výstupy sestavení na počítači sestavení, například jako součást automatizovaného testování. Soubory jsou obvykle umístěny v podsložkách ve složce %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86\ nebo %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64\ složku, v závislosti na architektuře systému. Na x86 systémy, zkopírujte x86 binární soubory do složky \Windows\System32\. Na x64 systémy, zkopírujte x86 binární soubory do složky Windows\SysWOW64\ a x64 binární soubory do složky Windows\System32\.  
+4. Následující knihovny runtime Visual C++ se vyžadují jenom v případě, že spustíte výstupy sestavení na počítači sestavení, například jako součást automatizovaného testování. Soubory jsou obvykle umístěny v podsložkách ve složce %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86\ nebo %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64\ složku, v závislosti na architektuře systému. Na x86 systémy, zkopírujte x86 binární soubory do složky \Windows\System32\. Na x64 systémy, zkopírujte x86 binární soubory do složky Windows\SysWOW64\ a x64 binární soubory do složky Windows\System32\.  
   
-    -   \Microsoft.VC110.ATL\atl110.dll  
+   -   \Microsoft.VC110.ATL\atl110.dll  
   
-    -   \Microsoft.VC110.CRT\msvcp110.dll  
+   -   \Microsoft.VC110.CRT\msvcp110.dll  
   
-    -   \Microsoft.VC110.CRT\msvcr110.dll  
+   -   \Microsoft.VC110.CRT\msvcr110.dll  
   
-    -   \Microsoft.VC110.CXXAMP\vcamp110.dll  
+   -   \Microsoft.VC110.CXXAMP\vcamp110.dll  
   
-    -   \Microsoft.VC110.MFC\mfc110.dll  
+   -   \Microsoft.VC110.MFC\mfc110.dll  
   
-    -   \Microsoft.VC110.MFC\mfc110u.dll  
+   -   \Microsoft.VC110.MFC\mfc110u.dll  
   
-    -   \Microsoft.VC110.MFC\mfcm110.dll  
+   -   \Microsoft.VC110.MFC\mfcm110.dll  
   
-    -   \Microsoft.VC110.MFC\mfcm110u.dll  
+   -   \Microsoft.VC110.MFC\mfcm110u.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110chs.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110chs.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110cht.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110cht.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110deu.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110deu.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110enu.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110enu.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110esn.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110esn.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110fra.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110fra.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110ita.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110ita.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110jpn.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110jpn.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110kor.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110kor.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110rus.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110rus.dll  
   
-    -   \Microsoft.VC110.OPENMP\vcomp110.dll  
+   -   \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5.  Zkopírujte pouze následující soubory ze složky \Debug_NonRedist\x86\ nebo \Debug_NonRedist\x64\ do počítače sestavení, jak je popsáno v [Příprava testovací počítač pro běh spustitelný soubor ladění](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Nelze zkopírovat žádné jiné soubory.  
+5. Zkopírujte pouze následující soubory ze složky \Debug_NonRedist\x86\ nebo \Debug_NonRedist\x64\ do počítače sestavení, jak je popsáno v [Příprava testovací počítač pro běh spustitelný soubor ladění](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Nelze zkopírovat žádné jiné soubory.  
   
-    -   \Microsoft.VC110.DebugCRT\msvcp110d.dll  
+   -   \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
-    -   \Microsoft.VC110.DebugCRT\msvcr110d.dll  
+   -   \Microsoft.VC110.DebugCRT\msvcr110d.dll  
   
-    -   \Microsoft.VC110.DebugCXXAMP\vcamp110d.dll  
+   -   \Microsoft.VC110.DebugCXXAMP\vcamp110d.dll  
   
-    -   \Microsoft.VC110.DebugMFC\mfc110d.dll  
+   -   \Microsoft.VC110.DebugMFC\mfc110d.dll  
   
-    -   \Microsoft.VC110.DebugMFC\mfc110ud.dll  
+   -   \Microsoft.VC110.DebugMFC\mfc110ud.dll  
   
-    -   \Microsoft.VC110.DebugMFC\mfcm110d.dll  
+   -   \Microsoft.VC110.DebugMFC\mfcm110d.dll  
   
-    -   \Microsoft.VC110.DebugMFC\mfcm110ud.dll  
+   -   \Microsoft.VC110.DebugMFC\mfcm110ud.dll  
   
-    -   \Microsoft.VC110.DebugOpenMP\vcomp110d.dll  
+   -   \Microsoft.VC110.DebugOpenMP\vcomp110d.dll  
   
 ##  <a name="CreatingRegistry"></a> Vytvořením nastavení registru  
  Je nutné vytvořit položky registru ke konfiguraci nastavení pro MSBuild.  
   
 #### <a name="to-create-registry-settings"></a>Vytvoření nastavení registru  
   
-1.  Určení nadřazené složky pro položky registru. Všechny položky registru jsou vytvořeny pod stejným nadřazeným klíčem. Na x x86 počítače, je nadřazený klíč HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. X x64 počítače nadřazený klíč je HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. Bez ohledu na architekturu systému tento návod odkazuje na nadřazený klíč jako % RegistryRoot %.  
+1. Určení nadřazené složky pro položky registru. Všechny položky registru jsou vytvořeny pod stejným nadřazeným klíčem. Na x x86 počítače, je nadřazený klíč HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. X x64 počítače nadřazený klíč je HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. Bez ohledu na architekturu systému tento návod odkazuje na nadřazený klíč jako % RegistryRoot %.  
   
-    > [!NOTE]
-    >  Pokud se architektura hostitelského počítače liší od vašeho počítače sestavení, nezapomeňte použít odpovídající nadřazený klíč na každém počítači. To je obzvláště důležité, pokud používáte automatizaci procesu exportu.  
-    >   
-    >  Pokud používáte jiné písmeno jednotky v počítači sestavení než ten, který používáte v hostitelském počítači, ujistěte se také, chcete-li změnit hodnoty položek registru tak, aby odpovídaly.  
+   > [!NOTE]
+   >  Pokud se architektura hostitelského počítače liší od vašeho počítače sestavení, nezapomeňte použít odpovídající nadřazený klíč na každém počítači. To je obzvláště důležité, pokud používáte automatizaci procesu exportu.  
+   >   
+   >  Pokud používáte jiné písmeno jednotky v počítači sestavení než ten, který používáte v hostitelském počítači, ujistěte se také, chcete-li změnit hodnoty položek registru tak, aby odpovídaly.  
   
-2.  Vytvořte následující položky registru v počítači sestavení. Všechny tyto položky jsou řetězce (typ == "REG_SZ" v registru). Nastavte hodnoty těchto položek, které se stejný jako hodnoty srovnatelných položek v hostitelském počítači.  
+2. Vytvořte následující položky registru v počítači sestavení. Všechny tyto položky jsou řetězce (typ == "REG_SZ" v registru). Nastavte hodnoty těchto položek, které se stejný jako hodnoty srovnatelných položek v hostitelském počítači.  
   
-    -   % RegistryRoot %\\. Veřejné Assemblies@(Default) NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild  
+   - % RegistryRoot %\\. Veřejné Assemblies@(Default) NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder  
   
-    -   % RegistryRoot %\VisualStudio\11.0@Source adresáře  
+   - % RegistryRoot %\VisualStudio\11.0@Source adresáře  
   
-    -   % RegistryRoot %\VisualStudio\11.0\Setup\VC@ProductDir  
+   - % RegistryRoot %\VisualStudio\11.0\Setup\VC@ProductDir  
   
-    -   % RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir32  
+   - % RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir32  
   
-    -   % RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir64  
+   - % RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir64  
   
-    -   % RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer32  
+   - % RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer32  
   
-    -   % RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer64  
+   - % RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer64  
   
-    -   % RegistryRoot %\VisualStudio\SxS\VC7@11.0  
+   - % RegistryRoot %\VisualStudio\SxS\VC7@11.0  
   
-    -   % RegistryRoot %\VisualStudio\SxS\VS7@11.0  
+   - % RegistryRoot %\VisualStudio\SxS\VS7@11.0  
   
-    -   %RegistryRoot%\Windows Kits\Installed Roots@KitsRoot  
+   - %RegistryRoot%\Windows Kits\Installed Roots@KitsRoot  
   
-    -   % RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath  
+   - % RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath  
   
-    -   % RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10  
+   - % RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10  
   
-    -   % RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
+   - % RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
   
      Počítač sestavení x x64, také vytvořte následující položku registru a odkazovat na hostitelském počítači zjistěte, jak ji nastavit.  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder  
   
      Pokud je počítač sestavení x64 a chcete použít 64bitovou verzi nástroje MSBuild, nebo pokud používáte službu sestavení serveru Team Foundation Server na x x64 počítače, musíte vytvořit následující položky registru v nativním 64bitovém registru. Odkazovat na hostitelském počítači zjistěte, jak nastavit tyto položky.  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir  
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath  
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10  
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
   
 ##  <a name="SettingEnvVariables"></a> Nastavení proměnných prostředí v počítači sestavení  
  Pokud chcete použít nástroj MSBuild v počítači sestavení, musíte nastavit proměnné prostředí PATH. Vcvarsall.bat můžete použít k nastavení proměnných, nebo můžete ručně nakonfigurovat.  
@@ -301,23 +301,23 @@ Můžete vytvořit prostředí sestavení v rámci organizace nainstalováním s
   
 #### <a name="to-manually-set-environment-variables"></a>Ruční nastavení proměnných prostředí  
   
-1.  Chcete-li ručně konfigurovat prostředí příkazového řádku, přidáte tuto cestu do proměnné prostředí PATH:  
+1. Chcete-li ručně konfigurovat prostředí příkazového řádku, přidáte tuto cestu do proměnné prostředí PATH:  
   
-    -   % Program Files%\Microsoft Visual Studio 11.0\Common7\IDE  
+   -   % Program Files%\Microsoft Visual Studio 11.0\Common7\IDE  
   
-2.  Volitelně můžete také přidat následující cesty do proměnné PATH, aby bylo snazší používat nástroj MSBuild pro vytváření řešení.  
+2. Volitelně můžete také přidat následující cesty do proměnné PATH, aby bylo snazší používat nástroj MSBuild pro vytváření řešení.  
   
-     Pokud chcete použít nativní 32bitový MSBuild, přidejte tyto cesty do proměnné PATH:  
+    Pokud chcete použít nativní 32bitový MSBuild, přidejte tyto cesty do proměnné PATH:  
   
-    -   % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 nástroje  
+   - % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 nástroje  
   
-    -   %windir%\Microsoft.NET\Framework\v4.0.30319  
+   - %windir%\Microsoft.NET\Framework\v4.0.30319  
   
      Pokud chcete použít nativní 64bitový MSBuild, přidejte tyto cesty do proměnné PATH:  
   
-    -   % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64  
+   - % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64  
   
-    -   %windir%\Microsoft.NET\Framework64\v4.0.30319  
+   - %windir%\Microsoft.NET\Framework64\v4.0.30319  
   
 ##  <a name="InstallingMSBuildToGAC"></a> Instalace sestavení nástroje MSBuild k globální mezipaměti sestavení (GAC) v počítači sestavení  
  Nástroj MSBuild vyžaduje některých dalších sestavení nainstalovaná v GAC v počítači sestavení.  

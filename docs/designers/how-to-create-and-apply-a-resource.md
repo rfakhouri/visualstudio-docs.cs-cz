@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98aece47b3936108b171ad7e2e1100e98d601312
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 405b208df0aedffe69c9e476a5a31745faeb84f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282786"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872561"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Vytvoření a použití prostředku
 Styly a šablony pro elementy v Návrháři XAML jsou uloženy v opakovaně použitelné entity nazývané prostředky. Styly umožňují nastavit vlastnosti elementu a použít tato nastavení pro jednotný vzhled napříč více prvků. A [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definuje vzhled ovládacího prvku a mohou být použity také jako prostředek. Další informace najdete v tématu [rychlý start: používání stylů pro ovládací prvky](http://go.microsoft.com/fwlink/?LinkID=248239) a [rychlý start: řízení šablony](http://go.microsoft.com/fwlink/?LinkID=247982).
@@ -51,18 +51,18 @@ Styly a šablony pro elementy v Návrháři XAML jsou uloženy v opakovaně pou�
 
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Chcete-li použít prostředek na element nebo vlastnost
 
-1.  V okně osnovy dokumentu zvolte element, na který chcete použít prostředek.
+1. V okně osnovy dokumentu zvolte element, na který chcete použít prostředek.
 
-2.  Proveďte jednu z těchto akcí:
+2. Proveďte jednu z těchto akcí:
 
-    -   Použití prostředku na vlastnost. V okně Vlastnosti vyberte značka vlastnosti vedle hodnoty vlastností, vyberte **místního prostředku** nebo **systémový prostředek**a pak zvolte ze seznamu, který se zobrazí dostupné zdroje.
+   - Použití prostředku na vlastnost. V okně Vlastnosti vyberte značka vlastnosti vedle hodnoty vlastností, vyberte **místního prostředku** nebo **systémový prostředek**a pak zvolte ze seznamu, který se zobrazí dostupné zdroje.
 
-         Pokud nevidíte prostředek, který byste měli vidět, může to být způsobeno typ prostředku neodpovídá typu vlastnosti.
+      Pokud nevidíte prostředek, který byste měli vidět, může to být způsobeno typ prostředku neodpovídá typu vlastnosti.
 
-    -   Platí pro ovládací prvek prostředku šablony stylů nebo ovládací prvek. Otevřete místní nabídku pro ovládací prvek v okno osnovy dokumentu, zvolte **upravit šablonu** nebo **upravit další šablony**, zvolte **aplikovat zdroj**a klikněte na tlačítko Název šablony ovládací prvek ze zobrazeného seznamu.
+   - Platí pro ovládací prvek prostředku šablony stylů nebo ovládací prvek. Otevřete místní nabídku pro ovládací prvek v okno osnovy dokumentu, zvolte **upravit šablonu** nebo **upravit další šablony**, zvolte **aplikovat zdroj**a klikněte na tlačítko Název šablony ovládací prvek ze zobrazeného seznamu.
 
-        > [!NOTE]
-        >  **Úprava šablony** použije šablony ovládacího prvku. **Upravit další šablony** platí jiné typy šablon.
+     > [!NOTE]
+     >  **Úprava šablony** použije šablony ovládacího prvku. **Upravit další šablony** platí jiné typy šablon.
 
      Prostředky můžete použít bez ohledu na to jsou kompatibilní. Například můžete použít na prostředek štětce **popředí** vlastnost <xref:Windows.UI.Xaml.Controls.TextBox> ovládacího prvku.
 

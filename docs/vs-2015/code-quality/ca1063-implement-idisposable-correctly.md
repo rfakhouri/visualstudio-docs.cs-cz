@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e80857ae1cfafdc6733af3eec78735dc249f4905
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287479"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877293"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementuje správně IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
@@ -39,23 +40,23 @@ ms.locfileid: "49287479"
 ## <a name="cause"></a>příčina
  `IDisposable` není správně implementovaná. Tady jsou uvedené důvody tohoto problému:
 
--   Rozhraní IDisposable se znovu implementované ve třídě.
+- Rozhraní IDisposable se znovu implementované ve třídě.
 
--   Dokončení je znovu přepsána.
+- Dokončení je znovu přepsána.
 
--   Metody Dispose je přepsána.
+- Metody Dispose je přepsána.
 
--   Dispose() není veřejný, zapečetěné, nebo s názvem metody Dispose.
+- Dispose() není veřejný, zapečetěné, nebo s názvem metody Dispose.
 
--   Dispose(bool) není chráněný, virtuální nebo nezapečetěné.
+- Dispose(bool) není chráněný, virtuální nebo nezapečetěné.
 
--   V nezapečetěné typy musí volat Dispose() Dispose(true).
+- V nezapečetěné typy musí volat Dispose() Dispose(true).
 
--   Pro nezapečetěné typy nevolá Finalize implementaci Dispose(bool) jednoho nebo obou nebo finalizační metodu třídy velikosti písmen.
+- Pro nezapečetěné typy nevolá Finalize implementaci Dispose(bool) jednoho nebo obou nebo finalizační metodu třídy velikosti písmen.
 
- Porušení některou z těchto vzorců se aktivuje toto upozornění.
+  Porušení některou z těchto vzorců se aktivuje toto upozornění.
 
- Každý nezapečetěné kořenový typ IDisposable musíte zadat své vlastní chráněné virtuální void Dispose(bool) metody. Dispose() by měly volat Dipose(true) a Finalize by měly volat Dispose(false). Při vytváření typu IDisposable nezapečetěné root, musíte definovat Dispose(bool) a jeho volání. Další informace najdete v tématu [Cleaning Up Unmanaged Resources](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) v [pokyny k návrhu architektury](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) část dokumentace rozhraní .NET Framework.
+  Každý nezapečetěné kořenový typ IDisposable musíte zadat své vlastní chráněné virtuální void Dispose(bool) metody. Dispose() by měly volat Dipose(true) a Finalize by měly volat Dispose(false). Při vytváření typu IDisposable nezapečetěné root, musíte definovat Dispose(bool) a jeho volání. Další informace najdete v tématu [Cleaning Up Unmanaged Resources](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) v [pokyny k návrhu architektury](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) část dokumentace rozhraní .NET Framework.
 
 ## <a name="rule-description"></a>Popis pravidla
  Všechny typy IDisposable by měly správně implementovat vzor Dispose.

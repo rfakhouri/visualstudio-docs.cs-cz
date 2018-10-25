@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 725d902c181e6082c7f995ceec805aa05441bbaa
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 06d91a2a9e7dc206e2303637bce013b473cf6560
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839034"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Postupy: vytváření projektů pro systém Office v sadě Visual Studio
   Můžete použít [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vytvoření doplňku VSTO a na úrovni dokumentu přizpůsobení pro aplikace Microsoft Office. Další informace o těchto typech projektů naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -40,49 +40,49 @@ ms.locfileid: "49074049"
   
 ### <a name="to-create-a-vsto-add-in-project"></a>Vytvoření projektu doplňku VSTO  
   
-1.  Na **souboru** nabídce zvolte **nový** > **projektu**. Pokud je vaše integrované vývojové prostředí (IDE) nastaveno pro použití [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] vývojové nastavení na **souboru** nabídce zvolte **nový** > **projektu**.  
+1. Na **souboru** nabídce zvolte **nový** > **projektu**. Pokud je vaše integrované vývojové prostředí (IDE) nastaveno pro použití [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] vývojové nastavení na **souboru** nabídce zvolte **nový** > **projektu**.  
   
-     **Nový projekt** zobrazí se dialogové okno.  
+    **Nový projekt** zobrazí se dialogové okno.  
   
-    > [!NOTE]  
-    >  Cílové projekty Office [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ve výchozím nastavení. Další informace najdete v tématu [profil klienta rozhraní .NET Framework](/dotnet/framework/deployment/client-profile).  
+   > [!NOTE]  
+   >  Cílové projekty Office [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ve výchozím nastavení. Další informace najdete v tématu [profil klienta rozhraní .NET Framework](/dotnet/framework/deployment/client-profile).  
   
-2.  V podokně šablon, pod uzlem jazyka, které chcete použít, rozbalte **Office/SharePoint**.  
+2. V podokně šablon, pod uzlem jazyka, které chcete použít, rozbalte **Office/SharePoint**.  
   
-3.  Zvolte **Office Add-ins** uzlu.  
+3. Zvolte **Office Add-ins** uzlu.  
   
-4.  V seznamu šablon projektu vyberte šablonu projektu doplňku VSTO. Seznam dostupných doplňku VSTO šablony projektů, naleznete v tématu [Přehled šablon projektů Office project](../vsto/office-project-templates-overview.md).  
+4. V seznamu šablon projektu vyberte šablonu projektu doplňku VSTO. Seznam dostupných doplňku VSTO šablony projektů, naleznete v tématu [Přehled šablon projektů Office project](../vsto/office-project-templates-overview.md).  
   
-    > [!NOTE]  
-    >  Pokud šablony projektů nejsou zobrazeny po výběru **Office Add-ins** uzlu, ujistěte se, že **rozhraní .NET Framework 4** nebo novější je vybrané v poli se seznamem v horní části dialogového okna. Šablony projektů pro Office jsou zobrazeny pro obě verze rozhraní .NET Framework.  
+   > [!NOTE]  
+   >  Pokud šablony projektů nejsou zobrazeny po výběru **Office Add-ins** uzlu, ujistěte se, že **rozhraní .NET Framework 4** nebo novější je vybrané v poli se seznamem v horní části dialogového okna. Šablony projektů pro Office jsou zobrazeny pro obě verze rozhraní .NET Framework.  
   
-5.  V **název** zadejte název projektu. Ve výchozím nastavení název projektu slouží také jako název řešení.  
+5. V **název** zadejte název projektu. Ve výchozím nastavení název projektu slouží také jako název řešení.  
   
-6.  V **umístění** zadejte cestu, kde chcete vytvořit projekt. Můžete použít absolutní a univerzální naming convention (UNC) cesty. Nepoužívejte HTTP, FTP nebo jiné cesty protokolu.  
+6. V **umístění** zadejte cestu, kde chcete vytvořit projekt. Můžete použít absolutní a univerzální naming convention (UNC) cesty. Nepoužívejte HTTP, FTP nebo jiné cesty protokolu.  
   
-     Umístění mají následující formáty:  
+    Umístění mají následující formáty:  
   
-      * [*jednotky*\]\:  
+   * [*jednotky*\]\:  
   
-      * \\\\*Server*\\*sdílené složky*  
+   * \\\\*Server*\\*sdílené složky*  
   
      Nepoužívejte tyto znaky v umístění:  
   
-      * Hvězdička (*)  
+   * Hvězdička (*)  
   
-      * Svislá čára (|)  
+   * Svislá čára (|)  
   
-      * Dvojtečka (:) (S výjimkou následujících písmeno jednotky.)  
+   * Dvojtečka (:) (S výjimkou následujících písmeno jednotky.)  
   
-      * Dvojité uvozovky (") (cesty obsahující mezery není nutné vkládat do uvozovek.)  
+   * Dvojité uvozovky (") (cesty obsahující mezery není nutné vkládat do uvozovek.)  
   
-      * Menší než (\<)  
+   * Menší než (\<)  
   
-      * Větší než (>)  
+   * Větší než (>)  
   
-      * Otazník (?)  
+   * Otazník (?)  
   
-      * Znak procenta (%)  
+   * Znak procenta (%)  
   
 7. Zvolte **OK** tlačítko.
   
@@ -91,71 +91,71 @@ ms.locfileid: "49074049"
   
 ### <a name="to-create-a-document-level-customization-project"></a>Chcete-li vytvořit projekt přizpůsobení na úrovni dokumentu  
   
-1.  Na **souboru** nabídce zvolte **nový** > **projektu**. Pokud vaše rozhraní IDE nastaveno pro použití vývojového nastavení jazyka Visual Basic, na **souboru** nabídce zvolte **nový** > **projektu**.  
+1. Na **souboru** nabídce zvolte **nový** > **projektu**. Pokud vaše rozhraní IDE nastaveno pro použití vývojového nastavení jazyka Visual Basic, na **souboru** nabídce zvolte **nový** > **projektu**.  
   
-     **Nový projekt** zobrazí se dialogové okno.  
+    **Nový projekt** zobrazí se dialogové okno.  
   
-    > [!NOTE]  
-    >  Cílové projekty Office [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ve výchozím nastavení.  Další informace najdete v tématu [profil klienta rozhraní .NET Framework](/dotnet/framework/deployment/client-profile).  
+   > [!NOTE]  
+   >  Cílové projekty Office [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ve výchozím nastavení.  Další informace najdete v tématu [profil klienta rozhraní .NET Framework](/dotnet/framework/deployment/client-profile).  
   
-2.  V podokně šablon, pod uzlem jazyka, které chcete použít, rozbalte **Office/SharePoint**.  
+2. V podokně šablon, pod uzlem jazyka, které chcete použít, rozbalte **Office/SharePoint**.  
   
-3.  Vyberte **Office Add-ins** uzlu.  
+3. Vyberte **Office Add-ins** uzlu.  
   
-4.  V seznamu šablon projektu vyberte šablonu projektu na úrovni dokumentu. Seznam dostupných projektů na úrovni dokumentu šablony najdete v tématu [Přehled šablon projektů Office project](../vsto/office-project-templates-overview.md).  
+4. V seznamu šablon projektu vyberte šablonu projektu na úrovni dokumentu. Seznam dostupných projektů na úrovni dokumentu šablony najdete v tématu [Přehled šablon projektů Office project](../vsto/office-project-templates-overview.md).  
   
-    > [!NOTE]  
-    >  Pokud šablony projektů nejsou zobrazeny po výběru **Office Add-ins** uzlu, ujistěte se, že **rozhraní .NET Framework 4** nebo novější je vybrané v poli se seznamem v horní části dialogového okna. Šablony projektů pro Office jsou zobrazeny pro obě verze rozhraní .NET Framework.  
+   > [!NOTE]  
+   >  Pokud šablony projektů nejsou zobrazeny po výběru **Office Add-ins** uzlu, ujistěte se, že **rozhraní .NET Framework 4** nebo novější je vybrané v poli se seznamem v horní části dialogového okna. Šablony projektů pro Office jsou zobrazeny pro obě verze rozhraní .NET Framework.  
   
-5.  V **název** zadejte název projektu. Ve výchozím nastavení tento název se používá také pro dokument. Pokud vaše rozhraní IDE nastaveno pro použití vývojového nastavení jazyka Visual C# nebo obecného vývojového nastavení, také zadejte umístění a název řešení.  
+5. V **název** zadejte název projektu. Ve výchozím nastavení tento název se používá také pro dokument. Pokud vaše rozhraní IDE nastaveno pro použití vývojového nastavení jazyka Visual C# nebo obecného vývojového nastavení, také zadejte umístění a název řešení.  
   
-    > [!NOTE]  
-    >  Náhradní znaky nelze použít v cestě umístění projektu nebo v názvu projektu. Také pokud plánujete nasadit řešení pro použití v režimu offline, znaky v názvu projektu se musí vejít specifikacím protokolu HTTP.  
+   > [!NOTE]  
+   >  Náhradní znaky nelze použít v cestě umístění projektu nebo v názvu projektu. Také pokud plánujete nasadit řešení pro použití v režimu offline, znaky v názvu projektu se musí vejít specifikacím protokolu HTTP.  
   
-6.  Zvolte **OK** tlačítko.  
+6. Zvolte **OK** tlačítko.  
   
-     **Visual Studio Tools for Office Project Wizard** otevře.  
+    **Visual Studio Tools for Office Project Wizard** otevře.  
   
-7.  Vyberte **vytvoříte nový textový dokument** Pokud chcete vytvořit nový dokument pro řešení, nebo vyberte **zkopírovat existující dokument** Pokud budete chtít upravit existující dokument.  
+7. Vyberte **vytvoříte nový textový dokument** Pokud chcete vytvořit nový dokument pro řešení, nebo vyberte **zkopírovat existující dokument** Pokud budete chtít upravit existující dokument.  
   
-     Pokud vytvoříte nový textový dokument, zadejte název do **název** pole a vyberte formát dokumentu pomocí **formátu** pole. Další informace o dostupných formátech naleznete v tématu [architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md).  
+    Pokud vytvoříte nový textový dokument, zadejte název do **název** pole a vyberte formát dokumentu pomocí **formátu** pole. Další informace o dostupných formátech naleznete v tématu [architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md).  
   
-     Pokud používáte existující dokument, zadejte umístění dokumentu **úplnou cestu k existujícímu dokumentu** pole. Můžete použít absolutní a cesty UNC. Nepoužívejte HTTP, FTP nebo jiné cesty protokolu k dokumentu.  
+    Pokud používáte existující dokument, zadejte umístění dokumentu **úplnou cestu k existujícímu dokumentu** pole. Můžete použít absolutní a cesty UNC. Nepoužívejte HTTP, FTP nebo jiné cesty protokolu k dokumentu.  
   
-     Umístění mají následující formáty:  
+    Umístění mají následující formáty:  
   
-    -   [*jednotky*\]\:  
+   - [*jednotky*\]\:  
   
-    -   \\\\*Server*\\*sdílené složky*  
+   - \\\\*Server*\\*sdílené složky*  
   
      Nepoužívejte tyto znaky v umístění:  
   
-    -   Hvězdička (*)  
+   - Hvězdička (*)  
   
-    -   Svislá čára (|)  
+   - Svislá čára (|)  
   
-    -   Dvojtečka (:) (S výjimkou následujících písmeno jednotky.)  
+   - Dvojtečka (:) (S výjimkou následujících písmeno jednotky.)  
   
-    -   Dvojité uvozovky (") (cesty obsahující mezery není nutné vkládat do uvozovek.)  
+   - Dvojité uvozovky (") (cesty obsahující mezery není nutné vkládat do uvozovek.)  
   
-    -   Menší než (\<)  
+   - Menší než (\<)  
   
-    -   Větší než (>)  
+   - Větší než (>)  
   
-    -   Otazník (?)  
+   - Otazník (?)  
   
-    -   Znak procenta (%)  
+   - Znak procenta (%)  
   
-    > [!NOTE]  
-    >  Při použití existujícího dokumentu v [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] projektu, použijte pouze dokumenty, které byly vytvořeny v nebo převést na [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Podobně pokud používáte existující dokument aplikace Word 2010 projektu, použijte pouze dokumenty, které byly vytvořeny v nebo převést na aplikaci Word 2010. Některé funkce budou zakázány v dokumentu, při použití dokumentu, který byl vytvořen v dřívější verzi aplikace Word. Pokud se pokusíte napsat kód, který používá tyto funkce, mohou se vyskytnout chyby ve vašem projektu. Chcete-li převést dokument, otevřete ho v [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo Word 2010 na **souboru** kartu na pásu karet, zvolte **informace** > **převést**.  
+   > [!NOTE]  
+   >  Při použití existujícího dokumentu v [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] projektu, použijte pouze dokumenty, které byly vytvořeny v nebo převést na [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Podobně pokud používáte existující dokument aplikace Word 2010 projektu, použijte pouze dokumenty, které byly vytvořeny v nebo převést na aplikaci Word 2010. Některé funkce budou zakázány v dokumentu, při použití dokumentu, který byl vytvořen v dřívější verzi aplikace Word. Pokud se pokusíte napsat kód, který používá tyto funkce, mohou se vyskytnout chyby ve vašem projektu. Chcete-li převést dokument, otevřete ho v [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo Word 2010 na **souboru** kartu na pásu karet, zvolte **informace** > **převést**.  
   
-8.  Zvolte **Dokončit**.  
+8. Zvolte **Dokončit**.  
   
 9. Přidáte složky projektu a její podsložky do seznamu důvěryhodných umístění v Centru zabezpečení v aplikaci Word v následujících případech:  
   
-    -   Vytváříte dokumentu aplikace Word, který je založen na *DOCM* souboru a dokument obsahuje projekt VBA nebo hostuje ovládací prvky Windows Forms. Přidání složky projektů do seznamu důvěryhodných umístění vám pomůže zajistit, že dokument funguje podle očekávání v době návrhu.  
+   - Vytváříte dokumentu aplikace Word, který je založen na *DOCM* souboru a dokument obsahuje projekt VBA nebo hostuje ovládací prvky Windows Forms. Přidání složky projektů do seznamu důvěryhodných umístění vám pomůže zajistit, že dokument funguje podle očekávání v době návrhu.  
   
-    -   Vytváření projektu šablony aplikace Word, který je založen na *DOTX* souboru. Složku projektu musíte přidat do seznamu důvěryhodných umístění tak, aby mohli spustit a ladit projekt.  
+   - Vytváření projektu šablony aplikace Word, který je založen na *DOTX* souboru. Složku projektu musíte přidat do seznamu důvěryhodných umístění tak, aby mohli spustit a ladit projekt.  
   
      Další informace o přidání dokumentu do seznamu důvěryhodných umístění naleznete na webu Microsoft Office Online [vytvoření, odebrání nebo změna důvěryhodného umístění pro soubory](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   

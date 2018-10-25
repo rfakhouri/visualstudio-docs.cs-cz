@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9d446cfa4eca86ff4657fc9a8741aa965fd43de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed03ae8ace6fe96c579d324422403d69e2248687
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881960"
 ---
 # <a name="debugger-security"></a>Zabezpečení ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Možnost ladit jiným procesem poskytuje velmi široký mocniny, ke kterým by j
 ### <a name="managed-debugging-security"></a>Spravované ladění zabezpečení  
  Tady jsou některé obecná doporučení, které se vztahují na všechny spravované ladění.  
   
--   Buďte opatrní při připojování k procesu je nedůvěryhodný uživatel: Pokud tak učiníte, můžete předpokládat, že je důvěryhodný. Při pokusu o připojení k procesu je nedůvěryhodný uživatel, se zobrazí potvrzovací dialogové okno s upozorněním zabezpečení s dotazem, jestli se má připojit k procesu. "Důvěryhodných uživatelů" zahrnout, a sadu standardních uživatelů obvykle definovány na počítače, které mají nainstalováno, například rozhraní .NET Framework **aspnet**, **localsystem**, **networkservice**, a **localservice**. Další informace najdete v tématu [upozornění zabezpečení: připojení k procesu vlastněnému nedůvěryhodným uživatelským může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
+- Buďte opatrní při připojování k procesu je nedůvěryhodný uživatel: Pokud tak učiníte, můžete předpokládat, že je důvěryhodný. Při pokusu o připojení k procesu je nedůvěryhodný uživatel, se zobrazí potvrzovací dialogové okno s upozorněním zabezpečení s dotazem, jestli se má připojit k procesu. "Důvěryhodných uživatelů" zahrnout, a sadu standardních uživatelů obvykle definovány na počítače, které mají nainstalováno, například rozhraní .NET Framework **aspnet**, **localsystem**, **networkservice**, a **localservice**. Další informace najdete v tématu [upozornění zabezpečení: připojení k procesu vlastněnému nedůvěryhodným uživatelským může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
   
--   Buďte opatrní při stahování projekt Internetu a načítají do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. To je velmi riskantní provést i bez ladění. Když toto provedete, jsou za předpokladu, že projekt a kód, který obsahuje jsou důvěryhodné.  
+- Buďte opatrní při stahování projekt Internetu a načítají do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. To je velmi riskantní provést i bez ladění. Když toto provedete, jsou za předpokladu, že projekt a kód, který obsahuje jsou důvěryhodné.  
   
- Další informace najdete v tématu [ladění spravovaného kódu](../debugger/debugging-managed-code.md).  
+  Další informace najdete v tématu [ladění spravovaného kódu](../debugger/debugging-managed-code.md).  
   
 ### <a name="remote-debugging-security"></a>Zabezpečení vzdálené ladění  
  Místní ladění je obecně bezpečnější než vzdálené ladění. Vzdálené ladění zvyšuje celkový počet, který můžete zkoumat.  
@@ -79,11 +79,11 @@ Možnost ladit jiným procesem poskytuje velmi široký mocniny, ke kterým by j
 ### <a name="symbols-and-source-code"></a>Symbolů a zdrojového kódu  
  Dvě [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástroje, které vyžadují přemýšlení o zabezpečení jsou následující:  
   
--   Zdrojový Server, který vám poskytne verze zdrojového kódu z úložiště zdrojového kódu. Je vhodné, pokud nemá aktuální verzi zdrojový kód aplikace. [Upozornění zabezpečení: Ladicí program musí spustit nedůvěryhodný příkaz](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
+- Zdrojový Server, který vám poskytne verze zdrojového kódu z úložiště zdrojového kódu. Je vhodné, pokud nemá aktuální verzi zdrojový kód aplikace. [Upozornění zabezpečení: Ladicí program musí spustit nedůvěryhodný příkaz](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
   
--   Server symbolů, který slouží k poskytování symboly potřebné k ladění selhání během volání systému.  
+- Server symbolů, který slouží k poskytování symboly potřebné k ladění selhání během volání systému.  
   
- Zobrazit [zadání symbolu (.pdb) a zdrojové soubory](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+  Zobrazit [zadání symbolu (.pdb) a zdrojové soubory](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)   

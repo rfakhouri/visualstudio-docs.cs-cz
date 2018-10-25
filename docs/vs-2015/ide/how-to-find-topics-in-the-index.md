@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a6bdfb94a7164dc38bf636d12d8b99ea73aefad8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50c19fdaeaf9842c91e5dd7e9ca1472355b1b3e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815976"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Postupy: Hledání témat v rejstříku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,16 +35,16 @@ Index obsahuje seznam klíčových slov, které jsou spojeny s tématy v nainsta
   
 ### <a name="to-find-a-topic-by-using-the-index"></a>Chcete-li najít téma pomocí rejstříku  
   
-1.  Na **Index** kartu, proveďte některý z následujících úloh:  
+1. Na **Index** kartu, proveďte některý z následujících úloh:  
   
-    -   Zadejte klíčové slovo chcete vyhledat v textovém poli. Zadejte například "" aktualizace a najděte témata s klíčovými slovy, jako je například "aktualizace," "aktualizace," a "aktualizace."  
+   - Zadejte klíčové slovo chcete vyhledat v textovém poli. Zadejte například "" aktualizace a najděte témata s klíčovými slovy, jako je například "aktualizace," "aktualizace," a "aktualizace."  
   
-         Kliknutím na tlačítko filtru v horní části karty můžete zobrazit všechny položky, které obsahují text, který zadáte, nebo pouze ty položky, které začínaly textem, který zadáte.  
+      Kliknutím na tlačítko filtru v horní části karty můžete zobrazit všechny položky, které obsahují text, který zadáte, nebo pouze ty položky, které začínaly textem, který zadáte.  
   
-        > [!NOTE]
-        >  Jakmile se zobrazí tlačítko Filtr na tmavší pozadí s ohraničením, položky musí obsahovat text, který zadáte. Pokud se nezobrazují na pozadí a ohraničení, položky musí začínat textem, který zadáte.  
+     > [!NOTE]
+     >  Jakmile se zobrazí tlačítko Filtr na tmavší pozadí s ohraničením, položky musí obsahovat text, který zadáte. Pokud se nezobrazují na pozadí a ohraničení, položky musí začínat textem, který zadáte.  
   
-    -   Projděte si index a zvolte klíčové slovo.  
+   - Projděte si index a zvolte klíčové slovo.  
   
      Pokud je přidruženo pouze jedno téma klíčové slovo, které zadáte, zobrazí se. V opačném případě se zobrazí seznam všech témat, které jsou spojeny s tímto klíčovým slovem.  
   

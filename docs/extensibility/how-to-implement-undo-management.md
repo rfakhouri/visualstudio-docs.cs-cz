@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd77ce3cbb0b262e3ab56fef4f3456fecd3cab28
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 227a002b5bd1b333da177944056eef7aca2cc393
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830012"
 ---
 # <a name="how-to-implement-undo-management"></a>Postupy: implementace řízení zpět
 Primární rozhraní používá ke správě vrácení zpět se ale <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, která je implementována pomocí prostředí. Pro podporu správy vrácení zpět, implementovat samostatné zpět jednotky (tedy <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, který může obsahovat více jednotlivé kroky.  
@@ -43,39 +43,39 @@ Primární rozhraní používá ke správě vrácení zpět se ale <xref:Microso
   
 ### <a name="to-hook-your-undo-manager-into-the-environment"></a>Připojí správce akcí zpět do prostředí  
   
-1.  Volání `QueryInterface` objekt vrácený z <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> pro `IID_IOleUndoManager`. Ukazatel na Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>.  
+1. Volání `QueryInterface` objekt vrácený z <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> pro `IID_IOleUndoManager`. Ukazatel na Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>.  
   
-2.  Volání `QueryInterface` na `IOleUndoManager` pro `IID_IOleCommandTarget`. Ukazatel na Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+2. Volání `QueryInterface` na `IOleUndoManager` pro `IID_IOleCommandTarget`. Ukazatel na Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
-3.  Propojení vašich <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> volání do uložených `IOleCommandTarget` rozhraní pro následující příkazy StandardCommandSet97:  
+3. Propojení vašich <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> volání do uložených `IOleCommandTarget` rozhraní pro následující příkazy StandardCommandSet97:  
   
-    -   cmdidUndo  
+   -   cmdidUndo  
   
-    -   cmdidMultiLevelUndo  
+   -   cmdidMultiLevelUndo  
   
-    -   cmdidRedo  
+   -   cmdidRedo  
   
-    -   cmdidMultiLevelRedo  
+   -   cmdidMultiLevelRedo  
   
-    -   cmdidMultiLevelUndoList  
+   -   cmdidMultiLevelUndoList  
   
-    -   cmdidMultiLevelRedoList  
+   -   cmdidMultiLevelRedoList  
   
-4.  Volání `QueryInterface` na `IOleUndoManager` pro `IID_IVsChangeTrackingUndoManager`. Ukazatel na Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
+4. Volání `QueryInterface` na `IOleUndoManager` pro `IID_IVsChangeTrackingUndoManager`. Ukazatel na Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   
-     Použít ukazatele <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager> volat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A> metody.  
+    Použít ukazatele <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager> volat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A> metody.  
   
-5.  Volání `QueryInterface` na `IOleUndoManager` pro `IID_IVsLinkCapableUndoManager`.  
+5. Volání `QueryInterface` na `IOleUndoManager` pro `IID_IVsLinkCapableUndoManager`.  
   
-6.  Volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A> s dokumentem, který by měly také implementovat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient> rozhraní. Při zavření dokumentu volání `IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`.  
+6. Volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A> s dokumentem, který by měly také implementovat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient> rozhraní. Při zavření dokumentu volání `IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`.  
   
-7.  Při zavření dokumentu volání `QueryInterface` na vašeho správce akcí zpět pro `IID_IVsLifetimeControlledObject`.  
+7. Při zavření dokumentu volání `QueryInterface` na vašeho správce akcí zpět pro `IID_IVsLifetimeControlledObject`.  
   
-8.  Volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A>.  
+8. Volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A>.  
   
 9. Při změně v dokumentu, volání <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> na správce s `OleUndoUnit` třídy. <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> Metoda uchovává odkaz na objekt, takže obecně, uvolníte ho hned po <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>.  
   
- `OleUndoManager` Třída reprezentuje instanci zásobníku jedno vrácení zpět. Proto je jeden objekt správce akcí zpět na datové entity, které jsou sledovány pro vrácení zpět nebo znovu.  
+   `OleUndoManager` Třída reprezentuje instanci zásobníku jedno vrácení zpět. Proto je jeden objekt správce akcí zpět na datové entity, které jsou sledovány pro vrácení zpět nebo znovu.  
   
 > [!NOTE]
 >  Zatímco objekt správce akcí zpět hojně používají textový editor, je hlavní komponenty, která nemá žádné specifické podpoře pro textový editor. Pokud chcete zajistit podporu více úrovní zpět nebo znovu, můžete k tomu tento objekt.  

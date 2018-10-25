@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 104c85f7b23af8bfb412423ad1eeb27190a235c2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881674"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,23 +73,23 @@ V sadě Visual Studio 2015 je k dispozici pro jeden kód soubory stejně jako so
   
  Všimněte si následujícího:  
   
--   #Else větve na řádku 8 je zobrazena šedě označuje aktivní oblast, protože __ANDROID\_ \_ definovaný pro projekt pro Android.  
+- #Else větve na řádku 8 je zobrazena šedě označuje aktivní oblast, protože `__ANDROID__` definovaný pro projekt pro Android.  
   
--   Pozdrav proměnná na řádku 11 je inicializována s identifikátorem HELLO, který má nachová vlnovku. Je to proto, že žádný identifikátor HELLO je definován v projektu pro iOS aktuálně neaktivní. Když v Androidu by zkompilovat projekt řádku 11, nebudou v iOS. Protože se jedná o sdílený kód, který je něco, měli byste změnit i v případě, že se zkompiluje v současné době aktivní konfiguraci.  
+- Pozdrav proměnná na řádku 11 je inicializována s identifikátorem HELLO, který má nachová vlnovku. Je to proto, že žádný identifikátor HELLO je definován v projektu pro iOS aktuálně neaktivní. Když v Androidu by zkompilovat projekt řádku 11, nebudou v iOS. Protože se jedná o sdílený kód, který je něco, měli byste změnit i v případě, že se zkompiluje v současné době aktivní konfiguraci.  
   
--   Řádek 12 má červená vlnovka na identifikátor BYE; Tento identifikátor není definován v aktuálně vybraného aktivního projektu.  
+- Řádek 12 má červená vlnovka na identifikátor BYE; Tento identifikátor není definován v aktuálně vybraného aktivního projektu.  
   
- Nyní změnit aktivní projekt iOS.StaticLibrary a Všimněte si, jak se mění podtržení vlnovkou.  
+  Nyní změnit aktivní projekt iOS.StaticLibrary a Všimněte si, jak se mění podtržení vlnovkou.  
   
- ![iOS je vybrán jako aktivní projekt. ](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
+  ![iOS je vybrán jako aktivní projekt. ](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
   
- Všimněte si následujícího:  
+  Všimněte si následujícího:  
   
--   #Ifdef větve na řádku 6 je zobrazena šedě označuje aktivní oblast, protože __ANDROID\_ \_ není definovaný pro projekt pro iOS.  
+- #Ifdef větve na řádku 6 je zobrazena šedě označuje aktivní oblast, protože *_ANDROID\\*  \_ není definovaný pro projekt pro iOS.  
   
--   Pozdrav proměnná na řádku 11 je inicializována s identifikátorem HELLO, který má teď červená vlnovka. Je to proto, že žádný identifikátor HELLO je definován v projektu pro iOS aktuálně aktivní.  
+- Pozdrav proměnná na řádku 11 je inicializována s identifikátorem HELLO, který má teď červená vlnovka. Je to proto, že žádný identifikátor HELLO je definován v projektu pro iOS aktuálně aktivní.  
   
--   Řádek 12 má nachová vlnovku na identifikátor BYE; Tento identifikátor není definován v aktuálně neaktivní Android.NativeActivity projektu.  
+- Řádek 12 má nachová vlnovku na identifikátor BYE; Tento identifikátor není definován v aktuálně neaktivní Android.NativeActivity projektu.  
   
 ## <a name="single-file-intellisense"></a>Jeden soubor IntelliSense  
  Při otevření jednoho souboru mimo jakýkoli projekt stále získání funkce IntelliSense. Můžete povolit nebo zakázat konkrétní funkce tak, že přejdete do **textový Editor, C/C++, Upřesnit** můžete zapnout nebo vypnout funkce technologie IntelliSense. Chcete-li nakonfigurovat technologie IntelliSense pro jednotlivé soubory, které nejsou součástí projektu, vyhledejte **technologie IntelliSense a procházení pro neprojektové soubory** v **Upřesnit** oddílu. Zobrazit [průvodce Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  

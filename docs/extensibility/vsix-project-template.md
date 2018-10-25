@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2309428ffa87409bd35f1a05c2cfd591db3cc1a
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: f897c2ae11e9b9677557684ca4755d0df66ddbdd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864787"
 ---
 # <a name="vsix-project-template"></a>Šablona projektu VSIX
 Použijte šablonu projektu VSIX zabalit jeden nebo více rozšíření sady Visual Studio v projektu VSIX a potom publikujete balíček na [galerii sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webu.  
@@ -38,50 +38,50 @@ Použijte šablonu projektu VSIX zabalit jeden nebo více rozšíření sady Vis
 ## <a name="uses-of-the-vsix-project-template"></a>Použití šablony projektu VSIX  
  Šablona projektu VSIX má dvě hlavní využití:  
   
--   K nasazení šablony projektů, šablony položek a další rozšíření, které ještě nemají podporu VSIX.  
+- K nasazení šablony projektů, šablony položek a další rozšíření, které ještě nemají podporu VSIX.  
   
--   Zabalit výstupy několik rozšíření do balíčku jedno nasazení.  
+- Zabalit výstupy několik rozšíření do balíčku jedno nasazení.  
   
- Není nutné použít šablonu projektu VSIX k nasazení rozšíření VSPackages nebo jiných typů rozšíření, které už mají podporu VSIX.  
+  Není nutné použít šablonu projektu VSIX k nasazení rozšíření VSPackages nebo jiných typů rozšíření, které už mají podporu VSIX.  
   
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Vytvoření balíčku rozšíření v prázdný projekt VSIX  
  Můžete zabalit existující rozšíření nebo rozšíření, která ještě nemá podporu obalením v prázdný projekt VSIX VSIX. Rozšíření bude zabalena musí být typu, který je podporován [VSIX schématu](../extensibility/vsix-extension-schema-2-0-reference.md).  
   
 ### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Balíček rozšíření pomocí projektu VSIX  
   
-1.  Sestavení projektů, které tvoří rozšíření.  
+1. Sestavení projektů, které tvoří rozšíření.  
   
-2.  Vytvořte projekt VSIX s použitím **projekt VSIX** šablony.  
+2. Vytvořte projekt VSIX s použitím **projekt VSIX** šablony.  
   
-     *Source.extension.vsixmanifest* se otevře v **Manifest Designer**.  
+    *Source.extension.vsixmanifest* se otevře v **Manifest Designer**.  
   
-3.  Na **prostředky** , vyberte **nový** tlačítko.  
+3. Na **prostředky** , vyberte **nový** tlačítko.  
   
-     **Přidat nové aktivum** zobrazí se dialogové okno.  
+    **Přidat nové aktivum** zobrazí se dialogové okno.  
   
-4.  V **typ** , zvolte typ rozšíření přidat.  
+4. V **typ** , zvolte typ rozšíření přidat.  
   
-5.  Chcete-li přidat rozšíření nebo obsah elementu, který je součástí aktuálního řešení (například šablonu položky nebo zkompilovaného sestavení), postupujte následovně:  
+5. Chcete-li přidat rozšíření nebo obsah elementu, který je součástí aktuálního řešení (například šablonu položky nebo zkompilovaného sestavení), postupujte následovně:  
   
-    1.  V **zdroj** klikněte na položku **projekt v aktuálním řešení**.  
+   1.  V **zdroj** klikněte na položku **projekt v aktuálním řešení**.  
   
-    2.  V **projektu** , zvolte název rozšíření.  
+   2.  V **projektu** , zvolte název rozšíření.  
   
-    3.  V **vložit do této složky** zadejte název složky, do které se má prostředek pro vložení a klikněte na tlačítko **OK** tlačítko.  
+   3.  V **vložit do této složky** zadejte název složky, do které se má prostředek pro vložení a klikněte na tlačítko **OK** tlačítko.  
   
-6.  Přidání rozšíření nebo element content, který není součástí aktuálního řešení, proveďte následující kroky:  
+6. Přidání rozšíření nebo element content, který není součástí aktuálního řešení, proveďte následující kroky:  
   
-    1.  V **zdroj** seznamu, zvolte **soubor v systému souborů**.  
+   1.  V **zdroj** seznamu, zvolte **soubor v systému souborů**.  
   
-    2.  V **cesta** pole, zadejte úplnou cestu k souboru rozšíření zkompilovaných nebo komprimované nebo použít **Procházet** tlačítko, přejděte k souboru.  
+   2.  V **cesta** pole, zadejte úplnou cestu k souboru rozšíření zkompilovaných nebo komprimované nebo použít **Procházet** tlačítko, přejděte k souboru.  
   
-    3.  V **vložit do této složky** zadejte název složky, do které se má prostředek pro vložení a klikněte na tlačítko **OK** tlačítko.  
+   3.  V **vložit do této složky** zadejte název složky, do které se má prostředek pro vložení a klikněte na tlačítko **OK** tlačítko.  
   
-7.  Pokud chcete, aby váš balíček zahrnout další rozšíření, je přidáte stejným způsobem.  
+7. Pokud chcete, aby váš balíček zahrnout další rozšíření, je přidáte stejným způsobem.  
   
-8.  Sestavte řešení.  
+8. Sestavte řešení.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sestavení *VSIX* soubor, který obsahuje soubor VSIX manifestu, [Content_Types]*.xml* soubor a všechny prostředky rozšíření, které jste přidali do projektu.  
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sestavení *VSIX* soubor, který obsahuje soubor VSIX manifestu, [Content_Types]*.xml* soubor a všechny prostředky rozšíření, které jste přidali do projektu.  
   
 ## <a name="see-also"></a>Viz také:  
  [VSIX extension schema 2.0 – referenční informace](../extensibility/vsix-extension-schema-2-0-reference.md)   

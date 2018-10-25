@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b113d0d62156d77d08fa2fcdbb415d0518eba3a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ddede8542cda7499a9781c19a6baf1c58acfd125
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675683"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839541"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin – rozhraní
   Implementace imanagedaddin – rozhraní pro vytváření komponenty, která načte spravovaných doplňků VSTO. Toto rozhraní přidal v systému Microsoft Office 2007.  
@@ -57,25 +57,25 @@ interface IManagedAddin : IUnknown
 ## <a name="how-managed-add-ins-are-loaded"></a>Jak spravované doplňky jsou načteny.  
  Při spuštění aplikace, dojde k následujícím krokům:  
   
-1.  Aplikace zjistí doplňků VSTO tím, že hledají záznamy v následujícím klíči registru:  
+1. Aplikace zjistí doplňků VSTO tím, že hledají záznamy v následujícím klíči registru:  
   
-     **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<název_aplikace >_ \Addins\**  
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<název_aplikace >* \Addins\\**  
   
-     Každá položka v rámci tohoto klíče registru je jedinečné ID doplňku VSTO. Obvykle je to název sestavení doplňku VSTO.  
+    Každá položka v rámci tohoto klíče registru je jedinečné ID doplňku VSTO. Obvykle je to název sestavení doplňku VSTO.  
   
-2.  Aplikace vyhledá `Manifest` položky pod položkou pro každý doplňku VSTO.  
+2. Aplikace vyhledá `Manifest` položky pod položkou pro každý doplňku VSTO.  
   
-     Spravované doplňky VSTO můžete ukládat úplnou cestu k manifestu v `Manifest` položku **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<název_aplikace >_ \Addins\\  _\<ID doplňku >_**. Manifest je soubor (obvykle soubor XML), který poskytuje informace, které slouží k načtení doplňku VSTO.  
+    Spravované doplňky VSTO můžete ukládat úplnou cestu k manifestu v `Manifest` položku **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<název_aplikace >_ \Addins\\  _\<ID doplňku >_**. Manifest je soubor (obvykle soubor XML), který poskytuje informace, které slouží k načtení doplňku VSTO.  
   
-3.  Pokud aplikace zjistí `Manifest` položky, aplikace se pokouší načíst spravované součásti zavaděč doplňku VSTO. Aplikace to provede tak, že zkusíte vytvořit objekt modelu COM, který implementuje imanagedaddin – rozhraní.  
+3. Pokud aplikace zjistí `Manifest` položky, aplikace se pokouší načíst spravované součásti zavaděč doplňku VSTO. Aplikace to provede tak, že zkusíte vytvořit objekt modelu COM, který implementuje imanagedaddin – rozhraní.  
   
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Obsahuje součást doplňku VSTO zavaděč (*knihovna VSTOLoader.dll*), nebo můžete vytvořit vlastní implementaci imanagedaddin – rozhraní.  
+    [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Obsahuje součást doplňku VSTO zavaděč (*knihovna VSTOLoader.dll*), nebo můžete vytvořit vlastní implementaci imanagedaddin – rozhraní.  
   
-4.  Volání aplikace [IManagedAddin::Load](../vsto/imanagedaddin-load.md) metoda a předá v hodnotě `Manifest` položka.  
+4. Volání aplikace [IManagedAddin::Load](../vsto/imanagedaddin-load.md) metoda a předá v hodnotě `Manifest` položka.  
   
-5.  [IManagedAddin::Load](../vsto/imanagedaddin-load.md) metoda provede úlohy potřebné pro zavedení doplňku VSTO, jako je například konfigurace zásad aplikací domény a zabezpečení pro VSTO doplněk, který se načítá.  
+5. [IManagedAddin::Load](../vsto/imanagedaddin-load.md) metoda provede úlohy potřebné pro zavedení doplňku VSTO, jako je například konfigurace zásad aplikací domény a zabezpečení pro VSTO doplněk, který se načítá.  
   
- Další informace o registru spravované klíče, které aplikace Microsoft Office použijte k vyhledání a načtení doplňků VSTO naleznete v tématu [položky registru pro doplňky VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
+   Další informace o registru spravované klíče, které aplikace Microsoft Office použijte k vyhledání a načtení doplňků VSTO naleznete v tématu [položky registru pro doplňky VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
   
 ## <a name="guidance-to-implement-imanagedaddin"></a>Pokyny k implementaci imanagedaddin –  
  Pokud implementujete imanagedaddin –, budete muset zaregistrovat knihovnu DLL, která obsahuje implementace s použitím následující identifikátor CLSID:  

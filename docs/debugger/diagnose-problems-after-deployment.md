@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865359"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnostika problémů po nasazení pomocí technologie IntelliTrace
 
@@ -264,100 +264,100 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
 
 3.  Ujistěte se, že soubor obsahuje požadované informace:
 
--   **ProjectName**
+- **ProjectName**
 
-     Název projektu v sadě Visual Studio. Příklad:
+   Název projektu v sadě Visual Studio. Příklad:
+
+  ```xml
+  <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+  ```
+
+- **SourceControl**
+
+- Informace o systému správy zdrojů a tyto požadované vlastnosti:
+
+  - **TFS**
+
+    - **ProjectCollectionUri**: identifikátor URI pro Team Foundation Server a projekt kolekce
+
+    - **ProjectItemSpec**: cesta k souboru projektu vaší aplikace (.csproj nebo .vbproj)
+
+    - **ProjectVersionSpec**: verze projektu
+
+      Příklad:
 
     ```xml
-    <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+    <SourceControl type="TFS">
+       <TfsSourceControl>
+          <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
+          <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
+          <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
+       </TfsSourceControl>
+    </SourceControl>
     ```
 
--   **SourceControl**
+  - **Git**
 
--   Informace o systému správy zdrojů a tyto požadované vlastnosti:
+    - **GitSourceControl**: umístění **GitSourceControl** schématu
 
-    -   **TFS**
+    - **RepositoryUrl**: identifikátor URI pro Team Foundation Server, kolekce projektu a úložiště Git
 
-        -   **ProjectCollectionUri**: identifikátor URI pro Team Foundation Server a projekt kolekce
+    - **ProjectPath**: cesta k souboru projektu vaší aplikace (.csproj nebo .vbproj)
 
-        -   **ProjectItemSpec**: cesta k souboru projektu vaší aplikace (.csproj nebo .vbproj)
+    - **CommitId**: id potvrzení
 
-        -   **ProjectVersionSpec**: verze projektu
+      Příklad:
 
-         Příklad:
+    ```xml
+    <SourceControl type="Git">
+       <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
+          <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
+          <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
+          <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
+       </GitSourceControl>
+    </SourceControl>
+    ```
 
-        ```xml
-        <SourceControl type="TFS">
-           <TfsSourceControl>
-              <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
-              <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
-              <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
-           </TfsSourceControl>
-        </SourceControl>
-        ```
+- **Sestavení**
 
-    -   **Git**
+   Informace o systému sestavení, buď `"TeamBuild"` nebo `"MSBuild"`, a tyto požadované vlastnosti:
 
-        -   **GitSourceControl**: umístění **GitSourceControl** schématu
+  - **BuildLabel** (pro TeamBuild): název sestavení a číslo. Tento popisek se také používá jako název události nasazení. Další informace o čísla sestavení najdete v tématu [použít sestavení čísla poskytnout smysluplné názvy k dokončeným sestavením](/azure/devops/pipelines/build/options?view=vsts).
 
-        -   **RepositoryUrl**: identifikátor URI pro Team Foundation Server, kolekce projektu a úložiště Git
+  - **SymbolPath** (doporučeno): seznam identifikátorů URI pro symboly (soubor PDB) oddělený středníky. Tyto identifikátory URI mohou být adresy URL nebo UNC. Díky tomu snadněji pro Visual Studio najít odpovídající symboly vám pomoci s laděním.
 
-        -   **ProjectPath**: cesta k souboru projektu vaší aplikace (.csproj nebo .vbproj)
+  - **BuildReportUrl** (pro TeamBuild): umístění sestavy sestavení na serveru TFS
 
-        -   **CommitId**: id potvrzení
+  - **BuildId** (pro TeamBuild): identifikátor URI pro sestavení podrobnosti v sadě TFS. Pomocí tohoto identifikátoru URI slouží také jako ID události nasazení. To je id musí být jedinečné, pokud nepoužíváte typ TeamBuild.
 
-         Příklad:
+  - **BuiltSolution**: cesta k souboru řešení, které Visual Studio používá k vyhledání a otevření odpovídajícího řešení. Toto je obsah **SolutionPath** vlastnosti Msbuildu.
 
-        ```xml
-        <SourceControl type="Git">
-           <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
-              <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
-              <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
-              <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
-           </GitSourceControl>
-        </SourceControl>
-        ```
+    Příklad:
 
--   **Sestavení**
+  - **TFS**
 
-     Informace o systému sestavení, buď `"TeamBuild"` nebo `"MSBuild"`, a tyto požadované vlastnosti:
+    ```xml
+    <Build type="TeamBuild">
+       <MsBuild>
+          <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
+          <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
+          <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
+          <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MsBuild>
+    </Build>
+    ```
 
-    -   **BuildLabel** (pro TeamBuild): název sestavení a číslo. Tento popisek se také používá jako název události nasazení. Další informace o čísla sestavení najdete v tématu [použít sestavení čísla poskytnout smysluplné názvy k dokončeným sestavením](/azure/devops/pipelines/build/options?view=vsts).
+  - **Git**
 
-    -   **SymbolPath** (doporučeno): seznam identifikátorů URI pro symboly (soubor PDB) oddělený středníky. Tyto identifikátory URI mohou být adresy URL nebo UNC. Díky tomu snadněji pro Visual Studio najít odpovídající symboly vám pomoci s laděním.
-
-    -   **BuildReportUrl** (pro TeamBuild): umístění sestavy sestavení na serveru TFS
-
-    -   **BuildId** (pro TeamBuild): identifikátor URI pro sestavení podrobnosti v sadě TFS. Pomocí tohoto identifikátoru URI slouží také jako ID události nasazení. To je id musí být jedinečné, pokud nepoužíváte typ TeamBuild.
-
-    -   **BuiltSolution**: cesta k souboru řešení, které Visual Studio používá k vyhledání a otevření odpovídajícího řešení. Toto je obsah **SolutionPath** vlastnosti Msbuildu.
-
-     Příklad:
-
-    -   **TFS**
-
-        ```xml
-        <Build type="TeamBuild">
-           <MsBuild>
-              <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
-              <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
-              <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
-              <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MsBuild>
-        </Build>
-        ```
-
-    -   **Git**
-
-        ```xml
-        <Build type="MSBuild">
-           <MSBuild>
-              <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MSBuild>
-        </Build>
-        ```
+    ```xml
+    <Build type="MSBuild">
+       <MSBuild>
+          <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MSBuild>
+    </Build>
+    ```
 
 ####  <a name="IneligibleWorkspace"></a> Otázka: Proč sada Visual Studio říká, že je že můj vybraný pracovní prostor nezpůsobilý?
  **Odpověď:** vybraný pracovní prostor neobsahuje žádná mapování mezi složkou správy zdrojového kódu a místní složky. Chcete-li vytvořit mapování pro tento pracovní prostor, zvolte **spravovat**. V opačném případě zvolte již namapovaný pracovní prostor nebo vytvořte nový pracovní prostor.

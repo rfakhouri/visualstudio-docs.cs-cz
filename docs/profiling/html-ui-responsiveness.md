@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 482c7213f695fce68026acbd0fd953cf2d4792ad
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c89a437938a042ead343ee5c1386ea11d637663d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675731"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834517"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analýza odezvy uživatelského rozhraní HTML v univerzálních aplikací pro Windows
 Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pomocí Profiler odezvy uživatelského rozhraní, nástroj výkon, který je k dispozici pro univerzální aplikace pro Windows.  
@@ -201,36 +201,36 @@ if (performance.mark && performance.measure) {
   
  Pomocí tohoto grafu pro:  
   
--   Určete obecné oblastí zájmu.  
+- Určete obecné oblastí zájmu.  
   
--   Zvolte konkrétní časové období pro zobrazení v grafu podrobnosti časové osy. Vyberte časové období, vyberte část grafu a přetažením ukazatele chcete provést výběr.  
+- Zvolte konkrétní časové období pro zobrazení v grafu podrobnosti časové osy. Vyberte časové období, vyberte část grafu a přetažením ukazatele chcete provést výběr.  
   
--   Získejte podrobnější přehled o vybrané časové období výběrem **přiblížit** tlačítko.  
+- Získejte podrobnější přehled o vybrané časové období výběrem **přiblížit** tlačítko.  
   
- Další informace o používání grafu najdete v tématu [izolovat problém rychlosti odezvy uživatelského rozhraní](#Workflow) v tomto tématu.  
+  Další informace o používání grafu najdete v tématu [izolovat problém rychlosti odezvy uživatelského rozhraní](#Workflow) v tomto tématu.  
   
 ###  <a name="VisualThroughput"></a> Zobrazení vizuální propustnost (FPS)  
  Vizuální propustnost graf umožňuje určit dobu, ve kterém Snímková frekvence vyřadit. Zobrazuje počet snímků za sekundu (FPS) pro aplikaci. Tento graf je nejužitečnější pro vývoj her a bohatý mediální aplikace.  
   
  Zobrazená hodnota snímků za Sekundu může lišit od skutečné Snímková frekvence. Mějte tyto informace při zkoumání dat v tomto grafu:  
   
--   Graf ukazuje snímků za Sekundu, že aplikace bude schopné dosáhnout v konkrétním okamžiku. Při nečinnosti aplikaci, snímků za Sekundu je stejný jako obnovovací frekvence monitorování.  
+- Graf ukazuje snímků za Sekundu, že aplikace bude schopné dosáhnout v konkrétním okamžiku. Při nečinnosti aplikaci, snímků za Sekundu je stejný jako obnovovací frekvence monitorování.  
   
--   Graf zobrazuje skutečné snímků za Sekundu, pokud aplikace pracuje, který vyžaduje aktualizace sady visual.  
+- Graf zobrazuje skutečné snímků za Sekundu, pokud aplikace pracuje, který vyžaduje aktualizace sady visual.  
   
--   Graf zobrazuje hodnota nula, pokud rámce jsou vyřazována.  
+- Graf zobrazuje hodnota nula, pokud rámce jsou vyřazována.  
   
- Tento příklad ukazuje, jak vypadá graf vizuální propustnost:  
+  Tento příklad ukazuje, jak vypadá graf vizuální propustnost:  
   
- ![Vizuální propustnost grafu](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
+  ![Vizuální propustnost grafu](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
   
- Použití rozhraní graph vizuální propustnost na:  
+  Použití rozhraní graph vizuální propustnost na:  
   
--   Určete obecné oblastí zájmu.  
+- Určete obecné oblastí zájmu.  
   
--   Zvolte konkrétní časové období pro zobrazení v grafu podrobnosti časové osy. Vyberte časové období, vyberte část grafu a přetažením ukazatele chcete provést výběr.  
+- Zvolte konkrétní časové období pro zobrazení v grafu podrobnosti časové osy. Vyberte časové období, vyberte část grafu a přetažením ukazatele chcete provést výběr.  
   
--   Získejte podrobnější přehled o vybrané časové období výběrem **přiblížit** tlačítko.  
+- Získejte podrobnější přehled o vybrané časové období výběrem **přiblížit** tlačítko.  
   
 ###  <a name="TimelineDetails"></a> Podrobnosti zobrazení časové osy  
  Časová osa grafu podrobností se zobrazí v dolním podokně Profiler odezvy uživatelského rozhraní. Poskytuje sekvenční a hierarchické informace o událostech, které spotřebovávají nejvíce času procesoru během vybraných časových období. Tento graf vám pomohou určit, co vyvolalo určité události a pro některé události, jak mapy událostí zpět ke zdrojovému kódu. Tento graf také vám pomůže určit čas potřebný k vykreslení vizuální aktualizace na obrazovce.  
@@ -307,23 +307,23 @@ if (performance.mark && performance.measure) {
 ## <a name="profiler-event-reference"></a>Profiler události – přehled  
  Profiler události jsou zařazené do kategorií a barevné označení v Profiler odezvy uživatelského rozhraní. Toto jsou kategorie události:  
   
--   **Načítání.** Označuje dobu strávenou načítání prostředků aplikací a parsování HTML a CSS, při prvním načtení aplikace. To může být zahrnuté síťové žádosti.  
+- **Načítání.** Označuje dobu strávenou načítání prostředků aplikací a parsování HTML a CSS, při prvním načtení aplikace. To může být zahrnuté síťové žádosti.  
   
--   **Skriptování.** Označuje čas strávený parsování a spuštění JavaScriptu. To zahrnuje události modelu DOM, časovače, vyhodnocení skriptů a pracovní snímků animace. Obsahuje uživatelský kód a kód knihovny.  
+- **Skriptování.** Označuje čas strávený parsování a spuštění JavaScriptu. To zahrnuje události modelu DOM, časovače, vyhodnocení skriptů a pracovní snímků animace. Obsahuje uživatelský kód a kód knihovny.  
   
--   **GC.** Zobrazuje čas strávený při uvolňování paměti.  
+- **GC.** Zobrazuje čas strávený při uvolňování paměti.  
   
--   **Práce se styly.** Označuje čas strávený analýzou šablon stylů CSS a výpočtu prezentace a rozložení elementů.  
+- **Práce se styly.** Označuje čas strávený analýzou šablon stylů CSS a výpočtu prezentace a rozložení elementů.  
   
--   **Vykreslování.** Označuje čas strávený vykreslováním obrazovky.  
+- **Vykreslování.** Označuje čas strávený vykreslováním obrazovky.  
   
--   **Dekódování obrázku.** Označuje dobu strávenou dekomprimací a dekódováním obrázků.  
+- **Dekódování obrázku.** Označuje dobu strávenou dekomprimací a dekódováním obrázků.  
   
- Profiler odezvy uživatelského rozhraní pro používání stylů pro kategorie a skript zadat data, která se dají dále rozvíjet v grafu podrobnosti časové osy. Pokud jako problém identifikovat problémy skriptování, můžete spustit profiler vzorkování procesoru s Profiler odezvy uživatelského rozhraní. Alternativně můžete použít funkci profileru sady Visual Studio získat podrobnější údaje. Další informace najdete v tématu [paměti jazyka JavaScript](../profiling/javascript-memory.md).  
+  Profiler odezvy uživatelského rozhraní pro používání stylů pro kategorie a skript zadat data, která se dají dále rozvíjet v grafu podrobnosti časové osy. Pokud jako problém identifikovat problémy skriptování, můžete spustit profiler vzorkování procesoru s Profiler odezvy uživatelského rozhraní. Alternativně můžete použít funkci profileru sady Visual Studio získat podrobnější údaje. Další informace najdete v tématu [paměti jazyka JavaScript](../profiling/javascript-memory.md).  
   
- Pro další kategorie událostí je možné identifikovat platformy vedlejší účinky, které jsou výsledkem přidání funkce do vaší aplikace, ale v těchto případech nemusí být schopni vyřešit problémy s konkrétní výkonem s použitím Profiler odezvy uživatelského rozhraní.  
+  Pro další kategorie událostí je možné identifikovat platformy vedlejší účinky, které jsou výsledkem přidání funkce do vaší aplikace, ale v těchto případech nemusí být schopni vyřešit problémy s konkrétní výkonem s použitím Profiler odezvy uživatelského rozhraní.  
   
- Tato tabulka zobrazuje události a jejich popis:  
+  Tato tabulka zobrazuje události a jejich popis:  
   
 |Událost|Kategorie události|Nastane, když|  
 |-----------|--------------------|-----------------|  

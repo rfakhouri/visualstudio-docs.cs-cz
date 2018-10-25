@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886458"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Přizpůsobení úložiště souborů a serializace XML
 
@@ -301,7 +301,7 @@ XML – vlastnost uzly jsou nalezené pod uzly třídy.
 Datové uzly role jsou nalezené pod uzly třída zdroje.
 
 |Vlastnost|Popis|
-|--------------|-----------------|
+|-|-|
 |Má vlastní Monikeru|Nastavte na hodnotu true, pokud chcete poskytnout vlastní kód pro generování a jejich řešení zástupných názvů, které přecházejí přes tuto relaci.<br /><br /> Podrobné pokyny najdete sestavte řešení a potom dvakrát klikněte na chybové zprávy.|
 |Doménový vztah|Určuje vztah, na kterou se vztahují tyto možnosti. Jen pro čtení.|
 |Vynechat – Element|Při hodnotě true je ve schématu vynechá uzel XML odpovídající zdrojové roli.<br /><br /> Pokud existuje více než jeden vztah mezi zdrojové a cílové třídy, tento uzel role rozlišuje mezi odkazy, které patří do dvou relací. Proto doporučujeme tuto možnost v tomto případě nenastavujte.|

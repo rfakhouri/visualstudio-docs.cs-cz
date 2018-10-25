@@ -28,12 +28,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860325"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Vytvoření databáze SQL pomocí návrháře
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,23 +58,23 @@ Můžete zkoumat základní úkoly, jako je například přidávání tabulek a 
   
 #### <a name="to-create-a-project-and-a-database-file"></a>Vytvoření projektu a databázového souboru  
   
-1.  Vytvoření projektu Windows Forms s názvem `SampleDatabaseWalkthrough`.  
+1. Vytvoření projektu Windows Forms s názvem `SampleDatabaseWalkthrough`.  
   
-2.  Na panelu nabídek vyberte **projektu** > **přidat novou položku**.  
+2. Na panelu nabídek vyberte **projektu** > **přidat novou položku**.  
   
-3.  V seznamu šablon položek, přejděte dolů a vyberte **databáze založené na službě**.  
+3. V seznamu šablon položek, přejděte dolů a vyberte **databáze založené na službě**.  
   
-     ![Dialogové okno šablony položky](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
+    ![Dialogové okno šablony položky](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
   
-4.  Pojmenujte databázi **SampleDatabase**a pak vyberte **přidat** tlačítko.  
+4. Pojmenujte databázi **SampleDatabase**a pak vyberte **přidat** tlačítko.  
   
-5.  Pokud **zdroje dat** okno není otevřeno, otevřete ho tak, že vyberete klávesy Shift + Alt + D nebo na panelu nabídek, výběrem **zobrazení** > **ostatní Windows**  >  **Zdroje dat**.  
+5. Pokud **zdroje dat** okno není otevřeno, otevřete ho tak, že vyberete klávesy Shift + Alt + D nebo na panelu nabídek, výběrem **zobrazení** > **ostatní Windows**  >  **Zdroje dat**.  
   
-6.  V **zdroje dat** okna, vyberte **přidat nový zdroj dat** odkaz.  
+6. V **zdroje dat** okna, vyberte **přidat nový zdroj dat** odkaz.  
   
-7.  V **Průvodce konfigurací zdroje dat**, vyberte **Další** čtyřikrát přijměte výchozí nastavení a potom vyberte **Dokončit** tlačítko.  
+7. V **Průvodce konfigurací zdroje dat**, vyberte **Další** čtyřikrát přijměte výchozí nastavení a potom vyberte **Dokončit** tlačítko.  
   
- Otevřením okna vlastností pro databázi lze zobrazit její připojovací řetězec a umístění primárního souboru .mdf databáze. Uvidíte, že databázový soubor je ve složce projektu.  
+   Otevřením okna vlastností pro databázi lze zobrazit její připojovací řetězec a umístění primárního souboru .mdf databáze. Uvidíte, že databázový soubor je ve složce projektu.  
   
 -   V sadě Visual Studio, vyberte **zobrazení** > **Průzkumník objektů systému SQL Server** Pokud toto okno ještě není otevřený. Otevřete okno vlastností rozbalením **datová připojení** uzel, otevřete místní nabídku pro soubor SampleDatabase.mdf a pak vyberete **vlastnosti**.  
   

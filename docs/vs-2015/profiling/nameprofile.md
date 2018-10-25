@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47db8dc67108e8d443e5f485babb906bd7b040f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfe1b5fb517ed7b886e681081ac7910cfe717cc6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867166"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,17 +45,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  Název elementu profilování. Název je neplatný (výsledkem je návratová NAME_ERROR_INVALID_NAME NameProfileA), pokud:  
   
--   Ukazatel předaný do NameProfileA je hodnota NULL  
+- Ukazatel předaný do NameProfileA je hodnota NULL  
   
--   Data řetězce pszName začíná číslem  
+- Data řetězce pszName začíná číslem  
   
--   Data řetězce pszName obsahuje mezeru  
+- Data řetězce pszName obsahuje mezeru  
   
--   Data řetězce pszName obsahuje některý z následujících znaků:,. ' ~! @# $% ^ & * () = []{}&#124;\\? / <>  
+- Data řetězce pszName obsahuje některý z následujících znaků:,. ' ~! @# $% ^ & * () = []{}&#124;\\? / <>  
   
- `Level`  
+  `Level`  
   
- Informuje o úrovni profil, ke které výkonu shromažďování dat lze použít. Následující **PROFILE_CONTROL_LEVEL** hodnoty můžete použít k označení jednu ze tří úrovní výkonu, které lze použít shromažďování dat:  
+  Informuje o úrovni profil, ke které výkonu shromažďování dat lze použít. Následující **PROFILE_CONTROL_LEVEL** hodnoty můžete použít k označení jednu ze tří úrovní výkonu, které lze použít shromažďování dat:  
   
 |Enumerátor|Popis|  
 |----------------|-----------------|  

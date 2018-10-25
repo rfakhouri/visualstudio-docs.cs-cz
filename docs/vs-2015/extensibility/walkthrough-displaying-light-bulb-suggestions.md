@@ -13,12 +13,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de18b0371baae2d48be9341b605f064875ef21de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252496"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869051"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Návod: Zobrazení návrhů v podobě žárovky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ Ikony žárovky jsou ikony používané v editoru sady Visual Studio, které roz
   
  V editoru Visual C# a Visual Basic také můžete platformě kompilátoru .NET ("Roslyn") pro zápis a balíček vlastních analyzátorů kódu s akcemi, které se automaticky zobrazí návrhy. Další informace naleznete v tématu:  
   
--   [Postupy: Zápis diagnostiky jazyka C# a oprava kódu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Postupy: Zápis diagnostiky jazyka C# a oprava kódu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Postupy: Zápis diagnostiky jazyka Visual Basic a oprava kódu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Postupy: Zápis diagnostiky jazyka Visual Basic a oprava kódu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Dalších jazycích, například C++ také poskytují návrhy pro některé rychlé akce, jako je návrh na vytvoření zástupné procedury implementace této funkce.  
+  Dalších jazycích, například C++ také poskytují návrhy pro některé rychlé akce, jako je návrh na vytvoření zástupné procedury implementace této funkce.  
   
- Zde je, jak vypadá žárovky. V projektu jazyka Visual Basic nebo Visual C# zobrazí červená vlnovka za název proměnné, když je neplatný. Když myší neplatný identifikátor se zobrazí žárovka téměř kurzor.  
+  Zde je, jak vypadá žárovky. V projektu jazyka Visual Basic nebo Visual C# zobrazí červená vlnovka za název proměnné, když je neplatný. Když myší neplatný identifikátor se zobrazí žárovka téměř kurzor.  
   
- ![žárovka](../extensibility/media/lightbulb.png "žárovky")  
+  ![žárovka](../extensibility/media/lightbulb.png "žárovky")  
   
- Pokud kliknete na šipku dolů ve žárovky, se zobrazí sada doporučené akce, spolu s náhled vybrané akce. V tomto případě zobrazuje změny, které se provádí do kódu, v případě, že provede akci.  
+  Pokud kliknete na šipku dolů ve žárovky, se zobrazí sada doporučené akce, spolu s náhled vybrané akce. V tomto případě zobrazuje změny, které se provádí do kódu, v případě, že provede akci.  
   
- ![Náhled návrhů](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![Náhled návrhů](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- Ikony žárovky můžete zadat vlastní doporučené akce. Například je možné zadat akce, které chcete přesunout otevření složené závorky na nový řádek nebo je přesunout na konec objektu na každém řádku. Následující návod ukazuje, jak vytvořit žárovky, který se zobrazí na aktuální slovo a má dvě navrhovaných akcí: **převést na velká písmena** a **převést na malá písmena**.  
+  Ikony žárovky můžete zadat vlastní doporučené akce. Například je možné zadat akce, které chcete přesunout otevření složené závorky na nový řádek nebo je přesunout na konec objektu na každém řádku. Následující návod ukazuje, jak vytvořit žárovky, který se zobrazí na aktuální slovo a má dvě navrhovaných akcí: **převést na velká písmena** a **převést na malá písmena**.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnut jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

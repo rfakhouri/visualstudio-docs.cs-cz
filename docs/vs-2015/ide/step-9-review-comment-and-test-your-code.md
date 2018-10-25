@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3743c31aeca3c6e34afa84ed8c9ee3ddd59d98a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f27cbc54839318674ae41385bd39876c6c513f1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836954"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9: Zrevidujte, okomentujte a otestujte svůj kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,29 +28,29 @@ Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že ne
   
  Právě jste vytvořili něco, co funguje, a i když ještě není Hotovo, může program již načíst obrázek. Před přidání komentáře ke kódu a testování, potřebují dobu na zkontrolování koncepty kódu, protože tyto koncepty budete používat často:  
   
--   Pokud jste dvakrát kliknuli **zobrazit obrázek** tlačítko v Návrháři formulářů Windows, rozhraní IDE automaticky přidalo *metoda* do kódu vašeho programu.  
+- Pokud jste dvakrát kliknuli **zobrazit obrázek** tlačítko v Návrháři formulářů Windows, rozhraní IDE automaticky přidalo *metoda* do kódu vašeho programu.  
   
--   Způsoby, jak organizovat kód: je to, jak váš kód seskupený.  
+- Způsoby, jak organizovat kód: je to, jak váš kód seskupený.  
   
--   Ve většině případů, metodu provádí malý počet akcí v určitém pořadí, například jako vaše `showButton_Click()` metoda zobrazí dialogové okno a potom načte obrázek.  
+- Ve většině případů, metodu provádí malý počet akcí v určitém pořadí, například jako vaše `showButton_Click()` metoda zobrazí dialogové okno a potom načte obrázek.  
   
--   Metoda je tvořen kód *příkazy*, nebo řádků kódu. Metodu si lze představit jako způsob, jak příkazy kódu svážete dohromady.  
+- Metoda je tvořen kód *příkazy*, nebo řádků kódu. Metodu si lze představit jako způsob, jak příkazy kódu svážete dohromady.  
   
--   Když je metoda spuštěna, nebo *volá*, příkazy v metodě jsou spouštěny v pořadí jeden po druhém počínaje první z nich.  
+- Když je metoda spuštěna, nebo *volá*, příkazy v metodě jsou spouštěny v pořadí jeden po druhém počínaje první z nich.  
   
-     Následuje příklad příkazu.  
+   Následuje příklad příkazu.  
   
-    ```csharp  
-    pictureBox1.Load(openFileDialog1.FileName);  
-    ```  
+  ```csharp  
+  pictureBox1.Load(openFileDialog1.FileName);  
+  ```  
   
-    ```vb  
-    pictureBox1.Load(openFileDialog1.FileName)  
-    ```  
+  ```vb  
+  pictureBox1.Load(openFileDialog1.FileName)  
+  ```  
   
-     Příkazy jsou to, co nechává vaše programy provádět akce. V jazyce Visual C# příkaz vždy končí středníkem. V jazyce Visual Basic je konec řádku konec příkazu. (Žádný středník není třeba v jazyce Visual Basic). Předchozí příkaz sděluje vaše `PictureBox` ovládací prvek se načíst soubor, který uživatel vybral s **OpenFileDialog** komponenty.  
+   Příkazy jsou to, co nechává vaše programy provádět akce. V jazyce Visual C# příkaz vždy končí středníkem. V jazyce Visual Basic je konec řádku konec příkazu. (Žádný středník není třeba v jazyce Visual Basic). Předchozí příkaz sděluje vaše `PictureBox` ovládací prvek se načíst soubor, který uživatel vybral s **OpenFileDialog** komponenty.  
   
- ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) nebo [kurz 1: vytvoření prohlížeče obrázků v jazyce C# – Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
+  ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) nebo [kurz 1: vytvoření prohlížeče obrázků v jazyce C# – Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
   
 ### <a name="to-add-comments"></a>Chcete-li přidat komentáře  
   

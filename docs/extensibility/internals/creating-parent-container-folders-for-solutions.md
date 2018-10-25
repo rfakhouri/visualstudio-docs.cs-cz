@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be768f684a495271f06a2a79a71647a9bbaa8552
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498867"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830688"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Vytvoření nadřazené složky kontejneru pro řešení
 Ve verzi 1.2 zdrojového ovládacího prvku modulu Plug-in rozhraní API můžete uživatele zadejte cílovou složku jeden kořenový zdrojového ovládacího prvku pro všechny webové projekty v řešení. Tento jeden kořenový se nazývá Super Unified Root (SUR).  
@@ -32,9 +32,9 @@ Ve verzi 1.2 zdrojového ovládacího prvku modulu Plug-in rozhraní API můžet
  `SCC_CAP_GETPARENTPROJECT`  
   
 ## <a name="new-functions"></a>Nové funkce  
- [Scccreatesubproject –](../../extensibility/scccreatesubproject-function.md)  
+ [SccCreateSubProject](../../extensibility/scccreatesubproject-function.md)  
   
- [Sccgetparentprojectpath –](../../extensibility/sccgetparentprojectpath-function.md)  
+ [SccGetParentProjectPath](../../extensibility/sccgetparentprojectpath-function.md)  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE vytvoří složku SUR téměř vždy, když přidání řešení do správy zdrojového kódu. Konkrétně provádí se v následujících případech:  
   
@@ -50,7 +50,7 @@ Ve verzi 1.2 zdrojového ovládacího prvku modulu Plug-in rozhraní API můžet
 V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], doporučuje se, že název složky SUR být stejný jako název řešení bez přípony. Následující tabulka shrnuje chování v obou verzích.  
   
 |Funkce|Zdroj modulu Plug-in API správy ve verzi 1.1|Zdroj modulu Plug-in API správy ve verzi 1.2|  
-|-------------|----------------------------------------------|---------------------------------------------|  
+|-------------| - | - |  
 |Přidat řešení do SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
 |Přidat projekt do řešení se spravovanými zdroji|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Poznámka:** sady Visual Studio předpokládá, že řešení je přímý podřízený sursaft|  
   

@@ -16,12 +16,12 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a903d1cfdb503650f044a17961542c9d011b55bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229252"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856662"
 ---
 # <a name="test-area-5-change-source-control"></a>Testovací oblast 5: Změna správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Tento modul plug-in testu oblast správy zdrojového kódu obsahuje informace o 
   
  **Změna správy zdrojového kódu** příkaz poskytuje čtyři základní funkce pro uživatele:  
   
--   **Vázání:**  
+- **Vázání:**  
   
-     Umožňuje uživateli vytvořit nebo obnovit zdrojový ovládací prvek propojení mezi řešení nebo projektu a úložiště verzí.  
+   Umožňuje uživateli vytvořit nebo obnovit zdrojový ovládací prvek propojení mezi řešení nebo projektu a úložiště verzí.  
   
--   **Zrušení vazby:**  
+- **Zrušení vazby:**  
   
-     Odebere projekt či řešení ze správy zdrojového kódu na základě jednotlivých připojení.  
+   Odebere projekt či řešení ze správy zdrojového kódu na základě jednotlivých připojení.  
   
--   **Připojení/odpojení:**  
+- **Připojení/odpojení:**  
   
- Přepíná připojen nebo offline stav řízené řešení, které jsou obsaženy v oblasti 3. Další informace najdete v tématu [testovací oblast 3: Podívejte se na / rezervace](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Přepíná připojen nebo offline stav řízené řešení, které jsou obsaženy v oblasti 3. Další informace najdete v tématu [testovací oblast 3: Podívejte se na / rezervace](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
   
 ## <a name="command-menu-access"></a>Přístup do příkazu nabídky  
  Následující [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrované vývojové prostředí nabídky Cesta se používá v testovacích procesech.  

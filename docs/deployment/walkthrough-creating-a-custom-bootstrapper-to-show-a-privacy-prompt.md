@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 18ac2ad1125067109b0ca02d552e997f2c30482f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873780"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Návod: Vytvoření vlastního bootstrapperu s dotazem souvisejícím se soukromím
 Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestavení pomocí novější verze souboru a verze sestavení k dispozici. Pokud chcete mít jistotu, že vaši zákazníci souhlas pro toto chování, můžete zobrazit soukromím k nim. Potom se můžete zvolit, jestli chcete udělit oprávnění k aplikaci automaticky aktualizovat. Pokud aplikace nemá povolný automaticky aktualizovat, ji není možné nainstalovat.  
@@ -43,23 +43,23 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
   
 #### <a name="to-create-a-consent-dialog-box"></a>Chcete-li vytvořit dialogové okno souhlasu  
   
-1.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
+1. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
   
-2.  V **nový projekt** dialogové okno, klikněte na tlačítko **Windows**a potom klikněte na tlačítko **WindowsFormsApplication**.  
+2. V **nový projekt** dialogové okno, klikněte na tlačítko **Windows**a potom klikněte na tlačítko **WindowsFormsApplication**.  
   
-3.  Pro **název**, typ **ConsentDialog**a potom klikněte na tlačítko **OK**.  
+3. Pro **název**, typ **ConsentDialog**a potom klikněte na tlačítko **OK**.  
   
-4.  V Návrháři klikněte na formuláři.  
+4. V Návrháři klikněte na formuláři.  
   
-5.  V **vlastnosti** okno Změnit **Text** vlastnost **dialogového okna souhlas s aktualizacemi**.  
+5. V **vlastnosti** okno Změnit **Text** vlastnost **dialogového okna souhlas s aktualizacemi**.  
   
-6.  V **nástrojů**, rozbalte **všechny formuláře Windows**a přetáhněte ji **popisek** ovládacího prvku na formuláři.  
+6. V **nástrojů**, rozbalte **všechny formuláře Windows**a přetáhněte ji **popisek** ovládacího prvku na formuláři.  
   
-7.  V Návrháři klikněte na ovládací prvek popisku.  
+7. V Návrháři klikněte na ovládací prvek popisku.  
   
-8.  V **vlastnosti** okno Změnit **Text** vlastnosti v části **vzhled** takto:  
+8. V **vlastnosti** okno Změnit **Text** vlastnosti v části **vzhled** takto:  
   
-     Aplikace, která se chystáte nainstalovat zkontroluje nejnovější aktualizace na webu. Kliknutím na "Souhlasím" autorizovat aplikaci pro kontrolu a automaticky nainstalovat aktualizace z Internetu.  
+    Aplikace, která se chystáte nainstalovat zkontroluje nejnovější aktualizace na webu. Kliknutím na "Souhlasím" autorizovat aplikaci pro kontrolu a automaticky nainstalovat aktualizace z Internetu.  
   
 9. V **nástrojů**, přetáhněte **zaškrtávací políčko** ovládacího prvku na střed formuláře.  
   
@@ -112,28 +112,28 @@ Můžete nakonfigurovat aplikace ClickOnce automaticky aktualizovat při sestave
   
      Visual Basic pouze pro vývojáře:  
   
-    1.  V **Průzkumníka řešení**, klikněte na tlačítko **ConsentDialog**.  
+    1. V **Průzkumníka řešení**, klikněte na tlačítko **ConsentDialog**.  
   
-    2.  Na **projektu** nabídky, klikněte na tlačítko **přidat modul**a potom klikněte na tlačítko **přidat**.  
+    2. Na **projektu** nabídky, klikněte na tlačítko **přidat modul**a potom klikněte na tlačítko **přidat**.  
   
-    3.  V *Module1.vb* soubor kódu, přidejte následující kód.  
+    3. V *Module1.vb* soubor kódu, přidejte následující kód.  
   
-         [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
+        [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
-    4.  Na **projektu** nabídky, klikněte na tlačítko **Vlastnosti ConsentDialog**a potom klikněte na tlačítko **aplikace** kartu.  
+    4. Na **projektu** nabídky, klikněte na tlačítko **Vlastnosti ConsentDialog**a potom klikněte na tlačítko **aplikace** kartu.  
   
-    5.  Zrušte zaškrtnutí políčka **Povolit aplikační framework**.  
+    5. Zrušte zaškrtnutí políčka **Povolit aplikační framework**.  
   
-    6.  V **spouštěcí objekt** rozevírací nabídky vyberte **Module1**.  
+    6. V **spouštěcí objekt** rozevírací nabídky vyberte **Module1**.  
   
-        > [!NOTE]
-        >  Zakázání aplikační platformu zakáže funkce, jako jsou vizuální styly Windows XP, události aplikace, úvodní obrazovka, jedna instance aplikace a další. Další informace najdete v tématu [stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > [!NOTE]
+       >  Zakázání aplikační platformu zakáže funkce, jako jsou vizuální styly Windows XP, události aplikace, úvodní obrazovka, jedna instance aplikace a další. Další informace najdete v tématu [stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-     Visual C# pouze pro vývojáře:  
+       Visual C# pouze pro vývojáře:  
   
-     Otevřít *Program.cs* soubor kódu a přidejte následující kód.  
+       Otevřít *Program.cs* soubor kódu a přidejte následující kód.  
   
-     [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
+       [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
 26. Na **sestavení** nabídky, klikněte na tlačítko **BuildSolution**.  
   

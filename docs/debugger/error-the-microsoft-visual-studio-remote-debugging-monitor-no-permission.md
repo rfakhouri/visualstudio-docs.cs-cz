@@ -1,5 +1,5 @@
 ---
-title: 'Chyba: Microsoft Visual Studio Remote Debugging Monitor na vzdáleném počítači nemá oprávnění k připojení k tomuto počítači | Microsoft Docs'
+title: 'Chyba: Microsoft Visual Studio Remote Debugging Monitor na vzdáleném počítači nemá oprávnění k připojení k tomuto počítači. | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,29 +18,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 266a301bca4953066621d759518c1754052dfeb2
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 4bb71667da94027d3170a372a9a570e5e1eea4ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/15/2018
-ms.locfileid: "34177966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854166"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Chyba: Microsoft Visual Studio Remote Debugging Monitor na vzdáleném počítači nemá oprávnění pro připojení k tomuto počítači.
-K této chybě dojde, když uživatel, který se pokouší spustit Visual Studio Remote Debugging Monitor (msvsmon) nemá účet místního počítače.  
+K této chybě dochází, když uživatel, který se pokouší spustit Visual Studio Remote Debugging Monitor (msvsmon) nemá účet na místním počítači.  
   
 ### <a name="to-fix-this-problem"></a>Chcete-li vyřešit tento problém  
   
--   Uživatelský účet přidat do počítače hostitele ladicího programu sady Visual Studio, s stejné jméno a heslo jako uživatelský účet spouštějící msvsmon ve vzdáleném počítači  
+- Přidat uživatelský účet k počítači hostitele ladicího programu sady Visual Studio, pomocí stejné jméno a heslo uživatelského účtu na vzdáleném počítači spuštěny msvsmon.  
   
-     \- nebo –  
+   \- nebo –  
   
--   Spusťte msvsmon jako uživatel, který má oprávnění k volání do místního počítače. To znamená, že uživatel musí být uživatel domény a správce v počítači msvsmon. Můžete určit uživatelský účet pro spouštění msvsmon v jednom ze dvou způsobů:  
+- Spuštění msvsmon jako uživatel, který má oprávnění k volání do místního počítače. To znamená, že uživatel musí být uživatelem domény a správce v počítači msvsmon. Můžete zadat uživatelský účet pro spuštění msvsmon v jednom ze dvou způsobů:  
   
-    -   Klikněte pravým tlačítkem na ikonu msvsmon a zvolte **spustit jako** v místní nabídce  
+  - Klikněte pravým tlačítkem na ikonu msvsmon a zvolte **spustit jako** v místní nabídce  
   
-     \- nebo –  
+    \- nebo –  
   
-    -   Na příkazovém řádku spusťte `runas.exe`.  
+  - Na příkazovém řádku spusťte `runas.exe`.  
   
 ## <a name="see-also"></a>Viz také  
  [Vzdálené ladění chyby a řešení potíží](../debugger/remote-debugging-errors-and-troubleshooting.md)   

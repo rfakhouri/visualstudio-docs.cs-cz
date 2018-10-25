@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b82f18f4cc6ff5bb2666a51c4e8f37e22fd7d32b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 45ff6e07abb77623fe1007ef5e13556e26852224
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859000"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827456"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Vyhněte se nevytvořeným instancím vnitřních tříd
+
 |||
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
@@ -32,12 +33,14 @@ ms.locfileid: "47859000"
 |Narušující změna|Nenarušující|
 
 ## <a name="cause"></a>příčina
- Instance typu na úrovni sestavení není vytvořena kódem v sestavení.
+
+Instance typu na úrovni sestavení není vytvořena kódem v sestavení.
 
 ## <a name="rule-description"></a>Popis pravidla
- Toto pravidlo pokusí vyhledat volání jednoho z konstruktorů typu a oznámí porušení, pokud se nenajde žádný volání.
 
- Následující typy nejsou prozkoumat toto pravidlo:
+Toto pravidlo pokusí vyhledat volání jednoho z konstruktorů typu a oznámí porušení, pokud se nenajde žádný volání.
+
+Následující typy nejsou prozkoumat toto pravidlo:
 
 - Typy hodnot
 
@@ -51,19 +54,21 @@ ms.locfileid: "47859000"
 
 - Typy, které se nedá vytvořit instance, které definují `static` (`Shared` v jazyce Visual Basic) metody pouze.
 
- Pokud použijete <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> na sestavení, které se právě analyzuje, toto pravidlo nedojde na žádné konstruktory, které jsou označeny jako `internal` protože nemůže určit, zda pole se používá jiným `friend` sestavení.
+Pokud použijete <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> na sestavení, které se právě analyzuje, toto pravidlo nedojde na žádné konstruktory, které jsou označeny jako `internal` protože nemůže určit, zda pole se používá jiným `friend` sestavení.
 
- I když toto omezení v analýzy kódu sady Visual Studio nelze vyřešit, externí samostatné FxCop dojde u interní konstruktory, pokud každý `friend` sestavení je k dispozici v analýze.
+I když toto omezení v analýzy kódu sady Visual Studio nelze vyřešit, externí samostatné FxCop dojde u interní konstruktory, pokud každý `friend` sestavení je k dispozici v analýze.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
- Chcete-li opravit porušení tohoto pravidla, typ odeberte nebo přidejte kód, který ji používá. Pokud typ obsahuje pouze statické metody, přidejte jeden z následujících na typ pro zabránění kompilátoru generování výchozí veřejný konstruktor instance:
+
+Chcete-li opravit porušení tohoto pravidla, typ odeberte nebo přidejte kód, který ji používá. Pokud typ obsahuje pouze statické metody, přidejte jeden z následujících na typ pro zabránění kompilátoru generování výchozí veřejný konstruktor instance:
 
 - Soukromý konstruktor pro typy, které jsou cíleny na rozhraní .NET Framework verze 1.0 a 1.1.
 
 - `static` (`Shared` v jazyce Visual Basic) modifikátor pro typy, které se zaměřují [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Je bezpečné potlačit upozornění tohoto pravidla. Doporučujeme vám, že je potlačení tohoto upozornění v těchto situacích:
+
+Je bezpečné potlačit upozornění tohoto pravidla. Doporučujeme vám, že je potlačení tohoto upozornění v těchto situacích:
 
 - Třída je vytvořená prostřednictvím reflexe pozdní vazby metod, jako <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
@@ -90,11 +95,12 @@ ms.locfileid: "47859000"
     mc.Create();
     ```
 
- V takových situacích doporučujeme že potlačení tohoto upozornění.
+  V takových situacích doporučujeme že potlačení tohoto upozornění.
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1811: Vyhněte se nevolanému místnímu kódu](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1801: Revize nepoužitých parametrů](../code-quality/ca1801-review-unused-parameters.md)
+[CA1811: Vyhněte se nevolanému místnímu kódu](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1804: Odeberte nepoužívané místní hodnoty](../code-quality/ca1804-remove-unused-locals.md)
+[CA1801: Revize nepoužitých parametrů](../code-quality/ca1801-review-unused-parameters.md)
+
+[CA1804: Odeberte nepoužívané místní hodnoty](../code-quality/ca1804-remove-unused-locals.md)

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea56cf7db42d7028856b88fb8572f5a4024fe07
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6100f6b0a793b138712250ac5451454784bc877a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876747"
 ---
 # <a name="create-an-options-page"></a>Vytvoření stránky Možnosti
 Tento návod vytvoří jednoduchou stránku Nástroje/možnosti, které používá mřížky vlastností sloužící ke zkoumání a nastavte vlastnosti.  
@@ -35,9 +35,9 @@ Tento návod vytvoří jednoduchou stránku Nástroje/možnosti, které použív
   
 ### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>Vytvořte projekt VSIX a přidat VSPackage  
   
-1.  Každé rozšíření sady Visual Studio spustí nasazení projektu VSIX, který bude obsahovat rozšíření prostředků. Vytvoření [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX projekt s názvem `MyToolsOptionsExtension`. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C#** > **rozšiřitelnost**.  
+1. Každé rozšíření sady Visual Studio spustí nasazení projektu VSIX, který bude obsahovat rozšíření prostředků. Vytvoření [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX projekt s názvem `MyToolsOptionsExtension`. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C#** > **rozšiřitelnost**.  
   
-2.  Přidat VSPackage přidáním šablonu položky balíčku Visual Studio s názvem `MyToolsOptionsPackage`. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **dialogového okna Přidat novou položku**, přejděte na stránku **položky Visual C#** > **rozšiřitelnost** a vyberte **balíček Visual Studio**. V **název** pole v dolní části dialogového okna, změňte název souboru, aby `MyToolsOptionsPackage.cs`. Další informace o tom, jak vytvořit VSPackage najdete v tématu [vytvoření rozšíření pomocí VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
+2. Přidat VSPackage přidáním šablonu položky balíčku Visual Studio s názvem `MyToolsOptionsPackage`. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **dialogového okna Přidat novou položku**, přejděte na stránku **položky Visual C#** > **rozšiřitelnost** a vyberte **balíček Visual Studio**. V **název** pole v dolní části dialogového okna, změňte název souboru, aby `MyToolsOptionsPackage.cs`. Další informace o tom, jak vytvořit VSPackage najdete v tématu [vytvoření rozšíření pomocí VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
   
 ### <a name="to-create-the-tools-options-property-grid"></a>Chcete-li vytvořit mřížku vlastností Možnosti nástrojů  
   

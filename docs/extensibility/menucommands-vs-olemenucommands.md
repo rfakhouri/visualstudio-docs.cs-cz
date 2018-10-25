@@ -10,12 +10,12 @@ helpviewer_keywords:
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: douge
-ms.openlocfilehash: 2567b0a5a5db1d57abba8c00255f1598f0ac9bad
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0fbe8ea2a78eae02cb7e0d390da49eafe55e75ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888954"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentModel.Design.MenuCommand> nebo z <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objektu a implementace obslužné rutiny události. Ve většině případů můžete použít <xref:System.ComponentModel.Design.MenuCommand>, jak funkce balíčku VSPackage šablony projektu, ale někdy možná muset použít <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -35,94 +35,94 @@ Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentMo
   
 ### <a name="to-add-a-command-to-the-ide"></a>Přidání příkazu do integrovaného vývojového prostředí  
   
-1.  Otevřít *.vsct* souboru.  
+1. Otevřít *.vsct* souboru.  
   
-2.  V `Symbols` části, vyhledejte [guidsymbol –](../extensibility/guidsymbol-element.md) element, který obsahuje skupiny a příkazy.  
+2. V `Symbols` části, vyhledejte [guidsymbol –](../extensibility/guidsymbol-element.md) element, který obsahuje skupiny a příkazy.  
   
-3.  Vytvoření [idsymbol –](../extensibility/idsymbol-element.md) – element pro každou nabídku, skupinu nebo příkaz, který chcete přidat, jak je znázorněno v následujícím příkladu.  
+3. Vytvoření [idsymbol –](../extensibility/idsymbol-element.md) – element pro každou nabídku, skupinu nebo příkaz, který chcete přidat, jak je znázorněno v následujícím příkladu.  
   
-     <!--FIXME [!CODE [ButtonGroup#01](../CodeSnippet/VS_Snippets_VSSDK/buttongroup#01)]  -->
-    ```xaml  
-    <GuidSymbol name="guidButtonGroupCmdSet" value="{f69209e9-975a-4543-821d-1f4a2c52d737}">
-      <IDSymbol name="MyMenuGroup" value="0x1020" />
-      <IDSymbol name="cmdidMyCommand" value="0x0100" />
-    </GuidSymbol>
-    ```  
+    <!--FIXME [!CODE [ButtonGroup#01](../CodeSnippet/VS_Snippets_VSSDK/buttongroup#01)]  -->
+   ```xaml  
+   <GuidSymbol name="guidButtonGroupCmdSet" value="{f69209e9-975a-4543-821d-1f4a2c52d737}">
+     <IDSymbol name="MyMenuGroup" value="0x1020" />
+     <IDSymbol name="cmdidMyCommand" value="0x0100" />
+   </GuidSymbol>
+   ```  
   
-    `name` Atributy `GuidSymbol` a `IDSymbol` prvky poskytují pár GUID:ID pro každou novou nabídku, skupinu nebo příkaz. `guid` Představuje sadu příkaz, který je definován pro vaše VSPackage. Můžete definovat více sady příkazů. Každý pár GUID:ID musí být jedinečný.  
+   `name` Atributy `GuidSymbol` a `IDSymbol` prvky poskytují pár GUID:ID pro každou novou nabídku, skupinu nebo příkaz. `guid` Představuje sadu příkaz, který je definován pro vaše VSPackage. Můžete definovat více sady příkazů. Každý pár GUID:ID musí být jedinečný.  
   
-4.  V [tlačítka](../extensibility/buttons-element.md) části, vytvořte [tlačítko](../extensibility/button-element.md) element definovat příkaz, jak je znázorněno v následujícím příkladu.  
+4. V [tlačítka](../extensibility/buttons-element.md) části, vytvořte [tlačítko](../extensibility/button-element.md) element definovat příkaz, jak je znázorněno v následujícím příkladu.  
   
-     <!--FIXME [!CODE [ButtonGroup#03](../CodeSnippet/VS_Snippets_VSSDK/buttongroup#03)]  -->
-    ```xaml  
-    <Button guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
-      <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
-      <Icon guid="guidImages" id="bmpPic1" />
-      <Strings>
-        <CommandName>cmdidMyCommand</CommandName>
-        <ButtonText>My Command name</ButtonText>
-      </Strings>
-    </Button>
-    ```  
+    <!--FIXME [!CODE [ButtonGroup#03](../CodeSnippet/VS_Snippets_VSSDK/buttongroup#03)]  -->
+   ```xaml  
+   <Button guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
+     <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
+     <Icon guid="guidImages" id="bmpPic1" />
+     <Strings>
+       <CommandName>cmdidMyCommand</CommandName>
+       <ButtonText>My Command name</ButtonText>
+     </Strings>
+   </Button>
+   ```  
   
-    1.  Nastavte `guid` a `id` pole tak, aby odpovídaly GUID:ID nový příkaz.  
+   1.  Nastavte `guid` a `id` pole tak, aby odpovídaly GUID:ID nový příkaz.  
   
-    2.  Nastavte `priority` atribut.  
+   2.  Nastavte `priority` atribut.  
   
-         `priority` Atribut .vsct používá k určení umístění tlačítka mezi ostatní objekty v své nadřazené skupiny.  
+        `priority` Atribut .vsct používá k určení umístění tlačítka mezi ostatní objekty v své nadřazené skupiny.  
   
-         Příkazy, které mají nižší hodnoty priority se zobrazují nad nebo nalevo od příkazy, které mají vyšší hodnoty priority. Priorita duplicitní hodnoty jsou povoleny, ale relativní pozice příkazy, které mají stejnou prioritu je určen podle pořadí, ve kterém jsou zpracovány rozšíření VSPackages v době běhu a pořadí nemůže být předem.  
+        Příkazy, které mají nižší hodnoty priority se zobrazují nad nebo nalevo od příkazy, které mají vyšší hodnoty priority. Priorita duplicitní hodnoty jsou povoleny, ale relativní pozice příkazy, které mají stejnou prioritu je určen podle pořadí, ve kterém jsou zpracovány rozšíření VSPackages v době běhu a pořadí nemůže být předem.  
   
-         Vynechání `priority` atribut nastaví její hodnotu na 0.  
+        Vynechání `priority` atribut nastaví její hodnotu na 0.  
   
-    3.  Nastavte `type` atribut. Ve většině případů je jeho hodnota bude `"Button"`. Popisy jiných typech tlačítek platný, naleznete v tématu [Button element](../extensibility/button-element.md).  
+   3.  Nastavte `type` atribut. Ve většině případů je jeho hodnota bude `"Button"`. Popisy jiných typech tlačítek platný, naleznete v tématu [Button element](../extensibility/button-element.md).  
   
-5.  V definici tlačítko vytvořit [řetězce](../extensibility/strings-element.md) element, který obsahuje [ButtonText](../extensibility/buttontext-element.md) element tak, aby obsahovala název nabídky, jak se zobrazí v rozhraní IDE a [CommandName](../extensibility/commandname-element.md) Element tak, aby obsahovala název příkazu, který se používá pro přístup z nabídky **příkaz** okna.  
+5. V definici tlačítko vytvořit [řetězce](../extensibility/strings-element.md) element, který obsahuje [ButtonText](../extensibility/buttontext-element.md) element tak, aby obsahovala název nabídky, jak se zobrazí v rozhraní IDE a [CommandName](../extensibility/commandname-element.md) Element tak, aby obsahovala název příkazu, který se používá pro přístup z nabídky **příkaz** okna.  
   
-     Pokud tlačítko textový řetězec obsahuje znak "&", může uživatel otevřít nabídky stisknutím klávesy **Alt** plus že okamžitě následující znak 'a'.  
+    Pokud tlačítko textový řetězec obsahuje znak "&", může uživatel otevřít nabídky stisknutím klávesy **Alt** plus že okamžitě následující znak 'a'.  
   
-     Přidávání `Tooltip` prvku způsobí, že obsažený text, který se zobrazí, když uživatel nechá ukazatel myši nad tlačítkem.  
+    Přidávání `Tooltip` prvku způsobí, že obsažený text, který se zobrazí, když uživatel nechá ukazatel myši nad tlačítkem.  
   
-6.  Přidat [ikonu](../extensibility/icon-element.md) element zadat ikonu, pokud chcete zobrazit pomocí příkazu. Ikony jsou požadovány pro tlačítka na panely nástrojů, ale nikoli pro položky nabídky. `guid` a `id` z `Icon` elementu musí odpovídat názvům [rastrový obrázek](../extensibility/bitmap-element.md) element definovaný v `Bitmaps` oddílu.  
+6. Přidat [ikonu](../extensibility/icon-element.md) element zadat ikonu, pokud chcete zobrazit pomocí příkazu. Ikony jsou požadovány pro tlačítka na panely nástrojů, ale nikoli pro položky nabídky. `guid` a `id` z `Icon` elementu musí odpovídat názvům [rastrový obrázek](../extensibility/bitmap-element.md) element definovaný v `Bitmaps` oddílu.  
   
-7.  Podle potřeby, chcete-li změnit vzhled a chování tlačítka přidejte příznaků příkazů. Chcete-li to provést, přidejte [CommandFlag](../extensibility/command-flag-element.md) element v definici nabídky.  
+7. Podle potřeby, chcete-li změnit vzhled a chování tlačítka přidejte příznaků příkazů. Chcete-li to provést, přidejte [CommandFlag](../extensibility/command-flag-element.md) element v definici nabídky.  
   
-8.  Nastavte skupinu nadřazeného příkazu. Nadřazená skupina může být skupiny, které vytvoříte, skupinu z jiný balíček nebo skupinu z integrovaného vývojového prostředí. Například pro přidání příkazu do úprav nástrojů sady Visual Studio, vedle položky **komentář** a **odebrat komentář** tlačítka, k guidStdEditor:IDG_VS_EDITTOOLBAR_COMMENT nastavit nadřazený prvek. Pokud nadřazená skupina uživatelem definované, musí být podřízenou položkou nabídky, nástrojů nebo okna nástroje, který se zobrazí v integrovaném vývojovém prostředí.  
+8. Nastavte skupinu nadřazeného příkazu. Nadřazená skupina může být skupiny, které vytvoříte, skupinu z jiný balíček nebo skupinu z integrovaného vývojového prostředí. Například pro přidání příkazu do úprav nástrojů sady Visual Studio, vedle položky **komentář** a **odebrat komentář** tlačítka, k guidStdEditor:IDG_VS_EDITTOOLBAR_COMMENT nastavit nadřazený prvek. Pokud nadřazená skupina uživatelem definované, musí být podřízenou položkou nabídky, nástrojů nebo okna nástroje, který se zobrazí v integrovaném vývojovém prostředí.  
   
-     Jedním ze dvou způsobů, tento krok lze provést v závislosti na návrhu:  
+    Jedním ze dvou způsobů, tento krok lze provést v závislosti na návrhu:  
   
-    -   V `Button` elementu, vytvořit [nadřazené](../extensibility/parent-element.md) elementu a nastavte jeho `guid` a `id` polí pro identifikátor Guid a ID skupiny, který bude hostitelem příkazu, označované také jako *primárnínadřazenéskupiny*.  
+   - V `Button` elementu, vytvořit [nadřazené](../extensibility/parent-element.md) elementu a nastavte jeho `guid` a `id` polí pro identifikátor Guid a ID skupiny, který bude hostitelem příkazu, označované také jako *primárnínadřazenéskupiny*.  
   
-         Následující příklad definuje příkaz, který se zobrazí v nabídce definovaný uživatelem.  
+      Následující příklad definuje příkaz, který se zobrazí v nabídce definovaný uživatelem.  
   
-         <!--FIXME [!CODE [TopLevelMenu#03](../CodeSnippet/VS_Snippets_VSSDK/toplevelmenu#03)]  -->
-        ```xaml  
-        <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
-          <Parent guid="guidTopLevelMenuCmdSet" id="MyMenuGroup" />
-          <Icon guid="guidImages" id="bmpPic1" />
-          <Strings>
-            <CommandName>cmdidTestCommand</CommandName>
-            <ButtonText>Test Command</ButtonText>
-          </Strings>
-        </Button>
-        ```  
+      <!--FIXME [!CODE [TopLevelMenu#03](../CodeSnippet/VS_Snippets_VSSDK/toplevelmenu#03)]  -->
+     ```xaml  
+     <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
+       <Parent guid="guidTopLevelMenuCmdSet" id="MyMenuGroup" />
+       <Icon guid="guidImages" id="bmpPic1" />
+       <Strings>
+         <CommandName>cmdidTestCommand</CommandName>
+         <ButtonText>Test Command</ButtonText>
+       </Strings>
+     </Button>
+     ```  
   
-    -   Můžete vynechat `Parent` element, pokud je příkaz, který se umístil pomocí příkazu umístění. Vytvoření [commandplacements –](../extensibility/commandplacements-element.md) prvek před `Symbols` a přidejte [commandplacement –](../extensibility/commandplacement-element.md) element, který má `guid` a `id` příkazu `priority`a nadřazené položky, jak je znázorněno v následujícím příkladu.  
+   - Můžete vynechat `Parent` element, pokud je příkaz, který se umístil pomocí příkazu umístění. Vytvoření [commandplacements –](../extensibility/commandplacements-element.md) prvek před `Symbols` a přidejte [commandplacement –](../extensibility/commandplacement-element.md) element, který má `guid` a `id` příkazu `priority`a nadřazené položky, jak je znázorněno v následujícím příkladu.  
   
-         <!-- FIXME [!CODE [ButtonGroup#04](../CodeSnippet/VS_Snippets_VSSDK/buttongroup#04)] -->  
-        ```xaml  
-        <CommandPlacements>
-          <CommandPlacement guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x105">
-            <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
-          </CommandPlacement>
-        </CommandPlacements>
-        ```  
+      <!-- FIXME [!CODE [ButtonGroup#04](../CodeSnippet/VS_Snippets_VSSDK/buttongroup#04)] -->  
+     ```xaml  
+     <CommandPlacements>
+       <CommandPlacement guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x105">
+         <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
+       </CommandPlacement>
+     </CommandPlacements>
+     ```  
   
-         Vytvoření více umístění příkazu, která mají stejné GUID:ID a jiné nadřazené způsobí, že nabídky se zobrazí v několika umístěních. Další informace najdete v tématu [commandplacements –](../extensibility/commandplacements-element.md) elementu.  
+      Vytvoření více umístění příkazu, která mají stejné GUID:ID a jiné nadřazené způsobí, že nabídky se zobrazí v několika umístěních. Další informace najdete v tématu [commandplacements –](../extensibility/commandplacements-element.md) elementu.  
   
      Další informace o skupinách příkazu a vztahy k nadřazeným položkám najdete v tématu [vytváření znovu použitelných skupin tlačítek](../extensibility/creating-reusable-groups-of-buttons.md).  
   
- Příkaz v tomto okamžiku se nebude zobrazovat v integrovaném vývojovém prostředí, ale nebude mít žádné funkce. Pokud příkaz vytvořil balíček šablony, ve výchozím nastavení bude mít obslužnou rutinu kliknutí, který zobrazí zprávu.  
+   Příkaz v tomto okamžiku se nebude zobrazovat v integrovaném vývojovém prostředí, ale nebude mít žádné funkce. Pokud příkaz vytvořil balíček šablony, ve výchozím nastavení bude mít obslužnou rutinu kliknutí, který zobrazí zprávu.  
   
 ## <a name="handle-the-new-command"></a>Popisovač nový příkaz  
  Většina příkazů ve spravovaném kódu může být zpracována podle na spravované Package Framework (MPF) přidružení příkaz s <xref:System.ComponentModel.Design.MenuCommand> objektu nebo <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objektu a implementace jeho obslužné rutiny událostí.  
@@ -174,29 +174,29 @@ Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentMo
   
 ### <a name="to-implement-querystatus"></a>K implementaci QueryStatus  
   
-1.  Událost QueryStatus proběhne před zobrazením příkazu. Toto umožňuje vlastnostem nastavit v obslužné rutiny předtím, než uživatel dosáhne příkazu. Jenom příkazy, které jsou přidány jako <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objektů můžete přístup k této metodě.  
+1. Událost QueryStatus proběhne před zobrazením příkazu. Toto umožňuje vlastnostem nastavit v obslužné rutiny předtím, než uživatel dosáhne příkazu. Jenom příkazy, které jsou přidány jako <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objektů můžete přístup k této metodě.  
   
-     Přidat `EventHandler` objektu <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> událost v <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objekt, který je vytvořen pro zpracování příkazu, jak je znázorněno v následujícím příkladu (`menuItem` je <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> instance).  
+    Přidat `EventHandler` objektu <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> událost v <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objekt, který je vytvořen pro zpracování příkazu, jak je znázorněno v následujícím příkladu (`menuItem` je <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> instance).  
   
-     [!code-csharp[MenuText#14](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_10.cs)]
-     [!code-vb[MenuText#14](../extensibility/codesnippet/VisualBasic/menucommands-vs-olemenucommands_10.vb)]  
+    [!code-csharp[MenuText#14](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_10.cs)]
+    [!code-vb[MenuText#14](../extensibility/codesnippet/VisualBasic/menucommands-vs-olemenucommands_10.vb)]  
   
-     `EventHandler` Objektu je přiřazen název metody, která je volána, když je dotazován stav příkazu nabídky.  
+    `EventHandler` Objektu je přiřazen název metody, která je volána, když je dotazován stav příkazu nabídky.  
   
-2.  Implementujte metodu dotazu stav obslužné rutiny příkazu. `object` `sender` Může být parametr převeden <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objektu, který se používá k nastavení různé atributy příkaz nabídky, včetně textu. V následující tabulce jsou uvedeny vlastnosti na <xref:System.ComponentModel.Design.MenuCommand> třídy (které třídu MPF <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> je odvozen od), které odpovídají <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> příznaky.  
+2. Implementujte metodu dotazu stav obslužné rutiny příkazu. `object` `sender` Může být parametr převeden <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objektu, který se používá k nastavení různé atributy příkaz nabídky, včetně textu. V následující tabulce jsou uvedeny vlastnosti na <xref:System.ComponentModel.Design.MenuCommand> třídy (které třídu MPF <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> je odvozen od), které odpovídají <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> příznaky.  
   
-    |Vlastnost nabídka – příkaz|Příznak OLECMDF|  
-    |--------------------------|------------------|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|OLECMDF_LATCHED|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|OLECMDF_INVISIBLE|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|OLECMDF_ENABLED|  
+   |Vlastnost nabídka – příkaz|Příznak OLECMDF|  
+   |--------------------------|------------------|  
+   |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|OLECMDF_LATCHED|  
+   |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|OLECMDF_INVISIBLE|  
+   |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|OLECMDF_ENABLED|  
   
-     Ke změně textu příkazu nabídky, použijte <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> vlastnost <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objektu, jak je znázorněno v následujícím příkladu.  
+    Ke změně textu příkazu nabídky, použijte <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> vlastnost <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objektu, jak je znázorněno v následujícím příkladu.  
   
-     [!code-csharp[MenuText#11](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_11.cs)]
-     [!code-vb[MenuText#11](../extensibility/codesnippet/VisualBasic/menucommands-vs-olemenucommands_11.vb)]  
+    [!code-csharp[MenuText#11](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_11.cs)]
+    [!code-vb[MenuText#11](../extensibility/codesnippet/VisualBasic/menucommands-vs-olemenucommands_11.vb)]  
   
- MPF automaticky zpracovává případ skupiny neznámý nebo nepodporovaný. Pokud příkaz byl přidán do <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> pomocí <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> metoda, příkaz se nepodporuje.  
+   MPF automaticky zpracovává případ skupiny neznámý nebo nepodporovaný. Pokud příkaz byl přidán do <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> pomocí <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> metoda, příkaz se nepodporuje.  
   
 ### <a name="handle-commands-by-using-the-iolecommandtarget-interface"></a>Zpracování příkazů pomocí iolecommandtarget – rozhraní  
  Pro kód, který se používá <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> přímo rozhraní, sady VSPackage musí implementovat obě <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní. Pokud sady VSPackage implementuje hierarchii projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> rozhraní by měla být implementována místo.  
@@ -207,45 +207,45 @@ Můžete vytvořit příkazy nabídky odvozením buď z <xref:System.ComponentMo
   
 #### <a name="to-implement-the-querystatus-method"></a>K implementaci QueryStatus – metoda  
   
-1.  Vrátí <xref:Microsoft.VisualStudio.VSConstants.S_OK> pro platné příkazy.  
+1. Vrátí <xref:Microsoft.VisualStudio.VSConstants.S_OK> pro platné příkazy.  
   
-2.  Nastavte `cmdf` elementu `prgCmds` parametru.  
+2. Nastavte `cmdf` elementu `prgCmds` parametru.  
   
-     Hodnota `cmdf` element je logické sjednocení hodnot z <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> výčet kombinovat pomocí logické OR (`|`) – operátor.  
+    Hodnota `cmdf` element je logické sjednocení hodnot z <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> výčet kombinovat pomocí logické OR (`|`) – operátor.  
   
-     Použijte příslušné výčet, na základě stavu příkazu:  
+    Použijte příslušné výčet, na základě stavu příkazu:  
   
-    -   Pokud se příkaz podporuje:  
+   - Pokud se příkaz podporuje:  
   
-         `prgCmds[0].cmdf = OLECMDF_SUPPORTED;`  
+      `prgCmds[0].cmdf = OLECMDF_SUPPORTED;`  
   
-    -   Pokud v tuto chvíli by měl být neviditelné příkazu:  
+   - Pokud v tuto chvíli by měl být neviditelné příkazu:  
   
-         `prgCmds[0].cmdf |= OLECMDF_INVISIBLE;`  
+      `prgCmds[0].cmdf |= OLECMDF_INVISIBLE;`  
   
-    -   Pokud příkaz je zapnutá a zdá se, kliknul během:  
+   - Pokud příkaz je zapnutá a zdá se, kliknul během:  
   
-         `prgCmds[0].cmdf |= OLECMDF_LATCHED;`  
+      `prgCmds[0].cmdf |= OLECMDF_LATCHED;`  
   
-         V případě zpracování příkazů, které jsou hostované v nabídce Typ `MenuControllerLatched`, první příkaz, který je označen `OLECMDF_LATCHED` příznak je výchozí příkaz, který se zobrazí při spuštění v nabídce. Další informace o `MenuController` naleznete v tématu typy nabídek [Menu Element](../extensibility/menu-element.md).  
+      V případě zpracování příkazů, které jsou hostované v nabídce Typ `MenuControllerLatched`, první příkaz, který je označen `OLECMDF_LATCHED` příznak je výchozí příkaz, který se zobrazí při spuštění v nabídce. Další informace o `MenuController` naleznete v tématu typy nabídek [Menu Element](../extensibility/menu-element.md).  
   
-    -   Pokud příkaz je aktuálně povoleno:  
+   - Pokud příkaz je aktuálně povoleno:  
   
-         `prgCmds[0].cmdf |= OLECMDF_ENABLED;`  
+      `prgCmds[0].cmdf |= OLECMDF_ENABLED;`  
   
-    -   Pokud příkaz je součástí místní nabídce a je ve výchozím nastavení skryje:  
+   - Pokud příkaz je součástí místní nabídce a je ve výchozím nastavení skryje:  
   
-         `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXTMENU`  
+      `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXTMENU`  
   
-    -   Pokud příkaz používá `TEXTCHANGES` příznak, nastavte `rgwz` elementu `pCmdText` parametr nového textu příkazu a sady `cwActual` elementu `pCmdText` parametr velikosti řetězec příkazu.  
+   - Pokud příkaz používá `TEXTCHANGES` příznak, nastavte `rgwz` elementu `pCmdText` parametr nového textu příkazu a sady `cwActual` elementu `pCmdText` parametr velikosti řetězec příkazu.  
   
      Pro chybové podmínky <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metoda musí zpracovat tyto případy chyb:  
   
-    -   Pokud identifikátor GUID je neznámý nebo není podporován, vrátí `OLECMDERR_E_UNKNOWNGROUP`.  
+   - Pokud identifikátor GUID je neznámý nebo není podporován, vrátí `OLECMDERR_E_UNKNOWNGROUP`.  
   
-    -   Pokud je známý identifikátor GUID, ale ID příkazu, který je neznámý nebo není podporována, vrátit `OLECMDERR_E_NOTSUPPORTED`.  
+   - Pokud je známý identifikátor GUID, ale ID příkazu, který je neznámý nebo není podporována, vrátit `OLECMDERR_E_NOTSUPPORTED`.  
   
- Implementace VSPackage <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metoda musí vracet také konkrétních kódech chyb, v závislosti na tom, zda je příkaz podporován a určuje, zda příkaz byl úspěšně zpracován.  
+   Implementace VSPackage <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metoda musí vracet také konkrétních kódech chyb, v závislosti na tom, zda je příkaz podporován a určuje, zda příkaz byl úspěšně zpracován.  
   
 #### <a name="to-implement-the-exec-method"></a>K implementaci Exec – metoda  
   

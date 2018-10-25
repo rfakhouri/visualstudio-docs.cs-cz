@@ -22,12 +22,12 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 853719e66bf7cd6a258bc2df231ca04fca7a9242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186196"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884898"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Návod: Ladění vícevláknové aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,17 +105,17 @@ Thread::Sleep(3000);
   
 #### <a name="to-discover-the-thread-marker"></a>Ke zjištění značky vlákna  
   
-1.  Klikněte pravým tlačítkem **vlákna** okna, klikněte na **zobrazit vlákna ve zdroji**.  
+1. Klikněte pravým tlačítkem **vlákna** okna, klikněte na **zobrazit vlákna ve zdroji**.  
   
-2.  Podívejte se na ovládací prvek na levé straně okna. Na tomto řádku zobrazí se ikona, která se podobá dvěma vlákny látky. Jedno vlákno je červený a druhý je modrá. Značky vlákna označuje, že je vlákno zastavené v tomto umístění. Případně je vlákno zastavené v tomto umístění.  
+2. Podívejte se na ovládací prvek na levé straně okna. Na tomto řádku zobrazí se ikona, která se podobá dvěma vlákny látky. Jedno vlákno je červený a druhý je modrá. Značky vlákna označuje, že je vlákno zastavené v tomto umístění. Případně je vlákno zastavené v tomto umístění.  
   
-3.  Ukazatel myši značky vlákna. Datového tipu, který se zobrazí. DataTip zjistíte číslo ID názvu a vlákna pro každé vlákno zastavené. V tomto případě existuje pouze jedno vlákno, jehož název je pravděpodobně `<noname>`.  
+3. Ukazatel myši značky vlákna. Datového tipu, který se zobrazí. DataTip zjistíte číslo ID názvu a vlákna pro každé vlákno zastavené. V tomto případě existuje pouze jedno vlákno, jehož název je pravděpodobně `<noname>`.  
   
-4.  Klikněte pravým tlačítkem na značky vlákna. Poznámka: možnosti v místní nabídce.  
+4. Klikněte pravým tlačítkem na značky vlákna. Poznámka: možnosti v místní nabídce.  
   
- Tato ikona je *značky vlákna*:  
+   Tato ikona je *značky vlákna*:  
   
- ![Značka podprocesu](../debugger/media/threadmarker.gif "ThreadMarker")  
+   ![Značka podprocesu](../debugger/media/threadmarker.gif "ThreadMarker")  
   
 ## <a name="flagging-and-unflagging-threads"></a>Označení a Unflagging vlákna  
  V [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)], můžete označit příznakem vlákna, která chcete věnovat zvláštní pozornost. Příznakem vlákna je dobrým způsobem, jak udržovat přehled o důležitých vláken a ignorovat vláken, která vás nezajímají.  

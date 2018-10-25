@@ -20,12 +20,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87cd108d3225b87b39121684217c93510f95f140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867231"
 ---
 # <a name="application-page-project-designer-c"></a>Stránka Aplikace, návrhář projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,16 +94,16 @@ Použití **aplikace** stránku **Návrháře projektu** k určení nastavení a
  **Manifest**  
  Vybere možnost generování manifestu, když je aplikace spuštěná v systému Windows Vista v rámci řízení uživatelských účtů (UAC). Tato možnost může mít následující hodnoty:  
   
--   **Vložit manifest s výchozím nastavením**. Podporuje typické způsobem, ve kterém aplikace Visual Studio pracuje na Windows Vista, který je pro vložení informací o zabezpečení ve spustitelném souboru aplikace, určení, že `requestedExecutionLevel` být `AsInvoker`. Toto je výchozí možnost.  
+- **Vložit manifest s výchozím nastavením**. Podporuje typické způsobem, ve kterém aplikace Visual Studio pracuje na Windows Vista, který je pro vložení informací o zabezpečení ve spustitelném souboru aplikace, určení, že `requestedExecutionLevel` být `AsInvoker`. Toto je výchozí možnost.  
   
--   **Vytvořit aplikaci bez manifestu**. Tato metoda se označuje jako *virtualizace*. Tuto možnost použijte, pokud z důvodu kompatibility s dřívějšími aplikacemi.  
+- **Vytvořit aplikaci bez manifestu**. Tato metoda se označuje jako *virtualizace*. Tuto možnost použijte, pokud z důvodu kompatibility s dřívějšími aplikacemi.  
   
--   **Properties\app.manifest**. Tato možnost je vyžadována pro aplikace nasazené pomocí technologie ClickOnce nebo bez registrace modelu COM Pokud publikujete třeba aplikaci pomocí nasazení ClickOnce **Manifest** se automaticky nastaví na tuto možnost.  
+- **Properties\app.manifest**. Tato možnost je vyžadována pro aplikace nasazené pomocí technologie ClickOnce nebo bez registrace modelu COM Pokud publikujete třeba aplikaci pomocí nasazení ClickOnce **Manifest** se automaticky nastaví na tuto možnost.  
   
- **Soubor prostředků**  
- Když poskytujete soubor prostředků pro projekt, vyberte přepínač. Výběrem této možnosti zakáže **ikonu** a **Manifest** možnosti.  
+  **Soubor prostředků**  
+  Když poskytujete soubor prostředků pro projekt, vyberte přepínač. Výběrem této možnosti zakáže **ikonu** a **Manifest** možnosti.  
   
- Zadejte název cesty nebo klikněte na tlačítko Procházet (**...** ) Chcete-li přidat soubor prostředků Win32 do projektu.  
+  Zadejte název cesty nebo klikněte na tlačítko Procházet (**...** ) Chcete-li přidat soubor prostředků Win32 do projektu.  
   
 ## <a name="see-also"></a>Viz také  
 [Správa vlastností aplikace](../../ide/application-properties.md)  

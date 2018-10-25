@@ -14,32 +14,32 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d86d42ce7e345a30c56390bede6957dff8bcd67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b0b7a5949ab8fe624a087a1e024367f896ddb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884885"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutoriál 2: Vytvoření matematického kvízu s časovým limitem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V tomto kurzu vytvoříte kvíz, ve kterém hráč musí odpovědět na čtyři náhodné aritmetické úlohy v zadaném čase. Získáte informace o následujících postupech:  
   
--   Generovat náhodná čísla pomocí `Random` třídy.  
+- Generovat náhodná čísla pomocí `Random` třídy.  
   
--   Aktivovat události dojde v určitém čase pomocí k **časovače** ovládacího prvku.  
+- Aktivovat události dojde v určitém čase pomocí k **časovače** ovládacího prvku.  
   
--   Kontrolovat tok programu pomocí `if else` příkazy.  
+- Kontrolovat tok programu pomocí `if else` příkazy.  
   
--   Proveďte základní aritmetické operace v kódu.  
+- Proveďte základní aritmetické operace v kódu.  
   
- Po dokončení, kvíz vypadat jako na následujícím obrázku, s výjimkou s různými počty.  
+  Po dokončení, kvíz vypadat jako na následujícím obrázku, s výjimkou s různými počty.  
   
- ![Matematický kvíz se čtyřmi úlohami](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
-V tomto kurzu vytvoříte kvíz  
+  ![Matematický kvíz se čtyřmi úlohami](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
+  V tomto kurzu vytvoříte kvíz  
   
- Chcete-li stáhnout úplnou verzi kvízu, přečtěte si téma [ukázkový kurz pro dokončení matematického kvízu](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
+  Chcete-li stáhnout úplnou verzi kvízu, přečtěte si téma [ukázkový kurz pro dokončení matematického kvízu](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
   
 > [!NOTE]
 >  Tento kurz se zabývá Visual C# i Visual Basic, takže se zaměřte na informace, které jsou specifické pro programovací jazyk, který používáte.  

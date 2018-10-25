@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aafc13f01d89177a144558126452d547a55f88d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e08059c18a7b5c1fff74539f4ba497c319838371
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881921"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Návod: Zápis vizualizéru v jazyce Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 #### <a name="to-create-a-class-library-project"></a>Chcete-li vytvořit projekt knihovny tříd  
   
-1.  Na **souboru** nabídce zvolte **nový** a klikněte na tlačítko **nový projekt**.  
+1. Na **souboru** nabídce zvolte **nový** a klikněte na tlačítko **nový projekt**.  
   
-2.  V **nový projekt** dialogovém okně **typu projektu**s, klikněte na tlačítko **jazyka Visual Basic**.  
+2. V **nový projekt** dialogovém okně **typu projektu**s, klikněte na tlačítko **jazyka Visual Basic**.  
   
-3.  V **šablony** klikněte **knihovny tříd**.  
+3. V **šablony** klikněte **knihovny tříd**.  
   
-4.  V **název** zadejte vhodný název pro knihovny tříd rozhraní, jako například **MyFirstVisualizer**.  
+4. V **název** zadejte vhodný název pro knihovny tříd rozhraní, jako například **MyFirstVisualizer**.  
   
-5.  Klikněte na tlačítko **OK**.  
+5. Klikněte na tlačítko **OK**.  
   
- Po vytvoření knihovny tříd musíte přidat odkaz na Microsoft.VisualStudio.DebuggerVisualizers.DLL, aby mohli používat třídy definované existuje. Nejprve však je dejte projektu smysluplný název.  
+   Po vytvoření knihovny tříd musíte přidat odkaz na Microsoft.VisualStudio.DebuggerVisualizers.DLL, aby mohli používat třídy definované existuje. Nejprve však je dejte projektu smysluplný název.  
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>Přejmenovat Class1.vb a přidat Microsoft.VisualStudio.DebuggerVisualizers  
   
@@ -81,32 +81,32 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 #### <a name="to-inherit-from-dialogdebuggervisualizer"></a>Dědění z DialogDebuggerVisualizer  
   
-1.  V DebuggerSide.vb přejděte na následující řádek kódu:  
+1. V DebuggerSide.vb přejděte na následující řádek kódu:  
   
-    ```  
-    Public Class DebuggerSide  
-    ```  
+   ```  
+   Public Class DebuggerSide  
+   ```  
   
-2.  Upravte kód tak, aby vypadá takto:  
+2. Upravte kód tak, aby vypadá takto:  
   
-    ```  
-    Public Class DebuggerSide  
-    Inherits DialogDebuggerVisualizer  
-    ```  
+   ```  
+   Public Class DebuggerSide  
+   Inherits DialogDebuggerVisualizer  
+   ```  
   
- `DialogDebuggerVisualizer` má jednu abstraktní metoda `Show`, který je nutné přepsat.  
+   `DialogDebuggerVisualizer` má jednu abstraktní metoda `Show`, který je nutné přepsat.  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Pokud chcete přepsat metodu DialogDebuggerVisualizer.Show  
   
--   V `public class DebuggerSide`, přidejte následující metodu:  
+- V `public class DebuggerSide`, přidejte následující metodu:  
   
-    ```  
-    Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
+  ```  
+  Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
   
-        End Sub  
-    ```  
+      End Sub  
+  ```  
   
- `Show` Metoda obsahuje kód, který ve skutečnosti vytvoří dialogové okno vizualizér datasetu nebo jiných prvků uživatelského rozhraní a zobrazí informace, které bylo předáno vizualizéru z ladicího programu. Musíte přidat kód, který vytvoří dialogové okno a zobrazí informace. V tomto podrobném návodu bude to provedete pomocí Windows Forms okno se zprávou. Nejdřív musíte přidat odkaz a `Imports` příkaz pro <xref:System.Windows.Forms>.  
+  `Show` Metoda obsahuje kód, který ve skutečnosti vytvoří dialogové okno vizualizér datasetu nebo jiných prvků uživatelského rozhraní a zobrazí informace, které bylo předáno vizualizéru z ladicího programu. Musíte přidat kód, který vytvoří dialogové okno a zobrazí informace. V tomto podrobném návodu bude to provedete pomocí Windows Forms okno se zprávou. Nejdřív musíte přidat odkaz a `Imports` příkaz pro <xref:System.Windows.Forms>.  
   
 #### <a name="to-add-systemwindowsforms"></a>Chcete-li přidat System.Windows.Forms  
   
@@ -155,30 +155,30 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 #### <a name="to-add-a-test-method-to-show-the-visualizer"></a>Chcete-li přidat testovací metody, chcete-li zobrazit vizualizér  
   
-1.  Přidejte následující metodu do třídy `public DebuggerSide`:  
+1. Přidejte následující metodu do třídy `public DebuggerSide`:  
   
-    ```  
-    Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
-        Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
-    visualizerHost.ShowVisualizer()  
-    End Sub  
-    ```  
+   ```  
+   Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
+       Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
+   visualizerHost.ShowVisualizer()  
+   End Sub  
+   ```  
   
-2.  Na **sestavení** nabídky, klikněte na tlačítko **sestavení MyFirstVisualizer**. Projekt má sestavit úspěšně. Než budete pokračovat, opravte případné chyby sestavení.  
+2. Na **sestavení** nabídky, klikněte na tlačítko **sestavení MyFirstVisualizer**. Projekt má sestavit úspěšně. Než budete pokračovat, opravte případné chyby sestavení.  
   
- Dále musíte vytvořit spustitelný projekt volat vaše vizualizéru knihovny DLL. Pro jednoduchost použijte projekt konzolové aplikace.  
+   Dále musíte vytvořit spustitelný projekt volat vaše vizualizéru knihovny DLL. Pro jednoduchost použijte projekt konzolové aplikace.  
   
 #### <a name="to-add-a-console-application-project-to-the-solution"></a>Chcete-li přidat do řešení projekt konzolové aplikace  
   
-1.  Na **souboru** nabídky, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **nový projekt**.  
+1. Na **souboru** nabídky, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **nový projekt**.  
   
-2.  V **přidat nový projekt** v dialogu **šablony** klikněte **konzolovou aplikaci**.  
+2. V **přidat nový projekt** v dialogu **šablony** klikněte **konzolovou aplikaci**.  
   
-3.  V **název** zadejte smysluplný název konzolové aplikace, jako například **MyTestConsole**.  
+3. V **název** zadejte smysluplný název konzolové aplikace, jako například **MyTestConsole**.  
   
-4.  Klikněte na tlačítko **OK**.  
+4. Klikněte na tlačítko **OK**.  
   
- Nyní je třeba přidat že nezbytné odkazuje, takže MyTestConsole můžete volat MyFirstVisualizer.  
+   Nyní je třeba přidat že nezbytné odkazuje, takže MyTestConsole můžete volat MyFirstVisualizer.  
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>Chcete-li přidat potřebné odkazy na MyTestConsole  
   
@@ -199,38 +199,38 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
   
 #### <a name="to-add-code-to-mytestconsole"></a>Přidání kódu do MyTestConsole  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **soubor Program.vb**a v místní nabídce klikněte na tlačítko **přejmenovat**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **soubor Program.vb**a v místní nabídce klikněte na tlačítko **přejmenovat**.  
   
-2.  Upravit název z Module1.vb na nějakou vhodnou hodnotu, jako například **TestConsole.vb**.  
+2. Upravit název z Module1.vb na nějakou vhodnou hodnotu, jako například **TestConsole.vb**.  
   
-     Všimněte si, že [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky změní deklaraci třídy v TestConsole.vb tak, aby odpovídaly nový název souboru.  
+    Všimněte si, že [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky změní deklaraci třídy v TestConsole.vb tak, aby odpovídaly nový název souboru.  
   
-3.  V TestConsole. VB, přidejte následující `Imports` – příkaz:  
+3. V TestConsole. VB, přidejte následující `Imports` – příkaz:  
   
-    ```  
-    Imports MyFirstVisualizer  
-    ```  
+   ```  
+   Imports MyFirstVisualizer  
+   ```  
   
-4.  V metodě `Main`, přidejte následující kód:  
+4. V metodě `Main`, přidejte následující kód:  
   
-    ```  
-    Dim myString As String = "Hello, World"  
-    DebuggerSide.TestShowVisualizer(myString)  
-    ```  
+   ```  
+   Dim myString As String = "Hello, World"  
+   DebuggerSide.TestShowVisualizer(myString)  
+   ```  
   
- Nyní jste připraveni k testování první vizualizér.  
+   Nyní jste připraveni k testování první vizualizér.  
   
 #### <a name="to-test-the-visualizer"></a>K otestování vizualizéru  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **MyTestConsole**a v místní nabídce klikněte na tlačítko **nastavit jako spouštěný projekt**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **MyTestConsole**a v místní nabídce klikněte na tlačítko **nastavit jako spouštěný projekt**.  
   
-2.  Na **ladění** nabídky, klikněte na tlačítko **Start**.  
+2. Na **ladění** nabídky, klikněte na tlačítko **Start**.  
   
-     Spuštění aplikace konzoly. Vizualizéru se zobrazí a zobrazí řetězec "Hello, World."  
+    Spuštění aplikace konzoly. Vizualizéru se zobrazí a zobrazí řetězec "Hello, World."  
   
- Blahopřejeme. Stačí mít vytvořené a testovat vaše první vizualizéru.  
+   Blahopřejeme. Stačí mít vytvořené a testovat vaše první vizualizéru.  
   
- Pokud chcete používat vaše vizualizéru v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] místo jen volání z testovací prostředí, je nutné ji nainstalovat. Další informace najdete v tématu [postupy: instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md).  
+   Pokud chcete používat vaše vizualizéru v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] místo jen volání z testovací prostředí, je nutné ji nainstalovat. Další informace najdete v tématu [postupy: instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Architektura vizualizéru](../debugger/visualizer-architecture.md)   

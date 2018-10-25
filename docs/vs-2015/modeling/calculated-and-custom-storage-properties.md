@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c1203b962627071d757dc1876a534977c574a813
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179488"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852853"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Vypočtené a vlastní vlastnosti úložiště
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,11 +93,11 @@ Všechny vlastnosti domény v jazyka specifického pro doménu (DSL) je možné 
   
  Ale metodu Set může také volat Pokud uživatel vyvolá zpět nebo znovu, nebo pokud transakce je vrácena zpět. Když <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> má hodnotu true, metodu Set by se měly chovat následovně:  
   
--   To by neměla provést změny v úložišti, jako je například přiřazení hodnoty k jiné vlastnosti domény. Správce akcí zpět nastaví jejich hodnoty.  
+- To by neměla provést změny v úložišti, jako je například přiřazení hodnoty k jiné vlastnosti domény. Správce akcí zpět nastaví jejich hodnoty.  
   
--   Ale to by měl aktualizovat všem externím prostředkům, jako jsou databáze nebo obsah souboru nebo objekty mimo úložiště. Tím se zajistí, že jsou uchovávány v synchronism s hodnotami v úložišti.  
+- Ale to by měl aktualizovat všem externím prostředkům, jako jsou databáze nebo obsah souboru nebo objekty mimo úložiště. Tím se zajistí, že jsou uchovávány v synchronism s hodnotami v úložišti.  
   
- Příklad:  
+  Příklad:  
   
 ```  
 void SetAgeValue(int value)  

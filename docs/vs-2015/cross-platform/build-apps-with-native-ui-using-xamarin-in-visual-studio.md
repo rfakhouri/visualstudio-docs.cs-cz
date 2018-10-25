@@ -13,12 +13,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d05a04aedfc5ded6232016a0c5216306a7cf84ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2f1971f2c9ed3cb7742c7144cf35708789f4a92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193515"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879308"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Vytváření aplikací s nativním uživatelským rozhraním pomocí Xamarinu v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,62 +42,62 @@ Jakmile jste udělali kroky [nastavení a instalaci](../cross-platform/setup-and
   
 > [!TIP]
 >  Najdete kompletní zdrojový kód pro tento projekt v [mobile-samples úložišti na Githubu](https://github.com/xamarin/mobile-samples/tree/master/Weather).
->
+> 
 >   Pokud máte potíže nebo dochází k chybám, zveřejněte ji prosím dotazy na [forums.xamarin.com](http://forums.xamarin.com). Mnoho chyb se dají vyřešit aktualizaci na nejnovější sady SDK vyžadované Xamarin, které jsou popsány v [zpráva k vydání verze Xamarinu](https://developer.xamarin.com/releases/) pro každou platformu.    
-  
+> 
 > [!NOTE]
 >  Dokumentaci pro vývojáře Xamarinu pro několik kurzy rychlý start a podrobné informace o části nabízí také, jak je uvedeno níže. Na těchto stránkách Ujistěte se, že je v pravém horním rohu stránky zobrazíte návody pro Visual Studio specifické pro vybraná "Visual Studio".  
->   
->  -   Aplikace Xamarin s nativním uživatelským rozhraním:  
->   
->      -   [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (jednoduché aplikace s jednou obrazovkou)  
->     -   [Hello, Android s více obrazovkami](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (aplikace s navigace mezi obrazovkami)  
->     -   [Návod s androidem fragmenty](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (používá se pro obrazovky záznamů master/detail, mimo jiné)  
->     -   [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)  
->     -   [Hello, iOS s více obrazovkami](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)  
-> -   Aplikace Xamarin s Xamarin.Forms (sdílené uživatelské rozhraní)  
->   
->      -   [Hello, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
->     -   [Hello, Xamarin.Forms s více obrazovkami](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
+> 
+> - Aplikace Xamarin s nativním uživatelským rozhraním:  
+> 
+>   -   [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (jednoduché aplikace s jednou obrazovkou)  
+>   -   [Hello, Android s více obrazovkami](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (aplikace s navigace mezi obrazovkami)  
+>   -   [Návod s androidem fragmenty](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (používá se pro obrazovky záznamů master/detail, mimo jiné)  
+>   -   [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)  
+>   -   [Hello, iOS s více obrazovkami](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)  
+>   -   Aplikace Xamarin s Xamarin.Forms (sdílené uživatelské rozhraní)  
+> 
+>   -   [Hello, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)  
+>   -   [Hello, Xamarin.Forms s více obrazovkami](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)  
   
 ##  <a name="solution"></a> Nastavení řešení  
  Tyto kroky vytvoří řešení Xamarin s nativním uživatelským rozhraním, který obsahuje PCL pro sdílený kód a dva balíčky NuGet pro přidání.  
   
-1.  V sadě Visual Studio vytvořte nový **prázdná aplikace (nativní přenosná)** řešení a pojmenujte ho **WeatherApp**. Tuto šablonu lze najít nejsnadněji tak, že zadáte **nativní přenosná** do vyhledávacího pole.  
+1. V sadě Visual Studio vytvořte nový **prázdná aplikace (nativní přenosná)** řešení a pojmenujte ho **WeatherApp**. Tuto šablonu lze najít nejsnadněji tak, že zadáte **nativní přenosná** do vyhledávacího pole.  
   
-     Pokud tam není, bude pravděpodobně nutné nainstalujte si Xamarin, nebo povolte funkce sady Visual Studio 2015, najdete v článku [nastavení a instalaci](../cross-platform/setup-and-install.md).  
+    Pokud tam není, bude pravděpodobně nutné nainstalujte si Xamarin, nebo povolte funkce sady Visual Studio 2015, najdete v článku [nastavení a instalaci](../cross-platform/setup-and-install.md).  
   
-2.  Po kliknutí na tlačítko OK, abyste vytvořili řešení, budete mít několik jednotlivé projekty:  
+2. Po kliknutí na tlačítko OK, abyste vytvořili řešení, budete mít několik jednotlivé projekty:  
   
-    -   **WeatherApp (Portable)**: PCL, kde budete psát kód, který je sdílen napříč platformami, včetně běžné obchodní logiky a kód uživatelského rozhraní pomocí Xamarin.Forms.  
+   - **WeatherApp (Portable)**: PCL, kde budete psát kód, který je sdílen napříč platformami, včetně běžné obchodní logiky a kód uživatelského rozhraní pomocí Xamarin.Forms.  
   
-    -   **WeatherApp.Droid**: projekt obsahující kód nativní Android. To je nastaven jako výchozí projekt po spuštění.  
+   - **WeatherApp.Droid**: projekt obsahující kód nativní Android. To je nastaven jako výchozí projekt po spuštění.  
   
-    -   **WeatherApp.iOS**: projekt obsahující kód nativní aplikace pro iOS.  
+   - **WeatherApp.iOS**: projekt obsahující kód nativní aplikace pro iOS.  
   
-    -   **WeatherApp.WinPhone (Windows Phone 8.1)**: projekt obsahující nativní kód Windows Phone.  
+   - **WeatherApp.WinPhone (Windows Phone 8.1)**: projekt obsahující nativní kód Windows Phone.  
   
      V rámci každé nativní projektu mají přístup do nativní návrháře pro odpovídající platformu a můžete implementovat jednotlivých obrazovek platformy.  
   
-3.  Přidat **Newtonsoft.Json** a balíček NuGet do projektu PCL, které budete používat ke zpracování informace načtenými z datové služby weather:  
+3. Přidat **Newtonsoft.Json** a balíček NuGet do projektu PCL, které budete používat ke zpracování informace načtenými z datové služby weather:  
   
-    -   Klikněte pravým tlačítkem na **řešení "WeatherApp"** v Průzkumníku řešení a vyberte **spravovat balíčky NuGet pro řešení...** .  
+   -   Klikněte pravým tlačítkem na **řešení "WeatherApp"** v Průzkumníku řešení a vyberte **spravovat balíčky NuGet pro řešení...** .  
   
-         V okně NuGet vyberte **Procházet** kartu a vyhledejte **Newtonsoft**.  
+        V okně NuGet vyberte **Procházet** kartu a vyhledejte **Newtonsoft**.  
   
-    -   Vyberte **Newtonsoft.Json**.  
+   -   Vyberte **Newtonsoft.Json**.  
   
-    -   Na pravé straně okna, zkontrolujte, **WeatherApp** projektu (jedná se o pouze projekt, ve které je potřeba nainstalovat balíček).  
+   -   Na pravé straně okna, zkontrolujte, **WeatherApp** projektu (jedná se o pouze projekt, ve které je potřeba nainstalovat balíček).  
   
-    -   Zkontrolujte **verze** pole se nastaví **nejnovější stabilní verze** verze.  
+   -   Zkontrolujte **verze** pole se nastaví **nejnovější stabilní verze** verze.  
   
-    -   Klikněte na tlačítko **nainstalovat**.  
+   -   Klikněte na tlačítko **nainstalovat**.  
   
-    -   ![Vyhledání a instalace balíčku Newtonsoft.Json NuGet](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
+   -   ![Vyhledání a instalace balíčku Newtonsoft.Json NuGet](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")  
   
-4.  Opakováním kroků 3 najít a nainstalovat **Microsoft.Net.Http** balíčku.  
+4. Opakováním kroků 3 najít a nainstalovat **Microsoft.Net.Http** balíčku.  
   
-5.  Sestavte řešení a ověřte, že zde nejsou žádné chyby buildu.  
+5. Sestavte řešení a ověřte, že zde nejsou žádné chyby buildu.  
   
 ##  <a name="dataservice"></a> Zápis kódu služby sdílená data  
  **WeatherApp (Portable)** projektu je, kde budete psát kód pro přenosné knihovny tříd (PCL), jež jsou sdílena mezi všemi platformami. PCL je automaticky zahrnut v balíčcích aplikace sestavené projekty zařízení s iOS, Android a Windows Phone.  

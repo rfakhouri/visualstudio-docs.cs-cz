@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4409891b7d6cbc4be5f46b598cd5910f3e0e9284
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 007d194249cdca1ba95c758bc170db113cb0c3d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243032"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841011"
 ---
 # <a name="structure-your-modeling-solution"></a>Strukturujte svá řešení modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,63 +35,63 @@ V projektu vývoje modelů efektivně používat, musí být členy týmu moct p
   
 #### <a name="to-divide-an-application-into-layers"></a>K rozdělení aplikace do vrstvy  
   
-1.  Základní struktura svoje řešení na struktuře aplikace, například webové aplikace, aplikace služby nebo aplikace klasické pracovní plochy. Celou řadu běžných architektur je podrobněji popsána [Archetypes aplikaci do Průvodce architekturou aplikací Microsoft](http://go.microsoft.com/fwlink/?LinkId=196681).  
+1. Základní struktura svoje řešení na struktuře aplikace, například webové aplikace, aplikace služby nebo aplikace klasické pracovní plochy. Celou řadu běžných architektur je podrobněji popsána [Archetypes aplikaci do Průvodce architekturou aplikací Microsoft](http://go.microsoft.com/fwlink/?LinkId=196681).  
   
-2.  Vytvoření [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, který budeme nazývat architekturu řešení. Toto řešení se použije k vytvoření celkového návrhu systému. Bude obsahovat modely, ale žádný kód.  
+2. Vytvoření [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, který budeme nazývat architekturu řešení. Toto řešení se použije k vytvoření celkového návrhu systému. Bude obsahovat modely, ale žádný kód.  
   
-     Přidejte diagram vrstev s tímto řešením. V diagramu vrstev nakreslete architektura, kterou jste zvolili pro vaši aplikaci. Například může zobrazit diagram těchto vrstev a závislostí mezi nimi: prezentaci. Obchodní logika; a Data.  
+    Přidejte diagram vrstev s tímto řešením. V diagramu vrstev nakreslete architektura, kterou jste zvolili pro vaši aplikaci. Například může zobrazit diagram těchto vrstev a závislostí mezi nimi: prezentaci. Obchodní logika; a Data.  
   
-     Diagram vrstev a nové řešení sady Visual Studio můžete vytvořit ve stejnou dobu pomocí **nové UML nebo diagramu vrstev** příkaz **architektura** nabídky.  
+    Diagram vrstev a nové řešení sady Visual Studio můžete vytvořit ve stejnou dobu pomocí **nové UML nebo diagramu vrstev** příkaz **architektura** nabídky.  
   
-3.  Přidejte do diagramy UML model architektury, které reprezentují důležitých obchodních konceptů a použití případů, které jsou uvedené v návrhu všechny vrstvy.  
+3. Přidejte do diagramy UML model architektury, které reprezentují důležitých obchodních konceptů a použití případů, které jsou uvedené v návrhu všechny vrstvy.  
   
-4.  Vytvoření samostatné řešení Visual Studio pro jednotlivé vrstvy v diagramu vrstev architektury.  
+4. Vytvoření samostatné řešení Visual Studio pro jednotlivé vrstvy v diagramu vrstev architektury.  
   
-     Tato řešení se použije k vývoji kódu vrstvy.  
+    Tato řešení se použije k vývoji kódu vrstvy.  
   
-5.  Vytváření modelů UML, které bude představovat návrhy vrstvy a koncepty, které jsou společné pro všechny vrstvy. Uspořádejte modely tak, aby všechny modely můžete zobrazit z architektury řešení a relevantní modely můžete zobrazit z každé vrstvy.  
+5. Vytváření modelů UML, které bude představovat návrhy vrstvy a koncepty, které jsou společné pro všechny vrstvy. Uspořádejte modely tak, aby všechny modely můžete zobrazit z architektury řešení a relevantní modely můžete zobrazit z každé vrstvy.  
   
-     Můžete dosáhnout pomocí některé z následujících postupů. V prvním případě vytvoří samostatné modelování projektu pro každou vrstvu a objekt IErrorInfo vytvoří jeden modelování projektu, jež jsou sdílena mezi vrstvami.  
+    Můžete dosáhnout pomocí některé z následujících postupů. V prvním případě vytvoří samostatné modelování projektu pro každou vrstvu a objekt IErrorInfo vytvoří jeden modelování projektu, jež jsou sdílena mezi vrstvami.  
   
-    ###### <a name="to-use-a-separate-modeling-project-for-each-layer"></a>Použití samostatné modelování projektu pro každou vrstvu  
+   ###### <a name="to-use-a-separate-modeling-project-for-each-layer"></a>Použití samostatné modelování projektu pro každou vrstvu  
   
-    1.  Vytvoření projektu modelování v každé vrstvě řešení.  
+   1. Vytvoření projektu modelování v každé vrstvě řešení.  
   
-         Tento model bude obsahovat diagramy UML, které popisují požadavky a návrh vrstvy. Může také obsahovat diagramy vrstev, které ukazují vnořených vrstev.  
+       Tento model bude obsahovat diagramy UML, které popisují požadavky a návrh vrstvy. Může také obsahovat diagramy vrstev, které ukazují vnořených vrstev.  
   
-         Teď máte model pro každou vrstvu, a navíc modelu pro architekturu aplikace. Každý model je součástí vlastní řešení. To umožňuje členům týmu. budou fungovat na vrstvách ve stejnou dobu.  
+       Teď máte model pro každou vrstvu, a navíc modelu pro architekturu aplikace. Každý model je součástí vlastní řešení. To umožňuje členům týmu. budou fungovat na vrstvách ve stejnou dobu.  
   
-    2.  Architektura řešení přidejte projekt modelování z každé vrstvy řešení. Provedete to tak, otevřete řešení architektury. V Průzkumníku řešení klikněte pravým tlačítkem myši na uzel řešení, přejděte na Přidat a potom klikněte na tlačítko **existující projekt**. Přejděte do projektu modelování (.modelproj) v jedné vrstvě řešení.  
+   2. Architektura řešení přidejte projekt modelování z každé vrstvy řešení. Provedete to tak, otevřete řešení architektury. V Průzkumníku řešení klikněte pravým tlačítkem myši na uzel řešení, přejděte na Přidat a potom klikněte na tlačítko **existující projekt**. Přejděte do projektu modelování (.modelproj) v jedné vrstvě řešení.  
   
-         Každý model se teď zobrazují dvě řešení: jeho "domovskou" řešení a jeho architektura.  
+       Každý model se teď zobrazují dvě řešení: jeho "domovskou" řešení a jeho architektura.  
   
-    3.  Do projektu modelování každou vrstvu přidejte diagram vrstev. Začněte s kopii diagram vrstev architektury. Můžete odstranit části, které nejsou závislostí v diagramu vrstev.  
+   3. Do projektu modelování každou vrstvu přidejte diagram vrstev. Začněte s kopii diagram vrstev architektury. Můžete odstranit části, které nejsou závislostí v diagramu vrstev.  
   
-         Můžete také přidat diagramy vrstev, které představují podrobnou strukturu této vrstvy.  
+       Můžete také přidat diagramy vrstev, které představují podrobnou strukturu této vrstvy.  
   
-         Tyto diagramy se používají k ověření kódu, který byl vyvinut v této vrstvě.  
+       Tyto diagramy se používají k ověření kódu, který byl vyvinut v této vrstvě.  
   
-    4.  V architektuře řešení upravte požadavků a návrhu modelů vrstvy pomocí sady Visual Studio.  
+   4. V architektuře řešení upravte požadavků a návrhu modelů vrstvy pomocí sady Visual Studio.  
   
-         V každé vrstvě řešení vyvíjejte kód pro tuto vrstvu, odkazuje na model. Pokud se obsah a provádět vývoj bez použití do stejného počítače k aktualizaci modelu, můžete načíst model a vývoj kódu pomocí verze sady Visual Studio, nelze vytvářet modely. Kód můžete vygenerovat také z modelu v těchto verzích.  
+       V každé vrstvě řešení vyvíjejte kód pro tuto vrstvu, odkazuje na model. Pokud se obsah a provádět vývoj bez použití do stejného počítače k aktualizaci modelu, můžete načíst model a vývoj kódu pomocí verze sady Visual Studio, nelze vytvářet modely. Kód můžete vygenerovat také z modelu v těchto verzích.  
   
-     Tato metoda zaručuje, že bude bez rušení způsobuje vývojáři, kteří úpravy modelů vrstvy ve stejnou dobu.  
+      Tato metoda zaručuje, že bude bez rušení způsobuje vývojáři, kteří úpravy modelů vrstvy ve stejnou dobu.  
   
-     Vzhledem k tomu, že tyto modely jsou oddělené, je však obtížné najdete běžné koncepty. Každý model musí mít vlastní kopii prvky, na kterých je závislá z jiných vrstev a architektury. Diagram vrstev v každé vrstvě musí udržovat synchronizované s diagramem vrstev architektury. Je obtížné kvůli zachování synchronizace při změně těchto prvků, i když může vývoj nástrojů k provedení této.  
+      Vzhledem k tomu, že tyto modely jsou oddělené, je však obtížné najdete běžné koncepty. Každý model musí mít vlastní kopii prvky, na kterých je závislá z jiných vrstev a architektury. Diagram vrstev v každé vrstvě musí udržovat synchronizované s diagramem vrstev architektury. Je obtížné kvůli zachování synchronizace při změně těchto prvků, i když může vývoj nástrojů k provedení této.  
   
-    ###### <a name="to-use-a-separate-package-for-each-layer"></a>Chcete-li používat samostatné balíčky pro každou vrstvu  
+   ###### <a name="to-use-a-separate-package-for-each-layer"></a>Chcete-li používat samostatné balíčky pro každou vrstvu  
   
-    1.  V řešení pro každou vrstvu přidejte projekt modelování architektury. V Průzkumníku řešení klikněte pravým tlačítkem myši na uzel řešení, přejděte na **přidat**a potom klikněte na tlačítko **existující projekt**. Jeden modelování projektu je teď přístupná z každé řešení určené pro: architektura projektu a projekt vývoje pro každou vrstvu.  
+   1. V řešení pro každou vrstvu přidejte projekt modelování architektury. V Průzkumníku řešení klikněte pravým tlačítkem myši na uzel řešení, přejděte na **přidat**a potom klikněte na tlačítko **existující projekt**. Jeden modelování projektu je teď přístupná z každé řešení určené pro: architektura projektu a projekt vývoje pro každou vrstvu.  
   
-    2.  Ve sdíleném modelu UML, vytvořit balíček pro každou vrstvu: V Průzkumníku řešení vyberte projekt modelování. V Průzkumníku modelů UML, klikněte pravým tlačítkem na kořenový uzel modelu, přejděte na **přidat**a potom klikněte na tlačítko **balíčku**.  
+   2. Ve sdíleném modelu UML, vytvořit balíček pro každou vrstvu: V Průzkumníku řešení vyberte projekt modelování. V Průzkumníku modelů UML, klikněte pravým tlačítkem na kořenový uzel modelu, přejděte na **přidat**a potom klikněte na tlačítko **balíčku**.  
   
-         Každý balíček bude obsahovat diagramy UML, které popisují požadavky a návrhu odpovídající vrstvy.  
+       Každý balíček bude obsahovat diagramy UML, které popisují požadavky a návrhu odpovídající vrstvy.  
   
-    3.  V případě potřeby přidejte místní vrstvy diagramy pro interní každou vrstvu.  
+   3. V případě potřeby přidejte místní vrstvy diagramy pro interní každou vrstvu.  
   
-     Tato metoda umožňuje prvky návrhu každé vrstvě odkazovat přímo na ty vrstvy a běžné architektury, na kterém závisí.  
+      Tato metoda umožňuje prvky návrhu každé vrstvě odkazovat přímo na ty vrstvy a běžné architektury, na kterém závisí.  
   
-     I když souběžnou prací na různých balíčků může způsobit nějaké konflikty, jsou poměrně snadno spravovat, protože balíčky jsou uloženy do samostatných souborů. Hlavní problémy s dokončením je způsobeno odstranění element, který se odkazuje z závislý balíček. Další informace najdete v tématu [Správa modelů a diagramů pomocí správy verzí](../modeling/manage-models-and-diagrams-under-version-control.md).  
+      I když souběžnou prací na různých balíčků může způsobit nějaké konflikty, jsou poměrně snadno spravovat, protože balíčky jsou uloženy do samostatných souborů. Hlavní problémy s dokončením je způsobeno odstranění element, který se odkazuje z závislý balíček. Další informace najdete v tématu [Správa modelů a diagramů pomocí správy verzí](../modeling/manage-models-and-diagrams-under-version-control.md).  
   
 ## <a name="creating-architecture-templates"></a>Vytváření šablon architektury  
  V praxi nevytvoří všechny vaše řešení sady Visual Studio v době, ale přidat průběhu projektu. Budete pravděpodobně také použít stejnou strukturu řešení v budoucnu projekty.  Můžete rychle vytvořit nová řešení, můžete vytvořit šablonu řešení nebo projektu. Šablony v Visual Studio integrace rozšíření (VSIX) můžete zachytit tak, aby se snadno distribuovat a instalovat na jiné počítače.  

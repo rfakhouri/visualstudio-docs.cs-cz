@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b1be04d9cc723b2a741ba43676977854306cd03e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198794"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887688"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Návod: Ladění šablony stylů XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,29 @@ Kroky v tomto názorném postupu ukazují, jak použít ladicí program XSLT. Kr
   
 #### <a name="to-start-debugging"></a>Pro spuštění ladění  
   
-1.  Z **souboru** nabídky, přejděte k **otevřít**a klikněte na tlačítko **souboru**.  
+1. Z **souboru** nabídky, přejděte k **otevřít**a klikněte na tlačítko **souboru**.  
   
-2.  Vyhledejte soubor belowAvg.xsl a klikněte na tlačítko **otevřít**.  
+2. Vyhledejte soubor belowAvg.xsl a klikněte na tlačítko **otevřít**.  
   
-     Šablona stylů je otevřen v editoru XML.  
+    Šablona stylů je otevřen v editoru XML.  
   
-3.  Klikněte na tlačítko Procházet (**...** ) na **vstup** pole v okně Vlastnosti dokumentu.  
+3. Klikněte na tlačítko Procházet (**...** ) na **vstup** pole v okně Vlastnosti dokumentu.  
   
-4.  Vyhledejte soubor books.xml a klikněte na tlačítko **otevřít**.  
+4. Vyhledejte soubor books.xml a klikněte na tlačítko **otevřít**.  
   
-     Tím se nastaví zdrojový soubor dokumentu, který slouží k transformaci XSLT.  
+    Tím se nastaví zdrojový soubor dokumentu, který slouží k transformaci XSLT.  
   
-5.  Klikněte pravým tlačítkem myši `xsl:if` počáteční značka, přejděte na **zarážku**a klikněte na tlačítko **vložit zarážku**.  
+5. Klikněte pravým tlačítkem myši `xsl:if` počáteční značka, přejděte na **zarážku**a klikněte na tlačítko **vložit zarážku**.  
   
-6.  Klikněte na tlačítko **ladění XSL** tlačítko na panelu nástrojů editoru XML.  
+6. Klikněte na tlačítko **ladění XSL** tlačítko na panelu nástrojů editoru XML.  
   
- To spustí proces ladění a několik nových oken, které jsou používány ladicí program.  
+   To spustí proces ladění a několik nových oken, které jsou používány ladicí program.  
   
- Existují dvě okna, které zobrazují vstupní dokument a styly listu. Ladicí program používá tyto windows zobrazit aktuální stav provádění. Ladicí program je umístěn na `xsl:if` prvku šablony stylů a na prvním uzlu adresáře v soubor books.xml.  
+   Existují dvě okna, které zobrazují vstupní dokument a styly listu. Ladicí program používá tyto windows zobrazit aktuální stav provádění. Ladicí program je umístěn na `xsl:if` prvku šablony stylů a na prvním uzlu adresáře v soubor books.xml.  
   
- V okně místních hodnot zobrazí všechny místní proměnné a jejich aktuálními hodnotami. To zahrnuje proměnné definované v šabloně stylů a také proměnné, které ladicí program používá ke sledování uzly, které jsou momentálně v kontextu.  
+   V okně místních hodnot zobrazí všechny místní proměnné a jejich aktuálními hodnotami. To zahrnuje proměnné definované v šabloně stylů a také proměnné, které ladicí program používá ke sledování uzly, které jsou momentálně v kontextu.  
   
- **Výstupu XSL** okně se zobrazí výstup této transformace XSL. Toto okno je oddělená od **výstup Visual Studia** okna.  
+   **Výstupu XSL** okně se zobrazí výstup této transformace XSL. Toto okno je oddělená od **výstup Visual Studia** okna.  
   
 ## <a name="watch-window"></a>Okno kukátka  
   

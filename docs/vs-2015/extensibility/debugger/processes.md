@@ -15,31 +15,31 @@ ms.assetid: a6a1efdc-b243-40c8-a778-6f69f6b018be
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 218f6aa05bebfe0d35776b64e6a42e4fbea4e72f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a9dfe6beeefdb8f6e7c7509083a1a8e622c23870
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296462"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827368"
 ---
 # <a name="processes"></a>Procesy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Z hlediska architektury ladicího programu **procesu**:  
   
--   Je kontejner pro sadu aplikací. Je úzce analogické k procesu Windows, což je kontejner pro sadu vláken.  
+- Je kontejner pro sadu aplikací. Je úzce analogické k procesu Windows, což je kontejner pro sadu vláken.  
   
--   Můžete identifikovat podle názvu, identifikátor nebo identifikátor fyzické.  
+- Můžete identifikovat podle názvu, identifikátor nebo identifikátor fyzické.  
   
--   Můžete zobrazit výčet všechny spuštěné programy (a jejich vláken).  
+- Můžete zobrazit výčet všechny spuštěné programy (a jejich vláken).  
   
--   Můžete popsat samostatně, port, který běží v a na počítač, který jej obsahuje.  
+- Můžete popsat samostatně, port, který běží v a na počítač, který jej obsahuje.  
   
--   Můžete vytvořit jednu nebo další programy, ukončit libovolného z programů, které vytvoří nebo způsobit zastavení programu.  
+- Můžete vytvořit jednu nebo další programy, ukončit libovolného z programů, které vytvoří nebo způsobit zastavení programu.  
   
--   Je reprezentován [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) rozhraní, který je vytvořen při spuštění procesu. Spustí proces buď relaci ladění správci nebo [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
+- Je reprezentován [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) rozhraní, který je vytvořen při spuštění procesu. Spustí proces buď relaci ladění správci nebo [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
   
- Ladění balíčku můžete připojit ladicí stroj (DE) k procesu voláním [připojit](../../extensibility/debugger/reference/idebugprocess2-attach.md). To znamená, že DE připojí všechny možné programů spuštěných v rámci procesu, který dokáže zpracovat. Například pokud modul common language runtime DE připojí se k procesu, se připojí pouze pro programy, na kterých běží spravovaný kód.  
+  Ladění balíčku můžete připojit ladicí stroj (DE) k procesu voláním [připojit](../../extensibility/debugger/reference/idebugprocess2-attach.md). To znamená, že DE připojí všechny možné programů spuštěných v rámci procesu, který dokáže zpracovat. Například pokud modul common language runtime DE připojí se k procesu, se připojí pouze pro programy, na kterých běží spravovaný kód.  
   
 ## <a name="see-also"></a>Viz také  
  [Programy](../../extensibility/debugger/programs.md)   

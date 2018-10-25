@@ -17,12 +17,12 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 384592f89df9537300c11cdf3e8cea622d8c9c63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a294c9c1eaeb0c59f8c2e9c58c75a161c0d61e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883325"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Sada Modeling SDK pro sadu Visual Studio – jazyky domény
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Pomocí sady SDK modelování pro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (
   
  MSDK umožňuje rychlý vývoj modelu ve formě jazyka specifického pro doménu (DSL). Začínáte se speciálním editorem, kterým definujete schéma nebo abstraktní syntaxi a grafickou notaci. Z této definice vygeneruje VMSDK následující položky:  
   
--   Model implementace s rozhraním API silného typu, který je spuštěn v obchodě založeném na transakcích.  
+- Model implementace s rozhraním API silného typu, který je spuštěn v obchodě založeném na transakcích.  
   
--   Průzkumník založený na stromové architektuře.  
+- Průzkumník založený na stromové architektuře.  
   
--   Grafický editor, ve kterém uživatelé mohou zobrazit model nebo jeho části, které definujete.  
+- Grafický editor, ve kterém uživatelé mohou zobrazit model nebo jeho části, které definujete.  
   
--   Metody serializace, které uloží modely ve formátu XML pro čtení.  
+- Metody serializace, které uloží modely ve formátu XML pro čtení.  
   
--   Zařízení pro generování programového kódu a jiných artefaktů pomocí šablonování textu.  
+- Zařízení pro generování programového kódu a jiných artefaktů pomocí šablonování textu.  
   
- Můžete přizpůsobit a rozšířit všechny tyto funkce. Vaše rozšíření jsou integrována tak, že můžete i nadále aktualizovat definici DSL a znovu generovat funkce bez ztráty rozšíření.  
+  Můžete přizpůsobit a rozšířit všechny tyto funkce. Vaše rozšíření jsou integrována tak, že můžete i nadále aktualizovat definici DSL a znovu generovat funkce bez ztráty rozšíření.  
   
 ## <a name="samples-and-the-latest-information"></a>Ukázky a nejnovější informace  
  [Stáhněte si modelování SDK pro Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)  

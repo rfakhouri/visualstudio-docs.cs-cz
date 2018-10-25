@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bdb8719174b4a5fb66dcf79db04d2ea3ea565381
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 00abfd827bf98d79e74ecbaf9a01efdc7761c3ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203787"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881700"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Postupy: analýza, co dělají virtuálních uživatelů během zátěžového testu pomocí graf aktivity virtuálního uživatele
 
@@ -39,67 +39,67 @@ Následující postupy ukazují, jak zobrazit **graf aktivity virtuálního uži
 
 ## <a name="to-investigate-a-specific-users-activity-in-the-virtual-user-activity-chart"></a>K prozkoumání aktivita konkrétního uživatele v graf aktivity virtuálního uživatele
 
-1.  Použít funkce zvětšení na čas období nástroj v dolní části **graf aktivity virtuálního uživatele** vyberte oblast v grafu, ve které chcete prozkoumat podrobnosti o konkrétního uživatele.
+1. Použít funkce zvětšení na čas období nástroj v dolní části **graf aktivity virtuálního uživatele** vyberte oblast v grafu, ve které chcete prozkoumat podrobnosti o konkrétního uživatele.
 
-2.  Podržte ukazatel myši nad podrobností v grafu. Všimněte si, že tyto informace se zobrazí v popisu tlačítka:
+2. Podržte ukazatel myši nad podrobností v grafu. Všimněte si, že tyto informace se zobrazí v popisu tlačítka:
 
-    -   **Id uživatele**
+   - **Id uživatele**
 
-    -   **Scénář**
+   - **Scénář**
 
-    -   **Test**
+   - **Test**
 
-    -   **Adresa URL** (nejsou zobrazeny v testu nebo transakce)
+   - **Adresa URL** (nejsou zobrazeny v testu nebo transakce)
 
-    -   **Výsledek**
+   - **Výsledek**
 
-    -   **Prohlížeč** (nejsou zobrazeny v testu nebo transakce)
+   - **Prohlížeč** (nejsou zobrazeny v testu nebo transakce)
 
-    -   **Sítě**
+   - **Sítě**
 
-    -   **Čas spuštění**
+   - **Čas spuštění**
 
-    -   **Doba trvání**
+   - **Doba trvání**
 
-    -   **Agent**
+   - **Agent**
 
-    -   **Protokol testu** (odkaz na protokol testu)
+   - **Protokol testu** (odkaz na protokol testu)
 
-        > [!NOTE]
-        > Jako pomoc při ladění aplikace, pokud se rozhodnete **protokol testu** odkaz, výsledek webového testu nebo přidružené k protokolu otevřít výsledek testu jednotek.
+     > [!NOTE]
+     > Jako pomoc při ladění aplikace, pokud se rozhodnete **protokol testu** odkaz, výsledek webového testu nebo přidružené k protokolu otevřít výsledek testu jednotek.
 
      Dále můžete pomocí filtrování a zvýraznění operace jsou dostupné v **graf aktivity virtuálního uživatele**.
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>Použití možnosti filtrování v graf aktivity virtuálního uživatele
 
-1.  V **podrobné legendy**, pomocí rozevíracího seznamu vyberte buď **testovací**, **stránky**, nebo **transakce**.
+1. V **podrobné legendy**, pomocí rozevíracího seznamu vyberte buď **testovací**, **stránky**, nebo **transakce**.
 
-     **Panel podrobné legendy**
+    **Panel podrobné legendy**
 
-     ![Panel podrobné legendy](../test/media/ltest_detailslegend.png)
+    ![Panel podrobné legendy](../test/media/ltest_detailslegend.png)
 
-2.  Zaškrtněte nebo zrušte zaškrtnutí políček u chyby, protokoly, testy, vyhledávání a stránky aspx, které jsou spojeny se zátěžovým testem.
+2. Zaškrtněte nebo zrušte zaškrtnutí políček u chyby, protokoly, testy, vyhledávání a stránky aspx, které jsou spojeny se zátěžovým testem.
 
-     **Graf aktivity virtuálního uživatele** odpovídajícím způsobem aktualizuje.
+    **Graf aktivity virtuálního uživatele** odpovídajícím způsobem aktualizuje.
 
-     **Graf aktivity virtuálního uživatele** umožňuje filtrovat testy, stránky a transakce na základě několika různých kritérií. Můžete odebrat určité testy ze zobrazení, nebo odebrání všech úspěšných testů nebo odebrání testy, které se nezdařilo s některým chybám. Můžete také odebrat všechny testy, které nemají protokoly.
+    **Graf aktivity virtuálního uživatele** umožňuje filtrovat testy, stránky a transakce na základě několika různých kritérií. Můžete odebrat určité testy ze zobrazení, nebo odebrání všech úspěšných testů nebo odebrání testy, které se nezdařilo s některým chybám. Můžete také odebrat všechny testy, které nemají protokoly.
 
-     Například můžete vybrat **(zvýraznit chyby)** možnost, která se zobrazí všechny chyby v grafu zobrazí červeně. Můžete také vybrat **(zvýraznit výsledky s protokoly)** možnost, která se zobrazí všechny výsledky testů, které mají protokoly vybarvenými zeleně v grafu.
+    Například můžete vybrat **(zvýraznit chyby)** možnost, která se zobrazí všechny chyby v grafu zobrazí červeně. Můžete také vybrat **(zvýraznit výsledky s protokoly)** možnost, která se zobrazí všechny výsledky testů, které mají protokoly vybarvenými zeleně v grafu.
 
-     **Filtrovat panel výsledků**
+    **Filtrovat panel výsledků**
 
-     ![Filtrovat panel výsledků](../test/media/ltest_filterresults.png)
+    ![Filtrovat panel výsledků](../test/media/ltest_filterresults.png)
 
-3.  V **filtrování výsledků**zaškrtněte nebo zrušte zaškrtnutí políček pro následující možnosti filtru:
+3. V **filtrování výsledků**zaškrtněte nebo zrušte zaškrtnutí políček pro následující možnosti filtru:
 
-    -   **Zobrazit pouze výsledky s protokoly** zobrazí pouze výsledky, které mají protokolů testu k nim má přiřazené testů.
+   - **Zobrazit pouze výsledky s protokoly** zobrazí pouze výsledky, které mají protokolů testu k nim má přiřazené testů.
 
-    -   **Zobrazit úspěšné výsledky** úspěšné výsledky se zobrazí.
+   - **Zobrazit úspěšné výsledky** úspěšné výsledky se zobrazí.
 
-    -   **Zobrazit výsledky s chybami** zobrazuje výsledky s chybami, které vám můžou pomoct při ladění.
+   - **Zobrazit výsledky s chybami** zobrazuje výsledky s chybami, které vám můžou pomoct při ladění.
 
-        > [!NOTE]
-        > Seznam typů chyb, které jsou uvedeny v části **zobrazit výsledky s chybami** uzel můžete zkoumat výběrem **tabulky** tlačítko **prohlížeče výsledků testu výkonnosti webu** nástrojů. Další informace najdete v tématu [Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+     > [!NOTE]
+     > Seznam typů chyb, které jsou uvedeny v části **zobrazit výsledky s chybami** uzel můžete zkoumat výběrem **tabulky** tlačítko **prohlížeče výsledků testu výkonnosti webu** nástrojů. Další informace najdete v tématu [Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
      **Graf aktivity virtuálního uživatele** odpovídajícím způsobem aktualizuje.
 

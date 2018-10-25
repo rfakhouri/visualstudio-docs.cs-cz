@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 213824ff9be80a151d20b4906839969dce3be7d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 01ae9f07d5ec1c0eb2cddda6c24831f213f4bf86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826970"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Vytvoření vlastního kódu a modulů plugin pro zátěžové testování
 
@@ -27,7 +27,7 @@ Vlastní modul plug-in používá kód, který lze vytvořit a připojit k zát�
 ## <a name="tasks"></a>Úlohy
 
 |Úlohy|Související témata|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Vytvořit vlastní modul plug-in pro zátěžový test**: můžete vytvořit vlastní modul plug-in pro přidání další funkce testování k zátěžovému testu můžete použít rozhraní API zátěžového testu.|-   [Postupy: použití rozhraní API zátěžového testu](../test/how-to-use-the-load-test-api.md)<br />-   [Postupy: vytvoření modulu Plugin pro zátěžový test](../test/how-to-create-a-load-test-plug-in.md)|
 |**Vytvořit vlastní modul plug-in pro test výkonnosti webu:** API výkonnostních testů webu můžete vytvořit vlastní modul plug-in pro přidání do testu výkonnosti webu, včetně webu další funkce testování. Můžete také vytvořit testu webové služby.<br /><br /> Kromě toho můžete vytvořit webového modulu plug-in rekordéru, který můžete upravit test výkonnosti webu poté, co je zaznamenán, ale předtím, než se zobrazí v prohlížeči výsledků testů webového výkonu.|-   [Postupy: použití API testu výkonnosti webu](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Postupy: vytvoření modulu Plugin pro test výkonnosti webu](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Postupy: vytvoření modulu Plugin úrovni požadavků](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Postupy: vytvoření testu webové služby](../test/how-to-create-a-web-service-test.md)<br />-   [Postupy: vytvoření modulu Plugin rekordéru](../test/how-to-create-a-recorder-plug-in.md)|
 |**Přidání funkcí uživatelského rozhraní do prohlížeče výsledků testu výkonu webu:** přidáte další funkce uživatelského rozhraní do doplňku sady Visual Studio pomocí prohlížeče výsledků testu webového výkonu.|-   [Postupy: Vytvoření doplňku sady Visual Studio pro web výsledků testu výkonnosti prohlížeč](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|

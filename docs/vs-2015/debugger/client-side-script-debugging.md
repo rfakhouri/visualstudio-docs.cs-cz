@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdf99cad098cc9e127e5ee2c746c046f08754f00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1abbf86799b290bd8afd9ed76fdb7f94b390c1b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288025"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865853"
 ---
 # <a name="client-side-script-debugging"></a>Ladění skriptů na straně klienta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,17 +47,17 @@ Ladicí program sady Visual Studio poskytuje všestranné prostředí pro naleze
   
  Ladicí program se automaticky připojí ke skriptu při jedné z následujících akcí:  
   
--   Dostanete se ve skriptu nastavte zarážku.  
+- Dostanete se ve skriptu nastavte zarážku.  
   
--   Dosažení VBScript `Stop` příkazu nebo JScript `debugger` příkaz v kódu skriptu.  
+- Dosažení VBScript `Stop` příkazu nebo JScript `debugger` příkaz v kódu skriptu.  
   
--   Prohlížeč a server zaznamená syntaxi nebo chybu při skriptu spuštění. Pokud k tomu dojde, dialogové okno se zobrazí a můžete začít ladění.  
+- Prohlížeč a server zaznamená syntaxi nebo chybu při skriptu spuštění. Pokud k tomu dojde, dialogové okno se zobrazí a můžete začít ladění.  
   
- Pokud provedete ruční připojení ke skriptu, proces skriptování pokračuje, dokud není nějakým způsobem zastaven. Můžete ho zastavit výběrem **přerušit** na **ladění** nabídky.  
+  Pokud provedete ruční připojení ke skriptu, proces skriptování pokračuje, dokud není nějakým způsobem zastaven. Můžete ho zastavit výběrem **přerušit** na **ladění** nabídky.  
   
- Pokud ladicí program automaticky připojí, spuštění skriptu je zastaveno na řádku kde zarážka, `Stop` příkazu nebo `debugger` nebo chybu došlo k chybě, nebo v okamžiku, kdy jste se rozhodli spustit ladění v aplikaci Internet Explorer.  
+  Pokud ladicí program automaticky připojí, spuštění skriptu je zastaveno na řádku kde zarážka, `Stop` příkazu nebo `debugger` nebo chybu došlo k chybě, nebo v okamžiku, kdy jste se rozhodli spustit ladění v aplikaci Internet Explorer.  
   
- V tomto okamžiku můžete použít normální funkce ladicího programu a zahájit ladění. Například můžete použít **krok** příkazy pro další spouštění kódu řádek po řádku. Můžete použít **zásobník volání** okno k zobrazení a ovládání skript toku. Můžete použít okna proměnných nebo **okamžité** okno k zobrazení nebo změnu proměnných a vlastností.  
+  V tomto okamžiku můžete použít normální funkce ladicího programu a zahájit ladění. Například můžete použít **krok** příkazy pro další spouštění kódu řádek po řádku. Můžete použít **zásobník volání** okno k zobrazení a ovládání skript toku. Můžete použít okna proměnných nebo **okamžité** okno k zobrazení nebo změnu proměnných a vlastností.  
   
 ## <a name="enhanced-error-messages-for-script-debugging"></a>Rozšířené chybové zprávy pro ladění skriptů  
  Visual Studio poskytuje rozšířené chybové zprávy pro běžné potíže ladění skriptu. Tyto zprávy se nezobrazí, pokud se nepřipojíte k aplikaci Internet Explorer ručně. Pokud dojde k chybě při se automaticky otevře aplikace Internet Explorer, zkuste připojení ručně tak, aby se zobrazí chybové zprávy.  

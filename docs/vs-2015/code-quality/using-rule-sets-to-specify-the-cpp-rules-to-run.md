@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2b3aed9e2504011a61fe13acdf4a836cb41f8df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230872"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859665"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Použití sad pravidel k určování pravidel C++ pro spuštění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ V [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] a [!INCLUDE[vsUltShort](.
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Chcete-li vytvořit vlastní pravidlo z jednoho stávající sadu pravidel  
   
-1.  V Průzkumníku řešení otevřete místní nabídku pro projekt a klikněte na tlačítko **vlastnosti**.  
+1. V Průzkumníku řešení otevřete místní nabídku pro projekt a klikněte na tlačítko **vlastnosti**.  
   
-2.  Na **vlastnosti** kartě **analýzy kódu**.  
+2. Na **vlastnosti** kartě **analýzy kódu**.  
   
-3.  V **sady pravidel** rozevíracího seznamu, proveďte jednu z následujících akcí:  
+3. V **sady pravidel** rozevíracího seznamu, proveďte jednu z následujících akcí:  
   
-    -   Vyberte sadu pravidel, kterou chcete upravit.  
+   - Vyberte sadu pravidel, kterou chcete upravit.  
   
      \- nebo –  
   
-    -   Zvolte  **\<Procházet... >** zadat sadu existujících pravidel, která se nenachází v seznamu.  
+   - Zvolte  **\<Procházet... >** zadat sadu existujících pravidel, která se nenachází v seznamu.  
   
-4.  Zvolte **otevřít** zobrazíte pravidla v editoru sad pravidel.  
+4. Zvolte **otevřít** zobrazíte pravidla v editoru sad pravidel.  
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Chcete-li upravit pravidlo nastavte v editoru sad pravidel  
   

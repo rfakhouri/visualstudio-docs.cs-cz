@@ -9,12 +9,12 @@ description: Zjistěte, jak vyhledat a stáhnout produkty Microsoftu, které jso
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4ac1f74f9f60526c8b1f884cd63907329d2f91a2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831429"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Pomocí odběratele soubory ke stažení v předplatných sady Visual Studio
 Jako součást vaší výhody pro předplatitele máte přístup k široké škále stažení softwaru.
@@ -42,11 +42,11 @@ Pouze stahování, které jsou součástí vašeho předplatného jsou zobrazeny
 
 Při návštěvě [stáhne](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) stránku, uvidíte oblíbené soubory ke stažení uspořádány do skupin podle typu produktu.  Můžete vybrat jednu z oblíbených soubory ke stažení ukazuje nebo vyhledávání pro některý z produktů pomocí panelu hledání v horní části stránky.
 > [!div class="mx-imgBorder"]
-> ![Stránka ke stažení pro předplatitele](_img\subscriber-downloads\subscriber-downloads-resized.png)
+> ![Stránka ke stažení pro předplatitele](_img/subscriber-downloads/subscriber-downloads-resized.png)
 
 Například, pokud se rozhodnete **Visual Studio 2017** ze seznamu nástrojů pro vývojáře, zobrazí se vám seznam dostupných souborů ke stažení pro Visual Studio 2017.
 > [!div class="mx-imgBorder"]
-> ![Soubory ke stažení Visual Studio 2017](_img\subscriber-downloads\vs2017-new-UI.png)
+> ![Soubory ke stažení Visual Studio 2017](_img/subscriber-downloads/vs2017-new-UI.png)
 
 Snadněji vybrat typ architektury, jazyka a soubor použijte k dispozici rozevírací nabídky. Vyberte upřednostňované možnosti a klikněte na tlačítko **Stáhnout** zahájíte stahování produktu.
 
@@ -54,13 +54,13 @@ Snadněji vybrat typ architektury, jazyka a soubor použijte k dispozici rozeví
 
 Kliknutím na název produktu nebo na **informace** odkazu se zobrazí podrobnosti, stáhněte si a poskytují přístup k poznámky k verzi pro produkt.
 > [!div class="mx-imgBorder"]
-> ![Podrobnosti o sadě Visual Studio 2017 Pro stahování](_img\subscriber-downloads\vs2017-pro-details.png)
+> ![Podrobnosti o sadě Visual Studio 2017 Pro stahování](_img/subscriber-downloads/vs2017-pro-details.png)
 
 V podokně podrobností, které můžete také kliknutím na **klíče** kartu a zkontrolujte stav kódy product key.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Pro kódy product key](_img\subscriber-downloads\vs2017-pro-keys.png)
+> ![Visual Studio 2017 Pro kódy product key](_img/subscriber-downloads/vs2017-pro-keys.png)
 
 ### <a name="obtaining-product-keys"></a>Získat kódy product key
 Získání produktu klíče ke stažení, můžete buď kliknout na modrý klíč s názvem **získat klíč** nebo pokud již prohlížíte v podokně podrobností, klikněte na **uplatnit kód** na **klíče** Karta.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Pro deklarace identity kódy product key](_img\subscriber-downloads\vs2017-pro-claim-keys.png)
+> ![Visual Studio 2017 Pro deklarace identity kódy product key](_img/subscriber-downloads/vs2017-pro-claim-keys.png)

@@ -30,12 +30,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2700076fa0cc08aa137377b9a99c1179d9b8fc12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9540e40325293795c44e0d9c2283a27f1d9ea0c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212818"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856701"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>Postupy: Povolení a zákaz operace Upravit a pokračovat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,18 +48,18 @@ Můžete zakázat nebo povolit funkce upravit a pokračovat v **možnosti** dial
   
 #### <a name="to-enabledisable-edit-and-continue"></a>Povolení nebo zakázání funkce upravit a pokračovat  
   
-1.  Otevřít stránky možnosti ladění (**nástroje / Možnosti / ladění**).  
+1. Otevřít stránky možnosti ladění (**nástroje / Možnosti / ladění**).  
   
-2.  Přejděte dolů k položce **upravit a pokračovat** kategorie.  
+2. Přejděte dolů k položce **upravit a pokračovat** kategorie.  
   
-3.  Pokud chcete povolit, vyberte **Povolit Editovat a pokračovat** zaškrtávací políčko. Pokud chcete zakázat, zrušte zaškrtnutí políčka.  
+3. Pokud chcete povolit, vyberte **Povolit Editovat a pokračovat** zaškrtávací políčko. Pokud chcete zakázat, zrušte zaškrtnutí políčka.  
   
-    > [!NOTE]
-    >  Pokud je povolená technologie IntelliTrace a shromažďovat události IntelliTrace a informace o volání, upravit a pokračovat je zakázané. Další informace najdete v tématu [nakonfigurujte nástroj IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+   > [!NOTE]
+   >  Pokud je povolená technologie IntelliTrace a shromažďovat události IntelliTrace a informace o volání, upravit a pokračovat je zakázané. Další informace najdete v tématu [nakonfigurujte nástroj IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-4.  Klikněte na tlačítko **OK**.  
+4. Klikněte na tlačítko **OK**.  
   
- Další informace o těchto možnostech najdete v tématu [Obecné, ladění, dialogové okno Možnosti](../debugger/general-debugging-options-dialog-box.md).  
+   Další informace o těchto možnostech najdete v tématu [Obecné, ladění, dialogové okno Možnosti](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Operace Upravit a pokračovat](../debugger/edit-and-continue.md)

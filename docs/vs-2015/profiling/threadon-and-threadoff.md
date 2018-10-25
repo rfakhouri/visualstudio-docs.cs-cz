@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29bb94664fce8d7adf282a50e94eba39b232a0e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bc48a5f2c5bd05816ca11aac89d6dd63b9fd78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833387"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn a ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ VSPerfCmd.exe **ThreadOff** a **ThreadOn** dílčí příkazy jsou dostupné jen
   
  **ThreadOff** a **ThreadOn** dílčí příkazy také ovlivnit počet spuštění/zastavení vlákna, který je zpracováván pomocí funkcí profilování rozhraní API.  
   
--   **ThreadOff** okamžitě počet operací spustit/zastavit vlákna nastaví na hodnotu 0 a proto pozastaví profilace.  
+- **ThreadOff** okamžitě počet operací spustit/zastavit vlákna nastaví na hodnotu 0 a proto pozastaví profilace.  
   
--   **ThreadOn** okamžitě počet operací spustit/zastavit vlákna nastaví na 1 a proto obnoví profilace.  
+- **ThreadOn** okamžitě počet operací spustit/zastavit vlákna nastaví na 1 a proto obnoví profilace.  
   
- Další informace najdete v tématu [profilování rozhraní API nástroje](../profiling/profiling-tools-apis.md).  
+  Další informace najdete v tématu [profilování rozhraní API nástroje](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   

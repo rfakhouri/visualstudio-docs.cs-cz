@@ -23,12 +23,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 559aea010cb7403e9e8ea52f8bf6c6fb549c665c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc63ef7159b0f11b3d170e0b4123f337ba413d65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823837"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Postupy: Vytváření a odebrání závislostí projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,20 +37,20 @@ Při sestavování řešení, které obsahuje více projektů, může být nezby
   
 ### <a name="to-assign-dependencies-to-projects"></a>K přiřazení závislostí do projektů  
   
-1.  V Průzkumníku řešení vyberte projekt.  
+1. V Průzkumníku řešení vyberte projekt.  
   
-2.  Na **projektu** nabídce zvolte **závislosti projektu**.  
+2. Na **projektu** nabídce zvolte **závislosti projektu**.  
   
-     **Závislosti projektu** zobrazí se dialogové okno.  
+    **Závislosti projektu** zobrazí se dialogové okno.  
   
-    > [!NOTE]
-    >  **Závislosti projektu** možnost dostupná jenom v řešení s více než jeden projekt.  
+   > [!NOTE]
+   >  **Závislosti projektu** možnost dostupná jenom v řešení s více než jeden projekt.  
   
-3.  Na **závislosti** kartu, vyberte projekt z **projektu** rozevírací nabídky.  
+3. Na **závislosti** kartu, vyberte projekt z **projektu** rozevírací nabídky.  
   
-4.  V **závisí na** pole, zaškrtněte políčko jiný projekt, který musíte vytvořit předtím, než se tento projekt.  
+4. V **závisí na** pole, zaškrtněte políčko jiný projekt, který musíte vytvořit předtím, než se tento projekt.  
   
- Řešení se musí skládat z více než jeden projekt, než budete moct vytvořit závislosti projektu.  
+   Řešení se musí skládat z více než jeden projekt, než budete moct vytvořit závislosti projektu.  
   
 ### <a name="to-remove-dependencies-from-projects"></a>Chcete-li odebrat závislosti z projektů  
   

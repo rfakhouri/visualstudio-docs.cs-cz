@@ -16,34 +16,34 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7722132a81c63902450edd85ef90bde94ad94744
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880504"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalace aplikací izolovaného prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 K instalaci prostředí aplikace musíte provést následující kroky.  
   
--   Příprava vašeho řešení.  
+- Příprava vašeho řešení.  
   
--   Vytvoření balíčku Instalační služby systému Windows (MSI) pro vaši aplikaci.  
+- Vytvoření balíčku Instalační služby systému Windows (MSI) pro vaši aplikaci.  
   
--   Vytvoření nastavení zaváděcí nástroj.  
+- Vytvoření nastavení zaváděcí nástroj.  
   
- Kód příkladu v tomto dokumentu se segmenty Convenience [prostředí nasazení ukázky](http://go.microsoft.com/fwlink/?LinkId=262245), kterou si můžete stáhnout z Galerie kódu na webu MSDN. Vzorek ukazuje výsledky provedení jednotlivých kroků.  
+  Kód příkladu v tomto dokumentu se segmenty Convenience [prostředí nasazení ukázky](http://go.microsoft.com/fwlink/?LinkId=262245), kterou si můžete stáhnout z Galerie kódu na webu MSDN. Vzorek ukazuje výsledky provedení jednotlivých kroků.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Chcete-li provádět postupy, které toto téma popisuje, musí být v počítači nainstalované následující nástroje.  
   
--   Visual Studio SDK  
+- Visual Studio SDK  
   
--   [Sady nástrojů XML Instalační služby systému Windows](http://go.microsoft.com/fwlink/?LinkId=82720) verze 3.6  
+- [Sady nástrojů XML Instalační služby systému Windows](http://go.microsoft.com/fwlink/?LinkId=82720) verze 3.6  
   
- Ukázka vyžaduje také Microsoft Visualization and Modeling SDK, které vyžadují některé prostředí.  
+  Ukázka vyžaduje také Microsoft Visualization and Modeling SDK, které vyžadují některé prostředí.  
   
 ## <a name="preparing-your-solution"></a>Příprava vašeho řešení  
  Ve výchozím prostředí šablony sestavení do balíčků VSIX, ale toto chování je určená primárně pro účely ladění. Při nasazení aplikace v jazyce Shell, musíte použít balíčky MSI umožňuje pro přístup k registru a restartování během instalace. Příprava aplikace pro nasazení MSI, proveďte následující kroky.  

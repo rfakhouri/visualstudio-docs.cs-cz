@@ -17,12 +17,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a72c907bf08ce534a61eb4ab7e4667135f104149
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885602"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Postupy: Vytvoření a spuštění bezobslužné instalace sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +91,9 @@ Spuštěním instalační aplikace sady [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
 #### <a name="to-run-an-unattended-installation-on-a-client-computer"></a>Spuštění bezobslužné instalace na klientském počítači  
   
--   Otevřít **Start** nabídce zvolte **spustit**a pak zadejte \\ \\ *ServerName*\IDEinstall\vs_*produktu*parametru/adminfile .exe *PathOfTheAdmindeployment.xmlFile**AdditionalParametersAsNeeded*  
+- Otevřít **Start** nabídce zvolte **spustit**a pak zadejte \\ \\ *ServerName*\IDEinstall\vs_*produktu*parametru/adminfile .exe *PathOfTheAdmindeployment.xmlFile*<em>AdditionalParametersAsNeeded</em>  
   
-     Můžete například zadat následující příkazový řádek: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`  
+   Můžete například zadat následující příkazový řádek: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`  
   
 #### <a name="to-enable-clients-to-manually-install-visual-studio-with-pre-defined-settings"></a>Povolení manuální instalace sady Visual Studio s předdefinovanými nastaveními  
   
@@ -115,59 +115,59 @@ Spuštěním instalační aplikace sady [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>Chcete-li změnit nastavení AdminDeployment na klientském počítači po instalaci sady Visual Studio  
   
-1.  Podle potřeby aktualizujte AdminDeployment.xml.  
+1. Podle potřeby aktualizujte AdminDeployment.xml.  
   
-2.  Otevřít **Start** nabídky a klikněte na tlačítko **spustit**.  
+2. Otevřít **Start** nabídky a klikněte na tlačítko **spustit**.  
   
-3.  Zadejte následující text: \\ \\ *ServerName*\IDEinstall\vs_*produktu*.exe parametru/adminfile PathToAdmindeployment.xml souboru  
+3. Zadejte následující text: \\ \\ *ServerName*\IDEinstall\vs_*produktu*.exe parametru/adminfile PathToAdmindeployment.xml souboru  
   
-     AdditionalParametersAsNeeded  
+    AdditionalParametersAsNeeded  
   
-     Můžete například zadat následující příkazový řádek: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`  
+    Můžete například zadat následující příkazový řádek: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`  
   
- Oprava je výchozím parametrem po instalaci sady Visual Studio. Pokud opravíte systém Visual Studio s aktualizované parametru/adminfile, přepíšete aktuální nastavení nasazení správy s těmi, které aktualizovaný soubor AdminDeployment.xml vyvolá.  
+   Oprava je výchozím parametrem po instalaci sady Visual Studio. Pokud opravíte systém Visual Studio s aktualizované parametru/adminfile, přepíšete aktuální nastavení nasazení správy s těmi, které aktualizovaný soubor AdminDeployment.xml vyvolá.  
   
 ## <a name="updating-an-installation"></a>Aktualizace instalace  
  Společnost Microsoft vydala několik aktualizací do sady Visual Studio 2015. Tato část vysvětluje, jak aktualizovat vaše image bezobslužné instalace sady Visual Studio 2015 tak, že obsahují aktualizace.  
   
 #### <a name="to-update-an-unattended-installation-of-visual-studio"></a>Chcete-li aktualizovat bezobslužné instalace sady Visual Studio  
   
-1.  Vyhledejte soubor Product.exe v existující obrazu sítě, pravým tlačítkem myši a potom klikněte na tlačítko **vlastnosti**.  
+1. Vyhledejte soubor Product.exe v existující obrazu sítě, pravým tlačítkem myši a potom klikněte na tlačítko **vlastnosti**.  
   
-2.  Klikněte na tlačítko **podrobnosti** kartu a potom poznamenejte **verze produktu** vlastnost.  
+2. Klikněte na tlačítko **podrobnosti** kartu a potom poznamenejte **verze produktu** vlastnost.  
   
-     ![Příklad dialogové okno Vlastnosti při bezobslužné instalaci sady Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "bezobslužné instalace – dialogové okno Vlastnosti")  
+    ![Příklad dialogové okno Vlastnosti při bezobslužné instalaci sady Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "bezobslužné instalace – dialogové okno Vlastnosti")  
   
-3.  ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Pokud je verze produktu 14.0.24720.0 nebo 14.0.24720.1, postupujte podle těchto kroků:  
-4.  1.  Spustit *Product.exe* /Layout *jednotka:* \IDEinstall na počítači, který má přístup k Internetu. (Například spusťte: `vs_enterprise.exe /Layout d:\IDEinstall`.)  
+3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Pokud je verze produktu 14.0.24720.0 nebo 14.0.24720.1, postupujte podle těchto kroků:  
+4. 1.  Spustit *Product.exe* /Layout *jednotka:* \IDEinstall na počítači, který má přístup k Internetu. (Například spusťte: `vs_enterprise.exe /Layout d:\IDEinstall`.)  
   
-    2.  Po dokončení / layout kopírovat nové image do nového umístění.  
+   2.  Po dokončení / layout kopírovat nové image do nového umístění.  
   
-    3.  Vytvořit a upravit soubor AdminDeployment.xml. Chcete-li to provést, použijte `/CreateAdminFile`  *\<umístění souboru >* parametr příkazového řádku. (Další informace najdete v tématu "Nasazení sady Visual Studio v bezobslužném režimu" části tohoto článku.)  
+   3.  Vytvořit a upravit soubor AdminDeployment.xml. Chcete-li to provést, použijte `/CreateAdminFile`  *\<umístění souboru >* parametr příkazového řádku. (Další informace najdete v tématu "Nasazení sady Visual Studio v bezobslužném režimu" části tohoto článku.)  
   
-    4.  Na klientském počítači a spusťte následující příkaz k aktualizaci kopie sady Visual Studio, který jste dříve nainstalovali: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe*  parametru/adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart / ".  
+   4.  Na klientském počítači a spusťte následující příkaz k aktualizaci kopie sady Visual Studio, který jste dříve nainstalovali: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe*  parametru/adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart / ".  
   
-         Například spusťte: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
-5.  ###### <a name="for-other-product-version-values-follow-these-steps"></a>Další hodnoty verze produktu postupujte podle těchto kroků:  
-6.  1.  Spustit *Product.exe* /Layout *jednotka:* \IDEinstall na počítači, který má přístup k Internetu. (Například spustit `vs-enterprise.exe /Layout d:\IDEinstall`.)  
+        Například spusťte: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
+5. ###### <a name="for-other-product-version-values-follow-these-steps"></a>Další hodnoty verze produktu postupujte podle těchto kroků:  
+6. 1.  Spustit *Product.exe* /Layout *jednotka:* \IDEinstall na počítači, který má přístup k Internetu. (Například spustit `vs-enterprise.exe /Layout d:\IDEinstall`.)  
   
-    2.  Po dokončení / layout kopírovat nové image do nového umístění. (Nebo, místo toho můžete přepsat existující obrazu sítě).  
+   2.  Po dokončení / layout kopírovat nové image do nového umístění. (Nebo, místo toho můžete přepsat existující obrazu sítě).  
   
-    3.  Vytvořit a následně upravit soubor AdminDeployment.xml. Chcete-li to provést, použijte `/CreateAdminFile`  *\<umístění souboru >* parametr příkazového řádku. (Další informace najdete v tématu "Nasazení sady Visual Studio v bezobslužném režimu" části tohoto článku.)  
+   3.  Vytvořit a následně upravit soubor AdminDeployment.xml. Chcete-li to provést, použijte `/CreateAdminFile`  *\<umístění souboru >* parametr příkazového řádku. (Další informace najdete v tématu "Nasazení sady Visual Studio v bezobslužném režimu" části tohoto článku.)  
   
-    4.  Pokud zkopírujete bitovou kopii do nového umístění, musíte spustit následující příkaz v klientském počítači. Chcete-li aktualizovat kopii sady Visual Studio, který jste dříve nainstalovali: "\\\\*server1*\IDEinstall_Updated_1\\ *Product.exe* parametru/adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart / ".  
+   4.  Pokud zkopírujete bitovou kopii do nového umístění, musíte spustit následující příkaz v klientském počítači. Chcete-li aktualizovat kopii sady Visual Studio, který jste dříve nainstalovali: "\\\\*server1*\IDEinstall_Updated_1\\ *Product.exe* parametru/adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart / ".  
   
-         Například spusťte: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
+        Například spusťte: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
   
-    5.  Pokud přepíšete existující obrazu sítě, můžete spustit příkaz, jak je uvedeno v předchozím kroku, nebo můžete postupovat takto:  
+   5.  Pokud přepíšete existující obrazu sítě, můžete spustit příkaz, jak je uvedeno v předchozím kroku, nebo můžete postupovat takto:  
   
-    6.  1.  Otevřít **ovládací panely**a klikněte na tlačítko **programy a funkce**.  
+   6.  1.  Otevřít **ovládací panely**a klikněte na tlačítko **programy a funkce**.  
   
-        2.  Zvolte **sady Visual Studio**a klikněte na tlačítko **změnu**.  
+       2.  Zvolte **sady Visual Studio**a klikněte na tlačítko **změnu**.  
   
-        3.  Po spuštění sady Visual Studio v režimu údržby, klikněte na tlačítko **změnit**.  
+       3.  Po spuštění sady Visual Studio v režimu údržby, klikněte na tlačítko **změnit**.  
   
-        4.  Nejnovější aktualizace by se zobrazit na stránce funkce. Vyberte funkce, které chcete nainstalovat, klikněte na tlačítko **Další**a potom klikněte na tlačítko **aktualizovat** instalace aktualizace a nové funkce.  
+       4.  Nejnovější aktualizace by se zobrazit na stránce funkce. Vyberte funkce, které chcete nainstalovat, klikněte na tlačítko **Další**a potom klikněte na tlačítko **aktualizovat** instalace aktualizace a nové funkce.  
   
 ## <a name="registering-the-product"></a>Registrace produktu  
  Po dokončení instalace můžete zaregistrovat svou kopii [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zevnitř [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

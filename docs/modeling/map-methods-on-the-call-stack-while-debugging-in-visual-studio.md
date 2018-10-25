@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a99899f9a909ead3db7d925cd703612a7f68bcf2
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1d0139463f468ed6d909658bb143412dc122020
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856181"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapování metod v zásobníku volání při ladění v sadě Visual Studio
 Vytvořte mapu kódu pro vizuální sledování zásobníku volání během ladění. Můžete si dělat poznámky na mapě ke sledování kódu činnosti tak, abyste se mohli zaměřit na hledání chyb.
@@ -44,27 +44,27 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
  Budete potřebovat:
 
--   [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
--   Kód, který lze ladit, jako je Visual C#, Visual Basic, C++, JavaScript nebo X ++
+- Kód, který lze ladit, jako je Visual C#, Visual Basic, C++, JavaScript nebo X ++
 
- Další informace:
+  Další informace:
 
--   [Video: Vizuální ladění díky integraci ladicího programu mapy kódu (kanál 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Video: Vizuální ladění díky integraci ladicího programu mapy kódu (kanál 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
--   [Mapování zásobníku volání](#MapStack)
+- [Mapování zásobníku volání](#MapStack)
 
--   [Tvorba poznámek o kódu](#MakeNotes)
+- [Tvorba poznámek o kódu](#MakeNotes)
 
--   [Aktualizace mapy s následujícím zásobníkem volání.](#UpdateMap)
+- [Aktualizace mapy s následujícím zásobníkem volání.](#UpdateMap)
 
--   [Přidání souvisejícího kódu do mapy](#AddRelatedCode)
+- [Přidání souvisejícího kódu do mapy](#AddRelatedCode)
 
--   [Najít chyby pomocí mapy](#FindBugs)
+- [Najít chyby pomocí mapy](#FindBugs)
 
--   [FUNKCE Q &AMP; A](#QA)
+- [FUNKCE Q &AMP; A](#QA)
 
- Podrobnosti příkazů a akcí, které můžete použít při práci s mapami kódu najdete v tématu [Procházet a uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md).
+  Podrobnosti příkazů a akcí, které můžete použít při práci s mapami kódu najdete v tématu [Procházet a uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md).
 
 ## <a name="MapStack"></a> Mapování zásobníku volání
 
@@ -129,63 +129,63 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
 ## <a name="QA"></a> Q & A
 
--   **Ne všechny hovory jsou zobrazeny na mapě. Proč?**
+- **Ne všechny hovory jsou zobrazeny na mapě. Proč?**
 
-     Ve výchozím nastavení zobrazí se pouze vlastní kód na mapě. Chcete-li zobrazit externí kód, zapněte ho v **zásobník volání** okno:
+   Ve výchozím nastavení zobrazí se pouze vlastní kód na mapě. Chcete-li zobrazit externí kód, zapněte ho v **zásobník volání** okno:
 
-     ![Zobrazit externí kód pomocí okna zásobník volání](../debugger/media/debuggermap_callstackmenu.png)
+   ![Zobrazit externí kód pomocí okna zásobník volání](../debugger/media/debuggermap_callstackmenu.png)
 
-     nebo se vypnout **povolit volbu pouze vlastní kód** v možnostech ladění aplikace Visual Studio:
+   nebo se vypnout **povolit volbu pouze vlastní kód** v možnostech ladění aplikace Visual Studio:
 
-     ![Zobrazit externí kód pomocí dialogové okno Možnosti](../debugger/media/debuggermap_debugoptions.png)
+   ![Zobrazit externí kód pomocí dialogové okno Možnosti](../debugger/media/debuggermap_debugoptions.png)
 
--   **Změna mapování kód ovlivní?**
+- **Změna mapování kód ovlivní?**
 
-     Změna mapování kód nijak neovlivní. Nebojte se přejmenovat, přesunout nebo odebrat cokoli na mapě.
+   Změna mapování kód nijak neovlivní. Nebojte se přejmenovat, přesunout nebo odebrat cokoli na mapě.
 
--   **Co tato zpráva znamená: "diagram může být založen na starší verzi kódu"?**
+- **Co tato zpráva znamená: "diagram může být založen na starší verzi kódu"?**
 
-     Po poslední aktualizaci mapy mohl být kód změněn. Například volání do mapy nemusí již v kódu existovat. Zavřete zprávu a potom zkuste znovu sestavit řešení před opětovnou aktualizací mapy.
+   Po poslední aktualizaci mapy mohl být kód změněn. Například volání do mapy nemusí již v kódu existovat. Zavřete zprávu a potom zkuste znovu sestavit řešení před opětovnou aktualizací mapy.
 
--   **Jak můžu řídit rozložení mapy?**
+- **Jak můžu řídit rozložení mapy?**
 
-     Otevřít **rozložení** nabídky na panelu nástrojů mapy:
+   Otevřít **rozložení** nabídky na panelu nástrojů mapy:
 
-    -   Změňte výchozí rozložení.
+  -   Změňte výchozí rozložení.
 
-    -   Chcete-li zastavit automatické uspořádání mapy, vypněte **při ladění automaticky rozmístit**.
+  -   Chcete-li zastavit automatické uspořádání mapy, vypněte **při ladění automaticky rozmístit**.
 
-    -   Chcete-li změnit uspořádání mapy co při přidávání položek, vypněte **Inkrementální rozložení**.
+  -   Chcete-li změnit uspořádání mapy co při přidávání položek, vypněte **Inkrementální rozložení**.
 
--   **Mohu sdílet mapu s ostatními?**
+- **Mohu sdílet mapu s ostatními?**
 
-     Můžete exportovat mapu, odeslat ji ostatním uživatelům Pokud máte aplikaci Microsoft Outlook nebo uložit do vašeho řešení, abyste je mohli vrátit se změnami do správy zdrojového kódu.
+   Můžete exportovat mapu, odeslat ji ostatním uživatelům Pokud máte aplikaci Microsoft Outlook nebo uložit do vašeho řešení, abyste je mohli vrátit se změnami do správy zdrojového kódu.
 
-     ![Sdílená složka volání zásobníku mapy kódu s ostatními](../debugger/media/debuggermap_sharewithothers.png)
+   ![Sdílená složka volání zásobníku mapy kódu s ostatními](../debugger/media/debuggermap_sharewithothers.png)
 
--   **Jak mohu zabránit mapě v automaticky přidání nových zásobníků volání?**
+- **Jak mohu zabránit mapě v automaticky přidání nových zásobníků volání?**
 
-     Zvolte ![tlačítko &#45; zásobníku volání zobrazit na mapě kódu automaticky](../debugger/media/debuggermap_automaticupdateicon.gif) na panelu nástrojů Mapa. Chcete-li ručně přidat aktuální zásobník volání k mapě, stiskněte **Ctrl** + **Shift** + **`**.
+   Zvolte ![tlačítko &#45; zásobníku volání zobrazit na mapě kódu automaticky](../debugger/media/debuggermap_automaticupdateicon.gif) na panelu nástrojů Mapa. Chcete-li ručně přidat aktuální zásobník volání k mapě, stiskněte **Ctrl** + **Shift** + **`**.
 
-     Mapa bude pokračovat ve zvýraznění existujících zásobníků volání na mapě během ladění.
+   Mapa bude pokračovat ve zvýraznění existujících zásobníků volání na mapě během ladění.
 
--   **Co ikony položky a šipky znamenají?**
+- **Co ikony položky a šipky znamenají?**
 
-     Pokud chcete získat další informace o položce, přesuňte ukazatel myši nad ním a podívejte se na popis položky. Můžete také prohlédnout **legendy** se dozvíte, co znamenají jednotlivé ikony.
+   Pokud chcete získat další informace o položce, přesuňte ukazatel myši nad ním a podívejte se na popis položky. Můžete také prohlédnout **legendy** se dozvíte, co znamenají jednotlivé ikony.
 
-     ![Co znamenají ikony na mapě kódu zásobníku volání](../debugger/media/debuggermap_showlegend.png)
+   ![Co znamenají ikony na mapě kódu zásobníku volání](../debugger/media/debuggermap_showlegend.png)
 
- Další informace:
+  Další informace:
 
--   [Mapování zásobníku volání](#MapStack)
+- [Mapování zásobníku volání](#MapStack)
 
--   [Tvorba poznámek o kódu](#MakeNotes)
+- [Tvorba poznámek o kódu](#MakeNotes)
 
--   [Aktualizace mapy s následujícím zásobníkem volání.](#UpdateMap)
+- [Aktualizace mapy s následujícím zásobníkem volání.](#UpdateMap)
 
--   [Přidání souvisejícího kódu do mapy](#AddRelatedCode)
+- [Přidání souvisejícího kódu do mapy](#AddRelatedCode)
 
--   [Najít chyby pomocí mapy](#FindBugs)
+- [Najít chyby pomocí mapy](#FindBugs)
 
 ## <a name="see-also"></a>Viz také
 

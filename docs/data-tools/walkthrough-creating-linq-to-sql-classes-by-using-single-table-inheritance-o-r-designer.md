@@ -13,31 +13,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20565c798e9c94cb40a39deb4a80f9a83d67e161
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 943b75c9c5f9c0c32ab02b5e73c07282728e0beb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864724"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Návod: Vytvoření tříd LINQ to SQL s použitím dědičnosti jedné tabulky (O/R Designer)
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) podporuje dědičnosti jedné tabulky, jak se zpravidla implementuje v relačních systémech. Tento názorný postup rozšiřují obecných kroků uvedených v [postupy: Konfigurace dědičnosti pomocí Návrháře relací objektů](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tématu a poskytuje některé reálná data pro demonstraci použití dědičnosti v [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
  V tomto návodu budete provádět následující úlohy:
 
--   Vytvořit tabulku databáze a přidejte do ní data.
+- Vytvořit tabulku databáze a přidejte do ní data.
 
--   Vytvoření aplikace Windows Forms.
+- Vytvoření aplikace Windows Forms.
 
--   Přidat [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] soubor do projektu.
+- Přidat [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] soubor do projektu.
 
--   Vytvořte nové entity třídy.
+- Vytvořte nové entity třídy.
 
--   Nakonfigurujte tříd entit použít dědičnosti.
+- Nakonfigurujte tříd entit použít dědičnosti.
 
--   Dotazování zděděné třídy.
+- Dotazování zděděné třídy.
 
--   Zobrazte data ve formuláři Windows.
+- Zobrazte data ve formuláři Windows.
 
 ## <a name="create-a-table-to-inherit-from"></a>Vytvořte tabulku pro dědí z
  Pokud chcete zjistit, jak funguje dědičnosti, vytvoření malé `Person` tabulky, použijte ho jako základní třídu a pak vytvořte `Employee` objekt, který z něj dědí.
@@ -191,6 +191,6 @@ ms.locfileid: "37174936"
 
 - [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Návod: Vytvoření LINQ na třídy SQL (Návrhář O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Postupy: přiřazení uložených procedur za účelem aktualizace, vložení a odstranění (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Postupy: Přiřazení uložených procedur za účelem aktualizací, vkládání a odstraňování (Návrhář relací objektů)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Postupy: generování objektového modelu v jazyce Visual Basic nebo C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

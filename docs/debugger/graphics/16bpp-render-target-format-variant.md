@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9a8e990ee3b95d93f8757f54b92c808fb650f8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832885"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bitů na pixel vykreslování cílového formátu typu Variant
 Nastaví formát pixelu DXGI_FORMAT_B5G6R5_UNORM pro všechny cíle vykreslování a zpět vyrovnávací paměti.  
@@ -43,9 +43,9 @@ Aplikace, které jsou součástí řetězce přepnutí mít formát vyrovnávac�
 2. Zkopírujte cíl vykreslování do přípravné vyrovnávací paměti řetězce přepnutí kreslením quad celé obrazovky se cíl vykreslení jako zdrojovou texturu.
 3. Nevolají Present na vaše řetězec přepnutí.
 
- Pokud tato strategie uloží větší šířku pásma, než je využívána kopírování cíle vykreslování přípravné vyrovnávací paměti řetězce přepnutí, je lepší výkon při vykreslování.
+   Pokud tato strategie uloží větší šířku pásma, než je využívána kopírování cíle vykreslování přípravné vyrovnávací paměti řetězce přepnutí, je lepší výkon při vykreslování.
 
- Architektury GPU, používající techniky vedle sebe vykreslování můžete zobrazit výhody výkonu pomocí formátu 16 bitů na pixel rámce vyrovnávací paměti. Toto vylepšení totiž větší část vyrovnávací paměť snímku lze zobrazit v mezipaměti Každá dlaždice místní snímek vyrovnávací paměti. Vedle sebe vykreslování architektury jsou někdy součástí grafickými procesory v mobilních telefonů a tabletů počítače; zřídka nacházet mimo tento volné místo.  
+   Architektury GPU, používající techniky vedle sebe vykreslování můžete zobrazit výhody výkonu pomocí formátu 16 bitů na pixel rámce vyrovnávací paměti. Toto vylepšení totiž větší část vyrovnávací paměť snímku lze zobrazit v mezipaměti Každá dlaždice místní snímek vyrovnávací paměti. Vedle sebe vykreslování architektury jsou někdy součástí grafickými procesory v mobilních telefonů a tabletů počítače; zřídka nacházet mimo tento volné místo.  
   
 ## <a name="remarks"></a>Poznámky  
  Cílový formát vykreslení se resetují na DXGI_FORMAT_B5G6R5_UNORM na všechna volání `ID3D11Device::CreateTexture2D` , který vytvoří cíl vykreslování. Konkrétně je formát přepsána při D3D11_TEXTURE2D_DESC objekt předaný v pDesc popisuje cíl vykreslování; To je:  

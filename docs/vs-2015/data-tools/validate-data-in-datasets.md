@@ -27,12 +27,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5dd01b20e84bbe39e0c082a0b598fb6742f33d9f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa90ddb397d1c18e88ab8f25e2a0c3aee3e4d9a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891125"
 ---
 # <a name="validate-data-in-datasets"></a>Ověřování dat v datových sadách
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,21 +47,21 @@ Ověřování dat je proces ověření, hodnot zadaných do datových objektů v
 ## <a name="validate-data"></a>Ověření dat  
  Ověření v datové sadě můžete provést těmito způsoby:  
   
--   Tím, že vytvoříte vlastní ověřování konkrétní aplikace, které můžete zkontrolovat hodnoty v jednotlivých datový sloupec během změny.  Další informace najdete v tématu [postupy: ověření dat během úprav sloupců](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- Tím, že vytvoříte vlastní ověřování konkrétní aplikace, které můžete zkontrolovat hodnoty v jednotlivých datový sloupec během změny.  Další informace najdete v tématu [postupy: ověření dat během úprav sloupců](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
--   Tím, že vytvoříte vlastní ověření specifické pro aplikace, který můžete zkontrolovat dat na hodnoty během celého datového řádku mění. Další informace najdete v tématu [postupy: ověření dat během úprav řádků](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- Tím, že vytvoříte vlastní ověření specifické pro aplikace, který můžete zkontrolovat dat na hodnoty během celého datového řádku mění. Další informace najdete v tématu [postupy: ověření dat během úprav řádků](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
--   Tím, že vytvoříte klíče, unikátních omezení a podobně jako součást definice skutečné schématu datové sady. Další informace o zahrnutí do definice schématu ověření najdete v tématu [omezení DataColumn obsahovat jedinečné hodnoty](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
+- Tím, že vytvoříte klíče, unikátních omezení a podobně jako součást definice skutečné schématu datové sady. Další informace o zahrnutí do definice schématu ověření najdete v tématu [omezení DataColumn obsahovat jedinečné hodnoty](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
   
--   Nastavením vlastnosti <xref:System.Data.DataColumn> objektu, například <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, a <xref:System.Data.DataColumn.Unique%2A>.  
+- Nastavením vlastnosti <xref:System.Data.DataColumn> objektu, například <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, a <xref:System.Data.DataColumn.Unique%2A>.  
   
- Několik události jsou vyvolány <xref:System.Data.DataTable> objektu, když probíhá změnu v záznamu:  
+  Několik události jsou vyvolány <xref:System.Data.DataTable> objektu, když probíhá změnu v záznamu:  
   
--   <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.ColumnChanged> události jsou vyvolány během a po každé změně na jednotlivých sloupců. <xref:System.Data.DataTable.ColumnChanging> Událostí je užitečné, pokud chcete ověřit změny v určité sloupce. Informace o navrhované změny je předán jako argument události. Další informace najdete v tématu [postupy: ověření dat během úprav sloupců](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.ColumnChanged> události jsou vyvolány během a po každé změně na jednotlivých sloupců. <xref:System.Data.DataTable.ColumnChanging> Událostí je užitečné, pokud chcete ověřit změny v určité sloupce. Informace o navrhované změny je předán jako argument události. Další informace najdete v tématu [postupy: ověření dat během úprav sloupců](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
--   <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události jsou vyvolány během a po všech změn za sebou. <xref:System.Data.DataTable.RowChanging> Je další obecné události. Označuje, že změna dochází jinde v řádku, ale nevíte, který sloupec došlo ke změně. Další informace najdete v tématu [postupy: ověření dat během úprav řádků](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události jsou vyvolány během a po všech změn za sebou. <xref:System.Data.DataTable.RowChanging> Je další obecné události. Označuje, že změna dochází jinde v řádku, ale nevíte, který sloupec došlo ke změně. Další informace najdete v tématu [postupy: ověření dat během úprav řádků](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
- Ve výchozím nastavení jednotlivé změny do sloupce tedy vyvolává čtyři události. První je <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.ColumnChanged> události pro určitý sloupec, který mění. Dále jsou <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události. Pokud více změn jsou prováděny na řádek, události, bude vyvolána u každé změny.  
+  Ve výchozím nastavení jednotlivé změny do sloupce tedy vyvolává čtyři události. První je <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.ColumnChanged> události pro určitý sloupec, který mění. Dále jsou <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události. Pokud více změn jsou prováděny na řádek, události, bude vyvolána u každé změny.  
   
 > [!NOTE]
 >  Řádek dat <xref:System.Data.DataRow.BeginEdit%2A> metoda vypne <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události po každé změně jednotlivých sloupců. V takovém případě není vyvolána událost až <xref:System.Data.DataRow.EndEdit%2A> metoda byla volána, když <xref:System.Data.DataTable.RowChanging> a <xref:System.Data.DataTable.RowChanged> události jsou vyvolány pouze jednou. Další informace najdete v tématu [vypnutí omezení při naplňování datové sady](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
@@ -94,13 +94,13 @@ Ověřování dat je proces ověření, hodnot zadaných do datových objektů v
   
  Data můžete ověřit při změně hodnoty ve sloupci data reakcí na <xref:System.Data.DataTable.ColumnChanging> událostí. Po vyvolání Tato událost předává argument události (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>), který obsahuje hodnotu, která je právě navrhuje se pro aktuální sloupec. Na základě obsahu z `e.ProposedValue`, můžete:  
   
--   Přijměte navrhovanou hodnotu neprovedením žádné akce.  
+- Přijměte navrhovanou hodnotu neprovedením žádné akce.  
   
--   Odmítnout navrhovanou hodnota nastavením chyby sloupce (<xref:System.Data.DataRow.SetColumnError%2A>) z v rámci obslužné rutiny události měnící sloupec.  
+- Odmítnout navrhovanou hodnota nastavením chyby sloupce (<xref:System.Data.DataRow.SetColumnError%2A>) z v rámci obslužné rutiny události měnící sloupec.  
   
--   Volitelně můžete použít <xref:System.Windows.Forms.ErrorProvider> ovládací prvek zobrazí uživateli chybovou zprávu. Další informace najdete v tématu [ErrorProvider – komponenta](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
+- Volitelně můžete použít <xref:System.Windows.Forms.ErrorProvider> ovládací prvek zobrazí uživateli chybovou zprávu. Další informace najdete v tématu [ErrorProvider – komponenta](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
   
- Ověření lze provést také během <xref:System.Data.DataTable.RowChanging> událostí. Další informace najdete v tématu [postupy: ověření dat během úprav řádků](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+  Ověření lze provést také během <xref:System.Data.DataTable.RowChanging> událostí. Další informace najdete v tématu [postupy: ověření dat během úprav řádků](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
 ## <a name="validate-data-during-row-changes"></a>Ověřování dat během úprav řádků  
  Můžete napsat kód pro každý sloupec, který chcete ověřit, jestli obsahuje data, která splňují požadavky aplikace. To lze proveďte nastavením sloupec, aby označoval, že obsahuje chybu Pokud navrhovaná hodnota není přijatelná. Následující příklady nastavují chybu sloupce při `Quantity` sloupec je 0 nebo menší. Obslužné rutiny události měnící řádek by měl vypadat podobně jako následující příklady.  

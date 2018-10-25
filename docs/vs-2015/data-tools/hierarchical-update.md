@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 342d51b5057ac0c17e92db1d4c454962b50df19a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843389"
 ---
 # <a name="hierarchical-update"></a>Hierarchická aktualizace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,14 +89,14 @@ Hierarchická aktualizace * se vztahuje k procesu ukládání aktualizovaná dat
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Aktualizovat kód se zapsat změny do tabulky v relaci před uložením.  
   
-1.  Dvakrát klikněte **Uložit** tlačítko <xref:System.Windows.Forms.BindingNavigator> otevřete **Form1** v editoru kódu.  
+1. Dvakrát klikněte **Uložit** tlačítko <xref:System.Windows.Forms.BindingNavigator> otevřete **Form1** v editoru kódu.  
   
-2.  Přidat řádek kódu pro volání `OrdersBindingSource.EndEdit` po řádek, který volá metodu `CustomersBindingSource.EndEdit` metody. Kód v **Uložit** klikněte na tlačítko události by měl vypadat takto:  
+2. Přidat řádek kódu pro volání `OrdersBindingSource.EndEdit` po řádek, který volá metodu `CustomersBindingSource.EndEdit` metody. Kód v **Uložit** klikněte na tlačítko události by měl vypadat takto:  
   
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
+    [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
+    [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
   
- Kromě potvrzení změn v související podřízené tabulce, před uložením dat do databáze, může také mít nadřazené záznamy potvrzení nově vytvořené před přidáním nové podřízené záznamy do datové sady. Jinými slovy budete pravděpodobně nutné přidat nový záznam nadřazené (zákazníka) do datové sady než omezení cizího klíče povolit nové podřízené záznamy (objednávky) mají být přidány do datové sady. K tomu můžete použít podřízené `BindingSource.AddingNew` událostí.  
+   Kromě potvrzení změn v související podřízené tabulce, před uložením dat do databáze, může také mít nadřazené záznamy potvrzení nově vytvořené před přidáním nové podřízené záznamy do datové sady. Jinými slovy budete pravděpodobně nutné přidat nový záznam nadřazené (zákazníka) do datové sady než omezení cizího klíče povolit nové podřízené záznamy (objednávky) mají být přidány do datové sady. K tomu můžete použít podřízené `BindingSource.AddingNew` událostí.  
   
 > [!NOTE]
 >  Zda je nutné potvrdit nové nadřazené záznamy, závisí na typu ovládacího prvku, který slouží k vytvoření vazby ke zdroji dat. V tomto názorném postupu použijete k připojení k nadřazené tabulky jednotlivých ovládacích prvků. To vyžaduje další kód do nového nadřazeného záznamu o zápisu. Pokud nadřazené záznamy se místo toho zobrazí v ovládacím prvku komplexní vazby <xref:System.Windows.Forms.DataGridView>, tuto další <xref:System.Windows.Forms.BindingSource.EndEdit%2A> volání pro nadřazený záznam by být nutné. Je to proto, že základní funkce datové vazby pro ovládací prvek zpracovává potvrzení nových záznamů.  

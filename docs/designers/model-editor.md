@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: b7e3da13240eb172e29676b990d1c23be71e4542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029131"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855531"
 ---
 # <a name="model-editor"></a>Editor modelů
 
@@ -31,7 +31,7 @@ Můžete použít **editoru modelů** k vytvoření základních 3D modelů od z
 **Editoru modelů** podporuje několik formátů 3D modelů, které se používají při vývoji aplikace rozhraní DirectX:
 
 |Název formátu|Přípona souboru|Podporované operace (zobrazení, úpravy, vytváření)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |Soubor AutoDesk FBX Interchange|*.fbx*|Zobrazení, úpravy, vytváření|
 |Soubor DAE standardu Collada|*.DAE*|Zobrazení, úpravy (změny DAE standardu Collada jsou uloženy ve formátu FBX.)|
 |OBJ|*.obj*|Zobrazení, úpravy (změny souborů OBJ jsou uloženy ve formátu FBX.)|
@@ -254,7 +254,7 @@ Každý z těchto materiálů použije jednu texturu na povrch objektu. Můžete
 Pokud chcete upravit, jak daný objekt reaguje na různé zdroje světla ve scéně, můžete změnit vlastnosti osvětlení materiálu nezávisle na jiných objektech, které materiál používají. Tato tabulka popisuje běžné vlastnosti osvětlení:
 
 |Vlastnost osvětlení|Popis|
-|-----------------------|-----------------|
+| - |-----------------|
 |**Okolí**|Popisuje, jakým způsobem je povrch ovlivněn okolním osvětlením.|
 |**Rozptýlit**|Popisuje, jakým způsobem je povrch ovlivněn směrovými a bodovými světly.|
 |**Vyzařující**|Popisuje, jak povrch vyzařuje světlo, nezávisle na ostatním osvětlení.|
@@ -294,7 +294,7 @@ Odebrat přidružení nadřazený podřízený mezi dvěma objekty, vyberte pod�
 ## <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
 |Příkaz|Klávesové zkratky|
-|-------------|------------------------|
+|-------------| - |
 |Přepnout na **vyberte** režimu|**CTRL**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Přepnout na **přiblížení** režimu|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Přepnout na **Pan** režimu|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|

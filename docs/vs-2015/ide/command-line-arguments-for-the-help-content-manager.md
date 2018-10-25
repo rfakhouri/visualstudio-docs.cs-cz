@@ -14,27 +14,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: be0c91441df0ff85771993195a4f34c7c682abdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873406"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumenty příkazového řádku pro aplikaci Help Content Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete zadat, jak nasadit a spravovat místní obsah nápovědy pomocí argumentů příkazového řádku pro Help Content Manager (HlpCtntmgr.exe). Je nutné spustit skripty pro tento nástroj příkazového řádku s oprávněními správce a tyto skripty nelze spouštět jako službu. Pomocí tohoto nástroje můžete provádět následující úlohy:  
   
--   Přidejte nebo aktualizujte místní obsah nápovědy z disku nebo cloudu.  
+- Přidejte nebo aktualizujte místní obsah nápovědy z disku nebo cloudu.  
   
--   Odeberte obsah místní nápovědy.  
+- Odeberte obsah místní nápovědy.  
   
--   Přesuňte místní úložiště obsahu nápovědy.  
+- Přesuňte místní úložiště obsahu nápovědy.  
   
--   Přidat, aktualizovat, odstranit nebo přesunout obsah místní nápovědy tiše.  
+- Přidat, aktualizovat, odstranit nebo přesunout obsah místní nápovědy tiše.  
   
- Syntaxe:  
+  Syntaxe:  
   
 ```  
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint  

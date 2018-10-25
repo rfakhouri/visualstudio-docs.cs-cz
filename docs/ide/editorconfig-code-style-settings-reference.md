@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ad897c624de858edc436e6f547d98f90b1d77282
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e4cb16af7fe70388f85fa5b3beb48ee97f897f72
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863773"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig nastavení konvence psaní kódu .NET
 
@@ -319,7 +319,7 @@ Pravidla stylu v této části se týkají modifikátor předvolby, včetně vy�
 V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, použitelné programovací jazyky, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
 | Název pravidla | ID pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 verze |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | dotnet_style_require_accessibility_modifiers | IDE0040 | C# a Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | veřejné, privátní, chráněné, interní, static a extern, nový, virtuální, abstraktní, zapečetěné, přepsání, jen pro čtení, nebezpečný, ale volatilních, asynchronní: žádné | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Částečné výchozí, privátní, chráněné veřejné, Friend, NotOverridable, Overridable, MustOverride, přetížení, přepsání, MustInherit, NotInheritable, statická, sdílí, Shadows, ReadOnly, jen pro zápis, dimenze, Const, WithEvents, rozšíření, zužující, vlastní, Asynchronní: žádné | 15.5 |
@@ -671,7 +671,6 @@ var anon = new { age, name };
 
 // dotnet_style_prefer_inferred_anonymous_type_member_names = false
 var anon = new { age = age, name = name };
-
 ```
 
 ```vb
@@ -680,7 +679,6 @@ Dim anon = New With {name, age}
 
 ' dotnet_style_prefer_inferred_anonymous_type_member_names = false
 Dim anon = New With {.name = name, .age = age}
-
 ```
 
 **DotNet\_styl\_raději\_automaticky\_vlastnosti**
@@ -984,7 +982,7 @@ Pravidla stylu v této části se týkají používání [členové tvoření](/
 V následující tabulce jsou uvedeny názvy pravidel, pravidel ID, příslušné jazykové verze, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
 | Název pravidla | ID pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 verze |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_style_expression_bodied_methods | IDE0022 | C# 6.0 + | FALSE: žádné | 15.3 |
 | csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0 + | FALSE: žádné | 15.3 |
 | csharp_style_expression_bodied_operators | IDE0023 a IDE0024 | C# 7.0 + | FALSE: žádné | 15.3 |
@@ -1219,7 +1217,7 @@ Pravidla stylu v této části se týkají předvolby výrazu úrovni, včetně 
 V následující tabulce jsou uvedeny název pravidla, ID pravidla, příslušné jazykové verze, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
 | Název pravidla | ID pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 verze |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_prefer_simple_default_expression | IDE0034 | C# 7.1 + | true: návrh | 15.3 |
 | csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0 + | true: návrh | 15.5 |
 | csharp_style_pattern_local_over_anonymous_function | IDE0039 | C# 7.0 + | true: návrh | 15.5 |
@@ -1354,7 +1352,7 @@ Toto pravidlo stylu se týká použití složené závorky `{ }` ohraničit blok
 V následující tabulce jsou uvedeny název pravidla, ID pravidla, příslušné jazykové verze, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
 | Název pravidla | ID pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 verze |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_prefer_braces | IDE0011 | C# | true: žádné | 15.3 |
 
 **csharp\_prefer\_braces**
@@ -1433,8 +1431,8 @@ Tato pravidla formátování se týká umístění System.* pomocí direktivy s 
 V následující tabulce jsou uvedeny název pravidla, použitelné jazyky, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
 | Název pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 verze |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| dotnet_sort_system_directives_first |  C# a Visual Basic | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| dotnet_sort_system_directives_first | C# a Visual Basic | true | 15.3 |
 
 **dotnet\_sort\_system\_directives_first**
 
@@ -1474,14 +1472,14 @@ Tato pravidla formátování se týkají používání nových řádků pro form
 V následující tabulce jsou uvedeny "nový řádek" názvy pravidel použitelné jazyky, výchozí hodnoty a nejprve podporovanou verzi sady Visual Studio:
 
 | Název pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 verze |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_new_line_before_open_brace |  C# | všechny | 15.3  |
-| csharp_new_line_before_else |  C# | true | 15.3  |
-| csharp_new_line_before_catch |  C# | true | 15.3  |
-| csharp_new_line_before_finally |  C# | true | 15.3  |
-| csharp_new_line_before_members_in_object_initializers |  C# | true | 15.3  |
-| csharp_new_line_before_members_in_anonymous_types |  C# | true | 15.3  |
-| csharp_new_line_between_query_expression_clauses |  C# | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_new_line_before_open_brace | C# | všechny | 15.3 |
+| csharp_new_line_before_else | C# | true | 15.3 |
+| csharp_new_line_before_catch | C# | true | 15.3 |
+| csharp_new_line_before_finally | C# | true | 15.3 |
+| csharp_new_line_before_members_in_object_initializers | C# | true | 15.3 |
+| csharp_new_line_before_members_in_anonymous_types | C# | true | 15.3 |
+| csharp_new_line_between_query_expression_clauses | C# | true | 15.3 |
 
 **csharp\_new\_line\_before\_open_brace**
 
@@ -1673,10 +1671,10 @@ Tato pravidla formátování se týkají používání odsazení formátovat kó
 Následující tabulka uvádí názvy pravidel, použitelné jazyky, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
 | Název pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 verze |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_indent_case_contents |  C# | true | 15.3  |
-| csharp_indent_switch_labels |  C# | true | 15.3  |
-| csharp_indent_labels |  C# | no_change | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_indent_case_contents | C# | true | 15.3 |
+| csharp_indent_switch_labels | C# | true | 15.3 |
+| csharp_indent_labels | C# | no_change | 15.3 |
 
 **csharp\_indent\_case_contents**
 
@@ -1818,18 +1816,18 @@ Tato pravidla formátování se týkají používání znaky mezery pro formáto
 Následující tabulka uvádí názvy pravidel, použitelné jazyky, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
 | Název pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 verze |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_space_after_cast |  C# | false | 15.3  |
-| csharp_space_after_keywords_in_control_flow_statements |  C# | true | 15.3  |
-| csharp_space_between_method_declaration_parameter_ list_parentheses |  C# | false | 15.3  |
-| csharp_space_between_method_call_parameter_list_parentheses |  C# | false | 15.3  |
-| csharp_space_between_parentheses |  C# | false | 15.3  |
-| csharp_space_before_colon_in_inheritance_clause |  C# | true | verzi 15.7  |
-| csharp_space_after_colon_in_inheritance_clause |  C# | true | verzi 15.7  |
-| csharp_space_around_binary_operators |  C# | before_and_after | verzi 15.7  |
-| csharp_space_between_method_declaration_empty_parameter_list_parentheses |  C# | false | verzi 15.7  |
-| csharp_space_between_method_call_name_and_opening_parenthesis |  C# | false | verzi 15.7  |
-| csharp_space_between_method_call_empty_parameter_list_parentheses |  C# | false | verzi 15.7  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_space_after_cast | C# | false | 15.3 |
+| csharp_space_after_keywords_in_control_flow_statements | C# | true | 15.3 |
+| csharp_space_between_method_declaration_parameter_ list_parentheses | C# | false | 15.3 |
+| csharp_space_between_method_call_parameter_list_parentheses | C# | false | 15.3 |
+| csharp_space_between_parentheses | C# | false | 15.3 |
+| csharp_space_before_colon_in_inheritance_clause | C# | true | verzi 15.7 |
+| csharp_space_after_colon_in_inheritance_clause | C# | true | verzi 15.7 |
+| csharp_space_around_binary_operators | C# | before_and_after | verzi 15.7 |
+| csharp_space_between_method_declaration_empty_parameter_list_parentheses | C# | false | verzi 15.7 |
+| csharp_space_between_method_call_name_and_opening_parenthesis | C# | false | verzi 15.7 |
+| csharp_space_between_method_call_empty_parameter_list_parentheses | C# | false | verzi 15.7 |
 
 **csharp\_space\_after_cast**
 
@@ -2121,9 +2119,9 @@ Tato pravidla formátování se týkají používání jednotlivých řádků a 
 Následující tabulka uvádí názvy pravidel, použitelné jazyky, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
 | Název pravidla | Použitelné jazyky | Visual Studio výchozí | Visual Studio 2017 verze |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_preserve_single_line_statements |  C# | true | 15.3  |
-| csharp_preserve_single_line_blocks |  C# | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_preserve_single_line_statements | C# | true | 15.3 |
+| csharp_preserve_single_line_blocks | C# | true | 15.3 |
 
 **csharp_preserve_single_line_statements**
 

@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183014"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867441"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Přizpůsobení souborového úložiště a serializace XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,26 +105,26 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifického pro domén
 ## <a name="understanding-monikers"></a>Principy Monikery  
  Monikery se používá k reprezentování křížové odkazy mezi různé části soubory modelu a diagram. Používají se také v `.diagram` souboru pro odkazování na uzly v souboru modelu. Existují dvě formy moniker:  
   
--   *ID monikery* citovat identifikátor GUID cílového prvku. Příklad:  
+- *ID monikery* citovat identifikátor GUID cílového prvku. Příklad:  
   
-    ```  
-    <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
+  ```  
+  <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
   
-    ```  
+  ```  
   
--   *Kvalifikovaný klíče monikery* identifikovat podle hodnoty určené doménové vlastnost s názvem klíčem monikeru cílového prvku. Moniker jeho nadřazený element ve stromové struktuře vkládání relace má předponu moniker cílového prvku.  
+- *Kvalifikovaný klíče monikery* identifikovat podle hodnoty určené doménové vlastnost s názvem klíčem monikeru cílového prvku. Moniker jeho nadřazený element ve stromové struktuře vkládání relace má předponu moniker cílového prvku.  
   
-     Následující příklady jsou převzaty z DSL existuje ve kterém je doménovou třídu s názvem alb, která má vztah obsažení k doméně třídy s názvem skladby:  
+   Následující příklady jsou převzaty z DSL existuje ve kterém je doménovou třídu s názvem alb, která má vztah obsažení k doméně třídy s názvem skladby:  
   
-    ```  
-    <albumMoniker title="/My Favorites/Jazz after Teatime" />  
-    <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
+  ```  
+  <albumMoniker title="/My Favorites/Jazz after Teatime" />  
+  <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
   
-    ```  
+  ```  
   
-     Kvalifikovaný klíče monikery bude použit, pokud cílová třída obsahuje doménová vlastnost, jehož možnost **je klíčem Monikeru** je nastavena na `true` v **chování serializace Xml**. V tomto příkladu je tato možnost nastavena pro vlastnosti domény v doménové třídy "Album" a "Skladby" s názvem "Title".  
+   Kvalifikovaný klíče monikery bude použit, pokud cílová třída obsahuje doménová vlastnost, jehož možnost **je klíčem Monikeru** je nastavena na `true` v **chování serializace Xml**. V tomto příkladu je tato možnost nastavena pro vlastnosti domény v doménové třídy "Album" a "Skladby" s názvem "Title".  
   
- Jsou tyto monikery kvalifikovaný klíče čitelnější než ID monikery. Pokud máte v plánu XML soubory modelu čtení osobami, zvažte použití kvalifikovaný zástupných názvů klíčů. Nicméně je možné pro uživatele nastavit více než jeden element stejný klíč moniker. Duplicitní klíče může způsobit, že není soubor znovu načíst správně. Proto pokud definujete doménovou třídou, která je popsána pomocí kvalifikovaného zástupných názvů klíčů, měli byste zvážit způsoby, jak uživateli zabránit v uložení souboru, který má duplicitní monikery.  
+  Jsou tyto monikery kvalifikovaný klíče čitelnější než ID monikery. Pokud máte v plánu XML soubory modelu čtení osobami, zvažte použití kvalifikovaný zástupných názvů klíčů. Nicméně je možné pro uživatele nastavit více než jeden element stejný klíč moniker. Duplicitní klíče může způsobit, že není soubor znovu načíst správně. Proto pokud definujete doménovou třídou, která je popsána pomocí kvalifikovaného zástupných názvů klíčů, měli byste zvážit způsoby, jak uživateli zabránit v uložení souboru, který má duplicitní monikery.  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Chcete-li nastavit doménová třída může odkazovat monikery ID  
   

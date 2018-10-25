@@ -16,12 +16,12 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 06d23b6d936b981cf44dbff74c3a39cdf74e53ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852255"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Vlastní uživatelské rozhraní (balíček VSPackage správy zdrojového kódu)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ VSPackage deklaruje jeho položky nabídky a příslušné stavy výchozí soubo
   
  Následující seznam obsahuje rozhraní ovlivněnému v aktivním stavu balíčku VSPackage správy zdrojového kódu:  
   
--   Sledování událostí dokumenty projektu.  
+- Sledování událostí dokumenty projektu.  
   
--   Řešení události.  
+- Řešení události.  
   
--   Rozhraní trvalého řešení. Pokud je neaktivní, by neměla balíčky zápis do souborů .sln a .suo.  
+- Rozhraní trvalého řešení. Pokud je neaktivní, by neměla balíčky zápis do souborů .sln a .suo.  
   
--   Prvky pro otevřenou vlastnost.  
+- Prvky pro otevřenou vlastnost.  
   
- Požadovaný <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, a také všechny volitelné rozhraní související se správou zdrojového kódu nejsou volána, když ovládací prvek zdroje balíčku VSPackage je neaktivní.  
+  Požadovaný <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, a také všechny volitelné rozhraní související se správou zdrojového kódu nejsou volána, když ovládací prvek zdroje balíčku VSPackage je neaktivní.  
   
- Když [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] spustí rozhraní IDE, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nastaví kontext příkaz uživatelského rozhraní na ID ovládacího prvku zdroje aktuální výchozí ID balíčku VSPackage. To způsobí, že statické uživatelského ovládacího prvku aktivní zdroje balíčku VSPackage se zobrazí v integrovaném vývojovém prostředí bez skutečně načtení sady VSPackage. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pozastaví VSPackage k registraci ve službě [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> předtím, než provede všechna volání do sady VSPackage.  
+  Když [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] spustí rozhraní IDE, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nastaví kontext příkaz uživatelského rozhraní na ID ovládacího prvku zdroje aktuální výchozí ID balíčku VSPackage. To způsobí, že statické uživatelského ovládacího prvku aktivní zdroje balíčku VSPackage se zobrazí v integrovaném vývojovém prostředí bez skutečně načtení sady VSPackage. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pozastaví VSPackage k registraci ve službě [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> předtím, než provede všechna volání do sady VSPackage.  
   
- Následující tabulka popisuje konkrétní podrobnosti o tom, jak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] skryje různé položky uživatelského rozhraní IDE.  
+  Následující tabulka popisuje konkrétní podrobnosti o tom, jak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] skryje různé položky uživatelského rozhraní IDE.  
   
 |Položka uživatelského rozhraní|Popis|  
 |-------------|-----------------|  

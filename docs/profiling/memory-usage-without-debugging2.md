@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b19b0c8371cc4f3b496255e37f06f7b1cbc1fa9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827727"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analýza využití paměti bez ladicího programu sady Visual Studio
 Můžete použít **využití paměti** nástroje bez ladění můžete provádět následující  
   
--   Sledování vaší aplikace paměti při vývoji scénáři použít přímo v sadě Visual Studio.  
+- Sledování vaší aplikace paměti při vývoji scénáři použít přímo v sadě Visual Studio.  
   
--   Vytvořte podrobný snímek stavu paměti aplikace.  
+- Vytvořte podrobný snímek stavu paměti aplikace.  
   
--   Porovnejte snímky k nalezení původní příčiny problémů s pamětí.  
+- Porovnejte snímky k nalezení původní příčiny problémů s pamětí.  
   
- V současné době k měření využití paměti pro aplikace .NET Core, musíte použít nástroj s připojeným ladícím nástrojem. Pro další spravované a nativní aplikace, můžete pomocí nástroje s nebo bez ladicí program připojený. Snímky obrazovky v tomto tématu ukazují aplikace UPW XAML. Pokud chcete analyzovat využití paměti v aplikaci pro UPW, která používá JavaScript a HTML naleznete v tématu [analýza využití paměti (JavaScript)](../profiling/javascript-memory.md).
+  V současné době k měření využití paměti pro aplikace .NET Core, musíte použít nástroj s připojeným ladícím nástrojem. Pro další spravované a nativní aplikace, můžete pomocí nástroje s nebo bez ladicí program připojený. Snímky obrazovky v tomto tématu ukazují aplikace UPW XAML. Pokud chcete analyzovat využití paměti v aplikaci pro UPW, která používá JavaScript a HTML naleznete v tématu [analýza využití paměti (JavaScript)](../profiling/javascript-memory.md).
   
 ## <a name="start-a-memory-usage-diagnostic-session"></a>Spuštění diagnostické relace využití paměti  
   
@@ -69,13 +69,13 @@ Můžete použít **využití paměti** nástroje bez ladění můžete provád�
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Zobrazení snímku využití paměti  
  Pomocí zobrazení snímku v nových oknech sady Visual Studio otevřete podrobné sestavy. Existují dva druhy zobrazení snímku:  
   
--   A [snímku podrobnosti sestavy](#snapshot-reports) ukazuje typy a instance v jeden snímek.  
+- A [snímku podrobnosti sestavy](#snapshot-reports) ukazuje typy a instance v jeden snímek.  
   
--   A [rozdíl (rozdíl) sestavy snímků](#snapshot-difference-diff-reports) porovnává typy a instance v dvěma snímky.  
+- A [rozdíl (rozdíl) sestavy snímků](#snapshot-difference-diff-reports) porovnává typy a instance v dvěma snímky.  
   
- ![Zobrazit odkazy na pořízení snímku](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Zobrazit odkazy na pořízení snímku](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Číslované položky obrázku zobrazení snímku jsou odkazy, které otevřete zobrazení sestav využití paměti.  
+  Číslované položky obrázku zobrazení snímku jsou odkazy, které otevřete zobrazení sestav využití paměti.  
   
 |||  
 |-|-|  

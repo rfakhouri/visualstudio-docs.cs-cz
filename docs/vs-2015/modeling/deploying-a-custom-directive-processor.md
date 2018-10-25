@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251950"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836395"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Nastavení vlastního procesoru direktiv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ Použití vlastního procesoru direktiv v [!INCLUDE[vsprvs](../includes/vsprvs-m
   
  Alternativní metody jsou následující:  
   
--   [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Tato metoda poskytuje způsob, jak nainstalovat a odinstalovat procesor direktiv ve vašem vlastním počítači i v jiných počítačích. Zpravidla můžete do stejného rozšíření VSIX zabalit jiné funkce.  
+- [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Tato metoda poskytuje způsob, jak nainstalovat a odinstalovat procesor direktiv ve vašem vlastním počítači i v jiných počítačích. Zpravidla můžete do stejného rozšíření VSIX zabalit jiné funkce.  
   
--   [VSPackage](../extensibility/internals/vspackages.md). Pokud definujete VSPackage obsahující kromě procesoru direktiv i jiné funkce, lze procesor direktiv pohodlně zaregistrovat.  
+- [VSPackage](../extensibility/internals/vspackages.md). Pokud definujete VSPackage obsahující kromě procesoru direktiv i jiné funkce, lze procesor direktiv pohodlně zaregistrovat.  
   
--   Nastavení klíče registru: Pomocí této metody přidáte položku registru pro procesor direktiv.  
+- Nastavení klíče registru: Pomocí této metody přidáte položku registru pro procesor direktiv.  
   
- Je třeba použít jednu z těchto metod pouze v případě, že chcete transformovat textovou šablony v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nebo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Pokud ve své aplikaci používáte vlastního hostitele, je tento vlastní hostitel odpovědný za vyhledání procesoru direktiv pro jednotlivé direktivy.  
+  Je třeba použít jednu z těchto metod pouze v případě, že chcete transformovat textovou šablony v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nebo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Pokud ve své aplikaci používáte vlastního hostitele, je tento vlastní hostitel odpovědný za vyhledání procesoru direktiv pro jednotlivé direktivy.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Nasazení procesoru direktiv v rozšíření VSIX  
  Můžete přidat vlastní procesor směrnice do [rozšíření aplikace Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Přitom musíte zajistit, aby v souboru .vsix byly obsaženy následující dvě položky:  
   
--   Sestavení (.dll), které obsahuje třídu vlastního procesoru direktiv  
+- Sestavení (.dll), které obsahuje třídu vlastního procesoru direktiv  
   
--   Soubor .pkgdef, který registruje procesor direktiv Kořenový název tohoto souboru musí být stejný jako sestavení. Soubory mohou mít například název CDP.dll a CDP.pkgdef.  
+- Soubor .pkgdef, který registruje procesor direktiv Kořenový název tohoto souboru musí být stejný jako sestavení. Soubory mohou mít například název CDP.dll a CDP.pkgdef.  
   
- Chcete-li zkontrolovat nebo změnit obsah souboru .vsix, změňte jeho příponu na .zip a pak jej otevřete. Po úpravě obsahu změňte příponu souboru zpět na .vsix.  
+  Chcete-li zkontrolovat nebo změnit obsah souboru .vsix, změňte jeho příponu na .zip a pak jej otevřete. Po úpravě obsahu změňte příponu souboru zpět na .vsix.  
   
- Soubor .vsix lze vytvořit několika způsoby. Jednu metodu popisuje následující postup.  
+  Soubor .vsix lze vytvořit několika způsoby. Jednu metodu popisuje následující postup.  
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Vývoj vlastního procesoru direktiv v projektu VSIX  
   
@@ -167,27 +167,27 @@ Použití vlastního procesoru direktiv v [!INCLUDE[vsprvs](../includes/vsprvs-m
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Registrace procesoru direktiv nastavením klíče registru  
   
-1.  Spustit `regedit`.  
+1. Spustit `regedit`.  
   
-2.  V editoru registru přejděte na  
+2. V editoru registru přejděte na  
   
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     Pokud chcete nainstalovat procesor direktiv v experimentální verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], za "11.0" vložte "Exp".  
+    Pokud chcete nainstalovat procesor direktiv v experimentální verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], za "11.0" vložte "Exp".  
   
-3.  Přidejte klíč registru, který má stejný název jako třída procesoru direktiv.  
+3. Přidejte klíč registru, který má stejný název jako třída procesoru direktiv.  
   
-    -   Ve stromové struktuře registru klikněte pravým tlačítkem **DirectiveProcessors** uzlu, přejděte na **nový**a potom klikněte na tlačítko **klíč**.  
+   -   Ve stromové struktuře registru klikněte pravým tlačítkem **DirectiveProcessors** uzlu, přejděte na **nový**a potom klikněte na tlačítko **klíč**.  
   
-4.  V novém uzlu přidejte podle následujících tabulek řetězcové hodnoty Class a CodeBase nebo Assembly.  
+4. V novém uzlu přidejte podle následujících tabulek řetězcové hodnoty Class a CodeBase nebo Assembly.  
   
-    1.  Klikněte pravým tlačítkem na uzel, který jste vytvořili, přejděte na **nový**a potom klikněte na tlačítko **řetězcovou hodnotu**.  
+   1.  Klikněte pravým tlačítkem na uzel, který jste vytvořili, přejděte na **nový**a potom klikněte na tlačítko **řetězcovou hodnotu**.  
   
-    2.  Upravte název hodnoty.  
+   2.  Upravte název hodnoty.  
   
-    3.  Dvakrát klikněte na název a upravte data.  
+   3.  Dvakrát klikněte na název a upravte data.  
   
- Pokud vlastní procesor direktiv není v mezipaměti GAC, měly by podklíče registru vypadat podle následující tabulky:  
+   Pokud vlastní procesor direktiv není v mezipaměti GAC, měly by podklíče registru vypadat podle následující tabulky:  
   
 |Název|Typ|Data|  
 |----------|----------|----------|  

@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226303"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863591"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Používání 3D prostředků ve hře nebo aplikaci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,18 +57,18 @@ Tento článek popisuje, jak můžete [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 #### <a name="to-add-an-asset-to-your-build"></a>Přidání prostředků vašeho sestavení  
   
-1.  V **Průzkumníka řešení**ve vašem projektu otevřete místní nabídku aktiva a klikněte na tlačítko **vlastnosti**. Asset **stránku vlastností** se zobrazí dialogové okno.  
+1. V **Průzkumníka řešení**ve vašem projektu otevřete místní nabídku aktiva a klikněte na tlačítko **vlastnosti**. Asset **stránku vlastností** se zobrazí dialogové okno.  
   
-2.  Ujistěte se, že **konfigurace** a **platformy** vlastnosti jsou nastaveny na hodnoty, které chcete použít pro své změny.  
+2. Ujistěte se, že **konfigurace** a **platformy** vlastnosti jsou nastaveny na hodnoty, které chcete použít pro své změny.  
   
-3.  V části **vlastnosti konfigurace**, zvolte **Obecné**a poté v mřížce vlastností v rámci **Obecné**, nastavte **typ položky** vlastnost odpovídající obsahu kanálu typu položky. Například soubor obrázku nebo textury, zvolte možnost **kanál obsahu obrazu**.  
+3. V části **vlastnosti konfigurace**, zvolte **Obecné**a poté v mřížce vlastností v rámci **Obecné**, nastavte **typ položky** vlastnost odpovídající obsahu kanálu typu položky. Například soubor obrázku nebo textury, zvolte možnost **kanál obsahu obrazu**.  
   
-    > [!IMPORTANT]
-    >  Ve výchozím nastavení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] předpokládá, že mnoho druhů obrazových souborů zařadit pomocí **Image** typ, který je součástí položky [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Proto budete muset změnit **typ položky** vlastnosti každého obrázku, který má být zpracován kanálem obsahu obrázku. Jiné typy obsahu kanálu zdrojové soubory pro 3D modely a vizuálních shaderů grafiky výchozích hodnot **typ položky**.  
+   > [!IMPORTANT]
+   >  Ve výchozím nastavení [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] předpokládá, že mnoho druhů obrazových souborů zařadit pomocí **Image** typ, který je součástí položky [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Proto budete muset změnit **typ položky** vlastnosti každého obrázku, který má být zpracován kanálem obsahu obrázku. Jiné typy obsahu kanálu zdrojové soubory pro 3D modely a vizuálních shaderů grafiky výchozích hodnot **typ položky**.  
   
-4.  Zvolte **OK** tlačítko.  
+4. Zvolte **OK** tlačítko.  
   
- Tady jsou tři typy zřetězených položek obsahu a jejich přiřazeného zdroje a výstupní typy souborů.  
+   Tady jsou tři typy zřetězených položek obsahu a jejich přiřazeného zdroje a výstupní typy souborů.  
   
 |Typ položky|Typy zdrojových souborů|Formát výstupního souboru|  
 |---------------|-----------------------|------------------------|  

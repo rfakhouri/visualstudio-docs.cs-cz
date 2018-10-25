@@ -17,12 +17,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ad3c479349b698283fcb3a7145dcfc3948254b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836733"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Přidání příkazu do panelu nástrojů Průzkumník řešení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,41 +87,41 @@ Tento návod ukazuje, jak přidat tlačítko **Průzkumníka řešení** nástro
   
 #### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>K zobrazení tlačítka, když jsou otevřené jeden nebo více projektů  
   
-1.  V `<Buttons>` části ToolbarButtonPackage.vsct, přidejte dvě příznaků příkazů ke stávající `<Button>` elementu, mezi `<Strings>` a `<Icons>` značky.  
+1. V `<Buttons>` části ToolbarButtonPackage.vsct, přidejte dvě příznaků příkazů ke stávající `<Button>` elementu, mezi `<Strings>` a `<Icons>` značky.  
   
-    ```xml  
-    <CommandFlag>DefaultInvisible</CommandFlag>  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DefaultInvisible</CommandFlag>  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-     `DefaultInvisible` a `DynamicVisibility` příznaky musí být nastaven tak této položky `<VisibilityConstraints>` oddíl se projeví.  
+    `DefaultInvisible` a `DynamicVisibility` příznaky musí být nastaven tak této položky `<VisibilityConstraints>` oddíl se projeví.  
   
-2.  Vytvoření `<VisibilityConstraints>` oddíl, který má dva `<VisibilityItem>` položky. Vložit nový oddíl bezprostředně po zavření `</Commands>` značky.  
+2. Vytvoření `<VisibilityConstraints>` oddíl, který má dva `<VisibilityItem>` položky. Vložit nový oddíl bezprostředně po zavření `</Commands>` značky.  
   
-    ```xml  
-    <VisibilityConstraints>  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasSingleProject" />  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasMultipleProjects" />  
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasSingleProject" />  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasMultipleProjects" />  
+   </VisibilityConstraints>  
+   ```  
   
-     Každá položka viditelnost představuje podmínku, pod kterým se zobrazí určeného tlačítka. Chcete-li použít více podmínek, musíte vytvořit několik záznamů pro stejný tlačítko.  
+    Každá položka viditelnost představuje podmínku, pod kterým se zobrazí určeného tlačítka. Chcete-li použít více podmínek, musíte vytvořit několik záznamů pro stejný tlačítko.  
   
-3.  Sestavte projekt a spusťte ladění. Zobrazí se experimentální instance.  
+3. Sestavte projekt a spusťte ladění. Zobrazí se experimentální instance.  
   
-     **Průzkumníka řešení** panelu nástrojů tlačítko přeškrtnout neobsahuje.  
+    **Průzkumníka řešení** panelu nástrojů tlačítko přeškrtnout neobsahuje.  
   
-4.  Otevřete jakéhokoli řešení, které obsahuje projekt.  
+4. Otevřete jakéhokoli řešení, které obsahuje projekt.  
   
-     Na panelu nástrojů vpravo od existující tlačítka se zobrazí strikethrough tlačítko.  
+    Na panelu nástrojů vpravo od existující tlačítka se zobrazí strikethrough tlačítko.  
   
-5.  Na **souboru** nabídky, klikněte na tlačítko **zavřít řešení**. Tlačítko dané zařízení zmizí z panelu nástrojů.  
+5. Na **souboru** nabídky, klikněte na tlačítko **zavřít řešení**. Tlačítko dané zařízení zmizí z panelu nástrojů.  
   
- Řídí, zda tlačítko [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dokud načtení sady VSPackage. Po načtení sady VSPackage, zda tlačítko je řízena sady VSPackage.  Další informace najdete v tématu [MenuCommands Vs. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
+   Řídí, zda tlačítko [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dokud načtení sady VSPackage. Po načtení sady VSPackage, zda tlačítko je řízena sady VSPackage.  Další informace najdete v tématu [MenuCommands Vs. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)

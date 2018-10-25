@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1a812575d14ef6595d58cc3ecc5d9f94b8f5635
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 642f46e9497e20cd8a8276265fb434c5bd7522bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231279"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851171"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>Začínáme s rozšiřitelností ladicího programu
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Poskytuje informace, které potřebujete k vytváření a přizpůsobování umožňuje ladit programy v rámci komponenty ladicího programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí.  
@@ -31,11 +31,11 @@ ms.locfileid: "39231279"
   
  Na co nejlíp využít [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], měli byste se seznámit s následujícími položkami:  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrované vývojové prostředí (IDE)  
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrované vývojové prostředí (IDE)  
   
--   Programovací jazyk C++  
+- Programovací jazyk C++  
   
--   KNIHOVNY ATL MODELU COM  
+- KNIHOVNY ATL MODELU COM  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Plán pro rozšíření ladicího programu](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  

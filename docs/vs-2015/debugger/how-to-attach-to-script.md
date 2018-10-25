@@ -24,12 +24,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b86987554a3cd39d96a44f1f0c3396a1c32b98fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08a82442d4e7eed160c6ec83d67c498073b42ac9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852554"
 ---
 # <a name="how-to-attach-to-script"></a>Postupy: Připojení ke skriptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,35 +38,35 @@ Toto téma vysvětluje, jak ručně připojit ladicí program sady Visual Studio
   
 ### <a name="to-attach-to-a-running-process"></a>Připojit ke spuštěnému procesu  
   
-1.  Na **ladění** nabídce zvolte **připojit k procesu**. (Pokud není otevřený žádný projekt, zvolte **připojit k procesu** na **nástroje** nabídky.)  
+1. Na **ladění** nabídce zvolte **připojit k procesu**. (Pokud není otevřený žádný projekt, zvolte **připojit k procesu** na **nástroje** nabídky.)  
   
-2.  V **připojit k procesu** dialogové okno, podívejte se **procesy k dispozici** seznam a vyhledejte zpracovat skript, můžete ke kterému chcete připojit k. Procesy skriptu můžete identifikovat pohledem **typ** sloupce.  
+2. V **připojit k procesu** dialogové okno, podívejte se **procesy k dispozici** seznam a vyhledejte zpracovat skript, můžete ke kterému chcete připojit k. Procesy skriptu můžete identifikovat pohledem **typ** sloupce.  
   
-    1.  Pokud je proces, který chcete ladit spuštěn na jiném počítači, musíte nejprve vybrat vzdálený počítač. Další informace najdete v tématu [postupy: výběr vzdáleného počítače](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1.  Pokud je proces, který chcete ladit spuštěn na jiném počítači, musíte nejprve vybrat vzdálený počítač. Další informace najdete v tématu [postupy: výběr vzdáleného počítače](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
-    2.  Pokud je proces spuštěn pod účtem jiného uživatele, vyberte **Zobrazit procesy všech uživatelů** zaškrtávací políčko.  
+   2.  Pokud je proces spuštěn pod účtem jiného uživatele, vyberte **Zobrazit procesy všech uživatelů** zaškrtávací políčko.  
   
-    3.  Pokud jste připojeni přes **připojení ke vzdálené ploše**, vyberte **Zobrazit procesy ve všech relacích** zaškrtávací políčko.  
+   3.  Pokud jste připojeni přes **připojení ke vzdálené ploše**, vyberte **Zobrazit procesy ve všech relacích** zaškrtávací políčko.  
   
-3.  Klikněte na tlačítko, které chcete připojit k procesu.  
+3. Klikněte na tlačítko, které chcete připojit k procesu.  
   
-4.  V **připojit k** pole, měli byste vidět **kód skriptu** nebo **automatické: kód skriptu**. Pokud se zobrazí cokoli jiného, postupujte podle těchto kroků:  
+4. V **připojit k** pole, měli byste vidět **kód skriptu** nebo **automatické: kód skriptu**. Pokud se zobrazí cokoli jiného, postupujte podle těchto kroků:  
   
-    1.  Klikněte na tlačítko **vyberte**.  
+   1.  Klikněte na tlačítko **vyberte**.  
   
-    2.  V **vybrat typ kódu** dialogové okno, klikněte na tlačítko **ladit tyto typy kódu** a vyberte **skript**.  
+   2.  V **vybrat typ kódu** dialogové okno, klikněte na tlačítko **ladit tyto typy kódu** a vyberte **skript**.  
   
-    3.  Klikněte na tlačítko **OK**.  
+   3.  Klikněte na tlačítko **OK**.  
   
-5.  Klikněte na tlačítko **připojit**.  
+5. Klikněte na tlačítko **připojit**.  
   
-     V tomto okamžiku může zobrazit upozornění oznamující, že je v aplikaci Internet Explorer zakázáno ladění skriptů. Pokud k tomu dojde, přečtěte si téma [upozornění: ladění skriptů zakázáno](../debugger/warning-script-debugging-disabled.md).  
+    V tomto okamžiku může zobrazit upozornění oznamující, že je v aplikaci Internet Explorer zakázáno ladění skriptů. Pokud k tomu dojde, přečtěte si téma [upozornění: ladění skriptů zakázáno](../debugger/warning-script-debugging-disabled.md).  
   
- **Procesy k dispozici** seznam se automaticky zobrazí při otevření **procesy** dialogové okno. Procesy můžete spouštět a zastavovat na pozadí při otevřeném dialogovém okně. Proto obsah nemusí být vždy aktuální. Můžete aktualizovat seznam kdykoli zobrazit aktuální seznam procesů stisknutím kombinace kláves **aktualizovat** tlačítko.  
+   **Procesy k dispozici** seznam se automaticky zobrazí při otevření **procesy** dialogové okno. Procesy můžete spouštět a zastavovat na pozadí při otevřeném dialogovém okně. Proto obsah nemusí být vždy aktuální. Můžete aktualizovat seznam kdykoli zobrazit aktuální seznam procesů stisknutím kombinace kláves **aktualizovat** tlačítko.  
   
- Můžete být připojení k více programům při ladění, ale pouze jeden program je v každém okamžiku aktivní v ladicím programu. Nastavit aktivní program na panelu nástrojů umístění ladění. Další informace najdete v tématu [postupy: nastavení aktuálního procesu](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+   Můžete být připojení k více programům při ladění, ale pouze jeden program je v každém okamžiku aktivní v ladicím programu. Nastavit aktivní program na panelu nástrojů umístění ladění. Další informace najdete v tématu [postupy: nastavení aktuálního procesu](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
   
- Všechny **ladění** provádění příkazy vliv na aktivní program. V dialogovém okně procesy můžete přerušit všechny ladícího programu. Zobrazit [pomocí zarážek](../debugger/using-breakpoints.md).  
+   Všechny **ladění** provádění příkazy vliv na aktivní program. V dialogovém okně procesy můžete přerušit všechny ladícího programu. Zobrazit [pomocí zarážek](../debugger/using-breakpoints.md).  
   
 > [!NOTE]
 >  Pokud se pokusíte připojit k procesu, který je vlastněn nedůvěryhodným uživatelským účtem, zobrazí se potvrzovací dialogové okno s upozorněním zabezpečení. Další informace najdete v tématu [upozornění zabezpečení: připojení k procesu vlastněnému nedůvěryhodným uživatelským může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  

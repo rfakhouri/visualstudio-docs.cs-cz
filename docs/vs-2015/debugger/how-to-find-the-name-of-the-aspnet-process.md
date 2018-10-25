@@ -22,25 +22,25 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6b036fdd9f75afc0c9976591ae0df23194b196d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 223e060083554169ab6ffdb95faf4979e9466d02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268902"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825618"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Postupy: Hledání názvu procesu ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Připojit ke spuštěnému [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikace, musíte znát název [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu:  
   
--   Pokud používáte IIS 6.0 a IIS 7.0, je název w3wp.exe.  
+- Pokud používáte IIS 6.0 a IIS 7.0, je název w3wp.exe.  
   
--   Pokud používáte starší verzi služby IIS, je název aspnet_wp.exe.  
+- Pokud používáte starší verzi služby IIS, je název aspnet_wp.exe.  
   
- Pro aplikace vytvořené s použitím [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] nebo novější verze [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kódu můžete jsou umístěny v systému souborů a spustit na serveru test WebDev.WebServer.exe. V takovém případě je nutné připojit k WebDev.WebServer.exe místo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu. Tento scénář platí pouze pro místní ladění.  
+  Pro aplikace vytvořené s použitím [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] nebo novější verze [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kódu můžete jsou umístěny v systému souborů a spustit na serveru test WebDev.WebServer.exe. V takovém případě je nutné připojit k WebDev.WebServer.exe místo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu. Tento scénář platí pouze pro místní ladění.  
   
- Starší aplikace ASP spustit uvnitř inetinfo.exe procesu služby IIS, když jsou spuštěné v rámci procesu.  
+  Starší aplikace ASP spustit uvnitř inetinfo.exe procesu služby IIS, když jsou spuštěné v rámci procesu.  
   
 > [!NOTE]
 >  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

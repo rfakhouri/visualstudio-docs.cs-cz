@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2054181bfd34e9f9382391c879030e147ce2b8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878450"
 ---
 # <a name="filtering-report-views"></a>Filtrování zobrazení sestav
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,19 +53,19 @@ Filtry můžete použít profilování datové soubory pro omezení, která se z
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Chcete-li vytvořit filtr sestavy profileru v zobrazení sestavy značky  
   
-1.  Vyberte **značky** z **aktuální zobrazení** seznamu na panelu nástrojů zobrazení sestav výkonu.  
+1. Vyberte **značky** z **aktuální zobrazení** seznamu na panelu nástrojů zobrazení sestav výkonu.  
   
-     Zobrazí se sestavy profileru značky.  
+    Zobrazí se sestavy profileru značky.  
   
-2.  Vyberte trasování událostí pro Windows nebo vzorkování, i, kterou chcete použít jako výchozí bod sestavě.  
+2. Vyberte trasování událostí pro Windows nebo vzorkování, i, kterou chcete použít jako výchozí bod sestavě.  
   
-3.  Stiskněte a podržte klávesu CTRL a klikněte na událost, kterou chcete použít jako koncový bod sestavy.  
+3. Stiskněte a podržte klávesu CTRL a klikněte na událost, kterou chcete použít jako koncový bod sestavy.  
   
-4.  Klikněte pravým tlačítkem a pak klikněte na jednu z následujících možností:  
+4. Klikněte pravým tlačítkem a pak klikněte na jednu z následujících možností:  
   
-    -   **Přidat filtr na značky** vytvoří klauzulí filtru, které používají sloupec označit jako pole filtru.  
+   - **Přidat filtr na značky** vytvoří klauzulí filtru, které používají sloupec označit jako pole filtru.  
   
-    -   **Přidat filtr na časová razítka** vytvoří klauzulí filtru, které používají sloupec časového razítka v milisekundách jako pole filtru.  
+   - **Přidat filtr na časová razítka** vytvoří klauzulí filtru, které používají sloupec časového razítka v milisekundách jako pole filtru.  
   
      Tyto dvě možnosti filtrovat aktuální soubor dat na stejný počáteční a koncový bod. Možnost může být lepší, když exportujete filtru pro použití v jiných sestavách.  
   

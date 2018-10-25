@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9edfae9eb2109a81208cd864dd992dee565f7958
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 6718c3390e26b0949d26805e24bcffb17e4c6deb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872431"
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 Můžete ladit aplikace Visual Studio, který byl nasazen na jiný počítač. K tomu použijete vzdálený ladicí program sady Visual Studio.
@@ -95,25 +95,25 @@ Pro ladění v technologii ASP.NET a jiné prostředí serveru, musíte buď spu
 
  Pokud chcete nakonfigurovat vzdálený ladicí program jako službu, postupujte podle těchto kroků.
 
-1.  Najít **Průvodce konfigurací vzdáleného ladicího programu** (rdbgwiz.exe). (To je samostatná aplikace od vzdáleného ladicího programu.) Je dostupná jenom při instalaci nástrojů remote tools. Nenainstaluje se sadou Visual Studio.
+1. Najít **Průvodce konfigurací vzdáleného ladicího programu** (rdbgwiz.exe). (To je samostatná aplikace od vzdáleného ladicího programu.) Je dostupná jenom při instalaci nástrojů remote tools. Nenainstaluje se sadou Visual Studio.
 
-2.  Spustíte Průvodce konfigurací. Po první stránka se zobrazí, klikněte na tlačítko **Další**.
+2. Spustíte Průvodce konfigurací. Po první stránka se zobrazí, klikněte na tlačítko **Další**.
 
-3.  Zkontrolujte, **spustit Visual Studio 2015 vzdálený ladicí program jako službu** zaškrtávací políčko.
+3. Zkontrolujte, **spustit Visual Studio 2015 vzdálený ladicí program jako službu** zaškrtávací políčko.
 
-4.  Přidáte název uživatelského účtu a hesla.
+4. Přidáte název uživatelského účtu a hesla.
 
-     Budete muset přidat **přihlásit jako službu** uživatele přímo k tomuto účtu (Najít **místní zásady zabezpečení** (secpol.msc) v **Start** stránky nebo okna (nebo typ  **secpol** z příkazového řádku). Po zobrazení dialogového okna, dvakrát klikněte na panel **přiřazení uživatelských práv**, vyhledejte **přihlásit jako službu** v pravém podokně. Poklepejte na něj. Přidat uživatelský účet **vlastnosti** okno a klikněte na tlačítko **OK**). Klikněte na tlačítko **Další**.
+    Budete muset přidat **přihlásit jako službu** uživatele přímo k tomuto účtu (Najít **místní zásady zabezpečení** (secpol.msc) v **Start** stránky nebo okna (nebo typ  **secpol** z příkazového řádku). Po zobrazení dialogového okna, dvakrát klikněte na panel **přiřazení uživatelských práv**, vyhledejte **přihlásit jako službu** v pravém podokně. Poklepejte na něj. Přidat uživatelský účet **vlastnosti** okno a klikněte na tlačítko **OK**). Klikněte na tlačítko **Další**.
 
-5.  Vyberte typ sítě, mají komunikovat nástroje remote tools. Musí být vybrán alespoň jeden typ sítě. Pokud jsou počítače připojené do domény, měli byste zvolit první položku. Pokud jsou tyto počítače připojeny přes domácí nebo pracovní skupině, měli byste zvolit položky druhý nebo třetí. Klikněte na tlačítko **Další**.
+5. Vyberte typ sítě, mají komunikovat nástroje remote tools. Musí být vybrán alespoň jeden typ sítě. Pokud jsou počítače připojené do domény, měli byste zvolit první položku. Pokud jsou tyto počítače připojeny přes domácí nebo pracovní skupině, měli byste zvolit položky druhý nebo třetí. Klikněte na tlačítko **Další**.
 
-6.  Pokud tuto službu můžete spustit, zobrazí se **byly úspěšně dokončeny Visual Studio Debugger Průvodce konfigurací vzdáleného**. Pokud službu nelze spustit, zobrazí se **se nepodařilo dokončit Visual Studio Debugger Průvodce konfigurací vzdáleného**. Stránce se zobrazuje také několik tipů pro získání služba spustí.
+6. Pokud tuto službu můžete spustit, zobrazí se **byly úspěšně dokončeny Visual Studio Debugger Průvodce konfigurací vzdáleného**. Pokud službu nelze spustit, zobrazí se **se nepodařilo dokončit Visual Studio Debugger Průvodce konfigurací vzdáleného**. Stránce se zobrazuje také několik tipů pro získání služba spustí.
 
-7.  Klikněte na tlačítko **Dokončit**.
+7. Klikněte na tlačítko **Dokončit**.
 
- V tomto okamžiku vzdálený ladicí program je spuštěn jako služba. Můžete to ověřit tak, že přejdete do **ovládací panely > služby** a hledáte **Visual Studio 2015 vzdálený ladicí program**.
+   V tomto okamžiku vzdálený ladicí program je spuštěn jako služba. Můžete to ověřit tak, že přejdete do **ovládací panely > služby** a hledáte **Visual Studio 2015 vzdálený ladicí program**.
 
- Můžete zastavit a spustit službu vzdálený ladicí program z **ovládací panely > služby**.
+   Můžete zastavit a spustit službu vzdálený ladicí program z **ovládací panely > služby**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Nastavení se vzdálený symboly ladění
 

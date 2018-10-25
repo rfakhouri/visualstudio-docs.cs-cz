@@ -17,12 +17,12 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8beb028ddf2d7a7921c753b39601ee297a75746
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c062ce943e2ee42cd90877827ab7b92ee33c871b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248557"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883650"
 ---
 # <a name="elements-of-a-project-model"></a>Prvky modelu projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,20 +33,20 @@ Rozhraní a implementace všech projektů v [!INCLUDE[vsprvs](../../includes/vsp
   
  Další důležité informace o implementaci:  
   
--   Model jeden projekt může obsahovat více než jeden typ projektu.  
+- Model jeden projekt může obsahovat více než jeden typ projektu.  
   
--   Typy projektů a odebrání dodatečné projektu továren jsou registrovány nezávisle na sobě identifikátory GUID.  
+- Typy projektů a odebrání dodatečné projektu továren jsou registrovány nezávisle na sobě identifikátory GUID.  
   
--   Soubor šablony nebo Průvodce inicializovat nový soubor projektu, když uživatel vytvoří nový projekt přes musí mít každý projekt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] uživatelského rozhraní. Například [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] šablony inicializovat, co se nakonec stanou soubory .vcproj.  
+- Soubor šablony nebo Průvodce inicializovat nový soubor projektu, když uživatel vytvoří nový projekt přes musí mít každý projekt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] uživatelského rozhraní. Například [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] šablony inicializovat, co se nakonec stanou soubory .vcproj.  
   
- Následující obrázek znázorňuje primární rozhraní, služby a objekty, které tvoří implementaci obvyklou pro projekty. Aplikace pomocné rutiny, HierUtil7, můžete použít k vytvoření základní objektů a ostatní programovací často používaný text. Další informace o pomocné rutiny HierUtil7 aplikace najdete v tématu [není v sestavení: použití třídy HierUtil7 projektu k implementaci typu projektu (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+  Následující obrázek znázorňuje primární rozhraní, služby a objekty, které tvoří implementaci obvyklou pro projekty. Aplikace pomocné rutiny, HierUtil7, můžete použít k vytvoření základní objektů a ostatní programovací často používaný text. Další informace o pomocné rutiny HierUtil7 aplikace najdete v tématu [není v sestavení: použití třídy HierUtil7 projektu k implementaci typu projektu (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![Visual Studio projekt modelu grafika](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
-model projektu  
+  ![Visual Studio projekt modelu grafika](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
+  model projektu  
   
- Další informace o rozhraní a služby uvedené v předchozím diagramu a další volitelné rozhraní není zahrnuta v diagramu najdete v tématu [základní komponenty modelu projektu](../../extensibility/internals/project-model-core-components.md).  
+  Další informace o rozhraní a služby uvedené v předchozím diagramu a další volitelné rozhraní není zahrnuta v diagramu najdete v tématu [základní komponenty modelu projektu](../../extensibility/internals/project-model-core-components.md).  
   
- Projekty mohou podporovat příkazy a proto musí implementovat <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní k účasti v příkazu směrování přes příkaz kontextu identifikátory GUID.  
+  Projekty mohou podporovat příkazy a proto musí implementovat <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní k účasti v příkazu směrování přes příkaz kontextu identifikátory GUID.  
   
 ## <a name="see-also"></a>Viz také  
  [Kontrolní seznam: Vytvoření nových typů projektů](../../extensibility/internals/checklist-creating-new-project-types.md)   

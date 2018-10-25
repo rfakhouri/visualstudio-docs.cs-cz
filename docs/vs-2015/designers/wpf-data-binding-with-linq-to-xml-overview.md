@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 985dfb5193082f22431db3384cc6a652f36cfb2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 457a097d46f9af409580d3784bb577090db0c535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852411"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Datová vazba WPF s LINQ to XML přehled
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Toto téma popisuje funkce vazby dynamických dat v <xref:System.Xml.Linq> oboru
   
  Existují dva široké způsobů, kterými můžete pracovat XAML a LINQ to XML:  
   
--   Protože soubory XAML ve správném formátu XML, je možné dotazovat a manipulovat prostřednictvím technologiím, jako je například technologie LINQ to XML.  
+- Protože soubory XAML ve správném formátu XML, je možné dotazovat a manipulovat prostřednictvím technologiím, jako je například technologie LINQ to XML.  
   
--   Protože LINQ to XML dotazy představují zdroj dat, tyto dotazy můžete použít jako zdroj dat pro datovou vazbu pro prvky uživatelského rozhraní WPF.  
+- Protože LINQ to XML dotazy představují zdroj dat, tyto dotazy můžete použít jako zdroj dat pro datovou vazbu pro prvky uživatelského rozhraní WPF.  
   
- Tato dokumentace popisuje druhý scénář.  
+  Tato dokumentace popisuje druhý scénář.  
   
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Datové vazby ve Windows Presentation Foundation  
  Datové vazby WPF umožňuje prvku uživatelského rozhraní pro přidružení jedné z vlastností se zdrojem dat. Je to jednoduchý příklad <xref:System.Windows.Controls.Label> jejichž text představuje hodnotu veřejnou vlastnost do uživatelsky definovaného objektu. Datové vazby WPF spoléhá na následující komponenty:  
@@ -52,13 +52,13 @@ Toto téma popisuje funkce vazby dynamických dat v <xref:System.Xml.Linq> oboru
 ### <a name="dynamic-data-binding-in-wpf"></a>Dynamické datové vazby ve WPF  
  Ve výchozím nastavení datová vazba dochází pouze v případě, že je inicializován cílového prvku uživatelského rozhraní. Tento postup se nazývá *jednorázové* vazby. Pro většinu účelů to nestačí; datové vazby řešení obvykle vyžaduje, že změny rozšířit dynamicky za běhu pomocí jedné z následujících akcí:  
   
--   *Jednosměrná* vazby způsobí, že se změní na jedné straně mohly rozšířit automaticky. Nejčastěji se projeví změny do zdroje do cíle, ale naopak někdy může být užitečné.  
+- *Jednosměrná* vazby způsobí, že se změní na jedné straně mohly rozšířit automaticky. Nejčastěji se projeví změny do zdroje do cíle, ale naopak někdy může být užitečné.  
   
--   V *obousměrný* vazby, změny ve zdroji se automaticky rozšíří do cíle a změny cíle se automaticky rozšíří na zdroji.  
+- V *obousměrný* vazby, změny ve zdroji se automaticky rozšíří do cíle a změny cíle se automaticky rozšíří na zdroji.  
   
- Jednosměrné nebo obousměrné vazby na výskyt, zdroj musí implementovat mechanismus oznámení změn, například implementací <xref:System.ComponentModel.INotifyPropertyChanged> rozhraní nebo pomocí *PropertyNameChanged* vzor pro každou vlastnost podporována.  
+  Jednosměrné nebo obousměrné vazby na výskyt, zdroj musí implementovat mechanismus oznámení změn, například implementací <xref:System.ComponentModel.INotifyPropertyChanged> rozhraní nebo pomocí *PropertyNameChanged* vzor pro každou vlastnost podporována.  
   
- Další informace o datové vazbě v subsystému WPF naleznete v tématu [datové vazby (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
+  Další informace o datové vazbě v subsystému WPF naleznete v tématu [datové vazby (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Dynamické vlastnosti v technologii LINQ to XML tříd  
  Většina tříd LINQ to XML jako zdroj dynamických dat správné WPF nekvalifikujte: některé z velmi užitečné informace je k dispozici pouze prostřednictvím metody (a nikoli vlastnosti) a vlastností v těchto tříd neimplementují oznámení o změnách. Pro podporu datové vazby WPF, technologii LINQ to XML zveřejňuje sadu *dynamické vlastnosti*.  
@@ -71,13 +71,13 @@ Toto téma popisuje funkce vazby dynamických dat v <xref:System.Xml.Linq> oboru
 ### <a name="accessing-dynamic-properties"></a>Přístup k dynamické vlastnosti  
  Dynamické vlastnosti v <xref:System.Xml.Linq.XAttribute> a <xref:System.Xml.Linq.XElement> třídy nelze získat přístup, jako je standardní vlastnosti. Například CLS CLR jazyků C#, nemohou být:  
   
--   Přistupovat přímo v době kompilace. Dynamické vlastnosti nejsou viditelná v kompilátoru a IntelliSense ve Visual Studio.  
+- Přistupovat přímo v době kompilace. Dynamické vlastnosti nejsou viditelná v kompilátoru a IntelliSense ve Visual Studio.  
   
--   Zjištěná nebo používaná v době běhu pomocí reflexe .NET. Dokonce i v době běhu nejsou vlastnosti v základní smysl CLR.  
+- Zjištěná nebo používaná v době běhu pomocí reflexe .NET. Dokonce i v době běhu nejsou vlastnosti v základní smysl CLR.  
   
- V jazyce C#, dynamické vlastnosti je přístupný pouze v době běhu prostřednictvím zařízení poskytovaných <xref:System.ComponentModel> oboru názvů.  
+  V jazyce C#, dynamické vlastnosti je přístupný pouze v době běhu prostřednictvím zařízení poskytovaných <xref:System.ComponentModel> oboru názvů.  
   
- Naproti tomu však ve formátu XML dynamické vlastnosti zdroje budou přístupné prostřednictvím jednoduché zápis v následujícím tvaru:  
+  Naproti tomu však ve formátu XML dynamické vlastnosti zdroje budou přístupné prostřednictvím jednoduché zápis v následujícím tvaru:  
   
 ```  
 <object>.<dynamic-property>  

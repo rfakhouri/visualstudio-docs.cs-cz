@@ -22,33 +22,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4c5dee963faaf52b6e1511d0b689ebe6ee5554e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676474"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880790"
 ---
 # <a name="excel-object-model-overview"></a>Přehled modelu objektů aplikace Excel
   K vývoji řešení, která používají Microsoft Office Excel, můžete pracovat s objekty poskytované objektovému modelu Excelu. Toto téma představuje nejdůležitější objekty:  
   
--   <xref:Microsoft.Office.Interop.Excel.Application>  
+- <xref:Microsoft.Office.Interop.Excel.Application>  
   
--   <xref:Microsoft.Office.Interop.Excel.Workbook>  
+- <xref:Microsoft.Office.Interop.Excel.Workbook>  
   
--   <xref:Microsoft.Office.Interop.Excel.Worksheet>  
+- <xref:Microsoft.Office.Interop.Excel.Worksheet>  
   
--   <xref:Microsoft.Office.Interop.Excel.Range>  
+- <xref:Microsoft.Office.Interop.Excel.Range>  
   
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
+  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Objektový model přesně dodržuje uživatelského rozhraní. <xref:Microsoft.Office.Interop.Excel.Application> Objekt představuje celé aplikace a každé <xref:Microsoft.Office.Interop.Excel.Workbook> objekt obsahuje kolekci `Worksheet` objekty. Tady je hlavní odběru, který představuje buňky <xref:Microsoft.Office.Interop.Excel.Range> objektu, který umožňuje pracovat s jednotlivé buňky nebo skupiny buněk.  
+  Objektový model přesně dodržuje uživatelského rozhraní. <xref:Microsoft.Office.Interop.Excel.Application> Objekt představuje celé aplikace a každé <xref:Microsoft.Office.Interop.Excel.Workbook> objekt obsahuje kolekci `Worksheet` objekty. Tady je hlavní odběru, který představuje buňky <xref:Microsoft.Office.Interop.Excel.Range> objektu, který umožňuje pracovat s jednotlivé buňky nebo skupiny buněk.  
   
- Kromě objektovému modelu Excelu, projektech pro systém Office v sadě Visual Studio poskytují *hostovat položky* a *hostování ovládacích prvků* , které rozšiřují některé objekty v objektovém modelu Excelu. Hostitelských položek a hostitelských ovládacích prvků se chovat jako objekty aplikace Excel, které jejich rozšíření, ale mají také další funkce, jako jsou datové vazby funkce a další události. Další informace najdete v tématu [automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md) a [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).  
+  Kromě objektovému modelu Excelu, projektech pro systém Office v sadě Visual Studio poskytují *hostovat položky* a *hostování ovládacích prvků* , které rozšiřují některé objekty v objektovém modelu Excelu. Hostitelských položek a hostitelských ovládacích prvků se chovat jako objekty aplikace Excel, které jejich rozšíření, ale mají také další funkce, jako jsou datové vazby funkce a další události. Další informace najdete v tématu [automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md) a [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).  
   
- Toto téma nabízí stručný přehled modelu objektů aplikace Excel. Prostředky, kde můžete dozvědět více o celý model objektů aplikace Excel, naleznete v tématu [použijte dokumentaci modelu objektů aplikace Excel](#ExcelOMDocumentation).  
+  Toto téma nabízí stručný přehled modelu objektů aplikace Excel. Prostředky, kde můžete dozvědět více o celý model objektů aplikace Excel, naleznete v tématu [použijte dokumentaci modelu objektů aplikace Excel](#ExcelOMDocumentation).  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak na to: použití obslužných rutin událostí v aplikaci Excel 2007 Doplněk?](http://go.microsoft.com/fwlink/?LinkID=130291), a [jak tvary použití I: vytvoření bublinového grafu v aplikaci Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak na to: použití obslužných rutin událostí v aplikaci Excel 2007 Doplněk?](http://go.microsoft.com/fwlink/?LinkID=130291), a [jak tvary použití I: vytvoření bublinového grafu v aplikaci Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>Přístup k objektům v projektu aplikace Excel  
  Při vytváření nového projektu doplňku VSTO pro Excel, sada Visual Studio automaticky vytvoří *ThisAddIn.vb* nebo *ThisAddIn.cs* soubor kódu. Objekt aplikace přístupné prostřednictvím `Me.Application` nebo `this.Application`.  
@@ -69,15 +69,15 @@ ms.locfileid: "35676474"
   
  Protože vysoce strukturovaná data v dokumentu aplikace Excel, je objektový model hierarchické a jednoduché. Excel nabízí stovky objektů, se kterými můžete pracovat, ale můžete získat dobrý začátek na objektový model se zaměříte na malou podmnožinu dostupných objektů. Mezi tyto objekty patří následující čtyři:  
   
--   Aplikace  
+- Aplikace  
   
--   sešit  
+- sešit  
   
--   list  
+- list  
   
--   Rozsah  
+- Rozsah  
   
- Velká část práce v Excelu se soustředí kolem tyto čtyři objekty a jejich členy.  
+  Velká část práce v Excelu se soustředí kolem tyto čtyři objekty a jejich členy.  
   
 ### <a name="application-object"></a>Objekt aplikace  
  V aplikaci Excel <xref:Microsoft.Office.Interop.Excel.Application> objekt představuje samotná aplikace Excel. <xref:Microsoft.Office.Interop.Excel.Application> Objekt poskytuje spoustu informací o běžící aplikaci možnosti použít pro tuto instanci a otevřete aktuální uživatelské objekty v instanci.  

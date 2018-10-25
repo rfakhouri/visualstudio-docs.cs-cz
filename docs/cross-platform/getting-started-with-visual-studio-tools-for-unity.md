@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4b6fb4e5ba69695389de2ad7db578488bf55ab75
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 9d924ee92258e348d5ffee1551fcde7707d711cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879795"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855206"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Začínáme s Visual Studio Tools for Unity
 
@@ -63,21 +63,21 @@ Počínaje Unity 2018.1, Visual Studio by měl být výchozího externí skript 
 
 1. Vyberte **Předvolby** z **upravit** nabídky.
 
-  ![Vyberte předvolby](media/vstu_unity-preferences.png)
+   ![Vyberte předvolby](media/vstu_unity-preferences.png)
 
-1. V dialogovém okně předvoleb vyberte **externích nástrojů** kartu.
+2. V dialogovém okně předvoleb vyberte **externích nástrojů** kartu.
 
-1. Z **externí Editor skriptů** rozevíracího seznamu zvolte vaši požadovanou verzi sady Visual Studio, pokud je hodnota uvedena, v opačném případě vyberte **Procházet...** .
+3. Z **externí Editor skriptů** rozevíracího seznamu zvolte vaši požadovanou verzi sady Visual Studio, pokud je hodnota uvedena, v opačném případě vyberte **Procházet...** .
 
-  ![Vyberte Visual Studio](media/vstu_unity-external-tools.png)
+   ![Vyberte Visual Studio](media/vstu_unity-external-tools.png)
 
-1. Pokud **Procházet...**  byla vybrána, přejděte **Common7/IDE** adresáře v sadě Visual Studio Instalační adresář a vyberte **devenv.exe**. Pak klikněte na tlačítko **otevřít**.
+4. Pokud **Procházet...**  byla vybrána, přejděte **Common7/IDE** adresáře v sadě Visual Studio Instalační adresář a vyberte **devenv.exe**. Pak klikněte na tlačítko **otevřít**.
 
-  ![Vyberte Otevřít](media/vstu_browse-for-application.png)
+   ![Vyberte Otevřít](media/vstu_browse-for-application.png)
 
-1. Po výběru v sadě Visual Studio **externí Editor skriptů** seznamu, ujistěte se, že **Editor připojení** zaškrtávací políčko zaškrtnuto.
+5. Po výběru v sadě Visual Studio **externí Editor skriptů** seznamu, ujistěte se, že **Editor připojení** zaškrtávací políčko zaškrtnuto.
 
-1. Zavřít **Předvolby** dialogové okno pro dokončení procesu konfigurace.
+6. Zavřít **Předvolby** dialogové okno pro dokončení procesu konfigurace.
 
 ## <a name="support-for-older-versions"></a>Podpora pro starší verze
 

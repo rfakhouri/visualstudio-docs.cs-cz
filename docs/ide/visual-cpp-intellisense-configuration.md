@@ -1,5 +1,5 @@
 ---
-title: Konfigurace projektu C++ IntelliSense
+title: Konfigurace projektu C++ pro IntelliSense
 ms.date: 10/08/2018
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,13 +9,13 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3772c2c910188aacb675f267d20f5e0f16565001
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836636"
 ---
-# <a name="configure-a-c-project-for-intellisense"></a>Konfigurace projektu C++ IntelliSense
+# <a name="configure-a-c-project-for-intellisense"></a>Konfigurace projektu C++ pro IntelliSense
 
 V některých případech můžete potřebovat ručně konfigurovat projektu v jazyce C++ k získání funkce IntelliSense funguje správně. Pro projekty MSBuild (podle souborů .vcxproj) můžete upravit nastavení ve vlastnostech projektu. Pro projekty bez MSBuild upravte nastavení v souboru CppProperties.json v kořenovém adresáři projektu. V některých případech budete muset vytvořit pomocný parametr souboru, který usnadní pochopení definic – makro technologie IntelliSense. Integrované vývojové prostředí sady Visual Studio pomáhá identifikovat a opravit problémy technologie IntelliSense.
 

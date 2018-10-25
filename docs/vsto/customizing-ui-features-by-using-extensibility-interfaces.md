@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15d666ed4e2896a1645f1f47a5a310dc3151309f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873967"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Přizpůsobení funkcí uživatelského rozhraní pomocí rozšiřujících rozhraní
   Vývojářské nástroje balíku Office v sadě Visual Studio poskytuje třídy a návrhářů, které zpracovávají mnoho podrobností implementace při použití k vytvoření vlastních podoken úloh, vlastních nastavení pásu karet a oblastí formulářů aplikace Outlook v doplňku VSTO. Ale můžete taky implementovat *rozšiřitelnost rozhraní* pro každou funkci sami, pokud máte zvláštní požadavky.  
@@ -61,17 +61,17 @@ ms.locfileid: "35676035"
 ### <a name="example-of-implementing-an-extensibility-interface"></a>Příklad implementace rozhraní rozšíření  
  Následující příklad kódu ukazuje jednoduchý provádění <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> rozhraní pro vytvoření vlastního podokna úloh. Tento příklad definuje dvě třídy:  
   
--   `TaskPaneHelper` Implementuje třída <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> k vytváření a zobrazování vlastního podokna úloh.  
+- `TaskPaneHelper` Implementuje třída <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> k vytváření a zobrazování vlastního podokna úloh.  
   
--   `TaskPaneUI` Třída poskytuje uživatelské rozhraní v podokně úloh. Atributy `TaskPaneUI` třídy zviditelnit třídy modelu COM, které umožňuje aplikacím Microsoft Office ke zjištění třídy. V tomto příkladu uživatelského rozhraní je prázdná <xref:System.Windows.Forms.UserControl>, ale můžete přidat ovládací prvky pěst a upravovat kód.  
+- `TaskPaneUI` Třída poskytuje uživatelské rozhraní v podokně úloh. Atributy `TaskPaneUI` třídy zviditelnit třídy modelu COM, které umožňuje aplikacím Microsoft Office ke zjištění třídy. V tomto příkladu uživatelského rozhraní je prázdná <xref:System.Windows.Forms.UserControl>, ale můžete přidat ovládací prvky pěst a upravovat kód.  
   
-    > [!NOTE]  
-    >  Zveřejnit `TaskPaneUI` třídy modelu COM, musíte taky nastavit **zaregistrovat pro interoperabilitu COM** vlastnosti projektu.  
+  > [!NOTE]  
+  >  Zveřejnit `TaskPaneUI` třídy modelu COM, musíte taky nastavit **zaregistrovat pro interoperabilitu COM** vlastnosti projektu.  
   
- [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
- [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
+  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
+  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- Další informace o implementaci <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, naleznete v tématu [vytvoření vlastních podoken úloh v systému Office 2007](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) v dokumentaci k Microsoft Office.  
+  Další informace o implementaci <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, naleznete v tématu [vytvoření vlastních podoken úloh v systému Office 2007](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) v dokumentaci k Microsoft Office.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>Příklad přepsání metody RequestService  
  Následující příklad kódu ukazuje, jak přepsat <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metoda vrátí instanci `TaskPaneHelper` třídy z předchozího příkladu kódu. Zkontroluje hodnotu vlastnosti *serviceGuid* parametr k určení rozhraní, které jsou požadovány a vrátí objekt, který implementuje rozhraní.  

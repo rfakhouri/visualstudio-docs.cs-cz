@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b5647a62064857bca6a6352a14fe56eff4386f9
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: fa564919abcfb4c8bd94fbaf139b69f2375deebd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497993"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825813"
 ---
 # <a name="how-to-use-the-activity-log"></a>Postupy: použití protokolu aktivit
 Rozšíření VSPackages můžete zapisovat zprávy do protokolu aktivit. Tato funkce je zvláště užitečné pro ladění rozšíření VSPackages v prostředí maloobchodu.  
@@ -47,15 +47,15 @@ Rozšíření VSPackages můžete zapisovat zprávy do protokolu aktivit. Tato f
   
 ## <a name="to-examine-the-activity-log"></a>Prozkoumat v protokolu aktivit  
   
-1.  Spuštění sady Visual Studio s [/Log](../ide/reference/log-devenv-exe.md) přepínač příkazového řádku ActivityLog.xml zapsat na disk během vaší relace.
+1. Spuštění sady Visual Studio s [/Log](../ide/reference/log-devenv-exe.md) přepínač příkazového řádku ActivityLog.xml zapsat na disk během vaší relace.
 
-2.  Po zavření sady Visual Studio, vyhledejte protokol aktivit v podsložce pro Visual Studio data: **% AppData %* \Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
+2. Po zavření sady Visual Studio, vyhledejte protokol aktivit v podsložce pro Visual Studio data:  <em>*% AppData %</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
   
-3.  Otevřete protokol aktivit pomocí libovolného textového editoru. Zde je typický položka:  
+3. Otevřete protokol aktivit pomocí libovolného textového editoru. Zde je typický položka:  
   
-    ```  
-    Called for: Company.MyApp.MyAppPackage ...  
-    ```  
+   ```  
+   Called for: Company.MyApp.MyAppPackage ...  
+   ```  
   
 ## <a name="robust-programming"></a>Robustní programování  
  Protože protokol aktivit je služba, není k dispozici v konstruktoru VSPackage protokolu aktivit.  

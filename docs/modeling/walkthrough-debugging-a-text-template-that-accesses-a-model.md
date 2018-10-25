@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 403b85ba7c5fc45a2809f695ce038a4e1576c93a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2b330dfc360a4986f5e255fc6369b819eabd4ebf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836434"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Návod: Ladění textové šablony přistupující k modelu
 Při úpravě nebo přidat textové šablony řešení jazyka specifického pro doménu, může docházet k chybám při modul transformace šablony zdrojový kód nebo při kompilaci vygenerovaného kódu. Následující návod znázorňuje některé z akcí, které vám pomůžou ladění textové šablony.
@@ -25,15 +25,15 @@ Při úpravě nebo přidat textové šablony řešení jazyka specifického pro 
 ## <a name="creating-a-domain-specific-language-solution"></a>Vytváření řešení jazyka specifického pro doménu
  V tomto postupu vytvoříte řešení jazyka specifického pro doménu, která má následující vlastnosti:
 
--   Název: DebuggingTestLanguage
+- Název: DebuggingTestLanguage
 
--   Šablona řešení: minimální jazykový
+- Šablona řešení: minimální jazykový
 
--   Přípona souboru: .ddd
+- Přípona souboru: .ddd
 
--   Název společnosti: Fabrikam
+- Název společnosti: Fabrikam
 
- Další informace o vytváření řešení jazyka specifického pro doménu, najdete v části [postupy: vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Další informace o vytváření řešení jazyka specifického pro doménu, najdete v části [postupy: vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Vytvoření textové šablony
  Přidejte textové šablony do vašeho řešení.

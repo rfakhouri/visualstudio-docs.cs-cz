@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5be66c8a762d7d690ec30a7658c59bcff75c3d53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176303"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877488"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro pr
   
  Je kořenový soubor web.config **konfigurace** elementu. Účelem instrumentace a profilování dynamicky kompilovaných [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webovou aplikaci, musíte přidat nebo upravit následující prvky:  
   
--   A **konfigurace/runtime/assemblyBinding/dependentAssembly** element, který identifikuje Microsoft.VisualStudio.Enterprise.ASPNetHelper sestavení, které ovládací prvky, profilování. **DependentAssembly** prvek obsahuje dva podřízené prvky: **assemblyIdentity** a **codeBase**.  
+- A **konfigurace/runtime/assemblyBinding/dependentAssembly** element, který identifikuje Microsoft.VisualStudio.Enterprise.ASPNetHelper sestavení, které ovládací prvky, profilování. **DependentAssembly** prvek obsahuje dva podřízené prvky: **assemblyIdentity** a **codeBase**.  
   
--   A **configuration/system.web/compilation** element, který identifikuje krok následného zpracování kompilace profileru pro cílové sestavení.  
+- A **configuration/system.web/compilation** element, který identifikuje krok následného zpracování kompilace profileru pro cílové sestavení.  
   
--   Dvě **přidat** prvky, které určují umístění nástroje pro profilaci sady nástrojů se přidávají do **konfigurace/appSettings** oddílu.  
+- Dvě **přidat** prvky, které určují umístění nástroje pro profilaci sady nástrojů se přidávají do **konfigurace/appSettings** oddílu.  
   
- Doporučujeme vytvořit kopii původního souboru web.config, který můžete použít k obnovení nastavení aplikace.  
+  Doporučujeme vytvořit kopii původního souboru web.config, který můžete použít k obnovení nastavení aplikace.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Chcete-li přidat ASPNetHelper sestavení jako konfigurace/runtime/assemblyBinding/dependentAssembly – element  
   

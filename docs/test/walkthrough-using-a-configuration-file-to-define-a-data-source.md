@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2552dec4e564b42d2044ce0d9da51ebfb8913901
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 64d01fd3551ee94cef178cb840742721db58a360
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821614"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Návod: Použití konfiguračního souboru k definování zdroje dat
 
@@ -88,7 +88,7 @@ Připojovací řetězce definují informace specifické pro zprostředkovatele p
 3. V prvním **přidat** elementu, vytvořte následující atributy a hodnoty pro připojení k databázi aplikace Microsoft Access:
 
 |Atribut|Hodnoty|
-|---------------|------------|
+|-|------------|
 |`name`|`"MyJetConn"`|
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
 |`providerName`|`"System.Data.OleDb"`|
@@ -135,7 +135,7 @@ V této části budete nadefinujeme dva zdroje dat pro použití v testu jednote
 4. V prvním **přidat** elementu, vytvořte následující atributy a hodnoty pro zdroj dat Microsoft Access:
 
 |Atribut|Hodnoty|
-|---------------|------------|
+|-|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
 |`dataTableName`|`"MyDataTable"`|

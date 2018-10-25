@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4564772fd118e3928f6e8a091c1066e2e8e92534
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 20dbc5223ddb053355fa5e8076ae66badee688a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883067"
 ---
 # <a name="how-to--with-text-templates"></a>Postupy pro textové šablony
 Textové šablony v sadě Visual Studio nabízejí praktický způsob generování textu jakéhokoli druhu. Textové šablony můžete použít ke generování textu za běhu v rámci vaší aplikace a v době návrhu k vygenerování nějakých kód projektu. Toto téma obsahuje souhrn nejčastěji dotaz "Jak na to...?" dotazy.
@@ -49,21 +49,21 @@ Textové šablony v sadě Visual Studio nabízejí praktický způsob generován
 ### <a name="invoke-methods-from-a-template"></a>Vyvolání metody ze šablony
  Pokud metody ještě neexistuje, například ve standardním [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] třídy:
 
--   Použít \<#@assembly#> direktiva načíst sestavení a používání \<#@import#> Chcete-li nastavit obor názvů kontextu. Další informace najdete v tématu [T4 – Direktiva Import](../modeling/t4-import-directive.md).
+- Použít \<#@assembly#> direktiva načíst sestavení a používání \<#@import#> Chcete-li nastavit obor názvů kontextu. Další informace najdete v tématu [T4 – Direktiva Import](../modeling/t4-import-directive.md).
 
-     Často používají stejnou sadu sestavení, direktivy import, zvažte vytvoření procesor direktiv. V každé šabloně můžete vyvolat procesor direktiv, který lze načíst sestavení a soubory modelu a nastavte kontext oboru názvů. Další informace najdete v tématu [vytváření vlastních procesorů textových šablon T4 – direktiva](../modeling/creating-custom-t4-text-template-directive-processors.md).
+   Často používají stejnou sadu sestavení, direktivy import, zvažte vytvoření procesor direktiv. V každé šabloně můžete vyvolat procesor direktiv, který lze načíst sestavení a soubory modelu a nastavte kontext oboru názvů. Další informace najdete v tématu [vytváření vlastních procesorů textových šablon T4 – direktiva](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
- Pokud píšete metody sami:
+  Pokud píšete metody sami:
 
--   Při psaní textové šabloně běhu zapište definice částečné třídy, který má stejný název jako textové šabloně běhu. Přidejte další metody této třídy.
+- Při psaní textové šabloně běhu zapište definice částečné třídy, který má stejný název jako textové šabloně běhu. Přidejte další metody této třídy.
 
--   Zápis řídicí blok funkce třídy `<#+ ... #>` ve které je možné deklarovat soukromé třídy, vlastnosti a metody. Při kompilaci textové šablony se transformuje na třídu. Standardní řídicí bloky `<#...#>` textu se transformují do jedné metody a bloky s funkcí třídy jsou vloženy jako samostatné členy. Další informace najdete v tématu [řídicí bloky textových šablon](../modeling/text-template-control-blocks.md).
+- Zápis řídicí blok funkce třídy `<#+ ... #>` ve které je možné deklarovat soukromé třídy, vlastnosti a metody. Při kompilaci textové šablony se transformuje na třídu. Standardní řídicí bloky `<#...#>` textu se transformují do jedné metody a bloky s funkcí třídy jsou vloženy jako samostatné členy. Další informace najdete v tématu [řídicí bloky textových šablon](../modeling/text-template-control-blocks.md).
 
-     Metody definované funkce třídy mohou také obsahovat vložený textové bloky.
+   Metody definované funkce třídy mohou také obsahovat vložený textové bloky.
 
-     Zvažte umístění funkce třídy v samostatném souboru, který můžete `<#@include#>` do jednoho nebo více souborů šablon.
+   Zvažte umístění funkce třídy v samostatném souboru, který můžete `<#@include#>` do jednoho nebo více souborů šablon.
 
--   Zápis metod v samostatném sestavení (knihovna tříd) a je volat z vaší šablony. Použití `<#@assembly#>` směrnice pro načtení sestavení, a `<#@import#>` nastavit kontext oboru názvů. Všimněte si, že pokud chcete při ladění ji, sestavte znovu sestavení, budete muset zastavit a restartovat Visual Studio. Další informace najdete v tématu [direktivy textové šablony T4](../modeling/t4-text-template-directives.md).
+- Zápis metod v samostatném sestavení (knihovna tříd) a je volat z vaší šablony. Použití `<#@assembly#>` směrnice pro načtení sestavení, a `<#@import#>` nastavit kontext oboru názvů. Všimněte si, že pokud chcete při ladění ji, sestavte znovu sestavení, budete muset zastavit a restartovat Visual Studio. Další informace najdete v tématu [direktivy textové šablony T4](../modeling/t4-text-template-directives.md).
 
 ### <a name="generate-many-files-from-one-model-schema"></a>Generovat ze schématu jeden model mnoho souborů
  Pokud často generování souborů z modelů, které mají stejné schéma XML nebo databáze:
@@ -91,7 +91,6 @@ Textové šablony v sadě Visual Studio nabízejí praktický způsob generován
 #>
 
 Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
-
 ```
 
 ### <a name="execute-text-templates-in-the-build-process"></a>Spuštění textové šablony v procesu sestavení

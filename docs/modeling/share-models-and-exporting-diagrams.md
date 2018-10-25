@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7210a5c156b779b9064f72db9cab5445d0ce20c3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2072006941c0572fc8072f2dd99afe7d324326bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842843"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Sdílení modelů a export diagramů
 V sadě Visual Studio můžete sdílet s kolegy v několika ohledech modelů a diagramů.
@@ -46,7 +46,7 @@ V sadě Visual Studio můžete sdílet s kolegy v několika ohledech modelů a d
 ## <a name="related-topics"></a>Související témata
 
 |Název|Popis|
-|-----------|-----------------|
+|-|-|
 |[Strukturování řešení modelování](../modeling/structure-your-modeling-solution.md)|Sdílení modely ve velkém nebo středním projektu.|
 |[Exportování diagramů jako obrázků](../modeling/export-diagrams-as-images.md)|Můžete kopírovat části diagramů do aplikací, jako jsou PowerPoint a Word nebo vytisknout diagram pro soubor ve formátu XPS.|
 |[Analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)|Přehled modelů a diagramů.|

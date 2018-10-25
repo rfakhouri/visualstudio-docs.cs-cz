@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fa6a1547a604e5d073c4e45c7769c68e0674d74
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879321"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Návod: Zobrazení dokončování příkazů
 Doplňování výrazů založený na jazyce lze implementovat definováním identifikátory, pro které chcete poskytnout dokončení a potom aktivuje relace dokončení. Můžete definovat dokončování příkazů v rámci služby jazyka, definovat vlastní příponu názvu souboru a typu obsahu a pak zobrazí dokončení právě daného typu. Nebo můžete aktivovat dokončování pro existující typ obsahu, například "ve formátu prostého textu". Tento návod ukazuje, jak aktivovat doplňování výrazů pro typ obsahu "jako prostý text", což je typ obsahu textových souborů. Typ obsahu "text" je nadřazeného člena pro všechny ostatní typy obsahu, včetně kódu a soubory XML.  
@@ -148,48 +148,48 @@ Doplňování výrazů založený na jazyce lze implementovat definováním iden
   
 #### <a name="to-implement-the-completion-command-handler"></a>K implementaci obslužné rutiny dokončení příkazu  
   
-1.  Přidejte třídu pojmenovanou `TestCompletionCommandHandler` , který implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. Přidejte třídu pojmenovanou `TestCompletionCommandHandler` , který implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
-     [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
+    [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
+    [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
   
-2.  Přidat soukromé pole pro další obslužná rutina příkazu (pro který předáte příkazu), zobrazení textu, poskytovateli obslužná rutina příkazu (která umožňuje přístup k různým službám) a ukončení relace:  
+2. Přidat soukromé pole pro další obslužná rutina příkazu (pro který předáte příkazu), zobrazení textu, poskytovateli obslužná rutina příkazu (která umožňuje přístup k různým službám) a ukončení relace:  
   
-     [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
-     [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
+    [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
+    [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
   
-3.  Přidejte konstruktor, který nastaví zobrazení textu a pole zprostředkovatele a přidá příkazu do příkazového řetězce:  
+3. Přidejte konstruktor, který nastaví zobrazení textu a pole zprostředkovatele a přidá příkazu do příkazového řetězce:  
   
-     [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
-     [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
+    [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
+    [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
   
-4.  Implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodu předáním příkaz podél:  
+4. Implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodu předáním příkaz podél:  
   
-     [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
-     [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
+    [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
+    [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
   
-5.  Implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody. Když tato metoda obdrží jedním stisknutím tlačítka, musíte udělat jednu z těchto věcí:  
+5. Implementace <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody. Když tato metoda obdrží jedním stisknutím tlačítka, musíte udělat jednu z těchto věcí:  
   
-    -   Povolte znak, který má být zapsána do vyrovnávací paměti a potom aktivovat nebo filtrování dokončení. (Tisk znaků to provést.)  
+   - Povolte znak, který má být zapsána do vyrovnávací paměti a potom aktivovat nebo filtrování dokončení. (Tisk znaků to provést.)  
   
-    -   Potvrdit dokončení, ale neumožňují znak, který má být zapsána do vyrovnávací paměti. (Prázdné znaky, **kartu**, a **Enter** to dělat, když se zobrazí relace dokončení.)  
+   - Potvrdit dokončení, ale neumožňují znak, který má být zapsána do vyrovnávací paměti. (Prázdné znaky, **kartu**, a **Enter** to dělat, když se zobrazí relace dokončení.)  
   
-    -   Povolte příkaz, které se mají předat další obslužné rutiny. (Všechny ostatní příkazy.)  
+   - Povolte příkaz, které se mají předat další obslužné rutiny. (Všechny ostatní příkazy.)  
   
      Protože tato metoda může zobrazit uživatelské rozhraní, zavolejte <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> abyste měli jistotu, že není volána v kontextu služby automation:  
   
      [!code-csharp[VSSDKCompletionTest#19](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_19.cs)]
      [!code-vb[VSSDKCompletionTest#19](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_19.vb)]  
   
-6.  Tento kód je privátní metodu, která aktivuje relace dokončení:  
+6. Tento kód je privátní metodu, která aktivuje relace dokončení:  
   
-     [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
-     [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
+    [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
+    [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
   
-7.  Následující příklad je privátní metodu, která odhlásí <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> události:  
+7. Následující příklad je privátní metodu, která odhlásí <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> události:  
   
-     [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
-     [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
+    [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
+    [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
   
 ## <a name="build-and-test-the-code"></a>Vytváření a testování kódu  
  K otestování tohoto kódu sestavte řešení CompletionTest a spusťte v experimentální instanci.  

@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35699d765a8d01e212fe02257da2aa83e245ecd4
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 88d7dd7f6fe09acd77ee37ca473fbd5290be6ee1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890185"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861108"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Modifikační klávesy návrhové plochy v Blendu
 Některé klávesové zkratky nejsou přidruženy položek nabídky, což znamená, že nemůžete použít [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] uživatelské rozhraní pro jejich zjišťování. V následující tabulce jsou uvedeny klávesové zkratky, které mění akce, jako je například změna velikosti objektu.
 
 |Pro tuto akci|Postup|
-|-----------------------|-------------|
+| - |-------------|
 |Dočasně vybrat **výběr** nástroj, zatímco jiný nástroj pro ně zaškrtnuto (tím se snižuje počet, kolikrát budete muset kliknout na něco v **nástroje** panel přejdete vpřed a zpět mezi  **Výběr** nástroji a ostatním uživatelům)|Podržte stisknutou klávesu **Ctrl**|
 |Posunout vybrané objekty při **výběr** vybraný nástroj|Stisknutím klávesy se šipkami|
 |Posouvání návrhové plochy|Podržte stisknutou klávesu **MEZERNÍK** a přetáhněte na návrhovou plochu|
@@ -45,4 +45,4 @@ Některé klávesové zkratky nejsou přidruženy položek nabídky, což znamen
 
 - [Klávesové zkratky](../designers/keyboard-shortcuts-in-blend.md)
 - [Modifikační klávesy nástroje Pero](../designers/pen-tool-modifier-keys-in-blend.md)
-- [Modifikační klávesy nástroje přímý výběr](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Modifikační klávesy nástroje Přímý výběr](../designers/direct-selection-tool-modifier-keys-in-blend.md)

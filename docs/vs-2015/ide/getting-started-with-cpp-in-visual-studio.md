@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cebb5624471277717395bd11c76e717692600977
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f061382ab5df74b7a94d8578624fb5a0f2dc71f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240445"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816592"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Začínáme s C++ v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,23 +52,23 @@ V tomto návodu se seznámíte s mnoha nástrojů a dialogových oknech, které 
   
 #### <a name="to-create-a-console-app"></a>K vytvoření konzolové aplikace  
   
-1.  V panelu nabídky zvolte **souboru**, **nový**, **projektu**.  
+1. V panelu nabídky zvolte **souboru**, **nový**, **projektu**.  
   
-     ![Na panelu nabídek zvolte soubor, nový, projekt](../ide/media/exploreide-filenewproject.png "ExploreIDE FileNewProject")  
+    ![Na panelu nabídek zvolte soubor, nový, projekt](../ide/media/exploreide-filenewproject.png "ExploreIDE FileNewProject")  
   
-2.  V **Visual C++** kategorie, zvolte **Konzolová aplikace Win32** šablony a poté pojmenujte projekt `GreetingsConsoleApp`.  
+2. V **Visual C++** kategorie, zvolte **Konzolová aplikace Win32** šablony a poté pojmenujte projekt `GreetingsConsoleApp`.  
   
-     ![Šablona aplikace konzoly Win32](../ide/media/c-ide-newprojectdlg.png "IDE_NewProjectDlg C ++")  
+    ![Šablona aplikace konzoly Win32](../ide/media/c-ide-newprojectdlg.png "IDE_NewProjectDlg C ++")  
   
-3.  Když se objeví v nástroji Průvodce aplikace Win32, klikněte **Dokončit** tlačítko.  
+3. Když se objeví v nástroji Průvodce aplikace Win32, klikněte **Dokončit** tlačítko.  
   
-     ![Průvodce aplikace konzoly Win32](../ide/media/c-ide-win32consoleappwizard.png "IDE_Win32ConsoleAppWizard C ++")  
+    ![Průvodce aplikace konzoly Win32](../ide/media/c-ide-win32consoleappwizard.png "IDE_Win32ConsoleAppWizard C ++")  
   
- GreetingsConsoleApp projektu a řešení, se základní soubory pro aplikace konzoly Win32, jsou vytvořeny a automaticky načtena do **Průzkumníka řešení**. GreetingsConsoleApp.cpp soubor je otevřen v editoru kódu. Následující položky se zobrazí v **Průzkumníka řešení**:  
+   GreetingsConsoleApp projektu a řešení, se základní soubory pro aplikace konzoly Win32, jsou vytvořeny a automaticky načtena do **Průzkumníka řešení**. GreetingsConsoleApp.cpp soubor je otevřen v editoru kódu. Následující položky se zobrazí v **Průzkumníka řešení**:  
   
- Obrázek 4: Položky projektu  
+   Obrázek 4: Položky projektu  
   
- ![Soubory řešení v Průzkumníku řešení](../ide/media/c-ide-solutioncontents.png "IDE_SolutionContents C ++")  
+   ![Soubory řešení v Průzkumníku řešení](../ide/media/c-ide-solutioncontents.png "IDE_SolutionContents C ++")  
   
 ##  <a name="BKMK_AddCode"></a> Přidejte kód do aplikace  
  V dalším kroku přidáte kód, zobrazují slovo "Hello" v okně konzoly.  
@@ -117,40 +117,40 @@ V tomto návodu se seznámíte s mnoha nástrojů a dialogových oknech, které 
   
 #### <a name="to-add-a-breakpoint"></a>Chcete-li přidat zarážku  
   
-1.  Přidáte zarážku z panelu nabídky na řádku `return 0;`. Můžete také stačí kliknout na levém okraji nastavit zarážku.  
+1. Přidáte zarážku z panelu nabídky na řádku `return 0;`. Můžete také stačí kliknout na levém okraji nastavit zarážku.  
   
-     ![Přepnout zarážku – příkaz v nabídce ladění](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE togglebreakpoint –")  
+    ![Přepnout zarážku – příkaz v nabídce ladění](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE togglebreakpoint –")  
   
-     Na levém okraji okna editoru se vedle řádku kódu zobrazí červený kruh.  
+    Na levém okraji okna editoru se vedle řádku kódu zobrazí červený kruh.  
   
-2.  Stisknutím klávesy F5 spusťte ladění.  
+2. Stisknutím klávesy F5 spusťte ladění.  
   
-     Spustí ladicí program a zobrazí se okno konzoly, zobrazují slovo **Hello**.  
+    Spustí ladicí program a zobrazí se okno konzoly, zobrazují slovo **Hello**.  
   
-     ![Text v okně příkazového řádku Windows Hello](../ide/media/c-ide-hellocommandwindow.png "IDE_HelloCommandWindow C ++")  
+    ![Text v okně příkazového řádku Windows Hello](../ide/media/c-ide-hellocommandwindow.png "IDE_HelloCommandWindow C ++")  
   
-3.  Stiskněte SHIFT + F5, můžete zastavit ladění.  
+3. Stiskněte SHIFT + F5, můžete zastavit ladění.  
   
- Další informace najdete v tématu [projekty konzoly](../debugger/debugging-preparation-console-projects.md).  
+   Další informace najdete v tématu [projekty konzoly](../debugger/debugging-preparation-console-projects.md).  
   
 ##  <a name="BKMK_BuildRelease"></a> Sestavení verze pro vydání aplikace  
  Nyní poté, co jste ověřili, že vše funguje, jak má, lze připravit sestavení pro vydání aplikace.  
   
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Vyčištění souborů řešení a sestavení verze pro vydání  
   
-1.  Na panelu nabídek odstranění pomocných a výstupních souborů, které byly během předchozích sestavení vytvořeny.  
+1. Na panelu nabídek odstranění pomocných a výstupních souborů, které byly během předchozích sestavení vytvořeny.  
   
-     ![Příkaz Vyčistit řešení v nabídce sestavení](../ide/media/exploreide-cleansolution.png "ExploreIDE CleanSolution")  
+    ![Příkaz Vyčistit řešení v nabídce sestavení](../ide/media/exploreide-cleansolution.png "ExploreIDE CleanSolution")  
   
-2.  Změňte konfiguraci buildu pro GreetingsConsoleApp z **ladění** k **vydání**.  
+2. Změňte konfiguraci buildu pro GreetingsConsoleApp z **ladění** k **vydání**.  
   
-     ![Sestavení verze pro vydání aplikace](../ide/media/c-ide-changingbuildtorelease.png "IDE_ChangingBuildtoRelease C ++")  
+    ![Sestavení verze pro vydání aplikace](../ide/media/c-ide-changingbuildtorelease.png "IDE_ChangingBuildtoRelease C ++")  
   
-3.  Sestavte řešení.  
+3. Sestavte řešení.  
   
-     ![Sestavit řešení – příkaz v nabídce sestavení](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")  
+    ![Sestavit řešení – příkaz v nabídce sestavení](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")  
   
- Blahopřejeme k dokončení tohoto návodu! Pokud budete chtít projít Další příklady, přečtěte si téma [ukázky sady Visual Studio](../ide/visual-studio-samples.md).  
+   Blahopřejeme k dokončení tohoto návodu! Pokud budete chtít projít Další příklady, přečtěte si téma [ukázky sady Visual Studio](../ide/visual-studio-samples.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   

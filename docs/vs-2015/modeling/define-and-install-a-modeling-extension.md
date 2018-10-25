@@ -15,12 +15,12 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6ed7f72a8125d2307b91cd829bd6f474145fa78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234400"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827477"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definování a instalace rozšíření modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ V sadě Visual Studio můžete definovat rozšíření pro modelování diagram�
 ## <a name="creating-a-modeling-extension-solution"></a>Vytvoření řešení rozšíření modelování  
  Chcete-li definovat rozšíření modelování, musíte vytvořit řešení obsahující projekty:  
   
--   A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekt integrace Extension (VSIX). Tím se vytvoří soubor, který funguje jako instalační program pro součásti tohoto rozšíření.  
+- A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projekt integrace Extension (VSIX). Tím se vytvoří soubor, který funguje jako instalační program pro součásti tohoto rozšíření.  
   
--   Projekt knihovny tříd, vyžaduje se pro součásti, které obsahují kód programu.  
+- Projekt knihovny tříd, vyžaduje se pro součásti, které obsahují kód programu.  
   
- Pokud chcete, aby rozšíření, které má několik součástí, je možné vyvinout v jediném řešení. Budete potřebovat pouze jeden projekt VSIX.  
+  Pokud chcete, aby rozšíření, které má několik součástí, je možné vyvinout v jediném řešení. Budete potřebovat pouze jeden projekt VSIX.  
   
- Součásti, které nevyžadují kód, jako je například vlastní sady nástrojů položky a vlastních profilů UML lze přidat přímo do projektu VSIX bez použití samostatné třídy knihovny projektů. Komponenty, které vyžadují programového kódu jsou snadněji definované v projektu knihovny samostatné třídy. Komponenty, které vyžadují kód zahrnují obslužnými rutinami gest, příkazy nabídky a kód pro ověření.  
+  Součásti, které nevyžadují kód, jako je například vlastní sady nástrojů položky a vlastních profilů UML lze přidat přímo do projektu VSIX bez použití samostatné třídy knihovny projektů. Komponenty, které vyžadují programového kódu jsou snadněji definované v projektu knihovny samostatné třídy. Komponenty, které vyžadují kód zahrnují obslužnými rutinami gest, příkazy nabídky a kód pro ověření.  
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Chcete-li vytvořit projekt knihovny tříd pro ověření, obslužné rutiny gesta nebo příkazů nabídky  
   
@@ -133,15 +133,15 @@ V sadě Visual Studio můžete definovat rozšíření pro modelování diagram�
   
 #### <a name="to-uninstall-an-extension"></a>Odinstalace rozšíření  
   
-1.  Na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.  
+1. Na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.  
   
-2.  Rozbalte **nainstalovaná rozšíření**.  
+2. Rozbalte **nainstalovaná rozšíření**.  
   
-3.  Vyberte požadované rozšíření a pak klikněte na tlačítko **odinstalovat**.  
+3. Vyberte požadované rozšíření a pak klikněte na tlačítko **odinstalovat**.  
   
- Jen zřídka se chybné rozšíření se nepodaří načíst a vytvoří sestavu v okně chyb, ale nezobrazí ve Správci rozšíření. V takovém případě můžete odebrat rozšíření odstraněním souboru z následujícího umístění kde *% LocalAppData %* je obvykle *DriveName*: \Users\\*uživatelskéjméno*\AppData\Local:  
+   Jen zřídka se chybné rozšíření se nepodaří načíst a vytvoří sestavu v okně chyb, ale nezobrazí ve Správci rozšíření. V takovém případě můžete odebrat rozšíření odstraněním souboru z následujícího umístění kde *% LocalAppData %* je obvykle *DriveName*: \Users\\*uživatelskéjméno*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [verze]**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [verze]**  
   
 ## <a name="see-also"></a>Viz také  
  [Definování profilu pro rozšíření UML](../modeling/define-a-profile-to-extend-uml.md)   

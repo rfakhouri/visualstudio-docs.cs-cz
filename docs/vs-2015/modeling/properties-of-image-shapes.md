@@ -17,37 +17,37 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b324e82608a79f8f57762e2538b401c794d831c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d0b2de4ce9c332b5a4f54ad41e6d3af500b49956
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843480"
 ---
 # <a name="properties-of-image-shapes"></a>Vlastnosti obrazových obrazců
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Obrazce obrázku můžete použít k určení, jak se zobrazí ve vygenerovaném návrháři doménovými třídami. Definování obrazce obrázku tak, že nastavíte `Image` vlastnost třídy do souboru předdefinované. Podporují se následující formáty:  
   
--   GIF  
+- GIF  
   
--   .jpg  
+- .jpg  
   
--   .jpeg  
+- .jpeg  
   
--   BMP  
+- BMP  
   
--   .wmf  
+- .wmf  
   
--   .EMF  
+- .EMF  
   
--   ve formátu PNG  
+- ve formátu PNG  
   
- Ve výchozím nastavení, soubory Návrháře prostředků, jako jsou obrázky, jsou umístěny v **prostředky**složky **Dsl** projektu.  
+  Ve výchozím nastavení, soubory Návrháře prostředků, jako jsou obrázky, jsou umístěny v **prostředky**složky **Dsl** projektu.  
   
- Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md). Další informace o tom, jak pomocí těchto vlastností najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+  Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md). Další informace o tom, jak pomocí těchto vlastností najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
- Obrazce obrázku mají vlastnosti, které jsou uvedeny v následující tabulce.  
+  Obrazce obrázku mají vlastnosti, které jsou uvedeny v následující tabulce.  
   
 |Vlastnost|Popis|Výchozí|  
 |--------------|-----------------|-------------|  

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827932"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Postupy: nastavení časových limitů pro testovací kontroléry a testovací agenty
 
@@ -29,7 +29,7 @@ Testovací kontrolér a testovací agent mají několik nastavení časového li
 -   Testovací kontrolér: *QTController.exe.config*
 
     |Název klíče|Popis|Hodnota|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Počet sekund čekání žádosti příkazu ping agenta, než bude připojení považováno ztratit.|"n" sekund.|
     |AgentSyncTimeoutInSeconds|Po spuštění synchronizace testovacího běhu, počet sekund čekání na synchronizaci před přerušením běhu všech agentů.|"n" sekund.|
     |AgentInitializeTimeout|Počet sekund čekání na všech agentech a jejich kolektorů dat inicializovat na začátku testu spusťte před přerušením testu. Tato hodnota by měla být přiměřeně velká, pokud používáte kolekce dat.|"n" sekund. Výchozí hodnota: "120" (dvě minuty).|
@@ -38,7 +38,7 @@ Testovací kontrolér a testovací agent mají několik nastavení časového li
 -   Testovací Agent: *QTAgentService.exe.config*
 
     |Název klíče|Popis|Hodnota|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Počet sekund mezi jednotlivými pokusy o připojení k řadiči.|"n" sekund. Výchozí hodnota: "30" (třicet sekund).|
     |RemotingTimeoutSeconds|Maximální doba, kterou může vzdálené volání trvat během několika sekund.|"n" sekund. Výchozí hodnota: "600" (deset minut).|
     |StopTestRunCallTimeoutInSeconds|Počet sekund čekání na volání se zastavit testovací běh.|"n" sekund. Výchozí hodnota: "120" (dvě minuty).|

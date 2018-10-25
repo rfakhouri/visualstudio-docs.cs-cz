@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885756"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uživatelská oprávnění a sada Visual Studio
 
@@ -31,7 +31,7 @@ Z důvodů zabezpečení byste měli spustit Visual Studio v režimu normálníh
 V režimu normálního uživatele lze provádět téměř cokoli v integrovaném vývojovém prostředí sady Visual Studio. Budete potřebovat oprávnění správce k následujícím postupem:
 
 |Oblast|Úloha|Další informace|
-|----------|----------|--------------------------|
+|----------|----------| - |
 |Instalace|Instalace sady Visual Studio.|[Instalace sady Visual Studio](../install/install-visual-studio.md)|
 ||Instalace, aktualizace nebo odebrání místního obsahu nápovědy.|[Nainstalovat a spravovat místní obsah nápovědy](../ide/install-and-manage-local-content.md)|
 |Sada nástrojů|Přidat klasické ovládací prvky modelu COM pro **nástrojů**.|[Panel nástrojů](../ide/reference/toolbox.md)|

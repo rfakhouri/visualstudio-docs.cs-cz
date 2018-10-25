@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6924ff846da2ca7fb3ad7591f6d1c8e07f89b0d
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: eeacfb15b02c19ea4a166fbc8511aab644d41ea5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861407"
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Využití paměti profilu v sadě Visual Studio
 Vyhledání nevrácené paměti a neefektivní paměti během ladění s integrovaný ladicí program **využití paměti** nástroj pro diagnostiku. Umožňuje nástroj využití paměti, můžete provést jeden nebo více *snímky* spravovaný a nativní paměti haldy pro lepší porozumění tomu dopad využití paměti typy objektů. Můžete shromažďovat snímky technologie .NET, nativní nebo smíšený režim (.NET a nativní) aplikace.  
@@ -101,14 +101,14 @@ Pokud jste provedli několik snímků, buňky ovládacího prvku souhrnnou tabul
 
 Analýza využití paměti, klikněte na jeden z odkazů, které se otevře podrobnou sestavu využití paměti:  
 
--   Chcete-li zobrazit podrobnosti o rozdílu mezi aktuálním snímkem a předchozím snímkem, zvolte odkaz změnit na levé straně na šipku (![zvýšit využití paměti](../profiling/media/prof-tour-mem-usage-up-arrow.png "zvýšit využití paměti")). Červená šipka označuje zvýšení využití paměti a zelenou šipku znamená snížení.
+- Chcete-li zobrazit podrobnosti o rozdílu mezi aktuálním snímkem a předchozím snímkem, zvolte odkaz změnit na levé straně na šipku (![zvýšit využití paměti](../profiling/media/prof-tour-mem-usage-up-arrow.png "zvýšit využití paměti")). Červená šipka označuje zvýšení využití paměti a zelenou šipku znamená snížení.
 
-    > [!TIP]
-    >  K identifikaci problémů paměti rychleji, diff sestavy jsou seřazeny podle typů objektů, které nejvíce zvýšit celkový počet (klikněte na odkaz změnit v **objekty (rozdíl)** sloupce) nebo, která zvýšil na maximum v celkovou velikost haldy (kliknutím odkaz změnit v **velikost haldy (rozdíl)** sloupec).
+  > [!TIP]
+  >  K identifikaci problémů paměti rychleji, diff sestavy jsou seřazeny podle typů objektů, které nejvíce zvýšit celkový počet (klikněte na odkaz změnit v **objekty (rozdíl)** sloupce) nebo, která zvýšil na maximum v celkovou velikost haldy (kliknutím odkaz změnit v **velikost haldy (rozdíl)** sloupec).
 
--   Chcete-li zobrazit podrobnosti o pouze vybraný snímek, klikněte na odkaz jiné změny. 
+- Chcete-li zobrazit podrobnosti o pouze vybraný snímek, klikněte na odkaz jiné změny. 
   
- Sestavy se zobrazí v samostatném okně.   
+  Sestavy se zobrazí v samostatném okně.   
   
 ### <a name="managed-types-reports"></a>Spravované typy sestav  
  Vyberte aktuální propojení **objekty (rozdíl)** nebo **přidělení (rozdíl)** buňku v tabulce souhrnu využití paměti.  
@@ -148,23 +148,23 @@ Analýza využití paměti, klikněte na jeden z odkazů, které se otevře podr
   
 ### <a name="change-diff-reports"></a>Změnit sestavy (rozdíl)  
   
--   Zvolte odkaz změnit v buňce souhrnnou tabulku **využití paměti** kartě **diagnostické nástroje** okna.  
+- Zvolte odkaz změnit v buňce souhrnnou tabulku **využití paměti** kartě **diagnostické nástroje** okna.  
   
-     ![Zvolte změnu &#40;dif&#41;f sestavy](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+   ![Zvolte změnu &#40;dif&#41;f sestavy](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
--   Zvolte snímek v **porovnat** seznam spravované nebo nativní sestavy.  
+- Zvolte snímek v **porovnat** seznam spravované nebo nativní sestavy.  
   
-     ![Zvolte snímek ze seznamu porovnat](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+   ![Zvolte snímek ze seznamu porovnat](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
- Sestava změn přidává sloupce (označené **(rozdíl)**) základní sestavy, které zobrazují rozdíl mezi hodnotami základní snímek a snímek porovnání. Zde je, jak může vypadat sestavy rozdílu nativní typ zobrazení:  
+  Sestava změn přidává sloupce (označené **(rozdíl)**) základní sestavy, které zobrazují rozdíl mezi hodnotami základní snímek a snímek porovnání. Zde je, jak může vypadat sestavy rozdílu nativní typ zobrazení:  
   
- ![Nativní typy Diff Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+  ![Nativní typy Diff Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blogy a videa  
 
-|         |         |
+| | |
 |---------|---------|
-|  ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video")  |    [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) pomocí diagnostických nástrojů, které ukazuje, jak analyzovat využití paměti a využití procesoru v sadě Visual Studio 2017. |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) pomocí diagnostických nástrojů, které ukazuje, jak analyzovat využití paměti a využití procesoru v sadě Visual Studio 2017. |
 
  [Analýza využití procesoru a paměti během ladění](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69ee365e3bc6902ffecd755d6f788b7f9e238c52
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290729"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847809"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Přizpůsobení nástrojů a panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,15 +183,15 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="custom-code-for-connection-builders"></a>Vlastní kód pro tvůrci připojení  
  Existují čtyři políček v uživatelském rozhraní, které definují různé druhy přizpůsobení tvůrci připojení:  
   
--   **vlastní přijetí** zaškrtávací políčko na direktivu zdrojová nebo cílová role  
+- **vlastní přijetí** zaškrtávací políčko na direktivu zdrojová nebo cílová role  
   
--   **připojit vlastní** zaškrtávací políčko na direktivu zdrojová nebo cílová role  
+- **připojit vlastní** zaškrtávací políčko na direktivu zdrojová nebo cílová role  
   
--   **používá vlastní připojit** zaškrtávací políčko pro direktivu connect  
+- **používá vlastní připojit** zaškrtávací políčko pro direktivu connect  
   
--   **je vlastní** vlastnosti Tvůrce připojení  
+- **je vlastní** vlastnosti Tvůrce připojení  
   
- Je nutné zadat nějaký kód programu k provedení těchto úprav. Chcete-li zjistit, jaký kód je nutné zadat, jeden z těchto polí a transformovat všechny šablony potom sestavte řešení. Zpráva o chybě dojde. Klikněte dvakrát na zprávy o chybě zobrazíte komentář, který vysvětluje, jaký kód že je nutné přidat.  
+  Je nutné zadat nějaký kód programu k provedení těchto úprav. Chcete-li zjistit, jaký kód je nutné zadat, jeden z těchto polí a transformovat všechny šablony potom sestavte řešení. Zpráva o chybě dojde. Klikněte dvakrát na zprávy o chybě zobrazíte komentář, který vysvětluje, jaký kód že je nutné přidat.  
   
 > [!NOTE]
 >  Chcete-li přidat vlastní kód, vytvořte definici částečné třídy v souboru kódu odděleně od kódu souborů ve složkách GeneratedCode. Abyste se vyhnuli ztrátě práce, byste neměli upravovat soubory generovaného kódu. Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).  

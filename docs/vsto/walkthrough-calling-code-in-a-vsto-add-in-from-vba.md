@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3bc8154be515bcf0509b2458534fed7c1c520e4e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513648"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843818"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Návod: Volání kódu v doplňku VSTO z jazyka VBA
   Tento návod ukazuje, jak vystavit objektu v doplňku VSTO do jiných řešení pro Microsoft Office, včetně jazyka Visual Basic for Applications (VBA) a doplňky modelu COM VSTO.  
@@ -37,13 +37,13 @@ ms.locfileid: "39513648"
   
  Tento návod znázorňuje následující úlohy:  
   
--   Definuje třídu, která by bylo možné vystavit do jiných řešení pro Office.  
+- Definuje třídu, která by bylo možné vystavit do jiných řešení pro Office.  
   
--   Vystavení třídy do jiných řešení pro Office.  
+- Vystavení třídy do jiných řešení pro Office.  
   
--   Volání metody třídy z jazyka VBA kód.  
+- Volání metody třídy z jazyka VBA kód.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  

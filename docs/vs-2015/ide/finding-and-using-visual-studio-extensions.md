@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 256000fb3371477c74d4f922de6cb10f3998ae86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268167"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831130"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Hledání a používání rozšíření Visual Studia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ Rozšíření sady Visual Studio jsou balíčky kódu, které v prostředí Visu
 ## <a name="sample-master-copies-and-working-copies"></a>Ukázka hlavní kopie a pracovní kopie  
  Při instalaci online ukázky je řešení uloženo na dvou místech:  
   
--   Pracovní kopie je uložena v umístění, které jste zadali v **nový projekt** dialogové okno.  
+- Pracovní kopie je uložena v umístění, které jste zadali v **nový projekt** dialogové okno.  
   
--   Samostatná hlavní kopie je uložena v počítači.  
+- Samostatná hlavní kopie je uložena v počítači.  
   
- Můžete použít **rozšíření a aktualizace** dialogové okno k provedení těchto úloh týkajících se ukázek:  
+  Můžete použít **rozšíření a aktualizace** dialogové okno k provedení těchto úloh týkajících se ukázek:  
   
--   Zobrazit seznam hlavních kopií ukázek, které jste nainstalovali.  
+- Zobrazit seznam hlavních kopií ukázek, které jste nainstalovali.  
   
--   Zakázat nebo odinstalovat hlavní kopii ukázky.  
+- Zakázat nebo odinstalovat hlavní kopii ukázky.  
   
--   Instalovat balíky ukázek, což jsou kolekce ukázek, které se týkají technologie nebo funkce.  
+- Instalovat balíky ukázek, což jsou kolekce ukázek, které se týkají technologie nebo funkce.  
   
--   Nainstalujte jednotlivé online ukázky. (Můžete to provést také v **nový projekt** dialogové okno.)  
+- Nainstalujte jednotlivé online ukázky. (Můžete to provést také v **nový projekt** dialogové okno.)  
   
--   Zobrazit upozornění na aktualizace při zveřejnění změny zdrojového kódu nainstalovaných ukázek.  
+- Zobrazit upozornění na aktualizace při zveřejnění změny zdrojového kódu nainstalovaných ukázek.  
   
--   Aktualizujte hlavní kopii nainstalované ukázky, když je oznámení o aktualizaci.  
+- Aktualizujte hlavní kopii nainstalované ukázky, když je oznámení o aktualizaci.  
   
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Instalace bez použití rozšíření a dialogového okna Aktualizace  
  Rozšíření, která byla zabalena v souboru .vsix, mohou být k dispozici v jiném umístění než v Galerii aplikace Visual Studio. **Rozšíření a aktualizace** dialogové okno nelze rozpoznat tyto soubory, ale můžete nainstalovat soubor .vsix poklepáním na soubor, nebo výběrem souboru a stisknutím klávesy ENTER. Potom postupujte podle pokynů. Pokud je rozšíření nainstalované, můžete použít **rozšíření a aktualizace** dialogové okno povolit, zakázat nebo ho odinstalujte.  

@@ -15,12 +15,12 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c0c663e521e113de69e749a68bf3d81bfd523687
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bc4d7caefe0d0db2cdadf684702ec7e0d800c9c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884157"
 ---
 # <a name="source-control-configuration-details"></a>Podrobnosti konfigurace správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Kvůli implementaci správy zdrojového kódu, musíte správně nakonfigurovat 
   
  V reakci `IVsQueryEditQuerySave2::QueryEditFiles` volání, prostředí můžete dělat tyto věci:  
   
--   Odmítnutí volání, chcete-li změnit, v takovém případě musí zůstat editor nebo projekt v nezměněném stavu (čisté).  
+- Odmítnutí volání, chcete-li změnit, v takovém případě musí zůstat editor nebo projekt v nezměněném stavu (čisté).  
   
--   Označuje, že data dokument znovu načíst. Pro projekt prostředí se znovu načte data pro projekt. Editor musí znovu načíst data z disku prostřednictvím jeho <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementace. V obou případech se může změnit kontext v projektu nebo v editoru při opětovném načtení nástroje data.  
+- Označuje, že data dokument znovu načíst. Pro projekt prostředí se znovu načte data pro projekt. Editor musí znovu načíst data z disku prostřednictvím jeho <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementace. V obou případech se může změnit kontext v projektu nebo v editoru při opětovném načtení nástroje data.  
   
- Je složitá a obtížná úloh pozměnění odpovídající `IVsQueryEditQuerySave2::QueryEditFiles` volání na existující kódové základně. V důsledku toho má tato volání integrovat během vytváření projektu nebo editoru.  
+  Je složitá a obtížná úloh pozměnění odpovídající `IVsQueryEditQuerySave2::QueryEditFiles` volání na existující kódové základně. V důsledku toho má tato volání integrovat během vytváření projektu nebo editoru.  
   
 ## <a name="request-permission-to-save-a-file"></a>Požádat o oprávnění k uložení souboru  
  Předtím, než projekt nebo editor uloží soubor, musí volat <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Pro soubory projektu jsou řešení, které ví, kdy se má uložit soubor projektu automaticky dokončit těchto volání. Editory zodpovídají za provedení těchto volání, pokud editor provádění `IVsPersistDocData2` používá pomocnou funkci <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Pokud editor implementuje `IVsPersistDocData2` v tímto způsobem, pak volání `IVsQueryEditQuerySave2::QuerySaveFile` nebo `IVsQueryEditQuerySave2::QuerySaveFiles` se provádí za vás.  

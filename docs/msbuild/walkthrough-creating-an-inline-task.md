@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a69fcd70350a000561464713ac18551daf38059a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2091bfa5408c85e4fb4dd4b8973a74d1da8b7132
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828660"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Návod: Vytvoření vložené úlohy
 Úlohy nástroje MSBuild se obvykle vytvářejí kompilováním třídy, která implementuje <xref:Microsoft.Build.Framework.ITask> rozhraní. Od verze rozhraní .NET Framework verze 4, můžete vytvořit úlohy vložené v souboru projektu. Není nutné vytvořit samostatné sestavení pro hostování úkolu. Další informace najdete v tématu [vložené úlohy](../msbuild/msbuild-inline-tasks.md).  
@@ -63,187 +63,187 @@ Vytvoření a spuštění úloh, pomocí sady Visual Studio a **Visual Studio ok
   
 #### <a name="to-add-a-basic-hello-task"></a>Základní Hello úkol má přidat  
   
-1.  V kořenovém adresáři `Project` uzlu, změna `DefaultTargets` atribut `TestBuild`. Výsledná `Project` uzlu by měl podobat tomuto příkladu:  
+1. V kořenovém adresáři `Project` uzlu, změna `DefaultTargets` atribut `TestBuild`. Výsledná `Project` uzlu by měl podobat tomuto příkladu:  
   
-    ```xml
-    <Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    ```
+   ```xml
+   <Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+   ```
   
-2.  Přidejte následující vložené úlohy a zacílit těsně před soubor projektu `</Project>` značky.  
+2. Přidejte následující vložené úlohy a zacílit těsně před soubor projektu `</Project>` značky.  
   
-    ```xml  
-    <UsingTask TaskName="Hello" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup />  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          Log.LogMessage("Hello, world!", MessageImportance.High);  
-        </Code>  
-      </Task>  
-    </UsingTask>  
-    <Target Name="TestBuild">  
-      <Hello />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="Hello" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup />  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         Log.LogMessage("Hello, world!", MessageImportance.High);  
+       </Code>  
+     </Task>  
+   </UsingTask>  
+   <Target Name="TestBuild">  
+     <Hello />  
+   </Target>  
+   ```  
   
-3.  Uložte soubor projektu.  
+3. Uložte soubor projektu.  
   
- Tento kód vytvoří vložené úlohy, která je s názvem Hello a nemá žádné parametry, odkazy, nebo `Using` příkazy. Hello úloha obsahuje jen jeden řádek kódu, která zobrazuje zprávu hello v zařízení výchozí protokolování, obvykle v okně konzoly.  
+   Tento kód vytvoří vložené úlohy, která je s názvem Hello a nemá žádné parametry, odkazy, nebo `Using` příkazy. Hello úloha obsahuje jen jeden řádek kódu, která zobrazuje zprávu hello v zařízení výchozí protokolování, obvykle v okně konzoly.  
   
 ### <a name="run-the-hello-task"></a>Spustit úlohu Hello  
  Spustit nástroj MSBuild s použitím **okno příkazového řádku** k sestavení kompletních Hello úloh a ke zpracování, která jej volá cíl TestBuild.  
   
 ##### <a name="to-run-the-hello-task"></a>Ke spuštění úlohy Hello  
   
-1.  Klikněte na tlačítko **Start**, klikněte na tlačítko **všechny programy**a potom vyhledejte **Visual Studio Tools** složky a klikněte na tlačítko **příkazový řádek sady Visual Studio**.  
+1. Klikněte na tlačítko **Start**, klikněte na tlačítko **všechny programy**a potom vyhledejte **Visual Studio Tools** složky a klikněte na tlačítko **příkazový řádek sady Visual Studio**.  
   
-2.  V **okno příkazového řádku**, vyhledejte složku, která obsahuje soubor projektu, v tomto případě *D:\InlineTasks\InlineTasks\\*.  
+2. V **okno příkazového řádku**, vyhledejte složku, která obsahuje soubor projektu, v tomto případě *D:\InlineTasks\InlineTasks\\*.  
   
-3.  Typ **msbuild** bez přepínače příkaz a stiskněte klávesu **Enter**. Ve výchozím nastavení, což vytváří *InlineTasks.csproj* souborů a procesy výchozí cíl TestBuild, která vyvolá úlohu Hello.  
+3. Typ **msbuild** bez přepínače příkaz a stiskněte klávesu **Enter**. Ve výchozím nastavení, což vytváří *InlineTasks.csproj* souborů a procesy výchozí cíl TestBuild, která vyvolá úlohu Hello.  
   
-4.  Prohlédněte si výstup v **okno příkazového řádku**. Zobrazí se tento řádek:  
+4. Prohlédněte si výstup v **okno příkazového řádku**. Zobrazí se tento řádek:  
   
-     `Hello, world!`  
+    `Hello, world!`  
   
-    > [!NOTE]
-    >  Pokud se nezobrazí zpráva hello, zkuste to znovu uložit soubor projektu a pak spusťte úlohu Hello.  
+   > [!NOTE]
+   >  Pokud se nezobrazí zpráva hello, zkuste to znovu uložit soubor projektu a pak spusťte úlohu Hello.  
   
- Podle střídavě editoru kódu a **okno příkazového řádku**, můžete změnit soubor projektu a rychle zobrazit výsledky.  
+   Podle střídavě editoru kódu a **okno příkazového řádku**, můžete změnit soubor projektu a rychle zobrazit výsledky.  
   
 ## <a name="define-the-echo-task"></a>Definování úkolů Echo  
  Vytvoření vložené úlohy, která přijímá řetězcový parametr a zobrazí řetězec na výchozí protokolování zařízení.  
   
 #### <a name="to-define-the-echo-task"></a>K definování úkolů Echo  
   
-1.  V editoru kódu nahraďte Hello úloh a cíl TestBuild pomocí následujícího kódu.  
+1. V editoru kódu nahraďte Hello úloh a cíl TestBuild pomocí následujícího kódu.  
   
-    ```xml  
-    <UsingTask TaskName="Echo" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <Text Required="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          Log.LogMessage(Text, MessageImportance.High);  
-        </Code>  
-      </Task>  
-    </UsingTask>  
-    <Target Name="TestBuild">  
-      <Echo Text="Greetings!" />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="Echo" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <Text Required="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         Log.LogMessage(Text, MessageImportance.High);  
+       </Code>  
+     </Task>  
+   </UsingTask>  
+   <Target Name="TestBuild">  
+     <Echo Text="Greetings!" />  
+   </Target>  
+   ```  
   
-2.  V **okno příkazového řádku**, typ **msbuild** bez přepínače příkaz a stiskněte klávesu **Enter**. Ve výchozím nastavení to zpracuje výchozí cíl TestBuild, která vyvolá úlohu odezvu.  
+2. V **okno příkazového řádku**, typ **msbuild** bez přepínače příkaz a stiskněte klávesu **Enter**. Ve výchozím nastavení to zpracuje výchozí cíl TestBuild, která vyvolá úlohu odezvu.  
   
-3.  Prohlédněte si výstup v **okno příkazového řádku**. Zobrazí se tento řádek:  
+3. Prohlédněte si výstup v **okno příkazového řádku**. Zobrazí se tento řádek:  
   
-     `Greetings!`  
+    `Greetings!`  
   
- Tento kód definuje vložené úlohy, který má název odezvu a vyžaduje právě jeden vstupní parametr textu. Ve výchozím nastavení jsou parametry typu System.String. Hodnota parametru Text je nastavena při cíl TestBuild vyvolá úlohu odezvu.  
+   Tento kód definuje vložené úlohy, který má název odezvu a vyžaduje právě jeden vstupní parametr textu. Ve výchozím nastavení jsou parametry typu System.String. Hodnota parametru Text je nastavena při cíl TestBuild vyvolá úlohu odezvu.  
   
 ## <a name="define-the-adder-task"></a>Definovat úlohu přidávání  
  Vytvoření vložené úlohy, který přidá dva celočíselné parametry a jejich součet jako vlastnost MSBuild generuje.  
   
 #### <a name="to-define-the-adder-task"></a>Chcete-li definovat přidávání úloh  
   
-1.  V editoru kódu nahraďte Echo úloh a cíl TestBuild pomocí následujícího kódu.  
+1. V editoru kódu nahraďte Echo úloh a cíl TestBuild pomocí následujícího kódu.  
   
-    ```xml  
-    <UsingTask TaskName="Adder" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <A ParameterType="System.Int32" Required="true" />  
-        <B ParameterType="System.Int32" Required="true" />  
-        <C ParameterType="System.Int32" Output="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          C = A + B;  
-        </Code>  
-      </Task>  
-    </UsingTask>    
-    <Target Name="TestBuild">  
-      <Adder A="4" B="5">  
-        <Output PropertyName="Sum" TaskParameter="C" />  
-      </Adder>  
-      <Message Text="The sum is $(Sum)" Importance="High" />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="Adder" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <A ParameterType="System.Int32" Required="true" />  
+       <B ParameterType="System.Int32" Required="true" />  
+       <C ParameterType="System.Int32" Output="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         C = A + B;  
+       </Code>  
+     </Task>  
+   </UsingTask>    
+   <Target Name="TestBuild">  
+     <Adder A="4" B="5">  
+       <Output PropertyName="Sum" TaskParameter="C" />  
+     </Adder>  
+     <Message Text="The sum is $(Sum)" Importance="High" />  
+   </Target>  
+   ```  
   
-2.  V **okno příkazového řádku**, typ **msbuild** bez přepínače příkaz a stiskněte klávesu **Enter**. Ve výchozím nastavení to zpracuje výchozí cíl TestBuild, která vyvolá úlohu odezvu.  
+2. V **okno příkazového řádku**, typ **msbuild** bez přepínače příkaz a stiskněte klávesu **Enter**. Ve výchozím nastavení to zpracuje výchozí cíl TestBuild, která vyvolá úlohu odezvu.  
   
-3.  Prohlédněte si výstup v **okno příkazového řádku**. Zobrazí se tento řádek:  
+3. Prohlédněte si výstup v **okno příkazového řádku**. Zobrazí se tento řádek:  
   
-     `The sum is 9`  
+    `The sum is 9`  
   
- Tento kód definuje vložené úlohy, který je pojmenován modul sčítání a má dvě požadované vstupní parametry celé číslo, A a B, a jeden celočíselný výstupní parametr, C. Přidávání úloh přidá dva vstupní parametry a vrátí součet výstupní parametr. Součet je vygenerován jako vlastnost MSBuild `Sum`. Hodnoty vstupních parametrů jsou nastavené, když cíl TestBuild vyvolá úlohu přidávání.  
+   Tento kód definuje vložené úlohy, který je pojmenován modul sčítání a má dvě požadované vstupní parametry celé číslo, A a B, a jeden celočíselný výstupní parametr, C. Přidávání úloh přidá dva vstupní parametry a vrátí součet výstupní parametr. Součet je vygenerován jako vlastnost MSBuild `Sum`. Hodnoty vstupních parametrů jsou nastavené, když cíl TestBuild vyvolá úlohu přidávání.  
   
 ## <a name="define-the-regx-task"></a>Definování úkolů RegX  
  Vytvoření vložené úlohy, která přijímá skupinu položek a regulárních výrazů a vrátí seznam všech položek, které mají obsah souboru, který odpovídá výrazu.  
   
 #### <a name="to-define-the-regx-task"></a>K definování úkolů RegX  
   
-1.  V editoru kódu nahraďte TestBuild cíl a přidávání úloh pomocí následujícího kódu.  
+1. V editoru kódu nahraďte TestBuild cíl a přidávání úloh pomocí následujícího kódu.  
   
-    ```xml  
-    <UsingTask TaskName="RegX" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <Expression Required="true" />  
-        <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
-        <Result ParameterType="Microsoft.Build.Framework.ITaskItem[]" Output="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Using Namespace="System.Text.RegularExpressions"/>  
-        <Code Type="Fragment" Language="cs">  
-    <![CDATA[  
-          if (Files.Length > 0)  
-          {  
-            Result = new TaskItem[Files.Length];  
-            for (int i = 0; i < Files.Length; i++)  
-            {  
-              ITaskItem item = Files[i];  
-              string path = item.GetMetadata("FullPath");  
-              using(StreamReader rdr = File.OpenText(path))  
-              {  
-                if (Regex.Match(rdr.ReadToEnd(), Expression).Success)  
-                {  
-                  Result[i] = new TaskItem(item.ItemSpec);  
-                }  
-              }  
-            }  
-          }  
-    ]]>  
-        </Code>  
-      </Task>  
-    </UsingTask>    
-    <Target Name="TestBuild">  
-      <RegX Expression="public|protected" Files="@(Compile)">  
-        <Output ItemName="MatchedFiles" TaskParameter="Result" />  
-      </RegX>  
-      <Message Text="Input files: @(Compile)" Importance="High" />  
-      <Message Text="Matched files: @(MatchedFiles)" Importance="High" />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="RegX" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <Expression Required="true" />  
+       <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
+       <Result ParameterType="Microsoft.Build.Framework.ITaskItem[]" Output="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Using Namespace="System.Text.RegularExpressions"/>  
+       <Code Type="Fragment" Language="cs">  
+   <![CDATA[  
+         if (Files.Length > 0)  
+         {  
+           Result = new TaskItem[Files.Length];  
+           for (int i = 0; i < Files.Length; i++)  
+           {  
+             ITaskItem item = Files[i];  
+             string path = item.GetMetadata("FullPath");  
+             using(StreamReader rdr = File.OpenText(path))  
+             {  
+               if (Regex.Match(rdr.ReadToEnd(), Expression).Success)  
+               {  
+                 Result[i] = new TaskItem(item.ItemSpec);  
+               }  
+             }  
+           }  
+         }  
+   ]]>  
+       </Code>  
+     </Task>  
+   </UsingTask>    
+   <Target Name="TestBuild">  
+     <RegX Expression="public|protected" Files="@(Compile)">  
+       <Output ItemName="MatchedFiles" TaskParameter="Result" />  
+     </RegX>  
+     <Message Text="Input files: @(Compile)" Importance="High" />  
+     <Message Text="Matched files: @(MatchedFiles)" Importance="High" />  
+   </Target>  
+   ```  
   
-2.  V **okno příkazového řádku**, typ **msbuild** bez přepínače příkaz a stiskněte klávesu **Enter**. Ve výchozím nastavení to zpracuje TestBuild, která vyvolá úlohu RegX výchozí cíl.  
+2. V **okno příkazového řádku**, typ **msbuild** bez přepínače příkaz a stiskněte klávesu **Enter**. Ve výchozím nastavení to zpracuje TestBuild, která vyvolá úlohu RegX výchozí cíl.  
   
-3.  Prohlédněte si výstup v **okno příkazového řádku**. Měli byste vidět tyto řádky:  
+3. Prohlédněte si výstup v **okno příkazového řádku**. Měli byste vidět tyto řádky:  
   
-    ```
-    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
-    ```  
+   ```
+   Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
+   ```  
   
-    ```
-    Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs
-    ```  
+   ```
+   Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs
+   ```  
   
- Tento kód definuje vložené úlohy, která má název RegX a má tyto tři parametry:  
+   Tento kód definuje vložené úlohy, která má název RegX a má tyto tři parametry:  
   
--   `Expression` je vstupní parametr vyžaduje řetězec, který má hodnotu, která je regulární výraz odpovídat. V tomto příkladu výraz odpovídá slovům, "public" nebo "chráněné".  
+- `Expression` je vstupní parametr vyžaduje řetězec, který má hodnotu, která je regulární výraz odpovídat. V tomto příkladu výraz odpovídá slovům, "public" nebo "chráněné".  
   
--   `Files` je vstupní parametr požadovanou položku seznamu, který má hodnotu, která je seznam souborů, které mají hledat shody. V tomto příkladu `Files` nastavena `Compile` položku, která obsahuje zdrojové soubory projektu.  
+- `Files` je vstupní parametr požadovanou položku seznamu, který má hodnotu, která je seznam souborů, které mají hledat shody. V tomto příkladu `Files` nastavena `Compile` položku, která obsahuje zdrojové soubory projektu.  
   
--   `Result` je výstupní parametr, který má hodnotu, která je seznam souborů, které mají obsah, které odpovídají regulárnímu výrazu.  
+- `Result` je výstupní parametr, který má hodnotu, která je seznam souborů, které mají obsah, které odpovídají regulárnímu výrazu.  
   
- Hodnota vstupní parametry jsou nastaveny při cíl TestBuild vyvolá úlohu RegX. Úloha RegX přečte každý soubor a vrátí seznam souborů, které odpovídají regulárnímu výrazu. Tento seznam se vrátí jako `Result` výstupní parametr, který je vygenerován jako položky nástroje MSBuild `MatchedFiles`.  
+  Hodnota vstupní parametry jsou nastaveny při cíl TestBuild vyvolá úlohu RegX. Úloha RegX přečte každý soubor a vrátí seznam souborů, které odpovídají regulárnímu výrazu. Tento seznam se vrátí jako `Result` výstupní parametr, který je vygenerován jako položky nástroje MSBuild `MatchedFiles`.  
   
 ### <a name="handle-reserved-characters"></a>Zpracování vyhrazené znaky  
  Analyzátor MSBuild zpracovává vložené úlohy jako XML. Znaky, které obsahují rezervované význam ve formátu XML, třeba "\<" a ">", jsou zjištěny a zpracovávány jako by byly XML a ne zdrojový kód .NET. Zahrnout vyhrazené znaky výrazů v kódu, jako `Files.Length > 0`, zapisovat `Code` element tak, aby se jeho obsah obsažených ve výrazu CDATA následujícím způsobem:  

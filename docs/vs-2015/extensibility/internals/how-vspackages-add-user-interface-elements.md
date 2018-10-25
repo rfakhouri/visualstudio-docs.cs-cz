@@ -17,12 +17,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f97202daa4626f0060a53781f609382bf082c17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa1ffdc982fa3f9773770957a0dbb177ad3d4156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872444"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak balíčky VSPackages přidávají prvky uživatelského rozhraní
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,15 +94,15 @@ VSPackage můžete přidat prvky uživatelského rozhraní (UI, například nab�
 #### <a name="menus"></a>Nabídky  
  Každou nabídku je definován jako [Menu Element](../../extensibility/menu-element.md) v `Menus` oddílu. Nabídky musí mít `guid`, `id`, a `priority` atributy a `Parent` element a také následující doplňkové atributy a podřízené položky:  
   
--   A `type` atribut, který určuje, zda by měl zobrazit v nabídce v integrovaném vývojovém prostředí jako typ nabídky nebo panelu nástrojů.  
+- A `type` atribut, který určuje, zda by měl zobrazit v nabídce v integrovaném vývojovém prostředí jako typ nabídky nebo panelu nástrojů.  
   
--   A [Strings – Element](../../extensibility/strings-element.md) , která obsahuje [ButtonText – Element](../../extensibility/buttontext-element.md), který určuje název nabídky v integrovaném vývojovém prostředí a [CommandName – Element](../../extensibility/commandname-element.md), který určuje název, který je používané **příkaz** okna pro přístup k nabídce.  
+- A [Strings – Element](../../extensibility/strings-element.md) , která obsahuje [ButtonText – Element](../../extensibility/buttontext-element.md), který určuje název nabídky v integrovaném vývojovém prostředí a [CommandName – Element](../../extensibility/commandname-element.md), který určuje název, který je používané **příkaz** okna pro přístup k nabídce.  
   
--   Volitelné příznaky. A [Command Flag – Element](../../extensibility/command-flag-element.md) může objevit v definici nabídce můžete změnit její vzhled nebo chování v integrovaném vývojovém prostředí.  
+- Volitelné příznaky. A [Command Flag – Element](../../extensibility/command-flag-element.md) může objevit v definici nabídce můžete změnit její vzhled nebo chování v integrovaném vývojovém prostředí.  
   
- Každý `Menu` element musí mít skupinu jako jeho nadřazeným prvkem, pokud není prvek ukotvitelné jako je například panel nástrojů. Ukotvitelné nabídka je vlastní nadřazený objekt. Další informace o nabídkách a hodnoty pro `type` atributu naleznete v tématu [Menu Element](../../extensibility/menu-element.md) dokumentaci.  
+  Každý `Menu` element musí mít skupinu jako jeho nadřazeným prvkem, pokud není prvek ukotvitelné jako je například panel nástrojů. Ukotvitelné nabídka je vlastní nadřazený objekt. Další informace o nabídkách a hodnoty pro `type` atributu naleznete v tématu [Menu Element](../../extensibility/menu-element.md) dokumentaci.  
   
- Následující příklad ukazuje, které se zobrazí na řádku nabídek sady Visual Studio, vedle položky nabídky **nástroje** nabídky.  
+  Následující příklad ukazuje, které se zobrazí na řádku nabídek sady Visual Studio, vedle položky nabídky **nástroje** nabídky.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -163,11 +163,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos –  
  Combos – jsou definovány v `Combos` oddílu. Každý `Combo` element reprezentuje pole rozevíracího seznamu v integrovaném vývojovém prostředí. Pole se seznamem může nebo nemusí být zapisovat i jiní uživatelé, závisí na hodnotě `type` atribut pole se seznamem. Combos – mají stejné prvky a chování, které tlačítka mají a může mít také následující doplňkové atributy:  
   
--   A `defaultWidth` atribut, který určuje šířka v pixelech.  
+- A `defaultWidth` atribut, který určuje šířka v pixelech.  
   
--   `idCommandList` Atribut, který určuje seznam, který obsahuje položky, které se zobrazí v seznamu. Seznam příkazů musí být deklarována ve stejném `GuidSymbol` uzel, který obsahuje pole se seznamem.  
+- `idCommandList` Atribut, který určuje seznam, který obsahuje položky, které se zobrazí v seznamu. Seznam příkazů musí být deklarována ve stejném `GuidSymbol` uzel, který obsahuje pole se seznamem.  
   
- Následující příklad definuje prvek pole se seznamem.  
+  Následující příklad definuje prvek pole se seznamem.  
   
 ```xml  
 <Combos>  

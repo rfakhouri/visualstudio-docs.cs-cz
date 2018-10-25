@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 1a9d47431497f05fd5538510b39b44298587dd0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d77d63cc82b7af6281183b3eae67d09b0454fffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287362"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868258"
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Návod: Vytvoření datové sady pomocí Návrháře DataSet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ V tomto návodu vytvoříte datovou sadu pomocí **Návrhář Dataset**. Bude v�
   
  Úlohy v tomto návodu zahrnují:  
   
--   Vytvoření nového **aplikace Windows** projektu.  
+- Vytvoření nového **aplikace Windows** projektu.  
   
--   Přidání prázdné **datovou sadu** položky do projektu.  
+- Přidání prázdné **datovou sadu** položky do projektu.  
   
--   Vytvoření a konfigurace zdroje dat v aplikaci sestavením datové sady s **Návrhář Dataset**.  
+- Vytvoření a konfigurace zdroje dat v aplikaci sestavením datové sady s **Návrhář Dataset**.  
   
--   Vytvoření připojení k databázi Northwind v **Průzkumníka serveru**.  
+- Vytvoření připojení k databázi Northwind v **Průzkumníka serveru**.  
   
--   Vytváření tabulek pomocí instancí TableAdapter v datové sadě založené na tabulkách v databázi.  
+- Vytváření tabulek pomocí instancí TableAdapter v datové sadě založené na tabulkách v databázi.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  Pokud chcete dokončit tento návod, potřebujete:  

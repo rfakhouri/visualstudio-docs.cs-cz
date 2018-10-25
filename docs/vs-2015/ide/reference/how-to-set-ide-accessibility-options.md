@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5701efe5da55ebd85d683da55f90f41223220c91
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 485529a8be2adf57f7b79a3d2f0844d662920448
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205891"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867283"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Postupy: nastavení možnosti usnadnění přístupu IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "49205891"
  Můžete také změnit výchozí barvy pro text, okraj ukazatele, prázdné znaky a prvky kódu v editoru.  
   
 > [!NOTE]
->  Chcete-li použít vysoký kontrast – barvy pro všechny aplikace pro windows v operačním systému, stiskněte vlevo **ALT +** vlevo **SHIFT + PRINT SCREEN**. Pokud [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] je otevřete, zavřete a znovu otevřít [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plně implementovat vysoký kontrast – barvy.  
+>  Chcete-li použít vysoký kontrast – barvy pro všechny aplikace pro windows v operačním systému, stiskněte vlevo <strong>ALT +</strong>vlevo **SHIFT + PRINT SCREEN**. Pokud [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] je otevřete, zavřete a znovu otevřít [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plně implementovat vysoký kontrast – barvy.  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Chcete-li změnit barva položek v editoru  
   

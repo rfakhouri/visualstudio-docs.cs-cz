@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 372cc01f1d7a0a21832ff099472e444d43d7a699
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 41008d1c2808a5a6e6428670a3e7dbbf1041caee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819336"
 ---
 # <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Postupy: vytvoření vlastního editoru dat pro adaptér diagnostických dat
 
@@ -38,128 +38,128 @@ Kompletní příklad diagnostických dat adaptéru projektu, včetně vlastního
 
 ## <a name="to-create-a-custom-editor-for-your-diagnostic-data-adapter"></a>K vytvoření vlastního editoru pro adaptér diagnostických dat
 
-1.  Vytvoření uživatelského ovládacího prvku v projektu pro adaptér diagnostických dat:
+1. Vytvoření uživatelského ovládacího prvku v projektu pro adaptér diagnostických dat:
 
-    1.  Klikněte pravým tlačítkem na projekt kódu, který obsahuje vaše třída adaptéru diagnostických dat, přejděte na **přidat** a přejděte na **uživatelský ovládací prvek**.
+   1.  Klikněte pravým tlačítkem na projekt kódu, který obsahuje vaše třída adaptéru diagnostických dat, přejděte na **přidat** a přejděte na **uživatelský ovládací prvek**.
 
-    2.  V tomto příkladu přidejte popisek do formuláře s tímto textem: **název datového souboru:** a textové pole s názvem **FileTextBox** , který vám umožní uživateli zadat potřebné údaje.
+   2.  V tomto příkladu přidejte popisek do formuláře s tímto textem: **název datového souboru:** a textové pole s názvem **FileTextBox** , který vám umožní uživateli zadat potřebné údaje.
 
-    > [!NOTE]
-    > Aktuálně jsou podporovány pouze ovládací prvky Windows Forms uživatele.
+   > [!NOTE]
+   > Aktuálně jsou podporovány pouze ovládací prvky Windows Forms uživatele.
 
-2.  Přidejte tyto řádky do části deklarace:
+2. Přidejte tyto řádky do části deklarace:
 
-    ```csharp
-    using System.Xml;
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    ```
+   ```csharp
+   using System.Xml;
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   ```
 
-3.  Převeďte tento uživatelský ovládací prvek na vlastní editor.
+3. Převeďte tento uživatelský ovládací prvek na vlastní editor.
 
-    1.  Klikněte pravým tlačítkem na uživatelský ovládací prvek v projektu kódu a přejděte na **zobrazení kódu**.
+   1.  Klikněte pravým tlačítkem na uživatelský ovládací prvek v projektu kódu a přejděte na **zobrazení kódu**.
 
-    2.  Nastavení třídu pro implementaci rozhraní editoru <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> následujícím způsobem:
+   2.  Nastavení třídu pro implementaci rozhraní editoru <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> následujícím způsobem:
 
-    ```csharp
-    public partial class MyDataConfigEditor :
-         UserControl, IDataCollectorConfigurationEditor
-    ```
+   ```csharp
+   public partial class MyDataConfigEditor :
+        UserControl, IDataCollectorConfigurationEditor
+   ```
 
-    1.  Klikněte pravým tlačítkem na <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> v kódu a vyberte **implementovat rozhraní** příkazu. Metody, které je nutné implementovat pro toto rozhraní se přidají do vaší třídy.
+   1.  Klikněte pravým tlačítkem na <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> v kódu a vyberte **implementovat rozhraní** příkazu. Metody, které je nutné implementovat pro toto rozhraní se přidají do vaší třídy.
 
-    2.  Přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> do uživatelského ovládacího prvku pro editor k jeho identifikaci jako editoru adaptéru diagnostických dat, nahrazení **společnosti**, **produktu**, a **verze** s odpovídajícími informacemi pro adaptér diagnostických dat:
+   2.  Přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> do uživatelského ovládacího prvku pro editor k jeho identifikaci jako editoru adaptéru diagnostických dat, nahrazení **společnosti**, **produktu**, a **verze** s odpovídajícími informacemi pro adaptér diagnostických dat:
 
-        ```csharp
-        [DataCollectorConfigurationEditorTypeUri(
-            "configurationeditor://MyCompany/MyConfigEditor/1.0")]
-        ```
+       ```csharp
+       [DataCollectorConfigurationEditorTypeUri(
+           "configurationeditor://MyCompany/MyConfigEditor/1.0")]
+       ```
 
-4.  Přidejte dvě soukromé proměnné následujícím způsobem:
+4. Přidejte dvě soukromé proměnné následujícím způsobem:
 
-    ```csharp
-    private DataCollectorSettings collectorSettings;
-    private IServiceProvider ServiceProvider { get; set; }
-    ```
+   ```csharp
+   private DataCollectorSettings collectorSettings;
+   private IServiceProvider ServiceProvider { get; set; }
+   ```
 
-5.  Přidejte kód pro inicializaci editoru pro adaptér diagnostických dat. Výchozí hodnoty do polí můžete přidat do vašeho uživatelského ovládacího prvku pomocí dat, která je v nastavení proměnné. Jedná se o data, která je v `<DefaultConfiguration>` element v konfiguračním souboru XML pro adaptér.
+5. Přidejte kód pro inicializaci editoru pro adaptér diagnostických dat. Výchozí hodnoty do polí můžete přidat do vašeho uživatelského ovládacího prvku pomocí dat, která je v nastavení proměnné. Jedná se o data, která je v `<DefaultConfiguration>` element v konfiguračním souboru XML pro adaptér.
 
-    ```csharp
-    public void Initialize(
-        IServiceProvider svcProvider,
-        DataCollectorSettings settings)
-    {
-        ServiceProvider = svcProvider;
-        collectorSettings = settings;
+   ```csharp
+   public void Initialize(
+       IServiceProvider svcProvider,
+       DataCollectorSettings settings)
+   {
+       ServiceProvider = svcProvider;
+       collectorSettings = settings;
 
-        // Display the default file name as listed in the settings file.
-        this.SuspendLayout();
-        this.FileTextBox.Text = getText(collectorSettings.Configuration);
-        this.ResumeLayout();
-    }
-    ```
+       // Display the default file name as listed in the settings file.
+       this.SuspendLayout();
+       this.FileTextBox.Text = getText(collectorSettings.Configuration);
+       this.ResumeLayout();
+   }
+   ```
 
-6.  Přidejte kód pro uložení dat z ovládacích prvků v editoru zpět do formátu XML požadovaného rozhraním API adaptéru diagnostických dat následujícím způsobem:
+6. Přidejte kód pro uložení dat z ovládacích prvků v editoru zpět do formátu XML požadovaného rozhraním API adaptéru diagnostických dat následujícím způsobem:
 
-    ```csharp
-    public DataCollectorSettings SaveData()
-    {
-        collectorSettings.Configuration.InnerXml =
-            String.Format(
-    @"<MyCollectorName
-        xmlns=""http://MyCompany/schemas/MyDiagnosticDataCollector/1.0"">
-      <File FullPath=""{0}"" />
-    </MyCollectorName>",
-        FileTextBox.Text);
-        return collectorSettings;
-    }
-    ```
+   ```csharp
+   public DataCollectorSettings SaveData()
+   {
+       collectorSettings.Configuration.InnerXml =
+           String.Format(
+   @"<MyCollectorName
+       xmlns=""http://MyCompany/schemas/MyDiagnosticDataCollector/1.0"">
+     <File FullPath=""{0}"" />
+   </MyCollectorName>",
+       FileTextBox.Text);
+       return collectorSettings;
+   }
+   ```
 
-7.  Pokud je pro vás důležité, přidejte kód pro ověření správnosti v data `VerifyData` metodu, nebo může mít metoda vrátit `true`.
+7. Pokud je pro vás důležité, přidejte kód pro ověření správnosti v data `VerifyData` metodu, nebo může mít metoda vrátit `true`.
 
-    ```csharp
-    public bool VerifyData()
-    {
-        // Not currently verifying data
-        return true;
-    }
-    ```
+   ```csharp
+   public bool VerifyData()
+   {
+       // Not currently verifying data
+       return true;
+   }
+   ```
 
-8.  (Volitelné) Můžete přidat kód pro obnovení dat do původního nastavení, které jsou k dispozici v konfiguračním souboru XML v `ResetToAgentDefaults()` metodu, která používá soukromou `getText()` metody.
+8. (Volitelné) Můžete přidat kód pro obnovení dat do původního nastavení, které jsou k dispozici v konfiguračním souboru XML v `ResetToAgentDefaults()` metodu, která používá soukromou `getText()` metody.
 
-    ```csharp
-    // Reset to default value from XML configuration
-    // using a custom getText() method
-    public void ResetToAgentDefaults()
-    {
-        this.FileTextBox.Text = getText(collectorSettings.DefaultConfiguration);
-    }
+   ```csharp
+   // Reset to default value from XML configuration
+   // using a custom getText() method
+   public void ResetToAgentDefaults()
+   {
+       this.FileTextBox.Text = getText(collectorSettings.DefaultConfiguration);
+   }
 
-    // Local method to read the configuration settings
-    private string getText(XmlElement element)
-    {
-        // Setup namespace manager with our namespace
-        XmlNamespaceManager nsmgr =
-            new XmlNamespaceManager(
-                element.OwnerDocument.NameTable);
+   // Local method to read the configuration settings
+   private string getText(XmlElement element)
+   {
+       // Setup namespace manager with our namespace
+       XmlNamespaceManager nsmgr =
+           new XmlNamespaceManager(
+               element.OwnerDocument.NameTable);
 
-        // Find all the "File" elements under our configuration
-        XmlNodeList files = element.SelectNodes("//ns:MyCollectorName/ns:File", nsmgr);
+       // Find all the "File" elements under our configuration
+       XmlNodeList files = element.SelectNodes("//ns:MyCollectorName/ns:File", nsmgr);
 
-        string result = String.Empty;
-        if (files.Count > 0)
-        {
-            XmlAttribute pathAttribute = files[0].Attributes["FullPath"];
-            if (pathAttribute != null &&
-                !String.IsNullOrEmpty(pathAttribute.Value))
-            {
-                result = pathAttribute.Value;
-            }
-        }
+       string result = String.Empty;
+       if (files.Count > 0)
+       {
+           XmlAttribute pathAttribute = files[0].Attributes["FullPath"];
+           if (pathAttribute != null &&
+               !String.IsNullOrEmpty(pathAttribute.Value))
+           {
+               result = pathAttribute.Value;
+           }
+       }
 
-        return result;
-    }
-    ```
+       return result;
+   }
+   ```
 
 9. Sestavte řešení. Zkopírujte sestavení adaptéru diagnostických dat a konfigurační soubor XML (`<diagnostic data adapter name>.dll.config`) do následujícího umístění založeného na instalačním adresáři: *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\ PrivateAssemblies\DataCollectors*.
 
@@ -184,7 +184,7 @@ Kompletní příklad diagnostických dat adaptéru projektu, včetně vlastního
 
      K výsledkům testů je připojen datový soubor, který jste zadali v editoru.
 
- Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat při testování (testovací plány Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts) nebo [shromažďování diagnostických dat v ruční testy () Plány testování v Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
+    Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat při testování (testovací plány Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts) nebo [shromažďování diagnostických dat v ruční testy () Plány testování v Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 ## <a name="see-also"></a>Viz také:
 

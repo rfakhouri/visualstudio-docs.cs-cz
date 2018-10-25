@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 36cc776f18990e7cc97b1583267c9f9f9b9c95eb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885654"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Začínáme s jazyky specifickými pro doménu
 
@@ -43,11 +43,12 @@ Zbytek tohoto přehledu je návod, který představuje základní operace vytvá
 
 Pokud chcete definovat DSL, musíte mít nainstalovaný následující komponenty:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Sada Modeling SDK pro Visual Studio||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Sada Modeling SDK pro Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -143,7 +144,7 @@ Experimentální sady Visual Studio bude vypadat podobně jako v následujícím
 
 ### <a name="the-content-of-a-model"></a>Obsah modelu
 
-Obsah souboru, který je instancí DSL je volána *modelu*. Model obsahuje *modelu ** prvky* a *odkazy* mezi prvky. Definice DSL Určuje, jaké typy prvků modelu a odkazy mohou existovat v modelu. Například v DSL vytvořené z šablony minimální jazykový, je jeden typ prvku modelu a jeden typ odkazu.
+Obsah souboru, který je instancí DSL je volána *modelu*. Model obsahuje *modelu*<em>prvky</em> a *odkazy* mezi prvky. Definice DSL Určuje, jaké typy prvků modelu a odkazy mohou existovat v modelu. Například v DSL vytvořené z šablony minimální jazykový, je jeden typ prvku modelu a jeden typ odkazu.
 
 Definice DSL můžete určit, jak se model zobrazen v diagramu. Můžete vybrat z různých stylů obrazců a konektorů. Můžete určit, že nějaké obrazce uvnitř ostatním tvarům.
 
@@ -246,39 +247,39 @@ Přejmenujte existující doménovými třídami a vztahy. Například od defini
 
 ##### <a name="to-add-properties-and-display-them"></a>Přidání vlastností a jejich zobrazení
 
-1.  Přidejte vlastnosti.
+1. Přidejte vlastnosti.
 
-    1.  V definici DSL diagramu, klikněte pravým tlačítkem na **osoba** doménové třídy, přejděte na příkaz **přidat**a potom klikněte na tlačítko **doménovou vlastnost**.
+   1.  V definici DSL diagramu, klikněte pravým tlačítkem na **osoba** doménové třídy, přejděte na příkaz **přidat**a potom klikněte na tlačítko **doménovou vlastnost**.
 
-    2.  Zadejte seznam nové názvy vlastností, jako například **narození** a **smrti**. Stisknutím klávesy **Enter** po každé z nich.
+   2.  Zadejte seznam nové názvy vlastností, jako například **narození** a **smrti**. Stisknutím klávesy **Enter** po každé z nich.
 
-2.  Přidáte dekoratéry, které se zobrazí vlastnosti ve tvaru.
+2. Přidáte dekoratéry, které se zobrazí vlastnosti ve tvaru.
 
-    1.  Postupujte podle Šedá čára, která rozšiřuje z doménové třídy osoba na druhé straně diagramu. Toto je mapa elementu diagramu. Doménová třída odkazuje na třídu tvaru.
+   1.  Postupujte podle Šedá čára, která rozšiřuje z doménové třídy osoba na druhé straně diagramu. Toto je mapa elementu diagramu. Doménová třída odkazuje na třídu tvaru.
 
-    2.  Klikněte pravým tlačítkem na tuto třídu tvar, přejděte na **přidat**a potom klikněte na tlačítko **Text Dekoratér**.
+   2.  Klikněte pravým tlačítkem na tuto třídu tvar, přejděte na **přidat**a potom klikněte na tlačítko **Text Dekoratér**.
 
-    3.  Přidejte dva dekoratéry s názvy, například **BirthDecorator** a **DeathDecorator**.
+   3.  Přidejte dva dekoratéry s názvy, například **BirthDecorator** a **DeathDecorator**.
 
-    4.  Vyberte každý nový dekoratér a v okně Vlastnosti nastavte **pozice** pole. Určuje, kde se zobrazí hodnota vlastnosti domény na obrazec. Například nastavte **InnerBottomLeft** a **InnerBottomRight**.
+   4.  Vyberte každý nový dekoratér a v okně Vlastnosti nastavte **pozice** pole. Určuje, kde se zobrazí hodnota vlastnosti domény na obrazec. Například nastavte **InnerBottomLeft** a **InnerBottomRight**.
 
-         ![Definici obrazce oddílu](../modeling/media/familyt_compartment.png)
+        ![Definici obrazce oddílu](../modeling/media/familyt_compartment.png)
 
-3.  Mapovat dekoratéry vlastnosti.
+3. Mapovat dekoratéry vlastnosti.
 
-    1.  Otevřete okno Podrobnosti DSL. Obvykle je na kartě vedle v okně výstup. Pokud nevidíte, na **zobrazení** nabídky, přejděte k **ostatní Windows**a potom klikněte na tlačítko **podrobnosti DSL**.
+   1.  Otevřete okno Podrobnosti DSL. Obvykle je na kartě vedle v okně výstup. Pokud nevidíte, na **zobrazení** nabídky, přejděte k **ostatní Windows**a potom klikněte na tlačítko **podrobnosti DSL**.
 
-    2.  Na diagramem definice DSL, klikněte na řádek, který se připojí **osoba** doménovou třídu třídy obrazce.
+   2.  Na diagramem definice DSL, klikněte na řádek, který se připojí **osoba** doménovou třídu třídy obrazce.
 
-    3.  V **podrobnosti DSL**na **mapování Dekoratéru** kartu, klikněte na zaškrtávací políčko na nenamapované dekoratér. V **vlastnost Display, vlastnost**, vyberte doménová vlastnost, ke kterému chcete mapovat. Například namapovat **BirthDecorator** k **narození**.
+   3.  V **podrobnosti DSL**na **mapování Dekoratéru** kartu, klikněte na zaškrtávací políčko na nenamapované dekoratér. V **vlastnost Display, vlastnost**, vyberte doménová vlastnost, ke kterému chcete mapovat. Například namapovat **BirthDecorator** k **narození**.
 
-4.  Uložit DSL, klikněte na možnost Transformovat všechny šablony a stiskněte klávesu F5.
+4. Uložit DSL, klikněte na možnost Transformovat všechny šablony a stiskněte klávesu F5.
 
-5.  V diagramu modelu ukázka ověřte, že můžete nyní kliknout pozic, kterou jste zvolili a zadejte hodnoty do nich. Kromě toho, když vyberete **osoba** tvaru, v okně vlastností zobrazuje nové vlastnosti narození a smrti.
+5. V diagramu modelu ukázka ověřte, že můžete nyní kliknout pozic, kterou jste zvolili a zadejte hodnoty do nich. Kromě toho, když vyberete **osoba** tvaru, v okně vlastností zobrazuje nové vlastnosti narození a smrti.
 
-6.  V souboru .tt můžete přidat kód, který získá vlastnosti každé osoby.
+6. V souboru .tt můžete přidat kód, který získá vlastnosti každé osoby.
 
- ![Řada stromového diagramu, nástrojů a Průzkumníku](../modeling/media/familyt_instance.png)
+   ![Řada stromového diagramu, nástrojů a Průzkumníku](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Definovat nové třídy
  Doménovými třídami a vztahy můžete přidat do modelu. Můžete například vytvořit novou třídu k vyjádření měst a nový vztah k reprezentaci, uživatel žít ve městě.

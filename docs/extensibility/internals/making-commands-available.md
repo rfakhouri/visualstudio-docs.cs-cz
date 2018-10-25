@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd7344fe7227f6fa7afd00684a99d8172bad8736
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c1292dc3879effa53f3b4a41b87374a3a5f46ff0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857130"
 ---
 # <a name="making-commands-available"></a>Zpřístupnění příkazů
 Při více rozšíření VSPackages přidávají do sady Visual Studio, může být pomocí příkazů přeplněné uživatelského rozhraní (UI). Můžete naprogramovat váš balíček ke zmírnění tohoto problému, následujícím způsobem:
@@ -54,12 +54,13 @@ Všimněte si, že opožděné načtení může také zvýšit výkon spuštěn�
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sleduje změny, které jsou výsledkem akce uživatelů, například načítání projektu nebo pokud v úpravách sestavování. Změny se projeví, je automaticky upravit vzhled integrovaného vývojového prostředí. Následující tabulka obsahuje čtyři hlavní kontexty IDE změnit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitorování.
 
-|Typ kontextu|Popis|
-|---------------------|-----------------|
-|Typ aktivní projekt|Pro většinu typů projektu to `GUID` hodnota je stejná jako identifikátor GUID sady VSPackage, která implementuje projektu. Ale [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projektů pomocí typu projektu `GUID` jako hodnotu.|
-|Aktivní okno|Obvykle je to poslední aktivního okna dokumentu, který stanoví kontext aktuálního uživatelského rozhraní pro vazby klíčů. Nicméně je možné také panelu nástrojů, která má vazbu klíče tabulku, která vypadá podobně jako interní webový prohlížeč. Pro dokument s kartami s více windows jako je například HTML editor má každá karta jiný příkaz kontextu `GUID`.|
-|Služba Active jazyka|Služba jazyka, který je spojen se souborem, který se nyní zobrazí v textovém editoru.|
-|Aktivní okno nástrojů|Okno nástroje, který je otevřený a má fokus.|
+
+| Typ kontextu | Popis |
+|-------------------------| - |
+| Typ aktivní projekt | Pro většinu typů projektu to `GUID` hodnota je stejná jako identifikátor GUID sady VSPackage, která implementuje projektu. Ale [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projektů pomocí typu projektu `GUID` jako hodnotu. |
+| Aktivní okno | Obvykle je to poslední aktivního okna dokumentu, který stanoví kontext aktuálního uživatelského rozhraní pro vazby klíčů. Nicméně je možné také panelu nástrojů, která má vazbu klíče tabulku, která vypadá podobně jako interní webový prohlížeč. Pro dokument s kartami s více windows jako je například HTML editor má každá karta jiný příkaz kontextu `GUID`. |
+| Služba Active jazyka | Služba jazyka, který je spojen se souborem, který se nyní zobrazí v textovém editoru. |
+| Aktivní okno nástrojů | Okno nástroje, který je otevřený a má fokus. |
 
  Na páté hlavní kontextu oblast je stav uživatelského rozhraní IDE. Kontexty uživatelského rozhraní jsou označeny kontextu aktivní příkaz `GUID`s následujícím způsobem:
 

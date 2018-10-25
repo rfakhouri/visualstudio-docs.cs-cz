@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6c05befbfa59063956d0df37a7aa57d955503ec5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882519"
 ---
 # <a name="accessing-models-from-text-templates"></a>Přístup k modelům z textových šablon
 Pomocí textových šablon, můžete vytvořit sestavy soubory, soubory se zdrojovým kódem a jiné textové soubory, které jsou založeny na modely jazyka specifického pro doménu. Základní informace o textových šablonách naleznete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md). Textové šablony budou fungovat v experimentálním režimu při ladění vašeho DSL a budou fungovat i v počítači, na které jste nasadili DSL.
@@ -26,11 +26,11 @@ Pomocí textových šablon, můžete vytvořit sestavy soubory, soubory se zdroj
 
  Pro přístup k modelu z textové šablony:
 
--   Nastavte vlastnost Zdědit – direktiva šablony do <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. To poskytuje přístup k Store.
+- Nastavte vlastnost Zdědit – direktiva šablony do <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. To poskytuje přístup k Store.
 
--   Zadejte procesory direktiv pro DSL, který chcete získat přístup. Tento kód načte sestavení vašeho DSL tak, že můžete použít své doménové třídy, vlastnosti a vztahy v kódu textové šablony. Také načte soubor modelu, který zadáte.
+- Zadejte procesory direktiv pro DSL, který chcete získat přístup. Tento kód načte sestavení vašeho DSL tak, že můžete použít své doménové třídy, vlastnosti a vztahy v kódu textové šablony. Také načte soubor modelu, který zadáte.
 
- A `.tt` soubor podobně jako v následujícím příkladu se vytvoří v ladění projektu při vytváření nové řešení sady Visual Studio z šablony minimální jazyka DSL.
+  A `.tt` soubor podobně jako v následujícím příkladu se vytvoří v ladění projektu při vytváření nové řešení sady Visual Studio z šablony minimální jazyka DSL.
 
 ```
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -50,22 +50,21 @@ Here is a list of elements in the model:
 <#
   }
 #>
-
 ```
 
  Všimněte si, že o této šabloně následující body:
 
--   Šablonu můžete použít doménové třídy, vlastnosti a vztahy, které jste definovali v definici DSL.
+- Šablonu můžete použít doménové třídy, vlastnosti a vztahy, které jste definovali v definici DSL.
 
--   Se šablona načte, který zadáte v souboru modelu `requires` vlastnost.
+- Se šablona načte, který zadáte v souboru modelu `requires` vlastnost.
 
--   Vlastnost v `this` obsahuje kořenový element. Odtud můžete kód přejít na další prvky modelu. Název vlastnosti je obvykle stejný jako kořenový doménová třída tohoto kódu DSL. V tomto příkladu je `this.ExampleModel`.
+- Vlastnost v `this` obsahuje kořenový element. Odtud můžete kód přejít na další prvky modelu. Název vlastnosti je obvykle stejný jako kořenový doménová třída tohoto kódu DSL. V tomto příkladu je `this.ExampleModel`.
 
--   I když je jazyk, ve kterém jsou zapsány fragmenty kódu jazyka C#, můžete vygenerovat text jakéhokoli druhu. Můžete také napsat kód [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] tak, že přidáte vlastnost `language="VB"` k `template` směrnice.
+- I když je jazyk, ve kterém jsou zapsány fragmenty kódu jazyka C#, můžete vygenerovat text jakéhokoli druhu. Můžete také napsat kód [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] tak, že přidáte vlastnost `language="VB"` k `template` směrnice.
 
--   Chcete-li ladit šablonu, přidejte `debug="true"` k `template` směrnice. Šablonu se otevře v jiné instanci sady Visual Studio, pokud dojde k výjimce. Pokud chcete do ladicího programu v konkrétním bodě v kódu, vložte – příkaz `System.Diagnostics.Debugger.Break();`
+- Chcete-li ladit šablonu, přidejte `debug="true"` k `template` směrnice. Šablonu se otevře v jiné instanci sady Visual Studio, pokud dojde k výjimce. Pokud chcete do ladicího programu v konkrétním bodě v kódu, vložte – příkaz `System.Diagnostics.Debugger.Break();`
 
-     Další informace najdete v tématu [ladění textové šablony T4](../modeling/debugging-a-t4-text-template.md).
+   Další informace najdete v tématu [ladění textové šablony T4](../modeling/debugging-a-t4-text-template.md).
 
 ## <a name="about-the-dsl-directive-processor"></a>Informace o procesoru direktiv DSL
  Šablonu můžete použít doménové třídy definované v definici DSL. To je způsobené směrnice, které obvykle se zobrazí dříve v šabloně. V předchozím příkladu je následující.
@@ -87,16 +86,15 @@ Here is a list of elements in the model:
 
 ```
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>
-
 ```
 
  Všimněte si, že:
 
-1.  `filename` a `validation` parametry jsou odděleny ";" a musí být žádné jiné oddělovače nebo mezery.
+1. `filename` a `validation` parametry jsou odděleny ";" a musí být žádné jiné oddělovače nebo mezery.
 
-2.  Seznam kategorií ověřování určuje, jaké metody ověřování se spustí. Více kategorií by měla být oddělena pomocí "&#124;" a musí být žádné jiné oddělovače nebo mezery.
+2. Seznam kategorií ověřování určuje, jaké metody ověřování se spustí. Více kategorií by měla být oddělena pomocí "&#124;" a musí být žádné jiné oddělovače nebo mezery.
 
- Pokud je nalezena chyba, se ohlásí v okně chyby a výsledek soubor obsahovat chybovou zprávu.
+   Pokud je nalezena chyba, se ohlásí v okně chyby a výsledek soubor obsahovat chybovou zprávu.
 
 ## <a name="Multiple"></a> Přístup k více modelů z textové šablony
 
@@ -173,7 +171,6 @@ For Each element As ExampleElement In Me.WorkModel.Elements
    // Here you generate more content derived from the element.
   }
 #>
-
 ```
 
  `LoopSplitter.tt` Vyvolá `LoopTemplate.t4`a pak rozdělí výsledný soubor do jeho segmentů. Všimněte si, že tato šablona nemusí být šablonu modelování protože nenačítá modelu.
@@ -215,5 +212,4 @@ For Each element As ExampleElement In Me.WorkModel.Elements
      File.WriteAllText(Path.Combine(dir, parts[0] + ".txt"), parts[1]);
   }
 #>
-
 ```

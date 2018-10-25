@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f84c3e9c01158ae8de1ff949c497d7af5859433
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863865"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839268"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů
 
@@ -100,7 +100,7 @@ Některé součásti v seznamu se nemusí zobrazit, v závislosti na verzi rozhr
 
     Když vytvoříte novou aplikaci, některé projekty zaměřují [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] ve výchozím nastavení.
 
-- Můžete byste se vyhnout přidávání odkazů na soubory do výstupů jiného projektu ve stejném řešení, protože to může způsobit chyby kompilace. Místo toho použijte **projekty** karty **přidat odkaz** dialogové okno k vytvoření odkazů typu projekt projekt. Toto usnadňuje vývoj v týmu povolením lepší správy knihoven tříd, které vytvoříte ve svých projektech. Další informace najdete v tématu [nefunkční odkazy na řešení potíží](../ide/troubleshooting-broken-references.md).
+Můžete byste se vyhnout přidávání odkazů na soubory do výstupů jiného projektu ve stejném řešení, protože to může způsobit chyby kompilace. Místo toho použijte **projekty** karty **přidat odkaz** dialogové okno k vytvoření odkazů typu projekt projekt. Toto usnadňuje vývoj v týmu povolením lepší správy knihoven tříd, které vytvoříte ve svých projektech. Další informace najdete v tématu [nefunkční odkazy na řešení potíží](../ide/troubleshooting-broken-references.md).
 
 > [!NOTE]
 > V sadě Visual Studio 2015 nebo vyšší odkaz na soubor místo odkazu na projekt je vytvořen, pokud cílová verze rozhraní .NET Framework jednoho projektu je verze 4.5 nebo novější a cílová verze jiného projektu je verze 2, 3, 3.5 nebo 4.0.
@@ -109,9 +109,9 @@ Některé součásti v seznamu se nemusí zobrazit, v závislosti na verzi rozhr
 
 - Přesuňte nebo zkopírujte sestavení do jednoho z následujících umístění:
 
-    - Aktuální adresář projektu. (Můžete vyhledat tato sestavení pomocí **Procházet** tab.)
+   - Aktuální adresář projektu. (Můžete vyhledat tato sestavení pomocí **Procházet** tab.)
 
-    - Další adresáře projektu ve stejném řešení. (Můžete vyhledat tato sestavení pomocí **projekty** tab.)
+   - Další adresáře projektu ve stejném řešení. (Můžete vyhledat tato sestavení pomocí **projekty** tab.)
 
     \- nebo –
 

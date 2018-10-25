@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 347cd6cfa1e773d3900e7294d691f061d91a762d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 002759a1a5fd8a16ee3e7842df7439d6e6b9755f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862928"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Řešení potíží se zabezpečením řešení pro systém Office
   Toto téma obsahuje tipy pro řešení běžných problémů, které můžete narazit při práci s zabezpečení řešení pro Office.  
@@ -32,17 +32,17 @@ ms.locfileid: "35676441"
   
  Adresa URL v manifestu nasazení lze rozdělit do jedné z pěti zón:  
   
--   Tento počítač  
+- Tento počítač  
   
--   Internet  
+- Internet  
   
--   Místní intranet  
+- Místní intranet  
   
--   Důvěryhodných serverů  
+- Důvěryhodných serverů  
   
--   Servery s omezeným přístupem  
+- Servery s omezeným přístupem  
   
- Pokud byla přiřazena umístění manifestu nasazení pro zónu lokalit s omezeným přístupem [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] není možné nainstalovat řešení. Pokud se označuje umístění a může být důvěryhodný, uživatel můžete odebrat umístění z zónu lokalit s omezeným přístupem a nainstalovat řešení. Informace o tom, jak spravovat zóny najdete v tématu [konfigurace ClickOnce Důvěryhodní vydavatelé](http://go.microsoft.com/fwlink/?LinkId=94774).  
+  Pokud byla přiřazena umístění manifestu nasazení pro zónu lokalit s omezeným přístupem [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] není možné nainstalovat řešení. Pokud se označuje umístění a může být důvěryhodný, uživatel můžete odebrat umístění z zónu lokalit s omezeným přístupem a nainstalovat řešení. Informace o tom, jak spravovat zóny najdete v tématu [konfigurace ClickOnce Důvěryhodní vydavatelé](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Řešení nelze nainstalovat ze síťové sdílené složky nebo webové umístění při instalaci konfigurace rozšířeného zabezpečení aplikace Internet Explorer nebo Internet Explorer 7  
  Internet Explorer rozšířené zabezpečení konfigurace (IEESC) ve Windows serveru 2003 a vyšší a prohlížeče Internet Explorer 7 a vyšší, výrazně omezuje možnost uživatelů procházet Internet. Co uživatelé vyzkouší nainstalovat řešení pro systém Office ze souboru sdílené složky nebo webové umístění v síti, může se zobrazit následující chybová zpráva: "vlastní funkce v této aplikaci nebude fungovat, protože tento certifikát umožňuje podepsat manifest nasazení pro *SolutionName* není důvěryhodný. Požádejte správce o pomoc. "  

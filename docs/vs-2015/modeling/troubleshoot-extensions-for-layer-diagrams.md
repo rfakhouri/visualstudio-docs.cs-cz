@@ -15,12 +15,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c8ea8f4e6b102dd9bb4a84154096d5cef906eeab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b4d7dbe7fc11a41d44063aab558389555a4b7af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879100"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Řešení potíží s rozšířeními pro diagramy vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ Toto téma řeší některé problémy, které se mohou vyskytnout při vytvář
   
 #### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>Po stisknutí klávesy F5 pro ladění mého rozšíření, mé příkazy, obslužné rutiny gesta, rozšíření ověřování nebo vlastní vlastnosti se nezobrazí v diagramech vrstev v experimentální instanci aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-1.  Otevřete řešení rozšíření v experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]a na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.  
+1. Otevřete řešení rozšíření v experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]a na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.  
   
-2.  Stisknutím klávesy **F5** nebo **CTRL + F5** spustit experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Otevřete diagram vrstvy a otestujte rozšíření.  
+2. Stisknutím klávesy **F5** nebo **CTRL + F5** spustit experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Otevřete diagram vrstvy a otestujte rozšíření.  
   
- V případě potřeby, pokračujte dalším postupem.  
+   V případě potřeby, pokračujte dalším postupem.  
   
 #### <a name="an-old-version-of-my-extension-runs"></a>Běží stará verze mého rozšíření.  
   
-1.  Ujistěte se, že žádná experimentální instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] běží.  
+1. Ujistěte se, že žádná experimentální instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] běží.  
   
-2.  Odstraňte následující složku: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [verze]  
+2. Odstraňte následující složku: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [verze]  
   
-    > [!NOTE]
-    >  % LocalAppData % je obvykle *DriveName*: \Users\\*uživatelské jméno*\AppData\Local.  
+   > [!NOTE]
+   >  % LocalAppData % je obvykle *DriveName*: \Users\\*uživatelské jméno*\AppData\Local.  
   
- V případě potřeby, pokračujte dalším postupem.  
+   V případě potřeby, pokračujte dalším postupem.  
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Zobrazí se stará verze mých výsledků ověření nebo má metoda ověřování není volána.  
   

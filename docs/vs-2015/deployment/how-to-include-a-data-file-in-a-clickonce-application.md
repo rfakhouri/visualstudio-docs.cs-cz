@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5e954550b8d59f1d1672e1229387714ad251a38c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6e4d5be3628cd9653bfc713caea426c91a205419
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204695"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884911"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Postupy: Zahrnutí datového souboru do aplikace ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,37 +36,37 @@ Každý [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikaci nainstal
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Zahrnout soubor dat s využitím Mage.exe  
   
-1.  Přidáte datový soubor do adresáře aplikace se zbytkem soubory vaší aplikace.  
+1. Přidáte datový soubor do adresáře aplikace se zbytkem soubory vaší aplikace.  
   
-     Obvykle adresáře aplikace bude označen s aktuální verzí nasazení – například v1.0.0.0.  
+    Obvykle adresáře aplikace bude označen s aktuální verzí nasazení – například v1.0.0.0.  
   
-2.  Aktualizujte manifest aplikace do seznamu datový soubor.  
+2. Aktualizujte manifest aplikace do seznamu datový soubor.  
   
-     **obrázek -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
+    **obrázek -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
   
-     Jak tento úkol provést znovu vytvoří seznam souborů v manifestu aplikace a také automaticky vygeneruje podpisy hodnoty hash.  
+    Jak tento úkol provést znovu vytvoří seznam souborů v manifestu aplikace a také automaticky vygeneruje podpisy hodnoty hash.  
   
-3.  Otevřete manifest aplikace v upřednostňovaném textovém editoru nebo editoru XML a najděte `file` – element pro nedávno přidaný soubor.  
+3. Otevřete manifest aplikace v upřednostňovaném textovém editoru nebo editoru XML a najděte `file` – element pro nedávno přidaný soubor.  
   
-     Pokud jste přidali soubor XML s názvem `Data.xml`, soubor bude vypadat podobně jako v následujícím příkladu kódu.  
+    Pokud jste přidali soubor XML s názvem `Data.xml`, soubor bude vypadat podobně jako v následujícím příkladu kódu.  
   
- `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
+   `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Přidejte atribut `type` na tento element a zadejte ji s hodnotou `data`.  
+4. Přidejte atribut `type` na tento element a zadejte ji s hodnotou `data`.  
   
- `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
+   `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Znovu podepsat manifest aplikace pomocí páru klíčů nebo certifikát a nové podepsání manifestu nasazení.  
+5. Znovu podepsat manifest aplikace pomocí páru klíčů nebo certifikát a nové podepsání manifestu nasazení.  
   
-     Musíte znovu podepsat manifestu nasazení, protože došlo ke změně jeho hodnoty hash manifestu aplikace.  
+    Musíte znovu podepsat manifestu nasazení, protože došlo ke změně jeho hodnoty hash manifestu aplikace.  
   
-     **manifest Ndex bitové kopie aplikace -s - cf cert_file - pwd heslo**  
+    **manifest Ndex bitové kopie aplikace -s - cf cert_file - pwd heslo**  
   
-     **manifest aplikace manifestu appm - nasazení -u Ndex bitové kopie**  
+    **manifest aplikace manifestu appm - nasazení -u Ndex bitové kopie**  
   
-     **manifest nasazení Mage -s - cf Soubor_certifikátu - pwd heslo**  
+    **manifest nasazení Mage -s - cf Soubor_certifikátu - pwd heslo**  
   
-2.  
+6. 
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Zahrnout soubor dat s využitím MageUI.exe  
   

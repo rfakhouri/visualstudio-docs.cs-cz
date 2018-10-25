@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4202b14fce4c914737989e4a408cd74040c4d0a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873887"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Návod: Vytvoření vazby dat s ovládacími prvky v podokně akcí aplikace Word
   Tento návod ukazuje vytváření datových vazeb k ovládacím prvkům v podokně akcí ve Wordu. Ovládací prvky ukazují záznamů master/detail relace mezi tabulkami v databázi serveru SQL Server.  
@@ -78,28 +78,28 @@ ms.locfileid: "38781929"
   
 ### <a name="to-add-a-data-source-to-the-project"></a>Chcete-li přidat zdroj dat do projektu  
   
-1.  Pokud **zdroje dat** okno se nezobrazuje, zobrazit ho tím, na panelu nabídek, výběrem **zobrazení** > **ostatní Windows**  >   **Zdroje dat**.  
+1. Pokud **zdroje dat** okno se nezobrazuje, zobrazit ho tím, na panelu nabídek, výběrem **zobrazení** > **ostatní Windows**  >   **Zdroje dat**.  
   
-    > [!NOTE]  
-    >  Pokud **zobrazit zdroje dat** není k dispozici, klikněte na dokumentu aplikace Word a zkontrolovat znovu.  
+   > [!NOTE]  
+   >  Pokud **zobrazit zdroje dat** není k dispozici, klikněte na dokumentu aplikace Word a zkontrolovat znovu.  
   
-2.  Klikněte na tlačítko **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.  
+2. Klikněte na tlačítko **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.  
   
-3.  Vyberte **databáze** a potom klikněte na tlačítko **Další**.  
+3. Vyberte **databáze** a potom klikněte na tlačítko **Další**.  
   
-4.  Vyberte datové připojení k ukázkové databázi Northwind systému SQL Server, nebo přidejte nové připojení s použitím **nové připojení** tlačítko.  
+4. Vyberte datové připojení k ukázkové databázi Northwind systému SQL Server, nebo přidejte nové připojení s použitím **nové připojení** tlačítko.  
   
-5.  Klikněte na tlačítko **Další**.  
+5. Klikněte na tlačítko **Další**.  
   
-6.  Uložit připojení, pokud je zaškrtnuto a pak klikněte na tlačítko Vymazat **Další**.  
+6. Uložit připojení, pokud je zaškrtnuto a pak klikněte na tlačítko Vymazat **Další**.  
   
-7.  Rozbalte **tabulky** uzlu **databázové objekty** okna.  
+7. Rozbalte **tabulky** uzlu **databázové objekty** okna.  
   
-8.  Zaškrtněte políčko vedle položky **Dodavatelé** a **produkty** tabulky.  
+8. Zaškrtněte políčko vedle položky **Dodavatelé** a **produkty** tabulky.  
   
 9. Klikněte na tlačítko **Dokončit**.  
   
- Průvodce přidá **dodavatelů** tabulky a **produkty** tabulky **zdroje dat** okno. Také přidá typové datové sady do projektu, který se zobrazuje **Průzkumníka řešení**.  
+   Průvodce přidá **dodavatelů** tabulky a **produkty** tabulky **zdroje dat** okno. Také přidá typové datové sady do projektu, který se zobrazuje **Průzkumníka řešení**.  
   
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Chcete-li přidat ovládací prvky Windows Forms vázané na data na ovládací prvek podokna akce  
   
