@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: be0fc7df23e7164371e95e92fbad1a32026284df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9cc22f6bc8f7e863f0808c05b0b5cba37ba79fbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49810590"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Nevyvolávejte vyhrazené typy výjimek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
@@ -42,31 +43,31 @@ ms.locfileid: "49227062"
 ## <a name="rule-description"></a>Popis pravidla
  Následující typy výjimek jsou příliš obecné poskytnout dostatek informací pro uživatele:
 
--   <xref:System.Exception?displayProperty=fullName>
+- <xref:System.Exception?displayProperty=fullName>
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
--   <xref:System.SystemException?displayProperty=fullName>
+- <xref:System.SystemException?displayProperty=fullName>
 
- Následující typy výjimek jsou vyhrazené a měla by být vyvolána pouze podle modulu common language runtime:
+  Následující typy výjimek jsou vyhrazené a měla by být vyvolána pouze podle modulu common language runtime:
 
--   <xref:System.ExecutionEngineException?displayProperty=fullName>
+- <xref:System.ExecutionEngineException?displayProperty=fullName>
 
--   <xref:System.IndexOutOfRangeException?displayProperty=fullName>
+- <xref:System.IndexOutOfRangeException?displayProperty=fullName>
 
--   <xref:System.NullReferenceException?displayProperty=fullName>
+- <xref:System.NullReferenceException?displayProperty=fullName>
 
--   <xref:System.OutOfMemoryException?displayProperty=fullName>
+- <xref:System.OutOfMemoryException?displayProperty=fullName>
 
- **Nevyvolávat obecné výjimky**
+  **Nevyvolávat obecné výjimky**
 
- Pokud abyste vyvolali typ výjimky, jako například <xref:System.Exception> nebo <xref:System.SystemException> v knihovnu nebo architekturu nutí uživatelům zachytit všechny výjimky, včetně Neznámý výjimky, které nejsou věděli, jak zpracovat.
+  Pokud abyste vyvolali typ výjimky, jako například <xref:System.Exception> nebo <xref:System.SystemException> v knihovnu nebo architekturu nutí uživatelům zachytit všechny výjimky, včetně Neznámý výjimky, které nejsou věděli, jak zpracovat.
 
- Místo toho vyvolat více odvozený typ, který již existuje v rámci nebo vytvořit vlastní typ, který je odvozen z <xref:System.Exception>.
+  Místo toho vyvolat více odvozený typ, který již existuje v rámci nebo vytvořit vlastní typ, který je odvozen z <xref:System.Exception>.
 
- **Vyvolat konkrétní výjimky**
+  **Vyvolat konkrétní výjimky**
 
- V následující tabulce jsou uvedeny parametry a výjimek, které má být vyvolána při ověření parametru, včetně hodnoty parametru přístupového objektu set vlastnosti:
+  V následující tabulce jsou uvedeny parametry a výjimek, které má být vyvolána při ověření parametru, včetně hodnoty parametru přístupového objektu set vlastnosti:
 
 |Popis parametru|Výjimka|
 |---------------------------|---------------|

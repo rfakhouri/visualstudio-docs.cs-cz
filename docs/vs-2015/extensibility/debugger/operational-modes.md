@@ -15,25 +15,25 @@ ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdadec54c5b28ae77d4905d2884bbee2d1f2a2ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae5380f360ca1a18bcf0edafea762417084aa3d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298828"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817455"
 ---
 # <a name="operational-modes"></a>Provozní režimy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Existují tři režimy, ve kterých integrovaného vývojového prostředí můžete pracovat, následujícím způsobem:  
   
--   [Režim návrhu](#vsconoperationalmodesanchor1)  
+- [Režim návrhu](#vsconoperationalmodesanchor1)  
   
--   [Režim spuštění](#vsconoperationalmodesanchor2)  
+- [Režim spuštění](#vsconoperationalmodesanchor2)  
   
--   [Režim přerušení](#vsconoperationalmodesanchor3)  
+- [Režim přerušení](#vsconoperationalmodesanchor3)  
   
- Jak vašeho vlastního ladicího stroje (DE) přechody mezi těmito režimy je rozhodnutí o implementace, která vyžaduje, abyste se seznamte s mechanismy přechodu. DE může nebo nemusí přímo implementaci těchto režimech. Tyto režimy jsou v zásadě ladění balíčku režimy přepínat na základě akce uživatele nebo událostí z DE. Přechod z režimu do režimu pozastavení běhu je třeba podporováno zastavení událostí z DE. Přechod z přerušení buď spustit nebo kroku režimu je podporováno tímto uživatelem, provádění operací, jako je například krok nebo spouštění. Další informace o DE přechody, naleznete v tématu [řízení spouštění](../../extensibility/debugger/control-of-execution.md).  
+  Jak vašeho vlastního ladicího stroje (DE) přechody mezi těmito režimy je rozhodnutí o implementace, která vyžaduje, abyste se seznamte s mechanismy přechodu. DE může nebo nemusí přímo implementaci těchto režimech. Tyto režimy jsou v zásadě ladění balíčku režimy přepínat na základě akce uživatele nebo událostí z DE. Přechod z režimu do režimu pozastavení běhu je třeba podporováno zastavení událostí z DE. Přechod z přerušení buď spustit nebo kroku režimu je podporováno tímto uživatelem, provádění operací, jako je například krok nebo spouštění. Další informace o DE přechody, naleznete v tématu [řízení spouštění](../../extensibility/debugger/control-of-execution.md).  
   
 ##  <a name="vsconoperationalmodesanchor1"></a> Režim návrhu  
  Režim návrhu je nonrunning stav ladění sady Visual Studio během této doby můžete nastavit ladění funkcí ve vaší aplikaci.  

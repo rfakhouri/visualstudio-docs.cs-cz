@@ -16,12 +16,12 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8bf3de0c558dbda1d1b43e7b5887780f1a1e2b90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307713"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832058"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Vytváření složek nadřazených kontejnerů pro řešení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Do zdrojového ovládacího prvku modulu Plug-in verze rozhraní API 1.2 můžet
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE vytvoří složku SUR téměř vždy, když přidání řešení do správy zdrojového kódu. Konkrétně provádí se v následujících případech:  
   
--   Projekt je sdílenou složku webového projektu.  
+- Projekt je sdílenou složku webového projektu.  
   
--   Existují různé jednotky pro projekt a soubor řešení.  
+- Existují různé jednotky pro projekt a soubor řešení.  
   
--   Existují jiné sdílené složky pro projekt a soubor řešení.  
+- Existují jiné sdílené složky pro projekt a soubor řešení.  
   
--   Projekty byly přidány samostatně (v řešení se spravovanými zdroji).  
+- Projekty byly přidány samostatně (v řešení se spravovanými zdroji).  
   
- V [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] doporučuje se, že název složky SUR být stejný jako název řešení bez přípony. Následující tabulka shrnuje chování v obou verzích.  
+  V [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] doporučuje se, že název složky SUR být stejný jako název řešení bez přípony. Následující tabulka shrnuje chování v obou verzích.  
   
 |Funkce|tSource ovládací prvek modulu Plug-in API verze 1.1|Zdroj modulu Plug-in API správy ve verzi 1.2|  
 |-------------|----------------------------------------------|---------------------------------------------|  

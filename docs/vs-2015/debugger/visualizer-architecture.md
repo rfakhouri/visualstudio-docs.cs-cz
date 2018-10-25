@@ -19,25 +19,25 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc9f03650e4e99b7a7277f183993b84d79a67ab2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ec6a27b8fcd35b4b74108f7bc608c975e120b02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217123"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828686"
 ---
 # <a name="visualizer-architecture"></a>Architektura vizualizéru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Architektura vizualizéru ladicí program má dvě části:  
   
--   *Ladicího programu na straně* běží v rámci ladicího programu sady Visual Studio. Ladicí program na straně kód vytvoří a zobrazí uživatelské rozhraní pro vaše vizualizér.  
+- *Ladicího programu na straně* běží v rámci ladicího programu sady Visual Studio. Ladicí program na straně kód vytvoří a zobrazí uživatelské rozhraní pro vaše vizualizér.  
   
--   *Na straně laděného procesu* běží v rámci procesu ladění sady Visual Studio ( *laděného procesu*).  
+- *Na straně laděného procesu* běží v rámci procesu ladění sady Visual Studio ( *laděného procesu*).  
   
- Vizualizéru je komponenta ladicího programu, které umožňují ladicímu programu k zobrazení (*vizualizovat*) obsah datového objektu ve formě smysluplné, srozumitelné. Některé vizualizéry podporují také úpravy datového objektu. Psaním vlastních vizualizérů, můžete rozšířit ladicího programu pro zpracování vlastní vlastní datové typy.  
+  Vizualizéru je komponenta ladicího programu, které umožňují ladicímu programu k zobrazení (*vizualizovat*) obsah datového objektu ve formě smysluplné, srozumitelné. Některé vizualizéry podporují také úpravy datového objektu. Psaním vlastních vizualizérů, můžete rozšířit ladicího programu pro zpracování vlastní vlastní datové typy.  
   
- Datový objekt má být zobrazen se nachází v rámci procesu ladění ( *laděného procesu* proces). Uživatelské rozhraní, které se zobrazí data se vytvoří v rámci procesu ladicího programu sady Visual Studio:  
+  Datový objekt má být zobrazen se nachází v rámci procesu ladění ( *laděného procesu* proces). Uživatelské rozhraní, které se zobrazí data se vytvoří v rámci procesu ladicího programu sady Visual Studio:  
   
 |Procesu ladicího programu|Laděném procesu|  
 |----------------------|----------------------|  

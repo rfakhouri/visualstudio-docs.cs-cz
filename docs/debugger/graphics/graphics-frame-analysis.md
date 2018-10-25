@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e0ae541830adab222b07d1f16ce99e4957e380e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838098"
 ---
 # <a name="graphics-frame-analysis"></a>Analýza grafických snímků
 Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijte k analýze a optimalizovat výkon vykreslování Direct3D hře nebo aplikaci.  
@@ -24,17 +24,17 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
 ## <a name="frame-analysis"></a>Analýza snímků  
  Analýza snímků používá stejné informace, které jsou zachyceny v souboru protokolu grafiky pro účely diagnostiky, ale používá ke shrnutí výkon vykreslování místo. Informace o výkonu se zaznamenávají do protokolu při zachytávání; Místo toho informace o výkonu je generováno později během analýzu snímků, události časování a shromažďování statistik přehrát rámce. Tento přístup má několik výhod oproti zaznamenávání informací o výkonu při zachytávání:  
   
--   Analýza snímků můžete průměrné výsledky z více jednotlivými cykly stejné rámce, který zajišťuje souhrnu výkonu statisticky zvuku.  
+- Analýza snímků můžete průměrné výsledky z více jednotlivými cykly stejné rámce, který zajišťuje souhrnu výkonu statisticky zvuku.  
   
--   Analýza snímků můžete generovat informace o výkonu pro hardwarové konfigurace a jiná zařízení než ten, ve kterém byly informace zachyceny.  
+- Analýza snímků můžete generovat informace o výkonu pro hardwarové konfigurace a jiná zařízení než ten, ve kterém byly informace zachyceny.  
   
--   Analýza snímků můžete vygenerovat nový souhrny výkonu z dříve zaznamenaných informací – například když jsou optimalizované nebo zpřístupňují další funkce ladění ovladače GPU.  
+- Analýza snímků můžete vygenerovat nový souhrny výkonu z dříve zaznamenaných informací – například když jsou optimalizované nebo zpřístupňují další funkce ladění ovladače GPU.  
   
- Kromě těchto výhod analýza snímků můžete také provádět změny rámce vykreslení během přehrávání tak, aby se může zobrazit informace o tom, jak tyto změny mohou ovlivnit výkon vykreslování aplikace. Tyto informace můžete se rozhodnout mezi potenciální optimalizační strategie, aniž by bylo nutné implementovat všechny a pak zachytíte a všechny jeho výsledky porovnání sami.  
+  Kromě těchto výhod analýza snímků můžete také provádět změny rámce vykreslení během přehrávání tak, aby se může zobrazit informace o tom, jak tyto změny mohou ovlivnit výkon vykreslování aplikace. Tyto informace můžete se rozhodnout mezi potenciální optimalizační strategie, aniž by bylo nutné implementovat všechny a pak zachytíte a všechny jeho výsledky porovnání sami.  
   
- I když se analýza snímků je primárně určena pomoci dosáhnout vyšší výkon vykreslování, je stejně můžete dosáhnout lepší vizuální kvality pro danou výkonu cíl nebo snížení spotřeby energie GPU.  
+  I když se analýza snímků je primárně určena pomoci dosáhnout vyšší výkon vykreslování, je stejně můžete dosáhnout lepší vizuální kvality pro danou výkonu cíl nebo snížení spotřeby energie GPU.  
   
- Pokud chcete zobrazit ukázku analýzy snímků přínosech pro vaši aplikaci, můžete se podívat [analýza grafických snímků Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) videa na webu Channel 9.  
+  Pokud chcete zobrazit ukázku analýzy snímků přínosech pro vaši aplikaci, můžete se podívat [analýza grafických snímků Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) videa na webu Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Pomocí analýza snímků  
  Než budete moct použít analýzu snímků, budete muset zachytit informace grafiky z aplikace za běhu, stejně jako když použijete některou z dalších analyzátoru grafiky sady nástrojů. Pak v okně dokumentu (.vsglog) protokol grafiky zvolte **analýza snímků** kartu.  
@@ -48,23 +48,23 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
   
  Některé výsledky přímo udávají, jak varianty ovlivňuje výkon vykreslování:  
   
--   Pokud varianta varianty filtrování textur zvýšení výkonu jsme si ukázali, potom pomocí filtrování ve vaší aplikaci varianty textur zobrazí podobné zvýšení výkonu.  
+- Pokud varianta varianty filtrování textur zvýšení výkonu jsme si ukázali, potom pomocí filtrování ve vaší aplikaci varianty textur zobrazí podobné zvýšení výkonu.  
   
--   Pokud varianta oblasti zobrazení 1 x 1 jsme si ukázali, zvýšení výkonu, pak snižuje velikost cíle vykreslování v aplikaci bude vylepšit výkon vykreslování.  
+- Pokud varianta oblasti zobrazení 1 x 1 jsme si ukázali, zvýšení výkonu, pak snižuje velikost cíle vykreslování v aplikaci bude vylepšit výkon vykreslování.  
   
--   Pokud varianta komprese textur BC zvýšení výkonu jsme si ukázali, pak pomocí komprese textur BC ve vaší aplikaci se zobrazí podobné zvýšení výkonu.  
+- Pokud varianta komprese textur BC zvýšení výkonu jsme si ukázali, pak pomocí komprese textur BC ve vaší aplikaci se zobrazí podobné zvýšení výkonu.  
   
--   Pokud varianta 2xMSAA má skoro stejný výkon jako typ variant 0xMSAA, můžete povolit 2xMSAA ve vaší aplikaci zlepšovat kvalitu vykreslování bez dalších nákladů ve výkonu.  
+- Pokud varianta 2xMSAA má skoro stejný výkon jako typ variant 0xMSAA, můžete povolit 2xMSAA ve vaší aplikaci zlepšovat kvalitu vykreslování bez dalších nákladů ve výkonu.  
   
- Další výsledky by mohla naznačovat hlubší, jemnější dopady na výkon vaší aplikace:  
+  Další výsledky by mohla naznačovat hlubší, jemnější dopady na výkon vaší aplikace:  
   
--   Pokud varianta oblasti zobrazení 1 x 1 zobrazuje velmi náročné na výkon, vaše aplikace pravděpodobně spotřebovává další fillrate, než je k dispozici. Pokud se tato varianta zobrazí bez zvýšení výkonu, pravděpodobně příliš mnoho vrcholy aplikace zpracovává.  
+- Pokud varianta oblasti zobrazení 1 x 1 zobrazuje velmi náročné na výkon, vaše aplikace pravděpodobně spotřebovává další fillrate, než je k dispozici. Pokud se tato varianta zobrazí bez zvýšení výkonu, pravděpodobně příliš mnoho vrcholy aplikace zpracovává.  
   
--   Pokud varianta 16bpp vykreslování cílového formátu ukazuje významného zvýšení výkonu, vaše aplikace pravděpodobně spotřebovává příliš mnoho paměti šířky pásma.  
+- Pokud varianta 16bpp vykreslování cílového formátu ukazuje významného zvýšení výkonu, vaše aplikace pravděpodobně spotřebovává příliš mnoho paměti šířky pásma.  
   
--   Pokud varianta rozměrů textury Half/Quarter ukazuje významného zvýšení výkonu, vaše textury pravděpodobně zabírat moc paměti, spotřebovat příliš velkou šířku pásma nebo neefektivnímu využití mezipaměti textur. Pokud se tato varianta zobrazí žádné změny ve výkonu, můžete použít větší, podrobnější textury pravděpodobně bez nutnosti platit snížení výkonu.  
+- Pokud varianta rozměrů textury Half/Quarter ukazuje významného zvýšení výkonu, vaše textury pravděpodobně zabírat moc paměti, spotřebovat příliš velkou šířku pásma nebo neefektivnímu využití mezipaměti textur. Pokud se tato varianta zobrazí žádné změny ve výkonu, můžete použít větší, podrobnější textury pravděpodobně bez nutnosti platit snížení výkonu.  
   
- Když jsou k dispozici čítačů hardwaru, můžete je shromažďovat velmi podrobné informace o proč může utrpení vykreslování výkon vaší aplikace. Hloubka uzavření dotazy nepodporují všechna zařízení 9.2 a vyšší úroveň funkcí (**pixelů occluded** čítače) a časová razítka. Další čítače hardwaru může být k dispozici, v závislosti na, jestli má výrobce GPU implementované čítačů hardwaru a vystavený v jeho ovladače. Potvrďte přesnou příčinu na výsledky zobrazené v souhrnu tabulce můžete použít tyto čítače – například můžete určit, jestli overdraw je faktor prozkoumáním procento pixelů, které byly occluded testem hloubky.  
+  Když jsou k dispozici čítačů hardwaru, můžete je shromažďovat velmi podrobné informace o proč může utrpení vykreslování výkon vaší aplikace. Hloubka uzavření dotazy nepodporují všechna zařízení 9.2 a vyšší úroveň funkcí (**pixelů occluded** čítače) a časová razítka. Další čítače hardwaru může být k dispozici, v závislosti na, jestli má výrobce GPU implementované čítačů hardwaru a vystavený v jeho ovladače. Potvrďte přesnou příčinu na výsledky zobrazené v souhrnu tabulce můžete použít tyto čítače – například můžete určit, jestli overdraw je faktor prozkoumáním procento pixelů, které byly occluded testem hloubky.  
   
 ### <a name="timeline-and-summary-table"></a>Časová osa a souhrnnou tabulku  
  Ve výchozím nastavení časového harmonogramu a tabulku se souhrnem se zobrazí a ostatní oddíly, jsou sbaleny.  
@@ -147,9 +147,9 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
   
  Vzhledem k tomu, že žádný počítač GPU nVidia, Intel nebo AMD v současné době nabízena podporuje čítačů hardwaru s GPU spolehlivě, analýza snímků neshromažďuje čítače z nich. Analýza snímků však čítačů hardwaru shromažďovat následující GPU, která je spolehlivě podporuje:  
   
--   nVidia T40 (Tegra4)
+- nVidia T40 (Tegra4)
   
- Žádná jiná platforma, která podporuje analýzu snímků shromažďuje čítače hardwarové GPU.  
+  Žádná jiná platforma, která podporuje analýzu snímků shromažďuje čítače hardwarové GPU.  
   
 > [!NOTE]
 >  Vzhledem k tomu čítačů hardwaru s GPU hardwarové prostředky, může trvat několik průchodů za účelem shromažďování kompletní sadu čítačů hardwaru pro každý typ variant vykreslování. V důsledku toho neurčené pořadí, ve které GPU se shromažďují čítače.  

@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d1d2ea051097f297c3fdeb07d166cbbc182a4c99
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835706"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Ověřování kódu pomocí diagramů závislostí
 
@@ -115,41 +115,41 @@ Pokud máte diagramu otevřete závislostí, který je propojen s položkami ře
 
 ### <a name="validate-code-at-the-command-prompt"></a>Ověřování kódu v příkazovém řádku
 
-1.  Otevřete příkazový řádek sady Visual Studio.
+1. Otevřete příkazový řádek sady Visual Studio.
 
-2.  Vyberte jednu z následujících možností:
+2. Vyberte jednu z následujících možností:
 
-    - Pro ověření kódu proti konkrétnímu projektu modelování v řešení spusťte nástroj MSBuild s následující vlastní vlastností.
+   - Pro ověření kódu proti konkrétnímu projektu modelování v řešení spusťte nástroj MSBuild s následující vlastní vlastností.
 
-        ```
-        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
+       ```
 
-         - nebo –
+     - nebo –
 
-         Přejděte do složky, která obsahuje projekt modelování (.modelproj) souboru a závislost diagramu a pak spusťte nástroj MSBuild s následující vlastní vlastností:
+       Přejděte do složky, která obsahuje projekt modelování (.modelproj) souboru a závislost diagramu a pak spusťte nástroj MSBuild s následující vlastní vlastností:
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
-    - Pro ověření kódu proti všem projektům modelování v řešení spusťte nástroj MSBuild s následující vlastní vlastností:
+   - Pro ověření kódu proti všem projektům modelování v řešení spusťte nástroj MSBuild s následující vlastní vlastností:
 
-        ```
-        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
+       ```
 
-         - nebo –
+     - nebo –
 
-         Přejděte do složky řešení, která musí obsahovat projekt modelování obsahující diagram závislostí a pak spusťte nástroj MSBuild s následující vlastní vlastností:
+       Přejděte do složky řešení, která musí obsahovat projekt modelování obsahující diagram závislostí a pak spusťte nástroj MSBuild s následující vlastní vlastností:
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
      Zobrazí se všechny chyby, ke kterým dochází. Další informace o nástroji MSBuild naleznete v tématu [MSBuild](../msbuild/msbuild.md) a [úlohy nástroje MSBuild](../msbuild/msbuild-task.md).
 
- Další informace o chybách ověřování najdete v části [pochopení a vyřešení chyb ověřování vrstev](#UnderstandingValidationErrors).
+   Další informace o chybách ověřování najdete v části [pochopení a vyřešení chyb ověřování vrstev](#UnderstandingValidationErrors).
 
 ### <a name="manage-validation-errors"></a>Správa chyb ověřování
 
@@ -165,7 +165,7 @@ Během procesu vývoje můžete chtít potlačit některé vykázané konflikty 
 Tyto úlohy slouží ke správě chyb ověřování v **seznam chyb** okno:
 
 |**k**|**Postupujte podle těchto kroků**|
-|------------|----------------------------|
+|-|-|
 |Potlačení vybraných chyb během ověřování|Klikněte pravým tlačítkem na jeden nebo více vybraných chyb, přejděte na **spravovat chyby ověřování**a potom klikněte na tlačítko **potlačit chyby**.<br /><br /> Potlačené chyby se zobrazují s přeškrtnutím. Při příštím spuštění ověřování se tyto chyby nezobrazí.<br /><br /> Potlačené chyby jsou sledovány v souboru .suppressions pro odpovídající soubor diagramu závislostí.|
 |Ukončení potlačování vybraných chyb|Klikněte pravým tlačítkem na Potlačené chyby nebo chyby, přejděte na **spravovat chyby ověřování**a potom klikněte na tlačítko **ukončit potlačování chyb**.<br /><br /> Vybrané potlačené chyby se při příštím spuštění ověřování zobrazí.|
 |Obnovení všech potlačených chyb v **seznam chyb** okna|Klikněte pravým tlačítkem kamkoli **seznam chyb** okno, přejděte na příkaz **spravovat chyby ověřování**a potom klikněte na tlačítko **zobrazit všechny Potlačené chyby**.|
@@ -204,7 +204,7 @@ Ke správě chyb v okně Seznam chyb, naleznete v tématu [spravovat chyby ově�
 Následující tabulka popisuje problémy s ověřením vrstvy a jejich řešení. Tyto problémy se liší od chyb, které vzniknou z konfliktů mezi kódem a návrhem. Další informace o těchto chybách naleznete v tématu [pochopení a vyřešení chyb ověřování vrstev](#UnderstandingValidationErrors).
 
 |**Problém**|**Možná příčina**|**Řešení**|
-|---------------|------------------------|--------------------|
+|-|-|-|
 |Chyby ověřování se nezobrazí podle očekávání.|Ověřování nefunguje v diagramech závislosti, které jsou zkopírovány z jiných diagramů závislostí v Průzkumníku řešení a jsou ve stejném projektu modelování. diagramy závislostí, které jsou tímto způsobem zkopírují, obsahují stejné odkazy jako původní diagram závislostí.|Přidejte do projektu modelování nový diagram závislostí.<br /><br /> Zkopírujte prvky ze zdrojového diagramu závislostí do nového diagramu.|
 
 ## <a name="resolve-layer-validation-errors"></a>Řešení chyb při ověřování vrstvy
@@ -220,20 +220,20 @@ Chcete-li tyto chyby odstranit, aktualizujte kód, dokud se během ověřování
 Následující oddíl popisuje syntaxi, která se u těchto chyb používá, vysvětluje význam těchto chyb a navrhne, jak je vyřešit nebo spravovat.
 
 |**Syntaxe**|**Popis**|
-|----------------|---------------------|
+|-|-|
 |*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* je artefakt, který je spojen s vrstvou v diagramu závislostí.<br /><br /> *ArtifactTypeN* je typ *ArtifactN*, například **třídy** nebo **metoda**, například:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|Název oboru názvů.|
 |*LayerNameN*|Název vrstvy na diagram závislostí.|
 |*DependencyType*|Typ vztahu závislosti mezi *Artifact1* a *Artifact2*. Například *Artifact1* má **volání** vztah s *Artifact2*.|
 
-|**Chyba syntaxe**|**Popis chyby**|
-|----------------------|---------------------------|
-|DV0001: **Neplatná závislost**|Tento problém je oznamují prvek kódu (obor názvů, typ, členství) mapovat na odkazy vrstvy prvek kódu, který je namapována na jinou vrstvu, ale neexistuje žádná šipky závislostí mezi tyto vrstvy v diagram ověřování závislostí obsahující této vrstvy. To je narušení omezení závislosti.|
-|DV1001: **neplatný název oboru názvů**|Tento problém je uveden na prvek kódu spojené s vrstvou, která vlastnost "názvů Namespace povoleno" neobsahuje obor názvů, ve kterém je definována tento prvek kódu. To je narušení omezení vytváření názvů. Všimněte si, že syntaxe názvů Namespace"povoleno", které má být středníkem seznam oborů názvů v kódu jsou elementy související s vrstvou se smí být definované.|
-|DV1002: **závislost na u oboru názvů**|Tento problém je uveden na prvek kódu spojené s vrstvou a odkazuje na jiný element kód definovaný v oboru názvů, který je definován v "U Namespace" Vlastnosti vrstvy. To je narušení omezení vytváření názvů. Všimněte si, že vlastnost "Odkazy názvů" je definován jako středníkem oddělený seznam oborů názvů, které nesmí elementy kódu přidružené k této vrstvě odkazovat.|
-|DV1003: **název oboru názvů Nepovoleno**|Tento problém je uveden na prvek kódu spojené s vrstvou obsahující obor názvů, ve kterém je tento prvek kódu definována vlastnost "názvů Namespace zakázáno". To je narušení omezení vytváření názvů. Všimněte si, že vlastnost "Název oboru názvů Nepovoleno" je definován jako středníkem oddělený seznam oborů názvů, ve které kódu nesmí být definována prvky přidružené k této vrstvě.|
-|DV3001: **chybějící spojení**|Vrstva "*LayerName*"odkazuje na"*artefaktů*" který nebyl nalezen. Nechybí odkaz na sestavení?|*LayerName* odkazuje na artefakt, který nebyl nalezen. Odkaz na třídu může chybět například proto, že projekt modelování nemá odkaz na sestavení obsahující třídu.|
-|DV9001: **strukturální analýza nalezla vnitřní chyby**|Výsledky nemusí být úplné. Další informace lze nalézt v podrobném protokolu událostí sestavení nebo ve výstupním okně.|Více podrobností lze nalézt v protokolu událostí sestavení nebo ve výstupním okně.|
+| **Chyba syntaxe** | **Popis chyby** |
+|-|-|
+| DV0001: **Neplatná závislost** | Tento problém je oznamují prvek kódu (obor názvů, typ, členství) mapovat na odkazy vrstvy prvek kódu, který je namapována na jinou vrstvu, ale neexistuje žádná šipky závislostí mezi tyto vrstvy v diagram ověřování závislostí obsahující této vrstvy. To je narušení omezení závislosti. |
+| DV1001: **neplatný název oboru názvů** | Tento problém je uveden na prvek kódu spojené s vrstvou, která vlastnost "názvů Namespace povoleno" neobsahuje obor názvů, ve kterém je definována tento prvek kódu. To je narušení omezení vytváření názvů. Všimněte si, že syntaxe názvů Namespace"povoleno", které má být středníkem seznam oborů názvů v kódu jsou elementy související s vrstvou se smí být definované. |
+| DV1002: **závislost na u oboru názvů** | Tento problém je uveden na prvek kódu spojené s vrstvou a odkazuje na jiný element kód definovaný v oboru názvů, který je definován v "U Namespace" Vlastnosti vrstvy. To je narušení omezení vytváření názvů. Všimněte si, že vlastnost "Odkazy názvů" je definován jako středníkem oddělený seznam oborů názvů, které nesmí elementy kódu přidružené k této vrstvě odkazovat. |
+| DV1003: **název oboru názvů Nepovoleno** | Tento problém je uveden na prvek kódu spojené s vrstvou obsahující obor názvů, ve kterém je tento prvek kódu definována vlastnost "názvů Namespace zakázáno". To je narušení omezení vytváření názvů. Všimněte si, že vlastnost "Název oboru názvů Nepovoleno" je definován jako středníkem oddělený seznam oborů názvů, ve které kódu nesmí být definována prvky přidružené k této vrstvě. |
+| DV3001: **chybějící spojení** | Vrstva "*LayerName*"odkazuje na"*artefaktů*" který nebyl nalezen. Nechybí odkaz na sestavení? |
+| DV9001: **strukturální analýza nalezla vnitřní chyby** | Výsledky nemusí být úplné. Další informace lze nalézt v podrobném protokolu událostí sestavení nebo ve výstupním okně. |
 
 ## <a name="see-also"></a>Viz také:
 

@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2d1b2d6cf02bea494fb08583bcbc2c1e17583e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 39d8638c3b0fba1c8753fd773a447863ee01be77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838618"
 ---
 # <a name="how-to-change-fonts"></a>Postupy: Změna písem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Můžete změnit písmo, styl písma a velikost písma pro nástroje Spy ++ wind
   
 ### <a name="to-change-font-options"></a>Chcete-li změnit možnosti písma  
   
-1.  Z **zobrazení** nabídce zvolte **písmo**.  
+1. Z **zobrazení** nabídce zvolte **písmo**.  
   
-2.  Zvolte písmo, styl písma a velikost písma.  
+2. Zvolte písmo, styl písma a velikost písma.  
   
-3.  Klikněte na tlačítko **OK**.  
+3. Klikněte na tlačítko **OK**.  
   
- Výběr **uložit písmo jako výchozí** způsobí, že všechny budoucí nástroje Spy ++ windows používat toto písmo.  
+   Výběr **uložit písmo jako výchozí** způsobí, že všechny budoucí nástroje Spy ++ windows používat toto písmo.  
   
 ## <a name="see-also"></a>Viz také  
  [Použití nástroje Spy ++](../debugger/using-spy-increment.md)   

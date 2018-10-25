@@ -23,12 +23,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce77ac0d7d2cf7cfa131742f40f89af692982506
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8ef4cf0c416a72b61b1e02f97cf28798ecb340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812853"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Návody: Pohyb v integrovaném vývojovém prostředí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,20 +48,20 @@ Integrované vývojové prostředí (IDE) byla navržená tak, aby bylo možné 
   
 #### <a name="to-move-through-open-files-in-order-of-use"></a>Chcete-li procházet soubory lze otevřít v pořadí podle používání  
   
--   Pokud chcete aktivovat otevřených dokumentů v pořadí, ve kterém byly naposledy změněny, stiskněte klávesy CTRL + mínus.  
+- Pokud chcete aktivovat otevřených dokumentů v pořadí, ve kterém byly naposledy změněny, stiskněte klávesy CTRL + mínus.  
   
--   Pokud chcete aktivovat otevřené dokumenty v obráceném pořadí, stiskněte CTRL + SHIFT + mínus.  
+- Pokud chcete aktivovat otevřené dokumenty v obráceném pořadí, stiskněte CTRL + SHIFT + mínus.  
   
-    > [!NOTE]
-    >  **Přejděte zpět** a **přejít vpřed** také najdete na **zobrazení** nabídky.  
+  > [!NOTE]
+  >  **Přejděte zpět** a **přejít vpřed** také najdete na **zobrazení** nabídky.  
   
- Můžete také přepnout na určitý soubor otevřít v editoru, bez ohledu na to, kdy posledního otevření souboru, pomocí **IDE Navigátor**, **aktivních souborů** seznamu v editoru, nebo **Windows** dialogové okno.  
+  Můžete také přepnout na určitý soubor otevřít v editoru, bez ohledu na to, kdy posledního otevření souboru, pomocí **IDE Navigátor**, **aktivních souborů** seznamu v editoru, nebo **Windows** dialogové okno.  
   
- **IDE Navigátor** funguje podobně jako přepínání aplikace Windows. Není k dispozici v nabídkách a je přístupný pouze pomocí klávesových zkratek. Můžete použít buď dva příkazy pro přístup k **IDE Navigátor** (viz dole) k cyklování skrze souborů, v závislosti na pořadí, ve kterém chcete procházet.  
+  **IDE Navigátor** funguje podobně jako přepínání aplikace Windows. Není k dispozici v nabídkách a je přístupný pouze pomocí klávesových zkratek. Můžete použít buď dva příkazy pro přístup k **IDE Navigátor** (viz dole) k cyklování skrze souborů, v závislosti na pořadí, ve kterém chcete procházet.  
   
- ![Visual Studio IDE Navigátor](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
+  ![Visual Studio IDE Navigátor](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
   
- `Window.PreviousDocumentWindowNav` Umožňuje přesunout do posledního přístupu k souboru a `Window.NextDocumentWindowNav` vám umožní přesunout v obráceném pořadí. Obecné vývojové nastavení přiřadí CTRL + SHIFT + TAB `Window.PreviousDocumentWindowNav` a CTRL + TAB `Window.NextDocumentWindowNav`.  
+  `Window.PreviousDocumentWindowNav` Umožňuje přesunout do posledního přístupu k souboru a `Window.NextDocumentWindowNav` vám umožní přesunout v obráceném pořadí. Obecné vývojové nastavení přiřadí CTRL + SHIFT + TAB `Window.PreviousDocumentWindowNav` a CTRL + TAB `Window.NextDocumentWindowNav`.  
   
 > [!NOTE]
 >  Pokud používáte kombinaci nastavení už nemá klávesovou zkratku přiřazená tomuto příkazu, můžete přiřadit vlastní pomocí vlastního příkazu **klávesnice** stránce **možnosti** dialogové okno pole. Další informace najdete v tématu [určení a přizpůsobení klávesových zkratek](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  

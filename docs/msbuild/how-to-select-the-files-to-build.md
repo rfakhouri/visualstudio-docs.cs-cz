@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e9d438547ee27588c08fb522a027cd85432094
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8ef956b94ca263dac5ce57c7b122576060bb7a05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820665"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Postupy: výběr souborů pro sestavení
 Při vytváření projektu, který obsahuje několik souborů, můžete vytvořit seznam každý soubor samostatně v souboru projektu nebo k zahrnutí všech souborů v jednom adresáři nebo vnořenou sadu adresáře můžete použít zástupné znaky.  
@@ -100,7 +100,7 @@ Při vytváření projektu, který obsahuje několik souborů, můžete vytvoři
   
 > [!NOTE]
 >  K určení vstupů pro sestavení; musíte použít zástupné znaky s položkami Nelze zadat vstupy pomocí `Sources` atribut [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] úkoly, jako [Csc](../msbuild/csc-task.md) nebo [Vbc –](../msbuild/vbc-task.md). V následujícím příkladu není platný v souboru projektu:  
->   
+> 
 >  `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>Příklad  

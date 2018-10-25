@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321174"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837110"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Použít prostředí laboratoře pro váš vývoj a provoz
 
@@ -36,9 +36,9 @@ Tady jsou příklady běžných topologie prostředí laboratoře:
 |![Testovací prostředí cloud](../media/topology_cloud.png)| Tohoto testovacího prostředí poskytuje podobné funkce a funkce jako _topologie serveru_, ale eliminuje požadavek pro fyzický nebo virtuální počítače spuštěné v místním prostředí, která mohou zkrátit čas, instalační program, zjednodušit Údržba a minimalizaci nákladů. Nastavení více webů a virtuálních počítačů spolu s vlastní sítě, je rychlý a snadný v cloudovém prostředí, jako je například Microsoft Azure.|
 |![Klient server testovacího prostředí](../media/topology_clientserver.png)| Má tohoto testovacího prostředí *klient server topologie*, což se často používá k testování aplikace, která obsahuje součásti serveru a klienta. V topologii klient/server všechny klientské a serverové počítače použít k testování vaší aplikace se ve vašem testovacím prostředí. Když tuto topologii použijte, může shromažďovat testovací data z každý počítač, který má vliv na vaše testy.|
 
-|   |   |
+| | |
 |---|---|
-|  ![Ikona fotoaparátu videa pro videa](../../install/media/video-icon.png)  |    [Podívejte se na video](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) týkající se správy testovacích prostředí pro testování. |
+| ![Ikona fotoaparátu videa pro videa](../../install/media/video-icon.png) | [Podívejte se na video](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) týkající se správy testovacích prostředí pro testování. |
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Použití cloudu s Azure kanály nebo Team Foundation Server sestavení a vydání
 
@@ -95,7 +95,7 @@ Informace o SCVMM, naleznete v tématu [Virtual Machine Manager](/azure/devops/p
 Standardní prostředí a prostředí SCVMM podporují řadu stejných funkcí. Existují však několik důležitých rozdílů, které byste měli zvážit. Následující tabulka porovnává funkce, které jsou k dispozici pro standardní prostředí a prostředí SCVMM.
 
 |Funkce|Prostředí SCVMM|Standardní prostředí|
-|----------------|------------------------|---------------------------|
+|-|------------------------|-|
 |**Testování**|||
 |Spouštění manuálních testů|Podporováno|Podporováno|
 |Spustit kódované UI a Další automatizované testy|Podporováno|Podporováno|
@@ -117,7 +117,7 @@ Standardní prostředí a prostředí SCVMM podporují řadu stejných funkcí. 
 Tady jsou některé další koncepty, které byste měli znát předtím, než budete pokračovat:
 
 |Termín|Popis|
-|----------|-----------------|
+|-|-----------------|
 |Centra testovacích prostředí|V oblasti nástroje Microsoft Test Manager kde vytvoření a správa testovacích prostředí.|
 |Projekt Azure DevOps Lab|Kolekce testovací prostředí, které mají nastavení, abyste se mohli připojit k nim a spustit své virtuální počítače.|
 |Knihovny Azure DevOps Project|Archiv uložené virtuální počítače, šablony a uložené testovací prostředí, které se naimportovaly do skupiny hostitelů projektu. Položky můžete použít v knihovně v prostředích SCVMM; nelze je však přidat přímo do standardního prostředí. Položky nelze spustit v knihovně; Místo toho můžete využít k nasazení nového prostředí.|

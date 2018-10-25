@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: d64850910d1a6a25514eb48e46f70168d245e168
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 1a13488f632e3cf1f244449b2a7a4dbfd7869428
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101082"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826503"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Vzdálené ladění ASP.NET na počítači vzdálené služby IIS
 Chcete-li ladit aplikaci ASP.NET, která byla nasazena do služby IIS, nainstalovat a spustit nástroje remote tools v počítači, kam jste nasadili aplikaci a potom připojit k vaší běžící aplikaci v sadě Visual Studio.
@@ -47,7 +47,7 @@ Tento článek obsahuje kroky k nastavení základní konfiguraci služby IIS na
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Vytvoření projektu ASP.NET 4.5.2 aplikace na počítači aplikace Visual Studio
   
-1. Vytvoření nové aplikace MVC ASP.NET. (**Soubor > Nový > projekt**a pak vyberte ** Visual C# > Web > Webová aplikace ASP.NET. V **ASP.NET 4.5.2** části šablony vyberte **MVC**. Ujistěte se, že **povolit podporu Dockeru** není vybraná a že **ověřování** je nastavena na **bez ověřování**. Pojmenujte projekt **MyASPApp**.)
+1. Vytvoření nové aplikace MVC ASP.NET. (**Soubor > Nový > projekt**a pak vyberte <strong>Visual C# > Web > Webová aplikace ASP.NET. V **ASP.NET 4.5.2</strong> části šablony vyberte **MVC**. Ujistěte se, že **povolit podporu Dockeru** není vybraná a že **ověřování** je nastavena na **bez ověřování**. Pojmenujte projekt **MyASPApp**.)
 
 2. Otevření souboru HomeController.cs a nastavte zarážku `About()` metody.
 

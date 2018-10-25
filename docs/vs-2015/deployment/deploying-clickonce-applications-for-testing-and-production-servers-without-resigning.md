@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 146a525394b51f71f470f1246610a855d968dddc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b2a26e847a23e8a4037958532889626a931341c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840035"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Nasazování aplikací ClickOnce pro testovací a produkční servery bez opětovného podepsání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ Toto téma popisuje nové funkce zavedena v rozhraní .NET Framework verze 3.5, 
   
  Tady jsou dva příklady pro objasnění tohoto bodu. V prvním příkladu, publikování aplikace ClickOnce, která nemá žádné `deploymentProvider` značku a zeptejte se uživatele k jeho nainstalování z http://www.adatum.com/MyApplication/. Pokud je rozhodnout, kterou chcete publikovat další aktualizace aplikací z http://subdomain.adatum.com/MyApplication/, nemůžete se nijak to zaznamenat v manifestu nasazení, který se nachází v http://www.adatum.com/MyApplication/. Jedním ze dvou kroků:  
   
--   Řekněte uživatelům, aby odinstalovat předchozí verzi a nainstalujte novou verzi z nového umístění.  
+- Řekněte uživatelům, aby odinstalovat předchozí verzi a nainstalujte novou verzi z nového umístění.  
   
--   Zahrnout aktualizace na http://www.adatum.com/MyApplication/ , který obsahuje `deploymentProvider` odkazující na http://www.adatum.com/MyApplication/. Uvolněte později s jinou aktualizaci `deploymentProvider` odkazující na http://subdomain.adatum.com/MyApplication/.  
+- Zahrnout aktualizace na http://www.adatum.com/MyApplication/ , který obsahuje `deploymentProvider` odkazující na http://www.adatum.com/MyApplication/. Uvolněte později s jinou aktualizaci `deploymentProvider` odkazující na http://subdomain.adatum.com/MyApplication/.  
   
- V druhém příkladu publikování aplikace ClickOnce, která určuje `deploymentProvider`, a potom se rozhodnete ho odebrat. Jednou na novou verzi bez `deploymentProvider` byl stažen do klientů, nebude možné přesměrovat cestu používané pro aktualizace, dokud vydání verze aplikace, která má `deploymentProvider` obnovit. Stejně jako v prvním příkladu `deploymentProvider` zpočátku musí odkazovat na aktuální umístění aktualizace, nikoliv do nového umístění. V takovém případě pokud se pokusíte vložit `deploymentProvider` , který odkazuje na http://subdomain.adatum.com/MyApplication/, pak příští aktualizace se nezdaří.  
+  V druhém příkladu publikování aplikace ClickOnce, která určuje `deploymentProvider`, a potom se rozhodnete ho odebrat. Jednou na novou verzi bez `deploymentProvider` byl stažen do klientů, nebude možné přesměrovat cestu používané pro aktualizace, dokud vydání verze aplikace, která má `deploymentProvider` obnovit. Stejně jako v prvním příkladu `deploymentProvider` zpočátku musí odkazovat na aktuální umístění aktualizace, nikoliv do nového umístění. V takovém případě pokud se pokusíte vložit `deploymentProvider` , který odkazuje na http://subdomain.adatum.com/MyApplication/, pak příští aktualizace se nezdaří.  
   
 ## <a name="creating-a-deployment"></a>Vytvoření nasazení  
  Podrobné pokyny k vytvoření nasazení, která se dají nasadit z různých síťových umístěních, najdete v části [návod: Ruční nasazení aplikace ClickOnce této nemá není vyžadují Re-Signing a zachová značky informací](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  

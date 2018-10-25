@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8449abf6fe178225f84aa65caa4d027df5021d4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f62018eb3e58f69758bd07faebc7bd77fb26b33b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290430"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845846"
 ---
 # <a name="performance-report-overview"></a>Přehled sestav výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Můžete zobrazit data profilování relace výkonu v **sestavu výkonu** okno i
 ### <a name="callercallee-view"></a>Zobrazení volající/volaný  
  Volající/volaný – zobrazení stromu volání pro jednotlivé funkce. Zobrazení je rozdělené do tří částí:  
   
--   Cílová funkce se zobrazí uprostřed zobrazení.  
+- Cílová funkce se zobrazí uprostřed zobrazení.  
   
--   Funkce, které volal funkci (volající) se zobrazí nad cílová funkce.  
+- Funkce, které volal funkci (volající) se zobrazí nad cílová funkce.  
   
--   Funkce, které jsou volány cílová funkce (volané) se zobrazí pod cíl.  
+- Funkce, které jsou volány cílová funkce (volané) se zobrazí pod cíl.  
   
- Dvojitým kliknutím na libovolnou funkci v volané seznamu nebo volaný můžete vybrat jiné funkce. Další informace najdete v tématu [zobrazení volající/volaný](../profiling/caller-callee-view.md).  
+  Dvojitým kliknutím na libovolnou funkci v volané seznamu nebo volaný můžete vybrat jiné funkce. Další informace najdete v tématu [zobrazení volající/volaný](../profiling/caller-callee-view.md).  
   
 ### <a name="call-tree-view"></a>Zobrazení stromu volání  
  Zobrazení stromu volání zobrazí cesty spuštění funkce, které byly Procházet v profilované aplikaci. Kořen stromu je vstupním bodem do aplikace nebo komponenty. Každý uzel funkce obsahuje všechny funkce, které ji volaly a údaje o výkonu o volání těchto funkcí.  

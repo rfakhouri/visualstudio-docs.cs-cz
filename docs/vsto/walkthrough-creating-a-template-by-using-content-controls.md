@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f49e2e9e23f19a4346080b0e59435128e33849d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833184"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Návod: Vytvoření šablony s použitím ovládacích prvků obsahu
   Tento návod ukazuje, jak vytvořit přizpůsobení úrovni dokumentu, který používá ovládací prvky obsahu k vytvoření obsahu strukturovaných a opakovaně použitelné šablony aplikace Microsoft Office Word.  
@@ -35,17 +35,17 @@ ms.locfileid: "35676071"
   
  Tento návod znázorňuje následující úlohy:  
   
--   Vytváření tabulek, které obsahují obsah aplikace Word řídí šablony v době návrhu.  
+- Vytváření tabulek, které obsahují obsah aplikace Word řídí šablony v době návrhu.  
   
--   Ovládací prvek obsahu pole se seznamem a ovládací prvek obsahu rozevíracího seznamu naplnění prostřednictvím kódu programu.  
+- Ovládací prvek obsahu pole se seznamem a ovládací prvek obsahu rozevíracího seznamu naplnění prostřednictvím kódu programu.  
   
--   Zabránění uživatelům v úpravách zadané tabulky.  
+- Zabránění uživatelům v úpravách zadané tabulky.  
   
--   Přidání tabulky do kolekce stavebního bloku šablony.  
+- Přidání tabulky do kolekce stavebního bloku šablony.  
   
--   Vytvoření ovládacího prvku obsahu, která zobrazuje dostupné stavební bloky v šabloně.  
+- Vytvoření ovládacího prvku obsahu, která zobrazuje dostupné stavební bloky v šabloně.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  
@@ -68,31 +68,31 @@ ms.locfileid: "35676071"
   
 ### <a name="to-create-the-employee-table"></a>K vytvoření tabulky zaměstnanců  
   
-1.  V šabloně aplikace Word, který je hostován v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer na pásu karet, klepněte **vložit** kartu.  
+1. V šabloně aplikace Word, který je hostován v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer na pásu karet, klepněte **vložit** kartu.  
   
-2.  V **tabulky** klikněte na možnost **tabulky**a vložit tabulku se dvěma sloupci a čtyři řádky.  
+2. V **tabulky** klikněte na možnost **tabulky**a vložit tabulku se dvěma sloupci a čtyři řádky.  
   
-3.  Zadejte text v prvním sloupci tak, aby se podobá následující sloupce:  
+3. Zadejte text v prvním sloupci tak, aby se podobá následující sloupce:  
   
-    ||  
-    |-|  
-    |**Jméno zaměstnance**|  
-    |**Datum přijetí**|  
-    |**Název**|  
-    |**Obrázek**|  
+   ||  
+   |-|  
+   |**Jméno zaměstnance**|  
+   |**Datum přijetí**|  
+   |**Název**|  
+   |**Obrázek**|  
   
-4.  Klikněte do první buňky ve druhém sloupci (vedle **jméno zaměstnance**).  
+4. Klikněte do první buňky ve druhém sloupci (vedle **jméno zaměstnance**).  
   
-5.  Na pásu karet klikněte na tlačítko **Developer** kartu.  
+5. Na pásu karet klikněte na tlačítko **Developer** kartu.  
   
-    > [!NOTE]  
-    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [postupy: zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   > [!NOTE]  
+   >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [postupy: zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  V **ovládací prvky** klikněte na položku **Text** tlačítko ![plaintextcontentcontrol –](../vsto/media/plaintextcontrol.gif "plaintextcontentcontrol –") přidáte <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do první buňky.  
+6. V **ovládací prvky** klikněte na položku **Text** tlačítko ![plaintextcontentcontrol –](../vsto/media/plaintextcontrol.gif "plaintextcontentcontrol –") přidáte <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do první buňky.  
   
-7.  Klikněte na druhé buňce ve druhém sloupci (vedle **datum přijetí**).  
+7. Klikněte na druhé buňce ve druhém sloupci (vedle **datum přijetí**).  
   
-8.  V **ovládací prvky** klikněte na položku **výběr data** tlačítko ![datepickercontentcontrol –](../vsto/media/datepicker.gif "datepickercontentcontrol –") přidáte <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> do druhé buňce.  
+8. V **ovládací prvky** klikněte na položku **výběr data** tlačítko ![datepickercontentcontrol –](../vsto/media/datepicker.gif "datepickercontentcontrol –") přidáte <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> do druhé buňce.  
   
 9. Klikněte na třetí buňce v druhém sloupci (vedle **Title**).  
   
@@ -107,27 +107,27 @@ ms.locfileid: "35676071"
   
 ### <a name="to-create-the-customer-feedback-table"></a>K vytvoření tabulky zpětné vazby zákazníka  
   
-1.  V šabloně aplikace Word, klepněte na řádek pod tabulkou Zaměstnanec, který jste přidali dříve a stiskněte klávesu **Enter** přidáte nový odstavec.  
+1. V šabloně aplikace Word, klepněte na řádek pod tabulkou Zaměstnanec, který jste přidali dříve a stiskněte klávesu **Enter** přidáte nový odstavec.  
   
-2.  Na pásu karet klikněte na tlačítko **vložit** kartu.  
+2. Na pásu karet klikněte na tlačítko **vložit** kartu.  
   
-3.  V **tabulky** klikněte na možnost **tabulky**a vložit tabulku se dvěma sloupci a třemi řádky.  
+3. V **tabulky** klikněte na možnost **tabulky**a vložit tabulku se dvěma sloupci a třemi řádky.  
   
-4.  Zadejte text v prvním sloupci tak, aby se podobá následující sloupce:  
+4. Zadejte text v prvním sloupci tak, aby se podobá následující sloupce:  
   
-    ||  
-    |-|  
-    |**Jméno zákazníka**|  
-    |**Hodnocení spokojenosti**|  
-    |**Komentáře**|  
+   ||  
+   |-|  
+   |**Jméno zákazníka**|  
+   |**Hodnocení spokojenosti**|  
+   |**Komentáře**|  
   
-5.  Klikněte do první buňky druhý sloupec (vedle **jméno zákazníka**).  
+5. Klikněte do první buňky druhý sloupec (vedle **jméno zákazníka**).  
   
-6.  Na pásu karet klikněte na tlačítko **Developer** kartu.  
+6. Na pásu karet klikněte na tlačítko **Developer** kartu.  
   
-7.  V **ovládací prvky** klikněte na položku **Text** tlačítko ![plaintextcontentcontrol –](../vsto/media/plaintextcontrol.gif "plaintextcontentcontrol –") přidáte <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do první buňky.  
+7. V **ovládací prvky** klikněte na položku **Text** tlačítko ![plaintextcontentcontrol –](../vsto/media/plaintextcontrol.gif "plaintextcontentcontrol –") přidáte <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do první buňky.  
   
-8.  Klikněte na tlačítko v druhé buňce druhého sloupce (vedle **hodnocení spokojenosti**).  
+8. Klikněte na tlačítko v druhé buňce druhého sloupce (vedle **hodnocení spokojenosti**).  
   
 9. V **ovládací prvky** klikněte na možnost **rozevíracího seznamu** tlačítko ![dropdownlistcontentcontrol –](../vsto/media/dropdownlist.gif "dropdownlistcontentcontrol –") přidáte <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> do druhé buňce.  
   

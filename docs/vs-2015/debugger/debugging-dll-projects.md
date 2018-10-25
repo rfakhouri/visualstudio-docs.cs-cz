@@ -24,59 +24,59 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fff87db239d023dbb5aa8f13757f7af42a969dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267381"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814556"
 ---
 # <a name="debugging-dll-projects"></a>Ladění projektů knihovny DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Následující šablony vytvoří knihovny DLL:  
   
--   (C++, C# a Visual Basic) Knihovna tříd  
+- (C++, C# a Visual Basic) Knihovna tříd  
   
--   (C++, C# a Visual Basic): Knihovna ovládacích prvků formulářů Windows  
+- (C++, C# a Visual Basic): Knihovna ovládacích prvků formulářů Windows  
   
-     Ladění knihovny ovládacích prvků Windows je podobné ladění projektu knihovny tříd. Ve většině případů budete volat ovládací prvek Windows z jiného projektu. Při ladění volajícího projektu můžete krokovat s vnořením kódu ovládacího prvku Windows, nastavit zarážky a provádět jiné operace ladění. Další informace najdete v tématu [ovládacích prvků Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
+   Ladění knihovny ovládacích prvků Windows je podobné ladění projektu knihovny tříd. Ve většině případů budete volat ovládací prvek Windows z jiného projektu. Při ladění volajícího projektu můžete krokovat s vnořením kódu ovládacího prvku Windows, nastavit zarážky a provádět jiné operace ladění. Další informace najdete v tématu [ovládacích prvků Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
   
--   (C# a Visual Basic): Knihovna webových prvků  
+- (C# a Visual Basic): Knihovna webových prvků  
   
-     Další informace najdete v tématu [Knihovna webových prvků (spravovaný kód)](../debugger/web-control-library-managed-code.md).  
+   Další informace najdete v tématu [Knihovna webových prvků (spravovaný kód)](../debugger/web-control-library-managed-code.md).  
   
--   (C++): ovládací prvek ActiveX knihovny MFC a knihovny MFC Smart zařízení ovládacího prvku ActiveX  
+- (C++): ovládací prvek ActiveX knihovny MFC a knihovny MFC Smart zařízení ovládacího prvku ActiveX  
   
-     Ovládací prvky ActiveX jsou ovládací prvky, které je možné stáhnout z Internetu do klientských počítačů a zobrazí a aktivují na webových stránkách.  
+   Ovládací prvky ActiveX jsou ovládací prvky, které je možné stáhnout z Internetu do klientských počítačů a zobrazí a aktivují na webových stránkách.  
   
-     Ladění ovládacích prvků ActiveX je podobné ladění jiných typů ovládacích prvků, protože nemůže být spuštěno samostatně, ale musí být vloženo na webové stránce HTML. Další informace najdete v tématu [postupy: ladění ovládacího prvku ActiveX](../debugger/how-to-debug-an-activex-control.md).  
+   Ladění ovládacích prvků ActiveX je podobné ladění jiných typů ovládacích prvků, protože nemůže být spuštěno samostatně, ale musí být vloženo na webové stránce HTML. Další informace najdete v tématu [postupy: ladění ovládacího prvku ActiveX](../debugger/how-to-debug-an-activex-control.md).  
   
--   (C++): inteligentní zařízení knihovny DLL MFC  
+- (C++): inteligentní zařízení knihovny DLL MFC  
   
-     Další informace najdete v tématu [techniky ladění MFC](../debugger/mfc-debugging-techniques.md).  
+   Další informace najdete v tématu [techniky ladění MFC](../debugger/mfc-debugging-techniques.md).  
   
- Tato část také obsahuje informace o následujících tématech:  
+  Tato část také obsahuje informace o následujících tématech:  
   
--   [Postupy: Ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md)  
+- [Postupy: Ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md)  
   
--   [Postupy: Ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md)  
+- [Postupy: Ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md)  
   
- Toto téma obsahuje následující oddíly, které poskytují důležité informace o přípravě k ladění knihoven tříd:  
+  Toto téma obsahuje následující oddíly, které poskytují důležité informace o přípravě k ladění knihoven tříd:  
   
--   [Sestavení ladicí verze](#vxtskdebuggingdllprojectsbuildingadebugversion)  
+- [Sestavení ladicí verze](#vxtskdebuggingdllprojectsbuildingadebugversion)  
   
--   [Ladění ve smíšeném režimu](#vxtskdebuggingdllprojectsmixedmodedebugging)  
+- [Ladění ve smíšeném režimu](#vxtskdebuggingdllprojectsmixedmodedebugging)  
   
--   [Změna výchozí konfigurace](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
+- [Změna výchozí konfigurace](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
   
--   [Způsoby, jak ladit knihovnu DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
+- [Způsoby, jak ladit knihovnu DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
   
--   [Volající aplikace](#vxtskdebuggingdllprojectsthecallingapplication)  
+- [Volající aplikace](#vxtskdebuggingdllprojectsthecallingapplication)  
   
--   [Ovládací prvky na webové stránce](#vxtskdebuggingdllprojectscontrolsonawebpage)  
+- [Ovládací prvky na webové stránce](#vxtskdebuggingdllprojectscontrolsonawebpage)  
   
--   [Příkazové podokno](#vxtskdebuggingdllprojectstheimmediatewindow)  
+- [Příkazové podokno](#vxtskdebuggingdllprojectstheimmediatewindow)  
   
 ##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Sestavení ladicí verze  
  Bez ohledu na to, jak spouštíte ladění Ujistěte se, že nejprve sestavení ladicí verze knihovny DLL a ujistěte se, že ladicí verze je v umístění, kde se očekává, že aplikace ji najít. To se může zdát zřejmé, ale pokud zapomenete tento krok, aplikace může najít jinou verzi knihovny DLL a načíst ji. Program bude pokračovat spustit, zatímco se budete divit, proč vaší zarážky nikdy dosaženo. Když ladíte, můžete ověřit, které knihovny DLL váš program načetl, otevřením ladicího programu **moduly** okna. **Moduly** okno uvádí jednotlivé knihovny DLL nebo EXE načtené v procesu, který ladíte. Další informace najdete v tématu [postupy: použití okna moduly](../debugger/how-to-use-the-modules-window.md).  
@@ -103,15 +103,15 @@ Následující šablony vytvoří knihovny DLL:
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Ladění volající aplikace  
  Chcete-li ladit knihovnu DLL, začněte laděním volající aplikace, obvykle buď aplikace EXE nebo webová aplikace. Existuje několik způsobů, jak ho ladit.  
   
--   Pokud máte projekt pro volající aplikace, můžete otevřít tento projekt a spustit provádění z **ladění** nabídky. Další informace najdete v tématu [postupy: spuštění provádění](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
+- Pokud máte projekt pro volající aplikace, můžete otevřít tento projekt a spustit provádění z **ladění** nabídky. Další informace najdete v tématu [postupy: spuštění provádění](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
   
--   Pokud volající aplikace existující program již nasazený v testovacím nebo produkčním počítači a je již spuštěna můžete připojit k němu. Tuto metodu použijte, pokud je knihovna DLL kontrolovaně aplikace Internet Explorer nebo ovládacího prvku na webové stránce. Další informace najdete v tématu [postupy: připojení k procesu spuštění](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
+- Pokud volající aplikace existující program již nasazený v testovacím nebo produkčním počítači a je již spuštěna můžete připojit k němu. Tuto metodu použijte, pokud je knihovna DLL kontrolovaně aplikace Internet Explorer nebo ovládacího prvku na webové stránce. Další informace najdete v tématu [postupy: připojení k procesu spuštění](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
   
--   Můžete ho ladit z projektu knihovny DLL. Další informace najdete v tématu [postupy: ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md).  
+- Můžete ho ladit z projektu knihovny DLL. Další informace najdete v tématu [postupy: ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md).  
   
--   Můžete ho ladit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **okamžité** okna. V takovém případě **okamžité** okno hraje roli aplikace.  
+- Můžete ho ladit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **okamžité** okna. V takovém případě **okamžité** okno hraje roli aplikace.  
   
- Před zahájením ladění volající aplikace je obvyklé nastavit zarážku v knihovně tříd. Další informace najdete v tématu [zarážky a sledované body](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Při dosažení zarážky, můžete krokovat kód, sledování akce na každém řádku, dokud nebude problém. Další informace najdete v tématu [přehled krokování kódu](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
+  Před zahájením ladění volající aplikace je obvyklé nastavit zarážku v knihovně tříd. Další informace najdete v tématu [zarážky a sledované body](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Při dosažení zarážky, můžete krokovat kód, sledování akce na každém řádku, dokud nebude problém. Další informace najdete v tématu [přehled krokování kódu](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
   
 ###  <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Ovládací prvky na webové stránce  
  Chcete-li ladit ovládací prvek webové stránky, vytvořte [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] stránka, která jej použije, pokud taková ještě stránka neexistuje. Pak umístěte zarážky v kódu webové stránky, jakož i kód ovládacího prvku. Poté vyvoláte webovou stránku z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

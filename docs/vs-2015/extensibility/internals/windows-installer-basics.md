@@ -16,12 +16,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 281dfa7a8c671923dd64eb8ecaee0629d4b8e224
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23f633b57a677996a5f286ca1f5ac4b911b3cdda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829310"
 ---
 # <a name="windows-installer-basics"></a>Základní informace o Instalační službě systému Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Instalační program Windows instaluje a odinstaluje aplikací nebo softwarové 
 ## <a name="authoring-a-vspackage"></a>Vytváření VSPackage  
  Instalační služby systému Windows používá instalační balíčky, které obsahují informace, které instalační služby systému Windows potřebuje k instalaci, odinstalaci nebo oprava produktu a spusťte instalační program uživatelského rozhraní (UI). Každý instalační balíček obsahuje soubor MSI, který obsahuje instalační databáze, datového proudu souhrnné informace a datových proudů různými částmi instalace. Pokud chcete použít instalační program, je nutné vytvořit instalace. Vzhledem k tomu, že instalační program uspořádá zařízení kolem koncepce součásti a ukládá informace o instalaci v relační databázi, proces vytváření instalačního balíčku široce zahrnuje následující kroky:  
   
-1.  Plánování nastavení pro vytváření pro podporu správy verzí a strategie vedle sebe.  
+1. Plánování nastavení pro vytváření pro podporu správy verzí a strategie vedle sebe.  
   
-2.  Určete funkce, které se budou zobrazovat uživateli.  
+2. Určete funkce, které se budou zobrazovat uživateli.  
   
-3.  VSPackage a závislosti uspořádejte do složek.  
+3. VSPackage a závislosti uspořádejte do složek.  
   
-4.  Naplnění databáze instalace informace.  
+4. Naplnění databáze instalace informace.  
   
-5.  Ověření instalace balíčku.  
+5. Ověření instalace balíčku.  
   
- Tato dokumentace se týká především první a třetí kroků procesu. Při provádění těchto kroků můžete uspořádat vaše funkce balíčku VSPackage do WICs, můžete snímek vaší správy verzí a údržba strategie pro další verze [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Zbývající tři kroky jsou podrobně popsány v dokumentaci Platform SDK Instalační služby systému Windows.  
+   Tato dokumentace se týká především první a třetí kroků procesu. Při provádění těchto kroků můžete uspořádat vaše funkce balíčku VSPackage do WICs, můžete snímek vaší správy verzí a údržba strategie pro další verze [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Zbývající tři kroky jsou podrobně popsány v dokumentaci Platform SDK Instalační služby systému Windows.  
   
 ## <a name="key-terms"></a>Klíčové pojmy  
  Následují definice klíčových pojmů související s technologií Instalační služby systému Windows.  

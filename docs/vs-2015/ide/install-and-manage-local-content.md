@@ -29,12 +29,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8a67a9105314ad73076d3a8b12d51c23f83097
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832729"
 ---
 # <a name="install-and-manage-local-content"></a>Instalace a správa místního obsahu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,9 +109,9 @@ Pomocí Microsoft Help Viewer můžete přidat, odebrat, aktualizovat a přesuno
   
 #### <a name="to-update-local-content"></a>Aktualizace místního obsahu  
   
--   V pravém dolním rohu stavového řádku, vyberte **pro stažení klikněte zde** odkaz.  
+- V pravém dolním rohu stavového řádku, vyberte **pro stažení klikněte zde** odkaz.  
   
- Doba aktualizace se může lišit, ale můžete ve stavovém řádku zobrazit průběh aktualizace.  
+  Doba aktualizace se může lišit, ale můžete ve stavovém řádku zobrazit průběh aktualizace.  
   
 ## <a name="moving-local-content"></a>Přesunutí místního obsahu  
  Přesunutím nainstalovaného obsahu z místního počítače do sdílené síťové složky nebo na jiný oddíl v místním počítači můžete ušetřit místo na disku.  

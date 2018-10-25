@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e2b3452f64e97d56cae56a2575caa6fea00d1f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830740"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkce IntelliSense editoru XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ XML Editor poskytuje úplné funkce IntelliSense srovnatelná s hodnotou jiné e
 ## <a name="intellisense-in-an-xslt-document"></a>Technologie IntelliSense v dokumentu XSLT  
  Jakmile přidáte do dokumentu XSLT s názvem šablony nebo atribut, můžete vložit následující technologie IntelliSense:  
   
--   Atribut nastavit názvy.  
+- Atribut nastavit názvy.  
   
--   Režimy šablony.  
+- Režimy šablony.  
   
--   Názvy šablon.  
+- Názvy šablon.  
   
--   Názvy parametrů pro danou režimu.  
+- Názvy parametrů pro danou režimu.  
   
--   Názvy parametrů pro danou uvedené šabloně.  
+- Názvy parametrů pro danou uvedené šabloně.  
   
- Další informace najdete v tématu [návod: používání IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md) tématu.  
+  Další informace najdete v tématu [návod: používání IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md) tématu.  
   
 ## <a name="auto-completion"></a>Automatické dokončování  
  XML editor také umožňuje úpravy XML jednodušší vyplněním požadované syntaxe XML pro vás. Například zadejte následující počáteční značku:  
@@ -72,19 +72,19 @@ XML Editor poskytuje úplné funkce IntelliSense srovnatelná s hodnotou jiné e
   
  Obdobně editoru XML také následující syntaxi XML automaticky vloží za vás:  
   
--   Konec instrukce pro zpracování:  `?>`  
+- Konec instrukce pro zpracování:  `?>`  
   
--   Konec bloku CDATA: `]]>`  
+- Konec bloku CDATA: `]]>`  
   
--   Ukončit komentář: `-->`  
+- Ukončit komentář: `-->`  
   
--   Konec deklarace DTD: `>`  
+- Konec deklarace DTD: `>`  
   
- XML Editor má také možnost Vložit obor názvů deklarace, pokud vyberete element kvalifikovaný obor názvů nebo atribut z seznam technologie IntelliSense a obor názvů pro tento atribut nebo element není v oboru.  
+  XML Editor má také možnost Vložit obor názvů deklarace, pokud vyberete element kvalifikovaný obor názvů nebo atribut z seznam technologie IntelliSense a obor názvů pro tento atribut nebo element není v oboru.  
   
- Například, pokud jste vybrali `e:Book` prvku ze seznamu technologie IntelliSense, kde předpona, která je vázán na `http://books` obor názvů, který nebyl deklarován v dokumentu XML editor vloží požadovaný obor názvů deklarace za vás. Výsledný text XML je následující:  
+  Například, pokud jste vybrali `e:Book` prvku ze seznamu technologie IntelliSense, kde předpona, která je vázán na `http://books` obor názvů, který nebyl deklarován v dokumentu XML editor vloží požadovaný obor názvů deklarace za vás. Výsledný text XML je následující:  
   
- `<e:Book xmlns:e="http://books"`  
+  `<e:Book xmlns:e="http://books"`  
   
 ## <a name="brace-matching"></a>Párování závorek  
  XML editor poskytuje zvýraznění získáte okamžitou zpětnou vazbu na prvek, který jste právě zavřeli závorek. Můžete také použít klávesovou zkratku (CTRL +]) přecházet z jednoho závorek k odpovídající závorce.  

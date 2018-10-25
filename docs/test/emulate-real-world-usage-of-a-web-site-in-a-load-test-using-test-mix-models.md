@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 682370de0964e8bc96a069f015f37144f4d9a83f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3e3710d82ee22975963169940bfae71b21a64279
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820899"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulovat očekávaného reálného využití webu nebo aplikace v rámci zátěžového testu pomocí modelu kombinace testů
 
@@ -42,13 +42,13 @@ Můžete určit jednu z následujících možností model kombinace testů pro v
 ###  <a name="BasedOnTestsStarted"></a> Procento podle spuštěných testů
  Pro každý test v kombinaci můžete určit procento, která určuje, jak často testu jako další test vybrané ke spuštění. Například může přiřadit následující hodnoty procento tři testy:
 
--   TestA (50%)
+- TestA (50%)
 
--   TestB (35 %)
+- TestB (35 %)
 
--   TestC (15%)
+- TestC (15%)
 
- Pokud použijete toto nastavení, následující test spuštění je založená na přiřazené procenta. Můžete to provést bez ohledu na počet virtuálních uživatelů, kteří jsou aktuálně spuštěním každého testu.
+  Pokud použijete toto nastavení, následující test spuštění je založená na přiřazené procenta. Můžete to provést bez ohledu na počet virtuálních uživatelů, kteří jsou aktuálně spuštěním každého testu.
 
 ###  <a name="PercentageBasedonVirtualUsers"></a> Procento podle virtuálních uživatelů
  Model poměru testů Určuje procentuální podíl virtuálních uživatelů, kteří se spuštěním určitého testu. Pokud používáte model kombinace testů, další test spustit je založena pouze na přiřazené procenta, ale také na procentuální podíl virtuálních uživatelů, kteří jsou aktuálně spuštěný určitý test. Kdykoli během zátěžového testu odpovídá počet uživatelů, kteří jsou spuštěn určitý test co nejpřesněji přiřazené distribuce.
@@ -56,28 +56,28 @@ Můžete určit jednu z následujících možností model kombinace testů pro v
 ###  <a name="PacingTestMix"></a> Interval poměru testů
  Pokud zadáte nemusely kombinace testů, nastavte počet spuštění testu pro jednotlivé virtuální uživatele pro každý test v kombinaci testů. Pro každý test je tato sazba vyjádřené jako testy spuštěny na virtuálního uživatele za hodinu. Například můžete přiřadit následující nemusely poměr testů na následující testy:
 
--   TestA: 4 testů na uživatele za hodinu
+- TestA: 4 testů na uživatele za hodinu
 
--   TestB: 2 testů na uživatele za hodinu
+- TestB: 2 testů na uživatele za hodinu
 
--   TestC: 0,125 testů na uživatele za hodinu
+- TestC: 0,125 testů na uživatele za hodinu
 
- Pokud používáte nemusely model kombinace testů, modulu runtime testu zatížení zaručuje, že skutečné kurz, ve kterém jsou testy spouštěny je menší než nebo rovna hodnotě zadané frekvence. Pokud testy se spouštějí příliš dlouhý pro číslo přiřazené k dokončení, je vrácena chyba.
+  Pokud používáte nemusely model kombinace testů, modulu runtime testu zatížení zaručuje, že skutečné kurz, ve kterém jsou testy spouštěny je menší než nebo rovna hodnotě zadané frekvence. Pokud testy se spouštějí příliš dlouhý pro číslo přiřazené k dokončení, je vrácena chyba.
 
- **Myslíte, že doba mezi cykly testu** nastavení neplatí při použití nemusely poměru testů.
+  **Myslíte, že doba mezi cykly testu** nastavení neplatí při použití nemusely poměru testů.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Použít rozdělení na zpoždění stimulace
  Hodnota **použít rozdělení na zpoždění stimulace** ve scénáři testu zatížení může být nastavena na hodnotu true nebo false:
 
--   **True**: Tento scénář bude platit statistické typické rozložení zpoždění určený hodnotou v **testů na uživatele za hodinu** sloupec v **upravit kombinaci testů** dialogového okna. Další informace najdete v tématu [úpravy modelů kombinací testů a určení pravděpodobnosti, že virtuální uživatel spustí test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **True**: Tento scénář bude platit statistické typické rozložení zpoždění určený hodnotou v **testů na uživatele za hodinu** sloupec v **upravit kombinaci testů** dialogového okna. Další informace najdete v tématu [úpravy modelů kombinací testů a určení pravděpodobnosti, že virtuální uživatel spustí test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Předpokládejme například, že máte **testů na uživatele za hodinu** hodnotu **upravit kombinaci testů** dialogové okno pro testovací nastavení pro 2 uživatele za hodinu. Pokud **použít rozdělení na zpoždění stimulace** je nastavena na **True**, typické statistické rozdělení se použije na čekací dobu mezi testy. Testy budou spuštěny stále 2 testů za hodinu, ale nemusí být nutně 30 minut mezi nimi. První test spustit až 4 minuty a druhý test za 45 minut.
+   Předpokládejme například, že máte **testů na uživatele za hodinu** hodnotu **upravit kombinaci testů** dialogové okno pro testovací nastavení pro 2 uživatele za hodinu. Pokud **použít rozdělení na zpoždění stimulace** je nastavena na **True**, typické statistické rozdělení se použije na čekací dobu mezi testy. Testy budou spuštěny stále 2 testů za hodinu, ale nemusí být nutně 30 minut mezi nimi. První test spustit až 4 minuty a druhý test za 45 minut.
 
--   **False**: testy budou spuštěny konkrétní tempem, které jste zadali pro hodnotu v **testů na uživatele za hodinu** sloupec **upravit kombinaci testů** dialogového okna. Další informace najdete v tématu [úpravy modelů kombinací testů a určení pravděpodobnosti, že virtuální uživatel spustí test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **False**: testy budou spuštěny konkrétní tempem, které jste zadali pro hodnotu v **testů na uživatele za hodinu** sloupec **upravit kombinaci testů** dialogového okna. Další informace najdete v tématu [úpravy modelů kombinací testů a určení pravděpodobnosti, že virtuální uživatel spustí test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Předpokládejme například, že máte **testů na uživatele za hodinu** hodnotu **upravit kombinaci testů** dialogové okno pro testovací nastavení pro 2 uživatele za hodinu. Pokud **použít rozdělení na zpoždění stimulace** je nastavena na **False**, v podstatě udělujete žádné volnost při spuštění testů. Test se spouští každých 30 minut. Tím je zajištěno, že spustíte 2 testů za hodinu.
+   Předpokládejme například, že máte **testů na uživatele za hodinu** hodnotu **upravit kombinaci testů** dialogové okno pro testovací nastavení pro 2 uživatele za hodinu. Pokud **použít rozdělení na zpoždění stimulace** je nastavena na **False**, v podstatě udělujete žádné volnost při spuštění testů. Test se spouští každých 30 minut. Tím je zajištěno, že spustíte 2 testů za hodinu.
 
- Další informace najdete v tématu [jak: použít rozdělení na zpoždění stimulace, když model kombinace testů se stimulací podle uživatele](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
+  Další informace najdete v tématu [jak: použít rozdělení na zpoždění stimulace, když model kombinace testů se stimulací podle uživatele](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
 ###  <a name="SequentialOrder"></a> Pořadí
  Výběr založený na možnost pořadí sekvenčního testu díky jednotlivé virtuální uživatele spouštět všechny testy ve scénáři v pořadí, že testy nebyly definovány.
@@ -88,17 +88,17 @@ Můžete určit jednu z následujících možností model kombinace testů pro v
 ## <a name="initialize-and-terminate-tests"></a>Inicializační a ukončovací testy
  Můžete vybrat testy ke spuštění na začátek a konec jednotlivých virtuálních uživatelů pro zátěžové testování relace. Další informace najdete v tématu [úpravy modelů kombinací testů a určení pravděpodobnosti, že virtuální uživatel spustí test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
--   **Inicializace testu**. Každý virtuální uživatel spouštění testu před spuštěním některý z testů v poměru testů.
+- **Inicializace testu**. Každý virtuální uživatel spouštění testu před spuštěním některý z testů v poměru testů.
 
--   **Ukončit test**. Tento test běží po spuštění všech testů pro konkrétní virtuálních uživatelů.
+- **Ukončit test**. Tento test běží po spuštění všech testů pro konkrétní virtuálních uživatelů.
 
- Mějte prosím na paměti následující skutečnosti související inicializační test a ukončovacího testu:
+  Mějte prosím na paměti následující skutečnosti související inicializační test a ukončovacího testu:
 
--   Doba trvání zkušebního zatížení můžete určit podle času místo podle počtu iterací. V takovém případě po dokončení zátěžového testu, dobu trvání spuštění ukončovacího testu se nespustí.
+- Doba trvání zkušebního zatížení můžete určit podle času místo podle počtu iterací. V takovém případě po dokončení zátěžového testu, dobu trvání spuštění ukončovacího testu se nespustí.
 
--   Je-li inicializovat test Jednotkový test nebo test výkonnosti webu, je uložen stav objektu TestContext nebo WebTestContext, po dokončení inicializace testu. Poté použije jako počáteční kontext pro iterace testů v poměru testů.
+- Je-li inicializovat test Jednotkový test nebo test výkonnosti webu, je uložen stav objektu TestContext nebo WebTestContext, po dokončení inicializace testu. Poté použije jako počáteční kontext pro iterace testů v poměru testů.
 
--   Nové uživatele, jak je definováno ve vlastnosti scénář procento noví uživatelé, vždy spustit inicializační test, test z kombinace testů a ukončovacího testu jedné iterace.
+- Nové uživatele, jak je definováno ve vlastnosti scénář procento noví uživatelé, vždy spustit inicializační test, test z kombinace testů a ukončovacího testu jedné iterace.
 
 ## <a name="see-also"></a>Viz také:
 

@@ -1,5 +1,5 @@
 ---
-title: Privátní data pro sestavy problémů
+title: Soukromá data pro sestavy problémů
 ms.date: 06/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,51 +12,51 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2905cd6fcf9255eb8ba76d636d908651e2254115
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 21515d6e9841d943cf91799224afdebf8326e07e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327073"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836824"
 ---
-# <a name="developer-community-data-privacy"></a>Ochrana dat komunity vývojářů
+# <a name="developer-community-data-privacy"></a>Ochrana osobních údajů komunity vývojářů
 
-Ve výchozím nastavení, všechny informace v problém hlásí [komunity vývojářů](https://developercommunity.visualstudio.com/), včetně všech komentáře a odpovědi, je veřejně viditelný. Toto je výhodné, protože umožňuje celé komunitě zobrazíte problémy, řešení a řešení, které jiní uživatelé nalezeny. Pokud máte obavy o ochraně osobních údajů dat nebo identity, ale máte možnosti.
+Ve výchozím nastavení, všechny informace v problém sestav na [komunity vývojářů](https://developercommunity.visualstudio.com/), včetně všech komentáře a odpovědi, je veřejně viditelné. To je užitečné, protože umožňuje celé komunitě zobrazíte problémů, řešení a řešení, které našli ostatním uživatelům. Pokud máte obavy o ochraně osobních údajů vašich údajů a identity, ale máte možnosti.
 
 ## <a name="identity-privacy"></a>Osobní údaje identity
 
-Pokud máte obavy o odhalil svoji identitu, [vytvořit nový účet Microsoft](https://signup.live.com/) nezveřejňuje všechny podrobnosti o vás. Tento účet použijte pro vytvoření sestavy.
+Pokud vám dělají starosti odhalení svoji identitu [vytvořit nový účet Microsoft](https://signup.live.com/) , který nesmí vyzradit žádné podrobnosti o vás. Vytvoření sestavy pomocí tohoto účtu.
 
 ## <a name="data-privacy"></a>Ochrana dat
 
-Pokud máte obavy o ochrany osobních údajů, neuvádějte nic, co chcete zachovat privátní v názvu nebo obsah počáteční sestavy, který je vždycky veřejné. Místo toho vytvoří sestavu a pak Všimněte si, že budete odesílat podrobnosti soukromě v samostatných komentář. Jakmile je vytvořena sestava problém, můžete určit, kdo může zobrazit odpovědi a přílohy:
+Pokud vám dělají starosti ochrany osobních údajů, neumisťujte všechno, co chcete zachovat privátní v nadpisu nebo obsahu objektu původní sestavy, což je vždy veřejné. Místo toho vytvořte sestavu a Všimněte si, že budete odesílat podrobnosti soukromě v samostatných komentář. Po vytvoření hlášení o problému, můžete určit, kdo může zobrazit odpovědi a přílohy:
 
-1. V sestavě, které jste vytvořili, zvolte **, přidejte komentář** vytvořit privátní popis problému.
+1. V sestavě můžete vytvořit zvolte **přidat komentář** k vytvoření soukromého popis problému.
 
-1. V editoru odpovědět, použijte následující ovládací prvek **odeslání** a **zrušit** tlačítka k určení cílové skupiny v odpovědi. Zvolte **Viewable moderátorů a původní plakáty** omezit viditelnost zaměstnancům společnosti Microsoft a sami.
+2. V editoru odpovědi pomocí ovládacího prvku níže **odeslat** a **zrušit** tlačítka zadejte cílovou skupinu pro odpovědi. Zvolte **Viewable moderátoři a původní plakát** omezit viditelnost zaměstnancům společnosti Microsoft a sami.
 
-   ![Ovládací prvek ochrany osobních údajů v komunity vývojářů](media/developer-community-privacy-control.png)
+   ![Ovládací prvek ochrany osobních údajů v komunitě vývojářů](media/developer-community-privacy-control.png)
 
-   Pouze uživatelé, které zadáte můžete zobrazit komentář a všechny bitové kopie, odkazů nebo kód, který je zahrnout v ní. Všechny odpovědi v části Komentář mají stejné viditelnost jako původní komentář. To platí i v případě, že ovládací prvek ochrany osobních údajů v odpovědi nezobrazí správně stav zobrazení s omezeným přístupem.
+   Pouze lidé, se kterými můžete zadat vidět komentář a všechny Image, odkazy nebo kódu, které jsou v ní. Veškeré odpovědi v části komentáře mají stejnou viditelnost jako původní komentář. To platí i v případě, že ovládací prvek ochrany osobních údajů v odpovědi není správně zobrazit stav zobrazení s omezeným přístupem.
 
-1. Přidejte popis a žádné jiné informace, Image a potřebné pro vaše zkopírujte přiložených souborů. Vyberte **odeslání** tlačítko soukromě odesílat výše uvedené informace.
+3. Přidáte popis a jakékoli jiné informace, obrázky a přiložené soubory potřebné pro vaše reprodukci. Zvolte **odeslat** tlačítko soukromě odesílat tyto informace.
 
    > [!NOTE]
-   > Je omezena na připojené soubory 2 GB a maximálně 10 souborů. Pokud potřebujete větší soubor nahrát, můžete odeslat novou sestavu problém nebo žádat zaměstnanec společnosti Microsoft v privátní komentář adrese URL pro odeslání.
+   > Existuje omezení připojené soubory na 2 GB a maximálně 10 soubory. Pokud je potřeba nahrát soubor větší, můžete odeslat nové hlášení o problému nebo žádat zaměstnanec společnosti Microsoft v privátní komentář adrese URL pro odeslání.
 
-Chcete-li zachovat ochranu vašich osobních údajů a zachovat citlivých informací mimo veřejné zobrazení, postará zachovat veškerou komunikaci se společností Microsoft k odpovědi v části Komentář viditelnost omezený. Odpovědi na jiné připomínky může vést k omylem prozrazeny citlivé informace.
+Chcete-li udržovat vaše osobní údaje a citlivých informací mimo veřejné zobrazení, pečlivě zachovat všechny interakce s Microsoftem k odpovědím v části s omezením viditelnost komentář. Odpovědi na další komentáře může vést k neúmyslně zveřejnit citlivé informace.
 
 ## <a name="data-we-collect"></a>Data, které shromažďujeme
 
 Pokud **nahlásit problém** je zahájeno z instalačního programu Visual Studio, shromažďujeme nejnovější protokolu instalace.
 
-Pokud **nahlásit problém** se zahájí ze sady Visual Studio, shromažďujeme jeden nebo více z následujících typů dat:
+Pokud **nahlásit problém** je zahájeno z aplikace Visual Studio shromažďujeme jeden nebo více z následujících typů dat:
 
-- Programu Watson a .NET položky z protokolu událostí
+- Watson a .NET položky z protokolu událostí
 
-- Soubor protokolu v paměti aktivity Visual Studio
+- Soubor protokolu aktivit v paměti Visual Studio
 
-- PerfWatson souborů, pokud je povolená kolekce Watson, z *VSFeedbackPerfWatsonData* složky
+- Nástroj PerfWatson soubory, pokud je povoleno shromažďování Watson, z *VSFeedbackPerfWatsonData* složky
 
 - LiveShare soubory protokolu, pokud existují, z *VSFeedbackVSRTCLogs* složky
 
@@ -64,7 +64,7 @@ Pokud **nahlásit problém** se zahájí ze sady Visual Studio, shromažďujeme 
 
 - Soubory protokolu Nuget, pokud existují, z *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*
 
-- Ladicí program protokolu souborů webové, pokud existují:
+- Web ladicí program protokolové soubory, pokud neexistují:
 
    - *%TEMP%\vscode-Chrome-Debug.txt*
 
@@ -72,20 +72,20 @@ Pokud **nahlásit problém** se zahájí ze sady Visual Studio, shromažďujeme 
 
    - *%TEMP%\vscode-Edge-Debug.txt*
 
-- Snímek obrazovky, pokud zvolíte možnost ji zahrnout
+- Snímek obrazovky, pokud budete chtít zahrnout
 
-- Záznam dat, pokud se rozhodnete zahrnout záznam, který zahrnuje:
+- Nahrávání dat, pokud budete chtít zahrnout záznam, který obsahuje:
 
-   - Postup reprodukování problému
+   - Kroky pro reprodukci problému
 
-   - Trasovací soubor ETL
+   - Soubor trasování ETL
 
-   - Souboru s výpisem
+   - Soubor s výpisem paměti
 
-   > [!NOTE]
-   > Můžete odstranit žádný záznam dat, která jste si jej nepřejete odeslání před odesláním sestavy.
+    > [!NOTE]
+    > Můžete odstranit záznam datům, které nechcete odesílat před odesláním do sestavy.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postup nahlásit problém pomocí sady Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
+- [Postup ohlášení problému se sadou Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
 - [Ochrana dat sestavy problém C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

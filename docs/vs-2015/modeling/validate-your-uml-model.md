@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c13a5e8ed5ae7fe778908af87958d4ed25951c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812501"
 ---
 # <a name="validate-your-uml-model"></a>Ověření modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Některé z modelů UML, které nakreslíte v sadě Visual Studio může být po
 ## <a name="invoking-validation"></a>Vyvolání ověřování  
  Pokud jste nainstalovali rozšíření ověřování, omezení, které poskytuje může použít v následujících případech. Některá omezení jsou nastavené na použití pouze některé z těchto případů.  
   
--   **Příkaz ověření.** Volání ověřovací kdykoli, klikněte na tlačítko **ověřit Model UML** na **architektura** nabídky.  
+- **Příkaz ověření.** Volání ověřovací kdykoli, klikněte na tlačítko **ověřit Model UML** na **architektura** nabídky.  
   
-    > [!NOTE]
-    >  Příkaz se zobrazí jenom v případě, že omezení ověření jsou nainstalovány.  
+  > [!NOTE]
+  >  Příkaz se zobrazí jenom v případě, že omezení ověření jsou nainstalovány.  
   
--   **Při uložení modelu.** Omezení ověřování lze použít při uložení modelu. Účelem těchto omezení je pomohou Ujistěte se, že neukládejte modelu, který je neplatný podle interpretace váš projekt.  
+- **Při uložení modelu.** Omezení ověřování lze použít při uložení modelu. Účelem těchto omezení je pomohou Ujistěte se, že neukládejte modelu, který je neplatný podle interpretace váš projekt.  
   
-     Jestliže nejsou chyby, můžete být vyzváni, zda chcete uložit model. Můžete opravit chyby, a přesto uložit model.  
+   Jestliže nejsou chyby, můžete být vyzváni, zda chcete uložit model. Můžete opravit chyby, a přesto uložit model.  
   
--   **Při otevření modelu.** Při otevření modelu metody ověřování lze použít k obnovení chybové zprávy, které existovaly při uložení modelu. Chyby mohou být způsobeny také nekonzistence mezi změny, které jsou provedeny podle uživatelů, kteří pracují na různých součástí modelu. Další informace najdete v tématu [sdílení modelů a export diagramů](../modeling/share-models-and-exporting-diagrams.md).  
+- **Při otevření modelu.** Při otevření modelu metody ověřování lze použít k obnovení chybové zprávy, které existovaly při uložení modelu. Chyby mohou být způsobeny také nekonzistence mezi změny, které jsou provedeny podle uživatelů, kteří pracují na různých součástí modelu. Další informace najdete v tématu [sdílení modelů a export diagramů](../modeling/share-models-and-exporting-diagrams.md).  
   
- Chyby ověření jsou hlášeny v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna chyby.  
+  Chyby ověření jsou hlášeny v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna chyby.  
   
- V diagramu vyberte prvky, které nejsou správné, klikněte dvakrát na chybu. Tento postup funguje pouze v případě nesprávné elementy jsou viditelné v diagramu otevřete.  
+  V diagramu vyberte prvky, které nejsou správné, klikněte dvakrát na chybu. Tento postup funguje pouze v případě nesprávné elementy jsou viditelné v diagramu otevřete.  
   
 ## <a name="installing-validation-constraints"></a>Instalace omezení ověřování  
  Omezení jsou zabaleny v rámci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] soubory Extension (VSIX). Sadou omezujících podmínek, bude obvykle součástí rozšíření, která také obsahuje další definice, jako je například příkazy nabídek, profily a položky panelu nástrojů.  

@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fa5e2f46f3fa5cce9a795c2353148d2bd3f47351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 977594493279d52154de3cb5ef7bce56d4d8f985
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293108"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836837"
 ---
 # <a name="properties-of-domain-properties"></a>Vlastnosti vlastností domény
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ A *doménovou vlastnost* je funkce, které může obsahovat hodnotu prvku modelu
   
  Většina vlastností domény jsou implementovány jako běžné vlastnosti CLR. Z programovací pohledu, mají vlastnosti domény bohatší funkcí než normální program vlastnosti:  
   
--   Můžete definovat pravidla a události, které monitorují stav vlastnosti. Další informace najdete v tématu [šířící změny a reakce na](../modeling/responding-to-and-propagating-changes.md).  
+- Můžete definovat pravidla a události, které monitorují stav vlastnosti. Další informace najdete v tématu [šířící změny a reakce na](../modeling/responding-to-and-propagating-changes.md).  
   
--   Transakce zabránit nekonzistentní stavy. Další informace najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+- Transakce zabránit nekonzistentní stavy. Další informace najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
- Když vyberete doménová vlastnost, která v diagramu nebo v Průzkumníku DSL, zobrazí se následující položky v okně Vlastnosti. Další informace o tom, jak používat tyto položky, naleznete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+  Když vyberete doménová vlastnost, která v diagramu nebo v Průzkumníku DSL, zobrazí se následující položky v okně Vlastnosti. Další informace o tom, jak používat tyto položky, naleznete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 |Vlastnost|Popis|Výchozí hodnota|  
 |--------------|-----------------|-------------------|  

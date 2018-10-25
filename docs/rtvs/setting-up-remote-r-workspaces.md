@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6ef92d907b34705e0a0461d06827f5504b0e61c3
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827711"
 ---
 # <a name="set-up-remote-workspaces"></a>Nastavení vzdálených pracovních prostorů
 
@@ -97,15 +97,15 @@ Výhody a rizika při použití certifikátu podepsaného svým držitelem najde
 Chcete-li vydat certifikát podepsaný svým držitelem:
 
 1. Přihlaste se k počítači Linux nebo SSH.
-1. Nainstalujte `ssl-cert` balíčku:
+2. Nainstalujte `ssl-cert` balíčku:
     ```sh
     sudo apt-get install ssl-cert
     ```
-1. Spustit `make-ssl-cert` k vygenerování certifikátu SSL podepsaného držitelem výchozí:
+3. Spustit `make-ssl-cert` k vygenerování certifikátu SSL podepsaného držitelem výchozí:
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
-1. Převeďte do formátu PFX vygenerovaný klíč a soubory PEM. Vygenerovaný soubor PFX by měla být v domovské složky:
+4. Převeďte do formátu PFX vygenerovaný klíč a soubory PEM. Vygenerovaný soubor PFX by měla být v domovské složky:
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
@@ -135,12 +135,12 @@ Ke spuštění kódu jazyka R, musí mít vzdálený počítač interpret R nain
 
 1. Stáhnout a nainstalovat některou z následujících akcí:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [R server CRAN pro Windows](https://cran.r-project.org/bin/windows/base/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [R server CRAN pro Windows](https://cran.r-project.org/bin/windows/base/)
 
-    Obě mají stejné funkce, ale Microsoft R Open výhody další hardware accelerated lineární algebraický knihovny laskavým [Intel Math jádra Library](https://software.intel.com/intel-mkl).
+     Obě mají stejné funkce, ale Microsoft R Open výhody další hardware accelerated lineární algebraický knihovny laskavým [Intel Math jádra Library](https://software.intel.com/intel-mkl).
 
-1. Spustit [instalační program služby R](https://aka.ms/rtvs-services) a pak po zobrazení výzvy. Instalační program provede následující akce:
+2. Spustit [instalační program služby R](https://aka.ms/rtvs-services) a pak po zobrazení výzvy. Instalační program provede následující akce:
 
     - Vytvořte složku v *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\*  a zkopírujte všechny požadované binární soubory.
     - Nainstalujte `RHostBrokerService` a `RUserProfileService` a nakonfigurovat tak, aby se spouštěla automaticky.
@@ -160,12 +160,12 @@ Ke spuštění kódu jazyka R, musí mít vzdálený počítač interpret R nain
 
 1. Stáhnout a nainstalovat některou z následujících akcí:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [R server CRAN pro Windows](https://cran.r-project.org/bin/linux/ubuntu/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [R server CRAN pro Windows](https://cran.r-project.org/bin/linux/ubuntu/)
 
-    Obě mají stejné funkce, ale Microsoft R Open výhody další hardware accelerated lineární algebraický knihovny laskavým [Intel Math jádra Library](https://software.intel.com/intel-mkl).
+     Obě mají stejné funkce, ale Microsoft R Open výhody další hardware accelerated lineární algebraický knihovny laskavým [Intel Math jádra Library](https://software.intel.com/intel-mkl).
 
-1. Postupujte podle pokynů [Vzdálená služba R pro Linux](setting-up-remote-r-service-on-linux.md), která zahrnuje fyzických počítačů se systémem Ubuntu, virtuální počítače Azure s Ubuntu, subsystém Windows pro Linux (WSL) a kontejnery Dockeru, včetně těch, které běží na kontejner úložiště Azure.
+2. Postupujte podle pokynů [Vzdálená služba R pro Linux](setting-up-remote-r-service-on-linux.md), která zahrnuje fyzických počítačů se systémem Ubuntu, virtuální počítače Azure s Ubuntu, subsystém Windows pro Linux (WSL) a kontejnery Dockeru, včetně těch, které běží na kontejner úložiště Azure.
 
 ## <a name="configure-r-services"></a>Konfigurace služby R
 

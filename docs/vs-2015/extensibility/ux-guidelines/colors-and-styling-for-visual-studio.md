@@ -13,12 +13,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b57b50672fb476cfeac3a8748202d9e7dcb47a13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51e924f14ebb8b20f193d163529096efe76318f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267407"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831755"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Barvy a styly pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,23 +26,23 @@ ms.locfileid: "49267407"
 ## <a name="using-color-in-visual-studio"></a>Použití barev v sadě Visual Studio  
  V sadě Visual Studio barva se používá především jako komunikační nástroj, nejen jako dekorace. Použít barvu minimálně a vyhradit pro situace, ve které chcete:  
   
--   Komunikaci význam nebo umístění (například modifikátory platformu a jazyk)  
+- Komunikaci význam nebo umístění (například modifikátory platformu a jazyk)  
   
--   Upoutat pozornost (například označující změnu stavu)  
+- Upoutat pozornost (například označující změnu stavu)  
   
--   Lepší čitelnost a poskytovat zajímavá pro procházení uživatelského rozhraní  
+- Lepší čitelnost a poskytovat zajímavá pro procházení uživatelského rozhraní  
   
--   Zvýšení žádoucí  
+- Zvýšení žádoucí  
   
- Existuje několik možností pro přiřazení barev k elementům uživatelského rozhraní v sadě Visual Studio. V některých případech může být obtížné obrázek si možnosti, kterou se má použít, nebo jak používat správně. Toto téma vám pomůže:  
+  Existuje několik možností pro přiřazení barev k elementům uživatelského rozhraní v sadě Visual Studio. V některých případech může být obtížné obrázek si možnosti, kterou se má použít, nebo jak používat správně. Toto téma vám pomůže:  
   
-1.  Seznamte s různými službami a systémy, které slouží k definování barev v sadě Visual Studio.  
+1. Seznamte s různými službami a systémy, které slouží k definování barev v sadě Visual Studio.  
   
-2.  Výběr správné možnosti pro daný element.  
+2. Výběr správné možnosti pro daný element.  
   
-3.  Správně použijte možnost, kterou jste zvolili.  
+3. Správně použijte možnost, kterou jste zvolili.  
   
- **Důležité:** nikdy pevně hex, RGB nebo systémové barvy prvkům uživatelského rozhraní. Pomocí služby umožňuje flexibilitu při ladění odstín. Navíc bez této služby, nebude moct využívat možnosti přepínání motivů [VSColor službu](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
+   **Důležité:** nikdy pevně hex, RGB nebo systémové barvy prvkům uživatelského rozhraní. Pomocí služby umožňuje flexibilitu při ladění odstín. Navíc bez této služby, nebude moct využívat možnosti přepínání motivů [VSColor službu](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
   
 ### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Prvky rozhraní metody pro přiřazení barev k sadě Visual Studio  
  Zvolte metodu, která nejlépe odpovídá vaší prvky uživatelského rozhraní.  
@@ -383,23 +383,23 @@ protected override void Dispose(bool disposing)
   
  Metody implementovány pomocí [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) nezajistil integrované vývojové prostředí s:  
   
--   Seznamy zobrazení položek v kategorii  
+- Seznamy zobrazení položek v kategorii  
   
--   Lokalizovatelné názvy pro zobrazení položek  
+- Lokalizovatelné názvy pro zobrazení položek  
   
--   Zobrazení informací pro každého člena kategorie  
+- Zobrazení informací pro každého člena kategorie  
   
- **Poznámka:** každé kategorie musí obsahovat alespoň jednu položku zobrazení.  
+  **Poznámka:** každé kategorie musí obsahovat alespoň jednu položku zobrazení.  
   
- Využívá integrovaného vývojového prostředí **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** rozhraní definovat sjednocení několik kategorií.  
+  Využívá integrovaného vývojového prostředí **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** rozhraní definovat sjednocení několik kategorií.  
   
- Jeho implementace poskytuje integrované vývojové prostředí s:  
+  Jeho implementace poskytuje integrované vývojové prostředí s:  
   
--   Seznam kategorií, které tvoří danou skupinu  
+- Seznam kategorií, které tvoří danou skupinu  
   
--   Přístup k instancím typu [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) podpora jednotlivých kategorií v rámci skupiny  
+- Přístup k instancím typu [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) podpora jednotlivých kategorií v rámci skupiny  
   
--   Názvy zdrojů lokalizovatelných skupin  
+- Názvy zdrojů lokalizovatelných skupin  
   
 #### <a name="updating-the-ide"></a>Aktualizuje se rozhraní IDE  
  Rozhraní IDE ukládá do mezipaměti informace o nastavení písem a barev. Proto po jakékoliv úpravě konfigurace rozhraní IDE písma a barvy zajišťující, že je aktuální mezipaměti je osvědčeným postupem.  
@@ -411,13 +411,13 @@ protected override void Dispose(bool disposing)
   
  K tomuto účelu VSPackage musí:  
   
--   **zpracování událostí generovaných IDE** implementací [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) rozhraní. Integrované vývojové prostředí volá metodu odpovídající následující stránky písma a barev uživatelské úpravy. Například volání [onfontchanged –](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) metodu, pokud je vybrána nového písma.  
+- **zpracování událostí generovaných IDE** implementací [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) rozhraní. Integrované vývojové prostředí volá metodu odpovídající následující stránky písma a barev uživatelské úpravy. Například volání [onfontchanged –](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) metodu, pokud je vybrána nového písma.  
   
- **OR**  
+  **OR**  
   
--   **dotazování rozhraní IDE pro změny**. To lze provést prostřednictvím systému implementované [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) rozhraní. I když především pro podporu trvalost, [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) metoda můžete získat informace o písma a barvy pro zobrazení položek. Další informace o nastavení písma a barvy, najdete v článku na webu MSDN [přístup k uložené písmo a barvy nastavení](https://msdn.microsoft.com/library/bb166382.aspx).  
+- **dotazování rozhraní IDE pro změny**. To lze provést prostřednictvím systému implementované [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) rozhraní. I když především pro podporu trvalost, [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) metoda můžete získat informace o písma a barvy pro zobrazení položek. Další informace o nastavení písma a barvy, najdete v článku na webu MSDN [přístup k uložené písmo a barvy nastavení](https://msdn.microsoft.com/library/bb166382.aspx).  
   
- **Poznámka:** k zajištění, že jsou správné výsledky dotazování, použijte [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) rozhraní k určení, pokud se před voláním metody načítání potřebuje vyprázdnění mezipaměti a aktualizace [ IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) rozhraní.  
+  **Poznámka:** k zajištění, že jsou správné výsledky dotazování, použijte [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) rozhraní k určení, pokud se před voláním metody načítání potřebuje vyprázdnění mezipaměti a aktualizace [ IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) rozhraní.  
   
 #### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>Registrace vlastní písma a barvy kategorie bez implementace rozhraní  
  Následující příklad kódu ukazuje, jak zaregistrovat vlastní písma a barev kategorie bez implementace rozhraní:  

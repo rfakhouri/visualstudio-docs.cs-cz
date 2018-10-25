@@ -16,12 +16,12 @@ ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96a641778811d88c0087a23822ab789e72b066f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 45f0084d060e9727f30ba39233ec5b92818d9205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190005"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829882"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Příkazy zachytávání služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ S [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], můžete použít příkazy z
   
  Máte následující možnosti pro zpracování příkazu:  
   
--   Zpracování příkazu a pak předejte příkazu dalšímu příkazu filtru v řetězci.  
+- Zpracování příkazu a pak předejte příkazu dalšímu příkazu filtru v řetězci.  
   
--   Zpracování příkazu a nelze předat příkazu dalšímu filtru příkazu.  
+- Zpracování příkazu a nelze předat příkazu dalšímu filtru příkazu.  
   
--   Ke zpracování příkazu, ale příkaz dalšímu filtru příkazu předat.  
+- Ke zpracování příkazu, ale příkaz dalšímu filtru příkazu předat.  
   
--   Ignorujte příkazu. Nezpracuje v aktuální filtr a nepředávejte dalšímu filtru.  
+- Ignorujte příkazu. Nezpracuje v aktuální filtr a nepředávejte dalšímu filtru.  
   
- Informace o příkazech, které by měl zpracovat služby jazyka najdete v tématu [důležité příkazy pro filtry služby jazyka](../../extensibility/internals/important-commands-for-language-service-filters.md).
+  Informace o příkazech, které by měl zpracovat služby jazyka najdete v tématu [důležité příkazy pro filtry služby jazyka](../../extensibility/internals/important-commands-for-language-service-filters.md).
 

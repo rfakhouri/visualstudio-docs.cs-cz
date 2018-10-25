@@ -17,12 +17,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327d312ec13e449f0e116a11f920f17a439f569c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223729"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818098"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Přidání seznamu Naposledy použité do podnabídky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Tento návod vychází z ukázky v [přidání podnabídky do nabídky](../exten
   
 ## <a name="creating-an-extension"></a>Vytvoření rozšíření  
   
--   Postupujte podle pokynů v [přidání podnabídky do nabídky](../extensibility/adding-a-submenu-to-a-menu.md) Vytvoření podnabídky, která se mění v následujících postupech.  
+- Postupujte podle pokynů v [přidání podnabídky do nabídky](../extensibility/adding-a-submenu-to-a-menu.md) Vytvoření podnabídky, která se mění v následujících postupech.  
   
- V postupech v tomto názorném postupu se předpokládá, že je název sady VSPackage `TopLevelMenu`, což je název, který se používá v [přidání nabídky do řádku nabídek sady Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
+  V postupech v tomto názorném postupu se předpokládá, že je název sady VSPackage `TopLevelMenu`, což je název, který se používá v [přidání nabídky do řádku nabídek sady Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
   
 ## <a name="creating-a-dynamic-item-list-command"></a>Vytváření dynamických položek seznamu příkazu  
   

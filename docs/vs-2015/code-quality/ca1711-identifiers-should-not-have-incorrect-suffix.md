@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af8904db6d1c07f9c805a21975101d7728456eec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f42416a6d88edc417c0150685ab4c7e198aa808
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218306"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837097"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identifikátory by neměly mít nesprávnou příponu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
@@ -59,15 +60,15 @@ ms.locfileid: "49218306"
 
  Kromě toho by měl následující přípony **není** použít:
 
--   Delegát
+- Delegát
 
--   Výčet
+- Výčet
 
--   Impl – místo toho použijte „Core“
+- Impl – místo toho použijte „Core“
 
--   Ex nebo podobná přípona k odlišení starší verze stejného typu
+- Ex nebo podobná přípona k odlišení starší verze stejného typu
 
- Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. To snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
+  Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. To snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Odeberte příponu z názvu typu.

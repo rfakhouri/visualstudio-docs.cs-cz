@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 205408cc4241bb0c10b4a2e413449f7b70452187
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0127bac6ca74be626f9ce22fb60ad5258ae6c3c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822122"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozšíření vašeho DSL pomocí MEF
 
@@ -125,43 +125,43 @@ Pokud máte přístup k DSL povolené MEF vytvořené sobě nebo někomu jinému
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>Vytvoření DSL rozšíření VSIX
 
-1.  Vytvořte nový projekt knihovny tříd. Chcete-li to provést, v **nový projekt** dialogu **jazyka Visual Basic** nebo **Visual C#** a pak vyberte **knihovny tříd**.
+1. Vytvořte nový projekt knihovny tříd. Chcete-li to provést, v **nový projekt** dialogu **jazyka Visual Basic** nebo **Visual C#** a pak vyberte **knihovny tříd**.
 
-2.  V nový projekt knihovny tříd přidejte odkaz na sestavení DSL.
+2. V nový projekt knihovny tříd přidejte odkaz na sestavení DSL.
 
-    -   Toto sestavení obsahuje obvykle název, který končí na ". DSL.dll".
+   - Toto sestavení obsahuje obvykle název, který končí na ". DSL.dll".
 
-    -   Pokud máte přístup k projektu DSL, můžete najít soubor sestavení v adresáři **Dsl\bin\\\***
+   - Pokud máte přístup k projektu DSL, můžete najít soubor sestavení v adresáři **Dsl\bin\\\\***
 
-    -   Pokud máte přístup k souboru DSL VSIX, můžete najít sestavení tak, že změníte příponu názvu souboru VSIX na ".zip". Soubor .zip dekomprimujte.
+   - Pokud máte přístup k souboru DSL VSIX, můžete najít sestavení tak, že změníte příponu názvu souboru VSIX na ".zip". Soubor .zip dekomprimujte.
 
-3.  Přidejte odkazy na následující sestavení .NET:
+3. Přidejte odkazy na následující sestavení .NET:
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-    -   System.ComponentModel.Composition.dll
+   -   System.ComponentModel.Composition.dll
 
-    -   System.Windows.Forms.dll
+   -   System.Windows.Forms.dll
 
-4.  Vytvořte VSIX projekt ve stejném řešení. Chcete-li to provést, v **nový projekt** dialogového okna rozbalte **jazyka Visual Basic** nebo **Visual C#**, klikněte na tlačítko **rozšiřitelnost**a pak vyberte  **Projekt VSIX**.
+4. Vytvořte VSIX projekt ve stejném řešení. Chcete-li to provést, v **nový projekt** dialogového okna rozbalte **jazyka Visual Basic** nebo **Visual C#**, klikněte na tlačítko **rozšiřitelnost**a pak vyberte  **Projekt VSIX**.
 
-5.  V Průzkumníku řešení klikněte pravým tlačítkem na projekt VSIX a potom klikněte na tlačítko **nastavit jako spouštěný projekt**.
+5. V Průzkumníku řešení klikněte pravým tlačítkem na projekt VSIX a potom klikněte na tlačítko **nastavit jako spouštěný projekt**.
 
-6.  V novém projektu, otevřete **source.extension.vsixmanifest**.
+6. V novém projektu, otevřete **source.extension.vsixmanifest**.
 
-7.  Klikněte na tlačítko **přidat obsah**. V dialogovém okně nastavte **typ obsahu** k **Komponenta MEF**, a **zdrojový projekt** do projektu knihovny tříd.
+7. Klikněte na tlačítko **přidat obsah**. V dialogovém okně nastavte **typ obsahu** k **Komponenta MEF**, a **zdrojový projekt** do projektu knihovny tříd.
 
-8.  Přidáte odkaz VSIX na DSL.
+8. Přidáte odkaz VSIX na DSL.
 
-    1.  V **source.extension.vsixmanifest**, klikněte na tlačítko **přidat odkaz**
+   1. V **source.extension.vsixmanifest**, klikněte na tlačítko **přidat odkaz**
 
-    2.  V dialogovém okně klikněte na tlačítko **přidat datové části** a vyhledejte soubor VSIX DSL. Soubor VSIX je součástí řešení DSL v **DslPackage\bin\\\***.
+   2. V dialogovém okně klikněte na tlačítko **přidat datové části** a vyhledejte soubor VSIX DSL. Soubor VSIX je součástí řešení DSL v ** DslPackage\bin\\\\***.
 
-         To umožňuje uživatelům s instalací DSL a rozšíření ve stejnou dobu. Pokud uživatel již nainstaloval DSL, nainstaluje se pouze rozšíření.
+       To umožňuje uživatelům s instalací DSL a rozšíření ve stejnou dobu. Pokud uživatel již nainstaloval DSL, nainstaluje se pouze rozšíření.
 
 9. Zkontrolujte a aktualizujte pole z **source.extension.vsixmanifest**. Klikněte na tlačítko **vybrat vydání** a ověřte, že jsou nastaveny správné edice sady Visual Studio.
 

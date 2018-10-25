@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e2c960fda37a15fe129a6a2b67c4a55c297cefa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f2ba9e49a45305c42f813f996392bb1fa5af41b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842661"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Přehled vývoje řešení pro Office (VSTO)
   Pomocí aplikace Microsoft Office jako front-endu řešení, můžete využít známé uživatelské rozhraní aplikace Microsoft Office a nástrojů, jako jsou funkce zpracování textu ve Wordu, funkce pro analýzu dat aplikace Excel a funkcím pro správu e-mailu aplikace Outlook . Můžete vyvíjet řešení v sadě Visual Studio k přizpůsobení aplikace Office a přidejte konkrétní funkce, které potřebujete pro své podnikové procesy. Například můžete zapnout Word do smlouvy generátor, který sestaví kontrakty si již existující částí, které mohou být provedeny upravovatelného nebo nejde upravit. Pomocí aplikace Excel můžete vytvořit přizpůsobené pro různé projekty listu aplikace automatizované rozpočtu. Uživatelům můžete taky využít řešení pro systém office v režimu offline, což je komplexní řešení více praktické, než by se použily, pokud používáte architekturu založenou na web.  
@@ -31,13 +31,13 @@ ms.locfileid: "35675870"
 ## <a name="choose-an-office-project-type"></a>Zvolte typ projektu Office  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] poskytuje následující typy šablon projektů pro vývoj pro Office na základě VSTO:  
   
--   **Přizpůsobení na úrovni dokumentu** jsou spojeny s určitým dokumentem.  
+- **Přizpůsobení na úrovni dokumentu** jsou spojeny s určitým dokumentem.  
   
--   **Doplňky VSTO** jsou spojeny s vlastní aplikace.  
+- **Doplňky VSTO** jsou spojeny s vlastní aplikace.  
   
- Rozhodnout, které tyto typy projektů je nejvhodnější pro vaše řešení, zamyslete se, jestli chcete spustit kód jenom v případě určitého dokumentu je otevřený nebo, jestli chcete, aby byl kód k dispozici vždy, když je aplikace spuštěna. Další informace o šablonách projektů, naleznete v tématu [Přehled šablon projektů Office project](../vsto/office-project-templates-overview.md).  
+  Rozhodnout, které tyto typy projektů je nejvhodnější pro vaše řešení, zamyslete se, jestli chcete spustit kód jenom v případě určitého dokumentu je otevřený nebo, jestli chcete, aby byl kód k dispozici vždy, když je aplikace spuštěna. Další informace o šablonách projektů, naleznete v tématu [Přehled šablon projektů Office project](../vsto/office-project-templates-overview.md).  
   
- Typy projektů, které můžete vytvořit závisí na aplikace Office, které jste nainstalovali na vývojovém počítači. Další informace najdete v tématu [dostupné funkce podle typu aplikace a projekt sady Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  Typy projektů, které můžete vytvořit závisí na aplikace Office, které jste nainstalovali na vývojovém počítači. Další informace najdete v tématu [dostupné funkce podle typu aplikace a projekt sady Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ### <a name="document-level-customizations"></a>Přizpůsobení na úrovni dokumentu  
  Přizpůsobení na úrovni dokumentu se skládají z sestavení, který je přidružený jeden dokument, sešit nebo šablonu v Microsoft Office Word nebo Microsoft Office Excel. Sestavení je načteno při otevření přidružený dokument. Funkce úpravy, které vytvoříte jsou k dispozici pouze v případě, že související dokument je otevřen. Přizpůsobení nemůže provádět změny celou aplikaci, jako je například zobrazení na nové kartě položky nebo pás karet nabídky při jakýkoliv dokument je otevřen.  

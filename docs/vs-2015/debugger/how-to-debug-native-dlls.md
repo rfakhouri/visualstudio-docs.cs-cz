@@ -28,12 +28,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eea8457c988e6ce1ff5f965a0154e8f2dbe87a2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2807fa9d0085c70e3336a5f9a0d66b28a775f4fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244423"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830597"
 ---
 # <a name="how-to-debug-native-dlls"></a>Postupy: Ladění nativních knihoven DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,29 +43,29 @@ ms.locfileid: "49244423"
   
  Při ladění knihovny DLL ladění lze spustit z:  
   
--   Projekt pro vytvoření spustitelného souboru, který volá knihovnu DLL.  
+- Projekt pro vytvoření spustitelného souboru, který volá knihovnu DLL.  
   
- \- nebo –  
+  \- nebo –  
   
--   Projekt použitý k vytvoření samotná knihovna DLL.  
+- Projekt použitý k vytvoření samotná knihovna DLL.  
   
- Pokud máte projekt použitý k vytvoření spustitelného souboru, spusťte ladění z tohoto projektu. Můžete otevřít zdrojový soubor pro knihovnu DLL a nastavit zarážky v souboru, i když není součástí projektu použít k vytvoření spustitelného souboru. Další informace najdete v tématu [zarážky](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+  Pokud máte projekt použitý k vytvoření spustitelného souboru, spusťte ladění z tohoto projektu. Můžete otevřít zdrojový soubor pro knihovnu DLL a nastavit zarážky v souboru, i když není součástí projektu použít k vytvoření spustitelného souboru. Další informace najdete v tématu [zarážky](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
- Pokud spustíte ladění z projektu, který vytvoří knihovnu DLL, je nutné zadat spustitelný soubor, který chcete použít v ladění knihovny DLL.  
+  Pokud spustíte ladění z projektu, který vytvoří knihovnu DLL, je nutné zadat spustitelný soubor, který chcete použít v ladění knihovny DLL.  
   
 ### <a name="to-specify-an-executable-for-the-debug-session"></a>Můžete zadat spustitelný soubor pro relaci ladění  
   
-1.  V **Průzkumníka řešení**, vyberte projekt, který vytvoří knihovnu DLL.  
+1. V **Průzkumníka řešení**, vyberte projekt, který vytvoří knihovnu DLL.  
   
-2.  Z **zobrazení** nabídce zvolte**stránky vlastností**.  
+2. Z **zobrazení** nabídce zvolte**stránky vlastností**.  
   
-3.  V **stránky vlastností** dialogovém okně Otevřít **vlastnosti konfigurace** a pak zvolte položku **ladění** kategorie.  
+3. V **stránky vlastností** dialogovém okně Otevřít **vlastnosti konfigurace** a pak zvolte položku **ladění** kategorie.  
   
-4.  V **příkaz** , zadejte název cesty pro kontejner. Například C:\Program Files\MyApplication\MYAPP. SOUBOR EXE.  
+4. V **příkaz** , zadejte název cesty pro kontejner. Například C:\Program Files\MyApplication\MYAPP. SOUBOR EXE.  
   
-5.  V **argumenty příkazu** zadejte všechny potřebné argumenty pro spustitelný soubor.  
+5. V **argumenty příkazu** zadejte všechny potřebné argumenty pro spustitelný soubor.  
   
- Pokud není zadán spustitelný soubor _projektu_**stránky vlastností** dialogovém okně [spustitelný soubor pro dialogové okno ladění relace](../debugger/executable-for-debugging-session-dialog-box.md) se zobrazí při spuštění ladění.  
+   Pokud není zadán spustitelný soubor _projektu_**stránky vlastností** dialogovém okně [spustitelný soubor pro dialogové okno ladění relace](../debugger/executable-for-debugging-session-dialog-box.md) se zobrazí při spuštění ladění.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   

@@ -16,27 +16,27 @@ ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1abb0905e276c2e9a2c5fc99b7d77edffedbb2d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3067f9d54a91c02df63d3c22afda19da3b5707ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818002"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Vytváření vlastních editorů a návrhářů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Integrovaného vývojového prostředí (IDE) sady Visual Studio může hostovat různé druhy editoru:  
   
--   Základní editor sady Visual Studio  
+- Základní editor sady Visual Studio  
   
--   Vlastních editorech  
+- Vlastních editorech  
   
--   Externí editory  
+- Externí editory  
   
--   Návrháři  
+- Návrháři  
   
- Následující informace vám umožňuje vybrat typ editoru, které potřebujete.  
+  Následující informace vám umožňuje vybrat typ editoru, které potřebujete.  
   
 ## <a name="types-of-editor"></a>Typy editoru  
  Informace o základní editor sady Visual Studio najdete v tématu [rozšíření pro Editor a jazykových služeb](../extensibility/extending-the-editor-and-language-services.md).  

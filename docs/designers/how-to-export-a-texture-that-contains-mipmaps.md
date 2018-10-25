@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae3b12ffa91b419717e91125b658f29e7d74deb6
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 67eb30f340afcd2f8e631170fc84fd00f5a9d43c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923891"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831326"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Postupy: Export textury obsahující mipmapy
 
@@ -33,14 +33,14 @@ Mipmapping zajišťuje úroveň of-Detail automatické místo na obrazovce pro t
 
 ### <a name="to-export-a-texture-that-has-mipmaps"></a>Pro export textury obsahující mipmapy
 
-1.  Začněte základní texturou. Načtěte stávající obrazový soubor nebo jej vytvořte podle pokynů v [postupy: vytvoření základní textury](../designers/how-to-create-a-basic-texture.md). Na podporu Mipmap určete texturu, která má šířku a výšku, které mají stejný výkon rozměry, například 64 x 64, 256 x 256 nebo 512 x 512.
+1. Začněte základní texturou. Načtěte stávající obrazový soubor nebo jej vytvořte podle pokynů v [postupy: vytvoření základní textury](../designers/how-to-create-a-basic-texture.md). Na podporu Mipmap určete texturu, která má šířku a výšku, které mají stejný výkon rozměry, například 64 x 64, 256 x 256 nebo 512 x 512.
 
-2.  Nakonfigurujte soubor textury, které jste právě vytvořili, aby byl zpracován kanálem obsahu obrázku. V **Průzkumníka řešení**, otevřete místní nabídku pro soubor textury, který jste vytvořili a klikněte na tlačítko **vlastnosti**. Na **vlastnosti konfigurace** > **Obecné** nastavte **typ položky** vlastnost **kanál obsahu obrazu**. Ujistěte se, že **obsahu** je nastavena na **Ano** a **vyloučit ze sestavení** je nastavena na **ne**. Vyberte **použít**.
+2. Nakonfigurujte soubor textury, které jste právě vytvořili, aby byl zpracován kanálem obsahu obrázku. V **Průzkumníka řešení**, otevřete místní nabídku pro soubor textury, který jste vytvořili a klikněte na tlačítko **vlastnosti**. Na **vlastnosti konfigurace** > **Obecné** nastavte **typ položky** vlastnost **kanál obsahu obrazu**. Ujistěte se, že **obsahu** je nastavena na **Ano** a **vyloučit ze sestavení** je nastavena na **ne**. Vyberte **použít**.
 
    **Kanál obsahu obrazu** se zobrazí stránka pro konfiguraci vlastností.
 
-3.  Nakonfigurujte kanál obsahu obrázku ke generování Mipmap. Na **vlastnosti konfigurace** > **kanál obsahu obrazu** > **Obecné** nastavte **generovat Mips** vlastnost **Ano (/ generatemips)**.
+3. Nakonfigurujte kanál obsahu obrázku ke generování Mipmap. Na **vlastnosti konfigurace** > **kanál obsahu obrazu** > **Obecné** nastavte **generovat Mips** vlastnost **Ano (/ generatemips)**.
 
-4.  Vyberte **OK**.
+4. Vyberte **OK**.
 
 Při vytváření projektu kanál obsahu obrázku tak převede zdrojový obraz z pracovního formátu na výstupní formát, který jste zadali, včetně úrovní MIP. Výsledek je zkopírován do výstupního adresáře projektu.

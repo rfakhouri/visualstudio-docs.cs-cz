@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 776ebca3b412b631634e45846ca15f00f31126f5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9e8ad899d7cf62b2d874d5dc4971c8e7ad7f950a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282449"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829758"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Postupy: načtení informací řetězce dotazu do online aplikace ClickOnce
 *Řetězec dotazu* je část adresy URL začínající otazník (?), který obsahuje libovolné informace ve formě *název = hodnota*. Předpokládejme, že máte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci s názvem `WindowsApp1` , která hostujete na `servername`, a vy chcete předávat hodnotu pro proměnnou `username` při spuštění aplikace. Vaše adresa URL může vypadat nějak takto:  
@@ -57,17 +57,17 @@ ms.locfileid: "44282449"
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Chcete-li povolit předávání do aplikace ClickOnce s MageUI.exe řetězce dotazů  
   
-1.  Otevřete okno příkazového řádku .NET a zadejte:  
+1. Otevřete okno příkazového řádku .NET a zadejte:  
   
-    ```cmd  
-    MageUI  
-    ```  
+   ```cmd  
+   MageUI  
+   ```  
   
-2.  Z **souboru** nabídce vyberte možnost **otevřete**a otevřete manifest nasazení pro váš [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, což je soubor končící na `.application` rozšíření.  
+2. Z **souboru** nabídce vyberte možnost **otevřete**a otevřete manifest nasazení pro váš [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, což je soubor končící na `.application` rozšíření.  
   
-3.  Vyberte **možnosti nasazení** panelu v levém navigačním okně a vyberte **parametry povolit adresu URL, které se mají předat aplikaci** zaškrtávací políčko.  
+3. Vyberte **možnosti nasazení** panelu v levém navigačním okně a vyberte **parametry povolit adresu URL, které se mají předat aplikaci** zaškrtávací políčko.  
   
-4.  Z **souboru** nabídce vyberte možnost **Uložit**.  
+4. Z **souboru** nabídce vyberte možnost **Uložit**.  
   
 > [!NOTE]
 >  Alternativně můžete povolit předávání řetězce dotazů v [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Vyberte **parametry povolit adresu URL, které se mají předat aplikaci** zaškrtávací políčko, které lze najít otevřením **vlastnosti projektu**, vyberete **publikovat** kartu, kliknutím **Možnosti** tlačítko a pak vyberete **manifesty**.  

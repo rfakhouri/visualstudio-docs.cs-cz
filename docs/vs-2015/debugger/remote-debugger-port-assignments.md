@@ -14,25 +14,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a9730a4f096ffbbe89eb3b6fef40393232efdfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01eddb375a521059cac35bf541dec4e4f09d881a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824229"
 ---
 # <a name="remote-debugger-port-assignments"></a>Přiřazení portů vzdáleného ladicího programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio Remote Debugger může běžet jako aplikace nebo jako službu na pozadí. Při spuštění jako aplikace, používá port, který je přiřazen ve výchozím nastavení následujícím způsobem:  
   
--   Visual Studio 2015:4020  
+- Visual Studio 2015:4020  
   
--   Visual Studio 2013:4018  
+- Visual Studio 2013:4018  
   
--   Visual Studio 2012:4016  
+- Visual Studio 2012:4016  
   
- Jinými slovy číslo portu přiřazené vzdálený ladicí program je zvýšen o 2 pro každou vydanou verzí. Můžete nastavit jiné číslo portu, jako je. Vysvětlíme, jak nastavit čísla portů v další části.  
+  Jinými slovy číslo portu přiřazené vzdálený ladicí program je zvýšen o 2 pro každou vydanou verzí. Můžete nastavit jiné číslo portu, jako je. Vysvětlíme, jak nastavit čísla portů v další části.  
   
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Portu vzdáleného ladicího programu na 32bitové operační systémy  
  4020 TCP (ve Visual Studiu 2015) je hlavní port a pro všechny scénáře se vyžaduje. To můžete nakonfigurovat z příkazového řádku nebo v okně vzdáleného ladicího programu.  

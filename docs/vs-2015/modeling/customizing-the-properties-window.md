@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa690b88b5ab2d7aac3f8aea9967419dcbd43df1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241732"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845742"
 ---
 # <a name="customizing-the-properties-window"></a>Přizpůsobení okna Vlastnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ Vzhled a chování okna vlastnosti můžete přizpůsobit v jazyka specifického
   
  **Popis**. Popis doménová vlastnost, která se zobrazí na dvou místech:  
   
--   V dolní části okna vlastnosti, když uživatel vybere vlastnost. Slouží k vysvětlení uživatel, co představuje vlastnost.  
+- V dolní části okna vlastnosti, když uživatel vybere vlastnost. Slouží k vysvětlení uživatel, co představuje vlastnost.  
   
--   V kódu generovaného programu. Pokud používáte zařízení dokumentaci k extrakci dokumentace k rozhraní API, zobrazí se jako popis této vlastnosti v rozhraní API.  
+- V kódu generovaného programu. Pokud používáte zařízení dokumentaci k extrakci dokumentace k rozhraní API, zobrazí se jako popis této vlastnosti v rozhraní API.  
   
- **Kategorie**. Kategorie je záhlaví v okně Vlastnosti.  
+  **Kategorie**. Kategorie je záhlaví v okně Vlastnosti.  
   
 ## <a name="exposing-style-features"></a>Vystavení stylu funkce  
  Některé z dynamických funkcí grafické prvky může být reprezentován nebo *vystavený* jako vlastnosti domény. Funkce, která byla vystavena tímto způsobem je možné aktualizovat podle uživatele a další snadno aktualizovat pomocí kódu programu.  
@@ -101,38 +101,38 @@ Vzhled a chování okna vlastnosti můžete přizpůsobit v jazyka specifického
   
  Můžete však zadat následující editory a typy:  
   
-1.  Jiný editor, který se používá k typu standard. Můžete například zadat cestu editor souborů pro vlastnosti typu string.  
+1. Jiný editor, který se používá k typu standard. Můžete například zadat cestu editor souborů pro vlastnosti typu string.  
   
-2.  Externí typ pro vlastnost domain a editor pro něj.  
+2. Externí typ pro vlastnost domain a editor pro něj.  
   
-3.  .NET editoru, jako je například editor cesta k souboru, nebo můžete vytvořit vlastní vlastnosti editor.  
+3. .NET editoru, jako je například editor cesta k souboru, nebo můžete vytvořit vlastní vlastnosti editor.  
   
-     Převod mezi externí a typem, jako je například řetězec, který má výchozí editor.  
+    Převod mezi externí a typem, jako je například řetězec, který má výchozí editor.  
   
- V DSL *externí* je libovolný typ, který není součástí jednoduché typy (například logické hodnoty nebo Int32) nebo řetězec.  
+   V DSL *externí* je libovolný typ, který není součástí jednoduché typy (například logické hodnoty nebo Int32) nebo řetězec.  
   
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>Chcete-li definovat doménová vlastnost, která má typ externího  
   
-1.  V **Průzkumníka řešení**, přidejte odkaz na sestavení (DLL) obsahující externí typ, **Dsl** projektu.  
+1. V **Průzkumníka řešení**, přidejte odkaz na sestavení (DLL) obsahující externí typ, **Dsl** projektu.  
   
-     Sestavení může být sestavení .NET, nebo vámi zadané sestavení.  
+    Sestavení může být sestavení .NET, nebo vámi zadané sestavení.  
   
-2.  Přidat typ, který má **typy domén** seznamu, pokud jste tak již neučinili.  
+2. Přidat typ, který má **typy domén** seznamu, pokud jste tak již neučinili.  
   
-    1.  Otevřete DslDefinition.dsl a v **Průzkumník DSL**, klikněte pravým tlačítkem na kořenový uzel a potom klikněte na tlačítko **přidat novou externí typ**.  
+   1.  Otevřete DslDefinition.dsl a v **Průzkumník DSL**, klikněte pravým tlačítkem na kořenový uzel a potom klikněte na tlačítko **přidat novou externí typ**.  
   
-         Nový záznam se zobrazí v části **typy domén** uzlu.  
+        Nový záznam se zobrazí v části **typy domén** uzlu.  
   
-        > [!WARNING]
-        >  Položka nabídky není na uzlu root DSL **typy domén** uzlu.  
+       > [!WARNING]
+       >  Položka nabídky není na uzlu root DSL **typy domén** uzlu.  
   
-    2.  V okně Vlastnosti nastavte název a obor názvů nového typu.  
+   2.  V okně Vlastnosti nastavte název a obor názvů nového typu.  
   
-3.  Doménová vlastnost, která přidejte do doménové třídy obvyklým způsobem.  
+3. Doménová vlastnost, která přidejte do doménové třídy obvyklým způsobem.  
   
-     V okně Vlastnosti vyberte z rozevíracího seznamu v externí **typ** pole.  
+    V okně Vlastnosti vyberte z rozevíracího seznamu v externí **typ** pole.  
   
- V této fázi se uživatelé můžou zobrazovat hodnoty vlastnosti, ale nemůžou ho upravovat. Zobrazené hodnoty jsou získány z `ToString()` funkce. Můžete napsat programový kód, který nastavuje hodnotu vlastnosti, například v příkazu nebo pravidlo.  
+   V této fázi se uživatelé můžou zobrazovat hodnoty vlastnosti, ale nemůžou ho upravovat. Zobrazené hodnoty jsou získány z `ToString()` funkce. Můžete napsat programový kód, který nastavuje hodnotu vlastnosti, například v příkazu nebo pravidlo.  
   
 ### <a name="setting-a-property-editor"></a>Nastavení editoru vlastností  
  Přidáte atribut typu CLR pro vlastnost domain, v následujícím tvaru:  
@@ -178,11 +178,11 @@ Vzhled a chování okna vlastnosti můžete přizpůsobit v jazyka specifického
   
  Definice editoru zápisem, která je odvozena z třídy <xref:System.Drawing.Design.UITypeEditor>. Vaše třída musí přepsat:  
   
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, chcete-li komunikovat s uživatelem a aktualizujte hodnotu vlastnosti.  
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, chcete-li komunikovat s uživatelem a aktualizujte hodnotu vlastnosti.  
   
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, chcete-li určit, zda editoru se otevře dialogové okno nebo rozevírací nabídky.  
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, chcete-li určit, zda editoru se otevře dialogové okno nebo rozevírací nabídky.  
   
- Můžete také zadat grafická reprezentace hodnotu vlastnosti, která se zobrazí v mřížce vlastností. Chcete-li to provést, přepište `GetPaintValueSupported`, a `PaintValue`.  Další informace naleznete v tématu <xref:System.Drawing.Design.UITypeEditor>.  
+  Můžete také zadat grafická reprezentace hodnotu vlastnosti, která se zobrazí v mřížce vlastností. Chcete-li to provést, přepište `GetPaintValueSupported`, a `PaintValue`.  Další informace naleznete v tématu <xref:System.Drawing.Design.UITypeEditor>.  
   
 > [!NOTE]
 >  Přidejte kód v samostatném souboru kódu v **Dsl** projektu.  

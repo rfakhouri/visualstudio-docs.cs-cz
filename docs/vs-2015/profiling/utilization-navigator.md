@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55a5c6eada52cead60abb830a5a873cc71cac194
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c6550e4d9af994be1b703b56ab91cb33e6fdf5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238586"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824207"
 ---
 # <a name="utilization-navigator"></a>Navigátor využití
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Navigátor využití a vybraný časový rámec
   
  Zde je, jak můžete Navigátor využití k manipulaci s zobrazený časový rozsah:  
   
--   Můžete posunout přetažením jezdce doleva nebo doprava. (Klávesnice: Přesunutí výběru na jezdce a potom stiskněte klávesu šipka vlevo nebo vpravo.)  
+- Můžete posunout přetažením jezdce doleva nebo doprava. (Klávesnice: Přesunutí výběru na jezdce a potom stiskněte klávesu šipka vlevo nebo vpravo.)  
   
--   Rozsah interval můžete změnit přetažením jednoho z úchytů. (Klávesnice: Přesunutí výběru na popisovač a pak stiskněte klávesu šipka vlevo nebo vpravo.)  
+- Rozsah interval můžete změnit přetažením jednoho z úchytů. (Klávesnice: Přesunutí výběru na popisovač a pak stiskněte klávesu šipka vlevo nebo vpravo.)  
   
- Pokud interval můžete změnit pomocí jiný ovládací prvek lupy Vizualizátor souběžnosti, Navigátor využití aktualizuje tak, aby odrážely změny.
+  Pokud interval můžete změnit pomocí jiný ovládací prvek lupy Vizualizátor souběžnosti, Navigátor využití aktualizuje tak, aby odrážely změny.
 
 
 

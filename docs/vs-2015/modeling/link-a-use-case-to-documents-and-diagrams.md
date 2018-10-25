@@ -17,29 +17,29 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2137863e48fbedfff4736588a6f3a177786aac57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232528"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824500"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Propojení případu použití s dokumenty a diagramy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Propojení případu použití v diagramu případu použití do jiného diagramu nebo dokumentu. Můžete například propojit případ použití následující diagramy a dokumenty:  
   
--   Sekvenční diagram, který ukazuje, jak se provádí cíle případ použití interakce mezi uživateli a systému nebo jeho hlavní komponenty.  
+- Sekvenční diagram, který ukazuje, jak se provádí cíle případ použití interakce mezi uživateli a systému nebo jeho hlavní komponenty.  
   
--   Diagram aktivity, který zobrazuje podrobné akce uživatelů a systému nebo jeho hlavní komponenty, když provádějí případu použití.  
+- Diagram aktivity, který zobrazuje podrobné akce uživatelů a systému nebo jeho hlavní komponenty, když provádějí případu použití.  
   
--   Stránka Onenotu nebo odstavce, která případ použití podrobně popisuje.  
+- Stránka Onenotu nebo odstavce, která případ použití podrobně popisuje.  
   
--   Dokument aplikace Word nebo prezentace aplikace PowerPoint, která případ použití podrobně popisuje. Abyste mohli tyto dokumenty v řešení, nebo v umístění přístupné pro váš tým, jako je web služby SharePoint.  
+- Dokument aplikace Word nebo prezentace aplikace PowerPoint, která případ použití podrobně popisuje. Abyste mohli tyto dokumenty v řešení, nebo v umístění přístupné pro váš tým, jako je web služby SharePoint.  
   
- K propojení případu použití k dokumentu, vytvoření artefakt v diagramu případu použití a připojení případu použití s artefaktem. V artefaktu se vlastnosti nastavena cesta k souboru diagramu nebo dokumentu. Když dvakrát kliknete na artefakt, další diagram nebo dokument se otevře.  
+  K propojení případu použití k dokumentu, vytvoření artefakt v diagramu případu použití a připojení případu použití s artefaktem. V artefaktu se vlastnosti nastavena cesta k souboru diagramu nebo dokumentu. Když dvakrát kliknete na artefakt, další diagram nebo dokument se otevře.  
   
- Protože mnoho artefakty na každý případ použití, jak chcete, aby se můžete připojit. Můžete také propojit s artefakty jiné druhy elementu v diagramu případu použití.  
+  Protože mnoho artefakty na každý případ použití, jak chcete, aby se můžete připojit. Můžete také propojit s artefakty jiné druhy elementu v diagramu případu použití.  
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>Chcete-li otevřít dokument přidružený k artefakt  
   

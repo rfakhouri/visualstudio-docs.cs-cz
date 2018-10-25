@@ -16,37 +16,37 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 07a6ae87919f0390e65dc9b2892932d794593b00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8568794b46a8d94e8d186fe297e9bb0d1cf53a3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191574"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827453"
 ---
 # <a name="handling-specialized-deployment"></a>Zpracování specializovaného nasazení
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Nasazení je volitelné operace pro projekty. Webový projekt, například podporuje nasazení umožňuje projektu, aktualizujte webový server. Podobně **Smart Device** projekt podporuje nasazení ke zkopírování sestavené aplikace na cílové zařízení. Podtypy projektů můžete zadat speciální nasazení chování implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> rozhraní. Toto rozhraní definuje úplnou sadu operací nasazení:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
   
- Skutečné nasazení operaci je třeba provést v samostatném vlákně, aby [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ještě rychlejší reakce na interakci uživatele. Metody, které poskytuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> jsou volány asynchronně pomocí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] a provozovat na pozadí, což prostředí dotaz na stav operace nasazení v každém okamžiku nebo zastavení operace v případě potřeby. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Operace nasazení rozhraní se označují jako prostředí, když uživatel vybere příkaz nasazení.  
+  Skutečné nasazení operaci je třeba provést v samostatném vlákně, aby [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ještě rychlejší reakce na interakci uživatele. Metody, které poskytuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> jsou volány asynchronně pomocí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] a provozovat na pozadí, což prostředí dotaz na stav operace nasazení v každém okamžiku nebo zastavení operace v případě potřeby. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Operace nasazení rozhraní se označují jako prostředí, když uživatel vybere příkaz nasazení.  
   
- Upozornit na prostředí, které operace nasazení má spuštěno nebo ukončeno, potřebuje volat podtyp projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> metody.  
+  Upozornit na prostředí, které operace nasazení má spuštěno nebo ukončeno, potřebuje volat podtyp projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> metody.  
   
 ## <a name="handling-specialized-deployment"></a>Zpracování specializovaného nasazení  
   

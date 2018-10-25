@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4dbd9b4e0b62d1c6542231418aa99bd6d6ab0438
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14acbe1ac804ca953f7167f6ee7f849d0a615db8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189799"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836200"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Postupy: Vygenerování dat metrik kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,15 +50,15 @@ Můžete se rozhodnout generování výsledků metrik kódu pro celé řešení 
   
 ### <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>Generování výsledků metrik kódu pro jeden nebo více vybraných projektů  
   
-1.  V **Průzkumníka řešení**, vyberte jeden nebo více projektů.  
+1. V **Průzkumníka řešení**, vyberte jeden nebo více projektů.  
   
-2.  Klikněte na tlačítko **analyzovat**a potom klikněte na tlačítko **generovat metriky kódu pro vybrané projekty (s)**.  
+2. Klikněte na tlačítko **analyzovat**a potom klikněte na tlačítko **generovat metriky kódu pro vybrané projekty (s)**.  
   
-     \- nebo –  
+    \- nebo –  
   
-     Klikněte pravým tlačítkem na svůj výběr a potom klikněte na **CalculateCode metriky**.  
+    Klikněte pravým tlačítkem na svůj výběr a potom klikněte na **CalculateCode metriky**.  
   
- Výsledky jsou generovány a **výsledků metrik kódu** se zobrazí okno.  
+   Výsledky jsou generovány a **výsledků metrik kódu** se zobrazí okno.  
   
 ### <a name="to-view-the-results-details"></a>Chcete-li zobrazit detaily výsledků  
   

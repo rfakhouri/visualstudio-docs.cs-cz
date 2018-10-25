@@ -13,12 +13,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40d9a160d839b965c4b5f6db2413237af0af30ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e32c55e0e159ebaa59e0a70e41a05249bb46c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837942"
 ---
 # <a name="managing-universal-windows-projects"></a>Správa projektů univerzálních aplikací pro Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -416,116 +416,116 @@ Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windo
   
 ### <a name="detecting-changes-in-platform-projects-and-shared-projects"></a>Zjišťují se změny do platformy projektů a sdílené projekty  
   
-1.  Události hierarchie a projektu můžete použít ke zjištění změny ve sdílených projektech, stejně jako u projektů platformy. Nicméně položky projektu ve sdíleném projektu nejsou viditelné, což znamená, že některé události neaktivuje při změně položky sdíleného projektu.  
+1. Události hierarchie a projektu můžete použít ke zjištění změny ve sdílených projektech, stejně jako u projektů platformy. Nicméně položky projektu ve sdíleném projektu nejsou viditelné, což znamená, že některé události neaktivuje při změně položky sdíleného projektu.  
   
-     Vezměte v úvahu posloupnost událostí při přejmenování souboru v projektu:  
+    Vezměte v úvahu posloupnost událostí při přejmenování souboru v projektu:  
   
-    1.  Název souboru se změní na disku.  
+   1. Název souboru se změní na disku.  
   
-    2.  Soubor projektu je aktualizován pro vložení nového názvu souboru.  
+   2. Soubor projektu je aktualizován pro vložení nového názvu souboru.  
   
-     Hierarchie událostí (například <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) obecně sledovat změny zobrazí v uživatelském rozhraní, jako v **Průzkumníka řešení**. Událostem hierarchie Zvažte operaci přejmenovat soubor sestává z odstranění souboru a pak přidání souboru. Ale když neviditelné položky budou změněny, systém hierarchii událostí aktivuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> události, ale ne <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> událostí. Proto Pokud přejmenujete soubor projektu pro platformy, můžete získat i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, ale Pokud přejmenujete soubor ve sdíleném projektu, můžete získat pouze <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>.  
+      Hierarchie událostí (například <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) obecně sledovat změny zobrazí v uživatelském rozhraní, jako v **Průzkumníka řešení**. Událostem hierarchie Zvažte operaci přejmenovat soubor sestává z odstranění souboru a pak přidání souboru. Ale když neviditelné položky budou změněny, systém hierarchii událostí aktivuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> události, ale ne <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> událostí. Proto Pokud přejmenujete soubor projektu pro platformy, můžete získat i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, ale Pokud přejmenujete soubor ve sdíleném projektu, můžete získat pouze <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>.  
   
-     Ke sledování změn v položkách projektu, můžete zpracovávat události položky projektu DTE (těm, které jsou součástí <xref:EnvDTE.ProjectItemsEventsClass>). Ale pokud se zpracování velkého počtu událostí, můžete získat lepší výkon zpracování událostí v <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>. V tomto názorném postupu vám ukážeme pouze hierarchie události a události DTE. V tomto postupu přidáte do sdíleného projektu a projekt platformy naslouchací proces událostí. Potom při přejmenování jeden soubor ve sdíleném projektu a další soubor v projektu platformy, se zobrazí události, které jsou aktivovány pro jednotlivé operace přejmenování.  
+      Ke sledování změn v položkách projektu, můžete zpracovávat události položky projektu DTE (těm, které jsou součástí <xref:EnvDTE.ProjectItemsEventsClass>). Ale pokud se zpracování velkého počtu událostí, můžete získat lepší výkon zpracování událostí v <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>. V tomto názorném postupu vám ukážeme pouze hierarchie události a události DTE. V tomto postupu přidáte do sdíleného projektu a projekt platformy naslouchací proces událostí. Potom při přejmenování jeden soubor ve sdíleném projektu a další soubor v projektu platformy, se zobrazí události, které jsou aktivovány pro jednotlivé operace přejmenování.  
   
-     V tomto postupu přidáte do sdíleného projektu a projekt platformy naslouchací proces událostí. Potom při přejmenování jeden soubor ve sdíleném projektu a další soubor v projektu platformy, se zobrazí události, které jsou aktivovány pro jednotlivé operace přejmenování.  
+      V tomto postupu přidáte do sdíleného projektu a projekt platformy naslouchací proces událostí. Potom při přejmenování jeden soubor ve sdíleném projektu a další soubor v projektu platformy, se zobrazí události, které jsou aktivovány pro jednotlivé operace přejmenování.  
   
-2.  Přidáte naslouchací proces událostí. Přidejte nový soubor třídy do projektu a jeho volání HierarchyEventListener.cs.  
+2. Přidáte naslouchací proces událostí. Přidejte nový soubor třídy do projektu a jeho volání HierarchyEventListener.cs.  
   
-3.  Otevřete soubor HierarchyEventListener.cs a přidejte následující příkazy using:  
+3. Otevřete soubor HierarchyEventListener.cs a přidejte následující příkazy using:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    using Microsoft.VisualStudio;  
-    using System.IO;  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   using Microsoft.VisualStudio;  
+   using System.IO;  
   
-    ```  
+   ```  
   
-4.  Máte `HierarchyEventListener` implementaci třídy <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
+4. Máte `HierarchyEventListener` implementaci třídy <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    { }  
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   { }  
   
-    ```  
+   ```  
   
-5.  Implementovat členy <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>, jako v následujícím kódu.  
+5. Implementovat členy <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>, jako v následujícím kódu.  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    {  
-        private IVsHierarchy hierarchy;  
-        IVsOutputWindowPane output;   
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   {  
+       private IVsHierarchy hierarchy;  
+       IVsOutputWindowPane output;   
   
-        internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
-             this.hierarchy = hierarchy;  
-             this.output = outputWindow;  
-        }  
+       internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
+            this.hierarchy = hierarchy;  
+            this.output = outputWindow;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
-    }  
+       int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
+   }  
   
-    ```  
+   ```  
   
-6.  Ve stejné třídě, přidat další obslužné rutiny události pro událost DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, která vyvolá se při každém přejmenování položky projektu.  
+6. Ve stejné třídě, přidat další obslužné rutiny události pro událost DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, která vyvolá se při každém přejmenování položky projektu.  
   
-    ```csharp  
-    public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
-    {  
-        output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
-             oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
-    }  
-    ```  
+   ```csharp  
+   public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
+   {  
+       output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
+            oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
+   }  
+   ```  
   
-7.  Registrace k událostem hierarchie. Budete muset zaregistrovat samostatně pro každý projekt, které sledujete. Přidejte následující kód do `ShowMessageBox`, jeden pro sdílený projekt a druhou pro jeden z projektů platformy.  
+7. Registrace k událostem hierarchie. Budete muset zaregistrovat samostatně pro každý projekt, které sledujete. Přidejte následující kód do `ShowMessageBox`, jeden pro sdílený projekt a druhou pro jeden z projektů platformy.  
   
-    ```csharp  
-    // hook up the event listener for hierarchy events on the shared project  
-    HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
-    uint cookie1;  
-    sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
+   ```csharp  
+   // hook up the event listener for hierarchy events on the shared project  
+   HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
+   uint cookie1;  
+   sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
   
-    // hook up the event listener for hierarchy events on the   
-    active project  
-    HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
-    uint cookie2;  
-    activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
-    ```  
+   // hook up the event listener for hierarchy events on the   
+   active project  
+   HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
+   uint cookie2;  
+   activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
+   ```  
   
-8.  Zaregistrujte si událost položky projektu DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. Po připojení druhé naslouchací proces, přidejte následující kód.  
+8. Zaregistrujte si událost položky projektu DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. Po připojení druhé naslouchací proces, přidejte následující kód.  
   
-    ```csharp  
-    // hook up DTE events for project items  
-    Events2 dteEvents = (Events2)dte.Events;  
-    dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
+   ```csharp  
+   // hook up DTE events for project items  
+   Events2 dteEvents = (Events2)dte.Events;  
+   dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
   
-    ```  
+   ```  
   
 9. Změna sdílené položky. Nelze změnit sdílené položky v projektu platformy. Místo toho je třeba upravit ve sdíleném projektu, který je vlastníkem skutečné z těchto položek. Můžete získat ID odpovídající položky ve sdíleném projektu s <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, poskytují úplnou cestu sdílené položky. Potom můžete upravit sdílené položky. Pro projekty, které platformy jsou příslušné změny distribuovány.  
   

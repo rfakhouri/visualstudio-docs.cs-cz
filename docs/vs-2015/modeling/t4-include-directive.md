@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8de721b7f26152cd4e7f5df1ee7eb4d04770511
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233984"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835940"
 ---
 # <a name="t4-include-directive"></a>T4 – direktiva Include
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,31 +30,31 @@ V textové šabloně v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete vl
 <#@ include file="filePath" [once="true"] #>  
 ```  
   
--   `filePath` může být absolutní nebo relativní k aktuálnímu souboru šablony.  
+- `filePath` může být absolutní nebo relativní k aktuálnímu souboru šablony.  
   
-     Kromě toho zvláštní [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření můžou určit vlastní adresáře pro vyhledávání vložených souborů. Například pokud jste nainstalovali Visualization and Modeling SDK (DSL Tools), následující složka se přidá do seznamu pro zahrnutí: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.  
+   Kromě toho zvláštní [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření můžou určit vlastní adresáře pro vyhledávání vložených souborů. Například pokud jste nainstalovali Visualization and Modeling SDK (DSL Tools), následující složka se přidá do seznamu pro zahrnutí: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.  
   
-     Tyto další složky vkládaných souborů mohou záviset na příponě vkládaného souboru. Například nástroje DSL zahrnují složku, která je přístupná pro zahrnutí souborů, které mají příponu souboru `.tt`  
+   Tyto další složky vkládaných souborů mohou záviset na příponě vkládaného souboru. Například nástroje DSL zahrnují složku, která je přístupná pro zahrnutí souborů, které mají příponu souboru `.tt`  
   
--   `filePath` může obsahovat proměnné prostředí oddělené znakem "%". Příklad:  
+- `filePath` může obsahovat proměnné prostředí oddělené znakem "%". Příklad:  
   
-    ```  
-    <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
-    ```  
+  ```  
+  <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
+  ```  
   
--   Název začleněného souboru nemusí používat rozšíření `".tt"`.  
+- Název začleněného souboru nemusí používat rozšíření `".tt"`.  
   
-     Můžete chtít použít jinou příponu, třeba `".t4"` pro vkládané soubory. Důvodem je, že pokud přidáte `.tt` soubor do projektu, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky nastaví jeho **Custom Tool** vlastnost `TextTemplatingFileGenerator`. Vkládané soubory obvykle nechcete transformovat individuálně.  
+   Můžete chtít použít jinou příponu, třeba `".t4"` pro vkládané soubory. Důvodem je, že pokud přidáte `.tt` soubor do projektu, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticky nastaví jeho **Custom Tool** vlastnost `TextTemplatingFileGenerator`. Vkládané soubory obvykle nechcete transformovat individuálně.  
   
-     Na druhé straně byste měli vědět, že v některých případech přípona souboru ovlivňuje, v jakých dalších složkách se budou hledat vkládané soubory. To může být důležité, pokud máte vkládaný soubor, který obsahuje jiné soubory.  
+   Na druhé straně byste měli vědět, že v některých případech přípona souboru ovlivňuje, v jakých dalších složkách se budou hledat vkládané soubory. To může být důležité, pokud máte vkládaný soubor, který obsahuje jiné soubory.  
   
--   Vložený obsah se zpracuje téměř jako kdyby byl součástí textové šablony, která ho vkládá. Však vložit soubor obsahující blok funkcí třídy `<#+...#>` i v případě, `include` – direktiva následuje běžný text a standardní řídicí bloky.  
+- Vložený obsah se zpracuje téměř jako kdyby byl součástí textové šablony, která ho vkládá. Však vložit soubor obsahující blok funkcí třídy `<#+...#>` i v případě, `include` – direktiva následuje běžný text a standardní řídicí bloky.  
   
--   Použití `once="true"` zajistit, že šablona je zahrnuta pouze jednou, i když je volána z více než jednoho jiného vkládaného souboru.  
+- Použití `once="true"` zajistit, že šablona je zahrnuta pouze jednou, i když je volána z více než jednoho jiného vkládaného souboru.  
   
-     Umožňuje tato funkce usnadňuje sestavení knihovny opakovaně použitelných fragmentů T4, kterou můžete v dojde bez obav, který některé další fragment kódu je již součástí je.  Předpokládejme například, že máte knihovnu velmi jemně odstupňovaných fragmentů kódu, které se zabývají zpracování šablon a generování jazyka C#.  Pak tyto jsou používány některé úlohy konkrétní nástroje, jako jsou generování výjimek, které pak můžete použít z libovolné šabloně více specifické pro aplikaci. Pokud si nakreslíte graf závislostí, uvidíte, že některé fragmenty kódu budou vloženy několikrát. Ale `once` parametr zakazuje následné zahrnutí.  
+   Umožňuje tato funkce usnadňuje sestavení knihovny opakovaně použitelných fragmentů T4, kterou můžete v dojde bez obav, který některé další fragment kódu je již součástí je.  Předpokládejme například, že máte knihovnu velmi jemně odstupňovaných fragmentů kódu, které se zabývají zpracování šablon a generování jazyka C#.  Pak tyto jsou používány některé úlohy konkrétní nástroje, jako jsou generování výjimek, které pak můžete použít z libovolné šabloně více specifické pro aplikaci. Pokud si nakreslíte graf závislostí, uvidíte, že některé fragmenty kódu budou vloženy několikrát. Ale `once` parametr zakazuje následné zahrnutí.  
   
- **MyTextTemplate.tt:**  
+  **MyTextTemplate.tt:**  
   
 ```  
 <#@ output extension=".txt" #>  

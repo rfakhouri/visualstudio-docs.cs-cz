@@ -15,42 +15,42 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 846a889a22188249a1a42e8d66f0b3730a19dfc2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7c4297b1beaf93d82233eb756d0c812cc38e20c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839385"
 ---
 # <a name="supported-event-types"></a>Podporované typy událostí
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ladění aplikace Visual Studio nyní podporuje následující typy událostí:  
   
--   Asynchronní události  
+- Asynchronní události  
   
-     Upozornit správce ladění relace (SDM) a integrované vývojové prostředí, která se mění stav právě laděné aplikace. Tyto události se zpracovávají ve volném čase SDM a rozhraní IDE. Žádná odpověď se odešle do ladicího stroje (DE) po zpracování události. [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) a [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) rozhraní jsou příklady asynchronní událostí.  
+   Upozornit správce ladění relace (SDM) a integrované vývojové prostředí, která se mění stav právě laděné aplikace. Tyto události se zpracovávají ve volném čase SDM a rozhraní IDE. Žádná odpověď se odešle do ladicího stroje (DE) po zpracování události. [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) a [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) rozhraní jsou příklady asynchronní událostí.  
   
--   Synchronní události  
+- Synchronní události  
   
-     Upozornění SDM a integrované vývojové prostředí, která se mění stav právě laděné aplikace. Jediným rozdílem mezi těmito události a asynchronní události je odeslání odpovědi prostřednictvím [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) metody.  
+   Upozornění SDM a integrované vývojové prostředí, která se mění stav právě laděné aplikace. Jediným rozdílem mezi těmito události a asynchronní události je odeslání odpovědi prostřednictvím [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) metody.  
   
-     Odesílání synchronní událostí je užitečné, pokud je třeba vaše DE pokračovat zpracování po integrovaného vývojového prostředí přijímá a zpracovává události.  
+   Odesílání synchronní událostí je užitečné, pokud je třeba vaše DE pokračovat zpracování po integrovaného vývojového prostředí přijímá a zpracovává události.  
   
--   Synchronní události zastavení nebo zastavení událostí  
+- Synchronní události zastavení nebo zastavení událostí  
   
-     Upozornění SDM a rozhraní IDE, že právě laděné aplikace ukončila provádění kódu. Při odesílání událostí ukončení pomocí metody [události](../../extensibility/debugger/reference/idebugeventcallback2-event.md), [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) parametr je povinný. Ukončení události pocházejí voláním jedné z následujících metod:  
+   Upozornění SDM a rozhraní IDE, že právě laděné aplikace ukončila provádění kódu. Při odesílání událostí ukončení pomocí metody [události](../../extensibility/debugger/reference/idebugeventcallback2-event.md), [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) parametr je povinný. Ukončení události pocházejí voláním jedné z následujících metod:  
   
-    -   [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
+  - [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
   
-    -   [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
+  - [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
   
-    -   [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
+  - [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
   
-     Rozhraní [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) a [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) patří události zastavení.  
+    Rozhraní [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) a [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) patří události zastavení.  
   
-    > [!NOTE]
-    >  Asynchronní zastavení událostí nejsou podporovány. Jedná se o chybu pro odeslání události asynchronní zastavení.  
+  > [!NOTE]
+  >  Asynchronní zastavení událostí nejsou podporovány. Jedná se o chybu pro odeslání události asynchronní zastavení.  
   
 ## <a name="discussion"></a>Diskuse  
  Skutečná implementace události závisí na návrhu vaší DE. Typ každá událost odeslaná je určen podle jeho atributy, které jsou nastaveny při návrhu DE. Například může odeslat jeden DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) jako asynchronní událost, zatímco jiné mohou odeslat jako událostí ukončení.  

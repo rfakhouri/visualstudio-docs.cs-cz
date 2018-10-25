@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb4275a8cf88ccedc93695422261624801fdcf33
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 260e745db7036981ab0a3c79074d99a2b7c7fbb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828404"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>Vstemplate – element (šablony sady Visual Studio)
 Obsahuje všechna metadata o šablony projektu, šablonu položky nebo starter kit.  
@@ -40,10 +40,10 @@ Obsahuje všechna metadata o šablony projektu, šablonu položky nebo starter k
   
 ### <a name="attributes"></a>Atributy  
   
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`Type`|Identifikuje šablony, která jako šablona projektu nebo šablony položky. Tento atribut může mít hodnotu `Project` nebo `Item`.|  
-|`Version`|Určuje číslo verze šablony. Šablony v [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] a [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] mít `Version` hodnotu atributu `3.0.0`.|  
+| Atribut | Popis |
+|-----------| - |
+| `Type` | Identifikuje šablony, která jako šablona projektu nebo šablony položky. Tento atribut může mít hodnotu `Project` nebo `Item`. |
+| `Version` | Určuje číslo verze šablony. Šablony v [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] a [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] mít `Version` hodnotu atributu `3.0.0`. |
   
 ### <a name="child-elements"></a>Podřízené prvky  
   

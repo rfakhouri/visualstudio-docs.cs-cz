@@ -15,25 +15,25 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0da7344c474fa653a63d0b134511a9b9d280492f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 21140a070c59eead834dbb4c03443dd5157d2018
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214604"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845328"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Postupy: zadání editory kontextu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pro editor kontext je aktivní, pouze v případě, že je editor má právě fokus, nebo má fokus, bezprostředně před byl přesunut fokus panelu nástrojů. Můžete zadat kontextu editoru následujícím způsobem:  
   
-1.  Vytvořte kontejner kontextu.  
+1. Vytvořte kontejner kontextu.  
   
-2.  Publikujte místní kontejner identifikátor elementu výběru (SEID).  
+2. Publikujte místní kontejner identifikátor elementu výběru (SEID).  
   
-3.  Udržujte kontextu v kontejneru.  
+3. Udržujte kontextu v kontejneru.  
   
- Tyto úlohy se vztahují následující postupy. Další informace o poskytnutí kontextu najdete v tématu **robustní programování** dále v tomto tématu.  
+   Tyto úlohy se vztahují následující postupy. Další informace o poskytnutí kontextu najdete v tématu **robustní programování** dále v tomto tématu.  
   
 ### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Chcete-li vytvořit kontejner kontextu editoru nebo návrháře  
   

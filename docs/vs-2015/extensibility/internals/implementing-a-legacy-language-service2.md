@@ -15,31 +15,31 @@ ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35dc4c6b80975ccddc42e54d0d7f39cf9024d62d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1fb00e995e1a684438e99428437b4bca1069b970
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831377"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementace služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Pro implementaci jazyka služby pomocí rozhraní spravovaného balíčku (MPF), musí být odvozen ze třídy <xref:Microsoft.VisualStudio.Package.LanguageService> třídy a implementovat následující abstraktní metody a vlastnosti:  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> – Metoda  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> – Metoda  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> – Metoda  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> – Metoda  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> – Metoda  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> – Metoda  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> Vlastnost  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> Vlastnost  
   
- Najdete v příslušné části níže podrobnosti o implementaci těchto metod a vlastností.  
+  Najdete v příslušné části níže podrobnosti o implementaci těchto metod a vlastností.  
   
- Aby podporoval další funkce, vaše služba jazyka pravděpodobně nutné odvodit třídu z jedné ze tříd služby jazyka MPF; například musí podporovat další příkazy, odvoďte třídu z <xref:Microsoft.VisualStudio.Package.ViewFilter> třídy a přepsat několik metod zpracování příkazu (viz <xref:Microsoft.VisualStudio.Package.ViewFilter> podrobnosti). <xref:Microsoft.VisualStudio.Package.LanguageService> Třída poskytuje několik metod, které jsou volány k vytvoření nové instance různé třídy a přepsat metodu odpovídající vytvoření k dispozici instance třídy. Například je nutné přepsat <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> metoda ve <xref:Microsoft.VisualStudio.Package.LanguageService> třídy vrátit instanci vlastní <xref:Microsoft.VisualStudio.Package.ViewFilter> třídy. Další podrobnosti v části "Vytvoření instance třídy vlastní".  
+  Aby podporoval další funkce, vaše služba jazyka pravděpodobně nutné odvodit třídu z jedné ze tříd služby jazyka MPF; například musí podporovat další příkazy, odvoďte třídu z <xref:Microsoft.VisualStudio.Package.ViewFilter> třídy a přepsat několik metod zpracování příkazu (viz <xref:Microsoft.VisualStudio.Package.ViewFilter> podrobnosti). <xref:Microsoft.VisualStudio.Package.LanguageService> Třída poskytuje několik metod, které jsou volány k vytvoření nové instance různé třídy a přepsat metodu odpovídající vytvoření k dispozici instance třídy. Například je nutné přepsat <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> metoda ve <xref:Microsoft.VisualStudio.Package.LanguageService> třídy vrátit instanci vlastní <xref:Microsoft.VisualStudio.Package.ViewFilter> třídy. Další podrobnosti v části "Vytvoření instance třídy vlastní".  
   
- Vaše služba jazyka lze také zadat vlastní ikony, které se používají na mnoha místech. Když se zobrazí seznamu doplňování technologie IntelliSense, každou položku v seznamu může mít ikonu přidruženo, označí položku jako metody, třídy, oboru názvů, vlastností, nebo cokoli, co je nezbytné pro váš jazyk. Tyto ikony se používají ve všech seznamech technologie IntelliSense, **navigační panel**a v **seznam chyb** okno úkolu. V části "Služba jazyka bitové kopie" níže podrobnosti.  
+  Vaše služba jazyka lze také zadat vlastní ikony, které se používají na mnoha místech. Když se zobrazí seznamu doplňování technologie IntelliSense, každou položku v seznamu může mít ikonu přidruženo, označí položku jako metody, třídy, oboru názvů, vlastností, nebo cokoli, co je nezbytné pro váš jazyk. Tyto ikony se používají ve všech seznamech technologie IntelliSense, **navigační panel**a v **seznam chyb** okno úkolu. V části "Služba jazyka bitové kopie" níže podrobnosti.  
   
 ## <a name="getlanguagepreferences-method"></a>GetLanguagePreferences – metoda  
  <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> Metoda vždy vrátí stejnou instanci <xref:Microsoft.VisualStudio.Package.LanguagePreferences> třídy. Můžete použít základní <xref:Microsoft.VisualStudio.Package.LanguagePreferences> třídy, pokud není nutné žádné další předvolby pro vaši službu jazyka. Třídy služeb jazyka MPF předpokládá existenci alespoň základní <xref:Microsoft.VisualStudio.Package.LanguagePreferences> třídy.  

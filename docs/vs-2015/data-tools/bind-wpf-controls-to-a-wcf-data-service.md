@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fdd13647eb485fa20da9c95a1c67ccc3e5f38cc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812423"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Vytvoření vazby ovládacích prvků WPF k datové službě WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
   
  Tento návod znázorňuje následující úlohy:  
   
--   Vytvoření modelu Entity Data Model, který se vygeneruje z dat z ukázkové databáze AdventureWorksLT.  
+- Vytvoření modelu Entity Data Model, který se vygeneruje z dat z ukázkové databáze AdventureWorksLT.  
   
--   Vytváření [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , která zveřejňuje data v modelu Entity Data Model do aplikace WPF.  
+- Vytváření [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , která zveřejňuje data v modelu Entity Data Model do aplikace WPF.  
   
--   Vytvoření sady ovládacích prvků vázaných na data přetažením položek z **zdroje dat** okno do Návrháře WPF.  
+- Vytvoření sady ovládacích prvků vázaných na data přetažením položek z **zdroje dat** okno do Návrháře WPF.  
   
--   Vytváření tlačítek, přejděte vpřed a zpět prostřednictvím záznamy o zákaznících.  
+- Vytváření tlačítek, přejděte vpřed a zpět prostřednictvím záznamy o zákaznících.  
   
--   Vytvoření tlačítka, který ukládá data v ovládacích prvcích pro změny [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] a podkladový zdroj dat.  
+- Vytvoření tlačítka, který ukládá data v ovládacích prvcích pro změny [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] a podkladový zdroj dat.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Přístup ke spuštěné instanci systému SQL Server nebo SQL Server Express, který má k němu připojené ukázkové databáze AdventureWorksLT. Můžete stáhnout z databáze AdventureWorksLT [webových stránkách CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Přístup ke spuštěné instanci systému SQL Server nebo SQL Server Express, který má k němu připojené ukázkové databáze AdventureWorksLT. Můžete stáhnout z databáze AdventureWorksLT [webových stránkách CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- Předchozí znalosti následujících konceptů je také užitečné, ale nejsou vyžadovány k dokončení návodu:  
+  Předchozí znalosti následujících konceptů je také užitečné, ale nejsou vyžadovány k dokončení návodu:  
   
--   Služby WCF Data Services. Další informace najdete v tématu [přehled](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- Služby WCF Data Services. Další informace najdete v tématu [přehled](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Modely dat v [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
+- Modely dat v [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
   
--   Datových modelech entity a ADO.NET Entity Framework. Další informace najdete v tématu [přehled Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Datových modelech entity a ADO.NET Entity Framework. Další informace najdete v tématu [přehled Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
--   Práce s WPF designer. Další informace najdete v tématu [WPF a Silverlight Návrhář přehled](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Práce s WPF designer. Další informace najdete v tématu [WPF a Silverlight Návrhář přehled](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   Datové vazby WPF. Další informace najdete v tématu [přehled datových vazeb](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Datové vazby WPF. Další informace najdete v tématu [přehled datových vazeb](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-service-project"></a>Vytvořte projekt služby  
  Spuštěním tohoto průvodce vytvořením projektu [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
@@ -207,39 +207,39 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
   
 #### <a name="to-create-the-data-bound-controls"></a>Chcete-li vytvořit ovládací prvky vázané daty  
   
-1.  V **zdroje dat** okna, klikněte na rozevírací nabídku **SalesOrderHeaders** uzel a vyberte možnost **podrobnosti**.  
+1. V **zdroje dat** okna, klikněte na rozevírací nabídku **SalesOrderHeaders** uzel a vyberte možnost **podrobnosti**.  
   
-2.  Rozbalte **SalesOrderHeaders** uzlu.  
+2. Rozbalte **SalesOrderHeaders** uzlu.  
   
-3.  V tomto příkladu některá pole se nezobrazí, takže klikněte na rozevírací nabídku vedle následujících uzlů a vyberte **žádný**:  
+3. V tomto příkladu některá pole se nezobrazí, takže klikněte na rozevírací nabídku vedle následujících uzlů a vyberte **žádný**:  
   
-    -   **CreditCardApprovalCode**  
+   - **CreditCardApprovalCode**  
   
-    -   **ModifiedDate**  
+   - **ModifiedDate**  
   
-    -   **OnlineOrderFlag**  
+   - **OnlineOrderFlag**  
   
-    -   **RevisionNumber**  
+   - **RevisionNumber**  
   
-    -   **ROWGUID**  
+   - **ROWGUID**  
   
      Tato akce zabraňuje vytváření ovládacích prvků vázaných na data pro tyto uzly v dalším kroku sady Visual Studio. V tomto návodu se předpokládá, že koncový uživatel nemusí zobrazit tato data.  
   
-4.  Z **zdroje dat** okno, přetáhněte **SalesOrderHeaders** uzlů na řádek mřížky pod řádkem, který obsahuje tlačítka.  
+4. Z **zdroje dat** okno, přetáhněte **SalesOrderHeaders** uzlů na řádek mřížky pod řádkem, který obsahuje tlačítka.  
   
-     Visual Studio generuje XAML a kód, který vytvoří sadu ovládacích prvků, které jsou vázány na data v **produktu** tabulky. Další informace o vygenerovaný XAML a kódu, naleznete v tématu [ovládací prvky WPF vytvoření vazby k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+    Visual Studio generuje XAML a kód, který vytvoří sadu ovládacích prvků, které jsou vázány na data v **produktu** tabulky. Další informace o vygenerovaný XAML a kódu, naleznete v tématu [ovládací prvky WPF vytvoření vazby k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-5.  V návrháři, klepněte na textové pole vedle položky **ID zákazníka** popisek.  
+5. V návrháři, klepněte na textové pole vedle položky **ID zákazníka** popisek.  
   
-6.  V **vlastnosti** okna, vyberte zaškrtávací políčko vedle položky **IsReadOnly** vlastnost.  
+6. V **vlastnosti** okna, vyberte zaškrtávací políčko vedle položky **IsReadOnly** vlastnost.  
   
-7.  Nastavte **IsReadOnly** vlastnost pro každý z následujících polí:  
+7. Nastavte **IsReadOnly** vlastnost pro každý z následujících polí:  
   
-    -   **Čísla nákupních objednávek**  
+   -   **Čísla nákupních objednávek**  
   
-    -   **ID prodejní objednávky**  
+   -   **ID prodejní objednávky**  
   
-    -   **Číslo prodejní objednávky**  
+   -   **Číslo prodejní objednávky**  
   
 ## <a name="load-the-data-from-the-service"></a>Načtení dat ze služby  
  Pomocí objektu proxy služby můžete načíst prodejní data ze služby. Pak přiřaďte zdroje dat pro vrácená data <xref:System.Windows.Data.CollectionViewSource> v okně WPF.  

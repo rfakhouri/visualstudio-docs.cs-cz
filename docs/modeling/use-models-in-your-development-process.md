@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e69fe2741329ee7e8b2cae6b99dca150caa022fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824292"
 ---
 # <a name="use-models-in-your-development-process"></a>Použití modelů ve vývojových procesech
 
@@ -123,7 +123,7 @@ Model lze zobrazit pomocí několika druhů diagramů. Informace o modelů a dia
 Různé druhy diagramu jsou užitečné pro popis návrhu na různých úrovních, abstrakce. Mnoho typů diagramu jsou užitečné na více než jedné úrovni. Tato tabulka ukazuje, jak je možné každý typ diagramu.
 
 |Úroveň návrh|Typy diagramů|
-|------------------|-------------------|
+|-|-|
 |Obchodního procesu<br /><br /> Díky porozumění kontextu, ve kterém se použije váš systém pomáhá zjistit, co uživatelé musíte z něj.|– Diagramy tříd koncepční popisují obchodní koncepty používané v rámci obchodního procesu.|
 |Požadavky na uživatele<br /><br /> Definice uživatelé musí z vašeho systému.|-Obchodní pravidla a kvalitu služeb požadavků lze popsat v samostatných dokumentech.|
 |Návrh vysoké úrovně<br /><br /> Celkovou strukturu systému: hlavní součásti a jak se spojit dohromady.|-Závislost diagramy popisují struktury systému do vzájemně závislé součásti. Můžete ověřit kód programu proti diagramy závislostí za účelem zajištění, že bude odpovídat architektuře.|
@@ -132,7 +132,7 @@ Různé druhy diagramu jsou užitečné pro popis návrhu na různých úrovníc
 ## <a name="external-resources"></a>Externí zdroje
 
 |**Kategorie**|**Odkazy**|
-|------------------|---------------|
+|-|-|
 |**Videa**|![odkaz na video](../data-tools/media/playvideo.gif) [MSDN How do I video: postup vytvoření a použití modelů a diagramů UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif) [Channel 9: UML sadou Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif) [MSDN How do I řadu: nástroje UML a rozšíření (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Fóra**|- [Visual Studio Visualization & Modeling nástroje](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogy**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|

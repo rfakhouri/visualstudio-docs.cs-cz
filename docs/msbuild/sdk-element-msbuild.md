@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15084b21c80967a5ebd170e175adf09d9623be5b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1069a22e700eebfd9d1e8c387af99cf4241ffbe0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834172"
 ---
 # <a name="sdk-element-msbuild"></a>SDK – element (MSBuild)
 Odkazy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu sady SDK.  
@@ -54,9 +54,10 @@ Odkazy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_
  Žádné
 
 ### <a name="parent-elements"></a>Nadřazené prvky  
- |Prvek|Popis|  
-|-------------|-----------------|  
-|[Projekt](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
+
+| Prvek | Popis |
+| - | - |
+| [Projekt](../msbuild/project-element-msbuild.md) | Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu. |
 
 ## <a name="see-also"></a>Viz také:  
  [Postupy: odkaz sadu SDK projektu MSBuild](../msbuild/how-to-use-project-sdk.md)   

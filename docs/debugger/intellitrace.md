@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e2ee2e3662e550e013b2f8436cc32ee9585a419d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825412"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -52,11 +52,11 @@ Můžete použít nástroj IntelliTrace v sadě Visual Studio Enterprise edition
 
 ## <a name="IntelliTraceSupport"></a> Které aplikace můžete ladit pomocí nástroje IntelliTrace?
 
-|||
-|-|-|
-|**Plná podpora**|-Jazyka Visual Basic a Visual C# aplikace, které používají rozhraní .NET Framework 2.0 nebo vyšší verze.<br/>Můžete ladit většinu aplikací, včetně ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 a 64bitové aplikace.<br/>Ladění aplikací SharePoint pomocí nástroje IntelliTrace naleznete v tématu [návod: ladění aplikace SharePoint pomocí IntelliTrace pomocí](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Chcete-li ladit aplikace pro Microsoft Azure s použitím technologie IntelliTrace, přečtěte si téma [ladění publikované cloudové služby pomocí nástroje IntelliTrace a sady Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Omezená podpora**|– Nativní aplikace určené pro podporu Windows zobrazení snímků pomocí zpětného kroku IntelliTrace. Podporují se jenom události ladicího programu a výjimek.<br />– .NET core a ASP.NET Core aplikace podporované pro určité události pouze (kontroler MVC, ADO.NET a HTTPClicent události) v místní ladění. Samostatný kolektor není podporována pro aplikace .NET Core nebo ASP.NET Core.<br />– Aplikace F # na experimentální bázi<br />– Aplikace UWP podporované pouze pro události|
-|**Nepodporuje se**|-Ostatní jazyky a skript<br />– Windows Services, Silverlight, Xbox nebo [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplikace|
+| | |
+|---------------------| - |
+| **Plná podpora** | -Jazyka Visual Basic a Visual C# aplikace, které používají rozhraní .NET Framework 2.0 nebo vyšší verze.<br/>Můžete ladit většinu aplikací, včetně ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 a 64bitové aplikace.<br/>Ladění aplikací SharePoint pomocí nástroje IntelliTrace naleznete v tématu [návod: ladění aplikace SharePoint pomocí IntelliTrace pomocí](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Chcete-li ladit aplikace pro Microsoft Azure s použitím technologie IntelliTrace, přečtěte si téma [ladění publikované cloudové služby pomocí nástroje IntelliTrace a sady Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
+| **Omezená podpora** | – Nativní aplikace určené pro podporu Windows zobrazení snímků pomocí zpětného kroku IntelliTrace. Podporují se jenom události ladicího programu a výjimek.<br />– .NET core a ASP.NET Core aplikace podporované pro určité události pouze (kontroler MVC, ADO.NET a HTTPClicent události) v místní ladění. Samostatný kolektor není podporována pro aplikace .NET Core nebo ASP.NET Core.<br />– Aplikace F # na experimentální bázi<br />– Aplikace UWP podporované pouze pro události |
+| **Nepodporuje se** | -Ostatní jazyky a skript<br />– Windows Services, Silverlight, Xbox nebo [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplikace |
 
 > [!NOTE]
 > Pokud chcete ladit proces, který je již spuštěna, lze shromažďovat pouze události IntelliTrace (žádné informace volání). Můžete připojit k 32bitové nebo 64bitové proces v místním počítači. Shromažďují se události, ke kterým dojde před připojit k procesu.
@@ -77,7 +77,7 @@ Můžete ukládat data IntelliTrace z těchto zdrojů:
 
 - Webové aplikace ASP.NET jsou hostovány službou IIS, nebo SharePoint 2010 a SharePoint 2013 spuštěnými v nasazení při použití nástroje Microsoft Monitoring Agent, buď samostatně, nebo s nástrojem System Center 2012. Zobrazit [použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) a [sledování pomocí agenta Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).
 
- Zde je několik příkladů, jak nástroj IntelliTrace může pomoci s laděním:
+  Zde je několik příkladů, jak nástroj IntelliTrace může pomoci s laděním:
 
 - Vaše aplikace má poškozený datový soubor, ale nevíte, kdy k této události došlo.
 
@@ -111,11 +111,11 @@ Ve výchozím nastavení nástroj IntelliTrace zaznamenává pouze události Int
 
      Ve výchozím nastavení které vám pomůžou s výkonu, nezaznamenává nástroj IntelliTrace každou možnou hodnotu události ladicího programu. Zaznamenává pouze tyto hodnoty:
 
-    - Hodnoty v **lokální** okna. Zachovat **lokální** otevřené pro tyto hodnoty vidět okno.
+  - Hodnoty v **lokální** okna. Zachovat **lokální** otevřené pro tyto hodnoty vidět okno.
 
-    - Hodnoty v **automatické hodnoty** okno pouze tehdy, pokud **automatické hodnoty** je otevřeno okno
+  - Hodnoty v **automatické hodnoty** okno pouze tehdy, pokud **automatické hodnoty** je otevřeno okno
 
-    - Hodnoty v Datových tipech, které se zobrazují při přesunutí ukazatele myši nad proměnnou v okně zdroje s cílem zobrazit její hodnotu. Nástroj IntelliTrace neshromažďuje hodnoty v připnutých Datových tipech.
+  - Hodnoty v Datových tipech, které se zobrazují při přesunutí ukazatele myši nad proměnnou v okně zdroje s cílem zobrazit její hodnotu. Nástroj IntelliTrace neshromažďuje hodnoty v připnutých Datových tipech.
 
     Když je povolený režim události IntelliTrace a snímky, nástroj IntelliTrace se pořídit snímek proces aplikací na každý ladicí program **zarážku** a **krok** událostí. To bude zaznamenávat hodnoty v **lokální**, **automatické hodnoty**, a **Watch** windows, bez ohledu na to, jestli jsou systému windows otevřete nebo ne. Shromažďují se také hodnot v jakékoli připnutých datových tipech.
 

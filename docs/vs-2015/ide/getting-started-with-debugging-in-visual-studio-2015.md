@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fe051a37c610fcfd3c99f2ab762982065c5caf56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824435"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Začínáme s laděním v sadě Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,15 +153,15 @@ Visual Studio 2015 poskytuje výkonné integrované sady sestavení projektu a n
   
  Mezi běžná použití pro zarážky patří:  
   
-1.  Abyste omezili příčiny zhroucení nebo zablokování, bodový je v průběhu a ohraničení kódu volání metody, které si myslíte, že je příčinou selhání. Krokovat kód, odebrat a současně resetovat zarážce blíže, dokud nenajdete problematický řádek kódu.  
+1. Abyste omezili příčiny zhroucení nebo zablokování, bodový je v průběhu a ohraničení kódu volání metody, které si myslíte, že je příčinou selhání. Krokovat kód, odebrat a současně resetovat zarážce blíže, dokud nenajdete problematický řádek kódu.  
   
-2.  Pokud chcete zavést nový kód, nastavte zarážku na začátku a krokovat kód, abyste měli jistotu, že se nechová podle očekávání.  
+2. Pokud chcete zavést nový kód, nastavte zarážku na začátku a krokovat kód, abyste měli jistotu, že se nechová podle očekávání.  
   
-3.  Pokud jste implementovali složité chování, nastavte zarážky pro kód vylepšením, aby poškodí program si můžete prohlédnout hodnoty proměnných a data.  
+3. Pokud jste implementovali složité chování, nastavte zarážky pro kód vylepšením, aby poškodí program si můžete prohlédnout hodnoty proměnných a data.  
   
-4.  Pokud píšete kód C nebo C++, použijte zarážky pro zastavení kód, takže si můžete prohlédnout hodnoty adres (vyhledejte NULL) a počty odkazů, při ladění chyby související s pamětí.  
+4. Pokud píšete kód C nebo C++, použijte zarážky pro zastavení kód, takže si můžete prohlédnout hodnoty adres (vyhledejte NULL) a počty odkazů, při ladění chyby související s pamětí.  
   
- Další informace o používání zarážek, najdete v článku [pomocí zarážek](../debugger/using-breakpoints.md)  
+   Další informace o používání zarážek, najdete v článku [pomocí zarážek](../debugger/using-breakpoints.md)  
   
 ### <a name="setting-conditional-breakpoints"></a>Nastavení podmíněné zarážky  
  Pokud máte zarážku ve smyčce nebo rekurzi, nebo pokud máte velké množství zarážky, které často projdete, použijte podmíněné zarážky a zkontrolujte, že váš kód je pozastavený, pouze v případě, že jsou splněny konkrétní podmínky. V opačném případě je budete být klávesy F11 awful hodně.  

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5161f7b4878c6ef381dc26aa4689c4fe7b7cb961
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2e9f851734a4066e1f6ab7956d124478e0cde76c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815478"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardní a vlastní konfigurace sady nástrojů
 Sada nástrojů MSBuild obsahuje odkazy na úkoly, cíle a nástroje, které můžete použít k sestavení projektu aplikace. Nástroj MSBuild obsahuje standardní sadu nástrojů, ale můžete také vytvořit vlastní sady nástrojů. Informace o tom, jak určit sadu nástrojů najdete v tématu [sada nástrojů (atribut ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -27,7 +27,7 @@ Sada nástrojů MSBuild obsahuje odkazy na úkoly, cíle a nástroje, které mů
  15.0 nástroje MSBuild zahrnuje následující standardní sady nástrojů:  
   
 |Atribut ToolsVersion|Cesta nástrojů (jak je uvedeno ve vlastnosti sestavení MSBuildToolsPath nebo MSBuildBinPath)|  
-|------------------|--------------------------------------------------------------------------------------------|  
+|------------------| - |  
 |2.0|*\<Windows instalační_cesta > \Microsoft.Net\Framework\v2.0.50727\\*|  
 |3.5|*\<Windows instalační_cesta > \Microsoft.NET\Framework\v3.5\\*|  
 |4.0|*\<Windows instalační_cesta > \Microsoft.NET\Framework\v4.0.30319\\*|  
@@ -39,9 +39,9 @@ Sada nástrojů MSBuild obsahuje odkazy na úkoly, cíle a nástroje, které mů
   
 |Klíč registru|Název klíče|Řetězcovou hodnotu klíče|  
 |------------------|--------------|----------------------|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\**  |**MSBuildToolsPath**|**Cesta pro instalaci rozhraní .NET framework 2.0**|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\**  |**MSBuildToolsPath**|**Cesta pro instalaci rozhraní .NET framework 3.5**|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\**  |**MSBuildToolsPath**|**Cesta pro instalaci rozhraní .NET framework 4**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\** |**MSBuildToolsPath**|**Cesta pro instalaci rozhraní .NET framework 2.0**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\** |**MSBuildToolsPath**|**Cesta pro instalaci rozhraní .NET framework 3.5**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**Cesta pro instalaci rozhraní .NET framework 4**|  
   
 ### <a name="sub-toolsets"></a>Dílčí sady nástrojů  
  Pokud klíč registru v předchozí tabulce obsahuje podklíč, MSBuild na základě toho určí cestu dílčí, která přepíše cestu v nadřazeném prvku. Sada nástrojů. Následující podklíč je příklad:  
@@ -91,11 +91,11 @@ Sada nástrojů MSBuild obsahuje odkazy na úkoly, cíle a nástroje, které mů
   
  Následující vlastnosti jsou specifické pro hodnotu `ToolsVersion` , který je používat v projektech:  
   
--   **$(MSBuildBinPath)** je nastavena na `ToolsPath` hodnotu, která je zadán v registru nebo v konfiguračním souboru kde `ToolsVersion` je definována. `$(MSBuildToolsPath)` Nastavení v registru nebo konfiguračního souboru Určuje umístění základní úlohy a cíle. V souboru projektu to mapuje na vlastnost $(MSBuildBinPath) a také $(MSBuildToolsPath) vlastnosti.  
+- **$(MSBuildBinPath)** je nastavena na `ToolsPath` hodnotu, která je zadán v registru nebo v konfiguračním souboru kde `ToolsVersion` je definována. `$(MSBuildToolsPath)` Nastavení v registru nebo konfiguračního souboru Určuje umístění základní úlohy a cíle. V souboru projektu to mapuje na vlastnost $(MSBuildBinPath) a také $(MSBuildToolsPath) vlastnosti.  
   
--   `$(MSBuildToolsPath)` je rezervované vlastnosti, který poskytl MSBuildToolsPath vlastnost, která je určena v konfiguračním souboru. (Tato vlastnost nahradí `$(MSBuildBinPath)`. Nicméně `$(MSBuildBinPath)` je přenesena z důvodu kompatibility.) Vlastní sada nástrojů musí definovat buď `$(MSBuildToolsPath)` nebo `$(MSBuildBinPath)` ale nikoli oba současně, pokud obě mají stejnou hodnotu.  
+- `$(MSBuildToolsPath)` je rezervované vlastnosti, který poskytl MSBuildToolsPath vlastnost, která je určena v konfiguračním souboru. (Tato vlastnost nahradí `$(MSBuildBinPath)`. Nicméně `$(MSBuildBinPath)` je přenesena z důvodu kompatibility.) Vlastní sada nástrojů musí definovat buď `$(MSBuildToolsPath)` nebo `$(MSBuildBinPath)` ale nikoli oba současně, pokud obě mají stejnou hodnotu.  
   
- Můžete také přidat vlastní vlastnosti specifické pro danou hodnotu ToolsVersion do konfiguračního souboru pomocí stejné syntaxe, který použijete k přidání vlastnosti MSBuildToolsPath. Chcete-li zpřístupnit tyto vlastních vlastností do souboru projektu, použijte stejný název jako název hodnoty zadané v konfiguračním souboru. V konfiguračním souboru může definovat sady nástrojů, ale ne sub-sady nástrojů.  
+  Můžete také přidat vlastní vlastnosti specifické pro danou hodnotu ToolsVersion do konfiguračního souboru pomocí stejné syntaxe, který použijete k přidání vlastnosti MSBuildToolsPath. Chcete-li zpřístupnit tyto vlastních vlastností do souboru projektu, použijte stejný název jako název hodnoty zadané v konfiguračním souboru. V konfiguračním souboru může definovat sady nástrojů, ale ne sub-sady nástrojů.  
   
 ## <a name="see-also"></a>Viz také:  
  [Sada nástrojů (atribut ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
