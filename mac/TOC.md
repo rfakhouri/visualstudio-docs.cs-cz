@@ -2,6 +2,7 @@
 # [Prohlídka integrovaného vývojového prostředí (IDE)](ide-tour.md)
 
 # [Instalace](installation.md)
+## [Instalace a používání za bránou firewall nebo proxy serverem](install-behind-a-firewall-or-proxy-server.md)
 ## [Instalace verze Preview](install-preview.md)
 ## [Aktualizace](update.md)
 ## [Odinstalace](uninstall.md)

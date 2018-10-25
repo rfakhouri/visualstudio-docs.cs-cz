@@ -14,12 +14,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c1fac3a8fde417065aecb7e3882ff9dc12b06402
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df4b435f791b066afda90ac9f5492a946d7e215c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825666"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Nalezení změn kódu a další historie pomocí CodeLensu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,46 +42,46 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
 ##  <a name="FindReferences"></a> Najít odkazy na kód  
  Budete potřebovat:  
   
--   Visual Studio Enterprise nebo Professional sady Visual Studio  
+- Visual Studio Enterprise nebo Professional sady Visual Studio  
   
--   Kód Visual C# .NET nebo Visual Basic .NET  
+- Kód Visual C# .NET nebo Visual Basic .NET  
   
- Zvolte **odkazy** ukazatel (**Alt + 2**). Pokud se zobrazí **0 odkazů**, nemáte žádné odkazy z kódu jazyka Visual C# nebo Visual Basic. Nejsou obsaženy odkazy z jiných položek, jako jsou soubory XAML a ASPX.  
+  Zvolte **odkazy** ukazatel (**Alt + 2**). Pokud se zobrazí **0 odkazů**, nemáte žádné odkazy z kódu jazyka Visual C# nebo Visual Basic. Nejsou obsaženy odkazy z jiných položek, jako jsou soubory XAML a ASPX.  
   
- ![Funkce CodeLens &#45; zvolit indikátor odkazů](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
+  ![Funkce CodeLens &#45; zvolit indikátor odkazů](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
   
- Chcete-li zobrazit kód odkazující, přesuňte ukazatel myši nad odkaz.  
+  Chcete-li zobrazit kód odkazující, přesuňte ukazatel myši nad odkaz.  
   
- ![Funkce CodeLens &#45; náhled odkaz](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
+  ![Funkce CodeLens &#45; náhled odkaz](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
   
- K otevření souboru, který obsahuje odkaz, dvakrát klikněte na odkaz.  
+  K otevření souboru, který obsahuje odkaz, dvakrát klikněte na odkaz.  
   
- Chcete-li zobrazit vztahy mezi tímto kódem a jeho odkazy [Vytvořte mapu kódu](../modeling/map-dependencies-across-your-solutions.md) a zvolte **zobrazit všechny odkazy** v místní nabídce mapy kódu.  
+  Chcete-li zobrazit vztahy mezi tímto kódem a jeho odkazy [Vytvořte mapu kódu](../modeling/map-dependencies-across-your-solutions.md) a zvolte **zobrazit všechny odkazy** v místní nabídce mapy kódu.  
   
- ![Funkce CodeLens &#45; odkazy na mapě kódu](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
+  ![Funkce CodeLens &#45; odkazy na mapě kódu](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
   
 ##  <a name="FindCodeHistory"></a> Vyhledejte historii vašeho kódu a propojené položky  
  Zkontrolujte historii vašeho kódu a zjistěte, co se stalo se váš kód. Nebo můžete zkontrolovat změny předtím, než se sloučí do kódu to vám umožní lépe pochopit změny v další větve, jak může ovlivnit váš kód.  
   
  Budete potřebovat:  
   
--   Visual Studio Enterprise nebo Professional sady Visual Studio  
+- Visual Studio Enterprise nebo Professional sady Visual Studio  
   
--   Team Foundation Server 2013 nebo novější, Visual Studio Team Services nebo Git  
+- Team Foundation Server 2013 nebo novější, Visual Studio Team Services nebo Git  
   
--   [Lync 2010 nebo novější nebo Skype pro firmy](http://technet.microsoft.com/lync), ke kontaktování týmem z editoru kódu  
+- [Lync 2010 nebo novější nebo Skype pro firmy](http://technet.microsoft.com/lync), ke kontaktování týmem z editoru kódu  
   
- Pro Visual C# .NET nebo Visual Basic .NET kód, který se uloží spolu s Team Foundation – správa verzí (TFVC) nebo Git, získání podrobností funkce CodeLens na úrovni třídy a metody (*úroveň element kódu* ukazatele). Pokud v TfGit je hostitelem vašeho úložiště Git, budete mít také odkazy na pracovní položky sady TFS.  
+  Pro Visual C# .NET nebo Visual Basic .NET kód, který se uloží spolu s Team Foundation – správa verzí (TFVC) nebo Git, získání podrobností funkce CodeLens na úrovni třídy a metody (*úroveň element kódu* ukazatele). Pokud v TfGit je hostitelem vašeho úložiště Git, budete mít také odkazy na pracovní položky sady TFS.  
   
- ![Prvek kódu&#45;indikátory na úrovni](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
+  ![Prvek kódu&#45;indikátory na úrovni](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
   
- Pro všechny ostatní typy souborů, které lze otevřít v editoru sady Visual Studio získáte podrobností funkce CodeLens pro celý soubor na jednom místě v dolní části okna (*úrovni souboru* ukazatele).  
+  Pro všechny ostatní typy souborů, které lze otevřít v editoru sady Visual Studio získáte podrobností funkce CodeLens pro celý soubor na jednom místě v dolní části okna (*úrovni souboru* ukazatele).  
   
- ![Soubor&#45;indikátory CodeLens na úrovni](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
+  ![Soubor&#45;indikátory CodeLens na úrovni](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
   
- Použití klávesnice k výběru ukazatele, stiskněte a podržte **ALT** klíč k zobrazení souvisejících číslicemi.  
+  Použití klávesnice k výběru ukazatele, stiskněte a podržte **ALT** klíč k zobrazení souvisejících číslicemi.  
   
- ![Stiskněte klávesu ALT, abyste viděli čísla přístup klávesnice](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
+  ![Stiskněte klávesu ALT, abyste viděli čísla přístup klávesnice](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
   
 ### <a name="find-changes-in-your-code"></a>Vyhledat změny v kódu  
  Najdete, kdo ho změnil vašeho jazyka C# nebo Visual Basic kódu a změny, které byly provedeny v úrovni element kódu ukazatele. Je to, co se zobrazí při použití Team Foundation version control (TFVC) na serveru Team Foundation Server nebo Visual Studio Team Services.  
@@ -243,11 +243,11 @@ Soustředit na svou práci při můžete zjistit, co se stalo s kódu – bez op
   
  **Které konfigurace služby Lync a Skype se podporují?**  
   
--   Skype pro firmy (32bitová nebo 64bitová verze)  
+- Skype pro firmy (32bitová nebo 64bitová verze)  
   
--   Lync 2010 nebo novější samostatně (32bitová verze nebo 64bitovou), ale ne Lync Basic 2013 s Windows 8.1  
+- Lync 2010 nebo novější samostatně (32bitová verze nebo 64bitovou), ale ne Lync Basic 2013 s Windows 8.1  
   
- Funkce CodeLens nepodporuje existenci různých verzí aplikace Lync nebo Skype nainstalované. Nemusí být lokalizována pro všechny lokalizované verze sady Visual Studio.  
+  Funkce CodeLens nepodporuje existenci různých verzí aplikace Lync nebo Skype nainstalované. Nemusí být lokalizována pro všechny lokalizované verze sady Visual Studio.  
   
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>Otázka: Jak mohu změnit písmo a barvu funkce codelens?  
  **Odpověď:** přejít na **nástroje**, **možnosti**, **prostředí**, **písma a barvy**.  
